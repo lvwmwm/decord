@@ -1,13 +1,13 @@
-// Module ID: 8922
-// Function ID: 8923
+// Module ID: 9179
+// Function ID: 9180
 // Name: getEventLocationIconSource
-// Dependencies: [8825, 8862, 6870, 8863, 2]
+// Dependencies: [9092, 9119, 4866, 9120, 2]
 // Exports: getEventLocationIconComponent, getEventLocationIconSource
 
-// Module 8922 (getEventLocationIconSource)
+// Module 9179 (getEventLocationIconSource)
 import set from "set" /* 2 */;
-import getChannelIcon from "getChannelIcon" /* 6870 */;
-import registerAssetDefault from "registerAsset" /* 8862 */;
+import getChannelIcon from "getChannelIcon" /* 4866 */;
+import registerAssetDefault from "registerAsset" /* 9119 */;
 
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventUtils.tsx");
 
@@ -29,11 +29,11 @@ export const getEventLocationIconSource = function getEventLocationIconSource(ev
 };
 export const getEventLocationIconComponent = function getEventLocationIconComponent(event, channel, stateFromStores1) {
   if (null != obj.getLocationFromEvent(event)) {
-    let LocationIcon = tmp(8863).LocationIcon;
+    let LocationIcon = tmp(9120).LocationIcon;
   } else {
     LocationIcon = null;
     if (null != channel) {
-      const tmpResult = tmp(6870);
+      const tmpResult = tmp(4866);
       if (stateFromStores1) {
         let channelIconComponent = tmpResult.getChannelIconComponent(channel);
       } else {

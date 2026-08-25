@@ -1,19 +1,19 @@
-// Module ID: 4311
-// Function ID: 4312
+// Module ID: 4312
+// Function ID: 4313
 // Name: getCustomThemesName
-// Dependencies: [1302, 4312, 1346, 1348, 1236, 2534, 1349, 4313, 589, 1367, 2]
+// Dependencies: [1302, 4313, 1346, 1348, 1236, 2535, 1349, 4314, 589, 1367, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 4311 (getCustomThemesName)
+// Module 4312 (getCustomThemesName)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import ClientThemeType from "ClientThemeType" /* 1349 */;
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import messagesProxyDefault from "messagesProxy" /* 2534 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4313 */;
+import messagesProxyDefault from "messagesProxy" /* 2535 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4314 */;
 import closure_3 from "handleThemeChange" /* 1302 */;
-import closure_4 from "validateSavedTheme" /* 4312 */;
+import closure_4 from "validateSavedTheme" /* 4313 */;
 import closure_5 from "reset" /* 1346 */;
 import ThemeTypes from "ThemeTypes" /* 1348 */;
 
@@ -109,7 +109,7 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
   if (null != stateFromStores) {
     tmp4 = stateFromStores;
   }
-  let tmpResult = tmp(4313);
+  let tmpResult = tmp(4314);
   const customThemeDisplaySettings = tmpResult.useCustomThemeDisplaySettings(tmp4);
   let stateFromStores1 = null;
   if (undefined !== customThemeDisplaySettings) {

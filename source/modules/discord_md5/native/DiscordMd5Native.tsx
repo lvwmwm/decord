@@ -1,13 +1,13 @@
-// Module ID: 4862
-// Function ID: 4863
+// Module ID: 4981
+// Function ID: 4982
 // Name: fromFileUri
-// Dependencies: [17, 4863, 500, 1271, 2]
+// Dependencies: [17, 4982, 500, 1271, 2]
 
-// Module 4862 (fromFileUri)
+// Module 4981 (fromFileUri)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import enforcingDefault from "enforcing" /* 1271 */;
-import fromBlobDefault from "fromBlob" /* 4863 */;
+import fromBlobDefault from "fromBlob" /* 4982 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 fromBlobDefault;

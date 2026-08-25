@@ -1,12 +1,12 @@
-// Module ID: 11238
-// Function ID: 11239
+// Module ID: 11598
+// Function ID: 11599
 // Name: Spoiler
-// Dependencies: [19, 21, 6607, 2]
+// Dependencies: [19, 21, 7985, 2]
 // Exports: default
 
-// Module 11238 (Spoiler)
+// Module 11598 (Spoiler)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 6607 */;
+import inlineStyles from "inlineStyles" /* 7985 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

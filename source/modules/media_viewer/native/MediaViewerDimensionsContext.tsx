@@ -1,10 +1,10 @@
-// Module ID: 9050
-// Function ID: 9051
+// Module ID: 9012
+// Function ID: 9013
 // Name: MediaViewerDimensionsProvider
 // Dependencies: [19, 21, 1494, 38, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 9050 (MediaViewerDimensionsProvider)
+// Module 9012 (MediaViewerDimensionsProvider)
 import _modDef38 from "module_38" /* 38 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import importAllResult from "noop" /* 19 */;

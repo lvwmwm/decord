@@ -1,20 +1,20 @@
-// Module ID: 16370
-// Function ID: 16371
+// Module ID: 16402
+// Function ID: 16403
 // Name: useFloatingCTAProps
-// Dependencies: [32, 19, 17, 4778, 16371, 4374, 1391, 1397, 21, 4314, 11488, 16353, 8928, 647, 8876, 8822, 8832, 4346, 8841, 16372, 12456, 8125, 8934, 1236, 6399, 16373, 10030, 16374, 7405, 9032, 4200, 8113, 1377, 16375, 8032, 7609, 2]
+// Dependencies: [32, 19, 17, 4396, 16403, 7132, 1391, 1397, 21, 4315, 11840, 16385, 9185, 647, 9133, 9089, 9099, 4347, 9108, 16404, 9287, 8121, 9191, 1236, 5432, 16405, 9872, 16406, 6132, 8879, 4201, 7938, 1377, 16407, 7854, 7427, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 16370 (useFloatingCTAProps)
+// Module 16402 (useFloatingCTAProps)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4200 */;
-import XSmallIcon from "XSmallIcon" /* 6399 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4201 */;
+import XSmallIcon from "XSmallIcon" /* 5432 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4778 */;
-import closure_7 from "initialize" /* 16371 */;
-import { isGuildScheduledEventActive as closure_8 } from "scheduledEventSort" /* 4374 */;
+import closure_6 from "getParticipants" /* 4396 */;
+import closure_7 from "initialize" /* 16403 */;
+import { isGuildScheduledEventActive as closure_8 } from "scheduledEventSort" /* 7132 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
 import { GuildScheduledEventEntityTypes as closure_10 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -168,8 +168,8 @@ function getBadConnectionCTAProps(arg0) {
   obj[0] = intl.string(_require(1236).t.uv1tVh);
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t["gQ14+g"]);
-  obj = { IconComponent: _require(8113).CircleErrorIcon, variant: "translucent" };
-  obj[2] = jsx(_require(8125).RowButton.Icon, { IconComponent: _require(8113).CircleErrorIcon, variant: "translucent" });
+  obj = { IconComponent: _require(7938).CircleErrorIcon, variant: "translucent" };
+  obj[2] = jsx(_require(8121).RowButton.Icon, { IconComponent: _require(7938).CircleErrorIcon, variant: "translucent" });
   obj[3] = function onPress() {
     let tmp;
     if (callback != null) {
@@ -186,7 +186,7 @@ function getBadConnectionCTAProps(arg0) {
       callback();
     }
   };
-  obj[4] = jsx(_require(6399).XSmallIcon, { color: "interactive-icon-default" });
+  obj[4] = jsx(_require(5432).XSmallIcon, { color: "interactive-icon-default" });
   obj[4] = <Pressable accessibilityRole="button" accessibilityLabel={null} hitSlop={4} onPress={null}>{null}</Pressable>;
   return obj;
 }
@@ -207,7 +207,7 @@ function getDismissableCTAProps(arg0) {
     return getBadConnectionCTAProps();
   } else if (tmp(1377).DismissibleContent.SOUNDBOARD_MOBILE_FLOATING_CTA === dismissableContent) {
     obj = { icon: null, onPress: null, label: null, trailing: null };
-    obj[0] = jsx(tmp(8032).SoundboardIcon, { color: "interactive-icon-default" });
+    obj[0] = jsx(tmp(7854).SoundboardIcon, { color: "interactive-icon-default" });
     obj[1] = function onPress() {
       if (null != closure_0) {
         obj = closure_1_0(closure_1_2[33]);
@@ -219,7 +219,7 @@ function getDismissableCTAProps(arg0) {
     };
     obj = { quest: null };
     obj[0] = tmp(1236).t.XLlWUe;
-    obj[2] = tmp(7609).getDeviceSpecificString(obj, tmp(1236).t.IJgkPX);
+    obj[2] = tmp(7427).getDeviceSpecificString(obj, tmp(1236).t.IJgkPX);
     obj[3] = <CloseSoundboardMobileFloatingCtaIcon />;
     return obj;
   } else {

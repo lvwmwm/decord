@@ -1,18 +1,18 @@
-// Module ID: 4483
-// Function ID: 4484
+// Module ID: 4406
+// Function ID: 4407
 // Name: createExecutable
-// Dependencies: [1931, 4484, 1930, 4485, 4486, 4487, 1435, 4489, 506, 11, 2]
+// Dependencies: [1931, 4407, 1930, 4408, 4409, 4410, 1435, 4412, 506, 11, 2]
 
-// Module 4483 (createExecutable)
+// Module 4406 (createExecutable)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import fromStringAll from "fromString" /* 506 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
 import toJSDefault from "toJS" /* 1931 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 4489 */;
-import closure_4 from "createFromServer" /* 4484 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 4412 */;
+import closure_4 from "createFromServer" /* 4407 */;
 import closure_5 from "createdAt" /* 1930 */;
-import items3 from "items3" /* 4485 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4486 */;
+import items3 from "items3" /* 4408 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4409 */;
 
 require = arg1;
 function createExecutable(os) {
@@ -20,8 +20,12 @@ function createExecutable(os) {
   if (null != os.arguments) {
     obj.arguments = os.arguments;
   }
-  if (null != os.is_launcher) {
-    obj.isLauncher = os.is_launcher;
+  let isLauncher = os.is_launcher;
+  if (isLauncher == null) {
+    isLauncher = os.isLauncher;
+  }
+  if (null != isLauncher) {
+    obj.isLauncher = isLauncher;
   }
   return obj;
 }
@@ -86,7 +90,7 @@ BasicApplicationRecord["createFromServer"] = function createFromServer(bot) {
 };
 Object.defineProperty(prototype, "connectionEntrypointUrl", {
   get: function connectionEntrypointUrl(arg0) {
-    const obj = require(4487) /* items */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
+    const obj = require(4410) /* items */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
     let prop;
     if (obj != null) {
       prop = obj.connectionEntrypointUrlOverride;

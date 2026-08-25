@@ -1,13 +1,13 @@
-// Module ID: 13878
-// Function ID: 13879
+// Module ID: 13913
+// Function ID: 13914
 // Name: items2
-// Dependencies: [2630, 13879, 13880, 2]
+// Dependencies: [2631, 13914, 13915, 2]
 
-// Module 13878 (items2)
+// Module 13913 (items2)
 import set from "set" /* 2 */;
-import messagesProxyDefault from "messagesProxy" /* 2630 */;
-import NotifSettings from "NotifSettings" /* 13879 */;
-import NotifTypes from "NotifTypes" /* 13880 */;
+import messagesProxyDefault from "messagesProxy" /* 2631 */;
+import NotifSettings from "NotifSettings" /* 13914 */;
+import NotifTypes from "NotifTypes" /* 13915 */;
 
 let obj = { badge: true, visibility: "popup", vibrate: true, sound: true };
 obj = { badge: true, visibility: "default", vibrate: true, sound: true };

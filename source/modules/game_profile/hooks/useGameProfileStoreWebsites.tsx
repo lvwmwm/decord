@@ -1,10 +1,10 @@
-// Module ID: 9140
-// Function ID: 9141
+// Module ID: 9433
+// Function ID: 9434
 // Name: set
-// Dependencies: [19, 9141, 9142, 9144, 9143, 2]
+// Dependencies: [19, 9434, 9435, 9437, 9436, 2]
 // Exports: useGameProfileStoreWebsites
 
-// Module 9140 (set)
+// Module 9433 (set)
 import closure_3 from "noop" /* 19 */;
 import set from "set" /* 2 */;
 
@@ -67,7 +67,7 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
           someResult = steamReleaseStatus === steamWebsiteUrl(id1[4]).SteamReleaseStatus.RETIRED_ABANDONED;
         }
         if (!someResult) {
-          someResult = found.some((category) => category.category === callback(9141).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          someResult = found.some((category) => category.category === callback(9434).ThirdPartyGameApplicationWebsiteCategory.STEAM);
         }
         if (!someResult) {
           let obj = { category: null, url: null };
@@ -77,9 +77,9 @@ export const useGameProfileStoreWebsites = function useGameProfileStoreWebsites(
         }
         const sorted = found.sort((category, category2) => {
           let num = -1;
-          if (category.category !== callback(9141).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+          if (category.category !== callback(9434).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
             let num2 = 0;
-            if (category2.category === callback(9141).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
+            if (category2.category === callback(9434).ThirdPartyGameApplicationWebsiteCategory.STEAM) {
               num2 = 1;
             }
             num = num2;

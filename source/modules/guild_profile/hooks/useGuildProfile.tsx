@@ -1,13 +1,13 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 9149
+// Function ID: 9150
 // Name: useGuildProfile
-// Dependencies: [5, 19, 8891, 589, 8893, 2]
+// Dependencies: [5, 19, 9148, 589, 9150, 2]
 // Exports: useGuildProfile
 
-// Module 8892 (useGuildProfile)
+// Module 9149 (useGuildProfile)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleUpdateStart" /* 8891 */;
+import closure_4 from "handleUpdateStart" /* 9148 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfile.tsx");
@@ -37,7 +37,7 @@ export const useGuildProfile = function useGuildProfile(guildId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

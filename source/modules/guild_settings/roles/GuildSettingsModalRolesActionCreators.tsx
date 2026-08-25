@@ -1,9 +1,9 @@
-// Module ID: 16931
-// Function ID: 16932
+// Module ID: 16963
+// Function ID: 16964
 // Name: updateGuildRole
-// Dependencies: [5, 676, 530, 7324, 709, 2]
+// Dependencies: [5, 676, 530, 6047, 709, 2]
 
-// Module 16931 (updateGuildRole)
+// Module 16963 (updateGuildRole)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
@@ -37,7 +37,7 @@ function _updateGuildRole() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function _updateGuildRole() {
             return obj5;
           } else {
             closure_7 = arg1;
-            obj = callback2(7324);
+            obj = callback2(6047);
             const result = obj.checkGuildTemplateDirty(callback);
             c5 = 3;
             const obj6 = { value: null, done: true };

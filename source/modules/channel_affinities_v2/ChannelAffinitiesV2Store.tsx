@@ -1,13 +1,13 @@
-// Module ID: 15603
-// Function ID: 15604
+// Module ID: 15635
+// Function ID: 15636
 // Name: map
-// Dependencies: [15604, 589, 709, 2]
+// Dependencies: [15636, 589, 709, 2]
 
-// Module 15603 (map)
+// Module 15635 (map)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import result2 from "result" /* 15604 */;
+import result2 from "result" /* 15636 */;
 
 const CHANNEL_AFFINITY_V2_TTL = result2.CHANNEL_AFFINITY_V2_TTL;
 let map = new Map();

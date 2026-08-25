@@ -1,14 +1,14 @@
-// Module ID: 5717
-// Function ID: 5718
+// Module ID: 6405
+// Function ID: 6406
 // Name: ExperimentalGiftEnvelopeIllocon
-// Dependencies: [21, 5454, 5718, 2]
+// Dependencies: [21, 5374, 6406, 2]
 // Exports: ExperimentalGiftEnvelopeIllocon
 
-// Module 5717 (ExperimentalGiftEnvelopeIllocon)
+// Module 6405 (ExperimentalGiftEnvelopeIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5718 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6406 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGiftEnvelopeIllocon.native.tsx");

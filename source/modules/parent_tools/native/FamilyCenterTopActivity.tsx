@@ -1,17 +1,17 @@
-// Module ID: 14321
-// Function ID: 14322
+// Module ID: 14351
+// Function ID: 14352
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1922, 5301, 21, 4668, 712, 647, 4346, 14322, 2008, 14323, 8947, 1236, 2336, 4739, 1297, 7226, 2]
+// Dependencies: [19, 17, 1922, 7143, 21, 4380, 712, 647, 4347, 14352, 2009, 14353, 9204, 1236, 2337, 4376, 1297, 5885, 2]
 // Exports: default
 
-// Module 14321 (FamilyCenterTopActivity)
+// Module 14351 (FamilyCenterTopActivity)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "freshTeenActivityWithMap" /* 5301 */;
+import closure_6 from "freshTeenActivityWithMap" /* 7143 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -66,7 +66,7 @@ export default function FamilyCenterTopActivity() {
         user = user.getUser(user_id.user_id);
         let tmp2 = null;
         if (null != user) {
-          const obj = { user: null, size: null, guildId: "Array" };
+          const obj = { user: null, size: null, guildId: "r" };
           obj[0] = user;
           obj[1] = callback(stateFromStores1[16]).AvatarSizes.SMALL;
           tmp2 = callback2(callback(stateFromStores1[16]).Avatar, obj, user.id);

@@ -1,13 +1,13 @@
-// Module ID: 5326
-// Function ID: 5327
+// Module ID: 5967
+// Function ID: 5968
 // Name: isGenericIapConnected
-// Dependencies: [589, 12, 5327, 709, 2]
+// Dependencies: [589, 12, 5968, 709, 2]
 
-// Module 5326 (isGenericIapConnected)
+// Module 5967 (isGenericIapConnected)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import SubscriptionPlans from "SubscriptionPlans" /* 5327 */;
+import SubscriptionPlans from "SubscriptionPlans" /* 5968 */;
 
 require = arg1;
 let c3 = null;

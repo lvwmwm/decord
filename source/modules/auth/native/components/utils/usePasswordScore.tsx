@@ -1,10 +1,10 @@
-// Module ID: 15300
-// Function ID: 15301
+// Module ID: 15330
+// Function ID: 15331
 // Name: PasswordScore
-// Dependencies: [5, 32, 19, 12, 15287, 2]
+// Dependencies: [5, 32, 19, 12, 15317, 2]
 // Exports: usePasswordScore
 
-// Module 15300 (PasswordScore)
+// Module 15330 (PasswordScore)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -38,7 +38,7 @@ export const usePasswordScore = function usePasswordScore(first) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

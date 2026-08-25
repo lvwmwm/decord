@@ -1,29 +1,29 @@
-// Module ID: 9218
-// Function ID: 9219
+// Module ID: 9501
+// Function ID: 9502
 // Name: CollectiblesPreview
-// Dependencies: [19, 17, 5310, 676, 21, 4668, 9219, 712, 9242, 9243, 1949, 9255, 9245, 9262, 9264, 9265, 4100, 4107, 1370, 2]
+// Dependencies: [19, 17, 7152, 676, 21, 4380, 9502, 712, 9521, 9522, 1950, 9534, 9524, 9541, 9543, 9544, 4101, 4108, 1370, 2]
 // Exports: default
 
-// Module 9218 (CollectiblesPreview)
+// Module 9501 (CollectiblesPreview)
 import ThemesDefault from "Themes" /* 712 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import map from "map" /* 4100 */;
-import ManaContext from "ManaContext" /* 4107 */;
-import SourceIcon from "SourceIcon" /* 9219 */;
-import firstAvatarDecoration from "firstAvatarDecoration" /* 9242 */;
-import BundleStaticPreviewContentDefault from "BundleStaticPreviewContent" /* 9243 */;
-import ProfileEffectSampleDefault from "ProfileEffectSample" /* 9245 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9255 */;
-import filterLayerDefault from "filterLayer" /* 9262 */;
-import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9264 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9265 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import map from "map" /* 4101 */;
+import ManaContext from "ManaContext" /* 4108 */;
+import SourceIcon from "SourceIcon" /* 9502 */;
+import firstAvatarDecoration from "firstAvatarDecoration" /* 9521 */;
+import BundleStaticPreviewContentDefault from "BundleStaticPreviewContent" /* 9522 */;
+import ProfileEffectSampleDefault from "ProfileEffectSample" /* 9524 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9534 */;
+import filterLayerDefault from "filterLayer" /* 9541 */;
+import NameplateCardPreviewDefault from "NameplateCardPreview" /* 9543 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9544 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { transformSKUToCollectiblesItem as closure_5 } from "createCollectiblesItemsFromServerResponse" /* 5310 */;
+import { transformSKUToCollectiblesItem as closure_5 } from "createCollectiblesItemsFromServerResponse" /* 7152 */;
 import { SKUProductLines } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class CollectiblesPreview {
@@ -138,7 +138,7 @@ function CollectiblesSKUPreview(sku) {
   sku = sku.sku;
   let DEFAULT_ITEM_SIZE = sku.size;
   if (DEFAULT_ITEM_SIZE === undefined) {
-    DEFAULT_ITEM_SIZE = sku(9219).DEFAULT_ITEM_SIZE;
+    DEFAULT_ITEM_SIZE = sku(9502).DEFAULT_ITEM_SIZE;
   }
   const items = [sku];
   const memo = React.useMemo(() => closure_1_5(sku), items);

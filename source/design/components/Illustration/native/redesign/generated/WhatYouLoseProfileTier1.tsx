@@ -1,13 +1,13 @@
-// Module ID: 7945
-// Function ID: 7946
+// Module ID: 7766
+// Function ID: 7767
 // Name: getWhatYouLoseProfileTier1Source
-// Dependencies: [19, 17, 21, 7946, 7947, 7948, 7949, 1363, 2]
+// Dependencies: [19, 17, 21, 7767, 7768, 7769, 7770, 1363, 2]
 // Exports: WhatYouLoseProfileTier1, getWhatYouLoseProfileTier1Source, useWhatYouLoseProfileTier1Source
 
-// Module 7945 (getWhatYouLoseProfileTier1Source)
+// Module 7766 (getWhatYouLoseProfileTier1Source)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import getIllustrationSource from "getIllustrationSource" /* 7767 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getWhatYouLoseProfileTier1Source = function getWhatYouLoseProfileTi
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(7947);
+      return callback(7768);
     },
     darker() {
-      return callback(7948);
+      return callback(7769);
     },
     light() {
-      return callback(7949);
+      return callback(7770);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useWhatYouLoseProfileTier1Source = function useWhatYouLoseProfileTi
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(7947);
+      return callback(7768);
     },
     darker() {
-      return callback(7948);
+      return callback(7769);
     },
     light() {
-      return callback(7949);
+      return callback(7770);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const WhatYouLoseProfileTier1 = function WhatYouLoseProfileTier1(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(7947);
+      return callback(7768);
     },
     darker() {
-      return callback(7948);
+      return callback(7769);
     },
     light() {
-      return callback(7949);
+      return callback(7770);
     }
   };
   obj = {};

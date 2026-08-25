@@ -1,15 +1,15 @@
-// Module ID: 7251
-// Function ID: 7252
+// Module ID: 5974
+// Function ID: 5975
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1982, 6821, 1391, 1984, 1910, 676, 1398, 7252, 7254, 7263, 7238, 7266, 7268, 5288, 7269, 5297, 4289, 7270, 7236, 1370, 7315, 4775, 4492, 2]
+// Dependencies: [5, 1983, 5344, 1391, 1985, 1910, 676, 1398, 5975, 5977, 5986, 5954, 5989, 5991, 5950, 5992, 5993, 4290, 5994, 5952, 1370, 6038, 4393, 4575, 2]
 // Exports: default
 
-// Module 7251 (_isAccessibleChannelOrThreadPath)
+// Module 5974 (_isAccessibleChannelOrThreadPath)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "isSubscriptionGated" /* 1982 */;
-import closure_5 from "shouldShowOnboarding" /* 6821 */;
+import closure_4 from "isSubscriptionGated" /* 1983 */;
+import closure_5 from "shouldShowOnboarding" /* 5344 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 1398 */;
@@ -37,7 +37,7 @@ function _isAccessibleChannelOrThreadPath() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

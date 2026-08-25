@@ -1,9 +1,9 @@
-// Module ID: 12212
-// Function ID: 12213
+// Module ID: 12535
+// Function ID: 12536
 // Name: getNote
 // Dependencies: [1431, 1911, 1914, 2]
 
-// Module 12212 (getNote)
+// Module 12535 (getNote)
 import set2 from "set" /* 2 */;
 import identity from "identity" /* 1911 */;
 import items from "items" /* 1914 */;

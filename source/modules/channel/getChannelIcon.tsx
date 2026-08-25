@@ -1,10 +1,10 @@
-// Module ID: 12179
-// Function ID: 12180
+// Module ID: 12512
+// Function ID: 12513
 // Name: getChannelIconURL
 // Dependencies: [32, 1922, 676, 1370, 1435, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 12179 (getChannelIconURL)
+// Module 12512 (getChannelIconURL)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
 import closure_3 from "_slicedToArray" /* 32 */;

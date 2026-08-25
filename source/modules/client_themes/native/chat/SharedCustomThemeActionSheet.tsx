@@ -1,20 +1,20 @@
-// Module ID: 11173
-// Function ID: 11174
+// Module ID: 11515
+// Function ID: 11516
 // Name: PrimaryActionButton
-// Dependencies: [32, 19, 17, 4048, 676, 1924, 21, 4668, 712, 698, 11174, 4226, 6988, 6987, 1236, 2534, 4739, 9402, 4750, 589, 4042, 7431, 7197, 1297, 1347, 2]
+// Dependencies: [32, 19, 17, 4049, 676, 1924, 21, 4380, 712, 698, 11516, 4227, 5503, 5502, 1236, 2535, 4376, 8845, 4815, 589, 4043, 7029, 5854, 1297, 1347, 2]
 // Exports: default
 
-// Module 11173 (PrimaryActionButton)
+// Module 11515 (PrimaryActionButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import noop from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_9 from "reset" /* 4048 */;
+import closure_9 from "reset" /* 4049 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function PrimaryActionButton(onPressApply) {
@@ -29,10 +29,10 @@ function PrimaryActionButton(onPressApply) {
     obj[0] = intl2.string(tmp2(1236).t.pj0XBN);
     obj[1] = function onPressSubscribe() {
       const obj = { premiumType: TIER_2.TIER_2, analyticsLocations: null, analyticsLocation: null };
-      const items = [callback(7197).SHARE_CUSTOM_CLIENT_THEME_EMBED];
+      const items = [callback(5854).SHARE_CUSTOM_CLIENT_THEME_EMBED];
       obj[1] = items;
       obj[2] = {};
-      callback(7431)(obj);
+      callback(7029)(obj);
     };
     obj[2] = function renderIcon() {
       const style = [lib.nitroWheelButton];
@@ -45,7 +45,7 @@ function PrimaryActionButton(onPressApply) {
     const intl = tmp2(1236).intl;
     obj[0] = intl.string(tmp2(1236).t["1Qm822"]);
     obj[1] = onPressApply.onPressApply;
-    tmp6 = callback4(tmp2(4750).Button, obj);
+    tmp6 = callback4(tmp2(4815).Button, obj);
   }
   return tmp6;
 }

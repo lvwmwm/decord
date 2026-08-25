@@ -1,13 +1,13 @@
-// Module ID: 13980
-// Function ID: 13981
+// Module ID: 14015
+// Function ID: 14016
 // Name: _initialize
-// Dependencies: [1218, 676, 4726, 5060, 4263, 709, 687, 1208, 7511, 698, 2]
+// Dependencies: [1218, 676, 4562, 7070, 4264, 709, 687, 1208, 7325, 698, 2]
 
-// Module 13980 (_initialize)
+// Module 14015 (_initialize)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import start from "start" /* 4263 */;
-import initializeDefault from "initialize" /* 4726 */;
-import isForegrounded from "isForegrounded" /* 5060 */;
+import start from "start" /* 4264 */;
+import initializeDefault from "initialize" /* 4562 */;
+import isForegrounded from "isForegrounded" /* 7070 */;
 import importDefaultResult from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
 

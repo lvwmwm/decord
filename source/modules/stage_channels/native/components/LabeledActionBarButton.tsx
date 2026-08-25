@@ -1,17 +1,17 @@
-// Module ID: 12626
-// Function ID: 12627
+// Module ID: 10980
+// Function ID: 10981
 // Name: IconPosition
-// Dependencies: [19, 17, 505, 21, 4668, 6320, 712, 5438, 1297, 2]
+// Dependencies: [19, 17, 505, 21, 4380, 5265, 712, 4949, 1297, 2]
 // Exports: LabeledActionButton
 
-// Module 12626 (IconPosition)
+// Module 10980 (IconPosition)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import PressableBase from "PressableBase" /* 5438 */;
+import PressableBase from "PressableBase" /* 4949 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

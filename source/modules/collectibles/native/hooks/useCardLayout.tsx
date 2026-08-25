@@ -1,13 +1,13 @@
-// Module ID: 15031
-// Function ID: 15032
+// Module ID: 15061
+// Function ID: 15062
 // Name: useCardLayout
-// Dependencies: [9209, 1494, 2]
+// Dependencies: [9492, 1494, 2]
 // Exports: useCardLayout
 
-// Module 15031 (useCardLayout)
+// Module 15061 (useCardLayout)
 import set from "set" /* 2 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 9209 */;
+import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 9492 */;
 
 let result = set.fileFinishedImporting("modules/collectibles/native/hooks/useCardLayout.tsx");
 
@@ -18,7 +18,7 @@ export const useCardLayout = function useCardLayout() {
     num = 2;
   }
   if (num < 2) {
-    let obj = { columns: null, cardWidth: "Array", rowWidth: "applicationId" };
+    let obj = { columns: null, cardWidth: "Array", rowWidth: "isArray" };
     obj[0] = num;
     return obj;
   } else {
@@ -33,9 +33,9 @@ export const useCardLayout = function useCardLayout() {
       const _Math = Math;
       let bound = Math.max(4, diff1);
     } else {
-      bound = 2 * tmp2(9209).COLLECTIBLES_SHOP_CARD_GAP;
+      bound = 2 * tmp2(9492).COLLECTIBLES_SHOP_CARD_GAP;
     }
-    const result1 = (width - (bound + tmp2(9209).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
+    const result1 = (width - (bound + tmp2(9492).COLLECTIBLES_SHOP_CARD_GAP * diff)) / num;
     let tmp10 = tmp2;
     let tmp11 = result1;
     let tmp12 = num;
@@ -69,13 +69,13 @@ export const useCardLayout = function useCardLayout() {
     }
     const _Math2 = Math;
     const _Math3 = Math;
-    const bound1 = Math.max(tmp11, tmp14(9209).COLLECTIBLES_SHOP_CARD_WIDTH);
-    const bound2 = Math.min(bound1, tmp14(9209).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
+    const bound1 = Math.max(tmp11, tmp14(9492).COLLECTIBLES_SHOP_CARD_WIDTH);
+    const bound2 = Math.min(bound1, tmp14(9492).COLLECTIBLES_SHOP_CARD_MAX_WIDTH);
     const result3 = bound2 * tmp12;
     const diff2 = tmp12 - 1;
-    if (result3 + (bound + tmp10(9209).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
+    if (result3 + (bound + tmp10(9492).COLLECTIBLES_SHOP_CARD_GAP * diff2) > width) {
       if (1 < tmp12) {
-        obj = { columns: 1, cardWidth: "Array", rowWidth: "accessibilityLabel" };
+        obj = { columns: 1, cardWidth: "Array", rowWidth: "accessibilityRole" };
       }
       return obj;
     }
@@ -83,6 +83,6 @@ export const useCardLayout = function useCardLayout() {
     obj[0] = tmp12;
     obj[1] = bound2;
     const result4 = bound2 * tmp12;
-    obj[2] = result4 + tmp14(9209).COLLECTIBLES_SHOP_CARD_GAP * diff2 + bound;
+    obj[2] = result4 + tmp14(9492).COLLECTIBLES_SHOP_CARD_GAP * diff2 + bound;
   }
 };

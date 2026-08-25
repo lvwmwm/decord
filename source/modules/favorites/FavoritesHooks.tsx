@@ -1,17 +1,17 @@
-// Module ID: 10018
-// Function ID: 10019
+// Module ID: 9860
+// Function ID: 9861
 // Name: useFavoritesAccess
-// Dependencies: [4201, 1922, 1394, 1429, 1924, 10019, 10020, 589, 1945, 11, 1306, 1913, 2]
+// Dependencies: [4202, 1922, 1394, 1429, 1924, 9861, 9862, 589, 1946, 11, 1306, 1913, 2]
 // Exports: getFavoritesAccess, getFavoritesCategories, useFavorite, useFavoritedChannelIds, useFavorites, useFavoritesAwareChannel, useFavoritesLimitUpsell, useIsFavoritesGuildSelected
 
-// Module 10018 (useFavoritesAccess)
+// Module 9860 (useFavoritesAccess)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initialize from "initialize" /* 589 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
-import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1945 */;
-import FREE_FAVORITE_LIMIT from "FREE_FAVORITE_LIMIT" /* 10019 */;
-import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10020 */;
-import closure_3 from "handleConnectionOpen" /* 4201 */;
+import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1946 */;
+import FREE_FAVORITE_LIMIT from "FREE_FAVORITE_LIMIT" /* 9861 */;
+import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 9862 */;
+import closure_3 from "handleConnectionOpen" /* 4202 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import closure_5 from "initializeFromUserSettings" /* 1394 */;
 import { MAX_FAVORITE_CHANNELS } from "date" /* 1429 */;

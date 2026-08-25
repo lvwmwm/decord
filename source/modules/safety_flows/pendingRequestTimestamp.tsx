@@ -1,14 +1,14 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17228
+// Function ID: 17229
 // Name: SENT_TIMESTAMP_FORMATTER
-// Dependencies: [1236, 2598, 5368, 2]
+// Dependencies: [1236, 2599, 7199, 2]
 // Exports: formatPendingRequestSentText
 
-// Module 17196 (SENT_TIMESTAMP_FORMATTER)
+// Module 17228 (SENT_TIMESTAMP_FORMATTER)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2598 */;
-import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 5368 */;
+import messagesProxyDefault from "messagesProxy" /* 2599 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7199 */;
 
 function SENT_TIMESTAMP_FORMATTER() {
   const obj = { seconds: null, minutes: null, hours: null, yesterday: null, days: null, date: null };

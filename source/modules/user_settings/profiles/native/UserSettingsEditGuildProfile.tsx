@@ -1,17 +1,17 @@
-// Module ID: 14134
-// Function ID: 14135
+// Module ID: 14164
+// Function ID: 14165
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8409, 1922, 21, 4668, 712, 7177, 7197, 589, 14135, 9576, 8456, 14137, 6322, 7226, 9483, 4346, 14139, 2008, 14140, 2]
+// Dependencies: [19, 17, 8417, 1922, 21, 4380, 712, 5834, 5854, 589, 14165, 10292, 8463, 14167, 5480, 5885, 9610, 4347, 14169, 2009, 14170, 2]
 // Exports: default
 
-// Module 14134 (UserSettingsEditGuildProfile)
+// Module 14164 (UserSettingsEditGuildProfile)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleFormOpen" /* 8409 */;
+import closure_5 from "handleFormOpen" /* 8417 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);

@@ -1,10 +1,10 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10669
+// Function ID: 10670
 // Name: useMediaModalFooterActionStore
 // Dependencies: [644, 705, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 10741 (useMediaModalFooterActionStore)
+// Module 10669 (useMediaModalFooterActionStore)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 705 */;
 import keys from "keys" /* 644 */;

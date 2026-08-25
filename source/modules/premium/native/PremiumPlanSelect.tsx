@@ -1,42 +1,42 @@
-// Module ID: 13028
-// Function ID: 13029
+// Module ID: 13016
+// Function ID: 13017
 // Name: BoostPurchaseNitroBanner
-// Dependencies: [5, 32, 19, 17, 7433, 1910, 4047, 4048, 5324, 13029, 1924, 676, 7441, 4361, 21, 4668, 6819, 6320, 712, 4738, 5452, 4739, 1236, 4042, 13030, 13031, 13032, 13033, 13034, 13035, 8027, 4100, 589, 13036, 7654, 4314, 1297, 698, 7943, 7944, 6322, 13037, 5451, 6408, 1363, 501, 7416, 7696, 4662, 13038, 2008, 6317, 4761, 7417, 5327, 4057, 5265, 7419, 7701, 7177, 7261, 7165, 4766, 7697, 7655, 1500, 7426, 7955, 7197, 7657, 4470, 7727, 7919, 7412, 7734, 4054, 7735, 2]
+// Dependencies: [5, 32, 19, 17, 7031, 1910, 4048, 4049, 5965, 13017, 1924, 676, 7039, 4362, 21, 4380, 5342, 5265, 712, 4813, 6136, 4376, 1236, 4043, 13018, 13019, 13020, 13021, 13022, 13023, 7849, 4101, 589, 13024, 7475, 4315, 1297, 698, 7764, 7765, 5480, 13025, 5929, 5533, 1363, 501, 7014, 7517, 4745, 13026, 2009, 5873, 4826, 7015, 5968, 4058, 4611, 7017, 7522, 5834, 5984, 5822, 4831, 7518, 7476, 1500, 7024, 7776, 5854, 7478, 4725, 7548, 7740, 7009, 7555, 4055, 7556, 2]
 // Exports: default
 
-// Module 13028 (BoostPurchaseNitroBanner)
+// Module 13016 (BoostPurchaseNitroBanner)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
-import Stack from "Stack" /* 4738 */;
-import Text from "Text" /* 4739 */;
-import LinearGradientDefault from "LinearGradient" /* 4761 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
-import createTextStyleDefault from "createTextStyle" /* 6819 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8027 */;
-import registerAssetDefault from "registerAsset" /* 13030 */;
-import registerAssetDefault2 from "registerAsset" /* 13031 */;
-import registerAssetDefault3 from "registerAsset" /* 13032 */;
-import registerAssetDefault4 from "registerAsset" /* 13033 */;
-import registerAssetDefault5 from "registerAsset" /* 13034 */;
-import registerAssetDefault6 from "registerAsset" /* 13035 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4043 */;
+import Text from "Text" /* 4376 */;
+import Stack from "Stack" /* 4813 */;
+import LinearGradientDefault from "LinearGradient" /* 4826 */;
+import createTextStyleDefault from "createTextStyle" /* 5342 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6136 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 7849 */;
+import registerAssetDefault from "registerAsset" /* 13018 */;
+import registerAssetDefault2 from "registerAsset" /* 13019 */;
+import registerAssetDefault3 from "registerAsset" /* 13020 */;
+import registerAssetDefault4 from "registerAsset" /* 13021 */;
+import registerAssetDefault5 from "registerAsset" /* 13022 */;
+import registerAssetDefault6 from "registerAsset" /* 13023 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { useNativeCheckoutStore } from "context" /* 7433 */;
+import { useNativeCheckoutStore } from "context" /* 7031 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
-import closure_11 from "addSubscriptionPlan" /* 4047 */;
-import closure_12 from "reset" /* 4048 */;
-import closure_13 from "updateProduct" /* 5324 */;
-import usePremiumPlanSelectStore from "usePremiumPlanSelectStore" /* 13029 */;
+import closure_11 from "addSubscriptionPlan" /* 4048 */;
+import closure_12 from "reset" /* 4049 */;
+import closure_13 from "updateProduct" /* 5965 */;
+import usePremiumPlanSelectStore from "usePremiumPlanSelectStore" /* 13017 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import ME from "ME" /* 676 */;
-import items from "items" /* 7441 */;
-import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4361 */;
+import items from "items" /* 7039 */;
+import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4362 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function BoostPurchaseNitroBanner() {
@@ -449,7 +449,7 @@ function PlanSection(showBoostOnlyLabels) {
     obj = { title: null, hasIcons: true, children: null };
     obj[0] = showBoostOnlyLabels.label;
     obj[2] = mapped;
-    let tmp7Result = tmp7(shouldShowModernBoostFlow(6317).TableRowGroup, obj);
+    let tmp7Result = tmp7(shouldShowModernBoostFlow(5873).TableRowGroup, obj);
   } else {
     obj = { children: null };
     obj[0] = mapped;
@@ -466,18 +466,18 @@ function CurrentPlanRow(subscription) {
   const tmp = callback5();
   if (subscription.showCurrentPlan) {
     if (null != subscription) {
-      productIdFromSubscription = subscription(7416).getProductIdFromSubscription(subscription, true);
-      let obj4 = subscription(7416);
+      productIdFromSubscription = subscription(7014).getProductIdFromSubscription(subscription, true);
+      let obj4 = subscription(7014);
       const tmp13 = subscription;
-      const premiumBundledItemsFromProductId = subscription(7416).getPremiumBundledItemsFromProductId(productIdFromSubscription);
+      const premiumBundledItemsFromProductId = subscription(7014).getPremiumBundledItemsFromProductId(productIdFromSubscription);
       const premiumTier = premiumBundledItemsFromProductId.premiumTier;
       if (null != premiumTier) {
         let PREMIUM_GUILD = callback2(premiumTier);
       } else {
         PREMIUM_GUILD = constants6.PREMIUM_GUILD;
       }
-      const obj5 = subscription(7416);
-      toggledIntervalProduct = tmp13(7416).getToggledIntervalProduct(productIdFromSubscription);
+      const obj5 = subscription(7014);
+      toggledIntervalProduct = tmp13(7014).getToggledIntervalProduct(productIdFromSubscription);
       let obj = { style: null, colors: null, start: null, end: null, children: null };
       obj[0] = tmp.currentPlanGradient;
       obj[1] = PREMIUM_GUILD;
@@ -487,7 +487,7 @@ function CurrentPlanRow(subscription) {
       obj[1] = subscription;
       obj[2] = analyticsLoadId;
       let tmp11 = null == toggledIntervalProduct;
-      const tmp13Result = tmp13(7416);
+      const tmp13Result = tmp13(7014);
       if (tmp11) {
         tmp11 = subscription.status !== constants5.CANCELED;
       }
@@ -517,8 +517,8 @@ function CurrentPlanRow(subscription) {
                     let obj = {};
                     const merged = Object.assign(arg0);
                     obj.productId = closure_1_1;
-                    obj.continueWithUpsell = closure_3_3(/* F121799 */ function() { ... });
-                    obj.continueWithDefault = closure_3_3(/* F121800 */ function() { ... });
+                    obj.continueWithUpsell = closure_3_3(/* F122042 */ function() { ... });
+                    obj.continueWithDefault = closure_3_3(/* F122043 */ function() { ... });
                     return closure_3_32(closure_0, obj);
                   };
                 });
@@ -937,7 +937,7 @@ let closure_46 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -970,8 +970,8 @@ let closure_46 = importAllResult.forwardRef(function PremiumPlanSelect(isBoostPu
                 obj1 = { value: null, done: false };
                 obj1[0] = v0(modifySubscriptionItemsForProduct.map((planId) => {
                   const obj = { sku_id: null, subscription_plan_id: null, quantity: null, purchase_type: null };
-                  obj2 = callback(4042);
-                  obj[0] = obj2.castPremiumSubscriptionAsSkuId(callback2(4042).getSkuIdForPlan(planId.planId));
+                  obj2 = callback(4043);
+                  obj[0] = obj2.castPremiumSubscriptionAsSkuId(callback2(4043).getSkuIdForPlan(planId.planId));
                   ({ planId: obj[1], quantity: obj[2] } = planId);
                   obj[3] = constants.SUBSCRIPTION;
                   return obj;

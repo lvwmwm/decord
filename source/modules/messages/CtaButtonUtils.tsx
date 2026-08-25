@@ -1,17 +1,17 @@
-// Module ID: 11135
-// Function ID: 11136
+// Module ID: 11477
+// Function ID: 11478
 // Name: CtaButtonType
-// Dependencies: [4998, 11136, 4997, 589, 2]
+// Dependencies: [4622, 11478, 4621, 589, 2]
 // Exports: getCtaButtonType, useCtaButtonType
 
-// Module 11135 (CtaButtonType)
+// Module 11477 (CtaButtonType)
 import initialize from "initialize" /* 589 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4997 */;
-import shouldRenderReportFalsePositiveButton2 from "shouldRenderReportFalsePositiveButton" /* 11136 */;
-import closure_2 from "initialize" /* 4998 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4621 */;
+import shouldRenderReportFalsePositiveButton2 from "shouldRenderReportFalsePositiveButton" /* 11478 */;
+import closure_2 from "initialize" /* 4622 */;
 
 require = arg1;
-let obj = { MARK_AS_FALSE_POSITIVE: "mark_as_false_positive", AGE_VERIFICATION_RETRY: "age_verification_retry", CONNECT_TO_TEEN: "connect_to_teen" };
+let obj = { MARK_AS_FALSE_POSITIVE: "mark_as_false_positive", AGE_VERIFICATION_RETRY: "age_verification_retry", CONNECT_TO_TEEN: "connect_to_teen", AGE_VERIFICATION_MANUAL_REVIEW: "age_verification_manual_review" };
 let result = require("set").fileFinishedImporting("modules/messages/CtaButtonUtils.tsx");
 
 export const CtaButtonType = obj;
@@ -20,11 +20,11 @@ export const getCtaButtonType = function getCtaButtonType(id, channel_id) {
   if (obj.shouldRenderReportFalsePositiveButton(id)) {
     let CONNECT_TO_TEEN = obj.MARK_AS_FALSE_POSITIVE;
   } else {
-    let tmpResult = tmp(4997);
+    let tmpResult = tmp(4621);
     if (tmpResult.isAgeVerificationMessageWithRetryCta(channel_id, id)) {
       CONNECT_TO_TEEN = obj.AGE_VERIFICATION_RETRY;
     } else {
-      tmpResult = tmp(4997);
+      tmpResult = tmp(4621);
       if (tmpResult.isAgeVerificationMessageWithConnectToTeenCta(channel_id, id)) {
         CONNECT_TO_TEEN = obj.CONNECT_TO_TEEN;
       }

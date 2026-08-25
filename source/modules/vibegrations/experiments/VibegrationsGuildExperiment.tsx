@@ -1,10 +1,10 @@
-// Module ID: 7253
-// Function ID: 7254
+// Module ID: 5976
+// Function ID: 5977
 // Name: useIsVibegrationsGuildEnabled
 // Dependencies: [676, 1472, 2]
 // Exports: isVibegrationsGuildEnabled, useIsVibegrationsGuildEnabled
 
-// Module 7253 (useIsVibegrationsGuildEnabled)
+// Module 5976 (useIsVibegrationsGuildEnabled)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;

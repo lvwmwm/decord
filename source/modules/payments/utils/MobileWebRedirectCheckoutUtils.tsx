@@ -1,16 +1,16 @@
-// Module ID: 4493
-// Function ID: 4494
+// Module ID: 7011
+// Function ID: 7012
 // Name: MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG
-// Dependencies: [4361, 676, 1208, 1625, 4207, 4380, 2]
+// Dependencies: [4362, 676, 1208, 1625, 4208, 5279, 2]
 // Exports: captureMobileWebRedirectCheckoutSentryError, getCustomCheckoutFlow, getCustomCheckoutFlowForAnalytics, isMobileWebRedirectCheckoutEnabled, useGetCustomCheckoutFlow
 
-// Module 4493 (MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG)
+// Module 7011 (MOBILE_WEB_REDIRECT_CHECKOUT_ERROR_TAG)
 import set from "set" /* 2 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
-import _extends from "_extends" /* 4207 */;
-import CustomCheckoutFlow2 from "CustomCheckoutFlow" /* 4361 */;
-import keysSorter from "keysSorter" /* 4380 */;
+import _extends from "_extends" /* 4208 */;
+import CustomCheckoutFlow2 from "CustomCheckoutFlow" /* 4362 */;
+import keysSorter from "keysSorter" /* 5279 */;
 import ME from "ME" /* 676 */;
 
 const CustomCheckoutFlow = CustomCheckoutFlow2.CustomCheckoutFlow;

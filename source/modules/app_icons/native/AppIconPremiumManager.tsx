@@ -1,14 +1,14 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 16654
+// Function ID: 16655
 // Name: handleAppStateUpdate
-// Dependencies: [5, 1922, 7985, 676, 3, 7986, 5043, 500, 7984, 4042, 698, 2]
+// Dependencies: [5, 1922, 7807, 676, 3, 7808, 5367, 500, 7806, 4043, 698, 2]
 
-// Module 16622 (handleAppStateUpdate)
+// Module 16654 (handleAppStateUpdate)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 5043 */;
+import initializeDefault from "initialize" /* 5367 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import { getIconById } from "items" /* 7985 */;
+import { getIconById } from "items" /* 7807 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;
@@ -55,7 +55,7 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -134,7 +134,7 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
             }
           }
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp39) {
         v0 = tmp;
@@ -146,9 +146,9 @@ prototype["validateAndResetIfNeeded"] = function validateAndResetIfNeeded() {
 prototype["resetIcon"] = function resetIcon(arg0, c0, ORPHANED) {
   const _require = arg0;
   closure_1 = ORPHANED;
-  let obj = _require(7984);
-  const setAppIconResult = _require(7984).setAppIcon(DEFAULT, c0);
-  _require(7984).setAppIcon(DEFAULT, c0).then(() => {
+  let obj = _require(7806);
+  const setAppIconResult = _require(7806).setAppIcon(DEFAULT, c0);
+  _require(7806).setAppIcon(DEFAULT, c0).then(() => {
     let obj = ORPHANED(closure_1_2[10]);
     obj = { previous_icon_id: closure_0, reset_to_icon_id: closure_1_8, reset_reason: ORPHANED };
     obj.track(closure_1_6.APP_ICON_AUTO_RESET, obj);

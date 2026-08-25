@@ -1,15 +1,15 @@
-// Module ID: 7340
-// Function ID: 7341
+// Module ID: 6066
+// Function ID: 6067
 // Name: transitionToGuild
-// Dependencies: [676, 7235, 5448, 1222, 2]
+// Dependencies: [676, 5945, 5477, 1222, 2]
 // Exports: transitionToGuild
 
-// Module 7340 (transitionToGuild)
+// Module 6066 (transitionToGuild)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import transitionTo from "transitionTo" /* 1222 */;
-import LayoutAnimation from "LayoutAnimation" /* 5448 */;
-import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 7235 */;
+import LayoutAnimation from "LayoutAnimation" /* 5477 */;
+import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 5945 */;
 
 const Routes = ME.Routes;
 let result = set.fileFinishedImporting("modules/routing/transitionToGuild.native.tsx");
@@ -17,7 +17,7 @@ let result = set.fileFinishedImporting("modules/routing/transitionToGuild.native
 export const transitionToGuild = function transitionToGuild(guildId) {
   let obj = getChannelIdForGuildTransition;
   const channelIdForGuildTransition = obj.getChannelIdForGuildTransition(guildId);
-  const result = LayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "View", delete: "Error" });
+  const result = LayoutAnimation.DeprecatedLayoutAnimation({ duration: 0, create: "r", update: "call", delete: "String" });
   const obj2 = LayoutAnimation;
   obj = { navigationReplace: true };
   const obj3 = transitionTo;

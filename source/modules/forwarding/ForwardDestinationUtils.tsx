@@ -1,17 +1,17 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7449
+// Function ID: 7450
 // Name: useSelectedDestinationChannel
-// Dependencies: [19, 6806, 1395, 1391, 4024, 4033, 1922, 676, 7629, 1370, 589, 692, 4828, 1954, 5257, 1236, 4826, 7479, 4223, 4989, 2]
+// Dependencies: [19, 5325, 1395, 1391, 4025, 4034, 1922, 676, 7450, 1370, 589, 692, 4740, 1955, 4619, 1236, 4738, 7292, 4224, 4574, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 7628 (useSelectedDestinationChannel)
-import canBypassSlowmodeHelper from "canBypassSlowmodeHelper" /* 7479 */;
+// Module 7449 (useSelectedDestinationChannel)
+import canBypassSlowmodeHelper from "canBypassSlowmodeHelper" /* 7292 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "loadSavedGuildStickers" /* 6806 */;
+import closure_4 from "loadSavedGuildStickers" /* 5325 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_10 from "markAllUserIdListsStale" /* 4033 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_10 from "markAllUserIdListsStale" /* 4034 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
@@ -21,7 +21,7 @@ require = arg1;
 const result = require("set").fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
-  const mapped = selectedDestinations.map(found(7629).getChannelIdFromDestinationId);
+  const mapped = selectedDestinations.map(found(7450).getChannelIdFromDestinationId);
   found = mapped.find(found(1370).isNotNullish);
   const items = [closure_8];
   const items1 = [found];
@@ -48,22 +48,22 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
   if (null != components) {
     let tmp5 = components.components.length > 0;
     if (tmp5) {
-      tmp5 = components.components[0].type === _require(1954).ComponentType.CHECKPOINT_CARD;
+      tmp5 = components.components[0].type === _require(1955).ComponentType.CHECKPOINT_CARD;
     }
     let tmp6 = components.messageSnapshots.length > 0;
     if (tmp6) {
       let message = components.messageSnapshots[0].message;
       let tmp7 = message.components.length > 0;
       if (tmp7) {
-        tmp7 = message.components[0].type === _require(1954).ComponentType.CHECKPOINT_CARD;
+        tmp7 = message.components[0].type === _require(1955).ComponentType.CHECKPOINT_CARD;
       }
       tmp6 = tmp7;
     }
     if (null != channel) {
-      let obj = _require(5257);
+      let obj = _require(4619);
       if (obj.isChannelOrGuildNSFW(channel)) {
         if (tmp) {
-          let tmp11Result = tmp11(5257);
+          let tmp11Result = tmp11(4619);
         }
         obj = { label: null, lineClamp: 2 };
         const intl = tmp11(1236).intl;
@@ -83,7 +83,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
             const messageSnapshots = components.messageSnapshots;
           }
           if (components.embeds.length > 0) {
-            tmp11Result = tmp11(4826);
+            tmp11Result = tmp11(4738);
             if (!tmp11Result.canEmbedLinks(type, closure_9)) {
               if (!tmp11Result1.shouldStripEmbeds(components)) {
                 obj1 = { label: null };
@@ -91,7 +91,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
                 obj1[0] = intl3.string(tmp11(1236).t.Wr4RIX);
                 return obj1;
               }
-              tmp11Result1 = tmp11(4826);
+              tmp11Result1 = tmp11(4738);
             }
           } else {
             const messageSnapshots2 = components.messageSnapshots;
@@ -103,11 +103,11 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
               obj2[0] = intl4.string(tmp11(1236).t.Wr4RIX);
               return obj2;
             }
-            tmp11Result2 = tmp11(4826);
+            tmp11Result2 = tmp11(4738);
           }
           const items = [];
           const messageSnapshots3 = components.messageSnapshots;
-          let arraySpreadResult = HermesBuiltin.arraySpread(tmp11(4828).getMessageStickers(components), 0);
+          let arraySpreadResult = HermesBuiltin.arraySpread(tmp11(4740).getMessageStickers(components), 0);
           arraySpreadResult = HermesBuiltin.arraySpread(messageSnapshots3.flatMap((message) => type(table[12]).getMessageStickers(message.message)), arraySpreadResult);
           if (items.length > 0) {
             if (!closure_9.can(constants2.USE_EXTERNAL_STICKERS, type)) {
@@ -141,7 +141,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           } else {
             const messageSnapshots4 = components.messageSnapshots;
           }
-          const tmp11Result3 = tmp11(4828);
+          const tmp11Result3 = tmp11(4740);
         }
       }
     }
@@ -171,8 +171,8 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         if (null != user) {
           nickname = nickname.getNickname(user.id);
           if (nickname == null) {
-            nickname = callback2(4223).getName(user);
-            const obj2 = callback2(4223);
+            nickname = callback2(4224).getName(user);
+            const obj2 = callback2(4224);
           }
           tmp13 = nickname;
         }
@@ -181,7 +181,7 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         channel = channel.getChannel(id);
         let channelName = null;
         if (null != channel) {
-          const obj = callback(4989);
+          const obj = callback(4574);
           channelName = obj.computeChannelName(channel, user, nickname, true);
         }
         return channelName;

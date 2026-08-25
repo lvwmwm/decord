@@ -1,12 +1,12 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 11351
+// Function ID: 11352
 // Name: usePendingFolderGuildIds
-// Dependencies: [4202, 1910, 589, 2]
+// Dependencies: [4203, 1910, 589, 2]
 // Exports: default, getPendingFolderGuildIds
 
-// Module 9572 (usePendingFolderGuildIds)
+// Module 11351 (usePendingFolderGuildIds)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "handleGatewayJoinRequestUpdate" /* 4202 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4203 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 
 require = arg1;

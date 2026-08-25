@@ -1,18 +1,18 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9771
+// Function ID: 9772
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1922, 9118, 21, 4668, 712, 9675, 1370, 9677, 1363, 1236, 9678, 9680, 11589, 9128, 8899, 2]
+// Dependencies: [32, 19, 17, 1922, 9770, 21, 4380, 712, 9772, 1370, 9773, 1363, 1236, 9774, 9776, 11250, 4951, 9156, 2]
 // Exports: default
 
-// Module 9674 (SearchableUserList)
+// Module 9771 (SearchableUserList)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { UserRowModes } from "UserRowModes" /* 9118 */;
+import { UserRowModes } from "UserRowModes" /* 9770 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
@@ -88,11 +88,13 @@ export default function SearchableUserList(selectedUserIds) {
   if (flag12 === undefined) {
     flag12 = false;
   }
-  ({ defaultNoResultsFound, disableGradient } = selectedUserIds);
+  ({ defaultNoResultsFound, disableGradient, focusOnAdd, disableStickySections, disableThemedGradient } = selectedUserIds);
+  if (focusOnAdd === undefined) {
+    focusOnAdd = true;
+  }
   closure_5 = undefined;
   let memo;
   ref = undefined;
-  ({ disableStickySections, disableThemedGradient } = selectedUserIds);
   const tmp2 = callback();
   let obj = ACTIONS;
   let tmp3 = handleMessage(ACTIONS.useState(""), 2);
@@ -256,7 +258,7 @@ export default function SearchableUserList(selectedUserIds) {
     if (!flag12) {
       const obj4 = { style: null, children: null };
       obj4[0] = tmp2.searchBarContainer;
-      const obj5 = { onChangeText: null, onRemove: null, tags: null, style: null, autoFocus: null };
+      const obj5 = { onChangeText: null, onRemove: null, tags: null, style: null, autoFocus: null, focusOnAdd: null };
       obj5[0] = tmp3[1];
       obj5[1] = callback;
       obj5[2] = memo;
@@ -266,6 +268,7 @@ export default function SearchableUserList(selectedUserIds) {
         flag = someResult;
       }
       obj5[4] = flag;
+      obj5[5] = focusOnAdd;
       obj4[1] = tmp27(tmp4Result, obj5);
       tmp27Result = tmp27(closure_5, obj4);
       const tmp32 = closure_5;

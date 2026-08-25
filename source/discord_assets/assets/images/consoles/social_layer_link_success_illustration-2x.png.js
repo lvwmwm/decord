@@ -1,9 +1,9 @@
-// Module ID: 13398
-// Function ID: 13399
+// Module ID: 13433
+// Function ID: 13434
 // Name: metadata
 // Dependencies: [2]
 
-// Module 13398 (metadata)
+// Module 13433 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/images/consoles/social_layer_link_success_illustration-2x.png.js");

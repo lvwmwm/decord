@@ -1,10 +1,10 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13111
+// Function ID: 13112
 // Name: shouldUseAltGateway
-// Dependencies: [13250, 2]
+// Dependencies: [13112, 2]
 
-// Module 13249 (shouldUseAltGateway)
-import getCachedUseAltGatewayDefault from "getCachedUseAltGateway" /* 13250 */;
+// Module 13111 (shouldUseAltGateway)
+import getCachedUseAltGatewayDefault from "getCachedUseAltGateway" /* 13112 */;
 
 let closure_1 = getCachedUseAltGatewayDefault();
 const result = require("set").fileFinishedImporting("modules/gateway/AltGatewayTracker.tsx");

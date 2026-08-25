@@ -1,24 +1,24 @@
-// Module ID: 16084
-// Function ID: 16085
+// Module ID: 16116
+// Function ID: 16117
 // Name: handleFindFriends
-// Dependencies: [32, 5, 19, 17, 5411, 4033, 1922, 11921, 676, 11900, 21, 4668, 712, 11898, 8081, 4096, 1236, 7544, 11902, 500, 7177, 7197, 4766, 698, 8966, 647, 12, 4223, 15375, 7183, 9128, 12420, 5451, 9680, 6322, 4098, 6923, 16085, 16086, 16088, 16089, 2]
+// Dependencies: [32, 5, 19, 17, 7264, 4034, 1922, 12255, 676, 12234, 21, 4380, 712, 12232, 7903, 4097, 1236, 7362, 12236, 500, 5834, 5854, 4831, 698, 8930, 647, 12, 4224, 15405, 5840, 4951, 9236, 5929, 9776, 5480, 4099, 4920, 16117, 16118, 16120, 16121, 2]
 // Exports: default
 
-// Module 16084 (handleFindFriends)
+// Module 16116 (handleFindFriends)
 import ThemesDefault from "Themes" /* 712 */;
-import handleNameInputScreenOrSuggestions from "handleNameInputScreenOrSuggestions" /* 11898 */;
+import handleNameInputScreenOrSuggestions from "handleNameInputScreenOrSuggestions" /* 12232 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "recountRelationshipTypes" /* 5411 */;
-import closure_9 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "recountRelationshipTypes" /* 7264 */;
+import closure_9 from "markAllUserIdListsStale" /* 4034 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import { Sections } from "SuggestedFriendSource" /* 11921 */;
+import { Sections } from "SuggestedFriendSource" /* 12255 */;
 import ME from "ME" /* 676 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 11900 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12234 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function handleFindFriends() {
@@ -53,7 +53,7 @@ function _handleShare() {
           obj[0] = code;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ function _handleShare() {
             }
           } else if (1 === tmp7) {
             c4 = 0;
-            obj1 = callback(4096);
+            obj1 = callback(4097);
             const intl = callback(1236).intl;
             obj1.presentError(intl.string(callback(1236).t.R0RpRX));
             c6 = 3;
@@ -104,12 +104,12 @@ function _handleShare() {
             obj3[1] = code;
             const intl2 = callback(1236).intl;
             const obj4 = { link: null };
-            obj4[0] = code(7544)(code);
+            obj4[0] = code(7362)(code);
             obj3[2] = intl2.formatToPlainString(callback(1236).t.PJf9P9, obj4);
             obj3[3] = constants.ADD_FRIENDS_MODAL;
             callback(obj3);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           closure_3 = tmp21;
@@ -284,9 +284,9 @@ export default function AddFriendsScreen(navigation) {
     });
     const obj2 = callback(analyticsLocations[26]);
     return callback(analyticsLocations[26]).unionBy(items1, items, (id) => id.id).sort((arg0, arg1) => {
-      const name = callback(4223).getName(arg0);
-      const obj = callback(4223);
-      return name.localeCompare(callback(4223).getName(arg1));
+      const name = callback(4224).getName(arg0);
+      const obj = callback(4224);
+      return name.localeCompare(callback(4224).getName(arg1));
     });
   });
   let obj3 = _require(analyticsLocations[25]);
@@ -326,9 +326,9 @@ export default function AddFriendsScreen(navigation) {
     });
     let obj = callback(analyticsLocations[26]);
     return callback(analyticsLocations[26]).unionBy(items1, items, (user) => user.user.id).sort((user, user2) => {
-      const name = items1(4223).getName(user.user);
-      const obj = items1(4223);
-      return name.localeCompare(items1(4223).getName(user2.user));
+      const name = items1(4224).getName(user.user);
+      const obj = items1(4224);
+      return name.localeCompare(items1(4224).getName(user2.user));
     });
   }, items4, areHydratedGameFriendRequestRowStatesEqual);
   let tmp6 = callback(React.useState([]), 2);

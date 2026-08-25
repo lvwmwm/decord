@@ -1,16 +1,16 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12540
+// Function ID: 12541
 // Name: UserProfileEditNote
-// Dependencies: [32, 19, 17, 676, 21, 4668, 1500, 12211, 6345, 9483, 4241, 8531, 1236, 12220, 4739, 8131, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4380, 1500, 12534, 5376, 9610, 4242, 8539, 1236, 12541, 4376, 8127, 2]
 // Exports: default
 
-// Module 12219 (UserProfileEditNote)
+// Module 12540 (UserProfileEditNote)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { NOTE_MAX_LENGTH } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

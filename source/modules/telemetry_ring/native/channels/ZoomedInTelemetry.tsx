@@ -1,14 +1,14 @@
-// Module ID: 13616
-// Function ID: 13617
+// Module ID: 13651
+// Function ID: 13652
 // Name: shouldRun
-// Dependencies: [5, 13617, 13618, 13620, 13622, 698, 2]
+// Dependencies: [5, 13652, 13653, 13655, 13657, 698, 2]
 
-// Module 13616 (shouldRun)
-import apexExperiment from "apexExperiment" /* 13617 */;
-import getIntervalMsDefault from "getIntervalMs" /* 13618 */;
-import TelemetryChannel from "TelemetryChannel" /* 13620 */;
+// Module 13651 (shouldRun)
+import apexExperiment from "apexExperiment" /* 13652 */;
+import getIntervalMsDefault from "getIntervalMs" /* 13653 */;
+import TelemetryChannel from "TelemetryChannel" /* 13655 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import importDefaultResult1 from "TelemetryChannel" /* 13620 */;
+import importDefaultResult1 from "TelemetryChannel" /* 13655 */;
 
 require = arg1;
 let closure_4 = { type: "ROWS", limit: 250 };
@@ -52,7 +52,7 @@ prototype["exportEntries"] = function exportEntries(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {

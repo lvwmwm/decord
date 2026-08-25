@@ -1,18 +1,18 @@
-// Module ID: 10989
-// Function ID: 10990
+// Module ID: 11329
+// Function ID: 11330
 // Name: QuestRewardTile
-// Dependencies: [32, 19, 17, 4669, 21, 4668, 712, 500, 589, 10530, 10525, 9055, 5454, 2]
+// Dependencies: [32, 19, 17, 4372, 21, 4380, 712, 500, 589, 10547, 10542, 9017, 5374, 2]
 // Exports: default
 
-// Module 10989 (QuestRewardTile)
+// Module 11329 (QuestRewardTile)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { useMemo } from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ AppState: closure_6, View: error } = get_ActivityIndicator);

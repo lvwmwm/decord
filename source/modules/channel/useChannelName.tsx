@@ -1,14 +1,14 @@
-// Module ID: 4989
-// Function ID: 4990
+// Module ID: 4574
+// Function ID: 4575
 // Name: computeChannelName
-// Dependencies: [32, 4292, 4033, 1922, 676, 1370, 4223, 1236, 589, 2]
+// Dependencies: [32, 4293, 4034, 1922, 676, 1370, 4224, 1236, 589, 2]
 // Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, default, escapeChannelName, unescapeChannelName, useComputedGroupDmName
 
-// Module 4989 (computeChannelName)
-import nameFromUserDefault from "nameFromUser" /* 4223 */;
+// Module 4574 (computeChannelName)
+import nameFromUserDefault from "nameFromUser" /* 4224 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "getHash" /* 4292 */;
-import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_4 from "getHash" /* 4293 */;
+import closure_5 from "markAllUserIdListsStale" /* 4034 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

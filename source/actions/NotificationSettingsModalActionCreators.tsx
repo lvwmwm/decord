@@ -1,18 +1,18 @@
-// Module ID: 6835
-// Function ID: 6836
-// Dependencies: [5, 5048, 676, 4036, 685, 709, 6832, 6834, 11, 1363, 1236, 1403, 530, 2]
+// Module ID: 5368
+// Function ID: 5369
+// Dependencies: [5, 4589, 676, 4037, 685, 709, 5363, 5365, 11, 1363, 1236, 1403, 530, 2]
 
-// Module 6835
+// Module 5368
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1363 */;
-import UserNotificationSettings from "UserNotificationSettings" /* 6832 */;
-import handleConnectionOpenDefault from "handleConnectionOpen" /* 6834 */;
+import UserNotificationSettings from "UserNotificationSettings" /* 5363 */;
+import handleConnectionOpenDefault from "handleConnectionOpen" /* 5365 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 4589 */;
 import { Endpoints } from "ME" /* 676 */;
-import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags" /* 4036 */;
+import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags" /* 4037 */;
 import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES" /* 685 */;
 
 require = arg1;
@@ -44,17 +44,17 @@ export default {
     closure_3 = location;
     let obj = DISCORD_EPOCHDefault;
     const keys = obj.keys(channel_overrides.channel_overrides);
-    const currentGuildSettings = _require(6832).getCurrentGuildSettings(guildId);
-    const obj2 = _require(6832);
-    const manyCurrentChannelSettings = _require(6832).getManyCurrentChannelSettings(guildId, keys);
-    const obj3 = _require(6832);
+    const currentGuildSettings = _require(5363).getCurrentGuildSettings(guildId);
+    const obj2 = _require(5363);
+    const manyCurrentChannelSettings = _require(5363).getManyCurrentChannelSettings(guildId, keys);
+    const obj3 = _require(5363);
     let result = handleConnectionOpenDefault.saveUserGuildSettings(guildId, channel_overrides);
     const obj4 = handleConnectionOpenDefault;
     obj = { type: "USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE", guildId, settings: channel_overrides };
     dispatcherDefault.dispatch(obj);
     const obj5 = dispatcherDefault;
-    const result1 = _require(6832).trackGuildNotificationSettingsUpdate(guildId, channel_overrides, currentGuildSettings, OptedIn, location);
-    const obj7 = _require(6832);
+    const result1 = _require(5363).trackGuildNotificationSettingsUpdate(guildId, channel_overrides, currentGuildSettings, OptedIn, location);
+    const obj7 = _require(5363);
     const keys1 = DISCORD_EPOCHDefault.keys(channel_overrides.channel_overrides);
     const item = keys1.forEach((channelId) => {
       const value = closure_4.get(channelId);
@@ -85,8 +85,8 @@ export default {
     closure_3 = arg3;
     let obj = DISCORD_EPOCHDefault;
     const keys = obj.keys(channel_overrides);
-    const manyCurrentChannelSettings = _require(6832).getManyCurrentChannelSettings(guildId, keys);
-    const obj2 = _require(6832);
+    const manyCurrentChannelSettings = _require(5363).getManyCurrentChannelSettings(guildId, keys);
+    const obj2 = _require(5363);
     obj = { channel_overrides };
     const result = handleConnectionOpenDefault.saveUserGuildSettings(guildId, obj);
     const obj3 = handleConnectionOpenDefault;
@@ -141,7 +141,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ export default {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           c3 = tmp;

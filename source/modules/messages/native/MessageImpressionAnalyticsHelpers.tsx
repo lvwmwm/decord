@@ -1,17 +1,17 @@
-// Module ID: 10544
-// Function ID: 10545
+// Module ID: 11075
+// Function ID: 11076
 // Name: getVoiceInviteEmbedRenderInfo
-// Dependencies: [19, 4363, 4550, 676, 7480, 4375, 10545, 7270, 4367, 4373, 10546, 10547, 4364, 2]
+// Dependencies: [19, 4364, 4455, 676, 7293, 7340, 11076, 5994, 4368, 7339, 11077, 11078, 4365, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 10544 (getVoiceInviteEmbedRenderInfo)
-import InviteTypes2 from "InviteTypes" /* 4373 */;
+// Module 11075 (getVoiceInviteEmbedRenderInfo)
+import InviteTypes2 from "InviteTypes" /* 7339 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateInvite" /* 4363 */;
-import closure_5 from "getVoiceStatesForGuild" /* 4550 */;
+import closure_4 from "updateInvite" /* 4364 */;
+import closure_5 from "getVoiceStatesForGuild" /* 4455 */;
 import ME from "ME" /* 676 */;
-import { LinkType } from "LinkType" /* 7480 */;
-import { InviteTypes } from "InviteSendStates" /* 4375 */;
+import { LinkType } from "LinkType" /* 7293 */;
+import { InviteTypes } from "InviteSendStates" /* 7340 */;
 
 require = arg1;
 function getVoiceInviteEmbedRenderInfo(state) {
@@ -22,9 +22,9 @@ function getVoiceInviteEmbedRenderInfo(state) {
           if (obj5.getInviteType(state) !== InviteTypes.GUILD) {
             return null;
           } else {
-            let tmp7Result = tmp7(4373);
+            let tmp7Result = tmp7(7339);
             const guildInviteExtendedType = tmp7Result.getGuildInviteExtendedType(state);
-            if (guildInviteExtendedType !== tmp7(4373).GuildInviteExtendedType.VOICE_CHANNEL) {
+            if (guildInviteExtendedType !== tmp7(7339).GuildInviteExtendedType.VOICE_CHANNEL) {
               return null;
             } else {
               const guild = state.guild;
@@ -34,13 +34,13 @@ function getVoiceInviteEmbedRenderInfo(state) {
               }
               let tmp4 = null;
               if (null != id) {
-                tmp7Result = tmp7(10546);
+                tmp7Result = tmp7(11077);
                 let obj = { guildId: null, location: "mobile_invite_embed_impression" };
                 obj[0] = id;
                 let enabled = tmp7Result.getVoiceChannelListInviteExperiment(obj).enabled;
                 if (enabled) {
-                  enabled = tmp7(10547).canShowVoiceChannelListInviteEmbed(state);
-                  const tmp7Result1 = tmp7(10547);
+                  enabled = tmp7(11078).canShowVoiceChannelListInviteEmbed(state);
+                  const tmp7Result1 = tmp7(11078);
                 }
                 obj = { treatmentRendered: null };
                 obj[0] = enabled;

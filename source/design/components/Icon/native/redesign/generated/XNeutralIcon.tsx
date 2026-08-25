@@ -1,13 +1,13 @@
-// Module ID: 8349
-// Function ID: 8350
+// Module ID: 8350
+// Function ID: 8351
 // Name: XNeutralIcon
-// Dependencies: [19, 21, 4099, 8350, 2]
+// Dependencies: [19, 21, 4100, 8351, 2]
 // Exports: XNeutralIcon
 
-// Module 8349 (XNeutralIcon)
+// Module 8350 (XNeutralIcon)
 import noopAll from "noop" /* 19 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 8350 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 8351 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

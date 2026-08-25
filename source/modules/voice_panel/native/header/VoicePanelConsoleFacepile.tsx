@@ -1,18 +1,18 @@
-// Module ID: 16438
-// Function ID: 16439
+// Module ID: 16470
+// Function ID: 16471
 // Name: getConsoleInfo
-// Dependencies: [19, 676, 21, 4668, 712, 9923, 1236, 9786, 1370, 7228, 1297, 2]
+// Dependencies: [19, 676, 21, 4380, 712, 12422, 1236, 10963, 1370, 5887, 1297, 2]
 // Exports: default
 
-// Module 16438 (getConsoleInfo)
+// Module 16470 (getConsoleInfo)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9786 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 9923 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 10963 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 12422 */;
 import closure_3 from "noop" /* 19 */;
 import { PlatformTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function getConsoleInfo(type) {

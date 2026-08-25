@@ -1,16 +1,16 @@
-// Module ID: 9581
-// Function ID: 9582
+// Module ID: 9676
+// Function ID: 9677
 // Name: formatClearAfterValue
-// Dependencies: [9329, 4066, 1236, 687, 1370, 2]
+// Dependencies: [9602, 4067, 1236, 687, 1370, 2]
 // Exports: default
 
-// Module 9581 (formatClearAfterValue)
+// Module 9676 (formatClearAfterValue)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import resetCache from "resetCache" /* 4066 */;
-import StatusTypes from "StatusTypes" /* 9329 */;
+import resetCache from "resetCache" /* 4067 */;
+import StatusTypes from "StatusTypes" /* 9602 */;
 
 const ClearAfterValues = StatusTypes.ClearAfterValues;
 let result = set.fileFinishedImporting("modules/custom_status/utils/formatClearAfterValue.tsx");

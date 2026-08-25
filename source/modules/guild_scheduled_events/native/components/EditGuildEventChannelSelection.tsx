@@ -1,20 +1,20 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 9135
+// Function ID: 9136
 // Name: EditGuildEventChannelSelection
-// Dependencies: [19, 17, 4024, 4033, 1922, 4374, 676, 21, 4668, 712, 7383, 8874, 8860, 4989, 589, 6870, 8862, 8863, 1236, 4739, 5438, 1892, 8879, 8841, 4346, 8858, 2008, 1297, 8859, 2]
+// Dependencies: [19, 17, 4025, 4034, 1922, 7132, 676, 21, 4380, 712, 6109, 9131, 9117, 4574, 589, 4866, 9119, 9120, 1236, 4376, 4949, 1892, 9136, 9108, 4347, 9115, 2009, 1297, 9116, 2]
 // Exports: default
 
-// Module 8878 (EditGuildEventChannelSelection)
+// Module 9135 (EditGuildEventChannelSelection)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_6 from "markAllUserIdListsStale" /* 4033 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_6 from "markAllUserIdListsStale" /* 4034 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "scheduledEventSort" /* 4374 */;
+import closure_8 from "scheduledEventSort" /* 7132 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -40,14 +40,14 @@ export default function EditGuildEventChannelSelection(guild) {
   closure_8 = undefined;
   let constants;
   const tmp = callback2();
-  let obj = guild(7383);
+  let obj = guild(6109);
   const inputStyles = obj.useInputStyles({ hasLeadingIcon: true });
   closure_5 = tmp5;
-  obj1 = guild(8874);
+  obj1 = guild(9131);
   closure_6 = obj1.useGetEventChannelsByType(guild.id, channelType);
-  let obj2 = guild(8860);
+  let obj2 = guild(9117);
   closure_7 = obj2.useChannelsUserCanStartStageIn(guild);
-  const tmp7 = channel(4989)(channel);
+  const tmp7 = channel(4574)(channel);
   let obj3 = guild(589);
   const items = [closure_5];
   closure_8 = obj3.useStateFromStores(items, () => closure_5.can(closure_1_10.MANAGE_CHANNELS, guild));
@@ -56,16 +56,16 @@ export default function EditGuildEventChannelSelection(guild) {
   const items2 = [guildEventId];
   constants = obj4.useStateFromStores(items1, () => guildScheduledEvent.getGuildScheduledEvent(guildEventId), items2);
   if (null != channel) {
-    let tmp2Result = tmp2(6870);
+    let tmp2Result = tmp2(4866);
     let channelIcon = tmp2Result.getChannelIcon(channel);
   } else {
-    channelIcon = tmp6(8862);
+    channelIcon = tmp6(9119);
   }
   if (null != channel) {
-    tmp2Result = tmp2(6870);
+    tmp2Result = tmp2(4866);
     let LocationIcon = tmp2Result.getChannelIconComponent(channel);
   } else {
-    LocationIcon = tmp2(8863).LocationIcon;
+    LocationIcon = tmp2(9120).LocationIcon;
   }
   let intl = tmp2(1236).intl;
   let string = intl.string;
@@ -78,7 +78,7 @@ export default function EditGuildEventChannelSelection(guild) {
   obj = { style: items3, children: null };
   items3 = [tmp.container, guild.style];
   obj = { style: tmp.channelTypeText, variant: "text-sm/semibold", color: "text-subtle", children: stringResult };
-  const items4 = [callback(guild(4739).Text, obj), ];
+  const items4 = [callback(guild(4376).Text, obj), ];
   obj1 = { accessibilityLabel: stringResult, accessibilityHint: null, accessibilityValue: null, accessibilityRole: "button", style: null, onPress: null, children: null };
   const intl2 = tmp2(1236).intl;
   obj1[1] = intl2.string(guild(1236).t.AaXbMD);
@@ -151,10 +151,10 @@ export default function EditGuildEventChannelSelection(guild) {
   }
   const items6 = [tmp12Result, , ];
   obj4 = { style: tmp.channelNameText, variant: "text-md/medium", color: "interactive-text-active", children: tmp7 };
-  items6[1] = callback(guild(4739).Text, obj4);
-  items6[2] = callback(guild(1297).Icon, { source: channel(8859) });
+  items6[1] = callback(guild(4376).Text, obj4);
+  items6[2] = callback(guild(1297).Icon, { source: channel(9116) });
   obj1[6] = items6;
-  items4[1] = closure_12(guild(5438).PressableOpacity, obj1);
+  items4[1] = closure_12(guild(4949).PressableOpacity, obj1);
   obj[1] = items4;
   return closure_12(View, obj);
 };

@@ -1,13 +1,13 @@
-// Module ID: 10702
-// Function ID: 10703
+// Module ID: 10504
+// Function ID: 10505
 // Name: handleActivityStateChanged
-// Dependencies: [7289, 7288, 676, 4263, 709, 589, 2]
+// Dependencies: [10505, 5104, 676, 4264, 709, 589, 2]
 
-// Module 10702 (handleActivityStateChanged)
+// Module 10504 (handleActivityStateChanged)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "updateActivities" /* 7289 */;
-import closure_4 from "filterPlayingActivities" /* 7288 */;
+import closure_3 from "updateActivities" /* 10505 */;
+import closure_4 from "filterPlayingActivities" /* 5104 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -38,7 +38,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
         tmp16[applicationId].stop();
         const obj5 = tmp16[applicationId];
       }
-      const timeout = new applicationId(4263).Timeout();
+      const timeout = new applicationId(4264).Timeout();
       timeout.start(c9, () => {
         let obj = JOIN(closure_1_2[4]);
         obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType: JOIN };
@@ -56,7 +56,7 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
         tmp7[applicationId].stop();
         const obj3 = tmp7[applicationId];
       }
-      const timeout1 = new applicationId(4263).Timeout();
+      const timeout1 = new applicationId(4264).Timeout();
       timeout1.start(num, () => {
         let obj = JOIN(closure_1_2[4]);
         obj = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType: JOIN };

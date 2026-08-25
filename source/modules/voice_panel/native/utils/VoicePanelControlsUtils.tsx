@@ -1,14 +1,14 @@
-// Module ID: 11496
-// Function ID: 11497
+// Module ID: 11847
+// Function ID: 11848
 // Name: VOICE_PANEL_DRAWER_MAX_WIDTH
-// Dependencies: [11489, 11492, 11487, 2]
+// Dependencies: [11841, 11844, 11839, 2]
 // Exports: getControlsDefaultWidth, getControlsDrawerOpenWidth
 
-// Module 11496 (VOICE_PANEL_DRAWER_MAX_WIDTH)
+// Module 11847 (VOICE_PANEL_DRAWER_MAX_WIDTH)
 import set from "set" /* 2 */;
-import VoicePanelControlsModes from "VoicePanelControlsModes" /* 11487 */;
-import VoicePanelModes from "VoicePanelModes" /* 11489 */;
-import CARD_SIZE from "CARD_SIZE" /* 11492 */;
+import VoicePanelControlsModes from "VoicePanelControlsModes" /* 11839 */;
+import VoicePanelModes from "VoicePanelModes" /* 11841 */;
+import CARD_SIZE from "CARD_SIZE" /* 11844 */;
 
 const VOICE_PANEL_DRAWER_MAX_WIDTH = VoicePanelModes.VOICE_PANEL_DRAWER_MAX_WIDTH;
 const EDGE_GUTTER = CARD_SIZE.EDGE_GUTTER;

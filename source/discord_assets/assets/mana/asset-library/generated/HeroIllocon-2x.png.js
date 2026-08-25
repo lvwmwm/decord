@@ -1,9 +1,9 @@
-// Module ID: 5936
-// Function ID: 5937
+// Module ID: 6626
+// Function ID: 6627
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5936 (metadata)
+// Module 6626 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeroIllocon-2x.png.js");

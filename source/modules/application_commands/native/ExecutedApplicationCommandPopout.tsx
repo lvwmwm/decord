@@ -1,27 +1,27 @@
-// Module ID: 10845
-// Function ID: 10846
+// Module ID: 11169
+// Function ID: 11170
 // Name: getCommandOptionComponents
-// Dependencies: [19, 17, 1391, 1984, 1910, 4999, 4033, 1922, 8487, 5251, 676, 1499, 6847, 21, 4668, 712, 1954, 1297, 4346, 8966, 4223, 4739, 4989, 1236, 7177, 589, 5454, 1438, 6323, 500, 10846, 4096, 6322, 1627, 5253, 4738, 6317, 7197, 8370, 6988, 2]
+// Dependencies: [19, 17, 1391, 1985, 1910, 4623, 4034, 1922, 8494, 4838, 676, 1499, 4839, 21, 4380, 712, 1955, 1297, 4347, 8930, 4224, 4376, 4574, 1236, 5834, 589, 5374, 1438, 5482, 500, 11170, 4097, 5480, 1627, 7129, 4813, 5873, 5854, 8376, 5503, 2]
 // Exports: default
 
-// Module 10845 (getCommandOptionComponents)
+// Module 11169 (getCommandOptionComponents)
 import ThemesDefault from "Themes" /* 712 */;
-import nameFromUserDefault from "nameFromUser" /* 4223 */;
+import nameFromUserDefault from "nameFromUser" /* 4224 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_8 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "reinjectEphemerals" /* 4999 */;
-import closure_11 from "markAllUserIdListsStale" /* 4033 */;
+import closure_10 from "reinjectEphemerals" /* 4623 */;
+import closure_11 from "markAllUserIdListsStale" /* 4034 */;
 import closure_12 from "mergeGuildAvatar" /* 1922 */;
-import closure_13 from "getIndexKey" /* 8487 */;
-import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 5251 */;
+import closure_13 from "getIndexKey" /* 8494 */;
+import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 4838 */;
 import ME from "ME" /* 676 */;
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
-import regExp from "regExp" /* 6847 */;
+import regExp from "regExp" /* 4839 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function getCommandOptionComponents(option) {
@@ -46,8 +46,8 @@ function getCommandOptionComponents(option) {
     const _HermesInternal = HermesInternal;
     combined = " " + name_localized;
   }
-  if (iter.type !== iter(1954).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (iter.type !== tmp6(1954).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (iter.type !== iter(1955).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (iter.type !== tmp6(1955).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       if (null != iter.value) {
         function getUserComponent(user, styles) {
           let obj = {
@@ -73,24 +73,24 @@ function getCommandOptionComponents(option) {
           return closure_1_21(iter(closure_1_3[21]).Text, { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl }, "optionValue-" + iter.name);
         }
         const type = iter.type;
-        if (tmp6(1954).ApplicationCommandOptionType.USER === type) {
+        if (tmp6(1955).ApplicationCommandOptionType.USER === type) {
           const user = authStore.getUser(iter.value.toString());
           let userComponent = null;
           if (null != user) {
             userComponent = getUserComponent(user, styles);
           }
           const str5 = iter.value;
-        } else if (tmp6(1954).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp6(1955).ApplicationCommandOptionType.CHANNEL === type) {
           channel = store.getChannel(iter.value.toString());
           userComponent = null;
           if (null != channel) {
             let obj = { style: null, children: null };
             obj[0] = styles.commandOptionMentionText;
-            const items1 = [closure_18, tmp6(4989).computeChannelName(channel, authStore, closure_11)];
+            const items1 = [closure_18, tmp6(4574).computeChannelName(channel, authStore, closure_11)];
             obj[1] = items1;
             const _HermesInternal3 = HermesInternal;
             userComponent = callback2(tmp6(1297).LegacyText, obj, "optionValue-" + iter.name);
-            const tmp6Result = tmp6(4989);
+            const tmp6Result = tmp6(4574);
           }
           const str3 = iter.value;
         } else {
@@ -98,7 +98,7 @@ function getCommandOptionComponents(option) {
             const items = [closure_1_20, role.name];
             return closure_1_22(iter(closure_1_3[17]).LegacyText, { style: styles.commandOptionMentionText, children: items }, "optionValue-" + iter.name);
           }
-          if (tmp6(1954).ApplicationCommandOptionType.ROLE === type) {
+          if (tmp6(1955).ApplicationCommandOptionType.ROLE === type) {
             const value = iter.value;
             let role;
             if (null != guild) {
@@ -108,7 +108,7 @@ function getCommandOptionComponents(option) {
             if (null != role) {
               userComponent = getRoleComponent(role);
             }
-          } else if (tmp6(1954).ApplicationCommandOptionType.MENTIONABLE === type) {
+          } else if (tmp6(1955).ApplicationCommandOptionType.MENTIONABLE === type) {
             str = iter.value.toString();
             let role1;
             if (null != guild) {
@@ -126,7 +126,7 @@ function getCommandOptionComponents(option) {
             const str2 = iter.value;
           } else {
             userComponent = null;
-            if (tmp6(1954).ApplicationCommandOptionType.ATTACHMENT === type) {
+            if (tmp6(1955).ApplicationCommandOptionType.ATTACHMENT === type) {
               const intl = tmp6(1236).intl;
               userComponent = getCommandValueText(intl.string(tmp6(1236).t.nONJVc));
             }
@@ -225,12 +225,12 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
     let str = "";
     combined = "" + name_localized;
   }
-  if (item10118.type !== _require(1954).ApplicationCommandOptionType.SUB_COMMAND) {
-    if (item10118.type !== tmp5(1954).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
+  if (item10118.type !== _require(1955).ApplicationCommandOptionType.SUB_COMMAND) {
+    if (item10118.type !== tmp5(1955).ApplicationCommandOptionType.SUB_COMMAND_GROUP) {
       let sum = null;
       if (null != item10118.value) {
         const type = item10118.type;
-        if (tmp5(1954).ApplicationCommandOptionType.USER === type) {
+        if (tmp5(1955).ApplicationCommandOptionType.USER === type) {
           const user = authStore.getUser(item10118.value.toString());
           sum = null;
           if (null != user) {
@@ -238,15 +238,15 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
             const obj3 = nameFromUserDefault;
           }
           const str5 = item10118.value;
-        } else if (tmp5(1954).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp5(1955).ApplicationCommandOptionType.CHANNEL === type) {
           const channel = store.getChannel(item10118.value.toString());
           sum = null;
           if (null != channel) {
-            sum = closure_18 + tmp5(4989).computeChannelName(channel, authStore, closure_11);
-            const tmp5Result = tmp5(4989);
+            sum = closure_18 + tmp5(4574).computeChannelName(channel, authStore, closure_11);
+            const tmp5Result = tmp5(4574);
           }
           const str4 = item10118.value;
-        } else if (tmp5(1954).ApplicationCommandOptionType.ROLE === type) {
+        } else if (tmp5(1955).ApplicationCommandOptionType.ROLE === type) {
           const value = item10118.value;
           let role;
           if (null != id) {
@@ -258,7 +258,7 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
           }
         } else {
           sum = null;
-          if (tmp5(1954).ApplicationCommandOptionType.MENTIONABLE === type) {
+          if (tmp5(1955).ApplicationCommandOptionType.MENTIONABLE === type) {
             str = item10118.value.toString();
             let role1;
             if (null != id) {
@@ -671,7 +671,7 @@ export default function ExecutedCommandPopout(channelId) {
       const obj = stateFromStores(closure_1_3[38]);
     }
   }, items1);
-  obj = { value: messageId(7177)(messageId(7197).EXECUTED_COMMAND).analyticsLocations, children: null };
+  obj = { value: messageId(5834)(messageId(5854).EXECUTED_COMMAND).analyticsLocations, children: null };
   obj = { startExpanded: true, bodyStyles: tmp.container, children: null };
   let interactionData1;
   if (stateFromStores != null) {
@@ -714,6 +714,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp9Result = tmp9(closure_5, obj4);
   }
   obj[2] = tmp9Result;
-  obj[1] = closure_21(channelId(6988).BottomSheet, obj);
-  return closure_21(channelId(7177).AnalyticsLocationProvider, obj);
+  obj[1] = closure_21(channelId(5503).BottomSheet, obj);
+  return closure_21(channelId(5834).AnalyticsLocationProvider, obj);
 };

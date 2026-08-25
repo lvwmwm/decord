@@ -1,10 +1,10 @@
-// Module ID: 14088
-// Function ID: 14089
+// Module ID: 14123
+// Function ID: 14124
 // Name: _updateBadgeSettings
-// Dependencies: [5, 676, 530, 709, 8976, 1208, 2]
+// Dependencies: [5, 676, 530, 709, 8940, 1208, 2]
 // Exports: updateBadgeSettings
 
-// Module 14088 (_updateBadgeSettings)
+// Module 14123 (_updateBadgeSettings)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -28,7 +28,7 @@ function _updateBadgeSettings() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

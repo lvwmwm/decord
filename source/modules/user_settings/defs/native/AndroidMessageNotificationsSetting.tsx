@@ -1,16 +1,16 @@
-// Module ID: 14863
-// Function ID: 14864
+// Module ID: 14893
+// Function ID: 14894
 // Name: useAndroidMessageNotificationsSettingValue
-// Dependencies: [14852, 8238, 500, 10708, 1236, 2]
+// Dependencies: [14882, 8235, 500, 10516, 1236, 2]
 // Exports: useAndroidMessageNotificationsSettingValue, useHasAndroidMessageNotificationsSetting
 
-// Module 14863 (useAndroidMessageNotificationsSettingValue)
+// Module 14893 (useAndroidMessageNotificationsSettingValue)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import MobileUserSettings from "MobileUserSettings" /* 8238 */;
-import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore" /* 14852 */;
-import createToggle from "createToggle" /* 10708 */;
+import MobileUserSettings from "MobileUserSettings" /* 8235 */;
+import _initializeAndroidNotificationSettingsStore from "_initializeAndroidNotificationSettingsStore" /* 14882 */;
+import createToggle from "createToggle" /* 10516 */;
 
 function useAndroidMessageNotificationsSettingValue() {
   let flag = callback();

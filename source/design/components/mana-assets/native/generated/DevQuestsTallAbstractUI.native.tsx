@@ -1,14 +1,14 @@
-// Module ID: 5639
-// Function ID: 5640
+// Module ID: 6325
+// Function ID: 6326
 // Name: DevQuestsTallAbstractUI
-// Dependencies: [21, 5454, 5640, 2]
+// Dependencies: [21, 5374, 6326, 2]
 // Exports: DevQuestsTallAbstractUI
 
-// Module 5639 (DevQuestsTallAbstractUI)
+// Module 6325 (DevQuestsTallAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5640 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6326 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DevQuestsTallAbstractUI.native.tsx");

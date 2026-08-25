@@ -1,0 +1,15 @@
+// Module ID: 5826
+// Function ID: 5827
+// Name: _isNativeReflectConstruct
+// Dependencies: [5827, 5830]
+
+// Module 5826 (_isNativeReflectConstruct)
+import _isNativeReflectConstruct from "_isNativeReflectConstruct" /* 5827 */;
+
+for (const key10016 in require("module_5830")) {
+  let tmp2 = key10016;
+  arg5[key10016] = require("module_5830")[key10016];
+  continue;
+}
+
+export default _isNativeReflectConstruct.LottieView;

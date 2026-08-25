@@ -1,15 +1,15 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15537
+// Function ID: 15538
 // Name: registerGuildVisibilityMethod
-// Dependencies: [9542, 1910, 5083, 2]
+// Dependencies: [9667, 1910, 5262, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 15505 (registerGuildVisibilityMethod)
+// Module 15537 (registerGuildVisibilityMethod)
 import set2 from "set" /* 2 */;
-import insertUnsortedGuilds from "insertUnsortedGuilds" /* 5083 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9542 */;
+import insertUnsortedGuilds from "insertUnsortedGuilds" /* 5262 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9667 */;
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "insertUnsortedGuilds" /* 5083 */;
+import closure_3 from "insertUnsortedGuilds" /* 5262 */;
 
 ({ setGetVisibleChannelIds: c0, setGetVisibleGuildIds: closure_1 } = SidebarVisibilityMethodStore);
 const GuildsNodeType = insertUnsortedGuilds.GuildsNodeType;

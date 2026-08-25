@@ -1,9 +1,9 @@
-// Module ID: 9232
-// Function ID: 9233
+// Module ID: 9513
+// Function ID: 9514
 // Name: handleReset
 // Dependencies: [589, 709, 2]
 
-// Module 9232 (handleReset)
+// Module 9513 (handleReset)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

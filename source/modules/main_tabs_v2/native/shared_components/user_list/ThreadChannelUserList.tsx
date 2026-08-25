@@ -1,11 +1,11 @@
-// Module ID: 16007
-// Function ID: 16008
-// Dependencies: [19, 1391, 1991, 1910, 1922, 676, 21, 7177, 589, 16008, 8670, 635, 7314, 4223, 8966, 9680, 2]
+// Module ID: 16039
+// Function ID: 16040
+// Dependencies: [19, 1391, 1992, 1910, 1922, 676, 21, 5834, 589, 16040, 8678, 635, 6036, 4224, 8930, 9776, 2]
 
-// Module 16007
+// Module 16039
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { RelationshipTypes } from "ME" /* 676 */;

@@ -1,20 +1,20 @@
-// Module ID: 5019
-// Function ID: 5020
+// Module ID: 7202
+// Function ID: 7203
 // Name: removePendingListFetch
-// Dependencies: [1218, 1391, 4033, 1980, 1922, 5020, 5021, 1405, 11, 4808, 5022, 1370, 4035, 589, 709, 2]
+// Dependencies: [1218, 1391, 4034, 1981, 1922, 7203, 7204, 1405, 11, 4625, 7205, 1370, 4036, 589, 709, 2]
 
-// Module 5019 (removePendingListFetch)
+// Module 7202 (removePendingListFetch)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import privDefault from "priv" /* 1405 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4625 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "markAllUserIdListsStale" /* 4033 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "markAllUserIdListsStale" /* 4034 */;
+import closure_6 from "handleConnectionOpen" /* 1981 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "initialize" /* 5020 */;
-import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 5021 */;
+import closure_8 from "initialize" /* 7203 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7204 */;
 
 require = arg1;
 function removePendingListFetch(channelId, requestKey) {
@@ -198,7 +198,7 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj2 = messageId(4035);
+      obj2 = messageId(4036);
     }
   }
 }
@@ -549,7 +549,7 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(5022).mapConversation);
+      const mapped = rawConversations.map(set(7205).mapConversation);
       const found = mapped.filter(set(1370).isNotNullish);
       const peekResult = navigation.peek(channelId);
       if (isJump) {
@@ -1110,7 +1110,7 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            const updateMessageRecordResult = id(4808).updateMessageRecord(value.message, message);
+            const updateMessageRecordResult = id(4625).updateMessageRecord(value.message, message);
             value.message = updateMessageRecordResult;
             value = null;
             if (null != value.conversationId) {
@@ -1134,7 +1134,7 @@ obj = {
                 flag = true;
               }
             }
-            const obj = id(4808);
+            const obj = id(4625);
           }
           return flag;
         }

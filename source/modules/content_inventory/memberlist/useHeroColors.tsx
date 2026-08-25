@@ -1,14 +1,14 @@
-// Module ID: 8385
-// Function ID: 8386
+// Module ID: 8391
+// Function ID: 8392
 // Name: useHeroColors
-// Dependencies: [32, 19, 4669, 1302, 8384, 5316, 8386, 688, 689, 589, 2]
+// Dependencies: [32, 19, 4372, 1302, 8390, 7158, 8392, 688, 689, 589, 2]
 // Exports: default, getHeroColors
 
-// Module 8385 (useHeroColors)
+// Module 8391 (useHeroColors)
 import nDefault from "n" /* 689 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
 
 const require = arg1;
@@ -22,9 +22,9 @@ export default function useHeroColors(pendingAvatarSrc) {
   const items1 = [closure_6];
   const stateFromStores1 = first(589).useStateFromStores(items1, () => theme.theme);
   let obj2 = first(589);
-  const fallbackHeroColor = first(8386).getFallbackHeroColor(stateFromStores1, stateFromStores);
-  let obj3 = first(8386);
-  let tmp4 = callback(first(8384).useAvatarColors(pendingAvatarSrc, fallbackHeroColor), 2);
+  const fallbackHeroColor = first(8392).getFallbackHeroColor(stateFromStores1, stateFromStores);
+  let obj3 = first(8392);
+  let tmp4 = callback(first(8390).useAvatarColors(pendingAvatarSrc, fallbackHeroColor), 2);
   first = tmp4[0];
   closure_1 = tmp6;
   const items2 = [first, tmp4[1]];
@@ -90,14 +90,14 @@ export default function useHeroColors(pendingAvatarSrc) {
   }, items2);
 };
 export const getHeroColors = function getHeroColors(game_name) {
-  let obj = num(8386);
+  let obj = num(8392);
   const fallbackHeroColor = obj.getFallbackHeroColor(theme.theme, closure_5.saturation);
   num = undefined;
   num = 1;
   if (closure_5.desaturateUserColors) {
     num = tmp.saturation;
   }
-  const useColorStore = tmp2(8384).useColorStore;
+  const useColorStore = tmp2(8390).useColorStore;
   const arr = useColorStore.getState().palette[game_name];
   let mapped;
   if (arr != null) {

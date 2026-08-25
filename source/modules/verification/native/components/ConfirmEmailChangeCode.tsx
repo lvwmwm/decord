@@ -1,13 +1,13 @@
-// Module ID: 8612
-// Function ID: 8613
+// Module ID: 8620
+// Function ID: 8621
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 8602, 21, 1500, 691, 8613, 8610, 1236, 2]
+// Dependencies: [5, 19, 8610, 21, 1500, 691, 8621, 8618, 1236, 2]
 // Exports: default
 
-// Module 8612 (ConfirmEmailChangeCode)
+// Module 8620 (ConfirmEmailChangeCode)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { setEmailToken } from "ChangeEmailFields" /* 8602 */;
+import { setEmailToken } from "ChangeEmailFields" /* 8610 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -69,7 +69,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -101,7 +101,7 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         v0 = tmp;
@@ -113,5 +113,5 @@ export default function ConfirmEmailChangeCode(isChangeEmail) {
   obj[3] = intl.string(_require(1236).t["2x/2Uo"]);
   const intl2 = _require(1236).intl;
   obj[4] = intl2.string(_require(1236).t.PDTjLN);
-  return jsx(navigation(8613), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
+  return jsx(navigation(8621), { onFormSubmit: null, onSuccess: null, onResend: null, headerText: null, confirmButtonText: null });
 };

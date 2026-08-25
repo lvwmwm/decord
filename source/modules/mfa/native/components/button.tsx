@@ -1,12 +1,12 @@
-// Module ID: 15191
-// Function ID: 15192
+// Module ID: 15221
+// Function ID: 15222
 // Name: MFAButton
-// Dependencies: [19, 21, 4750, 2]
+// Dependencies: [19, 21, 4815, 2]
 // Exports: default
 
-// Module 15191 (MFAButton)
+// Module 15221 (MFAButton)
 import noopAll from "noop" /* 19 */;
-import Button from "Button" /* 4750 */;
+import Button from "Button" /* 4815 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

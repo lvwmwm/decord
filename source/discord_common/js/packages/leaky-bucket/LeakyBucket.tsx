@@ -1,9 +1,9 @@
-// Module ID: 8796
-// Function ID: 8797
+// Module ID: 10831
+// Function ID: 10832
 // Name: _processQueue
 // Dependencies: [2]
 
-// Module 8796 (_processQueue)
+// Module 10831 (_processQueue)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/leaky-bucket/LeakyBucket.tsx");

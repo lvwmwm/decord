@@ -1,10 +1,10 @@
-// Module ID: 4384
-// Function ID: 4385
+// Module ID: 12428
+// Function ID: 12429
 // Name: isVirtualCurrencyEnabled
 // Dependencies: [1625, 2]
 // Exports: isVirtualCurrencyEnabled, useVirtualCurrencyMobileEnabled
 
-// Module 4384 (isVirtualCurrencyEnabled)
+// Module 12428 (isVirtualCurrencyEnabled)
 import set from "set" /* 2 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
 

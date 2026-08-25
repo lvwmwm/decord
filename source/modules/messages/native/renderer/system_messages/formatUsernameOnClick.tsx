@@ -1,10 +1,10 @@
-// Module ID: 8227
-// Function ID: 8228
+// Module ID: 8223
+// Function ID: 8224
 // Name: formatUsernameOnClick
-// Dependencies: [8226, 2]
+// Dependencies: [8222, 2]
 // Exports: default
 
-// Module 8227 (formatUsernameOnClick)
+// Module 8223 (formatUsernameOnClick)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/formatUsernameOnClick.tsx");

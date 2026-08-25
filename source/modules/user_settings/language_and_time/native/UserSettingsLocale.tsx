@@ -1,16 +1,16 @@
-// Module ID: 14795
-// Function ID: 14796
+// Module ID: 14825
+// Function ID: 14826
 // Name: handleLanguageChange
-// Dependencies: [5, 19, 17, 1996, 1995, 21, 4668, 712, 9402, 589, 6840, 8140, 1236, 8139, 14796, 2]
+// Dependencies: [5, 19, 17, 1997, 1996, 21, 4380, 712, 8845, 589, 5434, 8136, 1236, 8135, 14826, 2]
 
-// Module 14795 (handleLanguageChange)
+// Module 14825 (handleLanguageChange)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { setAppLocale } from "_setAppLocale" /* 1996 */;
-import closure_7 from "_getSystemLocale" /* 1995 */;
+import { setAppLocale } from "_setAppLocale" /* 1997 */;
+import closure_7 from "_getSystemLocale" /* 1996 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -42,7 +42,7 @@ function _handleLanguageChange() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function _handleLanguageChange() {
             obj = callback(table[8]);
             obj.updateLocale(closure_0);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c4 = tmp;
@@ -120,8 +120,8 @@ const memoResult = importAllResult.memo(function UserSettingsLocale() {
     obj[3] = closure_1_8(closure_1_4, obj);
     return closure_1_8(lib(closure_1_2[13]).TableRadioRow, obj, name);
   });
-  obj[1] = jsx(_require(8140).TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
-  obj[1] = jsx(_require(6840).SafeAreaPaddingView, { bottom: true, children: null });
+  obj[1] = jsx(_require(8136).TableRadioGroup, { defaultValue: stateFromStores, onChange: handleLanguageChange, hasIcons: true, children: null });
+  obj[1] = jsx(_require(5434).SafeAreaPaddingView, { bottom: true, children: null });
   return <closure_5 bottom>{null}</closure_5>;
 });
 const result = require("set").fileFinishedImporting("modules/user_settings/language_and_time/native/UserSettingsLocale.tsx");

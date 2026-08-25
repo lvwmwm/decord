@@ -1,0 +1,39 @@
+// Module ID: 3673
+// Function ID: 3674
+// Name: differenceInMinutes
+// Dependencies: [3669, 3477, 3655, 3670]
+// Exports: default
+
+// Module 3673 (differenceInMinutes)
+import keys from "keys" /* 3655 */;
+import getRoundingMethod from "getRoundingMethod" /* 3670 */;
+import differenceInMilliseconds from "differenceInMilliseconds" /* 3669 */;
+import requiredArgs from "requiredArgs" /* 3477 */;
+
+if (!differenceInMilliseconds) {
+  let obj = { default: null };
+  obj[0] = differenceInMilliseconds;
+  let tmp3 = obj;
+} else {
+  tmp3 = differenceInMilliseconds;
+}
+differenceInMilliseconds = tmp3;
+if (!requiredArgs) {
+  obj = { default: null };
+  obj[0] = requiredArgs;
+  let tmp5 = obj;
+} else {
+  tmp5 = requiredArgs;
+}
+requiredArgs = tmp5;
+
+export default function differenceInMinutes(arg0, arg1, roundingMethod) {
+  requiredArgs.default(2, arguments);
+  const result = differenceInMilliseconds.default(arg0, arg1) / keys.millisecondsInMinute;
+  roundingMethod = undefined;
+  if (null != roundingMethod) {
+    roundingMethod = roundingMethod.roundingMethod;
+  }
+  return getRoundingMethod.getRoundingMethod(roundingMethod)(result);
+};
+export default exports.default;

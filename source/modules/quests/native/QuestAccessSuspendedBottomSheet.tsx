@@ -1,16 +1,16 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 14569
+// Function ID: 14570
 // Name: QuestAccessSuspendedBottomSheet
-// Dependencies: [19, 676, 11098, 21, 4346, 14538, 7398, 8056, 1236, 4750, 2]
+// Dependencies: [19, 676, 11440, 21, 4347, 14568, 6125, 7878, 1236, 4815, 2]
 // Exports: default
 
-// Module 14539 (QuestAccessSuspendedBottomSheet)
+// Module 14569 (QuestAccessSuspendedBottomSheet)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 4750 */;
-import PromoSheet from "PromoSheet" /* 8056 */;
+import Button from "Button" /* 4815 */;
+import PromoSheet from "PromoSheet" /* 7878 */;
 import closure_3 from "noop" /* 19 */;
 import { UserSettingsSections } from "ME" /* 676 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11098 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11440 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -18,11 +18,11 @@ const result = require("set").fileFinishedImporting("modules/quests/native/Quest
 
 export default function QuestAccessSuspendedBottomSheet() {
   const callback = React.useCallback(() => {
-    let obj = callback2(4346);
-    obj.hideActionSheet(callback(14538).ACTION_SHEET_KEY);
+    let obj = callback2(4347);
+    obj.hideActionSheet(callback(14568).ACTION_SHEET_KEY);
     obj = { screen: constants.ACCOUNT, params: obj };
     obj = { initialTab: constants2.STANDING };
-    callback(7398).openUserSettings(obj);
+    callback(6125).openUserSettings(obj);
   }, []);
   let obj = { title: null, description: null, actions: null };
   const intl = getSystemLocale.intl;

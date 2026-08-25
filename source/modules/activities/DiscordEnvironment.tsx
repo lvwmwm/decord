@@ -1,14 +1,14 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 10808
+// Function ID: 10809
 // Name: frozen
-// Dependencies: [4669, 1302, 12523, 4069, 2]
+// Dependencies: [4372, 1302, 10809, 4070, 2]
 // Exports: getDiscordBaseTheme, getDiscordCustomTheme, getDiscordEnvQueryParams, getDiscordEnvironment, getDiscordFontScale, getDiscordUIDensity
 
-// Module 12522 (frozen)
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+// Module 10808 (frozen)
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import closure_3 from "handleThemeChange" /* 1302 */;
-import RESPONSIVE_DENSITY_MEDIA_QUERY from "RESPONSIVE_DENSITY_MEDIA_QUERY" /* 12523 */;
+import RESPONSIVE_DENSITY_MEDIA_QUERY from "RESPONSIVE_DENSITY_MEDIA_QUERY" /* 10809 */;
 
 require = arg1;
 ({ RESPONSIVE_DENSITY_FALLBACK: c4, RESPONSIVE_DENSITY_MEDIA_QUERY: c5, resolveUIDensity: closure_6 } = RESPONSIVE_DENSITY_MEDIA_QUERY);
@@ -139,9 +139,9 @@ export const getDiscordEnvironment = function getDiscordEnvironment(useReducedMo
       }
       let tmp3 = str5;
     }
-    const UIDensitySetting = documentElement(4069).UIDensitySetting;
+    const UIDensitySetting = documentElement(4070).UIDensitySetting;
     obj[2] = callback(UIDensitySetting.getSetting(), tmp3);
-    const MessageDisplayCompact = documentElement(4069).MessageDisplayCompact;
+    const MessageDisplayCompact = documentElement(4070).MessageDisplayCompact;
     obj[3] = MessageDisplayCompact.getSetting();
     const fontScale = closure_2.fontScale;
     const _Number = Number;

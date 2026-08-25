@@ -1,18 +1,18 @@
-// Module ID: 10854
-// Function ID: 10855
+// Module ID: 11178
+// Function ID: 11179
 // Name: RatingSelector
-// Dependencies: [19, 17, 10850, 21, 4668, 10855, 10856, 1236, 10860, 10861, 10865, 10866, 8125, 5438, 2]
+// Dependencies: [19, 17, 11174, 21, 4380, 11179, 11180, 1236, 11184, 11185, 11189, 11190, 8121, 4949, 2]
 // Exports: default
 
-// Module 10854 (RatingSelector)
+// Module 11178 (RatingSelector)
 import noopAll from "noop" /* 19 */;
-import registerAssetDefault from "registerAsset" /* 10855 */;
-import registerAssetDefault2 from "registerAsset" /* 10860 */;
-import registerAssetDefault3 from "registerAsset" /* 10865 */;
+import registerAssetDefault from "registerAsset" /* 11179 */;
+import registerAssetDefault2 from "registerAsset" /* 11184 */;
+import registerAssetDefault3 from "registerAsset" /* 11189 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import FeedbackRating from "FeedbackRating" /* 10850 */;
+import FeedbackRating from "FeedbackRating" /* 11174 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -40,7 +40,7 @@ export default function RatingSelector(ratingOptions) {
   obj = {};
   obj = { source: null, getLabel: null, rating: null };
   obj = { selected: registerAssetDefault, normal: null };
-  let obj3 = obj(10856);
+  let obj3 = obj(11180);
   obj[1] = obj3.useFeedbackModalSadDesaturatedSource();
   obj[0] = obj;
   obj[1] = function getLabel() {
@@ -52,7 +52,7 @@ export default function RatingSelector(ratingOptions) {
   obj1 = { source: null, getLabel: null, rating: null };
   let obj2 = { selected: registerAssetDefault2, normal: null };
   tmp = callback2();
-  obj2[1] = obj(10861).useFeedbackModalNeutralDesaturatedSource();
+  obj2[1] = obj(11185).useFeedbackModalNeutralDesaturatedSource();
   obj1[0] = obj2;
   obj1[1] = function getLabel() {
     const intl = obj(1236).intl;
@@ -62,8 +62,8 @@ export default function RatingSelector(ratingOptions) {
   obj[constants.NEUTRAL] = obj1;
   obj3 = { source: null, getLabel: null, rating: null };
   let obj4 = { selected: registerAssetDefault3, normal: null };
-  const obj7 = obj(10861);
-  obj4[1] = obj(10866).useFeedbackModalHappyDesaturatedSource();
+  const obj7 = obj(11185);
+  obj4[1] = obj(11190).useFeedbackModalHappyDesaturatedSource();
   obj3[0] = obj4;
   obj3[1] = function getLabel() {
     const intl = obj(1236).intl;
@@ -72,7 +72,7 @@ export default function RatingSelector(ratingOptions) {
   obj3[2] = constants.GOOD;
   obj[constants.GOOD] = obj3;
   const mapped = ratingOptions.map((arg0) => obj[arg0]);
-  const obj10 = obj(10866);
+  const obj10 = obj(11190);
   return <closure_3 style={tmp2.ratings}>{mapped.map((rating) => {
     rating = rating.rating;
     ({ selected, normal } = rating.source);

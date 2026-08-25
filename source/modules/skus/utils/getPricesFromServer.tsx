@@ -1,12 +1,12 @@
-// Module ID: 4522
-// Function ID: 4523
+// Module ID: 4425
+// Function ID: 4426
 // Name: getPricesFromServer
-// Dependencies: [4043, 2]
+// Dependencies: [4044, 2]
 // Exports: default
 
-// Module 4522 (getPricesFromServer)
+// Module 4425 (getPricesFromServer)
 import set from "set" /* 2 */;
-import createFromServer from "createFromServer" /* 4043 */;
+import createFromServer from "createFromServer" /* 4044 */;
 
 const getPriceFromServer = createFromServer.getPriceFromServer;
 const result = set.fileFinishedImporting("modules/skus/utils/getPricesFromServer.tsx");

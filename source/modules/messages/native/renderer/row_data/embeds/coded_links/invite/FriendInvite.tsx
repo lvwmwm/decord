@@ -1,16 +1,16 @@
-// Module ID: 12818
-// Function ID: 12819
+// Module ID: 12805
+// Function ID: 12806
 // Name: createFriendInvite
-// Dependencies: [17, 4033, 4375, 8208, 1236, 4223, 1435, 2]
+// Dependencies: [17, 4034, 7340, 8204, 1236, 4224, 1435, 2]
 // Exports: createFriendInvite
 
-// Module 12818 (createFriendInvite)
+// Module 12805 (createFriendInvite)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import InviteSendStates from "InviteSendStates" /* 4375 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8208 */;
-import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import InviteSendStates from "InviteSendStates" /* 7340 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8204 */;
+import closure_4 from "markAllUserIdListsStale" /* 4034 */;
 
 const Image = get_ActivityIndicator.Image;
 const InviteTypes = InviteSendStates.InviteTypes;
@@ -34,7 +34,7 @@ export const createFriendInvite = function createFriendInvite(inviter) {
   }
   let str3 = "";
   if (null != inviter.inviter) {
-    let tmpResult = tmp(4223);
+    let tmpResult = tmp(4224);
     str3 = tmpResult.getUserTag(inviter.inviter);
   }
   let isFriendResult = null != inviter.inviter;

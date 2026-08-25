@@ -1,17 +1,17 @@
-// Module ID: 9687
-// Function ID: 9688
+// Module ID: 9297
+// Function ID: 9298
 // Name: handleAudioRouteChanged
-// Dependencies: [17, 4544, 9688, 500, 9689, 589, 709, 2]
+// Dependencies: [17, 4454, 9298, 500, 9299, 589, 709, 2]
 
-// Module 9687 (handleAudioRouteChanged)
+// Module 9297 (handleAudioRouteChanged)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import RouteTypes2 from "RouteTypes" /* 9688 */;
-import enforcingDefault from "enforcing" /* 9689 */;
+import RouteTypes2 from "RouteTypes" /* 9298 */;
+import enforcingDefault from "enforcing" /* 9299 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_4 from "createRTCConnection" /* 4544 */;
+import closure_4 from "createRTCConnection" /* 4454 */;
 
 function handleAudioRouteChanged(arr) {
   let tmp = arg1;

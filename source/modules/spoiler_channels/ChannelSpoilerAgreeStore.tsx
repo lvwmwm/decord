@@ -1,9 +1,9 @@
-// Module ID: 5273
-// Function ID: 5274
+// Module ID: 6054
+// Function ID: 6055
 // Name: initialize
 // Dependencies: [1218, 589, 709, 2]
 
-// Module 5273 (initialize)
+// Module 6054 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "fetchFingerprint" /* 1218 */;

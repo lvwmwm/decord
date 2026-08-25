@@ -1,14 +1,14 @@
-// Module ID: 5619
-// Function ID: 5620
+// Module ID: 6303
+// Function ID: 6304
 // Name: ControllerIllocon
-// Dependencies: [21, 5454, 5620, 2]
+// Dependencies: [21, 5374, 6304, 2]
 // Exports: ControllerIllocon
 
-// Module 5619 (ControllerIllocon)
+// Module 6303 (ControllerIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5620 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6304 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ControllerIllocon.native.tsx");

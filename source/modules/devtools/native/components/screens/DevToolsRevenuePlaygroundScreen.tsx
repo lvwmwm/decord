@@ -1,33 +1,33 @@
-// Module ID: 15204
-// Function ID: 15205
+// Module ID: 15234
+// Function ID: 15235
 // Name: describeServerError
-// Dependencies: [5, 32, 19, 17, 8330, 5412, 1340, 1391, 1980, 1922, 4742, 1924, 21, 709, 647, 530, 4097, 6322, 6328, 6317, 7211, 7465, 1297, 712, 7647, 4668, 7456, 4346, 15205, 2008, 7216, 15208, 7743, 11009, 5265, 15209, 15212, 15216, 15218, 15221, 2]
+// Dependencies: [5, 32, 19, 17, 8331, 7265, 1340, 1391, 1981, 1922, 4379, 1924, 21, 709, 647, 530, 4098, 5480, 5487, 5873, 5868, 7063, 1297, 712, 7468, 4380, 7054, 4347, 15235, 2009, 5874, 15238, 7564, 11349, 4611, 15239, 15242, 15246, 15248, 15251, 2]
 // Exports: default
 
-// Module 15204 (describeServerError)
+// Module 15234 (describeServerError)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
-import TableRowInner from "TableRowInner" /* 6322 */;
-import TableRowArrow from "TableRowArrow" /* 6328 */;
-import TableSwitchRow from "TableSwitchRow" /* 7216 */;
-import serializePurchaseResponse from "serializePurchaseResponse" /* 7743 */;
+import TableRowInner from "TableRowInner" /* 5480 */;
+import TableRowArrow from "TableRowArrow" /* 5487 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5873 */;
+import TableSwitchRow from "TableSwitchRow" /* 5874 */;
+import serializePurchaseResponse from "serializePurchaseResponse" /* 7564 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "getCurrentTime" /* 8330 */;
-import closure_8 from "recomputeAffinities" /* 5412 */;
+import closure_7 from "getCurrentTime" /* 8331 */;
+import closure_8 from "recomputeAffinities" /* 7265 */;
 import closure_9 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_10 from "ensureGuildLoaded" /* 1391 */;
-import closure_11 from "handleConnectionOpen" /* 1980 */;
+import closure_11 from "handleConnectionOpen" /* 1981 */;
 import closure_12 from "mergeGuildAvatar" /* 1922 */;
-import closure_13 from "getUserAgnosticState" /* 4742 */;
-import { DevSettingsCategory } from "getUserAgnosticState" /* 4742 */;
+import closure_13 from "getUserAgnosticState" /* 4379 */;
+import { DevSettingsCategory } from "getUserAgnosticState" /* 4379 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function describeServerError(status) {
@@ -204,7 +204,7 @@ function FriendAnniversary() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -310,7 +310,7 @@ function FriendAnniversary() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -634,7 +634,7 @@ function FriendAnniversary() {
   return callback3(closure_19, obj9);
 }
 function TrialOfferSheetExample() {
-  let obj = premiumTrialOffer(7456);
+  let obj = premiumTrialOffer(7054);
   premiumTrialOffer = obj.usePremiumTrialOffer();
   obj = {
     label: "Trial Offer Nitro Basic",
@@ -653,9 +653,9 @@ function TrialOfferSheetExample() {
       }
     }
   };
-  items = [closure_17(premiumTrialOffer(6322).TableRow, obj), ];
+  items = [closure_17(premiumTrialOffer(5480).TableRow, obj), ];
   obj = { title: "Trial Offers", hasIcons: false, children: null };
-  items[1] = closure_17(premiumTrialOffer(6322).TableRow, {
+  items[1] = closure_17(premiumTrialOffer(5480).TableRow, {
     label: "Trial Offer Nitro",
     subLabel: "No trial offer in store",
     disabled: null == premiumTrialOffer,
@@ -673,7 +673,7 @@ function TrialOfferSheetExample() {
     }
   });
   obj[2] = items;
-  return closure_18(premiumTrialOffer(6317).TableRowGroup, obj);
+  return closure_18(premiumTrialOffer(5873).TableRowGroup, obj);
 }
 function PremiumToggles() {
   let obj = defaultAreStatesEqual;
@@ -717,10 +717,10 @@ function ForceMockIAP() {
   obj[2] = tmp4;
   obj[3] = result;
   obj[4] = function onValueChange(arg0) {
-    callback(15208).toggle("force_mock_iap", arg0);
+    callback(15238).toggle("force_mock_iap", arg0);
     closure_13.persist();
-    const obj = callback(15208);
-    const result = callback2(11009).checkForUpdateAndReload();
+    const obj = callback(15238);
+    const result = callback2(11349).checkForUpdateAndReload();
   };
   return closure_17(TableRowGroupTitle.TableRowGroup, obj);
 }

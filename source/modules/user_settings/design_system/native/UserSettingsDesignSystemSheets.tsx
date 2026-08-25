@@ -1,27 +1,27 @@
-// Module ID: 15005
-// Function ID: 15006
+// Module ID: 15035
+// Function ID: 15036
 // Name: DemoActionSheet
-// Dependencies: [32, 19, 17, 676, 21, 4668, 7213, 6987, 8866, 7214, 4738, 8110, 7215, 4346, 1367, 4750, 1236, 8056, 5568, 12703, 6323, 4739, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4380, 5870, 5502, 9123, 5871, 4813, 7935, 5872, 4347, 1367, 4815, 1236, 7878, 6252, 13238, 5482, 4376, 2]
 // Exports: default
 
-// Module 15005 (DemoActionSheet)
+// Module 15035 (DemoActionSheet)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
-import Stack from "Stack" /* 4738 */;
-import Text from "Text" /* 4739 */;
-import Button from "Button" /* 4750 */;
-import PressableCard from "PressableCard" /* 6323 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
-import ActionSheet from "ActionSheet" /* 7213 */;
-import ActionSheetRowIcon from "ActionSheetRowIcon" /* 7215 */;
-import PromoSheet from "PromoSheet" /* 8056 */;
-import TextInput from "TextInput" /* 8110 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
+import Text from "Text" /* 4376 */;
+import Stack from "Stack" /* 4813 */;
+import Button from "Button" /* 4815 */;
+import PressableCard from "PressableCard" /* 5482 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5502 */;
+import ActionSheet from "ActionSheet" /* 5870 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5872 */;
+import PromoSheet from "PromoSheet" /* 7878 */;
+import TextInput from "TextInput" /* 7935 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { NOOP } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function DemoActionSheet() {
@@ -47,14 +47,14 @@ function DemoActionSheet() {
     obj = { onPress: null, label: null };
     obj[0] = NOOP;
     obj[1] = tmp12;
-    tmp14Result = tmp14(tmp15(8866).ActionSheetHeaderPressableText, obj);
+    tmp14Result = tmp14(tmp15(9123).ActionSheetHeaderPressableText, obj);
   }
   obj[2] = tmp14Result;
   tmp14Result = tmp2;
   if (tmp2) {
     obj = { onPress: null };
     obj[0] = NOOP;
-    tmp14Result = tmp14(tmp15(7214).ActionSheetCloseButton, obj);
+    tmp14Result = tmp14(tmp15(5871).ActionSheetCloseButton, obj);
   }
   obj1 = { header: closure_7(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj), children: null };
   obj[3] = tmp14Result;
@@ -111,14 +111,14 @@ function DemoPromoSheet() {
     obj = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
     obj = { type: "image", src: null, aspectRatio: "16/9" };
     obj1 = { uri: null };
-    obj1[0] = tmp(5568);
+    obj1[0] = tmp(6252);
     obj[1] = obj1;
     obj[0] = obj;
     obj[4] = tmp5;
     let obj2 = obj;
   } else {
     obj2 = { illustration: null, title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
-    obj2[0] = tmp4(tmp(12703), {});
+    obj2[0] = tmp4(tmp(13238), {});
     obj2[3] = tmp5;
   }
   return callback2(PromoSheet.PromoSheet, obj2);

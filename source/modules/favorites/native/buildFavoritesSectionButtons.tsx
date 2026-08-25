@@ -1,18 +1,18 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 9858
+// Function ID: 9859
 // Name: _addChannelToFavorites
-// Dependencies: [5, 21, 10017, 2008, 4346, 10022, 10021, 1236, 3082, 8027, 9447, 9449, 1297, 2]
+// Dependencies: [5, 21, 9859, 2009, 4347, 9864, 9863, 1236, 3083, 7849, 8891, 8893, 1297, 2]
 // Exports: default
 
-// Module 10016 (_addChannelToFavorites)
+// Module 9858 (_addChannelToFavorites)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import messagesProxyDefault from "messagesProxy" /* 3082 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8027 */;
-import StarIcon from "StarIcon" /* 9447 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9449 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10021 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import messagesProxyDefault from "messagesProxy" /* 3083 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 7849 */;
+import StarIcon from "StarIcon" /* 8891 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 8893 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 9863 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -35,7 +35,7 @@ function _addChannelToFavorites() {
           obj[0] = addFavoriteChannels;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ function _addChannelToFavorites() {
             obj[0] = items;
             addFavoriteChannels.addFavoriteChannels(obj);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c3 = tmp;
@@ -107,7 +107,7 @@ function _removeChannelFromFavorites() {
           obj[0] = removeFavoriteChannel;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ function _removeChannelFromFavorites() {
           } else {
             const result = removeFavoriteChannel.removeFavoriteChannel(callback);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c3 = tmp;
@@ -160,7 +160,7 @@ function _removeChannelFromFavorites() {
 }
 function openNoAccessUpsell() {
   const obj = ACTION_SHEET_HEIGHT_HALFDefault;
-  obj.openLazy(asyncRequireImpl(10022, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
+  obj.openLazy(asyncRequireImpl(9864, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
 }
 let result = require("set").fileFinishedImporting("modules/favorites/native/buildFavoritesSectionButtons.tsx");
 

@@ -1,21 +1,21 @@
-// Module ID: 8438
-// Function ID: 8439
+// Module ID: 8444
+// Function ID: 8445
 // Name: NewBadge
-// Dependencies: [19, 17, 1924, 21, 4668, 712, 4739, 1236, 8439, 6928, 8027, 2]
+// Dependencies: [19, 17, 1924, 21, 4380, 712, 4376, 1236, 8445, 4925, 7849, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 8438 (NewBadge)
+// Module 8444 (NewBadge)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import LockIcon from "LockIcon" /* 6928 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8027 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 8439 */;
+import Text from "Text" /* 4376 */;
+import LockIcon from "LockIcon" /* 4925 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 7849 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 8445 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

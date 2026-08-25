@@ -1,8 +1,8 @@
-// Module ID: 15901
-// Function ID: 15902
+// Module ID: 15933
+// Function ID: 15934
 // Dependencies: [5, 676, 530, 2]
 
-// Module 15901
+// Module 15933
 import sendRequest from "sendRequest" /* 530 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
@@ -50,7 +50,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ export default {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           v0 = tmp;

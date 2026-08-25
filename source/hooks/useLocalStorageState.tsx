@@ -1,11 +1,11 @@
-// Module ID: 12583
-// Function ID: 12584
+// Module ID: 10896
+// Function ID: 10897
 // Name: useLocalStorageState
-// Dependencies: [32, 19, 595, 4766, 2]
+// Dependencies: [32, 19, 595, 4831, 2]
 // Exports: useLocalStorageState
 
-// Module 12583 (useLocalStorageState)
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
+// Module 10896 (useLocalStorageState)
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4831 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 

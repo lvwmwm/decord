@@ -1,14 +1,14 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 14973
+// Function ID: 14974
 // Name: FileWarningIcon
-// Dependencies: [19, 21, 712, 4099, 14944, 2]
+// Dependencies: [19, 21, 712, 4100, 14974, 2]
 // Exports: FileWarningIcon
 
-// Module 14943 (FileWarningIcon)
+// Module 14973 (FileWarningIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 14944 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 14974 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

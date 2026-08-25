@@ -1,14 +1,14 @@
-// Module ID: 9787
-// Function ID: 9788
+// Module ID: 10855
+// Function ID: 10856
 // Name: useVoiceStateForRemoteSession
-// Dependencies: [1218, 4547, 4545, 589, 2]
+// Dependencies: [1218, 4399, 4397, 589, 2]
 // Exports: default
 
-// Module 9787 (useVoiceStateForRemoteSession)
+// Module 10855 (useVoiceStateForRemoteSession)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "updateVoiceState" /* 4547 */;
-import closure_4 from "set" /* 4545 */;
+import closure_3 from "updateVoiceState" /* 4399 */;
+import closure_4 from "set" /* 4397 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_console/hooks/useVoiceStateForRemoteSession.tsx");

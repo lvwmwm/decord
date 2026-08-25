@@ -1,11 +1,11 @@
-// Module ID: 5231
-// Function ID: 5232
+// Module ID: 5234
+// Function ID: 5235
 // Name: ChannelTypes
-// Dependencies: [1984, 1910, 676, 506, 2]
+// Dependencies: [1985, 1910, 676, 506, 2]
 // Exports: default
 
-// Module 5231 (ChannelTypes)
-import closure_2 from "createGuildRoleRecordFromRust" /* 1984 */;
+// Module 5234 (ChannelTypes)
+import closure_2 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
 import importAllResult from "fromString" /* 506 */;

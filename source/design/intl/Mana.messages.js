@@ -1,42 +1,42 @@
-// Module ID: 2010
-// Function ID: 2011
+// Module ID: 2011
+// Function ID: 2012
 // Name: messagesProxy
-// Dependencies: [1239, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 1274, 2]
+// Dependencies: [1239, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030, 2031, 2032, 2033, 2034, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 1274, 2]
 
-// Module 2010 (messagesProxy)
+// Module 2011 (messagesProxy)
 import set from "set" /* 2 */;
 import loadJsonAsset from "loadJsonAsset" /* 1239 */;
-import registerAsset from "registerAsset" /* 2011 */;
-import registerAsset2 from "registerAsset" /* 2012 */;
-import registerAsset3 from "registerAsset" /* 2013 */;
-import registerAsset4 from "registerAsset" /* 2014 */;
-import registerAsset5 from "registerAsset" /* 2015 */;
-import registerAsset6 from "registerAsset" /* 2016 */;
-import registerAsset7 from "registerAsset" /* 2017 */;
-import registerAsset8 from "registerAsset" /* 2018 */;
-import registerAsset9 from "registerAsset" /* 2019 */;
-import registerAsset10 from "registerAsset" /* 2020 */;
-import registerAsset11 from "registerAsset" /* 2021 */;
-import registerAsset12 from "registerAsset" /* 2022 */;
-import registerAsset13 from "registerAsset" /* 2023 */;
-import registerAsset14 from "registerAsset" /* 2024 */;
-import registerAsset15 from "registerAsset" /* 2025 */;
-import registerAsset16 from "registerAsset" /* 2026 */;
-import registerAsset17 from "registerAsset" /* 2027 */;
-import registerAsset18 from "registerAsset" /* 2028 */;
-import registerAsset19 from "registerAsset" /* 2029 */;
-import registerAsset20 from "registerAsset" /* 2030 */;
-import registerAsset21 from "registerAsset" /* 2031 */;
-import registerAsset22 from "registerAsset" /* 2032 */;
-import registerAsset23 from "registerAsset" /* 2033 */;
-import registerAsset24 from "registerAsset" /* 2034 */;
-import registerAsset25 from "registerAsset" /* 2035 */;
-import registerAsset26 from "registerAsset" /* 2036 */;
-import registerAsset27 from "registerAsset" /* 2037 */;
-import registerAsset28 from "registerAsset" /* 2038 */;
-import registerAsset29 from "registerAsset" /* 2039 */;
-import registerAsset30 from "registerAsset" /* 2040 */;
-import registerAsset31 from "registerAsset" /* 2041 */;
+import registerAsset from "registerAsset" /* 2012 */;
+import registerAsset2 from "registerAsset" /* 2013 */;
+import registerAsset3 from "registerAsset" /* 2014 */;
+import registerAsset4 from "registerAsset" /* 2015 */;
+import registerAsset5 from "registerAsset" /* 2016 */;
+import registerAsset6 from "registerAsset" /* 2017 */;
+import registerAsset7 from "registerAsset" /* 2018 */;
+import registerAsset8 from "registerAsset" /* 2019 */;
+import registerAsset9 from "registerAsset" /* 2020 */;
+import registerAsset10 from "registerAsset" /* 2021 */;
+import registerAsset11 from "registerAsset" /* 2022 */;
+import registerAsset12 from "registerAsset" /* 2023 */;
+import registerAsset13 from "registerAsset" /* 2024 */;
+import registerAsset14 from "registerAsset" /* 2025 */;
+import registerAsset15 from "registerAsset" /* 2026 */;
+import registerAsset16 from "registerAsset" /* 2027 */;
+import registerAsset17 from "registerAsset" /* 2028 */;
+import registerAsset18 from "registerAsset" /* 2029 */;
+import registerAsset19 from "registerAsset" /* 2030 */;
+import registerAsset20 from "registerAsset" /* 2031 */;
+import registerAsset21 from "registerAsset" /* 2032 */;
+import registerAsset22 from "registerAsset" /* 2033 */;
+import registerAsset23 from "registerAsset" /* 2034 */;
+import registerAsset24 from "registerAsset" /* 2035 */;
+import registerAsset25 from "registerAsset" /* 2036 */;
+import registerAsset26 from "registerAsset" /* 2037 */;
+import registerAsset27 from "registerAsset" /* 2038 */;
+import registerAsset28 from "registerAsset" /* 2039 */;
+import registerAsset29 from "registerAsset" /* 2040 */;
+import registerAsset30 from "registerAsset" /* 2041 */;
+import registerAsset31 from "registerAsset" /* 2042 */;
 import module_1274 from "module_1274" /* 1274 */;
 
 const loader = module_1274.createLoader({

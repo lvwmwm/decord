@@ -1,10 +1,10 @@
-// Module ID: 11495
-// Function ID: 11496
+// Module ID: 11846
+// Function ID: 11847
 // Name: isNewLayoutBetter
 // Dependencies: [2]
 // Exports: default
 
-// Module 11495 (isNewLayoutBetter)
+// Module 11846 (isNewLayoutBetter)
 import set from "set" /* 2 */;
 
 function isNewLayoutBetter(unusedSpace, unusedSpace2) {

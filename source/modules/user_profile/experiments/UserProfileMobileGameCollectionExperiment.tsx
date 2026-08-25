@@ -1,10 +1,10 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 12665
+// Function ID: 12666
 // Name: useIsMobileGameCollectionExperimentEnabled
 // Dependencies: [1472, 2]
 // Exports: useIsMobileGameCollectionExperimentEnabled
 
-// Module 12347 (useIsMobileGameCollectionExperimentEnabled)
+// Module 12665 (useIsMobileGameCollectionExperimentEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

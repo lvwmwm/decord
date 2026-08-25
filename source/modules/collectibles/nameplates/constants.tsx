@@ -1,11 +1,11 @@
-// Module ID: 1950
-// Function ID: 1951
+// Module ID: 1951
+// Function ID: 1952
 // Name: NAMEPLATE_PALETTES
-// Dependencies: [1951, 2]
+// Dependencies: [1952, 2]
 
-// Module 1950 (NAMEPLATE_PALETTES)
+// Module 1951 (NAMEPLATE_PALETTES)
 import set from "set" /* 2 */;
-import PaletteKeys from "PaletteKeys" /* 1951 */;
+import PaletteKeys from "PaletteKeys" /* 1952 */;
 
 let obj = {};
 obj = { darkBackground: "#900007", lightBackground: "#E7040F", name: PaletteKeys.PaletteKeys.Crimson };

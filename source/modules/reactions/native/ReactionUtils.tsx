@@ -1,20 +1,20 @@
-// Module ID: 10495
-// Function ID: 10496
+// Module ID: 8760
+// Function ID: 8761
 // Name: handleOutOfSuperReactions
-// Dependencies: [1391, 4999, 4201, 1922, 676, 1925, 21, 4035, 4347, 4348, 7549, 4042, 4346, 9354, 2008, 4241, 9335, 7548, 5047, 10496, 10508, 10509, 10510, 7978, 8024, 4832, 1236, 4739, 2]
+// Dependencies: [1391, 4623, 4202, 1922, 676, 1925, 21, 4036, 4348, 4349, 7367, 4043, 4347, 8761, 2009, 4242, 8784, 7366, 4588, 8927, 12738, 12739, 12740, 7800, 7846, 4744, 1236, 4376, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 10495 (handleOutOfSuperReactions)
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
-import setDefault from "set" /* 4832 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 5047 */;
-import registerAssetDefault from "registerAsset" /* 10509 */;
-import registerAssetDefault2 from "registerAsset" /* 10510 */;
+// Module 8760 (handleOutOfSuperReactions)
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4043 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4588 */;
+import setDefault from "set" /* 4744 */;
+import registerAssetDefault from "registerAsset" /* 12739 */;
+import registerAssetDefault2 from "registerAsset" /* 12740 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "reinjectEphemerals" /* 4999 */;
-import closure_5 from "handleConnectionOpen" /* 4201 */;
+import closure_4 from "reinjectEphemerals" /* 4623 */;
+import closure_5 from "handleConnectionOpen" /* 4202 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { EmojiIntention } from "set" /* 1925 */;
@@ -38,7 +38,7 @@ export const handleOutOfSuperReactions = function handleOutOfSuperReactions(arg0
     if (!obj.isPremium(currentUser)) {
       obj = { onDismiss: null };
       obj[0] = arg0;
-      openLazyResult = ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9354, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
+      openLazyResult = ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8761, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
       const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
     }
     return openLazyResult;
@@ -156,14 +156,14 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     obj1[2] = isPoll.emoji;
     const obj6 = ACTION_SHEET_HEIGHT_HALFDefault;
     const merged2 = Object.assign(merged);
-    obj6.openLazy(asyncRequireImpl(10496, dependencyMap.paths), "MessageReactions", obj1);
+    obj6.openLazy(asyncRequireImpl(8927, dependencyMap.paths), "MessageReactions", obj1);
   }
   FORUM_CHANNEL_POST = constants2.FORUM_CHANNEL_POST;
 };
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(asyncRequireImpl(10508, dependencyMap.paths), "MessagePreviewReactions", obj);
+  obj.openLazy(asyncRequireImpl(12738, dependencyMap.paths), "MessagePreviewReactions", obj);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj;
@@ -177,7 +177,7 @@ export const handleRemoveAllReactions = function handleRemoveAllReactions(arg0, 
   obj = { variant: "text-md/normal", children: null };
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t.VpjOCo);
-  obj[1] = jsx(_require(4739).Text, { variant: "text-md/normal", children: null });
+  obj[1] = jsx(_require(4376).Text, { variant: "text-md/normal", children: null });
   const intl3 = _require(1236).intl;
   obj[2] = intl3.string(_require(1236).t["ETE/oC"]);
   const intl4 = _require(1236).intl;

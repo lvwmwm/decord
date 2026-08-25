@@ -1,14 +1,14 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16810
+// Function ID: 16811
 // Name: clearPendingRetry
-// Dependencies: [5, 14292, 4, 584, 687, 16779, 530, 709, 1208, 2]
+// Dependencies: [5, 14322, 4, 584, 687, 16811, 530, 709, 1208, 2]
 // Exports: clearWarning, forceFetchWarning, resetFetchState
 
-// Module 16778 (clearPendingRetry)
+// Module 16810 (clearPendingRetry)
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 14292 */;
+import closure_4 from "initialize" /* 14322 */;
 import importDefaultResult from "fails" /* 584 */;
 
 const require = arg1;
@@ -37,7 +37,7 @@ function fetchWarning() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -79,7 +79,7 @@ function fetchWarning() {
                     c7 = null;
                   }
                   logger = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   logger.error("Failed to fetch parental-consent warning", closure_2);
                   const obj2 = { tags: null };
@@ -116,7 +116,7 @@ function fetchWarning() {
                     c7 = null;
                   }
                   logger = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   closure_1 = (function normalizeWarning(body) {
                     const obj = { inGrace: true === body.in_grace, daysRemaining: null, surfaces: null };
@@ -142,7 +142,7 @@ function fetchWarning() {
                 c7 = null;
               }
               logger = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp41) {
             closure_2 = tmp41;
@@ -163,7 +163,7 @@ function fetchWarning() {
   } else {
     return Promise.resolve();
   }
-  obj = _require(16779);
+  obj = _require(16811);
 }
 function maybeFetchWarning() {
   const self = this;
@@ -189,7 +189,7 @@ function _maybeFetchWarning() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -229,7 +229,7 @@ function _maybeFetchWarning() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp11) {
         c0 = tmp;
         throw tmp11;
@@ -259,7 +259,7 @@ function _forceFetchWarning() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -295,7 +295,7 @@ function _forceFetchWarning() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         c0 = tmp;

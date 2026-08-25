@@ -1,17 +1,17 @@
-// Module ID: 9332
-// Function ID: 9333
+// Module ID: 9605
+// Function ID: 9606
 // Name: setCustomStatus
-// Dependencies: [9329, 676, 4069, 3978, 9333, 698, 2]
+// Dependencies: [9602, 676, 4070, 3979, 9606, 698, 2]
 // Exports: default
 
-// Module 9332 (setCustomStatus)
+// Module 9605 (setCustomStatus)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import tDefault from "t" /* 3978 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import StatusTypes from "StatusTypes" /* 9329 */;
-import getClearAfterDurationDefault from "getClearAfterDuration" /* 9333 */;
+import hooksDefault from "hooks" /* 3979 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import StatusTypes from "StatusTypes" /* 9602 */;
+import getClearAfterDurationDefault from "getClearAfterDuration" /* 9606 */;
 
 const ClearAfterValues = StatusTypes.ClearAfterValues;
 const AnalyticEvents = ME.AnalyticEvents;
@@ -37,10 +37,10 @@ export default function setCustomStatus(arg0) {
     str2 = "0";
     if (clearAfter !== ClearAfterValues.DONT_CLEAR) {
       const _String = String;
-      const obj2 = tDefault();
-      const addResult = tDefault().add(getClearAfterDurationDefault(clearAfter), "ms");
-      str2 = String(tDefault().add(getClearAfterDurationDefault(clearAfter), "ms").toDate().getTime());
-      const toDateResult = tDefault().add(getClearAfterDurationDefault(clearAfter), "ms").toDate();
+      const obj2 = hooksDefault();
+      const addResult = hooksDefault().add(getClearAfterDurationDefault(clearAfter), "ms");
+      str2 = String(hooksDefault().add(getClearAfterDurationDefault(clearAfter), "ms").toDate().getTime());
+      const toDateResult = hooksDefault().add(getClearAfterDurationDefault(clearAfter), "ms").toDate();
     }
   }
   obj[1] = str2;
@@ -58,9 +58,9 @@ export default function setCustomStatus(arg0) {
   }
   obj[3] = str5;
   if (createdAtMs == null) {
-    const obj5 = tDefault();
-    createdAtMs = tDefault().toDate().getTime();
-    const toDateResult1 = tDefault().toDate();
+    const obj5 = hooksDefault();
+    createdAtMs = hooksDefault().toDate().getTime();
+    const toDateResult1 = hooksDefault().toDate();
   }
   obj[4] = String(createdAtMs);
   const updateSettingResult = CustomStatusSetting2.updateSetting(obj);

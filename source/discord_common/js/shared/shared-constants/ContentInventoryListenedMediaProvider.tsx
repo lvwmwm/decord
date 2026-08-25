@@ -1,9 +1,9 @@
-// Module ID: 9087
-// Function ID: 9088
+// Module ID: 9053
+// Function ID: 9054
 // Name: ContentInventoryListenedMediaProvider
 // Dependencies: [2]
 
-// Module 9087 (ContentInventoryListenedMediaProvider)
+// Module 9053 (ContentInventoryListenedMediaProvider)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryListenedMediaProvider.tsx");

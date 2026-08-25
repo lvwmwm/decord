@@ -1,21 +1,21 @@
-// Module ID: 6820
-// Function ID: 6821
+// Module ID: 5343
+// Function ID: 5344
 // Name: getBaseAnimationData
-// Dependencies: [5, 17, 4201, 6821, 6822, 676, 6823, 4346, 5265, 6815, 6824, 1435, 1896, 6826, 6827, 6828, 6837, 2008, 1222, 2]
+// Dependencies: [5, 17, 4202, 5344, 5345, 676, 5346, 4347, 4611, 5338, 5347, 1435, 1896, 5351, 5352, 5353, 5370, 2009, 1222, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 6820 (getBaseAnimationData)
-import _mod6823 from "module_6823" /* 6823 */;
+// Module 5343 (getBaseAnimationData)
+import _mod5346 from "module_5346" /* 5346 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleConnectionOpen" /* 4201 */;
-import closure_6 from "shouldShowOnboarding" /* 6821 */;
-import { GUILD_ONBOARDING_MODAL_KEY as closure_7 } from "GUILD_ONBOARDING_MODAL_KEY" /* 6822 */;
+import closure_5 from "handleConnectionOpen" /* 4202 */;
+import closure_6 from "shouldShowOnboarding" /* 5344 */;
+import { GUILD_ONBOARDING_MODAL_KEY as closure_7 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5345 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(_mod6823));
+  return JSON.parse(JSON.stringify(_mod5346));
 }
 function _doGuildOnboarding() {
   let self = this;
@@ -35,7 +35,7 @@ function _doGuildOnboarding() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -69,14 +69,14 @@ function _doGuildOnboarding() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj8 = lib(4346);
+              let obj8 = lib(4347);
               obj8.hideActionSheet();
-              lib(5265).popAll();
-              const obj10 = lib(5265);
+              lib(4611).popAll();
+              const obj10 = lib(4611);
               c5 = 2;
               c6 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = guildId(6815).waitForGuild(closure_0);
+              obj2[0] = guildId(5338).waitForGuild(closure_0);
               return obj2;
             }
           } else {
@@ -98,7 +98,7 @@ function _doGuildOnboarding() {
                   hasItem = features.has(constants.COMMUNITY);
                 }
                 if (hasItem) {
-                  let obj5 = guildId(6824);
+                  let obj5 = guildId(5347);
                   c5 = 3;
                   c6 = 1;
                   const obj4 = { value: null, done: false };
@@ -160,7 +160,7 @@ function _doGuildOnboarding() {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp42) {
           c6 = tmp;
@@ -199,7 +199,7 @@ function _fetchLandingAsset() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -268,7 +268,7 @@ function _fetchLandingAsset() {
           } else {
             dependencyMap = arg1;
             const _HermesInternal = HermesInternal;
-            const tmp12 = callback(6826);
+            const tmp12 = callback(5351);
             c3 = 0;
             c5 = 3;
             obj = { value: null, done: true };
@@ -297,7 +297,7 @@ function _fetchLandingAsset() {
 }
 function openAndWaitForOnboarding(arg0) {
   const _require = arg0;
-  const result = _require(6827).waitForOnboardingCompletion(arg0);
+  const result = _require(5352).waitForOnboardingCompletion(arg0);
   result.then(() => {
     if (null != closure_1_11[closure_0]) {
       tmp4();
@@ -305,7 +305,7 @@ function openAndWaitForOnboarding(arg0) {
     delete tmp[tmp2];
     closure_1_1(closure_1_2[15]).finishOnboarding(closure_0);
   });
-  let obj = _require(6827);
+  let obj = _require(5352);
   return new Promise((arg0) => {
     if (null == closure_1_11[callback]) {
       tmp[tmp2] = arg0;

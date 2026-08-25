@@ -1,14 +1,14 @@
-// Module ID: 6721
-// Function ID: 6722
+// Module ID: 5884
+// Function ID: 5885
 // Name: ChevronSmallRightIcon
-// Dependencies: [19, 21, 712, 4099, 6329, 2]
+// Dependencies: [19, 21, 712, 4100, 5488, 2]
 // Exports: ChevronSmallRightIcon
 
-// Module 6721 (ChevronSmallRightIcon)
+// Module 5884 (ChevronSmallRightIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 6329 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 5488 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

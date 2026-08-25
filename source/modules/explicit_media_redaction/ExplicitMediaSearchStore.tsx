@@ -1,13 +1,13 @@
-// Module ID: 5023
-// Function ID: 5024
+// Module ID: 7215
+// Function ID: 7216
 // Name: handleSearchMessagesSuccess
-// Dependencies: [4808, 5006, 589, 709, 2]
+// Dependencies: [4625, 7206, 589, 709, 2]
 
-// Module 5023 (handleSearchMessagesSuccess)
+// Module 7215 (handleSearchMessagesSuccess)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 5006 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4625 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7206 */;
 
 require = arg1;
 function handleSearchMessagesSuccess(data) {

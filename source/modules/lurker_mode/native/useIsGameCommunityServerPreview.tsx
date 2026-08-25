@@ -1,11 +1,11 @@
-// Module ID: 15431
-// Function ID: 15432
+// Module ID: 15461
+// Function ID: 15462
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [4025, 676, 589, 2]
+// Dependencies: [4026, 676, 589, 2]
 // Exports: default, isGameCommunityServerPreview
 
-// Module 15431 (useIsGameCommunityServerPreview)
-import closure_2 from "initialize" /* 4025 */;
+// Module 15461 (useIsGameCommunityServerPreview)
+import closure_2 from "initialize" /* 4026 */;
 import { JoinGuildSources } from "ME" /* 676 */;
 
 const require = arg1;

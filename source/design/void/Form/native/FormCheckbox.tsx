@@ -1,14 +1,14 @@
-// Module ID: 6984
-// Function ID: 6985
+// Module ID: 5499
+// Function ID: 5500
 // Name: FormCheckbox
-// Dependencies: [19, 21, 4668, 1297, 2]
+// Dependencies: [19, 21, 4380, 1297, 2]
 // Exports: default
 
-// Module 6984 (FormCheckbox)
+// Module 5499 (FormCheckbox)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1297 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

@@ -1,17 +1,17 @@
-// Module ID: 7655
-// Function ID: 7656
+// Module ID: 7476
+// Function ID: 7477
 // Name: validatePurchase
-// Dependencies: [109, 5, 19, 7656, 1218, 4048, 5324, 676, 505, 530, 7657, 4277, 7658, 1236, 4064, 4832, 5327, 589, 7456, 7662, 7665, 7696, 7697, 7699, 5322, 4057, 7700, 698, 2]
+// Dependencies: [109, 5, 19, 7477, 1218, 4049, 5965, 676, 505, 530, 7478, 4278, 7479, 1236, 4065, 4744, 5968, 589, 7054, 7483, 7486, 7517, 7518, 7520, 5963, 4058, 7521, 698, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 7655 (validatePurchase)
+// Module 7476 (validatePurchase)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "noop" /* 19 */;
-import { setGPlayAnalytics } from "setGPlayAnalytics" /* 7656 */;
+import { setGPlayAnalytics } from "setGPlayAnalytics" /* 7477 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
-import closure_9 from "reset" /* 4048 */;
-import closure_10 from "updateProduct" /* 5324 */;
+import closure_9 from "reset" /* 4049 */;
+import closure_10 from "updateProduct" /* 5965 */;
 import ME from "ME" /* 676 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
@@ -45,7 +45,7 @@ function _validatePurchase() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ function _validatePurchase() {
           } else if (2 === tmp8) {
             c4 = 0;
             c6 = c3;
-            const tmp18 = new lib(7657)(c6);
+            const tmp18 = new lib(7478)(c6);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -122,7 +122,7 @@ function _validatePurchase() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           c3 = tmp25;
@@ -197,7 +197,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -617,7 +617,7 @@ export const useHandlePremiumPurchase = function useHandlePremiumPurchase() {
                 return obj;
               }
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (throwTypeErrorResult) {
             c4 = throwTypeErrorResult;

@@ -1,17 +1,17 @@
-// Module ID: 9055
-// Function ID: 9056
+// Module ID: 9017
+// Function ID: 9018
 // Name: VideoComponent
-// Dependencies: [32, 19, 17, 21, 4668, 712, 9056, 4107, 9029, 6579, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4380, 712, 9018, 4108, 8991, 5927, 1236, 2]
 // Exports: createVideoControls
 
-// Module 9055 (VideoComponent)
+// Module 9017 (VideoComponent)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class VideoComponent {
@@ -142,7 +142,7 @@ class Video extends PureComponent {
 const prototype = Video.prototype;
 prototype["componentDidMount"] = function componentDidMount() {
   const self = this;
-  this._renderTask = self(6579).runAfterInteractions(() => {
+  this._renderTask = self(5927).runAfterInteractions(() => {
     self.setState({ postponeRender: false });
   });
 };

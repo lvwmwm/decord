@@ -1,13 +1,13 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13481
+// Function ID: 13482
 // Name: items
-// Dependencies: [19, 21, 13435, 6607, 2]
+// Dependencies: [19, 21, 13470, 7985, 2]
 // Exports: GuildBadgeCrosshairs
 
-// Module 13446 (items)
+// Module 13481 (items)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 6607 */;
-import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13435 */;
+import inlineStyles from "inlineStyles" /* 7985 */;
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13470 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

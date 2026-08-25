@@ -1,12 +1,12 @@
-// Module ID: 11723
-// Function ID: 11724
+// Module ID: 12065
+// Function ID: 12066
 // Name: useCanPurchaseBoosts
-// Dependencies: [1922, 1924, 5361, 589, 2]
+// Dependencies: [1922, 1924, 7003, 589, 2]
 // Exports: default
 
-// Module 11723 (useCanPurchaseBoosts)
+// Module 12065 (useCanPurchaseBoosts)
 import initialize from "initialize" /* 589 */;
-import calculateFractionalPremiumInfoDefault from "calculateFractionalPremiumInfo" /* 5361 */;
+import calculateFractionalPremiumInfoDefault from "calculateFractionalPremiumInfo" /* 7003 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { FractionalPremiumStates } from "GuildFeatures" /* 1924 */;
 

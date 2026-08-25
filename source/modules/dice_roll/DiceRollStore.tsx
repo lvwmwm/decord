@@ -1,10 +1,10 @@
-// Module ID: 11185
-// Function ID: 11186
+// Module ID: 11527
+// Function ID: 11528
 // Name: INITIAL_STATE
 // Dependencies: [644, 2]
 // Exports: useDiceRollState
 
-// Module 11185 (INITIAL_STATE)
+// Module 11527 (INITIAL_STATE)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 

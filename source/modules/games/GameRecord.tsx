@@ -1,14 +1,14 @@
-// Module ID: 4510
-// Function ID: 4511
+// Module ID: 4405
+// Function ID: 4406
 // Name: getOfficialApplicationId
-// Dependencies: [1931, 4483, 1954, 4511, 1435, 1370, 2]
+// Dependencies: [1931, 4406, 1955, 4413, 1435, 1370, 2]
 
-// Module 4510 (getOfficialApplicationId)
+// Module 4405 (getOfficialApplicationId)
 import getAvatarURL from "getAvatarURL" /* 1435 */;
 import toJSDefault from "toJS" /* 1931 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4511 */;
-import closure_3 from "createExecutable" /* 4483 */;
-import { createExecutable } from "createExecutable" /* 4483 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4413 */;
+import closure_3 from "createExecutable" /* 4406 */;
+import { createExecutable } from "createExecutable" /* 4406 */;
 
 require = arg1;
 toJSDefault;

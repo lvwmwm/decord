@@ -1,15 +1,15 @@
-// Module ID: 10534
-// Function ID: 10535
+// Module ID: 10551
+// Function ID: 10552
 // Name: getDurationStringOfFractionalPremium
-// Dependencies: [4042, 1236, 7496, 4066, 687, 2]
+// Dependencies: [4043, 1236, 7310, 4067, 687, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 10534 (getDurationStringOfFractionalPremium)
+// Module 10551 (getDurationStringOfFractionalPremium)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
-import resetCache from "resetCache" /* 4066 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4043 */;
+import resetCache from "resetCache" /* 4067 */;
 
 const result = set.fileFinishedImporting("modules/quests/lib/FractionalPremiumUtils.tsx");
 

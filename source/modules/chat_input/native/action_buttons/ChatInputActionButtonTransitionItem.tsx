@@ -1,16 +1,16 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11814
+// Function ID: 11815
 // Name: FadeTransitionItem
-// Dependencies: [19, 17, 11188, 21, 4107, 4119, 4671, 11461, 2]
+// Dependencies: [19, 17, 11530, 21, 4108, 4120, 4381, 11815, 2]
 // Exports: default, interactivityProps
 
-// Module 11460 (FadeTransitionItem)
-import ManaContext from "ManaContext" /* 4107 */;
-import _modDef4119 from "module_4119" /* 4119 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11461 */;
+// Module 11814 (FadeTransitionItem)
+import ManaContext from "ManaContext" /* 4108 */;
+import _modDef4120 from "module_4120" /* 4120 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 11815 */;
 import closure_3 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
-import { CHAT_INPUT_TIMING_CONFIG } from "TextAreaCta" /* 11188 */;
+import { CHAT_INPUT_TIMING_CONFIG } from "TextAreaCta" /* 11530 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -93,7 +93,7 @@ function BounceTransitionItem(state) {
   obj[2] = str2;
   const merged = Object.assign(obj);
   obj.children = children;
-  return jsx(_modDef4119.View, { pointerEvents: str, accessibilityElementsHidden: !isInteractive, importantForAccessibility: null });
+  return jsx(_modDef4120.View, { pointerEvents: str, accessibilityElementsHidden: !isInteractive, importantForAccessibility: null });
 }
 const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" } });
 let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };

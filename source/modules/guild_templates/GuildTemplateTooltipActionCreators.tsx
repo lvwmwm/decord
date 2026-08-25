@@ -1,11 +1,11 @@
-// Module ID: 7324
-// Function ID: 7325
-// Dependencies: [5, 4024, 676, 7325, 709, 2]
+// Module ID: 6047
+// Function ID: 6048
+// Dependencies: [5, 4025, 676, 6048, 709, 2]
 
-// Module 7324
+// Module 6047
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
 import { Permissions } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/guild_templates/GuildTemplateTooltipActionCreators.tsx");
@@ -24,7 +24,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ export default {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp7) {
           v0 = tmp;
           throw tmp7;

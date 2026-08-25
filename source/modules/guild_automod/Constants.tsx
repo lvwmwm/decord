@@ -1,13 +1,13 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11423
+// Function ID: 11424
 // Name: AutomodEventType
-// Dependencies: [11082, 2, 11083, 11084]
+// Dependencies: [11424, 2, 11425, 11426]
 
-// Module 11081 (AutomodEventType)
+// Module 11423 (AutomodEventType)
 import set from "set" /* 2 */;
-import AutomodTriggerType from "AutomodTriggerType" /* 11082 */;
-import AutomodEventType from "AutomodEventType" /* 11083 */;
-import AutomodActionType from "AutomodActionType" /* 11084 */;
+import AutomodTriggerType from "AutomodTriggerType" /* 11424 */;
+import AutomodEventType from "AutomodEventType" /* 11425 */;
+import AutomodActionType from "AutomodActionType" /* 11426 */;
 
 const items = [AutomodTriggerType.AutomodTriggerType.USER_PROFILE, AutomodTriggerType.AutomodTriggerType.SERVER_POLICY, AutomodTriggerType.AutomodTriggerType.MENTION_SPAM, AutomodTriggerType.AutomodTriggerType.ML_SPAM, AutomodTriggerType.AutomodTriggerType.DEFAULT_KEYWORD_LIST, AutomodTriggerType.AutomodTriggerType.KEYWORD];
 const result = set.fileFinishedImporting("modules/guild_automod/Constants.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 9102
-// Function ID: 9103
+// Module ID: 9068
+// Function ID: 9069
 // Name: DEFAULT_UX_VARIATION
-// Dependencies: [9081, 676, 8383, 7627, 698, 2]
+// Dependencies: [9045, 676, 8389, 7448, 698, 2]
 
-// Module 9102 (DEFAULT_UX_VARIATION)
+// Module 9068 (DEFAULT_UX_VARIATION)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_3 from "filterStaffGuild" /* 9081 */;
+import closure_3 from "filterStaffGuild" /* 9045 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

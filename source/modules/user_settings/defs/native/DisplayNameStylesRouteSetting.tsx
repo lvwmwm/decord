@@ -1,14 +1,14 @@
-// Module ID: 14748
-// Function ID: 14749
+// Module ID: 14778
+// Function ID: 14779
 // Name: route
-// Dependencies: [676, 10708, 1236, 2694, 14749, 2]
+// Dependencies: [676, 10516, 1236, 2695, 14779, 2]
 
-// Module 14748 (route)
+// Module 14778 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2694 */;
-import createToggle from "createToggle" /* 10708 */;
+import messagesProxyDefault from "messagesProxy" /* 2695 */;
+import createToggle from "createToggle" /* 10516 */;
 
 obj = {
   useTitle() {
@@ -25,7 +25,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.DISPLAY_NAME_STYLES,
   getComponent() {
-    return require(14749) /* ApplyButton */.default;
+    return require(14779) /* ApplyButton */.default;
   }
 };
 const route = createToggle.createRoute(obj);

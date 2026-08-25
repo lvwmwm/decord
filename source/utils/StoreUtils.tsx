@@ -1,21 +1,21 @@
-// Module ID: 4388
-// Function ID: 4389
+// Module ID: 4643
+// Function ID: 4644
 // Name: _httpGetWithCountryCodeQuery
-// Dependencies: [5, 1218, 4044, 4045, 4048, 676, 4389, 4387, 4468, 1469, 4470, 530, 500, 1236, 2]
+// Dependencies: [5, 1218, 4045, 4046, 4049, 676, 4644, 4642, 4723, 1469, 4725, 530, 500, 1236, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4388 (_httpGetWithCountryCodeQuery)
+// Module 4643 (_httpGetWithCountryCodeQuery)
 import set from "set" /* 500 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import handleImageLoad from "handleImageLoad" /* 1469 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "handlePaymentSourceCreateEnd" /* 4044 */;
-import closure_5 from "handlePaymentSourceUpdate" /* 4045 */;
-import closure_6 from "reset" /* 4048 */;
+import closure_4 from "handlePaymentSourceCreateEnd" /* 4045 */;
+import closure_5 from "handlePaymentSourceUpdate" /* 4046 */;
+import closure_6 from "reset" /* 4049 */;
 import ME from "ME" /* 676 */;
-import { isMobile } from "isTablet" /* 4387 */;
-import importDefaultResult from "allSettled" /* 4389 */;
+import { isMobile } from "isTablet" /* 4642 */;
+import importDefaultResult from "allSettled" /* 4644 */;
 
 require = arg1;
 function _httpGetWithCountryCodeQuery() {
@@ -37,7 +37,7 @@ function _httpGetWithCountryCodeQuery() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ function _httpGetWithCountryCodeQuery() {
                         closure_0 = arg0;
                         c2 = 0;
                         c3 = 0;
-                        return (/* F121923 */ function*() { ... })();
+                        return (/* F122168 */ function*() { ... })();
                       });
                       return new Promise(function() {
                         const self = this;

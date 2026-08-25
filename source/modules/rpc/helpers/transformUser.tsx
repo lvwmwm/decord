@@ -1,10 +1,10 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 10830
+// Function ID: 10831
 // Name: transformUser
 // Dependencies: [1899, 2]
 // Exports: default
 
-// Module 8795 (transformUser)
+// Module 10830 (transformUser)
 import set from "set" /* 2 */;
 import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1899 */;
 

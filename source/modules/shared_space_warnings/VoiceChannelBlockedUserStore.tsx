@@ -1,14 +1,14 @@
-// Module ID: 13339
-// Function ID: 13340
+// Module ID: 13200
+// Function ID: 13201
 // Name: init
-// Dependencies: [4033, 4547, 13340, 589, 709, 2]
+// Dependencies: [4034, 4399, 13201, 589, 709, 2]
 
-// Module 13339 (init)
+// Module 13200 (init)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import handleChannelSelectDefault from "handleChannelSelect" /* 13340 */;
-import closure_2 from "markAllUserIdListsStale" /* 4033 */;
-import closure_3 from "updateVoiceState" /* 4547 */;
+import handleChannelSelectDefault from "handleChannelSelect" /* 13201 */;
+import closure_2 from "markAllUserIdListsStale" /* 4034 */;
+import closure_3 from "updateVoiceState" /* 4399 */;
 import set from "set" /* 2 */;
 
 function init() {

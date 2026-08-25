@@ -1,12 +1,12 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15107
+// Function ID: 15108
 // Name: useUserSafetySettingsSelectedGuildId
-// Dependencies: [1910, 15075, 676, 589, 2]
+// Dependencies: [1910, 15105, 676, 589, 2]
 // Exports: useAllServersOptionSelected, useIsSelectedGuildAHub, useUserSafetySettingsSelectedGuildId
 
-// Module 15077 (useUserSafetySettingsSelectedGuildId)
+// Module 15107 (useUserSafetySettingsSelectedGuildId)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15075 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15105 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;

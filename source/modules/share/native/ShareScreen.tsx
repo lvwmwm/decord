@@ -1,10 +1,10 @@
-// Module ID: 13418
-// Function ID: 13419
+// Module ID: 13453
+// Function ID: 13454
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 32, 19, 17, 1395, 1391, 4024, 676, 9117, 9118, 21, 4668, 712, 500, 1236, 13419, 7629, 1370, 13420, 4389, 698, 9121, 4773, 9105, 12098, 2008, 4663, 13421, 13422, 6350, 8531, 1625, 6345, 9129, 13423, 2]
+// Dependencies: [5, 32, 19, 17, 1395, 1391, 4025, 676, 11234, 9770, 21, 4380, 712, 500, 1236, 13454, 7450, 1370, 13455, 4644, 698, 9901, 4391, 9071, 11265, 2009, 4746, 13456, 13457, 5383, 8539, 1625, 5376, 11241, 13458, 2]
 // Exports: default
 
-// Module 13418 (getAttachmentsRestriction)
+// Module 13453 (getAttachmentsRestriction)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -13,12 +13,12 @@ import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4025 */;
 import ME from "ME" /* 676 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 9117 */;
-import { UserRowModes } from "UserRowModes" /* 9118 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11234 */;
+import { UserRowModes } from "UserRowModes" /* 9770 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -129,7 +129,7 @@ export default function ShareScreen(sharedContent) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -239,7 +239,7 @@ export default function ShareScreen(sharedContent) {
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -262,7 +262,7 @@ export default function ShareScreen(sharedContent) {
                               c4 = 3;
                               return { value: false, done: true };
                             } else {
-                              obj1 = callback(13420);
+                              obj1 = callback(13455);
                               obj1 = { attachments: null, channel: null, comment: null };
                               obj1[0] = closure_1_1;
                               obj1[1] = channel;
@@ -291,7 +291,7 @@ export default function ShareScreen(sharedContent) {
                           obj3[4] = closure_1_2;
                           callback2(698).track(closure_3_11.SHARE_MESSAGE_SENT, obj3);
                           c4 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } catch (tmp11) {
                         c4 = tmp;

@@ -1,10 +1,10 @@
-// Module ID: 5060
-// Function ID: 5061
+// Module ID: 7070
+// Function ID: 7071
 // Name: isForegrounded
 // Dependencies: [17, 2]
 // Exports: isForegrounded
 
-// Module 5060 (isForegrounded)
+// Module 7070 (isForegrounded)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

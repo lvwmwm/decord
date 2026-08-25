@@ -1,15 +1,15 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 10887
+// Function ID: 10888
 // Name: RequestToSpeakParticipant
-// Dependencies: [19, 17, 676, 21, 4668, 712, 7177, 5438, 8966, 12575, 1297, 4739, 12576, 1236, 12577, 4986, 8182, 6745, 8101, 5454, 12578, 8163, 2]
+// Dependencies: [19, 17, 676, 21, 4380, 712, 5834, 4949, 8930, 10888, 1297, 4376, 10889, 1236, 10890, 4568, 8178, 5255, 7923, 5374, 10891, 8159, 2]
 // Exports: default
 
-// Module 12574 (RequestToSpeakParticipant)
+// Module 10887 (RequestToSpeakParticipant)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function RequestToSpeakParticipant(participant) {

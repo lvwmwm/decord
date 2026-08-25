@@ -1,9 +1,9 @@
-// Module ID: 6152
-// Function ID: 6153
+// Module ID: 6840
+// Function ID: 6841
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6152 (metadata)
+// Module 6840 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconBoomBGoneExample-2x.png.js");

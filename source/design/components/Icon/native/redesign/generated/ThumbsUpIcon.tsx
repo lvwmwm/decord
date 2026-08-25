@@ -1,14 +1,14 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 8741
+// Function ID: 8742
 // Name: ThumbsUpIcon
-// Dependencies: [19, 21, 712, 4099, 12232, 2]
+// Dependencies: [19, 21, 712, 4100, 8742, 2]
 // Exports: ThumbsUpIcon
 
-// Module 12231 (ThumbsUpIcon)
+// Module 8741 (ThumbsUpIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 12232 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 8742 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 8348
-// Function ID: 8349
+// Module ID: 8349
+// Function ID: 8350
 // Name: smartOutput
 // Dependencies: [2]
 // Exports: isStaticRouteIconType, smartOutput
 
-// Module 8348 (smartOutput)
+// Module 8349 (smartOutput)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/markup/MarkupRulesUtils.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 7946
-// Function ID: 7947
+// Module ID: 7767
+// Function ID: 7768
 // Name: getIllustrationSource
-// Dependencies: [4107, 2]
+// Dependencies: [4108, 2]
 // Exports: getIllustrationSource, useIllustrationSource
 
-// Module 7946 (getIllustrationSource)
+// Module 7767 (getIllustrationSource)
 import set from "set" /* 2 */;
-import ManaContext from "ManaContext" /* 4107 */;
+import ManaContext from "ManaContext" /* 4108 */;
 
 const result = set.fileFinishedImporting("design/components/Illustration/native/index.tsx");
 

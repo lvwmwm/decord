@@ -1,20 +1,20 @@
-// Module ID: 13134
-// Function ID: 13135
+// Module ID: 13273
+// Function ID: 13274
 // Name: getDefaultWants
-// Dependencies: [32, 1218, 676, 4534, 687, 4468, 13135, 4577, 4588, 4263, 12502, 11, 12, 500, 643, 4574, 2]
+// Dependencies: [32, 1218, 676, 4444, 687, 4723, 13274, 4482, 4493, 4264, 10783, 11, 12, 500, 643, 4479, 2]
 
-// Module 13134 (getDefaultWants)
+// Module 13273 (getDefaultWants)
 import applyDefault from "apply" /* 12 */;
 import setDefault from "set" /* 687 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
-import onDefault from "on" /* 4577 */;
-import isIncomingVideoEnabled from "isIncomingVideoEnabled" /* 12502 */;
-import getBrowserInvertedWantsConfig from "getBrowserInvertedWantsConfig" /* 13135 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4479 */;
+import onDefault from "on" /* 4482 */;
+import isIncomingVideoEnabled from "isIncomingVideoEnabled" /* 10783 */;
+import getBrowserInvertedWantsConfig from "getBrowserInvertedWantsConfig" /* 13274 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import { VideoToggleState } from "ME" /* 676 */;
-import { SimulcastOverrideQuality } from "DesktopSources" /* 4534 */;
-import num2 from "num2" /* 4468 */;
+import { SimulcastOverrideQuality } from "DesktopSources" /* 4444 */;
+import num2 from "num2" /* 4723 */;
 
 require = arg1;
 function getDefaultWants(arg0) {
@@ -706,7 +706,7 @@ prototype["reset"] = function reset() {
     obj[0] = c7;
   }
   self.latestWants = obj;
-  const WindowVisibilityVideoManager = tmp3(12502).WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = tmp3(10783).WindowVisibilityVideoManager;
   WindowVisibilityVideoManager.off(isIncomingVideoEnabled.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
 };
 prototype["setSelectedParticipant"] = function setSelectedParticipant(selectedParticipantId) {

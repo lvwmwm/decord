@@ -1,24 +1,24 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 15928
+// Function ID: 15929
 // Name: items
-// Dependencies: [32, 19, 17, 1218, 4299, 1991, 1984, 1910, 4024, 1922, 8912, 676, 21, 7631, 4668, 712, 1500, 10010, 4801, 4223, 1236, 10004, 1629, 589, 7269, 8887, 9997, 15897, 5437, 8941, 6815, 8911, 11, 1351, 7375, 8068, 1297, 9011, 6581, 2]
+// Dependencies: [32, 19, 17, 1218, 4300, 1992, 1985, 1910, 4025, 1922, 9169, 676, 21, 7452, 4380, 712, 1500, 9850, 4573, 4224, 1236, 9845, 1629, 589, 5992, 9144, 8745, 15929, 6117, 9198, 5338, 9168, 11, 1351, 6101, 7890, 1297, 8974, 5820, 2]
 
-// Module 15896 (items)
+// Module 15928 (items)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "handleInviteData" /* 4299 */;
-import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_7 from "handleInviteData" /* 4300 */;
+import closure_8 from "trackCommunicationDisabled" /* 1992 */;
+import closure_9 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4025 */;
 import closure_12 from "mergeGuildAvatar" /* 1922 */;
-import closure_13 from "handleFormInit" /* 8912 */;
+import closure_13 from "handleFormInit" /* 9169 */;
 import { GuildSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -54,11 +54,11 @@ let closure_20 = importAllResult.memo((guild) => {
     let formatToPlainStringResult;
     if (found.length > 0) {
       user = user.getUser(guildMember.userId);
-      obj1 = guildMember(4801);
+      obj1 = guildMember(4573);
       let str = obj1.getNickname(guild.id, undefined, user);
       if (str == null) {
-        str = tmp9(4223).getGlobalName(user);
-        const tmp9Result = tmp9(4223);
+        str = tmp9(4224).getGlobalName(user);
+        const tmp9Result = tmp9(4224);
       }
       if (str == null) {
         let username;
@@ -97,7 +97,7 @@ let closure_20 = importAllResult.memo((guild) => {
     };
     obj[7] = start;
     obj[8] = end;
-    return closure_15(guildMember(10004), obj);
+    return closure_15(guildMember(9845), obj);
   }
   tmp = callback();
 });
@@ -287,12 +287,12 @@ const memoResult = importAllResult.memo(function GuildSettingsModalMembers(guild
           items: membersManagementActions,
           children(ref) {
             const merged = Object.assign(ref, Object.create(null));
-            const obj = { source: callback2(8941), accessibilityLabel: null, ref: null };
+            const obj = { source: callback2(9198), accessibilityLabel: null, ref: null };
             const intl = callback(1236).intl;
             obj[1] = intl.string(callback(1236).t.ogxXGq);
             obj[2] = ref.ref;
             const merged1 = Object.assign(merged);
-            return callback3(callback(5437).HeaderActionButton, obj);
+            return callback3(callback(6117).HeaderActionButton, obj);
           }
         };
         return closure_1_15(closure_1_0(closure_1_2[26]).ContextMenu, obj);

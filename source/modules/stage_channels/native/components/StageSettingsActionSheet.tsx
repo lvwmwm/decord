@@ -1,21 +1,21 @@
-// Module ID: 8167
-// Function ID: 8168
+// Module ID: 8163
+// Function ID: 8164
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 4778, 1391, 4024, 1396, 4983, 676, 21, 4668, 712, 4346, 589, 1399, 4996, 7213, 8122, 1236, 1297, 8168, 8097, 8169, 7398, 8170, 8171, 8173, 8174, 8175, 2]
+// Dependencies: [19, 17, 4396, 1391, 4025, 1396, 5239, 676, 21, 4380, 712, 4347, 589, 1399, 5247, 5870, 8118, 1236, 1297, 8164, 7919, 8165, 6125, 8166, 8167, 8169, 8170, 8171, 2]
 // Exports: default
 
-// Module 8167 (StageSettingsActionSheet)
+// Module 8163 (StageSettingsActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getParticipants" /* 4778 */;
+import closure_5 from "getParticipants" /* 4396 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4025 */;
 import closure_8 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import { STAGE_SETTINGS_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
+import { STAGE_SETTINGS_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 5239 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ ChannelSettingsSections: c10, UserSettingsSections: unpackModuleId } = ME);

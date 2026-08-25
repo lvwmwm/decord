@@ -1,11 +1,11 @@
-// Module ID: 15192
-// Function ID: 15193
+// Module ID: 15222
+// Function ID: 15223
 // Name: isValidClipboardCode
-// Dependencies: [5, 32, 19, 21, 15193, 15188, 1236, 15194, 15191, 2]
+// Dependencies: [5, 32, 19, 21, 15223, 15218, 1236, 15224, 15221, 2]
 // Exports: default
 
-// Module 15192 (isValidClipboardCode)
-import finishMFACheck from "finishMFACheck" /* 15193 */;
+// Module 15222 (isValidClipboardCode)
+import finishMFACheck from "finishMFACheck" /* 15223 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -57,7 +57,7 @@ export default function TotpScreen(finish) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

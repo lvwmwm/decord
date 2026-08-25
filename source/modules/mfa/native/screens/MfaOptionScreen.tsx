@@ -1,18 +1,18 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15218
+// Function ID: 15219
 // Name: MFAOptionScreen
-// Dependencies: [17, 21, 8621, 15189, 6840, 4738, 4739, 15190, 8649, 2]
+// Dependencies: [17, 21, 8629, 15219, 5434, 4813, 4376, 15220, 8657, 2]
 // Exports: default
 
-// Module 15188 (MFAOptionScreen)
+// Module 15218 (MFAOptionScreen)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import Stack from "Stack" /* 4738 */;
-import Text from "Text" /* 4739 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 8621 */;
-import BackgroundImageDefault from "BackgroundImage" /* 8649 */;
-import _modDef15189 from "module_15189" /* 15189 */;
+import Text from "Text" /* 4376 */;
+import Stack from "Stack" /* 4813 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5434 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 8629 */;
+import BackgroundImageDefault from "BackgroundImage" /* 8657 */;
+import _modDef15219 from "module_15219" /* 15219 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const ScrollView = get_ActivityIndicator.ScrollView;
@@ -23,7 +23,7 @@ export default function MFAOptionScreen(arg0) {
   ({ headerImage, subtitle, screenProps, error } = arg0);
   ({ headerText, input, submit, mfaMethod, content } = arg0);
   const tmp3 = useWideAuthViewDefault();
-  let obj = _modDef15189;
+  let obj = _modDef15219;
   const screenStyles = obj.useScreenStyles(tmp3);
   const first = screenProps.mfaChallenge.methods[0];
   let type;
@@ -41,14 +41,14 @@ export default function MFAOptionScreen(arg0) {
   if (tmp10Result) {
     const obj2 = { variant: "heading-sm/normal", color: "text-default", children: null };
     obj2[2] = subtitle;
-    tmp10Result = tmp10(tmp8(4739).Text, obj2);
+    tmp10Result = tmp10(tmp8(4376).Text, obj2);
   }
   items[2] = tmp10Result;
   tmp10Result = null != error;
   if (tmp10Result) {
     const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
     obj3[2] = error;
-    tmp10Result = tmp10(tmp8(4739).Text, obj3);
+    tmp10Result = tmp10(tmp8(4376).Text, obj3);
   }
   let tmp10Result1 = type === mfaMethod;
   const obj4 = { children: null };
@@ -62,7 +62,7 @@ export default function MFAOptionScreen(arg0) {
   if (tmp10Result1) {
     const obj6 = { props: null };
     obj6[0] = screenProps;
-    tmp10Result1 = tmp10(tmp(15190), obj6);
+    tmp10Result1 = tmp10(tmp(15220), obj6);
   }
   items3[1] = tmp10Result1;
   obj5[1] = items3;

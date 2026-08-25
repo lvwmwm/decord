@@ -1,9 +1,9 @@
-// Module ID: 5243
-// Function ID: 5244
+// Module ID: 7120
+// Function ID: 7121
 // Name: AutomodDecisionOutcomeEmbedKeys
 // Dependencies: [2]
 
-// Module 5243 (AutomodDecisionOutcomeEmbedKeys)
+// Module 7120 (AutomodDecisionOutcomeEmbedKeys)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodDecisionOutcomeEmbedKeys.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6084
-// Function ID: 6085
+// Module ID: 6768
+// Function ID: 6769
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6084 (metadata)
+// Module 6768 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PlaneIllocon-2x.png.js");

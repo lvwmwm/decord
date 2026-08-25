@@ -1,20 +1,20 @@
-// Module ID: 10336
-// Function ID: 10337
+// Module ID: 10187
+// Function ID: 10188
 // Name: items
-// Dependencies: [32, 19, 17, 8973, 7666, 1924, 676, 21, 4668, 712, 689, 1500, 1629, 1494, 9662, 4727, 6349, 589, 10337, 9629, 8969, 10335, 10339, 10342, 8559, 4119, 1297, 4671, 10349, 7197, 10350, 10384, 8071, 1236, 6399, 5454, 10413, 4761, 6401, 4739, 2]
+// Dependencies: [32, 19, 17, 8937, 7487, 1924, 676, 21, 4380, 712, 689, 1500, 1629, 1494, 9758, 4802, 5382, 589, 10188, 9725, 8933, 10186, 10190, 10193, 8567, 4120, 1297, 4381, 10200, 5854, 10201, 10235, 7893, 1236, 5432, 5374, 10264, 4826, 5373, 4376, 2]
 // Exports: default
 
-// Module 10336 (items)
+// Module 10187 (items)
 import nDefault from "n" /* 689 */;
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "initialize" /* 8973 */;
-import closure_10 from "createEmptyPromotionsByType" /* 7666 */;
+import closure_9 from "initialize" /* 8937 */;
+import closure_10 from "createEmptyPromotionsByType" /* 7487 */;
 import { VerticalGradient } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, Pressable: closure_6, View: error, ScrollView: closure_8 } = get_ActivityIndicator);
@@ -536,7 +536,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         const tmp4Result3 = tmp4(tmp2[30]);
       }
     } else {
-      const obj34 = { style: null, guildId: "r", size: false, user: false };
+      const obj34 = { style: null, guildId: "r", size: "ct", user: null };
       obj34[0] = tmp13.avatar;
       const AvatarSizes = tmp(tmp2[26]).AvatarSizes;
       obj34[2] = tmp65Result ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;

@@ -1,17 +1,17 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14733
+// Function ID: 14734
 // Name: ChannelListPreview
-// Dependencies: [19, 17, 21, 4668, 712, 14704, 14705, 14706, 4119, 1236, 14712, 8068, 14715, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 14734, 14735, 14736, 4120, 1236, 14742, 7890, 14745, 2]
 // Exports: default
 
-// Module 14703 (ChannelListPreview)
+// Module 14733 (ChannelListPreview)
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef4119 from "module_4119" /* 4119 */;
-import SettingsAppearanceChannelListPreviewNitroUpsellComponentDefault from "SettingsAppearanceChannelListPreviewNitroUpsellComponent" /* 14715 */;
+import _modDef4120 from "module_4120" /* 4120 */;
+import SettingsAppearanceChannelListPreviewNitroUpsellComponentDefault from "SettingsAppearanceChannelListPreviewNitroUpsellComponent" /* 14745 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
@@ -74,9 +74,9 @@ export default function ChannelListPreview(useGradientBackground) {
     obj[0] = themes;
     obj[1] = themeIndex;
     obj[3] = tmp4(712).colors.BACKGROUND_BASE_LOW;
-    obj[1] = callback(tmp4(14712), obj);
+    obj[1] = callback(tmp4(14742), obj);
     tmp7 = callback(closure_4, obj);
-    const tmp4Result = tmp4(14712);
+    const tmp4Result = tmp4(14742);
   }
   const items2 = [tmp7, , ];
   obj1 = {
@@ -89,8 +89,8 @@ export default function ChannelListPreview(useGradientBackground) {
     showsVerticalScrollIndicator: false,
     importantForAccessibility: "no-hide-descendants"
   };
-  items2[1] = callback(animatedStyles(8068).FlashList, obj1);
+  items2[1] = callback(animatedStyles(7890).FlashList, obj1);
   items2[2] = callback(SettingsAppearanceChannelListPreviewNitroUpsellComponentDefault, { visible: isNitroLocked, theme: themes[themeIndex] });
   obj[4] = items2;
-  return closure_6(_modDef4119.View, obj);
+  return closure_6(_modDef4120.View, obj);
 };

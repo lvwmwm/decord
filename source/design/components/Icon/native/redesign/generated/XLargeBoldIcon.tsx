@@ -1,14 +1,14 @@
-// Module ID: 9766
-// Function ID: 9767
+// Module ID: 9379
+// Function ID: 9380
 // Name: XLargeBoldIcon
-// Dependencies: [19, 21, 712, 4099, 9767, 2]
+// Dependencies: [19, 21, 712, 4100, 9380, 2]
 // Exports: XLargeBoldIcon
 
-// Module 9766 (XLargeBoldIcon)
+// Module 9379 (XLargeBoldIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 9767 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 9380 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

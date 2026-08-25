@@ -1,10 +1,10 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 12828
+// Function ID: 12829
 // Name: isMostRecentDeadEndInvite
-// Dependencies: [676, 10956, 2]
+// Dependencies: [676, 11313, 2]
 // Exports: isMostRecentDeadEndInvite
 
-// Module 12841 (isMostRecentDeadEndInvite)
+// Module 12828 (isMostRecentDeadEndInvite)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

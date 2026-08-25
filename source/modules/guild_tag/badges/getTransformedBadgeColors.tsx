@@ -1,10 +1,10 @@
-// Module ID: 13436
-// Function ID: 13437
+// Module ID: 13471
+// Function ID: 13472
 // Name: getTransformedBadgeColors
 // Dependencies: [689, 2]
 // Exports: getTransformedBadgeColors
 
-// Module 13436 (getTransformedBadgeColors)
+// Module 13471 (getTransformedBadgeColors)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_tag/badges/getTransformedBadgeColors.tsx");

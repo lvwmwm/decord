@@ -1,11 +1,11 @@
-// Module ID: 4090
-// Function ID: 4091
-// Dependencies: [17, 500, 4091, 2]
+// Module ID: 4091
+// Function ID: 4092
+// Dependencies: [17, 500, 4092, 2]
 
-// Module 4090
+// Module 4091
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 4091 */;
+import enforcingDefault from "enforcing" /* 4092 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 let result = set.fileFinishedImporting("modules/links/native/LinkingModule.tsx");

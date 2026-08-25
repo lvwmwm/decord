@@ -1,12 +1,12 @@
-// Module ID: 13831
-// Function ID: 13832
+// Module ID: 13866
+// Function ID: 13867
 // Name: getModalState
-// Dependencies: [1954, 38, 8370, 687, 7465, 589, 709, 2]
+// Dependencies: [1955, 38, 8376, 687, 7063, 589, 709, 2]
 
-// Module 13831 (getModalState)
+// Module 13866 (getModalState)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import trackInviteDefault from "trackInvite" /* 7465 */;
+import trackInviteDefault from "trackInvite" /* 7063 */;
 
 const require = arg1;
 let obj = { IN_FLIGHT: 0, [0]: "IN_FLIGHT", ERRORED: 1, [1]: "ERRORED", SUCCEEDED: 2, [2]: "SUCCEEDED" };
@@ -55,11 +55,11 @@ obj = {
     ({ data, preflight } = nonce);
     let startTimeout;
     const interactionType = data.interactionType;
-    if (nonce(1954).InteractionTypes.APPLICATION_COMMAND === interactionType) {
+    if (nonce(1955).InteractionTypes.APPLICATION_COMMAND === interactionType) {
       const messageId = nonce.messageId;
       const channelId = data.channelId;
       return false;
-    } else if (tmp(1954).InteractionTypes.MODAL_SUBMIT === interactionType) {
+    } else if (tmp(1955).InteractionTypes.MODAL_SUBMIT === interactionType) {
       let tmp7 = null == nonce;
       if (!tmp7) {
         tmp7 = IN_FLIGHT === obj.ERRORED;

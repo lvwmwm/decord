@@ -1,10 +1,10 @@
-// Module ID: 10083
-// Function ID: 10084
+// Module ID: 9939
+// Function ID: 9940
 // Name: _createSound
 // Dependencies: [17, 1625, 500, 2]
 // Exports: MobileAudioSound
 
-// Module 10083 (_createSound)
+// Module 9939 (_createSound)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;

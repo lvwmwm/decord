@@ -1,9 +1,9 @@
-// Module ID: 5718
-// Function ID: 5719
+// Module ID: 6406
+// Function ID: 6407
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5718 (metadata)
+// Module 6406 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalGiftEnvelopeIllocon-2x.png.js");

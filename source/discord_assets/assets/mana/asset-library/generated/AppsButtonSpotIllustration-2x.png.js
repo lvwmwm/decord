@@ -1,9 +1,9 @@
-// Module ID: 5510
-// Function ID: 5511
+// Module ID: 6192
+// Function ID: 6193
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5510 (metadata)
+// Module 6192 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AppsButtonSpotIllustration-2x.png.js");

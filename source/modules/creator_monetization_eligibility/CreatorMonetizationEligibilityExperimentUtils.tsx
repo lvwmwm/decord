@@ -1,13 +1,13 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 5988
+// Function ID: 5989
 // Name: set
-// Dependencies: [1922, 4044, 676, 589, 2]
+// Dependencies: [1922, 4045, 676, 589, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
-// Module 7265 (set)
+// Module 5988 (set)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import closure_3 from "handlePaymentSourceCreateEnd" /* 4044 */;
+import closure_3 from "handlePaymentSourceCreateEnd" /* 4045 */;
 import { GuildFeatures } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 7193
-// Function ID: 7194
+// Module ID: 5850
+// Function ID: 5851
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 676, 21, 4314, 5102, 1236, 7194, 7195, 698, 5047, 1435, 1363, 1297, 4322, 7192, 2]
+// Dependencies: [5, 19, 676, 21, 4315, 5108, 1236, 5851, 5852, 698, 4588, 1435, 1363, 1297, 4323, 5849, 2]
 // Exports: default
 
-// Module 7193 (ProviderConnectionCard)
+// Module 5850 (ProviderConnectionCard)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { AnalyticEvents } from "ME" /* 676 */;
@@ -56,7 +56,7 @@ export default function ProviderConnectionCard(connection) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ export default function ProviderConnectionCard(connection) {
             } else {
               obj1 = {};
               const obj5 = v0(698);
-              const merged = Object.assign(closure_1_0(5047).collectGuildAnalyticsMetadata(v0));
+              const merged = Object.assign(closure_1_0(4588).collectGuildAnalyticsMetadata(v0));
               obj1.connection_type = "provider";
               const provider_id = closure_1_0.provider_id;
               c0 = provider_id;
@@ -99,7 +99,7 @@ export default function ProviderConnectionCard(connection) {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           v0 = tmp;

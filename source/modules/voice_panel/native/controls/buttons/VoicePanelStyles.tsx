@@ -1,15 +1,15 @@
-// Module ID: 16494
-// Function ID: 16495
+// Module ID: 16526
+// Function ID: 16527
 // Name: useVoicePanelButtonStyles
-// Dependencies: [4668, 712, 9032, 1367, 2]
+// Dependencies: [4380, 712, 8879, 1367, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 16494 (useVoicePanelButtonStyles)
+// Module 16526 (useVoicePanelButtonStyles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import map from "map" /* 9032 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import map from "map" /* 8879 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 let closure_3 = createCacheKey.createStyles((arg0, arg1) => {
   let str = "transparent";

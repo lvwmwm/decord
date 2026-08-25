@@ -1,14 +1,14 @@
-// Module ID: 6928
-// Function ID: 6929
+// Module ID: 4925
+// Function ID: 4926
 // Name: LockIcon
-// Dependencies: [19, 21, 712, 4099, 6904, 2]
+// Dependencies: [19, 21, 712, 4100, 4901, 2]
 // Exports: LockIcon
 
-// Module 6928 (LockIcon)
+// Module 4925 (LockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 6904 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 4901 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

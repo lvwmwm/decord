@@ -1,10 +1,10 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 10291
+// Function ID: 10292
 // Name: useIsEligibleForUserProfileWYSIWYGEditing
 // Dependencies: [1472, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 9575 (useIsEligibleForUserProfileWYSIWYGEditing)
+// Module 10291 (useIsEligibleForUserProfileWYSIWYGEditing)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

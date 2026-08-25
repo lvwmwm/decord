@@ -1,17 +1,17 @@
-// Module ID: 6346
-// Function ID: 6347
+// Module ID: 5377
+// Function ID: 5378
 // Name: useHeaderDebugOverlay
-// Dependencies: [19, 17, 21, 4668, 712, 5300, 4739, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 5378, 4376, 2]
 // Exports: default
 
-// Module 6346 (useHeaderDebugOverlay)
+// Module 5377 (useHeaderDebugOverlay)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4739 */;
-import useDesignToggleDefault from "useDesignToggle" /* 5300 */;
+import Text from "Text" /* 4376 */;
+import useDesignToggleDefault from "useDesignToggle" /* 5378 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

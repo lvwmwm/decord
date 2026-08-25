@@ -1,17 +1,17 @@
-// Module ID: 7616
-// Function ID: 7617
+// Module ID: 7434
+// Function ID: 7435
 // Name: updateCombo
-// Dependencies: [1218, 1980, 7470, 7471, 676, 4020, 4263, 7617, 1231, 589, 709, 2]
+// Dependencies: [1218, 1981, 7283, 7284, 676, 4021, 4264, 7435, 1231, 589, 709, 2]
 // Exports: getComboId, isComboing, shouldTrackMessage
 
-// Module 7616 (updateCombo)
+// Module 7434 (updateCombo)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getComboShakeIntensity from "getComboShakeIntensity" /* 7617 */;
+import getComboShakeIntensity from "getComboShakeIntensity" /* 7435 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "handleConnectionOpen" /* 1980 */;
-import closure_4 from "initialize" /* 7470 */;
-import ConfettiLocation from "ConfettiLocation" /* 7471 */;
+import closure_3 from "handleConnectionOpen" /* 1981 */;
+import closure_4 from "initialize" /* 7283 */;
+import ConfettiLocation from "ConfettiLocation" /* 7284 */;
 import { ComponentActions } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -54,7 +54,7 @@ function updateCombo(userId) {
     decayInterval = iter.decayInterval;
   }
   if (decayInterval == null) {
-    decayInterval = new obj(4263).Interval();
+    decayInterval = new obj(4264).Interval();
   }
   obj.decayInterval = decayInterval;
   const result = obj.set("" + userId.userId + "-" + userId.channelId, obj);
@@ -219,12 +219,12 @@ const poggermodeStore = new PoggermodeStore(dispatcherDefault, {
             if (null != mentions) {
               if (null != mentions.find((id) => id.id === id)) {
                 if (null != value) {
-                  let num2 = id(7617).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
+                  let num2 = id(7435).getComboShakeIntensity(value, LEVEL_4.LEVEL_4);
                   if (num2 == null) {
                     num2 = 0.001;
                   }
                   let result = num2;
-                  const obj2 = id(7617);
+                  const obj2 = id(7435);
                 } else {
                   const _Math = Math;
                   result = 4 * Math.random();

@@ -1,18 +1,18 @@
-// Module ID: 9815
-// Function ID: 9816
+// Module ID: 10594
+// Function ID: 10595
 // Name: error
-// Dependencies: [19, 17, 21, 4668, 712, 6840, 9816, 4739, 1236, 4750, 5265, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 5434, 10595, 4376, 1236, 4815, 4611, 2]
 // Exports: default
 
-// Module 9815 (error)
+// Module 10594 (error)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4739 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
-import registerAssetDefault from "registerAsset" /* 9816 */;
+import Text from "Text" /* 4376 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5434 */;
+import registerAssetDefault from "registerAsset" /* 10595 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;
@@ -52,7 +52,7 @@ export default function ErrorResult(error) {
     obj2[2] = function onPress() {
       return callback(table[10]).pop();
     };
-    tmp6Result = tmp6(tmp3(4750).Button, obj2);
+    tmp6Result = tmp6(tmp3(4815).Button, obj2);
   }
   items1[1] = tmp6Result;
   obj[2] = items1;

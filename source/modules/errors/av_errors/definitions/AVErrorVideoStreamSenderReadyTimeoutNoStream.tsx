@@ -1,11 +1,11 @@
-// Module ID: 17163
-// Function ID: 17164
+// Module ID: 17195
+// Function ID: 17196
 // Name: AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition
-// Dependencies: [1218, 4781, 9707, 2]
+// Dependencies: [1218, 10727, 9317, 2]
 
-// Module 17163 (AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition)
+// Module 17195 (AVErrorVideoStreamSenderReadyTimeoutNoStreamDefinition)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "makeTimeoutKey" /* 4781 */;
+import closure_3 from "makeTimeoutKey" /* 10727 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorVideoStreamSenderReadyTimeoutNoStream.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8416
-// Function ID: 8417
+// Module ID: 8424
+// Function ID: 8425
 // Name: _saveProfileChanges
-// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8417, 7474, 709, 8418, 530, 8421, 4277, 2]
-// Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
+// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8425, 7287, 709, 8426, 530, 4994, 4278, 2]
+// Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8416 (_saveProfileChanges)
+// Module 8424 (_saveProfileChanges)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
@@ -37,7 +37,7 @@ function _saveProfileChanges() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -107,7 +107,7 @@ function _saveProfileChanges() {
                 const obj15 = callback2(body[13]);
               } else {
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
               tmp71 = body;
             }
@@ -267,6 +267,13 @@ export const setTryItOutDisplayNameStyles = function setTryItOutDisplayNameStyle
   obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_DISPLAY_NAME_STYLES", displayNameStyles };
   obj.dispatch(obj);
   obj = { feature_name: constants4.DISPLAY_NAME_STYLES, feature_tier: constants3.PREMIUM_STANDARD };
+  expandEventPropertiesDefault.track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
+};
+export const setTryItOutCustomTypingIndicatorStyle = function setTryItOutCustomTypingIndicatorStyle(customTypingIndicatorStyle) {
+  let obj = dispatcherDefault;
+  obj = { type: "USER_PROFILE_SETTINGS_SET_TRY_IT_OUT_CUSTOM_TYPING_INDICATOR_STYLE", customTypingIndicatorStyle };
+  obj.dispatch(obj);
+  obj = { feature_name: constants4.TYPING_INDICATOR, feature_tier: constants3.PREMIUM_STANDARD };
   expandEventPropertiesDefault.track(constants2.PREMIUM_FEATURE_TRY_OUT, obj);
 };
 export const setTryItOutPreset = function setTryItOutPreset(arg0) {

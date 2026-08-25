@@ -1,17 +1,17 @@
-// Module ID: 16734
-// Function ID: 16735
+// Module ID: 16766
+// Function ID: 16767
 // Name: push
-// Dependencies: [11635, 676, 3, 687, 5265, 16735, 2008, 4234, 1231, 16736, 15, 11638, 1222, 4239, 4233, 4097, 1236, 16737, 2]
+// Dependencies: [11978, 676, 3, 687, 4611, 16767, 2009, 4235, 1231, 16768, 15, 11981, 1222, 4240, 4234, 4098, 1236, 16769, 2]
 
-// Module 16734 (push)
+// Module 16766 (push)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 4097 */;
-import _modDef5265 from "module_5265" /* 5265 */;
-import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 11635 */;
-import _initializeDefault from "_initialize" /* 16736 */;
-import registerAssetDefault from "registerAsset" /* 16737 */;
+import dispatcherDefault from "dispatcher" /* 4098 */;
+import _modDef4611 from "module_4611" /* 4611 */;
+import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 11978 */;
+import _initializeDefault from "_initialize" /* 16768 */;
+import registerAssetDefault from "registerAsset" /* 16769 */;
 import ME from "ME" /* 676 */;
 
 let obj = require;
@@ -94,7 +94,7 @@ class MultiAccountManagerNative extends tmp5 {
 }
 const prototype = MultiAccountManagerNative.prototype;
 prototype["onSwitchStart"] = function onSwitchStart() {
-  obj = _modDef5265;
+  obj = _modDef4611;
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   logger.info("Closing fast-connect socket because of account switch logout");
   let result = obj(15).closeFastConnectSocket();
@@ -113,10 +113,10 @@ prototype["onSwitchSuccess"] = function onSwitchSuccess(currentUser, navigateHom
   if (navigateHome) {
     obj = obj(1222);
     obj.transitionTo(constants.ME, { navigationReplace: true });
-    const MobileHomeDrawerExperiment = obj(4239).MobileHomeDrawerExperiment;
+    const MobileHomeDrawerExperiment = obj(4240).MobileHomeDrawerExperiment;
     if (MobileHomeDrawerExperiment.getConfig({ location: "multi-account" }).enableHome) {
-      tmp(4233).setHomeDrawerState(false);
-      const tmpResult = tmp(4233);
+      tmp(4234).setHomeDrawerState(false);
+      const tmpResult = tmp(4234);
     }
     tmp = obj;
   }
@@ -139,7 +139,7 @@ prototype["onSwitchError"] = function onSwitchError(currentUser) {
   obj.open(obj);
 };
 prototype["onSwitchComplete"] = function onSwitchComplete() {
-  obj = _modDef5265;
+  obj = _modDef4611;
   obj.popWithKey(SWITCH_ACCOUNTS_MODAL_KEY);
   obj.pop();
   if (null !== c9) {

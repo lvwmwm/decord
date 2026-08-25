@@ -1,10 +1,10 @@
-// Module ID: 16712
-// Function ID: 16713
+// Module ID: 16744
+// Function ID: 16745
 // Name: onPostConnectionOpen
-// Dependencies: [5, 17, 1922, 676, 5043, 500, 16713, 530, 698, 1208, 2]
+// Dependencies: [5, 17, 1922, 676, 5367, 500, 16745, 530, 698, 1208, 2]
 
-// Module 16712 (onPostConnectionOpen)
-import initializeDefault from "initialize" /* 5043 */;
+// Module 16744 (onPostConnectionOpen)
+import initializeDefault from "initialize" /* 5367 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
@@ -39,7 +39,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         }
         v0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         v0 = tmp;
         throw tmp9;
@@ -128,7 +128,7 @@ prototype["syncAppTransactionId"] = function syncAppTransactionId(currentUser) {
             if (hasItem) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               const HTTP = appTransactionId(closure_1_2[7]).HTTP;
               const obj4 = { url: "/users/@me/app-transaction-ids", body: null, rejectWithError: true };
@@ -145,7 +145,7 @@ prototype["syncAppTransactionId"] = function syncAppTransactionId(currentUser) {
         }
         c3 = 0;
         c5 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else if (arg0 === 1) {
       c5 = 3;

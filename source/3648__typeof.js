@@ -1,12 +1,12 @@
 // Module ID: 3648
 // Function ID: 3649
 // Name: _typeof
-// Dependencies: [3475, 3476]
+// Dependencies: [3476, 3477]
 // Exports: default
 
 // Module 3648 (_typeof)
-import _typeof from "_typeof" /* 3475 */;
-import requiredArgs from "requiredArgs" /* 3476 */;
+import _typeof from "_typeof" /* 3476 */;
+import requiredArgs from "requiredArgs" /* 3477 */;
 
 function _typeof(arg0) {
   if (typeof Symbol === "function") {
@@ -50,7 +50,7 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function min(arg0) {
+export default function max(arg0) {
   requiredArgs.default(1, arguments);
   if (!arg0) {
     if ("object" === _typeof(arg0)) {
@@ -68,10 +68,11 @@ export default function min(arg0) {
   }
   const item = arr.forEach((arg0) => {
     const defaultResult = closure_1_0.default(arg0);
-    let isNaNResult = undefined === closure_0 || closure_0 > defaultResult;
+    let isNaNResult = undefined === closure_0 || closure_0 < defaultResult;
     if (!isNaNResult) {
       const _isNaN = isNaN;
-      isNaNResult = isNaN(defaultResult.getDate());
+      const _Number = Number;
+      isNaNResult = isNaN(Number(defaultResult));
     }
     if (isNaNResult) {
       closure_0 = defaultResult;

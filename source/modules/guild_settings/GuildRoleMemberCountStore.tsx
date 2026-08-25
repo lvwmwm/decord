@@ -1,9 +1,9 @@
-// Module ID: 6966
-// Function ID: 6967
+// Module ID: 5464
+// Function ID: 5465
 // Name: getRoleMemberCount
 // Dependencies: [589, 709, 2]
 
-// Module 6966 (getRoleMemberCount)
+// Module 5464 (getRoleMemberCount)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

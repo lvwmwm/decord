@@ -1,15 +1,15 @@
-// Module ID: 11123
-// Function ID: 11124
+// Module ID: 11465
+// Function ID: 11466
 // Name: AppealIngestionActivitySummary
-// Dependencies: [19, 17, 21, 4668, 11108, 2]
+// Dependencies: [19, 17, 21, 4380, 11450, 2]
 // Exports: default
 
-// Module 11123 (AppealIngestionActivitySummary)
+// Module 11465 (AppealIngestionActivitySummary)
 import noopAll from "noop" /* 19 */;
-import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11108 */;
+import ClassificationEvidenceDefault from "ClassificationEvidence" /* 11450 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 noopAll;
 let closure_4 = createCacheKey.createStyles({ activity: { marginBottom: 16 } });

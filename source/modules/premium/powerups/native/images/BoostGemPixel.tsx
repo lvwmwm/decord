@@ -1,13 +1,13 @@
-// Module ID: 13037
-// Function ID: 13038
+// Module ID: 13025
+// Function ID: 13026
 // Name: BoostGemPixel
-// Dependencies: [19, 21, 6607, 2]
+// Dependencies: [19, 21, 7985, 2]
 // Exports: default
 
-// Module 13037 (BoostGemPixel)
+// Module 13025 (BoostGemPixel)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 6607 */;
-import inlineStylesDefault from "inlineStyles" /* 6607 */;
+import inlineStyles from "inlineStyles" /* 7985 */;
+import inlineStylesDefault from "inlineStyles" /* 7985 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

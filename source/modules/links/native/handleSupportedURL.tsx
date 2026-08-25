@@ -1,26 +1,26 @@
-// Module ID: 4496
-// Function ID: 4497
+// Module ID: 13403
+// Function ID: 13404
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 4497, 4374, 7430, 12904, 1218, 676, 1398, 4537, 4844, 8811, 5302, 4361, 13369, 11098, 8238, 11898, 5265, 4234, 13370, 8966, 7398, 9188, 11010, 1892, 10681, 698, 10683, 7250, 10821, 11140, 13377, 11930, 10805, 2008, 12478, 8810, 13379, 13381, 1625, 4845, 13386, 4093, 13388, 1910, 7340, 8820, 8829, 7317, 9922, 9884, 4233, 4380, 1222, 709, 5228, 1487, 8911, 13391, 13406, 500, 13417, 8955, 13424, 4470, 13425, 5305, 7197, 9751, 7508, 6758, 10986, 10334, 13497, 6747, 8743, 9138, 9133, 4344, 2]
+// Dependencies: [109, 5, 5450, 7132, 7028, 12891, 1218, 676, 1398, 4447, 4618, 10706, 7144, 4362, 13404, 11440, 8235, 12232, 4611, 4235, 13405, 8930, 6125, 9480, 11352, 1892, 10482, 698, 10484, 5973, 11145, 11482, 13412, 12264, 10710, 2009, 10707, 10705, 13414, 13416, 1625, 4964, 13421, 4094, 13423, 1910, 6066, 9087, 9096, 6040, 4610, 10966, 4234, 5279, 1222, 709, 5231, 1487, 9168, 13426, 13441, 500, 13452, 9212, 13459, 4725, 13460, 7147, 5854, 9361, 7322, 5273, 11326, 10185, 13532, 5258, 10682, 9431, 9425, 4345, 2]
 // Exports: default
 
-// Module 4496 (handleSupportedURL)
+// Module 13403 (handleSupportedURL)
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "asyncGeneratorStep" /* 5 */;
-import closure_8 from "scheduledEventSort" /* 4374 */;
-import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7430 */;
-import closure_10 from "zustandStore" /* 12904 */;
+import closure_8 from "scheduledEventSort" /* 7132 */;
+import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7028 */;
+import closure_10 from "zustandStore" /* 12891 */;
 import closure_11 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1398 */;
-import { StreamTypes } from "StreamIssueReportReasons" /* 4537 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4844 */;
-import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 8811 */;
-import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 5302 */;
-import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow" /* 4361 */;
-import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13369 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11098 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 8238 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4447 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4618 */;
+import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 10706 */;
+import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7144 */;
+import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow" /* 4362 */;
+import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13404 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11440 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 8235 */;
 
 const require = arg1;
 let closure_4 = ["code", "state"];
@@ -206,7 +206,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "\u{1F9DC}\u{1F3FC}\u200D\u2640\uFE0F" };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: null };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };
@@ -365,7 +365,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -440,7 +440,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj2.openGuildEventDetails(obj4);
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp35) {
                 c4 = tmp;
@@ -472,7 +472,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -534,7 +534,7 @@ export default function handleSupportedURL(payload) {
                   obj3.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp37) {
                 c2 = tmp;
                 throw tmp37;
@@ -594,7 +594,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -780,7 +780,7 @@ export default function handleSupportedURL(payload) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     try {

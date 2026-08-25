@@ -1,9 +1,9 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 12108
+// Function ID: 12109
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11768 (metadata)
+// Module 12108 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/powerups/badge-packs/group-static.png.js");

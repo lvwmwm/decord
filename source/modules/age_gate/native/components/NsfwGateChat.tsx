@@ -1,18 +1,18 @@
-// Module ID: 11885
-// Function ID: 11886
+// Module ID: 12221
+// Function ID: 12222
 // Name: NsfwGateChat
-// Dependencies: [19, 17, 21, 4668, 712, 11886, 4739, 1236, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 12222, 4376, 1236, 2]
 // Exports: default
 
-// Module 11885 (NsfwGateChat)
+// Module 12221 (NsfwGateChat)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import registerAssetDefault from "registerAsset" /* 11886 */;
+import Text from "Text" /* 4376 */;
+import registerAssetDefault from "registerAsset" /* 12222 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

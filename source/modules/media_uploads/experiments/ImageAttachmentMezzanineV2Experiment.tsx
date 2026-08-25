@@ -1,10 +1,10 @@
-// Module ID: 4882
-// Function ID: 4883
+// Module ID: 5005
+// Function ID: 5006
 // Name: getImageAttachmentMezzanineV2Config
 // Dependencies: [1472, 2]
 // Exports: getImageAttachmentMezzanineV2Config
 
-// Module 4882 (getImageAttachmentMezzanineV2Config)
+// Module 5005 (getImageAttachmentMezzanineV2Config)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11033
-// Function ID: 11034
+// Module ID: 11375
+// Function ID: 11376
 // Name: GiftIntentType
 // Dependencies: [1924, 676, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 11033 (GiftIntentType)
+// Module 11375 (GiftIntentType)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;

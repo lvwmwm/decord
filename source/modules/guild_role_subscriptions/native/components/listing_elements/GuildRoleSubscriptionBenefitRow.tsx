@@ -1,19 +1,19 @@
-// Module ID: 14656
-// Function ID: 14657
+// Module ID: 14686
+// Function ID: 14687
 // Name: BenefitRow
-// Dependencies: [19, 17, 1391, 21, 4668, 4037, 14654, 1297, 4739, 589, 4989, 1236, 6870, 2]
+// Dependencies: [19, 17, 1391, 21, 4380, 4038, 14684, 1297, 4376, 589, 4574, 1236, 4866, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 14656 (BenefitRow)
+// Module 14686 (BenefitRow)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1297 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
-import Text from "Text" /* 4739 */;
-import EmojiIconDefault from "EmojiIcon" /* 14654 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4038 */;
+import Text from "Text" /* 4376 */;
+import EmojiIconDefault from "EmojiIcon" /* 14684 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function BenefitRow(description) {
@@ -52,21 +52,21 @@ export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = benefit(1236).intl;
   obj[2] = "[" + intl.string(benefit(1236).t.bz1PZX) + "]";
-  let tmp8 = callback(benefit(4739).Text, obj);
+  let tmp8 = callback(benefit(4376).Text, obj);
   if (null != stateFromStores) {
     obj = { style: null, children: null };
     obj[0] = tmp.channelTitle;
     obj1 = { style: null, size: null, source: null };
     obj1[0] = tmp.channelIcon;
     obj1[1] = tmp2(1297).Icon.Sizes.CUSTOM;
-    obj1[2] = tmp2(6870).getChannelIcon(stateFromStores);
+    obj1[2] = tmp2(4866).getChannelIcon(stateFromStores);
     const items2 = [tmp7(tmp2(1297).Icon, obj1), ];
     const obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
     obj2[2] = tmp6;
-    items2[1] = tmp7(tmp2(4739).Text, obj2);
+    items2[1] = tmp7(tmp2(4376).Text, obj2);
     obj[1] = items2;
     tmp8 = callback2(View, obj);
-    const tmp2Result = tmp2(6870);
+    const tmp2Result = tmp2(4866);
   }
   if (null != benefit.emoji_id) {
     let str = benefit.emoji_id;

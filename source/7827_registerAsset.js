@@ -1,0 +1,10 @@
+// Module ID: 7827
+// Function ID: 7828
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 7827 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/CircuitIcon", width: 60, height: 60, scales: [2, 3], hash: "68832d737c55ed046c40e8d11571a54e", name: "CircuitIcon", type: "png" });

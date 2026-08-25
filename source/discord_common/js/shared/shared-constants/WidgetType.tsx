@@ -1,9 +1,9 @@
-// Module ID: 5371
-// Function ID: 5372
+// Module ID: 7228
+// Function ID: 7229
 // Name: WidgetType
 // Dependencies: [2]
 
-// Module 5371 (WidgetType)
+// Module 7228 (WidgetType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/WidgetType.tsx");

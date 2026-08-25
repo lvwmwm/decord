@@ -1,14 +1,14 @@
-// Module ID: 5633
-// Function ID: 5634
+// Module ID: 6319
+// Function ID: 6320
 // Name: DevCommerceWideAbstractUI
-// Dependencies: [21, 5454, 5634, 2]
+// Dependencies: [21, 5374, 6320, 2]
 // Exports: DevCommerceWideAbstractUI
 
-// Module 5633 (DevCommerceWideAbstractUI)
+// Module 6319 (DevCommerceWideAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5634 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6320 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DevCommerceWideAbstractUI.native.tsx");

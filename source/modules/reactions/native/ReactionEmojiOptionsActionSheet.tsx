@@ -1,18 +1,18 @@
-// Module ID: 10502
-// Function ID: 10503
+// Module ID: 12732
+// Function ID: 12733
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 4669, 6764, 4201, 21, 4668, 712, 4069, 7204, 589, 9339, 1435, 4346, 9447, 9449, 4739, 1236, 9443, 4097, 7205, 4096, 7549, 7213, 6968, 6317, 6322, 2]
+// Dependencies: [19, 17, 4372, 5282, 4202, 21, 4380, 712, 4070, 5861, 589, 8788, 1435, 4347, 8891, 8893, 4376, 1236, 8887, 4098, 5862, 4097, 7367, 5870, 5466, 5873, 5480, 2]
 // Exports: default
 
-// Module 10502 (ReactionEmojiOptionsActionSheet)
+// Module 12732 (ReactionEmojiOptionsActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
-import closure_7 from "getEmojiToGroupId" /* 6764 */;
-import closure_8 from "handleConnectionOpen" /* 4201 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_7 from "getEmojiToGroupId" /* 5282 */;
+import closure_8 from "handleConnectionOpen" /* 4202 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: c9, jsxs: c10 } = jsxProd);

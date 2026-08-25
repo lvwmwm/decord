@@ -1,10 +1,10 @@
-// Module ID: 5269
-// Function ID: 5270
+// Module ID: 5937
+// Function ID: 5938
 // Name: _fetchWebAuthnConditionalChallenge
-// Dependencies: [5, 676, 530, 709, 5232, 663, 2]
+// Dependencies: [5, 676, 530, 709, 4601, 663, 2]
 // Exports: clearWebAuthnRegisterTrigger, deleteWebAuthnCredential, editWebAuthnCredential, fetchWebAuthnConditionalChallenge, fetchWebAuthnCredentials, fetchWebAuthnPasswordlessChallenge, finishRegisterWebAuthnCredential, startRegisterWebAuthnCredential, triggerWebAuthnRegister
 
-// Module 5269 (_fetchWebAuthnConditionalChallenge)
+// Module 5937 (_fetchWebAuthnConditionalChallenge)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -104,7 +104,7 @@ function _editWebAuthnCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -163,7 +163,7 @@ function _editWebAuthnCredential() {
               obj1.dispatch(obj5);
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           c5 = tmp;
@@ -225,7 +225,7 @@ function _finishRegisterWebAuthnCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -256,7 +256,7 @@ function _finishRegisterWebAuthnCredential() {
               c5 = 1;
               c6 = 1;
               let obj4 = { value: null, done: false };
-              obj4[0] = callback(5232).post(obj1);
+              obj4[0] = callback(4601).post(obj1);
               return obj4;
             }
           } else if (arg0 === 1) {
@@ -278,7 +278,7 @@ function _finishRegisterWebAuthnCredential() {
             obj6[1] = lib.body.backup_codes;
             obj6.dispatch(obj6);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp6) {
           c6 = tmp;

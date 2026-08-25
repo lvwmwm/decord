@@ -1,16 +1,16 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 14770
+// Function ID: 14771
 // Name: toggle
-// Dependencies: [1212, 1218, 8238, 1367, 589, 709, 10708, 1236, 2]
+// Dependencies: [1212, 1218, 8235, 1367, 589, 709, 10516, 1236, 2]
 
-// Module 14740 (toggle)
+// Module 14770 (toggle)
 import initialize from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import closure_3 from "initialize" /* 1212 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import createToggle from "createToggle" /* 10708 */;
+import createToggle from "createToggle" /* 10516 */;
 
 require = arg1;
 const name = require("useIsMobileVisualRefreshExperimentEnabled").MobileVisualRefreshExperiment.definition.name;

@@ -1,10 +1,10 @@
-// Module ID: 2007
-// Function ID: 2008
+// Module ID: 2008
+// Function ID: 2009
 // Name: _preloadAllIntlMessageFiles
-// Dependencies: [5, 1236, 2008, 2010, 2042, 2074, 2106, 2108, 2110, 2142, 2174, 2206, 2238, 2270, 2272, 2304, 2336, 2368, 2400, 2432, 2434, 2436, 2438, 2470, 2502, 2534, 2566, 2598, 2630, 2662, 2694, 2726, 2758, 2790, 2822, 2854, 2886, 2888, 2920, 2952, 2984, 2986, 3018, 3050, 3082, 3114, 3146, 3178, 3210, 3242, 3274, 3306, 3338, 3340, 3372, 3404, 3406, 3438, 2]
+// Dependencies: [5, 1236, 2009, 2011, 2043, 2075, 2107, 2109, 2111, 2143, 2175, 2207, 2239, 2271, 2273, 2305, 2337, 2369, 2401, 2433, 2435, 2437, 2439, 2471, 2503, 2535, 2567, 2599, 2631, 2663, 2695, 2727, 2759, 2791, 2823, 2855, 2887, 2889, 2921, 2953, 2985, 2987, 3019, 3051, 3083, 3115, 3147, 3179, 3211, 3243, 3275, 3307, 3339, 3341, 3373, 3405, 3407, 3439, 2]
 // Exports: preloadAllIntlMessageFiles
 
-// Module 2007 (_preloadAllIntlMessageFiles)
+// Module 2008 (_preloadAllIntlMessageFiles)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -22,7 +22,7 @@ function _preloadAllIntlMessageFiles() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

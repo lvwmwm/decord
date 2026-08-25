@@ -1,9 +1,9 @@
-// Module ID: 8220
-// Function ID: 8221
+// Module ID: 8216
+// Function ID: 8217
 // Name: getGuild
 // Dependencies: [589, 709, 2]
 
-// Module 8220 (getGuild)
+// Module 8216 (getGuild)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11008
-// Function ID: 11009
+// Module ID: 11348
+// Function ID: 11349
 // Name: _applyStaffBuildOverride
-// Dependencies: [5, 1218, 11009, 530, 4294, 2]
+// Dependencies: [5, 1218, 11349, 530, 4295, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 11008 (_applyStaffBuildOverride)
+// Module 11348 (_applyStaffBuildOverride)
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 
@@ -28,7 +28,7 @@ function _applyStaffBuildOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ function _applyPublicBuildOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -280,7 +280,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -311,7 +311,7 @@ closure_0 = importDefaultResult((arg0) => {
           return obj;
         } else {
           table = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         table = tmp;
@@ -320,7 +320,7 @@ closure_0 = importDefaultResult((arg0) => {
     }
   })();
 });
-const f87441 = function() {
+const f88252 = function() {
   const self = this;
   const apply = closure_0.apply;
   if (typeof apply === "unknown") {
@@ -364,13 +364,13 @@ export const clearBuildOverride = function clearBuildOverride() {
 };
 export const getPublicBuildOverrideLink = function getPublicBuildOverrideLink(arg0) {
   const HTTP = callback(530).HTTP;
-  let obj = { url: callback(4294).getAPIEndpoint("/__development/create_build_override_link"), body: arg0, headers: null, oldFormErrors: true, rejectWithError: false };
+  let obj = { url: callback(4295).getAPIEndpoint("/__development/create_build_override_link"), body: arg0, headers: null, oldFormErrors: true, rejectWithError: false };
   let str = token.getToken();
   if (str == null) {
     str = "";
   }
   obj[2] = { Authorization: str };
-  const obj2 = callback(4294);
+  const obj2 = callback(4295);
   return HTTP.post(obj).then((body) => ({ url: body.body.url, error: false }), (status) => {
     if (400 === status.status) {
       let obj = { url: false, error: null };

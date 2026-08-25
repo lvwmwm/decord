@@ -1,13 +1,13 @@
-// Module ID: 4820
-// Function ID: 4821
+// Module ID: 4635
+// Function ID: 4636
 // Name: useDisplayNameStyles
-// Dependencies: [19, 1991, 1922, 4821, 589, 4823, 2]
+// Dependencies: [19, 1992, 1922, 4636, 589, 4638, 2]
 // Exports: default
 
-// Module 4820 (useDisplayNameStyles)
+// Module 4635 (useDisplayNameStyles)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_4 from "trackCommunicationDisabled" /* 1992 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
 const useContext = noop.useContext;

@@ -1,17 +1,17 @@
-// Module ID: 8415
-// Function ID: 8416
+// Module ID: 8423
+// Function ID: 8424
 // Name: useAvatarsWithGuilds
-// Dependencies: [19, 8409, 5370, 1991, 589, 1363, 1236, 2]
+// Dependencies: [19, 8417, 7227, 1992, 589, 1363, 1236, 2]
 // Exports: announcePendingAvatarChange, getProfilePreviewValue, resolveCollectiblesOverride, showRemoveAvatar, showRemoveBanner, useAvatarDecorationSettings, useAvatarsWithGuilds, useGuildMemberAndUserPendingNameplate, useGuildMemberOrUserPendingDisplayNameStyles, useProfileEffectSettings, useProfileFrameSettings, useUserAvatarDecoration, useUserProfileEffect, useUserProfileFrame
 
-// Module 8415 (useAvatarsWithGuilds)
+// Module 8423 (useAvatarsWithGuilds)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer4 from "AccessibilityAnnouncer" /* 1363 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleFormOpen" /* 8409 */;
-import closure_4 from "createUserWidgetFromServer" /* 5370 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "handleFormOpen" /* 8417 */;
+import closure_4 from "createUserWidgetFromServer" /* 7227 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/profile_customization/ProfileCustomizationUtils.tsx");

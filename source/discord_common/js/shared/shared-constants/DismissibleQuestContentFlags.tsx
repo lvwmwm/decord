@@ -1,9 +1,9 @@
-// Module ID: 6761
-// Function ID: 6762
+// Module ID: 5276
+// Function ID: 5277
 // Name: DismissibleQuestContentFlags
 // Dependencies: [2]
 
-// Module 6761 (DismissibleQuestContentFlags)
+// Module 5276 (DismissibleQuestContentFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/DismissibleQuestContentFlags.tsx");

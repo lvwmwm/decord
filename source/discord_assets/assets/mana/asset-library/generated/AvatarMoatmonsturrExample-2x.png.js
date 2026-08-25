@@ -1,9 +1,9 @@
-// Module ID: 5530
-// Function ID: 5531
+// Module ID: 6212
+// Function ID: 6213
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5530 (metadata)
+// Module 6212 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarMoatmonsturrExample-2x.png.js");

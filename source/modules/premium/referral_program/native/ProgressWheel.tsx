@@ -1,20 +1,20 @@
-// Module ID: 12943
-// Function ID: 12944
+// Module ID: 12930
+// Function ID: 12931
 // Name: ProgressWheel
-// Dependencies: [17, 21, 4668, 4100, 712, 12935, 5454, 12944, 6607, 12945, 2]
+// Dependencies: [17, 21, 4380, 4101, 712, 12922, 5374, 12931, 7985, 12932, 2]
 // Exports: default
 
-// Module 12943 (ProgressWheel)
+// Module 12930 (ProgressWheel)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4100 */;
-import preloadDefault from "preload" /* 5454 */;
-import inlineStyles from "inlineStyles" /* 6607 */;
-import MAX_REFERRALS_SENT from "MAX_REFERRALS_SENT" /* 12935 */;
-import metadataDefault from "metadata" /* 12945 */;
+import map from "map" /* 4101 */;
+import preloadDefault from "preload" /* 5374 */;
+import inlineStyles from "inlineStyles" /* 7985 */;
+import MAX_REFERRALS_SENT from "MAX_REFERRALS_SENT" /* 12922 */;
+import metadataDefault from "metadata" /* 12932 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const View = get_ActivityIndicator.View;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -34,14 +34,14 @@ export default function ProgressWheel(nReferralsSent) {
   let tmp9 = nReferralsSent === MAX_REFERRALS_SENT.MAX_REFERRALS_SENT;
   if (tmp9) {
     obj = { source: null, style: null };
-    let tmp4Result = tmp4(5454);
-    obj[0] = tmp4(12944);
+    let tmp4Result = tmp4(5374);
+    obj[0] = tmp4(12931);
     obj[1] = tmp.glowImage;
     tmp9 = callback(tmp4Result, obj);
   }
   const items = [tmp9, , ];
   obj1 = { width: c6, height: c6, children: null };
-  tmp4Result = tmp4(6607);
+  tmp4Result = tmp4(7985);
   const items1 = [callback(inlineStyles.Circle, { cx: 80, cy: 80, r: 77, stroke: token, strokeWidth: 6, fill: token1 }), callback(inlineStyles.Circle, { cx: 80, cy: 80, r: 77, stroke: "#53ac66", strokeWidth: 6, fill: "transparent", strokeDasharray: closure_7, strokeDashoffset: closure_7 * (1 - 33.3 * nReferralsSent / 100), strokeLinecap: "round", rotation: -90, origin: "80, 80" })];
   obj1[2] = items1;
   items[1] = closure_5(tmp4Result, obj1);

@@ -1,10 +1,10 @@
-// Module ID: 4912
-// Function ID: 4913
+// Module ID: 5035
+// Function ID: 5036
 // Name: create
-// Dependencies: [5, 1952, 4913, 2]
+// Dependencies: [5, 1953, 5036, 2]
 
-// Module 4912 (create)
-import decodeImageDefault from "decodeImage" /* 1952 */;
+// Module 5035 (create)
+import decodeImageDefault from "decodeImage" /* 1953 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -65,7 +65,7 @@ prototype["hasSrgbIccProfile"] = function hasSrgbIccProfile() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {

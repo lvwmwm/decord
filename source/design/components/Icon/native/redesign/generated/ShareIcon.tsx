@@ -1,14 +1,14 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 12439
+// Function ID: 12440
 // Name: ShareIcon
-// Dependencies: [19, 21, 712, 4099, 12100, 2]
+// Dependencies: [19, 21, 712, 4100, 9241, 2]
 // Exports: ShareIcon
 
-// Module 12099 (ShareIcon)
+// Module 12439 (ShareIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 12100 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 9241 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

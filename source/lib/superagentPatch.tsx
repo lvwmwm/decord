@@ -1,13 +1,13 @@
-// Module ID: 16587
-// Function ID: 16588
+// Module ID: 16619
+// Function ID: 16620
 // Name: isAnalyticsEndpoint
-// Dependencies: [5, 4292, 676, 531, 16588, 1487, 1472, 709, 530, 1218, 706, 1995, 1922, 698, 500, 16589, 17, 666, 16590, 16591, 7, 1208, 16594, 2008, 10517, 15182, 9778, 6817, 16600, 4661, 16601, 1474, 2]
+// Dependencies: [5, 4293, 676, 531, 16620, 1487, 1472, 709, 530, 1218, 706, 1996, 1922, 698, 500, 16621, 17, 666, 16622, 16623, 7, 1208, 16626, 2009, 10534, 15212, 9394, 5340, 16632, 13383, 16633, 1474, 2]
 
-// Module 16587 (isAnalyticsEndpoint)
+// Module 16619 (isAnalyticsEndpoint)
 import reportAll from "report" /* 7 */;
 import _createForOfIteratorHelperDefault from "_createForOfIteratorHelper" /* 531 */;
-import getTimeZoneDefault from "getTimeZone" /* 16590 */;
-import closure_4 from "getHash" /* 4292 */;
+import getTimeZoneDefault from "getTimeZone" /* 16622 */;
+import closure_4 from "getHash" /* 4293 */;
 import { AbortCodes } from "ME" /* 676 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
@@ -66,7 +66,7 @@ ApexExperiment = {
       if (!tmp3) {
         const result = promise.set("Authorization", _default.getToken());
       }
-      tmpResult = tmp(16589);
+      tmpResult = tmp(16621);
       const result1 = tmpResult.updateDynamicSuperProperties();
       const superPropertiesBase64 = _default4.getSuperPropertiesBase64();
       if (null != superPropertiesBase64) {
@@ -119,7 +119,7 @@ ApexExperiment = {
         })(items));
         tmpResult2 = tmp(500);
       }
-      const result6 = promise.set("X-Discord-Locale", callback(1995).default.locale);
+      const result6 = promise.set("X-Discord-Locale", callback(1996).default.locale);
       const tmp19 = getTimeZoneDefault();
       if (null != tmp19) {
         const result7 = promise.set("X-Discord-Timezone", tmp19);
@@ -278,7 +278,7 @@ ApexExperiment = {
         captcha_key = body.captcha_key;
       }
       if (captcha_key) {
-        const items = [callback(2008)(16594, dependencyMap.paths), callback(2008)(10517, dependencyMap.paths)];
+        const items = [callback(2009)(16626, dependencyMap.paths), callback(2009)(10534, dependencyMap.paths)];
         const allPromises = Promise.all(items);
         const nextPromise = Promise.all(items).then((arg0) => {
           const iter = arg0[Symbol.iterator]();
@@ -377,12 +377,12 @@ ApexExperiment = {
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = callback(2008)(15182, dependencyMap.paths);
-          callback(2008)(15182, dependencyMap.paths).then((openMFAModal) => {
+          const promise4 = callback(2009)(15212, dependencyMap.paths);
+          callback(2009)(15212, dependencyMap.paths).then((openMFAModal) => {
             openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
           }).catch(arg2);
           flag = true;
-          const nextPromise2 = callback(2008)(15182, dependencyMap.paths).then((openMFAModal) => {
+          const nextPromise2 = callback(2009)(15212, dependencyMap.paths).then((openMFAModal) => {
             openMFAModal.openMFAModal(statusCode.body.mfa, closure_1, closure_2);
           });
         }
@@ -394,11 +394,11 @@ ApexExperiment = {
       code1 = body4.code;
     }
     if (obj.isLimitedAccessErrorCode(statusCode.statusCode, code1)) {
-      tmp7(2008)(6817, tmp8.paths).then((arg0) => {
+      tmp7(2009)(5340, tmp8.paths).then((arg0) => {
         arg0.default();
       });
       flag = false;
-      const promise3 = tmp7(2008)(6817, tmp8.paths);
+      const promise3 = tmp7(2009)(5340, tmp8.paths);
     } else {
       const body5 = statusCode.body;
       let code2;
@@ -406,7 +406,7 @@ ApexExperiment = {
         code2 = body5.code;
       }
       if (tmp7Result.isLimitedAccessErrorCode(statusCode.statusCode, code2)) {
-        tmp7(2008)(4661, tmp8.paths).then((arg0) => {
+        tmp7(2009)(13383, tmp8.paths).then((arg0) => {
           const body = statusCode.body;
           let guild_id;
           if (body != null) {
@@ -415,7 +415,7 @@ ApexExperiment = {
           arg0.default(guild_id);
         });
         flag = false;
-        const promise2 = tmp7(2008)(4661, tmp8.paths);
+        const promise2 = tmp7(2009)(13383, tmp8.paths);
       } else {
         flag = 403 === statusCode.statusCode;
         if (flag) {
@@ -427,14 +427,14 @@ ApexExperiment = {
           flag = code3 === AbortCodes.RESTRICTED_HOURS_ACTIVE;
         }
         if (flag) {
-          tmp7(2008)(16601, tmp8.paths).then((openRestrictedHoursModal) => {
+          tmp7(2009)(16633, tmp8.paths).then((openRestrictedHoursModal) => {
             const result = openRestrictedHoursModal.openRestrictedHoursModal();
           });
           flag = false;
-          const promise = tmp7(2008)(16601, tmp8.paths);
+          const promise = tmp7(2009)(16633, tmp8.paths);
         }
       }
-      tmp7Result = tmp7(16600);
+      tmp7Result = tmp7(16632);
     }
   }
 };
@@ -456,7 +456,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

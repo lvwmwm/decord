@@ -1,15 +1,15 @@
-// Module ID: 13147
-// Function ID: 13148
+// Module ID: 13286
+// Function ID: 13287
 // Name: start
-// Dependencies: [32, 7528, 4577, 13148, 7534, 4574, 12, 4553, 2]
+// Dependencies: [32, 7346, 4482, 13287, 7352, 4479, 12, 4458, 2]
 
-// Module 13147 (start)
+// Module 13286 (start)
 import applyDefault from "apply" /* 12 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
-import onDefault from "on" /* 4577 */;
-import getSamples from "getSamples" /* 7528 */;
-import getStatsDefault from "getStats" /* 7534 */;
-import _initStatsDefault from "_initStats" /* 13148 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4479 */;
+import onDefault from "on" /* 4482 */;
+import getSamples from "getSamples" /* 7346 */;
+import getStatsDefault from "getStats" /* 7352 */;
+import _initStatsDefault from "_initStats" /* 13287 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;

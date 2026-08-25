@@ -1,12 +1,12 @@
-// Module ID: 5396
-// Function ID: 5397
+// Module ID: 7251
+// Function ID: 7252
 // Name: set
-// Dependencies: [32, 1218, 3, 1972, 1956, 709, 5397, 2]
+// Dependencies: [32, 1218, 3, 1973, 1957, 709, 7252, 2]
 
-// Module 5396 (set)
+// Module 7251 (set)
 import timestampDefault from "timestamp" /* 3 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import databaseNameDefault from "databaseName" /* 1972 */;
+import databaseNameDefault from "databaseName" /* 1973 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import set from "set" /* 2 */;
@@ -72,7 +72,7 @@ prototype["executeModules"] = function executeModules(type, databaseResult) {
   if (null != value) {
     if (0 !== value.length) {
       if (null != databaseResult) {
-        if (stateResult === _require(1956).DatabaseState.Open) {
+        if (stateResult === _require(1957).DatabaseState.Open) {
           let combined = null;
           if (!set.has(type.type)) {
             const _HermesInternal2 = HermesInternal;

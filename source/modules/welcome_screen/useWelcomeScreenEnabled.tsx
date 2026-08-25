@@ -1,16 +1,16 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 12213
+// Function ID: 12214
 // Name: useWelcomeScreenEnabled
-// Dependencies: [1395, 1391, 1910, 1980, 676, 589, 2]
+// Dependencies: [1395, 1391, 1910, 1981, 676, 589, 2]
 // Exports: default
 
-// Module 11877 (useWelcomeScreenEnabled)
+// Module 12213 (useWelcomeScreenEnabled)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "handleConnectionOpen" /* 1981 */;
 
 const isGuildTextChannelType = createChannelRecord.isGuildTextChannelType;
 const GuildFeatures = ME.GuildFeatures;

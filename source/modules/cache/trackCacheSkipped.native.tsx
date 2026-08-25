@@ -1,14 +1,14 @@
-// Module ID: 5418
-// Function ID: 5419
+// Module ID: 7271
+// Function ID: 7272
 // Name: trackCacheSkipped
-// Dependencies: [676, 698, 5071, 2]
+// Dependencies: [676, 698, 7081, 2]
 // Exports: default
 
-// Module 5418 (trackCacheSkipped)
+// Module 7271 (trackCacheSkipped)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import getDeviceMetadata from "getDeviceMetadata" /* 5071 */;
+import getDeviceMetadata from "getDeviceMetadata" /* 7081 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/cache/trackCacheSkipped.native.tsx");

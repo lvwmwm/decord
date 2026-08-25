@@ -1,13 +1,13 @@
-// Module ID: 16758
-// Function ID: 16759
+// Module ID: 16790
+// Function ID: 16791
 // Name: RedesignSkipAvatarUploadAlertModal
-// Dependencies: [19, 21, 4667, 1236, 4667, 2]
+// Dependencies: [19, 21, 4750, 1236, 4750, 2]
 // Exports: default
 
-// Module 16758 (RedesignSkipAvatarUploadAlertModal)
+// Module 16790 (RedesignSkipAvatarUploadAlertModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4750 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

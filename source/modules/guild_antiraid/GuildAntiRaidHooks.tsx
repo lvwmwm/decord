@@ -1,21 +1,21 @@
-// Module ID: 10072
-// Function ID: 10073
+// Module ID: 9928
+// Function ID: 9929
 // Name: getFirstGuildIncidentId
-// Dependencies: [1340, 1910, 4024, 4201, 1922, 10053, 8275, 676, 647, 11, 8274, 506, 4029, 10073, 2]
+// Dependencies: [1340, 1910, 4025, 4202, 1922, 9908, 8276, 676, 647, 11, 8275, 506, 4030, 9929, 2]
 // Exports: getDisabledActions, shouldShowRaidInAppNotification, shouldShowRaidNotificationNagbar, useDisabledActions, useFirstGuildIncidentId, useGuildIncidentsState, useShowAntiRaidInGuildNotifSettings
 
-// Module 10072 (getFirstGuildIncidentId)
+// Module 9928 (getFirstGuildIncidentId)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import fromStringAll from "fromString" /* 506 */;
-import applyOverwritesAll from "applyOverwrites" /* 4029 */;
-import DATE_CONFIG from "DATE_CONFIG" /* 8274 */;
+import applyOverwritesAll from "applyOverwrites" /* 4030 */;
+import DATE_CONFIG from "DATE_CONFIG" /* 8275 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_7 from "handleConnectionOpen" /* 4201 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_7 from "handleConnectionOpen" /* 4202 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import closure_9 from "computeAlertSettings" /* 10053 */;
-import { IncidentAlertModeratorPermissions as closure_10 } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8275 */;
+import closure_9 from "computeAlertSettings" /* 9908 */;
+import { IncidentAlertModeratorPermissions as closure_10 } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8276 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -41,7 +41,7 @@ function getFirstGuildIncidentId(guildId) {
         let tmp22 = tmp17;
         if (obj7.hasDetectedActivity(tmp18)) {
           let tmp8 = tmp20;
-          let tmp19Result = tmp19(8274);
+          let tmp19Result = tmp19(8275);
           let tmp9 = tmp17;
           if (!tmp19Result.isUnderLockdown(tmp18)) {
             let tmp11 = importAll;
@@ -63,7 +63,7 @@ function getFirstGuildIncidentId(guildId) {
           }
         } else {
           let tmp6 = tmp20;
-          tmp19Result = tmp19(8274);
+          tmp19Result = tmp19(8275);
           let tmp7 = tmp17;
         }
       }
@@ -100,7 +100,7 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         let tmp20 = dependencyMap;
         let tmp17 = stateFromStores1;
         let tmp18 = stateFromStores1;
-        let obj8 = stateFromStores1(8274);
+        let obj8 = stateFromStores1(8275);
         let tmp21 = tmp15;
         if (obj8.hasDetectedActivity(tmp16)) {
           let tmp9 = importAll;
@@ -120,7 +120,7 @@ export const useFirstGuildIncidentId = function useFirstGuildIncidentId() {
         } else {
           let tmp6 = tmp17;
           let tmp7 = tmp19;
-          let tmp18Result = tmp18(8274);
+          let tmp18Result = tmp18(8275);
           let tmp8 = tmp15;
         }
       }
@@ -158,8 +158,8 @@ export const useGuildIncidentsState = function useGuildIncidentsState(id) {
   obj = { shouldShowIncidentActions: stateFromStores, incidentData: stateFromStores1, isUnderLockdown: null };
   let isUnderLockdownResult = null != stateFromStores1;
   if (isUnderLockdownResult) {
-    isUnderLockdownResult = _require(8274).isUnderLockdown(stateFromStores1);
-    const tmpResult = _require(8274);
+    isUnderLockdownResult = _require(8275).isUnderLockdown(stateFromStores1);
+    const tmpResult = _require(8275);
   }
   obj[2] = isUnderLockdownResult;
   return obj;

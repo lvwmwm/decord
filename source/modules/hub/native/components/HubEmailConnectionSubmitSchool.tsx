@@ -1,26 +1,26 @@
-// Module ID: 11963
-// Function ID: 11964
+// Module ID: 12292
+// Function ID: 12293
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 11946, 676, 21, 4668, 712, 1500, 5446, 11959, 4277, 11954, 1297, 1236, 4739, 8614, 4750, 2]
+// Dependencies: [5, 32, 19, 17, 12275, 676, 21, 4380, 712, 1500, 5475, 12288, 4278, 12283, 1297, 1236, 4376, 8622, 4815, 2]
 // Exports: default
 
-// Module 11963 (HubEmailConnectionSubmitSchool)
+// Module 12292 (HubEmailConnectionSubmitSchool)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import useNavigation from "useNavigation" /* 1500 */;
-import Text from "Text" /* 4739 */;
-import Button2 from "Button" /* 4750 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5446 */;
-import _modDef8614 from "module_8614" /* 8614 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 11954 */;
+import Text from "Text" /* 4376 */;
+import Button2 from "Button" /* 4815 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5475 */;
+import _modDef8622 from "module_8622" /* 8622 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12283 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 11946 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12275 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 ({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -61,7 +61,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -196,7 +196,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       }
     }, 100);
   };
-  items1[2] = callback2(_modDef8614, obj4);
+  items1[2] = callback2(_modDef8622, obj4);
   obj1[1] = items1;
   const items2 = [closure_10(first, obj1), callback2(first, { style: tmp.redesignGrowSpacing }), ];
   const obj7 = { style: tmp.redesignSubmit, children: null };

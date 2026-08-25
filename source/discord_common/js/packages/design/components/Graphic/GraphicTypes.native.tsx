@@ -1,10 +1,10 @@
-// Module ID: 4197
-// Function ID: 4198
+// Module ID: 4198
+// Function ID: 4199
 // Name: isImage
 // Dependencies: [2]
 // Exports: isImage, isRive
 
-// Module 4197 (isImage)
+// Module 4198 (isImage)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/components/Graphic/GraphicTypes.native.tsx");

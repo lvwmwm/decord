@@ -1,14 +1,14 @@
-// Module ID: 6171
-// Function ID: 6172
+// Module ID: 6859
+// Function ID: 6860
 // Name: ServerIconTheCrewExample
-// Dependencies: [21, 5454, 6172, 2]
+// Dependencies: [21, 5374, 6860, 2]
 // Exports: ServerIconTheCrewExample
 
-// Module 6171 (ServerIconTheCrewExample)
+// Module 6859 (ServerIconTheCrewExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 6172 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6860 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconTheCrewExample.native.tsx");

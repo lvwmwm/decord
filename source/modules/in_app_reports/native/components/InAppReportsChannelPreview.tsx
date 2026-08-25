@@ -1,17 +1,17 @@
-// Module ID: 12859
-// Function ID: 12860
+// Module ID: 12846
+// Function ID: 12847
 // Name: ChannelPreview
-// Dependencies: [19, 17, 1910, 21, 4668, 712, 589, 4227, 4739, 1236, 7226, 2]
+// Dependencies: [19, 17, 1910, 21, 4380, 712, 589, 4228, 4376, 1236, 5885, 2]
 // Exports: default
 
-// Module 12859 (ChannelPreview)
+// Module 12846 (ChannelPreview)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -38,35 +38,35 @@ export default function ChannelPreview(stageInstance) {
     if (null != stageInstance) {
       obj = { style: null, children: null };
       obj[0] = tmp.container;
-      const tmp2Result = tmp2(4227);
+      const tmp2Result = tmp2(4228);
       obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
       obj[0] = tmp.title;
       const intl = tmp2(1236).intl;
       obj[3] = intl.string(tmp2(1236).t.InbJ8x);
-      const items1 = [callback(tmp2(4739).Text, obj), ];
+      const items1 = [callback(tmp2(4376).Text, obj), ];
       obj1 = { style: null, children: null };
       const items2 = [tmp.itemContainer, ];
       const obj2 = { borderColor: null };
-      obj2[0] = tmp2(4227).hexWithOpacity(tmp.borderColor.color, 0.08);
+      obj2[0] = tmp2(4228).hexWithOpacity(tmp.borderColor.color, 0.08);
       items2[1] = obj2;
       obj1[0] = items2;
       const obj3 = { style: null, children: null };
       obj3[0] = tmp.guildInfo;
       const obj4 = { guild: null, size: null, selected: false };
       obj4[0] = stateFromStores;
-      const hexWithOpacityResult = tmp2(4227).hexWithOpacity(tmp.borderColor.color, 0.08);
-      obj4[1] = tmp2(7226).GuildIconSizes.XXSMALL;
+      const hexWithOpacityResult = tmp2(4228).hexWithOpacity(tmp.borderColor.color, 0.08);
+      obj4[1] = tmp2(5885).GuildIconSizes.XXSMALL;
       const items3 = [callback(GuildIconSizesDefault, obj4), ];
       const obj5 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
       obj5[0] = tmp.guildName;
       obj5[3] = stateFromStores.name;
-      items3[1] = callback(tmp2(4739).Text, obj5);
+      items3[1] = callback(tmp2(4376).Text, obj5);
       obj3[1] = items3;
       const items4 = [callback2(View, obj3), ];
       const obj6 = { style: null, variant: "text-md/bold", color: "mobile-text-heading-primary", children: null };
       obj6[0] = tmp.topic;
       obj6[3] = stageInstance.topic;
-      items4[1] = callback(tmp2(4739).Text, obj6);
+      items4[1] = callback(tmp2(4376).Text, obj6);
       obj1[1] = items4;
       items1[1] = callback2(View, obj1);
       obj[1] = items1;

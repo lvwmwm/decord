@@ -1,14 +1,14 @@
-// Module ID: 5705
-// Function ID: 5706
+// Module ID: 6391
+// Function ID: 6392
 // Name: EmojiWumpThinkExample
-// Dependencies: [21, 5454, 5706, 2]
+// Dependencies: [21, 5374, 6392, 2]
 // Exports: EmojiWumpThinkExample
 
-// Module 5705 (EmojiWumpThinkExample)
+// Module 6391 (EmojiWumpThinkExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5706 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6392 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiWumpThinkExample.native.tsx");

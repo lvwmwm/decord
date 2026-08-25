@@ -1,13 +1,13 @@
-// Module ID: 16754
-// Function ID: 16755
+// Module ID: 16786
+// Function ID: 16787
 // Name: prototype
-// Dependencies: [11899, 4498, 5043, 8955, 16755, 5265, 16757, 2008, 16756, 500, 4233, 2]
+// Dependencies: [12233, 5451, 5367, 9212, 16787, 4611, 16789, 2009, 16788, 500, 4234, 2]
 
-// Module 16754 (prototype)
+// Module 16786 (prototype)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 5043 */;
-import ContactSyncModes from "ContactSyncModes" /* 11899 */;
-import closure_5 from "initialize" /* 4498 */;
+import initializeDefault from "initialize" /* 5367 */;
+import ContactSyncModes from "ContactSyncModes" /* 12233 */;
+import closure_5 from "initialize" /* 5451 */;
 
 ({ initialize: c3, ContactSyncModes: c4 } = ContactSyncModes);
 initializeDefault;

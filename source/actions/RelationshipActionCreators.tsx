@@ -1,20 +1,20 @@
-// Module ID: 9775
-// Function ID: 9776
+// Module ID: 9391
+// Function ID: 9392
 // Name: handleRelationshipAddError
-// Dependencies: [32, 1922, 676, 9776, 6949, 4832, 6817, 1236, 9777, 9778, 9779, 530, 4223, 1363, 709, 9780, 6584, 2]
+// Dependencies: [32, 1922, 676, 9392, 5445, 4744, 5340, 1236, 9393, 9394, 9395, 530, 4224, 1363, 709, 9396, 7929, 2]
 
-// Module 9775 (handleRelationshipAddError)
+// Module 9391 (handleRelationshipAddError)
 import sendRequest from "sendRequest" /* 530 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import setDefault from "set" /* 4832 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6817 */;
-import openContextMenu from "openContextMenu" /* 6949 */;
-import isLimitedAccessErrorCode from "isLimitedAccessErrorCode" /* 9778 */;
-import openClearAllIncomingRequestsConfirmationModalDefault from "openClearAllIncomingRequestsConfirmationModal" /* 9780 */;
+import setDefault from "set" /* 4744 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 5340 */;
+import openContextMenu from "openContextMenu" /* 5445 */;
+import isLimitedAccessErrorCode from "isLimitedAccessErrorCode" /* 9394 */;
+import openClearAllIncomingRequestsConfirmationModalDefault from "openClearAllIncomingRequestsConfirmationModal" /* 9396 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { ClearFriendRequestFilters } from "ClearFriendRequestFilters" /* 9776 */;
+import { ClearFriendRequestFilters } from "ClearFriendRequestFilters" /* 9392 */;
 
 require = arg1;
 function handleRelationshipAddError(arg0, arg1, substr) {
@@ -65,7 +65,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
         if (num !== tmp2.RELATIONSHIP_INVALID_NO_CONFIRMATION) {
           if (arg1 === obj.SHOW_ALWAYS) {
             if (null != substr) {
-              let tmp18Result = tmp18(9779);
+              let tmp18Result = tmp18(9395);
               if (!num) {
                 num = 0;
               }
@@ -80,7 +80,7 @@ function handleRelationshipAddError(arg0, arg1, substr) {
             obj1[1] = humanizeAbortCodeResult;
             const intl3 = tmp18(1236).intl;
             obj1[2] = intl3.string(tmp18(1236).t.BddRzS);
-            tmp18Result = tmp18(6949);
+            tmp18Result = tmp18(5445);
             tmp18Result.closeContextMenu();
             setDefault.show(obj1);
             const obj4 = setDefault;
@@ -264,7 +264,7 @@ obj = {
       obj = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId: callback, timestamp: Date.now() };
       channelId(closure_1_3[14]).dispatch(obj);
     }).catch(() => {
-      channelId(6584).showFailedToast();
+      channelId(7929).showFailedToast();
       const AccessibilityAnnouncer = callback(1363).AccessibilityAnnouncer;
       const intl = callback(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(callback(1236).t.n6Jo3E));
@@ -285,7 +285,7 @@ obj = {
       const intl = id(closure_1_3[7]).intl;
       AccessibilityAnnouncer.announce(intl.string(id(closure_1_3[7]).t.QlH5w6));
     }).catch(() => {
-      id2(6584).showFailedToast();
+      id2(7929).showFailedToast();
       const AccessibilityAnnouncer = id(1363).AccessibilityAnnouncer;
       const intl = id(1236).intl;
       AccessibilityAnnouncer.announce(intl.string(id(1236).t.n6Jo3E));

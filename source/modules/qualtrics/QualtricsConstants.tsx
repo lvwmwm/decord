@@ -1,9 +1,9 @@
-// Module ID: 9917
-// Function ID: 9918
+// Module ID: 4604
+// Function ID: 4605
 // Name: QuestionTypeEnum
 // Dependencies: [2]
 
-// Module 9917 (QuestionTypeEnum)
+// Module 4604 (QuestionTypeEnum)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/qualtrics/QualtricsConstants.tsx");

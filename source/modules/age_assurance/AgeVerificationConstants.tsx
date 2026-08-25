@@ -1,13 +1,13 @@
-// Module ID: 5432
-// Function ID: 5433
+// Module ID: 7943
+// Function ID: 7944
 // Name: set
-// Dependencies: [676, 5259, 1236, 5433, 1994, 2854, 2]
+// Dependencies: [676, 7944, 1236, 7942, 1995, 2855, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 5432 (set)
+// Module 7943 (set)
 import ME from "ME" /* 676 */;
-import messagesProxyDefault from "messagesProxy" /* 2854 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 5259 */;
+import messagesProxyDefault from "messagesProxy" /* 2855 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 7944 */;
 import set from "set" /* 2 */;
 
 const HelpdeskArticles = ME.HelpdeskArticles;
@@ -56,6 +56,7 @@ export const TRUSTED_PROVIDERS_URL = "https://discord.com/safety/age-assurance-o
 export const AGE_VERIFICATION_MODAL_KEY = "AGE_VERIFICATION_MODAL_KEY";
 export const AGE_VERIFICATION_GET_STARTED_MODAL_KEY = "AGE_VERIFICATION_GET_STARTED_MODAL_KEY";
 export const AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY = "AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY";
+export const MANUAL_REVIEW_PENDING_ALERT_KEY = "MANUAL_REVIEW_PENDING_ALERT_KEY";
 export const VerificationVendorName = { K_ID: "K_ID", GOOGLE_WALLET: "GOOGLE_WALLET", INCODE: "INCODE" };
 export const VerificationMethod = obj;
 export const VERIFICATION_METHOD_TITLE_MAP = obj;

@@ -1,11 +1,11 @@
-// Module ID: 16953
-// Function ID: 16954
+// Module ID: 16985
+// Function ID: 16986
 // Name: importDefaultResult1
-// Dependencies: [5, 16954, 676, 589, 530, 709, 2]
+// Dependencies: [5, 16986, 676, 589, 530, 709, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 16953 (importDefaultResult1)
-import importDefaultResult1 from "hasLoaded" /* 16954 */;
+// Module 16985 (importDefaultResult1)
+import importDefaultResult1 from "hasLoaded" /* 16986 */;
 import { Endpoints } from "ME" /* 676 */;
 import initialize from "initialize" /* 589 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
@@ -49,7 +49,7 @@ let closure_3 = importDefaultResult((arg0) => {
         obj[0] = body;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

@@ -1,14 +1,14 @@
-// Module ID: 5537
-// Function ID: 5538
+// Module ID: 6219
+// Function ID: 6220
 // Name: AvatarWumpusExample
-// Dependencies: [21, 5454, 5538, 2]
+// Dependencies: [21, 5374, 6220, 2]
 // Exports: AvatarWumpusExample
 
-// Module 5537 (AvatarWumpusExample)
+// Module 6219 (AvatarWumpusExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5538 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6220 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarWumpusExample.native.tsx");

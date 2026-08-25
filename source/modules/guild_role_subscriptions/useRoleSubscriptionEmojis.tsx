@@ -1,12 +1,12 @@
-// Module ID: 17064
-// Function ID: 17065
+// Module ID: 17096
+// Function ID: 17097
 // Name: items
-// Dependencies: [19, 6764, 589, 6769, 2]
+// Dependencies: [19, 5282, 589, 5287, 2]
 // Exports: default
 
-// Module 17064 (items)
+// Module 17096 (items)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "getEmojiToGroupId" /* 6764 */;
+import closure_3 from "getEmojiToGroupId" /* 5282 */;
 
 const require = arg1;
 let items = [];

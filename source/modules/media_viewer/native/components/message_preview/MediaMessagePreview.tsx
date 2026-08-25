@@ -1,23 +1,23 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12456
+// Function ID: 12457
 // Name: MeasureMessage
-// Dependencies: [32, 19, 17, 7277, 4976, 1391, 4999, 9103, 676, 21, 8196, 8379, 4668, 9050, 10105, 712, 589, 10556, 1236, 11, 12119, 10778, 10493, 7549, 10820, 6408, 11112, 10841, 4773, 2]
+// Dependencies: [32, 19, 17, 6002, 6006, 1391, 4623, 9069, 676, 21, 8192, 8385, 4380, 9012, 8736, 712, 589, 10352, 1236, 11, 12457, 11107, 8757, 7367, 11144, 5533, 11454, 11165, 4391, 2]
 // Exports: default
 
-// Module 12118 (MeasureMessage)
+// Module 12456 (MeasureMessage)
 import ThemesDefault from "Themes" /* 712 */;
-import setOptionsDefault from "setOptions" /* 8196 */;
+import setOptionsDefault from "setOptions" /* 8192 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleLoadThreadsSuccess" /* 7277 */;
-import closure_8 from "handleReaction" /* 4976 */;
+import closure_7 from "handleLoadThreadsSuccess" /* 6002 */;
+import closure_8 from "handleReaction" /* 6006 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "reinjectEphemerals" /* 4999 */;
-import closure_11 from "messages" /* 9103 */;
+import closure_10 from "reinjectEphemerals" /* 4623 */;
+import closure_11 from "messages" /* 9069 */;
 import { ThemeTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function MeasureMessage(message) {
@@ -308,7 +308,7 @@ export default function MediaMessagePreview(channelId) {
           }
         }
         obj = channelId(onClose[27]);
-        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "absolute", message: null, messageChannel: "call", selectedChannelId: "right", tapLinkData: 1056813503384888500000000000000000000000000000000000000000000000000000000000000000000000 };
+        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "EMBEDDED_ACTIVITY_DEFERRED_OPEN", message: null, messageChannel: null, selectedChannelId: null, tapLinkData: null };
         obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
           channel = channel.getChannel(arg1);
           if (null != channel) {

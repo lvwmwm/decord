@@ -1,20 +1,20 @@
-// Module ID: 10607
-// Function ID: 10608
+// Module ID: 10405
+// Function ID: 10406
 // Name: ChatViewStickyHeaderAccountSafetyWarnings
-// Dependencies: [32, 19, 10608, 21, 10609, 10614, 10618, 10619, 10632, 10639, 10663, 10665, 10669, 10672, 2]
+// Dependencies: [32, 19, 10406, 21, 10407, 10412, 10416, 10417, 10432, 10438, 10462, 10464, 10468, 10471, 2]
 
-// Module 10607 (ChatViewStickyHeaderAccountSafetyWarnings)
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10609 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10614 */;
-import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10618 */;
-import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10619 */;
-import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10632 */;
-import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10639 */;
-import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10663 */;
-import OptInChannelBannerDefault from "OptInChannelBanner" /* 10672 */;
+// Module 10405 (ChatViewStickyHeaderAccountSafetyWarnings)
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 10407 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10412 */;
+import useLikelyAtoWarning from "useLikelyAtoWarning" /* 10416 */;
+import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 10417 */;
+import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 10432 */;
+import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 10438 */;
+import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 10462 */;
+import OptInChannelBannerDefault from "OptInChannelBanner" /* 10471 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import { LOCATION_CONTEXT_MOBILE } from "LOCATION_CONTEXT_MOBILE" /* 10608 */;
+import { LOCATION_CONTEXT_MOBILE } from "LOCATION_CONTEXT_MOBILE" /* 10406 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -70,7 +70,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((handleScroll
     if (tmp[0]) {
       let obj = { channel: null };
       obj[0] = channel;
-      tmp8 = callback2(tmp2(10665), obj);
+      tmp8 = callback2(tmp2(10464), obj);
     }
   }
   const items = [tmp8, , , ];
@@ -87,7 +87,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((handleScroll
     obj = { channel: null, clearUnreadsNotice: null };
     obj[0] = channel;
     obj[1] = clearUnreadsNotice;
-    tmp13 = callback2(tmp2(10669), obj);
+    tmp13 = callback2(tmp2(10468), obj);
   }
   obj1 = { children: null };
   items[2] = tmp13;

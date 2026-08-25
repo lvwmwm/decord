@@ -1,19 +1,19 @@
-// Module ID: 14174
-// Function ID: 14175
+// Module ID: 14204
+// Function ID: 14205
 // Name: AutomatedUnderageAppealStatus
-// Dependencies: [19, 17, 11100, 5443, 676, 21, 1236, 4739, 5261, 1297, 589, 4668, 712, 14175, 11134, 11107, 14176, 4766, 11106, 698, 5011, 5016, 4346, 14177, 2008, 14178, 14180, 2]
+// Dependencies: [19, 17, 11442, 7950, 676, 21, 1236, 4376, 5933, 1297, 589, 4380, 712, 14205, 11476, 11449, 14206, 4831, 11448, 698, 7208, 7213, 4347, 14207, 2009, 14208, 14210, 2]
 // Exports: default
 
-// Module 14174 (AutomatedUnderageAppealStatus)
+// Module 14204 (AutomatedUnderageAppealStatus)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11100 */;
-import { AgeCheckStatus } from "SafetyHubView" /* 5443 */;
+import closure_8 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11442 */;
+import { AgeCheckStatus } from "SafetyHubView" /* 7950 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function AutomatedUnderageAppealStatus() {

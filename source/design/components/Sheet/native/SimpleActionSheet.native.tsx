@@ -1,12 +1,12 @@
-// Module ID: 7212
-// Function ID: 7213
+// Module ID: 5869
+// Function ID: 5870
 // Name: SimpleActionSheet
-// Dependencies: [19, 21, 7213, 6987, 7214, 7215, 2]
+// Dependencies: [19, 21, 5870, 5502, 5871, 5872, 2]
 
-// Module 7212 (SimpleActionSheet)
+// Module 5869 (SimpleActionSheet)
 import noopAll from "noop" /* 19 */;
-import ActionSheet from "ActionSheet" /* 7213 */;
-import ActionSheetRowIcon from "ActionSheetRowIcon" /* 7215 */;
+import ActionSheet from "ActionSheet" /* 5870 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5872 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

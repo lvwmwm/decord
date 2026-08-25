@@ -1,19 +1,19 @@
-// Module ID: 16177
-// Function ID: 16178
+// Module ID: 16209
+// Function ID: 16210
 // Name: UnmuteOptions
-// Dependencies: [19, 17, 1391, 1910, 4033, 1922, 676, 21, 4668, 712, 7550, 6835, 6832, 10123, 6322, 1297, 10125, 4739, 1236, 4989, 10126, 1500, 10552, 10122, 1501, 647, 8531, 1629, 2]
+// Dependencies: [19, 17, 1391, 1910, 4034, 1922, 676, 21, 4380, 712, 7368, 5368, 5363, 9975, 5480, 1297, 9977, 4376, 1236, 4574, 9978, 1500, 10348, 9974, 1501, 647, 8539, 1629, 2]
 
-// Module 16177 (UnmuteOptions)
+// Module 16209 (UnmuteOptions)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_7 from "markAllUserIdListsStale" /* 4034 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import { ChannelSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function UnmuteOptions(channel) {
@@ -28,7 +28,7 @@ function UnmuteOptions(channel) {
     channel(closure_1_2[13]).handleUnmutePress(channel.id, channel.guild_id);
   }, items);
   obj = { icon: null, label: null, onPress: null, start: true, end: true };
-  obj = { disableColor: true, source: navigation(10125) };
+  obj = { disableColor: true, source: navigation(9977) };
   obj[0] = callback(channel(1297).Icon, obj);
   obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = channel(1236).intl;
@@ -37,15 +37,15 @@ function UnmuteOptions(channel) {
   const tmp3 = closure_11;
   const tmp4 = View;
   const tmp5 = callback;
-  obj2[0] = channel(4989).computeChannelName(channel, closure_8, closure_7, true);
+  obj2[0] = channel(4574).computeChannelName(channel, closure_8, closure_7, true);
   obj1[2] = intl.format(channel(1236).t["eC+9rj"], obj2);
-  obj[1] = callback(channel(4739).Text, obj1);
+  obj[1] = callback(channel(4376).Text, obj1);
   obj[2] = callback;
-  const items1 = [callback(channel(6322).TableRow, obj), ];
+  const items1 = [callback(channel(5480).TableRow, obj), ];
   const obj3 = { muteConfig: channel.muteConfig, type: null };
-  const obj6 = channel(4989);
-  const tmp6 = navigation(10126);
-  const MuteSettingType = channel(10126).MuteSettingType;
+  const obj6 = channel(4574);
+  const tmp6 = navigation(9978);
+  const MuteSettingType = channel(9978).MuteSettingType;
   obj3[1] = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
   items1[1] = tmp5(tmp6, obj3);
   obj[1] = items1;

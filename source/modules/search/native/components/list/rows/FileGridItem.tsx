@@ -1,14 +1,14 @@
-// Module ID: 15998
-// Function ID: 15999
-// Dependencies: [19, 17, 1391, 8546, 21, 4668, 4816, 6920, 8037, 10115, 589, 8467, 15986, 15988, 4839, 2]
+// Module ID: 16030
+// Function ID: 16031
+// Dependencies: [19, 17, 1391, 8554, 21, 4380, 4571, 4917, 7859, 9967, 589, 8474, 16018, 16020, 4959, 2]
 
-// Module 15998
+// Module 16030
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8554 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;

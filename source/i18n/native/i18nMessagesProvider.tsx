@@ -1,12 +1,12 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 17245
+// Function ID: 17246
 // Name: i18nManager
-// Dependencies: [17, 500, 17214, 1274, 1236, 2]
+// Dependencies: [17, 500, 17246, 1274, 1236, 2]
 // Exports: default
 
-// Module 17213 (i18nManager)
+// Module 17245 (i18nManager)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 17214 */;
+import enforcingDefault from "enforcing" /* 17246 */;
 import set from "set" /* 500 */;
 
 if (set.isAndroid()) {

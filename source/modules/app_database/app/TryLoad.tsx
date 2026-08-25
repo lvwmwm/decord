@@ -1,10 +1,10 @@
-// Module ID: 1975
-// Function ID: 1976
+// Module ID: 1976
+// Function ID: 1977
 // Name: _tryLoadAsync
 // Dependencies: [5, 3, 709, 2]
 // Exports: tryLoad, tryLoadAsync, tryLoadOrResetCacheGateway, tryLoadOrResetCacheGatewayAsync
 
-// Module 1975 (_tryLoadAsync)
+// Module 1976 (_tryLoadAsync)
 import timestampDefault from "timestamp" /* 3 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
@@ -28,7 +28,7 @@ function _tryLoadAsync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -116,7 +116,7 @@ function _tryLoadOrResetCacheGatewayAsync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

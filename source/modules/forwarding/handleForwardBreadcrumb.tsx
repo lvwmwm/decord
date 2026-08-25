@@ -1,10 +1,10 @@
-// Module ID: 11156
-// Function ID: 11157
+// Module ID: 11499
+// Function ID: 11500
 // Name: _handleForwardBreadcrumb
-// Dependencies: [5, 1391, 1910, 676, 7339, 6815, 698, 7249, 2]
+// Dependencies: [5, 1391, 1910, 676, 6065, 5338, 698, 5972, 2]
 // Exports: default
 
-// Module 11156 (_handleForwardBreadcrumb)
+// Module 11499 (_handleForwardBreadcrumb)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
@@ -30,7 +30,7 @@ function _handleForwardBreadcrumb() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ function _handleForwardBreadcrumb() {
                 }
               }
               guild = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (1 === tmp7) {
             message_id = 0;

@@ -1,9 +1,9 @@
-// Module ID: 5560
-// Function ID: 5561
+// Module ID: 6244
+// Function ID: 6245
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5560 (metadata)
+// Module 6244 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BountiesPosterIllocon-2x.png.js");

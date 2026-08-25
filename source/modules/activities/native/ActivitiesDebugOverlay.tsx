@@ -1,20 +1,20 @@
-// Module ID: 16458
-// Function ID: 16459
+// Module ID: 16490
+// Function ID: 16491
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4668, 4227, 712, 8800, 1629, 4739, 2]
+// Dependencies: [19, 17, 21, 4380, 4228, 712, 11063, 1629, 4376, 2]
 // Exports: default
 
-// Module 16458 (ActivitiesDebugOverlay)
+// Module 16490 (ActivitiesDebugOverlay)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import Text from "Text" /* 4739 */;
-import useThermalState from "useThermalState" /* 8800 */;
-import useThermalStateDefault from "useThermalState" /* 8800 */;
+import Text from "Text" /* 4376 */;
+import useThermalState from "useThermalState" /* 11063 */;
+import useThermalStateDefault from "useThermalState" /* 11063 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import hexToRgba from "hexToRgba" /* 4227 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import hexToRgba from "hexToRgba" /* 4228 */;
 
 require = arg1;
 noopAll;
@@ -35,14 +35,14 @@ export default function ActivitiesDebugOverlay() {
   if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(8800).ThermalStates.NOMINAL !== tmp4) {
+    if (tmp5(11063).ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(8800).ThermalStates.FAIR !== tmp4) {
+      if (tmp5(11063).ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(8800).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(8800).ThermalStates.CRITICAL === tmp4) {
+        if (tmp5(11063).ThermalStates.SERIOUS !== tmp4) {
+          if (tmp5(11063).ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }

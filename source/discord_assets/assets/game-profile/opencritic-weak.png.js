@@ -1,9 +1,9 @@
-// Module ID: 9180
-// Function ID: 9181
+// Module ID: 9472
+// Function ID: 9473
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9180 (metadata)
+// Module 9472 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-weak.png.js");

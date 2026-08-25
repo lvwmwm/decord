@@ -1,14 +1,14 @@
-// Module ID: 10727
-// Function ID: 10728
+// Module ID: 10563
+// Function ID: 10564
 // Name: set
-// Dependencies: [5, 19, 7491, 9543, 676, 21, 514, 9539, 7489, 7507, 7519, 7518, 500, 7469, 9541, 10516, 9540, 9544, 7497, 7508, 7524, 5011, 5016, 10726, 589, 4766, 2]
+// Dependencies: [5, 19, 7305, 9668, 676, 21, 514, 9664, 7303, 7321, 7333, 7332, 500, 7282, 9666, 10533, 9665, 9669, 7311, 7322, 7338, 7208, 7213, 10562, 589, 4831, 2]
 // Exports: QuestContentImpressionTracker
 
-// Module 10727 (set)
+// Module 10563 (set)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "initializeState" /* 7491 */;
-import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9543 */;
+import closure_5 from "initializeState" /* 7305 */;
+import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9668 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 2 */;
@@ -63,7 +63,7 @@ class QuestContentImpression {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -83,11 +83,11 @@ class QuestContentImpression {
               closure_0 = undefined;
               obj3 = undefined;
               obj4 = undefined;
-              const obj10 = closure_1_0(7519);
+              const obj10 = closure_1_0(7333);
               obj4 = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = obj10.getAdUser(closure_1_0(7518).getQuestContentName(closure_1_0.questContent));
+              obj1[0] = obj10.getAdUser(closure_1_0(7332).getQuestContentName(closure_1_0.questContent));
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -125,8 +125,8 @@ class QuestContentImpression {
               }
             }
             obj4[4] = advertisingId1;
-            let merged = Object.assign(closure_1_1(7469)());
-            obj2 = closure_1_0(9541);
+            let merged = Object.assign(closure_1_1(7282)());
+            obj2 = closure_1_0(9666);
             let merged1 = Object.assign(obj2.getBrandSafetyContext(closure_1_0.questContent));
             const adContentIds = closure_1_0.entity.adContentIds;
             const item = adContentIds.forEach((adCreativeId) => {
@@ -261,7 +261,7 @@ class QuestContentImpression {
               onImpressionCallback();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp34) {
           c3 = tmp;

@@ -1,12 +1,12 @@
-// Module ID: 7248
-// Function ID: 7249
+// Module ID: 5971
+// Function ID: 5972
 // Name: _signOrder
-// Dependencies: [5, 676, 3, 4064, 530, 4057, 2]
+// Dependencies: [5, 676, 3, 4065, 530, 4058, 2]
 // Exports: fetchOrderEntitlements, getOrder, signOrder
 
-// Module 7248 (_signOrder)
+// Module 5971 (_signOrder)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 4064 */;
+import setDefault from "set" /* 4065 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -30,7 +30,7 @@ function _signOrder() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -176,7 +176,7 @@ function _getOrder() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -279,7 +279,7 @@ function _fetchOrderEntitlements() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

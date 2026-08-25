@@ -1,9 +1,9 @@
-// Module ID: 5405
-// Function ID: 5406
+// Module ID: 5328
+// Function ID: 5329
 // Name: getAsync
-// Dependencies: [5, 3, 1955, 2]
+// Dependencies: [5, 3, 1956, 2]
 
-// Module 5405 (getAsync)
+// Module 5328 (getAsync)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import set from "set" /* 2 */;
@@ -56,8 +56,8 @@ prototype["getAsync"] = function getAsync(arg0) {
 prototype["handleConnectionOpen"] = function handleConnectionOpen(unavailableGuilds, database) {
   const self = this;
   const items = [...unavailableGuilds.unavailableGuilds];
-  const obj = set(1955);
-  set(1955).stickersTransaction(database).deleteAllExcept(items);
+  const obj = set(1956);
+  set(1956).stickersTransaction(database).deleteAllExcept(items);
   for (const item10027 of tmp2) {
     let handleOneGuildCreateResult = self.handleOneGuildCreate(item10027, arg1);
     continue;
@@ -111,17 +111,17 @@ prototype["resetInMemoryState"] = function resetInMemoryState() {
 
 };
 prototype["replace"] = function replace(arg0, arg1, database) {
-  const obj = set(1955);
-  const replaced = set(1955).stickersTransaction(database).replaceAll(arg0, arg1);
+  const obj = set(1956);
+  const replaced = set(1956).stickersTransaction(database).replaceAll(arg0, arg1);
 };
 prototype["delete"] = function delete(arg0, database) {
-  const obj = set(1955);
-  set(1955).stickersTransaction(database).delete(arg0);
+  const obj = set(1956);
+  set(1956).stickersTransaction(database).delete(arg0);
 };
 prototype["update"] = function update(arg0, arg1, arg2, database) {
-  const stickersTransactionResult = set(1955).stickersTransaction(database);
+  const stickersTransactionResult = set(1956).stickersTransaction(database);
   stickersTransactionResult.putAll(arg0, arg1);
-  const obj = set(1955);
+  const obj = set(1956);
   while (tmp2 !== undefined) {
     let deleteResult = stickersTransactionResult.delete(arg0, tmp3);
     continue;

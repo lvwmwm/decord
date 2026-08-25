@@ -1,17 +1,17 @@
-// Module ID: 4585
-// Function ID: 4586
+// Module ID: 4490
+// Function ID: 4491
 // Name: create
-// Dependencies: [32, 4534, 4576, 4586, 4503, 4, 4574, 4634, 4635, 4636, 4584, 4638, 4587, 4639, 4591, 4640, 4643, 2]
+// Dependencies: [32, 4444, 4481, 4491, 4433, 4, 4479, 4539, 4540, 4541, 4489, 4543, 4492, 4544, 4496, 4545, 4548, 2]
 
-// Module 4585 (create)
-import inject from "inject" /* 4503 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
-import destroyDefault from "destroy" /* 4586 */;
-import WantsVideoQuality from "WantsVideoQuality" /* 4587 */;
-import VADAggressiveness2 from "VADAggressiveness" /* 4639 */;
+// Module 4490 (create)
+import inject from "inject" /* 4433 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4479 */;
+import destroyDefault from "destroy" /* 4491 */;
+import WantsVideoQuality from "WantsVideoQuality" /* 4492 */;
+import VADAggressiveness2 from "VADAggressiveness" /* 4544 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import DesktopSources from "DesktopSources" /* 4534 */;
-import AudioSubsystems from "AudioSubsystems" /* 4576 */;
+import DesktopSources from "DesktopSources" /* 4444 */;
+import AudioSubsystems from "AudioSubsystems" /* 4481 */;
 
 require = arg1;
 ({ StatsFilter: c4, ExperimentFlags: c5, DESKTOP_BITRATE_ENHANCED: closure_6, DESKTOP_BITRATE: error, MEDIA_SINK_WANTS_PROPERTIES: closure_8, MediaTypes: c9, SIMULCAST_HQ_QUALITY: c10 } = DesktopSources);
@@ -518,7 +518,7 @@ prototype["initialize"] = function initialize(address) {
   let items = [{ type: constants2.AUDIO, ssrc: this.audioSSRC, rid: "", maxBitrate: 64000, soundshare: this.context === constants5.STREAM }, ...this.videoStreamParameters];
   address.streamParameters = items;
   address.context = this.context;
-  const voiceEngine = createVoiceConnection(4503).getVoiceEngine();
+  const voiceEngine = createVoiceConnection(4433).getVoiceEngine();
   if (null != voiceEngine.createOwnStreamConnectionWithOptions) {
     if (self.context !== tmp3.STREAM) {
       const createVoiceConnectionWithOptions = voiceEngine.createVoiceConnectionWithOptions;
@@ -794,13 +794,13 @@ prototype["getStats"] = function getStats() {
         const obj = self(closure_1_2[4]);
       }
     });
-    let obj = self(4635);
-    resolved = self(4635).timeout(promise, self(4584).STATS_INTERVAL).catch((arg0) => {
+    let obj = self(4540);
+    resolved = self(4540).timeout(promise, self(4489).STATS_INTERVAL).catch((arg0) => {
       if (!(arg0 instanceof self(table[8]).TimeoutError)) {
         throw arg0;
       }
     });
-    const timeoutResult = self(4635).timeout(promise, self(4584).STATS_INTERVAL);
+    const timeoutResult = self(4540).timeout(promise, self(4489).STATS_INTERVAL);
   }
   return resolved;
 };
@@ -1365,7 +1365,7 @@ prototype["setAudioVideoOverridesTransport"] = function setAudioVideoOverridesTr
         const _performance = performance;
         self.overrideCodecResetAt = performance.now();
       }
-      self.emit(set(4574).BaseConnectionEvent.VideoEncoderFallback, self.codecs);
+      self.emit(set(4479).BaseConnectionEvent.VideoEncoderFallback, self.codecs);
     }
   }
 };
@@ -1548,7 +1548,7 @@ prototype["setDesktopEncodingOptions"] = function setDesktopEncodingOptions(resu
         obj1[2] = calcMaxBitrateFuncResult;
         videoQualityManager2.setGoliveQuality(obj1);
         if (self.videoStreamParameters.length <= num5) {
-          const Video = tmp9(4574).BaseConnectionEvent.Video;
+          const Video = tmp9(4479).BaseConnectionEvent.Video;
           ({ userId, audioSSRC } = self);
           const ssrc = self.videoStreamParameters[num5].ssrc;
           const ssrc2 = self.videoStreamParameters[num5].ssrc;
@@ -1900,7 +1900,7 @@ prototype["getCodecOptions"] = function getCodecOptions(name, H264, closure_0) {
       let obj = { name: null, type: null, rtxType: null, params: null };
       let tmp25 = _require;
       let tmp26 = dependencyMap;
-      let obj5 = _require(4634);
+      let obj5 = _require(4539);
       let tmp27 = nextResult;
       obj[0] = obj5.codecNameToPayloadName(tmp4.name);
       let num3;
@@ -1949,7 +1949,7 @@ prototype["getCodecOptions"] = function getCodecOptions(name, H264, closure_0) {
       tmp7.params["hardware-h264"] = "1";
       let experimentFlags5 = self.experimentFlags;
       if (experimentFlags5.has(tmp8.USE_LIBOPENH264_DECODER)) {
-        let tmp25Result = tmp25(4503);
+        let tmp25Result = tmp25(4433);
         let openH264LibraryPath = tmp25Result.getOpenH264LibraryPath();
         if (null != openH264LibraryPath) {
           let tmp16 = obj;

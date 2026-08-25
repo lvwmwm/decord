@@ -1,14 +1,14 @@
-// Module ID: 1992
-// Function ID: 1993
+// Module ID: 1993
+// Function ID: 1994
 // Name: DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY
-// Dependencies: [32, 1993, 595, 645, 705, 700, 4009, 2]
+// Dependencies: [32, 1994, 595, 645, 705, 700, 4010, 2]
 // Exports: clearCommunicationDisabledNotice, useCommunicationDisabledNoticeStore
 
-// Module 1992 (DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY)
+// Module 1993 (DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY)
 import identity from "identity" /* 700 */;
-import isIterable from "isIterable" /* 4009 */;
+import isIterable from "isIterable" /* 4010 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import { DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY } from "getFriendlyDurationString" /* 1993 */;
+import { DISMISSED_COMMUNICATION_DISABLED_NOTIFICATION_GUILDS_KEY } from "getFriendlyDurationString" /* 1994 */;
 import keys from "keys" /* 645 */;
 import { Storage } from "Storage" /* 595 */;
 

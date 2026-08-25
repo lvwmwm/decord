@@ -1,14 +1,14 @@
-// Module ID: 4025
-// Function ID: 4026
+// Module ID: 4026
+// Function ID: 4027
 // Name: initialize
-// Dependencies: [1434, 1991, 1910, 1922, 676, 589, 709, 2]
+// Dependencies: [1434, 1992, 1910, 1922, 676, 589, 709, 2]
 
-// Module 4025 (initialize)
+// Module 4026 (initialize)
 import set2 from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import closure_1 from "trackCommunicationDisabled" /* 1991 */;
+import closure_1 from "trackCommunicationDisabled" /* 1992 */;
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;

@@ -1,18 +1,18 @@
-// Module ID: 12851
-// Function ID: 12852
+// Module ID: 12838
+// Function ID: 12839
 // Name: createSafetyPolicyNoticeEmbed
-// Dependencies: [17, 676, 5443, 3978, 1236, 8210, 8118, 2]
+// Dependencies: [17, 676, 7950, 3979, 1236, 8206, 8114, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12851 (createSafetyPolicyNoticeEmbed)
+// Module 12838 (createSafetyPolicyNoticeEmbed)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import tDefault from "t" /* 3978 */;
-import SafetyHubView from "SafetyHubView" /* 5443 */;
-import registerAssetDefault from "registerAsset" /* 8118 */;
-import frozen from "frozen" /* 8210 */;
+import hooksDefault from "hooks" /* 3979 */;
+import SafetyHubView from "SafetyHubView" /* 7950 */;
+import registerAssetDefault from "registerAsset" /* 8114 */;
+import frozen from "frozen" /* 8206 */;
 
 const Image = get_ActivityIndicator.Image;
 const MessageEmbedTypes = ME.MessageEmbedTypes;
@@ -63,8 +63,8 @@ export const createSafetyPolicyNoticeEmbed = function createSafetyPolicyNoticeEm
             const intl2 = getSystemLocale.intl;
             obj = { daysAgo: null };
             const obj2 = frozen;
-            const obj4 = tDefault();
-            obj[0] = obj4.diff(tDefault.unix(parsed), "days");
+            const obj4 = hooksDefault();
+            obj[0] = obj4.diff(hooksDefault.unix(parsed), "days");
             obj[2] = intl2.formatToPlainString(getSystemLocale.t.eevFb6, obj);
             const intl3 = getSystemLocale.intl;
             obj[3] = intl3.string(getSystemLocale.t["5CLb0A"]);

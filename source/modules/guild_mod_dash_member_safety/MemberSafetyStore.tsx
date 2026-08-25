@@ -1,20 +1,20 @@
-// Module ID: 5093
-// Function ID: 5094
+// Module ID: 7100
+// Function ID: 7101
 // Name: getMemberSafetyPageStore
-// Dependencies: [32, 1218, 1991, 1910, 1922, 5094, 676, 1370, 11, 5100, 5101, 5096, 589, 709, 2]
+// Dependencies: [32, 1218, 1992, 1910, 1922, 7101, 676, 1370, 11, 7107, 7108, 7103, 589, 709, 2]
 
-// Module 5093 (getMemberSafetyPageStore)
+// Module 7100 (getMemberSafetyPageStore)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import hasMemberSupplemental from "hasMemberSupplemental" /* 5100 */;
-import createFetchKeys from "createFetchKeys" /* 5101 */;
+import hasMemberSupplemental from "hasMemberSupplemental" /* 7107 */;
+import createFetchKeys from "createFetchKeys" /* 7108 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { GuildMemberSafetyPageStore as closure_8 } from "getSearchIndex" /* 5094 */;
+import { GuildMemberSafetyPageStore as closure_8 } from "getSearchIndex" /* 7101 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 
 require = arg1;
@@ -499,7 +499,7 @@ const memberSafetyStore = new MemberSafetyStore(dispatcherDefault, {
       tmp14 = members[members.length - 1];
     }
     obj = { totalResultsCount: totalResultsCount.total_result_count, elasticSearchCursor: null };
-    let tmp9Result = tmp9(5096);
+    let tmp9Result = tmp9(7103);
     let joined_at;
     if (first != null) {
       const member = first.member;
@@ -520,7 +520,7 @@ const memberSafetyStore = new MemberSafetyStore(dispatcherDefault, {
     }
     obj1 = { before: tmp9Result.createMemberSearchCursor(obj), after: null };
     obj[1] = id;
-    tmp9Result = tmp9(5096);
+    tmp9Result = tmp9(7103);
     let joined_at1;
     if (tmp14 != null) {
       const member3 = tmp14.member;

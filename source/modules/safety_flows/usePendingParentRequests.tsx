@@ -1,15 +1,15 @@
-// Module ID: 17193
-// Function ID: 17194
+// Module ID: 17225
+// Function ID: 17226
 // Name: useDerivedPendingRequests
-// Dependencies: [32, 19, 5301, 1922, 5302, 589, 7659, 11143, 2]
+// Dependencies: [32, 19, 7143, 1922, 7144, 589, 7480, 11485, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 17193 (useDerivedPendingRequests)
+// Module 17225 (useDerivedPendingRequests)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "freshTeenActivityWithMap" /* 5301 */;
+import closure_4 from "freshTeenActivityWithMap" /* 7143 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { UserLinkStatus } from "items" /* 5302 */;
+import { UserLinkStatus } from "items" /* 7144 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/safety_flows/usePendingParentRequests.tsx");
@@ -116,7 +116,7 @@ export const usePendingRequestListController = function usePendingRequestListCon
   c6 = undefined;
   c7 = undefined;
   callback = undefined;
-  let obj = pendingRequests(7659);
+  let obj = pendingRequests(7480);
   const hasMaxConnections = obj.useHasMaxConnections();
   [tmp4, c2] = callback(acceptLinkRequest.useState(null), 2);
   let tmp3 = callback(acceptLinkRequest.useState(null), 2);
@@ -129,7 +129,7 @@ export const usePendingRequestListController = function usePendingRequestListCon
       callback();
     }
   };
-  const familyCenterActions = pendingRequests(11143).useFamilyCenterActions(obj);
+  const familyCenterActions = pendingRequests(11485).useFamilyCenterActions(obj);
   acceptLinkRequest = familyCenterActions.acceptLinkRequest;
   declineLinkRequest = familyCenterActions.declineLinkRequest;
   ({ isAcceptLoading, isDeclineLoading } = familyCenterActions);
@@ -172,7 +172,7 @@ export const usePendingRequestListController = function usePendingRequestListCon
   }, items1);
   tmp2Result = tmp2(obj2.useState(pendingRequests), 2);
   [tmp12, tmp13] = tmp2Result;
-  const obj3 = pendingRequests(11143);
+  const obj3 = pendingRequests(11485);
   [tmp15, tmp16] = callback(acceptLinkRequest.useState(pendingRequests), 2);
   const tmp2Result1 = callback(acceptLinkRequest.useState(pendingRequests), 2);
   if (linkedUsersProcessed) {

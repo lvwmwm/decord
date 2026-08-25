@@ -1,10 +1,10 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12378
+// Function ID: 12379
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useIsShopCardImpressionMobileEnabled
 
-// Module 12053 (apexExperiment)
+// Module 12378 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

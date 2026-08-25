@@ -1,17 +1,17 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 8730
+// Function ID: 8731
 // Name: ConversationListItemBase
-// Dependencies: [19, 17, 5019, 5021, 676, 21, 4668, 712, 1500, 4100, 689, 589, 12738, 12742, 12740, 6323, 4739, 1236, 12746, 12747, 12748, 4761, 2]
+// Dependencies: [19, 17, 7202, 7204, 676, 21, 4380, 712, 1500, 4101, 689, 589, 8711, 8727, 8713, 5482, 4376, 1236, 8731, 8732, 8735, 4826, 2]
 
-// Module 12745 (ConversationListItemBase)
+// Module 8730 (ConversationListItemBase)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "removePendingListFetch" /* 5019 */;
-import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_6 } from "CONVERSATION_COLORS" /* 5021 */;
+import closure_5 from "removePendingListFetch" /* 7202 */;
+import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_6 } from "CONVERSATION_COLORS" /* 7204 */;
 import { VerticalGradient } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function ConversationListItemBase(conversation) {

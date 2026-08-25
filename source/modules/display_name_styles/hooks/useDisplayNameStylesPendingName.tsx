@@ -1,13 +1,13 @@
-// Module ID: 14750
-// Function ID: 14751
+// Module ID: 14780
+// Function ID: 14781
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [8409, 1991, 4223, 589, 2]
+// Dependencies: [8417, 1992, 4224, 589, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14750 (useDisplayNameStylesPendingName)
-import nameFromUserDefault from "nameFromUser" /* 4223 */;
-import closure_3 from "handleFormOpen" /* 8409 */;
-import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+// Module 14780 (useDisplayNameStylesPendingName)
+import nameFromUserDefault from "nameFromUser" /* 4224 */;
+import closure_3 from "handleFormOpen" /* 8417 */;
+import closure_4 from "trackCommunicationDisabled" /* 1992 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesPendingName.tsx");

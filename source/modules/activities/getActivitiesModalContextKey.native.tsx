@@ -1,10 +1,10 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 13952
+// Function ID: 13953
 // Name: getActivitiesModalContextKey
 // Dependencies: [2]
 // Exports: getActivitiesModalContextKey
 
-// Module 13917 (getActivitiesModalContextKey)
+// Module 13952 (getActivitiesModalContextKey)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/getActivitiesModalContextKey.native.tsx");

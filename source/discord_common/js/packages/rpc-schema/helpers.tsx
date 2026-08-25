@@ -1,10 +1,10 @@
-// Module ID: 13911
-// Function ID: 13912
+// Module ID: 13946
+// Function ID: 13947
 // Name: RPCCommands
 // Dependencies: [505, 2]
 // Exports: joiEnum, joiReqObj
 
-// Module 13911 (RPCCommands)
+// Module 13946 (RPCCommands)
 import set from "set" /* 2 */;
 import sum from "sum" /* 505 */;
 

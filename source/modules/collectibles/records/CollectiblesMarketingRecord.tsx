@@ -1,14 +1,14 @@
-// Module ID: 5335
-// Function ID: 5336
+// Module ID: 7170
+// Function ID: 7171
 // Name: fromServer
-// Dependencies: [5336, 5338, 5339, 5340, 5337, 2]
+// Dependencies: [7171, 7173, 7174, 7175, 7172, 2]
 
-// Module 5335 (fromServer)
+// Module 7170 (fromServer)
 import set from "set" /* 2 */;
-import fromServer from "fromServer" /* 5336 */;
-import fromServer2 from "fromServer" /* 5338 */;
-import fromServer3 from "fromServer" /* 5339 */;
-import closure_5 from "fromServer" /* 5340 */;
+import fromServer from "fromServer" /* 7171 */;
+import fromServer2 from "fromServer" /* 7173 */;
+import fromServer3 from "fromServer" /* 7174 */;
+import closure_5 from "fromServer" /* 7175 */;
 
 let closure_2 = fromServer.CollectiblesMarketingBadgeRecord;
 let closure_3 = fromServer2.CollectiblesMarketingBannerRecord;

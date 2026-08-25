@@ -1,15 +1,15 @@
-// Module ID: 9168
-// Function ID: 9169
+// Module ID: 9460
+// Function ID: 9461
 // Name: GameGenres
-// Dependencies: [32, 676, 4206, 1236, 4388, 500, 3978, 2]
+// Dependencies: [32, 676, 4207, 1236, 4643, 500, 3979, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 9168 (GameGenres)
+// Module 9460 (GameGenres)
 import set from "set" /* 500 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import tDefault from "t" /* 3978 */;
-import matchPath from "matchPath" /* 4206 */;
-import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4388 */;
+import hooksDefault from "hooks" /* 3979 */;
+import matchPath from "matchPath" /* 4207 */;
+import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4643 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import ME from "ME" /* 676 */;
 
@@ -324,7 +324,7 @@ export const getReadablePreorderReleaseDate = function getReadablePreorderReleas
     let num = 0;
     if (0 < items.length) {
       [tmp3, tmp4] = callback(items[num], 2);
-      const obj = tDefault(preorderApproximateReleaseDate, tmp3, true);
+      const obj = hooksDefault(preorderApproximateReleaseDate, tmp3, true);
       while (!obj.isValid()) {
         num = num + 1;
       }

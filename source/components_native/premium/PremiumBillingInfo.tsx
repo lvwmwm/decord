@@ -1,21 +1,21 @@
-// Module ID: 7959
-// Function ID: 7960
+// Module ID: 7780
+// Function ID: 7781
 // Name: GoogleManagementLink
-// Dependencies: [32, 19, 17, 676, 21, 4668, 712, 4055, 4739, 1236, 4042, 7955, 7177, 7197, 7412, 7960, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4380, 712, 4056, 4376, 1236, 4043, 7776, 5834, 5854, 7009, 7781, 2]
 // Exports: default
 
-// Module 7959 (GoogleManagementLink)
+// Module 7780 (GoogleManagementLink)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4055 */;
-import contextDefault from "context" /* 7177 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
-import createSubscriptionInvoicePreview from "createSubscriptionInvoicePreview" /* 7955 */;
+import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4056 */;
+import contextDefault from "context" /* 5834 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5854 */;
+import createSubscriptionInvoicePreview from "createSubscriptionInvoicePreview" /* 7776 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class GoogleManagementLink {
@@ -66,7 +66,7 @@ export default function PremiumBillingInfo(subscription) {
   if (null == first) {
     return null;
   } else {
-    let tmp2Result = tmp2(7412);
+    let tmp2Result = tmp2(7009);
     const externalManagementMessage = tmp2Result.getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
     obj = { style: null, children: null };
     obj[0] = subscription.style;
@@ -74,18 +74,18 @@ export default function PremiumBillingInfo(subscription) {
     obj1[0] = tmp.title;
     const intl = tmp2(1236).intl;
     obj1[4] = intl.string(tmp2(1236).t.Sb6wI1);
-    const items = [callback2(tmp2(4739).Text, obj1), , ];
+    const items = [callback2(tmp2(4376).Text, obj1), , ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.billingContainer;
     const obj3 = { variant: "text-md/semibold", children: null };
     const intl2 = tmp2(1236).intl;
     obj3[1] = intl2.string(tmp2(1236).t.KXQjfc);
-    const items1 = [callback2(tmp2(4739).Text, obj3), , ];
+    const items1 = [callback2(tmp2(4376).Text, obj3), , ];
     const obj4 = { style: null, variant: "text-sm/medium", children: null };
     obj4[0] = tmp.billingRenewalInfo;
-    tmp2Result = tmp2(7960);
+    tmp2Result = tmp2(7781);
     obj4[2] = tmp2Result.getBillingInformationStringNative(subscription, first, tmp6);
-    items1[1] = callback2(tmp2(4739).Text, obj4);
+    items1[1] = callback2(tmp2(4376).Text, obj4);
     const obj5 = { style: null, subscription: null };
     obj5[0] = tmp.billingManageGoogle;
     obj5[1] = subscription;
@@ -97,7 +97,7 @@ export default function PremiumBillingInfo(subscription) {
       const obj6 = { style: null, variant: "text-sm/medium", children: null };
       obj6[0] = tmp.externalSubtext;
       obj6[2] = externalManagementMessage;
-      tmp11Result = callback2(tmp2(4739).Text, obj6);
+      tmp11Result = callback2(tmp2(4376).Text, obj6);
     }
     items[2] = tmp11Result;
     obj[1] = items;

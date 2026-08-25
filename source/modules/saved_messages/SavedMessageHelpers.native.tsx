@@ -1,12 +1,12 @@
-// Module ID: 10912
-// Function ID: 10913
+// Module ID: 11269
+// Function ID: 11270
 // Name: _addOrUpdateSavedMessage
-// Dependencies: [5, 10889, 676, 8523, 8518, 8521, 7197, 10913, 10914, 4832, 1236, 8527, 8528, 4097, 8113, 4342, 10915, 2]
+// Dependencies: [5, 11208, 676, 8531, 8526, 8529, 5854, 11270, 11271, 4744, 1236, 8535, 8536, 4098, 7938, 4343, 11272, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 10912 (_addOrUpdateSavedMessage)
+// Module 11269 (_addOrUpdateSavedMessage)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getTimeSafe" /* 10889 */;
+import closure_4 from "getTimeSafe" /* 11208 */;
 import { AbortCodes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -28,7 +28,7 @@ function _addOrUpdateSavedMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -68,14 +68,14 @@ function _addOrUpdateSavedMessage() {
               } else {
                 if (null == savedMessage.getSavedMessage(lib.channelId, lib.messageId)) {
                   if (!obj10.hasForLaterAccess("addOrUpdateSavedMessage")) {
-                    let items = [lib(7197).FOR_LATER_ROADBLOCK];
-                    lib(8518)(displayToast(8521).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
+                    let items = [lib(5854).FOR_LATER_ROADBLOCK];
+                    lib(8526)(displayToast(8529).EntitlementFeatureNames.SAVED_MESSAGES, undefined, items);
                     savedMessage = 3;
-                    const tmp36 = lib(8518);
+                    const tmp36 = lib(8526);
                   }
-                  obj10 = displayToast(8523);
+                  obj10 = displayToast(8531);
                 }
-                let obj3 = displayToast(10913);
+                let obj3 = displayToast(11270);
                 BookmarkIcon = 2;
                 savedMessage = 1;
                 obj3 = { value: null, done: false };
@@ -153,11 +153,11 @@ function _addOrUpdateSavedMessage() {
                   }
                   dependencyMap = stringResult;
                   if (null != lib.dueAt) {
-                    BookmarkIcon = displayToast(4342).ClockIcon;
+                    BookmarkIcon = displayToast(4343).ClockIcon;
                   } else {
-                    BookmarkIcon = displayToast(10915).BookmarkIcon;
+                    BookmarkIcon = displayToast(11272).BookmarkIcon;
                   }
-                  obj = lib(4097);
+                  obj = lib(4098);
                   const obj4 = { key: "SAVED_MESSAGE_CREATE_SUCCESS", IconComponent: null, content: null };
                   obj4[1] = BookmarkIcon;
                   obj4[2] = dependencyMap;
@@ -206,7 +206,7 @@ function _removeSavedMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -249,8 +249,8 @@ function _removeSavedMessage() {
               c4 = 1;
               obj3 = { value: null, done: false };
               obj3[0] = obj3.deleteSavedMessage(closure_2).catch((body) => {
-                let obj = _undefined2(4097);
-                obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: _undefined(8113).CircleErrorIcon, content: null };
+                let obj = _undefined2(4098);
+                obj = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: _undefined(7938).CircleErrorIcon, content: null };
                 let message;
                 if (body != null) {
                   body = body.body;
@@ -303,7 +303,7 @@ function _removeSavedMessage() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp45) {
           c4 = tmp;

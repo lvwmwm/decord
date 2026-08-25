@@ -1,11 +1,11 @@
-// Module ID: 9807
-// Function ID: 9808
+// Module ID: 10586
+// Function ID: 10587
 // Name: _getDisclosures
-// Dependencies: [5, 676, 530, 9808, 1236, 2]
+// Dependencies: [5, 676, 530, 10587, 1236, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9807 (_getDisclosures)
-import create from "create" /* 9808 */;
+// Module 10586 (_getDisclosures)
+import create from "create" /* 10587 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -59,7 +59,7 @@ function _ackDisclosures() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -98,7 +98,7 @@ function _ackDisclosures() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c2 = tmp;
@@ -143,7 +143,7 @@ export const getTextForDisclosure = function getTextForDisclosure(toFixed) {
   if (create.ApplicationDisclosureType.IP_LOCATION === toFixed) {
     const intl2 = tmp(1236).intl;
     return intl2.string(tmp(1236).t["6wPmjo"]);
-  } else if (tmp(9808).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
+  } else if (tmp(10587).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === toFixed) {
     const intl = tmp(1236).intl;
     return intl.string(tmp(1236).t["/uOMKZ"]);
   } else {

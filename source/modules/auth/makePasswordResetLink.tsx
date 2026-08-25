@@ -1,10 +1,10 @@
-// Module ID: 8632
-// Function ID: 8633
+// Module ID: 8640
+// Function ID: 8641
 // Name: makePasswordResetLink
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 8632 (makePasswordResetLink)
+// Module 8640 (makePasswordResetLink)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

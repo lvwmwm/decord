@@ -1,10 +1,10 @@
-// Module ID: 14718
-// Function ID: 14719
+// Module ID: 14748
+// Function ID: 14749
 // Name: useSyncedModeThemeName
-// Dependencies: [1302, 1348, 1367, 589, 1347, 1236, 2534, 2]
+// Dependencies: [1302, 1348, 1367, 589, 1347, 1236, 2535, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 14718 (useSyncedModeThemeName)
+// Module 14748 (useSyncedModeThemeName)
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import closure_3 from "handleThemeChange" /* 1302 */;
 import { BACKGROUND_GRADIENT_PRESETS_MAP as closure_4 } from "ThemeTypes" /* 1348 */;

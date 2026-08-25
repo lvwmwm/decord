@@ -1,14 +1,14 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16748
+// Function ID: 16749
 // Name: _initialize
-// Dependencies: [5058, 676, 3, 5043, 16717, 668, 5071, 2]
+// Dependencies: [7068, 676, 3, 5367, 16749, 668, 7081, 2]
 
-// Module 16716 (_initialize)
+// Module 16748 (_initialize)
 import timestampDefault from "timestamp" /* 3 */;
 import clientLaunchId from "clientLaunchId" /* 668 */;
-import initializeDefault from "initialize" /* 5043 */;
-import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 16717 */;
-import closure_3 from "result" /* 5058 */;
+import initializeDefault from "initialize" /* 5367 */;
+import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 16749 */;
+import closure_3 from "result" /* 7068 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -49,7 +49,7 @@ prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
 prototype["deliverPendingSessions"] = function deliverPendingSessions() {
   const self = this;
   if (!this._isDelivering) {
-    let obj = self(16717);
+    let obj = self(16749);
     if (null != obj) {
       tmp._isDelivering = true;
       const pendingReports = obj.getPendingReports();

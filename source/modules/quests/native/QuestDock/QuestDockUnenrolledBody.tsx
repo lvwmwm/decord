@@ -1,19 +1,19 @@
-// Module ID: 14616
-// Function ID: 14617
+// Module ID: 14646
+// Function ID: 14647
 // Name: QUEST_DOCK_EXPANDED_PADDING_BOTTOM
-// Dependencies: [5, 19, 17, 7491, 14513, 6753, 14515, 21, 4668, 712, 14537, 14601, 647, 14511, 10723, 1629, 10532, 10533, 14519, 10992, 6756, 7518, 14538, 10516, 14544, 10993, 14583, 14580, 10989, 14584, 4739, 1236, 1297, 10986, 2]
+// Dependencies: [5, 19, 17, 7305, 14543, 5268, 14545, 21, 4380, 712, 14567, 14631, 647, 14541, 10531, 1629, 10549, 10550, 14549, 11332, 5271, 7332, 14568, 10533, 14574, 11333, 14613, 14610, 11329, 14614, 4376, 1236, 1297, 11326, 2]
 
-// Module 14616 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
+// Module 14646 (QUEST_DOCK_EXPANDED_PADDING_BOTTOM)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initializeState" /* 7491 */;
-import closure_7 from "QuestDockMode" /* 14513 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 6753 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14515 */;
+import closure_6 from "initializeState" /* 7305 */;
+import closure_7 from "QuestDockMode" /* 14543 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5268 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14545 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -76,17 +76,17 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
     if (closure_1_5) {
       obj1 = { questId: null, questContent: null, questContentCTA: null, sourceQuestContent: null };
       obj1[0] = closure_1_0.id;
-      obj1[1] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
-      obj1[2] = closure_1_0(7518).QuestContentCTA.QUEST_ACCESS_SUSPENDED;
-      obj1[3] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
+      obj1[1] = closure_1_0(5271).QuestContent.QUEST_BAR_MOBILE;
+      obj1[2] = closure_1_0(7332).QuestContentCTA.QUEST_ACCESS_SUSPENDED;
+      obj1[3] = closure_1_0(5271).QuestContent.QUEST_BAR_MOBILE;
       closure_1_6(obj1);
-      v0(14538)();
+      v0(14568)();
     }
-    const obj4 = closure_1_0(10516);
+    const obj4 = closure_1_0(10533);
     const obj3 = { questContentCTA: null, questContent: null, sourceQuestContent: null };
-    obj3[0] = closure_1_0(7518).QuestContentCTA.ACCEPT_QUEST;
-    obj3[1] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
-    obj3[2] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
+    obj3[0] = closure_1_0(7332).QuestContentCTA.ACCEPT_QUEST;
+    obj3[1] = closure_1_0(5271).QuestContent.QUEST_BAR_MOBILE;
+    obj3[2] = closure_1_0(5271).QuestContent.QUEST_BAR_MOBILE;
     yield obj4.enrollInQuest(closure_1_0.id, obj3);
     if (1 === tmp4) {
       if (arg0 === 1) {
@@ -107,10 +107,10 @@ const memoResult = importAllResult.memo(function QuestDockUnenrolledBody() {
         if (v0) {
           const obj7 = { questId: null, sourceQuestContent: null };
           obj7[0] = closure_1_0.id;
-          obj7[1] = closure_1_0(6756).QuestContent.QUEST_BAR_MOBILE;
-          v0(14544)(obj7);
+          obj7[1] = closure_1_0(5271).QuestContent.QUEST_BAR_MOBILE;
+          v0(14574)(obj7);
           closure_1_4(closure_1_8.COLLAPSED);
-          const tmp12 = v0(14544);
+          const tmp12 = v0(14574);
         }
         dependencyMap = 3;
       }

@@ -1,13 +1,13 @@
-// Module ID: 11048
-// Function ID: 11049
+// Module ID: 11390
+// Function ID: 11391
 // Name: useGuildIncidentsActionSheetStore
-// Dependencies: [8275, 644, 705, 2]
+// Dependencies: [8276, 644, 705, 2]
 // Exports: resetGuildIncidentsActionSheetStore, setInitialTime, setPauseDms, setPauseInvites, setTime
 
-// Module 11048 (useGuildIncidentsActionSheetStore)
+// Module 11390 (useGuildIncidentsActionSheetStore)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 705 */;
-import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8275 */;
+import GUILD_REPORT_RAID_MOBILE_KEY from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8276 */;
 import keys from "keys" /* 644 */;
 
 const DEFAULT_LOCKDOWN_DURATION = GUILD_REPORT_RAID_MOBILE_KEY.DEFAULT_LOCKDOWN_DURATION;
@@ -15,8 +15,8 @@ const obj = keys.create(() => ({ time: DEFAULT_LOCKDOWN_DURATION, pauseInvites: 
 const result = set.fileFinishedImporting("modules/guild_antiraid/native/GuildIncidentsActionSheetStore.tsx");
 
 export const useGuildIncidentsActionSheetStore = obj;
-export const setTime = function setTime(arg0) {
-  const _require = arg0;
+export const setTime = function setTime(diff) {
+  const _require = diff;
   _require(705).batchUpdates(() => closure_1_3.setState({ time: closure_0, hasTimeChanges: true }));
 };
 export const setInitialTime = function setInitialTime(arg0) {

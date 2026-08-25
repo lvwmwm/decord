@@ -1,17 +1,17 @@
-// Module ID: 10576
-// Function ID: 10577
+// Module ID: 10373
+// Function ID: 10374
 // Name: items
-// Dependencies: [19, 17, 21, 10577, 10578, 10579, 10580, 10581, 10582, 1236, 4668, 4314, 1363, 7449, 12, 4768, 4739, 2]
+// Dependencies: [19, 17, 21, 10374, 10375, 10376, 10377, 10378, 10379, 1236, 4380, 4315, 1363, 7047, 12, 4833, 4376, 2]
 // Exports: default
 
-// Module 10576 (items)
+// Module 10373 (items)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useThemeDefault from "useTheme" /* 4314 */;
-import componentDidMountDefault from "componentDidMount" /* 4768 */;
+import useThemeDefault from "useTheme" /* 4315 */;
+import componentDidMountDefault from "componentDidMount" /* 4833 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;
@@ -68,10 +68,10 @@ export default function ChannelFollowSuccessAlert(arg0) {
   let obj = _require(1363);
   const tmp6 = obj.isThemeDark(useThemeDefault()) ? items1 : items;
   _require = tmp6;
-  let tmp5Result = tmp5(7449);
+  let tmp5Result = tmp5(7047);
   items = [tmp6];
   const stableMemo = tmp5Result.useStableMemo(() => closure_1_1(closure_1_2[14]).sample(closure_0), items);
-  tmp5Result = tmp5(7449);
+  tmp5Result = tmp5(7047);
   const stableMemo1 = tmp5Result.useStableMemo(() => callback(table[14]).sample(closure_8), []);
   obj = {};
   const tmp2 = importDefault;
@@ -82,11 +82,11 @@ export default function ChannelFollowSuccessAlert(arg0) {
   obj = { source: stableMemo, style: tmp.image };
   items1 = [callback(Image, obj), , ];
   const tmp2Result = componentDidMountDefault;
-  items1[1] = callback(_require(4739).Text, { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stableMemo1() });
+  items1[1] = callback(_require(4376).Text, { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: stableMemo1() });
   const obj2 = { style: tmp.text, variant: "text-md/medium", color: "text-muted", children: null };
   const intl2 = tmp5(1236).intl;
   obj2[3] = intl2.string(_require(1236).t["2QbSea"]);
-  items1[2] = callback(_require(4739).Text, obj2);
+  items1[2] = callback(_require(4376).Text, obj2);
   obj.children = items1;
   return callback2(tmp2Result, obj);
 };

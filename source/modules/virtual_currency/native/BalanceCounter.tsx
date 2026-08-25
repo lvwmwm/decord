@@ -1,12 +1,12 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10302
+// Function ID: 10303
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4119, 1356, 4749, 10448, 4739, 2]
+// Dependencies: [32, 19, 21, 4120, 1356, 4814, 10303, 4376, 2]
 
-// Module 10447 (BalanceCounter)
+// Module 10302 (BalanceCounter)
 import context from "context" /* 1356 */;
-import _mod4119 from "module_4119" /* 4119 */;
-import Text from "Text" /* 4739 */;
+import _mod4120 from "module_4120" /* 4120 */;
+import Text from "Text" /* 4376 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import closure_8 from "noop" /* 19 */;
@@ -42,7 +42,7 @@ class BalanceCounter {
     closure_2 = closure_6(null);
     tmp2 = closure_2;
     tmp = closure_0;
-    obj = require("module_4119");
+    obj = require("module_4120");
     sharedValue = require("module_0");
     closure_3 = sharedValue;
     closure_4 = closure_6(null);
@@ -110,7 +110,7 @@ class BalanceCounter {
         ref.current = tmp;
       }
     }, items);
-    tmp12 = require("module_4119");
+    tmp12 = require("module_4120");
     class F {
       constructor() {
         if (closure_8) {
@@ -120,10 +120,10 @@ class BalanceCounter {
           str = Math.round(closure_3.get());
           tmp3 = value;
           tmp4 = closure_2;
-          obj = require("module_4119");
+          obj = require("module_4120");
           tmp5 = closure_6;
           tmp6 = obj.runOnJS(closure_6)(str);
-          obj2 = require("module_4119");
+          obj2 = require("module_4120");
           tmp7 = closure_7;
           runOnJSResult = obj2.runOnJS(closure_7);
           tmp8Result = runOnJSResult(str.toString().length);
@@ -131,7 +131,7 @@ class BalanceCounter {
         return {};
       }
     }
-    obj = { isAnimating: first, animatedValue: sharedValue, runOnJS: require("module_4119").runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp7 };
+    obj = { isAnimating: first, animatedValue: sharedValue, runOnJS: require("module_4120").runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp7 };
     F.__closure = obj;
     F.__workletHash = 4408542396979;
     F.__initData = clearAnimationTimeout;
@@ -151,7 +151,7 @@ class BalanceCounter {
       obj3[1] = style;
       obj3[3] = require("module_0");
       obj1[1] = closure_9(require("Text").Text, obj3);
-      tmp14 = closure_9(require("module_4119").View, obj1);
+      tmp14 = closure_9(require("module_4120").View, obj1);
     }
     return tmp14;
   }

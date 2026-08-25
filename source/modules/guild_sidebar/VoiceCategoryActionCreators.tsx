@@ -1,10 +1,10 @@
-// Module ID: 15522
-// Function ID: 15523
+// Module ID: 15554
+// Function ID: 15555
 // Name: voiceCategoryExpand
 // Dependencies: [709, 2]
 // Exports: voiceCategoryCollapse, voiceCategoryExpand
 
-// Module 15522 (voiceCategoryExpand)
+// Module 15554 (voiceCategoryExpand)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

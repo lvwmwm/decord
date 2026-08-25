@@ -1,16 +1,16 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 9924
+// Function ID: 9925
 // Name: isReactionMilestoneNotification
-// Dependencies: [19, 10069, 676, 12, 514, 501, 687, 5031, 5047, 2]
+// Dependencies: [19, 9925, 676, 12, 514, 501, 687, 6025, 4588, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, useHasPreviewableMedia
 
-// Module 10068 (isReactionMilestoneNotification)
+// Module 9924 (isReactionMilestoneNotification)
 import apply from "apply" /* 12 */;
 import v1 from "v1" /* 514 */;
 import setDefault from "set" /* 687 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 5047 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4588 */;
 import closure_3 from "noop" /* 19 */;
-import { REACTION_MILESTONE_COUNTS } from "set" /* 10069 */;
+import { REACTION_MILESTONE_COUNTS } from "set" /* 9925 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

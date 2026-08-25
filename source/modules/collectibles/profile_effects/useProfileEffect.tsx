@@ -1,14 +1,14 @@
-// Module ID: 9006
-// Function ID: 9007
+// Module ID: 8969
+// Function ID: 8970
 // Name: useProfileEffect
-// Dependencies: [19, 5306, 5329, 5312, 589, 5305, 2]
+// Dependencies: [19, 7148, 7164, 7154, 589, 7147, 2]
 // Exports: default
 
-// Module 9006 (useProfileEffect)
+// Module 8969 (useProfileEffect)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "updateCategoriesAndProducts" /* 5306 */;
-import closure_4 from "map" /* 5329 */;
-import { isProfileEffectRecord } from "fromServer" /* 5312 */;
+import closure_3 from "updateCategoriesAndProducts" /* 7148 */;
+import closure_4 from "map" /* 7164 */;
+import { isProfileEffectRecord } from "fromServer" /* 7154 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffect.tsx");

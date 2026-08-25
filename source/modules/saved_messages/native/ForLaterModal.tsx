@@ -1,18 +1,18 @@
-// Module ID: 8530
-// Function ID: 8531
+// Module ID: 8538
+// Function ID: 8539
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4668, 712, 1629, 1236, 8528, 6350, 8531, 500, 6345, 5265, 12775, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 1629, 1236, 8536, 5383, 8539, 500, 5376, 4611, 12764, 2]
 // Exports: default
 
-// Module 8530 (ForLaterModal)
+// Module 8538 (ForLaterModal)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import _modDef5265 from "module_5265" /* 5265 */;
-import keyExtractorDefault from "keyExtractor" /* 12775 */;
+import _modDef4611 from "module_4611" /* 4611 */;
+import keyExtractorDefault from "keyExtractor" /* 12764 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -32,7 +32,7 @@ export default function ForLaterModal(type) {
   let _require;
   const tmp = callback();
   const intl = _require(1236).intl;
-  if (type === _require(8528).SavedMessageSortTypes.REMINDER) {
+  if (type === _require(8536).SavedMessageSortTypes.REMINDER) {
   } else {
   }
   const stringResult = intl.string(_2pAkDA);
@@ -55,11 +55,11 @@ export default function ForLaterModal(type) {
     num = useSafeAreaInsetsDefault().top;
   }
   obj[3] = num + ThemesDefault.space.PX_8;
-  tmp4Result = tmp4(6345);
-  obj[4] = tmp4Result.getHeaderCloseButton(_modDef5265.pop);
+  tmp4Result = tmp4(5376);
+  obj[4] = tmp4Result.getHeaderCloseButton(_modDef4611.pop);
   ({ headerLeftContainer: obj2[5], headerRightContainer: obj2[6] } = tmp);
-  const items = [closure_4(_require(6350).Header, obj), ];
-  obj = { type, onClose: _modDef5265.pop };
+  const items = [closure_4(_require(5383).Header, obj), ];
+  obj = { type, onClose: _modDef4611.pop };
   items[1] = closure_4(keyExtractorDefault, obj, type);
   obj[1] = items;
   return closure_5(View, obj);

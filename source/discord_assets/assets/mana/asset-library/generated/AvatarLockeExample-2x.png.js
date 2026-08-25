@@ -1,9 +1,9 @@
-// Module ID: 5524
-// Function ID: 5525
+// Module ID: 6206
+// Function ID: 6207
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5524 (metadata)
+// Module 6206 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarLockeExample-2x.png.js");

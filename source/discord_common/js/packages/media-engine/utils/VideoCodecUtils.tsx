@@ -1,12 +1,12 @@
-// Module ID: 4634
-// Function ID: 4635
+// Module ID: 4539
+// Function ID: 4540
 // Name: items
-// Dependencies: [4534, 2]
+// Dependencies: [4444, 2]
 // Exports: codecNameToPayloadName, filterParsedVideoCodecs, filterVideoCodecs, getExperimentCodecs, parseNativeCodecs
 
-// Module 4634 (items)
+// Module 4539 (items)
 import set2 from "set" /* 2 */;
-import DesktopSources from "DesktopSources" /* 4534 */;
+import DesktopSources from "DesktopSources" /* 4444 */;
 
 const ExperimentFlags = DesktopSources.ExperimentFlags;
 let items = [{ name: "H264", encode: true, decode: true }, { name: "VP8", encode: true, decode: true }];

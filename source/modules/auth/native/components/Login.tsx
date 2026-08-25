@@ -1,23 +1,23 @@
-// Module ID: 8619
-// Function ID: 8620
+// Module ID: 8627
+// Function ID: 8628
 // Name: LinkButton
-// Dependencies: [5, 32, 19, 17, 8620, 1218, 676, 21, 4668, 5438, 4739, 4662, 1236, 500, 4854, 8621, 1500, 589, 1503, 5261, 8622, 4663, 8623, 8624, 8625, 4277, 8626, 8630, 8631, 8633, 8627, 4750, 8634, 1625, 6604, 8636, 8110, 8642, 8644, 8646, 4738, 8653, 8618, 2]
+// Dependencies: [5, 32, 19, 17, 8628, 1218, 676, 21, 4380, 4949, 4376, 4745, 1236, 500, 4973, 8629, 1500, 589, 1503, 5933, 8630, 4746, 8631, 8632, 8633, 4278, 8634, 8638, 8639, 8641, 8635, 4815, 8642, 1625, 7982, 8644, 7935, 8650, 8652, 8654, 4813, 8661, 8626, 2]
 // Exports: default
 
-// Module 8619 (LinkButton)
+// Module 8627 (LinkButton)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4662 from "module_4662" /* 4662 */;
-import Text from "Text" /* 4739 */;
-import PressableBase from "PressableBase" /* 5438 */;
+import Text from "Text" /* 4376 */;
+import _modDef4745 from "module_4745" /* 4745 */;
+import PressableBase from "PressableBase" /* 4949 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleSetLocationMetadata" /* 8620 */;
+import closure_7 from "handleSetLocationMetadata" /* 8628 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
 import { AuthStates } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class LinkButton {
@@ -38,7 +38,7 @@ class LinkButton {
   }
 }
 function handlePressPasswordManagerHint() {
-  let obj = _modDef4662;
+  let obj = _modDef4745;
   obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t.lzsy7t);
@@ -142,7 +142,7 @@ export default function Login(isMultiAccount) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -164,7 +164,7 @@ export default function Login(isMultiAccount) {
             v0(true);
             v02({});
             c3 = 2;
-            let obj3 = callback(5261);
+            let obj3 = callback(5933);
             v0 = 3;
             v02 = 1;
             obj1 = { value: null, done: false };
@@ -178,7 +178,7 @@ export default function Login(isMultiAccount) {
         } else {
           if (2 === tmp8) {
             c3 = 1;
-            let obj2 = closure_1_0(8624);
+            let obj2 = closure_1_0(8632);
             callback = obj2.getAuthenticationErrorsFromV6OrEarlierAPIError(dependencyMap);
             callback2(callback);
             c3 = 0;
@@ -197,9 +197,9 @@ export default function Login(isMultiAccount) {
           } else {
             closure_0 = arg1;
             if (false !== closure_0) {
-              if (closure_0 === closure_1_0(8622).PasswordResetMethods.ONE_TIME_LOGIN) {
-                obj = closure_1_0(4663);
-                obj.openAlert("one-time-login-forgot-password-confirm", closure_1_10(callback(8623), {}));
+              if (closure_0 === closure_1_0(8630).PasswordResetMethods.ONE_TIME_LOGIN) {
+                obj = closure_1_0(4746);
+                obj.openAlert("one-time-login-forgot-password-confirm", closure_1_10(callback(8631), {}));
               } else {
                 obj3 = { title: null, body: null };
                 const intl = closure_1_0(1236).intl;
@@ -208,8 +208,8 @@ export default function Login(isMultiAccount) {
                 const obj4 = { email: null };
                 obj4[0] = closure_6;
                 obj3[1] = intl2.format(closure_1_0(1236).t["6u5hQ9"], obj4);
-                callback(4662).show(obj3);
-                const obj8 = callback(4662);
+                callback(4745).show(obj3);
+                const obj8 = callback(4745);
               }
               c3 = 1;
             }
@@ -217,7 +217,7 @@ export default function Login(isMultiAccount) {
           c3 = 0;
           v0(false);
           v02 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp47) {
         dependencyMap = tmp47;
@@ -252,7 +252,7 @@ export default function Login(isMultiAccount) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -361,7 +361,7 @@ export default function Login(isMultiAccount) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

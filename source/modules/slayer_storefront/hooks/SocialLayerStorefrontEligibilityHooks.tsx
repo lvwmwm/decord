@@ -1,17 +1,17 @@
-// Module ID: 9235
-// Function ID: 9236
+// Module ID: 9516
+// Function ID: 9517
 // Name: useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds
-// Dependencies: [9236, 4508, 5370, 1910, 4564, 7240, 589, 9085, 9237, 2]
+// Dependencies: [9517, 4403, 7227, 1910, 4469, 5956, 589, 9051, 9518, 2]
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds, useUsersPlayingStorefrontEnabledGamesApplicationIds
 
-// Module 9235 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
+// Module 9516 (useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "map" /* 9236 */;
-import closure_3 from "initialize" /* 4508 */;
-import closure_4 from "createUserWidgetFromServer" /* 5370 */;
+import closure_2 from "map" /* 9517 */;
+import closure_3 from "initialize" /* 4403 */;
+import closure_4 from "createUserWidgetFromServer" /* 7227 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "sortActivity" /* 4564 */;
-import closure_7 from "handleUserSettingsStoreUpdate" /* 7240 */;
+import closure_6 from "sortActivity" /* 4469 */;
+import closure_7 from "handleUserSettingsStoreUpdate" /* 5956 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/hooks/SocialLayerStorefrontEligibilityHooks.tsx");
@@ -118,7 +118,7 @@ export const useUsersPlayingStorefrontEnabledGamesApplicationIds = function useU
     return items;
   }, items1);
   const obj = userIds(589);
-  const slayerStorefrontDevApplicationIdOverride = userIds(9237).useSlayerStorefrontDevApplicationIdOverride();
+  const slayerStorefrontDevApplicationIdOverride = userIds(9518).useSlayerStorefrontDevApplicationIdOverride();
   let tmp3 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {
     const items2 = [];
@@ -155,7 +155,7 @@ export const useAreUsersPlayingStorefrontEnabledGames = function useAreUsersPlay
     return items;
   }, items1);
   const obj = userIds(589);
-  const slayerStorefrontDevApplicationIdOverride = userIds(9237).useSlayerStorefrontDevApplicationIdOverride();
+  const slayerStorefrontDevApplicationIdOverride = userIds(9518).useSlayerStorefrontDevApplicationIdOverride();
   let arr3 = stateFromStoresArray;
   if (null != slayerStorefrontDevApplicationIdOverride) {
     const items2 = [];

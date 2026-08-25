@@ -1,9 +1,9 @@
-// Module ID: 7623
-// Function ID: 7624
+// Module ID: 7444
+// Function ID: 7445
 // Name: enqueue
 // Dependencies: [5, 3, 2]
 
-// Module 7623 (enqueue)
+// Module 7444 (enqueue)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_0 from "asyncGeneratorStep" /* 5 */;
 import set from "set" /* 2 */;
@@ -44,7 +44,7 @@ prototype["drainQueue"] = function drainQueue() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -71,7 +71,7 @@ prototype["drainQueue"] = function drainQueue() {
               closure_1_1.log("drainQueue() - No uploads left, setting drainingQueue to false");
               closure_1_0.drainingQueue = false;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               c3 = 1;
               closure_1_1.log("drainQueue() - start uploader");

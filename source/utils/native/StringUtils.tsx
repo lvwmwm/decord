@@ -1,12 +1,12 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 9624
+// Function ID: 9625
 // Name: splitGraphemes
-// Dependencies: [9497, 2]
+// Dependencies: [9623, 2]
 // Exports: splitGraphemes
 
-// Module 9498 (splitGraphemes)
+// Module 9624 (splitGraphemes)
 import set from "set" /* 2 */;
-import rawDefault from "raw" /* 9497 */;
+import rawDefault from "raw" /* 9623 */;
 
 const result = set.fileFinishedImporting("utils/native/StringUtils.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 6184
-// Function ID: 6185
+// Module ID: 6872
+// Function ID: 6873
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6184 (metadata)
+// Module 6872 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShieldSpotIllustration-2x.png.js");

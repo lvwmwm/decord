@@ -1,17 +1,17 @@
-// Module ID: 16379
-// Function ID: 16380
+// Module ID: 16411
+// Function ID: 16412
 // Name: createSoundItems
-// Dependencies: [32, 19, 1910, 4024, 1922, 4785, 4786, 1924, 6862, 4270, 16380, 589, 4042, 16381, 8876, 16382, 2]
+// Dependencies: [32, 19, 1910, 4025, 1922, 4851, 4852, 1924, 4858, 4271, 16412, 589, 4043, 16413, 9133, 16414, 2]
 // Exports: default, useSearchCategories
 
-// Module 16379 (createSoundItems)
+// Module 16411 (createSoundItems)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "handleSoundCreateOrUpdate" /* 4785 */;
-import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4786 */;
+import closure_8 from "handleSoundCreateOrUpdate" /* 4851 */;
+import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4852 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
 const require = arg1;

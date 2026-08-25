@@ -1,21 +1,21 @@
-// Module ID: 10878
-// Function ID: 10879
+// Module ID: 11200
+// Function ID: 11201
 // Name: SummaryActionSheet
-// Dependencies: [19, 17, 1391, 4999, 10590, 676, 21, 4346, 10878, 2008, 4668, 712, 7272, 10849, 4096, 1236, 4984, 9104, 7550, 7562, 4233, 11, 1222, 6988, 6840, 10879, 4739, 10881, 10882, 10885, 8213, 2]
+// Dependencies: [19, 17, 1391, 4623, 10387, 676, 21, 4347, 11200, 2009, 4380, 712, 5996, 11173, 4097, 1236, 4566, 9070, 7368, 7380, 4234, 11, 1222, 5503, 5434, 11201, 4376, 11203, 9238, 11204, 8209, 2]
 // Exports: default, openSummaryDividerActionSheet
 
-// Module 10878 (SummaryActionSheet)
+// Module 11200 (SummaryActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "reinjectEphemerals" /* 4999 */;
-import closure_7 from "handleQuickSwitcherUpdate" /* 10590 */;
+import closure_6 from "reinjectEphemerals" /* 4623 */;
+import closure_7 from "handleQuickSwitcherUpdate" /* 10387 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 ({ AnalyticsSections: closure_8, MessageFlags: c9 } = ME);
@@ -193,7 +193,7 @@ export const openSummaryDividerActionSheet = function openSummaryDividerActionSh
     const _HermesInternal = HermesInternal;
     obj = { summary: null };
     obj[0] = findSummaryResult;
-    obj.openLazy(asyncRequireImpl(10878, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
-    const tmp5 = asyncRequireImpl(10878, dependencyMap.paths);
+    obj.openLazy(asyncRequireImpl(11200, dependencyMap.paths), "SummaryDivider" + summaryId, obj);
+    const tmp5 = asyncRequireImpl(11200, dependencyMap.paths);
   }
 };

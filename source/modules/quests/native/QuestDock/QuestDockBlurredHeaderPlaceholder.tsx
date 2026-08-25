@@ -1,15 +1,15 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14641
+// Function ID: 14642
 // Name: QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED
-// Dependencies: [19, 17, 6753, 14515, 21, 4668, 14516, 14612, 4119, 2]
+// Dependencies: [19, 17, 5268, 14545, 21, 4380, 14546, 14642, 4120, 2]
 
-// Module 14611 (QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED)
+// Module 14641 (QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED)
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 6753 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14515 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5268 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14545 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;

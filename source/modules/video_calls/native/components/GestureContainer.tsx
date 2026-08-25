@@ -1,17 +1,17 @@
-// Module ID: 12635
-// Function ID: 12636
+// Module ID: 10991
+// Function ID: 10992
 // Name: GestureContainer
-// Dependencies: [19, 17, 8706, 8714, 21, 4668, 712, 1494, 4119, 6408, 5265, 4671, 1297, 2]
+// Dependencies: [19, 17, 9895, 10738, 21, 4380, 712, 1494, 4120, 5533, 4611, 4381, 1297, 2]
 // Exports: default
 
-// Module 12635 (GestureContainer)
+// Module 10991 (GestureContainer)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useChannelCallStore } from "VoiceChatDrawerState" /* 8706 */;
-import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET" /* 8714 */;
+import { useChannelCallStore } from "VoiceChatDrawerState" /* 9895 */;
+import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET" /* 10738 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -30,9 +30,9 @@ export default function GestureContainer(children) {
   let sharedValue;
   const tmp = callback();
   height = sharedValue(1494)().height;
-  let obj = height(4119);
+  let obj = height(4120);
   sharedValue = obj.useSharedValue(0);
-  const Gesture = height(6408).Gesture;
+  const Gesture = height(5533).Gesture;
   const tmp2 = useChannelCallStore((isGestureEnabled) => isGestureEnabled.isGestureEnabled);
   const PanResult = Gesture.Pan();
   class S {
@@ -57,7 +57,7 @@ export default function GestureContainer(children) {
     }
     height(closure_1_2[8]).runOnJS(sharedValue(closure_1_2[10]).pop)();
   };
-  obj = { position: sharedValue, THRESHOLD_VELOCITY: 500, runOnJS: height(4119).runOnJS, ModalActionCreators: sharedValue(5265), withTiming: height(4671).withTiming, DECELERATED_EASING: height(1297).DECELERATED_EASING };
+  obj = { position: sharedValue, THRESHOLD_VELOCITY: 500, runOnJS: height(4120).runOnJS, ModalActionCreators: sharedValue(4611), withTiming: height(4381).withTiming, DECELERATED_EASING: height(1297).DECELERATED_EASING };
   fn.__closure = obj;
   fn.__workletHash = 10736744030668;
   fn.__initData = closure_9;
@@ -79,13 +79,13 @@ export default function GestureContainer(children) {
     obj[1] = items1;
     return obj;
   };
-  obj = { interpolate: height(4119).interpolate, position: sharedValue, height };
+  obj = { interpolate: height(4120).interpolate, position: sharedValue, height };
   fn2.__closure = obj;
   fn2.__workletHash = 16049033434372;
   fn2.__initData = closure_11;
   obj1 = { style: tmp.background, children: null };
-  const animatedStyle = height(4119).useAnimatedStyle(fn2);
-  const obj8 = height(4119);
-  obj1[1] = jsx(height(6408).GestureDetector, { gesture: failOffsetXResult, children: jsx(sharedValue(4119).View, { style: animatedStyle, children: children.children }) });
+  const animatedStyle = height(4120).useAnimatedStyle(fn2);
+  const obj8 = height(4120);
+  obj1[1] = jsx(height(5533).GestureDetector, { gesture: failOffsetXResult, children: jsx(sharedValue(4120).View, { style: animatedStyle, children: children.children }) });
   return <View style={tmp.background}>{null}</View>;
 };

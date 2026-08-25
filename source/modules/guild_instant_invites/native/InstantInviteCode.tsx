@@ -1,23 +1,23 @@
-// Module ID: 10003
-// Function ID: 10004
+// Module ID: 9844
+// Function ID: 9845
 // Name: InstantInviteDetails
-// Dependencies: [19, 17, 1395, 4033, 1922, 21, 4668, 712, 6870, 6914, 4738, 4739, 4989, 4342, 1236, 9985, 2]
+// Dependencies: [19, 17, 1395, 4034, 1922, 21, 4380, 712, 4866, 4911, 4813, 4376, 4574, 4343, 1236, 9833, 2]
 // Exports: default
 
-// Module 10003 (InstantInviteDetails)
+// Module 9844 (InstantInviteDetails)
 import ThemesDefault from "Themes" /* 712 */;
-import Stack from "Stack" /* 4738 */;
-import Text from "Text" /* 4739 */;
-import computeChannelName from "computeChannelName" /* 4989 */;
-import getChannelIcon from "getChannelIcon" /* 6870 */;
-import componentDidMountDefault from "componentDidMount" /* 9985 */;
+import Text from "Text" /* 4376 */;
+import computeChannelName from "computeChannelName" /* 4574 */;
+import Stack from "Stack" /* 4813 */;
+import getChannelIcon from "getChannelIcon" /* 4866 */;
+import componentDidMountDefault from "componentDidMount" /* 9833 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { createChannelRecordFromInvite as closure_5 } from "createChannelRecord" /* 1395 */;
-import closure_6 from "markAllUserIdListsStale" /* 4033 */;
+import closure_6 from "markAllUserIdListsStale" /* 4034 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class InstantInviteDetails {
@@ -78,11 +78,11 @@ export default function InstantInviteCode(invite) {
   const memo = React.useMemo(() => closure_1_5(invite.channel), items);
   obj = { children: null };
   obj = { variant: "text-lg/bold", tabularNumbers: true, children: invite.code };
-  const items1 = [callback(invite(4739).Text, obj), ];
+  const items1 = [callback(invite(4376).Text, obj), ];
   const tmp = callback3();
   items1[1] = callback(InstantInviteDetails, { channel: memo, expiresAt: invite.getExpiresAt() });
   obj[0] = items1;
-  obj[1] = callback2(invite(4738).Stack, obj);
+  obj[1] = callback2(invite(4813).Stack, obj);
   return callback(View, obj);
 };
 export { InstantInviteDetails };

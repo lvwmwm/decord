@@ -1,10 +1,10 @@
-// Module ID: 10462
-// Function ID: 10463
+// Module ID: 10317
+// Function ID: 10318
 // Name: PremiumGiftAnalytics
-// Dependencies: [19, 676, 9662, 7696, 500, 698, 1236, 7697, 2]
+// Dependencies: [19, 676, 9758, 7517, 500, 698, 1236, 7518, 2]
 // Exports: default
 
-// Module 10462 (PremiumGiftAnalytics)
+// Module 10317 (PremiumGiftAnalytics)
 import closure_3 from "noop" /* 19 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 

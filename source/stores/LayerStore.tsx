@@ -1,9 +1,9 @@
-// Module ID: 11691
-// Function ID: 11692
+// Module ID: 12033
+// Function ID: 12034
 // Name: handlePopAllLayers
 // Dependencies: [589, 709, 2]
 
-// Module 11691 (handlePopAllLayers)
+// Module 12033 (handlePopAllLayers)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 6058
+// Function ID: 6059
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 7333 (apexExperiment)
+// Module 6058 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

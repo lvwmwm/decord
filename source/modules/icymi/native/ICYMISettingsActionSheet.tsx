@@ -1,20 +1,20 @@
-// Module ID: 15779
-// Function ID: 15780
+// Module ID: 15811
+// Function ID: 15812
 // Name: ICYMISettingsActionSheet
-// Dependencies: [5, 19, 17, 4777, 9091, 9081, 676, 21, 4668, 712, 589, 9095, 7213, 6317, 1236, 7216, 9094, 6322, 7627, 692, 11, 5282, 4346, 9093, 5265, 15780, 2008, 15789, 2]
+// Dependencies: [5, 19, 17, 4395, 9057, 9045, 676, 21, 4380, 712, 589, 9061, 5870, 5873, 1236, 5874, 9060, 5480, 7448, 692, 11, 5359, 4347, 9059, 4611, 15812, 2009, 15821, 2]
 // Exports: default
 
-// Module 15779 (ICYMISettingsActionSheet)
+// Module 15811 (ICYMISettingsActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "generateOldThreadCutoff" /* 4777 */;
-import closure_6 from "initialize" /* 9091 */;
-import closure_7 from "filterStaffGuild" /* 9081 */;
+import closure_5 from "generateOldThreadCutoff" /* 4395 */;
+import closure_6 from "initialize" /* 9057 */;
+import closure_7 from "filterStaffGuild" /* 9045 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -30,7 +30,7 @@ export default function ICYMISettingsActionSheet() {
   let obj = stateFromStoresObject(589);
   const items = [closure_6];
   stateFromStoresObject = obj.useStateFromStoresObject(items, () => state.getState());
-  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(9095).ICYMIStaffDebuggingUtilityExperiment;
+  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(9061).ICYMIStaffDebuggingUtilityExperiment;
   obj = { title: null, hasIcons: false, children: null };
   const intl = stateFromStoresObject(1236).intl;
   obj[0] = intl.string(stateFromStoresObject(1236).t["7Si8Ul"]);
@@ -53,7 +53,7 @@ export default function ICYMISettingsActionSheet() {
       obj.setFilters(obj);
       const dehydrated = closure_1_1(closure_1_2[16]).fetchDehydrated();
     };
-    const items1 = [callback2(tmp(7216).TableSwitchRow, obj), , ];
+    const items1 = [callback2(tmp(5874).TableSwitchRow, obj), , ];
     let obj2 = { label: "Clear read states", onPress: null };
     obj2[1] = function onPress() {
       dehydratedItems = dehydratedItems.getDehydratedItems();
@@ -80,7 +80,7 @@ export default function ICYMISettingsActionSheet() {
       let obj = callback(paths[16]);
       callback(paths[22]).hideActionSheet();
     };
-    items1[1] = callback2(tmp(6322).TableRow, obj2);
+    items1[1] = callback2(tmp(5480).TableRow, obj2);
     let obj3 = { label: "Regenerate feed and clear read states", onPress: null };
     obj3[1] = callback(function*() {
       if (dependencyMap === 2) {
@@ -94,7 +94,7 @@ export default function ICYMISettingsActionSheet() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ export default function ICYMISettingsActionSheet() {
               return obj;
             } else {
               closure_0 = tmp4;
-              let obj2 = closure_1_0(9093);
+              let obj2 = closure_1_0(9059);
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -126,10 +126,10 @@ export default function ICYMISettingsActionSheet() {
             obj2[0] = arg1;
             return obj2;
           } else {
-            obj = v0(4346);
+            obj = v0(4347);
             obj.hideActionSheet();
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           dependencyMap = tmp;
@@ -137,7 +137,7 @@ export default function ICYMISettingsActionSheet() {
         }
       }
     });
-    items1[2] = callback2(tmp(6322).TableRow, obj3);
+    items1[2] = callback2(tmp(5480).TableRow, obj3);
     obj1[0] = items1;
     tmp5Result = tmp5(closure_11, obj1);
     const tmp7 = closure_11;
@@ -157,11 +157,11 @@ export default function ICYMISettingsActionSheet() {
     const tmp3 = stateFromStoresObject(paths[26])(paths[25], paths.paths);
     callback(paths[22]).hideActionSheet();
   };
-  items2[1] = callback2(stateFromStoresObject(6322).TableRow, obj5);
+  items2[1] = callback2(stateFromStoresObject(5480).TableRow, obj5);
   obj[2] = items2;
-  const items3 = [closure_12(stateFromStoresObject(6317).TableRowGroup, obj), ];
+  const items3 = [closure_12(stateFromStoresObject(5873).TableRowGroup, obj), ];
   const tmp4 = callback3();
   items3[1] = callback2(View, { style: callback3().padding });
   obj4[2] = items3;
-  return closure_12(stateFromStoresObject(7213).ActionSheet, obj4);
+  return closure_12(stateFromStoresObject(5870).ActionSheet, obj4);
 };

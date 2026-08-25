@@ -1,17 +1,17 @@
-// Module ID: 11638
-// Function ID: 11639
+// Module ID: 11981
+// Function ID: 11982
 // Name: validateMultiAccountTokens
-// Dependencies: [5, 1218, 11634, 676, 3, 707, 709, 530, 698, 5261, 2]
+// Dependencies: [5, 1218, 11977, 676, 3, 707, 709, 530, 698, 5933, 2]
 // Exports: invalidatePushSyncTokens, moveAccount, removeAccount, reportAccountSwitchTimeout, switchAccount, updatePushSyncToken, validateMultiAccountTokens
 
-// Module 11638 (validateMultiAccountTokens)
+// Module 11981 (validateMultiAccountTokens)
 import timestampDefault from "timestamp" /* 3 */;
 import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import handleLogoutDefault from "handleLogout" /* 5261 */;
+import handleLogoutDefault from "handleLogout" /* 5933 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import closure_6 from "initialize" /* 11634 */;
+import closure_6 from "initialize" /* 11977 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -41,7 +41,7 @@ export const validateMultiAccountTokens = function validateMultiAccountTokens() 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

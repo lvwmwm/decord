@@ -1,11 +1,11 @@
-// Module ID: 15955
-// Function ID: 15956
+// Module ID: 15987
+// Function ID: 15988
 // Name: useValidOrderedFilterTokens
-// Dependencies: [4224, 589, 11565, 1433, 2]
+// Dependencies: [4225, 589, 11912, 1433, 2]
 // Exports: useValidFilterTokens, useValidOrderedFilterTokens
 
-// Module 15955 (useValidOrderedFilterTokens)
-import closure_2 from "initialize" /* 4224 */;
+// Module 15987 (useValidOrderedFilterTokens)
+import closure_2 from "initialize" /* 4225 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/search/tokens/hooks/useValidFilterTokens.tsx");

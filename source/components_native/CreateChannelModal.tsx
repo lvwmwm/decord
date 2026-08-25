@@ -1,12 +1,12 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 9139
+// Function ID: 9140
 // Name: ChannelTypeRow
-// Dependencies: [32, 19, 17, 1395, 1434, 1391, 1910, 4024, 4033, 1922, 676, 8103, 21, 4668, 712, 6914, 6921, 6934, 6930, 6927, 6920, 6912, 6919, 6931, 6929, 6926, 1236, 4739, 1994, 4108, 6322, 8141, 8122, 1297, 5446, 589, 38, 4989, 4991, 8883, 1500, 8884, 5047, 6345, 8886, 5437, 8887, 12, 4984, 4738, 8111, 7376, 6317, 8890, 7216, 6928, 8894, 503, 8907, 7165, 6343, 2]
+// Dependencies: [32, 19, 17, 1395, 1434, 1391, 1910, 4025, 4034, 1922, 676, 7926, 21, 4380, 712, 4911, 4918, 4931, 4927, 4924, 4917, 4909, 4916, 4928, 4926, 4923, 1236, 4376, 1995, 4109, 5480, 8137, 8118, 1297, 5475, 589, 38, 4574, 5240, 9140, 1500, 9141, 4588, 5376, 9143, 6117, 9144, 12, 4566, 4813, 7936, 6102, 5873, 9147, 5874, 4925, 9151, 503, 9164, 5822, 5889, 2]
 // Exports: default
 
-// Module 8882 (ChannelTypeRow)
+// Module 9139 (ChannelTypeRow)
 import ThemesDefault from "Themes" /* 712 */;
-import useInitialValueDefault from "useInitialValue" /* 7165 */;
+import useInitialValueDefault from "useInitialValue" /* 5822 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -14,13 +14,13 @@ import createChannelRecord from "createChannelRecord" /* 1395 */;
 import { isGuildOwner } from "GuildNSFWContentLevel" /* 1434 */;
 import closure_10 from "ensureGuildLoaded" /* 1391 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import closure_12 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_13 from "markAllUserIdListsStale" /* 4033 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_13 from "markAllUserIdListsStale" /* 4034 */;
 import closure_14 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { RowType } from "RowType" /* 8103 */;
+import { RowType } from "RowType" /* 7926 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function ChannelTypeRow(selected) {
@@ -745,6 +745,6 @@ export default function CreateChannelModal(arg0) {
     obj[1] = items;
     return obj;
   }));
-  return callback(_require(6343).Navigator, { screens, initialRouteStack });
+  return callback(_require(5889).Navigator, { screens, initialRouteStack });
 };
 export { CreateChannel };

@@ -1,19 +1,19 @@
-// Module ID: 14108
-// Function ID: 14109
+// Module ID: 14140
+// Function ID: 14141
 // Name: HideBadgeTile
-// Dependencies: [32, 19, 17, 8409, 1922, 8973, 21, 4668, 712, 6323, 1236, 14109, 14111, 8642, 8644, 1629, 1494, 14092, 589, 14089, 8976, 14090, 4100, 10221, 5451, 4739, 6988, 6987, 6990, 2]
+// Dependencies: [32, 19, 17, 8417, 1922, 8937, 21, 4380, 712, 5482, 1236, 9662, 14141, 8650, 8652, 1629, 1494, 9670, 589, 14124, 8940, 9671, 4101, 10072, 5929, 4376, 5503, 5502, 5505, 2]
 // Exports: default
 
-// Module 14108 (HideBadgeTile)
+// Module 14140 (HideBadgeTile)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormOpen" /* 8409 */;
+import closure_6 from "handleFormOpen" /* 8417 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "initialize" /* 8973 */;
+import closure_8 from "initialize" /* 8937 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function HideBadgeTile(badge) {
@@ -30,27 +30,27 @@ function HideBadgeTile(badge) {
   const intl = badge(1236).intl;
   obj[7] = intl.string(badge(1236).t.TPp3Mq);
   obj[8] = callback;
-  obj = { badge, size: badge(14111).BADGE_TILE_ICON_SIZE, style: null };
+  obj = { badge, size: badge(14141).BADGE_TILE_ICON_SIZE, style: null };
   let badgeIconHidden;
   if (badge.hidden) {
     badgeIconHidden = tmp.badgeIconHidden;
   }
   obj[2] = badgeIconHidden;
-  const items2 = [closure_9(onToggle(14109), obj), ];
+  const items2 = [closure_9(onToggle(9662), obj), ];
   obj1 = { style: tmp.indicator, "aria-hidden": true, children: null };
   if (badge.hidden) {
     const obj2 = { size: "sm", color: null };
     obj2[1] = tmp7(712).colors.CONTROL_CRITICAL_SECONDARY_TEXT_DEFAULT;
-    let tmp6Result = tmp6(tmp4(8642).EyeSlashIcon, obj2);
+    let tmp6Result = tmp6(tmp4(8650).EyeSlashIcon, obj2);
   } else {
     const obj3 = { size: "sm", color: null };
     obj3[1] = tmp7(712).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
-    tmp6Result = tmp6(tmp4(8644).EyeIcon, obj3);
+    tmp6Result = tmp6(tmp4(8652).EyeIcon, obj3);
   }
   obj1[2] = tmp6Result;
   items2[1] = closure_9(View, obj1);
   obj[9] = items2;
-  return closure_10(badge(6323).Card, obj);
+  return closure_10(badge(5482).Card, obj);
 }
 ({ jsx: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { grid: null, tile: null, badgeIconHidden: null, indicator: null, message: null, messageText: null };

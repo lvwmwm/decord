@@ -1,12 +1,12 @@
-// Module ID: 10638
-// Function ID: 10639
+// Module ID: 10437
+// Function ID: 10438
 // Name: MoreYouCanDoRow
-// Dependencies: [19, 21, 6322, 2]
+// Dependencies: [19, 21, 5480, 2]
 // Exports: default
 
-// Module 10638 (MoreYouCanDoRow)
+// Module 10437 (MoreYouCanDoRow)
 import noopAll from "noop" /* 19 */;
-import TableRowInner from "TableRowInner" /* 6322 */;
+import TableRowInner from "TableRowInner" /* 5480 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 10127
-// Function ID: 10128
+// Module ID: 9979
+// Function ID: 9980
 // Name: getMuteTimeOptions
-// Dependencies: [5048, 676, 685, 1236, 11, 1403, 4027, 589, 2]
+// Dependencies: [4589, 676, 685, 1236, 11, 1403, 4028, 589, 2]
 // Exports: filterOverrides, getMuteTimeOptions, shouldShowUseNewNotificationSystem, useShouldUseNewNotificationSystem
 
-// Module 10127 (getMuteTimeOptions)
+// Module 9979 (getMuteTimeOptions)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_4 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 4589 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
 

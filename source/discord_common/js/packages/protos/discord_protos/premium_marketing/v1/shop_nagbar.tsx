@@ -1,13 +1,13 @@
-// Module ID: 7692
-// Function ID: 7693
+// Module ID: 7513
+// Function ID: 7514
 // Name: create
-// Dependencies: [32, 1307, 7673, 7672, 7671, 1337, 2]
+// Dependencies: [32, 1307, 7494, 7493, 7492, 1337, 2]
 
-// Module 7692 (create)
+// Module 7513 (create)
 import _mod1307 from "module_1307" /* 1307 */;
 import defineProperty from "defineProperty" /* 1337 */;
-import create from "create" /* 7671 */;
-import create2 from "create" /* 7672 */;
+import create from "create" /* 7492 */;
+import create2 from "create" /* 7493 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -22,7 +22,7 @@ class ShopNagbar$Type extends MessageType {
       name: "cta_action",
       kind: "enum",
       T() {
-            const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(7673).ButtonAction, "BUTTON_ACTION_"];
+            const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(7494).ButtonAction, "BUTTON_ACTION_"];
             return items;
           }
     };
@@ -32,7 +32,7 @@ class ShopNagbar$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(7672).HelpArticle;
+            return callback(7493).HelpArticle;
           }
     };
     items[5] = {
@@ -40,7 +40,7 @@ class ShopNagbar$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(7671).LocalizedString;
+            return callback(7492).LocalizedString;
           }
     };
     obj = { no: 7, name: "cta_label_localized", kind: "message", T: null };
@@ -223,7 +223,7 @@ let items = [
     name: "cta_action",
     kind: "enum",
     T() {
-      const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(7673).ButtonAction, "BUTTON_ACTION_"];
+      const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(7494).ButtonAction, "BUTTON_ACTION_"];
       return items;
     }
   },
@@ -233,7 +233,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(7672).HelpArticle;
+      return callback(7493).HelpArticle;
     }
   },
   {
@@ -241,7 +241,7 @@ let items = [
     name: "body_localized",
     kind: "message",
     T() {
-      return callback(7671).LocalizedString;
+      return callback(7492).LocalizedString;
     }
   },
 ,

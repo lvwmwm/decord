@@ -1,12 +1,12 @@
-// Module ID: 12535
-// Function ID: 12536
+// Module ID: 10839
+// Function ID: 10840
 // Name: useIsStreamFocused
-// Dependencies: [4778, 4549, 589, 2]
+// Dependencies: [4396, 4401, 589, 2]
 // Exports: useIsStreamFocused
 
-// Module 12535 (useIsStreamFocused)
-import closure_2 from "getParticipants" /* 4778 */;
-import { isStreamParticipant } from "ParticipantTypes" /* 4549 */;
+// Module 10839 (useIsStreamFocused)
+import closure_2 from "getParticipants" /* 4396 */;
+import { isStreamParticipant } from "ParticipantTypes" /* 4401 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/useIsStreamFocused.tsx");

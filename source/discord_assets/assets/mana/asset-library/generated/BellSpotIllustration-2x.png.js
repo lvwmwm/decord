@@ -1,9 +1,9 @@
-// Module ID: 5550
-// Function ID: 5551
+// Module ID: 6234
+// Function ID: 6235
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5550 (metadata)
+// Module 6234 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BellSpotIllustration-2x.png.js");

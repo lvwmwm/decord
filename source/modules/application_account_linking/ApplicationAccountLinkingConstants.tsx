@@ -1,9 +1,9 @@
-// Module ID: 7181
-// Function ID: 7182
+// Module ID: 5838
+// Function ID: 5839
 // Name: AuthorizeFlow
 // Dependencies: [2]
 
-// Module 7181 (AuthorizeFlow)
+// Module 5838 (AuthorizeFlow)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/application_account_linking/ApplicationAccountLinkingConstants.tsx");

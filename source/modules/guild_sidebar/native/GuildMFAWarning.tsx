@@ -1,23 +1,23 @@
-// Module ID: 15525
-// Function ID: 15526
+// Module ID: 15557
+// Function ID: 15558
 // Name: handlePress
-// Dependencies: [5, 19, 17, 676, 21, 4668, 712, 9325, 1994, 2008, 4093, 5438, 15526, 4739, 1236, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4380, 712, 9598, 1995, 2009, 4094, 4949, 15558, 4376, 1236, 1297, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15525 (handlePress)
+// Module 15557 (handlePress)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4739 */;
-import PressableBase from "PressableBase" /* 5438 */;
-import map from "map" /* 9325 */;
-import registerAssetDefault from "registerAsset" /* 15526 */;
+import Text from "Text" /* 4376 */;
+import PressableBase from "PressableBase" /* 4949 */;
+import map from "map" /* 9598 */;
+import registerAssetDefault from "registerAsset" /* 15558 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function handlePress() {
@@ -44,7 +44,7 @@ function _handlePress() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ function _handlePress() {
           obj = callback(paths[10]);
           obj.openURL(articleURL.getArticleURL(constants.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         c3 = tmp;

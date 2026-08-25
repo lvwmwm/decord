@@ -1,9 +1,9 @@
-// Module ID: 5518
-// Function ID: 5519
+// Module ID: 6200
+// Function ID: 6201
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5518 (metadata)
+// Module 6200 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarDecorationsAbstractUI-2x.png.js");

@@ -1,37 +1,37 @@
-// Module ID: 12421
-// Function ID: 12422
+// Module ID: 9237
+// Function ID: 9238
 // Name: SHARE_APPS_KEY
-// Dependencies: [17, 8961, 676, 10882, 12100, 712, 1236, 8955, 9996, 4323, 12422, 1625, 12423, 4346, 12424, 2008, 7544, 500, 12441, 12442, 4652, 7465, 4662, 12443, 11966, 12444, 12445, 12446, 12447, 12448, 12449, 2]
+// Dependencies: [17, 9218, 676, 9238, 9241, 712, 1236, 9212, 9242, 4324, 9243, 1625, 9244, 4347, 9245, 2009, 7362, 500, 9262, 9263, 4557, 7063, 4745, 9264, 9265, 9266, 9267, 9268, 9269, 9270, 9271, 2]
 
-// Module 12421 (SHARE_APPS_KEY)
+// Module 9237 (SHARE_APPS_KEY)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import registerAssetDefault from "registerAsset" /* 4323 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
-import getInviteURLDefault from "getInviteURL" /* 7544 */;
-import registerAssetDefault2 from "registerAsset" /* 9996 */;
-import _modDef10882 from "module_10882" /* 10882 */;
-import registerAssetDefault3 from "registerAsset" /* 11966 */;
-import registerAssetDefault4 from "registerAsset" /* 12100 */;
-import registerAssetDefault5 from "registerAsset" /* 12422 */;
-import registerAssetDefault6 from "registerAsset" /* 12423 */;
-import registerAssetDefault7 from "registerAsset" /* 12441 */;
-import registerAssetDefault8 from "registerAsset" /* 12442 */;
-import registerAssetDefault9 from "registerAsset" /* 12443 */;
-import registerAssetDefault10 from "registerAsset" /* 12444 */;
-import registerAssetDefault11 from "registerAsset" /* 12445 */;
-import registerAssetDefault12 from "registerAsset" /* 12446 */;
-import registerAssetDefault13 from "registerAsset" /* 12447 */;
-import registerAssetDefault14 from "registerAsset" /* 12448 */;
-import registerAssetDefault15 from "registerAsset" /* 12449 */;
-import SHARE_APPS_KEY from "SHARE_APPS_KEY" /* 8961 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import registerAssetDefault from "registerAsset" /* 4324 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
+import getInviteURLDefault from "getInviteURL" /* 7362 */;
+import _modDef9238 from "module_9238" /* 9238 */;
+import registerAssetDefault2 from "registerAsset" /* 9241 */;
+import registerAssetDefault3 from "registerAsset" /* 9242 */;
+import registerAssetDefault4 from "registerAsset" /* 9243 */;
+import registerAssetDefault5 from "registerAsset" /* 9244 */;
+import registerAssetDefault6 from "registerAsset" /* 9262 */;
+import registerAssetDefault7 from "registerAsset" /* 9263 */;
+import registerAssetDefault8 from "registerAsset" /* 9264 */;
+import registerAssetDefault9 from "registerAsset" /* 9265 */;
+import registerAssetDefault10 from "registerAsset" /* 9266 */;
+import registerAssetDefault11 from "registerAsset" /* 9267 */;
+import registerAssetDefault12 from "registerAsset" /* 9268 */;
+import registerAssetDefault13 from "registerAsset" /* 9269 */;
+import registerAssetDefault14 from "registerAsset" /* 9270 */;
+import registerAssetDefault15 from "registerAsset" /* 9271 */;
+import SHARE_APPS_KEY from "SHARE_APPS_KEY" /* 9218 */;
 import ME from "ME" /* 676 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
 import set from "set" /* 500 */;
-import sendSMS from "sendSMS" /* 4652 */;
-import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 8955 */;
+import sendSMS from "sendSMS" /* 4557 */;
+import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 9212 */;
 
 const Linking = get_ActivityIndicator.Linking;
 SHARE_APPS_KEY = SHARE_APPS_KEY.SHARE_APPS_KEY;
@@ -40,9 +40,9 @@ const SHARE_URLS = SHARE_APPS_KEY.SHARE_URLS;
 let obj = { SHARE: 0, [0]: "SHARE", COPY: 1, [1]: "COPY", QR_CODE: 2, [2]: "QR_CODE", MESSAGES: 3, [3]: "MESSAGES", MAIL: 4, [4]: "MAIL", FB_MESSENGER: 5, [5]: "FB_MESSENGER", GMAIL: 6, [6]: "GMAIL", TELEGRAM: 7, [7]: "TELEGRAM", TWITTER: 8, [8]: "TWITTER", WHATSAPP: 9, [9]: "WHATSAPP", LINE: 10, [10]: "LINE" };
 obj = {
   type: obj.SHARE,
-  icon: _modDef10882,
+  icon: _modDef9238,
   isAvailable: Promise.resolve(true),
-  IconComponent: registerAssetDefault4,
+  IconComponent: registerAssetDefault2,
   backgroundColor: ThemesDefault.unsafe_rawColors.BRAND_500,
   getLabel() {
     const intl = getSystemLocale.intl;
@@ -56,7 +56,7 @@ obj = {
 const items = [obj, , , , , , , , , , ];
 obj = {
   type: obj.COPY,
-  icon: registerAssetDefault2,
+  icon: registerAssetDefault3,
   isAvailable: Promise.resolve(true),
   IconComponent: registerAssetDefault,
   getLabel() {
@@ -69,9 +69,9 @@ obj = {
   }
 };
 items[1] = obj;
-let obj1 = { type: obj.QR_CODE, icon: registerAssetDefault5, isAvailable: null, IconComponent: null, getLabel: null, onPress: null };
+let obj1 = { type: obj.QR_CODE, icon: registerAssetDefault4, isAvailable: null, IconComponent: null, getLabel: null, onPress: null };
 obj1[2] = Promise.resolve(!isMetaQuest.isMetaQuest());
-obj1[3] = registerAssetDefault6;
+obj1[3] = registerAssetDefault5;
 obj1[4] = function getLabel() {
   const intl = getSystemLocale.intl;
   return intl.string(getSystemLocale.t.rriLm1);
@@ -85,18 +85,18 @@ obj1[5] = function onPress(code) {
   obj[0] = getInviteURLDefault(code);
   obj[1] = _location;
   obj[2] = channel;
-  obj.openLazy(asyncRequireImpl(12424, dependencyMap.paths), combined, obj, "stack");
+  obj.openLazy(asyncRequireImpl(9245, dependencyMap.paths), combined, obj, "stack");
 };
 items[2] = obj1;
 let obj2 = { type: obj.MESSAGES, fullIcon: null, icon: null, isAvailable: null, getLabel: null, onPress: null };
 let importDefaultResult;
 if (set.isIOS()) {
-  importDefaultResult = registerAssetDefault7;
+  importDefaultResult = registerAssetDefault6;
 }
 obj2[1] = importDefaultResult;
 let importDefaultResult1;
 if (set.isAndroid()) {
-  importDefaultResult1 = registerAssetDefault8;
+  importDefaultResult1 = registerAssetDefault7;
 }
 obj2[2] = importDefaultResult1;
 obj2[3] = sendSMS.canSendSMS();
@@ -108,15 +108,15 @@ obj2[5] = function onPress(channel) {
   channel = channel.channel;
   const code = channel.code;
   ({ message, location: _location } = channel);
-  channel(8955).trackOptionClicked(code, channel, constants.SMS, _location);
-  let obj = channel(8955);
+  channel(9212).trackOptionClicked(code, channel, constants.SMS, _location);
+  let obj = channel(9212);
   const tmp = channel;
   if (obj2.isIOS()) {
-    code(4346).hideActionSheet();
-    const obj3 = code(4346);
+    code(4347).hideActionSheet();
+    const obj3 = code(4347);
   }
   obj2 = channel(500);
-  tmp(4652).sendSMS({ body: message }, (arg0, arg1, arg2) => {
+  tmp(4557).sendSMS({ body: message }, (arg0, arg1, arg2) => {
     if (arg0) {
       let obj = code(closure_1_2[21]);
       obj = { inviteKey: null, channelId: null, messageId: null, location: "SMS Option", overrideProperties: null };
@@ -147,12 +147,12 @@ items[3] = obj2;
 let obj3 = { type: obj.MAIL, fullIcon: null, icon: null, isAvailable: null, getLabel: null, onPress: null };
 let importDefaultResult2;
 if (set.isIOS()) {
-  importDefaultResult2 = registerAssetDefault9;
+  importDefaultResult2 = registerAssetDefault8;
 }
 obj3[1] = importDefaultResult2;
 let importDefaultResult3;
 if (set.isAndroid()) {
-  importDefaultResult3 = registerAssetDefault3;
+  importDefaultResult3 = registerAssetDefault9;
 }
 obj3[2] = importDefaultResult3;
 obj3[3] = sendSMS.canSendMail();
@@ -164,15 +164,15 @@ obj3[5] = function onPress(channel) {
   channel = channel.channel;
   const code = channel.code;
   ({ message, location: _location } = channel);
-  channel(8955).trackOptionClicked(code, channel, constants.EMAIL, _location);
-  let obj = channel(8955);
+  channel(9212).trackOptionClicked(code, channel, constants.EMAIL, _location);
+  let obj = channel(9212);
   const tmp = channel;
   if (obj2.isIOS()) {
-    code(4346).hideActionSheet();
-    const obj3 = code(4346);
+    code(4347).hideActionSheet();
+    const obj3 = code(4347);
   }
   obj2 = channel(500);
-  tmp(4652).sendMail({ subject: "", body: message }, (arg0, arg1, arg2) => {
+  tmp(4557).sendMail({ subject: "", body: message }, (arg0, arg1, arg2) => {
     if (arg0) {
       let obj = code(closure_1_2[21]);
       obj = { inviteKey: null, channelId: null, messageId: null, location: "Email Option", overrideProperties: null };

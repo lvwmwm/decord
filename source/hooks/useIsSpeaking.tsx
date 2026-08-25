@@ -1,14 +1,14 @@
-// Module ID: 4784
-// Function ID: 4785
+// Module ID: 10728
+// Function ID: 10729
 // Name: useIsSpeaking
-// Dependencies: [4785, 1980, 4779, 4547, 589, 2]
+// Dependencies: [4851, 1981, 5244, 4399, 589, 2]
 // Exports: default, getIsSpeaking
 
-// Module 4784 (useIsSpeaking)
-import closure_2 from "handleSoundCreateOrUpdate" /* 4785 */;
-import closure_3 from "handleConnectionOpen" /* 1980 */;
-import closure_4 from "anyoneHasFlagInContext" /* 4779 */;
-import closure_5 from "updateVoiceState" /* 4547 */;
+// Module 10728 (useIsSpeaking)
+import closure_2 from "handleSoundCreateOrUpdate" /* 4851 */;
+import closure_3 from "handleConnectionOpen" /* 1981 */;
+import closure_4 from "anyoneHasFlagInContext" /* 5244 */;
+import closure_5 from "updateVoiceState" /* 4399 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("hooks/useIsSpeaking.tsx");

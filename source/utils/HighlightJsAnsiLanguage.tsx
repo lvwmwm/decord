@@ -1,10 +1,10 @@
-// Module ID: 4772
-// Function ID: 4773
+// Module ID: 4375
+// Function ID: 4376
 // Name: regExp
 // Dependencies: [2]
 // Exports: default
 
-// Module 4772 (regExp)
+// Module 4375 (regExp)
 import set from "set" /* 2 */;
 
 let closure_0 = { 1: "bold", 4: "underline" };

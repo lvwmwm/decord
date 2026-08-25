@@ -1,18 +1,18 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 12811
+// Function ID: 12812
 // Name: createGuildTemplateEmbed
-// Dependencies: [17, 7467, 7327, 4375, 8208, 1236, 8200, 712, 1363, 11026, 11027, 12825, 2]
+// Dependencies: [17, 7065, 6050, 7340, 8204, 1236, 8196, 712, 1363, 11368, 11369, 12812, 2]
 // Exports: createGuildTemplateEmbed
 
-// Module 12824 (createGuildTemplateEmbed)
+// Module 12811 (createGuildTemplateEmbed)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import InviteSendStates from "InviteSendStates" /* 4375 */;
-import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 7327 */;
-import processColorOrThrow from "processColorOrThrow" /* 8200 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8208 */;
-import closure_4 from "handleGuildTemplateResolveSuccess" /* 7467 */;
+import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6050 */;
+import InviteSendStates from "InviteSendStates" /* 7340 */;
+import processColorOrThrow from "processColorOrThrow" /* 8196 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8204 */;
+import closure_4 from "handleGuildTemplateResolveSuccess" /* 7065 */;
 
 const Image = get_ActivityIndicator.Image;
 const GuildTemplateStates = GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD.GuildTemplateStates;
@@ -43,9 +43,9 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj.titleText = intl2.string(getSystemLocale.t.A6MwXE);
     const str = intl.string(getSystemLocale.t.C7ZRNw);
     if (obj3.isThemeDark(closure_2)) {
-      let tmpResult = tmp(11026);
+      let tmpResult = tmp(11368);
     } else {
-      tmpResult = tmp(11027);
+      tmpResult = tmp(11369);
     }
     obj.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
     obj.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
@@ -66,7 +66,7 @@ export const createGuildTemplateEmbed = function createGuildTemplateEmbed(code, 
     obj1.titleColor = colors.titleColor;
     obj1.subtitle = formatToPlainStringResult;
     obj1.subtitleColor = colors.subtitleColor;
-    obj1.thumbnailUrl = Image.resolveAssetSource(tmp(12825)).uri;
+    obj1.thumbnailUrl = Image.resolveAssetSource(tmp(12812)).uri;
     ({ acceptLabelGreenColor: obj6.acceptLabelColor, acceptLabelGreenBackgroundColor: obj6.acceptLabelBackgroundColor } = colors);
     const intl6 = getSystemLocale.intl;
     obj1.acceptLabelText = intl6.string(getSystemLocale.t["a3Gl+e"]);

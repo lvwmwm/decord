@@ -1,15 +1,15 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14628
+// Function ID: 14629
 // Name: enableSameAsDeviceTheme
-// Dependencies: [4199, 1302, 1305, 9402, 1347, 1363, 4226, 2]
+// Dependencies: [4200, 1302, 1305, 8845, 1347, 1363, 4227, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 14598 (enableSameAsDeviceTheme)
+// Module 14628 (enableSameAsDeviceTheme)
 import getThemeForColor from "getThemeForColor" /* 1347 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import setSystemTheme from "setSystemTheme" /* 4226 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 9402 */;
-import closure_3 from "isSyncedModeThemesEnabled" /* 4199 */;
+import setSystemTheme from "setSystemTheme" /* 4227 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 8845 */;
+import closure_3 from "isSyncedModeThemesEnabled" /* 4200 */;
 import closure_4 from "handleThemeChange" /* 1302 */;
 import SystemThemeState from "SystemThemeState" /* 1305 */;
 
@@ -37,25 +37,25 @@ export const enableSameAsDeviceTheme = function enableSameAsDeviceTheme(arg0) {
           id = gradientPreset.id;
         }
       }
-      let tmp6Result = tmp6(4226);
+      let tmp6Result = tmp6(4227);
       obj = {};
       obj[tmp8] = customThemeBaseTheme;
       const result1 = tmp6Result.updateThemePreferences(obj);
       if (null != arg0) {
-        tmp6Result = tmp6(4226);
+        tmp6Result = tmp6(4227);
         obj = { customUserThemeSettings: null };
         obj[0] = arg0;
         const result2 = tmp6Result.updateSyncedClientTheme(tmp8, obj);
       } else if (null != tmp9) {
         obj1 = { backgroundGradientPresetId: null };
         obj1[0] = tmp9;
-        const result3 = tmp6(4226).updateSyncedClientTheme(tmp8, obj1);
-        const tmp6Result1 = tmp6(4226);
+        const result3 = tmp6(4227).updateSyncedClientTheme(tmp8, obj1);
+        const tmp6Result1 = tmp6(4227);
       } else {
         obj2 = { theme: null };
         obj2[0] = customThemeBaseTheme;
-        const result4 = tmp6(4226).updateSyncedClientTheme(tmp8, obj2);
-        const tmp6Result2 = tmp6(4226);
+        const result4 = tmp6(4227).updateSyncedClientTheme(tmp8, obj2);
+        const tmp6Result2 = tmp6(4227);
       }
       const obj4 = AccessibilityAnnouncer;
     }

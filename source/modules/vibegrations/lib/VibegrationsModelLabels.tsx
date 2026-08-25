@@ -1,9 +1,9 @@
-// Module ID: 15922
-// Function ID: 15923
+// Module ID: 15954
+// Function ID: 15955
 // Name: THINKING_LABELS
 // Dependencies: [2]
 
-// Module 15922 (THINKING_LABELS)
+// Module 15954 (THINKING_LABELS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/vibegrations/lib/VibegrationsModelLabels.tsx");

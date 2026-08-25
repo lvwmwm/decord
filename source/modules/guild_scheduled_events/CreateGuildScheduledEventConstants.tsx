@@ -1,9 +1,9 @@
-// Module ID: 8823
-// Function ID: 8824
+// Module ID: 9090
+// Function ID: 9091
 // Name: RecurrenceOptions
 // Dependencies: [2]
 
-// Module 8823 (RecurrenceOptions)
+// Module 9090 (RecurrenceOptions)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/CreateGuildScheduledEventConstants.tsx");

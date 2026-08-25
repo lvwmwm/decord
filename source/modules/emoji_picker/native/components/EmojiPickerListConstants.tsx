@@ -1,9 +1,9 @@
-// Module ID: 9338
-// Function ID: 9339
+// Module ID: 8787
+// Function ID: 8788
 // Name: IMAGE_SIZE
 // Dependencies: [1338, 2]
 
-// Module 9338 (IMAGE_SIZE)
+// Module 8787 (IMAGE_SIZE)
 import set from "set" /* 2 */;
 import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1338 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 13155
-// Function ID: 13156
+// Module ID: 13294
+// Function ID: 13295
 // Name: updateVoiceStates
-// Dependencies: [4501, 4547, 4550, 4534, 12, 2]
+// Dependencies: [4431, 4399, 4455, 4444, 12, 2]
 
-// Module 13155 (updateVoiceStates)
+// Module 13294 (updateVoiceStates)
 import apply from "apply" /* 12 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4501 */;
-import closure_3 from "updateVoiceState" /* 4547 */;
-import closure_4 from "getVoiceStatesForGuild" /* 4550 */;
-import { SpeakingFlags } from "DesktopSources" /* 4534 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_3 from "updateVoiceState" /* 4399 */;
+import closure_4 from "getVoiceStatesForGuild" /* 4455 */;
+import { SpeakingFlags } from "DesktopSources" /* 4444 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("lib/VoiceStateAnalytics.tsx");

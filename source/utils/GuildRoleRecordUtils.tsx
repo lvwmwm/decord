@@ -1,15 +1,15 @@
-// Module ID: 1986
-// Function ID: 1987
+// Module ID: 1987
+// Function ID: 1988
 // Name: fromServerArray
-// Dependencies: [1431, 1985, 506, 688, 1987, 2]
+// Dependencies: [1431, 1986, 506, 688, 1988, 2]
 // Exports: constructGuildRoleInPlace, fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
-// Module 1986 (fromServerArray)
+// Module 1987 (fromServerArray)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 506 */;
 import int2hslRaw from "int2hslRaw" /* 688 */;
-import GuildRoleRecordTypeTag2 from "GuildRoleRecordTypeTag" /* 1985 */;
-import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 1987 */;
+import GuildRoleRecordTypeTag2 from "GuildRoleRecordTypeTag" /* 1986 */;
+import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 1988 */;
 import isValueEqual from "isValueEqual" /* 1431 */;
 
 function fromServerArray(id, roles) {

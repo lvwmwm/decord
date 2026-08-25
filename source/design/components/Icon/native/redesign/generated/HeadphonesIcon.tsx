@@ -1,14 +1,14 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 12088
+// Function ID: 12089
 // Name: HeadphonesIcon
-// Dependencies: [19, 21, 712, 4099, 11747, 2]
+// Dependencies: [19, 21, 712, 4100, 12089, 2]
 // Exports: HeadphonesIcon
 
-// Module 11746 (HeadphonesIcon)
+// Module 12088 (HeadphonesIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 11747 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 12089 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

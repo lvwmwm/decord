@@ -1,15 +1,15 @@
-// Module ID: 8579
-// Function ID: 8580
+// Module ID: 8587
+// Function ID: 8588
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4363, 4202, 676, 589, 6944, 2]
+// Dependencies: [5, 32, 19, 4364, 4203, 676, 589, 5440, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 8579 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 8587 (useCanReapplyToRejectedMemberVerificationApplication)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "updateInvite" /* 4363 */;
-import closure_7 from "handleGatewayJoinRequestUpdate" /* 4202 */;
+import closure_6 from "updateInvite" /* 4364 */;
+import closure_7 from "handleGatewayJoinRequestUpdate" /* 4203 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
@@ -45,7 +45,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -91,7 +91,7 @@ export const useCanReapplyToRejectedMemberVerificationApplication = function use
           c4 = 0;
           closure_1_1(false);
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp18) {
           closure_3 = tmp18;
           if (tmp4 === c4) {

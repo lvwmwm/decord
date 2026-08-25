@@ -1,14 +1,14 @@
-// Module ID: 9104
-// Function ID: 9105
+// Module ID: 9070
+// Function ID: 9071
 // Name: showShareActionSheet
-// Dependencies: [17, 501, 9105, 9106, 9109, 1208, 2]
+// Dependencies: [17, 501, 9071, 9072, 9075, 1208, 2]
 // Exports: showShareActionSheet
 
-// Module 9104 (showShareActionSheet)
+// Module 9070 (showShareActionSheet)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 9105 */;
-import trackAppClickInNativeShareSheet from "trackAppClickInNativeShareSheet" /* 9106 */;
+import enforcingDefault from "enforcing" /* 9071 */;
+import trackAppClickInNativeShareSheet from "trackAppClickInNativeShareSheet" /* 9072 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 
 if (PlatformTypes.isAndroid()) {
@@ -28,7 +28,7 @@ export const showShareActionSheet = function showShareActionSheet(source, PREMIU
     let mediaShareParams = _require(fn[3]).getMediaShareParams(source.source);
     const obj2 = _require(fn[3]);
   } else {
-    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "ct" };
+    mediaShareParams = { mediaFallbackUrl: "isArray", mediaStagingOptions: "accessibilityRole" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {

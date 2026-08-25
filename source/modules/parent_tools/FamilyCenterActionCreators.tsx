@@ -1,14 +1,14 @@
-// Module ID: 5303
-// Function ID: 5304
+// Module ID: 7145
+// Function ID: 7146
 // Name: maybeFetchCollectiblesForInvoices
-// Dependencies: [5, 5304, 5302, 676, 5305, 709, 530, 698, 1375, 1306, 1342, 2]
+// Dependencies: [5, 7146, 7144, 676, 7147, 709, 530, 698, 1375, 1306, 1342, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 5303 (maybeFetchCollectiblesForInvoices)
+// Module 7145 (maybeFetchCollectiblesForInvoices)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getSettings" /* 5304 */;
-import { FamilyCenterAction } from "items" /* 5302 */;
+import closure_4 from "getSettings" /* 7146 */;
+import { FamilyCenterAction } from "items" /* 7144 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -40,7 +40,7 @@ function _maybeFetchCollectiblesForInvoices() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ function _maybeFetchCollectiblesForInvoices() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -130,7 +130,7 @@ function _maybeFetchCollectiblesForGifts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ function _maybeFetchCollectiblesForGifts() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -206,7 +206,7 @@ function _updateLinkForUserId() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -250,7 +250,7 @@ function _updateLinkForUserId() {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           dependencyMap = tmp;
@@ -286,7 +286,7 @@ function _removeLinkForUserId() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -331,7 +331,7 @@ function _removeLinkForUserId() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -363,7 +363,7 @@ function _getLinkCodeForCurrentUser() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -404,7 +404,7 @@ function _getLinkCodeForCurrentUser() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp5) {
         v0 = tmp;
@@ -435,7 +435,7 @@ function _shareIarWithParents() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -469,7 +469,7 @@ function _shareIarWithParents() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -503,7 +503,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -831,7 +831,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1133,7 +1133,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

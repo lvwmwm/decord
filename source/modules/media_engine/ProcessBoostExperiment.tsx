@@ -1,11 +1,11 @@
-// Module ID: 13143
-// Function ID: 13144
+// Module ID: 13282
+// Function ID: 13283
 // Name: apexExperiment
-// Dependencies: [4534, 1472, 2]
+// Dependencies: [4444, 1472, 2]
 
-// Module 13143 (apexExperiment)
+// Module 13282 (apexExperiment)
 import set from "set" /* 2 */;
-import DesktopSources from "DesktopSources" /* 4534 */;
+import DesktopSources from "DesktopSources" /* 4444 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const ProcessPriority = DesktopSources.ProcessPriority;

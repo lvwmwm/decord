@@ -1,15 +1,15 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15884
+// Function ID: 15885
 // Name: MainTabsContentScrim
-// Dependencies: [17, 21, 4668, 712, 4119, 2]
+// Dependencies: [17, 21, 4380, 712, 4120, 2]
 // Exports: MainTabsContentScrim
 
-// Module 15852 (MainTabsContentScrim)
+// Module 15884 (MainTabsContentScrim)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const jsx = jsxProd.jsx;
 let obj = { scrim: null };
@@ -25,7 +25,7 @@ const result = set.fileFinishedImporting("modules/main_tabs_v2/native/panels/Mai
 export const MainTabsContentScrim = function MainTabsContentScrim(translateX) {
   translateX = translateX.translateX;
   const maxWidth = translateX.maxWidth;
-  let obj = translateX(4119);
+  let obj = translateX(4120);
   const fn = function c() {
     const obj = { opacity: null };
     const value = translateX.get();
@@ -33,11 +33,11 @@ export const MainTabsContentScrim = function MainTabsContentScrim(translateX) {
     obj[0] = translateX(closure_1_2[4]).interpolate(value, items, [0, 0.5], translateX(closure_1_2[4]).Extrapolation.CLAMP);
     return obj;
   };
-  obj = { interpolate: translateX(4119).interpolate, translateX, maxWidth, Extrapolation: translateX(4119).Extrapolation };
+  obj = { interpolate: translateX(4120).interpolate, translateX, maxWidth, Extrapolation: translateX(4120).Extrapolation };
   fn.__closure = obj;
   fn.__workletHash = 7933670426250;
   fn.__initData = closure_5;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const style = [callback().scrim, animatedStyle];
-  return jsx(maxWidth(4119).View, { style, pointerEvents: "none" });
+  return jsx(maxWidth(4120).View, { style, pointerEvents: "none" });
 };

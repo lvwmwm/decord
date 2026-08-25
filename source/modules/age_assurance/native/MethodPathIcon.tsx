@@ -1,16 +1,16 @@
-// Module ID: 6606
-// Function ID: 6607
+// Module ID: 7984
+// Function ID: 7985
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4668, 712, 4100, 6607, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 4101, 7985, 2]
 // Exports: default
 
-// Module 6606 (MethodPathIcon)
+// Module 7984 (MethodPathIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import inlineStylesDefault from "inlineStyles" /* 6607 */;
+import inlineStylesDefault from "inlineStyles" /* 7985 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -22,7 +22,7 @@ const result = require("set").fileFinishedImporting("modules/age_assurance/nativ
 
 export default function MethodPathIcon(icon) {
   let _require;
-  let obj = _require(4100);
+  let obj = _require(4101);
   _require = obj.useToken(ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT);
   obj = { style: callback().container, children: null };
   obj = { width: 24, height: 24, viewBox: "0 0 24 24", children: null };

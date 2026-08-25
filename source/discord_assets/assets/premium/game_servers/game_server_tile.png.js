@@ -1,9 +1,9 @@
-// Module ID: 11796
-// Function ID: 11797
+// Module ID: 12136
+// Function ID: 12137
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11796 (metadata)
+// Module 12136 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/game_servers/game_server_tile.png.js");

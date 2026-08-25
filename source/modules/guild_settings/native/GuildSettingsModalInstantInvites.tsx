@@ -1,25 +1,25 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 16992
+// Function ID: 16993
 // Name: InvitesDisabledRow
-// Dependencies: [32, 19, 17, 10053, 8083, 1391, 1910, 8912, 676, 21, 4668, 1236, 1994, 8597, 4739, 6327, 8594, 11594, 589, 12, 8276, 8274, 4346, 11047, 2008, 4097, 9987, 6580, 1297, 16961, 6581, 2]
+// Dependencies: [32, 19, 17, 9908, 7905, 1391, 1910, 9169, 676, 21, 4380, 1236, 1995, 8605, 4376, 5486, 8602, 11940, 589, 12, 8277, 8275, 4347, 11389, 2009, 4098, 9835, 5928, 1297, 16993, 5820, 2]
 // Exports: default
 
-// Module 16960 (InvitesDisabledRow)
+// Module 16992 (InvitesDisabledRow)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1994 */;
-import registerAssetDefault from "registerAsset" /* 8594 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 8597 */;
+import combinedDefault from "combined" /* 1995 */;
+import registerAssetDefault from "registerAsset" /* 8602 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 8605 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "computeAlertSettings" /* 10053 */;
-import importDefaultResult from "createFromServer" /* 8083 */;
+import closure_6 from "computeAlertSettings" /* 9908 */;
+import importDefaultResult from "createFromServer" /* 7905 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "handleFormInit" /* 8912 */;
+import closure_9 from "handleFormInit" /* 9169 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class InvitesDisabledRow {
@@ -226,7 +226,7 @@ export default function ConnectedGuildSettingsModalInstantInvites(guildId) {
     obj[0] = stateFromStores;
     obj[1] = tmp5;
     obj[2] = guildId.contentContainerStyle;
-    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(6581).NavScrim, {})];
+    const items1 = [callback(GuildSettingsModalInstantInvites, obj), callback(guildId(5820).NavScrim, {})];
     obj[0] = items1;
     tmp6 = callback2(closure_13, obj);
   }

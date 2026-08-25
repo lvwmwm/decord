@@ -1,16 +1,16 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11751
+// Function ID: 11752
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [19, 17, 1499, 21, 4668, 712, 6988, 6987, 7214, 4346, 1297, 2]
+// Dependencies: [19, 17, 1499, 21, 4380, 712, 5503, 5502, 5871, 4347, 1297, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 11395 (AppLauncherCommandOptionActionSheet)
+// Module 11751 (AppLauncherCommandOptionActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -42,12 +42,12 @@ export const AppLauncherCommandOptionActionSheet = function AppLauncherCommandOp
   obj.scrollable = scrollable;
   obj.startExpanded = flag;
   obj = { titleContainerStyle: tmp2.titleContainer, titleWrapperStyle: tmp2.titleWrapper, subtitleStyle: tmp2.subtitleWrapper, leading: null, title: null, subtitle: null, trailing: null };
-  obj = { style: { alignSelf: "flex-start" }, children: jsx(merged(7214).ActionSheetCloseButton, obj1) };
-  obj[3] = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(7214).ActionSheetCloseButton, obj1)}</View>;
+  obj = { style: { alignSelf: "flex-start" }, children: jsx(merged(5871).ActionSheetCloseButton, obj1) };
+  obj[3] = <View style={{ alignSelf: "flex-start" }}>{jsx(merged(5871).ActionSheetCloseButton, obj1)}</View>;
   ({ displayName: obj2[4], displayDescription: obj2[5] } = option);
   obj[6] = jsx(merged(1297).Spacer, { size: 24 });
-  obj.header = jsx(merged(6987).BottomSheetTitleHeader, { style: { alignSelf: "flex-start" }, children: jsx(merged(7214).ActionSheetCloseButton, obj1) });
+  obj.header = jsx(merged(5502).BottomSheetTitleHeader, { style: { alignSelf: "flex-start" }, children: jsx(merged(5871).ActionSheetCloseButton, obj1) });
   const items = [tmp2.contentContainer, contentContainerStyles];
   obj.children = <View style={items}>{children}</View>;
-  return jsx(merged(6988).BottomSheet, { style: { alignSelf: "flex-start" }, children: jsx(merged(7214).ActionSheetCloseButton, obj1) }, option.name);
+  return jsx(merged(5503).BottomSheet, { style: { alignSelf: "flex-start" }, children: jsx(merged(5871).ActionSheetCloseButton, obj1) }, option.name);
 };

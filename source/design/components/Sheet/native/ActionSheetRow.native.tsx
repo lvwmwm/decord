@@ -1,14 +1,14 @@
-// Module ID: 7215
-// Function ID: 7216
+// Module ID: 5872
+// Function ID: 5873
 // Name: ActionSheetRowIcon
-// Dependencies: [19, 17, 21, 6322, 6327, 6317, 7216, 2]
+// Dependencies: [19, 17, 21, 5480, 5486, 5873, 5874, 2]
 // Exports: ActionSheetSwitchRow
 
-// Module 7215 (ActionSheetRowIcon)
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
-import TableRowInner from "TableRowInner" /* 6322 */;
-import TableRowIcon from "TableRowIcon" /* 6327 */;
-import TableSwitchRow from "TableSwitchRow" /* 7216 */;
+// Module 5872 (ActionSheetRowIcon)
+import TableRowInner from "TableRowInner" /* 5480 */;
+import TableRowIcon from "TableRowIcon" /* 5486 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5873 */;
+import TableSwitchRow from "TableSwitchRow" /* 5874 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

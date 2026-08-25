@@ -1,23 +1,23 @@
-// Module ID: 16229
-// Function ID: 16230
+// Module ID: 16261
+// Function ID: 16262
 // Name: StyleSheet
-// Dependencies: [19, 17, 4669, 13358, 13830, 9913, 10776, 21, 16230, 16231, 16235, 16236, 4668, 712, 4107, 4662, 4722, 6582, 589, 643, 4737, 11644, 1297, 2]
+// Dependencies: [19, 17, 4372, 13219, 13865, 4599, 11105, 21, 16262, 16263, 16267, 16268, 4380, 712, 4108, 4745, 4798, 5930, 589, 643, 4812, 11987, 1297, 2]
 
-// Module 16229 (StyleSheet)
+// Module 16261 (StyleSheet)
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef4662 from "module_4662" /* 4662 */;
-import Dialog from "Dialog" /* 4722 */;
-import _modDef6582 from "module_6582" /* 6582 */;
-import getStoresDefault from "getStores" /* 16230 */;
+import _modDef4745 from "module_4745" /* 4745 */;
+import Dialog from "Dialog" /* 4798 */;
+import _modDef5930 from "module_5930" /* 5930 */;
+import getStoresDefault from "getStores" /* 16262 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
-import importDefaultResult from "initialize" /* 13358 */;
-import importDefaultResult1 from "handleUpdateVADPermission" /* 13830 */;
-import importDefaultResult2 from "fetchSurveyIfNeeded" /* 9913 */;
-import closure_12 from "getAlert" /* 10776 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import importDefaultResult from "initialize" /* 13219 */;
+import importDefaultResult1 from "handleUpdateVADPermission" /* 13865 */;
+import importDefaultResult2 from "fetchSurveyIfNeeded" /* 4599 */;
+import closure_12 from "getAlert" /* 11105 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -32,7 +32,7 @@ let obj = {
     return importDefaultResult.shouldShowWarning();
   },
   getComponent() {
-    return require(16231) /* render */.default;
+    return require(16263) /* render */.default;
   }
 };
 items = [importDefaultResult];
@@ -44,7 +44,7 @@ obj = {
     return importDefaultResult1.shouldShowWarning();
   },
   getComponent() {
-    return require(16235) /* render */.default;
+    return require(16267) /* render */.default;
   }
 };
 items2 = [importDefaultResult1];
@@ -57,7 +57,7 @@ items1[2] = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(16236) /* MobileSurvey */.default;
+    return require(16268) /* MobileSurvey */.default;
   }
 };
 let closure_15 = new getStoresDefault(items1);
@@ -128,7 +128,7 @@ AlertWrapper.prototype["render"] = function render() {
     str = "alerts-component";
   }
   const props = self.props;
-  let obj = { onClose: _modDef4662.close };
+  let obj = { onClose: _modDef4745.close };
   ({ opacity, scale } = self.state);
   obj = { dialogKey: str, onDismiss: self.handleRequestClose, children: null };
   obj = { style: items, children: null };
@@ -141,11 +141,11 @@ AlertWrapper.prototype["render"] = function render() {
   const items3 = [{ scale }];
   items2[1] = callback(RN.View, { style: { transform: items3 }, children: renderAlertResult });
   obj[1] = items2;
-  obj[2] = callback2(_modDef6582, obj);
+  obj[2] = callback2(_modDef5930, obj);
   return callback(Dialog.Dialog, obj);
 };
 AlertWrapper.contextType = require("ManaContext").ThemeContext;
-let closure_18 = Object.freeze({ renderAlert: "getGuild", renderKey: "call", props: "HTTP" });
+let closure_18 = Object.freeze({ renderAlert: "Array", renderKey: "call", props: "Path" });
 let obj1 = {
   stores: items3,
   center: true,
@@ -153,7 +153,7 @@ let obj1 = {
     return null != importDefaultResult2.getCurrentSurvey();
   },
   getComponent() {
-    return require(16236) /* MobileSurvey */.default;
+    return require(16268) /* MobileSurvey */.default;
   }
 };
 const tmp7 = new getStoresDefault(items1);
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo(function Alerts() {
           return <openModal.component />;
         };
       } else {
-        return { renderAlert: "getGuild", renderKey: "call", props: "HTTP" };
+        return { renderAlert: "Array", renderKey: "call", props: "Path" };
       }
     }
   });

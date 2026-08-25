@@ -1,9 +1,9 @@
-// Module ID: 5263
-// Function ID: 5264
+// Module ID: 5935
+// Function ID: 5936
 // Name: hasConsented
 // Dependencies: [589, 709, 2]
 
-// Module 5263 (hasConsented)
+// Module 5935 (hasConsented)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

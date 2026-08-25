@@ -1,17 +1,17 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8675
+// Function ID: 8676
 // Name: CountryCodeSelector
-// Dependencies: [19, 17, 21, 4668, 712, 5438, 1236, 4739, 8637, 8615, 8616, 8618, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 4949, 1236, 4376, 8645, 8623, 8624, 8626, 2]
 
-// Module 8667 (CountryCodeSelector)
+// Module 8675 (CountryCodeSelector)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import PressableBase from "PressableBase" /* 5438 */;
+import Text from "Text" /* 4376 */;
+import PressableBase from "PressableBase" /* 4949 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function CountryCodeSelector(alpha2) {

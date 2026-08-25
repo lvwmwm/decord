@@ -1,10 +1,10 @@
-// Module ID: 13419
-// Function ID: 13420
+// Module ID: 13454
+// Function ID: 13455
 // Name: useFetchShareEmbed
-// Dependencies: [5, 32, 19, 1487, 11094, 705, 2]
+// Dependencies: [5, 32, 19, 1487, 11436, 705, 2]
 // Exports: default
 
-// Module 13419 (useFetchShareEmbed)
+// Module 13454 (useFetchShareEmbed)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -37,7 +37,7 @@ export default function useFetchShareEmbed(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -62,7 +62,7 @@ export default function useFetchShareEmbed(arg0) {
                   c4 = 3;
                   c5 = 1;
                   obj1 = { value: null, done: false };
-                  obj1[0] = closure_2_0(11094).unfurlEmbedUrl(items);
+                  obj1[0] = closure_2_0(11436).unfurlEmbedUrl(items);
                   return obj1;
                 } else {
                   c5 = 3;

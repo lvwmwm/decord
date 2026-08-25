@@ -1,14 +1,14 @@
-// Module ID: 5625
-// Function ID: 5626
+// Module ID: 6309
+// Function ID: 6310
 // Name: CrosshairIllocon
-// Dependencies: [21, 5454, 5626, 2]
+// Dependencies: [21, 5374, 6310, 2]
 // Exports: CrosshairIllocon
 
-// Module 5625 (CrosshairIllocon)
+// Module 6309 (CrosshairIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5626 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6310 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CrosshairIllocon.native.tsx");

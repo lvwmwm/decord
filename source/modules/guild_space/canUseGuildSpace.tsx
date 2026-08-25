@@ -1,11 +1,11 @@
-// Module ID: 7236
-// Function ID: 7237
+// Module ID: 5952
+// Function ID: 5953
 // Name: isGuildSpaceAdmin
-// Dependencies: [4024, 676, 589, 7237, 2]
+// Dependencies: [4025, 676, 589, 5953, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin, useCanUseGuildSpace, useIsGuildSpaceAdmin
 
-// Module 7236 (isGuildSpaceAdmin)
-import closure_2 from "getUncachedChannelPermissions" /* 4024 */;
+// Module 5952 (isGuildSpaceAdmin)
+import closure_2 from "getUncachedChannelPermissions" /* 4025 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;
@@ -38,9 +38,9 @@ export const useCanUseGuildSpace = function useCanUseGuildSpace(id, useGuildActi
   if (id != null) {
     id = id.id;
   }
-  const guildSpaceExperimentEnabled = _require(7237).useGuildSpaceExperimentEnabled(id, useGuildActionRows);
+  const guildSpaceExperimentEnabled = _require(5953).useGuildSpaceExperimentEnabled(id, useGuildActionRows);
   _require = id;
-  const obj = _require(7237);
+  const obj = _require(5953);
   const tmp = _require;
   const items = [closure_2];
   const items1 = [id];

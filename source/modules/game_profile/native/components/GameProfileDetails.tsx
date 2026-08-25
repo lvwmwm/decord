@@ -1,16 +1,16 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 12387
+// Function ID: 12388
 // Name: GameProfileWebsiteButton
-// Dependencies: [19, 17, 9101, 21, 4668, 712, 4093, 9168, 1236, 1954, 4066, 12063, 12072, 4739, 2]
+// Dependencies: [19, 17, 9067, 21, 4380, 712, 4094, 9460, 1236, 1955, 4067, 12388, 12397, 4376, 2]
 // Exports: default
 
-// Module 12062 (GameProfileWebsiteButton)
+// Module 12387 (GameProfileWebsiteButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { IGDB_ATTRIBUTION_LINK } from "ContentInventoryFeedKey" /* 9101 */;
+import { IGDB_ATTRIBUTION_LINK } from "ContentInventoryFeedKey" /* 9067 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function GameProfileWebsiteButton(action) {
@@ -133,7 +133,7 @@ export default function GameProfileDetails(game) {
               if (obj != null) {
                 const websites = obj.websites;
                 if (websites != null) {
-                  const mapped3 = websites.map((arg0) => callback2(12072)(arg0, callback2(712).colors.ICON_SUBTLE));
+                  const mapped3 = websites.map((arg0) => callback2(12397)(arg0, callback2(712).colors.ICON_SUBTLE));
                   found = mapped3.filter((arg0) => null != arg0);
                 }
               }
@@ -180,7 +180,7 @@ export default function GameProfileDetails(game) {
               obj4[0] = stringResult;
               const obj5 = { style: null, children: null };
               obj5[0] = lib.platformsContainer;
-              obj5[1] = platforms.map((platform) => callback3(callback(12063).GameUpdatePlatformIcon, { platform, size: "md", color: callback2(712).colors.ICON_SUBTLE }, platform));
+              obj5[1] = platforms.map((platform) => callback3(callback(12388).GameUpdatePlatformIcon, { platform, size: "md", color: callback2(712).colors.ICON_SUBTLE }, platform));
               obj4[1] = closure_1_8(closure_1_5, obj5);
               items.push(obj4);
             }

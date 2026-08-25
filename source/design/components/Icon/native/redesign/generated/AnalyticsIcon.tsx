@@ -1,14 +1,14 @@
-// Module ID: 10253
-// Function ID: 10254
+// Module ID: 10104
+// Function ID: 10105
 // Name: AnalyticsIcon
-// Dependencies: [19, 21, 712, 4099, 10254, 2]
+// Dependencies: [19, 21, 712, 4100, 10105, 2]
 // Exports: AnalyticsIcon
 
-// Module 10253 (AnalyticsIcon)
+// Module 10104 (AnalyticsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 10254 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 10105 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

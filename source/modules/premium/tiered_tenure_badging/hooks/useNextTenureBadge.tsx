@@ -1,12 +1,12 @@
-// Module ID: 12932
-// Function ID: 12933
+// Module ID: 12919
+// Function ID: 12920
 // Name: useNextTenureBadge
-// Dependencies: [1924, 9533, 2]
+// Dependencies: [1924, 9656, 2]
 // Exports: useNextTenureBadge
 
-// Module 12932 (useNextTenureBadge)
+// Module 12919 (useNextTenureBadge)
 import set from "set" /* 2 */;
-import usePremiumSince from "usePremiumSince" /* 9533 */;
+import usePremiumSince from "usePremiumSince" /* 9656 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 ({ TIERED_TENURE_BADGE_ORDER: obj1, TENURE_BADGES: c3 } = GuildFeatures);

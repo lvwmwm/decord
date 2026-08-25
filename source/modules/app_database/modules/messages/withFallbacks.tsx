@@ -1,16 +1,16 @@
-// Module ID: 5082
-// Function ID: 5083
+// Module ID: 7092
+// Function ID: 7093
 // Name: isSaveableChannel
-// Dependencies: [32, 1391, 5083, 676, 5076, 5080, 5081, 2]
+// Dependencies: [32, 1391, 5262, 676, 7086, 7090, 7091, 2]
 // Exports: withFallbacks
 
-// Module 5082 (isSaveableChannel)
-import totalLength from "totalLength" /* 5076 */;
-import isReadableChannel from "isReadableChannel" /* 5080 */;
-import LIMITED_GUILD_MEMBER_THRESHOLD from "LIMITED_GUILD_MEMBER_THRESHOLD" /* 5081 */;
+// Module 7092 (isSaveableChannel)
+import totalLength from "totalLength" /* 7086 */;
+import isReadableChannel from "isReadableChannel" /* 7090 */;
+import LIMITED_GUILD_MEMBER_THRESHOLD from "LIMITED_GUILD_MEMBER_THRESHOLD" /* 7091 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "insertUnsortedGuilds" /* 5083 */;
+import closure_4 from "insertUnsortedGuilds" /* 5262 */;
 import { ChannelTypes } from "ME" /* 676 */;
 
 require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 17190
+// Function ID: 17191
 // Name: AVErrorStreamReconnectingDefinition
-// Dependencies: [676, 9707, 17148, 4536, 2]
+// Dependencies: [676, 9317, 17180, 4446, 2]
 
-// Module 17158 (AVErrorStreamReconnectingDefinition)
+// Module 17190 (AVErrorStreamReconnectingDefinition)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 
@@ -15,9 +15,9 @@ export const AVErrorStreamReconnectingDefinition = {
     activeStreams = activeStreams.activeStreams;
     const found = activeStreams.filter((state) => state.state === constants.RECONNECTING);
     return found.map((currentUserActiveStream) => {
-      const obj = { type: callback(9707).AVError.STREAM_RECONNECTING };
-      const obj2 = callback(17148);
-      const merged = Object.assign(obj2.getStreamErrorContext(callback(4536).encodeStreamKey(currentUserActiveStream)));
+      const obj = { type: callback(9317).AVError.STREAM_RECONNECTING };
+      const obj2 = callback(17180);
+      const merged = Object.assign(obj2.getStreamErrorContext(callback(4446).encodeStreamKey(currentUserActiveStream)));
       return obj;
     });
   },

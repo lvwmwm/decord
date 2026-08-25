@@ -1,20 +1,20 @@
-// Module ID: 12752
-// Function ID: 12753
+// Module ID: 12741
+// Function ID: 12742
 // Name: ButtonBadge
-// Dependencies: [19, 21, 4668, 712, 500, 1297, 1367, 4756, 5438, 4739, 8537, 2]
+// Dependencies: [19, 21, 4380, 712, 500, 1297, 1367, 4821, 4949, 4376, 8545, 2]
 // Exports: default
 
-// Module 12752 (ButtonBadge)
+// Module 12741 (ButtonBadge)
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import getFontScale from "getFontScale" /* 4756 */;
-import PressableBase from "PressableBase" /* 5438 */;
-import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 8537 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 8537 */;
+import getFontScale from "getFontScale" /* 4821 */;
+import PressableBase from "PressableBase" /* 4949 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 8545 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 8545 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class ButtonBadge {
@@ -125,7 +125,7 @@ export default function IconActionButton(variant) {
     obj = { variant: "text-sm/bold", style: null, children: null };
     obj[1] = tmp3.actionText;
     obj[2] = buttonText;
-    tmp11Result = tmp11(tmp4(4739).Text, obj);
+    tmp11Result = tmp11(tmp4(4376).Text, obj);
   }
   items1[1] = tmp11Result;
   tmp11Result = null;

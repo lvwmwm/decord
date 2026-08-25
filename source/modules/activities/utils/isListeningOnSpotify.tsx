@@ -1,13 +1,13 @@
-// Module ID: 7299
-// Function ID: 7300
+// Module ID: 9804
+// Function ID: 9805
 // Name: isListeningOnSpotify
-// Dependencies: [676, 7280, 5102, 2]
+// Dependencies: [676, 9050, 5108, 2]
 // Exports: default
 
-// Module 7299 (isListeningOnSpotify)
+// Module 9804 (isListeningOnSpotify)
 import set from "set" /* 2 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5102 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 7280 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5108 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 9050 */;
 import ME from "ME" /* 676 */;
 
 ({ ActivityTypes: obj1, PlatformTypes: c3 } = ME);

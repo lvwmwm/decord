@@ -1,12 +1,12 @@
-// Module ID: 10524
-// Function ID: 10525
+// Module ID: 10541
+// Function ID: 10542
 // Name: bountyCtaFromServer
-// Dependencies: [10525, 2]
+// Dependencies: [10542, 2]
 // Exports: bountyCtaFromServer, bountyFromServer
 
-// Module 10524 (bountyCtaFromServer)
+// Module 10541 (bountyCtaFromServer)
 import set from "set" /* 2 */;
-import resolveAsset from "resolveAsset" /* 10525 */;
+import resolveAsset from "resolveAsset" /* 10542 */;
 
 const result = set.fileFinishedImporting("modules/ads/BountyTypes.tsx");
 

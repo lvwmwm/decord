@@ -1,14 +1,14 @@
-// Module ID: 14441
-// Function ID: 14442
+// Module ID: 14471
+// Function ID: 14472
 // Name: set
-// Dependencies: [14442, 1236, 4097, 8594, 2]
+// Dependencies: [14472, 1236, 4098, 8602, 2]
 // Exports: openBountyRewardClaimErrorToast
 
-// Module 14441 (set)
+// Module 14471 (set)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import dispatcherDefault from "dispatcher" /* 4097 */;
-import registerAssetDefault from "registerAsset" /* 8594 */;
-import BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS from "BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS" /* 14442 */;
+import dispatcherDefault from "dispatcher" /* 4098 */;
+import registerAssetDefault from "registerAsset" /* 8602 */;
+import BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS from "BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS" /* 14472 */;
 import set from "set" /* 2 */;
 
 let closure_3 = BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS.BOUNTY_REWARD_CLAIM_FAILED_TOAST_DURATION_MS;

@@ -1,13 +1,13 @@
-// Module ID: 10038
-// Function ID: 10039
+// Module ID: 9880
+// Function ID: 9881
 // Name: _acceptMessageRequest
-// Dependencies: [5, 676, 530, 10039, 709, 5261, 2]
+// Dependencies: [5, 676, 530, 9881, 709, 5933, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10038 (_acceptMessageRequest)
+// Module 9880 (_acceptMessageRequest)
 import sendRequest from "sendRequest" /* 530 */;
-import handleLogoutDefault from "handleLogout" /* 5261 */;
-import MessageRequestConsentStatusTypes from "MessageRequestConsentStatusTypes" /* 10039 */;
+import handleLogoutDefault from "handleLogout" /* 5933 */;
+import MessageRequestConsentStatusTypes from "MessageRequestConsentStatusTypes" /* 9881 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -30,7 +30,7 @@ function _acceptMessageRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ function _acceptMessageRequest() {
             obj5[1] = callback;
             obj.dispatch(obj5);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c4 = tmp;

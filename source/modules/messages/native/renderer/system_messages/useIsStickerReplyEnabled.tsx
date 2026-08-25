@@ -1,13 +1,13 @@
-// Module ID: 8256
-// Function ID: 8257
+// Module ID: 8257
+// Function ID: 8258
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1991, 4024, 1922, 676, 7272, 2]
+// Dependencies: [1992, 4025, 1922, 676, 5996, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 8256 (computeIsStickerReplyEnabled)
-import useCanUnarchiveThread from "useCanUnarchiveThread" /* 7272 */;
-import closure_2 from "trackCommunicationDisabled" /* 1991 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+// Module 8257 (computeIsStickerReplyEnabled)
+import useCanUnarchiveThread from "useCanUnarchiveThread" /* 5996 */;
+import closure_2 from "trackCommunicationDisabled" /* 1992 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { Permissions } from "ME" /* 676 */;
 

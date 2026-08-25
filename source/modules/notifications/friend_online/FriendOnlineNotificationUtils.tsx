@@ -1,15 +1,15 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14905
+// Function ID: 14906
 // Name: onFriendOnlineNotificationSettingsChanged
-// Dependencies: [4036, 676, 4069, 698, 2]
+// Dependencies: [4037, 676, 4070, 698, 2]
 // Exports: onFriendOnlineNotificationSettingsChanged, onNotifyFriendsOnComeOnlineSettingsChanged
 
-// Module 14875 (onFriendOnlineNotificationSettingsChanged)
+// Module 14905 (onFriendOnlineNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4036 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4037 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
 
 let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
 const AnalyticEvents = ME.AnalyticEvents;

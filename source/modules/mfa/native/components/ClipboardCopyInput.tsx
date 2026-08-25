@@ -1,17 +1,17 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15224
+// Function ID: 15225
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 7421, 676, 21, 4668, 589, 8638, 6579, 7205, 8110, 2]
+// Dependencies: [5, 19, 17, 7019, 676, 21, 4380, 589, 8646, 5927, 5862, 7935, 2]
 // Exports: default
 
-// Module 15194 (ClipboardCopyInput)
+// Module 15224 (ClipboardCopyInput)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getState" /* 7421 */;
+import closure_6 from "getState" /* 7019 */;
 import { AppStates } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let closure_9 = createCacheKey.createStyles({ inputContainer: { flexDirection: "column", alignSelf: "stretch" } });
@@ -51,7 +51,7 @@ export default function ClipboardCopyInput(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -130,7 +130,7 @@ export default function ClipboardCopyInput(arg0) {
                 }
               }
               v0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp31) {
             v0 = tmp;

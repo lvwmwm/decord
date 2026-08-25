@@ -1,10 +1,10 @@
-// Module ID: 5328
-// Function ID: 5329
+// Module ID: 7163
+// Function ID: 7164
 // Name: useCollectiblesDebugStore
 // Dependencies: [644, 2]
 // Exports: addDebugLog
 
-// Module 5328 (useCollectiblesDebugStore)
+// Module 7163 (useCollectiblesDebugStore)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 7902
+// Function ID: 7903
 // Name: _fetchSocialLayerStorefront
-// Dependencies: [5, 7909, 7240, 676, 687, 709, 7238, 7910, 530, 1903, 584, 2]
+// Dependencies: [5, 7730, 5956, 676, 687, 709, 5954, 7731, 530, 1903, 584, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 8080 (_fetchSocialLayerStorefront)
+// Module 7902 (_fetchSocialLayerStorefront)
 import failsDefault from "fails" /* 584 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getPromotionIdOverride" /* 7909 */;
-import closure_5 from "handleUserSettingsStoreUpdate" /* 7240 */;
+import closure_4 from "getPromotionIdOverride" /* 7730 */;
+import closure_5 from "handleUserSettingsStoreUpdate" /* 5956 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -51,7 +51,7 @@ function _fetchSocialLayerStorefront2() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -366,7 +366,7 @@ function _fetchSocialLayerStorefrontSkuWithUrl2() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -549,7 +549,7 @@ function _fetchSocialLayerStorefrontEntries() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -675,7 +675,7 @@ function _fetchSocialLayerStorefrontById() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -912,7 +912,7 @@ function _fetchSocialLayerStorefrontConfig() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

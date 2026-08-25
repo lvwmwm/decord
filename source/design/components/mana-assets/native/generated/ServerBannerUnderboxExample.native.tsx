@@ -1,14 +1,14 @@
-// Module ID: 6147
-// Function ID: 6148
+// Module ID: 6835
+// Function ID: 6836
 // Name: ServerBannerUnderboxExample
-// Dependencies: [21, 5454, 6148, 2]
+// Dependencies: [21, 5374, 6836, 2]
 // Exports: ServerBannerUnderboxExample
 
-// Module 6147 (ServerBannerUnderboxExample)
+// Module 6835 (ServerBannerUnderboxExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 6148 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6836 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerUnderboxExample.native.tsx");

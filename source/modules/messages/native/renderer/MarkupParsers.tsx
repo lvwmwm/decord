@@ -1,16 +1,16 @@
-// Module ID: 8341
-// Function ID: 8342
+// Module ID: 8342
+// Function ID: 8343
 // Name: parseEmbedTitleMarkup
-// Dependencies: [676, 687, 1405, 6844, 8342, 8355, 2]
+// Dependencies: [676, 687, 1405, 4370, 8343, 8356, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 8341 (parseEmbedTitleMarkup)
+// Module 8342 (parseEmbedTitleMarkup)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import setDefault from "set" /* 687 */;
-import get_defaultRulesDefault from "get defaultRules" /* 6844 */;
-import LHeading from "LHeading" /* 8342 */;
-import getInitialParserState from "getInitialParserState" /* 8355 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4370 */;
+import LHeading from "LHeading" /* 8343 */;
+import getInitialParserState from "getInitialParserState" /* 8356 */;
 import importDefaultResult from "priv" /* 1405 */;
 
 const MessageTypes = ME.MessageTypes;

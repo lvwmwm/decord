@@ -1,15 +1,15 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 7926
+// Function ID: 7927
 // Name: RowType
-// Dependencies: [676, 1236, 8104, 1994, 8105, 2]
+// Dependencies: [676, 1236, 7927, 1995, 7928, 2]
 // Exports: getChannelPermissionSpecMap
 
-// Module 8103 (RowType)
+// Module 7926 (RowType)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1994 */;
-import getSystemLocaleDefault from "getSystemLocale" /* 8104 */;
-import getSystemLocaleDefault2 from "getSystemLocale" /* 8105 */;
+import combinedDefault from "combined" /* 1995 */;
+import getSystemLocaleDefault from "getSystemLocale" /* 7927 */;
+import getSystemLocaleDefault2 from "getSystemLocale" /* 7928 */;
 import ME from "ME" /* 676 */;
 
 ({ ChannelTypes: c3, ChannelTypesSets: c4, HelpdeskArticles: c5, Permissions: closure_6 } = ME);

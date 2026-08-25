@@ -1,14 +1,14 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14400
+// Function ID: 14401
 // Name: route
-// Dependencies: [676, 10708, 1236, 14371, 14373, 2]
+// Dependencies: [676, 10516, 1236, 14401, 14403, 2]
 
-// Module 14370 (route)
+// Module 14400 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14371 */;
-import createToggle from "createToggle" /* 10708 */;
+import LaptopPhoneIcon from "LaptopPhoneIcon" /* 14401 */;
+import createToggle from "createToggle" /* 10516 */;
 
 obj = {
   useTitle() {
@@ -22,7 +22,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.SESSIONS,
   getComponent() {
-    return require(14373) /* UserSettingsSessions */.default;
+    return require(14403) /* UserSettingsSessions */.default;
   }
 };
 const route = createToggle.createRoute(obj);

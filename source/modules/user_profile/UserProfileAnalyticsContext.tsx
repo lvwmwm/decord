@@ -1,11 +1,11 @@
-// Module ID: 8971
-// Function ID: 8972
+// Module ID: 8935
+// Function ID: 8936
 // Name: UserProfileAnalyticsProvider
-// Dependencies: [19, 21, 7177, 8972, 514, 2]
+// Dependencies: [19, 21, 5834, 8936, 514, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8971 (UserProfileAnalyticsProvider)
-import contextDefault from "context" /* 7177 */;
+// Module 8935 (UserProfileAnalyticsProvider)
+import contextDefault from "context" /* 5834 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -114,7 +114,7 @@ export const useCreateUserProfileAnalyticsContext = function useCreateUserProfil
 };
 export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsContext() {
   const context = importAllResult.useContext(closure_5);
-  analyticsLocations = analyticsLocations(7177)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5834)().analyticsLocations;
   const items = [context, analyticsLocations];
   const items1 = [context, analyticsLocations];
   const items2 = [context, analyticsLocations];

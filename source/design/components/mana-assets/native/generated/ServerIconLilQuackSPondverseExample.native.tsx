@@ -1,14 +1,14 @@
-// Module ID: 6161
-// Function ID: 6162
+// Module ID: 6849
+// Function ID: 6850
 // Name: ServerIconLilQuackSPondverseExample
-// Dependencies: [21, 5454, 6162, 2]
+// Dependencies: [21, 5374, 6850, 2]
 // Exports: ServerIconLilQuackSPondverseExample
 
-// Module 6161 (ServerIconLilQuackSPondverseExample)
+// Module 6849 (ServerIconLilQuackSPondverseExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 6162 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6850 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconLilQuackSPondverseExample.native.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 14137
-// Function ID: 14138
+// Module ID: 14167
+// Function ID: 14168
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 4668, 14138, 4739, 1236, 4750, 11930, 2008, 2]
+// Dependencies: [5, 19, 17, 21, 4380, 14168, 4376, 1236, 4815, 12264, 2009, 2]
 // Exports: default
 
-// Module 14137 (GuildProfileEmptyState)
+// Module 14167 (GuildProfileEmptyState)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import Button from "Button" /* 4750 */;
-import SvgComponentDefault from "SvgComponent" /* 14138 */;
+import Text from "Text" /* 4376 */;
+import Button from "Button" /* 4815 */;
+import SvgComponentDefault from "SvgComponent" /* 14168 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;
@@ -52,7 +52,7 @@ export default function GuildProfileEmptyState() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -84,7 +84,7 @@ export default function GuildProfileEmptyState() {
         } else {
           arg1.default.openCreateGuildModal();
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -109,7 +109,7 @@ export default function GuildProfileEmptyState() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -141,7 +141,7 @@ export default function GuildProfileEmptyState() {
         } else {
           const result = arg1.default.openGuildJoinServerScreen();
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         v0 = tmp;

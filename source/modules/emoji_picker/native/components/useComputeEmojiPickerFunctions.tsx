@@ -1,17 +1,17 @@
-// Module ID: 9382
-// Function ID: 9383
+// Module ID: 8825
+// Function ID: 8826
 // Name: _computeCategories
-// Dependencies: [32, 19, 6768, 9338, 9383, 4037, 12, 9339, 1990, 2]
+// Dependencies: [32, 19, 5286, 8787, 8826, 4038, 12, 8788, 1991, 2]
 // Exports: default
 
-// Module 9382 (_computeCategories)
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
-import initializeSearch from "initializeSearch" /* 9339 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 9383 */;
+// Module 8825 (_computeCategories)
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4038 */;
+import initializeSearch from "initializeSearch" /* 8788 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 8826 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import EmojiCategoryTypes from "EmojiCategoryTypes" /* 6768 */;
-import { EmojiPickerRenderingDataType as closure_7 } from "IMAGE_SIZE" /* 9338 */;
+import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5286 */;
+import { EmojiPickerRenderingDataType as closure_7 } from "IMAGE_SIZE" /* 8787 */;
 
 require = arg1;
 function _computeCategories(arg0) {
@@ -258,9 +258,9 @@ const result = require("set").fileFinishedImporting("modules/emoji_picker/native
 
 export default function useComputeEmojiPickerFunctions() {
   return callback(React.useState(() => {
-    const obj = { computeCategories: callback(1990).cachedFunction(closure_8), computeSearchResults: null };
-    const obj2 = callback(1990);
-    obj[1] = callback(1990).cachedFunction(closure_9);
+    const obj = { computeCategories: callback(1991).cachedFunction(closure_8), computeSearchResults: null };
+    const obj2 = callback(1991);
+    obj[1] = callback(1991).cachedFunction(closure_9);
     return obj;
   }), 1)[0];
 };

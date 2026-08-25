@@ -1,15 +1,15 @@
-// Module ID: 8657
-// Function ID: 8658
+// Module ID: 8665
+// Function ID: 8666
 // Name: saveProfileAndAccountRequest
-// Dependencies: [5, 676, 5264, 709, 530, 5261, 1222, 595, 8421, 8418, 8658, 7916, 2]
+// Dependencies: [5, 676, 5936, 709, 530, 5933, 1222, 1937, 595, 4994, 8426, 8666, 7737, 2]
 // Exports: accountDetailsClose, accountDetailsInit, clearErrors, disableAccount, getHarvestStatus, requestHarvest, resetAccount, resetAllPending, resetAllTryItOut, resetAndCloseUserProfileForm, resetPendingAccountChanges, resetPendingLegacyUsernameDisabled, resetPendingPrimaryGuildChanges, saveAccountChanges, saveProfileAndAccountChanges, updateAccount
 
-// Module 8657 (saveProfileAndAccountRequest)
+// Module 8665 (saveProfileAndAccountRequest)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
-import str2 from "str2" /* 5264 */;
+import str2 from "str2" /* 5936 */;
 
 require = arg1;
 function saveProfileAndAccountRequest(arg0, arg1) {
@@ -41,7 +41,7 @@ function _saveProfileAndAccountRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -174,8 +174,8 @@ export const disableAccount = function disableAccount(password, arg1) {
   const obj3 = sendRequest;
   const tmp2 = arg1 ? closure_4.DELETE_ACCOUNT : closure_4.DISABLE_ACCOUNT;
   return HTTP.post(obj).then(() => {
-    callback2(5261).logoutInternal();
-    const obj = callback2(5261);
+    callback2(5933).logoutInternal();
+    const obj = callback2(5933);
     callback(1222).transitionTo(constants.DEFAULT_LOGGED_OUT);
   });
 };
@@ -183,7 +183,7 @@ export { saveProfileAndAccountRequest };
 export const saveProfileAndAccountChanges = function saveProfileAndAccountChanges(c0) {
   const avatar = c0.avatar;
   const avatarId = c0.avatarId;
-  ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles } = c0);
+  ({ avatarDecoration, nameplate, primaryGuildId, displayNameStyles, typingIndicatorStyle } = c0);
   ({ username, discriminator, email, emailToken, password, avatarDescription, newPassword, globalName, legacyUsername, avatarOriginalMd5 } = c0);
   let obj = avatarId(709);
   obj.dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT" });
@@ -218,28 +218,36 @@ export const saveProfileAndAccountChanges = function saveProfileAndAccountChange
     obj.display_name_effect_id = null;
     obj.display_name_colors = null;
   }
+  if (undefined !== typingIndicatorStyle) {
+    let result = null;
+    if (null != typingIndicatorStyle) {
+      result = avatar(1937).serializeTypingIndicatorStyle(typingIndicatorStyle);
+      const obj3 = avatar(1937);
+    }
+    obj.typing_indicator_style = result;
+  }
   const Storage = avatar(595).Storage;
   let value = Storage.get(closure_6);
-  const tmp10 = callback2();
-  if (tmp11) {
-    obj.push_provider = tmp10;
+  const tmp12 = callback2();
+  if (tmp13) {
+    obj.push_provider = tmp12;
     obj.push_token = value;
   }
-  const Storage2 = tmp8(595).Storage;
+  const Storage2 = tmp10(595).Storage;
   value = Storage2.get(closure_7);
-  let tmp14 = null != closure_8;
-  if (tmp14) {
-    tmp14 = null != value;
+  let tmp16 = null != closure_8;
+  if (tmp16) {
+    tmp16 = null != value;
   }
-  if (tmp14) {
-    obj.push_voip_provider = tmp13;
+  if (tmp16) {
+    obj.push_voip_provider = tmp15;
     obj.push_voip_token = value;
   }
-  obj = { headers: avatarId(8421).buildHeadersForMd5({ [avatar(8418).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
+  obj = { headers: avatarId(4994).buildHeadersForMd5({ [avatar(8426).SafetyScannedUploadSurface.USER_DEFAULT_PROFILE_AVATAR]: avatarOriginalMd5 }) };
   const tmp = avatarId;
-  tmp11 = null != tmp10 && null != value;
-  tmp13 = closure_8;
-  let tmpResult = avatarId(8421);
+  tmp13 = null != tmp12 && null != value;
+  tmp15 = closure_8;
+  let tmpResult = avatarId(4994);
   return saveProfileAndAccountRequest(obj, obj).then((arg0) => {
     avatarId(closure_1_2[3]).dispatch({ type: "USER_PROFILE_SETTINGS_SUBMIT_SUCCESS" });
     let tmp4 = null == avatar;
@@ -315,14 +323,14 @@ export const saveAccountChanges = function saveAccountChanges(closure_0, close) 
     }
   }
   obj[6] = tmp3;
-  const Storage = password(tmp[7]).Storage;
+  const Storage = password(tmp[8]).Storage;
   let value = Storage.get(closure_6);
   const tmp6 = callback2();
   if (tmp7) {
     obj.push_provider = tmp6;
     obj.push_token = value;
   }
-  const Storage2 = tmp4(tmp[7]).Storage;
+  const Storage2 = tmp4(tmp[8]).Storage;
   value = Storage2.get(closure_7);
   let tmp10 = null != closure_8;
   if (tmp10) {
@@ -348,8 +356,8 @@ export const saveAccountChanges = function saveAccountChanges(closure_0, close) 
     if (undefined !== avatar) {
       obj = { avatarHash: null };
       obj[0] = body.avatar;
-      const result = password(tmp4[10]).trackUserAvatarUpdated(obj);
-      const obj4 = password(tmp4[10]);
+      const result = password(tmp4[11]).trackUserAvatarUpdated(obj);
+      const obj4 = password(tmp4[11]);
     }
     if (null != newPassword) {
       let tmp3Result = tmp3(tmp4[3]);
@@ -365,8 +373,8 @@ export const saveAccountChanges = function saveAccountChanges(closure_0, close) 
       tmp3Result.dispatch(obj2);
     }
     if (close) {
-      tmp3(tmp4[11]).close();
-      const tmp3Result1 = tmp3(tmp4[11]);
+      tmp3(tmp4[12]).close();
+      const tmp3Result1 = tmp3(tmp4[12]);
     } else {
       tmp3(tmp4[3]).dispatch({ type: "USER_SETTINGS_MODAL_SUBMIT_COMPLETE" });
       const tmp3Result2 = tmp3(tmp4[3]);

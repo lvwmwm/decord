@@ -1,14 +1,14 @@
-// Module ID: 15299
-// Function ID: 15300
+// Module ID: 15329
+// Function ID: 15330
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 15276, 8633, 15300, 1236, 15287, 2]
+// Dependencies: [5, 32, 19, 15306, 8641, 15330, 1236, 15317, 2]
 // Exports: usePasswordRegistrationStep
 
-// Module 15299 (usePasswordRegistrationStep)
+// Module 15329 (usePasswordRegistrationStep)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { useRegistrationUIStore } from "useRegistrationUIStore" /* 15276 */;
+import { useRegistrationUIStore } from "useRegistrationUIStore" /* 15306 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/auth/native/components/utils/usePasswordRegistrationStep.tsx");
@@ -63,7 +63,7 @@ export const usePasswordRegistrationStep = function usePasswordRegistrationStep(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

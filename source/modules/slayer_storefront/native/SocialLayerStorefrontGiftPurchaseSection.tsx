@@ -1,20 +1,20 @@
-// Module ID: 10403
-// Function ID: 10404
+// Module ID: 10254
+// Function ID: 10255
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [32, 19, 17, 7433, 1922, 676, 1924, 21, 4668, 712, 5446, 7183, 589, 7165, 514, 4766, 698, 10404, 10395, 500, 709, 10390, 1236, 10399, 4739, 4750, 2]
+// Dependencies: [32, 19, 17, 7031, 1922, 676, 1924, 21, 4380, 712, 5475, 5840, 589, 5822, 514, 4831, 698, 10255, 10246, 500, 709, 10241, 1236, 10250, 4376, 4815, 2]
 // Exports: default
 
-// Module 10403 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 10254 (SocialLayerStorefrontGiftPurchaseSection)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useNativeCheckoutStore } from "context" /* 7433 */;
+import { useNativeCheckoutStore } from "context" /* 7031 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { GiftingOrigin } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

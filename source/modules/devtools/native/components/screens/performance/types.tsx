@@ -1,9 +1,9 @@
-// Module ID: 15246
-// Function ID: 15247
+// Module ID: 15276
+// Function ID: 15277
 // Name: set
 // Dependencies: [2]
 
-// Module 15246 (set)
+// Module 15276 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/devtools/native/components/screens/performance/types.tsx");

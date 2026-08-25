@@ -1,14 +1,16 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 16845
+// Function ID: 16846
 // Name: handleChannelDelete
-// Dependencies: [15528, 10017, 1913, 5043, 2]
+// Dependencies: [1218, 15560, 676, 9859, 1913, 5367, 2]
 
-// Module 16813 (handleChannelDelete)
-import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 5043 */;
-import getNextPositionFromChannels from "getNextPositionFromChannels" /* 10017 */;
-import items from "items" /* 15528 */;
+// Module 16845 (handleChannelDelete)
+import initializeDefault from "initialize" /* 5367 */;
+import getNextPositionFromChannels from "getNextPositionFromChannels" /* 9859 */;
+import closure_2 from "fetchFingerprint" /* 1218 */;
+import items from "items" /* 15560 */;
+import { NOOP } from "ME" /* 676 */;
 
+require = arg1;
 function handleChannelDelete(channel) {
   const result = getNextPositionFromChannels.removeFavoriteChannel(channel.channel.id, { trackAnalytics: false });
 }
@@ -31,18 +33,74 @@ function handleCategoryExpandAll(guildId) {
   }
 }
 function handleLogout() {
-  callback(closure_2);
+  callback(closure_3);
 }
-({ NO_SUGGESTIONS: obj1, setFavoritesGuildSuggestions: c3 } = items);
+function handleThreadMembersUpdate(addedMembers) {
+  addedMembers = addedMembers.addedMembers;
+  let id;
+  id = store.getId();
+  if (tmp2) {
+    const result = id(9859).autoAddJoinedThreadToFavorites(addedMembers.id);
+    result.catch(NOOP);
+    const obj = id(9859);
+  }
+}
+function handleThreadCreate(channel) {
+  channel = channel.channel;
+  let member;
+  if (channel != null) {
+    member = channel.member;
+  }
+  let tmp2 = null != member;
+  if (tmp2) {
+    const joinTimestamp = channel.member.joinTimestamp;
+    let tmp3 = null != joinTimestamp;
+    if (tmp3) {
+      const _Date = Date;
+      const _Date2 = Date;
+      const timestamp = Date.now();
+      const date = new Date(joinTimestamp);
+      tmp3 = timestamp - date.getTime() < 60000;
+    }
+    tmp2 = tmp3;
+  }
+  if (tmp2) {
+    const result = getNextPositionFromChannels.autoAddJoinedThreadToFavorites(channel.id);
+    result.catch(NOOP);
+    const obj2 = getNextPositionFromChannels;
+  }
+}
+function handleThreadMemberUpdate(joinTimestamp) {
+  joinTimestamp = joinTimestamp.joinTimestamp;
+  ({ id, userId } = joinTimestamp);
+  let tmp = store.getId() === userId;
+  if (tmp) {
+    let tmp3 = null != joinTimestamp;
+    if (tmp3) {
+      const _Date = Date;
+      const _Date2 = Date;
+      const timestamp = Date.now();
+      const date = new Date(joinTimestamp);
+      tmp3 = timestamp - date.getTime() < 60000;
+    }
+    tmp = tmp3;
+  }
+  if (tmp) {
+    const result = getNextPositionFromChannels.autoAddJoinedThreadToFavorites(id);
+    result.catch(NOOP);
+    const obj2 = getNextPositionFromChannels;
+  }
+}
+({ NO_SUGGESTIONS: c3, setFavoritesGuildSuggestions: c4 } = items);
 initializeDefault;
 let prototype = function FavoriteManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult.actions = { CHANNEL_DELETE: handleChannelDelete, CATEGORY_COLLAPSE: handleCategoryCollapse, CATEGORY_EXPAND: handleCategoryExpand, CATEGORY_COLLAPSE_ALL: handleCategoryCollapseAll, CATEGORY_EXPAND_ALL: handleCategoryExpandAll, LOGOUT: handleLogout };
+  applyArgumentsResult.actions = { CHANNEL_DELETE: handleChannelDelete, CATEGORY_COLLAPSE: handleCategoryCollapse, CATEGORY_EXPAND: handleCategoryExpand, CATEGORY_COLLAPSE_ALL: handleCategoryCollapseAll, CATEGORY_EXPAND_ALL: handleCategoryExpandAll, LOGOUT: handleLogout, THREAD_CREATE: handleThreadCreate, THREAD_MEMBERS_UPDATE: handleThreadMembersUpdate, THREAD_MEMBER_UPDATE: handleThreadMemberUpdate };
   return applyArgumentsResult;
 }.prototype;
 class prototype extends tmp3 {
 }
 prototype = new prototype();
-let result = set.fileFinishedImporting("modules/favorites/FavoriteManager.tsx");
+let result = require("set").fileFinishedImporting("modules/favorites/FavoriteManager.tsx");
 
 export default prototype;

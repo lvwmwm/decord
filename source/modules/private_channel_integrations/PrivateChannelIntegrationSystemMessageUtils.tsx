@@ -1,13 +1,13 @@
-// Module ID: 8255
-// Function ID: 8256
+// Module ID: 8256
+// Function ID: 8257
 // Name: getPrivateChannelIntegrationAddedSystemMessageContent
-// Dependencies: [676, 1236, 1994, 2]
+// Dependencies: [676, 1236, 1995, 2]
 // Exports: getPrivateChannelIntegrationAddedSystemMessageASTContent, getPrivateChannelIntegrationAddedSystemMessageContent, getPrivateChannelIntegrationRemovedSystemMessageASTContent, getPrivateChannelIntegrationRemovedSystemMessageContent
 
-// Module 8255 (getPrivateChannelIntegrationAddedSystemMessageContent)
+// Module 8256 (getPrivateChannelIntegrationAddedSystemMessageContent)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1994 */;
+import combinedDefault from "combined" /* 1995 */;
 import ME from "ME" /* 676 */;
 
 ({ HelpdeskArticles: c3, NOOP: c4 } = ME);

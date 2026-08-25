@@ -1,15 +1,15 @@
-// Module ID: 13420
-// Function ID: 13421
+// Module ID: 13455
+// Function ID: 13456
 // Name: _sendShareMessage
-// Dependencies: [5, 4830, 4670, 4097, 10494, 8505, 7562, 4834, 4833, 7474, 8490, 7465, 2]
+// Dependencies: [5, 4742, 4373, 4098, 8759, 8512, 7380, 4954, 4953, 7287, 8497, 7063, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 13420 (_sendShareMessage)
-import dispatcherDefault from "dispatcher" /* 4097 */;
-import registerAssetDefault from "registerAsset" /* 10494 */;
+// Module 13455 (_sendShareMessage)
+import dispatcherDefault from "dispatcher" /* 4098 */;
+import registerAssetDefault from "registerAsset" /* 8759 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { DraftType } from "handleChanged" /* 4830 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4670 */;
+import { DraftType } from "handleChanged" /* 4742 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4373 */;
 
 const require = arg1;
 function _sendShareMessage() {
@@ -30,7 +30,7 @@ function _sendShareMessage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -78,13 +78,13 @@ function _sendShareMessage() {
               if (dependencyMap == null) {
                 lib2 = "";
               }
-              constants = lib2(7474).parse(lib2, lib2);
+              constants = lib2(7287).parse(lib2, lib2);
               if (c4.length > 0) {
-                let obj2 = lib2(8505);
+                let obj2 = lib2(8512);
                 obj2.clearAll(id, c4.ChannelMessage);
               }
-              future = new lib(8490).Future();
-              let obj3 = lib2(7465);
+              future = new lib(8497).Future();
+              let obj3 = lib2(7063);
               obj2 = { location: null, doNotNotifyOnError: true, attachmentsToUpload: null, onAttachmentUploadError: null };
               obj2[0] = constants.SHARE_MODAL;
               obj2[2] = c4;

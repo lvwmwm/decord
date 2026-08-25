@@ -1,21 +1,21 @@
-// Module ID: 12382
-// Function ID: 12383
+// Module ID: 12700
+// Function ID: 12701
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4778, 1391, 4033, 1980, 7224, 676, 4549, 10633, 21, 589, 12383, 12389, 12139, 8971, 7177, 7197, 8455, 8996, 8997, 12390, 12391, 9769, 4803, 7204, 9214, 503, 8966, 1236, 4775, 4346, 5265, 12396, 2008, 9775, 10635, 6584, 10634, 8175, 500, 11840, 698, 9774, 8700, 4069, 7205, 4223, 4096, 7211, 12141, 9997, 12395, 8074, 9452, 712, 12397, 2]
+// Dependencies: [32, 19, 17, 4396, 1391, 4034, 1981, 5882, 676, 4401, 10433, 21, 589, 12701, 12707, 12472, 8935, 5834, 5854, 8462, 8958, 8959, 12708, 12709, 9382, 9383, 5861, 9497, 503, 8930, 1236, 4393, 4347, 4611, 12714, 2009, 9391, 10435, 7929, 10434, 8171, 500, 12178, 698, 9390, 4615, 4070, 5862, 4224, 4097, 5868, 12474, 8745, 12713, 7896, 8751, 712, 12715, 2]
 // Exports: default
 
-// Module 12382 (UserProfileOverflowMenu)
+// Module 12700 (UserProfileOverflowMenu)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4778 */;
+import closure_6 from "getParticipants" /* 4396 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "markAllUserIdListsStale" /* 4033 */;
-import closure_9 from "handleConnectionOpen" /* 1980 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import closure_8 from "markAllUserIdListsStale" /* 4034 */;
+import closure_9 from "handleConnectionOpen" /* 1981 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5882 */;
 import ME from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4549 */;
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10633 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4401 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10433 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

@@ -1,24 +1,24 @@
-// Module ID: 16698
-// Function ID: 16699
+// Module ID: 16730
+// Function ID: 16731
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1391, 4830, 1991, 4201, 4829, 13831, 8366, 676, 8365, 1954, 1435, 8747, 7258, 589, 7165, 11, 709, 8505, 1236, 38, 4810, 7624, 8370, 4835, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1391, 4742, 1992, 4202, 4741, 13866, 8372, 676, 8371, 1955, 1435, 10679, 5981, 589, 5822, 11, 709, 8512, 1236, 38, 4627, 7445, 8376, 4955, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16698 (getData)
+// Module 16730 (getData)
 import _modDef38 from "module_38" /* 38 */;
-import isInteractionComponent from "isInteractionComponent" /* 8365 */;
+import isInteractionComponent from "isInteractionComponent" /* 8371 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import { DraftType } from "handleChanged" /* 4830 */;
-import closure_9 from "trackCommunicationDisabled" /* 1991 */;
-import closure_10 from "handleConnectionOpen" /* 4201 */;
-import closure_11 from "map" /* 4829 */;
-import closure_12 from "getModalState" /* 13831 */;
-import { InteractionModalState } from "getModalState" /* 13831 */;
-import closure_14 from "getInteractionComponentStates" /* 8366 */;
+import { DraftType } from "handleChanged" /* 4742 */;
+import closure_9 from "trackCommunicationDisabled" /* 1992 */;
+import closure_10 from "handleConnectionOpen" /* 4202 */;
+import closure_11 from "map" /* 4741 */;
+import closure_12 from "getModalState" /* 13866 */;
+import { InteractionModalState } from "getModalState" /* 13866 */;
+import closure_14 from "getInteractionComponentStates" /* 8372 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;
@@ -2077,7 +2077,7 @@ function _submitModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -2129,7 +2129,7 @@ function _submitModal() {
             obj[0] = arg1;
             return obj;
           } else {
-            closure_5 = arr.map((closure_0, closure_1) => lib(4835).getAttachmentPayload(closure_0, closure_1));
+            closure_5 = arr.map((closure_0, closure_1) => lib(4955).getAttachmentPayload(closure_0, closure_1));
             const obj4 = { uploads: null };
             obj4[0] = arr;
             c6 = callback2(lib.customId, lib.components, obj4);
@@ -2144,7 +2144,7 @@ function _submitModal() {
                   let obj = { url: null, body: null, signal: null, rejectWithError: false };
                   obj[0] = closure_1_15.INTERACTIONS;
                   obj = { type: null, application_id: null, channel_id: null, guild_id: null, data: null, session_id: null, nonce: null };
-                  obj[0] = lib(1954).InteractionTypes.MODAL_SUBMIT;
+                  obj[0] = lib(1955).InteractionTypes.MODAL_SUBMIT;
                   obj[1] = lib.application.id;
                   ({ id: obj2[2], guild_id: obj2[3] } = channel);
                   obj = { id: null, custom_id: null, components: null, attachments: null };
@@ -2175,7 +2175,7 @@ function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c6 = tmp;
@@ -2208,14 +2208,14 @@ export const useIsFirstTextInputInModal = function useIsFirstTextInputInModal(id
   if (first != null) {
     type = first.type;
   }
-  let tmp6 = type === tmp(1954).ComponentType.ACTION_ROW && first.components[0].id === id;
+  let tmp6 = type === tmp(1955).ComponentType.ACTION_ROW && first.components[0].id === id;
   if (!tmp6) {
     let type1;
     if (first != null) {
       type1 = first.type;
     }
-    tmp6 = type1 === tmp(1954).ComponentType.LABEL && first.component.id === id;
-    const tmp8 = type1 === tmp(1954).ComponentType.LABEL && first.component.id === id;
+    tmp6 = type1 === tmp(1955).ComponentType.LABEL && first.component.id === id;
+    const tmp8 = type1 === tmp(1955).ComponentType.LABEL && first.component.id === id;
   }
   return tmp6;
 };
@@ -2251,7 +2251,7 @@ export const useModalState = function useModalState(channelId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -2299,7 +2299,7 @@ export const useModalState = function useModalState(channelId) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp13) {
         c0 = tmp;
         throw tmp13;

@@ -1,17 +1,17 @@
-// Module ID: 10641
-// Function ID: 10642
+// Module ID: 10440
+// Function ID: 10441
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1922, 10608, 21, 4668, 712, 589, 10642, 4223, 9775, 6584, 8175, 4768, 4750, 1236, 4739, 2]
+// Dependencies: [19, 17, 1922, 10406, 21, 4380, 712, 589, 10441, 4224, 9391, 7929, 8171, 4833, 4815, 1236, 4376, 2]
 // Exports: default
 
-// Module 10641 (ConfirmBlockUserAlert)
+// Module 10440 (ConfirmBlockUserAlert)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { LOCATION_CONTEXT_MOBILE } from "LOCATION_CONTEXT_MOBILE" /* 10608 */;
+import { LOCATION_CONTEXT_MOBILE } from "LOCATION_CONTEXT_MOBILE" /* 10406 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

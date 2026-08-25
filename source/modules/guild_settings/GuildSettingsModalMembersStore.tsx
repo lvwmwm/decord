@@ -1,12 +1,12 @@
-// Module ID: 11056
-// Function ID: 11057
+// Module ID: 11398
+// Function ID: 11399
 // Name: handleStopEditingRoles
-// Dependencies: [1991, 676, 589, 709, 2]
+// Dependencies: [1992, 676, 589, 709, 2]
 
-// Module 11056 (handleStopEditingRoles)
+// Module 11398 (handleStopEditingRoles)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "trackCommunicationDisabled" /* 1991 */;
+import closure_0 from "trackCommunicationDisabled" /* 1992 */;
 import { FormStates } from "ME" /* 676 */;
 
 function handleStopEditingRoles() {

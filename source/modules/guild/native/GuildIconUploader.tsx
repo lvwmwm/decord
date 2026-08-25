@@ -1,20 +1,20 @@
-// Module ID: 11016
-// Function ID: 11017
+// Module ID: 11358
+// Function ID: 11359
 // Name: renderIcon
-// Dependencies: [19, 17, 1302, 21, 4668, 712, 4107, 1363, 11017, 11018, 4739, 1236, 11019, 11020, 5438, 2]
+// Dependencies: [19, 17, 1302, 21, 4380, 712, 4108, 1363, 11359, 11360, 4376, 1236, 11361, 11362, 4949, 2]
 
-// Module 11016 (renderIcon)
+// Module 11358 (renderIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import Text from "Text" /* 4739 */;
-import PressableBase from "PressableBase" /* 5438 */;
-import registerAssetDefault from "registerAsset" /* 11019 */;
-import registerAssetDefault2 from "registerAsset" /* 11020 */;
+import Text from "Text" /* 4376 */;
+import PressableBase from "PressableBase" /* 4949 */;
+import registerAssetDefault from "registerAsset" /* 11361 */;
+import registerAssetDefault2 from "registerAsset" /* 11362 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -55,9 +55,9 @@ prototype["renderIcon"] = function renderIcon() {
     ({ guildIcon: arr3[0], emptyGuildIcon: arr3[1] } = tmp);
     obj1[0] = items1;
     if (obj6.isThemeDark(theme.theme)) {
-      let tmp13Result = tmp13(11017);
+      let tmp13Result = tmp13(11359);
     } else {
-      tmp13Result = tmp13(11018);
+      tmp13Result = tmp13(11360);
     }
     obj = { source: null };
     obj[0] = tmp13Result;

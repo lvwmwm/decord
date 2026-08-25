@@ -1,17 +1,17 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17215
+// Function ID: 17216
 // Name: fetchAndUpdateTask
-// Dependencies: [5, 19, 1922, 17177, 17179, 5265, 17178, 4097, 8801, 1236, 2598, 1500, 17182, 2]
+// Dependencies: [5, 19, 1922, 17209, 17211, 4611, 17210, 4098, 10028, 1236, 2599, 1500, 17214, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 17183 (fetchAndUpdateTask)
+// Module 17215 (fetchAndUpdateTask)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2598 */;
-import dispatcherDefault from "dispatcher" /* 4097 */;
-import _modDef5265 from "module_5265" /* 5265 */;
-import registerAssetDefault from "registerAsset" /* 8801 */;
-import TaskType from "TaskType" /* 17177 */;
-import SAFETY_FLOWS_MODAL_KEY from "SAFETY_FLOWS_MODAL_KEY" /* 17178 */;
+import messagesProxyDefault from "messagesProxy" /* 2599 */;
+import dispatcherDefault from "dispatcher" /* 4098 */;
+import _modDef4611 from "module_4611" /* 4611 */;
+import registerAssetDefault from "registerAsset" /* 10028 */;
+import TaskType from "TaskType" /* 17209 */;
+import SAFETY_FLOWS_MODAL_KEY from "SAFETY_FLOWS_MODAL_KEY" /* 17210 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
@@ -54,7 +54,7 @@ function _fetchAndUpdateTask() {
 }
 function navigateToScreenForTask(closure_1, closure_0) {
   if (null == closure_0) {
-    let obj = _modDef5265;
+    let obj = _modDef4611;
     obj.popWithKey(SAFETY_FLOWS_MODAL_KEY.SAFETY_FLOWS_MODAL_KEY);
     obj = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: null, content: null };
     obj[1] = registerAssetDefault;
@@ -67,7 +67,7 @@ function navigateToScreenForTask(closure_1, closure_0) {
     let tmp5 = null;
     if (null != tmp16) {
       let tmp = tmp16;
-      if (task_type === tmp14(17177).TaskType.EMAIL_VERIFICATION) {
+      if (task_type === tmp14(17209).TaskType.EMAIL_VERIFICATION) {
         const currentUser = authStore.getCurrentUser();
         let email;
         if (currentUser != null) {
@@ -75,7 +75,7 @@ function navigateToScreenForTask(closure_1, closure_0) {
         }
         tmp = tmp16;
         if (null != email) {
-          const items = [tmp14(17177).SafetyFlowScreens.VERIFY_EMAIL];
+          const items = [tmp14(17209).SafetyFlowScreens.VERIFY_EMAIL];
           tmp = items;
         }
       }
@@ -84,7 +84,7 @@ function navigateToScreenForTask(closure_1, closure_0) {
     if (null != tmp5) {
       closure_1.push(tmp5[0]);
     } else {
-      closure_1.push(tmp14(17177).SafetyFlowScreens.UPDATE_APP);
+      closure_1.push(tmp14(17209).SafetyFlowScreens.UPDATE_APP);
     }
   }
 }
@@ -95,7 +95,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
   let tmp4 = null;
   if (null != tmp3) {
     let tmp5 = tmp3;
-    if (task_type === tmp(17177).TaskType.EMAIL_VERIFICATION) {
+    if (task_type === tmp(17209).TaskType.EMAIL_VERIFICATION) {
       const currentUser = authStore.getCurrentUser();
       let email;
       if (currentUser != null) {
@@ -103,7 +103,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp3;
       if (null != email) {
-        const items = [tmp(17177).SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [tmp(17209).SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }
@@ -137,7 +137,7 @@ export const useOnTaskComplete = function useOnTaskComplete() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -193,7 +193,7 @@ export const useOnTaskComplete = function useOnTaskComplete() {
             callback = arg1;
             closure_2_8(callback, callback);
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           c4 = tmp;

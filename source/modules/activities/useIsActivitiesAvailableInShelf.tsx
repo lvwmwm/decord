@@ -1,10 +1,10 @@
-// Module ID: 8735
-// Function ID: 8736
+// Module ID: 10757
+// Function ID: 10758
 // Name: useIsActivitiesAvailableInShelf
-// Dependencies: [19, 8736, 8737, 8738, 2]
+// Dependencies: [19, 10723, 10758, 10699, 2]
 // Exports: default
 
-// Module 8735 (useIsActivitiesAvailableInShelf)
+// Module 10757 (useIsActivitiesAvailableInShelf)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
@@ -12,9 +12,9 @@ const result = require("set").fileFinishedImporting("modules/activities/useIsAct
 
 export default function useIsActivitiesAvailableInShelf(arg0, arg1) {
   const _require = arg0;
-  const isActivitiesEnabledForCurrentPlatform = _require(8736).useIsActivitiesEnabledForCurrentPlatform();
+  const isActivitiesEnabledForCurrentPlatform = _require(10723).useIsActivitiesEnabledForCurrentPlatform();
   let tmp3 = null != arg0;
-  let obj = _require(8736);
+  let obj = _require(10723);
   if (tmp3) {
     tmp3 = "" !== arg0;
   }

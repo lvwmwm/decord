@@ -1,12 +1,12 @@
-// Module ID: 16415
-// Function ID: 16416
+// Module ID: 16447
+// Function ID: 16448
 // Name: useCanInviteMembers
-// Dependencies: [1391, 4024, 505, 647, 2]
+// Dependencies: [1391, 4025, 505, 647, 2]
 // Exports: useCanInviteMembers
 
-// Module 16415 (useCanInviteMembers)
+// Module 16447 (useCanInviteMembers)
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

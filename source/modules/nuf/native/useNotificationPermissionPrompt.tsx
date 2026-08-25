@@ -1,15 +1,15 @@
-// Module ID: 15848
-// Function ID: 15849
+// Module ID: 15880
+// Function ID: 15881
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 1384, 4499, 1385, 11627, 589, 1387, 11639, 15849, 15851, 2]
+// Dependencies: [19, 1384, 5102, 1385, 11973, 589, 1387, 11982, 15881, 15883, 2]
 // Exports: default
 
-// Module 15848 (useNotificationPermissionPrompt)
+// Module 15880 (useNotificationPermissionPrompt)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "handleUpdateUser" /* 1384 */;
-import closure_5 from "_handleConnectionOpen" /* 4499 */;
+import closure_5 from "_handleConnectionOpen" /* 5102 */;
 import closure_6 from "handleRequiredAction" /* 1385 */;
-import closure_7 from "set" /* 11627 */;
+import closure_7 from "set" /* 11973 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");
@@ -34,7 +34,7 @@ export default function useNotificationPermissionPrompt() {
     }
   }, items2);
   const obj2 = stateFromStores(589);
-  const guildOpenNudge = stateFromStores(15849).useGuildOpenNudge();
-  const obj3 = stateFromStores(15849);
-  const postCallDisconnectNudge = stateFromStores(15851).usePostCallDisconnectNudge();
+  const guildOpenNudge = stateFromStores(15881).useGuildOpenNudge();
+  const obj3 = stateFromStores(15881);
+  const postCallDisconnectNudge = stateFromStores(15883).usePostCallDisconnectNudge();
 };

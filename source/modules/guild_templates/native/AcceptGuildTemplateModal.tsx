@@ -1,17 +1,17 @@
-// Module ID: 11011
-// Function ID: 11012
+// Module ID: 11353
+// Function ID: 11354
 // Name: ConnectedAcceptGuildTemplate
-// Dependencies: [5, 32, 19, 7467, 676, 21, 4668, 6401, 589, 6814, 11012, 6840, 11013, 4843, 11023, 11010, 6345, 6343, 2]
+// Dependencies: [5, 32, 19, 7065, 676, 21, 4380, 5373, 589, 5337, 11354, 5434, 11355, 4963, 11365, 11352, 5376, 5889, 2]
 // Exports: default
 
-// Module 11011 (ConnectedAcceptGuildTemplate)
+// Module 11353 (ConnectedAcceptGuildTemplate)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
-import closure_7 from "handleGuildTemplateResolveSuccess" /* 7467 */;
+import closure_7 from "handleGuildTemplateResolveSuccess" /* 7065 */;
 import { UPLOAD_MEDIUM_SIZE } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function ConnectedAcceptGuildTemplate(code) {
@@ -26,7 +26,7 @@ function ConnectedAcceptGuildTemplate(code) {
   const items = [closure_7];
   stateFromStores = obj.useStateFromStores(items, () => closure_1_7.getGuildTemplate(code));
   const tmp = callback2();
-  const tmp3 = callback(React.useState(first(6814).getGuildNameSuggestion()), 2);
+  const tmp3 = callback(React.useState(first(5337).getGuildNameSuggestion()), 2);
   first = tmp3[0];
   dependencyMap = tmp3[1];
   const tmp5 = callback(React.useState(null), 2);
@@ -34,7 +34,7 @@ function ConnectedAcceptGuildTemplate(code) {
   callback = tmp5[1];
   const tmp7 = callback(React.useState(null), 2);
   React = tmp7[1];
-  stateFromStores(11012)(stateFromStores);
+  stateFromStores(11354)(stateFromStores);
   obj = { top: true, style: tmp.container, children: null };
   obj = {
     code,
@@ -48,7 +48,7 @@ function ConnectedAcceptGuildTemplate(code) {
     chooseIcon: null,
     createServer: null
   };
-  let obj2 = first(6814);
+  let obj2 = first(5337);
   obj[6] = first1(function*() {
     if (table === 2) {
       table = 3;
@@ -61,7 +61,7 @@ function ConnectedAcceptGuildTemplate(code) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -102,7 +102,7 @@ function ConnectedAcceptGuildTemplate(code) {
             callback(base64);
           }
           table = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         table = tmp;
@@ -112,12 +112,12 @@ function ConnectedAcceptGuildTemplate(code) {
   });
   obj[7] = function createServer() {
     if (null != stateFromStores) {
-      const obj = stateFromStores(11023);
-      stateFromStores(11023).acceptGuildTemplate(tmp.code, first, first1).then(() => callback(table[15]).hideModal(), (arg0) => callback2(arg0));
-      const acceptGuildTemplateResult = stateFromStores(11023).acceptGuildTemplate(tmp.code, first, first1);
+      const obj = stateFromStores(11365);
+      stateFromStores(11365).acceptGuildTemplate(tmp.code, first, first1).then(() => callback(table[15]).hideModal(), (arg0) => callback2(arg0));
+      const acceptGuildTemplateResult = stateFromStores(11365).acceptGuildTemplate(tmp.code, first, first1);
     }
   };
-  obj[2] = jsx(stateFromStores(11013), {
+  obj[2] = jsx(stateFromStores(11355), {
     code,
     guildTemplate: stateFromStores,
     name: first,
@@ -129,7 +129,7 @@ function ConnectedAcceptGuildTemplate(code) {
     chooseIcon: null,
     createServer: null
   });
-  return jsx(code(6840).SafeAreaPaddingView, {
+  return jsx(code(5434).SafeAreaPaddingView, {
     code,
     guildTemplate: stateFromStores,
     name: first,
@@ -168,5 +168,5 @@ export default function AcceptGuildTemplateModal(code) {
     obj[closure_1_12] = obj;
     return obj;
   }, items);
-  return jsx(code(6343).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
+  return jsx(code(5889).Navigator, { initialRouteName: ACCEPT_GUILD_TEMPLATE, screens: memo });
 };

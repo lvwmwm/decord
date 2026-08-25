@@ -1,14 +1,14 @@
-// Module ID: 5499
-// Function ID: 5500
+// Module ID: 6181
+// Function ID: 6182
 // Name: AgeVerificationSpotIllustration
-// Dependencies: [21, 5454, 5500, 2]
+// Dependencies: [21, 5374, 6182, 2]
 // Exports: AgeVerificationSpotIllustration
 
-// Module 5499 (AgeVerificationSpotIllustration)
+// Module 6181 (AgeVerificationSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5500 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6182 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AgeVerificationSpotIllustration.native.tsx");

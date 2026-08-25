@@ -1,9 +1,9 @@
-// Module ID: 1941
-// Function ID: 1942
+// Module ID: 1939
+// Function ID: 1940
 // Name: create
-// Dependencies: [32, 1307, 1336, 1942, 1337, 2]
+// Dependencies: [32, 1307, 1336, 1940, 1337, 2]
 
-// Module 1941 (create)
+// Module 1939 (create)
 import _mod1307 from "module_1307" /* 1307 */;
 import now from "now" /* 1336 */;
 import defineProperty from "defineProperty" /* 1337 */;
@@ -458,7 +458,7 @@ const items2 = [
     kind: "enum",
     repeat: 1,
     T() {
-      const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1942).ClassificationType];
+      const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1940).ClassificationType];
       return items;
     }
   },
@@ -483,7 +483,7 @@ class BannedState$Type extends MessageType5 {
       kind: "enum",
       repeat: 1,
       T() {
-            const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1942).ClassificationType];
+            const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1940).ClassificationType];
             return items;
           }
     };
@@ -624,7 +624,7 @@ const items3 = [
     kind: "enum",
     repeat: 1,
     T() {
-      const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1942).ClassificationType];
+      const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1940).ClassificationType];
       return items;
     }
   },
@@ -1000,7 +1000,7 @@ const obj4 = {
   kind: "enum",
   repeat: 1,
   T() {
-    const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1942).ClassificationType];
+    const items = ["discord_protos.safety_common.v1.ClassificationType", callback(1940).ClassificationType];
     return items;
   }
 };

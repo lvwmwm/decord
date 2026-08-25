@@ -1,18 +1,18 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 12244
+// Function ID: 12245
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 4668, 6401, 712, 4739, 4750, 1236, 2]
+// Dependencies: [19, 17, 21, 4380, 5373, 712, 4376, 4815, 1236, 2]
 // Exports: default
 
-// Module 11910 (NewUserPermissionsOnboarding)
+// Module 12244 (NewUserPermissionsOnboarding)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import Button from "Button" /* 4750 */;
+import Text from "Text" /* 4376 */;
+import Button from "Button" /* 4815 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;
@@ -72,7 +72,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
     const intl2 = tmp6(1236).intl;
     obj8[1] = intl2.string(tmp6(1236).t["5Wxrcd"]);
     obj8[2] = onDontAllow;
-    obj7[1] = tmp4(tmp6(4750).Button, obj8);
+    obj7[1] = tmp4(tmp6(4815).Button, obj8);
     flag = tmp4(tmp5, obj7);
   }
   const obj9 = { children: null };

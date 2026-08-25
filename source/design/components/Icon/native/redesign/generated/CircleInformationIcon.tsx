@@ -1,15 +1,15 @@
-// Module ID: 4334
-// Function ID: 4335
+// Module ID: 4335
+// Function ID: 4336
 // Name: CircleInformationIcon
-// Dependencies: [19, 17, 21, 712, 4099, 4335, 4336, 2]
+// Dependencies: [19, 17, 21, 712, 4100, 4336, 4337, 2]
 // Exports: CircleInformationIcon
 
-// Module 4334 (CircleInformationIcon)
+// Module 4335 (CircleInformationIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 4335 */;
-import registerAsset2 from "registerAsset" /* 4336 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 4336 */;
+import registerAsset2 from "registerAsset" /* 4337 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 9795
-// Function ID: 9796
+// Module ID: 10572
+// Function ID: 10573
 // Name: styles
-// Dependencies: [4668, 712, 2]
+// Dependencies: [4380, 712, 2]
 
-// Module 9795 (styles)
+// Module 10572 (styles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 let obj = { container: null, navHeader: null, content: null, title: null, stepHeader: null, body: null, bodyContent: null, footerContainer: null, footerButton: null };
 obj = { flex: 1, alignItems: "stretch", justifyContent: "flex-start", backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };

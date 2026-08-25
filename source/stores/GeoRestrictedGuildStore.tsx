@@ -1,9 +1,9 @@
-// Module ID: 13352
-// Function ID: 13353
+// Module ID: 13213
+// Function ID: 13214
 // Name: getGeoRestrictedGuilds
 // Dependencies: [589, 709, 2]
 
-// Module 13352 (getGeoRestrictedGuilds)
+// Module 13213 (getGeoRestrictedGuilds)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

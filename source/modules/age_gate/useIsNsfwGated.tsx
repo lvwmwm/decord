@@ -1,11 +1,11 @@
-// Module ID: 8551
-// Function ID: 8552
+// Module ID: 8559
+// Function ID: 8560
 // Name: useIsNsfwGated
-// Dependencies: [5258, 1922, 589, 2]
+// Dependencies: [4620, 1922, 589, 2]
 // Exports: default
 
-// Module 8551 (useIsNsfwGated)
-import closure_2 from "initialize" /* 5258 */;
+// Module 8559 (useIsNsfwGated)
+import closure_2 from "initialize" /* 4620 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;

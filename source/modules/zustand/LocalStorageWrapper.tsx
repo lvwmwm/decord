@@ -1,9 +1,9 @@
-// Module ID: 7495
-// Function ID: 7496
+// Module ID: 7309
+// Function ID: 7310
 // Name: frozen
 // Dependencies: [595, 2]
 
-// Module 7495 (frozen)
+// Module 7309 (frozen)
 import set from "set" /* 2 */;
 import Storage2 from "Storage" /* 595 */;
 

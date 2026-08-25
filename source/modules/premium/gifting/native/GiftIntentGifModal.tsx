@@ -1,10 +1,10 @@
-// Module ID: 11034
-// Function ID: 11035
+// Module ID: 11376
+// Function ID: 11377
 // Name: _sendGiftIntentGif
-// Dependencies: [32, 5, 19, 17, 1391, 676, 4670, 21, 4668, 712, 7465, 7474, 698, 7197, 5446, 589, 8131, 1236, 11035, 10232, 4750, 5265, 7165, 6345, 6343, 2]
+// Dependencies: [32, 5, 19, 17, 1391, 676, 4373, 21, 4380, 712, 7063, 7287, 698, 5854, 5475, 589, 8127, 1236, 11377, 10083, 4815, 4611, 5822, 5376, 5889, 2]
 // Exports: default
 
-// Module 11034 (_sendGiftIntentGif)
+// Module 11376 (_sendGiftIntentGif)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
@@ -12,9 +12,9 @@ import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4670 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4373 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function _sendGiftIntentGif() {
@@ -35,7 +35,7 @@ function _sendGiftIntentGif() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -113,7 +113,7 @@ function _sendGiftIntentGif() {
               obj5[2] = items;
               callback(c2[12]).track(constants.GIFT_INTENT_MESSAGE_SENT, obj5);
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             obj2 = callback(c2[10]);
             const id = user.id;

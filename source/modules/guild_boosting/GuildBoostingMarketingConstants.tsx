@@ -1,13 +1,13 @@
-// Module ID: 11784
-// Function ID: 11785
+// Module ID: 12124
+// Function ID: 12125
 // Name: BoostedGuildTiers
-// Dependencies: [676, 1924, 4270, 1236, 2]
+// Dependencies: [676, 1924, 4271, 1236, 2]
 
-// Module 11784 (BoostedGuildTiers)
+// Module 12124 (BoostedGuildTiers)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
-import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4270 */;
+import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4271 */;
 import ME from "ME" /* 676 */;
 
 const BoostedGuildTiers = ME.BoostedGuildTiers;

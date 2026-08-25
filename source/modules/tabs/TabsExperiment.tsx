@@ -1,9 +1,9 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 11247
+// Function ID: 11248
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 12086 (apexExperiment)
+// Module 11247 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

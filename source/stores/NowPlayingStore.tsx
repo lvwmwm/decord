@@ -1,13 +1,13 @@
-// Module ID: 13354
-// Function ID: 13355
+// Module ID: 13215
+// Function ID: 13216
 // Name: _handlePresenceUpdate
-// Dependencies: [5412, 4564, 1922, 676, 13355, 589, 709, 2]
+// Dependencies: [7265, 4469, 1922, 676, 13216, 589, 709, 2]
 
-// Module 13354 (_handlePresenceUpdate)
+// Module 13215 (_handlePresenceUpdate)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "recomputeAffinities" /* 5412 */;
-import closure_3 from "sortActivity" /* 4564 */;
+import closure_2 from "recomputeAffinities" /* 7265 */;
+import closure_3 from "sortActivity" /* 4469 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { ActivityTypes } from "ME" /* 676 */;
 

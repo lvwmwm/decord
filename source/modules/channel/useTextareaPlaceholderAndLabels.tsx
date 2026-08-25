@@ -1,13 +1,13 @@
-// Module ID: 11209
-// Function ID: 11210
+// Module ID: 11556
+// Function ID: 11557
 // Name: useTextareaPlaceholderAndLabels
-// Dependencies: [676, 4989, 1236, 2]
+// Dependencies: [676, 4574, 1236, 2]
 // Exports: default
 
-// Module 11209 (useTextareaPlaceholderAndLabels)
+// Module 11556 (useTextareaPlaceholderAndLabels)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import computeChannelNameDefault from "computeChannelName" /* 4989 */;
+import computeChannelNameDefault from "computeChannelName" /* 4574 */;
 import ME from "ME" /* 676 */;
 
 ({ ChannelTypes: c3, ChannelTypesSets: c4 } = ME);

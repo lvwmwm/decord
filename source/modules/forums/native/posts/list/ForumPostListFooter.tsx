@@ -1,20 +1,20 @@
-// Module ID: 11253
-// Function ID: 11254
+// Module ID: 11613
+// Function ID: 11614
 // Name: ForumPostListFooter
-// Dependencies: [19, 17, 676, 21, 4668, 712, 11190, 11246, 11247, 10666, 2]
+// Dependencies: [19, 17, 676, 21, 4380, 712, 11534, 11606, 11607, 10465, 2]
 // Exports: default
 
-// Module 11253 (ForumPostListFooter)
+// Module 11613 (ForumPostListFooter)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import MaxForumPostReactions from "MaxForumPostReactions" /* 10666 */;
-import useTypingUserIds from "useTypingUserIds" /* 11190 */;
-import num2Default from "num2" /* 11246 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11247 */;
+import MaxForumPostReactions from "MaxForumPostReactions" /* 10465 */;
+import useTypingUserIds from "useTypingUserIds" /* 11534 */;
+import num2Default from "num2" /* 11606 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11607 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticsObjects } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

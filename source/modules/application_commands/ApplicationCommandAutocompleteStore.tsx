@@ -1,13 +1,13 @@
-// Module ID: 7564
-// Function ID: 7565
+// Module ID: 7382
+// Function ID: 7383
 // Name: handleInit
-// Dependencies: [7565, 676, 500, 1954, 5047, 589, 709, 2]
+// Dependencies: [7383, 676, 500, 1955, 4588, 589, 709, 2]
 
-// Module 7564 (handleInit)
+// Module 7382 (handleInit)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
-import closure_2 from "handleInit" /* 7565 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4588 */;
+import closure_2 from "handleInit" /* 7383 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import set from "set" /* 500 */;
 
@@ -298,7 +298,7 @@ set = {
         if (activeOption != null) {
           type = activeOption.type;
         }
-        tmp29 = type === _require(1954).ApplicationCommandOptionType.INTEGER;
+        tmp29 = type === _require(1955).ApplicationCommandOptionType.INTEGER;
       }
       _require = tmp29;
       let mapped;
@@ -332,7 +332,7 @@ set = {
       obj = { duration_ms: null, error: false, num_options: null };
       obj[0] = num;
       obj[2] = mapped.length;
-      _require(5047).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
+      _require(4588).trackWithMetadata(AnalyticEvents.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, obj);
       map2.delete(nonce);
       const optionNameToAutocompleteQueries3 = value.optionNameToAutocompleteQueries;
       const value2 = optionNameToAutocompleteQueries3.get(value.name);

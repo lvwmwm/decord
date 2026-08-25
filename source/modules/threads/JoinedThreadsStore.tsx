@@ -1,14 +1,14 @@
-// Module ID: 4026
-// Function ID: 4027
+// Module ID: 4027
+// Function ID: 4028
 // Name: storeThread
-// Dependencies: [1395, 1218, 4027, 12, 589, 709, 2]
+// Dependencies: [1395, 1218, 4028, 12, 589, 709, 2]
 
-// Module 4026 (storeThread)
+// Module 4027 (storeThread)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
-import resetDefault from "reset" /* 4027 */;
+import resetDefault from "reset" /* 4028 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import set from "set" /* 2 */;
 

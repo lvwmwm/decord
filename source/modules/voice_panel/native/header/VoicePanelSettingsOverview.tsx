@@ -1,36 +1,36 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16456
+// Function ID: 16457
 // Name: VoicePanelSettingsOverviewHeader
-// Dependencies: [19, 1390, 4778, 8720, 1218, 1391, 4501, 4024, 1922, 4550, 676, 4549, 9749, 21, 4668, 712, 589, 16425, 4989, 9765, 9728, 7228, 4739, 9784, 1236, 6928, 7, 4097, 16422, 9104, 6322, 6327, 14934, 8173, 6328, 709, 7216, 4069, 9693, 8703, 8171, 12600, 4346, 16426, 2008, 9751, 9768, 16427, 16415, 16373, 10674, 9715, 16428, 7393, 16429, 9720, 16430, 8037, 12596, 10030, 10031, 2]
+// Dependencies: [19, 1390, 4396, 10743, 1218, 1391, 4431, 4025, 1922, 4455, 676, 4401, 9359, 21, 4380, 712, 589, 16457, 4574, 9376, 9338, 5887, 4376, 12419, 1236, 4925, 7, 4098, 16454, 9070, 5480, 5486, 14964, 8169, 5487, 709, 5874, 4070, 9303, 4609, 8167, 10932, 4347, 16458, 2009, 9361, 9381, 16459, 16447, 16405, 10473, 9325, 16460, 6120, 16461, 9330, 16462, 7859, 10911, 9872, 9873, 2]
 
-// Module 16424 (VoicePanelSettingsOverviewHeader)
+// Module 16456 (VoicePanelSettingsOverviewHeader)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import TableRowInner from "TableRowInner" /* 6322 */;
-import TableRowIcon from "TableRowIcon" /* 6327 */;
-import TableRowArrow from "TableRowArrow" /* 6328 */;
-import TableSwitchRow from "TableSwitchRow" /* 7216 */;
-import registerAssetDefault from "registerAsset" /* 8173 */;
-import useIsUserSecureFramesVerified from "useIsUserSecureFramesVerified" /* 9728 */;
-import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9765 */;
-import WrenchIcon from "WrenchIcon" /* 14934 */;
+import Text from "Text" /* 4376 */;
+import TableRowInner from "TableRowInner" /* 5480 */;
+import TableRowIcon from "TableRowIcon" /* 5486 */;
+import TableRowArrow from "TableRowArrow" /* 5487 */;
+import TableSwitchRow from "TableSwitchRow" /* 5874 */;
+import registerAssetDefault from "registerAsset" /* 8169 */;
+import useIsUserSecureFramesVerified from "useIsUserSecureFramesVerified" /* 9338 */;
+import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9376 */;
+import WrenchIcon from "WrenchIcon" /* 14964 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "participantFromServer" /* 1390 */;
-import closure_5 from "getParticipants" /* 4778 */;
-import closure_6 from "initialize" /* 8720 */;
+import closure_5 from "getParticipants" /* 4396 */;
+import closure_6 from "initialize" /* 10743 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4501 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_9 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4025 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import closure_12 from "getVoiceStatesForGuild" /* 4550 */;
+import closure_12 from "getVoiceStatesForGuild" /* 4455 */;
 import ME from "ME" /* 676 */;
-import { isStreamParticipant } from "ParticipantTypes" /* 4549 */;
-import { SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_SHEET_KEY as closure_17 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9749 */;
+import { isStreamParticipant } from "ParticipantTypes" /* 4401 */;
+import { SECURE_FRAMES_CALL_VERIFICATION_BOTTOM_SHEET_KEY as closure_17 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9359 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class VoicePanelSettingsOverviewHeader {

@@ -1,16 +1,16 @@
-// Module ID: 15087
-// Function ID: 15088
+// Module ID: 15117
+// Function ID: 15118
 // Name: toggle
-// Dependencies: [15075, 8238, 4069, 7395, 10708, 1236, 2]
+// Dependencies: [15105, 8235, 4070, 6122, 10516, 1236, 2]
 
-// Module 15087 (toggle)
+// Module 15117 (toggle)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 7395 */;
-import MobileUserSettings from "MobileUserSettings" /* 8238 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15075 */;
-import createToggle from "createToggle" /* 10708 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 6122 */;
+import MobileUserSettings from "MobileUserSettings" /* 8235 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15105 */;
+import createToggle from "createToggle" /* 10516 */;
 
 ({ getSelectedGuildId: obj1, useUserSafetySettingsSelectedGuildStore: c3 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
 const toggle = createToggle.createToggle({

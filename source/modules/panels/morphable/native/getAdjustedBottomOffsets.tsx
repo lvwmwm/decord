@@ -1,10 +1,10 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16360
+// Function ID: 16361
 // Name: t
 // Dependencies: [500, 2]
 // Exports: default
 
-// Module 16328 (t)
+// Module 16360 (t)
 import set from "set" /* 500 */;
 
 set = set.isAndroid();

@@ -1,14 +1,14 @@
-// Module ID: 5533
-// Function ID: 5534
+// Module ID: 6215
+// Function ID: 6216
 // Name: AvatarRoseExample
-// Dependencies: [21, 5454, 5534, 2]
+// Dependencies: [21, 5374, 6216, 2]
 // Exports: AvatarRoseExample
 
-// Module 5533 (AvatarRoseExample)
+// Module 6215 (AvatarRoseExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5534 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6216 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarRoseExample.native.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 8413
-// Function ID: 8414
+// Module ID: 8421
+// Function ID: 8422
 // Name: setPendingChanges
-// Dependencies: [1991, 1922, 5370, 4638, 8414, 709, 2]
+// Dependencies: [1992, 1922, 7227, 4543, 8422, 709, 2]
 // Exports: setPendingChanges
 
-// Module 8413 (setPendingChanges)
+// Module 8421 (setPendingChanges)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isEqualDefault from "isEqual" /* 4638 */;
-import guildHasTag from "guildHasTag" /* 8414 */;
-import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import isEqualDefault from "isEqual" /* 4543 */;
+import guildHasTag from "guildHasTag" /* 8422 */;
+import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "createUserWidgetFromServer" /* 5370 */;
+import closure_5 from "createUserWidgetFromServer" /* 7227 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/UserProfileSettingsActionCreators.tsx");
@@ -73,6 +73,19 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       }
       obj.pendingDisplayNameStyles = isEqualDefault(tmp13, displayNameStyles1) ? undefined : displayNameStyles;
       const tmp12 = isEqualDefault;
+    }
+    if ("customTypingIndicatorStyle" in merged) {
+      const customTypingIndicatorStyle = merged.customTypingIndicatorStyle;
+      let tmp17 = customTypingIndicatorStyle;
+      if (customTypingIndicatorStyle == null) {
+        tmp17 = null;
+      }
+      let typingIndicatorStyle = currentUser.typingIndicatorStyle;
+      if (typingIndicatorStyle == null) {
+        typingIndicatorStyle = null;
+      }
+      obj.pendingCustomTypingIndicatorStyle = isEqualDefault(tmp17, typingIndicatorStyle) ? undefined : customTypingIndicatorStyle;
+      const tmp16 = isEqualDefault;
     }
     if ("pronouns" in merged) {
       let pronouns;
@@ -256,17 +269,17 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       if (accentColor1 == null) {
         accentColor1 = null;
       }
-      let tmp36;
+      let tmp41;
       if (accentColor !== accentColor1) {
-        tmp36 = accentColor;
+        tmp41 = accentColor;
       }
-      obj.pendingAccentColor = tmp36;
+      obj.pendingAccentColor = tmp41;
     }
     if ("themeColors" in merged) {
       if (null != guildId) {
         if (null != merged.themeColors) {
           if (null == merged.themeColors[0]) {
-            let tmp37 = null;
+            let tmp42 = null;
           }
           let themeColors;
           if (userProfile != null) {
@@ -275,7 +288,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
           if (themeColors == null) {
             themeColors = null;
           }
-          if (isEqualDefault(tmp37, themeColors)) {
+          if (isEqualDefault(tmp42, themeColors)) {
             obj.pendingThemeColors = undefined;
           } else {
             obj.pendingThemeColors = merged.themeColors;
@@ -286,7 +299,7 @@ export const setPendingChanges = function setPendingChanges(guildId) {
       if (themeColors1 == null) {
         themeColors1 = null;
       }
-      tmp37 = themeColors1;
+      tmp42 = themeColors1;
     }
     if ("bio" in merged) {
       let bio;

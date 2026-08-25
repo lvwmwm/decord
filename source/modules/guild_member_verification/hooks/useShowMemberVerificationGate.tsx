@@ -1,12 +1,12 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 4892
+// Function ID: 4893
 // Name: shouldShowMembershipVerificationGate
-// Dependencies: [1991, 1910, 1922, 6897, 589, 2]
+// Dependencies: [1992, 1910, 1922, 4893, 589, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 6896 (shouldShowMembershipVerificationGate)
-import isValidFormResponse from "isValidFormResponse" /* 6897 */;
-import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+// Module 4892 (shouldShowMembershipVerificationGate)
+import isValidFormResponse from "isValidFormResponse" /* 4893 */;
+import closure_2 from "trackCommunicationDisabled" /* 1992 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 

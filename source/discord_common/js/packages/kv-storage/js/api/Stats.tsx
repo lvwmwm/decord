@@ -1,11 +1,11 @@
-// Module ID: 1971
-// Function ID: 1972
+// Module ID: 1972
+// Function ID: 1973
 // Name: malformedValueCount
-// Dependencies: [1964, 2]
+// Dependencies: [1965, 2]
 
-// Module 1971 (malformedValueCount)
+// Module 1972 (malformedValueCount)
 import set from "set" /* 2 */;
-import open from "open" /* 1964 */;
+import open from "open" /* 1965 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Stats.tsx");
 const prototype = function Stats() {

@@ -1,14 +1,14 @@
-// Module ID: 13959
-// Function ID: 13960
+// Module ID: 13994
+// Function ID: 13995
 // Name: registerTransport
-// Dependencies: [5, 4281, 676, 12, 8795, 8789, 13935, 698, 38, 13960, 687, 2]
+// Dependencies: [5, 4282, 676, 12, 10830, 10824, 13970, 698, 38, 13995, 687, 2]
 
-// Module 13959 (registerTransport)
+// Module 13994 (registerTransport)
 import applyDefault from "apply" /* 12 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import transformUserDefault from "transformUser" /* 8795 */;
+import transformUserDefault from "transformUser" /* 10830 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4281 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4282 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -165,7 +165,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -288,7 +288,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -439,7 +439,7 @@ prototype["handleRequest"] = function handleRequest(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

@@ -1,10 +1,10 @@
-// Module ID: 6319
-// Function ID: 6320
+// Module ID: 5439
+// Function ID: 5440
 // Name: TABLE_ROW_HEIGHT
 // Dependencies: [17, 2]
 // Exports: getTableDividerWidth
 
-// Module 6319 (TABLE_ROW_HEIGHT)
+// Module 5439 (TABLE_ROW_HEIGHT)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

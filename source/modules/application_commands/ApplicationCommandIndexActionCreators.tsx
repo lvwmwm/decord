@@ -1,10 +1,10 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 8498
+// Function ID: 8499
 // Name: _fetchApplicationCommandIndex
 // Dependencies: [5, 676, 709, 530, 687, 698, 1370, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 8491 (_fetchApplicationCommandIndex)
+// Module 8498 (_fetchApplicationCommandIndex)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
@@ -29,7 +29,7 @@ function _fetchApplicationCommandIndex() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ function _fetchApplicationCommandIndex() {
                   closure_0 = arg0;
                   c2 = 0;
                   c3 = 0;
-                  return (/* F121685 */ function*() { ... })();
+                  return (/* F121928 */ function*() { ... })();
                 });
                 closure_7 = tmp;
                 const apply = tmp.apply;
@@ -173,7 +173,7 @@ function _fetchApplicationCommandIndex() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c2 = tmp;

@@ -1,9 +1,9 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 10854
+// Function ID: 10855
 // Name: RTC_PANEL_HEIGHT
 // Dependencies: [2]
 
-// Module 12550 (RTC_PANEL_HEIGHT)
+// Module 10854 (RTC_PANEL_HEIGHT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/connectivity/native/ConnectivityConstants.tsx");

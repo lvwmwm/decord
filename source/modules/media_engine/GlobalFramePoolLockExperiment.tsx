@@ -1,10 +1,10 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13311
+// Function ID: 13312
 // Name: getGlobalFramePoolLockExperimentConfig
 // Dependencies: [1368, 2]
 // Exports: getGlobalFramePoolLockExperimentConfig
 
-// Module 13172 (getGlobalFramePoolLockExperimentConfig)
+// Module 13311 (getGlobalFramePoolLockExperimentConfig)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 let obj = { 1: null };

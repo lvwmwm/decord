@@ -1,21 +1,21 @@
-// Module ID: 16658
-// Function ID: 16659
+// Module ID: 16690
+// Function ID: 16691
 // Name: optOutEligibilityCheck
-// Dependencies: [7232, 4544, 16659, 10850, 7231, 4069, 595, 12, 16660, 5043, 2]
+// Dependencies: [5942, 4454, 16691, 11174, 5941, 4070, 595, 12, 16692, 5367, 2]
 
-// Module 16658 (optOutEligibilityCheck)
+// Module 16690 (optOutEligibilityCheck)
 import apply from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 5043 */;
-import useIsSearchResultsFeedbackExperimentEnabled from "useIsSearchResultsFeedbackExperimentEnabled" /* 16660 */;
-import closure_2 from "set" /* 7232 */;
-import closure_3 from "createRTCConnection" /* 4544 */;
-import closure_4 from "initialize" /* 16659 */;
-import FeedbackRating from "FeedbackRating" /* 10850 */;
+import initializeDefault from "initialize" /* 5367 */;
+import useIsSearchResultsFeedbackExperimentEnabled from "useIsSearchResultsFeedbackExperimentEnabled" /* 16692 */;
+import closure_2 from "set" /* 5942 */;
+import closure_3 from "createRTCConnection" /* 4454 */;
+import closure_4 from "initialize" /* 16691 */;
+import FeedbackRating from "FeedbackRating" /* 11174 */;
 
 require = arg1;
 function optOutEligibilityCheck(hotspot) {
   const _require = hotspot;
-  const InAppFeedbackStates = _require(4069).InAppFeedbackStates;
+  const InAppFeedbackStates = _require(4070).InAppFeedbackStates;
   const tmp3 = InAppFeedbackStates.getSetting()[hotspot.feedbackType];
   let optOutExpiryTime;
   if (tmp3 != null) {
@@ -36,7 +36,7 @@ function optOutEligibilityCheck(hotspot) {
     tmp10 = !tmp5;
   }
   if (tmp10) {
-    const InAppFeedbackStates2 = _require(4069).InAppFeedbackStates;
+    const InAppFeedbackStates2 = _require(4070).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -58,7 +58,7 @@ function triggerRateEligibilityCheck(chance) {
 }
 function recencyEligibilityCheck(cooldown, storageKey) {
   const _require = storageKey;
-  const InAppFeedbackStates = _require(4069).InAppFeedbackStates;
+  const InAppFeedbackStates = _require(4070).InAppFeedbackStates;
   const tmp3 = InAppFeedbackStates.getSetting()[storageKey.feedbackType];
   let lastImpressionTime;
   if (tmp3 != null) {
@@ -86,7 +86,7 @@ function recencyEligibilityCheck(cooldown, storageKey) {
     isNaNResult = Number.isNaN(tmp7);
   }
   if (!isNaNResult) {
-    const InAppFeedbackStates2 = tmp(4069).InAppFeedbackStates;
+    const InAppFeedbackStates2 = tmp(4070).InAppFeedbackStates;
     InAppFeedbackStates2.updateSetting((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);

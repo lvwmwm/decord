@@ -1,9 +1,9 @@
-// Module ID: 5710
-// Function ID: 5711
+// Module ID: 6396
+// Function ID: 6397
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5710 (metadata)
+// Module 6396 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EnvelopeSpotIllustration-2x.png.js");

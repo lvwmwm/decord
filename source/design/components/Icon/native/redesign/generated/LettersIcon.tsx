@@ -1,14 +1,14 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 7869
+// Function ID: 7870
 // Name: LettersIcon
-// Dependencies: [19, 21, 712, 4099, 8048, 2]
+// Dependencies: [19, 21, 712, 4100, 7870, 2]
 // Exports: LettersIcon
 
-// Module 8047 (LettersIcon)
+// Module 7869 (LettersIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 8048 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 7870 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

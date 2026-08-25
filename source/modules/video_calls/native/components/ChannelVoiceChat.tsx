@@ -1,14 +1,14 @@
-// Module ID: 10048
-// Function ID: 10049
-// Dependencies: [19, 17, 8706, 21, 4668, 712, 9121, 1629, 10049, 12, 8712, 4314, 9128, 10050, 8071, 10585, 5438, 1236, 1297, 10815, 11998, 2]
+// Module ID: 9894
+// Function ID: 9895
+// Dependencies: [19, 17, 9895, 21, 4380, 712, 9901, 1629, 9904, 12, 9899, 4315, 4951, 9905, 7893, 10382, 4949, 1236, 1297, 11139, 12326, 2]
 
-// Module 10048
+// Module 9894
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useIsVoiceChatFocused } from "VoiceChatDrawerState" /* 8706 */;
+import { useIsVoiceChatFocused } from "VoiceChatDrawerState" /* 9895 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -45,7 +45,7 @@ const memoResult = importAllResult.memo((channel) => {
   const tmp6 = guild_id(1629)();
   const top = tmp6.top;
   ({ left, right } = tmp6);
-  obj1 = id(10049);
+  obj1 = id(9904);
   const voiceChatNavigationContext = obj1.useVoiceChatNavigationContext();
   let openVoice;
   if (voiceChatNavigationContext != null) {
@@ -54,8 +54,8 @@ const memoResult = importAllResult.memo((channel) => {
   if (openVoice == null) {
     openVoice = tmp4(12).noop;
   }
-  const isConnectedToVoiceChannel = id(8712).useIsConnectedToVoiceChannel(channel.channel);
-  const tmp7Result = id(8712);
+  const isConnectedToVoiceChannel = id(9899).useIsConnectedToVoiceChannel(channel.channel);
+  const tmp7Result = id(9899);
   let str = "no-hide-descendants";
   const ref = obj.useRef(null);
   if (tmp2) {
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo((channel) => {
   }
   items1[1] = tmp15;
   obj[2] = items1;
-  const items2 = [callback(guild_id(9128), { absolute: true, tall: true }), ];
+  const items2 = [callback(guild_id(4951), { absolute: true, tall: true }), ];
   obj1 = { guildId: guild_id, channelId: id, children: null };
   let tmp16Result = null;
   if (!flag) {
@@ -84,9 +84,9 @@ const memoResult = importAllResult.memo((channel) => {
       str2 = "dark-content";
     }
     obj2[2] = str2;
-    tmp16Result = tmp16(tmp4(8071), obj2);
+    tmp16Result = tmp16(tmp4(7893), obj2);
     const tmp19 = !tmp2;
-    const tmp4Result = tmp4(8071);
+    const tmp4Result = tmp4(7893);
   }
   const items3 = [tmp16Result, , , , ];
   const items4 = [tmp.safeAreaTop, ];
@@ -105,7 +105,7 @@ const memoResult = importAllResult.memo((channel) => {
   }
   items5[1] = { display: str5 };
   items3[2] = callback(View, { style: items5 });
-  items3[3] = callback(guild_id(10585), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
+  items3[3] = callback(guild_id(10382), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
   const items6 = [tmp.chatHeader, ];
   const obj4 = { top, display: null };
   let str6;
@@ -119,15 +119,15 @@ const memoResult = importAllResult.memo((channel) => {
   const intl = tmp7(1236).intl;
   obj6[2] = intl.string(id(1236).t["13/7kX"]);
   obj6[3] = tmp.chatHeaderBackIconContainer;
-  const tmp12 = guild_id(4314)();
-  obj6[4] = callback(id(1297).Icon, { source: guild_id(10815), size: id(1297).Icon.Sizes.MEDIUM });
-  const items7 = [callback(id(5438).PressableOpacity, obj6), ];
-  const obj7 = { source: guild_id(10815), size: id(1297).Icon.Sizes.MEDIUM };
-  items7[1] = callback(View, { style: tmp.chatHeaderTitleContainer, children: callback(id(11998).ChannelTitle, { guildId: guild_id, channelId: id }) });
+  const tmp12 = guild_id(4315)();
+  obj6[4] = callback(id(1297).Icon, { source: guild_id(11139), size: id(1297).Icon.Sizes.MEDIUM });
+  const items7 = [callback(id(4949).PressableOpacity, obj6), ];
+  const obj7 = { source: guild_id(11139), size: id(1297).Icon.Sizes.MEDIUM };
+  items7[1] = callback(View, { style: tmp.chatHeaderTitleContainer, children: callback(id(12326).ChannelTitle, { guildId: guild_id, channelId: id }) });
   obj5[1] = items7;
   items3[4] = closure_7(View, obj5);
   obj1[2] = items3;
-  items2[1] = closure_7(id(10050).ChannelContainer, obj1);
+  items2[1] = closure_7(id(9905).ChannelContainer, obj1);
   obj[3] = items2;
   return closure_7(View, obj);
 });

@@ -1,14 +1,14 @@
-// Module ID: 6971
-// Function ID: 6972
+// Module ID: 5469
+// Function ID: 5470
 // Name: CheckmarkSmallIcon
-// Dependencies: [19, 21, 712, 4099, 6972, 2]
+// Dependencies: [19, 21, 712, 4100, 5470, 2]
 // Exports: CheckmarkSmallIcon
 
-// Module 6971 (CheckmarkSmallIcon)
+// Module 5469 (CheckmarkSmallIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 6972 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 5470 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

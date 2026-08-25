@@ -1,15 +1,15 @@
-// Module ID: 12749
-// Function ID: 12750
+// Module ID: 8740
+// Function ID: 8741
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [19, 17, 21, 4668, 712, 1236, 12231, 12738, 12740, 4096, 12233, 9997, 8074, 9452, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 1236, 8741, 8711, 8713, 4097, 8743, 8745, 7896, 8751, 2]
 // Exports: default
 
-// Module 12749 (ConversationNavigatorMoreMenu)
+// Module 8740 (ConversationNavigatorMoreMenu)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 createCacheKey = { container: null };

@@ -1,9 +1,9 @@
-// Module ID: 4674
-// Function ID: 4675
+// Module ID: 4384
+// Function ID: 4385
 // Name: timingNone
 // Dependencies: [2]
 
-// Module 4674 (timingNone)
+// Module 4384 (timingNone)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("design/animation/reanimated/timing/timingPresets.tsx");

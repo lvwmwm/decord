@@ -1,12 +1,12 @@
-// Module ID: 13623
-// Function ID: 13624
+// Module ID: 13658
+// Function ID: 13659
 // Name: snapshotForBreadcrumbs
-// Dependencies: [13619, 13620, 2]
+// Dependencies: [13654, 13655, 2]
 
-// Module 13623 (snapshotForBreadcrumbs)
-import appendDefault from "append" /* 13619 */;
-import TelemetryChannel from "TelemetryChannel" /* 13620 */;
-import importDefaultResult1 from "TelemetryChannel" /* 13620 */;
+// Module 13658 (snapshotForBreadcrumbs)
+import appendDefault from "append" /* 13654 */;
+import TelemetryChannel from "TelemetryChannel" /* 13655 */;
+import importDefaultResult1 from "TelemetryChannel" /* 13655 */;
 
 require = arg1;
 let closure_3 = { type: "BYTES", limit: 1048576 };

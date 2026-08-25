@@ -1,36 +1,36 @@
-// Module ID: 8794
-// Function ID: 8795
+// Module ID: 10829
+// Function ID: 10830
 // Name: recurseReplaceContentTree
-// Dependencies: [5, 4482, 4483, 1395, 1930, 1391, 1910, 4501, 4999, 4564, 1922, 4547, 4281, 676, 1487, 4366, 687, 12, 7465, 6844, 4819, 8795, 4801, 1489, 4379, 530, 8789, 8747, 8796, 2]
+// Dependencies: [5, 4421, 4406, 1395, 1930, 1391, 1910, 4431, 4623, 4469, 1922, 4399, 4282, 676, 1487, 4367, 687, 12, 7063, 4370, 4634, 10830, 4573, 1489, 9049, 530, 10824, 10679, 10831, 2]
 // Exports: containsSameValues, getDeprecatedVoiceSettingsWithShortcut, getRemoteIconURL, getVoiceConnectionState, getVoiceSettingsWithShortcut, hasMessageReadPermission, isMatchingOrigin, processSocketThrottlers, transformApplicationRelationship, transformBaseRelationship, transformChannel, transformVoiceState, validateActivityInvite, validateApplication, validateOriginAndUpdateSocket, validatePostMessageTransport, validateSocketApplication
 
-// Module 8794 (recurseReplaceContentTree)
+// Module 10829 (recurseReplaceContentTree)
 import applyDefault from "apply" /* 12 */;
 import sendRequest from "sendRequest" /* 530 */;
 import setDefault from "set" /* 687 */;
 import UrlDefault from "Url" /* 1489 */;
-import set from "set" /* 4379 */;
-import getNicknameDefault from "getNickname" /* 4801 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4819 */;
-import get_defaultRulesDefault from "get defaultRules" /* 6844 */;
-import prototypeDefault from "prototype" /* 8789 */;
-import transformUserDefault from "transformUser" /* 8795 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4370 */;
+import getNicknameDefault from "getNickname" /* 4573 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4634 */;
+import set from "set" /* 9049 */;
+import prototypeDefault from "prototype" /* 10824 */;
+import transformUserDefault from "transformUser" /* 10830 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addApplication" /* 4482 */;
-import closure_5 from "createExecutable" /* 4483 */;
+import closure_4 from "addApplication" /* 4421 */;
+import closure_5 from "createExecutable" /* 4406 */;
 import { GUILD_VOCAL_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
 import closure_7 from "createdAt" /* 1930 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "_detectH265HardwareDecode" /* 4501 */;
-import closure_11 from "reinjectEphemerals" /* 4999 */;
-import closure_12 from "sortActivity" /* 4564 */;
+import closure_10 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_11 from "reinjectEphemerals" /* 4623 */;
+import closure_12 from "sortActivity" /* 4469 */;
 import closure_13 from "mergeGuildAvatar" /* 1922 */;
-import closure_14 from "updateVoiceState" /* 4547 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4281 */;
+import closure_14 from "updateVoiceState" /* 4399 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4282 */;
 import ME from "ME" /* 676 */;
 import importDefaultResult from "isDiscordProxiedAssetUrl" /* 1487 */;
-import importDefaultResult1 from "set" /* 4366 */;
+import importDefaultResult1 from "set" /* 4367 */;
 
 require = arg1;
 function recurseReplaceContentTree(type) {
@@ -135,7 +135,7 @@ function _validateSocketApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -164,13 +164,13 @@ function _validateSocketApplication() {
               callback2 = closure_1_4.getApplication(callback);
               if (typeof dependencyMap === "string") {
                 if (tmp67.transport === closure_1_16.POST_MESSAGE) {
-                  const tmp21 = callback(8747)(tmp68);
+                  const tmp21 = callback(10679)(tmp68);
                   if (null != tmp21) {
                     const items = [tmp21];
                   }
                   obj1 = { closeCode: null };
                   obj1[0] = closure_1_21.INVALID_ORIGIN;
-                  const tmp52 = new callback(8789)(obj1, "Invalid Origin");
+                  const tmp52 = new callback(10824)(obj1, "Invalid Origin");
                   throw tmp52;
                 } else {
                   name = 1;
@@ -224,7 +224,7 @@ function _validateSocketApplication() {
               if (!callback3(dependencyMap, rpc_origins.rpc_origins)) {
                 const obj6 = { closeCode: null };
                 obj6[0] = constants.INVALID_ORIGIN;
-                const tmp16 = new callback(8789)(obj6, "Invalid Origin");
+                const tmp16 = new callback(10824)(obj6, "Invalid Origin");
                 throw tmp16;
               }
             }
@@ -275,7 +275,7 @@ function _processSocketThrottlers() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -297,7 +297,7 @@ function _processSocketThrottlers() {
                 if (tmp36) {
                   num5 = 2;
                 }
-                const tmp24 = new callback(8796)(num5, closure_1_25);
+                const tmp24 = new callback(10831)(num5, closure_1_25);
                 tmp38[tmp35] = tmp24;
                 obj2 = tmp24;
               }
@@ -312,7 +312,7 @@ function _processSocketThrottlers() {
             c6 = 0;
             obj2 = { closeCode: null };
             obj2[0] = constants.CLOSE_ABNORMAL;
-            const tmp16 = new callback(8789)(obj2, "Socket closed during throttle");
+            const tmp16 = new callback(10824)(obj2, "Socket closed during throttle");
             throw tmp16;
           } else if (arg0 === 1) {
             c7 = 3;
@@ -326,7 +326,7 @@ function _processSocketThrottlers() {
           } else {
             c6 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp26) {
           closure_5 = tmp26;

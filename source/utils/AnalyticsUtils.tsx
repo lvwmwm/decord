@@ -1,7 +1,7 @@
 // Module ID: 698
 // Function ID: 699
 // Name: expandEventProperties
-// Dependencies: [109, 19, 699, 706, 676, 13628, 4486, 1917, 697, 503, 13626, 1208, 709, 5427, 1236, 7, 514, 2, 13629]
+// Dependencies: [109, 19, 699, 706, 676, 13663, 4409, 1917, 697, 503, 13661, 1208, 709, 7280, 1236, 7, 514, 2, 13664]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
 // Module 698 (expandEventProperties)
@@ -9,15 +9,15 @@ import reportAll from "report" /* 7 */;
 import v1 from "v1" /* 514 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import _modDef1208 from "module_1208" /* 1208 */;
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 5427 */;
-import IGNORE_ANALYTICS_BREADCRUMB_EVENTS2 from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 13626 */;
-import MEAll from "ME" /* 13629 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7280 */;
+import IGNORE_ANALYTICS_BREADCRUMB_EVENTS2 from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 13661 */;
+import MEAll from "ME" /* 13664 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
 import withEqualityFn from "withEqualityFn" /* 699 */;
 import closure_9 from "refreshSourceMapCookie" /* 706 */;
 import ME from "ME" /* 676 */;
-import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags" /* 13628 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4486 */;
+import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags" /* 13663 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4409 */;
 import isBlockedDomain from "isBlockedDomain" /* 1917 */;
 import importAllResult from "noop" /* 19 */;
 import encodeProperties from "encodeProperties" /* 503 */;

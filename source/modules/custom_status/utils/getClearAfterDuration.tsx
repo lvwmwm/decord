@@ -1,14 +1,14 @@
-// Module ID: 9333
-// Function ID: 9334
+// Module ID: 9606
+// Function ID: 9607
 // Name: getClearAfterDuration
-// Dependencies: [9329, 687, 38, 2]
+// Dependencies: [9602, 687, 38, 2]
 // Exports: default
 
-// Module 9333 (getClearAfterDuration)
+// Module 9606 (getClearAfterDuration)
 import set from "set" /* 2 */;
 import _modDef38 from "module_38" /* 38 */;
 import setDefault from "set" /* 687 */;
-import StatusTypes from "StatusTypes" /* 9329 */;
+import StatusTypes from "StatusTypes" /* 9602 */;
 
 const ClearAfterValues = StatusTypes.ClearAfterValues;
 const result = set.fileFinishedImporting("modules/custom_status/utils/getClearAfterDuration.tsx");

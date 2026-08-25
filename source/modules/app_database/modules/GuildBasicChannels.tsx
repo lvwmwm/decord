@@ -1,22 +1,22 @@
-// Module ID: 5399
-// Function ID: 5400
+// Module ID: 7254
+// Function ID: 7255
 // Name: hasBasicChannelChanged
-// Dependencies: [32, 5, 4499, 1395, 1218, 1391, 1984, 1910, 4024, 1392, 3, 1955, 5400, 506, 4032, 2]
+// Dependencies: [32, 5, 5102, 1395, 1218, 1391, 1985, 1910, 4025, 1392, 3, 1956, 7255, 506, 4033, 2]
 
-// Module 5399 (hasBasicChannelChanged)
+// Module 7254 (hasBasicChannelChanged)
 import timestampDefault from "timestamp" /* 3 */;
 import fromStringAll from "fromString" /* 506 */;
-import itemsDefault from "items" /* 1955 */;
+import itemsDefault from "items" /* 1956 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "_handleConnectionOpen" /* 4499 */;
+import closure_6 from "_handleConnectionOpen" /* 5102 */;
 import { createChannelRecordFromServer as closure_7 } from "createChannelRecord" /* 1395 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
 import { ChannelLoader } from "ensureGuildLoaded" /* 1391 */;
-import closure_11 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_11 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_12 from "createGuildRecordFromRust" /* 1910 */;
-import closure_13 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_13 from "getUncachedChannelPermissions" /* 4025 */;
 import closure_14 from "hasChannel" /* 1392 */;
 import set from "set" /* 2 */;
 
@@ -214,7 +214,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -264,7 +264,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                           obj[0] = arg1;
                           return obj;
                         } else {
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } else {
                         try {
@@ -325,7 +325,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
                               return obj3;
                             } else {
                               c6 = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           } else if (3 === tmp7) {
                             if (arg0 === 1) {
@@ -389,7 +389,7 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
               }
             }
             c10 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (1 === tmp7) {
           c7 = 0;

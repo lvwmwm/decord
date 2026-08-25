@@ -1,16 +1,16 @@
-// Module ID: 9912
-// Function ID: 9913
+// Module ID: 4598
+// Function ID: 4599
 // Name: fetchSurveyDetails
-// Dependencies: [32, 5, 9913, 9915, 9916, 9917, 676, 530, 709, 1208, 9918, 2]
+// Dependencies: [32, 5, 4599, 4602, 4603, 4604, 676, 530, 709, 1208, 4605, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 9912 (fetchSurveyDetails)
+// Module 4598 (fetchSurveyDetails)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "fetchSurveyIfNeeded" /* 9913 */;
-import { useQualtricsResponseStore } from "useQualtricsResponseStore" /* 9915 */;
-import closure_7 from "map" /* 9916 */;
-import QuestionTypeEnum from "QuestionTypeEnum" /* 9917 */;
+import closure_5 from "fetchSurveyIfNeeded" /* 4599 */;
+import { useQualtricsResponseStore } from "useQualtricsResponseStore" /* 4602 */;
+import closure_7 from "map" /* 4603 */;
+import QuestionTypeEnum from "QuestionTypeEnum" /* 4604 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -43,7 +43,7 @@ function _fetchSurveyDetails() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ function _submitSurveyResponse() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -381,7 +381,7 @@ function _fireSurveyAction() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,0 +1,10 @@
+// Module ID: 11039
+// Function ID: 11040
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 11039 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_profile/native/images", width: 24, height: 24, scales: [2, 3], hash: "0e02f6accc59d44ac3827104886762f1", name: "boost", type: "png" });

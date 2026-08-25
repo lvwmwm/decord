@@ -1,11 +1,11 @@
-// Module ID: 4750
-// Function ID: 4751
+// Module ID: 4815
+// Function ID: 4816
 // Name: Button
-// Dependencies: [2, 4751]
+// Dependencies: [2, 4816]
 
-// Module 4750 (Button)
+// Module 4815 (Button)
 import set from "set" /* 2 */;
-import CollapsingText from "CollapsingText" /* 4751 */;
+import CollapsingText from "CollapsingText" /* 4816 */;
 
 const result = set.fileFinishedImporting("design/components/Button/native/Button.native.tsx");
 

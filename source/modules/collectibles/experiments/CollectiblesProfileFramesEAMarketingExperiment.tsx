@@ -1,10 +1,10 @@
-// Module ID: 16261
-// Function ID: 16262
+// Module ID: 16293
+// Function ID: 16294
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getIsProfileFramesEAMarketingEnabled, useIsProfileFramesEAMarketingEnabled
 
-// Module 16261 (apexExperiment)
+// Module 16293 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

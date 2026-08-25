@@ -1,10 +1,10 @@
-// Module ID: 12097
-// Function ID: 12098
+// Module ID: 11264
+// Function ID: 11265
 // Name: ForwardFailedAlertModal
-// Dependencies: [19, 21, 9113, 12098, 1236, 2]
+// Dependencies: [19, 21, 11230, 11265, 1236, 2]
 // Exports: default
 
-// Module 12097 (ForwardFailedAlertModal)
+// Module 11264 (ForwardFailedAlertModal)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

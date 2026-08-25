@@ -1,11 +1,11 @@
-// Module ID: 5406
-// Function ID: 5407
+// Module ID: 7259
+// Function ID: 7260
 // Name: getCommittedVersions
-// Dependencies: [32, 5, 1910, 3, 1955, 1370, 2]
+// Dependencies: [32, 5, 1910, 3, 1956, 1370, 2]
 
-// Module 5406 (getCommittedVersions)
+// Module 7259 (getCommittedVersions)
 import timestampDefault from "timestamp" /* 3 */;
-import itemsDefault from "items" /* 1955 */;
+import itemsDefault from "items" /* 1956 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
@@ -79,7 +79,7 @@ prototype["getCommittedVersions"] = function getCommittedVersions() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

@@ -1,11 +1,11 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16662
+// Function ID: 16663
 // Name: _initialize
-// Dependencies: [5043, 1917, 2]
+// Dependencies: [5367, 1917, 2]
 
-// Module 16630 (_initialize)
+// Module 16662 (_initialize)
 import isBlockedDomain from "isBlockedDomain" /* 1917 */;
-import initializeDefault from "initialize" /* 5043 */;
+import initializeDefault from "initialize" /* 5367 */;
 
 require = arg1;
 initializeDefault;

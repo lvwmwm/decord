@@ -1,16 +1,16 @@
-// Module ID: 6765
-// Function ID: 6766
+// Module ID: 5283
+// Function ID: 5284
 // Name: computeRolesForGuild
-// Dependencies: [1434, 1985, 1991, 1984, 1910, 1922, 676, 4015, 589, 709, 2]
+// Dependencies: [1434, 1986, 1992, 1985, 1910, 1922, 676, 4016, 589, 709, 2]
 
-// Module 6765 (computeRolesForGuild)
+// Module 5283 (computeRolesForGuild)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1985 */;
-import isSubscriptionRole from "isSubscriptionRole" /* 4015 */;
-import closure_4 from "trackCommunicationDisabled" /* 1991 */;
-import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1986 */;
+import isSubscriptionRole from "isSubscriptionRole" /* 4016 */;
+import closure_4 from "trackCommunicationDisabled" /* 1992 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
@@ -50,7 +50,7 @@ function computeRolesForGuild(guildId) {
           if (obj2.isSubscriptionRole(nextResult)) {
             let tmp18 = nextResult;
             let addResult = set.add(tmp15.id);
-            let tmp16Result = tmp16(4015);
+            let tmp16Result = tmp16(4016);
             if (tmp16Result.isSubscriptionRoleAvailableForPurchase(tmp15)) {
               let tmp20 = nextResult;
               let addResult1 = set1.add(tmp15.id);

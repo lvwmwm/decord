@@ -1,14 +1,14 @@
-// Module ID: 8317
-// Function ID: 8318
+// Module ID: 8318
+// Function ID: 8319
 // Name: useHasActiveTrial
-// Dependencies: [1922, 4048, 7459, 1924, 589, 2]
+// Dependencies: [1922, 4049, 7057, 1924, 589, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 8317 (useHasActiveTrial)
+// Module 8318 (useHasActiveTrial)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import closure_3 from "reset" /* 4048 */;
-import closure_4 from "emitChanges" /* 7459 */;
+import closure_3 from "reset" /* 4049 */;
+import closure_4 from "emitChanges" /* 7057 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 require = arg1;

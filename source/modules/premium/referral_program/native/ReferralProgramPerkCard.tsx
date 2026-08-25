@@ -1,24 +1,24 @@
-// Module ID: 12934
-// Function ID: 12935
+// Module ID: 12921
+// Function ID: 12922
 // Name: ReferredFriendAvatar
-// Dependencies: [19, 17, 7461, 676, 21, 4668, 712, 1297, 4739, 12935, 1236, 1994, 589, 7177, 7197, 7462, 698, 4346, 12936, 2008, 12943, 4750, 2]
+// Dependencies: [19, 17, 7059, 676, 21, 4380, 712, 1297, 4376, 12922, 1236, 1995, 589, 5834, 5854, 7060, 698, 4347, 12923, 2009, 12930, 4815, 2]
 // Exports: ReferralProgramPerkCard
 
-// Module 12934 (ReferredFriendAvatar)
+// Module 12921 (ReferredFriendAvatar)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import combinedDefault from "combined" /* 1994 */;
-import Text from "Text" /* 4739 */;
-import contextDefault from "context" /* 7177 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
-import MAX_REFERRALS_SENT from "MAX_REFERRALS_SENT" /* 12935 */;
-import ProgressWheelDefault from "ProgressWheel" /* 12943 */;
+import combinedDefault from "combined" /* 1995 */;
+import Text from "Text" /* 4376 */;
+import contextDefault from "context" /* 5834 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5854 */;
+import MAX_REFERRALS_SENT from "MAX_REFERRALS_SENT" /* 12922 */;
+import ProgressWheelDefault from "ProgressWheel" /* 12930 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "emitChanges" /* 7461 */;
+import closure_5 from "emitChanges" /* 7059 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function ReferredFriendAvatar(user) {
@@ -80,7 +80,7 @@ const result = require("set").fileFinishedImporting("modules/premium/referral_pr
 
 export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const tmp = callback2();
-  let obj = analyticsLocations(12935);
+  let obj = analyticsLocations(12922);
   obj1 = analyticsLocations(589);
   const items = [closure_5];
   const stateFromStores = obj1.useStateFromStores(items, () => store.getRecipientStatus());
@@ -89,7 +89,7 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const stateFromStores1 = obj3.useStateFromStores(items1, () => store.getHasEligibleFriends());
   let obj4 = importDefault;
   analyticsLocations = contextDefault(QUICK_SWITCHERDefault.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR).analyticsLocations;
-  let everyResult = stateFromStores.size === analyticsLocations(12935).MAX_REFERRALS_SENT;
+  let everyResult = stateFromStores.size === analyticsLocations(12922).MAX_REFERRALS_SENT;
   if (everyResult) {
     const items2 = [];
     HermesBuiltin.arraySpread(stateFromStores.values(), 0);
@@ -109,10 +109,10 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
   const obj2 = { variant: "heading-lg/semibold", color: "text-strong", style: tmp.heading, children: null };
   const intl = tmp2(1236).intl;
   obj2[3] = intl.string(analyticsLocations(1236).t.USo4s7);
-  const items5 = [callback(analyticsLocations(4739).Text, obj2), ];
+  const items5 = [callback(analyticsLocations(4376).Text, obj2), ];
   obj3 = { variant: "text-md/medium", color: "text-subtle", style: tmp.bodyText, children: null };
   if (false !== stateFromStores1) {
-    if (tmp14 !== tmp2(12935).MAX_REFERRALS_SENT) {
+    if (tmp14 !== tmp2(12922).MAX_REFERRALS_SENT) {
       const intl3 = tmp2(1236).intl;
       obj4 = { helpdeskArticle: null };
       let obj5Result = combinedDefault;
@@ -145,14 +145,14 @@ export const ReferralProgramPerkCard = function ReferralProgramPerkCard() {
     obj7[0] = tmp.buttonContainer;
     let tmp22 = false === stateFromStores1;
     if (!tmp22) {
-      tmp22 = stateFromStores.size === tmp2(12935).MAX_REFERRALS_SENT;
+      tmp22 = stateFromStores.size === tmp2(12922).MAX_REFERRALS_SENT;
     }
     const obj8 = { variant: "primary", size: "sm", disabled: null, text: null, onPress: null };
     obj8[2] = tmp22;
     const intl5 = tmp2(1236).intl;
     obj8[3] = intl5.string(tmp2(1236).t.Lm2nFc);
     obj8[4] = callback;
-    obj7[1] = tmp12(tmp2(4750).Button, obj8);
+    obj7[1] = tmp12(tmp2(4815).Button, obj8);
     items4[3] = tmp12(tmp11, obj7);
     obj[1] = items4;
     return tmp10(tmp11, obj);

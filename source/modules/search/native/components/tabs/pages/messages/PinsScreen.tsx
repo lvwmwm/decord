@@ -1,17 +1,17 @@
-// Module ID: 16034
-// Function ID: 16035
+// Module ID: 16066
+// Function ID: 16067
 // Name: InitialPinsScreen
-// Dependencies: [19, 10904, 4976, 11559, 8546, 8545, 676, 21, 589, 15967, 10903, 15963, 11580, 16006, 15971, 15970, 16027, 2]
+// Dependencies: [19, 11223, 6006, 11906, 8554, 8553, 676, 21, 589, 15999, 11222, 15995, 11927, 16038, 16003, 16002, 16059, 2]
 
-// Module 16034 (InitialPinsScreen)
-import _modDef16027 from "module_16027" /* 16027 */;
+// Module 16066 (InitialPinsScreen)
+import _modDef16059 from "module_16059" /* 16059 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "handleChannelDelete" /* 10904 */;
-import { FetchState } from "handleChannelDelete" /* 10904 */;
-import closure_6 from "handleReaction" /* 4976 */;
-import closure_7 from "prototype" /* 11559 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
-import { SearchResultContentEntityTypes as closure_11 } from "SearchEntrypointAnalyticsLocations" /* 8545 */;
+import closure_4 from "handleChannelDelete" /* 11223 */;
+import { FetchState } from "handleChannelDelete" /* 11223 */;
+import closure_6 from "handleReaction" /* 6006 */;
+import closure_7 from "prototype" /* 11906 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8554 */;
+import { SearchResultContentEntityTypes as closure_11 } from "SearchEntrypointAnalyticsLocations" /* 8553 */;
 import { SearchTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -166,7 +166,7 @@ const memoResult = importAllResult.memo(function PinsScreen(searchContext) {
     obj[0] = searchContext;
     obj[1] = tab;
     obj[2] = isFocused;
-    let tmp5 = jsx(_modDef16027, { searchContext: null, tab: null, isFocused: null });
+    let tmp5 = jsx(_modDef16059, { searchContext: null, tab: null, isFocused: null });
   } else {
     obj = { searchContext: null, tab: null, isFocused: null };
     obj[0] = searchContext;

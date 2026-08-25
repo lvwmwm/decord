@@ -1,22 +1,22 @@
-// Module ID: 8601
-// Function ID: 8602
+// Module ID: 8609
+// Function ID: 8610
 // Name: closeModal
-// Dependencies: [32, 19, 1922, 8602, 676, 21, 8600, 503, 6345, 8603, 8606, 8607, 8609, 8612, 8655, 8660, 8662, 589, 7165, 6343, 1236, 2]
+// Dependencies: [32, 19, 1922, 8610, 676, 21, 8608, 503, 5376, 8611, 8614, 8615, 8617, 8620, 8663, 8668, 8670, 589, 5822, 5889, 1236, 2]
 // Exports: default
 
-// Module 8601 (closeModal)
-import _modDef8600 from "module_8600" /* 8600 */;
+// Module 8609 (closeModal)
+import _modDef8608 from "module_8608" /* 8608 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { resetChangeEmailStore } from "ChangeEmailFields" /* 8602 */;
+import { resetChangeEmailStore } from "ChangeEmailFields" /* 8610 */;
 import { VerificationModalScenes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function closeModal() {
   resetChangeEmailStore();
-  _modDef8600.close();
+  _modDef8608.close();
 }
 const result = require("set").fileFinishedImporting("modules/verification/native/components/EmailVerificationModal.tsx");
 

@@ -1,19 +1,19 @@
-// Module ID: 11773
-// Function ID: 11774
+// Module ID: 12113
+// Function ID: 12114
 // Name: Tier3OverrideNotice
-// Dependencies: [17, 21, 4668, 712, 8347, 4739, 11774, 11775, 1236, 2368, 11778, 2]
+// Dependencies: [17, 21, 4380, 712, 8348, 4376, 12114, 12115, 1236, 2369, 12118, 2]
 // Exports: default
 
-// Module 11773 (Tier3OverrideNotice)
+// Module 12113 (Tier3OverrideNotice)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4739 */;
-import apexExperiment from "apexExperiment" /* 8347 */;
-import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 11774 */;
-import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 11775 */;
+import Text from "Text" /* 4376 */;
+import apexExperiment from "apexExperiment" /* 8348 */;
+import useGuildPowerupTier3OverrideConfigDefault from "useGuildPowerupTier3OverrideConfig" /* 12114 */;
+import useGuildPowerupExpiringNotificationsConfigDefault from "useGuildPowerupExpiringNotificationsConfig" /* 12115 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 function Tier3OverrideNotice(children) {
   let obj = apexExperiment;
@@ -57,8 +57,8 @@ export default function GuildPowerupsNotificationContainer(guildId) {
     }
     obj[1] = str2;
     const intl = tmp6(1236).intl;
-    obj[2] = intl.string(tmp2(2368)["3FRirU"]);
-    const items = [closure_4(tmp6(4739).Text, obj), , ];
+    obj[2] = intl.string(tmp2(2369)["3FRirU"]);
+    const items = [closure_4(tmp6(4376).Text, obj), , ];
     let shouldShow = tmp4.shouldShow;
     if (shouldShow) {
       obj1 = { text: null };
@@ -71,7 +71,7 @@ export default function GuildPowerupsNotificationContainer(guildId) {
       const obj2 = { guildId: null, powerupNames: null, warnings: null };
       obj2[0] = guildId;
       ({ expiringPowerupNames: obj5[1], warnings: obj5[2] } = tmp5);
-      shouldShow2 = tmp11(tmp2(11778), obj2);
+      shouldShow2 = tmp11(tmp2(12118), obj2);
     }
     items[2] = shouldShow2;
     obj[1] = items;

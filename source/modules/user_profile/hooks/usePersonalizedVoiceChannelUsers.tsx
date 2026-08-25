@@ -1,14 +1,14 @@
-// Module ID: 12174
-// Function ID: 12175
+// Module ID: 12507
+// Function ID: 12508
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [5412, 5263, 1922, 4550, 676, 589, 2]
+// Dependencies: [7265, 5935, 1922, 4455, 676, 589, 2]
 // Exports: default
 
-// Module 12174 (usePersonalizedVoiceChannelUsers)
-import closure_2 from "recomputeAffinities" /* 5412 */;
-import closure_3 from "hasConsented" /* 5263 */;
+// Module 12507 (usePersonalizedVoiceChannelUsers)
+import closure_2 from "recomputeAffinities" /* 7265 */;
+import closure_3 from "hasConsented" /* 5935 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "getVoiceStatesForGuild" /* 4550 */;
+import closure_5 from "getVoiceStatesForGuild" /* 4455 */;
 import { Consents } from "ME" /* 676 */;
 
 const require = arg1;

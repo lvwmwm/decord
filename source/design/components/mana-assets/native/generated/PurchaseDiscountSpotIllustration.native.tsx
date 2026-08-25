@@ -1,14 +1,14 @@
-// Module ID: 6107
-// Function ID: 6108
+// Module ID: 6791
+// Function ID: 6792
 // Name: PurchaseDiscountSpotIllustration
-// Dependencies: [21, 5454, 6108, 2]
+// Dependencies: [21, 5374, 6792, 2]
 // Exports: PurchaseDiscountSpotIllustration
 
-// Module 6107 (PurchaseDiscountSpotIllustration)
+// Module 6791 (PurchaseDiscountSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 6108 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6792 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PurchaseDiscountSpotIllustration.native.tsx");

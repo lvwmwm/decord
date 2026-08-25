@@ -1,15 +1,15 @@
-// Module ID: 12190
-// Function ID: 12191
+// Module ID: 11030
+// Function ID: 11031
 // Name: useFetchStreamPreview
-// Dependencies: [19, 9900, 1391, 4024, 1980, 505, 589, 9899, 2]
+// Dependencies: [19, 4565, 1391, 4025, 1981, 505, 589, 4563, 2]
 // Exports: default
 
-// Module 12190 (useFetchStreamPreview)
+// Module 11030 (useFetchStreamPreview)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "reset" /* 9900 */;
+import closure_3 from "reset" /* 4565 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_6 from "handleConnectionOpen" /* 1981 */;
 import { BasicPermissions } from "sum" /* 505 */;
 
 const require = arg1;

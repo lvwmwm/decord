@@ -1,13 +1,13 @@
-// Module ID: 4224
-// Function ID: 4225
+// Module ID: 4225
+// Function ID: 4226
 // Name: initialize
-// Dependencies: [1218, 676, 698, 589, 4225, 709, 2]
+// Dependencies: [1218, 676, 698, 589, 4226, 709, 2]
 
-// Module 4224 (initialize)
+// Module 4225 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import apexExperiment from "apexExperiment" /* 4225 */;
+import apexExperiment from "apexExperiment" /* 4226 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 

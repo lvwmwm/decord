@@ -1,14 +1,14 @@
-// Module ID: 9148
-// Function ID: 9149
+// Module ID: 9441
+// Function ID: 9442
 // Name: EpicGamesNeutralIcon
-// Dependencies: [19, 21, 712, 4099, 9149, 2]
+// Dependencies: [19, 21, 712, 4100, 9442, 2]
 // Exports: EpicGamesNeutralIcon
 
-// Module 9148 (EpicGamesNeutralIcon)
+// Module 9441 (EpicGamesNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 9149 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 9442 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

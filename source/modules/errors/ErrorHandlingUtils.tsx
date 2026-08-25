@@ -1,10 +1,10 @@
-// Module ID: 5365
-// Function ID: 5366
+// Module ID: 6063
+// Function ID: 6064
 // Name: items
 // Dependencies: [676, 1208, 2]
 // Exports: captureOrIgnoreApiError
 
-// Module 5365 (items)
+// Module 6063 (items)
 import ME from "ME" /* 676 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import set from "set" /* 2 */;

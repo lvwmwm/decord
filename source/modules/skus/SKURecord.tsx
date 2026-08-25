@@ -1,15 +1,15 @@
-// Module ID: 4520
-// Function ID: 4521
+// Module ID: 4423
+// Function ID: 4424
 // Name: createFromServer
-// Dependencies: [1931, 4483, 4521, 676, 3978, 4522, 4523, 1403, 2]
+// Dependencies: [1931, 4406, 4424, 676, 3979, 4425, 4426, 1403, 2]
 
-// Module 4520 (createFromServer)
+// Module 4423 (createFromServer)
 import toJSDefault from "toJS" /* 1931 */;
-import tDefault from "t" /* 3978 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 4522 */;
-import transformProfileEffectKeyFrameFromServerDefault from "transformProfileEffectKeyFrameFromServer" /* 4523 */;
-import closure_3 from "createExecutable" /* 4483 */;
-import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set" /* 4521 */;
+import hooksDefault from "hooks" /* 3979 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 4425 */;
+import transformProfileEffectKeyFrameFromServerDefault from "transformProfileEffectKeyFrameFromServer" /* 4426 */;
+import closure_3 from "createExecutable" /* 4406 */;
+import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set" /* 4424 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -52,12 +52,12 @@ SKURecord["createFromServer"] = function createFromServer(id) {
   obj[7] = name;
   let tmp6 = null;
   if (null != id.release_date) {
-    tmp6 = tDefault(id.release_date);
+    tmp6 = hooksDefault(id.release_date);
   }
   obj[8] = tmp6;
   let tmp9 = null;
   if (null != id.preorder_release_at) {
-    tmp9 = tDefault(id.preorder_release_at);
+    tmp9 = hooksDefault(id.preorder_release_at);
   }
   obj[9] = tmp9;
   ({ preorder_approximate_release_date: obj[10], summary: obj[11] } = id);

@@ -1,11 +1,11 @@
-// Module ID: 8640
-// Function ID: 8641
+// Module ID: 8648
+// Function ID: 8649
 // Name: SplitTextInput
-// Dependencies: [19, 21, 8111, 8641, 2]
+// Dependencies: [19, 21, 7936, 8649, 2]
 
-// Module 8640 (SplitTextInput)
-import Input from "Input" /* 8111 */;
-import SplitTextField from "SplitTextField" /* 8641 */;
+// Module 8648 (SplitTextInput)
+import Input from "Input" /* 7936 */;
+import SplitTextField from "SplitTextField" /* 8649 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

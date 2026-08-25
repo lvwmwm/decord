@@ -1,16 +1,16 @@
-// Module ID: 8224
-// Function ID: 8225
+// Module ID: 8220
+// Function ID: 8221
 // Name: createAddRecipientSystemMessage
-// Dependencies: [1395, 1391, 1922, 8225, 8227, 1236, 8228, 2]
+// Dependencies: [1395, 1391, 1922, 8221, 8223, 1236, 8224, 2]
 // Exports: createAddRecipientSystemMessage
 
-// Module 8224 (createAddRecipientSystemMessage)
+// Module 8220 (createAddRecipientSystemMessage)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8225 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8227 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8228 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8221 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8223 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8224 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 

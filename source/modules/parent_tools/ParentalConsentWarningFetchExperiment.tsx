@@ -1,10 +1,10 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16811
+// Function ID: 16812
 // Name: isParentalConsentWarningFetchEnabled
 // Dependencies: [1472, 2]
 // Exports: isParentalConsentWarningFetchEnabled
 
-// Module 16779 (isParentalConsentWarningFetchEnabled)
+// Module 16811 (isParentalConsentWarningFetchEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

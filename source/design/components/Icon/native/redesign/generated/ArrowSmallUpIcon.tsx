@@ -1,14 +1,14 @@
-// Module ID: 14477
-// Function ID: 14478
+// Module ID: 14507
+// Function ID: 14508
 // Name: ArrowSmallUpIcon
-// Dependencies: [19, 21, 712, 4099, 14478, 2]
+// Dependencies: [19, 21, 712, 4100, 14508, 2]
 // Exports: ArrowSmallUpIcon
 
-// Module 14477 (ArrowSmallUpIcon)
+// Module 14507 (ArrowSmallUpIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 14478 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 14508 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

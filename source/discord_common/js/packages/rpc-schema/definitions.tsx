@@ -1,13 +1,13 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 13945
+// Function ID: 13946
 // Name: VoiceCapabilities
-// Dependencies: [13911, 4379, 13912, 2]
+// Dependencies: [13946, 9049, 13947, 2]
 
-// Module 13910 (VoiceCapabilities)
+// Module 13945 (VoiceCapabilities)
 import set from "set" /* 2 */;
-import set2 from "set" /* 4379 */;
-import RPCCommands from "RPCCommands" /* 13911 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 13912 */;
+import set2 from "set" /* 9049 */;
+import RPCCommands from "RPCCommands" /* 13946 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 13947 */;
 
 function VoiceCapabilities(boolean) {
   let obj = { available: boolean.boolean().required(), connected: null, participant_updates: null, binary_speaking: null, spatial: null };
@@ -811,7 +811,7 @@ export const RPCCommandSchemas = {
       obj[1] = string.string().min(0).max(1024);
       return obj;
     },
-    response: "r"
+    response: "a"
   },
   [RPCCommands.RPCCommand.GET_USER]: {
     request(string) {

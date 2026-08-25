@@ -1,17 +1,17 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 11253
+// Function ID: 11254
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4668, 712, 5446, 4119, 4749, 4753, 4739, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 5475, 4120, 4814, 4818, 4376, 2]
 // Exports: default
 
-// Module 12090 (ShareFooterLayout)
+// Module 11253 (ShareFooterLayout)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef4119 from "module_4119" /* 4119 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5446 */;
+import _modDef4120 from "module_4120" /* 4120 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5475 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -35,12 +35,12 @@ export default function ShareFooterLayout(arg0) {
   const tmp = callback2();
   const sum = tmp.footer.paddingVertical + useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
   _require = sum;
-  let obj = _require(4119);
+  let obj = _require(4120);
   const fn = function f() {
     const obj = { paddingBottom: _undefined(closure_1_2[7]).withSpring(_undefined, _undefined(closure_1_2[8]).ON_PRESS_SPRING, "respect-motion-settings") };
     return obj;
   };
-  obj = { withSpring: _require(4749).withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: _require(4753).ON_PRESS_SPRING };
+  obj = { withSpring: _require(4814).withSpring, footerPaddingBottom: sum, ON_PRESS_SPRING: _require(4818).ON_PRESS_SPRING };
   fn.__closure = obj;
   fn.__workletHash = 2871405301293;
   fn.__initData = closure_8;
@@ -65,11 +65,11 @@ export default function ShareFooterLayout(arg0) {
   if (tmp12) {
     const obj5 = { variant: "text-sm/normal", color: "text-feedback-warning", children: null };
     obj5[2] = warningText;
-    tmp12 = callback(_require(4739).Text, obj5);
+    tmp12 = callback(_require(4376).Text, obj5);
   }
   items4[1] = tmp12;
   obj3[1] = items4;
   items2[1] = closure_6(View, obj3);
   obj[1] = items2;
-  return closure_6(_modDef4119.View, obj);
+  return closure_6(_modDef4120.View, obj);
 };

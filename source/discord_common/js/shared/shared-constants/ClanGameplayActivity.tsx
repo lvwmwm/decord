@@ -1,9 +1,9 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 12409
+// Function ID: 12410
 // Name: ClanGameplayActivity
 // Dependencies: [2]
 
-// Module 9562 (ClanGameplayActivity)
+// Module 12409 (ClanGameplayActivity)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ClanGameplayActivity.tsx");

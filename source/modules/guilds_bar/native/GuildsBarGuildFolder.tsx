@@ -1,26 +1,26 @@
-// Module ID: 15622
-// Function ID: 15623
+// Module ID: 15654
+// Function ID: 15655
 // Name: MiniGuildIcon
-// Dependencies: [19, 5388, 1910, 4201, 5083, 15612, 15618, 15613, 21, 4668, 712, 4100, 589, 7226, 1367, 4749, 4227, 688, 8164, 4119, 4107, 6873, 8377, 5454, 15623, 15625, 11839, 15632, 4347, 6815, 7228, 15615, 15633, 2]
+// Dependencies: [19, 7242, 1910, 4202, 5262, 15644, 15650, 15645, 21, 4380, 712, 4101, 589, 5885, 1367, 4814, 4228, 688, 8160, 4120, 4108, 4869, 8383, 5374, 15655, 15657, 12177, 15664, 4348, 5338, 5887, 15647, 15665, 2]
 
-// Module 15622 (MiniGuildIcon)
+// Module 15654 (MiniGuildIcon)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4100 */;
-import preloadDefault from "preload" /* 5454 */;
-import GuildIconSizes from "GuildIconSizes" /* 7226 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import map from "map" /* 4101 */;
+import preloadDefault from "preload" /* 5374 */;
+import GuildIconSizes from "GuildIconSizes" /* 5885 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "updateGuildUnreadSentinel" /* 5388 */;
+import closure_4 from "updateGuildUnreadSentinel" /* 7242 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "handleConnectionOpen" /* 4201 */;
-import closure_7 from "insertUnsortedGuilds" /* 5083 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5083 */;
-import withEqualityFn from "withEqualityFn" /* 15612 */;
-import { DEFAULT_FOLDER_COLOR } from "DEFAULT_FOLDER_COLOR" /* 15618 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15613 */;
+import closure_6 from "handleConnectionOpen" /* 4202 */;
+import closure_7 from "insertUnsortedGuilds" /* 5262 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5262 */;
+import withEqualityFn from "withEqualityFn" /* 15644 */;
+import { DEFAULT_FOLDER_COLOR } from "DEFAULT_FOLDER_COLOR" /* 15650 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15645 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function MiniGuildIcon(arg0) {

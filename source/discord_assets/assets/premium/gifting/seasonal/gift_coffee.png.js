@@ -1,9 +1,9 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12356
+// Function ID: 12357
 // Name: metadata
 // Dependencies: [2]
 
-// Module 12031 (metadata)
+// Module 12356 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/gifting/seasonal/gift_coffee.png.js");

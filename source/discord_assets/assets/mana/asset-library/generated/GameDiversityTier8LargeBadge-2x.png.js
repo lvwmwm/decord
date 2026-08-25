@@ -1,9 +1,9 @@
-// Module ID: 5818
-// Function ID: 5819
+// Module ID: 6506
+// Function ID: 6507
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 5818 (vanityUrl)
+// Module 6506 (vanityUrl)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDiversityTier8LargeBadge-2x.png.js");

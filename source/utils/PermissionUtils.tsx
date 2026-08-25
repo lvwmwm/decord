@@ -1,24 +1,24 @@
-// Module ID: 4029
-// Function ID: 4030
+// Module ID: 4030
+// Function ID: 4031
 // Name: applyOverwrites
-// Dependencies: [1983, 4025, 4026, 1395, 1434, 1985, 1218, 1391, 1991, 1984, 1910, 1922, 676, 506, 12, 4030, 4013, 11, 1988, 1954, 2]
+// Dependencies: [1984, 4026, 4027, 1395, 1434, 1986, 1218, 1391, 1992, 1985, 1910, 1922, 676, 506, 12, 4031, 4014, 11, 1989, 1955, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 4029 (applyOverwrites)
+// Module 4030 (applyOverwrites)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import compareGuildRoles from "compareGuildRoles" /* 1988 */;
-import GuildMemberFlags from "GuildMemberFlags" /* 4030 */;
-import closure_4 from "initialize" /* 1983 */;
-import closure_5 from "initialize" /* 4025 */;
-import closure_6 from "storeThread" /* 4026 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
+import compareGuildRoles from "compareGuildRoles" /* 1989 */;
+import GuildMemberFlags from "GuildMemberFlags" /* 4031 */;
+import closure_4 from "initialize" /* 1984 */;
+import closure_5 from "initialize" /* 4026 */;
+import closure_6 from "storeThread" /* 4027 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import { hasPermission } from "GuildRoleRecordTypeTag" /* 1985 */;
+import { hasPermission } from "GuildRoleRecordTypeTag" /* 1986 */;
 import closure_12 from "fetchFingerprint" /* 1218 */;
 import closure_13 from "ensureGuildLoaded" /* 1391 */;
-import closure_14 from "trackCommunicationDisabled" /* 1991 */;
-import closure_15 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_14 from "trackCommunicationDisabled" /* 1992 */;
+import closure_15 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_16 from "createGuildRecordFromRust" /* 1910 */;
 import closure_17 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
@@ -90,13 +90,13 @@ function applyOverwrites(id, member, closure_23, overwrites) {
       const tmp19Result2 = tmp19(506);
     }
     const obj10 = GuildMemberFlags;
-    const tmp28Result = tmp28(4013);
+    const tmp28Result = tmp28(4014);
     found1 = found;
     if (tmp34) {
       found1 = tmp19(506).filter(found, closure_28);
       const tmp19Result3 = tmp19(506);
     }
-    tmp34 = tmp28(4013).isMemberCommunicationDisabled(member) && !hasItem;
+    tmp34 = tmp28(4014).isMemberCommunicationDisabled(member) && !hasItem;
   }
   return found1;
 }
@@ -478,7 +478,7 @@ export const areChannelsLocked = function areChannelsLocked(channel, channel2) {
           if (null == obj[guild_id]) {
             obj = { id: null, type: null, allow: null, deny: null };
             obj[0] = guild_id;
-            obj[1] = obj(1954).PermissionOverwriteType.ROLE;
+            obj[1] = obj(1955).PermissionOverwriteType.ROLE;
             obj[2] = closure_23;
             obj[3] = closure_23;
             obj[guild_id] = obj;
@@ -486,7 +486,7 @@ export const areChannelsLocked = function areChannelsLocked(channel, channel2) {
           if (null == obj[guild_id]) {
             obj1 = { id: null, type: null, allow: null, deny: null };
             obj1[0] = guild_id;
-            obj1[1] = obj(1954).PermissionOverwriteType.ROLE;
+            obj1[1] = obj(1955).PermissionOverwriteType.ROLE;
             obj1[2] = closure_23;
             obj1[3] = closure_23;
             obj[guild_id] = obj1;

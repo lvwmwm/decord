@@ -1,10 +1,10 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 17033
+// Function ID: 17034
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 676, 17002, 17003, 1236, 1994, 4087, 17004, 2]
+// Dependencies: [5, 19, 676, 17034, 17035, 1236, 1995, 4088, 17036, 2]
 // Exports: default
 
-// Module 17001 (useCreatorMonetizationEligibilityItems)
+// Module 17033 (useCreatorMonetizationEligibilityItems)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
@@ -41,7 +41,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -110,7 +110,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
           tmp13();
         }
         c2 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp16) {
         c2 = tmp;
         throw tmp16;
@@ -144,8 +144,8 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
       let fn;
       if (!noRecentViolations) {
         fn = () => {
-          const tmp = callback(4087);
-          return tmp(callback(1994).getSubmitRequestURL());
+          const tmp = callback(4088);
+          return tmp(callback(1995).getSubmitRequestURL());
         };
       }
       obj[6] = fn;

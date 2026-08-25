@@ -1,17 +1,17 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15161
+// Function ID: 15162
 // Name: SettingSearchBar
-// Dependencies: [19, 17, 14061, 21, 4668, 712, 1892, 7397, 7375, 2]
+// Dependencies: [19, 17, 14096, 21, 4380, 712, 1892, 6124, 6101, 2]
 // Exports: default
 
-// Module 15131 (SettingSearchBar)
+// Module 15161 (SettingSearchBar)
 import ThemesDefault from "Themes" /* 712 */;
-import SearchField from "SearchField" /* 7375 */;
+import SearchField from "SearchField" /* 6101 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "zustandStore" /* 14061 */;
+import closure_4 from "zustandStore" /* 14096 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 createCacheKey = { container: null };
@@ -27,7 +27,7 @@ export default function SettingSearchBar() {
     const result = callback(1892).dismissGlobalKeyboard();
   }, []);
   const callback1 = React.useCallback(() => {
-    const result = callback(7397).trackSettingSearchInputFocused();
+    const result = callback(6124).trackSettingSearchInputFocused();
     store.setState({ isActive: true, isFocused: true });
   }, []);
   const callback2 = React.useCallback(() => {

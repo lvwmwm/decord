@@ -1,9 +1,9 @@
-// Module ID: 13160
-// Function ID: 13161
+// Module ID: 13299
+// Function ID: 13300
 // Name: DEFAULT_ROOM_SIZE
 // Dependencies: [2]
 
-// Module 13160 (DEFAULT_ROOM_SIZE)
+// Module 13299 (DEFAULT_ROOM_SIZE)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/spatial_audio/SpatialAudioConstants.tsx");

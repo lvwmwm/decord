@@ -1,10 +1,10 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12333
+// Function ID: 12334
 // Name: hideLaunchPad
 // Dependencies: [676, 1231, 2]
 // Exports: default
 
-// Module 12005 (hideLaunchPad)
+// Module 12333 (hideLaunchPad)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;

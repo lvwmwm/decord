@@ -1,9 +1,9 @@
-// Module ID: 16259
-// Function ID: 16260
+// Module ID: 16291
+// Function ID: 16292
 // Name: metadata
 // Dependencies: [2]
 
-// Module 16259 (metadata)
+// Module 16291 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/collectibles/frames/announcement_sheet_frame.png.js");

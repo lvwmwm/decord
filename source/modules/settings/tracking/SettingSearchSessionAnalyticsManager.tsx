@@ -1,12 +1,12 @@
-// Module ID: 7396
-// Function ID: 7397
+// Module ID: 6123
+// Function ID: 6124
 // Name: getSearchSessionId
-// Dependencies: [514, 7397, 2]
+// Dependencies: [514, 6124, 2]
 
-// Module 7396 (getSearchSessionId)
+// Module 6123 (getSearchSessionId)
 import set from "set" /* 2 */;
 import v1 from "v1" /* 514 */;
-import trackSettingSearchInputFocused from "trackSettingSearchInputFocused" /* 7397 */;
+import trackSettingSearchInputFocused from "trackSettingSearchInputFocused" /* 6124 */;
 
 class SettingSearchSessionAnalyticsManager {
 }

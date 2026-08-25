@@ -1,17 +1,17 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16124
+// Function ID: 16125
 // Name: FriendRequestsSettingsScreen
-// Dependencies: [19, 17, 21, 4668, 712, 9128, 16093, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 4951, 16125, 2]
 // Exports: default
 
-// Module 16092 (FriendRequestsSettingsScreen)
+// Module 16124 (FriendRequestsSettingsScreen)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 9128 */;
-import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 16093 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 4951 */;
+import UserSettingsFriendRequestsDefault from "UserSettingsFriendRequests" /* 16125 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 noopAll;
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);

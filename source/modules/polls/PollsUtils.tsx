@@ -1,26 +1,26 @@
-// Module ID: 7546
-// Function ID: 7547
+// Module ID: 7364
+// Function ID: 7365
 // Name: getSampleOfVoterUsernamesForAnswer
-// Dependencies: [1391, 7547, 4999, 4024, 4033, 7614, 676, 514, 589, 5394, 687, 1904, 4819, 1236, 7548, 12, 4801, 2]
+// Dependencies: [1391, 7365, 4623, 4025, 4034, 7432, 676, 514, 589, 5949, 687, 1904, 4634, 1236, 7366, 12, 4573, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 7546 (getSampleOfVoterUsernamesForAnswer)
+// Module 7364 (getSampleOfVoterUsernamesForAnswer)
 import v1 from "v1" /* 514 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4819 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4634 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "reactionKey" /* 7547 */;
-import closure_5 from "reinjectEphemerals" /* 4999 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_7 from "markAllUserIdListsStale" /* 4033 */;
-import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7614 */;
+import closure_4 from "reactionKey" /* 7365 */;
+import closure_5 from "reinjectEphemerals" /* 4623 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_7 from "markAllUserIdListsStale" /* 4034 */;
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7432 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7548).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7366).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {
@@ -102,7 +102,8 @@ function formatVoterTooltipText(arr, arg1) {
 const result = require("set").fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export const generateEmptyPollAnswer = function generateEmptyPollAnswer() {
-  const obj = { text: "Array", image: "ct", localCreationAnswerId: v1.v4() };
+  const obj = { text: "Array", image: "isArray", localCreationAnswerId: true };
+  obj[2] = v1.v4();
   return obj;
 };
 export const generateLocalCreationAnswerId = function generateLocalCreationAnswerId() {

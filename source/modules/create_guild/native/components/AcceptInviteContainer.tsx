@@ -1,19 +1,19 @@
-// Module ID: 11943
-// Function ID: 11944
+// Module ID: 12272
+// Function ID: 12273
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 1991, 1910, 4363, 4012, 21, 4668, 712, 1500, 589, 6345, 1403, 6820, 2008, 4373, 8841, 7316, 8081, 9383, 11944, 6840, 4107, 2]
+// Dependencies: [5, 19, 1992, 1910, 4364, 4013, 21, 4380, 712, 1500, 589, 5376, 1403, 5343, 2009, 7339, 9108, 6039, 7903, 8826, 12273, 5434, 4108, 2]
 // Exports: default
 
-// Module 11943 (AcceptInviteContainer)
+// Module 12272 (AcceptInviteContainer)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "updateInvite" /* 4363 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
+import closure_7 from "updateInvite" /* 4364 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 createCacheKey = { flex: { flex: 1 }, paddingContainer: null };
@@ -109,7 +109,7 @@ export default function AcceptInviteContainer(code) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -177,7 +177,7 @@ export default function AcceptInviteContainer(code) {
           return obj;
         }
         c3 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp14) {
         c3 = tmp;
         throw tmp14;
@@ -197,7 +197,7 @@ export default function AcceptInviteContainer(code) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -243,7 +243,7 @@ export default function AcceptInviteContainer(code) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     try {
@@ -269,7 +269,7 @@ export default function AcceptInviteContainer(code) {
                               }
                               if (null == prop) {
                                 c6 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               } else {
                                 closure_1_1();
                                 let tmp11Result = tmp11(tmp12[16]);

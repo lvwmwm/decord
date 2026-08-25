@@ -1,15 +1,15 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 12842
+// Function ID: 12843
 // Name: generateSeparatorRowData
-// Dependencies: [8197, 4668, 712, 1367, 1370, 2]
+// Dependencies: [8193, 4380, 712, 1367, 1370, 2]
 // Exports: generateSeparatorRowData
 
-// Module 12855 (generateSeparatorRowData)
+// Module 12842 (generateSeparatorRowData)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import Changeset from "Changeset" /* 8197 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import Changeset from "Changeset" /* 8193 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 ({ RowType: obj1, SeparatorType: c3 } = Changeset);
 let closure_4 = createCacheKey.createNativeStyleProperties({ dayColor: ThemesDefault.colors.TEXT_MUTED, unreadTextColor: ThemesDefault.colors.MOBILE_CHAT_NEW_MESSAGE_TEXT, unreadBorderColor: ThemesDefault.colors.MOBILE_CHAT_NEW_MESSAGE_BORDER, summaryColor: ThemesDefault.colors.TEXT_BRAND });

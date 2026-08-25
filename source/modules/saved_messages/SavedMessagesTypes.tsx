@@ -1,12 +1,12 @@
-// Module ID: 8528
-// Function ID: 8529
+// Module ID: 8536
+// Function ID: 8537
 // Name: SavedMessageSortTypes
-// Dependencies: [4808, 2]
+// Dependencies: [4625, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 8528 (SavedMessageSortTypes)
+// Module 8536 (SavedMessageSortTypes)
 import set from "set" /* 2 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4625 */;
 
 const result = set.fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");
 

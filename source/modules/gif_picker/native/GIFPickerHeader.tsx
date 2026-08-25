@@ -1,16 +1,16 @@
-// Module ID: 10243
-// Function ID: 10244
+// Module ID: 10094
+// Function ID: 10095
 // Name: FavoritesSearch
-// Dependencies: [32, 19, 17, 676, 21, 4668, 712, 10237, 7384, 4119, 4671, 4674, 8074, 7390, 1236, 7375, 10235, 5438, 10244, 4739, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4380, 712, 10088, 6110, 4120, 4381, 4384, 7896, 6116, 1236, 6101, 10086, 4949, 10095, 4376, 2]
 
-// Module 10243 (FavoritesSearch)
+// Module 10094 (FavoritesSearch)
 import ThemesDefault from "Themes" /* 712 */;
-import GIF_PROVIDER from "GIF_PROVIDER" /* 10235 */;
+import GIF_PROVIDER from "GIF_PROVIDER" /* 10086 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function FavoritesSearch(columnWidth) {
@@ -145,7 +145,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj[2] = tmp5;
     obj[3] = onQueryClear;
     obj[4] = searchInputRef;
-    let tmp13Result = tmp6(tmp2(7375).SearchField, obj);
+    let tmp13Result = tmp6(tmp2(6101).SearchField, obj);
   } else {
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
@@ -159,7 +159,7 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     obj1[3] = intl4.formatToPlainString(tmp2(1236).t.UTypEu, obj2);
     const obj3 = { color: null, size: "sm" };
     obj3[0] = ThemesDefault.colors.INTERACTIVE_TEXT_ACTIVE;
-    const items = [tmp6(tmp2(10244).ChevronLargeLeftIcon, obj3), ];
+    const items = [tmp6(tmp2(10095).ChevronLargeLeftIcon, obj3), ];
     if (categoryType === tmp8.TRENDING_GIFS) {
       const intl3 = tmp2(1236).intl;
       let stringResult = intl3.string(tmp2(1236).t.TsWCdW);
@@ -172,9 +172,9 @@ const memoResult = importAllResult.memo(function GIFPickerHeader(arg0) {
     }
     const obj4 = { variant: "text-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2, children: null };
     obj4[3] = stringResult;
-    items[1] = tmp6(tmp2(4739).Text, obj4);
+    items[1] = tmp6(tmp2(4376).Text, obj4);
     obj1[4] = items;
-    const items1 = [closure_9(tmp2(5438).PressableOpacity, obj1), ];
+    const items1 = [closure_9(tmp2(4949).PressableOpacity, obj1), ];
     let tmp6Result = categoryType === tmp8.FAVORITES;
     if (tmp6Result) {
       const obj5 = { columnWidth: null, onQueryChange: null };

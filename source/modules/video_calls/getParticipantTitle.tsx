@@ -1,14 +1,14 @@
-// Module ID: 12660
-// Function ID: 12661
+// Module ID: 11016
+// Function ID: 11017
 // Name: getParticipantTitle
-// Dependencies: [4549, 12661, 4801, 1236, 2]
+// Dependencies: [4401, 11017, 4573, 1236, 2]
 // Exports: default
 
-// Module 12660 (getParticipantTitle)
+// Module 11016 (getParticipantTitle)
 import set from "set" /* 2 */;
-import ParticipantTypes2 from "ParticipantTypes" /* 4549 */;
-import getNicknameDefault from "getNickname" /* 4801 */;
-import useIsGuestOrLurker from "useIsGuestOrLurker" /* 12661 */;
+import ParticipantTypes2 from "ParticipantTypes" /* 4401 */;
+import getNicknameDefault from "getNickname" /* 4573 */;
+import useIsGuestOrLurker from "useIsGuestOrLurker" /* 11017 */;
 
 const ParticipantTypes = ParticipantTypes2.ParticipantTypes;
 let result = set.fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");

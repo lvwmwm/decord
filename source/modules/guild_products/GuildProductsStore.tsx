@@ -1,9 +1,9 @@
-// Module ID: 13311
-// Function ID: 13312
+// Module ID: 13173
+// Function ID: 13174
 // Name: secondaryIndexMap
-// Dependencies: [687, 11, 4020, 589, 709, 2]
+// Dependencies: [687, 11, 4021, 589, 709, 2]
 
-// Module 13311 (secondaryIndexMap)
+// Module 13173 (secondaryIndexMap)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;

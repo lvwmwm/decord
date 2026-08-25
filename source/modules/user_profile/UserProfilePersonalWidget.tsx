@@ -1,15 +1,15 @@
-// Module ID: 5380
-// Function ID: 5381
+// Module ID: 7236
+// Function ID: 7237
 // Name: createDefaultFieldsSection
-// Dependencies: [1922, 1924, 5381, 1370, 659, 5371, 1945, 2]
+// Dependencies: [1922, 1924, 7237, 1370, 659, 7228, 1946, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 5380 (createDefaultFieldsSection)
+// Module 7236 (createDefaultFieldsSection)
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
-import WidgetType from "WidgetType" /* 5371 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 5381 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
+import WidgetType from "WidgetType" /* 7228 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7237 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
@@ -146,13 +146,11 @@ let c5 = 0;
 let UserProfilePersonalWidget;
 class UserProfilePersonalWidget {
   constructor(arg0) {
-    ({ header, sections } = global);
+    sections = global.sections;
+    ({ id, header } = global);
     obj = Object.create(new.target.prototype);
-    obj.id = global.id;
+    obj.id = id;
     obj.type = require("WidgetType").WidgetType.PERSONAL;
-    if (header == null) {
-      header = "";
-    }
     obj.header = header;
     if (sections == null) {
       sections = [];
@@ -195,26 +193,30 @@ prototype["isDiscardable"] = function isDiscardable() {
   return sections.every(isSectionEmpty);
 };
 prototype["isValid"] = function isValid() {
-  const sections = this.sections;
-  return sections.some((type) => {
-    type = type.type;
-    if (callback(table[2]).PersonalWidgetSectionType.COVER === type) {
-      let tmp5 = "" === type.title.trim();
-      if (tmp5) {
-        tmp5 = "" === type.subtitle.trim();
-        const str3 = type.subtitle;
+  let someResult = "" !== this.header.trim();
+  if (someResult) {
+    const sections = this.sections;
+    someResult = sections.some((type) => {
+      type = type.type;
+      if (callback(table[2]).PersonalWidgetSectionType.COVER === type) {
+        let tmp5 = "" === type.title.trim();
+        if (tmp5) {
+          tmp5 = "" === type.subtitle.trim();
+          const str3 = type.subtitle;
+        }
+        if (tmp5) {
+          tmp5 = null == type.image;
+        }
+        let everyResult = tmp5;
+        const str = type.title;
+      } else if (callback(table[2]).PersonalWidgetSectionType.FIELDS === type) {
+        const fields = type.fields;
+        everyResult = fields.every(closure_7);
       }
-      if (tmp5) {
-        tmp5 = null == type.image;
-      }
-      let everyResult = tmp5;
-      const str = type.title;
-    } else if (callback(table[2]).PersonalWidgetSectionType.FIELDS === type) {
-      const fields = type.fields;
-      everyResult = fields.every(closure_7);
-    }
-    return !everyResult;
-  });
+      return !everyResult;
+    });
+  }
+  return someResult;
 };
 prototype["isUpdatable"] = function isUpdatable() {
   return isPremiumAtLeast.isPremium(currentUser.getCurrentUser(), PremiumTypes.TIER_2);
@@ -249,7 +251,7 @@ prototype["isEqual"] = function isEqual(header) {
             sum = sum + 1;
             num2 = sum;
             flag = true;
-          } else if (tmp16(5381).PersonalWidgetSectionType.FIELDS !== type) {
+          } else if (tmp16(7237).PersonalWidgetSectionType.FIELDS !== type) {
             flag = false;
           }
           tmp16 = require;
@@ -319,13 +321,10 @@ export const createDefaultPersonalWidget = function createDefaultPersonalWidget(
   if (typeof UserProfilePersonalWidget !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  ({ header, sections, id } = obj);
+  ({ sections, id, header } = obj);
   obj = Object.create(UserProfilePersonalWidget.prototype);
   obj.id = id;
   obj.type = WidgetType.WidgetType.PERSONAL;
-  if (header == null) {
-    header = "";
-  }
   obj.header = header;
   if (sections == null) {
     sections = [];
@@ -342,7 +341,7 @@ export const parsePersonalWidgetSections = function parsePersonalWidgetSections(
   } else {
     const mapped = sections.map((type) => {
       type = type.type;
-      if (callback(5381).PersonalWidgetSectionType.COVER === type) {
+      if (callback(7237).PersonalWidgetSectionType.COVER === type) {
         let obj = { type: null, title: null, subtitle: null, image: null };
         ({ type: obj2[0], title } = type);
         if (title == null) {
@@ -369,7 +368,7 @@ export const parsePersonalWidgetSections = function parsePersonalWidgetSections(
         }
         obj[3] = tmp5;
         return obj;
-      } else if (tmp(5381).PersonalWidgetSectionType.FIELDS === type) {
+      } else if (tmp(7237).PersonalWidgetSectionType.FIELDS === type) {
         obj = { type: null, fields: null };
         ({ type: obj[0], fields } = type);
         obj[1] = fields.map(closure_9);
@@ -379,7 +378,7 @@ export const parsePersonalWidgetSections = function parsePersonalWidgetSections(
     });
     items = mapped.filter(isDiscordFrontendDevelopment.isNotNullish);
   }
-  if (!items.some((type) => type.type === callback(5381).PersonalWidgetSectionType.FIELDS)) {
+  if (!items.some((type) => type.type === callback(7237).PersonalWidgetSectionType.FIELDS)) {
     let obj = { type: null, fields: null };
     obj[0] = PersonalWidgetSectionType.PersonalWidgetSectionType.FIELDS;
     obj[1] = [];

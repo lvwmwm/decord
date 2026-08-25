@@ -1,14 +1,14 @@
-// Module ID: 6833
-// Function ID: 6834
+// Module ID: 5364
+// Function ID: 5365
 // Name: initialize
-// Dependencies: [1991, 5048, 1922, 709, 589, 2]
+// Dependencies: [1992, 4589, 1922, 709, 589, 2]
 // Exports: trackMessageNotificationTimestamps
 
-// Module 6833 (initialize)
+// Module 5364 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "trackCommunicationDisabled" /* 1991 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_2 from "trackCommunicationDisabled" /* 1992 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4589 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 let c5 = null;

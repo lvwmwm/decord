@@ -1,22 +1,22 @@
-// Module ID: 9318
-// Function ID: 9319
+// Module ID: 9590
+// Function ID: 9591
 // Name: PX_8
-// Dependencies: [19, 17, 5311, 1947, 5312, 5313, 9002, 9244, 21, 712, 4668, 9255, 9262, 5454, 9263, 9247, 1946, 9258, 2]
+// Dependencies: [19, 17, 7153, 1948, 7154, 7155, 8965, 9523, 21, 712, 4380, 9534, 9541, 5374, 9542, 9526, 1947, 9537, 2]
 
-// Module 9318 (PX_8)
+// Module 9590 (PX_8)
 import ThemesDefault from "Themes" /* 712 */;
-import getNameplateData from "getNameplateData" /* 1946 */;
-import preloadDefault from "preload" /* 5454 */;
-import StaticEffectDefault from "StaticEffect" /* 9247 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9255 */;
-import NameplateInnerDefault from "NameplateInner" /* 9258 */;
-import filterLayerDefault from "filterLayer" /* 9262 */;
-import metadataDefault from "metadata" /* 9263 */;
+import getNameplateData from "getNameplateData" /* 1947 */;
+import preloadDefault from "preload" /* 5374 */;
+import StaticEffectDefault from "StaticEffect" /* 9526 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9534 */;
+import NameplateInnerDefault from "NameplateInner" /* 9537 */;
+import filterLayerDefault from "filterLayer" /* 9541 */;
+import metadataDefault from "metadata" /* 9542 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 5311 */;
-import { PROFILE_FRAME_ASPECT_RATIO as closure_8 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 9002 */;
+import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7153 */;
+import { PROFILE_FRAME_ASPECT_RATIO as closure_8 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8965 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

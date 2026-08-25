@@ -1,14 +1,14 @@
-// Module ID: 10436
-// Function ID: 10437
+// Module ID: 10287
+// Function ID: 10288
 // Name: getProfileChangesForUpdateRequest
-// Dependencies: [8424, 10437, 1949, 2]
+// Dependencies: [8430, 10288, 1950, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
-// Module 10436 (getProfileChangesForUpdateRequest)
+// Module 10287 (getProfileChangesForUpdateRequest)
 import set from "set" /* 2 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import AssetOriginTypes from "AssetOriginTypes" /* 8424 */;
-import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 10437 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import AssetOriginTypes from "AssetOriginTypes" /* 8430 */;
+import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 10288 */;
 
 const result = set.fileFinishedImporting("modules/user_profile/ProfileUpdateRequestUtils.tsx");
 
@@ -64,7 +64,7 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
   }
   const items = [...collectibles];
   if (undefined !== pendingProfileEffect) {
-    const found = items.filter((type) => type.type !== callback(1949).CollectiblesItemType.PROFILE_EFFECT);
+    const found = items.filter((type) => type.type !== callback(1950).CollectiblesItemType.PROFILE_EFFECT);
     let arr3 = found;
     if (null !== pendingProfileEffect) {
       obj = { skuId: null, type: null };
@@ -76,7 +76,7 @@ export const getProfileChangesForUpdateRequest = function getProfileChangesForUp
   }
   let arr5 = arr3;
   if (undefined !== pendingProfileFrame) {
-    const found1 = arr3.filter((type) => type.type !== callback(1949).CollectiblesItemType.PROFILE_FRAME);
+    const found1 = arr3.filter((type) => type.type !== callback(1950).CollectiblesItemType.PROFILE_FRAME);
     arr5 = found1;
     if (null !== pendingProfileFrame) {
       found1.push(pendingProfileFrame);
@@ -108,6 +108,9 @@ export const getAccountUpdateForUpdateRequest = function getAccountUpdateForUpda
   }
   if (undefined !== closure_1_0.pendingDisplayNameStyles) {
     obj.displayNameStyles = closure_1_0.pendingDisplayNameStyles;
+  }
+  if (undefined !== closure_1_0.pendingCustomTypingIndicatorStyle) {
+    obj.typingIndicatorStyle = closure_1_0.pendingCustomTypingIndicatorStyle;
   }
   return obj;
 };

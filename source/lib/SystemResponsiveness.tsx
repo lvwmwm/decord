@@ -1,11 +1,11 @@
-// Module ID: 13149
-// Function ID: 13150
+// Module ID: 13288
+// Function ID: 13289
 // Name: start
-// Dependencies: [7528, 4574, 12, 2]
+// Dependencies: [7346, 4479, 12, 2]
 
-// Module 13149 (start)
+// Module 13288 (start)
 import set from "set" /* 2 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4479 */;
 
 const result = set.fileFinishedImporting("lib/SystemResponsiveness.tsx");
 class SystemResponsiveness {

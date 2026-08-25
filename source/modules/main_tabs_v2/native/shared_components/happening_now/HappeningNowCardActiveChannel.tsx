@@ -1,19 +1,19 @@
-// Module ID: 15416
-// Function ID: 15417
-// Dependencies: [19, 17, 13310, 1391, 11191, 1922, 14708, 676, 21, 4668, 589, 11, 1370, 12, 15415, 698, 1222, 4989, 1236, 6870, 14709, 15409, 2]
+// Module ID: 15446
+// Function ID: 15447
+// Dependencies: [19, 17, 13172, 1391, 11533, 1922, 14738, 676, 21, 4380, 589, 11, 1370, 12, 15445, 698, 1222, 4574, 1236, 4866, 14739, 15439, 2]
 
-// Module 15416
+// Module 15446
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "truncateOldMessageData" /* 13310 */;
-import { MAX_STORED_MESSAGES } from "truncateOldMessageData" /* 13310 */;
+import closure_5 from "truncateOldMessageData" /* 13172 */;
+import { MAX_STORED_MESSAGES } from "truncateOldMessageData" /* 13172 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "handleTypingStart" /* 11191 */;
+import closure_8 from "handleTypingStart" /* 11533 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import { HappeningNowCardTrackingType as closure_10 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14708 */;
+import { HappeningNowCardTrackingType as closure_10 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14738 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;

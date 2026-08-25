@@ -1,15 +1,15 @@
-// Module ID: 6733
-// Function ID: 6734
+// Module ID: 8109
+// Function ID: 8110
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 5431, 5432, 589, 4997, 5259, 6601, 5011, 5016, 6734, 5441, 1236, 2]
+// Dependencies: [5, 32, 19, 7977, 7943, 589, 4621, 7944, 7979, 7208, 7213, 8110, 7948, 1236, 2]
 // Exports: default
 
-// Module 6733 (useAgeVerificationMethods)
+// Module 8109 (useAgeVerificationMethods)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 5431 */;
-import set from "set" /* 5432 */;
+import closure_6 from "initialize" /* 7977 */;
+import set from "set" /* 7943 */;
 
 const require = arg1;
 ({ VERIFICATION_METHOD_TITLE_MAP: error, VerificationMethod: closure_8 } = set);
@@ -99,7 +99,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -132,7 +132,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
                       return obj;
                     } else {
                       c1 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } catch (tmp5) {
                     c1 = tmp;

@@ -1,16 +1,16 @@
-// Module ID: 9862
-// Function ID: 9863
+// Module ID: 10606
+// Function ID: 10607
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 4668, 712, 4029, 506, 9814, 9863, 4738, 6399, 4739, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4380, 712, 4030, 506, 10593, 10607, 4813, 5432, 4376, 1236, 2]
 // Exports: default
 
-// Module 9862 (BotPermissions)
+// Module 10606 (BotPermissions)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

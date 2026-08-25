@@ -1,9 +1,9 @@
-// Module ID: 8422
-// Function ID: 8423
+// Module ID: 4995
+// Function ID: 4996
 // Name: ORIGINAL_MD5_HEADER
 // Dependencies: [2]
 
-// Module 8422 (ORIGINAL_MD5_HEADER)
+// Module 4995 (ORIGINAL_MD5_HEADER)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("lib/uploader_inline/originalMd5Header.tsx");

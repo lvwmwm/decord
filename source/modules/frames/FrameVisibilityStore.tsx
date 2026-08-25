@@ -1,9 +1,9 @@
-// Module ID: 13893
-// Function ID: 13894
+// Module ID: 13928
+// Function ID: 13929
 // Name: isFramePooled
 // Dependencies: [2]
 
-// Module 13893 (isFramePooled)
+// Module 13928 (isFramePooled)
 import set from "set" /* 2 */;
 
 class FrameVisibilityStore {

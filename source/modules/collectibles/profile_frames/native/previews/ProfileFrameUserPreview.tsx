@@ -1,13 +1,13 @@
-// Module ID: 9607
-// Function ID: 9608
+// Module ID: 9703
+// Function ID: 9704
 // Name: ProfileFrameUserPreview
-// Dependencies: [19, 21, 9321, 1236, 2]
+// Dependencies: [19, 21, 9593, 1236, 2]
 // Exports: default
 
-// Module 9607 (ProfileFrameUserPreview)
+// Module 9703 (ProfileFrameUserPreview)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import filterLayerDefault from "filterLayer" /* 9321 */;
+import filterLayerDefault from "filterLayer" /* 9593 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

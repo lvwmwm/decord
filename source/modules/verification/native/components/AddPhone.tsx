@@ -1,22 +1,22 @@
-// Module ID: 8665
-// Function ID: 8666
+// Module ID: 8673
+// Function ID: 8674
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 8620, 1385, 1922, 676, 505, 21, 4668, 712, 589, 8608, 8666, 4277, 4739, 1236, 8667, 8637, 5265, 8668, 2008, 4750, 4662, 8691, 2]
+// Dependencies: [5, 32, 19, 17, 8628, 1385, 1922, 676, 505, 21, 4380, 712, 589, 8616, 8674, 4278, 4376, 1236, 8675, 8645, 4611, 8676, 2009, 4815, 4745, 8699, 2]
 // Exports: default
 
-// Module 8665 (AddPhone)
+// Module 8673 (AddPhone)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleSetLocationMetadata" /* 8620 */;
+import closure_8 from "handleSetLocationMetadata" /* 8628 */;
 import closure_9 from "handleRequiredAction" /* 1385 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import { UserFlags } from "ME" /* 676 */;
 import { NOOP_NULL } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -60,7 +60,7 @@ export default function AddPhone(reason) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

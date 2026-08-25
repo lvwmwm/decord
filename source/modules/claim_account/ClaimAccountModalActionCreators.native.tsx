@@ -1,10 +1,10 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 9393
+// Function ID: 9394
 // Name: openNewUserAgeGateModal
 // Dependencies: [2]
 // Exports: openClaimAccountModal, openNewUserAgeGateModal
 
-// Module 9777 (openNewUserAgeGateModal)
+// Module 9393 (openNewUserAgeGateModal)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/claim_account/ClaimAccountModalActionCreators.native.tsx");

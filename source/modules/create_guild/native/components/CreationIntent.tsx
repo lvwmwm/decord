@@ -1,24 +1,24 @@
-// Module ID: 11934
-// Function ID: 11935
+// Module ID: 12268
+// Function ID: 12269
 // Name: CreationIntent
-// Dependencies: [19, 17, 8654, 676, 21, 4668, 6401, 712, 1500, 4727, 4736, 11905, 698, 6840, 4739, 1236, 6317, 11540, 5452, 2]
+// Dependencies: [19, 17, 8662, 676, 21, 4380, 5373, 712, 1500, 4802, 4811, 12239, 698, 5434, 4376, 1236, 5873, 11891, 6136, 2]
 // Exports: default
 
-// Module 11934 (CreationIntent)
+// Module 12268 (CreationIntent)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useNavigation from "useNavigation" /* 1500 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4727 */;
-import Text from "Text" /* 4739 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 6317 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 6840 */;
+import Text from "Text" /* 4376 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4802 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5434 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5873 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6136 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 8654 */;
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 8662 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
@@ -127,7 +127,7 @@ export default function CreationIntent(arg0) {
   const items3 = [callback2(ref, obj1), , ];
   const obj4 = { style: tmp.sections, children: null };
   const obj5 = { hasIcons: true, children: null };
-  const tmp13 = trigger(11540);
+  const tmp13 = trigger(11891);
   const obj6 = { Icon: null, message: null, onPress: null };
   const tmp14 = AccountAgeTier10LargeBadge;
   if (closure_14) {
@@ -139,8 +139,8 @@ export default function CreationIntent(arg0) {
     };
     const items4 = [tmp8(tmp13, obj6), ];
     const obj7 = { Icon: null, message: null, onPress: null };
-    let tmp12Result = tmp12(11540);
-    obj7[0] = tmp2(5452).WorldIllocon;
+    let tmp12Result = tmp12(11891);
+    obj7[0] = tmp2(6136).WorldIllocon;
     const intl6 = tmp2(1236).intl;
     obj7[1] = intl6.string(tmp2(1236).t.h9Q1lG);
     obj7[2] = function onPress() {
@@ -158,8 +158,8 @@ export default function CreationIntent(arg0) {
     };
     const items5 = [tmp8(tmp13, obj6), ];
     const obj8 = { Icon: null, message: null, onPress: null };
-    tmp12Result = tmp12(11540);
-    obj8[0] = tmp2(5452).ChairIllocon;
+    tmp12Result = tmp12(11891);
+    obj8[0] = tmp2(6136).ChairIllocon;
     const intl4 = tmp2(1236).intl;
     obj8[1] = intl4.string(tmp2(1236).t.uE7zcu);
     obj8[2] = function onPress() {

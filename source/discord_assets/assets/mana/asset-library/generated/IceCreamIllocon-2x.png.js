@@ -1,9 +1,9 @@
-// Module ID: 5942
-// Function ID: 5943
+// Module ID: 6632
+// Function ID: 6633
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5942 (metadata)
+// Module 6632 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/IceCreamIllocon-2x.png.js");

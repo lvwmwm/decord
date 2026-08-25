@@ -1,10 +1,10 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 8859
+// Function ID: 8860
 // Name: EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT
-// Dependencies: [19, 17, 1922, 676, 1924, 21, 4668, 712, 698, 4042, 4346, 9362, 9363, 1297, 9417, 4739, 1236, 5438, 2]
+// Dependencies: [19, 17, 1922, 676, 1924, 21, 4380, 712, 698, 4043, 4347, 8769, 8770, 1297, 8860, 4376, 1236, 4949, 2]
 // Exports: useEmojiPickerPremiumSearchUpsellClick, useEmojiPickerPremiumSearchUpsellViewed
 
-// Module 9416 (EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT)
+// Module 8859 (EMOJI_PICKER_PREMIUM_UPSELL_HEIGHT)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -12,7 +12,7 @@ import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;

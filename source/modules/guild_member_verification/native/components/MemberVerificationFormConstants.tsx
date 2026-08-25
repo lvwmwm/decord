@@ -1,10 +1,10 @@
-// Module ID: 8564
-// Function ID: 8565
+// Module ID: 8572
+// Function ID: 8573
 // Name: BANNER_RATIO_HEIGHT_16_9
 // Dependencies: [1494, 2]
 // Exports: useBannerHeight
 
-// Module 8564 (BANNER_RATIO_HEIGHT_16_9)
+// Module 8572 (BANNER_RATIO_HEIGHT_16_9)
 import set from "set" /* 2 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 

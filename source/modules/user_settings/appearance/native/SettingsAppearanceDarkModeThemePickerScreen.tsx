@@ -1,13 +1,13 @@
-// Module ID: 14721
-// Function ID: 14722
+// Module ID: 14751
+// Function ID: 14752
 // Name: SettingsAppearanceDarkModeThemePickerScreen
-// Dependencies: [19, 1305, 21, 14680, 1236, 2]
+// Dependencies: [19, 1305, 21, 14710, 1236, 2]
 // Exports: default
 
-// Module 14721 (SettingsAppearanceDarkModeThemePickerScreen)
+// Module 14751 (SettingsAppearanceDarkModeThemePickerScreen)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ThemeTypesDefault from "ThemeTypes" /* 14680 */;
+import ThemeTypesDefault from "ThemeTypes" /* 14710 */;
 import { SystemTheme } from "SystemThemeState" /* 1305 */;
 import { jsx } from "jsxProd" /* 21 */;
 

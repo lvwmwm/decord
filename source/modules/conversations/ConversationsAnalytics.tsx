@@ -1,9 +1,9 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 8713
+// Function ID: 8714
 // Name: ConversationsAnalytics
 // Dependencies: [1391, 676, 698, 2]
 
-// Module 12740 (ConversationsAnalytics)
+// Module 8713 (ConversationsAnalytics)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 import { AnalyticEvents } from "ME" /* 676 */;

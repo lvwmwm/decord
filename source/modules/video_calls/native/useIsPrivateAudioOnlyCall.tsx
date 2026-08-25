@@ -1,17 +1,17 @@
-// Module ID: 8710
-// Function ID: 8711
+// Module ID: 9897
+// Function ID: 9898
 // Name: areParticipantStatesEqual
-// Dependencies: [32, 1390, 4778, 4658, 4501, 4547, 4549, 589, 2]
+// Dependencies: [32, 1390, 4396, 4402, 4431, 4399, 4401, 589, 2]
 // Exports: default
 
-// Module 8710 (areParticipantStatesEqual)
+// Module 9897 (areParticipantStatesEqual)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "participantFromServer" /* 1390 */;
-import closure_4 from "getParticipants" /* 4778 */;
-import closure_5 from "reset" /* 4658 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4501 */;
-import closure_7 from "updateVoiceState" /* 4547 */;
-import { isActivityParticipant } from "ParticipantTypes" /* 4549 */;
+import closure_4 from "getParticipants" /* 4396 */;
+import closure_5 from "reset" /* 4402 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_7 from "updateVoiceState" /* 4399 */;
+import { isActivityParticipant } from "ParticipantTypes" /* 4401 */;
 
 const require = arg1;
 function areParticipantStatesEqual(arg0, arg1) {

@@ -1,14 +1,14 @@
-// Module ID: 16661
-// Function ID: 16662
+// Module ID: 16693
+// Function ID: 16694
 // Name: StreamFeedbackActionSheet
-// Dependencies: [19, 1218, 676, 10850, 21, 7525, 589, 1236, 2566, 10853, 16662, 698, 16526, 16663, 4346, 16664, 2008, 4096, 2]
+// Dependencies: [19, 1218, 676, 11174, 21, 7342, 589, 1236, 2567, 11177, 16694, 698, 16558, 16695, 4347, 16696, 2009, 4097, 2]
 // Exports: default
 
-// Module 16661 (StreamFeedbackActionSheet)
+// Module 16693 (StreamFeedbackActionSheet)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import FeedbackRating from "FeedbackRating" /* 10850 */;
+import FeedbackRating from "FeedbackRating" /* 11174 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -20,7 +20,7 @@ export default function StreamFeedbackActionSheet(stream) {
   stream = stream.stream;
   const analyticsData = stream.analyticsData;
   dependencyMap = undefined;
-  let obj = stream(7525);
+  let obj = stream(7342);
   dependencyMap = obj.useGetStreamApplication(stream);
   obj1 = stream(589);
   const items = [closure_3];
@@ -32,7 +32,7 @@ export default function StreamFeedbackActionSheet(stream) {
   let stringResult2 = intl3.string(stream(1236).t.CqjnLN);
   obj = { value: stateFromStores ? tmp7.STREAMING : tmp7.STREAM_WATCHING, label: null, problemsHeader: null, problemOptions: null, freeformConfig: null };
   const intl4 = tmp(1236).intl;
-  let tmp9 = analyticsData(2566);
+  let tmp9 = analyticsData(2567);
   if (stateFromStores) {
     let TVTIT1 = tmp9["0ZBLiZ"];
     let tmp10 = tmp8;
@@ -44,20 +44,20 @@ export default function StreamFeedbackActionSheet(stream) {
   const intl5 = tmp(1236).intl;
   obj[2] = intl5.string(stream(1236).t["6Y1t5P"]);
   const stringResult1 = intl2.string(stream(1236).t["0uxA2V"]);
-  obj[3] = stream(10853).getStreamFeedbackOptions({ isStreamer: stateFromStores });
+  obj[3] = stream(11177).getStreamFeedbackOptions({ isStreamer: stateFromStores });
   obj = { value: constants.FREEFORM, label: null };
   const intl6 = tmp(1236).intl;
   obj[1] = intl6.string(stream(1236).t.emlT91);
   obj[4] = obj;
   obj1 = { headerLabel: stringResult, showHeaderCloseButton: true, ratingBody: null, categoriesHeader: null, optionsTree: null, trackOpen: null, trackReport: null };
   const tmp11 = jsx;
-  const tmpResult = stream(10853);
+  const tmpResult = stream(11177);
   if (stateFromStores) {
     stringResult2 = stringResult1;
   }
   obj1[2] = stringResult2;
   const intl7 = tmp(1236).intl;
-  obj1[3] = intl7.string(tmp10(2566).tq8598);
+  obj1[3] = intl7.string(tmp10(2567).tq8598);
   const items1 = [obj];
   obj1[4] = items1;
   obj1[5] = function trackOpen() {
@@ -132,5 +132,5 @@ export default function StreamFeedbackActionSheet(stream) {
       const obj4 = stream(paths[17]);
     }
   };
-  return tmp11(tmp10(16662), obj1);
+  return tmp11(tmp10(16694), obj1);
 };

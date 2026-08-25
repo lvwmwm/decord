@@ -1,10 +1,10 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17266
+// Function ID: 17267
 // Name: libDiscoreSmokeTest
 // Dependencies: [5, 676, 3, 1920, 1917, 1914, 698, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 17234 (libDiscoreSmokeTest)
+// Module 17266 (libDiscoreSmokeTest)
 import timestampDefault from "timestamp" /* 3 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -35,7 +35,7 @@ function _libDiscoreSmokeTest() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

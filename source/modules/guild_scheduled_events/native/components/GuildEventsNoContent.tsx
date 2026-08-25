@@ -1,19 +1,19 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 9189
+// Function ID: 9190
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 4024, 676, 505, 21, 4668, 6819, 712, 589, 8107, 8933, 8934, 4739, 1236, 8911, 2]
+// Dependencies: [19, 17, 4025, 676, 505, 21, 4380, 5342, 712, 589, 7932, 9190, 9191, 4376, 1236, 9168, 2]
 // Exports: default
 
-// Module 8932 (GuildEventsNoContent)
+// Module 9189 (GuildEventsNoContent)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4025 */;
 import { GuildSettingsSections } from "ME" /* 676 */;
 import sum from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import importDefaultResult from "createTextStyle" /* 6819 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "createTextStyle" /* 5342 */;
 
 const require = arg1;
 noopAll;
@@ -37,16 +37,16 @@ export default function GuildEventsNoContent(guild) {
   const items1 = [guild];
   let stateFromStores = obj.useStateFromStores(items, () => closure_1_4.can(closure_1_6.MANAGE_ROLES, guild), items1);
   obj = { style: tmp.container, children: null };
-  obj = { icon: onClose(8933), IconComponent: guild(8934).CalendarIcon };
-  const items2 = [callback(onClose(8107), obj), , , ];
+  obj = { icon: onClose(9190), IconComponent: guild(9191).CalendarIcon };
+  const items2 = [callback(onClose(7932), obj), , , ];
   obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = guild(1236).intl;
   obj1[4] = intl.string(guild(1236).t["WgZ+3D"]);
-  items2[1] = callback(guild(4739).Text, obj1);
+  items2[1] = callback(guild(4376).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: null };
   const intl2 = guild(1236).intl;
   obj2[3] = intl2.string(guild(1236).t["v/S/PG"]);
-  items2[2] = callback(guild(4739).Text, obj2);
+  items2[2] = callback(guild(4376).Text, obj2);
   if (stateFromStores) {
     const obj3 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
     obj3[0] = tmp.subtitle;
@@ -57,7 +57,7 @@ export default function GuildEventsNoContent(guild) {
       onClose(closure_1_2[15]).open(guild.id, closure_1_5.ROLES);
     };
     obj3[3] = intl3.format(tmp2(1236).t["K+DH2o"], obj4);
-    stateFromStores = callback(tmp2(4739).Text, obj3);
+    stateFromStores = callback(tmp2(4376).Text, obj3);
   }
   items2[3] = stateFromStores;
   obj[1] = items2;

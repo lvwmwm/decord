@@ -1,10 +1,10 @@
-// Module ID: 6851
-// Function ID: 6852
+// Module ID: 4843
+// Function ID: 4844
 // Name: useHasEnhancedRoleColors
 // Dependencies: [1910, 676, 589, 2]
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 6851 (useHasEnhancedRoleColors)
+// Module 4843 (useHasEnhancedRoleColors)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 import { GuildFeatures } from "ME" /* 676 */;
 

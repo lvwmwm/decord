@@ -1,9 +1,9 @@
-// Module ID: 7545
-// Function ID: 7546
+// Module ID: 7363
+// Function ID: 7364
 // Name: set
 // Dependencies: [2]
 
-// Module 7545 (set)
+// Module 7363 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/SentMessageIntentsHandler.android.tsx");

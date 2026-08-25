@@ -1,15 +1,15 @@
-// Module ID: 10694
-// Function ID: 10695
+// Module ID: 10496
+// Function ID: 10497
 // Name: GiftBoxAnimation
-// Dependencies: [19, 4669, 1924, 21, 589, 4490, 10695, 10696, 10697, 9640, 9649, 9646, 9643, 9652, 9655, 9658, 9661, 7168, 2]
+// Dependencies: [19, 4372, 1924, 21, 589, 4593, 10497, 10498, 10499, 9736, 9745, 9742, 9739, 9748, 9751, 9754, 9757, 5825, 2]
 // Exports: default
 
-// Module 10694 (GiftBoxAnimation)
+// Module 10496 (GiftBoxAnimation)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
-import t from "t" /* 4490 */;
-import playDefault from "play" /* 7168 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import t from "t" /* 4593 */;
+import playDefault from "play" /* 5825 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import { PremiumGiftStyles } from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -26,19 +26,19 @@ export default function GiftBoxAnimation(giftStyle) {
   } else {
     const match = t.match(giftStyle);
     const str = t;
-    const withResult = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695));
-    const withResult1 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696));
-    const withResult2 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697));
-    const withResult3 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640));
-    const withResult4 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640)).with(PremiumGiftStyles.COFFEE, () => callback(9649));
-    const withResult5 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640)).with(PremiumGiftStyles.COFFEE, () => callback(9649)).with(PremiumGiftStyles.CHEST, () => callback(9646));
-    const withResult6 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640)).with(PremiumGiftStyles.COFFEE, () => callback(9649)).with(PremiumGiftStyles.CHEST, () => callback(9646)).with(PremiumGiftStyles.CAKE, () => callback(9643));
-    const withResult7 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640)).with(PremiumGiftStyles.COFFEE, () => callback(9649)).with(PremiumGiftStyles.CHEST, () => callback(9646)).with(PremiumGiftStyles.CAKE, () => callback(9643)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9652));
-    const withResult8 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640)).with(PremiumGiftStyles.COFFEE, () => callback(9649)).with(PremiumGiftStyles.CHEST, () => callback(9646)).with(PremiumGiftStyles.CAKE, () => callback(9643)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9652)).with(PremiumGiftStyles.SEASONAL_CAKE, () => callback(9655));
-    const withResult9 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640)).with(PremiumGiftStyles.COFFEE, () => callback(9649)).with(PremiumGiftStyles.CHEST, () => callback(9646)).with(PremiumGiftStyles.CAKE, () => callback(9643)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9652)).with(PremiumGiftStyles.SEASONAL_CAKE, () => callback(9655)).with(PremiumGiftStyles.SEASONAL_CHEST, () => callback(9658));
-    const withResult10 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640)).with(PremiumGiftStyles.COFFEE, () => callback(9649)).with(PremiumGiftStyles.CHEST, () => callback(9646)).with(PremiumGiftStyles.CAKE, () => callback(9643)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9652)).with(PremiumGiftStyles.SEASONAL_CAKE, () => callback(9655)).with(PremiumGiftStyles.SEASONAL_CHEST, () => callback(9658)).with(PremiumGiftStyles.SEASONAL_COFFEE, () => callback(9661));
+    const withResult = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497));
+    const withResult1 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498));
+    const withResult2 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499));
+    const withResult3 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736));
+    const withResult4 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736)).with(PremiumGiftStyles.COFFEE, () => callback(9745));
+    const withResult5 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736)).with(PremiumGiftStyles.COFFEE, () => callback(9745)).with(PremiumGiftStyles.CHEST, () => callback(9742));
+    const withResult6 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736)).with(PremiumGiftStyles.COFFEE, () => callback(9745)).with(PremiumGiftStyles.CHEST, () => callback(9742)).with(PremiumGiftStyles.CAKE, () => callback(9739));
+    const withResult7 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736)).with(PremiumGiftStyles.COFFEE, () => callback(9745)).with(PremiumGiftStyles.CHEST, () => callback(9742)).with(PremiumGiftStyles.CAKE, () => callback(9739)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9748));
+    const withResult8 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736)).with(PremiumGiftStyles.COFFEE, () => callback(9745)).with(PremiumGiftStyles.CHEST, () => callback(9742)).with(PremiumGiftStyles.CAKE, () => callback(9739)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9748)).with(PremiumGiftStyles.SEASONAL_CAKE, () => callback(9751));
+    const withResult9 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736)).with(PremiumGiftStyles.COFFEE, () => callback(9745)).with(PremiumGiftStyles.CHEST, () => callback(9742)).with(PremiumGiftStyles.CAKE, () => callback(9739)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9748)).with(PremiumGiftStyles.SEASONAL_CAKE, () => callback(9751)).with(PremiumGiftStyles.SEASONAL_CHEST, () => callback(9754));
+    const withResult10 = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736)).with(PremiumGiftStyles.COFFEE, () => callback(9745)).with(PremiumGiftStyles.CHEST, () => callback(9742)).with(PremiumGiftStyles.CAKE, () => callback(9739)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9748)).with(PremiumGiftStyles.SEASONAL_CAKE, () => callback(9751)).with(PremiumGiftStyles.SEASONAL_CHEST, () => callback(9754)).with(PremiumGiftStyles.SEASONAL_COFFEE, () => callback(9757));
     const obj = { source: null, autoPlay: null, style: null };
-    obj[0] = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10695)).with(PremiumGiftStyles.BOX, () => callback(10696)).with(PremiumGiftStyles.CUP, () => callback(10697)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9640)).with(PremiumGiftStyles.COFFEE, () => callback(9649)).with(PremiumGiftStyles.CHEST, () => callback(9646)).with(PremiumGiftStyles.CAKE, () => callback(9643)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9652)).with(PremiumGiftStyles.SEASONAL_CAKE, () => callback(9655)).with(PremiumGiftStyles.SEASONAL_CHEST, () => callback(9658)).with(PremiumGiftStyles.SEASONAL_COFFEE, () => callback(9661)).otherwise(() => callback(9640));
+    obj[0] = match.with(PremiumGiftStyles.SNOWGLOBE, () => callback(10497)).with(PremiumGiftStyles.BOX, () => callback(10498)).with(PremiumGiftStyles.CUP, () => callback(10499)).with(PremiumGiftStyles.STANDARD_BOX, () => callback(9736)).with(PremiumGiftStyles.COFFEE, () => callback(9745)).with(PremiumGiftStyles.CHEST, () => callback(9742)).with(PremiumGiftStyles.CAKE, () => callback(9739)).with(PremiumGiftStyles.SEASONAL_STANDARD_BOX, () => callback(9748)).with(PremiumGiftStyles.SEASONAL_CAKE, () => callback(9751)).with(PremiumGiftStyles.SEASONAL_CHEST, () => callback(9754)).with(PremiumGiftStyles.SEASONAL_COFFEE, () => callback(9757)).otherwise(() => callback(9736));
     obj[1] = !tmp4;
     obj[2] = { width: 320, height: 212 };
     return jsx(playDefault, { source: null, autoPlay: null, style: null });

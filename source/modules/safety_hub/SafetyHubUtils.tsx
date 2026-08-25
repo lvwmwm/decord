@@ -1,17 +1,17 @@
-// Module ID: 5442
-// Function ID: 5443
+// Module ID: 7949
+// Function ID: 7950
 // Name: parseMessageEmbedForProps
-// Dependencies: [1218, 5443, 676, 3978, 4816, 1236, 5444, 589, 2]
+// Dependencies: [1218, 7950, 676, 3979, 4571, 1236, 7951, 589, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 5442 (parseMessageEmbedForProps)
+// Module 7949 (parseMessageEmbedForProps)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import tDefault from "t" /* 3978 */;
-import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4816 */;
-import ContentIdType from "ContentIdType" /* 5444 */;
+import hooksDefault from "hooks" /* 3979 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4571 */;
+import ContentIdType from "ContentIdType" /* 7951 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import SafetyHubView from "SafetyHubView" /* 5443 */;
+import SafetyHubView from "SafetyHubView" /* 7950 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -56,7 +56,7 @@ function parseMessageEmbedForProps(fields) {
 const result = require("set").fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  return tDefault().to(tDefault(timestamp));
+  return hooksDefault().to(hooksDefault(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   if (obj.isImageFile(filename.filename)) {

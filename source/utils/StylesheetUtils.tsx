@@ -1,10 +1,10 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 12218
+// Function ID: 12219
 // Name: getClass
 // Dependencies: [1903, 2]
 // Exports: getClass
 
-// Module 11882 (getClass)
+// Module 12218 (getClass)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/StylesheetUtils.tsx");

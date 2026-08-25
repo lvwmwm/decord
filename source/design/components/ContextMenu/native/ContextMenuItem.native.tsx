@@ -1,16 +1,16 @@
-// Module ID: 13588
-// Function ID: 13589
+// Module ID: 13623
+// Function ID: 13624
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 4119, 4668, 9999, 712, 1367, 9998, 4749, 4753, 4752, 4739, 2]
+// Dependencies: [19, 17, 21, 4120, 4380, 8747, 712, 1367, 8746, 4814, 4818, 4817, 4376, 2]
 // Exports: ContextMenuItem
 
-// Module 13588 (ContextMenuItem)
+// Module 13623 (ContextMenuItem)
 import ThemesDefault from "Themes" /* 712 */;
-import CONTEXT_MENU_LONG_PRESS_DURATION_MS from "CONTEXT_MENU_LONG_PRESS_DURATION_MS" /* 9999 */;
+import CONTEXT_MENU_LONG_PRESS_DURATION_MS from "CONTEXT_MENU_LONG_PRESS_DURATION_MS" /* 8747 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import importDefaultResult from "module_4119" /* 4119 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "module_4120" /* 4120 */;
 
 require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);

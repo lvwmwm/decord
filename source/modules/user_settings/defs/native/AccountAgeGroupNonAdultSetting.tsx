@@ -1,17 +1,17 @@
-// Module ID: 14196
-// Function ID: 14197
+// Module ID: 14226
+// Function ID: 14227
 // Name: pressable
-// Dependencies: [8238, 5433, 5259, 4997, 1236, 4075, 10708, 2]
+// Dependencies: [8235, 7942, 7944, 4621, 1236, 4076, 10516, 2]
 
-// Module 14196 (pressable)
+// Module 14226 (pressable)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4075 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4997 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 5259 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 5433 */;
-import MobileUserSettings from "MobileUserSettings" /* 8238 */;
-import createToggle from "createToggle" /* 10708 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4076 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4621 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 7942 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 7944 */;
+import MobileUserSettings from "MobileUserSettings" /* 8235 */;
+import createToggle from "createToggle" /* 10516 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {

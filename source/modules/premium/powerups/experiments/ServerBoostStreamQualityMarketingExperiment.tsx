@@ -1,10 +1,10 @@
-// Module ID: 13076
-// Function ID: 13077
+// Module ID: 13064
+// Function ID: 13065
 // Name: CONTROL_RESOLUTION
 // Dependencies: [1368, 2]
 // Exports: getServerBoostStreamQualityMarketingResolution
 
-// Module 13076 (CONTROL_RESOLUTION)
+// Module 13064 (CONTROL_RESOLUTION)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 const obj = { 1: null };

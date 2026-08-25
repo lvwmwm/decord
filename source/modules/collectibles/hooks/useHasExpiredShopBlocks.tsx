@@ -1,10 +1,10 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15048
+// Function ID: 15049
 // Name: useHasExpiredShopBlocks
-// Dependencies: [32, 19, 676, 5344, 2]
+// Dependencies: [32, 19, 676, 7179, 2]
 // Exports: useHasExpiredShopBlocks
 
-// Module 15018 (useHasExpiredShopBlocks)
+// Module 15048 (useHasExpiredShopBlocks)
 import closure_2 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import { MAX_TIMEOUT_MS } from "ME" /* 676 */;

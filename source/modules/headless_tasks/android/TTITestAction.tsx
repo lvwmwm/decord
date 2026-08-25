@@ -1,17 +1,17 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17272
+// Function ID: 17273
 // Name: sendReply
-// Dependencies: [5, 16536, 4292, 4497, 1218, 1391, 1910, 3, 4240, 10176, 16719, 709, 5427, 1626, 698, 5261, 8081, 4773, 14942, 1307, 2]
+// Dependencies: [5, 16568, 4293, 5450, 1218, 1391, 1910, 3, 4241, 10026, 16751, 709, 7280, 1626, 698, 5933, 7903, 4391, 14972, 1307, 2]
 
-// Module 17240 (sendReply)
+// Module 17272 (sendReply)
 import timestampDefault from "timestamp" /* 3 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import enforcingDefault from "enforcing" /* 4240 */;
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 5427 */;
-import enforcingDefault2 from "enforcing" /* 16719 */;
+import enforcingDefault from "enforcing" /* 4241 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7280 */;
+import enforcingDefault2 from "enforcing" /* 16751 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import { applicationReady } from "linkFromAppsFlyer" /* 16536 */;
-import closure_6 from "getHash" /* 4292 */;
+import { applicationReady } from "linkFromAppsFlyer" /* 16568 */;
+import closure_6 from "getHash" /* 4293 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
@@ -88,7 +88,7 @@ function _setupTTITest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -162,7 +162,7 @@ function _apiLogin() {
           obj[0] = ok;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -197,7 +197,7 @@ function _apiLogin() {
                 }
               }
               if (null != closure_1_8.getId()) {
-                let obj16 = callback(5261);
+                let obj16 = callback(5933);
                 c6 = 3;
                 c7 = 1;
                 const obj3 = { value: null, done: false };
@@ -244,7 +244,7 @@ function _apiLogin() {
               obj9[0] = ok;
               return obj9;
             } else if (ok.ok) {
-              obj7 = callback(5261);
+              obj7 = callback(5933);
               c6 = 4;
               c7 = 1;
               const obj10 = { value: null, done: false };
@@ -323,7 +323,7 @@ function _apiLogin() {
               obj = iter;
               obj = callback2(table[11]);
               callback2 = iter;
-              const f121885 = () => { ... };
+              const f122128 = () => { ... };
               function handler() { ... }
               const subscription = obj.subscribe(iter, handler);
             }
@@ -333,7 +333,7 @@ function _apiLogin() {
               continue;
             }
             closure_1_20(callback(709), "LOGIN_SUCCESS", (token) => callback(token.token));
-            obj = callback(5261);
+            obj = callback(5933);
             obj = { login: closure_0, password: callback };
             obj.login(obj);
           });
@@ -364,7 +364,7 @@ function subscribeOnce(subscribe) {
   closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f121885(arg0);
+    return f122128(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }
@@ -378,7 +378,7 @@ let obj = {
     enforcingDefault.logToDevice(json);
   },
   () => {
-    obj = callback(10176);
+    obj = callback(10026);
     const result = obj.resetComponentProfiler();
     obj = { type: "response", status: "success", message: "reset-component-profiler" };
     const merged = Object.assign(undefined);
@@ -386,7 +386,7 @@ let obj = {
     enforcingDefault.logToDevice(json);
   },
   () => {
-    obj = callback(10176);
+    obj = callback(10026);
     const result = obj.pauseComponentProfiler();
     obj = { type: "response", status: "success", message: "pause-component-profiler" };
     const merged = Object.assign(undefined);
@@ -394,7 +394,7 @@ let obj = {
     enforcingDefault.logToDevice(json);
   },
   () => {
-    obj = callback(10176);
+    obj = callback(10026);
     const result = obj.resumeComponentProfiler();
     obj = { type: "response", status: "success", message: "resume-component-profiler" };
     const merged = Object.assign(undefined);
@@ -402,11 +402,11 @@ let obj = {
     enforcingDefault.logToDevice(json);
   },
   () => {
-    obj = { stats: callback(10176).dumpStats() };
+    obj = { stats: callback(10026).dumpStats() };
     obj = { type: "response", status: "success", message: "dump-component-profiler-stats" };
     const merged = Object.assign(obj);
     const json = JSON.stringify(obj);
-    const obj2 = callback(10176);
+    const obj2 = callback(10026);
     enforcingDefault.logToDevice(json);
   },
   () => {
@@ -487,7 +487,7 @@ let closure_3 = importDefaultResult((arg0) => {
           obj[0] = result;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -552,7 +552,7 @@ let closure_3 = importDefaultResult((arg0) => {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -567,7 +567,7 @@ let closure_3 = importDefaultResult((arg0) => {
                       return obj;
                     } else {
                       c0 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } catch (tmp4) {
                     c0 = tmp;

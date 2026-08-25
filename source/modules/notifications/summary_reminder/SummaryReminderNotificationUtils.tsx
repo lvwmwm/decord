@@ -1,15 +1,15 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14917
+// Function ID: 14918
 // Name: onSummaryReminderNotificationSettingsChanged
-// Dependencies: [4036, 676, 4069, 698, 2]
+// Dependencies: [4037, 676, 4070, 698, 2]
 // Exports: onSummaryReminderNotificationSettingsChanged
 
-// Module 14887 (onSummaryReminderNotificationSettingsChanged)
+// Module 14917 (onSummaryReminderNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4036 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4037 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
 
 let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
 const AnalyticEvents = ME.AnalyticEvents;

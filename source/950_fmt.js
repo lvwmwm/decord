@@ -16,7 +16,7 @@ export const debug = function debug(message, attributes, attributes) {
   if (attributes === undefined) {
     obj = {};
   }
-  obj = { level: "debug", message, attributes, severityNumber: "accessibilityLabel" };
+  obj = { level: "debug", message, attributes, severityNumber: "accessibilityRole" };
   _INTERNAL_captureSerializedLog._INTERNAL_captureLog(obj, obj.scope);
 };
 export const error = function error(message, attributes, attributes) {
@@ -40,7 +40,7 @@ export const info = function info(message, attributes, attributes) {
   if (attributes === undefined) {
     obj = {};
   }
-  obj = { level: "info", message, attributes, severityNumber: "accessibilityLabel" };
+  obj = { level: "info", message, attributes, severityNumber: "accessibilityRole" };
   _INTERNAL_captureSerializedLog._INTERNAL_captureLog(obj, obj.scope);
 };
 export const trace = function trace(message, attributes, attributes) {
@@ -48,7 +48,7 @@ export const trace = function trace(message, attributes, attributes) {
   if (attributes === undefined) {
     obj = {};
   }
-  obj = { level: "trace", message, attributes, severityNumber: "accessibilityLabel" };
+  obj = { level: "trace", message, attributes, severityNumber: "accessibilityRole" };
   _INTERNAL_captureSerializedLog._INTERNAL_captureLog(obj, obj.scope);
 };
 export const warn = function warn(message, attributes, attributes) {

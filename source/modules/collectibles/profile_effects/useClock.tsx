@@ -1,10 +1,10 @@
-// Module ID: 9252
-// Function ID: 9253
+// Module ID: 9531
+// Function ID: 9532
 // Name: allowableMinInterval
-// Dependencies: [19, 38, 4766, 2]
+// Dependencies: [19, 38, 4831, 2]
 // Exports: default
 
-// Module 9252 (allowableMinInterval)
+// Module 9531 (allowableMinInterval)
 import closure_2 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/collectibles/profile_effects/useClock.tsx");

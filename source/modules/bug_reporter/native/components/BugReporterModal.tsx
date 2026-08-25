@@ -1,27 +1,27 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10017
+// Function ID: 10018
 // Name: handleClose
-// Dependencies: [5, 32, 19, 17, 1922, 10166, 21, 4668, 712, 689, 687, 5265, 1500, 589, 1236, 6345, 4834, 4097, 8182, 10168, 584, 10169, 8801, 5437, 8139, 5454, 1435, 4856, 4738, 4739, 6323, 10178, 5438, 1297, 4750, 8110, 6317, 6322, 4346, 10193, 2008, 8140, 8131, 708, 10194, 10158, 6343, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 10016, 21, 4380, 712, 689, 687, 4611, 1500, 589, 1236, 5376, 4954, 4098, 8178, 10018, 584, 10019, 10028, 6117, 8135, 5374, 1435, 4975, 4813, 4376, 5482, 10029, 4949, 1297, 4815, 7935, 5873, 5480, 4347, 10044, 2009, 8136, 8127, 708, 10045, 10008, 5889, 2]
 // Exports: default
 
-// Module 10167 (handleClose)
+// Module 10017 (handleClose)
 import setDefault from "set" /* 687 */;
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef5265 from "module_5265" /* 5265 */;
+import _modDef4611 from "module_4611" /* 4611 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import closure_9 from "zustandStore" /* 10166 */;
+import closure_9 from "zustandStore" /* 10016 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importDefaultResult from "n" /* 689 */;
 
 const require = arg1;
 function handleClose() {
   state.setState({ isReportOpen: false });
-  let arr = _modDef5265;
+  let arr = _modDef4611;
   arr = arr.pop();
 }
 class BugCreateScreen {
@@ -65,7 +65,7 @@ class BugCreateScreen {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -86,7 +86,7 @@ class BugCreateScreen {
                 closure_1 = undefined;
                 obj2 = undefined;
                 c3 = undefined;
-                obj1 = closure_1_1(4856);
+                obj1 = closure_1_1(4975);
                 obj2 = 1;
                 c3 = 1;
                 obj1 = { value: null, done: false };
@@ -110,9 +110,9 @@ class BugCreateScreen {
                 const merged = Object.assign(closure_1);
                 obj2.uri = closure_1.uri;
                 obj2.originalUri = closure_1.uri;
-                obj2.platform = closure_1_0(4834).UploadPlatform.REACT_NATIVE;
+                obj2.platform = closure_1_0(4954).UploadPlatform.REACT_NATIVE;
                 obj2.filename = closure_1.fileName;
-                const tmp35 = new closure_1_1(4834)(obj2);
+                const tmp35 = new closure_1_1(4954)(obj2);
                 c3 = tmp35;
                 closure_23.current = closure_7.length;
                 callback((arg0) => {
@@ -122,7 +122,7 @@ class BugCreateScreen {
                 });
               }
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp8) {
             c3 = tmp;
@@ -275,7 +275,7 @@ class BugCreateScreen {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -303,7 +303,7 @@ class BugCreateScreen {
                       closure_2 = arg2;
                       c5 = 0;
                       c6 = 0;
-                      return (/* F122003 */ function*() { ... })();
+                      return (/* F122245 */ function*() { ... })();
                     });
                     closure_3 = tmp;
                     const apply = tmp.apply;
@@ -498,7 +498,7 @@ class BugCreateScreen {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -535,7 +535,7 @@ class BugCreateScreen {
                 callback = arg1;
                 closure_1_18(callback);
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp13) {
               c3 = tmp;
@@ -784,6 +784,6 @@ export default function BugReportModal(screenshotUri) {
     obj[0] = obj;
     return obj;
   }, items);
-  return callback(screenshotUri(6343).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
+  return callback(screenshotUri(5889).Navigator, { screens, initialRouteName: "BUG_REPORT_CREATE" });
 };
 export { BugCreateScreen };

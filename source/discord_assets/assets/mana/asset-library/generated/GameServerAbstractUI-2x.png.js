@@ -1,9 +1,9 @@
-// Module ID: 5828
-// Function ID: 5829
+// Module ID: 6516
+// Function ID: 6517
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5828 (metadata)
+// Module 6516 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameServerAbstractUI-2x.png.js");

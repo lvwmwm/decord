@@ -1,12 +1,12 @@
-// Module ID: 15924
-// Function ID: 15925
+// Module ID: 15956
+// Function ID: 15957
 // Name: isSuppressedLaneFrame
-// Dependencies: [32, 3404, 1236, 2]
+// Dependencies: [32, 3405, 1236, 2]
 // Exports: announcementNotes, currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 15924 (isSuppressedLaneFrame)
+// Module 15956 (isSuppressedLaneFrame)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3404 */;
+import messagesProxyDefault from "messagesProxy" /* 3405 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;

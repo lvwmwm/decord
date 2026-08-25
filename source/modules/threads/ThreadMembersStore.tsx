@@ -1,9 +1,9 @@
-// Module ID: 7555
-// Function ID: 7556
+// Module ID: 7373
+// Function ID: 7374
 // Name: updateFromGuild
 // Dependencies: [1395, 1391, 12, 589, 709, 2]
 
-// Module 7555 (updateFromGuild)
+// Module 7373 (updateFromGuild)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

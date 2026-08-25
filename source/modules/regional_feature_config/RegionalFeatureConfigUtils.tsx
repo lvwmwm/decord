@@ -1,12 +1,12 @@
-// Module ID: 4075
-// Function ID: 4076
+// Module ID: 4076
+// Function ID: 4077
 // Name: isFeatureAgeGated
-// Dependencies: [4076, 589, 2]
+// Dependencies: [4077, 589, 2]
 // Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
 
-// Module 4075 (isFeatureAgeGated)
+// Module 4076 (isFeatureAgeGated)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "getRegionalFeatureConfig" /* 4076 */;
+import closure_2 from "getRegionalFeatureConfig" /* 4077 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/regional_feature_config/RegionalFeatureConfigUtils.tsx");

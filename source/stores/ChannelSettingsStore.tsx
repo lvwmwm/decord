@@ -1,9 +1,9 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8168
+// Function ID: 8169
 // Name: normalizeChannelPropertyForCompare
-// Dependencies: [1395, 8083, 1930, 1391, 676, 1235, 4035, 4037, 1400, 1401, 530, 709, 12, 1430, 3978, 589, 2]
+// Dependencies: [1395, 7905, 1930, 1391, 676, 1235, 4036, 4038, 1400, 1401, 530, 709, 12, 1430, 3979, 589, 2]
 
-// Module 8172 (normalizeChannelPropertyForCompare)
+// Module 8168 (normalizeChannelPropertyForCompare)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import initializeDefault from "initialize" /* 589 */;
@@ -13,10 +13,10 @@ import createChannelRecord from "createChannelRecord" /* 1395 */;
 import set2 from "set" /* 1400 */;
 import set3 from "set" /* 1401 */;
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
-import tDefault from "t" /* 3978 */;
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4035 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
-import closure_10 from "createFromServer" /* 8083 */;
+import hooksDefault from "hooks" /* 3979 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4036 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4038 */;
+import closure_10 from "createFromServer" /* 7905 */;
 import closure_11 from "createdAt" /* 1930 */;
 import closure_12 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;
@@ -107,7 +107,7 @@ function _createInvite(code) {
   }
   obj[5] = fromInviteGuildResult;
   ({ uses: obj[6], max_uses: obj[7], max_age: obj[8] } = code);
-  obj[9] = tDefault(code.created_at);
+  obj[9] = hooksDefault(code.created_at);
   ({ type: obj[10], roles: obj[11] } = code);
   tmp = new tmp(obj);
   return tmp;

@@ -1,14 +1,14 @@
-// Module ID: 5525
-// Function ID: 5526
+// Module ID: 6207
+// Function ID: 6208
 // Name: AvatarLokyExample
-// Dependencies: [21, 5454, 5526, 2]
+// Dependencies: [21, 5374, 6208, 2]
 // Exports: AvatarLokyExample
 
-// Module 5525 (AvatarLokyExample)
+// Module 6207 (AvatarLokyExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5526 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6208 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarLokyExample.native.tsx");

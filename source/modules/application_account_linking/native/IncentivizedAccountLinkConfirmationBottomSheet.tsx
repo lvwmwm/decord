@@ -1,19 +1,19 @@
-// Module ID: 16257
-// Function ID: 16258
+// Module ID: 16289
+// Function ID: 16290
 // Name: IncentivizedAccountLinkConfirmationBottomSheet
-// Dependencies: [19, 17, 4669, 676, 21, 589, 15038, 500, 8445, 15039, 5454, 4750, 1236, 12101, 712, 4346, 4093, 1994, 8056, 2984, 2]
+// Dependencies: [19, 17, 4372, 676, 21, 589, 15068, 500, 8451, 15069, 5374, 4815, 1236, 12440, 712, 4347, 4094, 1995, 7878, 2985, 2]
 // Exports: default
 
-// Module 16257 (IncentivizedAccountLinkConfirmationBottomSheet)
+// Module 16289 (IncentivizedAccountLinkConfirmationBottomSheet)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 4750 */;
-import PromoSheet from "PromoSheet" /* 8056 */;
-import WindowLaunchIcon from "WindowLaunchIcon" /* 12101 */;
-import metadataDefault from "metadata" /* 15038 */;
+import Button from "Button" /* 4815 */;
+import PromoSheet from "PromoSheet" /* 7878 */;
+import WindowLaunchIcon from "WindowLaunchIcon" /* 12440 */;
+import metadataDefault from "metadata" /* 15068 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -40,8 +40,8 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   } else {
     if (tmpResult.isAndroid()) {
       let obj2 = { url: null, style: null };
-      let tmp4Result = tmp4(8445);
-      obj2[0] = tmp4(15039);
+      let tmp4Result = tmp4(8451);
+      obj2[0] = tmp4(15069);
       const obj3 = { width: null, height: null };
       obj3[0] = c7;
       obj3[1] = c7;
@@ -52,8 +52,8 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
     } else {
       const obj4 = { source: null, resizeMode: "contain", style: null };
       const obj5 = { uri: null };
-      tmp4Result = tmp4(5454);
-      obj5[0] = tmp4(15039);
+      tmp4Result = tmp4(5374);
+      obj5[0] = tmp4(15069);
       obj4[0] = obj5;
       const obj6 = { width: null, height: null };
       obj6[0] = c7;
@@ -70,21 +70,21 @@ export default function IncentivizedAccountLinkConfirmationBottomSheet() {
   obj7[0] = intl.string(getSystemLocale.t.aRIFWD);
   obj7[1] = tmp9(WindowLaunchIcon.WindowLaunchIcon, { size: "sm", color: tmp8(712).colors.WHITE });
   obj7[4] = function onPress() {
-    callback(4346).hideActionSheet();
-    const obj = callback(4346);
-    const obj2 = callback(4093);
-    obj2.openURL(callback(1994).getArticleURL(constants.IN_GAME_FEATURES));
+    callback(4347).hideActionSheet();
+    const obj = callback(4347);
+    const obj2 = callback(4094);
+    obj2.openURL(callback(1995).getArticleURL(constants.IN_GAME_FEATURES));
   };
   const obj8 = { size: "sm", color: tmp8(712).colors.WHITE };
   const obj9 = { title: null, description: null, actions: null, illustration: null, onDismiss: null };
   const intl2 = tmp(1236).intl;
-  obj9[0] = intl2.string(tmp8(2984).ublzTG);
+  obj9[0] = intl2.string(tmp8(2985).ublzTG);
   const intl3 = tmp(1236).intl;
-  obj9[1] = intl3.string(tmp8(2984).JgM2xu);
+  obj9[1] = intl3.string(tmp8(2985).JgM2xu);
   obj9[2] = tmp9(Button.Button, obj7);
   obj9[3] = tmp3Result;
   obj9[4] = function onDismiss() {
-    callback(4346).hideActionSheet();
+    callback(4347).hideActionSheet();
   };
   return tmp9(PromoSheet.PromoSheet, obj9);
 };

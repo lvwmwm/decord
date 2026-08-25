@@ -1,14 +1,14 @@
-// Module ID: 5741
-// Function ID: 5742
+// Module ID: 6431
+// Function ID: 6432
 // Name: GameCartridgeSpotIllustration
-// Dependencies: [21, 5454, 5742, 2]
+// Dependencies: [21, 5374, 6432, 2]
 // Exports: GameCartridgeSpotIllustration
 
-// Module 5741 (GameCartridgeSpotIllustration)
+// Module 6431 (GameCartridgeSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5742 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6432 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameCartridgeSpotIllustration.native.tsx");

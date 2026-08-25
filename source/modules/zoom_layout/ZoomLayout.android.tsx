@@ -1,9 +1,9 @@
-// Module ID: 12134
-// Function ID: 12135
-// Dependencies: [19, 17, 21, 12135, 2]
+// Module ID: 10787
+// Function ID: 10788
+// Dependencies: [19, 17, 21, 10788, 2]
 
-// Module 12134
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 12135 */;
+// Module 10787
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10788 */;
 import importAllResult from "noop" /* 19 */;
 import { PixelRatio } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

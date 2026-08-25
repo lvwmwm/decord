@@ -1,0 +1,29 @@
+// Module ID: 13709
+// Function ID: 13710
+// Name: LookupMatcher
+// Dependencies: [13710, 13713]
+
+// Module 13709 (LookupMatcher)
+import isMatched from "isMatched" /* 13710 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 13713 */;
+
+require = arg1;
+const dependencyMap = arg6;
+arg5.LookupMatcher = function LookupMatcher(arg0, arg1, arg2) {
+  const obj = { locale: "" };
+  let num = 0;
+  if (0 < arg1.length) {
+    const replaced = str.replace(isMatched.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    const BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    while (!BestAvailableLocaleResult) {
+      num = num + 1;
+    }
+    obj.locale = BestAvailableLocaleResult;
+    if (arg1[num] !== replaced) {
+      obj.extension = str.slice(replaced.length, str.length);
+    }
+    return obj;
+  }
+  obj.locale = arg2();
+  return obj;
+};

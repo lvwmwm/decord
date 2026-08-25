@@ -1,9 +1,9 @@
-// Module ID: 4059
-// Function ID: 4060
+// Module ID: 4060
+// Function ID: 4061
 // Name: getClient
 // Dependencies: [676, 500, 530, 589, 709, 2]
 
-// Module 4059 (getClient)
+// Module 4060 (getClient)
 import sendRequest from "sendRequest" /* 530 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

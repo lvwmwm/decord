@@ -1,24 +1,24 @@
-// Module ID: 12786
-// Function ID: 12787
+// Module ID: 12773
+// Function ID: 12774
 // Name: IntroDemo
-// Dependencies: [17, 6989, 21, 4668, 712, 8528, 12787, 4739, 1236, 12788, 10915, 4342, 6721, 2]
+// Dependencies: [17, 5504, 21, 4380, 712, 8536, 12774, 4376, 1236, 12775, 11272, 4343, 5884, 2]
 // Exports: default
 
-// Module 12786 (IntroDemo)
+// Module 12773 (IntroDemo)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ClockIcon from "ClockIcon" /* 4342 */;
-import Text from "Text" /* 4739 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6721 */;
-import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 6989 */;
-import SavedMessageSortTypes from "SavedMessageSortTypes" /* 8528 */;
-import BookmarkIcon from "BookmarkIcon" /* 10915 */;
-import registerAssetDefault from "registerAsset" /* 12787 */;
-import setDefault from "set" /* 12788 */;
+import ClockIcon from "ClockIcon" /* 4343 */;
+import Text from "Text" /* 4376 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5504 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 5884 */;
+import SavedMessageSortTypes from "SavedMessageSortTypes" /* 8536 */;
+import BookmarkIcon from "BookmarkIcon" /* 11272 */;
+import registerAssetDefault from "registerAsset" /* 12774 */;
+import setDefault from "set" /* 12775 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 function IntroDemo(isReminder) {
   isReminder = isReminder.isReminder;

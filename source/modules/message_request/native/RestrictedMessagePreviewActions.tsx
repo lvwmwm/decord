@@ -1,18 +1,18 @@
-// Module ID: 16211
-// Function ID: 16212
+// Module ID: 16243
+// Function ID: 16244
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 4033, 676, 10633, 21, 4668, 712, 11810, 589, 9775, 9926, 11840, 4223, 4346, 10634, 2008, 8175, 4775, 4750, 1236, 4739, 2]
+// Dependencies: [19, 17, 4034, 676, 10433, 21, 4380, 712, 12150, 589, 9391, 9782, 12178, 4224, 4347, 10434, 2009, 8171, 4393, 4815, 1236, 4376, 2]
 // Exports: default
 
-// Module 16211 (RestrictedMessagePreviewActions)
+// Module 16243 (RestrictedMessagePreviewActions)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_5 from "markAllUserIdListsStale" /* 4034 */;
 import ME from "ME" /* 676 */;
-import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_8 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10633 */;
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_8 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10433 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ AnalyticsPages: closure_6, RelationshipTypes: error } = ME);
@@ -150,7 +150,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     tmp18 = null;
     formatResult = null;
   } else if (tmp13.PENDING_OUTGOING === stateFromStores) {
-    const obj6 = { size: "sm", variant: "active", text: null, disabled: true, onPress: "a" };
+    const obj6 = { size: "sm", variant: "active", text: null, disabled: true, onPress: "Boolean" };
     const intl3 = tmp2(tmp3[20]).intl;
     obj6[2] = intl3.string(tmp2(tmp3[20]).t.xMH6vD);
     tmp19 = callback(tmp2(tmp3[19]).Button, obj6);

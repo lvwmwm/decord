@@ -1,17 +1,17 @@
-// Module ID: 12403
-// Function ID: 12404
+// Module ID: 12721
+// Function ID: 12722
 // Name: RemediatedUserNotice
-// Dependencies: [19, 17, 4033, 676, 21, 4668, 712, 9019, 647, 4739, 1236, 9775, 2]
+// Dependencies: [19, 17, 4034, 676, 21, 4380, 712, 8982, 647, 4376, 1236, 9391, 2]
 // Exports: default
 
-// Module 12403 (RemediatedUserNotice)
+// Module 12721 (RemediatedUserNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import closure_4 from "markAllUserIdListsStale" /* 4034 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -37,7 +37,7 @@ export default function RemediatedUserNotice(user) {
       obj = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl = tmp4(1236).intl;
       obj[3] = intl.string(tmp4(1236).t["oC/fU6"]);
-      isBlocked = callback(tmp4(4739).Text, obj);
+      isBlocked = callback(tmp4(4376).Text, obj);
     }
     const items2 = [isBlocked, ];
     if (isIgnored) {
@@ -45,7 +45,7 @@ export default function RemediatedUserNotice(user) {
       const obj2 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: null };
       const intl2 = tmp4(1236).intl;
       obj2[3] = intl2.string(tmp4(1236).t.HXz5An);
-      const items3 = [callback(tmp4(4739).Text, obj2), callback(tmp4(4739).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      const items3 = [callback(tmp4(4376).Text, obj2), callback(tmp4(4376).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1236).intl;
       const obj3 = { unignoreHook: null };
       obj3[0] = function unignoreHook(children) {

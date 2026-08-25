@@ -1,21 +1,21 @@
-// Module ID: 15360
-// Function ID: 15361
+// Module ID: 15390
+// Function ID: 15391
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4564, 4777, 4033, 1980, 5048, 1922, 676, 21, 4668, 712, 589, 1367, 15361, 8998, 500, 4775, 4773, 9958, 5438, 8923, 9258, 15362, 4074, 8442, 15363, 8450, 15364, 2]
+// Dependencies: [19, 17, 4469, 4395, 4034, 1981, 4589, 1922, 676, 21, 4380, 712, 589, 1367, 15391, 8961, 500, 4393, 4391, 9816, 4949, 9180, 9537, 15392, 4075, 8448, 15393, 8456, 15394, 2]
 
-// Module 15360 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15390 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "sortActivity" /* 4564 */;
-import closure_6 from "generateOldThreadCutoff" /* 4777 */;
-import closure_7 from "markAllUserIdListsStale" /* 4033 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_5 from "sortActivity" /* 4469 */;
+import closure_6 from "generateOldThreadCutoff" /* 4395 */;
+import closure_7 from "markAllUserIdListsStale" /* 4034 */;
+import closure_8 from "handleConnectionOpen" /* 1981 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4589 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -87,7 +87,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelBase(channel
       obj[0] = store.getStatus(obj.getRecipientId());
       obj[1] = activities;
     } else {
-      obj = { status: "Array", activities: "ct" };
+      obj = { status: "isArray", activities: "accessibilityRole" };
     }
     return obj;
   });

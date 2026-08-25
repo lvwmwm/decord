@@ -1,10 +1,10 @@
-// Module ID: 12957
-// Function ID: 12958
+// Module ID: 12945
+// Function ID: 12946
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getBogoMarketingMaterialsEnabled, useBogoMarketingMaterialsEnabled
 
-// Module 12957 (apexExperiment)
+// Module 12945 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

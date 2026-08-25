@@ -1,21 +1,21 @@
-// Module ID: 7736
-// Function ID: 7737
+// Module ID: 7557
+// Function ID: 7558
 // Name: useNativeIAPPayments
-// Dependencies: [5, 32, 19, 5326, 4047, 4048, 5324, 676, 3, 589, 7428, 7737, 4057, 7738, 7165, 698, 7697, 5327, 38, 4470, 7740, 7741, 2]
+// Dependencies: [5, 32, 19, 5967, 4048, 4049, 5965, 676, 3, 589, 7026, 7558, 4058, 7559, 5822, 698, 7518, 5968, 38, 4725, 7561, 7562, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 7736 (useNativeIAPPayments)
+// Module 7557 (useNativeIAPPayments)
 import timestampDefault from "timestamp" /* 3 */;
-import useInitialValueDefault from "useInitialValue" /* 7165 */;
-import useTimeoutDefault from "useTimeout" /* 7737 */;
-import useCreateSubscriptionParamsDefault from "useCreateSubscriptionParams" /* 7738 */;
+import useInitialValueDefault from "useInitialValue" /* 5822 */;
+import useTimeoutDefault from "useTimeout" /* 7558 */;
+import useCreateSubscriptionParamsDefault from "useCreateSubscriptionParams" /* 7559 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "isGenericIapConnected" /* 5326 */;
-import closure_7 from "addSubscriptionPlan" /* 4047 */;
-import closure_8 from "reset" /* 4048 */;
-import closure_9 from "updateProduct" /* 5324 */;
+import closure_6 from "isGenericIapConnected" /* 5967 */;
+import closure_7 from "addSubscriptionPlan" /* 4048 */;
+import closure_8 from "reset" /* 4049 */;
+import closure_9 from "updateProduct" /* 5965 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -38,8 +38,8 @@ function useNativeIAPPayments() {
   const items1 = [tmp2[1]];
   const effect = React.useEffect(() => {
     if (!first) {
-      const products = first(7428).loadProducts();
-      const obj = first(7428);
+      const products = first(7026).loadProducts();
+      const obj = first(7026);
     }
   }, items1);
   importDefault(storeFront[11])(() => {
@@ -49,7 +49,7 @@ function useNativeIAPPayments() {
     }
     if (!tmp) {
       c15 = true;
-      let obj = first(4057);
+      let obj = first(4058);
       obj = { tags: null, extra: null };
       obj[0] = { alertPriority: "0" };
       let mapped;
@@ -108,8 +108,8 @@ function useCreateSubscription(planId) {
   const items1 = [tmp3[1]];
   const effect = React.useEffect(() => {
     if (!first) {
-      const products = first(7428).loadProducts();
-      const obj = first(7428);
+      const products = first(7026).loadProducts();
+      const obj = first(7026);
     }
   }, items1);
   useTimeoutDefault(() => {
@@ -119,7 +119,7 @@ function useCreateSubscription(planId) {
     }
     if (!tmp) {
       c15 = true;
-      let obj = first(4057);
+      let obj = first(4058);
       obj = { tags: null, extra: null };
       obj[0] = { alertPriority: "0" };
       let mapped;
@@ -148,8 +148,8 @@ function useCreateSubscription(planId) {
   closure_6 = tmp12;
   const items4 = [tmp12, analyticsLocation, applicationId, planId, skuId];
   callback = React.useCallback(() => {
-    let obj = first(7697);
-    obj = { load_id: closure_6, payment_type: closure_1_10[closure_1_11.SUBSCRIPTION], subscription_plan_gateway_plan_id: first(5327).ProductIds.GENERIC_SUBSCRIPTION, subscription_type: closure_1_12.GUILD, is_gift: false, location: closure_3, application_id: dependencyMap, subscription_plan_id: first, sku_id: closure_1 };
+    let obj = first(7518);
+    obj = { load_id: closure_6, payment_type: closure_1_10[closure_1_11.SUBSCRIPTION], subscription_plan_gateway_plan_id: first(5968).ProductIds.GENERIC_SUBSCRIPTION, subscription_type: closure_1_12.GUILD, is_gift: false, location: closure_3, application_id: dependencyMap, subscription_plan_id: first, sku_id: closure_1 };
     const result = obj.trackPaymentFlowStartedAnalyticsAndCTP(obj);
   }, items4);
   obj = {
@@ -201,7 +201,7 @@ function useCreateSubscription(planId) {
         return obj;
       } else {
         c4 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
       c3 = 0;
       return arg1;
@@ -234,8 +234,8 @@ function useCancelSubscription(arg0, arg1) {
   const items1 = [tmp3[1]];
   const effect = memo.useEffect(() => {
     if (!first) {
-      const products = first(7428).loadProducts();
-      const obj = first(7428);
+      const products = first(7026).loadProducts();
+      const obj = first(7026);
     }
   }, items1);
   importDefault(first[11])(() => {
@@ -245,7 +245,7 @@ function useCancelSubscription(arg0, arg1) {
     }
     if (!tmp) {
       c15 = true;
-      let obj = first(4057);
+      let obj = first(4058);
       obj = { tags: null, extra: null };
       obj[0] = { alertPriority: "0" };
       let mapped;
@@ -288,8 +288,8 @@ function useCancelSubscription(arg0, arg1) {
       closure_1_1(38)(closure_1_5, "Cannot update subscription");
       closure_1_1(38)(dependencyMap, "Cannot connect to IAP API");
       closure_1_1(38)(null != closure_1_6, "Subscription not found");
-      closure_0 = yield closure_1_0(7428).cancelGenericSubscription(closure_1_6.requestIdentifier, closure_1_6.subscriptionId, closure_1_1);
-      const obj2 = closure_1_0(4470);
+      closure_0 = yield closure_1_0(7026).cancelGenericSubscription(closure_1_6.requestIdentifier, closure_1_6.subscriptionId, closure_1_1);
+      const obj2 = closure_1_0(4725);
       yield obj2.fetchSubscriptions();
       return closure_0;
     }), items5),
@@ -320,18 +320,18 @@ function useResubscribeSubscription(arg0) {
   const items1 = [tmp3[1]];
   const effect = React.useEffect(() => {
     if (!first) {
-      const products = first(7428).loadProducts();
-      const obj = first(7428);
+      const products = first(7026).loadProducts();
+      const obj = first(7026);
     }
   }, items1);
-  first(7737)(() => {
+  first(7558)(() => {
     let tmp = memo;
     if (!memo) {
       tmp = c15;
     }
     if (!tmp) {
       c15 = true;
-      let obj = first(4057);
+      let obj = first(4058);
       obj = { tags: null, extra: null };
       obj[0] = { alertPriority: "0" };
       let mapped;
@@ -366,7 +366,7 @@ function useResubscribeSubscription(arg0) {
     }
     return tmp3;
   }, items4);
-  const tmp12 = first(7741)(arg0);
+  const tmp12 = first(7562)(arg0);
   React = tmp12;
   obj = {
     resubscribeSubscription: React.useCallback(stateFromStores(function*() {
@@ -375,8 +375,8 @@ function useResubscribeSubscription(arg0) {
       closure_1_1(38)(closure_1_1, "Cannot connect to IAP API");
       closure_1_1(38)(null != closure_1_5, "Subscription not found");
       closure_1_1(38)(null != isACOM, "Subscription not found");
-      closure_0 = yield closure_1_0(7428).resubscribeGenericSubscription(closure_1_5, isACOM.isACOM);
-      const obj2 = closure_1_0(4470);
+      closure_0 = yield closure_1_0(7026).resubscribeGenericSubscription(closure_1_5, isACOM.isACOM);
+      const obj2 = closure_1_0(4725);
       yield obj2.fetchSubscriptions();
       return closure_0;
     }), items5),

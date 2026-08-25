@@ -1,10 +1,10 @@
-// Module ID: 11361
-// Function ID: 11362
+// Module ID: 11717
+// Function ID: 11718
 // Name: getActivityLaunchURL
 // Dependencies: [676, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 11361 (getActivityLaunchURL)
+// Module 11717 (getActivityLaunchURL)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

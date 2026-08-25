@@ -1,13 +1,13 @@
-// Module ID: 9211
-// Function ID: 9212
+// Module ID: 9494
+// Function ID: 9495
 // Name: useTrackShopCardImpression
-// Dependencies: [19, 676, 9212, 7177, 1494, 9213, 4042, 5318, 698, 9214, 503, 5317, 2]
+// Dependencies: [19, 676, 9495, 5834, 1494, 9496, 4043, 7160, 698, 9497, 503, 7159, 2]
 // Exports: useTrackShopCardImpression
 
-// Module 9211 (useTrackShopCardImpression)
+// Module 9494 (useTrackShopCardImpression)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
-import contextDefault from "context" /* 7177 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4043 */;
+import contextDefault from "context" /* 5834 */;
 import closure_3 from "noop" /* 19 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
@@ -18,18 +18,18 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const _require = product;
   importDefault = selectedProduct;
   dependencyMap = flag2;
-  const collectiblesAnalyticsContext = _require(9212).useCollectiblesAnalyticsContext();
+  const collectiblesAnalyticsContext = _require(9495).useCollectiblesAnalyticsContext();
   const analyticsLocations = contextDefault().analyticsLocations;
   const size = useWindowDimensionsDefault();
   const width = size.width;
   const height = size.height;
-  let obj = _require(9212);
-  const currentUser = _require(9213).useCurrentUser();
-  let obj2 = _require(9213);
+  let obj = _require(9495);
+  const currentUser = _require(9496).useCurrentUser();
+  let obj2 = _require(9496);
   const canUseCollectiblesResult = getPremiumPlanItemDefault.canUseCollectibles(currentUser);
   closure_7 = canUseCollectiblesResult;
   const obj3 = getPremiumPlanItemDefault;
-  const shopDiscountSource = _require(5318).getShopDiscountSource(currentUser);
+  const shopDiscountSource = _require(7160).getShopDiscountSource(currentUser);
   const ref = collectiblesAnalyticsContext.useRef(null);
   closure_10 = collectiblesAnalyticsContext.useRef(null);
   closure_11 = collectiblesAnalyticsContext.useRef({ windowWidth: width, windowHeight: height });
@@ -71,13 +71,13 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   const callback = collectiblesAnalyticsContext.useCallback(() => {
     let priceForCollectiblesProduct = null;
     if (null != product) {
-      let obj = product(5318);
+      let obj = product(7160);
       priceForCollectiblesProduct = obj.getPriceForCollectiblesProduct(tmp, closure_7, true);
     }
     let strikeThroughPriceAmountForCollectiblesProduct;
     if (null != product) {
-      strikeThroughPriceAmountForCollectiblesProduct = product(5318).getStrikeThroughPriceAmountForCollectiblesProduct(tmp, closure_7, true);
-      const obj2 = product(5318);
+      strikeThroughPriceAmountForCollectiblesProduct = product(7160).getStrikeThroughPriceAmountForCollectiblesProduct(tmp, closure_7, true);
+      const obj2 = product(7160);
     }
     let sessionId;
     if (collectiblesAnalyticsContext != null) {
@@ -137,7 +137,7 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
   items2[5] = analyticsLocations;
   items2[6] = shopDiscountSource;
   const callback1 = obj5.useCallback(() => {
-    let obj = product(9214);
+    let obj = product(9497);
     obj = { name: product(503).ImpressionNames.SHOP_CARD, type: product(503).ImpressionTypes.VIEW, properties: null };
     obj = { sku_id: selectedProduct.skuId, card_id: null, shop_session_id: null, position_in_section: null, product_sku_ids: null, location_stack: null, discount_source: null };
     let cardId;
@@ -155,10 +155,10 @@ export const useTrackShopCardImpression = function useTrackShopCardImpression(pr
       tilePosition = tmp3.tilePosition;
     }
     obj[3] = tilePosition;
-    let tmpResult = tmp(5317);
+    let tmpResult = tmp(7159);
     obj[4] = tmpResult.getProductSkuIds(product);
     obj[5] = analyticsLocations;
-    tmpResult = tmp(5318);
+    tmpResult = tmp(7160);
     obj[6] = tmpResult.getAnalyticsShopDiscountSource(shopDiscountSource);
     obj[2] = obj;
     obj.trackImpression(obj, false, true);

@@ -1,14 +1,14 @@
-// Module ID: 14683
-// Function ID: 14684
+// Module ID: 14713
+// Function ID: 14714
 // Name: ThemeMidnightIcon
-// Dependencies: [19, 21, 712, 4099, 14684, 2]
+// Dependencies: [19, 21, 712, 4100, 14714, 2]
 // Exports: ThemeMidnightIcon
 
-// Module 14683 (ThemeMidnightIcon)
+// Module 14713 (ThemeMidnightIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 14684 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 14714 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

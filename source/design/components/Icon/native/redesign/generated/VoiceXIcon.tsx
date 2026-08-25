@@ -1,14 +1,14 @@
-// Module ID: 12192
-// Function ID: 12193
+// Module ID: 10941
+// Function ID: 10942
 // Name: VoiceXIcon
-// Dependencies: [19, 21, 712, 4099, 12193, 2]
+// Dependencies: [19, 21, 712, 4100, 10942, 2]
 // Exports: VoiceXIcon
 
-// Module 12192 (VoiceXIcon)
+// Module 10941 (VoiceXIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 12193 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 10942 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

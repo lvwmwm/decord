@@ -1,22 +1,22 @@
-// Module ID: 5404
-// Function ID: 5405
+// Module ID: 7258
+// Function ID: 7259
 // Name: getAll
-// Dependencies: [1395, 1218, 1391, 1991, 1984, 1910, 4024, 676, 1398, 505, 506, 3, 1955, 4015, 514, 698, 1403, 2]
+// Dependencies: [1395, 1218, 1391, 1992, 1985, 1910, 4025, 676, 1398, 505, 506, 3, 1956, 4016, 514, 698, 1403, 2]
 
-// Module 5404 (getAll)
+// Module 7258 (getAll)
 import set2 from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import sum from "sum" /* 505 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import set3 from "set" /* 1398 */;
-import itemsDefault from "items" /* 1955 */;
+import itemsDefault from "items" /* 1956 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "trackCommunicationDisabled" /* 1991 */;
-import closure_9 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_8 from "trackCommunicationDisabled" /* 1992 */;
+import closure_9 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4025 */;
 import ME from "ME" /* 676 */;
 import importAllResult from "fromString" /* 506 */;
 
@@ -103,21 +103,21 @@ prototype["detectRoleVisibilityChanges"] = function detectRoleVisibilityChanges(
     if (isSubscriptionRoleResult) {
       let tmp = obj;
       let tmp2 = dependencyMap;
-      obj = obj(4015);
+      obj = obj(4016);
       isSubscriptionRoleResult = obj.isSubscriptionRole(tmp18);
     }
     if (isSubscriptionRoleResult) {
       let tmp4 = obj;
       let tmp5 = dependencyMap;
-      let obj2 = obj(4015);
+      let obj2 = obj(4016);
       isSubscriptionRoleResult = obj2.isSubscriptionRoleAvailableForPurchase(tmp18);
     }
     let tmp7 = dependencyMap;
     let tmp6 = obj;
-    let obj3 = obj(4015);
+    let obj3 = obj(4016);
     let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
     if (isSubscriptionRoleResult1) {
-      let tmp6Result = tmp6(4015);
+      let tmp6Result = tmp6(4016);
       isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
     }
     if (!isSubscriptionRoleResult) {

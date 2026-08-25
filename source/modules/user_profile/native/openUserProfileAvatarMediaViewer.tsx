@@ -1,12 +1,12 @@
-// Module ID: 9028
-// Function ID: 9029
+// Module ID: 8990
+// Function ID: 8991
 // Name: openUserProfileAvatarMediaViewer
-// Dependencies: [4669, 676, 9029, 2]
+// Dependencies: [4372, 676, 8991, 2]
 // Exports: default
 
-// Module 9028 (openUserProfileAvatarMediaViewer)
-import _openMediaModal from "_openMediaModal" /* 9029 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+// Module 8990 (openUserProfileAvatarMediaViewer)
+import _openMediaModal from "_openMediaModal" /* 8991 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import { AVATAR_MAX_SIZE } from "ME" /* 676 */;
 
 require = arg1;

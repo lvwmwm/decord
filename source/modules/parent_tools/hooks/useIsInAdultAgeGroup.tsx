@@ -1,12 +1,12 @@
-// Module ID: 7660
-// Function ID: 7661
+// Module ID: 7481
+// Function ID: 7482
 // Name: useIsInAdultAgeGroup
-// Dependencies: [5301, 589, 2]
+// Dependencies: [7143, 589, 2]
 // Exports: default
 
-// Module 7660 (useIsInAdultAgeGroup)
+// Module 7481 (useIsInAdultAgeGroup)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "freshTeenActivityWithMap" /* 5301 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7143 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useIsInAdultAgeGroup.tsx");

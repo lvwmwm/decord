@@ -1,12 +1,12 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 9724
+// Function ID: 9725
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 5306, 676, 21, 9629, 8976, 8969, 589, 7177, 7197, 1903, 5305, 4055, 9630, 1236, 9631, 12016, 12019, 2]
+// Dependencies: [19, 7148, 676, 21, 9725, 8940, 8933, 589, 5834, 5854, 1903, 7147, 4056, 9726, 1236, 9727, 12341, 12344, 2]
 // Exports: default
 
-// Module 9628 (CollectiblesShopGiftModal)
+// Module 9724 (CollectiblesShopGiftModal)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 5306 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7148 */;
 import { COLLECTIBLES_APPLICATION_ID as closure_5 } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

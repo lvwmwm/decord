@@ -1,16 +1,16 @@
-// Module ID: 7410
-// Function ID: 7411
+// Module ID: 7007
+// Function ID: 7008
 // Name: _handleBoostPress
-// Dependencies: [5, 19, 17, 4271, 676, 6749, 1924, 21, 7411, 5265, 6747, 13062, 1500, 7177, 647, 1940, 11756, 4750, 1236, 6928, 2]
+// Dependencies: [5, 19, 17, 4272, 676, 5260, 1924, 21, 7008, 4611, 5258, 13050, 1500, 5834, 647, 1938, 12096, 4815, 1236, 4925, 2]
 // Exports: default
 
-// Module 7410 (_handleBoostPress)
+// Module 7007 (_handleBoostPress)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleGuildBoostsUpdate" /* 4271 */;
+import closure_6 from "handleGuildBoostsUpdate" /* 4272 */;
 import ME from "ME" /* 676 */;
-import { PremiumGuildSubscribeModalScenes as closure_11 } from "PremiumGuildSubscribeModalScenes" /* 6749 */;
+import { PremiumGuildSubscribeModalScenes as closure_11 } from "PremiumGuildSubscribeModalScenes" /* 5260 */;
 import { FractionalPremiumStates } from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -35,7 +35,7 @@ function _handleBoostPress() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ function _handleBoostPress() {
               c4 = 1;
               c5 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(7411).launchGuildBoostFlowOrAlert(obj1);
+              obj3[0] = callback(7008).launchGuildBoostFlowOrAlert(obj1);
               return obj3;
             }
           } else if (arg0 === 1) {
@@ -78,10 +78,10 @@ function _handleBoostPress() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            obj = callback(6747);
+            obj = callback(5258);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c5 = tmp;

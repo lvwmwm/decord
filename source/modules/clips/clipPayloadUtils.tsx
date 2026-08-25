@@ -1,14 +1,14 @@
-// Module ID: 4836
-// Function ID: 4837
+// Module ID: 4956
+// Function ID: 4957
 // Name: getClipCreatedAt
-// Dependencies: [32, 4528, 676, 4534, 4837, 698, 4838, 2]
+// Dependencies: [32, 4438, 676, 4444, 4957, 698, 4958, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds
 
-// Module 4836 (getClipCreatedAt)
+// Module 4956 (getClipCreatedAt)
 import closure_3 from "_slicedToArray" /* 32 */;
-import result from "result" /* 4528 */;
+import result from "result" /* 4438 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { SpeakingFlags } from "DesktopSources" /* 4534 */;
+import { SpeakingFlags } from "DesktopSources" /* 4444 */;
 
 const require = arg1;
 ({ CLIPS_MAX_PARTICIPANTS: c4, CLIPS_MAX_TIMELINE_EVENTS: c5, ClipSignalTypes: closure_6, GameEventType: error } = result);
@@ -48,7 +48,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
       const diff = clip.decision.timestamp - clip.length;
       const sum = diff + 1000 * editMetadata.end;
       const sum1 = diff + 1000 * editMetadata.start;
-      closure_1 = _require(4837).isGameEventsOnPlayerEnabled("getClipEventsTimeline");
+      closure_1 = _require(4957).isGameEventsOnPlayerEnabled("getClipEventsTimeline");
       const timeline1 = clip.timeline;
       const found = timeline1.filter((signal) => {
         editMetadata = editMetadata.editMetadata;
@@ -103,7 +103,7 @@ export const getClipEventsTimeline = function getClipEventsTimeline(clip) {
         }
         const tmp10 = map;
       }
-      const obj2 = _require(4837);
+      const obj2 = _require(4957);
     }
   }
 };

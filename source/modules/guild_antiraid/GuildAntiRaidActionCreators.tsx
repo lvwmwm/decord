@@ -1,15 +1,15 @@
-// Module ID: 11049
-// Function ID: 11050
+// Module ID: 11391
+// Function ID: 11392
 // Name: _setGuildRaidAlerts
-// Dependencies: [5, 1910, 8275, 676, 698, 5047, 8911, 3978, 530, 10076, 2]
+// Dependencies: [5, 1910, 8276, 676, 698, 4588, 9168, 3979, 530, 9932, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11049 (_setGuildRaidAlerts)
+// Module 11391 (_setGuildRaidAlerts)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4588 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8275 */;
+import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8276 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -32,7 +32,7 @@ function _setGuildRaidAlerts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -80,7 +80,7 @@ function _setGuildRaidAlerts() {
             return obj;
           } else {
             table = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           table = tmp;
@@ -118,7 +118,7 @@ function _setGuildIncidentActions() {
       }
       let toISOStringResult = null;
       if (tmp5) {
-        let obj2 = callback2(3978)();
+        let obj2 = callback2(3979)();
         toISOStringResult = obj2.add(tmp8, "hours").toISOString();
         const addResult = obj2.add(tmp8, "hours");
       }
@@ -176,7 +176,7 @@ function _handleResolveRaid() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ function _handleResolveRaid() {
               guild = guild.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = callback2(10076)(guild);
+                tmp8 = callback2(9932)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {
@@ -267,7 +267,7 @@ function _handleReportRaid() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -285,7 +285,7 @@ function _handleReportRaid() {
               const guild = closure_1_4.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = v0(10076)(guild);
+                tmp8 = v0(9932)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {

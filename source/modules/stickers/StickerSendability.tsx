@@ -1,15 +1,15 @@
-// Module ID: 7336
-// Function ID: 7337
+// Module ID: 6061
+// Function ID: 6062
 // Name: getStickerSendability
-// Dependencies: [1991, 6808, 676, 4042, 4828, 4029, 2]
+// Dependencies: [1992, 5327, 676, 4043, 4740, 4030, 2]
 // Exports: isSendableSticker
 
-// Module 7336 (getStickerSendability)
-import applyOverwritesAll from "applyOverwrites" /* 4029 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4828 */;
-import closure_4 from "trackCommunicationDisabled" /* 1991 */;
-import closure_5 from "parseServerPackSticker" /* 6808 */;
+// Module 6061 (getStickerSendability)
+import applyOverwritesAll from "applyOverwrites" /* 4030 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4043 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4740 */;
+import closure_4 from "trackCommunicationDisabled" /* 1992 */;
+import closure_5 from "parseServerPackSticker" /* 5327 */;
 import { Permissions } from "ME" /* 676 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 9454
-// Function ID: 9455
+// Module ID: 8896
+// Function ID: 8897
 // Name: handleJoinGuild
-// Dependencies: [6815, 2]
+// Dependencies: [5338, 2]
 // Exports: handleJoinGuild
 
-// Module 9454 (handleJoinGuild)
+// Module 8896 (handleJoinGuild)
 import set from "set" /* 2 */;
-import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 6815 */;
+import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5338 */;
 
 let result = set.fileFinishedImporting("modules/guild/GuildUtils.tsx");
 

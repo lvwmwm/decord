@@ -1,19 +1,19 @@
-// Module ID: 15921
-// Function ID: 15922
+// Module ID: 15953
+// Function ID: 15954
 // Name: TierSection
-// Dependencies: [19, 15914, 21, 4738, 712, 4739, 8140, 1236, 3404, 8139, 15922, 589, 7213, 6987, 6990, 2]
+// Dependencies: [19, 15946, 21, 4813, 712, 4376, 8136, 1236, 3405, 8135, 15954, 589, 5870, 5502, 5505, 2]
 // Exports: default
 
-// Module 15921 (TierSection)
+// Module 15953 (TierSection)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3404 */;
-import Stack from "Stack" /* 4738 */;
-import Text from "Text" /* 4739 */;
-import context from "context" /* 8140 */;
+import messagesProxyDefault from "messagesProxy" /* 3405 */;
+import Text from "Text" /* 4376 */;
+import Stack from "Stack" /* 4813 */;
+import context from "context" /* 8136 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "rejectPendingPublish" /* 15914 */;
-import { sendModelSettings } from "rejectPendingPublish" /* 15914 */;
+import closure_4 from "rejectPendingPublish" /* 15946 */;
+import { sendModelSettings } from "rejectPendingPublish" /* 15946 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -27,7 +27,7 @@ function TierSection(arg0) {
   obj[3] = intl.string(messagesProxyDefault["9FRudW"]);
   const intl2 = getSystemLocale.intl;
   obj[4] = "" + title + " \u2014 " + intl2.string(messagesProxyDefault["9FRudW"]);
-  obj[5] = modelChoices.map((label) => callback2(callback(8139).TableRadioRow, { label: label.label, subLabel: callback(15922).PROVIDER_LABELS[label.provider], value: label.id }, label.id));
+  obj[5] = modelChoices.map((label) => callback2(callback(8135).TableRadioRow, { label: label.label, subLabel: callback(15954).PROVIDER_LABELS[label.provider], value: label.id }, label.id));
   items[1] = callback(context.TableRadioGroup, obj);
   obj = { hasIcons: false, defaultValue: value.thinking, onChange: onPickThinking, title: null, accessibilityLabel: null, children: null };
   const intl3 = getSystemLocale.intl;
@@ -35,11 +35,11 @@ function TierSection(arg0) {
   const intl4 = getSystemLocale.intl;
   obj[4] = "" + title + " \u2014 " + intl4.string(messagesProxyDefault["4AsQHS"]);
   obj[5] = thinkingChoices.map((value) => {
-    let tmp2 = callback(15922).THINKING_LABELS[value];
+    let tmp2 = callback(15954).THINKING_LABELS[value];
     if (tmp2 == null) {
       tmp2 = value;
     }
-    return closure_6(callback(8139).TableRadioRow, { label: tmp2, value }, value);
+    return closure_6(callback(8135).TableRadioRow, { label: tmp2, value }, value);
   });
   items[2] = callback(context.TableRadioGroup, obj);
   obj[2] = items;
@@ -77,7 +77,7 @@ export default function VibegrationsModelSettingsSheet(projectId) {
     obj = { title: null };
     const intl = tmp(1236).intl;
     obj[0] = intl.string(messagesProxyDefault["2NWMqY"]);
-    obj[1] = callback(tmp(6987).BottomSheetTitleHeader, obj);
+    obj[1] = callback(tmp(5502).BottomSheetTitleHeader, obj);
     obj1 = { children: null };
     const obj2 = { direction: "vertical", spacing: null, children: null };
     obj2[1] = ThemesDefault.space.PX_16;
@@ -144,11 +144,11 @@ export default function VibegrationsModelSettingsSheet(projectId) {
     const obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
     const intl4 = tmp(1236).intl;
     obj5[2] = intl4.string(messagesProxyDefault.ICU5aW);
-    items3[2] = callback(tmp(4739).Text, obj5);
+    items3[2] = callback(tmp(4376).Text, obj5);
     obj2[2] = items3;
-    obj1[0] = callback2(tmp(4738).Stack, obj2);
-    obj[2] = callback(tmp(6990).BottomSheetScrollView, obj1);
-    return callback(tmp(7213).ActionSheet, obj);
+    obj1[0] = callback2(tmp(4813).Stack, obj2);
+    obj[2] = callback(tmp(5505).BottomSheetScrollView, obj1);
+    return callback(tmp(5870).ActionSheet, obj);
   }
 };
 export const VIBEGRATIONS_MODEL_SETTINGS_SHEET_KEY = "VibegrationsModelSettingsSheet";

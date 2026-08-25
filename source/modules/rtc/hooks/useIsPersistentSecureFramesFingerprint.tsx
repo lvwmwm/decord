@@ -1,15 +1,15 @@
-// Module ID: 9755
-// Function ID: 9756
+// Module ID: 9365
+// Function ID: 9366
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 4544, 9749, 589, 9747, 2]
+// Dependencies: [5, 32, 19, 4454, 9359, 589, 9357, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 9755 (useIsPersistentSecureFramesFingerprint)
+// Module 9365 (useIsPersistentSecureFramesFingerprint)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createRTCConnection" /* 4544 */;
-import { SECURE_FRAMES_PUBLIC_KEY_VERSION as closure_6 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9749 */;
+import closure_5 from "createRTCConnection" /* 4454 */;
+import { SECURE_FRAMES_PUBLIC_KEY_VERSION as closure_6 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9359 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useIsPersistentSecureFramesFingerprint.tsx");
@@ -49,7 +49,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

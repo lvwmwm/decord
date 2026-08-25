@@ -1,15 +1,15 @@
-// Module ID: 13292
-// Function ID: 13293
+// Module ID: 13154
+// Function ID: 13155
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 
-// Module 13292 (apexExperiment)
+// Module 13154 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const obj = { 1: null, 2: { timeoutMs: 10000, hidden: false }, 3: { timeoutMs: 15000, hidden: false }, 4: { timeoutMs: 20000, hidden: false } };
 obj[4] = { timeoutMs: 10000, hidden: true };
-const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-12-connection-indicator", kind: "user", defaultConfig: { timeoutMs: "HermesInternal", hidden: null }, variations: obj });
+const apexExperiment = ApexExperiment.createApexExperiment({ name: "2025-12-connection-indicator", kind: "user", defaultConfig: { timeoutMs: "HermesInternal", hidden: "HermesInternal" }, variations: obj });
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/ConnectionIndicatorExperiment.tsx");
 
 export default apexExperiment;

@@ -1,12 +1,12 @@
-// Module ID: 16198
-// Function ID: 16199
+// Module ID: 16230
+// Function ID: 16231
 // Name: useMessageRequestsCount
-// Dependencies: [4804, 589, 2]
+// Dependencies: [5947, 589, 2]
 // Exports: useMessageRequestsCount
 
-// Module 16198 (useMessageRequestsCount)
+// Module 16230 (useMessageRequestsCount)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "processChannel" /* 4804 */;
+import closure_2 from "processChannel" /* 5947 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useMessageRequestsCount.tsx");

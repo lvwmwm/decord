@@ -1,12 +1,12 @@
-// Module ID: 7541
-// Function ID: 7542
+// Module ID: 7359
+// Function ID: 7360
 // Name: startBackgroundTask
-// Dependencies: [5, 17, 500, 7542, 7543, 2]
+// Dependencies: [5, 17, 500, 7360, 7361, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 7541 (startBackgroundTask)
+// Module 7359 (startBackgroundTask)
 import set2 from "set" /* 500 */;
-import initializeDefault from "initialize" /* 7542 */;
+import initializeDefault from "initialize" /* 7360 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 500 */;
@@ -23,8 +23,8 @@ function startBackgroundTask(arg0) {
       obj = { title: null, content: null, priority: null, type: null, usesGateway: false };
       obj[0] = title;
       obj[1] = content;
-      obj[2] = tmp(7543).ServiceNotificationPriority.MEDIUM;
-      obj[3] = tmp(7543).ServiceNotificationType.FILE_UPLOAD;
+      obj[2] = tmp(7361).ServiceNotificationPriority.MEDIUM;
+      obj[3] = tmp(7361).ServiceNotificationType.FILE_UPLOAD;
       return initializeDefault.addServiceHandler(obj);
     }
   } else {
@@ -63,7 +63,7 @@ function backgroundify(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

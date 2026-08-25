@@ -1,13 +1,13 @@
-// Module ID: 7199
-// Function ID: 7200
+// Module ID: 5856
+// Function ID: 5857
 // Name: useProfileThemeValues
-// Dependencies: [19, 4669, 647, 1367, 712, 711, 2]
+// Dependencies: [19, 4372, 647, 1367, 712, 711, 2]
 // Exports: useProfileThemeValues
 
-// Module 7199 (useProfileThemeValues)
+// Module 5856 (useProfileThemeValues)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 
 const useMemo = noop.useMemo;
 const result = set.fileFinishedImporting("modules/user_profile/useProfileThemeValues.native.tsx");

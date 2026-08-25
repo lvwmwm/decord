@@ -1,13 +1,13 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16915
+// Function ID: 16916
 // Name: getEmptyServerSettingsEmojiSource
-// Dependencies: [19, 17, 21, 7946, 16884, 16885, 16886, 1363, 2]
+// Dependencies: [19, 17, 21, 7767, 16916, 16917, 16918, 1363, 2]
 // Exports: EmptyServerSettingsEmoji, getEmptyServerSettingsEmojiSource, useEmptyServerSettingsEmojiSource
 
-// Module 16883 (getEmptyServerSettingsEmojiSource)
+// Module 16915 (getEmptyServerSettingsEmojiSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import getIllustrationSource from "getIllustrationSource" /* 7767 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getEmptyServerSettingsEmojiSource = function getEmptyServerSettings
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(16884);
+      return callback(16916);
     },
     darker() {
-      return callback(16885);
+      return callback(16917);
     },
     light() {
-      return callback(16886);
+      return callback(16918);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useEmptyServerSettingsEmojiSource = function useEmptyServerSettings
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16884);
+      return callback(16916);
     },
     darker() {
-      return callback(16885);
+      return callback(16917);
     },
     light() {
-      return callback(16886);
+      return callback(16918);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const EmptyServerSettingsEmoji = function EmptyServerSettingsEmoji(arg0) 
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(16884);
+      return callback(16916);
     },
     darker() {
-      return callback(16885);
+      return callback(16917);
     },
     light() {
-      return callback(16886);
+      return callback(16918);
     }
   };
   obj = {};

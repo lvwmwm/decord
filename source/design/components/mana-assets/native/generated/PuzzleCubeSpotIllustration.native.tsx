@@ -1,14 +1,14 @@
-// Module ID: 6109
-// Function ID: 6110
+// Module ID: 6793
+// Function ID: 6794
 // Name: PuzzleCubeSpotIllustration
-// Dependencies: [21, 5454, 6110, 2]
+// Dependencies: [21, 5374, 6794, 2]
 // Exports: PuzzleCubeSpotIllustration
 
-// Module 6109 (PuzzleCubeSpotIllustration)
+// Module 6793 (PuzzleCubeSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 6110 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6794 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PuzzleCubeSpotIllustration.native.tsx");

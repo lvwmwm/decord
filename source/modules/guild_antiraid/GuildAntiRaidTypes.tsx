@@ -1,9 +1,9 @@
-// Module ID: 8276
-// Function ID: 8277
+// Module ID: 8277
+// Function ID: 8278
 // Name: GuildIncidentActionSources
 // Dependencies: [2]
 
-// Module 8276 (GuildIncidentActionSources)
+// Module 8277 (GuildIncidentActionSources)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidTypes.tsx");

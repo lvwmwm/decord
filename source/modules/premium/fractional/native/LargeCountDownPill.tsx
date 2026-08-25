@@ -1,15 +1,15 @@
-// Module ID: 12950
-// Function ID: 12951
+// Module ID: 12937
+// Function ID: 12938
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 4668, 712, 4097, 1236, 4334, 4739, 2]
+// Dependencies: [17, 21, 4380, 712, 4098, 1236, 4335, 4376, 2]
 // Exports: default
 
-// Module 12950 (LargeCountDownPill)
+// Module 12937 (LargeCountDownPill)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -42,7 +42,7 @@ export default function LargeCountDownPill(countdownText) {
   };
   obj = { style: tmp.largeCountdownPill, children: null };
   obj = { variant: "text-xs/bold", style: tmp.largeCountdownPillText, children: countdownText.countdownText.toUpperCase() };
-  const items = [callback(_require(4739).Text, obj), callback(_require(4334).CircleInformationIcon, { style: tmp.iconStyle, color: ThemesDefault.colors.TEXT_STATUS_IDLE })];
+  const items = [callback(_require(4376).Text, obj), callback(_require(4335).CircleInformationIcon, { style: tmp.iconStyle, color: ThemesDefault.colors.TEXT_STATUS_IDLE })];
   obj[1] = items;
   obj[1] = callback2(closure_4, obj);
   return callback(closure_3, obj);

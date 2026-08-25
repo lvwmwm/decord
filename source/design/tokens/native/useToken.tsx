@@ -1,14 +1,14 @@
-// Module ID: 4100
-// Function ID: 4101
+// Module ID: 4101
+// Function ID: 4102
 // Name: map
-// Dependencies: [712, 4101, 12, 4107, 2]
+// Dependencies: [712, 4102, 12, 4108, 2]
 // Exports: useToken
 
-// Module 4100 (map)
+// Module 4101 (map)
 import applyDefault from "apply" /* 12 */;
 import ThemesDefault from "Themes" /* 712 */;
-import getSemanticColorContextFromThemeContext from "getSemanticColorContextFromThemeContext" /* 4101 */;
-import ManaContext from "ManaContext" /* 4107 */;
+import getSemanticColorContextFromThemeContext from "getSemanticColorContextFromThemeContext" /* 4102 */;
+import ManaContext from "ManaContext" /* 4108 */;
 
 require = arg1;
 const map = new Map();

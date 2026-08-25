@@ -1,24 +1,24 @@
-// Module ID: 11969
-// Function ID: 11970
+// Module ID: 12297
+// Function ID: 12298
 // Name: EmptyState
-// Dependencies: [5, 32, 19, 17, 11946, 21, 4668, 712, 11970, 4739, 1236, 1500, 6812, 1629, 11959, 4277, 6345, 7374, 1297, 11964, 2]
+// Dependencies: [5, 32, 19, 17, 12275, 21, 4380, 712, 12298, 4376, 1236, 1500, 5335, 1629, 12288, 4278, 5376, 6100, 1297, 12293, 2]
 // Exports: default
 
-// Module 11969 (EmptyState)
+// Module 12297 (EmptyState)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useNavigation from "useNavigation" /* 1500 */;
-import Text from "Text" /* 4739 */;
-import HeaderBackImage from "HeaderBackImage" /* 6345 */;
-import _modDef7374 from "module_7374" /* 7374 */;
-import registerAssetDefault from "registerAsset" /* 11970 */;
+import Text from "Text" /* 4376 */;
+import HeaderBackImage from "HeaderBackImage" /* 5376 */;
+import _modDef6100 from "module_6100" /* 6100 */;
+import registerAssetDefault from "registerAsset" /* 12298 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 11946 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12275 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function EmptyState() {
@@ -84,7 +84,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
   obj1[2] = function onClose() {
 
   };
-  obj[1] = callback2(_modDef7374, obj1);
+  obj[1] = callback2(_modDef6100, obj1);
   const items = [callback2(HeaderBackImage.FauxHeader, obj), ];
   obj2 = {
     keyboardShouldPersistTaps: "always",
@@ -119,7 +119,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -206,7 +206,7 @@ export default function HubEmailConnectionGuildSelectSearch(arg0) {
     style: tmp.scrollContainer,
     contentContainerStyle: obj3
   };
-  const tmp8Result = _modDef7374;
+  const tmp8Result = _modDef6100;
   items[1] = callback2(anyErrorMessage, obj2);
   obj[0] = items;
   return callback3(closure_12, obj);

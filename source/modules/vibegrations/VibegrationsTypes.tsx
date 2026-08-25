@@ -1,10 +1,10 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 15949
+// Function ID: 15950
 // Name: frozen
 // Dependencies: [2]
-// Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isVibegrationsAttachmentWithinLimit, projectSupportsVisibility, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit
+// Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isProjectShared, isVibegrationsAttachmentWithinLimit, projectSupportsVisibility, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit
 
-// Module 15917 (frozen)
+// Module 15949 (frozen)
 import set from "set" /* 2 */;
 
 const frozen = Object.freeze({ PUBLIC: 1, SHAREABLE: 2 });
@@ -25,6 +25,13 @@ export const isProjectPublic = function isProjectPublic(project) {
     num = 0;
   }
   return num & frozen.PUBLIC;
+};
+export const isProjectShared = function isProjectShared(flags) {
+  let num = flags.flags;
+  if (num == null) {
+    num = 0;
+  }
+  return num & frozen.SHAREABLE;
 };
 export const projectSupportsVisibility = function projectSupportsVisibility(project) {
   return null != project.flags;

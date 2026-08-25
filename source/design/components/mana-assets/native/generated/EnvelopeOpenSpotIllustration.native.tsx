@@ -1,14 +1,14 @@
-// Module ID: 5707
-// Function ID: 5708
+// Module ID: 6393
+// Function ID: 6394
 // Name: EnvelopeOpenSpotIllustration
-// Dependencies: [21, 5454, 5708, 2]
+// Dependencies: [21, 5374, 6394, 2]
 // Exports: EnvelopeOpenSpotIllustration
 
-// Module 5707 (EnvelopeOpenSpotIllustration)
+// Module 6393 (EnvelopeOpenSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5708 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6394 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EnvelopeOpenSpotIllustration.native.tsx");

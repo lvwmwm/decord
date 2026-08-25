@@ -1,28 +1,28 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12341
+// Function ID: 12342
 // Name: ProfileEffectAssetPreview
-// Dependencies: [19, 17, 678, 9244, 21, 4668, 712, 9006, 5454, 12017, 8982, 9262, 9242, 9243, 1946, 9258, 1949, 679, 9284, 9283, 9255, 1236, 4739, 5317, 9286, 12018, 9213, 4042, 9296, 2]
+// Dependencies: [19, 17, 678, 9523, 21, 4380, 712, 8969, 5374, 12342, 8944, 9541, 9521, 9522, 1947, 9537, 1950, 679, 9563, 9562, 9534, 1236, 4376, 7159, 9565, 12343, 9496, 4043, 9575, 2]
 // Exports: default
 
-// Module 12016 (ProfileEffectAssetPreview)
+// Module 12341 (ProfileEffectAssetPreview)
 import set from "set" /* 679 */;
 import ThemesDefault from "Themes" /* 712 */;
-import getNameplateData from "getNameplateData" /* 1946 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import Text from "Text" /* 4739 */;
-import preloadDefault from "preload" /* 5454 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8982 */;
-import useProfileEffectDefault from "useProfileEffect" /* 9006 */;
-import useCurrentUser from "useCurrentUser" /* 9213 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9255 */;
-import NameplateInnerDefault from "NameplateInner" /* 9258 */;
-import metadataDefault from "metadata" /* 9283 */;
+import getNameplateData from "getNameplateData" /* 1947 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import Text from "Text" /* 4376 */;
+import preloadDefault from "preload" /* 5374 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8944 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8969 */;
+import useCurrentUser from "useCurrentUser" /* 9496 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9534 */;
+import NameplateInnerDefault from "NameplateInner" /* 9537 */;
+import metadataDefault from "metadata" /* 9562 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items" /* 678 */;
-import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO" /* 9244 */;
+import SAMPLE_PROFILE_ASPECT_RATIO from "SAMPLE_PROFILE_ASPECT_RATIO" /* 9523 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function ProfileEffectAssetPreview(item) {
@@ -34,21 +34,21 @@ function ProfileEffectAssetPreview(item) {
     obj[0] = tmp.profileEffectContainer;
     obj = { source: null, alt: null, style: null, resizeMode: "cover" };
     obj = { uri: null };
-    obj[0] = tmp2(12017);
+    obj[0] = tmp2(12342);
     obj[0] = obj;
     obj[1] = tmp4.accessibilityLabel;
     obj[2] = tmp.profileEffect;
-    const items = [callback(tmp2(5454), obj), ];
+    const items = [callback(tmp2(5374), obj), ];
     obj1 = { style: null, source: null, alt: null, resizeMode: "cover" };
     obj1[0] = tmp.profileEffect;
     const obj2 = { uri: null };
     obj2[0] = tmp4.thumbnailPreviewSrc;
     obj1[1] = obj2;
     obj1[2] = tmp4.title;
-    items[1] = callback(tmp2(5454), obj1);
+    items[1] = callback(tmp2(5374), obj1);
     obj[1] = items;
     tmp5 = callback2(View, obj);
-    const tmp2Result = tmp2(5454);
+    const tmp2Result = tmp2(5374);
   }
   return tmp5;
 }
@@ -62,8 +62,8 @@ function ProfileFrameAssetPreview(arg0) {
     obj[1] = width;
     obj[2] = height;
     obj[3] = tmp(712).colors.BACKGROUND_BASE_LOW;
-    tmp4 = callback(tmp(9262), obj);
-    const tmpResult = tmp(9262);
+    tmp4 = callback(tmp(9541), obj);
+    const tmpResult = tmp(9541);
   }
   return tmp4;
 }
@@ -75,7 +75,7 @@ function BundleAssetPreview(height) {
   c4 = undefined;
   const tmp = callback3();
   dependencyMap = tmp;
-  let obj = width(9242);
+  let obj = width(9521);
   const shopProductItems = obj.useShopProductItems(product);
   bundleWidth = small.small.bundleWidth;
   const result = width / bundleWidth;
@@ -99,7 +99,7 @@ function BundleAssetPreview(height) {
   obj = { style: memo, children: null };
   obj = { style: memo1, children: null };
   const memo2 = bundleWidth.useMemo(() => ({ width, height }), items2);
-  obj[1] = callback(height(9243), { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2 });
+  obj[1] = callback(height(9522), { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, previewAssets: product.previewAssets, disableStaticBackground: true, size: "small", targetSize: memo2 });
   obj[1] = callback(c4, obj);
   return callback(c4, obj);
 }
@@ -131,9 +131,9 @@ function CollectibleProductPreviewContent(userAvatarSource) {
   if (ALL.has(product.skuId)) {
     let obj = { skuId: null, width: null, height: null };
     obj[0] = product.skuId;
-    obj[1] = tmp2(9284).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
-    obj[2] = tmp2(9284).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
-    return callback(tmp2(9284).FractionalNitroCoinIllustration, obj);
+    obj[1] = tmp2(9563).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
+    obj[2] = tmp2(9563).FRACTIONAL_NITRO_COIN_SIZE.CHECKOUT;
+    return callback(tmp2(9563).FractionalNitroCoinIllustration, obj);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     obj = { source: null, style: null };
     obj1 = { uri: null };
@@ -143,27 +143,27 @@ function CollectibleProductPreviewContent(userAvatarSource) {
     return callback(preloadDefault, obj);
   } else {
     const type = product.type;
-    if (tmp2(1949).CollectiblesItemType.AVATAR_DECORATION === type) {
+    if (tmp2(1950).CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj2 = { item: null, size: null, avatarSource: null, animate: false };
       obj2[0] = product.items[0];
       obj2[1] = width;
       obj2[2] = userAvatarSource.userAvatarSource;
       return callback(AvatarDecorationSampleV2Default, obj2);
-    } else if (tmp2(1949).CollectiblesItemType.PROFILE_EFFECT === type) {
+    } else if (tmp2(1950).CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj3 = { item: null };
       obj3[0] = product.items[0];
       return callback(ProfileEffectAssetPreview, obj3);
-    } else if (tmp2(1949).CollectiblesItemType.NAMEPLATE === type) {
+    } else if (tmp2(1950).CollectiblesItemType.NAMEPLATE === type) {
       const obj4 = { item: null };
       obj4[0] = product.items[0];
       return callback(NameplateAssetPreview, obj4);
-    } else if (tmp2(1949).CollectiblesItemType.PROFILE_FRAME === type) {
+    } else if (tmp2(1950).CollectiblesItemType.PROFILE_FRAME === type) {
       const obj5 = { item: null, width: null, height: null };
       obj5[0] = product.items[0];
       obj5[1] = width;
       obj5[2] = height;
       return callback(ProfileFrameAssetPreview, obj5);
-    } else if (tmp2(1949).CollectiblesItemType.BUNDLE === type) {
+    } else if (tmp2(1950).CollectiblesItemType.BUNDLE === type) {
       obj = { product: null, width: null, height: null };
       obj[0] = product;
       obj[1] = width;
@@ -303,7 +303,7 @@ let closure_10 = createCacheKey.createStyles((arg0) => {
     tmp4 = tmp;
   }
   let obj = { giftProductContainer: null };
-  obj = { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp4(712).space.PX_16, backgroundColor: "accessibilityLabel" };
+  obj = { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp4(712).space.PX_16, backgroundColor: "call" };
   obj[0] = obj;
   return obj;
 });
@@ -338,7 +338,7 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
   const tmp = callback3();
   let obj = useCurrentUser;
   const currentUser = obj.useCurrentUser();
-  obj1 = flag2(4042);
+  obj1 = flag2(4043);
   const canUseShopDiscountsResult = obj1.canUseShopDiscounts(currentUser);
   dependencyMap = canUseShopDiscountsResult;
   const items = [product, flag2, canUseShopDiscountsResult];
@@ -391,7 +391,7 @@ export default function CollectiblesShopCheckoutDetails(recipientUser) {
     const obj2 = { variant: "text-xs/semibold", color: "text-feedback-critical", children: null };
     let intl = tmp3(1236).intl;
     obj2[2] = intl.string(tmp3(1236).t["3YfczA"]);
-    obj1[1] = tmp10(tmp3(4739).Text, obj2);
+    obj1[1] = tmp10(tmp3(4376).Text, obj2);
     flag3 = tmp10(tmp9, obj1);
   }
   items3[1] = flag3;

@@ -1,10 +1,10 @@
-// Module ID: 4513
-// Function ID: 4514
+// Module ID: 4415
+// Function ID: 4416
 // Name: getHostWithoutPort
 // Dependencies: [2]
 // Exports: getHostWithoutPort, isLocalhost
 
-// Module 4513 (getHostWithoutPort)
+// Module 4415 (getHostWithoutPort)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/core/UrlHostUtils.tsx");

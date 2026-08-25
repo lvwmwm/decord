@@ -1,19 +1,19 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 17022
+// Function ID: 17023
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 8912, 1391, 1981, 4033, 1922, 8294, 676, 21, 4100, 712, 16979, 589, 4989, 1236, 16980, 4346, 8858, 2008, 8911, 16977, 4739, 4738, 6317, 6322, 2]
+// Dependencies: [19, 17, 9169, 1391, 1982, 4034, 1922, 8295, 676, 21, 4101, 712, 17011, 589, 4574, 1236, 17012, 4347, 9115, 2009, 9168, 17009, 4376, 4813, 5873, 5480, 2]
 // Exports: default
 
-// Module 16990 (ChannelSetupScreen)
+// Module 17022 (ChannelSetupScreen)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormInit" /* 8912 */;
+import closure_6 from "handleFormInit" /* 9169 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "comparator" /* 1981 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_9 } from "comparator" /* 1981 */;
-import closure_10 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "comparator" /* 1982 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_9 } from "comparator" /* 1982 */;
+import closure_10 from "markAllUserIdListsStale" /* 4034 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import { CREATE_NEW_CHANNEL_VALUE } from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 8294 */;
+import { CREATE_NEW_CHANNEL_VALUE } from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 8295 */;
 import { ChannelTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -96,10 +96,10 @@ export default function ChannelSetupScreen() {
     obj[0] = intl.string(guild(publicUpdatesChannel[15]).t.Yr6nGx);
     obj[1] = callback();
     obj[2] = function onItemSelect(rulesChannelId) {
-      let obj = callback(8911);
+      let obj = callback(9168);
       obj = { rulesChannelId };
       obj.updateGuild(obj);
-      callback(4346).hideActionSheet();
+      callback(4347).hideActionSheet();
     };
     let id;
     if (rulesChannel != null) {
@@ -118,10 +118,10 @@ export default function ChannelSetupScreen() {
     obj[0] = intl.string(guild(publicUpdatesChannel[15]).t.VqhxxN);
     obj[1] = callback();
     obj[2] = function onItemSelect(publicUpdatesChannelId) {
-      let obj = callback(8911);
+      let obj = callback(9168);
       obj = { publicUpdatesChannelId };
       obj.updateGuild(obj);
-      callback(4346).hideActionSheet();
+      callback(4347).hideActionSheet();
     };
     let id;
     if (publicUpdatesChannel != null) {

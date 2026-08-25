@@ -1,14 +1,14 @@
-// Module ID: 10142
-// Function ID: 10143
+// Module ID: 9992
+// Function ID: 9993
 // Name: NotificationSettingsMessageNotificationGuildActionSheet
-// Dependencies: [19, 5048, 676, 5049, 685, 21, 10137, 10143, 1236, 10130, 6835, 6832, 2]
+// Dependencies: [19, 4589, 676, 4590, 685, 21, 9987, 9993, 1236, 9982, 5368, 5363, 2]
 // Exports: default
 
-// Module 10142 (NotificationSettingsMessageNotificationGuildActionSheet)
+// Module 9992 (NotificationSettingsMessageNotificationGuildActionSheet)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4589 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4590 */;
 import { GuildNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 685 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -18,7 +18,7 @@ let result = require("set").fileFinishedImporting("modules/notifications/setting
 
 export default function NotificationSettingsMessageNotificationGuildActionSheet(guildId) {
   const _require = guildId;
-  let obj = _require(10137);
+  let obj = _require(9987);
   const guildPresetSettings = obj.useGuildPresetSettings(guildId.guildId);
   const unread = guildPresetSettings.unread;
   const notification = guildPresetSettings.notification;
@@ -44,5 +44,5 @@ export default function NotificationSettingsMessageNotificationGuildActionSheet(
     const NotificationLabel = guildId(closure_1_2[11]).NotificationLabel;
     const result = unread(closure_1_2[10]).updateGuildNotificationSettings(guildId.guildId, obj, NotificationLabel.notifications(message_notifications));
   };
-  return jsx(unread(10143), { context: "guild", value: notification, allMessagesSubLabel: null, onChange: null });
+  return jsx(unread(9993), { context: "guild", value: notification, allMessagesSubLabel: null, onChange: null });
 };

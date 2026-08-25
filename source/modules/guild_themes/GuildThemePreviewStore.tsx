@@ -1,15 +1,15 @@
-// Module ID: 4261
-// Function ID: 4262
+// Module ID: 4262
+// Function ID: 4263
 // Name: handleEnd
-// Dependencies: [1218, 4262, 4263, 709, 1909, 12, 589, 2]
+// Dependencies: [1218, 4263, 4264, 709, 1909, 12, 589, 2]
 
-// Module 4261 (handleEnd)
+// Module 4262 (handleEnd)
 import apply from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import cloneGuildThemeSettings from "cloneGuildThemeSettings" /* 1909 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import GuildThemePreviewOrigin from "GuildThemePreviewOrigin" /* 4262 */;
+import GuildThemePreviewOrigin from "GuildThemePreviewOrigin" /* 4263 */;
 
 require = arg1;
 function handleEnd() {
@@ -66,7 +66,7 @@ Object.defineProperty(prototype, "originalEnabled", {
   set: undefined
 });
 Object.defineProperty(prototype, "origin", {
-  get: function origin(keys, arg1) {
+  get: function origin(arg0, arg1, arg2) {
     return closure_5.origin;
   },
   set: undefined
@@ -134,7 +134,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(dispatcherDefault, {
     if (null == obj.guildId) {
       return false;
     } else {
-      obj = { presetId: null, customUserThemeSettings: "r" };
+      obj = { presetId: null, customUserThemeSettings: "a" };
       obj[0] = tmp;
       const isEqualResult = apply.isEqual(obj.draft, obj);
       let flag = !isEqualResult;

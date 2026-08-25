@@ -1,21 +1,21 @@
-// Module ID: 6750
-// Function ID: 6751
+// Module ID: 5261
+// Function ID: 5262
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 1910, 5083, 6749, 21, 4668, 712, 6320, 1500, 589, 6751, 6840, 7374, 1236, 6747, 5438, 7226, 1297, 2]
+// Dependencies: [32, 19, 17, 1910, 5262, 5260, 21, 4380, 712, 5265, 1500, 589, 5266, 5434, 6100, 1236, 5258, 4949, 5885, 1297, 2]
 // Exports: default
 
-// Module 6750 (SubscribeModalGuildSelect)
+// Module 5261 (SubscribeModalGuildSelect)
 import ThemesDefault from "Themes" /* 712 */;
-import openApplyBoostModalAll from "openApplyBoostModal" /* 6747 */;
-import _modDef7374 from "module_7374" /* 7374 */;
+import openApplyBoostModalAll from "openApplyBoostModal" /* 5258 */;
+import _modDef6100 from "module_6100" /* 6100 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "insertUnsortedGuilds" /* 5083 */;
-import { PremiumGuildSubscribeModalScenes as closure_9 } from "PremiumGuildSubscribeModalScenes" /* 6749 */;
+import closure_8 from "insertUnsortedGuilds" /* 5262 */;
+import { PremiumGuildSubscribeModalScenes as closure_9 } from "PremiumGuildSubscribeModalScenes" /* 5260 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
@@ -110,10 +110,10 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   obj[0] = intl.string(guildBoostSlots(1236).t.vf3ZTa);
   obj[1] = tmp2[1];
   obj[2] = openApplyBoostModalAll.closeApplyBoostModal;
-  const items3 = [callback2(_modDef7374, obj), ];
+  const items3 = [callback2(_modDef6100, obj), ];
   obj1 = { style: tmp.guildList, keyboardShouldPersistTaps: "always", children: null };
-  const tmp5 = _modDef7374;
-  obj1[2] = callback2(guildBoostSlots(6840).SafeAreaPaddingView, {
+  const tmp5 = _modDef6100;
+  obj1[2] = callback2(guildBoostSlots(5434).SafeAreaPaddingView, {
     bottom: true,
     children: stateFromStoresArray.map((children) => {
       closure_0 = children;
@@ -135,5 +135,5 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   });
   items3[1] = callback2(memo, obj1);
   obj[2] = items3;
-  return callback3(guildBoostSlots(6840).SafeAreaPaddingView, obj);
+  return callback3(guildBoostSlots(5434).SafeAreaPaddingView, obj);
 };

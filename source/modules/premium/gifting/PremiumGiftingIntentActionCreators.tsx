@@ -1,16 +1,16 @@
-// Module ID: 7647
-// Function ID: 7648
+// Module ID: 7468
+// Function ID: 7469
 // Name: fetchAndReconcileGiftIntentDismissals
-// Dependencies: [5412, 1218, 4999, 1924, 676, 530, 709, 1208, 698, 2]
+// Dependencies: [7265, 1218, 4623, 1924, 676, 530, 709, 1208, 698, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 7647 (fetchAndReconcileGiftIntentDismissals)
+// Module 7468 (fetchAndReconcileGiftIntentDismissals)
 import sendRequest from "sendRequest" /* 530 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "recomputeAffinities" /* 5412 */;
+import closure_3 from "recomputeAffinities" /* 7265 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "reinjectEphemerals" /* 4999 */;
+import closure_5 from "reinjectEphemerals" /* 4623 */;
 import { GiftIntentType } from "GuildFeatures" /* 1924 */;
 import ME from "ME" /* 676 */;
 

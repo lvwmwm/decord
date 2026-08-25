@@ -1,10 +1,10 @@
-// Module ID: 11285
-// Function ID: 11286
+// Module ID: 10804
+// Function ID: 10805
 // Name: useCurrentEmbeddedActivity
 // Dependencies: [1390, 589, 2]
 // Exports: default
 
-// Module 11285 (useCurrentEmbeddedActivity)
+// Module 10804 (useCurrentEmbeddedActivity)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "participantFromServer" /* 1390 */;
 

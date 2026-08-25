@@ -1,11 +1,11 @@
-// Module ID: 7210
-// Function ID: 7211
+// Module ID: 5867
+// Function ID: 5868
 // Name: showSimpleActionSheet
-// Dependencies: [2, 7211]
+// Dependencies: [2, 5868]
 
-// Module 7210 (showSimpleActionSheet)
+// Module 5867 (showSimpleActionSheet)
 import set from "set" /* 2 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7211 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 5868 */;
 
 const result = set.fileFinishedImporting("modules/action_sheet/native/showSimpleActionSheet.tsx");
 

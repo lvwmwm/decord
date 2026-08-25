@@ -1,9 +1,9 @@
-// Module ID: 9099
-// Function ID: 9100
+// Module ID: 9065
+// Function ID: 9066
 // Name: ContentInventoryAuthorType
 // Dependencies: [2]
 
-// Module 9099 (ContentInventoryAuthorType)
+// Module 9065 (ContentInventoryAuthorType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryAuthorType.tsx");

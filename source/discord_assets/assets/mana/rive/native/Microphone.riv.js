@@ -1,9 +1,9 @@
-// Module ID: 4188
-// Function ID: 4189
+// Module ID: 4189
+// Function ID: 4190
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4188 (metadata)
+// Module 4189 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/Microphone.riv.js");

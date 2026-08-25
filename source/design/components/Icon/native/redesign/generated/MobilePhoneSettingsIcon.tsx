@@ -1,14 +1,14 @@
-// Module ID: 14931
-// Function ID: 14932
+// Module ID: 14961
+// Function ID: 14962
 // Name: MobilePhoneSettingsIcon
-// Dependencies: [19, 21, 712, 4099, 14932, 2]
+// Dependencies: [19, 21, 712, 4100, 14962, 2]
 // Exports: MobilePhoneSettingsIcon
 
-// Module 14931 (MobilePhoneSettingsIcon)
+// Module 14961 (MobilePhoneSettingsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 14932 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 14962 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

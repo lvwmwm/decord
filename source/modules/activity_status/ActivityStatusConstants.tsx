@@ -1,9 +1,9 @@
-// Module ID: 9933
-// Function ID: 9934
+// Module ID: 9789
+// Function ID: 9790
 // Name: TOOLTIP_DELAY_MS
 // Dependencies: [2]
 
-// Module 9933 (TOOLTIP_DELAY_MS)
+// Module 9789 (TOOLTIP_DELAY_MS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activity_status/ActivityStatusConstants.tsx");

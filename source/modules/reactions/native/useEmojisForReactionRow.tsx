@@ -1,10 +1,10 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 11290
+// Function ID: 11291
 // Name: useEmojisForReactionRow
-// Dependencies: [19, 1925, 9339, 1494, 4041, 2]
+// Dependencies: [19, 1925, 8788, 1494, 4042, 2]
 // Exports: useEmojisForReactionRow
 
-// Module 10933 (useEmojisForReactionRow)
+// Module 11290 (useEmojisForReactionRow)
 import closure_3 from "noop" /* 19 */;
 import { EmojiIntention } from "set" /* 1925 */;
 

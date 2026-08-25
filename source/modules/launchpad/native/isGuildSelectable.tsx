@@ -1,14 +1,14 @@
-// Module ID: 16291
-// Function ID: 16292
+// Module ID: 16323
+// Function ID: 16324
 // Name: isGuildSelectable
-// Dependencies: [1396, 4658, 5388, 5048, 2]
+// Dependencies: [1396, 4402, 7242, 4589, 2]
 // Exports: default
 
-// Module 16291 (isGuildSelectable)
+// Module 16323 (isGuildSelectable)
 import closure_0 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import closure_1 from "reset" /* 4658 */;
-import closure_2 from "updateGuildUnreadSentinel" /* 5388 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_1 from "reset" /* 4402 */;
+import closure_2 from "updateGuildUnreadSentinel" /* 7242 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4589 */;
 
 const result = require("set").fileFinishedImporting("modules/launchpad/native/isGuildSelectable.tsx");
 

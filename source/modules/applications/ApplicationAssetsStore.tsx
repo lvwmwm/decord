@@ -1,9 +1,9 @@
-// Module ID: 7286
-// Function ID: 7287
+// Module ID: 8397
+// Function ID: 8398
 // Name: handleFetchEmbeddedActivityShelfSuccess
 // Dependencies: [12, 589, 709, 2]
 
-// Module 7286 (handleFetchEmbeddedActivityShelfSuccess)
+// Module 8397 (handleFetchEmbeddedActivityShelfSuccess)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

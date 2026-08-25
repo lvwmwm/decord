@@ -1,9 +1,9 @@
-// Module ID: 5227
-// Function ID: 5228
+// Module ID: 5107
+// Function ID: 5108
 // Name: toString
 // Dependencies: [1931, 2]
 
-// Module 5227 (toString)
+// Module 5107 (toString)
 import toJSDefault from "toJS" /* 1931 */;
 
 toJSDefault;

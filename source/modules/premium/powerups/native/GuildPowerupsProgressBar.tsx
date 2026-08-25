@@ -1,19 +1,19 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15578
+// Function ID: 15579
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 15547, 1910, 21, 712, 4119, 4761, 4668, 647, 15548, 15549, 4671, 11697, 7197, 1236, 2368, 8848, 4739, 6721, 2]
+// Dependencies: [19, 17, 15579, 1910, 21, 712, 4120, 4826, 4380, 647, 15580, 15581, 4381, 12039, 5854, 1236, 2369, 8810, 4376, 5884, 2]
 // Exports: default
 
-// Module 15546 (GuildPowerupsProgressBar)
+// Module 15578 (GuildPowerupsProgressBar)
 import ThemesDefault from "Themes" /* 712 */;
-import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import LinearGradientDefault from "LinearGradient" /* 4826 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "initialize" /* 15547 */;
+import closure_5 from "initialize" /* 15579 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import importDefaultResult from "module_4119" /* 4119 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "module_4120" /* 4120 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);

@@ -1,13 +1,13 @@
-// Module ID: 7202
-// Function ID: 7203
+// Module ID: 5859
+// Function ID: 5860
 // Name: getRoleIconData
-// Dependencies: [676, 500, 4037, 1469, 1435, 2]
+// Dependencies: [676, 500, 4038, 1469, 1435, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 7202 (getRoleIconData)
+// Module 5859 (getRoleIconData)
 import getAvatarURL from "getAvatarURL" /* 1435 */;
 import handleImageLoad from "handleImageLoad" /* 1469 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4037 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4038 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 500 */;
 

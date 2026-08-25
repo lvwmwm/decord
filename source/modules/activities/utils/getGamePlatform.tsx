@@ -1,12 +1,12 @@
-// Module ID: 16058
-// Function ID: 16059
+// Module ID: 16090
+// Function ID: 16091
 // Name: getGamePlatform
-// Dependencies: [676, 12151, 2]
+// Dependencies: [676, 12484, 2]
 // Exports: default
 
-// Module 16058 (getGamePlatform)
+// Module 16090 (getGamePlatform)
 import set from "set" /* 2 */;
-import isOnXboxDefault from "isOnXbox" /* 12151 */;
+import isOnXboxDefault from "isOnXbox" /* 12484 */;
 import ME from "ME" /* 676 */;
 
 ({ ActivityTypes: obj1, ActivityGamePlatforms: c3 } = ME);

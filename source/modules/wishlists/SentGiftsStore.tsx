@@ -1,9 +1,9 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 10260
+// Function ID: 10261
 // Name: initialize
 // Dependencies: [32, 589, 709, 2]
 
-// Module 10409 (initialize)
+// Module 10260 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "_slicedToArray" /* 32 */;

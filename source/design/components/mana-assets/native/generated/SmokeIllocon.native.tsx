@@ -1,14 +1,14 @@
-// Module ID: 6193
-// Function ID: 6194
+// Module ID: 6881
+// Function ID: 6882
 // Name: SmokeIllocon
-// Dependencies: [21, 5454, 6194, 2]
+// Dependencies: [21, 5374, 6882, 2]
 // Exports: SmokeIllocon
 
-// Module 6193 (SmokeIllocon)
+// Module 6881 (SmokeIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 6194 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6882 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SmokeIllocon.native.tsx");

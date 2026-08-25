@@ -1,14 +1,14 @@
-// Module ID: 10541
-// Function ID: 10542
+// Module ID: 10558
+// Function ID: 10559
 // Name: trackRoundtrip
-// Dependencies: [4569, 676, 5057, 698, 7469, 5060, 2]
+// Dependencies: [4474, 676, 7067, 698, 7282, 7070, 2]
 
-// Module 10541 (trackRoundtrip)
+// Module 10558 (trackRoundtrip)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 5057 */;
-import isForegrounded from "isForegrounded" /* 5060 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7469 */;
-import closure_3 from "handleConnectionInfoChange" /* 4569 */;
+import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 7067 */;
+import isForegrounded from "isForegrounded" /* 7070 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7282 */;
+import closure_3 from "handleConnectionInfoChange" /* 4474 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

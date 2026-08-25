@@ -1,15 +1,15 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 12173
+// Function ID: 12174
 // Name: TabItemCount
-// Dependencies: [19, 17, 21, 4119, 4668, 712, 4749, 4739, 500, 1236, 2]
+// Dependencies: [19, 17, 21, 4120, 4380, 712, 4814, 4376, 500, 1236, 2]
 // Exports: TabItem
 
-// Module 11833 (TabItemCount)
+// Module 12173 (TabItemCount)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import importDefaultResult from "module_4119" /* 4119 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "module_4120" /* 4120 */;
 
 const require = arg1;
 function TabItemCount(arg0) {

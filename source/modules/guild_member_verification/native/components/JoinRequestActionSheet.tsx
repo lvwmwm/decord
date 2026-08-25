@@ -1,17 +1,17 @@
-// Module ID: 15904
-// Function ID: 15905
+// Module ID: 15936
+// Function ID: 15937
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4669, 1930, 1922, 676, 21, 4668, 589, 8455, 7726, 4119, 9007, 4314, 7199, 4100, 712, 688, 8461, 7645, 1978, 8456, 6988, 1297, 9011, 1236, 4107, 6990, 15905, 7162, 2]
+// Dependencies: [19, 17, 4372, 1930, 1922, 676, 21, 4380, 589, 8462, 7547, 4120, 8970, 4315, 5856, 4101, 712, 688, 8468, 7466, 1979, 8463, 5503, 1297, 8974, 1236, 4108, 5505, 15937, 5818, 2]
 
-// Module 15904 (JoinRequestActionSheet)
+// Module 15936 (JoinRequestActionSheet)
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import closure_6 from "createdAt" /* 1930 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 class JoinRequestActionSheet {
@@ -57,7 +57,7 @@ class JoinRequestActionSheet {
     obj3 = guildId;
     ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
     ref = guildId.useRef(null);
-    tmp2Result1 = require("module_4119");
+    tmp2Result1 = require("module_4120");
     sharedValue = require("module_0");
     closure_5 = sharedValue;
     items2 = [];

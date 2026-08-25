@@ -1,21 +1,21 @@
-// Module ID: 10088
-// Function ID: 10089
+// Module ID: 9944
+// Function ID: 9945
 // Name: useTruncatedGradientColors
-// Dependencies: [19, 4668, 4100, 712, 689, 2]
+// Dependencies: [19, 4380, 4101, 712, 689, 2]
 // Exports: default
 
-// Module 10088 (useTruncatedGradientColors)
+// Module 9944 (useTruncatedGradientColors)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const useMemo = noop.useMemo;
 let closure_4 = createCacheKey.createStyles({ gradient: { height: 40 } });
 const result = set.fileFinishedImporting("modules/in_app_notifications/native/hooks/useTruncatedGradientColors.tsx");
 
 export default function useTruncatedGradientColors() {
-  let obj = token(4100);
+  let obj = token(4101);
   token = obj.useToken(ThemesDefault.colors.MOBILE_ALERT_BACKGROUND_DEFAULT);
   obj = {
     gradientColors: useMemo(() => {

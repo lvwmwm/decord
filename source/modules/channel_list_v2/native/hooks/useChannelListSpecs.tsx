@@ -1,24 +1,24 @@
-// Module ID: 15458
-// Function ID: 15459
+// Module ID: 15489
+// Function ID: 15490
 // Name: useChannelListSpecs
-// Dependencies: [19, 10094, 15459, 1494, 15347, 4756, 1629, 11310, 2]
+// Dependencies: [19, 9950, 15490, 1494, 15377, 4821, 1629, 11249, 2]
 // Exports: default
 
-// Module 15458 (useChannelListSpecs)
+// Module 15489 (useChannelListSpecs)
 import closure_3 from "noop" /* 19 */;
-import hairlineWidth from "hairlineWidth" /* 10094 */;
+import hairlineWidth from "hairlineWidth" /* 9950 */;
 
 const require = arg1;
 ({ STICKY_BANNER_ASPECT_RATIO: c4, BANNER_MAX_HEIGHT_PERCENTAGE: c5 } = hairlineWidth);
 const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/hooks/useChannelListSpecs.tsx");
 
 export default function useChannelListSpecs(banner) {
-  redesignGuildHeaderHeight = redesignGuildHeaderHeight(15459).useRedesignGuildHeaderHeight(banner);
+  redesignGuildHeaderHeight = redesignGuildHeaderHeight(15490).useRedesignGuildHeaderHeight(banner);
   height = height(1494)().height;
-  const tmp2 = height(15347)();
+  const tmp2 = height(15377)();
   dependencyMap = tmp2;
-  const obj = redesignGuildHeaderHeight(15459);
-  const fontScale = redesignGuildHeaderHeight(4756).useFontScale();
+  const obj = redesignGuildHeaderHeight(15490);
+  const fontScale = redesignGuildHeaderHeight(4821).useFontScale();
   closure_4 = tmp4;
   const top = height(1629)().top;
   const items = [null != banner.banner, tmp2, height, redesignGuildHeaderHeight, top, fontScale];
@@ -28,6 +28,6 @@ export default function useChannelListSpecs(banner) {
       const _Math = Math;
       num = Math.min(dependencyMap / closure_4, height * top);
     }
-    return { bannerHeight: height(11310)(num), bannerWidth: height(11310)(dependencyMap), headerHeight: height(11310)(redesignGuildHeaderHeight), fontScale, listTop: height(11310)(num + redesignGuildHeaderHeight), listBottom: 0, listPaddingBottom: height(11310)(24), listViewportHeight: height(11310)(height - top) };
+    return { bannerHeight: height(11249)(num), bannerWidth: height(11249)(dependencyMap), headerHeight: height(11249)(redesignGuildHeaderHeight), fontScale, listTop: height(11249)(num + redesignGuildHeaderHeight), listBottom: 0, listPaddingBottom: height(11249)(24), listViewportHeight: height(11249)(height - top) };
   }, items);
 };

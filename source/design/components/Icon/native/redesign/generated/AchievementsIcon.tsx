@@ -1,14 +1,14 @@
-// Module ID: 14031
-// Function ID: 14032
+// Module ID: 14066
+// Function ID: 14067
 // Name: AchievementsIcon
-// Dependencies: [19, 21, 712, 4099, 14032, 2]
+// Dependencies: [19, 21, 712, 4100, 14067, 2]
 // Exports: AchievementsIcon
 
-// Module 14031 (AchievementsIcon)
+// Module 14066 (AchievementsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 14032 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 14067 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

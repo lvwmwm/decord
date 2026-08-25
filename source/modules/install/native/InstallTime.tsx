@@ -1,13 +1,13 @@
-// Module ID: 13304
-// Function ID: 13305
+// Module ID: 13166
+// Function ID: 13167
 // Name: getFirstInstallTimeMillis
-// Dependencies: [1218, 595, 13305, 4553, 2]
+// Dependencies: [1218, 595, 13167, 4458, 2]
 // Exports: getFirstInstallTimeElapsed
 
-// Module 13304 (getFirstInstallTimeMillis)
+// Module 13166 (getFirstInstallTimeMillis)
 import Storage4 from "Storage" /* 595 */;
-import sleep from "sleep" /* 4553 */;
-import enforcingDefault from "enforcing" /* 13305 */;
+import sleep from "sleep" /* 4458 */;
+import enforcingDefault from "enforcing" /* 13167 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 
 require = arg1;

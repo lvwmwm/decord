@@ -1,15 +1,15 @@
-// Module ID: 10681
-// Function ID: 10682
+// Module ID: 10482
+// Function ID: 10483
 // Name: resolveGiftCode
-// Dependencies: [5, 4482, 5306, 5314, 676, 1924, 709, 4385, 7178, 5305, 4277, 530, 10682, 10683, 2]
+// Dependencies: [5, 4421, 7148, 7156, 676, 1924, 709, 4640, 5835, 7147, 4278, 530, 10483, 10484, 2]
 // Exports: resolveGiftCode
 
-// Module 10681 (resolveGiftCode)
-import _modDef10682 from "module_10682" /* 10682 */;
+// Module 10482 (resolveGiftCode)
+import _modDef10483 from "module_10483" /* 10483 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addApplication" /* 4482 */;
-import closure_5 from "updateCategoriesAndProducts" /* 5306 */;
-import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 5314 */;
+import closure_4 from "addApplication" /* 4421 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7148 */;
+import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7156 */;
 import ME from "ME" /* 676 */;
 import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_10 } from "GuildFeatures" /* 1924 */;
 
@@ -45,7 +45,7 @@ function _resolveGiftCode() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -345,7 +345,7 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    _modDef10682.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    _modDef10483.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };

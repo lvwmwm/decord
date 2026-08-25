@@ -1,13 +1,13 @@
-// Module ID: 8623
-// Function ID: 8624
+// Module ID: 8631
+// Function ID: 8632
 // Name: OneTimeLoginForgotPasswordConfirmAlertModal
-// Dependencies: [19, 21, 4667, 1236, 4667, 2]
+// Dependencies: [19, 21, 4750, 1236, 4750, 2]
 // Exports: default
 
-// Module 8623 (OneTimeLoginForgotPasswordConfirmAlertModal)
+// Module 8631 (OneTimeLoginForgotPasswordConfirmAlertModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4667 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4750 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

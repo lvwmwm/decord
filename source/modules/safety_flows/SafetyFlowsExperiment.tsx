@@ -1,10 +1,10 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 16853
+// Function ID: 16854
 // Name: isEligibleForSafetyFlowsExperiment
 // Dependencies: [1368, 2]
 // Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 16821 (isEligibleForSafetyFlowsExperiment)
+// Module 16853 (isEligibleForSafetyFlowsExperiment)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 const tmp2 = getUnitIdDefault({ name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

@@ -1,13 +1,13 @@
-// Module ID: 7643
-// Function ID: 7644
+// Module ID: 7464
+// Function ID: 7465
 // Name: getHasImportantUnread
-// Dependencies: [4777, 5048, 5049, 589, 2]
+// Dependencies: [4395, 4589, 4590, 589, 2]
 // Exports: getHasImportantUnread, useHasImportantUnread
 
-// Module 7643 (getHasImportantUnread)
-import closure_2 from "generateOldThreadCutoff" /* 4777 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
-import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+// Module 7464 (getHasImportantUnread)
+import closure_2 from "generateOldThreadCutoff" /* 4395 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4589 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4590 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/read_states/ReadStateUtils.tsx");

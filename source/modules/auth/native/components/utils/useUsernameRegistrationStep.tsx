@@ -1,15 +1,15 @@
-// Module ID: 15301
-// Function ID: 15302
+// Module ID: 15331
+// Function ID: 15332
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 14187, 15276, 15277, 15274, 1500, 8633, 14185, 14184, 15275, 1501, 1236, 2]
+// Dependencies: [32, 19, 14217, 15306, 15307, 15304, 1500, 8641, 14215, 14214, 15305, 1501, 1236, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 15301 (useUsernameRegistrationStep)
+// Module 15331 (useUsernameRegistrationStep)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "isRateLimited" /* 14187 */;
-import { useRegistrationUIStore } from "useRegistrationUIStore" /* 15276 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15277 */;
+import closure_5 from "isRateLimited" /* 14217 */;
+import { useRegistrationUIStore } from "useRegistrationUIStore" /* 15306 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15307 */;
 
 const require = arg1;
 ({ authStateToRegisterTransitionStep: error, RegistrationTransitionActionTypes: closure_8 } = RegistrationTransitionActionTypes);

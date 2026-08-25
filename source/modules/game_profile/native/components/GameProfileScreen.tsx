@@ -1,19 +1,19 @@
-// Module ID: 9134
-// Function ID: 9135
+// Module ID: 9426
+// Function ID: 9427
 // Name: GetButton
-// Dependencies: [32, 19, 17, 9135, 21, 4668, 712, 4750, 1236, 7726, 9136, 4093, 9138, 5383, 6939, 4119, 9139, 4671, 9140, 9145, 4346, 9162, 9163, 6988, 6990, 9164, 9166, 12082, 7162, 2]
+// Dependencies: [32, 19, 17, 9427, 21, 4380, 712, 4815, 1236, 7547, 9428, 4094, 9431, 6033, 4938, 4120, 9432, 4381, 9433, 9438, 4347, 9455, 5503, 5505, 9456, 9458, 12407, 5818, 2]
 // Exports: default
 
-// Module 9134 (GetButton)
+// Module 9426 (GetButton)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 4750 */;
+import Button from "Button" /* 4815 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "getSimilarGames" /* 9135 */;
+import closure_7 from "getSimilarGames" /* 9427 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function GetButton(onPress) {
@@ -272,7 +272,6 @@ export default function GameProfileScreen(gameId) {
     let obj = closure_1_0(closure_1_2[12]);
     const guildIdAndVerifiedFromInvite = obj.getGuildIdAndVerifiedFromInvite(ref2.current);
     ({ guildId, isVerified } = guildIdAndVerifiedFromInvite);
-    const GameProfileSimilarGamesMobileExperiment = closure_1_0(closure_1_2[22]).GameProfileSimilarGamesMobileExperiment;
     obj = { viewId: closure_5, gameId: closure_0, gameName: null, playedFriendIds: null, playedFriendsData: null, similarGames: null, guildId: null, isVerified: null };
     let str = ref.current;
     if (str == null) {
@@ -281,16 +280,11 @@ export default function GameProfileScreen(gameId) {
     obj[2] = str;
     obj[3] = [];
     obj[4] = [];
-    if (GameProfileSimilarGamesMobileExperiment.getConfig({ location: "GameProfileScreenClose" }).enabled) {
-      let similarGames = closure_1_7.getSimilarGames(closure_0);
-      if (similarGames == null) {
-        similarGames = [];
-      }
-      let items = similarGames;
-    } else {
-      items = [];
+    let similarGames = closure_1_7.getSimilarGames(closure_0);
+    if (similarGames == null) {
+      similarGames = [];
     }
-    obj[5] = items;
+    obj[5] = similarGames;
     obj[6] = guildId;
     obj[7] = isVerified;
     const result = closure_1_0(closure_1_2[12]).trackGameProfileClose(obj);
@@ -323,7 +317,7 @@ export default function GameProfileScreen(gameId) {
       obj3[2] = callback;
       const obj4 = { obscured: null, children: null };
       obj4[0] = tmp13;
-      tmp5Result = tmp5(tmp3[25]);
+      tmp5Result = tmp5(tmp3[24]);
       const obj5 = { game: null, invite: null, viewId: null, source: null, trackAction: null, onGuildInviteResolved: null, closeModal: null, scrollY: null, websiteButtons: null, onStoreLinksMeasured: null, onHeaderHeightMeasured: null, scrollOffsetRef: null };
       obj5[0] = data;
       obj5[1] = first1;
@@ -339,9 +333,9 @@ export default function GameProfileScreen(gameId) {
       obj5[9] = callback5;
       obj5[10] = callback4;
       obj5[11] = ref1;
-      obj4[1] = first1(tmp5(tmp3[26]), obj5);
+      obj4[1] = first1(tmp5(tmp3[25]), obj5);
       obj3[3] = first1(tmp5Result, obj4);
-      let tmp45 = first1(tmp2(tmp3[24]).BottomSheetScrollView, obj3);
+      let tmp45 = first1(tmp2(tmp3[23]).BottomSheetScrollView, obj3);
     }
     const items12 = [tmp45, , ];
     const obj6 = { style: null, pointerEvents: "box-none", children: null };
@@ -350,11 +344,11 @@ export default function GameProfileScreen(gameId) {
     const obj7 = { game: null, headerRight: null };
     obj7[0] = data;
     obj7[1] = memo1;
-    obj6[2] = tmp46(tmp5(tmp3[27]), obj7);
+    obj6[2] = tmp46(tmp5(tmp3[26]), obj7);
     items12[1] = tmp46(tmp5(tmp3[15]).View, obj6);
     const obj8 = { variant: "overlay", onPress: null };
     obj8[1] = bottomSheetClose;
-    items12[2] = tmp46(tmp2(tmp3[28]).ActionSheetHeaderBar, obj8);
+    items12[2] = tmp46(tmp2(tmp3[27]).ActionSheetHeaderBar, obj8);
     obj2[5] = items12;
     return tmp43(tmp44, obj2);
   }

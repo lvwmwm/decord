@@ -1,14 +1,14 @@
-// Module ID: 10144
-// Function ID: 10145
+// Module ID: 9994
+// Function ID: 9995
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 5048, 676, 5049, 685, 21, 10129, 10143, 1236, 10130, 6835, 6832, 2]
+// Dependencies: [19, 4589, 676, 4590, 685, 21, 9981, 9993, 1236, 9982, 5368, 5363, 2]
 // Exports: default
 
-// Module 10144 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 9994 (NotificationSettingsMessageNotificationChannelActionSheet)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4589 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4590 */;
 import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 685 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -18,7 +18,7 @@ let result = require("set").fileFinishedImporting("modules/notifications/setting
 
 export default function NotificationSettingsMessageNotificationChannelActionSheet(channel) {
   const _require = channel;
-  let obj = _require(10129);
+  let obj = _require(9981);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   const unread = channelPresetSettings.unread;
   const notification = channelPresetSettings.notification;
@@ -44,5 +44,5 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     const NotificationLabel = channel(closure_1_2[11]).NotificationLabel;
     const result = unread(closure_1_2[10]).updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.notifications(message_notifications));
   };
-  return jsx(unread(10143), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
+  return jsx(unread(9993), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
 };

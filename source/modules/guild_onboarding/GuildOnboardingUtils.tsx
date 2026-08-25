@@ -1,24 +1,24 @@
-// Module ID: 5290
-// Function ID: 5291
+// Module ID: 5355
+// Function ID: 5356
 // Name: isChattableChannel
-// Dependencies: [1391, 5226, 1981, 1910, 4024, 5291, 676, 4012, 589, 1403, 5292, 5293, 4029, 1370, 643, 1903, 5294, 2]
+// Dependencies: [1391, 5106, 1982, 1910, 4025, 5349, 676, 4013, 589, 1403, 4896, 5350, 4030, 1370, 643, 1903, 5356, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 5290 (isChattableChannel)
+// Module 5355 (isChattableChannel)
 import shallowEqualDefault from "shallowEqual" /* 643 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import hasFlagAll from "hasFlag" /* 1403 */;
-import applyOverwritesAll from "applyOverwrites" /* 4029 */;
-import useCanChannelBeDefault from "useCanChannelBeDefault" /* 5293 */;
+import applyOverwritesAll from "applyOverwrites" /* 4030 */;
+import useCanChannelBeDefault from "useCanChannelBeDefault" /* 5350 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "set" /* 5226 */;
-import closure_6 from "comparator" /* 1981 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator" /* 1981 */;
+import closure_5 from "set" /* 5106 */;
+import closure_6 from "comparator" /* 1982 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator" /* 1982 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4024 */;
-import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5291 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4025 */;
+import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5349 */;
 import ME from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
 
 require = arg1;
 function isChattableChannel(guild_id) {

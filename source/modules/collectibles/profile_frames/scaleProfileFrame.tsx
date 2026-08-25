@@ -1,10 +1,10 @@
-// Module ID: 9004
-// Function ID: 9005
+// Module ID: 8967
+// Function ID: 8968
 // Name: scaleProfileFrame
 // Dependencies: [2]
 // Exports: default
 
-// Module 9004 (scaleProfileFrame)
+// Module 8967 (scaleProfileFrame)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("modules/collectibles/profile_frames/scaleProfileFrame.tsx");

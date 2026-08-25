@@ -1,18 +1,18 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 11671
+// Function ID: 11672
 // Name: handleDismissWithDismissed
-// Dependencies: [9603, 589, 709, 2]
+// Dependencies: [9699, 589, 709, 2]
 
-// Module 11315 (handleDismissWithDismissed)
+// Module 11671 (handleDismissWithDismissed)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9603 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9699 */;
 
 require = arg1;
 function handleDismissWithDismissed() {
   let DISMISSED = AppLauncherEntrypoint.AppLauncherCloseReason.DISMISSED;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(9603).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(9699).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherEntrypoint.AppLauncherEntrypoint.NONE;
@@ -23,7 +23,7 @@ function handleDismissWithDismissed() {
 function handleSetActiveCommand() {
   let DISMISSED = AppLauncherEntrypoint.AppLauncherCloseReason.COMMAND;
   if (DISMISSED === undefined) {
-    DISMISSED = tmp(9603).AppLauncherCloseReason.DISMISSED;
+    DISMISSED = tmp(9699).AppLauncherCloseReason.DISMISSED;
   }
   obj.show = false;
   obj.entrypoint = AppLauncherEntrypoint.AppLauncherEntrypoint.NONE;

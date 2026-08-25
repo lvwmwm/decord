@@ -1,16 +1,16 @@
-// Module ID: 6954
-// Function ID: 6955
+// Module ID: 5452
+// Function ID: 5453
 // Name: _install
-// Dependencies: [5, 32, 1995, 3, 4007, 6955, 6956, 6957, 6958, 1370, 12, 1906, 2]
+// Dependencies: [5, 32, 1996, 3, 4008, 5453, 5454, 5455, 5456, 1370, 12, 1906, 2]
 // Exports: install
 
-// Module 6954 (_install)
+// Module 5452 (_install)
 import timestampDefault from "timestamp" /* 3 */;
 import set from "set" /* 1906 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
-import importDefaultResult from "set" /* 4007 */;
+import closure_5 from "_getSystemLocale" /* 1996 */;
+import importDefaultResult from "set" /* 4008 */;
 import importDefaultResult1 from "apply" /* 12 */;
 
 require = arg1;

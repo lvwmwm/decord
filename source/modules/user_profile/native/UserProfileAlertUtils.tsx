@@ -1,18 +1,18 @@
-// Module ID: 11840
-// Function ID: 11841
+// Module ID: 12178
+// Function ID: 12179
 // Name: confirmCancelFriendRequest
-// Dependencies: [19, 21, 4663, 11841, 11842, 11843, 11844, 11845, 11846, 2]
+// Dependencies: [19, 21, 4746, 12179, 12180, 12181, 12182, 12183, 12184, 2]
 // Exports: alertUserReported, confirmCancelFriendRequest, confirmRemoveFriend, confirmRemoveGameFriend, confirmThreadRemove, confirmVideoUnstableConnection
 
-// Module 11840 (confirmCancelFriendRequest)
+// Module 12178 (confirmCancelFriendRequest)
 import noopAll from "noop" /* 19 */;
-import useAlertStore from "useAlertStore" /* 4663 */;
-import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 11841 */;
-import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 11842 */;
-import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 11843 */;
-import UserProfileConfirmVideoUnstableConnectionDefault from "UserProfileConfirmVideoUnstableConnection" /* 11844 */;
-import UserProfileAlertUserReportedDefault from "UserProfileAlertUserReported" /* 11845 */;
-import UserProfileConfirmThreadRemoveDefault from "UserProfileConfirmThreadRemove" /* 11846 */;
+import useAlertStore from "useAlertStore" /* 4746 */;
+import UserProfileConfirmCancelFriendRequestDefault from "UserProfileConfirmCancelFriendRequest" /* 12179 */;
+import UserProfileConfirmRemoveFriendDefault from "UserProfileConfirmRemoveFriend" /* 12180 */;
+import UserProfileConfirmRemoveGameFriendDefault from "UserProfileConfirmRemoveGameFriend" /* 12181 */;
+import UserProfileConfirmVideoUnstableConnectionDefault from "UserProfileConfirmVideoUnstableConnection" /* 12182 */;
+import UserProfileAlertUserReportedDefault from "UserProfileAlertUserReported" /* 12183 */;
+import UserProfileConfirmThreadRemoveDefault from "UserProfileConfirmThreadRemove" /* 12184 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

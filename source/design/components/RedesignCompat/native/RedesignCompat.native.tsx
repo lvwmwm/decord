@@ -1,10 +1,10 @@
-// Module ID: 6977
-// Function ID: 6978
+// Module ID: 5479
+// Function ID: 5480
 // Name: context
 // Dependencies: [19, 21, 2]
 // Exports: RedesignCompat
 
-// Module 6977 (context)
+// Module 5479 (context)
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

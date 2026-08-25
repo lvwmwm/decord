@@ -1,18 +1,18 @@
-// Module ID: 6578
-// Function ID: 6579
+// Module ID: 5926
+// Function ID: 5927
 // Name: PostponeRender
-// Dependencies: [32, 19, 17, 21, 4668, 712, 4766, 6579, 6580, 6582, 2]
+// Dependencies: [32, 19, 17, 21, 4380, 712, 4831, 5927, 5928, 5930, 2]
 // Exports: PostponeRender
 
-// Module 6578 (PostponeRender)
+// Module 5926 (PostponeRender)
 import ThemesDefault from "Themes" /* 712 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
-import _modDef6582 from "module_6582" /* 6582 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4831 */;
+import _modDef5930 from "module_5930" /* 5930 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ View: c5, StyleSheet } = get_ActivityIndicator);
@@ -48,12 +48,12 @@ export const PostponeRender = function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(first(6580).SceneLoadingIndicator, {});
+    children = jsx(first(5928).SceneLoadingIndicator, {});
   }
   if (ignoreKeyboard) {
     let tmp4Result = closure_5;
   } else {
-    tmp4Result = _modDef6582;
+    tmp4Result = _modDef5930;
   }
   const style = [callback2().view, viewStyle];
   return <tmp4Result style={style}>{children}</tmp4Result>;

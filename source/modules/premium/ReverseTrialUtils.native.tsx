@@ -1,10 +1,10 @@
-// Module ID: 8318
-// Function ID: 8319
+// Module ID: 8319
+// Function ID: 8320
 // Name: useIsInReverseTrial
 // Dependencies: [1922, 589, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 8318 (useIsInReverseTrial)
+// Module 8319 (useIsInReverseTrial)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 

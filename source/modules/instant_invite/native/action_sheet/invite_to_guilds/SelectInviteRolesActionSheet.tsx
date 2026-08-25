@@ -1,16 +1,16 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 17144
+// Function ID: 17145
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 17, 4669, 21, 4668, 589, 9682, 8670, 4346, 12, 8122, 1297, 4739, 5438, 1236, 6987, 7213, 8673, 2]
+// Dependencies: [32, 19, 17, 4372, 21, 4380, 589, 9778, 8678, 4347, 12, 8118, 1297, 4376, 4949, 1236, 5502, 5870, 8681, 2]
 // Exports: default
 
-// Module 17112 (SelectInviteRolesActionSheet)
+// Module 17144 (SelectInviteRolesActionSheet)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8, Fragment: c9 } = jsxProd);

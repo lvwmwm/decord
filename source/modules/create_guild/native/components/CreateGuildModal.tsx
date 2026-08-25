@@ -1,14 +1,14 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 12265
+// Function ID: 12266
 // Name: CreateGuildModal
-// Dependencies: [19, 17, 1981, 8654, 676, 21, 11692, 8962, 698, 6815, 11930, 503, 6345, 11932, 11934, 11549, 1236, 11935, 8531, 11942, 11943, 11954, 8559, 6343, 2]
+// Dependencies: [19, 17, 1982, 8662, 676, 21, 12034, 9219, 698, 5338, 12264, 503, 5376, 12266, 12268, 11900, 1236, 12269, 8539, 12271, 12272, 12283, 8567, 5889, 2]
 // Exports: default
 
-// Module 11931 (CreateGuildModal)
+// Module 12265 (CreateGuildModal)
 import closure_3 from "noop" /* 19 */;
 import { Keyboard } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "comparator" /* 1981 */;
-import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 8654 */;
+import closure_5 from "comparator" /* 1982 */;
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 8662 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -69,7 +69,7 @@ export default function CreateGuildModal(channel) {
       let obj2 = channel(onSuccess[12]);
       obj[4] = obj2.getHeaderCloseButton(initialState(onSuccess[10]).closeCreateGuildModal);
       obj[5] = function render() {
-        return callback3(callback2(11932), { trigger: constants.IN_APP });
+        return callback3(callback2(12266), { trigger: constants.IN_APP });
       };
       obj[closure_1_6.GUILD_TEMPLATES] = obj;
       obj = {
@@ -80,7 +80,7 @@ export default function CreateGuildModal(channel) {
           return null;
         },
         render(guildTemplate) {
-          return callback3(callback2(11934), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.IN_APP });
+          return callback3(callback2(12268), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.IN_APP });
         }
       };
       obj[closure_1_6.CREATION_INTENT] = obj;
@@ -116,7 +116,7 @@ export default function CreateGuildModal(channel) {
           };
           const intl = callback(1236).intl;
           obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-          return callback3(callback2(11549), obj);
+          return callback3(callback2(11900), obj);
         }
       };
       obj2 = {
@@ -176,7 +176,7 @@ export default function CreateGuildModal(channel) {
           };
           const intl = callback(1236).intl;
           obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-          return callback3(callback2(11549), obj);
+          return callback3(callback2(11900), obj);
         }
       };
       let tmp2 = channel;
@@ -189,7 +189,7 @@ export default function CreateGuildModal(channel) {
           obj = { title: null };
           const intl = callback(1236).intl;
           obj[0] = intl.string(callback(1236).t.jlfuFW);
-          return callback3(callback(8531).GenericHeaderTitle, obj);
+          return callback3(callback(8539).GenericHeaderTitle, obj);
         }) : (() => null),
         render(arg0) {
           obj = { initialRoute: closure_0 };
@@ -206,7 +206,7 @@ export default function CreateGuildModal(channel) {
           obj = { title: null };
           const intl = callback(1236).intl;
           obj[0] = intl.string(callback(1236).t.jlfuFW);
-          return callback3(callback(8531).GenericHeaderTitle, obj);
+          return callback3(callback(8539).GenericHeaderTitle, obj);
         }) : (() => null),
         render(arg0) {
           obj = { initialRoute: closure_0 };
@@ -226,11 +226,11 @@ export default function CreateGuildModal(channel) {
           return null;
         },
         render(code) {
-          obj = { code: code.code, onPressClose: callback2(11930).closeCreateGuildModal };
-          return callback3(callback2(11943), obj);
+          obj = { code: code.code, onPressClose: callback2(12264).closeCreateGuildModal };
+          return callback3(callback2(12272), obj);
         }
       };
-      const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: "other" };
+      const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: true };
       obj5[1] = closure_1_11;
       obj5[4] = function headerTitle() {
         return null;
@@ -239,7 +239,7 @@ export default function CreateGuildModal(channel) {
         return null;
       };
       obj5[6] = function render() {
-        return callback3(callback2(11954), { isNestedNavigator: true });
+        return callback3(callback2(12283), { isNestedNavigator: true });
       };
       obj[closure_1_6.JOIN_STUDENT_HUB] = obj5;
       return obj;
@@ -270,7 +270,7 @@ export default function CreateGuildModal(channel) {
       let obj2 = channel(onSuccess[12]);
       obj[4] = obj2.getHeaderCloseButton(initialState(onSuccess[10]).closeCreateGuildModal);
       obj[5] = function render() {
-        return callback3(callback2(11932), { trigger: constants.IN_APP });
+        return callback3(callback2(12266), { trigger: constants.IN_APP });
       };
       obj[closure_1_6.GUILD_TEMPLATES] = obj;
       obj = {
@@ -281,7 +281,7 @@ export default function CreateGuildModal(channel) {
           return null;
         },
         render(guildTemplate) {
-          return callback3(callback2(11934), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.IN_APP });
+          return callback3(callback2(12268), { guildTemplate: guildTemplate.guildTemplate, trigger: constants.IN_APP });
         }
       };
       obj[closure_1_6.CREATION_INTENT] = obj;
@@ -317,7 +317,7 @@ export default function CreateGuildModal(channel) {
           };
           const intl = callback(1236).intl;
           obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-          return callback3(callback2(11549), obj);
+          return callback3(callback2(11900), obj);
         }
       };
       obj2 = {
@@ -377,7 +377,7 @@ export default function CreateGuildModal(channel) {
           };
           const intl = callback(1236).intl;
           obj.customTitle = intl.string(callback(1236).t["5HZu07"]);
-          return callback3(callback2(11549), obj);
+          return callback3(callback2(11900), obj);
         }
       };
       let tmp2 = channel;
@@ -390,7 +390,7 @@ export default function CreateGuildModal(channel) {
           obj = { title: null };
           const intl = callback(1236).intl;
           obj[0] = intl.string(callback(1236).t.jlfuFW);
-          return callback3(callback(8531).GenericHeaderTitle, obj);
+          return callback3(callback(8539).GenericHeaderTitle, obj);
         }) : (() => null),
         render(arg0) {
           obj = { initialRoute: closure_0 };
@@ -407,7 +407,7 @@ export default function CreateGuildModal(channel) {
           obj = { title: null };
           const intl = callback(1236).intl;
           obj[0] = intl.string(callback(1236).t.jlfuFW);
-          return callback3(callback(8531).GenericHeaderTitle, obj);
+          return callback3(callback(8539).GenericHeaderTitle, obj);
         }) : (() => null),
         render(arg0) {
           obj = { initialRoute: closure_0 };
@@ -427,11 +427,11 @@ export default function CreateGuildModal(channel) {
           return null;
         },
         render(code) {
-          obj = { code: code.code, onPressClose: callback2(11930).closeCreateGuildModal };
-          return callback3(callback2(11943), obj);
+          obj = { code: code.code, onPressClose: callback2(12264).closeCreateGuildModal };
+          return callback3(callback2(12272), obj);
         }
       };
-      const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: "other" };
+      const obj5 = { impressionName: "Array", impressionProperties: true, fullscreen: true, ignoreKeyboard: null, headerTitle: null, headerLeft: null, render: true };
       obj5[1] = closure_1_11;
       obj5[4] = function headerTitle() {
         return null;
@@ -440,7 +440,7 @@ export default function CreateGuildModal(channel) {
         return null;
       };
       obj5[6] = function render() {
-        return callback3(callback2(11954), { isNestedNavigator: true });
+        return callback3(callback2(12283), { isNestedNavigator: true });
       };
       obj[closure_1_6.JOIN_STUDENT_HUB] = obj5;
       return obj;

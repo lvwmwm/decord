@@ -1,16 +1,16 @@
-// Module ID: 8069
-// Function ID: 8070
+// Module ID: 7891
+// Function ID: 7892
 // Name: BuyNitroMarketingHeader
-// Dependencies: [19, 17, 7441, 21, 712, 4668, 4119, 4673, 4671, 4314, 8070, 500, 8071, 8067, 691, 5454, 7443, 7653, 4761, 1236, 8073, 4739, 8074, 8076, 2]
+// Dependencies: [19, 17, 7039, 21, 712, 4380, 4120, 4383, 4381, 4315, 7892, 500, 7893, 7889, 691, 5374, 7041, 7474, 4826, 1236, 7895, 4376, 7896, 7898, 2]
 // Exports: default
 
-// Module 8069 (BuyNitroMarketingHeader)
+// Module 7891 (BuyNitroMarketingHeader)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { Gradients } from "items" /* 7441 */;
+import { Gradients } from "items" /* 7039 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ Platform, StyleSheet: c4, View: c5 } = get_ActivityIndicator);
@@ -60,8 +60,8 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   obj[1] = obj;
   const tmp3 = -ThemesDefault.space.PX_16;
   const tmp5 = absoluteFillObject;
-  obj[2] = { position: "absolute", top: -ThemesDefault.space.PX_16, right: "call", left: "right", alignSelf: 1056813503384888500000000000000000000000000000000000000000000000000000000000000000000000 };
-  obj1 = { position: "absolute", top: -ThemesDefault.space.PX_16, right: "call", left: "right", alignSelf: 1056813503384888500000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj[2] = { position: "absolute", top: -ThemesDefault.space.PX_16, right: "call", left: "max", alignSelf: 16125694357471467000000000000000000000000000000000000000000000000000000000000000000 };
+  obj1 = { position: "absolute", top: -ThemesDefault.space.PX_16, right: "call", left: "max", alignSelf: 16125694357471467000000000000000000000000000000000000000000000000000000000000000000 };
   obj[3] = { position: "absolute", top: arg0 + ThemesDefault.space.PX_20, right: ThemesDefault.space.PX_4 };
   const obj2 = { position: "absolute", top: arg0 + ThemesDefault.space.PX_20, right: ThemesDefault.space.PX_4 };
   obj[4] = { height: ThemesDefault.space.PX_80 + ThemesDefault.space.PX_4 };

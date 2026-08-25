@@ -1,15 +1,15 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 12850
+// Function ID: 12851
 // Name: Breadcrumbs
-// Dependencies: [19, 17, 21, 4668, 712, 12, 4739, 8178, 1236, 2436, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 12, 4376, 8174, 1236, 2437, 2]
 // Exports: default
 
-// Module 12863 (Breadcrumbs)
+// Module 12850 (Breadcrumbs)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -58,10 +58,10 @@ export default function Breadcrumbs(element) {
       } else {
         obj = { style: null, children: null };
         obj[0] = tmp2.container;
-        let map = _require(4739).Text;
+        let map = _require(4376).Text;
         obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
         obj[0] = tmp2.title;
-        const REPORT_TO_MOD = _require(8178).ReportMenuTypeSets.REPORT_TO_MOD;
+        const REPORT_TO_MOD = _require(8174).ReportMenuTypeSets.REPORT_TO_MOD;
         const hasItem = REPORT_TO_MOD.has(element.menuName);
         const intl = _require(1236).intl;
         const string = intl.string;

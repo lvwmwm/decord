@@ -1,11 +1,11 @@
-// Module ID: 4847
-// Function ID: 4848
+// Module ID: 4966
+// Function ID: 4967
 // Name: get
-// Dependencies: [4007, 2]
+// Dependencies: [4008, 2]
 
-// Module 4847 (get)
+// Module 4966 (get)
 import set from "set" /* 2 */;
-import setDefault from "set" /* 4007 */;
+import setDefault from "set" /* 4008 */;
 
 let prototype;
 prototype = function ProcessArgs() {

@@ -1,14 +1,14 @@
-// Module ID: 9470
-// Function ID: 9471
+// Module ID: 8912
+// Function ID: 8913
 // Name: ObjectIcon
-// Dependencies: [19, 21, 712, 4099, 9471, 2]
+// Dependencies: [19, 21, 712, 4100, 8913, 2]
 // Exports: ObjectIcon
 
-// Module 9470 (ObjectIcon)
+// Module 8912 (ObjectIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 9471 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 8913 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

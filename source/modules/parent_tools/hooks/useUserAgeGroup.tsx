@@ -1,12 +1,12 @@
-// Module ID: 14295
-// Function ID: 14296
+// Module ID: 14325
+// Function ID: 14326
 // Name: useUserAgeGroup
-// Dependencies: [5301, 589, 2]
+// Dependencies: [7143, 589, 2]
 // Exports: default
 
-// Module 14295 (useUserAgeGroup)
+// Module 14325 (useUserAgeGroup)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "freshTeenActivityWithMap" /* 5301 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7143 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useUserAgeGroup.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 16887
-// Function ID: 16888
+// Module ID: 16919
+// Function ID: 16920
 // Name: BoostedGuildTiers
-// Dependencies: [19, 17, 1910, 4024, 1922, 676, 4072, 21, 1236, 16888, 8018, 13011, 4668, 712, 1629, 589, 8876, 16890, 6580, 4270, 4739, 4273, 4750, 16891, 8122, 4738, 6317, 6322, 6928, 10158, 1297, 4223, 6328, 16897, 2]
+// Dependencies: [19, 17, 1910, 4025, 1922, 676, 4073, 21, 1236, 16920, 7840, 12999, 4380, 712, 1629, 589, 9133, 16922, 5928, 4271, 4376, 4274, 4815, 16923, 8118, 4813, 5873, 5480, 4925, 10008, 1297, 4224, 5487, 16929, 2]
 
-// Module 16887 (BoostedGuildTiers)
+// Module 16919 (BoostedGuildTiers)
 import ThemesDefault from "Themes" /* 712 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { MAX_STICKER_FILE_SIZE } from "STICKER_PICKER_TAB_PANEL_ID" /* 4072 */;
+import { MAX_STICKER_FILE_SIZE } from "STICKER_PICKER_TAB_PANEL_ID" /* 4073 */;
 import jsxProd from "jsxProd" /* 21 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4 } from "getSystemLocale" /* 1236 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -21,7 +21,7 @@ const require = arg1;
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: closure_8, BoostedGuildTiers } = ME);
 const GuildFeatures = ME.GuildFeatures;
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let obj = { tier: BoostedGuildTiers.NONE, title: null, IconComponent: "Array" };
+let obj = { tier: BoostedGuildTiers.NONE, title: null, IconComponent: "r" };
 obj[1] = intl.string(require("getSystemLocale").t.tfVXhP);
 let items = [obj, , , ];
 obj = { tier: BoostedGuildTiers.TIER_1, title: null, IconComponent: null };

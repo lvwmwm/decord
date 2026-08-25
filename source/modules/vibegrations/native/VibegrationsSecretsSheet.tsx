@@ -1,18 +1,18 @@
-// Module ID: 15929
-// Function ID: 15930
+// Module ID: 15961
+// Function ID: 15962
 // Name: VibegrationsSecretsSheet
-// Dependencies: [5, 32, 19, 17, 15914, 21, 4668, 712, 5446, 7205, 1236, 3404, 4346, 7213, 6987, 4739, 4750, 8110, 2]
+// Dependencies: [5, 32, 19, 17, 15946, 21, 4380, 712, 5475, 5862, 1236, 3405, 4347, 5870, 5502, 4376, 4815, 7935, 2]
 // Exports: default
 
-// Module 15929 (VibegrationsSecretsSheet)
+// Module 15961 (VibegrationsSecretsSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import rejectPendingPublish from "rejectPendingPublish" /* 15914 */;
+import rejectPendingPublish from "rejectPendingPublish" /* 15946 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ sendUserMessage: error, submitProjectSecrets: closure_8 } = rejectPendingPublish);
@@ -95,7 +95,7 @@ export default function VibegrationsSecretsSheet(projectId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

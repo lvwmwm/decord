@@ -1,9 +1,9 @@
-// Module ID: 6126
-// Function ID: 6127
+// Module ID: 6814
+// Function ID: 6815
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6126 (metadata)
+// Module 6814 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyBookletEmailSpotIllustration-2x.png.js");

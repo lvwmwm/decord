@@ -1,23 +1,23 @@
-// Module ID: 15009
-// Function ID: 15010
+// Module ID: 15039
+// Function ID: 15040
 // Name: HapticButton
-// Dependencies: [19, 17, 21, 4668, 4750, 4347, 4348, 4738, 6323, 4739, 4349, 2]
+// Dependencies: [19, 17, 21, 4380, 4815, 4348, 4349, 4813, 5482, 4376, 4350, 2]
 // Exports: default
 
-// Module 15009 (HapticButton)
+// Module 15039 (HapticButton)
 import noopAll from "noop" /* 19 */;
-import IMPACT_LIGHTDefault from "IMPACT_LIGHT" /* 4348 */;
-import Stack from "Stack" /* 4738 */;
-import Text from "Text" /* 4739 */;
-import PressableCard from "PressableCard" /* 6323 */;
+import IMPACT_LIGHTDefault from "IMPACT_LIGHT" /* 4349 */;
+import Text from "Text" /* 4376 */;
+import Stack from "Stack" /* 4813 */;
+import PressableCard from "PressableCard" /* 5482 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function HapticButton(text) {
   const type = text.type;
-  return callback(type(4750).Button, {
+  return callback(type(4815).Button, {
     variant: "secondary",
     onPress() {
       return type(closure_1_1[5]).triggerHapticFeedback(type);

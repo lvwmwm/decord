@@ -1,10 +1,10 @@
-// Module ID: 16305
-// Function ID: 16306
+// Module ID: 16337
+// Function ID: 16338
 // Name: useTextChannelPressEvents
-// Dependencies: [19, 1391, 4775, 4773, 10200, 15440, 9958, 2]
+// Dependencies: [19, 1391, 4393, 4391, 10051, 15471, 9816, 2]
 // Exports: useTextChannelPressEvents
 
-// Module 16305 (useTextChannelPressEvents)
+// Module 16337 (useTextChannelPressEvents)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 

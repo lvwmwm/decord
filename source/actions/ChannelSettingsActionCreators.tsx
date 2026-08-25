@@ -1,15 +1,15 @@
-// Module ID: 8171
-// Function ID: 8172
+// Module ID: 8167
+// Function ID: 8168
 // Name: init
-// Dependencies: [5, 8172, 1391, 676, 709, 4234, 7550, 530, 7324, 2]
+// Dependencies: [5, 8168, 1391, 676, 709, 4235, 7368, 530, 6047, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8171 (init)
+// Module 8167 (init)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4234 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4235 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "normalizeChannelPropertyForCompare" /* 8172 */;
+import closure_4 from "normalizeChannelPropertyForCompare" /* 8168 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;
 
@@ -87,7 +87,7 @@ function _saveChannel() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -303,7 +303,7 @@ function _deleteChannel() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -360,7 +360,7 @@ function _deleteChannel() {
             }
             callback2();
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp22) {
           c4 = tmp;

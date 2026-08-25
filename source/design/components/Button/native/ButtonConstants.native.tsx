@@ -1,13 +1,13 @@
-// Module ID: 4754
-// Function ID: 4755
+// Module ID: 4819
+// Function ID: 4820
 // Name: MINIMUM_HIT_AREA
-// Dependencies: [4752, 712, 2]
+// Dependencies: [4817, 712, 2]
 // Exports: getButtonBorderRadius, getButtonDefaultTextVariant, getButtonPadding
 
-// Module 4754 (MINIMUM_HIT_AREA)
+// Module 4819 (MINIMUM_HIT_AREA)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import IconSizes from "IconSizes" /* 4752 */;
+import IconSizes from "IconSizes" /* 4817 */;
 
 const SMALL = IconSizes.IconSizes.SMALL;
 const SMALL_20 = IconSizes.IconSizes.SMALL_20;

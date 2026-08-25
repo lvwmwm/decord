@@ -1,10 +1,10 @@
-// Module ID: 7298
-// Function ID: 7299
+// Module ID: 6037
+// Function ID: 6038
 // Name: hasFlag
 // Dependencies: [676, 1403, 2]
 // Exports: default
 
-// Module 7298 (hasFlag)
+// Module 6037 (hasFlag)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import hasFlag from "hasFlag" /* 1403 */;

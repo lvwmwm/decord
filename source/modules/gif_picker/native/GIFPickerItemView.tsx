@@ -1,16 +1,16 @@
-// Module ID: 10248
-// Function ID: 10249
+// Module ID: 10099
+// Function ID: 10100
 // Name: GIFPickerItemView
-// Dependencies: [19, 17, 21, 4668, 10237, 712, 1892, 4346, 10249, 2008, 1236, 5438, 5454, 2]
+// Dependencies: [19, 17, 21, 4380, 10088, 712, 1892, 4347, 10100, 2009, 1236, 4949, 5374, 2]
 // Exports: default
 
-// Module 10248 (GIFPickerItemView)
+// Module 10099 (GIFPickerItemView)
 import ThemesDefault from "Themes" /* 712 */;
-import transformFavoriteGifUrl from "transformFavoriteGifUrl" /* 10237 */;
+import transformFavoriteGifUrl from "transformFavoriteGifUrl" /* 10088 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 let c3 = importAllResult;

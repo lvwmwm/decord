@@ -1,21 +1,21 @@
-// Module ID: 10283
-// Function ID: 10284
-// Dependencies: [32, 19, 17, 6806, 10259, 10226, 21, 4668, 712, 1297, 10284, 4739, 1236, 4969, 9425, 9379, 589, 10285, 10270, 12, 8680, 10286, 8673, 5449, 2]
+// Module ID: 10134
+// Function ID: 10135
+// Dependencies: [32, 19, 17, 5325, 10110, 10077, 21, 4380, 712, 1297, 10135, 4376, 1236, 5093, 8868, 8822, 589, 10136, 10121, 12, 8688, 10137, 8681, 5478, 2]
 
-// Module 10283
+// Module 10134
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4739 */;
-import registerAssetDefault from "registerAsset" /* 10284 */;
+import Text from "Text" /* 4376 */;
+import registerAssetDefault from "registerAsset" /* 10135 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "loadSavedGuildStickers" /* 6806 */;
-import { useStickerPickerStore } from "useStickerPickerStore" /* 10259 */;
-import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10226 */;
+import closure_6 from "loadSavedGuildStickers" /* 5325 */;
+import { useStickerPickerStore } from "useStickerPickerStore" /* 10110 */;
+import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10077 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 let c4 = importAllResult;

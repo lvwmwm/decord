@@ -1,21 +1,21 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 12859
+// Function ID: 12860
 // Name: SettingsUpsellsTableRow
-// Dependencies: [32, 19, 17, 1391, 676, 21, 4668, 712, 4766, 8179, 12866, 7393, 589, 8187, 6317, 1236, 4739, 7398, 5047, 2]
+// Dependencies: [32, 19, 17, 1391, 676, 21, 4380, 712, 4831, 8175, 12853, 6120, 589, 8183, 5873, 1236, 4376, 6125, 4588, 2]
 // Exports: default
 
-// Module 12872 (SettingsUpsellsTableRow)
+// Module 12859 (SettingsUpsellsTableRow)
 import ThemesDefault from "Themes" /* 712 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4766 */;
-import SettingsIcon from "SettingsIcon" /* 7393 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12866 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4831 */;
+import SettingsIcon from "SettingsIcon" /* 6120 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12853 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function SettingsUpsellsTableRow(arg0) {
@@ -25,7 +25,7 @@ function SettingsUpsellsTableRow(arg0) {
   const tmp = callback(React.useState(false), 2);
   dependencyMap = tmp[1];
   useMountLayoutEffectDefault(() => {
-    callback2(closure_1_0(8179).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
+    callback2(closure_1_0(8175).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
   });
   const obj = {
     title,
@@ -35,7 +35,7 @@ function SettingsUpsellsTableRow(arg0) {
     onPress() {
       callback();
       dependencyMap(true);
-      callback2(closure_1_0(8179).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
+      callback2(closure_1_0(8175).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
     },
     icon: callback2(SettingsIcon.SettingsIcon, {})
   };

@@ -1,20 +1,20 @@
-// Module ID: 8698
-// Function ID: 8699
+// Module ID: 8706
+// Function ID: 8707
 // Name: ParagraphField
-// Dependencies: [19, 17, 6898, 505, 21, 4668, 6819, 712, 4739, 8131, 1236, 2]
+// Dependencies: [19, 17, 4894, 505, 21, 4380, 5342, 712, 4376, 8127, 1236, 2]
 // Exports: default
 
-// Module 8698 (ParagraphField)
+// Module 8706 (ParagraphField)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import TextArea from "TextArea" /* 8131 */;
+import Text from "Text" /* 4376 */;
+import TextArea from "TextArea" /* 8127 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MAX_PARAGRAPH_RESPONSE_LENGTH as closure_3 } from "items" /* 6898 */;
+import { MAX_PARAGRAPH_RESPONSE_LENGTH as closure_3 } from "items" /* 4894 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import importDefaultResult from "createTextStyle" /* 6819 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "createTextStyle" /* 5342 */;
 
 require = arg1;
 noopAll;

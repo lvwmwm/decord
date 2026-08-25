@@ -1,9 +1,9 @@
-// Module ID: 13129
-// Function ID: 13130
+// Module ID: 13385
+// Function ID: 13386
 // Name: GUILD_LIMITED_ACCESS_HC_LINK
 // Dependencies: [2]
 
-// Module 13129 (GUILD_LIMITED_ACCESS_HC_LINK)
+// Module 13385 (GUILD_LIMITED_ACCESS_HC_LINK)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_limited_access/GuildLimitedAccessConstants.tsx");

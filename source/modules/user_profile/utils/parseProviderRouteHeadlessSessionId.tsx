@@ -1,11 +1,11 @@
-// Module ID: 12164
-// Function ID: 12165
+// Module ID: 12497
+// Function ID: 12498
 // Name: parseProviderRouteHeadlessSessionId
-// Dependencies: [32, 5102, 2]
+// Dependencies: [32, 5108, 2]
 // Exports: default
 
-// Module 12164 (parseProviderRouteHeadlessSessionId)
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5102 */;
+// Module 12497 (parseProviderRouteHeadlessSessionId)
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5108 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 let c3 = "h:";

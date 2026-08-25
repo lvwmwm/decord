@@ -1,26 +1,26 @@
-// Module ID: 15645
-// Function ID: 15646
+// Module ID: 15677
+// Function ID: 15678
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 4026, 1395, 1391, 1981, 5388, 1910, 4777, 4033, 5048, 1922, 676, 5049, 21, 4668, 589, 4239, 4236, 12781, 10040, 4739, 15646, 15647, 4989, 11, 15648, 15649, 11200, 15650, 15651, 15652, 15654, 15655, 15634, 2]
+// Dependencies: [19, 17, 4027, 1395, 1391, 1982, 7242, 1910, 4395, 4034, 4589, 1922, 676, 4590, 21, 4380, 589, 4240, 4237, 12770, 9887, 4376, 15678, 15679, 4574, 11, 15680, 15681, 11547, 15682, 15683, 15684, 15686, 15687, 15666, 2]
 // Exports: default
 
-// Module 15645 (GuildRowWrapper)
+// Module 15677 (GuildRowWrapper)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "storeThread" /* 4026 */;
+import closure_5 from "storeThread" /* 4027 */;
 import { isThread } from "createChannelRecord" /* 1395 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "comparator" /* 1981 */;
-import closure_9 from "updateGuildUnreadSentinel" /* 5388 */;
+import closure_8 from "comparator" /* 1982 */;
+import closure_9 from "updateGuildUnreadSentinel" /* 7242 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
-import closure_11 from "generateOldThreadCutoff" /* 4777 */;
-import closure_12 from "markAllUserIdListsStale" /* 4033 */;
-import closure_13 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_11 from "generateOldThreadCutoff" /* 4395 */;
+import closure_12 from "markAllUserIdListsStale" /* 4034 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 4589 */;
 import closure_14 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4590 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function GuildRowWrapper(guild) {
@@ -345,7 +345,7 @@ export default function HomeDrawerGuildRow(guildId) {
   obj = guildId(589);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4239).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(4240).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

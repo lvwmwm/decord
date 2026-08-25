@@ -1,14 +1,14 @@
-// Module ID: 5635
-// Function ID: 5636
+// Module ID: 6321
+// Function ID: 6322
 // Name: DevIdentityTallAbstractUI
-// Dependencies: [21, 5454, 5636, 2]
+// Dependencies: [21, 5374, 6322, 2]
 // Exports: DevIdentityTallAbstractUI
 
-// Module 5635 (DevIdentityTallAbstractUI)
+// Module 6321 (DevIdentityTallAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5636 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6322 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DevIdentityTallAbstractUI.native.tsx");

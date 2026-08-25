@@ -1,17 +1,17 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16213
+// Function ID: 16214
 // Name: ContextMenuCommandNavigator
-// Dependencies: [19, 17, 21, 9970, 4668, 712, 5071, 6343, 1629, 8531, 1236, 16182, 16184, 2]
+// Dependencies: [19, 17, 21, 8717, 4380, 712, 7081, 5889, 1629, 8539, 1236, 16214, 16216, 2]
 // Exports: default
 
-// Module 16181 (ContextMenuCommandNavigator)
+// Module 16213 (ContextMenuCommandNavigator)
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 9970 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 8717 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -25,8 +25,8 @@ const result = require("set").fileFinishedImporting("modules/application_command
 export default function ContextMenuCommandNavigator() {
   const tmp = callback3();
   const _require = tmp;
-  const layoutEffect = React.useLayoutEffect(() => lib(5071).trackAppUIViewed(), []);
-  let obj = _require(6343);
+  const layoutEffect = React.useLayoutEffect(() => lib(7081).trackAppUIViewed(), []);
+  let obj = _require(5889);
   importDefault = obj.useAccessibilityNativeStackOptions();
   const rect = useSafeAreaInsetsDefault();
   obj = { style: items, children: null };
@@ -65,7 +65,7 @@ export default function ContextMenuCommandNavigator() {
   obj2[0] = intl.string(_require(1236).t.PHjkRE);
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return lib(16182).default;
+    return lib(16214).default;
   };
   const items1 = [
     callback(Screen, obj1),
@@ -80,7 +80,7 @@ export default function ContextMenuCommandNavigator() {
         return { title };
       },
       getComponent() {
-        return lib(16184).default;
+        return lib(16216).default;
       }
     })
   ];

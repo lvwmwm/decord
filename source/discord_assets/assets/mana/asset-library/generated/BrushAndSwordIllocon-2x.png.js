@@ -1,9 +1,9 @@
-// Module ID: 5564
-// Function ID: 5565
+// Module ID: 6248
+// Function ID: 6249
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5564 (metadata)
+// Module 6248 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BrushAndSwordIllocon-2x.png.js");

@@ -1,10 +1,10 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9490
+// Function ID: 9491
 // Name: _navigateToGameAnnouncement
-// Dependencies: [5, 1910, 676, 38, 7339, 8081, 1222, 2]
+// Dependencies: [5, 1910, 676, 38, 6065, 7903, 1222, 2]
 // Exports: default
 
-// Module 9207 (_navigateToGameAnnouncement)
+// Module 9490 (_navigateToGameAnnouncement)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
@@ -28,7 +28,7 @@ function _navigateToGameAnnouncement() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -95,7 +95,7 @@ function _navigateToGameAnnouncement() {
                     if (null != set) {
                       if (!set.has(constants.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj5 = id(8081);
+                          let obj5 = id(7903);
                           const obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           let obj3 = { location: null };
@@ -109,7 +109,7 @@ function _navigateToGameAnnouncement() {
                         }
                       }
                     }
-                    let obj9 = lib(7339);
+                    let obj9 = lib(6065);
                     obj5 = { shouldNavigate: true, channelId: null, messageId: null, joinSource: null };
                     obj5[1] = dependencyMap;
                     obj5[2] = c3;
@@ -122,7 +122,7 @@ function _navigateToGameAnnouncement() {
                   }
                 }
                 guild = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else if (2 === tmp5) {
               if (arg0 === 1) {

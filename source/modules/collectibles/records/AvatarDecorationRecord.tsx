@@ -1,12 +1,12 @@
-// Module ID: 5311
-// Function ID: 5312
+// Module ID: 7153
+// Function ID: 7154
 // Name: fromServer
-// Dependencies: [1948, 1949, 2]
+// Dependencies: [1949, 1950, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 5311 (fromServer)
-import fromServerDefault from "fromServer" /* 1948 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+// Module 7153 (fromServer)
+import fromServerDefault from "fromServer" /* 1949 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 
 require = arg1;
 fromServerDefault;

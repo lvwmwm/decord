@@ -1,10 +1,10 @@
-// Module ID: 8830
-// Function ID: 8831
+// Module ID: 9097
+// Function ID: 9098
 // Name: CREATE_GUILD_EVENT_MODAL_KEY
 // Dependencies: [2]
 // Exports: isGuildEventValid
 
-// Module 8830 (CREATE_GUILD_EVENT_MODAL_KEY)
+// Module 9097 (CREATE_GUILD_EVENT_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/native/GuildEventModalConstants.tsx");

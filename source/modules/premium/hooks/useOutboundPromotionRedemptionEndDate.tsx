@@ -1,13 +1,13 @@
-// Module ID: 13043
-// Function ID: 13044
+// Module ID: 13031
+// Function ID: 13032
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 3978, 4066, 2]
+// Dependencies: [19, 3979, 4067, 2]
 // Exports: default
 
-// Module 13043 (useOutboundPromotionRedemptionEndDate)
+// Module 13031 (useOutboundPromotionRedemptionEndDate)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "module_30" /* 30 */;
-import importDefaultResult from "t" /* 3978 */;
+import importDefaultResult from "hooks" /* 3979 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/hooks/useOutboundPromotionRedemptionEndDate.tsx");

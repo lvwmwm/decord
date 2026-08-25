@@ -1,17 +1,17 @@
-// Module ID: 9214
-// Function ID: 9215
+// Module ID: 9497
+// Function ID: 9498
 // Name: trackImpression
-// Dependencies: [19, 1391, 1980, 4201, 699, 503, 698, 709, 5047, 659, 5266, 4766, 2]
+// Dependencies: [19, 1391, 1981, 4202, 699, 503, 698, 709, 4588, 659, 4612, 4831, 2]
 // Exports: default
 
-// Module 9214 (trackImpression)
+// Module 9497 (trackImpression)
 import encodeProperties2 from "encodeProperties" /* 503 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4588 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
-import closure_6 from "handleConnectionOpen" /* 4201 */;
+import closure_5 from "handleConnectionOpen" /* 1981 */;
+import closure_6 from "handleConnectionOpen" /* 4202 */;
 import withEqualityFn from "withEqualityFn" /* 699 */;
 import encodeProperties from "encodeProperties" /* 503 */;
 
@@ -50,7 +50,7 @@ function trackImpression(type, arg1, arg2) {
   }
   let tmpResult = tmp(698);
   obj = { impression_type: type, location: callback3() };
-  tmpResult = tmp(5047);
+  tmpResult = tmp(4588);
   const merged = Object.assign(tmpResult.collectGuildAnalyticsMetadata(guild_id));
   const merged1 = Object.assign(collectGuildAnalyticsMetadata.collectChannelAnalyticsMetadata(channel.getChannel(channel_id)));
   const merged2 = Object.assign(properties);
@@ -83,7 +83,7 @@ export default function useTrackImpression(arg0) {
   closure_4 = undefined;
   React = React.useRef(undefined);
   closure_4 = React.useRef(undefined);
-  obj(4766)(() => {
+  obj(4831)(() => {
     if (obj.trackOnInitialLoad) {
       const tmp6 = obj(659)(ref.current, obj);
       if (!tmp6) {
@@ -96,7 +96,7 @@ export default function useTrackImpression(arg0) {
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(5266)("impression_");
+        obj.sequenceId = tmp2(4612)("impression_");
         closure_1_13(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {
@@ -120,7 +120,7 @@ export default function useTrackImpression(arg0) {
       if (!tmp6) {
         obj = {};
         const merged = Object.assign(tmp5);
-        obj.sequenceId = tmp2(5266)("impression_");
+        obj.sequenceId = tmp2(4612)("impression_");
         closure_1_13(obj, tmp.disableTrack);
         const fn = () => {
           if (null != obj) {

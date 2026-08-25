@@ -1,13 +1,13 @@
-// Module ID: 12020
-// Function ID: 12021
+// Module ID: 12345
+// Function ID: 12346
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1922, 589, 9286, 10396, 2]
+// Dependencies: [1922, 589, 9565, 10247, 2]
 // Exports: default
 
-// Module 12020 (useMobileCollectiblesPurchaseSKU)
+// Module 12345 (useMobileCollectiblesPurchaseSKU)
 import initialize from "initialize" /* 589 */;
-import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 9286 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10396 */;
+import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 9565 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10247 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

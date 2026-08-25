@@ -1,12 +1,12 @@
-// Module ID: 9954
-// Function ID: 9955
+// Module ID: 9812
+// Function ID: 9813
 // Name: GroupDMRow
-// Dependencies: [19, 9118, 21, 4989, 9955, 1297, 9956, 4739, 8597, 6322, 2]
+// Dependencies: [19, 9770, 21, 4574, 9813, 1297, 9814, 4376, 8605, 5480, 2]
 // Exports: default
 
-// Module 9954 (GroupDMRow)
+// Module 9812 (GroupDMRow)
 import closure_3 from "noop" /* 19 */;
-import { UserRowModes } from "UserRowModes" /* 9118 */;
+import { UserRowModes } from "UserRowModes" /* 9770 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -28,7 +28,7 @@ export default function GroupDMRow(channel) {
   }
   const onPress = channel.onPress;
   const merged = Object.assign(channel, Object.create(null));
-  let str = onPress(4989)(channel);
+  let str = onPress(4574)(channel);
   const items = [channel, onPress];
   const callback = React.useCallback(() => {
     if (onPress != null) {
@@ -36,8 +36,8 @@ export default function GroupDMRow(channel) {
     }
   }, items);
   let obj = { size: channel(1297).AvatarSizes.REFRESH_MEDIUM_32, channel };
-  const tmp6 = onPress(9955);
-  obj1 = channel(9956);
+  const tmp6 = onPress(9813);
+  obj1 = channel(9814);
   const recipientsLabel = obj1.useRecipientsLabel(channel);
   obj = {};
   const merged1 = Object.assign(merged);
@@ -46,10 +46,10 @@ export default function GroupDMRow(channel) {
   if (null != recipientsLabel) {
     obj = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children: null };
     obj[3] = recipientsLabel;
-    tmp5Result = tmp5(tmp7(4739).Text, obj);
+    tmp5Result = tmp5(tmp7(4376).Text, obj);
   }
   obj.subLabel = tmp5Result;
-  obj.icon = jsx(onPress(9955), {});
+  obj.icon = jsx(onPress(9813), {});
   obj.onPress = callback;
   if (str == null) {
     str = "";
@@ -61,11 +61,11 @@ export default function GroupDMRow(channel) {
     obj1 = {};
     const merged2 = Object.assign(obj);
     obj1.checked = flag;
-    tmp5Result = tmp5(tmp7(8597).TableCheckboxRow, obj1);
+    tmp5Result = tmp5(tmp7(8605).TableCheckboxRow, obj1);
   } else {
     const obj2 = {};
     const merged3 = Object.assign(obj);
-    tmp5Result = tmp5(tmp7(6322).TableRow, obj2);
+    tmp5Result = tmp5(tmp7(5480).TableRow, obj2);
   }
   return tmp5Result;
 };

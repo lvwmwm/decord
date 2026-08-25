@@ -1,11 +1,11 @@
-// Module ID: 10317
-// Function ID: 10318
-// Dependencies: [676, 644, 698, 705, 10318, 500, 2]
+// Module ID: 10168
+// Function ID: 10169
+// Dependencies: [676, 644, 698, 705, 10169, 500, 2]
 
-// Module 10317
+// Module 10168
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10318 */;
+import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10169 */;
 import keys from "keys" /* 644 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
@@ -95,7 +95,7 @@ export default {
             obj = { page: table, has_reached_end: tmp12 };
             lastAssetIndex(table[2]).track(closure_1_3.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj);
           };
-          lastAssetIndex(10318)(obj);
+          lastAssetIndex(10169)(obj);
         }
       }
     }

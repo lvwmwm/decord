@@ -1,9 +1,9 @@
-// Module ID: 4878
-// Function ID: 4879
+// Module ID: 5001
+// Function ID: 5002
 // Name: GUILD_PRODUCT_EDIT_MODAL_KEY
 // Dependencies: [2]
 
-// Module 4878 (GUILD_PRODUCT_EDIT_MODAL_KEY)
+// Module 5001 (GUILD_PRODUCT_EDIT_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_products/GuildProductConstants.tsx");

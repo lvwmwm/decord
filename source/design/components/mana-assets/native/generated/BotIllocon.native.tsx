@@ -1,14 +1,14 @@
-// Module ID: 5557
-// Function ID: 5558
+// Module ID: 6241
+// Function ID: 6242
 // Name: BotIllocon
-// Dependencies: [21, 5454, 5558, 2]
+// Dependencies: [21, 5374, 6242, 2]
 // Exports: BotIllocon
 
-// Module 5557 (BotIllocon)
+// Module 6241 (BotIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5558 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6242 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BotIllocon.native.tsx");

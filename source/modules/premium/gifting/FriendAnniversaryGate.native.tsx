@@ -1,12 +1,12 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8333
+// Function ID: 8334
 // Name: getFriendAnniversaryGateConfig
-// Dependencies: [8333, 2]
+// Dependencies: [8334, 2]
 // Exports: getFriendAnniversaryGateConfig
 
-// Module 8332 (getFriendAnniversaryGateConfig)
+// Module 8333 (getFriendAnniversaryGateConfig)
 import set from "set" /* 2 */;
-import apexExperimentDefault from "apexExperiment" /* 8333 */;
+import apexExperimentDefault from "apexExperiment" /* 8334 */;
 
 const result = set.fileFinishedImporting("modules/premium/gifting/FriendAnniversaryGate.native.tsx");
 

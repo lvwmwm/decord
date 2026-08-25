@@ -1,23 +1,23 @@
-// Module ID: 11358
-// Function ID: 11359
+// Module ID: 11714
+// Function ID: 11715
 // Name: PlaceholderCommandRow
-// Dependencies: [5, 19, 17, 8487, 1499, 676, 5251, 21, 4668, 11359, 712, 11278, 6322, 9602, 11333, 5250, 8808, 1236, 1629, 9592, 1954, 11363, 8486, 5253, 11275, 500, 11365, 4739, 11367, 11330, 11369, 9854, 1297, 11376, 11378, 4346, 5047, 8810, 2]
+// Dependencies: [5, 19, 17, 8494, 1499, 676, 4838, 21, 4380, 11715, 712, 11637, 5480, 9698, 11689, 7127, 10703, 1236, 1629, 9687, 1955, 11719, 8493, 7129, 11634, 500, 11721, 4376, 11723, 11686, 11725, 10598, 1297, 11732, 11734, 4347, 4588, 10705, 2]
 // Exports: default
 
-// Module 11358 (PlaceholderCommandRow)
+// Module 11714 (PlaceholderCommandRow)
 import ThemesDefault from "Themes" /* 712 */;
-import TableRowInner from "TableRowInner" /* 6322 */;
-import usePlaceholderWidth from "usePlaceholderWidth" /* 11278 */;
-import CommandRowIconDefault from "CommandRowIcon" /* 11333 */;
+import TableRowInner from "TableRowInner" /* 5480 */;
+import usePlaceholderWidth from "usePlaceholderWidth" /* 11637 */;
+import CommandRowIconDefault from "CommandRowIcon" /* 11689 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import getIndexKey from "getIndexKey" /* 8487 */;
+import getIndexKey from "getIndexKey" /* 8494 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { DISCOVERY_COMMANDS_QUERY_LIMIT as closure_12 } from "TRUE_OPTION_NAME" /* 5251 */;
+import { DISCOVERY_COMMANDS_QUERY_LIMIT as closure_12 } from "TRUE_OPTION_NAME" /* 4838 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function PlaceholderCommandRow(isFirstRow) {
@@ -97,7 +97,7 @@ class CommandRow {
               obj[0] = isAuthorized;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -145,7 +145,7 @@ class CommandRow {
                   lib();
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp13) {
               c3 = tmp;

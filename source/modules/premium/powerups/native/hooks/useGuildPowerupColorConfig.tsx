@@ -1,10 +1,10 @@
-// Module ID: 11766
-// Function ID: 11767
+// Module ID: 12106
+// Function ID: 12107
 // Name: useGuildPowerupColorConfig
 // Dependencies: [712, 2]
 // Exports: default
 
-// Module 11766 (useGuildPowerupColorConfig)
+// Module 12106 (useGuildPowerupColorConfig)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 

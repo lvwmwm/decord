@@ -1,24 +1,24 @@
-// Module ID: 9116
-// Function ID: 9117
+// Module ID: 11233
+// Function ID: 11234
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 5019, 9081, 1391, 4999, 9103, 9117, 9118, 21, 4668, 712, 1494, 7629, 589, 9114, 9113, 6349, 7628, 4097, 1236, 1370, 9119, 4663, 9120, 9121, 4773, 7626, 9124, 4984, 4347, 4348, 4096, 7205, 500, 9127, 5437, 4322, 9128, 9129, 12088, 12012, 2]
+// Dependencies: [5, 32, 19, 17, 7202, 9045, 1391, 4623, 9069, 11234, 9770, 21, 4380, 712, 1494, 7450, 589, 11231, 11230, 5382, 7449, 4098, 1236, 1370, 11235, 4746, 11236, 9901, 4391, 7447, 11237, 4566, 4348, 4349, 4097, 5862, 500, 11240, 6117, 4323, 4951, 11241, 11251, 11262, 2]
 // Exports: default
 
-// Module 9116 (ForwardModal)
+// Module 11233 (ForwardModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "removePendingListFetch" /* 5019 */;
-import closure_8 from "filterStaffGuild" /* 9081 */;
+import closure_7 from "removePendingListFetch" /* 7202 */;
+import closure_8 from "filterStaffGuild" /* 9045 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "reinjectEphemerals" /* 4999 */;
-import closure_11 from "messages" /* 9103 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 9117 */;
-import { UserRowModes } from "UserRowModes" /* 9118 */;
+import closure_10 from "reinjectEphemerals" /* 4623 */;
+import closure_11 from "messages" /* 9069 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11234 */;
+import { UserRowModes } from "UserRowModes" /* 9770 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
@@ -174,7 +174,7 @@ export default function ForwardModal(message) {
             obj[0] = arr;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

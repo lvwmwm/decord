@@ -1,12 +1,12 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7546
+// Function ID: 7547
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 5324, 505, 589, 5327, 5321, 2]
+// Dependencies: [19, 5965, 505, 589, 5968, 5962, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 7725 (useDiscountedPremiumProductInfo)
+// Module 7546 (useDiscountedPremiumProductInfo)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "updateProduct" /* 5324 */;
+import closure_3 from "updateProduct" /* 5965 */;
 import { CurrencyCodes } from "sum" /* 505 */;
 
 const require = arg1;

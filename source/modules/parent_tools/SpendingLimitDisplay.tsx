@@ -1,16 +1,16 @@
-// Module ID: 14334
-// Function ID: 14335
+// Module ID: 14364
+// Function ID: 14365
 // Name: getSpendingLimitDisplayState
-// Dependencies: [1340, 5301, 1924, 589, 14252, 5321, 5322, 1236, 2336, 2]
+// Dependencies: [1340, 7143, 1924, 589, 14282, 5962, 5963, 1236, 2337, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 14334 (getSpendingLimitDisplayState)
+// Module 14364 (getSpendingLimitDisplayState)
 import initialize from "initialize" /* 589 */;
-import messagesProxyDefault from "messagesProxy" /* 2336 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 5321 */;
-import spendingLimitEqual from "spendingLimitEqual" /* 14252 */;
+import messagesProxyDefault from "messagesProxy" /* 2337 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 5962 */;
+import spendingLimitEqual from "spendingLimitEqual" /* 14282 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_4 from "freshTeenActivityWithMap" /* 5301 */;
+import closure_4 from "freshTeenActivityWithMap" /* 7143 */;
 import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1924 */;
 
 require = arg1;
@@ -28,7 +28,7 @@ function getSpendingLimitDisplayState(amount) {
       obj[1] = formatRateResult;
       return obj;
     } else {
-      let num = tmp5(5322).CurrencyExponents[amount.currency];
+      let num = tmp5(5963).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }
@@ -38,9 +38,9 @@ function getSpendingLimitDisplayState(amount) {
         obj[1] = formatRateResult;
         const intl = tmp5(1236).intl;
         obj1 = { amount: null };
-        obj1[0] = tmp5(5321).formatPrice(diff, currency);
+        obj1[0] = tmp5(5962).formatPrice(diff, currency);
         obj[2] = intl.formatToPlainString(messagesProxyDefault["+Q+bU1"], obj1);
-        const tmp5Result = tmp5(5321);
+        const tmp5Result = tmp5(5962);
       } else {
         obj = { kind: "on", monthlyText: null };
         obj[1] = formatRateResult;

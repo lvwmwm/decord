@@ -1,24 +1,24 @@
-// Module ID: 9864
-// Function ID: 9865
+// Module ID: 10608
+// Function ID: 10609
 // Name: ApplicationDetailsEntry
-// Dependencies: [19, 17, 21, 4668, 712, 9807, 9865, 9867, 11, 4378, 4322, 1236, 6928, 9809, 9869, 4342, 4379, 9871, 9873, 4739, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 10586, 10609, 10611, 11, 10584, 4323, 1236, 4925, 10588, 10613, 4343, 9049, 10615, 10428, 4376, 2]
 // Exports: default
 
-// Module 9864 (ApplicationDetailsEntry)
+// Module 10608 (ApplicationDetailsEntry)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ClockIcon from "ClockIcon" /* 4342 */;
-import items2 from "items" /* 4378 */;
-import set from "set" /* 4379 */;
-import Text from "Text" /* 4739 */;
-import LockIcon from "LockIcon" /* 6928 */;
-import getApplicationDetailsText from "getApplicationDetailsText" /* 9809 */;
-import ShieldIcon from "ShieldIcon" /* 9873 */;
+import ClockIcon from "ClockIcon" /* 4343 */;
+import Text from "Text" /* 4376 */;
+import LockIcon from "LockIcon" /* 4925 */;
+import set from "set" /* 9049 */;
+import ShieldIcon from "ShieldIcon" /* 10428 */;
+import items2 from "items" /* 10584 */;
+import getApplicationDetailsText from "getApplicationDetailsText" /* 10588 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function ApplicationDetailsEntry(children) {
@@ -71,7 +71,7 @@ export default function ApplicationDetails(arg0) {
   let tmp15 = null;
   if (null != joined) {
     obj = { iconComponent: null, text: null };
-    obj[0] = tmp5(4322).LinkIcon;
+    obj[0] = tmp5(4323).LinkIcon;
     const intl = tmp5(1236).intl;
     obj1 = { origin: null };
     obj1[0] = joined;
@@ -88,7 +88,7 @@ export default function ApplicationDetails(arg0) {
   let tmp18Result = null;
   if (null != connectedAccount) {
     const obj3 = { iconComponent: null, text: null };
-    obj3[0] = tmp5(9869).HammerIcon;
+    obj3[0] = tmp5(10613).HammerIcon;
     const intl2 = tmp5(1236).intl;
     obj3[1] = intl2.string(tmp5(1236).t["8qui3M"]);
     tmp18Result = tmp18(tmp19, obj3);
@@ -103,7 +103,7 @@ export default function ApplicationDetails(arg0) {
     tmp18Result = null;
     if (null != approximateGuildCount) {
       const obj5 = { iconComponent: null, text: null };
-      obj5[0] = tmp5(9871).RobotIcon;
+      obj5[0] = tmp5(10615).RobotIcon;
       const intl4 = tmp5(1236).intl;
       const obj6 = { guildCount: null };
       obj6[0] = approximateGuildCount;
@@ -117,17 +117,17 @@ export default function ApplicationDetails(arg0) {
   let mapped = null;
   if (null != disclosures) {
     mapped = disclosures.map((toFixed) => {
-      let obj = callback(9807);
+      let obj = callback(10586);
       const textForDisclosure = obj.getTextForDisclosure(toFixed);
-      if (callback(9807).ApplicationDisclosure.IP_LOCATION === toFixed) {
+      if (callback(10586).ApplicationDisclosure.IP_LOCATION === toFixed) {
         obj = { iconComponent: null };
-        obj[0] = tmp(9865).GlobeEarthIcon;
+        obj[0] = tmp(10609).GlobeEarthIcon;
         let tmp4 = obj;
       } else {
         tmp4 = null;
-        if (tmp(9807).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
+        if (tmp(10586).ApplicationDisclosure.DISPLAYS_ADVERTISEMENTS === toFixed) {
           obj = { iconComponent: null };
-          obj[0] = tmp(9867).EmbedIcon;
+          obj[0] = tmp(10611).EmbedIcon;
           tmp4 = obj;
         }
       }

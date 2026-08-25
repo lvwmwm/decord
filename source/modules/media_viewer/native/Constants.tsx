@@ -1,9 +1,9 @@
-// Module ID: 9049
-// Function ID: 9050
+// Module ID: 9011
+// Function ID: 9012
 // Name: THUMBNAIL_MARGIN
 // Dependencies: [2]
 
-// Module 9049 (THUMBNAIL_MARGIN)
+// Module 9011 (THUMBNAIL_MARGIN)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/media_viewer/native/Constants.tsx");

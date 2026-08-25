@@ -1,9 +1,9 @@
-// Module ID: 10233
-// Function ID: 10234
+// Module ID: 10084
+// Function ID: 10085
 // Name: getFormatFromUrl
 // Dependencies: [676, 1341, 1236, 589, 709, 2]
 
-// Module 10233 (getFormatFromUrl)
+// Module 10084 (getFormatFromUrl)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import ME from "ME" /* 676 */;

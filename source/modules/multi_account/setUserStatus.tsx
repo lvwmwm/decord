@@ -1,13 +1,13 @@
-// Module ID: 10064
-// Function ID: 10065
+// Module ID: 9920
+// Function ID: 9921
 // Name: _setUserStatus
-// Dependencies: [5, 6833, 7288, 676, 4223, 1236, 10065, 1374, 1337, 1350, 698, 2]
+// Dependencies: [5, 5364, 5104, 676, 4224, 1236, 9921, 1374, 1337, 1350, 698, 2]
 // Exports: default
 
-// Module 10064 (_setUserStatus)
+// Module 9920 (_setUserStatus)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 6833 */;
-import closure_5 from "filterPlayingActivities" /* 7288 */;
+import closure_4 from "initialize" /* 5364 */;
+import closure_5 from "filterPlayingActivities" /* 5104 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
@@ -29,7 +29,7 @@ function _setUserStatus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ function _setUserStatus() {
               obj3.track(constants.USER_STATUS_UPDATED, obj5);
             }
             globalStats = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp54) {
           globalStats = tmp;

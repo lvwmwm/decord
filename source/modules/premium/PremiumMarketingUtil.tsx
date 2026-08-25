@@ -1,14 +1,14 @@
-// Module ID: 12372
-// Function ID: 12373
+// Module ID: 12690
+// Function ID: 12691
 // Name: navigateToPremiumHomePage
-// Dependencies: [676, 7398, 5358, 1222, 2]
+// Dependencies: [676, 6125, 7193, 1222, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 12372 (navigateToPremiumHomePage)
+// Module 12690 (navigateToPremiumHomePage)
 import set from "set" /* 2 */;
 import transitionTo from "transitionTo" /* 1222 */;
-import pushLayer from "pushLayer" /* 5358 */;
-import openUserSettings from "openUserSettings" /* 7398 */;
+import openUserSettings from "openUserSettings" /* 6125 */;
+import pushLayer from "pushLayer" /* 7193 */;
 import ME from "ME" /* 676 */;
 
 ({ Routes: obj1, UserSettingsSections: c3 } = ME);

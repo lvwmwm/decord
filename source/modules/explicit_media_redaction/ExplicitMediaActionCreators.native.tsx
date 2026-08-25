@@ -1,13 +1,13 @@
-// Module ID: 11137
-// Function ID: 11138
+// Module ID: 11479
+// Function ID: 11480
 // Name: handleSenderFalsePositiveFlow
-// Dependencies: [5007, 5009, 5006, 4662, 1236, 11138, 4346, 11139, 2008, 2]
+// Dependencies: [6017, 7207, 7206, 4745, 1236, 11480, 4347, 11481, 2009, 2]
 // Exports: handleSenderFalsePositiveFlow
 
-// Module 11137 (handleSenderFalsePositiveFlow)
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 5006 */;
-import closure_3 from "getFpMessageInfo" /* 5007 */;
-import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY" /* 5009 */;
+// Module 11479 (handleSenderFalsePositiveFlow)
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7206 */;
+import closure_3 from "getFpMessageInfo" /* 6017 */;
+import { EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_4 } from "USER_SETTING_ACTION_SHEET_KEY" /* 7207 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaActionCreators.native.tsx");
@@ -17,13 +17,13 @@ export const handleSenderFalsePositiveFlow = function handleSenderFalsePositiveF
   obj = { action: redactionSettingToRenderedString.TrackMediaRedactionActionType.EXPLICIT_MEDIA_SENDER_FALSE_POSITIVE_BUTTON_CLICKED, messageId: closure_1, channelId };
   const result = obj.trackMediaRedactionAction(obj);
   if (closure_3.canSubmitFpReport(closure_1)) {
-    let tmp4Result = tmp4(4346);
+    let tmp4Result = tmp4(4347);
     obj = { channelId: null, messageId: null };
     obj[0] = channelId;
     obj[1] = closure_1;
-    tmp4Result.openLazy(tmp(2008)(11139, tmp2.paths), closure_4, obj);
+    tmp4Result.openLazy(tmp(2009)(11481, tmp2.paths), closure_4, obj);
   } else {
-    tmp4Result = tmp4(4662);
+    tmp4Result = tmp4(4745);
     obj1 = { title: null, body: null, confirmText: null };
     const intl = tmp(1236).intl;
     obj1[0] = intl.string(tmp(1236).t["iS/eFN"]);
@@ -32,7 +32,7 @@ export const handleSenderFalsePositiveFlow = function handleSenderFalsePositiveF
     const intl3 = tmp(1236).intl;
     obj1[2] = intl3.string(tmp(1236).t.BddRzS);
     tmp4Result.show(obj1);
-    const result1 = tmp4(11138).disableFalsePositiveButton(channelId, closure_1);
+    const result1 = tmp4(11480).disableFalsePositiveButton(channelId, closure_1);
   }
   tmp2 = dependencyMap;
 };

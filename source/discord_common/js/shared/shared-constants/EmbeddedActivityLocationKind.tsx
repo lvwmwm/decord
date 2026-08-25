@@ -1,9 +1,9 @@
-// Module ID: 8775
-// Function ID: 8776
+// Module ID: 10700
+// Function ID: 10701
 // Name: EmbeddedActivityLocationKind
 // Dependencies: [2]
 
-// Module 8775 (EmbeddedActivityLocationKind)
+// Module 10700 (EmbeddedActivityLocationKind)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedActivityLocationKind.tsx");

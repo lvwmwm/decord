@@ -1,16 +1,16 @@
-// Module ID: 6950
-// Function ID: 6951
+// Module ID: 5446
+// Function ID: 5447
 // Name: context
-// Dependencies: [32, 19, 676, 21, 1231, 6951, 1906, 6952, 2]
+// Dependencies: [32, 19, 676, 21, 1231, 5447, 1906, 5448, 2]
 // Exports: AppWindowContextProvider, getAppWindowContextValue, getCurrentlyInteractingAppContext, getCurrentlyInteractingAppWindowContext, getWindowDispatchForElement, getWindowDispatchForEvent, useAppContext, useRenderWindow, useWindowDispatch
 
-// Module 6950 (context)
-import getWindowId2 from "getWindowId" /* 6951 */;
-import INTERACTION_EVENTS from "INTERACTION_EVENTS" /* 6952 */;
+// Module 5446 (context)
+import getWindowId2 from "getWindowId" /* 5447 */;
+import INTERACTION_EVENTS from "INTERACTION_EVENTS" /* 5448 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import getWindowId from "getWindowId" /* 6951 */;
+import getWindowId from "getWindowId" /* 5447 */;
 
 require = arg1;
 let c3 = importAllResult;

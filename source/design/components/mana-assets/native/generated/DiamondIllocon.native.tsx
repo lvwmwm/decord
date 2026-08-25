@@ -1,14 +1,14 @@
-// Module ID: 5647
-// Function ID: 5648
+// Module ID: 6333
+// Function ID: 6334
 // Name: DiamondIllocon
-// Dependencies: [21, 5454, 5648, 2]
+// Dependencies: [21, 5374, 6334, 2]
 // Exports: DiamondIllocon
 
-// Module 5647 (DiamondIllocon)
+// Module 6333 (DiamondIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5648 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6334 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DiamondIllocon.native.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 16049
-// Function ID: 16050
+// Module ID: 16081
+// Function ID: 16082
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 676, 21, 4668, 712, 7183, 4739, 1236, 1994, 2]
+// Dependencies: [19, 17, 676, 21, 4380, 712, 5840, 4376, 1236, 1995, 2]
 // Exports: default
 
-// Module 16049 (ChannelDetailsLinkedLobby)
+// Module 16081 (ChannelDetailsLinkedLobby)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1994 */;
-import Text2 from "Text" /* 4739 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7183 */;
+import combinedDefault from "combined" /* 1995 */;
+import Text2 from "Text" /* 4376 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 5840 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

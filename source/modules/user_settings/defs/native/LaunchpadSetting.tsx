@@ -1,17 +1,17 @@
-// Module ID: 14904
-// Function ID: 14905
+// Module ID: 14934
+// Function ID: 14935
 // Name: radio
-// Dependencies: [8238, 10704, 4069, 1306, 1236, 10708, 10705, 2]
+// Dependencies: [8235, 10512, 4070, 1306, 1236, 10516, 10513, 2]
 
-// Module 14904 (radio)
+// Module 14934 (radio)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import create from "create" /* 1306 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import MobileUserSettings from "MobileUserSettings" /* 8238 */;
-import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 10704 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 10705 */;
-import createToggle from "createToggle" /* 10708 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import MobileUserSettings from "MobileUserSettings" /* 8235 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 10512 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 10513 */;
+import createToggle from "createToggle" /* 10516 */;
 
 const LaunchPadTypes = LAUNCH_PAD_SPRING_CONFIG.LaunchPadTypes;
 const radio = createToggle.createRadio({

@@ -1,11 +1,11 @@
-// Module ID: 7676
-// Function ID: 7677
+// Module ID: 7497
+// Function ID: 7498
 // Name: create
-// Dependencies: [32, 1307, 7671, 2]
+// Dependencies: [32, 1307, 7492, 2]
 
-// Module 7676 (create)
+// Module 7497 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create from "create" /* 7671 */;
+import create from "create" /* 7492 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -29,7 +29,7 @@ class PaymentModalBanner$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(7671).LocalizedString;
+            return callback(7492).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.PaymentModalBanner", items, T);
@@ -168,7 +168,7 @@ items[4] = {
   name: "body_localized",
   kind: "message",
   T() {
-    return callback(7671).LocalizedString;
+    return callback(7492).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.PaymentModalBanner", items, tmp, T, PaymentModalBanner$Type, prototype, items);

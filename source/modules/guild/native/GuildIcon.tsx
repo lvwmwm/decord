@@ -1,17 +1,17 @@
-// Module ID: 7226
-// Function ID: 7227
+// Module ID: 5885
+// Function ID: 5886
 // Name: GuildIconSizes
-// Dependencies: [32, 19, 7227, 1434, 676, 21, 4668, 712, 1903, 6841, 5454, 7228, 299, 2]
+// Dependencies: [32, 19, 5886, 1434, 676, 21, 4380, 712, 1903, 5435, 5374, 5887, 299, 2]
 
-// Module 7226 (GuildIconSizes)
+// Module 5885 (GuildIconSizes)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import { ExpressionSourceGuildRecord as closure_5 } from "getEmojiSourceData" /* 7227 */;
+import { ExpressionSourceGuildRecord as closure_5 } from "getEmojiSourceData" /* 5886 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
 import { Fonts } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c4 = importAllResult;

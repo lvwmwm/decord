@@ -1,14 +1,14 @@
-// Module ID: 16473
-// Function ID: 16474
+// Module ID: 16505
+// Function ID: 16506
 // Name: useVoiceChannelGames
-// Dependencies: [19, 1218, 4564, 7288, 1922, 589, 9772, 9773, 6939, 2]
+// Dependencies: [19, 1218, 4469, 5104, 1922, 589, 9388, 9389, 4938, 2]
 // Exports: default
 
-// Module 16473 (useVoiceChannelGames)
+// Module 16505 (useVoiceChannelGames)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "sortActivity" /* 4564 */;
-import closure_6 from "filterPlayingActivities" /* 7288 */;
+import closure_5 from "sortActivity" /* 4469 */;
+import closure_6 from "filterPlayingActivities" /* 5104 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
@@ -53,8 +53,8 @@ export default function useVoiceChannelGames(arg0, arg1, arg2) {
     }
   }, items1);
   const obj = _require(589);
-  const getGamesForAppIds = _require(9773).useGetGamesForAppIds(stateFromStoresArray);
-  let obj2 = _require(9773);
+  const getGamesForAppIds = _require(9389).useGetGamesForAppIds(stateFromStoresArray);
+  let obj2 = _require(9389);
   const items2 = [closure_7];
   stateFromStores = _require(589).useStateFromStores(items2, () => {
     currentUser = currentUser.getCurrentUser();

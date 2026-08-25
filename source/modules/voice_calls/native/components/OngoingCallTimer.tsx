@@ -1,14 +1,14 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 13265
+// Function ID: 13266
 // Name: OnGoingCallTimer
-// Dependencies: [19, 4500, 21, 589, 11, 12732, 2]
+// Dependencies: [19, 5103, 21, 589, 11, 13266, 2]
 // Exports: default
 
-// Module 12731 (OnGoingCallTimer)
+// Module 13265 (OnGoingCallTimer)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import noopAll from "noop" /* 19 */;
-import componentDidMountDefault from "componentDidMount" /* 12732 */;
-import closure_3 from "callConnect" /* 4500 */;
+import componentDidMountDefault from "componentDidMount" /* 13266 */;
+import closure_3 from "callConnect" /* 5103 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

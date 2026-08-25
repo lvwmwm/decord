@@ -1,16 +1,16 @@
-// Module ID: 11509
-// Function ID: 11510
-// Dependencies: [19, 17, 4024, 4547, 676, 21, 4668, 712, 500, 8541, 4314, 1363, 8712, 647, 6745, 6740, 4993, 11510, 4739, 1236, 4750, 6930, 6934, 2]
+// Module ID: 11860
+// Function ID: 11861
+// Dependencies: [19, 17, 4025, 4399, 676, 21, 4380, 712, 500, 8549, 4315, 1363, 9899, 647, 5255, 5249, 5242, 11861, 4376, 1236, 4815, 4927, 4931, 2]
 
-// Module 11509
+// Module 11860
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_7 from "updateVoiceState" /* 4547 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_7 from "updateVoiceState" /* 4399 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -58,19 +58,19 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
     small = false;
   }
   let VJlc0S = dependencyMap;
-  const tmp = voiceStates(8541)();
+  const tmp = voiceStates(8549)();
   let obj = channel(1363);
-  let joinButtonText = callback(tmp, obj.isThemeLight(voiceStates(4314)()));
-  obj1 = channel(8712);
+  let joinButtonText = callback(tmp, obj.isThemeLight(voiceStates(4315)()));
+  obj1 = channel(9899);
   const isConnectedToVoiceChannel = obj1.useIsConnectedToVoiceChannel(channel);
   let obj2 = channel(647);
   const items = [closure_6];
   const stateFromStores = obj2.useStateFromStores(items, () => !closure_1_6.can(closure_1_9.CONNECT, channel));
-  let obj3 = channel(6745);
-  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(6740).StageChannelParticipantNamedIndex.AUDIENCE);
+  let obj3 = channel(5255);
+  const stageParticipantsCount = obj3.useStageParticipantsCount(channel.id, channel(5249).StageChannelParticipantNamedIndex.AUDIENCE);
   const isGuildStageVoiceResult = channel.isGuildStageVoice();
-  const tmp2 = voiceStates(4314)();
-  const obj5 = channel(4993);
+  const tmp2 = voiceStates(4315)();
+  const obj5 = channel(5242);
   let tmp3Result = tmp3(647);
   const items1 = [closure_7];
   const stateFromStores1 = tmp3Result.useStateFromStores(items1, () => closure_1_7.hasVideo(channel.id));
@@ -87,10 +87,10 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
   if (!stateFromStores1) {
     tmp12 = tmp8;
   }
-  tmp3Result = tmp3(11510);
+  tmp3Result = tmp3(11861);
   const connectedUserLimit = tmp3Result.useConnectedUserLimit({ channel, video: tmp12 });
-  tmp8 = channel(4993).useStageHasMedia(channel.id) && isGuildStageVoiceResult;
-  let connectedUserLimitFormatted = channel(11510).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
+  tmp8 = channel(5242).useStageHasMedia(channel.id) && isGuildStageVoiceResult;
+  let connectedUserLimitFormatted = channel(11861).useConnectedUserLimitFormatted({ channel, video: tmp12, userCount: sum });
   let tmp15 = !stateFromStores;
   if (!stateFromStores) {
     tmp15 = !isConnectedToVoiceChannel;
@@ -121,7 +121,7 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
       connectedUserLimitFormatted = intl2.string(VJlc0S);
     }
     obj1[4] = connectedUserLimitFormatted;
-    obj[1] = tmp17(tmp3(4739).Text, obj1);
+    obj[1] = tmp17(tmp3(4376).Text, obj1);
     obj[7] = tmp17(closure_4, obj);
     let tmp17Result = tmp17(closure_5, obj);
     const tmp26 = closure_5;
@@ -136,9 +136,9 @@ const memoResult = importAllResult.memo(function VocalChannelJoinButton(channel)
         }
         const items3 = [joinButtonIconActive, { marginRight: 3, marginLeft: -1 }];
         if (isGuildStageVoiceResult) {
-          let VoiceNormalIcon = tmp3(6930).StageIcon;
+          let VoiceNormalIcon = tmp3(4927).StageIcon;
         } else {
-          VoiceNormalIcon = tmp3(6934).VoiceNormalIcon;
+          VoiceNormalIcon = tmp3(4931).VoiceNormalIcon;
         }
         obj3 = { size: "xs", style: null };
         obj3[1] = items3;

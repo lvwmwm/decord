@@ -1,8 +1,8 @@
-// Module ID: 9981
-// Function ID: 9982
-// Dependencies: [5, 32, 19, 17, 1391, 21, 4668, 712, 5446, 589, 4989, 7165, 1435, 9982, 4775, 1236, 4097, 8113, 9983, 5438, 4739, 8110, 4750, 9985, 2]
+// Module ID: 9829
+// Function ID: 9830
+// Dependencies: [5, 32, 19, 17, 1391, 21, 4380, 712, 5475, 589, 4574, 5822, 1435, 9830, 4393, 1236, 4098, 7938, 9831, 4949, 4376, 7935, 4815, 9833, 2]
 
-// Module 9981
+// Module 9829
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -10,7 +10,7 @@ import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c5 = importAllResult;
@@ -144,7 +144,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId, r
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

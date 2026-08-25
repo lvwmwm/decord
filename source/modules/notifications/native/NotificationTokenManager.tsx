@@ -1,25 +1,25 @@
-// Module ID: 13877
-// Function ID: 13878
+// Module ID: 13912
+// Function ID: 13913
 // Name: _initialize
-// Dependencies: [17, 1212, 11634, 13326, 1218, 13878, 676, 4726, 709, 11628, 13881, 13882, 1208, 1236, 2630, 500, 13883, 698, 11633, 2]
+// Dependencies: [17, 1212, 11977, 13188, 1218, 13913, 676, 4562, 709, 10861, 13916, 13917, 1208, 1236, 2631, 500, 13918, 698, 11976, 2]
 
-// Module 13877 (_initialize)
+// Module 13912 (_initialize)
 import set2 from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2630 */;
-import initializeDefault from "initialize" /* 4726 */;
-import NativeModulesDefault from "NativeModules" /* 11628 */;
-import items2 from "items2" /* 13878 */;
-import apexExperiment from "apexExperiment" /* 13881 */;
-import inferImportanceFromBehaviorDefault from "inferImportanceFromBehavior" /* 13882 */;
-import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 13883 */;
+import messagesProxyDefault from "messagesProxy" /* 2631 */;
+import initializeDefault from "initialize" /* 4562 */;
+import NativeModulesDefault from "NativeModules" /* 10861 */;
+import items2 from "items2" /* 13913 */;
+import apexExperiment from "apexExperiment" /* 13916 */;
+import inferImportanceFromBehaviorDefault from "inferImportanceFromBehavior" /* 13917 */;
+import NativeNotifSettingsModuleDefault from "NativeNotifSettingsModule" /* 13918 */;
 import closure_4 from "initialize" /* 1212 */;
-import closure_5 from "initialize" /* 11634 */;
-import closure_6 from "initialize" /* 13326 */;
+import closure_5 from "initialize" /* 11977 */;
+import closure_6 from "initialize" /* 13188 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;

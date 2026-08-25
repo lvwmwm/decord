@@ -1,15 +1,15 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16668
+// Function ID: 16669
 // Name: openChangelog
-// Dependencies: [1979, 4233, 5265, 14914, 2008, 2]
+// Dependencies: [1980, 4234, 4611, 14944, 2009, 2]
 // Exports: openChangelog
 
-// Module 16636 (openChangelog)
+// Module 16668 (openChangelog)
 import set from "set" /* 2 */;
-import CHANGELOG_MODAL_KEY2 from "CHANGELOG_MODAL_KEY" /* 1979 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import coerceMainRoute from "coerceMainRoute" /* 4233 */;
-import _modDef5265 from "module_5265" /* 5265 */;
+import CHANGELOG_MODAL_KEY2 from "CHANGELOG_MODAL_KEY" /* 1980 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import coerceMainRoute from "coerceMainRoute" /* 4234 */;
+import _modDef4611 from "module_4611" /* 4611 */;
 
 const CHANGELOG_MODAL_KEY = CHANGELOG_MODAL_KEY2.CHANGELOG_MODAL_KEY;
 const result = set.fileFinishedImporting("modules/changelog/openChangelog.native.tsx");
@@ -25,7 +25,7 @@ export const openChangelog = function openChangelog() {
     const obj = coerceMainRoute;
   }
   if (!isModalOpenResult) {
-    _modDef5265.pushLazy(asyncRequireImpl(14914, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
-    const obj2 = _modDef5265;
+    _modDef4611.pushLazy(asyncRequireImpl(14944, dependencyMap.paths), {}, CHANGELOG_MODAL_KEY);
+    const obj2 = _modDef4611;
   }
 };

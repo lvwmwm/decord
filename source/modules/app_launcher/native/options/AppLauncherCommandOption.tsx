@@ -1,23 +1,23 @@
-// Module ID: 11392
-// Function ID: 11393
+// Module ID: 11748
+// Function ID: 11749
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1499, 21, 4668, 712, 1954, 11393, 11399, 11401, 11404, 11406, 11407, 11409, 6811, 11412, 11413, 11416, 5438, 7379, 2]
+// Dependencies: [19, 17, 1499, 21, 4380, 712, 1955, 11749, 11755, 11757, 11760, 11762, 11763, 11765, 5334, 11768, 11769, 11772, 4949, 6105, 2]
 // Exports: default
 
-// Module 11392 (AppLauncherCommandOption)
+// Module 11748 (AppLauncherCommandOption)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11393 */;
-import AttachmentPreviewAppLauncherDefault from "AttachmentPreviewAppLauncher" /* 11404 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11406 */;
-import MentionableIconDefault from "MentionableIcon" /* 11407 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11412 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11413 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11416 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 11749 */;
+import AttachmentPreviewAppLauncherDefault from "AttachmentPreviewAppLauncher" /* 11760 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 11762 */;
+import MentionableIconDefault from "MentionableIcon" /* 11763 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 11768 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 11769 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 11772 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AppLauncherOptionAutoFocusType as closure_4 } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -37,10 +37,10 @@ export default function AppLauncherCommandOption(option) {
   ({ onPressAttachmentOption, onFocus, command } = option);
   const tmp = callback2();
   let type = name.type;
-  if (name(1954).ApplicationCommandOptionType.STRING !== type) {
-    if (tmp2(1954).ApplicationCommandOptionType.INTEGER !== type) {
-      if (tmp2(1954).ApplicationCommandOptionType.NUMBER !== type) {
-        if (tmp2(1954).ApplicationCommandOptionType.ATTACHMENT === type) {
+  if (name(1955).ApplicationCommandOptionType.STRING !== type) {
+    if (tmp2(1955).ApplicationCommandOptionType.INTEGER !== type) {
+      if (tmp2(1955).ApplicationCommandOptionType.NUMBER !== type) {
+        if (tmp2(1955).ApplicationCommandOptionType.ATTACHMENT === type) {
           let obj = { style: null, option: null, onSelectAttachment: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj[0] = tmp.option;
           obj[1] = name;
@@ -62,7 +62,7 @@ export default function AppLauncherCommandOption(option) {
           obj[6] = onPressAttachmentOption;
           let tmp28Result = onDismiss(AttachmentPreviewAppLauncherDefault, obj, name.name);
           let tmp13 = onDismiss;
-        } else if (tmp2(1954).ApplicationCommandOptionType.BOOLEAN === type) {
+        } else if (tmp2(1955).ApplicationCommandOptionType.BOOLEAN === type) {
           obj = { style: null, option: null, initialValue: null, onPress: null, hasError: null };
           obj[0] = tmp.option;
           obj[1] = name;
@@ -81,7 +81,7 @@ export default function AppLauncherCommandOption(option) {
           tmp28Result = tmp35(AppLauncherBooleanOptionDefault, obj, name.name);
           tmp13 = tmp35;
           const tmp37 = AppLauncherBooleanOptionDefault;
-        } else if (tmp2(1954).ApplicationCommandOptionType.MENTIONABLE === type) {
+        } else if (tmp2(1955).ApplicationCommandOptionType.MENTIONABLE === type) {
           obj1 = { option: null, initialValue: null, onMentionablePress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj1[0] = name;
           let first1;
@@ -130,7 +130,7 @@ export default function AppLauncherCommandOption(option) {
           tmp28Result = tmp28(MentionableIconDefault, obj1);
           tmp13 = tmp28;
           const tmp30 = MentionableIconDefault;
-        } else if (tmp2(1954).ApplicationCommandOptionType.ROLE === type) {
+        } else if (tmp2(1955).ApplicationCommandOptionType.ROLE === type) {
           const obj2 = { style: null, option: null, initialValue: null, onRolePress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj2[0] = tmp.option;
           obj2[1] = name;
@@ -160,7 +160,7 @@ export default function AppLauncherCommandOption(option) {
           tmp28Result = tmp21(AppLauncherRoleOptionDefault, obj2, name.name);
           tmp13 = tmp21;
           const tmp23 = AppLauncherRoleOptionDefault;
-        } else if (tmp2(1954).ApplicationCommandOptionType.USER === type) {
+        } else if (tmp2(1955).ApplicationCommandOptionType.USER === type) {
           const obj3 = { style: null, option: null, initialValue: null, onUserPress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj3[0] = tmp.option;
           obj3[1] = name;
@@ -194,7 +194,7 @@ export default function AppLauncherCommandOption(option) {
           tmp28Result = tmp14(AppLauncherUserOptionDefault, obj3, name.name);
           tmp13 = tmp14;
           const tmp16 = AppLauncherUserOptionDefault;
-        } else if (tmp2(1954).ApplicationCommandOptionType.CHANNEL === type) {
+        } else if (tmp2(1955).ApplicationCommandOptionType.CHANNEL === type) {
           obj = { style: null, option: null, initialValue: null, onChannelPress: null, onActionSheetDismiss: null, channel: null, autoFocus: null, hasError: null, onPress: null };
           obj[0] = tmp.option;
           obj[1] = name;
@@ -241,8 +241,8 @@ export default function AppLauncherCommandOption(option) {
           obj6[1] = function onPress() {
             return onDismiss(name);
           };
-          obj6[2] = tmp13(tmp2(7379).CircleXIcon, { size: "md" });
-          items[1] = tmp13(tmp2(5438).PressableOpacity, obj6);
+          obj6[2] = tmp13(tmp2(6105).CircleXIcon, { size: "md" });
+          items[1] = tmp13(tmp2(4949).PressableOpacity, obj6);
           obj4[1] = items;
           tmp62 = callback(View, obj4);
         }
@@ -294,7 +294,7 @@ export default function AppLauncherCommandOption(option) {
     obj8[3] = command;
     obj8[4] = optionValues;
     let first6;
-    let tmp64Result = tmp64(11399);
+    let tmp64Result = tmp64(11755);
     if (optionValues.current[name.name] != tmp44) {
       first6 = tmp52[0];
     }
@@ -327,7 +327,7 @@ export default function AppLauncherCommandOption(option) {
     obj9[1] = name;
     obj9[2] = channel.guild_id;
     let first7;
-    tmp64Result = tmp64(11401);
+    tmp64Result = tmp64(11757);
     if (optionValues.current[name.name] != tmp44) {
       first7 = tmp46[0];
     }

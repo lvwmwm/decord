@@ -1,14 +1,14 @@
-// Module ID: 6599
-// Function ID: 6600
+// Module ID: 7976
+// Function ID: 7977
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 5431, 6600, 709, 2]
+// Dependencies: [5, 32, 19, 7977, 7978, 709, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 6599 (useAgeVerificationMethodsV2)
+// Module 7976 (useAgeVerificationMethodsV2)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 5431 */;
+import closure_6 from "initialize" /* 7977 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/age_assurance/hooks/useAgeVerificationMethodsV2.tsx");
@@ -52,7 +52,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
               closure_1_2(true);
               closure_1_3(false);
               c4 = 2;
-              let obj2 = lib(6600);
+              let obj2 = lib(7978);
               c5 = 3;
               c6 = 1;
               obj2 = { value: null, done: false };
@@ -135,7 +135,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
               closure_1_2(false);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp54) {
           closure_3 = tmp54;

@@ -1,14 +1,14 @@
-// Module ID: 6183
-// Function ID: 6184
+// Module ID: 6871
+// Function ID: 6872
 // Name: ShieldSpotIllustration
-// Dependencies: [21, 5454, 6184, 2]
+// Dependencies: [21, 5374, 6872, 2]
 // Exports: ShieldSpotIllustration
 
-// Module 6183 (ShieldSpotIllustration)
+// Module 6871 (ShieldSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 6184 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6872 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ShieldSpotIllustration.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 5735
-// Function ID: 5736
+// Module ID: 6425
+// Function ID: 6426
 // Name: FlowerIllocon
-// Dependencies: [21, 5454, 5736, 2]
+// Dependencies: [21, 5374, 6426, 2]
 // Exports: FlowerIllocon
 
-// Module 5735 (FlowerIllocon)
+// Module 6425 (FlowerIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5736 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6426 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FlowerIllocon.native.tsx");

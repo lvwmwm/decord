@@ -1,17 +1,17 @@
-// Module ID: 10422
-// Function ID: 10423
+// Module ID: 10273
+// Function ID: 10274
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 7666, 1388, 21, 4668, 712, 1629, 9662, 38, 10423, 10345, 8428, 589, 9668, 9666, 1379, 1377, 10424, 10425, 10426, 10427, 2]
+// Dependencies: [19, 17, 7487, 1388, 21, 4380, 712, 1629, 9758, 38, 10274, 10196, 8434, 589, 9764, 9762, 1379, 1377, 10275, 10276, 10277, 10278, 2]
 // Exports: default
 
-// Module 10422 (PremiumGiftSuccess)
+// Module 10273 (PremiumGiftSuccess)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "createEmptyPromotionsByType" /* 7666 */;
+import closure_5 from "createEmptyPromotionsByType" /* 7487 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);

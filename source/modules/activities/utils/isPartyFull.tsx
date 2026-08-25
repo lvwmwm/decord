@@ -1,10 +1,10 @@
-// Module ID: 10959
-// Function ID: 10960
+// Module ID: 11316
+// Function ID: 11317
 // Name: isPartyFull
 // Dependencies: [2]
 // Exports: isPartyFull
 
-// Module 10959 (isPartyFull)
+// Module 11316 (isPartyFull)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/isPartyFull.tsx");

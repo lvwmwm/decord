@@ -1,12 +1,12 @@
-// Module ID: 7769
-// Function ID: 7770
+// Module ID: 7590
+// Function ID: 7591
 // Name: getUnderlyingIOSExceptionRecursively
-// Dependencies: [7770, 2]
+// Dependencies: [7591, 2]
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 7769 (getUnderlyingIOSExceptionRecursively)
+// Module 7590 (getUnderlyingIOSExceptionRecursively)
 import set from "set" /* 2 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 7770 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 7591 */;
 
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
   if (null != NSUnderlyingError.userInfo.NSUnderlyingError) {

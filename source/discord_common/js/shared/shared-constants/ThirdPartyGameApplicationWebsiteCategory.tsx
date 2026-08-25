@@ -1,9 +1,9 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 9434
+// Function ID: 9435
 // Name: ThirdPartyGameApplicationWebsiteCategory
 // Dependencies: [2]
 
-// Module 9141 (ThirdPartyGameApplicationWebsiteCategory)
+// Module 9434 (ThirdPartyGameApplicationWebsiteCategory)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ThirdPartyGameApplicationWebsiteCategory.tsx");

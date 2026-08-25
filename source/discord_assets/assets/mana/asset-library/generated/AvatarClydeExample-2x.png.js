@@ -1,9 +1,9 @@
-// Module ID: 5514
-// Function ID: 5515
+// Module ID: 6196
+// Function ID: 6197
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5514 (metadata)
+// Module 6196 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarClydeExample-2x.png.js");

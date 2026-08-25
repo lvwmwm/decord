@@ -1,10 +1,10 @@
-// Module ID: 8944
-// Function ID: 8945
+// Module ID: 9201
+// Function ID: 9202
 // Name: createStageChannelForEvent
-// Dependencies: [5, 1395, 1391, 1910, 1397, 676, 8885, 38, 8106, 8820, 2]
+// Dependencies: [5, 1395, 1391, 1910, 1397, 676, 9142, 38, 7931, 9087, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8944 (createStageChannelForEvent)
+// Module 9201 (createStageChannelForEvent)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1395 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
@@ -43,7 +43,7 @@ function _createStageChannelForEvent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ function _preStartEventActions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -243,7 +243,7 @@ function _setEventAsActive() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -344,7 +344,7 @@ function _setEventAsActive() {
               return obj;
             }
             id = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp41) {
           id = tmp;

@@ -1,15 +1,15 @@
-// Module ID: 8966
-// Function ID: 8967
+// Module ID: 8930
+// Function ID: 8931
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 4497, 4033, 1922, 2008, 4069, 8967, 4346, 8980, 2]
+// Dependencies: [5, 5450, 4034, 1922, 2009, 4070, 8931, 4347, 8943, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8966 (showUserProfileActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
+// Module 8930 (showUserProfileActionSheet)
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "markAllUserIdListsStale" /* 4033 */;
+import closure_5 from "markAllUserIdListsStale" /* 4034 */;
 
 require = arg1;
 function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
@@ -30,10 +30,10 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       }
       obj.speedBumpType = str2;
       obj.openedAt = timestamp;
-      obj.openLazy(tmp2(2008)(8967, tmp3.paths), combined, obj);
+      obj.openLazy(tmp2(2009)(8931, tmp3.paths), combined, obj);
     }
   }
-  const tmp15 = asyncRequireImpl(8980, dependencyMap.paths);
+  const tmp15 = asyncRequireImpl(8943, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);
@@ -67,7 +67,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -102,7 +102,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
             closure_1_6(userId);
           }
           paths = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         paths = tmp;

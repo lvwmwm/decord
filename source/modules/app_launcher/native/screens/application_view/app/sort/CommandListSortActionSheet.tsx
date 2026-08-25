@@ -1,18 +1,18 @@
-// Module ID: 11379
-// Function ID: 11380
+// Module ID: 11735
+// Function ID: 11736
 // Name: CommandListSortActionSheet
-// Dependencies: [19, 11364, 21, 1236, 6988, 6987, 11380, 712, 8140, 8139, 2]
+// Dependencies: [19, 11720, 21, 1236, 5503, 5502, 11736, 712, 8136, 8135, 2]
 // Exports: default
 
-// Module 11379 (CommandListSortActionSheet)
+// Module 11735 (CommandListSortActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
-import Background from "Background" /* 6988 */;
-import context from "context" /* 8140 */;
-import ArrowsUpDownIcon from "ArrowsUpDownIcon" /* 11380 */;
-import { CommandListSortOrder } from "CommandListSortOrder" /* 11364 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5502 */;
+import Background from "Background" /* 5503 */;
+import context from "context" /* 8136 */;
+import ArrowsUpDownIcon from "ArrowsUpDownIcon" /* 11736 */;
+import { CommandListSortOrder } from "CommandListSortOrder" /* 11720 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

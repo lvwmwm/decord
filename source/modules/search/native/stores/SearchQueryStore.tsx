@@ -1,20 +1,20 @@
-// Module ID: 11559
-// Function ID: 11560
+// Module ID: 11906
+// Function ID: 11907
 // Name: prototype
-// Dependencies: [1391, 4033, 1922, 8546, 8545, 676, 4989, 1236, 11560, 11572, 1990, 589, 709, 2]
+// Dependencies: [1391, 4034, 1922, 8554, 8553, 676, 4574, 1236, 11907, 11919, 1991, 589, 709, 2]
 
-// Module 11559 (prototype)
+// Module 11906 (prototype)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 11560 */;
-import isCompleteDefault from "isComplete" /* 11572 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11907 */;
+import isCompleteDefault from "isComplete" /* 11919 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "markAllUserIdListsStale" /* 4033 */;
+import closure_4 from "markAllUserIdListsStale" /* 4034 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 8545 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8554 */;
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 8553 */;
 import ME from "ME" /* 676 */;
-import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1991 */;
 
 require = arg1;
 ({ EMPTY_SEARCH_QUERY_STRING: closure_6, SearchQueryTagTypes: error } = MessageEmbedTypes);
@@ -178,8 +178,8 @@ const prototype = function SearchQueryStateManager(type) {
   } else {
     let channelName;
     if (null != channel) {
-      channelName = obj(4989).computeChannelName(channel, closure_5, closure_4);
-      const obj2 = obj(4989);
+      channelName = obj(4574).computeChannelName(channel, closure_5, closure_4);
+      const obj2 = obj(4574);
     }
     if (null == channelName) {
       let items1 = [];
@@ -190,11 +190,11 @@ const prototype = function SearchQueryStateManager(type) {
       const intl = obj(1236).intl;
       const stringResult = intl.string(obj(1236).t.WNpFHa);
       let _HermesInternal = HermesInternal;
-      obj[2] = "" + stringResult + ": " + obj(11560).quoteChannelName(channelName);
+      obj[2] = "" + stringResult + ": " + obj(11907).quoteChannelName(channelName);
       obj[3] = type.channelId;
       obj[4] = SearchFilterAddLocations.CLIENT_AUTO_ADD;
       items1 = [obj];
-      const obj4 = obj(11560);
+      const obj4 = obj(11907);
     }
     items = items1;
   }

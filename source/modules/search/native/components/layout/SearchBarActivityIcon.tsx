@@ -1,17 +1,17 @@
-// Module ID: 15948
-// Function ID: 15949
+// Module ID: 15980
+// Function ID: 15981
 // Name: items
-// Dependencies: [19, 17, 4976, 11559, 8546, 21, 4668, 712, 647, 11560, 4119, 4671, 7389, 500, 2]
+// Dependencies: [19, 17, 6006, 11906, 8554, 21, 4380, 712, 647, 11907, 4120, 4381, 6115, 500, 2]
 
-// Module 15948 (items)
+// Module 15980 (items)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleReaction" /* 4976 */;
-import closure_6 from "prototype" /* 11559 */;
-import { SEARCH_MESSAGE_TAB_SENTINEL as closure_7 } from "MessageEmbedTypes" /* 8546 */;
+import closure_5 from "handleReaction" /* 6006 */;
+import closure_6 from "prototype" /* 11906 */;
+import { SEARCH_MESSAGE_TAB_SENTINEL as closure_7 } from "MessageEmbedTypes" /* 8554 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;

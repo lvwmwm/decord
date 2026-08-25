@@ -1,14 +1,14 @@
-// Module ID: 5523
-// Function ID: 5524
+// Module ID: 6205
+// Function ID: 6206
 // Name: AvatarLockeExample
-// Dependencies: [21, 5454, 5524, 2]
+// Dependencies: [21, 5374, 6206, 2]
 // Exports: AvatarLockeExample
 
-// Module 5523 (AvatarLockeExample)
+// Module 6205 (AvatarLockeExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5524 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6206 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarLockeExample.native.tsx");

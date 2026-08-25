@@ -1,19 +1,19 @@
-// Module ID: 15980
-// Function ID: 15981
+// Module ID: 16012
+// Function ID: 16013
 // Name: GuildChannelLabel
-// Dependencies: [19, 17, 8546, 21, 4668, 712, 4989, 15981, 6870, 15983, 15973, 2]
+// Dependencies: [19, 17, 8554, 21, 4380, 712, 4574, 16013, 4866, 16015, 16005, 2]
 
-// Module 15980 (GuildChannelLabel)
+// Module 16012 (GuildChannelLabel)
 import ThemesDefault from "Themes" /* 712 */;
-import computeChannelNameDefault from "computeChannelName" /* 4989 */;
-import getChannelIcon from "getChannelIcon" /* 6870 */;
-import SearchListRow from "SearchListRow" /* 15973 */;
-import ChannelContentComponent from "ChannelContentComponent" /* 15981 */;
-import LaunchpadChannelIcon from "LaunchpadChannelIcon" /* 15983 */;
+import computeChannelNameDefault from "computeChannelName" /* 4574 */;
+import getChannelIcon from "getChannelIcon" /* 4866 */;
+import SearchListRow from "SearchListRow" /* 16005 */;
+import ChannelContentComponent from "ChannelContentComponent" /* 16013 */;
+import LaunchpadChannelIcon from "LaunchpadChannelIcon" /* 16015 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "MessageEmbedTypes" /* 8546 */;
+import { CHANNEL_LIST_SEARCH_LAYOUT as closure_5 } from "MessageEmbedTypes" /* 8554 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

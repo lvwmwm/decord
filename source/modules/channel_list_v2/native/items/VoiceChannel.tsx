@@ -1,20 +1,20 @@
-// Module ID: 15560
-// Function ID: 15561
+// Module ID: 15592
+// Function ID: 15593
 // Name: _handleVoiceChannelPress
-// Dependencies: [5, 19, 17, 5276, 4024, 4777, 5048, 4550, 10094, 676, 21, 712, 6896, 8561, 2008, 8700, 8928, 15558, 15561, 8712, 589, 15551, 9324, 6844, 8216, 8923, 698, 15552, 15442, 9958, 1236, 4984, 15456, 15447, 11284, 2]
+// Dependencies: [5, 19, 17, 7133, 4025, 4395, 4589, 4455, 9950, 676, 21, 712, 4892, 8569, 2009, 4615, 9185, 15590, 15593, 9899, 589, 15583, 9597, 4370, 8212, 9180, 698, 15584, 15473, 9816, 1236, 4566, 15487, 15478, 11642, 2]
 
-// Module 15560 (_handleVoiceChannelPress)
+// Module 15592 (_handleVoiceChannelPress)
 import ThemesDefault from "Themes" /* 712 */;
-import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11284 */;
+import useEmbeddedAppsDefault from "useEmbeddedApps" /* 11642 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 5276 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_8 from "generateOldThreadCutoff" /* 4777 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 5048 */;
-import closure_10 from "getVoiceStatesForGuild" /* 4550 */;
-import { NO_VOICE_STATES } from "getVoiceStatesForGuild" /* 4550 */;
+import closure_6 from "handleConnectionOpen" /* 7133 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_8 from "generateOldThreadCutoff" /* 4395 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_10 from "getVoiceStatesForGuild" /* 4455 */;
+import { NO_VOICE_STATES } from "getVoiceStatesForGuild" /* 4455 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -37,7 +37,7 @@ function _handleVoiceChannelPress() {
           obj[0] = openMemberVerificationModal;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -98,7 +98,7 @@ function _handleVoiceChannelPress() {
           } else {
             openMemberVerificationModal.openGuildVoiceModal(guildId, "Channel List");
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c3 = tmp;

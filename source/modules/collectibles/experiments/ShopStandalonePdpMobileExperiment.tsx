@@ -1,10 +1,10 @@
-// Module ID: 12052
-// Function ID: 12053
+// Module ID: 12377
+// Function ID: 12378
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useIsShopStandalonePdpMobileEnabled
 
-// Module 12052 (apexExperiment)
+// Module 12377 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

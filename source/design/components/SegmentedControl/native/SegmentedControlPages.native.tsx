@@ -1,14 +1,14 @@
-// Module ID: 11834
-// Function ID: 11835
+// Module ID: 12174
+// Function ID: 12175
 // Name: SegmentedControlPage
-// Dependencies: [32, 19, 17, 21, 4119, 11835, 500, 6408, 4736, 4687, 2]
+// Dependencies: [32, 19, 17, 21, 4120, 12175, 500, 5533, 4811, 4763, 2]
 // Exports: SegmentedControlPages
 
-// Module 11834 (SegmentedControlPage)
+// Module 12174 (SegmentedControlPage)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4119" /* 4119 */;
+import importDefaultResult from "module_4120" /* 4120 */;
 
 const require = arg1;
 function SegmentedControlPage(children) {

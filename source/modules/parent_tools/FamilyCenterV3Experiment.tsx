@@ -1,10 +1,10 @@
-// Module ID: 5369
-// Function ID: 5370
+// Module ID: 7200
+// Function ID: 7201
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getIsFamilyCenterV3Enabled, useIsFamilyCenterV3Enabled
 
-// Module 5369 (apexExperiment)
+// Module 7200 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

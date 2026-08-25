@@ -1,17 +1,17 @@
-// Module ID: 13601
-// Function ID: 13602
+// Module ID: 13636
+// Function ID: 13637
 // Name: Badge
-// Dependencies: [19, 17, 1995, 676, 1299, 21, 4668, 712, 500, 1363, 589, 4739, 1898, 8154, 2]
+// Dependencies: [19, 17, 1996, 676, 1299, 21, 4380, 712, 500, 1363, 589, 4376, 1898, 8150, 2]
 // Exports: MaskedBadge
 
-// Module 13601 (Badge)
+// Module 13636 (Badge)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "_getSystemLocale" /* 1996 */;
 import PX_16 from "PX_16" /* 1299 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import set from "set" /* 500 */;
 
 let require = arg1;
@@ -122,7 +122,7 @@ class Badge {
         items4[0] = items2.badgeText;
         items4[1] = textStyle;
         obj3[0] = items4;
-        tmp11 = require("module_8154");
+        tmp11 = require("module_8150");
         tmpResult2 = require("shortenAndLocalizeNumber");
         tmp12 = globalThis;
         _Math = Math;

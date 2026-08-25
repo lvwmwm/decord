@@ -1,15 +1,15 @@
-// Module ID: 8208
-// Function ID: 8209
+// Module ID: 8204
+// Function ID: 8205
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4668, 1363, 712, 4227, 2]
+// Dependencies: [19, 4380, 1363, 712, 4228, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 8208 (getEmbedThemeColors)
+// Module 8204 (getEmbedThemeColors)
 import ThemesDefault from "Themes" /* 712 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import hexToRgba from "hexToRgba" /* 4227 */;
+import hexToRgba from "hexToRgba" /* 4228 */;
 import closure_3 from "noop" /* 19 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 const result = createCacheKey.experimental_createToken((theme) => {

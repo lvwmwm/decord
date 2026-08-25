@@ -1,9 +1,9 @@
-// Module ID: 9791
-// Function ID: 9792
+// Module ID: 10568
+// Function ID: 10569
 // Name: XboxLinkModalScenes
 // Dependencies: [2]
 
-// Module 9791 (XboxLinkModalScenes)
+// Module 10568 (XboxLinkModalScenes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/xbox/XboxLinkConstants.tsx");

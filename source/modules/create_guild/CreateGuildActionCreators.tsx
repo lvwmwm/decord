@@ -1,9 +1,9 @@
-// Module ID: 11536
-// Function ID: 11537
+// Module ID: 11887
+// Function ID: 11888
 // Name: _createGuildFromTemplate
-// Dependencies: [5, 676, 5232, 503, 4277, 2]
+// Dependencies: [5, 676, 4601, 503, 4278, 2]
 
-// Module 11536 (_createGuildFromTemplate)
+// Module 11887 (_createGuildFromTemplate)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -31,7 +31,7 @@ function _createGuildFromTemplate() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -67,13 +67,13 @@ function _createGuildFromTemplate() {
               c9 = 2;
               c10 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = callback2(5232).post(obj1);
+              obj5[0] = callback2(4601).post(obj1);
               return obj5;
             }
           } else if (1 === tmp7) {
             c8 = 0;
             callback = closure_7;
-            const aPIError = new callback(4277).APIError(callback);
+            const aPIError = new callback(4278).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c10 = 3;

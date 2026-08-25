@@ -1,12 +1,12 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16166
+// Function ID: 16167
 // Name: MessagePreview
-// Dependencies: [19, 9103, 676, 21, 589, 1236, 15965, 12751, 2]
+// Dependencies: [19, 9069, 676, 21, 589, 1236, 15997, 8754, 2]
 // Exports: default
 
-// Module 16134 (MessagePreview)
+// Module 16166 (MessagePreview)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "messages" /* 9103 */;
+import closure_4 from "messages" /* 9069 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -35,5 +35,5 @@ export default function MessagePreview(channelId) {
     callback(table[6]).clearMessages();
   }, []);
   obj = { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 };
-  return jsx(onBeforeJumpToMessage(12751).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 });
+  return jsx(onBeforeJumpToMessage(8754).ChatPreview, { channelId: channelId.channelId, messages: stateFromStoresObject.messages, jumpToChatProps: memo, analyticsLocation: closure_6 });
 };

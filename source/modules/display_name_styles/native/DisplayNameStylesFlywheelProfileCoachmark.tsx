@@ -1,17 +1,17 @@
-// Module ID: 16117
-// Function ID: 16118
+// Module ID: 16149
+// Function ID: 16150
 // Name: CoachmarkImage
-// Dependencies: [19, 17, 1922, 1388, 21, 4668, 589, 4042, 1236, 2694, 9351, 5452, 2]
+// Dependencies: [19, 17, 1922, 1388, 21, 4380, 589, 4043, 1236, 2695, 8800, 6136, 2]
 // Exports: default
 
-// Module 16117 (CoachmarkImage)
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
+// Module 16149 (CoachmarkImage)
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6136 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function CoachmarkImage() {
@@ -30,10 +30,10 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const stateFromStores = visible(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = visible(589);
   const tmp4 = markAsDismissed;
-  const result = markAsDismissed(4042).canUsePremiumProfileCustomization(stateFromStores);
+  const result = markAsDismissed(4043).canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1236).intl;
   const string = intl.string;
-  const tmp6 = markAsDismissed(2694);
+  const tmp6 = markAsDismissed(2695);
   if (result) {
     let stringResult = string(tmp6.h6sykk);
   } else {
@@ -42,7 +42,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   dependencyMap = stringResult;
   const intl2 = tmp(1236).intl;
   const string2 = intl2.string;
-  const tmp4Result = tmp4(2694);
+  const tmp4Result = tmp4(2695);
   if (result) {
     let string2Result = string2(tmp4Result.TyUdka);
   } else {
@@ -64,7 +64,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return callback(closure_9, {});
     }
   }), items2);
-  const obj2 = markAsDismissed(4042);
-  const coachmark = visible(9351).useCoachmark(visible.targetRef, memo);
+  const obj2 = markAsDismissed(4043);
+  const coachmark = visible(8800).useCoachmark(visible.targetRef, memo);
   return null;
 };

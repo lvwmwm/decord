@@ -1,14 +1,14 @@
-// Module ID: 5921
-// Function ID: 5922
+// Module ID: 6609
+// Function ID: 6610
 // Name: HdStreamAbstractUI
-// Dependencies: [21, 5454, 5922, 2]
+// Dependencies: [21, 5374, 6610, 2]
 // Exports: HdStreamAbstractUI
 
-// Module 5921 (HdStreamAbstractUI)
+// Module 6609 (HdStreamAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5922 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6610 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HdStreamAbstractUI.native.tsx");

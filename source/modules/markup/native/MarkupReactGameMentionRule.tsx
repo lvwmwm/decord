@@ -1,14 +1,14 @@
-// Module ID: 13127
-// Function ID: 13128
+// Module ID: 13398
+// Function ID: 13399
 // Name: MarkupGameMention
-// Dependencies: [19, 21, 4668, 712, 6936, 1236, 4511, 4771, 6719, 5454, 9133, 9138, 4739, 2]
+// Dependencies: [19, 21, 4380, 712, 4934, 6033, 1236, 4413, 4371, 8097, 5374, 9425, 9431, 4376, 2]
 // Exports: default
 
-// Module 13127 (MarkupGameMention)
+// Module 13398 (MarkupGameMention)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -28,9 +28,15 @@ export default function MarkupGameMention(state) {
   let gameId;
   const tmp = callback2();
   gameId = state.node.gameId;
-  let obj = state(6936);
+  let obj = state(4934);
   const gameMentionData = obj.useGameMentionData(gameId);
-  const intl = state(1236).intl;
+  obj1 = state(6033);
+  let tmp5;
+  if (true === state.shouldFetchGameMentionData) {
+    tmp5 = gameId;
+  }
+  const game = obj1.useGame(tmp5);
+  const intl = tmp2(1236).intl;
   const stringResult = intl.string(state(1236).t["11pdXZ"]);
   let gameName;
   if (gameMentionData != null) {
@@ -43,7 +49,7 @@ export default function MarkupGameMention(state) {
   if (gameMentionData != null) {
     gameIcon = gameMentionData.gameIcon;
   }
-  const tmp8Result = gameId(4511)(gameId, gameIcon, { size: 32 });
+  const tmp10Result = gameId(4413)(gameId, gameIcon, { size: 32 });
   if (null == gameMentionData) {
     let textColor;
     if (state != null) {
@@ -53,22 +59,22 @@ export default function MarkupGameMention(state) {
     obj[0] = textColor;
     const items = ["@", stringResult];
     obj[1] = items;
-    return closure_3(tmp2(4771).MarkupText, obj, state.key);
+    return closure_3(tmp2(4371).MarkupText, obj, state.key);
   } else {
     obj = { size: "sm", style: null };
     obj[1] = tmp.icon;
-    let tmp11 = null != tmp8Result;
-    if (tmp11) {
-      tmp11 = "" !== tmp8Result;
+    let tmp13 = null != tmp10Result;
+    if (tmp13) {
+      tmp13 = "" !== tmp10Result;
     }
-    let tmp17Result = callback(tmp2(6719).UnknownGameIcon, obj);
-    if (tmp11) {
+    let tmp19Result = callback(tmp2(8097).UnknownGameIcon, obj);
+    if (tmp13) {
       obj1 = { style: null, source: null };
       obj1[0] = tmp.icon;
       const obj2 = { uri: null };
-      obj2[0] = tmp8Result;
+      obj2[0] = tmp10Result;
       obj1[1] = obj2;
-      tmp17Result = tmp17(tmp7(5454), obj1);
+      tmp19Result = tmp19(tmp9(5374), obj1);
     }
     let str2 = "button";
     if (state.noStyleAndInteraction) {
@@ -85,21 +91,21 @@ export default function MarkupGameMention(state) {
     let fn;
     if (!state.noStyleAndInteraction) {
       fn = () => {
-        let obj = gameId(closure_1_2[10]);
-        obj = { gameId, gameProfileModalChecks: obj, source: state(closure_1_2[11]).GameProfileSources.GameMention, sourceUserId: state.authorId };
+        let obj = gameId(closure_1_2[11]);
+        obj = { gameId, gameProfileModalChecks: obj, source: state(closure_1_2[12]).GameProfileSources.GameMention, sourceUserId: state.authorId };
         obj = { shouldOpenGameProfile: true, gameId };
         obj.openGameProfileModal(obj);
       };
     }
     obj3[3] = fn;
-    const items1 = [tmp17Result, ];
+    const items1 = [tmp19Result, ];
     const obj4 = { variant: "text-sm/medium", style: null, children: null };
     obj4[1] = tmp.chipText;
     obj4[2] = gameName;
-    items1[1] = callback(tmp2(4739).Text, obj4);
+    items1[1] = callback(tmp2(4376).Text, obj4);
     obj3[4] = items1;
-    return closure_3(tmp2(4771).MarkupText, obj3, state.key);
+    return closure_3(tmp2(4371).MarkupText, obj3, state.key);
   }
-  tmp7 = gameId;
-  const tmp8 = gameId(4511);
+  const tmp10 = gameId(4413);
+  tmp9 = gameId;
 };

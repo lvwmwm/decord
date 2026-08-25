@@ -1,16 +1,16 @@
-// Module ID: 11759
-// Function ID: 11760
+// Module ID: 12099
+// Function ID: 12100
 // Name: useGuildPowerupOnDeactivate
-// Dependencies: [19, 11754, 2]
+// Dependencies: [19, 12094, 2]
 // Exports: default
 
-// Module 11759 (useGuildPowerupOnDeactivate)
+// Module 12099 (useGuildPowerupOnDeactivate)
 import closure_2 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupOnDeactivate.tsx");
 
 export default function useGuildPowerupOnDeactivate(arg0, arg1) {
-  const tmp = onToggle(11754)(arg0, arg1);
+  const tmp = onToggle(12094)(arg0, arg1);
   onToggle = tmp.onToggle;
   const items = [onToggle];
   return { isLoading: tmp.isLoading, error: tmp.error, onDeactivate: React.useCallback(() => onToggle(false), items) };

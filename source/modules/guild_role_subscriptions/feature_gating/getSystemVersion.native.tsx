@@ -1,12 +1,12 @@
-// Module ID: 6804
-// Function ID: 6805
+// Module ID: 5323
+// Function ID: 5324
 // Name: getSystemVersion
-// Dependencies: [4358, 2]
+// Dependencies: [4359, 2]
 // Exports: getSystemVersion
 
-// Module 6804 (getSystemVersion)
+// Module 5323 (getSystemVersion)
 import set from "set" /* 2 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4358 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4359 */;
 
 const result = set.fileFinishedImporting("modules/guild_role_subscriptions/feature_gating/getSystemVersion.native.tsx");
 

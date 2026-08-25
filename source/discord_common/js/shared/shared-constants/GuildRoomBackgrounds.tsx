@@ -1,9 +1,9 @@
-// Module ID: 9907
-// Function ID: 9908
+// Module ID: 4583
+// Function ID: 4584
 // Name: GuildRoomBackgrounds
 // Dependencies: [2]
 
-// Module 9907 (GuildRoomBackgrounds)
+// Module 4583 (GuildRoomBackgrounds)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildRoomBackgrounds.tsx");

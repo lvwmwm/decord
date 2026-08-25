@@ -1,28 +1,28 @@
-// Module ID: 11088
-// Function ID: 11089
+// Module ID: 11430
+// Function ID: 11431
 // Name: ChatBlockedAlert
-// Dependencies: [32, 109, 19, 17, 1218, 1991, 1910, 11081, 676, 4012, 21, 4668, 712, 4768, 1236, 1297, 11089, 4739, 11090, 7398, 647, 4030, 4766, 698, 2]
+// Dependencies: [32, 109, 19, 17, 1218, 1992, 1910, 11423, 676, 4013, 21, 4380, 712, 4833, 1236, 1297, 11431, 4376, 11432, 6125, 647, 4031, 4831, 698, 2]
 // Exports: default
 
-// Module 11088 (ChatBlockedAlert)
+// Module 11430 (ChatBlockedAlert)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4739 */;
-import componentDidMountDefault from "componentDidMount" /* 4768 */;
-import registerAssetDefault from "registerAsset" /* 11089 */;
+import Text from "Text" /* 4376 */;
+import componentDidMountDefault from "componentDidMount" /* 4833 */;
+import registerAssetDefault from "registerAsset" /* 11431 */;
 import closure_6 from "_slicedToArray" /* 32 */;
 import closure_7 from "_objectWithoutProperties" /* 109 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_9 from "fetchFingerprint" /* 1218 */;
-import closure_10 from "trackCommunicationDisabled" /* 1991 */;
+import closure_10 from "trackCommunicationDisabled" /* 1992 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import { QUARANTINE_USER_ALERT_KEY } from "AutomodEventType" /* 11081 */;
+import { QUARANTINE_USER_ALERT_KEY } from "AutomodEventType" /* 11423 */;
 import ME from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function ChatBlockedAlert(arg0) {
@@ -60,8 +60,8 @@ function PerServerProfileAlert(arg0) {
     stringResult = intl.string(getSystemLocale.t.TBeZmG);
   }
   const tmp = callback2(arg0, closure_4);
-  const tmp2Result = tmp2(11090);
-  [require, tmp8] = callback(tmp2(11090).useOpenFixQuarantinedProfileModal({ guildId }), 2);
+  const tmp2Result = tmp2(11432);
+  [require, tmp8] = callback(tmp2(11432).useOpenFixQuarantinedProfileModal({ guildId }), 2);
   if (!tmp8) {
     const intl3 = tmp2(1236).intl;
     stringResult = intl3.string(tmp2(1236).t.FFj5Dt);
@@ -142,7 +142,7 @@ export default function AutomodUserProfileQuarantineAlert(guildId) {
       return guildId(closure_1_2[21]).getAutomodReason(automodQuarantinedGuildMemberFlags);
     }
   }, items4);
-  stateFromStores(4766)(() => {
+  stateFromStores(4831)(() => {
     let obj = stateFromStores(closure_1_2[23]);
     obj = { type: closure_1_12, guild_id: guildId, other_user_id: stateFromStores };
     obj.track(closure_1_13.OPEN_MODAL, obj);

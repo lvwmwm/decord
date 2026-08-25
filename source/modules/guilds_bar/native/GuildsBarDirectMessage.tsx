@@ -1,19 +1,19 @@
-// Module ID: 15670
-// Function ID: 15671
-// Dependencies: [19, 1218, 4500, 1391, 5388, 4033, 1922, 676, 21, 4668, 712, 15623, 589, 8923, 1236, 15625, 4773, 9958, 15671, 9955, 1297, 5454, 2]
+// Module ID: 15702
+// Function ID: 15703
+// Dependencies: [19, 1218, 5103, 1391, 7242, 4034, 1922, 676, 21, 4380, 712, 15655, 589, 9180, 1236, 15657, 4391, 9816, 15703, 9813, 1297, 5374, 2]
 
-// Module 15670
+// Module 15702
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "callConnect" /* 4500 */;
+import closure_5 from "callConnect" /* 5103 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "updateGuildUnreadSentinel" /* 5388 */;
-import closure_8 from "markAllUserIdListsStale" /* 4033 */;
+import closure_7 from "updateGuildUnreadSentinel" /* 7242 */;
+import closure_8 from "markAllUserIdListsStale" /* 4034 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import { ChannelTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;

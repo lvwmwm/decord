@@ -1,12 +1,12 @@
-// Module ID: 7910
-// Function ID: 7911
+// Module ID: 7731
+// Function ID: 7732
 // Name: isTestModeForApplication
-// Dependencies: [7911, 7913, 589, 2]
+// Dependencies: [7732, 7734, 589, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 7910 (isTestModeForApplication)
-import closure_2 from "initialize" /* 7911 */;
-import closure_3 from "reset" /* 7913 */;
+// Module 7731 (isTestModeForApplication)
+import closure_2 from "initialize" /* 7732 */;
+import closure_3 from "reset" /* 7734 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/game_store/TestModeUtils.tsx");

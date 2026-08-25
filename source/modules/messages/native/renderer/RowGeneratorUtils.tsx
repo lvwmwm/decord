@@ -1,21 +1,21 @@
-// Module ID: 8361
-// Function ID: 8362
+// Module ID: 8367
+// Function ID: 8368
 // Name: nativeStyleProperties
-// Dependencies: [17, 4669, 1391, 1910, 4670, 8197, 676, 4668, 4227, 712, 7270, 4808, 1493, 2]
+// Dependencies: [17, 4372, 1391, 1910, 4373, 8193, 676, 4380, 4228, 712, 5994, 4625, 1493, 2]
 
-// Module 8361 (nativeStyleProperties)
+// Module 8367 (nativeStyleProperties)
 import ThemesDefault from "Themes" /* 712 */;
 import getSrcWithWidthAndHeightDefault from "getSrcWithWidthAndHeight" /* 1493 */;
-import hexToRgba from "hexToRgba" /* 4227 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
-import useCanManageGuildOfficialMessages from "useCanManageGuildOfficialMessages" /* 7270 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import hexToRgba from "hexToRgba" /* 4228 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4625 */;
+import useCanManageGuildOfficialMessages from "useCanManageGuildOfficialMessages" /* 5994 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4670 */;
-import { SwipeActionsType } from "Changeset" /* 8197 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4373 */;
+import { SwipeActionsType } from "Changeset" /* 8193 */;
 import ME from "ME" /* 676 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -68,7 +68,7 @@ createCacheKey = {
             guild_id = channel.guild_id;
           }
           guild = guild.getGuild(guild_id);
-          let tmp3Result = tmp3(7270);
+          let tmp3Result = tmp3(5994);
           if (tmp3Result.isGuildOfficialMessagesEnabled(guild, "RowGeneratorUtils")) {
             let officialMessageColor;
             if (guild != null) {
@@ -80,7 +80,7 @@ createCacheKey = {
             if (message.mentioned) {
               let ephemeralGutterColor = tmp.mentionedGutterColor;
             } else {
-              tmp3Result = tmp3(4808);
+              tmp3Result = tmp3(4625);
               if (tmp3Result.hasEphemeralAppearance(message)) {
                 ephemeralGutterColor = tmp.ephemeralGutterColor;
               }

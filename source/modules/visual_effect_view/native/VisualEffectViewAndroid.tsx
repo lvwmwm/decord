@@ -1,13 +1,13 @@
-// Module ID: 4735
-// Function ID: 4736
+// Module ID: 4810
+// Function ID: 4811
 // Name: MODERN_ANDROID_BLURRING_AVAILABLE
-// Dependencies: [4358, 4733, 4734, 2]
+// Dependencies: [4359, 4808, 4809, 2]
 
-// Module 4735 (MODERN_ANDROID_BLURRING_AVAILABLE)
+// Module 4810 (MODERN_ANDROID_BLURRING_AVAILABLE)
 import set from "set" /* 2 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4734 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4358 */;
-import importDefaultResult from "map" /* 4733 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4809 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4359 */;
+import importDefaultResult from "map" /* 4808 */;
 
 const obj = { componentName: "DCDVisualEffectView", componentFoundInstance: null };
 const tmp2 = DCDDeviceManager.getSystemVersionMajor() >= 31;

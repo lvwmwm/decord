@@ -1,9 +1,9 @@
-// Module ID: 7197
-// Function ID: 7198
+// Module ID: 5854
+// Function ID: 5855
 // Name: QUICK_SWITCHER
 // Dependencies: [2]
 
-// Module 7197 (QUICK_SWITCHER)
+// Module 5854 (QUICK_SWITCHER)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_analytics/AnalyticsLocation.tsx");

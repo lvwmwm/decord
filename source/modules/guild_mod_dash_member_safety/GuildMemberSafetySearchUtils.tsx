@@ -1,10 +1,10 @@
-// Module ID: 5249
-// Function ID: 5250
+// Module ID: 7126
+// Function ID: 7127
 // Name: splitQuery
-// Dependencies: [5250, 2]
+// Dependencies: [7127, 2]
 // Exports: splitQuery
 
-// Module 5249 (splitQuery)
+// Module 7126 (splitQuery)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearchUtils.tsx");

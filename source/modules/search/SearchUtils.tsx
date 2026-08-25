@@ -1,27 +1,27 @@
-// Module ID: 11560
-// Function ID: 11561
+// Module ID: 11907
+// Function ID: 11908
 // Name: SearchTokenTypes
-// Dependencies: [32, 1391, 1981, 5258, 4033, 1980, 1922, 8546, 676, 3978, 1236, 11561, 11, 11566, 12, 11567, 4989, 4223, 2]
+// Dependencies: [32, 1391, 1982, 4620, 4034, 1981, 1922, 8554, 676, 3979, 1236, 11908, 11, 11913, 12, 11914, 4574, 4224, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 11560 (SearchTokenTypes)
+// Module 11907 (SearchTokenTypes)
 import applyDefault from "apply" /* 12 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import handleConnectionOpenDefault from "handleConnectionOpen" /* 1980 */;
-import tDefault from "t" /* 3978 */;
-import nameFromUserDefault from "nameFromUser" /* 4223 */;
-import computeChannelName from "computeChannelName" /* 4989 */;
-import getShortcuts from "getShortcuts" /* 11561 */;
-import getShortcutsDefault from "getShortcuts" /* 11561 */;
-import getMatchDefault from "getMatch" /* 11566 */;
-import _modDef11567 from "module_11567" /* 11567 */;
+import handleConnectionOpenDefault from "handleConnectionOpen" /* 1981 */;
+import hooksDefault from "hooks" /* 3979 */;
+import nameFromUserDefault from "nameFromUser" /* 4224 */;
+import computeChannelName from "computeChannelName" /* 4574 */;
+import getShortcuts from "getShortcuts" /* 11908 */;
+import getShortcutsDefault from "getShortcuts" /* 11908 */;
+import getMatchDefault from "getMatch" /* 11913 */;
+import _modDef11914 from "module_11914" /* 11914 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "comparator" /* 1981 */;
-import closure_6 from "initialize" /* 5258 */;
-import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_5 from "comparator" /* 1982 */;
+import closure_6 from "initialize" /* 4620 */;
+import closure_7 from "markAllUserIdListsStale" /* 4034 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { SearchTabs } from "MessageEmbedTypes" /* 8546 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 8554 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -89,8 +89,8 @@ export const getSearchTabFetchId = function getSearchTabFetchId(closure_0, closu
   return "" + channelId + "-" + closure_1 + "-" + searchResultsQuery;
 };
 export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(arg0) {
-  obj = tDefault();
-  const diffResult = obj.diff(tDefault(arg0), "s");
+  obj = hooksDefault();
+  const diffResult = obj.diff(hooksDefault(arg0), "s");
   if (diffResult > c17) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
@@ -506,7 +506,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(11566).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(11913).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj4 = { type: null, filter: null, token: null };
@@ -629,7 +629,7 @@ export const refreshSearchTokens = function refreshSearchTokens() {
     return closure_20.addRule({ type });
   });
   const obj4 = applyDefault(crossDMSearchTokensConfig);
-  const result1 = _modDef11567.markSearchTokensRefreshed();
+  const result1 = _modDef11914.markSearchTokensRefreshed();
 };
 export const getChannelDisplayName = function getChannelDisplayName(isDM) {
   const channelName = computeChannelName.computeChannelName(isDM, closure_8, closure_7);

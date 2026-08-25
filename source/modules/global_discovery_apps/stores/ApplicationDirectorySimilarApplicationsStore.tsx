@@ -1,9 +1,9 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11657
+// Function ID: 11658
 // Name: getSimilarApplications
 // Dependencies: [1405, 589, 709, 2]
 
-// Module 11301 (getSimilarApplications)
+// Module 11657 (getSimilarApplications)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import privDefault from "priv" /* 1405 */;

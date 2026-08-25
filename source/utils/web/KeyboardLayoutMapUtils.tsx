@@ -1,17 +1,17 @@
-// Module ID: 13230
-// Function ID: 13231
+// Module ID: 13369
+// Function ID: 13370
 // Name: normalizeKey
-// Dependencies: [32, 5, 706, 5233, 3, 500, 13229, 595, 2]
+// Dependencies: [32, 5, 706, 7110, 3, 500, 13368, 595, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 13230 (normalizeKey)
+// Module 13369 (normalizeKey)
 import timestampDefault from "timestamp" /* 3 */;
 import Storage2 from "Storage" /* 595 */;
-import keyCodeDefault from "keyCode" /* 13229 */;
+import keyCodeDefault from "keyCode" /* 13368 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "refreshSourceMapCookie" /* 706 */;
-import items from "items" /* 5233 */;
+import items from "items" /* 7110 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -46,7 +46,7 @@ function _syncKeyboardLayoutMap() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -189,7 +189,7 @@ function getKeyboardMapper() {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -238,7 +238,7 @@ function getKeyboardMapper() {
                 });
                 callback();
                 c4 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } catch (tmp17) {
               c4 = tmp;
@@ -278,7 +278,7 @@ function _resetKeyboardMapper() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -314,7 +314,7 @@ function _resetKeyboardMapper() {
             obj.reset();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp10) {
         c2 = tmp;
@@ -361,7 +361,7 @@ function reverseLookupCodeFromKey(toLocaleLowerCase) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -410,7 +410,7 @@ function reverseLookupCodeFromKey(toLocaleLowerCase) {
                   });
                   callback();
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp17) {
                 c4 = tmp;
@@ -472,7 +472,7 @@ function getExactKeyboardEventMatchFromAny(key) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -521,7 +521,7 @@ function getExactKeyboardEventMatchFromAny(key) {
                   });
                   callback();
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp17) {
                 c4 = tmp;
@@ -588,7 +588,7 @@ function initializeKeyboardMapper() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -637,7 +637,7 @@ function initializeKeyboardMapper() {
               });
               callback();
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp17) {
             c4 = tmp;
@@ -1315,7 +1315,7 @@ export const getLayoutMap = function getLayoutMap() {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -1364,7 +1364,7 @@ export const getLayoutMap = function getLayoutMap() {
                   });
                   callback();
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp17) {
                 c4 = tmp;
@@ -1425,7 +1425,7 @@ export const getKeyboardEventShapeFromAny = function getKeyboardEventShapeFromAn
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -1474,7 +1474,7 @@ export const getKeyboardEventShapeFromAny = function getKeyboardEventShapeFromAn
                   });
                   callback();
                   c4 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } catch (tmp17) {
                 c4 = tmp;

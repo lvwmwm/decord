@@ -1,15 +1,15 @@
-// Module ID: 7421
-// Function ID: 7422
+// Module ID: 7019
+// Function ID: 7020
 // Name: getState
-// Dependencies: [17, 676, 589, 698, 2008, 709, 2]
+// Dependencies: [17, 676, 589, 698, 2009, 709, 2]
 
-// Module 7421 (getState)
+// Module 7019 (getState)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import initializeDefault from "initialize" /* 589 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
 import promise from "expandEventProperties" /* 698 */;
 
 const AppStates = ME.AppStates;

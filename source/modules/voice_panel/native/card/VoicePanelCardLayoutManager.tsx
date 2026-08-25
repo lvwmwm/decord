@@ -1,18 +1,18 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 11843
+// Function ID: 11844
 // Name: getTargetCardSize
-// Dependencies: [32, 19, 17, 4778, 11489, 11492, 4549, 4119, 10600, 643, 11493, 11494, 11495, 705, 2]
+// Dependencies: [32, 19, 17, 4396, 11841, 11844, 4401, 4120, 10397, 643, 10794, 11845, 11846, 705, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 11491 (getTargetCardSize)
+// Module 11843 (getTargetCardSize)
 import shallowEqualDefault from "shallowEqual" /* 643 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { PixelRatio } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4778 */;
-import VoicePanelModes from "VoicePanelModes" /* 11489 */;
-import CARD_SIZE from "CARD_SIZE" /* 11492 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4549 */;
+import closure_6 from "getParticipants" /* 4396 */;
+import VoicePanelModes from "VoicePanelModes" /* 11841 */;
+import CARD_SIZE from "CARD_SIZE" /* 11844 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4401 */;
 import set from "set" /* 2 */;
 
 const require = arg1;

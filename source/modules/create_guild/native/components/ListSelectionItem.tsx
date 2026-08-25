@@ -1,12 +1,12 @@
-// Module ID: 11540
-// Function ID: 11541
+// Module ID: 11891
+// Function ID: 11892
 // Name: ListSelectionItem
-// Dependencies: [19, 21, 6322, 2]
+// Dependencies: [19, 21, 5480, 2]
 // Exports: default
 
-// Module 11540 (ListSelectionItem)
+// Module 11891 (ListSelectionItem)
 import noopAll from "noop" /* 19 */;
-import TableRowInner from "TableRowInner" /* 6322 */;
+import TableRowInner from "TableRowInner" /* 5480 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

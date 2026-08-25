@@ -1,26 +1,26 @@
-// Module ID: 5389
-// Function ID: 5390
+// Module ID: 7243
+// Function ID: 7244
 // Name: findOrCreateMessageRecord
-// Dependencies: [4034, 1218, 1391, 4999, 4777, 4033, 4201, 5048, 1922, 676, 595, 4808, 5257, 4824, 12, 4553, 5390, 5391, 589, 709, 2]
+// Dependencies: [4035, 1218, 1391, 4623, 4395, 4034, 4202, 4589, 1922, 676, 595, 4625, 4619, 4639, 12, 4458, 5997, 7244, 589, 709, 2]
 
-// Module 5389 (findOrCreateMessageRecord)
+// Module 7243 (findOrCreateMessageRecord)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import sleep from "sleep" /* 4553 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4808 */;
-import isMentioned from "isMentioned" /* 4824 */;
-import isMentionedDefault from "isMentioned" /* 4824 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 5257 */;
-import isSystemMessageDefault from "isSystemMessage" /* 5390 */;
-import closure_3 from "hasFlag" /* 4034 */;
+import sleep from "sleep" /* 4458 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4619 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4625 */;
+import isMentioned from "isMentioned" /* 4639 */;
+import isMentionedDefault from "isMentioned" /* 4639 */;
+import isSystemMessageDefault from "isSystemMessage" /* 5997 */;
+import closure_3 from "hasFlag" /* 4035 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "reinjectEphemerals" /* 4999 */;
-import closure_7 from "generateOldThreadCutoff" /* 4777 */;
-import closure_8 from "markAllUserIdListsStale" /* 4033 */;
-import closure_9 from "handleConnectionOpen" /* 4201 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_6 from "reinjectEphemerals" /* 4623 */;
+import closure_7 from "generateOldThreadCutoff" /* 4395 */;
+import closure_8 from "markAllUserIdListsStale" /* 4034 */;
+import closure_9 from "handleConnectionOpen" /* 4202 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4589 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { Storage } from "Storage" /* 595 */;
@@ -103,7 +103,7 @@ function parseMessage(message, channelId) {
       }
       id = id.getId();
       if (!blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(5391)(message, id)) {
+        if (!tmp2(7244)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof closure_3)) {
             message = store2.getMessage(message.channel_id, message.id);
@@ -119,7 +119,7 @@ function parseMessage(message, channelId) {
           obj[2] = !closure_23.everyoneFilter;
           obj[3] = !closure_23.roleFilter;
           let tmp20 = null;
-          if (tmp2(4824)(obj)) {
+          if (tmp2(4639)(obj)) {
             let tmp2ResultResult = c26;
             if (c26) {
               tmp2ResultResult = closure_7.ackMessageId(channel.id) !== tmp12.id;
@@ -130,8 +130,8 @@ function parseMessage(message, channelId) {
               obj[1] = id;
               obj[2] = closure_10.isSuppressEveryoneEnabled(channel.getGuildId());
               obj[3] = closure_10.isSuppressRolesEnabled(channel.getGuildId());
-              tmp2ResultResult = tmp2(4824)(obj);
-              const tmp2Result = tmp2(4824);
+              tmp2ResultResult = tmp2(4639)(obj);
+              const tmp2Result = tmp2(4639);
             }
             tmp20 = tmp12;
             if (tmp2ResultResult) {
@@ -617,8 +617,8 @@ obj = {
         const findIndexResult = applyDefault.findIndex(substr, (id) => id.id === id);
         substr = substr.slice();
         if (null != substr[findIndexResult]) {
-          substr[findIndexResult] = id(4808).updateMessageRecord(tmp7, message.message);
-          const obj2 = id(4808);
+          substr[findIndexResult] = id(4625).updateMessageRecord(tmp7, message.message);
+          const obj2 = id(4625);
         }
       }
     }

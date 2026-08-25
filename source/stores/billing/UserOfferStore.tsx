@@ -1,20 +1,20 @@
-// Module ID: 7459
-// Function ID: 7460
+// Module ID: 7057
+// Function ID: 7058
 // Name: emitChanges
-// Dependencies: [7460, 7461, 7648, 7463, 1922, 5362, 4048, 1924, 589, 7649, 4042, 709, 2]
+// Dependencies: [7058, 7059, 7469, 7061, 1922, 7004, 4049, 1924, 589, 7470, 4043, 709, 2]
 
-// Module 7459 (emitChanges)
+// Module 7057 (emitChanges)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
-import apexExperiment from "apexExperiment" /* 7649 */;
-import closure_2 from "createFromServer" /* 7460 */;
-import closure_3 from "emitChanges" /* 7461 */;
-import closure_4 from "createFromServer" /* 7648 */;
-import closure_5 from "createFromServer" /* 7463 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4043 */;
+import apexExperiment from "apexExperiment" /* 7470 */;
+import closure_2 from "createFromServer" /* 7058 */;
+import closure_3 from "emitChanges" /* 7059 */;
+import closure_4 from "createFromServer" /* 7469 */;
+import closure_5 from "createFromServer" /* 7061 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "addEntitlement" /* 5362 */;
-import closure_8 from "reset" /* 4048 */;
+import closure_7 from "addEntitlement" /* 7004 */;
+import closure_8 from "reset" /* 4049 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 require = arg1;
@@ -87,7 +87,7 @@ function handleReferralTrialStoreUpdate() {
   return false;
 }
 ({ ANNUAL_DISCOUNT_IDS: c9, DISCOUNT_OFFERS_REQUIRES_REMINDER_ROLLOUT: c10, PREMIUM_TIER_2_CHURN_1_MONTH_DISCOUNT_ID: unpackModuleId, PREMIUM_TIER_2_CHURN_3_MONTH_DISCOUNT_ID: closure_12, SubscriptionPlanInfo: map1, SubscriptionTrials: closure_14, TRIAL_OFFERS_REQUIRES_REMINDER_ROLLOUT: closure_15 } = GuildFeatures);
-let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: "PX_16", userDiscountOffers: "TRANSPARENT", userDiscounts: 0, isFetching: "19.2.3", lastFetchSuccessful: "react-native-renderer" };
+let obj = { userOffersLastFetchedAtDate: "r", userTrialOffers: "PX_16", userDiscountOffers: "minForce", userDiscounts: "maxForce", isFetching: "feedbackOnActivation", lastFetchSuccessful: "function changeEventCalculator_Pnpm_hoverGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={changeX:current.x,changeY:current.y};}else{changePayload={changeX:current.x-previous.x,changeY:current.y-previous.y};}return{...current,...changePayload};}" };
 obj[1] = {};
 obj[2] = {};
 const PersistedStore = initializeDefault.PersistedStore;
@@ -228,7 +228,7 @@ prototype["getAlmostExpiringTrialOffersForReminder"] = function getAlmostExpirin
   let values = Object.values(closure_14);
   const _require = values.map((id) => id.id);
   const currentUser = authStore.getCurrentUser();
-  obj = _require(4042);
+  obj = _require(4043);
   if (obj.isPremium(currentUser)) {
     if (!self.canFractionalPremiumUserUseOffer()) {
       items = [];
@@ -306,7 +306,7 @@ prototype["getAlmostExpiringDiscountOffersForReminder"] = function getAlmostExpi
 prototype["getAcknowledgedOffers"] = function getAcknowledgedOffers(arg0) {
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  obj = _require(4042);
+  obj = _require(4043);
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {
@@ -350,7 +350,7 @@ prototype["getUnacknowledgedDiscountOffers"] = function getUnacknowledgedDiscoun
 prototype["getUnacknowledgedOffers"] = function getUnacknowledgedOffers(arg0) {
   const _require = arg0;
   const currentUser = authStore.getCurrentUser();
-  obj = _require(4042);
+  obj = _require(4043);
   if (obj.isPremium(currentUser)) {
     const self = this;
     if (!this.canFractionalPremiumUserUseOffer()) {

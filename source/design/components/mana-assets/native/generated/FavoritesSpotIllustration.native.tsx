@@ -1,14 +1,14 @@
-// Module ID: 5727
-// Function ID: 5728
+// Module ID: 6415
+// Function ID: 6416
 // Name: FavoritesSpotIllustration
-// Dependencies: [21, 5454, 5728, 2]
+// Dependencies: [21, 5374, 6416, 2]
 // Exports: FavoritesSpotIllustration
 
-// Module 5727 (FavoritesSpotIllustration)
+// Module 6415 (FavoritesSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5728 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6416 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FavoritesSpotIllustration.native.tsx");

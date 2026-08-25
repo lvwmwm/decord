@@ -1,20 +1,20 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13028
+// Function ID: 13029
 // Name: GiftingSectionTitle
-// Dependencies: [32, 19, 17, 8973, 5362, 676, 1924, 21, 4668, 712, 1367, 6317, 4739, 7422, 1500, 1629, 589, 12, 4385, 7426, 12954, 9629, 8969, 12908, 709, 5363, 7428, 8976, 7916, 7395, 9363, 13041, 1236, 13042, 13048, 13052, 13055, 13057, 7727, 8661, 2432, 13058, 5451, 2]
+// Dependencies: [32, 19, 17, 8937, 7004, 676, 1924, 21, 4380, 712, 1367, 5873, 4376, 7020, 1500, 1629, 589, 12, 4640, 7024, 12942, 9725, 8933, 12895, 709, 7005, 7026, 8940, 7737, 6122, 8770, 13029, 1236, 13030, 13036, 13040, 13043, 13045, 7548, 8669, 2433, 13046, 5929, 2]
 
-// Module 13040 (GiftingSectionTitle)
+// Module 13028 (GiftingSectionTitle)
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "initialize" /* 8973 */;
-import closure_9 from "addEntitlement" /* 5362 */;
+import closure_8 from "initialize" /* 8937 */;
+import closure_9 from "addEntitlement" /* 7004 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function GiftingSectionTitle(title) {
@@ -22,12 +22,12 @@ function GiftingSectionTitle(title) {
   if (useIsMobileVisualRefreshExperimentEnabledDefault("UserSettingsPremiumGifting")) {
     let obj = { title: null };
     obj[0] = title;
-    let tmp3Result = tmp3(tmp4(6317).TableRowGroupTitle, obj);
+    let tmp3Result = tmp3(tmp4(5873).TableRowGroupTitle, obj);
   } else {
     obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: null };
     obj[0] = tmp.title;
     obj[4] = title;
-    tmp3Result = tmp3(tmp4(4739).Text, obj);
+    tmp3Result = tmp3(tmp4(4376).Text, obj);
   }
   return tmp3Result;
 }

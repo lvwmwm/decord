@@ -1,11 +1,11 @@
-// Module ID: 6808
-// Function ID: 6809
+// Module ID: 5327
+// Function ID: 5328
 // Name: parseServerPackSticker
-// Dependencies: [32, 1432, 1911, 687, 4969, 2]
+// Dependencies: [32, 1432, 1911, 687, 5093, 2]
 
-// Module 6808 (parseServerPackSticker)
+// Module 5327 (parseServerPackSticker)
 import setDefault from "set" /* 687 */;
-import StickerFormat from "StickerFormat" /* 4969 */;
+import StickerFormat from "StickerFormat" /* 5093 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { TypeTag } from "TypeTag" /* 1432 */;
 import { LibdiscoreStore } from "identity" /* 1911 */;

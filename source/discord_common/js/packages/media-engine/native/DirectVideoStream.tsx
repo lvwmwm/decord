@@ -1,10 +1,10 @@
-// Module ID: 4580
-// Function ID: 4581
+// Module ID: 4485
+// Function ID: 4486
 // Name: addref
-// Dependencies: [4503, 2]
+// Dependencies: [4433, 2]
 // Exports: acquireDirectVideoStream, getDirectVideoStreamConsumerCount, supportsDirectVideoStreams
 
-// Module 4580 (addref)
+// Module 4485 (addref)
 import set from "set" /* 2 */;
 
 class RefCountedStream {
@@ -67,11 +67,11 @@ export const acquireDirectVideoStream = function acquireDirectVideoStream(curren
     } else {
       obj = Object.create(tmp);
       obj.stream = createDiscordStream(current);
-      let voiceEngine = _require(4503).getVoiceEngine();
+      let voiceEngine = _require(4433).getVoiceEngine();
       let result = voiceEngine.addDirectVideoOutputSink(current);
       const result1 = obj.set(current, obj);
       value = obj;
-      const obj4 = _require(4503);
+      const obj4 = _require(4433);
     }
   }
   dependencyMap = value;

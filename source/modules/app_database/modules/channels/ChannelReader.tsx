@@ -1,11 +1,11 @@
-// Module ID: 1976
-// Function ID: 1977
+// Module ID: 1977
+// Function ID: 1978
 // Name: getSync
-// Dependencies: [5, 3, 1955, 2]
+// Dependencies: [5, 3, 1956, 2]
 
-// Module 1976 (getSync)
+// Module 1977 (getSync)
 import timestampDefault from "timestamp" /* 3 */;
-import itemsDefault from "items" /* 1955 */;
+import itemsDefault from "items" /* 1956 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 let closure_3 = new timestampDefault("ChannelReader");
@@ -52,7 +52,7 @@ prototype["getGuildIds"] = function getGuildIds() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

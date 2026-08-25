@@ -1,28 +1,28 @@
-// Module ID: 7278
-// Function ID: 7279
+// Module ID: 6003
+// Function ID: 6004
 // Name: handleConnectionOpenOrResumed
-// Dependencies: [32, 4292, 4025, 7279, 1218, 7287, 4975, 1391, 4831, 1991, 1910, 4544, 4033, 1980, 4201, 676, 7300, 709, 12, 1913, 589, 2]
+// Dependencies: [32, 4293, 4026, 5105, 1218, 6004, 6005, 1391, 4743, 1992, 1910, 4454, 4034, 1981, 4202, 676, 6008, 709, 12, 1913, 589, 2]
 
-// Module 7278 (handleConnectionOpenOrResumed)
+// Module 6003 (handleConnectionOpenOrResumed)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
-import _enqueueDefault from "_enqueue" /* 7300 */;
+import _enqueueDefault from "_enqueue" /* 6008 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import closure_5 from "getHash" /* 4292 */;
-import closure_6 from "initialize" /* 4025 */;
-import closure_7 from "upsertAccount" /* 7279 */;
+import closure_5 from "getHash" /* 4293 */;
+import closure_6 from "initialize" /* 4026 */;
+import closure_7 from "upsertAccount" /* 5105 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
-import { EVERYONE_CHANNEL_ID } from "getMemberListId" /* 7287 */;
-import closure_10 from "handlePermissionsChange" /* 4975 */;
+import { EVERYONE_CHANNEL_ID } from "getMemberListId" /* 6004 */;
+import closure_10 from "handlePermissionsChange" /* 6005 */;
 import closure_11 from "ensureGuildLoaded" /* 1391 */;
-import closure_12 from "handleConnectionOpen" /* 4831 */;
-import closure_13 from "trackCommunicationDisabled" /* 1991 */;
+import closure_12 from "handleConnectionOpen" /* 4743 */;
+import closure_13 from "trackCommunicationDisabled" /* 1992 */;
 import closure_14 from "createGuildRecordFromRust" /* 1910 */;
-import closure_15 from "createRTCConnection" /* 4544 */;
-import closure_16 from "markAllUserIdListsStale" /* 4033 */;
-import closure_17 from "handleConnectionOpen" /* 1980 */;
-import closure_18 from "handleConnectionOpen" /* 4201 */;
+import closure_15 from "createRTCConnection" /* 4454 */;
+import closure_16 from "markAllUserIdListsStale" /* 4034 */;
+import closure_17 from "handleConnectionOpen" /* 1981 */;
+import closure_18 from "handleConnectionOpen" /* 4202 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

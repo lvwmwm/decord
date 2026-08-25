@@ -1,17 +1,17 @@
-// Module ID: 6328
-// Function ID: 6329
+// Module ID: 5487
+// Function ID: 5488
 // Name: TableRowArrow
-// Dependencies: [19, 21, 4668, 712, 1367, 4752, 6329, 6330, 2]
+// Dependencies: [19, 21, 4380, 712, 1367, 4817, 5488, 5489, 2]
 // Exports: TableRowArrow
 
-// Module 6328 (TableRowArrow)
+// Module 5487 (TableRowArrow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import IconSizes from "IconSizes" /* 4752 */;
-import IconSizesDefault from "IconSizes" /* 4752 */;
+import IconSizes from "IconSizes" /* 4817 */;
+import IconSizesDefault from "IconSizes" /* 4817 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;
@@ -29,7 +29,7 @@ export const TableRowArrow = function TableRowArrow() {
   const tmp = importDefault;
   const tmp3 = useIsMobileVisualRefreshExperimentEnabledDefault("TableRowArrow");
   const tmp5 = jsx;
-  obj[2] = tmp(tmp3 ? 6329 : 6330);
+  obj[2] = tmp(tmp3 ? 5488 : 5489);
   obj[3] = IconSizes.IconSizes.CUSTOM;
   return tmp5(IconSizesDefault, obj);
 };

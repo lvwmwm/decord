@@ -1,20 +1,20 @@
-// Module ID: 10265
-// Function ID: 10266
-// Dependencies: [19, 17, 10226, 21, 4668, 712, 4739, 4828, 1297, 10266, 10267, 1236, 10268, 5438, 2]
+// Module ID: 10116
+// Function ID: 10117
+// Dependencies: [19, 17, 10077, 21, 4380, 712, 4376, 4740, 1297, 10117, 10118, 1236, 10119, 4949, 2]
 
-// Module 10265
+// Module 10116
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4739 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4828 */;
-import registerAssetDefault from "registerAsset" /* 10266 */;
-import registerAssetDefault2 from "registerAsset" /* 10267 */;
-import StickerPackBannerDefault from "StickerPackBanner" /* 10268 */;
+import Text from "Text" /* 4376 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4740 */;
+import registerAssetDefault from "registerAsset" /* 10117 */;
+import registerAssetDefault2 from "registerAsset" /* 10118 */;
+import StickerPackBannerDefault from "StickerPackBanner" /* 10119 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10226 */;
+import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10077 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo((withDescription) => {
   if (flag) {
     const obj5 = { variant: "text-sm/medium", children: null };
     obj5[1] = stickerPack.description;
-    flag = tmp4(tmp6(4739).Text, obj5);
+    flag = tmp4(tmp6(4376).Text, obj5);
   }
   const obj6 = { children: null };
   items1[1] = flag;
@@ -98,7 +98,7 @@ const memoResult = importAllResult.memo((withDescription) => {
     obj10[0] = items3;
     obj10[1] = onPress;
     obj10[3] = tmp2Result;
-    let tmp4Result = tmp4(tmp6(5438).PressableOpacity, obj10);
+    let tmp4Result = tmp4(tmp6(4949).PressableOpacity, obj10);
   } else {
     const obj11 = { style: null, children: null };
     const items4 = [tmp.section, style];

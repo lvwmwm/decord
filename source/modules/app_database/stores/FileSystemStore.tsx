@@ -1,14 +1,14 @@
-// Module ID: 5075
-// Function ID: 5076
+// Module ID: 7085
+// Function ID: 7086
 // Name: result
-// Dependencies: [5, 3, 687, 589, 709, 1955, 2]
+// Dependencies: [5, 3, 687, 589, 709, 1956, 2]
 
-// Module 5075 (result)
+// Module 7085 (result)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import itemsDefault from "items" /* 1955 */;
+import itemsDefault from "items" /* 1956 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 let closure_0 = importDefault;
@@ -63,7 +63,7 @@ function refresh() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ function refresh() {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp38) {
         c3 = tmp;

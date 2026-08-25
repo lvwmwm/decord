@@ -1,12 +1,12 @@
-// Module ID: 8524
-// Function ID: 8525
+// Module ID: 8532
+// Function ID: 8533
 // Name: hasForLaterPremiumType
-// Dependencies: [1922, 1924, 1945, 589, 2]
+// Dependencies: [1922, 1924, 1946, 589, 2]
 // Exports: default, useHasForLaterPremiumType
 
-// Module 8524 (hasForLaterPremiumType)
+// Module 8532 (hasForLaterPremiumType)
 import initialize from "initialize" /* 589 */;
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 

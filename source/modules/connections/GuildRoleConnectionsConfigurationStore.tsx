@@ -1,9 +1,9 @@
-// Module ID: 16925
-// Function ID: 16926
+// Module ID: 16957
+// Function ID: 16958
 // Name: map
 // Dependencies: [1910, 589, 709, 2]
 
-// Module 16925 (map)
+// Module 16957 (map)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "createGuildRecordFromRust" /* 1910 */;

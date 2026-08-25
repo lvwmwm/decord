@@ -1,20 +1,20 @@
-// Module ID: 12116
-// Function ID: 12117
+// Module ID: 12454
+// Function ID: 12455
 // Name: clamp
-// Dependencies: [32, 19, 17, 21, 4668, 712, 4119, 10768, 4671, 1297, 12117, 6408, 4120, 6840, 7162, 12118, 12109, 2]
+// Dependencies: [32, 19, 17, 21, 4380, 712, 4120, 11094, 4381, 1297, 12455, 5533, 4121, 5434, 5818, 12456, 12447, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 12116 (clamp)
+// Module 12454 (clamp)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
-createCacheKey = { drawerContainer: { overflow: "hidden", backgroundColor: "HermesInternal" }, drawerHeaderTab: null, drawerHeader: null, messagePreviewContainer: null, thumbnailsContainer: null };
+createCacheKey = { drawerContainer: { overflow: "hidden", backgroundColor: "accessibilityRole" }, drawerHeaderTab: null, drawerHeader: null, messagePreviewContainer: null, thumbnailsContainer: null };
 createCacheKey = { width: 40, backgroundColor: ThemesDefault.unsafe_rawColors.PRIMARY_600 };
 createCacheKey[1] = createCacheKey;
 createCacheKey[2] = { backgroundColor: "r" };

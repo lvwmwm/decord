@@ -1,10 +1,10 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 10656
+// Function ID: 10657
 // Name: validateHandle
 // Dependencies: [676, 2]
 // Exports: getExampleHandle, validateHandle
 
-// Module 9850 (validateHandle)
+// Module 10656 (validateHandle)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

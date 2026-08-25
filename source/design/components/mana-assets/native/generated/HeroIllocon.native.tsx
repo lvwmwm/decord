@@ -1,14 +1,14 @@
-// Module ID: 5935
-// Function ID: 5936
+// Module ID: 6625
+// Function ID: 6626
 // Name: HeroIllocon
-// Dependencies: [21, 5454, 5936, 2]
+// Dependencies: [21, 5374, 6626, 2]
 // Exports: HeroIllocon
 
-// Module 5935 (HeroIllocon)
+// Module 6625 (HeroIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5936 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6626 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HeroIllocon.native.tsx");

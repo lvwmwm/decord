@@ -1,14 +1,14 @@
-// Module ID: 11271
-// Function ID: 11272
-// Dependencies: [19, 17, 8719, 21, 4668, 712, 11272, 2]
+// Module ID: 11630
+// Function ID: 11631
+// Dependencies: [19, 17, 8758, 21, 4380, 712, 11631, 2]
 
-// Module 11271
+// Module 11630
 import ThemesDefault from "Themes" /* 712 */;
-import AppLauncherOnboardingBannerDefault from "AppLauncherOnboardingBanner" /* 11272 */;
+import AppLauncherOnboardingBannerDefault from "AppLauncherOnboardingBanner" /* 11631 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useBestActiveChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight" /* 8719 */;
+import { useBestActiveChatInputContainerHeight as closure_3 } from "updateChatInputContainerHeight" /* 8758 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importAllResult from "noop" /* 19 */;
 
 let obj = { container: null };

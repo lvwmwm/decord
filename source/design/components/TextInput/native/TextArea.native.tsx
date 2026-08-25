@@ -1,11 +1,11 @@
-// Module ID: 8131
-// Function ID: 8132
+// Module ID: 8127
+// Function ID: 8128
 // Name: TextArea
-// Dependencies: [19, 21, 8111, 8132, 2]
+// Dependencies: [19, 21, 7936, 8128, 2]
 
-// Module 8131 (TextArea)
-import Input from "Input" /* 8111 */;
-import TextAreaField from "TextAreaField" /* 8132 */;
+// Module 8127 (TextArea)
+import Input from "Input" /* 7936 */;
+import TextAreaField from "TextAreaField" /* 8128 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

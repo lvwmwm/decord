@@ -1,12 +1,12 @@
-// Module ID: 8821
-// Function ID: 8822
+// Module ID: 9088
+// Function ID: 9089
 // Name: EditGuildEventScreens
-// Dependencies: [1218, 1397, 8822, 8825, 2]
+// Dependencies: [1218, 1397, 9089, 9092, 2]
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent, isExistingGuildEvent, recurrenceRuleFromServer, recurrenceRuleToServer
 
-// Module 8821 (EditGuildEventScreens)
-import getRRule from "getRRule" /* 8822 */;
-import getChannelFromEvent from "getChannelFromEvent" /* 8825 */;
+// Module 9088 (EditGuildEventScreens)
+import getRRule from "getRRule" /* 9089 */;
+import getChannelFromEvent from "getChannelFromEvent" /* 9092 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 

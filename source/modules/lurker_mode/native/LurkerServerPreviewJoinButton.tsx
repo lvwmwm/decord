@@ -1,13 +1,13 @@
-// Module ID: 15480
-// Function ID: 15481
-// Dependencies: [5, 32, 19, 1391, 4025, 676, 21, 11554, 1306, 6815, 4750, 1236, 2]
+// Module ID: 15512
+// Function ID: 15513
+// Dependencies: [5, 32, 19, 1391, 4026, 676, 21, 9223, 1306, 5338, 4815, 1236, 2]
 
-// Module 15480
+// Module 15512
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "initialize" /* 4025 */;
+import closure_7 from "initialize" /* 4026 */;
 import { JoinGuildSources } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function LurkerServerPreviewJoinButton(g
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

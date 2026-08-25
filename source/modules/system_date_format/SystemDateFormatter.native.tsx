@@ -1,13 +1,13 @@
-// Module ID: 4083
-// Function ID: 4084
+// Module ID: 4084
+// Function ID: 4085
 // Name: __DiscordCreateDateFormatter
-// Dependencies: [17, 500, 4084, 2]
+// Dependencies: [17, 500, 4085, 2]
 // Exports: supportsSystemDateFormatter
 
-// Module 4083 (__DiscordCreateDateFormatter)
+// Module 4084 (__DiscordCreateDateFormatter)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
-import enforcingDefault from "enforcing" /* 4084 */;
+import enforcingDefault from "enforcing" /* 4085 */;
 
 if (null != global.__DiscordCreateDateFormatter) {
   let __DiscordCreateDateFormatter = global.__DiscordCreateDateFormatter;

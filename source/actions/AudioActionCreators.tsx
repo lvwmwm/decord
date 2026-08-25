@@ -1,27 +1,27 @@
-// Module ID: 9693
-// Function ID: 9694
+// Module ID: 9303
+// Function ID: 9304
 // Name: trackDeviceChanged
-// Dependencies: [5, 4543, 1391, 4501, 4544, 1980, 1922, 676, 9694, 4534, 3, 698, 636, 709, 9695, 9697, 9698, 9706, 2]
+// Dependencies: [5, 4453, 1391, 4431, 4454, 1981, 1922, 676, 9304, 4444, 3, 698, 636, 709, 9305, 9307, 9308, 9316, 2]
 
-// Module 9693 (trackDeviceChanged)
+// Module 9303 (trackDeviceChanged)
 import timestampDefault from "timestamp" /* 3 */;
 import debounceDefault from "debounce" /* 636 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import snapVolumeToDefault from "snapVolumeToDefault" /* 9695 */;
-import trackVoiceAndVideoDebuggingSettingsUpdatedDefault from "trackVoiceAndVideoDebuggingSettingsUpdated" /* 9697 */;
-import _getFilterBlob from "_getFilterBlob" /* 9698 */;
-import isPremiumResolution from "isPremiumResolution" /* 9706 */;
+import snapVolumeToDefault from "snapVolumeToDefault" /* 9305 */;
+import trackVoiceAndVideoDebuggingSettingsUpdatedDefault from "trackVoiceAndVideoDebuggingSettingsUpdated" /* 9307 */;
+import _getFilterBlob from "_getFilterBlob" /* 9308 */;
+import isPremiumResolution from "isPremiumResolution" /* 9316 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 4543 */;
+import closure_4 from "initialize" /* 4453 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4501 */;
-import closure_7 from "createRTCConnection" /* 4544 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_7 from "createRTCConnection" /* 4454 */;
+import closure_8 from "handleConnectionOpen" /* 1981 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { SoundOutputChannel } from "SoundOutputChannel" /* 9694 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4534 */;
+import { SoundOutputChannel } from "SoundOutputChannel" /* 9304 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4444 */;
 
 require = arg1;
 function trackDeviceChanged(inputDevices, inputDeviceId, found, Video, arg4) {
@@ -622,7 +622,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -642,7 +642,7 @@ obj = {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = v0(9697)("debug_logging_enabled", closure_1_0, closure_1_6.getDebugLogging());
+              obj1[0] = v0(9307)("debug_logging_enabled", closure_1_0, closure_1_6.getDebugLogging());
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -659,7 +659,7 @@ obj = {
             obj3[1] = closure_0;
             obj.dispatch(obj3);
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           dependencyMap = tmp;
@@ -709,7 +709,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -729,7 +729,7 @@ obj = {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = v0(9697)("audio_subsystem", closure_1_0, closure_1_6.getAudioSubsystem());
+              obj1[0] = v0(9307)("audio_subsystem", closure_1_0, closure_1_6.getAudioSubsystem());
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -746,7 +746,7 @@ obj = {
             obj3[1] = closure_0;
             obj.dispatch(obj3);
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp18) {
           dependencyMap = tmp;

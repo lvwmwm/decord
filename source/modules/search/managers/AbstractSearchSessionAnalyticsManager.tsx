@@ -1,12 +1,12 @@
-// Module ID: 11582
-// Function ID: 11583
+// Module ID: 11929
+// Function ID: 11930
 // Name: getSession
-// Dependencies: [514, 11560, 2]
+// Dependencies: [514, 11907, 2]
 
-// Module 11582 (getSession)
+// Module 11929 (getSession)
 import set from "set" /* 2 */;
 import v1 from "v1" /* 514 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 11560 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11907 */;
 
 let result = set.fileFinishedImporting("modules/search/managers/AbstractSearchSessionAnalyticsManager.tsx");
 class AbstractSearchSessionAnalyticsManager {

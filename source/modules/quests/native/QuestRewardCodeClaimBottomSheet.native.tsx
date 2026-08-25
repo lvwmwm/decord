@@ -1,17 +1,17 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 11330
+// Function ID: 11331
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7491, 6753, 21, 4668, 712, 1629, 589, 10991, 4097, 1236, 8594, 4346, 10530, 7205, 4326, 10993, 6988, 6987, 4739, 6844, 6317, 6322, 4750, 10996, 2]
+// Dependencies: [19, 17, 7305, 5268, 21, 4380, 712, 1629, 589, 11331, 4098, 1236, 8602, 4347, 10547, 5862, 4327, 11333, 5503, 5502, 4376, 4370, 5873, 5480, 4815, 11336, 2]
 // Exports: default
 
-// Module 10990 (QuestRewardCodeClaimBottomSheet)
+// Module 11330 (QuestRewardCodeClaimBottomSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initializeState" /* 7491 */;
-import { REWARD_CODE_PLACEHOLDER } from "QuestsExperimentLocations" /* 6753 */;
+import closure_6 from "initializeState" /* 7305 */;
+import { REWARD_CODE_PLACEHOLDER } from "QuestsExperimentLocations" /* 5268 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function QuestRewardCodeClaimBottomSheet(quest) {
@@ -103,7 +103,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
   const callback = obj2.useCallback(() => {
     if (null != rewardCode) {
       quest(hasError[15]).copy(tmp.code, () => {
-        let obj = callback2(4097);
+        let obj = callback2(4098);
         obj = { key: "TOAST_QUEST_REWARD_CODE_COPIED", content: null, icon: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.MSaeTe);

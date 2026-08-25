@@ -1,23 +1,23 @@
-// Module ID: 14301
-// Function ID: 14302
+// Module ID: 14331
+// Function ID: 14332
 // Name: FamilyCenterTeenQRCodeButtonInner
-// Dependencies: [19, 17, 1922, 5301, 5302, 676, 4844, 21, 4668, 712, 7659, 4096, 1236, 11143, 647, 14302, 698, 14303, 4346, 14304, 2008, 4738, 4750, 12099, 2336, 14307, 5265, 1487, 11140, 1625, 4845, 13386, 2]
+// Dependencies: [19, 17, 1922, 7143, 7144, 676, 4618, 21, 4380, 712, 7480, 4097, 1236, 11485, 647, 14332, 698, 14333, 4347, 14334, 2009, 4813, 4815, 12439, 2337, 14337, 4611, 1487, 11482, 1625, 4964, 13421, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 14301 (FamilyCenterTeenQRCodeButtonInner)
+// Module 14331 (FamilyCenterTeenQRCodeButtonInner)
 import ThemesDefault from "Themes" /* 712 */;
-import messagesProxyDefault from "messagesProxy" /* 2336 */;
-import Button from "Button" /* 4750 */;
-import QrCodeIcon from "QrCodeIcon" /* 14307 */;
+import messagesProxyDefault from "messagesProxy" /* 2337 */;
+import Button from "Button" /* 4815 */;
+import QrCodeIcon from "QrCodeIcon" /* 14337 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "freshTeenActivityWithMap" /* 5301 */;
-import items from "items" /* 5302 */;
+import closure_6 from "freshTeenActivityWithMap" /* 7143 */;
+import items from "items" /* 7144 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4844 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4618 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function FamilyCenterTeenQRCodeButtonInner() {
@@ -127,7 +127,7 @@ export const FamilyCenterTeenQRCodeButton = function FamilyCenterTeenQRCodeButto
 };
 export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeButton() {
   function handleQrCodeScanSucess(url) {
-    let arr = callback(5265);
+    let arr = callback(4611);
     arr = arr.pop();
     let toURLSafeResult = callback(1487).toURLSafe(url);
     if (toURLSafeResult == null) {
@@ -141,8 +141,8 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
         tmp4 = null;
         if (tmpResult.isDiscordHostname(hostname)) {
           if (null !== pathname.match(closure_8)) {
-            const result = handleQrCodeScanSucess(11140).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
-            const obj4 = handleQrCodeScanSucess(11140);
+            const result = handleQrCodeScanSucess(11482).handleFamilyCenterQRCodeScan(pathname, "FamilyCenterQRCodeScan");
+            const obj4 = handleQrCodeScanSucess(11482);
           }
           tmp4 = tmp6;
         }
@@ -151,7 +151,7 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     }
     return tmp4;
   }
-  let obj = handleQrCodeScanSucess(7659);
+  let obj = handleQrCodeScanSucess(7480);
   if (obj.useHasMaxConnections()) {
     return null;
   } else {

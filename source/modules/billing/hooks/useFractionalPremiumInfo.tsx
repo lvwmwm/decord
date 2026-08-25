@@ -1,18 +1,18 @@
-// Module ID: 5361
-// Function ID: 5362
+// Module ID: 7003
+// Function ID: 7004
 // Name: calculateFractionalPremiumInfo
-// Dependencies: [32, 19, 1922, 4048, 5362, 676, 1924, 3978, 38, 4057, 4042, 589, 4766, 5363, 12, 2]
+// Dependencies: [32, 19, 1922, 4049, 7004, 676, 1924, 3979, 38, 4058, 4043, 589, 4831, 7005, 12, 2]
 // Exports: default
 
-// Module 5361 (calculateFractionalPremiumInfo)
-import tDefault from "t" /* 3978 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4042 */;
-import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4057 */;
+// Module 7003 (calculateFractionalPremiumInfo)
+import hooksDefault from "hooks" /* 3979 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4043 */;
+import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4058 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "reset" /* 4048 */;
-import closure_7 from "addEntitlement" /* 5362 */;
+import closure_6 from "reset" /* 4049 */;
+import closure_7 from "addEntitlement" /* 7004 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
@@ -23,7 +23,7 @@ function calculateFractionalPremiumInfo(isFetching) {
     flag = false;
   }
   ({ entitlements, unactivatedFractionalPremiumUnits, premiumSubscription, fetchedAllEntitlements, excludeReverseTrialFromCountdown } = isFetching);
-  let obj = { isFractionalPremiumActive: false, fractionalState: constants3.NONE, startsAt: tDefault(0), endsAt: tDefault(0), currentEntitlementId: "", currentEntitlementEndsAt: tDefault(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
+  let obj = { isFractionalPremiumActive: false, fractionalState: constants3.NONE, startsAt: hooksDefault(0), endsAt: hooksDefault(0), currentEntitlementId: "", currentEntitlementEndsAt: hooksDefault(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
   if (flag) {
     obj = {};
     const merged = Object.assign(obj);
@@ -78,17 +78,17 @@ function calculateFractionalPremiumInfo(isFetching) {
         obj2[0] = null != first;
         obj2[1] = tmp7;
         if (null != first) {
-          let tmp11 = tmp2(3978)(first.startsAt);
+          let tmp11 = tmp2(3979)(first.startsAt);
         } else {
-          tmp11 = tmp2(3978)(0);
+          tmp11 = tmp2(3979)(0);
         }
         obj2[2] = tmp11;
         if (null != first) {
           const obj4 = getPremiumPlanItem;
-          let tmp2ResultResult = tmp2(3978)(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
-          const tmp2Result = tmp2(3978);
+          let tmp2ResultResult = tmp2(3979)(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
+          const tmp2Result = tmp2(3979);
         } else {
-          tmp2ResultResult = tmp2(3978)(0);
+          tmp2ResultResult = tmp2(3979)(0);
         }
         obj2[3] = tmp2ResultResult;
         let str = "";
@@ -97,9 +97,9 @@ function calculateFractionalPremiumInfo(isFetching) {
         }
         obj2[4] = str;
         if (null != first) {
-          let tmp18 = tmp2(3978)(first.endsAt);
+          let tmp18 = tmp2(3979)(first.endsAt);
         } else {
-          tmp18 = tmp2(3978)(0);
+          tmp18 = tmp2(3979)(0);
         }
         obj2[5] = tmp18;
         obj2[6] = unactivatedFractionalPremiumUnits;

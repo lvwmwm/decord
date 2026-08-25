@@ -1,13 +1,13 @@
-// Module ID: 13413
-// Function ID: 13414
+// Module ID: 13448
+// Function ID: 13449
 // Name: useFilteredGuilds
-// Dependencies: [19, 1910, 5083, 1922, 589, 38, 2]
+// Dependencies: [19, 1910, 5262, 1922, 589, 38, 2]
 // Exports: default
 
-// Module 13413 (useFilteredGuilds)
+// Module 13448 (useFilteredGuilds)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "insertUnsortedGuilds" /* 5083 */;
+import closure_5 from "insertUnsortedGuilds" /* 5262 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;

@@ -1,23 +1,23 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16056
+// Function ID: 16057
 // Name: MessageContent
-// Dependencies: [19, 17, 4669, 1991, 1922, 7309, 676, 505, 21, 4668, 712, 589, 7566, 6851, 6815, 4739, 1236, 4223, 7313, 4819, 11, 1297, 8355, 8226, 2]
+// Dependencies: [19, 17, 4372, 1992, 1922, 6029, 676, 505, 21, 4380, 712, 589, 7384, 4843, 5338, 4376, 1236, 4224, 6035, 4634, 11, 1297, 8356, 8222, 2]
 // Exports: ThreadSubtext
 
-// Module 16024 (MessageContent)
+// Module 16056 (MessageContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4739 */;
-import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4819 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 6851 */;
+import Text from "Text" /* 4376 */;
+import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4634 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4843 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
-import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_6 from "trackCommunicationDisabled" /* 1992 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "updateState" /* 7309 */;
+import closure_8 from "updateState" /* 6029 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function MessageContent(arg0) {
@@ -27,7 +27,7 @@ function MessageContent(arg0) {
   c3 = undefined;
   c4 = undefined;
   closure_5 = undefined;
-  let obj = message(7313);
+  let obj = message(6035);
   items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
   obj1 = message(589);
@@ -47,9 +47,9 @@ function MessageContent(arg0) {
   let tmp4 = useNullableMessageAuthorDefault(message);
   const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(message.id);
   const obj4 = DISCORD_EPOCHDefault;
-  const timestampString = message(7566).getTimestampString(extractTimestampResult);
-  const obj5 = message(7566);
-  const timestampAccessibilityLabel = message(7566).getTimestampAccessibilityLabel(extractTimestampResult);
+  const timestampString = message(7384).getTimestampString(extractTimestampResult);
+  const obj5 = message(7384);
+  const timestampAccessibilityLabel = message(7384).getTimestampAccessibilityLabel(extractTimestampResult);
   closure_5 = useHasEnhancedRoleColorsDefault(thread.guild_id, stateFromStores.id);
   obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: null };
   obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default", children: null };
@@ -80,7 +80,7 @@ function MessageContent(arg0) {
     }
   };
   obj[6] = intl.format(message(1236).t.M79KAH, obj1);
-  obj[3] = callback(message(4739).Text, obj);
+  obj[3] = callback(message(4376).Text, obj);
   return callback(SubstringRow, obj);
 }
 function SubstringRow(arg0) {
@@ -134,7 +134,7 @@ function Username(usernameColor) {
     }
     return username;
   }, items);
-  let obj = usernameColor(8226);
+  let obj = usernameColor(8222);
   const processColorStringsArray = obj.useProcessColorStringsArray(roleColors);
   let tmp5 = !shouldShowRoleDot;
   if (!shouldShowRoleDot) {
@@ -152,7 +152,7 @@ function Username(usernameColor) {
     tmp10 = processColorStringsArray;
   }
   obj = { children: null };
-  items1[1] = callback(usernameColor(4739).Text, { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp10, style: memo, children: nickname });
+  items1[1] = callback(usernameColor(4376).Text, { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp10, style: memo, children: nickname });
   obj[0] = items1;
   return closure_10(closure_11, obj);
 }
@@ -264,7 +264,7 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
   items = [closure_8];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getMostRecentMessage(id), items1);
-  const lastMessageTimestamp = id(7566).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(7384).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
@@ -275,9 +275,9 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
       }
     }
   }
-  let tmpResult = tmp(7566);
+  let tmpResult = tmp(7384);
   const timestampString = tmpResult.getTimestampString(lastMessageTimestamp);
-  tmpResult = tmp(7566);
+  tmpResult = tmp(7384);
   obj = { thread, timestamp: timestampString, accessibilityLabel: tmpResult.getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return callback(closure_14, obj);
 };

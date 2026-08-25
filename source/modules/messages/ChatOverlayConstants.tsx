@@ -1,9 +1,9 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 10472
+// Function ID: 10473
 // Name: ChatOverlays
 // Dependencies: [2]
 
-// Module 10673 (ChatOverlays)
+// Module 10472 (ChatOverlays)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/ChatOverlayConstants.tsx");

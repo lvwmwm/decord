@@ -1,14 +1,14 @@
-// Module ID: 6933
-// Function ID: 6934
+// Module ID: 4930
+// Function ID: 4931
 // Name: VoiceNormalSpoilerIcon
-// Dependencies: [19, 21, 712, 4099, 6883, 2]
+// Dependencies: [19, 21, 712, 4100, 4879, 2]
 // Exports: VoiceNormalSpoilerIcon
 
-// Module 6933 (VoiceNormalSpoilerIcon)
+// Module 4930 (VoiceNormalSpoilerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 6883 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 4879 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

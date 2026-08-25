@@ -1,13 +1,13 @@
-// Module ID: 12170
-// Function ID: 12171
+// Module ID: 12503
+// Function ID: 12504
 // Name: useTrackUserProfileActivityView
-// Dependencies: [32, 19, 9236, 589, 2]
+// Dependencies: [32, 19, 9517, 589, 2]
 // Exports: default
 
-// Module 12170 (useTrackUserProfileActivityView)
+// Module 12503 (useTrackUserProfileActivityView)
 import closure_2 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
-import closure_5 from "map" /* 9236 */;
+import closure_5 from "map" /* 9517 */;
 
 const require = arg1;
 ({ useEffect: c3, useState: c4 } = noop);

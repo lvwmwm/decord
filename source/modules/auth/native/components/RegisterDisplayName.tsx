@@ -1,20 +1,20 @@
-// Module ID: 15297
-// Function ID: 15298
+// Module ID: 15327
+// Function ID: 15328
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 14187, 15276, 15277, 21, 4668, 712, 1236, 8621, 1500, 15274, 15292, 15275, 691, 15291, 15294, 14188, 5437, 8633, 8646, 8110, 4750, 6582, 2]
+// Dependencies: [5, 32, 19, 17, 14217, 15306, 15307, 21, 4380, 712, 1236, 8629, 1500, 15304, 15322, 15305, 691, 15321, 15324, 14218, 6117, 8641, 8654, 7935, 4815, 5930, 2]
 // Exports: default
 
-// Module 15297 (RegisterDisplayName)
+// Module 15327 (RegisterDisplayName)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "isRateLimited" /* 14187 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15276 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15277 */;
+import closure_7 from "isRateLimited" /* 14217 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15306 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15307 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ updateRegistrationOptions: closure_8, useRegistrationUIStore: c9 } = useRegistrationUIStore);
@@ -96,7 +96,7 @@ export default function RegisterDisplayName() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -138,7 +138,7 @@ export default function RegisterDisplayName() {
               obj3 = callback(str[15]);
               const result = obj3.handleNextOrSubmitRegistration(callback(str[16]).AuthStates.REGISTER_DISPLAY_NAME, callback, closure_1_4);
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c3 = 3;

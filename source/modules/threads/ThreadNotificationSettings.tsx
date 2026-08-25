@@ -1,14 +1,14 @@
-// Module ID: 10061
-// Function ID: 10062
+// Module ID: 9917
+// Function ID: 9918
 // Name: computeThreadNotificationSetting
-// Dependencies: [1391, 5048, 4026, 1235, 676, 1403, 589, 2]
+// Dependencies: [1391, 4589, 4027, 1235, 676, 1403, 589, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10061 (computeThreadNotificationSetting)
+// Module 9917 (computeThreadNotificationSetting)
 import hasFlag from "hasFlag" /* 1403 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
-import closure_4 from "storeThread" /* 4026 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_4 from "storeThread" /* 4027 */;
 import { ThreadMemberFlags } from "AbortCodes" /* 1235 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
 

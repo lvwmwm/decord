@@ -1,21 +1,21 @@
-// Module ID: 15037
-// Function ID: 15038
+// Module ID: 15067
+// Function ID: 15068
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 676, 21, 4668, 712, 4093, 1994, 6988, 4739, 1236, 6723, 4750, 6729, 4346, 2]
+// Dependencies: [19, 676, 21, 4380, 712, 4094, 1995, 5503, 4376, 1236, 5257, 4815, 8105, 4347, 2]
 // Exports: default
 
-// Module 15037 (PersonalizationDisclaimerActionSheet)
+// Module 15067 (PersonalizationDisclaimerActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import Button from "Button" /* 4750 */;
-import ButtonGroup from "ButtonGroup" /* 6723 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 6729 */;
-import Background from "Background" /* 6988 */;
+import Text from "Text" /* 4376 */;
+import Button from "Button" /* 4815 */;
+import ButtonGroup from "ButtonGroup" /* 5257 */;
+import Background from "Background" /* 5503 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8105 */;
 import closure_3 from "noop" /* 19 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -30,8 +30,8 @@ const result = require("set").fileFinishedImporting("modules/collectibles/native
 export default function PersonalizationDisclaimerActionSheet() {
   const tmp = callback3();
   const callback = React.useCallback(() => {
-    const obj = callback(4093);
-    obj.openURL(callback(1994).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
+    const obj = callback(4094);
+    obj.openURL(callback(1995).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
   }, []);
   let obj = { contentStyles: tmp.container, children: null };
   obj = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: null };
@@ -49,7 +49,7 @@ export default function PersonalizationDisclaimerActionSheet() {
   const intl3 = getSystemLocale.intl;
   obj3[2] = intl3.string(getSystemLocale.t.WAI6xu);
   obj3[3] = function onPress() {
-    return callback(4346).hideActionSheet();
+    return callback(4347).hideActionSheet();
   };
   items1[1] = callback(Button.Button, obj3);
   obj[0] = items1;

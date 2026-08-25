@@ -1,16 +1,16 @@
-// Module ID: 13604
-// Function ID: 13605
+// Module ID: 13639
+// Function ID: 13640
 // Name: BadgeColors
-// Dependencies: [19, 17, 21, 4668, 712, 4739, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 4376, 2]
 // Exports: TextBadge
 
-// Module 13604 (BadgeColors)
+// Module 13639 (BadgeColors)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4739 */;
+import Text from "Text" /* 4376 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

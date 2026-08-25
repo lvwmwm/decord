@@ -1,10 +1,10 @@
-// Module ID: 14231
-// Function ID: 14232
+// Module ID: 14261
+// Function ID: 14262
 // Name: BlockedUserRow
-// Dependencies: [19, 1922, 21, 9775, 7177, 6322, 1297, 1236, 8966, 4750, 589, 2]
+// Dependencies: [19, 1922, 21, 9391, 5834, 5480, 1297, 1236, 8930, 4815, 589, 2]
 // Exports: default
 
-// Module 14231 (BlockedUserRow)
+// Module 14261 (BlockedUserRow)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -13,11 +13,11 @@ const require = arg1;
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7177)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5834)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
-  obj = { user: userRecord, guildId: "Array", size: -1 };
+  obj = { user: userRecord, guildId: "Array", size: "b" };
   obj[2] = userRecord(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: -1 });
+  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: "b" });
   let tmp4 = null != userRecord;
   if (tmp4) {
     let username = userRecord.globalName;
@@ -59,8 +59,8 @@ function BlockedUserRow(userRecord) {
   obj1[3] = function onPress() {
     analyticsLocations(closure_1_2[3]).unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
   };
-  obj[9] = jsx(userRecord(4750).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(6322).TableRow, { name: "unblock", label: null });
+  obj[9] = jsx(userRecord(4815).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5480).TableRow, { name: "unblock", label: null });
 }
 noopAll;
 const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");

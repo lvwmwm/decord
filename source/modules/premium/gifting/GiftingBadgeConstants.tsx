@@ -1,12 +1,12 @@
-// Module ID: 10459
-// Function ID: 10460
+// Module ID: 10314
+// Function ID: 10315
 // Name: getTierForProgress
-// Dependencies: [8973, 2]
+// Dependencies: [8937, 2]
 // Exports: getNextTierForProgress, getRemainingGiftsToNextTier, getTierForProgress
 
-// Module 10459 (getTierForProgress)
+// Module 10314 (getTierForProgress)
 import set from "set" /* 2 */;
-import initialize from "initialize" /* 8973 */;
+import initialize from "initialize" /* 8937 */;
 
 let closure_0 = initialize.getSingleRequirementThreshold;
 const result = set.fileFinishedImporting("modules/premium/gifting/GiftingBadgeConstants.tsx");

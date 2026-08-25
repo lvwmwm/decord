@@ -1,16 +1,16 @@
-// Module ID: 16212
-// Function ID: 16213
+// Module ID: 16244
+// Function ID: 16245
 // Name: HiddenMedia
-// Dependencies: [19, 17, 4999, 21, 4668, 16213, 712, 6915, 4739, 1236, 4334, 4066, 7177, 589, 8966, 8196, 16214, 10105, 5438, 16215, 2]
+// Dependencies: [19, 17, 4623, 21, 4380, 16245, 712, 4912, 4376, 1236, 4335, 4067, 5834, 589, 8930, 8192, 16246, 8736, 4949, 16247, 2]
 // Exports: default
 
-// Module 16212 (HiddenMedia)
+// Module 16244 (HiddenMedia)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "reinjectEphemerals" /* 4999 */;
+import closure_5 from "reinjectEphemerals" /* 4623 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function HiddenMedia(length) {
@@ -32,11 +32,11 @@ function HiddenMedia(length) {
 
   ];
   obj = { style: tmp.mediaHiddenRow, children: null };
-  const items1 = [callback(_require(4334).CircleInformationIcon, { size: "sm", color: "text-muted" }), ];
+  const items1 = [callback(_require(4335).CircleInformationIcon, { size: "sm", color: "text-muted" }), ];
   obj = { variant: "text-sm/normal", color: "text-muted", children: null };
   let intl = _require(1236).intl;
   obj[2] = intl.string(_require(1236).t["VGf+K3"]);
-  items1[1] = callback(_require(4739).Text, obj);
+  items1[1] = callback(_require(4376).Text, obj);
   obj[1] = items1;
   items[1] = callback2(View, obj);
   obj[0] = items;

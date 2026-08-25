@@ -1,0 +1,15 @@
+// Module ID: 10321
+// Function ID: 10322
+// Name: isKnownType
+// Dependencies: [10322]
+
+// Module 10321 (isKnownType)
+import NativeDocumentPicker2 from "NativeDocumentPicker" /* 10322 */;
+
+require = arg1;
+const dependencyMap = arg6;
+arg5.isKnownType = function isKnownType(kind, value) {
+  ({ kind, value } = kind);
+  const NativeDocumentPicker = NativeDocumentPicker2.NativeDocumentPicker;
+  return NativeDocumentPicker.isKnownType(kind, value);
+};

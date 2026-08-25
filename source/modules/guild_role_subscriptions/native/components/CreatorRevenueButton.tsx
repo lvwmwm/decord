@@ -1,14 +1,14 @@
-// Module ID: 9390
-// Function ID: 9391
+// Module ID: 8833
+// Function ID: 8834
 // Name: CreatorRevenueButton
-// Dependencies: [19, 21, 4668, 9391, 2]
+// Dependencies: [19, 21, 4380, 8834, 2]
 // Exports: CreatorRevenueButton
 
-// Module 9390 (CreatorRevenueButton)
+// Module 8833 (CreatorRevenueButton)
 import noopAll from "noop" /* 19 */;
-import ShinyButtonDefault from "ShinyButton" /* 9391 */;
+import ShinyButtonDefault from "ShinyButton" /* 8834 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 noopAll;
 let closure_3 = createCacheKey.createStyles({ container: { borderRadius: 3 } });

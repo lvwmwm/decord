@@ -1,10 +1,10 @@
-// Module ID: 16408
-// Function ID: 16409
+// Module ID: 16440
+// Function ID: 16441
 // Name: useControlsLock
-// Dependencies: [19, 11488, 2]
+// Dependencies: [19, 11840, 2]
 // Exports: default
 
-// Module 16408 (useControlsLock)
+// Module 16440 (useControlsLock)
 import closure_2 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/controls/useControlsLock.tsx");

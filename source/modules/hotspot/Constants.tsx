@@ -1,9 +1,9 @@
-// Module ID: 7233
-// Function ID: 7234
+// Module ID: 5943
+// Function ID: 5944
 // Name: HotspotLocations
 // Dependencies: [2]
 
-// Module 7233 (HotspotLocations)
+// Module 5943 (HotspotLocations)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/hotspot/Constants.tsx");

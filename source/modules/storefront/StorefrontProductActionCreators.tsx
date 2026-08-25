@@ -1,15 +1,15 @@
-// Module ID: 8999
-// Function ID: 9000
+// Module ID: 8962
+// Function ID: 8963
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1995, 9000, 5334, 676, 687, 709, 4388, 4278, 2]
+// Dependencies: [5, 1996, 8963, 7169, 676, 687, 709, 4643, 4279, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8999 (_maybeFetchProductsWithSkus)
+// Module 8962 (_maybeFetchProductsWithSkus)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1995 */;
-import closure_5 from "getFetchState" /* 9000 */;
-import closure_6 from "fromServer" /* 5334 */;
+import closure_4 from "_getSystemLocale" /* 1996 */;
+import closure_5 from "getFetchState" /* 8963 */;
+import closure_6 from "fromServer" /* 7169 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -32,7 +32,7 @@ function _maybeFetchProductsWithSkus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -204,7 +204,7 @@ function _maybeFetchProductsBySkuIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

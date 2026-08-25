@@ -1,10 +1,10 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9007
+// Function ID: 9008
 // Name: MediaModalSheetWrapper
-// Dependencies: [19, 676, 21, 7160, 4346, 9046, 2]
+// Dependencies: [19, 676, 21, 5816, 4347, 9008, 2]
 // Exports: default
 
-// Module 9045 (MediaModalSheetWrapper)
+// Module 9007 (MediaModalSheetWrapper)
 import closure_2 from "noop" /* 19 */;
 import { MEDIA_MODAL_KEY } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;

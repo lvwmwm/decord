@@ -1,9 +1,9 @@
-// Module ID: 5043
-// Function ID: 5044
+// Module ID: 5367
+// Function ID: 5368
 // Name: initialize
 // Dependencies: [709, 2]
 
-// Module 5043 (initialize)
+// Module 5367 (initialize)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("lib/AutomaticLifecycleManager.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 5917
-// Function ID: 5918
+// Module ID: 6607
+// Function ID: 6608
 // Name: HandheldSpotIllustration
-// Dependencies: [21, 5454, 5918, 2]
+// Dependencies: [21, 5374, 6608, 2]
 // Exports: HandheldSpotIllustration
 
-// Module 5917 (HandheldSpotIllustration)
+// Module 6607 (HandheldSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5918 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6608 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HandheldSpotIllustration.native.tsx");

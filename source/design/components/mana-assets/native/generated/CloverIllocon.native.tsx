@@ -1,14 +1,14 @@
-// Module ID: 5595
-// Function ID: 5596
+// Module ID: 6279
+// Function ID: 6280
 // Name: CloverIllocon
-// Dependencies: [21, 5454, 5596, 2]
+// Dependencies: [21, 5374, 6280, 2]
 // Exports: CloverIllocon
 
-// Module 5595 (CloverIllocon)
+// Module 6279 (CloverIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5596 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6280 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CloverIllocon.native.tsx");

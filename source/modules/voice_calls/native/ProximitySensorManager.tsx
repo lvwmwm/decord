@@ -1,17 +1,17 @@
-// Module ID: 16784
-// Function ID: 16785
+// Module ID: 16816
+// Function ID: 16817
 // Name: handleChange
-// Dependencies: [17, 1390, 4658, 4544, 9687, 500, 16785, 9688, 5043, 2]
+// Dependencies: [17, 1390, 4402, 4454, 9297, 500, 16817, 9298, 5367, 2]
 
-// Module 16784 (handleChange)
+// Module 16816 (handleChange)
 import set2 from "set" /* 500 */;
-import initializeDefault from "initialize" /* 5043 */;
-import RouteTypes from "RouteTypes" /* 9688 */;
-import enforcingDefault from "enforcing" /* 16785 */;
+import initializeDefault from "initialize" /* 5367 */;
+import RouteTypes from "RouteTypes" /* 9298 */;
+import enforcingDefault from "enforcing" /* 16817 */;
 import closure_2 from "participantFromServer" /* 1390 */;
-import closure_3 from "reset" /* 4658 */;
-import closure_4 from "createRTCConnection" /* 4544 */;
-import closure_5 from "handleAudioRouteChanged" /* 9687 */;
+import closure_3 from "reset" /* 4402 */;
+import closure_4 from "createRTCConnection" /* 4454 */;
+import closure_5 from "handleAudioRouteChanged" /* 9297 */;
 import set from "set" /* 500 */;
 
 require = arg1;

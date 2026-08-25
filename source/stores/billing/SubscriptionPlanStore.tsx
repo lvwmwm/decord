@@ -1,14 +1,14 @@
-// Module ID: 4047
-// Function ID: 4048
+// Module ID: 4048
+// Function ID: 4049
 // Name: addSubscriptionPlan
-// Dependencies: [4043, 676, 1924, 1990, 589, 11, 709, 2]
+// Dependencies: [4044, 676, 1924, 1991, 589, 11, 709, 2]
 
-// Module 4047 (addSubscriptionPlan)
+// Module 4048 (addSubscriptionPlan)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
-import closure_3 from "createFromServer" /* 4043 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1991 */;
+import closure_3 from "createFromServer" /* 4044 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import set from "set" /* 2 */;

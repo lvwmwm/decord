@@ -1,13 +1,13 @@
-// Module ID: 10440
-// Function ID: 10441
+// Module ID: 10295
+// Function ID: 10296
 // Name: useVirtualCurrencyBalanceAnimationData
-// Dependencies: [32, 19, 4669, 589, 6738, 2]
+// Dependencies: [32, 19, 4372, 589, 9000, 2]
 // Exports: useVirtualCurrencyBalanceAnimationData
 
-// Module 10440 (useVirtualCurrencyBalanceAnimationData)
+// Module 10295 (useVirtualCurrencyBalanceAnimationData)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/virtual_currency/hooks/native/useVirtualCurrencyBalanceAnimationData.tsx");

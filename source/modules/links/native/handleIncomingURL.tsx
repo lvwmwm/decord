@@ -1,15 +1,15 @@
-// Module ID: 17206
-// Function ID: 17207
+// Module ID: 17238
+// Function ID: 17239
 // Name: _handleIncomingURL
-// Dependencies: [5, 1391, 4544, 7421, 676, 3, 5071, 17205, 8700, 698, 4496, 4359, 4364, 513, 8081, 17207, 2]
+// Dependencies: [5, 1391, 4454, 7019, 676, 3, 7081, 17237, 4615, 698, 13403, 4360, 4365, 513, 7903, 17239, 2]
 // Exports: default
 
-// Module 17206 (_handleIncomingURL)
+// Module 17238 (_handleIncomingURL)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "createRTCConnection" /* 4544 */;
-import closure_6 from "getState" /* 7421 */;
+import closure_5 from "createRTCConnection" /* 4454 */;
+import closure_6 from "getState" /* 7019 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -39,7 +39,7 @@ function _handleIncomingURL() {
             obj[0] = url;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -193,18 +193,18 @@ function _handleIncomingURL() {
                         const obj30 = lib(closure_1_2[8]);
                       }
                       fingerprint = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     } else {
                       throwTypeErrorResult = url;
                       const parts = url.split("voice/");
                       if (2 !== parts.length) {
                         fingerprint = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       } else {
                         const parts1 = parts[1].split("/");
                         if (0 === parts1.length) {
                           fingerprint = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         } else if ("user" !== parts1[0]) {
                           if ("invite" === parts1[0]) {
                             throwTypeErrorResult = callback;

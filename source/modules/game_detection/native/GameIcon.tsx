@@ -1,19 +1,19 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 5844
+// Function ID: 5845
 // Name: GameIcon
-// Dependencies: [19, 17, 1924, 21, 4668, 712, 7188, 7189, 7190, 7191, 2]
+// Dependencies: [19, 17, 1924, 21, 4380, 712, 5845, 5846, 5847, 5848, 2]
 
-// Module 7187 (GameIcon)
+// Module 5844 (GameIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 7188 */;
-import registerAssetDefault2 from "registerAsset" /* 7189 */;
-import registerAssetDefault3 from "registerAsset" /* 7190 */;
-import registerAssetDefault4 from "registerAsset" /* 7191 */;
+import registerAssetDefault from "registerAsset" /* 5845 */;
+import registerAssetDefault2 from "registerAsset" /* 5846 */;
+import registerAssetDefault3 from "registerAsset" /* 5847 */;
+import registerAssetDefault4 from "registerAsset" /* 5848 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { PremiumSubscriptionSKUs } from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 class GameIcon {
   constructor(arg0) {

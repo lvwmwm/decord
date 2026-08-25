@@ -1,29 +1,29 @@
-// Module ID: 12751
-// Function ID: 12752
+// Module ID: 8754
+// Function ID: 8755
 // Name: componentDidMount
-// Dependencies: [19, 17, 4669, 4089, 1391, 1922, 8197, 21, 4668, 712, 4107, 10769, 8196, 10493, 11178, 4066, 1236, 10511, 10512, 12, 4773, 10841, 10820, 10778, 4818, 1892, 10886, 10950, 10495, 7549, 10777, 10779, 10819, 11887, 11889, 11112, 500, 6840, 5438, 4739, 4069, 589, 1494, 5272, 5257, 2]
+// Dependencies: [19, 17, 4372, 4090, 1391, 1922, 8193, 21, 4380, 712, 4108, 8755, 8192, 8757, 11520, 4067, 1236, 11101, 11095, 12, 4391, 11165, 11144, 11107, 4633, 1892, 11205, 8231, 8760, 7367, 11106, 11108, 11143, 11045, 12223, 11454, 500, 5434, 4949, 4376, 4070, 589, 1494, 6053, 4619, 2]
 // Exports: ChatPreview
 
-// Module 12751 (componentDidMount)
+// Module 8754 (componentDidMount)
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import Text from "Text" /* 4739 */;
-import PressableBase from "PressableBase" /* 5438 */;
-import setOptionsDefault from "setOptions" /* 8196 */;
-import getPreviousMessagesDefault from "getPreviousMessages" /* 10769 */;
-import DCDChatListDefault from "DCDChatList" /* 11112 */;
-import GuildNSFWDefault from "GuildNSFW" /* 11887 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 11889 */;
+import Text from "Text" /* 4376 */;
+import PressableBase from "PressableBase" /* 4949 */;
+import setOptionsDefault from "setOptions" /* 8192 */;
+import getPreviousMessagesDefault from "getPreviousMessages" /* 8755 */;
+import GuildNSFWDefault from "GuildNSFW" /* 11045 */;
+import DCDChatListDefault from "DCDChatList" /* 11454 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 12223 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
-import closure_7 from "setContent" /* 4089 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_7 from "setContent" /* 4090 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import Changeset from "Changeset" /* 8197 */;
+import Changeset from "Changeset" /* 8193 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -97,7 +97,7 @@ class ChatPreviewBase extends PureComponent {
           let arr = items;
           const first = items[0];
           if (null != first) {
-            if (messages(11178)(c0, first[first.length - 1], props)) {
+            if (messages(11520)(c0, first[first.length - 1], props)) {
               items = [props];
               arr = arr.unshift(items);
             } else {
@@ -121,7 +121,7 @@ class ChatPreviewBase extends PureComponent {
             isSameDayResult = null == timestamp;
           }
           if (!isSameDayResult) {
-            let obj = _undefined(4066);
+            let obj = _undefined(4067);
             isSameDayResult = obj.isSameDay(tmp.timestamp, timestamp);
           }
           let flag = false;
@@ -201,9 +201,9 @@ class ChatPreviewBase extends PureComponent {
             obj4[0] = roleStyle;
             obj4[1] = closure_1_12.DAY;
             obj4[2] = dependencyMap;
-            obj4[3] = _undefined(4066).dateFormat(tmp.timestamp, "LL");
+            obj4[3] = _undefined(4067).dateFormat(tmp.timestamp, "LL");
             arr.push(obj4);
-            const obj8 = _undefined(4066);
+            const obj8 = _undefined(4067);
           }
         });
         for (const item10042 of items1) {
@@ -220,7 +220,7 @@ class ChatPreviewBase extends PureComponent {
         const jumpTargetId = tmp3.jumpTargetId;
         let tmp23;
         if (!tmp7) {
-          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: "+1 809", scrollPosition: "+1 829", focusTargetId: "+1 849" };
+          obj = { rows: null, scrollToMessageId: null, jumpTargetId: null, jumpType: "PX_16", shouldInitialScroll: "Array", animated: "4.8.0", scrollPosition: null, focusTargetId: 60 };
           obj[0] = tmp22;
           obj[1] = jumpTargetId;
           obj[2] = jumpTargetId;
@@ -273,7 +273,7 @@ class ChatPreviewBase extends PureComponent {
         }
       }
       let obj = applyArgumentsResult(closure_1_3[21]);
-      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "asc", selectedChannelId: "asc", tapLinkData: "CHANNEL_ACK" };
+      obj = { allowWithinModal: true, chatInputRef: "a", handleTransitionToThread: "Array", message: 0, messageChannel: "asc", selectedChannelId: "asc", tapLinkData: "isInRestrictedHours" };
       obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
         const jumpToChatProps = props.props.jumpToChatProps;
         const onBeforeJumpToMessage = jumpToChatProps.onBeforeJumpToMessage;
@@ -508,7 +508,7 @@ prototype["render"] = function render() {
   const obj2 = { bottom: true, style: tmp.jumpToChatButtonContainer, children: null };
   tmp9Result = set;
   obj2[2] = callback(PressableBase.PressableOpacity, { accessibilityRole: "button", style: tmp.jumpToChatButton, onPress: self.handleJumpToChat, children: callback(Text.Text, obj4) });
-  tmp6Result = tmp6(tmp9(6840).SafeAreaPaddingView, obj2);
+  tmp6Result = tmp6(tmp9(5434).SafeAreaPaddingView, obj2);
   tmp14 = tmp6Result;
 };
 ChatPreviewBase.contextType = require("ManaContext").ThemeContext;
@@ -518,11 +518,11 @@ let result = require("set").fileFinishedImporting("components_native/common/Chat
 
 export const ChatPreview = function ChatPreview(channelId) {
   channelId = channelId.channelId;
-  const InlineAttachmentMedia = channelId(4069).InlineAttachmentMedia;
+  const InlineAttachmentMedia = channelId(4070).InlineAttachmentMedia;
   const setting = InlineAttachmentMedia.useSetting();
-  const InlineEmbedMedia = channelId(4069).InlineEmbedMedia;
+  const InlineEmbedMedia = channelId(4070).InlineEmbedMedia;
   const setting1 = InlineEmbedMedia.useSetting();
-  const RenderEmbeds = channelId(4069).RenderEmbeds;
+  const RenderEmbeds = channelId(4070).RenderEmbeds;
   const setting2 = RenderEmbeds.useSetting();
   let obj = channelId(589);
   const items = [closure_6];
@@ -530,10 +530,10 @@ export const ChatPreview = function ChatPreview(channelId) {
   const items1 = [closure_8];
   const stateFromStores1 = channelId(589).useStateFromStores(items1, () => closure_1_8.getChannel(channelId));
   const obj2 = channelId(589);
-  const isChannelSpoilerGated = channelId(5272).useIsChannelSpoilerGated(stateFromStores1);
-  const obj3 = channelId(5272);
-  const isChannelContentGated = channelId(5257).useIsChannelContentGated(stateFromStores1);
-  const obj4 = channelId(5257);
+  const isChannelSpoilerGated = channelId(6053).useIsChannelSpoilerGated(stateFromStores1);
+  const obj3 = channelId(6053);
+  const isChannelContentGated = channelId(4619).useIsChannelContentGated(stateFromStores1);
+  const obj4 = channelId(4619);
   const items2 = [closure_7];
   obj = {};
   const stateFromStores2 = channelId(589).useStateFromStores(items2, () => null != content.getContent());

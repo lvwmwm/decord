@@ -1,17 +1,17 @@
-// Module ID: 8251
-// Function ID: 8252
+// Module ID: 8252
+// Function ID: 8253
 // Name: identityHook
-// Dependencies: [1910, 1922, 8252, 676, 11, 1236, 7255, 5047, 2]
+// Dependencies: [1910, 1922, 8253, 676, 11, 1236, 5978, 4588, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 8251 (identityHook)
+// Module 8252 (identityHook)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 5047 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7255 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4588 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 5978 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import getJoinButtonLabels from "getJoinButtonLabels" /* 8252 */;
+import getJoinButtonLabels from "getJoinButtonLabels" /* 8253 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

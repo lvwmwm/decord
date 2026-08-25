@@ -1,12 +1,12 @@
-// Module ID: 11567
-// Function ID: 11568
-// Dependencies: [11560, 11568, 709, 12, 7567, 11571, 1374, 2]
+// Module ID: 11914
+// Function ID: 11915
+// Dependencies: [11907, 11915, 709, 12, 7385, 11918, 1374, 2]
 
-// Module 11567
+// Module 11914
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
-import createRequestPayloadDefault from "createRequestPayload" /* 11568 */;
+import createRequestPayloadDefault from "createRequestPayload" /* 11915 */;
 
 let result = set.fileFinishedImporting("modules/search/SearchActionCreators.tsx");
 
@@ -17,29 +17,29 @@ export default {
     let guildIdFromSearchContext;
     let mapped;
     ({ pagination, trackExactTotalHits, getLimit, searchMode } = searchContext);
-    let obj = searchContext(11560);
-    obj1 = searchContext(11560);
+    let obj = searchContext(11907);
+    obj1 = searchContext(11907);
     const searchQueryFromTokens = obj1.getSearchQueryFromTokens(obj.tokenizeQuery(searchQueryString));
     if (Array.isArray(searchQueryFromTokens.pinned)) {
       const pinned = searchQueryFromTokens.pinned;
       searchQueryFromTokens.pinned = pinned.some((arg0) => true === arg0);
     }
-    let tmpResult = tmp(11560);
+    let tmpResult = tmp(11907);
     const result = tmpResult.searchModeToSearchQueryParams(searchMode);
     obj = {};
     const merged = Object.assign(searchQueryFromTokens);
     const merged1 = Object.assign(result);
-    tmpResult = tmp(11560);
+    tmpResult = tmp(11907);
     guildIdFromSearchContext = tmpResult.getGuildIdFromSearchContext(searchContext);
     if (null != guildIdFromSearchContext) {
-      tmp(11560).setIncludeNSFW(obj, guildIdFromSearchContext);
-      const tmpResult1 = tmp(11560);
+      tmp(11907).setIncludeNSFW(obj, guildIdFromSearchContext);
+      const tmpResult1 = tmp(11907);
     }
     const tmp10 = importDefault;
     const tokenizeQueryResult = obj.tokenizeQuery(searchQueryString);
     obj = { id: null, searchContext: null, searchQuery: null, searchTabs: null, getLimit: null, pagination: null, trackExactTotalHits: null };
     const obj7 = createRequestPayloadDefault;
-    obj[0] = searchContext(11560).getSearchContextId(searchContext);
+    obj[0] = searchContext(11907).getSearchContextId(searchContext);
     obj[1] = searchContext;
     obj[2] = obj;
     obj[3] = searchTabs;
@@ -55,7 +55,7 @@ export default {
       onFetchStart(obj2);
     }
     mapped = searchTabs.map((arg0) => callback(arg0));
-    const tmpResult2 = searchContext(11560);
+    const tmpResult2 = searchContext(11907);
     dispatcherDefault.dispatch({ type: "SEARCH_MESSAGES_START", ids: mapped });
     const response = obj1.fetch((body) => {
       body = body.body;
@@ -117,28 +117,28 @@ export default {
     let guildIdFromSearchContext;
     let searchContextId;
     ({ pagination, searchMode, searchEverywhere } = arg0);
-    let obj = guildIdFromSearchContext(11560);
+    let obj = guildIdFromSearchContext(11907);
     obj = {};
-    let obj2 = guildIdFromSearchContext(11560);
+    let obj2 = guildIdFromSearchContext(11907);
     const merged = Object.assign(obj2.getSearchQueryFromTokens(obj.tokenizeQuery(searchQueryString)));
     const tokenizeQueryResult = obj.tokenizeQuery(searchQueryString);
-    const merged1 = Object.assign(guildIdFromSearchContext(11560).searchModeToSearchQueryParams(searchMode));
+    const merged1 = Object.assign(guildIdFromSearchContext(11907).searchModeToSearchQueryParams(searchMode));
     obj.offset = pagination.offset;
-    const obj4 = guildIdFromSearchContext(11560);
-    guildIdFromSearchContext = guildIdFromSearchContext(11560).getGuildIdFromSearchContext(searchContext);
+    const obj4 = guildIdFromSearchContext(11907);
+    guildIdFromSearchContext = guildIdFromSearchContext(11907).getGuildIdFromSearchContext(searchContext);
     if (null != guildIdFromSearchContext) {
-      let tmpResult = tmp(11560);
+      let tmpResult = tmp(11907);
       tmpResult.setIncludeNSFW(obj, guildIdFromSearchContext);
     }
     if (searchEverywhere) {
       obj.search_everywhere = true;
     }
-    tmpResult = tmp(11560);
+    tmpResult = tmp(11907);
     searchContextId = tmpResult.getSearchContextId(searchContext);
-    const obj5 = guildIdFromSearchContext(11560);
+    const obj5 = guildIdFromSearchContext(11907);
     const tmp9 = searchContextId;
     obj = { id: searchContextId, searchType: searchContext.type, searchQuery: obj };
-    const obj8 = searchContextId(11571);
+    const obj8 = searchContextId(11918);
     if (onFetchStart != null) {
       obj2 = { searchContext: null, searchQueryString: null, searchQuery: null };
       obj2[0] = searchContext;
@@ -146,7 +146,7 @@ export default {
       obj2[2] = obj;
       onFetchStart(obj2);
     }
-    obj1 = searchContextId(11571).create(obj);
+    obj1 = searchContextId(11918).create(obj);
     let items = [searchContextId];
     tmp9(709).dispatch({ type: "SEARCH_MESSAGES_START", ids: items });
     const response = obj1.fetch((analyticsId) => {

@@ -1,18 +1,18 @@
-// Module ID: 12576
-// Function ID: 12577
+// Module ID: 10889
+// Function ID: 10890
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 8706, 676, 21, 4668, 712, 5438, 1363, 4730, 1297, 2]
+// Dependencies: [19, 17, 9895, 676, 21, 4380, 712, 4949, 1363, 4805, 1297, 2]
 // Exports: default
 
-// Module 12576 (ChannelCallNavigatorIcon)
+// Module 10889 (ChannelCallNavigatorIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import isBlurDisabledDefault from "isBlurDisabled" /* 4730 */;
-import PressableBase from "PressableBase" /* 5438 */;
+import isBlurDisabledDefault from "isBlurDisabled" /* 4805 */;
+import PressableBase from "PressableBase" /* 4949 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { resetFocusTimer } from "VoiceChatDrawerState" /* 8706 */;
+import { resetFocusTimer } from "VoiceChatDrawerState" /* 9895 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

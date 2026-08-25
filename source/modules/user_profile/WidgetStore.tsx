@@ -1,16 +1,16 @@
-// Module ID: 5375
-// Function ID: 5376
+// Module ID: 7231
+// Function ID: 7232
 // Name: initialize
-// Dependencies: [32, 1922, 5370, 589, 1370, 12, 709, 2]
+// Dependencies: [32, 1922, 7227, 589, 1370, 12, 709, 2]
 
-// Module 5375 (initialize)
+// Module 7231 (initialize)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "createUserWidgetFromServer" /* 5370 */;
+import closure_5 from "createUserWidgetFromServer" /* 7227 */;
 
 require = arg1;
 let c6 = null;

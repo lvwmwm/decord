@@ -1,9 +1,9 @@
-// Module ID: 15502
-// Function ID: 15503
+// Module ID: 15534
+// Function ID: 15535
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15502 (metadata)
+// Module 15534 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/powerups/file-upload-static-2x.png.js");

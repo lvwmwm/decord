@@ -1,15 +1,15 @@
-// Module ID: 16120
-// Function ID: 16121
+// Module ID: 16152
+// Function ID: 16153
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [13328, 676, 1924, 687, 647, 7456, 7448, 2]
+// Dependencies: [13190, 676, 1924, 687, 647, 7054, 7046, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 16120 (useShouldShowExpiringTrialOfferCard)
+// Module 16152 (useShouldShowExpiringTrialOfferCard)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import setDefault from "set" /* 687 */;
-import useCountdownDefault from "useCountdown" /* 7448 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7456 */;
-import closure_3 from "clearDismissUntil" /* 13328 */;
+import useCountdownDefault from "useCountdown" /* 7046 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7054 */;
+import closure_3 from "clearDismissUntil" /* 13190 */;
 import { NoticeTypes } from "ME" /* 676 */;
 import { PremiumSubscriptionSKUs } from "GuildFeatures" /* 1924 */;
 

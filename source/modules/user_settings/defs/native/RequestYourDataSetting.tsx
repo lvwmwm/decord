@@ -1,24 +1,24 @@
-// Module ID: 14283
-// Function ID: 14284
+// Module ID: 14313
+// Function ID: 14314
 // Name: useIsHarvestRequestDisabled
-// Dependencies: [17, 1922, 8238, 676, 21, 700, 8657, 705, 589, 4009, 14284, 1236, 3978, 10708, 14286, 2]
+// Dependencies: [17, 1922, 8235, 676, 21, 700, 8665, 705, 589, 4010, 14314, 1236, 3979, 10516, 14316, 2]
 // Exports: fetchHarvestStatus, useIsHarvestRequestDisabled
 
-// Module 14283 (useIsHarvestRequestDisabled)
+// Module 14313 (useIsHarvestRequestDisabled)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import tDefault from "t" /* 3978 */;
-import isIterable from "isIterable" /* 4009 */;
-import MobileUserSettings from "MobileUserSettings" /* 8238 */;
-import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 8657 */;
-import harvestDisabled from "harvestDisabled" /* 14284 */;
+import hooksDefault from "hooks" /* 3979 */;
+import isIterable from "isIterable" /* 4010 */;
+import MobileUserSettings from "MobileUserSettings" /* 8235 */;
+import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 8665 */;
+import harvestDisabled from "harvestDisabled" /* 14314 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import identity from "identity" /* 700 */;
-import createToggle from "createToggle" /* 10708 */;
+import createToggle from "createToggle" /* 10516 */;
 
 function useIsHarvestRequestDisabled() {
   const items = [closure_4];
@@ -64,9 +64,9 @@ obj = {
     } else if (null == tmp3) {
       return null;
     } else {
-      const addResult = tDefault(tmp3.created_at).add(closure_5, "days");
+      const addResult = hooksDefault(tmp3.created_at).add(closure_5, "days");
       let formatToPlainStringResult = null;
-      if (!addResult.isBefore(tDefault())) {
+      if (!addResult.isBefore(hooksDefault())) {
         const intl = tmp(1236).intl;
         const obj = { date: null };
         obj[0] = addResult.format("MMMM Do YYYY");
@@ -105,7 +105,7 @@ obj = {
 obj = {
   route: UserSettingsSections.REQUEST_DATA,
   getComponent() {
-    return require(14286).default;
+    return require(14316).default;
   }
 };
 const route = createToggle.createRoute(obj);

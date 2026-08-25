@@ -1,15 +1,15 @@
-// Module ID: 14880
-// Function ID: 14881
+// Module ID: 14910
+// Function ID: 14911
 // Name: onProfileUpdatesNotificationSettingsChanged
-// Dependencies: [4036, 676, 4069, 698, 2]
+// Dependencies: [4037, 676, 4070, 698, 2]
 // Exports: onProfileUpdatesNotificationSettingsChanged
 
-// Module 14880 (onProfileUpdatesNotificationSettingsChanged)
+// Module 14910 (onProfileUpdatesNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4036 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4037 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
 
 let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
 const AnalyticEvents = ME.AnalyticEvents;

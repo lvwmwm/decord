@@ -1,11 +1,11 @@
-// Module ID: 7204
-// Function ID: 7205
+// Module ID: 5861
+// Function ID: 5862
 // Name: experiment
-// Dependencies: [4290, 2]
+// Dependencies: [4291, 2]
 
-// Module 7204 (experiment)
+// Module 5861 (experiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4290 */;
+import createExperiment from "createExperiment" /* 4291 */;
 
 const items = [{ id: 1, label: "Enabled", config: { tidaWebformEnabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "user", id: "2025-11_tida_webform", label: "Tida Webform", defaultConfig: { tidaWebformEnabled: false }, treatments: items });

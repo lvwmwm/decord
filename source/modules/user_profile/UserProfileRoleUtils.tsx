@@ -1,12 +1,12 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 5880
+// Function ID: 5881
 // Name: sortRolesByVerification
-// Dependencies: [1988, 2]
+// Dependencies: [1989, 2]
 // Exports: sortRolesByVerification
 
-// Module 7222 (sortRolesByVerification)
+// Module 5880 (sortRolesByVerification)
 import set from "set" /* 2 */;
-import compareGuildRoles from "compareGuildRoles" /* 1988 */;
+import compareGuildRoles from "compareGuildRoles" /* 1989 */;
 
 const result = set.fileFinishedImporting("modules/user_profile/UserProfileRoleUtils.tsx");
 

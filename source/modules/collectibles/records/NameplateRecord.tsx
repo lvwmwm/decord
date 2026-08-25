@@ -1,12 +1,12 @@
-// Module ID: 1947
-// Function ID: 1948
+// Module ID: 1948
+// Function ID: 1949
 // Name: fromServer
-// Dependencies: [1948, 1949, 2]
+// Dependencies: [1949, 1950, 2]
 // Exports: isNameplateRecord
 
-// Module 1947 (fromServer)
-import fromServerDefault from "fromServer" /* 1948 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+// Module 1948 (fromServer)
+import fromServerDefault from "fromServer" /* 1949 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 
 require = arg1;
 fromServerDefault;

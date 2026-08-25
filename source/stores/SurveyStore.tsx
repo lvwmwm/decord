@@ -1,19 +1,19 @@
-// Module ID: 9913
-// Function ID: 9914
+// Module ID: 4599
+// Function ID: 4600
 // Name: fetchSurveyIfNeeded
-// Dependencies: [4299, 1910, 4024, 4201, 1922, 676, 687, 9914, 506, 595, 3978, 589, 709, 2]
+// Dependencies: [4300, 1910, 4025, 4202, 1922, 676, 687, 4600, 506, 595, 3979, 589, 709, 2]
 
-// Module 9913 (fetchSurveyIfNeeded)
+// Module 4599 (fetchSurveyIfNeeded)
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import tDefault from "t" /* 3978 */;
-import overrideSurvey from "overrideSurvey" /* 9914 */;
-import closure_4 from "handleInviteData" /* 4299 */;
+import hooksDefault from "hooks" /* 3979 */;
+import overrideSurvey from "overrideSurvey" /* 4600 */;
+import closure_4 from "handleInviteData" /* 4300 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_7 from "handleConnectionOpen" /* 4201 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_7 from "handleConnectionOpen" /* 4202 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
@@ -228,7 +228,7 @@ function setSurvey(survey) {
   const value = Storage.get(closure_11);
   let tmp9 = null == value;
   if (!tmp9) {
-    obj = tDefault();
+    obj = hooksDefault();
     tmp9 = obj.diff(value, "day") < 7;
   }
   let tmp11 = null;

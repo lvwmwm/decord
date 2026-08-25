@@ -1,13 +1,13 @@
-// Module ID: 10209
-// Function ID: 10210
+// Module ID: 10060
+// Function ID: 10061
 // Name: FormSubmitErrorType
-// Dependencies: [1236, 7646, 2]
+// Dependencies: [1236, 7467, 2]
 // Exports: makeApiNameValidationError, makeAutomodViolationError, makeEmptyMessageError, makeEmptyTagsError, makeEmptyTitleError, renderError
 
-// Module 10209 (FormSubmitErrorType)
+// Module 10060 (FormSubmitErrorType)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAutomodErrorMessageFromErrorResponse from "getAutomodErrorMessageFromErrorResponse" /* 7646 */;
+import getAutomodErrorMessageFromErrorResponse from "getAutomodErrorMessageFromErrorResponse" /* 7467 */;
 
 let obj = { EmptyContent: 0, [0]: "EmptyContent", AutomodViolation: 1, [1]: "AutomodViolation", EmptyTags: 2, [2]: "EmptyTags", ApiValidation: 3, [3]: "ApiValidation" };
 const result = set.fileFinishedImporting("modules/forums/FormError.tsx");

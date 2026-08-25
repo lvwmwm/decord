@@ -1,14 +1,14 @@
-// Module ID: 16004
-// Function ID: 16005
+// Module ID: 16036
+// Function ID: 16037
 // Name: useMessageSearchErrorScreen
-// Dependencies: [19, 4976, 11559, 8546, 589, 11560, 1236, 4097, 8953, 2]
+// Dependencies: [19, 6006, 11906, 8554, 589, 11907, 1236, 4098, 9210, 2]
 // Exports: useMessageSearchErrorScreen, useMessageTabCountsErrorText
 
-// Module 16004 (useMessageSearchErrorScreen)
+// Module 16036 (useMessageSearchErrorScreen)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleReaction" /* 4976 */;
-import closure_5 from "prototype" /* 11559 */;
-import { SEARCH_MESSAGE_TAB_SENTINEL as closure_6 } from "MessageEmbedTypes" /* 8546 */;
+import closure_4 from "handleReaction" /* 6006 */;
+import closure_5 from "prototype" /* 11906 */;
+import { SEARCH_MESSAGE_TAB_SENTINEL as closure_6 } from "MessageEmbedTypes" /* 8554 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");

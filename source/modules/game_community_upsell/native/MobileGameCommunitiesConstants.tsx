@@ -1,9 +1,9 @@
-// Module ID: 15593
-// Function ID: 15594
+// Module ID: 15625
+// Function ID: 15626
 // Name: MAX_DISPLAYED_UPSELL_GUILDS
 // Dependencies: [2]
 
-// Module 15593 (MAX_DISPLAYED_UPSELL_GUILDS)
+// Module 15625 (MAX_DISPLAYED_UPSELL_GUILDS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/game_community_upsell/native/MobileGameCommunitiesConstants.tsx");

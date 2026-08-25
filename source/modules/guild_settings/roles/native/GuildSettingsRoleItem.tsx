@@ -1,15 +1,15 @@
-// Module ID: 16936
-// Function ID: 16937
-// Dependencies: [5, 19, 17, 676, 21, 4668, 712, 4739, 6851, 7201, 4662, 1236, 10809, 6815, 4768, 8074, 4337, 7220, 4761, 1370, 688, 8896, 6322, 6922, 1297, 9392, 6928, 2]
+// Module ID: 16968
+// Function ID: 16969
+// Dependencies: [5, 19, 17, 676, 21, 4380, 712, 4376, 4843, 5858, 4745, 1236, 11133, 5338, 4833, 7896, 4338, 5878, 4826, 1370, 688, 9153, 5480, 4919, 1297, 8835, 4925, 2]
 
-// Module 16936
+// Module 16968
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -115,7 +115,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {
@@ -151,7 +151,7 @@ const memoResult = importAllResult.memo(function GuildSettingsRoleItem(guildId) 
                 obj1 = closure_2_1(closure_2_2[13]);
                 obj1.deleteRole(closure_1_4, closure_1_0.id);
                 c2 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               } catch (tmp16) {
                 c2 = tmp;
                 throw tmp16;

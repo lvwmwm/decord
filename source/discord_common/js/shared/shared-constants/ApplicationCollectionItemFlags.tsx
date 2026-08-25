@@ -1,9 +1,9 @@
-// Module ID: 11354
-// Function ID: 11355
+// Module ID: 11710
+// Function ID: 11711
 // Name: ApplicationCollectionItemFlags
 // Dependencies: [2]
 
-// Module 11354 (ApplicationCollectionItemFlags)
+// Module 11710 (ApplicationCollectionItemFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionItemFlags.tsx");

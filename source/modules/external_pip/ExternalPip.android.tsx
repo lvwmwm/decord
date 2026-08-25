@@ -1,9 +1,9 @@
-// Module ID: 10066
-// Function ID: 10067
+// Module ID: 9922
+// Function ID: 9923
 // Name: NativeEventEmitter
 // Dependencies: [17, 2]
 
-// Module 10066 (NativeEventEmitter)
+// Module 9922 (NativeEventEmitter)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

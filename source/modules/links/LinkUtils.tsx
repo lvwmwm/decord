@@ -1,14 +1,14 @@
-// Module ID: 4492
-// Function ID: 4493
+// Module ID: 4575
+// Function ID: 4576
 // Name: ME
-// Dependencies: [1391, 1910, 4024, 676, 1398, 4366, 2]
+// Dependencies: [1391, 1910, 4025, 676, 1398, 4367, 2]
 // Exports: canViewChannel, isAccessibleChannelPath, tryParseChannelPath, tryParseDiceRollLink, tryParseEventDetailsPath
 
-// Module 4492 (ME)
-import setDefault from "set" /* 4366 */;
+// Module 4575 (ME)
+import setDefault from "set" /* 4367 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4025 */;
 import ME from "ME" /* 676 */;
 
 ME = ME.ME;

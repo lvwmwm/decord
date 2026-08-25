@@ -1,9 +1,9 @@
-// Module ID: 4804
-// Function ID: 4805
+// Module ID: 5947
+// Function ID: 5948
 // Name: processChannel
 // Dependencies: [1391, 1220, 2]
 
-// Module 4804 (processChannel)
+// Module 5947 (processChannel)
 import clearAllDefault from "clearAll" /* 1220 */;
 import prototype from "ensureGuildLoaded" /* 1391 */;
 import set from "set" /* 2 */;

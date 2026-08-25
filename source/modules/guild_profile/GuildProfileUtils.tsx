@@ -1,10 +1,10 @@
-// Module ID: 4376
-// Function ID: 4377
+// Module ID: 7341
+// Function ID: 7342
 // Name: getEstablishedDate
 // Dependencies: [1395, 676, 1430, 2]
 // Exports: getEstablishedDate, guildInviteCanEmbedProfile
 
-// Module 4376 (getEstablishedDate)
+// Module 7341 (getEstablishedDate)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;

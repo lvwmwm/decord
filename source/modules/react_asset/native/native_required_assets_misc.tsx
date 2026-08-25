@@ -1,9 +1,9 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 17257
+// Function ID: 17258
 // Name: NATIVE_REQUIRED_ASSETS_MISC
-// Dependencies: [1439, 1440, 1441, 1442, 1443, 1457, 1458, 1459, 1460, 1461, 1462, 1463, 1464, 17226, 17227, 17228, 17229, 17230, 17231, 17232, 2]
+// Dependencies: [1439, 1440, 1441, 1442, 1443, 1457, 1458, 1459, 1460, 1461, 1462, 1463, 1464, 17258, 17259, 17260, 17261, 17262, 17263, 17264, 2]
 
-// Module 17225 (NATIVE_REQUIRED_ASSETS_MISC)
+// Module 17257 (NATIVE_REQUIRED_ASSETS_MISC)
 import set from "set" /* 2 */;
 import registerAssetDefault from "registerAsset" /* 1439 */;
 import registerAssetDefault2 from "registerAsset" /* 1440 */;
@@ -18,13 +18,13 @@ import registerAssetDefault10 from "registerAsset" /* 1461 */;
 import registerAssetDefault11 from "registerAsset" /* 1462 */;
 import registerAssetDefault12 from "registerAsset" /* 1463 */;
 import registerAssetDefault13 from "registerAsset" /* 1464 */;
-import registerAssetDefault14 from "registerAsset" /* 17226 */;
-import registerAssetDefault15 from "registerAsset" /* 17227 */;
-import registerAssetDefault16 from "registerAsset" /* 17228 */;
-import registerAssetDefault17 from "registerAsset" /* 17229 */;
-import registerAssetDefault18 from "registerAsset" /* 17230 */;
-import registerAssetDefault19 from "registerAsset" /* 17231 */;
-import registerAssetDefault20 from "registerAsset" /* 17232 */;
+import registerAssetDefault14 from "registerAsset" /* 17258 */;
+import registerAssetDefault15 from "registerAsset" /* 17259 */;
+import registerAssetDefault16 from "registerAsset" /* 17260 */;
+import registerAssetDefault17 from "registerAsset" /* 17261 */;
+import registerAssetDefault18 from "registerAsset" /* 17262 */;
+import registerAssetDefault19 from "registerAsset" /* 17263 */;
+import registerAssetDefault20 from "registerAsset" /* 17264 */;
 
 const obj = { DefaultAvatar0: registerAssetDefault, DefaultAvatar1: registerAssetDefault2, DefaultAvatar2: registerAssetDefault3, DefaultAvatar3: registerAssetDefault4, DefaultAvatar4: registerAssetDefault5, DefaultGroup0: registerAssetDefault6, DefaultGroup1: registerAssetDefault7, DefaultGroup2: registerAssetDefault8, DefaultGroup3: registerAssetDefault9, DefaultGroup4: registerAssetDefault10, DefaultGroup5: registerAssetDefault11, DefaultGroup6: registerAssetDefault12, DefaultGroup7: registerAssetDefault13, PoopDark: registerAssetDefault14, PoopLight: registerAssetDefault15, RoleSubscriptionBadge: registerAssetDefault16, RoleSubscriptionLanyard: registerAssetDefault17, RoleSubscriptionPurchaseCard: registerAssetDefault18, SummaryIndicatorEnd: registerAssetDefault19, SummaryIndicatorStart: registerAssetDefault20 };
 const result = set.fileFinishedImporting("modules/react_asset/native/native_required_assets_misc.tsx");

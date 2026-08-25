@@ -1,9 +1,9 @@
-// Module ID: 7317
-// Function ID: 7318
+// Module ID: 6040
+// Function ID: 6041
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1218, 676, 5265, 7318, 7320, 698, 513, 7321, 1487, 4093, 2]
+// Dependencies: [5, 1218, 676, 4611, 6041, 6043, 698, 513, 6044, 1487, 4094, 2]
 
-// Module 7317 (createHandoffTokenWithLoadingModal)
+// Module 6040 (createHandoffTokenWithLoadingModal)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
@@ -62,7 +62,7 @@ function _redirectWithHandoffToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -269,7 +269,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
             uRL = new URL("" + location.protocol + c6.DEVELOPER_PORTAL_LOGIN_HANDOFF(obj3.nonce, closure_3, callback));
             obj1(obj3[10]).performURLNavigation(uRL.href);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           c6 = tmp;

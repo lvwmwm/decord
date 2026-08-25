@@ -1,23 +1,23 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 11173
+// Function ID: 11174
 // Name: GuildPill
-// Dependencies: [32, 19, 17, 1910, 5048, 676, 10850, 21, 4668, 712, 7226, 4739, 10851, 647, 1236, 10852, 1629, 6988, 6990, 1994, 4119, 6323, 8122, 6835, 6832, 4346, 2]
+// Dependencies: [32, 19, 17, 1910, 4589, 676, 11174, 21, 4380, 712, 5885, 4376, 11175, 647, 1236, 11176, 1629, 5503, 5505, 1995, 4120, 5482, 8118, 5368, 5363, 4347, 2]
 // Exports: default
 
-// Module 10849 (GuildPill)
+// Module 11173 (GuildPill)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4739 */;
-import GuildIconSizes from "GuildIconSizes" /* 7226 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
+import Text from "Text" /* 4376 */;
+import GuildIconSizes from "GuildIconSizes" /* 5885 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "updateUserGuildSettingsInternal" /* 5048 */;
+import closure_7 from "updateUserGuildSettingsInternal" /* 4589 */;
 import ME from "ME" /* 676 */;
-import { FeedbackRating } from "FeedbackRating" /* 10850 */;
+import { FeedbackRating } from "FeedbackRating" /* 11174 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function GuildPill(guild) {

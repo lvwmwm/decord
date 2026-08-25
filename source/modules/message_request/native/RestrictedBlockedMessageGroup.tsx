@@ -1,19 +1,19 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 16247
+// Function ID: 16248
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 4668, 16213, 712, 5438, 4739, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4380, 16245, 712, 4949, 4376, 1236, 2]
 // Exports: default
 
-// Module 16215 (RestrictedBlockedMessageGroup)
+// Module 16247 (RestrictedBlockedMessageGroup)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import PressableBase from "PressableBase" /* 5438 */;
+import Text from "Text" /* 4376 */;
+import PressableBase from "PressableBase" /* 4949 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

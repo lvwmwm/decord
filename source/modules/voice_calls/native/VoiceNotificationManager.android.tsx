@@ -1,20 +1,20 @@
-// Module ID: 13886
-// Function ID: 13887
+// Module ID: 13921
+// Function ID: 13922
 // Name: processColor
-// Dependencies: [32, 17, 1390, 4482, 4658, 1391, 4501, 4544, 4033, 1922, 676, 712, 7543, 7542, 12652, 9947, 4989, 1236, 4726, 2]
+// Dependencies: [32, 17, 1390, 4421, 4402, 1391, 4431, 4454, 4034, 1922, 676, 712, 7361, 7360, 11008, 9803, 4574, 1236, 4562, 2]
 
-// Module 13886 (processColor)
+// Module 13921 (processColor)
 import ThemesDefault from "Themes" /* 712 */;
-import initializeDefault from "initialize" /* 4726 */;
+import initializeDefault from "initialize" /* 4562 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "participantFromServer" /* 1390 */;
-import closure_5 from "addApplication" /* 4482 */;
-import closure_6 from "reset" /* 4658 */;
+import closure_5 from "addApplication" /* 4421 */;
+import closure_6 from "reset" /* 4402 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4501 */;
-import closure_9 from "createRTCConnection" /* 4544 */;
-import closure_10 from "markAllUserIdListsStale" /* 4033 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_9 from "createRTCConnection" /* 4454 */;
+import closure_10 from "markAllUserIdListsStale" /* 4034 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import { InputModes } from "ME" /* 676 */;
 import set from "set" /* 2 */;
@@ -27,7 +27,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "sentry-feedback-screenshot-button", embeddedActivity: "onDismiss", isStreaming: "1212569433839636530" };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "ClippingPathName", isPushToTalk: null, embeddedActivity: "\u{1F1EC}\u{1F1FC}", isStreaming: 6 };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = closure_1_9.getChannelId();
       const state = closure_1_9.getState();
@@ -222,7 +222,7 @@ prototype["terminate"] = function terminate() {
 };
 set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "sentry-feedback-screenshot-button", embeddedActivity: "onDismiss", isStreaming: "1212569433839636530" };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "ClippingPathName", isPushToTalk: null, embeddedActivity: "\u{1F1EC}\u{1F1FC}", isStreaming: 6 };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = closure_1_9.getChannelId();
   const state = closure_1_9.getState();

@@ -1,10 +1,10 @@
-// Module ID: 7477
-// Function ID: 7478
+// Module ID: 7290
+// Function ID: 7291
 // Name: createEmptyState
 // Dependencies: [2]
 // Exports: createEmptyState, createState, toRichValue, voidToOptionValue
 
-// Module 7477 (createEmptyState)
+// Module 7290 (createEmptyState)
 import set from "set" /* 2 */;
 
 let obj = { type: "line", children: null };

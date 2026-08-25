@@ -1,11 +1,11 @@
-// Module ID: 4177
-// Function ID: 4178
+// Module ID: 4178
+// Function ID: 4179
 // Name: CheckpointFriendsRive
-// Dependencies: [109, 19, 21, 4113, 4178, 4168, 2]
+// Dependencies: [109, 19, 21, 4114, 4179, 4169, 2]
 
-// Module 4177 (CheckpointFriendsRive)
-import BaseRive from "BaseRive" /* 4113 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4168 */;
+// Module 4178 (CheckpointFriendsRive)
+import BaseRive from "BaseRive" /* 4114 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4169 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -799,7 +799,7 @@ let closure_9 = {
       ShadowVisibility1 = onDataBindingChange.ShadowVisibility;
     }
     const numberBinding = BaseRive.useNumberBinding("ShadowVisibility", instance, ShadowVisibility, ShadowVisibility1, playIfNeeded);
-    let tmpResult = tmp(4113);
+    let tmpResult = tmp(4114);
     let StrokeVisibility;
     if (dataBinding != null) {
       StrokeVisibility = dataBinding.StrokeVisibility;
@@ -809,7 +809,7 @@ let closure_9 = {
       StrokeVisibility1 = onDataBindingChange.StrokeVisibility;
     }
     const numberBinding1 = tmpResult.useNumberBinding("StrokeVisibility", instance, StrokeVisibility, StrokeVisibility1, playIfNeeded);
-    tmpResult = tmp(4113);
+    tmpResult = tmp(4114);
     let UsernameVisibility;
     if (dataBinding != null) {
       UsernameVisibility = dataBinding.UsernameVisibility;
@@ -872,7 +872,7 @@ let closure_9 = {
       ShadowVisibility1 = onDataBindingChange.ShadowVisibility;
     }
     const numberBinding = BaseRive.useNumberBinding("ShadowVisibility", instance, ShadowVisibility, ShadowVisibility1, playIfNeeded);
-    let tmpResult = tmp(4113);
+    let tmpResult = tmp(4114);
     let StrokeVisibility;
     if (dataBinding != null) {
       StrokeVisibility = dataBinding.StrokeVisibility;
@@ -882,7 +882,7 @@ let closure_9 = {
       StrokeVisibility1 = onDataBindingChange.StrokeVisibility;
     }
     const numberBinding1 = tmpResult.useNumberBinding("StrokeVisibility", instance, StrokeVisibility, StrokeVisibility1, playIfNeeded);
-    tmpResult = tmp(4113);
+    tmpResult = tmp(4114);
     let UsernameVisibility;
     if (dataBinding != null) {
       UsernameVisibility = dataBinding.UsernameVisibility;

@@ -1,36 +1,36 @@
-// Module ID: 16465
-// Function ID: 16466
+// Module ID: 16497
+// Function ID: 16498
 // Name: StreamIcon
-// Dependencies: [19, 17, 4669, 1390, 4658, 4544, 11489, 11487, 11492, 676, 4549, 21, 4119, 1297, 4668, 712, 1367, 11488, 16421, 16466, 12674, 16467, 16419, 12192, 9716, 7228, 8113, 1236, 9717, 4749, 16417, 9899, 4536, 8750, 16351, 16468, 16469, 589, 16451, 8164, 16470, 4107, 4727, 7177, 8966, 9728, 4820, 9492, 4739, 9546, 9784, 16394, 2]
+// Dependencies: [19, 17, 4372, 1390, 4402, 4454, 11841, 11839, 11844, 676, 4401, 21, 4120, 1297, 4380, 712, 1367, 11840, 16453, 16498, 11032, 16499, 16451, 10941, 9326, 5887, 7938, 1236, 9327, 4814, 16449, 4563, 4446, 10686, 16383, 16500, 16501, 589, 16483, 8160, 16502, 4108, 4802, 5834, 8930, 9338, 4635, 9384, 4376, 9400, 12419, 16426, 2]
 
-// Module 16465 (StreamIcon)
+// Module 16497 (StreamIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import ManaContext from "ManaContext" /* 4107 */;
-import dismissPanelDefault from "dismissPanel" /* 11488 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 16419 */;
-import registerAssetDefault from "registerAsset" /* 16421 */;
+import ManaContext from "ManaContext" /* 4108 */;
+import dismissPanelDefault from "dismissPanel" /* 11840 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 16451 */;
+import registerAssetDefault from "registerAsset" /* 16453 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import closure_6 from "participantFromServer" /* 1390 */;
-import closure_7 from "reset" /* 4658 */;
-import closure_8 from "createRTCConnection" /* 4544 */;
-import VoicePanelModes from "VoicePanelModes" /* 11489 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11487 */;
-import { VOICE_PANEL_CARD_INNER_PADDING as closure_12 } from "CARD_SIZE" /* 11492 */;
+import closure_7 from "reset" /* 4402 */;
+import closure_8 from "createRTCConnection" /* 4454 */;
+import VoicePanelModes from "VoicePanelModes" /* 11841 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11839 */;
+import { VOICE_PANEL_CARD_INNER_PADDING as closure_12 } from "CARD_SIZE" /* 11844 */;
 import { ThemeTypes } from "ME" /* 676 */;
-import ParticipantTypes from "ParticipantTypes" /* 4549 */;
+import ParticipantTypes from "ParticipantTypes" /* 4401 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4119" /* 4119 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import importDefaultResult from "module_4120" /* 4120 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function StreamIcon(voicePlatform) {
   voicePlatform = voicePlatform.voicePlatform;
   let controlsSpecs;
   controlsSpecs = importAllResult.useContext(dismissPanelDefault).controlsSpecs;
-  let obj = controlsSpecs(4119);
+  let obj = controlsSpecs(4120);
   const fn = function o() {
     const tmp = controlsSpecs.get().mode === closure_1_11.HIDDEN;
     let num = 4;
@@ -52,11 +52,11 @@ function StreamIcon(voicePlatform) {
   const animatedStyle = obj.useAnimatedStyle(fn);
   let source = registerAssetDefault;
   if (voicePlatform === constants2.XBOX) {
-    source = tmp(16466);
+    source = tmp(16498);
   } else if (voicePlatform === tmp6.MOBILE) {
-    source = tmp(12674);
+    source = tmp(11032);
   } else if (voicePlatform === tmp6.QUEST) {
-    source = tmp(16467);
+    source = tmp(16499);
   }
   const style = [callback2(useIsMobileVisualRefreshExperimentEnabledDefault("VoicePanelCardFloatingControls")).iconWithoutBackground, animatedStyle];
   return callback(closure_19, { source, style });
@@ -69,24 +69,24 @@ function AnimatedLabelIcon(icon) {
     let obj = { voicePlatform: null };
     obj[0] = icon.voicePlatform;
     return callback(StreamIcon, obj);
-  } else if (tmp4(16419).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
+  } else if (tmp4(16451).VoicePanelCardUserStateIconType.SPEAKER_MUTE_ICON === type) {
     obj = { style: null, hitSlop: 12, onPress: null, children: null };
     obj[0] = tmp3.speakerMuteIcon;
     obj[2] = icon.onPress;
     obj1 = { style: null };
     obj1[0] = tmp3.iconWithoutBackground;
-    obj[3] = callback(tmp4(12192).VoiceXIcon, obj1);
+    obj[3] = callback(tmp4(10941).VoiceXIcon, obj1);
     return callback(Pressable, obj);
-  } else if (tmp4(16419).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
+  } else if (tmp4(16451).VoicePanelCardUserStateIconType.USER_VIDEO_ICON === type) {
     const obj2 = { style: null, onPress: null, children: null };
     obj2[0] = tmp3.iconContainer;
     obj2[1] = icon.onPress;
     const obj3 = { style: null, state: null };
     obj3[0] = tmp3.icon;
     obj3[1] = icon.videoIconState;
-    obj2[2] = callback(tmp4(9716).VideoIcon, obj3);
+    obj2[2] = callback(tmp4(9326).VideoIcon, obj3);
     return callback(Pressable, obj2);
-  } else if (tmp4(16419).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
+  } else if (tmp4(16451).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON === type) {
     const obj4 = { style: null, children: null };
     obj4[0] = tmp3.iconContainer;
     const obj5 = { onPress: null, hitSlop: 12, children: null };
@@ -94,16 +94,16 @@ function AnimatedLabelIcon(icon) {
     const obj6 = { style: null, state: null, alwaysWhite: true };
     obj6[0] = tmp3.icon;
     obj6[1] = icon.muteDeafenIconState;
-    obj5[2] = callback(tmp4(9716).MuteDeafenIcon, obj6);
+    obj5[2] = callback(tmp4(9326).MuteDeafenIcon, obj6);
     obj4[1] = callback(Pressable, obj5);
-    return callback(tmp(7228), obj4);
-  } else if (tmp4(16419).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
+    return callback(tmp(5887), obj4);
+  } else if (tmp4(16451).VoicePanelCardUserStateIconType.USER_DISCONNECTED_ICON === type) {
     obj = { style: null, onPress: null, children: null };
     obj[0] = tmp3.iconContainer;
     obj[1] = icon.onPress;
     const obj7 = { size: "xs", color: null };
     obj7[1] = tmp(712).colors.TEXT_FEEDBACK_WARNING;
-    obj[2] = callback(tmp4(8113).CircleErrorIcon, obj7);
+    obj[2] = callback(tmp4(7938).CircleErrorIcon, obj7);
     return callback(Pressable, obj);
   }
 }
@@ -151,8 +151,8 @@ let closure_27 = importAllResult.memo((participant) => {
   controlsHidden = participant.controlsHidden;
   let guildId;
   ({ isSelf, layout } = participant);
-  guildId = importAllResult.useContext(guildId(11488)).guildId;
-  let obj = controlsHidden(4119);
+  guildId = importAllResult.useContext(guildId(11840)).guildId;
+  let obj = controlsHidden(4120);
   const fn = function n() {
     const value = controlsHidden.get();
     if (value) {
@@ -168,7 +168,7 @@ let closure_27 = importAllResult.memo((participant) => {
     obj[3] = controlsHidden(closure_1_2[29]).withSpring(num2, closure_1_9);
     return obj;
   };
-  obj = { controlsHidden, FLOATING_BAR_HEIGHT: c21, VOICE_PANEL_CARD_INNER_PADDING: closure_12, withSpring: controlsHidden(4749).withSpring, MODE_CHANGE_PHYSICS: closure_9 };
+  obj = { controlsHidden, FLOATING_BAR_HEIGHT: c21, VOICE_PANEL_CARD_INNER_PADDING: closure_12, withSpring: controlsHidden(4814).withSpring, MODE_CHANGE_PHYSICS: closure_9 };
   fn.__closure = obj;
   fn.__workletHash = 4080439075039;
   fn.__initData = closure_26;
@@ -197,10 +197,10 @@ let closure_27 = importAllResult.memo((participant) => {
       const obj3 = guildId(tmp2[33]);
     }
   }, items);
-  obj = { icon: guildId(16468), onPress: callback, style: animatedStyle, layout, accessibilityLabel: null };
+  obj = { icon: guildId(16500), onPress: callback, style: animatedStyle, layout, accessibilityLabel: null };
   const tmp3 = closure_16;
-  const tmp4 = guildId(16351);
-  const result = controlsHidden(16417).isStableActivityParticipant(participant);
+  const tmp4 = guildId(16383);
+  const result = controlsHidden(16449).isStableActivityParticipant(participant);
   const intl = controlsHidden(1236).intl;
   const string = intl.string;
   const t = controlsHidden(1236).t;

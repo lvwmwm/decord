@@ -1,16 +1,16 @@
-// Module ID: 14949
-// Function ID: 14950
+// Module ID: 14979
+// Function ID: 14980
 // Name: useBugReporterExperimentSettingPredicate
-// Dependencies: [10166, 5265, 10167, 2008, 10195, 10708, 1236, 14950, 2]
+// Dependencies: [10016, 4611, 10017, 2009, 10046, 10516, 1236, 14980, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 14949 (useBugReporterExperimentSettingPredicate)
+// Module 14979 (useBugReporterExperimentSettingPredicate)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
-import _modDef5265 from "module_5265" /* 5265 */;
-import apexExperimentDefault from "apexExperiment" /* 10195 */;
-import closure_3 from "zustandStore" /* 10166 */;
-import createToggle from "createToggle" /* 10708 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import _modDef4611 from "module_4611" /* 4611 */;
+import apexExperimentDefault from "apexExperiment" /* 10046 */;
+import closure_3 from "zustandStore" /* 10016 */;
+import createToggle from "createToggle" /* 10516 */;
 
 require = arg1;
 function useBugReporterExperimentSettingPredicate() {
@@ -26,8 +26,8 @@ createToggle = {
   onPress: function handleBugReporterSettingPress() {
     if (!field.getField("isReportOpen")) {
       field.setState({ isReportOpen: true });
-      _modDef5265.pushLazy(asyncRequireImpl(10167, dependencyMap.paths));
-      const obj2 = _modDef5265;
+      _modDef4611.pushLazy(asyncRequireImpl(10017, dependencyMap.paths));
+      const obj2 = _modDef4611;
     }
   },
   withArrow: true,

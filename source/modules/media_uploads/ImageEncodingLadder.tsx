@@ -1,9 +1,9 @@
-// Module ID: 4869
-// Function ID: 4870
+// Module ID: 4988
+// Function ID: 4989
 // Name: getAdaptiveImageCompressionQuality
 // Dependencies: [676, 2]
 
-// Module 4869 (getAdaptiveImageCompressionQuality)
+// Module 4988 (getAdaptiveImageCompressionQuality)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

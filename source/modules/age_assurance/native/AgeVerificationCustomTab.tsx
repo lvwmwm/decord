@@ -1,12 +1,12 @@
-// Module ID: 6586
-// Function ID: 6587
+// Module ID: 7963
+// Function ID: 7964
 // Name: withTimeout
-// Dependencies: [5, 3, 644, 4345, 500, 2]
+// Dependencies: [5, 3, 644, 4346, 500, 2]
 // Exports: getIsAgeVerificationCustomTabAwaitingResult, openAgeVerificationCustomTab, resumeAgeVerificationCustomTab, setAgeVerificationCustomTabCopy, useAgeVerificationCustomTabCopy, useIsAgeVerificationCustomTabOpen
 
-// Module 6586 (withTimeout)
+// Module 7963 (withTimeout)
 import timestampDefault from "timestamp" /* 3 */;
-import enforcingDefault from "enforcing" /* 4345 */;
+import enforcingDefault from "enforcing" /* 4346 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import keys from "keys" /* 644 */;
 
@@ -60,7 +60,7 @@ function _openAgeVerificationCustomTab() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -164,7 +164,7 @@ function _resumeAgeVerificationCustomTab() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -214,7 +214,7 @@ function _resumeAgeVerificationCustomTab() {
             } else {
               c3 = 0;
               v0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
           c3 = 0;

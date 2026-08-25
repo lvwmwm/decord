@@ -1,12 +1,12 @@
-// Module ID: 7183
-// Function ID: 7184
+// Module ID: 5840
+// Function ID: 5841
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 4482, 643, 7178, 12, 1370, 589, 2]
+// Dependencies: [19, 4421, 643, 5835, 12, 1370, 589, 2]
 // Exports: default, useGetOrFetchApplication
 
-// Module 7183 (useGetOrFetchApplications)
+// Module 5840 (useGetOrFetchApplications)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "addApplication" /* 4482 */;
+import closure_4 from "addApplication" /* 4421 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/applications/useGetOrFetchApplications.tsx");

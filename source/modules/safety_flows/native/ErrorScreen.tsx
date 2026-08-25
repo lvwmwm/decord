@@ -1,17 +1,17 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17230
+// Function ID: 17231
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 4668, 712, 1500, 17179, 17183, 4739, 1236, 4738, 4750, 5261, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4380, 712, 1500, 17211, 17215, 4376, 1236, 4813, 4815, 5933, 2]
 // Exports: default
 
-// Module 17198 (ErrorScreen)
+// Module 17230 (ErrorScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -38,7 +38,7 @@ export default function ErrorScreen() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -88,7 +88,7 @@ export default function ErrorScreen() {
             c3 = 0;
             callback(false);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp32) {
           closure_2 = tmp32;

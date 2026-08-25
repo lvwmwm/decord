@@ -1,18 +1,18 @@
-// Module ID: 7293
-// Function ID: 7294
+// Module ID: 10508
+// Function ID: 10509
 // Name: makeTwitchRequest
-// Dependencies: [5, 5226, 4224, 676, 687, 530, 5228, 709, 7285, 5102, 659, 589, 2]
+// Dependencies: [5, 5106, 4225, 676, 687, 530, 5231, 709, 8396, 5108, 659, 589, 2]
 
-// Module 7293 (makeTwitchRequest)
+// Module 10508 (makeTwitchRequest)
 import sendRequest from "sendRequest" /* 530 */;
 import initializeDefault from "initialize" /* 589 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import callbackDefault from "callback" /* 5228 */;
+import callbackDefault from "callback" /* 5231 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5226 */;
-import closure_5 from "initialize" /* 4224 */;
+import closure_4 from "set" /* 5106 */;
+import closure_5 from "initialize" /* 4225 */;
 import { PlatformTypes } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -123,7 +123,7 @@ prototype["_checkTwitch"] = function _checkTwitch(accessToken, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -328,7 +328,7 @@ prototype["_checkYouTube"] = function _checkYouTube(c0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

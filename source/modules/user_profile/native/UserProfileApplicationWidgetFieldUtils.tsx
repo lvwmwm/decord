@@ -1,18 +1,18 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12646
+// Function ID: 12647
 // Name: formatDurationNarrow
-// Dependencies: [19, 17, 21, 4668, 712, 1236, 12330, 4739, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 1236, 12647, 4376, 2]
 // Exports: FieldText, formatDurationNarrow
 
-// Module 12329 (formatDurationNarrow)
+// Module 12646 (formatDurationNarrow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import ImageSkeleton from "ImageSkeleton" /* 12330 */;
+import Text from "Text" /* 4376 */;
+import ImageSkeleton from "ImageSkeleton" /* 12647 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

@@ -1,10 +1,10 @@
-// Module ID: 8769
-// Function ID: 8770
+// Module ID: 10735
+// Function ID: 10736
 // Name: shouldOpenActivityInPopoutWindow
 // Dependencies: [2]
 // Exports: shouldOpenActivityInPopoutWindow, wrapPreemptiveActivityPopout
 
-// Module 8769 (shouldOpenActivityInPopoutWindow)
+// Module 10735 (shouldOpenActivityInPopoutWindow)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/ActivityPopoutUtils.native.tsx");

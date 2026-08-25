@@ -1,13 +1,13 @@
-// Module ID: 17032
-// Function ID: 17033
+// Module ID: 17064
+// Function ID: 17065
 // Name: GuildSubscriptionEnableMonetization
-// Dependencies: [19, 1910, 21, 589, 16994, 15859, 1236, 2]
+// Dependencies: [19, 1910, 21, 589, 17026, 15891, 1236, 2]
 // Exports: default
 
-// Module 17032 (GuildSubscriptionEnableMonetization)
+// Module 17064 (GuildSubscriptionEnableMonetization)
 import noopAll from "noop" /* 19 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 15859 */;
-import PlaceholderDefault from "Placeholder" /* 16994 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 15891 */;
+import PlaceholderDefault from "Placeholder" /* 17026 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import { jsx } from "jsxProd" /* 21 */;
 

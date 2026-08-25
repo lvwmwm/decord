@@ -1,12 +1,12 @@
-// Module ID: 1972
-// Function ID: 1973
+// Module ID: 1973
+// Function ID: 1974
 // Name: databaseName
-// Dependencies: [5, 1218, 3, 589, 709, 1973, 1956, 2]
+// Dependencies: [5, 1218, 3, 589, 709, 1974, 1957, 2]
 
-// Module 1972 (databaseName)
+// Module 1973 (databaseName)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
-import getUserIdAll from "getUserId" /* 1973 */;
+import getUserIdAll from "getUserId" /* 1974 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 import importDefaultResult from "dispatcher" /* 709 */;
@@ -34,7 +34,7 @@ function _trySpeculativelyOpenDatabaseAsync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -257,7 +257,7 @@ prototype["handleConnectionOpen"] = function handleConnectionOpen() {
   }
   let tmp3 = null == value;
   if (tmp3) {
-    tmp3 = stateResult !== callback(1956).DatabaseState.Open;
+    tmp3 = stateResult !== callback(1957).DatabaseState.Open;
   }
   if (tmp3) {
     self.remove(id);
@@ -298,7 +298,7 @@ function carefullySpeculativelyOpen(userId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

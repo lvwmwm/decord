@@ -1,9 +1,9 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 14738
+// Function ID: 14739
 // Name: HAPPENING_NOW_PANELS_CONTAINER_PADDING
 // Dependencies: [1297, 2]
 
-// Module 14708 (HAPPENING_NOW_PANELS_CONTAINER_PADDING)
+// Module 14738 (HAPPENING_NOW_PANELS_CONTAINER_PADDING)
 import set from "set" /* 2 */;
 import Button from "Button" /* 1297 */;
 

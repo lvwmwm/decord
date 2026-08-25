@@ -1,20 +1,20 @@
-// Module ID: 8911
-// Function ID: 8912
-// Dependencies: [5, 1983, 4025, 1218, 1991, 1910, 8912, 676, 3, 709, 530, 7324, 8919, 8421, 8418, 5232, 503, 1350, 1236, 1222, 6829, 2]
+// Module ID: 9168
+// Function ID: 9169
+// Dependencies: [5, 1984, 4026, 1218, 1992, 1910, 9169, 676, 3, 709, 530, 6047, 9176, 4994, 8426, 4601, 503, 1350, 1236, 1222, 5354, 2]
 
-// Module 8911
+// Module 9168
 import timestampDefault from "timestamp" /* 3 */;
 import encodeProperties from "encodeProperties" /* 503 */;
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef5232 from "module_5232" /* 5232 */;
+import _modDef4601 from "module_4601" /* 4601 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 1983 */;
-import closure_5 from "initialize" /* 4025 */;
+import closure_4 from "initialize" /* 1984 */;
+import closure_5 from "initialize" /* 4026 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "trackCommunicationDisabled" /* 1991 */;
+import closure_7 from "trackCommunicationDisabled" /* 1992 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "handleFormInit" /* 8912 */;
+import closure_9 from "handleFormInit" /* 9169 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -43,7 +43,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = {
             obj1[3] = SAFETY_AUTOMOD;
             obj1.dispatch(obj1);
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp26) {
           c0 = tmp;
@@ -236,7 +236,7 @@ let obj = {
     const merged = Object.assign(tmp);
     let toServerGuildProfileResult = profile;
     if (null != profile) {
-      let obj3 = _require(8919);
+      let obj3 = _require(9176);
       toServerGuildProfileResult = obj3.toServerGuildProfile(profile);
     }
     obj.profile = toServerGuildProfileResult;
@@ -246,7 +246,7 @@ let obj = {
     obj(709).dispatch({ type: "GUILD_SETTINGS_SUBMIT" });
     const pendingOriginalMd5s = store.getPendingOriginalMd5s();
     const obj5 = obj(709);
-    const obj6 = obj(8421);
+    const obj6 = obj(4994);
     const headersForMd5 = obj6.buildHeadersForMd5({ [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_ICON]: pendingOriginalMd5s.icon, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_BANNER]: pendingOriginalMd5s.banner, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_INVITE_SPLASH]: pendingOriginalMd5s.splash, [closure_0(closure_2[14]).SafetyScannedUploadSurface.GUILD_DISCOVERY_SPLASH]: pendingOriginalMd5s.discoverySplash });
     const HTTP = _require(530).HTTP;
     const obj2 = { url: closure_10.GUILD(id), query: obj3, body: obj, headers: headersForMd5, oldFormErrors: true, rejectWithError: null };
@@ -291,7 +291,7 @@ let obj = {
     if (closure_0 === undefined) {
       tmp2 = null;
     }
-    obj = _modDef5232;
+    obj = _modDef4601;
     obj = { url: closure_10.GUILD(id), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { owner_id: id2, code: tmp2 };
     obj[3] = { event: encodeProperties.NetworkActionNames.GUILD_TRANSFER_OWNERSHIP, properties: obj2 };
@@ -304,7 +304,7 @@ let obj = {
     if (arg1 === undefined) {
       flag = false;
     }
-    obj = _modDef5232;
+    obj = _modDef4601;
     obj = { url: closure_10.GUILD_PINCODE(id), oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: encodeProperties.NetworkActionNames.GUILD_TRANSFER_OWNERSHIP_SEND_CODE, properties: obj1 };
     obj[2] = obj;
@@ -337,7 +337,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ let obj = {
               obj.transitionTo(closure_1_14.GUILD_DISCOVERY);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp21) {
           c3 = tmp;
@@ -425,7 +425,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -444,9 +444,9 @@ let obj = {
               c0 = 0;
               if (closure_1_4.isFullServerPreview(closure_1_0)) {
                 if (closure_1_1 === closure_1_6.getId()) {
-                  const result = closure_1_0(6829).updateImpersonatedRoles(tmp29, dependencyMap);
+                  const result = closure_1_0(5354).updateImpersonatedRoles(tmp29, dependencyMap);
                   c3 = 3;
-                  const obj6 = closure_1_0(6829);
+                  const obj6 = closure_1_0(5354);
                 }
               }
               const HTTP = closure_1_0(530).HTTP;
@@ -541,7 +541,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -579,7 +579,7 @@ let obj = {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           v0 = tmp;
@@ -601,7 +601,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -639,7 +639,7 @@ let obj = {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           v0 = tmp;
@@ -663,7 +663,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -708,7 +708,7 @@ let obj = {
               return obj;
             }
             c2 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
           if (c2) {
             c1 = 2;

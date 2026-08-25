@@ -1,14 +1,14 @@
-// Module ID: 10032
-// Function ID: 10033
+// Module ID: 9874
+// Function ID: 9875
 // Name: PinIcon
-// Dependencies: [19, 21, 712, 4099, 10033, 2]
+// Dependencies: [19, 21, 712, 4100, 9875, 2]
 // Exports: PinIcon
 
-// Module 10032 (PinIcon)
+// Module 9874 (PinIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 10033 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 9875 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,17 +1,17 @@
-// Module ID: 15761
-// Function ID: 15762
+// Module ID: 15793
+// Function ID: 15794
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [19, 17, 21, 4668, 712, 4739, 1236, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 4376, 1236, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 15761 (ForYouRecentActivitySectionHeader)
+// Module 15793 (ForYouRecentActivitySectionHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
+import Text from "Text" /* 4376 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

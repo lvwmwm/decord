@@ -1,14 +1,14 @@
-// Module ID: 16242
-// Function ID: 16243
+// Module ID: 16274
+// Function ID: 16275
 // Name: getLimitedOfferTimeLeft
-// Dependencies: [32, 19, 3978, 687, 1236, 3274, 7454, 2]
+// Dependencies: [32, 19, 3979, 687, 1236, 3275, 7052, 2]
 // Exports: useTickingFormattedLimitedOfferTimeLeft
 
-// Module 16242 (getLimitedOfferTimeLeft)
+// Module 16274 (getLimitedOfferTimeLeft)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3274 */;
-import tDefault from "t" /* 3978 */;
-import useIntervalDefault from "useInterval" /* 7454 */;
+import messagesProxyDefault from "messagesProxy" /* 3275 */;
+import hooksDefault from "hooks" /* 3979 */;
+import useIntervalDefault from "useInterval" /* 7052 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -17,7 +17,7 @@ function getLimitedOfferTimeLeft(arg0) {
   if (null == arg0) {
     return null;
   } else {
-    const diffResult = tDefault(arg0).diff(tDefault(), "seconds");
+    const diffResult = hooksDefault(arg0).diff(hooksDefault(), "seconds");
     let tmp4 = null;
     if (diffResult > 0) {
       const obj = { days: null, hours: null, minutes: null, seconds: null };

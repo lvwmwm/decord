@@ -1,9 +1,9 @@
-// Module ID: 5594
-// Function ID: 5595
+// Module ID: 6278
+// Function ID: 6279
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5594 (metadata)
+// Module 6278 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CloudKeypadSpotIllustration-2x.png.js");

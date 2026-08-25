@@ -1,14 +1,14 @@
-// Module ID: 5989
-// Function ID: 5990
+// Module ID: 6681
+// Function ID: 6682
 // Name: NitroCoinStackSpotIllustration
-// Dependencies: [21, 5454, 5990, 2]
+// Dependencies: [21, 5374, 6682, 2]
 // Exports: NitroCoinStackSpotIllustration
 
-// Module 5989 (NitroCoinStackSpotIllustration)
+// Module 6681 (NitroCoinStackSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5990 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6682 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinStackSpotIllustration.native.tsx");

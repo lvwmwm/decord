@@ -1,9 +1,9 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 7146
+// Function ID: 7147
 // Name: getSettings
 // Dependencies: [1342, 1306, 589, 709, 2]
 
-// Module 5304 (getSettings)
+// Module 7146 (getSettings)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import create from "create" /* 1306 */;

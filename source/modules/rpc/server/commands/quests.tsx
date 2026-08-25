@@ -1,15 +1,15 @@
-// Module ID: 13943
-// Function ID: 13944
-// Dependencies: [7491, 676, 4379, 8794, 7514, 8789, 698, 709, 10746, 2]
+// Module ID: 13978
+// Function ID: 13979
+// Dependencies: [7305, 676, 9049, 10829, 7328, 10824, 698, 709, 10674, 2]
 
-// Module 13943
+// Module 13978
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7514 */;
-import prototypeDefault from "prototype" /* 8789 */;
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 8794 */;
-import questMatchesActivity from "questMatchesActivity" /* 10746 */;
-import closure_3 from "initializeState" /* 7491 */;
+import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7328 */;
+import questMatchesActivity from "questMatchesActivity" /* 10674 */;
+import prototypeDefault from "prototype" /* 10824 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 10829 */;
+import closure_3 from "initializeState" /* 7305 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

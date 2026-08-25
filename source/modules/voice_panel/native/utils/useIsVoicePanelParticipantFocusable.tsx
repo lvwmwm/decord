@@ -1,15 +1,15 @@
-// Module ID: 16394
-// Function ID: 16395
+// Module ID: 16426
+// Function ID: 16427
 // Name: isVoicePanelParticipantFocusable
-// Dependencies: [1390, 4778, 4658, 4501, 4549, 11493, 1370, 589, 2]
+// Dependencies: [1390, 4396, 4402, 4431, 4401, 10794, 1370, 589, 2]
 // Exports: default
 
-// Module 16394 (isVoicePanelParticipantFocusable)
+// Module 16426 (isVoicePanelParticipantFocusable)
 import closure_2 from "participantFromServer" /* 1390 */;
-import closure_3 from "getParticipants" /* 4778 */;
-import closure_4 from "reset" /* 4658 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4501 */;
-import ParticipantTypes from "ParticipantTypes" /* 4549 */;
+import closure_3 from "getParticipants" /* 4396 */;
+import closure_4 from "reset" /* 4402 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4431 */;
+import ParticipantTypes from "ParticipantTypes" /* 4401 */;
 
 const require = arg1;
 function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, closure_1_4) {
@@ -46,7 +46,7 @@ function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, cl
       if (callback2(participant)) {
         let result = null != obj3.getActiveStreamForUser(participant.user.id, sharedValue1);
       } else if (callback3(participant)) {
-        let tmp4Result = tmp4(11493);
+        let tmp4Result = tmp4(10794);
         result = tmp4Result.canRenderParticipantVideo(participant, tmp);
       } else {
         tmp4Result = tmp4(1370);

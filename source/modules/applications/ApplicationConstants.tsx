@@ -1,9 +1,9 @@
-// Module ID: 4486
-// Function ID: 4487
+// Module ID: 4409
+// Function ID: 4410
 // Name: ApplicationTypes
 // Dependencies: [2]
 
-// Module 4486 (ApplicationTypes)
+// Module 4409 (ApplicationTypes)
 import set from "set" /* 2 */;
 
 const items = ["1102741339122188349", "1211781489931452447", "1211780388607885393", "1166579889915310151", "1276239071764680926", "1257458870390099989", "1247266306231898122", "1245013453329141861", "1230632401701699617", "1098316259562635386"];

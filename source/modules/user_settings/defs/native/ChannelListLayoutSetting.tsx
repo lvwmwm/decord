@@ -1,16 +1,16 @@
-// Module ID: 14905
-// Function ID: 14906
+// Module ID: 14935
+// Function ID: 14936
 // Name: useChannelListLayoutPredicate
-// Dependencies: [8238, 4069, 1236, 4074, 10708, 2]
+// Dependencies: [8235, 4070, 1236, 4075, 10516, 2]
 // Exports: useChannelListLayoutPredicate
 
-// Module 14905 (useChannelListLayoutPredicate)
+// Module 14935 (useChannelListLayoutPredicate)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4074 */;
-import MobileUserSettings from "MobileUserSettings" /* 8238 */;
-import createToggle from "createToggle" /* 10708 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4075 */;
+import MobileUserSettings from "MobileUserSettings" /* 8235 */;
+import createToggle from "createToggle" /* 10516 */;
 
 function useChannelListLayoutPredicate() {
   return false;

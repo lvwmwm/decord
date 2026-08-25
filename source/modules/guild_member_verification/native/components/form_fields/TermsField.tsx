@@ -1,17 +1,17 @@
-// Module ID: 8596
-// Function ID: 8597
+// Module ID: 8604
+// Function ID: 8605
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4668, 6843, 8597, 1236, 2]
+// Dependencies: [19, 17, 21, 4380, 5437, 8605, 1236, 2]
 // Exports: default
 
-// Module 8596 (TermsField)
+// Module 8604 (TermsField)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import TermsFieldListItemDefault from "TermsFieldListItem" /* 6843 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 8597 */;
+import TermsFieldListItemDefault from "TermsFieldListItem" /* 5437 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 8605 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

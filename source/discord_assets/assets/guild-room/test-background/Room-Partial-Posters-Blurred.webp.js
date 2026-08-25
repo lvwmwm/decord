@@ -1,9 +1,9 @@
-// Module ID: 9909
-// Function ID: 9910
+// Module ID: 4585
+// Function ID: 4586
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9909 (metadata)
+// Module 4585 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/guild-room/test-background/Room-Partial-Posters-Blurred.webp.js");

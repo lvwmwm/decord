@@ -1,18 +1,18 @@
-// Module ID: 9189
-// Function ID: 9190
+// Module ID: 9411
+// Function ID: 9412
 // Name: GuildBadgeV2
-// Dependencies: [19, 21, 4668, 1297, 1363, 9190, 9192, 9191, 2]
+// Dependencies: [19, 21, 4380, 1297, 1363, 9412, 9409, 9410, 2]
 // Exports: default, hasGuildBadge
 
-// Module 9189 (GuildBadgeV2)
+// Module 9411 (GuildBadgeV2)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1297 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import badgeVariants from "badgeVariants" /* 9190 */;
-import BadgeCategory from "BadgeCategory" /* 9191 */;
-import GuildVisibility from "GuildVisibility" /* 9192 */;
+import GuildVisibility from "GuildVisibility" /* 9409 */;
+import BadgeCategory from "BadgeCategory" /* 9410 */;
+import badgeVariants from "badgeVariants" /* 9412 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;
@@ -29,7 +29,7 @@ export default function GuildBadgeV2(arg0) {
   if (null == guild) {
     return null;
   } else {
-    const guildBadgeImageSource = tmp5(9190).getGuildBadgeImageSource(guild, tmp8);
+    const guildBadgeImageSource = tmp5(9412).getGuildBadgeImageSource(guild, tmp8);
     let tmp10 = null;
     if (null != guildBadgeImageSource) {
       const obj = { size: null, source: null, style: null, disableColor: true };

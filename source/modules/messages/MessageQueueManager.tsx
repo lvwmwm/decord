@@ -1,11 +1,11 @@
-// Module ID: 16732
-// Function ID: 16733
+// Module ID: 16764
+// Function ID: 16765
 // Name: handleLogout
-// Dependencies: [5043, 5045, 2]
+// Dependencies: [5367, 7437, 2]
 
-// Module 16732 (handleLogout)
-import initializeDefault from "initialize" /* 5043 */;
-import itemsDefault from "items" /* 5045 */;
+// Module 16764 (handleLogout)
+import initializeDefault from "initialize" /* 5367 */;
+import itemsDefault from "items" /* 7437 */;
 
 initializeDefault;
 class MessageQueueManager extends tmp2 {

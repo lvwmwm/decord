@@ -1,15 +1,15 @@
-// Module ID: 11177
-// Function ID: 11178
+// Module ID: 11519
+// Function ID: 11520
 // Name: createChannelStream
-// Dependencies: [10679, 7473, 7620, 8197, 676, 11, 11178, 11179, 1236, 4066, 8239, 5430, 7272, 2]
+// Dependencies: [10480, 7286, 7441, 8193, 676, 11, 11520, 11521, 1236, 4067, 8236, 11305, 5996, 2]
 // Exports: default
 
-// Module 11177 (createChannelStream)
+// Module 11519 (createChannelStream)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_3 from "initialize" /* 10679 */;
-import closure_4 from "initialize" /* 7473 */;
-import closure_5 from "initialize" /* 7620 */;
-import Changeset from "Changeset" /* 8197 */;
+import closure_3 from "initialize" /* 10480 */;
+import closure_4 from "initialize" /* 7286 */;
+import closure_5 from "initialize" /* 7441 */;
+import Changeset from "Changeset" /* 8193 */;
 import { MessageFlags } from "ME" /* 676 */;
 
 require = arg1;

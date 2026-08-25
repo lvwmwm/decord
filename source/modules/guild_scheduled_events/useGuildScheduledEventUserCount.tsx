@@ -1,13 +1,13 @@
-// Module ID: 8832
-// Function ID: 8833
+// Module ID: 9099
+// Function ID: 9100
 // Name: useGuildScheduledEventUserCount
-// Dependencies: [19, 4374, 589, 8833, 2]
+// Dependencies: [19, 7132, 589, 9100, 2]
 // Exports: default
 
-// Module 8832 (useGuildScheduledEventUserCount)
+// Module 9099 (useGuildScheduledEventUserCount)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "scheduledEventSort" /* 4374 */;
+import closure_4 from "scheduledEventSort" /* 7132 */;
 
 const useEffect = noop.useEffect;
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/useGuildScheduledEventUserCount.tsx");

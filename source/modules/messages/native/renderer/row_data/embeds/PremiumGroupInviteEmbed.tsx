@@ -1,17 +1,17 @@
-// Module ID: 8306
-// Function ID: 8307
+// Module ID: 8307
+// Function ID: 8308
 // Name: createPremiumGroupInviteEmbed
-// Dependencies: [4056, 4668, 712, 8210, 8307, 8308, 1236, 2920, 2]
+// Dependencies: [4057, 4380, 712, 8206, 8308, 8309, 1236, 2921, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 8306 (createPremiumGroupInviteEmbed)
+// Module 8307 (createPremiumGroupInviteEmbed)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import frozen from "frozen" /* 8210 */;
-import registerAssetDefault from "registerAsset" /* 8307 */;
-import getPremiumGroupInviteEmbedText from "getPremiumGroupInviteEmbedText" /* 8308 */;
-import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4056 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import frozen from "frozen" /* 8206 */;
+import registerAssetDefault from "registerAsset" /* 8308 */;
+import getPremiumGroupInviteEmbedText from "getPremiumGroupInviteEmbedText" /* 8309 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4057 */;
 
 ({ HELP_CENTER_LINK: c3, PremiumGroupInviteState: c4 } = SubscriptionStatusTypes);
 const result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx");
@@ -53,7 +53,7 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
       obj2[3] = backgroundColor;
       obj2[4] = assetUriForEmbed;
       const intl2 = tmp6(1236).intl;
-      const formatToPartsResult = intl.formatToParts(tmp8(2920)["9VTnfI"], obj);
+      const formatToPartsResult = intl.formatToParts(tmp8(2921)["9VTnfI"], obj);
       obj2[5] = intl2.string(tmp6(1236).t.oW0eUd).toUpperCase();
       obj2[6] = betaPillTextColor;
       obj2[7] = betaPillBackgroundColor;

@@ -1,14 +1,14 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9483
+// Function ID: 9484
 // Name: toAnnouncementMessages
-// Dependencies: [4034, 1954, 4815, 4816, 9201, 4808, 8470, 1236, 1487, 2]
+// Dependencies: [4035, 1955, 4632, 4571, 9484, 4625, 8477, 1236, 1487, 2]
 // Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 9200 (toAnnouncementMessages)
+// Module 9483 (toAnnouncementMessages)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import hasFlag from "hasFlag" /* 4034 */;
-import formatExpirationLabel from "formatExpirationLabel" /* 8470 */;
+import hasFlag from "hasFlag" /* 4035 */;
+import formatExpirationLabel from "formatExpirationLabel" /* 8477 */;
 
 const isMessageComponentsV2 = hasFlag.isMessageComponentsV2;
 const re4 = /^#{1,3}\s+(.+)$/;
@@ -254,7 +254,7 @@ export const getPollExpiryLabel = function getPollExpiryLabel(poll) {
   }
   return result;
 };
-export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, c12) {
+export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, c13) {
   let str = isDiscordProxiedAssetUrlDefault.toURLSafe(proxyUrl);
   str = null;
   if (null != str) {
@@ -264,9 +264,9 @@ export const getPosterUrl = function getPosterUrl(proxyUrl, arg1, c12) {
       const searchParams2 = str.searchParams;
       searchParams2.append("width", arg1.toString());
     }
-    if (null != c12) {
+    if (null != c13) {
       const searchParams3 = str.searchParams;
-      searchParams3.append("height", c12.toString());
+      searchParams3.append("height", c13.toString());
     }
     str = str.toString();
   }

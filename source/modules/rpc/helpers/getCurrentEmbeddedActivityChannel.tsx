@@ -1,10 +1,10 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 13936
+// Function ID: 13937
 // Name: getCurrentEmbeddedActivityChannel
 // Dependencies: [1390, 1391, 2]
 // Exports: default
 
-// Module 13901 (getCurrentEmbeddedActivityChannel)
+// Module 13936 (getCurrentEmbeddedActivityChannel)
 import closure_0 from "participantFromServer" /* 1390 */;
 import closure_1 from "ensureGuildLoaded" /* 1391 */;
 

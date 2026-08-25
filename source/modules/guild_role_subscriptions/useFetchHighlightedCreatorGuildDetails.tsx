@@ -1,10 +1,10 @@
-// Module ID: 17023
-// Function ID: 17024
+// Module ID: 17055
+// Function ID: 17056
 // Name: useFetchHighlightedCreatorGuildDetails
-// Dependencies: [5, 32, 19, 7260, 2]
+// Dependencies: [5, 32, 19, 5983, 2]
 // Exports: default
 
-// Module 17023 (useFetchHighlightedCreatorGuildDetails)
+// Module 17055 (useFetchHighlightedCreatorGuildDetails)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -36,7 +36,7 @@ export default function useFetchHighlightedCreatorGuildDetails(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

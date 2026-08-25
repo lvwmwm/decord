@@ -1,9 +1,9 @@
-// Module ID: 8608
-// Function ID: 8609
+// Module ID: 8616
+// Function ID: 8617
 // Name: UserRequiredActions
 // Dependencies: [676, 1236, 12, 2]
 
-// Module 8608 (UserRequiredActions)
+// Module 8616 (UserRequiredActions)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

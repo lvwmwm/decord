@@ -1,25 +1,25 @@
-// Module ID: 16927
-// Function ID: 16928
+// Module ID: 16959
+// Function ID: 16960
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 4669, 1910, 16923, 676, 21, 4668, 712, 7964, 1494, 4727, 4119, 698, 5047, 8144, 5438, 4739, 10350, 1297, 10795, 4750, 1236, 2]
+// Dependencies: [32, 19, 17, 4372, 1910, 16955, 676, 21, 4380, 712, 7785, 1494, 4802, 4120, 698, 4588, 8140, 4949, 4376, 10201, 1297, 11124, 4815, 1236, 2]
 // Exports: default
 
-// Module 16927 (GuildSettingsRoleTemplate)
+// Module 16959 (GuildSettingsRoleTemplate)
 import ThemesDefault from "Themes" /* 712 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4727 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7964 */;
-import _getRequireWildcardCacheDefault from "_getRequireWildcardCache" /* 8144 */;
-import PaginationDefault from "Pagination" /* 10350 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4802 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7785 */;
+import _getRequireWildcardCacheDefault from "_getRequireWildcardCache" /* 8140 */;
+import PaginationDefault from "Pagination" /* 10201 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import title from "title" /* 16923 */;
+import title from "title" /* 16955 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 ({ View: c5, Dimensions, ScrollView: closure_6 } = get_ActivityIndicator);
@@ -138,7 +138,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
       return obj;
     }
   }
-  obj = { interpolate: tmp11(4119).interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: tmp11(4119).Extrapolation, inactiveOpacity: num };
+  obj = { interpolate: tmp11(4120).interpolate, sheetWidth: first1, parallaxScrollingOffset: bound, Extrapolation: tmp11(4120).Extrapolation, inactiveOpacity: num };
   V.__closure = obj;
   V.__workletHash = 1786335394860;
   V.__initData = closure_18;

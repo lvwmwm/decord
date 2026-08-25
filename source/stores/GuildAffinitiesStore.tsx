@@ -1,12 +1,12 @@
-// Module ID: 9089
-// Function ID: 9090
+// Module ID: 9055
+// Function ID: 9056
 // Name: initialize
-// Dependencies: [1910, 9090, 589, 709, 2]
+// Dependencies: [1910, 9056, 589, 709, 2]
 
-// Module 9089 (initialize)
+// Module 9055 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import fetchGuildAffinities from "fetchGuildAffinities" /* 9090 */;
+import fetchGuildAffinities from "fetchGuildAffinities" /* 9056 */;
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 
 require = arg1;

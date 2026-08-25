@@ -1,9 +1,9 @@
-// Module ID: 4065
-// Function ID: 4066
+// Module ID: 4066
+// Function ID: 4067
 // Name: prototype
 // Dependencies: [676, 530, 1236, 2]
 
-// Module 4065 (prototype)
+// Module 4066 (prototype)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import ME from "ME" /* 676 */;

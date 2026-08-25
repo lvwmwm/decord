@@ -1,9 +1,9 @@
-// Module ID: 6094
-// Function ID: 6095
+// Module ID: 6778
+// Function ID: 6779
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6094 (metadata)
+// Module 6778 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PowerupSpotIllustration-2x.png.js");

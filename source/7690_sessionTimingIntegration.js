@@ -1,0 +1,30 @@
+// Module ID: 7690
+// Function ID: 7691
+// Name: sessionTimingIntegration
+// Dependencies: [7611, 7653]
+
+// Module 7690 (sessionTimingIntegration)
+import setupIntegration from "setupIntegration" /* 7653 */;
+
+
+export const sessionTimingIntegration = setupIntegration.defineIntegration(() => {
+  let obj = _require(7611);
+  _require = 1000 * obj.timestampInSeconds();
+  obj = {
+    name: "SessionTiming",
+    processEvent(extra) {
+      let obj = callback(closure_1_1[0]);
+      const result = 1000 * obj.timestampInSeconds();
+      obj = {};
+      const merged = Object.assign(extra);
+      obj = {};
+      const merged1 = Object.assign(extra.extra);
+      obj["session:start"] = callback;
+      obj["session:duration"] = result - callback;
+      obj["session:end"] = result;
+      obj.extra = obj;
+      return obj;
+    }
+  };
+  return obj;
+});

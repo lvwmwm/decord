@@ -1,19 +1,19 @@
-// Module ID: 14120
-// Function ID: 14121
+// Module ID: 14150
+// Function ID: 14151
 // Name: EditProfileFrameInner
-// Dependencies: [32, 19, 17, 5329, 5313, 676, 21, 4668, 712, 8455, 7726, 7177, 7197, 698, 8413, 6988, 4739, 1236, 8425, 8428, 589, 14121, 8415, 8456, 14122, 8446, 8447, 8426, 9607, 4761, 2]
+// Dependencies: [32, 19, 17, 7164, 7155, 676, 21, 4380, 712, 8462, 7547, 5834, 5854, 698, 8421, 5503, 4376, 1236, 8431, 8434, 589, 14151, 8423, 8463, 14152, 8452, 8453, 8432, 9703, 4826, 2]
 // Exports: default
 
-// Module 14120 (EditProfileFrameInner)
+// Module 14150 (EditProfileFrameInner)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 5329 */;
-import { isProfileFrameRecord } from "fromServer" /* 5313 */;
+import closure_6 from "map" /* 7164 */;
+import { isProfileFrameRecord } from "fromServer" /* 7155 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function EditProfileFrameInner(user) {
@@ -97,7 +97,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = callback3();
-  const tmp2 = purchase(8426)(previewSkuId);
+  const tmp2 = purchase(8432)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -121,11 +121,11 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [callback(purchase(9607), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const items1 = [callback(purchase(9703), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj[3] = items2;
-  items1[1] = callback(purchase(4761), obj);
+  items1[1] = callback(purchase(4826), obj);
   obj[1] = items1;
   return callback2(closure_5, obj);
 }

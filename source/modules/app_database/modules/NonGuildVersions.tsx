@@ -1,16 +1,16 @@
-// Module ID: 5409
-// Function ID: 5410
+// Module ID: 7262
+// Function ID: 7263
 // Name: getCommittedVersions
-// Dependencies: [5, 4201, 3, 5400, 12, 1955, 687, 2]
+// Dependencies: [5, 4202, 3, 7255, 12, 1956, 687, 2]
 
-// Module 5409 (getCommittedVersions)
+// Module 7262 (getCommittedVersions)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import setDefault from "set" /* 687 */;
-import itemsDefault from "items" /* 1955 */;
+import itemsDefault from "items" /* 1956 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import importDefaultResult from "handleConnectionOpen" /* 4201 */;
-import isCacheEnabled from "isCacheEnabled" /* 5400 */;
+import importDefaultResult from "handleConnectionOpen" /* 4202 */;
+import isCacheEnabled from "isCacheEnabled" /* 7255 */;
 
 let obj = arg1;
 let c4 = importDefaultResult;
@@ -43,14 +43,14 @@ class NonGuildVersions {
               const _isNaN = isNaN;
               const _Number = Number;
               if (!isNaN(Number(guildId))) {
-                obj = callback(1955);
+                obj = callback(1956);
                 const result = obj.nonGuildVersionsTransaction(database);
                 obj = { id: "initial_guild_id", versionString: null };
                 obj[1] = guildId;
                 result.put(obj);
               }
             }
-            const result1 = callback(1955).nonGuildVersionsTransaction(database);
+            const result1 = callback(1956).nonGuildVersionsTransaction(database);
             result1.delete("initial_guild_id");
           });
         }
@@ -73,7 +73,7 @@ prototype["getCommittedVersions"] = function getCommittedVersions() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -182,14 +182,14 @@ if (isCacheEnabled.isCacheEnabled()) {
           const _isNaN = isNaN;
           const _Number = Number;
           if (!isNaN(Number(guildId))) {
-            obj = callback(1955);
+            obj = callback(1956);
             const result = obj.nonGuildVersionsTransaction(database);
             obj = { id: "initial_guild_id", versionString: null };
             obj[1] = guildId;
             result.put(obj);
           }
         }
-        const result1 = callback(1955).nonGuildVersionsTransaction(database);
+        const result1 = callback(1956).nonGuildVersionsTransaction(database);
         result1.delete("initial_guild_id");
       });
     }

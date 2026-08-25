@@ -1,9 +1,9 @@
-// Module ID: 4569
-// Function ID: 4570
+// Module ID: 4474
+// Function ID: 4475
 // Name: handleConnectionInfoChange
 // Dependencies: [676, 589, 1474, 709, 2]
 
-// Module 4569 (handleConnectionInfoChange)
+// Module 4474 (handleConnectionInfoChange)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

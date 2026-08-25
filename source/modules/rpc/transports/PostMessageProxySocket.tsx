@@ -1,14 +1,14 @@
-// Module ID: 8798
-// Function ID: 8799
+// Module ID: 10833
+// Function ID: 10834
 // Name: send
-// Dependencies: [676, 8799, 8789, 8788, 2]
+// Dependencies: [676, 10834, 10824, 10823, 2]
 
-// Module 8798 (send)
+// Module 10833 (send)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import HANDSHAKEDefault from "HANDSHAKE" /* 8788 */;
-import prototypeDefault from "prototype" /* 8789 */;
-import checkRpcVersionDefault from "checkRpcVersion" /* 8799 */;
+import HANDSHAKEDefault from "HANDSHAKE" /* 10823 */;
+import prototypeDefault from "prototype" /* 10824 */;
+import checkRpcVersionDefault from "checkRpcVersion" /* 10834 */;
 
 const RPCCloseCodes = ME.RPCCloseCodes;
 checkRpcVersionDefault;

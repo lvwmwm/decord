@@ -1,10 +1,10 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 14904
+// Function ID: 14905
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: isEligibleForFriendOnlineNotifications, useFriendOnlineNotificationExperiment
 
-// Module 14874 (apexExperiment)
+// Module 14904 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

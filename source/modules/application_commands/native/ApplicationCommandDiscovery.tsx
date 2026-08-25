@@ -1,24 +1,24 @@
-// Module ID: 11615
-// Function ID: 11616
+// Module ID: 11961
+// Function ID: 11962
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 5251, 11616, 10216, 676, 21, 11617, 4668, 712, 4756, 11618, 9592, 1954, 8495, 1351, 1236, 5047, 12, 11619, 5253, 11620, 11621, 1297, 10287, 2]
+// Dependencies: [32, 19, 17, 4838, 11962, 10067, 676, 21, 11963, 4380, 712, 4821, 11964, 9687, 1955, 8502, 1351, 1236, 4588, 12, 11965, 7129, 11966, 11967, 1297, 10138, 2]
 // Exports: default
 
-// Module 11615 (ApplicationCommandDiscovery)
+// Module 11961 (ApplicationCommandDiscovery)
 import ThemesDefault from "Themes" /* 712 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
-import getFontScale from "getFontScale" /* 4756 */;
-import ScoreMethod from "ScoreMethod" /* 8495 */;
-import useCommandDiscoveryManager from "useCommandDiscoveryManager" /* 11618 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
+import getFontScale from "getFontScale" /* 4821 */;
+import ScoreMethod from "ScoreMethod" /* 8502 */;
+import useCommandDiscoveryManager from "useCommandDiscoveryManager" /* 11964 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 5251 */;
-import { ITEM_HEIGHT } from "ICON_SIZE" /* 11616 */;
-import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10216 */;
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4838 */;
+import { ITEM_HEIGHT } from "ICON_SIZE" /* 11962 */;
+import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10067 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 ({ View: closure_6, SectionList: error } = get_ActivityIndicator);
@@ -64,7 +64,7 @@ export default function ApplicationCommandDiscovery(channel) {
   closure_8 = ref.useRef(false);
   let obj2 = useCommandDiscoveryManager;
   commandDiscoveryManager = obj2.useCommandDiscoveryManager((initialSectionId) => initialSectionId.initialSectionId);
-  let obj3 = channel(9592);
+  let obj3 = channel(9687);
   obj = { context: { channel, type: "channel" }, filters: null, options: null, allowFetch: true };
   obj = { commandTypes: null, builtIns: null, applicationCommands: null };
   let items = [PermissionOverwriteType.ApplicationCommandType.CHAT];
@@ -97,7 +97,7 @@ export default function ApplicationCommandDiscovery(channel) {
     const AccessibilityAnnouncer = callback(1351).AccessibilityAnnouncer;
     const intl = callback(1236).intl;
     AccessibilityAnnouncer.announce(intl.string(callback(1236).t["2wfLMm"]));
-    callback(5047).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
+    callback(4588).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_OPENED);
     return () => {
       const result = callback(table[12]).updateInitialSectionId(undefined);
     };
@@ -128,14 +128,14 @@ export default function ApplicationCommandDiscovery(channel) {
         filterSection(tmp.id);
         callback2(arg0);
       }
-      const result = closure_1_0(11618).updateInitialSectionId(undefined);
+      const result = closure_1_0(11964).updateInitialSectionId(undefined);
     }
     filterSection(null);
     callback2(0);
   }, items3);
   const callback1 = obj1.useCallback(() => {
     closure_8.current = true;
-    closure_1_0(5047).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_SCROLLED);
+    closure_1_0(4588).trackWithMetadata(commandsByActiveSection.APPLICATION_COMMAND_BROWSER_SCROLLED);
   }, []);
   const callback2 = obj1.useCallback((nativeEvent) => {
     nativeEvent = nativeEvent.nativeEvent;
@@ -278,7 +278,7 @@ export default function ApplicationCommandDiscovery(channel) {
           if (tmp29.HEADER === ROW) {
             let tmp31 = closure_1_0;
             let tmp32 = dependencyMap;
-            num4 = closure_1_0(11617).APPLICATION_SECTION_HEADER_HEIGHT;
+            num4 = closure_1_0(11963).APPLICATION_SECTION_HEADER_HEIGHT;
           } else {
             let FOOTER = tmp28.FOOTER;
             num4 = 0;
@@ -289,7 +289,7 @@ export default function ApplicationCommandDiscovery(channel) {
         let tmp33 = closure_1_0;
         let tmp34 = dependencyMap;
         let tmp35 = bound;
-        obj[1] = num * closure_1_0(11617).APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound;
+        obj[1] = num * closure_1_0(11963).APPLICATION_SECTION_HEADER_HEIGHT + num2 * bound;
         obj[2] = arg1;
         return obj;
       }
@@ -350,7 +350,7 @@ export default function ApplicationCommandDiscovery(channel) {
     stickySectionHeadersEnabled: true
   };
   let obj4 = null;
-  const memo1 = obj1.useMemo(() => filteredSectionId(onHeightChange(11619), { onPressSection: callback, sections: sectionDescriptors, selectedIndex: first, guildId: channel.guild_id }), items7);
+  const memo1 = obj1.useMemo(() => filteredSectionId(onHeightChange(11965), { onPressSection: callback, sections: sectionDescriptors, selectedIndex: first, guildId: channel.guild_id }), items7);
   if (discovery.loading) {
     obj4 = { minIndexForVisible: 1 };
   }
@@ -359,8 +359,8 @@ export default function ApplicationCommandDiscovery(channel) {
     item = item.item;
     const section = item.section;
     let found;
-    if (item.inputType === closure_1_0(5253).ApplicationCommandInputType.PLACEHOLDER) {
-      return filteredSectionId(onHeightChange(11620), {});
+    if (item.inputType === closure_1_0(7129).ApplicationCommandInputType.PLACEHOLDER) {
+      return filteredSectionId(onHeightChange(11966), {});
     } else {
       found = sectionDescriptors.find((id) => id.id === item.applicationId);
       const obj = { command: null, onPress: null, section: null, showIcon: null, guildId: null };
@@ -375,18 +375,18 @@ export default function ApplicationCommandDiscovery(channel) {
       obj[2] = found;
       obj[3] = item.applicationId !== section.section.id;
       obj[4] = found.guild_id;
-      return filteredSectionId(onHeightChange(11621), obj);
+      return filteredSectionId(onHeightChange(11967), obj);
     }
   };
   obj3[11] = function renderSectionHeader(section) {
     section = section.section;
     let obj = { section: section.section, guildId: channel.guild_id };
-    const children = [filteredSectionId(onHeightChange(11617), obj, section.section.id), ];
+    const children = [filteredSectionId(onHeightChange(11963), obj, section.section.id), ];
     let tmp3Result = 0 === section.data.length;
     if (tmp3Result) {
       obj = { lightSource: null, darkSource: null, body: null, containerStyle: null, imageStyle: null };
-      obj[0] = tmp4(10287);
-      obj[1] = tmp4(10287);
+      obj[0] = tmp4(10138);
+      obj[1] = tmp4(10138);
       const intl = closure_1_0(1236).intl;
       obj = { applicationName: null };
       obj[0] = section.section.name;

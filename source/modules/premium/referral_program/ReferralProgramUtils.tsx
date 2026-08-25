@@ -1,19 +1,19 @@
-// Module ID: 8313
-// Function ID: 8314
+// Module ID: 8314
+// Function ID: 8315
 // Name: getReferralTrialOfferExpirationCopy
-// Dependencies: [7461, 1388, 687, 1236, 4200, 1377, 11, 1379, 8314, 589, 8319, 2]
+// Dependencies: [7059, 1388, 687, 1236, 4201, 1377, 11, 1379, 8315, 589, 8320, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, isReferralProgramPopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 8313 (getReferralTrialOfferExpirationCopy)
+// Module 8314 (getReferralTrialOfferExpirationCopy)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initialize from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
 import addVersionedDismissedContent from "addVersionedDismissedContent" /* 1379 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4200 */;
-import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8314 */;
-import closure_3 from "emitChanges" /* 7461 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4201 */;
+import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8315 */;
+import closure_3 from "emitChanges" /* 7059 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 
 require = arg1;
@@ -101,12 +101,12 @@ export const useIsReferralProgramPopoverShowable = function useIsReferralProgram
   if (obj4.useIsReferralReminderDCExperimentEnabled({ location: "ReferralProgramUtils" })) {
     let tmp8 = null != stateFromStores1;
     if (tmp8) {
-      let tmpResult = tmp(4200);
+      let tmpResult = tmp(4201);
       tmp8 = !tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(1377).DismissibleContent.REFERRAL_PROGRAM_POPOVER_V2, stateFromStores1).isDismissed;
     }
     let tmp6 = tmp8;
   } else {
-    tmpResult = tmp(4200);
+    tmpResult = tmp(4201);
     tmp6 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(1377).DismissibleContent.REFERRAL_PROGRAM_POPOVER);
   }
   if (isEligibleSenderForReferralProgram) {

@@ -1,10 +1,10 @@
-// Module ID: 10418
-// Function ID: 10419
+// Module ID: 10269
+// Function ID: 10270
 // Name: useGiftingPromotionDefaultSelectionV2
 // Dependencies: [2]
 // Exports: useGiftingPromotionDefaultSelectionV2
 
-// Module 10418 (useGiftingPromotionDefaultSelectionV2)
+// Module 10269 (useGiftingPromotionDefaultSelectionV2)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/premium/gifting/hooks/useGiftingPromotionDefaultSelection.tsx");

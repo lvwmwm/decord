@@ -1,13 +1,13 @@
-// Module ID: 13547
-// Function ID: 13548
+// Module ID: 13582
+// Function ID: 13583
 // Name: NitroWheel
-// Dependencies: [19, 21, 5454, 9404, 2]
+// Dependencies: [19, 21, 5374, 8847, 2]
 // Exports: default
 
-// Module 13547 (NitroWheel)
+// Module 13582 (NitroWheel)
 import noopAll from "noop" /* 19 */;
-import preloadDefault from "preload" /* 5454 */;
-import registerAssetDefault from "registerAsset" /* 9404 */;
+import preloadDefault from "preload" /* 5374 */;
+import registerAssetDefault from "registerAsset" /* 8847 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 noopAll;

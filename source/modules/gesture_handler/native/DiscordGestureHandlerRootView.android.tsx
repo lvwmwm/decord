@@ -1,13 +1,13 @@
-// Module ID: 13988
-// Function ID: 13989
+// Module ID: 14023
+// Function ID: 14024
 // Name: DiscordGestureHandlerRootView
-// Dependencies: [19, 17, 21, 13989, 6408, 2]
+// Dependencies: [19, 17, 21, 14024, 5533, 2]
 // Exports: default
 
-// Module 13988 (DiscordGestureHandlerRootView)
+// Module 14023 (DiscordGestureHandlerRootView)
 import noopAll from "noop" /* 19 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6408 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13989 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5533 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 14024 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

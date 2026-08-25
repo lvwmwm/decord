@@ -1,10 +1,10 @@
-// Module ID: 4818
-// Function ID: 4819
+// Module ID: 4633
+// Function ID: 4634
 // Name: ActionComponentState
 // Dependencies: [2]
 // Exports: asComponentId
 
-// Module 4818 (ActionComponentState)
+// Module 4633 (ActionComponentState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/interaction_components/InteractionComponentTypes.tsx");

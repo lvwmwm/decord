@@ -1,14 +1,14 @@
-// Module ID: 14103
-// Function ID: 14104
+// Module ID: 14135
+// Function ID: 14136
 // Name: GummyStripes
-// Dependencies: [19, 17, 21, 4668, 688, 2]
+// Dependencies: [19, 17, 21, 4380, 688, 2]
 // Exports: default
 
-// Module 14103 (GummyStripes)
+// Module 14135 (GummyStripes)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;

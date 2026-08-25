@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16618
+// Function ID: 16619
 // Name: I18nLink
-// Dependencies: [19, 676, 21, 1356, 4100, 712, 4093, 4095, 1297, 2]
+// Dependencies: [19, 676, 21, 1356, 4101, 712, 4094, 4096, 1297, 2]
 // Exports: default
 
-// Module 16586 (I18nLink)
+// Module 16618 (I18nLink)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

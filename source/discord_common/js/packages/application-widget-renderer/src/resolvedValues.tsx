@@ -1,19 +1,19 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12562
+// Function ID: 12563
 // Name: resolveFieldValue
-// Dependencies: [12246, 12247, 2]
+// Dependencies: [12563, 12564, 2]
 // Exports: bindResolveFieldValue
 
-// Module 12245 (resolveFieldValue)
+// Module 12562 (resolveFieldValue)
 import set from "set" /* 2 */;
-import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 12246 */;
+import ApplicationWidgetFieldPresentationType from "ApplicationWidgetFieldPresentationType" /* 12563 */;
 
 function resolveFieldValue(image, items, applicationAssets) {
   const _require = image;
   applicationAssets = applicationAssets.applicationAssets;
   if (null == image) {
     return null;
-  } else if (image.value_type === _require(12247).ApplicationWidgetFieldValueType.DATA) {
+  } else if (image.value_type === _require(12564).ApplicationWidgetFieldValueType.DATA) {
     let iter = tmp[image.value];
     const presentation_type = image.presentation_type;
     if (null != iter) {
@@ -45,21 +45,21 @@ function resolveFieldValue(image, items, applicationAssets) {
       }
     }
     return tmp10;
-  } else if (image.value_type === tmp19(12247).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
+  } else if (image.value_type === tmp19(12564).ApplicationWidgetFieldValueType.CUSTOM_STRING) {
     let tmp6 = null;
-    if (image.presentation_type === tmp19(12246).ApplicationWidgetFieldPresentationType.TEXT) {
+    if (image.presentation_type === tmp19(12563).ApplicationWidgetFieldPresentationType.TEXT) {
       tmp6 = null;
       if (items.includes(obj.STRING)) {
         obj1 = { type: null, value: null, presentationType: null };
         obj1[0] = tmp7.STRING;
         obj1[1] = image.value;
-        obj1[2] = tmp19(12246).ApplicationWidgetFieldPresentationType.TEXT;
+        obj1[2] = tmp19(12563).ApplicationWidgetFieldPresentationType.TEXT;
         tmp6 = obj1;
       }
       tmp7 = obj;
     }
     return tmp6;
-  } else if (image.value_type === tmp19(12247).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
+  } else if (image.value_type === tmp19(12564).ApplicationWidgetFieldValueType.APPLICATION_ASSET) {
     if (items.includes(obj.MEDIA)) {
       const found = applicationAssets.find((key) => key.key === image.value);
       let tmp5 = null;
@@ -71,7 +71,7 @@ function resolveFieldValue(image, items, applicationAssets) {
         obj2[1] = found.metadata.width;
         obj2[2] = found.metadata.height;
         obj[1] = obj2;
-        obj[2] = tmp19(12246).ApplicationWidgetFieldPresentationType.IMAGE;
+        obj[2] = tmp19(12563).ApplicationWidgetFieldPresentationType.IMAGE;
         tmp5 = obj;
       }
       return tmp5;

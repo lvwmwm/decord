@@ -1,12 +1,12 @@
-// Module ID: 6827
-// Function ID: 6828
+// Module ID: 5352
+// Function ID: 5353
 // Name: waitForOnboardingCompletion
-// Dependencies: [1991, 4012, 1403, 6828, 2]
+// Dependencies: [1992, 4013, 1403, 5353, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 6827 (waitForOnboardingCompletion)
-import closure_3 from "trackCommunicationDisabled" /* 1991 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4012 */;
+// Module 5352 (waitForOnboardingCompletion)
+import closure_3 from "trackCommunicationDisabled" /* 1992 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_onboarding/doGuildOnboardingHelpers.tsx");

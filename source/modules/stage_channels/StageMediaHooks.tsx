@@ -1,14 +1,14 @@
-// Module ID: 4993
-// Function ID: 4994
+// Module ID: 5242
+// Function ID: 5243
 // Name: useStageHasMedia
-// Dependencies: [1910, 4547, 4994, 589, 6740, 2]
+// Dependencies: [1910, 4399, 5243, 589, 5249, 2]
 // Exports: getStageHasMedia, getStageHasStream, isStageVideoEnabled, useIsStageVideoEnabled, useStageHasMedia, useStageHasStream
 
-// Module 4993 (useStageHasMedia)
-import sortKey from "sortKey" /* 6740 */;
+// Module 5242 (useStageHasMedia)
+import sortKey from "sortKey" /* 5249 */;
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "updateVoiceState" /* 4547 */;
-import closure_4 from "getActiveStageChannelIds" /* 4994 */;
+import closure_3 from "updateVoiceState" /* 4399 */;
+import closure_4 from "getActiveStageChannelIds" /* 5243 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/StageMediaHooks.tsx");

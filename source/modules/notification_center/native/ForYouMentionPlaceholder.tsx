@@ -1,16 +1,16 @@
-// Module ID: 15742
-// Function ID: 15743
+// Module ID: 15774
+// Function ID: 15775
 // Name: ForYouMentionPlaceholder
-// Dependencies: [19, 17, 4669, 21, 4668, 712, 589, 4119, 4671, 2]
+// Dependencies: [19, 17, 4372, 21, 4380, 712, 589, 4120, 4381, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 15742 (ForYouMentionPlaceholder)
+// Module 15774 (ForYouMentionPlaceholder)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;

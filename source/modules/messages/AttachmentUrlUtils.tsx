@@ -1,15 +1,15 @@
-// Module ID: 9122
-// Function ID: 9123
+// Module ID: 9902
+// Function ID: 9903
 // Name: isRefreshableAttachmentUrl
-// Dependencies: [5, 6857, 676, 687, 4513, 4512, 1487, 530, 2]
+// Dependencies: [5, 4849, 676, 687, 4415, 4414, 1487, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentPathUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9122 (isRefreshableAttachmentUrl)
+// Module 9902 (isRefreshableAttachmentUrl)
 import setDefault from "set" /* 687 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import isImageProxyURL from "isImageProxyURL" /* 4512 */;
+import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4414 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { ATTACHMENT_PATH_PREFIXES } from "set" /* 6857 */;
+import { ATTACHMENT_PATH_PREFIXES } from "set" /* 4849 */;
 import { Endpoints } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -181,7 +181,7 @@ function _maybeRefreshAttachmentUrl() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -300,7 +300,7 @@ let result = set.fileFinishedImporting("modules/messages/AttachmentUrlUtils.tsx"
 export { isAttachmentPathUrl };
 export { isRefreshableAttachmentUrl };
 export const isExternalProxiedAttachmentUrl = function isExternalProxiedAttachmentUrl(toURLSafeResult) {
-  return isImageProxyURL.isImageProxyURL(toURLSafeResult);
+  return getSizedImageProxyURL.isImageProxyURL(toURLSafeResult);
 };
 export const removeSignedUrlParameters = function removeSignedUrlParameters(toURLSafeResult) {
   toURLSafeResult = isDiscordProxiedAssetUrlDefault.toURLSafe(toURLSafeResult);

@@ -1,17 +1,17 @@
-// Module ID: 4199
-// Function ID: 4200
+// Module ID: 4200
+// Function ID: 4201
 // Name: isSyncedModeThemesEnabled
-// Dependencies: [1303, 1302, 1304, 1340, 1395, 1391, 1922, 1348, 1305, 1367, 4200, 1377, 4223, 4042, 4069, 1366, 4226, 589, 1347, 709, 2]
+// Dependencies: [1303, 1302, 1304, 1340, 1395, 1391, 1922, 1348, 1305, 1367, 4201, 1377, 4224, 4043, 4070, 1366, 4227, 589, 1347, 709, 2]
 
-// Module 4199 (isSyncedModeThemesEnabled)
+// Module 4200 (isSyncedModeThemesEnabled)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getThemeForColor from "getThemeForColor" /* 1347 */;
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4042 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4200 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4043 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4201 */;
 import closure_5 from "initialize" /* 1303 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
 import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
@@ -76,7 +76,7 @@ function handleUserSettingsProtoStoreUpdate() {
     result = tmpResult.isPerModeThemingActive(isSyncedModeThemesEnabled);
   }
   if (!result) {
-    tmpResult = tmp(4226);
+    tmpResult = tmp(4227);
     tmpResult.setUseSystemTheme(SystemThemeState.OFF);
   }
   if (null != backgroundGradientPresetId) {
@@ -245,7 +245,7 @@ const clientThemesBackgroundStore = new ClientThemesBackgroundStore(dispatcherDe
               c15 = true;
             }
           }
-          tmp6Result = tmp6(4223);
+          tmp6Result = tmp6(4224);
         }
         obj2 = UNSAFE_isDismissibleContentDismissed;
         tmp6 = require;

@@ -1,11 +1,11 @@
-// Module ID: 15331
-// Function ID: 15332
+// Module ID: 15361
+// Function ID: 15362
 // Name: usePortraitOrientationOnly
-// Dependencies: [19, 4358, 1625, 8621, 8708, 2]
+// Dependencies: [19, 4359, 1625, 8629, 9042, 2]
 // Exports: default
 
-// Module 15331 (usePortraitOrientationOnly)
-import useWideAuthViewDefault from "useWideAuthView" /* 8621 */;
+// Module 15361 (usePortraitOrientationOnly)
+import useWideAuthViewDefault from "useWideAuthView" /* 8629 */;
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

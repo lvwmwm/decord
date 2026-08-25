@@ -1,13 +1,13 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 10759
+// Function ID: 10760
 // Name: MIN_MARGIN_BETWEEN_OVERLAYS
-// Dependencies: [8707, 709, 2]
+// Dependencies: [9896, 709, 2]
 // Exports: doesTargetPositionIntersectOtherOverlaysWorklet, setPipEnabledWhileFocusedOnActivityOrStream, updateVoiceCallOverlayLayoutState
 
-// Module 12481 (MIN_MARGIN_BETWEEN_OVERLAYS)
+// Module 10759 (MIN_MARGIN_BETWEEN_OVERLAYS)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 8707 */;
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9896 */;
 
 const MIN_MARGIN_BETWEEN_OVERLAYS = BOX_MODE_ACTIONSHEET_WIDTH.MIN_MARGIN_BETWEEN_OVERLAYS;
 const VoiceCallOverlayType = BOX_MODE_ACTIONSHEET_WIDTH.VoiceCallOverlayType;

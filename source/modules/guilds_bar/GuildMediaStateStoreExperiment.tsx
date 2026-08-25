@@ -1,10 +1,10 @@
-// Module ID: 15661
-// Function ID: 15662
+// Module ID: 15693
+// Function ID: 15694
 // Name: GuildMediaStateSource
 // Dependencies: [1368, 2]
 // Exports: useGuildMediaStateSource
 
-// Module 15661 (GuildMediaStateSource)
+// Module 15693 (GuildMediaStateSource)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 let obj = { HOOK: "hook", STORE: "store", SHADOW: "shadow" };

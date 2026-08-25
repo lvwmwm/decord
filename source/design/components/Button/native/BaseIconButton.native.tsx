@@ -1,19 +1,19 @@
-// Module ID: 8075
-// Function ID: 8076
+// Module ID: 7897
+// Function ID: 7898
 // Name: BaseIconButton
-// Dependencies: [19, 21, 4668, 4754, 4119, 4752, 4755, 4757, 4759, 2]
+// Dependencies: [19, 21, 4380, 4819, 4120, 4817, 4820, 4822, 4824, 2]
 
-// Module 8075 (BaseIconButton)
-import _mod4119 from "module_4119" /* 4119 */;
-import IconSizesDefault from "IconSizes" /* 4752 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4754 */;
-import styleProperties from "styleProperties" /* 4755 */;
-import BaseButton from "BaseButton" /* 4757 */;
-import PillWrapper from "PillWrapper" /* 4759 */;
+// Module 7897 (BaseIconButton)
+import _mod4120 from "module_4120" /* 4120 */;
+import IconSizesDefault from "IconSizes" /* 4817 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4819 */;
+import styleProperties from "styleProperties" /* 4820 */;
+import BaseButton from "BaseButton" /* 4822 */;
+import PillWrapper from "PillWrapper" /* 4824 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import importDefaultResult from "module_4119" /* 4119 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "module_4120" /* 4120 */;
 
 require = arg1;
 let closure_4 = createCacheKey.createStyles((arg0, arg1) => {
@@ -58,18 +58,18 @@ const forwardRefResult = importAllResult.forwardRef((variant, ref) => {
     num = scaleAmountInPx;
   }
   const tmp3 = callback(str, DEFAULT_BUTTON_SIZE);
-  let obj = _mod4119;
+  let obj = _mod4120;
   const sharedValue = obj.useSharedValue(0);
   obj1 = styleProperties;
   const iconTintStyles = obj1.useIconTintStyles(str);
   const iconSizeStyles = styleProperties.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = MINIMUM_HIT_AREA.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(4754).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(4819).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp4(4754).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp4(4819).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp4(4754).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const bound = Math.max((tmp4(4819).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
   obj = {};
   const merged = Object.assign(variant);
   obj.ref = ref;

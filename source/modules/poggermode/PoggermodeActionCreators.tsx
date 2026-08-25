@@ -1,15 +1,15 @@
-// Module ID: 7615
-// Function ID: 7616
+// Module ID: 7433
+// Function ID: 7434
 // Name: updatePoggermodeSettings
-// Dependencies: [1218, 7470, 7616, 709, 7618, 2]
+// Dependencies: [1218, 7283, 7434, 709, 7436, 2]
 // Exports: clearMessageCombo, updateCombo, updateComboOnMessageSend, updatePoggermodeSettings
 
-// Module 7615 (updatePoggermodeSettings)
+// Module 7433 (updatePoggermodeSettings)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getScreenshakeLocationNameDefault from "getScreenshakeLocationName" /* 7618 */;
+import getScreenshakeLocationNameDefault from "getScreenshakeLocationName" /* 7436 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "initialize" /* 7470 */;
-import closure_4 from "updateCombo" /* 7616 */;
+import closure_3 from "initialize" /* 7283 */;
+import closure_4 from "updateCombo" /* 7434 */;
 
 const result = require("set").fileFinishedImporting("modules/poggermode/PoggermodeActionCreators.tsx");
 

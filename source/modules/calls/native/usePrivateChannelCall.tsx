@@ -1,10 +1,10 @@
-// Module ID: 12407
-// Function ID: 12408
+// Module ID: 12725
+// Function ID: 12726
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 1391, 589, 1236, 9685, 4775, 2]
+// Dependencies: [5, 19, 1391, 589, 1236, 9781, 4393, 2]
 // Exports: default
 
-// Module 12407 (usePrivateChannelCall)
+// Module 12725 (usePrivateChannelCall)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
@@ -24,7 +24,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
     if (null != channel) {
       if (channel.isPrivate()) {
         let obj = { text: null, accessibilityHint: null, inCall: null };
-        ({ text: obj2[0], accessibilityHint: obj2[1], inCall: obj2[2] } = callback2(9685)(channel, callback2));
+        ({ text: obj2[0], accessibilityHint: obj2[1], inCall: obj2[2] } = callback2(9781)(channel, callback2));
         return obj;
       }
     }
@@ -66,7 +66,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
                 dependencyMap = 1;
                 c3 = 1;
                 obj1 = { value: null, done: false };
-                obj1[0] = closure_1_1(4775).ensurePrivateChannel(tmp33);
+                obj1[0] = closure_1_1(4393).ensurePrivateChannel(tmp33);
                 return obj1;
               }
               tmp33 = closure_1_0;
@@ -113,14 +113,14 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
             isPrivateResult = obj1.isPrivate();
           }
           if (isPrivateResult) {
-            closure_1_1(9685)(channel, closure_1).onPress();
-            const obj3 = closure_1_1(9685)(channel, closure_1);
+            closure_1_1(9781)(channel, closure_1).onPress();
+            const obj3 = closure_1_1(9781)(channel, closure_1);
           }
           if (dependencyMap != null) {
             dependencyMap();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp25) {
           c3 = tmp;
           throw tmp25;

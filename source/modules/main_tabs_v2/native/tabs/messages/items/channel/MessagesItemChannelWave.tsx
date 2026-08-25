@@ -1,11 +1,11 @@
-// Module ID: 15368
-// Function ID: 15369
-// Dependencies: [19, 21, 4750, 1236, 4739, 2]
+// Module ID: 15398
+// Function ID: 15399
+// Dependencies: [19, 21, 4815, 1236, 4376, 2]
 
-// Module 15368
+// Module 15398
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import Button from "Button" /* 4750 */;
+import Text from "Text" /* 4376 */;
+import Button from "Button" /* 4815 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 9820
+// Function ID: 9821
 // Name: UserCircleIcon
-// Dependencies: [19, 21, 712, 4099, 9963, 2]
+// Dependencies: [19, 21, 712, 4100, 9821, 2]
 // Exports: UserCircleIcon
 
-// Module 9962 (UserCircleIcon)
+// Module 9820 (UserCircleIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 9963 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 9821 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

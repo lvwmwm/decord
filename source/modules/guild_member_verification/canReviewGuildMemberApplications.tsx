@@ -1,12 +1,12 @@
-// Module ID: 7268
-// Function ID: 7269
+// Module ID: 5991
+// Function ID: 5992
 // Name: canReviewGuildMemberApplications
-// Dependencies: [1910, 4024, 676, 589, 6897, 2]
+// Dependencies: [1910, 4025, 676, 589, 4893, 2]
 // Exports: canReviewGuildMemberApplications, useCanReviewGuildMemberApplications
 
-// Module 7268 (canReviewGuildMemberApplications)
+// Module 5991 (canReviewGuildMemberApplications)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -39,8 +39,8 @@ export const useCanReviewGuildMemberApplications = function useCanReviewGuildMem
     hasItem = closure_3.can(constants2.KICK_MEMBERS, stateFromStores);
   }
   if (hasItem) {
-    hasItem = _require(6897).guildHasVerificationGate(stateFromStores);
-    const tmpResult = _require(6897);
+    hasItem = _require(4893).guildHasVerificationGate(stateFromStores);
+    const tmpResult = _require(4893);
   }
   return hasItem;
 };

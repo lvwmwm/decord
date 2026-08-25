@@ -1,10 +1,10 @@
-// Module ID: 10751
-// Function ID: 10752
+// Module ID: 11069
+// Function ID: 11070
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: shouldUseScrollIndicatorOverlay, useIsBountiesVerticalScrollExperimentActive, useIsBountiesVerticalScrollExperimentEnabled, useIsScrollIndicatorOverlayVariant
 
-// Module 10751 (apexExperiment)
+// Module 11069 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

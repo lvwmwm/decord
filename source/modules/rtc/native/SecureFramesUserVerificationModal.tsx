@@ -1,21 +1,21 @@
-// Module ID: 9752
-// Function ID: 9753
+// Module ID: 9362
+// Function ID: 9363
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [32, 19, 17, 1391, 1922, 9749, 676, 1301, 21, 4668, 712, 589, 4801, 9753, 9754, 9728, 9755, 9747, 5265, 4097, 4339, 1236, 4494, 9756, 9104, 7177, 8966, 9757, 1297, 6840, 5438, 6347, 4739, 4738, 9758, 9760, 4750, 2]
+// Dependencies: [32, 19, 17, 1391, 1922, 9359, 676, 1301, 21, 4380, 712, 589, 4573, 9363, 9364, 9338, 9365, 9357, 4611, 4098, 4340, 1236, 9366, 9367, 9070, 5834, 8930, 9368, 1297, 5434, 4949, 5380, 4376, 4813, 9369, 9371, 4815, 2]
 // Exports: default
 
-// Module 9752 (SecureFramesUserVerificationModal)
+// Module 9362 (SecureFramesUserVerificationModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9749 */;
+import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9359 */;
 import ME from "ME" /* 676 */;
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1301 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);

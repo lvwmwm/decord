@@ -1,17 +1,17 @@
-// Module ID: 16799
-// Function ID: 16800
+// Module ID: 16831
+// Function ID: 16832
 // Name: handleVoiceChannelSelect
-// Dependencies: [4089, 1391, 4024, 1980, 4983, 5043, 4346, 4993, 9692, 1399, 6744, 2008, 2]
+// Dependencies: [4090, 1391, 4025, 1981, 5239, 5367, 4347, 5242, 9302, 1399, 5254, 2009, 2]
 
-// Module 16799 (handleVoiceChannelSelect)
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
-import useStageHasMedia from "useStageHasMedia" /* 4993 */;
-import initializeDefault from "initialize" /* 5043 */;
-import closure_3 from "setContent" /* 4089 */;
+// Module 16831 (handleVoiceChannelSelect)
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
+import useStageHasMedia from "useStageHasMedia" /* 5242 */;
+import initializeDefault from "initialize" /* 5367 */;
+import closure_3 from "setContent" /* 4090 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
-import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 4983 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_6 from "handleConnectionOpen" /* 1981 */;
+import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 5239 */;
 
 require = arg1;
 let c8 = false;
@@ -51,12 +51,12 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates() {
               if (closure_5.can(tmp5(1399).MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                 obj = { channel: null };
                 obj[0] = channel;
-                ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp5(2008)(6744, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
+                ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp5(2009)(5254, tmp6.paths), STAGE_BOOSTING_SHEET_KEY, obj);
                 c8 = true;
                 const obj3 = ACTION_SHEET_HEIGHT_HALFDefault;
               }
             }
-            tmp5Result = tmp5(9692);
+            tmp5Result = tmp5(9302);
           }
           tmp6 = dependencyMap;
         }

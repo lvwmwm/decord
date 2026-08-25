@@ -1,12 +1,12 @@
-// Module ID: 15415
-// Function ID: 15416
+// Module ID: 15445
+// Function ID: 15446
 // Name: useEnsureHydratedUsers
-// Dependencies: [19, 6741, 1922, 7313, 2]
+// Dependencies: [19, 5250, 1922, 6035, 2]
 // Exports: useEnsureHydratedUsers
 
-// Module 15415 (useEnsureHydratedUsers)
+// Module 15445 (useEnsureHydratedUsers)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleConnectionReset" /* 6741 */;
+import closure_3 from "handleConnectionReset" /* 5250 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
@@ -33,5 +33,5 @@ export const useEnsureHydratedUsers = function useEnsureHydratedUsers(guild_id, 
       }
     });
   }, items1);
-  const subscribeGuildMembers = _require(7313).useSubscribeGuildMembers(memo, "useEnsureHydratedUsers");
+  const subscribeGuildMembers = _require(6035).useSubscribeGuildMembers(memo, "useEnsureHydratedUsers");
 };

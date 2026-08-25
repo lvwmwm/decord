@@ -1,14 +1,14 @@
-// Module ID: 14781
-// Function ID: 14782
+// Module ID: 14811
+// Function ID: 14812
 // Name: toggle
-// Dependencies: [4669, 8238, 10708, 1236, 589, 13871, 2]
+// Dependencies: [4372, 8235, 10516, 1236, 589, 13906, 2]
 
-// Module 14781 (toggle)
+// Module 14811 (toggle)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import setFontSize from "setFontSize" /* 13871 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
-import createToggle from "createToggle" /* 10708 */;
+import setFontSize from "setFontSize" /* 13906 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import createToggle from "createToggle" /* 10516 */;
 
 require = arg1;
 createToggle = {

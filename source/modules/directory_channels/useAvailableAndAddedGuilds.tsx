@@ -1,17 +1,17 @@
-// Module ID: 11534
-// Function ID: 11535
+// Module ID: 11885
+// Function ID: 11886
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 1910, 4024, 5083, 11528, 676, 589, 4766, 11532, 2]
+// Dependencies: [5, 32, 19, 1910, 4025, 5262, 11879, 676, 589, 4831, 11883, 2]
 // Exports: default
 
-// Module 11534 (useAvailableAndAddedGuilds)
+// Module 11885 (useAvailableAndAddedGuilds)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_9 from "insertUnsortedGuilds" /* 5083 */;
-import closure_10 from "isFetching" /* 11528 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_9 from "insertUnsortedGuilds" /* 5262 */;
+import closure_10 from "isFetching" /* 11879 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;
@@ -58,7 +58,7 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -93,7 +93,7 @@ export default function useAvailableAndAddedGuilds(arg0, arg1) {
           } else {
             v0(false);
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           v0 = tmp;

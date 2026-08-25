@@ -1,14 +1,14 @@
-// Module ID: 15176
-// Function ID: 15177
+// Module ID: 15206
+// Function ID: 15207
 // Name: ClipboardCheckIcon
-// Dependencies: [19, 21, 712, 4099, 15177, 2]
+// Dependencies: [19, 21, 712, 4100, 15207, 2]
 // Exports: ClipboardCheckIcon
 
-// Module 15176 (ClipboardCheckIcon)
+// Module 15206 (ClipboardCheckIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 15177 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 15207 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

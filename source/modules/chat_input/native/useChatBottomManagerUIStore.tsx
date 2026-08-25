@@ -1,10 +1,10 @@
-// Module ID: 8719
-// Function ID: 8720
+// Module ID: 8758
+// Function ID: 8759
 // Name: updateChatInputContainerHeight
-// Dependencies: [595, 644, 4241, 2]
+// Dependencies: [595, 644, 4242, 2]
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, useBestActiveChatInputContainerHeight, useChatInputContainerHeight, useChatIsAtBottom, useChatShowingAutoComplete
 
-// Module 8719 (updateChatInputContainerHeight)
+// Module 8758 (updateChatInputContainerHeight)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 12250
+// Function ID: 12251
 // Name: ContactSyncError
-// Dependencies: [19, 21, 4668, 4119, 4671, 4739, 2]
+// Dependencies: [19, 21, 4380, 4120, 4381, 4376, 2]
 // Exports: default
 
-// Module 11916 (ContactSyncError)
+// Module 12250 (ContactSyncError)
 import noopAll from "noop" /* 19 */;
-import _modDef4119 from "module_4119" /* 4119 */;
+import _modDef4120 from "module_4120" /* 4120 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -25,7 +25,7 @@ export default function ContactSyncError(error) {
     tmp2 = "" !== error;
   }
   _require = tmp2;
-  let obj = _require(4119);
+  let obj = _require(4120);
   const fn = function l() {
     let obj = callback(closure_1_2[4]);
     let num = 0;
@@ -35,12 +35,12 @@ export default function ContactSyncError(error) {
     obj = { height: obj.withTiming(num) };
     return obj;
   };
-  obj = { withTiming: _require(4671).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
+  obj = { withTiming: _require(4381).withTiming, hasError: tmp2, ERROR_HEIGHT: 44 };
   fn.__closure = obj;
   fn.__workletHash = 14558247431913;
   fn.__initData = closure_5;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  obj = { style: items, children: jsx(_require(4739).Text, obj1) };
+  obj = { style: items, children: jsx(_require(4376).Text, obj1) };
   items = [tmp.container, error.style, animatedStyle];
-  return jsx(_modDef4119.View, { style: items, children: jsx(_require(4739).Text, obj1) });
+  return jsx(_modDef4120.View, { style: items, children: jsx(_require(4376).Text, obj1) });
 };

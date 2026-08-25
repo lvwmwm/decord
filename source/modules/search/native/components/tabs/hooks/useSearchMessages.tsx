@@ -1,12 +1,12 @@
-// Module ID: 16011
-// Function ID: 16012
+// Module ID: 16043
+// Function ID: 16044
 // Name: useSearchMessages
-// Dependencies: [4976, 11559, 589, 11560, 2]
+// Dependencies: [6006, 11906, 589, 11907, 2]
 // Exports: useSearchMessages
 
-// Module 16011 (useSearchMessages)
-import closure_2 from "handleReaction" /* 4976 */;
-import closure_3 from "prototype" /* 11559 */;
+// Module 16043 (useSearchMessages)
+import closure_2 from "handleReaction" /* 6006 */;
+import closure_3 from "prototype" /* 11906 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessages.tsx");

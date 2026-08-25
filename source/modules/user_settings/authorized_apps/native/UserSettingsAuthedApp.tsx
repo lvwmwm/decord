@@ -1,29 +1,29 @@
-// Module ID: 14366
-// Function ID: 14367
+// Module ID: 14396
+// Function ID: 14397
 // Name: WarningLabel
-// Dependencies: [19, 17, 1390, 5294, 1391, 4033, 5048, 1995, 676, 9961, 10633, 21, 4668, 712, 4334, 4739, 1500, 1501, 1236, 7185, 8750, 9810, 589, 11816, 1435, 4663, 11815, 4346, 10634, 2008, 503, 9775, 6584, 7916, 7395, 8812, 4234, 6835, 6832, 11, 11280, 9587, 6317, 7216, 6322, 2]
+// Dependencies: [19, 17, 1390, 5356, 1391, 4034, 4589, 1996, 676, 9819, 10433, 21, 4380, 712, 4335, 4376, 1500, 1501, 1236, 5842, 10686, 10589, 589, 12156, 1435, 4746, 12155, 4347, 10434, 2009, 503, 9391, 7929, 7737, 6122, 9079, 4235, 5368, 5363, 11, 11639, 9682, 5873, 5874, 5480, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14366 (WarningLabel)
+// Module 14396 (WarningLabel)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4334 */;
-import Text from "Text" /* 4739 */;
-import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 7185 */;
-import postMessageToWebViewDefault from "postMessageToWebView" /* 8750 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4335 */;
+import Text from "Text" /* 4376 */;
+import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5842 */;
+import postMessageToWebViewDefault from "postMessageToWebView" /* 10686 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "participantFromServer" /* 1390 */;
-import closure_7 from "recomputeFromAppTokens" /* 5294 */;
+import closure_7 from "recomputeFromAppTokens" /* 5356 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "markAllUserIdListsStale" /* 4033 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 5048 */;
-import closure_11 from "_getSystemLocale" /* 1995 */;
+import closure_9 from "markAllUserIdListsStale" /* 4034 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_11 from "_getSystemLocale" /* 1996 */;
 import ME from "ME" /* 676 */;
-import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 9961 */;
-import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10633 */;
+import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 9819 */;
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10433 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function WarningLabel(children) {

@@ -1,21 +1,21 @@
-// Module ID: 9615
-// Function ID: 9616
+// Module ID: 9711
+// Function ID: 9712
 // Name: ProductNameAndDescription
-// Dependencies: [17, 21, 4668, 712, 9616, 4739, 5318, 9280, 1236, 9617, 1949, 2]
+// Dependencies: [17, 21, 4380, 712, 9712, 4376, 7160, 9559, 1236, 9713, 1950, 2]
 // Exports: default
 
-// Module 9615 (ProductNameAndDescription)
+// Module 9711 (ProductNameAndDescription)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
-import Text from "Text" /* 4739 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 5318 */;
-import getProductPurchaseState from "getProductPurchaseState" /* 9280 */;
-import getBundleDescription from "getBundleDescription" /* 9616 */;
-import PriceTagDefault from "PriceTag" /* 9617 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import Text from "Text" /* 4376 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7160 */;
+import getProductPurchaseState from "getProductPurchaseState" /* 9559 */;
+import getBundleDescription from "getBundleDescription" /* 9712 */;
+import PriceTagDefault from "PriceTag" /* 9713 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 function ProductNameAndDescription(product) {
   product = product.product;
@@ -38,12 +38,12 @@ function ProductPurchaseStatus(product) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
     const intl2 = tmp(1236).intl;
     obj[2] = intl2.string(tmp(1236).t["6cfuDj"]);
-    let children = tmp6(tmp(4739).Text, obj);
+    let children = tmp6(tmp(4376).Text, obj);
   } else if (tmp5) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t.BEjTij);
-    children = tmp6(tmp(4739).Text, obj);
+    children = tmp6(tmp(4376).Text, obj);
   } else {
     children = !result;
     if (!result) {

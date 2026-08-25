@@ -1,10 +1,10 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 12096
+// Function ID: 12097
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 676, 3, 4493, 7696, 7413, 698, 4662, 1236, 6747, 2]
+// Dependencies: [5, 19, 676, 3, 7011, 7517, 7010, 698, 4745, 1236, 5258, 2]
 // Exports: default
 
-// Module 11756 (useGuildBoostPurchaseHandler)
+// Module 12096 (useGuildBoostPurchaseHandler)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
@@ -17,7 +17,7 @@ let result = require("set").fileFinishedImporting("modules/guild_boosting/native
 
 export default function useGuildBoostPurchaseHandler(arg0) {
   let _require = arg0;
-  let obj = _require(4493);
+  let obj = _require(7011);
   _require = undefined;
   const result = obj.isMobileWebRedirectCheckoutEnabled();
   _require = callback((arg0, arg1) => {
@@ -37,7 +37,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ export default function useGuildBoostPurchaseHandler(arg0) {
             obj = callback(closure_2_2[10]);
             obj.closeApplyBoostModal();
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c4 = tmp;

@@ -1,9 +1,9 @@
-// Module ID: 5618
-// Function ID: 5619
+// Module ID: 6302
+// Function ID: 6303
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5618 (metadata)
+// Module 6302 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ConnectionCablesSpotIllustration-2x.png.js");

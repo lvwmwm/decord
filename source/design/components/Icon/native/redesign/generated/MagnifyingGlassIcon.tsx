@@ -1,14 +1,14 @@
-// Module ID: 7389
-// Function ID: 7390
+// Module ID: 6115
+// Function ID: 6116
 // Name: MagnifyingGlassIcon
-// Dependencies: [19, 21, 712, 4099, 7390, 2]
+// Dependencies: [19, 21, 712, 4100, 6116, 2]
 // Exports: MagnifyingGlassIcon
 
-// Module 7389 (MagnifyingGlassIcon)
+// Module 6115 (MagnifyingGlassIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 7390 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 6116 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

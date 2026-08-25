@@ -1,9 +1,9 @@
-// Module ID: 5422
-// Function ID: 5423
+// Module ID: 7275
+// Function ID: 7276
 // Name: ACCEPT_INVITE_MODAL_KEY
 // Dependencies: [2]
 
-// Module 5422 (ACCEPT_INVITE_MODAL_KEY)
+// Module 7275 (ACCEPT_INVITE_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/accept_invite/native/AcceptInviteConstants.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 14864
+// Function ID: 14865
 // Name: onImageDescriptionSettingValueChange
-// Dependencies: [1304, 8238, 4069, 14835, 10708, 1236, 2]
+// Dependencies: [1304, 8235, 4070, 14865, 10516, 1236, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 14834 (onImageDescriptionSettingValueChange)
+// Module 14864 (onImageDescriptionSettingValueChange)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import UserSettingsText from "UserSettingsText" /* 14835 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import UserSettingsText from "UserSettingsText" /* 14865 */;
 import closure_2 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import createToggle from "createToggle" /* 10708 */;
+import createToggle from "createToggle" /* 10516 */;
 
 require = arg1;
 function onImageDescriptionSettingValueChange(viewImageDescriptions) {

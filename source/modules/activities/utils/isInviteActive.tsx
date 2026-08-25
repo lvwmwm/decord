@@ -1,10 +1,10 @@
-// Module ID: 10956
-// Function ID: 10957
+// Module ID: 11313
+// Function ID: 11314
 // Name: result
 // Dependencies: [687, 11, 2]
 // Exports: default
 
-// Module 10956 (result)
+// Module 11313 (result)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import setDefault from "set" /* 687 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 15094
-// Function ID: 15095
+// Module ID: 15124
+// Function ID: 15125
 // Name: SettingsEmoji
-// Dependencies: [5, 19, 8238, 676, 1925, 21, 4668, 712, 4069, 8232, 1435, 6968, 9335, 698, 7197, 9348, 10708, 1236, 2]
+// Dependencies: [5, 19, 8235, 676, 1925, 21, 4380, 712, 4070, 8228, 1435, 5466, 8784, 698, 5854, 8797, 10516, 1236, 2]
 
-// Module 15094 (SettingsEmoji)
+// Module 15124 (SettingsEmoji)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import EmojiDefault from "Emoji" /* 6968 */;
-import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji" /* 8232 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import EmojiDefault from "Emoji" /* 5466 */;
+import getFallbackDoubleTapDisambiguatedEmoji from "getFallbackDoubleTapDisambiguatedEmoji" /* 8228 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { EmojiIntention } from "set" /* 1925 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import createToggle from "createToggle" /* 10708 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import createToggle from "createToggle" /* 10516 */;
 
 require = arg1;
 function SettingsEmoji(emoji) {
@@ -73,7 +73,7 @@ const pressable = createToggle.createPressable({
     }
   },
   onPress: function onPressSetting() {
-    let obj = _require(9335);
+    let obj = _require(8784);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     _require = callback((arg0) => {
       closure_0 = arg0;
@@ -91,7 +91,7 @@ const pressable = createToggle.createPressable({
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -134,7 +134,7 @@ const pressable = createToggle.createPressable({
               obj5[0] = callback;
               const result = obj.showDoubleTapEmojiUpdatedToast(obj5);
               constants = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp12) {
             constants = tmp;
@@ -212,7 +212,7 @@ let obj1 = {
     }
   },
   onPress: function onPressSetting() {
-    let obj = _require(9335);
+    let obj = _require(8784);
     obj = { pickerIntention: EmojiIntention.DEFAULT_REACT_EMOJI, onPressEmoji: null, startExpanded: true };
     _require = callback((arg0) => {
       closure_0 = arg0;
@@ -230,7 +230,7 @@ let obj1 = {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -273,7 +273,7 @@ let obj1 = {
               obj5[0] = callback;
               const result = obj.showDoubleTapEmojiUpdatedToast(obj5);
               constants = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp12) {
             constants = tmp;

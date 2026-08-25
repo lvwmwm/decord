@@ -1,14 +1,14 @@
-// Module ID: 7915
-// Function ID: 7916
+// Module ID: 7736
+// Function ID: 7737
 // Name: _fetchUserOffer
-// Dependencies: [5, 7648, 7463, 1924, 676, 500, 709, 698, 530, 7650, 1208, 4200, 1377, 1374, 2]
+// Dependencies: [5, 7469, 7061, 1924, 676, 500, 709, 698, 530, 7471, 1208, 4201, 1377, 1374, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer
 
-// Module 7915 (_fetchUserOffer)
+// Module 7736 (_fetchUserOffer)
 import sendRequest from "sendRequest" /* 530 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createFromServer" /* 7648 */;
-import closure_5 from "createFromServer" /* 7463 */;
+import closure_4 from "createFromServer" /* 7469 */;
+import closure_5 from "createFromServer" /* 7061 */;
 import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_6 } from "GuildFeatures" /* 1924 */;
 import ME from "ME" /* 676 */;
 
@@ -42,7 +42,7 @@ function _fetchUserOffer() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -68,7 +68,7 @@ function _fetchUserOffer() {
                   flag = true;
                 }
                 if (obj1 === undefined) {
-                  obj1 = { offerId: "Array", paymentGatewayOverride: "ct" };
+                  obj1 = { offerId: "isArray", paymentGatewayOverride: "accessibilityRole" };
                 }
                 throwTypeErrorResult = retries;
                 throwTypeErrorResult = closure_4;

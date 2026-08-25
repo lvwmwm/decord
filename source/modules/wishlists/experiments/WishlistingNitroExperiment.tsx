@@ -1,10 +1,10 @@
-// Module ID: 12377
-// Function ID: 12378
+// Module ID: 12695
+// Function ID: 12696
 // Name: useIsNitroWishlistingEnabled
 // Dependencies: [1472, 2]
 // Exports: getAreNitroWishlistRoadblocksEnabled, getIsNitroWishlistingEnabled, useAreNitroWishlistRoadblocksEnabled, useIsNitroWishlistingEnabled
 
-// Module 12377 (useIsNitroWishlistingEnabled)
+// Module 12695 (useIsNitroWishlistingEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

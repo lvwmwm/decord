@@ -1,10 +1,10 @@
-// Module ID: 9342
-// Function ID: 9343
+// Module ID: 8791
+// Function ID: 8792
 // Name: fetchTopEmojis
-// Dependencies: [676, 4219, 709, 530, 2]
+// Dependencies: [676, 4220, 709, 530, 2]
 // Exports: fetchTopEmojis, updateNewlyAddedEmojiSeenAcknowledged, updateNewlyAddedLastSeen
 
-// Module 9342 (fetchTopEmojis)
+// Module 8791 (fetchTopEmojis)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
@@ -14,7 +14,7 @@ const result = set.fileFinishedImporting("modules/emojis/top_emojis/TopEmojisAct
 
 export const fetchTopEmojis = function fetchTopEmojis(guildId) {
   const _require = guildId;
-  let obj = _require(4219);
+  let obj = _require(4220);
   if (!obj.isPseudoGuildId(guildId)) {
     obj = { type: "TOP_EMOJIS_FETCH", guildId: null };
     obj[1] = guildId;

@@ -1,10 +1,10 @@
-// Module ID: 16109
-// Function ID: 16110
+// Module ID: 16141
+// Function ID: 16142
 // Name: trackYouTabAvatarPress
 // Dependencies: [676, 698, 2]
 // Exports: trackYouTabAvatarPress, trackYouTabCustomStatusPress, trackYouTabEditProfilePress, trackYouTabNitroIconPress, trackYouTabSettingsIconPress
 
-// Module 16109 (trackYouTabAvatarPress)
+// Module 16141 (trackYouTabAvatarPress)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

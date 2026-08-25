@@ -1,10 +1,10 @@
-// Module ID: 15249
-// Function ID: 15250
+// Module ID: 15279
+// Function ID: 15280
 // Name: useFrameMonitor
-// Dependencies: [32, 19, 15247, 2]
+// Dependencies: [32, 19, 15277, 2]
 // Exports: default
 
-// Module 15249 (useFrameMonitor)
+// Module 15279 (useFrameMonitor)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 
@@ -26,7 +26,7 @@ export default function useFrameMonitor(stateFromStores) {
     if (current != null) {
       current.stop();
     }
-    ref.current = stateFromStores(15247).startFrameMonitor();
+    ref.current = stateFromStores(15277).startFrameMonitor();
     dependencyMap(true);
   }, []);
   const stop = React.useCallback(() => {

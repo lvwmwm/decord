@@ -1,14 +1,14 @@
-// Module ID: 11521
-// Function ID: 11522
+// Module ID: 11872
+// Function ID: 11873
 // Name: DirectoryEntryTypes
-// Dependencies: [676, 1236, 4029, 506, 2]
+// Dependencies: [676, 1236, 4030, 506, 2]
 // Exports: getHubCategories, getHubGuildTemplatesMap
 
-// Module 11521 (DirectoryEntryTypes)
+// Module 11872 (DirectoryEntryTypes)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 506 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import applyOverwritesAll from "applyOverwrites" /* 4029 */;
+import applyOverwritesAll from "applyOverwrites" /* 4030 */;
 import ME from "ME" /* 676 */;
 
 ({ ChannelTypes: c3, Permissions: c4 } = ME);

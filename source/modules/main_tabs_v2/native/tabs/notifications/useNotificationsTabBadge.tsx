@@ -1,12 +1,12 @@
-// Module ID: 15719
-// Function ID: 15720
+// Module ID: 15751
+// Function ID: 15752
 // Name: useNotificationsTabBadge
-// Dependencies: [19, 4806, 589, 4807, 2]
+// Dependencies: [19, 7245, 589, 7246, 2]
 // Exports: default
 
-// Module 15719 (useNotificationsTabBadge)
+// Module 15751 (useNotificationsTabBadge)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "_validate" /* 4806 */;
+import closure_3 from "_validate" /* 7245 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/notifications/useNotificationsTabBadge.tsx");

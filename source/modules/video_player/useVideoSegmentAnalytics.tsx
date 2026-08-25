@@ -1,10 +1,10 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14585
+// Function ID: 14586
 // Name: useVideoSegmentAnalytics
-// Dependencies: [32, 19, 7494, 2]
+// Dependencies: [32, 19, 7308, 2]
 // Exports: default
 
-// Module 14555 (useVideoSegmentAnalytics)
+// Module 14585 (useVideoSegmentAnalytics)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import noop from "noop" /* 19 */;

@@ -1,15 +1,15 @@
-// Module ID: 14160
-// Function ID: 14161
+// Module ID: 14190
+// Function ID: 14191
 // Name: useAuthSessions
-// Dependencies: [19, 1218, 14161, 589, 1236, 3978, 2]
+// Dependencies: [19, 1218, 14191, 589, 1236, 3979, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 14160 (useAuthSessions)
+// Module 14190 (useAuthSessions)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import tDefault from "t" /* 3978 */;
+import hooksDefault from "hooks" /* 3979 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "handleInit" /* 14161 */;
+import closure_5 from "handleInit" /* 14191 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/auth_sessions/AuthSessionsUtils.tsx");
@@ -43,8 +43,8 @@ export const formatDate = function formatDate(arg0) {
     const intl = getSystemLocale.intl;
     let stringResult = intl.string(getSystemLocale.t.TXCmfL);
   } else {
-    stringResult = tDefault(arg0).fromNow();
-    const obj = tDefault(arg0);
+    stringResult = hooksDefault(arg0).fromNow();
+    const obj = hooksDefault(arg0);
   }
   return stringResult;
 };

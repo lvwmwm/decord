@@ -1,12 +1,12 @@
-// Module ID: 4561
-// Function ID: 4562
+// Module ID: 4466
+// Function ID: 4467
 // Name: DEFAULT_FRECENCY
-// Dependencies: [12, 3978, 2]
+// Dependencies: [12, 3979, 2]
 
-// Module 4561 (DEFAULT_FRECENCY)
+// Module 4466 (DEFAULT_FRECENCY)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
-import tDefault from "t" /* 3978 */;
+import hooksDefault from "hooks" /* 3979 */;
 
 function DEFAULT_FRECENCY(arg0, arg1, numOfRecentUses) {
   return Math.ceil(arg0 * (arg1 / numOfRecentUses.numOfRecentUses));
@@ -192,7 +192,7 @@ prototype["getFrecency"] = function getFrecency(id) {
 prototype["compute"] = function compute() {
   let self = this;
   self = this;
-  dependencyMap = tDefault();
+  dependencyMap = hooksDefault();
   let maxByResult = null;
   if (this.calculateMaxTotalUse) {
     let tmpResult = tmp(12);

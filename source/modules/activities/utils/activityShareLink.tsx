@@ -1,15 +1,15 @@
-// Module ID: 13920
-// Function ID: 13921
+// Module ID: 13955
+// Function ID: 13956
 // Name: items
-// Dependencies: [4362, 1487, 1236, 2]
+// Dependencies: [4363, 1487, 1236, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 13920 (items)
+// Module 13955 (items)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import trimTrailingPunctuation from "trimTrailingPunctuation" /* 4362 */;
+import getPathsFromURL from "getPathsFromURL" /* 4363 */;
 
-const items = [trimTrailingPunctuation.parseQuestsEmbedCode];
+const items = [getPathsFromURL.parseQuestsEmbedCode];
 const result = set.fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");
 
 export const resolveActivityShareMessageContent = function resolveActivityShareMessageContent(c3, closure_14, closure_12) {

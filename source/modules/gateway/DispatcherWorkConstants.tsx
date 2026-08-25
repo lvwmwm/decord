@@ -1,9 +1,9 @@
-// Module ID: 13252
-// Function ID: 13253
+// Module ID: 13114
+// Function ID: 13115
 // Name: DISPATCHER_STANDARD_TIMEOUT_MS
 // Dependencies: [2]
 
-// Module 13252 (DISPATCHER_STANDARD_TIMEOUT_MS)
+// Module 13114 (DISPATCHER_STANDARD_TIMEOUT_MS)
 import set from "set" /* 2 */;
 
 let c0 = 2.0833333333333335;

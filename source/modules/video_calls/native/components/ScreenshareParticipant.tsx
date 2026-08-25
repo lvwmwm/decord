@@ -1,15 +1,15 @@
-// Module ID: 12638
-// Function ID: 12639
+// Module ID: 10994
+// Function ID: 10995
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 4668, 712, 12488, 6408, 12489, 4739, 1236, 4750, 10970, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 10766, 5533, 10767, 4376, 1236, 4815, 10912, 2]
 // Exports: default
 
-// Module 12638 (ScreenshareParticipant)
+// Module 10994 (ScreenshareParticipant)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);

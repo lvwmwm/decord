@@ -1,10 +1,10 @@
-// Module ID: 8494
-// Function ID: 8495
+// Module ID: 8501
+// Function ID: 8502
 // Name: useNSFWAllowed
 // Dependencies: [1922, 589, 2]
 // Exports: useNSFWAllowed
 
-// Module 8494 (useNSFWAllowed)
+// Module 8501 (useNSFWAllowed)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 

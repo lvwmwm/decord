@@ -1,28 +1,28 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15273
+// Function ID: 15274
 // Name: getSelectedGuildChannel
-// Dependencies: [19, 17, 6806, 1395, 4034, 1391, 1910, 1980, 1922, 676, 21, 4668, 712, 4097, 8117, 10068, 10070, 4969, 11, 1629, 1297, 6317, 6322, 14025, 6328, 2]
+// Dependencies: [19, 17, 5325, 1395, 4035, 1391, 1910, 1981, 1922, 676, 21, 4380, 712, 4098, 8113, 9924, 9926, 5093, 11, 1629, 1297, 5873, 5480, 14060, 5487, 2]
 // Exports: default
 
-// Module 15243 (getSelectedGuildChannel)
+// Module 15273 (getSelectedGuildChannel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import dispatcherDefault from "dispatcher" /* 4097 */;
-import StickerFormat from "StickerFormat" /* 4969 */;
-import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10068 */;
+import dispatcherDefault from "dispatcher" /* 4098 */;
+import StickerFormat from "StickerFormat" /* 5093 */;
+import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 9924 */;
 import closure_3 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "loadSavedGuildStickers" /* 6806 */;
+import closure_5 from "loadSavedGuildStickers" /* 5325 */;
 import { createChannelRecord } from "createChannelRecord" /* 1395 */;
-import closure_7 from "hasFlag" /* 4034 */;
+import closure_7 from "hasFlag" /* 4035 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "handleConnectionOpen" /* 1980 */;
+import closure_10 from "handleConnectionOpen" /* 1981 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function getSelectedGuildChannel() {
@@ -692,7 +692,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
       }, label.label);
     })
   };
-  items1[2] = callback(_require(6317).TableRowGroup, obj);
+  items1[2] = callback(_require(5873).TableRowGroup, obj);
   obj[2] = items1;
   return callback2(ScrollView, obj);
 };

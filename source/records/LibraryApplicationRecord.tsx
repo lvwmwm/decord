@@ -1,14 +1,14 @@
-// Module ID: 4518
-// Function ID: 4519
+// Module ID: 4420
+// Function ID: 4421
 // Name: createFromServer
-// Dependencies: [1931, 4482, 4519, 676, 3978, 1403, 2]
+// Dependencies: [1931, 4421, 4422, 676, 3979, 1403, 2]
 
-// Module 4518 (createFromServer)
+// Module 4420 (createFromServer)
 import hasFlagAll from "hasFlag" /* 1403 */;
 import toJSDefault from "toJS" /* 1931 */;
-import tDefault from "t" /* 3978 */;
-import closure_3 from "addApplication" /* 4482 */;
-import closure_4 from "createFromServer" /* 4519 */;
+import hooksDefault from "hooks" /* 3979 */;
+import closure_3 from "addApplication" /* 4421 */;
+import closure_4 from "createFromServer" /* 4422 */;
 import ME from "ME" /* 676 */;
 
 toJSDefault;
@@ -37,7 +37,7 @@ LibraryApplicationRecord["createFromServer"] = function createFromServer(id) {
   obj = { id: id.sku.id, type: id.sku.type, premium: id.sku.premium, preorderReleaseAt: null, preorderApproximateReleaseDate: null };
   let entitlementsResult = null;
   if (null != id.sku.preorder_release_at) {
-    entitlements = tDefault;
+    entitlements = hooksDefault;
     entitlementsResult = entitlements(id.sku.preorder_release_at);
   }
   obj[3] = entitlementsResult;

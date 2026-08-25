@@ -1,9 +1,9 @@
-// Module ID: 7384
-// Function ID: 7385
+// Module ID: 6110
+// Function ID: 6111
 // Name: InputHeights
 // Dependencies: [2]
 
-// Module 7384 (InputHeights)
+// Module 6110 (InputHeights)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("design/components/Input/native/InputTypes.native.tsx");

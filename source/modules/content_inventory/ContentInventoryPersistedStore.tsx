@@ -1,9 +1,9 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11505
+// Function ID: 11506
 // Name: updateImpressionCaches
 // Dependencies: [32, 687, 589, 709, 2]
 
-// Module 11162 (updateImpressionCaches)
+// Module 11505 (updateImpressionCaches)
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

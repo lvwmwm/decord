@@ -1,10 +1,10 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 12924
+// Function ID: 12925
 // Name: useDebounce
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 12937 (useDebounce)
+// Module 12924 (useDebounce)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "noop" /* 19 */;
 

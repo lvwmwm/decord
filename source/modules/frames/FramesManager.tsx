@@ -1,14 +1,14 @@
-// Module ID: 8804
-// Function ID: 8805
+// Module ID: 11066
+// Function ID: 11067
 // Name: leaveFrame
-// Dependencies: [8745, 676, 4281, 5043, 8753, 8760, 698, 709, 2]
+// Dependencies: [10677, 676, 4282, 5367, 10689, 10696, 698, 709, 2]
 
-// Module 8804 (leaveFrame)
+// Module 11066 (leaveFrame)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 5043 */;
-import closure_3 from "map" /* 8745 */;
+import initializeDefault from "initialize" /* 5367 */;
+import closure_3 from "map" /* 10677 */;
 import ME from "ME" /* 676 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4281 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4282 */;
 
 let require = arg1;
 ({ AnalyticEvents: c4, RPCCloseCodes: c5 } = ME);
@@ -22,13 +22,13 @@ class FramesManager extends tmp3 {
             applyArgumentsResult.handleRPCDisconnect(arg0);
           },
       FRAME_LAUNCH(applicationId) {
-            const result = applyArgumentsResult(8753).trackFrameSessionStart(applicationId.applicationId);
+            const result = applyArgumentsResult(10689).trackFrameSessionStart(applicationId.applicationId);
           },
       FRAME_LAUNCH_FAIL(applicationId) {
-            const result = applyArgumentsResult(8760).discardPendingFrameLaunch(applicationId.applicationId);
+            const result = applyArgumentsResult(10696).discardPendingFrameLaunch(applicationId.applicationId);
           },
       FRAME_STOP(applicationId) {
-            applyArgumentsResult(8753).trackFrameSessionEnd(applicationId.applicationId);
+            applyArgumentsResult(10689).trackFrameSessionEnd(applicationId.applicationId);
           }
     };
     applyArgumentsResult.handleRPCDisconnect = function handleRPCDisconnect(arg0) {

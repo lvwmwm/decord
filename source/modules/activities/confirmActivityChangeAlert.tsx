@@ -1,14 +1,14 @@
-// Module ID: 8776
-// Function ID: 8777
+// Module ID: 10717
+// Function ID: 10718
 // Name: confirmActivityChangeModal
-// Dependencies: [4033, 1922, 4989, 4832, 1236, 1903, 2]
+// Dependencies: [4034, 1922, 4574, 4744, 1236, 1903, 2]
 // Exports: default
 
-// Module 8776 (confirmActivityChangeModal)
+// Module 10717 (confirmActivityChangeModal)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import setDefault from "set" /* 4832 */;
-import computeChannelName from "computeChannelName" /* 4989 */;
-import closure_3 from "markAllUserIdListsStale" /* 4033 */;
+import computeChannelName from "computeChannelName" /* 4574 */;
+import setDefault from "set" /* 4744 */;
+import closure_3 from "markAllUserIdListsStale" /* 4034 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

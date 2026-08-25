@@ -1,13 +1,13 @@
-// Module ID: 7180
-// Function ID: 7181
+// Module ID: 5837
+// Function ID: 5838
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 7181, 676, 7182, 7184, 4093, 698, 7186, 2]
+// Dependencies: [5, 19, 5838, 676, 5839, 5841, 4094, 698, 5843, 2]
 // Exports: default
 
-// Module 7180 (useStartAuthorize)
+// Module 5837 (useStartAuthorize)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { AuthorizeFlow } from "AuthorizeFlow" /* 7181 */;
+import { AuthorizeFlow } from "AuthorizeFlow" /* 5838 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
@@ -20,7 +20,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   }
   let _require;
   const debug = obj.debug;
-  const authorizationApp = _require(7182).useAuthorizationApp(getOfficialApplicationId);
+  const authorizationApp = _require(5839).useAuthorizationApp(getOfficialApplicationId);
   _require = authorizationApp;
   let prop;
   if (authorizationApp != null) {
@@ -30,7 +30,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
   if (null != prop) {
     WEB = AuthorizeFlow.WEB;
   }
-  let obj2 = _require(7182);
+  let obj2 = _require(5839);
   const tmp = undefined !== debug && debug;
   const tmp2 = _require;
   let parentId;
@@ -44,7 +44,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
     }
     parentId = id;
   }
-  const authorizedAppsToken = _require(7184).useAuthorizedAppsToken(parentId);
+  const authorizedAppsToken = _require(5841).useAuthorizedAppsToken(parentId);
   ({ token, fetched } = authorizedAppsToken);
   _require = undefined;
   _require = callback((arg0) => {
@@ -64,7 +64,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

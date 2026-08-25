@@ -1,18 +1,18 @@
-// Module ID: 16226
-// Function ID: 16227
+// Module ID: 16258
+// Function ID: 16259
 // Name: BurstReactionAnimationContainerInner
-// Dependencies: [32, 19, 17, 1388, 21, 4668, 712, 7569, 4347, 4348, 709, 4119, 4671, 10300, 1377, 1297, 7611, 4739, 1236, 4107, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 4380, 712, 7387, 4348, 4349, 709, 4120, 4381, 10151, 1377, 1297, 7429, 4376, 1236, 4108, 2]
 // Exports: default
 
-// Module 16226 (BurstReactionAnimationContainerInner)
+// Module 16258 (BurstReactionAnimationContainerInner)
 import ThemesDefault from "Themes" /* 712 */;
-import ManaContext from "ManaContext" /* 4107 */;
+import ManaContext from "ManaContext" /* 4108 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function BurstReactionAnimationContainerInner() {
@@ -41,13 +41,13 @@ function BurstReactionAnimationContainerInner() {
       first(709).unsubscribe("BURST_REACTION_EFFECT_SEND", handleEffectReceived);
     };
   }, []);
-  let obj = _require(4119);
+  let obj = _require(4120);
   let fn = function y() {
     if (null == first) {
       let obj = { opacity: 0 };
     } else {
       obj = { opacity: null };
-      const tmp11 = callback(4671);
+      const tmp11 = callback(4381);
       const withTiming = tmp11.withTiming;
       obj1 = { duration: 300 };
       if (first1) {
@@ -60,7 +60,7 @@ function BurstReactionAnimationContainerInner() {
           }
         };
         obj = { runOnJS: null, handleComponentFinish: null };
-        obj[0] = callback(4119).runOnJS;
+        obj[0] = callback(4120).runOnJS;
         obj[1] = handleComponentFinish;
         fn.__closure = obj;
         fn.__workletHash = 9326347209552;
@@ -70,7 +70,7 @@ function BurstReactionAnimationContainerInner() {
     }
     return obj;
   };
-  obj = { animationData: first, showAnimation: first1, withTiming: _require(4671).withTiming, runOnJS: _require(4119).runOnJS, handleComponentFinish };
+  obj = { animationData: first, showAnimation: first1, withTiming: _require(4381).withTiming, runOnJS: _require(4120).runOnJS, handleComponentFinish };
   fn.__closure = obj;
   fn.__workletHash = 12044515783370;
   fn.__initData = closure_12;
@@ -86,7 +86,7 @@ function BurstReactionAnimationContainerInner() {
       obj = { style: items, children: null };
       items = [markAsDismissed.fill, closure_7];
       obj = {
-        activeOpacity: callback(7569).BACKDROP_OPACITY,
+        activeOpacity: callback(7387).BACKDROP_OPACITY,
         onPress() {
           closure_1_4(false);
           closure_1_5.current = false;
@@ -107,7 +107,7 @@ function BurstReactionAnimationContainerInner() {
             closure_5.current = false;
           }
         };
-        tmpResult = tmp(first(7611), obj3);
+        tmpResult = tmp(first(7429), obj3);
       }
       obj2[1] = tmpResult;
       items1[1] = closure_1_8(handleComponentFinish, obj2);
@@ -118,7 +118,7 @@ function BurstReactionAnimationContainerInner() {
         obj5[0] = tmp4.dismissTextContainer;
         const intl = tmp2(1236).intl;
         obj5[2] = intl.string(tmp2(1236).t.QpPMih);
-        const items2 = [tmp(tmp2(4739).Text, obj5), ];
+        const items2 = [tmp(tmp2(4376).Text, obj5), ];
         const obj6 = { style: null };
         obj6[0] = tmp4.dismissTextBackground;
         items2[1] = tmp(tmp8, obj6);
@@ -128,11 +128,11 @@ function BurstReactionAnimationContainerInner() {
       items1[2] = tmp6Result;
       obj[3] = items1;
       obj[1] = closure_1_10(closure_5, obj);
-      obj[1] = closure_1_8(first(4119).View, obj);
+      obj[1] = closure_1_8(first(4120).View, obj);
       return closure_1_8(callback(1297).OverlayView, obj);
     };
-    tmp8 = callback(first(10300), obj);
-    let tmp11 = first(10300);
+    tmp8 = callback(first(10151), obj);
+    let tmp11 = first(10151);
   }
   return tmp8;
 }

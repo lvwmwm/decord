@@ -1,10 +1,10 @@
-// Module ID: 13313
-// Function ID: 13314
+// Module ID: 13175
+// Function ID: 13176
 // Name: useIsDontBadgeMutedVcsEnabled
 // Dependencies: [1368, 2]
 // Exports: getIsDontBadgeMutedVcsEnabled, useIsDontBadgeMutedVcsEnabled
 
-// Module 13313 (useIsDontBadgeMutedVcsEnabled)
+// Module 13175 (useIsDontBadgeMutedVcsEnabled)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 let closure_0 = getUnitIdDefault({ kind: "user", name: "2026-06-dont-badge-muted-vcs", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

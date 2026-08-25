@@ -1,13 +1,13 @@
-// Module ID: 15472
-// Function ID: 15473
+// Module ID: 15504
+// Function ID: 15505
 // Name: getFirstChannelOfType
-// Dependencies: [1395, 676, 11637, 5284, 2]
+// Dependencies: [1395, 676, 11980, 5361, 2]
 // Exports: areTypesInSameSection, getDnDUpdates, getDropData
 
-// Module 15472 (getFirstChannelOfType)
+// Module 15504 (getFirstChannelOfType)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import getFlattenedChannelListDefault from "getFlattenedChannelList" /* 5284 */;
+import getFlattenedChannelListDefault from "getFlattenedChannelList" /* 5361 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 
 function getFirstChannelOfType(arg0, arg1, arg2, arr) {
@@ -554,7 +554,7 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
           tmp4 = null != substr[tmp2];
         }
         if (tmp4) {
-          let obj = localChannel2(11637);
+          let obj = localChannel2(11980);
           let moveItemFromToResult = obj.moveItemFromTo(substr, tmp, tmp2);
         }
         obj = { oldOrdering: null, newOrdering: null, idGetter: null, existingPositionGetter: null };
@@ -566,7 +566,7 @@ export const getDnDUpdates = function getDnDUpdates(localChannel, localChannel2,
         obj[3] = function existingPositionGetter(channel) {
           return channel.channel.position;
         };
-        closure_4 = closure_4.concat(localChannel2(11637).calculatePositionDeltas(obj));
+        closure_4 = closure_4.concat(localChannel2(11980).calculatePositionDeltas(obj));
         return moveItemFromToResult;
       }
     }

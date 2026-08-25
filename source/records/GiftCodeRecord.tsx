@@ -1,14 +1,14 @@
-// Module ID: 9663
-// Function ID: 9664
+// Module ID: 9759
+// Function ID: 9760
 // Name: frozen
-// Dependencies: [1931, 7464, 7667, 4043, 1924, 3978, 1403, 2]
+// Dependencies: [1931, 7062, 7488, 4044, 1924, 3979, 1403, 2]
 
-// Module 9663 (frozen)
+// Module 9759 (frozen)
 import toJSDefault from "toJS" /* 1931 */;
-import tDefault from "t" /* 3978 */;
-import closure_3 from "createFromServer" /* 7464 */;
-import closure_4 from "createFromServer" /* 7667 */;
-import closure_5 from "createFromServer" /* 4043 */;
+import hooksDefault from "hooks" /* 3979 */;
+import closure_3 from "createFromServer" /* 7062 */;
+import closure_4 from "createFromServer" /* 7488 */;
+import closure_5 from "createFromServer" /* 4044 */;
 import { PremiumSubscriptionSKUToPremiumType as closure_6 } from "GuildFeatures" /* 1924 */;
 
 const require = arg1;
@@ -36,7 +36,7 @@ GiftCodeRecord["createFromServer"] = function createFromServer(user) {
   }
   let tmp4 = null;
   if (null != user.expires_at) {
-    tmp4 = tDefault(user.expires_at);
+    tmp4 = hooksDefault(user.expires_at);
   }
   const redeemed = user.redeemed;
   if (null != user.subscription_plan) {
@@ -95,8 +95,8 @@ prototype["isExpired"] = function isExpired() {
   const expiresAt = this.expiresAt;
   let isAfterResult = null != expiresAt;
   if (isAfterResult) {
-    isAfterResult = tDefault().isAfter(expiresAt);
-    const obj = tDefault();
+    isAfterResult = hooksDefault().isAfter(expiresAt);
+    const obj = hooksDefault();
   }
   return isAfterResult;
 };

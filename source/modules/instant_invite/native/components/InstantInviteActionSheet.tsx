@@ -1,23 +1,23 @@
-// Module ID: 8964
-// Function ID: 8965
+// Module ID: 9221
+// Function ID: 9222
 // Name: Loading
-// Dependencies: [32, 19, 17, 1396, 8956, 1910, 4024, 4375, 676, 21, 4668, 712, 8965, 1629, 7177, 7197, 7183, 589, 4364, 7544, 8955, 4346, 8966, 11554, 1306, 12412, 6988, 6987, 1236, 1297, 12414, 12418, 12420, 7375, 11550, 11941, 12451, 2]
+// Dependencies: [32, 19, 17, 1396, 9213, 1910, 4025, 7340, 676, 21, 4380, 712, 9222, 1629, 5834, 5854, 5840, 589, 4365, 7362, 9212, 4347, 8930, 9223, 1306, 9225, 5503, 5502, 1236, 1297, 9230, 9234, 9236, 6101, 9228, 9273, 9274, 2]
 // Exports: default
 
-// Module 8964 (Loading)
+// Module 9221 (Loading)
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef8965 from "module_8965" /* 8965 */;
+import _modDef9222 from "module_9222" /* 9222 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import closure_8 from "updateWithLatestInvite" /* 8956 */;
+import closure_8 from "updateWithLatestInvite" /* 9213 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4024 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 4375 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4025 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7340 */;
 import { Permissions } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function Loading() {
@@ -31,7 +31,7 @@ function Loading() {
     let tmp4 = dependencyMap;
     let obj = { row: null };
     obj[0] = num;
-    let arr = items.push(callback2(_modDef8965, obj, num));
+    let arr = items.push(callback2(_modDef9222, obj, num));
     num = num + 1;
   } while (num < 10);
   obj = { children: null };

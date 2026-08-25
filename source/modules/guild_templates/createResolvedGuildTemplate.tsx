@@ -1,12 +1,12 @@
-// Module ID: 7326
-// Function ID: 7327
+// Module ID: 6049
+// Function ID: 6050
 // Name: createResolvedGuildTemplate
-// Dependencies: [7327, 2]
+// Dependencies: [6050, 2]
 // Exports: default
 
-// Module 7326 (createResolvedGuildTemplate)
+// Module 6049 (createResolvedGuildTemplate)
 import set from "set" /* 2 */;
-import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 7327 */;
+import GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6050 */;
 
 const GuildTemplateStates = GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD.GuildTemplateStates;
 const result = set.fileFinishedImporting("modules/guild_templates/createResolvedGuildTemplate.tsx");

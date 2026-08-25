@@ -1,15 +1,15 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15148
+// Function ID: 15149
 // Name: onNotifyFriendsOnProfileUpdateSettingsChanged
-// Dependencies: [4036, 676, 4069, 698, 2]
+// Dependencies: [4037, 676, 4070, 698, 2]
 // Exports: onNotifyFriendsOnProfileUpdateSettingsChanged
 
-// Module 15118 (onNotifyFriendsOnProfileUpdateSettingsChanged)
+// Module 15148 (onNotifyFriendsOnProfileUpdateSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4036 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4037 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
 
 let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
 const AnalyticEvents = ME.AnalyticEvents;

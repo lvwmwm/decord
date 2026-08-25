@@ -1,14 +1,14 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14553
+// Function ID: 14554
 // Name: WreathIcon
-// Dependencies: [19, 21, 712, 4099, 14524, 2]
+// Dependencies: [19, 21, 712, 4100, 14554, 2]
 // Exports: default
 
-// Module 14523 (WreathIcon)
+// Module 14553 (WreathIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 14524 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 14554 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

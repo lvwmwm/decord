@@ -1,13 +1,13 @@
-// Module ID: 9144
-// Function ID: 9145
+// Module ID: 9437
+// Function ID: 9438
 // Name: useXboxGamePassStoreUrl
-// Dependencies: [676, 1903, 9137, 2]
+// Dependencies: [676, 1903, 9430, 2]
 // Exports: default
 
-// Module 9144 (useXboxGamePassStoreUrl)
+// Module 9437 (useXboxGamePassStoreUrl)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import XBOX_DISCORD_OCID from "XBOX_DISCORD_OCID" /* 9137 */;
+import XBOX_DISCORD_OCID from "XBOX_DISCORD_OCID" /* 9430 */;
 
 const Distributors = ME.Distributors;
 const result = set.fileFinishedImporting("modules/game_profile/hooks/useXboxGamePassStoreUrl.tsx");

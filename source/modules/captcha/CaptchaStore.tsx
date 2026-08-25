@@ -1,13 +1,13 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10535
+// Function ID: 10536
 // Name: useCaptchaStore
-// Dependencies: [32, 644, 705, 5011, 5016, 2]
+// Dependencies: [32, 644, 705, 7208, 7213, 2]
 // Exports: flushCaptchaServeVolume, incrementCaptchaServeVolume, isCaptchaStoreVolumeEmpty
 
-// Module 10518 (useCaptchaStore)
+// Module 10535 (useCaptchaStore)
 import batchUpdates from "batchUpdates" /* 705 */;
-import setDefault from "set" /* 5011 */;
-import set from "set" /* 5016 */;
+import setDefault from "set" /* 7208 */;
+import set from "set" /* 7213 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import keys from "keys" /* 644 */;
 

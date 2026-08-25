@@ -1,21 +1,21 @@
-// Module ID: 7566
-// Function ID: 7567
+// Module ID: 7384
+// Function ID: 7385
 // Name: getAccessibilityLabelFormatter
-// Dependencies: [109, 4777, 5048, 4026, 1235, 676, 1236, 5098, 5047, 698, 7559, 6832, 1403, 589, 11, 3978, 2]
+// Dependencies: [109, 4395, 4589, 4027, 1235, 676, 1236, 7105, 4588, 698, 7377, 5363, 1403, 589, 11, 3979, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 7566 (getAccessibilityLabelFormatter)
+// Module 7384 (getAccessibilityLabelFormatter)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import tDefault from "t" /* 3978 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 5047 */;
-import getTimestampStringDefault from "getTimestampString" /* 5098 */;
-import collectThreadMetadata from "collectThreadMetadata" /* 7559 */;
+import hooksDefault from "hooks" /* 3979 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4588 */;
+import getTimestampStringDefault from "getTimestampString" /* 7105 */;
+import collectThreadMetadata from "collectThreadMetadata" /* 7377 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
-import closure_5 from "generateOldThreadCutoff" /* 4777 */;
-import closure_6 from "updateUserGuildSettingsInternal" /* 5048 */;
-import closure_7 from "storeThread" /* 4026 */;
+import closure_5 from "generateOldThreadCutoff" /* 4395 */;
+import closure_6 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_7 from "storeThread" /* 4027 */;
 import { ThreadMemberFlags } from "AbortCodes" /* 1235 */;
 import ME from "ME" /* 676 */;
 
@@ -53,7 +53,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
   if (null != result) {
     const guildId = closure_1_0.getGuildId();
     const parent_id = closure_1_0.parent_id;
-    let tmpResult = tmp(6832);
+    let tmpResult = tmp(5363);
     const currentChannelSettings = tmpResult.getCurrentChannelSettings(guildId, parent_id);
     let num = closure_7.flags(closure_1_0.id);
     if (num == null) {
@@ -81,7 +81,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     let notificationAnalyticsString = getNotificationAnalyticsString(num);
     const isMutedResult = closure_7.isMuted(closure_1_0.id);
-    tmpResult = tmp(6832);
+    tmpResult = tmp(5363);
     let result1 = tmpResult.muteConfigToTimestamp(obj7.getMuteConfig(closure_1_0.id));
     ({ can_send_message, parent_channel_type } = result);
     obj = {};
@@ -106,8 +106,8 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     obj.new_thread_is_muted = muted;
     obj.old_thread_muted_until = result1;
     if (null != c1.mute_config) {
-      result1 = tmp(6832).muteConfigToTimestamp(c1.mute_config);
-      const tmpResult1 = tmp(6832);
+      result1 = tmp(5363).muteConfigToTimestamp(c1.mute_config);
+      const tmpResult1 = tmp(5363);
     }
     obj.new_thread_muted_until = result1;
     expandEventPropertiesDefault.track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj);
@@ -130,8 +130,8 @@ export const useLastMessageTimestamp = function useLastMessageTimestamp(thread) 
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    valueOfResult = tDefault(createTimestamp).valueOf();
-    const obj3 = tDefault(createTimestamp);
+    valueOfResult = hooksDefault(createTimestamp).valueOf();
+    const obj3 = hooksDefault(createTimestamp);
   }
   if (extractTimestampResult == null) {
     extractTimestampResult = valueOfResult;

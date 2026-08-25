@@ -1,10 +1,10 @@
-// Module ID: 15927
-// Function ID: 15928
+// Module ID: 15959
+// Function ID: 15960
 // Name: isClarificationComplete
 // Dependencies: [2]
 // Exports: formatClarificationAnswers, isClarificationComplete, nextClarificationStep
 
-// Module 15927 (isClarificationComplete)
+// Module 15959 (isClarificationComplete)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("modules/vibegrations/lib/VibegrationsClarification.tsx");

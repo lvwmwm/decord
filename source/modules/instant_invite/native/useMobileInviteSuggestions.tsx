@@ -1,17 +1,17 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 9225
+// Function ID: 9226
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 1991, 1910, 11551, 4550, 4375, 676, 505, 589, 698, 12413, 11550, 2]
+// Dependencies: [32, 19, 1992, 1910, 9226, 4455, 7340, 676, 505, 589, 698, 9227, 9228, 2]
 // Exports: default
 
-// Module 12412 (useMobileInviteSuggestions)
+// Module 9225 (useMobileInviteSuggestions)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "_computeRows" /* 11551 */;
-import closure_8 from "getVoiceStatesForGuild" /* 4550 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 4375 */;
+import closure_7 from "_computeRows" /* 9226 */;
+import closure_8 from "getVoiceStatesForGuild" /* 4455 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7340 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { NOOP_NULL } from "sum" /* 505 */;
 
@@ -60,7 +60,7 @@ export default function useMobileInviteSuggestions(arg0, arg1, arg2, arg3) {
       isGuildVoiceResult = set.isGuildVoice();
     }
     if (isGuildVoiceResult) {
-      let obj = lib(12413);
+      let obj = lib(9227);
       obj = { location: "useMobileInviteSuggestions", guildId: null };
       obj[1] = set.guild_id;
       isGuildVoiceResult = obj.getGuildMembersInMobileVCInvitesExperiment(obj);
@@ -84,8 +84,8 @@ export default function useMobileInviteSuggestions(arg0, arg1, arg2, arg3) {
       obj[1] = isFetchingRows.getGuild(set.guild_id);
       obj[2] = set;
       obj[3] = dependencyMap;
-      const inviteSuggestions = lib(11550).loadInviteSuggestions(obj);
-      const obj3 = lib(11550);
+      const inviteSuggestions = lib(9228).loadInviteSuggestions(obj);
+      const obj3 = lib(9228);
       inviteSuggestions.catch(closure_1_11).finally(() => {
         callback(false);
       });

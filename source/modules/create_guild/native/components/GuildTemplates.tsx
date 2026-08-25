@@ -1,21 +1,21 @@
-// Module ID: 11932
-// Function ID: 11933
+// Module ID: 12266
+// Function ID: 12267
 // Name: GuildTemplatesHeader
-// Dependencies: [32, 19, 17, 11929, 8654, 676, 21, 4668, 6401, 712, 4739, 1236, 1500, 1629, 4750, 11905, 698, 11540, 11933, 6840, 6317, 2]
+// Dependencies: [32, 19, 17, 12263, 8662, 676, 21, 4380, 5373, 712, 4376, 1236, 1500, 1629, 4815, 12239, 698, 11891, 12267, 5434, 5873, 2]
 // Exports: default
 
-// Module 11932 (GuildTemplatesHeader)
+// Module 12266 (GuildTemplatesHeader)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
+import Text from "Text" /* 4376 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import GuildTemplateId from "GuildTemplateId" /* 11929 */;
-import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 8654 */;
+import GuildTemplateId from "GuildTemplateId" /* 12263 */;
+import NUXGuildTemplatesAnalytics from "NUXGuildTemplatesAnalytics" /* 8662 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function GuildTemplatesHeader() {
@@ -60,8 +60,8 @@ function GuildTemplatesJoinFooter(trigger) {
   const intl3 = tmp2(1236).intl;
   obj1[3] = intl3.string(trigger(1236).t["N+Mi/U"]);
   const items2 = [
-    callback3(trigger(4739).Text, obj1),
-    callback3(trigger(4750).Button, {
+    callback3(trigger(4376).Text, obj1),
+    callback3(trigger(4815).Button, {
       variant: "primary",
       grow: true,
       text: stringResult,
@@ -89,13 +89,13 @@ function GuildTemplatesItem(guildTemplate) {
   guildTemplate = guildTemplate.guildTemplate;
   const onGuildTemplatePress = guildTemplate.onGuildTemplatePress;
   const obj = {
-    Icon: guildTemplate(11933).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id],
+    Icon: guildTemplate(12267).GUILD_TEMPLATE_ICON_COMPONENTS[guildTemplate.id],
     message: guildTemplate.label,
     onPress() {
       return onGuildTemplatePress(guildTemplate);
     }
   };
-  return callback3(onGuildTemplatePress(11540), obj);
+  return callback3(onGuildTemplatePress(11891), obj);
 }
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ getGuildTemplatesMap: error, GuildTemplateId: closure_8 } = GuildTemplateId);

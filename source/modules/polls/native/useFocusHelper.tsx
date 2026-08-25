@@ -1,10 +1,10 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11790
+// Function ID: 11791
 // Name: restartState
-// Dependencies: [19, 38, 7165, 2]
+// Dependencies: [19, 38, 5822, 2]
 // Exports: default
 
-// Module 11434 (restartState)
+// Module 11790 (restartState)
 import _modDef38 from "module_38" /* 38 */;
 import closure_2 from "noop" /* 19 */;
 

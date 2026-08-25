@@ -1,9 +1,9 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 8947
+// Function ID: 8948
 // Name: OVERRIDE_DIR
 // Dependencies: [2]
 
-// Module 8985 (OVERRIDE_DIR)
+// Module 8947 (OVERRIDE_DIR)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FrameOverrideConstants.tsx");

@@ -1,26 +1,26 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 12293
+// Function ID: 12294
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 11946, 21, 4668, 712, 8122, 7226, 1430, 4739, 1236, 1629, 4750, 1297, 1500, 5437, 7389, 11959, 4277, 11954, 2]
+// Dependencies: [5, 32, 19, 17, 12275, 21, 4380, 712, 8118, 5885, 1430, 4376, 1236, 1629, 4815, 1297, 1500, 6117, 6115, 12288, 4278, 12283, 2]
 // Exports: default
 
-// Module 11964 (HubEmailConnectionGuildSelectRow)
+// Module 12293 (HubEmailConnectionGuildSelectRow)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import Text from "Text" /* 4739 */;
-import Button2 from "Button" /* 4750 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 7226 */;
-import Form from "Form" /* 8122 */;
+import Text from "Text" /* 4376 */;
+import Button2 from "Button" /* 4815 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
+import Form from "Form" /* 8118 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 11946 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12275 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class HubEmailConnectionGuildSelectRow {
@@ -160,7 +160,7 @@ export default function HubEmailConnectionGuildSelect(onClose) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {

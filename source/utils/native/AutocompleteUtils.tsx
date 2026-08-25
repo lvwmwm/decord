@@ -1,9 +1,9 @@
-// Module ID: 6811
-// Function ID: 6812
+// Module ID: 5334
+// Function ID: 5335
 // Name: map
 // Dependencies: [676, 1236, 2]
 
-// Module 6811 (map)
+// Module 5334 (map)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

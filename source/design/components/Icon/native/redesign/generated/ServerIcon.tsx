@@ -1,14 +1,14 @@
-// Module ID: 9852
-// Function ID: 9853
+// Module ID: 9854
+// Function ID: 9855
 // Name: ServerIcon
-// Dependencies: [19, 21, 712, 4099, 9853, 2]
+// Dependencies: [19, 21, 712, 4100, 9855, 2]
 // Exports: ServerIcon
 
-// Module 9852 (ServerIcon)
+// Module 9854 (ServerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 9853 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 9855 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

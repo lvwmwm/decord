@@ -1,18 +1,18 @@
-// Module ID: 12140
-// Function ID: 12141
+// Module ID: 12473
+// Function ID: 12474
 // Name: ReportAppProfile
-// Dependencies: [19, 4482, 21, 7213, 4739, 1236, 7215, 4346, 8175, 589, 7178, 2]
+// Dependencies: [19, 4421, 21, 5870, 4376, 1236, 5872, 4347, 8171, 589, 5835, 2]
 // Exports: default
 
-// Module 12140 (ReportAppProfile)
+// Module 12473 (ReportAppProfile)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
-import fetchApplication from "fetchApplication" /* 7178 */;
-import ActionSheet from "ActionSheet" /* 7213 */;
-import ActionSheetRowIcon from "ActionSheetRowIcon" /* 7215 */;
-import closure_3 from "addApplication" /* 4482 */;
+import Text from "Text" /* 4376 */;
+import fetchApplication from "fetchApplication" /* 5835 */;
+import ActionSheet from "ActionSheet" /* 5870 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5872 */;
+import closure_3 from "addApplication" /* 4421 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

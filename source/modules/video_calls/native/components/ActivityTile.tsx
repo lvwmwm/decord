@@ -1,22 +1,22 @@
-// Module ID: 12518
-// Function ID: 12519
+// Module ID: 10802
+// Function ID: 10803
 // Name: ActivityTileInner
-// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4485, 21, 1297, 4668, 712, 589, 1370, 7183, 4801, 4223, 11286, 7177, 7197, 9435, 1236, 8766, 8768, 12519, 8765, 5438, 12520, 12533, 4739, 4751, 4107, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4408, 21, 1297, 4380, 712, 589, 1370, 5840, 4573, 4224, 10803, 5834, 5854, 8878, 1236, 10733, 10734, 10805, 10732, 4949, 10806, 10836, 4376, 4816, 4108, 2]
 // Exports: default
 
-// Module 12518 (ActivityTileInner)
+// Module 10802 (ActivityTileInner)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import ManaContext from "ManaContext" /* 4107 */;
+import ManaContext from "ManaContext" /* 4108 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "participantFromServer" /* 1390 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { ActivityLayoutMode } from "items3" /* 4485 */;
+import { ActivityLayoutMode } from "items3" /* 4408 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function ActivityTileInner(participant) {
@@ -52,7 +52,7 @@ function ActivityTileInner(participant) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ function ActivityTileInner(participant) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = v0(8768)(obj1);
+                obj2[0] = v0(10734)(obj1);
                 return obj2;
               } else {
                 dependencyMap = 3;
@@ -92,7 +92,7 @@ function ActivityTileInner(participant) {
             dependencyMap = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = closure_1_0(12519);
+            obj = closure_1_0(10805);
             const result = obj.setOrientationLockState(closure_3);
           }
           dependencyMap = 3;

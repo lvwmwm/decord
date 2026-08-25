@@ -1,9 +1,9 @@
-// Module ID: 6763
-// Function ID: 6764
+// Module ID: 5278
+// Function ID: 5279
 // Name: WebUserSettings
 // Dependencies: [2]
 
-// Module 6763 (WebUserSettings)
+// Module 5278 (WebUserSettings)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/UserSettingsKeys.tsx");

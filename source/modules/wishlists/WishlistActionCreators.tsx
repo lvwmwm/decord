@@ -1,20 +1,20 @@
-// Module ID: 9229
-// Function ID: 9230
+// Module ID: 9510
+// Function ID: 9511
 // Name: extraWishlistParams
-// Dependencies: [5, 5370, 1922, 4044, 7239, 9224, 676, 501, 1370, 709, 7243, 530, 9222, 1208, 4277, 698, 8457, 2]
+// Dependencies: [5, 7227, 1922, 4045, 5955, 9505, 676, 501, 1370, 709, 5959, 530, 9503, 1208, 4278, 698, 8464, 2]
 
-// Module 9229 (extraWishlistParams)
+// Module 9510 (extraWishlistParams)
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import useSKUPrice from "useSKUPrice" /* 7243 */;
+import useSKUPrice from "useSKUPrice" /* 5959 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createUserWidgetFromServer" /* 5370 */;
+import closure_4 from "createUserWidgetFromServer" /* 7227 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "handlePaymentSourceCreateEnd" /* 4044 */;
-import closure_7 from "fromServer" /* 7239 */;
-import closure_8 from "fromServer" /* 9224 */;
-import { getWishlistSkuIds } from "fromServer" /* 9224 */;
+import closure_6 from "handlePaymentSourceCreateEnd" /* 4045 */;
+import closure_7 from "fromServer" /* 5955 */;
+import closure_8 from "fromServer" /* 9505 */;
+import { getWishlistSkuIds } from "fromServer" /* 9505 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -132,7 +132,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -281,7 +281,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

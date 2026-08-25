@@ -1,17 +1,17 @@
-// Module ID: 15643
-// Function ID: 15644
+// Module ID: 15675
+// Function ID: 15676
 // Name: FavoritesGuildCoachmarkGraphic
-// Dependencies: [17, 21, 4668, 712, 5452, 1297, 2]
+// Dependencies: [17, 21, 4380, 712, 6136, 1297, 2]
 // Exports: default
 
-// Module 15643 (FavoritesGuildCoachmarkGraphic)
+// Module 15675 (FavoritesGuildCoachmarkGraphic)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 5452 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6136 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const View = get_ActivityIndicator.View;
 ({ jsx: c3, jsxs: c4 } = jsxProd);

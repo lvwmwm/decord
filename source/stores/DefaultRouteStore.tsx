@@ -1,9 +1,9 @@
-// Module ID: 4205
-// Function ID: 4206
+// Module ID: 4206
+// Function ID: 4207
 // Name: initialize
 // Dependencies: [676, 589, 595, 709, 2]
 
-// Module 4205 (initialize)
+// Module 4206 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import Storage3 from "Storage" /* 595 */;

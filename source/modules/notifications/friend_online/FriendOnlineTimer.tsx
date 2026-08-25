@@ -1,14 +1,14 @@
-// Module ID: 17121
-// Function ID: 17122
+// Module ID: 17153
+// Function ID: 17154
 // Name: _reportSessionMeaningfullyOnline
-// Dependencies: [5, 7288, 17122, 676, 505, 687, 530, 1208, 709, 5043, 4069, 2]
+// Dependencies: [5, 5104, 17154, 676, 505, 687, 530, 1208, 709, 5367, 4070, 2]
 
-// Module 17121 (_reportSessionMeaningfullyOnline)
+// Module 17153 (_reportSessionMeaningfullyOnline)
 import setDefault from "set" /* 687 */;
-import initializeDefault from "initialize" /* 5043 */;
+import initializeDefault from "initialize" /* 5367 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "filterPlayingActivities" /* 7288 */;
-import closure_5 from "initialize" /* 17122 */;
+import closure_4 from "filterPlayingActivities" /* 5104 */;
+import closure_5 from "initialize" /* 17154 */;
 import { Endpoints } from "ME" /* 676 */;
 import { StatusTypes } from "sum" /* 505 */;
 

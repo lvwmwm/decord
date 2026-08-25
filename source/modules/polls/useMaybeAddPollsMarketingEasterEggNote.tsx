@@ -1,12 +1,12 @@
-// Module ID: 9442
-// Function ID: 9443
+// Module ID: 8886
+// Function ID: 8887
 // Name: useMaybeAddPollsMarketingEasterEggNote
-// Dependencies: [1995, 589, 1236, 2]
+// Dependencies: [1996, 589, 1236, 2]
 // Exports: default
 
-// Module 9442 (useMaybeAddPollsMarketingEasterEggNote)
+// Module 8886 (useMaybeAddPollsMarketingEasterEggNote)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "_getSystemLocale" /* 1995 */;
+import closure_2 from "_getSystemLocale" /* 1996 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/polls/useMaybeAddPollsMarketingEasterEggNote.tsx");

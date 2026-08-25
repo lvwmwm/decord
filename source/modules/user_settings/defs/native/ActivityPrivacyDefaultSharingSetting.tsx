@@ -1,15 +1,15 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 15142
+// Function ID: 15143
 // Name: radio
-// Dependencies: [19, 8238, 1306, 1236, 4069, 15113, 14276, 4346, 15114, 2008, 10708, 2]
+// Dependencies: [19, 8235, 1306, 1236, 4070, 15143, 14306, 4347, 15144, 2009, 10516, 2]
 
-// Module 15112 (radio)
+// Module 15142 (radio)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4069 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4346 */;
-import useIsInActivityPrivacyCopyExperiment from "useIsInActivityPrivacyCopyExperiment" /* 15113 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
+import useIsInActivityPrivacyCopyExperiment from "useIsInActivityPrivacyCopyExperiment" /* 15143 */;
 import closure_3 from "noop" /* 19 */;
-import createToggle from "createToggle" /* 10708 */;
+import createToggle from "createToggle" /* 10516 */;
 
 require = arg1;
 createToggle = {
@@ -54,15 +54,15 @@ createToggle = {
     DefaultGuildsActivityRestrictedV22.updateSetting(NumberResult);
     let obj = useIsInActivityPrivacyCopyExperiment;
     if (obj.getIsInActivityPrivacyUpsellExperiment("ActivityPrivacyDefaultSharingSetting")) {
-      let tmp2Result = tmp2(14276);
+      let tmp2Result = tmp2(14306);
       const affectedGuilds = tmp2Result.computeAffectedGuilds(setting, NumberResult);
       if (null != affectedGuilds) {
-        tmp2Result = tmp2(14276);
+        tmp2Result = tmp2(14306);
         const activityRestrictionSettingName = tmp2Result.getActivityRestrictionSettingName(NumberResult);
         obj = { direction: null, affectedGuildIds: null, settingName: null };
         ({ direction: obj5[0], affectedGuildIds: obj5[1] } = affectedGuilds);
         obj[2] = activityRestrictionSettingName;
-        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp2(2008)(15114, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj);
+        ACTION_SHEET_HEIGHT_HALFDefault.openLazy(tmp2(2009)(15144, dependencyMap.paths), "ActivityPrivacyUpsellActionSheet", obj);
         const obj4 = ACTION_SHEET_HEIGHT_HALFDefault;
       }
     }

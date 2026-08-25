@@ -1,10 +1,10 @@
-// Module ID: 6949
-// Function ID: 6950
+// Module ID: 5445
+// Function ID: 5446
 // Name: openContextMenu
-// Dependencies: [676, 709, 6950, 500, 6953, 2]
+// Dependencies: [676, 709, 5446, 500, 5449, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 6949 (openContextMenu)
+// Module 5445 (openContextMenu)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
@@ -105,7 +105,7 @@ function openContextMenu(stopPropagation, arg1, enableSpellCheck, arg3) {
     const _DOMRect = DOMRect;
     const dOMRect = new DOMRect(tmp3, sum1, 0, 0);
     obj[3] = dOMRect;
-    let APP = obj(6950).getCurrentlyInteractingAppContext();
+    let APP = obj(5446).getCurrentlyInteractingAppContext();
     if (APP == null) {
       APP = AppContext.APP;
     }
@@ -125,7 +125,7 @@ function openContextMenu(stopPropagation, arg1, enableSpellCheck, arg3) {
       let tmp16Result = tmp16(500);
       if (tmp16Result.isDesktop()) {
         if (nativeEvent.isTrusted) {
-          tmp16Result = tmp16(6953);
+          tmp16Result = tmp16(5449);
           importDefault = tmp16Result.addResultListener(() => {
             callback();
             obj = callback(closure_1_2[1]);
@@ -136,7 +136,7 @@ function openContextMenu(stopPropagation, arg1, enableSpellCheck, arg3) {
       }
     }
     stopPropagation.preventDefault();
-    const obj3 = obj(6950);
+    const obj3 = obj(5446);
     obj1 = { type: "CONTEXT_MENU_OPEN", contextMenu: null };
     obj1[1] = obj;
     dispatcherDefault.dispatch(obj1);

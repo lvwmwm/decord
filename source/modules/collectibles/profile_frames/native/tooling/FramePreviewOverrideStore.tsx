@@ -1,13 +1,13 @@
-// Module ID: 8984
-// Function ID: 8985
+// Module ID: 8946
+// Function ID: 8947
 // Name: measure
-// Dependencies: [5, 17, 8985, 3, 8986, 1271, 8987, 8991, 644, 2]
+// Dependencies: [5, 17, 8947, 3, 8948, 1271, 8949, 8953, 644, 2]
 
-// Module 8984 (measure)
+// Module 8946 (measure)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
-import OVERRIDE_DIR from "OVERRIDE_DIR" /* 8985 */;
+import OVERRIDE_DIR from "OVERRIDE_DIR" /* 8947 */;
 import keys from "keys" /* 644 */;
 
 const require = arg1;
@@ -68,7 +68,7 @@ function _buildOverride() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         while (true) {
@@ -355,7 +355,7 @@ keys = keys.create((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -402,7 +402,7 @@ keys = keys.create((arg0) => {
           let message = closure_2;
           if (closure_1_1()) {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else {
             const _Error = Error;
             if (message instanceof Error) {
@@ -432,7 +432,7 @@ keys = keys.create((arg0) => {
             if (isStale()) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else if (null == closure_2) {
               closure_1_0({ status: "error", error: "No frame on device. Ask Cap to push one (or run pushFrameOverride.mjs)." });
               c3 = 0;
@@ -477,7 +477,7 @@ keys = keys.create((arg0) => {
           }
           c3 = 0;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp44) {
         closure_2 = tmp44;

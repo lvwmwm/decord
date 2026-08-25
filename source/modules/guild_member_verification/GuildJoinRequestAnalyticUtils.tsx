@@ -1,13 +1,13 @@
-// Module ID: 7645
-// Function ID: 7646
+// Module ID: 7466
+// Function ID: 7467
 // Name: trackMemberApplicationViewed
-// Dependencies: [1218, 1991, 676, 698, 2]
+// Dependencies: [1218, 1992, 676, 698, 2]
 // Exports: trackMemberApplicationAction, trackMemberApplicationInterviewMessage, trackMemberApplicationViewed, trackMemberVerificationApplicationViewed
 
-// Module 7645 (trackMemberApplicationViewed)
+// Module 7466 (trackMemberApplicationViewed)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/GuildJoinRequestAnalyticUtils.tsx");

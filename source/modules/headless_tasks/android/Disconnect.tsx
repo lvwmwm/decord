@@ -1,9 +1,9 @@
-// Module ID: 17241
-// Function ID: 17242
+// Module ID: 17273
+// Function ID: 17274
 // Name: promise
-// Dependencies: [1391, 17242, 9686, 2]
+// Dependencies: [1391, 17274, 9296, 2]
 
-// Module 17241 (promise)
+// Module 17273 (promise)
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;

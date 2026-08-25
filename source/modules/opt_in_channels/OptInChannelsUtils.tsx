@@ -1,27 +1,27 @@
-// Module ID: 10790
-// Function ID: 10791
+// Module ID: 11119
+// Function ID: 11120
 // Name: setIndex
-// Dependencies: [19, 1391, 5283, 4777, 4033, 1922, 676, 1398, 5286, 5049, 5288, 6812, 4989, 5284, 5277, 10791, 5282, 1222, 4200, 1377, 589, 1236, 3978, 11, 2]
+// Dependencies: [19, 1391, 5360, 4395, 4034, 1922, 676, 1398, 7140, 4590, 5950, 5335, 4574, 5361, 7134, 11120, 5359, 1222, 4201, 1377, 589, 1236, 3979, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 10790 (setIndex)
+// Module 11119 (setIndex)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import transitionTo from "transitionTo" /* 1222 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import tDefault from "t" /* 3978 */;
-import computeSubtitle from "computeSubtitle" /* 5277 */;
-import ack from "ack" /* 5282 */;
-import _bulkClearRecents from "_bulkClearRecents" /* 10791 */;
+import hooksDefault from "hooks" /* 3979 */;
+import ack from "ack" /* 5359 */;
+import computeSubtitle from "computeSubtitle" /* 7134 */;
+import _bulkClearRecents from "_bulkClearRecents" /* 11120 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "setIndex" /* 5283 */;
-import closure_6 from "generateOldThreadCutoff" /* 4777 */;
-import closure_7 from "markAllUserIdListsStale" /* 4033 */;
+import closure_5 from "setIndex" /* 5360 */;
+import closure_6 from "generateOldThreadCutoff" /* 4395 */;
+import closure_7 from "markAllUserIdListsStale" /* 4034 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 1398 */;
-import { ChannelListGuildActionRow } from "ChannelListGuildActionRow" /* 5286 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 5049 */;
+import { ChannelListGuildActionRow } from "ChannelListGuildActionRow" /* 7140 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4590 */;
 
 require = arg1;
 function setIndex(arg0, index) {
@@ -144,7 +144,7 @@ export const useChannelBrowserSections = function useChannelBrowserSections(guil
   const _require = guildId;
   closure_1 = filterCategoriesByQuery;
   dependencyMap = arg2;
-  let obj = _require(4200);
+  let obj = _require(4201);
   let result = obj.useIsDismissibleContentDismissed_UNSAFE(_require(1377).DismissibleContent.CHANNEL_BROWSER_NUX);
   const items = [closure_4];
   const items1 = [guildId];
@@ -227,7 +227,7 @@ export const getActiveAgoTimestamp = function getActiveAgoTimestamp(id) {
     lastMessageIdResult = id;
   }
   obj = { timeAgo: null };
-  const tmp = tDefault;
-  obj[0] = tDefault(obj.extractTimestamp(lastMessageIdResult)).fromNow();
+  const tmp = hooksDefault;
+  obj[0] = hooksDefault(obj.extractTimestamp(lastMessageIdResult)).fromNow();
   return intl.formatToPlainString(getSystemLocale.t["8N0BHR"], obj);
 };

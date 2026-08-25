@@ -1,16 +1,16 @@
-// Module ID: 16599
-// Function ID: 16600
+// Module ID: 16631
+// Function ID: 16632
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 1995, 1922, 676, 21, 4668, 589, 1500, 1954, 1629, 1236, 10517, 4737, 4738, 712, 4739, 500, 16598, 5438, 4332, 2]
+// Dependencies: [109, 19, 17, 1996, 1922, 676, 21, 4380, 589, 1500, 1955, 1629, 1236, 10534, 4812, 4813, 712, 4376, 500, 16630, 4949, 4333, 2]
 
-// Module 16599 (HcaptchaModal)
+// Module 16631 (HcaptchaModal)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "_getSystemLocale" /* 1995 */;
+import closure_9 from "_getSystemLocale" /* 1996 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 class HcaptchaModal {

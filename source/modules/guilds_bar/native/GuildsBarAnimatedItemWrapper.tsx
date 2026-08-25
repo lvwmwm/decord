@@ -1,17 +1,17 @@
-// Module ID: 15623
-// Function ID: 15624
+// Module ID: 15655
+// Function ID: 15656
 // Name: UnreadIndicator
-// Dependencies: [19, 4758, 15613, 21, 4668, 712, 4100, 4107, 4749, 4119, 8164, 15624, 15352, 1236, 1351, 7228, 8441, 2]
+// Dependencies: [19, 4823, 15645, 21, 4380, 712, 4101, 4108, 4814, 4120, 8160, 15656, 15382, 1236, 1351, 5887, 8447, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 15623 (UnreadIndicator)
+// Module 15655 (UnreadIndicator)
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4100 */;
+import map from "map" /* 4101 */;
 import closure_3 from "noop" /* 19 */;
-import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE" /* 4758 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15613 */;
+import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE" /* 4823 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15645 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 class UnreadIndicator {
@@ -124,7 +124,7 @@ class UnreadIndicator {
     obj1[2] = MOUNTED;
     obj1[3] = require("ManaContext").TransitionStates;
     obj1[4] = cleanUp;
-    obj1[5] = require("module_4119").runOnJS;
+    obj1[5] = require("module_4120").runOnJS;
     fn2.__closure = obj1;
     fn2.__workletHash = 10632665703864;
     fn2.__initData = closure_15;

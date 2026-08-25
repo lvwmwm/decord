@@ -1,14 +1,14 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 11007
+// Function ID: 11008
 // Name: open
-// Dependencies: [12650, 709, 9697, 4007, 2]
+// Dependencies: [11006, 709, 9307, 4008, 2]
 // Exports: chooseReplayPath, close, open, openReplay, setSection, setShouldRecordNextConnection, setSimulcastDebugOverride
 
-// Module 12651 (open)
+// Module 11007 (open)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import setDefault from "set" /* 4007 */;
-import trackVoiceAndVideoDebuggingSettingsUpdatedDefault from "trackVoiceAndVideoDebuggingSettingsUpdated" /* 9697 */;
-import closure_2 from "updateStats" /* 12650 */;
+import setDefault from "set" /* 4008 */;
+import trackVoiceAndVideoDebuggingSettingsUpdatedDefault from "trackVoiceAndVideoDebuggingSettingsUpdated" /* 9307 */;
+import closure_2 from "updateStats" /* 11006 */;
 
 const result = require("set").fileFinishedImporting("actions/RTCDebugActionCreators.tsx");
 

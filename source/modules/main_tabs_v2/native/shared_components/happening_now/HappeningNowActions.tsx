@@ -1,26 +1,26 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15448
+// Function ID: 15449
 // Name: HappeningNowCardCreateChannel
-// Dependencies: [19, 17, 1981, 1910, 1980, 14708, 676, 21, 4668, 712, 698, 8886, 15419, 1236, 8911, 15420, 8955, 15421, 11524, 11997, 14709, 4739, 2]
+// Dependencies: [19, 17, 1982, 1910, 1981, 14738, 676, 21, 4380, 712, 698, 9143, 15449, 1236, 9168, 15450, 9212, 15451, 11875, 12325, 14739, 4376, 2]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 15418 (HappeningNowCardCreateChannel)
+// Module 15448 (HappeningNowCardCreateChannel)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4739 */;
-import registerAssetDefault from "registerAsset" /* 11997 */;
-import HAPPENING_NOW_CARD_MARGIN_RIGHTDefault from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 14709 */;
-import registerAssetDefault2 from "registerAsset" /* 15419 */;
-import registerAssetDefault3 from "registerAsset" /* 15420 */;
-import registerAssetDefault4 from "registerAsset" /* 15421 */;
+import Text from "Text" /* 4376 */;
+import registerAssetDefault from "registerAsset" /* 12325 */;
+import HAPPENING_NOW_CARD_MARGIN_RIGHTDefault from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 14739 */;
+import registerAssetDefault2 from "registerAsset" /* 15449 */;
+import registerAssetDefault3 from "registerAsset" /* 15450 */;
+import registerAssetDefault4 from "registerAsset" /* 15451 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "comparator" /* 1981 */;
+import closure_6 from "comparator" /* 1982 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14708 */;
+import closure_8 from "handleConnectionOpen" /* 1981 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14738 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 let c3 = importAllResult;

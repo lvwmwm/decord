@@ -1,17 +1,17 @@
-// Module ID: 14705
-// Function ID: 14706
+// Module ID: 14735
+// Function ID: 14736
 // Name: MessagesHeaderItem
-// Dependencies: [19, 17, 21, 4668, 712, 4739, 1236, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 4376, 1236, 2]
 // Exports: default
 
-// Module 14705 (MessagesHeaderItem)
+// Module 14735 (MessagesHeaderItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4739 */;
+import Text from "Text" /* 4376 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

@@ -1,11 +1,11 @@
-// Module ID: 6868
-// Function ID: 6869
-// Dependencies: [4095, 2]
+// Module ID: 4864
+// Function ID: 4865
+// Dependencies: [4096, 2]
 
-// Module 6868
+// Module 4864
 import set from "set" /* 2 */;
-import t from "t" /* 4095 */;
-import tDefault from "t" /* 4095 */;
+import t from "t" /* 4096 */;
+import tDefault from "t" /* 4096 */;
 
 const re2 = /\n$/;
 const re3 = /^ *-# +((?!-#)[^\n]+)(?:\n|$)/;

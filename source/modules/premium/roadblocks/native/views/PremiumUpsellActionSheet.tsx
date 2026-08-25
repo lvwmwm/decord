@@ -1,29 +1,29 @@
-// Module ID: 8519
-// Function ID: 8520
+// Module ID: 8527
+// Function ID: 8528
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4669, 1302, 1304, 4201, 1922, 1924, 676, 4529, 8520, 21, 4668, 712, 4100, 4042, 8521, 4881, 4839, 8522, 8523, 1236, 4093, 1994, 8525, 8526, 4346, 8518, 8527, 8528, 12787, 7952, 691, 589, 9402, 7216, 4739, 500, 9254, 5454, 7177, 8510, 9387, 698, 9432, 4241, 7213, 4761, 12790, 4750, 8028, 2]
+// Dependencies: [32, 19, 17, 4372, 1302, 1304, 4202, 1922, 1924, 676, 4439, 8528, 21, 4380, 712, 4101, 4043, 8529, 5004, 4959, 8530, 8531, 1236, 4094, 1995, 8533, 8534, 4347, 8526, 8535, 8536, 12774, 7773, 691, 589, 8845, 5874, 4376, 500, 9533, 5374, 5834, 8518, 8830, 698, 8875, 4242, 5870, 4826, 12777, 4815, 7850, 2]
 // Exports: default
 
-// Module 8519 (AlwaysCompressImagesSwitch)
+// Module 8527 (AlwaysCompressImagesSwitch)
 import set from "set" /* 500 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import preloadDefault from "preload" /* 5454 */;
-import useAPNGPlayerControls from "useAPNGPlayerControls" /* 9254 */;
+import preloadDefault from "preload" /* 5374 */;
+import useAPNGPlayerControls from "useAPNGPlayerControls" /* 9533 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import closure_7 from "handleThemeChange" /* 1302 */;
 import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import closure_9 from "handleConnectionOpen" /* 4201 */;
+import closure_9 from "handleConnectionOpen" /* 4202 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import ME from "ME" /* 676 */;
-import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4529 */;
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 8520 */;
+import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4439 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 8528 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function AlwaysCompressImagesSwitch(isKestrelTreatment) {
@@ -51,8 +51,8 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       obj1[0] = tmp.compressionHint;
       const intl2 = tmp2(1236).intl;
       obj1[2] = intl2.string(tmp2(1236).t["wC0+Ph"]);
-      obj[5] = callback2(tmp2(4739).Text, obj1);
-      obj[1] = callback2(tmp2(7216).TableSwitchRow, obj);
+      obj[5] = callback2(tmp2(4376).Text, obj1);
+      obj[1] = callback2(tmp2(5874).TableSwitchRow, obj);
       tmp6 = callback2(View, obj);
     }
   }

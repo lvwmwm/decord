@@ -1,14 +1,14 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15590
+// Function ID: 15591
 // Name: useStartTime
-// Dependencies: [19, 4499, 4831, 10548, 676, 589, 10717, 2]
+// Dependencies: [19, 5102, 4743, 10478, 676, 589, 10525, 2]
 // Exports: useStartTime
 
-// Module 15558 (useStartTime)
+// Module 15590 (useStartTime)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "_handleConnectionOpen" /* 4499 */;
-import closure_4 from "handleConnectionOpen" /* 4831 */;
-import closure_5 from "_toTimestampMs" /* 10548 */;
+import closure_3 from "_handleConnectionOpen" /* 5102 */;
+import closure_4 from "handleConnectionOpen" /* 4743 */;
+import closure_5 from "_toTimestampMs" /* 10478 */;
 import { ChannelTypes } from "ME" /* 676 */;
 
 const require = arg1;

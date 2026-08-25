@@ -1,9 +1,9 @@
-// Module ID: 4036
-// Function ID: 4037
+// Module ID: 4037
+// Function ID: 4038
 // Name: AccountNotificationFlags
 // Dependencies: [2]
 
-// Module 4036 (AccountNotificationFlags)
+// Module 4037 (AccountNotificationFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/notifications/NotificationConstants.tsx");

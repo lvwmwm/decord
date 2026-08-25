@@ -1,14 +1,14 @@
-// Module ID: 8889
-// Function ID: 8890
+// Module ID: 9146
+// Function ID: 9147
 // Name: _isDefaultChannelThresholdMetAfterDelete
-// Dependencies: [5, 1910, 6825, 5291, 676, 6824, 5290, 506, 4832, 1236, 2]
+// Dependencies: [5, 1910, 5348, 5349, 676, 5347, 5355, 506, 4744, 1236, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8889 (_isDefaultChannelThresholdMetAfterDelete)
+// Module 9146 (_isDefaultChannelThresholdMetAfterDelete)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "handleUpdate" /* 6825 */;
-import { NUM_DEFAULT_CHATTABLE_CHANNELS_MIN as closure_7 } from "serverPromptToClientPrompt" /* 5291 */;
+import closure_6 from "handleUpdate" /* 5348 */;
+import { NUM_DEFAULT_CHATTABLE_CHANNELS_MIN as closure_7 } from "serverPromptToClientPrompt" /* 5349 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -31,7 +31,7 @@ function _isDefaultChannelThresholdMetAfterDelete() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -117,7 +117,7 @@ function _isChattableChannelThresholdMetAfterChannelChange() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -277,7 +277,7 @@ function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -370,7 +370,7 @@ function _checkChattableChannelThresholdMetAfterChannelPermissionDeny() {
             obj4[0] = tmp54;
             return obj4;
           } else {
-            obj = callback(4832);
+            obj = callback(4744);
             obj5 = { title: null, body: null };
             const intl = guildId(1236).intl;
             obj5[0] = intl.string(guildId(1236).t.ut7sq0);

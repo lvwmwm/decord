@@ -1,15 +1,15 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12780
+// Function ID: 12781
 // Name: ForumExplicitMediaAlert
-// Dependencies: [19, 17, 21, 4668, 712, 4768, 4739, 1236, 4750, 11137, 2]
+// Dependencies: [19, 17, 21, 4380, 712, 4833, 4376, 1236, 4815, 11479, 2]
 // Exports: default
 
-// Module 12793 (ForumExplicitMediaAlert)
+// Module 12780 (ForumExplicitMediaAlert)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;

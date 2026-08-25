@@ -1,9 +1,9 @@
-// Module ID: 5968
-// Function ID: 5969
+// Module ID: 6660
+// Function ID: 6661
 // Name: metadata
 // Dependencies: [2]
 
-// Module 5968 (metadata)
+// Module 6660 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MicrophoneAndKeyboardSpotIllustration-2x.png.js");

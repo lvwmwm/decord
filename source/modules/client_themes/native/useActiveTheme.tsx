@@ -1,14 +1,14 @@
-// Module ID: 8542
-// Function ID: 8543
+// Module ID: 8550
+// Function ID: 8551
 // Name: useActiveThemeType
-// Dependencies: [1304, 4199, 1346, 1305, 589, 4232, 2]
+// Dependencies: [1304, 4200, 1346, 1305, 589, 4233, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 8542 (useActiveThemeType)
+// Module 8550 (useActiveThemeType)
 import initialize from "initialize" /* 589 */;
-import getGuildIdFromNavigationStateDefault from "getGuildIdFromNavigationState" /* 4232 */;
+import getGuildIdFromNavigationStateDefault from "getGuildIdFromNavigationState" /* 4233 */;
 import closure_3 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import closure_4 from "isSyncedModeThemesEnabled" /* 4199 */;
+import closure_4 from "isSyncedModeThemesEnabled" /* 4200 */;
 import closure_5 from "reset" /* 1346 */;
 import SystemThemeState from "SystemThemeState" /* 1305 */;
 

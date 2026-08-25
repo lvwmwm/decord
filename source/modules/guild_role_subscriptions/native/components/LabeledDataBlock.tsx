@@ -1,17 +1,17 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14664
+// Function ID: 14665
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 676, 21, 4668, 712, 6819, 4739, 5438, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 4380, 712, 5342, 4376, 4949, 1297, 2]
 // Exports: default
 
-// Module 14634 (LabeledDataBlock)
+// Module 14664 (LabeledDataBlock)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4739 */;
+import Text from "Text" /* 4376 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import importDefaultResult from "createTextStyle" /* 6819 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "createTextStyle" /* 5342 */;
 
 require = arg1;
 noopAll;
@@ -44,7 +44,7 @@ export default function LabeledDataBlock(arg0) {
     obj2[0] = tmp5(1297).Icon.Sizes.SMALL;
     obj2[1] = icon;
     obj1[2] = tmp4(tmp5(1297).Icon, obj2);
-    tmp4Result = tmp4(tmp5(5438).PressableOpacity, obj1);
+    tmp4Result = tmp4(tmp5(4949).PressableOpacity, obj1);
   }
   items1[1] = tmp4Result;
   obj[1] = items1;

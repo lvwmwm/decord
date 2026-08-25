@@ -1,11 +1,11 @@
-// Module ID: 4060
-// Function ID: 4061
-// Dependencies: [4061, 1474, 2]
+// Module ID: 4061
+// Function ID: 4062
+// Dependencies: [4062, 1474, 2]
 
-// Module 4060
+// Module 4061
 import set from "set" /* 2 */;
 import awaitOnlineDefault from "awaitOnline" /* 1474 */;
-import loaderMaker from "loaderMaker" /* 4061 */;
+import loaderMaker from "loaderMaker" /* 4062 */;
 
 loaderMaker.setAwaitOnline(awaitOnlineDefault.awaitOnline);
 const result = set.fileFinishedImporting("modules/core/CodeSplittingUtils.tsx");

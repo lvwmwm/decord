@@ -1,15 +1,15 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 9184
+// Function ID: 9185
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 1981, 1910, 4024, 676, 589, 8876, 2]
+// Dependencies: [32, 1982, 1910, 4025, 676, 589, 9133, 2]
 // Exports: default
 
-// Module 8927 (useCanCreateAnEvent)
+// Module 9184 (useCanCreateAnEvent)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "comparator" /* 1981 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
+import closure_3 from "comparator" /* 1982 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4024 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;

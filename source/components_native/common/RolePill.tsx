@@ -1,16 +1,16 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 9850
+// Function ID: 9851
 // Name: RolePill
-// Dependencies: [19, 17, 676, 21, 4668, 712, 4069, 7201, 7205, 4096, 5438, 7220, 4739, 2]
+// Dependencies: [19, 17, 676, 21, 4380, 712, 4070, 5858, 5862, 4097, 4949, 5878, 4376, 2]
 // Exports: default
 
-// Module 10010 (RolePill)
+// Module 9850 (RolePill)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -33,9 +33,9 @@ export default function RolePill(role) {
   role = role.role;
   ({ guildId, color } = role);
   let combined;
-  const DeveloperMode = role(4069).DeveloperMode;
+  const DeveloperMode = role(4070).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(7201);
+  let obj = role(5858);
   obj = { guildId, roleId: role.id, size: 12 };
   const roleIcon = obj.useRoleIcon(obj);
   let name = role.name;
@@ -80,8 +80,8 @@ export default function RolePill(role) {
     }
     obj2[2] = guildId;
     obj2[3] = color;
-    let tmp10Result = tmp10(combined(7220), obj2);
-    const tmp15 = combined(7220);
+    let tmp10Result = tmp10(combined(5878), obj2);
+    const tmp15 = combined(5878);
   } else {
     const items = [tmp9.bubble, ];
     if (null != color) {
@@ -105,8 +105,8 @@ export default function RolePill(role) {
     tmp10Result = tmp10(tmp12, obj6);
   }
   items1[1] = tmp10Result;
-  items1[2] = closure_6(role(4739).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(4376).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
   obj1[1] = items1;
   obj[4] = closure_7(View, obj1);
-  return closure_6(role(5438).PressableHighlight, obj);
+  return closure_6(role(4949).PressableHighlight, obj);
 };

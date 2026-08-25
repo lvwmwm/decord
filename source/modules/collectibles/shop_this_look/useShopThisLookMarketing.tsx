@@ -1,13 +1,13 @@
-// Module ID: 12390
-// Function ID: 12391
+// Module ID: 12708
+// Function ID: 12709
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 8997, 7404, 1377, 2]
+// Dependencies: [32, 8959, 6131, 1377, 2]
 // Exports: useShopThisLookMarketing
 
-// Module 12390 (useShopThisLookMarketing)
+// Module 12708 (useShopThisLookMarketing)
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7404 */;
-import useEquippedCollectibleSkuIds from "useEquippedCollectibleSkuIds" /* 8997 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6131 */;
+import useEquippedCollectibleSkuIds from "useEquippedCollectibleSkuIds" /* 8959 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 require = arg1;

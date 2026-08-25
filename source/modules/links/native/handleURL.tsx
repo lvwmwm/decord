@@ -1,14 +1,14 @@
-// Module ID: 4088
-// Function ID: 4089
+// Module ID: 4089
+// Function ID: 4090
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 4089, 676, 3, 4090, 4092, 4093, 4094, 4095, 4096, 1236, 4344, 500, 4346, 1489, 4359, 4496, 2]
+// Dependencies: [5, 17, 4090, 676, 3, 4091, 4093, 4094, 4095, 4096, 4097, 1236, 4345, 500, 4347, 1489, 4360, 13403, 2]
 // Exports: default
 
-// Module 4088 (sanitizeURLPart)
+// Module 4089 (sanitizeURLPart)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Linking } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "setContent" /* 4089 */;
+import closure_5 from "setContent" /* 4090 */;
 import { WebBrowserType } from "ME" /* 676 */;
 
 const require = arg1;
@@ -40,7 +40,7 @@ function _handleURL() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -190,7 +190,7 @@ function _handleURL() {
             } else if (2 === tmp8) {
               payload = 0;
               v0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               if (3 === tmp8) {
                 if (arg0 === 1) {

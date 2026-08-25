@@ -1,14 +1,14 @@
-// Module ID: 10113
-// Function ID: 10114
+// Module ID: 9965
+// Function ID: 9966
 // Name: WaveformIcon
-// Dependencies: [19, 21, 712, 4099, 10114, 2]
+// Dependencies: [19, 21, 712, 4100, 9966, 2]
 // Exports: WaveformIcon
 
-// Module 10113 (WaveformIcon)
+// Module 9965 (WaveformIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 10114 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 9966 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

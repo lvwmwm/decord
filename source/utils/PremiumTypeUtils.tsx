@@ -1,10 +1,10 @@
-// Module ID: 1945
-// Function ID: 1946
+// Module ID: 1946
+// Function ID: 1947
 // Name: isPremiumAtLeast
 // Dependencies: [1924, 2]
 // Exports: isPremium, isPremiumAtLeast, isPremiumAtMost, isPremiumExactly
 
-// Module 1945 (isPremiumAtLeast)
+// Module 1946 (isPremiumAtLeast)
 import set from "set" /* 2 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 

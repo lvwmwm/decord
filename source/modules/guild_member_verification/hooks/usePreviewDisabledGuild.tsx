@@ -1,13 +1,13 @@
-// Module ID: 8567
-// Function ID: 8568
+// Module ID: 8575
+// Function ID: 8576
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 1910, 6838, 589, 6944, 1430, 2]
+// Dependencies: [19, 1910, 5371, 589, 5440, 1430, 2]
 // Exports: default
 
-// Module 8567 (usePreviewDisabledGuild)
+// Module 8575 (usePreviewDisabledGuild)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "get" /* 6838 */;
+import closure_5 from "get" /* 5371 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/usePreviewDisabledGuild.tsx");

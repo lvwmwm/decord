@@ -1,14 +1,14 @@
-// Module ID: 4300
-// Function ID: 4301
+// Module ID: 4301
+// Function ID: 4302
 // Name: trackExposureToExperiment
-// Dependencies: [4292, 4293, 709, 2]
+// Dependencies: [4293, 4294, 709, 2]
 // Exports: overrideBucket, registerGuildExperiment, registerUserExperiment, trackExposureToExperiment
 
-// Module 4300 (trackExposureToExperiment)
+// Module 4301 (trackExposureToExperiment)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "getHash" /* 4292 */;
-import { registerExperiment } from "getHash" /* 4292 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4293 */;
+import closure_2 from "getHash" /* 4293 */;
+import { registerExperiment } from "getHash" /* 4293 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4294 */;
 
 ({ ExperimentTypes: c4, ExposureTypes } = ExperimentBuckets);
 let obj = { LEGACY: "legacy", APEX: "apex" };

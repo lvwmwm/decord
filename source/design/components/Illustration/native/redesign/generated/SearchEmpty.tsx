@@ -1,13 +1,13 @@
-// Module ID: 9420
-// Function ID: 9421
+// Module ID: 8863
+// Function ID: 8864
 // Name: getSearchEmptySource
-// Dependencies: [19, 17, 21, 7946, 9421, 9422, 9423, 1363, 2]
+// Dependencies: [19, 17, 21, 7767, 8864, 8865, 8866, 1363, 2]
 // Exports: SearchEmpty, getSearchEmptySource, useSearchEmptySource
 
-// Module 9420 (getSearchEmptySource)
+// Module 8863 (getSearchEmptySource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 7946 */;
+import getIllustrationSource from "getIllustrationSource" /* 7767 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getSearchEmptySource = function getSearchEmptySource(theme) {
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(9421);
+      return callback(8864);
     },
     darker() {
-      return callback(9422);
+      return callback(8865);
     },
     light() {
-      return callback(9423);
+      return callback(8866);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useSearchEmptySource = function useSearchEmptySource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9421);
+      return callback(8864);
     },
     darker() {
-      return callback(9422);
+      return callback(8865);
     },
     light() {
-      return callback(9423);
+      return callback(8866);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const SearchEmpty = function SearchEmpty(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9421);
+      return callback(8864);
     },
     darker() {
-      return callback(9422);
+      return callback(8865);
     },
     light() {
-      return callback(9423);
+      return callback(8866);
     }
   };
   obj = {};

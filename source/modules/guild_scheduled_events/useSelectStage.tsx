@@ -1,15 +1,15 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 9286
+// Function ID: 9287
 // Name: useSelectStage
-// Dependencies: [5, 32, 19, 1391, 1980, 589, 8096, 2]
+// Dependencies: [5, 32, 19, 1391, 1981, 589, 7918, 2]
 // Exports: default
 
-// Module 12455 (useSelectStage)
+// Module 9286 (useSelectStage)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "handleConnectionOpen" /* 1981 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useSelectStage.tsx");

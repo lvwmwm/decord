@@ -1,14 +1,14 @@
-// Module ID: 14143
-// Function ID: 14144
+// Module ID: 14173
+// Function ID: 14174
 // Name: route
-// Dependencies: [676, 10708, 1236, 9962, 14144, 2]
+// Dependencies: [676, 10516, 1236, 9820, 14174, 2]
 
-// Module 14143 (route)
+// Module 14173 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import UserCircleIcon from "UserCircleIcon" /* 9962 */;
-import createToggle from "createToggle" /* 10708 */;
+import UserCircleIcon from "UserCircleIcon" /* 9820 */;
+import createToggle from "createToggle" /* 10516 */;
 
 obj = {
   useTitle() {
@@ -22,7 +22,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.ACCOUNT,
   getComponent() {
-    return require(14144) /* PasswordlessUpsell */.default;
+    return require(14174) /* PasswordlessUpsell */.default;
   }
 };
 const route = createToggle.createRoute(obj);

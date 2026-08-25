@@ -1,11 +1,11 @@
-// Module ID: 16692
-// Function ID: 16693
+// Module ID: 16724
+// Function ID: 16725
 // Name: HolidayEmojiAnimationType
-// Dependencies: [16689, 2]
+// Dependencies: [16721, 2]
 
-// Module 16692 (HolidayEmojiAnimationType)
+// Module 16724 (HolidayEmojiAnimationType)
 import set from "set" /* 2 */;
-import HolidayEmojiAnimationTypeDefault from "HolidayEmojiAnimationType" /* 16689 */;
+import HolidayEmojiAnimationTypeDefault from "HolidayEmojiAnimationType" /* 16721 */;
 
 const result = set.fileFinishedImporting("modules/holidays/HolidayEventsUtils.tsx");
 
@@ -24,12 +24,12 @@ export default {
     let tmp6 = null;
     if (tmp5) {
       tmp6 = null;
-      if (null != tmp(16689).soundpack) {
+      if (null != tmp(16721).soundpack) {
         tmp6 = null;
-        if (null != tmp(16689).soundpackLabel) {
+        if (null != tmp(16721).soundpackLabel) {
           obj = { soundpack: null, soundpackLabel: null };
-          obj[0] = tmp(16689).soundpack;
-          obj[1] = tmp(16689).soundpackLabel;
+          obj[0] = tmp(16721).soundpack;
+          obj[1] = tmp(16721).soundpackLabel;
           tmp6 = obj;
         }
       }
@@ -47,7 +47,7 @@ export default {
     const timestamp = Date.now();
     let appSpinnerSources = null;
     if (tmp4) {
-      appSpinnerSources = tmp2(16689).appSpinnerSources;
+      appSpinnerSources = tmp2(16721).appSpinnerSources;
     }
     return appSpinnerSources;
   },
@@ -55,13 +55,13 @@ export default {
     const timestamp = Date.now();
     let tmp5 = null;
     if (tmp4) {
-      const getLoadingTips = tmp2(16689).getLoadingTips;
+      const getLoadingTips = tmp2(16721).getLoadingTips;
       let loadingTips;
       if (getLoadingTips != null) {
         loadingTips = getLoadingTips();
       }
       tmp5 = loadingTips;
-      const tmp2Result = tmp2(16689);
+      const tmp2Result = tmp2(16721);
     }
     return tmp5;
   },
@@ -72,8 +72,8 @@ export default {
     let soundpack = null;
     if (tmp5) {
       soundpack = null;
-      if (null != tmp(16689).soundpack) {
-        soundpack = tmp(16689).soundpack;
+      if (null != tmp(16721).soundpack) {
+        soundpack = tmp(16721).soundpack;
       }
     }
     return soundpack;

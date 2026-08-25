@@ -1,10 +1,10 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 10845
+// Function ID: 10846
 // Name: useModeratorOverlayChannelState
-// Dependencies: [700, 705, 4009, 2]
+// Dependencies: [700, 705, 4010, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 12541 (useModeratorOverlayChannelState)
+// Module 10845 (useModeratorOverlayChannelState)
 import set from "set" /* 2 */;
 import identity from "identity" /* 700 */;
 
@@ -25,7 +25,7 @@ const result = set.fileFinishedImporting("modules/stage_channels/native/componen
 
 export const useModeratorOverlayChannelState = function useModeratorOverlayChannelState(id) {
   const _require = id;
-  dependencyMap = callback((dismissOverlay) => dismissOverlay.dismissOverlay, _require(4009).shallow);
-  const items = [!callback((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _require(4009).shallow).has(id), () => callback(closure_0)];
+  dependencyMap = callback((dismissOverlay) => dismissOverlay.dismissOverlay, _require(4010).shallow);
+  const items = [!callback((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _require(4010).shallow).has(id), () => callback(closure_0)];
   return items;
 };

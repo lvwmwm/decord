@@ -1,10 +1,10 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12681
+// Function ID: 12682
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 12364, 12365, 7183, 1370, 5102, 2]
+// Dependencies: [19, 12682, 12683, 5840, 1370, 5108, 2]
 // Exports: default
 
-// Module 12363 (useVisibleUserProfileConnectionsAndAppIdentities)
+// Module 12681 (useVisibleUserProfileConnectionsAndAppIdentities)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

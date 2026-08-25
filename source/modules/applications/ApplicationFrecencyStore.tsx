@@ -1,13 +1,13 @@
-// Module ID: 8488
-// Function ID: 8489
+// Module ID: 8495
+// Function ID: 8496
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1390, 1340, 4486, 685, 1954, 4561, 12, 589, 709, 2]
+// Dependencies: [1390, 1340, 4409, 685, 1955, 4466, 12, 589, 709, 2]
 
-// Module 8488 (handleUserSettingsProtoStoreChange)
+// Module 8495 (handleUserSettingsProtoStoreChange)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4561 */;
+import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4466 */;
 import closure_2 from "participantFromServer" /* 1390 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;

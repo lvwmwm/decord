@@ -1,18 +1,18 @@
-// Module ID: 7200
-// Function ID: 7201
+// Module ID: 5857
+// Function ID: 5858
 // Name: RoleDot
-// Dependencies: [19, 17, 1991, 1984, 676, 21, 4668, 712, 7201, 4069, 7204, 7205, 4096, 1236, 7202, 7210, 7220, 4739, 5438, 589, 7222, 7223, 2]
+// Dependencies: [19, 17, 1992, 1985, 676, 21, 4380, 712, 5858, 4070, 5861, 5862, 4097, 1236, 5859, 5867, 5878, 4376, 4949, 589, 5880, 5881, 2]
 // Exports: default
 
-// Module 7200 (RoleDot)
+// Module 5857 (RoleDot)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 1985 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function RoleDot(color) {
@@ -184,8 +184,8 @@ export default function UserProfileRolesCard(userId) {
     obj[0] = guildId;
     obj[1] = roles;
     obj[2] = callback(RolesList, obj);
-    tmp4 = callback(guildId(7223), obj);
-    const tmp7 = guildId(7223);
+    tmp4 = callback(guildId(5881), obj);
+    const tmp7 = guildId(5881);
   }
   return tmp4;
 };

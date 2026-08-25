@@ -1,14 +1,14 @@
-// Module ID: 16366
-// Function ID: 16367
+// Module ID: 16398
+// Function ID: 16399
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 1391, 1980, 676, 4014, 8761, 8781, 8770, 1231, 2]
+// Dependencies: [5, 19, 1391, 1981, 676, 4015, 10475, 10725, 10736, 1231, 2]
 // Exports: default
 
-// Module 16366 (useTransitionToConnectedActivityInVoice)
+// Module 16398 (useTransitionToConnectedActivityInVoice)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "handleConnectionOpen" /* 1981 */;
 import { ComponentActions } from "ME" /* 676 */;
 
 const require = arg1;
@@ -46,7 +46,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -98,7 +98,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                       }
                     }
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else if (arg0 === 1) {
                   c4 = 3;

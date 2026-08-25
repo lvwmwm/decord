@@ -1,14 +1,14 @@
-// Module ID: 8634
-// Function ID: 8635
+// Module ID: 8642
+// Function ID: 8643
 // Name: KeyIcon
-// Dependencies: [19, 21, 712, 4099, 8635, 2]
+// Dependencies: [19, 21, 712, 4100, 8643, 2]
 // Exports: KeyIcon
 
-// Module 8634 (KeyIcon)
+// Module 8642 (KeyIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 8635 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 8643 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

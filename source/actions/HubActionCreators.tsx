@@ -1,11 +1,11 @@
-// Module ID: 11959
-// Function ID: 11960
-// Dependencies: [5, 676, 5232, 503, 1404, 530, 709, 2]
+// Module ID: 12288
+// Function ID: 12289
+// Dependencies: [5, 676, 4601, 503, 1404, 530, 709, 2]
 
-// Module 11959
+// Module 12288
 import encodeProperties from "encodeProperties" /* 503 */;
 import sendRequest from "sendRequest" /* 530 */;
-import _modDef5232 from "module_5232" /* 5232 */;
+import _modDef4601 from "module_4601" /* 4601 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("actions/HubActionCreators.t
 
 export default {
   signup(email, school) {
-    let obj = _modDef5232;
+    let obj = _modDef4601;
     obj = { url: Endpoints.HUB_WAITLIST_SIGNUP, body: obj, trackedActionData: null, rejectWithError: null };
     obj = { email, school };
     obj[2] = {
@@ -101,7 +101,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -196,7 +196,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -236,7 +236,7 @@ export default {
                 return obj4;
               } else {
                 c5 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (1 === tmp7) {

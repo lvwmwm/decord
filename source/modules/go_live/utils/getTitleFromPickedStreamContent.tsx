@@ -1,10 +1,10 @@
-// Module ID: 4660
-// Function ID: 4661
+// Module ID: 13382
+// Function ID: 13383
 // Name: getTitleFromPickedStreamContent
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 4660 (getTitleFromPickedStreamContent)
+// Module 13382 (getTitleFromPickedStreamContent)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

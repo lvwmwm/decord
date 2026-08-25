@@ -1,14 +1,14 @@
-// Module ID: 11772
-// Function ID: 11773
+// Module ID: 12112
+// Function ID: 12113
 // Name: getGuildPowerupsBoostInfoText
-// Dependencies: [4266, 1236, 2368, 2]
+// Dependencies: [4267, 1236, 2369, 2]
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 11772 (getGuildPowerupsBoostInfoText)
+// Module 12112 (getGuildPowerupsBoostInfoText)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2368 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import messagesProxyDefault from "messagesProxy" /* 2369 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4267 */;
 
 const BoostInfoType = BoostedGuildTiers.BoostInfoType;
 const result = set.fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupsBoostInfoText.tsx");

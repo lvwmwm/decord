@@ -1,23 +1,23 @@
-// Module ID: 15532
-// Function ID: 15533
+// Module ID: 15564
+// Function ID: 15565
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 1398, 21, 4668, 712, 7213, 6987, 1297, 12003, 1236, 8122, 15426, 10034, 2]
+// Dependencies: [19, 17, 1398, 21, 4380, 712, 5870, 5502, 1297, 12331, 1236, 8118, 15456, 9876, 2]
 // Exports: default
 
-// Module 15532 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 15564 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 6987 */;
-import ActionSheet from "ActionSheet" /* 7213 */;
-import Form from "Form" /* 8122 */;
-import registerAssetDefault from "registerAsset" /* 12003 */;
-import registerAssetDefault2 from "registerAsset" /* 15426 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5502 */;
+import ActionSheet from "ActionSheet" /* 5870 */;
+import Form from "Form" /* 8118 */;
+import registerAssetDefault from "registerAsset" /* 12331 */;
+import registerAssetDefault2 from "registerAsset" /* 15456 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { StaticChannelRoute } from "set" /* 1398 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

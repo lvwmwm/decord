@@ -1,12 +1,12 @@
-// Module ID: 11672
-// Function ID: 11673
-// Dependencies: [19, 4025, 1391, 11188, 676, 21, 589, 1222, 5047, 10568, 11554, 1306, 7339, 6815, 11665, 1236, 2]
+// Module ID: 12015
+// Function ID: 12016
+// Dependencies: [19, 4026, 1391, 11530, 676, 21, 589, 1222, 4588, 10365, 9223, 1306, 6065, 5338, 12008, 1236, 2]
 
-// Module 11672
+// Module 12015
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "initialize" /* 4025 */;
+import closure_5 from "initialize" /* 4026 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import { TextAreaCta } from "TextAreaCta" /* 11188 */;
+import { TextAreaCta } from "TextAreaCta" /* 11530 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -86,8 +86,8 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
     const intl8 = tmp2(1236).intl;
     obj[4] = intl8.string(tmp2(1236).t.RLch70);
     obj[5] = callback2;
-    let tmp15Result = jsx(guildId(11665), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
-    const tmp14 = guildId(11665);
+    let tmp15Result = jsx(guildId(12008), { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null });
+    const tmp14 = guildId(12008);
   } else {
     if (channel.isReadonlyAnnouncementsChannel) {
       obj = { type: "button-action", message: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonPrimaryText: null, buttonPrimaryOnPress: null };
@@ -116,9 +116,9 @@ const memoResult = importAllResult.memo(function ChatInputGuardLurking(channel) 
       obj1[2] = intl2.string(tmp2(1236).t.RLch70);
       obj1[3] = callback2;
     }
-    tmp15Result = jsx(guildId(11665), obj1);
+    tmp15Result = jsx(guildId(12008), obj1);
     const tmp15 = jsx;
-    const tmp17 = guildId(11665);
+    const tmp17 = guildId(12008);
   }
   return tmp15Result;
 });

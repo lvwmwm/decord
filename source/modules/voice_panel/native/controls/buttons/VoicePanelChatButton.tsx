@@ -1,14 +1,14 @@
-// Module ID: 16502
-// Function ID: 16503
+// Module ID: 16534
+// Function ID: 16535
 // Name: ChatButton
-// Dependencies: [19, 21, 4668, 712, 11488, 16494, 16443, 16482, 16495, 1236, 16503, 7228, 6905, 2]
+// Dependencies: [19, 21, 4380, 712, 11840, 16526, 16475, 16514, 16527, 1236, 16535, 5887, 4902, 2]
 // Exports: default
 
-// Module 16502 (ChatButton)
+// Module 16534 (ChatButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);

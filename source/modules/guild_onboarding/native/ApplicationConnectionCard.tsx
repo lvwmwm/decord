@@ -1,12 +1,12 @@
-// Module ID: 7176
-// Function ID: 7177
+// Module ID: 5833
+// Function ID: 5834
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 4482, 676, 21, 589, 7177, 7178, 1236, 7180, 7187, 698, 5047, 7192, 2]
+// Dependencies: [19, 4421, 676, 21, 589, 5834, 5835, 1236, 5837, 5844, 698, 4588, 5849, 2]
 // Exports: default
 
-// Module 7176 (ApplicationConnectionCard)
+// Module 5833 (ApplicationConnectionCard)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "addApplication" /* 4482 */;
+import closure_4 from "addApplication" /* 4421 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

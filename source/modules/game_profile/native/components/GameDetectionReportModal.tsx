@@ -1,17 +1,17 @@
-// Module ID: 12081
-// Function ID: 12082
+// Module ID: 12406
+// Function ID: 12407
 // Name: ReportContent
-// Dependencies: [32, 19, 17, 21, 4668, 712, 1500, 9138, 7638, 5265, 1236, 5437, 6399, 6345, 4739, 8140, 8139, 8110, 4750, 8131, 6343, 2]
+// Dependencies: [32, 19, 17, 21, 4380, 712, 1500, 9431, 7459, 4611, 1236, 6117, 5432, 5376, 4376, 8136, 8135, 7935, 4815, 8127, 5889, 2]
 // Exports: default
 
-// Module 12081 (ReportContent)
+// Module 12406 (ReportContent)
 import ThemesDefault from "Themes" /* 712 */;
-import NavigationStack from "NavigationStack" /* 6343 */;
+import NavigationStack from "NavigationStack" /* 5889 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function ReportContent(applicationId) {
@@ -128,7 +128,7 @@ function ReportContent(applicationId) {
     const intl4 = tmp2(tmp3[10]).intl;
     obj1[2] = intl4.string(tmp2(tmp3[10]).t.IQHicr);
     const items3 = [tmp15(tmp2(tmp3[14]).Text, obj1), ];
-    let obj2 = { value: "Array", onChange: false, hasIcons: null, children: "box-none" };
+    let obj2 = { value: "Array", onChange: false, hasIcons: null, children: 500 };
     obj2[1] = function onChange(arg0) {
       closure_0 = arg0;
       const timerId = setTimeout(() => {

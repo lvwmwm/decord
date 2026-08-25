@@ -1,14 +1,14 @@
-// Module ID: 10974
-// Function ID: 10975
+// Module ID: 10916
+// Function ID: 10917
 // Name: canStreamWithSettings
-// Dependencies: [4529, 10975, 10976, 2]
+// Dependencies: [4439, 10917, 10918, 2]
 // Exports: default
 
-// Module 10974 (canStreamWithSettings)
+// Module 10916 (canStreamWithSettings)
 import set from "set" /* 2 */;
-import getGoLiveAutoQualityExperimentConfig from "getGoLiveAutoQualityExperimentConfig" /* 10975 */;
-import canUseStreamSettingDefault from "canUseStreamSetting" /* 10976 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4529 */;
+import getGoLiveAutoQualityExperimentConfig from "getGoLiveAutoQualityExperimentConfig" /* 10917 */;
+import canUseStreamSettingDefault from "canUseStreamSetting" /* 10918 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4439 */;
 
 ({ ApplicationStreamSettingRequirements: c3, ApplicationStreamPresets: c4 } = RESOLUTION_720);
 const result = set.fileFinishedImporting("modules/go_live/utils/canStreamWithSettings.tsx");

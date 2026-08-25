@@ -1,15 +1,15 @@
-// Module ID: 12015
-// Function ID: 12016
+// Module ID: 11266
+// Function ID: 11267
 // Name: GuildIconWithChannelTypeSizes
-// Dependencies: [19, 17, 21, 7226, 4668, 712, 6870, 11837, 8441, 1297, 2]
+// Dependencies: [19, 17, 21, 5885, 4380, 712, 4866, 11267, 8447, 1297, 2]
 // Exports: GuildIconWithChannelType
 
-// Module 12015 (GuildIconWithChannelTypeSizes)
+// Module 11266 (GuildIconWithChannelTypeSizes)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -33,7 +33,7 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   ({ guildIconSize, typeIconSize } = obj[size]);
   typeIconPadding = tmp4.typeIconPadding;
   const gap = tmp4.gap;
-  const tmp5 = typeIconSize(7226).ImageSizes[guildIconSize];
+  const tmp5 = typeIconSize(5885).ImageSizes[guildIconSize];
   dependencyMap = tmp5;
   const sum = typeIconSize + 2 * typeIconPadding;
   React = sum;
@@ -47,18 +47,18 @@ export const GuildIconWithChannelType = function GuildIconWithChannelType(arg0) 
   const items2 = [typeIconSize];
   const memo1 = React.useMemo(() => ({ width: c3, height: c3, padding: typeIconPadding }), items1);
   const memo2 = React.useMemo(() => ({ width: typeIconSize, height: typeIconSize }), items2);
-  obj = typeIconSize(6870);
+  obj = typeIconSize(4866);
   const channelIcon = obj.getChannelIcon(channel);
-  obj = { "aria-label": tmp, shape: typeIconSize(8441).CutoutShape.Circle, size: memo, gap, depthX: sum1, depthY: sum1, children: null };
+  obj = { "aria-label": tmp, shape: typeIconSize(8447).CutoutShape.Circle, size: memo, gap, depthX: sum1, depthY: sum1, children: null };
   obj = {};
   const tmp3 = callback3();
   const merged1 = Object.assign(merged);
   obj.size = guildIconSize;
-  const items3 = [callback(typeIconPadding(7226), obj), ];
-  const tmp12 = typeIconPadding(7226);
+  const items3 = [callback(typeIconPadding(5885), obj), ];
+  const tmp12 = typeIconPadding(5885);
   const items4 = [tmp3.typeIconWrapper, memo1];
   const items5 = [memo2];
   items3[1] = callback(View, { style: items4, children: callback(typeIconSize(1297).Icon, { style: items5, source: channelIcon }) });
   obj[6] = items3;
-  return callback2(typeIconSize(11837).Pile, obj);
+  return callback2(typeIconSize(11267).Pile, obj);
 };

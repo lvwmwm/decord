@@ -1,20 +1,20 @@
-// Module ID: 15497
-// Function ID: 15498
+// Module ID: 15529
+// Function ID: 15530
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 4669, 1910, 4266, 676, 1388, 505, 21, 4668, 712, 589, 4314, 4285, 11731, 11713, 15498, 11697, 11739, 1236, 2368, 11741, 15499, 11738, 4269, 15495, 15500, 15501, 11769, 15502, 9351, 2]
+// Dependencies: [19, 4372, 1910, 4267, 676, 1388, 505, 21, 4380, 712, 589, 4315, 4286, 12073, 12055, 15530, 12039, 12081, 1236, 2369, 12083, 15531, 12080, 4270, 15527, 15532, 15533, 12109, 15534, 8800, 2]
 // Exports: default
 
-// Module 15497 (useGuildPowerupsCoachmark)
+// Module 15529 (useGuildPowerupsCoachmark)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4267 */;
 import ME from "ME" /* 676 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 ({ GUILD_TAG_BADGE_PACKS_WAVE_ONE_SKU_ID_SET: closure_6, GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: error, GuildPowerupType: closure_8 } = BoostedGuildTiers);

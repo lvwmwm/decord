@@ -1,10 +1,10 @@
-// Module ID: 14092
-// Function ID: 14093
+// Module ID: 9670
+// Function ID: 9671
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useIsBadgeManagementEnabled
 
-// Module 14092 (apexExperiment)
+// Module 9670 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 5256
-// Function ID: 5257
+// Module ID: 5329
+// Function ID: 5330
 // Name: rebuild
-// Dependencies: [1395, 1391, 1910, 4777, 1980, 4974, 4026, 1398, 11, 5257, 5274, 709, 12, 589, 2]
+// Dependencies: [1395, 1391, 1910, 4395, 1981, 5330, 4027, 1398, 11, 4619, 5331, 709, 12, 589, 2]
 
-// Module 5256 (rebuild)
+// Module 5329 (rebuild)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import set2 from "set" /* 1398 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 5257 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5274 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4619 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5331 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "generateOldThreadCutoff" /* 4777 */;
-import closure_8 from "handleConnectionOpen" /* 1980 */;
-import closure_9 from "handleThreadCreateOrUpdate" /* 4974 */;
-import closure_10 from "storeThread" /* 4026 */;
+import closure_7 from "generateOldThreadCutoff" /* 4395 */;
+import closure_8 from "handleConnectionOpen" /* 1981 */;
+import closure_9 from "handleThreadCreateOrUpdate" /* 5330 */;
+import closure_10 from "storeThread" /* 4027 */;
 
 function rebuild() {
   closure_12 = {};

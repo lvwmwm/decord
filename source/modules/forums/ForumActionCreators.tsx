@@ -1,14 +1,14 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8563
+// Function ID: 8564
 // Name: withErrorHandling
-// Dependencies: [5, 676, 4832, 1236, 709, 530, 7550, 8556, 8557, 8558, 7552, 2]
+// Dependencies: [5, 676, 4744, 1236, 709, 530, 7368, 8564, 8565, 8566, 7370, 2]
 
-// Module 8555 (withErrorHandling)
+// Module 8563 (withErrorHandling)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen" /* 8556 */;
-import prototype from "prototype" /* 8557 */;
-import maybeMarkSeen from "maybeMarkSeen" /* 8558 */;
+import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen" /* 8564 */;
+import prototype from "prototype" /* 8565 */;
+import maybeMarkSeen from "maybeMarkSeen" /* 8566 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 
@@ -44,7 +44,7 @@ function _withErrorHandling() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -202,7 +202,7 @@ export default {
     closure_1 = arg1;
     return callback(function*() {
       closure_0 = tmp4;
-      const obj2 = v0(7550);
+      const obj2 = v0(7368);
       yield obj2.unarchiveThreadIfNecessary(closure_1_0);
       const HTTP = closure_1_0(530).HTTP;
       const obj3 = { url: null, body: null, rejectWithError: null };
@@ -246,7 +246,7 @@ export default {
       obj1[1] = closure_1_1;
       closure_1_1(709).dispatch(obj1);
       dependencyMap = 1;
-      const obj13 = closure_1_1(7550);
+      const obj13 = closure_1_1(7368);
       yield obj13.searchThreads(closure_1_0, closure_1_1, dependencyMap, c3, c4);
       if (1 === tmp7) {
         dependencyMap = 0;
@@ -264,8 +264,8 @@ export default {
         obj4[0] = length;
         obj4[1] = closure_1;
         obj4[2] = length.length;
-        closure_1_0(7552).trackForumSearched(obj4);
-        const obj7 = closure_1_0(7552);
+        closure_1_0(7370).trackForumSearched(obj4);
+        const obj7 = closure_1_0(7370);
         const obj5 = { type: "FORUM_SEARCH_SUCCESS", channelId: null, threadIds: null };
         obj5[1] = closure_1;
         obj5[2] = length;

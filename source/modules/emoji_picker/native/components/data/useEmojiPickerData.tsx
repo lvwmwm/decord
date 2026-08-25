@@ -1,15 +1,15 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 8849
+// Function ID: 8850
 // Name: useEmojiPickerData
-// Dependencies: [19, 6764, 6768, 9338, 589, 9407, 9408, 9409, 9411, 2]
+// Dependencies: [19, 5282, 5286, 8787, 589, 8850, 8851, 8852, 8854, 2]
 // Exports: default
 
-// Module 9406 (useEmojiPickerData)
+// Module 8849 (useEmojiPickerData)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 6764 */;
-import { LoadState } from "getEmojiToGroupId" /* 6764 */;
-import { EmojiCategoryTypes } from "EmojiCategoryTypes" /* 6768 */;
-import { EmojiPickerRenderingDataType as closure_7 } from "IMAGE_SIZE" /* 9338 */;
+import closure_4 from "getEmojiToGroupId" /* 5282 */;
+import { LoadState } from "getEmojiToGroupId" /* 5282 */;
+import { EmojiCategoryTypes } from "EmojiCategoryTypes" /* 5286 */;
+import { EmojiPickerRenderingDataType as closure_7 } from "IMAGE_SIZE" /* 8787 */;
 
 const require = arg1;
 let obj = { PLACEHOLDER: 0, [0]: "PLACEHOLDER", TITLE: 1, [1]: "TITLE", EMOJI_ROW: 2, [2]: "EMOJI_ROW", EMOJI_ROW_SLIM: 3, [3]: "EMOJI_ROW_SLIM", EMOJI_ROW_NSFW: 4, [4]: "EMOJI_ROW_NSFW", FOOTER_UPSELL: 5, [5]: "FOOTER_UPSELL", PREMIUM_INLINE_ROADBLOCK: 6, [6]: "PREMIUM_INLINE_ROADBLOCK", NATIVE_SECTION: 7, [7]: "NATIVE_SECTION" };

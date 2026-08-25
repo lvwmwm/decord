@@ -1,39 +1,39 @@
-// Module ID: 8203
-// Function ID: 8204
+// Module ID: 8199
+// Function ID: 8200
 // Name: createThreadEmbed
-// Dependencies: [17, 4669, 4482, 4199, 6764, 8202, 8204, 4025, 8205, 5018, 4026, 7309, 1302, 1218, 1391, 1991, 1910, 4033, 7620, 1922, 4670, 8197, 676, 8207, 4989, 8208, 11, 8209, 5272, 1236, 8210, 8211, 8212, 4828, 1403, 7546, 8218, 6851, 8219, 8221, 5390, 8223, 8340, 8341, 8358, 5024, 5006, 4069, 8359, 8363, 8292, 8403, 4819, 1438, 1435, 8406, 1297, 7201, 8463, 1370, 8464, 4013, 5229, 8465, 8466, 4066, 8468, 8476, 8414, 7270, 712, 8477, 8226, 8479, 8480, 8337, 8483, 12795, 12812, 12831, 12833, 12847, 8229, 8230, 12848, 12851, 12852, 12853, 8231, 12854, 2]
+// Dependencies: [17, 4372, 4421, 4200, 5282, 8198, 8200, 4026, 8201, 7201, 4027, 6029, 1302, 1218, 1391, 1992, 1910, 4034, 7441, 1922, 4373, 8193, 676, 8203, 4574, 8204, 11, 8205, 6053, 1236, 8206, 8207, 8208, 4740, 1403, 7364, 8214, 4843, 8215, 8217, 5997, 8219, 8341, 8342, 8364, 6016, 7206, 4070, 8365, 8369, 8293, 8411, 4634, 1438, 1435, 8414, 1297, 5858, 8470, 1370, 8471, 4014, 5232, 8472, 8473, 4067, 8475, 8483, 8422, 5994, 712, 8484, 8222, 8486, 8487, 8338, 8490, 12782, 12799, 12818, 12820, 12834, 8225, 8226, 12835, 12838, 12839, 12840, 8227, 12841, 2]
 
-// Module 8203 (createThreadEmbed)
+// Module 8199 (createThreadEmbed)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import computeChannelName from "computeChannelName" /* 4989 */;
-import processMessage from "processMessage" /* 5018 */;
-import Changeset from "Changeset" /* 8197 */;
-import items6 from "items" /* 8207 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8208 */;
-import _formatMessageCountLabel from "_formatMessageCountLabel" /* 8209 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4669 */;
-import closure_5 from "addApplication" /* 4482 */;
-import closure_6 from "isSyncedModeThemesEnabled" /* 4199 */;
-import closure_7 from "getEmojiToGroupId" /* 6764 */;
-import closure_8 from "handleMessageSendFailedAutomod" /* 8202 */;
-import closure_9 from "deleteNonce" /* 8204 */;
-import closure_10 from "initialize" /* 4025 */;
-import closure_11 from "set" /* 8205 */;
-import closure_12 from "processMessage" /* 5018 */;
-import closure_14 from "storeThread" /* 4026 */;
-import closure_15 from "updateState" /* 7309 */;
+import computeChannelName from "computeChannelName" /* 4574 */;
+import processMessage from "processMessage" /* 7201 */;
+import Changeset from "Changeset" /* 8193 */;
+import items6 from "items" /* 8203 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8204 */;
+import _formatMessageCountLabel from "_formatMessageCountLabel" /* 8205 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_5 from "addApplication" /* 4421 */;
+import closure_6 from "isSyncedModeThemesEnabled" /* 4200 */;
+import closure_7 from "getEmojiToGroupId" /* 5282 */;
+import closure_8 from "handleMessageSendFailedAutomod" /* 8198 */;
+import closure_9 from "deleteNonce" /* 8200 */;
+import closure_10 from "initialize" /* 4026 */;
+import closure_11 from "set" /* 8201 */;
+import closure_12 from "processMessage" /* 7201 */;
+import closure_14 from "storeThread" /* 4027 */;
+import closure_15 from "updateState" /* 6029 */;
 import closure_16 from "handleThemeChange" /* 1302 */;
 import closure_17 from "fetchFingerprint" /* 1218 */;
 import closure_18 from "ensureGuildLoaded" /* 1391 */;
-import closure_19 from "trackCommunicationDisabled" /* 1991 */;
+import closure_19 from "trackCommunicationDisabled" /* 1992 */;
 import closure_20 from "createGuildRecordFromRust" /* 1910 */;
-import closure_21 from "markAllUserIdListsStale" /* 4033 */;
-import closure_22 from "initialize" /* 7620 */;
+import closure_21 from "markAllUserIdListsStale" /* 4034 */;
+import closure_22 from "initialize" /* 7441 */;
 import closure_23 from "mergeGuildAvatar" /* 1922 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4670 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4373 */;
 import ME from "ME" /* 676 */;
 
 function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, arg5) {
@@ -54,7 +54,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
         let string2 = _formatMessageCountLabel.formatMessageCountLabel(count, channel1.id);
         if (null != count) {
           if (count > 0) {
-            let tmp15Result = tmp15(5272);
+            let tmp15Result = tmp15(6053);
             if (tmp15Result.isChannelSpoilerGated(channel1)) {
               let obj = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: false, backgroundColor: null };
               obj[0] = channelName;
@@ -79,8 +79,8 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                 obj[2] = string2;
                 const intl4 = tmp15(1236).intl;
                 obj[3] = intl4.string(tmp15(1236).t.ZTo4HS);
-                tmp15Result = tmp15(8210);
-                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(8211));
+                tmp15Result = tmp15(8206);
+                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(8207));
                 obj[6] = backgroundColor;
                 obj1 = obj;
               } else {
@@ -812,7 +812,7 @@ function createMessageContent(message) {
                   merged = items4.join(", ");
                 }
                 const tmp13Result26 = tmp13(tmp3[34]);
-                const obj24 = { id: null, channelId: null, guildId: null, flags: null, type: null, nonce: null, state: null, reactions: null, referencedMessage: null, threadEmbed: null, forwardInfo: null, mentioned: null, edited: null, editedTimestamp: null, editedColor: null, textColor: null, officialMessageColor: null, linkColor: null, tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: null, tagBackgroundColor: null, tagType: null, tagIconUrl: null, opTagText: null, opTagTextColor: null, opTagBackgroundColor: null, stateAccessibilityLabel: null, constrainedWidth: null, gifAutoPlay: null, animateEmoji: null, username: null, avatarURL: null, avatarDecorationURL: null, authorId: null, usernameColor: null, roleColor: null, roleColors: null, shouldShowRoleDot: null, shouldShowRoleOnName: null, showLinkDecorations: null, colorString: null, roleIcon: null, connectionsRoleTag: null, timestamp: null, timestampTooltip: null, timestampColor: null, timestampAccessibilityLabel: null, content: null, isEditing: null, renderContentOnly: null, surveyIndication: null, ephemeralIndication: null, interactionStatus: null, executedCommand: null, components: null, feedbackColor: null, highlightColor: null, embeds: null, giftCodes: null, codedLinks: null, activityInstanceEmbed: null, activityRichPresenceInviteEmbed: null, useAttachmentGridLayout: null, useAttachmentUploadPreview: null, attachments: null, attachmentsOpacity: null, stickers: null, communicationDisabled: null, isFirstForumPostMessage: null, postActions: null, isCurrentUserMessageAuthor: null, usingGradientTheme: null, swipeToReplyIconUrl: null, swipeToEditIconUrl: null, postPreviewEmbeds: null, obscureLearnMoreLabel: null, safetyPolicyNoticeEmbed: null, pollData: null, sharedClientTheme: null, safetySystemNotificationEmbed: null, ctaButton: null, audioAttachmentBackgroundColor: null, accessibilityActions: null, clanTagGuildId: null, clanTag: null, clanBadgeUrl: null, lobbyAdditionalName: null, lobbyTagIconUrl: null, isFirst: null, gameApplicationId: null, isAnnouncementChannel: null, displayNameStyles: null, voiceChannelBadge: null };
+                const obj24 = { id: null, channelId: null, guildId: null, flags: null, type: null, nonce: null, state: null, reactions: null, referencedMessage: null, threadEmbed: null, forwardInfo: null, mentioned: null, edited: null, editedTimestamp: null, editedColor: null, textColor: null, officialMessageColor: null, linkColor: null, tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: null, tagBackgroundColor: null, tagType: null, tagIconUrl: null, opTagText: null, opTagTextColor: null, opTagBackgroundColor: null, stateAccessibilityLabel: null, constrainedWidth: null, gifAutoPlay: null, animateEmoji: null, username: null, avatarURL: null, avatarDecorationURL: null, authorId: null, usernameColor: null, roleColor: null, roleColors: null, shouldShowRoleDot: null, shouldShowRoleOnName: null, showLinkDecorations: null, colorString: null, roleIcon: null, connectionsRoleTag: null, timestamp: null, timestampTooltip: null, timestampColor: null, timestampAccessibilityLabel: null, content: null, isEditing: null, renderContentOnly: null, surveyIndication: null, ephemeralIndication: null, interactionStatus: null, executedCommand: null, components: null, feedbackColor: null, highlightColor: null, embeds: null, giftCodes: null, codedLinks: null, activityInstanceEmbed: null, activityRichPresenceInviteEmbed: null, useAttachmentGridLayout: null, useAttachmentUploadPreview: null, attachments: null, attachmentsOpacity: null, stickers: null, communicationDisabled: null, isFirstForumPostMessage: null, postActions: null, isCurrentUserMessageAuthor: null, usingGradientTheme: null, swipeToReplyIconUrl: null, swipeToEditIconUrl: null, postPreviewEmbeds: null, obscureLearnMoreLabel: null, safetyPolicyNoticeEmbed: null, pollData: null, sharedClientTheme: null, safetySystemNotificationEmbed: null };
                 ({ id: obj71[0], channel_id: obj71[1] } = message);
                 merged = guildId;
                 merged = tmp13(tmp3[71]).createVoiceChannelBadge(message.author.id, guildId);
@@ -1175,30 +1175,31 @@ function createMessageContent(message) {
                     const tmp13Result49 = tmp13(tmp3[85]);
                     obj24[81] = tmp13(tmp3[86]).createSafetySystemNotificationEmbed(message);
                     const tmp13Result50 = tmp13(tmp3[86]);
-                    obj24[82] = tmp13(tmp3[87]).createCtaButton(message.id, message.channel_id, tmp4);
+                    merged = obj24;
+                    merged = Object.assign(tmp13(tmp3[87]).createCtaButtons(message.id, message.channel_id, tmp4));
                     merged = undefined;
                     if (merged) {
                       merged = tmp4.embedBackgroundColor;
                     }
-                    obj24[83] = merged;
+                    obj24.audioAttachmentBackgroundColor = merged;
                     const tmp13Result51 = tmp13(tmp3[87]);
-                    obj24[84] = tmp13(tmp3[88]).createMessageAccessibilityActions(message, channel);
-                    obj24[85] = merged;
-                    obj24[86] = merged;
-                    obj24[87] = merged;
-                    obj24[88] = additionalName;
-                    obj24[89] = merged;
-                    obj24[90] = isFirst;
-                    obj24[91] = id;
+                    obj24.accessibilityActions = tmp13(tmp3[88]).createMessageAccessibilityActions(message, channel);
+                    obj24.clanTagGuildId = merged;
+                    obj24.clanTag = merged;
+                    obj24.clanBadgeUrl = merged;
+                    obj24.lobbyAdditionalName = additionalName;
+                    obj24.lobbyTagIconUrl = merged;
+                    obj24.isFirst = isFirst;
+                    obj24.gameApplicationId = id;
                     merged = undefined;
                     if (channel != null) {
                       merged = channel.type;
                     }
                     merged = constants4;
-                    obj24[92] = merged === constants4.GUILD_ANNOUNCEMENT;
+                    obj24.isAnnouncementChannel = merged === constants4.GUILD_ANNOUNCEMENT;
                     const tmp13Result52 = tmp13(tmp3[88]);
-                    obj24[93] = tmp13(tmp3[89]).createDisplayNameStylesMobile(message.author, member);
-                    obj24[94] = merged;
+                    obj24.displayNameStyles = tmp13(tmp3[89]).createDisplayNameStylesMobile(message.author, member);
+                    obj24.voiceChannelBadge = merged;
                     return obj24;
                   }
                   defaultUsernameColor = tmp4.defaultUsernameColor;
@@ -1228,7 +1229,7 @@ function createMessageContent(message) {
       applicationIconSource = author.getAvatarSource(undefined);
       tmp13Result7 = tmp13(tmp3[53]);
     }
-    parseMessageMarkupResult = { content: "PX_16", hasSpoilerEmbeds: "???", hasBailedAst: "???" };
+    parseMessageMarkupResult = { content: "PX_16", hasSpoilerEmbeds: "minForce", hasBailedAst: "maxForce" };
     const tmp13Result1 = tmp13(tmp3[42]);
   }
 }

@@ -1,10 +1,10 @@
-// Module ID: 12345
-// Function ID: 12346
+// Module ID: 12663
+// Function ID: 12664
 // Name: getWidgetAssetURL
 // Dependencies: [676, 1435, 2]
 // Exports: getWidgetAssetURL
 
-// Module 12345 (getWidgetAssetURL)
+// Module 12663 (getWidgetAssetURL)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getAvatarURL from "getAvatarURL" /* 1435 */;

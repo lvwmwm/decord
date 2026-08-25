@@ -1,15 +1,15 @@
-// Module ID: 10148
-// Function ID: 10149
+// Module ID: 9998
+// Function ID: 9999
 // Name: NotificationSettingsMessageUnreadGuildActionSheet
-// Dependencies: [19, 5048, 676, 5049, 685, 21, 10137, 10149, 1236, 6835, 10130, 6832, 2]
+// Dependencies: [19, 4589, 676, 4590, 685, 21, 9987, 9999, 1236, 5368, 9982, 5363, 2]
 // Exports: default
 
-// Module 10148 (NotificationSettingsMessageUnreadGuildActionSheet)
+// Module 9998 (NotificationSettingsMessageUnreadGuildActionSheet)
 import noopAll from "noop" /* 19 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 10149 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 5048 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 9999 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4589 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 5049 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4590 */;
 import { GuildNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 685 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,7 +19,7 @@ let result = require("set").fileFinishedImporting("modules/notifications/setting
 
 export default function NotificationSettingsMessageUnreadGuildActionSheet(guildId) {
   const _require = guildId;
-  let obj = _require(10137);
+  let obj = _require(9987);
   const guildPresetSettings = obj.useGuildPresetSettings(guildId.guildId);
   ({ unread, notification } = guildPresetSettings);
   let stringResult;

@@ -1,16 +1,16 @@
-// Module ID: 16760
-// Function ID: 16761
+// Module ID: 16792
+// Function ID: 16793
 // Name: DiscoverabilityLandingScene
-// Dependencies: [19, 17, 11899, 1922, 676, 21, 4668, 712, 6401, 1500, 589, 11906, 691, 16761, 11926, 11919, 503, 11918, 6343, 1236, 2]
+// Dependencies: [19, 17, 12233, 1922, 676, 21, 4380, 712, 5373, 1500, 589, 12240, 691, 16793, 12260, 12253, 503, 12252, 5889, 1236, 2]
 
-// Module 16760 (DiscoverabilityLandingScene)
+// Module 16792 (DiscoverabilityLandingScene)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useContactSyncModalStore } from "ContactSyncModes" /* 11899 */;
+import { useContactSyncModalStore } from "ContactSyncModes" /* 12233 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function DiscoverabilityLandingScene(onComplete) {
@@ -84,7 +84,7 @@ function DiscoverabilityNameScene(onComplete) {
     name = "";
   }
   obj[2] = name;
-  obj[1] = jsx(allowPhone(11919), { onNext: callback, loading: false, initialName: null });
+  obj[1] = jsx(allowPhone(12253), { onNext: callback, loading: false, initialName: null });
   return <tmp6 onNext={callback} loading={false} initialName={null} />;
 }
 class RedesignDiscoverabilityModal {

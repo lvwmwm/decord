@@ -1,12 +1,12 @@
-// Module ID: 13238
-// Function ID: 13239
+// Module ID: 13377
+// Function ID: 13378
 // Name: logger
-// Dependencies: [32, 5, 4537, 4, 4263, 4574, 501, 13177, 4007, 6959, 709, 2]
+// Dependencies: [32, 5, 4447, 4, 4264, 4479, 501, 13316, 4008, 5457, 709, 2]
 
-// Module 13238 (logger)
+// Module 13377 (logger)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import { WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER as closure_5 } from "StreamIssueReportReasons" /* 4537 */;
+import { WINDOWS_SETTINGS_SOUND_DEVICE_DEEPLINK_SEMVER as closure_5 } from "StreamIssueReportReasons" /* 4447 */;
 
 const require = arg1;
 const logger = new require("log").Logger("InputWatcher");
@@ -32,7 +32,7 @@ class InputWatcher {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -164,7 +164,7 @@ class InputWatcher {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -207,7 +207,7 @@ class InputWatcher {
             obj2[2] = v0.lastUpdateTime;
             obj1.dispatch(obj2);
             table = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp12) {
             table = tmp;
             throw tmp12;

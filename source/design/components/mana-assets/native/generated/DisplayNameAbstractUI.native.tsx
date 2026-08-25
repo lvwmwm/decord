@@ -1,14 +1,14 @@
-// Module ID: 5665
-// Function ID: 5666
+// Module ID: 6351
+// Function ID: 6352
 // Name: DisplayNameAbstractUI
-// Dependencies: [21, 5454, 5666, 2]
+// Dependencies: [21, 5374, 6352, 2]
 // Exports: DisplayNameAbstractUI
 
-// Module 5665 (DisplayNameAbstractUI)
+// Module 6351 (DisplayNameAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5666 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6352 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameAbstractUI.native.tsx");

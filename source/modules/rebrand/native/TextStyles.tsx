@@ -1,10 +1,10 @@
-// Module ID: 6819
-// Function ID: 6820
+// Module ID: 5342
+// Function ID: 5343
 // Name: createTextStyle
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 6819 (createTextStyle)
+// Module 5342 (createTextStyle)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

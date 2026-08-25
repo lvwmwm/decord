@@ -1,10 +1,10 @@
-// Module ID: 8370
-// Function ID: 8371
+// Module ID: 8376
+// Function ID: 8377
 // Name: _fetchMessageInteractionData
 // Dependencies: [5, 676, 709, 530, 2]
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed
 
-// Module 8370 (_fetchMessageInteractionData)
+// Module 8376 (_fetchMessageInteractionData)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;

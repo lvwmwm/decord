@@ -1,13 +1,13 @@
-// Module ID: 15548
-// Function ID: 15549
+// Module ID: 15580
+// Function ID: 15581
 // Name: useTotalPossibleBoostCount
-// Dependencies: [19, 4266, 676, 2]
+// Dependencies: [19, 4267, 676, 2]
 // Exports: default
 
-// Module 15548 (useTotalPossibleBoostCount)
+// Module 15580 (useTotalPossibleBoostCount)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4266 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4267 */;
 import ME from "ME" /* 676 */;
 
 let useMemo = noop.useMemo;

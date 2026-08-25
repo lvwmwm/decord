@@ -1,14 +1,14 @@
-// Module ID: 15806
-// Function ID: 15807
+// Module ID: 15838
+// Function ID: 15839
 // Name: PaintbrushThinIcon
-// Dependencies: [19, 21, 712, 4099, 15807, 2]
+// Dependencies: [19, 21, 712, 4100, 15839, 2]
 // Exports: PaintbrushThinIcon
 
-// Module 15806 (PaintbrushThinIcon)
+// Module 15838 (PaintbrushThinIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 15807 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 15839 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 6857
-// Function ID: 6858
+// Module ID: 4849
+// Function ID: 4850
 // Name: set
 // Dependencies: [2]
 
-// Module 6857 (set)
+// Module 4849 (set)
 import set from "set" /* 2 */;
 
 let set = new Set(["/attachments/", "/ephemeral-attachments/"]);

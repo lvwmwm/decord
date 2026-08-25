@@ -1,13 +1,13 @@
-// Module ID: 16838
-// Function ID: 16839
+// Module ID: 16870
+// Function ID: 16871
 // Name: getChannelsAllowedToUnlink
-// Dependencies: [1981, 4024, 9988, 589, 2]
+// Dependencies: [1982, 4025, 9836, 589, 2]
 // Exports: getChannelsAllowedToUnlink, useChannelsAllowedToUnlink
 
-// Module 16838 (getChannelsAllowedToUnlink)
-import closure_2 from "comparator" /* 1981 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator" /* 1981 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
+// Module 16870 (getChannelsAllowedToUnlink)
+import closure_2 from "comparator" /* 1982 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator" /* 1982 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4025 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");

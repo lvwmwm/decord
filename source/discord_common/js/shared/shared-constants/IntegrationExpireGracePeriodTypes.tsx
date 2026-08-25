@@ -1,9 +1,9 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 16942
+// Function ID: 16943
 // Name: IntegrationExpireGracePeriodTypes
 // Dependencies: [2]
 
-// Module 16910 (IntegrationExpireGracePeriodTypes)
+// Module 16942 (IntegrationExpireGracePeriodTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationExpireGracePeriodTypes.tsx");

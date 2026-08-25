@@ -1,15 +1,15 @@
-// Module ID: 17119
-// Function ID: 17120
+// Module ID: 17151
+// Function ID: 17152
 // Name: getDeliveredNotifications
-// Dependencies: [5, 17, 5388, 4777, 676, 3, 17120, 11628, 11, 5043, 500, 8986, 698, 2]
+// Dependencies: [5, 17, 7242, 4395, 676, 3, 17152, 10861, 11, 5367, 500, 8948, 698, 2]
 
-// Module 17119 (getDeliveredNotifications)
+// Module 17151 (getDeliveredNotifications)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 5043 */;
+import initializeDefault from "initialize" /* 5367 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateGuildUnreadSentinel" /* 5388 */;
-import closure_6 from "generateOldThreadCutoff" /* 4777 */;
+import closure_5 from "updateGuildUnreadSentinel" /* 7242 */;
+import closure_6 from "generateOldThreadCutoff" /* 4395 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;
@@ -37,7 +37,7 @@ function _getDeliveredNotifications() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -114,7 +114,7 @@ function _updateAndClearStaleNotifications() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -193,7 +193,7 @@ function _updateAndClearStaleNotifications() {
             }
           })();
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp8) {
         c2 = tmp;
@@ -218,8 +218,8 @@ let prototype = function NativeNotificationsManager() {
   applyArgumentsResult.handleAck = function handleAck(channelId) {
     channelId = channelId.channelId;
     if (obj.isIOS()) {
-      const result = callback(11628).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
-      const obj2 = callback(11628);
+      const result = callback(10861).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
+      const obj2 = callback(10861);
     }
     if (null != channelId) {
       const DCDNotificationManager = closure_4.DCDNotificationManager;
@@ -241,7 +241,7 @@ let prototype = function NativeNotificationsManager() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -387,7 +387,7 @@ let prototype = function NativeNotificationsManager() {
                 if (null == closure_3) {
                   c6 = 0;
                   logger = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   const _Map = Map;
                   map = new Map();

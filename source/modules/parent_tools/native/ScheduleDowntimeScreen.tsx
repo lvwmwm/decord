@@ -1,16 +1,16 @@
-// Module ID: 14359
-// Function ID: 14360
+// Module ID: 14389
+// Function ID: 14390
 // Name: OverlappingSchedulesWarning
-// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4346, 8865, 2008, 4668, 712, 1297, 4738, 4739, 1236, 2336, 1500, 7423, 10056, 647, 14360, 14361, 4337, 6317, 7216, 6322, 6840, 4750, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4347, 9122, 2009, 4380, 712, 1297, 4813, 4376, 1236, 2337, 1500, 7021, 9911, 647, 14390, 14391, 4338, 5873, 5874, 5480, 5434, 4815, 2]
 // Exports: default
 
-// Module 14359 (OverlappingSchedulesWarning)
+// Module 14389 (OverlappingSchedulesWarning)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button2 from "Button" /* 1297 */;
-import messagesProxyDefault from "messagesProxy" /* 2336 */;
-import Stack from "Stack" /* 4738 */;
-import Text from "Text" /* 4739 */;
+import messagesProxyDefault from "messagesProxy" /* 2337 */;
+import Text from "Text" /* 4376 */;
+import Stack from "Stack" /* 4813 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -18,7 +18,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function OverlappingSchedulesWarning(conflictingEntries) {
@@ -81,7 +81,7 @@ export default function ScheduleDowntimeScreen() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -322,7 +322,7 @@ export default function ScheduleDowntimeScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -431,7 +431,7 @@ export default function ScheduleDowntimeScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -567,9 +567,9 @@ export default function ScheduleDowntimeScreen() {
     obj10[1] = callback2(tmp2(stringResult[14]).Text, obj11);
     obj10[3] = function handleStartTimePress() {
       const intl = lib(rule[15]).intl;
-      const f112270 = (first1) => {
+      const f112505 = (first1) => {
         callback(first1);
-        let obj = f112270(closure_1_2[19]);
+        let obj = f112505(closure_1_2[19]);
         const result = (obj.timeToMinutes(first1) + 540) % 1440;
         obj = { hours: Math.floor(result / 60), minutes: result % 60 };
         callback2(obj);

@@ -1,10 +1,10 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 11987
+// Function ID: 11988
 // Name: _toPropertyKey
-// Dependencies: [109, 19, 11645, 2]
+// Dependencies: [109, 19, 11988, 2]
 
-// Module 11644 (_toPropertyKey)
-import getChildMapping from "getChildMapping" /* 11645 */;
+// Module 11987 (_toPropertyKey)
+import getChildMapping from "getChildMapping" /* 11988 */;
 import closure_2 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -200,7 +200,7 @@ prototype["_handleDonePerform"] = function _handleDonePerform(closure_1, closure
   }
   const _currentlyTransitioningKeys = self._currentlyTransitioningKeys;
   _currentlyTransitioningKeys.delete(closure_1);
-  const childMapping = _require(11645).getChildMapping(self.props.children);
+  const childMapping = _require(11988).getChildMapping(self.props.children);
   if (flag) {
     if (null != childMapping) {
       if (childMapping.hasOwnProperty(closure_1)) {

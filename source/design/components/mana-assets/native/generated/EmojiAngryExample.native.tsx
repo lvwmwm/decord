@@ -1,14 +1,14 @@
-// Module ID: 5681
-// Function ID: 5682
+// Module ID: 6367
+// Function ID: 6368
 // Name: EmojiAngryExample
-// Dependencies: [21, 5454, 5682, 2]
+// Dependencies: [21, 5374, 6368, 2]
 // Exports: EmojiAngryExample
 
-// Module 5681 (EmojiAngryExample)
+// Module 6367 (EmojiAngryExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5682 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6368 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiAngryExample.native.tsx");

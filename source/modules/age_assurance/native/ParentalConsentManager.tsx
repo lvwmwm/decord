@@ -1,10 +1,10 @@
-// Module ID: 16767
-// Function ID: 16768
+// Module ID: 16799
+// Function ID: 16800
 // Name: onPostConnectionOpen
-// Dependencies: [5, 1922, 676, 1625, 4358, 500, 5043, 4075, 16768, 16770, 698, 1208, 16771, 2]
+// Dependencies: [5, 1922, 676, 1625, 4359, 500, 5367, 4076, 16800, 16802, 698, 1208, 16803, 2]
 
-// Module 16767 (onPostConnectionOpen)
-import initializeDefault from "initialize" /* 5043 */;
+// Module 16799 (onPostConnectionOpen)
+import initializeDefault from "initialize" /* 5367 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { AnalyticEvents } from "ME" /* 676 */;
@@ -41,7 +41,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -119,7 +119,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         }
         v0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         v0 = tmp;
         throw tmp9;
@@ -210,7 +210,7 @@ prototype["collectAgeSignal"] = function collectAgeSignal() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

@@ -1,10 +1,10 @@
-// Module ID: 7975
-// Function ID: 7976
+// Module ID: 7797
+// Function ID: 7798
 // Name: useStoreFrontPrice
-// Dependencies: [19, 676, 4042, 2]
+// Dependencies: [19, 676, 4043, 2]
 // Exports: default
 
-// Module 7975 (useStoreFrontPrice)
+// Module 7797 (useStoreFrontPrice)
 import closure_2 from "noop" /* 19 */;
 import { PriceSetAssignmentPurchaseTypes as closure_3 } from "ME" /* 676 */;
 
@@ -30,12 +30,12 @@ export default function useStoreFrontPrice(arg0, arg1) {
       if (null == tmp3) {
         priceState = closure_1_4.COUNTRY_PRICE_UNAVAILABLE;
       } else {
-        obj = callback(4042);
+        obj = callback(4043);
         const countryPrices = obj.getCountryPrices(tmp.id, closure_1_3.MOBILE);
         obj = { purchaseType: null, currency: null };
         obj[0] = closure_1_3.MOBILE;
         obj[1] = tmp11.currency;
-        const experimentalGetPriceResult = callback(4042).experimentalGetPrice(tmp.id, obj);
+        const experimentalGetPriceResult = callback(4043).experimentalGetPrice(tmp.id, obj);
         if (countryPrices.countryCode !== tmp11.country) {
           priceState = closure_1_4.MISMATCHING_COUNTRIES;
         } else if (null == experimentalGetPriceResult) {
@@ -44,7 +44,7 @@ export default function useStoreFrontPrice(arg0, arg1) {
           priceState = closure_1_4.PRICE_AVAILABLE;
         }
         const price = experimentalGetPriceResult;
-        const obj2 = callback(4042);
+        const obj2 = callback(4043);
       }
     }
     return { price, priceState };

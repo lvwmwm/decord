@@ -1,20 +1,20 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16080
+// Function ID: 16081
 // Name: DirectMessageIcon
-// Dependencies: [19, 17, 1391, 1910, 4024, 4564, 1922, 676, 21, 4668, 712, 589, 1297, 4989, 1500, 4773, 5438, 4739, 1236, 4984, 9955, 6870, 9489, 7177, 8966, 2]
+// Dependencies: [19, 17, 1391, 1910, 4025, 4469, 1922, 676, 21, 4380, 712, 589, 1297, 4574, 1500, 4391, 4949, 4376, 1236, 4566, 9813, 4866, 9617, 5834, 8930, 2]
 
-// Module 16048 (DirectMessageIcon)
+// Module 16080 (DirectMessageIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_8 from "sortActivity" /* 4564 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_8 from "sortActivity" /* 4469 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 function DirectMessageIcon(channel) {
@@ -107,8 +107,8 @@ function ChannelSubtitle(channel) {
     return privateChannelUserTagsString;
   }, items1);
   if (!channel.isPrivate()) {
-    stateFromStores = tmp(4984).channelTypeString(channel);
-    const tmpResult = tmp(4984);
+    stateFromStores = tmp(4566).channelTypeString(channel);
+    const tmpResult = tmp(4566);
   }
   let tmp4 = null;
   if (null != stateFromStores) {
@@ -116,7 +116,7 @@ function ChannelSubtitle(channel) {
     if ("" !== stateFromStores) {
       obj = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: null };
       obj[3] = stateFromStores;
-      tmp4 = callback(tmp(4739).Text, obj);
+      tmp4 = callback(tmp(4376).Text, obj);
     }
   }
   return tmp4;
@@ -236,7 +236,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7177)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5834)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = importAllResult.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -250,7 +250,7 @@ function DMChannelNameHeader(channel) {
   }, items);
   const tmp = callback2();
   const items1 = [tmp.container, channel.containerStyle];
-  return callback(channel(5438).PressableOpacity, { style: items1, onPress: callback, children: callback(ChannelNameHeaderContent, { channel }) });
+  return callback(channel(4949).PressableOpacity, { style: items1, onPress: callback, children: callback(ChannelNameHeaderContent, { channel }) });
 }
 function DefaultChannelNameHeader(arg0) {
   ({ channel, containerStyle } = arg0);

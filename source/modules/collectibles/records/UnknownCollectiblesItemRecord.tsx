@@ -1,12 +1,12 @@
-// Module ID: 5314
-// Function ID: 5315
+// Module ID: 7156
+// Function ID: 7157
 // Name: fromServer
-// Dependencies: [1948, 1949, 2]
+// Dependencies: [1949, 1950, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 5314 (fromServer)
-import fromServerDefault from "fromServer" /* 1948 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+// Module 7156 (fromServer)
+import fromServerDefault from "fromServer" /* 1949 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 
 require = arg1;
 fromServerDefault;

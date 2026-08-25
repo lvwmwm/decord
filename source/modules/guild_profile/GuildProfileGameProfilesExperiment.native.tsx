@@ -1,10 +1,10 @@
-// Module ID: 9566
-// Function ID: 9567
+// Module ID: 12413
+// Function ID: 12414
 // Name: useGuildProfileGameProfilesExperiment
 // Dependencies: [1472, 2]
 // Exports: useGuildProfileGameProfilesExperiment
 
-// Module 9566 (useGuildProfileGameProfilesExperiment)
+// Module 12413 (useGuildProfileGameProfilesExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

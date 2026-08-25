@@ -1,55 +1,55 @@
-// Module ID: 6751
-// Function ID: 6752
+// Module ID: 5266
+// Function ID: 5267
 // Name: NOOP
-// Dependencies: [32, 6752, 6764, 4785, 6805, 6806, 5256, 4026, 1395, 1985, 1930, 1391, 6809, 1981, 1991, 1984, 1910, 4999, 4024, 4564, 4033, 1980, 4201, 1922, 4526, 676, 6810, 1398, 3, 6811, 1430, 4366, 6812, 1903, 4223, 6813, 4969, 12, 1990, 1370, 6814, 4029, 4989, 1236, 11, 7330, 4069, 7333, 5288, 7334, 7335, 1374, 7336, 7337, 6860, 7341, 2]
+// Dependencies: [32, 5267, 5282, 4851, 5324, 5325, 5329, 4027, 1395, 1986, 1930, 1391, 5332, 1982, 1992, 1985, 1910, 4623, 4025, 4469, 4034, 1981, 4202, 1922, 4429, 676, 5333, 1398, 3, 5334, 1430, 4367, 5335, 1903, 4224, 5336, 5093, 12, 1991, 1370, 5337, 4030, 4574, 1236, 11, 6055, 4070, 6058, 5950, 6059, 6060, 1374, 6061, 6062, 4856, 6067, 2]
 // Exports: getBoosterMap, getGameProfileMatchTier
 
-// Module 6751 (NOOP)
+// Module 5266 (NOOP)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
 import isNullOrEmpty from "isNullOrEmpty" /* 1903 */;
-import nameFromUserDefault from "nameFromUser" /* 4223 */;
-import setDefault from "set" /* 4366 */;
-import StickerFormat from "StickerFormat" /* 4969 */;
-import computeChannelName from "computeChannelName" /* 4989 */;
-import useCanSeeOnboardingHome from "useCanSeeOnboardingHome" /* 5288 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6812 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 6813 */;
-import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 6814 */;
-import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 7334 */;
-import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 7335 */;
+import nameFromUserDefault from "nameFromUser" /* 4224 */;
+import setDefault from "set" /* 4367 */;
+import computeChannelName from "computeChannelName" /* 4574 */;
+import StickerFormat from "StickerFormat" /* 5093 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5335 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 5336 */;
+import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5337 */;
+import useCanSeeOnboardingHome from "useCanSeeOnboardingHome" /* 5950 */;
+import useGuildOnboardingAvailable from "useGuildOnboardingAvailable" /* 6059 */;
+import compareChannelsByScoreAndPositionDefault from "compareChannelsByScoreAndPosition" /* 6060 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import fromType from "fromType" /* 6752 */;
-import closure_7 from "getEmojiToGroupId" /* 6764 */;
-import closure_8 from "handleSoundCreateOrUpdate" /* 4785 */;
-import closure_9 from "handleStickersStoreUpdate" /* 6805 */;
-import closure_10 from "loadSavedGuildStickers" /* 6806 */;
-import closure_11 from "rebuild" /* 5256 */;
-import closure_12 from "storeThread" /* 4026 */;
+import fromType from "fromType" /* 5267 */;
+import closure_7 from "getEmojiToGroupId" /* 5282 */;
+import closure_8 from "handleSoundCreateOrUpdate" /* 4851 */;
+import closure_9 from "handleStickersStoreUpdate" /* 5324 */;
+import closure_10 from "loadSavedGuildStickers" /* 5325 */;
+import closure_11 from "rebuild" /* 5329 */;
+import closure_12 from "storeThread" /* 4027 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
-import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1985 */;
+import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1986 */;
 import closure_21 from "createdAt" /* 1930 */;
 import closure_22 from "ensureGuildLoaded" /* 1391 */;
-import closure_23 from "handleChannelSelect" /* 6809 */;
-import comparator from "comparator" /* 1981 */;
-import closure_26 from "comparator" /* 1981 */;
-import closure_27 from "trackCommunicationDisabled" /* 1991 */;
-import closure_28 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_23 from "handleChannelSelect" /* 5332 */;
+import comparator from "comparator" /* 1982 */;
+import closure_26 from "comparator" /* 1982 */;
+import closure_27 from "trackCommunicationDisabled" /* 1992 */;
+import closure_28 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_29 from "createGuildRecordFromRust" /* 1910 */;
-import closure_30 from "reinjectEphemerals" /* 4999 */;
-import closure_31 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_32 from "sortActivity" /* 4564 */;
-import closure_33 from "markAllUserIdListsStale" /* 4033 */;
-import closure_34 from "handleConnectionOpen" /* 1980 */;
-import closure_35 from "handleConnectionOpen" /* 4201 */;
+import closure_30 from "reinjectEphemerals" /* 4623 */;
+import closure_31 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_32 from "sortActivity" /* 4469 */;
+import closure_33 from "markAllUserIdListsStale" /* 4034 */;
+import closure_34 from "handleConnectionOpen" /* 1981 */;
+import closure_35 from "handleConnectionOpen" /* 4202 */;
 import closure_36 from "mergeGuildAvatar" /* 1922 */;
-import closure_37 from "addSku" /* 4526 */;
+import closure_37 from "addSku" /* 4429 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelId } from "set" /* 1398 */;
-import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1990 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1991 */;
 
 require = arg1;
 function NOOP() {
@@ -219,21 +219,21 @@ function queryMemberList(arg0) {
                             if (substr5 !== normalizeResult) {
                               let tmp33 = num < 50;
                               if (num < 50) {
-                                let tmp28 = tmp12(6812)(toLocaleLowerCaseResult, str4) || tmp12(6812)(normalizeResult, str5);
+                                let tmp28 = tmp12(5335)(toLocaleLowerCaseResult, str4) || tmp12(5335)(normalizeResult, str5);
                                 if (!tmp28) {
-                                  let tmp29 = null != str6 && tmp12(6812)(toLocaleLowerCaseResult, str6);
+                                  let tmp29 = null != str6 && tmp12(5335)(toLocaleLowerCaseResult, str6);
                                   tmp28 = tmp29;
                                 }
                                 if (!tmp28) {
-                                  let tmp30 = null != str7 && tmp12(6812)(normalizeResult, str7);
+                                  let tmp30 = null != str7 && tmp12(5335)(normalizeResult, str7);
                                   tmp28 = tmp30;
                                 }
                                 if (!tmp28) {
-                                  let tmp31 = null != str8 && tmp12(6812)(toLocaleLowerCaseResult, str8);
+                                  let tmp31 = null != str8 && tmp12(5335)(toLocaleLowerCaseResult, str8);
                                   tmp28 = tmp31;
                                 }
                                 if (!tmp28) {
-                                  let tmp32 = null != str9 && tmp12(6812)(normalizeResult, str9);
+                                  let tmp32 = null != str9 && tmp12(5335)(normalizeResult, str9);
                                   tmp28 = tmp32;
                                 }
                                 tmp33 = tmp28;
@@ -367,13 +367,13 @@ function queryMemberList(arg0) {
 function getPriorityForStickerMetadataType(arg0) {
   if (StickerFormat.StickerMetadataTypes.STICKER_NAME === arg0) {
     return 11;
-  } else if (tmp(4969).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
+  } else if (tmp(5093).StickerMetadataTypes.CORRELATED_EMOJI === arg0) {
     return 6;
-  } else if (tmp(4969).StickerMetadataTypes.TAG === arg0) {
+  } else if (tmp(5093).StickerMetadataTypes.TAG === arg0) {
     return 1;
   } else {
-    if (tmp(4969).StickerMetadataTypes.GUILD_NAME !== arg0) {
-      if (tmp(4969).StickerMetadataTypes.PACK_NAME !== arg0) {
+    if (tmp(5093).StickerMetadataTypes.GUILD_NAME !== arg0) {
+      if (tmp(5093).StickerMetadataTypes.PACK_NAME !== arg0) {
         return 1;
       }
     }
@@ -893,10 +893,10 @@ areArraysShallowlyEqual = {
       const mapped = found.map((toLocaleLowerCase) => {
         const toLocaleLowerCaseResult = toLocaleLowerCase.toLocaleLowerCase();
         const obj = { queryLower: toLocaleLowerCaseResult, exactQuery: null, containQuery: null, isFullMatch: false };
-        const regExp = new RegExp("^" + callback(4366).escape(toLocaleLowerCaseResult), "i");
+        const regExp = new RegExp("^" + callback(4367).escape(toLocaleLowerCaseResult), "i");
         obj[1] = regExp;
-        const obj2 = callback(4366);
-        const regExp1 = new RegExp(callback(4366).escape(toLocaleLowerCaseResult), "i");
+        const obj2 = callback(4367);
+        const regExp1 = new RegExp(callback(4367).escape(toLocaleLowerCaseResult), "i");
         obj[2] = regExp1;
         return obj;
       });
@@ -905,17 +905,17 @@ areArraysShallowlyEqual = {
         let obj = { queryLower: null, exactQuery: null, containQuery: null, isFullMatch: true };
         obj[0] = toLocaleLowerCaseResult;
         const _RegExp = RegExp;
-        let obj2 = callback(4366);
+        let obj2 = callback(4367);
         const _HermesInternal = HermesInternal;
-        let regExp = new RegExp("^" + callback(4366).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
+        let regExp = new RegExp("^" + callback(4367).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
         obj[1] = regExp;
         const _RegExp2 = RegExp;
-        const str = callback(4366).escape(toLocaleLowerCaseResult);
-        const obj3 = callback(4366);
-        let regExp1 = new RegExp(callback(4366).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
+        const str = callback(4367).escape(toLocaleLowerCaseResult);
+        const obj3 = callback(4367);
+        let regExp1 = new RegExp(callback(4367).escape(toLocaleLowerCaseResult).replace(" ", "( |-)"), "i");
         obj[2] = regExp1;
         mapped.unshift(obj);
-        const str6 = callback(4366).escape(toLocaleLowerCaseResult);
+        const str6 = callback(4367).escape(toLocaleLowerCaseResult);
       }
       return mapped;
     })(guildId.query, flag2);
@@ -2035,11 +2035,11 @@ areArraysShallowlyEqual = {
         const _RegExp = RegExp;
         let obj2 = toLocaleLowerCaseResult(1903);
         const _HermesInternal = HermesInternal;
-        const regExp = new RegExp("^" + nextResult(4366).escape(stripDiacriticsResult), "i");
+        const regExp = new RegExp("^" + nextResult(4367).escape(stripDiacriticsResult), "i");
         const _RegExp2 = RegExp;
-        const obj3 = nextResult(4366);
+        const obj3 = nextResult(4367);
         const _HermesInternal2 = HermesInternal;
-        const regExp1 = new RegExp("" + nextResult(4366).escape(stripDiacriticsResult), "i");
+        const regExp1 = new RegExp("" + nextResult(4367).escape(stripDiacriticsResult), "i");
         const stickerMetadataArrays = closure_1_10.getStickerMetadataArrays();
         let item = stickerMetadataArrays.forEach((arr) => {
           const item = arr.forEach((arg0, id) => {
@@ -2167,8 +2167,8 @@ areArraysShallowlyEqual = {
       tmp3 = !obj.hasFetchedAllSounds();
     }
     if (tmp3) {
-      const result = _require(7337).maybeFetchSoundboardSounds();
-      const obj2 = _require(7337);
+      const result = _require(6062).maybeFetchSoundboardSounds();
+      const obj2 = _require(6062);
     }
     const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
     const ifNecessary = FrecencyUserSettingsActionCreators.loadIfNecessary();
@@ -2191,7 +2191,7 @@ areArraysShallowlyEqual = {
       return arg0;
     }, []);
     let arr = Array.from(sounds.values());
-    return _require(7341).searchSounds(arg0, reduced, currentUser, channel);
+    return _require(6067).searchSounds(arg0, reduced, currentUser, channel);
   },
   matchSentinel(arg0, arg1, closure_12) {
     const isMatch = regex.test(arg1);

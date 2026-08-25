@@ -1,16 +1,16 @@
-// Module ID: 8470
-// Function ID: 8471
+// Module ID: 8477
+// Function ID: 8478
 // Name: formatExpirationLabel
-// Dependencies: [3978, 1236, 2]
+// Dependencies: [3979, 1236, 2]
 // Exports: default
 
-// Module 8470 (formatExpirationLabel)
+// Module 8477 (formatExpirationLabel)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import tDefault from "t" /* 3978 */;
+import hooksDefault from "hooks" /* 3979 */;
 
 function formatExpirationLabel(expiry) {
-  const tmp2 = tDefault();
+  const tmp2 = hooksDefault();
   if (expiry > tmp2) {
     const diffResult = expiry.diff(tmp2, "days");
     if (diffResult > 1) {

@@ -1,15 +1,15 @@
-// Module ID: 12450
-// Function ID: 12451
+// Module ID: 9272
+// Function ID: 9273
 // Name: ImageButton
-// Dependencies: [19, 17, 21, 4668, 4754, 712, 4755, 4119, 4749, 4753, 4757, 8075, 4739, 2]
+// Dependencies: [19, 17, 21, 4380, 4819, 712, 4820, 4120, 4814, 4818, 4822, 7897, 4376, 2]
 
-// Module 12450 (ImageButton)
+// Module 9272 (ImageButton)
 import ThemesDefault from "Themes" /* 712 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4754 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4819 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -18,9 +18,9 @@ let c3 = importAllResult;
 let closure_8 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   let MEDIUM_BUTTON_PADDING = MINIMUM_HIT_AREA.LARGE_BUTTON_PADDING;
   if ("sm" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(4754).SMALL_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(4819).SMALL_BUTTON_PADDING;
   } else if ("md" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(4754).MEDIUM_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(4819).MEDIUM_BUTTON_PADDING;
   }
   const sum = arg1 + 2 * MEDIUM_BUTTON_PADDING;
   const buttonBorderRadius = MINIMUM_HIT_AREA.getButtonBorderRadius(arg0);

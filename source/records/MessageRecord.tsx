@@ -1,14 +1,14 @@
-// Module ID: 4034
-// Function ID: 4035
+// Module ID: 4035
+// Function ID: 4036
 // Name: hasFlag
-// Dependencies: [1931, 676, 1403, 4035, 5031, 7548, 8807, 2]
+// Dependencies: [1931, 676, 1403, 4036, 6025, 7366, 9691, 2]
 // Exports: isMessageComponentsV2
 
-// Module 4034 (hasFlag)
+// Module 4035 (hasFlag)
 import hasFlag from "hasFlag" /* 1403 */;
 import toJSDefault from "toJS" /* 1931 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5031 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8807 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6025 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9691 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

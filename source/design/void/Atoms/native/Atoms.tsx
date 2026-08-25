@@ -1,17 +1,17 @@
-// Module ID: 13549
-// Function ID: 13550
+// Module ID: 13584
+// Function ID: 13585
 // Name: RNTextInput
-// Dependencies: [17, 2, 8154, 13550]
+// Dependencies: [17, 2, 8150, 13585]
 
-// Module 13549 (RNTextInput)
+// Module 13584 (RNTextInput)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import _modDef8154 from "module_8154" /* 8154 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 13550 */;
+import _modDef8150 from "module_8150" /* 8150 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 13585 */;
 
 const result = set.fileFinishedImporting("design/void/Atoms/native/Atoms.tsx");
 
 export const RNTextInput = get_ActivityIndicator.TextInput;
 export const TextInputProps = get_ActivityIndicator.TextInputProps;
-export const LegacyText = _modDef8154;
+export const LegacyText = _modDef8150;
 export const Text = AccessibilityAnnouncer.Text;

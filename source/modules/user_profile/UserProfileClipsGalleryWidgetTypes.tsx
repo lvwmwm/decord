@@ -1,12 +1,12 @@
-// Module ID: 5379
-// Function ID: 5380
+// Module ID: 7235
+// Function ID: 7236
 // Name: convertClip
-// Dependencies: [5371, 659, 2]
+// Dependencies: [7228, 659, 2]
 
-// Module 5379 (convertClip)
+// Module 7235 (convertClip)
 import set from "set" /* 2 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
-import WidgetType from "WidgetType" /* 5371 */;
+import WidgetType from "WidgetType" /* 7228 */;
 
 function convertClip(gameId) {
   let obj = { game_id: gameId.gameId, title: gameId.title, tags: gameId.tags };

@@ -1,9 +1,9 @@
-// Module ID: 9117
-// Function ID: 9118
+// Module ID: 11234
+// Function ID: 11235
 // Name: MAX_DESTINATION_COUNT
 // Dependencies: [2]
 
-// Module 9117 (MAX_DESTINATION_COUNT)
+// Module 11234 (MAX_DESTINATION_COUNT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/forwarding/ForwardConstants.tsx");

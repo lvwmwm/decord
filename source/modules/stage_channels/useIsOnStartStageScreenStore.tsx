@@ -1,13 +1,13 @@
-// Module ID: 8098
-// Function ID: 8099
+// Module ID: 7920
+// Function ID: 7921
 // Name: setIsOnStartStageScreen
-// Dependencies: [19, 4024, 1980, 644, 705, 589, 1399, 8099, 2]
+// Dependencies: [19, 4025, 1981, 644, 705, 589, 1399, 7921, 2]
 // Exports: setIsOnStartStageScreen, useUpdateIsOnStartStageScreenEffect
 
-// Module 8098 (setIsOnStartStageScreen)
+// Module 7920 (setIsOnStartStageScreen)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_5 from "handleConnectionOpen" /* 1980 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_5 from "handleConnectionOpen" /* 1981 */;
 import keys from "keys" /* 644 */;
 
 const require = arg1;
@@ -29,7 +29,7 @@ export const useUpdateIsOnStartStageScreenEffect = function useUpdateIsOnStartSt
   const stateFromStores1 = _require(589).useStateFromStores(items1, () => closure_1_4.can(id(1399).MODERATE_STAGE_CHANNEL_PERMISSIONS, id), items2);
   let tmp3 = stateFromStores1;
   if (stateFromStores1) {
-    tmp3 = !stateFromStores(8099)(id.id);
+    tmp3 = !stateFromStores(7921)(id.id);
   }
   dependencyMap = tmp3;
   const items3 = [stateFromStores, tmp3];

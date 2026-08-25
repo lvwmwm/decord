@@ -1,9 +1,9 @@
-// Module ID: 4639
-// Function ID: 4640
+// Module ID: 4544
+// Function ID: 4545
 // Name: VADAggressiveness
 // Dependencies: [2]
 
-// Module 4639 (VADAggressiveness)
+// Module 4544 (VADAggressiveness)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/native/VoiceEngine.tsx");

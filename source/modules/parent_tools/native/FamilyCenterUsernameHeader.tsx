@@ -1,16 +1,16 @@
-// Module ID: 14317
-// Function ID: 14318
+// Module ID: 14347
+// Function ID: 14348
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 4668, 4223, 4739, 2]
+// Dependencies: [19, 17, 21, 4380, 4224, 4376, 2]
 // Exports: default
 
-// Module 14317 (FamilyCenterUsernameHeader)
+// Module 14347 (FamilyCenterUsernameHeader)
 import noopAll from "noop" /* 19 */;
-import nameFromUserDefault from "nameFromUser" /* 4223 */;
-import Text from "Text" /* 4739 */;
+import nameFromUserDefault from "nameFromUser" /* 4224 */;
+import Text from "Text" /* 4376 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 noopAll;

@@ -1,11 +1,11 @@
-// Module ID: 13409
-// Function ID: 13410
-// Dependencies: [4292, 1434, 1236, 589, 7264, 7265, 4017, 2]
+// Module ID: 13444
+// Function ID: 13445
+// Dependencies: [4293, 1434, 1236, 589, 5987, 5988, 4018, 2]
 
-// Module 13409
+// Module 13444
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_2 from "getHash" /* 4292 */;
+import closure_2 from "getHash" /* 4293 */;
 import { isGuildOwner } from "GuildNSFWContentLevel" /* 1434 */;
 
 require = arg1;
@@ -26,14 +26,14 @@ export default {
     return initialize.useStateFromStores(items, () => (id) => {
       let result = callback2(id, arg1);
       if (result) {
-        let obj = callback(7264);
+        let obj = callback(5987);
         obj = { guild: null, isOwner: true, canManageGuildRoleSubscriptions: true, isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
         obj[0] = id;
-        obj[3] = callback(7265).isUserInCreatorMonetizationEligibleCountry();
-        const obj3 = callback(7265);
-        obj[4] = callback(4017).shouldRestrictUpdatingCreatorMonetizationSettings(id.id);
+        obj[3] = callback(5988).isUserInCreatorMonetizationEligibleCountry();
+        const obj3 = callback(5988);
+        obj[4] = callback(4018).shouldRestrictUpdatingCreatorMonetizationSettings(id.id);
         result = obj.canSeeGuildRoleSubscriptionSettings(obj);
-        const obj4 = callback(4017);
+        const obj4 = callback(4018);
       }
       return result;
     }, [], initialize.statesWillNeverBeEqual);

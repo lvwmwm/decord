@@ -1,22 +1,22 @@
-// Module ID: 9485
-// Function ID: 9486
+// Module ID: 9612
+// Function ID: 9613
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1922, 7224, 21, 4668, 712, 589, 9486, 4801, 1236, 9487, 8448, 9323, 2]
+// Dependencies: [19, 17, 1922, 5882, 21, 4380, 712, 589, 9613, 4573, 1236, 9614, 8454, 9596, 2]
 // Exports: default
 
-// Module 9485 (UserProfileCustomStatusActionSheet)
+// Module 9612 (UserProfileCustomStatusActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import getNicknameDefault from "getNickname" /* 4801 */;
-import _modDef8448 from "module_8448" /* 8448 */;
-import EmojiImageDefault from "EmojiImage" /* 9323 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 9486 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 9487 */;
+import getNicknameDefault from "getNickname" /* 4573 */;
+import _modDef8454 from "module_8454" /* 8454 */;
+import EmojiImageDefault from "EmojiImage" /* 9596 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 9613 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 9614 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 7224 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 5882 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 noopAll;
@@ -62,7 +62,7 @@ export default function UserProfileCustomStatusActionSheet(user) {
   obj1 = { style: tmp.statusPreviewContainer, children: null };
   const obj2 = { style: tmp.avatarContainer, children: null };
   const tmp6 = useCustomStatusActivityForUserDefault(user.id);
-  obj2[1] = callback(_modDef8448, { user, statusStyle: tmp.avatarStatus });
+  obj2[1] = callback(_modDef8454, { user, statusStyle: tmp.avatarStatus });
   const items2 = [callback(View, obj2), callback(EmojiImageDefault, { customStatusActivity: tmp6, hasCustomProfileTheme: false, showFullStatus: true, style: tmp.customStatusBubble, previewEmoji, previewText })];
   obj1[1] = items2;
   obj[1] = callback2(View, obj1);

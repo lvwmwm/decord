@@ -1,17 +1,17 @@
-// Module ID: 15963
-// Function ID: 15964
+// Module ID: 15995
+// Function ID: 15996
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 1391, 11559, 8546, 15964, 8545, 676, 1398, 11558, 11583, 1487, 4096, 1236, 8812, 4093, 1500, 15942, 15965, 1231, 5272, 9029, 4775, 4773, 8096, 2008, 8700, 5257, 12884, 6854, 6896, 8561, 1222, 11580, 2]
+// Dependencies: [5, 19, 1391, 11906, 8554, 15996, 8553, 676, 1398, 11905, 11930, 1487, 4097, 1236, 9079, 4094, 1500, 15974, 15997, 1231, 6053, 8991, 4393, 4391, 7918, 2009, 4615, 4619, 12871, 4846, 4892, 8569, 1222, 11927, 2]
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 15963 (handleVoiceOrStageChannelConnectPress)
+// Module 15995 (handleVoiceOrStageChannelConnectPress)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "prototype" /* 11559 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8546 */;
-import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 15964 */;
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 8545 */;
+import closure_6 from "prototype" /* 11906 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8554 */;
+import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 15996 */;
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 8553 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1398 */;
 
@@ -44,7 +44,7 @@ function _handleVoiceOrStageChannelConnectPress() {
           obj[0] = openGuildVoiceModal;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,19 +1,19 @@
-// Module ID: 4875
-// Function ID: 4876
+// Module ID: 4998
+// Function ID: 4999
 // Name: getUploadPayload
-// Dependencies: [1995, 1218, 706, 4835, 12, 698, 2]
+// Dependencies: [1996, 1218, 706, 4955, 12, 698, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 4875 (getUploadPayload)
+// Module 4998 (getUploadPayload)
 import applyDefault from "apply" /* 12 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_3 from "_getSystemLocale" /* 1995 */;
+import closure_3 from "_getSystemLocale" /* 1996 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "refreshSourceMapCookie" /* 706 */;
 
 const require = arg1;
-function getUploadPayload(closure_0) {
-  const obj = { filename: closure_0.filename, file_size: closure_0.currentSize, id: applyDefault.uniqueId(), original_content_type: "ct" };
+function getUploadPayload(c0) {
+  const obj = { filename: c0.filename, file_size: c0.currentSize, id: applyDefault.uniqueId(), original_content_type: "a" };
   return obj;
 }
 let result = require("set").fileFinishedImporting("lib/uploader/native/CloudUploaderUtils.tsx");

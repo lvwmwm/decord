@@ -1,45 +1,45 @@
-// Module ID: 10774
-// Function ID: 10775
+// Module ID: 11103
+// Function ID: 11104
 // Name: items
-// Dependencies: [109, 5, 32, 5431, 4482, 7179, 10053, 4374, 8330, 7491, 5018, 10590, 4026, 5412, 1218, 1391, 10680, 1991, 1910, 4363, 7289, 4999, 4024, 4564, 1980, 4201, 7288, 7620, 1922, 8197, 676, 4375, 1924, 5443, 1235, 7197, 10775, 10777, 2008, 10778, 10779, 10819, 10822, 8244, 8700, 7210, 1236, 8547, 8037, 9597, 4346, 9605, 5253, 10838, 10839, 4359, 4373, 10840, 10841, 10493, 10495, 10272, 500, 8295, 7272, 10215, 8293, 10875, 9547, 8966, 11, 10877, 10878, 10589, 4818, 10886, 10950, 4347, 4348, 10911, 1222, 10896, 5430, 6747, 5047, 5237, 8232, 10951, 10952, 1403, 10955, 10963, 10964, 10965, 10966, 10967, 8805, 4093, 10968, 10970, 10712, 4364, 8841, 7544, 1625, 7489, 10986, 6758, 10516, 7518, 4367, 10546, 10547, 8081, 11007, 10390, 7340, 9571, 11010, 4368, 11024, 8810, 698, 5257, 5272, 8096, 4980, 9383, 7230, 8510, 8600, 7767, 5265, 10684, 11032, 7431, 7398, 11033, 10334, 11034, 9214, 503, 4097, 11036, 10494, 11037, 7465, 4810, 1954, 4832, 8369, 11039, 11041, 11045, 8260, 11046, 8101, 8276, 8274, 11047, 11051, 11079, 11080, 4773, 7205, 4096, 11091, 11092, 11093, 4492, 7339, 11094, 11095, 5006, 4997, 5433, 5259, 11097, 10922, 9031, 9029, 11135, 11137, 11140, 8231, 9965, 10842, 11155, 11156, 11157, 9113, 11158, 11161, 11164, 11165, 11172, 11175, 2]
+// Dependencies: [109, 5, 32, 7977, 4421, 5836, 9908, 7132, 8331, 7305, 7201, 10387, 4027, 7265, 1218, 1391, 10481, 1992, 1910, 4364, 10505, 4623, 4025, 4469, 1981, 4202, 5104, 7441, 1922, 8193, 676, 7340, 1924, 7950, 1235, 5854, 11104, 11106, 2009, 11107, 11108, 11143, 11146, 8241, 4615, 5867, 1236, 8555, 7859, 9693, 4347, 9701, 7129, 11162, 11163, 4360, 7339, 11164, 11165, 8757, 8760, 10123, 500, 8296, 5996, 10066, 8294, 11197, 9401, 8930, 11, 11199, 11200, 10386, 4633, 11205, 8231, 4348, 4349, 11229, 1222, 11215, 11305, 5258, 4588, 7114, 8228, 11306, 11307, 1403, 11312, 11320, 11321, 11322, 11323, 11324, 10701, 4094, 11325, 10912, 10520, 4365, 9108, 7362, 1625, 7303, 11326, 5273, 10533, 7332, 4368, 11077, 11078, 7903, 11347, 10241, 6066, 11350, 11352, 8358, 11366, 10705, 698, 4619, 6053, 7918, 5236, 8826, 5940, 8518, 8608, 7588, 4611, 10485, 11374, 7029, 6125, 11375, 10185, 11376, 9497, 503, 4098, 11378, 8759, 11379, 7063, 4627, 1955, 4744, 8375, 11381, 11383, 11387, 8261, 11388, 7923, 8277, 8275, 11389, 11393, 11421, 11422, 4391, 5862, 4097, 11433, 11434, 11435, 4575, 6065, 11436, 11437, 7206, 4621, 7942, 7944, 11439, 11279, 8993, 8991, 11477, 11479, 11482, 8227, 9823, 11166, 11498, 11499, 11500, 11230, 11501, 11504, 11507, 11508, 11514, 11517, 2]
 
-// Module 10774 (items)
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 7197 */;
+// Module 11103 (items)
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5854 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
 import closure_7 from "asyncGeneratorStep" /* 5 */;
 import closure_8 from "_slicedToArray" /* 32 */;
-import closure_9 from "initialize" /* 5431 */;
-import closure_10 from "addApplication" /* 4482 */;
-import closure_11 from "set" /* 7179 */;
-import closure_12 from "computeAlertSettings" /* 10053 */;
-import closure_13 from "scheduledEventSort" /* 4374 */;
-import { isGuildScheduledEventActive as closure_14 } from "scheduledEventSort" /* 4374 */;
-import closure_15 from "getCurrentTime" /* 8330 */;
-import closure_16 from "initializeState" /* 7491 */;
-import closure_17 from "processMessage" /* 5018 */;
-import closure_18 from "handleQuickSwitcherUpdate" /* 10590 */;
-import closure_19 from "storeThread" /* 4026 */;
-import closure_20 from "recomputeAffinities" /* 5412 */;
+import closure_9 from "initialize" /* 7977 */;
+import closure_10 from "addApplication" /* 4421 */;
+import closure_11 from "set" /* 5836 */;
+import closure_12 from "computeAlertSettings" /* 9908 */;
+import closure_13 from "scheduledEventSort" /* 7132 */;
+import { isGuildScheduledEventActive as closure_14 } from "scheduledEventSort" /* 7132 */;
+import closure_15 from "getCurrentTime" /* 8331 */;
+import closure_16 from "initializeState" /* 7305 */;
+import closure_17 from "processMessage" /* 7201 */;
+import closure_18 from "handleQuickSwitcherUpdate" /* 10387 */;
+import closure_19 from "storeThread" /* 4027 */;
+import closure_20 from "recomputeAffinities" /* 7265 */;
 import closure_21 from "fetchFingerprint" /* 1218 */;
 import closure_22 from "ensureGuildLoaded" /* 1391 */;
-import closure_23 from "updateGiftCode" /* 10680 */;
-import closure_24 from "trackCommunicationDisabled" /* 1991 */;
+import closure_23 from "updateGiftCode" /* 10481 */;
+import closure_24 from "trackCommunicationDisabled" /* 1992 */;
 import closure_25 from "createGuildRecordFromRust" /* 1910 */;
-import closure_26 from "updateInvite" /* 4363 */;
-import closure_27 from "updateActivities" /* 7289 */;
-import closure_28 from "reinjectEphemerals" /* 4999 */;
-import closure_29 from "getUncachedChannelPermissions" /* 4024 */;
-import closure_30 from "sortActivity" /* 4564 */;
-import closure_31 from "handleConnectionOpen" /* 1980 */;
-import closure_32 from "handleConnectionOpen" /* 4201 */;
-import closure_33 from "filterPlayingActivities" /* 7288 */;
-import closure_34 from "initialize" /* 7620 */;
+import closure_26 from "updateInvite" /* 4364 */;
+import closure_27 from "updateActivities" /* 10505 */;
+import closure_28 from "reinjectEphemerals" /* 4623 */;
+import closure_29 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_30 from "sortActivity" /* 4469 */;
+import closure_31 from "handleConnectionOpen" /* 1981 */;
+import closure_32 from "handleConnectionOpen" /* 4202 */;
+import closure_33 from "filterPlayingActivities" /* 5104 */;
+import closure_34 from "initialize" /* 7441 */;
 import closure_35 from "mergeGuildAvatar" /* 1922 */;
-import { SeparatorAction } from "Changeset" /* 8197 */;
+import { SeparatorAction } from "Changeset" /* 8193 */;
 import ME from "ME" /* 676 */;
-import { InviteTypes } from "InviteSendStates" /* 4375 */;
+import { InviteTypes } from "InviteSendStates" /* 7340 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
-import { SafetySystemNotificationCtaType as closure_61 } from "SafetyHubView" /* 5443 */;
+import { SafetySystemNotificationCtaType as closure_61 } from "SafetyHubView" /* 7950 */;
 import { OpenThreadAnalyticsLocations as closure_62 } from "AbortCodes" /* 1235 */;
 
 const require = arg1;
@@ -2156,7 +2156,7 @@ class MessagesHandlers {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -2270,7 +2270,7 @@ class MessagesHandlers {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -2289,25 +2289,25 @@ class MessagesHandlers {
                 closure_1 = tmp2;
                 isReveal = undefined;
                 closure_1 = undefined;
-                const nativeSyntheticEventData = callback(10778).getNativeSyntheticEventData(isReveal);
+                const nativeSyntheticEventData = callback(11107).getNativeSyntheticEventData(isReveal);
                 ({ messageId, channelId, isReveal } = nativeSyntheticEventData);
                 ({ attachmentId, embedId } = nativeSyntheticEventData);
-                const obj10 = callback(10778);
+                const obj10 = callback(11107);
                 if (isReveal) {
                   if (obj11.shouldAgeVerifyForExplicitMedia()) {
                     dependencyMap = 1;
                     c4 = 1;
                     obj1 = { value: null, done: false };
-                    obj1[0] = callback(4997).maybePerformReactiveCheck();
+                    obj1[0] = callback(4621).maybePerformReactiveCheck();
                     return obj1;
                   }
                 }
-                let obj3 = callback(5006);
+                let obj3 = callback(7206);
                 const obj2 = { obscure: null };
                 obj2[0] = isReveal;
                 const result = obj3.trackToggleMediaObscurityV2(obj2);
                 c4 = 3;
-                obj11 = callback(5006);
+                obj11 = callback(7206);
               }
             } else if (arg0 === 1) {
               c4 = 3;
@@ -2320,9 +2320,9 @@ class MessagesHandlers {
                 reactiveCheckPassed = closure_1_9.getReactiveCheckPassed();
               }
               if (!reactiveCheckPassed) {
-                obj = closure_1_1(5433);
+                obj = closure_1_1(7942);
                 obj3 = { entryPoint: null };
-                obj3[0] = callback(5259).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
+                obj3[0] = callback(7944).AgeVerificationModalEntryPoint.OBSCURED_MEDIA;
                 const result1 = obj.showAgeVerificationGetStartedModal(obj3);
               }
             }
@@ -2425,7 +2425,7 @@ class MessagesHandlers {
         const result1 = callback(tmp2[175]).showAgeVerificationGetStartedModal(obj);
         tmpResult = tmp(tmp2[176]);
         const result2 = tmpResult.trackAgeVerificationDmClicked(tmp(tmp2[176]).AgeVerificationDmCta.RETRY, channelId);
-        const obj5 = callback(tmp2[175]);
+        const obj6 = callback(tmp2[175]);
       } else if (tmp(tmp2[181]).CtaButtonType.CONNECT_TO_TEEN === callback) {
         if (!tmpResult1.resumeFamilyCenterConnection()) {
           obj = { screen: null };
@@ -2436,6 +2436,11 @@ class MessagesHandlers {
         tmpResult1 = tmp(tmp2[183]);
         const result3 = tmp(tmp2[176]).trackAgeVerificationDmClicked(tmp(tmp2[176]).AgeVerificationDmCta.CONNECT_TO_TEEN, channelId);
         const tmpResult3 = tmp(tmp2[176]);
+      } else if (tmp(tmp2[181]).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW === callback) {
+        const result4 = callback(tmp2[175]).showManualReviewPendingModal();
+        const obj10 = callback(tmp2[175]);
+        const result5 = tmp(tmp2[176]).trackAgeVerificationDmClicked(tmp(tmp2[176]).AgeVerificationDmCta.MANUAL_REVIEW, channelId);
+        const tmpResult4 = tmp(tmp2[176]);
       }
     };
     obj.handleMessageAccessibilityAction = function handleMessageAccessibilityAction(nativeEvent) {

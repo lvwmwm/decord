@@ -1,10 +1,10 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16363
+// Function ID: 16364
 // Name: useActivityWebViewLock
-// Dependencies: [19, 8740, 8165, 2]
+// Dependencies: [19, 9915, 8161, 2]
 
-// Module 16331 (useActivityWebViewLock)
-import createFakeSharedValue from "createFakeSharedValue" /* 8165 */;
+// Module 16363 (useActivityWebViewLock)
+import createFakeSharedValue from "createFakeSharedValue" /* 8161 */;
 import importAllResult from "noop" /* 19 */;
 
 const obj = {

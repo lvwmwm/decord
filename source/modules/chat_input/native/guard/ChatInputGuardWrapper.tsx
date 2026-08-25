@@ -1,21 +1,21 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11993
+// Function ID: 11994
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4025, 1395, 1991, 1910, 4982, 4033, 1922, 11188, 676, 8664, 21, 589, 6897, 4013, 4030, 11651, 11652, 10611, 10610, 11653, 11654, 5047, 9775, 5265, 8663, 2008, 8666, 8600, 10800, 10463, 11656, 11666, 11665, 4334, 1236, 11668, 11671, 11672, 11673, 11677, 11678, 11681, 11682, 8934, 11684, 2]
+// Dependencies: [19, 4026, 1395, 1992, 1910, 5238, 4034, 1922, 11530, 676, 8672, 21, 589, 4893, 4014, 4031, 11994, 11995, 10409, 10408, 11996, 11997, 4588, 9391, 4611, 8671, 2009, 8674, 8608, 11129, 10318, 11999, 12009, 12008, 4335, 1236, 12011, 12014, 12015, 12016, 12020, 12021, 12024, 12025, 9191, 12027, 2]
 // Exports: default
 
-// Module 11650 (ChatInputGuardWrapper)
+// Module 11993 (ChatInputGuardWrapper)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "initialize" /* 4025 */;
+import closure_3 from "initialize" /* 4026 */;
 import { isThread } from "createChannelRecord" /* 1395 */;
-import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "recomputeGuild" /* 4982 */;
-import closure_8 from "markAllUserIdListsStale" /* 4033 */;
+import closure_7 from "recomputeGuild" /* 5238 */;
+import closure_8 from "markAllUserIdListsStale" /* 4034 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import { TextAreaCta } from "TextAreaCta" /* 11188 */;
+import { TextAreaCta } from "TextAreaCta" /* 11530 */;
 import ME from "ME" /* 676 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 8664 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 8672 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

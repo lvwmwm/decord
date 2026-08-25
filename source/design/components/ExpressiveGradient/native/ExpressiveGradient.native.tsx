@@ -1,15 +1,15 @@
-// Module ID: 8057
-// Function ID: 8058
+// Module ID: 7879
+// Function ID: 7880
 // Name: ExpressiveGradient
-// Dependencies: [19, 17, 21, 712, 4100, 689, 4761, 2]
+// Dependencies: [19, 17, 21, 712, 4101, 689, 4826, 2]
 // Exports: ExpressiveGradient
 
-// Module 8057 (ExpressiveGradient)
+// Module 7879 (ExpressiveGradient)
 import noopAll from "noop" /* 19 */;
 import nDefault from "n" /* 689 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4100 */;
-import LinearGradientDefault from "LinearGradient" /* 4761 */;
+import map from "map" /* 4101 */;
+import LinearGradientDefault from "LinearGradient" /* 4826 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

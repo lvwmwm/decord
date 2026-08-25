@@ -1,10 +1,10 @@
-// Module ID: 8269
-// Function ID: 8270
+// Module ID: 8270
+// Function ID: 8271
 // Name: getApplicationCommand
 // Dependencies: [32, 2]
 // Exports: getApplicationCommand
 
-// Module 8269 (getApplicationCommand)
+// Module 8270 (getApplicationCommand)
 import closure_0 from "_slicedToArray" /* 32 */;
 
 const re1 = /<\/([^\s]+):(\d+)>(?:\s?(.*))?/;

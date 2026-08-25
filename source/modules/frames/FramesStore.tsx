@@ -1,16 +1,16 @@
-// Module ID: 8745
-// Function ID: 8746
+// Module ID: 10677
+// Function ID: 10678
 // Name: map
-// Dependencies: [8746, 8740, 505, 8747, 589, 709, 2]
+// Dependencies: [10678, 9915, 505, 10679, 589, 709, 2]
 
-// Module 8745 (map)
+// Module 10677 (map)
 import set from "set" /* 2 */;
 import sum from "sum" /* 505 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import ActivityPanelModes2 from "ActivityPanelModes" /* 8740 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 8747 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 8746 */;
+import ActivityPanelModes2 from "ActivityPanelModes" /* 9915 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 10679 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 10678 */;
 
 ({ FrameIntent: obj1, FrameLayoutModes: c3, getFrameIntentForSurface: c4, isLaunched: c5, makeFrameId: closure_6 } = FrameLayoutModes);
 const ActivityPanelModes = ActivityPanelModes2.ActivityPanelModes;

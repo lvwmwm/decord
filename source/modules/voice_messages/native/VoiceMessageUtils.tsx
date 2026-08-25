@@ -1,21 +1,21 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11824
+// Function ID: 11825
 // Name: _startAudioRecording
-// Dependencies: [5, 4501, 11186, 11187, 676, 3, 11471, 206, 12, 4574, 698, 4347, 500, 2]
+// Dependencies: [5, 4431, 11528, 11529, 676, 3, 11825, 206, 12, 4479, 698, 4348, 500, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 11470 (_startAudioRecording)
+// Module 11824 (_startAudioRecording)
 import timestampDefault from "timestamp" /* 3 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import set from "set" /* 500 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import HapticFeedbackTypes2 from "HapticFeedbackTypes" /* 4347 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4574 */;
-import downsampleWaveformDefault from "downsampleWaveform" /* 11471 */;
+import HapticFeedbackTypes2 from "HapticFeedbackTypes" /* 4348 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4479 */;
+import downsampleWaveformDefault from "downsampleWaveform" /* 11825 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4501 */;
-import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11186 */;
-import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11187 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4431 */;
+import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11528 */;
+import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11529 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import importDefaultResult from "apply" /* 12 */;
 
@@ -39,7 +39,7 @@ function _startAudioRecording() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -100,14 +100,14 @@ function _startAudioRecording() {
             if (state.getState().recordingId !== callback) {
               store = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               callback2(constants.STARTED);
               const _Date = Date;
               callback3(Date.now());
               store = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           }
         } catch (tmp22) {
@@ -174,7 +174,7 @@ function _endAudioRecording() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -267,7 +267,7 @@ function _stopAndCacheAudioRecording() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -305,7 +305,7 @@ function _stopAndCacheAudioRecording() {
           mediaEngine.removeListener(callback(table[9]).MediaEngineEvent.VoiceActivity, closure_21);
           callback2(callback);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp18) {
         c3 = tmp;

@@ -1,10 +1,10 @@
-// Module ID: 11096
-// Function ID: 11097
+// Module ID: 11438
+// Function ID: 11439
 // Name: useUserIsConsideredAdult
 // Dependencies: [1922, 589, 2]
 // Exports: default
 
-// Module 11096 (useUserIsConsideredAdult)
+// Module 11438 (useUserIsConsideredAdult)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 

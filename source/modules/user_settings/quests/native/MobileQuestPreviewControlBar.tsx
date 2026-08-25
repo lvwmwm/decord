@@ -1,18 +1,18 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 14624
+// Function ID: 14625
 // Name: MobileQuestPreviewControlBar
-// Dependencies: [5, 32, 19, 17, 7491, 505, 21, 4668, 712, 10723, 589, 10516, 7211, 1236, 7205, 14595, 14599, 8074, 14020, 12113, 4739, 2]
+// Dependencies: [5, 32, 19, 17, 7305, 505, 21, 4380, 712, 10531, 589, 10533, 5868, 1236, 5862, 14625, 14629, 7896, 14055, 12451, 4376, 2]
 
-// Module 14594 (MobileQuestPreviewControlBar)
+// Module 14624 (MobileQuestPreviewControlBar)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "initializeState" /* 7491 */;
+import closure_7 from "initializeState" /* 7305 */;
 import { AppRoutes } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 class MobileQuestPreviewControlBar {
@@ -105,7 +105,7 @@ class MobileQuestPreviewControlBar {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -179,7 +179,7 @@ class MobileQuestPreviewControlBar {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ class MobileQuestPreviewControlBar {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

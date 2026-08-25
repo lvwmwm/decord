@@ -1,9 +1,9 @@
-// Module ID: 4046
-// Function ID: 4047
+// Module ID: 4047
+// Function ID: 4048
 // Name: createFromServer
 // Dependencies: [1931, 676, 1370, 1403, 2]
 
-// Module 4046 (createFromServer)
+// Module 4047 (createFromServer)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import hasFlag from "hasFlag" /* 1403 */;
 import toJSDefault from "toJS" /* 1931 */;

@@ -1,19 +1,19 @@
-// Module ID: 15384
-// Function ID: 15385
+// Module ID: 15414
+// Function ID: 15415
 // Name: HappeningNowItem
-// Dependencies: [19, 17, 14708, 21, 1367, 712, 4668, 4100, 8442, 15385, 2]
+// Dependencies: [19, 17, 14738, 21, 1367, 712, 4380, 4101, 8448, 15415, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
-// Module 15384 (HappeningNowItem)
+// Module 15414 (HappeningNowItem)
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import map from "map" /* 4100 */;
-import useCutoutBackgroundColor from "useCutoutBackgroundColor" /* 8442 */;
-import renderCardDefault from "renderCard" /* 15385 */;
+import map from "map" /* 4101 */;
+import useCutoutBackgroundColor from "useCutoutBackgroundColor" /* 8448 */;
+import renderCardDefault from "renderCard" /* 15415 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14708 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14738 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 import importAllResult from "noop" /* 19 */;
 import set from "set" /* 2 */;
 

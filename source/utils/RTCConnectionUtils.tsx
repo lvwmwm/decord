@@ -1,8 +1,8 @@
-// Module ID: 12652
-// Function ID: 12653
+// Module ID: 11008
+// Function ID: 11009
 // Dependencies: [676, 1236, 2]
 
-// Module 12652
+// Module 11008
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import ME from "ME" /* 676 */;

@@ -1,24 +1,24 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12547
+// Function ID: 12548
 // Name: WidgetRenderer
-// Dependencies: [32, 19, 17, 1218, 8968, 21, 4668, 712, 9556, 9138, 8971, 12227, 4739, 12235, 1903, 12236, 589, 1367, 12, 5371, 1236, 7223, 5374, 12238, 5385, 12239, 5380, 12343, 12346, 2]
+// Dependencies: [32, 19, 17, 1218, 8932, 21, 4380, 712, 9420, 9431, 8935, 12548, 4376, 12552, 1903, 12553, 589, 1367, 12, 7228, 1236, 5881, 7230, 12555, 7239, 12556, 7236, 12660, 12664, 2]
 // Exports: default
 
-// Module 12226 (WidgetRenderer)
+// Module 12547 (WidgetRenderer)
 import ThemesDefault from "Themes" /* 712 */;
-import createDefaultFieldsSection from "createDefaultFieldsSection" /* 5380 */;
-import toSubmission from "toSubmission" /* 5385 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9556 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12235 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12239 */;
-import PersonalWidgetTextDefault from "PersonalWidgetText" /* 12343 */;
+import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7236 */;
+import toSubmission from "toSubmission" /* 7239 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9420 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12552 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12556 */;
+import PersonalWidgetTextDefault from "PersonalWidgetText" /* 12660 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8968 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8932 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 require = arg1;
 function WidgetRenderer(isFirstWidget) {
@@ -146,7 +146,7 @@ let closure_17 = importAllResult.memo((game) => {
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp2 = importDefault;
   const tmp4 = useGameNameAndCoverImageDefault(game.gameId);
-  obj[2] = _require(9138).GameProfileSources.UserProfile;
+  obj[2] = _require(9431).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp5Result;
   if (!disableInteraction) {
@@ -183,7 +183,7 @@ let closure_17 = importAllResult.memo((game) => {
       disabled: null == tmp5Result,
       accessibilityRole: "button",
       accessibilityLabel: gameName,
-      children: callback2(_require(4739).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
+      children: callback2(_require(4376).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
     }),
   ,
 
@@ -199,7 +199,7 @@ let closure_17 = importAllResult.memo((game) => {
     disabled: null == tmp5Result,
     accessibilityRole: "button",
     accessibilityLabel: gameName,
-    children: callback2(_require(4739).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
+    children: callback2(_require(4376).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
   };
   let trimmed;
   if (game.comment != null) {
@@ -212,11 +212,11 @@ let closure_17 = importAllResult.memo((game) => {
     obj3[0] = tmp.comment;
     const obj4 = { size: "xxs", color: null };
     obj4[1] = ThemesDefault.colors.TEXT_MUTED;
-    const items3 = [tmp10(tmp6(12236).QuoteIcon, obj4), ];
+    const items3 = [tmp10(tmp6(12553).QuoteIcon, obj4), ];
     const obj5 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: null, children: null };
     obj5[3] = tmp.commentText;
     obj5[4] = game.comment;
-    items3[1] = tmp10(tmp6(4739).Text, obj5);
+    items3[1] = tmp10(tmp6(4376).Text, obj5);
     obj3[1] = items3;
     tmp8Result = tmp8(tmp9, obj3);
   }
@@ -235,7 +235,7 @@ let closure_18 = importAllResult.memo((game) => {
   ({ gameName, coverImageUrl } = useGameNameAndCoverImageDefault(game.gameId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp3 = useGameNameAndCoverImageDefault(game.gameId);
-  obj[2] = _require(9138).GameProfileSources.UserProfile;
+  obj[2] = _require(9431).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp4Result;
   if (!disableInteraction) {
@@ -273,7 +273,7 @@ let closure_18 = importAllResult.memo((game) => {
       disabled: null == tmp4Result,
       accessibilityRole: "button",
       accessibilityLabel: gameName,
-      children: callback2(_require(4739).Text, { variant: "text-md/medium", color: "text-default", lineClamp: 2, children: gameName })
+      children: callback2(_require(4376).Text, { variant: "text-md/medium", color: "text-default", lineClamp: 2, children: gameName })
     }),
     callback2(closure_16, { tags: game.tags })
   ];
@@ -290,7 +290,7 @@ let closure_19 = importAllResult.memo((game) => {
   ({ coverImageUrl, gameName } = useGameNameAndCoverImageDefault(game.gameId));
   let obj = { location: "UserProfileWidgetsBoard", applicationId: game.gameId, source: null, sourceUserId: null, trackEntryPointImpression: true, stackingBehavior: "stack" };
   const tmp2 = useGameNameAndCoverImageDefault(game.gameId);
-  obj[2] = _require(9138).GameProfileSources.UserProfile;
+  obj[2] = _require(9431).GameProfileSources.UserProfile;
   obj[3] = userId;
   let tmp3Result;
   if (!disableInteraction) {

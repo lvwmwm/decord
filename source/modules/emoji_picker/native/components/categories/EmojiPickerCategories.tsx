@@ -1,16 +1,16 @@
-// Module ID: 9460
-// Function ID: 9461
+// Module ID: 8902
+// Function ID: 8903
 // Name: EXPRESSION_FOOTER_HEIGHT
-// Dependencies: [19, 6768, 676, 1338, 21, 4668, 712, 4119, 698, 4347, 4348, 9461, 9474, 6408, 9475, 8673, 9477, 9478, 2]
+// Dependencies: [19, 5286, 676, 1338, 21, 4380, 712, 4120, 698, 4348, 4349, 8903, 8918, 5533, 8919, 8681, 8922, 8924, 2]
 
-// Module 9460 (EXPRESSION_FOOTER_HEIGHT)
+// Module 8902 (EXPRESSION_FOOTER_HEIGHT)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
-import { EmojiCategoryTypes } from "EmojiCategoryTypes" /* 6768 */;
+import { EmojiCategoryTypes } from "EmojiCategoryTypes" /* 5286 */;
 import ME from "ME" /* 676 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1338 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
 
 const require = arg1;
 let c3 = importAllResult;

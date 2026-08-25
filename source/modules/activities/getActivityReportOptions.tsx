@@ -1,13 +1,13 @@
-// Module ID: 16666
-// Function ID: 16667
+// Module ID: 16698
+// Function ID: 16699
 // Name: getActivityReportOptions
-// Dependencies: [4485, 1236, 2]
+// Dependencies: [4408, 1236, 2]
 // Exports: default
 
-// Module 16666 (getActivityReportOptions)
+// Module 16698 (getActivityReportOptions)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import items3 from "items3" /* 4485 */;
+import items3 from "items3" /* 4408 */;
 
 const ActivityFeedbackReasons = items3.ActivityFeedbackReasons;
 const result = set.fileFinishedImporting("modules/activities/getActivityReportOptions.tsx");

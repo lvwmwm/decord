@@ -1,13 +1,13 @@
-// Module ID: 17150
-// Function ID: 17151
+// Module ID: 17182
+// Function ID: 17183
 // Name: AVErrorStreamViewLowFPSDefinition
-// Dependencies: [4778, 4658, 1218, 4563, 676, 17151, 4536, 9706, 9707, 17148, 2]
+// Dependencies: [4396, 4402, 1218, 4468, 676, 17183, 4446, 9316, 9317, 17180, 2]
 
-// Module 17150 (AVErrorStreamViewLowFPSDefinition)
-import closure_2 from "getParticipants" /* 4778 */;
-import closure_3 from "reset" /* 4658 */;
+// Module 17182 (AVErrorStreamViewLowFPSDefinition)
+import closure_2 from "getParticipants" /* 4396 */;
+import closure_3 from "reset" /* 4402 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "initialize" /* 4563 */;
+import closure_5 from "initialize" /* 4468 */;
 import { ApplicationStreamStates } from "ME" /* 676 */;
 
 const require = arg1;

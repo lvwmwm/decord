@@ -1,13 +1,13 @@
-// Module ID: 4237
-// Function ID: 4238
+// Module ID: 4238
+// Function ID: 4239
 // Name: useWindowSizeClassifier
-// Dependencies: [4238, 2]
+// Dependencies: [4239, 2]
 // Exports: default, getWindowSizeClassifier
 
-// Module 4237 (useWindowSizeClassifier)
+// Module 4238 (useWindowSizeClassifier)
 import set from "set" /* 2 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4238 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4238 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4239 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4239 */;
 
 let obj = { SMALL: 0, [0]: "SMALL", NORMAL: 1, [1]: "NORMAL", LARGE: 2, [2]: "LARGE", XLARGE: 3, [3]: "XLARGE" };
 const result = set.fileFinishedImporting("modules/screen/native/useWindowSizeClassifier.tsx");

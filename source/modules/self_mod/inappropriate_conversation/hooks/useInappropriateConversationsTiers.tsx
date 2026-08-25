@@ -1,15 +1,15 @@
-// Module ID: 12006
-// Function ID: 12007
+// Module ID: 12334
+// Function ID: 12335
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1922, 9960, 10615, 589, 10614, 2]
+// Dependencies: [1922, 9818, 10413, 589, 10412, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 12006 (useInappropriateConversationsTiers)
+// Module 12334 (useInappropriateConversationsTiers)
 import initialize from "initialize" /* 589 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10614 */;
-import InappropriateConversationExperiment from "InappropriateConversationExperiment" /* 10615 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 10412 */;
+import InappropriateConversationExperiment from "InappropriateConversationExperiment" /* 10413 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 9960 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 9818 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationsTiers.tsx");

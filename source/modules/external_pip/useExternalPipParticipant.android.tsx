@@ -1,17 +1,17 @@
-// Module ID: 16321
-// Function ID: 16322
+// Module ID: 16353
+// Function ID: 16354
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4778, 1218, 4501, 4544, 4549, 589, 2]
+// Dependencies: [32, 19, 4396, 1218, 4431, 4454, 4401, 589, 2]
 // Exports: default
 
-// Module 16321 (useExternalPipParticipant)
+// Module 16353 (useExternalPipParticipant)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getParticipants" /* 4778 */;
+import closure_4 from "getParticipants" /* 4396 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4501 */;
-import closure_7 from "createRTCConnection" /* 4544 */;
-import ParticipantTypes from "ParticipantTypes" /* 4549 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_7 from "createRTCConnection" /* 4454 */;
+import ParticipantTypes from "ParticipantTypes" /* 4401 */;
 
 const require = arg1;
 ({ isStreamParticipant: closure_8, ParticipantTypes: c9 } = ParticipantTypes);
@@ -64,7 +64,7 @@ export default function useExternalPipParticipant() {
       id2 = tmp6.id;
     }
     if (stateFromStores1.current !== id2) {
-      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "ct", focusedParticipantType: null };
+      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "isArray", focusedParticipantType: true };
       obj[2] = _undefined.current;
     } else {
       let type1;
@@ -265,7 +265,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "accessibilityLabel" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "channel" };
   }, items4);
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];
   const effect = React.useEffect(() => {

@@ -1,12 +1,12 @@
-// Module ID: 13915
-// Function ID: 13916
+// Module ID: 13950
+// Function ID: 13951
 // Name: set
-// Dependencies: [32, 1487, 4087, 8819, 2]
+// Dependencies: [32, 1487, 4088, 9086, 2]
 // Exports: openInternalDeepLink, resolveInternalDeepLink
 
-// Module 13915 (set)
+// Module 13950 (set)
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import _openURL from "_openURL" /* 4087 */;
+import _openURL from "_openURL" /* 4088 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import set from "set" /* 2 */;
 

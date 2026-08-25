@@ -1,10 +1,10 @@
-// Module ID: 4008
-// Function ID: 4009
+// Module ID: 4009
+// Function ID: 4010
 // Name: getLocalizedLink
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 4008 (getLocalizedLink)
+// Module 4009 (getLocalizedLink)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 14080
-// Function ID: 14081
+// Module ID: 14115
+// Function ID: 14116
 // Name: normalizeValue
 // Dependencies: [2]
 // Exports: hslToRgbWorklet, hsvToRgbWorklet, normalizeValue
 
-// Module 14080 (normalizeValue)
+// Module 14115 (normalizeValue)
 import set from "set" /* 2 */;
 
 function normalizeValue(arg0) {

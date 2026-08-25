@@ -1,14 +1,14 @@
-// Module ID: 14318
-// Function ID: 14319
+// Module ID: 14348
+// Function ID: 14349
 // Name: useSelectedTeenUser
-// Dependencies: [1922, 5304, 5301, 7660, 647, 2]
+// Dependencies: [1922, 7146, 7143, 7481, 647, 2]
 // Exports: useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 14318 (useSelectedTeenUser)
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7660 */;
+// Module 14348 (useSelectedTeenUser)
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 7481 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import closure_4 from "getSettings" /* 5304 */;
-import closure_5 from "freshTeenActivityWithMap" /* 5301 */;
+import closure_4 from "getSettings" /* 7146 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7143 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeenUser.tsx");

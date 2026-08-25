@@ -1,14 +1,14 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14076
+// Function ID: 14077
 // Name: TeacupIcon
-// Dependencies: [19, 21, 712, 4099, 14042, 2]
+// Dependencies: [19, 21, 712, 4100, 14077, 2]
 // Exports: TeacupIcon
 
-// Module 14041 (TeacupIcon)
+// Module 14076 (TeacupIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4099 */;
-import registerAsset from "registerAsset" /* 14042 */;
+import BaseIconImage from "BaseIconImage" /* 4100 */;
+import registerAsset from "registerAsset" /* 14077 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

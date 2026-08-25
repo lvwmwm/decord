@@ -1,11 +1,11 @@
-// Module ID: 10771
-// Function ID: 10772
+// Module ID: 11099
+// Function ID: 11100
 // Name: useChannelLoading
-// Dependencies: [32, 19, 10772, 10493, 4767, 2]
+// Dependencies: [32, 19, 11100, 8757, 4832, 2]
 // Exports: default
 
-// Module 10771 (useChannelLoading)
-import useMountEffectDefault from "useMountEffect" /* 4767 */;
+// Module 11099 (useChannelLoading)
+import useMountEffectDefault from "useMountEffect" /* 4832 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 

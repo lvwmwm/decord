@@ -1,16 +1,16 @@
-// Module ID: 8124
-// Function ID: 8125
+// Module ID: 8120
+// Function ID: 8121
 // Name: FormCheckbox
-// Dependencies: [19, 21, 4668, 712, 4119, 4752, 1367, 1356, 7218, 4749, 4753, 2]
+// Dependencies: [19, 21, 4380, 712, 4120, 4817, 1367, 1356, 5876, 4814, 4818, 2]
 // Exports: FormCheckbox
 
-// Module 8124 (FormCheckbox)
+// Module 8120 (FormCheckbox)
 import ThemesDefault from "Themes" /* 712 */;
-import IconSizesDefault from "IconSizes" /* 4752 */;
+import IconSizesDefault from "IconSizes" /* 4817 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4668 */;
-import importDefaultResult from "module_4119" /* 4119 */;
+import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "module_4120" /* 4120 */;
 
 const require = arg1;
 createCacheKey = { checkbox: null, unselected: null, selected: null, checkmark: null };

@@ -1,14 +1,14 @@
-// Module ID: 5829
-// Function ID: 5830
+// Module ID: 6519
+// Function ID: 6520
 // Name: GameplayAbstractUI
-// Dependencies: [21, 5454, 5830, 2]
+// Dependencies: [21, 5374, 6520, 2]
 // Exports: GameplayAbstractUI
 
-// Module 5829 (GameplayAbstractUI)
+// Module 6519 (GameplayAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5454 */;
-import metadataDefault from "metadata" /* 5830 */;
+import preloadDefault from "preload" /* 5374 */;
+import metadataDefault from "metadata" /* 6520 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameplayAbstractUI.native.tsx");
