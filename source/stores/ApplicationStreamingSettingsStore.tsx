@@ -1,14 +1,14 @@
-// Module ID: 4472
-// Function ID: 4473
+// Module ID: 4536
+// Function ID: 4537
 // Name: ApplicationStreamPresets
-// Dependencies: [4439, 4444, 589, 709, 2]
+// Dependencies: [4503, 4508, 589, 709, 2]
 
-// Module 4472 (ApplicationStreamPresets)
+// Module 4536 (ApplicationStreamPresets)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DesktopSources from "DesktopSources" /* 4444 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4439 */;
+import DesktopSources from "DesktopSources" /* 4508 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4503 */;
 
 const ApplicationStreamPresets = RESOLUTION_720.ApplicationStreamPresets;
 ({ ApplicationStreamResolutions, ApplicationStreamFPS } = RESOLUTION_720);

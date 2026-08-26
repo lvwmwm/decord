@@ -1,31 +1,31 @@
-// Module ID: 14022
-// Function ID: 14023
+// Module ID: 14095
+// Function ID: 14096
 // Name: GestureWrapper
-// Dependencies: [32, 19, 17, 6052, 1391, 1981, 676, 1398, 21, 4380, 712, 4120, 4952, 14023, 4614, 1231, 1209, 4235, 4752, 5925, 14025, 14026, 4234, 1222, 4315, 698, 4236, 14027, 5931, 1501, 1370, 14028, 500, 11090, 14029, 14037, 4165, 14039, 1497, 10814, 11049, 11055, 14040, 4249, 14041, 14043, 14045, 14046, 14047, 15292, 15300, 1208, 2]
+// Dependencies: [32, 19, 17, 6118, 1391, 1981, 676, 1398, 21, 4444, 712, 4184, 5018, 14096, 4678, 1231, 1209, 4299, 4816, 5991, 14098, 14099, 4298, 1222, 4379, 698, 4300, 14100, 5997, 1501, 1370, 14101, 500, 11162, 14102, 14110, 4229, 14112, 1497, 10886, 11121, 11127, 14113, 4313, 14114, 14116, 14118, 14119, 14120, 15371, 15379, 1208, 2]
 
-// Module 14022 (GestureWrapper)
+// Module 14095 (GestureWrapper)
 import ThemesDefault from "Themes" /* 712 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import _maybeBackfillMissingBreadcrumbsFromTelemetryRing from "_maybeBackfillMissingBreadcrumbsFromTelemetryRing" /* 1209 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4235 */;
-import useThemeDefault from "useTheme" /* 4315 */;
-import enqueueDefault from "enqueue" /* 4614 */;
-import useNavigationTheme from "useNavigationTheme" /* 5931 */;
-import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 14023 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4299 */;
+import useThemeDefault from "useTheme" /* 4379 */;
+import enqueueDefault from "enqueue" /* 4678 */;
+import useNavigationTheme from "useNavigationTheme" /* 5997 */;
+import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 14096 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { handleHistoryStoreNavigationChange as closure_7 } from "getIdFromHistoryItem" /* 6052 */;
+import { handleHistoryStoreNavigationChange as closure_7 } from "getIdFromHistoryItem" /* 6118 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
 import closure_9 from "handleConnectionOpen" /* 1981 */;
 import ME from "ME" /* 676 */;
 import { isStaticChannelRoute } from "set" /* 1398 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
-import module_4120 from "module_4120" /* 4120 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
+import module_4184 from "module_4184" /* 4184 */;
 
 require = arg1;
 function GestureWrapper(children) {
@@ -33,7 +33,7 @@ function GestureWrapper(children) {
   let isScreenLandscape;
   const tmp = callback3();
   closure_0 = tmp;
-  isScreenLandscape = isScreenLandscape(4952).useIsScreenLandscape();
+  isScreenLandscape = isScreenLandscape(5018).useIsScreenLandscape();
   let items = [isScreenLandscape, tmp];
   const style = React.useMemo(() => {
     const items = [styles.flex, ];
@@ -94,7 +94,7 @@ function AppNavigationContainer(children) {
     closure_1_7();
   }, []);
   const memo = React.useMemo(() => {
-    const tmp = callback(4236)();
+    const tmp = callback(4300)();
     let name;
     if (tmp != null) {
       const first = tmp.routes[0];
@@ -102,7 +102,7 @@ function AppNavigationContainer(children) {
         name = first.name;
       }
     }
-    callback(14027).log("Initial Screen: " + name);
+    callback(14100).log("Initial Screen: " + name);
     return tmp;
   }, []);
   _require = React.useRef(true);
@@ -126,11 +126,11 @@ function AppNavigationContainer(children) {
       };
     }
   }, []);
-  let obj = _require(5931);
+  let obj = _require(5997);
   const navigationTheme = obj.useNavigationTheme(useThemeDefault());
   obj = { theme: navigationTheme, ref: null, onReady: null, onStateChange: null, initialState: null, navigationInChildEnabled: true, children: null };
   let tmp = useThemeDefault();
-  obj[1] = _require(4235).getRootNavigationRef();
+  obj[1] = _require(4299).getRootNavigationRef();
   obj[2] = handleNavigationOnReady;
   obj[3] = callback;
   obj[4] = memo;
@@ -163,7 +163,7 @@ createCacheKey = { flex: { flex: 1 }, rootBackgroundColor: null };
 createCacheKey = { backgroundColor: ThemesDefault.colors.ANDROID_NAVIGATION_BAR_BACKGROUND };
 createCacheKey[1] = createCacheKey;
 let closure_16 = createCacheKey.createStyles(createCacheKey);
-let result = module_4120.configureReanimatedLogger({ level: require("module_4120").ReanimatedLogLevel.error, strict: false });
+let result = module_4184.configureReanimatedLogger({ level: require("module_4184").ReanimatedLogLevel.error, strict: false });
 try {
   require("enableScreens").enableFreeze();
   let obj6 = require("enableScreens");
@@ -179,11 +179,11 @@ try {
     const appEntryKey = children.appEntryKey;
     let memo = appEntryKey;
     let memo1;
-    const requestGatewaySocket = memo(14028).useRequestGatewaySocket("AppContainer:" + appEntryKey);
+    const requestGatewaySocket = memo(14101).useRequestGatewaySocket("AppContainer:" + appEntryKey);
     const effect = React.useEffect(() => {
       if (!c22) {
         RNScreensTurboModule = RNScreensTurboModule.RNScreensTurboModule;
-        let obj = memo(4120);
+        let obj = memo(4184);
         const fn = function e() {
           RNScreensTurboModule.RNScreensTurboModule = RNScreensTurboModule;
         };
@@ -208,8 +208,8 @@ try {
     }, []);
     riveAppStatePlaybackExperiment = undefined;
     memo = undefined;
-    let obj = memo(14028);
-    riveAppStatePlaybackExperiment = memo(15300).useRiveAppStatePlaybackExperiment("AppContainer");
+    let obj = memo(14101);
+    riveAppStatePlaybackExperiment = memo(15379).useRiveAppStatePlaybackExperiment("AppContainer");
     let items = [riveAppStatePlaybackExperiment];
     memo = React.useMemo(() => {
       const items = [];

@@ -1,20 +1,20 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8195
+// Function ID: 8196
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4380, 712, 6109, 6103, 4103, 8129, 1236, 6112, 4376, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 6175, 6169, 4167, 8196, 1236, 6178, 4440, 2]
 
-// Module 8128 (TextAreaField)
+// Module 8195 (TextAreaField)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getNodeText from "getNodeText" /* 4103 */;
-import Text from "Text" /* 4376 */;
-import useTextFieldState from "useTextFieldState" /* 6103 */;
-import useInputStyles from "useInputStyles" /* 6109 */;
-import useKeyboardBlurring from "useKeyboardBlurring" /* 6112 */;
-import useCharacterLimitAnnouncement from "useCharacterLimitAnnouncement" /* 8129 */;
+import getNodeText from "getNodeText" /* 4167 */;
+import Text from "Text" /* 4440 */;
+import useTextFieldState from "useTextFieldState" /* 6169 */;
+import useInputStyles from "useInputStyles" /* 6175 */;
+import useKeyboardBlurring from "useKeyboardBlurring" /* 6178 */;
+import useCharacterLimitAnnouncement from "useCharacterLimitAnnouncement" /* 8196 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

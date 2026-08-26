@@ -1,14 +1,14 @@
-// Module ID: 7108
-// Function ID: 7109
+// Module ID: 7174
+// Function ID: 7175
 // Name: createFetchKeys
-// Dependencies: [5, 676, 1236, 5108, 7109, 4315, 1363, 530, 2]
+// Dependencies: [5, 676, 1236, 5174, 7175, 4379, 1363, 530, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 7108 (createFetchKeys)
+// Module 7174 (createFetchKeys)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5108 */;
-import PlatformTypes from "PlatformTypes" /* 7109 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5174 */;
+import PlatformTypes from "PlatformTypes" /* 7175 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -49,7 +49,7 @@ function _fetchMemberSupplemental() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

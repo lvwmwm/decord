@@ -1,15 +1,15 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11467
+// Function ID: 11468
 // Name: getGuildMemberAgeInRange
-// Dependencies: [1992, 1910, 4025, 1922, 4013, 676, 589, 11, 1403, 2]
+// Dependencies: [1992, 1910, 4089, 1922, 4077, 676, 589, 11, 1403, 2]
 // Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms, useCanBanMember, useCanKickMember, useCanManageMessages, useGuildMemberAgeInRange, useNewMemberBadge
 
-// Module 11395 (getGuildMemberAgeInRange)
+// Module 11467 (getGuildMemberAgeInRange)
 import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;

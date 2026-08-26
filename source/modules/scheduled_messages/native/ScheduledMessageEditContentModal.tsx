@@ -1,10 +1,10 @@
-// Module ID: 11585
-// Function ID: 11586
+// Module ID: 11658
+// Function ID: 11659
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 1391, 21, 4380, 712, 1629, 8508, 589, 7287, 11572, 11568, 4611, 1236, 5383, 8539, 500, 5376, 4949, 4376, 8127, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 21, 4444, 712, 1629, 8575, 589, 7353, 11643, 11640, 4675, 1236, 5449, 8607, 500, 5442, 5015, 4440, 8194, 2]
 // Exports: default
 
-// Module 11585 (ScheduledMessageEditContentModal)
+// Module 11658 (ScheduledMessageEditContentModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -12,7 +12,7 @@ import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);
@@ -58,7 +58,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -74,14 +74,14 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
             return obj;
           } else {
             closure_0 = tmp4;
-            const obj5 = v0(7287);
+            const obj5 = v0(7353);
             obj1 = { content: null, flags: null };
             obj1[0] = obj5.parse(dependencyMap, closure_1_3).content;
             obj1[1] = closure_1_0.scheduledMessage.flags;
             v0 = 1;
             dependencyMap = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = closure_1_0(11568).editScheduledMessage(closure_1_0.scheduledMessageId, obj1);
+            obj2[0] = closure_1_0(11640).editScheduledMessage(closure_1_0.scheduledMessageId, obj1);
             return obj2;
           }
         } else if (arg0 === 1) {
@@ -94,11 +94,11 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
           return obj;
         } else {
           if (arg1) {
-            let arr = v0(4611);
+            let arr = v0(4675);
             arr = arr.pop();
           }
           dependencyMap = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         dependencyMap = tmp;

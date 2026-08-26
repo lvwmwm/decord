@@ -1,14 +1,14 @@
-// Module ID: 16087
-// Function ID: 16088
+// Module ID: 16168
+// Function ID: 16169
 // Name: trackFavoritesGuildViewed
-// Dependencies: [1922, 1394, 676, 1924, 9860, 1946, 698, 9866, 2]
+// Dependencies: [1922, 1394, 676, 1924, 9927, 1946, 698, 9933, 2]
 // Exports: default
 
-// Module 16087 (trackFavoritesGuildViewed)
+// Module 16168 (trackFavoritesGuildViewed)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1946 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 9860 */;
-import setNextFavoritesGuildViewSource from "setNextFavoritesGuildViewSource" /* 9866 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 9927 */;
+import setNextFavoritesGuildViewSource from "setNextFavoritesGuildViewSource" /* 9933 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import closure_4 from "initializeFromUserSettings" /* 1394 */;
 import { AnalyticEvents } from "ME" /* 676 */;

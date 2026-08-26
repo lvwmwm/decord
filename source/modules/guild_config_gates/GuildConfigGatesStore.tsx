@@ -1,9 +1,9 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 17071
+// Function ID: 17072
 // Name: hasLoaded
 // Dependencies: [589, 709, 2]
 
-// Module 16986 (hasLoaded)
+// Module 17071 (hasLoaded)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

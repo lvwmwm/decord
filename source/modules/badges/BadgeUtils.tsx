@@ -1,13 +1,13 @@
-// Module ID: 9671
-// Function ID: 9672
+// Module ID: 9739
+// Function ID: 9740
 // Name: getProfileBadgeIconUrl
-// Dependencies: [8932, 8933, 8938, 2]
-// Exports: getHideableBadges, getLegacyIconUrlByBadgeId, getUnhideableBadgeIds
+// Dependencies: [9000, 9001, 9006, 2]
+// Exports: getLegacyIconUrlByBadgeId, getUnhideableBadgeIds, groupCustomizableBadges
 
-// Module 9671 (getProfileBadgeIconUrl)
-import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 8932 */;
-import BadgeId from "BadgeId" /* 8933 */;
-import set2 from "set" /* 8938 */;
+// Module 9739 (getProfileBadgeIconUrl)
+import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 9000 */;
+import BadgeId from "BadgeId" /* 9001 */;
+import set2 from "set" /* 9006 */;
 import set from "set" /* 2 */;
 
 function getProfileBadgeIconUrl(iconSrc) {
@@ -34,26 +34,34 @@ export const getUnhideableBadgeIds = function getUnhideableBadgeIds(tenureBadgeH
   }
   return set;
 };
-export const getHideableBadges = function getHideableBadges(memo, unhideableBadgeIds) {
-  closure_0 = unhideableBadgeIds;
-  const found = memo.filter((owned) => {
-    owned = owned.owned;
-    if (owned) {
-      owned = !unhideableBadgeIds.has(owned.badge_id);
+export const groupCustomizableBadges = function groupCustomizableBadges(memo) {
+  const fixedBadges = [];
+  const reorderableBadges = [];
+  const hiddenBadges = [];
+  const iter = memo[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    if (nextResult.owned) {
+      let tmp3 = set;
+      let tmp4 = nextResult;
+      if (set.has(tmp2.badge_id)) {
+        let tmp10 = nextResult;
+        let arr = fixedBadges.push(tmp2);
+      } else {
+        let tmp5 = nextResult;
+        if (tmp2.hidden) {
+          let tmp8 = nextResult;
+          arr = hiddenBadges.push(tmp2);
+        } else {
+          let tmp6 = nextResult;
+          let arr1 = reorderableBadges.push(tmp2);
+        }
+      }
     }
-    return owned;
-  });
-  return found.sort((hidden, hidden2) => {
-    let flag = hidden.hidden;
-    if (flag == null) {
-      flag = false;
-    }
-    let flag2 = hidden2.hidden;
-    if (flag2 == null) {
-      flag2 = false;
-    }
-    return Number(flag) - Number(flag2);
-  });
+    continue;
+  }
+  return { fixedBadges, reorderableBadges, hiddenBadges };
 };
 export { getProfileBadgeIconUrl };
 export const getLegacyIconUrlByBadgeId = function getLegacyIconUrlByBadgeId(badges) {

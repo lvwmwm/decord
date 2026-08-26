@@ -1,12 +1,12 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10306
+// Function ID: 10307
 // Name: useWishlistSkuFilter
-// Dependencies: [19, 5955, 676, 9520, 5959, 2]
+// Dependencies: [19, 6021, 676, 9588, 6025, 2]
 // Exports: useWishlistSkuFilter
 
-// Module 10239 (useWishlistSkuFilter)
+// Module 10306 (useWishlistSkuFilter)
 import closure_2 from "noop" /* 19 */;
-import { WishlistRecommendationReason as closure_3 } from "fromServer" /* 5955 */;
+import { WishlistRecommendationReason as closure_3 } from "fromServer" /* 6021 */;
 import { SKUProductLines } from "ME" /* 676 */;
 
 const require = arg1;

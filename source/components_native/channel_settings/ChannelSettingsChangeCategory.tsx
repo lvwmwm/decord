@@ -1,24 +1,24 @@
-// Module ID: 16199
-// Function ID: 16200
+// Module ID: 16280
+// Function ID: 16281
 // Name: shouldComponentUpdate
-// Dependencies: [32, 853, 19, 1391, 5360, 1910, 4025, 4034, 1922, 676, 21, 4380, 712, 4108, 5361, 11980, 4030, 5338, 4744, 1236, 4574, 5480, 5873, 8118, 4813, 4376, 589, 1500, 38, 2]
+// Dependencies: [32, 853, 19, 1391, 5426, 1910, 4089, 4098, 1922, 676, 21, 4444, 712, 4172, 5427, 12053, 4094, 5404, 4808, 1236, 4638, 5546, 5939, 8185, 4877, 4440, 589, 1500, 38, 2]
 // Exports: default
 
-// Module 16199 (shouldComponentUpdate)
+// Module 16280 (shouldComponentUpdate)
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 712 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5873 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5939 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "_toArray" /* 853 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "setIndex" /* 5360 */;
+import closure_7 from "setIndex" /* 5426 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_10 from "markAllUserIdListsStale" /* 4034 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_10 from "markAllUserIdListsStale" /* 4098 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import { Permissions } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -207,7 +207,7 @@ prototype["handleSetCategory"] = function handleSetCategory(id) {
 prototype["renderCategory"] = function renderCategory(label) {
   const self = this;
   const _require = label;
-  return callback3(_require(5480).TableRow, {
+  return callback3(_require(5546).TableRow, {
     label: label.name,
     onPress() {
       return self.handleSetCategory(label.id);
@@ -254,7 +254,7 @@ prototype["render"] = function render() {
     name = intl2.string(tmp4(1236).t.GSfOoo);
   }
   obj = { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(first(1236).t.OqccVl, { categoryName: name }) };
-  const items = [closure_13(first(4376).Text, obj), , ];
+  const items = [closure_13(first(4440).Text, obj), , ];
   let tmp3Result = null;
   if (null != first) {
     tmp3Result = null;
@@ -267,16 +267,16 @@ prototype["render"] = function render() {
         obj2[1] = function onPress() {
           return self.handleSetCategory(first.id);
         };
-        obj1[1] = tmp3(tmp4(5480).TableRow, obj2, first.id);
-        tmp3Result = tmp3(tmp4(5873).TableRowGroup, obj1);
+        obj1[1] = tmp3(tmp4(5546).TableRow, obj2, first.id);
+        tmp3Result = tmp3(tmp4(5939).TableRowGroup, obj1);
       }
     }
   }
   items[1] = tmp3Result;
   items[2] = self.renderCategories();
   obj[2] = items;
-  obj[1] = closure_14(first(4813).Stack, obj);
-  return closure_13(first(8118).Form, obj);
+  obj[1] = closure_14(first(4877).Stack, obj);
+  return closure_13(first(8185).Form, obj);
 };
 ChannelSettingsChangeCategory.contextType = require("ManaContext").ThemeContext;
 let obj1 = { paddingHorizontal: ThemesDefault.modules.mobile.TABLE_ROW_PADDING };

@@ -1,14 +1,14 @@
-// Module ID: 16096
-// Function ID: 16097
+// Module ID: 16177
+// Function ID: 16178
 // Name: getIncomingFriendRequestCount
-// Dependencies: [32, 7264, 4034, 589, 2]
+// Dependencies: [32, 7330, 4098, 589, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 16096 (getIncomingFriendRequestCount)
+// Module 16177 (getIncomingFriendRequestCount)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "recountRelationshipTypes" /* 7264 */;
-import closure_4 from "markAllUserIdListsStale" /* 4034 */;
+import closure_3 from "recountRelationshipTypes" /* 7330 */;
+import closure_4 from "markAllUserIdListsStale" /* 4098 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/people/hooks/useFriendRequestCounts.tsx");

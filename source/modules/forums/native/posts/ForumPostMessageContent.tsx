@@ -1,15 +1,15 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11684
+// Function ID: 11685
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4380, 11612, 4376, 2]
+// Dependencies: [19, 21, 4444, 11685, 4440, 2]
 // Exports: default
 
-// Module 11611 (ForumPostMessageContent)
+// Module 11684 (ForumPostMessageContent)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4376 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11612 */;
+import Text from "Text" /* 4440 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 11685 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

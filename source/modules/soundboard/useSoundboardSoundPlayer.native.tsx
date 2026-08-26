@@ -1,13 +1,13 @@
-// Module ID: 16418
-// Function ID: 16419
+// Module ID: 16501
+// Function ID: 16502
 // Name: useSoundboardSoundPlayer
-// Dependencies: [19, 4851, 9304, 4070, 16419, 589, 6068, 2]
+// Dependencies: [19, 4916, 9372, 4134, 16502, 589, 6134, 2]
 // Exports: default
 
-// Module 16418 (useSoundboardSoundPlayer)
+// Module 16501 (useSoundboardSoundPlayer)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleSoundCreateOrUpdate" /* 4851 */;
-import { SoundOutputChannel } from "SoundOutputChannel" /* 9304 */;
+import closure_4 from "handleSoundCreateOrUpdate" /* 4916 */;
+import { SoundOutputChannel } from "SoundOutputChannel" /* 9372 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/soundboard/useSoundboardSoundPlayer.native.tsx");

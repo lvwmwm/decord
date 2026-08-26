@@ -1,16 +1,16 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 7958
+// Function ID: 7959
 // Name: BuyNitroMarketingHeader
-// Dependencies: [19, 17, 7039, 21, 712, 4380, 4120, 4383, 4381, 4315, 7892, 500, 7893, 7889, 691, 5374, 7041, 7474, 4826, 1236, 7895, 4376, 7896, 7898, 2]
+// Dependencies: [19, 17, 7105, 21, 712, 4444, 4184, 4447, 4445, 4379, 7959, 500, 7960, 7956, 691, 5440, 7107, 7540, 4891, 1236, 7962, 4440, 7963, 7965, 2]
 // Exports: default
 
-// Module 7891 (BuyNitroMarketingHeader)
+// Module 7958 (BuyNitroMarketingHeader)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { Gradients } from "items" /* 7039 */;
+import { Gradients } from "items" /* 7105 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ Platform, StyleSheet: c4, View: c5 } = get_ActivityIndicator);
@@ -60,8 +60,8 @@ let closure_11 = createCacheKey.createStyles((arg0, arg1, arg2) => {
   obj[1] = obj;
   const tmp3 = -ThemesDefault.space.PX_16;
   const tmp5 = absoluteFillObject;
-  obj[2] = { position: "absolute", top: -ThemesDefault.space.PX_16, right: "call", left: "max", alignSelf: 16125694357471467000000000000000000000000000000000000000000000000000000000000000000 };
-  obj1 = { position: "absolute", top: -ThemesDefault.space.PX_16, right: "call", left: "max", alignSelf: 16125694357471467000000000000000000000000000000000000000000000000000000000000000000 };
+  obj[2] = { position: "absolute", top: -ThemesDefault.space.PX_16, right: "call", left: "options", alignSelf: 139264.21504641374 };
+  obj1 = { position: "absolute", top: -ThemesDefault.space.PX_16, right: "call", left: "options", alignSelf: 139264.21504641374 };
   obj[3] = { position: "absolute", top: arg0 + ThemesDefault.space.PX_20, right: ThemesDefault.space.PX_4 };
   const obj2 = { position: "absolute", top: arg0 + ThemesDefault.space.PX_20, right: ThemesDefault.space.PX_4 };
   obj[4] = { height: ThemesDefault.space.PX_80 + ThemesDefault.space.PX_4 };

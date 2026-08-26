@@ -1,10 +1,10 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11760
+// Function ID: 11761
 // Name: context
-// Dependencies: [19, 500, 4120, 2]
+// Dependencies: [19, 500, 4184, 2]
 // Exports: createUseAnimatedScrollLock
 
-// Module 11687 (context)
+// Module 11760 (context)
 import noopAll from "noop" /* 19 */;
 import set from "set" /* 500 */;
 
@@ -24,9 +24,9 @@ export function createUseAnimatedScrollLock(closure_12, sharedValue6, sharedValu
   closure_1 = sharedValue6;
   closure_2 = sharedValue5;
   closure_3 = sharedValue4;
-  return (A) => {
-    let obj = A;
-    if (A === undefined) {
+  return (fn) => {
+    let obj = fn;
+    if (fn === undefined) {
       obj = {};
     }
     const onScrollHandler = obj.onScrollHandler;
@@ -48,7 +48,7 @@ export function createUseAnimatedScrollLock(closure_12, sharedValue6, sharedValu
     class H {
       constructor(arg0) {
         result = closure_3.set(false);
-        velocity = A.velocity;
+        velocity = fn.velocity;
         num = undefined;
         if (velocity != null) {
           num = velocity.y;

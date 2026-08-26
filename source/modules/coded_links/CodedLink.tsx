@@ -1,9 +1,9 @@
-// Module ID: 4368
-// Function ID: 4369
+// Module ID: 4432
+// Function ID: 4433
 // Name: CodedLinkType
 // Dependencies: [2]
 
-// Module 4368 (CodedLinkType)
+// Module 4432 (CodedLinkType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/coded_links/CodedLink.tsx");

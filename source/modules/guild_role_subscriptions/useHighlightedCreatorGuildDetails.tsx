@@ -1,10 +1,10 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 17139
+// Function ID: 17140
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [19, 676, 17055, 1435, 2]
+// Dependencies: [19, 676, 17140, 1435, 2]
 // Exports: default
 
-// Module 17054 (useHighlightedCreatorGuildDetails)
+// Module 17139 (useHighlightedCreatorGuildDetails)
 import closure_2 from "noop" /* 19 */;
 import { MarketingURLs } from "ME" /* 676 */;
 

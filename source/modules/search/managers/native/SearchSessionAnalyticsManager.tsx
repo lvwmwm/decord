@@ -1,13 +1,13 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 12001
+// Function ID: 12002
 // Name: _initialize
-// Dependencies: [8553, 11929, 11907, 2]
+// Dependencies: [8621, 12002, 11980, 2]
 
-// Module 11928 (_initialize)
+// Module 12001 (_initialize)
 import set from "set" /* 2 */;
-import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 8553 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 11907 */;
-import getSessionDefault from "getSession" /* 11929 */;
+import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 8621 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11980 */;
+import getSessionDefault from "getSession" /* 12002 */;
 
 let closure_2 = SearchEntrypointAnalyticsLocations.SEARCH_TAB_TO_ANALYTICS_SEARCH_TAB;
 getSessionDefault;

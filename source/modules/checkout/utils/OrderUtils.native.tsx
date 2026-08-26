@@ -1,12 +1,12 @@
-// Module ID: 7563
-// Function ID: 7564
+// Module ID: 7629
+// Function ID: 7630
 // Name: _discardDraftOrder
-// Dependencies: [5, 4362, 7036, 2]
+// Dependencies: [5, 4426, 7102, 2]
 // Exports: discardDraftOrder
 
-// Module 7563 (_discardDraftOrder)
+// Module 7629 (_discardDraftOrder)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { OrderStatus } from "CustomCheckoutFlow" /* 4362 */;
+import { OrderStatus } from "CustomCheckoutFlow" /* 4426 */;
 
 const require = arg1;
 function _discardDraftOrder() {
@@ -28,7 +28,7 @@ function _discardDraftOrder() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

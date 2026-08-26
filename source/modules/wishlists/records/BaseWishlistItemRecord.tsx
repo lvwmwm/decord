@@ -1,11 +1,11 @@
-// Module ID: 9506
-// Function ID: 9507
+// Module ID: 9574
+// Function ID: 9575
 // Name: fromServer
-// Dependencies: [1931, 4423, 2]
+// Dependencies: [1931, 4487, 2]
 
-// Module 9506 (fromServer)
+// Module 9574 (fromServer)
 import toJSDefault from "toJS" /* 1931 */;
-import closure_0 from "createFromServer" /* 4423 */;
+import closure_0 from "createFromServer" /* 4487 */;
 
 toJSDefault;
 let prototype;

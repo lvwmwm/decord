@@ -1,12 +1,12 @@
-// Module ID: 12552
-// Function ID: 12553
+// Module ID: 12623
+// Function ID: 12624
 // Name: useGameNameAndCoverImage
-// Dependencies: [6033, 1236, 2]
+// Dependencies: [6099, 1236, 2]
 // Exports: default
 
-// Module 12552 (useGameNameAndCoverImage)
+// Module 12623 (useGameNameAndCoverImage)
 import set from "set" /* 2 */;
-import importDefaultResult1 from "importDefaultResult1" /* 6033 */;
+import importDefaultResult1 from "importDefaultResult1" /* 6099 */;
 
 const result = set.fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");
 

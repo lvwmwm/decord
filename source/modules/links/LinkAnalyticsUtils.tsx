@@ -1,14 +1,14 @@
-// Module ID: 9084
-// Function ID: 9085
+// Module ID: 9152
+// Function ID: 9153
 // Name: SERVER_INVITE
-// Dependencies: [676, 9085, 1487, 4575, 698, 2]
+// Dependencies: [676, 9153, 1487, 4639, 698, 2]
 
-// Module 9084 (SERVER_INVITE)
+// Module 9152 (SERVER_INVITE)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import ME2 from "ME" /* 4575 */;
+import ME2 from "ME" /* 4639 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_4 = { MESSAGE: "Discord Message Link", CHANNEL: "Discord Channel Link", SERVER_INVITE: "Discord Server Invite", GIFT: "Discord Gift Link", UNKNOWN: "Unknown", DISCOVERY: "Discord Discovery Link" };

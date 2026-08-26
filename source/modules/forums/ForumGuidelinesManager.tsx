@@ -1,11 +1,11 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10140
+// Function ID: 10141
 // Name: _initialize
-// Dependencies: [5367, 595, 2]
+// Dependencies: [5433, 595, 2]
 
-// Module 10073 (_initialize)
+// Module 10140 (_initialize)
 import Storage2 from "Storage" /* 595 */;
-import initializeDefault from "initialize" /* 5367 */;
+import initializeDefault from "initialize" /* 5433 */;
 
 require = arg1;
 const formGuidelinesStorageKey = "formGuidelinesStorageKey";

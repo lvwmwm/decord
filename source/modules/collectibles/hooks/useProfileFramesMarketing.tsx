@@ -1,16 +1,16 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 16373
+// Function ID: 16374
 // Name: deriveProfileFramesMarketing
-// Dependencies: [1922, 9549, 16293, 589, 8955, 9550, 2]
+// Dependencies: [1922, 9617, 16374, 589, 9023, 9618, 2]
 // Exports: deriveProfileFramesMarketing, getProfileFramesMarketing, useProfileFramesMarketing
 
-// Module 16292 (deriveProfileFramesMarketing)
+// Module 16373 (deriveProfileFramesMarketing)
 import initialize from "initialize" /* 589 */;
-import apexExperimentDefault from "apexExperiment" /* 8955 */;
-import useCanPurchaseFrames from "useCanPurchaseFrames" /* 9549 */;
-import apexExperiment from "apexExperiment" /* 9550 */;
-import apexExperimentDefault2 from "apexExperiment" /* 9550 */;
-import apexExperiment2 from "apexExperiment" /* 16293 */;
+import apexExperimentDefault from "apexExperiment" /* 9023 */;
+import useCanPurchaseFrames from "useCanPurchaseFrames" /* 9617 */;
+import apexExperiment from "apexExperiment" /* 9618 */;
+import apexExperimentDefault2 from "apexExperiment" /* 9618 */;
+import apexExperiment2 from "apexExperiment" /* 16374 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

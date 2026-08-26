@@ -1,14 +1,14 @@
-// Module ID: 6275
-// Function ID: 6276
+// Module ID: 6341
+// Function ID: 6342
 // Name: ChestAndGemSpotIllustration
-// Dependencies: [21, 5374, 6276, 2]
+// Dependencies: [21, 5440, 6342, 2]
 // Exports: ChestAndGemSpotIllustration
 
-// Module 6275 (ChestAndGemSpotIllustration)
+// Module 6341 (ChestAndGemSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6276 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6342 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ChestAndGemSpotIllustration.native.tsx");

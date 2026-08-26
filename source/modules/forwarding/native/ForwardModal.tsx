@@ -1,24 +1,24 @@
-// Module ID: 11233
-// Function ID: 11234
+// Module ID: 11305
+// Function ID: 11306
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7202, 9045, 1391, 4623, 9069, 11234, 9770, 21, 4380, 712, 1494, 7450, 589, 11231, 11230, 5382, 7449, 4098, 1236, 1370, 11235, 4746, 11236, 9901, 4391, 7447, 11237, 4566, 4348, 4349, 4097, 5862, 500, 11240, 6117, 4323, 4951, 11241, 11251, 11262, 2]
+// Dependencies: [5, 32, 19, 17, 7268, 9113, 1391, 4687, 9137, 11306, 9837, 21, 4444, 712, 1494, 7516, 589, 11303, 11302, 5448, 7515, 4162, 1236, 1370, 11307, 4810, 11308, 9968, 4455, 7513, 11309, 4630, 4412, 4413, 4161, 5928, 500, 11312, 6183, 4387, 5017, 11313, 11323, 11334, 2]
 // Exports: default
 
-// Module 11233 (ForwardModal)
+// Module 11305 (ForwardModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "removePendingListFetch" /* 7202 */;
-import closure_8 from "filterStaffGuild" /* 9045 */;
+import closure_7 from "removePendingListFetch" /* 7268 */;
+import closure_8 from "filterStaffGuild" /* 9113 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "reinjectEphemerals" /* 4623 */;
-import closure_11 from "messages" /* 9069 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11234 */;
-import { UserRowModes } from "UserRowModes" /* 9770 */;
+import closure_10 from "reinjectEphemerals" /* 4687 */;
+import closure_11 from "messages" /* 9137 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11306 */;
+import { UserRowModes } from "UserRowModes" /* 9837 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
@@ -174,7 +174,7 @@ export default function ForwardModal(message) {
             obj[0] = arr;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

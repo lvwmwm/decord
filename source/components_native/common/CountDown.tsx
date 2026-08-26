@@ -1,12 +1,12 @@
-// Module ID: 9833
-// Function ID: 9834
+// Module ID: 9900
+// Function ID: 9901
 // Name: componentDidMount
-// Dependencies: [19, 21, 1236, 687, 4376, 2]
+// Dependencies: [19, 21, 1236, 687, 4440, 2]
 
-// Module 9833 (componentDidMount)
+// Module 9900 (componentDidMount)
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
+import Text from "Text" /* 4440 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

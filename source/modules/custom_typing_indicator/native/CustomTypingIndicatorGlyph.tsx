@@ -1,14 +1,14 @@
-// Module ID: 11549
-// Function ID: 11550
+// Module ID: 11621
+// Function ID: 11622
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 4380, 1937, 1297, 712, 11550, 2]
+// Dependencies: [19, 17, 21, 4444, 1937, 1297, 712, 11622, 2]
 // Exports: default
 
-// Module 11549 (CustomTypingIndicatorGlyph)
+// Module 11621 (CustomTypingIndicatorGlyph)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 noopAll;
@@ -18,17 +18,16 @@ const result = require("set").fileFinishedImporting("modules/custom_typing_indic
 export default function CustomTypingIndicatorGlyph(config) {
   let map = config.config;
   const size = config.size;
-  const bypassReducedMotionCheck = config.bypassReducedMotionCheck;
-  let effectiveCustomTypingIndicatorAnimation;
-  let obj = bypassReducedMotionCheck;
+  dependencyMap = undefined;
+  let obj = dependencyMap;
   const tmp = callback();
   const tmp2 = map;
-  effectiveCustomTypingIndicatorAnimation = map(bypassReducedMotionCheck[4]).getEffectiveCustomTypingIndicatorAnimation(map);
-  const obj2 = map(bypassReducedMotionCheck[4]);
+  dependencyMap = map(1937).getEffectiveCustomTypingIndicatorAnimation(map);
+  const obj2 = map(1937);
   if (obj3.hasCustomTypingIndicatorEmojis(map.emojis)) {
     let items = [tmp.emojiRow, ];
     if (null == size) {
-      let PX_4 = size(obj[6]).space.PX_4;
+      let PX_4 = size(712).space.PX_4;
     } else {
       PX_4 = size / 4;
     }
@@ -39,10 +38,10 @@ export default function CustomTypingIndicatorGlyph(config) {
     obj[0] = items;
     items = map.emojis;
     map = items.map;
-    obj[1] = map((emoji, index) => closure_1_4(size(bypassReducedMotionCheck[7]), { emoji, index, emojiCount: map.emojis.length, animation: closure_3, size, bypassReducedMotionCheck }, index));
-    tmp3(effectiveCustomTypingIndicatorAnimation, obj);
-    const tmp4 = effectiveCustomTypingIndicatorAnimation;
+    obj[1] = map((emoji, index) => closure_1_4(size(table[7]), { emoji, index, emojiCount: map.emojis.length, animation: table, size }, index));
+    tmp3(View, obj);
+    const tmp4 = View;
   } else {
-    return tmp3(tmp2(obj[5]).Ellipsis, {});
+    return tmp3(tmp2(1297).Ellipsis, {});
   }
 };

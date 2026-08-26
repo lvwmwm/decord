@@ -1,10 +1,10 @@
-// Module ID: 17035
-// Function ID: 17036
+// Module ID: 17120
+// Function ID: 17121
 // Name: passthrough
 // Dependencies: [2]
 // Exports: useEnableMFAHook
 
-// Module 17035 (passthrough)
+// Module 17120 (passthrough)
 import set from "set" /* 2 */;
 
 function passthrough(arg0) {

@@ -1,14 +1,14 @@
-// Module ID: 15549
-// Function ID: 15550
+// Module ID: 15628
+// Function ID: 15629
 // Name: fetchUnclaimedGames
-// Dependencies: [5, 15550, 676, 530, 709, 589, 687, 584, 2]
+// Dependencies: [5, 15629, 676, 530, 709, 589, 687, 584, 2]
 // Exports: useHasUnclaimedGames, useUnclaimedGameIdsForGuild
 
-// Module 15549 (fetchUnclaimedGames)
+// Module 15628 (fetchUnclaimedGames)
 import failsDefault from "fails" /* 584 */;
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import importDefaultResult from "getMap" /* 15550 */;
+import importDefaultResult from "getMap" /* 15629 */;
 import { Endpoints } from "ME" /* 676 */;
 import initialize from "initialize" /* 589 */;
 
@@ -37,7 +37,7 @@ function _fetchUnclaimedGames() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -79,7 +79,7 @@ function _fetchUnclaimedGames() {
           obj4[1] = body;
           obj.dispatch(obj4);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         c3 = tmp;

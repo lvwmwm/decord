@@ -1,16 +1,16 @@
-// Module ID: 7303
-// Function ID: 7304
+// Module ID: 7369
+// Function ID: 7370
 // Name: getQuestDeliveryDataForPlacement
-// Dependencies: [1996, 7304, 7305, 5268, 5271, 1403, 7320, 1208, 2]
+// Dependencies: [1996, 7370, 7371, 5334, 5337, 1403, 7386, 1208, 2]
 // Exports: captureQuestsException, earnedDecisionIsValid, findNextUpcomingExpirationEpochMs, findQuestOrReplacement, getAdContext, getAdDecisionData, getAdMetadataSealed, getAdTrafficMetadataSealed, getIsQuestExpiredButWithinThirtyDayLookback, getQuestFormattedDate, getQuestPlacementFromQuestContent, hasUnclaimedReward, isBillableQuestContent, isDismissed, isDismissible, isQuestConfigExpired, isQuestExpired
 
-// Module 7303 (getQuestDeliveryDataForPlacement)
+// Module 7369 (getQuestDeliveryDataForPlacement)
 import _modDef1208 from "module_1208" /* 1208 */;
-import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5271 */;
+import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5337 */;
 import closure_3 from "_getSystemLocale" /* 1996 */;
-import closure_4 from "set" /* 7304 */;
-import closure_5 from "initializeState" /* 7305 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5268 */;
+import closure_4 from "set" /* 7370 */;
+import closure_5 from "initializeState" /* 7371 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5334 */;
 
 require = arg1;
 function getQuestDeliveryDataForPlacement(arg0, adContentId) {
@@ -21,9 +21,9 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
       let tmp8 = null;
       if (null != adDecisionByPlacementAndAdCreativeId) {
         obj = { questId: null, adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null };
-        let tmpResult = tmp(7320);
+        let tmpResult = tmp(7386);
         obj[0] = tmpResult.getDeliveredQuestId(adDecisionByPlacementAndAdCreativeId.creative);
-        tmpResult = tmp(7320);
+        tmpResult = tmp(7386);
         obj[1] = tmpResult.getDeliveredAdCreativeId(adDecisionByPlacementAndAdCreativeId.creative);
         ({ adDecisionData: obj[2], adContext: obj[3], metadataSealed: obj[4], trafficMetadataSealed: obj[5] } = adDecisionByPlacementAndAdCreativeId);
         tmp8 = obj;
@@ -38,27 +38,27 @@ function getQuestDeliveryDataForPlacement(arg0, adContentId) {
   } else {
     const questAdDecisionByPlacement = quest.questAdDecisionByPlacement;
     const value = questAdDecisionByPlacement.get(arg0);
-    if (arg0 === tmp(5271).AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
+    if (arg0 === tmp(5337).AdPlacement.QUEST_HOME_BANNER_DESKTOP) {
       if (null != value) {
         obj = { questId: null, adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null };
-        obj[0] = tmp(7320).getDeliveredQuestId(value.creative);
-        const tmpResult1 = tmp(7320);
-        obj[1] = tmp(7320).getDeliveredAdCreativeId(value.creative);
+        obj[0] = tmp(7386).getDeliveredQuestId(value.creative);
+        const tmpResult1 = tmp(7386);
+        obj[1] = tmp(7386).getDeliveredAdCreativeId(value.creative);
         ({ adDecisionData: obj7[2], adContext: obj7[3], metadataSealed: obj7[4], trafficMetadataSealed: obj7[5] } = value);
         let tmp9 = obj;
-        const tmpResult2 = tmp(7320);
+        const tmpResult2 = tmp(7386);
       }
       return tmp9;
     }
     tmp9 = null;
     if (null != value) {
       obj = { questId: null, adCreativeId: null, adDecisionData: null, adContext: null, metadataSealed: null, trafficMetadataSealed: null };
-      obj[0] = tmp(7320).getDeliveredQuestId(value.creative);
-      const tmpResult3 = tmp(7320);
-      obj[1] = tmp(7320).getDeliveredAdCreativeId(value.creative);
+      obj[0] = tmp(7386).getDeliveredQuestId(value.creative);
+      const tmpResult3 = tmp(7386);
+      obj[1] = tmp(7386).getDeliveredAdCreativeId(value.creative);
       ({ adDecisionData: obj4[2], adContext: obj4[3], metadataSealed: obj4[4], trafficMetadataSealed: obj4[5] } = value);
       tmp9 = obj;
-      const tmpResult4 = tmp(7320);
+      const tmpResult4 = tmp(7386);
     }
   }
 }
@@ -124,7 +124,7 @@ export const isDismissible = function isDismissible(closure_1) {
 export const isDismissed = function isDismissed(dismissedQuestContent) {
   const keys = Object.keys(closure_6);
   if (keys.includes(QuestsVisibleMessagesChangedSource.QuestContent[arg1])) {
-    return tmp2(1403).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5271).QuestContent[arg1]]);
+    return tmp2(1403).hasFlag(dismissedQuestContent.dismissedQuestContent, tmp[tmp2(undefined, 5337).QuestContent[arg1]]);
   } else {
     return false;
   }

@@ -1,12 +1,12 @@
-// Module ID: 9899
-// Function ID: 9900
+// Module ID: 9966
+// Function ID: 9967
 // Name: useIsConnectedToVoiceChannel
-// Dependencies: [1218, 4399, 589, 2]
+// Dependencies: [1218, 4463, 589, 2]
 // Exports: useIsConnectedToVoiceChannel, useIsConnectedToVoiceChannelForId
 
-// Module 9899 (useIsConnectedToVoiceChannel)
+// Module 9966 (useIsConnectedToVoiceChannel)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "updateVoiceState" /* 4399 */;
+import closure_3 from "updateVoiceState" /* 4463 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/voice_chat/VoiceChatHooks.tsx");

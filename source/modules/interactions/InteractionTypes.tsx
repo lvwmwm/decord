@@ -1,9 +1,9 @@
-// Module ID: 4631
-// Function ID: 4632
+// Module ID: 4695
+// Function ID: 4696
 // Name: InteractionState
 // Dependencies: [2]
 
-// Module 4631 (InteractionState)
+// Module 4695 (InteractionState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/interactions/InteractionTypes.tsx");

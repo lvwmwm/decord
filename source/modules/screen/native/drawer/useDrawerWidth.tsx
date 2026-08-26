@@ -1,15 +1,15 @@
-// Module ID: 11084
-// Function ID: 11085
+// Module ID: 11156
+// Function ID: 11157
 // Name: sum
-// Dependencies: [676, 4239, 4237, 2]
+// Dependencies: [676, 4303, 4301, 2]
 // Exports: getDrawerWidth, useDrawerWidth
 
-// Module 11084 (sum)
+// Module 11156 (sum)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import useChatLayout from "useChatLayout" /* 4237 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4239 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4239 */;
+import useChatLayout from "useChatLayout" /* 4301 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4303 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4303 */;
 
 const DM_WIDTH = ME.DM_WIDTH;
 const sum = 260 + DM_WIDTH;

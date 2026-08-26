@@ -1,12 +1,12 @@
-// Module ID: 4492
-// Function ID: 4493
+// Module ID: 4556
+// Function ID: 4557
 // Name: WantsVideoQuality
-// Dependencies: [4444, 4493, 2]
+// Dependencies: [4508, 4557, 2]
 
-// Module 4492 (WantsVideoQuality)
+// Module 4556 (WantsVideoQuality)
 import set from "set" /* 2 */;
-import getMaxSinkValue from "getMaxSinkValue" /* 4493 */;
-import DesktopSources from "DesktopSources" /* 4444 */;
+import getMaxSinkValue from "getMaxSinkValue" /* 4557 */;
+import DesktopSources from "DesktopSources" /* 4508 */;
 
 ({ defaultVideoQualityOptions: obj1, MediaEngineContextTypes: c3, VideoQualityMode, VIDEO_QUALITY_FRAMERATE: c4, BIT_FLOOR_PER_PIXEL: c5 } = DesktopSources);
 class WantsVideoQuality {

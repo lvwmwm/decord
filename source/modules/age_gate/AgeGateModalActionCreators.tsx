@@ -1,16 +1,16 @@
-// Module ID: 5932
-// Function ID: 5933
+// Module ID: 5998
+// Function ID: 5999
 // Name: openAgeGateModal
-// Dependencies: [1221, 676, 698, 709, 5933, 1222, 2]
+// Dependencies: [1221, 676, 698, 709, 5999, 1222, 2]
 // Exports: closeAgeGateModal, closeFailedAgeGate, openAgeGateModal, openFailureAgeGateModal, openSuccessAgeGateModal
 
-// Module 5932 (openAgeGateModal)
+// Module 5998 (openAgeGateModal)
 import set from "set" /* 2 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import result2 from "result" /* 1221 */;
 import transitionTo from "transitionTo" /* 1222 */;
-import handleLogoutDefault from "handleLogout" /* 5933 */;
+import handleLogoutDefault from "handleLogout" /* 5999 */;
 import ME from "ME" /* 676 */;
 
 const AgeGateAnalyticAction = result2.AgeGateAnalyticAction;
@@ -18,10 +18,15 @@ const AgeGateAnalyticAction = result2.AgeGateAnalyticAction;
 const result = set.fileFinishedImporting("modules/age_gate/AgeGateModalActionCreators.tsx");
 
 export const openAgeGateModal = function openAgeGateModal(JOIN_LARGE_GUILD_UNDERAGE) {
-  let obj = expandEventPropertiesDefault;
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  ({ onConfirm, guild } = obj);
   obj = { section: JOIN_LARGE_GUILD_UNDERAGE };
-  obj.track(constants2.OPEN_MODAL, { type: "Enter Your Birthday", source: obj });
-  obj = { type: "AGE_GATE_MODAL_OPEN", source: JOIN_LARGE_GUILD_UNDERAGE };
+  expandEventPropertiesDefault.track(constants2.OPEN_MODAL, { type: "Enter Your Birthday", source: obj });
+  const obj2 = expandEventPropertiesDefault;
+  obj = { type: "AGE_GATE_MODAL_OPEN", source: JOIN_LARGE_GUILD_UNDERAGE, onConfirm, guild };
   dispatcherDefault.dispatch(obj);
 };
 export const closeAgeGateModal = function closeAgeGateModal(closure_0) {

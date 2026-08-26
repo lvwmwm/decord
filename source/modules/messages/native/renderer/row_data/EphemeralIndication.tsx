@@ -1,14 +1,14 @@
-// Module ID: 8338
-// Function ID: 8339
+// Module ID: 8405
+// Function ID: 8406
 // Name: createEphemeralIndication
-// Dependencies: [8198, 676, 8339, 1236, 1995, 2]
+// Dependencies: [8265, 676, 8406, 1236, 1995, 2]
 // Exports: createEphemeralIndication
 
-// Module 8338 (createEphemeralIndication)
+// Module 8405 (createEphemeralIndication)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
-import getEphemeralReasonMessage from "getEphemeralReasonMessage" /* 8339 */;
-import closure_3 from "handleMessageSendFailedAutomod" /* 8198 */;
+import getEphemeralReasonMessage from "getEphemeralReasonMessage" /* 8406 */;
+import closure_3 from "handleMessageSendFailedAutomod" /* 8265 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

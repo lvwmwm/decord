@@ -1,16 +1,16 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10413
+// Function ID: 10414
 // Name: AvailableForumTag
-// Dependencies: [19, 5282, 1925, 21, 4380, 712, 589, 10154, 8810, 5466, 1435, 4376, 2]
+// Dependencies: [19, 5348, 1925, 21, 4444, 712, 589, 10221, 8878, 5532, 1435, 4440, 2]
 // Exports: default
 
-// Module 10345 (AvailableForumTag)
+// Module 10413 (AvailableForumTag)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5282 */;
+import closure_4 from "getEmojiToGroupId" /* 5348 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

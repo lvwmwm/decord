@@ -1,14 +1,14 @@
-// Module ID: 7732
-// Function ID: 7733
+// Module ID: 7798
+// Function ID: 7799
 // Name: initialize
-// Dependencies: [676, 7733, 589, 4070, 709, 2]
+// Dependencies: [676, 7799, 589, 4134, 709, 2]
 
-// Module 7732 (initialize)
+// Module 7798 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
 
 const ApplicationFlags = ME.ApplicationFlags;
 let closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };

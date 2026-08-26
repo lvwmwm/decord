@@ -1,14 +1,14 @@
-// Module ID: 6755
-// Function ID: 6756
+// Module ID: 6821
+// Function ID: 6822
 // Name: OrbNitroSpotIllustration
-// Dependencies: [21, 5374, 6756, 2]
+// Dependencies: [21, 5440, 6822, 2]
 // Exports: OrbNitroSpotIllustration
 
-// Module 6755 (OrbNitroSpotIllustration)
+// Module 6821 (OrbNitroSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6756 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6822 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/OrbNitroSpotIllustration.native.tsx");

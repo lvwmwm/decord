@@ -1,19 +1,19 @@
-// Module ID: 5482
-// Function ID: 5483
+// Module ID: 5548
+// Function ID: 5549
 // Name: PressableCard
-// Dependencies: [109, 19, 17, 21, 4120, 712, 4380, 5483, 1367, 4101, 500, 4814, 4818, 5484, 2]
+// Dependencies: [109, 19, 17, 21, 4184, 712, 4444, 5549, 1367, 4165, 500, 4878, 4882, 5550, 2]
 
-// Module 5482 (PressableCard)
+// Module 5548 (PressableCard)
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import map from "map" /* 4101 */;
-import createCardShadowToken from "createCardShadowToken" /* 5483 */;
+import map from "map" /* 4165 */;
+import createCardShadowToken from "createCardShadowToken" /* 5549 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
-import importDefaultResult from "module_4120" /* 4120 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
+import importDefaultResult from "module_4184" /* 4184 */;
 
 require = arg1;
 class Card {

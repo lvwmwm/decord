@@ -1,24 +1,24 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 16101
+// Function ID: 16102
 // Name: SearchListContentAuthor
-// Dependencies: [19, 17, 21, 4380, 712, 1297, 4376, 4224, 4574, 9813, 4918, 1236, 4866, 5482, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 1297, 4440, 4288, 4638, 9880, 4984, 1236, 4932, 5548, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 16020 (SearchListContentAuthor)
+// Module 16101 (SearchListContentAuthor)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import nameFromUserDefault from "nameFromUser" /* 4224 */;
-import Text from "Text" /* 4376 */;
-import computeChannelNameDefault from "computeChannelName" /* 4574 */;
-import getChannelIcon from "getChannelIcon" /* 4866 */;
-import ForumIcon from "ForumIcon" /* 4918 */;
-import PressableCard from "PressableCard" /* 5482 */;
-import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 9813 */;
+import nameFromUserDefault from "nameFromUser" /* 4288 */;
+import Text from "Text" /* 4440 */;
+import computeChannelNameDefault from "computeChannelName" /* 4638 */;
+import getChannelIcon from "getChannelIcon" /* 4932 */;
+import ForumIcon from "ForumIcon" /* 4984 */;
+import PressableCard from "PressableCard" /* 5548 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 9880 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 class SearchListContentAuthor {

@@ -1,12 +1,12 @@
-// Module ID: 13589
-// Function ID: 13590
+// Module ID: 13662
+// Function ID: 13663
 // Name: MenuItem
-// Dependencies: [19, 21, 4380, 13587, 4817, 5473, 5493, 2]
+// Dependencies: [19, 21, 4444, 13660, 4881, 5539, 5559, 2]
 
-// Module 13589 (MenuItem)
+// Module 13662 (MenuItem)
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -23,7 +23,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
   action = action.action;
   let menuClose;
   const tmp = callback();
-  menuClose = importAllResult.useContext(action(13587).MenuContext).menuClose;
+  menuClose = importAllResult.useContext(action(13660).MenuContext).menuClose;
   if (null != IconComponent) {
     let tmp3 = <IconComponent size="sm" />;
   } else {
@@ -32,7 +32,7 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
       let obj = { source: null, style: null };
       obj[0] = iconSource;
       obj[1] = tmp.formIcon;
-      tmp3 = jsx(menuClose(4817), { source: null, style: null });
+      tmp3 = jsx(menuClose(4881), { source: null, style: null });
     }
   }
   obj = { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null };
@@ -57,14 +57,14 @@ const forwardRefResult = importAllResult.forwardRef((action, ref) => {
     obj = { text: null, style: null };
     obj[0] = label;
     obj[1] = tmp.formLabel;
-    tmp7Result = tmp7(menuClose(5493), obj);
+    tmp7Result = tmp7(menuClose(5559), obj);
   }
   obj[6] = tmp7Result;
   obj[7] = function onPress() {
     action();
     menuClose();
   };
-  return jsx(menuClose(5473), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
+  return jsx(menuClose(5539), { ref, style, accessibilityRole: "menuitem", disabled, leading: null, trailing: null, label: null, onPress: null });
 });
 const result = require("set").fileFinishedImporting("design/components/Menu/native/MenuItem.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 4031
-// Function ID: 4032
+// Module ID: 4095
+// Function ID: 4096
 // Name: GuildMemberFlags
-// Dependencies: [1992, 4013, 1403, 589, 2]
+// Dependencies: [1992, 4077, 1403, 589, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile, useCurrentUserAutomodQuaratinedProfile
 
-// Module 4031 (GuildMemberFlags)
+// Module 4095 (GuildMemberFlags)
 import closure_2 from "trackCommunicationDisabled" /* 1992 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 
 const require = arg1;
 let items = [, , ];

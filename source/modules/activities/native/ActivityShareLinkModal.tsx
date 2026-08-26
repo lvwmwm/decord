@@ -1,10 +1,10 @@
-// Module ID: 13954
-// Function ID: 13955
+// Module ID: 14027
+// Function ID: 14028
 // Name: ActivityShareLinkModal
-// Dependencies: [5, 32, 19, 17, 1391, 1922, 1390, 9770, 4373, 21, 4380, 712, 589, 7450, 11717, 13953, 5840, 1370, 13955, 7063, 7287, 4098, 1236, 5862, 4097, 1494, 1629, 500, 5383, 8539, 5376, 6117, 4323, 4951, 11241, 11262, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 1922, 1390, 9837, 4437, 21, 4444, 712, 589, 7516, 11790, 14026, 5906, 1370, 14028, 7129, 7353, 4162, 1236, 5928, 4161, 1494, 1629, 500, 5449, 8607, 5442, 6183, 4387, 5017, 11313, 11334, 2]
 // Exports: default
 
-// Module 13954 (ActivityShareLinkModal)
+// Module 14027 (ActivityShareLinkModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -13,10 +13,10 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import closure_9 from "participantFromServer" /* 1390 */;
-import { UserRowModes } from "UserRowModes" /* 9770 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4373 */;
+import { UserRowModes } from "UserRowModes" /* 9837 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4437 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
@@ -113,7 +113,7 @@ export default function ActivityShareLinkModal(applicationId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -136,7 +136,7 @@ export default function ActivityShareLinkModal(applicationId) {
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = Promise.all(closure_1_9.map(closure_1_0(7450).getOrResolveChannelIdFromDestinationId));
+              obj1[0] = Promise.all(closure_1_9.map(closure_1_0(7516).getOrResolveChannelIdFromDestinationId));
               return obj1;
             } else {
               c3 = 3;
@@ -147,7 +147,7 @@ export default function ActivityShareLinkModal(applicationId) {
           throw arg1;
         } else if (arg0 !== 2) {
           closure_0 = arg1.filter(closure_1_0(1370).isNotNullish);
-          closure_1 = closure_1_0(13955).resolveActivityShareMessageContent(c3, name, closure_12);
+          closure_1 = closure_1_0(14028).resolveActivityShareMessageContent(c3, name, closure_12);
           callback2(true);
           const item = closure_0.forEach((() => {
             closure_0 = v3((arg0) => {
@@ -166,7 +166,7 @@ export default function ActivityShareLinkModal(applicationId) {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -204,7 +204,7 @@ export default function ActivityShareLinkModal(applicationId) {
                       return obj;
                     }
                     c1 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   } catch (tmp12) {
                     c1 = tmp;
                     throw tmp12;
@@ -223,17 +223,17 @@ export default function ActivityShareLinkModal(applicationId) {
               return applyArgumentsResult;
             };
           })());
-          const obj5 = closure_1_0(13955);
+          const obj5 = closure_1_0(14028);
           let obj2 = { key: "ACTIVITY_SHARE_LINK_SUCCESS", content: null };
           const intl = closure_1_0(1236).intl;
           const obj3 = { applicationName: null };
           obj3[0] = name.name;
           obj2[1] = intl.formatToPlainString(closure_1_0(1236).t.jQULqL, obj3);
-          closure_1_1(4098).open(obj2);
+          closure_1_1(4162).open(obj2);
           callback(true, closure_7);
-          const obj6 = closure_1_1(4098);
-          const result = closure_1_0(13953).closeActivityShareLinkModal();
-          const obj9 = closure_1_0(13953);
+          const obj6 = closure_1_1(4162);
+          const result = closure_1_0(14026).closeActivityShareLinkModal();
+          const obj9 = closure_1_0(14026);
         }
         c3 = 3;
         obj = { value: null, done: true };

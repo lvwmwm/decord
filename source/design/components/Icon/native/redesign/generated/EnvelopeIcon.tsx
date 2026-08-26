@@ -1,14 +1,14 @@
-// Module ID: 8703
-// Function ID: 8704
+// Module ID: 8771
+// Function ID: 8772
 // Name: EnvelopeIcon
-// Dependencies: [19, 21, 712, 4100, 8704, 2]
+// Dependencies: [19, 21, 712, 4164, 8772, 2]
 // Exports: EnvelopeIcon
 
-// Module 8703 (EnvelopeIcon)
+// Module 8771 (EnvelopeIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 8704 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 8772 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

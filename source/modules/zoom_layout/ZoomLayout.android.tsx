@@ -1,9 +1,9 @@
-// Module ID: 10787
-// Function ID: 10788
-// Dependencies: [19, 17, 21, 10788, 2]
+// Module ID: 10859
+// Function ID: 10860
+// Dependencies: [19, 17, 21, 10860, 2]
 
-// Module 10787
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10788 */;
+// Module 10859
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10860 */;
 import importAllResult from "noop" /* 19 */;
 import { PixelRatio } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

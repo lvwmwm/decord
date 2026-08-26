@@ -1,32 +1,32 @@
-// Module ID: 14436
-// Function ID: 14437
+// Module ID: 14509
+// Function ID: 14510
 // Name: ThemedTabBadge
-// Dependencies: [32, 19, 17, 4049, 1924, 7039, 21, 4380, 712, 1363, 4315, 4376, 9497, 503, 7791, 1297, 14437, 7054, 7484, 4043, 4201, 1377, 589, 6131, 8315, 8314, 7787, 1236, 4826, 691, 500, 2]
+// Dependencies: [32, 19, 17, 4113, 1924, 7105, 21, 4444, 712, 1363, 4379, 4440, 9565, 503, 7858, 1297, 14510, 7120, 7550, 4107, 4265, 1377, 589, 6197, 8382, 8381, 7854, 1236, 4891, 691, 500, 2]
 // Exports: default
 
-// Module 14436 (ThemedTabBadge)
+// Module 14509 (ThemedTabBadge)
 import noopAll from "noop" /* 19 */;
 import encodeProperties from "encodeProperties" /* 503 */;
 import ThemesDefault from "Themes" /* 712 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4043 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4201 */;
-import useThemeDefault from "useTheme" /* 4315 */;
-import Text from "Text" /* 4376 */;
-import LinearGradientDefault from "LinearGradient" /* 4826 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7054 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7484 */;
-import MarketingComponentType from "MarketingComponentType" /* 7791 */;
-import trackImpressionDefault from "trackImpression" /* 9497 */;
-import registerAssetDefault from "registerAsset" /* 14437 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4265 */;
+import useThemeDefault from "useTheme" /* 4379 */;
+import Text from "Text" /* 4440 */;
+import LinearGradientDefault from "LinearGradient" /* 4891 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7120 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7550 */;
+import MarketingComponentType from "MarketingComponentType" /* 7858 */;
+import trackImpressionDefault from "trackImpression" /* 9565 */;
+import registerAssetDefault from "registerAsset" /* 14510 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "reset" /* 4049 */;
+import closure_5 from "reset" /* 4113 */;
 import { PREMIUM_TIER_2_REFERRAL_TRIAL_ID as closure_6 } from "GuildFeatures" /* 1924 */;
-import { Gradients } from "items" /* 7039 */;
+import { Gradients } from "items" /* 7105 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function ThemedTabBadge(children) {
@@ -68,7 +68,7 @@ function OfferBadge(componentId) {
     ({ uppercase: arr2[0], text: arr2[1] } = tmp);
     obj3[2] = items1;
     obj3[3] = ackedBadgeCopy;
-    items[1] = callback2(tmp5(4376).Text, obj3);
+    items[1] = callback2(tmp5(4440).Text, obj3);
     obj1[1] = items;
     let tmp9 = callback3(View, obj1);
   } else {
@@ -123,25 +123,25 @@ export default function PremiumTabBadge() {
   if (stateFromStores != null) {
     trialId = stateFromStores.trialId;
   }
-  tmp2Result = tmp2(6131);
+  tmp2Result = tmp2(6197);
   if (trialId === closure_6) {
     if (!tmp7) {
       let items1 = [tmp2(1377).DismissibleContent.REFERRAL_TRIAL_MOBILE_NITRO_HOME_BADGE];
     }
     [tmp14, r10051] = callback(tmp11(items1, undefined, true), 2);
-    tmp2(6131);
+    tmp2(6197);
     if (!tmp7) {
       if (hasTier2Premium) {
         let items2 = [tmp2(1377).DismissibleContent.WHATS_NEW_TENURE_BADGE_REWARD];
       }
       let tmp12Result = tmp12(tmp16(items2, undefined, true), 2);
       [tmp18, r10063] = tmp12Result;
-      const isEligibleSenderForReferralProgram = tmp2(8315).useIsEligibleSenderForReferralProgram();
-      const tmp2Result2 = tmp2(8315);
-      const isReferralProgramEntrypointBadgeAcknowledged = tmp2(8314).useIsReferralProgramEntrypointBadgeAcknowledged();
-      const tmp2Result3 = tmp2(8314);
-      const promotionMarketingComponent = tmp2(7787).usePromotionMarketingComponent(tmp2(7791).MarketingComponentType.PREMIUM_TAB);
-      const tmp2Result5 = tmp2(6131);
+      const isEligibleSenderForReferralProgram = tmp2(8382).useIsEligibleSenderForReferralProgram();
+      const tmp2Result2 = tmp2(8382);
+      const isReferralProgramEntrypointBadgeAcknowledged = tmp2(8381).useIsReferralProgramEntrypointBadgeAcknowledged();
+      const tmp2Result3 = tmp2(8381);
+      const promotionMarketingComponent = tmp2(7854).usePromotionMarketingComponent(tmp2(7858).MarketingComponentType.PREMIUM_TAB);
+      const tmp2Result5 = tmp2(6197);
       let prop = null;
       if (null != promotionMarketingComponent) {
         prop = null;
@@ -202,7 +202,7 @@ export default function PremiumTabBadge() {
         obj2[2] = items3;
         const intl8 = tmp2(1236).intl;
         obj2[3] = intl8.string(tmp2(1236).t.y2b7CA);
-        tmp = tmp50(tmp2(4376).Text, obj2);
+        tmp = tmp50(tmp2(4440).Text, obj2);
         obj1[4] = tmp;
         let tmp47Result = tmp50(tmp52, obj1);
         tmp2Result6 = tmp2(500);
@@ -238,7 +238,7 @@ export default function PremiumTabBadge() {
           obj6[2] = items6;
           const intl5 = tmp2(1236).intl;
           obj6[3] = intl5.string(tmp2(1236).t["/DTtr6"]);
-          items5[1] = callback2(tmp2(4376).Text, obj6);
+          items5[1] = callback2(tmp2(4440).Text, obj6);
           obj4[1] = items5;
           let tmp41 = callback3(View, obj4);
         } else {
@@ -253,7 +253,7 @@ export default function PremiumTabBadge() {
           obj8[2] = items7;
           const intl4 = tmp2(1236).intl;
           obj8[3] = intl4.string(tmp2(1236).t["/DTtr6"]);
-          obj7[4] = callback2(tmp2(4376).Text, obj8);
+          obj7[4] = callback2(tmp2(4440).Text, obj8);
           tmp41 = callback2(LinearGradientDefault, obj7);
           const tmp40 = LinearGradientDefault;
         }
@@ -275,12 +275,12 @@ export default function PremiumTabBadge() {
           items8[1] = text1;
           obj10[2] = items8;
           obj10[3] = stringResult;
-          obj9[4] = callback2(tmp2(4376).Text, obj10);
+          obj9[4] = callback2(tmp2(4440).Text, obj10);
           tmp47Result = tmp32(tmp34, obj9);
           tmp2Result7 = tmp2(500);
         }
       }
-      const tmp2Result4 = tmp2(7787);
+      const tmp2Result4 = tmp2(7854);
     }
     items2 = [];
     const tmp13 = callback(tmp11(items1, undefined, true), 2);

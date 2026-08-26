@@ -1,13 +1,13 @@
-// Module ID: 6013
-// Function ID: 6014
+// Module ID: 6079
+// Function ID: 6080
 // Name: canReportUser
-// Dependencies: [1391, 4300, 4025, 1922, 676, 2]
+// Dependencies: [1391, 4364, 4089, 1922, 676, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 6013 (canReportUser)
+// Module 6079 (canReportUser)
 import closure_0 from "ensureGuildLoaded" /* 1391 */;
-import closure_1 from "handleInviteData" /* 4300 */;
-import closure_2 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_1 from "handleInviteData" /* 4364 */;
+import closure_2 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

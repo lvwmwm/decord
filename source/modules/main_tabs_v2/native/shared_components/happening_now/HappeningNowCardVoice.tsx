@@ -1,21 +1,21 @@
-// Module ID: 15443
-// Function ID: 15444
+// Module ID: 15522
+// Function ID: 15523
 // Name: formatVoiceActivityTitle
-// Dependencies: [19, 17, 7265, 1922, 4399, 14738, 676, 21, 4380, 698, 11059, 2009, 15426, 14739, 4931, 12521, 15436, 8326, 589, 12, 1370, 4573, 1236, 2]
+// Dependencies: [19, 17, 7331, 1922, 4463, 14811, 676, 21, 4444, 698, 11131, 2009, 15505, 14812, 4997, 12592, 15515, 8393, 589, 12, 1370, 4637, 1236, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 15443 (formatVoiceActivityTitle)
+// Module 15522 (formatVoiceActivityTitle)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getNicknameDefault from "getNickname" /* 4573 */;
+import getNicknameDefault from "getNickname" /* 4637 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "recomputeAffinities" /* 7265 */;
+import closure_5 from "recomputeAffinities" /* 7331 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "updateVoiceState" /* 4399 */;
-import { HappeningNowCardTrackingType as closure_8 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14738 */;
+import closure_7 from "updateVoiceState" /* 4463 */;
+import { HappeningNowCardTrackingType as closure_8 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14811 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function formatVoiceActivityTitle(stateFromStoresArray, guildId) {
@@ -136,8 +136,8 @@ const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native
 export default memoResult;
 export const useVoiceChannelUsers = function useVoiceChannelUsers(channelId) {
   const _require = channelId;
-  const voiceUserAffinitySortType = _require(8326).useVoiceUserAffinitySortType("useVoiceChannelUsers");
-  const obj = _require(8326);
+  const voiceUserAffinitySortType = _require(8393).useVoiceUserAffinitySortType("useVoiceChannelUsers");
+  const obj = _require(8393);
   const items = [closure_7, closure_6, closure_5];
   const items1 = [voiceUserAffinitySortType, channelId.channelId];
   return _require(589).useStateFromStoresArray(items, () => {

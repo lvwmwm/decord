@@ -1,13 +1,13 @@
-// Module ID: 8664
-// Function ID: 8665
+// Module ID: 8732
+// Function ID: 8733
 // Name: _saveEmail
-// Dependencies: [5, 8610, 8665, 8667, 691, 2]
+// Dependencies: [5, 8678, 8733, 8735, 691, 2]
 // Exports: finishChangeEmailFlow, finishVerifyEmailFlow, saveEmail
 
-// Module 8664 (_saveEmail)
+// Module 8732 (_saveEmail)
 import keys from "keys" /* 691 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ChangeEmailFields from "ChangeEmailFields" /* 8610 */;
+import ChangeEmailFields from "ChangeEmailFields" /* 8678 */;
 
 require = arg1;
 function _saveEmail() {
@@ -30,7 +30,7 @@ function _saveEmail() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

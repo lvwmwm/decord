@@ -1,17 +1,17 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 17020
+// Function ID: 17021
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 8203, 21, 712, 4380, 16936, 12039, 4813, 4376, 1236, 16937, 16938, 13468, 5884, 2]
+// Dependencies: [19, 17, 8270, 21, 712, 4444, 17021, 12112, 4877, 4440, 1236, 17022, 17023, 13541, 5950, 2]
 // Exports: default
 
-// Module 16935 (GuildSettingsServerTagBadgeGrid)
+// Module 17020 (GuildSettingsServerTagBadgeGrid)
 import ThemesDefault from "Themes" /* 712 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 16936 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 17021 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { GuildTagBadgeSize } from "items" /* 8203 */;
+import { GuildTagBadgeSize } from "items" /* 8270 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
@@ -38,7 +38,7 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   obj = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: null };
   const intl = guildId(1236).intl;
   obj[3] = intl.string(guildId(1236).t.wRnfnY);
-  const items1 = [callback(guildId(4376).Text, obj), , ];
+  const items1 = [callback(guildId(4440).Text, obj), , ];
   obj = {
     accessibilityRole: "radiogroup",
     style: tmp.grid,
@@ -75,14 +75,14 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     obj3[2] = tmp.upsellText;
     const intl3 = tmp7(1236).intl;
     obj3[3] = intl3.string(tmp7(1236).t.U5p3GZ);
-    items2[1] = tmp8(tmp7(4376).Text, obj3);
+    items2[1] = tmp8(tmp7(4440).Text, obj3);
     const obj4 = { size: "md", color: null };
     obj4[1] = ThemesDefault.colors.ICON_SUBTLE;
-    items2[2] = tmp8(tmp7(5884).ChevronSmallRightIcon, obj4);
+    items2[2] = tmp8(tmp7(5950).ChevronSmallRightIcon, obj4);
     obj1[4] = items2;
     tmp6Result = tmp6(closure_4, obj1);
   }
   items1[2] = tmp6Result;
   obj[1] = items1;
-  return closure_8(guildId(4813).Stack, obj);
+  return closure_8(guildId(4877).Stack, obj);
 };

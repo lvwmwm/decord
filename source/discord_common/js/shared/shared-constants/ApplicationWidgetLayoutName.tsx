@@ -1,9 +1,9 @@
-// Module ID: 12557
-// Function ID: 12558
+// Module ID: 12628
+// Function ID: 12629
 // Name: ApplicationWidgetLayoutName
 // Dependencies: [2]
 
-// Module 12557 (ApplicationWidgetLayoutName)
+// Module 12628 (ApplicationWidgetLayoutName)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetLayoutName.tsx");

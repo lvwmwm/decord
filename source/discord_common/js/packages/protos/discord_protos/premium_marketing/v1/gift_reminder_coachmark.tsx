@@ -1,12 +1,12 @@
-// Module ID: 7507
-// Function ID: 7508
+// Module ID: 7573
+// Function ID: 7574
 // Name: create
-// Dependencies: [32, 1307, 7502, 7492, 2]
+// Dependencies: [32, 1307, 7568, 7558, 2]
 
-// Module 7507 (create)
+// Module 7573 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create from "create" /* 7492 */;
-import create2 from "create" /* 7502 */;
+import create from "create" /* 7558 */;
+import create2 from "create" /* 7568 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -22,7 +22,7 @@ class GiftReminderCoachmark$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(7502).ThemeAwareAsset;
+            return callback(7568).ThemeAwareAsset;
           }
     };
     obj = { no: 5, name: "header_localized", kind: "message", T: null };
@@ -38,7 +38,7 @@ class GiftReminderCoachmark$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(7492).LocalizedString;
+            return callback(7558).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.GiftReminderCoachmark", items, T);
@@ -186,7 +186,7 @@ let items = [
     name: "asset",
     kind: "message",
     T() {
-      return callback(7502).ThemeAwareAsset;
+      return callback(7568).ThemeAwareAsset;
     }
   },
 ,
@@ -205,7 +205,7 @@ items[5] = {
   name: "body_localized",
   kind: "message",
   T() {
-    return callback(7492).LocalizedString;
+    return callback(7558).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.GiftReminderCoachmark", items, tmp, T, GiftReminderCoachmark$Type, prototype, items);

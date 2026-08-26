@@ -1,14 +1,14 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7509
+// Function ID: 7510
 // Name: _fileSize
-// Dependencies: [5, 676, 4373, 3, 652, 12, 4999, 5004, 4961, 4962, 2]
+// Dependencies: [5, 676, 4437, 3, 652, 12, 5065, 5070, 5027, 5028, 2]
 
-// Module 7443 (_fileSize)
+// Module 7509 (_fileSize)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AbortCodes } from "ME" /* 676 */;
-import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4373 */;
+import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4437 */;
 import { EventEmitter } from "EventEmitter" /* 652 */;
 
 const require = arg1;
@@ -112,7 +112,7 @@ prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -350,7 +350,7 @@ prototype["cancelItem"] = function cancelItem(itemId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

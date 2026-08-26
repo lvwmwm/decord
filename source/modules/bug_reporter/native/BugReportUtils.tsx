@@ -1,10 +1,10 @@
-// Module ID: 10018
-// Function ID: 10019
+// Module ID: 10085
+// Function ID: 10086
 // Name: uriScheme
-// Dependencies: [5, 3, 514, 4963, 1208, 2]
+// Dependencies: [5, 3, 514, 5029, 1208, 2]
 // Exports: getAttachments
 
-// Module 10018 (uriScheme)
+// Module 10085 (uriScheme)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -41,7 +41,7 @@ function _getAttachments() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -188,7 +188,7 @@ function _getAttachments() {
             let obj6 = arr(514);
             dependencyMap = obj6.v4();
             let tmp55 = dependencyMap;
-            let obj8 = arr(4963);
+            let obj8 = arr(5029);
             let tmp56 = lib;
             c7 = 3;
             let num5 = 1;

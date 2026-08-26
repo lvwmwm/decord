@@ -1,12 +1,12 @@
-// Module ID: 4936
-// Function ID: 4937
+// Module ID: 5002
+// Function ID: 5003
 // Name: GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH
-// Dependencies: [4937, 2]
+// Dependencies: [5003, 2]
 // Exports: isGameAutocompleteResultAllowedInGameWidgets, normalizeGameAutocompleteQuery, shouldSuppressAutocompleteFetch
 
-// Module 4936 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
+// Module 5002 (GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH)
 import set from "set" /* 2 */;
-import GAME_WIDGET_LIMITS_BY_TYPE from "GAME_WIDGET_LIMITS_BY_TYPE" /* 4937 */;
+import GAME_WIDGET_LIMITS_BY_TYPE from "GAME_WIDGET_LIMITS_BY_TYPE" /* 5003 */;
 
 const result = set.fileFinishedImporting("modules/games/autocomplete/GameAutocompleteUtils.tsx");
 

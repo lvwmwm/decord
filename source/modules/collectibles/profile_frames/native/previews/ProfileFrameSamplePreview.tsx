@@ -1,21 +1,21 @@
-// Module ID: 9541
-// Function ID: 9542
+// Module ID: 9609
+// Function ID: 9610
 // Name: filterLayer
-// Dependencies: [19, 17, 9523, 5882, 21, 4380, 712, 8967, 4101, 8964, 8950, 5416, 5374, 9542, 2]
+// Dependencies: [19, 17, 9591, 5948, 21, 4444, 712, 9035, 4165, 9032, 9018, 5482, 5440, 9610, 2]
 // Exports: default
 
-// Module 9541 (filterLayer)
+// Module 9609 (filterLayer)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4101 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8950 */;
-import ProfileFrameLayerDefault from "ProfileFrameLayer" /* 8964 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8967 */;
-import metadataDefault from "metadata" /* 9542 */;
+import map from "map" /* 4165 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 9018 */;
+import ProfileFrameLayerDefault from "ProfileFrameLayer" /* 9032 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 9035 */;
+import metadataDefault from "metadata" /* 9610 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5882 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5948 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function filterLayer(responsive) {
@@ -74,14 +74,14 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   items3[1] = tmp16;
   const obj10 = { source: null, style: null, resizeMode: "cover" };
   const obj11 = { uri: null };
-  let tmp3Result = tmp3(5374);
+  let tmp3Result = tmp3(5440);
   obj11[0] = metadataDefault;
   obj10[0] = obj11;
   obj10[1] = tmp.sampleProfile;
   obj9[1] = callback(tmp3Result, obj10);
   items2[1] = callback(closure_4, obj9);
   const obj12 = { frame: profileFrame, filterLayer: tmp10, profileThemeType: tmp11.PREVIEW, frameOrder: null, containerWidth: null, containerHeight: null };
-  tmp3Result = tmp3(8964);
+  tmp3Result = tmp3(9032);
   obj12[3] = ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT;
   obj12[4] = result;
   obj12[5] = previewHeight - overflowTop - overflowBottom;

@@ -1,9 +1,9 @@
-// Module ID: 7726
-// Function ID: 7727
+// Module ID: 7792
+// Function ID: 7793
 // Name: APBRequestOperations
 // Dependencies: [2]
 
-// Module 7726 (APBRequestOperations)
+// Module 7792 (APBRequestOperations)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/APBRequestOperations.tsx");

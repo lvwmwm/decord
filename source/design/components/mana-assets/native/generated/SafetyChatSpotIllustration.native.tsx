@@ -1,14 +1,14 @@
-// Module ID: 6817
-// Function ID: 6818
+// Module ID: 6883
+// Function ID: 6884
 // Name: SafetyChatSpotIllustration
-// Dependencies: [21, 5374, 6818, 2]
+// Dependencies: [21, 5440, 6884, 2]
 // Exports: SafetyChatSpotIllustration
 
-// Module 6817 (SafetyChatSpotIllustration)
+// Module 6883 (SafetyChatSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6818 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6884 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SafetyChatSpotIllustration.native.tsx");

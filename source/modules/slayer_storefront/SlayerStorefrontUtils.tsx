@@ -1,22 +1,22 @@
-// Module ID: 5954
-// Function ID: 5955
+// Module ID: 6020
+// Function ID: 6021
 // Name: getPrice
-// Dependencies: [4421, 5955, 4406, 1910, 5956, 5957, 676, 678, 505, 4643, 5958, 12, 5959, 1487, 5279, 589, 5840, 2]
+// Dependencies: [4485, 6021, 4470, 1910, 6022, 6023, 676, 678, 505, 4707, 6024, 12, 6025, 1487, 5345, 589, 5906, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getCountryPrices, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 5954 (getPrice)
+// Module 6020 (getPrice)
 import applyDefault from "apply" /* 12 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4643 */;
-import keysSorter from "keysSorter" /* 5279 */;
-import RewardRequirementType from "RewardRequirementType" /* 5958 */;
-import useSKUPrice from "useSKUPrice" /* 5959 */;
-import closure_3 from "addApplication" /* 4421 */;
-import { WishlistRecommendationReason as closure_4 } from "fromServer" /* 5955 */;
-import closure_5 from "createExecutable" /* 4406 */;
+import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4707 */;
+import keysSorter from "keysSorter" /* 5345 */;
+import RewardRequirementType from "RewardRequirementType" /* 6024 */;
+import useSKUPrice from "useSKUPrice" /* 6025 */;
+import closure_3 from "addApplication" /* 4485 */;
+import { WishlistRecommendationReason as closure_4 } from "fromServer" /* 6021 */;
+import closure_5 from "createExecutable" /* 4470 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "handleUserSettingsStoreUpdate" /* 5956 */;
-import STOREFRONT_MARKETING_GUILD_ID from "STOREFRONT_MARKETING_GUILD_ID" /* 5957 */;
+import closure_7 from "handleUserSettingsStoreUpdate" /* 6022 */;
+import STOREFRONT_MARKETING_GUILD_ID from "STOREFRONT_MARKETING_GUILD_ID" /* 6023 */;
 import ME from "ME" /* 676 */;
 import { CollectibleShopTab } from "items" /* 678 */;
 import { CurrencyCodes } from "sum" /* 505 */;
@@ -665,7 +665,7 @@ export const useGetSocialLayerStorefrontGuildIdAndApplication = function useGetS
   const items = [closure_7];
   const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_7.getGuildIdFromApplicationId(closure_0));
   const obj = _require(589);
-  const application = _require(5840).useGetOrFetchApplication(applicationId);
+  const application = _require(5906).useGetOrFetchApplication(applicationId);
   let guildId = stateFromStores;
   if (stateFromStores == null) {
     guildId = undefined;

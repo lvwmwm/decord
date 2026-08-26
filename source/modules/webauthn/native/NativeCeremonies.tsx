@@ -1,9 +1,9 @@
-// Module ID: 8633
-// Function ID: 8634
+// Module ID: 8701
+// Function ID: 8702
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 5937, 1236, 500, 8634, 8635, 1625, 2]
+// Dependencies: [5, 17, 3, 6003, 1236, 500, 8702, 8703, 1625, 2]
 
-// Module 8633 (_promptForRegisterCredential)
+// Module 8701 (_promptForRegisterCredential)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
@@ -27,7 +27,7 @@ function _promptForRegisterCredential() {
           obj[0] = credential;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

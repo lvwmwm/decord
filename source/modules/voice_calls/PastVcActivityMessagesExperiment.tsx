@@ -1,13 +1,13 @@
-// Module ID: 16676
-// Function ID: 16677
+// Module ID: 16761
+// Function ID: 16762
 // Name: experiment
-// Dependencies: [4294, 4291, 2]
+// Dependencies: [4358, 4355, 2]
 // Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
 
-// Module 16676 (experiment)
+// Module 16761 (experiment)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4294 */;
-import createExperiment from "createExperiment" /* 4291 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4358 */;
+import createExperiment from "createExperiment" /* 4355 */;
 
 const items = [{ id: 1, label: "Show past VC activity messages in system channel", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-02_past_vc_activity_messages", label: "Past VC Activity Messages", commonTriggerPoint: ExperimentBuckets.CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false }, treatments: items });

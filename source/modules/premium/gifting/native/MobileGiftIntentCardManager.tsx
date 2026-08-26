@@ -1,17 +1,17 @@
-// Module ID: 16813
-// Function ID: 16814
+// Module ID: 16898
+// Function ID: 16899
 // Name: isChannelEligible
-// Dependencies: [7265, 1391, 4623, 1981, 8331, 1924, 16814, 692, 4070, 7468, 9497, 503, 4264, 9229, 2]
+// Dependencies: [7331, 1391, 4687, 1981, 8398, 1924, 16899, 692, 4134, 7534, 9565, 503, 4328, 9297, 2]
 
-// Module 16813 (isChannelEligible)
+// Module 16898 (isChannelEligible)
 import set2 from "set" /* 692 */;
-import fetchUserAffinitiesV2 from "fetchUserAffinitiesV2" /* 9229 */;
-import onPostConnectionOpenDefault from "onPostConnectionOpen" /* 16814 */;
-import closure_2 from "recomputeAffinities" /* 7265 */;
+import fetchUserAffinitiesV2 from "fetchUserAffinitiesV2" /* 9297 */;
+import onPostConnectionOpenDefault from "onPostConnectionOpen" /* 16899 */;
+import closure_2 from "recomputeAffinities" /* 7331 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "reinjectEphemerals" /* 4623 */;
+import closure_4 from "reinjectEphemerals" /* 4687 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "getCurrentTime" /* 8331 */;
+import closure_6 from "getCurrentTime" /* 8398 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 require = arg1;
@@ -28,16 +28,16 @@ prototype["maybeSendCard"] = function maybeSendCard(id, closure_0) {
   self = this;
   dependencyMap = id;
   const _require = closure_0;
-  const EnableFriendAnniversaryNotifications = _require(4070).EnableFriendAnniversaryNotifications;
+  const EnableFriendAnniversaryNotifications = _require(4134).EnableFriendAnniversaryNotifications;
   if (EnableFriendAnniversaryNotifications.getSetting()) {
     if (!closure_6.isGiftIntentMessageInCooldown(closure_0)) {
       if (id === store.getChannelId()) {
         if (ready.isReady(id)) {
           if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, closure_0, constants.SEND_MESSAGE)) {
-            let tmpResult = tmp(7468);
+            let tmpResult = tmp(7534);
             const result = tmpResult.logMessageGiftIntentShown(closure_0);
             const userAffinity = self.getUserAffinity(closure_0);
-            tmpResult = tmp(9497);
+            tmpResult = tmp(9565);
             let obj = { name: null, type: null, properties: null };
             obj[0] = tmp(503).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION;
             obj[1] = tmp(503).ImpressionTypes.VIEW;

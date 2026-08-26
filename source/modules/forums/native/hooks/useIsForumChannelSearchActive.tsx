@@ -1,18 +1,18 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 12832
+// Function ID: 12833
 // Name: useIsForumChannelSearchActive
-// Dependencies: [7371, 12746, 589, 2]
+// Dependencies: [7437, 12819, 589, 2]
 // Exports: useIsForumChannelSearchActive
 
-// Module 12759 (useIsForumChannelSearchActive)
-import closure_2 from "initialize" /* 7371 */;
+// Module 12832 (useIsForumChannelSearchActive)
+import closure_2 from "initialize" /* 7437 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/forums/native/hooks/useIsForumChannelSearchActive.tsx");
 
 export const useIsForumChannelSearchActive = function useIsForumChannelSearchActive(channelId) {
   const _require = channelId;
-  let canSearchForumPostsByChannelId = _require(12746).useCanSearchForumPostsByChannelId(channelId);
+  let canSearchForumPostsByChannelId = _require(12819).useCanSearchForumPostsByChannelId(channelId);
   _require(589);
   [][0] = channelId;
   if (canSearchForumPostsByChannelId) {

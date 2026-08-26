@@ -1,26 +1,26 @@
-// Module ID: 12236
-// Function ID: 12237
+// Module ID: 12308
+// Function ID: 12309
 // Name: _uploadContacts
-// Dependencies: [5, 17, 5106, 12235, 12234, 676, 501, 4601, 503, 709, 12237, 4070, 1208, 589, 1403, 1995, 4094, 4611, 2]
+// Dependencies: [5, 17, 5172, 12307, 12306, 676, 501, 4665, 503, 709, 12309, 4134, 1208, 589, 1403, 1995, 4158, 4675, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 12236 (_uploadContacts)
+// Module 12308 (_uploadContacts)
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import encodeProperties from "encodeProperties" /* 503 */;
 import initialize from "initialize" /* 589 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import hasFlag from "hasFlag" /* 1403 */;
 import combinedDefault from "combined" /* 1995 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import _modDef4094 from "module_4094" /* 4094 */;
-import _modDef4601 from "module_4601" /* 4601 */;
-import _modDef4611 from "module_4611" /* 4611 */;
-import _requestAndSyncContacts from "_requestAndSyncContacts" /* 12237 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import _modDef4158 from "module_4158" /* 4158 */;
+import _modDef4665 from "module_4665" /* 4665 */;
+import _modDef4675 from "module_4675" /* 4675 */;
+import _requestAndSyncContacts from "_requestAndSyncContacts" /* 12309 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "set" /* 5106 */;
-import setStoredContacts from "setStoredContacts" /* 12235 */;
-import ContactSyncLandingPage from "ContactSyncLandingPage" /* 12234 */;
+import closure_5 from "set" /* 5172 */;
+import setStoredContacts from "setStoredContacts" /* 12307 */;
+import ContactSyncLandingPage from "ContactSyncLandingPage" /* 12306 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -43,7 +43,7 @@ function _uploadContacts() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -82,7 +82,7 @@ function _uploadContacts() {
             } else {
               const _JSON = JSON;
               dependencyMap = JSON.parse(callback);
-              let obj7 = flag(4601);
+              let obj7 = flag(4665);
               const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
               obj2[0] = constants2.CONNECTION_SYNC_CONTACTS;
               const obj3 = { friend_list_entries: null, background: null, allowed_in_suggestions: null, include_mutual_friends_count: false };
@@ -196,7 +196,7 @@ export const uploadContacts = function uploadContacts(c3, arg1) {
   return applyArgumentsResult;
 };
 export const bulkAddFriends = function bulkAddFriends(user_ids, bulkAddToken) {
-  let obj = _modDef4601;
+  let obj = _modDef4665;
   obj = { url: closure_12.USER_BULK_RELATIONSHIPS, body: obj, trackedActionData: null, rejectWithError: false };
   obj = { user_ids, token: bulkAddToken };
   obj[2] = { event: encodeProperties.NetworkActionNames.USER_BULK_RELATIONSHIPS_UPDATE };
@@ -213,7 +213,7 @@ export const adminDeleteContactSync = function adminDeleteContactSync() {
   obj = { url: closure_12.CONNECTION(constants2.CONTACTS, "@me"), oldFormErrors: true, trackedActionData: null, rejectWithError: false };
   obj = { event: encodeProperties.NetworkActionNames.USER_CONNECTIONS_UPDATE };
   obj[2] = obj;
-  return _modDef4601.delete(obj);
+  return _modDef4665.delete(obj);
 };
 export const getImageForContactId = function getImageForContactId(closure_0, arg1) {
   let DCDContactSyncManager = NativeModules.DCDContactSyncManager;
@@ -311,9 +311,9 @@ export const getOpenLearnMoreUrl = function getOpenLearnMoreUrl() {
   return combinedDefault.getArticleURL(constants4.CONTACT_SYNC);
 };
 export const handleOpenLearnMoreLink = function handleOpenLearnMoreLink() {
-  const obj = _modDef4094;
+  const obj = _modDef4158;
   obj.openURL(combinedDefault.getArticleURL(constants4.CONTACT_SYNC));
 };
 export const transitionToAddFriendsLandingPage = function transitionToAddFriendsLandingPage() {
-  _modDef4611.popWithKey(closure_9);
+  _modDef4675.popWithKey(closure_9);
 };

@@ -1,16 +1,16 @@
-// Module ID: 4569
-// Function ID: 4570
+// Module ID: 4633
+// Function ID: 4634
 // Name: getMediaPostEmbedCommonData
-// Dependencies: [1910, 4034, 1922, 676, 4570, 1236, 4573, 1435, 1403, 4574, 4363, 4575, 2]
+// Dependencies: [1910, 4098, 1922, 676, 4634, 1236, 4637, 1435, 1403, 4638, 4427, 4639, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
-// Module 4569 (getMediaPostEmbedCommonData)
+// Module 4633 (getMediaPostEmbedCommonData)
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import getPathsFromURL from "getPathsFromURL" /* 4363 */;
-import MAX_THUMBNAIL_COUNT from "MAX_THUMBNAIL_COUNT" /* 4570 */;
-import getNicknameDefault from "getNickname" /* 4573 */;
+import getPathsFromURL from "getPathsFromURL" /* 4427 */;
+import MAX_THUMBNAIL_COUNT from "MAX_THUMBNAIL_COUNT" /* 4634 */;
+import getNicknameDefault from "getNickname" /* 4637 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
-import closure_4 from "markAllUserIdListsStale" /* 4034 */;
+import closure_4 from "markAllUserIdListsStale" /* 4098 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
@@ -116,7 +116,7 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     obj[13] = name;
     let channelName;
     if (null != parentChannel) {
-      tmp17Result = tmp17(4574);
+      tmp17Result = tmp17(4638);
       channelName = tmp17Result.computeChannelName(parentChannel, closure_5, closure_4);
     }
     obj[14] = channelName;
@@ -133,10 +133,10 @@ export const getMediaPostEmbedChannelId = function getMediaPostEmbedChannelId(ur
   if (null != url) {
     const parseURLSafelyResult = getPathsFromURL.parseURLSafely(url);
     if (null != parseURLSafelyResult) {
-      let tmp2Result = tmp2(4363);
+      let tmp2Result = tmp2(4427);
       const result = tmp2Result.remainingPathFromDiscordHostMatch(parseURLSafelyResult);
       if (null != result) {
-        tmp2Result = tmp2(4575);
+        tmp2Result = tmp2(4639);
         tryParseChannelPathResult = tmp2Result.tryParseChannelPath(result);
       }
     }
@@ -156,10 +156,10 @@ export const getMediaPostEmbedChannelPath = function getMediaPostEmbedChannelPat
   if (null != url) {
     const parseURLSafelyResult = getPathsFromURL.parseURLSafely(url);
     if (null != parseURLSafelyResult) {
-      let tmpResult = tmp(4363);
+      let tmpResult = tmp(4427);
       const result = tmpResult.remainingPathFromDiscordHostMatch(parseURLSafelyResult);
       if (null != result) {
-        tmpResult = tmp(4575);
+        tmpResult = tmp(4639);
         return tmpResult.tryParseChannelPath(result);
       }
     }

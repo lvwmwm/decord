@@ -1,15 +1,15 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12567
+// Function ID: 12568
 // Name: getActivityHeader
-// Dependencies: [676, 12497, 12498, 1236, 12500, 12501, 9805, 2]
+// Dependencies: [676, 12568, 12569, 1236, 12571, 12572, 9872, 2]
 // Exports: default
 
-// Module 12496 (getActivityHeader)
+// Module 12567 (getActivityHeader)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import unpackStageChannelParty from "unpackStageChannelParty" /* 9805 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 12497 */;
-import PlatformTypesDefault from "PlatformTypes" /* 12498 */;
+import unpackStageChannelParty from "unpackStageChannelParty" /* 9872 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 12568 */;
+import PlatformTypesDefault from "PlatformTypes" /* 12569 */;
 import ME from "ME" /* 676 */;
 
 ({ ActivityTypes: c3, PlatformTypes: c4 } = ME);
@@ -167,7 +167,7 @@ export default function getActivityHeader(session_id) {
       obj11[2] = str;
       return obj11;
     }
-    tmp35 = tmp(12501)(tmp3, session_id);
+    tmp35 = tmp(12572)(tmp3, session_id);
   }
   if (session_id.type === constants.PLAYING) {
     const obj13 = { text: null, platformIcon: null, platformLabel: null };
@@ -252,7 +252,7 @@ export default function getActivityHeader(session_id) {
             obj25[2] = str;
             obj = obj25;
           } else {
-            obj = { text: "r", platformIcon: "r", platformLabel: false };
+            obj = { text: "r", platformIcon: "flex", platformLabel: null };
             obj[1] = icon;
             obj[2] = str;
           }

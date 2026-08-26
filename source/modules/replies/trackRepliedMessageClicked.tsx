@@ -1,15 +1,15 @@
-// Module ID: 11199
-// Function ID: 11200
+// Module ID: 11271
+// Function ID: 11272
 // Name: trackRepliedMessageClicked
-// Dependencies: [7201, 676, 9484, 4588, 2]
+// Dependencies: [7267, 676, 9552, 4652, 2]
 // Exports: default
 
-// Module 11199 (trackRepliedMessageClicked)
+// Module 11271 (trackRepliedMessageClicked)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4588 */;
-import processMessage from "processMessage" /* 7201 */;
-import maybeCreateMessageRecordFromSnapshotDefault from "maybeCreateMessageRecordFromSnapshot" /* 9484 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4652 */;
+import processMessage from "processMessage" /* 7267 */;
+import maybeCreateMessageRecordFromSnapshotDefault from "maybeCreateMessageRecordFromSnapshot" /* 9552 */;
 
 const ReferencedMessageState = processMessage.ReferencedMessageState;
 const AnalyticEvents = ME.AnalyticEvents;

@@ -1,13 +1,13 @@
 // Module ID: 1983
 // Function ID: 1984
 // Name: isSubscriptionGated
-// Dependencies: [1984, 1395, 1986, 1391, 1992, 1985, 1910, 1922, 676, 4016, 4017, 4018, 589, 709, 2]
+// Dependencies: [1984, 1395, 1986, 1391, 1992, 1985, 1910, 1922, 676, 4080, 4081, 4082, 589, 709, 2]
 
 // Module 1983 (isSubscriptionGated)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isSubscriptionRole from "isSubscriptionRole" /* 4016 */;
-import hasViewChannelPermission from "hasViewChannelPermission" /* 4017 */;
+import isSubscriptionRole from "isSubscriptionRole" /* 4080 */;
+import hasViewChannelPermission from "hasViewChannelPermission" /* 4081 */;
 import closure_2 from "initialize" /* 1984 */;
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
 import { hasPermission } from "GuildRoleRecordTypeTag" /* 1986 */;

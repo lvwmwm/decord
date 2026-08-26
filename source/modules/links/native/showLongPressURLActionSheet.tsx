@@ -1,10 +1,10 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11216
+// Function ID: 11217
 // Name: showLongPressURLActionSheet
-// Dependencies: [4348, 1236, 4097, 5862, 4094, 9070, 11145, 5867, 2]
+// Dependencies: [4412, 1236, 4161, 5928, 4158, 9138, 11217, 5933, 2]
 // Exports: default
 
-// Module 11144 (showLongPressURLActionSheet)
+// Module 11216 (showLongPressURLActionSheet)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("modules/links/native/showLongPressURLActionSheet.tsx");

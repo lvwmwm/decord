@@ -1,10 +1,10 @@
-// Module ID: 7079
-// Function ID: 7080
+// Module ID: 7145
+// Function ID: 7146
 // Name: sendUnloadRequest
 // Dependencies: [2]
 // Exports: sendUnloadRequest
 
-// Module 7079 (sendUnloadRequest)
+// Module 7145 (sendUnloadRequest)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/analytics/sendUnloadRequest.tsx");

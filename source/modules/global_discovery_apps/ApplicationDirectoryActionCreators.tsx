@@ -1,25 +1,25 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11727
+// Function ID: 11728
 // Name: _getEmbedApplication
-// Dependencies: [5, 4379, 1996, 706, 5836, 11655, 11656, 11651, 11657, 11658, 676, 709, 584, 530, 11652, 500, 11659, 11660, 11661, 2]
+// Dependencies: [5, 4443, 1996, 706, 5902, 11728, 11729, 11724, 11730, 11731, 676, 709, 584, 530, 11725, 500, 11732, 11733, 11734, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11654 (_getEmbedApplication)
+// Module 11727 (_getEmbedApplication)
 import refreshSourceMapCookieDefault from "refreshSourceMapCookie" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getUserAgnosticState" /* 4379 */;
+import closure_4 from "getUserAgnosticState" /* 4443 */;
 import closure_5 from "_getSystemLocale" /* 1996 */;
-import closure_6 from "set" /* 5836 */;
-import { FetchState } from "set" /* 5836 */;
-import closure_8 from "getLastFetchTimeMs" /* 11655 */;
-import closure_9 from "getLastFetchTimeMs" /* 11656 */;
-import { FetchState } from "getLastFetchTimeMs" /* 11656 */;
-import closure_11 from "getSearchResults" /* 11651 */;
-import { FetchState } from "getSearchResults" /* 11651 */;
-import closure_13 from "getSimilarApplications" /* 11657 */;
-import { FetchState } from "getSimilarApplications" /* 11657 */;
-import closure_15 from "addToApplicationIdToGuildIds" /* 11658 */;
-import { FetchState } from "addToApplicationIdToGuildIds" /* 11658 */;
+import closure_6 from "set" /* 5902 */;
+import { FetchState } from "set" /* 5902 */;
+import closure_8 from "getLastFetchTimeMs" /* 11728 */;
+import closure_9 from "getLastFetchTimeMs" /* 11729 */;
+import { FetchState } from "getLastFetchTimeMs" /* 11729 */;
+import closure_11 from "getSearchResults" /* 11724 */;
+import { FetchState } from "getSearchResults" /* 11724 */;
+import closure_13 from "getSimilarApplications" /* 11730 */;
+import { FetchState } from "getSimilarApplications" /* 11730 */;
+import closure_15 from "addToApplicationIdToGuildIds" /* 11731 */;
+import { FetchState } from "addToApplicationIdToGuildIds" /* 11731 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -42,7 +42,7 @@ function _getEmbedApplication() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -178,7 +178,7 @@ function _getApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -316,7 +316,7 @@ function _getCategories() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -404,7 +404,7 @@ function _getSimilarApplications() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -569,7 +569,7 @@ function _search() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -834,7 +834,7 @@ function _fetchCollections() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -900,7 +900,7 @@ function _fetchCollections() {
                 if (fetchState !== constants.FETCHING) {
                   let tmp29 = !dependencyMap;
                   if (!dependencyMap) {
-                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11661).ApplicationCollectionActiveState.ACTIVE;
+                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11734).ApplicationCollectionActiveState.ACTIVE;
                   }
                   c6 = tmp29;
                   let obj5 = ACTIVE(709);
@@ -919,10 +919,10 @@ function _fetchCollections() {
                   let obj9 = APPLICATION_DIRECTORY(500);
                   locale = APPLICATION_DIRECTORY;
                   if (obj9.isAndroid()) {
-                    let WEB = locale(11659).ApplicationCollectionPlatforms.ANDROID;
+                    let WEB = locale(11732).ApplicationCollectionPlatforms.ANDROID;
                   } else {
                     const localeResult = locale(500);
-                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11659).ApplicationCollectionPlatforms;
+                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11732).ApplicationCollectionPlatforms;
                     if (isIOSResult) {
                       WEB = ApplicationCollectionPlatforms.IOS;
                     } else {
@@ -1006,7 +1006,7 @@ function _fetchIntegrationApplicationIdsForMyGuilds() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

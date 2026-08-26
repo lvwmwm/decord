@@ -1,10 +1,10 @@
-// Module ID: 7155
-// Function ID: 7156
+// Module ID: 7221
+// Function ID: 7222
 // Name: fromServer
 // Dependencies: [1949, 1950, 2]
 // Exports: isProfileFrameRecord
 
-// Module 7155 (fromServer)
+// Module 7221 (fromServer)
 import fromServerDefault from "fromServer" /* 1949 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 

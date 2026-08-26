@@ -1,11 +1,11 @@
-// Module ID: 12854
-// Function ID: 12855
+// Module ID: 12928
+// Function ID: 12929
 // Name: parents
-// Dependencies: [32, 19, 21, 7145, 4097, 1236, 7929, 12853, 12439, 2]
+// Dependencies: [32, 19, 21, 7211, 4161, 1236, 7996, 12927, 12510, 2]
 // Exports: default
 
-// Module 12854 (parents)
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12853 */;
+// Module 12928 (parents)
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12927 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -54,7 +54,7 @@ export default function _default(parents) {
     }
     obj[3] = username3;
     obj[1] = intl.formatToPlainString(parents(1236).t.BlAMme, obj);
-    obj[2] = jsx(parents(12439).ShareIcon, {});
+    obj[2] = jsx(parents(12510).ShareIcon, {});
     const intl2 = tmp15(1236).intl;
     obj[3] = intl2.string(parents(1236).t["5l/hlt"]);
     obj[4] = tmp[0];

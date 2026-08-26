@@ -1,17 +1,17 @@
-// Module ID: 14294
-// Function ID: 14295
+// Module ID: 14367
+// Function ID: 14368
 // Name: useDerivedDmSpamFilterSettingValue
-// Dependencies: [1922, 4072, 4070, 589, 4076, 4083, 1306, 2]
+// Dependencies: [1922, 4136, 4134, 589, 4140, 4147, 1306, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 14294 (useDerivedDmSpamFilterSettingValue)
+// Module 14367 (useDerivedDmSpamFilterSettingValue)
 import initialize from "initialize" /* 589 */;
 import create from "create" /* 1306 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4076 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4083 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4140 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4147 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import { ExplicitContentFilterToDmSpamFilterV2 as closure_3 } from "items" /* 4072 */;
+import { ExplicitContentFilterToDmSpamFilterV2 as closure_3 } from "items" /* 4136 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/useDerivedDMSpamFilterSetting.tsx");

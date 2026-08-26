@@ -1,9 +1,9 @@
-// Module ID: 7951
-// Function ID: 7952
+// Module ID: 8018
+// Function ID: 8019
 // Name: ContentIdType
 // Dependencies: [2]
 
-// Module 7951 (ContentIdType)
+// Module 8018 (ContentIdType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/safety_hub/SafetyHubModels.tsx");

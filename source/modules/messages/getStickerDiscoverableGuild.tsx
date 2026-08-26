@@ -1,10 +1,10 @@
-// Module ID: 10126
-// Function ID: 10127
+// Module ID: 10193
+// Function ID: 10194
 // Name: getStickerDiscoverableGuild
-// Dependencies: [676, 530, 6065, 2]
+// Dependencies: [676, 530, 6131, 2]
 // Exports: default
 
-// Module 10126 (getStickerDiscoverableGuild)
+// Module 10193 (getStickerDiscoverableGuild)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import ME from "ME" /* 676 */;

@@ -1,10 +1,10 @@
-// Module ID: 17211
-// Function ID: 17212
+// Module ID: 17296
+// Function ID: 17297
 // Name: _getCurrentTask
-// Dependencies: [5, 676, 4601, 503, 4279, 2]
+// Dependencies: [5, 676, 4665, 503, 4343, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 17211 (_getCurrentTask)
+// Module 17296 (_getCurrentTask)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -18,7 +18,7 @@ function _getCurrentTask() {
     const obj2 = { event: null };
     obj2[0] = closure_1_0(503).NetworkActionNames.USER_VERIFY;
     obj1[1] = obj2;
-    closure_0 = yield v0(4601).get(obj1);
+    closure_0 = yield v0(4665).get(obj1);
     let body = null;
     if (204 !== closure_0.status) {
       body = closure_0.body;
@@ -47,7 +47,7 @@ function _completeTask() {
       const obj2 = { event: null };
       obj2[0] = callback(503).NetworkActionNames.USER_VERIFY;
       obj1[2] = obj2;
-      yield v0(4601).post(obj1);
+      yield v0(4665).post(obj1);
       return body.body;
     })();
   });
@@ -79,7 +79,7 @@ function _resendVerificationCode() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

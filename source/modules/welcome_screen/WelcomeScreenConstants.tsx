@@ -1,9 +1,9 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 12288
+// Function ID: 12289
 // Name: WELCOME_SCREEN_TYPE
 // Dependencies: [2]
 
-// Module 12216 (WELCOME_SCREEN_TYPE)
+// Module 12288 (WELCOME_SCREEN_TYPE)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/welcome_screen/WelcomeScreenConstants.tsx");

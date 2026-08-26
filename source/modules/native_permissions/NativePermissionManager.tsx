@@ -1,16 +1,16 @@
-// Module ID: 4965
-// Function ID: 4966
+// Module ID: 5031
+// Function ID: 5032
 // Name: isEnabled
-// Dependencies: [4618, 676, 4562, 500, 4966, 709, 4964, 2]
+// Dependencies: [4682, 676, 4626, 500, 5032, 709, 5030, 2]
 
-// Module 4965 (isEnabled)
+// Module 5031 (isEnabled)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 4562 */;
-import NativePermissionStatus from "NativePermissionStatus" /* 4618 */;
-import NativePermissionsRequestOptions from "NativePermissionsRequestOptions" /* 4964 */;
+import initializeDefault from "initialize" /* 4626 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4682 */;
+import NativePermissionsRequestOptions from "NativePermissionsRequestOptions" /* 5030 */;
 
 const NativePermissionTypes = NativePermissionStatus.NativePermissionTypes;
 const InputModes = ME.InputModes;
@@ -25,7 +25,7 @@ prototype["isEnabled"] = function isEnabled() {
     const tmpResult = tmp(500);
   }
   if (isDesktopResult) {
-    const ProcessArgs = tmp(4966).ProcessArgs;
+    const ProcessArgs = tmp(5032).ProcessArgs;
     isDesktopResult = !ProcessArgs.isDiscordTestSet();
   }
   return isDesktopResult;

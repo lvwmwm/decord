@@ -1,30 +1,30 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7308
+// Function ID: 7309
 // Name: updateGuildUnreadSentinel
-// Dependencies: [7243, 7245, 5329, 4027, 1395, 1218, 1391, 1910, 1220, 4025, 4395, 1981, 4589, 1922, 676, 1398, 4590, 7141, 11, 1913, 12, 4032, 2]
+// Dependencies: [7309, 7311, 5395, 4091, 1395, 1218, 1391, 1910, 1220, 4089, 4459, 1981, 4653, 1922, 676, 1398, 4654, 7207, 11, 1913, 12, 4096, 2]
 
-// Module 7242 (updateGuildUnreadSentinel)
+// Module 7308 (updateGuildUnreadSentinel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import clearAllDefault from "clearAll" /* 1220 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
-import doesThreadMembersActionAffectMe from "doesThreadMembersActionAffectMe" /* 4032 */;
-import useOptInEnabledForGuild from "useOptInEnabledForGuild" /* 7141 */;
-import closure_3 from "findOrCreateMessageRecord" /* 7243 */;
-import closure_4 from "_validate" /* 7245 */;
-import closure_5 from "rebuild" /* 5329 */;
-import closure_6 from "storeThread" /* 4027 */;
+import doesThreadMembersActionAffectMe from "doesThreadMembersActionAffectMe" /* 4096 */;
+import useOptInEnabledForGuild from "useOptInEnabledForGuild" /* 7207 */;
+import closure_3 from "findOrCreateMessageRecord" /* 7309 */;
+import closure_4 from "_validate" /* 7311 */;
+import closure_5 from "rebuild" /* 5395 */;
+import closure_6 from "storeThread" /* 4091 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_10 from "fetchFingerprint" /* 1218 */;
 import closure_11 from "ensureGuildLoaded" /* 1391 */;
 import closure_12 from "createGuildRecordFromRust" /* 1910 */;
-import closure_13 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_14 from "generateOldThreadCutoff" /* 4395 */;
+import closure_13 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_14 from "generateOldThreadCutoff" /* 4459 */;
 import closure_15 from "handleConnectionOpen" /* 1981 */;
-import closure_16 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_16 from "updateUserGuildSettingsInternal" /* 4653 */;
 import closure_17 from "mergeGuildAvatar" /* 1922 */;
 import { ChannelFlags } from "set" /* 1398 */;
-import ReadStateTypes from "ReadStateTypes" /* 4590 */;
+import ReadStateTypes from "ReadStateTypes" /* 4654 */;
 import { NULL_STRING_GUILD_ID } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

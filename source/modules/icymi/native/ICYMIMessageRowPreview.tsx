@@ -1,11 +1,11 @@
-// Module ID: 15853
-// Function ID: 15854
+// Module ID: 15932
+// Function ID: 15933
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 676, 21, 8562, 4075, 8194, 6025, 4315, 4380, 712, 4070, 8192, 8736, 8385, 1236, 2]
+// Dependencies: [19, 676, 21, 8630, 4139, 8261, 6091, 4379, 4444, 712, 4134, 8259, 8804, 8452, 1236, 2]
 
-// Module 15853 (ICYMIMessageRowPreview)
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+// Module 15932 (ICYMIMessageRowPreview)
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 import { MessageEmbedTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -24,7 +24,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
   let setting2;
   let obj = createCacheKey;
   obj = { seeMoreLabelColor: messageOptions(712).colors.TEXT_DEFAULT };
-  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4315)());
+  dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4379)());
   const RenderEmbeds = explicitContentFromProto.RenderEmbeds;
   setting = RenderEmbeds.getSetting();
   const InlineEmbedMedia = explicitContentFromProto.InlineEmbedMedia;
@@ -58,7 +58,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(8736), obj);
+  return setting2(messageOptions(8804), obj);
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo((message) => {
@@ -165,11 +165,11 @@ const memoResult2 = importAllResult.memo((message) => {
     obj[4] = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(6025)(message);
+  const tmp3 = merged(6091)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   obj = {};
-  const merged2 = Object.assign(message(8194).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(8261).DEFAULT_OPTIONS);
   obj.ignoreMentioned = true;
   obj.renderReplies = false;
   obj.renderThreadEmbeds = false;

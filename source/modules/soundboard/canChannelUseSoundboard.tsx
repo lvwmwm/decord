@@ -1,12 +1,12 @@
-// Module ID: 6099
-// Function ID: 6100
+// Module ID: 6165
+// Function ID: 6166
 // Name: canChannelUseSoundboard
-// Dependencies: [1391, 4025, 1981, 676, 589, 2]
+// Dependencies: [1391, 4089, 1981, 676, 589, 2]
 // Exports: canSelectedVoiceChannelUseSoundboard, default, useCanChannelUseSoundboard
 
-// Module 6099 (canChannelUseSoundboard)
+// Module 6165 (canChannelUseSoundboard)
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
 import ME from "ME" /* 676 */;
 

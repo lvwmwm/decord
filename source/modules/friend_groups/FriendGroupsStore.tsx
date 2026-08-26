@@ -1,14 +1,14 @@
-// Module ID: 13168
-// Function ID: 13169
+// Module ID: 13241
+// Function ID: 13242
 // Name: initialize
-// Dependencies: [7265, 5935, 4034, 1922, 589, 709, 2]
+// Dependencies: [7331, 6001, 4098, 1922, 589, 709, 2]
 
-// Module 13168 (initialize)
+// Module 13241 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "recomputeAffinities" /* 7265 */;
-import closure_1 from "hasConsented" /* 5935 */;
-import closure_2 from "markAllUserIdListsStale" /* 4034 */;
+import closure_0 from "recomputeAffinities" /* 7331 */;
+import closure_1 from "hasConsented" /* 6001 */;
+import closure_2 from "markAllUserIdListsStale" /* 4098 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 let closure_4 = [];

@@ -1,18 +1,18 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13177
+// Function ID: 13178
 // Name: handleIdentify
-// Dependencies: [1218, 3, 13105, 13144, 13147, 10557, 698, 675, 500, 4008, 1474, 709, 2]
+// Dependencies: [1218, 3, 13178, 13217, 13220, 10625, 698, 675, 500, 4072, 1474, 709, 2]
 
-// Module 13104 (handleIdentify)
+// Module 13177 (handleIdentify)
 import timestampDefault from "timestamp" /* 3 */;
 import setRequestedByAll from "setRequestedBy" /* 675 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import setDefault from "set" /* 4008 */;
-import _modDef10557 from "module_10557" /* 10557 */;
-import noopDefault from "noop" /* 13105 */;
-import getInitialStateDefault from "getInitialState" /* 13144 */;
-import guildIdDefault from "guildId" /* 13147 */;
+import setDefault from "set" /* 4072 */;
+import _modDef10625 from "module_10625" /* 10625 */;
+import noopDefault from "noop" /* 13178 */;
+import getInitialStateDefault from "getInitialState" /* 13217 */;
+import guildIdDefault from "guildId" /* 13220 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import set from "set" /* 500 */;
 import importDefaultResult from "awaitOnline" /* 1474 */;
@@ -30,12 +30,12 @@ obj.handleIdentify = () => {
   if (null == token) {
     return null;
   } else {
-    const state = _modDef10557.getState();
+    const state = _modDef10625.getState();
     const installationForTracking = obj.getInstallationForTracking();
     obj = { token: null, properties: null, presence: null };
     obj[0] = token;
     obj1 = {};
-    const obj5 = _modDef10557;
+    const obj5 = _modDef10625;
     const merged = Object.assign(expandEventPropertiesDefault.getSuperProperties());
     obj1.client_app_state = state;
     obj1.is_fast_connect = false;

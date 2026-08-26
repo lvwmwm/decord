@@ -1,18 +1,18 @@
-// Module ID: 16416
-// Function ID: 16417
+// Module ID: 16499
+// Function ID: 16500
 // Name: SoundButtonEmoji
-// Dependencies: [19, 17, 1922, 16410, 21, 4120, 4380, 712, 500, 4949, 4814, 5466, 11503, 16417, 589, 16418, 5834, 5854, 6068, 4043, 8526, 8529, 4098, 11039, 1236, 16420, 4376, 4925, 2]
+// Dependencies: [19, 17, 1922, 16491, 21, 4184, 4444, 712, 500, 5015, 4878, 5532, 11575, 16500, 589, 16501, 5900, 5920, 6134, 4107, 8593, 8597, 4162, 11111, 1236, 16503, 4440, 4991, 2]
 
-// Module 16416 (SoundButtonEmoji)
+// Module 16499 (SoundButtonEmoji)
 import ThemesDefault from "Themes" /* 712 */;
-import EmojiDefault from "Emoji" /* 5466 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 11503 */;
+import EmojiDefault from "Emoji" /* 5532 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 11575 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
-import importDefaultResult from "module_4120" /* 4120 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
+import importDefaultResult from "module_4184" /* 4184 */;
 import set from "set" /* 500 */;
 
 const require = arg1;
@@ -20,7 +20,7 @@ function SoundButtonEmoji(arg0) {
   ({ sound, sharedValues } = arg0);
   const tmp = callback2();
   let obj = { sharedValues, scaleFactors: { pressed: 0.8, playing: 1.2 } };
-  obj1 = obj(4120);
+  obj1 = obj(4184);
   const fn = function t() {
     const pressed = obj.sharedValues.pressed;
     const playing = obj.sharedValues.playing;
@@ -62,13 +62,13 @@ function SoundButtonEmoji(arg0) {
     obj[0] = items2;
     return obj;
   };
-  obj = { animationConfig: obj, withDelay: obj(4120).withDelay, withSpring: obj(4814).withSpring, interpolate: obj(4120).interpolate, SPRING_CONFIG: closure_9 };
+  obj = { animationConfig: obj, withDelay: obj(4184).withDelay, withSpring: obj(4878).withSpring, interpolate: obj(4184).interpolate, SPRING_CONFIG: closure_9 };
   fn.__closure = obj;
   fn.__workletHash = 13932429225740;
   fn.__initData = closure_12;
   obj = { sharedValues, scaleFactors: { pressed: 0.7200000000000001, playing: 1.08 }, playingAnimationDelay: 100, pressedRotationDegrees: -15 };
   const animatedStyle = obj1.useAnimatedStyle(fn);
-  let obj4 = obj(4120);
+  let obj4 = obj(4184);
   const fn2 = function t() {
     const pressed = obj.sharedValues.pressed;
     const playing = obj.sharedValues.playing;
@@ -110,7 +110,7 @@ function SoundButtonEmoji(arg0) {
     obj[0] = items2;
     return obj;
   };
-  obj1 = { animationConfig: obj, withDelay: obj(4120).withDelay, withSpring: obj(4814).withSpring, interpolate: obj(4120).interpolate, SPRING_CONFIG: closure_9 };
+  obj1 = { animationConfig: obj, withDelay: obj(4184).withDelay, withSpring: obj(4878).withSpring, interpolate: obj(4184).interpolate, SPRING_CONFIG: closure_9 };
   fn2.__closure = obj1;
   fn2.__workletHash = 13932429225740;
   fn2.__initData = closure_12;

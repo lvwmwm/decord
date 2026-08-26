@@ -1,9 +1,9 @@
-// Module ID: 6518
-// Function ID: 6519
+// Module ID: 6584
+// Function ID: 6585
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6518 (metadata)
+// Module 6584 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameTrophySpotIllustration-2x.png.js");

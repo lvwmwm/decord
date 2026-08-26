@@ -1,14 +1,14 @@
-// Module ID: 10609
-// Function ID: 10610
+// Module ID: 10677
+// Function ID: 10678
 // Name: GlobeEarthIcon
-// Dependencies: [19, 21, 712, 4100, 10610, 2]
+// Dependencies: [19, 21, 712, 4164, 10678, 2]
 // Exports: GlobeEarthIcon
 
-// Module 10609 (GlobeEarthIcon)
+// Module 10677 (GlobeEarthIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 10610 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 10678 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

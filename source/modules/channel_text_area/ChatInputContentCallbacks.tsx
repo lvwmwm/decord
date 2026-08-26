@@ -1,16 +1,16 @@
-// Module ID: 11565
-// Function ID: 11566
+// Module ID: 11637
+// Function ID: 11638
 // Name: tryUpdateSubscriptionForHereMention
-// Dependencies: [32, 19, 6004, 6036, 6010, 8508, 12, 2]
+// Dependencies: [32, 19, 6070, 6102, 6076, 8575, 12, 2]
 // Exports: tryUpdateSubscriptionForHereMention, useHereMentionCallback
 
-// Module 11565 (tryUpdateSubscriptionForHereMention)
-import reset from "reset" /* 6010 */;
-import subscribeMembers from "subscribeMembers" /* 6036 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8508 */;
+// Module 11637 (tryUpdateSubscriptionForHereMention)
+import reset from "reset" /* 6076 */;
+import subscribeMembers from "subscribeMembers" /* 6102 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8575 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getMemberListId" /* 6004 */;
+import closure_5 from "getMemberListId" /* 6070 */;
 
 require = arg1;
 let c6 = "@here";

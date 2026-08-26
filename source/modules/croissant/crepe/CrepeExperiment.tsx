@@ -1,10 +1,10 @@
-// Module ID: 7162
-// Function ID: 7163
+// Module ID: 7228
+// Function ID: 7229
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getIsCrepeEnabled, useIsCrepeEnabled
 
-// Module 7162 (apexExperiment)
+// Module 7228 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

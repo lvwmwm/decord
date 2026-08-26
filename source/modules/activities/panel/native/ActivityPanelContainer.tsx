@@ -1,11 +1,11 @@
-// Module ID: 16354
-// Function ID: 16355
-// Dependencies: [19, 1391, 1981, 1390, 21, 589, 4015, 692, 16355, 16364, 2]
+// Module ID: 16435
+// Function ID: 16436
+// Dependencies: [19, 1391, 1981, 1390, 21, 589, 4079, 692, 16436, 16445, 2]
 
-// Module 16354
+// Module 16435
 import initialize from "initialize" /* 589 */;
-import BaseActivityPanelControllerDefault from "BaseActivityPanelController" /* 16355 */;
-import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16364 */;
+import BaseActivityPanelControllerDefault from "BaseActivityPanelController" /* 16436 */;
+import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16445 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
 import closure_5 from "participantFromServer" /* 1390 */;

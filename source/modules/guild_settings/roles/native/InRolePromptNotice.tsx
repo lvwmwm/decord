@@ -1,18 +1,18 @@
-// Module ID: 16976
-// Function ID: 16977
+// Module ID: 17061
+// Function ID: 17062
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 676, 21, 4380, 712, 1403, 16977, 1297, 9210, 4376, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4444, 712, 1403, 17062, 1297, 9278, 4440, 1236, 2]
 // Exports: default
 
-// Module 16976 (InRolePromptNotice)
+// Module 17061 (InRolePromptNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import hasFlag from "hasFlag" /* 1403 */;
-import registerAssetDefault from "registerAsset" /* 9210 */;
+import registerAssetDefault from "registerAsset" /* 9278 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { RoleFlags } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -36,7 +36,7 @@ export default function InRolePromptNotice(role) {
   } else {
     obj = { style: null, children: null };
     obj[0] = string.promptRow;
-    const tmpResult = tmp(16977);
+    const tmpResult = tmp(17062);
     let Icon = tmp(1297).Icon;
     if (isRolePowerfulResult) {
       obj = { style: null, source: null, color: null };
@@ -50,7 +50,7 @@ export default function InRolePromptNotice(role) {
       string = intl2.string;
       stringResult = string(tmp(1236).t.YRbgXz);
       obj1[2] = stringResult;
-      Icon = tmp6(tmp(4376).Text, obj1);
+      Icon = tmp6(tmp(4440).Text, obj1);
       items[1] = Icon;
       obj[1] = items;
       let tmp4Result = tmp4(tmp5, obj);
@@ -63,10 +63,10 @@ export default function InRolePromptNotice(role) {
       obj3[0] = string.promptText;
       const intl = tmp(1236).intl;
       obj3[2] = intl.string(tmp(1236).t.mqeO2v);
-      items1[1] = tmp6(tmp(4376).Text, obj3);
+      items1[1] = tmp6(tmp(4440).Text, obj3);
       obj[1] = items1;
       tmp4Result = tmp4(tmp5, obj);
     }
-    isRolePowerfulResult = tmp(16977).isRolePowerful(role);
+    isRolePowerfulResult = tmp(17062).isRolePowerful(role);
   }
 };

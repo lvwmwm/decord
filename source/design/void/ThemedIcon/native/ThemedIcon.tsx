@@ -1,13 +1,13 @@
-// Module ID: 13555
-// Function ID: 13556
+// Module ID: 13628
+// Function ID: 13629
 // Name: ThemedIcon
-// Dependencies: [19, 21, 4101, 4817, 2]
+// Dependencies: [19, 21, 4165, 4881, 2]
 // Exports: default
 
-// Module 13555 (ThemedIcon)
+// Module 13628 (ThemedIcon)
 import noopAll from "noop" /* 19 */;
-import map from "map" /* 4101 */;
-import IconSizesDefault from "IconSizes" /* 4817 */;
+import map from "map" /* 4165 */;
+import IconSizesDefault from "IconSizes" /* 4881 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

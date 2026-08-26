@@ -1,11 +1,11 @@
-// Module ID: 8949
-// Function ID: 8950
+// Module ID: 9017
+// Function ID: 9018
 // Name: set
-// Dependencies: [853, 8950, 8951, 8952, 2]
+// Dependencies: [853, 9018, 9019, 9020, 2]
 // Exports: compareLayerFiles, isPreviewFilename, parseLayerFilename
 
-// Module 8949 (set)
-import ProfileFrameLayerType from "ProfileFrameLayerType" /* 8951 */;
+// Module 9017 (set)
+import ProfileFrameLayerType from "ProfileFrameLayerType" /* 9019 */;
 import closure_2 from "_toArray" /* 853 */;
 import set from "set" /* 2 */;
 
@@ -25,7 +25,7 @@ const items3 = [...set1];
 obj[obj.INVALID_ANCHOR] = "invalid anchor (expected: " + items3.join(", ") + ")";
 obj[obj.INVALID_RESPONSIVE] = "invalid suffix (expected '" + "responsive" + "')";
 obj[obj.BORDER_HAS_ANCHOR] = "border layers must omit the anchor";
-let closure_8 = { [arg1(8950).ProfileFrameLayerOrder.FRONT]: 0, [arg1(8950).ProfileFrameLayerOrder.BACK]: 1 };
+let closure_8 = { [arg1(9018).ProfileFrameLayerOrder.FRONT]: 0, [arg1(9018).ProfileFrameLayerOrder.BACK]: 1 };
 const result = set.fileFinishedImporting("modules/collectibles/profile_frames/tooling/ProfileFrameLayerParser.tsx");
 
 export const PREVIEW_FILENAME = "preview";
@@ -67,7 +67,7 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
               const _Number2 = Number;
               obj3[0] = Number(tmp19);
               obj3[1] = tmp20;
-              obj3[2] = tmp4(8952).ProfileFrameLayerAnchor.CENTER;
+              obj3[2] = tmp4(9020).ProfileFrameLayerAnchor.CENTER;
               obj3[3] = 1 === substr.length;
               obj2[0] = obj3;
               return obj2;
@@ -94,7 +94,7 @@ export const parseLayerFilename = function parseLayerFilename(c7) {
                   obj7[0] = Number(tmp19);
                   obj7[1] = tmp20;
                   obj7[2] = first;
-                  obj7[3] = 2 === substr.length || tmp20 === tmp4(8951).ProfileFrameLayerType.RAIL;
+                  obj7[3] = 2 === substr.length || tmp20 === tmp4(9019).ProfileFrameLayerType.RAIL;
                   obj6[0] = obj7;
                   return obj6;
                 }

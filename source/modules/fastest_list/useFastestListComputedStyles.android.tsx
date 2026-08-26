@@ -1,10 +1,10 @@
-// Module ID: 8683
-// Function ID: 8684
+// Module ID: 8751
+// Function ID: 8752
 // Name: useFastestListComputedStyles
 // Dependencies: [19, 17, 2]
 // Exports: default
 
-// Module 8683 (useFastestListComputedStyles)
+// Module 8751 (useFastestListComputedStyles)
 import closure_0 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 15103
-// Function ID: 15104
+// Module ID: 15182
+// Function ID: 15183
 // Name: ContentAndSocialSettings
-// Dependencies: [32, 19, 17, 8235, 676, 21, 4380, 712, 1236, 1995, 15104, 12236, 15107, 6024, 10516, 14270, 14094, 15108, 4376, 2]
+// Dependencies: [32, 19, 17, 8302, 676, 21, 4444, 712, 1236, 1995, 15183, 12308, 15186, 6090, 10584, 14343, 14167, 15187, 4440, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 15103 (ContentAndSocialSettings)
+// Module 15182 (ContentAndSocialSettings)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15108 */;
+import Text from "Text" /* 4440 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 15187 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 8235 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 8302 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 ({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
@@ -212,7 +212,7 @@ export const ConnectedGamesPage = function ConnectedGamesPage() {
   } else {
     obj = { node: null };
     obj[0] = tmp5;
-    tmp7 = callback2(tmp2(14094), obj);
+    tmp7 = callback2(tmp2(14167), obj);
   }
   return tmp7;
 };

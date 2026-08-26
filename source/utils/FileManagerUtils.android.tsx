@@ -1,10 +1,10 @@
-// Module ID: 8948
-// Function ID: 8949
+// Module ID: 9016
+// Function ID: 9017
 // Name: _readFile
 // Dependencies: [5, 3, 1271, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8948 (_readFile)
+// Module 9016 (_readFile)
 import timestampDefault from "timestamp" /* 3 */;
 import enforcingDefault from "enforcing" /* 1271 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
@@ -30,7 +30,7 @@ function _readFile() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,14 +1,14 @@
-// Module ID: 6805
-// Function ID: 6806
+// Module ID: 6871
+// Function ID: 6872
 // Name: RewardsMouseSpotIllustration
-// Dependencies: [21, 5374, 6806, 2]
+// Dependencies: [21, 5440, 6872, 2]
 // Exports: RewardsMouseSpotIllustration
 
-// Module 6805 (RewardsMouseSpotIllustration)
+// Module 6871 (RewardsMouseSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6806 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6872 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/RewardsMouseSpotIllustration.native.tsx");

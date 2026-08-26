@@ -1,22 +1,22 @@
-// Module ID: 14201
-// Function ID: 14202
+// Module ID: 14274
+// Function ID: 14275
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 4034, 1922, 676, 7924, 21, 4380, 712, 14202, 1236, 6125, 589, 8669, 8608, 5480, 4815, 2]
+// Dependencies: [19, 17, 4098, 1922, 676, 7991, 21, 4444, 712, 14275, 1236, 6191, 589, 8737, 8676, 5546, 4879, 2]
 
-// Module 14201 (RestrictedAccountRedirect)
+// Module 14274 (RestrictedAccountRedirect)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import handleOpenEmailVerification from "handleOpenEmailVerification" /* 8669 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14202 */;
+import handleOpenEmailVerification from "handleOpenEmailVerification" /* 8737 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14275 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "markAllUserIdListsStale" /* 4034 */;
+import closure_5 from "markAllUserIdListsStale" /* 4098 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { AnalyticsSections } from "ME" /* 676 */;
-import { SafetySettingsNoticeType } from "SafetyToastType" /* 7924 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 7991 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function RestrictedAccountRedirect() {
@@ -65,8 +65,8 @@ const memoResult = importAllResult.memo(() => {
       obj1 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6[0], button: obj6[1] } = bannerText);
       obj1[2] = callback;
-      obj[4] = callback(tmp2(4815).Button, obj1);
-      tmp14 = callback(tmp2(5480).TableRow, obj);
+      obj[4] = callback(tmp2(4879).Button, obj1);
+      tmp14 = callback(tmp2(5546).TableRow, obj);
     }
     items2[1] = tmp14;
     obj[1] = items2;

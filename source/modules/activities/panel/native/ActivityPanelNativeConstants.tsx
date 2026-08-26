@@ -1,11 +1,11 @@
-// Module ID: 16366
-// Function ID: 16367
+// Module ID: 16447
+// Function ID: 16448
 // Name: DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG
-// Dependencies: [9915, 2]
+// Dependencies: [9982, 2]
 
-// Module 16366 (DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG)
+// Module 16447 (DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG)
 import set from "set" /* 2 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9915 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9982 */;
 
 let obj = { top: null };
 obj = { disable: false, override: ActivityPanelModes.ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT };

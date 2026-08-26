@@ -1,13 +1,13 @@
-// Module ID: 10800
-// Function ID: 10801
+// Module ID: 10872
+// Function ID: 10873
 // Name: mediaEngineContextFromParticipantType
-// Dependencies: [4401, 4444, 2]
+// Dependencies: [4465, 4508, 2]
 // Exports: default
 
-// Module 10800 (mediaEngineContextFromParticipantType)
+// Module 10872 (mediaEngineContextFromParticipantType)
 import set from "set" /* 2 */;
-import ParticipantTypes2 from "ParticipantTypes" /* 4401 */;
-import DesktopSources from "DesktopSources" /* 4444 */;
+import ParticipantTypes2 from "ParticipantTypes" /* 4465 */;
+import DesktopSources from "DesktopSources" /* 4508 */;
 
 const ParticipantTypes = ParticipantTypes2.ParticipantTypes;
 const MediaEngineContextTypes = DesktopSources.MediaEngineContextTypes;

@@ -1,19 +1,19 @@
-// Module ID: 11289
-// Function ID: 11290
+// Module ID: 11361
+// Function ID: 11362
 // Name: EmojiRow
-// Dependencies: [19, 17, 5504, 21, 4380, 4347, 4348, 7367, 4036, 7063, 8796, 4101, 712, 11290, 11291, 8760, 11292, 5854, 2]
+// Dependencies: [19, 17, 5570, 21, 4444, 4411, 4412, 7433, 4100, 7129, 8864, 4165, 712, 11362, 11363, 8828, 11364, 5920, 2]
 // Exports: default
 
-// Module 11289 (EmojiRow)
+// Module 11361 (EmojiRow)
 import noopAll from "noop" /* 19 */;
-import map from "map" /* 4101 */;
-import useEmojisForReactionRow from "useEmojisForReactionRow" /* 11290 */;
-import EmojiPickerRowButton from "EmojiPickerRowButton" /* 11291 */;
-import DoubleTapEmojiEditNudgeInner from "DoubleTapEmojiEditNudgeInner" /* 11292 */;
+import map from "map" /* 4165 */;
+import useEmojisForReactionRow from "useEmojisForReactionRow" /* 11362 */;
+import EmojiPickerRowButton from "EmojiPickerRowButton" /* 11363 */;
+import DoubleTapEmojiEditNudgeInner from "DoubleTapEmojiEditNudgeInner" /* 11364 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5504 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5570 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -44,7 +44,7 @@ export default function EmojiRow(arg0) {
   const items = [
     emojisForReactionRow.map((emoji) => {
       closure_0 = emoji;
-      return token(closure_1_0(11291).EmojiReactionRowButton, {
+      return token(closure_1_0(11363).EmojiReactionRowButton, {
         emoji,
         onPress() {
           let obj = channel(table[5]);
@@ -68,20 +68,20 @@ export default function EmojiRow(arg0) {
         emojiFontSize: closure_3,
         emojiLineHeight: closure_4,
         emojiContainerSize: token
-      }, closure_1_0(11291).getEmojiKey(emoji, arg1));
+      }, closure_1_0(11363).getEmojiKey(emoji, arg1));
     }),
 
   ];
   obj1 = {
     emojiContainerSize: token,
     onPress() {
-      return closure_1_0(8760).handleAddNewReactions(channel, id.id, closure_1_0(7367).ReactionLocations.MESSAGE);
+      return closure_1_0(8828).handleAddNewReactions(channel, id.id, closure_1_0(7433).ReactionLocations.MESSAGE);
     }
   };
   items[1] = token(EmojiPickerRowButton.EmojiPickerRowButton, obj1);
   obj[1] = items;
   const items1 = [callback(closure_3, obj), ];
-  obj2 = { location: channel(5854).MESSAGE_LONG_PRESS_MENU };
+  obj2 = { location: channel(5920).MESSAGE_LONG_PRESS_MENU };
   items1[1] = token(DoubleTapEmojiEditNudgeInner.DoubleTapEmojiEditNudge, obj2);
   obj[1] = items1;
   return callback(closure_3, obj);

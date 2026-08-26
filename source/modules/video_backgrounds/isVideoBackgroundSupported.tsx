@@ -1,12 +1,12 @@
-// Module ID: 9315
-// Function ID: 9316
+// Module ID: 9383
+// Function ID: 9384
 // Name: isVideoBackgroundSupported
-// Dependencies: [4431, 4444, 2]
+// Dependencies: [4495, 4508, 2]
 // Exports: default
 
-// Module 9315 (isVideoBackgroundSupported)
-import closure_0 from "_detectH265HardwareDecode" /* 4431 */;
-import { Features } from "DesktopSources" /* 4444 */;
+// Module 9383 (isVideoBackgroundSupported)
+import closure_0 from "_detectH265HardwareDecode" /* 4495 */;
+import { Features } from "DesktopSources" /* 4508 */;
 
 const result = require("set").fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundSupported.tsx");
 

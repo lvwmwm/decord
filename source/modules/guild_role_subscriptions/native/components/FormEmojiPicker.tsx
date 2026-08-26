@@ -1,17 +1,17 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17188
+// Function ID: 17189
 // Name: FormEmojiPicker
-// Dependencies: [19, 676, 1925, 21, 4380, 5342, 712, 13451, 4038, 14685, 14684, 5374, 17104, 9204, 8784, 1297, 4042, 1236, 10904, 2]
+// Dependencies: [19, 676, 1925, 21, 4444, 5408, 712, 13524, 4102, 14758, 14757, 5440, 17189, 9272, 8852, 1297, 4106, 1236, 10976, 2]
 // Exports: default
 
-// Module 17103 (FormEmojiPicker)
+// Module 17188 (FormEmojiPicker)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { Fonts } from "ME" /* 676 */;
 import { EmojiIntention } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
-import importDefaultResult from "createTextStyle" /* 5342 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
+import importDefaultResult from "createTextStyle" /* 5408 */;
 
 const require = arg1;
 noopAll;
@@ -33,24 +33,24 @@ export default function FormEmojiPicker(emoji) {
   const onChange = emoji.onChange;
   const tmp = callback2();
   if (emojiId == null) {
-    let tmp2Result = tmp2(4038);
+    let tmp2Result = tmp2(4102);
     if (emojiName == null) {
       emojiName = "";
     }
     emojiId = tmp2Result.convertSurrogateToName(emojiName, false);
   }
-  obj1 = guildId(14685);
+  obj1 = guildId(14758);
   const emojiByIdOrName = obj1.useEmojiByIdOrName(guildId, emojiId);
   if (null != emojiId) {
     let obj = { guildId: null, id: null };
     obj[0] = guildId;
     obj[1] = emojiId;
-    let tmp9 = callback(tmp2(14684), obj);
+    let tmp9 = callback(tmp2(14757), obj);
     let tmp10 = callback;
   } else {
     obj = { resizeMode: "contain", source: null };
-    tmp2Result = tmp2(5374);
-    obj[1] = tmp2(17104);
+    tmp2Result = tmp2(5440);
+    obj[1] = tmp2(17189);
     tmp9 = callback(tmp2Result, obj);
     tmp10 = callback;
   }
@@ -82,24 +82,24 @@ export default function FormEmojiPicker(emoji) {
     },
     children: null
   };
-  items = [tmp.container, onChange(13451)().textInput];
+  items = [tmp.container, onChange(13524)().textInput];
   const items1 = [tmp9, , ];
   const tmp12 = closure_5;
-  const tmp4 = onChange(13451)();
+  const tmp4 = onChange(13524)();
   const items2 = [tmp.content, ];
   const obj2 = { style: items2, children: null };
   items2[1] = null != emojiByIdOrName ? tmp.text : tmp.placeholder;
   if (null != emojiByIdOrName) {
-    let allEmojiNamesString = tmp5(4042).getAllEmojiNamesString(emojiByIdOrName);
-    const tmp5Result = tmp5(4042);
+    let allEmojiNamesString = tmp5(4106).getAllEmojiNamesString(emojiByIdOrName);
+    const tmp5Result = tmp5(4106);
   } else {
     const intl = tmp5(1236).intl;
     allEmojiNamesString = intl.string(tmp5(1236).t.gXAN3P);
   }
   obj2[1] = allEmojiNamesString;
   items1[1] = tmp10(guildId(1297).LegacyText, obj2);
-  const tmp2Result1 = onChange(9204);
-  items1[2] = tmp10(guildId(1297).Icon, { size: guildId(1297).Icon.Sizes.MEDIUM, source: onChange(10904) });
+  const tmp2Result1 = onChange(9272);
+  items1[2] = tmp10(guildId(1297).Icon, { size: guildId(1297).Icon.Sizes.MEDIUM, source: onChange(10976) });
   obj1[3] = items1;
   return tmp12(tmp2Result1, obj1);
 };

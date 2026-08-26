@@ -1,9 +1,9 @@
-// Module ID: 6980
-// Function ID: 6981
+// Module ID: 7046
+// Function ID: 7047
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6980 (metadata)
+// Module 7046 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WaterIllocon-2x.png.js");

@@ -1,18 +1,18 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15558
+// Function ID: 15559
 // Name: VoiceUserConnected
-// Dependencies: [19, 1390, 4396, 4402, 1218, 4431, 4398, 4399, 21, 589, 15480, 2]
+// Dependencies: [19, 1390, 4460, 4466, 1218, 4495, 4462, 4463, 21, 589, 15559, 2]
 // Exports: default
 
-// Module 15479 (VoiceUserConnected)
+// Module 15558 (VoiceUserConnected)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "participantFromServer" /* 1390 */;
-import closure_4 from "getParticipants" /* 4396 */;
-import closure_5 from "reset" /* 4402 */;
+import closure_4 from "getParticipants" /* 4460 */;
+import closure_5 from "reset" /* 4466 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_8 from "handleUpdate" /* 4398 */;
-import closure_9 from "updateVoiceState" /* 4399 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_8 from "handleUpdate" /* 4462 */;
+import closure_9 from "updateVoiceState" /* 4463 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

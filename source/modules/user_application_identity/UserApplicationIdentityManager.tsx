@@ -1,11 +1,11 @@
-// Module ID: 17231
-// Function ID: 17232
+// Module ID: 17316
+// Function ID: 17317
 // Name: handleUserApplicationIdentityGatewayEvent
-// Dependencies: [12655, 5367, 2]
+// Dependencies: [12728, 5433, 2]
 
-// Module 17231 (handleUserApplicationIdentityGatewayEvent)
-import initializeDefault from "initialize" /* 5367 */;
-import fetchStore from "fetchStore" /* 12655 */;
+// Module 17316 (handleUserApplicationIdentityGatewayEvent)
+import initializeDefault from "initialize" /* 5433 */;
+import fetchStore from "fetchStore" /* 12728 */;
 
 require = arg1;
 function handleUserApplicationIdentityGatewayEvent(user_id) {

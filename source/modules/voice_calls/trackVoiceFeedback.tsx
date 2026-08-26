@@ -1,13 +1,13 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16786
+// Function ID: 16787
 // Name: _trackVoiceFeedback
-// Dependencies: [109, 5, 4431, 13280, 698, 2]
+// Dependencies: [109, 5, 4495, 13353, 698, 2]
 // Exports: default
 
-// Module 16701 (_trackVoiceFeedback)
+// Module 16786 (_trackVoiceFeedback)
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4495 */;
 
 function _trackVoiceFeedback() {
   const self = this;
@@ -28,7 +28,7 @@ function _trackVoiceFeedback() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ function _trackVoiceFeedback() {
               c6 = 2;
               c7 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = callback(13280).getKrispModel();
+              obj2[0] = callback(13353).getKrispModel();
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -160,7 +160,7 @@ function _trackVoiceFeedback() {
             const merged = Object.assign(closure_21);
             obj.track(callback, obj4);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp48) {
           c7 = tmp;

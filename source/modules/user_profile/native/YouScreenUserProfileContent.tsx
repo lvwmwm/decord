@@ -1,32 +1,32 @@
-// Module ID: 16148
-// Function ID: 16149
+// Module ID: 16230
+// Function ID: 16231
 // Name: YouAvatar
-// Dependencies: [32, 19, 17, 1383, 5104, 7227, 8932, 5882, 1388, 21, 16141, 15729, 500, 8989, 8982, 12546, 12547, 8935, 9385, 9670, 11535, 1377, 6131, 12478, 4815, 9822, 712, 1236, 16149, 16150, 16151, 1501, 8462, 9594, 8983, 589, 1367, 8970, 8979, 12428, 16152, 12664, 12670, 12671, 9603, 16153, 12674, 15243, 12480, 9680, 7552, 12680, 16155, 12533, 12685, 12692, 9103, 4120, 5821, 9596, 9615, 9180, 12172, 12174, 2]
+// Dependencies: [32, 19, 17, 1383, 5170, 7293, 9000, 5948, 1388, 21, 16223, 15808, 500, 9057, 9050, 12617, 12618, 9003, 9453, 9738, 11607, 1377, 6197, 12549, 4879, 9889, 712, 1236, 16231, 16232, 16219, 1501, 8529, 9662, 9051, 589, 1367, 9038, 9047, 12499, 16233, 12737, 12743, 12744, 9671, 16234, 12747, 15322, 12551, 9748, 7618, 12753, 16236, 12604, 12758, 12765, 9171, 4184, 5887, 9664, 9683, 9248, 12245, 12247, 2]
 // Exports: default
 
-// Module 16148 (YouAvatar)
+// Module 16230 (YouAvatar)
 import set from "set" /* 500 */;
-import useSharedStylesDefault from "useSharedStyles" /* 8982 */;
-import OpenableUserProfileAvatarDefault from "OpenableUserProfileAvatar" /* 8989 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12546 */;
-import WidgetRendererDefault from "WidgetRenderer" /* 12547 */;
+import useSharedStylesDefault from "useSharedStyles" /* 9050 */;
+import OpenableUserProfileAvatarDefault from "OpenableUserProfileAvatar" /* 9057 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 12617 */;
+import WidgetRendererDefault from "WidgetRenderer" /* 12618 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { useIsContentShown } from "withContent" /* 1383 */;
-import closure_8 from "filterPlayingActivities" /* 5104 */;
-import closure_9 from "createUserWidgetFromServer" /* 7227 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8932 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5882 */;
+import closure_8 from "filterPlayingActivities" /* 5170 */;
+import closure_9 from "createUserWidgetFromServer" /* 7293 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 9000 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5948 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
 function YouAvatar(arg0) {
   const callback = React.useCallback(() => {
-    const result = callback(16141).trackYouTabAvatarPress();
-    const obj = callback(16141);
-    const result1 = callback(15729).showYouAccountActionSheet();
+    const result = callback(16223).trackYouTabAvatarPress();
+    const obj = callback(16223);
+    const result1 = callback(15808).showYouAccountActionSheet();
   }, []);
   let obj = set;
   const isAndroidResult = obj.isAndroid();
@@ -62,7 +62,7 @@ function YouScreenWidgetsBoardContainer(containerBackground) {
 }
 function EditSection(navigateToProfileCustomization) {
   navigateToProfileCustomization = navigateToProfileCustomization.navigateToProfileCustomization;
-  let canSet = navigateToProfileCustomization.isProfileLoaded;
+  let isProfileLoaded = navigateToProfileCustomization.isProfileLoaded;
   let trackUserProfileAction;
   let first;
   let callback;
@@ -75,20 +75,22 @@ function EditSection(navigateToProfileCustomization) {
   let obj3 = navigateToProfileCustomization(first[19]);
   const isBadgeManagementEnabled = obj3.useIsBadgeManagementEnabled({ location: "YouScreenUserProfileContent" });
   let obj4 = navigateToProfileCustomization(first[20]);
-  const tmp8 = useIsContentShown(navigateToProfileCustomization(first[21]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS);
-  let tmp9 = canSet;
-  if (canSet) {
-    tmp9 = isDisplayNameStylesFlywheelSettersEnabled;
+  const customTypingIndicatorConfig = obj4.useCustomTypingIndicatorConfig("YouScreenUserProfileContent");
+  ({ canSet, entryPoint } = customTypingIndicatorConfig);
+  const tmp9 = useIsContentShown(navigateToProfileCustomization(first[21]).DismissibleContent.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS);
+  let tmp10 = isProfileLoaded;
+  if (isProfileLoaded) {
+    tmp10 = isDisplayNameStylesFlywheelSettersEnabled;
   }
-  if (tmp9) {
-    tmp9 = !tmp8;
+  if (tmp10) {
+    tmp10 = !tmp9;
   }
   const items = [];
-  if (tmp9) {
+  if (tmp10) {
     items.push(tmp4(tmp2[21]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK);
   }
-  let hasBadges = canSet;
-  if (canSet) {
+  let hasBadges = isProfileLoaded;
+  if (isProfileLoaded) {
     hasBadges = isBadgeManagementEnabled;
   }
   if (hasBadges) {
@@ -97,20 +99,23 @@ function EditSection(navigateToProfileCustomization) {
   if (hasBadges) {
     items.push(tmp4(tmp2[21]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK);
   }
-  if (canSet) {
-    canSet = obj4.useCustomTypingIndicatorConfig("YouScreenUserProfileContent").canSet;
+  if (isProfileLoaded) {
+    isProfileLoaded = canSet;
   }
-  if (canSet) {
-    canSet = !tmp8;
+  if (isProfileLoaded) {
+    isProfileLoaded = "profile" === entryPoint;
   }
-  if (canSet) {
+  if (isProfileLoaded) {
+    isProfileLoaded = !tmp9;
+  }
+  if (isProfileLoaded) {
     items.push(tmp4(tmp2[21]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK);
   }
   const tmp3 = trackUserProfileAction(first[14])();
-  const tmp13 = callback(navigateToProfileCustomization(first[22]).useSelectedDismissibleContent(items), 2);
-  first = tmp13[0];
-  callback = tmp15;
-  const items1 = [navigateToProfileCustomization, trackUserProfileAction, first, tmp13[1]];
+  const tmp14 = callback(navigateToProfileCustomization(first[22]).useSelectedDismissibleContent(items), 2);
+  first = tmp14[0];
+  callback = tmp16;
+  const items1 = [navigateToProfileCustomization, trackUserProfileAction, first, tmp14[1]];
   obj = { children: null };
   callback = obj1.useCallback(() => {
     trackUserProfileAction({ action: "EDIT_PROFILE" });
@@ -130,12 +135,12 @@ function EditSection(navigateToProfileCustomization) {
   obj1[4] = callback;
   obj[1] = callback2(navigateToProfileCustomization(first[24]).Button, obj1);
   const items2 = [callback2(trackUserProfileAction(first[23]), obj), , , ];
-  obj3 = { targetRef: ref, visible: first === tmp4(tmp2[21]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK, markAsDismissed: tmp15 };
+  obj3 = { targetRef: ref, visible: first === tmp4(tmp2[21]).DismissibleContent.DISPLAY_NAME_STYLES_FLYWHEEL_MOBILE_PROFILE_COACHMARK, markAsDismissed: tmp16 };
   items2[1] = callback2(trackUserProfileAction(first[28]), obj3);
-  obj4 = { targetRef: ref, visible: first === tmp4(tmp2[21]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK, markAsDismissed: tmp15, onTryItOut: navigateToProfileCustomization };
+  obj4 = { targetRef: ref, visible: first === tmp4(tmp2[21]).DismissibleContent.BADGE_CUSTOMIZATION_COACHMARK, markAsDismissed: tmp16, onTryItOut: navigateToProfileCustomization };
   items2[2] = callback2(trackUserProfileAction(first[29]), obj4);
   const tmpResult = trackUserProfileAction(first[23]);
-  items2[3] = callback2(trackUserProfileAction(first[30]), { targetRef: ref, visible: first === navigateToProfileCustomization(first[21]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK, markAsDismissed: tmp13[1] });
+  items2[3] = callback2(trackUserProfileAction(first[30]), { targetRef: ref, visible: first === navigateToProfileCustomization(first[21]).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_PROFILE_COACHMARK, markAsDismissed: tmp14[1] });
   obj[0] = items2;
   return callback3(closure_15, obj);
 }

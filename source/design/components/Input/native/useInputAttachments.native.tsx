@@ -1,12 +1,12 @@
-// Module ID: 6108
-// Function ID: 6109
+// Module ID: 6174
+// Function ID: 6175
 // Name: InputAttachmentContainer
-// Dependencies: [32, 19, 17, 21, 5883, 4376, 1367, 6109, 2]
+// Dependencies: [32, 19, 17, 21, 5949, 4440, 1367, 6175, 2]
 // Exports: estimateAttachmentWidth, renderInputAttachment, useInputAttachments
 
-// Module 6108 (InputAttachmentContainer)
-import Text from "Text" /* 4376 */;
-import ICON_SIZE from "ICON_SIZE" /* 5883 */;
+// Module 6174 (InputAttachmentContainer)
+import Text from "Text" /* 4440 */;
+import ICON_SIZE from "ICON_SIZE" /* 5949 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

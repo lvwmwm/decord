@@ -1,9 +1,9 @@
-// Module ID: 4071
-// Function ID: 4072
+// Module ID: 4135
+// Function ID: 4136
 // Name: updateExistingSettings
 // Dependencies: [1340, 589, 595, 709, 2]
 
-// Module 4071 (updateExistingSettings)
+// Module 4135 (updateExistingSettings)
 import initializeDefault from "initialize" /* 589 */;
 import Storage3 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

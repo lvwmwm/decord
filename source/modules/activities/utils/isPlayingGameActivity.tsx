@@ -1,14 +1,14 @@
-// Module ID: 9388
-// Function ID: 9389
+// Module ID: 9456
+// Function ID: 9457
 // Name: isPlayingGameActivity
-// Dependencies: [4408, 676, 7343, 2]
+// Dependencies: [4472, 676, 7409, 2]
 // Exports: default
 
-// Module 9388 (isPlayingGameActivity)
+// Module 9456 (isPlayingGameActivity)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import items3 from "items3" /* 4408 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7343 */;
+import items3 from "items3" /* 4472 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7409 */;
 
 let closure_2 = items3.XBOX_ACTIVITY_APPLICATION_ID;
 const ActivityTypes = ME.ActivityTypes;

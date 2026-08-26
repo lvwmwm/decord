@@ -1,18 +1,18 @@
-// Module ID: 11245
-// Function ID: 11246
+// Module ID: 11317
+// Function ID: 11318
 // Name: navigateToTabLocation
-// Dependencies: [1391, 1981, 4202, 11246, 676, 1398, 4609, 1222, 4391, 709, 2]
+// Dependencies: [1391, 1981, 4266, 11318, 676, 1398, 4673, 1222, 4455, 709, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, selectChannelTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 11245 (navigateToTabLocation)
+// Module 11317 (navigateToTabLocation)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import transitionTo from "transitionTo" /* 1222 */;
-import transitionToChannel from "transitionToChannel" /* 4391 */;
-import _modDef4609 from "module_4609" /* 4609 */;
+import transitionToChannel from "transitionToChannel" /* 4455 */;
+import _modDef4673 from "module_4673" /* 4673 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
-import closure_5 from "handleConnectionOpen" /* 4202 */;
-import closure_6 from "handleChannelDelete" /* 11246 */;
+import closure_5 from "handleConnectionOpen" /* 4266 */;
+import closure_6 from "handleChannelDelete" /* 11318 */;
 import { Routes } from "ME" /* 676 */;
 import { isStaticChannelRoute } from "set" /* 1398 */;
 
@@ -25,8 +25,8 @@ function navigateToTabLocation(found) {
     ({ channelId, guildId } = found);
     const channel = store.getChannel(channelId);
     if (tmp) {
-      _modDef4609.updateChatOpen(channelId, true);
-      obj = _modDef4609;
+      _modDef4673.updateChatOpen(channelId, true);
+      obj = _modDef4673;
     }
     if (null != guildId) {
       transitionTo.transitionTo(Routes.CHANNEL(guildId, channelId), { openChannel: true });
@@ -44,8 +44,8 @@ function openChannelTabActive(closure_0, guildId) {
   if (0 === store3.getTabs().length) {
     const channel = store.getChannel(closure_0);
     if (tmp4) {
-      _modDef4609.updateChatOpen(closure_0, true);
-      const obj4 = _modDef4609;
+      _modDef4673.updateChatOpen(closure_0, true);
+      const obj4 = _modDef4673;
     }
     if (null != guildId) {
       transitionTo.transitionTo(Routes.CHANNEL(guildId, closure_0), { openChannel: true });
@@ -64,8 +64,8 @@ function openChannelTabActive(closure_0, guildId) {
     if (obj.getCurrentlySelectedChannelId() !== closure_0) {
       const channel1 = store.getChannel(closure_0);
       if (tmp18) {
-        tmp15(4609).updateChatOpen(closure_0, true);
-        const tmp15Result = tmp15(4609);
+        tmp15(4673).updateChatOpen(closure_0, true);
+        const tmp15Result = tmp15(4673);
       }
       if (null != guildId) {
         transitionTo.transitionTo(Routes.CHANNEL(guildId, closure_0), { openChannel: true });
@@ -137,8 +137,8 @@ function navigateActiveTabHistory(arg0) {
               const obj14 = dispatcherDefault;
               const tmp35 = importDefault;
               if (tmp8) {
-                tmp35(4609).updateChatOpen(channelId, true);
-                const tmp35Result = tmp35(4609);
+                tmp35(4673).updateChatOpen(channelId, true);
+                const tmp35Result = tmp35(4673);
               }
               if (null != guildId) {
                 transitionTo.transitionTo(Routes.CHANNEL(guildId, channelId), { openChannel: true });
@@ -169,8 +169,8 @@ export const openChannelTab = function openChannelTab(channelId, guildId) {
   if (0 === store3.getTabs().length) {
     const channel = store.getChannel(channelId);
     if (tmp4) {
-      _modDef4609.updateChatOpen(channelId, true);
-      const obj2 = _modDef4609;
+      _modDef4673.updateChatOpen(channelId, true);
+      const obj2 = _modDef4673;
     }
     if (null != guildId) {
       transitionTo.transitionTo(Routes.CHANNEL(guildId, channelId), { openChannel: true });

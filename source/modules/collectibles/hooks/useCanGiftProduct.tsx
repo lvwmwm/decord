@@ -1,15 +1,15 @@
-// Module ID: 12370
-// Function ID: 12371
+// Module ID: 12442
+// Function ID: 12443
 // Name: useCanGiftProduct
-// Dependencies: [9496, 7160, 7159, 4043, 1950, 4056, 2]
+// Dependencies: [9564, 7226, 7225, 4107, 1950, 4120, 2]
 // Exports: useCanGiftProduct
 
-// Module 12370 (useCanGiftProduct)
+// Module 12442 (useCanGiftProduct)
 import set from "set" /* 2 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4043 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7159 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7160 */;
-import useCurrentUser from "useCurrentUser" /* 9496 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7225 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7226 */;
+import useCurrentUser from "useCurrentUser" /* 9564 */;
 
 let result = set.fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");
 
@@ -37,7 +37,7 @@ export const useCanGiftProduct = function useCanGiftProduct(product) {
     result = product.type === tmp(1950).CollectiblesItemType.EXTERNAL_SKU;
   }
   if (!result) {
-    let tmpResult = tmp(7160);
+    let tmpResult = tmp(7226);
     let currency;
     if (result3 != null) {
       currency = result3.currency;
@@ -45,7 +45,7 @@ export const useCanGiftProduct = function useCanGiftProduct(product) {
     result = tmpResult.shouldHideGiftingForCurrency(currency);
   }
   if (!result) {
-    tmpResult = tmp(4056);
+    tmpResult = tmp(4120);
     result = !tmpResult.isCollectibleGiftingSupported();
   }
   return !result;

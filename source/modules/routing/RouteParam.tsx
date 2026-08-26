@@ -1,14 +1,14 @@
-// Module ID: 4221
-// Function ID: 4222
+// Module ID: 4285
+// Function ID: 4286
 // Name: RouteParam
-// Dependencies: [677, 1398, 507, 4222, 2]
+// Dependencies: [677, 1398, 507, 4286, 2]
 
-// Module 4221 (RouteParam)
+// Module 4285 (RouteParam)
 import set from "set" /* 2 */;
 import getAuthenticationPath from "getAuthenticationPath" /* 507 */;
 import INVITE from "INVITE" /* 677 */;
 import set2 from "set" /* 1398 */;
-import escapeRegExpDefault from "escapeRegExp" /* 4222 */;
+import escapeRegExpDefault from "escapeRegExp" /* 4286 */;
 
 const PSEUDO_GUILD_IDS = INVITE.PSEUDO_GUILD_IDS;
 const StaticChannelRoutes = set2.StaticChannelRoutes;

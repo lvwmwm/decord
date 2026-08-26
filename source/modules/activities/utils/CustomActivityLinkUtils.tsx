@@ -1,12 +1,12 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12494
+// Function ID: 12495
 // Name: fetchCustomActivityLink
-// Dependencies: [5, 12424, 676, 12426, 530, 709, 2]
+// Dependencies: [5, 12495, 676, 12497, 530, 709, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink, getQuickLinkImage
 
-// Module 12423 (fetchCustomActivityLink)
+// Module 12494 (fetchCustomActivityLink)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getOne" /* 12424 */;
+import closure_4 from "getOne" /* 12495 */;
 import { Endpoints } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -40,7 +40,7 @@ function _fetchCustomActivityLink() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ function _getCustomActivityLinkParams() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -279,7 +279,7 @@ function _loadCustomActivityLink() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -333,7 +333,7 @@ function _loadCustomActivityLink() {
               obj5[2] = callback;
               obj.dispatch(obj5);
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp16) {

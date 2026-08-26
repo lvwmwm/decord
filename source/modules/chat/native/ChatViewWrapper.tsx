@@ -1,12 +1,12 @@
-// Module ID: 10391
-// Function ID: 10392
-// Dependencies: [10392, 10393, 10404, 2]
+// Module ID: 10459
+// Function ID: 10460
+// Dependencies: [10460, 10461, 10472, 2]
 
-// Module 10391
+// Module 10459
 import set from "set" /* 2 */;
-import ChatViewWrapperAnimatedKeyboardDefault from "ChatViewWrapperAnimatedKeyboard" /* 10393 */;
-import ChatViewWrapperBaseDefault from "ChatViewWrapperBase" /* 10404 */;
-import apexExperiment from "apexExperiment" /* 10392 */;
+import ChatViewWrapperAnimatedKeyboardDefault from "ChatViewWrapperAnimatedKeyboard" /* 10461 */;
+import ChatViewWrapperBaseDefault from "ChatViewWrapperBase" /* 10472 */;
+import apexExperiment from "apexExperiment" /* 10460 */;
 
 if (apexExperiment.isAnimatedAndroidKeyboard()) {
   let importDefaultResult = ChatViewWrapperAnimatedKeyboardDefault;

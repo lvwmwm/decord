@@ -1,10 +1,10 @@
-// Module ID: 4056
-// Function ID: 4057
+// Module ID: 4120
+// Function ID: 4121
 // Name: isPremiumGiftingSupported
 // Dependencies: [1625, 500, 2]
 // Exports: isCollectibleGiftingSupported, isGooglePlayBillingSupported, isPremiumGiftingSupported, isSocialLayerStorefrontGiftingSupported, isSocialLayerStorefrontPurchaseSupported
 
-// Module 4056 (isPremiumGiftingSupported)
+// Module 4120 (isPremiumGiftingSupported)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;

@@ -1,10 +1,10 @@
-// Module ID: 14790
-// Function ID: 14791
+// Module ID: 14863
+// Function ID: 14864
 // Name: useColorPresetsWithA11yLabels
-// Dependencies: [19, 1934, 1236, 2695, 688, 2]
+// Dependencies: [19, 1934, 1236, 2727, 688, 2]
 // Exports: default
 
-// Module 14790 (useColorPresetsWithA11yLabels)
+// Module 14863 (useColorPresetsWithA11yLabels)
 import closure_3 from "noop" /* 19 */;
 import { getColorPresetsForEffect } from "items3" /* 1934 */;
 
@@ -20,7 +20,7 @@ export default function useColorPresetsWithA11yLabels(arg0) {
     obj = { number: arg1 + 1, hexList: null };
     const mapped = arr.map(callback(688).int2hex);
     obj[1] = mapped.join(", ");
-    obj[1] = intl.formatToPlainString(callback2(2695).FHfTsV, obj);
+    obj[1] = intl.formatToPlainString(callback2(2727).FHfTsV, obj);
     return obj;
   }), items);
 };

@@ -1,9 +1,9 @@
-// Module ID: 9312
-// Function ID: 9313
+// Module ID: 9380
+// Function ID: 9381
 // Name: prototype
 // Dependencies: [530, 1236, 2]
 
-// Module 9312 (prototype)
+// Module 9380 (prototype)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

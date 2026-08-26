@@ -1,9 +1,9 @@
-// Module ID: 8529
-// Function ID: 8530
+// Module ID: 8597
+// Function ID: 8598
 // Name: EntitlementFeatureNames
 // Dependencies: [2]
 
-// Module 8529 (EntitlementFeatureNames)
+// Module 8597 (EntitlementFeatureNames)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/EntitlementFeatureNames.tsx");

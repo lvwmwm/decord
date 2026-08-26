@@ -1,16 +1,16 @@
-// Module ID: 11882
-// Function ID: 11883
+// Module ID: 11955
+// Function ID: 11956
 // Name: GuildDirectoryEditDescription
-// Dependencies: [5, 19, 17, 21, 4380, 5373, 11883, 11881, 5434, 4376, 1236, 11884, 5376, 5889, 2]
+// Dependencies: [5, 19, 17, 21, 4444, 5439, 11956, 11954, 5500, 4440, 1236, 11957, 5442, 5955, 2]
 // Exports: default
 
-// Module 11882 (GuildDirectoryEditDescription)
+// Module 11955 (GuildDirectoryEditDescription)
 import noopAll from "noop" /* 19 */;
-import _modDef11881 from "module_11881" /* 11881 */;
+import _modDef11954 from "module_11954" /* 11954 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 function GuildDirectoryEditDescription(entry) {
@@ -34,7 +34,7 @@ function GuildDirectoryEditDescription(entry) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -50,7 +50,7 @@ function GuildDirectoryEditDescription(entry) {
                 return obj;
               } else {
                 closure_2 = tmp4;
-                let obj2 = closure_1_2(11883);
+                let obj2 = closure_1_2(11956);
                 dependencyMap = 1;
                 c4 = 1;
                 obj1 = { value: null, done: false };
@@ -66,10 +66,10 @@ function GuildDirectoryEditDescription(entry) {
               obj2[0] = arg1;
               return obj2;
             } else {
-              obj = callback(11881);
+              obj = callback(11954);
               obj.close();
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             c4 = tmp;
@@ -94,7 +94,7 @@ function GuildDirectoryEditDescription(entry) {
   obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = entry(1236).intl;
   obj1[4] = intl.format(entry(1236).t.w9tsNk, { guildName: entry.name });
-  obj[1] = callback(entry(4376).Text, obj1);
+  obj[1] = callback(entry(4440).Text, obj1);
   const items = [callback(closure_5, obj), ];
   const obj3 = {
     onSubmit(arg0, arg1) {
@@ -115,10 +115,10 @@ function GuildDirectoryEditDescription(entry) {
   obj3[1] = intl2.string(entry(1236).t["R3BPH+"]);
   obj3[2] = entry;
   obj3[3] = entry.channelId;
-  items[1] = callback(_onSubmit(11884), obj3);
+  items[1] = callback(_onSubmit(11957), obj3);
   obj[2] = items;
   obj[2] = callback2(closure_6, obj);
-  return callback(entry(5434).SafeAreaPaddingView, obj);
+  return callback(entry(5500).SafeAreaPaddingView, obj);
 }
 noopAll;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
@@ -139,7 +139,7 @@ export default function GuildDirectoryEditDescriptionModal(arg0) {
   obj = {};
   obj = {
     fullscreen: true,
-    headerLeft: _require(5376).getHeaderCloseButton(_modDef11881.close),
+    headerLeft: _require(5442).getHeaderCloseButton(_modDef11954.close),
     headerTitle() {
       return null;
     },
@@ -151,5 +151,5 @@ export default function GuildDirectoryEditDescriptionModal(arg0) {
   obj[EDIT_DESCRIPTION] = obj;
   obj[0] = obj;
   obj[1] = EDIT_DESCRIPTION;
-  return callback(_require(5889).Navigator, obj);
+  return callback(_require(5955).Navigator, obj);
 };

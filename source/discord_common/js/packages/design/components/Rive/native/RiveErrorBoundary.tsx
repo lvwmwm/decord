@@ -1,9 +1,9 @@
-// Module ID: 4169
-// Function ID: 4170
+// Module ID: 4233
+// Function ID: 4234
 // Name: getDerivedStateFromError
-// Dependencies: [19, 4165, 2]
+// Dependencies: [19, 4229, 2]
 
-// Module 4169 (getDerivedStateFromError)
+// Module 4233 (getDerivedStateFromError)
 import noopAll from "noop" /* 19 */;
 
 const Component = noopAll.Component;

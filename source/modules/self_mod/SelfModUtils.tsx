@@ -1,10 +1,10 @@
-// Module ID: 6015
-// Function ID: 6016
+// Module ID: 6081
+// Function ID: 6082
 // Name: isCurrentUserTeen
 // Dependencies: [1922, 2]
 // Exports: isCurrentUserTeen
 
-// Module 6015 (isCurrentUserTeen)
+// Module 6081 (isCurrentUserTeen)
 import closure_0 from "mergeGuildAvatar" /* 1922 */;
 
 const result = require("set").fileFinishedImporting("modules/self_mod/SelfModUtils.tsx");

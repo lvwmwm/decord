@@ -1,19 +1,19 @@
-// Module ID: 12844
-// Function ID: 12845
+// Module ID: 12918
+// Function ID: 12919
 // Name: UserPreview
-// Dependencies: [19, 17, 21, 4380, 712, 4228, 4376, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 4292, 4440, 1236, 1297, 2]
 // Exports: default
 
-// Module 12844 (UserPreview)
+// Module 12918 (UserPreview)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import hexToRgba from "hexToRgba" /* 4228 */;
-import Text from "Text" /* 4376 */;
+import hexToRgba from "hexToRgba" /* 4292 */;
+import Text from "Text" /* 4440 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -41,13 +41,13 @@ export default function UserPreview(user) {
   obj1 = { style: items1, children: null };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
   const str = intl.string(getSystemLocale.t.Rsth7z);
-  const items2 = [callback(Button.Avatar, { size: Button.AvatarSizes.LARGE_48, user, guildId: "r" }), ];
+  const items2 = [callback(Button.Avatar, { size: Button.AvatarSizes.LARGE_48, user, guildId: "Array" }), ];
   const obj3 = { style: tmp.userProfileInfo, children: null };
   let tmp7Result = null != user.globalName;
   if (tmp7Result) {
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj4[2] = user.globalName;
-    tmp7Result = tmp7(tmp2(4376).Text, obj4);
+    tmp7Result = tmp7(tmp2(4440).Text, obj4);
   }
   const items3 = [tmp7Result, callback(Text.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
   obj3[1] = items3;

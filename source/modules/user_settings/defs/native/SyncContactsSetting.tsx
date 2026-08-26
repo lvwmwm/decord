@@ -1,16 +1,16 @@
-// Module ID: 14298
-// Function ID: 14299
+// Module ID: 14371
+// Function ID: 14372
 // Name: toggle
-// Dependencies: [5106, 1922, 8235, 676, 12236, 14299, 10516, 1236, 2]
+// Dependencies: [5172, 1922, 8302, 676, 12308, 14372, 10584, 1236, 2]
 
-// Module 14298 (toggle)
+// Module 14371 (toggle)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _uploadContacts from "_uploadContacts" /* 12236 */;
-import syncContacts from "syncContacts" /* 14299 */;
-import closure_2 from "set" /* 5106 */;
+import _uploadContacts from "_uploadContacts" /* 12308 */;
+import syncContacts from "syncContacts" /* 14372 */;
+import closure_2 from "set" /* 5172 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { PlatformTypes } from "ME" /* 676 */;
-import createToggle from "createToggle" /* 10516 */;
+import createToggle from "createToggle" /* 10584 */;
 
 require = arg1;
 createToggle = {

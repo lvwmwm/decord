@@ -1,14 +1,14 @@
-// Module ID: 10267
-// Function ID: 10268
+// Module ID: 10335
+// Function ID: 10336
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 4429, 7148, 676, 647, 1950, 7147, 2]
+// Dependencies: [32, 19, 4493, 7214, 676, 647, 1950, 7213, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 10267 (useFetchCollectiblesProduct)
+// Module 10335 (useFetchCollectiblesProduct)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { useEffect } from "noop" /* 19 */;
-import closure_4 from "addSku" /* 4429 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7148 */;
+import closure_4 from "addSku" /* 4493 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7214 */;
 import { SKUProductLines } from "ME" /* 676 */;
 
 const require = arg1;

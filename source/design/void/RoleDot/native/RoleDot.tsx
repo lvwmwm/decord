@@ -1,18 +1,18 @@
-// Module ID: 13580
-// Function ID: 13581
+// Module ID: 13653
+// Function ID: 13654
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 4380, 712, 500, 4821, 4843, 4826, 1370, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 500, 4886, 4908, 4891, 1370, 2]
 // Exports: RoleDot
 
-// Module 13580 (RoleDot)
+// Module 13653 (RoleDot)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import getFontScale from "getFontScale" /* 4821 */;
-import LinearGradientDefault from "LinearGradient" /* 4826 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4843 */;
+import getFontScale from "getFontScale" /* 4886 */;
+import LinearGradientDefault from "LinearGradient" /* 4891 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4908 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

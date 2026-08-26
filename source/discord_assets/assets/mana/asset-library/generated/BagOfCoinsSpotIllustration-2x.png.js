@@ -1,9 +1,9 @@
-// Module ID: 6226
-// Function ID: 6227
+// Module ID: 6292
+// Function ID: 6293
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6226 (metadata)
+// Module 6292 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BagOfCoinsSpotIllustration-2x.png.js");

@@ -1,13 +1,13 @@
-// Module ID: 12168
-// Function ID: 12169
+// Module ID: 12241
+// Function ID: 12242
 // Name: getNoMutualFriendsSource
-// Dependencies: [19, 17, 21, 7767, 12169, 12170, 12171, 1363, 2]
+// Dependencies: [19, 17, 21, 7834, 12242, 12243, 12244, 1363, 2]
 // Exports: NoMutualFriends, getNoMutualFriendsSource, useNoMutualFriendsSource
 
-// Module 12168 (getNoMutualFriendsSource)
+// Module 12241 (getNoMutualFriendsSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 7767 */;
+import getIllustrationSource from "getIllustrationSource" /* 7834 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getNoMutualFriendsSource = function getNoMutualFriendsSource(theme)
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(12169);
+      return callback(12242);
     },
     darker() {
-      return callback(12170);
+      return callback(12243);
     },
     light() {
-      return callback(12171);
+      return callback(12244);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useNoMutualFriendsSource = function useNoMutualFriendsSource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(12169);
+      return callback(12242);
     },
     darker() {
-      return callback(12170);
+      return callback(12243);
     },
     light() {
-      return callback(12171);
+      return callback(12244);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const NoMutualFriends = function NoMutualFriends(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(12169);
+      return callback(12242);
     },
     darker() {
-      return callback(12170);
+      return callback(12243);
     },
     light() {
-      return callback(12171);
+      return callback(12244);
     }
   };
   obj = {};

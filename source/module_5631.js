@@ -1,0 +1,19 @@
+// Module ID: 5631
+// Function ID: 5632
+// Dependencies: []
+
+// Module 5631
+if (typeof setImmediate === "function") {
+  const _setImmediate = setImmediate;
+  let bindResult = setImmediate.bind(null);
+} else {
+  const _requestAnimationFrame2 = requestAnimationFrame;
+  if (typeof requestAnimationFrame === "function") {
+    const _requestAnimationFrame = requestAnimationFrame;
+    bindResult = requestAnimationFrame.bind(null);
+  } else {
+    const _queueMicrotask = queueMicrotask;
+    bindResult = queueMicrotask.bind(null);
+  }
+}
+arg5.ghQueueMicrotask = bindResult;

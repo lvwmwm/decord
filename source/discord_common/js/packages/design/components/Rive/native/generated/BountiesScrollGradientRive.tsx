@@ -1,12 +1,12 @@
-// Module ID: 4170
-// Function ID: 4171
+// Module ID: 4234
+// Function ID: 4235
 // Name: BountiesScrollGradientRive
-// Dependencies: [109, 19, 21, 4114, 4171, 4169, 2]
+// Dependencies: [109, 19, 21, 4178, 4235, 4233, 2]
 
-// Module 4170 (BountiesScrollGradientRive)
-import BaseRive from "BaseRive" /* 4114 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4169 */;
-import metadataDefault from "metadata" /* 4171 */;
+// Module 4234 (BountiesScrollGradientRive)
+import BaseRive from "BaseRive" /* 4178 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4233 */;
+import metadataDefault from "metadata" /* 4235 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

@@ -1,29 +1,29 @@
-// Module ID: 14957
-// Function ID: 14958
+// Module ID: 15036
+// Function ID: 15037
 // Name: handleLogout
-// Dependencies: [21, 595, 691, 5236, 10861, 7737, 5933, 4746, 4750, 1236, 10516, 10877, 2]
+// Dependencies: [21, 595, 691, 5302, 10933, 7804, 5999, 4810, 4814, 1236, 10584, 10949, 2]
 
-// Module 14957 (handleLogout)
+// Module 15036 (handleLogout)
 import set from "set" /* 2 */;
 import Storage2 from "Storage" /* 595 */;
 import keys from "keys" /* 691 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useAlertStore from "useAlertStore" /* 4746 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4750 */;
-import _modDef5236 from "module_5236" /* 5236 */;
-import handleLogoutDefault from "handleLogout" /* 5933 */;
-import dispatcherDefault from "dispatcher" /* 7737 */;
-import NativeModulesDefault from "NativeModules" /* 10861 */;
-import DoorExitIcon from "DoorExitIcon" /* 10877 */;
+import useAlertStore from "useAlertStore" /* 4810 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4814 */;
+import _modDef5302 from "module_5302" /* 5302 */;
+import handleLogoutDefault from "handleLogout" /* 5999 */;
+import dispatcherDefault from "dispatcher" /* 7804 */;
+import NativeModulesDefault from "NativeModules" /* 10933 */;
+import DoorExitIcon from "DoorExitIcon" /* 10949 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 10516 */;
+import createToggle from "createToggle" /* 10584 */;
 
 function handleLogout() {
   const Storage = Storage2.Storage;
   const result = Storage.set(keys.StorageKeys.LOGOUT_TIMESTAMP_KEY, new Date().getTime());
   const date = new Date();
-  _modDef5236.disconnect();
-  const obj2 = _modDef5236;
+  _modDef5302.disconnect();
+  const obj2 = _modDef5302;
   const result1 = NativeModulesDefault.clearAllNotifications();
   const obj3 = NativeModulesDefault;
   dispatcherDefault.close();

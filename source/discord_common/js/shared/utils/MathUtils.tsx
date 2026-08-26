@@ -1,10 +1,10 @@
-// Module ID: 12175
-// Function ID: 12176
+// Module ID: 12248
+// Function ID: 12249
 // Name: roundIfClose
 // Dependencies: [2]
 // Exports: roundIfClose
 
-// Module 12175 (roundIfClose)
+// Module 12248 (roundIfClose)
 import set from "set" /* 2 */;
 
 function roundIfClose(result, arg1) {

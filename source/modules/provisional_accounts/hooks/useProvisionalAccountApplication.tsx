@@ -1,11 +1,11 @@
-// Module ID: 12188
-// Function ID: 12189
+// Module ID: 12261
+// Function ID: 12262
 // Name: useProvisionalAccountApplication
-// Dependencies: [7264, 589, 5840, 2]
+// Dependencies: [7330, 589, 5906, 2]
 // Exports: default
 
-// Module 12188 (useProvisionalAccountApplication)
-import closure_2 from "recountRelationshipTypes" /* 7264 */;
+// Module 12261 (useProvisionalAccountApplication)
+import closure_2 from "recountRelationshipTypes" /* 7330 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/provisional_accounts/hooks/useProvisionalAccountApplication.tsx");
@@ -18,5 +18,5 @@ export default function useProvisionalAccountApplication(arg0) {
     return 0 !== gameRelationshipsForUser.length ? gameRelationshipsForUser[0].applicationId : undefined;
   });
   const obj = _require(589);
-  return _require(5840).useGetOrFetchApplication(stateFromStores);
+  return _require(5906).useGetOrFetchApplication(stateFromStores);
 };

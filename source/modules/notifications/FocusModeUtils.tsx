@@ -1,15 +1,15 @@
-// Module ID: 9919
-// Function ID: 9920
+// Module ID: 9986
+// Function ID: 9987
 // Name: useFocusModeEnabled
-// Dependencies: [5104, 4037, 676, 4070, 1374, 1337, 698, 4744, 1236, 9920, 2]
+// Dependencies: [5170, 4101, 676, 4134, 1374, 1337, 698, 4808, 1236, 9987, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 9919 (useFocusModeEnabled)
+// Module 9986 (useFocusModeEnabled)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import setDefault from "set" /* 4744 */;
-import closure_3 from "filterPlayingActivities" /* 5104 */;
-import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags" /* 4037 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import setDefault from "set" /* 4808 */;
+import closure_3 from "filterPlayingActivities" /* 5170 */;
+import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags" /* 4101 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -58,7 +58,7 @@ export const getFocusModeEnabled = function getFocusModeEnabled() {
 export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
   const _require = quiet_mode_enabled;
   importDefault = arg1;
-  const FocusMode = _require(4070).FocusMode;
+  const FocusMode = _require(4134).FocusMode;
   const setting = FocusMode.getSetting();
   const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("notifications", (arg0) => {

@@ -1,29 +1,29 @@
-// Module ID: 12220
-// Function ID: 12221
+// Module ID: 12292
+// Function ID: 12293
 // Name: GuildDirectoryNicknameUpsell
-// Dependencies: [5, 32, 19, 17, 1910, 12209, 21, 4380, 5373, 712, 589, 5475, 5369, 4278, 5885, 4376, 1236, 8622, 1297, 4815, 12210, 12219, 5376, 5889, 5822, 2]
+// Dependencies: [5, 32, 19, 17, 1910, 12281, 21, 4444, 5439, 712, 589, 5541, 5435, 4342, 5951, 4440, 1236, 8690, 1297, 4879, 12282, 12291, 5442, 5955, 5888, 2]
 // Exports: default
 
-// Module 12220 (GuildDirectoryNicknameUpsell)
+// Module 12292 (GuildDirectoryNicknameUpsell)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4376 */;
-import Button2 from "Button" /* 4815 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5475 */;
-import useInitialValueDefault from "useInitialValue" /* 5822 */;
-import GuildIconSizes from "GuildIconSizes" /* 5885 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
-import _modDef8622 from "module_8622" /* 8622 */;
+import Text from "Text" /* 4440 */;
+import Button2 from "Button" /* 4879 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5541 */;
+import useInitialValueDefault from "useInitialValue" /* 5888 */;
+import GuildIconSizes from "GuildIconSizes" /* 5951 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5951 */;
+import _modDef8690 from "module_8690" /* 8690 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import { GuildPrompts } from "GuildPrompts" /* 12209 */;
+import { GuildPrompts } from "GuildPrompts" /* 12281 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function GuildDirectoryNicknameUpsell(arg0) {
@@ -132,7 +132,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       }
     }, 100);
   };
-  items2[2] = callback(_modDef8622, obj5);
+  items2[2] = callback(_modDef8690, obj5);
   items2[3] = callback(closure_6, { style: tmp.redesignGrowSpacing });
   const obj7 = { style: tmp.redesignButtonContainer, children: null };
   const obj8 = { size: "lg", text: null, onPress: null };
@@ -175,7 +175,7 @@ const result = require("set").fileFinishedImporting("modules/directory_channels/
 
 export default function GuildDirectoryNicknameUpsellModal(arg0) {
   const _require = arg0;
-  return callback(_require(5889).Navigator, {
+  return callback(_require(5955).Navigator, {
     screens: useInitialValueDefault(() => {
       ({ guildId: closure_0, onHide: closure_1 } = callback);
       function handleClose() {

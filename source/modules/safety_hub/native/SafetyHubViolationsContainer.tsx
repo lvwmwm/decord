@@ -1,25 +1,25 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14283
+// Function ID: 14284
 // Name: SafetyHubViolationsHeader
-// Dependencies: [32, 19, 17, 11442, 7950, 676, 21, 4380, 712, 9204, 8113, 4376, 1236, 13049, 9625, 7949, 11, 14211, 7951, 4611, 11439, 2009, 11449, 589, 698, 11447, 2]
+// Dependencies: [32, 19, 17, 11514, 8017, 676, 21, 4444, 712, 9272, 8180, 4440, 1236, 10741, 9693, 8016, 11, 14284, 8018, 4675, 11511, 2009, 11521, 589, 698, 11519, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 14210 (SafetyHubViolationsHeader)
+// Module 14283 (SafetyHubViolationsHeader)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
-import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 7949 */;
-import WarningIcon from "WarningIcon" /* 8113 */;
-import renderDefault from "render" /* 9204 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11447 */;
+import Text from "Text" /* 4440 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8016 */;
+import WarningIcon from "WarningIcon" /* 8180 */;
+import renderDefault from "render" /* 9272 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11519 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11442 */;
-import SafetyHubView from "SafetyHubView" /* 7950 */;
+import closure_7 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11514 */;
+import SafetyHubView from "SafetyHubView" /* 8017 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function SafetyHubViolationsHeader(count) {
@@ -60,9 +60,9 @@ function SafetyHubViolationsHeader(count) {
   obj1[1] = items4;
   items2[1] = closure_12(closure_6, obj1);
   if (opened) {
-    let ChevronSmallDownIcon = tmp7(13049).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp7(10741).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp7(9625).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp7(9693).ChevronSmallDownIcon;
   }
   const items5 = [tmp.chevron];
   items2[2] = closure_11(ChevronSmallDownIcon, { size: "md", style: items5 });

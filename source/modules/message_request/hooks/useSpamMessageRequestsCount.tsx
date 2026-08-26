@@ -1,12 +1,12 @@
-// Module ID: 16231
-// Function ID: 16232
+// Module ID: 16312
+// Function ID: 16313
 // Name: useSpamMessageRequestCount
-// Dependencies: [5948, 589, 2]
+// Dependencies: [6014, 589, 2]
 // Exports: useSpamMessageRequestCount
 
-// Module 16231 (useSpamMessageRequestCount)
+// Module 16312 (useSpamMessageRequestCount)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "processChannel" /* 5948 */;
+import closure_2 from "processChannel" /* 6014 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useSpamMessageRequestsCount.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 8626
-// Function ID: 8627
+// Module ID: 8694
+// Function ID: 8695
 // Name: Label
-// Dependencies: [19, 21, 4103, 1363, 4376, 2]
+// Dependencies: [19, 21, 4167, 1363, 4440, 2]
 // Exports: default
 
-// Module 8626 (Label)
+// Module 8694 (Label)
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("design/void/Form/native/Fre
 export default function Label(style) {
   const children = style.children;
   let nodeText;
-  nodeText = nodeText(4103).getNodeText(children);
+  nodeText = nodeText(4167).getNodeText(children);
   const items = [nodeText];
   const effect = React.useEffect(() => {
     let tmp2 = null != nodeText;
@@ -26,5 +26,5 @@ export default function Label(style) {
       AccessibilityAnnouncer.announce(tmp);
     }
   }, items);
-  return jsx(nodeText(4376).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
+  return jsx(nodeText(4440).Text, { style: style.style, variant: "text-xs/medium", color: "text-feedback-critical", children });
 };

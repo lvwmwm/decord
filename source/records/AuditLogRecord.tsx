@@ -1,13 +1,13 @@
-// Module ID: 16883
-// Function ID: 16884
+// Module ID: 16968
+// Function ID: 16969
 // Name: getTargetType
-// Dependencies: [1931, 676, 1208, 3979, 11, 2]
+// Dependencies: [1931, 676, 1208, 4043, 11, 2]
 
-// Module 16883 (getTargetType)
+// Module 16968 (getTargetType)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import toJSDefault from "toJS" /* 1931 */;
-import hooksDefault from "hooks" /* 3979 */;
+import hooksDefault from "hooks" /* 4043 */;
 import ME from "ME" /* 676 */;
 
 function getTargetType(action) {

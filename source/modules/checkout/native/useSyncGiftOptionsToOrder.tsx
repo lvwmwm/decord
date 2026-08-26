@@ -1,10 +1,10 @@
-// Module ID: 10255
-// Function ID: 10256
+// Module ID: 10323
+// Function ID: 10324
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 3, 7036, 4058, 2]
+// Dependencies: [32, 19, 3, 7102, 4122, 2]
 // Exports: default
 
-// Module 10255 (useSyncGiftOptionsToOrder)
+// Module 10323 (useSyncGiftOptionsToOrder)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;

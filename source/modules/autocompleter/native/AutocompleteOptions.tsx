@@ -1,22 +1,22 @@
-// Module ID: 10143
-// Function ID: 10144
+// Module ID: 10210
+// Function ID: 10211
 // Name: getAutocompleteOptions
-// Dependencies: [7382, 7383, 4935, 5325, 1391, 1992, 1910, 676, 4838, 4839, 10144, 1925, 12, 10145, 5266, 6058, 4070, 7458, 10108, 6061, 1435, 1236, 2]
+// Dependencies: [7448, 7449, 5001, 5391, 1391, 1992, 1910, 676, 4903, 4904, 10211, 1925, 12, 10212, 5332, 6124, 4134, 7524, 10175, 6127, 1435, 1236, 2]
 // Exports: getAutocompleteOptions
 
-// Module 10143 (getAutocompleteOptions)
+// Module 10210 (getAutocompleteOptions)
 import applyDefault from "apply" /* 12 */;
-import _executeCommandDefault from "_executeCommand" /* 10145 */;
-import closure_3 from "handleInit" /* 7382 */;
-import closure_4 from "handleInit" /* 7383 */;
-import closure_5 from "set" /* 4935 */;
-import closure_6 from "loadSavedGuildStickers" /* 5325 */;
+import _executeCommandDefault from "_executeCommand" /* 10212 */;
+import closure_3 from "handleInit" /* 7448 */;
+import closure_4 from "handleInit" /* 7449 */;
+import closure_5 from "set" /* 5001 */;
+import closure_6 from "loadSavedGuildStickers" /* 5391 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "trackCommunicationDisabled" /* 1992 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
-import regExp from "regExp" /* 4839 */;
-import { AutocompleteTypes } from "AutocompleteTypes" /* 10144 */;
+import regExp from "regExp" /* 4904 */;
+import { AutocompleteTypes } from "AutocompleteTypes" /* 10211 */;
 import set from "set" /* 1925 */;
 
 const require = arg1;
@@ -230,7 +230,7 @@ export const getAutocompleteOptions = function getAutocompleteOptions(channel, a
                 const obj4 = _private(tmp3[18]);
               }
               const items2 = [query];
-              const items3 = [_private, (arg0, arg1) => arg1 === callback(6061).StickerSendability.SENDABLE];
+              const items3 = [_private, (arg0, arg1) => arg1 === callback(6127).StickerSendability.SENDABLE];
               items1 = flag(tmp3[14]).queryStickers(items2, true, items3);
               const tmp2Result = flag(tmp3[14]);
             }

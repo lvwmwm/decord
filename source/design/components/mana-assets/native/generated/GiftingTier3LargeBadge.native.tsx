@@ -1,14 +1,14 @@
-// Module ID: 6585
-// Function ID: 6586
+// Module ID: 6651
+// Function ID: 6652
 // Name: GiftingTier3LargeBadge
-// Dependencies: [21, 5374, 6586, 2]
+// Dependencies: [21, 5440, 6652, 2]
 // Exports: GiftingTier3LargeBadge
 
-// Module 6585 (GiftingTier3LargeBadge)
+// Module 6651 (GiftingTier3LargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import vanityUrlDefault from "vanityUrl" /* 6586 */;
+import preloadDefault from "preload" /* 5440 */;
+import vanityUrlDefault from "vanityUrl" /* 6652 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftingTier3LargeBadge.native.tsx");

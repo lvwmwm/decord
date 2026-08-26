@@ -1,24 +1,24 @@
-// Module ID: 6004
-// Function ID: 6005
+// Module ID: 6070
+// Function ID: 6071
 // Name: getMemberListId
-// Dependencies: [4293, 4402, 1218, 1391, 4300, 1992, 1985, 1910, 4469, 5104, 1922, 676, 1236, 4030, 1217, 12, 506, 589, 709, 2]
+// Dependencies: [4357, 4466, 1218, 1391, 4364, 1992, 1985, 1910, 4533, 5170, 1922, 676, 1236, 4094, 1217, 12, 506, 589, 709, 2]
 
-// Module 6004 (getMemberListId)
+// Module 6070 (getMemberListId)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1217 */;
-import applyOverwritesAll from "applyOverwrites" /* 4030 */;
-import closure_4 from "getHash" /* 4293 */;
-import closure_5 from "reset" /* 4402 */;
+import applyOverwritesAll from "applyOverwrites" /* 4094 */;
+import closure_4 from "getHash" /* 4357 */;
+import closure_5 from "reset" /* 4466 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "handleInviteData" /* 4300 */;
+import closure_8 from "handleInviteData" /* 4364 */;
 import closure_9 from "trackCommunicationDisabled" /* 1992 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import closure_12 from "sortActivity" /* 4469 */;
-import closure_13 from "filterPlayingActivities" /* 5104 */;
+import closure_12 from "sortActivity" /* 4533 */;
+import closure_13 from "filterPlayingActivities" /* 5170 */;
 import closure_14 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

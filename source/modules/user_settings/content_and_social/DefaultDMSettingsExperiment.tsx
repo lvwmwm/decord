@@ -1,14 +1,14 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15194
+// Function ID: 15195
 // Name: shouldAgeVerifyForDMDefaultOff
-// Dependencies: [4076, 5248, 4621, 2]
+// Dependencies: [4140, 5314, 4685, 2]
 // Exports: shouldAgeVerifyForDMDefaultOff
 
-// Module 15115 (shouldAgeVerifyForDMDefaultOff)
+// Module 15194 (shouldAgeVerifyForDMDefaultOff)
 import set from "set" /* 2 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4076 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4621 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5248 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4140 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4685 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5314 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/content_and_social/DefaultDMSettingsExperiment.tsx");
 

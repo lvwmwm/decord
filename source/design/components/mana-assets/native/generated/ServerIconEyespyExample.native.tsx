@@ -1,14 +1,14 @@
-// Module ID: 6845
-// Function ID: 6846
+// Module ID: 6911
+// Function ID: 6912
 // Name: ServerIconEyespyExample
-// Dependencies: [21, 5374, 6846, 2]
+// Dependencies: [21, 5440, 6912, 2]
 // Exports: ServerIconEyespyExample
 
-// Module 6845 (ServerIconEyespyExample)
+// Module 6911 (ServerIconEyespyExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6846 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6912 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconEyespyExample.native.tsx");

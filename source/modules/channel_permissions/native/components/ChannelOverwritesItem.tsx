@@ -1,25 +1,25 @@
-// Module ID: 9152
-// Function ID: 9153
+// Module ID: 9220
+// Function ID: 9221
 // Name: RemoveIcon
-// Dependencies: [19, 17, 1922, 7926, 21, 4380, 4750, 1236, 4393, 4097, 4949, 6105, 5480, 9153, 9144, 4376, 1297, 9154, 9155, 4109, 8120, 2]
+// Dependencies: [19, 17, 1922, 7993, 21, 4444, 4814, 1236, 4457, 4161, 5015, 6171, 5546, 9221, 9212, 4440, 1297, 9222, 9223, 4173, 8187, 2]
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 9152 (RemoveIcon)
+// Module 9220 (RemoveIcon)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1297 */;
-import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4109 */;
-import Text from "Text" /* 4376 */;
-import TableRowInner from "TableRowInner" /* 5480 */;
-import FormCheckbox from "FormCheckbox" /* 8120 */;
-import getRoleRowDataAll from "getRoleRowData" /* 9144 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9153 */;
-import registerAssetDefault from "registerAsset" /* 9154 */;
-import registerAssetDefault2 from "registerAsset" /* 9155 */;
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4173 */;
+import Text from "Text" /* 4440 */;
+import TableRowInner from "TableRowInner" /* 5546 */;
+import FormCheckbox from "FormCheckbox" /* 8187 */;
+import getRoleRowDataAll from "getRoleRowData" /* 9212 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9221 */;
+import registerAssetDefault from "registerAsset" /* 9222 */;
+import registerAssetDefault2 from "registerAsset" /* 9223 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { RowType } from "RowType" /* 7926 */;
+import { RowType } from "RowType" /* 7993 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function RemoveIcon(item) {
@@ -65,8 +65,8 @@ function RemoveIcon(item) {
     }
     obj = { style: null };
     obj[0] = prop;
-    obj[4] = closure_7(item(6105).CircleXIcon, obj);
-    tmp3Result = tmp3(item(4949).PressableOpacity, obj);
+    obj[4] = closure_7(item(6171).CircleXIcon, obj);
+    tmp3Result = tmp3(item(5015).PressableOpacity, obj);
   }
   return tmp3Result;
 }

@@ -1,13 +1,13 @@
-// Module ID: 12455
-// Function ID: 12456
+// Module ID: 12526
+// Function ID: 12527
 // Name: useMediaModalFooterBackground
-// Dependencies: [32, 689, 4101, 712, 2]
+// Dependencies: [32, 689, 4165, 712, 2]
 // Exports: default
 
-// Module 12455 (useMediaModalFooterBackground)
+// Module 12526 (useMediaModalFooterBackground)
 import nDefault from "n" /* 689 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4101 */;
+import map from "map" /* 4165 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;

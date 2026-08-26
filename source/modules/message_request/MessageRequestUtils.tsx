@@ -1,12 +1,12 @@
-// Module ID: 13390
-// Function ID: 13391
+// Module ID: 13463
+// Function ID: 13464
 // Name: filterOutMessageRequestsAndSpam
-// Dependencies: [5947, 5948, 11, 2]
+// Dependencies: [6013, 6014, 11, 2]
 // Exports: filterOutMessageRequestsAndSpam, filterOutMessageRequestsAndSpamById, isMessageRequestOrSpamRequest, shouldShowMessageRequests
 
-// Module 13390 (filterOutMessageRequestsAndSpam)
-import closure_2 from "processChannel" /* 5947 */;
-import closure_3 from "processChannel" /* 5948 */;
+// Module 13463 (filterOutMessageRequestsAndSpam)
+import closure_2 from "processChannel" /* 6013 */;
+import closure_3 from "processChannel" /* 6014 */;
 
 const result = require("set").fileFinishedImporting("modules/message_request/MessageRequestUtils.tsx");
 

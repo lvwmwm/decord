@@ -1,14 +1,14 @@
-// Module ID: 6867
-// Function ID: 6868
+// Module ID: 6933
+// Function ID: 6934
 // Name: ShareNitroSpotIllustration
-// Dependencies: [21, 5374, 6868, 2]
+// Dependencies: [21, 5440, 6934, 2]
 // Exports: ShareNitroSpotIllustration
 
-// Module 6867 (ShareNitroSpotIllustration)
+// Module 6933 (ShareNitroSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6868 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6934 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ShareNitroSpotIllustration.native.tsx");

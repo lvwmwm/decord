@@ -1,14 +1,14 @@
-// Module ID: 9381
-// Function ID: 9382
+// Module ID: 9449
+// Function ID: 9450
 // Name: useIsStreamRTCConnectionEmpty
-// Dependencies: [1218, 4454, 4468, 589, 2]
+// Dependencies: [1218, 4518, 4532, 589, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 9381 (useIsStreamRTCConnectionEmpty)
+// Module 9449 (useIsStreamRTCConnectionEmpty)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "createRTCConnection" /* 4454 */;
-import closure_4 from "initialize" /* 4468 */;
+import closure_3 from "createRTCConnection" /* 4518 */;
+import closure_4 from "initialize" /* 4532 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useIsEmptyRTCConnection.tsx");

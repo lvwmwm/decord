@@ -1,10 +1,10 @@
-// Module ID: 7735
-// Function ID: 7736
-// Dependencies: [5, 7061, 676, 530, 709, 2]
+// Module ID: 7801
+// Function ID: 7802
+// Dependencies: [5, 7127, 676, 530, 709, 2]
 
-// Module 7735
+// Module 7801
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createFromServer" /* 7061 */;
+import closure_4 from "createFromServer" /* 7127 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -26,7 +26,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,17 +1,17 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12956
+// Function ID: 12957
 // Name: useBuyNitroPlanLabelRenderer
-// Dependencies: [19, 17, 1996, 1924, 21, 4380, 712, 4101, 1236, 1898, 4376, 4043, 2]
+// Dependencies: [19, 17, 1996, 1924, 21, 4444, 712, 4165, 1236, 1898, 4440, 4107, 2]
 // Exports: useBuyNitroPlanLabelRenderer
 
-// Module 12882 (useBuyNitroPlanLabelRenderer)
+// Module 12956 (useBuyNitroPlanLabelRenderer)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "_getSystemLocale" /* 1996 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ DISCOUNTS: closure_6, SubscriptionPlans: error } = GuildFeatures);

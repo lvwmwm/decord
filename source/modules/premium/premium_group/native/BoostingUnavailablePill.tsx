@@ -1,21 +1,21 @@
-// Module ID: 12989
-// Function ID: 12990
+// Module ID: 13063
+// Function ID: 13064
 // Name: handlePress
-// Dependencies: [17, 4057, 21, 4380, 712, 4347, 12990, 2009, 1236, 2921, 4376, 2]
+// Dependencies: [17, 4121, 21, 4444, 712, 4411, 13064, 2009, 1236, 2985, 4440, 2]
 // Exports: default
 
-// Module 12989 (handlePress)
+// Module 13063 (handlePress)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import messagesProxyDefault from "messagesProxy" /* 2921 */;
-import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4057 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
-import Text from "Text" /* 4376 */;
+import messagesProxyDefault from "messagesProxy" /* 2985 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4121 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
+import Text from "Text" /* 4440 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 function handlePress() {
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
@@ -23,7 +23,7 @@ function handlePress() {
   const intl = getSystemLocale.intl;
   obj = { premiumGroupProductName: callback() };
   obj[0] = intl.formatToPlainString(messagesProxyDefault["5xN/C1"], obj);
-  obj.openLazy(asyncRequireImpl(12990, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  obj.openLazy(asyncRequireImpl(13064, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 let closure_5 = SubscriptionStatusTypes.getPremiumGroupProductName;

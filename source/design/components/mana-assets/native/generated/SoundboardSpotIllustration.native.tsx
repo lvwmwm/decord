@@ -1,14 +1,14 @@
-// Module ID: 6893
-// Function ID: 6894
+// Module ID: 6959
+// Function ID: 6960
 // Name: SoundboardSpotIllustration
-// Dependencies: [21, 5374, 6894, 2]
+// Dependencies: [21, 5440, 6960, 2]
 // Exports: SoundboardSpotIllustration
 
-// Module 6893 (SoundboardSpotIllustration)
+// Module 6959 (SoundboardSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6894 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6960 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SoundboardSpotIllustration.native.tsx");

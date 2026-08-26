@@ -1,14 +1,14 @@
-// Module ID: 14126
-// Function ID: 14127
+// Module ID: 14199
+// Function ID: 14200
 // Name: EditUserProfileAvatar
-// Dependencies: [19, 4372, 21, 4380, 5834, 5854, 4043, 8416, 8429, 14127, 4347, 14128, 2009, 14129, 14129, 8414, 8423, 589, 4120, 4381, 8454, 4949, 1236, 14130, 1297, 2]
+// Dependencies: [19, 4436, 21, 4444, 5900, 5920, 4107, 8483, 8496, 14200, 4411, 14201, 2009, 14202, 14202, 8481, 8490, 589, 4184, 4445, 8521, 5015, 1236, 14203, 1297, 2]
 // Exports: default
 
-// Module 14126 (EditUserProfileAvatar)
+// Module 14199 (EditUserProfileAvatar)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

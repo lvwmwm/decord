@@ -1,14 +1,14 @@
-// Module ID: 4442
-// Function ID: 4443
+// Module ID: 4506
+// Function ID: 4507
 // Name: apexExperiment
-// Dependencies: [4431, 1922, 1924, 1472, 4443, 589, 4043, 2]
+// Dependencies: [4495, 1922, 1924, 1472, 4507, 589, 4107, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 4442 (apexExperiment)
+// Module 4506 (apexExperiment)
 import initialize from "initialize" /* 589 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4043 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 4443 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4431 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 4507 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4495 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;

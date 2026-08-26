@@ -1,21 +1,21 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 12773
+// Function ID: 12774
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4396, 1391, 4034, 1981, 5882, 676, 4401, 10433, 21, 589, 12701, 12707, 12472, 8935, 5834, 5854, 8462, 8958, 8959, 12708, 12709, 9382, 9383, 5861, 9497, 503, 8930, 1236, 4393, 4347, 4611, 12714, 2009, 9391, 10435, 7929, 10434, 8171, 500, 12178, 698, 9390, 4615, 4070, 5862, 4224, 4097, 5868, 12474, 8745, 12713, 7896, 8751, 712, 12715, 2]
+// Dependencies: [32, 19, 17, 4460, 1391, 4098, 1981, 5948, 676, 4465, 10501, 21, 589, 12774, 12780, 12543, 9003, 5900, 5920, 8529, 9026, 9027, 12781, 12782, 9450, 9451, 5927, 9565, 503, 8998, 1236, 4457, 4411, 4675, 12787, 2009, 9459, 10503, 7996, 10502, 8238, 500, 12251, 698, 9458, 4679, 4134, 5928, 4288, 4161, 5934, 12545, 8813, 12786, 7963, 8819, 712, 12788, 2]
 // Exports: default
 
-// Module 12700 (UserProfileOverflowMenu)
+// Module 12773 (UserProfileOverflowMenu)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4396 */;
+import closure_6 from "getParticipants" /* 4460 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "markAllUserIdListsStale" /* 4034 */;
+import closure_8 from "markAllUserIdListsStale" /* 4098 */;
 import closure_9 from "handleConnectionOpen" /* 1981 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5882 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5948 */;
 import ME from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4401 */;
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10433 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10501 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -617,7 +617,7 @@ export default function UserProfileOverflowMenu(user) {
           tmp7 = null != selectedVoiceChannel;
         }
         if (tmp7) {
-          displayProfile(channel[32]).hideActionSheet();
+          displayProfile(channel[32]).hideAllActionSheets();
           const obj3 = displayProfile(channel[32]);
           user(channel[45]).openChannelCallModal(selectedVoiceChannel);
           const obj4 = user(channel[45]);

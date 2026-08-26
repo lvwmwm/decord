@@ -1,11 +1,11 @@
-// Module ID: 10383
-// Function ID: 10384
+// Module ID: 10451
+// Function ID: 10452
 // Name: Changeset
-// Dependencies: [8193, 2]
+// Dependencies: [8260, 2]
 
-// Module 10383 (Changeset)
+// Module 10451 (Changeset)
 import set from "set" /* 2 */;
-import Changeset from "Changeset" /* 8193 */;
+import Changeset from "Changeset" /* 8260 */;
 
 const RowType = Changeset.RowType;
 const result = set.fileFinishedImporting("modules/messages/native/VisibleMessagesWindowHandler.tsx");

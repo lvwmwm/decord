@@ -1,17 +1,17 @@
-// Module ID: 8998
-// Function ID: 8999
+// Module ID: 9066
+// Function ID: 9067
 // Name: useVideoControls
-// Dependencies: [32, 19, 4372, 21, 644, 705, 8999, 4380, 589, 8992, 9000, 8993, 9001, 2]
+// Dependencies: [32, 19, 4436, 21, 644, 705, 9067, 4444, 589, 9060, 9068, 9061, 9069, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8998 (useVideoControls)
+// Module 9066 (useVideoControls)
 import batchUpdates from "batchUpdates" /* 705 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
 import { jsx } from "jsxProd" /* 21 */;
 import keys from "keys" /* 644 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 keys = keys.create(() => ({ controls: "ct", paused: true }));

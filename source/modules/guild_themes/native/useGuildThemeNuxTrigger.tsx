@@ -1,14 +1,14 @@
-// Module ID: 15517
-// Function ID: 15518
+// Module ID: 15596
+// Function ID: 15597
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [19, 4090, 589, 15518, 15518, 2009, 4347, 15523, 2]
+// Dependencies: [19, 4154, 589, 15597, 15597, 2009, 4411, 15602, 2]
 // Exports: default
 
-// Module 15517 (useGuildThemeNuxTrigger)
+// Module 15596 (useGuildThemeNuxTrigger)
 import initialize from "initialize" /* 589 */;
-import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 15523 */;
+import useGuildThemeNuxTriggerDefault from "useGuildThemeNuxTrigger" /* 15602 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "setContent" /* 4090 */;
+import closure_4 from "setContent" /* 4154 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_themes/native/useGuildThemeNuxTrigger.tsx");

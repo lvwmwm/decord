@@ -1,9 +1,9 @@
-// Module ID: 5357
-// Function ID: 5358
+// Module ID: 5423
+// Function ID: 5424
 // Name: isConnected
 // Dependencies: [589, 12, 709, 2]
 
-// Module 5357 (isConnected)
+// Module 5423 (isConnected)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

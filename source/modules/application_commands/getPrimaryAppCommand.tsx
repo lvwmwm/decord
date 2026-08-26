@@ -1,18 +1,18 @@
-// Module ID: 10702
-// Function ID: 10703
+// Module ID: 10774
+// Function ID: 10775
 // Name: _getPrimaryAppCommand
-// Dependencies: [5, 19, 1391, 8494, 1955, 8502, 8498, 9691, 2]
+// Dependencies: [5, 19, 1391, 8561, 1955, 8569, 8565, 9759, 2]
 // Exports: default, isPrimaryAppCommandUsableInAppDM, useGetPrimaryAppCommand, useIsPrimaryAppCommandUsableInAppDM, useQueryForPrimaryAppCommand
 
-// Module 10702 (_getPrimaryAppCommand)
+// Module 10774 (_getPrimaryAppCommand)
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import ScoreMethod from "ScoreMethod" /* 8502 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9691 */;
+import ScoreMethod from "ScoreMethod" /* 8569 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9759 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import getIndexKey from "getIndexKey" /* 8494 */;
-import closure_7 from "getIndexKey" /* 8494 */;
+import getIndexKey from "getIndexKey" /* 8561 */;
+import closure_7 from "getIndexKey" /* 8561 */;
 
 require = arg1;
 function _getPrimaryAppCommand() {
@@ -34,7 +34,7 @@ function _getPrimaryAppCommand() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

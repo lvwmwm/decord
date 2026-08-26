@@ -1,15 +1,15 @@
-// Module ID: 6051
-// Function ID: 6052
+// Module ID: 6117
+// Function ID: 6118
 // Name: getPreviousSafeRouteForNsfwReturn
-// Dependencies: [6052, 1391, 1982, 676, 4619, 6053, 2]
+// Dependencies: [6118, 1391, 1982, 676, 4683, 6119, 2]
 // Exports: default
 
-// Module 6051 (getPreviousSafeRouteForNsfwReturn)
+// Module 6117 (getPreviousSafeRouteForNsfwReturn)
 import set from "set" /* 2 */;
 import ME2 from "ME" /* 676 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4619 */;
-import getIdFromHistoryItem from "getIdFromHistoryItem" /* 6052 */;
-import closure_5 from "getIdFromHistoryItem" /* 6052 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4683 */;
+import getIdFromHistoryItem from "getIdFromHistoryItem" /* 6118 */;
+import closure_5 from "getIdFromHistoryItem" /* 6118 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import closure_7 from "comparator" /* 1982 */;
 
@@ -37,7 +37,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
           let tmp12 = dependencyMap;
           let obj4 = shouldShowAgeGateForVoiceChannel;
           if (!obj4.isChannelContentGated(channel)) {
-            let tmp11Result = tmp11(6053);
+            let tmp11Result = tmp11(6119);
             if (!tmp11Result.isChannelSpoilerGated(channel)) {
               let guild_id = channel.guild_id;
               if (guild_id == null) {
@@ -60,7 +60,7 @@ export default function getPreviousSafeRouteForNsfwReturn() {
             let tmp14 = dependencyMap;
             let obj7 = shouldShowAgeGateForVoiceChannel;
             if (!obj7.isChannelContentGated(defaultChannel)) {
-              let tmp13Result = tmp13(6053);
+              let tmp13Result = tmp13(6119);
               if (!tmp13Result.isChannelSpoilerGated(defaultChannel)) {
                 break;
               }

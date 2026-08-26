@@ -1,24 +1,24 @@
-// Module ID: 16255
-// Function ID: 16256
+// Module ID: 16336
+// Function ID: 16337
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 1390, 4396, 8758, 1218, 4431, 676, 4401, 21, 4380, 1297, 712, 10747, 589, 10726, 10740, 4615, 10746, 4952, 10749, 9042, 10764, 10768, 10778, 10795, 10802, 10736, 10765, 10745, 9918, 4120, 4381, 5373, 16256, 1629, 2]
+// Dependencies: [32, 19, 17, 1390, 4460, 8826, 1218, 4495, 676, 4465, 21, 4444, 1297, 712, 10819, 589, 10798, 10812, 4679, 10818, 5018, 10821, 9110, 10836, 10840, 10850, 10867, 10874, 10808, 10837, 10817, 9985, 4184, 4445, 5439, 16337, 1629, 2]
 // Exports: default
 
-// Module 16255 (PictureInPictureGlobal)
+// Module 16336 (PictureInPictureGlobal)
 import ThemesDefault from "Themes" /* 712 */;
-import PictureInPicturePositionsDefault from "PictureInPicturePositions" /* 10745 */;
+import PictureInPicturePositionsDefault from "PictureInPicturePositions" /* 10817 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "participantFromServer" /* 1390 */;
-import closure_9 from "getParticipants" /* 4396 */;
-import { useBestActiveChatInputContainerHeight as closure_10 } from "updateChatInputContainerHeight" /* 8758 */;
+import closure_9 from "getParticipants" /* 4460 */;
+import { useBestActiveChatInputContainerHeight as closure_10 } from "updateChatInputContainerHeight" /* 8826 */;
 import closure_11 from "fetchFingerprint" /* 1218 */;
-import closure_12 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_12 from "_detectH265HardwareDecode" /* 4495 */;
 import { PictureInPicturePositions } from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4401 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import Button from "Button" /* 1297 */;
 
 const require = arg1;

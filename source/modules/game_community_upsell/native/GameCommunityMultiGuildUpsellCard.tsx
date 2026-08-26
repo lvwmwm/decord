@@ -1,21 +1,21 @@
-// Module ID: 15628
-// Function ID: 15629
+// Module ID: 15707
+// Function ID: 15708
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 4372, 4026, 1910, 676, 21, 4380, 712, 589, 1435, 1469, 1494, 698, 5338, 6066, 6065, 1236, 8447, 9411, 1297, 4376, 4815, 8745, 7896, 8751, 2]
+// Dependencies: [5, 32, 19, 17, 4436, 4090, 1910, 676, 21, 4444, 712, 589, 1435, 1469, 1494, 698, 5404, 6132, 6131, 1236, 8514, 9479, 1297, 4440, 4879, 8813, 7963, 8819, 2]
 // Exports: default
 
-// Module 15628 (GameCommunityMultiGuildUpsellCard)
+// Module 15707 (GameCommunityMultiGuildUpsellCard)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
-import closure_9 from "initialize" /* 4026 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_9 from "initialize" /* 4090 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ Image: closure_6, View: error } = get_ActivityIndicator);
@@ -138,7 +138,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -238,7 +238,7 @@ export default function GameCommunityMultiGuildUpsellCard(guild) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

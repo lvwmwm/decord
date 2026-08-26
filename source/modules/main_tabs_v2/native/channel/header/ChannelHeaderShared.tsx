@@ -1,28 +1,28 @@
-// Module ID: 12755
-// Function ID: 12756
+// Module ID: 12828
+// Function ID: 12829
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 4034, 1922, 8540, 21, 4380, 712, 1367, 4949, 500, 9617, 4376, 1297, 12756, 9813, 4101, 4866, 12757, 1236, 4574, 2]
+// Dependencies: [32, 19, 17, 4098, 1922, 8608, 21, 4444, 712, 1367, 5015, 500, 9685, 4440, 1297, 12829, 9880, 4165, 4932, 12830, 1236, 4638, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12755 (TitleWrapper)
+// Module 12828 (TitleWrapper)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import map from "map" /* 4101 */;
-import Text from "Text" /* 4376 */;
-import computeChannelName from "computeChannelName" /* 4574 */;
-import getChannelIcon from "getChannelIcon" /* 4866 */;
-import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 9813 */;
-import _modDef12757 from "module_12757" /* 12757 */;
+import map from "map" /* 4165 */;
+import Text from "Text" /* 4440 */;
+import computeChannelName from "computeChannelName" /* 4638 */;
+import getChannelIcon from "getChannelIcon" /* 4932 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 9880 */;
+import _modDef12830 from "module_12830" /* 12830 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "markAllUserIdListsStale" /* 4034 */;
+import closure_6 from "markAllUserIdListsStale" /* 4098 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { getMinHeaderHeight } from "MIN_HEADER_HEIGHT" /* 8540 */;
+import { getMinHeaderHeight } from "MIN_HEADER_HEIGHT" /* 8608 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function TitleWrapper(headerAccessibilityLabel) {
@@ -53,7 +53,7 @@ function TitleWrapper(headerAccessibilityLabel) {
     obj[5] = tmp6;
     obj[6] = tmp2.wrapper;
     obj[7] = children;
-    tmp7Result = callback2(titleContentHeight(4949).PressableOpacity, obj);
+    tmp7Result = callback2(titleContentHeight(5015).PressableOpacity, obj);
     const tmp7 = callback2;
   }
   return tmp7Result;
@@ -88,9 +88,9 @@ function ChannelTitle(guildId) {
     obj[3] = str2;
     ({ channelName: obj4[6], channelNameContainer: obj4[7] } = tmp4);
     obj[8] = accessibleTitle;
-    let tmp8Result = tmp11(tmp(9617), obj);
+    let tmp8Result = tmp11(tmp(9685), obj);
     let tmp8 = tmp11;
-    const tmpResult = tmp(9617);
+    const tmpResult = tmp(9685);
   } else {
     tmp8 = closure_9;
     let str = "heading-lg/bold";
@@ -108,7 +108,7 @@ function ChannelTitle(guildId) {
   tmp8Result = !disableArrow;
   if (!disableArrow) {
     const obj2 = { source: null, size: null, style: null };
-    obj2[0] = tmp(12756);
+    obj2[0] = tmp(12829);
     obj2[1] = Button.Icon.Sizes.REFRESH_SMALL_16;
     obj2[2] = tmp4.arrowIcon;
     tmp8Result = tmp8(Button.Icon, obj2);
@@ -138,7 +138,7 @@ function GroupDMIcon(channel) {
 function UserAvatar(user) {
   user = user.user;
   ({ status, isMobileOnline, isVROnline } = user);
-  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: false, isMobileOnline: "done", isVROnline: "flowing", style: "hourglass", autoStatusCutout: "hours" };
+  const obj = { user, avatarDecoration: user.avatarDecoration, guildId: "Boolean", size: true, status: "done", isMobileOnline: true, isVROnline: null, style: null, autoStatusCutout: 189.518 };
   obj[3] = Button.AvatarSizes.REFRESH_MEDIUM_32;
   let tmp3 = null;
   if (!user.isSystemUser()) {
@@ -205,7 +205,7 @@ function MemberCountText(arg0) {
     tmp9 = leadingAccessoryWidth;
   }
   obj[3] = tmp9;
-  const children = [closure_9(_modDef12757, obj), ];
+  const children = [closure_9(_modDef12830, obj), ];
   let tmp7Result = null;
   if (withSeparator) {
     let str3 = "text-xs/medium";
@@ -269,7 +269,7 @@ let closure_12 = createCacheKey.createStyles((arg0) => {
   obj[7] = { width: 32, height: 32, justifyContent: "center", alignItems: "center" };
   obj[8] = { tintColor: ThemesDefault.colors.TEXT_STRONG };
   obj[9] = { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 };
-  obj[10] = { lineHeight: 16, flexShrink: 1 };
+  obj[10] = { lineHeight: 20, flexShrink: 1 };
   return obj;
 });
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/channel/header/ChannelHeaderShared.tsx");

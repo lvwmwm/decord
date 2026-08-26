@@ -1,32 +1,32 @@
-// Module ID: 15629
-// Function ID: 15630
+// Module ID: 15708
+// Function ID: 15709
 // Name: handleJoinGuild
-// Dependencies: [32, 19, 17, 1218, 1910, 4202, 676, 21, 4380, 712, 4376, 12264, 15630, 1236, 4813, 4815, 1501, 647, 9497, 503, 1913, 4236, 4952, 14550, 2]
+// Dependencies: [32, 19, 17, 1218, 1910, 4266, 676, 21, 4444, 712, 4440, 12336, 15709, 1236, 4877, 4879, 1501, 647, 9565, 503, 1913, 4300, 5018, 14623, 2]
 
-// Module 15629 (handleJoinGuild)
+// Module 15708 (handleJoinGuild)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
-import Stack from "Stack" /* 4813 */;
-import Button from "Button" /* 4815 */;
-import _modDef12264 from "module_12264" /* 12264 */;
-import registerAssetDefault from "registerAsset" /* 15630 */;
+import Text from "Text" /* 4440 */;
+import Stack from "Stack" /* 4877 */;
+import Button from "Button" /* 4879 */;
+import _modDef12336 from "module_12336" /* 12336 */;
+import registerAssetDefault from "registerAsset" /* 15709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "handleConnectionOpen" /* 4202 */;
+import closure_10 from "handleConnectionOpen" /* 4266 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function handleJoinGuild() {
-  const result = _modDef12264.openGuildJoinServerScreen();
+  const result = _modDef12336.openGuildJoinServerScreen();
 }
 function handleCreateGuild() {
-  _modDef12264.openCreateGuildModal();
+  _modDef12336.openCreateGuildModal();
 }
 class GuildsEmptyContent {
   constructor(arg0) {
@@ -123,7 +123,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
   }
   selectedGuildId = tmp6;
   obj = { type: navigation(503).ImpressionTypes.VIEW, name: navigation(503).ImpressionNames.GUILDS_EMPTY_NUX };
-  selectedGuildId(9497)(obj);
+  selectedGuildId(9565)(obj);
   const items1 = [tmp6, navigation];
   const effect = importAllResult.useEffect(() => {
     if (null != selectedGuildId) {
@@ -160,9 +160,9 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
       obj2 = closure_0;
     }
   }, items1);
-  let tmp2Result = tmp2(4952);
+  let tmp2Result = tmp2(5018);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  tmp2Result = tmp2(14550);
+  tmp2Result = tmp2(14623);
   let tmp14Result = null;
   if (stateFromStores) {
     obj = { style: null, children: null };
@@ -175,7 +175,7 @@ const memoResult = importAllResult.memo(function GuildsEmpty(arg0) {
     let obj3 = { color: "mobile-text-heading-primary", variant: "heading-lg/bold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: null };
     const intl = tmp2(1236).intl;
     obj3[4] = intl.string(tmp2(1236).t["7hB4kg"]);
-    obj2[1] = callback(tmp2(4376).Text, obj3);
+    obj2[1] = callback(tmp2(4440).Text, obj3);
     obj1[1] = callback(closure_6, obj2);
     const items3 = [callback(closure_6, obj1), ];
     let tmp18;

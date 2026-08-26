@@ -1,15 +1,15 @@
-// Module ID: 7447
-// Function ID: 7448
-// Dependencies: [32, 5, 1391, 4025, 676, 4373, 7448, 7287, 694, 7288, 1403, 7063, 7449, 4644, 2]
+// Module ID: 7513
+// Function ID: 7514
+// Dependencies: [32, 5, 1391, 4089, 676, 4437, 7514, 7353, 694, 7354, 1403, 7129, 7515, 4708, 2]
 
-// Module 7447
-import allSettledDefault from "allSettled" /* 4644 */;
+// Module 7513
+import allSettledDefault from "allSettled" /* 4708 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
 import { MessageFlags } from "ME" /* 676 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4373 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4437 */;
 
 const require = arg1;
 let obj = {
@@ -28,7 +28,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -55,7 +55,7 @@ let obj = {
                 prop = tmp74.isICYMIGameContentForwarding;
               }
               if (prop) {
-                let guild_id = closure_1_0(7448).GAME_CONTENT_GUILD_ID;
+                let guild_id = closure_1_0(7514).GAME_CONTENT_GUILD_ID;
               } else if (channel1 != null) {
                 guild_id = channel1.guild_id;
               }
@@ -71,7 +71,7 @@ let obj = {
                 const error1 = new Error("Unable to find destination channel for message");
                 throw error1;
               } else {
-                const parsed = closure_1_1(7287).parse(channel, "");
+                const parsed = closure_1_1(7353).parse(channel, "");
                 obj1 = { guild_id: null, channel_id: null, message_id: null, type: null, forward_only: null };
                 obj1[0] = guild_id;
                 ({ channel_id: obj16[1], id: obj16[2] } = tmp72);
@@ -99,7 +99,7 @@ let obj = {
                 dependencyMap = withMessage;
                 let num9 = 0;
                 if (null != withMessage) {
-                  const tmp39 = v0(closure_1_1(7288)(withMessage), 2);
+                  const tmp39 = v0(closure_1_1(7354)(withMessage), 2);
                   num9 = 0;
                   if (tmp39[0]) {
                     dependencyMap = tmp39[1];
@@ -109,7 +109,7 @@ let obj = {
                     const obj9 = closure_1_0(1403);
                   }
                 }
-                const obj10 = closure_1_1(7063);
+                const obj10 = closure_1_1(7129);
                 let obj3 = { messageReference: null, location: null, eagerDispatch: false, flags: null };
                 obj3[0] = obj1;
                 obj3[1] = closure_1_8.FORWARDING;
@@ -138,13 +138,13 @@ let obj = {
                   result = "" === dependencyMap;
                 }
                 if (!result) {
-                  obj1 = closure_1_0(7449);
+                  obj1 = closure_1_0(7515);
                   result = obj1.isRatelimitedInChannel(channel, closure_1_6);
                 }
                 if (!result) {
-                  obj2 = closure_1_1(7063);
+                  obj2 = closure_1_1(7129);
                   const id = channel.id;
-                  obj3 = closure_1_1(7287);
+                  obj3 = closure_1_1(7353);
                   const obj6 = { location: null, flags: null };
                   obj6[0] = closure_1_8.FORWARDING;
                   obj6[1] = c1;
@@ -165,7 +165,7 @@ let obj = {
               return obj;
             }
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp60) {
           v0 = tmp;

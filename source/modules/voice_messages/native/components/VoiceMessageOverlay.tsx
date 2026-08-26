@@ -1,25 +1,25 @@
-// Module ID: 12203
-// Function ID: 12204
+// Module ID: 12276
+// Function ID: 12277
 // Name: LockPill
-// Dependencies: [32, 19, 17, 4372, 1391, 11528, 11529, 676, 1301, 11530, 21, 4120, 1297, 4949, 4376, 12, 7985, 4380, 712, 5265, 589, 4101, 1367, 5435, 1236, 4381, 4901, 10054, 12204, 5475, 1629, 11531, 4802, 4811, 1231, 11434, 1494, 10810, 11829, 12205, 7896, 4339, 11824, 11807, 4325, 10959, 4326, 10960, 2]
+// Dependencies: [32, 19, 17, 4436, 1391, 11600, 11601, 676, 1301, 11602, 21, 4184, 1297, 5015, 4440, 12, 8052, 4444, 712, 5331, 589, 4165, 1367, 5501, 1236, 4445, 4967, 10121, 10742, 5541, 1629, 11603, 4866, 4875, 1231, 11506, 1494, 10882, 11902, 12277, 7963, 4403, 11897, 11880, 4389, 11031, 4390, 11032, 2]
 
-// Module 12203 (LockPill)
+// Module 12276 (LockPill)
 import ThemesDefault from "Themes" /* 712 */;
-import result2 from "result" /* 5265 */;
-import inlineStyles from "inlineStyles" /* 7985 */;
+import result2 from "result" /* 5331 */;
+import inlineStyles from "inlineStyles" /* 8052 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11528 */;
-import { VoiceMessageAnimationState } from "VoiceMessageAnimationState" /* 11529 */;
+import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11600 */;
+import { VoiceMessageAnimationState } from "VoiceMessageAnimationState" /* 11601 */;
 import { ComponentActionsKeyed } from "ME" /* 676 */;
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1301 */;
-import { CHAT_INPUT_HEIGHT } from "TextAreaCta" /* 11530 */;
+import { CHAT_INPUT_HEIGHT } from "TextAreaCta" /* 11602 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4120" /* 4120 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import importDefaultResult from "module_4184" /* 4184 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importDefaultResult3 from "apply" /* 12 */;
 
 require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 5823
-// Function ID: 5824
+// Module ID: 5889
+// Function ID: 5890
 // Name: add
 // Dependencies: [19, 2]
 
-// Module 5823 (add)
+// Module 5889 (add)
 import importAllResult from "noop" /* 19 */;
 
 class LayerContextManager {

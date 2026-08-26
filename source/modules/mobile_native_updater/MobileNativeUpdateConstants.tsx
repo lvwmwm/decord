@@ -1,11 +1,11 @@
-// Module ID: 4361
-// Function ID: 4362
+// Module ID: 4425
+// Function ID: 4426
 // Name: UPDATE_CHECK_INTERVAL
-// Dependencies: [3979, 500, 1487, 1626, 2]
+// Dependencies: [4043, 500, 1487, 1626, 2]
 
-// Module 4361 (UPDATE_CHECK_INTERVAL)
+// Module 4425 (UPDATE_CHECK_INTERVAL)
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import importDefaultResult from "hooks" /* 3979 */;
+import importDefaultResult from "hooks" /* 4043 */;
 import getConstants from "getConstants" /* 1626 */;
 import durationResult from "module_6" /* 6 */;
 

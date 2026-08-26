@@ -1,14 +1,14 @@
-// Module ID: 6883
-// Function ID: 6884
+// Module ID: 6949
+// Function ID: 6950
 // Name: SnailIllocon
-// Dependencies: [21, 5374, 6884, 2]
+// Dependencies: [21, 5440, 6950, 2]
 // Exports: SnailIllocon
 
-// Module 6883 (SnailIllocon)
+// Module 6949 (SnailIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6884 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6950 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SnailIllocon.native.tsx");

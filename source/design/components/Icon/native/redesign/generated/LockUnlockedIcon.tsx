@@ -1,14 +1,14 @@
-// Module ID: 10053
-// Function ID: 10054
+// Module ID: 10120
+// Function ID: 10121
 // Name: LockUnlockedIcon
-// Dependencies: [19, 21, 712, 4100, 10054, 2]
+// Dependencies: [19, 21, 712, 4164, 10121, 2]
 // Exports: LockUnlockedIcon
 
-// Module 10053 (LockUnlockedIcon)
+// Module 10120 (LockUnlockedIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 10054 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 10121 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

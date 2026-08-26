@@ -1,17 +1,17 @@
-// Module ID: 12893
-// Function ID: 12894
+// Module ID: 12967
+// Function ID: 12968
 // Name: PremiumReferralTrialPill
-// Dependencies: [17, 21, 4380, 712, 4376, 1236, 2]
+// Dependencies: [17, 21, 4444, 712, 4440, 1236, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 12893 (PremiumReferralTrialPill)
+// Module 12967 (PremiumReferralTrialPill)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import Text from "Text" /* 4440 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const View = get_ActivityIndicator.View;
 const jsx = jsxProd.jsx;

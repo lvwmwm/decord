@@ -1,12 +1,12 @@
-// Module ID: 9692
-// Function ID: 9693
-// Dependencies: [19, 676, 21, 4380, 712, 4376, 4242, 9693, 698, 4588, 4347, 9701, 7127, 7129, 2]
+// Module ID: 9760
+// Function ID: 9761
+// Dependencies: [19, 676, 21, 4444, 712, 4440, 4306, 9761, 698, 4652, 4411, 9769, 7193, 7195, 2]
 
-// Module 9692
+// Module 9760
 import ThemesDefault from "Themes" /* 712 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsxs } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo(function UserProfileAboutMeCardCommand(c
         const obj3 = closure_2_0(channel[9]);
         const tmp5 = closure_1_1;
         const tmp6 = closure_1_2;
-        command(channel[10]).hideActionSheet();
+        command(channel[10]).hideAllActionSheets();
         command(channel[11])();
         if (bestActiveInput != null) {
           obj5.openSystemKeyboard();

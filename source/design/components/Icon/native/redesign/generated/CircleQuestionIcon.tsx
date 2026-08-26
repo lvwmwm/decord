@@ -1,15 +1,15 @@
-// Module ID: 10309
-// Function ID: 10310
+// Module ID: 10377
+// Function ID: 10378
 // Name: CircleQuestionIcon
-// Dependencies: [19, 17, 21, 712, 4100, 10310, 10311, 2]
+// Dependencies: [19, 17, 21, 712, 4164, 10378, 10379, 2]
 // Exports: CircleQuestionIcon
 
-// Module 10309 (CircleQuestionIcon)
+// Module 10377 (CircleQuestionIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 10310 */;
-import registerAsset2 from "registerAsset" /* 10311 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 10378 */;
+import registerAsset2 from "registerAsset" /* 10379 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

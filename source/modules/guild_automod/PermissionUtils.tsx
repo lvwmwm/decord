@@ -1,12 +1,12 @@
-// Module ID: 16179
-// Function ID: 16180
+// Module ID: 16260
+// Function ID: 16261
 // Name: canCurrentUserManageMessageFilters
-// Dependencies: [1910, 4025, 676, 589, 2]
+// Dependencies: [1910, 4089, 676, 589, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUserProfileRuleEnabled
 
-// Module 16179 (canCurrentUserManageMessageFilters)
+// Module 16260 (canCurrentUserManageMessageFilters)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

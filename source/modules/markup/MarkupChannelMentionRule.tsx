@@ -1,21 +1,21 @@
-// Module ID: 4845
-// Function ID: 4846
+// Module ID: 4910
+// Function ID: 4911
 // Name: getChannel
-// Dependencies: [1983, 1391, 1910, 4025, 4034, 1922, 676, 1903, 1435, 1236, 4846, 4566, 4574, 4847, 4575, 4844, 4096, 2]
+// Dependencies: [1983, 1391, 1910, 4089, 4098, 1922, 676, 1903, 1435, 1236, 4911, 4630, 4638, 4912, 4639, 4909, 4160, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 4845 (getChannel)
+// Module 4910 (getChannel)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
 import isNullOrEmpty from "isNullOrEmpty" /* 1903 */;
-import tDefault from "t" /* 4096 */;
-import ME2 from "ME" /* 4575 */;
-import textRegexpDefault from "textRegexp" /* 4844 */;
+import tDefault from "t" /* 4160 */;
+import ME2 from "ME" /* 4639 */;
+import textRegexpDefault from "textRegexp" /* 4909 */;
 import closure_3 from "isSubscriptionGated" /* 1983 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_7 from "markAllUserIdListsStale" /* 4034 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_7 from "markAllUserIdListsStale" /* 4098 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
@@ -23,9 +23,9 @@ require = arg1;
 function getChannel(id, arr) {
   const _require = id;
   const channel = store.getChannel(id);
-  const isSubscriptionGated = _require(4846).getChannelRoleSubscriptionStatus(id, store, closure_3, closure_6).isSubscriptionGated;
-  const obj2 = _require(4846);
-  let str = _require(4566).getMentionIconType(channel);
+  const isSubscriptionGated = _require(4911).getChannelRoleSubscriptionStatus(id, store, closure_3, closure_6).isSubscriptionGated;
+  const obj2 = _require(4911);
+  let str = _require(4630).getMentionIconType(channel);
   if (str == null) {
     str = "text";
   }
@@ -51,18 +51,18 @@ function getChannel(id, arr) {
   if (null != channel) {
     obj = { type: null, id: null, guildId: null, name: null, isDm: null, isForumPost: null, isMentionable: null, canViewChannel: null, roleSubscriptionGated: null, iconType: null, parentId: null };
     ({ type: obj4[0], id: obj4[1], guild_id: obj4[2] } = channel);
-    let tmpResult = tmp(4574);
+    let tmpResult = tmp(4638);
     obj[3] = tmpResult.computeChannelName(channel, closure_8, closure_7);
     obj[4] = channel.isPrivate();
     obj[5] = channel.isForumPost();
-    tmpResult = tmp(4847);
+    tmpResult = tmp(4912);
     obj[6] = tmpResult.isChannelTypeMentionable(channel.type);
-    obj[7] = tmp(4575).canViewChannel(channel);
+    obj[7] = tmp(4639).canViewChannel(channel);
     obj[8] = isSubscriptionGated;
     obj[9] = str;
     obj[10] = channel.parent_id;
     tmp4 = obj;
-    const tmpResult1 = tmp(4575);
+    const tmpResult1 = tmp(4639);
   }
   return tmp4;
 }
@@ -174,9 +174,9 @@ function parseChannel(canViewChannel) {
             if (canViewChannel.isForumPost) {
               const channel = store.getChannel(canViewChannel.parentId);
               if (null != channel) {
-                let tmp35Result = tmp35(4574);
+                let tmp35Result = tmp35(4638);
                 const channelName = tmp35Result.computeChannelName(channel, closure_8, closure_7);
-                tmp35Result = tmp35(4566);
+                tmp35Result = tmp35(4630);
                 let str3 = tmp35Result.getMentionIconType(channel);
                 if (str3 == null) {
                   str3 = "forum";

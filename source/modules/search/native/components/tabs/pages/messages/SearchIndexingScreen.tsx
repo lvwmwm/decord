@@ -1,11 +1,11 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16129
+// Function ID: 16130
 // Name: SearchIndexingScreen
-// Dependencies: [19, 21, 11927, 11907, 15991, 2]
+// Dependencies: [19, 21, 12000, 11980, 16072, 2]
 // Exports: default
 
-// Module 16048 (SearchIndexingScreen)
-import _modDef15991 from "module_15991" /* 15991 */;
+// Module 16129 (SearchIndexingScreen)
+import _modDef16072 from "module_16072" /* 16072 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -20,6 +20,6 @@ export default function SearchIndexingScreen(searchContext) {
     obj = { searchContext };
     obj.trackSearchIndexing(obj);
   }, items);
-  const text = searchContext(11907).getIndexingErrorText(searchContext);
-  return jsx(_modDef15991, { text });
+  const text = searchContext(11980).getIndexingErrorText(searchContext);
+  return jsx(_modDef16072, { text });
 };

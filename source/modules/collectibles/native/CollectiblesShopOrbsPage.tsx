@@ -1,16 +1,16 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15156
+// Function ID: 15157
 // Name: onRenderFirstOrbsItem
-// Dependencies: [19, 17, 7148, 678, 21, 4380, 5834, 9495, 15049, 4347, 9580, 15053, 1297, 8974, 1236, 15076, 2]
+// Dependencies: [19, 17, 7214, 678, 21, 4444, 5900, 9563, 15128, 4411, 9648, 15132, 1297, 9042, 1236, 15155, 2]
 // Exports: default
 
-// Module 15077 (onRenderFirstOrbsItem)
+// Module 15156 (onRenderFirstOrbsItem)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7148 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7214 */;
 import { CollectiblesMobileShopScreen as closure_6 } from "items" /* 678 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 let closure_8 = createCacheKey.createStyles({ container: { display: "flex", flex: 1 } });

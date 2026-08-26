@@ -1,14 +1,14 @@
-// Module ID: 6401
-// Function ID: 6402
+// Module ID: 6467
+// Function ID: 6468
 // Name: ExperimentalDuckTypingBubbleAbstractUI
-// Dependencies: [21, 5374, 6402, 2]
+// Dependencies: [21, 5440, 6468, 2]
 // Exports: ExperimentalDuckTypingBubbleAbstractUI
 
-// Module 6401 (ExperimentalDuckTypingBubbleAbstractUI)
+// Module 6467 (ExperimentalDuckTypingBubbleAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6402 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6468 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalDuckTypingBubbleAbstractUI.native.tsx");

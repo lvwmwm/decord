@@ -1,15 +1,15 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14757
+// Function ID: 14758
 // Name: EmojiIcon
-// Dependencies: [19, 21, 14685, 5374, 8835, 5466, 1435, 2]
+// Dependencies: [19, 21, 14758, 5440, 8903, 5532, 1435, 2]
 // Exports: default
 
-// Module 14684 (EmojiIcon)
+// Module 14757 (EmojiIcon)
 import noopAll from "noop" /* 19 */;
-import preloadDefault from "preload" /* 5374 */;
-import EmojiDefault from "Emoji" /* 5466 */;
-import registerAssetDefault from "registerAsset" /* 8835 */;
-import useEmojiByIdOrName from "useEmojiByIdOrName" /* 14685 */;
+import preloadDefault from "preload" /* 5440 */;
+import EmojiDefault from "Emoji" /* 5532 */;
+import registerAssetDefault from "registerAsset" /* 8903 */;
+import useEmojiByIdOrName from "useEmojiByIdOrName" /* 14758 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

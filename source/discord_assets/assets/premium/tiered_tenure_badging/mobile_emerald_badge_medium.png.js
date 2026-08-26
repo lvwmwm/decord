@@ -1,9 +1,9 @@
-// Module ID: 9647
-// Function ID: 9648
+// Module ID: 9715
+// Function ID: 9716
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9647 (metadata)
+// Module 9715 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_emerald_badge_medium.png.js");

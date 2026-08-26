@@ -1,26 +1,26 @@
-// Module ID: 9859
-// Function ID: 9860
+// Module ID: 9926
+// Function ID: 9927
 // Name: getNextPositionFromChannels
-// Dependencies: [5, 1383, 1395, 1391, 4025, 1981, 4202, 1394, 1429, 676, 505, 1306, 1337, 12, 9860, 9863, 4744, 1236, 1374, 11, 9866, 9867, 1913, 1222, 9868, 9869, 9871, 2]
+// Dependencies: [5, 1383, 1395, 1391, 4089, 1981, 4266, 1394, 1429, 676, 505, 1306, 1337, 12, 9927, 9930, 4808, 1236, 1374, 11, 9933, 9934, 1913, 1222, 9935, 9936, 9938, 2]
 // Exports: addFavoriteCategory, addFavoriteChannels, addFavoriteChannelsToCategory, autoAddJoinedThreadToFavorites, removeFavoriteCategory, resetFavoritesGuild, setFavoriteCategoriesCollapsed, setFavoriteChannelNickname, setFavoritesAutoAddJoinedThreads, setFavoritesGuildVisibility, setFavoritesGuildVisibilityFromSettings, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 9859 (getNextPositionFromChannels)
+// Module 9926 (getNextPositionFromChannels)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import create from "create" /* 1306 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
-import setDefault from "set" /* 4744 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 9860 */;
-import handleDCShownToUser from "handleDCShownToUser" /* 9868 */;
-import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 9869 */;
+import setDefault from "set" /* 4808 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 9927 */;
+import handleDCShownToUser from "handleDCShownToUser" /* 9935 */;
+import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 9936 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { resetFatigueCooldown } from "withContent" /* 1383 */;
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_8 from "handleConnectionOpen" /* 1981 */;
-import closure_9 from "handleConnectionOpen" /* 4202 */;
+import closure_9 from "handleConnectionOpen" /* 4266 */;
 import closure_10 from "initializeFromUserSettings" /* 1394 */;
 import ME from "ME" /* 676 */;
 import { Permissions } from "sum" /* 505 */;
@@ -156,7 +156,7 @@ function getReachedLimit(arg0, arg1) {
 function showLimitReachedAlert(limit) {
   limit = limit.limit;
   if (limit.canUpsell) {
-    tmp(9863)(limit);
+    tmp(9930)(limit);
   } else {
     let obj = { title: null, body: null };
     const intl = getSystemLocale.intl;
@@ -165,8 +165,8 @@ function showLimitReachedAlert(limit) {
     obj = { count: null };
     obj[0] = limit;
     obj[1] = intl2.formatToPlainString(getSystemLocale.t.JaIyFi, obj);
-    tmp(4744).show(obj);
-    const tmpResult = tmp(4744);
+    tmp(4808).show(obj);
+    const tmpResult = tmp(4808);
   }
 }
 function onSaveFailed(status) {
@@ -281,7 +281,7 @@ function _addFavoriteChannelsToParent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -429,7 +429,7 @@ function _addFavoriteChannelsToParent() {
                         flag = true;
                         let tmp47 = callback;
                         let tmp48 = dependencyMap;
-                        let obj3 = callback(9866);
+                        let obj3 = callback(9933);
                         let tmp50 = channel;
                         let type;
                         let tmp49 = dependencyMap;
@@ -457,7 +457,7 @@ function _addFavoriteChannelsToParent() {
                         favoriteChannels.guildVisible = BoolValue.create({ value: true });
                         let tmp63 = callback;
                         let tmp64 = dependencyMap;
-                        let obj4 = callback(9866);
+                        let obj4 = callback(9933);
                         let str = "auto";
                         let result1 = obj4.trackFavoritesGuildVisibilitySettingToggled("auto", true);
                       }
@@ -525,7 +525,7 @@ function _addFavoriteChannels() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -581,7 +581,7 @@ function _addFavoriteChannels() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c5 = tmp;
@@ -689,7 +689,7 @@ function _addFavoriteCategory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -826,7 +826,7 @@ function _addFavoriteChannelsToCategory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -879,7 +879,7 @@ function _addFavoriteChannelsToCategory() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c4 = tmp;
@@ -917,7 +917,7 @@ function _autoAddJoinedThreadToFavorites() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -971,7 +971,7 @@ function _autoAddJoinedThreadToFavorites() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp15) {
           c1 = tmp;
           throw tmp15;

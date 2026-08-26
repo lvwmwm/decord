@@ -1,22 +1,22 @@
-// Module ID: 11149
-// Function ID: 11150
+// Module ID: 11221
+// Function ID: 11222
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 1391, 4025, 4034, 1922, 9777, 676, 21, 4380, 1367, 647, 9144, 8678, 4234, 11150, 11151, 1236, 9873, 9872, 4201, 1377, 11153, 11158, 6120, 11159, 1892, 9212, 8121, 5480, 2]
+// Dependencies: [32, 19, 17, 1391, 4089, 4098, 1922, 9844, 676, 21, 4444, 1367, 647, 9212, 8746, 4298, 11222, 11223, 1236, 9940, 9939, 4265, 1377, 11225, 11230, 6186, 11231, 1892, 9280, 8188, 5546, 2]
 // Exports: default
 
-// Module 11149 (useMemberListAction)
+// Module 11221 (useMemberListAction)
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 8678 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 8746 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_8 from "markAllUserIdListsStale" /* 4034 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_8 from "markAllUserIdListsStale" /* 4098 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ Permissions: c10, AnalyticsSections: unpackModuleId, InstantInviteSources: closure_12 } = ME);
@@ -66,8 +66,8 @@ export default function useMemberListAction(channel) {
   });
   let canResult = flag3.can(first.MANAGE_ROLES, channel);
   if (canResult) {
-    canResult = channel(9144).isPrivateGuildChannel(channel);
-    const tmp5Result = channel(9144);
+    canResult = channel(9212).isPrivateGuildChannel(channel);
+    const tmp5Result = channel(9212);
   }
   React = canResult;
   let tmp9 = null != channel && !flag;
@@ -117,8 +117,8 @@ export default function useMemberListAction(channel) {
   const items1 = [id];
   callback1 = React.useCallback(() => {
     if (null != id) {
-      channel(4234).navigateToNewGroupDM(tmp, lib2.MEMBER_LIST);
-      const obj = channel(4234);
+      channel(4298).navigateToNewGroupDM(tmp, lib2.MEMBER_LIST);
+      const obj = channel(4298);
     }
   }, items1);
   const items2 = [canResult, id, callback1, flag2, flag3, tmp4, first, callback, stateFromStores, tmp15, tmp9, tmp];
@@ -127,8 +127,8 @@ export default function useMemberListAction(channel) {
       if (c5) {
         if (flag2) {
           let obj = { iconSource: null, IconComponent: null, label: null, sublabel: null, handlePress: null };
-          obj[0] = lib(11150);
-          obj[1] = channel(11151).ChatPlusIcon;
+          obj[0] = lib(11222);
+          obj[1] = channel(11223).ChatPlusIcon;
           const intl4 = channel(1236).intl;
           obj[2] = intl4.string(channel(1236).t["3hF1W4"]);
           let formatToPlainStringResult;
@@ -144,8 +144,8 @@ export default function useMemberListAction(channel) {
         } else {
           obj = { iconSource: null, IconComponent: null, label: null, handlePress: null };
           if (flag3) {
-            obj[0] = lib(9873);
-            obj[1] = channel(9872).GroupPlusIcon;
+            obj[0] = lib(9940);
+            obj[1] = channel(9939).GroupPlusIcon;
             const intl3 = channel(1236).intl;
             obj[2] = intl3.string(channel(1236).t["LR+Ptf"]);
             obj[3] = function handlePress() {
@@ -163,8 +163,8 @@ export default function useMemberListAction(channel) {
             };
             tmp12 = obj;
           } else if (c4) {
-            obj[0] = tmp4(11158);
-            obj[1] = channel(6120).SettingsIcon;
+            obj[0] = tmp4(11230);
+            obj[1] = channel(6186).SettingsIcon;
             const intl2 = channel(1236).intl;
             obj[2] = intl2.string(channel(1236).t.z9Mqln);
             obj[3] = function handlePress() {
@@ -176,8 +176,8 @@ export default function useMemberListAction(channel) {
             };
             tmp12 = obj;
           } else {
-            obj[0] = tmp4(9873);
-            obj[1] = channel(9872).GroupPlusIcon;
+            obj[0] = tmp4(9940);
+            obj[1] = channel(9939).GroupPlusIcon;
             const intl = channel(1236).intl;
             obj[2] = intl.string(channel(1236).t["Ab/6S0"]);
             obj[3] = function handlePress() {
@@ -203,21 +203,21 @@ export default function useMemberListAction(channel) {
           const obj3 = { source: null, IconComponent: null };
           obj3[0] = iconSource;
           obj3[1] = IconComponent;
-          obj2[0] = tmp42(channel(8121).RowButton.Icon, obj3);
+          obj2[0] = tmp42(channel(8188).RowButton.Icon, obj3);
           obj2[1] = handlePress;
           obj2[2] = label;
           obj2[3] = sublabel;
-          let tmp42Result = tmp42(tmp47(8121).RowButton, obj2);
+          let tmp42Result = tmp42(tmp47(8188).RowButton, obj2);
         } else {
           const obj4 = { icon: null, onPress: null, label: null, subLabel: null, start: true, end: true, arrow: true };
           const obj5 = { source: null, IconComponent: null };
           obj5[0] = iconSource;
           obj5[1] = IconComponent;
-          obj4[0] = tmp42(channel(8121).RowButton.Icon, obj5);
+          obj4[0] = tmp42(channel(8188).RowButton.Icon, obj5);
           obj4[1] = handlePress;
           obj4[2] = label;
           obj4[3] = sublabel;
-          tmp42Result = tmp42(tmp47(5480).TableRow, obj4);
+          tmp42Result = tmp42(tmp47(5546).TableRow, obj4);
         }
         obj1[2] = tmp42Result;
         closure_0 = tmp42(c5, obj1);

@@ -1,10 +1,10 @@
-// Module ID: 4998
-// Function ID: 4999
+// Module ID: 5064
+// Function ID: 5065
 // Name: getUploadPayload
-// Dependencies: [1996, 1218, 706, 4955, 12, 698, 2]
+// Dependencies: [1996, 1218, 706, 5021, 12, 698, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 4998 (getUploadPayload)
+// Module 5064 (getUploadPayload)
 import applyDefault from "apply" /* 12 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import closure_3 from "_getSystemLocale" /* 1996 */;

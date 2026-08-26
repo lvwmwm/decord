@@ -1,12 +1,12 @@
-// Module ID: 14676
-// Function ID: 14677
+// Module ID: 14749
+// Function ID: 14750
 // Name: useTrialIntervalOptions
-// Dependencies: [19, 14649, 1924, 1236, 14675, 2]
+// Dependencies: [19, 14722, 1924, 1236, 14748, 2]
 // Exports: default
 
-// Module 14676 (useTrialIntervalOptions)
+// Module 14749 (useTrialIntervalOptions)
 import closure_2 from "noop" /* 19 */;
-import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS" /* 14649 */;
+import { TIER_TRIAL_INTERVALS } from "MAX_SUBSCRIPTION_TIERS" /* 14722 */;
 import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1924 */;
 
 const require = arg1;
@@ -22,9 +22,9 @@ export default function useTrialIntervalOptions(arg0) {
         if (7 === interval.interval_count) {
           const intl = lib(1236).intl;
           obj = { defaultLimit: null };
-          obj[0] = lib(14675).formatPlanIntervalDuration(interval);
+          obj[0] = lib(14748).formatPlanIntervalDuration(interval);
           let formatToPlainStringResult = intl.formatToPlainString(lib(1236).t.XfSsr1, obj);
-          const obj4 = lib(14675);
+          const obj4 = lib(14748);
         }
         obj[1] = formatToPlainStringResult;
         let tmp5 = interval.interval === tmp.DAY;
@@ -34,7 +34,7 @@ export default function useTrialIntervalOptions(arg0) {
         obj[2] = tmp5;
         return obj;
       }
-      formatToPlainStringResult = lib(14675).formatPlanIntervalDuration(interval);
+      formatToPlainStringResult = lib(14748).formatPlanIntervalDuration(interval);
     });
     let selectedOption = closure_0;
     if (null != closure_0) {

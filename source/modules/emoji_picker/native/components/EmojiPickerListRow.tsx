@@ -1,23 +1,23 @@
-// Module ID: 8856
-// Function ID: 8857
+// Module ID: 8924
+// Function ID: 8925
 // Name: EmojiItemLockedOverlay
-// Dependencies: [19, 17, 1302, 8787, 1338, 21, 4380, 712, 500, 689, 1435, 4925, 4949, 5374, 1363, 5467, 5468, 1297, 8857, 2]
+// Dependencies: [19, 17, 1302, 8855, 1338, 21, 4444, 712, 500, 689, 1435, 4991, 5015, 5440, 1363, 5533, 5534, 1297, 8925, 2]
 
-// Module 8856 (EmojiItemLockedOverlay)
+// Module 8924 (EmojiItemLockedOverlay)
 import set2 from "set" /* 500 */;
 import nDefault from "n" /* 689 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import LockIcon from "LockIcon" /* 4925 */;
-import preloadDefault from "preload" /* 5374 */;
-import ViewDefault from "View" /* 8857 */;
+import LockIcon from "LockIcon" /* 4991 */;
+import preloadDefault from "preload" /* 5440 */;
+import ViewDefault from "View" /* 8925 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_4 from "handleThemeChange" /* 1302 */;
-import IMAGE_SIZE from "IMAGE_SIZE" /* 8787 */;
+import IMAGE_SIZE from "IMAGE_SIZE" /* 8855 */;
 import { PADDING_VERTICAL } from "ExpressionPickerViewType" /* 1338 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -71,10 +71,10 @@ function EmojiItem(emoji) {
     obj1[1] = tmp.image;
     const tmp15 = preloadDefault;
     if (tmp7Result.isThemeDark(theme.theme)) {
-      tmp8 = 5467;
+      tmp8 = 5533;
       let tmp14Result = tmp14(tmp8);
     } else {
-      tmp14Result = tmp14(5468);
+      tmp14Result = tmp14(5534);
     }
     obj1[2] = tmp14Result;
     const obj2 = { uri: null };
@@ -93,7 +93,7 @@ function EmojiItem(emoji) {
     }
     items1[1] = disabled;
     obj[5] = items1;
-    return closure_8(emoji(4949).PressableOpacity, obj);
+    return closure_8(emoji(5015).PressableOpacity, obj);
   }
 }
 ({ View: c3, StyleSheet } = get_ActivityIndicator);

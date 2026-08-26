@@ -1,16 +1,16 @@
-// Module ID: 14143
-// Function ID: 14144
+// Module ID: 14213
+// Function ID: 14214
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 5882, 7039, 21, 4380, 712, 1297, 7849, 4376, 4826, 691, 2]
+// Dependencies: [19, 17, 5948, 7105, 21, 4444, 712, 1297, 7916, 4440, 4891, 691, 2]
 // Exports: default
 
-// Module 14143 (UserProfileUpsellCard)
+// Module 14213 (UserProfileUpsellCard)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { Gradients } from "items" /* 7039 */;
+import { Gradients } from "items" /* 7105 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 noopAll;
@@ -46,10 +46,10 @@ export default function UserProfileUpsellCard(headerText) {
     obj[0] = tmp.titleContainer;
     obj1 = { color: null, size: "xs" };
     obj1[0] = ThemesDefault.colors.MOBILE_TEXT_HEADING_PRIMARY;
-    const items3 = [tmp2(tmp3(7849).NitroWheelIcon, obj1), ];
+    const items3 = [tmp2(tmp3(7916).NitroWheelIcon, obj1), ];
     const obj2 = { variant: "heading-sm/bold", children: null };
     obj2[1] = headerText;
-    items3[1] = tmp2(tmp3(4376).Text, obj2);
+    items3[1] = tmp2(tmp3(4440).Text, obj2);
     obj[1] = items3;
     tmp6Result = tmp6(closure_3, obj);
   }

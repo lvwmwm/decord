@@ -1,10 +1,10 @@
-// Module ID: 10418
-// Function ID: 10419
+// Module ID: 10486
+// Function ID: 10487
 // Name: LIKELY_ATO_MORE_TIPS_MODAL_KEY
 // Dependencies: [1236, 2]
 // Exports: getLikelyAtoMoreTips
 
-// Module 10418 (LIKELY_ATO_MORE_TIPS_MODAL_KEY)
+// Module 10486 (LIKELY_ATO_MORE_TIPS_MODAL_KEY)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

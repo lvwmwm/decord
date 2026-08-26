@@ -1,10 +1,10 @@
-// Module ID: 4993
-// Function ID: 4994
+// Module ID: 5059
+// Function ID: 5060
 // Name: getTimeFormat
 // Dependencies: [2]
 // Exports: getTimeFormat
 
-// Module 4993 (getTimeFormat)
+// Module 5059 (getTimeFormat)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("utils/native/TimeUtils.tsx");

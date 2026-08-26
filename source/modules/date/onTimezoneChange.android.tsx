@@ -1,12 +1,12 @@
-// Module ID: 4068
-// Function ID: 4069
+// Module ID: 4132
+// Function ID: 4133
 // Name: onTimezoneChange
-// Dependencies: [4069, 2]
+// Dependencies: [4133, 2]
 // Exports: default
 
-// Module 4068 (onTimezoneChange)
+// Module 4132 (onTimezoneChange)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 4069 */;
+import enforcingDefault from "enforcing" /* 4133 */;
 
 const result = set.fileFinishedImporting("modules/date/onTimezoneChange.android.tsx");
 

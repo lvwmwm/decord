@@ -1,9 +1,9 @@
-// Module ID: 11174
-// Function ID: 11175
+// Module ID: 11246
+// Function ID: 11247
 // Name: FeedbackRating
 // Dependencies: [1306, 2]
 
-// Module 11174 (FeedbackRating)
+// Module 11246 (FeedbackRating)
 import set from "set" /* 2 */;
 import create from "create" /* 1306 */;
 

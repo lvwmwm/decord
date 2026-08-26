@@ -1,10 +1,10 @@
-// Module ID: 7302
-// Function ID: 7303
+// Module ID: 7368
+// Function ID: 7369
 // Name: __handleIntersections
 // Dependencies: [2]
 // Exports: getIntersectionObserver, unwatch, watch
 
-// Module 7302 (__handleIntersections)
+// Module 7368 (__handleIntersections)
 import set from "set" /* 2 */;
 
 function __handleIntersections(arr) {

@@ -1,15 +1,15 @@
-// Module ID: 14328
-// Function ID: 14329
+// Module ID: 14401
+// Function ID: 14402
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 4380, 712, 14320, 14321, 4094, 4376, 14329, 1236, 2337, 2]
+// Dependencies: [19, 21, 4444, 712, 14393, 14394, 4158, 4440, 14402, 1236, 2369, 2]
 // Exports: default
 
-// Module 14328 (FamilyCenterParentalConsentNotice)
+// Module 14401 (FamilyCenterParentalConsentNotice)
 import ThemesDefault from "Themes" /* 712 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 14329 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 14402 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 createCacheKey = { container: null, link: null };
@@ -22,9 +22,9 @@ const result = require("set").fileFinishedImporting("modules/parent_tools/native
 export default function FamilyCenterParentalConsentNotice() {
   const tmp = callback();
   const _require = tmp;
-  let obj = _require(14320);
+  let obj = _require(14393);
   const isParentalConsentBannerActive = obj.useIsParentalConsentBannerActive();
-  obj1 = _require(14321);
+  obj1 = _require(14394);
   const parentalConsentWarning = obj1.useParentalConsentWarning();
   let daysRemaining;
   if (parentalConsentWarning != null) {
@@ -48,13 +48,13 @@ export default function FamilyCenterParentalConsentNotice() {
           const intl2 = tmp2(1236).intl;
           obj = { learnMoreHook: null };
           obj[0] = learnMoreHook;
-          let formatResult = intl2.format(tmp9(2337).S5kmfO, obj);
+          let formatResult = intl2.format(tmp9(2369).S5kmfO, obj);
         } else {
           const intl = tmp2(1236).intl;
           obj1 = { count: null, learnMoreHook: null };
           obj1[0] = daysRemaining;
           obj1[1] = learnMoreHook;
-          formatResult = intl.format(tmp9(2337)["5jm+T3"], obj1);
+          formatResult = intl.format(tmp9(2369)["5jm+T3"], obj1);
         }
         obj[1] = formatResult;
         return jsx(FamilyCenterInlineWarningNoticeDefault, { style: null, text: null });

@@ -1,14 +1,14 @@
-// Module ID: 4077
-// Function ID: 4078
+// Module ID: 4141
+// Function ID: 4142
 // Name: getRegionalFeatureConfig
-// Dependencies: [4078, 4082, 589, 709, 2]
+// Dependencies: [4142, 4146, 589, 709, 2]
 
-// Module 4077 (getRegionalFeatureConfig)
+// Module 4141 (getRegionalFeatureConfig)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isFeatureTeenByDefault from "isFeatureTeenByDefault" /* 4082 */;
-import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME" /* 4078 */;
+import isFeatureTeenByDefault from "isFeatureTeenByDefault" /* 4146 */;
+import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME" /* 4142 */;
 
 ({ getDefaultCountryCode: obj1, getCountryCodeByAlpha2: c3 } = DEFAULT_COUNTRY_CODE_NAME);
 let c4 = null;

@@ -1,9 +1,9 @@
-// Module ID: 4093
-// Function ID: 4094
+// Module ID: 4157
+// Function ID: 4158
 // Name: LINKING_SCHEMAS
 // Dependencies: [2]
 
-// Module 4093 (LINKING_SCHEMAS)
+// Module 4157 (LINKING_SCHEMAS)
 import set from "set" /* 2 */;
 
 obj = { bestbuy: obj };

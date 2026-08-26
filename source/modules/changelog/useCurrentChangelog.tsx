@@ -1,14 +1,14 @@
-// Module ID: 8344
-// Function ID: 8345
+// Module ID: 8411
+// Function ID: 8412
 // Name: useChangelog
-// Dependencies: [19, 1996, 4394, 1980, 647, 8345, 2]
+// Dependencies: [19, 1996, 4458, 1980, 647, 8412, 2]
 // Exports: useCurrentChangelog
 
-// Module 8344 (useChangelog)
+// Module 8411 (useChangelog)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 4394 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 4458 */;
 import { ChangelogLoadState } from "CHANGELOG_MODAL_KEY" /* 1980 */;
 
 require = arg1;

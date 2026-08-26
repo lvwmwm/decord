@@ -1,12 +1,12 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7233
+// Function ID: 7234
 // Name: fromServer
-// Dependencies: [7168, 7161, 7169, 2]
+// Dependencies: [7234, 7227, 7235, 2]
 
-// Module 7167 (fromServer)
-import closure_0 from "fromServer" /* 7168 */;
-import { AssetDisplayConfigRecord } from "fromServer" /* 7161 */;
-import closure_2 from "fromServer" /* 7169 */;
+// Module 7233 (fromServer)
+import closure_0 from "fromServer" /* 7234 */;
+import { AssetDisplayConfigRecord } from "fromServer" /* 7227 */;
+import closure_2 from "fromServer" /* 7235 */;
 
 let prototype;
 prototype = function StorefrontCollectionRecord(arg0) {

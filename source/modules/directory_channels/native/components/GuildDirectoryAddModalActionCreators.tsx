@@ -1,20 +1,20 @@
-// Module ID: 11875
-// Function ID: 11876
-// Dependencies: [4611, 11876, 2009, 2]
+// Module ID: 11948
+// Function ID: 11949
+// Dependencies: [4675, 11949, 2009, 2]
 
-// Module 11875
+// Module 11948
 import set from "set" /* 2 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4611 from "module_4611" /* 4611 */;
+import _modDef4675 from "module_4675" /* 4675 */;
 
 const GUILD_DIRECTORY_ADD_MODAL_KEY = "GUILD_DIRECTORY_ADD_MODAL_KEY";
 const result = set.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryAddModalActionCreators.tsx");
 
 export default {
   open(closure_0) {
-    _modDef4611.pushLazy(asyncRequireImpl(11876, dependencyMap.paths), closure_0, GUILD_DIRECTORY_ADD_MODAL_KEY);
+    _modDef4675.pushLazy(asyncRequireImpl(11949, dependencyMap.paths), closure_0, GUILD_DIRECTORY_ADD_MODAL_KEY);
   },
   close() {
-    _modDef4611.popWithKey(GUILD_DIRECTORY_ADD_MODAL_KEY);
+    _modDef4675.popWithKey(GUILD_DIRECTORY_ADD_MODAL_KEY);
   }
 };

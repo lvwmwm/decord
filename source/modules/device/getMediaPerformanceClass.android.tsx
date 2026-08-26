@@ -1,12 +1,12 @@
-// Module ID: 7276
-// Function ID: 7277
+// Module ID: 7342
+// Function ID: 7343
 // Name: getMediaPerformanceClass
-// Dependencies: [4359, 2]
+// Dependencies: [4423, 2]
 // Exports: default
 
-// Module 7276 (getMediaPerformanceClass)
+// Module 7342 (getMediaPerformanceClass)
 import set from "set" /* 2 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4359 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4423 */;
 
 const result = set.fileFinishedImporting("modules/device/getMediaPerformanceClass.android.tsx");
 

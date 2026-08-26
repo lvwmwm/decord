@@ -1,16 +1,16 @@
-// Module ID: 13981
-// Function ID: 13982
+// Module ID: 14054
+// Function ID: 14055
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4282, 676, 4618, 9049, 13948, 10824, 9212, 13936, 4964, 4975, 10699, 4279, 2]
+// Dependencies: [5, 4346, 676, 4682, 9117, 14021, 10896, 9280, 14009, 5030, 5041, 10771, 4343, 2]
 
-// Module 13981 (RPC_LOCAL_SCOPE)
-import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 9212 */;
-import prototypeDefault from "prototype" /* 10824 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 13948 */;
+// Module 14054 (RPC_LOCAL_SCOPE)
+import showInstantInviteActionSheet from "showInstantInviteActionSheet" /* 9280 */;
+import prototypeDefault from "prototype" /* 10896 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 14021 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4282 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4346 */;
 import ME from "ME" /* 676 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4618 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4682 */;
 
 require = arg1;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_LOCAL_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
@@ -59,7 +59,7 @@ obj1[1] = function handler(socket) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

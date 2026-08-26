@@ -1,13 +1,13 @@
-// Module ID: 12470
-// Function ID: 12471
-// Dependencies: [19, 17, 1922, 5882, 5504, 21, 8982, 8972, 8984, 1629, 8935, 589, 4573, 4224, 6035, 8983, 9613, 8970, 8979, 5862, 4097, 8985, 4120, 12471, 8989, 9596, 4347, 9612, 2009, 9615, 1236, 12475, 12478, 10704, 12479, 4815, 4902, 712, 4611, 4393, 12480, 9680, 5857, 12530, 12533, 2]
+// Module ID: 12541
+// Function ID: 12542
+// Dependencies: [19, 17, 1922, 5948, 5570, 21, 9050, 9040, 9052, 1629, 9003, 589, 4637, 4288, 6101, 9051, 9681, 9038, 9047, 5928, 4161, 9053, 4184, 12542, 9057, 9664, 4411, 9680, 2009, 9683, 1236, 12546, 12549, 10776, 12550, 4879, 4968, 712, 4675, 4457, 12551, 9748, 5923, 12601, 12604, 2]
 
-// Module 12470
+// Module 12541
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 5882 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5504 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 5948 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5570 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -198,7 +198,7 @@ const memoResult = importAllResult.memo(function BotUserProfileContent(user) {
       obj13[6] = function onPress() {
         trackUserProfileAction({ action: "SEND_MESSAGE" });
         let obj = channel(trackUserProfileAction[26]);
-        obj.hideActionSheet();
+        obj.hideAllActionSheets();
         channel(trackUserProfileAction[38]).popAll();
         const obj2 = channel(trackUserProfileAction[38]);
         obj = { recipientIds: user.id };

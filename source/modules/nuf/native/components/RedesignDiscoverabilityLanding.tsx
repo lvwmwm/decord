@@ -1,22 +1,22 @@
-// Module ID: 16793
-// Function ID: 16794
+// Module ID: 16878
+// Function ID: 16879
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4380, 712, 1629, 5373, 4376, 1236, 5374, 12306, 12236, 4815, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 1629, 5439, 4440, 1236, 5440, 12378, 12308, 4879, 2]
 // Exports: default
 
-// Module 16793 (RedesignDiscoverabilityLanding)
+// Module 16878 (RedesignDiscoverabilityLanding)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import Text from "Text" /* 4376 */;
-import Button from "Button" /* 4815 */;
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5373 */;
-import preloadDefault from "preload" /* 5374 */;
-import registerAssetDefault from "registerAsset" /* 12306 */;
+import Text from "Text" /* 4440 */;
+import Button from "Button" /* 4879 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5439 */;
+import preloadDefault from "preload" /* 5440 */;
+import registerAssetDefault from "registerAsset" /* 12378 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -61,7 +61,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const intl4 = getSystemLocale.intl;
   items1[2] = intl4.format(getSystemLocale.t.VcSQ4n, {
     learnMoreHook(children) {
-      return callback2(callback(4376).Text, { onPress: callback(12236).handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children }, arg1);
+      return callback2(callback(4440).Text, { onPress: callback(12308).handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children }, arg1);
     }
   });
   obj4[3] = items1;

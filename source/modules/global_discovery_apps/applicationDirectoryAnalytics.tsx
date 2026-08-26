@@ -1,13 +1,13 @@
-// Module ID: 7297
-// Function ID: 7298
+// Module ID: 7363
+// Function ID: 7364
 // Name: trackAppDirectoryProfileEmbed
-// Dependencies: [1981, 4202, 676, 698, 2]
+// Dependencies: [1981, 4266, 676, 698, 2]
 // Exports: trackAppDirectoryProfileEmbed
 
-// Module 7297 (trackAppDirectoryProfileEmbed)
+// Module 7363 (trackAppDirectoryProfileEmbed)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import closure_2 from "handleConnectionOpen" /* 1981 */;
-import closure_3 from "handleConnectionOpen" /* 4202 */;
+import closure_3 from "handleConnectionOpen" /* 4266 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/global_discovery_apps/applicationDirectoryAnalytics.tsx");

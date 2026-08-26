@@ -1,18 +1,18 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 12919
+// Function ID: 12920
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4380, 712, 8982, 7236, 12660, 7229, 12547, 4376, 1236, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 9050, 7302, 12733, 7295, 12618, 4440, 1236, 2]
 // Exports: default
 
-// Module 12845 (WidgetPreview)
+// Module 12919 (WidgetPreview)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7236 */;
-import useSharedStylesDefault from "useSharedStyles" /* 8982 */;
-import PersonalWidgetTextDefault from "PersonalWidgetText" /* 12660 */;
+import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7302 */;
+import useSharedStylesDefault from "useSharedStyles" /* 9050 */;
+import PersonalWidgetTextDefault from "PersonalWidgetText" /* 12733 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -44,10 +44,10 @@ export default function WidgetPreview(arg0) {
         obj[1] = widget;
         const items1 = [tmp4.card, tmp.card];
         obj[3] = items1;
-        tmp6 = callback(tmp5(12547).WidgetSection, obj);
+        tmp6 = callback(tmp5(12618).WidgetSection, obj);
       }
     }
-    tmp5Result = tmp5(7229);
+    tmp5Result = tmp5(7295);
   }
   let tmp9 = null;
   if (null !== tmp6) {
@@ -57,7 +57,7 @@ export default function WidgetPreview(arg0) {
     obj2[0] = tmp.title;
     const intl = tmp5(1236).intl;
     obj2[3] = intl.string(tmp5(1236).t.SpsnDY).toUpperCase();
-    const items2 = [callback(tmp5(4376).Text, obj2), tmp6];
+    const items2 = [callback(tmp5(4440).Text, obj2), tmp6];
     obj1[1] = items2;
     tmp9 = callback2(View, obj1);
     const str = intl.string(tmp5(1236).t.SpsnDY);

@@ -1,13 +1,13 @@
-// Module ID: 8727
-// Function ID: 8728
+// Module ID: 8795
+// Function ID: 8796
 // Name: closeConversationsAndJumpToMessage
-// Dependencies: [4235, 4391, 2]
+// Dependencies: [4299, 4455, 2]
 // Exports: closeConversationsAndJumpToMessage
 
-// Module 8727 (closeConversationsAndJumpToMessage)
+// Module 8795 (closeConversationsAndJumpToMessage)
 import set from "set" /* 2 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4235 */;
-import transitionToChannel from "transitionToChannel" /* 4391 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4299 */;
+import transitionToChannel from "transitionToChannel" /* 4455 */;
 
 const result = set.fileFinishedImporting("modules/conversations/components/native/ConversationNavigatorUtils.tsx");
 

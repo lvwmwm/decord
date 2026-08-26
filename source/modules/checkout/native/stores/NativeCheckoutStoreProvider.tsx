@@ -1,18 +1,18 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7622
+// Function ID: 7623
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7031, 4362, 21, 4380, 5822, 7557, 7036, 7037, 5929, 514, 1208, 7563, 2]
+// Dependencies: [5, 32, 19, 17, 7097, 4426, 21, 4444, 5888, 7623, 7102, 7103, 5995, 514, 1208, 7629, 2]
 // Exports: default
 
-// Module 7556 (NativeCheckoutStoreProvider)
+// Module 7622 (NativeCheckoutStoreProvider)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import context from "context" /* 7031 */;
-import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4362 */;
+import context from "context" /* 7097 */;
+import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4426 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 function NativeCheckoutStoreProvider(children) {
@@ -21,7 +21,7 @@ function NativeCheckoutStoreProvider(children) {
   closure_6 = undefined;
   let first;
   closure_8 = undefined;
-  closure_6 = order(5822)(() => {
+  closure_6 = order(5888)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -127,7 +127,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
             }
             closure_1_10(false);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp23) {
           c4 = tmp;

@@ -1,20 +1,20 @@
-// Module ID: 8224
-// Function ID: 8225
+// Module ID: 8291
+// Function ID: 8292
 // Name: createCommonMessage
-// Dependencies: [1391, 4380, 1363, 4228, 712, 4067, 8206, 8225, 8226, 8227, 2]
+// Dependencies: [1391, 4444, 1363, 4292, 712, 4131, 8273, 8292, 8293, 8294, 2]
 // Exports: default
 
-// Module 8224 (createCommonMessage)
+// Module 8291 (createCommonMessage)
 import ThemesDefault from "Themes" /* 712 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import resetCache from "resetCache" /* 4067 */;
-import hexToRgba from "hexToRgba" /* 4228 */;
-import frozen from "frozen" /* 8206 */;
-import registerAssetDefault from "registerAsset" /* 8225 */;
-import registerAssetDefault2 from "registerAsset" /* 8226 */;
-import MessageAccessibilityAction from "MessageAccessibilityAction" /* 8227 */;
+import resetCache from "resetCache" /* 4131 */;
+import hexToRgba from "hexToRgba" /* 4292 */;
+import frozen from "frozen" /* 8273 */;
+import registerAssetDefault from "registerAsset" /* 8292 */;
+import registerAssetDefault2 from "registerAsset" /* 8293 */;
+import MessageAccessibilityAction from "MessageAccessibilityAction" /* 8294 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 const result = createCacheKey.experimental_createToken((theme) => {

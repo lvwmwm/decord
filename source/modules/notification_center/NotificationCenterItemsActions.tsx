@@ -1,14 +1,14 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 15850
+// Function ID: 15851
 // Name: _fetchNotificationCenterItems
-// Dependencies: [5, 7245, 676, 709, 4601, 503, 1404, 7247, 530, 4070, 2]
+// Dependencies: [5, 7311, 676, 709, 4665, 503, 1404, 7313, 530, 4134, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 15771 (_fetchNotificationCenterItems)
+// Module 15850 (_fetchNotificationCenterItems)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getRelativeTimestamp from "getRelativeTimestamp" /* 7247 */;
+import getRelativeTimestamp from "getRelativeTimestamp" /* 7313 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_validate" /* 7245 */;
+import closure_4 from "_validate" /* 7311 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;
@@ -32,7 +32,7 @@ function _fetchNotificationCenterItems() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ function _fetchNotificationCenterItems() {
               c6 = 3;
               c7 = 1;
               let obj6 = { value: null, done: false };
-              obj6[0] = callback(4601).get(obj3);
+              obj6[0] = callback(4665).get(obj3);
               return obj6;
             }
           } else if (2 === tmp7) {
@@ -312,7 +312,7 @@ function _deleteNotificationCenterItem() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -381,7 +381,7 @@ function _deleteNotificationCenterItem() {
           } else {
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           closure_3 = tmp19;

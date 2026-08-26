@@ -1,14 +1,14 @@
-// Module ID: 6971
-// Function ID: 6972
+// Module ID: 7037
+// Function ID: 7038
 // Name: VibingWumpusSpotIllustration
-// Dependencies: [21, 5374, 6972, 2]
+// Dependencies: [21, 5440, 7038, 2]
 // Exports: VibingWumpusSpotIllustration
 
-// Module 6971 (VibingWumpusSpotIllustration)
+// Module 7037 (VibingWumpusSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6972 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 7038 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/VibingWumpusSpotIllustration.native.tsx");

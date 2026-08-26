@@ -1,23 +1,23 @@
-// Module ID: 16796
-// Function ID: 16797
+// Module ID: 16881
+// Function ID: 16882
 // Name: haveNotSeenPromptSince
-// Dependencies: [5, 17, 4027, 1218, 1391, 4589, 11973, 11974, 676, 4618, 4347, 16797, 2009, 503, 3979, 11976, 9913, 698, 500, 5367, 14883, 691, 2]
+// Dependencies: [5, 17, 4091, 1218, 1391, 4653, 12046, 12047, 676, 4682, 4411, 16882, 2009, 503, 4043, 12049, 9980, 698, 500, 5433, 14962, 691, 2]
 
-// Module 16796 (haveNotSeenPromptSince)
-import hooksDefault from "hooks" /* 3979 */;
-import initializeDefault from "initialize" /* 5367 */;
-import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken" /* 11976 */;
+// Module 16881 (haveNotSeenPromptSince)
+import hooksDefault from "hooks" /* 4043 */;
+import initializeDefault from "initialize" /* 5433 */;
+import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken" /* 12049 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "storeThread" /* 4027 */;
+import closure_5 from "storeThread" /* 4091 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4589 */;
-import closure_9 from "set" /* 11973 */;
-import { PermissionPromptType } from "set" /* 11973 */;
-import EventActionType from "EventActionType" /* 11974 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4653 */;
+import closure_9 from "set" /* 12046 */;
+import { PermissionPromptType } from "set" /* 12046 */;
+import EventActionType from "EventActionType" /* 12047 */;
 import ME from "ME" /* 676 */;
-import { NotificationAuthorizationStatus as closure_16 } from "NativePermissionStatus" /* 4618 */;
+import { NotificationAuthorizationStatus as closure_16 } from "NativePermissionStatus" /* 4682 */;
 
 require = arg1;
 function haveNotSeenPromptSince(arg0, arg1) {
@@ -152,7 +152,7 @@ function _logNotificationPermissionStatus2() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -188,8 +188,8 @@ function _logNotificationPermissionStatus2() {
           return obj;
         } else {
           callback = arg1;
-          callback2 = callback(9913).allowInAppNotifications();
-          const obj5 = callback(9913);
+          callback2 = callback(9980).allowInAppNotifications();
+          const obj5 = callback(9980);
           const obj2 = { os_enabled: null, foreground_app_enabled: null, background_app_enabled: null, notification_authorization_status: null };
           obj2[0] = callback === constants2.AUTHORIZED;
           obj2[1] = callback2;
@@ -202,7 +202,7 @@ function _logNotificationPermissionStatus2() {
           obj2[3] = tmp7;
           obj6.track(constants.NOTIFICATION_PERMISSION_STATUS, obj2);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c3 = tmp;
@@ -264,7 +264,7 @@ class NotificationPermissionManager extends tmp4 {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -312,7 +312,7 @@ class NotificationPermissionManager extends tmp4 {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c2 = tmp;
@@ -336,7 +336,7 @@ class NotificationPermissionManager extends tmp4 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -449,7 +449,7 @@ class NotificationPermissionManager extends tmp4 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -573,7 +573,7 @@ class NotificationPermissionManager extends tmp4 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -651,7 +651,7 @@ class NotificationPermissionManager extends tmp4 {
                 closure_1_24(closure_1_10.FRIEND_REQUEST_SENT, closure_1_12.FRIEND_REQUEST_SENT, 100);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp19) {
             c4 = tmp;
@@ -690,7 +690,7 @@ class NotificationPermissionManager extends tmp4 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -762,7 +762,7 @@ class NotificationPermissionManager extends tmp4 {
                 }
                 previousAppState.previousAppState = callback;
                 c4 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
               if (callback === callback(closure_1_2[21]).AppStates.ACTIVE) {
                 c3 = 3;
@@ -803,7 +803,7 @@ class NotificationPermissionManager extends tmp4 {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -841,7 +841,7 @@ class NotificationPermissionManager extends tmp4 {
             obj = closure_1_0(table[15]);
             const result = obj.updateNotificationAuthorizationStatus(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c3 = tmp;

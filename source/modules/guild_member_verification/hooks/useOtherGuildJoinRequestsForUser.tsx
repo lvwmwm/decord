@@ -1,12 +1,12 @@
-// Module ID: 15939
-// Function ID: 15940
+// Module ID: 16018
+// Function ID: 16019
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [19, 7064, 589, 8584, 2]
+// Dependencies: [19, 7130, 589, 8652, 2]
 // Exports: useOtherGuildJoinRequestsForUser
 
-// Module 15939 (useOtherGuildJoinRequestsForUser)
+// Module 16018 (useOtherGuildJoinRequestsForUser)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateSubmittedGuildJoinRequestTotal" /* 7064 */;
+import closure_4 from "updateSubmittedGuildJoinRequestTotal" /* 7130 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useOtherGuildJoinRequestsForUser.tsx");

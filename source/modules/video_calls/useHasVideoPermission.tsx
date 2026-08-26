@@ -1,13 +1,13 @@
-// Module ID: 10908
-// Function ID: 10909
+// Module ID: 10980
+// Function ID: 10981
 // Name: useHasVideoPermission
-// Dependencies: [1910, 4025, 589, 7330, 2]
+// Dependencies: [1910, 4089, 589, 7396, 2]
 // Exports: default, getVideoPermission
 
-// Module 10908 (useHasVideoPermission)
-import canStreamInChannel from "canStreamInChannel" /* 7330 */;
+// Module 10980 (useHasVideoPermission)
+import canStreamInChannel from "canStreamInChannel" /* 7396 */;
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");

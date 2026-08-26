@@ -1,10 +1,10 @@
-// Module ID: 8632
-// Function ID: 8633
+// Module ID: 8700
+// Function ID: 8701
 // Name: getAuthenticationErrorsFromAPIError
 // Dependencies: [2]
 // Exports: getAuthenticationErrorsFromAPIError, getAuthenticationErrorsFromV6OrEarlierAPIError
 
-// Module 8632 (getAuthenticationErrorsFromAPIError)
+// Module 8700 (getAuthenticationErrorsFromAPIError)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/auth/getAuthenticationErrorsFromAPIError.tsx");

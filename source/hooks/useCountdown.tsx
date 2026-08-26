@@ -1,10 +1,10 @@
-// Module ID: 7046
-// Function ID: 7047
+// Module ID: 7112
+// Function ID: 7113
 // Name: useCountdown
-// Dependencies: [19, 4067, 7047, 7052, 2]
+// Dependencies: [19, 4131, 7113, 7118, 2]
 // Exports: default
 
-// Module 7046 (useCountdown)
+// Module 7112 (useCountdown)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 

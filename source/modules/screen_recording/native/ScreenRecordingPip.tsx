@@ -1,17 +1,17 @@
-// Module ID: 15292
-// Function ID: 15293
+// Module ID: 15371
+// Function ID: 15372
 // Name: DraggableContainer
-// Dependencies: [32, 19, 17, 15293, 21, 4380, 712, 4120, 10395, 11554, 5533, 4814, 4818, 4347, 15297, 2009, 15287, 4949, 4376, 4815, 4331, 15298, 2]
+// Dependencies: [32, 19, 17, 15372, 21, 4444, 712, 4184, 10463, 11626, 5599, 4878, 4882, 4411, 15376, 2009, 15366, 5015, 4440, 4879, 4395, 15377, 2]
 // Exports: default
 
-// Module 15292 (DraggableContainer)
+// Module 15371 (DraggableContainer)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15293 */;
+import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15372 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 function DraggableContainer(children) {

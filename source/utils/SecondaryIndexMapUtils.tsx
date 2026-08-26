@@ -1,10 +1,10 @@
-// Module ID: 5256
-// Function ID: 5257
+// Module ID: 5322
+// Function ID: 5323
 // Name: isVersionEqual
 // Dependencies: [659, 2]
 // Exports: isVersionEqual
 
-// Module 5256 (isVersionEqual)
+// Module 5322 (isVersionEqual)
 import set from "set" /* 2 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 

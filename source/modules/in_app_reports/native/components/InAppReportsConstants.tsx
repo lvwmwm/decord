@@ -1,9 +1,9 @@
-// Module ID: 8177
-// Function ID: 8178
+// Module ID: 8244
+// Function ID: 8245
 // Name: IN_APP_REPORTS_NODE
 // Dependencies: [2]
 
-// Module 8177 (IN_APP_REPORTS_NODE)
+// Module 8244 (IN_APP_REPORTS_NODE)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsConstants.tsx");

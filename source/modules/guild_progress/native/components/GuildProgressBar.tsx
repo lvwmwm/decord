@@ -1,15 +1,15 @@
-// Module ID: 13529
-// Function ID: 13530
+// Module ID: 13602
+// Function ID: 13603
 // Name: GuildProgressBar
-// Dependencies: [19, 17, 21, 4380, 12034, 712, 4120, 4381, 4384, 2]
+// Dependencies: [19, 17, 21, 4444, 12107, 712, 4184, 4445, 4448, 2]
 // Exports: default
 
-// Module 13529 (GuildProgressBar)
+// Module 13602 (GuildProgressBar)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 createCacheKey = { wrapper: null, progress: null };
@@ -25,7 +25,7 @@ export default function GuildProgressBar(percent) {
   percent = percent.percent;
   let sharedValue;
   const tmp = callback();
-  let obj = percent(4120);
+  let obj = percent(4184);
   sharedValue = obj.useSharedValue(0);
   const items = [percent, sharedValue];
   const effect = React.useEffect(() => {
@@ -39,8 +39,8 @@ export default function GuildProgressBar(percent) {
   fn.__initData = closure_7;
   obj = { style: items1, children: null };
   items1 = [tmp.wrapper, percent.style];
-  const animatedStyle = percent(4120).useAnimatedStyle(fn);
+  const animatedStyle = percent(4184).useAnimatedStyle(fn);
   const items2 = [tmp.progress, animatedStyle];
-  obj[1] = jsx(sharedValue(4120).View, { style: items2 });
+  obj[1] = jsx(sharedValue(4184).View, { style: items2 });
   return <View style={items1}>{null}</View>;
 };

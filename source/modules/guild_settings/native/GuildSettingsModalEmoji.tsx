@@ -1,19 +1,19 @@
-// Module ID: 16907
-// Function ID: 16908
+// Module ID: 16992
+// Function ID: 16993
 // Name: computeEmojiItem
-// Dependencies: [32, 19, 17, 1910, 16908, 21, 12, 8887, 4380, 712, 1236, 5287, 4271, 589, 9133, 4376, 16910, 16914, 1297, 16915, 5929, 5820, 1500, 5376, 2]
+// Dependencies: [32, 19, 17, 1910, 16993, 21, 12, 8955, 4444, 712, 1236, 5353, 4335, 589, 9201, 4440, 16995, 16999, 1297, 17000, 5995, 5886, 1500, 5442, 2]
 // Exports: computeSectionItem, default
 
-// Module 16907 (computeEmojiItem)
+// Module 16992 (computeEmojiItem)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "initialize" /* 16908 */;
+import closure_8 from "initialize" /* 16993 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;
@@ -193,8 +193,8 @@ let closure_15 = importDefaultResult.memoize((arr, stateFromStores) => {
   const found = arr.filter((roles) => !stateFromStores(closure_1_2[11]).isRoleSubscriptionEmoji(roles, stateFromStores.id));
   const mapped = found.map(computeEmojiItem);
   const reversed = mapped.reverse();
-  const maxEmojiSlots = _require(4271).getMaxEmojiSlots(stateFromStores);
-  const obj2 = _require(4271);
+  const maxEmojiSlots = _require(4335).getMaxEmojiSlots(stateFromStores);
+  const obj2 = _require(4335);
   const obj3 = importDefaultResult;
   [arr2, arr3] = callback(importDefaultResult.partition(reversed, (emoji) => !emoji.emoji.animated), 2);
   const intl = _require(1236).intl;

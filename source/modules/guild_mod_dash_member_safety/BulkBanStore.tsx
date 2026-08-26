@@ -1,9 +1,9 @@
-// Module ID: 5339
-// Function ID: 5340
+// Module ID: 5405
+// Function ID: 5406
 // Name: set
 // Dependencies: [1218, 589, 709, 2]
 
-// Module 5339 (set)
+// Module 5405 (set)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "fetchFingerprint" /* 1218 */;

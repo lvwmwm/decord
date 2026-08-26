@@ -1,14 +1,14 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15905
+// Function ID: 15906
 // Name: _maybeFetchGuildDiscoveryCategories
-// Dependencies: [5, 1996, 15827, 676, 530, 709, 2]
+// Dependencies: [5, 1996, 15906, 676, 530, 709, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 15826 (_maybeFetchGuildDiscoveryCategories)
+// Module 15905 (_maybeFetchGuildDiscoveryCategories)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "getPrimaryCategories" /* 15827 */;
+import closure_5 from "getPrimaryCategories" /* 15906 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -26,7 +26,7 @@ function _maybeFetchGuildDiscoveryCategories() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -205,7 +205,7 @@ function _saveGuildMetadata() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -328,7 +328,7 @@ function _saveGuildMetadata() {
             obj7.dispatch(obj6);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c3 = tmp18;

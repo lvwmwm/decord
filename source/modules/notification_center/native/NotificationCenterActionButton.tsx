@@ -1,14 +1,14 @@
-// Module ID: 15763
-// Function ID: 15764
+// Module ID: 15842
+// Function ID: 15843
 // Name: NotificationCenterActionButton
-// Dependencies: [19, 21, 7896, 8752, 4347, 15764, 2009, 1236, 2]
+// Dependencies: [19, 21, 7963, 8820, 4411, 15843, 2009, 1236, 2]
 // Exports: default
 
-// Module 15763 (NotificationCenterActionButton)
+// Module 15842 (NotificationCenterActionButton)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import IconButton from "IconButton" /* 7896 */;
-import registerAssetDefault from "registerAsset" /* 8752 */;
+import IconButton from "IconButton" /* 7963 */;
+import registerAssetDefault from "registerAsset" /* 8820 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

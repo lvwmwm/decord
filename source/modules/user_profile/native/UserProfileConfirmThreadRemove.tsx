@@ -1,14 +1,14 @@
-// Module ID: 12184
-// Function ID: 12185
+// Module ID: 12257
+// Function ID: 12258
 // Name: UserProfileConfirmThreadRemove
-// Dependencies: [19, 21, 4224, 4750, 1236, 4750, 2]
+// Dependencies: [19, 21, 4288, 4814, 1236, 4814, 2]
 // Exports: default
 
-// Module 12184 (UserProfileConfirmThreadRemove)
+// Module 12257 (UserProfileConfirmThreadRemove)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import nameFromUserDefault from "nameFromUser" /* 4224 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4750 */;
+import nameFromUserDefault from "nameFromUser" /* 4288 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4814 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

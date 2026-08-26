@@ -1,18 +1,18 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12356
+// Function ID: 12357
 // Name: HubEmailConnectionStudentPrompt
-// Dependencies: [19, 17, 12275, 676, 21, 4380, 5342, 712, 1500, 12283, 1297, 1236, 5473, 12285, 698, 12286, 2]
+// Dependencies: [19, 17, 12347, 676, 21, 4444, 5408, 712, 1500, 12355, 1297, 1236, 5539, 12357, 698, 12358, 2]
 // Exports: default
 
-// Module 12284 (HubEmailConnectionStudentPrompt)
+// Module 12356 (HubEmailConnectionStudentPrompt)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12275 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12347 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
-import importDefaultResult from "createTextStyle" /* 5342 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
+import importDefaultResult from "createTextStyle" /* 5408 */;
 
 const require = arg1;
 noopAll;
@@ -44,9 +44,9 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
   obj1[1] = intl.string(onClose(1236).t["+/Pv0h"]);
   const items = [callback(onClose(1297).LegacyText, obj1), , ];
   const obj2 = { DEPRECATED_style: tmp.row, leading: null, trailing: null, label: null, subLabel: null, onPress: null };
-  const obj3 = { source: invite(12285) };
+  const obj3 = { source: invite(12357) };
   obj2[1] = callback(closure_4, obj3);
-  obj2[2] = invite(5473).Arrow;
+  obj2[2] = invite(5539).Arrow;
   const intl2 = onClose(1236).intl;
   obj2[3] = intl2.string(onClose(1236).t["a7a/D+"]);
   const intl3 = onClose(1236).intl;
@@ -57,18 +57,18 @@ export default function HubEmailConnectionStudentPrompt(onClose) {
     obj = { onClose, invite };
     arr = arr.push(closure_1_5.VERIFY_EMAIL, obj);
   };
-  items[1] = callback(invite(5473), obj2);
+  items[1] = callback(invite(5539), obj2);
   const obj4 = { DEPRECATED_style: tmp.row, leading: null, trailing: null, label: null, onPress: null };
   const obj5 = { source: null };
-  const tmp2 = invite(5473);
-  obj5[0] = invite(12286);
+  const tmp2 = invite(5539);
+  obj5[0] = invite(12358);
   obj4[1] = callback(closure_4, obj5);
-  obj4[2] = invite(5473).Arrow;
+  obj4[2] = invite(5539).Arrow;
   const intl4 = onClose(1236).intl;
   obj4[3] = intl4.string(onClose(1236).t.GLG9n4);
   obj4[4] = onClose;
-  items[2] = callback(invite(5473), obj4);
+  items[2] = callback(invite(5539), obj4);
   obj[1] = items;
   obj[0] = callback2(closure_3, obj);
-  return callback(onClose(12283).HubEmailConnectionScreen, obj);
+  return callback(onClose(12355).HubEmailConnectionScreen, obj);
 };

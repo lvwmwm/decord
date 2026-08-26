@@ -1,13 +1,13 @@
-// Module ID: 5974
-// Function ID: 5975
+// Module ID: 6040
+// Function ID: 6041
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1983, 5344, 1391, 1985, 1910, 676, 1398, 5975, 5977, 5986, 5954, 5989, 5991, 5950, 5992, 5993, 4290, 5994, 5952, 1370, 6038, 4393, 4575, 2]
+// Dependencies: [5, 1983, 5410, 1391, 1985, 1910, 676, 1398, 6041, 6043, 6052, 6020, 6055, 6057, 6016, 6058, 6059, 4354, 6060, 6018, 1370, 6104, 4457, 4639, 2]
 // Exports: default
 
-// Module 5974 (_isAccessibleChannelOrThreadPath)
+// Module 6040 (_isAccessibleChannelOrThreadPath)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "isSubscriptionGated" /* 1983 */;
-import closure_5 from "shouldShowOnboarding" /* 5344 */;
+import closure_5 from "shouldShowOnboarding" /* 5410 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
@@ -37,7 +37,7 @@ function _isAccessibleChannelOrThreadPath() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

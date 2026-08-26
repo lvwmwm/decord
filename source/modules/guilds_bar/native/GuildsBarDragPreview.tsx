@@ -1,16 +1,16 @@
-// Module ID: 15721
-// Function ID: 15722
+// Module ID: 15800
+// Function ID: 15801
 // Name: PreviewItem
-// Dependencies: [19, 5262, 15644, 15645, 21, 4380, 15382, 4120, 4814, 8160, 4108, 4101, 712, 15654, 15676, 4010, 2]
+// Dependencies: [19, 5328, 15723, 15724, 21, 4444, 15461, 4184, 4878, 8227, 4172, 4165, 712, 15733, 15755, 4074, 2]
 
-// Module 15721 (PreviewItem)
-import isIterable from "isIterable" /* 4010 */;
+// Module 15800 (PreviewItem)
+import isIterable from "isIterable" /* 4074 */;
 import importAllResult from "noop" /* 19 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5262 */;
-import closure_5 from "withEqualityFn" /* 15644 */;
-import { GUILD_ITEM_INSET_LEFT } from "GUILD_ITEM_SIZE" /* 15645 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5328 */;
+import closure_5 from "withEqualityFn" /* 15723 */;
+import { GUILD_ITEM_INSET_LEFT } from "GUILD_ITEM_SIZE" /* 15724 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function PreviewItem(dragRegion) {
@@ -137,7 +137,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "accessibilityRole", expanded: 1895956482, children: 80 };
+        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "call", expanded: 32195649, children: 762380800 };
         obj[0] = listInsets.FOLDER;
         const items = [tmp2];
         obj[6] = items;
@@ -341,7 +341,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "GUILD_MEMBER_UPDATE", scrollPosition: "lg", dragRegion: "icon-strong", windowSize: null, dropComplete: "o", listInsets: "heading-lg/medium" };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "GUILD_MEMBER_UPDATE", scrollPosition: "lg", dragRegion: "icon-strong", windowSize: null, dropComplete: 12, listInsets: 54 };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;

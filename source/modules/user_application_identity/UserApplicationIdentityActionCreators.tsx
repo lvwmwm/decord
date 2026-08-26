@@ -1,11 +1,11 @@
-// Module ID: 12655
-// Function ID: 12656
+// Module ID: 12728
+// Function ID: 12729
 // Name: fetchStore
-// Dependencies: [5, 12654, 676, 709, 530, 589, 2]
+// Dependencies: [5, 12727, 676, 709, 530, 589, 2]
 
-// Module 12655 (fetchStore)
+// Module 12728 (fetchStore)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import importDefaultResult from "map" /* 12654 */;
+import importDefaultResult from "map" /* 12727 */;
 import ME from "ME" /* 676 */;
 import initialize from "initialize" /* 589 */;
 
@@ -28,7 +28,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ let obj = {
             obj.dispatch(obj6);
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp24) {
           closure_2 = tmp24;
@@ -117,7 +117,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -152,7 +152,7 @@ let obj = {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           v0 = tmp;

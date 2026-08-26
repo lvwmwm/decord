@@ -1,10 +1,10 @@
-// Module ID: 4021
-// Function ID: 4022
+// Module ID: 4085
+// Function ID: 4086
 // Name: version
-// Dependencies: [32, 4022, 2]
+// Dependencies: [32, 4086, 2]
 
-// Module 4021 (version)
-import sortedIndexByDefault from "sortedIndexBy" /* 4022 */;
+// Module 4085 (version)
+import sortedIndexByDefault from "sortedIndexBy" /* 4086 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 let closure_3 = [];

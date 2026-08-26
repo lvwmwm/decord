@@ -1,9 +1,9 @@
-// Module ID: 7209
-// Function ID: 7210
+// Module ID: 7275
+// Function ID: 7276
 // Name: isStable
 // Dependencies: [1626, 500, 2]
 
-// Module 7209 (isStable)
+// Module 7275 (isStable)
 import getConstantsAll from "getConstants" /* 1626 */;
 import set from "set" /* 500 */;
 

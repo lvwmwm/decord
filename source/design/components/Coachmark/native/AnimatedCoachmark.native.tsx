@@ -1,13 +1,13 @@
-// Module ID: 8808
-// Function ID: 8809
+// Module ID: 8876
+// Function ID: 8877
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4120, 8809, 1356, 8805, 8806, 2]
+// Dependencies: [32, 19, 17, 21, 4184, 8877, 1356, 8873, 8874, 2]
 // Exports: AnimatedCoachmark
 
-// Module 8808 (renderTooltipItem)
-import _modDef4120 from "module_4120" /* 4120 */;
-import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 8806 */;
-import Coachmark from "Coachmark" /* 8809 */;
+// Module 8876 (renderTooltipItem)
+import _modDef4184 from "module_4184" /* 4184 */;
+import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 8874 */;
+import Coachmark from "Coachmark" /* 8877 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
@@ -25,7 +25,7 @@ function renderTooltipItem(arg0, enterExitAnimatedStyles) {
     tmpResult = tmp(Coachmark.CoachmarkContainer, obj);
   }
   obj[2] = tmpResult;
-  return jsx(_modDef4120.View, { style: items, pointerEvents: "box-none", children: null });
+  return jsx(_modDef4184.View, { style: items, pointerEvents: "box-none", children: null });
 }
 let result = require("set").fileFinishedImporting("design/components/Coachmark/native/AnimatedCoachmark.native.tsx");
 
@@ -34,7 +34,7 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   const merged = Object.assign(visible, Object.create(null));
   importDefault = undefined;
   [tmp3, c1] = callback(React.useState(visible), 2);
-  let obj = visible(8805);
+  let obj = visible(8873);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
   const effect = React.useEffect(() => {

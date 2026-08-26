@@ -1,14 +1,14 @@
-// Module ID: 6157
-// Function ID: 6158
+// Module ID: 6223
+// Function ID: 6224
 // Name: AccountAgeTier5LargeBadge
-// Dependencies: [21, 5374, 6158, 2]
+// Dependencies: [21, 5440, 6224, 2]
 // Exports: AccountAgeTier5LargeBadge
 
-// Module 6157 (AccountAgeTier5LargeBadge)
+// Module 6223 (AccountAgeTier5LargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import vanityUrlDefault from "vanityUrl" /* 6158 */;
+import preloadDefault from "preload" /* 5440 */;
+import vanityUrlDefault from "vanityUrl" /* 6224 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AccountAgeTier5LargeBadge.native.tsx");

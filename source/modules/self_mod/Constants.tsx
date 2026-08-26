@@ -1,10 +1,10 @@
-// Module ID: 10406
-// Function ID: 10407
+// Module ID: 10474
+// Function ID: 10475
 // Name: LOCATION_CONTEXT_MOBILE
 // Dependencies: [1236, 2]
 // Exports: getInappropriateConversationsSafetyTips, getSafetyToolsActionSheetKey, getStrangerDangerSafetyTips
 
-// Module 10406 (LOCATION_CONTEXT_MOBILE)
+// Module 10474 (LOCATION_CONTEXT_MOBILE)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

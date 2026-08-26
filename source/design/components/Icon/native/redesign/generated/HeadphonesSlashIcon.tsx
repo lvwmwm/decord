@@ -1,14 +1,14 @@
-// Module ID: 9330
-// Function ID: 9331
+// Module ID: 9398
+// Function ID: 9399
 // Name: HeadphonesSlashIcon
-// Dependencies: [19, 21, 712, 4100, 9331, 2]
+// Dependencies: [19, 21, 712, 4164, 9399, 2]
 // Exports: HeadphonesSlashIcon
 
-// Module 9330 (HeadphonesSlashIcon)
+// Module 9398 (HeadphonesSlashIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 9331 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 9399 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

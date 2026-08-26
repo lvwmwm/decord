@@ -1,30 +1,30 @@
-// Module ID: 5372
-// Function ID: 5373
+// Module ID: 5438
+// Function ID: 5439
 // Name: _getBackgroundGradientColor
-// Dependencies: [32, 5, 19, 17, 4372, 5371, 1391, 1910, 1981, 5348, 5349, 5345, 676, 21, 1222, 4380, 5373, 712, 1491, 4228, 5374, 4826, 691, 589, 1629, 1500, 4120, 5353, 5355, 1435, 1896, 698, 4588, 4381, 5376, 5434, 5436, 1370, 5825, 4376, 1236, 2]
+// Dependencies: [32, 5, 19, 17, 4436, 5437, 1391, 1910, 1981, 5414, 5415, 5411, 676, 21, 1222, 4444, 5439, 712, 1491, 4292, 5440, 4891, 691, 589, 1629, 1500, 4184, 5419, 5421, 1435, 1896, 698, 4652, 4445, 5442, 5500, 5502, 1370, 5891, 4440, 1236, 2]
 // Exports: default
 
-// Module 5372 (_getBackgroundGradientColor)
+// Module 5438 (_getBackgroundGradientColor)
 import keys from "keys" /* 691 */;
 import ThemesDefault from "Themes" /* 712 */;
-import hexToRgba from "hexToRgba" /* 4228 */;
-import LinearGradientDefault from "LinearGradient" /* 4826 */;
-import preloadDefault from "preload" /* 5374 */;
+import hexToRgba from "hexToRgba" /* 4292 */;
+import LinearGradientDefault from "LinearGradient" /* 4891 */;
+import preloadDefault from "preload" /* 5440 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
-import closure_9 from "get" /* 5371 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_9 from "get" /* 5437 */;
 import closure_10 from "ensureGuildLoaded" /* 1391 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
 import closure_12 from "handleConnectionOpen" /* 1981 */;
-import closure_13 from "handleUpdate" /* 5348 */;
-import { OnboardingPromptType } from "serverPromptToClientPrompt" /* 5349 */;
-import { GuildOnboardingModalStates as closure_15 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5345 */;
+import closure_13 from "handleUpdate" /* 5414 */;
+import { OnboardingPromptType } from "serverPromptToClientPrompt" /* 5415 */;
+import { GuildOnboardingModalStates as closure_15 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5411 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function _getBackgroundGradientColor() {

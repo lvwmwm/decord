@@ -1,14 +1,14 @@
-// Module ID: 8790
-// Function ID: 8791
+// Module ID: 8858
+// Function ID: 8859
 // Name: maybeFetchTopEmojisByGuild
-// Dependencies: [1922, 5282, 5285, 8791, 2]
+// Dependencies: [1922, 5348, 5351, 8859, 2]
 // Exports: maybeFetchTopEmojisByGuild
 
-// Module 8790 (maybeFetchTopEmojisByGuild)
-import fetchTopEmojis from "fetchTopEmojis" /* 8791 */;
+// Module 8858 (maybeFetchTopEmojisByGuild)
+import fetchTopEmojis from "fetchTopEmojis" /* 8859 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import closure_3 from "getEmojiToGroupId" /* 5282 */;
-import closure_4 from "initialize" /* 5285 */;
+import closure_3 from "getEmojiToGroupId" /* 5348 */;
+import closure_4 from "initialize" /* 5351 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/emojis/top_emojis/TopEmojisUtils.tsx");

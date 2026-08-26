@@ -1,17 +1,17 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10082
+// Function ID: 10083
 // Name: BugReporterNotification
-// Dependencies: [19, 17, 10016, 676, 21, 4380, 712, 10002, 9943, 9924, 4611, 9926, 10017, 2009, 6125, 2]
+// Dependencies: [19, 17, 10083, 676, 21, 4444, 712, 10069, 10010, 9991, 4675, 9993, 10084, 2009, 6191, 2]
 // Exports: BugReporterNotification
 
-// Module 10015 (BugReporterNotification)
+// Module 10082 (BugReporterNotification)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "zustandStore" /* 10016 */;
+import closure_6 from "zustandStore" /* 10083 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
@@ -32,7 +32,7 @@ export const BugReporterNotification = function BugReporterNotification(notifica
   obj[1] = <closure_4 source={{ uri: notification.imageUri }} style={tmp.preview} />;
   obj = {
     header: memo,
-    children: jsx(notification(9943).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
+    children: jsx(notification(10010).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
     rightAccessory: <closure_5 source={{ uri: notification.imageUri }} style={tmp.preview} />,
     onPress() {
       let obj = closure_1_6;
@@ -59,9 +59,9 @@ export const BugReporterNotification = function BugReporterNotification(notifica
     },
     notification
   };
-  return jsx(notification(10002).NotificationPressable, {
+  return jsx(notification(10069).NotificationPressable, {
     header: memo,
-    children: jsx(notification(9943).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
+    children: jsx(notification(10010).SystemMessageText, { text: "Bzzz! Found a bug? Tap to submit." }),
     rightAccessory: <closure_5 source={{ uri: notification.imageUri }} style={tmp.preview} />,
     onPress() {
       let obj = closure_1_6;

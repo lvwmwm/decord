@@ -1,14 +1,14 @@
-// Module ID: 6223
-// Function ID: 6224
+// Module ID: 6289
+// Function ID: 6290
 // Name: BadgePacksAbstractUI
-// Dependencies: [21, 5374, 6224, 2]
+// Dependencies: [21, 5440, 6290, 2]
 // Exports: BadgePacksAbstractUI
 
-// Module 6223 (BadgePacksAbstractUI)
+// Module 6289 (BadgePacksAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6224 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6290 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BadgePacksAbstractUI.native.tsx");

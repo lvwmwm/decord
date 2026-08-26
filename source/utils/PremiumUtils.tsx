@@ -1,37 +1,37 @@
-// Module ID: 4043
-// Function ID: 4044
+// Module ID: 4107
+// Function ID: 4108
 // Name: getPremiumPlanItem
-// Dependencies: [32, 19, 4044, 1922, 4045, 4046, 4048, 4049, 676, 1924, 4057, 505, 3, 4058, 4055, 1946, 38, 1236, 2921, 3979, 4067, 4088, 5962, 4056, 12935, 687, 589, 10489, 4274, 13533, 7162, 1942, 1938, 8846, 2]
+// Dependencies: [32, 19, 4108, 1922, 4109, 4110, 4112, 4113, 676, 1924, 4121, 505, 3, 4122, 4119, 1946, 38, 1236, 2985, 4043, 4131, 4152, 6028, 4120, 13009, 687, 589, 10557, 4338, 13606, 7228, 1942, 1938, 8914, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
-// Module 4043 (getPremiumPlanItem)
+// Module 4107 (getPremiumPlanItem)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
-import messagesProxyDefault from "messagesProxy" /* 2921 */;
-import hooksDefault from "hooks" /* 3979 */;
-import getNonePlanIdForIntervalType from "getNonePlanIdForIntervalType" /* 4055 */;
-import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4058 */;
-import resetCache from "resetCache" /* 4067 */;
-import formatSize from "formatSize" /* 4274 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 5962 */;
-import apexExperiment from "apexExperiment" /* 7162 */;
-import roundFPCountdownUnits from "roundFPCountdownUnits" /* 12935 */;
-import ProductCatalogFeature from "ProductCatalogFeature" /* 13533 */;
+import messagesProxyDefault from "messagesProxy" /* 2985 */;
+import hooksDefault from "hooks" /* 4043 */;
+import getNonePlanIdForIntervalType from "getNonePlanIdForIntervalType" /* 4119 */;
+import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4122 */;
+import resetCache from "resetCache" /* 4131 */;
+import formatSize from "formatSize" /* 4338 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6028 */;
+import apexExperiment from "apexExperiment" /* 7228 */;
+import roundFPCountdownUnits from "roundFPCountdownUnits" /* 13009 */;
+import ProductCatalogFeature from "ProductCatalogFeature" /* 13606 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { isNoneSubscription } from "createFromServer" /* 4044 */;
+import { isNoneSubscription } from "createFromServer" /* 4108 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "handlePaymentSourceCreateEnd" /* 4045 */;
-import closure_8 from "handlePaymentSourceUpdate" /* 4046 */;
-import closure_9 from "addSubscriptionPlan" /* 4048 */;
-import closure_10 from "reset" /* 4049 */;
+import closure_7 from "handlePaymentSourceCreateEnd" /* 4109 */;
+import closure_8 from "handlePaymentSourceUpdate" /* 4110 */;
+import closure_9 from "addSubscriptionPlan" /* 4112 */;
+import closure_10 from "reset" /* 4113 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
-import { getPremiumGroupProductName as closure_47 } from "SubscriptionStatusTypes" /* 4057 */;
+import { getPremiumGroupProductName as closure_47 } from "SubscriptionStatusTypes" /* 4121 */;
 import sum from "sum" /* 505 */;
 import set from "set" /* 2 */;
 
@@ -140,8 +140,8 @@ function getPrice(id) {
         }
         obj5[2] = currency;
         obj3[1] = obj5;
-        const result = currency2(4058).captureBillingException(error, obj3);
-        const obj10 = currency2(4058);
+        const result = currency2(4122).captureBillingException(error, obj3);
+        const obj10 = currency2(4122);
       }
       throw error;
     } else {
@@ -152,7 +152,7 @@ function getPrice(id) {
     const _Error2 = Error;
     const error1 = new Error("Plan not found");
     if (flag3) {
-      obj2 = currency2(4058);
+      obj2 = currency2(4122);
       const obj6 = { planId: null, currency: null };
       obj6[0] = id;
       let str = currency;
@@ -615,7 +615,7 @@ function getPlanDescription(arg0) {
   const tmp4 = getPrice(dependencyMap3[planId].id, false, false, obj, true);
   const interval = tmp.interval;
   const tmp5 = planIdsForSkus;
-  obj1 = planIdsForSkus(5962);
+  obj1 = planIdsForSkus(6028);
   if (constants7.MONTH === interval) {
     const intl2 = tmp5(1236).intl;
     let stringResult = intl2.string(tmp5(1236).t.FPybU7);
@@ -853,10 +853,10 @@ function getPlanDescription(arg0) {
                 } else if (tmp17.PAST_DUE === CANCELED) {
                   const intl7 = tmp5(1236).intl;
                   const obj12 = { endDate: null, onClick: null };
-                  let tmp5Result = tmp5(4067);
+                  let tmp5Result = tmp5(4131);
                   obj12[0] = tmp5Result.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
                   obj12[1] = function onClick() {
-                    callback(4088)("https://support.discord.com/hc/articles/23082866222871");
+                    callback(4152)("https://support.discord.com/hc/articles/23082866222871");
                   };
                   return intl7.format(tmp5(1236).t["d+0vwo"], obj12);
                 } else if (!hasDiscountApplied) {
@@ -991,10 +991,10 @@ function getPlanDescription(arg0) {
             } else if (tmp17.PAST_DUE === CANCELED) {
               const intl15 = tmp5(1236).intl;
               const obj20 = { endDate: null, onClick: null };
-              tmp5Result = tmp5(4067);
+              tmp5Result = tmp5(4131);
               obj20[0] = tmp5Result.dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
               obj20[1] = function onClick() {
-                callback(4088)("https://support.discord.com/hc/articles/23082866222871");
+                callback(4152)("https://support.discord.com/hc/articles/23082866222871");
               };
               return intl15.format(tmp5(1236).t["d+0vwo"], obj20);
             } else {
@@ -1069,9 +1069,9 @@ function getPlanDescription(arg0) {
         } else if (tmp17.PAST_DUE === CANCELED) {
           const intl22 = tmp5(1236).intl;
           const obj26 = { endDate: null, onClick: null };
-          obj26[0] = tmp5(4067).dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
+          obj26[0] = tmp5(4131).dateFormat(getBillingGracePeriodDaysAndExpiresDate(subscription).expiresDate, "LL");
           obj26[1] = function onClick() {
-            callback(4088)("https://support.discord.com/hc/articles/23082866222871");
+            callback(4152)("https://support.discord.com/hc/articles/23082866222871");
           };
           return intl22.format(tmp5(1236).t["d+0vwo"], obj26);
         } else {
@@ -1190,7 +1190,7 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
       const tmp11 = importDefault;
       const tmp13 = hooksDefault;
       obj2[0] = hooksDefault(prop4).diff(subscription.currentPeriodStart, "days");
-      obj2[1] = tmp11(3979)(subscription.metadata.grace_period_expires_date);
+      obj2[1] = tmp11(4043)(subscription.metadata.grace_period_expires_date);
       return obj2;
     } else {
       const tmp8 = null == subscription.paymentSourceId ? closure_19 : closure_30;
@@ -1999,7 +1999,7 @@ function getItemsWithUpsertedPlanIdForGroup(renewalMutations, basePlanId, arg2, 
     obj[0] = basePlanId;
     obj[1] = closure_31;
     obj[1] = obj;
-    const checkoutError = new _require(10489).CheckoutError(obj);
+    const checkoutError = new _require(10557).CheckoutError(obj);
     throw checkoutError;
   }
 }
@@ -2549,8 +2549,8 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1938).Perk.SHOP_DISCOUNTS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13533);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13533).COLLECTIBLES, currentUser);
+      tmpResult = tmp(13606);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13606).COLLECTIBLES, currentUser);
     }
     return isCrepeEnabled;
   },
@@ -2565,8 +2565,8 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1938).Perk.MORE_QUEST_ORBS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13533);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13533).QUEST_ORB_MULTIPLIER, perks);
+      tmpResult = tmp(13606);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13606).QUEST_ORB_MULTIPLIER, perks);
     }
     return isCrepeEnabled;
   },

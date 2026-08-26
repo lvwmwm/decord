@@ -1,14 +1,14 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10079
+// Function ID: 10080
 // Name: RetryIcon
-// Dependencies: [19, 21, 712, 4100, 10013, 2]
+// Dependencies: [19, 21, 712, 4164, 10080, 2]
 // Exports: RetryIcon
 
-// Module 10012 (RetryIcon)
+// Module 10079 (RetryIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 10013 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 10080 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12610
+// Function ID: 12611
 // Name: UserProfileEditNoteModal
-// Dependencies: [19, 21, 4611, 5889, 501, 1236, 4376, 5376, 12540, 2]
+// Dependencies: [19, 21, 4675, 5955, 501, 1236, 4440, 5442, 12611, 2]
 // Exports: default
 
-// Module 12539 (UserProfileEditNoteModal)
+// Module 12610 (UserProfileEditNoteModal)
 import noopAll from "noop" /* 19 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import NavigationStack from "NavigationStack" /* 5889 */;
+import NavigationStack from "NavigationStack" /* 5955 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -40,9 +40,9 @@ export default function UserProfileEditNoteModal(arg0) {
     const obj = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
     const intl = callback(1236).intl;
     obj[2] = intl.string(callback(1236).t.sHHsOM);
-    return handleClose(callback(4376).Text, obj);
+    return handleClose(callback(4440).Text, obj);
   };
-  tmp2Result = tmp2(5376);
+  tmp2Result = tmp2(5442);
   obj2[2] = tmp2Result.getHeaderCloseButton(handleClose);
   obj2[3] = function render() {
     return handleClose(closure_1_0(closure_1_2[8]).default, { userId: closure_0, onSave: closure_1, onClose: handleClose });

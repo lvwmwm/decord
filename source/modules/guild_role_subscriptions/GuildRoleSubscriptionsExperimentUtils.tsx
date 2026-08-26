@@ -1,10 +1,10 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13519
+// Function ID: 13520
 // Name: GuildFeatures
 // Dependencies: [1910, 676, 647, 2]
 // Exports: hasEnabledMonetization, isGuildEligibleForTierTemplates, useGuildEligibleForTierTemplates
 
-// Module 13446 (GuildFeatures)
+// Module 13519 (GuildFeatures)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 import { GuildFeatures } from "ME" /* 676 */;
 

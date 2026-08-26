@@ -1,10 +1,10 @@
-// Module ID: 10661
-// Function ID: 10662
+// Module ID: 10729
+// Function ID: 10730
 // Name: clearRetryState
 // Dependencies: [5, 676, 687, 709, 530, 584, 2]
 // Exports: fetchAppStoreMetadata, getAppStoreMetadataCacheKey
 
-// Module 10661 (clearRetryState)
+// Module 10729 (clearRetryState)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
@@ -66,7 +66,7 @@ export const fetchAppStoreMetadata = function fetchAppStoreMetadata(closure_0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

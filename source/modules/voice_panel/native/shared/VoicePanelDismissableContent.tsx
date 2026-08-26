@@ -1,20 +1,20 @@
-// Module ID: 16443
-// Function ID: 16444
+// Module ID: 16526
+// Function ID: 16527
 // Name: VoiceControlsNuxActionSheetImporter
-// Dependencies: [32, 19, 4396, 11841, 4401, 21, 16444, 2009, 11840, 4120, 1377, 10151, 10152, 2]
+// Dependencies: [32, 19, 4460, 11914, 4465, 21, 16527, 2009, 11913, 4184, 1377, 10218, 10219, 2]
 
-// Module 16443 (VoiceControlsNuxActionSheetImporter)
+// Module 16526 (VoiceControlsNuxActionSheetImporter)
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "getParticipants" /* 4396 */;
-import { VoicePanelModes } from "VoicePanelModes" /* 11841 */;
-import { isActivityParticipant } from "ParticipantTypes" /* 4401 */;
+import closure_5 from "getParticipants" /* 4460 */;
+import { VoicePanelModes } from "VoicePanelModes" /* 11914 */;
+import { isActivityParticipant } from "ParticipantTypes" /* 4465 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
 function VoiceControlsNuxActionSheetImporter() {
-  return asyncRequireImpl(16444, dependencyMap.paths);
+  return asyncRequireImpl(16527, dependencyMap.paths);
 }
 let c4 = importAllResult;
 let closure_10 = { code: "function VoicePanelDismissableContentTsx1(){const{mode,VoicePanelModes,focused}=this.__closure;var _focused$get;return mode.get()===VoicePanelModes.PANEL?(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id:undefined;}" };

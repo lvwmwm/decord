@@ -1,24 +1,24 @@
-// Module ID: 14413
-// Function ID: 14414
+// Module ID: 14486
+// Function ID: 14487
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5356, 1218, 5106, 1996, 676, 21, 4380, 712, 4315, 589, 12682, 5842, 5231, 4347, 14412, 2009, 10565, 14414, 8118, 14417, 4813, 14418, 2]
+// Dependencies: [19, 17, 5422, 1218, 5172, 1996, 676, 21, 4444, 712, 4379, 589, 12755, 5908, 5297, 4411, 14485, 2009, 10633, 14487, 8185, 14490, 4877, 14491, 2]
 // Exports: UserSettingsConnections
 
-// Module 14413 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14486 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import ThemesDefault from "Themes" /* 712 */;
-import useThemeDefault from "useTheme" /* 4315 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12682 */;
-import EmptyStateCardDefault from "EmptyStateCard" /* 14414 */;
+import useThemeDefault from "useTheme" /* 4379 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12755 */;
+import EmptyStateCardDefault from "EmptyStateCard" /* 14487 */;
 import closure_3 from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "recomputeFromAppTokens" /* 5356 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5356 */;
+import closure_5 from "recomputeFromAppTokens" /* 5422 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5422 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
-import closure_8 from "set" /* 5106 */;
+import closure_8 from "set" /* 5172 */;
 import closure_9 from "_getSystemLocale" /* 1996 */;
 import { AnalyticsLocations } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -95,9 +95,9 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
       ];
       obj = { spacing: 16, children: null };
       obj[1] = accounts.map((account) => closure_1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id));
-      items5[1] = callback(tmp4(4813).Stack, obj);
+      items5[1] = callback(tmp4(4877).Stack, obj);
       obj[1] = items5;
-      tmp14 = callback2(tmp4(8118).Form, obj);
+      tmp14 = callback2(tmp4(8185).Form, obj);
     }
     return tmp14;
   }

@@ -1,9 +1,9 @@
-// Module ID: 4284
-// Function ID: 4285
+// Module ID: 4348
+// Function ID: 4349
 // Name: prototype
 // Dependencies: [676, 2]
 
-// Module 4284 (prototype)
+// Module 4348 (prototype)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

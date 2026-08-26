@@ -1,13 +1,13 @@
-// Module ID: 13472
-// Function ID: 13473
+// Module ID: 13545
+// Function ID: 13546
 // Name: items
-// Dependencies: [19, 21, 13470, 7985, 2]
+// Dependencies: [19, 21, 13543, 8052, 2]
 // Exports: GuildBadgeWaterDrop
 
-// Module 13472 (items)
+// Module 13545 (items)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 7985 */;
-import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13470 */;
+import inlineStyles from "inlineStyles" /* 8052 */;
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13543 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,13 +1,13 @@
-// Module ID: 12922
-// Function ID: 12923
+// Module ID: 12996
+// Function ID: 12997
 // Name: MAX_REFERRALS_SENT
-// Dependencies: [19, 1922, 7059, 589, 8464, 2]
+// Dependencies: [19, 1922, 7125, 589, 8531, 2]
 // Exports: useReferralProgramBannerDetails
 
-// Module 12922 (MAX_REFERRALS_SENT)
+// Module 12996 (MAX_REFERRALS_SENT)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import closure_4 from "emitChanges" /* 7059 */;
+import closure_4 from "emitChanges" /* 7125 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramBannerDetails.tsx");

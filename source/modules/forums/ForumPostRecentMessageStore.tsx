@@ -1,14 +1,14 @@
-// Module ID: 6032
-// Function ID: 6033
+// Module ID: 6098
+// Function ID: 6099
 // Name: handleLoadThreadsSuccess
-// Dependencies: [1391, 1922, 11, 4625, 1370, 589, 709, 2]
+// Dependencies: [1391, 1922, 11, 4689, 1370, 589, 709, 2]
 
-// Module 6032 (handleLoadThreadsSuccess)
+// Module 6098 (handleLoadThreadsSuccess)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4625 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4689 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 

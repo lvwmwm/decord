@@ -1,14 +1,14 @@
-// Module ID: 16401
-// Function ID: 16402
+// Module ID: 16482
+// Function ID: 16483
 // Name: trackActivityThermalStateNoticeShown
-// Dependencies: [1391, 4454, 1390, 676, 4015, 698, 2]
+// Dependencies: [1391, 4518, 1390, 676, 4079, 698, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 16401 (trackActivityThermalStateNoticeShown)
+// Module 16482 (trackActivityThermalStateNoticeShown)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId" /* 4015 */;
+import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId" /* 4079 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "createRTCConnection" /* 4454 */;
+import closure_4 from "createRTCConnection" /* 4518 */;
 import closure_5 from "participantFromServer" /* 1390 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 

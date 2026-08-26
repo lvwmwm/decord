@@ -1,11 +1,11 @@
-// Module ID: 8792
-// Function ID: 8793
+// Module ID: 8860
+// Function ID: 8861
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [5282, 1925, 647, 2]
+// Dependencies: [5348, 1925, 647, 2]
 // Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 8792 (useTopAndNewlyAddedEmojis)
-import closure_2 from "getEmojiToGroupId" /* 5282 */;
+// Module 8860 (useTopAndNewlyAddedEmojis)
+import closure_2 from "getEmojiToGroupId" /* 5348 */;
 import { EmojiIntention } from "set" /* 1925 */;
 
 const require = arg1;

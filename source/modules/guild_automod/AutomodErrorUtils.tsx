@@ -1,10 +1,10 @@
-// Module ID: 7467
-// Function ID: 7468
+// Module ID: 7533
+// Function ID: 7534
 // Name: getAutomodErrorMessageFromErrorResponse
-// Dependencies: [1391, 676, 1236, 7437, 2]
+// Dependencies: [1391, 676, 1236, 7503, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 7467 (getAutomodErrorMessageFromErrorResponse)
+// Module 7533 (getAutomodErrorMessageFromErrorResponse)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 import { AbortCodes } from "ME" /* 676 */;

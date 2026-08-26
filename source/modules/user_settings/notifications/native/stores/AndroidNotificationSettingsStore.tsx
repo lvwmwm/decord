@@ -1,12 +1,12 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14961
+// Function ID: 14962
 // Name: _initializeAndroidNotificationSettingsStore
-// Dependencies: [5, 700, 500, 10861, 705, 4010, 2]
+// Dependencies: [5, 700, 500, 10933, 705, 4074, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
 
-// Module 14882 (_initializeAndroidNotificationSettingsStore)
-import isIterable from "isIterable" /* 4010 */;
-import NativeModulesDefault from "NativeModules" /* 10861 */;
+// Module 14961 (_initializeAndroidNotificationSettingsStore)
+import isIterable from "isIterable" /* 4074 */;
+import NativeModulesDefault from "NativeModules" /* 10933 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import identity from "identity" /* 700 */;
 
@@ -25,7 +25,7 @@ function _initializeAndroidNotificationSettingsStore() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -51,7 +51,7 @@ function _initializeAndroidNotificationSettingsStore() {
               closure_3 = 2;
               c4 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_1(10861).getLightsEnabled();
+              obj1[0] = closure_1_1(10933).getLightsEnabled();
               return obj1;
             }
             obj16 = closure_1_0(500);
@@ -71,7 +71,7 @@ function _initializeAndroidNotificationSettingsStore() {
               return obj2;
             } else {
               callback = arg1;
-              let obj8 = callback2(10861);
+              let obj8 = callback2(10933);
               closure_3 = 3;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -90,7 +90,7 @@ function _initializeAndroidNotificationSettingsStore() {
               return obj4;
             } else {
               callback2 = arg1;
-              let obj5 = callback2(10861);
+              let obj5 = callback2(10933);
               closure_3 = 4;
               c4 = 1;
               obj5 = { value: null, done: false };
@@ -109,7 +109,7 @@ function _initializeAndroidNotificationSettingsStore() {
               return obj6;
             } else {
               dependencyMap = arg1;
-              obj2 = callback2(10861);
+              obj2 = callback2(10933);
               closure_3 = 5;
               c4 = 1;
               const obj7 = { value: null, done: false };

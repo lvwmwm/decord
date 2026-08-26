@@ -1,10 +1,10 @@
-// Module ID: 11979
-// Function ID: 11980
+// Module ID: 12052
+// Function ID: 12053
 // Name: isStaff
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 11979 (isStaff)
+// Module 12052 (isStaff)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

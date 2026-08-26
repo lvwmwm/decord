@@ -1,24 +1,24 @@
-// Module ID: 16730
-// Function ID: 16731
+// Module ID: 16815
+// Function ID: 16816
 // Name: getData
-// Dependencies: [5, 32, 19, 1218, 1391, 4742, 1992, 4202, 4741, 13866, 8372, 676, 8371, 1955, 1435, 10679, 5981, 589, 5822, 11, 709, 8512, 1236, 38, 4627, 7445, 8376, 4955, 530, 687, 2]
+// Dependencies: [5, 32, 19, 1218, 1391, 4806, 1992, 4266, 4805, 13939, 8439, 676, 8438, 1955, 1435, 10751, 6047, 589, 5888, 11, 709, 8579, 1236, 38, 4691, 7511, 8443, 5021, 530, 687, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 16730 (getData)
+// Module 16815 (getData)
 import _modDef38 from "module_38" /* 38 */;
-import isInteractionComponent from "isInteractionComponent" /* 8371 */;
+import isInteractionComponent from "isInteractionComponent" /* 8438 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import { DraftType } from "handleChanged" /* 4742 */;
+import { DraftType } from "handleChanged" /* 4806 */;
 import closure_9 from "trackCommunicationDisabled" /* 1992 */;
-import closure_10 from "handleConnectionOpen" /* 4202 */;
-import closure_11 from "map" /* 4741 */;
-import closure_12 from "getModalState" /* 13866 */;
-import { InteractionModalState } from "getModalState" /* 13866 */;
-import closure_14 from "getInteractionComponentStates" /* 8372 */;
+import closure_10 from "handleConnectionOpen" /* 4266 */;
+import closure_11 from "map" /* 4805 */;
+import closure_12 from "getModalState" /* 13939 */;
+import { InteractionModalState } from "getModalState" /* 13939 */;
+import closure_14 from "getInteractionComponentStates" /* 8439 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;
@@ -2077,7 +2077,7 @@ function _submitModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2129,7 +2129,7 @@ function _submitModal() {
             obj[0] = arg1;
             return obj;
           } else {
-            closure_5 = arr.map((closure_0, closure_1) => lib(4955).getAttachmentPayload(closure_0, closure_1));
+            closure_5 = arr.map((closure_0, closure_1) => lib(5021).getAttachmentPayload(closure_0, closure_1));
             const obj4 = { uploads: null };
             obj4[0] = arr;
             c6 = callback2(lib.customId, lib.components, obj4);
@@ -2175,7 +2175,7 @@ function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c6 = tmp;
@@ -2251,7 +2251,7 @@ export const useModalState = function useModalState(channelId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -2299,7 +2299,7 @@ export const useModalState = function useModalState(channelId) {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         c0 = tmp;
         throw tmp13;

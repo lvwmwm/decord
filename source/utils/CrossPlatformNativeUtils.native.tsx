@@ -1,9 +1,9 @@
-// Module ID: 4374
-// Function ID: 4375
+// Module ID: 4438
+// Function ID: 4439
 // Name: set
 // Dependencies: [2]
 
-// Module 4374 (set)
+// Module 4438 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/CrossPlatformNativeUtils.native.tsx");

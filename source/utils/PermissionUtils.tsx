@@ -1,17 +1,17 @@
-// Module ID: 4030
-// Function ID: 4031
+// Module ID: 4094
+// Function ID: 4095
 // Name: applyOverwrites
-// Dependencies: [1984, 4026, 4027, 1395, 1434, 1986, 1218, 1391, 1992, 1985, 1910, 1922, 676, 506, 12, 4031, 4014, 11, 1989, 1955, 2]
+// Dependencies: [1984, 4090, 4091, 1395, 1434, 1986, 1218, 1391, 1992, 1985, 1910, 1922, 676, 506, 12, 4095, 4078, 11, 1989, 1955, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 4030 (applyOverwrites)
+// Module 4094 (applyOverwrites)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
 import compareGuildRoles from "compareGuildRoles" /* 1989 */;
-import GuildMemberFlags from "GuildMemberFlags" /* 4031 */;
+import GuildMemberFlags from "GuildMemberFlags" /* 4095 */;
 import closure_4 from "initialize" /* 1984 */;
-import closure_5 from "initialize" /* 4026 */;
-import closure_6 from "storeThread" /* 4027 */;
+import closure_5 from "initialize" /* 4090 */;
+import closure_6 from "storeThread" /* 4091 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
 import { hasPermission } from "GuildRoleRecordTypeTag" /* 1986 */;
@@ -90,13 +90,13 @@ function applyOverwrites(id, member, closure_23, overwrites) {
       const tmp19Result2 = tmp19(506);
     }
     const obj10 = GuildMemberFlags;
-    const tmp28Result = tmp28(4014);
+    const tmp28Result = tmp28(4078);
     found1 = found;
     if (tmp34) {
       found1 = tmp19(506).filter(found, closure_28);
       const tmp19Result3 = tmp19(506);
     }
-    tmp34 = tmp28(4014).isMemberCommunicationDisabled(member) && !hasItem;
+    tmp34 = tmp28(4078).isMemberCommunicationDisabled(member) && !hasItem;
   }
   return found1;
 }

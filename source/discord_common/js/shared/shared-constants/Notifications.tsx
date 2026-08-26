@@ -1,9 +1,9 @@
-// Module ID: 4448
-// Function ID: 4449
+// Module ID: 4512
+// Function ID: 4513
 // Name: Notifications
 // Dependencies: [2]
 
-// Module 4448 (Notifications)
+// Module 4512 (Notifications)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/Notifications.tsx");

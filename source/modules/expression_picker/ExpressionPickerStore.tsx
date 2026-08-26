@@ -1,15 +1,15 @@
-// Module ID: 16409
-// Function ID: 16410
+// Module ID: 16490
+// Function ID: 16491
 // Name: withEqualityFn
-// Dependencies: [1338, 4612, 700, 4247, 705, 2]
+// Dependencies: [1338, 4676, 700, 4311, 705, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 16409 (withEqualityFn)
+// Module 16490 (withEqualityFn)
 import set from "set" /* 2 */;
 import ExpressionPickerViewType2 from "ExpressionPickerViewType" /* 1338 */;
-import uniqueIdDefault from "uniqueId" /* 4612 */;
+import uniqueIdDefault from "uniqueId" /* 4676 */;
 import identity from "identity" /* 700 */;
-import createJSONStorage from "createJSONStorage" /* 4247 */;
+import createJSONStorage from "createJSONStorage" /* 4311 */;
 
 let ExpressionPickerViewType = ExpressionPickerViewType2.ExpressionPickerViewType;
 let obj = { activeView: null, lastActiveView: null, activeViewType: null, activeChannelId: null, searchQuery: "", isSearchSuggestion: false, pickerId: uniqueIdDefault("uid_"), isNitroLockedSectionVisible: false, areOnlyNitroLockedSectionsVisible: false };

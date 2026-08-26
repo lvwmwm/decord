@@ -1,17 +1,17 @@
-// Module ID: 13903
-// Function ID: 13904
-// Dependencies: [5, 17, 4372, 676, 1305, 13904, 709, 698, 13907, 10397, 13905, 4227, 1363, 2]
+// Module ID: 13976
+// Function ID: 13977
+// Dependencies: [5, 17, 4436, 676, 1305, 13977, 709, 698, 13980, 10465, 13978, 4291, 1363, 2]
 
-// Module 13903
+// Module 13976
 import dispatcherDefault from "dispatcher" /* 709 */;
-import setSystemTheme from "setSystemTheme" /* 4227 */;
-import uDefault from "u" /* 10397 */;
-import AccessibilityFeatureFlagsDefault from "AccessibilityFeatureFlags" /* 13904 */;
-import A11Y_FEATURE_MAP from "A11Y_FEATURE_MAP" /* 13905 */;
-import updateSaturation from "updateSaturation" /* 13907 */;
+import setSystemTheme from "setSystemTheme" /* 4291 */;
+import uDefault from "u" /* 10465 */;
+import AccessibilityFeatureFlagsDefault from "AccessibilityFeatureFlags" /* 13977 */;
+import A11Y_FEATURE_MAP from "A11Y_FEATURE_MAP" /* 13978 */;
+import updateSaturation from "updateSaturation" /* 13980 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { SystemTheme } from "SystemThemeState" /* 1305 */;
 
@@ -61,7 +61,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ export default {
             closure_0 = arg1;
             const result = closure_0.updateScreenReaderEnabled(closure_0);
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;

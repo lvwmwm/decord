@@ -1,17 +1,17 @@
-// Module ID: 16095
-// Function ID: 16096
+// Module ID: 16176
+// Function ID: 16177
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7264, 4034, 21, 4380, 712, 1500, 5834, 5854, 1629, 589, 16096, 1892, 8930, 16097, 16100, 15801, 4325, 1236, 5480, 11250, 6136, 4815, 9771, 11456, 2]
+// Dependencies: [19, 17, 7330, 4098, 21, 4444, 712, 1500, 5900, 5920, 1629, 589, 16177, 1892, 8998, 16178, 16181, 15880, 4389, 1236, 5546, 11322, 6202, 4879, 9838, 11528, 2]
 // Exports: default
 
-// Module 16095 (FriendsScreen)
+// Module 16176 (FriendsScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "recountRelationshipTypes" /* 7264 */;
-import closure_6 from "markAllUserIdListsStale" /* 4034 */;
+import closure_5 from "recountRelationshipTypes" /* 7330 */;
+import closure_6 from "markAllUserIdListsStale" /* 4098 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

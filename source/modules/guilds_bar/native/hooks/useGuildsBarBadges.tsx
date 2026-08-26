@@ -1,21 +1,21 @@
-// Module ID: 15689
-// Function ID: 15690
+// Module ID: 15768
+// Function ID: 15769
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 9908, 4203, 1992, 1910, 4025, 1922, 676, 21, 4380, 589, 4204, 15690, 4101, 712, 1297, 15694, 15658, 15657, 2]
+// Dependencies: [109, 19, 9975, 4267, 1992, 1910, 4089, 1922, 676, 21, 4444, 589, 4268, 15769, 4165, 712, 1297, 15773, 15737, 15736, 2]
 // Exports: default
 
-// Module 15689 (useGuildsBarBadges)
+// Module 15768 (useGuildsBarBadges)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "computeAlertSettings" /* 9908 */;
-import closure_7 from "handleGatewayJoinRequestUpdate" /* 4203 */;
+import closure_6 from "computeAlertSettings" /* 9975 */;
+import closure_7 from "handleGatewayJoinRequestUpdate" /* 4267 */;
 import closure_8 from "trackCommunicationDisabled" /* 1992 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 let closure_3 = ["guildActivityIndicatorSource"];

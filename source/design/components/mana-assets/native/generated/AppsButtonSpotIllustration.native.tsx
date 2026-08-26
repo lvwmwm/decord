@@ -1,14 +1,14 @@
-// Module ID: 6191
-// Function ID: 6192
+// Module ID: 6257
+// Function ID: 6258
 // Name: AppsButtonSpotIllustration
-// Dependencies: [21, 5374, 6192, 2]
+// Dependencies: [21, 5440, 6258, 2]
 // Exports: AppsButtonSpotIllustration
 
-// Module 6191 (AppsButtonSpotIllustration)
+// Module 6257 (AppsButtonSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6192 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6258 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AppsButtonSpotIllustration.native.tsx");

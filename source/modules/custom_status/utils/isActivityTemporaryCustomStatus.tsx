@@ -1,10 +1,10 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15501
+// Function ID: 15502
 // Name: isActivityTemporaryCustomStatus
 // Dependencies: [676, 2]
 // Exports: isActivityTemporaryCustomStatus
 
-// Module 15422 (isActivityTemporaryCustomStatus)
+// Module 15501 (isActivityTemporaryCustomStatus)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 13581
-// Function ID: 13582
+// Module ID: 13654
+// Function ID: 13655
 // Name: generateBoxShadowStyle
 // Dependencies: [500, 2]
 // Exports: generateBoxShadowStyle
 
-// Module 13581 (generateBoxShadowStyle)
+// Module 13654 (generateBoxShadowStyle)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16368
+// Function ID: 16369
 // Name: _claimIncentivizedAccountLinkingReward
-// Dependencies: [32, 5, 5356, 16288, 676, 687, 530, 5367, 2]
+// Dependencies: [32, 5, 5422, 16369, 676, 687, 530, 5433, 2]
 // Exports: claimIncentivizedAccountLinkingReward
 
-// Module 16287 (_claimIncentivizedAccountLinkingReward)
+// Module 16368 (_claimIncentivizedAccountLinkingReward)
 import setDefault from "set" /* 687 */;
-import initializeDefault from "initialize" /* 5367 */;
+import initializeDefault from "initialize" /* 5433 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "recomputeFromAppTokens" /* 5356 */;
-import closure_5 from "map" /* 16288 */;
+import closure_4 from "recomputeFromAppTokens" /* 5422 */;
+import closure_5 from "map" /* 16369 */;
 import ME from "ME" /* 676 */;
 
 let require = arg1;
@@ -33,7 +33,7 @@ function _claimIncentivizedAccountLinkingReward() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

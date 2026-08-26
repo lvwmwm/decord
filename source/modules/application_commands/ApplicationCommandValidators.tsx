@@ -1,17 +1,17 @@
-// Module ID: 11741
-// Function ID: 11742
+// Module ID: 11814
+// Function ID: 11815
 // Name: validateNumericOptionRange
-// Dependencies: [1996, 4741, 1955, 10148, 38, 1236, 10146, 7127, 10149, 2]
+// Dependencies: [1996, 4805, 1955, 10215, 38, 1236, 10213, 7193, 10216, 2]
 
-// Module 11741 (validateNumericOptionRange)
+// Module 11814 (validateNumericOptionRange)
 import _modDef38 from "module_38" /* 38 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import buildCommand from "buildCommand" /* 7127 */;
-import getStringAll from "getString" /* 10146 */;
-import toChoiceBooleanValue from "toChoiceBooleanValue" /* 10148 */;
+import buildCommand from "buildCommand" /* 7193 */;
+import getStringAll from "getString" /* 10213 */;
+import toChoiceBooleanValue from "toChoiceBooleanValue" /* 10215 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "map" /* 4741 */;
+import closure_5 from "map" /* 4805 */;
 
 require = arg1;
 function validateNumericOptionRange(NumberResult, minValue, _8Y5zsp, CyRLmH, VD3Q_S) {
@@ -75,12 +75,12 @@ let obj = {
     }
     if (null != type2.choices) {
       let obj = { success: null };
-      let tmp3Result = tmp3(10148);
+      let tmp3Result = tmp3(10215);
       obj[0] = null != tmp3Result.findChoiceStringValue(type2.choices, surrogate);
       return obj;
     } else {
       if (type2.autocomplete) {
-        tmp3Result = tmp3(10148);
+        tmp3Result = tmp3(10215);
         if (null != tmp3Result.findAutocompleteChoiceStringValue(id, type2.name, surrogate)) {
           return { success: true };
         }
@@ -157,12 +157,12 @@ let obj = {
       if (0 !== trimmed.length) {
         if (null != type2.choices) {
           let obj = { success: null };
-          let tmp3Result = tmp3(10148);
+          let tmp3Result = tmp3(10215);
           obj[0] = null != tmp3Result.findChoiceNumberValue(type2.choices, trimmed);
           return obj;
         } else {
           if (type2.autocomplete) {
-            tmp3Result = tmp3(10148);
+            tmp3Result = tmp3(10215);
             if (null != tmp3Result.findAutocompleteChoiceNumberValue(id, type2.name, trimmed)) {
               return { success: true };
             }
@@ -200,12 +200,12 @@ let obj = {
       if (0 !== trimmed.length) {
         if (null != type2.choices) {
           let obj = { success: null };
-          let tmp3Result = tmp3(10148);
+          let tmp3Result = tmp3(10215);
           obj[0] = null != tmp3Result.findChoiceNumberValue(type2.choices, trimmed);
           return obj;
         } else {
           if (type2.autocomplete) {
-            tmp3Result = tmp3(10148);
+            tmp3Result = tmp3(10215);
             if (null != tmp3Result.findAutocompleteChoiceNumberValue(id, type2.name, trimmed)) {
               return { success: true };
             }
@@ -235,7 +235,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmpResult = tmp(10149);
+        const tmpResult = tmp(10216);
         const applicationCommandOption = tmpResult.resolveApplicationCommandOption(type.text, throwTypeErrorResult, id, { allowRoles: false });
         type = undefined;
         if (applicationCommandOption != null) {
@@ -258,7 +258,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const applicationCommandOption = tmp(10149).resolveApplicationCommandOption(type.text, throwTypeErrorResult, id);
+        const applicationCommandOption = tmp(10216).resolveApplicationCommandOption(type.text, throwTypeErrorResult, id);
         type = undefined;
         if (applicationCommandOption != null) {
           type = applicationCommandOption.type;
@@ -280,7 +280,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmp3Result = tmp3(10149);
+        const tmp3Result = tmp3(10216);
         const applicationCommandOption = tmp3Result.resolveApplicationCommandOption(type.text, throwTypeErrorResult, id, { allowUsers: false });
         type = undefined;
         if (applicationCommandOption != null) {
@@ -311,7 +311,7 @@ let obj = {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const applicationCommandOption = tmp4(10149).resolveApplicationCommandOption(type.text, throwTypeErrorResult, id);
+        const applicationCommandOption = tmp4(10216).resolveApplicationCommandOption(type.text, throwTypeErrorResult, id);
         let tmp10 = null != applicationCommandOption;
         if (tmp10) {
           let tmp11 = "userMention" === applicationCommandOption.type;

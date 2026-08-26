@@ -1,13 +1,13 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 13318
+// Function ID: 13319
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 13246, 1236, 13247, 13235, 1892, 5236, 2]
+// Dependencies: [19, 21, 13319, 1236, 13320, 13308, 1892, 5302, 2]
 // Exports: default
 
-// Module 13245 (NUFVoiceChannelsTemplate)
+// Module 13318 (NUFVoiceChannelsTemplate)
 import noopAll from "noop" /* 19 */;
-import NUFActionSheetTemplateDefault from "NUFActionSheetTemplate" /* 13246 */;
-import registerAssetDefault from "registerAsset" /* 13247 */;
+import NUFActionSheetTemplateDefault from "NUFActionSheetTemplate" /* 13319 */;
+import registerAssetDefault from "registerAsset" /* 13320 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

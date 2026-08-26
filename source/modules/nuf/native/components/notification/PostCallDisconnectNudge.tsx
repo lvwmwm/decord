@@ -1,18 +1,18 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 15962
+// Function ID: 15963
 // Name: PostCallDisconnectNudge
-// Dependencies: [32, 19, 1981, 4399, 11973, 11974, 21, 15882, 1236, 14883, 11975, 589, 6131, 1377, 11976, 4347, 15883, 2009, 2]
+// Dependencies: [32, 19, 1981, 4463, 12046, 12047, 21, 15961, 1236, 14962, 12048, 589, 6197, 1377, 12049, 4411, 15962, 2009, 2]
 // Exports: default, usePostCallDisconnectNudge
 
-// Module 15883 (PostCallDisconnectNudge)
+// Module 15962 (PostCallDisconnectNudge)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 15882 */;
+import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 15961 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "updateVoiceState" /* 4399 */;
-import { PermissionPromptType } from "set" /* 11973 */;
-import EventActionType from "EventActionType" /* 11974 */;
+import closure_6 from "updateVoiceState" /* 4463 */;
+import { PermissionPromptType } from "set" /* 12046 */;
+import EventActionType from "EventActionType" /* 12047 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -36,10 +36,10 @@ export default function PostCallDisconnectNudge(arg0) {
 };
 export const POST_CALL_DISCONNECT_NUDGE_KEY = "post-call-disconnect-nudge-key";
 export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() {
-  let obj = stateFromStores1(14883);
+  let obj = stateFromStores1(14962);
   let tmp2 = stateFromStores;
-  const canSeePushNotificationNudge = stateFromStores(11975).useCanSeePushNotificationNudge();
-  let obj2 = stateFromStores(11975);
+  const canSeePushNotificationNudge = stateFromStores(12048).useCanSeePushNotificationNudge();
+  let obj2 = stateFromStores(12048);
   const items = [closure_6];
   stateFromStores = stateFromStores(589).useStateFromStores(items, () => currentClientVoiceChannelId.getCurrentClientVoiceChannelId(null));
   const obj3 = stateFromStores(589);
@@ -74,7 +74,7 @@ export const usePostCallDisconnectNudge = function usePostCallDisconnectNudge() 
       }
     }
   }
-  const tmp6Result = tmp6(stateFromStores(6131).useSelectedTimeRecurringDismissibleContent(prop, closure_12), 2);
+  const tmp6Result = tmp6(stateFromStores(6197).useSelectedTimeRecurringDismissibleContent(prop, closure_12), 2);
   first = tmp6Result[0];
   closure_5 = tmp12;
   const items3 = [first, tmp6Result[1]];

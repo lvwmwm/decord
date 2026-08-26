@@ -1,14 +1,14 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 9643
+// Function ID: 9644
 // Name: getCardProductName
-// Dependencies: [1950, 1236, 7159, 2]
+// Dependencies: [1950, 1236, 7225, 2]
 // Exports: getCardProductName, getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 9575 (getCardProductName)
+// Module 9643 (getCardProductName)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7159 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7225 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
 

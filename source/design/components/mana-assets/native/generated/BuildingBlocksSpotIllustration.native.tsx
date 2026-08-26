@@ -1,14 +1,14 @@
-// Module ID: 6253
-// Function ID: 6254
+// Module ID: 6319
+// Function ID: 6320
 // Name: BuildingBlocksSpotIllustration
-// Dependencies: [21, 5374, 6254, 2]
+// Dependencies: [21, 5440, 6320, 2]
 // Exports: BuildingBlocksSpotIllustration
 
-// Module 6253 (BuildingBlocksSpotIllustration)
+// Module 6319 (BuildingBlocksSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6254 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6320 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BuildingBlocksSpotIllustration.native.tsx");

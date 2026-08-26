@@ -1,9 +1,9 @@
-// Module ID: 16188
-// Function ID: 16189
+// Module ID: 16269
+// Function ID: 16270
 // Name: handleWebhookCreateUpdate
-// Dependencies: [16189, 12, 589, 709, 2]
+// Dependencies: [16270, 12, 589, 709, 2]
 
-// Module 16188 (handleWebhookCreateUpdate)
+// Module 16269 (handleWebhookCreateUpdate)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

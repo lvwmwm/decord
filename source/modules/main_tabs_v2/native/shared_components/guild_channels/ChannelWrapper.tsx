@@ -1,12 +1,12 @@
-// Module ID: 15798
-// Function ID: 15799
+// Module ID: 15877
+// Function ID: 15878
 // Name: renderChannelWrapper
-// Dependencies: [19, 17, 21, 9951, 2]
+// Dependencies: [19, 17, 21, 10018, 2]
 // Exports: renderChannelWrapper
 
-// Module 15798 (renderChannelWrapper)
+// Module 15877 (renderChannelWrapper)
 import noopAll from "noop" /* 19 */;
-import getLayoutStyles from "getLayoutStyles" /* 9951 */;
+import getLayoutStyles from "getLayoutStyles" /* 10018 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

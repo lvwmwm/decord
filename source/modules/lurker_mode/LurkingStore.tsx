@@ -1,9 +1,9 @@
-// Module ID: 4026
-// Function ID: 4027
+// Module ID: 4090
+// Function ID: 4091
 // Name: initialize
 // Dependencies: [1434, 1992, 1910, 1922, 676, 589, 709, 2]
 
-// Module 4026 (initialize)
+// Module 4090 (initialize)
 import set2 from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

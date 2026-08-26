@@ -1,12 +1,12 @@
-// Module ID: 8942
-// Function ID: 8943
+// Module ID: 9010
+// Function ID: 9011
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [19, 8932, 2]
+// Dependencies: [19, 9000, 2]
 // Exports: default
 
-// Module 8942 (useUserProfileAnalyticsProperties)
+// Module 9010 (useUserProfileAnalyticsProperties)
 import closure_0 from "noop" /* 19 */;
-import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8932 */;
+import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 9000 */;
 
 let result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useUserProfileAnalyticsProperties.tsx");
 

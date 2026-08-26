@@ -1,19 +1,19 @@
-// Module ID: 4640
-// Function ID: 4641
+// Module ID: 4704
+// Function ID: 4705
 // Name: _resolveGiftCode
-// Dependencies: [5, 32, 4641, 1922, 676, 1924, 4367, 4642, 4643, 698, 4066, 4736, 1236, 4593, 1370, 589, 4043, 2]
+// Dependencies: [5, 32, 4705, 1922, 676, 1924, 4431, 4706, 4707, 698, 4130, 4800, 1236, 4657, 1370, 589, 4107, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 4640 (_resolveGiftCode)
+// Module 4704 (_resolveGiftCode)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 4736 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 4800 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import closure_5 from "handleSubscribeFailure" /* 4641 */;
+import closure_5 from "handleSubscribeFailure" /* 4705 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
-import importDefaultResult from "set" /* 4367 */;
+import importDefaultResult from "set" /* 4431 */;
 import ArrayResult from "module_4" /* 4 */;
 import ArrayResult1 from "module_6" /* 6 */;
 import ArrayResult2 from "module_3" /* 3 */;
@@ -40,7 +40,7 @@ function _resolveGiftCode() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -166,7 +166,7 @@ function getGiftCodeRedeemError(error, currentUser) {
     return intl8.string(v5(1236).t.roztIr);
   } else if (tmp.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE === code) {
     const intl6 = v5(1236).intl;
-    obj = v5(4043);
+    obj = v5(4107);
     const intl7 = v5(1236).intl;
     const string = intl7.string;
     const t = v5(1236).t;
@@ -222,8 +222,8 @@ const result = require("set").fileFinishedImporting("utils/GiftCodeUtils.tsx");
 
 export const GiftExperience = obj;
 export const getGiftExperience = function getGiftExperience(arg0, arg1) {
-  if (!v5(4642).isMobile) {
-    if (!v5(4642).isTablet) {
+  if (!v5(4706).isMobile) {
+    if (!v5(4706).isTablet) {
       if (null == arg0) {
         if (!arg1) {
           let DEFAULT = obj.CUSTOM_STYLE;
@@ -236,8 +236,8 @@ export const getGiftExperience = function getGiftExperience(arg0, arg1) {
   DEFAULT = obj.DEFAULT;
 };
 export const shouldShowCustomGiftExperience = function shouldShowCustomGiftExperience(arg0) {
-  if (!v5(4642).isMobile) {
-    if (!v5(4642).isTablet) {
+  if (!v5(4706).isMobile) {
+    if (!v5(4706).isTablet) {
       if (null != arg0) {
         let DEFAULT = obj.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD;
         let tmp5 = obj;
@@ -464,9 +464,9 @@ export const getButtonText = function getButtonText(arg0, giftStyle, isCustomGif
 };
 export const getSubscriptionGiftSuccessText = function getSubscriptionGiftSuccessText(getOrFetchSubscriptionPlan) {
   const v5 = getOrFetchSubscriptionPlan;
-  const match = v5(4593).match(getOrFetchSubscriptionPlan);
+  const match = v5(4657).match(getOrFetchSubscriptionPlan);
   obj = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
-  const str = v5(4593);
+  const str = v5(4657);
   obj = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };
   const withResult = match.with(obj, () => {
     const intl = subscriptionPlan(closure_1_2[12]).intl;
@@ -611,11 +611,11 @@ export const getBodyText = function getBodyText(arg0) {
     return formatResult;
   } else if (tmp.SUCCESS === step) {
     if (null != subscriptionPlan) {
-      const match = subscriptionPlan(4593).match(subscriptionPlan);
+      const match = subscriptionPlan(4657).match(subscriptionPlan);
       obj = { interval: null, premiumSubscriptionType: null };
       obj[0] = constants6.MONTH;
       obj[1] = closure_13.TIER_2;
-      const str = subscriptionPlan(4593);
+      const str = subscriptionPlan(4657);
       obj1 = { interval: null, premiumSubscriptionType: null };
       obj1[0] = constants6.YEAR;
       obj1[1] = closure_13.TIER_2;

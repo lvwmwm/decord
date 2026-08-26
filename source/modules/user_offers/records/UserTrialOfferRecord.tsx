@@ -1,11 +1,11 @@
-// Module ID: 7061
-// Function ID: 7062
+// Module ID: 7127
+// Function ID: 7128
 // Name: createFromServer
-// Dependencies: [1931, 7062, 2]
+// Dependencies: [1931, 7128, 2]
 
-// Module 7061 (createFromServer)
+// Module 7127 (createFromServer)
 import toJSDefault from "toJS" /* 1931 */;
-import closure_0 from "createFromServer" /* 7062 */;
+import closure_0 from "createFromServer" /* 7128 */;
 
 toJSDefault;
 let UserTrialOfferRecord;

@@ -1,15 +1,15 @@
-// Module ID: 14243
-// Function ID: 14244
+// Module ID: 14316
+// Function ID: 14317
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 4380, 712, 5862, 14241, 14237, 5434, 1297, 1236, 4376, 4949, 2]
+// Dependencies: [32, 19, 21, 4444, 712, 5928, 14314, 14310, 5500, 1297, 1236, 4440, 5015, 2]
 // Exports: default
 
-// Module 14243 (TwoFASetupScan)
+// Module 14316 (TwoFASetupScan)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -28,9 +28,9 @@ export default function TwoFASetupScan(totpSecret) {
   const items = [totpSecret];
   callback = React.useCallback(() => {
     dependencyMap(true);
-    totpSecret(5862).copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
+    totpSecret(5928).copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  let obj = totpSecret(14241);
+  let obj = totpSecret(14314);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
   obj = { bottom: true, style: tmp.container, children: null };
   obj = { style: items1, children: null };
@@ -45,7 +45,7 @@ export default function TwoFASetupScan(totpSecret) {
   const intl2 = totpSecret(1236).intl;
   obj1[1] = intl2.string(totpSecret(1236).t["UQR+Qy"]);
   items2[1] = callback2(totpSecret(1297).LegacyText, obj1);
-  items2[2] = callback2(totpSecret(4376).Text, { variant: "text-md/bold", style: { textAlign: "center" }, children: totpSecret });
+  items2[2] = callback2(totpSecret(4440).Text, { variant: "text-md/bold", style: { textAlign: "center" }, children: totpSecret });
   const obj2 = { accessibilityRole: "button", onPress: callback, children: null };
   const obj3 = { style: tmp.copy, children: null };
   const intl3 = totpSecret(1236).intl;
@@ -59,8 +59,8 @@ export default function TwoFASetupScan(totpSecret) {
   const obj4 = { children: null };
   obj3[1] = stringResult;
   obj2[2] = callback2(totpSecret(1297).LegacyText, obj3);
-  items2[3] = callback2(totpSecret(4949).PressableOpacity, obj2);
+  items2[3] = callback2(totpSecret(5015).PressableOpacity, obj2);
   obj[2] = items2;
-  obj4[0] = closure_5(totpSecret(5434).SafeAreaPaddingView, obj);
-  return callback2(totpSecret(14237).TwoFASetupModalScreen, obj4);
+  obj4[0] = closure_5(totpSecret(5500).SafeAreaPaddingView, obj);
+  return callback2(totpSecret(14310).TwoFASetupModalScreen, obj4);
 };

@@ -1,14 +1,14 @@
-// Module ID: 6751
-// Function ID: 6752
+// Module ID: 6817
+// Function ID: 6818
 // Name: OrbMultiplierSpotIllustration
-// Dependencies: [21, 5374, 6752, 2]
+// Dependencies: [21, 5440, 6818, 2]
 // Exports: OrbMultiplierSpotIllustration
 
-// Module 6751 (OrbMultiplierSpotIllustration)
+// Module 6817 (OrbMultiplierSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6752 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6818 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/OrbMultiplierSpotIllustration.native.tsx");

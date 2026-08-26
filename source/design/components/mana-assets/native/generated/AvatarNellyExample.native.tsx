@@ -1,14 +1,14 @@
-// Module ID: 6213
-// Function ID: 6214
+// Module ID: 6279
+// Function ID: 6280
 // Name: AvatarNellyExample
-// Dependencies: [21, 5374, 6214, 2]
+// Dependencies: [21, 5440, 6280, 2]
 // Exports: AvatarNellyExample
 
-// Module 6213 (AvatarNellyExample)
+// Module 6279 (AvatarNellyExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6214 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6280 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarNellyExample.native.tsx");

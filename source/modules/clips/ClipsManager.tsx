@@ -1,31 +1,31 @@
-// Module ID: 17149
-// Function ID: 17150
+// Module ID: 17234
+// Function ID: 17235
 // Name: handleRTCConnectionState
-// Dependencies: [5, 4451, 1218, 4431, 4454, 4468, 4437, 4438, 676, 4447, 5367, 4442, 4479, 4446, 698, 4958, 4070, 709, 4443, 4008, 500, 4441, 2]
+// Dependencies: [5, 4515, 1218, 4495, 4518, 4532, 4501, 4502, 676, 4511, 5433, 4506, 4543, 4510, 698, 5024, 4134, 709, 4507, 4072, 500, 4505, 2]
 
-// Module 17149 (handleRTCConnectionState)
+// Module 17234 (handleRTCConnectionState)
 import set from "set" /* 500 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import setDefault from "set" /* 4008 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import isClipsEnabled from "isClipsEnabled" /* 4441 */;
-import apexExperiment from "apexExperiment" /* 4442 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 4443 */;
-import isStreamKeyAll from "isStreamKey" /* 4446 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4479 */;
-import apexExperiment2 from "apexExperiment" /* 4958 */;
-import initializeDefault from "initialize" /* 5367 */;
+import setDefault from "set" /* 4072 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import isClipsEnabled from "isClipsEnabled" /* 4505 */;
+import apexExperiment from "apexExperiment" /* 4506 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 4507 */;
+import isStreamKeyAll from "isStreamKey" /* 4510 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4543 */;
+import apexExperiment2 from "apexExperiment" /* 5024 */;
+import initializeDefault from "initialize" /* 5433 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo" /* 4451 */;
+import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo" /* 4515 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_8 from "createRTCConnection" /* 4454 */;
-import closure_9 from "initialize" /* 4468 */;
-import closure_10 from "_migrateDefaultStorage" /* 4437 */;
-import result from "result" /* 4438 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_8 from "createRTCConnection" /* 4518 */;
+import closure_9 from "initialize" /* 4532 */;
+import closure_10 from "_migrateDefaultStorage" /* 4501 */;
+import result from "result" /* 4502 */;
 import ME from "ME" /* 676 */;
-import { StreamTypes } from "StreamIssueReportReasons" /* 4447 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4511 */;
 
 require = arg1;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: unpackModuleId, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: closure_12, CLIPS_HARDWARE_CLASSIFICATION_VERSION: map1, ClipsHardwareClassification: closure_14 } = result);
@@ -89,10 +89,10 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
     if (state.state === constants3.RTC_CONNECTED) {
       const self = this;
       const id = store.getId();
-      if (tmp(4479).MediaEngineContextTypes.DEFAULT === context) {
+      if (tmp(4543).MediaEngineContextTypes.DEFAULT === context) {
         const result = self.applyUserVoiceRecording(id);
         const result1 = self.applyUserSoundboardRecording(id);
-      } else if (tmp(4479).MediaEngineContextTypes.STREAM === context) {
+      } else if (tmp(4543).MediaEngineContextTypes.STREAM === context) {
         if (null != streamKey) {
           if (tmpResult.decodeStreamKey(streamKey).ownerId === id) {
             const rTCConnection = store2.getRTCConnection(streamKey);
@@ -100,7 +100,7 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
               self.applyStreamRecording(id, rTCConnection);
             }
           }
-          tmpResult = tmp(4446);
+          tmpResult = tmp(4510);
         }
       }
     }
@@ -109,7 +109,7 @@ prototype["handleRTCConnectionState"] = function handleRTCConnectionState(state)
 prototype["handleRTCUsersUpdate"] = function handleRTCUsersUpdate(userIds) {
   const self = this;
   userIds = userIds.userIds;
-  if (userIds.context === self(4479).MediaEngineContextTypes.DEFAULT) {
+  if (userIds.context === self(4543).MediaEngineContextTypes.DEFAULT) {
     const item = userIds.forEach((id) => {
       const result = self.applyUserVoiceRecording(id);
       const result1 = self.applyUserSoundboardRecording(id);
@@ -230,7 +230,7 @@ prototype["classifyHardwareAndTrack"] = function classifyHardwareAndTrack() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -309,7 +309,7 @@ prototype["classifyHardwareAndTrack"] = function classifyHardwareAndTrack() {
           obj4[1] = closure_1_13;
           obj4[2] = gpuModels;
           const obj7 = closure_1_1(698);
-          obj4[3] = closure_1_0(4958).getClipsRuntime("classifyHardwareAndTrack");
+          obj4[3] = closure_1_0(5024).getClipsRuntime("classifyHardwareAndTrack");
           obj7.track(closure_1_15.CLIPS_HARDWARE_CLASSIFICATION, obj4);
           dependencyMap = 0;
           c5 = 3;

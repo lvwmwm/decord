@@ -1,14 +1,14 @@
-// Module ID: 6737
-// Function ID: 6738
+// Module ID: 6803
+// Function ID: 6804
 // Name: NitroWumpusGreenSpotIllustration
-// Dependencies: [21, 5374, 6738, 2]
+// Dependencies: [21, 5440, 6804, 2]
 // Exports: NitroWumpusGreenSpotIllustration
 
-// Module 6737 (NitroWumpusGreenSpotIllustration)
+// Module 6803 (NitroWumpusGreenSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6738 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6804 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusGreenSpotIllustration.native.tsx");

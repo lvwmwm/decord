@@ -1,9 +1,9 @@
-// Module ID: 6280
-// Function ID: 6281
+// Module ID: 6346
+// Function ID: 6347
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6280 (metadata)
+// Module 6346 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CloverIllocon-2x.png.js");

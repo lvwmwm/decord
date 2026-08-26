@@ -1,13 +1,13 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13081
+// Function ID: 13082
 // Name: getGuildSubscriptionNoGuildsSource
-// Dependencies: [19, 17, 21, 7767, 13008, 13009, 13010, 1363, 2]
+// Dependencies: [19, 17, 21, 7834, 13082, 13083, 13084, 1363, 2]
 // Exports: GuildSubscriptionNoGuilds, getGuildSubscriptionNoGuildsSource, useGuildSubscriptionNoGuildsSource
 
-// Module 13007 (getGuildSubscriptionNoGuildsSource)
+// Module 13081 (getGuildSubscriptionNoGuildsSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 7767 */;
+import getIllustrationSource from "getIllustrationSource" /* 7834 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getGuildSubscriptionNoGuildsSource = function getGuildSubscriptionN
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(13008);
+      return callback(13082);
     },
     darker() {
-      return callback(13009);
+      return callback(13083);
     },
     light() {
-      return callback(13010);
+      return callback(13084);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useGuildSubscriptionNoGuildsSource = function useGuildSubscriptionN
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(13008);
+      return callback(13082);
     },
     darker() {
-      return callback(13009);
+      return callback(13083);
     },
     light() {
-      return callback(13010);
+      return callback(13084);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const GuildSubscriptionNoGuilds = function GuildSubscriptionNoGuilds(arg0
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(13008);
+      return callback(13082);
     },
     darker() {
-      return callback(13009);
+      return callback(13083);
     },
     light() {
-      return callback(13010);
+      return callback(13084);
     }
   };
   obj = {};

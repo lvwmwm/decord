@@ -1,13 +1,13 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16607
+// Function ID: 16608
 // Name: useControlsTranslation
-// Dependencies: [19, 11841, 11844, 11840, 4120, 4814, 2]
+// Dependencies: [19, 11914, 11917, 11913, 4184, 4878, 2]
 // Exports: default
 
-// Module 16522 (useControlsTranslation)
+// Module 16607 (useControlsTranslation)
 import closure_3 from "noop" /* 19 */;
-import { MODE_CHANGE_PHYSICS } from "VoicePanelModes" /* 11841 */;
-import { CALL_TILE_GUTTER } from "CARD_SIZE" /* 11844 */;
+import { MODE_CHANGE_PHYSICS } from "VoicePanelModes" /* 11914 */;
+import { CALL_TILE_GUTTER } from "CARD_SIZE" /* 11917 */;
 
 const require = arg1;
 let closure_6 = { code: "function useControlsTranslationTsx1(){const{withSpring,wrapperSpecs,MODE_CHANGE_PHYSICS,useReducedMotion,CALL_TILE_GUTTER,viewHeight}=this.__closure;return{transform:[{translateX:withSpring(wrapperSpecs.get().x,MODE_CHANGE_PHYSICS)},{translateY:withSpring(!useReducedMotion.get()&&wrapperSpecs.get().hidden?wrapperSpecs.get().height+CALL_TILE_GUTTER+viewHeight.get():wrapperSpecs.get().y,MODE_CHANGE_PHYSICS)}]};}" };

@@ -1,12 +1,12 @@
-// Module ID: 11373
-// Function ID: 11374
+// Module ID: 11445
+// Function ID: 11446
 // Name: matchesDeep
-// Dependencies: [4533, 2]
+// Dependencies: [4597, 2]
 // Exports: getBestMatches, getEntries, getExperimentDateFromId, sortEntries
 
-// Module 11373 (matchesDeep)
+// Module 11445 (matchesDeep)
 import set from "set" /* 2 */;
-import flattenDefault from "flatten" /* 4533 */;
+import flattenDefault from "flatten" /* 4597 */;
 
 function matchesDeep(item10014, item10021) {
   if (Array.isArray(item10014)) {

@@ -1,9 +1,9 @@
-// Module ID: 6344
-// Function ID: 6345
+// Module ID: 6410
+// Function ID: 6411
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6344 (metadata)
+// Module 6410 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordSupergraphicLogo-2x.png.js");

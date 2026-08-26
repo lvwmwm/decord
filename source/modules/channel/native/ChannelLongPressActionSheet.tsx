@@ -1,29 +1,29 @@
-// Module ID: 9817
-// Function ID: 9818
+// Module ID: 9884
+// Function ID: 9885
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 9818, 6054, 1396, 5330, 1395, 5366, 1391, 7133, 1910, 4025, 4395, 4034, 1981, 4589, 1922, 676, 9819, 21, 7918, 2009, 4615, 1236, 9820, 8930, 4321, 4393, 4574, 4744, 9822, 9823, 4323, 4611, 9834, 3083, 9854, 1222, 9856, 9858, 9872, 9212, 9874, 5362, 4235, 5432, 9876, 8113, 9877, 9878, 9880, 9882, 9883, 9885, 8652, 5359, 9887, 9284, 5368, 5363, 9889, 8167, 4904, 9891, 9892, 4927, 4902, 4347, 9893, 12333, 4609, 7919, 8916, 8171, 8650, 5338, 6120, 4327, 9143, 9696, 5862, 4097, 5834, 5854, 9860, 589, 1399, 7141, 8559, 4070, 5885, 1297, 12334, 10350, 12335, 5870, 1625, 10351, 5872, 2]
+// Dependencies: [5, 19, 9885, 6120, 1396, 5396, 1395, 5432, 1391, 7199, 1910, 4089, 4459, 4098, 1981, 4653, 1922, 676, 9886, 21, 7985, 2009, 4679, 1236, 9887, 8998, 4385, 4457, 4638, 4808, 9889, 9890, 4387, 4675, 9901, 3147, 9921, 1222, 9923, 9925, 9939, 9280, 9941, 5428, 4299, 5498, 9943, 8180, 9944, 9945, 9947, 9949, 9950, 9952, 8720, 5425, 9954, 9352, 5434, 5429, 9956, 8234, 4970, 9958, 9959, 4993, 4968, 4411, 9960, 12405, 4673, 7986, 8984, 8238, 8718, 5404, 6186, 4391, 9211, 9764, 5928, 4161, 5900, 5920, 9927, 589, 1399, 7207, 8627, 4134, 5951, 1297, 12406, 10418, 12407, 5936, 1625, 10419, 5938, 2]
 // Exports: default
 
-// Module 9817 (handleVoiceOrStageChannelConnectPress)
+// Module 9884 (handleVoiceOrStageChannelConnectPress)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 9818 */;
-import closure_6 from "initialize" /* 6054 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 9885 */;
+import closure_6 from "initialize" /* 6120 */;
 import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import closure_8 from "handleThreadCreateOrUpdate" /* 5330 */;
+import closure_8 from "handleThreadCreateOrUpdate" /* 5396 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
-import closure_13 from "incrementVersion" /* 5366 */;
+import closure_13 from "incrementVersion" /* 5432 */;
 import closure_14 from "ensureGuildLoaded" /* 1391 */;
-import closure_15 from "handleConnectionOpen" /* 7133 */;
+import closure_15 from "handleConnectionOpen" /* 7199 */;
 import closure_16 from "createGuildRecordFromRust" /* 1910 */;
-import closure_17 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_18 from "generateOldThreadCutoff" /* 4395 */;
-import closure_19 from "markAllUserIdListsStale" /* 4034 */;
+import closure_17 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_18 from "generateOldThreadCutoff" /* 4459 */;
+import closure_19 from "markAllUserIdListsStale" /* 4098 */;
 import closure_20 from "handleConnectionOpen" /* 1981 */;
-import closure_21 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_21 from "updateUserGuildSettingsInternal" /* 4653 */;
 import closure_22 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { ChannelDetailsNavigatorScreens as closure_32 } from "ChannelDetailsNavigatorScreens" /* 9819 */;
+import { ChannelDetailsNavigatorScreens as closure_32 } from "ChannelDetailsNavigatorScreens" /* 9886 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -55,7 +55,7 @@ function _handleVoiceOrStageChannelConnectPress() {
           obj[0] = openGuildVoiceModal;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -709,7 +709,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -742,7 +742,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                   } else {
                     arg1.openEndStageModal(closure_0);
                     paths = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp10) {
                   paths = tmp;

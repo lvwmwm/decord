@@ -1,16 +1,16 @@
-// Module ID: 5928
-// Function ID: 5929
+// Module ID: 5994
+// Function ID: 5995
 // Name: SceneLoadingIndicator
-// Dependencies: [19, 17, 21, 4380, 5929, 5820, 2]
+// Dependencies: [19, 17, 21, 4444, 5995, 5886, 2]
 // Exports: SceneLoadingIndicator
 
-// Module 5928 (SceneLoadingIndicator)
+// Module 5994 (SceneLoadingIndicator)
 import noopAll from "noop" /* 19 */;
-import NavScrim from "NavScrim" /* 5820 */;
-import ActivityIndicator from "ActivityIndicator" /* 5929 */;
+import NavScrim from "NavScrim" /* 5886 */;
+import ActivityIndicator from "ActivityIndicator" /* 5995 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

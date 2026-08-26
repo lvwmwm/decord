@@ -1,10 +1,10 @@
-// Module ID: 13231
-// Function ID: 13232
+// Module ID: 13304
+// Function ID: 13305
 // Name: isManualAgeAssuranceFallbackEnabled
 // Dependencies: [1472, 2]
 // Exports: isManualAgeAssuranceFallbackEnabled
 
-// Module 13231 (isManualAgeAssuranceFallbackEnabled)
+// Module 13304 (isManualAgeAssuranceFallbackEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

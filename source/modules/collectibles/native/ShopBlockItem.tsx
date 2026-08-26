@@ -1,16 +1,16 @@
-// Module ID: 15053
-// Function ID: 15054
+// Module ID: 15132
+// Function ID: 15133
 // Name: block
-// Dependencies: [19, 17, 7148, 21, 4380, 712, 589, 7179, 9495, 15054, 15063, 15065, 15072, 2]
+// Dependencies: [19, 17, 7214, 21, 4444, 712, 589, 7245, 9563, 15133, 15142, 15144, 15151, 2]
 // Exports: default
 
-// Module 15053 (block)
+// Module 15132 (block)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7148 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7214 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 createCacheKey = { shopBlockSpacing: null };

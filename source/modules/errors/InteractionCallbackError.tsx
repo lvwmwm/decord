@@ -1,9 +1,9 @@
-// Module ID: 4630
-// Function ID: 4631
+// Module ID: 4694
+// Function ID: 4695
 // Name: prototype
 // Dependencies: [2]
 
-// Module 4630 (prototype)
+// Module 4694 (prototype)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/errors/InteractionCallbackError.tsx");

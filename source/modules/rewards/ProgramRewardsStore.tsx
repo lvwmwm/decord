@@ -1,13 +1,13 @@
-// Module ID: 13192
-// Function ID: 13193
+// Module ID: 13265
+// Function ID: 13266
 // Name: updateTtl
-// Dependencies: [32, 1922, 13193, 3641, 3669, 3624, 589, 687, 13194, 13195, 709, 2]
+// Dependencies: [32, 1922, 13266, 3705, 3733, 3688, 589, 687, 13267, 13268, 709, 2]
 
-// Module 13192 (updateTtl)
+// Module 13265 (updateTtl)
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import canFetchNitroProgramReward from "canFetchNitroProgramReward" /* 13194 */;
+import canFetchNitroProgramReward from "canFetchNitroProgramReward" /* 13267 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 

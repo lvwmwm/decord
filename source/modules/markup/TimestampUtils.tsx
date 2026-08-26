@@ -1,14 +1,14 @@
-// Module ID: 4860
-// Function ID: 4861
+// Module ID: 4926
+// Function ID: 4927
 // Name: TIMESTAMP_FORMATS
-// Dependencies: [4067, 3979, 687, 2]
+// Dependencies: [4131, 4043, 687, 2]
 // Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 4860 (TIMESTAMP_FORMATS)
+// Module 4926 (TIMESTAMP_FORMATS)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
-import hooksDefault from "hooks" /* 3979 */;
-import resetCache from "resetCache" /* 4067 */;
+import hooksDefault from "hooks" /* 4043 */;
+import resetCache from "resetCache" /* 4131 */;
 
 let obj = {
   t(date) {
@@ -48,18 +48,18 @@ let obj = {
     const obj5 = hooksDefault;
     const result5 = hooksDefault.relativeTimeThreshold("m", 60);
     try {
-      let tmpResult = tmp(3979);
+      let tmpResult = tmp(4043);
       let fromNowResult = tmpResult(toDate.toDate()).fromNow();
-      tmpResult = tmp(3979);
+      tmpResult = tmp(4043);
       const result6 = tmpResult.relativeTimeThreshold("s", result);
       const tmpResultResult = tmpResult(toDate.toDate());
-      const result7 = tmp(3979).relativeTimeThreshold("ss", result2);
-      const tmpResult1 = tmp(3979);
-      const result8 = tmp(3979).relativeTimeThreshold("m", result4);
+      const result7 = tmp(4043).relativeTimeThreshold("ss", result2);
+      const tmpResult1 = tmp(4043);
+      const result8 = tmp(4043).relativeTimeThreshold("m", result4);
       if (fromNowResult == null) {
-        const tmpResult3 = tmp(3979);
-        fromNowResult = tmp(3979)(toDate.toDate()).fromNow();
-        const tmpResult4Result = tmp(3979)(toDate.toDate());
+        const tmpResult3 = tmp(4043);
+        fromNowResult = tmp(4043)(toDate.toDate()).fromNow();
+        const tmpResult4Result = tmp(4043)(toDate.toDate());
       }
       return fromNowResult;
     } catch (err) {

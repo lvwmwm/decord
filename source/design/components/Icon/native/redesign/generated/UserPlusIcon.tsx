@@ -1,14 +1,14 @@
-// Module ID: 4317
-// Function ID: 4318
+// Module ID: 4381
+// Function ID: 4382
 // Name: UserPlusIcon
-// Dependencies: [19, 21, 712, 4100, 4318, 2]
+// Dependencies: [19, 21, 712, 4164, 4382, 2]
 // Exports: UserPlusIcon
 
-// Module 4317 (UserPlusIcon)
+// Module 4381 (UserPlusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 4318 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 4382 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

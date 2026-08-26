@@ -1,10 +1,10 @@
-// Module ID: 16304
-// Function ID: 16305
+// Module ID: 16385
+// Function ID: 16386
 // Name: useNativeThemeUpdater
-// Dependencies: [19, 1302, 1367, 16305, 16306, 2]
+// Dependencies: [19, 1302, 1367, 16386, 16387, 2]
 // Exports: default
 
-// Module 16304 (useNativeThemeUpdater)
+// Module 16385 (useNativeThemeUpdater)
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "handleThemeChange" /* 1302 */;

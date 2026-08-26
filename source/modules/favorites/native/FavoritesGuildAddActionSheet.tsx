@@ -1,13 +1,13 @@
-// Module ID: 15509
-// Function ID: 15510
+// Module ID: 15588
+// Function ID: 15589
 // Name: handleCreateCategory
-// Dependencies: [19, 21, 4347, 15510, 9860, 9863, 12336, 5870, 5502, 1236, 5872, 3083, 12309, 15511, 2]
+// Dependencies: [19, 21, 4411, 15589, 9927, 9930, 12408, 5936, 5568, 1236, 5938, 3147, 12381, 15590, 2]
 // Exports: openFavoritesGuildAddActionSheet
 
-// Module 15509 (handleCreateCategory)
-import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
-import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 15510 */;
+// Module 15588 (handleCreateCategory)
+import ACTION_SHEET_HEIGHT_HALF from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
+import FavoritesGuildAddCategoryActionSheet from "FavoritesGuildAddCategoryActionSheet" /* 15589 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 

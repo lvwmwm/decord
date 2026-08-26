@@ -1,21 +1,21 @@
-// Module ID: 15864
-// Function ID: 15865
+// Module ID: 15943
+// Function ID: 15944
 // Name: AddEmojiButton
-// Dependencies: [5, 32, 19, 17, 5504, 1925, 21, 1236, 4380, 712, 8784, 7366, 4949, 7800, 8389, 9060, 8788, 4230, 8548, 1494, 5870, 4376, 15861, 4951, 4199, 4108, 15857, 5374, 1435, 7935, 4224, 7896, 4325, 14659, 15810, 2]
+// Dependencies: [5, 32, 19, 17, 5570, 1925, 21, 1236, 4444, 712, 8852, 7432, 5015, 7867, 8456, 9128, 8856, 4294, 8616, 1494, 5936, 4440, 15940, 5017, 4263, 4172, 15936, 5440, 1435, 8002, 4288, 7963, 4389, 14732, 15889, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 15864 (AddEmojiButton)
+// Module 15943 (AddEmojiButton)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import context from "context" /* 15810 */;
+import context from "context" /* 15889 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5504 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5570 */;
 import { EmojiIntention } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function AddEmojiButton(channel) {
@@ -107,7 +107,7 @@ function ReactActionSheetBase(content) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -124,13 +124,13 @@ function ReactActionSheetBase(content) {
             } else {
               closure_0 = tmp4;
               closure_1_5(true);
-              v0(9060).itemInteracted(closure_1_0.id, closure_1_6, "press_reply_send");
-              const obj5 = v0(9060);
+              v0(9128).itemInteracted(closure_1_0.id, closure_1_6, "press_reply_send");
+              const obj5 = v0(9128);
               obj1 = { itemId: null, itemType: null, actionParameters: null };
               obj1[0] = closure_1_0.id;
               obj1[1] = closure_1_6;
               obj1[2] = { actionGestureType: "press", actionTargetElement: "reply_button", actionIntentType: "reply", actionDestinationType: null };
-              v0(9060).feedItemActioned(obj1);
+              v0(9128).feedItemActioned(obj1);
               v0 = 1;
               dependencyMap = 1;
               const obj2 = { value: null, done: false };
@@ -149,7 +149,7 @@ function ReactActionSheetBase(content) {
             callback(false);
             callback2("");
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           dependencyMap = tmp;
@@ -173,7 +173,7 @@ function ReactActionSheetBase(content) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -214,7 +214,7 @@ function ReactActionSheetBase(content) {
             } else {
               closure_1_5(false);
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp9) {
             c3 = tmp;

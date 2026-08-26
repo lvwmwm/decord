@@ -1,14 +1,14 @@
-// Module ID: 6955
-// Function ID: 6956
+// Module ID: 7021
+// Function ID: 7022
 // Name: TeaKettleSpotIllustration
-// Dependencies: [21, 5374, 6956, 2]
+// Dependencies: [21, 5440, 7022, 2]
 // Exports: TeaKettleSpotIllustration
 
-// Module 6955 (TeaKettleSpotIllustration)
+// Module 7021 (TeaKettleSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6956 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 7022 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/TeaKettleSpotIllustration.native.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 4856
-// Function ID: 4857
+// Module ID: 4922
+// Function ID: 4923
 // Name: isSoundValid
-// Dependencies: [1391, 4025, 1922, 4852, 505, 4043, 2]
+// Dependencies: [1391, 4089, 1922, 4918, 505, 4107, 2]
 // Exports: default
 
-// Module 4856 (isSoundValid)
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4043 */;
+// Module 4922 (isSoundValid)
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4852 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4918 */;
 import { Permissions } from "sum" /* 505 */;
 
 let result = require("set").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/isSoundValid.tsx");

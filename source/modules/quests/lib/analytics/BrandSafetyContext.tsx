@@ -1,18 +1,18 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9734
+// Function ID: 9735
 // Name: getBrandSafetyContext
-// Dependencies: [9667, 1391, 1910, 4034, 4202, 1922, 9668, 7303, 1435, 4574, 2]
+// Dependencies: [9735, 1391, 1910, 4098, 4266, 1922, 9736, 7369, 1435, 4638, 2]
 // Exports: getBrandSafetyContext
 
-// Module 9666 (getBrandSafetyContext)
+// Module 9734 (getBrandSafetyContext)
 import set from "set" /* 2 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9668 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9667 */;
+import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9736 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9735 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "markAllUserIdListsStale" /* 4034 */;
-import closure_8 from "handleConnectionOpen" /* 4202 */;
+import closure_7 from "markAllUserIdListsStale" /* 4098 */;
+import closure_8 from "handleConnectionOpen" /* 4266 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 
 ({ getVisibleChannelIdsMethod: c3, getVisibleGuildIdsMethod: c4 } = SidebarVisibilityMethodStore);
@@ -20,9 +20,9 @@ let closure_10 = MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN.MAX_BRAND_SAFETY_CONTEXT_ARR
 let result = set.fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
 export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
-  let obj = _require(7303);
+  let obj = _require(7369);
   const result = obj.isBillableQuestContent(questContent);
-  obj1 = _require(7303);
+  obj1 = _require(7369);
   const adContext = obj1.getAdContext(questContent);
   const tmp4 = callback2();
   const tmp5 = callback();

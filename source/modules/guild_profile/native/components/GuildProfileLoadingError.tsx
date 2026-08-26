@@ -1,20 +1,20 @@
-// Module ID: 12416
-// Function ID: 12417
+// Module ID: 12487
+// Function ID: 12488
 // Name: GuildProfileLoadingError
-// Dependencies: [19, 17, 21, 9404, 4315, 4101, 712, 4826, 8113, 4376, 1236, 4949, 2]
+// Dependencies: [19, 17, 21, 9472, 4379, 4165, 712, 4891, 8180, 4440, 1236, 5015, 2]
 // Exports: default
 
-// Module 12416 (GuildProfileLoadingError)
+// Module 12487 (GuildProfileLoadingError)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import map from "map" /* 4101 */;
-import useThemeDefault from "useTheme" /* 4315 */;
-import Text from "Text" /* 4376 */;
-import LinearGradientDefault from "LinearGradient" /* 4826 */;
-import PressableBase from "PressableBase" /* 4949 */;
-import WarningIcon from "WarningIcon" /* 8113 */;
-import GuildProfileBackground from "GuildProfileBackground" /* 9404 */;
+import map from "map" /* 4165 */;
+import useThemeDefault from "useTheme" /* 4379 */;
+import Text from "Text" /* 4440 */;
+import LinearGradientDefault from "LinearGradient" /* 4891 */;
+import PressableBase from "PressableBase" /* 5015 */;
+import WarningIcon from "WarningIcon" /* 8180 */;
+import GuildProfileBackground from "GuildProfileBackground" /* 9472 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 16396
-// Function ID: 16397
+// Module ID: 16477
+// Function ID: 16478
 // Name: VoicePanel
-// Dependencies: [19, 1391, 4616, 21, 589, 16397, 16438, 4010, 4108, 2]
+// Dependencies: [19, 1391, 4680, 21, 589, 16478, 16521, 4074, 4172, 2]
 
-// Module 16396 (VoicePanel)
-import isIterable from "isIterable" /* 4010 */;
-import ManaContext from "ManaContext" /* 4108 */;
-import VoicePanelControllerDefault from "VoicePanelController" /* 16397 */;
+// Module 16477 (VoicePanel)
+import isIterable from "isIterable" /* 4074 */;
+import ManaContext from "ManaContext" /* 4172 */;
+import VoicePanelControllerDefault from "VoicePanelController" /* 16478 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "withEqualityFn" /* 4616 */;
+import closure_5 from "withEqualityFn" /* 4680 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

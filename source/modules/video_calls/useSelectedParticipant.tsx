@@ -1,11 +1,11 @@
-// Module ID: 9898
-// Function ID: 9899
+// Module ID: 9965
+// Function ID: 9966
 // Name: useSelectedParticipant
-// Dependencies: [4396, 589, 2]
+// Dependencies: [4460, 589, 2]
 // Exports: default
 
-// Module 9898 (useSelectedParticipant)
-import closure_2 from "getParticipants" /* 4396 */;
+// Module 9965 (useSelectedParticipant)
+import closure_2 from "getParticipants" /* 4460 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/useSelectedParticipant.tsx");

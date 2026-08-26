@@ -1,16 +1,16 @@
-// Module ID: 8329
-// Function ID: 8330
+// Module ID: 8396
+// Function ID: 8397
 // Name: createGiftIntentSystemMessage
-// Dependencies: [4380, 712, 8330, 8224, 8338, 8206, 8209, 2]
+// Dependencies: [4444, 712, 8397, 8291, 8405, 8273, 8276, 2]
 // Exports: createGiftIntentSystemMessage
 
-// Module 8329 (createGiftIntentSystemMessage)
+// Module 8396 (createGiftIntentSystemMessage)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 8209 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8224 */;
-import createGiftIntentEmbed from "createGiftIntentEmbed" /* 8330 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import registerAssetDefault from "registerAsset" /* 8276 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8291 */;
+import createGiftIntentEmbed from "createGiftIntentEmbed" /* 8397 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 let closure_3 = createCacheKey.createNativeStyleProperties({ iconTintColor: ThemesDefault.colors.BACKGROUND_BRAND, iconDividerColor: ThemesDefault.colors.ICON_STRONG });
 let obj = { iconTintColor: ThemesDefault.colors.BACKGROUND_BRAND, iconDividerColor: ThemesDefault.colors.ICON_STRONG };
@@ -26,9 +26,9 @@ export const createGiftIntentSystemMessage = function createGiftIntentSystemMess
     obj = {};
     const merged = Object.assign(createCommonMessageDefault(message));
     obj.giftIntentInfo = giftIntentEmbed;
-    let tmpResult = tmp(8338);
+    let tmpResult = tmp(8405);
     obj.ephemeralIndication = tmpResult.createEphemeralIndication(message);
-    tmpResult = tmp(8206);
+    tmpResult = tmp(8273);
     obj.iconUrl = tmpResult.getAssetUriForEmbed(registerAssetDefault);
     ({ iconTintColor: obj2.iconTintColor, iconDividerColor: obj2.iconDividerColor } = callback(theme));
     return obj;

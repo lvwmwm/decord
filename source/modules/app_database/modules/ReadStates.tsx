@@ -1,13 +1,13 @@
-// Module ID: 7096
-// Function ID: 7097
+// Module ID: 7162
+// Function ID: 7163
 // Name: getAll
-// Dependencies: [5, 1391, 4395, 3, 1956, 12, 11, 2]
+// Dependencies: [5, 1391, 4459, 3, 1956, 12, 11, 2]
 
-// Module 7096 (getAll)
+// Module 7162 (getAll)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "generateOldThreadCutoff" /* 4395 */;
+import closure_4 from "generateOldThreadCutoff" /* 4459 */;
 import set from "set" /* 2 */;
 
 let set = importDefault;

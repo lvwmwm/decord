@@ -1,17 +1,17 @@
-// Module ID: 14549
-// Function ID: 14550
+// Module ID: 14622
+// Function ID: 14623
 // Name: QuestDockMode
-// Dependencies: [19, 14543, 5268, 14545, 21, 687, 8161, 4120, 14544, 10533, 500, 2]
+// Dependencies: [19, 14616, 5334, 14618, 21, 687, 8228, 4184, 14617, 10601, 500, 2]
 // Exports: useExternalScrollEventHandler
 
-// Module 14549 (QuestDockMode)
+// Module 14622 (QuestDockMode)
 import setDefault from "set" /* 687 */;
 import importAllResult from "noop" /* 19 */;
-import closure_3 from "QuestDockMode" /* 14543 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5268 */;
-import { QUEST_DOCK_EXTERNAL_SCROLL_DELTA_THRESHOLD as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14545 */;
+import closure_3 from "QuestDockMode" /* 14616 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5334 */;
+import { QUEST_DOCK_EXTERNAL_SCROLL_DELTA_THRESHOLD as closure_5 } from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14618 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createFakeSharedValue from "createFakeSharedValue" /* 8161 */;
+import createFakeSharedValue from "createFakeSharedValue" /* 8228 */;
 import set from "set" /* 500 */;
 
 const require = arg1;

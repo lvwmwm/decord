@@ -1,13 +1,13 @@
-// Module ID: 5842
-// Function ID: 5843
+// Module ID: 5908
+// Function ID: 5909
 // Name: tokensToAppTokensMap
-// Dependencies: [5, 5356, 676, 4264, 709, 530, 2]
+// Dependencies: [5, 5422, 676, 4328, 709, 530, 2]
 
-// Module 5842 (tokensToAppTokensMap)
+// Module 5908 (tokensToAppTokensMap)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "recomputeFromAppTokens" /* 5356 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5356 */;
+import closure_4 from "recomputeFromAppTokens" /* 5422 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5422 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -59,7 +59,7 @@ function _fetchAuthorizedApps() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ function _fetchAuthorizedApps() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           c1 = tmp;

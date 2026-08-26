@@ -1,9 +1,9 @@
-// Module ID: 5272
-// Function ID: 5273
+// Module ID: 5338
+// Function ID: 5339
 // Name: QuestRewardCodePlatforms
 // Dependencies: [2]
 
-// Module 5272 (QuestRewardCodePlatforms)
+// Module 5338 (QuestRewardCodePlatforms)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestRewardCodePlatforms.tsx");

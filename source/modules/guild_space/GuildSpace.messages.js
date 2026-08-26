@@ -1,12 +1,12 @@
-// Module ID: 2271
-// Function ID: 2272
+// Module ID: 2303
+// Function ID: 2304
 // Name: messagesProxy
-// Dependencies: [1239, 2272, 1274, 2]
+// Dependencies: [1239, 2304, 1274, 2]
 
-// Module 2271 (messagesProxy)
+// Module 2303 (messagesProxy)
 import set from "set" /* 2 */;
 import loadJsonAsset from "loadJsonAsset" /* 1239 */;
-import registerAsset from "registerAsset" /* 2272 */;
+import registerAsset from "registerAsset" /* 2304 */;
 import module_1274 from "module_1274" /* 1274 */;
 
 const loader = module_1274.createLoader({

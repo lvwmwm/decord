@@ -1,18 +1,18 @@
-// Module ID: 7765
-// Function ID: 7766
+// Module ID: 7832
+// Function ID: 7833
 // Name: WhatYouLoseItem
-// Dependencies: [19, 17, 1924, 21, 4380, 712, 5374, 4376, 4043, 5834, 7766, 38, 7771, 1236, 7772, 7773, 7774, 7775, 4347, 5503, 7038, 4815, 7517, 2]
+// Dependencies: [19, 17, 1924, 21, 4444, 712, 5440, 4440, 4107, 5900, 7833, 38, 7838, 1236, 7839, 7840, 7841, 7842, 4411, 5569, 7104, 4879, 7583, 2]
 // Exports: default
 
-// Module 7765 (WhatYouLoseItem)
+// Module 7832 (WhatYouLoseItem)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4376 */;
-import preloadDefault from "preload" /* 5374 */;
+import Text from "Text" /* 4440 */;
+import preloadDefault from "preload" /* 5440 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function WhatYouLoseItem(arg0) {

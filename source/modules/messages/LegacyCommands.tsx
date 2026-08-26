@@ -1,21 +1,21 @@
-// Module ID: 11566
-// Function ID: 11567
+// Module ID: 11638
+// Function ID: 11639
 // Name: action
-// Dependencies: [32, 5282, 4623, 676, 4070, 8507, 4096, 7367, 4036, 7063, 4588, 2]
+// Dependencies: [32, 5348, 4687, 676, 4134, 8574, 4160, 7433, 4100, 7129, 4652, 2]
 // Exports: handleLegacyCommands
 
-// Module 11566 (action)
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4036 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4588 */;
-import trackInviteDefault from "trackInvite" /* 7063 */;
-import checkReactionResponse from "checkReactionResponse" /* 7367 */;
-import _modDef8507 from "module_8507" /* 8507 */;
+// Module 11638 (action)
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4100 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4652 */;
+import trackInviteDefault from "trackInvite" /* 7129 */;
+import checkReactionResponse from "checkReactionResponse" /* 7433 */;
+import _modDef8574 from "module_8574" /* 8574 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "getEmojiToGroupId" /* 5282 */;
-import closure_5 from "reinjectEphemerals" /* 4623 */;
+import closure_4 from "getEmojiToGroupId" /* 5348 */;
+import closure_5 from "reinjectEphemerals" /* 4687 */;
 import ME from "ME" /* 676 */;
-import importDefaultResult from "t" /* 4096 */;
+import importDefaultResult from "t" /* 4160 */;
 
 require = arg1;
 ({ AnalyticEvents: closure_6, MARKDOWN_SPOILER_WRAPPER: error, ME: closure_8 } = ME);
@@ -83,7 +83,7 @@ obj4 = {
   action(arg0, channel) {
     channel = channel.channel;
     if (null != channel.guild_id) {
-      obj = _modDef8507;
+      obj = _modDef8574;
       obj.changeNickname(channel.guild_id, channel.id, closure_8, arg0);
       return { content: "" };
     }

@@ -1,12 +1,12 @@
-// Module ID: 16626
-// Function ID: 16627
-// Dependencies: [4090, 10536, 589, 4347, 16627, 2009, 10534, 2]
+// Module ID: 16711
+// Function ID: 16712
+// Dependencies: [4154, 10604, 589, 4411, 16712, 2009, 10602, 2]
 
-// Module 16626
+// Module 16711
 import initialize from "initialize" /* 589 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
-import closure_3 from "setContent" /* 4090 */;
-import { CAPTCHA_MODAL_KEY } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS" /* 10536 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
+import closure_3 from "setContent" /* 4154 */;
+import { CAPTCHA_MODAL_KEY } from "CAPTCHA_SERVE_VOLUME_DISTRIBUTION_AGGREGATION_WINDOW_MS" /* 10604 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/captcha/CaptchaUtils.native.tsx");
@@ -32,7 +32,7 @@ export default {
     const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
     const merged = Object.assign(obj);
     const merged1 = Object.assign(options.options);
-    obj2.openLazy(_require(2009)(16627, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
+    obj2.openLazy(_require(2009)(16712, dependencyMap.paths), CAPTCHA_MODAL_KEY, obj);
   },
   showCaptchaAsync(nextResult1) {
     let obj = arg1;
@@ -55,8 +55,8 @@ export default {
           return callback({ captcha_key, captcha_rqtoken, captcha_session_id: closure_1_3 });
         },
         onReject(arg0) {
-          if (arg0 === obj(10534).CaptchaError.CANCEL) {
-            const captchaCancelError = new obj(10534).CaptchaCancelError();
+          if (arg0 === obj(10602).CaptchaError.CANCEL) {
+            const captchaCancelError = new obj(10602).CaptchaCancelError();
             callback2(captchaCancelError);
           } else {
             const _Error = Error;
@@ -66,7 +66,7 @@ export default {
           }
         },
         close() {
-          return callback2(4347).hideActionSheet(closure_4);
+          return callback2(4411).hideActionSheet(closure_4);
         }
       };
       const merged = Object.assign(closure_0);

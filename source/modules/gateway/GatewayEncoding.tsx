@@ -1,12 +1,12 @@
-// Module ID: 13106
-// Function ID: 13107
+// Module ID: 13179
+// Function ID: 13180
 // Name: pack
-// Dependencies: [13107, 4966, 2]
+// Dependencies: [13180, 5032, 2]
 
-// Module 13106 (pack)
+// Module 13179 (pack)
 import set from "set" /* 2 */;
-import get from "get" /* 4966 */;
-import getErlpackEncoding from "getErlpackEncoding" /* 13107 */;
+import get from "get" /* 5032 */;
+import getErlpackEncoding from "getErlpackEncoding" /* 13180 */;
 
 getErlpackEncoding = getErlpackEncoding.getErlpackEncoding();
 class JSONEncoding {

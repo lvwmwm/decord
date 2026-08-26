@@ -1,15 +1,15 @@
-// Module ID: 14942
-// Function ID: 14943
+// Module ID: 15021
+// Function ID: 15022
 // Name: pressable
-// Dependencies: [676, 4094, 10516, 1236, 4335, 2]
+// Dependencies: [676, 4158, 10584, 1236, 4399, 2]
 
-// Module 14942 (pressable)
+// Module 15021 (pressable)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4094 from "module_4094" /* 4094 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4335 */;
-import createToggle from "createToggle" /* 10516 */;
+import _modDef4158 from "module_4158" /* 4158 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4399 */;
+import createToggle from "createToggle" /* 10584 */;
 
 const MarketingURLs = ME.MarketingURLs;
 const pressable = createToggle.createPressable({
@@ -20,7 +20,7 @@ const pressable = createToggle.createPressable({
   parent: null,
   IconComponent: CircleInformationIcon.CircleInformationIcon,
   onPress: function handleAcknowledgementsSettingPress() {
-    _modDef4094.openURL(MarketingURLs.ACKNOWLEDGEMENTS);
+    _modDef4158.openURL(MarketingURLs.ACKNOWLEDGEMENTS);
   },
   withArrow: true
 });
@@ -32,7 +32,7 @@ const obj = {
   parent: null,
   IconComponent: CircleInformationIcon.CircleInformationIcon,
   onPress: function handleAcknowledgementsSettingPress() {
-    _modDef4094.openURL(MarketingURLs.ACKNOWLEDGEMENTS);
+    _modDef4158.openURL(MarketingURLs.ACKNOWLEDGEMENTS);
   },
   withArrow: true
 };

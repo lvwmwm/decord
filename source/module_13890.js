@@ -1,27 +1,17 @@
 // Module ID: 13890
 // Function ID: 13891
-// Dependencies: []
+// Dependencies: [13888]
 
 // Module 13890
-arg5.default = () => (arg0) => {
-  closure_0 = arg0;
-  const features = {
-    apiResponse(request, response, tmp5Result) {
-      let status = response;
-      if (response) {
-        status = response.status;
-      }
-      if (status) {
-        status = typeof response.status === "number";
-      }
-      if (status) {
-        status = response.status >= 200;
-      }
-      if (status) {
-        status = response.status <= 299;
-      }
-      closure_0.send("api.response", { request, response, duration: tmp5Result }, !status);
-    }
-  };
-  return { features };
+import _mod13888 from "module_13888" /* 13888 */;
+
+
+export default (arg0, arg1) => {
+  const tmp = _mod13888(arg0);
+  if (tmp < 0) {
+    let tmp3 = max(tmp + arg1, 0);
+  } else {
+    tmp3 = min(tmp, arg1);
+  }
+  return tmp3;
 };

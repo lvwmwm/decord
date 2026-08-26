@@ -1,11 +1,11 @@
-// Module ID: 16616
-// Function ID: 16617
+// Module ID: 16701
+// Function ID: 16702
 // Name: link
-// Dependencies: [4096, 2]
+// Dependencies: [4160, 2]
 
-// Module 16616 (link)
+// Module 16701 (link)
 import set from "set" /* 2 */;
-import t from "t" /* 4096 */;
+import t from "t" /* 4160 */;
 
 const link = t.defaultRules.link;
 const text = t.defaultRules.text;

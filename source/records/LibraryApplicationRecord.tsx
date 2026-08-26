@@ -1,14 +1,14 @@
-// Module ID: 4420
-// Function ID: 4421
+// Module ID: 4484
+// Function ID: 4485
 // Name: createFromServer
-// Dependencies: [1931, 4421, 4422, 676, 3979, 1403, 2]
+// Dependencies: [1931, 4485, 4486, 676, 4043, 1403, 2]
 
-// Module 4420 (createFromServer)
+// Module 4484 (createFromServer)
 import hasFlagAll from "hasFlag" /* 1403 */;
 import toJSDefault from "toJS" /* 1931 */;
-import hooksDefault from "hooks" /* 3979 */;
-import closure_3 from "addApplication" /* 4421 */;
-import closure_4 from "createFromServer" /* 4422 */;
+import hooksDefault from "hooks" /* 4043 */;
+import closure_3 from "addApplication" /* 4485 */;
+import closure_4 from "createFromServer" /* 4486 */;
 import ME from "ME" /* 676 */;
 
 toJSDefault;

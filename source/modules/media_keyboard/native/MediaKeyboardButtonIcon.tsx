@@ -1,10 +1,10 @@
-// Module ID: 11808
-// Function ID: 11809
+// Module ID: 11881
+// Function ID: 11882
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 4244, 1367, 4120, 1627, 4381, 4384, 9856, 2]
+// Dependencies: [19, 21, 4308, 1367, 4184, 1627, 4445, 4448, 9923, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 11808 (MediaKeyboardButtonIcon)
+// Module 11881 (MediaKeyboardButtonIcon)
 import noopAll from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -20,11 +20,11 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     let _require;
     let chatInputFloating;
     const merged = Object.assign(arg0, undefined);
-    const tmp6 = chatInputFloating(4244)();
+    const tmp6 = chatInputFloating(4308)();
     _require = tmp6;
     let obj = _require(1367);
     chatInputFloating = obj.useMobileVisualRefreshConfig({ location: "MediaKeyboardButtonIcon" }).chatInputFloating;
-    obj1 = _require(4120);
+    obj1 = _require(4184);
     const fn = function s() {
       let tmp4 = callback === callback(closure_1_2[5]).KeyboardTypes.MEDIA;
       if (!tmp4) {
@@ -48,8 +48,8 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = tmp6;
     obj[1] = _require(1627).KeyboardTypes;
     obj[2] = chatInputFloating;
-    obj[3] = _require(4381).withTiming;
-    obj[4] = _require(4384).timingStandard;
+    obj[3] = _require(4445).withTiming;
+    obj[4] = _require(4448).timingStandard;
     fn.__closure = obj;
     fn.__workletHash = 12686941860647;
     fn.__initData = closure_4;
@@ -58,7 +58,7 @@ export const MediaKeyboardButtonIcon = function MediaKeyboardButtonIcon(arg0) {
     obj[0] = animatedStyle;
     obj1 = {};
     const merged1 = Object.assign(merged);
-    obj[1] = jsx(_require(9856).PlusLargeIcon, {});
-    return jsx(chatInputFloating(4120).View, { style: null, children: null });
+    obj[1] = jsx(_require(9923).PlusLargeIcon, {});
+    return jsx(chatInputFloating(4184).View, { style: null, children: null });
   }
 };

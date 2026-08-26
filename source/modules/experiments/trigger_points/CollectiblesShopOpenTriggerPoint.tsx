@@ -1,12 +1,12 @@
-// Module ID: 15046
-// Function ID: 15047
+// Module ID: 15125
+// Function ID: 15126
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4294, 7519, 2]
+// Dependencies: [4358, 7585, 2]
 
-// Module 15046 (commonTriggerPointConfiguration)
+// Module 15125 (commonTriggerPointConfiguration)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4294 */;
-import registeredExperimentIds from "registeredExperimentIds" /* 7519 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4358 */;
+import registeredExperimentIds from "registeredExperimentIds" /* 7585 */;
 
 const commonTriggerPointConfiguration = new registeredExperimentIds.CommonTriggerPointConfiguration([], ExperimentBuckets.CommonTriggerPoints.COLLECTIBLES_SHOP_OPEN, { location: "collectibles shop open" });
 const result = set.fileFinishedImporting("modules/experiments/trigger_points/CollectiblesShopOpenTriggerPoint.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 4994
-// Function ID: 4995
+// Module ID: 5060
+// Function ID: 5061
 // Name: fromBlob
-// Dependencies: [5, 4982, 4995, 2]
+// Dependencies: [5, 5048, 5061, 2]
 
-// Module 4994 (fromBlob)
-import fromBlobDefault from "fromBlob" /* 4982 */;
-import ORIGINAL_MD5_HEADER from "ORIGINAL_MD5_HEADER" /* 4995 */;
+// Module 5060 (fromBlob)
+import fromBlobDefault from "fromBlob" /* 5048 */;
+import ORIGINAL_MD5_HEADER from "ORIGINAL_MD5_HEADER" /* 5061 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;

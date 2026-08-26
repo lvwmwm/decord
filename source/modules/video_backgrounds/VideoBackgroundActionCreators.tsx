@@ -1,13 +1,13 @@
-// Module ID: 9311
-// Function ID: 9312
+// Module ID: 9379
+// Function ID: 9380
 // Name: _fetchVideoFilterAssets
-// Dependencies: [5, 4431, 1922, 676, 530, 709, 9312, 9313, 9310, 1374, 2]
+// Dependencies: [5, 4495, 1922, 676, 530, 709, 9380, 9381, 9378, 1374, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 9311 (_fetchVideoFilterAssets)
+// Module 9379 (_fetchVideoFilterAssets)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4495 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -26,7 +26,7 @@ function _fetchVideoFilterAssets() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -124,7 +124,7 @@ function _uploadVideoFilterAsset() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -164,7 +164,7 @@ function _uploadVideoFilterAsset() {
           } else if (1 === tmp7) {
             constants = 0;
             callback = closure_5;
-            const tmp24 = new callback(9312)(callback);
+            const tmp24 = new callback(9380)(callback);
             throw tmp24;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -226,7 +226,7 @@ function _deleteVideoFilterAsset() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -262,9 +262,9 @@ function _deleteVideoFilterAsset() {
             obj3[0] = arg1;
             return obj3;
           } else {
-            lib2 = lib(9313).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
-            const obj7 = lib(9313);
-            let result = lib(9310).isCustomBackgroundOption(lib2);
+            lib2 = lib(9381).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
+            const obj7 = lib(9381);
+            let result = lib(9378).isCustomBackgroundOption(lib2);
             if (result) {
               result = lib2.id === lib.id;
             }
@@ -276,7 +276,7 @@ function _deleteVideoFilterAsset() {
             obj4[1] = lib;
             obj.dispatch(obj4);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c4 = tmp;
@@ -342,7 +342,7 @@ function _saveLastUsedBackgroundOption() {
             obj3.dispatch(obj5);
             c4 = 3;
           }
-          obj12 = lib(9310);
+          obj12 = lib(9378);
         }
       } else if (arg0 === 1) {
         c4 = 3;

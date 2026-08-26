@@ -1,14 +1,14 @@
-// Module ID: 12745
-// Function ID: 12746
+// Module ID: 12818
+// Function ID: 12819
 // Name: ForumChannelCloseSearchButton
-// Dependencies: [19, 17, 7371, 21, 4380, 1501, 12746, 8539, 4815, 1236, 8563, 589, 6101, 7370, 2]
+// Dependencies: [19, 17, 7437, 21, 4444, 1501, 12819, 8607, 4879, 1236, 8631, 589, 6167, 7436, 2]
 
-// Module 12745 (ForumChannelCloseSearchButton)
+// Module 12818 (ForumChannelCloseSearchButton)
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "initialize" /* 7371 */;
+import closure_5 from "initialize" /* 7437 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -51,7 +51,7 @@ const memoResult = importAllResult.memo((channelId) => {
 const memoResult1 = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;
   ({ guildId: importDefault, placeholder } = channelId);
-  let obj = channelId(12746);
+  let obj = channelId(12819);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   const tmp = callback();
   const items = [closure_5];
@@ -100,7 +100,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
           const obj3 = closure_1_1(closure_1_2[10]);
         }
       };
-      obj[1] = jsx(tmp2(6101).SearchField, { size: "sm", defaultValue: null, onChange: null, placeholder: null, autoFocus: null, onClear: null, grow: false });
+      obj[1] = jsx(tmp2(6167).SearchField, { size: "sm", defaultValue: null, onChange: null, placeholder: null, autoFocus: null, onClear: null, grow: false });
       tmp6Result = tmp6(View, obj);
       const tmp7 = View;
     }

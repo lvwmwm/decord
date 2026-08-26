@@ -1,20 +1,20 @@
-// Module ID: 11650
-// Function ID: 11651
+// Module ID: 11723
+// Function ID: 11724
 // Name: useApplicationsInContext
-// Dependencies: [32, 19, 8496, 8494, 8495, 11651, 4838, 4839, 8499, 1955, 8493, 9688, 11622, 11653, 12, 9699, 589, 9691, 11652, 11654, 2]
+// Dependencies: [32, 19, 8563, 8561, 8562, 11724, 4903, 4904, 8566, 1955, 8560, 9756, 11695, 11726, 12, 9767, 589, 9759, 11725, 11727, 2]
 // Exports: bucketApplicationDescriptionContains, bucketApplicationDescriptionStartsWith, bucketApplicationNameContains, bucketApplicationNameStartsWith, bucketCommandNameContains, bucketCommandOptionNameContains, bucketCommandSectionNameContains, bucketCommandSectionNameStartsWith, bucketFullCommandNameStartsWith, bucketOptionNameStartsWithOrCommandAndOptionStartsWith, bucketRootCommandNameStartsWith, defaultApplicationBucketing, defaultCommandBucketing, defaultCommandsSort, filterApplicationAllowed, filterCommandAllowed, sortCommandsByFreceny, useApplicationCommandsInContext, useGlobalSearchResults, useLocalSearchResults
 
-// Module 11650 (useApplicationsInContext)
-import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive" /* 8493 */;
+// Module 11723 (useApplicationsInContext)
+import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive" /* 8560 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "handleUserSettingsProtoStoreChange" /* 8496 */;
-import getIndexKey from "getIndexKey" /* 8494 */;
-import closure_11 from "handleUserSettingsProtoStoreChange" /* 8495 */;
-import closure_12 from "getSearchResults" /* 11651 */;
-import { FetchState } from "getSearchResults" /* 11651 */;
-import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4838 */;
-import { COMMAND_SENTINEL } from "regExp" /* 4839 */;
+import closure_6 from "handleUserSettingsProtoStoreChange" /* 8563 */;
+import getIndexKey from "getIndexKey" /* 8561 */;
+import closure_11 from "handleUserSettingsProtoStoreChange" /* 8562 */;
+import closure_12 from "getSearchResults" /* 11724 */;
+import { FetchState } from "getSearchResults" /* 11724 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4903 */;
+import { COMMAND_SENTINEL } from "regExp" /* 4904 */;
 
 require = arg1;
 function useApplicationsInContext(allowFetch) {
@@ -29,7 +29,7 @@ function useApplicationsInContext(allowFetch) {
   if ("channel" === context.type) {
     channel = context.channel;
   }
-  let obj = onlyWithCommands(8499);
+  let obj = onlyWithCommands(8566);
   const items = [onlyWithCommands(1955).ApplicationCommandType.CHAT];
   const hasBaseAccessPermissions = obj.usePermissionContext(channel, items).hasBaseAccessPermissions;
   const tmp2 = callback2(context, hasBaseAccessPermissions, flag);
@@ -113,7 +113,7 @@ function useApplicationsInContext(allowFetch) {
     includeBuiltIn = allowFetch.includeBuiltIn;
   }
   if (includeBuiltIn) {
-    items2.push(onlyWithCommands(8493).FAKE_BUILT_IN_APP);
+    items2.push(onlyWithCommands(8560).FAKE_BUILT_IN_APP);
   }
   obj = { apps: items2, loading: null };
   let fetching;
@@ -222,7 +222,7 @@ export const filterApplicationAllowed = function filterApplicationAllowed(type) 
     channel = type.channel;
   }
   const items = [_require(1955).ApplicationCommandType.CHAT, _require(1955).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-  closure_1 = _require(8499).buildPermissionContext(channel, items);
+  closure_1 = _require(8566).buildPermissionContext(channel, items);
   return (id) => {
     ({ context, userId, roleIds, isImpersonating } = closure_1);
     const tmp = closure_1_8(descriptor, id.id);
@@ -389,7 +389,7 @@ export const filterCommandAllowed = function filterCommandAllowed(type) {
     channel = type.channel;
   }
   const items = [_require(1955).ApplicationCommandType.CHAT];
-  closure_1 = _require(8499).buildPermissionContext(channel, items);
+  closure_1 = _require(8566).buildPermissionContext(channel, items);
   closure_2 = {};
   return (applicationId) => {
     ({ context, userId, roleIds, isImpersonating } = closure_1);
@@ -864,12 +864,12 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
   if ("channel" === context.type) {
     guild_id = context.channel.guild_id;
   }
-  const tmp8Result = flag4(11622)({ guildId: guild_id });
+  const tmp8Result = flag4(11695)({ guildId: guild_id });
   callback3 = tmp8Result;
   let items1 = [flag, commands, commandLimit, context, tmp];
   memo1 = obj2.useMemo(() => {
     if (flag) {
-      let obj = context2(11653);
+      let obj = context2(11726);
       obj = { limit: null, filterPredicates: null, bucketPredicates: null, sortComparers: null };
       obj[0] = closure_2;
       closure_1 = undefined;
@@ -879,7 +879,7 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
         channel = tmp5.channel;
       }
       const items = [context2(1955).ApplicationCommandType.CHAT];
-      closure_1 = context2(8499).buildPermissionContext(channel, items);
+      closure_1 = context2(8566).buildPermissionContext(channel, items);
       closure_2 = {};
       const items1 = [
         (applicationId) => {
@@ -1076,7 +1076,7 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
       ];
       obj[3] = items3;
       let queryDataResult = obj.queryData(commands, obj);
-      const obj3 = context2(8499);
+      const obj3 = context2(8566);
       let tmp = context2;
       let tmp3 = commands;
     } else {
@@ -1136,7 +1136,7 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
         tmp2 = apps;
       }
     }
-    let obj = context2(11653);
+    let obj = context2(11726);
     obj = { limit: dependencyMap, filterPredicates: null, bucketPredicates: null, sortComparers: null };
     closure_1 = undefined;
     let channel;
@@ -1144,7 +1144,7 @@ export const useLocalSearchResults = function useLocalSearchResults(context) {
       channel = type.channel;
     }
     const items3 = [context2(1955).ApplicationCommandType.CHAT, context2(1955).ApplicationCommandType.PRIMARY_ENTRY_POINT];
-    closure_1 = context2(8499).buildPermissionContext(channel, items3);
+    closure_1 = context2(8566).buildPermissionContext(channel, items3);
     const items4 = [
       (id) => {
         ({ context, userId, roleIds, isImpersonating } = closure_1);
@@ -1291,7 +1291,7 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
     substr = query.substring(1);
     tmp = substr;
   }
-  const tmp5 = fetches.entrypoint === substr(9699).AppLauncherEntrypoint.VOICE;
+  const tmp5 = fetches.entrypoint === substr(9767).AppLauncherEntrypoint.VOICE;
   dependencyMap = tmp5;
   guild_id = undefined;
   if ("channel" === context.type) {
@@ -1306,9 +1306,9 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
   const items1 = [tmp, guild_id, first, tmp5];
   const stateFromStoresObject = substr(589).useStateFromStoresObject(items, () => {
     let obj = { fetchState: null, totalPages: null };
-    obj = { query: substr, guildId: guild_id, page: first, integrationType: substr(9691).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: dependencyMap, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11652).SearchAppsRequestSource.APP_LAUNCHER };
+    obj = { query: substr, guildId: guild_id, page: first, integrationType: substr(9759).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: dependencyMap, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11725).SearchAppsRequestSource.APP_LAUNCHER };
     obj[0] = closure_1_12.getFetchState(obj);
-    obj = { query: substr, guildId: guild_id, page: first, integrationType: substr(9691).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: dependencyMap, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11652).SearchAppsRequestSource.APP_LAUNCHER };
+    obj = { query: substr, guildId: guild_id, page: first, integrationType: substr(9759).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: dependencyMap, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11725).SearchAppsRequestSource.APP_LAUNCHER };
     const searchResults = closure_1_12.getSearchResults(obj);
     num = undefined;
     if (searchResults != null) {
@@ -1370,9 +1370,9 @@ export const useGlobalSearchResults = function useGlobalSearchResults(fetches) {
   }, items3);
   callback1 = first.useCallback((arg0) => {
     ({ query, page, guildId } = arg0);
-    let obj = num(11654);
+    let obj = num(11727);
     obj = { query, guildId, options: null };
-    obj = { page, integrationType: substr(9691).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: dependencyMap, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11652).SearchAppsRequestSource.APP_LAUNCHER };
+    obj = { page, integrationType: substr(9759).ApplicationIntegrationType.USER_INSTALL, minUserInstallCommandCount: 1, excludeAppsWithCustomInstallUrl: true, excludeNonEmbeddedApps: dependencyMap, excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: true, source: substr(11725).SearchAppsRequestSource.APP_LAUNCHER };
     obj[2] = obj;
     obj.search(obj);
   }, items4);

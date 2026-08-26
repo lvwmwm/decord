@@ -1,20 +1,20 @@
-// Module ID: 11662
-// Function ID: 11663
+// Module ID: 11735
+// Function ID: 11736
 // Name: PortalKeyboardBottomSheetHeader
-// Dependencies: [32, 19, 17, 9941, 21, 500, 4380, 712, 8810, 4802, 4120, 1367, 11663, 4108, 5817, 11664, 589, 5505, 4348, 9918, 1892, 4831, 4101, 1629, 1494, 4249, 4230, 4799, 8820, 5820, 2]
+// Dependencies: [32, 19, 17, 10008, 21, 500, 4444, 712, 8878, 4866, 4184, 1367, 11736, 4172, 5883, 11737, 589, 5571, 4412, 9985, 1892, 4896, 4165, 1629, 1494, 4313, 4294, 4863, 8888, 5886, 2]
 
-// Module 11662 (PortalKeyboardBottomSheetHeader)
+// Module 11735 (PortalKeyboardBottomSheetHeader)
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef4120 from "module_4120" /* 4120 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4802 */;
-import TwinButtons from "TwinButtons" /* 8810 */;
+import _modDef4184 from "module_4184" /* 4184 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4866 */;
+import TwinButtons from "TwinButtons" /* 8878 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 9941 */;
+import closure_6 from "initialize" /* 10008 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 500 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function PortalKeyboardBottomSheetHeader(arg0) {
@@ -37,7 +37,7 @@ function PortalKeyboardBackground(arg0) {
   style[0] = style;
   style[1] = callback2().background;
   style[2] = roundingStyle;
-  return callback(_modDef4120.View, { pointerEvents, style });
+  return callback(_modDef4184.View, { pointerEvents, style });
 }
 let c4 = importAllResult;
 ({ Platform, View: c5 } = get_ActivityIndicator);

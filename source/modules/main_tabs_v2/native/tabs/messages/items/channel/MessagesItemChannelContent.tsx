@@ -1,26 +1,26 @@
-// Module ID: 15394
-// Function ID: 15395
+// Module ID: 15473
+// Function ID: 15474
 // Name: MessagesItemChannelContentIcon
-// Dependencies: [19, 17, 4395, 9950, 4590, 21, 4380, 712, 1297, 8734, 8651, 9977, 9875, 1364, 4315, 1367, 589, 14761, 3979, 9083, 15395, 11, 4574, 15396, 4101, 9617, 9618, 4376, 9400, 9279, 9945, 4075, 9788, 1236, 15398, 2]
+// Dependencies: [19, 17, 4459, 10017, 4654, 21, 4444, 712, 1297, 8802, 8719, 10044, 9942, 1364, 4379, 1367, 589, 14834, 4043, 9151, 15474, 11, 4638, 15475, 4165, 9685, 9686, 4440, 9468, 9347, 10012, 4139, 9855, 1236, 15477, 2]
 
-// Module 15394 (MessagesItemChannelContentIcon)
+// Module 15473 (MessagesItemChannelContentIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import useThemeDefault from "useTheme" /* 4315 */;
-import computeChannelNameDefault from "computeChannelName" /* 4574 */;
-import registerAssetDefault from "registerAsset" /* 8651 */;
-import registerAssetDefault2 from "registerAsset" /* 8734 */;
-import registerAssetDefault3 from "registerAsset" /* 9875 */;
-import registerAssetDefault4 from "registerAsset" /* 9977 */;
-import useMessagePreviewDefault from "useMessagePreview" /* 14761 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 15396 */;
+import useThemeDefault from "useTheme" /* 4379 */;
+import computeChannelNameDefault from "computeChannelName" /* 4638 */;
+import registerAssetDefault from "registerAsset" /* 8719 */;
+import registerAssetDefault2 from "registerAsset" /* 8802 */;
+import registerAssetDefault3 from "registerAsset" /* 9942 */;
+import registerAssetDefault4 from "registerAsset" /* 10044 */;
+import useMessagePreviewDefault from "useMessagePreview" /* 14834 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 15475 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "generateOldThreadCutoff" /* 4395 */;
-import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 9950 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4590 */;
+import closure_4 from "generateOldThreadCutoff" /* 4459 */;
+import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10017 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4654 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -153,14 +153,14 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
   const tmp12 = useMessagePreviewDefault(channel, { unread: hasUnreadMessages });
   let tmp13 = null != tmp12;
   if (tmp13) {
-    let obj2 = tmp3(3979)();
+    let obj2 = tmp3(4043)();
     tmp13 = obj2.diff(tmp12.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
     const tmp14 = obj2.diff(tmp12.timestamp, "hours") < 1 || !hasActivity || hasUnreadMessages;
   }
   if (tmp13) {
-    tmp13 = !tmp3(9083)(channel.id);
+    tmp13 = !tmp3(9151)(channel.id);
   }
-  tmpResult = tmp(15395);
+  tmpResult = tmp(15474);
   let tmp3Result = tmp3(11);
   let id = stateFromStores;
   if (stateFromStores == null) {
@@ -177,7 +177,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
   const waveShouldShow = tmp18.waveShouldShow;
   obj = { variant: null, style: null, lineClamp: 1, ellipsizeMode: "tail" };
   const tmp5 = useIsMobileVisualRefreshExperimentEnabledDefault("MessagesItemChannelContent");
-  obj[0] = channel(4101).useToken(ThemesDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_NAME_TEXT_STYLE);
+  obj[0] = channel(4165).useToken(ThemesDefault.modules.mobile.MESSAGES_ITEM_CHANNEL_NAME_TEXT_STYLE);
   const items1 = [, ];
   ({ channelText: arr2[0], channelName: arr2[1] } = tmp10);
   obj[1] = items1;
@@ -190,8 +190,8 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
         const obj4 = { userId: null, userName: null, effectDisplayType: null };
         obj4[0] = channel.recipients[0];
         obj4[1] = tmp17;
-        tmp3Result = tmp3(9617);
-        const EffectDisplayType = tmp(9618).EffectDisplayType;
+        tmp3Result = tmp3(9685);
+        const EffectDisplayType = tmp(9686).EffectDisplayType;
         obj4[2] = channelSelected ? EffectDisplayType.STATIC : EffectDisplayType.PLAIN;
         obj = Object.assign(obj);
         callback(tmp3Result, obj4);
@@ -201,21 +201,21 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
   const obj5 = {};
   const merged = Object.assign(obj);
   obj5.children = tmp17;
-  const items2 = [callback(channel(4376).Text, obj5), , ];
+  const items2 = [callback(channel(4440).Text, obj5), , ];
   let tmp21Result = null;
   if (tmp16) {
     const obj6 = { userId: null, disabledTooltip: true };
     obj6[0] = channel.recipients[0];
-    tmp21Result = tmp21(tmp3(9400), obj6);
+    tmp21Result = tmp21(tmp3(9468), obj6);
   }
   items2[1] = tmp21Result;
   tmp21Result = null;
   if (channel.isSystemDM()) {
     const obj7 = { style: null, type: null, verified: true };
     obj7[0] = tmp9.botTag;
-    obj7[1] = tmp3(9279).Types.SYSTEM_DM;
-    tmp21Result = tmp21(tmp3(9279), obj7);
-    const tmp3Result1 = tmp3(9279);
+    obj7[1] = tmp3(9347).Types.SYSTEM_DM;
+    tmp21Result = tmp21(tmp3(9347), obj7);
+    const tmp3Result1 = tmp3(9347);
   }
   items2[2] = tmp21Result;
   obj3[1] = items2;
@@ -257,7 +257,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
       ({ channelText: arr8[0], timestamp: arr8[1] } = tmp10);
       obj13[0] = items7;
       obj13[3] = relativeTimestamp;
-      tmp21Result1 = tmp21(tmp(4376).Text, obj13);
+      tmp21Result1 = tmp21(tmp(4440).Text, obj13);
     }
     items6[1] = tmp21Result1;
     obj10[1] = items6;
@@ -286,9 +286,9 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
         str7 = str6;
       }
       obj15[2] = str7;
-      obj15[3] = tmp(4075).ChannelListLayoutTypes.COZY_DRAWER_SMOL;
+      obj15[3] = tmp(4139).ChannelListLayoutTypes.COZY_DRAWER_SMOL;
       obj15[4] = muted;
-      let tmp21Result2 = tmp21(tmp(9945).ChannelRowPreview, obj15);
+      let tmp21Result2 = tmp21(tmp(10012).ChannelRowPreview, obj15);
     } else if (channel.isDM()) {
       const obj16 = { textStyle: null, userId: null, guildId: null };
       obj16[0] = tmp10.channelText;
@@ -298,16 +298,16 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
         guild_id = channel.guild_id;
       }
       obj16[2] = guild_id;
-      tmp21Result2 = tmp21(tmp3(9788), obj16);
-      const tmp3Result2 = tmp3(9788);
+      tmp21Result2 = tmp21(tmp3(9855), obj16);
+      const tmp3Result2 = tmp3(9855);
     } else {
       tmp21Result2 = null;
-      if (tmp3(9083)(channel.id)) {
+      if (tmp3(9151)(channel.id)) {
         const obj17 = { variant: "text-xs/medium", style: null, lineClamp: 1, children: null };
         obj17[1] = tmp10.channelText;
         const intl = tmp(1236).intl;
         obj17[3] = intl.string(tmp(1236).t.FL5T01);
-        tmp21Result2 = tmp21(tmp(4376).Text, obj17);
+        tmp21Result2 = tmp21(tmp(4440).Text, obj17);
       }
     }
     obj14[1] = tmp21Result2;
@@ -319,7 +319,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelContent(chan
       const obj18 = { wavePressed: null, hasNameplate: null };
       obj18[0] = tmp18.wavePressed;
       obj18[1] = hasNameplate;
-      tmp21Result3 = tmp21(tmp3(15398), obj18);
+      tmp21Result3 = tmp21(tmp3(15477), obj18);
     }
     const obj19 = { children: null };
     items9[1] = tmp21Result3;

@@ -1,8 +1,8 @@
-// Module ID: 11523
-// Function ID: 11524
+// Module ID: 11595
+// Function ID: 11596
 // Dependencies: [676, 530, 2]
 
-// Module 11523
+// Module 11595
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import ME from "ME" /* 676 */;

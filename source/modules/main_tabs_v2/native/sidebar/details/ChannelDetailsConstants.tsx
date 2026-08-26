@@ -1,11 +1,11 @@
-// Module ID: 9819
-// Function ID: 9820
+// Module ID: 9886
+// Function ID: 9887
 // Name: ChannelDetailsNavigatorScreens
-// Dependencies: [8554, 2]
+// Dependencies: [8622, 2]
 
-// Module 9819 (ChannelDetailsNavigatorScreens)
+// Module 9886 (ChannelDetailsNavigatorScreens)
 import set from "set" /* 2 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8554 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8622 */;
 
 const sum = MessageEmbedTypes.SEARCH_BAR_HEIGHT + 40;
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsConstants.tsx");

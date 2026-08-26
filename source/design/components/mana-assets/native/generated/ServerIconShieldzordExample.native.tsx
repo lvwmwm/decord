@@ -1,14 +1,14 @@
-// Module ID: 6851
-// Function ID: 6852
+// Module ID: 6917
+// Function ID: 6918
 // Name: ServerIconShieldzordExample
-// Dependencies: [21, 5374, 6852, 2]
+// Dependencies: [21, 5440, 6918, 2]
 // Exports: ServerIconShieldzordExample
 
-// Module 6851 (ServerIconShieldzordExample)
+// Module 6917 (ServerIconShieldzordExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6852 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6918 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconShieldzordExample.native.tsx");

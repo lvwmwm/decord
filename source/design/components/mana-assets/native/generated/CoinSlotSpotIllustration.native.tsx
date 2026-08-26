@@ -1,14 +1,14 @@
-// Module ID: 6295
-// Function ID: 6296
+// Module ID: 6361
+// Function ID: 6362
 // Name: CoinSlotSpotIllustration
-// Dependencies: [21, 5374, 6296, 2]
+// Dependencies: [21, 5440, 6362, 2]
 // Exports: CoinSlotSpotIllustration
 
-// Module 6295 (CoinSlotSpotIllustration)
+// Module 6361 (CoinSlotSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6296 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6362 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CoinSlotSpotIllustration.native.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 7187
-// Function ID: 7188
+// Module ID: 7253
+// Function ID: 7254
 // Name: fromServer
-// Dependencies: [7179, 7160, 2]
+// Dependencies: [7245, 7226, 2]
 
-// Module 7187 (fromServer)
+// Module 7253 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7179 */;
+import ShopBlockType from "ShopBlockType" /* 7245 */;
 
 let prototype;
 prototype = function RewardHeroBlockRecord(unpublished_at) {
@@ -21,9 +21,9 @@ prototype = function RewardHeroBlockRecord(unpublished_at) {
   }
   obj.unpublishedAt = date;
   ({ banner_text_color: tmp.bannerTextColor, mobile_title: tmp.mobileTitle, mobile_summary: tmp.mobileSummary, mobile_products_title: tmp.mobileProductsTitle, reward_sku_id: tmp.rewardSkuId, hero_banner_url: tmp.heroBannerUrl, hero_banner_animated_url: tmp.heroBannerAnimatedUrl, hero_rive_url: tmp.heroRiveUrl, hero_logo_url: tmp.heroLogoUrl, mobile_hero_url: tmp.mobileHeroUrl, mobile_hero_animated_url: tmp.mobileHeroAnimatedUrl } = unpublished_at);
-  let tmp2Result = tmp2(7160);
+  let tmp2Result = tmp2(7226);
   obj.logoDisplayConfig = tmp2Result.getAssetDisplayConfig(unpublished_at.logo_display_config);
-  tmp2Result = tmp2(7160);
+  tmp2Result = tmp2(7226);
   obj.bannerDisplayConfig = tmp2Result.getAssetDisplayConfig(unpublished_at.banner_display_config);
   return obj;
 }.prototype;

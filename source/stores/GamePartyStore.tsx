@@ -1,15 +1,15 @@
-// Module ID: 12822
-// Function ID: 12823
+// Module ID: 12896
+// Function ID: 12897
 // Name: updateParty
-// Dependencies: [1218, 4034, 5104, 676, 12, 589, 709, 2]
+// Dependencies: [1218, 4098, 5170, 676, 12, 589, 709, 2]
 
-// Module 12822 (updateParty)
+// Module 12896 (updateParty)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "markAllUserIdListsStale" /* 4034 */;
-import closure_4 from "filterPlayingActivities" /* 5104 */;
+import closure_3 from "markAllUserIdListsStale" /* 4098 */;
+import closure_4 from "filterPlayingActivities" /* 5170 */;
 import ME from "ME" /* 676 */;
 
 function updateParty(closure_6, id, activities, status) {

@@ -1,13 +1,13 @@
-// Module ID: 7505
-// Function ID: 7506
+// Module ID: 7571
+// Function ID: 7572
 // Name: create
-// Dependencies: [32, 1307, 7500, 7502, 7492, 2]
+// Dependencies: [32, 1307, 7566, 7568, 7558, 2]
 
-// Module 7505 (create)
+// Module 7571 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create from "create" /* 7492 */;
-import create2 from "create" /* 7500 */;
-import create3 from "create" /* 7502 */;
+import create from "create" /* 7558 */;
+import create2 from "create" /* 7566 */;
+import create3 from "create" /* 7568 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -24,7 +24,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "gradient",
       kind: "message",
       T() {
-            return callback(7500).Gradient;
+            return callback(7566).Gradient;
           }
     };
     items[5] = { no: 6, name: "text_color", kind: "scalar", T: 9 };
@@ -34,7 +34,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "asset",
       kind: "message",
       T() {
-            return callback(7502).ThemeAwareAsset;
+            return callback(7568).ThemeAwareAsset;
           }
     };
     items[8] = {
@@ -42,7 +42,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "background_asset",
       kind: "message",
       T() {
-            return callback(7502).ThemeAwareAsset;
+            return callback(7568).ThemeAwareAsset;
           }
     };
     items[9] = {
@@ -50,7 +50,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "header_localized",
       kind: "message",
       T() {
-            return callback(7492).LocalizedString;
+            return callback(7558).LocalizedString;
           }
     };
     obj = { no: 11, name: "body_localized", kind: "message", T: null };
@@ -66,7 +66,7 @@ class BillingSettingsNitroGiftBanner$Type extends MessageType {
       name: "additional_terms_localized",
       kind: "message",
       T() {
-            return callback(7492).LocalizedString;
+            return callback(7558).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.BillingSettingsNitroGiftBanner", items, T);
@@ -180,7 +180,7 @@ let items = [
     name: "gradient",
     kind: "message",
     T() {
-      return callback(7500).Gradient;
+      return callback(7566).Gradient;
     }
   },
   { no: 6, name: "text_color", kind: "scalar", T: 9 },
@@ -190,7 +190,7 @@ let items = [
     name: "asset",
     kind: "message",
     T() {
-      return callback(7502).ThemeAwareAsset;
+      return callback(7568).ThemeAwareAsset;
     }
   },
   {
@@ -198,7 +198,7 @@ let items = [
     name: "background_asset",
     kind: "message",
     T() {
-      return callback(7502).ThemeAwareAsset;
+      return callback(7568).ThemeAwareAsset;
     }
   },
   {
@@ -206,7 +206,7 @@ let items = [
     name: "header_localized",
     kind: "message",
     T() {
-      return callback(7492).LocalizedString;
+      return callback(7558).LocalizedString;
     }
   },
 ,
@@ -225,7 +225,7 @@ items[11] = {
   name: "additional_terms_localized",
   kind: "message",
   T() {
-    return callback(7492).LocalizedString;
+    return callback(7558).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.BillingSettingsNitroGiftBanner", items, tmp, T, BillingSettingsNitroGiftBanner$Type, prototype, items);

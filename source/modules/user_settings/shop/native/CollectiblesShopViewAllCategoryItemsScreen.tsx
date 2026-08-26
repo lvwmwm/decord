@@ -1,11 +1,11 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15159
+// Function ID: 15160
 // Name: CollectiblesShopViewAllCategoryItemsScreen
-// Dependencies: [19, 21, 7021, 1500, 15081, 2]
+// Dependencies: [19, 21, 7087, 1500, 15160, 2]
 // Exports: default
 
-// Module 15080 (CollectiblesShopViewAllCategoryItemsScreen)
-import _modDef15081 from "module_15081" /* 15081 */;
+// Module 15159 (CollectiblesShopViewAllCategoryItemsScreen)
+import _modDef15160 from "module_15160" /* 15160 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -13,7 +13,7 @@ const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/shop/native/CollectiblesShopViewAllCategoryItemsScreen.tsx");
 
 export default function CollectiblesShopViewAllCategoryItemsScreen() {
-  let obj = stackNavigation(7021);
+  let obj = stackNavigation(7087);
   const settingNavigationRoute = obj.useSettingNavigationRoute();
   stackNavigation = stackNavigation(1500).useStackNavigation();
   const items = [stackNavigation];
@@ -23,5 +23,5 @@ export default function CollectiblesShopViewAllCategoryItemsScreen() {
   obj = {};
   const obj2 = stackNavigation(1500);
   const merged = Object.assign(settingNavigationRoute.params);
-  return jsx(_modDef15081, {});
+  return jsx(_modDef15160, {});
 };

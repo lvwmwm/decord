@@ -1,18 +1,18 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 13022
+// Function ID: 13023
 // Name: PremiumPromotionCard
-// Dependencies: [19, 17, 4372, 676, 1924, 21, 4380, 712, 589, 5834, 7029, 5374, 4376, 1236, 1995, 4815, 7849, 2]
+// Dependencies: [19, 17, 4436, 676, 1924, 21, 4444, 712, 589, 5900, 7095, 5440, 4440, 1236, 1995, 4879, 7916, 2]
 // Exports: default
 
-// Module 12948 (PremiumPromotionCard)
+// Module 13022 (PremiumPromotionCard)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
 import ME from "ME" /* 676 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ AnalyticsObjectTypes: closure_6, AnalyticsPages: error, AnalyticsSections: closure_8, HelpdeskArticles: c9 } = ME);

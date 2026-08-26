@@ -1,15 +1,15 @@
-// Module ID: 13050
-// Function ID: 13051
+// Module ID: 13123
+// Function ID: 13124
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 4272, 7019, 589, 691, 7026, 4275, 2]
+// Dependencies: [5, 32, 19, 4336, 7085, 589, 691, 7092, 4339, 2]
 // Exports: default
 
-// Module 13050 (useFetchGuildBoostSlots)
+// Module 13123 (useFetchGuildBoostSlots)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "handleGuildBoostsUpdate" /* 4272 */;
-import closure_7 from "getState" /* 7019 */;
+import closure_6 from "handleGuildBoostsUpdate" /* 4336 */;
+import closure_7 from "getState" /* 7085 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");
@@ -41,7 +41,7 @@ export default function useFetchGuildBoostSlots() {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -88,7 +88,7 @@ export default function useFetchGuildBoostSlots() {
               } else {
                 v0(false);
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp13) {
               c2 = tmp;

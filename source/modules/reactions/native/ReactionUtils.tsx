@@ -1,20 +1,20 @@
-// Module ID: 8760
-// Function ID: 8761
+// Module ID: 8828
+// Function ID: 8829
 // Name: handleOutOfSuperReactions
-// Dependencies: [1391, 4623, 4202, 1922, 676, 1925, 21, 4036, 4348, 4349, 7367, 4043, 4347, 8761, 2009, 4242, 8784, 7366, 4588, 8927, 12738, 12739, 12740, 7800, 7846, 4744, 1236, 4376, 2]
+// Dependencies: [1391, 4687, 4266, 1922, 676, 1925, 21, 4100, 4412, 4413, 7433, 4107, 4411, 8829, 2009, 4306, 8852, 7432, 4652, 8995, 12811, 12812, 12813, 7867, 7913, 4808, 1236, 4440, 2]
 // Exports: handleAddNewReactions, handleOutOfSuperReactions, handleRemoveAllReactions, handleViewPreviewReactions, handleViewReactions
 
-// Module 8760 (handleOutOfSuperReactions)
+// Module 8828 (handleOutOfSuperReactions)
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4043 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4588 */;
-import setDefault from "set" /* 4744 */;
-import registerAssetDefault from "registerAsset" /* 12739 */;
-import registerAssetDefault2 from "registerAsset" /* 12740 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4652 */;
+import setDefault from "set" /* 4808 */;
+import registerAssetDefault from "registerAsset" /* 12812 */;
+import registerAssetDefault2 from "registerAsset" /* 12813 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "reinjectEphemerals" /* 4623 */;
-import closure_5 from "handleConnectionOpen" /* 4202 */;
+import closure_4 from "reinjectEphemerals" /* 4687 */;
+import closure_5 from "handleConnectionOpen" /* 4266 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { EmojiIntention } from "set" /* 1925 */;
@@ -38,7 +38,7 @@ export const handleOutOfSuperReactions = function handleOutOfSuperReactions(arg0
     if (!obj.isPremium(currentUser)) {
       obj = { onDismiss: null };
       obj[0] = arg0;
-      openLazyResult = ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8761, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
+      openLazyResult = ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8829, dependencyMap.paths), "SuperReactionUpsellActionSheet", obj);
       const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
     }
     return openLazyResult;
@@ -156,14 +156,14 @@ export const handleViewReactions = function handleViewReactions(isPoll) {
     obj1[2] = isPoll.emoji;
     const obj6 = ACTION_SHEET_HEIGHT_HALFDefault;
     const merged2 = Object.assign(merged);
-    obj6.openLazy(asyncRequireImpl(8927, dependencyMap.paths), "MessageReactions", obj1);
+    obj6.openLazy(asyncRequireImpl(8995, dependencyMap.paths), "MessageReactions", obj1);
   }
   FORUM_CHANNEL_POST = constants2.FORUM_CHANNEL_POST;
 };
 export const handleViewPreviewReactions = function handleViewPreviewReactions(id2, id, emoji) {
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { messageId: id2, channelId: id, emoji };
-  obj.openLazy(asyncRequireImpl(12738, dependencyMap.paths), "MessagePreviewReactions", obj);
+  obj.openLazy(asyncRequireImpl(12811, dependencyMap.paths), "MessagePreviewReactions", obj);
 };
 export const ADD_REACTION_ICONS = obj;
 export const ADD_REACTION_ICON_COMPONENTS = obj;
@@ -177,7 +177,7 @@ export const handleRemoveAllReactions = function handleRemoveAllReactions(arg0, 
   obj = { variant: "text-md/normal", children: null };
   const intl2 = _require(1236).intl;
   obj[1] = intl2.string(_require(1236).t.VpjOCo);
-  obj[1] = jsx(_require(4376).Text, { variant: "text-md/normal", children: null });
+  obj[1] = jsx(_require(4440).Text, { variant: "text-md/normal", children: null });
   const intl3 = _require(1236).intl;
   obj[2] = intl3.string(_require(1236).t["ETE/oC"]);
   const intl4 = _require(1236).intl;

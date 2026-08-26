@@ -1,19 +1,19 @@
-// Module ID: 9246
-// Function ID: 9247
+// Module ID: 9314
+// Function ID: 9315
 // Name: frozen
-// Dependencies: [109, 19, 17, 21, 4380, 712, 4108, 9247, 4805, 9261, 8921, 2]
+// Dependencies: [109, 19, 17, 21, 4444, 712, 4172, 9315, 4869, 9329, 8989, 2]
 
-// Module 9246 (frozen)
+// Module 9314 (frozen)
 import ThemesDefault from "Themes" /* 712 */;
-import isBlurDisabledDefault from "isBlurDisabled" /* 4805 */;
-import _modDef8921 from "module_8921" /* 8921 */;
-import QRCodeDefault from "QRCode" /* 9247 */;
-import registerAsset from "registerAsset" /* 9261 */;
+import isBlurDisabledDefault from "isBlurDisabled" /* 4869 */;
+import _modDef8989 from "module_8989" /* 8989 */;
+import QRCodeDefault from "QRCode" /* 9315 */;
+import registerAsset from "registerAsset" /* 9329 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 let closure_3 = ["style", "text", "blur", "accessibilityLabel"];
@@ -84,7 +84,7 @@ QRCodeWithOverlay.prototype["render"] = function render() {
   if (props.blur) {
     const obj2 = { style: null };
     obj2[0] = closure_7.absoluteFill;
-    tmp6Result = callback2(_modDef8921, obj2);
+    tmp6Result = callback2(_modDef8989, obj2);
   }
   items[2] = tmp6Result;
   obj[1] = items;

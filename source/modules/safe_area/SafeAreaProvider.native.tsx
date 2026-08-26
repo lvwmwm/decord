@@ -1,10 +1,10 @@
-// Module ID: 14046
-// Function ID: 14047
+// Module ID: 14119
+// Function ID: 14120
 // Name: SafeAreaReporter
 // Dependencies: [19, 17, 21, 1625, 1631, 500, 1630, 1641, 705, 1632, 1497, 2]
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 14046 (SafeAreaReporter)
+// Module 14119 (SafeAreaReporter)
 import EMPTY_SAFE_AREA_INSETS from "EMPTY_SAFE_AREA_INSETS" /* 1631 */;
 import _mod1632 from "module_1632" /* 1632 */;
 import closure_3 from "noop" /* 19 */;

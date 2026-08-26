@@ -1,26 +1,26 @@
-// Module ID: 15448
-// Function ID: 15449
+// Module ID: 15527
+// Function ID: 15528
 // Name: HappeningNowCardCreateChannel
-// Dependencies: [19, 17, 1982, 1910, 1981, 14738, 676, 21, 4380, 712, 698, 9143, 15449, 1236, 9168, 15450, 9212, 15451, 11875, 12325, 14739, 4376, 2]
+// Dependencies: [19, 17, 1982, 1910, 1981, 14811, 676, 21, 4444, 712, 698, 9211, 15528, 1236, 9236, 15529, 9280, 15530, 11948, 12397, 14812, 4440, 2]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 15448 (HappeningNowCardCreateChannel)
+// Module 15527 (HappeningNowCardCreateChannel)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4376 */;
-import registerAssetDefault from "registerAsset" /* 12325 */;
-import HAPPENING_NOW_CARD_MARGIN_RIGHTDefault from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 14739 */;
-import registerAssetDefault2 from "registerAsset" /* 15449 */;
-import registerAssetDefault3 from "registerAsset" /* 15450 */;
-import registerAssetDefault4 from "registerAsset" /* 15451 */;
+import Text from "Text" /* 4440 */;
+import registerAssetDefault from "registerAsset" /* 12397 */;
+import HAPPENING_NOW_CARD_MARGIN_RIGHTDefault from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 14812 */;
+import registerAssetDefault2 from "registerAsset" /* 15528 */;
+import registerAssetDefault3 from "registerAsset" /* 15529 */;
+import registerAssetDefault4 from "registerAsset" /* 15530 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "comparator" /* 1982 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
 import closure_8 from "handleConnectionOpen" /* 1981 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14738 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14811 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 let c3 = importAllResult;

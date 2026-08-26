@@ -1,14 +1,14 @@
-// Module ID: 9872
-// Function ID: 9873
+// Module ID: 9939
+// Function ID: 9940
 // Name: GroupPlusIcon
-// Dependencies: [19, 21, 712, 4100, 9873, 2]
+// Dependencies: [19, 21, 712, 4164, 9940, 2]
 // Exports: GroupPlusIcon
 
-// Module 9872 (GroupPlusIcon)
+// Module 9939 (GroupPlusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 9873 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 9940 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 16847
-// Function ID: 16848
+// Module ID: 16932
+// Function ID: 16933
 // Name: prototype
-// Dependencies: [1922, 7057, 505, 5367, 7555, 1946, 7736, 2]
+// Dependencies: [1922, 7123, 505, 5433, 7621, 1946, 7802, 2]
 
-// Module 16847 (prototype)
-import initializeDefault from "initialize" /* 5367 */;
+// Module 16932 (prototype)
+import initializeDefault from "initialize" /* 5433 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import closure_3 from "emitChanges" /* 7057 */;
+import closure_3 from "emitChanges" /* 7123 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
 let require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 12134
-// Function ID: 12135
+// Module ID: 12207
+// Function ID: 12208
 // Name: useGameServerPerk
-// Dependencies: [19, 4287, 4268, 4267, 4290, 589, 12135, 1236, 2759, 12136, 2]
+// Dependencies: [19, 4351, 4332, 4331, 4354, 589, 12208, 1236, 2791, 12209, 2]
 // Exports: default
 
-// Module 12134 (useGameServerPerk)
+// Module 12207 (useGameServerPerk)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleGameServerInstanceCreated" /* 4287 */;
-import { GAME_SERVER_POWERUP_SKU_ID as closure_5 } from "str11" /* 4268 */;
-import { GuildPowerupType } from "BoostedGuildTiers" /* 4267 */;
+import closure_4 from "handleGameServerInstanceCreated" /* 4351 */;
+import { GAME_SERVER_POWERUP_SKU_ID as closure_5 } from "str11" /* 4332 */;
+import { GuildPowerupType } from "BoostedGuildTiers" /* 4331 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_server/hooks/useGameServerPerk.tsx");

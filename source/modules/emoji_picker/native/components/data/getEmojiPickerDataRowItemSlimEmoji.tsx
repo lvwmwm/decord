@@ -1,10 +1,10 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 8922
+// Function ID: 8923
 // Name: getEmojiPickerDataRowItemSlimEmoji
-// Dependencies: [8849, 4041, 2]
+// Dependencies: [8917, 4105, 2]
 // Exports: default
 
-// Module 8854 (getEmojiPickerDataRowItemSlimEmoji)
+// Module 8922 (getEmojiPickerDataRowItemSlimEmoji)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemSlimEmoji.tsx");
@@ -13,7 +13,7 @@ export default function getEmojiPickerDataRowItemSlimEmoji(isSectionNitroLocked)
   const _require = isSectionNitroLocked;
   const emojis = isSectionNitroLocked.emojis;
   return {
-    type: _require(8849).EmojiPickerItemType.EMOJI_ROW_SLIM,
+    type: _require(8917).EmojiPickerItemType.EMOJI_ROW_SLIM,
     emojis: emojis.map((type) => {
       if (type.type === isSectionNitroLocked(closure_1_1[1]).EmojiTypes.UNICODE) {
         let obj = { name: null, surrogates: null };

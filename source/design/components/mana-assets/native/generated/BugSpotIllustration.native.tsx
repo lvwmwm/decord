@@ -1,14 +1,14 @@
-// Module ID: 6251
-// Function ID: 6252
+// Module ID: 6317
+// Function ID: 6318
 // Name: BugSpotIllustration
-// Dependencies: [21, 5374, 6252, 2]
+// Dependencies: [21, 5440, 6318, 2]
 // Exports: BugSpotIllustration
 
-// Module 6251 (BugSpotIllustration)
+// Module 6317 (BugSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6252 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6318 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BugSpotIllustration.native.tsx");

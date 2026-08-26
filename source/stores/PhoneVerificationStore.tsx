@@ -1,9 +1,9 @@
-// Module ID: 16855
-// Function ID: 16856
+// Module ID: 16940
+// Function ID: 16941
 // Name: getCountrySelectorOpened
 // Dependencies: [589, 709, 2]
 
-// Module 16855 (getCountrySelectorOpened)
+// Module 16940 (getCountrySelectorOpened)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

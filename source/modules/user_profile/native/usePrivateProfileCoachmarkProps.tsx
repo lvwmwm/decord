@@ -1,17 +1,17 @@
-// Module ID: 15725
-// Function ID: 15726
+// Module ID: 15804
+// Function ID: 15805
 // Name: PrivateProfileCoachmarkImage
-// Dependencies: [19, 17, 676, 1388, 21, 4380, 6785, 1306, 1236, 8187, 4070, 1377, 6125, 2]
+// Dependencies: [19, 17, 676, 1388, 21, 4444, 6851, 1306, 1236, 8254, 4134, 1377, 6191, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 15725 (PrivateProfileCoachmarkImage)
-import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6785 */;
+// Module 15804 (PrivateProfileCoachmarkImage)
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 6851 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function PrivateProfileCoachmarkImage() {

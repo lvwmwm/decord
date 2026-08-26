@@ -1,14 +1,14 @@
-// Module ID: 6521
-// Function ID: 6522
+// Module ID: 6587
+// Function ID: 6588
 // Name: GemHero3dIllustration
-// Dependencies: [21, 5374, 6522, 2]
+// Dependencies: [21, 5440, 6588, 2]
 // Exports: GemHero3dIllustration
 
-// Module 6521 (GemHero3dIllustration)
+// Module 6587 (GemHero3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6522 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6588 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemHero3dIllustration.native.tsx");

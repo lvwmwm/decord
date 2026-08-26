@@ -1,14 +1,14 @@
-// Module ID: 14823
-// Function ID: 14824
+// Module ID: 14902
+// Function ID: 14903
 // Name: LanguageIcon
-// Dependencies: [19, 21, 712, 4100, 14824, 2]
+// Dependencies: [19, 21, 712, 4164, 14903, 2]
 // Exports: LanguageIcon
 
-// Module 14823 (LanguageIcon)
+// Module 14902 (LanguageIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 14824 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 14903 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

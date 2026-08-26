@@ -1,16 +1,16 @@
-// Module ID: 8937
-// Function ID: 8938
+// Module ID: 9005
+// Function ID: 9006
 // Name: initialize
-// Dependencies: [1922, 687, 1405, 8938, 584, 8940, 589, 709, 2]
+// Dependencies: [1922, 687, 1405, 9006, 584, 9008, 589, 709, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8937 (initialize)
+// Module 9005 (initialize)
 import failsDefault from "fails" /* 584 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import privDefault from "priv" /* 1405 */;
-import urlUserId from "urlUserId" /* 8940 */;
+import urlUserId from "urlUserId" /* 9008 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
@@ -71,9 +71,9 @@ prototype["isCatalogStaleFor"] = function isCatalogStaleFor(id) {
   }
   return tmp3;
 };
-prototype["hasCatalogFetchErrorFor"] = function hasCatalogFetchErrorFor(stateFromStores) {
-  let tmp = stateFromStores;
-  if (stateFromStores == null) {
+prototype["hasCatalogFetchErrorFor"] = function hasCatalogFetchErrorFor(arg0) {
+  let tmp = arg0;
+  if (arg0 == null) {
     const currentUser = authStore.getCurrentUser();
     let id;
     if (currentUser != null) {

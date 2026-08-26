@@ -1,18 +1,18 @@
-// Module ID: 15170
-// Function ID: 15171
+// Module ID: 15249
+// Function ID: 15250
 // Name: TestLocaleSelector
-// Dependencies: [32, 5, 19, 17, 1997, 1996, 21, 4380, 712, 8136, 1236, 8845, 8135, 589, 3979, 5873, 5480, 1274, 4813, 4376, 15171, 15203, 2]
+// Dependencies: [32, 5, 19, 17, 1997, 1996, 21, 4444, 712, 8203, 1236, 8913, 8202, 589, 4043, 5939, 5546, 1274, 4877, 4440, 15250, 15282, 2]
 // Exports: default
 
-// Module 15170 (TestLocaleSelector)
+// Module 15249 (TestLocaleSelector)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 3979 */;
-import TableRowInner from "TableRowInner" /* 5480 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5873 */;
-import messagesProxyDefault from "messagesProxy" /* 15171 */;
-import messagesProxyDefault2 from "messagesProxy" /* 15203 */;
+import hooksDefault from "hooks" /* 4043 */;
+import TableRowInner from "TableRowInner" /* 5546 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5939 */;
+import messagesProxyDefault from "messagesProxy" /* 15250 */;
+import messagesProxyDefault2 from "messagesProxy" /* 15282 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
@@ -20,7 +20,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { setAppLocale } from "_setAppLocale" /* 1997 */;
 import closure_9 from "_getSystemLocale" /* 1996 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function TestLocaleSelector() {
@@ -42,7 +42,7 @@ function TestLocaleSelector() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -77,7 +77,7 @@ function TestLocaleSelector() {
             obj = closure_1_1(closure_1_2[11]);
             obj.updateLocale(closure_0);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c4 = tmp;
@@ -96,9 +96,9 @@ function TestLocaleSelector() {
     }
     return applyArgumentsResult;
   };
-  const items = [callback3(_require(8135).TableRadioRow, { label: "English", value: "en-US" }), callback3(_require(8135).TableRadioRow, { label: "French", value: "fr" })];
+  const items = [callback3(_require(8202).TableRadioRow, { label: "English", value: "en-US" }), callback3(_require(8202).TableRadioRow, { label: "French", value: "fr" })];
   obj[4] = items;
-  return callback4(_require(8136).TableRadioGroup, obj);
+  return callback4(_require(8203).TableRadioGroup, obj);
 }
 function LocaleInfo() {
   let obj = initialize;
@@ -165,15 +165,15 @@ export default function IntlTestingSettingsPage() {
   obj = { variant: "text-md/normal", children: null };
   const intl = _require(1236).intl;
   obj[1] = intl.format(messagesProxyDefault.HMvEC5, {});
-  items[2] = callback3(_require(4376).Text, obj);
+  items[2] = callback3(_require(4440).Text, obj);
   obj1 = { variant: "text-md/normal", children: null };
   const intl2 = _require(1236).intl;
   obj1[1] = intl2.format(messagesProxyDefault2.swfLzV, {});
-  items[3] = callback3(_require(4376).Text, obj1);
+  items[3] = callback3(_require(4440).Text, obj1);
   const obj2 = { variant: "text-md/normal", children: null };
   const intl3 = _require(1236).intl;
   obj2[1] = intl3.format(messagesProxyDefault.rmps8y, {});
-  items[4] = callback3(_require(4376).Text, obj2);
+  items[4] = callback3(_require(4440).Text, obj2);
   const obj3 = { variant: "text-md/normal", children: null };
   const intl4 = _require(1236).intl;
   obj3[1] = intl4.format(messagesProxyDefault.uczI4g, {
@@ -181,23 +181,23 @@ export default function IntlTestingSettingsPage() {
 
     }
   });
-  items[5] = callback3(_require(4376).Text, obj3);
+  items[5] = callback3(_require(4440).Text, obj3);
   const obj5 = { variant: "text-md/normal", children: null };
   const intl5 = _require(1236).intl;
   obj5[1] = intl5.format(messagesProxyDefault.rdfRyh, {});
-  items[6] = callback3(_require(4376).Text, obj5);
+  items[6] = callback3(_require(4440).Text, obj5);
   const obj6 = { variant: "text-md/normal", children: null };
   const intl6 = _require(1236).intl;
   obj6[1] = intl6.format(messagesProxyDefault.XOdbAy, {
     username: "some user",
     usernameHook(children) {
-      obj = { style: { backgroundColor: "green", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 0 }, children: callback2(callback(4376).Text, obj) };
+      obj = { style: { backgroundColor: "green", borderRadius: 4, paddingHorizontal: 6, paddingVertical: 0 }, children: callback2(callback(4440).Text, obj) };
       obj = { variant: "text-sm/normal", color: "text-overlay-light", children };
       return callback2(closure_6, obj);
     }
   });
-  items[7] = callback3(_require(4376).Text, obj6);
+  items[7] = callback3(_require(4440).Text, obj6);
   obj[2] = items;
-  obj[1] = callback4(_require(4813).Stack, obj);
+  obj[1] = callback4(_require(4877).Stack, obj);
   return callback3(closure_7, obj);
 };

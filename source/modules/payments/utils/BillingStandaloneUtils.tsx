@@ -1,10 +1,10 @@
-// Module ID: 7012
-// Function ID: 7013
+// Module ID: 7078
+// Function ID: 7079
 // Name: goToStandalonePremiumCheckout
 // Dependencies: [676, 1487, 514, 530, 2]
 // Exports: goToBillingStandalonePageWithHandoff, goToStandalonePremiumCheckoutWeb
 
-// Module 7012 (goToStandalonePremiumCheckout)
+// Module 7078 (goToStandalonePremiumCheckout)
 import set from "set" /* 2 */;
 import v1 from "v1" /* 514 */;
 import sendRequest from "sendRequest" /* 530 */;

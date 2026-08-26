@@ -1,16 +1,16 @@
-// Module ID: 8834
-// Function ID: 8835
+// Module ID: 8902
+// Function ID: 8903
 // Name: ShinyButton
-// Dependencies: [19, 21, 4380, 712, 4816, 1297, 8835, 2]
+// Dependencies: [19, 21, 4444, 712, 4880, 1297, 8903, 2]
 // Exports: default
 
-// Module 8834 (ShinyButton)
+// Module 8902 (ShinyButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import CollapsingText from "CollapsingText" /* 4816 */;
-import registerAssetDefault from "registerAsset" /* 8835 */;
+import CollapsingText from "CollapsingText" /* 4880 */;
+import registerAssetDefault from "registerAsset" /* 8903 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

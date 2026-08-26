@@ -1,17 +1,17 @@
-// Module ID: 9576
-// Function ID: 9577
+// Module ID: 9644
+// Function ID: 9645
 // Name: VariantOption
-// Dependencies: [19, 17, 21, 4380, 712, 9559, 9577, 5469, 9578, 9493, 7159, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 9627, 9645, 5535, 9646, 9561, 7225, 2]
 
-// Module 9576 (VariantOption)
+// Module 9644 (VariantOption)
 import ThemesDefault from "Themes" /* 712 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 5469 */;
-import getProductPurchaseState from "getProductPurchaseState" /* 9559 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9577 */;
-import PlusSmallIcon from "PlusSmallIcon" /* 9578 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 5535 */;
+import getProductPurchaseState from "getProductPurchaseState" /* 9627 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9645 */;
+import PlusSmallIcon from "PlusSmallIcon" /* 9646 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -74,7 +74,7 @@ let closure_7 = createCacheKey.createStyles((arg0) => {
 const memoResult = importAllResult.memo(function CardProductVariants(product) {
   product = product.product;
   let defaultVariantIndex;
-  let obj = defaultVariantIndex(9493);
+  let obj = defaultVariantIndex(9561);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
   const tmp = callback2();
   if (obj2.getIsVariantProduct(product)) {
@@ -106,7 +106,7 @@ const memoResult = importAllResult.memo(function CardProductVariants(product) {
   } else {
     return null;
   }
-  obj2 = defaultVariantIndex(7159);
+  obj2 = defaultVariantIndex(7225);
 });
 const result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesShopCardVariants.tsx");
 

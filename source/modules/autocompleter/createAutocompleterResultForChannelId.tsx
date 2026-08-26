@@ -1,13 +1,13 @@
-// Module ID: 7463
-// Function ID: 7464
+// Module ID: 7529
+// Function ID: 7530
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1391, 4034, 1922, 5333, 676, 4574, 2]
+// Dependencies: [1391, 4098, 1922, 5399, 676, 4638, 2]
 // Exports: default
 
-// Module 7463 (createAutocompleterResultForChannelId)
-import computeChannelName from "computeChannelName" /* 4574 */;
+// Module 7529 (createAutocompleterResultForChannelId)
+import computeChannelName from "computeChannelName" /* 4638 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "markAllUserIdListsStale" /* 4034 */;
+import closure_3 from "markAllUserIdListsStale" /* 4098 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { ChannelTypes } from "ME" /* 676 */;
 

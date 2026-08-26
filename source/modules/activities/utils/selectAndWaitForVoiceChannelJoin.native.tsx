@@ -1,10 +1,10 @@
-// Module ID: 10725
-// Function ID: 10726
+// Module ID: 10797
+// Function ID: 10798
 // Name: _selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 1981, 5236, 2]
+// Dependencies: [5, 1981, 5302, 2]
 // Exports: default
 
-// Module 10725 (_selectAndWaitForVoiceChannelJoin)
+// Module 10797 (_selectAndWaitForVoiceChannelJoin)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "handleConnectionOpen" /* 1981 */;
 
@@ -27,7 +27,7 @@ function _selectAndWaitForVoiceChannelJoin() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

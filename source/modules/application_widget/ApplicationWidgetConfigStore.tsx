@@ -1,9 +1,9 @@
-// Module ID: 12657
-// Function ID: 12658
+// Module ID: 12730
+// Function ID: 12731
 // Name: updateApplicationConfigs
 // Dependencies: [32, 589, 709, 2]
 
-// Module 12657 (updateApplicationConfigs)
+// Module 12730 (updateApplicationConfigs)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "_slicedToArray" /* 32 */;

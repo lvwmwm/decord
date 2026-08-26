@@ -1,14 +1,14 @@
-// Module ID: 14550
-// Function ID: 14551
+// Module ID: 14623
+// Function ID: 14624
 // Name: useYouBarTotalHeight
-// Dependencies: [14548, 14547, 14551, 2]
+// Dependencies: [14621, 14620, 14624, 2]
 // Exports: useYouBarTotalHeight
 
-// Module 14550 (useYouBarTotalHeight)
+// Module 14623 (useYouBarTotalHeight)
 import set from "set" /* 2 */;
-import useYouBarHorizontalMargin from "useYouBarHorizontalMargin" /* 14547 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14548 */;
-import useConnectionBannerHeight from "useConnectionBannerHeight" /* 14551 */;
+import useYouBarHorizontalMargin from "useYouBarHorizontalMargin" /* 14620 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14621 */;
+import useConnectionBannerHeight from "useConnectionBannerHeight" /* 14624 */;
 
 const YOU_BAR_HEIGHT = CONNECTION_BANNER_HEIGHT.YOU_BAR_HEIGHT;
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarTotalHeight.tsx");

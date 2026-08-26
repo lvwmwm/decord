@@ -1,16 +1,16 @@
-// Module ID: 11002
-// Function ID: 11003
+// Module ID: 11074
+// Function ID: 11075
 // Name: CameraButton
-// Dependencies: [19, 4431, 21, 589, 10889, 1236, 11003, 9303, 9897, 9898, 11004, 4609, 2]
+// Dependencies: [19, 4495, 21, 589, 10961, 1236, 11075, 9371, 9964, 9965, 11076, 4673, 2]
 // Exports: CameraButton, GridButton
 
-// Module 11002 (CameraButton)
+// Module 11074 (CameraButton)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 9898 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10889 */;
-import registerAssetDefault from "registerAsset" /* 11003 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4431 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 9965 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10961 */;
+import registerAssetDefault from "registerAsset" /* 11075 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4495 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -50,12 +50,12 @@ export const GridButton = function GridButton(channel) {
       const obj = { accessibilityLabel: null, source: null, onPress: null, disableBackground: true };
       const intl = channel(1236).intl;
       obj[0] = intl.string(channel(1236).t.HK4JIu);
-      obj[1] = tmp(11004);
+      obj[1] = tmp(11076);
       obj[2] = function onPress() {
         return closure_1_1(closure_1_2[11]).selectParticipant(channel.id, null);
       };
-      tmp4 = jsx(tmp(10889), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
-      const tmpResult = tmp(10889);
+      tmp4 = jsx(tmp(10961), { accessibilityLabel: null, source: null, onPress: null, disableBackground: true });
+      const tmpResult = tmp(10961);
     }
   }
   return tmp4;

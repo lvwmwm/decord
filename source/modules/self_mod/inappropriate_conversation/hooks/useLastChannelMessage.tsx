@@ -1,11 +1,11 @@
-// Module ID: 10441
-// Function ID: 10442
+// Module ID: 10509
+// Function ID: 10510
 // Name: useLastChannelMessage
-// Dependencies: [4623, 589, 2]
+// Dependencies: [4687, 589, 2]
 // Exports: useLastChannelMessage
 
-// Module 10441 (useLastChannelMessage)
-import closure_2 from "reinjectEphemerals" /* 4623 */;
+// Module 10509 (useLastChannelMessage)
+import closure_2 from "reinjectEphemerals" /* 4687 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useLastChannelMessage.tsx");

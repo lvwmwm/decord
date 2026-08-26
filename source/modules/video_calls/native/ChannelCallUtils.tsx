@@ -1,18 +1,18 @@
-// Module ID: 16554
-// Function ID: 16555
+// Module ID: 16639
+// Function ID: 16640
 // Name: voiceSettings
-// Dependencies: [19, 4468, 676, 21, 1236, 16555, 6125, 4347, 4609, 4745, 16552, 2009, 16556, 4446, 16557, 9212, 4234, 10955, 8169, 7, 4098, 9070, 2]
+// Dependencies: [19, 4532, 676, 21, 1236, 16640, 6191, 4411, 4673, 4809, 16637, 2009, 16641, 4510, 16642, 9280, 4298, 11027, 8236, 7, 4162, 9138, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 16554 (voiceSettings)
+// Module 16639 (voiceSettings)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4745 from "module_4745" /* 4745 */;
-import registerAssetDefault from "registerAsset" /* 8169 */;
-import registerAssetDefault2 from "registerAsset" /* 10955 */;
-import registerAssetDefault3 from "registerAsset" /* 16555 */;
-import registerAssetDefault4 from "registerAsset" /* 16556 */;
-import closure_3 from "initialize" /* 4468 */;
+import _modDef4809 from "module_4809" /* 4809 */;
+import registerAssetDefault from "registerAsset" /* 8236 */;
+import registerAssetDefault2 from "registerAsset" /* 11027 */;
+import registerAssetDefault3 from "registerAsset" /* 16640 */;
+import registerAssetDefault4 from "registerAsset" /* 16641 */;
+import closure_3 from "initialize" /* 4532 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -27,10 +27,10 @@ export const voiceSettings = function voiceSettings() {
   obj[0] = intl.string(getSystemLocale.t.NiTd0e);
   obj[1] = registerAssetDefault3;
   obj[2] = function onPress() {
-    let obj = callback(6125);
+    let obj = callback(6191);
     obj = { screen: constants.VOICE };
     obj.openUserSettings(obj);
-    callback2(4347).hideActionSheet();
+    callback2(4411).hideActionSheet();
   };
   return obj;
 };
@@ -49,7 +49,7 @@ export const videoParticipantsHidden = function videoParticipantsHidden(arg0, ar
 export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
   closure_0 = arg0;
   importDefault = arg1;
-  let obj = _modDef4745;
+  let obj = _modDef4809;
   obj = {
     importer() {
       return callback(closure_1_2[11])(closure_1_2[10], closure_1_2.paths).then((arg0) => {
@@ -104,19 +104,19 @@ export const invite = function invite(isPrivate) {
   dependencyMap = arg2;
   if (null != arg1) {
     function onPress() {
-      let obj = isPrivate(9212);
+      let obj = isPrivate(9280);
       obj = { source: closure_1_6.STREAM, stream: closure_1 };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     }
   } else {
     onPress = function onPress() {
-      let obj = isPrivate(9212);
+      let obj = isPrivate(9280);
       obj = { source: closure_1_6.VOICE_CHANNEL };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     };
     if (null != arg2) {
       onPress = function onPress() {
-        let obj = isPrivate(9212);
+        let obj = isPrivate(9280);
         obj = { source: closure_1_6.ACTIVITY_INVITE, targetApplicationId: dependencyMap };
         return obj.showInstantInviteActionSheet(isPrivate, obj);
       };
@@ -124,7 +124,7 @@ export const invite = function invite(isPrivate) {
   }
   if (isPrivate.isPrivate()) {
     onPress = function onPress() {
-      return isPrivate(4234).navigateToNewGroupDM(isPrivate.id, closure_1_5.CHANNEL_CALL);
+      return isPrivate(4298).navigateToNewGroupDM(isPrivate.id, closure_1_5.CHANNEL_CALL);
     };
   }
   let obj = { label: null, icon: null, onPress: null };

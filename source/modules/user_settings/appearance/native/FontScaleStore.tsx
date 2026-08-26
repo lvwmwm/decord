@@ -1,10 +1,10 @@
-// Module ID: 14707
-// Function ID: 14708
+// Module ID: 14780
+// Function ID: 14781
 // Name: DEFAULT_FONT_SCALE_STORE_STATE
-// Dependencies: [500, 9599, 700, 2]
+// Dependencies: [500, 9667, 700, 2]
 
-// Module 14707 (DEFAULT_FONT_SCALE_STORE_STATE)
-import enforcingDefault from "enforcing" /* 9599 */;
+// Module 14780 (DEFAULT_FONT_SCALE_STORE_STATE)
+import enforcingDefault from "enforcing" /* 9667 */;
 import set from "set" /* 500 */;
 import identity from "identity" /* 700 */;
 

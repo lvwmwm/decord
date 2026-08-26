@@ -1,13 +1,13 @@
-// Module ID: 7785
-// Function ID: 7786
+// Module ID: 7852
+// Function ID: 7853
 // Name: useIsWindowLarge
-// Dependencies: [4238, 2]
+// Dependencies: [4302, 2]
 // Exports: default, getIsWindowLarge
 
-// Module 7785 (useIsWindowLarge)
+// Module 7852 (useIsWindowLarge)
 import set from "set" /* 2 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4238 */;
-import useWindowSizeClassifierDefault from "useWindowSizeClassifier" /* 4238 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4302 */;
+import useWindowSizeClassifierDefault from "useWindowSizeClassifier" /* 4302 */;
 
 const result = set.fileFinishedImporting("modules/screen/native/useIsWindowLarge.tsx");
 

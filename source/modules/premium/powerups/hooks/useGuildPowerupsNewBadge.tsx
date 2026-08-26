@@ -1,15 +1,15 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12143
+// Function ID: 12144
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 4266, 4267, 1388, 1377, 589, 12063, 6131, 1379, 2]
+// Dependencies: [32, 19, 4330, 4331, 1388, 1377, 589, 12136, 6197, 1379, 2]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 12070 (useGuildPowerupsNewBadge)
-import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12063 */;
+// Module 12143 (useGuildPowerupsNewBadge)
+import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 12136 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "calculateAppliedBoosts" /* 4266 */;
-import { GuildPowerupNewPerkMarketingVersion as closure_6 } from "BoostedGuildTiers" /* 4267 */;
+import closure_5 from "calculateAppliedBoosts" /* 4330 */;
+import { GuildPowerupNewPerkMarketingVersion as closure_6 } from "BoostedGuildTiers" /* 4331 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 
 const require = arg1;
@@ -41,7 +41,7 @@ export default function useGuildPowerupsNewBadge(arg0) {
       tmp6 = closure_8;
     }
   }
-  const tmp7 = callback(_require(6131).useSelectedVersionedDismissibleContent(tmp6, num), 2);
+  const tmp7 = callback(_require(6197).useSelectedVersionedDismissibleContent(tmp6, num), 2);
   _require = tmp8;
   importDefault = tmp9;
   const items1 = [tmp7[0] === closure_8, tmp7[1]];
@@ -64,7 +64,7 @@ export const useAutoDismissGuildPowerupsNewBadge = function useAutoDismissGuildP
   const items = [closure_5];
   const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_5.getStateForGuild(closure_0));
   let obj = _require(589);
-  const tmp2Result = num(12063)(guildId, stateFromStores);
+  const tmp2Result = num(12136)(guildId, stateFromStores);
   num = 0;
   if (tmp2Result >= constants.GUILD_THEME) {
     num = tmp2Result;

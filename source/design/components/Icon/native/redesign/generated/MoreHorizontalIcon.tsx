@@ -1,14 +1,14 @@
-// Module ID: 8751
-// Function ID: 8752
+// Module ID: 8819
+// Function ID: 8820
 // Name: MoreHorizontalIcon
-// Dependencies: [19, 21, 712, 4100, 8752, 2]
+// Dependencies: [19, 21, 712, 4164, 8820, 2]
 // Exports: MoreHorizontalIcon
 
-// Module 8751 (MoreHorizontalIcon)
+// Module 8819 (MoreHorizontalIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 8752 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 8820 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

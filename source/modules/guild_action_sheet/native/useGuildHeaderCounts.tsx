@@ -1,13 +1,13 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 13596
+// Function ID: 13597
 // Name: useGuildHeaderCounts
-// Dependencies: [19, 4300, 13524, 12, 709, 589, 2]
+// Dependencies: [19, 4364, 13597, 12, 709, 589, 2]
 // Exports: useGuildHeaderCounts
 
-// Module 13523 (useGuildHeaderCounts)
+// Module 13596 (useGuildHeaderCounts)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleInviteData" /* 4300 */;
-import closure_5 from "initialize" /* 13524 */;
+import closure_4 from "handleInviteData" /* 4364 */;
+import closure_5 from "initialize" /* 13597 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_action_sheet/native/useGuildHeaderCounts.tsx");

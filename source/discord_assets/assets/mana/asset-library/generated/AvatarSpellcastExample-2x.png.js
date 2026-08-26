@@ -1,9 +1,9 @@
-// Module ID: 6218
-// Function ID: 6219
+// Module ID: 6284
+// Function ID: 6285
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6218 (metadata)
+// Module 6284 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarSpellcastExample-2x.png.js");

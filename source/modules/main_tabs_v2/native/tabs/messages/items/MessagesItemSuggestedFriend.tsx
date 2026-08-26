@@ -1,21 +1,21 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15480
+// Function ID: 15481
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [32, 19, 17, 4034, 676, 21, 4380, 712, 9598, 8930, 2009, 647, 1236, 4224, 15402, 15403, 698, 4949, 1297, 4376, 4815, 4325, 7890, 15400, 2]
+// Dependencies: [32, 19, 17, 4098, 676, 21, 4444, 712, 9666, 8998, 2009, 647, 1236, 4288, 15481, 15482, 698, 5015, 1297, 4440, 4879, 4389, 7957, 15479, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 15401 (getMessagesItemSuggestedFriendHeight)
+// Module 15480 (getMessagesItemSuggestedFriendHeight)
 import ThemesDefault from "Themes" /* 712 */;
-import noop from "noop" /* 7890 */;
-import map from "map" /* 9598 */;
-import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15400 */;
+import noop from "noop" /* 7957 */;
+import map from "map" /* 9666 */;
+import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15479 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "markAllUserIdListsStale" /* 4034 */;
+import closure_6 from "markAllUserIdListsStale" /* 4098 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -103,7 +103,8 @@ let closure_12 = importAllResult.memo(function MessagesItemSuggestedFriendView(h
     setAddedPressed(true);
   }, items4);
   obj = { accessibilityRole: "button", style: memo, onPress: callback, collapsable: false, children: null };
-  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: "Array", size: tmp4(tmp5[18]).AvatarSizes.REFRESH_MEDIUM_32 };
+  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: "Array", size: true };
+  obj[3] = height(suggestedFriend[18]).AvatarSizes.REFRESH_MEDIUM_32;
   const items5 = [callback2(height(suggestedFriend[18]).Avatar, obj), , ];
   obj1 = { style: tmp.textContainer, children: null };
   const items6 = [callback2(height(suggestedFriend[19]).Text, { lineClamp: 1, variant: "redesign/channel-title/semibold", maxFontSizeMultiplier: 2, color: "text-default", children: memo1.suggestionName }), ];

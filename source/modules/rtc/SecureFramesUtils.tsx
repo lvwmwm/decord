@@ -1,31 +1,31 @@
-// Module ID: 9357
-// Function ID: 9358
+// Module ID: 9425
+// Function ID: 9426
 // Name: getCurrentUserSigningKey
-// Dependencies: [32, 5, 1218, 4431, 4454, 4468, 1922, 9358, 9359, 676, 1995, 9360, 9367, 9342, 9361, 1236, 4224, 3979, 687, 38, 206, 530, 1208, 4744, 4573, 2]
+// Dependencies: [32, 5, 1218, 4495, 4518, 4532, 1922, 9426, 9427, 676, 1995, 9428, 9435, 9410, 9429, 1236, 4288, 4043, 687, 38, 206, 530, 1208, 4808, 4637, 2]
 // Exports: addVerification, deletePersistentVerification, deleteUserPersistentVerifications, deleteVerification, ensureCurrentUserPublicKey, getSecureFramesHelpdeskArticle, getSecureFramesPersistentCodesHelpdeskArticle, getSecureFramesUserVerifiedTimestamp, getSecureFramesVerifiedDevicesHelpdeskArticle, getUserVerificationDeeplink, getUserVerificationFooterText, getUserVerifyStateText, isCurrentUserPublicKeyMatch, showSecureFramesKeyInconsistentAlert, validateSecureFramesKeyConsistent
 
-// Module 9357 (getCurrentUserSigningKey)
+// Module 9425 (getCurrentUserSigningKey)
 import byteLengthDefault from "byteLength" /* 206 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
-import hooksDefault from "hooks" /* 3979 */;
-import nameFromUserDefault from "nameFromUser" /* 4224 */;
-import getNicknameDefault from "getNickname" /* 4573 */;
-import setDefault2 from "set" /* 4744 */;
-import set from "set" /* 9342 */;
-import savePersistentCodesEnabledDefault from "savePersistentCodesEnabled" /* 9360 */;
-import _modDef9361 from "module_9361" /* 9361 */;
-import trackRTCPanelViewed from "trackRTCPanelViewed" /* 9367 */;
+import hooksDefault from "hooks" /* 4043 */;
+import nameFromUserDefault from "nameFromUser" /* 4288 */;
+import getNicknameDefault from "getNickname" /* 4637 */;
+import setDefault2 from "set" /* 4808 */;
+import set from "set" /* 9410 */;
+import savePersistentCodesEnabledDefault from "savePersistentCodesEnabled" /* 9428 */;
+import _modDef9429 from "module_9429" /* 9429 */;
+import trackRTCPanelViewed from "trackRTCPanelViewed" /* 9435 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_7 from "createRTCConnection" /* 4454 */;
-import closure_8 from "initialize" /* 4468 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_7 from "createRTCConnection" /* 4518 */;
+import closure_8 from "initialize" /* 4532 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import closure_10 from "items" /* 9358 */;
-import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9359 */;
+import closure_10 from "items" /* 9426 */;
+import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9427 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -96,7 +96,7 @@ function _isPublicKeyMatch() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -199,7 +199,7 @@ function _uploadCurrentUserPublicKey() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ function _uploadCurrentUserPublicKey() {
             const result = obj.addUploadedKeyVersion(callback);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           signature = tmp25;
@@ -318,7 +318,7 @@ function _ensureCurrentUserPublicKey() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -352,7 +352,7 @@ function _ensureCurrentUserPublicKey() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp8) {
           c1 = tmp;
           throw tmp8;
@@ -387,7 +387,7 @@ function _isCurrentUserPublicKeyMatch() {
           obj[0] = key;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -581,7 +581,7 @@ export const deleteVerification = function deleteVerification(userId, arg1, isOt
 export const deletePersistentVerification = function deletePersistentVerification(userId, verifiedKey) {
   const _require = userId;
   importDefault = verifiedKey;
-  let obj = _modDef9361;
+  let obj = _modDef9429;
   obj = { title: null, subtitle: null, onConfirm: null };
   const intl = _require(1236).intl;
   obj[0] = intl.string(_require(1236).t.hdL152);
@@ -609,7 +609,7 @@ export const deleteUserPersistentVerifications = function deleteUserPersistentVe
     const obj = closure_1_1(closure_1_2[11]);
     const result1 = userId(closure_1_2[12]).trackE2EESettingsUserDelete();
   };
-  let result = _modDef9361.openSecureFramesUpdateConfirmation(obj);
+  let result = _modDef9429.openSecureFramesUpdateConfirmation(obj);
 };
 export const getSecureFramesUserVerifiedTimestamp = function getSecureFramesUserVerifiedTimestamp(timestamp) {
   let obj = hooksDefault();

@@ -1,11 +1,11 @@
-// Module ID: 14567
-// Function ID: 14568
+// Module ID: 14640
+// Function ID: 14641
 // Name: getDeliveredQuest
-// Dependencies: [19, 21, 7321, 2]
+// Dependencies: [19, 21, 7387, 2]
 // Exports: QuestDockQuestProvider, getDeliveredQuest, useQuestCreative
 
-// Module 14567 (getDeliveredQuest)
-import AdCreativeType from "AdCreativeType" /* 7321 */;
+// Module 14640 (getDeliveredQuest)
+import AdCreativeType from "AdCreativeType" /* 7387 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

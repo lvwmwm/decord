@@ -1,196 +1,196 @@
-// Module ID: 7388
-// Function ID: 7389
+// Module ID: 7454
+// Function ID: 7455
 // Name: items
-// Dependencies: [5, 7389, 7390, 7391, 7392, 7393, 7394, 7395, 7396, 7397, 7398, 7399, 7400, 7401, 7402, 7403, 7404, 7405, 7406, 7407, 7408, 7409, 7410, 7411, 7412, 7413, 7414, 7415, 7416, 7417, 7418, 7419, 7420, 7421, 7422, 7423, 7424, 7425, 2]
+// Dependencies: [5, 7455, 7456, 7457, 7458, 7459, 7460, 7461, 7462, 7463, 7464, 7465, 7466, 7467, 7468, 7469, 7470, 7471, 7472, 7473, 7474, 7475, 7476, 7477, 7478, 7479, 7480, 7481, 7482, 7483, 7484, 7485, 7486, 7487, 7488, 7489, 7490, 7491, 2]
 // Exports: getBurstAnimation
 
-// Module 7388 (items)
+// Module 7454 (items)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7389);
+    return callback(7455);
   }
 };
 const items = [
   obj,
   {
     load() {
-      return callback(7390);
+      return callback(7456);
     }
   },
   {
     load() {
-      return callback(7391);
+      return callback(7457);
     }
   },
   {
     load() {
-      return callback(7392);
+      return callback(7458);
     }
   },
   {
     load() {
-      return callback(7393);
+      return callback(7459);
     }
   },
   {
     load() {
-      return callback(7394);
+      return callback(7460);
     }
   },
   {
     load() {
-      return callback(7395);
+      return callback(7461);
     }
   },
   {
     load() {
-      return callback(7396);
+      return callback(7462);
     }
   },
   {
     load() {
-      return callback(7397);
+      return callback(7463);
     }
   },
   {
     load() {
-      return callback(7398);
+      return callback(7464);
     }
   },
   {
     load() {
-      return callback(7399);
+      return callback(7465);
     }
   },
   {
     load() {
-      return callback(7400);
+      return callback(7466);
     }
   },
   {
     load() {
-      return callback(7401);
+      return callback(7467);
     }
   },
   {
     load() {
-      return callback(7402);
+      return callback(7468);
     }
   },
   {
     load() {
-      return callback(7403);
+      return callback(7469);
     }
   },
   {
     load() {
-      return callback(7404);
+      return callback(7470);
     }
   },
   {
     load() {
-      return callback(7405);
+      return callback(7471);
     }
   },
   {
     load() {
-      return callback(7406);
+      return callback(7472);
     }
   }
 ];
 obj = {
   load() {
-    return callback(7407);
+    return callback(7473);
   }
 };
 const items1 = [
   obj,
   {
     load() {
-      return callback(7408);
+      return callback(7474);
     }
   },
   {
     load() {
-      return callback(7409);
+      return callback(7475);
     }
   },
   {
     load() {
-      return callback(7410);
+      return callback(7476);
     }
   },
   {
     load() {
-      return callback(7411);
+      return callback(7477);
     }
   },
   {
     load() {
-      return callback(7412);
+      return callback(7478);
     }
   },
   {
     load() {
-      return callback(7413);
+      return callback(7479);
     }
   },
   {
     load() {
-      return callback(7414);
+      return callback(7480);
     }
   },
   {
     load() {
-      return callback(7415);
+      return callback(7481);
     }
   },
   {
     load() {
-      return callback(7416);
+      return callback(7482);
     }
   },
   {
     load() {
-      return callback(7417);
+      return callback(7483);
     }
   },
   {
     load() {
-      return callback(7418);
+      return callback(7484);
     }
   },
   {
     load() {
-      return callback(7419);
+      return callback(7485);
     }
   },
   {
     load() {
-      return callback(7420);
+      return callback(7486);
     }
   },
   {
     load() {
-      return callback(7421);
+      return callback(7487);
     }
   },
   {
     load() {
-      return callback(7422);
+      return callback(7488);
     }
   },
   {
     load() {
-      return callback(7423);
+      return callback(7489);
     }
   },
   {
     load() {
-      return callback(7424);
+      return callback(7490);
     }
   }
 ];
@@ -213,7 +213,7 @@ closure_0 = asyncGeneratorStepDefault((arg0, arg1, arg2) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

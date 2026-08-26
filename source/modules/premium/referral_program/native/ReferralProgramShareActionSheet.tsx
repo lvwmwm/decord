@@ -1,20 +1,20 @@
-// Module ID: 12923
-// Function ID: 12924
+// Module ID: 12997
+// Function ID: 12998
 // Name: mapToUser
-// Dependencies: [5, 32, 19, 17, 1922, 7059, 676, 21, 4380, 712, 589, 12924, 38, 1370, 9773, 12925, 1236, 1351, 12926, 5834, 5854, 698, 7060, 4347, 12927, 2009, 4097, 5502, 4376, 5374, 12928, 12929, 9774, 5929, 4815, 5503, 9156, 9776, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 7125, 676, 21, 4444, 712, 589, 12998, 38, 1370, 9840, 12999, 1236, 1351, 13000, 5900, 5920, 698, 7126, 4411, 13001, 2009, 4161, 5568, 4440, 5440, 13002, 13003, 9841, 5995, 4879, 5569, 9224, 9843, 2]
 // Exports: default
 
-// Module 12923 (mapToUser)
+// Module 12997 (mapToUser)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "emitChanges" /* 7059 */;
+import closure_8 from "emitChanges" /* 7125 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 function mapToUser(arg0) {

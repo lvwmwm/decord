@@ -1,10 +1,10 @@
-// Module ID: 4308
-// Function ID: 4309
+// Module ID: 4372
+// Function ID: 4373
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getServerThemeUserEnabled, useServerThemeUserEnabled
 
-// Module 4308 (apexExperiment)
+// Module 4372 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

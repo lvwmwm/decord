@@ -1,9 +1,9 @@
-// Module ID: 14521
-// Function ID: 14522
+// Module ID: 14594
+// Function ID: 14595
 // Name: BountiesShopCarouselExperimentVariation
 // Dependencies: [1472, 2]
 
-// Module 14521 (BountiesShopCarouselExperimentVariation)
+// Module 14594 (BountiesShopCarouselExperimentVariation)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

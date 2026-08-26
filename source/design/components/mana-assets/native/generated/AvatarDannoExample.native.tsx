@@ -1,14 +1,14 @@
-// Module ID: 6197
-// Function ID: 6198
+// Module ID: 6263
+// Function ID: 6264
 // Name: AvatarDannoExample
-// Dependencies: [21, 5374, 6198, 2]
+// Dependencies: [21, 5440, 6264, 2]
 // Exports: AvatarDannoExample
 
-// Module 6197 (AvatarDannoExample)
+// Module 6263 (AvatarDannoExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6198 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6264 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarDannoExample.native.tsx");

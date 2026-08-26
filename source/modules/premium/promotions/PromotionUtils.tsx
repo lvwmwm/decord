@@ -1,21 +1,21 @@
-// Module ID: 7790
-// Function ID: 7791
+// Module ID: 7857
+// Function ID: 7858
 // Name: claimedOutboundPromotionCodeFromServer
-// Dependencies: [5, 1340, 7488, 7487, 1924, 676, 4408, 1363, 530, 500, 698, 1403, 1377, 11, 1379, 7515, 2]
+// Dependencies: [5, 1340, 7554, 7553, 1924, 676, 4472, 1363, 530, 500, 698, 1403, 1377, 11, 1379, 7581, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 7790 (claimedOutboundPromotionCodeFromServer)
+// Module 7857 (claimedOutboundPromotionCodeFromServer)
 import set2 from "set" /* 500 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
 import addVersionedDismissedContent from "addVersionedDismissedContent" /* 1379 */;
-import CountryListMode from "CountryListMode" /* 7515 */;
+import CountryListMode from "CountryListMode" /* 7581 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_5 from "createFromServer" /* 7488 */;
-import closure_6 from "createEmptyPromotionsByType" /* 7487 */;
+import closure_5 from "createFromServer" /* 7554 */;
+import closure_6 from "createEmptyPromotionsByType" /* 7553 */;
 import { PromotionFlags } from "GuildFeatures" /* 1924 */;
 import ME from "ME" /* 676 */;
-import { ActivityPlatform } from "items3" /* 4408 */;
+import { ActivityPlatform } from "items3" /* 4472 */;
 
 require = arg1;
 function claimedOutboundPromotionCodeFromServer(code) {
@@ -39,7 +39,7 @@ function _claimOutboundPromotion() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

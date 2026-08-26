@@ -1,14 +1,14 @@
-// Module ID: 4961
-// Function ID: 4962
+// Module ID: 5027
+// Function ID: 5028
 // Name: doesImageMatchUpload
-// Dependencies: [4954, 530, 4962, 1917, 2]
+// Dependencies: [5020, 530, 5028, 1917, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 4961 (doesImageMatchUpload)
+// Module 5027 (doesImageMatchUpload)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import isBlockedDomain from "isBlockedDomain" /* 1917 */;
-import cancel from "cancel" /* 4954 */;
+import cancel from "cancel" /* 5020 */;
 
 const result = set.fileFinishedImporting("lib/uploader/UploadUtils.tsx");
 class DefaultHttpClient {
@@ -122,7 +122,7 @@ export const canUploadNatively = function canUploadNatively(item) {
     fileIsInAppDirResult = null != item.uri;
   }
   if (fileIsInAppDirResult) {
-    let tmpResult = tmp(4962);
+    let tmpResult = tmp(5028);
     fileIsInAppDirResult = tmpResult.fileIsInAppDir(item.uri);
   }
   if (fileIsInAppDirResult) {

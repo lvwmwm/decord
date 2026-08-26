@@ -1,26 +1,26 @@
-// Module ID: 4566
-// Function ID: 4567
+// Module ID: 4630
+// Function ID: 4631
 // Name: allowChannelAccess
-// Dependencies: [1395, 1391, 1982, 4025, 1981, 4455, 676, 1924, 4030, 506, 1955, 4567, 4568, 1236, 4224, 4569, 11, 2, 4576]
+// Dependencies: [1395, 1391, 1982, 4089, 1981, 4519, 676, 1924, 4094, 506, 1955, 4631, 4632, 1236, 4288, 4633, 11, 2, 4640]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4566 (allowChannelAccess)
+// Module 4630 (allowChannelAccess)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import fromStringAll from "fromString" /* 506 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import applyOverwritesAll from "applyOverwrites" /* 4030 */;
-import hasStream from "hasStream" /* 4567 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4568 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4576 */;
+import applyOverwritesAll from "applyOverwrites" /* 4094 */;
+import hasStream from "hasStream" /* 4631 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4632 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4640 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "comparator" /* 1982 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_10 from "handleConnectionOpen" /* 1981 */;
-import closure_11 from "getVoiceStatesForGuild" /* 4455 */;
+import closure_11 from "getVoiceStatesForGuild" /* 4519 */;
 import ME from "ME" /* 676 */;
 
 function allowChannelAccess(id, channelType, MEMBER) {

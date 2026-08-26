@@ -1,10 +1,10 @@
-// Module ID: 5934
-// Function ID: 5935
+// Module ID: 6000
+// Function ID: 6001
 // Name: setPromoEmailConsentState
 // Dependencies: [644, 705, 2]
 // Exports: setPromoEmailConsentChecked, setPromoEmailConsentState
 
-// Module 5934 (setPromoEmailConsentState)
+// Module 6000 (setPromoEmailConsentState)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 

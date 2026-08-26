@@ -1,13 +1,13 @@
-// Module ID: 17059
-// Function ID: 17060
+// Module ID: 17144
+// Function ID: 17145
 // Name: useIsCreatorMonetizationRequestRejected
-// Dependencies: [17028, 1236, 2]
+// Dependencies: [17113, 1236, 2]
 // Exports: default
 
-// Module 17059 (useIsCreatorMonetizationRequestRejected)
+// Module 17144 (useIsCreatorMonetizationRequestRejected)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CreatorMonetizationApplicationState from "CreatorMonetizationApplicationState" /* 17028 */;
+import CreatorMonetizationApplicationState from "CreatorMonetizationApplicationState" /* 17113 */;
 
 let closure_2 = CreatorMonetizationApplicationState.CreatorMonetizationApplicationState;
 const result = set.fileFinishedImporting("modules/creator_monetization_eligibility/useIsCreatorMonetizationRequestRejected.tsx");

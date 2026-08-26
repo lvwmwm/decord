@@ -1,13 +1,13 @@
-// Module ID: 11517
-// Function ID: 11518
+// Module ID: 11589
+// Function ID: 11590
 // Name: handleSharedClientThemeViewed
-// Dependencies: [9497, 503, 2]
+// Dependencies: [9565, 503, 2]
 // Exports: handleSharedClientThemeViewed
 
-// Module 11517 (handleSharedClientThemeViewed)
+// Module 11589 (handleSharedClientThemeViewed)
 import set from "set" /* 2 */;
 import encodeProperties from "encodeProperties" /* 503 */;
-import trackImpression from "trackImpression" /* 9497 */;
+import trackImpression from "trackImpression" /* 9565 */;
 
 const result = set.fileFinishedImporting("modules/client_themes/native/chat/sharedClientThemeViewed.tsx");
 

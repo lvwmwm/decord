@@ -1,12 +1,12 @@
-// Module ID: 4369
-// Function ID: 4370
+// Module ID: 4433
+// Function ID: 4434
 // Name: findCodedLinkUrls
-// Dependencies: [4370, 8249, 4835, 13399, 13400, 2]
+// Dependencies: [4434, 8316, 4900, 13472, 13473, 2]
 // Exports: default
 
-// Module 4369 (findCodedLinkUrls)
+// Module 4433 (findCodedLinkUrls)
 import set from "set" /* 2 */;
-import trimTrailingPunctuationDefault from "trimTrailingPunctuation" /* 13400 */;
+import trimTrailingPunctuationDefault from "trimTrailingPunctuation" /* 13473 */;
 
 const result = set.fileFinishedImporting("modules/coded_links/findCodedLinkUrls.native.tsx");
 
@@ -15,9 +15,9 @@ export default function findCodedLinkUrls(content) {
     let items = trimTrailingPunctuationDefault(content);
   } else {
     items = [];
-    const _default = tmp(4370).default;
-    const parseToASTResult = tmp(4370).default.parseToAST(content, true, { allowLinks: true });
-    tmp(8249).walkAst(parseToASTResult, (type) => {
+    const _default = tmp(4434).default;
+    const parseToASTResult = tmp(4434).default.parseToAST(content, true, { allowLinks: true });
+    tmp(8316).walkAst(parseToASTResult, (type) => {
       let tmp = type.type === items(closure_1_2[2]).AST_KEY.LINK && typeof type.target === "string";
       if (tmp) {
         tmp = type.target.length > 0;
@@ -26,7 +26,7 @@ export default function findCodedLinkUrls(content) {
         items.push(type.target);
       }
     });
-    const tmpResult = tmp(8249);
+    const tmpResult = tmp(8316);
   }
   return items;
 };

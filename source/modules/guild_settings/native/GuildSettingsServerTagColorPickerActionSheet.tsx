@@ -1,17 +1,17 @@
-// Module ID: 16934
-// Function ID: 16935
+// Module ID: 17019
+// Function ID: 17020
 // Name: GuildSettingsServerTagColorPickerActionSheet
-// Dependencies: [32, 19, 17, 8203, 21, 712, 4380, 14115, 4228, 1494, 4120, 11041, 1236, 9103, 4347, 5503, 5502, 4813, 9400, 13468, 4376, 9289, 14116, 9157, 4815, 2]
+// Dependencies: [32, 19, 17, 8270, 21, 712, 4444, 14188, 4292, 1494, 4184, 11113, 1236, 9171, 4411, 5569, 5568, 4877, 9468, 13541, 4440, 9357, 14189, 9225, 4879, 2]
 // Exports: default
 
-// Module 16934 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 17019 (GuildSettingsServerTagColorPickerActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import items from "items" /* 8203 */;
+import items from "items" /* 8270 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS: closure_6, GUILD_TAG_BADGE_PALETTE_PRESETS: error, GuildTagBadgeSize: closure_8 } = items);

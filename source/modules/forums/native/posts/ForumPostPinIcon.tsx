@@ -1,17 +1,17 @@
-// Module ID: 11591
-// Function ID: 11592
+// Module ID: 11664
+// Function ID: 11665
 // Name: ForumPostPinIcon
-// Dependencies: [19, 17, 21, 4380, 712, 1297, 11592, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 1297, 11665, 2]
 // Exports: default
 
-// Module 11591 (ForumPostPinIcon)
+// Module 11664 (ForumPostPinIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import registerAssetDefault from "registerAsset" /* 11592 */;
+import registerAssetDefault from "registerAsset" /* 11665 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

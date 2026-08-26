@@ -1,20 +1,20 @@
-// Module ID: 5235
-// Function ID: 5236
+// Module ID: 5301
+// Function ID: 5302
 // Name: checkIdleAFK
-// Dependencies: [1218, 676, 4444, 500, 4070, 687, 709, 4008, 5236, 636, 589, 2]
+// Dependencies: [1218, 676, 4508, 500, 4134, 687, 709, 4072, 5302, 636, 589, 2]
 
-// Module 5235 (checkIdleAFK)
+// Module 5301 (checkIdleAFK)
 import set from "set" /* 500 */;
 import initializeDefault from "initialize" /* 589 */;
 import debounceDefault from "debounce" /* 636 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import setDefault2 from "set" /* 4008 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import _modDef5236 from "module_5236" /* 5236 */;
+import setDefault2 from "set" /* 4072 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import _modDef5302 from "module_5302" /* 5302 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
-import { SpeakingFlags } from "DesktopSources" /* 4444 */;
+import { SpeakingFlags } from "DesktopSources" /* 4508 */;
 
 require = arg1;
 function checkIdleAFK() {
@@ -98,7 +98,7 @@ if (require("set").isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(4008).powerMonitor;
+        const powerMonitor2 = tmp(4072).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(arg0) {
@@ -144,7 +144,7 @@ if (require("set").isPlatformEmbedded) {
       c11 = true;
       closure_3 = Date.now();
       checkIdleAFK();
-      _modDef5236.disconnect();
+      _modDef5302.disconnect();
     });
     const powerMonitor3 = setDefault2.powerMonitor;
     class IdleStore extends r10079 {

@@ -1,24 +1,24 @@
-// Module ID: 10066
-// Function ID: 10067
+// Module ID: 10133
+// Function ID: 10134
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1395, 1982, 4034, 1922, 676, 10067, 4839, 21, 4380, 712, 4574, 5266, 4224, 7552, 2]
+// Dependencies: [19, 17, 1395, 1982, 4098, 1922, 676, 10134, 4904, 21, 4444, 712, 4638, 5332, 4288, 7618, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10066 (AutocompleteFormDivider)
+// Module 10133 (AutocompleteFormDivider)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import nameFromUserDefault from "nameFromUser" /* 4224 */;
-import computeChannelName from "computeChannelName" /* 4574 */;
-import DividerDefault from "Divider" /* 7552 */;
+import nameFromUserDefault from "nameFromUser" /* 4288 */;
+import computeChannelName from "computeChannelName" /* 4638 */;
+import DividerDefault from "Divider" /* 7618 */;
 import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord" /* 1395 */;
 import closure_4 from "comparator" /* 1982 */;
-import closure_5 from "markAllUserIdListsStale" /* 4034 */;
+import closure_5 from "markAllUserIdListsStale" /* 4098 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10067 */;
-import regExp from "regExp" /* 4839 */;
+import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10134 */;
+import regExp from "regExp" /* 4904 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function AutocompleteFormDivider() {

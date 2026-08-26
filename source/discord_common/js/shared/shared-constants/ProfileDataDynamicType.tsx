@@ -1,9 +1,9 @@
-// Module ID: 12645
-// Function ID: 12646
+// Module ID: 12716
+// Function ID: 12717
 // Name: ProfileDataDynamicType
 // Dependencies: [2]
 
-// Module 12645 (ProfileDataDynamicType)
+// Module 12716 (ProfileDataDynamicType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProfileDataDynamicType.tsx");

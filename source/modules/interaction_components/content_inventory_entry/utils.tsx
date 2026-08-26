@@ -1,10 +1,10 @@
-// Module ID: 8368
-// Function ID: 8369
+// Module ID: 8435
+// Function ID: 8436
 // Name: isContentInventoryFallbackEmbed
 // Dependencies: [676, 1403, 2]
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 8368 (isContentInventoryFallbackEmbed)
+// Module 8435 (isContentInventoryFallbackEmbed)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import hasFlag from "hasFlag" /* 1403 */;

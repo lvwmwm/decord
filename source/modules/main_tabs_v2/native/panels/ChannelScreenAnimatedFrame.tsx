@@ -1,17 +1,17 @@
-// Module ID: 15369
-// Function ID: 15370
+// Module ID: 15448
+// Function ID: 15449
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 17, 8540, 676, 21, 4380, 712, 4315, 1367, 4120, 4381, 1297, 15367, 8548, 5434, 2]
+// Dependencies: [19, 17, 8608, 676, 21, 4444, 712, 4379, 1367, 4184, 4445, 1297, 15446, 8616, 5500, 2]
 // Exports: default
 
-// Module 15369 (ChannelScreenAnimatedFrame)
+// Module 15448 (ChannelScreenAnimatedFrame)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import MIN_HEADER_HEIGHT from "MIN_HEADER_HEIGHT" /* 8540 */;
+import MIN_HEADER_HEIGHT from "MIN_HEADER_HEIGHT" /* 8608 */;
 import { ThemeTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 noopAll;

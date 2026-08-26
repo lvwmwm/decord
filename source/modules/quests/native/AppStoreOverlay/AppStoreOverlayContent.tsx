@@ -1,10 +1,10 @@
-// Module ID: 10660
-// Function ID: 10661
+// Module ID: 10728
+// Function ID: 10729
 // Name: _getAppStoreOverlayContent
-// Dependencies: [5, 1236, 10661, 2]
+// Dependencies: [5, 1236, 10729, 2]
 // Exports: getAppStoreOverlayContent
 
-// Module 10660 (_getAppStoreOverlayContent)
+// Module 10728 (_getAppStoreOverlayContent)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -28,7 +28,7 @@ function _getAppStoreOverlayContent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -89,16 +89,18 @@ function _getAppStoreOverlayContent() {
                   tmp5 = "" !== closure_2.age_rating;
                 }
                 if (tmp5) {
-                  obj = { type: "age", label: null, ageRating: null };
+                  obj = { type: "age", label: null, ageRating: null, ageRatingLabel: null };
                   const intl2 = callback(1236).intl;
                   obj[1] = intl2.string(callback(1236).t.ncrlHJ);
                   obj[2] = closure_2.age_rating;
+                  const intl3 = callback(1236).intl;
+                  obj[3] = intl3.string(callback(1236).t.wK1svU);
                   items.push(obj);
                 }
                 if (null != closure_2.chart_rank) {
                   obj = { type: "chart", label: null, rank: null, category: null };
-                  const intl3 = callback(1236).intl;
-                  obj[1] = intl3.string(callback(1236).t["x/ERbV"]);
+                  const intl4 = callback(1236).intl;
+                  obj[1] = intl4.string(callback(1236).t["x/ERbV"]);
                   ({ chart_rank: obj3[2], category } = closure_2);
                   obj[3] = category;
                   items.push(obj);

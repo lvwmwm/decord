@@ -1,14 +1,14 @@
-// Module ID: 4220
-// Function ID: 4221
+// Module ID: 4284
+// Function ID: 4285
 // Name: RouteParam
-// Dependencies: [677, 1398, 2, 4221]
+// Dependencies: [677, 1398, 2, 4285]
 // Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
-// Module 4220 (RouteParam)
+// Module 4284 (RouteParam)
 import set from "set" /* 2 */;
 import INVITE from "INVITE" /* 677 */;
 import set2 from "set" /* 1398 */;
-import RouteParam from "RouteParam" /* 4221 */;
+import RouteParam from "RouteParam" /* 4285 */;
 
 const PSEUDO_GUILD_IDS = INVITE.PSEUDO_GUILD_IDS;
 const isStaticChannelRoute = set2.isStaticChannelRoute;

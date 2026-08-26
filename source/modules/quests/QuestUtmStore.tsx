@@ -1,15 +1,15 @@
-// Module ID: 7327
-// Function ID: 7328
+// Module ID: 7393
+// Function ID: 7394
 // Name: keys
 // Dependencies: [644, 2]
 
-// Module 7327 (keys)
+// Module 7393 (keys)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 
 let obj = keys.create((arg0) => {
   closure_0 = arg0;
-  obj = { utmSourceCurrent: "r", utmMediumCurrent: "View", utmCampaignCurrent: "tag", utmContentCurrent: "size", setUtmCurrentContext: false, getUtmCurrentContext: false };
+  obj = { utmSourceCurrent: "r", utmMediumCurrent: "View", utmCampaignCurrent: "st", utmContentCurrent: "__d", setUtmCurrentContext: "wasAtEdge", getUtmCurrentContext: "isImageFile" };
   obj[4] = function setUtmCurrentContext(utmSourceCurrent) {
     return state({ utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent });
   };

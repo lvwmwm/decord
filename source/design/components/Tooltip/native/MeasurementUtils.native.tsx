@@ -1,10 +1,10 @@
-// Module ID: 8807
-// Function ID: 8808
+// Module ID: 8875
+// Function ID: 8876
 // Name: retryMeasurements
 // Dependencies: [5, 12, 2]
 // Exports: getMeasurements
 
-// Module 8807 (retryMeasurements)
+// Module 8875 (retryMeasurements)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 function retryMeasurements() {
@@ -40,7 +40,7 @@ function _retryMeasurements() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

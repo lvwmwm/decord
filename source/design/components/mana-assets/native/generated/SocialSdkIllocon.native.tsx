@@ -1,14 +1,14 @@
-// Module ID: 6889
-// Function ID: 6890
+// Module ID: 6955
+// Function ID: 6956
 // Name: SocialSdkIllocon
-// Dependencies: [21, 5374, 6890, 2]
+// Dependencies: [21, 5440, 6956, 2]
 // Exports: SocialSdkIllocon
 
-// Module 6889 (SocialSdkIllocon)
+// Module 6955 (SocialSdkIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6890 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6956 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SocialSdkIllocon.native.tsx");

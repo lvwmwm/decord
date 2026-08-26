@@ -1,0 +1,10 @@
+// Module ID: 3519
+// Function ID: 3520
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 3519 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb25uZWN0ZWRfZGV2aWNlcw==", scales: [1], hash: "bca04a8146398aa218bbd4ef2ec89627", name: "ko.messages.bca04a8146398aa218bbd4ef2ec89627.compiled.messages", type: "jsona" });

@@ -1,11 +1,11 @@
-// Module ID: 7462
-// Function ID: 7463
-// Dependencies: [5333, 2]
+// Module ID: 7528
+// Function ID: 7529
+// Dependencies: [5399, 2]
 // Exports: default
 
-// Module 7462
+// Module 7528
 import set from "set" /* 2 */;
-import HeaderRecord from "HeaderRecord" /* 5333 */;
+import HeaderRecord from "HeaderRecord" /* 5399 */;
 
 ({ FindResultDirections: c0, AutocompleterResultTypes: closure_1 } = HeaderRecord);
 const result = set.fileFinishedImporting("modules/autocompleter/findNextSelectedResult.tsx");

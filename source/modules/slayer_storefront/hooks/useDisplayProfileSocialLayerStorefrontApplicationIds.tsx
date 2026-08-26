@@ -1,12 +1,12 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9583
+// Function ID: 9584
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 5956, 8462, 9516, 589, 7229, 7239, 12, 2]
+// Dependencies: [19, 6022, 8529, 9584, 589, 7295, 7305, 12, 2]
 // Exports: default
 
-// Module 9515 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 9583 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleUserSettingsStoreUpdate" /* 5956 */;
+import closure_4 from "handleUserSettingsStoreUpdate" /* 6022 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/hooks/useDisplayProfileSocialLayerStorefrontApplicationIds.tsx");

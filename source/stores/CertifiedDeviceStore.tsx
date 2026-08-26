@@ -1,15 +1,15 @@
-// Module ID: 4453
-// Function ID: 4454
+// Module ID: 4517
+// Function ID: 4518
 // Name: initialize
-// Dependencies: [4444, 595, 589, 12, 709, 2]
+// Dependencies: [4508, 595, 589, 12, 709, 2]
 
-// Module 4453 (initialize)
+// Module 4517 (initialize)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DesktopSources from "DesktopSources" /* 4444 */;
+import DesktopSources from "DesktopSources" /* 4508 */;
 
 const DeviceTypes = DesktopSources.DeviceTypes;
 const CertifiedDeviceStore = "CertifiedDeviceStore";

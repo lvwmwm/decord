@@ -1,21 +1,21 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15823
+// Function ID: 15824
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 32, 19, 17, 4372, 5104, 1922, 14548, 676, 21, 4380, 712, 589, 1297, 4108, 4120, 8960, 8447, 4814, 4101, 8446, 8414, 4348, 6125, 2009, 5533, 2]
+// Dependencies: [5, 32, 19, 17, 4436, 5170, 1922, 14621, 676, 21, 4444, 712, 589, 1297, 4172, 4184, 9028, 8514, 4878, 4165, 8513, 8481, 4412, 6191, 2009, 5599, 2]
 
-// Module 15744 (YouBarAvatarLarge)
+// Module 15823 (YouBarAvatarLarge)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
-import closure_9 from "filterPlayingActivities" /* 5104 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_9 from "filterPlayingActivities" /* 5170 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14548 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14621 */;
 import { StatusTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 function YouBarAvatarLarge(transitionState) {
@@ -187,7 +187,7 @@ function YouBarAvatarLarge(transitionState) {
     obj4[0] = obj5;
     obj2[2] = closure_22(sharedValue1, obj4);
     const items6 = [closure_22(tmp23Result, obj2), , , ];
-    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "M19.3146 0L0 19.4029V46.6865L19.3146 65.9999L38.6293 46.5969V19.388L19.3146 0ZM28.972 42.6566L19.3146 52.3432L9.65732 42.6566V23.388L19.3146 13.6865L28.972 23.388V42.6566Z" };
+    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "GuildProgress" };
     obj6[0] = stateFromStores;
     obj6[2] = closure_11;
     if (OFFLINE === StatusTypes.UNKNOWN) {
@@ -318,7 +318,7 @@ function YouBarAvatar(transitionState) {
     obj1[2] = -result;
     const items3 = [obj1, animatedStyle];
     obj[0] = items3;
-    obj2 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration: null, status: true, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9nb19saXZlL3dlYi9tb2RhbA==" };
+    obj2 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration: null, status: true, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
     obj2[0] = stateFromStores;
     obj2[2] = closure_13;
     obj2[5] = avatarDecoration;
@@ -397,7 +397,7 @@ const memoResult = importAllResult.memo(function YouBarAvatarAnimated(isLargeAva
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -433,7 +433,7 @@ const memoResult = importAllResult.memo(function YouBarAvatarAnimated(isLargeAva
           arg1.openUserSettings();
           callback(false);
           paths = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         paths = tmp;

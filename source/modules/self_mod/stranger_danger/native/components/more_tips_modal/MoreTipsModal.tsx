@@ -1,22 +1,22 @@
-// Module ID: 10424
-// Function ID: 10425
+// Module ID: 10492
+// Function ID: 10493
 // Name: MoreTipsModalScreen
-// Dependencies: [19, 17, 9818, 676, 21, 4380, 712, 10425, 4376, 1236, 10426, 6117, 4611, 8178, 1297, 1629, 647, 10419, 7208, 7213, 5889, 2]
+// Dependencies: [19, 17, 9885, 676, 21, 4444, 712, 10493, 4440, 1236, 10494, 6183, 4675, 8245, 1297, 1629, 647, 10487, 7274, 7279, 5955, 2]
 // Exports: default
 
-// Module 10424 (MoreTipsModalScreen)
+// Module 10492 (MoreTipsModalScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import Text from "Text" /* 4376 */;
-import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 10425 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10426 */;
+import Text from "Text" /* 4440 */;
+import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 10493 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10494 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 9818 */;
+import closure_6 from "handleConnectionOpen" /* 9885 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function MoreTipsModalScreen(learnMore) {
@@ -122,5 +122,5 @@ export default function MoreTipsModal(channelId) {
       return closure_1_8(closure_1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
     }
   };
-  return callback(_require(5889).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
+  return callback(_require(5955).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
 };

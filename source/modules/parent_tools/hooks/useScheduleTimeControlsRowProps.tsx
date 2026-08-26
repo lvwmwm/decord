@@ -1,15 +1,15 @@
-// Module ID: 14365
-// Function ID: 14366
+// Module ID: 14438
+// Function ID: 14439
 // Name: useScheduleTimeControlsRowProps
-// Dependencies: [21, 4376, 1236, 2337, 2]
+// Dependencies: [21, 4440, 1236, 2369, 2]
 // Exports: default
 
-// Module 14365 (useScheduleTimeControlsRowProps)
+// Module 14438 (useScheduleTimeControlsRowProps)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2337 */;
-import Text from "Text" /* 4376 */;
+import messagesProxyDefault from "messagesProxy" /* 2369 */;
+import Text from "Text" /* 4440 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("modules/parent_tools/hooks/useScheduleTimeControlsRowProps.tsx");

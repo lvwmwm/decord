@@ -1,17 +1,17 @@
-// Module ID: 9681
-// Function ID: 9682
+// Module ID: 9749
+// Function ID: 9750
 // Name: LinkButton
-// Dependencies: [19, 17, 676, 1980, 21, 4380, 4094, 698, 4376, 9682, 500, 1979, 1236, 2]
+// Dependencies: [19, 17, 676, 1980, 21, 4444, 4158, 698, 4440, 9750, 500, 1979, 1236, 2]
 // Exports: default
 
-// Module 9681 (LinkButton)
-import Text from "Text" /* 4376 */;
+// Module 9749 (LinkButton)
+import Text from "Text" /* 4440 */;
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { CHANGELOG_URL } from "CHANGELOG_MODAL_KEY" /* 1980 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function LinkButton(arg0) {
@@ -19,7 +19,7 @@ function LinkButton(arg0) {
   const tmp = callback3();
   obj = {
     onPress() {
-      let obj = callback(4094);
+      let obj = callback(4158);
       obj.openURL(closure_6);
       obj = { cta_type: "profile_bio", target: closure_6 };
       callback(698).track(constants.CHANGE_LOG_CTA_CLICKED, obj);

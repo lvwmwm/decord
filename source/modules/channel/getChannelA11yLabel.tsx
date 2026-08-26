@@ -1,17 +1,17 @@
-// Module ID: 9180
-// Function ID: 9181
+// Module ID: 9248
+// Function ID: 9249
 // Name: getChannelA11yLabel
-// Dependencies: [1395, 4034, 1922, 676, 1236, 4574, 4896, 4224, 8393, 2]
+// Dependencies: [1395, 4098, 1922, 676, 1236, 4638, 4962, 4288, 8460, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 9180 (getChannelA11yLabel)
+// Module 9248 (getChannelA11yLabel)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
-import nameFromUser from "nameFromUser" /* 4224 */;
-import computeChannelName from "computeChannelName" /* 4574 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 4896 */;
-import closure_4 from "markAllUserIdListsStale" /* 4034 */;
+import nameFromUser from "nameFromUser" /* 4288 */;
+import computeChannelName from "computeChannelName" /* 4638 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 4962 */;
+import closure_4 from "markAllUserIdListsStale" /* 4098 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
@@ -132,9 +132,9 @@ export default function getChannelA11yLabel(mentionCount) {
         const obj6 = { start: null };
         obj6[0] = voiceChannelStartTime;
         const _Date = Date;
-        obj5[0] = tmp(8393).formatActiveA11yTimestamp(obj6, Date.now());
+        obj5[0] = tmp(8460).formatActiveA11yTimestamp(obj6, Date.now());
         items1.push(intl7.formatToPlainString(tmp(1236).t.JQtsGh, obj5));
-        const tmpResult = tmp(8393);
+        const tmpResult = tmp(8460);
       }
       if (tmp16) {
         const intl8 = tmp(1236).intl;

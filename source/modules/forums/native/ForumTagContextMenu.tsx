@@ -1,10 +1,10 @@
-// Module ID: 10154
-// Function ID: 10155
+// Module ID: 10221
+// Function ID: 10222
 // Name: ForumTagContextMenu
-// Dependencies: [21, 4070, 1236, 9696, 5862, 4097, 8745, 2]
+// Dependencies: [21, 4134, 1236, 9764, 5928, 4161, 8813, 2]
 // Exports: default
 
-// Module 10154 (ForumTagContextMenu)
+// Module 10221 (ForumTagContextMenu)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -13,17 +13,17 @@ const result = set.fileFinishedImporting("modules/forums/native/ForumTagContextM
 
 export default function ForumTagContextMenu(children) {
   const tagId = children.tagId;
-  const DeveloperMode = tagId(4070).DeveloperMode;
+  const DeveloperMode = tagId(4134).DeveloperMode;
   let obj = { label: null, IconComponent: null, action: null };
   const enabled = DeveloperMode.useSetting();
   const intl = tagId(1236).intl;
   obj[0] = intl.string(tagId(1236).t["8VG6IY"]);
-  obj[1] = tagId(9696).IdIcon;
+  obj[1] = tagId(9764).IdIcon;
   obj[2] = function action() {
     tagId(closure_1_1[4]).copy(tagId);
     const obj = tagId(closure_1_1[4]);
     tagId(closure_1_1[5]).presentIdCopied();
   };
   const items = [obj];
-  return jsx(tagId(8745).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
+  return jsx(tagId(8813).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
 };

@@ -1,33 +1,33 @@
-// Module ID: 11955
-// Function ID: 11956
+// Module ID: 12028
+// Function ID: 12029
 // Name: AutocompleteLabel
-// Dependencies: [19, 17, 1910, 4034, 1922, 676, 10067, 21, 4380, 712, 8118, 589, 4224, 1297, 9278, 5480, 5490, 1236, 8383, 4866, 4574, 4376, 5374, 11956, 10107, 4949, 10008, 12, 4413, 1903, 8097, 2]
+// Dependencies: [19, 17, 1910, 4098, 1922, 676, 10134, 21, 4444, 712, 8185, 589, 4288, 1297, 9346, 5546, 5556, 1236, 8450, 4932, 4638, 4440, 5440, 12029, 10174, 5015, 10075, 12, 4477, 1903, 8164, 2]
 
-// Module 11955 (AutocompleteLabel)
+// Module 12028 (AutocompleteLabel)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import isNullOrEmpty from "isNullOrEmpty" /* 1903 */;
-import Text from "Text" /* 4376 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4413 */;
-import computeChannelName from "computeChannelName" /* 4574 */;
-import getChannelIcon from "getChannelIcon" /* 4866 */;
-import PressableBase from "PressableBase" /* 4949 */;
-import preloadDefault from "preload" /* 5374 */;
-import TableRowInner from "TableRowInner" /* 5480 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 5490 */;
-import Form from "Form" /* 8118 */;
-import registerAssetDefault from "registerAsset" /* 8383 */;
-import StickerDefault from "Sticker" /* 10008 */;
-import useStickerPackCategories from "useStickerPackCategories" /* 10107 */;
-import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 11956 */;
+import Text from "Text" /* 4440 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4477 */;
+import computeChannelName from "computeChannelName" /* 4638 */;
+import getChannelIcon from "getChannelIcon" /* 4932 */;
+import PressableBase from "PressableBase" /* 5015 */;
+import preloadDefault from "preload" /* 5440 */;
+import TableRowInner from "TableRowInner" /* 5546 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 5556 */;
+import Form from "Form" /* 8185 */;
+import registerAssetDefault from "registerAsset" /* 8450 */;
+import StickerDefault from "Sticker" /* 10075 */;
+import useStickerPackCategories from "useStickerPackCategories" /* 10174 */;
+import ChannelAutocompleteEmojiUpsellDefault from "ChannelAutocompleteEmojiUpsell" /* 12029 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "markAllUserIdListsStale" /* 4034 */;
+import closure_6 from "markAllUserIdListsStale" /* 4098 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function AutocompleteLabel(text) {
@@ -80,16 +80,16 @@ const obj9 = {
       nick = stateFromStores;
     }
     if (nick == null) {
-      nick = guildId(4224).getName(user);
-      const obj3 = guildId(4224);
+      nick = guildId(4288).getName(user);
+      const obj3 = guildId(4288);
     }
     obj[3] = closure_9(AutocompleteLabel, { text: nick });
     obj = { status, user, size: tmp2(1297).AvatarSizes.SMALL, guildId, autoStatusCutout: true };
     obj[4] = closure_9(user(1297).Avatar, obj);
     const items1 = [, ];
     ({ trailing: arr2[0], username: arr2[1] } = tmp);
-    obj[5] = closure_9(guildId(9278), { user, usernameStyle: items1, discriminatorStyle: tmp.trailing });
-    return closure_9(user(8118).FormRow, obj);
+    obj[5] = closure_9(guildId(9346), { user, usernameStyle: items1, discriminatorStyle: tmp.trailing });
+    return closure_9(user(8185).FormRow, obj);
   },
   Global(arg0) {
     ({ text, badge } = arg0);
@@ -220,7 +220,7 @@ const obj9 = {
     if (obj.isNullOrEmpty(tmp4)) {
       obj = { size: "sm", style: null };
       obj[1] = tmp.gameIcon;
-      let tmp6Result = tmp6(tmp5(8097).UnknownGameIcon, obj);
+      let tmp6Result = tmp6(tmp5(8164).UnknownGameIcon, obj);
       let tmp8 = tmp6;
     } else {
       obj = { style: null, source: null };

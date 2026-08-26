@@ -1,10 +1,10 @@
-// Module ID: 15485
-// Function ID: 15486
+// Module ID: 15564
+// Function ID: 15565
 // Name: useInitRef
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 15485 (useInitRef)
+// Module 15564 (useInitRef)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 8544
-// Function ID: 8545
+// Module ID: 8612
+// Function ID: 8613
 // Name: MaskedBadge
-// Dependencies: [19, 21, 4380, 712, 1297, 8545, 2]
+// Dependencies: [19, 21, 4444, 712, 1297, 8613, 2]
 // Exports: default
 
-// Module 8544 (MaskedBadge)
+// Module 8612 (MaskedBadge)
 import ThemesDefault from "Themes" /* 712 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 8545 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 8613 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 createCacheKey = { maskStyle: { position: "relative", right: "channel" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: null };

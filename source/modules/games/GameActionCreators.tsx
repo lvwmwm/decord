@@ -1,13 +1,13 @@
-// Module ID: 6034
-// Function ID: 6035
+// Module ID: 6100
+// Function ID: 6101
 // Name: requestGames
-// Dependencies: [5, 4404, 676, 530, 709, 4264, 12, 2]
+// Dependencies: [5, 4468, 676, 530, 709, 4328, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 6034 (requestGames)
+// Module 6100 (requestGames)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleLoadMessages" /* 4404 */;
+import closure_4 from "handleLoadMessages" /* 4468 */;
 import { Endpoints } from "ME" /* 676 */;
 
 let closure_0 = arg1;
@@ -88,7 +88,7 @@ function _fetchGamesWithSupplementalData() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -119,7 +119,7 @@ function _fetchGamesWithSupplementalData() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp7) {
           c1 = tmp;
           throw tmp7;
@@ -154,7 +154,7 @@ closure_0 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -186,7 +186,7 @@ closure_0 = importDefaultResult((arg0) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         v0 = tmp;

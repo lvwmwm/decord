@@ -1,14 +1,14 @@
-// Module ID: 15637
-// Function ID: 15638
+// Module ID: 15716
+// Function ID: 15717
 // Name: fetchChannelAffinitiesV2
-// Dependencies: [5935, 15635, 676, 709, 530, 2]
+// Dependencies: [6001, 15714, 676, 709, 530, 2]
 // Exports: fetchChannelAffinitiesV2
 
-// Module 15637 (fetchChannelAffinitiesV2)
+// Module 15716 (fetchChannelAffinitiesV2)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "hasConsented" /* 5935 */;
-import closure_4 from "map" /* 15635 */;
+import closure_3 from "hasConsented" /* 6001 */;
+import closure_4 from "map" /* 15714 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

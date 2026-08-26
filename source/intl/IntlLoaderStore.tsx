@@ -1,7 +1,7 @@
 // Module ID: 1997
 // Function ID: 1998
 // Name: _setAppLocale
-// Dependencies: [5, 700, 1998, 1236, 2008, 1274, 3471, 3946, 3977, 3979, 1208, 2]
+// Dependencies: [5, 700, 1998, 1236, 2008, 1274, 3535, 4010, 4041, 4043, 1208, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 1997 (_setAppLocale)
@@ -28,7 +28,7 @@ function _setAppLocale() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ function _setAppLocale() {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -112,7 +112,7 @@ function _setAppLocale() {
                       return obj;
                     } else {
                       dependencyMap = 3;
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp11) {
                     dependencyMap = tmp;
@@ -171,7 +171,7 @@ function _setAppLocale() {
           } else {
             state.setLoadingSucceeded(callback);
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           v0 = tmp;
@@ -207,7 +207,7 @@ function _loadDateFnsLocale() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -284,7 +284,7 @@ function _loadFormatJsLocale() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -318,7 +318,7 @@ function _loadFormatJsLocale() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c1 = tmp;
           throw tmp10;
@@ -354,7 +354,7 @@ function _setMomentLocale() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -414,7 +414,7 @@ function _setMomentLocale() {
           obj1 = callback(arr2[9]);
           obj1.locale(arr);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp26) {
           c4 = tmp;
           throw tmp26;
@@ -434,19 +434,19 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   closure_0 = arg0;
   importDefault = arg1;
-  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "channel", localeData: "unstable_requestPaint", setLoadingStarted: "RADIO_BORDER_DEFAULT", setLoadingSucceeded: "<string:1530593281>", setLoadingFailed: "<string:4099145729>", setLocaleData: "<string:3711937412>" };
+  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "call", localeData: "<string:357630937>", setLoadingStarted: "<string:3020575156>", setLoadingSucceeded: "<string:1370754641>", setLoadingFailed: "<string:189903887>", setLocaleData: "<string:2586530228>" };
   obj[3] = codeDefault;
   obj[4] = function setLoadingStarted(closure_0) {
     return callback({ isLoading: true, inProgressLocale: closure_0 });
   };
   obj[5] = function setLoadingSucceeded(closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      callback({ isLoading: false, inProgressLocale: "Boolean", error: "channel" });
+      callback({ isLoading: false, inProgressLocale: "Boolean", error: "call" });
     }
   };
   obj[6] = function setLoadingFailed(arg0, closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
+      const obj = { isLoading: false, inProgressLocale: "Array", error: false };
       obj[2] = arg0;
       callback(obj);
     }

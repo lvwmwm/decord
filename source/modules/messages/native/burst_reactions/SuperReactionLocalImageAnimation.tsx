@@ -1,13 +1,13 @@
-// Module ID: 8782
-// Function ID: 8783
+// Module ID: 8850
+// Function ID: 8851
 // Name: SuperReactionLocalImageAnimation
-// Dependencies: [19, 21, 7387, 7430, 2]
+// Dependencies: [19, 21, 7453, 7496, 2]
 // Exports: default
 
-// Module 8782 (SuperReactionLocalImageAnimation)
+// Module 8850 (SuperReactionLocalImageAnimation)
 import noopAll from "noop" /* 19 */;
-import _generateAnimationSource from "_generateAnimationSource" /* 7387 */;
-import FadeOutLottieAnimationDefault from "FadeOutLottieAnimation" /* 7430 */;
+import _generateAnimationSource from "_generateAnimationSource" /* 7453 */;
+import FadeOutLottieAnimationDefault from "FadeOutLottieAnimation" /* 7496 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

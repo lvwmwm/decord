@@ -1,14 +1,14 @@
-// Module ID: 6629
-// Function ID: 6630
+// Module ID: 6695
+// Function ID: 6696
 // Name: HoldingGemSpotIllustration
-// Dependencies: [21, 5374, 6630, 2]
+// Dependencies: [21, 5440, 6696, 2]
 // Exports: HoldingGemSpotIllustration
 
-// Module 6629 (HoldingGemSpotIllustration)
+// Module 6695 (HoldingGemSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6630 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6696 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HoldingGemSpotIllustration.native.tsx");

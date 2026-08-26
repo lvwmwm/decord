@@ -1,19 +1,19 @@
-// Module ID: 5994
-// Function ID: 5995
+// Module ID: 6060
+// Function ID: 6061
 // Name: useCanManageGuildOfficialMessages
-// Dependencies: [1910, 4025, 4373, 676, 688, 689, 4228, 1363, 5995, 589, 5996, 5997, 2]
+// Dependencies: [1910, 4089, 4437, 676, 688, 689, 4292, 1363, 6061, 589, 6062, 6063, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
 
-// Module 5994 (useCanManageGuildOfficialMessages)
+// Module 6060 (useCanManageGuildOfficialMessages)
 import int2hslRaw from "int2hslRaw" /* 688 */;
 import nDefault from "n" /* 689 */;
-import hexToRgba from "hexToRgba" /* 4228 */;
-import experimentDefault from "experiment" /* 5995 */;
-import useCanUnarchiveThread from "useCanUnarchiveThread" /* 5996 */;
-import isSystemMessageDefault from "isSystemMessage" /* 5997 */;
+import hexToRgba from "hexToRgba" /* 4292 */;
+import experimentDefault from "experiment" /* 6061 */;
+import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6062 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6063 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4025 */;
-import { GUILD_OFFICIAL_HIGHLIGHT_ALPHA as closure_5 } from "MESSAGE_GROUP_SPACING" /* 4373 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
+import { GUILD_OFFICIAL_HIGHLIGHT_ALPHA as closure_5 } from "MESSAGE_GROUP_SPACING" /* 4437 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

@@ -1,22 +1,22 @@
-// Module ID: 7370
-// Function ID: 7371
+// Module ID: 7436
+// Function ID: 7437
 // Name: trackForumChannelSeenBatch
-// Dependencies: [1391, 4742, 6002, 7371, 676, 4588, 7372, 698, 7377, 500, 7378, 2]
+// Dependencies: [1391, 4806, 6068, 7437, 676, 4652, 7438, 698, 7443, 500, 7444, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 7370 (trackForumChannelSeenBatch)
+// Module 7436 (trackForumChannelSeenBatch)
 import set from "set" /* 500 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4588 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4588 */;
-import collectForumAnalyticsMetadata from "collectForumAnalyticsMetadata" /* 7372 */;
-import collectThreadMetadata from "collectThreadMetadata" /* 7377 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7378 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4652 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4652 */;
+import collectForumAnalyticsMetadata from "collectForumAnalyticsMetadata" /* 7438 */;
+import collectThreadMetadata from "collectThreadMetadata" /* 7443 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7444 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "handleChanged" /* 4742 */;
-import { DraftType } from "handleChanged" /* 4742 */;
-import closure_6 from "handleLoadThreadsSuccess" /* 6002 */;
-import closure_7 from "initialize" /* 7371 */;
+import closure_4 from "handleChanged" /* 4806 */;
+import { DraftType } from "handleChanged" /* 4806 */;
+import closure_6 from "handleLoadThreadsSuccess" /* 6068 */;
+import closure_7 from "initialize" /* 7437 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

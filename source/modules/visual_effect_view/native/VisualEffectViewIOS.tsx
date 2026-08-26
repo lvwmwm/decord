@@ -1,13 +1,13 @@
-// Module ID: 4807
-// Function ID: 4808
+// Module ID: 4871
+// Function ID: 4872
 // Name: BLUR_EFFECT_NAMES
-// Dependencies: [4359, 4808, 4809, 2]
+// Dependencies: [4423, 4872, 4873, 2]
 
-// Module 4807 (BLUR_EFFECT_NAMES)
+// Module 4871 (BLUR_EFFECT_NAMES)
 import set from "set" /* 2 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4809 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4359 */;
-import importDefaultResult from "map" /* 4808 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4873 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4423 */;
+import importDefaultResult from "map" /* 4872 */;
 
 const obj = { componentName: "DCDVisualEffectView", componentFoundInstance: null };
 const tmp2 = DCDDeviceManager.getSystemVersionMajor() >= 13;

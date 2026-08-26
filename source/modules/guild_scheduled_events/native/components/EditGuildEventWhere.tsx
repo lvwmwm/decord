@@ -1,19 +1,19 @@
-// Module ID: 9134
-// Function ID: 9135
+// Module ID: 9202
+// Function ID: 9203
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 1391, 4025, 7132, 1397, 676, 21, 4380, 1236, 9092, 589, 1500, 9135, 9114, 4376, 4815, 1892, 9088, 1351, 9112, 9166, 3979, 9167, 9168, 2]
+// Dependencies: [32, 19, 1391, 4089, 7198, 1397, 676, 21, 4444, 1236, 9160, 589, 1500, 9203, 9182, 4440, 4879, 1892, 9156, 1351, 9180, 9234, 4043, 9235, 9236, 2]
 // Exports: default
 
-// Module 9134 (EditGuildEventWhere)
+// Module 9202 (EditGuildEventWhere)
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4025 */;
-import { isGuildScheduledEventActive as closure_8 } from "scheduledEventSort" /* 7132 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
+import { isGuildScheduledEventActive as closure_8 } from "scheduledEventSort" /* 7198 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ AGE_VERIFICATION_STAGE_CHANNEL_TYPES: c9, GuildScheduledEventEntityTypes: c10 } = GUILD_EVENT_MAX_NAME_LENGTH);
@@ -111,7 +111,7 @@ export default function EditGuildEventWhere(guild) {
               const error1 = new Error(intl2.string(tmp3(1236).t.q91szp));
               throw error1;
             }
-            obj = callback(9092);
+            obj = callback(9160);
           }
           if (null == tmp) {
             if (entityType !== tmp2.EXTERNAL) {

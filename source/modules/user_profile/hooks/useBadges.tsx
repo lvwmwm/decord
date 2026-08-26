@@ -1,12 +1,12 @@
-// Module ID: 8983
-// Function ID: 8984
+// Module ID: 9051
+// Function ID: 9052
 // Name: useBadges
-// Dependencies: [4225, 1922, 4070, 647, 1236, 2]
+// Dependencies: [4289, 1922, 4134, 647, 1236, 2]
 // Exports: default
 
-// Module 8983 (useBadges)
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import closure_2 from "initialize" /* 4225 */;
+// Module 9051 (useBadges)
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import closure_2 from "initialize" /* 4289 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

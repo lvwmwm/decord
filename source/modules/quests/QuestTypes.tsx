@@ -1,12 +1,12 @@
-// Module ID: 5271
-// Function ID: 5272
+// Module ID: 5337
+// Function ID: 5338
 // Name: QuestsVisibleMessagesChangedSource
-// Dependencies: [5272, 2, 5273, 5274]
+// Dependencies: [5338, 2, 5339, 5340]
 
-// Module 5271 (QuestsVisibleMessagesChangedSource)
-import QuestRewardCodePlatforms from "QuestRewardCodePlatforms" /* 5272 */;
-import set2 from "set" /* 5273 */;
-import AdPlacement from "AdPlacement" /* 5274 */;
+// Module 5337 (QuestsVisibleMessagesChangedSource)
+import QuestRewardCodePlatforms from "QuestRewardCodePlatforms" /* 5338 */;
+import set2 from "set" /* 5339 */;
+import AdPlacement from "AdPlacement" /* 5340 */;
 import set from "set" /* 2 */;
 
 const values = Object.values(QuestRewardCodePlatforms.QuestRewardCodePlatforms);

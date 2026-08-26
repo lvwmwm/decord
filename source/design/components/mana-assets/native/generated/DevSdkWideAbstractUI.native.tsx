@@ -1,14 +1,14 @@
-// Module ID: 6331
-// Function ID: 6332
+// Module ID: 6397
+// Function ID: 6398
 // Name: DevSdkWideAbstractUI
-// Dependencies: [21, 5374, 6332, 2]
+// Dependencies: [21, 5440, 6398, 2]
 // Exports: DevSdkWideAbstractUI
 
-// Module 6331 (DevSdkWideAbstractUI)
+// Module 6397 (DevSdkWideAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6332 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6398 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DevSdkWideAbstractUI.native.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 8663
-// Function ID: 8664
+// Module ID: 8731
+// Function ID: 8732
 // Name: EnterEmail
-// Dependencies: [5, 32, 19, 17, 1922, 8610, 676, 21, 4380, 712, 1500, 589, 691, 8664, 698, 4376, 1236, 8622, 4815, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 8678, 676, 21, 4444, 712, 1500, 589, 691, 8732, 698, 4440, 1236, 8690, 4879, 2]
 // Exports: default
 
-// Module 8663 (EnterEmail)
+// Module 8731 (EnterEmail)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import ChangeEmailFields from "ChangeEmailFields" /* 8610 */;
+import ChangeEmailFields from "ChangeEmailFields" /* 8678 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ View: error, ScrollView: closure_8 } = get_ActivityIndicator);
@@ -75,7 +75,7 @@ export default function EnterEmail(isChangeEmail) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

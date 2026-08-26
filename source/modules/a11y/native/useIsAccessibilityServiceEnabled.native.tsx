@@ -1,13 +1,13 @@
-// Module ID: 8213
-// Function ID: 8214
+// Module ID: 8280
+// Function ID: 8281
 // Name: ACCESSIBILITY_SERVICE_ENABLED_GETTER
-// Dependencies: [644, 4748, 4802, 2]
+// Dependencies: [644, 4812, 4866, 2]
 // Exports: getIsAccessibilityServiceEnabled, useIsAccessibilityServiceEnabled
 
-// Module 8213 (ACCESSIBILITY_SERVICE_ENABLED_GETTER)
+// Module 8280 (ACCESSIBILITY_SERVICE_ENABLED_GETTER)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 4748 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4802 */;
+import enforcingDefault from "enforcing" /* 4812 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4866 */;
 import keys from "keys" /* 644 */;
 
 function ACCESSIBILITY_SERVICE_ENABLED_GETTER(accessibilityServiceEnabled) {

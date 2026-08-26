@@ -1,16 +1,16 @@
-// Module ID: 10978
-// Function ID: 10979
+// Module ID: 11050
+// Function ID: 11051
 // Name: getXboxURIForChannel
-// Dependencies: [1910, 4431, 4034, 1922, 10579, 676, 4574, 1236, 530, 2]
+// Dependencies: [1910, 4495, 4098, 1922, 10647, 676, 4638, 1236, 530, 2]
 // Exports: default
 
-// Module 10978 (getXboxURIForChannel)
-import computeChannelName from "computeChannelName" /* 4574 */;
+// Module 11050 (getXboxURIForChannel)
+import computeChannelName from "computeChannelName" /* 4638 */;
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_4 from "markAllUserIdListsStale" /* 4034 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_4 from "markAllUserIdListsStale" /* 4098 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import XBOX_URL_BASE from "XBOX_URL_BASE" /* 10579 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 10647 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

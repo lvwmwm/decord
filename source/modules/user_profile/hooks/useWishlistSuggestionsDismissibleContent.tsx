@@ -1,14 +1,14 @@
-// Module ID: 12693
-// Function ID: 12694
+// Module ID: 12766
+// Function ID: 12767
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [32, 19, 7227, 1388, 687, 589, 6131, 1377, 2]
+// Dependencies: [32, 19, 7293, 1388, 687, 589, 6197, 1377, 2]
 // Exports: default
 
-// Module 12693 (useWishlistSuggestionsDismissibleContent)
+// Module 12766 (useWishlistSuggestionsDismissibleContent)
 import setDefault from "set" /* 687 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createUserWidgetFromServer" /* 7227 */;
+import closure_4 from "createUserWidgetFromServer" /* 7293 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 
 const require = arg1;

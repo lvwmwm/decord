@@ -1,13 +1,13 @@
-// Module ID: 4939
-// Function ID: 4940
+// Module ID: 5005
+// Function ID: 5006
 // Name: isAgeRestrictedContentClassification
-// Dependencies: [4940, 4942, 2]
+// Dependencies: [5006, 5008, 2]
 // Exports: isAgeRestrictedContentClassification
 
-// Module 4939 (isAgeRestrictedContentClassification)
+// Module 5005 (isAgeRestrictedContentClassification)
 import set from "set" /* 2 */;
-import contentClassificationToAgeRestrictionConclusion from "contentClassificationToAgeRestrictionConclusion" /* 4940 */;
-import AgeRestrictionStatus from "AgeRestrictionStatus" /* 4942 */;
+import contentClassificationToAgeRestrictionConclusion from "contentClassificationToAgeRestrictionConclusion" /* 5006 */;
+import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5008 */;
 
 let result = set.fileFinishedImporting("modules/content_classification/utils.tsx");
 

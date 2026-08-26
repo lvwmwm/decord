@@ -1,14 +1,14 @@
-// Module ID: 15947
-// Function ID: 15948
+// Module ID: 16026
+// Function ID: 16027
 // Name: vibegrationLocation
-// Dependencies: [4421, 15944, 676, 5975, 698, 2]
+// Dependencies: [4485, 16023, 676, 6041, 698, 2]
 // Exports: trackVibegrationDeployed, trackVibegrationErrored, trackVibegrationTurnResulted
 
-// Module 15947 (vibegrationLocation)
+// Module 16026 (vibegrationLocation)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import vibegrationsAppIdFromTopic from "vibegrationsAppIdFromTopic" /* 5975 */;
-import closure_3 from "addApplication" /* 4421 */;
-import closure_4 from "isProjectOwner" /* 15944 */;
+import vibegrationsAppIdFromTopic from "vibegrationsAppIdFromTopic" /* 6041 */;
+import closure_3 from "addApplication" /* 4485 */;
+import closure_4 from "isProjectOwner" /* 16023 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

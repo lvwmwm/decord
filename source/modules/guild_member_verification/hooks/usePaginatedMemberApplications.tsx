@@ -1,10 +1,10 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 16020
+// Function ID: 16021
 // Name: result
-// Dependencies: [5, 32, 19, 4205, 11, 8584, 4278, 2]
+// Dependencies: [5, 32, 19, 4269, 11, 8652, 4342, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 15941 (result)
+// Module 16020 (result)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -48,7 +48,7 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -88,8 +88,8 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
                   obj1[1] = tmp69;
                   obj1[2] = closure_6;
                   const merged = Object.assign((function getRequestPaginationParams(closure_0, aPIError, arg2, arg3, flag) {
-                    const tmp2 = arg3 === callback(4205).GuildJoinRequestApplicationStatuses.SUBMITTED;
-                    if (arg2 === callback(4205).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
+                    const tmp2 = arg3 === callback(4269).GuildJoinRequestApplicationStatuses.SUBMITTED;
+                    if (arg2 === callback(4269).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
                       if (!flag) {
                         if (0 !== aPIError.length) {
                           let obj = { before: null };

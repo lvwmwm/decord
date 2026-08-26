@@ -1,22 +1,22 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17283
+// Function ID: 17284
 // Name: getCurrentScreenshareCaptureMethod
-// Dependencies: [32, 4467, 4451, 4472, 1391, 4431, 4454, 4475, 1981, 4468, 676, 4444, 9317, 4446, 4553, 12, 7345, 10783, 7280, 4374, 698, 2]
+// Dependencies: [32, 4531, 4515, 4536, 1391, 4495, 4518, 4539, 1981, 4532, 676, 4508, 9385, 4510, 4617, 12, 7411, 10855, 7346, 4438, 698, 2]
 // Exports: sendAVErrorAnalyticsEvent
 
-// Module 17198 (getCurrentScreenshareCaptureMethod)
+// Module 17283 (getCurrentScreenshareCaptureMethod)
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "updateAveragedStatsHelper" /* 4467 */;
-import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo" /* 4451 */;
-import closure_6 from "ApplicationStreamPresets" /* 4472 */;
+import closure_4 from "updateAveragedStatsHelper" /* 4531 */;
+import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo" /* 4515 */;
+import closure_6 from "ApplicationStreamPresets" /* 4536 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_9 from "createRTCConnection" /* 4454 */;
-import closure_10 from "initialize" /* 4475 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_9 from "createRTCConnection" /* 4518 */;
+import closure_10 from "initialize" /* 4539 */;
 import closure_11 from "handleConnectionOpen" /* 1981 */;
-import closure_12 from "initialize" /* 4468 */;
+import closure_12 from "initialize" /* 4532 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import DesktopSources from "DesktopSources" /* 4444 */;
+import DesktopSources from "DesktopSources" /* 4508 */;
 
 const require = arg1;
 function getCurrentScreenshareCaptureMethod(mediaEngineConnectionId) {

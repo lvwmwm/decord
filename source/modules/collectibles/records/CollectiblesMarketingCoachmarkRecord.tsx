@@ -1,11 +1,11 @@
-// Module ID: 7174
-// Function ID: 7175
+// Module ID: 7240
+// Function ID: 7241
 // Name: fromServer
-// Dependencies: [7172, 2]
+// Dependencies: [7238, 2]
 
-// Module 7174 (fromServer)
+// Module 7240 (fromServer)
 import set from "set" /* 2 */;
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7172 */;
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7238 */;
 
 let prototype;
 prototype = function CollectiblesMarketingCoachmarkRecord(arg0) {

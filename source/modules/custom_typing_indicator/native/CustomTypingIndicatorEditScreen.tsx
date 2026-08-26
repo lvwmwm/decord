@@ -1,10 +1,10 @@
-// Module ID: 14804
-// Function ID: 14805
+// Module ID: 14877
+// Function ID: 14878
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1922, 676, 1924, 21, 4380, 712, 1938, 1236, 3407, 1500, 1501, 589, 9628, 5834, 11535, 11539, 1937, 4543, 4347, 14805, 2009, 14806, 698, 8424, 8421, 8665, 4278, 14122, 8769, 11548, 4573, 4376, 14807, 5873, 5480, 1995, 4813, 4815, 9551, 8733, 14808, 9658, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 676, 1924, 21, 4444, 712, 1938, 1236, 3471, 1500, 1501, 589, 9696, 5900, 11607, 11611, 1937, 4607, 4411, 14878, 2009, 14879, 698, 8491, 8488, 8733, 4342, 14195, 8837, 11620, 4637, 4440, 14880, 5939, 5546, 1995, 4877, 4879, 9619, 8801, 14887, 9726, 2]
 // Exports: default
 
-// Module 14804 (CustomTypingIndicatorEditScreen)
+// Module 14877 (CustomTypingIndicatorEditScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -14,7 +14,7 @@ import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);
@@ -147,7 +147,7 @@ export default function CustomTypingIndicatorEditScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -272,7 +272,7 @@ export default function CustomTypingIndicatorEditScreen() {
   let obj2 = { style: tmp.previewContainer, children: null };
   let tmp36Result = null != stateFromStores;
   if (tmp36Result) {
-    let obj3 = { username: null, config: null, justifyCenter: true, bypassReducedMotionCheck: true };
+    let obj3 = { username: null, config: null, justifyCenter: true };
     let tmp7Result = tmp7(tmp3[33]);
     tmp7Result = tmp7(tmp3[34]);
     obj3[0] = tmp7Result.getName(null, null, stateFromStores);
@@ -328,12 +328,12 @@ export default function CustomTypingIndicatorEditScreen() {
   obj11[3] = callback1;
   obj10[1] = closure_14(nativeStackNavigation(tmp3[38]).TableRow, obj11);
   items9[1] = closure_14(nativeStackNavigation(tmp3[37]).TableRowGroup, obj10);
-  const obj13 = { style: tmp.description, variant: "text-xs/normal", color: "text-muted", children: null };
+  const obj13 = { style: tmp.description, variant: "text-xs/normal", color: "text-muted", includeFontPadding: true, children: null };
   const intl9 = tmp2(tmp3[11]).intl;
   const obj14 = { helpCenterUrl: null };
   const tmp2Result3 = nativeStackNavigation(tmp3[19]);
   obj14[0] = isTryItOut(tmp3[39]).getArticleURL(memo.CUSTOM_TYPING_INDICATOR);
-  obj13[3] = intl9.format(isTryItOut(tmp3[12]).k6c2yP, obj14);
+  obj13[4] = intl9.format(isTryItOut(tmp3[12]).k6c2yP, obj14);
   items9[2] = closure_14(nativeStackNavigation(tmp3[35]).Text, obj13);
   obj8[1] = items9;
   items7[2] = closure_15(first2, obj8);

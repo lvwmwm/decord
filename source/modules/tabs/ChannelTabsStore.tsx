@@ -1,16 +1,16 @@
-// Module ID: 11246
-// Function ID: 11247
+// Module ID: 11318
+// Function ID: 11319
 // Name: handleChannelDelete
-// Dependencies: [32, 1981, 4202, 1398, 11247, 501, 589, 709, 2]
+// Dependencies: [32, 1981, 4266, 1398, 11319, 501, 589, 709, 2]
 
-// Module 11246 (handleChannelDelete)
+// Module 11318 (handleChannelDelete)
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import apexExperimentDefault from "apexExperiment" /* 11247 */;
+import apexExperimentDefault from "apexExperiment" /* 11319 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
-import closure_5 from "handleConnectionOpen" /* 4202 */;
+import closure_5 from "handleConnectionOpen" /* 4266 */;
 import { isStaticChannelRoute } from "set" /* 1398 */;
 
 require = arg1;

@@ -1,13 +1,13 @@
-// Module ID: 10715
-// Function ID: 10716
+// Module ID: 10787
+// Function ID: 10788
 // Name: _getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 4421, 4406, 1391, 10699, 10692, 10716, 2]
+// Dependencies: [5, 4485, 4470, 1391, 10771, 10764, 10788, 2]
 // Exports: default
 
-// Module 10715 (_getCachedOrFetchActivityApplicationForLaunch)
+// Module 10787 (_getCachedOrFetchActivityApplicationForLaunch)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addApplication" /* 4421 */;
-import closure_5 from "createExecutable" /* 4406 */;
+import closure_4 from "addApplication" /* 4485 */;
+import closure_5 from "createExecutable" /* 4470 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;
@@ -30,7 +30,7 @@ function _getCachedOrFetchActivityApplicationForLaunch() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

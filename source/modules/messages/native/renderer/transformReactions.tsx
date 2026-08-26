@@ -1,10 +1,10 @@
-// Module ID: 8217
-// Function ID: 8218
+// Module ID: 8284
+// Function ID: 8285
 // Name: transformReactions
-// Dependencies: [4042, 1435, 8212, 4036, 8218, 500, 1208, 2]
+// Dependencies: [4106, 1435, 8279, 4100, 8285, 500, 1208, 2]
 // Exports: default
 
-// Module 8217 (transformReactions)
+// Module 8284 (transformReactions)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/transformReactions.tsx");

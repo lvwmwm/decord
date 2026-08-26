@@ -1,24 +1,24 @@
-// Module ID: 11065
-// Function ID: 11066
+// Module ID: 11137
+// Function ID: 11138
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 10677, 10678, 676, 4408, 4282, 7955, 501, 10687, 10688, 1208, 11066, 10820, 4745, 1236, 1370, 709, 1231, 514, 2]
+// Dependencies: [5, 17, 10749, 10750, 676, 4472, 4346, 8022, 501, 10759, 10760, 1208, 11138, 10892, 4809, 1236, 1370, 709, 1231, 514, 2]
 
-// Module 11065 (postMessageToWebView)
+// Module 11137 (postMessageToWebView)
 import v1 from "v1" /* 514 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import _modDef4745 from "module_4745" /* 4745 */;
-import enforcingDefault from "enforcing" /* 10687 */;
-import leaveFrameDefault from "leaveFrame" /* 11066 */;
+import _modDef4809 from "module_4809" /* 4809 */;
+import enforcingDefault from "enforcing" /* 10759 */;
+import leaveFrameDefault from "leaveFrame" /* 11138 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 10677 */;
-import { isLaunched } from "FrameLayoutModes" /* 10678 */;
+import closure_4 from "map" /* 10749 */;
+import { isLaunched } from "FrameLayoutModes" /* 10750 */;
 import { ComponentActions } from "ME" /* 676 */;
-import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4408 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4282 */;
-import WebView from "WebView" /* 7955 */;
+import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4472 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4346 */;
+import WebView from "WebView" /* 8022 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 
 require = arg1;
@@ -174,7 +174,7 @@ class FramesNativeManager extends tmp5 {
 const prototype = FramesNativeManager.prototype;
 prototype["showRPCDisconnectErrorUI"] = function showRPCDisconnectErrorUI(reason) {
   ({ code, message } = reason);
-  let obj = _modDef4745;
+  let obj = _modDef4809;
   obj = { title: null, body: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.formatToPlainString(getSystemLocale.t.hbiAO6, { code });

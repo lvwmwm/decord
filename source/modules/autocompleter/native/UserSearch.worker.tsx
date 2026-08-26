@@ -1,9 +1,9 @@
-// Module ID: 7457
-// Function ID: 7458
+// Module ID: 7523
+// Function ID: 7524
 // Name: UserSearchWorkerManager
 // Dependencies: [17, 2]
 
-// Module 7457 (UserSearchWorkerManager)
+// Module 7523 (UserSearchWorkerManager)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 2 */;
 

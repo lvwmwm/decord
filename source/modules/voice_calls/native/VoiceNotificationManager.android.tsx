@@ -1,20 +1,20 @@
-// Module ID: 13921
-// Function ID: 13922
+// Module ID: 13994
+// Function ID: 13995
 // Name: processColor
-// Dependencies: [32, 17, 1390, 4421, 4402, 1391, 4431, 4454, 4034, 1922, 676, 712, 7361, 7360, 11008, 9803, 4574, 1236, 4562, 2]
+// Dependencies: [32, 17, 1390, 4485, 4466, 1391, 4495, 4518, 4098, 1922, 676, 712, 7427, 7426, 11080, 9870, 4638, 1236, 4626, 2]
 
-// Module 13921 (processColor)
+// Module 13994 (processColor)
 import ThemesDefault from "Themes" /* 712 */;
-import initializeDefault from "initialize" /* 4562 */;
+import initializeDefault from "initialize" /* 4626 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "participantFromServer" /* 1390 */;
-import closure_5 from "addApplication" /* 4421 */;
-import closure_6 from "reset" /* 4402 */;
+import closure_5 from "addApplication" /* 4485 */;
+import closure_6 from "reset" /* 4466 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_9 from "createRTCConnection" /* 4454 */;
-import closure_10 from "markAllUserIdListsStale" /* 4034 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_9 from "createRTCConnection" /* 4518 */;
+import closure_10 from "markAllUserIdListsStale" /* 4098 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import { InputModes } from "ME" /* 676 */;
 import set from "set" /* 2 */;
@@ -27,7 +27,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "ClippingPathName", isPushToTalk: null, embeddedActivity: "\u{1F1EC}\u{1F1FC}", isStreaming: 6 };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "h", isPushToTalk: "c", embeddedActivity: "g", isStreaming: "\u{1F1F9}\u{1F1ED}" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = closure_1_9.getChannelId();
       const state = closure_1_9.getState();
@@ -222,7 +222,7 @@ prototype["terminate"] = function terminate() {
 };
 set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "ClippingPathName", isPushToTalk: null, embeddedActivity: "\u{1F1EC}\u{1F1FC}", isStreaming: 6 };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "h", isPushToTalk: "c", embeddedActivity: "g", isStreaming: "\u{1F1F9}\u{1F1ED}" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = closure_1_9.getChannelId();
   const state = closure_1_9.getState();

@@ -1,14 +1,14 @@
-// Module ID: 4909
-// Function ID: 4910
+// Module ID: 4975
+// Function ID: 4976
 // Name: TextLockIcon
-// Dependencies: [19, 21, 712, 4100, 4891, 2]
+// Dependencies: [19, 21, 712, 4164, 4957, 2]
 // Exports: TextLockIcon
 
-// Module 4909 (TextLockIcon)
+// Module 4975 (TextLockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 4891 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 4957 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

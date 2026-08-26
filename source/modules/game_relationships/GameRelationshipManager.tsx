@@ -1,12 +1,12 @@
-// Module ID: 14013
-// Function ID: 14014
+// Module ID: 14086
+// Function ID: 14087
 // Name: _initialize
-// Dependencies: [7264, 676, 4562, 709, 5835, 2]
+// Dependencies: [7330, 676, 4626, 709, 5901, 2]
 
-// Module 14013 (_initialize)
+// Module 14086 (_initialize)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 4562 */;
-import closure_2 from "recountRelationshipTypes" /* 7264 */;
+import initializeDefault from "initialize" /* 4626 */;
+import closure_2 from "recountRelationshipTypes" /* 7330 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 
 initializeDefault;

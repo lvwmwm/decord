@@ -1,10 +1,10 @@
-// Module ID: 4617
-// Function ID: 4618
+// Module ID: 4681
+// Function ID: 4682
 // Name: useIsStageVoicePanelEnabled
 // Dependencies: [1472, 2]
 // Exports: isStageVoicePanelEnabled, useIsStageVoicePanelEnabled
 
-// Module 4617 (useIsStageVoicePanelEnabled)
+// Module 4681 (useIsStageVoicePanelEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 16812
-// Function ID: 16813
+// Module ID: 16897
+// Function ID: 16898
 // Name: handleFocusParticipant
-// Dependencies: [4454, 4396, 5367, 2]
+// Dependencies: [4518, 4460, 5433, 2]
 
-// Module 16812 (handleFocusParticipant)
-import initializeDefault from "initialize" /* 5367 */;
-import closure_0 from "createRTCConnection" /* 4454 */;
-import closure_1 from "getParticipants" /* 4396 */;
+// Module 16897 (handleFocusParticipant)
+import initializeDefault from "initialize" /* 5433 */;
+import closure_0 from "createRTCConnection" /* 4518 */;
+import closure_1 from "getParticipants" /* 4460 */;
 
 initializeDefault;
 class ParticipantFocusManager extends tmp2 {

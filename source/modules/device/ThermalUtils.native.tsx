@@ -1,10 +1,10 @@
-// Module ID: 10693
-// Function ID: 10694
+// Module ID: 10765
+// Function ID: 10766
 // Name: NativeModules
-// Dependencies: [17, 500, 10694, 4359, 644, 705, 2]
+// Dependencies: [17, 500, 10766, 4423, 644, 705, 2]
 
-// Module 10693 (NativeModules)
-import enforcingDefault from "enforcing" /* 10694 */;
+// Module 10765 (NativeModules)
+import enforcingDefault from "enforcing" /* 10766 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 500 */;
 import keys from "keys" /* 644 */;
@@ -27,7 +27,7 @@ let closure_5 = keys.create((arg0) => {
     } else {
       resolved = Promise.resolve(undefined);
     }
-    tmpResult = _require(4359);
+    tmpResult = _require(4423);
   } else {
     const DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
     const thermalState1 = DCDDeviceThermalStateManager.getThermalState();

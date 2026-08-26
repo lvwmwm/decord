@@ -1,12 +1,12 @@
-// Module ID: 12667
-// Function ID: 12668
+// Module ID: 12740
+// Function ID: 12741
 // Name: useIsGameFriends
-// Dependencies: [32, 7264, 676, 589, 5256, 2]
+// Dependencies: [32, 7330, 676, 589, 5322, 2]
 // Exports: useIsGameFriends
 
-// Module 12667 (useIsGameFriends)
+// Module 12740 (useIsGameFriends)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "recountRelationshipTypes" /* 7264 */;
+import closure_3 from "recountRelationshipTypes" /* 7330 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -20,5 +20,5 @@ export const useIsGameFriends = function useIsGameFriends(id) {
     const gameRelationshipsForUserByType = closure_1_3.getGameRelationshipsForUserByType(closure_0, closure_1_4.FRIEND);
     const items = [gameRelationshipsForUserByType.length > 0, closure_1_3.getGameRelationshipsVersion()];
     return items;
-  }, items1, _require(5256).isVersionEqual), 1)[0];
+  }, items1, _require(5322).isVersionEqual), 1)[0];
 };

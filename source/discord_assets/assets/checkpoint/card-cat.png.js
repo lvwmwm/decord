@@ -1,9 +1,9 @@
-// Module ID: 8409
-// Function ID: 8410
+// Module ID: 8476
+// Function ID: 8477
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8409 (metadata)
+// Module 8476 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/checkpoint/card-cat.png.js");

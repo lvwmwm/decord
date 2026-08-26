@@ -1,10 +1,10 @@
-// Module ID: 12661
-// Function ID: 12662
+// Module ID: 12734
+// Function ID: 12735
 // Name: PersonalWidgetExpandCollapseProvider
 // Dependencies: [32, 19, 21, 2]
 // Exports: PersonalWidgetExpandCollapseProvider, usePersonalWidgetExpandCollapse, usePersonalWidgetFieldClamp
 
-// Module 12661 (PersonalWidgetExpandCollapseProvider)
+// Module 12734 (PersonalWidgetExpandCollapseProvider)
 import closure_0 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

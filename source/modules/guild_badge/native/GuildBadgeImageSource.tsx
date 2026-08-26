@@ -1,21 +1,21 @@
-// Module ID: 9412
-// Function ID: 9413
+// Module ID: 9480
+// Function ID: 9481
 // Name: badgeVariants
-// Dependencies: [9410, 8596, 8597, 9413, 9414, 9415, 9416, 9417, 9418, 1363, 9409, 2]
+// Dependencies: [9478, 8664, 8665, 9481, 9482, 9483, 9484, 9485, 9486, 1363, 9477, 2]
 // Exports: getGuildBadgeImageSource, resolveImageSource
 
-// Module 9412 (badgeVariants)
+// Module 9480 (badgeVariants)
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import registerAssetDefault from "registerAsset" /* 8596 */;
-import registerAssetDefault2 from "registerAsset" /* 8597 */;
-import GuildVisibility from "GuildVisibility" /* 9409 */;
-import BadgeCategory from "BadgeCategory" /* 9410 */;
-import registerAssetDefault3 from "registerAsset" /* 9413 */;
-import registerAssetDefault4 from "registerAsset" /* 9414 */;
-import registerAssetDefault5 from "registerAsset" /* 9415 */;
-import registerAssetDefault6 from "registerAsset" /* 9416 */;
-import registerAssetDefault7 from "registerAsset" /* 9417 */;
-import registerAssetDefault8 from "registerAsset" /* 9418 */;
+import registerAssetDefault from "registerAsset" /* 8664 */;
+import registerAssetDefault2 from "registerAsset" /* 8665 */;
+import GuildVisibility from "GuildVisibility" /* 9477 */;
+import BadgeCategory from "BadgeCategory" /* 9478 */;
+import registerAssetDefault3 from "registerAsset" /* 9481 */;
+import registerAssetDefault4 from "registerAsset" /* 9482 */;
+import registerAssetDefault5 from "registerAsset" /* 9483 */;
+import registerAssetDefault6 from "registerAsset" /* 9484 */;
+import registerAssetDefault7 from "registerAsset" /* 9485 */;
+import registerAssetDefault8 from "registerAsset" /* 9486 */;
 
 require = arg1;
 let obj = {};

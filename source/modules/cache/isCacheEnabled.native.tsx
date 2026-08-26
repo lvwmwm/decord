@@ -1,10 +1,10 @@
-// Module ID: 7255
-// Function ID: 7256
+// Module ID: 7321
+// Function ID: 7322
 // Name: isCacheEnabled
 // Dependencies: [2]
 // Exports: isCacheEnabled
 
-// Module 7255 (isCacheEnabled)
+// Module 7321 (isCacheEnabled)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/cache/isCacheEnabled.native.tsx");

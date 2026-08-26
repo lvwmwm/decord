@@ -1,13 +1,13 @@
-// Module ID: 8309
-// Function ID: 8310
+// Module ID: 8376
+// Function ID: 8377
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1922, 4057, 4224, 1236, 2921, 2, 8310]
+// Dependencies: [1922, 4121, 4288, 1236, 2985, 2, 8377]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 8309 (getPremiumGroupInviteEmbedText)
-import messagesProxyDefault from "messagesProxy" /* 2921 */;
+// Module 8376 (getPremiumGroupInviteEmbedText)
+import messagesProxyDefault from "messagesProxy" /* 2985 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4057 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4121 */;
 
 const require = arg1;
 ({ getPremiumGroupProductName: c4, HELP_CENTER_LINK: c5 } = SubscriptionStatusTypes);
@@ -32,7 +32,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
       user = user.getUser(found);
       let nameFromUserResult = null;
       if (null != user) {
-        let obj4 = sender(4224);
+        let obj4 = sender(4288);
         nameFromUserResult = obj4.nameFromUser(user);
       }
       tmp8 = nameFromUserResult;
@@ -57,7 +57,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
     }
     return tmp15;
   } else {
-    obj = sender(4224);
+    obj = sender(4288);
     const nameFromUserResult1 = obj.nameFromUser(sender);
     const obj3 = { message: null, header: null, body: null };
     const intl = sender(1236).intl;

@@ -1,14 +1,14 @@
-// Module ID: 6699
-// Function ID: 6700
+// Module ID: 6765
+// Function ID: 6766
 // Name: NitroOpalBadgeLargeBadge
-// Dependencies: [21, 5374, 6700, 2]
+// Dependencies: [21, 5440, 6766, 2]
 // Exports: NitroOpalBadgeLargeBadge
 
-// Module 6699 (NitroOpalBadgeLargeBadge)
+// Module 6765 (NitroOpalBadgeLargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import vanityUrlDefault from "vanityUrl" /* 6700 */;
+import preloadDefault from "preload" /* 5440 */;
+import vanityUrlDefault from "vanityUrl" /* 6766 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroOpalBadgeLargeBadge.native.tsx");

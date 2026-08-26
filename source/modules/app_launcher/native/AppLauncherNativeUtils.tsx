@@ -1,22 +1,22 @@
-// Module ID: 11634
-// Function ID: 11635
+// Module ID: 11707
+// Function ID: 11708
 // Name: handleApplicationSelected
-// Dependencies: [19, 1391, 1922, 1499, 676, 4838, 4588, 7129, 11635, 7127, 1955, 7381, 1902, 8493, 1435, 9698, 8878, 11640, 5840, 10686, 4348, 2]
+// Dependencies: [19, 1391, 1922, 1499, 676, 4903, 4652, 7195, 11708, 7193, 1955, 7447, 1902, 8560, 1435, 9766, 8946, 11713, 5906, 10758, 4412, 2]
 // Exports: getAppLauncherIconSource, getInitialOptionValues, handleApplicationCommandSelected, handleApplicationSelected, handleViewAllSelected, useHandleActivityItemSelected, useLogAppLauncherEmptyStateView
 
-// Module 11634 (handleApplicationSelected)
+// Module 11707 (handleApplicationSelected)
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
 import registerAssetDefault from "registerAsset" /* 1902 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4588 */;
-import setActiveCommandAll from "setActiveCommand" /* 7381 */;
-import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive" /* 8493 */;
-import Placeholder from "Placeholder" /* 11635 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4652 */;
+import setActiveCommandAll from "setActiveCommand" /* 7447 */;
+import getShelfBadgeTypeIfActive from "getShelfBadgeTypeIfActive" /* 8560 */;
+import Placeholder from "Placeholder" /* 11708 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4838 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4903 */;
 
 require = arg1;
 ({ APP_LAUNCHER_BUILT_IN_SECTION_ICON: error, AppLauncherRouteName: closure_8 } = APP_LAUNCHER_BUILT_IN_SECTION_ICON);
@@ -32,9 +32,9 @@ export const handleApplicationSelected = function handleApplicationSelected(entr
   let obj = collectGuildAnalyticsMetadata;
   obj = { location: _location, section: null, application_id: null, section_name: null, query: null, search_results_position: null, source: null };
   if (application.id === BuiltInSectionId.BUILT_IN) {
-    let APP = tmp(7129).ApplicationCommandTriggerSections.BUILT_IN;
+    let APP = tmp(7195).ApplicationCommandTriggerSections.BUILT_IN;
   } else {
-    APP = tmp(7129).ApplicationCommandTriggerSections.APP;
+    APP = tmp(7195).ApplicationCommandTriggerSections.APP;
   }
   obj[1] = APP;
   let id = application.id;
@@ -69,8 +69,8 @@ export const handleApplicationCommandSelected = function handleApplicationComman
   ({ location: _location, context, command } = arg0);
   ({ section, sectionDescriptors, query, navigation, installOnDemand, sectionName, entrypoint } = arg0);
   ({ searchResultsPosition, onCommandExecuted } = arg0);
-  let obj = command(7127);
-  obj = { command, location: _location, triggerSection: command(7127).getCommandTriggerSection(section), queryLength: query.length, sectionName, query, searchResultsPosition, source: entrypoint };
+  let obj = command(7193);
+  obj = { command, location: _location, triggerSection: command(7193).getCommandTriggerSection(section), queryLength: query.length, sectionName, query, searchResultsPosition, source: entrypoint };
   obj.trackCommandSelected(obj);
   if (command.type === command(1955).ApplicationCommandType.PRIMARY_ENTRY_POINT) {
     obj = { application: null, context: null, installOnDemand: null, sectionName: null, entrypoint: null };
@@ -242,7 +242,7 @@ export const getAppLauncherIconSource = function getAppLauncherIconSource(applic
 };
 export const useLogAppLauncherEmptyStateView = function useLogAppLauncherEmptyStateView(COMMAND_NOT_FOUND, query) {
   const _require = COMMAND_NOT_FOUND;
-  const entrypoint = _require(9698).useAppLauncherContext().entrypoint;
+  const entrypoint = _require(9766).useAppLauncherContext().entrypoint;
   const items = [COMMAND_NOT_FOUND, query, entrypoint];
   const effect = React.useEffect(() => {
     if (null != COMMAND_NOT_FOUND) {

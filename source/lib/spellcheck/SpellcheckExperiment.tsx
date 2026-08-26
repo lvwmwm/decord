@@ -1,10 +1,10 @@
-// Module ID: 5455
-// Function ID: 5456
+// Module ID: 5521
+// Function ID: 5522
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: isElectronMultilangSpellcheckEnabled
 
-// Module 5455 (apexExperiment)
+// Module 5521 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

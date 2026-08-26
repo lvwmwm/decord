@@ -1,15 +1,15 @@
-// Module ID: 16716
-// Function ID: 16717
+// Module ID: 16801
+// Function ID: 16802
 // Name: GUILD_ROOM_SPATIAL_AUDIO_ENABLED
-// Dependencies: [1218, 4579, 4582, 4583, 589, 4608, 2]
+// Dependencies: [1218, 4643, 4646, 4647, 589, 4672, 2]
 // Exports: computeLivingRoomWorldPoints, livingRoomWorldPointToMediaEnginePoint, useGuildRoomSpatialAudio
 
-// Module 16716 (GUILD_ROOM_SPATIAL_AUDIO_ENABLED)
+// Module 16801 (GUILD_ROOM_SPATIAL_AUDIO_ENABLED)
 import initialize from "initialize" /* 589 */;
-import experimentDefault from "experiment" /* 4608 */;
+import experimentDefault from "experiment" /* 4672 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "resolveCreatingNotes" /* 4579 */;
-import items from "items" /* 4582 */;
+import closure_4 from "resolveCreatingNotes" /* 4643 */;
+import items from "items" /* 4646 */;
 
 require = arg1;
 ({ GUILD_ROOM_BACKGROUND_CONFIG: c5, GUILD_ROOM_SPATIAL_AUDIO_MODE } = items);

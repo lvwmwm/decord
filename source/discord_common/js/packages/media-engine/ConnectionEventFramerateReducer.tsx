@@ -1,12 +1,12 @@
-// Module ID: 4494
-// Function ID: 4495
+// Module ID: 4558
+// Function ID: 4559
 // Name: logger
-// Dependencies: [4444, 4, 4479, 2]
+// Dependencies: [4508, 4, 4543, 2]
 
-// Module 4494 (logger)
+// Module 4558 (logger)
 import set from "set" /* 2 */;
 import log from "log" /* 4 */;
-import DesktopSources from "DesktopSources" /* 4444 */;
+import DesktopSources from "DesktopSources" /* 4508 */;
 
 ({ SpeakingFlags: obj1, VIDEO_QUALITY_FRAMRATE_NOT_SPEAKING_TIMEOUT: c3 } = DesktopSources);
 const logger = new log.Logger("ConnectionEventFramerateReducer");

@@ -1,11 +1,11 @@
-// Module ID: 13942
-// Function ID: 13943
-// Dependencies: [1922, 4282, 676, 10827, 1435, 10824, 1491, 2]
+// Module ID: 14015
+// Function ID: 14016
+// Dependencies: [1922, 4346, 676, 10899, 1435, 10896, 1491, 2]
 
-// Module 13942
+// Module 14015
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import prototypeDefault from "prototype" /* 10824 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10827 */;
+import prototypeDefault from "prototype" /* 10896 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10899 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

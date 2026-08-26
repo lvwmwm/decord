@@ -1,13 +1,13 @@
-// Module ID: 10027
-// Function ID: 10028
+// Module ID: 10094
+// Function ID: 10095
 // Name: getLogMetadata
-// Dependencies: [1626, 4359, 2]
+// Dependencies: [1626, 4423, 2]
 // Exports: default
 
-// Module 10027 (getLogMetadata)
+// Module 10094 (getLogMetadata)
 import set from "set" /* 2 */;
 import getConstantsAll from "getConstants" /* 1626 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4359 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4423 */;
 
 const result = set.fileFinishedImporting("modules/debug/getLogMetadata.native.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 9889
+// Function ID: 9890
 // Name: PencilIcon
-// Dependencies: [19, 21, 712, 4100, 8226, 2]
+// Dependencies: [19, 21, 712, 4164, 8293, 2]
 // Exports: PencilIcon
 
-// Module 9822 (PencilIcon)
+// Module 9889 (PencilIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 8226 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 8293 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,21 +1,21 @@
-// Module ID: 16708
-// Function ID: 16709
+// Module ID: 16793
+// Function ID: 16794
 // Name: syncLocalState
-// Dependencies: [5, 1218, 4431, 4454, 4398, 4399, 4397, 10579, 4444, 3, 38, 9303, 10964, 5367, 4264, 10966, 1370, 4744, 1236, 16709, 10969, 2]
+// Dependencies: [5, 1218, 4495, 4518, 4462, 4463, 4461, 10647, 4508, 3, 38, 9371, 11036, 5433, 4328, 11038, 1370, 4808, 1236, 16794, 11041, 2]
 
-// Module 16708 (syncLocalState)
+// Module 16793 (syncLocalState)
 import timestampDefault from "timestamp" /* 3 */;
-import start from "start" /* 4264 */;
-import initializeDefault from "initialize" /* 5367 */;
+import start from "start" /* 4328 */;
+import initializeDefault from "initialize" /* 5433 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_6 from "createRTCConnection" /* 4454 */;
-import closure_7 from "handleUpdate" /* 4398 */;
-import closure_8 from "updateVoiceState" /* 4399 */;
-import closure_9 from "set" /* 4397 */;
-import XBOX_URL_BASE from "XBOX_URL_BASE" /* 10579 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4444 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_6 from "createRTCConnection" /* 4518 */;
+import closure_7 from "handleUpdate" /* 4462 */;
+import closure_8 from "updateVoiceState" /* 4463 */;
+import closure_9 from "set" /* 4461 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 10647 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4508 */;
 
 require = arg1;
 function syncLocalState() {
@@ -46,7 +46,7 @@ function _syncLocalState() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ function _syncLocalState() {
             obj1.toggleSelfDeaf({ syncRemote: false });
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp16) {
           c4 = tmp;
           throw tmp16;
@@ -240,14 +240,14 @@ let prototype = function GameConsoleManager() {
   applyArgumentsResult.handleWaitForRemoteSession = function handleWaitForRemoteSession() {
     const awaitRemoteTimeout = applyArgumentsResult.awaitRemoteTimeout;
     awaitRemoteTimeout.start(60000, () => {
-      let obj = callback(10966);
+      let obj = callback(11038);
       obj.disconnectRemote();
       obj = { title: null, body: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.wGMxr3);
       const intl2 = callback(1236).intl;
       obj[1] = intl2.string(callback(1236).t.i5k8b5);
-      callback2(4744).show(obj);
+      callback2(4808).show(obj);
     });
   };
   applyArgumentsResult.handleConsoleCommandUpdate = function handleConsoleCommandUpdate(arg0) {

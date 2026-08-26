@@ -1,12 +1,12 @@
-// Module ID: 14780
-// Function ID: 14781
+// Module ID: 14853
+// Function ID: 14854
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [8417, 1992, 4224, 589, 2]
+// Dependencies: [8484, 1992, 4288, 589, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 14780 (useDisplayNameStylesPendingName)
-import nameFromUserDefault from "nameFromUser" /* 4224 */;
-import closure_3 from "handleFormOpen" /* 8417 */;
+// Module 14853 (useDisplayNameStylesPendingName)
+import nameFromUserDefault from "nameFromUser" /* 4288 */;
+import closure_3 from "handleFormOpen" /* 8484 */;
 import closure_4 from "trackCommunicationDisabled" /* 1992 */;
 
 const require = arg1;

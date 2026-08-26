@@ -1,11 +1,11 @@
-// Module ID: 7130
-// Function ID: 7131
+// Module ID: 7196
+// Function ID: 7197
 // Name: items
-// Dependencies: [32, 1992, 7103, 2]
+// Dependencies: [32, 1992, 7169, 2]
 // Exports: createDefaultMemberSafetyPaginationState, getSearchChunkLimit
 
-// Module 7130 (items)
-import result2 from "result" /* 7103 */;
+// Module 7196 (items)
+import result2 from "result" /* 7169 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 

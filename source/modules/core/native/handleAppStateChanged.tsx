@@ -1,18 +1,18 @@
-// Module ID: 17242
-// Function ID: 17243
+// Module ID: 17327
+// Function ID: 17328
 // Name: handleAppStateChanged
-// Dependencies: [1218, 7019, 676, 3, 10, 709, 4454, 17241, 7081, 4227, 9, 698, 2]
+// Dependencies: [1218, 7085, 676, 3, 10, 709, 4518, 17326, 7147, 4291, 9, 698, 2]
 // Exports: default
 
-// Module 17242 (handleAppStateChanged)
+// Module 17327 (handleAppStateChanged)
 import timestampDefault from "timestamp" /* 3 */;
 import isTracingDefault from "isTracing" /* 10 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import setSystemTheme from "setSystemTheme" /* 4227 */;
-import createRTCConnection from "createRTCConnection" /* 4454 */;
-import getDeviceMetadata from "getDeviceMetadata" /* 7081 */;
+import setSystemTheme from "setSystemTheme" /* 4291 */;
+import createRTCConnection from "createRTCConnection" /* 4518 */;
+import getDeviceMetadata from "getDeviceMetadata" /* 7147 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "getState" /* 7019 */;
+import closure_4 from "getState" /* 7085 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -36,7 +36,7 @@ export default function handleAppStateChanged(state) {
     const _default = createRTCConnection.default;
   }
   if (isAuthenticatedResult) {
-    let tmp2Result = tmp2(17241);
+    let tmp2Result = tmp2(17326);
     tmp2Result.deferUpdate();
   }
   if (state === constants2.ACTIVE) {

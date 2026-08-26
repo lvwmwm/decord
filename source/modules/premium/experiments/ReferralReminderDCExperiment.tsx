@@ -1,10 +1,10 @@
-// Module ID: 8320
-// Function ID: 8321
+// Module ID: 8387
+// Function ID: 8388
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useIsReferralReminderDCExperimentEnabled
 
-// Module 8320 (apexExperiment)
+// Module 8387 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 7786
-// Function ID: 7787
+// Module ID: 7853
+// Function ID: 7854
 // Name: useBuyNitroMarketingLifecycleHooks
-// Dependencies: [19, 7028, 1388, 4380, 712, 7787, 7791, 4201, 1377, 1379, 7792, 7793, 2]
+// Dependencies: [19, 7094, 1388, 4444, 712, 7854, 7858, 4265, 1377, 1379, 7859, 7860, 2]
 // Exports: useBuyNitroMarketingLifecycleHooks
 
-// Module 7786 (useBuyNitroMarketingLifecycleHooks)
+// Module 7853 (useBuyNitroMarketingLifecycleHooks)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
-import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7028 */;
+import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7094 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ reset: c4, usePremiumPlanPurchasedStore: c5 } = usePremiumPlanPurchasedStore);
@@ -26,7 +26,7 @@ export const useBuyNitroMarketingLifecycleHooks = function useBuyNitroMarketingL
   dependencyMap = tmp;
   _require = initialLoadCompleted;
   promotionMarketingComponent = undefined;
-  promotionMarketingComponent = _require(7787).usePromotionMarketingComponent(_require(7791).MarketingComponentType.PREMIUM_TAB);
+  promotionMarketingComponent = _require(7854).usePromotionMarketingComponent(_require(7858).MarketingComponentType.PREMIUM_TAB);
   const items = [initialLoadCompleted, promotionMarketingComponent];
   const effect = React.useEffect(() => {
     let tmp = initialLoadCompleted;
@@ -52,11 +52,11 @@ export const useBuyNitroMarketingLifecycleHooks = function useBuyNitroMarketingL
     BuyNitroPurchaseLock.end();
     let result = initialLoadCompleted(_navigator[11]).resetBuyNitroTrialAndPriceOverrides();
     return () => {
-      const BuyNitroPurchaseLock = callback(7792).BuyNitroPurchaseLock;
+      const BuyNitroPurchaseLock = callback(7859).BuyNitroPurchaseLock;
       BuyNitroPurchaseLock.end();
-      const BuyNitroPurchaseLock2 = callback(7792).BuyNitroPurchaseLock;
+      const BuyNitroPurchaseLock2 = callback(7859).BuyNitroPurchaseLock;
       const result = BuyNitroPurchaseLock2.setInitialLoadComplete(false);
-      const result1 = callback(7793).resetBuyNitroTrialAndPriceOverrides();
+      const result1 = callback(7860).resetBuyNitroTrialAndPriceOverrides();
     };
   }, []);
   const items1 = [initialLoadCompleted];

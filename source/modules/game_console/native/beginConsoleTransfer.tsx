@@ -1,10 +1,10 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 11037
+// Function ID: 11038
 // Name: _beginConsoleTransfer
-// Dependencies: [5, 676, 10966, 10973, 4347, 10974, 2009, 503, 10977, 2]
+// Dependencies: [5, 676, 11038, 11045, 4411, 11046, 2009, 503, 11049, 2]
 // Exports: beginConsoleTransfer
 
-// Module 10965 (_beginConsoleTransfer)
+// Module 11037 (_beginConsoleTransfer)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import set from "set" /* 2 */;
 
@@ -28,7 +28,7 @@ function _beginConsoleTransfer() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ function _beginConsoleTransfer() {
             return obj;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp35) {
           c5 = tmp;
           throw tmp35;

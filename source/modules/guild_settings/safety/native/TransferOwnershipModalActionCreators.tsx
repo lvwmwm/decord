@@ -1,21 +1,21 @@
-// Module ID: 11405
-// Function ID: 11406
-// Dependencies: [4611, 11406, 2009, 709, 2]
+// Module ID: 11477
+// Function ID: 11478
+// Dependencies: [4675, 11478, 2009, 709, 2]
 
-// Module 11405
+// Module 11477
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4611 from "module_4611" /* 4611 */;
+import _modDef4675 from "module_4675" /* 4675 */;
 
 const TRANSFER_OWNERSHIP_MODAL_KEY = "TRANSFER_OWNERSHIP_MODAL_KEY";
 const result = set.fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModalActionCreators.tsx");
 
 export default {
   open(guild, toUser) {
-    let obj = _modDef4611;
+    let obj = _modDef4675;
     obj = { guild, toUser };
-    obj.pushLazy(asyncRequireImpl(11406, dependencyMap.paths), obj, TRANSFER_OWNERSHIP_MODAL_KEY);
+    obj.pushLazy(asyncRequireImpl(11478, dependencyMap.paths), obj, TRANSFER_OWNERSHIP_MODAL_KEY);
   },
   close() {
     dispatcherDefault.wait(() => {

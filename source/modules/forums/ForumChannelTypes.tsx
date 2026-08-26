@@ -1,9 +1,9 @@
-// Module ID: 6026
-// Function ID: 6027
+// Module ID: 6092
+// Function ID: 6093
 // Name: ReservedTagIds
 // Dependencies: [2]
 
-// Module 6026 (ReservedTagIds)
+// Module 6092 (ReservedTagIds)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/forums/ForumChannelTypes.tsx");

@@ -1,21 +1,21 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15469
+// Function ID: 15470
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4469, 4395, 4034, 1981, 4589, 1922, 676, 21, 4380, 712, 589, 1367, 15391, 8961, 500, 4393, 4391, 9816, 4949, 9180, 9537, 15392, 4075, 8448, 15393, 8456, 15394, 2]
+// Dependencies: [19, 17, 4533, 4459, 4098, 1981, 4653, 1922, 676, 21, 4444, 712, 589, 1367, 15470, 9029, 500, 4457, 4455, 9883, 5015, 9248, 9605, 15471, 4139, 8515, 15472, 8523, 15473, 2]
 
-// Module 15390 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15469 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "sortActivity" /* 4469 */;
-import closure_6 from "generateOldThreadCutoff" /* 4395 */;
-import closure_7 from "markAllUserIdListsStale" /* 4034 */;
+import closure_5 from "sortActivity" /* 4533 */;
+import closure_6 from "generateOldThreadCutoff" /* 4459 */;
+import closure_7 from "markAllUserIdListsStale" /* 4098 */;
 import closure_8 from "handleConnectionOpen" /* 1981 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4653 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 let c3 = importAllResult;

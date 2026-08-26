@@ -1,9 +1,9 @@
-// Module ID: 4482
-// Function ID: 4483
+// Module ID: 4546
+// Function ID: 4547
 // Name: on
 // Dependencies: [652, 2]
 
-// Module 4482 (on)
+// Module 4546 (on)
 import set from "set" /* 2 */;
 import EventEmitter from "EventEmitter" /* 652 */;
 

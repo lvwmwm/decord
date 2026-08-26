@@ -1,14 +1,14 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 14157
+// Function ID: 14158
 // Name: PawPrintIcon
-// Dependencies: [19, 21, 712, 4100, 14085, 2]
+// Dependencies: [19, 21, 712, 4164, 14158, 2]
 // Exports: PawPrintIcon
 
-// Module 14084 (PawPrintIcon)
+// Module 14157 (PawPrintIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 14085 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 14158 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

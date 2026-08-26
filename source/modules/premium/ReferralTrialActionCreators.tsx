@@ -1,14 +1,14 @@
-// Module ID: 7060
-// Function ID: 7061
+// Module ID: 7126
+// Function ID: 7127
 // Name: _fetchReferralEligibleUsers
-// Dependencies: [5, 7061, 1930, 1981, 676, 530, 709, 1208, 7063, 2]
+// Dependencies: [5, 7127, 1930, 1981, 676, 530, 709, 1208, 7129, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 7060 (_fetchReferralEligibleUsers)
+// Module 7126 (_fetchReferralEligibleUsers)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createFromServer" /* 7061 */;
+import closure_4 from "createFromServer" /* 7127 */;
 import closure_5 from "createdAt" /* 1930 */;
 import closure_6 from "handleConnectionOpen" /* 1981 */;
 import ME from "ME" /* 676 */;
@@ -34,7 +34,7 @@ function _fetchReferralEligibleUsers() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ function _createReferralTrials() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -317,7 +317,7 @@ function _createReferralTrial() {
       if (closure_3.body.code === constants.INVALID_MESSAGE_SEND_USER) {
         dependencyMap = currentlySelectedChannelId.getCurrentlySelectedChannelId();
         if (null != dependencyMap) {
-          const obj6 = fromServer(7063);
+          const obj6 = fromServer(7129);
           obj6.sendClydeError(dependencyMap, closure_3.body.code);
         }
       }

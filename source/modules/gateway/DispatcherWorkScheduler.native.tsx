@@ -1,15 +1,15 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13188
+// Function ID: 13189
 // Name: _queueIdleCallback
-// Dependencies: [13114, 676, 13116, 709, 2]
+// Dependencies: [13187, 676, 13189, 709, 2]
 // Exports: createDispatcherWorkScheduler
 
-// Module 13115 (_queueIdleCallback)
+// Module 13188 (_queueIdleCallback)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _trackAppBackgrounded from "_trackAppBackgrounded" /* 13116 */;
-import DISPATCHER_STANDARD_TIMEOUT_MS from "DISPATCHER_STANDARD_TIMEOUT_MS" /* 13114 */;
+import _trackAppBackgrounded from "_trackAppBackgrounded" /* 13189 */;
+import DISPATCHER_STANDARD_TIMEOUT_MS from "DISPATCHER_STANDARD_TIMEOUT_MS" /* 13187 */;
 
 ({ DISPATCHER_CALLBACK_MAX_TIME_REMAINING_MS: obj1, NATIVE_WORK_BACKOFF_MS: c3, NATIVE_WORK_DEADLINE_MS: c4, WorkIdleDeadline: c5 } = DISPATCHER_STANDARD_TIMEOUT_MS);
 const AppStates = ME.AppStates;

@@ -1,19 +1,19 @@
-// Module ID: 5874
-// Function ID: 5875
+// Module ID: 5940
+// Function ID: 5941
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 4380, 500, 4103, 5480, 4376, 5875, 2]
+// Dependencies: [32, 19, 17, 21, 4444, 500, 4167, 5546, 4440, 5941, 2]
 // Exports: TableSwitchRow
 
-// Module 5874 (TableSwitchRow)
+// Module 5940 (TableSwitchRow)
 import set from "set" /* 500 */;
-import getNodeText from "getNodeText" /* 4103 */;
-import TableRowInner from "TableRowInner" /* 5480 */;
-import FormSwitch from "FormSwitch" /* 5875 */;
+import getNodeText from "getNodeText" /* 4167 */;
+import TableRowInner from "TableRowInner" /* 5546 */;
+import FormSwitch from "FormSwitch" /* 5941 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -59,7 +59,7 @@ export const TableSwitchRow = function TableSwitchRow(value) {
       obj1 = { variant: "text-md/semibold", color: null, includeFontPadding: true, children: null };
       obj1[1] = str;
       obj1[3] = label;
-      tmp10Result = tmp10(tmp3(4376).Text, obj1);
+      tmp10Result = tmp10(tmp3(4440).Text, obj1);
     }
     const items1 = [tmp10Result, trailing];
     obj[1] = items1;

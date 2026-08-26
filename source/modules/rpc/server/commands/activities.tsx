@@ -1,13 +1,13 @@
-// Module ID: 13977
-// Function ID: 13978
-// Dependencies: [5, 676, 13944, 13932, 10829, 7733, 10824, 13936, 10699, 2]
+// Module ID: 14050
+// Function ID: 14051
+// Dependencies: [5, 676, 14017, 14005, 10901, 7799, 10896, 14009, 10771, 2]
 
-// Module 13977
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 10829 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 13932 */;
+// Module 14050
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 10901 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 14005 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 13944 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14017 */;
 
 require = arg1;
 ({ RPCCommands, RPCErrors: c4, ApplicationFlags: c5 } = ME);
@@ -37,7 +37,7 @@ obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,15 +1,15 @@
-// Module ID: 12375
-// Function ID: 12376
+// Module ID: 12447
+// Function ID: 12448
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1996, 12373, 7167, 676, 687, 709, 4643, 4279, 2]
+// Dependencies: [5, 1996, 12445, 7233, 676, 687, 709, 4707, 4343, 2]
 // Exports: maybeFetchCollectionsForApplication, maybeFetchCollectionsWithProducts
 
-// Module 12375 (_maybeFetchCollectionsWithProducts)
+// Module 12447 (_maybeFetchCollectionsWithProducts)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "getFetchState" /* 12373 */;
-import closure_6 from "fromServer" /* 7167 */;
+import closure_5 from "getFetchState" /* 12445 */;
+import closure_6 from "fromServer" /* 7233 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -32,7 +32,7 @@ function _maybeFetchCollectionsWithProducts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -197,7 +197,7 @@ function _maybeFetchCollectionsForApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -280,7 +280,7 @@ function _maybeFetchCollectionsForApplication() {
                           }
                         }
                         fromServer = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     }
                     locale = 1;

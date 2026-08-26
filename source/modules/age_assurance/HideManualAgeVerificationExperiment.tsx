@@ -1,10 +1,10 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 8170
+// Function ID: 8171
 // Name: useIsManualAgeVerificationHidden
 // Dependencies: [1472, 2]
 // Exports: isManualAgeVerificationHidden, useIsManualAgeVerificationHidden
 
-// Module 8103 (useIsManualAgeVerificationHidden)
+// Module 8170 (useIsManualAgeVerificationHidden)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

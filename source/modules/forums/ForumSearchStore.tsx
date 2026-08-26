@@ -1,9 +1,9 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7437
+// Function ID: 7438
 // Name: initialize
 // Dependencies: [1391, 589, 709, 2]
 
-// Module 7371 (initialize)
+// Module 7437 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "ensureGuildLoaded" /* 1391 */;

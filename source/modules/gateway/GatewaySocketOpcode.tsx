@@ -1,9 +1,9 @@
-// Module ID: 13110
-// Function ID: 13111
+// Module ID: 13183
+// Function ID: 13184
 // Name: Opcode
 // Dependencies: [2]
 
-// Module 13110 (Opcode)
+// Module 13183 (Opcode)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/gateway/GatewaySocketOpcode.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8689
+// Function ID: 8690
 // Name: ConfirmEmailCode
-// Dependencies: [5, 32, 19, 17, 1922, 8610, 21, 4380, 712, 589, 4279, 4376, 1236, 8622, 8627, 4098, 4815, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 8678, 21, 4444, 712, 589, 4343, 4440, 1236, 8690, 8695, 4162, 4879, 2]
 // Exports: default
 
-// Module 8621 (ConfirmEmailCode)
+// Module 8689 (ConfirmEmailCode)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import ChangeEmailFields from "ChangeEmailFields" /* 8610 */;
+import ChangeEmailFields from "ChangeEmailFields" /* 8678 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -61,7 +61,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

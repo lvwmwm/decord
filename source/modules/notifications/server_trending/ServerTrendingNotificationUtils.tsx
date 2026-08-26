@@ -1,15 +1,15 @@
-// Module ID: 14912
-// Function ID: 14913
+// Module ID: 14991
+// Function ID: 14992
 // Name: onServerTrendingNotificationSettingsChanged
-// Dependencies: [4037, 676, 4070, 698, 2]
+// Dependencies: [4101, 676, 4134, 698, 2]
 // Exports: onServerTrendingNotificationSettingsChanged
 
-// Module 14912 (onServerTrendingNotificationSettingsChanged)
+// Module 14991 (onServerTrendingNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4037 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4101 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
 
 let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
 const AnalyticEvents = ME.AnalyticEvents;

@@ -1,20 +1,20 @@
-// Module ID: 16659
-// Function ID: 16660
+// Module ID: 16744
+// Function ID: 16745
 // Name: handleConnectionOpen
-// Dependencies: [32, 4397, 4851, 1218, 4431, 4444, 9306, 11, 1306, 595, 1374, 9305, 12, 13373, 10966, 5367, 2]
+// Dependencies: [32, 4461, 4916, 1218, 4495, 4508, 9374, 11, 1306, 595, 1374, 9373, 12, 13446, 11038, 5433, 2]
 
-// Module 16659 (handleConnectionOpen)
+// Module 16744 (handleConnectionOpen)
 import Storage2 from "Storage" /* 595 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
-import initializeDefault from "initialize" /* 5367 */;
-import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 9306 */;
-import getPendingAudioSettings from "getPendingAudioSettings" /* 13373 */;
+import initializeDefault from "initialize" /* 5433 */;
+import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 9374 */;
+import getPendingAudioSettings from "getPendingAudioSettings" /* 13446 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "set" /* 4397 */;
-import closure_5 from "handleSoundCreateOrUpdate" /* 4851 */;
+import closure_4 from "set" /* 4461 */;
+import closure_5 from "handleSoundCreateOrUpdate" /* 4916 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4431 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4444 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4495 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4508 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;
@@ -37,7 +37,7 @@ function handleConnectionOpen() {
         let tmp8 = tmp5[1];
         let tmp9 = callback;
         let tmp10 = dependencyMap;
-        let obj = callback(9305);
+        let obj = callback(9373);
         let result = obj.coerceAudioContextForProto(first);
         if (null != result) {
           let tmp52 = result;
@@ -82,7 +82,7 @@ function handleConnectionOpen() {
             let merged = Object.assign(obj[first1]);
             let tmp31 = callback;
             let tmp32 = dependencyMap;
-            let obj4 = callback(9305);
+            let obj4 = callback(9373);
             let tmp33 = first;
             obj1.volume = obj4.snapVolumeToDefault(tmp25[1], tmp7);
             obj[first1] = obj1;

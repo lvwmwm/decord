@@ -1,24 +1,24 @@
-// Module ID: 16138
-// Function ID: 16139
+// Module ID: 16220
+// Function ID: 16221
 // Name: useHasSettingsBadge
-// Dependencies: [19, 17, 1922, 1388, 1924, 21, 4380, 501, 712, 1367, 12942, 7056, 4201, 1377, 589, 8462, 8970, 8979, 1363, 689, 4043, 16139, 10532, 16140, 16141, 11326, 5271, 16142, 14449, 1236, 16143, 16145, 7849, 6120, 4826, 2]
+// Dependencies: [19, 17, 1922, 1388, 1924, 21, 4444, 501, 712, 1367, 13016, 7122, 4265, 1377, 589, 8529, 9038, 9047, 1363, 689, 4107, 16221, 10600, 16222, 16223, 11398, 5337, 16224, 14522, 1236, 16225, 16227, 7916, 6186, 4891, 2]
 // Exports: useHasSettingsBadge
 
-// Module 16138 (useHasSettingsBadge)
+// Module 16220 (useHasSettingsBadge)
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4201 */;
-import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7056 */;
-import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 12942 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4265 */;
+import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7122 */;
+import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13016 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_9 } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 let c3 = importAllResult;

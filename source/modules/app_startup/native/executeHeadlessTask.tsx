@@ -1,14 +1,14 @@
-// Module ID: 17270
-// Function ID: 17271
+// Module ID: 17355
+// Function ID: 17356
 // Name: _executeHeadlessTask
-// Dependencies: [5, 17, 1218, 16568, 676, 3, 1208, 675, 15, 9, 13140, 698, 503, 16688, 4264, 2]
+// Dependencies: [5, 17, 1218, 16653, 676, 3, 1208, 675, 15, 9, 13213, 698, 503, 16773, 4328, 2]
 // Exports: default
 
-// Module 17270 (_executeHeadlessTask)
+// Module 17355 (_executeHeadlessTask)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { AppState } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import linkFromAppsFlyer from "linkFromAppsFlyer" /* 16568 */;
+import linkFromAppsFlyer from "linkFromAppsFlyer" /* 16653 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
@@ -33,7 +33,7 @@ function _executeHeadlessTask() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

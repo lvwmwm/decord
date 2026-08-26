@@ -1,9 +1,9 @@
-// Module ID: 7455
-// Function ID: 7456
+// Module ID: 7521
+// Function ID: 7522
 // Name: fromPath
 // Dependencies: [1931, 676, 2]
 
-// Module 7455 (fromPath)
+// Module 7521 (fromPath)
 import toJSDefault from "toJS" /* 1931 */;
 import { Routes } from "ME" /* 676 */;
 

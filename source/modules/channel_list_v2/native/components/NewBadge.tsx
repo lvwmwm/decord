@@ -1,20 +1,20 @@
-// Module ID: 11863
-// Function ID: 11864
+// Module ID: 11936
+// Function ID: 11937
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4380, 500, 712, 1363, 8549, 4315, 4376, 1236, 2]
+// Dependencies: [19, 17, 21, 4444, 500, 712, 1363, 8617, 4379, 4440, 1236, 2]
 // Exports: default
 
-// Module 11863 (NewBadge)
+// Module 11936 (NewBadge)
 import noopAll from "noop" /* 19 */;
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useThemeDefault from "useTheme" /* 4315 */;
-import Text from "Text" /* 4376 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8549 */;
+import useThemeDefault from "useTheme" /* 4379 */;
+import Text from "Text" /* 4440 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8617 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

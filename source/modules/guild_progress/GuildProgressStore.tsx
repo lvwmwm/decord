@@ -1,16 +1,16 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12108
+// Function ID: 12109
 // Name: completeStep
-// Dependencies: [1218, 1391, 1910, 12029, 11, 589, 709, 2]
+// Dependencies: [1218, 1391, 1910, 12102, 11, 589, 709, 2]
 
-// Module 12035 (completeStep)
+// Module 12108 (completeStep)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import { Steps } from "Steps" /* 12029 */;
+import { Steps } from "Steps" /* 12102 */;
 
 function completeStep(guild_id, CHANNEL) {
   let tmp = null != obj;

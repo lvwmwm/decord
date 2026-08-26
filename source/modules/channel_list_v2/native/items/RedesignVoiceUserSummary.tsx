@@ -1,13 +1,13 @@
-// Module ID: 15488
-// Function ID: 15489
+// Module ID: 15567
+// Function ID: 15568
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 1981, 4455, 21, 589, 4566, 15487, 2]
+// Dependencies: [19, 1981, 4519, 21, 589, 4630, 15566, 2]
 // Exports: default
 
-// Module 15488 (RedesignVoiceUserSummary)
+// Module 15567 (RedesignVoiceUserSummary)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
-import closure_5 from "getVoiceStatesForGuild" /* 4455 */;
+import closure_5 from "getVoiceStatesForGuild" /* 4519 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

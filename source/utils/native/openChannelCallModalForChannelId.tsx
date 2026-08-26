@@ -1,12 +1,12 @@
-// Module ID: 11059
-// Function ID: 11060
+// Module ID: 11131
+// Function ID: 11132
 // Name: openChannelCallModalForChannelId
-// Dependencies: [1391, 7918, 4615, 2]
+// Dependencies: [1391, 7985, 4679, 2]
 // Exports: default
 
-// Module 11059 (openChannelCallModalForChannelId)
-import openChannelCallModal from "openChannelCallModal" /* 4615 */;
-import connectToStage from "connectToStage" /* 7918 */;
+// Module 11131 (openChannelCallModalForChannelId)
+import openChannelCallModal from "openChannelCallModal" /* 4679 */;
+import connectToStage from "connectToStage" /* 7985 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 
 require = arg1;

@@ -1,42 +1,42 @@
-// Module ID: 7903
-// Function ID: 7904
+// Module ID: 7970
+// Function ID: 7971
 // Name: generateAcceptInviteOptions
-// Dependencies: [5, 5450, 7132, 1395, 1218, 1391, 1982, 1992, 1910, 7904, 4364, 4025, 4034, 4202, 1922, 676, 1221, 1398, 4447, 7340, 5239, 1403, 7917, 5950, 1234, 1222, 5236, 2009, 7918, 9303, 4479, 4563, 12870, 7129, 4892, 8569, 8492, 5343, 9096, 709, 9479, 4619, 12871, 5338, 698, 530, 4279, 687, 4601, 503, 1404, 4365, 5340, 5932, 4066, 12873, 12874, 10483, 4724, 4642, 12875, 12876, 513, 12878, 2]
+// Dependencies: [5, 5516, 7198, 1395, 1218, 1391, 1982, 1992, 1910, 7971, 4428, 4089, 4098, 4266, 1922, 676, 1221, 1398, 4511, 7406, 5305, 1403, 7984, 6016, 1234, 1222, 5302, 2009, 7985, 9371, 4543, 4627, 12944, 7195, 4958, 8637, 8559, 5409, 9164, 709, 9547, 4683, 12945, 5404, 698, 530, 4343, 687, 4665, 503, 1404, 4429, 5406, 5998, 4130, 12947, 12948, 10551, 4788, 4706, 12949, 12950, 513, 12952, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
-// Module 7903 (generateAcceptInviteOptions)
+// Module 7970 (generateAcceptInviteOptions)
 import sendRequest from "sendRequest" /* 530 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import transitionTo2 from "transitionTo" /* 1222 */;
 import hasFlag from "hasFlag" /* 1403 */;
-import readSnowflake from "readSnowflake" /* 4365 */;
-import formatDefault from "format" /* 4724 */;
-import set from "set" /* 7917 */;
-import _modDef10483 from "module_10483" /* 10483 */;
-import _modDef12873 from "module_12873" /* 12873 */;
-import generateDynamicLinkDefault from "generateDynamicLink" /* 12876 */;
+import readSnowflake from "readSnowflake" /* 4429 */;
+import formatDefault from "format" /* 4788 */;
+import set from "set" /* 7984 */;
+import _modDef10551 from "module_10551" /* 10551 */;
+import _modDef12947 from "module_12947" /* 12947 */;
+import generateDynamicLinkDefault from "generateDynamicLink" /* 12950 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "scheduledEventSort" /* 7132 */;
-import { isGuildScheduledEventActive as closure_7 } from "scheduledEventSort" /* 7132 */;
+import closure_6 from "scheduledEventSort" /* 7198 */;
+import { isGuildScheduledEventActive as closure_7 } from "scheduledEventSort" /* 7198 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_13 from "fetchFingerprint" /* 1218 */;
 import closure_14 from "ensureGuildLoaded" /* 1391 */;
 import closure_15 from "comparator" /* 1982 */;
 import closure_16 from "trackCommunicationDisabled" /* 1992 */;
 import closure_17 from "createGuildRecordFromRust" /* 1910 */;
-import closure_18 from "map" /* 7904 */;
-import closure_19 from "updateInvite" /* 4364 */;
-import closure_20 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_21 from "markAllUserIdListsStale" /* 4034 */;
-import closure_22 from "handleConnectionOpen" /* 4202 */;
+import closure_18 from "map" /* 7971 */;
+import closure_19 from "updateInvite" /* 4428 */;
+import closure_20 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_21 from "markAllUserIdListsStale" /* 4098 */;
+import closure_22 from "handleConnectionOpen" /* 4266 */;
 import closure_23 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { AgeGateSource } from "result" /* 1221 */;
 import { StaticChannelRoute } from "set" /* 1398 */;
-import { StreamTypes } from "StreamIssueReportReasons" /* 4447 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 7340 */;
-import { STAGE_INVITE_STATE_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 5239 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4511 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7406 */;
+import { STAGE_INVITE_STATE_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 5305 */;
 
 require = arg1;
 function generateAcceptInviteOptions(target_type) {
@@ -459,7 +459,7 @@ function _transitionToGuildFromEventInvite() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -497,7 +497,7 @@ function _transitionToGuildFromEventInvite() {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp12) {
           v0 = tmp;
           throw tmp12;
@@ -649,7 +649,7 @@ export default {
       obj[1] = arg0;
       tmp(709).dispatch(obj);
       const tmpResult = tmp(709);
-      nextPromise = tmp(9479)(arg0, arg1, arg2).then((arg0) => {
+      nextPromise = tmp(9547)(arg0, arg1, arg2).then((arg0) => {
         ({ invite, code } = arg0);
         if (null != invite) {
           let obj = { type: "INVITE_RESOLVE_SUCCESS", invite: null, code: null };
@@ -666,7 +666,7 @@ export default {
         }
         return { invite, code };
       });
-      const promise = tmp(9479)(arg0, arg1, arg2);
+      const promise = tmp(9547)(arg0, arg1, arg2);
     }
     return nextPromise;
   },
@@ -720,7 +720,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -769,7 +769,7 @@ export default {
             const obj5 = { type: "INSTANT_INVITE_CREATE_FAILURE", channelId: null };
             obj5[1] = body;
             obj4.dispatch(obj5);
-            const tmp30 = new closure_1_1(4279)(closure_1);
+            const tmp30 = new closure_1_1(4343)(closure_1);
             throw tmp30;
           } else if (arg0 === 1) {
             c5 = 3;
@@ -844,7 +844,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1012,7 +1012,7 @@ export default {
         return obj.exact(obj);
       };
       obj1[1] = obj2;
-      yield closure_1_1(4601).get(obj1);
+      yield closure_1_1(4665).get(obj1);
       if (1 === tmp7) {
         dependencyMap = 0;
         const obj3 = closure_1_1(709);
@@ -1044,7 +1044,7 @@ export default {
   revokeInvite(closure_1_0) {
     const code = closure_1_0.code;
     const channel = closure_1_0.channel;
-    let obj = channel(4601);
+    let obj = channel(4665);
     obj = { url: closure_24.INVITE(code), oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: code(503).NetworkActionNames.INVITE_REVOKE, properties: obj1 };
     obj[2] = obj;
@@ -1137,7 +1137,7 @@ export default {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -1954,26 +1954,26 @@ export default {
         hasItem = features.includes(constants2.HUB);
       }
       if (hasItem) {
-        _modDef12873.onOpenHubInvite(closure_0);
-        const obj6 = _modDef12873;
+        _modDef12947.onOpenHubInvite(closure_0);
+        const obj6 = _modDef12947;
       }
     }
     let num = closure_0.flags;
     if (num == null) {
       num = 0;
     }
-    let hasFlagResult = id(1403).hasFlag(num, id(7917).GuildInviteFlags.IS_GUEST_INVITE);
+    let hasFlagResult = id(1403).hasFlag(num, id(7984).GuildInviteFlags.IS_GUEST_INVITE);
     if (!hasFlagResult) {
       let tmp6Result = tmp6(1403);
-      hasFlagResult = tmp6Result.hasFlag(num, tmp6(7917).GuildInviteFlags.IS_APPLICATION_BYPASS);
+      hasFlagResult = tmp6Result.hasFlag(num, tmp6(7984).GuildInviteFlags.IS_APPLICATION_BYPASS);
     }
     if (null != guild) {
       if (!hasFlagResult) {
         if (closure_0.new_member) {
-          tmp6Result = tmp6(12874);
+          tmp6Result = tmp6(12948);
           if (tmp6Result.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const result1 = tmp6(12874).openVerificationModalOrTransitionToApplication(guild.id);
-            const tmp6Result1 = tmp6(12874);
+            const result1 = tmp6(12948).openVerificationModalOrTransitionToApplication(guild.id);
+            const tmp6Result1 = tmp6(12948);
           }
         }
       }
@@ -2331,7 +2331,7 @@ export default {
     let obj = readSnowflake;
     const result = obj.parseExtraDataFromInviteKey(inviteKey);
     obj = { installationId: store.getInstallationForTracking(), targetChannelId: result.targetChannelId, targetMessageId: result.targetMessageId, guildScheduledEventId: result.guildScheduledEventId };
-    _modDef10483.openNativeAppModal(result.baseCode, constants.INVITE_BROWSER, obj);
+    _modDef10551.openNativeAppModal(result.baseCode, constants.INVITE_BROWSER, obj);
   },
   transitionToInviteOnboarding(baseCode, closure_1) {
     let obj = closure_1;
@@ -2363,7 +2363,7 @@ export default {
     const _require = code;
     let result = null;
     if (null != code) {
-      let obj = _require(4365);
+      let obj = _require(4429);
       result = obj.parseExtraDataFromInviteKey(code);
     }
     let baseCode;
@@ -2382,7 +2382,7 @@ export default {
     obj = { type: "INVITE_APP_OPENING", code };
     obj1.dispatch(obj);
     if (null != formatDefault.ua) {
-      const formatted = tmp7(4724).ua.toLowerCase();
+      const formatted = tmp7(4788).ua.toLowerCase();
       if (formatted.indexOf("googlebot") > -1) {
         let tmp7Result = tmp7(709);
         obj = { type: "INVITE_APP_NOT_OPENED", code: null };
@@ -2390,19 +2390,19 @@ export default {
         tmp7Result.dispatch(obj);
       }
     }
-    const os = tmp7(4724).os;
+    const os = tmp7(4788).os;
     let family;
     if (os != null) {
       family = os.family;
     }
     if ("Android" !== family) {
-      const os2 = tmp7(4724).os;
+      const os2 = tmp7(4788).os;
       let family1;
       if (os2 != null) {
         family1 = os2.family;
       }
       if ("iOS" !== family1) {
-        if (!_require(4642).isTablet) {
+        if (!_require(4706).isTablet) {
           let tmp13 = arg1;
           if (arg1 == null) {
             tmp13 = targetChannelId;
@@ -2418,7 +2418,7 @@ export default {
           const _HermesInternal = HermesInternal;
           let combined = "discord://" + substr;
         }
-        tmp7Result = tmp7(12878);
+        tmp7Result = tmp7(12952);
         tmp7Result.launch(combined, (arg0) => {
           let obj = closure_1_1(closure_1_3[39]);
           if (arg0) {
@@ -2433,15 +2433,15 @@ export default {
       }
     }
     if (null != baseCode) {
-      let inviteDynamicLinkTemplate = _require(12875).getInviteDynamicLinkTemplate(baseCode);
+      let inviteDynamicLinkTemplate = _require(12949).getInviteDynamicLinkTemplate(baseCode);
       let tmp20 = _require;
-      const obj5 = _require(12875);
+      const obj5 = _require(12949);
     } else {
-      inviteDynamicLinkTemplate = _require(12875).getDefaultDynamicLinkTemplate();
+      inviteDynamicLinkTemplate = _require(12949).getDefaultDynamicLinkTemplate();
       tmp20 = _require;
-      const obj4 = _require(12875);
+      const obj4 = _require(12949);
     }
-    let tmp20Result = tmp20(12876);
+    let tmp20Result = tmp20(12950);
     const attemptId = tmp20Result.generateAttemptId();
     let str7 = "friend_invite";
     if (2 !== arg4) {

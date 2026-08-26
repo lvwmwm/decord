@@ -1,15 +1,15 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15209
+// Function ID: 15210
 // Name: toggle
-// Dependencies: [19, 7143, 8235, 676, 7482, 14280, 6122, 10516, 1236, 2]
+// Dependencies: [19, 7209, 8302, 676, 7548, 14353, 6188, 10584, 1236, 2]
 
-// Module 15130 (toggle)
+// Module 15209 (toggle)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import result2 from "result" /* 14280 */;
+import result2 from "result" /* 14353 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7143 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7209 */;
 import ME from "ME" /* 676 */;
-import createToggle from "createToggle" /* 10516 */;
+import createToggle from "createToggle" /* 10584 */;
 
 require = arg1;
 ({ AllFriendSourceFlags: c4, FriendSourceFlags: c5 } = ME);
@@ -20,8 +20,8 @@ createToggle = {
   },
   parent: require("MobileUserSettings").MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsEveryoneSettingValue() {
-    const selectedTeenId = controlledSetting(7482).useSelectedTeenId();
-    const ParentalControlledFriendSourceFlags = controlledSetting(14280).ParentalControlledFriendSourceFlags;
+    const selectedTeenId = controlledSetting(7548).useSelectedTeenId();
+    const ParentalControlledFriendSourceFlags = controlledSetting(14353).ParentalControlledFriendSourceFlags;
     controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return React.useMemo(() => controlledSetting(closure_1_1[6]).computeFlags(controlledSetting), items).all;

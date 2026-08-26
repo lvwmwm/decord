@@ -1,10 +1,10 @@
-// Module ID: 6130
-// Function ID: 6131
+// Module ID: 6196
+// Function ID: 6197
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useGiftCardsExperimentConfig
 
-// Module 6130 (apexExperiment)
+// Module 6196 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

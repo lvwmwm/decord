@@ -1,15 +1,15 @@
-// Module ID: 6105
-// Function ID: 6106
+// Module ID: 6171
+// Function ID: 6172
 // Name: CircleXIcon
-// Dependencies: [19, 17, 21, 712, 4100, 6106, 6107, 2]
+// Dependencies: [19, 17, 21, 712, 4164, 6172, 6173, 2]
 // Exports: CircleXIcon
 
-// Module 6105 (CircleXIcon)
+// Module 6171 (CircleXIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 6106 */;
-import registerAsset2 from "registerAsset" /* 6107 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 6172 */;
+import registerAsset2 from "registerAsset" /* 6173 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

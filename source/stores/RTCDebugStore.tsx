@@ -1,17 +1,17 @@
-// Module ID: 11006
-// Function ID: 11007
+// Module ID: 11078
+// Function ID: 11079
 // Name: updateStats
-// Dependencies: [32, 4431, 1922, 676, 4444, 11007, 4479, 709, 589, 2]
+// Dependencies: [32, 4495, 1922, 676, 4508, 11079, 4543, 709, 589, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 11006 (updateStats)
+// Module 11078 (updateStats)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import openAll from "open" /* 11007 */;
+import openAll from "open" /* 11079 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4495 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import DesktopSources from "DesktopSources" /* 4444 */;
+import DesktopSources from "DesktopSources" /* 4508 */;
 
 const require = arg1;
 function updateStats(arr, arg1, timestamp) {
@@ -207,7 +207,7 @@ prototype2["getInboundStats"] = function getInboundStats(arg0, context) {
   if (found != null) {
     name = found.codec.name;
   }
-  obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: null };
+  obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: true };
   let resolution;
   if (found != null) {
     resolution = found.resolution;
@@ -342,7 +342,7 @@ obj = {
       if (0 !== path.length) {
         replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
         if (null != replayConnection) {
-          replayConnection.on(replayConnection(4479).BaseConnectionEvent.Video, (userId) => {
+          replayConnection.on(replayConnection(4543).BaseConnectionEvent.Video, (userId) => {
             let num = arg3;
             obj = closure_1_1(closure_1_3[7]);
             obj = { type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT", mediaEngineConnectionId: replayConnection.mediaEngineConnectionId, userId, videoSsrc: null, streamId: null };

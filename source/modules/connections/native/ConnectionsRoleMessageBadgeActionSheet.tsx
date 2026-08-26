@@ -1,17 +1,17 @@
-// Module ID: 11379
-// Function ID: 11380
+// Module ID: 11451
+// Function ID: 11452
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1930, 1218, 1992, 1985, 1910, 11380, 5233, 676, 21, 4380, 712, 1236, 5232, 4331, 4376, 4315, 12, 4101, 5108, 11126, 9279, 1297, 1435, 1363, 38, 5834, 5854, 589, 698, 4588, 5338, 5503, 5878, 4815, 4347, 11129, 8930, 2]
+// Dependencies: [32, 19, 17, 1930, 1218, 1992, 1985, 1910, 11452, 5299, 676, 21, 4444, 712, 1236, 5298, 4395, 4440, 4379, 12, 4165, 5174, 11198, 9347, 1297, 1435, 1363, 38, 5900, 5920, 589, 698, 4652, 5404, 5569, 5944, 4879, 4411, 11201, 8998, 2]
 // Exports: default
 
-// Module 11379 (PopoutCheck)
+// Module 11451 (PopoutCheck)
 import applyDefault from "apply" /* 12 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useThemeDefault from "useTheme" /* 4315 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4331 */;
-import Text from "Text" /* 4376 */;
-import officialApplicationIds2 from "officialApplicationIds" /* 5232 */;
+import useThemeDefault from "useTheme" /* 4379 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4395 */;
+import Text from "Text" /* 4440 */;
+import officialApplicationIds2 from "officialApplicationIds" /* 5298 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -20,11 +20,11 @@ import closure_8 from "fetchFingerprint" /* 1218 */;
 import closure_9 from "trackCommunicationDisabled" /* 1992 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import closure_12 from "map" /* 11380 */;
-import { OperatorTypes } from "OperatorTypes" /* 5233 */;
+import closure_12 from "map" /* 11452 */;
+import { OperatorTypes } from "OperatorTypes" /* 5299 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function PopoutCheck(arg0) {

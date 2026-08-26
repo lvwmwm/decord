@@ -1,14 +1,14 @@
-// Module ID: 5980
-// Function ID: 5981
+// Module ID: 6046
+// Function ID: 6047
 // Name: useShouldHideGuildPurchaseEntryPoints
-// Dependencies: [19, 4019, 1910, 676, 5981, 5982, 589, 4018, 2]
+// Dependencies: [19, 4083, 1910, 676, 6047, 6048, 589, 4082, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 5980 (useShouldHideGuildPurchaseEntryPoints)
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 5981 */;
+// Module 6046 (useShouldHideGuildPurchaseEntryPoints)
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6047 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "makeGroupListingIndexSubscriptionListingTag" /* 4019 */;
-import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4019 */;
+import closure_5 from "makeGroupListingIndexSubscriptionListingTag" /* 4083 */;
+import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4083 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
 
@@ -107,8 +107,8 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
     }
     let result = flag;
   } else {
-    result = tmp(4018).isRestrictedFromShowingGuildPurchaseEntryPoints(stateFromStoresArray);
-    const tmpResult1 = tmp(4018);
+    result = tmp(4082).isRestrictedFromShowingGuildPurchaseEntryPoints(stateFromStoresArray);
+    const tmpResult1 = tmp(4082);
   }
 };
 export const useShouldRestrictUpdatingCreatorMonetizationSettings = function useShouldRestrictUpdatingCreatorMonetizationSettings(guildId) {
@@ -175,8 +175,8 @@ export const useShouldRestrictUpdatingCreatorMonetizationSettings = function use
     }
     let result = flag;
   } else {
-    result = tmp(4018).isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray);
-    const tmpResult1 = tmp(4018);
+    result = tmp(4082).isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray);
+    const tmpResult1 = tmp(4082);
   }
   if (stateFromStores != null) {
     const features2 = stateFromStores.features;
@@ -243,7 +243,7 @@ export const useIsMonetizationReapplicationDisabled = function useIsMonetization
     }
     return closure_1_5.getMonetizationRestrictionsFetchState(tmp2) === closure_1_6.FETCHING;
   });
-  obj[0] = stateFromStores(4018).isRestrictedFromMonetizationReapplication(stateFromStoresArray);
+  obj[0] = stateFromStores(4082).isRestrictedFromMonetizationReapplication(stateFromStoresArray);
   obj[1] = stateFromStores1;
   return obj;
 };

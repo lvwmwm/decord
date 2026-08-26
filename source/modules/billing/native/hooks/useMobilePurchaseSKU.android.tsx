@@ -1,14 +1,14 @@
-// Module ID: 10247
-// Function ID: 10248
+// Module ID: 10314
+// Function ID: 10315
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 7031, 1922, 676, 5966, 3, 7476, 9582, 5822, 698, 709, 7036, 4058, 1903, 7729, 514, 2]
+// Dependencies: [5, 19, 7097, 1922, 676, 6032, 3, 7542, 9650, 5888, 698, 709, 7102, 4122, 1903, 7795, 514, 2]
 // Exports: default
 
-// Module 10247 (useMobilePurchaseSKU)
+// Module 10314 (useMobilePurchaseSKU)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { useNativeCheckoutStoreOrNull as closure_5 } from "context" /* 7031 */;
+import { useNativeCheckoutStoreOrNull as closure_5 } from "context" /* 7097 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { CurrencyCodes } from "ME" /* 676 */;
 
@@ -107,7 +107,7 @@ export default function useMobilePurchaseSKU(skuId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -128,7 +128,7 @@ export default function useMobilePurchaseSKU(skuId) {
               if (lib.billingResult === onPurchasePending.OK) {
                 closure_1_8();
                 v0 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 let obj5 = platformSkuId(analyticsLocations[11]);
                 obj5.unsubscribe("GPLAY_PURCHASE_VERIFIED", closure_1_19);
@@ -244,7 +244,7 @@ export default function useMobilePurchaseSKU(skuId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -389,7 +389,7 @@ export default function useMobilePurchaseSKU(skuId) {
             c4 = 0;
             closure_16.current = false;
             v02 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           obj9 = { productId: null, skuId: null, isOneTimePurchase: true, analyticsLoadId: null, analyticsLocations: null, analyticsData: null, isGift: null, giftInfoOptions: null, onPurchaseError: null };
           obj9[0] = closure_1;

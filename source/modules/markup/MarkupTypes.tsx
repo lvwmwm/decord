@@ -1,9 +1,9 @@
-// Module ID: 4835
-// Function ID: 4836
+// Module ID: 4900
+// Function ID: 4901
 // Name: AST_KEY
 // Dependencies: [2]
 
-// Module 4835 (AST_KEY)
+// Module 4900 (AST_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/markup/MarkupTypes.tsx");

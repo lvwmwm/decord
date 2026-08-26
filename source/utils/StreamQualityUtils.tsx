@@ -1,22 +1,22 @@
-// Module ID: 9316
-// Function ID: 9317
+// Module ID: 9384
+// Function ID: 9385
 // Name: isPremiumResolution
-// Dependencies: [19, 4472, 1218, 1910, 4454, 1922, 676, 4439, 1924, 4444, 1236, 589, 698, 2]
+// Dependencies: [19, 4536, 1218, 1910, 4518, 1922, 676, 4503, 1924, 4508, 1236, 589, 698, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 9316 (isPremiumResolution)
+// Module 9384 (isPremiumResolution)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ApplicationStreamPresets" /* 4472 */;
+import closure_4 from "ApplicationStreamPresets" /* 4536 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "createRTCConnection" /* 4454 */;
+import closure_7 from "createRTCConnection" /* 4518 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4439 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4503 */;
 import { StreamQualitiesToPremiumType as closure_15 } from "GuildFeatures" /* 1924 */;
-import { ResolutionTypes } from "DesktopSources" /* 4444 */;
+import { ResolutionTypes } from "DesktopSources" /* 4508 */;
 
 require = arg1;
 ({ ApplicationStreamFPS: c10, ApplicationStreamResolutions: unpackModuleId, ApplicationStreamSettingRequirements: closure_12, getApplicationFramerate: map1, getApplicationResolution: closure_14 } = RESOLUTION_720);

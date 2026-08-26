@@ -1,14 +1,14 @@
-// Module ID: 10877
-// Function ID: 10878
+// Module ID: 10949
+// Function ID: 10950
 // Name: DoorExitIcon
-// Dependencies: [19, 21, 712, 4100, 10878, 2]
+// Dependencies: [19, 21, 712, 4164, 10950, 2]
 // Exports: DoorExitIcon
 
-// Module 10877 (DoorExitIcon)
+// Module 10949 (DoorExitIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 10878 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 10950 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

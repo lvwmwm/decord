@@ -1,10 +1,10 @@
-// Module ID: 5972
-// Function ID: 5973
+// Module ID: 6038
+// Function ID: 6039
 // Name: _safeTransitionTo
-// Dependencies: [5, 1910, 676, 4575, 5973, 1222, 5974, 4745, 1236, 6001, 2437, 6039, 2]
+// Dependencies: [5, 1910, 676, 4639, 6039, 1222, 6040, 4809, 1236, 6067, 2469, 6105, 2]
 // Exports: default
 
-// Module 5972 (_safeTransitionTo)
+// Module 6038 (_safeTransitionTo)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 import { Routes } from "ME" /* 676 */;
@@ -29,7 +29,7 @@ function _safeTransitionTo() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

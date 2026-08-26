@@ -1,20 +1,20 @@
-// Module ID: 13530
-// Function ID: 13531
+// Module ID: 13603
+// Function ID: 13604
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 5282, 1302, 1922, 676, 21, 4380, 712, 589, 1494, 4101, 4043, 5834, 5854, 4347, 8518, 1363, 13531, 1236, 4949, 1297, 8860, 4348, 4349, 4097, 5374, 5467, 5468, 1435, 2]
+// Dependencies: [32, 19, 17, 5348, 1302, 1922, 676, 21, 4444, 712, 589, 1494, 4165, 4107, 5900, 5920, 4411, 8585, 1363, 13604, 1236, 5015, 1297, 8928, 4412, 4413, 4161, 5440, 5533, 5534, 1435, 2]
 // Exports: default
 
-// Module 13530 (GuildActionSheetEmojiSection)
+// Module 13603 (GuildActionSheetEmojiSection)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getEmojiToGroupId" /* 5282 */;
+import closure_6 from "getEmojiToGroupId" /* 5348 */;
 import closure_7 from "handleThemeChange" /* 1302 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ UpsellTypes: c9, AnalyticsSections: c10, Fonts } = ME);

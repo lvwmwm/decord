@@ -1,14 +1,14 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15573
+// Function ID: 15574
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 1394, 21, 15495, 15496, 15497, 9860, 589, 5870, 5502, 1236, 5872, 4904, 11736, 15498, 5432, 8650, 4338, 2]
+// Dependencies: [19, 1394, 21, 15574, 15575, 15576, 9927, 589, 5936, 5568, 1236, 5938, 4970, 11809, 15577, 5498, 8718, 4402, 2]
 // Exports: default
 
-// Module 15494 (FavoritesGuildActionSheet)
+// Module 15573 (FavoritesGuildActionSheet)
 import noopAll from "noop" /* 19 */;
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 15495 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 15496 */;
-import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 15497 */;
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 15574 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 15575 */;
+import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 15576 */;
 import closure_3 from "initializeFromUserSettings" /* 1394 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -26,7 +26,7 @@ export default function FavoritesGuildActionSheet(onClose) {
   const tmp3 = useFavoritesGuildResetActionDefault();
   dependencyMap = tmp3;
   const tmp4 = useFavoritesGuildAutoAddedThreadsActionDefault();
-  let obj = onClose(9860);
+  let obj = onClose(9927);
   obj1 = onClose(589);
   const items = [closure_3];
   const stateFromStores = obj1.useStateFromStores(items, () => closure_3.hasStoredFavorites());
@@ -34,18 +34,18 @@ export default function FavoritesGuildActionSheet(onClose) {
   obj = { title: null };
   const intl = onClose(1236).intl;
   obj[0] = intl.string(onClose(1236).t.wMWyci);
-  obj[0] = callback(onClose(5502).BottomSheetTitleHeader, obj);
+  obj[0] = callback(onClose(5568).BottomSheetTitleHeader, obj);
   let tmp8Result = null;
   if (tmp4.isAvailable) {
     obj1 = { hasIcons: true, children: null };
     const obj2 = { label: null, subLabel: null, icon: null, value: null, onValueChange: null };
     ({ label: obj6[0], subLabel: obj6[1] } = tmp4);
     const obj3 = { IconComponent: null };
-    obj3[0] = tmp5(4904).ThreadIcon;
-    obj2[2] = tmp8(tmp5(5872).ActionSheetRow.Icon, obj3);
+    obj3[0] = tmp5(4970).ThreadIcon;
+    obj2[2] = tmp8(tmp5(5938).ActionSheetRow.Icon, obj3);
     ({ isEnabled: obj6[3], toggle: obj6[4] } = tmp4);
-    obj1[1] = tmp8(tmp5(5872).ActionSheetSwitchRow, obj2);
-    tmp8Result = tmp8(tmp5(5872).ActionSheetRow.Group, obj1);
+    obj1[1] = tmp8(tmp5(5938).ActionSheetSwitchRow, obj2);
+    tmp8Result = tmp8(tmp5(5938).ActionSheetRow.Group, obj1);
   }
   const items1 = [tmp8Result, , ];
   tmp8Result = null;
@@ -57,24 +57,24 @@ export default function FavoritesGuildActionSheet(onClose) {
       const intl2 = tmp5(1236).intl;
       obj5[0] = intl2.string(tmp5(1236).t["0dOFq+"]);
       const obj6 = { IconComponent: null };
-      obj6[0] = tmp5(11736).ArrowsUpDownIcon;
-      obj5[1] = tmp8(tmp5(5872).ActionSheetRow.Icon, obj6);
+      obj6[0] = tmp5(11809).ArrowsUpDownIcon;
+      obj5[1] = tmp8(tmp5(5938).ActionSheetRow.Icon, obj6);
       obj5[2] = function onPress() {
         onClose();
         lib(closure_2[14])();
       };
-      obj4[1] = tmp8(tmp5(5872).ActionSheetRow, obj5);
-      tmp8Result = tmp8(tmp5(5872).ActionSheetRow.Group, obj4);
+      obj4[1] = tmp8(tmp5(5938).ActionSheetRow, obj5);
+      tmp8Result = tmp8(tmp5(5938).ActionSheetRow.Group, obj4);
     }
   }
   items1[1] = tmp8Result;
   const obj7 = { label: tmp2.label, subLabel: tmp2.subLabel, icon: null, variant: null, onPress: null };
   if (tmp2.isPreview) {
-    let EyeSlashIcon = tmp5(5432).XSmallIcon;
+    let EyeSlashIcon = tmp5(5498).XSmallIcon;
   } else {
-    EyeSlashIcon = tmp5(8650).EyeSlashIcon;
+    EyeSlashIcon = tmp5(8718).EyeSlashIcon;
   }
-  obj7[2] = callback(onClose(5872).ActionSheetRow.Icon, { IconComponent: EyeSlashIcon });
+  obj7[2] = callback(onClose(5938).ActionSheetRow.Icon, { IconComponent: EyeSlashIcon });
   let str = "danger";
   if (tmp2.isPreview) {
     str = "default";
@@ -84,22 +84,22 @@ export default function FavoritesGuildActionSheet(onClose) {
     onClose();
     lib.perform();
   };
-  const items2 = [callback(onClose(5872).ActionSheetRow, obj7), ];
+  const items2 = [callback(onClose(5938).ActionSheetRow, obj7), ];
   let tmp8Result1 = null;
   if (tmp3.isAvailable) {
     const obj8 = { label: null, subLabel: null, icon: null, variant: "danger", onPress: null };
     ({ label: obj12[0], subLabel: obj12[1] } = tmp3);
     const obj9 = { IconComponent: null };
-    obj9[0] = tmp5(4338).TrashIcon;
-    obj8[2] = tmp8(tmp5(5872).ActionSheetRow.Icon, obj9);
+    obj9[0] = tmp5(4402).TrashIcon;
+    obj8[2] = tmp8(tmp5(5938).ActionSheetRow.Icon, obj9);
     obj8[4] = function onPress() {
       onClose();
       closure_2.perform();
     };
-    tmp8Result1 = tmp8(tmp5(5872).ActionSheetRow, obj8);
+    tmp8Result1 = tmp8(tmp5(5938).ActionSheetRow, obj8);
   }
   items2[1] = tmp8Result1;
-  items1[2] = closure_5(onClose(5872).ActionSheetRow.Group, { hasIcons: true, children: items2 });
+  items1[2] = closure_5(onClose(5938).ActionSheetRow.Group, { hasIcons: true, children: items2 });
   obj[1] = items1;
-  return closure_5(onClose(5870).ActionSheet, obj);
+  return closure_5(onClose(5936).ActionSheet, obj);
 };

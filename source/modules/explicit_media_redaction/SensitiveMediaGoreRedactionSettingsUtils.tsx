@@ -1,13 +1,13 @@
-// Module ID: 6024
-// Function ID: 6025
+// Module ID: 6090
+// Function ID: 6091
 // Name: resolveGoreSettingWithDefaults
-// Dependencies: [19, 1922, 676, 1306, 4076, 4083, 4070, 2]
+// Dependencies: [19, 1922, 676, 1306, 4140, 4147, 4134, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 6024 (resolveGoreSettingWithDefaults)
+// Module 6090 (resolveGoreSettingWithDefaults)
 import create from "create" /* 1306 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4083 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4147 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { HelpdeskArticles } from "ME" /* 676 */;

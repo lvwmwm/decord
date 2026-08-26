@@ -1,16 +1,16 @@
-// Module ID: 4295
-// Function ID: 4296
+// Module ID: 4359
+// Function ID: 4360
 // Name: Version
-// Dependencies: [4296, 676, 1626, 500, 1487, 530, 1489, 4297, 2]
+// Dependencies: [4360, 676, 1626, 500, 1487, 530, 1489, 4361, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
-// Module 4295 (Version)
+// Module 4359 (Version)
 import sendRequest from "sendRequest" /* 530 */;
 import ME from "ME" /* 676 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
 import UrlAll from "Url" /* 1489 */;
-import BUILD_OVERRIDE_TARGET_NAMES from "BUILD_OVERRIDE_TARGET_NAMES" /* 4296 */;
-import parseDefault from "parse" /* 4297 */;
+import BUILD_OVERRIDE_TARGET_NAMES from "BUILD_OVERRIDE_TARGET_NAMES" /* 4360 */;
+import parseDefault from "parse" /* 4361 */;
 import getConstants from "getConstants" /* 1626 */;
 import set from "set" /* 500 */;
 

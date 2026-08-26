@@ -1,19 +1,19 @@
-// Module ID: 9895
-// Function ID: 9896
+// Module ID: 9962
+// Function ID: 9963
 // Name: VoiceChatDrawerState
-// Dependencies: [19, 1390, 9896, 4408, 4401, 4264, 9042, 644, 705, 709, 4609, 12, 9897, 9898, 9899, 589, 9900, 2]
+// Dependencies: [19, 1390, 9963, 4472, 4465, 4328, 9110, 644, 705, 709, 4673, 12, 9964, 9965, 9966, 589, 9967, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers, useIsVoiceChatFocused
 
-// Module 9895 (VoiceChatDrawerState)
+// Module 9962 (VoiceChatDrawerState)
 import batchUpdates from "batchUpdates" /* 705 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import areParticipantStatesEqualDefault from "areParticipantStatesEqual" /* 9897 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 9898 */;
+import areParticipantStatesEqualDefault from "areParticipantStatesEqual" /* 9964 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 9965 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "participantFromServer" /* 1390 */;
-import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9896 */;
-import { OrientationLockState } from "items3" /* 4408 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4401 */;
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9963 */;
+import { OrientationLockState } from "items3" /* 4472 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
 import keys from "keys" /* 644 */;
 import importDefaultResult from "apply" /* 12 */;
 
@@ -22,13 +22,13 @@ require = arg1;
 const timeout = new require("start").Timeout();
 let obj = { focus: true, pipFocus: false, isGestureEnabled: true, voiceChatDrawerState: VoiceChatDrawerState.CLOSED, voiceCallOverlayLayoutStates: null };
 obj = {};
-obj = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: "isLoadedFromServer" };
+obj = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: "password" };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = obj;
-obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: "isLoadedFromServer" };
+obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: "password" };
 obj[4] = obj;
 let closure_9 = Object.freeze(obj);
 let obj2 = keys.create(() => closure_9);
-const obj1 = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: "isLoadedFromServer" };
+const obj1 = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: "password" };
 const throttleResult = importDefaultResult.throttle(() => {
   const pipFocus = obj2.getState().pipFocus;
   pipFocus(705).batchUpdates(() => closure_1_10.setState({ pipFocus: !pipFocus }));
@@ -99,7 +99,7 @@ export const useChannelCallOrientationHandlers = function useChannelCallOrientat
   if (currentEmbeddedActivity != null) {
     applicationId = currentEmbeddedActivity.applicationId;
   }
-  obj = _require(9899);
+  obj = _require(9966);
   const tmp7 = _require;
   const tmp8 = applicationId;
   const items = [tmp8];

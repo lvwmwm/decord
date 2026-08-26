@@ -1,10 +1,10 @@
-// Module ID: 9140
-// Function ID: 9141
+// Module ID: 9208
+// Function ID: 9209
 // Name: useGuildEligibleForMediaChannels
 // Dependencies: [676, 2]
 // Exports: useGuildEligibleForMediaChannels
 
-// Module 9140 (useGuildEligibleForMediaChannels)
+// Module 9208 (useGuildEligibleForMediaChannels)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

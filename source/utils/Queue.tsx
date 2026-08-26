@@ -1,9 +1,9 @@
-// Module ID: 7438
-// Function ID: 7439
+// Module ID: 7504
+// Function ID: 7505
 // Name: enqueue
 // Dependencies: [3, 8, 2]
 
-// Module 7438 (enqueue)
+// Module 7504 (enqueue)
 import timestampDefault from "timestamp" /* 3 */;
 import DequeDefault from "Deque" /* 8 */;
 

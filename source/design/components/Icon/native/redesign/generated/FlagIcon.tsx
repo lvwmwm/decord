@@ -1,14 +1,14 @@
-// Module ID: 8916
-// Function ID: 8917
+// Module ID: 8984
+// Function ID: 8985
 // Name: FlagIcon
-// Dependencies: [19, 21, 712, 4100, 8917, 2]
+// Dependencies: [19, 21, 712, 4164, 8985, 2]
 // Exports: FlagIcon
 
-// Module 8916 (FlagIcon)
+// Module 8984 (FlagIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 8917 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 8985 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,17 +1,17 @@
-// Module ID: 9948
-// Function ID: 9949
+// Module ID: 10015
+// Function ID: 10016
 // Name: getOrParseMessagePreviewMarkupAST
-// Dependencies: [4836, 4837, 9949, 4096, 4370, 4075, 1405, 2]
+// Dependencies: [4901, 4902, 10016, 4160, 4434, 4139, 1405, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMessagePreviewMarkup
 
-// Module 9948 (getOrParseMessagePreviewMarkupAST)
+// Module 10015 (getOrParseMessagePreviewMarkupAST)
 import privDefault from "priv" /* 1405 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4075 */;
-import tDefault from "t" /* 4096 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4370 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 4836 */;
-import parseLinkDefault from "parseLink" /* 4837 */;
-import defaultReactFnDefault from "defaultReactFn" /* 9949 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4139 */;
+import tDefault from "t" /* 4160 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4434 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 4901 */;
+import parseLinkDefault from "parseLink" /* 4902 */;
+import defaultReactFnDefault from "defaultReactFn" /* 10016 */;
 
 require = arg1;
 function getOrParseMessagePreviewMarkupAST(arg0) {

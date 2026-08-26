@@ -1,16 +1,16 @@
-// Module ID: 8429
-// Function ID: 8430
+// Module ID: 8496
+// Function ID: 8497
 // Name: getArchivedAvatarURL
-// Dependencies: [676, 1435, 1469, 1484, 1236, 8430, 1370, 2]
+// Dependencies: [676, 1435, 1469, 1484, 1236, 8497, 1370, 2]
 // Exports: generateAvatarDescription, generateRecentAvatarFileDetails, getImageFormat, getPendingAvatarSrc
 
-// Module 8429 (getArchivedAvatarURL)
+// Module 8496 (getArchivedAvatarURL)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getAvatarURL from "getAvatarURL" /* 1435 */;
 import handleImageLoad from "handleImageLoad" /* 1469 */;
 import parseDefault from "parse" /* 1484 */;
-import AssetOriginTypes from "AssetOriginTypes" /* 8430 */;
+import AssetOriginTypes from "AssetOriginTypes" /* 8497 */;
 
 function getArchivedAvatarURL(allowWebp) {
   ({ userId, avatarId, storageHash, canAnimate } = allowWebp);
@@ -133,7 +133,7 @@ export const generateAvatarDescription = function generateAvatarDescription(maxS
     const _Date = Date;
     const date = new Date();
     const intl2 = tmp3(1236).intl;
-    if (assetOrigin === tmp3(8430).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
+    if (assetOrigin === tmp3(8497).AssetOriginTypes.EDITED_ARCHIVED_ASSET) {
       let DYil93 = tmp3(1236).t.eC2sZi;
     } else {
       DYil93 = tmp3(1236).t.DYil93;

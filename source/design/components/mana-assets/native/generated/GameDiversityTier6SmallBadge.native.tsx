@@ -1,14 +1,14 @@
-// Module ID: 6499
-// Function ID: 6500
+// Module ID: 6565
+// Function ID: 6566
 // Name: GameDiversityTier6SmallBadge
-// Dependencies: [21, 5374, 6500, 2]
+// Dependencies: [21, 5440, 6566, 2]
 // Exports: GameDiversityTier6SmallBadge
 
-// Module 6499 (GameDiversityTier6SmallBadge)
+// Module 6565 (GameDiversityTier6SmallBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import vanityUrlDefault from "vanityUrl" /* 6500 */;
+import preloadDefault from "preload" /* 5440 */;
+import vanityUrlDefault from "vanityUrl" /* 6566 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier6SmallBadge.native.tsx");

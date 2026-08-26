@@ -1,17 +1,17 @@
-// Module ID: 15926
-// Function ID: 15927
-// Dependencies: [32, 19, 17, 1910, 4025, 1922, 21, 4380, 712, 15573, 589, 5992, 1236, 15927, 15928, 15934, 4205, 1500, 8745, 15929, 6117, 9198, 9103, 12172, 12172, 12174, 2]
+// Module ID: 16005
+// Function ID: 16006
+// Dependencies: [32, 19, 17, 1910, 4089, 1922, 21, 4444, 712, 15652, 589, 6058, 1236, 16006, 16007, 16013, 4269, 1500, 8813, 16008, 6183, 9266, 9171, 12245, 12245, 12247, 2]
 
-// Module 15926
+// Module 16005
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -113,12 +113,12 @@ const memoResult = importAllResult.memo((guildId) => {
       items: membersManagementActions,
       children(ref) {
         const merged = Object.assign(ref, Object.create(null));
-        const obj = { source: callback2(9198), accessibilityLabel: null, ref: null };
+        const obj = { source: callback2(9266), accessibilityLabel: null, ref: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.ogxXGq);
         obj[2] = ref.ref;
         const merged1 = Object.assign(merged);
-        return callback3(callback(6117).HeaderActionButton, obj);
+        return callback3(callback(6183).HeaderActionButton, obj);
       }
     };
     return closure_1_9(guildId(num[18]).ContextMenu, obj);

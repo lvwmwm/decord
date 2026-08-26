@@ -1,12 +1,12 @@
-// Module ID: 15622
-// Function ID: 15623
+// Module ID: 15701
+// Function ID: 15702
 // Name: experiment
-// Dependencies: [4291, 2]
+// Dependencies: [4355, 2]
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 15622 (experiment)
+// Module 15701 (experiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4291 */;
+import createExperiment from "createExperiment" /* 4355 */;
 
 const items = [{ id: 1, label: "Enable Game Claim Coachmark", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-02_game_claim_coachmark", label: "Game Claim Coachmark", defaultConfig: { enabled: false }, treatments: items });

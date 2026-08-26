@@ -1,11 +1,11 @@
-// Module ID: 7905
-// Function ID: 7906
+// Module ID: 7972
+// Function ID: 7973
 // Name: createFromServer
-// Dependencies: [1931, 3979, 2]
+// Dependencies: [1931, 4043, 2]
 
-// Module 7905 (createFromServer)
+// Module 7972 (createFromServer)
 import toJSDefault from "toJS" /* 1931 */;
-import hooksDefault from "hooks" /* 3979 */;
+import hooksDefault from "hooks" /* 4043 */;
 
 toJSDefault;
 let InviteRecord;

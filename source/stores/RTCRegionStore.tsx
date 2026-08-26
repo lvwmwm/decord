@@ -1,9 +1,9 @@
-// Module ID: 4475
-// Function ID: 4476
+// Module ID: 4539
+// Function ID: 4540
 // Name: initialize
 // Dependencies: [687, 589, 12, 709, 2]
 
-// Module 4475 (initialize)
+// Module 4539 (initialize)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;

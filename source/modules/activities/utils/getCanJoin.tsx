@@ -1,14 +1,14 @@
-// Module ID: 11312
-// Function ID: 11313
+// Module ID: 11384
+// Function ID: 11385
 // Name: getCanJoin
-// Dependencies: [676, 11313, 11314, 11315, 11316, 11317, 11318, 11319, 6037, 500, 2]
+// Dependencies: [676, 11385, 11386, 11387, 11388, 11389, 11390, 11391, 6103, 500, 2]
 // Exports: getCanJoin, getCanSync
 
-// Module 11312 (getCanJoin)
+// Module 11384 (getCanJoin)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
-import resultDefault from "result" /* 11313 */;
-import getPartySize from "getPartySize" /* 11314 */;
+import resultDefault from "result" /* 11385 */;
+import getPartySize from "getPartySize" /* 11386 */;
 import ME from "ME" /* 676 */;
 
 ({ ActivityActionTypes: c3, ActivityFlags: c4 } = ME);
@@ -23,9 +23,9 @@ export const getCanJoin = function getCanJoin(currentUserId) {
       let obj = getPartySize;
       const partySize = obj.getPartySize(presenceActivity);
       if (obj2.hasPartySize(partySize)) {
-        let tmp6Result = tmp6(11316);
+        let tmp6Result = tmp6(11388);
         if (!tmp6Result.isPartyFull(partySize)) {
-          tmp6Result = tmp6(11317);
+          tmp6Result = tmp6(11389);
           if (tmp6Result.getIsInParty(tmp, presenceActivity)) {
             return { canJoin: false, remoteJoinPlatform: null };
           } else {
@@ -44,15 +44,15 @@ export const getCanJoin = function getCanJoin(currentUserId) {
               }
               if (type === constants.JOIN) {
                 if (null != presenceActivity) {
-                  const remoteJoinableActivityPlatform = tmp6(11319).getRemoteJoinableActivityPlatform(presenceActivity);
+                  const remoteJoinableActivityPlatform = tmp6(11391).getRemoteJoinableActivityPlatform(presenceActivity);
                   if (null != remoteJoinableActivityPlatform) {
                     obj = { canJoin: true, remoteJoinPlatform: null };
                     obj[1] = remoteJoinableActivityPlatform;
                     return obj;
-                  } else if (tmp13(6037)(presenceActivity, constants2.SUPPORTS_JOIN_URL)) {
+                  } else if (tmp13(6103)(presenceActivity, constants2.SUPPORTS_JOIN_URL)) {
                     return { canJoin: true, remoteJoinPlatform: null };
                   }
-                  const tmp6Result2 = tmp6(11319);
+                  const tmp6Result2 = tmp6(11391);
                 }
               }
               if (tmp6Result3.platformSupportsActivityJoin()) {
@@ -64,7 +64,7 @@ export const getCanJoin = function getCanJoin(currentUserId) {
               obj = { canJoin: false, remoteJoinPlatform: null };
               tmp6Result3 = tmp6(500);
             }
-            tmp6Result1 = tmp6(11318);
+            tmp6Result1 = tmp6(11390);
           }
         }
       }
@@ -80,12 +80,12 @@ export const getCanSync = function getCanSync(activity, tmp8Result, arg2, id) {
   if (tmp) {
     let tmp6 = resultDefault(activity, arg2, id.id);
     if (tmp6) {
-      let tmp8 = tmp4(6037)(activity, constants2.SYNC);
+      let tmp8 = tmp4(6103)(activity, constants2.SYNC);
       if (tmp8) {
         let isPlatformEmbedded = set2.isPlatformEmbedded;
         if (isPlatformEmbedded) {
-          isPlatformEmbedded = !tmp9(11317).getIsInParty(tmp8Result, activity);
-          const tmp9Result = tmp9(11317);
+          isPlatformEmbedded = !tmp9(11389).getIsInParty(tmp8Result, activity);
+          const tmp9Result = tmp9(11389);
         }
         tmp8 = isPlatformEmbedded;
         tmp9 = require;

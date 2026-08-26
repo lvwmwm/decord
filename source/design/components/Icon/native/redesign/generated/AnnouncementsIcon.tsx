@@ -1,14 +1,14 @@
-// Module ID: 4924
-// Function ID: 4925
+// Module ID: 4990
+// Function ID: 4991
 // Name: AnnouncementsIcon
-// Dependencies: [19, 21, 712, 4100, 4873, 2]
+// Dependencies: [19, 21, 712, 4164, 4939, 2]
 // Exports: AnnouncementsIcon
 
-// Module 4924 (AnnouncementsIcon)
+// Module 4990 (AnnouncementsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 4873 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 4939 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 16038
-// Function ID: 16039
+// Module ID: 16119
+// Function ID: 16120
 // Name: styles
-// Dependencies: [8554, 4380, 2]
+// Dependencies: [8622, 4444, 2]
 
-// Module 16038 (styles)
+// Module 16119 (styles)
 import set from "set" /* 2 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8554 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8622 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 ({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = MessageEmbedTypes);
 const styles = createCacheKey.createStyles({ filesOrLinksContentContainer: { paddingTop: SEARCH_LIST_HORIZONTAL_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, mediaContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING }, messagesContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING - SEARCH_ROW_TAP_STATE_PADDING }, membersContentContainer: { paddingTop: SEARCH_LIST_SECTION_TOP_PADDING, paddingHorizontal: SEARCH_LIST_HORIZONTAL_PADDING } });

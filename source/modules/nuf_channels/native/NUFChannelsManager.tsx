@@ -1,18 +1,18 @@
-// Module ID: 13235
-// Function ID: 13236
+// Module ID: 13308
+// Function ID: 13309
 // Name: _initialize
-// Dependencies: [1992, 1910, 4202, 1922, 676, 4013, 595, 4224, 5367, 4235, 4234, 1403, 4347, 13236, 2009, 2]
+// Dependencies: [1992, 1910, 4266, 1922, 676, 4077, 595, 4288, 5433, 4299, 4298, 1403, 4411, 13309, 2009, 2]
 
-// Module 13235 (_initialize)
+// Module 13308 (_initialize)
 import Storage3 from "Storage" /* 595 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4235 */;
-import initializeDefault from "initialize" /* 5367 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4299 */;
+import initializeDefault from "initialize" /* 5433 */;
 import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "handleConnectionOpen" /* 4202 */;
+import closure_5 from "handleConnectionOpen" /* 4266 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { GuildFeatures } from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 
 require = arg1;
 let c9 = "2020_02_nuf_channels";
@@ -98,8 +98,8 @@ class NUFChannelsManager extends tmp2 {
       const value = Storage.get(closure_10);
       let isNewUserResult = !value;
       if (!value) {
-        isNewUserResult = applyArgumentsResult(4224).isNewUser(currentUser.getCurrentUser());
-        const tmpResult = applyArgumentsResult(4224);
+        isNewUserResult = applyArgumentsResult(4288).isNewUser(currentUser.getCurrentUser());
+        const tmpResult = applyArgumentsResult(4288);
       }
       return isNewUserResult;
     };
@@ -122,11 +122,11 @@ prototype["_initialize"] = function _initialize() {
   const value = Storage.get(c9);
   let isNewUserResult = !value;
   if (!value) {
-    let tmpResult = tmp(4224);
+    let tmpResult = tmp(4288);
     isNewUserResult = tmpResult.isNewUser(currentUser.getCurrentUser());
   }
   if (isNewUserResult) {
-    tmpResult = tmp(4235);
+    tmpResult = tmp(4299);
     const rootNavigationRef = tmpResult.getRootNavigationRef();
     if (rootNavigationRef != null) {
       const self = this;

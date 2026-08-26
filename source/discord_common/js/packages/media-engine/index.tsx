@@ -1,16 +1,16 @@
-// Module ID: 4479
-// Function ID: 4480
+// Module ID: 4543
+// Function ID: 4544
 // Name: BaseConnectionEvent
-// Dependencies: [4444, 4480, 4551, 2, 4491, 4552]
+// Dependencies: [4508, 4544, 4615, 2, 4555, 4616]
 // Exports: determineMediaEngine, initializeMediaEngine
 
-// Module 4479 (BaseConnectionEvent)
+// Module 4543 (BaseConnectionEvent)
 import set from "set" /* 2 */;
-import destroy from "destroy" /* 4480 */;
-import destroy2 from "destroy" /* 4491 */;
-import Video from "Video" /* 4551 */;
-import MediaEngineEvent from "MediaEngineEvent" /* 4552 */;
-import DesktopSources from "DesktopSources" /* 4444 */;
+import destroy from "destroy" /* 4544 */;
+import destroy2 from "destroy" /* 4555 */;
+import Video from "Video" /* 4615 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 4616 */;
+import DesktopSources from "DesktopSources" /* 4508 */;
 
 let closure_2 = DesktopSources.MediaEngineImplementations;
 const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/index.tsx");
@@ -27,12 +27,12 @@ export const determineMediaEngine = function determineMediaEngine() {
   ({ NATIVE: arr[0], WEBRTC: arr[1] } = closure_2);
   let DUMMY = items.find((arg0) => {
     if (constants.NATIVE === arg0) {
-      let _default = callback(4480).default;
+      let _default = callback(4544).default;
     } else {
       if (tmp.WEBRTC !== arg0) {
         const DUMMY = tmp.DUMMY;
       }
-      _default = callback(4551).default;
+      _default = callback(4615).default;
     }
     return _default.supported();
   });

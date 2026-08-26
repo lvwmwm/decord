@@ -1,15 +1,15 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8599
+// Function ID: 8600
 // Name: ForLaterFreemiumConfig
-// Dependencies: [8528, 1472, 38, 8532, 2]
+// Dependencies: [8595, 1472, 38, 8600, 2]
 // Exports: getForLaterLimit, hasForLaterAccess, isForLaterExperimentOn, isForLaterFreemiumExperimentOn, isForLaterLimitUpgradable, useForLaterLimit, useHasForLaterAccess, useIsForLaterExperimentOn, useIsForLaterLimitUpgradable
 
-// Module 8531 (ForLaterFreemiumConfig)
+// Module 8599 (ForLaterFreemiumConfig)
 import set from "set" /* 2 */;
 import _modDef38 from "module_38" /* 38 */;
-import hasForLaterPremiumType2 from "hasForLaterPremiumType" /* 8532 */;
-import hasForLaterPremiumTypeDefault from "hasForLaterPremiumType" /* 8532 */;
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 8528 */;
+import hasForLaterPremiumType2 from "hasForLaterPremiumType" /* 8600 */;
+import hasForLaterPremiumTypeDefault from "hasForLaterPremiumType" /* 8600 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 8595 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 ({ SAVED_BOOKMARKS_MAX: c3, SAVED_REMINDERS_MAX: c4 } = SAVED_BOOKMARKS_MAX);

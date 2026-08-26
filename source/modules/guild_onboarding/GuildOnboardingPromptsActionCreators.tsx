@@ -1,21 +1,21 @@
-// Module ID: 5347
-// Function ID: 5348
+// Module ID: 5413
+// Function ID: 5414
 // Name: fetchOnboardingPrompts
-// Dependencies: [5, 1218, 1992, 1910, 5348, 5349, 676, 4013, 698, 4588, 709, 530, 1403, 2]
+// Dependencies: [5, 1218, 1992, 1910, 5414, 5415, 676, 4077, 698, 4652, 709, 530, 1403, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 5347 (fetchOnboardingPrompts)
+// Module 5413 (fetchOnboardingPrompts)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4588 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4652 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "handleUpdate" /* 5348 */;
-import { serverApiResponseToClientState as closure_8 } from "serverPromptToClientPrompt" /* 5349 */;
+import closure_7 from "handleUpdate" /* 5414 */;
+import { serverApiResponseToClientState as closure_8 } from "serverPromptToClientPrompt" /* 5415 */;
 import ME from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 
 require = arg1;
 function fetchOnboardingPrompts(guildId) {
@@ -59,7 +59,7 @@ function _maybeFetchOnboardingPrompts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

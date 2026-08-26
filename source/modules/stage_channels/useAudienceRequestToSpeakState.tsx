@@ -1,11 +1,11 @@
-// Module ID: 4568
-// Function ID: 4569
+// Module ID: 4632
+// Function ID: 4633
 // Name: useAudienceRequestToSpeakState
-// Dependencies: [4399, 589, 2]
+// Dependencies: [4463, 589, 2]
 // Exports: default, getAudienceRequestToSpeakState
 
-// Module 4568 (useAudienceRequestToSpeakState)
-import closure_2 from "updateVoiceState" /* 4399 */;
+// Module 4632 (useAudienceRequestToSpeakState)
+import closure_2 from "updateVoiceState" /* 4463 */;
 
 const require = arg1;
 const obj = { NONE: 0, [0]: "NONE", REQUESTED_TO_SPEAK: 1, [1]: "REQUESTED_TO_SPEAK", REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK: 2, [2]: "REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK", ON_STAGE: 3, [3]: "ON_STAGE" };

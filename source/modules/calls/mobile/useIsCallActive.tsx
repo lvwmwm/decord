@@ -1,13 +1,13 @@
-// Module ID: 8241
-// Function ID: 8242
+// Module ID: 8308
+// Function ID: 8309
 // Name: useIsCallActive
-// Dependencies: [5103, 4396, 4401, 589, 2]
+// Dependencies: [5169, 4460, 4465, 589, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 8241 (useIsCallActive)
-import closure_2 from "callConnect" /* 5103 */;
-import closure_3 from "getParticipants" /* 4396 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4401 */;
+// Module 8308 (useIsCallActive)
+import closure_2 from "callConnect" /* 5169 */;
+import closure_3 from "getParticipants" /* 4460 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 9475
-// Function ID: 9476
+// Module ID: 9543
+// Function ID: 9544
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 1922, 21, 4380, 712, 5837, 589, 9431, 4376, 1236, 5374, 1297, 4815, 9476, 2]
+// Dependencies: [19, 17, 1922, 21, 4444, 712, 5903, 589, 9499, 4440, 1236, 5440, 1297, 4879, 9544, 2]
 // Exports: default
 
-// Module 9475 (GameProfileLinkAccount)
+// Module 9543 (GameProfileLinkAccount)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -84,7 +84,7 @@ export default function GameProfileLinkAccount(trackAction) {
               items4[2] = tmp13(tmp12, obj7);
               obj4[1] = items4;
               items3[1] = tmp11(tmp12, obj4);
-              const obj8 = { size: null, user: null, guildId: "r" };
+              const obj8 = { size: null, user: null, guildId: "Array" };
               obj8[0] = tmp5(tmp3[12]).AvatarSizes.LARGE_48;
               obj8[1] = stateFromStores;
               items3[2] = tmp13(tmp5(tmp3[12]).Avatar, obj8);

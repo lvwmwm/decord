@@ -1,9 +1,9 @@
-// Module ID: 13663
-// Function ID: 13664
+// Module ID: 13736
+// Function ID: 13737
 // Name: AccessibilityFeatureFlags
 // Dependencies: [2]
 
-// Module 13663 (AccessibilityFeatureFlags)
+// Module 13736 (AccessibilityFeatureFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/a11y/AccessibilityConstants.tsx");

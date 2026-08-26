@@ -1,12 +1,12 @@
-// Module ID: 14440
-// Function ID: 14441
+// Module ID: 14513
+// Function ID: 14514
 // Name: PremiumPlanSelectSettingScreen
-// Dependencies: [19, 21, 12971, 2]
+// Dependencies: [19, 21, 13045, 2]
 // Exports: default
 
-// Module 14440 (PremiumPlanSelectSettingScreen)
+// Module 14513 (PremiumPlanSelectSettingScreen)
 import noopAll from "noop" /* 19 */;
-import ManagePlanHeaderDefault from "ManagePlanHeader" /* 12971 */;
+import ManagePlanHeaderDefault from "ManagePlanHeader" /* 13045 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 noopAll;

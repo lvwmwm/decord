@@ -1,9 +1,9 @@
-// Module ID: 8168
-// Function ID: 8169
+// Module ID: 8235
+// Function ID: 8236
 // Name: normalizeChannelPropertyForCompare
-// Dependencies: [1395, 7905, 1930, 1391, 676, 1235, 4036, 4038, 1400, 1401, 530, 709, 12, 1430, 3979, 589, 2]
+// Dependencies: [1395, 7972, 1930, 1391, 676, 1235, 4100, 4102, 1400, 1401, 530, 709, 12, 1430, 4043, 589, 2]
 
-// Module 8168 (normalizeChannelPropertyForCompare)
+// Module 8235 (normalizeChannelPropertyForCompare)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import initializeDefault from "initialize" /* 589 */;
@@ -13,10 +13,10 @@ import createChannelRecord from "createChannelRecord" /* 1395 */;
 import set2 from "set" /* 1400 */;
 import set3 from "set" /* 1401 */;
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
-import hooksDefault from "hooks" /* 3979 */;
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4036 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4038 */;
-import closure_10 from "createFromServer" /* 7905 */;
+import hooksDefault from "hooks" /* 4043 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4100 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4102 */;
+import closure_10 from "createFromServer" /* 7972 */;
 import closure_11 from "createdAt" /* 1930 */;
 import closure_12 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;

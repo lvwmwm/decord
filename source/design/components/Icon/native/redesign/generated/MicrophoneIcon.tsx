@@ -1,14 +1,14 @@
-// Module ID: 10959
-// Function ID: 10960
+// Module ID: 11031
+// Function ID: 11032
 // Name: MicrophoneIcon
-// Dependencies: [19, 21, 712, 4100, 10960, 2]
+// Dependencies: [19, 21, 712, 4164, 11032, 2]
 // Exports: MicrophoneIcon
 
-// Module 10959 (MicrophoneIcon)
+// Module 11031 (MicrophoneIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 10960 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 11032 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

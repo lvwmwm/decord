@@ -1,20 +1,20 @@
-// Module ID: 10720
-// Function ID: 10721
+// Module ID: 10792
+// Function ID: 10793
 // Name: ConfirmActivityGateContent
-// Dependencies: [19, 17, 4408, 21, 4380, 10721, 4376, 1236, 4815, 4094, 4744, 2]
+// Dependencies: [19, 17, 4472, 21, 4444, 10793, 4440, 1236, 4879, 4158, 4808, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 10720 (ConfirmActivityGateContent)
+// Module 10792 (ConfirmActivityGateContent)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
-import setDefault from "set" /* 4744 */;
-import Button from "Button" /* 4815 */;
-import registerAssetDefault from "registerAsset" /* 10721 */;
+import Text from "Text" /* 4440 */;
+import setDefault from "set" /* 4808 */;
+import Button from "Button" /* 4879 */;
+import registerAssetDefault from "registerAsset" /* 10793 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { PRIVATE_APPS_HELP_ARTICLE } from "items3" /* 4408 */;
+import { PRIVATE_APPS_HELP_ARTICLE } from "items3" /* 4472 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function ConfirmActivityGateContent(activityName) {

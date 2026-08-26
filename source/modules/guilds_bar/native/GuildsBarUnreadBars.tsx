@@ -1,21 +1,21 @@
-// Module ID: 15715
-// Function ID: 15716
+// Module ID: 15794
+// Function ID: 15795
 // Name: checkNodeAndIterate
-// Dependencies: [32, 19, 17, 7242, 4202, 5262, 15645, 14548, 21, 4380, 8159, 1629, 14541, 14550, 636, 643, 589, 4120, 15716, 2]
+// Dependencies: [32, 19, 17, 7308, 4266, 5328, 15724, 14621, 21, 4444, 8226, 1629, 14614, 14623, 636, 643, 589, 4184, 15795, 2]
 
-// Module 15715 (checkNodeAndIterate)
-import renderDefaultEmpty from "renderDefaultEmpty" /* 8159 */;
+// Module 15794 (checkNodeAndIterate)
+import renderDefaultEmpty from "renderDefaultEmpty" /* 8226 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "updateGuildUnreadSentinel" /* 7242 */;
-import closure_7 from "handleConnectionOpen" /* 4202 */;
-import closure_8 from "insertUnsortedGuilds" /* 5262 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5262 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15645 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14548 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 7308 */;
+import closure_7 from "handleConnectionOpen" /* 4266 */;
+import closure_8 from "insertUnsortedGuilds" /* 5328 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5328 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15724 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14621 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function checkNodeAndIterate(arg0) {
@@ -146,7 +146,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
               }
               let tmp8 = nextResult;
               let type = tmp4.type;
-              if (tmp41(8159).FastListItemTypes.SECTION === type) {
+              if (tmp41(8226).FastListItemTypes.SECTION === type) {
                 let tmp18 = nextResult;
                 let node = guildsTree.getNode(tmp4.recyclerKey);
                 let element = node;
@@ -181,7 +181,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
                 }
                 continue;
               } else {
-                if (tmp41(8159).FastListItemTypes.ITEM === type) {
+                if (tmp41(8226).FastListItemTypes.ITEM === type) {
                   let tmp10 = nextResult;
                   let node1 = guildsTree.getNode(tmp4.recyclerKey);
                   let tmp12 = node1;

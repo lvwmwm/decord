@@ -1,16 +1,16 @@
-// Module ID: 8244
-// Function ID: 8245
+// Module ID: 8311
+// Function ID: 8312
 // Name: createChannelPinnedMessageSystemMessage
-// Dependencies: [8221, 8223, 1236, 8224, 8227, 2]
+// Dependencies: [8288, 8290, 1236, 8291, 8294, 2]
 // Exports: createChannelPinnedMessageSystemMessage
 
-// Module 8244 (createChannelPinnedMessageSystemMessage)
+// Module 8311 (createChannelPinnedMessageSystemMessage)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8221 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8223 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8224 */;
-import MessageAccessibilityAction from "MessageAccessibilityAction" /* 8227 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8288 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8290 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8291 */;
+import MessageAccessibilityAction from "MessageAccessibilityAction" /* 8294 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/ChannelPinnedMessageSystemMessage.tsx");
 
@@ -48,7 +48,7 @@ export const createChannelPinnedMessageSystemMessage = function createChannelPin
     const obj4 = { label: null, name: null };
     const intl4 = tmp(1236).intl;
     obj4[0] = intl4.string(tmp(1236).t["+TSRGD"]);
-    obj4[1] = tmp(8227).MessageAccessibilityAction.JUMP_TO_MESSAGE;
+    obj4[1] = tmp(8294).MessageAccessibilityAction.JUMP_TO_MESSAGE;
     items.push(obj4);
   }
   const obj5 = { content: formatToPartsResult };

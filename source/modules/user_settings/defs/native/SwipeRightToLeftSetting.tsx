@@ -1,16 +1,16 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14954
+// Function ID: 14955
 // Name: route
-// Dependencies: [8235, 676, 4070, 1306, 1236, 10516, 14876, 2]
+// Dependencies: [8302, 676, 4134, 1306, 1236, 10584, 14955, 2]
 
-// Module 14875 (route)
+// Module 14954 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import create from "create" /* 1306 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import MobileUserSettings from "MobileUserSettings" /* 8235 */;
-import createToggle from "createToggle" /* 10516 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import MobileUserSettings from "MobileUserSettings" /* 8302 */;
+import createToggle from "createToggle" /* 10584 */;
 
 obj = {
   useTitle() {
@@ -38,7 +38,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.SWIPE_RIGHT_TO_LEFT,
   getComponent() {
-    return require(14876) /* UserSettingsSwipeRightToLeft */.default;
+    return require(14955) /* UserSettingsSwipeRightToLeft */.default;
   }
 };
 const route = createToggle.createRoute(obj);

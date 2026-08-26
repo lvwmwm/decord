@@ -1,10 +1,10 @@
-// Module ID: 9595
-// Function ID: 9596
-// Dependencies: [19, 21, 8980, 4826, 2]
+// Module ID: 9663
+// Function ID: 9664
+// Dependencies: [19, 21, 9048, 4891, 2]
 
-// Module 9595
-import LinearGradientDefault from "LinearGradient" /* 4826 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8980 */;
+// Module 9663
+import LinearGradientDefault from "LinearGradient" /* 4891 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 9048 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

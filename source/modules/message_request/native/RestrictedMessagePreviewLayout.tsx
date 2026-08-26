@@ -1,9 +1,9 @@
-// Module ID: 16245
-// Function ID: 16246
+// Module ID: 16326
+// Function ID: 16327
 // Name: RESTRICTED_AVATAR_SIZE
 // Dependencies: [1297, 2]
 
-// Module 16245 (RESTRICTED_AVATAR_SIZE)
+// Module 16326 (RESTRICTED_AVATAR_SIZE)
 import set from "set" /* 2 */;
 import Button from "Button" /* 1297 */;
 

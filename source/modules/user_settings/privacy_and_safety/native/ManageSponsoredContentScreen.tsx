@@ -1,25 +1,25 @@
-// Module ID: 15098
-// Function ID: 15099
+// Module ID: 15177
+// Function ID: 15178
 // Name: AdTopicRow
-// Dependencies: [19, 17, 676, 21, 1306, 2043, 4070, 5874, 1236, 4380, 712, 5873, 1995, 2]
+// Dependencies: [19, 17, 676, 21, 1306, 2043, 4134, 5940, 1236, 4444, 712, 5939, 1995, 2]
 // Exports: default
 
-// Module 15098 (AdTopicRow)
+// Module 15177 (AdTopicRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
 import messagesProxyDefault from "messagesProxy" /* 2043 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5873 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5939 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function AdTopicRow(adTopic) {
   adTopic = adTopic.adTopic;
-  let AdTopicOptOuts = adTopic(4070).AdTopicOptOuts;
+  let AdTopicOptOuts = adTopic(4134).AdTopicOptOuts;
   const setting = AdTopicOptOuts.useSetting();
   const hasItem = setting.includes(adTopic);
   obj = { label: null, subLabel: null, value: null, onValueChange: null };
@@ -41,7 +41,7 @@ function AdTopicRow(adTopic) {
     const items = [...set];
     AdTopicOptOuts2.updateSetting(items);
   };
-  return closure_5(adTopic(5874).TableSwitchRow, obj);
+  return closure_5(adTopic(5940).TableSwitchRow, obj);
 }
 noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

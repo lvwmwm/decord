@@ -1,14 +1,14 @@
-// Module ID: 13975
-// Function ID: 13976
+// Module ID: 14048
+// Function ID: 14049
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [5, 4851, 1922, 4282, 505, 9049, 6062, 4858, 10827, 6097, 6068, 10824, 6099, 5854, 2]
+// Dependencies: [5, 4916, 1922, 4346, 505, 9117, 6128, 4924, 10899, 6163, 6134, 10896, 6165, 5920, 2]
 
-// Module 13975 (RPC_LOCAL_SCOPE)
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10827 */;
+// Module 14048 (RPC_LOCAL_SCOPE)
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10899 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleSoundCreateOrUpdate" /* 4851 */;
+import closure_4 from "handleSoundCreateOrUpdate" /* 4916 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4282 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4346 */;
 import sum from "sum" /* 505 */;
 
 const require = arg1;
@@ -57,7 +57,7 @@ obj1[2] = function handler(args) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -118,7 +118,7 @@ obj1[2] = function handler(args) {
                 obj3.playSound(closure_1_1, id.id, items);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               const obj4 = { errorCode: null };
               obj4[0] = closure_1_6.INVALID_PERMISSIONS;

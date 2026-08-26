@@ -1,14 +1,14 @@
-// Module ID: 8238
-// Function ID: 8239
+// Module ID: 8305
+// Function ID: 8306
 // Name: createRemoveRecipientSystemMessage
-// Dependencies: [1395, 1391, 1922, 8221, 8223, 1236, 8224, 2]
+// Dependencies: [1395, 1391, 1922, 8288, 8290, 1236, 8291, 2]
 // Exports: createRemoveRecipientSystemMessage
 
-// Module 8238 (createRemoveRecipientSystemMessage)
+// Module 8305 (createRemoveRecipientSystemMessage)
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8221 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8223 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8288 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8290 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
@@ -37,11 +37,11 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
     }
     obj = { content: null };
     obj[0] = formatToPartsResult;
-    const merged = Object.assign(tmp8(8224)(message));
+    const merged = Object.assign(tmp8(8291)(message));
     return obj;
   } else {
     user = user.getUser(first);
-    const userAuthorWithProcessedColor = tmp5(8221).getUserAuthorWithProcessedColor(user, channel);
+    const userAuthorWithProcessedColor = tmp5(8288).getUserAuthorWithProcessedColor(user, channel);
     obj1 = {};
     const merged1 = Object.assign(obj);
     obj1.otherUsername = userAuthorWithProcessedColor.nick;
@@ -50,7 +50,7 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
     obj2[1] = message;
     obj2[2] = userAuthorWithProcessedColor;
     obj2[3] = roleStyle;
-    obj1.otherUsernameOnClick = tmp8(8223)(obj2);
+    obj1.otherUsernameOnClick = tmp8(8290)(obj2);
     const intl2 = tmp5(1236).intl;
     const formatToParts2 = intl2.formatToParts;
     const t2 = tmp5(1236).t;
@@ -61,7 +61,7 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
     }
     const obj3 = { content: null };
     obj3[0] = formatToParts2Result;
-    const merged2 = Object.assign(tmp8(8224)(message));
+    const merged2 = Object.assign(tmp8(8291)(message));
     return obj3;
   }
 };

@@ -1,15 +1,15 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16125
+// Function ID: 16126
 // Name: useSearchMessagesLoadingState
-// Dependencies: [6006, 11906, 8554, 15999, 589, 11907, 2]
+// Dependencies: [6072, 11979, 8622, 16080, 589, 11980, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 16044 (useSearchMessagesLoadingState)
+// Module 16125 (useSearchMessagesLoadingState)
 import initialize from "initialize" /* 589 */;
-import useFullscreenPlaceholderCount from "useFullscreenPlaceholderCount" /* 15999 */;
-import closure_2 from "handleReaction" /* 6006 */;
-import closure_3 from "prototype" /* 11906 */;
-import { SEARCH_TABS_TO_SEARCH_QUERY_LIMITS as closure_4 } from "MessageEmbedTypes" /* 8554 */;
+import useFullscreenPlaceholderCount from "useFullscreenPlaceholderCount" /* 16080 */;
+import closure_2 from "handleReaction" /* 6072 */;
+import closure_3 from "prototype" /* 11979 */;
+import { SEARCH_TABS_TO_SEARCH_QUERY_LIMITS as closure_4 } from "MessageEmbedTypes" /* 8622 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/search/native/components/tabs/hooks/useSearchMessagesLoadingState.tsx");

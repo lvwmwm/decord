@@ -1,14 +1,14 @@
-// Module ID: 11068
-// Function ID: 11069
+// Module ID: 11140
+// Function ID: 11141
 // Name: useBountiesExperience
-// Dependencies: [11069, 11070, 11071, 2]
+// Dependencies: [11141, 11142, 11143, 2]
 // Exports: useBountiesExperience
 
-// Module 11068 (useBountiesExperience)
+// Module 11140 (useBountiesExperience)
 import set from "set" /* 2 */;
-import apexExperiment from "apexExperiment" /* 11069 */;
-import apexExperiment2 from "apexExperiment" /* 11070 */;
-import apexExperiment3 from "apexExperiment" /* 11071 */;
+import apexExperiment from "apexExperiment" /* 11141 */;
+import apexExperiment2 from "apexExperiment" /* 11142 */;
+import apexExperiment3 from "apexExperiment" /* 11143 */;
 
 const result = set.fileFinishedImporting("modules/quests/experiments/useBountiesExperience.tsx");
 

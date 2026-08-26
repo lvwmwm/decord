@@ -1,14 +1,14 @@
-// Module ID: 9216
-// Function ID: 9217
+// Module ID: 9284
+// Function ID: 9285
 // Name: getDefaultInviteExpiration
-// Dependencies: [1910, 676, 9214, 4291, 647, 2]
+// Dependencies: [1910, 676, 9282, 4355, 647, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 9216 (getDefaultInviteExpiration)
-import isGuildMemberDefault from "isGuildMember" /* 9214 */;
+// Module 9284 (getDefaultInviteExpiration)
+import isGuildMemberDefault from "isGuildMember" /* 9282 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
-import createExperiment from "createExperiment" /* 4291 */;
+import createExperiment from "createExperiment" /* 4355 */;
 
 const require = arg1;
 function getDefaultInviteExpiration(arg0) {

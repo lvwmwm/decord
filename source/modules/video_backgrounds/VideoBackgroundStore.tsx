@@ -1,15 +1,15 @@
-// Module ID: 9309
-// Function ID: 9310
+// Module ID: 9377
+// Function ID: 9378
 // Name: handleSyncedStoresUpdate
-// Dependencies: [1340, 4431, 1981, 1922, 9310, 4479, 589, 709, 2]
+// Dependencies: [1340, 4495, 1981, 1922, 9378, 4543, 589, 709, 2]
 
-// Module 9309 (handleSyncedStoresUpdate)
+// Module 9377 (handleSyncedStoresUpdate)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4479 */;
-import isAnimatedBackgroundOption from "isAnimatedBackgroundOption" /* 9310 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4543 */;
+import isAnimatedBackgroundOption from "isAnimatedBackgroundOption" /* 9378 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4495 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 

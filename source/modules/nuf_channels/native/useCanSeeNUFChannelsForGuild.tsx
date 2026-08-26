@@ -1,15 +1,15 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15689
+// Function ID: 15690
 // Name: useCanSeeNUFChannelsForGuild
-// Dependencies: [1992, 1910, 1922, 676, 4013, 589, 4224, 1403, 2]
+// Dependencies: [1992, 1910, 1922, 676, 4077, 589, 4288, 1403, 2]
 // Exports: useCanSeeNUFChannelsForGuild
 
-// Module 15610 (useCanSeeNUFChannelsForGuild)
+// Module 15689 (useCanSeeNUFChannelsForGuild)
 import closure_2 from "trackCommunicationDisabled" /* 1992 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { GuildFeatures } from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4013 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/nuf_channels/native/useCanSeeNUFChannelsForGuild.tsx");

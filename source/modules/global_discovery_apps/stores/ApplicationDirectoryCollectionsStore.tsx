@@ -1,9 +1,9 @@
-// Module ID: 11656
-// Function ID: 11657
+// Module ID: 11729
+// Function ID: 11730
 // Name: getLastFetchTimeMs
 // Dependencies: [12, 589, 709, 2]
 
-// Module 11656 (getLastFetchTimeMs)
+// Module 11729 (getLastFetchTimeMs)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

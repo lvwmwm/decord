@@ -1,11 +1,11 @@
-// Module ID: 4735
-// Function ID: 4736
+// Module ID: 4799
+// Function ID: 4800
 // Name: performRedirect
-// Dependencies: [5, 676, 505, 4726, 4731, 530, 2]
+// Dependencies: [5, 676, 505, 4790, 4795, 530, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 4735 (performRedirect)
-import _validatePaymentSourceBillingAddress from "_validatePaymentSourceBillingAddress" /* 4726 */;
+// Module 4799 (performRedirect)
+import _validatePaymentSourceBillingAddress from "_validatePaymentSourceBillingAddress" /* 4790 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 import { PaymentSourceTypes } from "sum" /* 505 */;
@@ -103,7 +103,7 @@ prototype["getStripe"] = function getStripe() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -124,7 +124,7 @@ prototype["getStripe"] = function getStripe() {
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_1(4731).getStripe();
+              obj1[0] = closure_1_1(4795).getStripe();
               return obj1;
             }
           }
@@ -140,7 +140,7 @@ prototype["getStripe"] = function getStripe() {
           closure_0.stripe = arg1;
         }
         if (null == closure_0.stripe) {
-          let obj2 = closure_1_0(4726);
+          let obj2 = closure_1_0(4790);
           throw obj2.dispatchConfirmationError("Stripe cannot be null on a redirect.");
         } else {
           c3 = 3;
@@ -236,7 +236,7 @@ prototype["confirmRedirectedPaymentSource"] = function confirmRedirectedPaymentS
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -295,7 +295,7 @@ prototype["confirmRedirectedPaymentSource"] = function confirmRedirectedPaymentS
           closure_1 = arg1;
           c2.performRedirect(closure_1);
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp20) {
         c3 = tmp;
@@ -356,7 +356,7 @@ prototype["confirmPayment"] = function confirmPayment() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,11 +1,11 @@
-// Module ID: 10897
-// Function ID: 10898
+// Module ID: 10969
+// Function ID: 10970
 // Name: useCanRaiseHand
-// Dependencies: [4025, 505, 589, 2]
+// Dependencies: [4089, 505, 589, 2]
 // Exports: useCanRaiseHand
 
-// Module 10897 (useCanRaiseHand)
-import closure_2 from "getUncachedChannelPermissions" /* 4025 */;
+// Module 10969 (useCanRaiseHand)
+import closure_2 from "getUncachedChannelPermissions" /* 4089 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

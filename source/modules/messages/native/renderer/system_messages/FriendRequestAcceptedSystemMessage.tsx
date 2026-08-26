@@ -1,13 +1,13 @@
-// Module ID: 8327
-// Function ID: 8328
+// Module ID: 8394
+// Function ID: 8395
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [1391, 1922, 8221, 8223, 4380, 712, 1236, 8206, 8328, 8224, 2]
+// Dependencies: [1391, 1922, 8288, 8290, 4444, 712, 1236, 8273, 8395, 8291, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 8327 (createFriendRequestAcceptedSystemMessage)
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8221 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8223 */;
-import registerAssetDefault from "registerAsset" /* 8328 */;
+// Module 8394 (createFriendRequestAcceptedSystemMessage)
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8288 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8290 */;
+import registerAssetDefault from "registerAsset" /* 8395 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
@@ -36,7 +36,7 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           let content = message.content;
           if (null != content) {
             if ("" !== content) {
-              let tmp15Result = tmp15(4380);
+              let tmp15Result = tmp15(4444);
               obj1 = { baseTextColor: null };
               obj1[0] = tmp17(712).colors.TEXT_SUBTLE;
               const intl2 = tmp15(1236).intl;
@@ -73,10 +73,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           }
           const obj4 = { content: null, iconUrl: null, textColor: null };
           obj4[0] = formatToPartsResult;
-          tmp15Result = tmp15(8206);
+          tmp15Result = tmp15(8273);
           obj4[1] = tmp15Result.getAssetUriForEmbed(registerAssetDefault);
           obj4[2] = undefined;
-          const merged1 = Object.assign(tmp17(8224)(message));
+          const merged1 = Object.assign(tmp17(8291)(message));
           return obj4;
         }
       }

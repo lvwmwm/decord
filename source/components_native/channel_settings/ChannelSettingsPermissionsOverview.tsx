@@ -1,18 +1,18 @@
-// Module ID: 16173
-// Function ID: 16174
+// Module ID: 16254
+// Function ID: 16255
 // Name: ChannelPermissionSyncModule
-// Dependencies: [32, 5, 19, 17, 1986, 1391, 1985, 1910, 4034, 1922, 676, 21, 4380, 712, 4744, 1236, 4574, 4030, 9146, 8167, 12, 5873, 5480, 14055, 1500, 12309, 10074, 14756, 589, 1955, 9845, 1370, 5477, 8539, 4393, 2]
+// Dependencies: [32, 5, 19, 17, 1986, 1391, 1985, 1910, 4098, 1922, 676, 21, 4444, 712, 4808, 1236, 4638, 4094, 9214, 8234, 12, 5939, 5546, 14128, 1500, 12381, 10141, 14829, 589, 1955, 9912, 1370, 5543, 8607, 4457, 2]
 // Exports: default
 
-// Module 16173 (ChannelPermissionSyncModule)
+// Module 16254 (ChannelPermissionSyncModule)
 import applyDefault from "apply" /* 12 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import applyOverwritesAll from "applyOverwrites" /* 4030 */;
-import TableRowInner from "TableRowInner" /* 5480 */;
-import memoResult1Default from "memoResult1" /* 9845 */;
-import RoleLabel from "RoleLabel" /* 10074 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 14756 */;
+import applyOverwritesAll from "applyOverwrites" /* 4094 */;
+import TableRowInner from "TableRowInner" /* 5546 */;
+import memoResult1Default from "memoResult1" /* 9912 */;
+import RoleLabel from "RoleLabel" /* 10141 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 14829 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "noop" /* 19 */;
@@ -21,11 +21,11 @@ import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1986 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import closure_12 from "markAllUserIdListsStale" /* 4034 */;
+import closure_12 from "markAllUserIdListsStale" /* 4098 */;
 import closure_13 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function ChannelPermissionSyncModule(channel) {
@@ -58,7 +58,7 @@ function ChannelPermissionSyncModule(channel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ function ChannelPermissionSyncModule(channel) {
               obj.saveChannel(closure_1_0.id, obj4);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c3 = tmp;
@@ -130,7 +130,7 @@ function ChannelPermissionSyncModule(channel) {
     };
     obj.show(obj);
   }, items);
-  let obj = channel(4574);
+  let obj = channel(4638);
   const channelName = obj.computeChannelName(category, closure_13, closure_12);
   obj = { style: callback3().tableRowGroupContainer, children: null };
   let intl = channel(1236).intl;
@@ -146,12 +146,12 @@ function ChannelPermissionSyncModule(channel) {
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj1);
   }
   let obj2 = { title: formatToPlainStringResult, hasIcons: true, children: null };
-  let obj3 = { icon: closure_16(channel(14055).RefreshIcon, {}), label: null, onPress: null };
+  let obj3 = { icon: closure_16(channel(14128).RefreshIcon, {}), label: null, onPress: null };
   let intl2 = tmp3(1236).intl;
   obj3[1] = intl2.string(channel(1236).t.NVwuHq);
   obj3[2] = callback;
-  obj2[2] = closure_16(channel(5480).TableRow, obj3);
-  obj[1] = closure_16(channel(5873).TableRowGroup, obj2);
+  obj2[2] = closure_16(channel(5546).TableRow, obj3);
+  obj[1] = closure_16(channel(5939).TableRowGroup, obj2);
   return closure_16(View, obj);
 }
 function CategorySync(category) {
@@ -182,23 +182,23 @@ function AddPermission(isEditing) {
     const intl = tmp2(1236).intl;
     obj[0] = intl.string(tmp2(1236).t.vPHdP5);
     obj1 = { icon: null, label: null, onPress: null };
-    obj1[0] = callback(tmp2(12309).PlusMediumIcon, {});
+    obj1[0] = callback(tmp2(12381).PlusMediumIcon, {});
     const intl2 = tmp2(1236).intl;
     obj1[1] = intl2.string(tmp2(1236).t.fVWxvT);
     obj1[2] = function onPress() {
 
     };
-    const items = [callback(tmp2(5480).TableRow, obj1), ];
+    const items = [callback(tmp2(5546).TableRow, obj1), ];
     const obj2 = { icon: null, label: null, onPress: null };
-    obj2[0] = callback(tmp2(12309).PlusMediumIcon, {});
+    obj2[0] = callback(tmp2(12381).PlusMediumIcon, {});
     const intl3 = tmp2(1236).intl;
     obj2[1] = intl3.string(tmp2(1236).t.riesLt);
     obj2[2] = function onPress() {
 
     };
-    items[1] = callback(tmp2(5480).TableRow, obj2);
+    items[1] = callback(tmp2(5546).TableRow, obj2);
     obj[2] = items;
-    obj[1] = callback2(tmp2(5873).TableRowGroup, obj);
+    obj[1] = callback2(tmp2(5939).TableRowGroup, obj);
     return callback(View, obj);
   }
   tmp = callback3();
@@ -216,7 +216,7 @@ function RoleRow(onDelete) {
       obj[0] = ThemesDefault.colors.ICON_FEEDBACK_CRITICAL;
       const intl = tmp3(1236).intl;
       obj[1] = intl.string(tmp3(1236).t.N86XcP);
-      tmp2Result = tmp2(tmp3(14756).CircleMinusIcon, obj);
+      tmp2Result = tmp2(tmp3(14829).CircleMinusIcon, obj);
     }
   }
   obj[2] = tmp2Result;
@@ -267,7 +267,7 @@ function RoleOverwrites(guild) {
       }
     }, id.id);
   });
-  obj[1] = callback(guild(5873).TableRowGroup, obj1);
+  obj[1] = callback(guild(5939).TableRowGroup, obj1);
   return callback(View, obj);
 }
 function MemberRow(arg0) {
@@ -321,7 +321,7 @@ function MemberOverwrites(channel) {
         }
       }, id.id);
     });
-    obj[1] = callback(tmp3(5873).TableRowGroup, obj);
+    obj[1] = callback(tmp3(5939).TableRowGroup, obj);
     tmp4 = callback(View, obj);
   }
   return tmp4;

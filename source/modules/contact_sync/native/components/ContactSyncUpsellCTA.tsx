@@ -1,14 +1,14 @@
-// Module ID: 13410
-// Function ID: 13411
-// Dependencies: [19, 12235, 676, 21, 4380, 712, 8118, 698, 12232, 5867, 1236, 13411, 2]
+// Module ID: 13483
+// Function ID: 13484
+// Dependencies: [19, 12307, 676, 21, 4444, 712, 8185, 698, 12304, 5933, 1236, 13484, 2]
 
-// Module 13410
+// Module 13483
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 13411 */;
-import { dismissUpsellCTA } from "setStoredContacts" /* 12235 */;
+import registerAssetDefault from "registerAsset" /* 13484 */;
+import { dismissUpsellCTA } from "setStoredContacts" /* 12307 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
       location(closure_1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(5867);
+      let obj = location(5933);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
       obj = { label: null, onPress: null };
       const intl = location(1236).intl;
@@ -58,7 +58,7 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
   obj[4] = intl.string(location(1236).t.T6Rfd9);
   const intl2 = location(1236).intl;
   obj[5] = intl2.string(location(1236).t.c6KIpg);
-  return jsx(location(8118).FormCTA, {
+  return jsx(location(8185).FormCTA, {
     onPress() {
       let obj = closure_1_1(closure_1_2[7]);
       obj = { type: closure_1_5.CONTACT_SYNC_MODAL, location: null };
@@ -75,7 +75,7 @@ const memoResult = importAllResult.memo(function ContactSyncUpsellCTA(location) 
       location(closure_1_2[8]).openContactSyncModal({}, { page: str });
     },
     onLongPress() {
-      let obj = location(5867);
+      let obj = location(5933);
       obj = { key: "ContactSyncUpsellLongPress", options: null, hasIcons: false };
       obj = { label: null, onPress: null };
       const intl = location(1236).intl;

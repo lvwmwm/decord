@@ -1,21 +1,21 @@
-// Module ID: 10056
-// Function ID: 10057
+// Module ID: 10123
+// Function ID: 10124
 // Name: ForumComposerModal
-// Dependencies: [19, 17, 9941, 1391, 4742, 4741, 6002, 21, 4380, 712, 1892, 4745, 1236, 7380, 8512, 5834, 589, 10057, 10055, 1498, 1627, 11, 7370, 5382, 10058, 2]
+// Dependencies: [19, 17, 10008, 1391, 4806, 4805, 6068, 21, 4444, 712, 1892, 4809, 1236, 7446, 8579, 5900, 589, 10124, 10122, 1498, 1627, 11, 7436, 5448, 10125, 2]
 // Exports: default
 
-// Module 10056 (ForumComposerModal)
+// Module 10123 (ForumComposerModal)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "initialize" /* 9941 */;
+import closure_5 from "initialize" /* 10008 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "handleChanged" /* 4742 */;
-import { DraftType } from "handleChanged" /* 4742 */;
-import closure_9 from "map" /* 4741 */;
-import closure_10 from "handleLoadThreadsSuccess" /* 6002 */;
+import closure_7 from "handleChanged" /* 4806 */;
+import { DraftType } from "handleChanged" /* 4806 */;
+import closure_9 from "map" /* 4805 */;
+import closure_10 from "handleLoadThreadsSuccess" /* 6068 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 noopAll;

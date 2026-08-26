@@ -1,10 +1,10 @@
-// Module ID: 7005
-// Function ID: 7006
+// Module ID: 7071
+// Function ID: 7072
 // Name: _fetchUserEntitlements
-// Dependencies: [5, 676, 709, 530, 4643, 2]
+// Dependencies: [5, 676, 709, 530, 4707, 2]
 // Exports: fetchGiftableEntitlements, fetchUserEntitlements, fetchUserEntitlementsForApplication
 
-// Module 7005 (_fetchUserEntitlements)
+// Module 7071 (_fetchUserEntitlements)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
@@ -29,7 +29,7 @@ function _fetchUserEntitlements() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

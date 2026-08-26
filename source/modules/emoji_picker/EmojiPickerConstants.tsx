@@ -1,9 +1,9 @@
-// Module ID: 5286
-// Function ID: 5287
+// Module ID: 5352
+// Function ID: 5353
 // Name: EmojiCategoryTypes
 // Dependencies: [2]
 
-// Module 5286 (EmojiCategoryTypes)
+// Module 5352 (EmojiCategoryTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/emoji_picker/EmojiPickerConstants.tsx");

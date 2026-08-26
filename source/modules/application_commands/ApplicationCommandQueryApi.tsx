@@ -1,19 +1,19 @@
-// Module ID: 9687
-// Function ID: 9688
+// Module ID: 9755
+// Function ID: 9756
 // Name: findCommandInSection
-// Dependencies: [32, 19, 1910, 8494, 4838, 676, 7127, 8502, 589, 8504, 1370, 1955, 8499, 9688, 7129, 2]
+// Dependencies: [32, 19, 1910, 8561, 4903, 676, 7193, 8569, 589, 8571, 1370, 1955, 8566, 9756, 7195, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 9687 (findCommandInSection)
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7129 */;
-import ScoreMethod from "ScoreMethod" /* 8502 */;
-import getOptionValue from "getOptionValue" /* 8504 */;
+// Module 9755 (findCommandInSection)
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7195 */;
+import ScoreMethod from "ScoreMethod" /* 8569 */;
+import getOptionValue from "getOptionValue" /* 8571 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import getIndexKey from "getIndexKey" /* 8494 */;
-import closure_10 from "getIndexKey" /* 8494 */;
-import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4838 */;
+import getIndexKey from "getIndexKey" /* 8561 */;
+import closure_10 from "getIndexKey" /* 8561 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4903 */;
 import { NOOP } from "ME" /* 676 */;
 
 require = arg1;
@@ -39,7 +39,7 @@ function findCommandInSection(found, commandKey) {
       }
       let command;
       if (null != rootCommand) {
-        obj = _require(7127);
+        obj = _require(7193);
         obj = { rootCommand: null, command: null, applicationId: null };
         obj[0] = rootCommand;
         obj[1] = rootCommand;
@@ -188,7 +188,7 @@ export const getChangeKeys = function getChangeKeys(type) {
   return items;
 };
 export const useCachedResults = function useCachedResults(arg0, CHAT, text) {
-  closure_0 = CHAT;
+  const _require = CHAT;
   items = [CHAT];
   obj = {
     commandTypes: React.useMemo(() => {
@@ -197,7 +197,8 @@ export const useCachedResults = function useCachedResults(arg0, CHAT, text) {
     }, items),
     text
   };
-  const tmp = callback2(arg0, obj, { allowFetch: false });
+  obj = { scoreMethod: _require(8569).ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
+  const tmp = callback2(arg0, obj, obj);
   obj = { commands: tmp.commands, sections: tmp.descriptors };
   return obj;
 };

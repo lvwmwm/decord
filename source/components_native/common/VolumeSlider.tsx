@@ -1,22 +1,22 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 11012
+// Function ID: 11013
 // Name: VolumeSlider
-// Dependencies: [19, 17, 4444, 21, 500, 4380, 712, 4101, 10941, 8140, 4853, 1236, 4931, 2]
+// Dependencies: [19, 17, 4508, 21, 500, 4444, 712, 4165, 11013, 8207, 4919, 1236, 4997, 2]
 // Exports: default
 
-// Module 10940 (VolumeSlider)
+// Module 11012 (VolumeSlider)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import map from "map" /* 4101 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 4931 */;
-import _getRequireWildcardCacheDefault from "_getRequireWildcardCache" /* 8140 */;
-import VoiceXIcon from "VoiceXIcon" /* 10941 */;
+import map from "map" /* 4165 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 4997 */;
+import _getRequireWildcardCacheDefault from "_getRequireWildcardCache" /* 8207 */;
+import VoiceXIcon from "VoiceXIcon" /* 11013 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources" /* 4444 */;
+import { MAX_EMBEDDED_VOLUME_PERCEPTUAL as closure_4 } from "DesktopSources" /* 4508 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 500 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -50,7 +50,7 @@ export default function VolumeSlider(maxTrackTintColor) {
   obj = { style: tmp4.leftIcon };
   const items1 = [callback(VoiceXIcon.VoiceXIcon, obj), , ];
   obj1 = { style: tmp4.volumerSliderNative, value: null, minimumValue: 0, maximumValue: null, minimumTrackTintColor: null, maximumTrackTintColor: null, accessibilityLabel: null, onValueChange: null, onResponderGrant: null };
-  let tmp5Result = tmp5(4853);
+  let tmp5Result = tmp5(4919);
   obj1[1] = tmp5Result.amplitudeToPerceptual(value);
   obj1[3] = maxVolume;
   obj1[4] = minTrackColor;

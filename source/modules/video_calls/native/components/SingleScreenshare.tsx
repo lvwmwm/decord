@@ -1,15 +1,15 @@
-// Module ID: 10993
-// Function ID: 10994
+// Module ID: 11065
+// Function ID: 11066
 // Name: SingleScreenshare
-// Dependencies: [19, 9895, 21, 4380, 712, 4831, 10994, 4609, 2]
+// Dependencies: [19, 9962, 21, 4444, 712, 4896, 11066, 4673, 2]
 // Exports: default
 
-// Module 10993 (SingleScreenshare)
+// Module 11065 (SingleScreenshare)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9895 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9962 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 noopAll;
 ({ resetFocus: obj1, toggleFocus: c3 } = VoiceChatDrawerState);
@@ -21,7 +21,7 @@ const result = require("set").fileFinishedImporting("modules/video_calls/native/
 
 export default function SingleScreenshare(channel) {
   channel = channel.channel;
-  channel(4831)(() => {
+  channel(4896)(() => {
     callback();
   });
   const obj = {
@@ -42,5 +42,5 @@ export default function SingleScreenshare(channel) {
     stageStreamContainer = tmp.stageStreamContainer;
   }
   obj[3] = stageStreamContainer;
-  return tmp3(channel(10994), obj);
+  return tmp3(channel(11066), obj);
 };

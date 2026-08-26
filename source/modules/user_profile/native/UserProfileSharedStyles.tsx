@@ -1,15 +1,15 @@
-// Module ID: 8982
-// Function ID: 8983
+// Module ID: 9050
+// Function ID: 9051
 // Name: useSharedStyles
-// Dependencies: [5882, 4380, 712, 1367, 2]
-// Exports: default
+// Dependencies: [5948, 4444, 712, 1367, 2]
+// Exports: default, useUserProfileCardRadius
 
-// Module 8982 (useSharedStyles)
+// Module 9050 (useSharedStyles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 5882 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 5948 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 ({ AVATAR_CONTAINER_SIZE: obj1, AVATAR_CUSTOM_STATUS_GAP: c3, AVATAR_PADDING: c4, CARD_PADDING: c5, PROFILE_CONTENT_BOTTOM_PADDING: closure_6, PROFILE_SIDE_PADDING: error, PROFILE_TOP_LAYER_Z_INDEX: closure_8 } = ARBITRARY_LARGE_OFFSET);
 let closure_9 = createCacheKey.createStyles((arg0) => {
@@ -34,4 +34,8 @@ const result = set.fileFinishedImporting("modules/user_profile/native/UserProfil
 
 export default function useSharedStyles() {
   return callback(useIsMobileVisualRefreshExperimentEnabledDefault("UserProfileSharedStyles"));
+};
+export const useUserProfileCardRadius = function useUserProfileCardRadius() {
+  const radii = ThemesDefault.radii;
+  return useIsMobileVisualRefreshExperimentEnabledDefault("UserProfileSharedStyles") ? radii.md : radii.lg;
 };

@@ -1,23 +1,23 @@
-// Module ID: 14944
-// Function ID: 14945
+// Module ID: 15023
+// Function ID: 15024
 // Name: ChangeLogScreen
-// Dependencies: [19, 17, 676, 1980, 21, 4380, 712, 4108, 698, 8991, 14945, 5374, 9017, 1236, 4949, 9204, 10117, 1297, 8343, 1494, 8344, 1501, 5376, 3979, 8345, 4376, 4611, 5889, 2]
+// Dependencies: [19, 17, 676, 1980, 21, 4444, 712, 4172, 698, 9059, 15024, 5440, 9085, 1236, 5015, 9272, 10184, 1297, 8410, 1494, 8411, 1501, 5442, 4043, 8412, 4440, 4675, 5955, 2]
 // Exports: default
 
-// Module 14944 (ChangeLogScreen)
+// Module 15023 (ChangeLogScreen)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef4611 from "module_4611" /* 4611 */;
-import NavigationStack from "NavigationStack" /* 5889 */;
-import LHeadingDefault from "LHeading" /* 8343 */;
-import VideoComponentDefault from "VideoComponent" /* 9017 */;
-import _modDef14945 from "module_14945" /* 14945 */;
+import _modDef4675 from "module_4675" /* 4675 */;
+import NavigationStack from "NavigationStack" /* 5955 */;
+import LHeadingDefault from "LHeading" /* 8410 */;
+import VideoComponentDefault from "VideoComponent" /* 9085 */;
+import _modDef15024 from "module_15024" /* 15024 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { CHANGELOG_MODAL_KEY } from "CHANGELOG_MODAL_KEY" /* 1980 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 class ChangeLogScreen {
@@ -133,7 +133,7 @@ class ChangeLogScreen {
   }
 }
 function hideChangeLog() {
-  _modDef4611.popWithKey(CHANGELOG_MODAL_KEY);
+  _modDef4675.popWithKey(CHANGELOG_MODAL_KEY);
 }
 let c3 = importAllResult;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -281,7 +281,7 @@ prototype["renderVideo"] = function renderVideo() {
       obj1[3] = function onReady() {
         return self.setState({ ytVideoReady: true });
       };
-      const items = [callback(_modDef14945, obj1), ];
+      const items = [callback(_modDef15024, obj1), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj2 = { style: null, source: null };
@@ -290,8 +290,8 @@ prototype["renderVideo"] = function renderVideo() {
         const _HermesInternal = HermesInternal;
         obj3[0] = "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg";
         obj2[1] = obj3;
-        tmp6Result = tmp6(tmp7(5374), obj2);
-        const tmp7Result = tmp7(5374);
+        tmp6Result = tmp6(tmp7(5440), obj2);
+        const tmp7Result = tmp7(5440);
       }
       items[1] = tmp6Result;
       obj[2] = items;
@@ -321,14 +321,14 @@ prototype["renderVideo"] = function renderVideo() {
     obj7[2] = tmp.videoOverlay;
     obj7[3] = self.playVideo;
     const obj8 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: null, onPress: null, style: null, iconSize: null, iconStyle: null };
-    obj8[2] = tmp15(10117);
+    obj8[2] = tmp15(10184);
     obj8[3] = self.playVideo;
     obj8[4] = tmp.playButton;
     obj8[5] = tmp18(1297).IconSizes.CUSTOM;
     obj8[6] = tmp.playIcon;
-    obj7[4] = tmp12(tmp15(9204), obj8);
-    tmp12Result = tmp12(tmp18(4949).PressableOpacity, obj7);
-    const tmp15Result = tmp15(9204);
+    obj7[4] = tmp12(tmp15(9272), obj8);
+    tmp12Result = tmp12(tmp18(5015).PressableOpacity, obj7);
+    const tmp15Result = tmp15(9272);
   }
   items1[1] = tmp12Result;
   obj5[2] = items1;

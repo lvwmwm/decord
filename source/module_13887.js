@@ -1,14 +1,16 @@
 // Module ID: 13887
 // Function ID: 13888
-// Dependencies: []
+// Dependencies: [13888]
 
 // Module 13887
-arg5.default = () => (arg0) => {
-  closure_0 = arg0;
-  const features = {
-    image(uri) {
-      return closure_0.send("image", { uri: uri.uri, preview: uri.preview, filename: uri.filename, width: uri.width, height: uri.height, caption: uri.caption });
-    }
-  };
-  return { features };
+import _mod13888 from "module_13888" /* 13888 */;
+
+
+export default (arg0) => {
+  const tmp = _mod13888(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
+  }
+  return num;
 };

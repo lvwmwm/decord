@@ -1,14 +1,14 @@
-// Module ID: 6421
-// Function ID: 6422
+// Module ID: 6487
+// Function ID: 6488
 // Name: FireIllocon
-// Dependencies: [21, 5374, 6422, 2]
+// Dependencies: [21, 5440, 6488, 2]
 // Exports: FireIllocon
 
-// Module 6421 (FireIllocon)
+// Module 6487 (FireIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6422 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6488 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FireIllocon.native.tsx");

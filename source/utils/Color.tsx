@@ -1,9 +1,9 @@
-// Module ID: 4229
-// Function ID: 4230
+// Module ID: 4293
+// Function ID: 4294
 // Name: hslToRgb
 // Dependencies: [32, 2]
 
-// Module 4229 (hslToRgb)
+// Module 4293 (hslToRgb)
 import closure_0 from "_slicedToArray" /* 32 */;
 
 function hslToRgb(alpha) {

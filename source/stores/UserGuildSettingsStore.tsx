@@ -1,25 +1,25 @@
-// Module ID: 4589
-// Function ID: 4590
+// Module ID: 4653
+// Function ID: 4654
 // Name: updateUserGuildSettingsInternal
-// Dependencies: [1984, 4027, 1395, 1391, 1910, 1922, 676, 4037, 4590, 685, 4028, 12, 1403, 709, 11, 589, 2]
+// Dependencies: [1984, 4091, 1395, 1391, 1910, 1922, 676, 4101, 4654, 685, 4092, 12, 1403, 709, 11, 589, 2]
 // Exports: convertChannelOverridesToMap, getGuildDefaults
 
-// Module 4589 (updateUserGuildSettingsInternal)
+// Module 4653 (updateUserGuildSettingsInternal)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import hasFlagAll from "hasFlag" /* 1403 */;
-import reset from "reset" /* 4028 */;
-import resetDefault from "reset" /* 4028 */;
+import reset from "reset" /* 4092 */;
+import resetDefault from "reset" /* 4092 */;
 import closure_4 from "initialize" /* 1984 */;
-import closure_5 from "storeThread" /* 4027 */;
+import closure_5 from "storeThread" /* 4091 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { AccountNotificationFlags } from "AccountNotificationFlags" /* 4037 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4590 */;
+import { AccountNotificationFlags } from "AccountNotificationFlags" /* 4101 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4654 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
 import set from "set" /* 2 */;
 

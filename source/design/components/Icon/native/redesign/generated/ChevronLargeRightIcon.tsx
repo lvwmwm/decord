@@ -1,14 +1,14 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 12010
+// Function ID: 12011
 // Name: ChevronLargeRightIcon
-// Dependencies: [19, 21, 712, 4100, 11938, 2]
+// Dependencies: [19, 21, 712, 4164, 12011, 2]
 // Exports: ChevronLargeRightIcon
 
-// Module 11937 (ChevronLargeRightIcon)
+// Module 12010 (ChevronLargeRightIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 11938 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 12011 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

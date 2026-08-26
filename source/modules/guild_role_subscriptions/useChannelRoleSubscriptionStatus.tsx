@@ -1,13 +1,13 @@
-// Module ID: 4846
-// Function ID: 4847
+// Module ID: 4911
+// Function ID: 4912
 // Name: getChannelRoleSubscriptionStatus
-// Dependencies: [1983, 1391, 4025, 676, 589, 2]
+// Dependencies: [1983, 1391, 4089, 676, 589, 2]
 // Exports: default
 
-// Module 4846 (getChannelRoleSubscriptionStatus)
+// Module 4911 (getChannelRoleSubscriptionStatus)
 import closure_2 from "isSubscriptionGated" /* 1983 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;

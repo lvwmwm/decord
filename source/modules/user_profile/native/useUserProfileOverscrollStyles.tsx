@@ -1,13 +1,13 @@
-// Module ID: 8984
-// Function ID: 8985
+// Module ID: 9052
+// Function ID: 9053
 // Name: useUserProfileOverscrollStyles
-// Dependencies: [32, 19, 4372, 1494, 589, 4120, 2]
+// Dependencies: [32, 19, 4436, 1494, 589, 4184, 2]
 // Exports: default
 
-// Module 8984 (useUserProfileOverscrollStyles)
+// Module 9052 (useUserProfileOverscrollStyles)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
 
 const require = arg1;
 let closure_6 = { code: "function useUserProfileOverscrollStylesTsx1(){const{position}=this.__closure;return position.get()<=0;}" };

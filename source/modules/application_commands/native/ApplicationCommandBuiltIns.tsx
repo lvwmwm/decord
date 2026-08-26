@@ -1,11 +1,11 @@
-// Module ID: 8506
-// Function ID: 8507
+// Module ID: 8573
+// Function ID: 8574
 // Name: get untranslatedDescription
-// Dependencies: [4034, 1922, 4838, 1955, 7129, 1236, 4574, 4744, 4393, 7063, 2]
+// Dependencies: [4098, 1922, 4903, 1955, 7195, 1236, 4638, 4808, 4457, 7129, 2]
 
-// Module 8506 (get untranslatedDescription)
-import setDefault from "set" /* 4744 */;
-import closure_3 from "markAllUserIdListsStale" /* 4034 */;
+// Module 8573 (get untranslatedDescription)
+import setDefault from "set" /* 4808 */;
+import closure_3 from "markAllUserIdListsStale" /* 4098 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
@@ -31,11 +31,11 @@ obj.predicate = function predicate(channel) {
 obj.execute = function execute(arg0, channel) {
   channel = channel.channel;
   if (null != channel) {
-    const channelName = channel(4574).computeChannelName(channel, closure_4, closure_3);
+    const channelName = channel(4638).computeChannelName(channel, closure_4, closure_3);
     const intl5 = channel(1236).intl;
     let obj = { name: null };
     obj[0] = channelName;
-    const obj5 = channel(4574);
+    const obj5 = channel(4638);
     const intl6 = channel(1236).intl;
     obj = { name: null };
     obj[0] = channelName;

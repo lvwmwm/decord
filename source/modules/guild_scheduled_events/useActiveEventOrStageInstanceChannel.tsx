@@ -1,12 +1,12 @@
-// Module ID: 15544
-// Function ID: 15545
+// Module ID: 15623
+// Function ID: 15624
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [1391, 9185, 15543, 2]
+// Dependencies: [1391, 9253, 15622, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 15544 (useActiveEventOrStageInstanceChannel)
-import useGuildEvents from "useGuildEvents" /* 9185 */;
-import useLiveStageChannelsDefault from "useLiveStageChannels" /* 15543 */;
+// Module 15623 (useActiveEventOrStageInstanceChannel)
+import useGuildEvents from "useGuildEvents" /* 9253 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 15622 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 require = arg1;

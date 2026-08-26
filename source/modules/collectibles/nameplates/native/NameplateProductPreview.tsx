@@ -1,21 +1,21 @@
-// Module ID: 9705
-// Function ID: 9706
+// Module ID: 9773
+// Function ID: 9774
 // Name: NameplateUser
-// Dependencies: [19, 17, 4372, 21, 4380, 712, 9521, 1947, 1236, 4376, 4826, 9496, 8455, 8423, 589, 4224, 4635, 9617, 9618, 1297, 9706, 5480, 2]
+// Dependencies: [19, 17, 4436, 21, 4444, 712, 9589, 1947, 1236, 4440, 4891, 9564, 8522, 8490, 589, 4288, 4699, 9685, 9686, 1297, 9774, 5546, 2]
 // Exports: default
 
-// Module 9705 (NameplateUser)
+// Module 9773 (NameplateUser)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import getNameplateData from "getNameplateData" /* 1947 */;
-import LinearGradientDefault from "LinearGradient" /* 4826 */;
-import TableRowInner from "TableRowInner" /* 5480 */;
-import firstAvatarDecoration from "firstAvatarDecoration" /* 9521 */;
+import LinearGradientDefault from "LinearGradient" /* 4891 */;
+import TableRowInner from "TableRowInner" /* 5546 */;
+import firstAvatarDecoration from "firstAvatarDecoration" /* 9589 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function NameplateUser(arg0) {
@@ -51,7 +51,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = React.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: "function changeEventCalculator_Pnpm_pinchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={scaleChange:current.scale};}else{changePayload={scaleChange:current.scale/previous.scale};}return{...current,...changePayload};}", autoStatusCutout: "function changeEventCalculator_Pnpm_rotationGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={rotationChange:current.rotation};}else{changePayload={rotationChange:current.rotation-previous.rotation};}return{...current,...changePayload};}", "aria-hidden": "function changeEventCalculator_Pnpm_forceTouchGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={forceChange:current.force};}else{changePayload={forceChange:current.force-previous.force};}return{...current,...changePayload};}" };
+    const obj = { user: currentUser, guildId: "a", size: true, avatarDecoration: true, animate: null, autoStatusCutout: null, "aria-hidden": null };
     obj[2] = currentUser(stateFromStores[19]).AvatarSizes.NORMAL;
     obj[3] = closure_1;
     obj[4] = !stateFromStores;
@@ -115,7 +115,7 @@ export default function NameplateProductPreview(product) {
     const intl2 = tmp2(1236).intl;
     const items1 = [intl2.string(tmp2(1236).t["yzW/fZ"]), " \u2014 3"];
     obj3[5] = items1;
-    items[1] = callback2(tmp2(4376).Text, obj3);
+    items[1] = callback2(tmp2(4440).Text, obj3);
     const obj4 = { user: null, start: true };
     obj4[0] = nameplateSampleUsers.phibi;
     items[2] = callback(PlaceholderUser, obj4);
@@ -131,7 +131,7 @@ export default function NameplateProductPreview(product) {
     const intl3 = tmp2(1236).intl;
     const items2 = [intl3.string(tmp2(1236).t["NG43/6"]), " \u2014 12"];
     obj7[5] = items2;
-    items[5] = callback2(tmp2(4376).Text, obj7);
+    items[5] = callback2(tmp2(4440).Text, obj7);
     const obj8 = { user: null, start: true };
     obj8[0] = nameplateSampleUsers.boom;
     items[6] = callback(PlaceholderUser, obj8);

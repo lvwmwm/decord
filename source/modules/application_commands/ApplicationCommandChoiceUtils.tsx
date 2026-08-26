@@ -1,12 +1,12 @@
-// Module ID: 10148
-// Function ID: 10149
+// Module ID: 10215
+// Function ID: 10216
 // Name: toChoiceBooleanValue
-// Dependencies: [7382, 4838, 2]
+// Dependencies: [7448, 4903, 2]
 // Exports: findAutocompleteChoiceNumberValue, findAutocompleteChoiceStringValue, findChoiceNumberValue, findChoiceStringValue, toChoiceBooleanValue
 
-// Module 10148 (toChoiceBooleanValue)
-import closure_0 from "handleInit" /* 7382 */;
-import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4838 */;
+// Module 10215 (toChoiceBooleanValue)
+import closure_0 from "handleInit" /* 7448 */;
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4903 */;
 
 ({ FALSE_OPTION_NAME: closure_1, TRUE_OPTION_NAME: obj1 } = TRUE_OPTION_NAME);
 const result = require("set").fileFinishedImporting("modules/application_commands/ApplicationCommandChoiceUtils.tsx");

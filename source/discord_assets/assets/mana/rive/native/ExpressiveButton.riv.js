@@ -1,9 +1,9 @@
-// Module ID: 4185
-// Function ID: 4186
+// Module ID: 4249
+// Function ID: 4250
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4185 (metadata)
+// Module 4249 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/ExpressiveButton.riv.js");

@@ -1,24 +1,24 @@
-// Module ID: 16053
-// Function ID: 16054
+// Module ID: 16134
+// Function ID: 16135
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 1391, 676, 1235, 21, 4380, 712, 5996, 5475, 10318, 4391, 16054, 647, 1501, 2]
+// Dependencies: [19, 17, 1391, 676, 1235, 21, 4444, 712, 6062, 5541, 10386, 4455, 16135, 647, 1501, 2]
 
-// Module 16053 (ThreadsScreen)
+// Module 16134 (ThreadsScreen)
 import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5475 */;
-import ThreadListSectionDefault from "ThreadListSection" /* 16054 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5541 */;
+import ThreadListSectionDefault from "ThreadListSection" /* 16135 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import { SearchTypes } from "ME" /* 676 */;
 import { OpenThreadAnalyticsLocations as closure_7 } from "AbortCodes" /* 1235 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 function ThreadsScreen(channel) {
   channel = channel.channel;
-  let obj = channel(5996);
+  let obj = channel(6062);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const callback = importAllResult.useCallback(() => {

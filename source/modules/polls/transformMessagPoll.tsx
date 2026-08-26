@@ -1,12 +1,12 @@
-// Module ID: 4737
-// Function ID: 4738
+// Module ID: 4801
+// Function ID: 4802
 // Name: transformMessagePoll
-// Dependencies: [3979, 2]
+// Dependencies: [4043, 2]
 // Exports: default
 
-// Module 4737 (transformMessagePoll)
+// Module 4801 (transformMessagePoll)
 import set from "set" /* 2 */;
-import hooksDefault from "hooks" /* 3979 */;
+import hooksDefault from "hooks" /* 4043 */;
 
 const result = set.fileFinishedImporting("modules/polls/transformMessagPoll.tsx");
 

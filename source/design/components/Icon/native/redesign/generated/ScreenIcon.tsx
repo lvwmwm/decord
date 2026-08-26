@@ -1,14 +1,14 @@
-// Module ID: 12389
-// Function ID: 12390
+// Module ID: 12461
+// Function ID: 12462
 // Name: ScreenIcon
-// Dependencies: [19, 21, 712, 4100, 12390, 2]
+// Dependencies: [19, 21, 712, 4164, 12462, 2]
 // Exports: ScreenIcon
 
-// Module 12389 (ScreenIcon)
+// Module 12461 (ScreenIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 12390 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 12462 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

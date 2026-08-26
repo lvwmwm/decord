@@ -1,18 +1,18 @@
-// Module ID: 15482
-// Function ID: 15483
+// Module ID: 15561
+// Function ID: 15562
 // Name: VoiceGuildTagChiplet
-// Dependencies: [19, 17, 1922, 8203, 21, 500, 4380, 712, 589, 8422, 9400, 4376, 2]
+// Dependencies: [19, 17, 1922, 8270, 21, 500, 4444, 712, 589, 8489, 9468, 4440, 2]
 // Exports: default
 
-// Module 15482 (VoiceGuildTagChiplet)
+// Module 15561 (VoiceGuildTagChiplet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import { GuildTagBadgeSize } from "items" /* 8203 */;
+import { GuildTagBadgeSize } from "items" /* 8270 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 500 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 noopAll;
@@ -39,7 +39,7 @@ export default function VoiceGuildTagChiplet(userId) {
   const items = [closure_3];
   const items1 = [userId];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_3.getUser(userId), items1);
-  obj1 = userId(8422);
+  obj1 = userId(8489);
   let primaryGuild;
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
@@ -52,17 +52,17 @@ export default function VoiceGuildTagChiplet(userId) {
       obj[0] = tmp.gapContainer;
       obj = { style: null, children: null };
       obj[0] = tmp.tagContainer;
-      const guildTagBadgeUrl = tmp2(8422).getGuildTagBadgeUrl(guildId, tmp7, GuildTagBadgeSize.SIZE_12);
+      const guildTagBadgeUrl = tmp2(8489).getGuildTagBadgeUrl(guildId, tmp7, GuildTagBadgeSize.SIZE_12);
       obj1 = { source: null, size: null };
       const obj2 = { uri: null };
       obj2[0] = guildTagBadgeUrl;
       obj1[0] = obj2;
       obj1[1] = GuildTagBadgeSize.SIZE_12;
-      const items2 = [callback(tmp2(9400).GuildTagBadge, obj1), ];
+      const items2 = [callback(tmp2(9468).GuildTagBadge, obj1), ];
       const obj3 = { variant: "text-xs/semibold", color: "text-default", style: null, children: null };
       obj3[2] = tmp.tag;
       obj3[3] = tag;
-      items2[1] = callback(tmp2(4376).Text, obj3);
+      items2[1] = callback(tmp2(4440).Text, obj3);
       obj[1] = items2;
       obj[1] = callback2(View, obj);
       return callback(View, obj);

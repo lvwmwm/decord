@@ -1,18 +1,18 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 9778
+// Function ID: 9779
 // Name: OrbBadgePreview
-// Dependencies: [19, 17, 21, 4380, 9496, 9593, 9565, 1236, 2]
+// Dependencies: [19, 17, 21, 4444, 9564, 9661, 9633, 1236, 2]
 // Exports: OrbBadgePreview
 
-// Module 9710 (OrbBadgePreview)
+// Module 9778 (OrbBadgePreview)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useCurrentUser from "useCurrentUser" /* 9496 */;
-import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 9565 */;
-import filterLayerDefault from "filterLayer" /* 9593 */;
+import useCurrentUser from "useCurrentUser" /* 9564 */;
+import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 9633 */;
+import filterLayerDefault from "filterLayer" /* 9661 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

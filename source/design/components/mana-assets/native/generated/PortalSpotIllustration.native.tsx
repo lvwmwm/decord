@@ -1,14 +1,14 @@
-// Module ID: 6769
-// Function ID: 6770
+// Module ID: 6835
+// Function ID: 6836
 // Name: PortalSpotIllustration
-// Dependencies: [21, 5374, 6770, 2]
+// Dependencies: [21, 5440, 6836, 2]
 // Exports: PortalSpotIllustration
 
-// Module 6769 (PortalSpotIllustration)
+// Module 6835 (PortalSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6770 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 6836 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PortalSpotIllustration.native.tsx");

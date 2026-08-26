@@ -1,16 +1,16 @@
-// Module ID: 16388
-// Function ID: 16389
+// Module ID: 16469
+// Function ID: 16470
 // Name: FramePanelController
-// Dependencies: [19, 4421, 10677, 10678, 9915, 21, 589, 10681, 16355, 16389, 2]
+// Dependencies: [19, 4485, 10749, 10750, 9982, 21, 589, 10753, 16436, 16470, 2]
 // Exports: default
 
-// Module 16388 (FramePanelController)
-import contextDefault from "context" /* 16389 */;
+// Module 16469 (FramePanelController)
+import contextDefault from "context" /* 16470 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "addApplication" /* 4421 */;
-import closure_5 from "map" /* 10677 */;
-import { asLaunched } from "FrameLayoutModes" /* 10678 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9915 */;
+import closure_4 from "addApplication" /* 4485 */;
+import closure_5 from "map" /* 10749 */;
+import { asLaunched } from "FrameLayoutModes" /* 10750 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9982 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -57,5 +57,5 @@ export default function FramePanelController(children) {
     }
   }, items1);
   obj = { context: contextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children };
-  return jsx(mainFrameId(16355).BaseActivityPanelController, { context: contextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
+  return jsx(mainFrameId(16436).BaseActivityPanelController, { context: contextDefault, orientationLockStateForApp, mode, hasConnectedActivity: null != mainFrameId, connectedActivityAppId, currentApp, updateActivityPanelMode: callback, children: children.children });
 };

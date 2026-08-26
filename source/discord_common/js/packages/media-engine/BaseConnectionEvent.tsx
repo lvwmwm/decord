@@ -1,9 +1,9 @@
-// Module ID: 4495
-// Function ID: 4496
+// Module ID: 4559
+// Function ID: 4560
 // Name: BaseConnectionEvent
 // Dependencies: [2]
 
-// Module 4495 (BaseConnectionEvent)
+// Module 4559 (BaseConnectionEvent)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/BaseConnectionEvent.tsx");

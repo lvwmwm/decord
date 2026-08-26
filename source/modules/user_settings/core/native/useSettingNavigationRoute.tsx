@@ -1,10 +1,10 @@
-// Module ID: 7021
-// Function ID: 7022
+// Module ID: 7087
+// Function ID: 7088
 // Name: useSettingNavigationRoute
 // Dependencies: [1501, 2]
 // Exports: useSettingNavigationRoute
 
-// Module 7021 (useSettingNavigationRoute)
+// Module 7087 (useSettingNavigationRoute)
 import set from "set" /* 2 */;
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
 

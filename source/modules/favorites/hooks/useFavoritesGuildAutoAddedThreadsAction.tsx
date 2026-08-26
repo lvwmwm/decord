@@ -1,10 +1,10 @@
-// Module ID: 15497
-// Function ID: 15498
+// Module ID: 15576
+// Function ID: 15577
 // Name: useFavoritesGuildAutoAddedThreadsAction
-// Dependencies: [19, 1922, 1394, 9860, 589, 9859, 1236, 3083, 2]
+// Dependencies: [19, 1922, 1394, 9927, 589, 9926, 1236, 3147, 2]
 // Exports: default
 
-// Module 15497 (useFavoritesGuildAutoAddedThreadsAction)
+// Module 15576 (useFavoritesGuildAutoAddedThreadsAction)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import closure_5 from "initializeFromUserSettings" /* 1394 */;
@@ -13,7 +13,7 @@ const require = arg1;
 let result = require("set").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildAutoAddedThreadsAction.tsx");
 
 export default function useFavoritesGuildAutoAddedThreadsAction() {
-  let obj = hasAccess(9860);
+  let obj = hasAccess(9927);
   hasAccess = obj.useFavoritesAccess("useFavoritesGuildAutoAddedThreadsAction").hasAccess;
   const items = [closure_4];
   if (hasAccess) {
@@ -41,9 +41,9 @@ export default function useFavoritesGuildAutoAddedThreadsAction() {
     }
   }, items2);
   const intl = tmp(1236).intl;
-  obj[2] = intl.string(stateFromStores(3083).DIyQIF);
+  obj[2] = intl.string(stateFromStores(3147).DIyQIF);
   const intl2 = tmp(1236).intl;
-  obj[3] = intl2.string(stateFromStores(3083).g2vHYJ);
+  obj[3] = intl2.string(stateFromStores(3147).g2vHYJ);
   obj[4] = callback;
   return obj;
 };

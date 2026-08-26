@@ -1,10 +1,10 @@
-// Module ID: 7968
-// Function ID: 7969
+// Module ID: 8035
+// Function ID: 8036
 // Name: useIsExpressiveModalV2Enabled
 // Dependencies: [1472, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 7968 (useIsExpressiveModalV2Enabled)
+// Module 8035 (useIsExpressiveModalV2Enabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

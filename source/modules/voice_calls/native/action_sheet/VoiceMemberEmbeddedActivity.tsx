@@ -1,10 +1,10 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13326
+// Function ID: 13327
 // Name: XSMALL
-// Dependencies: [32, 19, 17, 1390, 1391, 1922, 1301, 5504, 21, 1297, 4380, 712, 5840, 1370, 589, 4015, 10733, 1494, 7836, 10732, 4949, 1236, 4376, 10836, 4816, 2]
+// Dependencies: [32, 19, 17, 1390, 1391, 1922, 1301, 5570, 21, 1297, 4444, 712, 5906, 1370, 589, 4079, 10805, 1494, 7903, 10804, 5015, 1236, 4440, 10908, 4880, 2]
 // Exports: calculateActivityRowHeight, default
 
-// Module 13253 (XSMALL)
+// Module 13326 (XSMALL)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
@@ -12,9 +12,9 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "participantFromServer" /* 1390 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5504 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5570 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 noopAll;

@@ -1,16 +1,16 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11675
+// Function ID: 11676
 // Name: ForumPostTimestamp
-// Dependencies: [19, 11589, 21, 4380, 8560, 4376, 2]
+// Dependencies: [19, 11662, 21, 4444, 8628, 4440, 2]
 // Exports: default
 
-// Module 11602 (ForumPostTimestamp)
+// Module 11675 (ForumPostTimestamp)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4376 */;
-import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 8560 */;
-import { useForumChannelStore } from "set" /* 11589 */;
+import Text from "Text" /* 4440 */;
+import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 8628 */;
+import { useForumChannelStore } from "set" /* 11662 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

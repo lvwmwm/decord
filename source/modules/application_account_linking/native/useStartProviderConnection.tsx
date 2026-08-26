@@ -1,10 +1,10 @@
-// Module ID: 5852
-// Function ID: 5853
+// Module ID: 5918
+// Function ID: 5919
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 5853, 4094, 2]
+// Dependencies: [5, 19, 5919, 4158, 2]
 // Exports: useStartProviderConnection
 
-// Module 5852 (useStartProviderConnection)
+// Module 5918 (useStartProviderConnection)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_account_linking/native/useStartProviderConnection.tsx");
 
 export const useStartProviderConnection = function useStartProviderConnection(provider_id) {
-  let obj = _require(5853);
+  let obj = _require(5919);
   const providerConnection = obj.useProviderConnection(provider_id);
   const startConnection = providerConnection.startConnection;
   _require = startConnection;
@@ -35,7 +35,7 @@ export const useStartProviderConnection = function useStartProviderConnection(pr
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

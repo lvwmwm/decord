@@ -1,11 +1,11 @@
-// Module ID: 11478
-// Function ID: 11479
+// Module ID: 11550
+// Function ID: 11551
 // Name: shouldRenderReportFalsePositiveButton
-// Dependencies: [6017, 647, 2]
+// Dependencies: [6083, 647, 2]
 // Exports: shouldRenderReportFalsePositiveButton, useShouldRenderReportFalsePositiveButton
 
-// Module 11478 (shouldRenderReportFalsePositiveButton)
-import closure_2 from "getFpMessageInfo" /* 6017 */;
+// Module 11550 (shouldRenderReportFalsePositiveButton)
+import closure_2 from "getFpMessageInfo" /* 6083 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/hooks/useShouldRenderReportFalsePositiveButton.tsx");

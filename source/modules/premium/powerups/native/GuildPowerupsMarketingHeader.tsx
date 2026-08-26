@@ -1,20 +1,20 @@
-// Module ID: 13052
-// Function ID: 13053
+// Module ID: 13125
+// Function ID: 13126
 // Name: PerkText
-// Dependencies: [19, 17, 4266, 21, 4380, 712, 689, 4376, 13053, 12048, 12073, 1236, 2369, 13054, 2]
+// Dependencies: [19, 17, 4330, 21, 4444, 712, 689, 4440, 13126, 12121, 12146, 1236, 2401, 13127, 2]
 // Exports: default
 
-// Module 13052 (PerkText)
+// Module 13125 (PerkText)
 import nDefault from "n" /* 689 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4376 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12073 */;
-import setDefault from "set" /* 13053 */;
+import Text from "Text" /* 4440 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12146 */;
+import setDefault from "set" /* 13126 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "calculateAppliedBoosts" /* 4266 */;
+import closure_5 from "calculateAppliedBoosts" /* 4330 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function PerkText(children) {
@@ -63,7 +63,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str2 = "";
         if (0 !== arr.length) {
-          let first = tmp2(13054)(arr);
+          let first = tmp2(13127)(arr);
           if (1 === first.length) {
             obj = { powerup: null };
             first = first[0];
@@ -78,14 +78,14 @@ export default function GuildPowerupsMarketingHeader(guild) {
             const obj3 = { powerup: null };
             obj3[0] = first[1];
             obj1[1] = tmp6(PerkText, obj3);
-            formatResult = intl2.format(tmp2(2369).MNO3sG, obj1);
+            formatResult = intl2.format(tmp2(2401).MNO3sG, obj1);
           }
         }
       }
       const obj4 = { perks: null };
       obj4[0] = str2;
-      obj[2] = intl.format(tmp2(2369)["7lwpzR"], obj4);
-      obj[1] = jsx(guild(4376).Text, { style: null, variant: "text-sm/semibold", children: null });
+      obj[2] = intl.format(tmp2(2401)["7lwpzR"], obj4);
+      obj[1] = jsx(guild(4440).Text, { style: null, variant: "text-sm/semibold", children: null });
       return <View style={null} variant="text-sm/semibold">{null}</View>;
     }
   }

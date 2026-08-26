@@ -1,13 +1,13 @@
-// Module ID: 4245
-// Function ID: 4246
+// Module ID: 4309
+// Function ID: 4310
 // Name: zustandStore
-// Dependencies: [4246, 4248, 514, 2]
+// Dependencies: [4310, 4312, 514, 2]
 // Exports: closePortalKeyboard, closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
 
-// Module 4245 (zustandStore)
+// Module 4309 (zustandStore)
 import set from "set" /* 2 */;
-import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4246 */;
-import PortalKeyboardState from "PortalKeyboardState" /* 4248 */;
+import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4310 */;
+import PortalKeyboardState from "PortalKeyboardState" /* 4312 */;
 
 const zustandStore = defaultStatesAreEqual.createZustandStore(() => ({ keyboard: null, state: PortalKeyboardState.PortalKeyboardState.EMPTY, renderers: [] }));
 const result = set.fileFinishedImporting("modules/keyboard/native/PortalKeyboardUIStore.native.tsx");
@@ -54,7 +54,7 @@ export const openPortalKeyboard = function openPortalKeyboard(type, closure_0, a
     obj[2] = closure_0;
     obj[3] = arg2;
     obj[0] = obj;
-    obj[1] = tmp5(4248).PortalKeyboardState.REQUEST_OPEN;
+    obj[1] = tmp5(4312).PortalKeyboardState.REQUEST_OPEN;
     obj.setState(obj);
     const tmp5Result = tmp5(514);
   }
@@ -127,7 +127,7 @@ export const closePortalKeyboardRequest = function closePortalKeyboardRequest() 
   const field = zustandStore.getField("state");
   if (tmp4) {
     obj = { state: null };
-    obj[0] = tmp2(4248).PortalKeyboardState.REQUEST_CLOSE;
+    obj[0] = tmp2(4312).PortalKeyboardState.REQUEST_CLOSE;
     obj.setState(obj);
   }
 };

@@ -1,12 +1,12 @@
-// Module ID: 9546
-// Function ID: 9547
+// Module ID: 9614
+// Function ID: 9615
 // Name: useTrackShopCardClick
-// Dependencies: [19, 9547, 676, 9495, 9496, 7160, 7159, 698, 2]
+// Dependencies: [19, 9615, 676, 9563, 9564, 7226, 7225, 698, 2]
 // Exports: useTrackShopCardClick
 
-// Module 9546 (useTrackShopCardClick)
+// Module 9614 (useTrackShopCardClick)
 import closure_3 from "noop" /* 19 */;
-import { useSelectedVariantIndex } from "useSelectedVariantIndex" /* 9547 */;
+import { useSelectedVariantIndex } from "useSelectedVariantIndex" /* 9615 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;

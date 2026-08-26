@@ -1,14 +1,14 @@
-// Module ID: 4057
-// Function ID: 4058
+// Module ID: 4121
+// Function ID: 4122
 // Name: SubscriptionStatusTypes
-// Dependencies: [676, 687, 1995, 1236, 2921, 2]
+// Dependencies: [676, 687, 1995, 1236, 2985, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
-// Module 4057 (SubscriptionStatusTypes)
+// Module 4121 (SubscriptionStatusTypes)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2921 */;
+import messagesProxyDefault from "messagesProxy" /* 2985 */;
 import ME from "ME" /* 676 */;
 import importDefaultResult from "combined" /* 1995 */;
 

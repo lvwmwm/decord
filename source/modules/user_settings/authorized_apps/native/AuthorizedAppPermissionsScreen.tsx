@@ -1,13 +1,13 @@
-// Module ID: 14398
-// Function ID: 14399
+// Module ID: 14471
+// Function ID: 14472
 // Name: AuthorizedAppPermissionsScreen
-// Dependencies: [19, 21, 7021, 14399, 2]
+// Dependencies: [19, 21, 7087, 14472, 2]
 // Exports: default
 
-// Module 14398 (AuthorizedAppPermissionsScreen)
+// Module 14471 (AuthorizedAppPermissionsScreen)
 import noopAll from "noop" /* 19 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7021 */;
-import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 14399 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7087 */;
+import UserSettingsAuthedAppPermissionsDefault from "UserSettingsAuthedAppPermissions" /* 14472 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

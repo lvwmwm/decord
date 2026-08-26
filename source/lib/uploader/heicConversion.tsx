@@ -1,10 +1,10 @@
-// Module ID: 5091
-// Function ID: 5092
+// Module ID: 5157
+// Function ID: 5158
 // Name: _preConvertHeicForUpload
-// Dependencies: [5, 3, 4996, 4008, 2]
+// Dependencies: [5, 3, 5062, 4072, 2]
 // Exports: preConvertHeicForUpload
 
-// Module 5091 (_preConvertHeicForUpload)
+// Module 5157 (_preConvertHeicForUpload)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -29,7 +29,7 @@ function _preConvertHeicForUpload() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ function _preConvertHeicForUpload() {
                 obj2[0] = tmp35;
                 return obj2;
               }
-              obj8 = lib(4996);
+              obj8 = lib(5062);
               tmp36 = closure_1;
               tmp37 = dependencyMap;
             }
@@ -79,7 +79,7 @@ function _preConvertHeicForUpload() {
               }
               const _File = File;
               const items = [closure_1.convertedBlob];
-              obj = lib(4996);
+              obj = lib(5062);
               const obj4 = { type: "image/jpeg", lastModified: null };
               obj4[1] = lib.lastModified;
               const file = new File(items, obj.renameToJpegExtension(lib.name), obj4);
@@ -132,7 +132,7 @@ function _maybeConvertHeicToJpeg() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -183,7 +183,7 @@ function _maybeConvertHeicToJpeg() {
               if (obj17.isHeicFile(lib)) {
                 const _performance = performance;
                 closure_3 = performance.now();
-                const tmp41 = num17(4008);
+                const tmp41 = num17(4072);
                 let sysimg;
                 if (tmp41 != null) {
                   sysimg = tmp41.sysimg;
@@ -206,7 +206,7 @@ function _maybeConvertHeicToJpeg() {
                 c8 = 3;
                 return { value: null, done: true };
               }
-              obj17 = lib(4996);
+              obj17 = lib(5062);
             }
           } else if (2 === tmp7) {
             if (arg0 === 1) {

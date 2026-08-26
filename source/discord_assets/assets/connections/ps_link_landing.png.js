@@ -1,9 +1,9 @@
-// Module ID: 10635
-// Function ID: 10636
+// Module ID: 10703
+// Function ID: 10704
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10635 (metadata)
+// Module 10703 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/connections/ps_link_landing.png.js");

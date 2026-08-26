@@ -1,10 +1,10 @@
-// Module ID: 4088
-// Function ID: 4089
+// Module ID: 4152
+// Function ID: 4153
 // Name: _openURL
-// Dependencies: [5, 4089, 9086, 2009, 2]
+// Dependencies: [5, 4153, 9154, 2009, 2]
 // Exports: default
 
-// Module 4088 (_openURL)
+// Module 4152 (_openURL)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -27,7 +27,7 @@ function _openURL() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ function _openURL() {
             obj[1] = [];
             arg1.default(callback, obj);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c4 = tmp;

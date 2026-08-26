@@ -1,11 +1,11 @@
-// Module ID: 4094
-// Function ID: 4095
-// Dependencies: [17, 4089, 2]
+// Module ID: 4158
+// Function ID: 4159
+// Dependencies: [17, 4153, 2]
 
-// Module 4094
+// Module 4158
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import sanitizeURLPart from "sanitizeURLPart" /* 4089 */;
+import sanitizeURLPart from "sanitizeURLPart" /* 4153 */;
 
 const Linking = get_ActivityIndicator.Linking;
 const result = set.fileFinishedImporting("lib/native/Linking.tsx");

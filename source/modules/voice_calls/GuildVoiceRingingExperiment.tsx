@@ -1,12 +1,12 @@
-// Module ID: 9383
-// Function ID: 9384
+// Module ID: 9451
+// Function ID: 9452
 // Name: experiment
-// Dependencies: [4294, 4291, 2]
+// Dependencies: [4358, 4355, 2]
 
-// Module 9383 (experiment)
+// Module 9451 (experiment)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4294 */;
-import createExperiment from "createExperiment" /* 4291 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4358 */;
+import createExperiment from "createExperiment" /* 4355 */;
 
 const items = [{ id: 1, label: "Allow users to ring each other in Guild Voice Channels", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2024-12_guild_voice_channel_ringing", label: "Guild Voice Ringing", defaultConfig: { enabled: false }, commonTriggerPoint: ExperimentBuckets.CommonTriggerPoints.VOICE_CALL, treatments: items });

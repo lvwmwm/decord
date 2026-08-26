@@ -1,9 +1,9 @@
-// Module ID: 12563
-// Function ID: 12564
+// Module ID: 12634
+// Function ID: 12635
 // Name: ApplicationWidgetFieldPresentationType
 // Dependencies: [2]
 
-// Module 12563 (ApplicationWidgetFieldPresentationType)
+// Module 12634 (ApplicationWidgetFieldPresentationType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetFieldPresentationType.tsx");

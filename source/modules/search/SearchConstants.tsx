@@ -1,10 +1,10 @@
-// Module ID: 8554
-// Function ID: 8555
+// Module ID: 8622
+// Function ID: 8623
 // Name: MessageEmbedTypes
-// Dependencies: [676, 4075, 2]
+// Dependencies: [676, 4139, 2]
 
-// Module 8554 (MessageEmbedTypes)
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4075 */;
+// Module 8622 (MessageEmbedTypes)
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 4139 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

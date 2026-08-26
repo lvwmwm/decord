@@ -1,17 +1,17 @@
-// Module ID: 11433
-// Function ID: 11434
+// Module ID: 11505
+// Function ID: 11506
 // Name: ForumOriginalPoster
-// Dependencies: [19, 17, 21, 4380, 712, 5265, 4376, 1236, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 5331, 4440, 1236, 2]
 // Exports: getForumOriginalPoster
 
-// Module 11433 (ForumOriginalPoster)
+// Module 11505 (ForumOriginalPoster)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
+import Text from "Text" /* 4440 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 class ForumOriginalPoster {

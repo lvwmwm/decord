@@ -1,13 +1,13 @@
-// Module ID: 12887
-// Function ID: 12888
+// Module ID: 12961
+// Function ID: 12962
 // Name: BuyNitroTriggerPointEffect
-// Dependencies: [12888, 12889, 2]
+// Dependencies: [12962, 12963, 2]
 // Exports: BuyNitroTriggerPointEffect
 
-// Module 12887 (BuyNitroTriggerPointEffect)
+// Module 12961 (BuyNitroTriggerPointEffect)
 import set from "set" /* 2 */;
-import useCommonTriggerPoint from "useCommonTriggerPoint" /* 12888 */;
-import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 12889 */;
+import useCommonTriggerPoint from "useCommonTriggerPoint" /* 12962 */;
+import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 12963 */;
 
 const result = set.fileFinishedImporting("modules/premium_marketing/native/components/BuyNitroTriggerPointEffect.tsx");
 

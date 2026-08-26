@@ -1,18 +1,18 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8955
+// Function ID: 8956
 // Name: _updateEmoji
-// Dependencies: [5, 5282, 5102, 4743, 676, 685, 1374, 1337, 709, 530, 4994, 1363, 1236, 4279, 4038, 1370, 5289, 12, 4744, 2]
+// Dependencies: [5, 5348, 5168, 4807, 676, 685, 1374, 1337, 709, 530, 5060, 1363, 1236, 4343, 4102, 1370, 5355, 12, 4808, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 8887 (_updateEmoji)
+// Module 8955 (_updateEmoji)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4038 */;
-import fromBlobDefault from "fromBlob" /* 4994 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4102 */;
+import fromBlobDefault from "fromBlob" /* 5060 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getEmojiToGroupId" /* 5282 */;
-import closure_5 from "_handleConnectionOpen" /* 5102 */;
-import closure_6 from "handleConnectionOpen" /* 4743 */;
+import closure_4 from "getEmojiToGroupId" /* 5348 */;
+import closure_5 from "_handleConnectionOpen" /* 5168 */;
+import closure_6 from "handleConnectionOpen" /* 4807 */;
 import { Endpoints } from "ME" /* 676 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
 
@@ -36,7 +36,7 @@ function _updateEmoji() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ function _updateEmoji() {
           } else if (2 === tmp8) {
             c4 = 0;
             c4 = c3;
-            const tmp18 = new callback2(4279)(c4);
+            const tmp18 = new callback2(4343)(c4);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;

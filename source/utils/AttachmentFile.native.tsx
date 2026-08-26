@@ -1,12 +1,12 @@
-// Module ID: 4962
-// Function ID: 4963
+// Module ID: 5028
+// Function ID: 5029
 // Name: _getAttachmentFile
-// Dependencies: [5, 3, 38, 4954, 4963, 4955, 2]
+// Dependencies: [5, 3, 38, 5020, 5029, 5021, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 4962 (_getAttachmentFile)
+// Module 5028 (_getAttachmentFile)
 import timestampDefault from "timestamp" /* 3 */;
-import openImagePickerUnhandled from "openImagePickerUnhandled" /* 4963 */;
+import openImagePickerUnhandled from "openImagePickerUnhandled" /* 5029 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -30,7 +30,7 @@ function _getAttachmentFile() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -78,13 +78,13 @@ function _getAttachmentFile() {
               return obj3;
             } else {
               closure_3 = arg1;
-              logger = lib(4955).getAttachmentPayload(lib, callback, closure_3.name);
+              logger = lib(5021).getAttachmentPayload(lib, callback, closure_3.name);
               c6 = 2;
-              const obj10 = lib(4955);
+              const obj10 = lib(5021);
               c7 = 4;
               c8 = 1;
               const obj4 = { value: null, done: false };
-              obj4[0] = lib(4963).getFileSize(closure_3.uri);
+              obj4[0] = lib(5029).getFileSize(closure_3.uri);
               return obj4;
             }
           } else {
@@ -160,7 +160,7 @@ function _cancelGetAttachmentFile() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -192,7 +192,7 @@ function _cancelGetAttachmentFile() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c1 = tmp;

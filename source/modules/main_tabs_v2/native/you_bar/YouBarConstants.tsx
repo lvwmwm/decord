@@ -1,9 +1,9 @@
-// Module ID: 14548
-// Function ID: 14549
+// Module ID: 14621
+// Function ID: 14622
 // Name: CONNECTION_BANNER_HEIGHT
 // Dependencies: [17, 712, 1297, 2]
 
-// Module 14548 (CONNECTION_BANNER_HEIGHT)
+// Module 14621 (CONNECTION_BANNER_HEIGHT)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;

@@ -1,10 +1,10 @@
-// Module ID: 11785
-// Function ID: 11786
+// Module ID: 11858
+// Function ID: 11859
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1236, 4279, 2]
+// Dependencies: [5, 32, 19, 1236, 4343, 2]
 // Exports: default
 
-// Module 11785 (useRequest)
+// Module 11858 (useRequest)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -37,7 +37,7 @@ export default function useRequest(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -91,7 +91,7 @@ export default function useRequest(arg0) {
                 c4 = 0;
                 closure_1_1(false);
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 if (lib instanceof closure_1_1(closure_1_2[4])) {
                   let tmp37 = lib;

@@ -1,9 +1,9 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 16023
+// Function ID: 16024
 // Name: isProjectOwner
 // Dependencies: [32, 1922, 589, 709, 2]
 
-// Module 15944 (isProjectOwner)
+// Module 16023 (isProjectOwner)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "_slicedToArray" /* 32 */;

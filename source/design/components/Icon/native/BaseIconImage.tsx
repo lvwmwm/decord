@@ -1,12 +1,12 @@
-// Module ID: 4100
-// Function ID: 4101
+// Module ID: 4164
+// Function ID: 4165
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 4101, 2]
+// Dependencies: [19, 17, 21, 4165, 2]
 // Exports: BaseIconImage
 
-// Module 4100 (BaseIconImage)
+// Module 4164 (BaseIconImage)
 import noopAll from "noop" /* 19 */;
-import map from "map" /* 4101 */;
+import map from "map" /* 4165 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

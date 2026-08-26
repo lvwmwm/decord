@@ -1,14 +1,14 @@
-// Module ID: 16227
-// Function ID: 16228
+// Module ID: 16308
+// Function ID: 16309
 // Name: useSortedMessageRequests
-// Dependencies: [19, 1391, 1922, 5947, 589, 16228, 2]
+// Dependencies: [19, 1391, 1922, 6013, 589, 16309, 2]
 // Exports: default
 
-// Module 16227 (useSortedMessageRequests)
+// Module 16308 (useSortedMessageRequests)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "processChannel" /* 5947 */;
+import closure_5 from "processChannel" /* 6013 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useSortedMessageRequests.tsx");

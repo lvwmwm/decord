@@ -1,24 +1,24 @@
-// Module ID: 12701
-// Function ID: 12702
+// Module ID: 12774
+// Function ID: 12775
 // Name: _sendGuildInvite
-// Dependencies: [5, 19, 1982, 4300, 1992, 1910, 4025, 5262, 1922, 12702, 7340, 676, 698, 4347, 12703, 2009, 5335, 589, 1351, 1236, 7903, 9214, 9277, 2]
+// Dependencies: [5, 19, 1982, 4364, 1992, 1910, 4089, 5328, 1922, 12775, 7406, 676, 698, 4411, 12776, 2009, 5401, 589, 1351, 1236, 7970, 9282, 9345, 2]
 // Exports: sendGuildInvite, showGuildInviteActionSheet, useServerInviteRows
 
-// Module 12701 (_sendGuildInvite)
+// Module 12774 (_sendGuildInvite)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "comparator" /* 1982 */;
-import closure_6 from "handleInviteData" /* 4300 */;
+import closure_6 from "handleInviteData" /* 4364 */;
 import closure_7 from "trackCommunicationDisabled" /* 1992 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_10 from "insertUnsortedGuilds" /* 5262 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_10 from "insertUnsortedGuilds" /* 5328 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import { setSendState } from "setSendState" /* 12702 */;
-import { InviteSendStates } from "InviteSendStates" /* 7340 */;
+import { setSendState } from "setSendState" /* 12775 */;
+import { InviteSendStates } from "InviteSendStates" /* 7406 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -43,7 +43,7 @@ function _sendGuildInvite() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -72,12 +72,12 @@ function _sendGuildInvite() {
                 throw Error();
               } else {
                 obj1 = { max_uses: null, max_age: null, unique: true };
-                obj1[0] = callback2(9214).INVITE_OPTIONS_ONCE.value;
-                obj1[1] = callback2(9214).INVITE_OPTIONS_7_DAYS.value;
+                obj1[0] = callback2(9282).INVITE_OPTIONS_ONCE.value;
+                obj1[1] = callback2(9282).INVITE_OPTIONS_7_DAYS.value;
                 c6 = 2;
                 c7 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = callback2(7903).createInvite(defaultChannel.id, obj1, tmp45);
+                obj2[0] = callback2(7970).createInvite(defaultChannel.id, obj1, tmp45);
                 return obj2;
               }
               tmp45 = dependencyMap;
@@ -95,10 +95,10 @@ function _sendGuildInvite() {
               throw arg1;
             } else if (arg0 !== 2) {
               code = arg1;
-              let obj4 = callback2(9277);
+              let obj4 = callback2(9345);
               const obj3 = { inviteKey: null, type: null, user: null, location: null, inviteAnalyticsMetadata: null };
               obj3[0] = code.code;
-              obj3[1] = callback(9277).InvitePropertiesType.USER;
+              obj3[1] = callback(9345).InvitePropertiesType.USER;
               obj3[2] = user.getUser(callback);
               obj3[3] = dependencyMap;
               obj4 = { source: null };
@@ -147,7 +147,7 @@ export const showGuildInviteActionSheet = function showGuildInviteActionSheet(id
   obj.track(constants.OPEN_POPOUT, obj);
   const obj3 = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { recipientId: id, source: newestAnalyticsLocation };
-  obj3.openLazy(asyncRequireImpl(12703, dependencyMap.paths), "invite-to-guilds-" + id, obj);
+  obj3.openLazy(asyncRequireImpl(12776, dependencyMap.paths), "invite-to-guilds-" + id, obj);
 };
 export const useServerInviteRows = function useServerInviteRows(id, query) {
   const _require = id;

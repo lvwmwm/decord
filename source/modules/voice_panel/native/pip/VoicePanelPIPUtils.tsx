@@ -1,20 +1,20 @@
-// Module ID: 16432
-// Function ID: 16433
+// Module ID: 16515
+// Function ID: 16516
 // Name: PIPReferenceDimensions
-// Dependencies: [4396, 4402, 1218, 11841, 16433, 4401, 11842, 4814, 10794, 13538, 712, 2]
+// Dependencies: [4460, 4466, 1218, 11914, 16516, 4465, 11915, 4878, 10866, 13611, 712, 2]
 // Exports: calculatePIPPositionFromVelocity, computePIPParticipantToShow, computePIPSize, getClampedPIPPosition, getPIPMode, getVoicePanelPIPBorderRadius, layoutTransition
 
-// Module 16432 (PIPReferenceDimensions)
+// Module 16515 (PIPReferenceDimensions)
 import ThemesDefault from "Themes" /* 712 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4814 */;
-import canRenderParticipantVideo from "canRenderParticipantVideo" /* 10794 */;
-import closure_2 from "getParticipants" /* 4396 */;
-import closure_3 from "reset" /* 4402 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4878 */;
+import canRenderParticipantVideo from "canRenderParticipantVideo" /* 10866 */;
+import closure_2 from "getParticipants" /* 4460 */;
+import closure_3 from "reset" /* 4466 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import VoicePanelModes from "VoicePanelModes" /* 11841 */;
-import VoicePanelPIPModes from "VoicePanelPIPModes" /* 16433 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4401 */;
-import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE" /* 11842 */;
+import VoicePanelModes from "VoicePanelModes" /* 11914 */;
+import VoicePanelPIPModes from "VoicePanelPIPModes" /* 16516 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
+import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE" /* 11915 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -359,7 +359,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
       for (const item10060 of activityParticipants) {
         let tmp17 = item10060;
         let participants = item10060.participants;
-        if (participants.some((userId) => callback(13538).isActivityParticipantCurrentUserCurrentSession(userId))) {
+        if (participants.some((userId) => callback(13611).isActivityParticipantCurrentUserCurrentSession(userId))) {
           let tmp18 = item10060;
           if (!blockList.has(tmp17.id)) {
             obj1 = { id: null, type: null };
@@ -418,7 +418,7 @@ export const computePIPParticipantToShow = function computePIPParticipantToShow(
         }
       } else if (tmp31.ACTIVITY === type) {
         const participants2 = participant2.participants;
-        if (participants2.some((userId) => callback(13538).isActivityParticipantCurrentUserCurrentSession(userId))) {
+        if (participants2.some((userId) => callback(13611).isActivityParticipantCurrentUserCurrentSession(userId))) {
           const obj5 = { id: null, type: null };
           ({ id: obj9[0], type: obj9[1] } = participant2);
           return obj5;

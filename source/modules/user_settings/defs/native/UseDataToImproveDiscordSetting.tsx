@@ -1,18 +1,18 @@
-// Module ID: 14309
-// Function ID: 14310
+// Module ID: 14382
+// Function ID: 14383
 // Name: toggle
-// Dependencies: [5935, 8235, 676, 14279, 4744, 1236, 4833, 14310, 14311, 589, 10516, 2]
+// Dependencies: [6001, 8302, 676, 14352, 4808, 1236, 4898, 14383, 14384, 589, 10584, 2]
 
-// Module 14309 (toggle)
+// Module 14382 (toggle)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import setDefault from "set" /* 4744 */;
-import componentDidMountDefault from "componentDidMount" /* 4833 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14279 */;
-import handleRequestSuccess from "handleRequestSuccess" /* 14310 */;
-import closure_3 from "hasConsented" /* 5935 */;
+import setDefault from "set" /* 4808 */;
+import componentDidMountDefault from "componentDidMount" /* 4898 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14352 */;
+import handleRequestSuccess from "handleRequestSuccess" /* 14383 */;
+import closure_3 from "hasConsented" /* 6001 */;
 import { Consents } from "ME" /* 676 */;
-import createToggle from "createToggle" /* 10516 */;
+import createToggle from "createToggle" /* 10584 */;
 
 require = arg1;
 createToggle = {
@@ -29,7 +29,7 @@ createToggle = {
     if (arg0) {
       let items = [Consents.USAGE_STATISTICS];
       const obj3 = handleRequestSuccess;
-      handleRequestSuccess.setConsents(items, []).catch((message) => callback(14311).showDataPrivacyRateLimitAlert(message.message));
+      handleRequestSuccess.setConsents(items, []).catch((message) => callback(14384).showDataPrivacyRateLimitAlert(message.message));
       const setConsentsResult = handleRequestSuccess.setConsents(items, []);
     } else {
       let obj = setDefault;
@@ -45,7 +45,7 @@ createToggle = {
       obj[4] = componentDidMountDefault.Colors.RED;
       obj[5] = function onConfirm() {
         const items = [constants.USAGE_STATISTICS];
-        return callback(14310).setConsents([], items);
+        return callback(14383).setConsents([], items);
       };
       obj.show(obj);
     }

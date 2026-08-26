@@ -1,9 +1,9 @@
-// Module ID: 4175
-// Function ID: 4176
+// Module ID: 4239
+// Function ID: 4240
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4175 (metadata)
+// Module 4239 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/Camera.riv.js");

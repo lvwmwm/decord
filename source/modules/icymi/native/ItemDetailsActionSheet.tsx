@@ -1,23 +1,23 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15894
+// Function ID: 15895
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 1391, 1910, 9045, 21, 4380, 712, 589, 4574, 5378, 5885, 1297, 9059, 5870, 10351, 15816, 5873, 5480, 2]
+// Dependencies: [19, 17, 1391, 1910, 9113, 21, 4444, 712, 589, 4638, 5444, 5951, 1297, 9127, 5936, 10419, 15895, 5939, 5546, 2]
 // Exports: default
 
-// Module 15815 (ItemDetailsActionSheet)
+// Module 15894 (ItemDetailsActionSheet)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import computeChannelNameDefault from "computeChannelName" /* 4574 */;
-import useDesignToggleDefault from "useDesignToggle" /* 5378 */;
-import ActionSheet from "ActionSheet" /* 5870 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
+import computeChannelNameDefault from "computeChannelName" /* 4638 */;
+import useDesignToggleDefault from "useDesignToggle" /* 5444 */;
+import ActionSheet from "ActionSheet" /* 5936 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5951 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "filterStaffGuild" /* 9045 */;
+import closure_6 from "filterStaffGuild" /* 9113 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -50,7 +50,7 @@ export default function ItemDetailsActionSheet(arg0) {
   if (null != stateFromStores1) {
     obj = { guild: null, size: null };
     obj[0] = stateFromStores1;
-    obj[1] = tmp(5885).GuildIconSizes.LARGE;
+    obj[1] = tmp(5951).GuildIconSizes.LARGE;
     let tmp9 = callback(GuildIconSizesDefault, obj);
     const tmp5Result = GuildIconSizesDefault;
   } else if (null != stateFromStores) {
@@ -65,8 +65,8 @@ export default function ItemDetailsActionSheet(arg0) {
     result = null != stateFromStores1;
   }
   if (result) {
-    result = tmp(9059).isChannelCustomScoreEligible(stateFromStores);
-    const tmpResult = tmp(9059);
+    result = tmp(9127).isChannelCustomScoreEligible(stateFromStores);
+    const tmpResult = tmp(9127);
   }
   obj1 = { icon: tmp9, title: tmp6, subtitle: null };
   let str;
@@ -76,14 +76,14 @@ export default function ItemDetailsActionSheet(arg0) {
   if (str == null) {
     str = "";
   }
-  obj2 = { showGradient: true, startExpanded: true, header: tmp16(tmp(10351).ActionSheetIconHeader, obj1), children: null };
+  obj2 = { showGradient: true, startExpanded: true, header: tmp16(tmp(10419).ActionSheetIconHeader, obj1), children: null };
   obj1[2] = str;
   let tmp16Result = result;
   if (result) {
     const obj3 = { channel: null, guild: null };
     obj3[0] = stateFromStores;
     obj3[1] = stateFromStores1;
-    tmp16Result = tmp16(tmp(15816).ChannelScoreSettings, obj3);
+    tmp16Result = tmp16(tmp(15895).ChannelScoreSettings, obj3);
   }
   const items3 = [tmp16Result, , ];
   let tmp15Result = null != stateFromStores2 && null != stateFromStores1;
@@ -97,7 +97,7 @@ export default function ItemDetailsActionSheet(arg0) {
     const items4 = [result, ];
     const obj6 = { guild: null };
     obj6[0] = stateFromStores1;
-    items4[1] = tmp16(tmp(15816).GuildScoreSettings, obj6);
+    items4[1] = tmp16(tmp(15895).GuildScoreSettings, obj6);
     obj5[0] = items4;
     tmp15Result = tmp15(closure_8, obj5);
     const tmp19 = closure_8;
@@ -112,8 +112,8 @@ export default function ItemDetailsActionSheet(arg0) {
       obj8[0] = `Total Score: ${tmp7.score}`;
       const _JSON = JSON;
       obj8[1] = JSON.stringify(stateFromStores2.score_components);
-      obj7[2] = tmp16(tmp(5480).TableRow, obj8);
-      tmp16Result = tmp16(tmp(5873).TableRowGroup, obj7);
+      obj7[2] = tmp16(tmp(5546).TableRow, obj8);
+      tmp16Result = tmp16(tmp(5939).TableRowGroup, obj7);
     }
   }
   items3[2] = tmp16Result;

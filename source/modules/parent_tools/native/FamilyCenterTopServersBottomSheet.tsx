@@ -1,20 +1,20 @@
-// Module ID: 14353
-// Function ID: 14354
+// Module ID: 14426
+// Function ID: 14427
 // Name: GuildRow
-// Dependencies: [7143, 21, 4380, 712, 589, 7199, 5480, 5885, 5870, 4376, 1236, 2337, 5873, 2]
+// Dependencies: [7209, 21, 4444, 712, 589, 7265, 5546, 5951, 5936, 4440, 1236, 2369, 5939, 2]
 // Exports: default
 
-// Module 14353 (GuildRow)
+// Module 14426 (GuildRow)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2337 */;
-import Text from "Text" /* 4376 */;
-import ActionSheet from "ActionSheet" /* 5870 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5873 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7143 */;
+import messagesProxyDefault from "messagesProxy" /* 2369 */;
+import Text from "Text" /* 4440 */;
+import ActionSheet from "ActionSheet" /* 5936 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5939 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5951 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7209 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function GuildRow(guildActivity) {
@@ -25,7 +25,7 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const topUserOrGuildDescription = tmp2(7199).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
+    const topUserOrGuildDescription = tmp2(7265).getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     obj = { label: null, subLabel: null, icon: null };
     obj[0] = stateFromStores.name;
     obj[1] = topUserOrGuildDescription;
@@ -33,7 +33,7 @@ function GuildRow(guildActivity) {
     obj[0] = stateFromStores;
     obj[1] = tmp.guildIcon;
     obj[2] = callback(GuildIconSizesDefault, obj);
-    return callback(tmp2(5480).TableRow, obj);
+    return callback(tmp2(5546).TableRow, obj);
   }
   tmp = callback3();
 }

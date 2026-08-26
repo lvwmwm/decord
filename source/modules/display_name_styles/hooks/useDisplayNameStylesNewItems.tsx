@@ -1,12 +1,12 @@
-// Module ID: 14784
-// Function ID: 14785
+// Module ID: 14857
+// Function ID: 14858
 // Name: useDisplayNameStylesNewFonts
-// Dependencies: [19, 14785, 1934, 589, 14786, 2]
+// Dependencies: [19, 14858, 1934, 589, 14859, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14784 (useDisplayNameStylesNewFonts)
+// Module 14857 (useDisplayNameStylesNewFonts)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "set" /* 14785 */;
+import closure_3 from "set" /* 14858 */;
 import items3 from "items3" /* 1934 */;
 
 const require = arg1;

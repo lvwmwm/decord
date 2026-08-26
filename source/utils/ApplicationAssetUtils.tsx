@@ -1,17 +1,17 @@
-// Module ID: 8396
-// Function ID: 8397
+// Module ID: 8463
+// Function ID: 8464
 // Name: updateAssets
-// Dependencies: [32, 5, 8397, 676, 38, 3, 530, 709, 1469, 2]
+// Dependencies: [32, 5, 8464, 676, 38, 3, 530, 709, 1469, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8396 (updateAssets)
+// Module 8463 (updateAssets)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import sendRequest from "sendRequest" /* 530 */;
 import handleImageLoad from "handleImageLoad" /* 1469 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "handleFetchEmbeddedActivityShelfSuccess" /* 8397 */;
+import closure_5 from "handleFetchEmbeddedActivityShelfSuccess" /* 8464 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -121,7 +121,7 @@ function _resolveExternalAssets() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -221,7 +221,7 @@ function _resolveExternalAssets() {
           }
           let num4 = 3;
           c9 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       }
     })();
@@ -350,7 +350,7 @@ function _fetchAssetIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

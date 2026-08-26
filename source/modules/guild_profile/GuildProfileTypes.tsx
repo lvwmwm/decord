@@ -1,11 +1,11 @@
-// Module ID: 5443
-// Function ID: 5444
+// Module ID: 5509
+// Function ID: 5510
 // Name: GuildProfileVisibility
-// Dependencies: [2, 5444]
+// Dependencies: [2, 5510]
 
-// Module 5443 (GuildProfileVisibility)
+// Module 5509 (GuildProfileVisibility)
 import set from "set" /* 2 */;
-import set2 from "set" /* 5444 */;
+import set2 from "set" /* 5510 */;
 
 const result = set.fileFinishedImporting("modules/guild_profile/GuildProfileTypes.tsx");
 

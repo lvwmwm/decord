@@ -1,15 +1,15 @@
-// Module ID: 12225
-// Function ID: 12226
+// Module ID: 12297
+// Function ID: 12298
 // Name: getHubProgressTitleForStep
-// Dependencies: [19, 1340, 5106, 9224, 676, 589, 1306, 1236, 1370, 1403, 2]
+// Dependencies: [19, 1340, 5172, 9292, 676, 589, 1306, 1236, 1370, 1403, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 12225 (getHubProgressTitleForStep)
+// Module 12297 (getHubProgressTitleForStep)
 import create from "create" /* 1306 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_4 from "set" /* 5106 */;
-import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9224 */;
+import closure_4 from "set" /* 5172 */;
+import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9292 */;
 import { PlatformTypes } from "ME" /* 676 */;
 
 require = arg1;

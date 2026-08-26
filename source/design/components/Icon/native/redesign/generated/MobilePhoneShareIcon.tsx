@@ -1,14 +1,14 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16628
+// Function ID: 16629
 // Name: MobilePhoneShareIcon
-// Dependencies: [19, 21, 712, 4100, 16544, 2]
+// Dependencies: [19, 21, 712, 4164, 16629, 2]
 // Exports: MobilePhoneShareIcon
 
-// Module 16543 (MobilePhoneShareIcon)
+// Module 16628 (MobilePhoneShareIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 16544 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 16629 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

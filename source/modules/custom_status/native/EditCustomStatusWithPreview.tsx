@@ -1,24 +1,24 @@
-// Module ID: 9601
-// Function ID: 9602
+// Module ID: 9669
+// Function ID: 9670
 // Name: ClearInputButton
-// Dependencies: [32, 19, 17, 1922, 9602, 676, 1925, 21, 4380, 712, 4949, 1236, 1297, 8625, 9603, 698, 9594, 589, 9604, 9605, 1363, 9607, 4811, 8784, 5475, 9608, 9610, 4242, 9611, 8539, 5376, 4376, 9673, 8126, 5873, 5480, 4347, 9674, 2009, 9676, 4338, 501, 1643, 4611, 5889, 2]
+// Dependencies: [32, 19, 17, 1922, 9670, 676, 1925, 21, 4444, 712, 5015, 1236, 1297, 8693, 9671, 698, 9662, 589, 9672, 9673, 1363, 9675, 4875, 8852, 5541, 9676, 9678, 4306, 9679, 8607, 5442, 4440, 9741, 8193, 5939, 5546, 4411, 9742, 2009, 9744, 4402, 501, 1643, 4675, 5955, 2]
 // Exports: default
 
-// Module 9601 (ClearInputButton)
+// Module 9669 (ClearInputButton)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import PressableBase from "PressableBase" /* 4949 */;
-import registerAssetDefault from "registerAsset" /* 8625 */;
+import PressableBase from "PressableBase" /* 5015 */;
+import registerAssetDefault from "registerAsset" /* 8693 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { STATUS_MAX_LENGTH } from "StatusTypes" /* 9602 */;
+import { STATUS_MAX_LENGTH } from "StatusTypes" /* 9670 */;
 import ME from "ME" /* 676 */;
 import { EmojiIntention } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function ClearInputButton(onPress) {
@@ -365,7 +365,7 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
       const obj = { title: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.Iuzg8R);
-      return callback3(callback(8539).GenericHeaderTitle, obj);
+      return callback3(callback(8607).GenericHeaderTitle, obj);
     };
     obj[2] = analyticsLocations(closure_1_2[30]).getHeaderCloseButton(_prompt(closure_1_2[43]).pop);
     obj[4] = function render(arg0, navigation) {
@@ -383,5 +383,5 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     obj = { height: 56 };
   }
   obj[3] = obj;
-  return tmp2(analyticsLocations(5889).Navigator, obj);
+  return tmp2(analyticsLocations(5955).Navigator, obj);
 };

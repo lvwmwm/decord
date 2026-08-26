@@ -1,16 +1,16 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15929
+// Function ID: 15930
 // Name: CutoutGuildIconWithUserCustom
-// Dependencies: [19, 17, 1391, 1992, 1910, 676, 21, 15809, 712, 8447, 5885, 1297, 4821, 589, 4635, 9384, 4573, 4376, 4574, 15851, 1236, 4911, 15849, 4949, 7247, 8751, 2]
+// Dependencies: [19, 17, 1391, 1992, 1910, 676, 21, 15888, 712, 8514, 5951, 1297, 4886, 589, 4699, 9452, 4637, 4440, 4638, 15930, 1236, 4977, 15928, 5015, 7313, 8819, 2]
 // Exports: default
 
-// Module 15850 (CutoutGuildIconWithUserCustom)
+// Module 15929 (CutoutGuildIconWithUserCustom)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import GuildIconSizes from "GuildIconSizes" /* 5885 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
-import SolidCutout from "SolidCutout" /* 8447 */;
-import SolidCutoutDefault from "SolidCutout" /* 8447 */;
+import GuildIconSizes from "GuildIconSizes" /* 5951 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5951 */;
+import SolidCutout from "SolidCutout" /* 8514 */;
+import SolidCutoutDefault from "SolidCutout" /* 8514 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
@@ -18,7 +18,7 @@ import closure_6 from "trackCommunicationDisabled" /* 1992 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
 import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 15809 */;
+import createICYMIStyles from "createICYMIStyles" /* 15888 */;
 
 require = arg1;
 function CutoutGuildIconWithUserCustom(guild) {

@@ -1,13 +1,13 @@
-// Module ID: 15282
-// Function ID: 15283
+// Module ID: 15361
+// Function ID: 15362
 // Name: ScrollBenchmark
-// Dependencies: [19, 21, 15279, 5480, 2]
+// Dependencies: [19, 21, 15358, 5546, 2]
 // Exports: default
 
-// Module 15282 (ScrollBenchmark)
+// Module 15361 (ScrollBenchmark)
 import noopAll from "noop" /* 19 */;
-import TableRowInner from "TableRowInner" /* 5480 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 15279 */;
+import TableRowInner from "TableRowInner" /* 5546 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 15358 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

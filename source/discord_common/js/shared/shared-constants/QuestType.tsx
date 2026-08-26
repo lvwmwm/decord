@@ -1,9 +1,9 @@
-// Module ID: 7331
-// Function ID: 7332
+// Module ID: 7397
+// Function ID: 7398
 // Name: QuestType
 // Dependencies: [2]
 
-// Module 7331 (QuestType)
+// Module 7397 (QuestType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestType.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 15855
-// Function ID: 15856
+// Module ID: 15934
+// Function ID: 15935
 // Name: thumbHashToRGBA
-// Dependencies: [14642, 2]
+// Dependencies: [14715, 2]
 // Exports: createThumbhashImageFromPlaceholder
 
-// Module 15855 (thumbHashToRGBA)
+// Module 15934 (thumbHashToRGBA)
 import set from "set" /* 2 */;
-import thumbHashToRGBA2 from "thumbHashToRGBA" /* 14642 */;
+import thumbHashToRGBA2 from "thumbHashToRGBA" /* 14715 */;
 
 function thumbHashToRGBA(arg0) {
   let obj = arg1;

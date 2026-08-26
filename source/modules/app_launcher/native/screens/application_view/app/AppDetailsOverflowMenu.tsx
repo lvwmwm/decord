@@ -1,10 +1,10 @@
-// Module ID: 11718
-// Function ID: 11719
+// Module ID: 11791
+// Function ID: 11792
 // Name: AppDetailsOverflowMenu
-// Dependencies: [19, 21, 8493, 10704, 1236, 9677, 4070, 5862, 4097, 9696, 8745, 7896, 8752, 2]
+// Dependencies: [19, 21, 8560, 10776, 1236, 9745, 4134, 5928, 4161, 9764, 8813, 7963, 8820, 2]
 // Exports: default
 
-// Module 11718 (AppDetailsOverflowMenu)
+// Module 11791 (AppDetailsOverflowMenu)
 import noopAll from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

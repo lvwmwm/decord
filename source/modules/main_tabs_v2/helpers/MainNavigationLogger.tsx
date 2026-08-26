@@ -1,9 +1,9 @@
-// Module ID: 14027
-// Function ID: 14028
+// Module ID: 14100
+// Function ID: 14101
 // Name: timestamp
 // Dependencies: [3, 2]
 
-// Module 14027 (timestamp)
+// Module 14100 (timestamp)
 import timestampDefault from "timestamp" /* 3 */;
 
 const tmp2 = new timestampDefault("MainNavigationLogger");

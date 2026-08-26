@@ -1,13 +1,13 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15762
+// Function ID: 15763
 // Name: VoiceSubtitle
-// Dependencies: [19, 21, 4376, 1236, 4573, 2]
+// Dependencies: [19, 21, 4440, 1236, 4637, 2]
 // Exports: default
 
-// Module 15683 (VoiceSubtitle)
+// Module 15762 (VoiceSubtitle)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
+import Text from "Text" /* 4440 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

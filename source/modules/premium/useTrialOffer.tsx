@@ -1,14 +1,14 @@
-// Module ID: 7056
-// Function ID: 7057
+// Module ID: 7122
+// Function ID: 7123
 // Name: hasUserTrialOfferExpired
-// Dependencies: [32, 19, 1922, 7057, 589, 4043, 4264, 2]
+// Dependencies: [32, 19, 1922, 7123, 589, 4107, 4328, 2]
 // Exports: hasUserTrialOfferExpired, useTrialOffer
 
-// Module 7056 (hasUserTrialOfferExpired)
+// Module 7122 (hasUserTrialOfferExpired)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "emitChanges" /* 7057 */;
+import closure_5 from "emitChanges" /* 7123 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/premium/useTrialOffer.tsx");

@@ -1,22 +1,22 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9742
+// Function ID: 9743
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 9602, 21, 4380, 712, 5503, 5502, 1236, 8136, 8135, 9675, 4815, 4347, 2]
+// Dependencies: [32, 19, 17, 9670, 21, 4444, 712, 5569, 5568, 1236, 8203, 8202, 9743, 4879, 4411, 2]
 // Exports: default
 
-// Module 9674 (ClearAfterOptionsActionSheet)
+// Module 9742 (ClearAfterOptionsActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 4815 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5502 */;
-import Background from "Background" /* 5503 */;
-import context from "context" /* 8136 */;
+import Button from "Button" /* 4879 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5568 */;
+import Background from "Background" /* 5569 */;
+import context from "context" /* 8203 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ClearAfterOptions } from "StatusTypes" /* 9602 */;
+import { ClearAfterOptions } from "StatusTypes" /* 9670 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -43,7 +43,7 @@ export default function ClearAfterOptionsActionSheet(arg0) {
   const intl2 = getSystemLocale.intl;
   obj[1] = intl2.string(getSystemLocale.t.E45wvP);
   obj[2] = initialValue;
-  obj[4] = ClearAfterOptions.map((value) => callback3(callback(8135).TableRadioRow, { value, label: callback2(9675)(value) }, value));
+  obj[4] = ClearAfterOptions.map((value) => callback3(callback(8202).TableRadioRow, { value, label: callback2(9743)(value) }, value));
   const items = [callback2(context.TableRadioGroup, obj), ];
   obj1 = { style: tmp.buttonWrapper, children: null };
   const obj2 = {

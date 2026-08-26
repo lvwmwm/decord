@@ -1,9 +1,9 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 15231
+// Function ID: 15232
 // Name: frozen
 // Dependencies: [2]
 
-// Module 15152 (frozen)
+// Module 15231 (frozen)
 import set from "set" /* 2 */;
 
 const frozen = Object.freeze({ VOICE_ACTIVITY: "Voice Activity" });

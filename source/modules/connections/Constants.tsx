@@ -1,9 +1,9 @@
-// Module ID: 5233
-// Function ID: 5234
+// Module ID: 5299
+// Function ID: 5300
 // Name: OperatorTypes
 // Dependencies: [2]
 
-// Module 5233 (OperatorTypes)
+// Module 5299 (OperatorTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/connections/Constants.tsx");

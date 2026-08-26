@@ -1,25 +1,25 @@
-// Module ID: 15745
-// Function ID: 15746
+// Module ID: 15824
+// Function ID: 15825
 // Name: Username
-// Dependencies: [19, 17, 4402, 1391, 4025, 4469, 4034, 5104, 4399, 676, 21, 4380, 712, 15728, 9617, 9400, 9625, 15727, 589, 9594, 9597, 9790, 9791, 15746, 9788, 9673, 4376, 4224, 2]
+// Dependencies: [19, 17, 4466, 1391, 4089, 4533, 4098, 5170, 4463, 676, 21, 4444, 712, 15807, 9685, 9468, 9693, 15806, 589, 9662, 9665, 9857, 9858, 15825, 9855, 9741, 4440, 4288, 2]
 
-// Module 15745 (Username)
+// Module 15824 (Username)
 import ThemesDefault from "Themes" /* 712 */;
-import memoResult1Default from "memoResult1" /* 9400 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 9617 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 9625 */;
-import apexExperiment from "apexExperiment" /* 15728 */;
+import memoResult1Default from "memoResult1" /* 9468 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 9685 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 9693 */;
+import apexExperiment from "apexExperiment" /* 15807 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "reset" /* 4402 */;
+import closure_4 from "reset" /* 4466 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_7 from "sortActivity" /* 4469 */;
-import closure_8 from "markAllUserIdListsStale" /* 4034 */;
-import closure_9 from "filterPlayingActivities" /* 5104 */;
-import closure_10 from "updateVoiceState" /* 4399 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_7 from "sortActivity" /* 4533 */;
+import closure_8 from "markAllUserIdListsStale" /* 4098 */;
+import closure_9 from "filterPlayingActivities" /* 5170 */;
+import closure_10 from "updateVoiceState" /* 4463 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

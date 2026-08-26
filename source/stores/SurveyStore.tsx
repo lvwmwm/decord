@@ -1,19 +1,19 @@
-// Module ID: 4599
-// Function ID: 4600
+// Module ID: 4663
+// Function ID: 4664
 // Name: fetchSurveyIfNeeded
-// Dependencies: [4300, 1910, 4025, 4202, 1922, 676, 687, 4600, 506, 595, 3979, 589, 709, 2]
+// Dependencies: [4364, 1910, 4089, 4266, 1922, 676, 687, 4664, 506, 595, 4043, 589, 709, 2]
 
-// Module 4599 (fetchSurveyIfNeeded)
+// Module 4663 (fetchSurveyIfNeeded)
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import hooksDefault from "hooks" /* 3979 */;
-import overrideSurvey from "overrideSurvey" /* 4600 */;
-import closure_4 from "handleInviteData" /* 4300 */;
+import hooksDefault from "hooks" /* 4043 */;
+import overrideSurvey from "overrideSurvey" /* 4664 */;
+import closure_4 from "handleInviteData" /* 4364 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4025 */;
-import closure_7 from "handleConnectionOpen" /* 4202 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_7 from "handleConnectionOpen" /* 4266 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;

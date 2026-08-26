@@ -1,13 +1,13 @@
-// Module ID: 16709
-// Function ID: 16710
-// Dependencies: [10579, 1236, 1995, 2]
+// Module ID: 16794
+// Function ID: 16795
+// Dependencies: [10647, 1236, 1995, 2]
 // Exports: default
 
-// Module 16709
+// Module 16794
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
-import XBOX_URL_BASE from "XBOX_URL_BASE" /* 10579 */;
+import XBOX_URL_BASE from "XBOX_URL_BASE" /* 10647 */;
 
 let closure_3 = XBOX_URL_BASE.GameConsoleCommandResultErrorCodes;
 const result = set.fileFinishedImporting("modules/game_console/getErrorMessageForCommandResult.tsx");

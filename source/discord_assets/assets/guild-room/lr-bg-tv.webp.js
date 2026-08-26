@@ -1,9 +1,9 @@
-// Module ID: 4584
-// Function ID: 4585
+// Module ID: 4648
+// Function ID: 4649
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4584 (metadata)
+// Module 4648 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/guild-room/lr-bg-tv.webp.js");

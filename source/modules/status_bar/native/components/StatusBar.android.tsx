@@ -1,12 +1,12 @@
-// Module ID: 7893
-// Function ID: 7894
+// Module ID: 7960
+// Function ID: 7961
 // Name: componentDidMount
-// Dependencies: [17, 7894, 2]
+// Dependencies: [17, 7961, 2]
 
-// Module 7893 (componentDidMount)
+// Module 7960 (componentDidMount)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import pushStackEntryDefault from "pushStackEntry" /* 7894 */;
+import pushStackEntryDefault from "pushStackEntry" /* 7961 */;
 
 const StatusBar = get_ActivityIndicator.StatusBar;
 class StatusBarAndroid extends StatusBar {

@@ -1,25 +1,25 @@
-// Module ID: 10505
-// Function ID: 10506
+// Module ID: 10573
+// Function ID: 10574
 // Name: updateActivities
-// Dependencies: [32, 1390, 4421, 4403, 10506, 5105, 1340, 4402, 1391, 4416, 10508, 1981, 4398, 676, 4070, 9594, 12, 10509, 4554, 659, 10510, 1403, 589, 709, 2]
+// Dependencies: [32, 1390, 4485, 4467, 10574, 5171, 1340, 4466, 1391, 4480, 10576, 1981, 4462, 676, 4134, 9662, 12, 10577, 4618, 659, 10578, 1403, 589, 709, 2]
 
-// Module 10505 (updateActivities)
+// Module 10573 (updateActivities)
 import initializeDefault from "initialize" /* 589 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "participantFromServer" /* 1390 */;
-import closure_5 from "addApplication" /* 4421 */;
-import closure_6 from "initialize" /* 4403 */;
-import closure_7 from "updateActivities" /* 10506 */;
-import closure_8 from "upsertAccount" /* 5105 */;
+import closure_5 from "addApplication" /* 4485 */;
+import closure_6 from "initialize" /* 4467 */;
+import closure_7 from "updateActivities" /* 10574 */;
+import closure_8 from "upsertAccount" /* 5171 */;
 import closure_9 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_10 from "reset" /* 4402 */;
+import closure_10 from "reset" /* 4466 */;
 import closure_11 from "ensureGuildLoaded" /* 1391 */;
-import closure_12 from "gameFromServer" /* 4416 */;
-import closure_13 from "makeTwitchRequest" /* 10508 */;
+import closure_12 from "gameFromServer" /* 4480 */;
+import closure_13 from "makeTwitchRequest" /* 10576 */;
 import closure_14 from "handleConnectionOpen" /* 1981 */;
-import closure_15 from "handleUpdate" /* 4398 */;
+import closure_15 from "handleUpdate" /* 4462 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -272,7 +272,7 @@ const localActivityStore = new LocalActivityStore(dispatcherDefault, {
         let tmp12 = num;
         let tmp13 = callback;
         let tmp14 = dependencyMap;
-        let obj2 = callback(10510);
+        let obj2 = callback(10578);
         let tmp15 = tmp9;
         let obj3 = callback(1403);
         let num2;
@@ -286,7 +286,7 @@ const localActivityStore = new LocalActivityStore(dispatcherDefault, {
         let tmp18 = tmp9;
         let tmp19 = constants2;
         let hasFlagResult = obj3.hasFlag(num2, constants.INSTANCE);
-        let tmp13Result = tmp13(10510);
+        let tmp13Result = tmp13(10578);
         let tmp20 = tmp11;
         let tmp21 = obj2;
         let tmp22 = tmp10;

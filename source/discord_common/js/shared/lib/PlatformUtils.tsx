@@ -1,9 +1,9 @@
-// Module ID: 4642
-// Function ID: 4643
+// Module ID: 4706
+// Function ID: 4707
 // Name: isTablet
 // Dependencies: [669, 2]
 
-// Module 4642 (isTablet)
+// Module 4706 (isTablet)
 import importDefaultResult1 from "format" /* 669 */;
 import set from "set" /* 2 */;
 

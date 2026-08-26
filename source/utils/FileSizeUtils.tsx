@@ -1,10 +1,10 @@
-// Module ID: 4274
-// Function ID: 4275
+// Module ID: 4338
+// Function ID: 4339
 // Name: formatSize
 // Dependencies: [1236, 2]
 // Exports: formatKbSize
 
-// Module 4274 (formatSize)
+// Module 4338 (formatSize)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

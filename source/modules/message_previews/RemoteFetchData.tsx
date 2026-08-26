@@ -1,9 +1,9 @@
-// Module ID: 14764
-// Function ID: 14765
+// Module ID: 14837
+// Function ID: 14838
 // Name: FetchStatus
 // Dependencies: [5, 2]
 
-// Module 14764 (FetchStatus)
+// Module 14837 (FetchStatus)
 import closure_0 from "asyncGeneratorStep" /* 5 */;
 
 let obj = { Pending: 0, [0]: "Pending", Fetching: 1, [1]: "Fetching" };
@@ -105,7 +105,7 @@ prototype["try"] = function try(nextWantsResult, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

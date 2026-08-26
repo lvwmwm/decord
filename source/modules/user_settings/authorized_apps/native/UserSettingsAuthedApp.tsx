@@ -1,29 +1,29 @@
-// Module ID: 14396
-// Function ID: 14397
+// Module ID: 14469
+// Function ID: 14470
 // Name: WarningLabel
-// Dependencies: [19, 17, 1390, 5356, 1391, 4034, 4589, 1996, 676, 9819, 10433, 21, 4380, 712, 4335, 4376, 1500, 1501, 1236, 5842, 10686, 10589, 589, 12156, 1435, 4746, 12155, 4347, 10434, 2009, 503, 9391, 7929, 7737, 6122, 9079, 4235, 5368, 5363, 11, 11639, 9682, 5873, 5874, 5480, 2]
+// Dependencies: [19, 17, 1390, 5422, 1391, 4098, 4653, 1996, 676, 9886, 10501, 21, 4444, 712, 4399, 4440, 1500, 1501, 1236, 5908, 10758, 10657, 589, 12229, 1435, 4810, 12228, 4411, 10502, 2009, 503, 9459, 7996, 7804, 6188, 9147, 4299, 5434, 5429, 11, 11712, 9750, 5939, 5940, 5546, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14396 (WarningLabel)
+// Module 14469 (WarningLabel)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4335 */;
-import Text from "Text" /* 4376 */;
-import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5842 */;
-import postMessageToWebViewDefault from "postMessageToWebView" /* 10686 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4399 */;
+import Text from "Text" /* 4440 */;
+import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5908 */;
+import postMessageToWebViewDefault from "postMessageToWebView" /* 10758 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "participantFromServer" /* 1390 */;
-import closure_7 from "recomputeFromAppTokens" /* 5356 */;
+import closure_7 from "recomputeFromAppTokens" /* 5422 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "markAllUserIdListsStale" /* 4034 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_9 from "markAllUserIdListsStale" /* 4098 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4653 */;
 import closure_11 from "_getSystemLocale" /* 1996 */;
 import ME from "ME" /* 676 */;
-import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 9819 */;
-import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10433 */;
+import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 9886 */;
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10501 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function WarningLabel(children) {

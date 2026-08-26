@@ -1,15 +1,15 @@
-// Module ID: 17118
-// Function ID: 17119
+// Module ID: 17203
+// Function ID: 17204
 // Name: _createGroupFromStore
-// Dependencies: [32, 5, 19, 17075, 14649, 676, 21, 14656, 14671, 4097, 1236, 503, 4588, 17087, 17070, 17088, 2]
+// Dependencies: [32, 5, 19, 17160, 14722, 676, 21, 14729, 14744, 4161, 1236, 503, 4652, 17172, 17155, 17173, 2]
 
-// Module 17118 (_createGroupFromStore)
-import getRoleEmojisAll from "getRoleEmojis" /* 14671 */;
+// Module 17203 (_createGroupFromStore)
+import getRoleEmojisAll from "getRoleEmojis" /* 14744 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "noop" /* 19 */;
-import { useRoleTierEditStore } from "usePriceTiers" /* 17075 */;
-import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS" /* 14649 */;
+import { useRoleTierEditStore } from "usePriceTiers" /* 17160 */;
+import MAX_SUBSCRIPTION_TIERS from "MAX_SUBSCRIPTION_TIERS" /* 14722 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -35,7 +35,7 @@ function _createGroupFromStore() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function _createGroupFromStore() {
             return obj;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp13) {
           c6 = tmp;
           throw tmp13;
@@ -154,7 +154,7 @@ class GuildRoleSubscriptionGroupSetupModal {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

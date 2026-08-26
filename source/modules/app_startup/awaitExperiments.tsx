@@ -1,12 +1,12 @@
-// Module ID: 13648
-// Function ID: 13649
+// Module ID: 13721
+// Function ID: 13722
 // Name: future
-// Dependencies: [8497, 2]
+// Dependencies: [8564, 2]
 // Exports: beginLoadedExperimentsTimeout, getPromise, onExperimentsLoaded
 
-// Module 13648 (future)
+// Module 13721 (future)
 import set from "set" /* 2 */;
-import Future from "Future" /* 8497 */;
+import Future from "Future" /* 8564 */;
 
 const future = new Future.Future();
 let c1 = null;

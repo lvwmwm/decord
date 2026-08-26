@@ -1,16 +1,16 @@
-// Module ID: 5366
-// Function ID: 5367
+// Module ID: 5432
+// Function ID: 5433
 // Name: incrementVersion
-// Dependencies: [1340, 1391, 4743, 1982, 676, 1306, 1370, 1913, 589, 709, 2]
+// Dependencies: [1340, 1391, 4807, 1982, 676, 1306, 1370, 1913, 589, 709, 2]
 
-// Module 5366 (incrementVersion)
+// Module 5432 (incrementVersion)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import create from "create" /* 1306 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "handleConnectionOpen" /* 4743 */;
+import closure_4 from "handleConnectionOpen" /* 4807 */;
 import closure_5 from "comparator" /* 1982 */;
 import { ChannelTypes } from "ME" /* 676 */;
 

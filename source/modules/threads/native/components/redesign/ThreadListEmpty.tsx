@@ -1,16 +1,16 @@
-// Module ID: 16057
-// Function ID: 16058
-// Dependencies: [19, 17, 21, 4380, 712, 1297, 11806, 4376, 1236, 4815, 2]
+// Module ID: 16138
+// Function ID: 16139
+// Dependencies: [19, 17, 21, 4444, 712, 1297, 11879, 4440, 1236, 4879, 2]
 
-// Module 16057
+// Module 16138
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4376 */;
-import registerAssetDefault from "registerAsset" /* 11806 */;
+import Text from "Text" /* 4440 */;
+import registerAssetDefault from "registerAsset" /* 11879 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -43,7 +43,7 @@ const memoResult = importAllResult.memo((onCreateThreadPress) => {
     obj3[0] = onCreateThreadPress;
     const intl3 = tmp5(1236).intl;
     obj3[1] = intl3.string(tmp5(1236).t.rBIGBL);
-    tmp4Result = callback(tmp5(4815).Button, obj3);
+    tmp4Result = callback(tmp5(4879).Button, obj3);
   }
   items[3] = tmp4Result;
   obj[1] = items;

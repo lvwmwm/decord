@@ -1,10 +1,10 @@
-// Module ID: 10248
-// Function ID: 10249
+// Module ID: 10315
+// Function ID: 10316
 // Name: _redirectToSlayerStorefrontWeb
-// Dependencies: [5, 676, 3, 4098, 1236, 6040, 4058, 2]
+// Dependencies: [5, 676, 3, 4162, 1236, 6106, 4122, 2]
 // Exports: default
 
-// Module 10248 (_redirectToSlayerStorefrontWeb)
+// Module 10315 (_redirectToSlayerStorefrontWeb)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Routes } from "ME" /* 676 */;
@@ -29,7 +29,7 @@ function _redirectToSlayerStorefrontWeb() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -68,13 +68,13 @@ function _redirectToSlayerStorefrontWeb() {
               const obj2 = { key: "SHOP_ITEM_HANDOFF_ERROR", content: null };
               const intl2 = callback(1236).intl;
               obj2[1] = intl2.string(callback(1236).t["rTU7/z"]);
-              callback2(4098).open(obj2);
+              callback2(4162).open(obj2);
               c6 = 3;
               return { value: false, done: true };
             } else {
               c4 = 1;
               closure_3 = c4.COLLECTIBLES_SHOP_GAME_SHOP(callback, undefined, callback2);
-              let obj6 = callback2(6040);
+              let obj6 = callback2(6106);
               logger = 3;
               c6 = 1;
               const obj3 = { value: null, done: false };
@@ -87,14 +87,14 @@ function _redirectToSlayerStorefrontWeb() {
             const _JSON = JSON;
             const _HermesInternal = HermesInternal;
             logger.error("Error performing web handoff: " + JSON.stringify(c4));
-            obj1 = callback(4058);
+            obj1 = callback(4122);
             let obj4 = { tags: null };
             const obj5 = { source: null, skuId: null };
             obj5[0] = dependencyMap;
             obj5[1] = callback2;
             obj4[0] = obj5;
             const result = obj1.captureBillingException(c4, obj4);
-            obj4 = callback2(4098);
+            obj4 = callback2(4162);
             obj6 = { key: "SHOP_ITEM_HANDOFF_ERROR", content: null };
             const intl = callback(1236).intl;
             obj6[1] = intl.string(callback(1236).t["rTU7/z"]);

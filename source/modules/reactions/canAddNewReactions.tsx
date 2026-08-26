@@ -1,11 +1,11 @@
-// Module ID: 8231
-// Function ID: 8232
-// Dependencies: [5238, 4025, 676, 2]
+// Module ID: 8298
+// Function ID: 8299
+// Dependencies: [5304, 4089, 676, 2]
 // Exports: default
 
-// Module 8231
-import closure_0 from "recomputeGuild" /* 5238 */;
-import closure_1 from "getUncachedChannelPermissions" /* 4025 */;
+// Module 8298
+import closure_0 from "recomputeGuild" /* 5304 */;
+import closure_1 from "getUncachedChannelPermissions" /* 4089 */;
 import { Permissions } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/reactions/canAddNewReactions.tsx");

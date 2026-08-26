@@ -1,13 +1,13 @@
-// Module ID: 9911
-// Function ID: 9912
+// Module ID: 9978
+// Function ID: 9979
 // Name: setsEqual
-// Dependencies: [1938, 1236, 2337, 2]
+// Dependencies: [1938, 1236, 2369, 2]
 // Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, formatTime, getShortDayLabels, sortRulesByStartTime, timeToMinutes, toTimeProto
 
-// Module 9911 (setsEqual)
+// Module 9978 (setsEqual)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import create from "create" /* 1938 */;
-import messagesProxyDefault from "messagesProxy" /* 2337 */;
+import messagesProxyDefault from "messagesProxy" /* 2369 */;
 import set from "set" /* 2 */;
 
 function setsEqual(set, set2) {
@@ -32,13 +32,13 @@ function formatDays(days) {
   set = new Set(days);
   if (setsEqual(set, set2)) {
     const intl3 = set(1236).intl;
-    return intl3.string(dateTimeFormat(2337).bPjqd1);
+    return intl3.string(dateTimeFormat(2369).bPjqd1);
   } else if (tmp2(set, set)) {
     const intl2 = set(1236).intl;
-    return intl2.string(dateTimeFormat(2337)["4dr9L9"]);
+    return intl2.string(dateTimeFormat(2369)["4dr9L9"]);
   } else if (tmp2(set, set1)) {
     const intl = set(1236).intl;
-    return intl.string(dateTimeFormat(2337)["6lTTJ+"]);
+    return intl.string(dateTimeFormat(2369)["6lTTJ+"]);
   } else {
     const _Intl = Intl;
     dateTimeFormat = new Intl.DateTimeFormat(set(1236).intl.currentLocale, { weekday: "short" });

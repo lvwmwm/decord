@@ -1,14 +1,14 @@
-// Module ID: 10615
-// Function ID: 10616
+// Module ID: 10683
+// Function ID: 10684
 // Name: RobotIcon
-// Dependencies: [19, 21, 712, 4100, 10616, 2]
+// Dependencies: [19, 21, 712, 4164, 10684, 2]
 // Exports: RobotIcon
 
-// Module 10615 (RobotIcon)
+// Module 10683 (RobotIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4100 */;
-import registerAsset from "registerAsset" /* 10616 */;
+import BaseIconImage from "BaseIconImage" /* 4164 */;
+import registerAsset from "registerAsset" /* 10684 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

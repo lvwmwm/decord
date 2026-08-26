@@ -1,17 +1,17 @@
-// Module ID: 11142
-// Function ID: 11143
+// Module ID: 11214
+// Function ID: 11215
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 4380, 712, 4108, 5856, 4228, 7552, 4376, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 4172, 5922, 4292, 7618, 4440, 2]
 // Exports: default
 
-// Module 11142 (UserProfileSection)
+// Module 11214 (UserProfileSection)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import ManaContext from "ManaContext" /* 4108 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 5856 */;
+import ManaContext from "ManaContext" /* 4172 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 5922 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -36,8 +36,8 @@ export default function UserProfileSection(title) {
   const merged1 = Object.assign(tmp2.contentContainer);
   if (null != primaryColor) {
     if (null != profileThemeValues) {
-      let borderColor = tmp3(4228).hexOpacityToRgba(tmp3(7552).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
-      const tmp3Result = tmp3(4228);
+      let borderColor = tmp3(4292).hexOpacityToRgba(tmp3(7618).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      const tmp3Result = tmp3(4292);
     }
     obj.borderColor = borderColor;
     obj = { style: null };
@@ -52,7 +52,7 @@ export default function UserProfileSection(title) {
       obj2[0] = tmp2.title;
       const obj3 = { variant: "eyebrow", accessibilityRole: "header", children: null };
       obj3[2] = title;
-      const items1 = [callback(tmp3(4376).Text, obj3), headerIcon];
+      const items1 = [callback(tmp3(4440).Text, obj3), headerIcon];
       obj2[1] = items1;
       const items2 = [tmp8(tmp9, obj2), trailingIcon];
       obj1[1] = items2;

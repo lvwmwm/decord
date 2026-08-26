@@ -1,17 +1,17 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10111
+// Function ID: 10112
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4380, 712, 4376, 10019, 5480, 4347, 8137, 5475, 12, 5335, 8678, 9779, 5503, 5502, 1236, 6101, 8681, 2]
+// Dependencies: [32, 19, 17, 21, 4444, 712, 4440, 10086, 5546, 4411, 8204, 5541, 12, 5401, 8746, 9846, 5569, 5568, 1236, 6167, 8749, 2]
 // Exports: default
 
-// Module 10044 (BugReporterFeatureActionSheet)
+// Module 10111 (BugReporterFeatureActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4376 */;
+import Text from "Text" /* 4440 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -35,9 +35,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10019);
+  let obj = item(10086);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10019).getFeatureId(feature);
+  const featureId1 = item(10086).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -46,10 +46,10 @@ let closure_10 = importAllResult.memo((item) => {
       setFeature(item);
       setFeature(closure_1_2[9]).hideActionSheet();
     },
-    trailing: callback(item(8137).FormRadio, obj)
+    trailing: callback(item(8204).FormRadio, obj)
   };
   obj = { selected: featureId === featureId1 };
-  return callback(item(5480).TableRow, obj);
+  return callback(item(5546).TableRow, obj);
 });
 const obj2 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
 const result = require("set").fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

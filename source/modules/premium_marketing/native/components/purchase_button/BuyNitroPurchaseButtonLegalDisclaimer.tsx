@@ -1,20 +1,20 @@
-// Module ID: 7884
-// Function ID: 7885
+// Module ID: 7951
+// Function ID: 7952
 // Name: BuyNitroPurchaseButtonLegalDisclaimer
-// Dependencies: [19, 676, 21, 4380, 712, 1236, 500, 4043, 1995, 4376, 2]
+// Dependencies: [19, 676, 21, 4444, 712, 1236, 500, 4107, 1995, 4440, 2]
 // Exports: default
 
-// Module 7884 (BuyNitroPurchaseButtonLegalDisclaimer)
+// Module 7951 (BuyNitroPurchaseButtonLegalDisclaimer)
 import noopAll from "noop" /* 19 */;
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4043 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4043 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;
@@ -55,7 +55,7 @@ export default function BuyNitroPurchaseButtonLegalDisclaimer(arg0) {
         obj = { paidURL: null, interval: null, ctaText: null };
         obj[0] = constants2.PAID_TERMS;
         const isAndroidResult = tmp3Result.isAndroid();
-        tmp3Result = tmp3(4043);
+        tmp3Result = tmp3(4107);
         obj[1] = tmp3Result.getIntervalStringAsNoun(item.interval);
         obj[2] = ctaText;
         formatResult = format(tmp3Result.isAndroid() ? t.COObWR : t["7wpqfj"], obj);
@@ -65,7 +65,7 @@ export default function BuyNitroPurchaseButtonLegalDisclaimer(arg0) {
       obj1 = { style: null, variant: "text-xxs/medium", children: null };
       obj1[0] = tmp.disclaimer;
       obj1[2] = formatResult;
-      jsx(tmp10(4376).Text, { style: null, variant: "text-xxs/medium", children: null });
+      jsx(tmp10(4440).Text, { style: null, variant: "text-xxs/medium", children: null });
     }
     const tmp3Result1 = set;
     t = tmp3(1236).t;

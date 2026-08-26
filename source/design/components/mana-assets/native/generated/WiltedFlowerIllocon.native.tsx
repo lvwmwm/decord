@@ -1,14 +1,14 @@
-// Module ID: 6985
-// Function ID: 6986
+// Module ID: 7051
+// Function ID: 7052
 // Name: WiltedFlowerIllocon
-// Dependencies: [21, 5374, 6986, 2]
+// Dependencies: [21, 5440, 7052, 2]
 // Exports: WiltedFlowerIllocon
 
-// Module 6985 (WiltedFlowerIllocon)
+// Module 7051 (WiltedFlowerIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5374 */;
-import metadataDefault from "metadata" /* 6986 */;
+import preloadDefault from "preload" /* 5440 */;
+import metadataDefault from "metadata" /* 7052 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WiltedFlowerIllocon.native.tsx");

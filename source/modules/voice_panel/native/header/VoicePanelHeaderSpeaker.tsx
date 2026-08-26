@@ -1,18 +1,18 @@
-// Module ID: 16463
-// Function ID: 16464
-// Dependencies: [109, 19, 17, 16464, 4397, 16465, 9297, 1391, 4398, 676, 21, 16467, 16440, 9296, 10931, 10855, 647, 12422, 10963, 16471, 500, 9321, 9298, 1236, 9318, 9320, 16472, 12421, 4201, 1377, 5887, 16383, 13590, 2]
+// Module ID: 16546
+// Function ID: 16547
+// Dependencies: [109, 19, 17, 16547, 4461, 16548, 9365, 1391, 4462, 676, 21, 16550, 16523, 9364, 11003, 10927, 647, 12493, 11035, 16554, 500, 9389, 9366, 1236, 9386, 9388, 16555, 12492, 4265, 1377, 5953, 16464, 13663, 2]
 
-// Module 16463
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 16467 */;
+// Module 16546
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 16550 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore" /* 16464 */;
-import closure_8 from "set" /* 4397 */;
-import closure_9 from "handleAudioRouteChanged" /* 16465 */;
-import closure_10 from "handleAudioRouteChanged" /* 9297 */;
+import { setVoiceUpsellDismissed } from "useConsoleVoiceUpsellStore" /* 16547 */;
+import closure_8 from "set" /* 4461 */;
+import closure_9 from "handleAudioRouteChanged" /* 16548 */;
+import closure_10 from "handleAudioRouteChanged" /* 9365 */;
 import closure_11 from "ensureGuildLoaded" /* 1391 */;
-import closure_12 from "handleUpdate" /* 4398 */;
+import closure_12 from "handleUpdate" /* 4462 */;
 import { PlatformTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
 

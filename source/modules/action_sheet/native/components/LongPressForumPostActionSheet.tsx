@@ -1,17 +1,17 @@
-// Module ID: 10052
-// Function ID: 10053
+// Module ID: 10119
+// Function ID: 10120
 // Name: ForumPostLongPressActionSheet
-// Dependencies: [19, 4026, 4027, 6029, 1218, 1910, 4395, 676, 1398, 21, 9858, 9882, 1236, 9883, 9885, 8652, 5359, 4321, 7368, 9284, 4343, 4333, 10053, 4925, 9822, 10055, 11, 5854, 6120, 8167, 10346, 4347, 10344, 2009, 4323, 8757, 9887, 9974, 9889, 10348, 9874, 4744, 4338, 7063, 1297, 9696, 5862, 4097, 589, 6027, 5996, 8560, 4070, 4574, 10350, 5885, 5870, 1625, 10351, 5872, 2]
+// Dependencies: [19, 4090, 4091, 6095, 1218, 1910, 4459, 676, 1398, 21, 9925, 9949, 1236, 9950, 9952, 8720, 5425, 4385, 7434, 9352, 4407, 4397, 10120, 4991, 9889, 10122, 11, 5920, 6186, 8234, 10414, 4411, 10412, 2009, 4387, 8825, 9954, 10041, 9956, 10416, 9941, 4808, 4402, 7129, 1297, 9764, 5928, 4161, 589, 6093, 6062, 8628, 4134, 4638, 10418, 5951, 5936, 1625, 10419, 5938, 2]
 // Exports: default
 
-// Module 10052 (ForumPostLongPressActionSheet)
+// Module 10119 (ForumPostLongPressActionSheet)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "initialize" /* 4026 */;
-import closure_4 from "storeThread" /* 4027 */;
-import closure_5 from "updateState" /* 6029 */;
+import closure_3 from "initialize" /* 4090 */;
+import closure_4 from "storeThread" /* 4091 */;
+import closure_5 from "updateState" /* 6095 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "generateOldThreadCutoff" /* 4395 */;
+import closure_8 from "generateOldThreadCutoff" /* 4459 */;
 import ME from "ME" /* 676 */;
 import { ChannelFlags } from "set" /* 1398 */;
 import { jsx } from "jsxProd" /* 21 */;

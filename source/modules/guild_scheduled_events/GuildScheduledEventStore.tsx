@@ -1,10 +1,10 @@
-// Module ID: 7132
-// Function ID: 7133
+// Module ID: 7198
+// Function ID: 7199
 // Name: scheduledEventSort
-// Dependencies: [1218, 1992, 1397, 4021, 12, 11, 589, 709, 2]
+// Dependencies: [1218, 1992, 1397, 4085, 12, 11, 589, 709, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 7132 (scheduledEventSort)
+// Module 7198 (scheduledEventSort)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

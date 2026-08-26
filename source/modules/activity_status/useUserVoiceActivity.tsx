@@ -1,13 +1,13 @@
-// Module ID: 9791
-// Function ID: 9792
+// Module ID: 9858
+// Function ID: 9859
 // Name: getVisibleUserVoiceActivity
-// Dependencies: [1391, 4025, 4399, 505, 589, 2]
+// Dependencies: [1391, 4089, 4463, 505, 589, 2]
 // Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 9791 (getVisibleUserVoiceActivity)
+// Module 9858 (getVisibleUserVoiceActivity)
 import importDefaultResult from "ensureGuildLoaded" /* 1391 */;
-import importDefaultResult1 from "getUncachedChannelPermissions" /* 4025 */;
-import importDefaultResult2 from "updateVoiceState" /* 4399 */;
+import importDefaultResult1 from "getUncachedChannelPermissions" /* 4089 */;
+import importDefaultResult2 from "updateVoiceState" /* 4463 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

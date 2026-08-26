@@ -1,12 +1,12 @@
-// Module ID: 5463
-// Function ID: 5464
+// Module ID: 5529
+// Function ID: 5530
 // Name: useGuildRoleMemberCounts
-// Dependencies: [19, 5464, 589, 5465, 2]
+// Dependencies: [19, 5530, 589, 5531, 2]
 // Exports: default
 
-// Module 5463 (useGuildRoleMemberCounts)
+// Module 5529 (useGuildRoleMemberCounts)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getRoleMemberCount" /* 5464 */;
+import closure_4 from "getRoleMemberCount" /* 5530 */;
 
 const require = arg1;
 let closure_5 = {};

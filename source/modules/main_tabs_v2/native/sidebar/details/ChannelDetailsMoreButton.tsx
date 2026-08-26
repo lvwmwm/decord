@@ -1,12 +1,12 @@
-// Module ID: 16079
-// Function ID: 16080
+// Module ID: 16160
+// Function ID: 16161
 // Name: MoreButton
-// Dependencies: [19, 21, 9816, 8542, 8539, 1236, 9198, 2]
+// Dependencies: [19, 21, 9883, 8610, 8607, 1236, 9266, 2]
 // Exports: default
 
-// Module 16079 (MoreButton)
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8542 */;
-import registerAssetDefault from "registerAsset" /* 9198 */;
+// Module 16160 (MoreButton)
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8610 */;
+import registerAssetDefault from "registerAsset" /* 9266 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -25,7 +25,7 @@ export default function MoreButton(channel) {
       obj[0] = intl.string(channel(1236).t["UKOtz+"]);
       obj[1] = registerAssetDefault;
       obj[2] = tmp;
-      obj[0] = jsx(channel(8539).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
+      obj[0] = jsx(channel(8607).HeaderIconButton, { accessibilityLabel: null, source: null, onPress: null });
       tmp2 = jsx(PressableNavigatorButtonWrapperDefault, { accessibilityLabel: null, source: null, onPress: null });
       const tmp6 = PressableNavigatorButtonWrapperDefault;
     } else {

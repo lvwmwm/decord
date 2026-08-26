@@ -1,12 +1,12 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17269
+// Function ID: 17270
 // Name: AVErrorStreamViewHighPacketLossDefinition
-// Dependencies: [4402, 1218, 4468, 17183, 4446, 9317, 17180, 2]
+// Dependencies: [4466, 1218, 4532, 17268, 4510, 9385, 17265, 2]
 
-// Module 17184 (AVErrorStreamViewHighPacketLossDefinition)
-import closure_2 from "reset" /* 4402 */;
+// Module 17269 (AVErrorStreamViewHighPacketLossDefinition)
+import closure_2 from "reset" /* 4466 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "initialize" /* 4468 */;
+import closure_4 from "initialize" /* 4532 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorStreamViewHighPacketLoss.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 16858
+// Function ID: 16859
 // Name: handlePressNext
-// Dependencies: [16774, 676, 698, 8665, 4744, 1236, 8421, 8423, 4611, 16775, 2009, 12260, 2]
+// Dependencies: [16859, 676, 698, 8733, 4808, 1236, 8488, 8490, 4675, 16860, 2009, 12332, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 16773 (handlePressNext)
+// Module 16858 (handlePressNext)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4611 from "module_4611" /* 4611 */;
-import setDefault from "set" /* 4744 */;
-import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 8665 */;
-import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 12260 */;
-import ADD_AVATAR_MODAL_KEY2 from "ADD_AVATAR_MODAL_KEY" /* 16774 */;
+import _modDef4675 from "module_4675" /* 4675 */;
+import setDefault from "set" /* 4808 */;
+import saveProfileAndAccountRequest from "saveProfileAndAccountRequest" /* 8733 */;
+import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 12332 */;
+import ADD_AVATAR_MODAL_KEY2 from "ADD_AVATAR_MODAL_KEY" /* 16859 */;
 
 const ADD_AVATAR_MODAL_KEY = ADD_AVATAR_MODAL_KEY2.ADD_AVATAR_MODAL_KEY;
 const AnalyticEvents = ME.AnalyticEvents;
@@ -34,7 +34,7 @@ export const handlePressNext = function handlePressNext(pendingImage, first, fn)
   if (null != fn) {
     fn();
   } else {
-    obj = _modDef4611;
+    obj = _modDef4675;
     obj.popWithKey(ADD_AVATAR_MODAL_KEY);
     _startContactSyncForDiscoverability.nextOnboardingStep({ skip: false });
     const obj2 = _startContactSyncForDiscoverability;
@@ -70,5 +70,5 @@ export const showSkipAvatarModal = function showSkipAvatarModal(arg0) {
   setDefault.show(obj);
 };
 export const openAddAvatarModal = function openAddAvatarModal() {
-  _modDef4611.pushLazy(asyncRequireImpl(16775, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  _modDef4675.pushLazy(asyncRequireImpl(16860, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 };

@@ -1,9 +1,9 @@
-// Module ID: 10633
-// Function ID: 10634
+// Module ID: 10701
+// Function ID: 10702
 // Name: PlayStationLinkModalScenes
 // Dependencies: [2]
 
-// Module 10633 (PlayStationLinkModalScenes)
+// Module 10701 (PlayStationLinkModalScenes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkConstants.tsx");

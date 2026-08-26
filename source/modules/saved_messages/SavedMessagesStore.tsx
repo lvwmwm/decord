@@ -1,14 +1,14 @@
-// Module ID: 11208
-// Function ID: 11209
+// Module ID: 11280
+// Function ID: 11281
 // Name: getTimeSafe
-// Dependencies: [1922, 4021, 8536, 4625, 589, 709, 2]
+// Dependencies: [1922, 4085, 8604, 4689, 589, 709, 2]
 // Exports: getComparator
 
-// Module 11208 (getTimeSafe)
+// Module 11280 (getTimeSafe)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4625 */;
-import SavedMessageSortTypes from "SavedMessageSortTypes" /* 8536 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4689 */;
+import SavedMessageSortTypes from "SavedMessageSortTypes" /* 8604 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 import set from "set" /* 2 */;
 
@@ -99,9 +99,9 @@ let c3 = 10000000000000;
 const secondaryIndexMap = new require("version").SecondaryIndexMap((saveData) => {
   const items = [SavedMessageSortTypes.SavedMessageSortTypes.ALL, ];
   if (null != saveData.saveData.dueAt) {
-    let BOOKMARK = tmp(8536).SavedMessageSortTypes.REMINDER;
+    let BOOKMARK = tmp(8604).SavedMessageSortTypes.REMINDER;
   } else {
-    BOOKMARK = tmp(8536).SavedMessageSortTypes.BOOKMARK;
+    BOOKMARK = tmp(8604).SavedMessageSortTypes.BOOKMARK;
   }
   items[1] = BOOKMARK;
   return items;

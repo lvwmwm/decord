@@ -1,17 +1,17 @@
-// Module ID: 14152
-// Function ID: 14153
+// Module ID: 14224
+// Function ID: 14225
 // Name: PX_8
-// Dependencies: [19, 17, 7155, 8965, 21, 712, 4380, 8440, 14151, 8441, 5854, 9541, 2]
+// Dependencies: [19, 17, 7221, 9033, 21, 712, 4444, 8507, 14223, 8508, 5920, 9609, 2]
 
-// Module 14152 (PX_8)
+// Module 14224 (PX_8)
 import ThemesDefault from "Themes" /* 712 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 8440 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 8507 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isProfileFrameRecord } from "fromServer" /* 7155 */;
-import { PROFILE_FRAME_ASPECT_RATIO as closure_6 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8965 */;
+import { isProfileFrameRecord } from "fromServer" /* 7221 */;
+import { PROFILE_FRAME_ASPECT_RATIO as closure_6 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 9033 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -86,9 +86,9 @@ const memoResult1 = importAllResult.memo((isSelected) => {
   obj = { profileFrame, previewWidth: size * closure_6, previewHeight: size - 2 * PX_8, profileBackgroundColor: null };
   const tmp = callback3();
   obj[3] = setSelectedProfileFrame(712).colors.BACKGROUND_BASE_LOW;
-  obj[1] = callback(setSelectedProfileFrame(9541), obj);
+  obj[1] = callback(setSelectedProfileFrame(9609), obj);
   obj[5] = callback(View, obj);
-  return callback(profileFrame(8441).EditCollectiblesListItemProduct, obj);
+  return callback(profileFrame(8508).EditCollectiblesListItemProduct, obj);
 });
 memoResult1.displayName = "EditProfileFrameItem";
 const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/native/EditProfileFrameSection.tsx");

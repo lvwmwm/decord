@@ -1,9 +1,9 @@
-// Module ID: 15951
-// Function ID: 15952
+// Module ID: 16030
+// Function ID: 16031
 // Name: open
 // Dependencies: [2]
 
-// Module 15951 (open)
+// Module 16030 (open)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/vibegrations/lib/VibegrationsWebSocket.tsx");
@@ -148,6 +148,23 @@ prototype["sendControlAck"] = function sendControlAck(id, failed, response, mess
         obj[2] = failed;
         obj[3] = response;
         obj[4] = message;
+        socket.send(JSON.stringify(obj));
+      } catch (err) {
+      }
+    }
+  }
+};
+prototype["sendAppIconAck"] = function sendAppIconAck(arg0, failed) {
+  const self = this;
+  if (null != this.socket) {
+    const _WebSocket = WebSocket;
+    if (self.socket.readyState === WebSocket.OPEN) {
+      try {
+        const socket = self.socket;
+        const _JSON = JSON;
+        const obj = { type: "app_icon_ack", id: null, status: null };
+        obj[1] = arg0;
+        obj[2] = failed;
         socket.send(JSON.stringify(obj));
       } catch (err) {
       }

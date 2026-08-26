@@ -1,14 +1,14 @@
-// Module ID: 12192
-// Function ID: 12193
+// Module ID: 12265
+// Function ID: 12266
 // Name: JoinRequestRejectionReasonActionSheet
-// Dependencies: [5, 32, 19, 21, 4380, 7547, 8584, 4205, 4098, 1236, 6105, 712, 4347, 5503, 5434, 8127, 5257, 4815, 2]
+// Dependencies: [5, 32, 19, 21, 4444, 7613, 8652, 4269, 4162, 1236, 6171, 712, 4411, 5569, 5500, 8194, 5323, 4879, 2]
 
-// Module 12192 (JoinRequestRejectionReasonActionSheet)
+// Module 12265 (JoinRequestRejectionReasonActionSheet)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 class JoinRequestRejectionReasonActionSheet {
@@ -49,7 +49,7 @@ class JoinRequestRejectionReasonActionSheet {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

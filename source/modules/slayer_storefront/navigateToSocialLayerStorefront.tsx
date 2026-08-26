@@ -1,16 +1,16 @@
-// Module ID: 7901
-// Function ID: 7902
+// Module ID: 7968
+// Function ID: 7969
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1910, 5956, 676, 7902, 5954, 1222, 6065, 7903, 2]
+// Dependencies: [5, 1910, 6022, 676, 7969, 6020, 1222, 6131, 7970, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 7901 (navigateToSocialLayerStorefrontWithGuildPreview)
+// Module 7968 (navigateToSocialLayerStorefrontWithGuildPreview)
 import transitionTo from "transitionTo" /* 1222 */;
-import getPrice from "getPrice" /* 5954 */;
-import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 7902 */;
+import getPrice from "getPrice" /* 6020 */;
+import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 7969 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "handleUserSettingsStoreUpdate" /* 5956 */;
+import closure_5 from "handleUserSettingsStoreUpdate" /* 6022 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -42,7 +42,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -106,7 +106,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                     if (null != set) {
                       if (!set.has(guild3.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj4 = lib(7903);
+                          let obj4 = lib(7970);
                           let obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           obj2[1] = { location: "game_shop" };
@@ -121,12 +121,12 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                     c3 = 2;
                     guild = 1;
                     obj4 = { value: null, done: false };
-                    obj4[0] = id(6065).startLurking(id, {}, { shouldNavigate: false });
+                    obj4[0] = id(6131).startLurking(id, {}, { shouldNavigate: false });
                     return obj4;
                   }
                 } else {
                   guild = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             } else if (2 === tmp5) {

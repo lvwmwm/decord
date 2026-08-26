@@ -1,14 +1,14 @@
-// Module ID: 9796
-// Function ID: 9797
+// Module ID: 9863
+// Function ID: 9864
 // Name: ActivityStatusText
-// Dependencies: [19, 21, 4380, 4376, 2]
+// Dependencies: [19, 21, 4444, 4440, 2]
 // Exports: default
 
-// Module 9796 (ActivityStatusText)
+// Module 9863 (ActivityStatusText)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4376 */;
+import Text from "Text" /* 4440 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

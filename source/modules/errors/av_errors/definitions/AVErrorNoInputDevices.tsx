@@ -1,14 +1,14 @@
-// Module ID: 17181
-// Function ID: 17182
+// Module ID: 17266
+// Function ID: 17267
 // Name: AVErrorNoInputDevicesDefinition
-// Dependencies: [1391, 4431, 4454, 9317, 17180, 2]
+// Dependencies: [1391, 4495, 4518, 9385, 17265, 2]
 
-// Module 17181 (AVErrorNoInputDevicesDefinition)
-import mapped from "mapped" /* 9317 */;
-import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17180 */;
+// Module 17266 (AVErrorNoInputDevicesDefinition)
+import mapped from "mapped" /* 9385 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17265 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_4 from "createRTCConnection" /* 4454 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_4 from "createRTCConnection" /* 4518 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/errors/av_errors/definitions/AVErrorNoInputDevices.tsx");

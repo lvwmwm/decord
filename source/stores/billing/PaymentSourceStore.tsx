@@ -1,12 +1,12 @@
-// Module ID: 4046
-// Function ID: 4047
+// Module ID: 4110
+// Function ID: 4111
 // Name: handlePaymentSourceUpdate
-// Dependencies: [4047, 589, 709, 2]
+// Dependencies: [4111, 589, 709, 2]
 
-// Module 4046 (handlePaymentSourceUpdate)
+// Module 4110 (handlePaymentSourceUpdate)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "createFromServer" /* 4047 */;
+import closure_0 from "createFromServer" /* 4111 */;
 
 function handlePaymentSourceUpdate(paymentSource) {
   paymentSource = paymentSource.paymentSource;

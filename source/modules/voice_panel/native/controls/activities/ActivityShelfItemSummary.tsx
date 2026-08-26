@@ -1,24 +1,24 @@
-// Module ID: 16493
-// Function ID: 16494
+// Module ID: 16576
+// Function ID: 16577
 // Name: ParticipantsSummary
-// Dependencies: [32, 19, 17, 21, 4380, 712, 4228, 16494, 11022, 1297, 4824, 4376, 4120, 4830, 2]
+// Dependencies: [32, 19, 17, 21, 4444, 712, 4292, 16577, 11094, 1297, 4889, 4440, 4184, 4895, 2]
 // Exports: default
 
-// Module 16493 (ParticipantsSummary)
+// Module 16576 (ParticipantsSummary)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import _modDef4120 from "module_4120" /* 4120 */;
-import Text from "Text" /* 4376 */;
-import PillWrapper from "PillWrapper" /* 4824 */;
-import EllipsisCircle from "EllipsisCircle" /* 4830 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 11022 */;
-import useActivityUsersDefault from "useActivityUsers" /* 16494 */;
+import _modDef4184 from "module_4184" /* 4184 */;
+import Text from "Text" /* 4440 */;
+import PillWrapper from "PillWrapper" /* 4889 */;
+import EllipsisCircle from "EllipsisCircle" /* 4895 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 11094 */;
+import useActivityUsersDefault from "useActivityUsers" /* 16577 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
-import hexToRgba from "hexToRgba" /* 4228 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
+import hexToRgba from "hexToRgba" /* 4292 */;
 
 require = arg1;
 function ParticipantsSummary(arg0) {
@@ -61,7 +61,7 @@ export default function ActivityShelfItemSummary(submitting) {
     tmp7Result = tmp7(EllipsisCircle.Ellipsis, { variant: "active", size: "md" });
   }
   obj2[1] = tmp7Result;
-  items[1] = closure_5(_modDef4120.View, obj2);
+  items[1] = closure_5(_modDef4184.View, obj2);
   obj[1] = items;
   const items2 = [closure_6(View, obj), closure_5(ParticipantsSummary, { channelId, applicationId })];
   obj[1] = items2;

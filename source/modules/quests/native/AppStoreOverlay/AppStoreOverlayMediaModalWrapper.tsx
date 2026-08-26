@@ -1,11 +1,11 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 10739
+// Function ID: 10740
 // Name: AppStoreOverlayMediaModalWrapper
-// Dependencies: [19, 21, 10669, 9007, 2]
+// Dependencies: [19, 21, 10738, 9075, 2]
 // Exports: default
 
-// Module 10670 (AppStoreOverlayMediaModalWrapper)
-import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 9007 */;
+// Module 10739 (AppStoreOverlayMediaModalWrapper)
+import MediaModalSheetWrapperDefault from "MediaModalSheetWrapper" /* 9075 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

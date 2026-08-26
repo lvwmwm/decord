@@ -1,9 +1,9 @@
-// Module ID: 13196
-// Function ID: 13197
+// Module ID: 13269
+// Function ID: 13270
 // Name: RewardProgram
 // Dependencies: [2]
 
-// Module 13196 (RewardProgram)
+// Module 13269 (RewardProgram)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/RewardProgram.tsx");

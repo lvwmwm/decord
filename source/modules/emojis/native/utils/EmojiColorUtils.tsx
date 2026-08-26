@@ -1,10 +1,10 @@
-// Module ID: 15435
-// Function ID: 15436
+// Module ID: 15514
+// Function ID: 15515
 // Name: _getEmojiCacheKey
 // Dependencies: [5, 17, 1405, 2]
 // Exports: getEmojiDominantColors
 
-// Module 15435 (_getEmojiCacheKey)
+// Module 15514 (_getEmojiCacheKey)
 import privDefault from "priv" /* 1405 */;
 import closure_0 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
@@ -31,7 +31,7 @@ function _getFromCacheOrFallback2() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -147,7 +147,7 @@ function _getEmojiDominantColors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

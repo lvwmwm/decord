@@ -1,18 +1,18 @@
-// Module ID: 15975
-// Function ID: 15976
+// Module ID: 16056
+// Function ID: 16057
 // Name: PX_8
-// Dependencies: [19, 17, 11906, 1391, 8552, 9819, 21, 712, 4380, 589, 11866, 15976, 5834, 5854, 15974, 4802, 7785, 1629, 500, 4359, 7081, 11930, 11905, 4120, 4381, 4384, 4814, 11914, 4242, 5533, 15977, 15989, 16078, 16080, 16081, 16082, 4763, 2]
+// Dependencies: [19, 17, 11979, 1391, 8620, 9886, 21, 712, 4444, 589, 11939, 16057, 5900, 5920, 16055, 4866, 7852, 1629, 500, 4423, 7147, 12003, 11978, 4184, 4445, 4448, 4878, 11987, 4306, 5599, 16058, 16070, 16159, 16161, 16162, 16163, 4827, 2]
 
-// Module 15975 (PX_8)
+// Module 16056 (PX_8)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "prototype" /* 11906 */;
+import closure_5 from "prototype" /* 11979 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import useChannelDetailsStore from "useChannelDetailsStore" /* 8552 */;
-import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 9819 */;
+import useChannelDetailsStore from "useChannelDetailsStore" /* 8620 */;
+import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 9886 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 let c3 = importAllResult;

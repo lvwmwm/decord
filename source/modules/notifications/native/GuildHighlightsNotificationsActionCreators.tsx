@@ -1,14 +1,14 @@
-// Module ID: 11171
-// Function ID: 11172
+// Module ID: 11243
+// Function ID: 11244
 // Name: openGuildHighlightNotificationForPush
-// Dependencies: [11172, 676, 4347, 11173, 2009, 1236, 698, 2]
+// Dependencies: [11244, 676, 4411, 11245, 2009, 1236, 698, 2]
 // Exports: openGuildHighlightNotificationForPush
 
-// Module 11171 (openGuildHighlightNotificationForPush)
+// Module 11243 (openGuildHighlightNotificationForPush)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
-import NotificationUserFeedbackReasons from "NotificationUserFeedbackReasons" /* 11172 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
+import NotificationUserFeedbackReasons from "NotificationUserFeedbackReasons" /* 11244 */;
 
 let closure_3 = NotificationUserFeedbackReasons.NotificationUserFeedbackReasons;
 const AnalyticEvents = ME.AnalyticEvents;
@@ -64,5 +64,5 @@ export const openGuildHighlightNotificationForPush = function openGuildHighlight
     obj.track(constants.FEEDBACK_FORM_SUBMITTED, obj);
   };
   obj[1] = obj;
-  obj.openLazy(_require(2009)(11173, dependencyMap.paths), "GuildHighlightsNotifications", obj);
+  obj.openLazy(_require(2009)(11245, dependencyMap.paths), "GuildHighlightsNotifications", obj);
 };

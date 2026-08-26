@@ -1,11 +1,11 @@
-// Module ID: 5924
-// Function ID: 5925
+// Module ID: 5990
+// Function ID: 5991
 // Name: NavigatorScreen
-// Dependencies: [19, 21, 5925, 5926, 2]
+// Dependencies: [19, 21, 5991, 5992, 2]
 
-// Module 5924 (NavigatorScreen)
-import designConfig2 from "designConfig" /* 5925 */;
-import PostponeRender from "PostponeRender" /* 5926 */;
+// Module 5990 (NavigatorScreen)
+import designConfig2 from "designConfig" /* 5991 */;
+import PostponeRender from "PostponeRender" /* 5992 */;
 import { jsxs } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

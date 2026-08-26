@@ -1,25 +1,25 @@
-// Module ID: 4376
-// Function ID: 4377
+// Module ID: 4440
+// Function ID: 4441
 // Name: Text
-// Dependencies: [109, 19, 17, 505, 21, 4120, 712, 12, 4377, 4378, 4380, 4385, 4386, 4389, 501, 4390, 299, 2]
+// Dependencies: [109, 19, 17, 505, 21, 4184, 712, 12, 4441, 4442, 4444, 4449, 4450, 4453, 501, 4454, 299, 2]
 
-// Module 4376 (Text)
+// Module 4440 (Text)
 import applyDefault from "apply" /* 12 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useManaTextMigrationHighlight2 from "useManaTextMigrationHighlight" /* 4378 */;
-import PlainTextExperimentProvider from "PlainTextExperimentProvider" /* 4385 */;
-import useTypographyVariantRemap from "useTypographyVariantRemap" /* 4386 */;
-import set from "set" /* 4389 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4390 */;
+import useManaTextMigrationHighlight2 from "useManaTextMigrationHighlight" /* 4442 */;
+import PlainTextExperimentProvider from "PlainTextExperimentProvider" /* 4449 */;
+import useTypographyVariantRemap from "useTypographyVariantRemap" /* 4450 */;
+import set from "set" /* 4453 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4454 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { Fonts } from "sum" /* 505 */;
 import { jsx } from "jsxProd" /* 21 */;
-import { TextVariantsFlat } from "TEXT_VARIANT" /* 4377 */;
-import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 4378 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
-import importDefaultResult from "module_4120" /* 4120 */;
+import { TextVariantsFlat } from "TEXT_VARIANT" /* 4441 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 4442 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
+import importDefaultResult from "module_4184" /* 4184 */;
 
 require = arg1;
 let closure_3 = ["color", "fontSize", "fontFamily", "fontWeight", "fontStyle", "textAlign", "textAlignVertical", "verticalAlign", "textDecorationLine", "lineHeight", "letterSpacing"];
@@ -118,7 +118,7 @@ const forwardRefResult = importAllResult.forwardRef((animated) => {
   const arraySpreadResult = HermesBuiltin.arraySpread(includeFontPadding ? items : closure_11, 2);
   items[arraySpreadResult] = style;
   items[arraySpreadResult + 1] = manaTextMigrationHighlight;
-  let tmp4Result = tmp4(4389);
+  let tmp4Result = tmp4(4453);
   obj = { animated: flag, children, enabled: plainTextExperimentEnabled, experimentalUseNativeText: flag2, hasRef: null != arg1, hasTextAncestor: context, isIOS: null, props: null, style: null };
   tmp4Result = tmp4(501);
   obj[6] = tmp4Result.isIOS();

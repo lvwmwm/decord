@@ -1,22 +1,22 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 12923
+// Function ID: 12924
 // Name: GuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 4372, 21, 4380, 712, 589, 4228, 4376, 1236, 5885, 1430, 2]
+// Dependencies: [19, 17, 4436, 21, 4444, 712, 589, 4292, 4440, 1236, 5951, 1430, 2]
 // Exports: default
 
-// Module 12849 (GuildDiscoveryPreviewElement)
+// Module 12923 (GuildDiscoveryPreviewElement)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
-import hexToRgba from "hexToRgba" /* 4228 */;
-import Text from "Text" /* 4376 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5885 */;
+import hexToRgba from "hexToRgba" /* 4292 */;
+import Text from "Text" /* 4440 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5951 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4372 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

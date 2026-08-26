@@ -1,16 +1,16 @@
-// Module ID: 9956
-// Function ID: 9957
+// Module ID: 10023
+// Function ID: 10024
 // Name: HighlightText
-// Dependencies: [19, 676, 21, 4380, 4228, 712, 1297, 2]
+// Dependencies: [19, 676, 21, 4444, 4292, 712, 1297, 2]
 // Exports: default
 
-// Module 9956 (HighlightText)
+// Module 10023 (HighlightText)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
-import hexToRgba from "hexToRgba" /* 4228 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
+import hexToRgba from "hexToRgba" /* 4292 */;
 
 require = arg1;
 noopAll;

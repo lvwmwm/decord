@@ -1,13 +1,13 @@
-// Module ID: 7024
-// Function ID: 7025
+// Module ID: 7090
+// Function ID: 7091
 // Name: useBlockedPaymentsConfig
-// Dependencies: [4291, 1472, 7025, 2]
+// Dependencies: [4355, 1472, 7091, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 7024 (useBlockedPaymentsConfig)
+// Module 7090 (useBlockedPaymentsConfig)
 import set from "set" /* 2 */;
-import useGeoForUserDefault from "useGeoForUser" /* 7025 */;
-import createExperiment from "createExperiment" /* 4291 */;
+import useGeoForUserDefault from "useGeoForUser" /* 7091 */;
+import createExperiment from "createExperiment" /* 4355 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 const items = [{ id: 1, label: "Payments Blocked", config: { paymentsBlocked: true } }];

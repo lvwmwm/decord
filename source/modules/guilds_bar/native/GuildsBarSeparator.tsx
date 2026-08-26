@@ -1,21 +1,21 @@
-// Module ID: 15705
-// Function ID: 15706
+// Module ID: 15784
+// Function ID: 15785
 // Name: GuildsBarHomeDrawerSeparator
-// Dependencies: [19, 21, 4380, 712, 15382, 4120, 4814, 8160, 4101, 5887, 2]
+// Dependencies: [19, 21, 4444, 712, 15461, 4184, 4878, 8227, 4165, 5953, 2]
 
-// Module 15705 (GuildsBarHomeDrawerSeparator)
+// Module 15784 (GuildsBarHomeDrawerSeparator)
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4101 */;
-import setDefault from "set" /* 5887 */;
+import map from "map" /* 4165 */;
+import setDefault from "set" /* 5953 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
 function GuildsBarHomeDrawerSeparator(guildItemSize) {
   guildItemSize = guildItemSize.guildItemSize;
   let panelX;
-  let obj = guildItemSize(15382);
+  let obj = guildItemSize(15461);
   panelX = obj.useHomeDrawerState().panelX;
   const tmp = callback(guildItemSize);
   const fn = function n() {
@@ -24,13 +24,13 @@ function GuildsBarHomeDrawerSeparator(guildItemSize) {
     obj[0] = guildItemSize(closure_1_2[6]).withSpring(bound, guildItemSize(closure_1_2[4]).HOME_DRAWER_FLING_PHYSICS);
     return obj;
   };
-  obj = { withSpring: guildItemSize(4814).withSpring, guildItemSize, panelX, HOME_DRAWER_FLING_PHYSICS: guildItemSize(15382).HOME_DRAWER_FLING_PHYSICS };
+  obj = { withSpring: guildItemSize(4878).withSpring, guildItemSize, panelX, HOME_DRAWER_FLING_PHYSICS: guildItemSize(15461).HOME_DRAWER_FLING_PHYSICS };
   fn.__closure = obj;
   fn.__workletHash = 1425261651828;
   fn.__initData = closure_5;
-  const animatedStyle = guildItemSize(4120).useAnimatedStyle(fn);
+  const animatedStyle = guildItemSize(4184).useAnimatedStyle(fn);
   const style = [tmp.separator, animatedStyle];
-  return jsx(panelX(8160), { style });
+  return jsx(panelX(8227), { style });
 }
 let closure_4 = createCacheKey.createStyles((maxWidth) => {
   let obj = { separator: null };

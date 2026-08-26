@@ -1,13 +1,13 @@
-// Module ID: 16439
-// Function ID: 16440
+// Module ID: 16522
+// Function ID: 16523
 // Name: triggerIOSHaptic
-// Dependencies: [11841, 4348, 2]
+// Dependencies: [11914, 4412, 2]
 // Exports: default
 
-// Module 16439 (triggerIOSHaptic)
+// Module 16522 (triggerIOSHaptic)
 import set from "set" /* 2 */;
-import HapticFeedbackTypes from "HapticFeedbackTypes" /* 4348 */;
-import VoicePanelModes from "VoicePanelModes" /* 11841 */;
+import HapticFeedbackTypes from "HapticFeedbackTypes" /* 4412 */;
+import VoicePanelModes from "VoicePanelModes" /* 11914 */;
 
 const IS_IOS = VoicePanelModes.IS_IOS;
 let result = set.fileFinishedImporting("modules/voice_panel/native/utils/triggerIOSHaptic.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 9850
+// Function ID: 9851
 // Name: showRequestFailedAlert
-// Dependencies: [5, 676, 4278, 4744, 1236, 530, 1363, 2]
+// Dependencies: [5, 676, 4342, 4808, 1236, 530, 1363, 2]
 
-// Module 9783 (showRequestFailedAlert)
+// Module 9850 (showRequestFailedAlert)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4278 */;
-import setDefault from "set" /* 4744 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4342 */;
+import setDefault from "set" /* 4808 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 
@@ -53,7 +53,7 @@ function _deleteGameRelationship() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -157,7 +157,7 @@ function _removeGameFriend() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -215,7 +215,7 @@ function _removeGameFriend() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c4 = tmp;
@@ -253,7 +253,7 @@ function _cancelGameFriendRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -311,7 +311,7 @@ function _cancelGameFriendRequest() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c4 = tmp;
@@ -358,7 +358,7 @@ export default {
       const intl = onSuccess(closure_1_2[4]).intl;
       AccessibilityAnnouncer.announce(intl.string(onSuccess(closure_1_2[4]).t.taJiuc));
     }).catch((arg0) => {
-      const aPIError = new onSuccess(4278).APIError(arg0);
+      const aPIError = new onSuccess(4342).APIError(arg0);
       let anyErrorMessage = aPIError.getAnyErrorMessage();
       const obj = { title: null, body: null };
       const intl = onSuccess(1236).intl;
@@ -368,7 +368,7 @@ export default {
         anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
       }
       obj[1] = anyErrorMessage;
-      callback(4744).show(obj);
+      callback(4808).show(obj);
       return Promise.reject(arg0);
     });
   },

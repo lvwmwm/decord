@@ -1,9 +1,9 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8239
+// Function ID: 8240
 // Name: ReportNames
 // Dependencies: [2]
 
-// Module 8172 (ReportNames)
+// Module 8239 (ReportNames)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/in_app_reports/MenuTypes.tsx");

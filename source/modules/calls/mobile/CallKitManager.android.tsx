@@ -1,10 +1,10 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 13983
+// Function ID: 13984
 // Name: _initialize
-// Dependencies: [4562, 2]
+// Dependencies: [4626, 2]
 
-// Module 13910 (_initialize)
-import initializeDefault from "initialize" /* 4562 */;
+// Module 13983 (_initialize)
+import initializeDefault from "initialize" /* 4626 */;
 
 initializeDefault;
 class CallKitLifecycleManager extends tmp2 {

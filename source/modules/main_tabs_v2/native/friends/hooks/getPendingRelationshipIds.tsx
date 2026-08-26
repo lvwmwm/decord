@@ -1,11 +1,11 @@
-// Module ID: 16128
-// Function ID: 16129
+// Module ID: 16209
+// Function ID: 16210
 // Name: filterFromPending
-// Dependencies: [4034, 676, 2]
+// Dependencies: [4098, 676, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 16128 (filterFromPending)
-import closure_0 from "markAllUserIdListsStale" /* 4034 */;
+// Module 16209 (filterFromPending)
+import closure_0 from "markAllUserIdListsStale" /* 4098 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 
 function filterFromPending(arg0) {

@@ -1,11 +1,11 @@
-// Module ID: 5995
-// Function ID: 5996
+// Module ID: 6061
+// Function ID: 6062
 // Name: experiment
-// Dependencies: [4291, 2]
+// Dependencies: [4355, 2]
 
-// Module 5995 (experiment)
+// Module 6061 (experiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4291 */;
+import createExperiment from "createExperiment" /* 4355 */;
 
 const items = [{ id: 1, label: "Enable official messages", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-03_guild_official_messages", label: "Guild Official Messages", defaultConfig: { enabled: false }, treatments: items });

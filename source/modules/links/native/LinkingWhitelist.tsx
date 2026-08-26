@@ -1,9 +1,9 @@
-// Module ID: 4095
-// Function ID: 4096
+// Module ID: 4159
+// Function ID: 4160
 // Name: LINKING_WHITELIST
 // Dependencies: [2]
 
-// Module 4095 (LINKING_WHITELIST)
+// Module 4159 (LINKING_WHITELIST)
 import set from "set" /* 2 */;
 
 obj = { discordConnect: obj, facebook: obj, instagram: obj1, snapchat: obj2, spotify: obj3, tiktok: obj4, twitch: obj5, telegram: obj6, twitter: obj7, whatsapp: obj8, youtube: obj9, zoom: obj10 };

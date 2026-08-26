@@ -1,13 +1,13 @@
-// Module ID: 13979
-// Function ID: 13980
-// Dependencies: [4282, 676, 10827, 13980, 10824, 2]
+// Module ID: 14052
+// Function ID: 14053
+// Dependencies: [4346, 676, 10899, 14053, 10896, 2]
 
-// Module 13979
+// Module 14052
 import set from "set" /* 2 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4282 */;
-import prototypeDefault from "prototype" /* 10824 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10827 */;
-import toggleVoiceChannelChat from "toggleVoiceChannelChat" /* 13980 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4346 */;
+import prototypeDefault from "prototype" /* 10896 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10899 */;
+import toggleVoiceChannelChat from "toggleVoiceChannelChat" /* 14053 */;
 import ME from "ME" /* 676 */;
 
 const RPCErrors = ME.RPCErrors;

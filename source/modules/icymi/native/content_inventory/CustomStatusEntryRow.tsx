@@ -1,13 +1,13 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15946
+// Function ID: 15947
 // Name: CustomStatusEntryRow
-// Dependencies: [19, 21, 15863, 15868, 2]
+// Dependencies: [19, 21, 15942, 15947, 2]
 // Exports: default
 
-// Module 15867 (CustomStatusEntryRow)
+// Module 15946 (CustomStatusEntryRow)
 import noopAll from "noop" /* 19 */;
-import useReplyActions from "useReplyActions" /* 15863 */;
-import UploadPlaceholderDefault from "UploadPlaceholder" /* 15868 */;
+import useReplyActions from "useReplyActions" /* 15942 */;
+import UploadPlaceholderDefault from "UploadPlaceholder" /* 15947 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

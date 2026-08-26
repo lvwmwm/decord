@@ -1,27 +1,27 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15322
+// Function ID: 15323
 // Name: BalanceWidget
-// Dependencies: [19, 17, 676, 678, 1388, 5268, 21, 1367, 4949, 4376, 1236, 10151, 1377, 698, 11326, 5271, 15244, 9568, 4347, 10305, 2009, 5854, 7147, 10304, 4201, 4830, 4380, 712, 2]
+// Dependencies: [19, 17, 676, 678, 1388, 5334, 21, 1367, 5015, 4440, 1236, 10218, 1377, 698, 11398, 5337, 15323, 9636, 4411, 10373, 2009, 5920, 7213, 10372, 4265, 4895, 4444, 712, 2]
 // Exports: default
 
-// Module 15243 (BalanceWidget)
+// Module 15322 (BalanceWidget)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4201 */;
-import Text from "Text" /* 4376 */;
-import PressableBase from "PressableBase" /* 4949 */;
-import _mod9568 from "module_9568" /* 9568 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10151 */;
-import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 10304 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4265 */;
+import Text from "Text" /* 4440 */;
+import PressableBase from "PressableBase" /* 5015 */;
+import _mod9636 from "module_9636" /* 9636 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10218 */;
+import BalanceWidgetPillButtonDefault from "BalanceWidgetPillButton" /* 10372 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { CollectiblesMobileShopScreen as closure_6 } from "items" /* 678 */;
 import ContentDismissActionType from "ContentDismissActionType" /* 1388 */;
-import { RewardFilterTypes } from "QuestsExperimentLocations" /* 5268 */;
+import { RewardFilterTypes } from "QuestsExperimentLocations" /* 5334 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function BalanceWidget(arg0) {
@@ -75,7 +75,7 @@ class OrbsOnboardingMenuDismissibleContent {
 }
 function BalanceWidgetMenu(style) {
   let str;
-  let obj = str(9568);
+  let obj = str(9636);
   str = obj.useFetchVirtualCurrencyBalance().balance;
   let items = [str];
   const callback = React.useCallback(() => {
@@ -148,7 +148,7 @@ let closure_15 = createCacheKey.createStyles((arg0) => {
 let result = require("set").fileFinishedImporting("modules/virtual_currency/native/BalanceWidgetMenu.tsx");
 
 export default function BalanceWidgetMenuWrapper(style) {
-  let obj = _mod9568;
+  let obj = _mod9636;
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   UNSAFE_isDismissibleContentDismissed;
   if (null == balance) {
@@ -162,7 +162,7 @@ export default function BalanceWidgetMenuWrapper(style) {
     obj[3] = { busy: true };
     obj = { style: null, children: null };
     obj[0] = tmp2.loadingContainer;
-    obj[1] = callback(tmp3(4830).Ellipsis, { variant: "primary", size: "sm" });
+    obj[1] = callback(tmp3(4895).Ellipsis, { variant: "primary", size: "sm" });
     obj[4] = callback(View, obj);
     let tmp6Result = callback(BalanceWidget, obj);
   } else {

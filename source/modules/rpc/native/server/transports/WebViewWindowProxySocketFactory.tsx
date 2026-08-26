@@ -1,10 +1,10 @@
-// Module ID: 10832
-// Function ID: 10833
+// Module ID: 10904
+// Function ID: 10905
 // Name: logger
-// Dependencies: [10833, 10821, 2]
+// Dependencies: [10905, 10893, 2]
 // Exports: default
 
-// Module 10832 (logger)
+// Module 10904 (logger)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/rpc/native/server/transports/WebViewWindowProxySocketFactory.tsx");
@@ -12,7 +12,7 @@ const result = set.fileFinishedImporting("modules/rpc/native/server/transports/W
 export default function _default(logger) {
   logger = logger.logger;
   ({ source, postMessageToRPCClient, version, encoding, postClose } = logger);
-  return new logger(10833)({
+  return new logger(10905)({
     source,
     postMessageToRPCClient,
     version,

@@ -1,23 +1,23 @@
-// Module ID: 11864
-// Function ID: 11865
+// Module ID: 11937
+// Function ID: 11938
 // Name: handleInviteDisabledPress
-// Dependencies: [19, 17, 1391, 1982, 1910, 1981, 9950, 676, 21, 4380, 712, 11865, 2009, 4746, 1500, 11866, 8646, 11867, 11905, 5485, 7896, 9873, 1236, 9192, 4815, 6116, 4120, 11939, 589, 9215, 9212, 11940, 11941, 11943, 2]
+// Dependencies: [19, 17, 1391, 1982, 1910, 1981, 10017, 676, 21, 4444, 712, 11938, 2009, 4810, 1500, 11939, 8714, 11940, 11978, 5551, 7963, 9940, 1236, 9260, 4879, 6182, 4184, 12012, 589, 9283, 9280, 12013, 12014, 12016, 2]
 
-// Module 11864 (handleInviteDisabledPress)
+// Module 11937 (handleInviteDisabledPress)
 import ThemesDefault from "Themes" /* 712 */;
-import useAlertStore from "useAlertStore" /* 4746 */;
-import setDefault from "set" /* 8646 */;
-import useEventsButtonPropsDefault from "useEventsButtonProps" /* 11943 */;
+import useAlertStore from "useAlertStore" /* 4810 */;
+import setDefault from "set" /* 8714 */;
+import useEventsButtonPropsDefault from "useEventsButtonProps" /* 12016 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "comparator" /* 1982 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
 import closure_8 from "handleConnectionOpen" /* 1981 */;
-import { SEARCH_BAR_MARGIN_BOTTOM } from "hairlineWidth" /* 9950 */;
+import { SEARCH_BAR_MARGIN_BOTTOM } from "hairlineWidth" /* 10017 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function handleInviteDisabledPress() {
@@ -161,8 +161,8 @@ const memoResult = importAllResult.memo(function ConnectedGuildSearchAndInviteIn
     const channels = closure_1_6.getChannels(guild.id);
     const result = guild(closure_1_2[30]).handleOpenInviteActionsheet(guild, channelId, channels, closure_1_11.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(11940).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(11940);
+  const shouldShowInvitesDisabledNotif = guild(12013).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(12013);
   const tmp5 = useEventsButtonPropsDefault(guild);
   obj = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread, useEventsButton: null, useButtonComponent: null };
   if (flag2) {

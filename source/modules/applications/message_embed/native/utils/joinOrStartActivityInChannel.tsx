@@ -1,10 +1,10 @@
-// Module ID: 11513
-// Function ID: 11514
+// Module ID: 11585
+// Function ID: 11586
 // Name: _joinOrStartActivityInChannel
-// Dependencies: [5, 1390, 1391, 1981, 10736, 10699, 10685, 2]
+// Dependencies: [5, 1390, 1391, 1981, 10808, 10771, 10757, 2]
 // Exports: joinOrStartActivityInChannel
 
-// Module 11513 (_joinOrStartActivityInChannel)
+// Module 11585 (_joinOrStartActivityInChannel)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "participantFromServer" /* 1390 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
@@ -29,7 +29,7 @@ function _joinOrStartActivityInChannel() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ function _joinOrStartActivityInChannel() {
                     callback2 = null;
                   }
                   closure_8 = callback2;
-                  callback2(10736)(closure_8, channel.location);
+                  callback2(10808)(closure_8, channel.location);
                   channel = 3;
                   return { value: true, done: true };
                 }
@@ -101,12 +101,12 @@ function _joinOrStartActivityInChannel() {
               if (length.length > 0) {
                 compositeInstanceId = length[0].compositeInstanceId;
               }
-              let obj2 = callback(10699);
+              let obj2 = callback(10771);
               obj2 = { channelId: null, applicationId: null, isStart: null, embeddedActivitiesManager: null, analyticsLocations: null, customId: null, referrerId: null };
               obj2[0] = callback2;
               obj2[1] = callback;
               obj2[2] = null == compositeInstanceId;
-              obj2[3] = callback2(10685)();
+              obj2[3] = callback2(10757)();
               obj2[4] = dependencyMap;
               obj2[5] = c3;
               obj2[6] = store;

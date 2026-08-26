@@ -1,13 +1,13 @@
-// Module ID: 8473
-// Function ID: 8474
+// Module ID: 8540
+// Function ID: 8541
 // Name: transformMessageAttachments
-// Dependencies: [8193, 676, 1403, 4571, 8367, 500, 8366, 1236, 8386, 8474, 4960, 8384, 2]
+// Dependencies: [8260, 676, 1403, 4635, 8434, 500, 8433, 1236, 8453, 8541, 5026, 8451, 2]
 // Exports: default
 
-// Module 8473 (transformMessageAttachments)
+// Module 8540 (transformMessageAttachments)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import Changeset from "Changeset" /* 8193 */;
+import Changeset from "Changeset" /* 8260 */;
 
 const AttachmentType = Changeset.AttachmentType;
 const MessageAttachmentFlags = ME.MessageAttachmentFlags;

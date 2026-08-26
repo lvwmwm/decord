@@ -1,14 +1,14 @@
-// Module ID: 15358
-// Function ID: 15359
+// Module ID: 15437
+// Function ID: 15438
 // Name: showPushNotificationPromptModal
-// Dependencies: [11973, 12261, 4611, 15359, 2009, 11976, 2]
+// Dependencies: [12046, 12333, 4675, 15438, 2009, 12049, 2]
 // Exports: showPushNotificationPromptModal
 
-// Module 15358 (showPushNotificationPromptModal)
+// Module 15437 (showPushNotificationPromptModal)
 import set from "set" /* 2 */;
-import _modDef4611 from "module_4611" /* 4611 */;
-import set2 from "set" /* 11973 */;
-import NewUserTypes from "NewUserTypes" /* 12261 */;
+import _modDef4675 from "module_4675" /* 4675 */;
+import set2 from "set" /* 12046 */;
+import NewUserTypes from "NewUserTypes" /* 12333 */;
 
 const PermissionStateType = set2.PermissionStateType;
 let closure_4 = NewUserTypes.NUF_NOTIFICATION_MODAL_KEY;
@@ -16,13 +16,13 @@ let result = set.fileFinishedImporting("modules/nuf/native/showPushNotificationP
 
 export const showPushNotificationPromptModal = function showPushNotificationPromptModal(onComplete) {
   onComplete = onComplete.onComplete;
-  let obj = _modDef4611;
+  let obj = _modDef4675;
   obj = {
     onComplete() {
       closure_1_1(closure_1_2[2]).popWithKey(closure_1_4);
       onComplete();
     }
   };
-  obj.pushLazy(onComplete(2009)(15359, dependencyMap.paths), obj, closure_4);
-  const result = onComplete(11976).setPushPermissionState(PermissionStateType.PROMPT_SEEN);
+  obj.pushLazy(onComplete(2009)(15438, dependencyMap.paths), obj, closure_4);
+  const result = onComplete(12049).setPushPermissionState(PermissionStateType.PROMPT_SEEN);
 };

@@ -1,10 +1,10 @@
-// Module ID: 7427
-// Function ID: 7428
+// Module ID: 7493
+// Function ID: 7494
 // Name: getDeviceSpecificString
 // Dependencies: [1236, 1625, 2]
 // Exports: getDeviceSpecificString
 
-// Module 7427 (getDeviceSpecificString)
+// Module 7493 (getDeviceSpecificString)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

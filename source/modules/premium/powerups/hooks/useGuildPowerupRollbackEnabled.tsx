@@ -1,13 +1,13 @@
-// Module ID: 12056
-// Function ID: 12057
+// Module ID: 12129
+// Function ID: 12130
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [4307, 4270, 2]
+// Dependencies: [4371, 4334, 2]
 // Exports: default, isGuildPowerupRollbackEnabled
 
-// Module 12056 (useGuildPowerupRollbackEnabled)
+// Module 12129 (useGuildPowerupRollbackEnabled)
 import set from "set" /* 2 */;
-import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID" /* 4270 */;
-import experiment from "experiment" /* 4307 */;
+import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID" /* 4334 */;
+import experiment from "experiment" /* 4371 */;
 
 const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx");
 

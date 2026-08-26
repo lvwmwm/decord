@@ -1,26 +1,26 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 12737
+// Function ID: 12738
 // Name: isNonEmptyBoardWidget
-// Dependencies: [19, 7239, 7236, 7229, 12665, 12666, 2]
+// Dependencies: [19, 7305, 7302, 7295, 12738, 12739, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 12664 (isNonEmptyBoardWidget)
-import toSubmission from "toSubmission" /* 7239 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12666 */;
+// Module 12737 (isNonEmptyBoardWidget)
+import toSubmission from "toSubmission" /* 7305 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 12739 */;
 import closure_3 from "noop" /* 19 */;
 
 require = arg1;
 function isNonEmptyBoardWidget(games) {
   let tmp3 = games instanceof toSubmission.ApplicationWidget;
   if (!tmp3) {
-    let tmp4 = games instanceof tmp(7236).UserProfilePersonalWidget;
+    let tmp4 = games instanceof tmp(7302).UserProfilePersonalWidget;
     if (!tmp4) {
-      let isGameWidgetResult = tmp(7229).isGameWidget(games);
+      let isGameWidgetResult = tmp(7295).isGameWidget(games);
       if (isGameWidgetResult) {
         isGameWidgetResult = games.games.length > 0;
       }
       tmp4 = isGameWidgetResult;
-      const tmpResult = tmp(7229);
+      const tmpResult = tmp(7295);
     }
     tmp3 = tmp4;
   }
@@ -29,7 +29,7 @@ function isNonEmptyBoardWidget(games) {
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useDisplayableBoardWidgets.tsx");
 
 export const useDisplayableBoardWidgets = function useDisplayableBoardWidgets(id) {
-  isMobileGameCollectionExperimentEnabled = isMobileGameCollectionExperimentEnabled(12665).useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
+  isMobileGameCollectionExperimentEnabled = isMobileGameCollectionExperimentEnabled(12738).useIsMobileGameCollectionExperimentEnabled("UserProfileWidgetsBoard");
   const tmp2 = useUserProfileWidgetsDefault(id);
   importDefault = tmp2;
   const items = [isMobileGameCollectionExperimentEnabled, tmp2];

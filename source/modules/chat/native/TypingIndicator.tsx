@@ -1,21 +1,21 @@
-// Module ID: 11532
-// Function ID: 11533
+// Module ID: 11604
+// Function ID: 11605
 // Name: TypingIndicatorInner
-// Dependencies: [19, 17, 8758, 4379, 5284, 7291, 11533, 1922, 21, 11534, 589, 4380, 712, 1367, 11535, 11536, 11547, 11539, 4573, 4120, 4108, 4814, 4818, 4101, 11548, 1297, 4376, 11551, 2]
+// Dependencies: [19, 17, 8826, 4443, 5350, 7357, 11605, 1922, 21, 11606, 589, 4444, 712, 1367, 11607, 11608, 11619, 11611, 4637, 4184, 4172, 4878, 4882, 4165, 11620, 1297, 4440, 11623, 2]
 // Exports: hasTypingIndicatorContent, useTypingUserIdsForDisplay
 
-// Module 11532 (TypingIndicatorInner)
+// Module 11604 (TypingIndicatorInner)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useChatShowingAutoComplete as closure_5 } from "updateChatInputContainerHeight" /* 8758 */;
-import closure_6 from "getUserAgnosticState" /* 4379 */;
-import closure_7 from "fromServer" /* 5284 */;
-import { SlowmodeType } from "setCooldown" /* 7291 */;
-import closure_9 from "handleTypingStart" /* 11533 */;
+import { useChatShowingAutoComplete as closure_5 } from "updateChatInputContainerHeight" /* 8826 */;
+import closure_6 from "getUserAgnosticState" /* 4443 */;
+import closure_7 from "fromServer" /* 5350 */;
+import { SlowmodeType } from "setCooldown" /* 7357 */;
+import closure_9 from "handleTypingStart" /* 11605 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 function TypingIndicatorInner(channel) {
@@ -177,7 +177,7 @@ function TypingIndicatorInner(channel) {
   const obj4 = { style: tmp13.wrapperHoriz, children: null };
   const obj5 = { style: tmp13.horiz, children: null };
   if (null != stateFromStoresObject.config) {
-    const obj6 = { config: null, username: null, emojiSize: 16, onPressGlyph: null };
+    const obj6 = { config: null, username: null, emojiSize: 16, onPress: null };
     ({ config: obj20[0], name: obj20[1] } = stateFromStoresObject);
     let tmp27;
     if (customTypingIndicatorConfig.canSet) {
@@ -193,9 +193,9 @@ function TypingIndicatorInner(channel) {
     }
     const obj7 = { children: null };
     const items7 = [tmp19Result, ];
-    const obj8 = { style: null, lineClamp: 1, maxFontSizeMultiplier: 2, variant: "text-xs/medium", color: "interactive-text-default", ellipsizeMode: "tail", children: null };
+    const obj8 = { style: null, lineClamp: 1, maxFontSizeMultiplier: 2, variant: "text-xs/medium", color: "interactive-text-default", includeFontPadding: true, ellipsizeMode: "tail", children: null };
     obj8[0] = tmp13.text;
-    obj8[6] = tmp7Result;
+    obj8[7] = tmp7Result;
     items7[1] = tmp19(tmp(tmp2[26]).Text, obj8);
     obj7[0] = items7;
     tmp21Result = tmp21(closure_12, obj7);

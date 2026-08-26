@@ -1,10 +1,10 @@
-// Module ID: 11888
-// Function ID: 11889
+// Module ID: 11961
+// Function ID: 11962
 // Name: _onAddDirectoryGuildEntry
-// Dependencies: [5, 19, 21, 11883, 4745, 11889, 2009, 2]
+// Dependencies: [5, 19, 21, 11956, 4809, 11962, 2009, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 11888 (_onAddDirectoryGuildEntry)
+// Module 11961 (_onAddDirectoryGuildEntry)
 import noopAll from "noop" /* 19 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -28,7 +28,7 @@ function _onAddDirectoryGuildEntry() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ function _onAddDirectoryGuildEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj3 = lib(11883);
+              let obj3 = lib(11956);
               dependencyMap = 2;
               c4 = 1;
               const obj2 = { value: null, done: false };
@@ -83,7 +83,7 @@ function _onAddDirectoryGuildEntry() {
             return obj3;
           } else {
             callback2();
-            obj = callback(4745);
+            obj = callback(4809);
             const obj4 = { importer: null };
             obj4[0] = function importer() {
               return _undefined(paths[6])(paths[5], paths.paths).then((arg0) => {
@@ -93,7 +93,7 @@ function _onAddDirectoryGuildEntry() {
             };
             obj.openLazy(obj4);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c4 = tmp;

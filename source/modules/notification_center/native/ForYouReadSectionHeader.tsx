@@ -1,17 +1,17 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15871
+// Function ID: 15872
 // Name: ForYouReadSectionHeader
-// Dependencies: [19, 17, 21, 4380, 712, 4376, 1236, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 4440, 1236, 2]
 // Exports: ForYouReadSectionHeader
 
-// Module 15792 (ForYouReadSectionHeader)
+// Module 15871 (ForYouReadSectionHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4376 */;
+import Text from "Text" /* 4440 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 noopAll;

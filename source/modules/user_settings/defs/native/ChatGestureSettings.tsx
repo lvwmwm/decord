@@ -1,18 +1,18 @@
-// Module ID: 10515
-// Function ID: 10516
+// Module ID: 10583
+// Function ID: 10584
 // Name: useSwipeToReplySettingValue
-// Dependencies: [8235, 676, 1306, 1236, 698, 4070, 10516, 2]
+// Dependencies: [8302, 676, 1306, 1236, 698, 4134, 10584, 2]
 // Exports: getSwipeToReplySettingValue, useSwipeToReplySettingValue
 
-// Module 10515 (useSwipeToReplySettingValue)
+// Module 10583 (useSwipeToReplySettingValue)
 import set from "set" /* 2 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import create from "create" /* 1306 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import MobileUserSettings from "MobileUserSettings" /* 8235 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import MobileUserSettings from "MobileUserSettings" /* 8302 */;
 import ME from "ME" /* 676 */;
-import createToggle from "createToggle" /* 10516 */;
+import createToggle from "createToggle" /* 10584 */;
 
 function useSwipeToReplySettingValue() {
   const SwipeRightToLeftModeSetting = explicitContentFromProto.SwipeRightToLeftModeSetting;

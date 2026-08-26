@@ -1,22 +1,22 @@
-// Module ID: 10463
-// Function ID: 10464
+// Module ID: 10531
+// Function ID: 10532
 // Name: startInterval
-// Dependencies: [1218, 1391, 1910, 1981, 4589, 676, 4590, 685, 687, 11, 1403, 589, 9981, 709, 2]
+// Dependencies: [1218, 1391, 1910, 1981, 4653, 676, 4654, 685, 687, 11, 1403, 589, 10048, 709, 2]
 
-// Module 10463 (startInterval)
+// Module 10531 (startInterval)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import hasFlag from "hasFlag" /* 1403 */;
-import useChannelPresetSettings from "useChannelPresetSettings" /* 9981 */;
+import useChannelPresetSettings from "useChannelPresetSettings" /* 10048 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
 import closure_6 from "handleConnectionOpen" /* 1981 */;
-import closure_7 from "updateUserGuildSettingsInternal" /* 4589 */;
+import closure_7 from "updateUserGuildSettingsInternal" /* 4653 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4590 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4654 */;
 import { ChannelNotificationSettingsFlags as closure_10 } from "MAX_FAVORITES" /* 685 */;
 import set from "set" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 7237
-// Function ID: 7238
+// Module ID: 7303
+// Function ID: 7304
 // Name: PersonalWidgetSectionType
 // Dependencies: [2]
 
-// Module 7237 (PersonalWidgetSectionType)
+// Module 7303 (PersonalWidgetSectionType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/PersonalWidgetSectionType.tsx");

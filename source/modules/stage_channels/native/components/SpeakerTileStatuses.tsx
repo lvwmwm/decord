@@ -1,21 +1,21 @@
-// Module ID: 11018
-// Function ID: 11019
+// Module ID: 11090
+// Function ID: 11091
 // Name: VoiceStatus
-// Dependencies: [19, 17, 4431, 4399, 5246, 21, 4380, 712, 589, 10961, 10797, 10798, 1297, 11019, 11020, 8651, 2]
+// Dependencies: [19, 17, 4495, 4463, 5312, 21, 4444, 712, 589, 11033, 10869, 10870, 1297, 11091, 11092, 8719, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 11018 (VoiceStatus)
+// Module 11090 (VoiceStatus)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import registerAssetDefault from "registerAsset" /* 8651 */;
-import registerAssetDefault2 from "registerAsset" /* 11020 */;
+import registerAssetDefault from "registerAsset" /* 8719 */;
+import registerAssetDefault2 from "registerAsset" /* 11092 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4431 */;
-import closure_5 from "updateVoiceState" /* 4399 */;
-import closure_6 from "buildStageChannelUserRoles" /* 5246 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_5 from "updateVoiceState" /* 4463 */;
+import closure_6 from "buildStageChannelUserRoles" /* 5312 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 let obj = { voiceStatusWrapper: null, moderatorStatusWrapper: null, restricted: null };
@@ -52,15 +52,15 @@ const memoResult = importAllResult.memo((userId) => {
     flag2 = false;
   }
   if (stateFromStores) {
-    let tmp5 = channelId(10961);
+    let tmp5 = channelId(11033);
     let flag3 = true;
   } else if (flag2) {
-    tmp5 = channelId(10797);
+    tmp5 = channelId(10869);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp5 = channelId(10798);
+      tmp5 = channelId(10870);
       flag3 = false;
     }
   }
@@ -87,7 +87,7 @@ const memoResult1 = importAllResult.memo((userId) => {
   const items1 = [channelId, userId];
   let tmp4;
   if (obj.useStateFromStores(items, () => closure_1_6.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(11019);
+    tmp4 = channelId(11091);
   }
   let tmp6 = null;
   if (null != tmp4) {

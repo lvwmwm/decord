@@ -1,15 +1,15 @@
-// Module ID: 17168
-// Function ID: 17169
+// Module ID: 17253
+// Function ID: 17254
 // Name: updateApiRequestConfig
-// Dependencies: [17, 1218, 530, 698, 5367, 500, 2]
+// Dependencies: [17, 1218, 530, 698, 5433, 500, 2]
 
-// Module 17168 (updateApiRequestConfig)
+// Module 17253 (updateApiRequestConfig)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set2 from "set" /* 500 */;
 import sendRequest from "sendRequest" /* 530 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5367 */;
+import initializeDefault from "initialize" /* 5433 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 
 function updateApiRequestConfig() {

@@ -1,12 +1,12 @@
-// Module ID: 13445
-// Function ID: 13446
-// Dependencies: [4293, 4025, 676, 1236, 589, 13446, 2]
+// Module ID: 13518
+// Function ID: 13519
+// Dependencies: [4357, 4089, 676, 1236, 589, 13519, 2]
 
-// Module 13445
+// Module 13518
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_2 from "getHash" /* 4293 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_2 from "getHash" /* 4357 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

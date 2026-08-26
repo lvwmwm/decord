@@ -1,14 +1,14 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 11119
+// Function ID: 11120
 // Name: getNearestValue
-// Dependencies: [1297, 4814, 4381, 4120, 5533, 2]
+// Dependencies: [1297, 4878, 4445, 4184, 5599, 2]
 // Exports: default
 
-// Module 11047 (getNearestValue)
+// Module 11119 (getNearestValue)
 import set from "set" /* 2 */;
 import Button from "Button" /* 1297 */;
-import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4381 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4814 */;
+import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4445 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4878 */;
 
 let obj = { damping: 30, mass: 1, stiffness: 250, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 obj = { duration: 500, easing: Button.STANDARD_EASING };

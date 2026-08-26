@@ -1,9 +1,9 @@
-// Module ID: 14672
-// Function ID: 14673
+// Module ID: 14745
+// Function ID: 14746
 // Name: AllChannelAccessOptions
 // Dependencies: [644, 705, 2]
 
-// Module 14672 (AllChannelAccessOptions)
+// Module 14745 (AllChannelAccessOptions)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 

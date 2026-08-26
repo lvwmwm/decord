@@ -1,16 +1,16 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8821
+// Function ID: 8822
 // Name: ConversationFocusScreen
-// Dependencies: [19, 17, 7202, 21, 4380, 712, 1503, 589, 8713, 8727, 1236, 4376, 4815, 8754, 2]
+// Dependencies: [19, 17, 7268, 21, 4444, 712, 1503, 589, 8781, 8795, 1236, 4440, 4879, 8822, 2]
 // Exports: default
 
-// Module 8753 (ConversationFocusScreen)
+// Module 8821 (ConversationFocusScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "removePendingListFetch" /* 7202 */;
+import closure_6 from "removePendingListFetch" /* 7268 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 ({ ActivityIndicator: c3, ScrollView: c4, View: c5 } = get_ActivityIndicator);

@@ -1,14 +1,14 @@
-// Module ID: 17271
-// Function ID: 17272
+// Module ID: 17356
+// Function ID: 17357
 // Name: resolved
-// Dependencies: [5102, 1218, 7019, 3, 1973, 16661, 2]
+// Dependencies: [5168, 1218, 7085, 3, 1973, 16746, 2]
 
-// Module 17271 (resolved)
+// Module 17356 (resolved)
 import timestampDefault from "timestamp" /* 3 */;
 import databaseNameDefault from "databaseName" /* 1973 */;
-import closure_3 from "_handleConnectionOpen" /* 5102 */;
+import closure_3 from "_handleConnectionOpen" /* 5168 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "getState" /* 7019 */;
+import closure_5 from "getState" /* 7085 */;
 
 const require = arg1;
 let closure_6 = new timestampDefault("BackgroundSync");

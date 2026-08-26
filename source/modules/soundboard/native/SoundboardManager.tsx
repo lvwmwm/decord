@@ -1,15 +1,15 @@
-// Module ID: 14006
-// Function ID: 14007
+// Module ID: 14079
+// Function ID: 14080
 // Name: map
-// Dependencies: [5, 4431, 1981, 4851, 3, 14007, 14008, 14009, 9935, 6062, 2]
+// Dependencies: [5, 4495, 1981, 4916, 3, 14080, 14081, 14082, 10002, 6128, 2]
 
-// Module 14006 (map)
+// Module 14079 (map)
 import timestampDefault from "timestamp" /* 3 */;
-import _initializeDefault from "_initialize" /* 14007 */;
+import _initializeDefault from "_initialize" /* 14080 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4431 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4495 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "handleSoundCreateOrUpdate" /* 4851 */;
+import closure_6 from "handleSoundCreateOrUpdate" /* 4916 */;
 
 const require = arg1;
 let map = new Map();
@@ -75,7 +75,7 @@ let prototype = function SoundboardManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -147,7 +147,7 @@ let prototype = function SoundboardManager() {
               const result = obj2.reportSoundFinishedPlaying(c2, c3);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           c3 = tmp30;

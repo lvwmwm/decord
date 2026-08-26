@@ -1,12 +1,12 @@
-// Module ID: 11787
-// Function ID: 11788
+// Module ID: 11860
+// Function ID: 11861
 // Name: _downloadPollGif
-// Dependencies: [5, 7432, 2]
+// Dependencies: [5, 7498, 2]
 // Exports: downloadPollGif, getFileNameFromGifUrl, getFilePathForGif
 
-// Module 11787 (_downloadPollGif)
+// Module 11860 (_downloadPollGif)
 import closure_0 from "asyncGeneratorStep" /* 5 */;
-import { POLL_ATTACHMENT_FOLDER } from "POLL_ATTACHMENT_FOLDER" /* 7432 */;
+import { POLL_ATTACHMENT_FOLDER } from "POLL_ATTACHMENT_FOLDER" /* 7498 */;
 
 function _downloadPollGif() {
   const self = this;

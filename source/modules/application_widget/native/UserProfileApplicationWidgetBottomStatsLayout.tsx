@@ -1,15 +1,15 @@
-// Module ID: 12649
-// Function ID: 12650
+// Module ID: 12722
+// Function ID: 12723
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4380, 712, 12559, 12646, 4376, 12647, 2]
+// Dependencies: [19, 17, 21, 4444, 712, 12630, 12717, 4440, 12718, 2]
 // Exports: default
 
-// Module 12649 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12722 (UserProfileApplicationWidgetBottomStatsLayout)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 const require = arg1;
 noopAll;

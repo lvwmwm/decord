@@ -1,29 +1,29 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 16268
+// Function ID: 16269
 // Name: WebhookItem
-// Dependencies: [5, 19, 1391, 1982, 1910, 4025, 1922, 16188, 676, 21, 4380, 712, 1500, 1435, 5480, 1297, 1236, 11, 4224, 589, 16189, 8121, 16190, 4108, 1995, 4376, 16192, 5873, 8118, 4813, 5820, 2]
+// Dependencies: [5, 19, 1391, 1982, 1910, 4089, 1922, 16269, 676, 21, 4444, 712, 1500, 1435, 5546, 1297, 1236, 11, 4288, 589, 16270, 8188, 16271, 4172, 1995, 4440, 16273, 5939, 8185, 4877, 5886, 2]
 // Exports: default
 
-// Module 16187 (WebhookItem)
+// Module 16268 (WebhookItem)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
-import Stack from "Stack" /* 4813 */;
-import NavScrim from "NavScrim" /* 5820 */;
-import Form from "Form" /* 8118 */;
+import Stack from "Stack" /* 4877 */;
+import NavScrim from "NavScrim" /* 5886 */;
+import Form from "Form" /* 8185 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import comparator from "comparator" /* 1982 */;
 import closure_8 from "comparator" /* 1982 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import closure_12 from "handleWebhookCreateUpdate" /* 16188 */;
+import closure_12 from "handleWebhookCreateUpdate" /* 16269 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 
 require = arg1;
 function WebhookItem(avatar) {
@@ -123,7 +123,7 @@ function CreateWebhookButton(guild) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -233,7 +233,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   let dkHRkE = dependencyMap;
   const helpText = self.getHelpText();
-  const items = [callback(webhookType(4376).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+  const items = [callback(webhookType(4440).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
   let tmp4Result = webhookType === constants2.INCOMING;
   if (tmp4Result) {
     let obj = { guild: null, channel: null };
@@ -244,7 +244,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(16192).WebhookEmpty;
+    obj[0] = tmp5(16273).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1236).intl;
       dkHRkE = tmp5(1236).t.dkHRkE;
@@ -264,7 +264,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
       return closure_18(closure_23, obj, id);
     });
     obj1 = { children: null };
-    items[2] = tmp4(tmp5(5873).TableRowGroup, obj);
+    items[2] = tmp4(tmp5(5939).TableRowGroup, obj);
     obj1[0] = items;
     return closure_20(closure_19, obj1);
   }

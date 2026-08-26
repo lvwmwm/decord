@@ -1,25 +1,25 @@
-// Module ID: 15943
-// Function ID: 15944
+// Module ID: 16022
+// Function ID: 16023
 // Name: newMessage
-// Dependencies: [32, 109, 7143, 9909, 1981, 4202, 5104, 15944, 676, 1398, 1236, 3405, 15945, 4070, 9935, 589, 709, 2]
+// Dependencies: [32, 109, 7209, 9976, 1981, 4266, 5170, 16023, 676, 1398, 1236, 3469, 16024, 4134, 10002, 589, 709, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 15943 (newMessage)
+// Module 16022 (newMessage)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3405 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import createSoundForPack from "createSoundForPack" /* 9935 */;
-import _modDef15945 from "module_15945" /* 15945 */;
+import messagesProxyDefault from "messagesProxy" /* 3469 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import createSoundForPack from "createSoundForPack" /* 10002 */;
+import _modDef16024 from "module_16024" /* 16024 */;
 import closure_6 from "_slicedToArray" /* 32 */;
 import closure_7 from "_objectWithoutProperties" /* 109 */;
-import closure_8 from "freshTeenActivityWithMap" /* 7143 */;
-import closure_9 from "DesktopNotificationTypes" /* 9909 */;
+import closure_8 from "freshTeenActivityWithMap" /* 7209 */;
+import closure_9 from "DesktopNotificationTypes" /* 9976 */;
 import closure_10 from "handleConnectionOpen" /* 1981 */;
-import closure_11 from "handleConnectionOpen" /* 4202 */;
-import closure_12 from "filterPlayingActivities" /* 5104 */;
-import closure_13 from "isProjectOwner" /* 15944 */;
+import closure_11 from "handleConnectionOpen" /* 4266 */;
+import closure_12 from "filterPlayingActivities" /* 5170 */;
+import closure_13 from "isProjectOwner" /* 16023 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1398 */;
 import set from "set" /* 2 */;
@@ -302,7 +302,7 @@ function recordThinkingTransition(projectId) {
       }
       const project = store.getProject(projectId);
       if (null != project) {
-        result = _modDef15945.areTurnNotificationsDisabled();
+        result = _modDef16024.areTurnNotificationsDisabled();
         if (!result) {
           result = status.getStatus() === constants.DND;
         }
@@ -328,8 +328,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = channelId.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(15945).isWindowFocused();
-            const tmp68Result = tmp68(15945);
+            isWindowFocusedResult = tmp68(16024).isWindowFocused();
+            const tmp68Result = tmp68(16024);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -419,12 +419,12 @@ function recordThinkingTransition(projectId) {
                 tmp58 = bit_message1;
               }
               obj[5] = tmp58;
-              const result3 = _modDef15945.presentTurnNotification(obj);
-              const obj8 = _modDef15945;
+              const result3 = _modDef16024.presentTurnNotification(obj);
+              const obj8 = _modDef16024;
             }
           }
         }
-        const obj11 = _modDef15945;
+        const obj11 = _modDef16024;
         tmp68 = importDefault;
       }
       obj6 = store;
@@ -1112,7 +1112,7 @@ const vibegrationsChatStore = new VibegrationsChatStore(dispatcherDefault, {
                 const items = [];
                 obj = { type: "step", kind: "terminal_error", message: null };
                 const intl = callback(1236).intl;
-                obj[2] = intl.string(callback2(3405)["wjWm+/"]);
+                obj[2] = intl.string(callback2(3469)["wjWm+/"]);
                 items[HermesBuiltin.arraySpread(disposition.steps, 0)] = obj;
                 obj.steps = items;
                 tmp2 = obj;

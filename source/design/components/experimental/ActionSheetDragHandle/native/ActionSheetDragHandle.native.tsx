@@ -1,16 +1,16 @@
-// Module ID: 8819
-// Function ID: 8820
+// Module ID: 8887
+// Function ID: 8888
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 8811, 21, 4380, 712, 1236, 4120, 2]
+// Dependencies: [19, 17, 8879, 21, 4444, 712, 1236, 4184, 2]
 
-// Module 8819 (ActionSheetDragHandle)
+// Module 8887 (ActionSheetDragHandle)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4120 from "module_4120" /* 4120 */;
+import _modDef4184 from "module_4184" /* 4184 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import PX_4 from "PX_4" /* 8811 */;
+import PX_4 from "PX_4" /* 8879 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo((accessibilityLabel) => {
     obj = { style: null };
     const items1 = [tmp3.bar, animatedBarStyles];
     obj[0] = items1;
-    let tmp4Result = tmp4(_modDef4120.View, obj);
+    let tmp4Result = tmp4(_modDef4184.View, obj);
   } else {
     obj1 = { style: null };
     obj1[0] = tmp3.bar;

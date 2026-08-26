@@ -1,15 +1,15 @@
-// Module ID: 12506
-// Function ID: 12507
+// Module ID: 12577
+// Function ID: 12578
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 4025, 505, 21, 4380, 500, 5834, 8935, 4802, 12507, 4574, 589, 4927, 4931, 1236, 5885, 4949, 4098, 5884, 4376, 9180, 4615, 4347, 12508, 2009, 8930, 12509, 1297, 2]
+// Dependencies: [17, 4089, 505, 21, 4444, 500, 5900, 9003, 4866, 12578, 4638, 589, 4993, 4997, 1236, 5951, 5015, 4162, 5950, 4440, 9248, 4679, 4411, 12579, 2009, 8998, 12580, 1297, 2]
 // Exports: default
 
-// Module 12506 (UserProfileActivityVoiceChannel)
+// Module 12577 (UserProfileActivityVoiceChannel)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import sum from "sum" /* 505 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4025 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4380 */;
+import createCacheKey from "createCacheKey" /* 4444 */;
 import set from "set" /* 500 */;
 
 const View = get_ActivityIndicator.View;
@@ -105,7 +105,7 @@ export default function UserProfileActivityVoiceChannel(guild) {
       onAction({ action: "OPEN_VOICE_CHANNEL" });
       guild(onAction[21]).openGuildVoiceModal(channel, newestAnalyticsLocation);
       const obj = guild(onAction[21]);
-      channel(onAction[22]).hideActionSheet();
+      channel(onAction[22]).hideAllActionSheets();
     };
     const items3 = [tmp13(VoiceNormalIcon, { size: "xxs", color: "text-default" }), ];
     const obj7 = { style: null, variant: "text-xs/normal", lineClamp: 1, children: null };

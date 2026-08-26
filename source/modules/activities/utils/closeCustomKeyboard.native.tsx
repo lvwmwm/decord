@@ -1,12 +1,12 @@
-// Module ID: 11060
-// Function ID: 11061
+// Module ID: 11132
+// Function ID: 11133
 // Name: closeCustomKeyboard
-// Dependencies: [4242, 2]
+// Dependencies: [4306, 2]
 // Exports: default
 
-// Module 11060 (closeCustomKeyboard)
+// Module 11132 (closeCustomKeyboard)
 import set from "set" /* 2 */;
-import getBestActiveInput from "getBestActiveInput" /* 4242 */;
+import getBestActiveInput from "getBestActiveInput" /* 4306 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/closeCustomKeyboard.native.tsx");
 

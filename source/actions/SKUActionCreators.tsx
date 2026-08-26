@@ -1,14 +1,14 @@
-// Module ID: 7729
-// Function ID: 7730
+// Module ID: 7795
+// Function ID: 7796
 // Name: _fetchSKU
-// Dependencies: [5, 7730, 4429, 676, 709, 4643, 530, 4066, 7731, 7195, 4278, 4065, 4058, 4725, 4734, 1370, 2]
+// Dependencies: [5, 7796, 4493, 676, 709, 4707, 530, 4130, 7797, 7261, 4342, 4129, 4122, 4789, 4798, 1370, 2]
 // Exports: clearPurchaseError, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 7729 (_fetchSKU)
+// Module 7795 (_fetchSKU)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getPromotionIdOverride" /* 7730 */;
-import closure_5 from "addSku" /* 4429 */;
+import closure_4 from "getPromotionIdOverride" /* 7796 */;
+import closure_5 from "addSku" /* 4493 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -31,7 +31,7 @@ function _fetchSKU() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ function _fetchSKU() {
             obj4[1] = callback;
             obj3.dispatch(obj4);
             const _HermesInternal = HermesInternal;
-            let tmp23 = lib(4066);
+            let tmp23 = lib(4130);
             tmp23 = new tmp23("Failed to fetch SKU " + callback);
             throw tmp23;
           } else if (arg0 === 1) {
@@ -137,7 +137,7 @@ function _fetchPublishedSKU() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -275,7 +275,7 @@ function _fetchTestSKUsForApplication() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -385,7 +385,7 @@ function _previewPurchaseSku() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -438,7 +438,7 @@ function _previewPurchaseSku() {
                 c5.promotion_id_override = promotionIdOverride2;
               }
               promotionIdOverride = 1;
-              obj2 = callback(4643);
+              obj2 = callback(4707);
               const obj3 = { url: null, query: null, oldFormErrors: true, rejectWithError: null };
               obj3[0] = billingError.STORE_SKU_PURCHASE(c1);
               obj3[1] = c5;
@@ -453,14 +453,14 @@ function _previewPurchaseSku() {
           } else if (2 === tmp7) {
             promotionIdOverride = 0;
             closure_8 = c3;
-            if (closure_8 instanceof callback(4278).BillingError) {
+            if (closure_8 instanceof callback(4342).BillingError) {
               billingError = closure_8;
             } else {
-              billingError = new callback(4278).BillingError(closure_8);
+              billingError = new callback(4342).BillingError(closure_8);
             }
-            if (billingError.code !== callback(4065).ErrorCodes.BILLING_BUNDLE_ALREADY_PURCHASED) {
-              if (billingError.code !== callback(4065).ErrorCodes.BILLING_BUNDLE_PARTIALLY_OWNED) {
-                if (billingError.code !== callback(4065).ErrorCodes.INVALID_BILLING_ADDRESS) {
+            if (billingError.code !== callback(4129).ErrorCodes.BILLING_BUNDLE_ALREADY_PURCHASED) {
+              if (billingError.code !== callback(4129).ErrorCodes.BILLING_BUNDLE_PARTIALLY_OWNED) {
+                if (billingError.code !== callback(4129).ErrorCodes.INVALID_BILLING_ADDRESS) {
                   promotionIdOverride2 = 3;
                   return { value: null, done: true };
                 }
@@ -527,7 +527,7 @@ function _grantChannelBranchEntitlement() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -641,7 +641,7 @@ function _orderSKU() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -698,7 +698,7 @@ function _orderSKU() {
             obj4 = id(709);
             obj4.dispatch({ type: "ORDER_CREATE_FAIL" });
             const _HermesInternal = HermesInternal;
-            const billingError = new body(4278).BillingError("Failed to create order: " + dependencyMap);
+            const billingError = new body(4342).BillingError("Failed to create order: " + dependencyMap);
             throw billingError;
           } else if (arg0 === 1) {
             c10 = 3;
@@ -770,7 +770,7 @@ function _purchaseSKU() {
             obj[0] = gateway_checkout_context;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -825,16 +825,16 @@ function _purchaseSKU() {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = dependencyMap;
                 const obj27 = callback2(709);
-                c11 = callback(7731).isTestModeForApplication(callback);
+                c11 = callback(7797).isTestModeForApplication(callback);
                 c8 = 1;
                 obj2 = { gift: isGift, sku_subscription_plan_id: obj1.subscriptionPlanId };
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = dependencyMap;
-                const obj28 = callback(7731);
+                const obj28 = callback(7797);
                 c10 = 2;
                 c11 = 1;
                 const obj3 = { value: null, done: false };
-                obj3[0] = callback(4058).createGatewayCheckoutContext(paymentSource);
+                obj3[0] = callback(4122).createGatewayCheckoutContext(paymentSource);
                 return obj3;
               }
             } else if (1 === tmp8) {
@@ -1105,7 +1105,7 @@ function _resendPaymentVerificationEmail() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1141,10 +1141,10 @@ function _resendPaymentVerificationEmail() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = closure_4;
-          if (callback instanceof callback(4278).BillingError) {
+          if (callback instanceof callback(4342).BillingError) {
             let billingError = callback;
           } else {
-            billingError = new callback(4278).BillingError(callback);
+            billingError = new callback(4342).BillingError(callback);
           }
           throw billingError;
         } else if (arg0 === 1) {

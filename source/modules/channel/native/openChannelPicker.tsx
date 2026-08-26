@@ -1,13 +1,13 @@
-// Module ID: 10369
-// Function ID: 10370
+// Module ID: 10437
+// Function ID: 10438
 // Name: openChannelPicker
-// Dependencies: [1982, 1910, 4347, 10370, 2009, 1236, 2]
+// Dependencies: [1982, 1910, 4411, 10438, 2009, 1236, 2]
 // Exports: default
 
-// Module 10369 (openChannelPicker)
+// Module 10437 (openChannelPicker)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4347 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
 import closure_3 from "comparator" /* 1982 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 
@@ -40,5 +40,5 @@ export default function openChannelPicker(onClose) {
   obj[2] = found.map((channel) => channel.channel);
   obj[3] = selectedChannel;
   const merged1 = Object.assign(merged);
-  obj.openLazy(asyncRequireImpl(10370, dependencyMap.paths), "ChannelPicker", obj);
+  obj.openLazy(asyncRequireImpl(10438, dependencyMap.paths), "ChannelPicker", obj);
 };

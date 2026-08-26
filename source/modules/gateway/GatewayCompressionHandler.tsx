@@ -1,18 +1,18 @@
-// Module ID: 13121
-// Function ID: 13122
+// Module ID: 13194
+// Function ID: 13195
 // Name: items
-// Dependencies: [17, 13122, 13124, 3, 500, 13123, 4966, 2]
+// Dependencies: [17, 13195, 13197, 3, 500, 13196, 5032, 2]
 // Exports: getCompressionHandler
 
-// Module 13121 (items)
+// Module 13194 (items)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set2 from "set" /* 500 */;
-import get from "get" /* 4966 */;
-import supportsZstd from "supportsZstd" /* 13122 */;
-import enforcing from "enforcing" /* 13123 */;
-import _mod13124 from "module_13124" /* 13124 */;
+import get from "get" /* 5032 */;
+import supportsZstd from "supportsZstd" /* 13195 */;
+import enforcing from "enforcing" /* 13196 */;
+import _mod13197 from "module_13197" /* 13197 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const items = [];
@@ -97,7 +97,7 @@ items.push(fn);
 const fn2 = (arg0) => {
   tmp = new tmp(arg0, new.target, tmp, new.target);
   // ThrowIfThisInitialized (0x7c)
-  tmp._pako = _mod13124;
+  tmp._pako = _mod13197;
   tmp._usesZstd = false;
   tmp._zstdDecoder = null;
   tmp._zstdStream = null;
@@ -225,7 +225,7 @@ prototype3["handleFlushEnd"] = function handleFlushEnd(arg0) {
 items.push(fn2);
 const fn3 = () => {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
-  applyArgumentsResult._pako = _mod13124;
+  applyArgumentsResult._pako = _mod13197;
   return applyArgumentsResult;
 };
 const prototype4 = fn3.prototype;
@@ -290,7 +290,7 @@ prototype5["bindWebSocket"] = function bindWebSocket(_socketId) {
   const isAndroidResult = set2.isAndroid();
   if (supportsZstdResult) {
     if (isAndroidResult) {
-      const _default2 = tmp2(13123).default;
+      const _default2 = tmp2(13196).default;
       if (_default2 != null) {
         const result = _default2.enableZstdStreamSupport(self._socketId);
       }
@@ -299,7 +299,7 @@ prototype5["bindWebSocket"] = function bindWebSocket(_socketId) {
       const result1 = DCDCompressionManager2.enableZstdStreamSupport(self._socketId, 0);
     }
   } else if (isAndroidResult) {
-    const _default = tmp2(13123).default;
+    const _default = tmp2(13196).default;
     if (_default != null) {
       const result2 = _default.enableZlibStreamSupport(self._socketId);
     }
@@ -333,7 +333,7 @@ prototype5["close"] = function close() {
   this._socketId = null;
   if (null !== _socketId) {
     if (obj.isAndroid()) {
-      const _default = tmp(13123).default;
+      const _default = tmp(13196).default;
       if (_default != null) {
         const result = _default.disableZlibStreamSupport(_socketId);
       }

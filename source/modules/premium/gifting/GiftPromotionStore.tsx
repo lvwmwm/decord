@@ -1,9 +1,9 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 7093
+// Function ID: 7094
 // Name: initialize
 // Dependencies: [589, 709, 2]
 
-// Module 7027 (initialize)
+// Module 7093 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 
@@ -22,8 +22,8 @@ prototype["initialize"] = function initialize(giftOptionsReceiptMap) {
 prototype["getState"] = function getState() {
   return closure_0;
 };
-prototype["getGiftOptionsForKey"] = function getGiftOptionsForKey(closure_3) {
-  return closure_0.giftOptionsReceiptMap[closure_3];
+prototype["getGiftOptionsForKey"] = function getGiftOptionsForKey(v3Result) {
+  return closure_0.giftOptionsReceiptMap[v3Result];
 };
 GiftPromotionStore.displayName = "GiftPromotionStore";
 GiftPromotionStore.persistKey = "GiftPromotionStore";

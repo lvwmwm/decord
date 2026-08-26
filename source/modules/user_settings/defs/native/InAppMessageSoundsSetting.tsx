@@ -1,15 +1,15 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 14976
+// Function ID: 14977
 // Name: toggle
-// Dependencies: [9934, 8235, 10516, 1236, 1625, 2]
+// Dependencies: [10001, 8302, 10584, 1236, 1625, 2]
 
-// Module 14897 (toggle)
+// Module 14976 (toggle)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
-import MobileUserSettings from "MobileUserSettings" /* 8235 */;
-import isInAppMessageSoundsEnabled from "isInAppMessageSoundsEnabled" /* 9934 */;
-import createToggle from "createToggle" /* 10516 */;
+import MobileUserSettings from "MobileUserSettings" /* 8302 */;
+import isInAppMessageSoundsEnabled from "isInAppMessageSoundsEnabled" /* 10001 */;
+import createToggle from "createToggle" /* 10584 */;
 
 ({ setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled } = isInAppMessageSoundsEnabled);
 const toggle = createToggle.createToggle({

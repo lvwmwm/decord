@@ -1,9 +1,9 @@
-// Module ID: 4416
-// Function ID: 4417
+// Module ID: 4480
+// Function ID: 4481
 // Name: gameFromServer
-// Dependencies: [4406, 676, 4409, 687, 4417, 595, 500, 4418, 589, 11, 1370, 1955, 698, 4070, 709, 2]
+// Dependencies: [4470, 676, 4473, 687, 4481, 595, 500, 4482, 589, 11, 1370, 1955, 698, 4134, 709, 2]
 
-// Module 4416 (gameFromServer)
+// Module 4480 (gameFromServer)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
@@ -11,11 +11,11 @@ import ME from "ME" /* 676 */;
 import setDefault from "set" /* 687 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4070 */;
-import createExecutable2 from "createExecutable" /* 4406 */;
-import ApplicationTypes2 from "ApplicationTypes" /* 4409 */;
-import keysDefault from "keys" /* 4417 */;
-import GameTheme from "GameTheme" /* 4418 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import createExecutable2 from "createExecutable" /* 4470 */;
+import ApplicationTypes2 from "ApplicationTypes" /* 4473 */;
+import keysDefault from "keys" /* 4481 */;
+import GameTheme from "GameTheme" /* 4482 */;
 import set from "set" /* 500 */;
 
 function gameFromServer(id) {

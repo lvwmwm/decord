@@ -1,10 +1,10 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14548
+// Function ID: 14549
 // Name: isSourceError
 // Dependencies: [500, 2]
 // Exports: isSourceError
 
-// Module 14475 (isSourceError)
+// Module 14548 (isSourceError)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 6804
-// Function ID: 6805
+// Module ID: 6870
+// Function ID: 6871
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6804 (metadata)
+// Module 6870 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RewardsLaptopSpotIllustration-2x.png.js");
