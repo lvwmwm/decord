@@ -4,7 +4,7 @@
 
 A repo that tracks the [Discord](https://github.com/discord) Android app's code changes!
 
-For a closer look at what's scraped, take a look at the [data](https://github.com/nexpid/Themelings/tree/data) branch
+For a closer look at what's scraped, take a look at the [data](https://github.com/lvwmwm/decord/tree/data) branch
 
 ## Credits
 
