@@ -1,5 +1,5 @@
 <div align="center">
-    <h1> Themelings</h1>
+    <h1> Decord</h1>
 </div>
 
 A repo that tracks the [Discord](https://github.com/discord) Android app's code changes!
