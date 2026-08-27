@@ -109,7 +109,7 @@ export const setUpdateRules = function setUpdateRules(arg0) {
   const obj = tDefault;
   const obj2 = tDefault;
   importDefault = obj2.reactFor(tDefault.ruleOutput(rules, "react"));
-  const f116200 = (arr, context, unsafeContext) => {
+  const f116201 = (arr, context, unsafeContext) => {
     const hasItem = arr.includes("\n\n");
     let text = arr;
     if (hasItem) {
@@ -122,13 +122,13 @@ export const setUpdateRules = function setUpdateRules(arg0) {
   _require = undefined;
   const obj3 = tDefault;
   _require = tDefault.parserFor(_require(16767).rules);
-  const f116201 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
+  const f116202 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
 };
 export const getMessage = function getMessage(str) {
   if (null == str) {
     return "";
   } else {
-    if (null == f116200) {
+    if (null == f116201) {
       const rules = _require(16767).rules;
       _require = undefined;
       importDefault = undefined;
@@ -136,7 +136,7 @@ export const getMessage = function getMessage(str) {
       _require = obj.parserFor(_require(16768).default(rules));
       const obj2 = tDefault;
       importDefault = obj2.reactFor(tDefault.ruleOutput(rules, "react"));
-      f116200 = (arr, context, unsafeContext) => {
+      f116201 = (arr, context, unsafeContext) => {
         const hasItem = arr.includes("\n\n");
         let text = arr;
         if (hasItem) {
@@ -149,7 +149,7 @@ export const getMessage = function getMessage(str) {
       _require = undefined;
       const obj3 = tDefault;
       _require = tDefault.parserFor(_require(16767).rules);
-      const f116201 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
+      const f116202 = (arg0, context, unsafeContext) => callback(arg0 + "\n\n", { inline: false, context, unsafeContext });
       const obj4 = tDefault;
     }
     const str2 = str.replace(/^\n+|\n+$/g, "");

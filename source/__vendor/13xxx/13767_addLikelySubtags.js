@@ -31,7 +31,7 @@ function addLikelySubtags(locale) {
           tmpResult = tmp(1281);
           obj[3] = tmpResult.__spreadArray(tmpResult.__spreadArray([], variants, true), result.variants, true);
         } else {
-          obj = { lang: null, script: "Array", region: "isArray", variants: 2 };
+          obj = { lang: null, script: "Array", region: "isArray", variants: null };
           obj[0] = "und";
           obj[3] = variants;
         }
@@ -64,7 +64,7 @@ function addLikelySubtags(locale) {
         let obj3 = obj2;
         const tmpResult2 = tmp(1281);
       } else {
-        obj3 = { lang: null, script: "r", region: "LU", variants: "+352" };
+        obj3 = { lang: null, script: "r", region: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009464427057833978, variants: 5168188345740660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
         obj3[0] = "und";
         obj3[2] = region;
         obj3[3] = items;
@@ -568,7 +568,7 @@ let tmp2 = (() => {
                 lang = "und";
               }
               obj1 = { lang: null };
-              const obj2 = { lang: null, script: "Array", region: "isArray", variants: 2 };
+              const obj2 = { lang: null, script: "Array", region: "isArray", variants: null };
               obj2[0] = lang;
               obj2[3] = variants;
               obj1[0] = obj2;
@@ -592,7 +592,7 @@ let tmp2 = (() => {
                     str2 = "und";
                   }
                   const obj4 = { lang: null };
-                  const obj5 = { lang: null, script: "r", region: "LU", variants: "+352" };
+                  const obj5 = { lang: null, script: "r", region: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009464427057833978, variants: 5168188345740660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
                   obj5[0] = str2;
                   obj5[2] = region;
                   obj5[3] = items;

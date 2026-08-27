@@ -465,7 +465,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                                 }
                                 const obj2 = str(dependencyMap[4]);
                               }
-                              return str(dependencyMap[9]).handleCallbackErrors(() => { ... }, () => { ... }, /* F117169 */ function() { ... }, () => { ... });
+                              return str(dependencyMap[9]).handleCallbackErrors(() => { ... }, () => { ... }, /* F117170 */ function() { ... }, () => { ... });
                             });
                           }
                         }
@@ -490,7 +490,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                               c6 = 0;
                               c7 = 0;
                               c5 = 0;
-                              return (/* F122357 */ function*() { ... })();
+                              return (/* F122358 */ function*() { ... })();
                             });
                             let startSpanManualResult = tmp2(startSpanManual[7]).startSpanManual(obj, function(arg0) {
                               self = this;
@@ -652,7 +652,7 @@ export const instrumentAnthropicAiClient = function instrumentAnthropicAiClient(
                                 if (BooleanResult) {
                                   if (!tmp12) {
                                     closure_0 = undefined;
-                                    closure_0 = _self(/* F121283 */ function() { ... });
+                                    closure_0 = _self(/* F121284 */ function() { ... });
                                     let startSpanManualResult = tmp2(startSpanManual[7]).startSpanManual(obj, () => { ... });
                                     const tmp2Result3 = tmp2(startSpanManual[7]);
                                   }

@@ -12,7 +12,7 @@ const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/
 
 export const getCommandContext = function getCommandContext(type) {
   if ("contextless" === type.type) {
-    let obj = { channel: "isArray", guild: "accessibilityRole" };
+    let obj = { channel: "Array", guild: "ct" };
   } else {
     obj = { channel: null, guild: null };
     obj[0] = type.channel;
@@ -25,7 +25,7 @@ export const useCommandContext = function useCommandContext(context) {
   const items = [context];
   return React.useMemo(() => {
     if ("contextless" === type.type) {
-      let obj = { channel: "isArray", guild: "accessibilityRole" };
+      let obj = { channel: "Array", guild: "ct" };
     } else {
       obj = { channel: null, guild: null };
       obj[0] = tmp.channel;

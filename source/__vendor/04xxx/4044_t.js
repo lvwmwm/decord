@@ -506,7 +506,9 @@ const fn = function t(moment) {
       break;
       case "guildGameIds":
       break;
-      case "useYouBarActivityStatusEnabled":
+      case "frameX":
+      break;
+      case "user.id":
       break;
       case "dragOffsetFromRight":
       break;
@@ -548,13 +550,11 @@ const fn = function t(moment) {
       break;
       case "serializeEnd":
       break;
-      case "discovery_splash":
+      case "controlEdgeToEdgeValues":
       break;
-      case "splash":
+      case "supportsReferrerPolicy":
       break;
-      case "hash_mask":
-      break;
-      case "maskContentUnits":
+      case "icymiDesktopEnabled":
       break;
       case "MarkupParserNodeTypeError":
       break;
@@ -712,23 +712,23 @@ const fn = function t(moment) {
       break;
       case "$ZodCheckGreaterThan":
       break;
+      case "millisecondsInSecond":
+      break;
+      case "revealMessage":
+      break;
+      case "getAvatarDecoration":
+      break;
+      case "getAvatarDecorationURL":
+      break;
+      case "getCanUseMultiAccountMobile":
+      break;
+      case "MobileGoLiveEntrypointTreatment":
+      break;
       case "ToIntlMathematicalValue":
       break;
       case "th":
       break;
       case "ValueSetter":
-      break;
-      case "$ZodCheckNumberFormat":
-      break;
-      case "N":
-      break;
-      case "NumberFormat":
-      break;
-      case "um":
-      break;
-      case "b":
-      break;
-      case "be":
         if (!arg1) {
           if (!arg3) {
             sum = `${tmp}lety`;
@@ -741,6 +741,18 @@ const fn = function t(moment) {
         if (tmp3) {
           result = arg0 / 10;
         }
+      break;
+      case "$ZodCheckNumberFormat":
+      break;
+      case "N":
+      break;
+      case "NumberFormat":
+      break;
+      case "um":
+      break;
+      case "b":
+      break;
+      case "be":
       break;
       case "breadcrumbType":
       break;
@@ -778,7 +790,13 @@ const fn = function t(moment) {
       break;
       case "_":
       break;
-      case "successNodeId":
+      case "connectionType":
+      break;
+      case "connectionTypeBuckets":
+      break;
+      case "suggested_user":
+      break;
+      case "suggested_user_id":
       break;
       case "AUTO_MODERATION_REMOVE_REGEX_PATTERNS":
       break;
@@ -896,11 +914,13 @@ const fn = function t(moment) {
       break;
       case "RTC_CONNECTION_FLAGS":
       break;
-      case "handleToggleVideo":
+      case "updateRsvp":
       break;
-      case "ideograph_advantage":
+      case "gzindex":
       break;
-      case "getAppHardwareAccelerationEnabled":
+      case "indexChange":
+      break;
+      case "getAppIdForBotUserId":
       break;
       case "ActionSheetHeaderPressableText":
       break;
@@ -910,7 +930,7 @@ const fn = function t(moment) {
       break;
       case "ext":
       break;
-      case "isReduceMotionEnabled":
+      case "isReduceTransparencyEnabled":
       break;
       case "AccessibilityFocusView":
       break;
@@ -1092,8 +1112,6 @@ const fn = function t(moment) {
       break;
       case "mentionsCount":
       break;
-      case "PREMIUM_GIFT_YEAR_TIER_1":
-      break;
       case "dist":
       break;
       case "distance":
@@ -1135,6 +1153,8 @@ const fn = function t(moment) {
       case "RoleFlags":
       break;
       case "scrollToQuestId":
+      break;
+      case "leadingText":
       break;
       case "accessibleDismiss":
       break;
@@ -1214,7 +1234,7 @@ const fn = function t(moment) {
       break;
       case "Dao":
       break;
-      case "replaceCorrectMessageParams":
+      case "replaceExports":
       break;
       case "app":
       break;
@@ -1231,26 +1251,6 @@ const fn = function t(moment) {
       case "tio":
       break;
       case "io":
-      break;
-      case "showGuildTag":
-      break;
-      case "GuildTagBadgeSize":
-      break;
-      case "_applyCombination":
-      break;
-      case "ly":
-      break;
-      case "ios_backgroundColor":
-      break;
-      case "ba":
-      break;
-      case "back":
-      break;
-      case "background":
-      break;
-      case "backgroundColorGradient":
-      break;
-      case "kg":
       break;
       default:
     }
