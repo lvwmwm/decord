@@ -56,8 +56,10 @@ export default async function code(progress: Progress, _code: string[]) {
 		if (id !== undefined) {
 			const sourcePath = modulePaths.get(id);
 			if (sourcePath) return sanitizePath(sourcePath);
+			const bucket = Math.floor(id / 1000);
+			return `__unmapped/${String(bucket).padStart(2, "0")}xxx/${relativePath}`;
 		}
-		return relativePath;
+		return `__unmapped/${relativePath}`;
 	}
 
 	const files = new Map<string, number>();
