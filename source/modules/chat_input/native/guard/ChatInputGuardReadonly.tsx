@@ -1,19 +1,19 @@
-// Module ID: 12100
-// Function ID: 12101
+// Module ID: 11946
+// Function ID: 11947
 // Name: sortChannelsByLastMessageId
-// Dependencies: [19, 1395, 1391, 1982, 4089, 4459, 4098, 1922, 11602, 676, 21, 11928, 589, 1370, 1236, 4638, 4652, 1222, 11, 12081, 2]
+// Dependencies: [19, 1395, 1391, 1982, 4089, 4460, 4098, 1922, 11453, 676, 21, 11772, 589, 1370, 1236, 4639, 4653, 1222, 11, 11927, 2]
 
-// Module 12100 (sortChannelsByLastMessageId)
+// Module 11946 (sortChannelsByLastMessageId)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import { isTextChannel } from "createChannelRecord" /* 1395 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "comparator" /* 1982 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_6 } from "comparator" /* 1982 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_8 from "generateOldThreadCutoff" /* 4459 */;
+import closure_8 from "generateOldThreadCutoff" /* 4460 */;
 import closure_9 from "markAllUserIdListsStale" /* 4098 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import { TextAreaCta } from "TextAreaCta" /* 11602 */;
+import { TextAreaCta } from "TextAreaCta" /* 11453 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

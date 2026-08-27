@@ -1,9 +1,9 @@
-// Module ID: 5349
-// Function ID: 5350
+// Module ID: 5354
+// Function ID: 5355
 // Name: computeRolesForGuild
 // Dependencies: [1434, 1986, 1992, 1985, 1910, 1922, 676, 4080, 589, 709, 2]
 
-// Module 5349 (computeRolesForGuild)
+// Module 5354 (computeRolesForGuild)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;

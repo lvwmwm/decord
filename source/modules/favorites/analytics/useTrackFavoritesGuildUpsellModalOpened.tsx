@@ -1,12 +1,12 @@
-// Module ID: 9932
-// Function ID: 9933
+// Module ID: 10231
+// Function ID: 10232
 // Name: useTrackFavoritesGuildUpsellModalOpened
-// Dependencies: [19, 676, 5900, 5920, 698, 2]
+// Dependencies: [19, 676, 5905, 5925, 698, 2]
 // Exports: default
 
-// Module 9932 (useTrackFavoritesGuildUpsellModalOpened)
-import contextDefault from "context" /* 5900 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5920 */;
+// Module 10231 (useTrackFavoritesGuildUpsellModalOpened)
+import contextDefault from "context" /* 5905 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5925 */;
 import closure_2 from "noop" /* 19 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 

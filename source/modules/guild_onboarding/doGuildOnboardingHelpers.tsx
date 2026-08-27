@@ -1,10 +1,10 @@
-// Module ID: 5418
-// Function ID: 5419
+// Module ID: 5423
+// Function ID: 5424
 // Name: waitForOnboardingCompletion
-// Dependencies: [1992, 4077, 1403, 5419, 2]
+// Dependencies: [1992, 4077, 1403, 5424, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 5418 (waitForOnboardingCompletion)
+// Module 5423 (waitForOnboardingCompletion)
 import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 

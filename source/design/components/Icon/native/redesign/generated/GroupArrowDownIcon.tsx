@@ -1,14 +1,14 @@
-// Module ID: 10954
-// Function ID: 10955
+// Module ID: 9928
+// Function ID: 9929
 // Name: GroupArrowDownIcon
-// Dependencies: [19, 21, 712, 4164, 10955, 2]
+// Dependencies: [19, 21, 712, 4164, 9929, 2]
 // Exports: GroupArrowDownIcon
 
-// Module 10954 (GroupArrowDownIcon)
+// Module 9928 (GroupArrowDownIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 10955 */;
+import registerAsset from "registerAsset" /* 9929 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

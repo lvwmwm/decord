@@ -1,15 +1,15 @@
-// Module ID: 13464
-// Function ID: 13465
+// Module ID: 13491
+// Function ID: 13492
 // Name: trackAckMessages
-// Dependencies: [1391, 7308, 1910, 4653, 676, 4652, 2]
+// Dependencies: [1391, 7314, 1910, 4654, 676, 4653, 2]
 // Exports: default
 
-// Module 13464 (trackAckMessages)
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4652 */;
+// Module 13491 (trackAckMessages)
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "updateGuildUnreadSentinel" /* 7308 */;
+import closure_3 from "updateGuildUnreadSentinel" /* 7314 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "updateUserGuildSettingsInternal" /* 4653 */;
+import closure_5 from "updateUserGuildSettingsInternal" /* 4654 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

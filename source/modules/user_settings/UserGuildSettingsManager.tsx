@@ -1,13 +1,13 @@
-// Module ID: 5431
-// Function ID: 5432
+// Module ID: 5436
+// Function ID: 5437
 // Name: handleConnectionOpen
-// Dependencies: [5, 5432, 1391, 676, 687, 530, 5433, 2]
+// Dependencies: [5, 5437, 1391, 676, 687, 530, 5438, 2]
 
-// Module 5431 (handleConnectionOpen)
+// Module 5436 (handleConnectionOpen)
 import setDefault from "set" /* 687 */;
-import initializeDefault from "initialize" /* 5433 */;
+import initializeDefault from "initialize" /* 5438 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "incrementVersion" /* 5432 */;
+import closure_3 from "incrementVersion" /* 5437 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;
 

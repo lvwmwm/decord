@@ -1,10 +1,10 @@
-// Module ID: 11406
-// Function ID: 11407
+// Module ID: 11258
+// Function ID: 11259
 // Name: createGameSheetHook
 // Dependencies: [2]
 // Exports: createGameSheetHook
 
-// Module 11406 (createGameSheetHook)
+// Module 11258 (createGameSheetHook)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/quests/SponsoredQuestUtils.native.tsx");

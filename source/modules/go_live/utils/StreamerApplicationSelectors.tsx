@@ -1,13 +1,13 @@
-// Module ID: 7408
-// Function ID: 7409
+// Module ID: 7416
+// Function ID: 7417
 // Name: _findPlayingActivity
-// Dependencies: [4533, 676, 7409, 643, 589, 2]
+// Dependencies: [4534, 676, 7417, 643, 589, 2]
 // Exports: getStreamerActivity, getStreamerActivityByUserId, getStreamerApplication, useGetStreamApplication
 
-// Module 7408 (_findPlayingActivity)
+// Module 7416 (_findPlayingActivity)
 import shallowEqualDefault from "shallowEqual" /* 643 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7409 */;
-import closure_3 from "sortActivity" /* 4533 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7417 */;
+import closure_3 from "sortActivity" /* 4534 */;
 import { ActivityTypes } from "ME" /* 676 */;
 
 const require = arg1;

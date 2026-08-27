@@ -1,10 +1,10 @@
-// Module ID: 12410
-// Function ID: 12411
+// Module ID: 10636
+// Function ID: 10637
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 1391, 4089, 1394, 676, 589, 7518, 1913, 1370, 2]
+// Dependencies: [19, 1391, 4089, 1394, 676, 589, 9844, 1913, 1370, 2]
 // Exports: default
 
-// Module 12410 (useFavoritesGuildChannelFilter)
+// Module 10636 (useFavoritesGuildChannelFilter)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4089 */;

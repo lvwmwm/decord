@@ -1,9 +1,9 @@
-// Module ID: 7357
-// Function ID: 7358
+// Module ID: 7364
+// Function ID: 7365
 // Name: setCooldown
-// Dependencies: [1391, 4089, 7358, 4328, 709, 687, 589, 2]
+// Dependencies: [1391, 4089, 7365, 4329, 709, 687, 589, 2]
 
-// Module 7357 (setCooldown)
+// Module 7364 (setCooldown)
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
@@ -20,7 +20,7 @@ function setCooldown(channel, SendMessage, arg2) {
     const id = channel.id;
     delete tmp2[tmp];
   }
-  obj = _require(7358);
+  obj = _require(7365);
   if (!obj.canBypassSlowmode(channel)) {
     if (arg2 > 0) {
       const _Date = Date;
@@ -30,7 +30,7 @@ function setCooldown(channel, SendMessage, arg2) {
       obj[0] = channel.rateLimitPerUser;
       obj[1] = arg2;
       obj[2] = sum;
-      const timeout = new _require(4328).Timeout();
+      const timeout = new _require(4329).Timeout();
       obj[3] = timeout;
       tmp3[SendMessage][channel.id] = obj;
       const timer2 = tmp3[SendMessage][channel.id].timer;

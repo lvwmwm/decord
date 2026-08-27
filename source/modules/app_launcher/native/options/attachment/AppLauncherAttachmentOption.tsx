@@ -1,19 +1,19 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 11662
+// Function ID: 11663
 // Name: AttachmentPreviewAppLauncher
-// Dependencies: [19, 17, 4806, 4805, 21, 4444, 712, 10096, 10034, 1955, 11816, 589, 8579, 11834, 1236, 5020, 10401, 2]
+// Dependencies: [19, 17, 4807, 4806, 21, 4445, 712, 10198, 10138, 1955, 11645, 589, 8095, 11663, 1236, 5025, 10795, 2]
 // Exports: default
 
-// Module 11833 (AttachmentPreviewAppLauncher)
+// Module 11662 (AttachmentPreviewAppLauncher)
 import ThemesDefault from "Themes" /* 712 */;
-import FileIcon from "FileIcon" /* 10034 */;
-import AttachmentIconDefault from "AttachmentIcon" /* 10096 */;
+import FileIcon from "FileIcon" /* 10138 */;
+import AttachmentIconDefault from "AttachmentIcon" /* 10198 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { DraftType } from "handleChanged" /* 4806 */;
-import closure_6 from "map" /* 4805 */;
+import { DraftType } from "handleChanged" /* 4807 */;
+import closure_6 from "map" /* 4806 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function AttachmentPreviewAppLauncher(arg0) {

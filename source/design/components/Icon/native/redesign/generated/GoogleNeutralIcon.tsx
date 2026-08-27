@@ -1,14 +1,14 @@
-// Module ID: 8041
-// Function ID: 8042
+// Module ID: 8637
+// Function ID: 8638
 // Name: GoogleNeutralIcon
-// Dependencies: [19, 21, 712, 4164, 8042, 2]
+// Dependencies: [19, 21, 712, 4164, 8638, 2]
 // Exports: GoogleNeutralIcon
 
-// Module 8041 (GoogleNeutralIcon)
+// Module 8637 (GoogleNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 8042 */;
+import registerAsset from "registerAsset" /* 8638 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

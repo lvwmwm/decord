@@ -1,10 +1,10 @@
-// Module ID: 13504
-// Function ID: 13505
+// Module ID: 13531
+// Function ID: 13532
 // Name: _createTwoWayLink
-// Dependencies: [5, 19, 13503, 5297, 10645, 38, 5298, 10658, 2]
+// Dependencies: [5, 19, 13530, 5302, 9232, 38, 5303, 9215, 2]
 // Exports: useDeviceCodeAuthorizeCallback
 
-// Module 13504 (_createTwoWayLink)
+// Module 13531 (_createTwoWayLink)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -53,7 +53,7 @@ function _createTwoWayLink() {
               let url;
               c4 = undefined;
               state = undefined;
-              const result = callback(13503).clientIdToActivateDevicePlatform(callback);
+              const result = callback(13530).clientIdToActivateDevicePlatform(callback);
               dependencyMap = result;
               if (null == result) {
                 c9 = 1;
@@ -64,9 +64,9 @@ function _createTwoWayLink() {
               } else {
                 url = null;
                 c8 = 1;
-                let obj10 = callback2(5297);
+                let obj10 = callback2(5302);
                 const obj2 = { twoWayLinkType: null, userCode: null };
-                obj2[0] = callback(10645).TwoWayLinkType.DEVICE_CODE;
+                obj2[0] = callback(9232).TwoWayLinkType.DEVICE_CODE;
                 obj2[1] = tmp84;
                 c9 = 4;
                 c10 = 1;
@@ -74,7 +74,7 @@ function _createTwoWayLink() {
                 obj3[0] = obj10.authorize(result, obj2);
                 return obj3;
               }
-              const obj20 = callback(13503);
+              const obj20 = callback(13530);
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {
@@ -130,18 +130,18 @@ function _createTwoWayLink() {
               c4 = null;
               c8 = 2;
               callback2(38)(null != url, "No URL in authorize response");
-              state = callback(5298).getCallbackParamsFromURL(url).state;
+              state = callback(5303).getCallbackParamsFromURL(url).state;
               callback2(38)(null != state, "Authorize URL state query parameter must be present");
               c4 = state;
               c8 = 3;
-              const obj17 = callback(5298);
+              const obj17 = callback(5303);
               const obj8 = { code: null, state: null };
               obj8[0] = callback;
               obj8[1] = c4;
               c9 = 8;
               c10 = 1;
               const obj9 = { value: null, done: false };
-              obj9[0] = callback2(5297).callback(dependencyMap, obj8);
+              obj9[0] = callback2(5302).callback(dependencyMap, obj8);
               return obj9;
             }
           } else if (5 === tmp9) {
@@ -336,7 +336,7 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
                   c6 = 4;
                   c7 = 1;
                   obj1 = { value: null, done: false };
-                  obj1[0] = callback(10658).finishUserCode(tmp49.userCode, "granted");
+                  obj1[0] = callback(9215).finishUserCode(tmp49.userCode, "granted");
                   return obj1;
                 } else {
                   c5 = 3;
@@ -357,7 +357,7 @@ export const useDeviceCodeAuthorizeCallback = function useDeviceCodeAuthorizeCal
                 }
               } else {
                 c5 = 1;
-                let obj3 = callback(10658);
+                let obj3 = callback(9215);
                 c6 = 6;
                 c7 = 1;
                 obj3 = { value: null, done: false };

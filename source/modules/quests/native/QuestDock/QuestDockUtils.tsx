@@ -1,15 +1,15 @@
-// Module ID: 14617
-// Function ID: 14618
+// Module ID: 14644
+// Function ID: 14645
 // Name: QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED
-// Dependencies: [17, 14618, 687, 4878, 2]
+// Dependencies: [17, 14645, 687, 4879, 2]
 // Exports: dimensionsLayoutTransition, getQuestDockClosedWidth, getQuestDockCollapsedWidth, getQuestDockExpandedHeightLimits, getQuestDockExpandedWidth, isSoftDismissed, roundToNearestPixel
 
-// Module 14617 (QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED)
+// Module 14644 (QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import setDefault from "set" /* 687 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4878 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14618 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4879 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14645 */;
 
 const PixelRatio = get_ActivityIndicator.PixelRatio;
 const QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED = QUEST_DOCK_COLLAPSED_HEIGHT.QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED;

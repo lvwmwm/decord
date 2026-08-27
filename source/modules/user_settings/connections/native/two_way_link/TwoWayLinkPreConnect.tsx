@@ -1,10 +1,10 @@
-// Module ID: 10644
-// Function ID: 10645
+// Module ID: 9231
+// Function ID: 9232
 // Name: _authorizeLink
-// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4444, 5297, 10645, 4158, 500, 10640, 5298, 38, 709, 4440, 1236, 5500, 4879, 2]
+// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4445, 5302, 9232, 4158, 500, 9227, 5303, 38, 709, 4441, 1236, 5505, 4880, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 10644 (_authorizeLink)
+// Module 9231 (_authorizeLink)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
@@ -12,7 +12,7 @@ import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { WebBrowserType } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function _authorizeLink() {

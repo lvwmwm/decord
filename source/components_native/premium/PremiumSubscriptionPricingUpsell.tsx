@@ -1,13 +1,13 @@
-// Module ID: 13085
-// Function ID: 13086
+// Module ID: 13108
+// Function ID: 13109
 // Name: PricingSubheadingCopy
-// Dependencies: [32, 19, 17, 1996, 1922, 4112, 4113, 6031, 676, 1924, 21, 4444, 589, 4107, 12969, 709, 7092, 6034, 4440, 500, 6029, 6028, 1236, 1898, 2]
+// Dependencies: [32, 19, 17, 1996, 1922, 4112, 4113, 6036, 676, 1924, 21, 4445, 589, 4107, 12992, 709, 7098, 6039, 4441, 500, 6034, 6033, 1236, 1898, 2]
 // Exports: default
 
-// Module 13085 (PricingSubheadingCopy)
+// Module 13108 (PricingSubheadingCopy)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import getSubscriptionPlansLoaded from "getSubscriptionPlansLoaded" /* 12969 */;
+import Text from "Text" /* 4441 */;
+import getSubscriptionPlansLoaded from "getSubscriptionPlansLoaded" /* 12992 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -15,11 +15,11 @@ import closure_6 from "_getSystemLocale" /* 1996 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import closure_8 from "addSubscriptionPlan" /* 4112 */;
 import closure_9 from "reset" /* 4113 */;
-import closure_10 from "updateProduct" /* 6031 */;
+import closure_10 from "updateProduct" /* 6036 */;
 import { CurrencyCodes } from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function PricingSubheadingCopy() {

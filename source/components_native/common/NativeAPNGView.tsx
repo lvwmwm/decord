@@ -1,10 +1,10 @@
-// Module ID: 10076
-// Function ID: 10077
-// Dependencies: [17, 500, 10077, 2]
+// Module ID: 10182
+// Function ID: 10183
+// Dependencies: [17, 500, 10183, 2]
 
-// Module 10076
+// Module 10182
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 10077 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 10183 */;
 import set from "set" /* 500 */;
 
 if (set.isAndroid()) {

@@ -1,15 +1,15 @@
-// Module ID: 4298
-// Function ID: 4299
+// Module ID: 4299
+// Function ID: 4300
 // Name: coerceMainRoute
-// Dependencies: [32, 19, 4299, 1501, 514, 4300, 4305, 4306, 4323, 2]
+// Dependencies: [32, 19, 4300, 1501, 514, 4301, 4306, 4307, 4324, 2]
 // Exports: coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToMemberVerification, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, setHomeDrawerState, useCurrentNavigationRouteName, useIsModalOpen, useOpenModalKey
 
-// Module 4298 (coerceMainRoute)
+// Module 4299 (coerceMainRoute)
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4299 */;
-import enforcingDefault from "enforcing" /* 4305 */;
-import getBestActiveInput from "getBestActiveInput" /* 4306 */;
-import CREATE_THREAD_SCREEN_KEY from "CREATE_THREAD_SCREEN_KEY" /* 4323 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4300 */;
+import enforcingDefault from "enforcing" /* 4306 */;
+import getBestActiveInput from "getBestActiveInput" /* 4307 */;
+import CREATE_THREAD_SCREEN_KEY from "CREATE_THREAD_SCREEN_KEY" /* 4324 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import set from "set" /* 2 */;
@@ -88,7 +88,7 @@ const result = set.fileFinishedImporting("modules/main_tabs_v2/helpers/Navigatio
 function popModal(c3, onExited) {
   const _require = c3;
   closure_1 = onExited;
-  let obj = _require(4299);
+  let obj = _require(4300);
   const rootNavigationRef = obj.getRootNavigationRef();
   if (null != rootNavigationRef) {
     if (rootNavigationRef.isReady()) {
@@ -300,7 +300,7 @@ export const navigateToMemberVerification = function navigateToMemberVerificatio
   return flag;
 };
 export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
-  let obj = icymiScreen(4299);
+  let obj = icymiScreen(4300);
   const rootNavigationRef = obj.getRootNavigationRef();
   ({ screen, forceNavigate } = drawerOpen);
   if (null != rootNavigationRef) {
@@ -324,7 +324,7 @@ export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
             obj[1] = channelId;
             obj[2] = drawerOpen.drawerOpen;
             obj[1] = obj;
-            let tmpResult = tmp(4299);
+            let tmpResult = tmp(4300);
             const rootNavigationRef1 = tmpResult.getRootNavigationRef();
             if (null != rootNavigationRef1) {
               if (rootNavigationRef1.isReady()) {
@@ -332,7 +332,7 @@ export const navigateToRootTab = function navigateToRootTab(drawerOpen) {
                   const rootState = rootNavigationRef1.getRootState();
                   const routes = rootState.routes;
                   const found = routes.filter((name) => "modal" === name.name);
-                  tmpResult = tmp(4300);
+                  tmpResult = tmp(4301);
                   obj1 = { name: "tabs", key: null, params: null };
                   const _HermesInternal = HermesInternal;
                   obj1[1] = "tabs-" + tmp(514).v4();
@@ -393,7 +393,7 @@ export const resetToAuthRoute = function resetToAuthRoute() {
   if (!tmp) {
     rootNavigationRef.dispatch(() => {
       const CommonActions = callback(1501).CommonActions;
-      return CommonActions.reset(callback(4300).getInitialAuthState());
+      return CommonActions.reset(callback(4301).getInitialAuthState());
     });
     flag = true;
   }
@@ -684,7 +684,7 @@ export const navigateToContextMenuCommands = function navigateToContextMenuComma
 };
 export const popScreens = function popScreens(arg0) {
   const _require = arg0;
-  const rootNavigationRef = _require(4299).getRootNavigationRef();
+  const rootNavigationRef = _require(4300).getRootNavigationRef();
   let flag = null != rootNavigationRef;
   if (flag) {
     rootNavigationRef.dispatch(() => {

@@ -1,14 +1,14 @@
-// Module ID: 7862
-// Function ID: 7863
+// Module ID: 8151
+// Function ID: 8152
 // Name: usePremiumPlanPrice
-// Dependencies: [19, 4112, 4113, 6031, 505, 589, 7621, 7863, 7864, 6034, 500, 5888, 584, 6050, 6028, 2]
+// Dependencies: [19, 4112, 4113, 6036, 505, 589, 8152, 8153, 8156, 6039, 500, 5893, 584, 6056, 6033, 2]
 // Exports: default
 
-// Module 7862 (usePremiumPlanPrice)
+// Module 8151 (usePremiumPlanPrice)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "addSubscriptionPlan" /* 4112 */;
 import closure_5 from "reset" /* 4113 */;
-import closure_6 from "updateProduct" /* 6031 */;
+import closure_6 from "updateProduct" /* 6036 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
 const require = arg1;

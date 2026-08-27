@@ -1,9 +1,9 @@
-// Module ID: 16290
-// Function ID: 16291
+// Module ID: 16355
+// Function ID: 16356
 // Name: UnmuteOptions
-// Dependencies: [19, 17, 1391, 1910, 4098, 1922, 676, 21, 4444, 712, 7434, 5434, 5429, 10042, 5546, 1297, 10044, 4440, 1236, 4638, 10045, 1500, 10416, 10041, 1501, 647, 8607, 1629, 2]
+// Dependencies: [19, 17, 1391, 1910, 4098, 1922, 676, 21, 4445, 712, 7442, 5439, 5434, 10146, 5551, 1297, 10148, 4441, 1236, 4639, 10149, 1500, 10869, 10145, 1501, 647, 7540, 1629, 2]
 
-// Module 16290 (UnmuteOptions)
+// Module 16355 (UnmuteOptions)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -13,7 +13,7 @@ import closure_7 from "markAllUserIdListsStale" /* 4098 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import { ChannelSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function UnmuteOptions(channel) {
@@ -28,7 +28,7 @@ function UnmuteOptions(channel) {
     channel(closure_1_2[13]).handleUnmutePress(channel.id, channel.guild_id);
   }, items);
   obj = { icon: null, label: null, onPress: null, start: true, end: true };
-  obj = { disableColor: true, source: navigation(10044) };
+  obj = { disableColor: true, source: navigation(10148) };
   obj[0] = callback(channel(1297).Icon, obj);
   obj1 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = channel(1236).intl;
@@ -37,15 +37,15 @@ function UnmuteOptions(channel) {
   const tmp3 = closure_11;
   const tmp4 = View;
   const tmp5 = callback;
-  obj2[0] = channel(4638).computeChannelName(channel, closure_8, closure_7, true);
+  obj2[0] = channel(4639).computeChannelName(channel, closure_8, closure_7, true);
   obj1[2] = intl.format(channel(1236).t["eC+9rj"], obj2);
-  obj[1] = callback(channel(4440).Text, obj1);
+  obj[1] = callback(channel(4441).Text, obj1);
   obj[2] = callback;
-  const items1 = [callback(channel(5546).TableRow, obj), ];
+  const items1 = [callback(channel(5551).TableRow, obj), ];
   const obj3 = { muteConfig: channel.muteConfig, type: null };
-  const obj6 = channel(4638);
-  const tmp6 = navigation(10045);
-  const MuteSettingType = channel(10045).MuteSettingType;
+  const obj6 = channel(4639);
+  const tmp6 = navigation(10149);
+  const MuteSettingType = channel(10149).MuteSettingType;
   obj3[1] = channel.isPrivate() ? MuteSettingType.DM : MuteSettingType.CHANNEL;
   items1[1] = tmp5(tmp6, obj3);
   obj[1] = items1;

@@ -1,10 +1,10 @@
-// Module ID: 12262
-// Function ID: 12263
+// Module ID: 12084
+// Function ID: 12085
 // Name: ChatBeginningRowJoinRequest
-// Dependencies: [19, 17, 4089, 1922, 676, 21, 4444, 712, 12263, 589, 12264, 5951, 4440, 1236, 4269, 5323, 4879, 2]
+// Dependencies: [19, 17, 4089, 1922, 676, 21, 4445, 712, 12085, 589, 12086, 5956, 4441, 1236, 4270, 5328, 4880, 2]
 // Exports: default
 
-// Module 12262 (ChatBeginningRowJoinRequest)
+// Module 12084 (ChatBeginningRowJoinRequest)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -12,7 +12,7 @@ import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import { Permissions } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;

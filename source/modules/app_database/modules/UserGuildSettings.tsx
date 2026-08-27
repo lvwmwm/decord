@@ -1,12 +1,12 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7169
+// Function ID: 7170
 // Name: getAll
-// Dependencies: [5, 4653, 3, 1956, 12, 2]
+// Dependencies: [5, 4654, 3, 1956, 12, 2]
 
-// Module 7163 (getAll)
+// Module 7169 (getAll)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal" /* 4653 */;
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal" /* 4654 */;
 import set from "set" /* 2 */;
 
 let set = importDefault;

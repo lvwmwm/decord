@@ -1,19 +1,19 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15583
+// Function ID: 15584
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 1996, 12582, 21, 4444, 712, 1297, 4184, 647, 4878, 8514, 4440, 1898, 15519, 2]
+// Dependencies: [32, 19, 17, 1996, 9350, 21, 4445, 712, 1297, 4185, 647, 4879, 8030, 4441, 1898, 15584, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 15518 (HappeningNowAvatarStack)
+// Module 15583 (HappeningNowAvatarStack)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "_getSystemLocale" /* 1996 */;
-import { CHANNEL_SPRING_CONFIG } from "n" /* 12582 */;
+import { CHANNEL_SPRING_CONFIG } from "n" /* 9350 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);

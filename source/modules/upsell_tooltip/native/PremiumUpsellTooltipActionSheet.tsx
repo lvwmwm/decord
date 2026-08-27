@@ -1,20 +1,20 @@
-// Module ID: 8851
-// Function ID: 8852
+// Module ID: 9044
+// Function ID: 9045
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 1388, 21, 4444, 712, 4265, 5569, 1297, 4440, 4879, 4411, 2]
+// Dependencies: [19, 17, 1388, 21, 4445, 712, 4266, 5574, 1297, 4441, 4880, 4412, 2]
 // Exports: default
 
-// Module 8851 (PremiumUpsellTooltipActionSheet)
+// Module 9044 (PremiumUpsellTooltipActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4440 */;
-import Button2 from "Button" /* 4879 */;
-import Background from "Background" /* 5569 */;
+import Text from "Text" /* 4441 */;
+import Button2 from "Button" /* 4880 */;
+import Background from "Background" /* 5574 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -119,7 +119,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
       tmp5 = null != DISMISS && DISMISS !== closure_1_5.DISMISS;
       const result = closure_1_0(closure_1_2[6]).UNSAFE_markDismissibleContentAsDismissed(closure_0, { forceTrack: true, dismissAction: DISMISS });
     };
-    tmp2Result = tmp2(tmp3(4879).Button, obj6);
+    tmp2Result = tmp2(tmp3(4880).Button, obj6);
   }
   items4[1] = tmp2Result;
   obj4[1] = items4;

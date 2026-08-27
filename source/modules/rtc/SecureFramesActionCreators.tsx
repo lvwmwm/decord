@@ -1,15 +1,15 @@
-// Module ID: 9428
-// Function ID: 9429
+// Module ID: 9763
+// Function ID: 9764
 // Name: savePersistentCodesEnabled
-// Dependencies: [5, 1218, 1391, 4463, 9427, 676, 709, 9425, 4342, 4808, 1236, 9429, 5302, 2]
+// Dependencies: [5, 1218, 1391, 4464, 9762, 676, 709, 9760, 4343, 4809, 1236, 9764, 5307, 2]
 
-// Module 9428 (savePersistentCodesEnabled)
+// Module 9763 (savePersistentCodesEnabled)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "updateVoiceState" /* 4463 */;
-import { SECURE_FRAMES_PUBLIC_KEY_VERSION as closure_7 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9427 */;
+import closure_6 from "updateVoiceState" /* 4464 */;
+import { SECURE_FRAMES_PUBLIC_KEY_VERSION as closure_7 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9762 */;
 import { ChannelTypes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -81,10 +81,10 @@ function _savePersistentCodesEnabled() {
             if (1 === tmp8) {
               c6 = 0;
               dependencyMap = closure_5;
-              aPIError = new callback(4342).APIError(dependencyMap);
+              aPIError = new callback(4343).APIError(dependencyMap);
               obj1 = aPIError(709);
               obj1.dispatch({ type: "SECURE_FRAMES_SETTINGS_UPDATE", persistentCodesEnabled: false });
-              obj2 = aPIError(4808);
+              obj2 = aPIError(4809);
               const obj3 = { title: null, body: null };
               const intl = callback(1236).intl;
               obj3[0] = intl.string(callback(1236).t.R0RpRX);
@@ -192,7 +192,7 @@ function _updatePersistentCodesEnabled() {
               })();
               dependencyMap = tmp19;
               if (null != tmp19) {
-                let obj2 = v0(9429);
+                let obj2 = v0(9764);
                 const intl = callback(1236).intl;
                 const string = intl.string;
                 const t = callback(1236).t;

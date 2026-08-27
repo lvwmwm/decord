@@ -1,9 +1,9 @@
-// Module ID: 7793
-// Function ID: 7794
+// Module ID: 12879
+// Function ID: 12880
 // Name: ACRequestOperations
 // Dependencies: [2]
 
-// Module 7793 (ACRequestOperations)
+// Module 12879 (ACRequestOperations)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ACRequestOperations.tsx");

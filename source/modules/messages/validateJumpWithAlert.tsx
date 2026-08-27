@@ -1,13 +1,13 @@
-// Module ID: 12841
-// Function ID: 12842
+// Module ID: 12860
+// Function ID: 12861
 // Name: validateJumpWithAlert
-// Dependencies: [1391, 4089, 4098, 676, 4808, 1236, 7179, 2]
+// Dependencies: [1391, 4089, 4098, 676, 4809, 1236, 7185, 2]
 // Exports: default
 
-// Module 12841 (validateJumpWithAlert)
+// Module 12860 (validateJumpWithAlert)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import setDefault from "set" /* 4808 */;
-import isSpamSupported from "isSpamSupported" /* 7179 */;
+import setDefault from "set" /* 4809 */;
+import isSpamSupported from "isSpamSupported" /* 7185 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_5 from "markAllUserIdListsStale" /* 4098 */;

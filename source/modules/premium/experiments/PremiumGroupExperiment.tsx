@@ -1,10 +1,10 @@
-// Module ID: 12453
-// Function ID: 12454
+// Module ID: 12541
+// Function ID: 12542
 // Name: usePremiumGroupExperiment
 // Dependencies: [1472, 2]
 // Exports: default
 
-// Module 12453 (usePremiumGroupExperiment)
+// Module 12541 (usePremiumGroupExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

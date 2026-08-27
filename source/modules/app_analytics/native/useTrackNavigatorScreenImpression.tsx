@@ -1,13 +1,13 @@
-// Module ID: 14098
-// Function ID: 14099
+// Module ID: 14125
+// Function ID: 14126
 // Name: useTrackNavigatorScreenImpression
-// Dependencies: [9565, 503, 2]
+// Dependencies: [8815, 503, 2]
 // Exports: useTrackNavigatorScreenImpression
 
-// Module 14098 (useTrackNavigatorScreenImpression)
+// Module 14125 (useTrackNavigatorScreenImpression)
 import set from "set" /* 2 */;
 import encodeProperties from "encodeProperties" /* 503 */;
-import trackImpressionDefault from "trackImpression" /* 9565 */;
+import trackImpressionDefault from "trackImpression" /* 8815 */;
 
 const result = set.fileFinishedImporting("modules/app_analytics/native/useTrackNavigatorScreenImpression.tsx");
 

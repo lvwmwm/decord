@@ -1,16 +1,16 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 12443
+// Function ID: 12444
 // Name: useCanPurchaseFrames
-// Dependencies: [1922, 1924, 9023, 9618, 1946, 1938, 589, 2]
+// Dependencies: [1922, 1924, 8476, 12444, 1946, 1938, 589, 2]
 // Exports: default, isUserPaidTier2, useCanViewProfileFramesInCollectiblesShop, useIsProfileFramesEarlyAccessPhase
 
-// Module 9617 (useCanPurchaseFrames)
+// Module 12443 (useCanPurchaseFrames)
 import initialize from "initialize" /* 589 */;
 import create from "create" /* 1938 */;
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
-import apexExperiment from "apexExperiment" /* 9023 */;
-import apexExperiment2 from "apexExperiment" /* 9618 */;
-import apexExperimentDefault from "apexExperiment" /* 9618 */;
+import apexExperiment from "apexExperiment" /* 8476 */;
+import apexExperiment2 from "apexExperiment" /* 12444 */;
+import apexExperimentDefault from "apexExperiment" /* 12444 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
@@ -66,17 +66,17 @@ export const useIsProfileFramesEarlyAccessPhase = function useIsProfileFramesEar
   }
   return isProfileFramesEnabled;
 };
-export const isUserPaidTier2 = function isUserPaidTier2(currentUser) {
-  let isPremiumExactlyResult = isPremiumAtLeast.isPremiumExactly(currentUser, PremiumTypes.TIER_2);
+export const isUserPaidTier2 = function isUserPaidTier2(premiumState) {
+  let isPremiumExactlyResult = isPremiumAtLeast.isPremiumExactly(premiumState, PremiumTypes.TIER_2);
   if (isPremiumExactlyResult) {
-    let premiumState;
-    if (currentUser != null) {
-      premiumState = currentUser.premiumState;
+    premiumState = undefined;
+    if (premiumState != null) {
+      premiumState = premiumState.premiumState;
     }
     isPremiumExactlyResult = null != premiumState;
   }
   if (isPremiumExactlyResult) {
-    isPremiumExactlyResult = currentUser.premiumState.premiumSubscriptionType === create.PremiumSubscriptionType.TIER_2;
+    isPremiumExactlyResult = premiumState.premiumState.premiumSubscriptionType === create.PremiumSubscriptionType.TIER_2;
   }
   return isPremiumExactlyResult;
 };

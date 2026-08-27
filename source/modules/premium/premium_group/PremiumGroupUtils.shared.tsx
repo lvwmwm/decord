@@ -1,12 +1,12 @@
-// Module ID: 8377
-// Function ID: 8378
+// Module ID: 7891
+// Function ID: 7892
 // Name: getPriceString
-// Dependencies: [4112, 4107, 6028, 2]
+// Dependencies: [4112, 4107, 6033, 2]
 // Exports: getPriceString
 
-// Module 8377 (getPriceString)
+// Module 7891 (getPriceString)
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6028 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6033 */;
 import closure_2 from "addSubscriptionPlan" /* 4112 */;
 
 require = arg1;
@@ -29,7 +29,7 @@ export const getPriceString = function getPriceString(hasAnyPremiumGroup) {
           const formatPriceResult = formatSingleCurrencyPrice.formatPrice(price.amount, price.currency);
           if (tmp) {
             ({ interval, intervalCount } = value);
-            return tmp2(6028).formatRate(formatPriceResult, interval, intervalCount);
+            return tmp2(6033).formatRate(formatPriceResult, interval, intervalCount);
           } else {
             return formatPriceResult;
           }

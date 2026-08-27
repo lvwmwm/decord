@@ -1,10 +1,10 @@
-// Module ID: 5053
-// Function ID: 5054
+// Module ID: 5058
+// Function ID: 5059
 // Name: getVideoFrameRateValidationExperimentConfig
 // Dependencies: [1472, 2]
 // Exports: getVideoFrameRateValidationExperimentConfig
 
-// Module 5053 (getVideoFrameRateValidationExperimentConfig)
+// Module 5058 (getVideoFrameRateValidationExperimentConfig)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

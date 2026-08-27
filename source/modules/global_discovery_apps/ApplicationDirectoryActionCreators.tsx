@@ -1,25 +1,25 @@
-// Module ID: 11727
-// Function ID: 11728
+// Module ID: 11560
+// Function ID: 11561
 // Name: _getEmbedApplication
-// Dependencies: [5, 4443, 1996, 706, 5902, 11728, 11729, 11724, 11730, 11731, 676, 709, 584, 530, 11725, 500, 11732, 11733, 11734, 2]
+// Dependencies: [5, 4444, 1996, 706, 5907, 11561, 11562, 11557, 11563, 11564, 676, 709, 584, 530, 11558, 500, 11565, 11566, 11567, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11727 (_getEmbedApplication)
+// Module 11560 (_getEmbedApplication)
 import refreshSourceMapCookieDefault from "refreshSourceMapCookie" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getUserAgnosticState" /* 4443 */;
+import closure_4 from "getUserAgnosticState" /* 4444 */;
 import closure_5 from "_getSystemLocale" /* 1996 */;
-import closure_6 from "set" /* 5902 */;
-import { FetchState } from "set" /* 5902 */;
-import closure_8 from "getLastFetchTimeMs" /* 11728 */;
-import closure_9 from "getLastFetchTimeMs" /* 11729 */;
-import { FetchState } from "getLastFetchTimeMs" /* 11729 */;
-import closure_11 from "getSearchResults" /* 11724 */;
-import { FetchState } from "getSearchResults" /* 11724 */;
-import closure_13 from "getSimilarApplications" /* 11730 */;
-import { FetchState } from "getSimilarApplications" /* 11730 */;
-import closure_15 from "addToApplicationIdToGuildIds" /* 11731 */;
-import { FetchState } from "addToApplicationIdToGuildIds" /* 11731 */;
+import closure_6 from "set" /* 5907 */;
+import { FetchState } from "set" /* 5907 */;
+import closure_8 from "getLastFetchTimeMs" /* 11561 */;
+import closure_9 from "getLastFetchTimeMs" /* 11562 */;
+import { FetchState } from "getLastFetchTimeMs" /* 11562 */;
+import closure_11 from "getSearchResults" /* 11557 */;
+import { FetchState } from "getSearchResults" /* 11557 */;
+import closure_13 from "getSimilarApplications" /* 11563 */;
+import { FetchState } from "getSimilarApplications" /* 11563 */;
+import closure_15 from "addToApplicationIdToGuildIds" /* 11564 */;
+import { FetchState } from "addToApplicationIdToGuildIds" /* 11564 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -900,7 +900,7 @@ function _fetchCollections() {
                 if (fetchState !== constants.FETCHING) {
                   let tmp29 = !dependencyMap;
                   if (!dependencyMap) {
-                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11734).ApplicationCollectionActiveState.ACTIVE;
+                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11567).ApplicationCollectionActiveState.ACTIVE;
                   }
                   c6 = tmp29;
                   let obj5 = ACTIVE(709);
@@ -919,10 +919,10 @@ function _fetchCollections() {
                   let obj9 = APPLICATION_DIRECTORY(500);
                   locale = APPLICATION_DIRECTORY;
                   if (obj9.isAndroid()) {
-                    let WEB = locale(11732).ApplicationCollectionPlatforms.ANDROID;
+                    let WEB = locale(11565).ApplicationCollectionPlatforms.ANDROID;
                   } else {
                     const localeResult = locale(500);
-                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11732).ApplicationCollectionPlatforms;
+                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11565).ApplicationCollectionPlatforms;
                     if (isIOSResult) {
                       WEB = ApplicationCollectionPlatforms.IOS;
                     } else {

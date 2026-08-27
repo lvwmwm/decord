@@ -1,18 +1,18 @@
-// Module ID: 14429
-// Function ID: 14430
+// Module ID: 14456
+// Function ID: 14457
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 4444, 712, 8499, 14430, 6028, 14431, 4440, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 8014, 14457, 6033, 14458, 4441, 2]
 // Exports: default
 
-// Module 14429 (FamilyCenterActivityPurchaseRow)
+// Module 14456 (FamilyCenterActivityPurchaseRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8499 */;
-import getCollectibleTypeName from "getCollectibleTypeName" /* 14430 */;
-import AvatarDecorationPreviewImageDefault from "AvatarDecorationPreviewImage" /* 14431 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8014 */;
+import getCollectibleTypeName from "getCollectibleTypeName" /* 14457 */;
+import AvatarDecorationPreviewImageDefault from "AvatarDecorationPreviewImage" /* 14458 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -47,7 +47,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     return null;
   } else {
     let combined = displayName;
-    const tmp5Result = tmp5(6028);
+    const tmp5Result = tmp5(6033);
     if (null != typeName) {
       const _HermesInternal = HermesInternal;
       combined = "" + displayName + " \u2022 " + typeName;
@@ -56,7 +56,7 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj[0] = tmp.container;
     obj = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
     obj[0] = displayName;
-    const formatPriceResult = tmp5(6028).formatPrice(total, currency);
+    const formatPriceResult = tmp5(6033).formatPrice(total, currency);
     if (product == null) {
       product = null;
     }
@@ -68,10 +68,10 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     obj1[0] = tmp.textContainer;
     const obj2 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
     obj2[4] = combined;
-    const items1 = [closure_4(tmp5(4440).Text, obj2), ];
+    const items1 = [closure_4(tmp5(4441).Text, obj2), ];
     const obj3 = { variant: "text-xs/medium", color: "text-muted", children: null };
     obj3[2] = formatPriceResult;
-    items1[1] = closure_4(tmp5(4440).Text, obj3);
+    items1[1] = closure_4(tmp5(4441).Text, obj3);
     obj1[1] = items1;
     items[1] = closure_5(View, obj1);
     obj[1] = items;

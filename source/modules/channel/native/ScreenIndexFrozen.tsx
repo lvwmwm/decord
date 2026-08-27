@@ -1,10 +1,10 @@
-// Module ID: 4307
-// Function ID: 4308
+// Module ID: 4308
+// Function ID: 4309
 // Name: set
-// Dependencies: [19, 4184, 2]
+// Dependencies: [19, 4185, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
-// Module 4307 (set)
+// Module 4308 (set)
 import closure_2 from "noop" /* 19 */;
 import set from "set" /* 2 */;
 

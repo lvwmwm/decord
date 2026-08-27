@@ -1,14 +1,14 @@
-// Module ID: 14472
-// Function ID: 14473
+// Module ID: 14499
+// Function ID: 14500
 // Name: UserSettingsAuthedAppPermissions
-// Dependencies: [19, 17, 21, 4444, 10652, 9117, 1236, 4440, 4404, 712, 10654, 14466, 2]
+// Dependencies: [19, 17, 21, 4445, 9209, 8541, 1236, 4441, 4405, 712, 9211, 14493, 2]
 // Exports: default
 
-// Module 14472 (UserSettingsAuthedAppPermissions)
+// Module 14499 (UserSettingsAuthedAppPermissions)
 import noopAll from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;

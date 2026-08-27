@@ -1,10 +1,10 @@
-// Module ID: 5500
-// Function ID: 5501
+// Module ID: 5505
+// Function ID: 5506
 // Name: SafeAreaPaddingView
-// Dependencies: [19, 17, 21, 1629, 5501, 659, 2]
+// Dependencies: [19, 17, 21, 1629, 5506, 659, 2]
 // Exports: SafeAreaPaddingView
 
-// Module 5500 (SafeAreaPaddingView)
+// Module 5505 (SafeAreaPaddingView)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -69,7 +69,7 @@ export const SafeAreaPaddingView = function SafeAreaPaddingView(top) {
   }
   items[4] = tmp12;
   dependencyMap = items;
-  const tmp13 = ref(5501)(ref);
+  const tmp13 = ref(5506)(ref);
   const tmp14 = ref(659)(items, tmp13);
   React = tmp14;
   if (tmp14) {

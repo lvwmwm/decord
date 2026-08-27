@@ -20,6 +20,7 @@ function sendRequest(arg0, signal) {
   dependencyMap = arg2;
   closure_3 = arg3;
   closure_4 = arg4;
+  closure_5 = arg5;
   signal = signal.signal;
   let aborted;
   if (signal != null) {
@@ -28,12 +29,14 @@ function sendRequest(arg0, signal) {
   if (aborted) {
     const _Object = Object;
     const _Error = Error;
-    error = new Error("Request aborted");
+    let obj = { cause: null };
+    obj[0] = arg5;
+    error = new Error("Request aborted", obj);
     let merged = Object.assign(error, { code: "ABORTED" });
     cleanupRequestEntry(signal);
     arg3(merged);
     if (null != arg4) {
-      let obj = { ok: false, hasErr: true, err: null };
+      obj = { ok: false, hasErr: true, err: null };
       obj[2] = merged;
       arg4(obj);
     }
@@ -126,6 +129,7 @@ function sendRequest(arg0, signal) {
         prepareRequestResult = prepareRequest(promise);
       }
     }
+    cleanupRequestEntry = prepareRequestResult;
     promise.ok((status) => null != status.status);
     promise.then((ok) => {
       if (null != signal.retries) {
@@ -147,7 +151,7 @@ function sendRequest(arg0, signal) {
             }
             tmp.retried = num5 + 1;
             const backoff2 = tmp.backoff;
-            backoff2.fail(() => closure_1_11(url.url).then(() => closure_1_7(closure_0, closure_1, closure_2, closure_3, closure_4)));
+            backoff2.fail(() => closure_1_11(url.url).then(() => closure_1_7(closure_0, closure_1, closure_2, closure_3, closure_4, closure_5)));
           }
         }
       }
@@ -169,7 +173,7 @@ function sendRequest(arg0, signal) {
         let parsed = parseInt(prop, 10);
         const _Number = Number;
         obj[5] = parsed;
-        closure_1_9(tmp, obj);
+        prepareRequestResult(tmp, obj);
         c0 = false;
         function interceptRetry(arg0, interceptResponse) {
           obj = {};
@@ -180,7 +184,7 @@ function sendRequest(arg0, signal) {
           obj.headers = obj;
           obj.interceptResponse = interceptResponse;
           c0 = true;
-          retry(c0, obj, closure_1_2, closure_1_3, closure_1_4);
+          obj(c0, obj, closure_1_2, closure_1_3, closure_1_4, closure_1_5);
         }
         function interceptCancel(arg0) {
           if (!c0) {
@@ -202,9 +206,9 @@ function sendRequest(arg0, signal) {
         if (true !== interceptResponseResult) {
           let interceptResponse2Result;
           if (closure_1_10 != null) {
-            const interceptResponse2 = tmp43.interceptResponse;
+            const interceptResponse2 = tmp44.interceptResponse;
             if (interceptResponse2 != null) {
-              interceptResponse2Result = interceptResponse2(ok, interceptRetry, interceptCancel, closure_8);
+              interceptResponse2Result = interceptResponse2(ok, interceptRetry, interceptCancel, closure_9);
             }
           }
           if (true !== interceptResponse2Result) {
@@ -231,7 +235,11 @@ function sendRequest(arg0, signal) {
                 obj[0] = c0;
                 obj[1] = tmp.url;
                 ({ status: obj3[2], body: obj3[3], text: obj3[4], headers: obj3[5], retryAfter: obj3[6] } = obj);
-                callback2(new obj(obj));
+                const tmp26 = new promise(obj);
+                if (null != closure_5) {
+                  tmp26.cause = closure_5;
+                }
+                callback2(tmp26);
               } else {
                 callback2(obj);
               }
@@ -239,7 +247,7 @@ function sendRequest(arg0, signal) {
             if (null != set) {
               obj = { hasErr: false };
               let merged = Object.assign(obj);
-              tmp30(obj);
+              tmp31(obj);
             }
           }
         }
@@ -277,16 +285,23 @@ function sendRequest(arg0, signal) {
             }
             tmp.retried = num2 + 1;
             const backoff2 = tmp.backoff;
-            backoff2.fail(() => closure_1_11(url.url).then(() => closure_1_7(closure_0, closure_1, closure_2, closure_3, closure_4)));
+            backoff2.fail(() => closure_1_11(url.url).then(() => closure_1_7(closure_0, closure_1, closure_2, closure_3, closure_4, closure_5)));
           }
         }
       }
-      closure_1_9(signal);
+      prepareRequestResult(signal);
+      let tmp5 = null != closure_5;
+      if (tmp5) {
+        tmp5 = null == code.cause;
+      }
+      if (tmp5) {
+        code.cause = closure_5;
+      }
       callback2(code);
       if (null != closure_4) {
         obj = { ok: false, hasErr: true, err: null };
         obj[2] = code;
-        tmp5(obj);
+        tmp7(obj);
       }
     });
     const signal2 = signal.signal;
@@ -429,10 +444,11 @@ function cleanupRequestEntry(url) {
     }
   }
 }
-function makeRequest(arg0, arg1, arg2) {
-  closure_0 = arg0;
+function makeRequest(str) {
+  closure_0 = str;
   closure_1 = arg1;
   closure_2 = arg2;
+  error = new Error("HTTP " + str.toUpperCase() + " initiated here");
   return new Promise((serializer, bindResult) => {
     if (typeof obj === "string") {
       obj = { url: null, rejectWithError: false };
@@ -459,11 +475,11 @@ function makeRequest(arg0, arg1, arg2) {
       }
     }
     if (null != value) {
-      closure_1_3.verbose("makeRequest: queueing request for ", obj.url);
+      error.verbose("makeRequest: queueing request for ", obj.url);
       const queue = value.queue;
-      queue.push(closure_1_7.bind(null, closure_0, obj, serializer, bindResult, closure_2));
+      queue.push(closure_1_7.bind(null, closure_0, obj, serializer, bindResult, closure_2, error));
     } else {
-      closure_1_7(closure_0, obj, serializer, bindResult, closure_2);
+      closure_1_7(closure_0, obj, serializer, bindResult, closure_2, error);
     }
   });
 }

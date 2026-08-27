@@ -1,14 +1,14 @@
-// Module ID: 15181
-// Function ID: 15182
+// Module ID: 15245
+// Function ID: 15246
 // Name: route
-// Dependencies: [676, 10584, 1236, 4163, 15182, 2]
+// Dependencies: [676, 10988, 1236, 4163, 15246, 2]
 
-// Module 15181 (route)
+// Module 15245 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import FriendsIcon from "FriendsIcon" /* 4163 */;
-import createToggle from "createToggle" /* 10584 */;
+import createToggle from "createToggle" /* 10988 */;
 
 obj = {
   useTitle() {
@@ -22,7 +22,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.CONTENT_AND_SOCIAL,
   getComponent() {
-    return require(15182) /* ContentAndSocialSettings */.default;
+    return require(15246) /* ContentAndSocialSettings */.default;
   }
 };
 const route = createToggle.createRoute(obj);

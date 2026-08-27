@@ -1,9 +1,9 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 15881
+// Function ID: 15882
 // Name: componentDidMount
-// Dependencies: [19, 17, 21, 5543, 2]
+// Dependencies: [19, 17, 21, 5548, 2]
 
-// Module 15816 (componentDidMount)
+// Module 15881 (componentDidMount)
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -267,11 +267,11 @@ class SortableListView extends Component {
         sum = bound + 1;
       }
       if (sum !== obj.state.hoverIndex) {
-        const result = lib(5543).DeprecatedLayoutAnimation();
+        const result = lib(5548).DeprecatedLayoutAnimation();
         obj = { hovering: true, hoverIndex: null };
         obj[1] = sum;
         obj.setState(obj);
-        const obj2 = lib(5543);
+        const obj2 = lib(5548);
       }
     };
     tmp2.cancel = function cancel() {
@@ -434,7 +434,7 @@ class SortableListView extends Component {
                 if (hoverIndex > index) {
                   diff = hoverIndex - 1;
                 }
-                obj1 = lib(5543);
+                obj1 = lib(5548);
                 const result = obj1.DeprecatedLayoutAnimation({ duration: 0 });
                 const props2 = obj.props;
                 const onRowMoved = props2.onRowMoved;

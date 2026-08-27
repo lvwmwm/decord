@@ -1,18 +1,18 @@
-// Module ID: 11290
-// Function ID: 11291
+// Module ID: 11169
+// Function ID: 11170
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 4444, 5331, 11291, 1297, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4445, 5336, 11170, 1297, 1236, 2]
 // Exports: default
 
-// Module 11290 (PublishModal)
+// Module 11169 (PublishModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11291 */;
+import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 11170 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;

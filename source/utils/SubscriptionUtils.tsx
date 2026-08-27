@@ -1,15 +1,15 @@
-// Module ID: 10556
-// Function ID: 10557
+// Module ID: 8420
+// Function ID: 8421
 // Name: getSubscriptionPlans
-// Dependencies: [32, 19, 4112, 676, 1924, 38, 10557, 4107, 6050, 589, 10559, 4043, 2]
+// Dependencies: [32, 19, 4112, 676, 1924, 38, 8421, 4107, 6056, 589, 8423, 4043, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 10556 (getSubscriptionPlans)
+// Module 8420 (getSubscriptionPlans)
 import _modDef38 from "module_38" /* 38 */;
 import hooksDefault from "hooks" /* 4043 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
-import prototype from "prototype" /* 10557 */;
-import PauseDuration from "PauseDuration" /* 10559 */;
+import prototype from "prototype" /* 8421 */;
+import PauseDuration from "PauseDuration" /* 8423 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "addSubscriptionPlan" /* 4112 */;
@@ -102,8 +102,8 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     const tmp9 = null != table[subscriptionPlanId];
     const result = getPremiumPlanItem.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     if (!closure_5.isFetchingForSKU(result)) {
-      const subscriptionPlansForSKU = tmp12(6050).fetchSubscriptionPlansForSKU(result, closure_1);
-      const tmp12Result = tmp12(6050);
+      const subscriptionPlansForSKU = tmp12(6056).fetchSubscriptionPlansForSKU(result, closure_1);
+      const tmp12Result = tmp12(6056);
     }
     const obj3 = getPremiumPlanItem;
   }

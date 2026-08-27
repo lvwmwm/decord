@@ -1,14 +1,14 @@
-// Module ID: 6423
-// Function ID: 6424
+// Module ID: 6429
+// Function ID: 6430
 // Name: DisplayNameStylesV2AbstractUI
-// Dependencies: [21, 5440, 6424, 2]
+// Dependencies: [21, 5445, 6430, 2]
 // Exports: DisplayNameStylesV2AbstractUI
 
-// Module 6423 (DisplayNameStylesV2AbstractUI)
+// Module 6429 (DisplayNameStylesV2AbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6424 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6430 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameStylesV2AbstractUI.native.tsx");

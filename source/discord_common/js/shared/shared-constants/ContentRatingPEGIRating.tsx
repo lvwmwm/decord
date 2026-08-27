@@ -1,9 +1,9 @@
-// Module ID: 5011
-// Function ID: 5012
+// Module ID: 5016
+// Function ID: 5017
 // Name: set
 // Dependencies: [2]
 
-// Module 5011 (set)
+// Module 5016 (set)
 import set from "set" /* 2 */;
 
 const obj = { ALL: null, IS_ADULT_ONLY: null };

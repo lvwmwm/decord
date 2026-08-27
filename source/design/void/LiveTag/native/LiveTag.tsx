@@ -1,17 +1,17 @@
-// Module ID: 13652
-// Function ID: 13653
+// Module ID: 13679
+// Function ID: 13680
 // Name: LiveTag
-// Dependencies: [19, 17, 21, 4444, 712, 500, 4440, 1236, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 500, 4441, 1236, 2]
 // Exports: default
 
-// Module 13652 (LiveTag)
+// Module 13679 (LiveTag)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
+import Text from "Text" /* 4441 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import set from "set" /* 500 */;
 
 require = arg1;

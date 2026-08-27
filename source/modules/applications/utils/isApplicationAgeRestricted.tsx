@@ -1,13 +1,13 @@
-// Module ID: 9757
-// Function ID: 9758
+// Module ID: 8363
+// Function ID: 8364
 // Name: isApplicationAgeRestricted
-// Dependencies: [4485, 9758, 5005, 2]
+// Dependencies: [4486, 8364, 5010, 2]
 // Exports: default
 
-// Module 9757 (isApplicationAgeRestricted)
-import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5005 */;
-import getUnitIdDefault from "getUnitId" /* 9758 */;
-import closure_3 from "addApplication" /* 4485 */;
+// Module 8363 (isApplicationAgeRestricted)
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5010 */;
+import getUnitIdDefault from "getUnitId" /* 8364 */;
+import closure_3 from "addApplication" /* 4486 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/applications/utils/isApplicationAgeRestricted.tsx");

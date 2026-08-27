@@ -1,8 +1,8 @@
-// Module ID: 14683
-// Function ID: 14684
-// Dependencies: [19, 17, 21, 4868, 2]
+// Module ID: 14710
+// Function ID: 14711
+// Dependencies: [19, 17, 21, 4869, 2]
 
-// Module 14683
+// Module 14710
 import importAllResult from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo(function QuestDockBlurredContentBackgrou
     return str;
   }, items1);
   const style = [StyleSheet.absoluteFillObject, animatedStyle];
-  return jsx(str(4868), { nativeID: "quest-dock-blurred-background", tintColor, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor, style, layout });
+  return jsx(str(4869), { nativeID: "quest-dock-blurred-background", tintColor, blurAmount: 0.5, blurTheme: "dark", android_fallbackColor, style, layout });
 });
 const result = require("set").fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBlurredContentBackground.tsx");
 

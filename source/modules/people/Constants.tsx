@@ -1,9 +1,9 @@
-// Module ID: 9853
-// Function ID: 9854
+// Module ID: 9000
+// Function ID: 9001
 // Name: RELATIONSHIP_COUNT_ANIMATION_THRESHOLD
 // Dependencies: [2]
 
-// Module 9853 (RELATIONSHIP_COUNT_ANIMATION_THRESHOLD)
+// Module 9000 (RELATIONSHIP_COUNT_ANIMATION_THRESHOLD)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/people/Constants.tsx");

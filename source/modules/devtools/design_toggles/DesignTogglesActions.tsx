@@ -1,12 +1,12 @@
-// Module ID: 15335
-// Function ID: 15336
+// Module ID: 15399
+// Function ID: 15400
 // Name: toggle
-// Dependencies: [5445, 709, 2]
+// Dependencies: [5450, 709, 2]
 // Exports: clearAll, toggle
 
-// Module 15335 (toggle)
+// Module 15399 (toggle)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "getUserAgnosticState" /* 5445 */;
+import closure_2 from "getUserAgnosticState" /* 5450 */;
 
 const result = require("set").fileFinishedImporting("modules/devtools/design_toggles/DesignTogglesActions.tsx");
 

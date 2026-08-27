@@ -1,9 +1,9 @@
-// Module ID: 5357
-// Function ID: 5358
+// Module ID: 5362
+// Function ID: 5363
 // Name: setParams
 // Dependencies: [2]
 
-// Module 5357 (setParams)
+// Module 5362 (setParams)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/emoji_terms/LazyPromiseInitializer.tsx");

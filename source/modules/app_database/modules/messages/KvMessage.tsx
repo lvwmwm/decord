@@ -1,9 +1,9 @@
-// Module ID: 7159
-// Function ID: 7160
+// Module ID: 7165
+// Function ID: 7166
 // Name: fromMessage
 // Dependencies: [32, 1992, 1922, 676, 2]
 
-// Module 7159 (fromMessage)
+// Module 7165 (fromMessage)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "trackCommunicationDisabled" /* 1992 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;

@@ -1,15 +1,15 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 7874
+// Function ID: 7875
 // Name: getTagProperties
-// Dependencies: [17, 4437, 8361, 1236, 8363, 8365, 2]
+// Dependencies: [17, 4438, 7875, 1236, 7877, 7879, 2]
 // Exports: default
 
-// Module 8360 (getTagProperties)
+// Module 7874 (getTagProperties)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4437 */;
-import isPublicSystemMessage from "isPublicSystemMessage" /* 8361 */;
-import isCrosspostDefault from "isCrosspost" /* 8363 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4438 */;
+import isPublicSystemMessage from "isPublicSystemMessage" /* 7875 */;
+import isCrosspostDefault from "isCrosspost" /* 7877 */;
 
 const Image = get_ActivityIndicator.Image;
 const MessageTagTypes = MESSAGE_GROUP_SPACING.MessageTagTypes;
@@ -38,7 +38,7 @@ export default function getTagProperties(arg0) {
           const intl = tmp2(1236).intl;
           let uri;
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(8365)).uri;
+            uri = Image.resolveAssetSource(tmp4(7879)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = intl.string(tmp2(1236).t["9RNkeF"]);
@@ -66,7 +66,7 @@ export default function getTagProperties(arg0) {
         const intl6 = tmp2(1236).intl;
         stringResult2 = intl6.string(tmp2(1236).t.fyE8sH);
       }
-      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "alignItems", tagType: null, tagIconUrl: null, opTagText: null, opTagTextColor: null, opTagBackgroundColor: null };
+      obj = { tagText: null, tagAccessibilityLabel: null, tagVerified: null, tagTextColor: "Boolean", tagBackgroundColor: "paddingHorizontal", tagType: false, tagIconUrl: false, opTagText: false, opTagTextColor: false, opTagBackgroundColor: false };
       obj[0] = stringResult;
       obj[1] = null;
       obj[2] = flag;
@@ -93,7 +93,7 @@ export default function getTagProperties(arg0) {
       }
       const intl5 = tmp2(1236).intl;
       stringResult3 = intl5.string(tmp2(1236).t["7s687k"]);
-      tmp2Result = tmp2(8361);
+      tmp2Result = tmp2(7875);
     }
   }
   const intl3 = tmp2(1236).intl;

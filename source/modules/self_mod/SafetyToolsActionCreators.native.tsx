@@ -1,13 +1,13 @@
-// Module ID: 10510
-// Function ID: 10511
+// Module ID: 10945
+// Function ID: 10946
 // Name: openSafetyToolsActionSheet
-// Dependencies: [10474, 4411, 10511, 2009, 2]
+// Dependencies: [10920, 4412, 10946, 2009, 2]
 // Exports: openSafetyToolsActionSheet
 
-// Module 10510 (openSafetyToolsActionSheet)
+// Module 10945 (openSafetyToolsActionSheet)
 import set from "set" /* 2 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
-import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 10474 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4412 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 10920 */;
 
 let closure_3 = LOCATION_CONTEXT_MOBILE.getSafetyToolsActionSheetKey;
 const result = set.fileFinishedImporting("modules/self_mod/SafetyToolsActionCreators.native.tsx");
@@ -25,5 +25,5 @@ export const openSafetyToolsActionSheet = function openSafetyToolsActionSheet(ch
       closure_1_1(closure_1_2[1]).hideActionSheet(closure_0);
     }
   };
-  obj.openLazy(_require(2009)(10511, dependencyMap.paths), tmp, obj);
+  obj.openLazy(_require(2009)(10946, dependencyMap.paths), tmp, obj);
 };

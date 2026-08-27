@@ -1,21 +1,21 @@
-// Module ID: 15469
-// Function ID: 15470
+// Module ID: 15534
+// Function ID: 15535
 // Name: MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING
-// Dependencies: [19, 17, 4533, 4459, 4098, 1981, 4653, 1922, 676, 21, 4444, 712, 589, 1367, 15470, 9029, 500, 4457, 4455, 9883, 5015, 9248, 9605, 15471, 4139, 8515, 15472, 8523, 15473, 2]
+// Dependencies: [19, 17, 4534, 4460, 4098, 1981, 4654, 1922, 676, 21, 4445, 712, 589, 1367, 15535, 8828, 500, 4458, 4456, 10571, 5020, 9346, 8454, 15536, 4139, 8031, 15537, 8040, 15538, 2]
 
-// Module 15469 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
+// Module 15534 (MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "sortActivity" /* 4533 */;
-import closure_6 from "generateOldThreadCutoff" /* 4459 */;
+import closure_5 from "sortActivity" /* 4534 */;
+import closure_6 from "generateOldThreadCutoff" /* 4460 */;
 import closure_7 from "markAllUserIdListsStale" /* 4098 */;
 import closure_8 from "handleConnectionOpen" /* 1981 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4653 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4654 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -183,7 +183,7 @@ const memoResult = importAllResult.memo(function MessagesItemChannelBase(channel
   const callback3 = obj1.useCallback(() => {
     const result = channel(isPressed[19]).openChannelLongPressActionSheet(channel.id);
   }, items12);
-  obj = { onPressIn: callback, onPressOut: callback1, onPress: callback2, onLongPress: callback3, accessibilityRole: "button", accessibilityLabel: tmp4(tmp2[21])({ channel, unread: hasUnreadMessages, mentionCount, isIncomingCall, isOngoingCall }), accessibilityHint: null, underlayColor: null, style: null, children: null };
+  obj = { onPressIn: callback, onPressOut: callback1, onPress: callback2, onLongPress: callback3, accessibilityRole: "button", accessibilityLabel: tmp4(tmp2[21])({ channel, unread: hasUnreadMessages, mentionCount, isIncomingCall, isOngoingCall, ignored, blocked }), accessibilityHint: null, underlayColor: null, style: null, children: null };
   const obj8 = channel(isPressed[15]);
   const tmp24 = closure_13;
   obj[6] = channel(isPressed[21]).getChannelA11yHint({ channel, muted, userStatus: status, isFavorite: favorite });

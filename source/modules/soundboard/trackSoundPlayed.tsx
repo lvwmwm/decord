@@ -1,16 +1,16 @@
-// Module ID: 6162
-// Function ID: 6163
+// Module ID: 6168
+// Function ID: 6169
 // Name: trackSoundPlayed
-// Dependencies: [4467, 1391, 4518, 1981, 4918, 676, 1924, 698, 2]
+// Dependencies: [4468, 1391, 4519, 1981, 4919, 676, 1924, 698, 2]
 // Exports: default
 
-// Module 6162 (trackSoundPlayed)
+// Module 6168 (trackSoundPlayed)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_2 from "initialize" /* 4467 */;
+import closure_2 from "initialize" /* 4468 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "createRTCConnection" /* 4518 */;
+import closure_4 from "createRTCConnection" /* 4519 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4918 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4919 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 

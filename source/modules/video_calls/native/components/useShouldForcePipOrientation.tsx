@@ -1,16 +1,16 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 9459
+// Function ID: 9460
 // Name: useShouldForcePipOrientation
-// Dependencies: [1390, 4460, 1218, 4472, 4465, 10819, 589, 10798, 9110, 2]
+// Dependencies: [1390, 4461, 1218, 4473, 4466, 9460, 589, 9411, 8534, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10818 (useShouldForcePipOrientation)
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 10819 */;
+// Module 9459 (useShouldForcePipOrientation)
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 9460 */;
 import closure_3 from "participantFromServer" /* 1390 */;
-import closure_4 from "getParticipants" /* 4460 */;
+import closure_4 from "getParticipants" /* 4461 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import { OrientationLockState } from "items3" /* 4472 */;
-import ParticipantTypes from "ParticipantTypes" /* 4465 */;
+import { OrientationLockState } from "items3" /* 4473 */;
+import ParticipantTypes from "ParticipantTypes" /* 4466 */;
 
 const require = arg1;
 ({ isStreamParticipant: error, ParticipantTypes: closure_8 } = ParticipantTypes);
@@ -82,17 +82,17 @@ export const useShouldForcePipOrientation = function useShouldForcePipOrientatio
   if (null != focusedEmbeddedActivityParticipant) {
     if (callback(focusedEmbeddedActivityParticipant)) {
       if (null == stateFromStores) {
-        return tmp2(9110).OrientationType.LANDSCAPE;
+        return tmp2(8534).OrientationType.LANDSCAPE;
       }
     }
   }
   if (activityLockOrientation === OrientationLockState.LANDSCAPE) {
-    OrientationType = tmp2(9110).OrientationType;
+    OrientationType = tmp2(8534).OrientationType;
     let LANDSCAPE = OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE = null;
     if (activityLockOrientation === tmp8.PORTRAIT) {
-      LANDSCAPE = tmp2(9110).OrientationType.PORTRAIT;
+      LANDSCAPE = tmp2(8534).OrientationType.PORTRAIT;
     }
   }
 };

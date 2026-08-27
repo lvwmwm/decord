@@ -1,18 +1,18 @@
-// Module ID: 15961
-// Function ID: 15962
+// Module ID: 16026
+// Function ID: 16027
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 12047, 676, 1388, 21, 4444, 712, 698, 4411, 12048, 5569, 6202, 4440, 5323, 4879, 1236, 2]
+// Dependencies: [19, 17, 11893, 676, 1388, 21, 4445, 712, 698, 4412, 11894, 5574, 6208, 4441, 5328, 4880, 1236, 2]
 // Exports: default
 
-// Module 15961 (NotificationNudgeBottomSheet)
+// Module 16026 (NotificationNudgeBottomSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import EventActionType from "EventActionType" /* 12047 */;
+import EventActionType from "EventActionType" /* 11893 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ EventActionType: c5, NotificationNudgeAnalyticsAction: closure_6 } = EventActionType);

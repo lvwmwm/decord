@@ -1,12 +1,12 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16173
+// Function ID: 16174
 // Name: createSearchResultLinkPreviewReactRules
-// Dependencies: [10016, 2]
+// Dependencies: [10120, 2]
 // Exports: createSearchResultLinkPreviewReactRules
 
-// Module 16110 (createSearchResultLinkPreviewReactRules)
+// Module 16173 (createSearchResultLinkPreviewReactRules)
 import set from "set" /* 2 */;
-import defaultReactFn from "defaultReactFn" /* 10016 */;
+import defaultReactFn from "defaultReactFn" /* 10120 */;
 
 const result = set.fileFinishedImporting("modules/markup/native/MarkupSearchResultLinkPreviewReactRules.tsx");
 

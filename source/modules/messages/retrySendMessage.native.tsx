@@ -1,13 +1,13 @@
-// Module ID: 11296
-// Function ID: 11297
+// Module ID: 11175
+// Function ID: 11176
 // Name: retrySendMessage
-// Dependencies: [4437, 7129, 10212, 5019, 8581, 2]
+// Dependencies: [4438, 7135, 8370, 5024, 8097, 2]
 // Exports: default
 
-// Module 11296 (retrySendMessage)
+// Module 11175 (retrySendMessage)
 import set from "set" /* 2 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4437 */;
-import trackInviteDefault from "trackInvite" /* 7129 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4438 */;
+import trackInviteDefault from "trackInvite" /* 7135 */;
 
 const MessageSendLocation = MESSAGE_GROUP_SPACING.MessageSendLocation;
 let result = set.fileFinishedImporting("modules/messages/retrySendMessage.native.tsx");
@@ -21,8 +21,8 @@ export default function retrySendMessage(id, id2, arr) {
   trackInviteDefault.deleteMessage(id.id, id2.id, true);
   if (id2.isCommandType()) {
     if (tmp17) {
-      _require(10212).retryCommandMessage(id2, id, obj);
-      const obj6 = _require(10212);
+      _require(8370).retryCommandMessage(id2, id, obj);
+      const obj6 = _require(8370);
     }
     tmp17 = null != id2.interactionData && null != obj.applicationId;
   } else {

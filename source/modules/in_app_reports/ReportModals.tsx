@@ -1,14 +1,14 @@
-// Module ID: 8238
-// Function ID: 8239
+// Module ID: 8681
+// Function ID: 8682
 // Name: _submitHamReportForFirstDM
-// Dependencies: [5, 1396, 4099, 1930, 676, 8239, 8240, 8242, 1430, 4652, 2]
+// Dependencies: [5, 1396, 4099, 1930, 676, 8682, 8683, 8685, 1430, 4653, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8238 (_submitHamReportForFirstDM)
+// Module 8681 (_submitHamReportForFirstDM)
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4652 */;
-import ReportNames from "ReportNames" /* 8239 */;
-import _showReportModal from "_showReportModal" /* 8240 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4653 */;
+import ReportNames from "ReportNames" /* 8682 */;
+import _showReportModal from "_showReportModal" /* 8683 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
 import closure_5 from "hasFlag" /* 4099 */;
@@ -72,9 +72,9 @@ function _submitReportForInappropriateConversationSafetyAlert() {
       callback2 = dependencyMap;
       c5 = 1;
       obj1 = { name: null, record: null };
-      obj1[0] = callback(8239).ReportNames.MESSAGE;
+      obj1[0] = callback(8682).ReportNames.MESSAGE;
       obj1[1] = callback;
-      yield callback(8242).submitHeadlessReport(obj1, { variant: "safety_alerts_headless_v1" });
+      yield callback(8685).submitHeadlessReport(obj1, { variant: "safety_alerts_headless_v1" });
       if (1 === tmp7) {
         c5 = 0;
         if (callback2 != null) {
@@ -181,7 +181,7 @@ export const showReportModalForGuildScheduledEvent = function showReportModalFor
   obj = { report_type: ReportNames.ReportNames.GUILD_SCHEDULED_EVENT };
   const merged = Object.assign(obj);
   obj1.trackWithMetadata(AnalyticEvents.IAR_MODAL_OPEN, obj);
-  obj = { name: tmp(8239).ReportNames.GUILD_SCHEDULED_EVENT, record: closure_0 };
+  obj = { name: tmp(8682).ReportNames.GUILD_SCHEDULED_EVENT, record: closure_0 };
   obj1 = { onSubmit: arg1 };
   _showReportModal.showReportModal(obj, {}, obj1);
 };

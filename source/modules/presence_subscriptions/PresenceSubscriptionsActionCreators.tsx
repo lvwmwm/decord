@@ -1,10 +1,10 @@
-// Module ID: 10591
-// Function ID: 10592
+// Module ID: 10995
+// Function ID: 10996
 // Name: subscribe
 // Dependencies: [709, 2]
 // Exports: subscribe
 
-// Module 10591 (subscribe)
+// Module 10995 (subscribe)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

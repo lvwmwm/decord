@@ -1,26 +1,26 @@
-// Module ID: 9926
-// Function ID: 9927
+// Module ID: 10225
+// Function ID: 10226
 // Name: getNextPositionFromChannels
-// Dependencies: [5, 1383, 1395, 1391, 4089, 1981, 4266, 1394, 1429, 676, 505, 1306, 1337, 12, 9927, 9930, 4808, 1236, 1374, 11, 9933, 9934, 1913, 1222, 9935, 9936, 9938, 2]
+// Dependencies: [5, 1383, 1395, 1391, 4089, 1981, 4267, 1394, 1429, 676, 505, 1306, 1337, 12, 10226, 10229, 4809, 1236, 1374, 11, 10233, 10234, 1913, 1222, 10235, 10236, 10238, 2]
 // Exports: addFavoriteCategory, addFavoriteChannels, addFavoriteChannelsToCategory, autoAddJoinedThreadToFavorites, removeFavoriteCategory, resetFavoritesGuild, setFavoriteCategoriesCollapsed, setFavoriteChannelNickname, setFavoritesAutoAddJoinedThreads, setFavoritesGuildVisibility, setFavoritesGuildVisibilityFromSettings, toggleFavoriteGuildMuted, updateFavoriteChannelParent, updateFavoriteChannels
 
-// Module 9926 (getNextPositionFromChannels)
+// Module 10225 (getNextPositionFromChannels)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import create from "create" /* 1306 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
-import setDefault from "set" /* 4808 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 9927 */;
-import handleDCShownToUser from "handleDCShownToUser" /* 9935 */;
-import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 9936 */;
+import setDefault from "set" /* 4809 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10226 */;
+import handleDCShownToUser from "handleDCShownToUser" /* 10235 */;
+import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10236 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { resetFatigueCooldown } from "withContent" /* 1383 */;
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_8 from "handleConnectionOpen" /* 1981 */;
-import closure_9 from "handleConnectionOpen" /* 4266 */;
+import closure_9 from "handleConnectionOpen" /* 4267 */;
 import closure_10 from "initializeFromUserSettings" /* 1394 */;
 import ME from "ME" /* 676 */;
 import { Permissions } from "sum" /* 505 */;
@@ -156,7 +156,7 @@ function getReachedLimit(arg0, arg1) {
 function showLimitReachedAlert(limit) {
   limit = limit.limit;
   if (limit.canUpsell) {
-    tmp(9930)(limit);
+    tmp(10229)(limit);
   } else {
     let obj = { title: null, body: null };
     const intl = getSystemLocale.intl;
@@ -165,8 +165,8 @@ function showLimitReachedAlert(limit) {
     obj = { count: null };
     obj[0] = limit;
     obj[1] = intl2.formatToPlainString(getSystemLocale.t.JaIyFi, obj);
-    tmp(4808).show(obj);
-    const tmpResult = tmp(4808);
+    tmp(4809).show(obj);
+    const tmpResult = tmp(4809);
   }
 }
 function onSaveFailed(status) {
@@ -429,7 +429,7 @@ function _addFavoriteChannelsToParent() {
                         flag = true;
                         let tmp47 = callback;
                         let tmp48 = dependencyMap;
-                        let obj3 = callback(9933);
+                        let obj3 = callback(10233);
                         let tmp50 = channel;
                         let type;
                         let tmp49 = dependencyMap;
@@ -457,7 +457,7 @@ function _addFavoriteChannelsToParent() {
                         favoriteChannels.guildVisible = BoolValue.create({ value: true });
                         let tmp63 = callback;
                         let tmp64 = dependencyMap;
-                        let obj4 = callback(9933);
+                        let obj4 = callback(10233);
                         let str = "auto";
                         let result1 = obj4.trackFavoritesGuildVisibilitySettingToggled("auto", true);
                       }

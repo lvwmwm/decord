@@ -1,32 +1,32 @@
-// Module ID: 8904
-// Function ID: 8905
+// Module ID: 8109
+// Function ID: 8110
 // Name: PremiumUpsellItem
-// Dependencies: [32, 19, 17, 1304, 1922, 676, 7874, 1924, 21, 4444, 712, 4172, 4440, 7120, 1236, 4107, 8586, 8587, 4379, 1363, 8905, 8906, 8907, 8908, 8575, 8909, 8910, 8911, 8912, 589, 5940, 8913, 8585, 1494, 5900, 5920, 4896, 698, 8914, 4338, 4898, 1297, 5440, 8915, 8916, 8589, 2]
+// Dependencies: [32, 19, 17, 1304, 1922, 676, 8110, 1924, 21, 4445, 712, 4172, 4441, 7126, 1236, 4107, 8102, 8103, 4380, 1363, 8137, 8138, 8139, 8140, 8092, 8141, 8142, 8143, 8144, 589, 5945, 8145, 8101, 1494, 5905, 5925, 4897, 698, 8146, 4339, 4899, 1297, 5445, 8147, 8148, 8105, 2]
 
-// Module 8904 (PremiumUpsellItem)
+// Module 8109 (PremiumUpsellItem)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
-import useThemeDefault from "useTheme" /* 4379 */;
-import Text from "Text" /* 4440 */;
-import createCacheKey2 from "createCacheKey" /* 4444 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7120 */;
-import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8575 */;
-import registerAssetDefault from "registerAsset" /* 8586 */;
-import registerAssetDefault2 from "registerAsset" /* 8587 */;
-import registerAssetDefault3 from "registerAsset" /* 8907 */;
-import registerAssetDefault4 from "registerAsset" /* 8908 */;
+import useThemeDefault from "useTheme" /* 4380 */;
+import Text from "Text" /* 4441 */;
+import createCacheKey2 from "createCacheKey" /* 4445 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7126 */;
+import useMessageMaxLengthDefault from "useMessageMaxLength" /* 8092 */;
+import registerAssetDefault from "registerAsset" /* 8102 */;
+import registerAssetDefault2 from "registerAsset" /* 8103 */;
+import registerAssetDefault3 from "registerAsset" /* 8139 */;
+import registerAssetDefault4 from "registerAsset" /* 8140 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { getIcons } from "items" /* 7874 */;
+import { getIcons } from "items" /* 8110 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 class PremiumUpsellItem {
@@ -131,9 +131,9 @@ function PremiumGuildIdentityUpsell(alertWidth) {
   const tmp6 = closure_14;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8905);
+    let tmp4Result = tmp4(8137);
   } else {
-    tmp4Result = tmp4(8906);
+    tmp4Result = tmp4(8138);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1236).intl;
@@ -208,9 +208,9 @@ function LongerMessageUpsell(alertWidth) {
   const tmp7 = closure_14;
   const tmp8 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8909);
+    let tmp4Result = tmp4(8141);
   } else {
-    tmp4Result = tmp4(8910);
+    tmp4Result = tmp4(8142);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1236).intl;
@@ -228,9 +228,9 @@ function GuildCapUpsell(alertWidth) {
   const tmp6 = closure_14;
   const tmp7 = PremiumUpsellItem;
   if (obj3.isThemeDark(tmp5)) {
-    let tmp4Result = tmp4(8911);
+    let tmp4Result = tmp4(8143);
   } else {
-    tmp4Result = tmp4(8912);
+    tmp4Result = tmp4(8144);
   }
   obj = { image: tmp4Result, title: null, description: null };
   const intl = tmp(1236).intl;
@@ -259,7 +259,7 @@ function UploadUpsell(arg0) {
       obj = { dataSavingMode };
       const result = obj.updatedUnsyncedSettings(obj);
     };
-    tmp6Result = callback2(tmp(5940).TableSwitchRow, obj);
+    tmp6Result = callback2(tmp(5945).TableSwitchRow, obj);
   }
   children[1] = tmp6Result;
   return closure_15(closure_16, { children });

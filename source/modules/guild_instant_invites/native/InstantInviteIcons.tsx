@@ -1,18 +1,18 @@
-// Module ID: 9907
-// Function ID: 9908
+// Module ID: 10594
+// Function ID: 10595
 // Name: get more
-// Dependencies: [17, 9908, 9909, 9910, 9310, 2]
+// Dependencies: [17, 10595, 10596, 10597, 9871, 2]
 
-// Module 9907 (get more)
+// Module 10594 (get more)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
 const Platform = get_ActivityIndicator.Platform;
 const obj = {};
-Object.defineProperty(obj, "more", { get: () => require(9908) /* registerAsset */, set: undefined });
-Object.defineProperty(obj, "share", { get: () => require(9909) /* registerAsset */, set: undefined });
-Object.defineProperty(obj, "revoke", { get: () => require(9910) /* registerAsset */, set: undefined });
-Object.defineProperty(obj, "copy", { get: () => require(9310) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "more", { get: () => require(10595) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "share", { get: () => require(10596) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "revoke", { get: () => require(10597) /* registerAsset */, set: undefined });
+Object.defineProperty(obj, "copy", { get: () => require(9871) /* registerAsset */, set: undefined });
 const frozen = Object.freeze(obj);
 const result = set.fileFinishedImporting("modules/guild_instant_invites/native/InstantInviteIcons.tsx");
 

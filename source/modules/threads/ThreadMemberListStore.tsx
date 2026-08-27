@@ -1,21 +1,21 @@
-// Module ID: 7520
-// Function ID: 7521
+// Module ID: 9846
+// Function ID: 9847
 // Name: handleUserUpdate
-// Dependencies: [32, 1391, 1992, 6069, 4533, 5170, 1922, 676, 12, 11, 4094, 4288, 1370, 589, 709, 2]
+// Dependencies: [32, 1391, 1992, 6077, 4534, 5175, 1922, 676, 12, 11, 4094, 4289, 1370, 589, 709, 2]
 
-// Module 7520 (handleUserUpdate)
+// Module 9846 (handleUserUpdate)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import applyOverwritesAll from "applyOverwrites" /* 4094 */;
-import nameFromUserDefault from "nameFromUser" /* 4288 */;
+import nameFromUserDefault from "nameFromUser" /* 4289 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import closure_7 from "handleConnectionOpenOrResumed" /* 6069 */;
-import closure_8 from "sortActivity" /* 4533 */;
-import closure_9 from "filterPlayingActivities" /* 5170 */;
+import closure_7 from "handleConnectionOpenOrResumed" /* 6077 */;
+import closure_8 from "sortActivity" /* 4534 */;
+import closure_9 from "filterPlayingActivities" /* 5175 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

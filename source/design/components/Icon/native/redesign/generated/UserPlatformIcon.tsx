@@ -1,14 +1,14 @@
-// Module ID: 4383
-// Function ID: 4384
+// Module ID: 4384
+// Function ID: 4385
 // Name: UserPlatformIcon
-// Dependencies: [19, 21, 712, 4164, 4384, 2]
+// Dependencies: [19, 21, 712, 4164, 4385, 2]
 // Exports: UserPlatformIcon
 
-// Module 4383 (UserPlatformIcon)
+// Module 4384 (UserPlatformIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4384 */;
+import registerAsset from "registerAsset" /* 4385 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

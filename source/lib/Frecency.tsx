@@ -1,9 +1,9 @@
-// Module ID: 4530
-// Function ID: 4531
+// Module ID: 4531
+// Function ID: 4532
 // Name: DEFAULT_FRECENCY
 // Dependencies: [12, 4043, 2]
 
-// Module 4530 (DEFAULT_FRECENCY)
+// Module 4531 (DEFAULT_FRECENCY)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import hooksDefault from "hooks" /* 4043 */;

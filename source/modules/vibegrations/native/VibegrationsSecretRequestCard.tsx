@@ -1,15 +1,15 @@
-// Module ID: 16041
-// Function ID: 16042
+// Module ID: 16106
+// Function ID: 16107
 // Name: VibegrationsSecretRequestCard
-// Dependencies: [19, 17, 21, 4444, 712, 4411, 16042, 4440, 1236, 3469, 4879, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 4412, 16107, 4441, 1236, 3469, 4880, 2]
 // Exports: default
 
-// Module 16041 (VibegrationsSecretRequestCard)
+// Module 16106 (VibegrationsSecretRequestCard)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -40,7 +40,7 @@ export default function VibegrationsSecretRequestCard(projectId) {
   obj = { variant: "text-xs/semibold", color: "text-muted", children: null };
   const intl = projectId(1236).intl;
   obj[2] = intl.string(request(3469)["/e28TK"]);
-  const items1 = [callback(projectId(4440).Text, obj), , , ];
+  const items1 = [callback(projectId(4441).Text, obj), , , ];
   if (null != request.note) {
     if ("" !== request.note) {
       let note = request.note;
@@ -61,7 +61,7 @@ export default function VibegrationsSecretRequestCard(projectId) {
     obj2[2] = callback;
     const intl3 = tmp6(1236).intl;
     obj2[3] = intl3.string(tmp8(3469)["gVV+HX"]);
-    items1[3] = tmp5(tmp6(4879).Button, obj2);
+    items1[3] = tmp5(tmp6(4880).Button, obj2);
     obj[1] = items1;
     return closure_6(tmp4, obj);
   }

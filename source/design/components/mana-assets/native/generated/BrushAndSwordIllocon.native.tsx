@@ -1,14 +1,14 @@
-// Module ID: 6313
-// Function ID: 6314
+// Module ID: 6319
+// Function ID: 6320
 // Name: BrushAndSwordIllocon
-// Dependencies: [21, 5440, 6314, 2]
+// Dependencies: [21, 5445, 6320, 2]
 // Exports: BrushAndSwordIllocon
 
-// Module 6313 (BrushAndSwordIllocon)
+// Module 6319 (BrushAndSwordIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6314 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6320 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BrushAndSwordIllocon.native.tsx");

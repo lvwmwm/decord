@@ -1,13 +1,13 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 10555
+// Function ID: 10556
 // Name: makeUserListPillData
-// Dependencies: [19, 21, 4288, 1297, 2]
+// Dependencies: [19, 21, 4289, 1297, 2]
 // Exports: default
 
-// Module 9840 (makeUserListPillData)
+// Module 10555 (makeUserListPillData)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1297 */;
-import nameFromUserDefault from "nameFromUser" /* 4288 */;
+import nameFromUserDefault from "nameFromUser" /* 4289 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

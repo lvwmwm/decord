@@ -1,13 +1,13 @@
-// Module ID: 13014
-// Function ID: 13015
+// Module ID: 13037
+// Function ID: 13038
 // Name: SquareIconButton
-// Dependencies: [19, 21, 4444, 712, 5331, 5015, 1297, 2]
+// Dependencies: [19, 21, 4445, 712, 5336, 5020, 1297, 2]
 
-// Module 13014 (SquareIconButton)
+// Module 13037 (SquareIconButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 class SquareIconButton {

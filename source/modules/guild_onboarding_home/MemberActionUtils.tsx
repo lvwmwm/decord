@@ -1,14 +1,14 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 11772
+// Function ID: 11773
 // Name: useMemberActionsForChannel
-// Dependencies: [1992, 4659, 4660, 4077, 6017, 647, 1403, 2]
+// Dependencies: [1992, 4660, 4661, 4077, 6022, 647, 1403, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 11928 (useMemberActionsForChannel)
-import useIsNewMemberDefault from "useIsNewMember" /* 6017 */;
+// Module 11772 (useMemberActionsForChannel)
+import useIsNewMemberDefault from "useIsNewMember" /* 6022 */;
 import closure_3 from "trackCommunicationDisabled" /* 1992 */;
-import closure_4 from "handleSettingsLoadSuccess" /* 4659 */;
-import closure_5 from "set" /* 4660 */;
+import closure_4 from "handleSettingsLoadSuccess" /* 4660 */;
+import closure_5 from "set" /* 4661 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 
 const require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9623
+// Function ID: 9624
 // Name: ChannelTypeRow
-// Dependencies: [32, 19, 17, 1395, 1434, 1391, 1910, 4089, 4098, 1922, 676, 7993, 21, 4444, 712, 4977, 4984, 4997, 4993, 4990, 4983, 4975, 4982, 4994, 4992, 4989, 1236, 4440, 1995, 4173, 5546, 8204, 8185, 1297, 5541, 589, 38, 4638, 5306, 9208, 1500, 9209, 4652, 5442, 9211, 6183, 9212, 12, 4630, 4877, 8003, 6168, 5939, 9215, 5940, 4991, 9219, 503, 9232, 5888, 5955, 2]
+// Dependencies: [32, 19, 17, 1395, 1434, 1391, 1910, 4089, 4098, 1922, 676, 8603, 21, 4445, 712, 4981, 4989, 5002, 4998, 4995, 4988, 4979, 4987, 4999, 4997, 4994, 1236, 4441, 1995, 4173, 5551, 7627, 8295, 1297, 5546, 589, 38, 4639, 5311, 9624, 1500, 9625, 4653, 5447, 9627, 6189, 9628, 12, 4631, 4878, 7639, 6174, 5944, 9631, 5945, 4996, 9632, 503, 9645, 5893, 5960, 2]
 // Exports: default
 
-// Module 9207 (ChannelTypeRow)
+// Module 9623 (ChannelTypeRow)
 import ThemesDefault from "Themes" /* 712 */;
-import useInitialValueDefault from "useInitialValue" /* 5888 */;
+import useInitialValueDefault from "useInitialValue" /* 5893 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -18,9 +18,9 @@ import closure_12 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_13 from "markAllUserIdListsStale" /* 4098 */;
 import closure_14 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { RowType } from "RowType" /* 7993 */;
+import { RowType } from "RowType" /* 8603 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function ChannelTypeRow(selected) {
@@ -745,6 +745,6 @@ export default function CreateChannelModal(arg0) {
     obj[1] = items;
     return obj;
   }));
-  return callback(_require(5955).Navigator, { screens, initialRouteStack });
+  return callback(_require(5960).Navigator, { screens, initialRouteStack });
 };
 export { CreateChannel };

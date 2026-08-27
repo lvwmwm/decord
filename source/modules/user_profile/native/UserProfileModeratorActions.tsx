@@ -1,28 +1,28 @@
-// Module ID: 12601
-// Function ID: 12602
+// Module ID: 12393
+// Function ID: 12394
 // Name: ModeratorActionRow
-// Dependencies: [19, 5312, 1391, 1982, 1992, 1910, 4089, 4463, 676, 4077, 21, 4444, 712, 1367, 5546, 5947, 4440, 9003, 4411, 9858, 589, 6062, 11467, 1399, 11468, 4638, 4632, 4630, 4094, 1236, 10954, 7990, 10956, 8185, 4997, 10438, 2009, 5404, 6186, 4675, 11469, 1403, 11371, 4078, 11486, 11472, 9402, 11031, 9398, 12161, 8625, 4385, 11488, 10681, 11490, 12602, 12251, 7434, 5939, 2]
+// Dependencies: [19, 5317, 1391, 1982, 1992, 1910, 4089, 4464, 676, 4077, 21, 4445, 712, 1367, 5551, 5952, 4441, 8490, 4412, 9163, 589, 6068, 11322, 1399, 8360, 4639, 4633, 4631, 4094, 1236, 9928, 8600, 9930, 8295, 5002, 10887, 2009, 5409, 6192, 4676, 11323, 1403, 11233, 4078, 11340, 11326, 9737, 10008, 9733, 12009, 7558, 4386, 11342, 9294, 11344, 12394, 8992, 7442, 5944, 2]
 // Exports: default
 
-// Module 12601 (ModeratorActionRow)
+// Module 12393 (ModeratorActionRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import Text from "Text" /* 4440 */;
-import TableRowInner from "TableRowInner" /* 5546 */;
-import Divider from "Divider" /* 5947 */;
-import closure_4 from "buildStageChannelUserRoles" /* 5312 */;
+import Text from "Text" /* 4441 */;
+import TableRowInner from "TableRowInner" /* 5551 */;
+import Divider from "Divider" /* 5952 */;
+import closure_4 from "buildStageChannelUserRoles" /* 5317 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "comparator" /* 1982 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
 import closure_8 from "trackCommunicationDisabled" /* 1992 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_11 from "updateVoiceState" /* 4463 */;
+import closure_11 from "updateVoiceState" /* 4464 */;
 import ME from "ME" /* 676 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function ModeratorActionRow(arg0) {
@@ -385,7 +385,7 @@ export default function UserProfileModeratorActions(user) {
               dependencyMap();
             },
             onRemove() {
-              let arr = callback(4675);
+              let arr = callback(4676);
               arr = arr.pop();
             }
           };

@@ -1,14 +1,14 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12862
+// Function ID: 12863
 // Name: BellZIcon
-// Dependencies: [19, 21, 712, 4164, 12844, 2]
+// Dependencies: [19, 21, 712, 4164, 12863, 2]
 // Exports: BellZIcon
 
-// Module 12843 (BellZIcon)
+// Module 12862 (BellZIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 12844 */;
+import registerAsset from "registerAsset" /* 12863 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

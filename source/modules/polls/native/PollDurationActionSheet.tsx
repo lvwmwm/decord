@@ -1,12 +1,12 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11685
+// Function ID: 11686
 // Name: PollDurationRadioGroup
-// Dependencies: [19, 21, 11855, 1351, 4411, 8203, 1236, 8202, 5936, 2]
+// Dependencies: [19, 21, 11684, 1351, 4412, 7625, 1236, 7626, 5941, 2]
 // Exports: default
 
-// Module 11856 (PollDurationRadioGroup)
-import ActionSheet from "ActionSheet" /* 5936 */;
-import usePollDurationOptionsDefault from "usePollDurationOptions" /* 11855 */;
+// Module 11685 (PollDurationRadioGroup)
+import ActionSheet from "ActionSheet" /* 5941 */;
+import usePollDurationOptionsDefault from "usePollDurationOptions" /* 11684 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -33,7 +33,7 @@ function PollDurationRadioGroup(onChange) {
     [tmp, tmp2] = arg0;
     return callback(onChange(table[7]).TableRadioRow, { value: parseInt(tmp), label: tmp2 }, tmp);
   });
-  return jsx(onChange(8203).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
+  return jsx(onChange(7625).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
 }
 const result = require("set").fileFinishedImporting("modules/polls/native/PollDurationActionSheet.tsx");
 

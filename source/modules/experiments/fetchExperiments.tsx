@@ -1,10 +1,10 @@
-// Module ID: 13720
-// Function ID: 13721
+// Module ID: 13747
+// Function ID: 13748
 // Name: fetchExperiments
 // Dependencies: [676, 530, 2]
 // Exports: fetchExperiments
 
-// Module 13720 (fetchExperiments)
+// Module 13747 (fetchExperiments)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import ME from "ME" /* 676 */;

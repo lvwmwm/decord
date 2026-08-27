@@ -1,10 +1,10 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 7196
+// Function ID: 7197
 // Name: Feedback
 // Dependencies: [1236, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 7190 (Feedback)
+// Module 7196 (Feedback)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

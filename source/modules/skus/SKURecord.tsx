@@ -1,15 +1,15 @@
-// Module ID: 4487
-// Function ID: 4488
+// Module ID: 4488
+// Function ID: 4489
 // Name: createFromServer
-// Dependencies: [1931, 4470, 4488, 676, 4043, 4489, 4490, 1403, 2]
+// Dependencies: [1931, 4471, 4489, 676, 4043, 4490, 4491, 1403, 2]
 
-// Module 4487 (createFromServer)
+// Module 4488 (createFromServer)
 import toJSDefault from "toJS" /* 1931 */;
 import hooksDefault from "hooks" /* 4043 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 4489 */;
-import transformProfileEffectKeyFrameFromServerDefault from "transformProfileEffectKeyFrameFromServer" /* 4490 */;
-import closure_3 from "createExecutable" /* 4470 */;
-import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set" /* 4488 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 4490 */;
+import transformProfileEffectKeyFrameFromServerDefault from "transformProfileEffectKeyFrameFromServer" /* 4491 */;
+import closure_3 from "createExecutable" /* 4471 */;
+import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set" /* 4489 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

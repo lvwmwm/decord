@@ -1,14 +1,14 @@
-// Module ID: 6297
-// Function ID: 6298
+// Module ID: 6303
+// Function ID: 6304
 // Name: BeeIllocon
-// Dependencies: [21, 5440, 6298, 2]
+// Dependencies: [21, 5445, 6304, 2]
 // Exports: BeeIllocon
 
-// Module 6297 (BeeIllocon)
+// Module 6303 (BeeIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6298 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6304 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BeeIllocon.native.tsx");

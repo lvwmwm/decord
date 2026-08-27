@@ -1,16 +1,16 @@
-// Module ID: 8374
-// Function ID: 8375
+// Module ID: 7888
+// Function ID: 7889
 // Name: createPremiumGroupInviteEmbed
-// Dependencies: [4121, 4444, 712, 8273, 8375, 8376, 1236, 2985, 2]
+// Dependencies: [4121, 4445, 712, 7788, 7889, 7890, 1236, 2985, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 8374 (createPremiumGroupInviteEmbed)
+// Module 7888 (createPremiumGroupInviteEmbed)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import frozen from "frozen" /* 8273 */;
-import registerAssetDefault from "registerAsset" /* 8375 */;
-import getPremiumGroupInviteEmbedText from "getPremiumGroupInviteEmbedText" /* 8376 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import frozen from "frozen" /* 7788 */;
+import registerAssetDefault from "registerAsset" /* 7889 */;
+import getPremiumGroupInviteEmbedText from "getPremiumGroupInviteEmbedText" /* 7890 */;
 import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4121 */;
 
 ({ HELP_CENTER_LINK: c3, PremiumGroupInviteState: c4 } = SubscriptionStatusTypes);

@@ -1,10 +1,10 @@
-// Module ID: 8605
-// Function ID: 8606
+// Module ID: 7538
+// Function ID: 7539
 // Name: getRemindersLastSeenAt
 // Dependencies: [595, 2]
 // Exports: getRemindersLastSeenAt, markRemindersSeen
 
-// Module 8605 (getRemindersLastSeenAt)
+// Module 7538 (getRemindersLastSeenAt)
 import set from "set" /* 2 */;
 import Storage2 from "Storage" /* 595 */;
 

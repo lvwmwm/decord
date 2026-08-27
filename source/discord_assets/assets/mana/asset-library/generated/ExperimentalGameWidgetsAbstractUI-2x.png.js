@@ -1,9 +1,9 @@
-// Module ID: 6470
-// Function ID: 6471
+// Module ID: 6476
+// Function ID: 6477
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6470 (metadata)
+// Module 6476 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalGameWidgetsAbstractUI-2x.png.js");

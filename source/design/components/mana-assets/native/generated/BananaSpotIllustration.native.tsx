@@ -1,14 +1,14 @@
-// Module ID: 6293
-// Function ID: 6294
+// Module ID: 6299
+// Function ID: 6300
 // Name: BananaSpotIllustration
-// Dependencies: [21, 5440, 6294, 2]
+// Dependencies: [21, 5445, 6300, 2]
 // Exports: BananaSpotIllustration
 
-// Module 6293 (BananaSpotIllustration)
+// Module 6299 (BananaSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6294 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6300 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BananaSpotIllustration.native.tsx");

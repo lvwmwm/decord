@@ -1,10 +1,10 @@
-// Module ID: 16918
-// Function ID: 16919
+// Module ID: 16984
+// Function ID: 16985
 // Name: sendStageRequestToSpeakEphemeralMessage
 // Dependencies: [676, 709, 11, 2]
 // Exports: sendStageRequestToSpeakEphemeralMessage
 
-// Module 16918 (sendStageRequestToSpeakEphemeralMessage)
+// Module 16984 (sendStageRequestToSpeakEphemeralMessage)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

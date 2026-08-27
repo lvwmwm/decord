@@ -1,10 +1,10 @@
-// Module ID: 7069
-// Function ID: 7070
+// Module ID: 7075
+// Function ID: 7076
 // Name: calculateFractionalPremiumInfo
-// Dependencies: [32, 19, 1922, 4113, 7070, 676, 1924, 4043, 38, 4122, 4107, 589, 4896, 7071, 12, 2]
+// Dependencies: [32, 19, 1922, 4113, 7076, 676, 1924, 4043, 38, 4122, 4107, 589, 4897, 7077, 12, 2]
 // Exports: default
 
-// Module 7069 (calculateFractionalPremiumInfo)
+// Module 7075 (calculateFractionalPremiumInfo)
 import hooksDefault from "hooks" /* 4043 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4122 */;
@@ -12,7 +12,7 @@ import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import closure_6 from "reset" /* 4113 */;
-import closure_7 from "addEntitlement" /* 7070 */;
+import closure_7 from "addEntitlement" /* 7076 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 

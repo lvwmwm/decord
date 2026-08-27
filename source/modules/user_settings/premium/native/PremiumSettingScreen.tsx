@@ -1,15 +1,15 @@
-// Module ID: 14511
-// Function ID: 14512
+// Module ID: 14538
+// Function ID: 14539
 // Name: PremiumScreen
-// Dependencies: [19, 21, 7087, 1500, 7804, 7084, 2]
+// Dependencies: [19, 21, 7093, 1500, 7695, 7090, 2]
 // Exports: default
 
-// Module 14511 (PremiumScreen)
+// Module 14538 (PremiumScreen)
 import noopAll from "noop" /* 19 */;
 import useNavigation from "useNavigation" /* 1500 */;
-import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7084 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7087 */;
-import dispatcherDefault from "dispatcher" /* 7804 */;
+import UserSettingsPremiumDefault from "UserSettingsPremium" /* 7090 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7093 */;
+import dispatcherDefault from "dispatcher" /* 7695 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

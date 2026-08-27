@@ -1,11 +1,11 @@
-// Module ID: 4451
-// Function ID: 4452
+// Module ID: 4452
+// Function ID: 4453
 // Name: remapTypographyVariant
-// Dependencies: [32, 4452, 2]
+// Dependencies: [32, 4453, 2]
 // Exports: remapTypographyVariant
 
-// Module 4451 (remapTypographyVariant)
-import map from "map" /* 4452 */;
+// Module 4452 (remapTypographyVariant)
+import map from "map" /* 4453 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 
 require = arg1;

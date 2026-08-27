@@ -1,10 +1,10 @@
-// Module ID: 4653
-// Function ID: 4654
+// Module ID: 4654
+// Function ID: 4655
 // Name: updateUserGuildSettingsInternal
-// Dependencies: [1984, 4091, 1395, 1391, 1910, 1922, 676, 4101, 4654, 685, 4092, 12, 1403, 709, 11, 589, 2]
+// Dependencies: [1984, 4091, 1395, 1391, 1910, 1922, 676, 4101, 4655, 685, 4092, 12, 1403, 709, 11, 589, 2]
 // Exports: convertChannelOverridesToMap, getGuildDefaults
 
-// Module 4653 (updateUserGuildSettingsInternal)
+// Module 4654 (updateUserGuildSettingsInternal)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
@@ -19,7 +19,7 @@ import closure_9 from "createGuildRecordFromRust" /* 1910 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { AccountNotificationFlags } from "AccountNotificationFlags" /* 4101 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4654 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4655 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
 import set from "set" /* 2 */;
 

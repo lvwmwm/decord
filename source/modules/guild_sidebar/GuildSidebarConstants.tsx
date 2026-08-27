@@ -1,9 +1,9 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7212
+// Function ID: 7213
 // Name: ChannelListGuildActionRow
 // Dependencies: [2]
 
-// Module 7206 (ChannelListGuildActionRow)
+// Module 7212 (ChannelListGuildActionRow)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_sidebar/GuildSidebarConstants.tsx");

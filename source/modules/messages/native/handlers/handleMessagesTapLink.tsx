@@ -1,29 +1,29 @@
-// Module ID: 11237
-// Function ID: 11238
+// Module ID: 11118
+// Function ID: 11119
 // Name: handleMessagesTapURLLink
-// Dependencies: [8561, 4485, 8265, 10455, 1930, 1391, 4428, 4687, 1922, 676, 1499, 1398, 6002, 1235, 11235, 4424, 7405, 11236, 9499, 9493, 9147, 11176, 8998, 4411, 9469, 2009, 5302, 4627, 11238, 9890, 11239, 7129, 5920, 8558, 1627, 11240, 4698, 1222, 8319, 11243, 11266, 2]
+// Dependencies: [8078, 4486, 7780, 10902, 1930, 1391, 4429, 4688, 1922, 676, 1499, 1398, 6007, 1235, 11116, 4425, 7413, 11117, 8737, 8731, 8572, 11059, 8819, 4412, 8930, 2009, 5307, 4628, 11119, 10577, 11120, 7135, 5925, 8075, 1627, 11121, 4699, 1222, 7833, 11124, 11147, 2]
 // Exports: handleMessagesTapLink
 
-// Module 11237 (handleMessagesTapURLLink)
+// Module 11118 (handleMessagesTapURLLink)
 import set from "set" /* 2 */;
 import AbortCodes from "AbortCodes" /* 1235 */;
 import set2 from "set" /* 1398 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
-import parseQueryDefault from "parseQuery" /* 4424 */;
-import str2 from "str2" /* 6002 */;
-import getIndexKey from "getIndexKey" /* 8561 */;
-import isLinkTrusted from "isLinkTrusted" /* 9147 */;
-import _mod9493 from "module_9493" /* 9493 */;
-import GameProfileEmbedAction from "GameProfileEmbedAction" /* 9499 */;
-import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 11176 */;
-import isLinkTrusted2 from "isLinkTrusted" /* 11235 */;
-import closure_4 from "addApplication" /* 4485 */;
-import closure_5 from "handleMessageSendFailedAutomod" /* 8265 */;
-import closure_6 from "handleQuickSwitcherUpdate" /* 10455 */;
+import parseQueryDefault from "parseQuery" /* 4425 */;
+import str2 from "str2" /* 6007 */;
+import getIndexKey from "getIndexKey" /* 8078 */;
+import isLinkTrusted from "isLinkTrusted" /* 8572 */;
+import _mod8731 from "module_8731" /* 8731 */;
+import GameProfileEmbedAction from "GameProfileEmbedAction" /* 8737 */;
+import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 11059 */;
+import isLinkTrusted2 from "isLinkTrusted" /* 11116 */;
+import closure_4 from "addApplication" /* 4486 */;
+import closure_5 from "handleMessageSendFailedAutomod" /* 7780 */;
+import closure_6 from "handleQuickSwitcherUpdate" /* 10902 */;
 import closure_7 from "createdAt" /* 1930 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "updateInvite" /* 4428 */;
-import closure_10 from "reinjectEphemerals" /* 4687 */;
+import closure_9 from "updateInvite" /* 4429 */;
+import closure_10 from "reinjectEphemerals" /* 4688 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
@@ -47,11 +47,11 @@ function handleMessagesTapURLLink(data, channelId) {
             invite = invite.getInvite(payload.inviteCode);
             let num = null == invite;
             if (!num) {
-              num = !tmp2(7405).isGuildScheduledEventInviteEmbed(invite);
-              const tmp2Result = tmp2(7405);
+              num = !tmp2(7413).isGuildScheduledEventInviteEmbed(invite);
+              const tmp2Result = tmp2(7413);
             }
             if (!num) {
-              tmp4(11236)(invite);
+              tmp4(11117)(invite);
               num = 0;
             }
             flag2 = !num;
@@ -84,9 +84,9 @@ function handleMessagesTapURLLink(data, channelId) {
         obj = { shouldOpenGameProfile: true, gameId: null };
         obj[1] = gameId;
         obj[3] = obj;
-        _mod9493.default.openGameProfileModal(obj);
+        _mod8731.default.openGameProfileModal(obj);
         flag3 = true;
-        const _default = _mod9493.default;
+        const _default = _mod8731.default;
       }
       flag2 = flag3;
     }
@@ -96,8 +96,8 @@ function handleMessagesTapURLLink(data, channelId) {
       obj1[0] = data.url;
       let isLinkTrustedResult = null != data.node;
       if (isLinkTrustedResult) {
-        isLinkTrustedResult = tmp19(11235).isLinkTrusted(data.node);
-        const tmp19Result = tmp19(11235);
+        isLinkTrustedResult = tmp19(11116).isLinkTrusted(data.node);
+        const tmp19Result = tmp19(11116);
       }
       obj1[1] = isLinkTrustedResult;
       obj1[2] = data.messageId;

@@ -1,9 +1,9 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16429
+// Function ID: 16430
 // Name: metadata
 // Dependencies: [2]
 
-// Module 16364 (metadata)
+// Module 16429 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/display_name_styles/dns_flywheel_halfsheet_animated_2x.png.js");

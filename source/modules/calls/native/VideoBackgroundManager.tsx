@@ -1,10 +1,10 @@
-// Module ID: 8527
-// Function ID: 8528
+// Module ID: 8044
+// Function ID: 8045
 // Name: prototype
-// Dependencies: [1981, 5433, 2]
+// Dependencies: [1981, 5438, 2]
 
-// Module 8527 (prototype)
-import initializeDefault from "initialize" /* 5433 */;
+// Module 8044 (prototype)
+import initializeDefault from "initialize" /* 5438 */;
 import closure_0 from "handleConnectionOpen" /* 1981 */;
 
 initializeDefault;

@@ -1,6 +1,6 @@
 // Module ID: 1208
 // Function ID: 1209
-// Dependencies: [17, 3, 1209, 810, 13735, 809, 1626, 2]
+// Dependencies: [17, 3, 1209, 810, 13762, 809, 1626, 2]
 
 // Module 1208
 import set from "set" /* 2 */;
@@ -37,8 +37,8 @@ let obj = {
   },
   captureException(arg0, extra) {
     const _require = arg0;
-    importAll = _require(13735).getUpdatedOptions(extra);
-    const obj = _require(13735);
+    importAll = _require(13762).getUpdatedOptions(extra);
+    const obj = _require(13762);
     addBreadcrumbAll.withScope((setTags) => {
       if (null != callback) {
         if (null != tmp.tags) {
@@ -54,7 +54,7 @@ let obj = {
   },
   captureCrash(error, extra) {
     const _require = error;
-    const updatedOptions = _require(13735).getUpdatedOptions(extra);
+    const updatedOptions = _require(13762).getUpdatedOptions(extra);
     let tags;
     if (updatedOptions != null) {
       tags = updatedOptions.tags;
@@ -66,7 +66,7 @@ let obj = {
       }
     }
     dependencyMap = Object.assign({ crash: "true" }, {});
-    let obj = _require(13735);
+    let obj = _require(13762);
     updatedOptions(810).withScope((setExtras) => {
       if (tmp2) {
         setExtras.setExtras(tmp.extra);
@@ -97,8 +97,8 @@ let obj = {
   captureMessage(arg0, extra) {
     const _require = arg0;
     closure_1 = arg2;
-    importAll = _require(13735).getUpdatedOptions(extra);
-    const obj = _require(13735);
+    importAll = _require(13762).getUpdatedOptions(extra);
+    const obj = _require(13762);
     addBreadcrumbAll.withScope((setExtras) => {
       if (tmp2) {
         setExtras.setExtras(tmp.extra);
@@ -203,7 +203,7 @@ let obj = {
                 if (str != null) {
                   formatted = str.toLowerCase();
                 }
-                let obj = { type: "y", event_id: "md", timestamp: null, level: null, tags: 80.672 };
+                let obj = { type: "y", event_id: "app_message_embed", timestamp: "BULK_ACK", level: null, tags: null };
                 obj[1] = timestamp.event_id;
                 obj[2] = result;
                 obj[3] = formatted;

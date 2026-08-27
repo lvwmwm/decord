@@ -1,9 +1,9 @@
-// Module ID: 4803
-// Function ID: 4804
+// Module ID: 4804
+// Function ID: 4805
 // Name: MessageEmbedTypes
 // Dependencies: [676, 2]
 
-// Module 4803 (MessageEmbedTypes)
+// Module 4804 (MessageEmbedTypes)
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

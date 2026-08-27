@@ -1,14 +1,14 @@
-// Module ID: 6711
-// Function ID: 6712
+// Module ID: 6717
+// Function ID: 6718
 // Name: LeafIllocon
-// Dependencies: [21, 5440, 6712, 2]
+// Dependencies: [21, 5445, 6718, 2]
 // Exports: LeafIllocon
 
-// Module 6711 (LeafIllocon)
+// Module 6717 (LeafIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6712 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6718 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/LeafIllocon.native.tsx");

@@ -1,22 +1,22 @@
-// Module ID: 13114
-// Function ID: 13115
+// Module ID: 13137
+// Function ID: 13138
 // Name: textLogoTier2
-// Dependencies: [19, 17, 7105, 1924, 21, 4444, 712, 5331, 1367, 4891, 691, 4107, 13115, 13116, 7599, 7538, 7539, 7594, 5548, 2]
+// Dependencies: [19, 17, 7111, 1924, 21, 4445, 712, 5336, 1367, 4892, 691, 4107, 13138, 13139, 7909, 8288, 10414, 10415, 5553, 2]
 // Exports: default
 
-// Module 13114 (textLogoTier2)
+// Module 13137 (textLogoTier2)
 import noopAll from "noop" /* 19 */;
 import keys from "keys" /* 691 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
-import LinearGradientDefault from "LinearGradient" /* 4891 */;
-import PressableCard from "PressableCard" /* 5548 */;
+import LinearGradientDefault from "LinearGradient" /* 4892 */;
+import PressableCard from "PressableCard" /* 5553 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { getPremiumGradientColor } from "items" /* 7105 */;
+import { getPremiumGradientColor } from "items" /* 7111 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -47,11 +47,11 @@ export default function _default(children) {
   }
   obj[3] = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp2Result = tmp2(13115);
+    let tmp2Result = tmp2(13138);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(13116);
+    tmp2Result = tmp2(13139);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7599);
+    tmp2Result = tmp2(7909);
   }
   obj[4] = tmp2Result;
   obj[4] = closure_7(closure_4, obj);
@@ -67,11 +67,11 @@ export default function _default(children) {
   obj = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp2Result = tmp2(7538);
+    tmp2Result = tmp2(8288);
   } else if (tmp11.TIER_1 === premiumType) {
-    tmp2Result = tmp2(7539);
+    tmp2Result = tmp2(10414);
   } else if (tmp11.TIER_2 === premiumType) {
-    tmp2Result = tmp2(7594);
+    tmp2Result = tmp2(10415);
   }
   obj[3] = tmp2Result;
   items[1] = closure_7(closure_4, obj);

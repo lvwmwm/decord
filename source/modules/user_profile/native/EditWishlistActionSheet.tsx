@@ -1,25 +1,25 @@
-// Module ID: 12764
-// Function ID: 12765
+// Module ID: 12494
+// Function ID: 12495
 // Name: exitingAnimation
-// Dependencies: [32, 19, 17, 4436, 9572, 9573, 1922, 7293, 9000, 5570, 21, 4444, 712, 4184, 4445, 589, 1629, 5900, 5920, 12760, 12761, 12742, 9578, 9004, 9682, 1236, 5571, 5939, 5940, 8227, 10326, 7963, 4402, 2]
+// Dependencies: [32, 19, 17, 4437, 10377, 10378, 1922, 7299, 8488, 5575, 21, 4445, 712, 4185, 4446, 589, 1629, 5905, 5925, 12435, 12436, 12412, 10383, 8491, 9139, 1236, 5576, 5944, 5945, 7729, 10697, 7938, 4403, 2]
 // Exports: default
 
-// Module 12764 (exitingAnimation)
+// Module 12494 (exitingAnimation)
 import ThemesDefault from "Themes" /* 712 */;
-import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4445 */;
+import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4446 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
-import closure_8 from "get" /* 9572 */;
-import { getWishlistProductLines } from "fromServer" /* 9573 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_8 from "get" /* 10377 */;
+import { getWishlistProductLines } from "fromServer" /* 10378 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import closure_11 from "createUserWidgetFromServer" /* 7293 */;
-import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY" /* 9000 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5570 */;
+import closure_11 from "createUserWidgetFromServer" /* 7299 */;
+import { TrackUserProfileWishlistActions as closure_12 } from "USER_PROFILE_TOOLTIP_DELAY" /* 8488 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5575 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import { LinearTransition } from "module_4184" /* 4184 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import { LinearTransition } from "module_4185" /* 4185 */;
 import closure_17 from "module_300" /* 300 */;
 import dampingResult from "module_100" /* 100 */;
 
@@ -80,10 +80,10 @@ export default function EditWishlistActionSheet(wishlistId) {
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  analyticsLocations = analyticsContext(5900)(analyticsLocations, tmp4(5920).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = analyticsContext(5905)(analyticsLocations, tmp4(5925).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   obj = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  let tmp5 = analyticsContext(5900);
-  ({ cardWidth: c5, rowWidth } = analyticsContext(12760)(obj));
+  let tmp5 = analyticsContext(5905);
+  ({ cardWidth: c5, rowWidth } = analyticsContext(12435)(obj));
   if (null != rowWidth) {
     obj = { width: null };
     obj[0] = rowWidth;
@@ -95,7 +95,7 @@ export default function EditWishlistActionSheet(wishlistId) {
   tmp2Result = tmp2(589);
   const items2 = [first];
   const stateFromStores1 = tmp2Result.useStateFromStores(items2, () => first.isFetching(wishlistId));
-  let tmp6 = analyticsContext(12760)(obj);
+  let tmp6 = analyticsContext(12435)(obj);
   const items3 = [closure_10, closure_11];
   stateFromStores2 = wishlistId(589).useStateFromStores(items3, () => {
     currentUser = currentUser.getCurrentUser();
@@ -172,8 +172,8 @@ export default function EditWishlistActionSheet(wishlistId) {
   obj6[1] = intl3.string(wishlistId(1236).t.dw58pE);
   obj6[2] = first;
   obj6[3] = callback;
-  obj5[1] = callback2(wishlistId(5940).TableSwitchRow, obj6);
-  obj4[1] = callback2(wishlistId(5939).TableRowGroup, obj5);
+  obj5[1] = callback2(wishlistId(5945).TableSwitchRow, obj6);
+  obj4[1] = callback2(wishlistId(5944).TableRowGroup, obj5);
   const items8 = [callback2(stateFromStores, obj4), ];
   if (stateFromStores1) {
     if (null == stateFromStores) {
@@ -185,7 +185,7 @@ export default function EditWishlistActionSheet(wishlistId) {
     items8[1] = tmp16Result;
     obj3[1] = items8;
     obj2[1] = closure_15(tmp19, obj3);
-    obj1[3] = tmp16(tmp2(5571).BottomSheetScrollView, obj2);
+    obj1[3] = tmp16(tmp2(5576).BottomSheetScrollView, obj2);
     return tmp16(tmp4Result, obj1);
   }
   tmp16Result = null;

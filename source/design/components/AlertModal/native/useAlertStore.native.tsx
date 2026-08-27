@@ -1,11 +1,11 @@
-// Module ID: 4810
-// Function ID: 4811
+// Module ID: 4811
+// Function ID: 4812
 // Name: useAlertStore
-// Dependencies: [32, 644, 705, 4811, 4813, 2]
+// Dependencies: [32, 644, 705, 4812, 4814, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 4810 (useAlertStore)
-import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 4813 */;
+// Module 4811 (useAlertStore)
+import markAccessibilityFocusDefault from "markAccessibilityFocus" /* 4814 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import keys from "keys" /* 644 */;
 
@@ -40,7 +40,7 @@ export const dismissAlerts = function dismissAlerts() {
     });
   });
   if (tmp4) {
-    arr4(4811)();
+    arr4(4812)();
   }
 };
 export const dismissAlert = function dismissAlert(c6) {
@@ -68,7 +68,7 @@ export const dismissAlert = function dismissAlert(c6) {
       }
     });
     if (tmp2) {
-      found(4811)();
+      found(4812)();
     }
     const obj = _require(705);
   }

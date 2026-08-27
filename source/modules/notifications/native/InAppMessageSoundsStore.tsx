@@ -1,10 +1,10 @@
-// Module ID: 10001
-// Function ID: 10002
+// Module ID: 10107
+// Function ID: 10108
 // Name: isInAppMessageSoundsEnabled
 // Dependencies: [595, 700, 4074, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10001 (isInAppMessageSoundsEnabled)
+// Module 10107 (isInAppMessageSoundsEnabled)
 import set from "set" /* 2 */;
 import Storage2 from "Storage" /* 595 */;
 import isIterable from "isIterable" /* 4074 */;

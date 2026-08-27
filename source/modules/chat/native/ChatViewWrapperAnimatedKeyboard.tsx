@@ -1,16 +1,16 @@
-// Module ID: 10461
-// Function ID: 10462
+// Module ID: 10908
+// Function ID: 10909
 // Name: ChatViewWrapperAnimatedKeyboard
-// Dependencies: [19, 17, 21, 4184, 4448, 10462, 4445, 5544, 10468, 10470, 5887, 10471, 2]
+// Dependencies: [19, 17, 21, 4185, 4449, 10909, 4446, 5549, 10914, 10916, 5892, 10917, 2]
 // Exports: default
 
-// Module 10461 (ChatViewWrapperAnimatedKeyboard)
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5544 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10468 */;
+// Module 10908 (ChatViewWrapperAnimatedKeyboard)
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5549 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 10914 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import { Easing } from "module_4184" /* 4184 */;
+import { Easing } from "module_4185" /* 4185 */;
 
 const require = arg1;
 let c3 = importAllResult;

@@ -1,19 +1,19 @@
-// Module ID: 4342
-// Function ID: 4343
+// Module ID: 4343
+// Function ID: 4344
 // Name: V6OrEarlierAPIError
-// Dependencies: [2, 4130, 4343, 4129, 4344, 4345, 4347, 4348, 4349]
+// Dependencies: [2, 4130, 4344, 4129, 4345, 4346, 4348, 4349, 4350]
 
-// Module 4342 (V6OrEarlierAPIError)
+// Module 4343 (V6OrEarlierAPIError)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 4129 */;
 import prototypeDefault from "prototype" /* 4130 */;
-import prototypeDefault2 from "prototype" /* 4343 */;
-import prototypeDefault3 from "prototype" /* 4344 */;
-import displayMessageDefault from "displayMessage" /* 4345 */;
-import _getMessageFromRateLimitDefault from "_getMessageFromRateLimit" /* 4347 */;
-import prototypeDefault4 from "prototype" /* 4348 */;
-import displayMessage from "displayMessage" /* 4349 */;
-import displayMessageDefault2 from "displayMessage" /* 4349 */;
+import prototypeDefault2 from "prototype" /* 4344 */;
+import prototypeDefault3 from "prototype" /* 4345 */;
+import displayMessageDefault from "displayMessage" /* 4346 */;
+import _getMessageFromRateLimitDefault from "_getMessageFromRateLimit" /* 4348 */;
+import prototypeDefault4 from "prototype" /* 4349 */;
+import displayMessage from "displayMessage" /* 4350 */;
+import displayMessageDefault2 from "displayMessage" /* 4350 */;
 
 const result = set.fileFinishedImporting("errors/index.tsx");
 

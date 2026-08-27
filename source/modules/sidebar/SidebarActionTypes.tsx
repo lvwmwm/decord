@@ -1,9 +1,9 @@
-// Module ID: 6073
-// Function ID: 6074
+// Module ID: 6081
+// Function ID: 6082
 // Name: SidebarType
 // Dependencies: [2]
 
-// Module 6073 (SidebarType)
+// Module 6081 (SidebarType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/sidebar/SidebarActionTypes.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 5918
-// Function ID: 5919
+// Module ID: 5923
+// Function ID: 5924
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 5919, 4158, 2]
+// Dependencies: [5, 19, 5924, 4158, 2]
 // Exports: useStartProviderConnection
 
-// Module 5918 (useStartProviderConnection)
+// Module 5923 (useStartProviderConnection)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -12,7 +12,7 @@ const require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_account_linking/native/useStartProviderConnection.tsx");
 
 export const useStartProviderConnection = function useStartProviderConnection(provider_id) {
-  let obj = _require(5919);
+  let obj = _require(5924);
   const providerConnection = obj.useProviderConnection(provider_id);
   const startConnection = providerConnection.startConnection;
   _require = startConnection;

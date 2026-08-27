@@ -1,28 +1,28 @@
-// Module ID: 16560
-// Function ID: 16561
+// Module ID: 16626
+// Function ID: 16627
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4466, 4518, 5310, 11914, 11912, 16516, 11917, 676, 4465, 11915, 21, 4184, 4440, 4891, 1297, 4444, 712, 4627, 4510, 5953, 1236, 4879, 11913, 589, 10841, 4543, 12591, 10843, 10840, 16561, 10853, 9613, 8528, 4445, 4878, 8227, 5440, 4165, 16562, 11321, 8991, 4172, 5900, 16520, 16532, 16515, 16563, 16564, 8998, 5599, 16565, 11916, 16566, 16567, 16568, 16569, 16570, 16580, 2]
+// Dependencies: [32, 19, 17, 4467, 4519, 5315, 11757, 11755, 16582, 11760, 676, 4466, 11758, 21, 4185, 4441, 4892, 1297, 4445, 712, 4628, 4511, 5958, 1236, 4880, 11756, 589, 9484, 4544, 12383, 9487, 9483, 16627, 9497, 8436, 8045, 4446, 4879, 7729, 5445, 4165, 16628, 10650, 9130, 4172, 5905, 16586, 16598, 16581, 16629, 16630, 8819, 5604, 16631, 11759, 16632, 16633, 16634, 16635, 16636, 16646, 2]
 
-// Module 16560 (SelfStreamCard)
+// Module 16626 (SelfStreamCard)
 import ThemesDefault from "Themes" /* 712 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4878 */;
-import LinearGradientDefault from "LinearGradient" /* 4891 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4879 */;
+import LinearGradientDefault from "LinearGradient" /* 4892 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "reset" /* 4466 */;
-import closure_7 from "createRTCConnection" /* 4518 */;
-import closure_8 from "anyoneHasFlagInContext" /* 5310 */;
-import VoicePanelModes from "VoicePanelModes" /* 11914 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11912 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16516 */;
-import { EDGE_GUTTER } from "CARD_SIZE" /* 11917 */;
+import closure_6 from "reset" /* 4467 */;
+import closure_7 from "createRTCConnection" /* 4519 */;
+import closure_8 from "anyoneHasFlagInContext" /* 5315 */;
+import VoicePanelModes from "VoicePanelModes" /* 11757 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11755 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16582 */;
+import { EDGE_GUTTER } from "CARD_SIZE" /* 11760 */;
 import { ApplicationStreamStates } from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
-import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 11915 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4466 */;
+import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 11758 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4184" /* 4184 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import importDefaultResult from "module_4185" /* 4185 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function SelfStreamCard(sharedCoords) {
@@ -1178,13 +1178,13 @@ function layoutTransitionFunction(originX, SUBTLE_SPRING) {
     str2 = "animate-never";
   }
   obj = { originX: obj.withSpring(originX.targetOriginX, SUBTLE_SPRING, str2), originY: null, width: null, height: null };
-  let tmpResult = tmp(4878);
+  let tmpResult = tmp(4879);
   let str3 = str;
   if (flag) {
     str3 = "animate-never";
   }
   obj[1] = tmpResult.withSpring(originX.targetOriginY, SUBTLE_SPRING, str3);
-  tmpResult = tmp(4878);
+  tmpResult = tmp(4879);
   let str4 = str;
   if (flag) {
     str4 = "animate-never";
@@ -1450,7 +1450,7 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "call", layout: true, layoutPhysics: true };
+  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "accessibilityRole", layout: true, layoutPhysics: true };
   obj8[3] = layoutTransition;
   obj8[4] = physics;
   tmp26Result = callback(closure_37, obj8);

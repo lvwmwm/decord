@@ -1,8 +1,8 @@
-// Module ID: 14046
-// Function ID: 14047
-// Dependencies: [1996, 676, 9117, 2]
+// Module ID: 14073
+// Function ID: 14074
+// Dependencies: [1996, 676, 8541, 2]
 
-// Module 14046
+// Module 14073
 import closure_0 from "_getSystemLocale" /* 1996 */;
 
 let obj = {};

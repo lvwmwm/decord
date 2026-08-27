@@ -1,8 +1,8 @@
-// Module ID: 15661
-// Function ID: 15662
-// Dependencies: [19, 17, 1390, 1983, 1391, 4089, 4459, 4653, 10017, 21, 4444, 712, 15553, 4972, 4932, 12021, 1367, 589, 4911, 4457, 4455, 1234, 9883, 15552, 8559, 4638, 4440, 5953, 10064, 8878, 9248, 15662, 15663, 15670, 2]
+// Module ID: 15725
+// Function ID: 15726
+// Dependencies: [19, 17, 1390, 1983, 1391, 4089, 4460, 4654, 10121, 21, 4445, 712, 15618, 4976, 4933, 11865, 1367, 589, 4912, 4458, 4456, 1234, 10571, 15617, 8076, 4639, 4441, 5958, 10170, 8906, 9346, 15726, 15727, 15734, 2]
 
-// Module 15661
+// Module 15725
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -10,11 +10,11 @@ import closure_5 from "participantFromServer" /* 1390 */;
 import closure_6 from "isSubscriptionGated" /* 1983 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_9 from "generateOldThreadCutoff" /* 4459 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 4653 */;
-import hairlineWidth from "hairlineWidth" /* 10017 */;
+import closure_9 from "generateOldThreadCutoff" /* 4460 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4654 */;
+import hairlineWidth from "hairlineWidth" /* 10121 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let c3 = importAllResult;

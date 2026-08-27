@@ -1,14 +1,14 @@
-// Module ID: 8013
-// Function ID: 8014
+// Module ID: 8617
+// Function ID: 8618
 // Name: AgeVerificationIncodeModal
-// Dependencies: [19, 21, 4444, 712, 4675, 6183, 1236, 8014, 8021, 5955, 2]
+// Dependencies: [19, 21, 4445, 712, 4676, 6189, 1236, 8618, 8625, 5960, 2]
 // Exports: default
 
-// Module 8013 (AgeVerificationIncodeModal)
+// Module 8617 (AgeVerificationIncodeModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let closure_5 = { METHOD_SELECT: "METHOD_SELECT", VERIFY_AGE: "VERIFY_AGE" };
@@ -33,7 +33,7 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
   const memo = React.useMemo(() => {
     function handleClose() {
       dependencyMap();
-      let arr = callback2(4675);
+      let arr = callback2(4676);
       arr = arr.pop();
     }
     const uRL = new URL(closure_0);
@@ -47,11 +47,11 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
         const obj = { onPress: handleClose, text: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.cpT0Cq);
-        return handleClose(callback(6183).HeaderActionButton, obj);
+        return handleClose(callback(6189).HeaderActionButton, obj);
       },
       render(arg0, arg1) {
         closure_0 = arg1;
-        return handleClose(callback2(8014), {
+        return handleClose(callback2(8618), {
           onClose: handleClose,
           trustedOrigin: origin,
           onMethodSelected(injectedJavaScriptBeforeContentLoaded) {
@@ -67,10 +67,10 @@ export default function AgeVerificationIncodeModal(webviewUrl) {
         const obj = { onPress: handleClose, text: null };
         const intl = callback(1236).intl;
         obj[1] = intl.string(callback(1236).t.cpT0Cq);
-        return handleClose(callback(6183).HeaderActionButton, obj);
+        return handleClose(callback(6189).HeaderActionButton, obj);
       },
       render(injectedJavaScriptBeforeContentLoaded) {
-        return handleClose(callback2(8021), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
+        return handleClose(callback2(8625), { webviewUrl: closure_0, onComplete: callback2, onClose: handleClose, injectedJavaScriptBeforeContentLoaded: injectedJavaScriptBeforeContentLoaded.injectedJavaScriptBeforeContentLoaded });
       }
     };
     return { [closure_1_5.METHOD_SELECT]: obj, [closure_1_5.VERIFY_AGE]: obj };

@@ -1,14 +1,14 @@
-// Module ID: 9690
-// Function ID: 9691
+// Module ID: 8853
+// Function ID: 8854
 // Name: PerLetterEffect
-// Dependencies: [19, 17, 21, 4444, 9691, 9692, 4440, 2]
+// Dependencies: [19, 17, 21, 4445, 8854, 8855, 4441, 2]
 // Exports: default
 
-// Module 9690 (PerLetterEffect)
+// Module 8853 (PerLetterEffect)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ View: c4, Text: c5 } = get_ActivityIndicator);
@@ -61,6 +61,6 @@ export default function PerLetterEffect(name) {
   const items2 = [textStyle, { lineHeight: "r" }];
   obj.style = items2;
   obj.children = memo;
-  obj[1] = jsx(name(4440).Text, {});
+  obj[1] = jsx(name(4441).Text, {});
   return <closure_4 />;
 };

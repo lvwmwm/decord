@@ -1,11 +1,11 @@
-// Module ID: 11172
-// Function ID: 11173
+// Module ID: 11056
+// Function ID: 11057
 // Name: start
-// Dependencies: [676, 7138, 2]
+// Dependencies: [676, 7144, 2]
 
-// Module 11172 (start)
+// Module 11056 (start)
 import ME from "ME" /* 676 */;
-import isClickstreamEnabled from "isClickstreamEnabled" /* 7138 */;
+import isClickstreamEnabled from "isClickstreamEnabled" /* 7144 */;
 import set from "set" /* 2 */;
 
 const AnalyticEvents = ME.AnalyticEvents;

@@ -1,11 +1,11 @@
-// Module ID: 8324
-// Function ID: 8325
+// Module ID: 7838
+// Function ID: 7839
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1992, 4089, 1922, 676, 6062, 2]
+// Dependencies: [1992, 4089, 1922, 676, 6068, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 8324 (computeIsStickerReplyEnabled)
-import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6062 */;
+// Module 7838 (computeIsStickerReplyEnabled)
+import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6068 */;
 import closure_2 from "trackCommunicationDisabled" /* 1992 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;

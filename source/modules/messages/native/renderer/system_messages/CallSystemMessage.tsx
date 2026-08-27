@@ -1,18 +1,18 @@
-// Module ID: 8306
-// Function ID: 8307
+// Module ID: 7820
+// Function ID: 7821
 // Name: createCallSystemMessage
-// Dependencies: [4460, 1218, 4463, 676, 4465, 8307, 8308, 1236, 1438, 4131, 8291, 2]
+// Dependencies: [4461, 1218, 4464, 676, 4466, 7821, 7822, 1236, 1438, 4131, 7805, 2]
 // Exports: createCallSystemMessage
 
-// Module 8306 (createCallSystemMessage)
-import createCommonMessageDefault from "createCommonMessage" /* 8291 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8307 */;
-import useIsCallActive from "useIsCallActive" /* 8308 */;
-import closure_3 from "getParticipants" /* 4460 */;
+// Module 7820 (createCallSystemMessage)
+import createCommonMessageDefault from "createCommonMessage" /* 7805 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 7821 */;
+import useIsCallActive from "useIsCallActive" /* 7822 */;
+import closure_3 from "getParticipants" /* 4461 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "updateVoiceState" /* 4463 */;
+import closure_5 from "updateVoiceState" /* 4464 */;
 import { ME } from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4466 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/CallSystemMessage.tsx");

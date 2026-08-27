@@ -1,10 +1,10 @@
-// Module ID: 10861
-// Function ID: 10862
-// Dependencies: [4872, 10862, 2]
+// Module ID: 9506
+// Function ID: 9507
+// Dependencies: [4873, 9507, 2]
 
-// Module 10861
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10862 */;
-import importDefaultResult from "map" /* 4872 */;
+// Module 9506
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 9507 */;
+import importDefaultResult from "map" /* 4873 */;
 
 const obj = { componentName: "DCDVideoRenderer", componentFoundInstance: __INTERNAL_VIEW_CONFIGDefault };
 const importDefaultResultResult = importDefaultResult(obj);

@@ -1,19 +1,19 @@
-// Module ID: 10819
-// Function ID: 10820
+// Module ID: 9460
+// Function ID: 9461
 // Name: usePipVideoOrStream
-// Dependencies: [1390, 4460, 10820, 4466, 1218, 1391, 4495, 4518, 4465, 589, 4510, 4298, 10809, 2]
+// Dependencies: [1390, 4461, 9461, 4467, 1218, 1391, 4496, 4519, 4466, 589, 4511, 4299, 9447, 2]
 // Exports: default, useHasPipParticipant
 
-// Module 10819 (usePipVideoOrStream)
+// Module 9460 (usePipVideoOrStream)
 import closure_3 from "participantFromServer" /* 1390 */;
-import closure_4 from "getParticipants" /* 4460 */;
-import closure_5 from "updateSpeaker" /* 10820 */;
-import closure_6 from "reset" /* 4466 */;
+import closure_4 from "getParticipants" /* 4461 */;
+import closure_5 from "updateSpeaker" /* 9461 */;
+import closure_6 from "reset" /* 4467 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4495 */;
-import closure_10 from "createRTCConnection" /* 4518 */;
-import ParticipantTypes from "ParticipantTypes" /* 4465 */;
+import closure_9 from "_detectH265HardwareDecode" /* 4496 */;
+import closure_10 from "createRTCConnection" /* 4519 */;
+import ParticipantTypes from "ParticipantTypes" /* 4466 */;
 
 const require = arg1;
 ({ isStreamParticipant: unpackModuleId, isUserParticipant: closure_12, ParticipantTypes: map1 } = ParticipantTypes);

@@ -1,17 +1,17 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11589
+// Function ID: 11590
 // Name: useTrackAppLauncherHomeItemImpression
-// Dependencies: [19, 11758, 11745, 7799, 506, 2]
+// Dependencies: [19, 11590, 11577, 8368, 506, 2]
 // Exports: useTrackAppLauncherHomeItemImpression
 
-// Module 11757 (useTrackAppLauncherHomeItemImpression)
+// Module 11589 (useTrackAppLauncherHomeItemImpression)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/home/useTrackAppLauncherHomeItemImpression.tsx");
 
 export const useTrackAppLauncherHomeItemImpression = function useTrackAppLauncherHomeItemImpression() {
-  let obj = trackAppLauncherItemImpressionOnFirstView(11758);
+  let obj = trackAppLauncherItemImpressionOnFirstView(11590);
   trackAppLauncherItemImpressionOnFirstView = obj.useTrackAppLauncherItemImpressionOnFirstView().trackAppLauncherItemImpressionOnFirstView;
   obj = {
     trackAppLauncherHomeItemImpression: React.useCallback((viewableItems) => {

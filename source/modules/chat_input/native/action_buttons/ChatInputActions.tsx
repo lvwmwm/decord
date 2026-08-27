@@ -1,16 +1,16 @@
-// Module ID: 11876
-// Function ID: 11877
+// Module ID: 11705
+// Function ID: 11706
 // Name: CHAT_INPUT_TIMING_CONFIG
-// Dependencies: [32, 19, 11602, 676, 21, 4444, 712, 4884, 1367, 8616, 4165, 6179, 4308, 1627, 11877, 11643, 4875, 5042, 1236, 10244, 4983, 10229, 11878, 7902, 10013, 11652, 11640, 698, 4184, 4445, 8813, 11880, 4169, 11881, 11882, 11886, 2]
+// Dependencies: [32, 19, 11453, 676, 21, 4445, 712, 4885, 1367, 7549, 4165, 6185, 4309, 1627, 11706, 7522, 4876, 5047, 1236, 10365, 4988, 10350, 11707, 9171, 10115, 11709, 11711, 698, 4185, 4446, 8717, 11723, 4169, 11724, 11725, 11729, 2]
 
-// Module 11876 (CHAT_INPUT_TIMING_CONFIG)
+// Module 11705 (CHAT_INPUT_TIMING_CONFIG)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import TextAreaCta from "TextAreaCta" /* 11602 */;
+import TextAreaCta from "TextAreaCta" /* 11453 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -171,7 +171,7 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
         const obj5 = { label: null, IconComponent: null, action: null };
         const intl7 = canStartThreads(isAppLauncherEnabled[18]).intl;
         obj5[0] = intl7.string(canStartThreads(isAppLauncherEnabled[18]).t["3+ii4F"]);
-        obj5[1] = canStartThreads(isAppLauncherEnabled[25]).HourglassIcon;
+        obj5[1] = canStartThreads(isAppLauncherEnabled[25]).CalendarPlusIcon;
         obj5[2] = function action() {
           return closure_1_0(closure_1_2[26]).openScheduleMessageActionSheet(id.id);
         };

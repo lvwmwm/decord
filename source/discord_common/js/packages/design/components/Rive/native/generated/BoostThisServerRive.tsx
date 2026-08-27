@@ -1,11 +1,11 @@
-// Module ID: 4177
-// Function ID: 4178
+// Module ID: 4178
+// Function ID: 4179
 // Name: BoostThisServerRive
-// Dependencies: [109, 19, 21, 4178, 4232, 4233, 2]
+// Dependencies: [109, 19, 21, 4179, 4233, 4234, 2]
 
-// Module 4177 (BoostThisServerRive)
-import BaseRive from "BaseRive" /* 4178 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4233 */;
+// Module 4178 (BoostThisServerRive)
+import BaseRive from "BaseRive" /* 4179 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4234 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

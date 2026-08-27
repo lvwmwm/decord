@@ -1,10 +1,10 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15667
+// Function ID: 15668
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 1388, 4325, 6197, 1377, 2]
+// Dependencies: [32, 19, 1388, 4326, 6203, 1377, 2]
 // Exports: default
 
-// Module 15602 (useGuildThemeNuxTrigger)
+// Module 15667 (useGuildThemeNuxTrigger)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { DismissibleContentGroupName as closure_4 } from "ContentDismissActionType" /* 1388 */;

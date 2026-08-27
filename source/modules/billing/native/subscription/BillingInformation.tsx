@@ -1,10 +1,10 @@
-// Module ID: 7848
-// Function ID: 7849
+// Module ID: 12922
+// Function ID: 12923
 // Name: getBillingInformationStringNative
-// Dependencies: [5, 676, 4107, 501, 1236, 7630, 2]
+// Dependencies: [5, 676, 4107, 501, 1236, 10714, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 7848 (getBillingInformationStringNative)
+// Module 12922 (getBillingInformationStringNative)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { SubscriptionStatusTypes } from "ME" /* 676 */;
 

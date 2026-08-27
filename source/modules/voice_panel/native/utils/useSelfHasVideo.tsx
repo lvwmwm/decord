@@ -1,13 +1,13 @@
-// Module ID: 16513
-// Function ID: 16514
+// Module ID: 16579
+// Function ID: 16580
 // Name: useSelfHasVideo
-// Dependencies: [4460, 1218, 4495, 589, 10866, 2]
+// Dependencies: [4461, 1218, 4496, 589, 9512, 2]
 // Exports: default
 
-// Module 16513 (useSelfHasVideo)
-import closure_2 from "getParticipants" /* 4460 */;
+// Module 16579 (useSelfHasVideo)
+import closure_2 from "getParticipants" /* 4461 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4496 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/utils/useSelfHasVideo.tsx");

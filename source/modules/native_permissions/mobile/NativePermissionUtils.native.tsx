@@ -1,21 +1,21 @@
-// Module ID: 5037
-// Function ID: 5038
+// Module ID: 5042
+// Function ID: 5043
 // Name: combineStatuses
-// Dependencies: [5, 19, 17, 4682, 21, 500, 1625, 5034, 3, 5038, 5040, 2009, 4810, 1236, 2]
+// Dependencies: [5, 19, 17, 4683, 21, 500, 1625, 5039, 3, 5043, 5045, 2009, 4811, 1236, 2]
 
-// Module 5037 (combineStatuses)
+// Module 5042 (combineStatuses)
 import timestampDefault from "timestamp" /* 3 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useAlertStore from "useAlertStore" /* 4810 */;
-import openPrivacySettingsDefault from "openPrivacySettings" /* 5038 */;
+import useAlertStore from "useAlertStore" /* 4811 */;
+import openPrivacySettingsDefault from "openPrivacySettings" /* 5043 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import NativePermissionStatus from "NativePermissionStatus" /* 4682 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4683 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 500 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
-import { NativePermissionBaseUtils } from "requestAuthorization" /* 5034 */;
+import { NativePermissionBaseUtils } from "requestAuthorization" /* 5039 */;
 
 require = arg1;
 function combineStatuses(items) {

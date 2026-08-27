@@ -1,9 +1,9 @@
-// Module ID: 4659
-// Function ID: 4660
+// Module ID: 4660
+// Function ID: 4661
 // Name: handleSettingsLoadSuccess
 // Dependencies: [589, 709, 2]
 
-// Module 4659 (handleSettingsLoadSuccess)
+// Module 4660 (handleSettingsLoadSuccess)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import set from "set" /* 2 */;

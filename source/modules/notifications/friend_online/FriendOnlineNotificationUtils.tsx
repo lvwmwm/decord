@@ -1,10 +1,10 @@
-// Module ID: 14984
-// Function ID: 14985
+// Module ID: 15048
+// Function ID: 15049
 // Name: onFriendOnlineNotificationSettingsChanged
 // Dependencies: [4101, 676, 4134, 698, 2]
 // Exports: onFriendOnlineNotificationSettingsChanged, onNotifyFriendsOnComeOnlineSettingsChanged
 
-// Module 14984 (onFriendOnlineNotificationSettingsChanged)
+// Module 15048 (onFriendOnlineNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

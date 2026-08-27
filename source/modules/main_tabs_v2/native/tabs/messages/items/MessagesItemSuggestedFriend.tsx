@@ -1,21 +1,21 @@
-// Module ID: 15480
-// Function ID: 15481
+// Module ID: 15545
+// Function ID: 15546
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [32, 19, 17, 4098, 676, 21, 4444, 712, 9666, 8998, 2009, 647, 1236, 4288, 15481, 15482, 698, 5015, 1297, 4440, 4879, 4389, 7957, 15479, 2]
+// Dependencies: [32, 19, 17, 4098, 676, 21, 4445, 712, 9009, 8819, 2009, 647, 1236, 4289, 15546, 15547, 698, 5020, 1297, 4441, 4880, 4390, 8037, 15544, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 15480 (getMessagesItemSuggestedFriendHeight)
+// Module 15545 (getMessagesItemSuggestedFriendHeight)
 import ThemesDefault from "Themes" /* 712 */;
-import noop from "noop" /* 7957 */;
-import map from "map" /* 9666 */;
-import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15479 */;
+import noop from "noop" /* 8037 */;
+import map from "map" /* 9009 */;
+import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15544 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "markAllUserIdListsStale" /* 4098 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 let c4 = importAllResult;

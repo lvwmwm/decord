@@ -1,14 +1,14 @@
-// Module ID: 6707
-// Function ID: 6708
+// Module ID: 6713
+// Function ID: 6714
 // Name: LaptopSpotIllustration
-// Dependencies: [21, 5440, 6708, 2]
+// Dependencies: [21, 5445, 6714, 2]
 // Exports: LaptopSpotIllustration
 
-// Module 6707 (LaptopSpotIllustration)
+// Module 6713 (LaptopSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6708 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6714 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/LaptopSpotIllustration.native.tsx");

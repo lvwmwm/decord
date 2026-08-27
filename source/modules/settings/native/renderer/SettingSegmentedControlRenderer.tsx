@@ -1,18 +1,18 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15305
+// Function ID: 15306
 // Name: SettingSegmentedControl
-// Dependencies: [32, 19, 17, 14169, 10585, 21, 4444, 712, 15232, 14174, 38, 14172, 9171, 9357, 12247, 2]
+// Dependencies: [32, 19, 17, 14196, 10989, 21, 4445, 712, 15296, 14201, 38, 14199, 9181, 9683, 9189, 2]
 // Exports: default
 
-// Module 15241 (SettingSegmentedControl)
+// Module 15305 (SettingSegmentedControl)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "zustandStore" /* 14169 */;
-import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10585 */;
+import closure_6 from "zustandStore" /* 14196 */;
+import { NodeType } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 10989 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
@@ -74,10 +74,10 @@ export default function SettingSegmentedControl(node) {
     });
     return items;
   }, items);
-  let obj = _require(9171);
+  let obj = _require(9181);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp3, defaultIndex: tmp5 });
   obj = { children: null };
-  obj = { style: tmp.controlContainer, onLayout: callback, children: callback2(_require(9357).SegmentedControl, { state: segmentedControlState }) };
+  obj = { style: tmp.controlContainer, onLayout: callback, children: callback2(_require(9683).SegmentedControl, { state: segmentedControlState }) };
   const items1 = [callback2(View, obj), ];
   const tmp4 = callback(React.useState(() => {
     const field = closure_1_6.getField("selected");
@@ -102,7 +102,7 @@ export default function SettingSegmentedControl(node) {
     }
     return c0;
   }), 2);
-  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(_require(12247).SegmentedControlPages, { state: segmentedControlState }) });
+  items1[1] = callback2(View, { style: tmp.pageContainer, children: callback2(_require(9189).SegmentedControlPages, { state: segmentedControlState }) });
   obj[0] = items1;
   return callback3(closure_9, obj);
 };

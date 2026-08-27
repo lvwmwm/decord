@@ -1,12 +1,12 @@
-// Module ID: 8217
-// Function ID: 8218
-// Dependencies: [19, 17, 676, 21, 4444, 8218, 2]
+// Module ID: 8323
+// Function ID: 8324
+// Dependencies: [19, 17, 676, 21, 4445, 8324, 2]
 
-// Module 8217
-import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8218 */;
+// Module 8323
+import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8324 */;
 import { Text } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

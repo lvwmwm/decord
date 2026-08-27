@@ -1,14 +1,14 @@
-// Module ID: 7916
-// Function ID: 7917
+// Module ID: 8028
+// Function ID: 8029
 // Name: NitroWheelIcon
-// Dependencies: [19, 21, 712, 4164, 7917, 2]
+// Dependencies: [19, 21, 712, 4164, 7892, 2]
 // Exports: NitroWheelIcon
 
-// Module 7916 (NitroWheelIcon)
+// Module 8028 (NitroWheelIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 7917 */;
+import registerAsset from "registerAsset" /* 7892 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

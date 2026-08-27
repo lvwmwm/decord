@@ -1,9 +1,9 @@
-// Module ID: 6894
-// Function ID: 6895
+// Module ID: 6900
+// Function ID: 6901
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6894 (metadata)
+// Module 6900 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SecurityKeySpotIllustration-2x.png.js");

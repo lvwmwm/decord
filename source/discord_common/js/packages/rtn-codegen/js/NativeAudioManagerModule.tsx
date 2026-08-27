@@ -1,10 +1,10 @@
-// Module ID: 9369
-// Function ID: 9370
+// Module ID: 9700
+// Function ID: 9701
 // Name: enforcing
 // Dependencies: [17, 2]
 // Exports: getInvalidAndroidDevice
 
-// Module 9369 (enforcing)
+// Module 9700 (enforcing)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

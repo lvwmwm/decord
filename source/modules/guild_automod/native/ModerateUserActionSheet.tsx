@@ -1,8 +1,8 @@
-// Module ID: 11466
-// Function ID: 11467
-// Dependencies: [19, 1992, 1910, 4089, 1922, 676, 21, 4444, 589, 11467, 11468, 4637, 4411, 5938, 1236, 6186, 4675, 11469, 2009, 11465, 4078, 11486, 11472, 4385, 11488, 10681, 11490, 5569, 5568, 11492, 5939, 2]
+// Module ID: 11321
+// Function ID: 11322
+// Dependencies: [19, 1992, 1910, 4089, 1922, 676, 21, 4445, 589, 11322, 8360, 4638, 4412, 5943, 1236, 6192, 4676, 11323, 2009, 11320, 4078, 11340, 11326, 4386, 11342, 9294, 11344, 5574, 5573, 11346, 5944, 2]
 
-// Module 11466
+// Module 11321
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "trackCommunicationDisabled" /* 1992 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
@@ -10,7 +10,7 @@ import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { Permissions } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let c3 = importAllResult;

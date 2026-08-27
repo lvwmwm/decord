@@ -1,18 +1,18 @@
-// Module ID: 8367
-// Function ID: 8368
+// Module ID: 7881
+// Function ID: 7882
 // Name: createGuildReportFalseAlarmSystemMessage
-// Dependencies: [1391, 8281, 8288, 8359, 8290, 8360, 8291, 1236, 1438, 1435, 2]
+// Dependencies: [1391, 7795, 7802, 7873, 7804, 7874, 7805, 1236, 1438, 1435, 2]
 // Exports: createGuildReportFalseAlarmSystemMessage
 
-// Module 8367 (createGuildReportFalseAlarmSystemMessage)
+// Module 7881 (createGuildReportFalseAlarmSystemMessage)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import ensureAvatarSource from "ensureAvatarSource" /* 1438 */;
-import resultDefault from "result" /* 8281 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8288 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8290 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8291 */;
-import nativeStyleProperties from "nativeStyleProperties" /* 8359 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8360 */;
+import resultDefault from "result" /* 7795 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7802 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7804 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7805 */;
+import nativeStyleProperties from "nativeStyleProperties" /* 7873 */;
+import getTagPropertiesDefault from "getTagProperties" /* 7874 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 require = arg1;

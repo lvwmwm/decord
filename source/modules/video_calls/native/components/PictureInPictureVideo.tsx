@@ -1,29 +1,29 @@
-// Module ID: 10835
-// Function ID: 10836
+// Module ID: 9477
+// Function ID: 9478
 // Name: areParticipantsEqual
-// Dependencies: [32, 19, 17, 1390, 4460, 1218, 4495, 1981, 5310, 10815, 9962, 4465, 21, 4444, 1297, 712, 9971, 12, 10812, 10836, 589, 4673, 10837, 10840, 10850, 10866, 10867, 10874, 10808, 10910, 4165, 8457, 9278, 10822, 10818, 10821, 1494, 500, 9110, 2]
+// Dependencies: [32, 19, 17, 1390, 4461, 1218, 4496, 1981, 5315, 9456, 9441, 4466, 21, 4445, 1297, 712, 9478, 12, 9450, 9479, 589, 4674, 9480, 9483, 9494, 9512, 9513, 9521, 9440, 9543, 4165, 7973, 9515, 9463, 9459, 9462, 1494, 500, 8534, 2]
 
-// Module 10835 (areParticipantsEqual)
+// Module 9477 (areParticipantsEqual)
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 10818 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 10821 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 10822 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9459 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 9462 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 9463 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "participantFromServer" /* 1390 */;
-import closure_7 from "getParticipants" /* 4460 */;
+import closure_7 from "getParticipants" /* 4461 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_9 from "_detectH265HardwareDecode" /* 4496 */;
 import closure_10 from "handleConnectionOpen" /* 1981 */;
-import closure_11 from "anyoneHasFlagInContext" /* 5310 */;
-import closure_12 from "initialize" /* 10815 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9962 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
+import closure_11 from "anyoneHasFlagInContext" /* 5315 */;
+import closure_12 from "initialize" /* 9456 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9441 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4466 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import Button from "Button" /* 1297 */;
 
 require = arg1;

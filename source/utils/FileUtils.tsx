@@ -1,12 +1,12 @@
-// Module ID: 5025
-// Function ID: 5026
+// Module ID: 5030
+// Function ID: 5031
 // Name: getUploadFileSizeSum
-// Dependencies: [1910, 1922, 676, 1924, 12, 5026, 4370, 4107, 4338, 1236, 2]
+// Dependencies: [1910, 1922, 676, 1924, 12, 5031, 4371, 4107, 4339, 1236, 2]
 // Exports: anyFileTooLarge, classifyFile, classifyFileName, fileUploadLimitRoadblockDescription, getMaxRequestSize, makeFile, maxFileSize, sizeString, transformNativeFile, uploadSumTooLarge
 
-// Module 5025 (getUploadFileSizeSum)
+// Module 5030 (getUploadFileSizeSum)
 import applyDefault from "apply" /* 12 */;
-import noConflictDefault from "noConflict" /* 5026 */;
+import noConflictDefault from "noConflict" /* 5031 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
@@ -131,7 +131,7 @@ export const maxFileSize = function maxFileSize(guildId) {
   } else {
     const guild = store.getGuild(guildId);
     if (null != guild) {
-      const FileUploadPowerupHoldoutExperiment = guild(4370).FileUploadPowerupHoldoutExperiment;
+      const FileUploadPowerupHoldoutExperiment = guild(4371).FileUploadPowerupHoldoutExperiment;
       enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
       let reduced = items2.reduce((arg0, arg1) => {
         [tmp, tmp2] = arg1;
@@ -169,7 +169,7 @@ export const anyFileTooLarge = function anyFileTooLarge(arg0, arg1) {
   } else {
     guild = store.getGuild(arg1);
     if (null != guild) {
-      const FileUploadPowerupHoldoutExperiment = guild(4370).FileUploadPowerupHoldoutExperiment;
+      const FileUploadPowerupHoldoutExperiment = guild(4371).FileUploadPowerupHoldoutExperiment;
       enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
       guild = items2;
       reduce = items2.reduce;
@@ -215,7 +215,7 @@ export const getMaxRequestSize = function getMaxRequestSize() {
 export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadblockDescription(arg0) {
   ({ guildId, maxSize } = arg0);
   ({ onClick, hideLearnMore } = arg0);
-  let obj = _Math(4338);
+  let obj = _Math(4339);
   if (maxSize == null) {
     const currentUser = authStore.getCurrentUser();
     const userMaxFileSize = enabled(4107).getUserMaxFileSize(currentUser);
@@ -224,7 +224,7 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
     } else {
       _Math = store.getGuild(guildId);
       if (null != _Math) {
-        const FileUploadPowerupHoldoutExperiment = tmp(4370).FileUploadPowerupHoldoutExperiment;
+        const FileUploadPowerupHoldoutExperiment = tmp(4371).FileUploadPowerupHoldoutExperiment;
         enabled = FileUploadPowerupHoldoutExperiment.getConfig({ location: "getGuildMaxFileSize" }).enabled;
         let reduced = items2.reduce((arg0, arg1) => {
           [tmp, tmp2] = arg1;
@@ -252,7 +252,7 @@ export const fileUploadLimitRoadblockDescription = function fileUploadLimitRoadb
     const obj5 = enabled(4107);
   }
   const formatSizeResult = obj.formatSize(maxSize / 1024, { useKibibytes: true });
-  const formatSizeResult1 = _Math(4338).formatSize(closure_7 / 1024, { useKibibytes: true });
+  const formatSizeResult1 = _Math(4339).formatSize(closure_7 / 1024, { useKibibytes: true });
   if (true === hideLearnMore) {
     const intl2 = tmp(1236).intl;
     obj = { maxSize: null, premiumMaxSize: null };

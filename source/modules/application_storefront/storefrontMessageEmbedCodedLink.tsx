@@ -1,10 +1,10 @@
-// Module ID: 7361
-// Function ID: 7362
+// Module ID: 7368
+// Function ID: 7369
 // Name: makeStorefrontSKUCodedLink
 // Dependencies: [32, 2]
 // Exports: makeStorefrontSKUCodedLink, parseStorefrontSkuCodedLink
 
-// Module 7361 (makeStorefrontSKUCodedLink)
+// Module 7368 (makeStorefrontSKUCodedLink)
 import closure_0 from "_slicedToArray" /* 32 */;
 
 const result = require("set").fileFinishedImporting("modules/application_storefront/storefrontMessageEmbedCodedLink.tsx");

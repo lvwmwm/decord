@@ -1,13 +1,13 @@
-// Module ID: 15351
-// Function ID: 15352
-// Dependencies: [19, 17, 21, 4444, 712, 1500, 1629, 5939, 14125, 5546, 14122, 2]
+// Module ID: 15416
+// Function ID: 15417
+// Dependencies: [19, 17, 21, 4445, 712, 1500, 1629, 5944, 14152, 5551, 14149, 2]
 
-// Module 15351
+// Module 15416
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -22,7 +22,7 @@ const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScree
   obj = { paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };
   obj[1] = obj;
   obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(14125).PerformanceTestingScreens);
+  const entries = Object.entries(_require(14152).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
     [tmp, ] = arg0;
     return closure_1_4(callback(closure_1_2[9]).TableRow, {
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScree
       }
     }, tmp);
   });
-  obj[2] = jsx(_require(5939).TableRowGroup, { hasIcons: true, children: null });
+  obj[2] = jsx(_require(5944).TableRowGroup, { hasIcons: true, children: null });
   return <ScrollView paddingBottom={useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16} />;
 });
 const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");

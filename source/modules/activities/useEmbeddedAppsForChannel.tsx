@@ -1,13 +1,13 @@
-// Module ID: 11715
-// Function ID: 11716
+// Module ID: 11548
+// Function ID: 11549
 // Name: useEmbeddedApps
-// Dependencies: [19, 4533, 1922, 1390, 589, 4079, 5906, 1370, 2]
+// Dependencies: [19, 4534, 1922, 1390, 589, 4079, 5911, 1370, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 11715 (useEmbeddedApps)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5906 */;
+// Module 11548 (useEmbeddedApps)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5911 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "sortActivity" /* 4533 */;
+import closure_4 from "sortActivity" /* 4534 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import closure_6 from "participantFromServer" /* 1390 */;
 import { NO_ACTIVITIES } from "participantFromServer" /* 1390 */;

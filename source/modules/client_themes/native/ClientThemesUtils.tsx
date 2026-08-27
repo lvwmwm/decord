@@ -1,23 +1,23 @@
-// Module ID: 4263
-// Function ID: 4264
+// Module ID: 4264
+// Function ID: 4265
 // Name: getGradientColorByPercentage
-// Dependencies: [32, 19, 1302, 4264, 1346, 712, 689, 4292, 4293, 1349, 1363, 4294, 4379, 4376, 2]
+// Dependencies: [32, 19, 1302, 4265, 1346, 712, 689, 4293, 4294, 1349, 1363, 4295, 4380, 4377, 2]
 // Exports: colorToHex, getClientThemesGradientColorByPercentage, getClientThemesGradientHexColors, getEmbedBackground, getEmbedScrollGradientBackground, getGradientThemeMetadata, getGradientValue, useGradientValue
 
-// Module 4263 (getGradientColorByPercentage)
+// Module 4264 (getGradientColorByPercentage)
 import nDefault from "n" /* 689 */;
 import ThemesDefault from "Themes" /* 712 */;
 import ClientThemeType from "ClientThemeType" /* 1349 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import hexToRgba from "hexToRgba" /* 4292 */;
-import hslToRgbDefault from "hslToRgb" /* 4293 */;
-import getGuildThemeNameDefault from "getGuildThemeName" /* 4294 */;
-import getCustomThemesName from "getCustomThemesName" /* 4376 */;
-import useThemeDefault from "useTheme" /* 4379 */;
+import hexToRgba from "hexToRgba" /* 4293 */;
+import hslToRgbDefault from "hslToRgb" /* 4294 */;
+import getGuildThemeNameDefault from "getGuildThemeName" /* 4295 */;
+import getCustomThemesName from "getCustomThemesName" /* 4377 */;
+import useThemeDefault from "useTheme" /* 4380 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
-import closure_6 from "isSyncedModeThemesEnabled" /* 4264 */;
+import closure_6 from "isSyncedModeThemesEnabled" /* 4265 */;
 import closure_7 from "reset" /* 1346 */;
 
 require = arg1;
@@ -35,7 +35,7 @@ function getGradientColorByPercentage(type, END) {
   } else {
     colors = type.customThemeSettings.colors;
     if (1 === colors.length) {
-      return tmp(4292).hexToRgb(colors[0]);
+      return tmp(4293).hexToRgb(colors[0]);
     } else {
       const mapped2 = colors.map((arg0, arg1) => arg1 / (colors.length - 1) * 100);
       obj = nDefault;
@@ -152,8 +152,8 @@ function calculateGradientValueWithOpacity(customBackgroundGradient, END, theme)
     const tmp30 = getGradientColorByPercentage(customBackgroundGradient, tmp10);
     const tmp35 = new hslToRgbDefault(tmp30.r, tmp30.g, tmp30.b, tmp11);
     const tmp38 = new hslToRgbDefault(hexToRgbResult.r, hexToRgbResult.g, hexToRgbResult.b, 1 - tmp11);
-    const mixColorsResult = tmp(4292).mixColors(tmp35, tmp38);
-    const tmpResult1 = tmp(4292);
+    const mixColorsResult = tmp(4293).mixColors(tmp35, tmp38);
+    const tmpResult1 = tmp(4293);
     const obj5 = nDefault;
     return nDefault.rgb(mixColorsResult.red, mixColorsResult.green, mixColorsResult.blue).hex("rgb");
   }

@@ -1,9 +1,9 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16767
+// Function ID: 16768
 // Name: link
 // Dependencies: [4160, 2]
 
-// Module 16701 (link)
+// Module 16767 (link)
 import set from "set" /* 2 */;
 import t from "t" /* 4160 */;
 

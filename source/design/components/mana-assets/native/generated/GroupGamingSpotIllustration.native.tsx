@@ -1,14 +1,14 @@
-// Module ID: 6669
-// Function ID: 6670
+// Module ID: 6675
+// Function ID: 6676
 // Name: GroupGamingSpotIllustration
-// Dependencies: [21, 5440, 6670, 2]
+// Dependencies: [21, 5445, 6676, 2]
 // Exports: GroupGamingSpotIllustration
 
-// Module 6669 (GroupGamingSpotIllustration)
+// Module 6675 (GroupGamingSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6670 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6676 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GroupGamingSpotIllustration.native.tsx");

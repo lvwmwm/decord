@@ -1,10 +1,10 @@
-// Module ID: 9851
-// Function ID: 9852
+// Module ID: 8998
+// Function ID: 8999
 // Name: useIsFriendRequestAlertsV2Enabled
 // Dependencies: [1472, 2]
 // Exports: isFriendRequestAlertsV2Enabled, useIsFriendRequestAlertsV2Enabled
 
-// Module 9851 (useIsFriendRequestAlertsV2Enabled)
+// Module 8998 (useIsFriendRequestAlertsV2Enabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

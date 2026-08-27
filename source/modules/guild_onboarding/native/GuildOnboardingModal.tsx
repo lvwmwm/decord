@@ -1,17 +1,17 @@
-// Module ID: 5436
-// Function ID: 5437
+// Module ID: 5441
+// Function ID: 5442
 // Name: headerTitle
-// Dependencies: [19, 5437, 1391, 1910, 1981, 5414, 5411, 676, 21, 1222, 5438, 5442, 5897, 5421, 5921, 5502, 589, 5419, 5506, 5955, 1236, 2]
+// Dependencies: [19, 5442, 1391, 1910, 1981, 5419, 5416, 676, 21, 1222, 5443, 5447, 5902, 5426, 5926, 5507, 589, 5424, 5511, 5960, 1236, 2]
 // Exports: default
 
-// Module 5436 (headerTitle)
+// Module 5441 (headerTitle)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "get" /* 5437 */;
+import closure_4 from "get" /* 5442 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
 import closure_7 from "handleConnectionOpen" /* 1981 */;
-import closure_8 from "handleUpdate" /* 5414 */;
-import { GuildOnboardingModalStates as closure_9 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5411 */;
+import closure_8 from "handleUpdate" /* 5419 */;
+import { GuildOnboardingModalStates as closure_9 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5416 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

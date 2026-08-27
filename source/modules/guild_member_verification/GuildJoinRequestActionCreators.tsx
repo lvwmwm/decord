@@ -1,15 +1,15 @@
-// Module ID: 8652
-// Function ID: 8653
+// Module ID: 7594
+// Function ID: 7595
 // Name: _fetchGuildJoinRequests
-// Dependencies: [5, 1395, 7130, 4267, 676, 4269, 709, 530, 7532, 4808, 1236, 5302, 2]
+// Dependencies: [5, 1395, 7136, 4268, 676, 4270, 709, 530, 7595, 4809, 1236, 5307, 2]
 
-// Module 8652 (_fetchGuildJoinRequests)
+// Module 7594 (_fetchGuildJoinRequests)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import trackMemberApplicationViewed from "trackMemberApplicationViewed" /* 7532 */;
+import trackMemberApplicationViewed from "trackMemberApplicationViewed" /* 7595 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1395 */;
-import closure_5 from "updateSubmittedGuildJoinRequestTotal" /* 7130 */;
-import { joinRequestFromServer } from "handleGatewayJoinRequestUpdate" /* 4267 */;
+import closure_5 from "updateSubmittedGuildJoinRequestTotal" /* 7136 */;
+import { joinRequestFromServer } from "handleGatewayJoinRequestUpdate" /* 4268 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -466,7 +466,7 @@ function _updateGuildJoinRequest() {
               let APPROVED;
               closure_4 = undefined;
               if (APPROVED === undefined) {
-                APPROVED = callback(4269).GuildJoinRequestApplicationStatuses.APPROVED;
+                APPROVED = callback(4270).GuildJoinRequestApplicationStatuses.APPROVED;
               }
               closure_5 = undefined;
               c7 = 1;
@@ -483,7 +483,7 @@ function _updateGuildJoinRequest() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj7 = callback(7532);
+              let obj7 = callback(7595);
               const obj2 = { guildId: null, actionType: null, applicationUserId: null };
               obj2[0] = callback;
               obj2[1] = APPROVED;
@@ -509,7 +509,7 @@ function _updateGuildJoinRequest() {
                   body = body.body.code === constants.REQUEST_TO_JOIN_USER_INELIGIBLE;
                 }
                 if (body) {
-                  let obj = callback2(4808);
+                  let obj = callback2(4809);
                   obj = { title: null, body: null };
                   const intl = callback(1236).intl;
                   obj[0] = intl.string(callback(1236).t.DxJj4e);

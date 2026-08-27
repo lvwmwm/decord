@@ -1,18 +1,18 @@
-// Module ID: 16398
-// Function ID: 16399
+// Module ID: 16462
+// Function ID: 16463
 // Name: HistorySeparator
-// Dependencies: [19, 17, 1391, 4459, 1922, 676, 21, 4444, 712, 6132, 16399, 589, 1297, 9880, 5440, 12583, 4457, 4455, 8612, 15542, 1367, 1494, 16404, 1236, 8226, 2]
+// Dependencies: [19, 17, 1391, 4460, 1922, 676, 21, 4445, 712, 6138, 16463, 589, 1297, 10568, 5445, 9351, 4458, 4456, 7545, 15607, 1367, 1494, 16468, 1236, 7728, 2]
 
-// Module 16398 (HistorySeparator)
+// Module 16462 (HistorySeparator)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "generateOldThreadCutoff" /* 4459 */;
+import closure_7 from "generateOldThreadCutoff" /* 4460 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import { ChannelTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function HistorySeparator() {
@@ -52,7 +52,7 @@ let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
     guildId(closure_1_2[9]).transitionToGuild(guildId);
   }, items1);
   obj = { size: 48, borderRadius: 16, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
-  obj[1] = callback(onGuildSelect(16399), obj);
+  obj[1] = callback(onGuildSelect(16463), obj);
   return callback(closure_5, obj);
 });
 let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId) {

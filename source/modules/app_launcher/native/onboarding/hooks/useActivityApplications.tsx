@@ -1,10 +1,10 @@
-// Module ID: 11694
-// Function ID: 11695
+// Module ID: 11527
+// Function ID: 11528
 // Name: useActivityApplications
-// Dependencies: [19, 11695, 10771, 2]
+// Dependencies: [19, 11528, 9390, 2]
 // Exports: useActivityApplications
 
-// Module 11694 (useActivityApplications)
+// Module 11527 (useActivityApplications)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
@@ -14,7 +14,7 @@ export const useActivityApplications = function useActivityApplications(guildId)
   guildId = guildId.guildId;
   const fetchesShelf = guildId.fetchesShelf;
   const items = [fetchesShelf, guildId];
-  const mapped = fetchesShelf(11695)({ guildId }).map((application) => application.application);
+  const mapped = fetchesShelf(11528)({ guildId }).map((application) => application.application);
   const effect = React.useEffect(() => {
     if (fetchesShelf) {
       let obj = guildId(closure_1_2[2]);

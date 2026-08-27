@@ -1,9 +1,9 @@
-// Module ID: 5032
-// Function ID: 5033
+// Module ID: 5037
+// Function ID: 5038
 // Name: get
 // Dependencies: [4072, 2]
 
-// Module 5032 (get)
+// Module 5037 (get)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 4072 */;
 

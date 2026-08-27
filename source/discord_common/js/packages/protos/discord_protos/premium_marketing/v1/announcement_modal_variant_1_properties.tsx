@@ -1,13 +1,13 @@
-// Module ID: 7557
-// Function ID: 7558
+// Module ID: 8384
+// Function ID: 8385
 // Name: create
-// Dependencies: [32, 1307, 7558, 7559, 7560, 2]
+// Dependencies: [32, 1307, 8385, 8386, 8387, 2]
 
-// Module 7557 (create)
+// Module 8384 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create2 from "create" /* 7558 */;
-import create3 from "create" /* 7559 */;
-import create4 from "create" /* 7560 */;
+import create2 from "create" /* 8385 */;
+import create3 from "create" /* 8386 */;
+import create4 from "create" /* 8387 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType, MessageType as MessageType2, MessageType as MessageType3, MessageType as MessageType4, MessageType as MessageType5 } from "module_1307" /* 1307 */;
 
@@ -25,7 +25,7 @@ class FeatureCard$Type extends MessageType {
       name: "header_localized",
       kind: "message",
       T() {
-            return callback(7558).LocalizedString;
+            return callback(8385).LocalizedString;
           }
     };
     items[6] = {
@@ -33,7 +33,7 @@ class FeatureCard$Type extends MessageType {
       name: "pill_localized",
       kind: "message",
       T() {
-            return callback(7558).LocalizedString;
+            return callback(8385).LocalizedString;
           }
     };
     obj = { no: 8, name: "body_localized", kind: "message", T: null };
@@ -49,7 +49,7 @@ class FeatureCard$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(7559).HelpArticle;
+            return callback(8386).HelpArticle;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.FeatureCard", items, T);
@@ -225,7 +225,7 @@ let items = [
     name: "header_localized",
     kind: "message",
     T() {
-      return callback(7558).LocalizedString;
+      return callback(8385).LocalizedString;
     }
   },
   {
@@ -233,7 +233,7 @@ let items = [
     name: "pill_localized",
     kind: "message",
     T() {
-      return callback(7558).LocalizedString;
+      return callback(8385).LocalizedString;
     }
   },
   {
@@ -241,7 +241,7 @@ let items = [
     name: "body_localized",
     kind: "message",
     T() {
-      return callback(7558).LocalizedString;
+      return callback(8385).LocalizedString;
     }
   },
   {
@@ -249,7 +249,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(7559).HelpArticle;
+      return callback(8386).HelpArticle;
     }
   }
 ];
@@ -618,7 +618,7 @@ class Disclaimer$Type extends MessageType4 {
       name: "disclaimer_text_localized",
       kind: "message",
       T() {
-            return callback(7558).LocalizedString;
+            return callback(8385).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.Disclaimer", items, T);
@@ -738,7 +738,7 @@ const items3 = [
     name: "disclaimer_help_article",
     kind: "message",
     T() {
-      return callback(7559).HelpArticle;
+      return callback(8386).HelpArticle;
     }
   },
   {
@@ -746,7 +746,7 @@ const items3 = [
     name: "disclaimer_text_localized",
     kind: "message",
     T() {
-      return callback(7558).LocalizedString;
+      return callback(8385).LocalizedString;
     }
   }
 ];
@@ -773,7 +773,7 @@ class AnnouncementModalVariant1Properties$Type extends MessageType5 {
       name: "button",
       kind: "message",
       T() {
-            return callback(7560).CTAButton;
+            return callback(8387).CTAButton;
           }
     };
     items[6] = { no: 8, name: "hero_art_video_link_light_theme", kind: "scalar", T: 9 };
@@ -810,7 +810,7 @@ class AnnouncementModalVariant1Properties$Type extends MessageType5 {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(7559).HelpArticle;
+            return callback(8386).HelpArticle;
           }
     };
     items[14] = {
@@ -818,7 +818,7 @@ class AnnouncementModalVariant1Properties$Type extends MessageType5 {
       name: "header_localized",
       kind: "message",
       T() {
-            return callback(7558).LocalizedString;
+            return callback(8385).LocalizedString;
           }
     };
     obj = { no: 20, name: "subheader_localized", kind: "message", T: null };
@@ -834,7 +834,7 @@ class AnnouncementModalVariant1Properties$Type extends MessageType5 {
       name: "modal_top_pill_localized",
       kind: "message",
       T() {
-            return callback(7558).LocalizedString;
+            return callback(8385).LocalizedString;
           }
     };
     items[17] = { no: 7, name: "dismiss_key", kind: "scalar", T: 9 };

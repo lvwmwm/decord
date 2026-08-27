@@ -1,10 +1,10 @@
-// Module ID: 6023
-// Function ID: 6024
+// Module ID: 6028
+// Function ID: 6029
 // Name: STOREFRONT_MARKETING_GUILD_ID
 // Dependencies: [1929, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
-// Module 6023 (STOREFRONT_MARKETING_GUILD_ID)
+// Module 6028 (STOREFRONT_MARKETING_GUILD_ID)
 import set from "set" /* 2 */;
 import Environments2 from "Environments" /* 1929 */;
 

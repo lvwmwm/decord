@@ -1,14 +1,14 @@
-// Module ID: 14198
-// Function ID: 14199
+// Module ID: 14225
+// Function ID: 14226
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 17, 4436, 10358, 589, 2]
+// Dependencies: [19, 17, 4437, 8954, 589, 2]
 // Exports: default
 
-// Module 14198 (useScrollToUserProfileEditFormSection)
+// Module 14225 (useScrollToUserProfileEditFormSection)
 import closure_2 from "noop" /* 19 */;
 import { findNodeHandle } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
-import closure_5 from "zustandStore" /* 10358 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_5 from "zustandStore" /* 8954 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/native/useScrollToUserProfileEditFormSection.tsx");

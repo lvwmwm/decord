@@ -1,14 +1,14 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 14255
+// Function ID: 14256
 // Name: useNameplateSections
-// Dependencies: [32, 19, 7214, 7230, 647, 7226, 1236, 2]
+// Dependencies: [32, 19, 7220, 7236, 647, 7232, 1236, 2]
 // Exports: default
 
-// Module 14228 (useNameplateSections)
+// Module 14255 (useNameplateSections)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7214 */;
-import closure_5 from "map" /* 7230 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7220 */;
+import closure_5 from "map" /* 7236 */;
 
 const require = arg1;
 let obj = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };

@@ -1,10 +1,10 @@
-// Module ID: 5923
-// Function ID: 5924
+// Module ID: 5928
+// Function ID: 5929
 // Name: RoleDot
-// Dependencies: [19, 17, 1992, 1985, 676, 21, 4444, 712, 5924, 4134, 5927, 5928, 4161, 1236, 5925, 5933, 5944, 4440, 5015, 589, 5946, 5947, 2]
+// Dependencies: [19, 17, 1992, 1985, 676, 21, 4445, 712, 5929, 4134, 5932, 5933, 4161, 1236, 5930, 5938, 5949, 4441, 5020, 589, 5951, 5952, 2]
 // Exports: default
 
-// Module 5923 (RoleDot)
+// Module 5928 (RoleDot)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -12,7 +12,7 @@ import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRoleRecordFromRust" /* 1985 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function RoleDot(color) {
@@ -82,7 +82,7 @@ class RoleItem {
         const tmp5 = colorString;
       }
       obj = { children: null };
-      const items = [tmp3Result, roleIcon, tmp8(role(name[17]).Text, { variant: "text-xs/medium", children: name })];
+      const items = [tmp3Result, tmp8(role(name[17]).Text, { variant: "text-xs/medium", children: name }), roleIcon];
       obj[0] = items;
       return closure_1_11(closure_1_10, obj);
     };
@@ -184,8 +184,8 @@ export default function UserProfileRolesCard(userId) {
     obj[0] = guildId;
     obj[1] = roles;
     obj[2] = callback(RolesList, obj);
-    tmp4 = callback(guildId(5947), obj);
-    const tmp7 = guildId(5947);
+    tmp4 = callback(guildId(5952), obj);
+    const tmp7 = guildId(5952);
   }
   return tmp4;
 };

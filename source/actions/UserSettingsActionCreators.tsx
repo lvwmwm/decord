@@ -1,14 +1,14 @@
-// Module ID: 8913
-// Function ID: 8914
+// Module ID: 8145
+// Function ID: 8146
 // Name: saveGuildFolders
-// Dependencies: [5, 4264, 1303, 1302, 676, 1305, 1374, 1306, 1337, 709, 4291, 4134, 2]
+// Dependencies: [5, 4265, 1303, 1302, 676, 1305, 1374, 1306, 1337, 709, 4292, 4134, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 8913 (saveGuildFolders)
+// Module 8145 (saveGuildFolders)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "isSyncedModeThemesEnabled" /* 4264 */;
+import closure_4 from "isSyncedModeThemesEnabled" /* 4265 */;
 import closure_5 from "initialize" /* 1303 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
 import { ThemeTypes } from "ME" /* 676 */;

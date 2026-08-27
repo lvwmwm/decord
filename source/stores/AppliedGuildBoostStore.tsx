@@ -1,9 +1,9 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12041
+// Function ID: 12042
 // Name: handleModifyingAppliedBoostStart
 // Dependencies: [589, 709, 2]
 
-// Module 12193 (handleModifyingAppliedBoostStart)
+// Module 12041 (handleModifyingAppliedBoostStart)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

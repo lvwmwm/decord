@@ -1,10 +1,10 @@
-// Module ID: 8485
-// Function ID: 8486
+// Module ID: 8003
+// Function ID: 8004
 // Name: ANALYTICS_NAME
 // Dependencies: [676, 687, 1236, 1430, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 8485 (ANALYTICS_NAME)
+// Module 8003 (ANALYTICS_NAME)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import setDefault from "set" /* 687 */;
@@ -41,7 +41,7 @@ export const getNotificationsInboxGuild = function getNotificationsInboxGuild(ar
     const intl = getSystemLocale.intl;
     stringResult = intl.string(getSystemLocale.t.HcoRu0);
   }
-  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "opacity" };
+  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: true };
   obj[4] = [];
   return tmp2(1430).fromGuildBasic(obj);
 };

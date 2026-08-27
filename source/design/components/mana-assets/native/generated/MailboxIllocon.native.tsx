@@ -1,14 +1,14 @@
-// Module ID: 6719
-// Function ID: 6720
+// Module ID: 6725
+// Function ID: 6726
 // Name: MailboxIllocon
-// Dependencies: [21, 5440, 6720, 2]
+// Dependencies: [21, 5445, 6726, 2]
 // Exports: MailboxIllocon
 
-// Module 6719 (MailboxIllocon)
+// Module 6725 (MailboxIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6720 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6726 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MailboxIllocon.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 12986
-// Function ID: 12987
+// Module ID: 13009
+// Function ID: 13010
 // Name: metadata
 // Dependencies: [2]
 
-// Module 12986 (metadata)
+// Module 13009 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/images/perks/xbox_game_pass.jpg.js");

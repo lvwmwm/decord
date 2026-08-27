@@ -1,19 +1,19 @@
-// Module ID: 10732
-// Function ID: 10733
+// Module ID: 11016
+// Function ID: 11017
 // Name: AppStoreOverlayStatCardItem
-// Dependencies: [19, 17, 21, 4444, 712, 10733, 1236, 10734, 4440, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 11017, 1236, 11018, 4441, 2]
 // Exports: default
 
-// Module 10732 (AppStoreOverlayStatCardItem)
+// Module 11016 (AppStoreOverlayStatCardItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import formatAppStoreRatingValue from "formatAppStoreRatingValue" /* 10733 */;
-import FractionalStarDefault from "FractionalStar" /* 10734 */;
+import Text from "Text" /* 4441 */;
+import formatAppStoreRatingValue from "formatAppStoreRatingValue" /* 11017 */;
+import FractionalStarDefault from "FractionalStar" /* 11018 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function AppStoreOverlayStatCardItem(stat) {
@@ -29,10 +29,10 @@ function AppStoreOverlayStatCardItem(stat) {
     const result = obj2.formatAppStoreRatingValue(stat.rating, getSystemLocale.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      let tmp9Result = tmp9(10733);
+      let tmp9Result = tmp9(11017);
       result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1236).intl.currentLocale);
     }
-    tmp9Result = tmp9(10733);
+    tmp9Result = tmp9(11017);
     const appStoreStarFillAmounts = tmp9Result.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp9(1236).intl;
     let obj = { label: null, rating: null, maxRating: null, ratingCount: null };
@@ -91,7 +91,7 @@ function AppStoreOverlayStatCardItem(stat) {
     if (null == secondaryContent) {
       const obj5 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: null };
       obj5[3] = secondaryText;
-      secondaryContent = tmp21(tmp18(4440).Text, obj5);
+      secondaryContent = tmp21(tmp18(4441).Text, obj5);
     }
     obj4[1] = secondaryContent;
     tmp21Result = tmp21(tmp17, obj4);

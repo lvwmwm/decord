@@ -1,17 +1,17 @@
-// Module ID: 7072
-// Function ID: 7073
+// Module ID: 7078
+// Function ID: 7079
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 4436, 676, 21, 4444, 712, 647, 4184, 4878, 4891, 5951, 4440, 7073, 2]
+// Dependencies: [19, 17, 4437, 676, 21, 4445, 712, 647, 4185, 4879, 4892, 5956, 4441, 7079, 2]
 // Exports: default
 
-// Module 7072 (GuildBoostingMarketingPersistentCta)
+// Module 7078 (GuildBoostingMarketingPersistentCta)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import { AnalyticsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;
@@ -40,7 +40,7 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   let obj = isVisible(647);
   let items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  obj1 = isVisible(4184);
+  obj1 = isVisible(4185);
   const fn = function _() {
     let num = -120;
     if (!stateFromStores) {
@@ -60,7 +60,7 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
     obj[1] = isVisible(closure_1_2[9]).withSpring(num3, closure_1_8);
     return obj;
   };
-  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4878).withSpring, isVisible, SPRING_CONFIG: closure_8 };
+  obj = { useReducedMotion: stateFromStores, VISIBILITY_OFFSET: 120, withSpring: isVisible(4879).withSpring, isVisible, SPRING_CONFIG: closure_8 };
   fn.__closure = obj;
   fn.__workletHash = 14370895185277;
   fn.__initData = closure_10;
@@ -75,17 +75,17 @@ export default function GuildBoostingMarketingPersistentCta(arg0) {
   const obj2 = { style: tmp.innerWraper, children: null };
   const obj3 = { style: tmp.guildInfoContainer, children: null };
   const obj4 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: null };
-  const tmp4 = stateFromStores(4891);
-  obj4[3] = isVisible(5951).GuildIconSizes.LARGE;
-  const items3 = [callback(stateFromStores(5951), obj4), callback(isVisible(4440).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
+  const tmp4 = stateFromStores(4892);
+  obj4[3] = isVisible(5956).GuildIconSizes.LARGE;
+  const items3 = [callback(stateFromStores(5956), obj4), callback(isVisible(4441).Text, { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name })];
   obj3[1] = items3;
   const items4 = [callback2(View, obj3), ];
   const obj5 = { style: tmp.guildName, variant: "text-md/bold", lineClamp: 1, children: guild.name };
-  const tmp5 = stateFromStores(5951);
-  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(7073), obj7) });
+  const tmp5 = stateFromStores(5956);
+  items4[1] = callback(View, { style: tmp.buttonContainer, children: callback(stateFromStores(7079), obj7) });
   obj2[1] = items4;
   obj1[6] = callback2(View, obj2);
   obj[1] = callback(tmp4, obj1);
-  return callback(stateFromStores(4184).View, obj);
+  return callback(stateFromStores(4185).View, obj);
 };
 export const VISIBILITY_OFFSET = 120;

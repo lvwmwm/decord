@@ -1,7 +1,7 @@
 // Module ID: 4152
 // Function ID: 4153
 // Name: _openURL
-// Dependencies: [5, 4153, 9154, 2009, 2]
+// Dependencies: [5, 4153, 8579, 2009, 2]
 // Exports: default
 
 // Module 4152 (_openURL)

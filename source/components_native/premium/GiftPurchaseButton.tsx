@@ -1,15 +1,15 @@
-// Module ID: 13117
-// Function ID: 13118
+// Module ID: 13140
+// Function ID: 13141
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4113, 6031, 21, 4885, 4440, 589, 6034, 7630, 5900, 10256, 4809, 1236, 4107, 10252, 4880, 13118, 2]
+// Dependencies: [5, 19, 17, 4113, 6036, 21, 4886, 4441, 589, 6039, 10714, 5905, 10441, 4810, 1236, 4107, 10373, 4881, 13141, 2]
 // Exports: default
 
-// Module 13117 (GiftPurchaseButton)
+// Module 13140 (GiftPurchaseButton)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "reset" /* 4113 */;
-import closure_7 from "updateProduct" /* 6031 */;
+import closure_7 from "updateProduct" /* 6036 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -101,7 +101,7 @@ export default function GiftPurchaseButton(style) {
           }
         } else if (1 === tmp7) {
           premiumType = 0;
-          obj1 = closure_1_1(4809);
+          obj1 = closure_1_1(4810);
           const obj3 = { title: null, body: null };
           const intl = closure_1_0(1236).intl;
           obj3[0] = intl.string(closure_1_0(1236).t.R0RpRX);
@@ -135,7 +135,7 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          closure_1_0(10252).openGiftModal(obj5);
+          closure_1_0(10373).openGiftModal(obj5);
           c4 = 3;
           return { value: "HermesInternal", done: null };
         }

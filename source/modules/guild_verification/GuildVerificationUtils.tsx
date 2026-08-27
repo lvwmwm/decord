@@ -1,14 +1,14 @@
-// Module ID: 12948
-// Function ID: 12949
+// Module ID: 12712
+// Function ID: 12713
 // Name: inviteGuildHasPendingMemberDisabledVerification
-// Dependencies: [4267, 676, 4269, 1222, 8637, 2]
+// Dependencies: [4268, 676, 4270, 1222, 7579, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 12948 (inviteGuildHasPendingMemberDisabledVerification)
+// Module 12712 (inviteGuildHasPendingMemberDisabledVerification)
 import transitionTo from "transitionTo" /* 1222 */;
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4269 */;
-import openMemberVerificationModal from "openMemberVerificationModal" /* 8637 */;
-import closure_2 from "handleGatewayJoinRequestUpdate" /* 4267 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4270 */;
+import openMemberVerificationModal from "openMemberVerificationModal" /* 7579 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4268 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

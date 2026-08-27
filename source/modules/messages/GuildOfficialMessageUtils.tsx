@@ -1,19 +1,19 @@
-// Module ID: 6060
-// Function ID: 6061
+// Module ID: 6066
+// Function ID: 6067
 // Name: useCanManageGuildOfficialMessages
-// Dependencies: [1910, 4089, 4437, 676, 688, 689, 4292, 1363, 6061, 589, 6062, 6063, 2]
+// Dependencies: [1910, 4089, 4438, 676, 688, 689, 4293, 1363, 6067, 589, 6068, 6069, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
 
-// Module 6060 (useCanManageGuildOfficialMessages)
+// Module 6066 (useCanManageGuildOfficialMessages)
 import int2hslRaw from "int2hslRaw" /* 688 */;
 import nDefault from "n" /* 689 */;
-import hexToRgba from "hexToRgba" /* 4292 */;
-import experimentDefault from "experiment" /* 6061 */;
-import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6062 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6063 */;
+import hexToRgba from "hexToRgba" /* 4293 */;
+import experimentDefault from "experiment" /* 6067 */;
+import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6068 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6069 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
-import { GUILD_OFFICIAL_HIGHLIGHT_ALPHA as closure_5 } from "MESSAGE_GROUP_SPACING" /* 4437 */;
+import { GUILD_OFFICIAL_HIGHLIGHT_ALPHA as closure_5 } from "MESSAGE_GROUP_SPACING" /* 4438 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -172,33 +172,33 @@ export const useCanToggleGuildOfficialMessages = function useCanToggleGuildOffic
     }
   }
 };
-export const canSendGuildOfficialMessages = function canSendGuildOfficialMessages(guild, channel, _sendMessage) {
-  let enabled = null != guild;
+export const canSendGuildOfficialMessages = function canSendGuildOfficialMessages(throwTypeErrorResult, throwTypeErrorResult2, _sendMessage) {
+  let enabled = null != throwTypeErrorResult;
   if (enabled) {
-    const features = guild.features;
+    const features = throwTypeErrorResult.features;
     enabled = features.has(constants2.VERIFIED);
   }
   if (enabled) {
     let obj = experimentDefault;
     obj = { guildId: null, location: null };
-    obj[0] = guild.id;
+    obj[0] = throwTypeErrorResult.id;
     obj[1] = _sendMessage;
     enabled = obj.getCurrentConfig(obj).enabled;
   }
   if (enabled) {
-    enabled = closure_4.can(constants4.MANAGE_OFFICIAL_MESSAGES, channel);
+    enabled = closure_4.can(constants4.MANAGE_OFFICIAL_MESSAGES, throwTypeErrorResult2);
   }
   if (enabled) {
-    let isActiveChannelOrUnarchivableThread = null != channel && !channel.isPrivate();
+    let isActiveChannelOrUnarchivableThread = null != throwTypeErrorResult2 && !throwTypeErrorResult2.isPrivate();
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = useCanUnarchiveThread.getIsActiveChannelOrUnarchivableThread(channel);
+      isActiveChannelOrUnarchivableThread = useCanUnarchiveThread.getIsActiveChannelOrUnarchivableThread(throwTypeErrorResult2);
       const obj3 = useCanUnarchiveThread;
     }
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_VOICE;
+      isActiveChannelOrUnarchivableThread = throwTypeErrorResult2.type !== constants.GUILD_VOICE;
     }
     if (isActiveChannelOrUnarchivableThread) {
-      isActiveChannelOrUnarchivableThread = channel.type !== constants.GUILD_STAGE_VOICE;
+      isActiveChannelOrUnarchivableThread = throwTypeErrorResult2.type !== constants.GUILD_STAGE_VOICE;
     }
     enabled = isActiveChannelOrUnarchivableThread;
   }

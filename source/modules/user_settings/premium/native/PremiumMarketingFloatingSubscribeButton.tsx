@@ -1,17 +1,17 @@
-// Module ID: 13044
-// Function ID: 13045
+// Module ID: 13067
+// Function ID: 13068
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 4436, 676, 21, 4444, 712, 1629, 589, 13042, 5920, 689, 4184, 4445, 4891, 9726, 2]
+// Dependencies: [19, 17, 4437, 676, 21, 4445, 712, 1629, 589, 13065, 5925, 689, 4185, 4446, 4892, 8892, 2]
 // Exports: default
 
-// Module 13044 (PremiumMarketingFloatingSubscribeButton)
+// Module 13067 (PremiumMarketingFloatingSubscribeButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import { VerticalGradient } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

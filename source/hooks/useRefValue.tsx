@@ -1,10 +1,10 @@
-// Module ID: 5501
-// Function ID: 5502
+// Module ID: 5506
+// Function ID: 5507
 // Name: useRefValue
 // Dependencies: [2]
 // Exports: default
 
-// Module 5501 (useRefValue)
+// Module 5506 (useRefValue)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("hooks/useRefValue.tsx");

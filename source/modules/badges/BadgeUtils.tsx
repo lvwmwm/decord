@@ -1,13 +1,13 @@
-// Module ID: 9739
-// Function ID: 9740
+// Module ID: 8927
+// Function ID: 8928
 // Name: getProfileBadgeIconUrl
-// Dependencies: [9000, 9001, 9006, 2]
+// Dependencies: [8488, 8489, 8493, 2]
 // Exports: getLegacyIconUrlByBadgeId, getUnhideableBadgeIds, groupCustomizableBadges
 
-// Module 9739 (getProfileBadgeIconUrl)
-import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 9000 */;
-import BadgeId from "BadgeId" /* 9001 */;
-import set2 from "set" /* 9006 */;
+// Module 8927 (getProfileBadgeIconUrl)
+import USER_PROFILE_TOOLTIP_DELAY from "USER_PROFILE_TOOLTIP_DELAY" /* 8488 */;
+import BadgeId from "BadgeId" /* 8489 */;
+import set2 from "set" /* 8493 */;
 import set from "set" /* 2 */;
 
 function getProfileBadgeIconUrl(iconSrc) {

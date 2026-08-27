@@ -1,15 +1,15 @@
-// Module ID: 13532
-// Function ID: 13533
+// Module ID: 13559
+// Function ID: 13560
 // Name: _checkForNewerBuild
-// Dependencies: [5, 4425, 3, 530, 4158, 500, 691, 2]
+// Dependencies: [5, 4426, 3, 530, 4158, 500, 691, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 13532 (_checkForNewerBuild)
+// Module 13559 (_checkForNewerBuild)
 import timestampDefault from "timestamp" /* 3 */;
 import keys from "keys" /* 691 */;
 import _mod4158 from "module_4158" /* 4158 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL" /* 4425 */;
+import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL" /* 4426 */;
 
 require = arg1;
 function _checkForNewerBuild() {

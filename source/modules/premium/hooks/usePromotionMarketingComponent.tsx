@@ -1,14 +1,14 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 12927
+// Function ID: 12928
 // Name: usePromotionMarketingComponent
-// Dependencies: [32, 19, 7123, 7553, 7855, 589, 7581, 2]
+// Dependencies: [32, 19, 7129, 10394, 12928, 589, 8408, 2]
 // Exports: usePromotionMarketingComponent
 
-// Module 7854 (usePromotionMarketingComponent)
+// Module 12927 (usePromotionMarketingComponent)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "emitChanges" /* 7123 */;
-import closure_5 from "createEmptyPromotionsByType" /* 7553 */;
+import closure_4 from "emitChanges" /* 7129 */;
+import closure_5 from "createEmptyPromotionsByType" /* 10394 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/premium/hooks/usePromotionMarketingComponent.tsx");

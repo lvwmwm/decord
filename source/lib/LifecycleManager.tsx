@@ -1,9 +1,9 @@
-// Module ID: 4626
-// Function ID: 4627
+// Module ID: 4627
+// Function ID: 4628
 // Name: initialize
 // Dependencies: [2]
 
-// Module 4626 (initialize)
+// Module 4627 (initialize)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("lib/LifecycleManager.tsx");

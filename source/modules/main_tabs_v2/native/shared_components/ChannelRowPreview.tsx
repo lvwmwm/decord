@@ -1,27 +1,27 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10112
+// Function ID: 10113
 // Name: PreviewIcon
-// Dependencies: [19, 17, 4098, 21, 4983, 7926, 9866, 10013, 4387, 7918, 8623, 8625, 4886, 10015, 1367, 9990, 10018, 9666, 4440, 4379, 4444, 712, 4165, 4134, 8259, 8804, 8452, 8263, 589, 2]
+// Dependencies: [19, 17, 4098, 21, 4988, 10113, 9172, 10115, 4388, 10117, 7556, 7558, 4887, 10119, 1367, 10096, 10122, 9009, 4441, 4380, 4445, 712, 4165, 4134, 7774, 8704, 7967, 7778, 589, 2]
 
-// Module 10012 (PreviewIcon)
+// Module 10112 (PreviewIcon)
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
 import map from "map" /* 4165 */;
-import LinkIcon from "LinkIcon" /* 4387 */;
-import Text from "Text" /* 4440 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import getFontScale from "getFontScale" /* 4886 */;
-import ImageIcon from "ImageIcon" /* 4983 */;
-import StickerIcon from "StickerIcon" /* 7918 */;
-import VideoIcon from "VideoIcon" /* 7926 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 8623 */;
-import PhoneHangUpIcon from "PhoneHangUpIcon" /* 8625 */;
-import map2 from "map" /* 9666 */;
-import MusicIcon from "MusicIcon" /* 9866 */;
-import formatMessagePreview from "formatMessagePreview" /* 9990 */;
-import AttachmentIcon from "AttachmentIcon" /* 10013 */;
-import getOrParseMessagePreviewMarkupAST from "getOrParseMessagePreviewMarkupAST" /* 10015 */;
-import getLayoutStyles from "getLayoutStyles" /* 10018 */;
+import LinkIcon from "LinkIcon" /* 4388 */;
+import Text from "Text" /* 4441 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import getFontScale from "getFontScale" /* 4887 */;
+import ImageIcon from "ImageIcon" /* 4988 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 7556 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7558 */;
+import map2 from "map" /* 9009 */;
+import MusicIcon from "MusicIcon" /* 9172 */;
+import formatMessagePreview from "formatMessagePreview" /* 10096 */;
+import VideoIcon from "VideoIcon" /* 10113 */;
+import AttachmentIcon from "AttachmentIcon" /* 10115 */;
+import StickerIcon from "StickerIcon" /* 10117 */;
+import getOrParseMessagePreviewMarkupAST from "getOrParseMessagePreviewMarkupAST" /* 10119 */;
+import getLayoutStyles from "getLayoutStyles" /* 10122 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "markAllUserIdListsStale" /* 4098 */;

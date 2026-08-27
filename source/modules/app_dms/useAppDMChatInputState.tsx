@@ -1,15 +1,15 @@
-// Module ID: 12821
-// Function ID: 12822
+// Module ID: 12840
+// Function ID: 12841
 // Name: items
-// Dependencies: [19, 8561, 4485, 7293, 4470, 1922, 676, 1955, 589, 8530, 709, 5906, 2]
+// Dependencies: [19, 8078, 4486, 7299, 4471, 1922, 676, 1955, 589, 8047, 709, 5911, 2]
 // Exports: default
 
-// Module 12821 (items)
+// Module 12840 (items)
 import closure_3 from "noop" /* 19 */;
-import { useQueryState } from "getIndexKey" /* 8561 */;
-import closure_5 from "addApplication" /* 4485 */;
-import closure_6 from "createUserWidgetFromServer" /* 7293 */;
-import closure_7 from "createExecutable" /* 4470 */;
+import { useQueryState } from "getIndexKey" /* 8078 */;
+import closure_5 from "addApplication" /* 4486 */;
+import closure_6 from "createUserWidgetFromServer" /* 7299 */;
+import closure_7 from "createExecutable" /* 4471 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 

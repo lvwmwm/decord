@@ -1,10 +1,10 @@
-// Module ID: 14994
-// Function ID: 14995
+// Module ID: 15058
+// Function ID: 15059
 // Name: onUpcomingServerEventNotificationSettingsChanged
 // Dependencies: [4101, 676, 4134, 698, 2]
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 14994 (onUpcomingServerEventNotificationSettingsChanged)
+// Module 15058 (onUpcomingServerEventNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

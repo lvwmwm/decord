@@ -1,27 +1,27 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10360
+// Function ID: 10361
 // Name: NewCaption
-// Dependencies: [19, 17, 4805, 10240, 21, 4184, 4444, 712, 4292, 1297, 10184, 4440, 589, 5027, 10241, 1236, 5059, 5029, 10242, 10243, 4445, 1494, 10244, 4983, 10013, 2]
+// Dependencies: [19, 17, 4806, 10361, 21, 4185, 4445, 712, 4293, 1297, 10308, 4441, 589, 5032, 10362, 1236, 5064, 5034, 10363, 10364, 4446, 1494, 10365, 4988, 10115, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10239 (NewCaption)
+// Module 10360 (NewCaption)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import Text from "Text" /* 4440 */;
-import ImageIcon from "ImageIcon" /* 4983 */;
-import AttachmentIcon from "AttachmentIcon" /* 10013 */;
-import registerAssetDefault from "registerAsset" /* 10184 */;
-import CameraIcon from "CameraIcon" /* 10244 */;
+import Text from "Text" /* 4441 */;
+import ImageIcon from "ImageIcon" /* 4988 */;
+import AttachmentIcon from "AttachmentIcon" /* 10115 */;
+import registerAssetDefault from "registerAsset" /* 10308 */;
+import CameraIcon from "CameraIcon" /* 10365 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 4805 */;
-import frozen from "frozen" /* 10240 */;
+import closure_6 from "map" /* 4806 */;
+import frozen from "frozen" /* 10361 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import importDefaultResult from "module_4184" /* 4184 */;
-import hexToRgba from "hexToRgba" /* 4292 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import importDefaultResult from "module_4185" /* 4185 */;
+import hexToRgba from "hexToRgba" /* 4293 */;
 
 require = arg1;
 function NewCaption(arg0) {

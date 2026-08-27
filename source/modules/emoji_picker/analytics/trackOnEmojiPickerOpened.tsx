@@ -1,15 +1,15 @@
-// Module ID: 8892
-// Function ID: 8893
+// Module ID: 9049
+// Function ID: 9050
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 5348, 1391, 1981, 676, 1925, 1338, 8860, 8861, 4652, 4106, 2]
+// Dependencies: [19, 5353, 1391, 1981, 676, 1925, 1338, 9027, 9028, 4653, 4106, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 8892 (trackOnEmojiPickerOpened)
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4652 */;
-import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 8860 */;
-import useEmojiHotrail from "useEmojiHotrail" /* 8861 */;
+// Module 9049 (trackOnEmojiPickerOpened)
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4653 */;
+import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9027 */;
+import useEmojiHotrail from "useEmojiHotrail" /* 9028 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5348 */;
+import closure_4 from "getEmojiToGroupId" /* 5353 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "handleConnectionOpen" /* 1981 */;
 import { AnalyticEvents } from "ME" /* 676 */;

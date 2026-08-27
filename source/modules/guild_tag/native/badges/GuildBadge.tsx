@@ -1,53 +1,53 @@
-// Module ID: 13541
-// Function ID: 13542
+// Module ID: 13568
+// Function ID: 13569
 // Name: GuildBadge
-// Dependencies: [19, 8270, 21, 13542, 13545, 13546, 13547, 13548, 13549, 13550, 13551, 13552, 13553, 13554, 13555, 13556, 13557, 13558, 13559, 13560, 13561, 13562, 13563, 13564, 13565, 13566, 13567, 13568, 13569, 13570, 13571, 13572, 13573, 13574, 13575, 13576, 13577, 13578, 13579, 13580, 13581, 13582, 13583, 13584, 2]
+// Dependencies: [19, 7786, 21, 13569, 13572, 13573, 13574, 13575, 13576, 13577, 13578, 13579, 13580, 13581, 13582, 13583, 13584, 13585, 13586, 13587, 13588, 13589, 13590, 13591, 13592, 13593, 13594, 13595, 13596, 13597, 13598, 13599, 13600, 13601, 13602, 13603, 13604, 13605, 13606, 13607, 13608, 13609, 13610, 13611, 2]
 // Exports: GuildBadge
 
-// Module 13541 (GuildBadge)
+// Module 13568 (GuildBadge)
 import noopAll from "noop" /* 19 */;
-import items from "items" /* 13542 */;
-import items2 from "items" /* 13545 */;
-import items3 from "items" /* 13546 */;
-import items4 from "items" /* 13547 */;
-import items5 from "items" /* 13548 */;
-import items6 from "items" /* 13549 */;
-import items7 from "items" /* 13550 */;
-import items8 from "items" /* 13551 */;
-import items9 from "items" /* 13552 */;
-import items10 from "items" /* 13553 */;
-import items11 from "items" /* 13554 */;
-import items12 from "items" /* 13555 */;
-import items13 from "items" /* 13556 */;
-import items14 from "items" /* 13557 */;
-import items15 from "items" /* 13558 */;
-import items16 from "items" /* 13559 */;
-import items17 from "items" /* 13560 */;
-import items18 from "items" /* 13561 */;
-import items19 from "items" /* 13562 */;
-import items20 from "items" /* 13563 */;
-import items21 from "items" /* 13564 */;
-import items22 from "items" /* 13565 */;
-import items23 from "items" /* 13566 */;
-import items24 from "items" /* 13567 */;
-import items25 from "items" /* 13568 */;
-import items26 from "items" /* 13569 */;
-import items27 from "items" /* 13570 */;
-import items28 from "items" /* 13571 */;
-import items29 from "items" /* 13572 */;
-import items30 from "items" /* 13573 */;
-import items31 from "items" /* 13574 */;
-import items32 from "items" /* 13575 */;
-import items33 from "items" /* 13576 */;
-import items34 from "items" /* 13577 */;
-import items35 from "items" /* 13578 */;
-import items36 from "items" /* 13579 */;
-import items37 from "items" /* 13580 */;
-import items38 from "items" /* 13581 */;
-import items39 from "items" /* 13582 */;
-import items40 from "items" /* 13583 */;
-import items41 from "items" /* 13584 */;
-import { GuildTagBadgeKind } from "items" /* 8270 */;
+import items from "items" /* 13569 */;
+import items2 from "items" /* 13572 */;
+import items3 from "items" /* 13573 */;
+import items4 from "items" /* 13574 */;
+import items5 from "items" /* 13575 */;
+import items6 from "items" /* 13576 */;
+import items7 from "items" /* 13577 */;
+import items8 from "items" /* 13578 */;
+import items9 from "items" /* 13579 */;
+import items10 from "items" /* 13580 */;
+import items11 from "items" /* 13581 */;
+import items12 from "items" /* 13582 */;
+import items13 from "items" /* 13583 */;
+import items14 from "items" /* 13584 */;
+import items15 from "items" /* 13585 */;
+import items16 from "items" /* 13586 */;
+import items17 from "items" /* 13587 */;
+import items18 from "items" /* 13588 */;
+import items19 from "items" /* 13589 */;
+import items20 from "items" /* 13590 */;
+import items21 from "items" /* 13591 */;
+import items22 from "items" /* 13592 */;
+import items23 from "items" /* 13593 */;
+import items24 from "items" /* 13594 */;
+import items25 from "items" /* 13595 */;
+import items26 from "items" /* 13596 */;
+import items27 from "items" /* 13597 */;
+import items28 from "items" /* 13598 */;
+import items29 from "items" /* 13599 */;
+import items30 from "items" /* 13600 */;
+import items31 from "items" /* 13601 */;
+import items32 from "items" /* 13602 */;
+import items33 from "items" /* 13603 */;
+import items34 from "items" /* 13604 */;
+import items35 from "items" /* 13605 */;
+import items36 from "items" /* 13606 */;
+import items37 from "items" /* 13607 */;
+import items38 from "items" /* 13608 */;
+import items39 from "items" /* 13609 */;
+import items40 from "items" /* 13610 */;
+import items41 from "items" /* 13611 */;
+import { GuildTagBadgeKind } from "items" /* 7786 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

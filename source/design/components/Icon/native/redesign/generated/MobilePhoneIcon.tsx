@@ -1,14 +1,14 @@
-// Module ID: 8049
-// Function ID: 8050
+// Module ID: 7666
+// Function ID: 7667
 // Name: MobilePhoneIcon
-// Dependencies: [19, 21, 712, 4164, 8050, 2]
+// Dependencies: [19, 21, 712, 4164, 7667, 2]
 // Exports: MobilePhoneIcon
 
-// Module 8049 (MobilePhoneIcon)
+// Module 7666 (MobilePhoneIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 8050 */;
+import registerAsset from "registerAsset" /* 7667 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

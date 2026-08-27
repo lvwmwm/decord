@@ -1,14 +1,14 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 17016
+// Function ID: 17017
 // Name: ModerationIcon
-// Dependencies: [19, 21, 712, 4164, 16951, 2]
+// Dependencies: [19, 21, 712, 4164, 17017, 2]
 // Exports: ModerationIcon
 
-// Module 16950 (ModerationIcon)
+// Module 17016 (ModerationIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 16951 */;
+import registerAsset from "registerAsset" /* 17017 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

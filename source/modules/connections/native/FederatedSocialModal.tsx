@@ -1,17 +1,17 @@
-// Module ID: 10723
-// Function ID: 10724
+// Module ID: 9273
+// Function ID: 9274
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 676, 21, 4444, 5174, 1236, 5297, 4158, 10724, 5500, 4440, 8690, 1297, 4879, 5442, 5955, 2]
+// Dependencies: [5, 32, 19, 676, 21, 4445, 5179, 1236, 5302, 4158, 9274, 5505, 4441, 7637, 1297, 4880, 5447, 5960, 2]
 // Exports: default
 
-// Module 10723 (FederatedSocialModal)
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5174 */;
+// Module 9273 (FederatedSocialModal)
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5179 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { WebBrowserType } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -34,7 +34,7 @@ export default function FederatedSocialModal(platformType) {
   let obj = { headerTitle: null, headerLeft: null, render: null };
   let intl2 = _require(1236).intl;
   obj[0] = intl2.formatToPlainString(_require(1236).t["ImMhq+"], { serviceName: name });
-  obj[1] = _require(5442).getHeaderBackButton(platformType.onClose);
+  obj[1] = _require(5447).getHeaderBackButton(platformType.onClose);
   obj[2] = function render() {
     ({ location: closure_0, successRedirect: closure_1, platformType } = platformType);
     const onClose = platformType.onClose;
@@ -194,5 +194,5 @@ export default function FederatedSocialModal(platformType) {
     return closure_1_8(platformType(closure_1_2[11]).SafeAreaPaddingView, obj);
   };
   screens[0] = obj;
-  return callback(_require(5955).Navigator, { initialRouteName: "root", screens });
+  return callback(_require(5960).Navigator, { initialRouteName: "root", screens });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12883
-// Function ID: 12884
+// Module ID: 12795
+// Function ID: 12796
 // Name: useEmbeddedActivityParticipantAvatarUris
 // Dependencies: [19, 1390, 1922, 1370, 647, 2]
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 12883 (useEmbeddedActivityParticipantAvatarUris)
+// Module 12795 (useEmbeddedActivityParticipantAvatarUris)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "participantFromServer" /* 1390 */;

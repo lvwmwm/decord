@@ -1,10 +1,10 @@
-// Module ID: 17036
-// Function ID: 17037
+// Module ID: 17102
+// Function ID: 17103
 // Name: MAX_SUBCATEGORIES
 // Dependencies: [1236, 2]
 // Exports: getSettingsErrorMessage
 
-// Module 17036 (MAX_SUBCATEGORIES)
+// Module 17102 (MAX_SUBCATEGORIES)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

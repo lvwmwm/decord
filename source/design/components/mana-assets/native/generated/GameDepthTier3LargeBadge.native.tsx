@@ -1,14 +1,14 @@
-// Module ID: 6511
-// Function ID: 6512
+// Module ID: 6517
+// Function ID: 6518
 // Name: GameDepthTier3LargeBadge
-// Dependencies: [21, 5440, 6512, 2]
+// Dependencies: [21, 5445, 6518, 2]
 // Exports: GameDepthTier3LargeBadge
 
-// Module 6511 (GameDepthTier3LargeBadge)
+// Module 6517 (GameDepthTier3LargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import vanityUrlDefault from "vanityUrl" /* 6512 */;
+import preloadDefault from "preload" /* 5445 */;
+import vanityUrlDefault from "vanityUrl" /* 6518 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier3LargeBadge.native.tsx");

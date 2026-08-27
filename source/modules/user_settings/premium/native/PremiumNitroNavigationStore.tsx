@@ -1,11 +1,11 @@
-// Module ID: 12965
-// Function ID: 12966
+// Module ID: 12988
+// Function ID: 12989
 // Name: zustandStore
-// Dependencies: [4310, 2]
+// Dependencies: [4311, 2]
 
-// Module 12965 (zustandStore)
+// Module 12988 (zustandStore)
 import set from "set" /* 2 */;
-import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4310 */;
+import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4311 */;
 
 const zustandStore = defaultStatesAreEqual.createZustandStore(() => ({ scrollToSectionId: "r" }));
 const result = set.fileFinishedImporting("modules/user_settings/premium/native/PremiumNitroNavigationStore.tsx");

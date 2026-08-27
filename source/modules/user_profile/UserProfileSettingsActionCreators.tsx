@@ -1,16 +1,16 @@
-// Module ID: 8488
-// Function ID: 8489
+// Module ID: 8006
+// Function ID: 8007
 // Name: setPendingChanges
-// Dependencies: [1992, 1922, 7293, 4607, 8489, 709, 2]
+// Dependencies: [1992, 1922, 7299, 4608, 8007, 709, 2]
 // Exports: setPendingChanges
 
-// Module 8488 (setPendingChanges)
+// Module 8006 (setPendingChanges)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isEqualDefault from "isEqual" /* 4607 */;
-import guildHasTag from "guildHasTag" /* 8489 */;
+import isEqualDefault from "isEqual" /* 4608 */;
+import guildHasTag from "guildHasTag" /* 8007 */;
 import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "createUserWidgetFromServer" /* 7293 */;
+import closure_5 from "createUserWidgetFromServer" /* 7299 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/UserProfileSettingsActionCreators.tsx");

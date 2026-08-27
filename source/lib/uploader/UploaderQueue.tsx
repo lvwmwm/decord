@@ -1,9 +1,9 @@
-// Module ID: 7510
-// Function ID: 7511
+// Module ID: 7518
+// Function ID: 7519
 // Name: enqueue
 // Dependencies: [5, 3, 2]
 
-// Module 7510 (enqueue)
+// Module 7518 (enqueue)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_0 from "asyncGeneratorStep" /* 5 */;
 import set from "set" /* 2 */;

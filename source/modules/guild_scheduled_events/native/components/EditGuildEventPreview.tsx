@@ -1,16 +1,16 @@
-// Module ID: 9246
-// Function ID: 9247
+// Module ID: 9659
+// Function ID: 9660
 // Name: PreviewBody
-// Dependencies: [19, 17, 1391, 676, 21, 4444, 712, 500, 589, 4638, 9160, 9247, 4440, 1236, 9248, 1297, 9249, 9156, 5500, 9172, 4879, 9157, 4809, 9250, 2009, 2]
+// Dependencies: [19, 17, 1391, 676, 21, 4445, 712, 500, 589, 4639, 9596, 9660, 4441, 1236, 9346, 1297, 9661, 9595, 5505, 9662, 4880, 9555, 4810, 9678, 2009, 2]
 // Exports: default
 
-// Module 9246 (PreviewBody)
+// Module 9659 (PreviewBody)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import set from "set" /* 500 */;
 
 const require = arg1;
@@ -29,21 +29,21 @@ function PreviewBody(event) {
   let items = [eventLocationIconSource];
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channel_id), items1);
-  const tmp6 = channel_id(4638)(stateFromStores);
+  const tmp6 = channel_id(4639)(stateFromStores);
   dependencyMap = tmp6;
-  obj1 = _require(9160);
+  obj1 = _require(9596);
   locationFromEvent = obj1.getLocationFromEvent(event);
   let tmp8 = tmp6;
   if (tmp6 == null) {
     tmp8 = locationFromEvent;
   }
   locationFromEvent = tmp8;
-  eventLocationIconSource = _require(9247).getEventLocationIconSource(event, stateFromStores, true);
+  eventLocationIconSource = _require(9660).getEventLocationIconSource(event, stateFromStores, true);
   obj = { style: tmp.header, children: null };
   obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = tmp2(1236).intl;
   obj[3] = intl.string(_require(1236).t.yBsFE3);
-  const items2 = [callback(_require(4440).Text, obj), ];
+  const items2 = [callback(_require(4441).Text, obj), ];
   obj1 = { style: tmp.headerSubtitle, accessibilityLabel: null, variant: "text-sm/medium", color: "text-default", children: null };
   let formatToPlainStringResult;
   if (null != stateFromStores) {
@@ -51,7 +51,7 @@ function PreviewBody(event) {
     const obj2 = { channelName: null };
     const obj3 = { channel: null };
     obj3[0] = stateFromStores;
-    obj2[0] = channel_id(9248)(obj3);
+    obj2[0] = channel_id(9346)(obj3);
     formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.sxcQPE, obj2);
   }
   obj1[1] = formatToPlainStringResult;
@@ -75,13 +75,13 @@ function PreviewBody(event) {
       if (dependencyMap == null) {
         let result = null;
         if (null != locationFromEvent) {
-          result = lib(9249).guildEventLocationParser(tmp12, true);
-          const tmp9Result = lib(9249);
+          result = lib(9661).guildEventLocationParser(tmp12, true);
+          const tmp9Result = lib(9661);
         }
         tmp11 = result;
       }
       obj = { children: null };
-      items[1] = closure_1_6(lib(4440).Text, { accessibilityElementsHidden: true, importantForAccessibility: "no", variant: "text-sm/medium", color: "text-default", children: tmp11 });
+      items[1] = closure_1_6(lib(4441).Text, { accessibilityElementsHidden: true, importantForAccessibility: "no", variant: "text-sm/medium", color: "text-default", children: tmp11 });
       obj[0] = items;
       let str = locationFromEvent;
       if (locationFromEvent == null) {
@@ -95,7 +95,7 @@ function PreviewBody(event) {
     formatResult = intl3.string(tmp2(1236).t.KDPFi9);
   }
   obj1[4] = formatResult;
-  items2[1] = callback(_require(4440).Text, obj1);
+  items2[1] = callback(_require(4441).Text, obj1);
   obj[1] = items2;
   return closure_7(locationFromEvent, obj);
 }

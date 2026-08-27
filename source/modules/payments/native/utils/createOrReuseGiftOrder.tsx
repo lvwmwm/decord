@@ -1,14 +1,14 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10441
+// Function ID: 10442
 // Name: useCreateOrReuseGiftOrder
-// Dependencies: [5, 19, 4426, 1924, 505, 3, 9650, 7102, 500, 4043, 4122, 2]
+// Dependencies: [5, 19, 4427, 1924, 505, 3, 10399, 7108, 500, 4043, 4122, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10256 (useCreateOrReuseGiftOrder)
+// Module 10441 (useCreateOrReuseGiftOrder)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4426 */;
+import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4427 */;
 import { SubscriptionPlanInfo } from "GuildFeatures" /* 1924 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
@@ -19,7 +19,7 @@ let result = require("set").fileFinishedImporting("modules/payments/native/utils
 
 export const useCreateOrReuseGiftOrder = function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
   let _require = GiftPurchaseButton;
-  let obj = _require(9650);
+  let obj = _require(10399);
   obj = { location: GiftPurchaseButton };
   const androidShopOrdersEnabled = obj.useAndroidShopOrdersEnabled(obj);
   _require = undefined;

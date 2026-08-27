@@ -1,9 +1,9 @@
-// Module ID: 6920
-// Function ID: 6921
+// Module ID: 6926
+// Function ID: 6927
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6920 (metadata)
+// Module 6926 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconSproutletSyndicateExample-2x.png.js");

@@ -1,14 +1,14 @@
-// Module ID: 10401
-// Function ID: 10402
+// Module ID: 10795
+// Function ID: 10796
 // Name: ImageFileIcon
-// Dependencies: [19, 21, 712, 4164, 10402, 2]
+// Dependencies: [19, 21, 712, 4164, 10796, 2]
 // Exports: ImageFileIcon
 
-// Module 10401 (ImageFileIcon)
+// Module 10795 (ImageFileIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 10402 */;
+import registerAsset from "registerAsset" /* 10796 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

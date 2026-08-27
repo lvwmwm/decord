@@ -1,10 +1,10 @@
-// Module ID: 9228
-// Function ID: 9229
+// Module ID: 9641
+// Function ID: 9642
 // Name: useAccessibilityPress
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 9228 (useAccessibilityPress)
+// Module 9641 (useAccessibilityPress)
 import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/a11y/native/useAccessibilityPress.tsx");

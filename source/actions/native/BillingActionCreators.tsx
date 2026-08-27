@@ -1,10 +1,10 @@
-// Module ID: 7092
-// Function ID: 7093
+// Module ID: 7098
+// Function ID: 7099
 // Name: applyAppleReceipt
-// Dependencies: [109, 5, 19, 6033, 7093, 7094, 1922, 4113, 6031, 676, 505, 21, 3, 1217, 595, 698, 530, 4122, 4789, 500, 7630, 6050, 7631, 709, 12, 6034, 7090, 7654, 1236, 7583, 4809, 7588, 2009, 4675, 7083, 7545, 4342, 7656, 4129, 4665, 503, 7792, 7793, 1404, 7794, 7584, 7795, 514, 7621, 2]
+// Dependencies: [109, 5, 19, 6038, 7099, 7100, 1922, 4113, 6036, 676, 505, 21, 3, 1217, 595, 698, 530, 4122, 4790, 500, 10714, 6056, 10715, 709, 12, 6039, 7096, 8412, 1236, 10375, 4810, 10408, 2009, 4676, 7089, 10402, 4343, 12876, 4129, 4666, 503, 12878, 12879, 1404, 12880, 10405, 10510, 514, 8152, 2]
 // Exports: cancelGenericSubscription, createGenericSubscription, migrateToACOM, mobilePurchaseSKU, modifyGenericSubscription, resubscribeGenericSubscription
 
-// Module 7092 (applyAppleReceipt)
+// Module 7098 (applyAppleReceipt)
 import timestampDefault from "timestamp" /* 3 */;
 import noopAll from "noop" /* 19 */;
 import sendRequest from "sendRequest" /* 530 */;
@@ -12,22 +12,22 @@ import Storage2 from "Storage" /* 595 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1217 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4342 */;
-import _modDef4809 from "module_4809" /* 4809 */;
-import SubscriptionPlans from "SubscriptionPlans" /* 6034 */;
-import useBlockedPaymentsConfig from "useBlockedPaymentsConfig" /* 7090 */;
-import isSpendingLimitError from "isSpendingLimitError" /* 7545 */;
-import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 7654 */;
-import getUnderlyingIOSExceptionRecursivelyAll from "getUnderlyingIOSExceptionRecursively" /* 7656 */;
-import APBRequestOperations from "APBRequestOperations" /* 7792 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4343 */;
+import _modDef4810 from "module_4810" /* 4810 */;
+import SubscriptionPlans from "SubscriptionPlans" /* 6039 */;
+import useBlockedPaymentsConfig from "useBlockedPaymentsConfig" /* 7096 */;
+import openBlockedPaymentsCountryActionSheetDefault from "openBlockedPaymentsCountryActionSheet" /* 8412 */;
+import isSpendingLimitError from "isSpendingLimitError" /* 10402 */;
+import getUnderlyingIOSExceptionRecursivelyAll from "getUnderlyingIOSExceptionRecursively" /* 12876 */;
+import APBRequestOperations from "APBRequestOperations" /* 12878 */;
 import closure_7 from "_objectWithoutProperties" /* 109 */;
 import closure_8 from "asyncGeneratorStep" /* 5 */;
-import closure_9 from "isGenericIapConnected" /* 6033 */;
-import closure_10 from "initialize" /* 7093 */;
-import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7094 */;
+import closure_9 from "isGenericIapConnected" /* 6038 */;
+import closure_10 from "initialize" /* 7099 */;
+import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7100 */;
 import closure_13 from "mergeGuildAvatar" /* 1922 */;
 import closure_14 from "reset" /* 4113 */;
-import closure_15 from "updateProduct" /* 6031 */;
+import closure_15 from "updateProduct" /* 6036 */;
 import ME from "ME" /* 676 */;
 import { PaymentGateways } from "sum" /* 505 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -148,10 +148,10 @@ function handlePurchaseException(code) {
     obj = isSpendingLimitError;
     let billingError = code;
     if (!(code instanceof V6OrEarlierAPIError.BillingError)) {
-      billingError = new tmp(4342).BillingError(code);
+      billingError = new tmp(4343).BillingError(code);
     }
     if (obj.isSpendingLimitError(billingError)) {
-      let tmpResult = tmp(7545);
+      let tmpResult = tmp(10402);
       const result = tmpResult.showSpendingLimitReachedAlert();
     } else {
       const message = code.message;
@@ -164,7 +164,7 @@ function handlePurchaseException(code) {
         const intl2 = tmp(1236).intl;
         obj[0] = intl2.string(tmp(1236).t.POsVOt);
         obj[1] = underlyingIOSError;
-        _modDef4809.show(obj);
+        _modDef4810.show(obj);
         throw code;
       } else {
         const intl3 = tmp(1236).intl;
@@ -188,8 +188,8 @@ function handlePurchaseException(code) {
           }
         }
         let billingError1 = code;
-        if (!(code instanceof tmp(4342).BillingError)) {
-          billingError1 = new tmp(4342).BillingError(code);
+        if (!(code instanceof tmp(4343).BillingError)) {
+          billingError1 = new tmp(4343).BillingError(code);
         }
         let tmp19 = message2 === stringResult && flag;
         if (tmp19) {
@@ -204,7 +204,7 @@ function handlePurchaseException(code) {
         if (tmp19) {
           message2 = billingError1.message;
         }
-        let obj2 = _modDef4809;
+        let obj2 = _modDef4810;
         obj = { title: null, body: null, isDismissable: true, hideActionSheet: null };
         const intl = tmp(1236).intl;
         obj[0] = intl.string(tmp(1236).t.zrhHH3);
@@ -510,7 +510,7 @@ function _getIAPJWTRequestData() {
         obj = obj2;
       };
       obj1[3] = obj2;
-      body = yield closure_1_1(4665).post(obj1);
+      body = yield closure_1_1(4666).post(obj1);
       obj = { requestJSONString: null };
       let _JSON = JSON;
       obj[0] = JSON.stringify(body.body.request_data);
@@ -628,18 +628,18 @@ function _updateAppleSubscription() {
 }
 function determineProductId(arg0) {
   if (APBRequestOperations.APBRequestOperations.CREATE !== arg0) {
-    if (tmp(7792).APBRequestOperations.CANCEL !== arg0) {
-      if (tmp(7792).APBRequestOperations.RESUBSCRIBE !== arg0) {
-        if (tmp(7792).APBRequestOperations.REACTIVATE !== arg0) {
-          if (tmp(7792).APBRequestOperations.CHARGE === arg0) {
-            return tmp(6034).ProductIds.GENERIC_CONSUMABLE;
+    if (tmp(12878).APBRequestOperations.CANCEL !== arg0) {
+      if (tmp(12878).APBRequestOperations.RESUBSCRIBE !== arg0) {
+        if (tmp(12878).APBRequestOperations.REACTIVATE !== arg0) {
+          if (tmp(12878).APBRequestOperations.CHARGE === arg0) {
+            return tmp(6039).ProductIds.GENERIC_CONSUMABLE;
           } else {
-            if (tmp(7793).ACRequestOperations.CREATE !== arg0) {
-              if (tmp(7793).ACRequestOperations.CANCEL !== arg0) {
-                if (tmp(7793).ACRequestOperations.REACTIVATE !== arg0) {
-                  if (tmp(7793).ACRequestOperations.MODIFY !== arg0) {
-                    if (tmp(7793).ACRequestOperations.CHARGE === arg0) {
-                      return tmp(6034).ProductIds.GENERIC_CONSUMABLE;
+            if (tmp(12879).ACRequestOperations.CREATE !== arg0) {
+              if (tmp(12879).ACRequestOperations.CANCEL !== arg0) {
+                if (tmp(12879).ACRequestOperations.REACTIVATE !== arg0) {
+                  if (tmp(12879).ACRequestOperations.MODIFY !== arg0) {
+                    if (tmp(12879).ACRequestOperations.CHARGE === arg0) {
+                      return tmp(6039).ProductIds.GENERIC_CONSUMABLE;
                     } else {
                       const _Error = Error;
                       error = new Error("Invalid operation");
@@ -649,7 +649,7 @@ function determineProductId(arg0) {
                 }
               }
             }
-            return tmp(6034).ProductIds.GENERIC_SUBSCRIPTION;
+            return tmp(6039).ProductIds.GENERIC_SUBSCRIPTION;
           }
         }
       }
@@ -860,7 +860,7 @@ function _createGenericSubscription() {
               return obj1;
             } else if (callback3()) {
               if (callback7(c2)) {
-                c5 = callback6(callback(7793).ACRequestOperations.CREATE);
+                c5 = callback6(callback(12879).ACRequestOperations.CREATE);
                 let obj22 = lib(709);
                 const obj2 = { type: "IAP_PURCHASE_PRODUCT_START", productIdentifier: null };
                 obj2[1] = c5;
@@ -904,7 +904,7 @@ function _createGenericSubscription() {
               obj9[3] = dependencyMap;
               obj9[4] = c4;
               const obj10 = { operation: null };
-              obj10[0] = callback(7793).ACRequestOperations.CREATE;
+              obj10[0] = callback(12879).ACRequestOperations.CREATE;
               const merged = Object.assign(obj9);
               c5 = 4;
               c6 = 1;
@@ -991,7 +991,7 @@ function _createGenericSubscription() {
               obj19[0] = requestJSONString;
               return obj19;
             } else {
-              obj5 = callback(7631);
+              obj5 = callback(10715);
               const obj20 = { purchase: null };
               obj20[0] = originalPurchase;
               c5 = 7;
@@ -2030,7 +2030,7 @@ let obj = {
                 c4 = 2;
                 c5 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = closure_1_0(7631).initConnection();
+                obj2[0] = closure_1_0(10715).initConnection();
                 return obj2;
               }
             }
@@ -2119,7 +2119,7 @@ let obj = {
               c5 = 2;
               c6 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_1(7630).loadProducts();
+              obj1[0] = closure_1_1(10714).loadProducts();
               return obj1;
             }
           } else {
@@ -2173,7 +2173,7 @@ let obj = {
               let obj3 = { type: "IAP_LOAD_PRODUCTS", products: null };
               obj3[1] = closure_1_1;
               obj1.dispatch(obj3);
-              if (closure_1_2.length === callback(6034).GenericProductIds.length) {
+              if (closure_1_2.length === callback(6039).GenericProductIds.length) {
                 let obj5 = closure_1_1(709);
                 const obj4 = { type: "IAP_LOAD_GENERIC_PRODUCTS", products: null, storeFront: null };
                 obj4[1] = closure_2;
@@ -2190,7 +2190,7 @@ let obj = {
             c5 = 3;
             c6 = 1;
             const obj6 = { value: null, done: false };
-            obj6[0] = closure_1_1(7630).fetchStoreFront();
+            obj6[0] = closure_1_1(10714).fetchStoreFront();
             return obj6;
           }
         } catch (tmp45) {
@@ -2683,7 +2683,7 @@ let obj = {
     })();
   }
 };
-let items = [require("module_7631").ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
+let items = [require("module_10715").ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
 obj = { NONE: "none", CANNOT_MAKE_REQUEST: "cannot_make_request", INVALID_CURRENCY: "invalid_currency", PURCHASE_INCOMPLETE: "purchase_incomplete", USER_CANCELLED: "user_cancelled", POST_PURCHASE_FAILED: "post_purchase_failed" };
 let result = set.fileFinishedImporting("actions/native/BillingActionCreators.tsx");

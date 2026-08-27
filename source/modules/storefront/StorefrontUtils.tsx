@@ -1,17 +1,17 @@
-// Module ID: 6025
-// Function ID: 6026
+// Module ID: 6030
+// Function ID: 6031
 // Name: useSKUPrice
-// Dependencies: [19, 1996, 1922, 6026, 676, 1924, 12, 6027, 501, 1403, 589, 6020, 6028, 4107, 6035, 2]
+// Dependencies: [19, 1996, 1922, 6031, 676, 1924, 12, 6032, 501, 1403, 589, 6025, 6033, 4107, 6040, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 6025 (useSKUPrice)
+// Module 6030 (useSKUPrice)
 import applyDefault from "apply" /* 12 */;
-import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 6027 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6028 */;
+import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 6032 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6033 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "resetStoreState" /* 6026 */;
+import closure_6 from "resetStoreState" /* 6031 */;
 import ME from "ME" /* 676 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
@@ -85,7 +85,7 @@ function useSKUPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "call", purchaseType: true, storeHasPrice: true };
+    obj = { userPrice: "r", pricesForPurchaseType: "disabled", purchaseType: true, storeHasPrice: true };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;
@@ -381,7 +381,7 @@ export const useSKUOrbPrice = function useSKUOrbPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "call", purchaseType: true, storeHasPrice: true };
+    obj = { userPrice: "r", pricesForPurchaseType: "disabled", purchaseType: true, storeHasPrice: true };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;

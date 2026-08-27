@@ -1,10 +1,10 @@
-// Module ID: 14978
-// Function ID: 14979
+// Module ID: 15043
+// Function ID: 15044
 // Name: onGoLiveNotificationSettingsChanged
 // Dependencies: [676, 4101, 4134, 698, 2]
 // Exports: onGoLiveNotificationSettingsChanged
 
-// Module 14978 (onGoLiveNotificationSettingsChanged)
+// Module 15043 (onGoLiveNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

@@ -1,13 +1,13 @@
-// Module ID: 16049
-// Function ID: 16050
+// Module ID: 16114
+// Function ID: 16115
 // Name: setOrientationLockState
-// Dependencies: [10877, 709, 2]
+// Dependencies: [9524, 709, 2]
 // Exports: setOrientationLockState
 
-// Module 16049 (setOrientationLockState)
+// Module 16114 (setOrientationLockState)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getIsTabletActivitySurface from "getIsTabletActivitySurface" /* 10877 */;
+import getIsTabletActivitySurface from "getIsTabletActivitySurface" /* 9524 */;
 
 const result = set.fileFinishedImporting("modules/frames/native/getDefaultOrientationLockState.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 9499
-// Function ID: 9500
+// Module ID: 8737
+// Function ID: 8738
 // Name: GameProfileEmbedAction
-// Dependencies: [9114, 676, 9135, 514, 698, 2]
+// Dependencies: [8538, 676, 8560, 514, 698, 2]
 // Exports: generateViewId, getGuildIdAndVerifiedFromInvite, trackGameProfileAction, trackGameProfileClose, trackGameProfileEmbedAction, trackGameProfileFeedback, trackGameProfileOpen
 
-// Module 9499 (GameProfileEmbedAction)
+// Module 8737 (GameProfileEmbedAction)
 import v1 from "v1" /* 514 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_3 from "map" /* 9114 */;
+import closure_3 from "map" /* 8538 */;
 import ME from "ME" /* 676 */;
-import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 9135 */;
+import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 8560 */;
 
 require = arg1;
 ({ AnalyticEvents: c4, GuildFeatures: c5 } = ME);

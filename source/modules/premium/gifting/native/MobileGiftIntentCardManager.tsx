@@ -1,17 +1,17 @@
-// Module ID: 16898
-// Function ID: 16899
+// Module ID: 16964
+// Function ID: 16965
 // Name: isChannelEligible
-// Dependencies: [7331, 1391, 4687, 1981, 8398, 1924, 16899, 692, 4134, 7534, 9565, 503, 4328, 9297, 2]
+// Dependencies: [7337, 1391, 4688, 1981, 7919, 1924, 16965, 692, 4134, 10439, 8815, 503, 4329, 9859, 2]
 
-// Module 16898 (isChannelEligible)
+// Module 16964 (isChannelEligible)
 import set2 from "set" /* 692 */;
-import fetchUserAffinitiesV2 from "fetchUserAffinitiesV2" /* 9297 */;
-import onPostConnectionOpenDefault from "onPostConnectionOpen" /* 16899 */;
-import closure_2 from "recomputeAffinities" /* 7331 */;
+import fetchUserAffinitiesV2 from "fetchUserAffinitiesV2" /* 9859 */;
+import onPostConnectionOpenDefault from "onPostConnectionOpen" /* 16965 */;
+import closure_2 from "recomputeAffinities" /* 7337 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "reinjectEphemerals" /* 4687 */;
+import closure_4 from "reinjectEphemerals" /* 4688 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "getCurrentTime" /* 8398 */;
+import closure_6 from "getCurrentTime" /* 7919 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 require = arg1;
@@ -34,10 +34,10 @@ prototype["maybeSendCard"] = function maybeSendCard(id, closure_0) {
       if (id === store.getChannelId()) {
         if (ready.isReady(id)) {
           if (self.trySendGiftingPromptSystemMessage(id, constants2.FRIEND_ANNIVERSARY, closure_0, constants.SEND_MESSAGE)) {
-            let tmpResult = tmp(7534);
+            let tmpResult = tmp(10439);
             const result = tmpResult.logMessageGiftIntentShown(closure_0);
             const userAffinity = self.getUserAffinity(closure_0);
-            tmpResult = tmp(9565);
+            tmpResult = tmp(8815);
             let obj = { name: null, type: null, properties: null };
             obj[0] = tmp(503).ImpressionNames.GIFT_INTENT_UNREAD_NOTIFICATION;
             obj[1] = tmp(503).ImpressionTypes.VIEW;

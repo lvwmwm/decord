@@ -1,14 +1,14 @@
-// Module ID: 8457
-// Function ID: 8458
+// Module ID: 7973
+// Function ID: 7974
 // Name: hasFetchedColors
-// Dependencies: [32, 5, 19, 4436, 644, 705, 1491, 4292, 589, 7224, 2]
+// Dependencies: [32, 5, 19, 4437, 644, 705, 1491, 4293, 589, 7230, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 8457 (hasFetchedColors)
+// Module 7973 (hasFetchedColors)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import keys from "keys" /* 644 */;
 
 const require = arg1;
@@ -168,7 +168,7 @@ function _fetchColors() {
               throw arg1;
             } else if (arg0 !== 2) {
               table = arg1;
-              obj = callback(4292);
+              obj = callback(4293);
               dependencyMap = obj.getComplimentaryPaletteForColor(table[0]);
               obj1 = callback(705);
               obj1.batchUpdates(() => {

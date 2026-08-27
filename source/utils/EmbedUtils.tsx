@@ -1,12 +1,12 @@
-// Module ID: 4802
-// Function ID: 4803
+// Module ID: 4803
+// Function ID: 4804
 // Name: getEffectiveVideoProvider
-// Dependencies: [676, 4803, 11, 1403, 12, 4043, 688, 4691, 2]
+// Dependencies: [676, 4804, 11, 1403, 12, 4043, 688, 4692, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4802 (getEffectiveVideoProvider)
+// Module 4803 (getEffectiveVideoProvider)
 import set from "set" /* 2 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 4803 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 4804 */;
 import ME from "ME" /* 676 */;
 
 function getEffectiveVideoProvider(name, url) {
@@ -240,13 +240,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const transformComponentsResult = obj6(4691).transformComponents(footer.components);
+    const transformComponentsResult = obj6(4692).transformComponents(footer.components);
     let tmp40;
     if (transformComponentsResult.length > 0) {
       tmp40 = transformComponentsResult;
     }
     obj.components = tmp40;
-    const obj17 = obj6(4691);
+    const obj17 = obj6(4692);
   }
   return obj;
 };

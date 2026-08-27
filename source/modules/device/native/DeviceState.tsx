@@ -1,10 +1,10 @@
-// Module ID: 7420
-// Function ID: 7421
+// Module ID: 7428
+// Function ID: 7429
 // Name: _getDeviceState
-// Dependencies: [5, 17, 3, 7421, 2]
+// Dependencies: [5, 17, 3, 7429, 2]
 // Exports: getDeviceState
 
-// Module 7420 (_getDeviceState)
+// Module 7428 (_getDeviceState)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;

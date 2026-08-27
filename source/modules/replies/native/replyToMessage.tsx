@@ -1,18 +1,18 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11178
+// Function ID: 11179
 // Name: longPressMessageHandleReply
-// Dependencies: [7352, 1922, 7351, 676, 698, 11287, 7129, 11289, 4652, 2]
+// Dependencies: [7359, 1922, 7358, 676, 698, 11166, 7135, 11168, 4653, 2]
 // Exports: default
 
-// Module 11301 (longPressMessageHandleReply)
+// Module 11178 (longPressMessageHandleReply)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4652 */;
-import trackInviteDefault from "trackInvite" /* 7129 */;
-import handleEdit from "handleEdit" /* 11287 */;
-import createPendingReply from "createPendingReply" /* 11289 */;
-import closure_3 from "initialize" /* 7352 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
+import trackInviteDefault from "trackInvite" /* 7135 */;
+import handleEdit from "handleEdit" /* 11166 */;
+import createPendingReply from "createPendingReply" /* 11168 */;
+import closure_3 from "initialize" /* 7359 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "getState" /* 7351 */;
+import closure_5 from "getState" /* 7358 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

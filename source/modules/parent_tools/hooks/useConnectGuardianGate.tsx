@@ -1,15 +1,15 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 16946
+// Function ID: 16947
 // Name: useConnectGuardianGate
-// Dependencies: [32, 19, 7209, 589, 7211, 4896, 2]
+// Dependencies: [32, 19, 7215, 589, 7217, 4897, 2]
 // Exports: useConnectGuardianGate
 
-// Module 16880 (useConnectGuardianGate)
+// Module 16946 (useConnectGuardianGate)
 import initialize from "initialize" /* 589 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4896 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4897 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7209 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7215 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useConnectGuardianGate.tsx");

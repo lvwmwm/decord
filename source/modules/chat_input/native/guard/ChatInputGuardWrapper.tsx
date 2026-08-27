@@ -1,21 +1,21 @@
-// Module ID: 12066
-// Function ID: 12067
+// Module ID: 11912
+// Function ID: 11913
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4090, 1395, 1992, 1910, 5304, 4098, 1922, 11602, 676, 8740, 21, 589, 4959, 4078, 4095, 12067, 12068, 10477, 10476, 12069, 12070, 4652, 9459, 4675, 8739, 2009, 8742, 8676, 11201, 10386, 12072, 12082, 12081, 4399, 1236, 12084, 12087, 12088, 12089, 12093, 12094, 12097, 12098, 9259, 12100, 2]
+// Dependencies: [19, 4090, 1395, 1992, 1910, 5309, 4098, 1922, 11453, 676, 7702, 21, 589, 4960, 4078, 4095, 11913, 11914, 10923, 10922, 11915, 11916, 4653, 8980, 4676, 7701, 2009, 7704, 7620, 11084, 10780, 11918, 11928, 11927, 4400, 1236, 11930, 11933, 11934, 11935, 11939, 11940, 11943, 11944, 9676, 11946, 2]
 // Exports: default
 
-// Module 12066 (ChatInputGuardWrapper)
+// Module 11912 (ChatInputGuardWrapper)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "initialize" /* 4090 */;
 import { isThread } from "createChannelRecord" /* 1395 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "recomputeGuild" /* 5304 */;
+import closure_7 from "recomputeGuild" /* 5309 */;
 import closure_8 from "markAllUserIdListsStale" /* 4098 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import { TextAreaCta } from "TextAreaCta" /* 11602 */;
+import { TextAreaCta } from "TextAreaCta" /* 11453 */;
 import ME from "ME" /* 676 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 8740 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7702 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 14367
-// Function ID: 14368
+// Module ID: 14394
+// Function ID: 14395
 // Name: useDerivedDmSpamFilterSettingValue
 // Dependencies: [1922, 4136, 4134, 589, 4140, 4147, 1306, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 14367 (useDerivedDmSpamFilterSettingValue)
+// Module 14394 (useDerivedDmSpamFilterSettingValue)
 import initialize from "initialize" /* 589 */;
 import create from "create" /* 1306 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;

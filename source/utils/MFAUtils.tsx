@@ -1,15 +1,15 @@
-// Module ID: 8703
-// Function ID: 8704
+// Module ID: 7657
+// Function ID: 7658
 // Name: _crypto
-// Dependencies: [17, 1625, 8704, 1208, 2]
+// Dependencies: [17, 1625, 7658, 1208, 2]
 // Exports: captureWebAuthnException, encodeTotpSecret, encodeTotpSecretAsUrl, generateTotpSecret
 
-// Module 8703 (_crypto)
+// Module 7657 (_crypto)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
-import encodeDefault from "encode" /* 8704 */;
+import encodeDefault from "encode" /* 7658 */;
 
 let _crypto;
 if (window != null) {

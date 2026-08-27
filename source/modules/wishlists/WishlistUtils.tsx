@@ -1,16 +1,16 @@
-// Module ID: 12742
-// Function ID: 12743
+// Module ID: 12412
+// Function ID: 12413
 // Name: createNitroSuggestedSku
-// Dependencies: [32, 4487, 9575, 9576, 9577, 676, 1924, 1236, 6025, 2]
+// Dependencies: [32, 4488, 10380, 10381, 10382, 676, 1924, 1236, 6030, 2]
 // Exports: buildReorderedOwnedItemsLastWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12742 (createNitroSuggestedSku)
+// Module 12412 (createNitroSuggestedSku)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useSKUPrice from "useSKUPrice" /* 6025 */;
+import useSKUPrice from "useSKUPrice" /* 6030 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "createFromServer" /* 4487 */;
-import { isCollectiblesWishlistItemRecord as closure_4 } from "createCollectiblesItemFromServerResponse" /* 9575 */;
-import { isPremiumWishlistItemRecord as closure_5, isSKUWishlistItemRecord } from "fromServer" /* 9576 */;
+import closure_3 from "createFromServer" /* 4488 */;
+import { isCollectiblesWishlistItemRecord as closure_4 } from "createCollectiblesItemFromServerResponse" /* 10380 */;
+import { isPremiumWishlistItemRecord as closure_5, isSKUWishlistItemRecord } from "fromServer" /* 10381 */;
 import { SKUProductLines } from "ME" /* 676 */;
 import { PremiumSubscriptionSKUs } from "GuildFeatures" /* 1924 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 14143
-// Function ID: 14144
+// Module ID: 14170
+// Function ID: 14171
 // Name: CompassIcon
-// Dependencies: [19, 21, 712, 4164, 14144, 2]
+// Dependencies: [19, 21, 712, 4164, 14171, 2]
 // Exports: CompassIcon
 
-// Module 14143 (CompassIcon)
+// Module 14170 (CompassIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14144 */;
+import registerAsset from "registerAsset" /* 14171 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

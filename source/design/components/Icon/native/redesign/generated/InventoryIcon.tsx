@@ -1,14 +1,14 @@
-// Module ID: 14151
-// Function ID: 14152
+// Module ID: 14178
+// Function ID: 14179
 // Name: InventoryIcon
-// Dependencies: [19, 21, 712, 4164, 14152, 2]
+// Dependencies: [19, 21, 712, 4164, 14179, 2]
 // Exports: InventoryIcon
 
-// Module 14151 (InventoryIcon)
+// Module 14178 (InventoryIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14152 */;
+import registerAsset from "registerAsset" /* 14179 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

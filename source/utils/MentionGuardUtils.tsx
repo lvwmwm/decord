@@ -1,13 +1,13 @@
-// Module ID: 10129
-// Function ID: 10130
+// Module ID: 10254
+// Function ID: 10255
 // Name: parsedItemUsesEveryoneRole
-// Dependencies: [32, 6070, 4089, 676, 38, 7353, 2]
+// Dependencies: [32, 6078, 4089, 676, 38, 7360, 2]
 
-// Module 10129 (parsedItemUsesEveryoneRole)
+// Module 10254 (parsedItemUsesEveryoneRole)
 import _modDef38 from "module_38" /* 38 */;
-import rebuildDefault from "rebuild" /* 7353 */;
+import rebuildDefault from "rebuild" /* 7360 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "getMemberListId" /* 6070 */;
+import closure_3 from "getMemberListId" /* 6078 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
 import ME from "ME" /* 676 */;
 

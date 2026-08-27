@@ -1,0 +1,19 @@
+// Module ID: 16568
+// Function ID: 16569
+// Name: apexExperiment
+// Dependencies: [1472, 2]
+// Exports: useSoundboardSoundPreviewMenuEnabled
+
+// Module 16568 (apexExperiment)
+import set from "set" /* 2 */;
+import ApexExperiment from "ApexExperiment" /* 1472 */;
+
+const obj = { 1: null };
+obj[1] = { enabled: true, returnOnUpsellDismiss: true };
+const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-08-mobile-soundboard-sound-preview-menu", defaultConfig: { enabled: false, returnOnUpsellDismiss: false }, variations: obj });
+const result = set.fileFinishedImporting("modules/soundboard/experiments/SoundboardSoundPreviewMenuExperiment.tsx");
+
+export const SoundboardSoundPreviewMenuExperiment = apexExperiment;
+export const useSoundboardSoundPreviewMenuEnabled = function useSoundboardSoundPreviewMenuEnabled(SoundboardSoundPreviewActionSheet) {
+  return apexExperiment.useConfig({ location: SoundboardSoundPreviewActionSheet }).enabled;
+};

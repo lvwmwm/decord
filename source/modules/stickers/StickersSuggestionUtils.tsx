@@ -1,10 +1,10 @@
-// Module ID: 5161
-// Function ID: 5162
+// Module ID: 5166
+// Function ID: 5167
 // Name: removePunctuation
 // Dependencies: [2]
 // Exports: getQueriesFromUserInput, removePunctuation
 
-// Module 5161 (removePunctuation)
+// Module 5166 (removePunctuation)
 import set from "set" /* 2 */;
 
 const re0 = /(!|\.|;|,|-|—|–|\?|"|')/g;

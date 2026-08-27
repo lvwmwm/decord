@@ -1,19 +1,19 @@
-// Module ID: 14654
-// Function ID: 14655
-// Name: QUEST_PROGRESS_DIAMETER_BY_SIZE
-// Dependencies: [19, 17, 4436, 21, 4184, 8052, 4444, 712, 589, 4445, 5015, 1236, 5891, 14655, 11401, 2]
+// Module ID: 14681
+// Function ID: 14682
+// Name: COMPLETION_GLOW_SHADOW_RADIUS
+// Dependencies: [19, 17, 4437, 21, 4185, 8173, 4445, 712, 589, 4446, 5020, 1236, 5896, 14682, 11253, 2]
 
-// Module 14654 (QUEST_PROGRESS_DIAMETER_BY_SIZE)
+// Module 14681 (COMPLETION_GLOW_SHADOW_RADIUS)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
-import inlineStyles from "inlineStyles" /* 8052 */;
+import inlineStyles from "inlineStyles" /* 8173 */;
 import noop from "noop" /* 19 */;
 import importDefaultResult from "noop" /* 19 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import importDefaultResult1 from "module_4184" /* 4184 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import importDefaultResult1 from "module_4185" /* 4185 */;
 
 ({ useMemo: c3, useEffect: c4, useRef: c5 } = noop);
 const View = get_ActivityIndicator.View;
@@ -110,18 +110,18 @@ const memoResult = importDefaultResult.memo(function QuestProgressIndicator(load
   D.__initData = closure_16;
   const animatedProps = progress(stateFromStores[4]).useAnimatedProps(D);
   const tmpResult1 = progress(stateFromStores[4]);
-  class R {
+  class E {
     constructor() {
       obj = { opacity: closure_8.get() };
       merged = Object.assign(closure_6.opacityMask);
       return obj;
     }
   }
-  R.__closure = { underlayOpacity: sharedValue1, styles: tmp9 };
-  R.__workletHash = 4427598698568;
-  R.__initData = closure_17;
+  E.__closure = { underlayOpacity: sharedValue1, styles: tmp9 };
+  E.__workletHash = 4427598698568;
+  E.__initData = closure_17;
   const items1 = [sharedValue, progress, stateFromStores];
-  const animatedStyle1 = progress(stateFromStores[4]).useAnimatedStyle(R);
+  const animatedStyle1 = progress(stateFromStores[4]).useAnimatedStyle(E);
   callback2(() => {
     let num = 500;
     if (stateFromStores) {
@@ -237,4 +237,6 @@ const memoResult = importDefaultResult.memo(function QuestProgressIndicator(load
 let result = set.fileFinishedImporting("modules/quests/native/QuestProgressIndicator.tsx");
 
 export default memoResult;
+export const COMPLETION_GLOW_SHADOW_RADIUS = 20;
+export const COMPLETION_GLOW_CLEARANCE = 40;
 export const QUEST_PROGRESS_DIAMETER_BY_SIZE = obj;

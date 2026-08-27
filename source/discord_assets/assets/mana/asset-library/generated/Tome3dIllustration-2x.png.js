@@ -1,9 +1,9 @@
-// Module ID: 7026
-// Function ID: 7027
+// Module ID: 7032
+// Function ID: 7033
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7026 (metadata)
+// Module 7032 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/Tome3dIllustration-2x.png.js");

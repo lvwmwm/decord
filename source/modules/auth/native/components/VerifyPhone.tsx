@@ -1,15 +1,15 @@
-// Module ID: 15413
-// Function ID: 15414
+// Module ID: 15478
+// Function ID: 15479
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 15385, 15386, 676, 21, 15383, 15401, 4896, 8742, 1236, 8769, 15414, 8770, 2]
+// Dependencies: [5, 32, 19, 15450, 15451, 676, 21, 15448, 15466, 4897, 7704, 1236, 7735, 15479, 7736, 2]
 // Exports: default
 
-// Module 15413 (VerifyPhone)
+// Module 15478 (VerifyPhone)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore" /* 15385 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15386 */;
+import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore" /* 15450 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15451 */;
 import { Links } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -35,9 +35,9 @@ export default function VerifyPhone(phone) {
   let tmp2 = callback(React.useState(null), 2);
   [tmp5, c6] = callback(React.useState(false), 2);
   callback2 = React.useRef(false);
-  context = React.useContext(_require(15383).TrackRegistrationContext);
+  context = React.useContext(_require(15448).TrackRegistrationContext);
   const tmp4 = callback(React.useState(false), 2);
-  onPhoneTokenReceived(15401)(callback2(sourceState));
+  onPhoneTokenReceived(15466)(callback2(sourceState));
   const items = [context];
   const effect = React.useEffect(() => {
     if (_undefined()) {
@@ -47,7 +47,7 @@ export default function VerifyPhone(phone) {
       context(obj);
     }
   }, items);
-  onPhoneTokenReceived(4896)(() => () => {
+  onPhoneTokenReceived(4897)(() => () => {
     let tmpResult;
     if (closure_2 != null) {
       tmpResult = tmp(ref.current);
@@ -192,7 +192,7 @@ export default function VerifyPhone(phone) {
     }
     return applyArgumentsResult;
   }, items2);
-  onPhoneTokenReceived(8769)(callback1);
+  onPhoneTokenReceived(7735)(callback1);
   const items3 = [onBail];
   const memo = React.useMemo(() => {
     let tmp2 = null;
@@ -204,10 +204,10 @@ export default function VerifyPhone(phone) {
     return tmp2;
   }, items3);
   let obj = { title, description, error: tmp3, onCodeEntered: callback, codeType: null, footer: null, disabled: null, loading: null, disableKeyboardAvoidingView: true };
-  const tmp7 = onPhoneTokenReceived(15401);
-  obj[4] = _require(8770).CodeType.NUMERIC;
+  const tmp7 = onPhoneTokenReceived(15466);
+  obj[4] = _require(7736).CodeType.NUMERIC;
   obj[5] = memo;
   obj[6] = tmp5;
   obj[7] = tmp[0];
-  return jsx(onPhoneTokenReceived(8770), { title, description, error: tmp3, onCodeEntered: callback, codeType: null, footer: null, disabled: null, loading: null, disableKeyboardAvoidingView: true });
+  return jsx(onPhoneTokenReceived(7736), { title, description, error: tmp3, onCodeEntered: callback, codeType: null, footer: null, disabled: null, loading: null, disableKeyboardAvoidingView: true });
 };

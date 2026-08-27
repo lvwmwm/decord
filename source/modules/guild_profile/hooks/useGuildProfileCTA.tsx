@@ -1,16 +1,16 @@
-// Module ID: 11422
-// Function ID: 11423
+// Module ID: 8951
+// Function ID: 8952
 // Name: useGuildProfileCTA
-// Dependencies: [19, 1218, 1992, 1910, 4428, 1922, 676, 589, 1403, 7984, 11423, 8489, 5509, 2]
+// Dependencies: [19, 1218, 1992, 1910, 4429, 1922, 676, 589, 1403, 8594, 8952, 8007, 5514, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 11422 (useGuildProfileCTA)
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 11423 */;
+// Module 8951 (useGuildProfileCTA)
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 8952 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "updateInvite" /* 4428 */;
+import closure_7 from "updateInvite" /* 4429 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
@@ -70,7 +70,7 @@ export default function useGuildProfileCTA(id) {
           if (num == null) {
             num = 0;
           }
-          obj[1] = id(1403).hasFlag(num, id(7984).GuildInviteFlags.IS_APPLICATION_BYPASS);
+          obj[1] = id(1403).hasFlag(num, id(8594).GuildInviteFlags.IS_APPLICATION_BYPASS);
           obj[2] = invite.roles;
           const obj2 = id(1403);
           const tmp6 = id;
@@ -224,13 +224,13 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
         if (num == null) {
           num = 0;
         }
-        flag = obj.hasFlag(num, set(7984).GuildInviteFlags.IS_APPLICATION_BYPASS);
+        flag = obj.hasFlag(num, set(8594).GuildInviteFlags.IS_APPLICATION_BYPASS);
         tmp11 = inviteKeyForGuildId;
         const tmp13 = set;
       }
     }
   }
-  const pendingFolderGuildIds = set(11423).getPendingFolderGuildIds();
+  const pendingFolderGuildIds = set(8952).getPendingFolderGuildIds();
   if (tmp7) {
     let roles;
     if (invite != null) {
@@ -292,7 +292,7 @@ export const getGuildProfileCTAType = function getGuildProfileCTAType(guildProfi
     }
     return APPLY_TO_JOIN;
   }
-  const obj2 = set(11423);
+  const obj2 = set(8952);
   const tmp15 = set;
   tmp7 = null != joinedAt;
 };

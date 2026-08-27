@@ -1,0 +1,10 @@
+// Module ID: 4181
+// Function ID: 4182
+// Name: NitroRiveView
+// Dependencies: [4182, 4202]
+
+// Module 4181 (NitroRiveView)
+import module_4182 from "module_4182" /* 4182 */;
+
+
+export const NitroRiveView = module_4182.getHostComponent("RiveView", () => importDefault(4202));

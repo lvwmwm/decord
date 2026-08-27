@@ -1,18 +1,18 @@
-// Module ID: 10528
-// Function ID: 10529
+// Module ID: 10963
+// Function ID: 10964
 // Name: SafetyToolsAboutScreen
-// Dependencies: [32, 19, 17, 10474, 676, 21, 4444, 712, 10513, 4411, 10487, 10488, 10529, 1236, 4161, 10518, 4440, 1995, 4879, 2]
+// Dependencies: [32, 19, 17, 10920, 676, 21, 4445, 712, 10948, 4412, 10927, 10928, 10964, 1236, 4161, 10953, 4441, 1995, 4880, 2]
 // Exports: default
 
-// Module 10528 (SafetyToolsAboutScreen)
+// Module 10963 (SafetyToolsAboutScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { getSafetyToolsActionSheetKey as closure_6 } from "LOCATION_CONTEXT_MOBILE" /* 10474 */;
+import { getSafetyToolsActionSheetKey as closure_6 } from "LOCATION_CONTEXT_MOBILE" /* 10920 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);

@@ -1,13 +1,13 @@
-// Module ID: 11060
-// Function ID: 11061
+// Module ID: 10021
+// Function ID: 10022
 // Name: useDeafStates
-// Dependencies: [1218, 4495, 4463, 589, 2]
+// Dependencies: [1218, 4496, 4464, 589, 2]
 // Exports: default, getDeafStates
 
-// Module 11060 (useDeafStates)
+// Module 10021 (useDeafStates)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4495 */;
-import closure_4 from "updateVoiceState" /* 4463 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4496 */;
+import closure_4 from "updateVoiceState" /* 4464 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/useDeafStates.tsx");

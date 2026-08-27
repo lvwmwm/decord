@@ -1,10 +1,10 @@
-// Module ID: 10600
-// Function ID: 10601
+// Module ID: 11004
+// Function ID: 11005
 // Name: getIsEligibleForQuests
 // Dependencies: [1625, 2]
 // Exports: getIsEligibleForQuests
 
-// Module 10600 (getIsEligibleForQuests)
+// Module 11004 (getIsEligibleForQuests)
 import set from "set" /* 2 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
 

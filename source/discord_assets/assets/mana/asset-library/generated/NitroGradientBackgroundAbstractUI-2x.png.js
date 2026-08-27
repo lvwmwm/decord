@@ -1,9 +1,9 @@
-// Module ID: 6762
-// Function ID: 6763
+// Module ID: 6768
+// Function ID: 6769
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6762 (metadata)
+// Module 6768 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroGradientBackgroundAbstractUI-2x.png.js");

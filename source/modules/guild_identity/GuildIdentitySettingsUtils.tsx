@@ -1,10 +1,10 @@
-// Module ID: 14243
-// Function ID: 14244
+// Module ID: 14270
+// Function ID: 14271
 // Name: canResetThemeColors
 // Dependencies: [2]
 // Exports: canResetThemeColors
 
-// Module 14243 (canResetThemeColors)
+// Module 14270 (canResetThemeColors)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_identity/GuildIdentitySettingsUtils.tsx");

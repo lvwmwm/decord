@@ -1,10 +1,10 @@
-// Module ID: 8532
-// Function ID: 8533
+// Module ID: 8049
+// Function ID: 8050
 // Name: preloadUserBannerImage
 // Dependencies: [1435, 4134, 2]
 // Exports: default
 
-// Module 8532 (preloadUserBannerImage)
+// Module 8049 (preloadUserBannerImage)
 import set from "set" /* 2 */;
 import getAvatarURL from "getAvatarURL" /* 1435 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;

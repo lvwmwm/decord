@@ -1,16 +1,16 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11766
+// Function ID: 11767
 // Name: ResourceChannelButtons
-// Dependencies: [32, 19, 17, 21, 4444, 712, 1501, 11924, 11925, 4879, 1297, 11211, 7965, 2]
+// Dependencies: [32, 19, 17, 21, 4445, 712, 1501, 11767, 11768, 4880, 1297, 11094, 11770, 2]
 // Exports: default
 
-// Module 11923 (ResourceChannelButtons)
+// Module 11766 (ResourceChannelButtons)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

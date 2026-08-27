@@ -1,10 +1,10 @@
-// Module ID: 10399
-// Function ID: 10400
+// Module ID: 10793
+// Function ID: 10794
 // Name: useCanSetThumbnail
 // Dependencies: [1391, 647, 2]
 // Exports: default
 
-// Module 10399 (useCanSetThumbnail)
+// Module 10793 (useCanSetThumbnail)
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;

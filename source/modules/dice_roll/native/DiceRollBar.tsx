@@ -1,17 +1,17 @@
-// Module ID: 12025
-// Function ID: 12026
+// Module ID: 11869
+// Function ID: 11870
 // Name: DiceRollBar
-// Dependencies: [19, 17, 4436, 11599, 21, 4444, 712, 589, 4184, 4445, 1297, 12026, 9619, 4440, 2]
+// Dependencies: [19, 17, 4437, 11450, 21, 4445, 712, 589, 4185, 4446, 1297, 11870, 11871, 4441, 2]
 // Exports: default
 
-// Module 12025 (DiceRollBar)
+// Module 11869 (DiceRollBar)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
-import { useDiceRollState } from "INITIAL_STATE" /* 11599 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import { useDiceRollState } from "INITIAL_STATE" /* 11450 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

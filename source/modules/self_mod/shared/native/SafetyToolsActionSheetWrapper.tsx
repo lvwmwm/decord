@@ -1,10 +1,10 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10953
+// Function ID: 10954
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: [19, 1391, 21, 589, 5569, 10519, 2]
+// Dependencies: [19, 1391, 21, 589, 5574, 10954, 2]
 // Exports: default
 
-// Module 10518 (SafetyToolsActionSheetWrapper)
+// Module 10953 (SafetyToolsActionSheetWrapper)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import { jsx } from "jsxProd" /* 21 */;

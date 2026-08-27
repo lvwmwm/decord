@@ -1,18 +1,18 @@
-// Module ID: 15531
-// Function ID: 15532
+// Module ID: 15596
+// Function ID: 15597
 // Name: MESSAGES_ITEM_EMPTY_STATE_HEIGHT
-// Dependencies: [19, 17, 21, 4444, 712, 4299, 15490, 4440, 1236, 4879, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 4300, 15555, 4441, 1236, 4880, 2]
 
-// Module 15531 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
+// Module 15596 (MESSAGES_ITEM_EMPTY_STATE_HEIGHT)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import Button from "Button" /* 4879 */;
-import registerAssetDefault from "registerAsset" /* 15490 */;
+import Text from "Text" /* 4441 */;
+import Button from "Button" /* 4880 */;
+import registerAssetDefault from "registerAsset" /* 15555 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 let c3 = importAllResult;

@@ -1,14 +1,14 @@
-// Module ID: 13140
-// Function ID: 13141
+// Module ID: 13163
+// Function ID: 13164
 // Name: ChevronLargeDownIcon
-// Dependencies: [19, 21, 712, 4164, 13141, 2]
+// Dependencies: [19, 21, 712, 4164, 13164, 2]
 // Exports: ChevronLargeDownIcon
 
-// Module 13140 (ChevronLargeDownIcon)
+// Module 13163 (ChevronLargeDownIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 13141 */;
+import registerAsset from "registerAsset" /* 13164 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

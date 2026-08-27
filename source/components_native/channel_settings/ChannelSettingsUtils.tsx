@@ -1,10 +1,10 @@
-// Module ID: 16244
-// Function ID: 16245
+// Module ID: 16309
+// Function ID: 16310
 // Name: getIsChannelNameSettingEditable
 // Dependencies: [2]
 // Exports: getIsChannelNameSettingEditable
 
-// Module 16244 (getIsChannelNameSettingEditable)
+// Module 16309 (getIsChannelNameSettingEditable)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("components_native/channel_settings/ChannelSettingsUtils.tsx");

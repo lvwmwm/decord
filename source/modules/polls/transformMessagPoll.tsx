@@ -1,10 +1,10 @@
-// Module ID: 4801
-// Function ID: 4802
+// Module ID: 4802
+// Function ID: 4803
 // Name: transformMessagePoll
 // Dependencies: [4043, 2]
 // Exports: default
 
-// Module 4801 (transformMessagePoll)
+// Module 4802 (transformMessagePoll)
 import set from "set" /* 2 */;
 import hooksDefault from "hooks" /* 4043 */;
 

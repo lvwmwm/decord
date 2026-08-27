@@ -1,19 +1,19 @@
-// Module ID: 10562
-// Function ID: 10563
+// Module ID: 8434
+// Function ID: 8435
 // Name: WarningBox
-// Dependencies: [19, 17, 21, 4444, 9612, 4440, 1236, 10563, 3339, 2]
+// Dependencies: [19, 17, 21, 4445, 8435, 4441, 1236, 8437, 3339, 2]
 // Exports: default
 
-// Module 10562 (WarningBox)
+// Module 8434 (WarningBox)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9612 */;
-import InfoBox from "InfoBox" /* 10563 */;
-import InfoBoxDefault from "InfoBox" /* 10563 */;
+import Text from "Text" /* 4441 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8435 */;
+import InfoBox from "InfoBox" /* 8437 */;
+import InfoBoxDefault from "InfoBox" /* 8437 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function WarningBox(application) {

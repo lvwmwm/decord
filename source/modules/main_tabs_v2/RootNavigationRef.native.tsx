@@ -1,10 +1,10 @@
-// Module ID: 4299
-// Function ID: 4300
+// Module ID: 4300
+// Function ID: 4301
 // Name: getRootNavigationRef
 // Dependencies: [1501, 2]
 // Exports: getRootNavigationRef
 
-// Module 4299 (getRootNavigationRef)
+// Module 4300 (getRootNavigationRef)
 import set from "set" /* 2 */;
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
 

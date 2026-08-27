@@ -1,16 +1,16 @@
-// Module ID: 9363
-// Function ID: 9364
+// Module ID: 9694
+// Function ID: 9695
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 1397, 676, 21, 4444, 712, 9253, 4411, 9364, 8183, 1297, 1236, 4440, 4879, 9155, 2]
+// Dependencies: [19, 17, 1397, 676, 21, 4445, 712, 9552, 4412, 9695, 8664, 1297, 1236, 4441, 4880, 9594, 2]
 // Exports: default
 
-// Module 9363 (EndEventActionSheet)
+// Module 9694 (EndEventActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;
@@ -28,7 +28,7 @@ export default function EndEventActionSheet(channel) {
   channel = channel.channel;
   let activeEvent;
   const tmp = callback3();
-  let obj = channel(9253);
+  let obj = channel(9552);
   activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -50,14 +50,14 @@ export default function EndEventActionSheet(channel) {
     obj2[0] = tmp.subtitle;
     const intl2 = tmp2(1236).intl;
     obj2[3] = intl2.string(tmp2(1236).t["0I0B8f"]);
-    items[1] = callback(tmp2(4440).Text, obj2);
+    items[1] = callback(tmp2(4441).Text, obj2);
     let obj3 = { style: null, children: null };
     obj3[0] = tmp.cancelButtonContainer;
     const obj4 = { text: null, grow: true, onPress: null };
     const intl3 = tmp2(1236).intl;
     obj4[0] = intl3.string(tmp2(1236).t.P60OAX);
     obj4[2] = handleClose;
-    obj3[1] = callback(tmp2(4879).Button, obj4);
+    obj3[1] = callback(tmp2(4880).Button, obj4);
     items[2] = callback(View, obj3);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.confirmButtonContainer;
@@ -74,10 +74,10 @@ export default function EndEventActionSheet(channel) {
         const obj3 = channel(closure_1_2[9]);
       }
     };
-    obj5[1] = callback(tmp2(4879).Button, obj6);
+    obj5[1] = callback(tmp2(4880).Button, obj6);
     items[3] = callback(View, obj5);
     obj[1] = items;
     obj[0] = callback2(View, obj);
-    return callback(activeEvent(8183), obj);
+    return callback(activeEvent(8664), obj);
   }
 };

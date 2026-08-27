@@ -1,10 +1,10 @@
-// Module ID: 11697
-// Function ID: 11698
+// Module ID: 11530
+// Function ID: 11531
 // Name: useActivityShelfItemsSorting
-// Dependencies: [19, 1374, 10763, 500, 1955, 2]
+// Dependencies: [19, 1374, 8369, 500, 1955, 2]
 // Exports: default
 
-// Module 11697 (useActivityShelfItemsSorting)
+// Module 11530 (useActivityShelfItemsSorting)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
@@ -55,11 +55,11 @@ export default function useActivityShelfItemsSorting(arg0) {
       let label_type;
       if (embeddedActivityConfig != null) {
         const obj = items2(500);
-        const tmp7 = embeddedActivityConfig.client_platform_config[v0(10763)(undefined, obj.getOS(obj))];
+        const tmp7 = embeddedActivityConfig.client_platform_config[v0(8369)(undefined, obj.getOS(obj))];
         if (tmp7 != null) {
           label_type = tmp7.label_type;
         }
-        const tmp5 = v0(10763);
+        const tmp5 = v0(8369);
       }
       let tmp8 = null != label_type;
       if (tmp8) {

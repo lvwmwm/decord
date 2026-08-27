@@ -1,12 +1,12 @@
-// Module ID: 9423
-// Function ID: 9424
+// Module ID: 9758
+// Function ID: 9759
 // Name: serializeKey
-// Dependencies: [9424, 2]
+// Dependencies: [9759, 2]
 // Exports: serializeKey
 
-// Module 9423 (serializeKey)
+// Module 9758 (serializeKey)
 import set from "set" /* 2 */;
-import byteLengthDefault from "byteLength" /* 9424 */;
+import byteLengthDefault from "byteLength" /* 9759 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/KeySerialization.ts");
 

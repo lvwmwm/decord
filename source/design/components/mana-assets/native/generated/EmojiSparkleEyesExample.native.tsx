@@ -1,14 +1,14 @@
-// Module ID: 6447
-// Function ID: 6448
+// Module ID: 6453
+// Function ID: 6454
 // Name: EmojiSparkleEyesExample
-// Dependencies: [21, 5440, 6448, 2]
+// Dependencies: [21, 5445, 6454, 2]
 // Exports: EmojiSparkleEyesExample
 
-// Module 6447 (EmojiSparkleEyesExample)
+// Module 6453 (EmojiSparkleEyesExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6448 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6454 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiSparkleEyesExample.native.tsx");

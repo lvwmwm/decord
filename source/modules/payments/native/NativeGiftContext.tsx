@@ -1,21 +1,21 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 10396
+// Function ID: 10397
 // Name: NativeGiftContextProvider
-// Dependencies: [5, 32, 19, 9005, 7553, 9825, 1922, 676, 6032, 1924, 21, 3, 7101, 7102, 4122, 9796, 1236, 9826, 4107, 6034, 9650, 7542, 589, 9827, 9832, 9008, 9001, 4809, 698, 5920, 7534, 709, 500, 7583, 2]
+// Dependencies: [5, 32, 19, 8492, 10394, 8380, 1922, 676, 6037, 1924, 21, 3, 7107, 7108, 4122, 10397, 1236, 10398, 4107, 6039, 10399, 10400, 589, 10432, 10438, 8495, 8489, 4810, 698, 5925, 10439, 709, 500, 10375, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 9824 (NativeGiftContextProvider)
+// Module 10396 (NativeGiftContextProvider)
 import timestampDefault from "timestamp" /* 3 */;
-import createDefinedContextDefault from "createDefinedContext" /* 7101 */;
+import createDefinedContextDefault from "createDefinedContext" /* 7107 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importDefaultResult from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 9005 */;
-import closure_7 from "createEmptyPromotionsByType" /* 7553 */;
-import closure_8 from "frozen" /* 9825 */;
+import closure_6 from "initialize" /* 8492 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10394 */;
+import closure_8 from "frozen" /* 8380 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 6032 */;
+import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 6037 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -266,7 +266,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     constants = undefined;
     table = undefined;
     jsx = undefined;
-    obj = { orderId: "a", planId: "center", planSelection: "hidden", giftInfo: null };
+    obj = { orderId: "a", planId: "", planSelection: "apply", giftInfo: true };
     obj = { premiumType: null, planInterval: null };
     obj[0] = first;
     obj[1] = first1;

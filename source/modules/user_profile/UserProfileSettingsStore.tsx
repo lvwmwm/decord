@@ -1,15 +1,15 @@
-// Module ID: 8484
-// Function ID: 8485
+// Module ID: 8002
+// Function ID: 8003
 // Name: handleFormOpen
-// Dependencies: [676, 1429, 8485, 677, 589, 8486, 709, 2]
+// Dependencies: [676, 1429, 8003, 677, 589, 8004, 709, 2]
 
-// Module 8484 (handleFormOpen)
+// Module 8002 (handleFormOpen)
 import initializeDefault from "initialize" /* 589 */;
 import INVITE from "INVITE" /* 677 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import date from "date" /* 1429 */;
-import ANALYTICS_NAME from "ANALYTICS_NAME" /* 8485 */;
-import useBioMaxLength from "useBioMaxLength" /* 8486 */;
+import ANALYTICS_NAME from "ANALYTICS_NAME" /* 8003 */;
+import useBioMaxLength from "useBioMaxLength" /* 8004 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

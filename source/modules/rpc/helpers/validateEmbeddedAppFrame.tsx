@@ -1,18 +1,18 @@
-// Module ID: 14003
-// Function ID: 14004
+// Module ID: 14030
+// Function ID: 14031
 // Name: validateEmbeddedAppFrame
-// Dependencies: [10749, 14004, 4346, 676, 10750, 10901, 7799, 10896, 2]
+// Dependencies: [9385, 14031, 4347, 676, 9386, 9429, 8368, 9424, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14003 (validateEmbeddedAppFrame)
-import getApplicationFlags from "getApplicationFlags" /* 7799 */;
-import prototypeDefault from "prototype" /* 10896 */;
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 10901 */;
-import closure_3 from "map" /* 10749 */;
-import closure_4 from "getBuilderPreviewApplicationId" /* 14004 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4346 */;
+// Module 14030 (validateEmbeddedAppFrame)
+import getApplicationFlags from "getApplicationFlags" /* 8368 */;
+import prototypeDefault from "prototype" /* 9424 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9429 */;
+import closure_3 from "map" /* 9385 */;
+import closure_4 from "getBuilderPreviewApplicationId" /* 14031 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4347 */;
 import ME from "ME" /* 676 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 10750 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9386 */;
 
 require = arg1;
 function validateEmbeddedAppFrame(transport) {

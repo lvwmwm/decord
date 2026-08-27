@@ -1,13 +1,13 @@
-// Module ID: 10588
-// Function ID: 10589
-// Dependencies: [5, 1391, 676, 4437, 709, 530, 7353, 7129, 4652, 10589, 10590, 4457, 2]
+// Module ID: 10992
+// Function ID: 10993
+// Dependencies: [5, 1391, 676, 4438, 709, 530, 7360, 7135, 4653, 10993, 10994, 4458, 2]
 
-// Module 10588
-import _modDef4457 from "module_4457" /* 4457 */;
+// Module 10992
+import _modDef4458 from "module_4458" /* 4458 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4437 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4438 */;
 
 const require = arg1;
 ({ Endpoints: c5, ActivityTypes: closure_6, AnalyticEvents: error, LoggingInviteTypes: closure_8 } = ME);
@@ -118,8 +118,8 @@ export default {
   sendActivityInviteUser(userId) {
     const self = this;
     ({ type: importDefault, activity: dependencyMap, content: closure_3, location: require } = userId);
-    const obj = _modDef4457;
-    return _modDef4457.ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: closure_3, location: closure_0 }));
+    const obj = _modDef4458;
+    return _modDef4458.ensurePrivateChannel(userId.userId).then((channelId) => self.sendActivityInvite({ channelId, type: closure_1, activity: closure_2, content: closure_3, location: closure_0 }));
   },
   getJoinSecret(arg0, arg1, arg2, arg3, arg4) {
     closure_0 = arg0;

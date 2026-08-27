@@ -1,13 +1,13 @@
-// Module ID: 7201
-// Function ID: 7202
+// Module ID: 7207
+// Function ID: 7208
 // Name: handleConnectionReset
-// Dependencies: [5168, 589, 692, 709, 2]
+// Dependencies: [5173, 589, 692, 709, 2]
 
-// Module 7201 (handleConnectionReset)
+// Module 7207 (handleConnectionReset)
 import initializeDefault from "initialize" /* 589 */;
 import set2 from "set" /* 692 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "_handleConnectionOpen" /* 5168 */;
+import closure_2 from "_handleConnectionOpen" /* 5173 */;
 import set from "set" /* 2 */;
 
 require = arg1;

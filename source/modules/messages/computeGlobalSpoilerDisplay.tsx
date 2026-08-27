@@ -1,10 +1,10 @@
-// Module ID: 11154
-// Function ID: 11155
+// Module ID: 11040
+// Function ID: 11041
 // Name: computeGlobalSpoilerDisplay
 // Dependencies: [4089, 676, 647, 4134, 2]
 // Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 11154 (computeGlobalSpoilerDisplay)
+// Module 11040 (computeGlobalSpoilerDisplay)
 import closure_2 from "getUncachedChannelPermissions" /* 4089 */;
 import ME from "ME" /* 676 */;
 

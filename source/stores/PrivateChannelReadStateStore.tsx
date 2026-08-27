@@ -1,17 +1,17 @@
-// Module ID: 13294
-// Function ID: 13295
+// Module ID: 13321
+// Function ID: 13322
 // Name: rebuildUnreads
-// Dependencies: [1395, 1391, 4459, 1981, 6012, 1991, 589, 709, 2]
+// Dependencies: [1395, 1391, 4460, 1981, 6017, 1991, 589, 709, 2]
 
-// Module 13294 (rebuildUnreads)
+// Module 13321 (rebuildUnreads)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1991 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "generateOldThreadCutoff" /* 4459 */;
+import closure_4 from "generateOldThreadCutoff" /* 4460 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "makeSortedChannel" /* 6012 */;
+import closure_6 from "makeSortedChannel" /* 6017 */;
 import set from "set" /* 2 */;
 
 function rebuildUnreads() {

@@ -1,10 +1,10 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11100
+// Function ID: 11101
 // Name: _handleContentLinking
-// Dependencies: [5, 5516, 676, 4675, 6038, 1222, 10454, 2]
+// Dependencies: [5, 5521, 676, 4676, 6043, 1222, 10901, 2]
 // Exports: default
 
-// Module 11217 (_handleContentLinking)
+// Module 11100 (_handleContentLinking)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Routes } from "ME" /* 676 */;
 

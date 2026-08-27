@@ -1,25 +1,25 @@
-// Module ID: 16453
-// Function ID: 16454
+// Module ID: 16517
+// Function ID: 16518
 // Name: useBaseActivityPanelHeaderContent
-// Dependencies: [32, 19, 17, 1390, 9982, 505, 21, 4444, 712, 1629, 4184, 16450, 4172, 5599, 16454, 589, 5906, 16455, 16459, 16460, 16465, 16444, 2]
+// Dependencies: [32, 19, 17, 1390, 9387, 505, 21, 4445, 712, 1629, 4185, 16514, 4172, 5604, 16518, 589, 5911, 16519, 16523, 16524, 16529, 16508, 2]
 // Exports: useBaseActivityPanelHeader
 
-// Module 16453 (useBaseActivityPanelHeaderContent)
+// Module 16517 (useBaseActivityPanelHeaderContent)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import ManaContext from "ManaContext" /* 4172 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5599 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5906 */;
-import _modDef16454 from "module_16454" /* 16454 */;
-import _modDef16455 from "module_16455" /* 16455 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5604 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5911 */;
+import _modDef16518 from "module_16518" /* 16518 */;
+import _modDef16519 from "module_16519" /* 16519 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "participantFromServer" /* 1390 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9982 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9387 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function useBaseActivityPanelHeaderContent(landscape) {
@@ -77,7 +77,7 @@ function useBaseActivityPanelHeaderContent(landscape) {
     items[2] = obj;
     return items;
   }, items1);
-  obj[0] = landscape(4184).runOnJS;
+  obj[0] = landscape(4185).runOnJS;
   obj[1] = setMode;
   obj[2] = closure_10;
   fn.__closure = obj;
@@ -86,8 +86,8 @@ function useBaseActivityPanelHeaderContent(landscape) {
   const items2 = [setMode];
   obj = { gesture: null, headerWrapperStyles: null, headerStyles: null, styles: null };
   const callback = importAllResult.useCallback(fn, items2);
-  obj = { mode: landscape(16450).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
-  obj[0] = setMode(16450)(obj);
+  obj = { mode: landscape(16514).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  obj[0] = setMode(16514)(obj);
   obj[1] = memo;
   obj[2] = memo1;
   obj[3] = tmp;
@@ -113,7 +113,7 @@ class BaseActivityPanelContent {
       tmp9 = closure_1;
       tmp7 = jsxs;
       items = [, , ];
-      items[0] = jsx(require("module_16454"), {});
+      items[0] = jsx(require("module_16518"), {});
       tmp3Result = !landscape;
       if (!landscape) {
         obj2 = { style: null };
@@ -172,7 +172,7 @@ let closure_19 = importAllResult.memo(function ActivityPanelHeaderContentInner(w
   if (first != null) {
     id = first.id;
   }
-  let tmp8Result = tmp8(_modDef16455, { applicationId: id });
+  let tmp8Result = tmp8(_modDef16519, { applicationId: id });
   obj = { hasConnectedActivity: null != stateFromStores, gesture, headerWrapperStyles, headerStyles, landscape, children: null };
   const items2 = [tmp7.buttonContainer, ];
   let prop;
@@ -182,7 +182,7 @@ let closure_19 = importAllResult.memo(function ActivityPanelHeaderContentInner(w
   obj = { style: items2, children: null };
   items2[1] = prop;
   let tmp17;
-  let tmp5Result = tmp5(16459);
+  let tmp5Result = tmp5(16523);
   if (!landscape) {
     let name;
     if (first != null) {
@@ -195,7 +195,7 @@ let closure_19 = importAllResult.memo(function ActivityPanelHeaderContentInner(w
   if (tmp8Result) {
     obj1 = { applicationId: null };
     obj1[0] = applicationId;
-    tmp8Result = tmp8(tmp5(16460), obj1);
+    tmp8Result = tmp8(tmp5(16524), obj1);
   }
   items3[1] = tmp8Result;
   let tmp20 = null;
@@ -210,7 +210,7 @@ let closure_19 = importAllResult.memo(function ActivityPanelHeaderContentInner(w
     tmp21 = tmp8Result;
   }
   items4[1] = tmp21;
-  tmp5Result = tmp5(16465);
+  tmp5Result = tmp5(16529);
   items4[2] = closure_12(tmp5Result, { selfEmbeddedActivity: stateFromStores, setMode });
   obj[5] = items4;
   return closure_13(BaseActivityPanelContent, obj);
@@ -221,7 +221,7 @@ const memoResult = importAllResult.memo(() => {
   let wrapperDimensions;
   const tmp2 = callback3();
   closure_0 = tmp2;
-  const context = importAllResult.useContext(wrapperDimensions(16444));
+  const context = importAllResult.useContext(wrapperDimensions(16508));
   wrapperDimensions = context.wrapperDimensions;
   let items = [tmp2.headerContainer, wrapperDimensions.isWindowLandscape];
   ({ setMode, wrapperOffset, pipState } = context);

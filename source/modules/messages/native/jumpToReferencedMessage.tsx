@@ -1,12 +1,12 @@
-// Module ID: 11570
-// Function ID: 11571
+// Module ID: 11421
+// Function ID: 11422
 // Name: jumpToReferencedMessage
-// Dependencies: [7129, 2]
+// Dependencies: [7135, 2]
 // Exports: default
 
-// Module 11570 (jumpToReferencedMessage)
+// Module 11421 (jumpToReferencedMessage)
 import set from "set" /* 2 */;
-import trackInviteDefault from "trackInvite" /* 7129 */;
+import trackInviteDefault from "trackInvite" /* 7135 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/jumpToReferencedMessage.tsx");
 

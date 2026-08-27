@@ -1,14 +1,14 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 9939
+// Function ID: 9940
 // Name: HandRequestSpeakListIcon
-// Dependencies: [19, 21, 712, 4164, 10966, 2]
+// Dependencies: [19, 21, 712, 4164, 9940, 2]
 // Exports: HandRequestSpeakListIcon
 
-// Module 10965 (HandRequestSpeakListIcon)
+// Module 9939 (HandRequestSpeakListIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 10966 */;
+import registerAsset from "registerAsset" /* 9940 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

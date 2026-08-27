@@ -1,11 +1,11 @@
-// Module ID: 9786
-// Function ID: 9787
+// Module ID: 10514
+// Function ID: 10515
 // Name: NativePaymentContextProvider
-// Dependencies: [32, 19, 4112, 505, 21, 7101, 7863, 6050, 9787, 589, 2]
+// Dependencies: [32, 19, 4112, 505, 21, 7107, 8153, 6056, 10515, 589, 2]
 // Exports: NativePaymentContextProvider
 
-// Module 9786 (NativePaymentContextProvider)
-import createDefinedContextDefault from "createDefinedContext" /* 7101 */;
+// Module 10514 (NativePaymentContextProvider)
+import createDefinedContextDefault from "createDefinedContext" /* 7107 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "addSubscriptionPlan" /* 4112 */;
 import { PaymentGateways } from "sum" /* 505 */;

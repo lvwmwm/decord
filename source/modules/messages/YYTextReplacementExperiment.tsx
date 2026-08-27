@@ -1,10 +1,10 @@
-// Module ID: 17249
-// Function ID: 17250
+// Module ID: 17315
+// Function ID: 17316
 // Name: shouldEnableYYTextReplacement
 // Dependencies: [1472, 2]
 // Exports: shouldEnableYYTextReplacement
 
-// Module 17249 (shouldEnableYYTextReplacement)
+// Module 17315 (shouldEnableYYTextReplacement)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

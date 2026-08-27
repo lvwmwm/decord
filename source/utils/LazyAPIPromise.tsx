@@ -1,10 +1,10 @@
-// Module ID: 9170
-// Function ID: 9171
+// Module ID: 9592
+// Function ID: 9593
 // Name: useLazyAPIPromise
-// Dependencies: [5, 32, 19, 4342, 2]
+// Dependencies: [5, 32, 19, 4343, 2]
 // Exports: default
 
-// Module 9170 (useLazyAPIPromise)
+// Module 9592 (useLazyAPIPromise)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

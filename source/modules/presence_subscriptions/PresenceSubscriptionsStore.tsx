@@ -1,15 +1,15 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10991
+// Function ID: 10992
 // Name: handleConnectionOpenOrResumed
-// Dependencies: [32, 4533, 4472, 10588, 4328, 589, 709, 2]
+// Dependencies: [32, 4534, 4473, 10992, 4329, 589, 709, 2]
 
-// Module 10587 (handleConnectionOpenOrResumed)
+// Module 10991 (handleConnectionOpenOrResumed)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef10588 from "module_10588" /* 10588 */;
+import _modDef10992 from "module_10992" /* 10992 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "sortActivity" /* 4533 */;
-import { INVITE_EXPIRATION_MS } from "items3" /* 4472 */;
+import closure_3 from "sortActivity" /* 4534 */;
+import { INVITE_EXPIRATION_MS } from "items3" /* 4473 */;
 
 function handleConnectionOpenOrResumed() {
   closure_5 = {};
@@ -32,8 +32,8 @@ const delayedCall = new require("start").DelayedCall(3000, function flush() {
     continue;
   }
   if (0 !== items.length) {
-    _modDef10588.subscribeActivities(items);
-    const obj = _modDef10588;
+    _modDef10992.subscribeActivities(items);
+    const obj = _modDef10992;
   }
 });
 const Store = initializeDefault.Store;

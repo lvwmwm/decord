@@ -1,10 +1,10 @@
-// Module ID: 7860
-// Function ID: 7861
+// Module ID: 12932
+// Function ID: 12933
 // Name: set
 // Dependencies: [644, 2]
 // Exports: applyBuyNitroOrderPriceOverride, markBuyNitroTrialUnavailable, resetBuyNitroTrialAndPriceOverrides, useBuyNitroOrderPriceOverrides, useBuyNitroTrialUnavailableTiers
 
-// Module 7860 (set)
+// Module 12932 (set)
 import keys from "keys" /* 644 */;
 import set from "set" /* 2 */;
 

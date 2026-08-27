@@ -1,12 +1,12 @@
-// Module ID: 11736
-// Function ID: 11737
+// Module ID: 11569
+// Function ID: 11570
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 4436, 500, 1895, 4308, 1627, 1494, 10467, 5888, 10466, 2]
+// Dependencies: [19, 4437, 500, 1895, 4309, 1627, 1494, 10913, 5893, 10912, 2]
 // Exports: default
 
-// Module 11736 (useCustomKeyboardBottomSheetConfig)
+// Module 11569 (useCustomKeyboardBottomSheetConfig)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/action_sheet/native/useCustomKeyboardBottomSheetConfig.tsx");

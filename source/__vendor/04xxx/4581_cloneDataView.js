@@ -1,0 +1,18 @@
+// Module ID: 4581
+// Function ID: 4582
+// Name: cloneDataView
+// Dependencies: [4580]
+
+// Module 4581 (cloneDataView)
+import cloneArrayBuffer from "cloneArrayBuffer" /* 4580 */;
+
+
+export default function cloneDataView(buffer) {
+  if (arg1) {
+    buffer = cloneArrayBuffer(buffer.buffer);
+  } else {
+    buffer = buffer.buffer;
+  }
+  const constructor = new buffer.constructor(buffer, buffer.byteOffset, buffer.byteLength);
+  return constructor;
+};

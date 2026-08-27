@@ -1,20 +1,20 @@
-// Module ID: 16236
-// Function ID: 16237
+// Module ID: 16301
+// Function ID: 16302
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7331, 4098, 1922, 676, 21, 1297, 4444, 712, 589, 12616, 9297, 12, 1370, 5015, 1236, 4440, 5950, 2]
+// Dependencies: [32, 19, 17, 7337, 4098, 1922, 676, 21, 1297, 4445, 712, 589, 12408, 9859, 12, 1370, 5020, 1236, 4441, 5955, 2]
 // Exports: default
 
-// Module 16236 (UserProfileYourFriendsCard)
+// Module 16301 (UserProfileYourFriendsCard)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "recomputeAffinities" /* 7331 */;
+import closure_6 from "recomputeAffinities" /* 7337 */;
 import closure_7 from "markAllUserIdListsStale" /* 4098 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
@@ -51,9 +51,9 @@ export default function UserProfileYourFriendsCard(arg0) {
   const items1 = [closure_7];
   stateFromStoresArray1 = _require(589).useStateFromStoresArray(items1, () => friendIDs.getFriendIDs());
   const obj2 = _require(589);
-  gameRelationshipsByType = _require(12616).useGameRelationshipsByType(RelationshipTypes.FRIEND);
+  gameRelationshipsByType = _require(12408).useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = lib(9297).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = lib(9859).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {
@@ -92,7 +92,7 @@ export default function UserProfileYourFriendsCard(arg0) {
         let obj = { style: { transform: items }, children: null };
         obj = { translateX: 4 * (closure_1.length - 1 - arg1) };
         items = [obj];
-        obj = { user: id, guildId: "r", size: "ct", cutout: null };
+        obj = { user: id, guildId: "r", size: "LU", cutout: "+352" };
         obj[2] = closure_1_0(closure_1_2[8]).AvatarSizes.XSMALL;
         let tmp3;
         if (arg1 < closure_1.length - 1) {
@@ -115,7 +115,7 @@ export default function UserProfileYourFriendsCard(arg0) {
   obj = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", style: tmp.label, children: null };
   const intl2 = _require(1236).intl;
   obj[4] = intl2.string(_require(1236).t.TdEu5X);
-  const items5 = [callback(_require(4440).Text, obj), memo, callback(_require(5950).ChevronSmallRightIcon, { size: "sm" })];
+  const items5 = [callback(_require(4441).Text, obj), memo, callback(_require(5955).ChevronSmallRightIcon, { size: "sm" })];
   obj[5] = items5;
-  return callback2(_require(5015).PressableOpacity, obj);
+  return callback2(_require(5020).PressableOpacity, obj);
 };

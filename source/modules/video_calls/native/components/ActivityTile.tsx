@@ -1,10 +1,10 @@
-// Module ID: 10874
-// Function ID: 10875
+// Module ID: 9521
+// Function ID: 9522
 // Name: ActivityTileInner
-// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4472, 21, 1297, 4444, 712, 589, 1370, 5906, 4637, 4288, 10875, 5900, 5920, 8946, 1236, 10805, 10806, 10877, 10804, 5015, 10878, 10908, 4440, 4880, 4172, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1922, 676, 1301, 4473, 21, 1297, 4445, 712, 589, 1370, 5911, 4638, 4289, 9522, 5905, 5925, 9089, 1236, 9364, 9371, 9524, 9435, 5020, 9525, 9541, 4441, 4881, 4172, 2]
 // Exports: default
 
-// Module 10874 (ActivityTileInner)
+// Module 9521 (ActivityTileInner)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import ManaContext from "ManaContext" /* 4172 */;
@@ -14,9 +14,9 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "participantFromServer" /* 1390 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { ActivityLayoutMode } from "items3" /* 4472 */;
+import { ActivityLayoutMode } from "items3" /* 4473 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function ActivityTileInner(participant) {
@@ -81,7 +81,7 @@ function ActivityTileInner(participant) {
                 v0 = 1;
                 dependencyMap = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = v0(10806)(obj1);
+                obj2[0] = v0(9371)(obj1);
                 return obj2;
               } else {
                 dependencyMap = 3;
@@ -92,7 +92,7 @@ function ActivityTileInner(participant) {
             dependencyMap = 3;
             throw arg1;
           } else if (arg0 !== 2) {
-            obj = closure_1_0(10877);
+            obj = closure_1_0(9524);
             const result = obj.setOrientationLockState(closure_3);
           }
           dependencyMap = 3;

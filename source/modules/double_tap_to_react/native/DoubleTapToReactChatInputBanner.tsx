@@ -1,27 +1,27 @@
-// Module ID: 11930
-// Function ID: 11931
+// Module ID: 11774
+// Function ID: 11775
 // Name: DoubleTapToReactChatInputBannerInner
-// Dependencies: [32, 19, 17, 4436, 1388, 1925, 21, 4444, 712, 500, 647, 5532, 1435, 4440, 1236, 11931, 5015, 5498, 9565, 503, 4184, 4445, 1297, 4411, 12023, 2009, 9068, 4897, 8878, 4134, 8298, 8295, 10218, 1377, 2]
+// Dependencies: [32, 19, 17, 4437, 1388, 1925, 21, 4445, 712, 500, 647, 5537, 1435, 4441, 1236, 11775, 5020, 5503, 8815, 503, 4185, 4446, 1297, 4412, 11867, 2009, 8508, 4898, 8906, 4134, 7812, 7809, 10337, 1377, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 11930 (DoubleTapToReactChatInputBannerInner)
+// Module 11774 (DoubleTapToReactChatInputBannerInner)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import Text from "Text" /* 4440 */;
-import PressableBase from "PressableBase" /* 5015 */;
-import XSmallIcon from "XSmallIcon" /* 5498 */;
-import EmojiDefault from "Emoji" /* 5532 */;
-import renderChannelBadge from "renderChannelBadge" /* 11931 */;
+import Text from "Text" /* 4441 */;
+import PressableBase from "PressableBase" /* 5020 */;
+import XSmallIcon from "XSmallIcon" /* 5503 */;
+import EmojiDefault from "Emoji" /* 5537 */;
+import renderChannelBadge from "renderChannelBadge" /* 11775 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -70,10 +70,10 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   obj6[2] = intl2.format(getSystemLocale.t["5/l2rR"], {
     emojiName: emoji.name,
     emojiNameHook(children) {
-      return callback2(callback(4440).Text, { variant: "text-xs/bold", color: "text-strong", children }, arg1);
+      return callback2(callback(4441).Text, { variant: "text-xs/bold", color: "text-strong", children }, arg1);
     },
     tapHereHook(children) {
-      return callback2(callback(4440).Text, { variant: "text-xs/medium", color: "text-brand", children }, arg1);
+      return callback2(callback(4441).Text, { variant: "text-xs/medium", color: "text-brand", children }, arg1);
     }
   });
   items4[1] = closure_9(Text.Text, obj6);

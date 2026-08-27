@@ -1,10 +1,10 @@
-// Module ID: 4909
-// Function ID: 4910
+// Module ID: 4910
+// Function ID: 4911
 // Name: textRegexp
 // Dependencies: [4160, 2]
 // Exports: textMarkupPatternWithExclusions
 
-// Module 4909 (textRegexp)
+// Module 4910 (textRegexp)
 import tDefault from "t" /* 4160 */;
 import t from "t" /* 4160 */;
 

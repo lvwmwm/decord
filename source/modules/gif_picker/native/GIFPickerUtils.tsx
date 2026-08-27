@@ -1,12 +1,12 @@
-// Module ID: 10155
-// Function ID: 10156
+// Module ID: 10280
+// Function ID: 10281
 // Name: transformFavoriteGifUrl
-// Dependencies: [19, 676, 1487, 9969, 10156, 1236, 2]
+// Dependencies: [19, 676, 1487, 9953, 10281, 1236, 2]
 // Exports: useFavoriteGIFsMobile
 
-// Module 10155 (transformFavoriteGifUrl)
+// Module 10280 (transformFavoriteGifUrl)
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import isRefreshableAttachmentUrlAll from "isRefreshableAttachmentUrl" /* 9969 */;
+import isRefreshableAttachmentUrlAll from "isRefreshableAttachmentUrl" /* 9953 */;
 import closure_4 from "noop" /* 19 */;
 
 const require = arg1;
@@ -31,7 +31,7 @@ function transformFavoriteGifUrl(url) {
       const result1 = searchParams2.set("animated", "true");
       return str.toString();
     } else {
-      const tmp14Result = tmp14(9969);
+      const tmp14Result = tmp14(9953);
     }
     obj6 = isRefreshableAttachmentUrlAll;
     tmp14 = importAll;
@@ -64,7 +64,7 @@ let result = require("set").fileFinishedImporting("modules/gif_picker/native/GIF
 
 export const GIF_HEADER_HEIGHT = 56;
 export const useFavoriteGIFsMobile = function useFavoriteGIFsMobile() {
-  let obj = sortedFavoriteGIFs(10156);
+  let obj = sortedFavoriteGIFs(10281);
   sortedFavoriteGIFs = obj.useSortedFavoriteGIFs(transformFavoriteGifUrl);
   const items = [sortedFavoriteGIFs];
   obj = {

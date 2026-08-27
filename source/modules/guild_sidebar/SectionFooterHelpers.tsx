@@ -1,14 +1,14 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15741
+// Function ID: 15742
 // Name: getSectionFooterConfig
-// Dependencies: [5432, 4089, 7206, 676, 7200, 1913, 2]
+// Dependencies: [5437, 4089, 7212, 676, 7206, 1913, 2]
 // Exports: getSectionFooterActiveVoiceChannels, getSectionFooterConfig, isSectionFooterWithActiveVoiceChannels
 
-// Module 15677 (getSectionFooterConfig)
-import computeSubtitle from "computeSubtitle" /* 7200 */;
-import closure_2 from "incrementVersion" /* 5432 */;
+// Module 15741 (getSectionFooterConfig)
+import computeSubtitle from "computeSubtitle" /* 7206 */;
+import closure_2 from "incrementVersion" /* 5437 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
-import { ChannelListGuildActionRow } from "ChannelListGuildActionRow" /* 7206 */;
+import { ChannelListGuildActionRow } from "ChannelListGuildActionRow" /* 7212 */;
 import { Permissions } from "ME" /* 676 */;
 
 require = arg1;
@@ -32,18 +32,18 @@ export const getSectionFooterConfig = function getSectionFooterConfig(guildChann
   }
   let tmp6 = !tmp3;
   if (!tmp3) {
-    const tmp7 = section === tmp(7200).SECTION_INDEX_GUILD_ACTIONS;
+    const tmp7 = section === tmp(7206).SECTION_INDEX_GUILD_ACTIONS;
     if (tmp7) {
       tmp6 = tmp7;
     } else {
       if (tmpResult.isFavoritesGuildId(guildChannels.id)) {
         let tmp8 = section !== guildChannels.getSections(false).length - 1;
       } else {
-        tmp8 = section === tmp(7200).SECTION_INDEX_FAVORITES;
+        tmp8 = section === tmp(7206).SECTION_INDEX_FAVORITES;
         if (!tmp8) {
           let tmp10 = optInChannelsEnabled;
           if (tmp10) {
-            let tmp11 = section !== tmp(7200).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
+            let tmp11 = section !== tmp(7206).SECTION_INDEX_UNCATEGORIZED_CHANNELS;
             if (tmp11) {
               let flag2 = section === guildChannels.recentsSectionNumber;
               if (!flag2) {

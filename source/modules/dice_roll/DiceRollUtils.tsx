@@ -1,10 +1,10 @@
-// Module ID: 12026
-// Function ID: 12027
+// Module ID: 11870
+// Function ID: 11871
 // Name: getBarText
 // Dependencies: [1236, 2]
 // Exports: getBarText
 
-// Module 12026 (getBarText)
+// Module 11870 (getBarText)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 5526
-// Function ID: 5527
+// Module ID: 5531
+// Function ID: 5532
 // Name: getExtensionFromContentType
 // Dependencies: [1487, 2]
 // Exports: decideFileExtension, getExtensionFromContentType
 
-// Module 5526 (getExtensionFromContentType)
+// Module 5531 (getExtensionFromContentType)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
 

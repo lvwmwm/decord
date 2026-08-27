@@ -1,13 +1,13 @@
-// Module ID: 9895
-// Function ID: 9896
+// Module ID: 10582
+// Function ID: 10583
 // Name: getNavigationModalPresentation
-// Dependencies: [500, 7852, 4423, 9110, 2]
+// Dependencies: [500, 7651, 4424, 8534, 2]
 // Exports: default
 
-// Module 9895 (getNavigationModalPresentation)
-import DCDDeviceManager from "DCDDeviceManager" /* 4423 */;
-import useIsWindowLarge from "useIsWindowLarge" /* 7852 */;
-import handleOrientationChange from "handleOrientationChange" /* 9110 */;
+// Module 10582 (getNavigationModalPresentation)
+import DCDDeviceManager from "DCDDeviceManager" /* 4424 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 7651 */;
+import handleOrientationChange from "handleOrientationChange" /* 8534 */;
 import set from "set" /* 500 */;
 
 if (set.isAndroid()) {
@@ -55,8 +55,8 @@ export default function getNavigationModalPresentation() {
       if (null != orientationLock) {
         str2 = "portrait";
       } else {
-        const orientation = tmp5(9110).getOrientation();
-        const tmp5Result = tmp5(9110);
+        const orientation = tmp5(8534).getOrientation();
+        const tmp5Result = tmp5(8534);
       }
       str4 = str2;
     }

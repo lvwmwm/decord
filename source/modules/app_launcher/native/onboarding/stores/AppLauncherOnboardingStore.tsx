@@ -1,14 +1,14 @@
-// Module ID: 11701
-// Function ID: 11702
+// Module ID: 11534
+// Function ID: 11535
 // Name: initialize
-// Dependencies: [1922, 11, 11699, 7195, 589, 709, 2]
+// Dependencies: [1922, 11, 11532, 7201, 589, 709, 2]
 
-// Module 11701 (initialize)
+// Module 11534 (initialize)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7195 */;
-import result2 from "result" /* 11699 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7201 */;
+import result2 from "result" /* 11532 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

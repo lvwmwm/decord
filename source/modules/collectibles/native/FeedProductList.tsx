@@ -1,24 +1,24 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15203
+// Function ID: 15204
 // Name: SkeletonGrid
-// Dependencies: [19, 17, 21, 4444, 9560, 15140, 14605, 15141, 2]
+// Dependencies: [19, 17, 21, 4445, 8810, 15204, 14632, 15205, 2]
 // Exports: default
 
-// Module 15139 (SkeletonGrid)
+// Module 15203 (SkeletonGrid)
 import noopAll from "noop" /* 19 */;
-import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 9560 */;
-import sharedValueDefault from "sharedValue" /* 14605 */;
-import ShopCardGridItemDefault from "ShopCardGridItem" /* 15141 */;
+import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 8810 */;
+import sharedValueDefault from "sharedValue" /* 14632 */;
+import ShopCardGridItemDefault from "ShopCardGridItem" /* 15205 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function SkeletonGrid(accessibilityLabel) {
   const loadingCardsNum = accessibilityLabel.loadingCardsNum;
   num = undefined;
   const tmp = callback();
-  let obj = num(15140);
+  let obj = num(15204);
   const cardLayout = obj.useCardLayout();
   ({ columns, cardWidth: num } = cardLayout);
   const items = [];

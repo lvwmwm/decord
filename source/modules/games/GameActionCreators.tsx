@@ -1,13 +1,13 @@
-// Module ID: 6100
-// Function ID: 6101
+// Module ID: 6107
+// Function ID: 6108
 // Name: requestGames
-// Dependencies: [5, 4468, 676, 530, 709, 4328, 12, 2]
+// Dependencies: [5, 4469, 676, 530, 709, 4329, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 6100 (requestGames)
+// Module 6107 (requestGames)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleLoadMessages" /* 4468 */;
+import closure_4 from "handleLoadMessages" /* 4469 */;
 import { Endpoints } from "ME" /* 676 */;
 
 let closure_0 = arg1;

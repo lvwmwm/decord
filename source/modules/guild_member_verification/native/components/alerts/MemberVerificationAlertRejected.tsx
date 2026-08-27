@@ -1,15 +1,15 @@
-// Module ID: 8653
-// Function ID: 8654
+// Module ID: 7596
+// Function ID: 7597
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 19, 1992, 1922, 4267, 21, 8654, 589, 8655, 8652, 8637, 1236, 8648, 5498, 4879, 2]
+// Dependencies: [5, 19, 1992, 1922, 4268, 21, 7597, 589, 7598, 7594, 7579, 1236, 7590, 5503, 4880, 2]
 // Exports: default
 
-// Module 8653 (MemberVerificationAlertRejected)
+// Module 7596 (MemberVerificationAlertRejected)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "handleGatewayJoinRequestUpdate" /* 4267 */;
+import closure_7 from "handleGatewayJoinRequestUpdate" /* 4268 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -95,7 +95,7 @@ export default function MemberVerificationAlertRejected(guildId) {
             if (closure_1_3 != null) {
               isPending = closure_1_3.isPending;
             }
-            let obj3 = v0(8652);
+            let obj3 = v0(7594);
             if (isPending) {
               v0 = 2;
               dependencyMap = 1;
@@ -133,7 +133,7 @@ export default function MemberVerificationAlertRejected(guildId) {
           if (v0 != null) {
             tmp6();
           }
-          obj1 = closure_1_0(8637);
+          obj1 = closure_1_0(7579);
           const result = obj1.openMemberVerificationModal(closure_0);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
@@ -198,7 +198,7 @@ export default function MemberVerificationAlertRejected(guildId) {
             if (closure_1_3 != null) {
               isPending = closure_1_3.isPending;
             }
-            let obj3 = v0(8652);
+            let obj3 = v0(7594);
             if (isPending) {
               v0 = 2;
               dependencyMap = 1;
@@ -236,7 +236,7 @@ export default function MemberVerificationAlertRejected(guildId) {
           if (v0 != null) {
             tmp6();
           }
-          obj1 = closure_1_0(8637);
+          obj1 = closure_1_0(7579);
           const result = obj1.openMemberVerificationModal(closure_0);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };

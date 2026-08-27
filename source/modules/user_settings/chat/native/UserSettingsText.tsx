@@ -1,15 +1,15 @@
-// Module ID: 14944
-// Function ID: 14945
+// Module ID: 15009
+// Function ID: 15010
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1922, 4113, 1303, 1304, 676, 21, 4444, 712, 698, 4134, 8913, 4165, 589, 4107, 1500, 7804, 1297, 10185, 4440, 1236, 8185, 4877, 5939, 5940, 8203, 8202, 2]
+// Dependencies: [19, 17, 1922, 4113, 1303, 1304, 676, 21, 4445, 712, 698, 4134, 8145, 4165, 589, 4107, 1500, 7695, 1297, 10309, 4441, 1236, 8295, 4878, 5944, 5945, 7625, 7626, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 14944 (UserSettingsText)
+// Module 15009 (UserSettingsText)
 import noopAll from "noop" /* 19 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import ThemesDefault from "Themes" /* 712 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 8913 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 8145 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import closure_5 from "reset" /* 4113 */;
@@ -18,7 +18,7 @@ import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
 import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;

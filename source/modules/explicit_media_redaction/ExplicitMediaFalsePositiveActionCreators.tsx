@@ -1,10 +1,10 @@
-// Module ID: 11552
-// Function ID: 11553
+// Module ID: 8330
+// Function ID: 8331
 // Name: disableFalsePositiveButton
 // Dependencies: [709, 2]
 // Exports: disableFalsePositiveButton
 
-// Module 11552 (disableFalsePositiveButton)
+// Module 8330 (disableFalsePositiveButton)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 10463
-// Function ID: 10464
+// Module ID: 10910
+// Function ID: 10911
 // Name: _loop
-// Dependencies: [4184, 1629, 10464, 10465, 1642, 1497, 2]
+// Dependencies: [4185, 1629, 9536, 10911, 1642, 1497, 2]
 // Exports: default
 
-// Module 10463 (_loop)
+// Module 10910 (_loop)
 import set from "set" /* 2 */;
 import context from "context" /* 1497 */;
 import APP_ENTRY_KEYS from "APP_ENTRY_KEYS" /* 1642 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10464 */;
-import module_4184 from "module_4184" /* 4184 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9536 */;
+import module_4185 from "module_4185" /* 4185 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1629 */;
 
 let obj = { main: null, share: null };
 obj = {};
 const merged = Object.assign(useSafeAreaInsets.getSafeAreaInsets("main"));
-obj[0] = module_4184.makeMutable(obj);
+obj[0] = module_4185.makeMutable(obj);
 obj = {};
 const merged1 = Object.assign(useSafeAreaInsets.getSafeAreaInsets("share"));
-obj[1] = module_4184.makeMutable(obj);
+obj[1] = module_4185.makeMutable(obj);
 function _loop(iter) {
   closure_0 = iter;
   subscribeToSafeAreaInsetsDefault((arg0) => {

@@ -1,16 +1,16 @@
-// Module ID: 8366
-// Function ID: 8367
+// Module ID: 7880
+// Function ID: 7881
 // Name: createGuildReportRaidSystemMessage
-// Dependencies: [1391, 1910, 8281, 8288, 8359, 8290, 8360, 8291, 1236, 1438, 1435, 2]
+// Dependencies: [1391, 1910, 7795, 7802, 7873, 7804, 7874, 7805, 1236, 1438, 1435, 2]
 // Exports: createGuildReportRaidSystemMessage
 
-// Module 8366 (createGuildReportRaidSystemMessage)
+// Module 7880 (createGuildReportRaidSystemMessage)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import ensureAvatarSource from "ensureAvatarSource" /* 1438 */;
-import resultDefault from "result" /* 8281 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 8288 */;
-import nativeStyleProperties from "nativeStyleProperties" /* 8359 */;
-import getTagPropertiesDefault from "getTagProperties" /* 8360 */;
+import resultDefault from "result" /* 7795 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7802 */;
+import nativeStyleProperties from "nativeStyleProperties" /* 7873 */;
+import getTagPropertiesDefault from "getTagProperties" /* 7874 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 
@@ -29,7 +29,7 @@ export const createGuildReportRaidSystemMessage = function createGuildReportRaid
   const messageAuthorWithProcessedColor = obj.getMessageAuthorWithProcessedColor(message);
   const tmp3 = resultDefault(theme);
   let automodUsernameColor = nativeStyleProperties.resolveAlertModeColors(theme).automodUsernameColor;
-  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp(8290)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), guildName: null };
+  obj = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp(7804)({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), guildName: null };
   let str;
   if (guild != null) {
     str = guild.name;
@@ -40,7 +40,7 @@ export const createGuildReportRaidSystemMessage = function createGuildReportRaid
   obj[2] = str;
   const obj2 = nativeStyleProperties;
   obj = {};
-  const merged = Object.assign(tmp(8291)(roleStyle));
+  const merged = Object.assign(tmp(7805)(roleStyle));
   const intl = tmp8(1236).intl;
   obj.content = intl.formatToParts(getSystemLocale.t["MTmH+u"], obj);
   const intl2 = tmp8(1236).intl;

@@ -1,15 +1,15 @@
-// Module ID: 11956
-// Function ID: 11957
+// Module ID: 11800
+// Function ID: 11801
 // Name: _addDirectoryGuildEntry
-// Dependencies: [5, 11943, 11945, 676, 636, 709, 530, 4665, 503, 2]
+// Dependencies: [5, 11787, 11789, 676, 636, 709, 530, 4666, 503, 2]
 // Exports: addDirectoryGuildEntry, clearDirectorySearch, fetchGuildEntriesForIds, removeDirectoryGuildEntry, selectDirectoryCategory, updateDirectoryEntry
 
-// Module 11956 (_addDirectoryGuildEntry)
+// Module 11800 (_addDirectoryGuildEntry)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef4665 from "module_4665" /* 4665 */;
+import _modDef4666 from "module_4666" /* 4666 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getSearchState" /* 11943 */;
-import { DirectoryEntryCategories } from "DirectoryEntryTypes" /* 11945 */;
+import closure_4 from "getSearchState" /* 11787 */;
+import { DirectoryEntryCategories } from "DirectoryEntryTypes" /* 11789 */;
 import { Endpoints } from "ME" /* 676 */;
 import importDefaultResult1 from "debounce" /* 636 */;
 
@@ -71,7 +71,7 @@ function _addDirectoryGuildEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj7 = callback2(4665);
+              let obj7 = callback2(4666);
               const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: null };
               obj2[0] = c6.DIRECTORY_CHANNEL_ENTRY(callback, callback2);
               const obj3 = { description: null, primary_category_id: null };
@@ -501,7 +501,7 @@ export const addDirectoryGuildEntry = function addDirectoryGuildEntry(c0, id, c3
   return applyArgumentsResult;
 };
 export const removeDirectoryGuildEntry = function removeDirectoryGuildEntry(channelId, guildId) {
-  let obj = _modDef4665;
+  let obj = _modDef4666;
   obj = { url: Endpoints.DIRECTORY_CHANNEL_ENTRY(channelId, guildId), trackedActionData: null, rejectWithError: true };
   obj = { event: callback(503).NetworkActionNames.DIRECTORY_GUILD_ENTRY_DELETE, properties: obj1 };
   obj[1] = obj;

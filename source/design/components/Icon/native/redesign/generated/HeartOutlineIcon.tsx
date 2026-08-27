@@ -1,14 +1,14 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 12449
+// Function ID: 12450
 // Name: HeartOutlineIcon
-// Dependencies: [19, 21, 712, 4164, 9626, 2]
+// Dependencies: [19, 21, 712, 4164, 12450, 2]
 // Exports: HeartOutlineIcon
 
-// Module 9625 (HeartOutlineIcon)
+// Module 12449 (HeartOutlineIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 9626 */;
+import registerAsset from "registerAsset" /* 12450 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

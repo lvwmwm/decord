@@ -1,18 +1,18 @@
-// Module ID: 9571
-// Function ID: 9572
+// Module ID: 10376
+// Function ID: 10377
 // Name: getUserWishlistKey
-// Dependencies: [32, 19, 7293, 1218, 1922, 9572, 9573, 589, 9578, 12, 9579, 8530, 9583, 9588, 2]
+// Dependencies: [32, 19, 7299, 1218, 1922, 10377, 10378, 589, 10383, 12, 10384, 8047, 10388, 10392, 2]
 // Exports: useCurrentUserWishlist, useFetchWishlistAndProfileInfoForUser, useFetchWishlists, useIsSkuInWishlist, useShouldShowWishlistInDMGifting
 
-// Module 9571 (getUserWishlistKey)
+// Module 10376 (getUserWishlistKey)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { useEffect } from "noop" /* 19 */;
-import closure_6 from "createUserWidgetFromServer" /* 7293 */;
+import closure_6 from "createUserWidgetFromServer" /* 7299 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import closure_9 from "get" /* 9572 */;
-import { getWishlistSkuIds } from "fromServer" /* 9573 */;
+import closure_9 from "get" /* 10377 */;
+import { getWishlistSkuIds } from "fromServer" /* 10378 */;
 
 const require = arg1;
 function getUserWishlistKey(arg0, arg1) {

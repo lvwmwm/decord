@@ -1,21 +1,21 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11213
+// Function ID: 11214
 // Name: getPollVoteEventProperties
-// Dependencies: [5, 4090, 7267, 1218, 1391, 4806, 5304, 4687, 4805, 8543, 676, 38, 4808, 1236, 5404, 11352, 8542, 4652, 12, 589, 709, 7432, 11357, 1363, 8547, 7129, 8581, 4342, 2]
+// Dependencies: [5, 4090, 7273, 1218, 1391, 4807, 5309, 4688, 4806, 8060, 676, 38, 4809, 1236, 5409, 11214, 8059, 4653, 12, 589, 709, 7440, 11219, 1363, 8064, 7135, 8097, 4343, 2]
 
-// Module 11351 (getPollVoteEventProperties)
-import setDefault from "set" /* 4808 */;
-import showVotesForAnswerAll from "showVotesForAnswer" /* 11352 */;
+// Module 11213 (getPollVoteEventProperties)
+import setDefault from "set" /* 4809 */;
+import showVotesForAnswerAll from "showVotesForAnswer" /* 11214 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "initialize" /* 4090 */;
-import closure_6 from "processMessage" /* 7267 */;
+import closure_6 from "processMessage" /* 7273 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import { DraftType } from "handleChanged" /* 4806 */;
-import closure_10 from "recomputeGuild" /* 5304 */;
-import closure_11 from "reinjectEphemerals" /* 4687 */;
-import closure_12 from "map" /* 4805 */;
-import useMessagePollInteractions from "useMessagePollInteractions" /* 8543 */;
+import { DraftType } from "handleChanged" /* 4807 */;
+import closure_10 from "recomputeGuild" /* 5309 */;
+import closure_11 from "reinjectEphemerals" /* 4688 */;
+import closure_12 from "map" /* 4806 */;
+import useMessagePollInteractions from "useMessagePollInteractions" /* 8060 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -249,7 +249,7 @@ function _optimisticallySetAnswers() {
                     let tmp6 = closure_6;
                     obj[4] = closure_6;
                     let tmp7 = _undefined;
-                    obj[6] = _undefined(7432).ReactionTypes.VOTE;
+                    obj[6] = _undefined(7440).ReactionTypes.VOTE;
                     dispatchResult = obj.dispatch(obj);
                     continue;
                   }
@@ -982,16 +982,16 @@ function _createPoll() {
               c5 = 3;
               v0 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = lib2(7129).sendPollMessage(lib.id, obj2, obj4);
+              obj5[0] = lib2(7135).sendPollMessage(lib.id, obj2, obj4);
               return obj5;
             }
           } else if (2 === tmp7) {
             c4 = 0;
             closure_10 = dependencyMap;
-            if (closure_10 instanceof lib(4342).APIError) {
+            if (closure_10 instanceof lib(4343).APIError) {
               let aPIError = closure_10;
             } else {
-              aPIError = new lib(4342).APIError(closure_10);
+              aPIError = new lib(4343).APIError(closure_10);
             }
             if ("poll" === aPIError.getAnyErrorMessage()) {
               if (null != closure_10.text) {
@@ -1104,7 +1104,7 @@ function _endPollEarly() {
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback2(4808).confirm(obj2);
+              obj3[0] = callback2(4809).confirm(obj2);
               return obj3;
             }
           } else {
@@ -1118,7 +1118,7 @@ function _endPollEarly() {
                 obj4[0] = arg1;
                 return obj4;
               } else if (arg1) {
-                obj1 = callback3(11357);
+                obj1 = callback3(11219);
                 const obj5 = { channelId: null, messageId: null };
                 obj5[0] = callback;
                 obj5[1] = callback2;

@@ -1,10 +1,10 @@
-// Module ID: 10736
-// Function ID: 10737
+// Module ID: 11020
+// Function ID: 11021
 // Name: MEDIA_SHORT_SIDE
 // Dependencies: [32, 19, 17, 2]
 // Exports: getMediaTileSize, useRemoteMediaSizes
 
-// Module 10736 (MEDIA_SHORT_SIDE)
+// Module 11020 (MEDIA_SHORT_SIDE)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "noop" /* 19 */;
 import { Image } from "get ActivityIndicator" /* 17 */;

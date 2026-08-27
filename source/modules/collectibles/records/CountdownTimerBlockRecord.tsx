@@ -1,11 +1,11 @@
-// Module ID: 7244
-// Function ID: 7245
+// Module ID: 7250
+// Function ID: 7251
 // Name: fromServer
-// Dependencies: [7245, 2]
+// Dependencies: [7251, 2]
 
-// Module 7244 (fromServer)
+// Module 7250 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7245 */;
+import ShopBlockType from "ShopBlockType" /* 7251 */;
 
 let prototype;
 prototype = function CountdownTimerBlockRecord(end_time) {

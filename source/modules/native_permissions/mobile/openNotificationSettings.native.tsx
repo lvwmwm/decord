@@ -1,13 +1,13 @@
-// Module ID: 10935
-// Function ID: 10936
+// Module ID: 9581
+// Function ID: 9582
 // Name: openNotificationSettings
-// Dependencies: [17, 500, 5039, 2]
+// Dependencies: [17, 500, 5044, 2]
 // Exports: default
 
-// Module 10935 (openNotificationSettings)
+// Module 9581 (openNotificationSettings)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 5039 */;
+import enforcingDefault from "enforcing" /* 5044 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 let result = set.fileFinishedImporting("modules/native_permissions/mobile/openNotificationSettings.native.tsx");

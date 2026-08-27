@@ -1,10 +1,10 @@
-// Module ID: 13734
-// Function ID: 13735
+// Module ID: 13761
+// Function ID: 13762
 // Name: IGNORE_ANALYTICS_BREADCRUMB_EVENTS
 // Dependencies: [2]
 // Exports: filterThrottle
 
-// Module 13734 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
+// Module 13761 (IGNORE_ANALYTICS_BREADCRUMB_EVENTS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/errors/CommonSentryInitUtils.tsx");

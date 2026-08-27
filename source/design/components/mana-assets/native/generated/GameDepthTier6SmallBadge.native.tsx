@@ -1,14 +1,14 @@
-// Module ID: 6525
-// Function ID: 6526
+// Module ID: 6531
+// Function ID: 6532
 // Name: GameDepthTier6SmallBadge
-// Dependencies: [21, 5440, 6526, 2]
+// Dependencies: [21, 5445, 6532, 2]
 // Exports: GameDepthTier6SmallBadge
 
-// Module 6525 (GameDepthTier6SmallBadge)
+// Module 6531 (GameDepthTier6SmallBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import vanityUrlDefault from "vanityUrl" /* 6526 */;
+import preloadDefault from "preload" /* 5445 */;
+import vanityUrlDefault from "vanityUrl" /* 6532 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameDepthTier6SmallBadge.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 12681
+// Function ID: 12682
 // Name: getApplicationsFromConfigs
-// Dependencies: [5, 12730, 676, 11159, 584, 687, 709, 530, 1208, 2]
+// Dependencies: [5, 12680, 676, 11045, 584, 687, 709, 530, 1208, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 12731 (getApplicationsFromConfigs)
+// Module 12681 (getApplicationsFromConfigs)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "updateApplicationConfigs" /* 12730 */;
-import { FetchState } from "updateApplicationConfigs" /* 12730 */;
+import closure_4 from "updateApplicationConfigs" /* 12680 */;
+import { FetchState } from "updateApplicationConfigs" /* 12680 */;
 import { Endpoints } from "ME" /* 676 */;
 import importDefaultResult from "fails" /* 584 */;
 import importDefaultResult1 from "dispatcher" /* 709 */;

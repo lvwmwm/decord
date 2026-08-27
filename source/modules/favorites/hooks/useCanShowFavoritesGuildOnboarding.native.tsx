@@ -1,12 +1,12 @@
-// Module ID: 9937
-// Function ID: 9938
+// Module ID: 10237
+// Function ID: 10238
 // Name: useCanShowFavoritesGuildOnboarding
-// Dependencies: [4154, 1981, 589, 4298, 2]
+// Dependencies: [4154, 1981, 589, 4299, 2]
 // Exports: default
 
-// Module 9937 (useCanShowFavoritesGuildOnboarding)
+// Module 10237 (useCanShowFavoritesGuildOnboarding)
 import initialize from "initialize" /* 589 */;
-import coerceMainRoute from "coerceMainRoute" /* 4298 */;
+import coerceMainRoute from "coerceMainRoute" /* 4299 */;
 import closure_2 from "setContent" /* 4154 */;
 import closure_3 from "handleConnectionOpen" /* 1981 */;
 

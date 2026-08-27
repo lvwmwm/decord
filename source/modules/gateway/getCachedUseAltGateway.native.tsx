@@ -1,10 +1,10 @@
-// Module ID: 13185
-// Function ID: 13186
+// Module ID: 13208
+// Function ID: 13209
 // Name: getCachedUseAltGateway
 // Dependencies: [17, 500, 502, 2]
 // Exports: default
 
-// Module 13185 (getCachedUseAltGateway)
+// Module 13208 (getCachedUseAltGateway)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import enforcingDefault from "enforcing" /* 502 */;

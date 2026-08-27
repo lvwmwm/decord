@@ -1,14 +1,14 @@
-// Module ID: 7045
-// Function ID: 7046
+// Module ID: 7051
+// Function ID: 7052
 // Name: WaterIllocon
-// Dependencies: [21, 5440, 7046, 2]
+// Dependencies: [21, 5445, 7052, 2]
 // Exports: WaterIllocon
 
-// Module 7045 (WaterIllocon)
+// Module 7051 (WaterIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 7046 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 7052 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WaterIllocon.native.tsx");

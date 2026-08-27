@@ -1,10 +1,10 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14889
+// Function ID: 14890
 // Name: DisplayNameStylesGummyColorPickerSheet
-// Dependencies: [32, 19, 17, 1934, 676, 21, 1933, 4444, 712, 9688, 1935, 643, 14863, 4412, 14864, 698, 4411, 5569, 5568, 4879, 1236, 14208, 9889, 2]
+// Dependencies: [32, 19, 17, 1934, 676, 21, 1933, 4445, 712, 8851, 1935, 643, 14890, 4413, 14891, 698, 4412, 5574, 5573, 4880, 1236, 14235, 10246, 2]
 // Exports: default
 
-// Module 14862 (DisplayNameStylesGummyColorPickerSheet)
+// Module 14889 (DisplayNameStylesGummyColorPickerSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -14,7 +14,7 @@ import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 1933 */;
 import closure_11 from "module_0" /* 0 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ View: c5, Pressable: closure_6, StyleSheet } = get_ActivityIndicator);
@@ -54,7 +54,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   let callback2;
   const tmp = callback3();
   dependencyMap = tmp;
-  let obj = selectedColors(9688);
+  let obj = selectedColors(8851);
   let tmp5 = selectedColors.length > 0;
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(selectedColors(1935).DisplayNameEffect.GUMMY);
   if (tmp5) {
@@ -82,7 +82,7 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   }), 2);
   first1 = tmp9[0];
   closure_7 = tmp9[1];
-  const tmp12Result = onSelectColors(14863)(selectedColors(1935).DisplayNameEffect.GUMMY);
+  const tmp12Result = onSelectColors(14890)(selectedColors(1935).DisplayNameEffect.GUMMY);
   const findIndexResult = tmp12Result.findIndex((colors) => selectedColors(closure_2[11]).areArraysShallowEqual(colors.colors, first1));
   c8 = findIndexResult;
   let items = [first];
@@ -123,8 +123,8 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   const intl = tmp2(1236).intl;
   obj1[2] = intl.string(selectedColors(1236).t.XqMe3N);
   obj1[3] = callback2;
-  obj[1] = callback2(selectedColors(4879).Button, obj1);
-  obj[0] = callback2(selectedColors(5568).BottomSheetTitleHeader, obj);
+  obj[1] = callback2(selectedColors(4880).Button, obj1);
+  obj[0] = callback2(selectedColors(5573).BottomSheetTitleHeader, obj);
   let obj2 = { style: tmp.body, children: null };
   const obj3 = { style: items2, children: null };
   items2 = [, ];
@@ -146,14 +146,14 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   } else {
     const obj7 = { colors: null };
     obj7[0] = first1;
-    tmp18Result = tmp18(tmp11(14208), obj7);
+    tmp18Result = tmp18(tmp11(14235), obj7);
   }
   const items4 = [tmp18Result, ];
   const obj8 = { style: tmp.customIconOverlay, pointerEvents: "none", children: null };
   tmp11 = onSelectColors;
-  const tmp12 = onSelectColors(14863);
+  const tmp12 = onSelectColors(14890);
   const tmp21 = first1;
-  obj8[2] = callback2(closure_5, { style: tmp.customIconScrim, children: callback2(selectedColors(9889).PencilIcon, { color: "white", size: "sm" }) });
+  obj8[2] = callback2(closure_5, { style: tmp.customIconScrim, children: callback2(selectedColors(10246).PencilIcon, { color: "white", size: "sm" }) });
   items4[1] = callback2(closure_5, obj8);
   obj5[5] = items4;
   obj4[1] = closure_10(tmp21, obj5);
@@ -188,8 +188,8 @@ export default function DisplayNameStylesGummyColorPickerSheet(selectedColors) {
   const intl3 = tmp2(1236).intl;
   obj10[0] = intl3.string(selectedColors(1236).t.yBZMsQ);
   obj10[1] = callback1;
-  items6[1] = callback2(selectedColors(4879).Button, obj10);
+  items6[1] = callback2(selectedColors(4880).Button, obj10);
   obj2[1] = items6;
   obj[1] = closure_10(closure_5, obj2);
-  return callback2(selectedColors(5569).BottomSheet, obj);
+  return callback2(selectedColors(5574).BottomSheet, obj);
 };

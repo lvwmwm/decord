@@ -1,19 +1,19 @@
-// Module ID: 16322
-// Function ID: 16323
+// Module ID: 16387
+// Function ID: 16388
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 1391, 4687, 1922, 21, 4444, 712, 1629, 589, 16323, 16325, 12072, 2]
+// Dependencies: [32, 19, 17, 1391, 4688, 1922, 21, 4445, 712, 1629, 589, 16388, 16390, 11918, 2]
 // Exports: default
 
-// Module 16322 (RestrictedMessageRequestPreview)
+// Module 16387 (RestrictedMessageRequestPreview)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "reinjectEphemerals" /* 4687 */;
+import closure_8 from "reinjectEphemerals" /* 4688 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ ScrollView: c5, View: closure_6 } = get_ActivityIndicator);
@@ -115,10 +115,10 @@ export default function RestrictedMessageRequestPreview(channelId) {
       obj1 = { channel: null, user: null };
       obj1[0] = stateFromStores;
       obj1[1] = stateFromStores1;
-      const items8 = [callback(tmp2(16323), obj1), ];
+      const items8 = [callback(tmp2(16388), obj1), ];
       obj2 = { channelId: null };
       obj2[0] = channelId;
-      items8[1] = callback(tmp2(16325), obj2);
+      items8[1] = callback(tmp2(16390), obj2);
       obj[5] = items8;
       const items9 = [closure_11(closure_5, obj), ];
       const obj3 = { style: null, children: null };
@@ -129,7 +129,7 @@ export default function RestrictedMessageRequestPreview(channelId) {
       obj3[0] = items10;
       const obj5 = { channel: null };
       obj5[0] = stateFromStores;
-      obj3[1] = callback(tmp2(12072), obj5);
+      obj3[1] = callback(tmp2(11918), obj5);
       items9[1] = callback(first1, obj3);
       obj[1] = items9;
       tmp13Result = tmp13(tmp14, obj);

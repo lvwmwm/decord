@@ -1,12 +1,12 @@
-// Module ID: 14503
-// Function ID: 14504
+// Module ID: 14530
+// Function ID: 14531
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 8302, 4134, 709, 10584, 1236, 2]
+// Dependencies: [5, 7816, 4134, 709, 10988, 1236, 2]
 
-// Module 14503 (_updateClipsAllowVoiceRecording)
+// Module 14530 (_updateClipsAllowVoiceRecording)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import createToggle from "createToggle" /* 10584 */;
+import createToggle from "createToggle" /* 10988 */;
 
 require = arg1;
 function _updateClipsAllowVoiceRecording() {

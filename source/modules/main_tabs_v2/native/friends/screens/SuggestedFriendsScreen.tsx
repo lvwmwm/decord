@@ -1,16 +1,16 @@
-// Module ID: 16204
-// Function ID: 16205
+// Module ID: 16269
+// Function ID: 16270
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 676, 21, 4444, 712, 5900, 5920, 698, 15484, 8998, 16201, 5017, 9843, 11322, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4445, 712, 5905, 5925, 698, 15549, 8819, 16266, 5022, 10558, 10651, 1236, 2]
 // Exports: default
 
-// Module 16204 (SuggestedFriendsScreen)
+// Module 16269 (SuggestedFriendsScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ AnalyticEvents: c5, AnalyticsSections: closure_6 } = ME);

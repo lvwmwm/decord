@@ -1,14 +1,14 @@
-// Module ID: 14219
-// Function ID: 14220
+// Module ID: 14246
+// Function ID: 14247
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 7214, 7230, 647, 7226, 1236, 2]
+// Dependencies: [32, 19, 7220, 7236, 647, 7232, 1236, 2]
 // Exports: default
 
-// Module 14219 (useProfileEffectSections)
+// Module 14246 (useProfileEffectSections)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7214 */;
-import closure_5 from "map" /* 7230 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7220 */;
+import closure_5 from "map" /* 7236 */;
 
 const require = arg1;
 let obj = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };

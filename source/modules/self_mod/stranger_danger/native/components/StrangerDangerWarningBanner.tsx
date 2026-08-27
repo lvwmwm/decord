@@ -1,18 +1,18 @@
-// Module ID: 10500
-// Function ID: 10501
+// Module ID: 10938
+// Function ID: 10939
 // Name: StrangerDangerWarningBanner
-// Dependencies: [19, 4098, 9885, 10474, 676, 10501, 21, 4444, 712, 589, 10487, 10488, 4675, 4411, 10502, 2009, 503, 10489, 1236, 10492, 4440, 10504, 2]
+// Dependencies: [19, 4098, 10573, 10920, 676, 8978, 21, 4445, 712, 589, 10927, 10928, 4676, 4412, 8990, 2009, 503, 10929, 1236, 10932, 4441, 10939, 2]
 
-// Module 10500 (StrangerDangerWarningBanner)
+// Module 10938 (StrangerDangerWarningBanner)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "markAllUserIdListsStale" /* 4098 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 9885 */;
-import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 10474 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 10573 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 10920 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_9 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10501 */;
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_9 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8978 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 class StrangerDangerWarningBanner {

@@ -1,12 +1,12 @@
-// Module ID: 15334
-// Function ID: 15335
+// Module ID: 15398
+// Function ID: 15399
 // Name: useManaTextMigrationHighlightRestartNotice
-// Dependencies: [19, 4443, 589, 4809, 2]
+// Dependencies: [19, 4444, 589, 4810, 2]
 // Exports: useManaTextMigrationHighlightRestartNotice
 
-// Module 15334 (useManaTextMigrationHighlightRestartNotice)
+// Module 15398 (useManaTextMigrationHighlightRestartNotice)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getUserAgnosticState" /* 4443 */;
+import closure_4 from "getUserAgnosticState" /* 4444 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("design/components/Text/native/useManaTextMigrationHighlightRestartNotice.tsx");

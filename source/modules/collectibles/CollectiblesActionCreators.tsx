@@ -1,27 +1,27 @@
-// Module ID: 7213
-// Function ID: 7214
+// Module ID: 7219
+// Function ID: 7220
 // Name: openCollectiblesShop
-// Dependencies: [5, 4443, 1996, 7214, 7229, 7230, 7231, 7232, 7236, 7216, 7242, 7243, 678, 676, 7257, 7258, 4299, 709, 7259, 7260, 7262, 530, 4342, 6129, 7261, 7226, 7263, 7264, 2]
+// Dependencies: [5, 4444, 1996, 7220, 7235, 7236, 7237, 7238, 7242, 7222, 7248, 7249, 678, 676, 7263, 7264, 4300, 709, 7265, 7266, 7268, 530, 4343, 6135, 7267, 7232, 7269, 7270, 2]
 // Exports: areRequestOptionsEqual, claimCollectiblesCategoryReward, claimPremiumCollectiblesProduct, closeCollectiblesShop, dispatchOpenCollectiblesShop, fetchCollectiblesCategories, fetchCollectiblesMarketings, fetchCollectiblesPurchases, fetchCollectiblesShopHome, isCollectiblesShopOpen, maybeFetchCollectiblesProduct, maybeFetchCollectiblesShopTabLayout, openCollectiblesShop, productDetailsOpened, seedCollectiblesProductFromStandaloneLoad, setShopHomeConfigOverride, setShopLayoutUrlOverride, setSkipNumCategories, validateCollectiblesRecipient, validateCollectiblesRecipientsBatch
 
-// Module 7213 (openCollectiblesShop)
+// Module 7219 (openCollectiblesShop)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4299 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7226 */;
-import pushLayer from "pushLayer" /* 7259 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4300 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7232 */;
+import pushLayer from "pushLayer" /* 7265 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getUserAgnosticState" /* 4443 */;
+import closure_4 from "getUserAgnosticState" /* 4444 */;
 import closure_5 from "_getSystemLocale" /* 1996 */;
-import closure_6 from "updateCategoriesAndProducts" /* 7214 */;
-import { addDebugLog } from "useCollectiblesDebugStore" /* 7229 */;
-import closure_8 from "map" /* 7230 */;
-import closure_9 from "items" /* 7231 */;
-import { CollectiblesCategoriesRecord as closure_10, CollectiblesMarketingsRecord as closure_11, CollectiblesShopHomeRecord as closure_14 } from "fromServer" /* 7232 */;
-import closure_12 from "fromServer" /* 7216 */;
-import closure_13 from "fromServer" /* 7242 */;
+import closure_6 from "updateCategoriesAndProducts" /* 7220 */;
+import { addDebugLog } from "useCollectiblesDebugStore" /* 7235 */;
+import closure_8 from "map" /* 7236 */;
+import closure_9 from "items" /* 7237 */;
+import { CollectiblesCategoriesRecord as closure_10, CollectiblesMarketingsRecord as closure_11, CollectiblesShopHomeRecord as closure_14 } from "fromServer" /* 7238 */;
+import closure_12 from "fromServer" /* 7222 */;
+import closure_13 from "fromServer" /* 7248 */;
 import { CollectiblesMobileShopScreen as closure_15 } from "items" /* 678 */;
 import ME from "ME" /* 676 */;
-import getMarketingBySurface from "getMarketingBySurface" /* 7257 */;
+import getMarketingBySurface from "getMarketingBySurface" /* 7263 */;
 import "map";
 
 require = arg1;
@@ -688,8 +688,8 @@ function _validateCollectiblesRecipient() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            obj2 = callback(6129);
-            const aPIError = new callback(4342).APIError(callback);
+            obj2 = callback(6135);
+            const aPIError = new callback(4343).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             return { value: false, done: true };
@@ -784,8 +784,8 @@ function _validateCollectiblesRecipientsBatch() {
           } else if (1 === tmp7) {
             c5 = 0;
             callback = closure_4;
-            obj2 = callback(6129);
-            const aPIError = new callback(4342).APIError(callback);
+            obj2 = callback(6135);
+            const aPIError = new callback(4343).APIError(callback);
             const result = obj2.captureOrIgnoreApiError(aPIError);
             c7 = 3;
             const obj4 = { value: null, done: true };
@@ -1332,7 +1332,7 @@ export default { openCollectiblesShop, closeCollectiblesShop, fetchCollectiblesP
 export { openCollectiblesShop };
 export { openCollectiblesShopMobile };
 export const isCollectiblesShopOpen = function isCollectiblesShopOpen() {
-  const rootNavigationRef = isCollectiblesShopRoute(4299).getRootNavigationRef();
+  const rootNavigationRef = isCollectiblesShopRoute(4300).getRootNavigationRef();
   const tmp = null == rootNavigationRef || !rootNavigationRef.isReady();
   let tmp2 = !tmp;
   if (!tmp) {

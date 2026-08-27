@@ -1,9 +1,9 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 5309
+// Function ID: 5310
 // Name: recomputeGuild
 // Dependencies: [1434, 1992, 1985, 1910, 1922, 676, 4077, 1403, 709, 11, 589, 2]
 
-// Module 5304 (recomputeGuild)
+// Module 5309 (recomputeGuild)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

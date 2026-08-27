@@ -1,14 +1,14 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11374
+// Function ID: 11375
 // Name: _getSafetyHubData
-// Dependencies: [5, 1218, 11514, 8017, 676, 709, 530, 4635, 8016, 2]
+// Dependencies: [5, 1218, 11368, 8621, 676, 709, 530, 4636, 8620, 2]
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11520 (_getSafetyHubData)
+// Module 11374 (_getSafetyHubData)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11514 */;
-import SafetyHubView from "SafetyHubView" /* 8017 */;
+import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11368 */;
+import SafetyHubView from "SafetyHubView" /* 8621 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -271,7 +271,7 @@ function _getSafetyHubDataForClassification() {
                         items = [first];
                       }
                       found.flagged_content = items;
-                      obj3 = callback(8016);
+                      obj3 = callback(8620);
                     }
                   }
                   let obj = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: null, accountStanding: null, isDsaEligible: null, username: null, isAppealEligible: null };
@@ -328,7 +328,7 @@ function _getSafetyHubDataForClassification() {
                         items = [first];
                       }
                       found.flagged_content = items;
-                      obj3 = callback(8016);
+                      obj3 = callback(8620);
                     }
                   }
                   let obj = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: null, accountStanding: null, isDsaEligible: null, username: null, isAppealEligible: null };

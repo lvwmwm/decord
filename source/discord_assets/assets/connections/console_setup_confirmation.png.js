@@ -1,9 +1,9 @@
-// Module ID: 10693
-// Function ID: 10694
+// Module ID: 9243
+// Function ID: 9244
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10693 (metadata)
+// Module 9243 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/connections/console_setup_confirmation.png.js");

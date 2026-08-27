@@ -1,18 +1,18 @@
-// Module ID: 14712
-// Function ID: 14713
-// Dependencies: [32, 19, 17, 21, 4444, 14640, 10599, 11405, 5337, 14654, 4440, 2]
+// Module ID: 14739
+// Function ID: 14740
+// Dependencies: [32, 19, 17, 21, 4445, 14667, 11003, 11257, 5342, 14681, 4441, 2]
 
-// Module 14712
-import Text from "Text" /* 4440 */;
-import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5337 */;
-import useQuests from "useQuests" /* 10599 */;
-import _getQuestsInstructionsToWinReward from "_getQuestsInstructionsToWinReward" /* 11405 */;
-import getDeliveredQuest from "getDeliveredQuest" /* 14640 */;
-import QUEST_PROGRESS_DIAMETER_BY_SIZEDefault from "QUEST_PROGRESS_DIAMETER_BY_SIZE" /* 14654 */;
+// Module 14739
+import Text from "Text" /* 4441 */;
+import QuestsVisibleMessagesChangedSource from "QuestsVisibleMessagesChangedSource" /* 5342 */;
+import useQuests from "useQuests" /* 11003 */;
+import _getQuestsInstructionsToWinReward from "_getQuestsInstructionsToWinReward" /* 11257 */;
+import getDeliveredQuest from "getDeliveredQuest" /* 14667 */;
+import COMPLETION_GLOW_SHADOW_RADIUSDefault from "COMPLETION_GLOW_SHADOW_RADIUS" /* 14681 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -32,7 +32,7 @@ const memoResult = importAllResult.memo(function QuestDockEnrolledHeader() {
   obj1 = { style: tmp2.progressIndicatorWrapper, children: null };
   const questBarSubtitle = _getQuestsInstructionsToWinReward.useQuestBarSubtitle(obj);
   obj2 = { quest: questCreative, size: "x-sm", progress: questTaskDetails.percentComplete, loading: false, hasConfetti: true };
-  obj1[1] = callback2(QUEST_PROGRESS_DIAMETER_BY_SIZEDefault, obj2);
+  obj1[1] = callback2(COMPLETION_GLOW_SHADOW_RADIUSDefault, obj2);
   const items = [callback2(View, obj1), ];
   obj3 = { style: tmp2.copy, children: null };
   const items1 = [callback2(Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: questBarTitle }), callback2(Text.Text, { variant: "text-sm/medium", color: "text-muted", children: questBarSubtitle })];

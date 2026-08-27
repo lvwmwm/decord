@@ -1,10 +1,10 @@
-// Module ID: 13475
-// Function ID: 13476
+// Module ID: 13502
+// Function ID: 13503
 // Name: urlPartToSettingsEnum
 // Dependencies: [2]
 // Exports: default
 
-// Module 13475 (urlPartToSettingsEnum)
+// Module 13502 (urlPartToSettingsEnum)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_settings/urlPartToSettingsEnum.tsx");

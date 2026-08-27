@@ -1,13 +1,13 @@
-// Module ID: 10658
-// Function ID: 10659
+// Module ID: 9215
+// Function ID: 9216
 // Name: getLocationContextServer
-// Dependencies: [5, 1391, 1981, 676, 530, 5999, 507, 2]
+// Dependencies: [5, 1391, 1981, 676, 530, 6004, 507, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 10658 (getLocationContextServer)
+// Module 9215 (getLocationContextServer)
 import getAuthenticationPath from "getAuthenticationPath" /* 507 */;
 import sendRequest from "sendRequest" /* 530 */;
-import handleLogoutDefault from "handleLogout" /* 5999 */;
+import handleLogoutDefault from "handleLogout" /* 6004 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;

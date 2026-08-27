@@ -1,10 +1,10 @@
-// Module ID: 8272
-// Function ID: 8273
+// Module ID: 7563
+// Function ID: 7564
 // Name: _formatMessageCountLabel
 // Dependencies: [1235, 11, 1236, 2]
 // Exports: formatMessageCountLabel, formatMobileMessageCountLabel, getMessageCountText, shouldUseOldMaxMessageCount
 
-// Module 8272 (_formatMessageCountLabel)
+// Module 7563 (_formatMessageCountLabel)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

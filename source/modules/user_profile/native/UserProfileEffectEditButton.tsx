@@ -1,17 +1,17 @@
-// Module ID: 14217
-// Function ID: 14218
+// Module ID: 14244
+// Function ID: 14245
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 5948, 9591, 505, 21, 4444, 712, 8490, 10335, 4411, 14218, 2009, 1236, 14209, 5995, 5440, 12414, 9594, 1297, 8509, 2]
+// Dependencies: [19, 17, 5953, 8439, 505, 21, 4445, 712, 8008, 8424, 4412, 14245, 2009, 1236, 14236, 6000, 5445, 10668, 8442, 1297, 8024, 2]
 // Exports: default
 
-// Module 14217 (UserProfileEffectEditButton)
+// Module 14244 (UserProfileEffectEditButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 5948 */;
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 5953 */;
 import { NOOP } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

@@ -1,14 +1,14 @@
-// Module ID: 10866
-// Function ID: 10867
+// Module ID: 9512
+// Function ID: 9513
 // Name: canRenderParticipantVideo
-// Dependencies: [1218, 4495, 4465, 4508, 589, 2]
+// Dependencies: [1218, 4496, 4466, 4509, 589, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 10866 (canRenderParticipantVideo)
+// Module 9512 (canRenderParticipantVideo)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4495 */;
-import ParticipantTypes from "ParticipantTypes" /* 4465 */;
-import { Features } from "DesktopSources" /* 4508 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4496 */;
+import ParticipantTypes from "ParticipantTypes" /* 4466 */;
+import { Features } from "DesktopSources" /* 4509 */;
 
 const require = arg1;
 function canRenderParticipantVideo(participant, closure_1_4) {

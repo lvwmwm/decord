@@ -1,19 +1,19 @@
-// Module ID: 6107
-// Function ID: 6108
+// Module ID: 6114
+// Function ID: 6115
 // Name: showSimpleLoadingModal
-// Dependencies: [4675, 6108, 2009, 2]
+// Dependencies: [4676, 6115, 2009, 2]
 // Exports: showSimpleLoadingModal
 
-// Module 6107 (showSimpleLoadingModal)
+// Module 6114 (showSimpleLoadingModal)
 import set from "set" /* 2 */;
-import _modDef4675 from "module_4675" /* 4675 */;
+import _modDef4676 from "module_4676" /* 4676 */;
 
 const result = set.fileFinishedImporting("modules/mobile_web_handoff/native/SimpleLoadingModal.tsx");
 
-export const showSimpleLoadingModal = function showSimpleLoadingModal(closure_4, arg1) {
-  const _require = closure_4;
+export const showSimpleLoadingModal = function showSimpleLoadingModal(c3, arg1) {
+  const _require = c3;
   importDefault = arg1;
-  let obj = _modDef4675;
+  let obj = _modDef4676;
   obj = {};
   const merged = Object.assign(arg1);
   obj.onDismissed = function onDismissed() {
@@ -23,5 +23,5 @@ export const showSimpleLoadingModal = function showSimpleLoadingModal(closure_4,
       onDismissed();
     }
   };
-  obj.pushLazy(_require(2009)(6108, dependencyMap.paths), obj, closure_4, { animation: "none" });
+  obj.pushLazy(_require(2009)(6115, dependencyMap.paths), obj, c3, { animation: "none" });
 };

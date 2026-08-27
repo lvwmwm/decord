@@ -1,9 +1,9 @@
-// Module ID: 8818
-// Function ID: 8819
+// Module ID: 8722
+// Function ID: 8723
 // Name: NativeFWOMeasureModule
 // Dependencies: [17, 2]
 
-// Module 8818 (NativeFWOMeasureModule)
+// Module 8722 (NativeFWOMeasureModule)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 9528
-// Function ID: 9529
+// Module ID: 8766
+// Function ID: 8767
 // Name: GameGenres
-// Dependencies: [32, 676, 4271, 1236, 4707, 500, 4043, 2]
+// Dependencies: [32, 676, 4272, 1236, 4708, 500, 4043, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 9528 (GameGenres)
+// Module 8766 (GameGenres)
 import set from "set" /* 500 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import hooksDefault from "hooks" /* 4043 */;
-import matchPath from "matchPath" /* 4271 */;
-import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4707 */;
+import matchPath from "matchPath" /* 4272 */;
+import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4708 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import ME from "ME" /* 676 */;
 

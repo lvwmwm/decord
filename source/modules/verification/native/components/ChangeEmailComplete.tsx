@@ -1,26 +1,26 @@
-// Module ID: 8738
-// Function ID: 8739
+// Module ID: 7700
+// Function ID: 7701
 // Name: handlePress
-// Dependencies: [19, 17, 8678, 21, 4444, 712, 8676, 8687, 4440, 1236, 4879, 2]
+// Dependencies: [19, 17, 7622, 21, 4445, 712, 7620, 7634, 4441, 1236, 4880, 2]
 // Exports: default
 
-// Module 8738 (handlePress)
+// Module 7700 (handlePress)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import Button from "Button" /* 4879 */;
-import _modDef8676 from "module_8676" /* 8676 */;
-import registerAssetDefault from "registerAsset" /* 8687 */;
+import Text from "Text" /* 4441 */;
+import Button from "Button" /* 4880 */;
+import _modDef7620 from "module_7620" /* 7620 */;
+import registerAssetDefault from "registerAsset" /* 7634 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { resetChangeEmailStore } from "ChangeEmailFields" /* 8678 */;
+import { resetChangeEmailStore } from "ChangeEmailFields" /* 7622 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function handlePress() {
   resetChangeEmailStore();
-  _modDef8676.close();
+  _modDef7620.close();
 }
 noopAll;
 ({ View: c3, Image: c4, ScrollView: c5 } = get_ActivityIndicator);

@@ -1,10 +1,10 @@
-// Module ID: 9362
-// Function ID: 9363
+// Module ID: 9693
+// Function ID: 9694
 // Name: isRemainingUsersGroup
 // Dependencies: [2]
 // Exports: isRemainingUsersGroup
 
-// Module 9362 (isRemainingUsersGroup)
+// Module 9693 (isRemainingUsersGroup)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/native/components/event_detail/EventDetailTypes.tsx");

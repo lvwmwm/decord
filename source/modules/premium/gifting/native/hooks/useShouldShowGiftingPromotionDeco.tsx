@@ -1,13 +1,13 @@
-// Module ID: 10263
-// Function ID: 10264
+// Module ID: 10448
+// Function ID: 10449
 // Name: useShouldShowGiftingPromotionDeco
-// Dependencies: [1924, 9824, 2]
+// Dependencies: [1924, 10396, 2]
 // Exports: default
 
-// Module 10263 (useShouldShowGiftingPromotionDeco)
+// Module 10448 (useShouldShowGiftingPromotionDeco)
 import set from "set" /* 2 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
-import NativeGiftContextProvider from "NativeGiftContextProvider" /* 9824 */;
+import NativeGiftContextProvider from "NativeGiftContextProvider" /* 10396 */;
 
 const PremiumTypes = GuildFeatures.PremiumTypes;
 const result = set.fileFinishedImporting("modules/premium/gifting/native/hooks/useShouldShowGiftingPromotionDeco.tsx");

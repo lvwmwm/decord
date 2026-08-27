@@ -1,10 +1,10 @@
-// Module ID: 4490
-// Function ID: 4491
+// Module ID: 4491
+// Function ID: 4492
 // Name: transformProfileEffectKeyFrameFromServer
 // Dependencies: [1950, 2]
 // Exports: default
 
-// Module 4490 (transformProfileEffectKeyFrameFromServer)
+// Module 4491 (transformProfileEffectKeyFrameFromServer)
 import set from "set" /* 2 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 

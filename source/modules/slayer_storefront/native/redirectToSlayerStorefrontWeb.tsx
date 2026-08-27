@@ -1,10 +1,10 @@
-// Module ID: 10315
-// Function ID: 10316
+// Module ID: 10499
+// Function ID: 10500
 // Name: _redirectToSlayerStorefrontWeb
-// Dependencies: [5, 676, 3, 4162, 1236, 6106, 4122, 2]
+// Dependencies: [5, 676, 3, 4162, 1236, 6113, 4122, 2]
 // Exports: default
 
-// Module 10315 (_redirectToSlayerStorefrontWeb)
+// Module 10499 (_redirectToSlayerStorefrontWeb)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Routes } from "ME" /* 676 */;
@@ -74,7 +74,7 @@ function _redirectToSlayerStorefrontWeb() {
             } else {
               c4 = 1;
               closure_3 = c4.COLLECTIBLES_SHOP_GAME_SHOP(callback, undefined, callback2);
-              let obj6 = callback2(6106);
+              let obj6 = callback2(6113);
               logger = 3;
               c6 = 1;
               const obj3 = { value: null, done: false };

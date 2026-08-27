@@ -1,10 +1,10 @@
-// Module ID: 14996
-// Function ID: 14997
+// Module ID: 15060
+// Function ID: 15061
 // Name: onSummaryReminderNotificationSettingsChanged
 // Dependencies: [4101, 676, 4134, 698, 2]
 // Exports: onSummaryReminderNotificationSettingsChanged
 
-// Module 14996 (onSummaryReminderNotificationSettingsChanged)
+// Module 15060 (onSummaryReminderNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

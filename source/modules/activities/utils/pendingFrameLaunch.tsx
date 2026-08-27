@@ -1,10 +1,10 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 9393
+// Function ID: 9394
 // Name: stashPendingFrameLaunch
 // Dependencies: [2]
 // Exports: consumePendingFrameLaunch, discardPendingFrameLaunch, stashPendingFrameLaunch
 
-// Module 10768 (stashPendingFrameLaunch)
+// Module 9393 (stashPendingFrameLaunch)
 import set from "set" /* 2 */;
 
 let closure_0 = {};

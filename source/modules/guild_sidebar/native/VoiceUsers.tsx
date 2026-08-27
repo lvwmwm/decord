@@ -1,22 +1,22 @@
-// Module ID: 15557
-// Function ID: 15558
+// Module ID: 15622
+// Function ID: 15623
 // Name: AudienceItem
-// Dependencies: [19, 17, 1992, 21, 4444, 712, 10018, 8617, 589, 15558, 9666, 1236, 12161, 4440, 9454, 15562, 6101, 15565, 2]
+// Dependencies: [19, 17, 1992, 21, 4445, 712, 10122, 7550, 589, 15623, 9009, 1236, 12009, 4441, 9787, 15627, 6108, 15630, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 15557 (AudienceItem)
+// Module 15622 (AudienceItem)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8617 */;
-import map from "map" /* 9666 */;
-import getLayoutStyles from "getLayoutStyles" /* 10018 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 12161 */;
+import Text from "Text" /* 4441 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7550 */;
+import map from "map" /* 9009 */;
+import getLayoutStyles from "getLayoutStyles" /* 10122 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 12009 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function AudienceItem(arg0) {
@@ -81,7 +81,7 @@ let closure_12 = importAllResult.memo((voiceState) => {
   obj = { style: userCollapsedOverlap, children: null };
   obj = { user, member: null, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed: null, sessionId: null, channel: null, isGuest: null };
   const tmp = channel;
-  tmp3 = callback2(channel(8617)());
+  tmp3 = callback2(channel(7550)());
   const tmp6 = View;
   if (member == null) {
     member = storeMember;
@@ -92,7 +92,7 @@ let closure_12 = importAllResult.memo((voiceState) => {
   obj[9] = voiceState2.sessionId;
   obj[10] = channel;
   obj[11] = isGuest;
-  obj[1] = closure_6(channel(15558), obj, user.id);
+  obj[1] = closure_6(channel(15623), obj, user.id);
   return closure_6(tmp6, obj);
 });
 const result = require("set").fileFinishedImporting("modules/guild_sidebar/native/VoiceUsers.tsx");

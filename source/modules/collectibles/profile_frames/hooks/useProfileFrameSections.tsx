@@ -1,14 +1,14 @@
-// Module ID: 14223
-// Function ID: 14224
+// Module ID: 14250
+// Function ID: 14251
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7214, 7230, 647, 9617, 7226, 1236, 2]
+// Dependencies: [32, 19, 7220, 7236, 647, 12443, 7232, 1236, 2]
 // Exports: default
 
-// Module 14223 (useProfileFrameSections)
+// Module 14250 (useProfileFrameSections)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7214 */;
-import closure_5 from "map" /* 7230 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7220 */;
+import closure_5 from "map" /* 7236 */;
 
 const require = arg1;
 let obj = { PURCHASE: "purchase", PREMIUM_PURCHASE: "premium_purchase", PREVIEW: "preview" };

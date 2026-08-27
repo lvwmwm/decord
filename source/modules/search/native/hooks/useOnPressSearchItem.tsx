@@ -1,17 +1,17 @@
-// Module ID: 16076
-// Function ID: 16077
+// Module ID: 16139
+// Function ID: 16140
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 1391, 11979, 8622, 16077, 8621, 676, 1398, 11978, 12003, 1487, 4161, 1236, 9147, 4158, 1500, 16055, 16078, 1231, 6119, 9059, 4457, 4455, 7985, 2009, 4679, 4683, 12945, 4911, 4958, 8637, 1222, 12000, 2]
+// Dependencies: [5, 19, 1391, 11823, 7555, 16140, 7554, 676, 1398, 11822, 11847, 1487, 4161, 1236, 8572, 4158, 1500, 16120, 16141, 1231, 6126, 8498, 4458, 4456, 8595, 2009, 4680, 4684, 12709, 4912, 4959, 7579, 1222, 11844, 2]
 // Exports: useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 16076 (handleVoiceOrStageChannelConnectPress)
+// Module 16139 (handleVoiceOrStageChannelConnectPress)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "prototype" /* 11979 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8622 */;
-import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16077 */;
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 8621 */;
+import closure_6 from "prototype" /* 11823 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7555 */;
+import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16140 */;
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7554 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1398 */;
 

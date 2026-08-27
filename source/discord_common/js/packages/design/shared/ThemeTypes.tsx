@@ -1,9 +1,9 @@
-// Module ID: 7959
-// Function ID: 7960
+// Module ID: 12971
+// Function ID: 12972
 // Name: items
 // Dependencies: [2]
 
-// Module 7959 (items)
+// Module 12971 (items)
 import set from "set" /* 2 */;
 
 const obj = { DARK: "dark", LIGHT: "light", MIDNIGHT: "midnight", DARKER: "darker" };

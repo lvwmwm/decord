@@ -1,14 +1,14 @@
-// Module ID: 16210
-// Function ID: 16211
+// Module ID: 16275
+// Function ID: 16276
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4098, 1922, 9837, 676, 21, 5900, 5920, 589, 16209, 9565, 503, 8998, 9843, 2]
+// Dependencies: [19, 4098, 1922, 10552, 676, 21, 5905, 5925, 589, 16274, 8815, 503, 8819, 10558, 2]
 // Exports: default
 
-// Module 16210 (SpamRequestsScreen)
+// Module 16275 (SpamRequestsScreen)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "markAllUserIdListsStale" /* 4098 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { UserRowModes } from "UserRowModes" /* 9837 */;
+import { UserRowModes } from "UserRowModes" /* 10552 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

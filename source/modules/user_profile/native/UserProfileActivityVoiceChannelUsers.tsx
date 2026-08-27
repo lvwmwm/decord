@@ -1,16 +1,16 @@
-// Module ID: 12579
-// Function ID: 12580
+// Module ID: 9347
+// Function ID: 9348
 // Name: UserRow
-// Dependencies: [19, 4533, 21, 9028, 589, 5546, 4637, 1297, 9682, 1236, 2]
+// Dependencies: [19, 4534, 21, 8827, 589, 5551, 4638, 1297, 9139, 1236, 2]
 // Exports: default
 
-// Module 12579 (UserRow)
+// Module 9347 (UserRow)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getNicknameDefault from "getNickname" /* 4637 */;
-import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 9682 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 9682 */;
-import closure_3 from "sortActivity" /* 4533 */;
+import getNicknameDefault from "getNickname" /* 4638 */;
+import UserProfileStackedActionSheet from "UserProfileStackedActionSheet" /* 9139 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 9139 */;
+import closure_3 from "sortActivity" /* 4534 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -18,7 +18,7 @@ function UserRow(user) {
   user = user.user;
   const channel = user.channel;
   ({ onPress, start, end } = user);
-  let obj = user(9028);
+  let obj = user(8827);
   const avatarDecoration = obj.useAvatarDecoration(user, channel.guild_id);
   const items = [closure_3];
   const stateFromStoresObject = user(589).useStateFromStoresObject(items, () => ({ status: closure_1_3.getStatus(user.id), isMobileOnline: closure_1_3.isMobileOnline(user.id), isVROnline: closure_1_3.isVROnline(user.id) }));
@@ -30,7 +30,7 @@ function UserRow(user) {
   obj[2] = jsx(user(1297).Avatar, { user, avatarDecoration, size: user(1297).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
   obj[3] = start;
   obj[4] = end;
-  return jsx(user(5546).TableRow, { user, avatarDecoration, size: user(1297).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
+  return jsx(user(5551).TableRow, { user, avatarDecoration, size: user(1297).AvatarSizes.REFRESH_MEDIUM_32, guildId: channel.guild_id, status, isMobileOnline, isVROnline, autoStatusCutout: true });
 }
 noopAll;
 const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileActivityVoiceChannelUsers.tsx");

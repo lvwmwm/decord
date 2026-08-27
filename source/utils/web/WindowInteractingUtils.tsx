@@ -1,10 +1,10 @@
-// Module ID: 5514
-// Function ID: 5515
+// Module ID: 5519
+// Function ID: 5520
 // Name: INTERACTION_EVENTS
 // Dependencies: [2]
 // Exports: clearCurrentlyInteractingWindowId, getCurrentlyInteractingWindowId, setCurrentlyInteractingWindowId
 
-// Module 5514 (INTERACTION_EVENTS)
+// Module 5519 (INTERACTION_EVENTS)
 import set from "set" /* 2 */;
 
 let c0 = null;

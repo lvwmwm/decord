@@ -1,14 +1,14 @@
-// Module ID: 7167
-// Function ID: 7168
+// Module ID: 7173
+// Function ID: 7174
 // Name: getSearchIndex
-// Dependencies: [32, 1992, 1922, 687, 7168, 7191, 7196, 7170, 12, 7172, 2]
+// Dependencies: [32, 1992, 1922, 687, 7174, 7197, 7202, 7176, 12, 7178, 2]
 
-// Module 7167 (getSearchIndex)
+// Module 7173 (getSearchIndex)
 import apply from "apply" /* 12 */;
 import setDefault from "set" /* 687 */;
-import getGuildMemberSecondaryIndexes from "getGuildMemberSecondaryIndexes" /* 7168 */;
-import getJoinedAtDateFormatter from "getJoinedAtDateFormatter" /* 7170 */;
-import hasStringMatch from "hasStringMatch" /* 7191 */;
+import getGuildMemberSecondaryIndexes from "getGuildMemberSecondaryIndexes" /* 7174 */;
+import getJoinedAtDateFormatter from "getJoinedAtDateFormatter" /* 7176 */;
+import hasStringMatch from "hasStringMatch" /* 7197 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
@@ -50,7 +50,7 @@ prototype["initialize"] = function initialize() {
     const guildMemberSafetyMembers = new getGuildMemberSecondaryIndexes.GuildMemberSafetyMembers(self.guildId);
     self._members = guildMemberSafetyMembers;
     ({ guildId, _members } = self);
-    const guildMemberSafetyPagination = new require(7196) /* items */.GuildMemberSafetyPagination(guildId, _members.values(self.getSearchIndex()));
+    const guildMemberSafetyPagination = new require(7202) /* items */.GuildMemberSafetyPagination(guildId, _members.values(self.getSearchIndex()));
     self._pagination = guildMemberSafetyPagination;
   }
 };
@@ -92,8 +92,8 @@ Object.defineProperty(prototype, "searchChunkSize", {
       num = 0;
       if (self._initialized) {
         const _pagination = self._pagination;
-        num = require(7196) /* items */.getSearchChunkLimit(_pagination.getPaginationState());
-        const obj = require(7196) /* items */;
+        num = require(7202) /* items */.getSearchChunkLimit(_pagination.getPaginationState());
+        const obj = require(7202) /* items */;
       }
     }
     return num;
@@ -693,7 +693,7 @@ prototype["getPaginationState"] = function getPaginationState() {
     }
     return paginationState;
   }
-  paginationState = require(7196) /* items */.createDefaultMemberSafetyPaginationState();
+  paginationState = require(7202) /* items */.createDefaultMemberSafetyPaginationState();
 };
 prototype["getPaginatedMembers"] = function getPaginatedMembers() {
   const self = this;

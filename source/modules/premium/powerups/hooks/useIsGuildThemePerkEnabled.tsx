@@ -1,12 +1,12 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 15660
+// Function ID: 15661
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [1910, 4330, 676, 589, 4334, 2]
+// Dependencies: [1910, 4331, 676, 589, 4335, 2]
 // Exports: default
 
-// Module 15595 (useIsGuildThemePerkEnabled)
+// Module 15660 (useIsGuildThemePerkEnabled)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "calculateAppliedBoosts" /* 4330 */;
+import closure_3 from "calculateAppliedBoosts" /* 4331 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;

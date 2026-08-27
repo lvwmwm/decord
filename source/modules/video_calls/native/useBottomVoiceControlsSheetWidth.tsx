@@ -1,13 +1,13 @@
-// Module ID: 10826
-// Function ID: 10827
+// Module ID: 9467
+// Function ID: 9468
 // Name: useBottomVoiceControlsSheetWidth
-// Dependencies: [9963, 1494, 2]
+// Dependencies: [9442, 1494, 2]
 // Exports: default
 
-// Module 10826 (useBottomVoiceControlsSheetWidth)
+// Module 9467 (useBottomVoiceControlsSheetWidth)
 import set from "set" /* 2 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9963 */;
+import BOX_MODE_ACTIONSHEET_WIDTH from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9442 */;
 
 ({ BOX_MODE_ACTIONSHEET_WIDTH: obj1, BOX_MODE_THRESHOLD_WIDTH: c3 } = BOX_MODE_ACTIONSHEET_WIDTH);
 const result = set.fileFinishedImporting("modules/video_calls/native/useBottomVoiceControlsSheetWidth.tsx");

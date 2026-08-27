@@ -1,12 +1,12 @@
-// Module ID: 4705
-// Function ID: 4706
+// Module ID: 4706
+// Function ID: 4707
 // Name: handleSubscribeFailure
-// Dependencies: [4342, 589, 709, 2]
+// Dependencies: [4343, 589, 709, 2]
 
-// Module 4705 (handleSubscribeFailure)
+// Module 4706 (handleSubscribeFailure)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4342 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4343 */;
 
 require = arg1;
 function handleSubscribeFailure(error) {

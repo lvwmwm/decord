@@ -1,15 +1,15 @@
-// Module ID: 16840
-// Function ID: 16841
+// Module ID: 16906
+// Function ID: 16907
 // Name: resolveMessageCodedLinks
-// Dependencies: [5, 7131, 4428, 4427, 4432, 16841, 7970, 6114, 11727, 5433, 16848, 2]
+// Dependencies: [5, 7137, 4429, 4428, 4433, 16907, 8580, 6121, 11560, 5438, 16914, 2]
 
-// Module 16840 (resolveMessageCodedLinks)
-import getPathsFromURLDefault from "getPathsFromURL" /* 4427 */;
-import initializeDefault from "initialize" /* 5433 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16848 */;
+// Module 16906 (resolveMessageCodedLinks)
+import getPathsFromURLDefault from "getPathsFromURL" /* 4428 */;
+import initializeDefault from "initialize" /* 5438 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16914 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleGuildTemplateResolveSuccess" /* 7131 */;
-import closure_5 from "updateInvite" /* 4428 */;
+import closure_4 from "handleGuildTemplateResolveSuccess" /* 7137 */;
+import closure_5 from "updateInvite" /* 4429 */;
 
 const require = arg1;
 function resolveMessageCodedLinks(content) {

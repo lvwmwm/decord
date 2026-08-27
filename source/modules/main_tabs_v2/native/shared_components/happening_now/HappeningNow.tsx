@@ -1,36 +1,29 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 15559
+// Function ID: 15560
 // Name: renderCard
-// Dependencies: [32, 19, 17, 14811, 676, 21, 8228, 4444, 712, 5599, 8714, 15495, 698, 4896, 1501, 15496, 5900, 5920, 15503, 15504, 4184, 10465, 12, 7957, 1236, 15505, 15506, 15523, 15525, 15526, 15509, 15522, 15527, 15521, 15508, 1370, 2]
+// Dependencies: [32, 19, 17, 14838, 676, 21, 7730, 4445, 712, 5604, 7670, 15560, 698, 4897, 1501, 15561, 5905, 5925, 15568, 15569, 4185, 10911, 12, 8037, 1236, 15570, 15571, 15588, 15590, 15591, 15574, 15587, 15592, 15586, 15573, 1370, 2]
 
-// Module 15494 (renderCard)
+// Module 15559 (renderCard)
 import ThemesDefault from "Themes" /* 712 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5599 */;
-import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 15505 */;
-import HappeningNowCardUnifiedVCDefault from "HappeningNowCardUnifiedVC" /* 15508 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5604 */;
+import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 15570 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14811 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14838 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createFakeSharedValue from "createFakeSharedValue" /* 8228 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import { Gesture } from "LegacyBaseButton" /* 5599 */;
+import createFakeSharedValue from "createFakeSharedValue" /* 7730 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import { Gesture } from "LegacyBaseButton" /* 5604 */;
 
 require = arg1;
 function renderCard(kind, fullWidth) {
   if ("placeholder" !== kind.kind) {
     if (!fullWidth.loading) {
       kind = kind.kind;
-      let obj = {};
-      const merged = Object.assign(kind);
-      const merged1 = Object.assign(fullWidth);
-      obj.cardKey = keyExtractor(kind);
-      return jsx(HappeningNowCardUnifiedVCDefault, {});
     }
   }
-  obj = { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant };
   return jsx(HappeningNowCardPlaceholder.HappeningNowCardPlaceholder, { fullWidth: fullWidth.fullwidth, panelVariant: fullWidth.panelVariant });
 }
 function keyExtractor(voiceState) {
@@ -77,7 +70,7 @@ const memoResult = importAllResult.memo((listRef) => {
   obj = obj(isFocused[14]);
   isFocused = obj.useIsFocused();
   ref = isFocused;
-  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: 3256618780241012600000000000000000000000000000, isFocused: 172158042798817300 };
+  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "ZA", isFocused: "+27" };
   obj[3] = isFocused;
   const tmp7 = callback(ref(isFocused[15])(listRef.cards, obj), 2);
   let first = tmp7[0];

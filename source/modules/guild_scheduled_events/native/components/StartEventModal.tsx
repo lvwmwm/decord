@@ -1,15 +1,15 @@
-// Module ID: 9267
-// Function ID: 9268
+// Module ID: 9818
+// Function ID: 9819
 // Name: NavigationBar
-// Dependencies: [5, 32, 19, 17, 1391, 1910, 1397, 9165, 21, 4444, 712, 4675, 5015, 1236, 1297, 8278, 4440, 9261, 589, 9201, 9268, 5500, 8008, 9271, 4879, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 1910, 1397, 9590, 21, 4445, 712, 4676, 5020, 1236, 1297, 7745, 4441, 9817, 589, 9561, 9819, 5505, 8612, 9822, 4880, 2]
 // Exports: default
 
-// Module 9267 (NavigationBar)
+// Module 9818 (NavigationBar)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import registerAssetDefault from "registerAsset" /* 8278 */;
-import GuildEventCardControlsDefault from "GuildEventCardControls" /* 9261 */;
+import Text from "Text" /* 4441 */;
+import registerAssetDefault from "registerAsset" /* 7745 */;
+import GuildEventCardControlsDefault from "GuildEventCardControls" /* 9817 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -17,9 +17,9 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
-import { START_EVENT_MODAL_KEY } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9165 */;
+import { START_EVENT_MODAL_KEY } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9590 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function NavigationBar(onClose) {
@@ -33,7 +33,7 @@ function NavigationBar(onClose) {
   };
   obj = { source: registerAssetDefault };
   obj[3] = callback(onClose(1297).Icon, obj);
-  obj[0] = callback(onClose(5015).PressableOpacity, obj);
+  obj[0] = callback(onClose(5020).PressableOpacity, obj);
   return callback(View, obj);
 }
 function StartEventHeader(children) {

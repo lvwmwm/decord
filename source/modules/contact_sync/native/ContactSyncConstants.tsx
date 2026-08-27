@@ -1,9 +1,9 @@
-// Module ID: 12306
-// Function ID: 12307
+// Module ID: 12130
+// Function ID: 12131
 // Name: ContactSyncLandingPage
 // Dependencies: [2]
 
-// Module 12306 (ContactSyncLandingPage)
+// Module 12130 (ContactSyncLandingPage)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/contact_sync/native/ContactSyncConstants.tsx");

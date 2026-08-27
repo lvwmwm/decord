@@ -1,19 +1,19 @@
-// Module ID: 11679
-// Function ID: 11680
+// Module ID: 11511
+// Function ID: 11512
 // Name: num2
-// Dependencies: [19, 17, 21, 4444, 712, 500, 8628, 1236, 4968, 4440, 10423, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 500, 7561, 1236, 4972, 4441, 10873, 2]
 // Exports: default
 
-// Module 11679 (num2)
+// Module 11511 (num2)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ChatIcon from "ChatIcon" /* 4968 */;
-import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 8628 */;
-import AnimatedCountDefault from "AnimatedCount" /* 10423 */;
+import ChatIcon from "ChatIcon" /* 4972 */;
+import useLoadForumUnreadCounts from "useLoadForumUnreadCounts" /* 7561 */;
+import AnimatedCountDefault from "AnimatedCount" /* 10873 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -64,7 +64,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     obj1 = { variant: "text-sm/semibold", color: null, children: null };
     obj1[1] = str;
     obj1[2] = messageCountText;
-    let tmp7Result = tmp7(tmp2(4440).Text, obj1);
+    let tmp7Result = tmp7(tmp2(4441).Text, obj1);
   } else {
     const obj2 = { count: null, textVariant: "text-sm/semibold", textColor: null, animate: false };
     obj2[0] = messageCount;
@@ -81,7 +81,7 @@ export default function ForumPostMessageCount(hasUnreads) {
     obj4[0] = unreadCount;
     const items2 = ["(", intl2.format(tmp2(1236).t.z3PEth, obj4), ")"];
     obj3[3] = items2;
-    tmp5Result = tmp5(tmp2(4440).Text, obj3);
+    tmp5Result = tmp5(tmp2(4441).Text, obj3);
   }
   items1[2] = tmp5Result;
   obj[2] = items1;

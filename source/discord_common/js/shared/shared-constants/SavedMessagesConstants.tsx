@@ -1,9 +1,9 @@
-// Module ID: 8595
-// Function ID: 8596
+// Module ID: 7529
+// Function ID: 7530
 // Name: SAVED_BOOKMARKS_MAX
 // Dependencies: [2]
 
-// Module 8595 (SAVED_BOOKMARKS_MAX)
+// Module 7529 (SAVED_BOOKMARKS_MAX)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SavedMessagesConstants.tsx");

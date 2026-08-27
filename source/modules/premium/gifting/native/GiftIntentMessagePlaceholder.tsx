@@ -1,10 +1,10 @@
-// Module ID: 11449
-// Function ID: 11450
+// Module ID: 11304
+// Function ID: 11305
 // Name: getGiftIntentCustomMessagePlaceholder
 // Dependencies: [1236, 2]
 // Exports: getGiftIntentCustomMessagePlaceholder
 
-// Module 11449 (getGiftIntentCustomMessagePlaceholder)
+// Module 11304 (getGiftIntentCustomMessagePlaceholder)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

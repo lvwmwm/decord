@@ -1,10 +1,10 @@
-// Module ID: 4489
-// Function ID: 4490
+// Module ID: 4490
+// Function ID: 4491
 // Name: getPricesFromServer
 // Dependencies: [4108, 2]
 // Exports: default
 
-// Module 4489 (getPricesFromServer)
+// Module 4490 (getPricesFromServer)
 import set from "set" /* 2 */;
 import createFromServer from "createFromServer" /* 4108 */;
 

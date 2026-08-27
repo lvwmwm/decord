@@ -1,9 +1,9 @@
-// Module ID: 7319
-// Function ID: 7320
+// Module ID: 7325
+// Function ID: 7326
 // Name: handleBackgroundSync
 // Dependencies: [1395, 1218, 1391, 1956, 2]
 
-// Module 7319 (handleBackgroundSync)
+// Module 7325 (handleBackgroundSync)
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;

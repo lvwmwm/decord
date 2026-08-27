@@ -1,17 +1,17 @@
-// Module ID: 8796
-// Function ID: 8797
+// Module ID: 7766
+// Function ID: 7767
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 1391, 21, 4444, 712, 589, 4638, 8607, 2]
+// Dependencies: [19, 17, 1391, 21, 4445, 712, 589, 4639, 7540, 2]
 // Exports: default
 
-// Module 8796 (ConversationNavigatorHeader)
+// Module 7766 (ConversationNavigatorHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import computeChannelNameDefault from "computeChannelName" /* 4638 */;
+import computeChannelNameDefault from "computeChannelName" /* 4639 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;
@@ -39,6 +39,6 @@ export default function ConversationNavigatorHeader(channelId) {
   const tmp3 = computeChannelNameDefault(stateFromStores, true);
   obj = { style: callback(flag).container, children: null };
   obj = { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" };
-  obj[1] = jsx(channelId(8607).GenericHeaderTitle, { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
+  obj[1] = jsx(channelId(7540).GenericHeaderTitle, { title: channelId.title, subtitle: tmp3, variant: "heading-lg/semibold", subtitleColor: "text-muted" });
   return <View title={arg0.title} subtitle={tmp3} variant="heading-lg/semibold" subtitleColor="text-muted" />;
 };

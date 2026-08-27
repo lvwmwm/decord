@@ -1,16 +1,16 @@
-// Module ID: 14832
-// Function ID: 14833
+// Module ID: 14859
+// Function ID: 14860
 // Name: toggle
-// Dependencies: [14780, 8302, 4074, 705, 1236, 10584, 500, 2]
+// Dependencies: [14807, 7816, 4074, 705, 1236, 10988, 500, 2]
 
-// Module 14832 (toggle)
+// Module 14859 (toggle)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isIterable from "isIterable" /* 4074 */;
-import MobileUserSettings from "MobileUserSettings" /* 8302 */;
-import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 14780 */;
-import createToggle from "createToggle" /* 10584 */;
+import MobileUserSettings from "MobileUserSettings" /* 7816 */;
+import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 14807 */;
+import createToggle from "createToggle" /* 10988 */;
 
 const useFontScaleStore = DEFAULT_FONT_SCALE_STORE_STATE.useFontScaleStore;
 const toggle = createToggle.createToggle({

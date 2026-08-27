@@ -1,9 +1,9 @@
-// Module ID: 4644
-// Function ID: 4645
+// Module ID: 4645
+// Function ID: 4646
 // Name: GuildRoomObjectTypes
 // Dependencies: [2]
 
-// Module 4644 (GuildRoomObjectTypes)
+// Module 4645 (GuildRoomObjectTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_rooms/GuildRoomTypes.tsx");

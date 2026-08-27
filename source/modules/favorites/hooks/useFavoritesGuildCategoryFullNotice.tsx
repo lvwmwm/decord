@@ -1,13 +1,13 @@
-// Module ID: 15543
-// Function ID: 15544
+// Module ID: 15608
+// Function ID: 15609
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [1394, 1429, 676, 589, 9927, 1913, 1236, 3147, 2]
+// Dependencies: [1394, 1429, 676, 589, 10226, 1913, 1236, 3147, 2]
 // Exports: default
 
-// Module 15543 (useFavoritesGuildCategoryFullNotice)
+// Module 15608 (useFavoritesGuildCategoryFullNotice)
 import initialize from "initialize" /* 589 */;
 import messagesProxyDefault from "messagesProxy" /* 3147 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 9927 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10226 */;
 import closure_3 from "initializeFromUserSettings" /* 1394 */;
 import { FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME as closure_4 } from "date" /* 1429 */;
 import { ChannelTypes } from "ME" /* 676 */;

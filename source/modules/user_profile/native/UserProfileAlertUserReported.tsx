@@ -1,13 +1,13 @@
-// Module ID: 12256
-// Function ID: 12257
+// Module ID: 9003
+// Function ID: 9004
 // Name: UserProfileAlertUserReported
-// Dependencies: [19, 21, 4814, 1236, 4814, 2]
+// Dependencies: [19, 21, 4815, 1236, 4815, 2]
 // Exports: default
 
-// Module 12256 (UserProfileAlertUserReported)
+// Module 9003 (UserProfileAlertUserReported)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4814 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4815 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

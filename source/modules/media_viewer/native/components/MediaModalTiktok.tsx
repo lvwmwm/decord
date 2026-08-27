@@ -1,10 +1,10 @@
-// Module ID: 9082
-// Function ID: 9083
+// Module ID: 8522
+// Function ID: 8523
 // Name: createTiktokVideoControls
-// Dependencies: [32, 19, 21, 9083, 9068, 9062, 9066, 9067, 2]
+// Dependencies: [32, 19, 21, 8523, 8508, 8502, 8506, 8507, 2]
 // Exports: createTiktokVideoControls
 
-// Module 9082 (createTiktokVideoControls)
+// Module 8522 (createTiktokVideoControls)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -258,9 +258,9 @@ export const createTiktokVideoControls = function createTiktokVideoControls() {
         const current = ref.current;
         if (current != null) {
           const _HermesInternal = HermesInternal;
-          current.injectJavaScript("\n    window.postMessage(" + tmp6 + ", '*')\n  ");
+          current.injectJavaScript("\n    window.postMessage(" + tmp5 + ", '*')\n  ");
         }
-        const tmp = ref;
+        const tmp8 = ref;
       }
     },
     useSubscribe(arg0, arg1, arg2) {

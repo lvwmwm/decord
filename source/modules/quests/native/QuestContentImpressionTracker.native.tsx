@@ -1,14 +1,14 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11260
+// Function ID: 11261
 // Name: AdContentImpressionTrackerBaseNative
-// Dependencies: [32, 19, 7085, 9736, 676, 21, 7957, 9068, 589, 10630, 10631, 7387, 2]
+// Dependencies: [32, 19, 7091, 8924, 676, 21, 8037, 8508, 589, 11006, 11007, 7379, 2]
 // Exports: BillableAdPlacementImpressionTrackerNative, QuestContentImpressionTrackerNative
 
-// Module 11408 (AdContentImpressionTrackerBaseNative)
+// Module 11260 (AdContentImpressionTrackerBaseNative)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getState" /* 7085 */;
-import { MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE as closure_6 } from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9736 */;
+import closure_5 from "getState" /* 7091 */;
+import { MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE as closure_6 } from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 8924 */;
 import { AppStates } from "ME" /* 676 */;
 import { createElement } from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -20,7 +20,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   let tmp3 = obj.useStateFromStores(items, () => state.getState()) === AppStates.ACTIVE;
   const ref = React.useRef(null);
   const tmp5 = visibilityRef;
-  obj1 = adContentIds2(10630);
+  obj1 = adContentIds2(11006);
   const adContentImpressionTrackerProps = obj1.useAdContentImpressionTrackerProps(skipRemountKey);
   const adContentIds = adContentImpressionTrackerProps.adContentIds;
   obj = {};
@@ -33,9 +33,9 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   let overrideVisibility = obj.overrideVisibility;
   dependencyMap = undefined;
   const joined = adContentIds2.join("_");
-  let tmp6 = visibilityRef(9068)(tmp3);
+  let tmp6 = visibilityRef(8508)(tmp3);
   let items1 = [joined];
-  const tmp10 = callback(adContentIds2(7957).useRecyclingState(false, items1), 2);
+  const tmp10 = callback(adContentIds2(8037).useRecyclingState(false, items1), 2);
   dependencyMap = tmp11;
   let items2 = [adContentIds2, tmp10[1], visibilityRef];
   const effect = React.useEffect(() => {
@@ -140,7 +140,7 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   if (overrideVisibility == null) {
     overrideVisibility = tmp10[0];
   }
-  obj = { visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(9068)(overrideVisibility) };
+  obj = { visible: overrideVisibility, visibleChanged: overrideVisibility !== tmp5(8508)(overrideVisibility) };
   obj1 = {};
   const merged1 = Object.assign(skipRemountKey);
   const merged2 = Object.assign(obj);
@@ -157,13 +157,13 @@ function AdContentImpressionTrackerBaseNative(skipRemountKey) {
   obj2.key = key;
   obj2.adContentIds = adContentIds;
   if (tmp17) {
-    obj2.adCreativeType = tmp(7387).AdCreativeType.QUEST;
+    obj2.adCreativeType = tmp(7379).AdCreativeType.QUEST;
     let tmp19 = obj2;
   } else {
     obj2.adCreativeType = skipRemountKey.adCreativeType;
     tmp19 = obj2;
   }
-  return createElement(adContentIds2(10631).QuestContentImpressionTracker, tmp19);
+  return createElement(adContentIds2(11007).QuestContentImpressionTracker, tmp19);
 }
 const result = require("set").fileFinishedImporting("modules/quests/native/QuestContentImpressionTracker.native.tsx");
 

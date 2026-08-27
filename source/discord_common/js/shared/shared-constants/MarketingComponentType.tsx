@@ -1,9 +1,9 @@
-// Module ID: 7858
-// Function ID: 7859
+// Module ID: 10437
+// Function ID: 10438
 // Name: MarketingComponentType
 // Dependencies: [2]
 
-// Module 7858 (MarketingComponentType)
+// Module 10437 (MarketingComponentType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/MarketingComponentType.tsx");

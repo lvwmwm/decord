@@ -1,12 +1,12 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 9151
+// Function ID: 9152
 // Name: useShouldShowMutualInfo
-// Dependencies: [1922, 589, 12548, 2]
+// Dependencies: [1922, 589, 9152, 2]
 // Exports: default
 
-// Module 12547 (useShouldShowMutualInfo)
+// Module 9151 (useShouldShowMutualInfo)
 import initialize from "initialize" /* 589 */;
-import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 12548 */;
+import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 9152 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

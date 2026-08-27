@@ -1,14 +1,14 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8653
+// Function ID: 8654
 // Name: LinkExternalSmallIcon
-// Dependencies: [19, 21, 712, 4164, 8173, 2]
+// Dependencies: [19, 21, 712, 4164, 8654, 2]
 // Exports: LinkExternalSmallIcon
 
-// Module 8172 (LinkExternalSmallIcon)
+// Module 8653 (LinkExternalSmallIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 8173 */;
+import registerAsset from "registerAsset" /* 8654 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,15 +1,15 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 16286
+// Function ID: 16287
 // Name: useHasNewAdContent
-// Dependencies: [32, 14608, 7371, 5334, 687, 10726, 589, 7369, 7387, 6197, 1377, 2]
+// Dependencies: [32, 14635, 7381, 5339, 687, 11010, 589, 7376, 7379, 6203, 1377, 2]
 // Exports: default
 
-// Module 16221 (useHasNewAdContent)
+// Module 16286 (useHasNewAdContent)
 import setDefault from "set" /* 687 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "getOrCreateSet" /* 14608 */;
-import closure_4 from "initializeState" /* 7371 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5334 */;
+import closure_3 from "getOrCreateSet" /* 14635 */;
+import closure_4 from "initializeState" /* 7381 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5339 */;
 
 const require = arg1;
 const DAY = setDefault.Millis.DAY;

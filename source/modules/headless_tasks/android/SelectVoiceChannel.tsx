@@ -1,11 +1,11 @@
-// Module ID: 17366
-// Function ID: 17367
+// Module ID: 17432
+// Function ID: 17433
 // Name: promise
-// Dependencies: [1391, 4518, 17359, 5302, 4679, 4455, 2]
+// Dependencies: [1391, 4519, 17425, 5307, 4680, 4456, 2]
 
-// Module 17366 (promise)
+// Module 17432 (promise)
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "createRTCConnection" /* 4518 */;
+import closure_4 from "createRTCConnection" /* 4519 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/headless_tasks/android/SelectVoiceChannel.tsx");

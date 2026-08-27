@@ -1,9 +1,9 @@
-// Module ID: 15237
-// Function ID: 15238
+// Module ID: 15301
+// Function ID: 15302
 // Name: search
-// Dependencies: [5401, 15238, 2]
+// Dependencies: [5406, 15302, 2]
 
-// Module 15237 (search)
+// Module 15301 (search)
 import set2 from "set" /* 2 */;
 
 let result = set2.fileFinishedImporting("modules/user_settings/UserSettingSearchManager.tsx");

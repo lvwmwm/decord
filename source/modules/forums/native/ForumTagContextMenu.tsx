@@ -1,10 +1,10 @@
-// Module ID: 10221
-// Function ID: 10222
+// Module ID: 10342
+// Function ID: 10343
 // Name: ForumTagContextMenu
-// Dependencies: [21, 4134, 1236, 9764, 5928, 4161, 8813, 2]
+// Dependencies: [21, 4134, 1236, 8969, 5933, 4161, 8717, 2]
 // Exports: default
 
-// Module 10221 (ForumTagContextMenu)
+// Module 10342 (ForumTagContextMenu)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -18,12 +18,12 @@ export default function ForumTagContextMenu(children) {
   const enabled = DeveloperMode.useSetting();
   const intl = tagId(1236).intl;
   obj[0] = intl.string(tagId(1236).t["8VG6IY"]);
-  obj[1] = tagId(9764).IdIcon;
+  obj[1] = tagId(8969).IdIcon;
   obj[2] = function action() {
     tagId(closure_1_1[4]).copy(tagId);
     const obj = tagId(closure_1_1[4]);
     tagId(closure_1_1[5]).presentIdCopied();
   };
   const items = [obj];
-  return jsx(tagId(8813).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
+  return jsx(tagId(8717).ContextMenu, { triggerOnLongPress: true, items, enabled, children: children.children });
 };

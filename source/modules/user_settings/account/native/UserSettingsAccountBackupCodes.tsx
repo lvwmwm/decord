@@ -1,16 +1,16 @@
-// Module ID: 14271
-// Function ID: 14272
+// Module ID: 14298
+// Function ID: 14299
 // Name: CodeRow
-// Dependencies: [19, 17, 13287, 21, 4444, 712, 5928, 4161, 5546, 5535, 1236, 4165, 589, 14272, 4877, 4440, 5939, 2]
+// Dependencies: [19, 17, 13314, 21, 4445, 712, 5933, 4161, 5551, 5540, 1236, 4165, 589, 14299, 4878, 4441, 5944, 2]
 // Exports: default
 
-// Module 14271 (CodeRow)
+// Module 14298 (CodeRow)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getVerificationKey" /* 13287 */;
+import closure_5 from "getVerificationKey" /* 13314 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function CodeRow(code) {
@@ -31,10 +31,10 @@ function CodeRow(code) {
   if (showCheckMark) {
     obj = { color: null };
     obj[0] = ThemesDefault.colors.TEXT_BRAND;
-    tmp2Result = tmp2(code(5535).CheckmarkSmallIcon, obj);
+    tmp2Result = tmp2(code(5540).CheckmarkSmallIcon, obj);
   }
   obj[2] = tmp2Result;
-  return closure_6(code(5546).TableRow, obj);
+  return closure_6(code(5551).TableRow, obj);
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
 createCacheKey = { generateCode: null };
@@ -76,14 +76,14 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
   obj = { spacing: ThemesDefault.space.PX_24, style: null, children: null };
   obj = { paddingHorizontal: token, paddingTop: ThemesDefault.space.PX_16 };
   obj[1] = obj;
-  const items2 = [headerLabel.map((children) => callback2(stateFromStores(4440).Text, { variant: "text-sm/medium", children }, arg1)), , , ];
+  const items2 = [headerLabel.map((children) => callback2(stateFromStores(4441).Text, { variant: "text-sm/medium", children }, arg1)), , , ];
   let tmp10Result = unusedCodes.length > 0;
   if (tmp10Result) {
     obj1 = { title: null, hasIcons: false, children: null };
     const intl2 = tmp3(1236).intl;
     obj1[0] = intl2.string(tmp3(1236).t.zdzyFo);
     obj1[2] = unusedCodes.map((code) => callback2(closure_9, { code: code.code, showCheckMark: false }, arg1));
-    tmp10Result = tmp10(tmp3(5939).TableRowGroup, obj1);
+    tmp10Result = tmp10(tmp3(5944).TableRowGroup, obj1);
   }
   items2[1] = tmp10Result;
   tmp10Result = usedCodes.length > 0;
@@ -92,7 +92,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     const intl3 = tmp3(1236).intl;
     obj2[0] = intl3.string(tmp3(1236).t.FkFLDN);
     obj2[2] = usedCodes.map((code) => callback2(closure_9, { code: code.code, showCheckMark: true }, arg1));
-    tmp10Result = tmp10(tmp3(5939).TableRowGroup, obj2);
+    tmp10Result = tmp10(tmp3(5944).TableRowGroup, obj2);
   }
   items2[2] = tmp10Result;
   let tmp10Result1 = null !== headerLabel.onGenerate;
@@ -103,18 +103,18 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     obj5[1] = tmp6.generateCode;
     const intl4 = tmp3(1236).intl;
     obj5[2] = intl4.string(tmp3(1236).t.RIThUu);
-    obj4[0] = tmp10(tmp3(4440).Text, obj5);
+    obj4[0] = tmp10(tmp3(4441).Text, obj5);
     obj4[1] = function onPress() {
       const verificationKey = store.getVerificationKey();
-      const result = callback(14272).confirmViewBackupCodes(verificationKey, true);
+      const result = callback(14299).confirmViewBackupCodes(verificationKey, true);
     };
-    obj3[1] = tmp10(tmp3(5546).TableRow, obj4);
-    tmp10Result1 = tmp10(tmp3(5939).TableRowGroup, obj3);
+    obj3[1] = tmp10(tmp3(5551).TableRow, obj4);
+    tmp10Result1 = tmp10(tmp3(5944).TableRowGroup, obj3);
   }
   const tmp11 = ScrollView;
   const tmp12 = closure_7;
   tmp6 = callback();
   items2[3] = tmp10Result1;
   obj[2] = items2;
-  return closure_6(tmp11, { children: closure_7(stateFromStores(4877).Stack, obj) });
+  return closure_6(tmp11, { children: closure_7(stateFromStores(4878).Stack, obj) });
 };

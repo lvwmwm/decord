@@ -1,16 +1,16 @@
-// Module ID: 10484
-// Function ID: 10485
+// Module ID: 10924
+// Function ID: 10925
 // Name: useLikelyAtoWarning
-// Dependencies: [9885, 10476, 10477, 10478, 10479, 10475, 2]
+// Dependencies: [10573, 10922, 10923, 10630, 10629, 10921, 2]
 // Exports: useLikelyAtoWarning
 
-// Module 10484 (useLikelyAtoWarning)
+// Module 10924 (useLikelyAtoWarning)
 import set from "set" /* 2 */;
-import handleConnectionOpen from "handleConnectionOpen" /* 9885 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10476 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 10477 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10478 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10479 */;
+import handleConnectionOpen from "handleConnectionOpen" /* 10573 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10629 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10630 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10922 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 10923 */;
 
 const SafetyWarningTypes = handleConnectionOpen.SafetyWarningTypes;
 const result = set.fileFinishedImporting("modules/ato_alerts/hooks/useLikelyAtoWarning.tsx");

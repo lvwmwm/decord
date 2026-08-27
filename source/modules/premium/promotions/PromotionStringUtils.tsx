@@ -1,15 +1,15 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12977
+// Function ID: 12978
 // Name: useFormatStringWithCommonPremiumParams
-// Dependencies: [4112, 1924, 589, 4107, 6028, 1236, 1995, 2]
+// Dependencies: [4112, 1924, 589, 4107, 6033, 1236, 1995, 2]
 // Exports: getHelpArticleLinkProps, useFormatStringWithCommonPremiumParams
 
-// Module 12954 (useFormatStringWithCommonPremiumParams)
+// Module 12977 (useFormatStringWithCommonPremiumParams)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6028 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6033 */;
 import closure_3 from "addSubscriptionPlan" /* 4112 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 

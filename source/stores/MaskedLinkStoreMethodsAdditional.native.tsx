@@ -1,10 +1,10 @@
-// Module ID: 9150
-// Function ID: 9151
+// Module ID: 8575
+// Function ID: 8576
 // Name: getHostname
 // Dependencies: [2]
 // Exports: getHostname, getProtocol
 
-// Module 9150 (getHostname)
+// Module 8575 (getHostname)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("stores/MaskedLinkStoreMethodsAdditional.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6106
-// Function ID: 6107
+// Module ID: 6113
+// Function ID: 6114
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1218, 676, 4675, 6107, 6109, 698, 513, 6110, 1487, 4158, 2]
+// Dependencies: [5, 1218, 676, 4676, 6114, 6116, 698, 513, 6117, 1487, 4158, 2]
 
-// Module 6106 (createHandoffTokenWithLoadingModal)
+// Module 6113 (createHandoffTokenWithLoadingModal)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;

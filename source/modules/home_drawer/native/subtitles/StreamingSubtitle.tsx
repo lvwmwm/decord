@@ -1,14 +1,14 @@
-// Module ID: 15761
-// Function ID: 15762
+// Module ID: 15825
+// Function ID: 15826
 // Name: StreamingSubtitle
-// Dependencies: [19, 21, 4440, 1236, 4637, 2]
+// Dependencies: [19, 21, 4441, 1236, 4638, 2]
 // Exports: default
 
-// Module 15761 (StreamingSubtitle)
+// Module 15825 (StreamingSubtitle)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import getNicknameDefault from "getNickname" /* 4637 */;
+import Text from "Text" /* 4441 */;
+import getNicknameDefault from "getNickname" /* 4638 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

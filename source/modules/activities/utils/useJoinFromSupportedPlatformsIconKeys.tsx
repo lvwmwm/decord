@@ -1,10 +1,10 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 12815
+// Function ID: 12816
 // Name: getJoinFromSupportedPlatformsIconKeys
 // Dependencies: [19, 676, 2]
 // Exports: useJoinFromSupportedPlatformsIconKeys
 
-// Module 12903 (getJoinFromSupportedPlatformsIconKeys)
+// Module 12815 (getJoinFromSupportedPlatformsIconKeys)
 import closure_0 from "noop" /* 19 */;
 import { ActivityGamePlatforms } from "ME" /* 676 */;
 

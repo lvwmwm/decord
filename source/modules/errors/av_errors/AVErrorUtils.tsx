@@ -1,13 +1,13 @@
-// Module ID: 17268
-// Function ID: 17269
+// Module ID: 17334
+// Function ID: 17335
 // Name: getReportInboundErrors
-// Dependencies: [4531, 687, 10855, 2]
+// Dependencies: [4532, 687, 9499, 2]
 // Exports: getAccumulatedStatsWithMinDatapoints, getReportInboundErrors, getWarningFrameRate
 
-// Module 17268 (getReportInboundErrors)
+// Module 17334 (getReportInboundErrors)
 import setDefault from "set" /* 687 */;
-import isIncomingVideoEnabled from "isIncomingVideoEnabled" /* 10855 */;
-import closure_2 from "updateAveragedStatsHelper" /* 4531 */;
+import isIncomingVideoEnabled from "isIncomingVideoEnabled" /* 9499 */;
+import closure_2 from "updateAveragedStatsHelper" /* 4532 */;
 
 require = arg1;
 let closure_3 = 10 * setDefault.Millis.SECOND;

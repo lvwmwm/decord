@@ -1,9 +1,9 @@
-// Module ID: 7151
-// Function ID: 7152
+// Module ID: 7157
+// Function ID: 7158
 // Name: result
 // Dependencies: [5, 3, 687, 589, 709, 1956, 2]
 
-// Module 7151 (result)
+// Module 7157 (result)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;

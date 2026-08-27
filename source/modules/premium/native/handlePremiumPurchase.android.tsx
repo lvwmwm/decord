@@ -1,17 +1,17 @@
-// Module ID: 7542
-// Function ID: 7543
+// Module ID: 10400
+// Function ID: 10401
 // Name: validatePurchase
-// Dependencies: [109, 5, 19, 7543, 1218, 4113, 6031, 676, 505, 530, 7544, 4342, 7545, 1236, 4129, 4808, 6034, 589, 7120, 7549, 7552, 7583, 7584, 7586, 6029, 4122, 7587, 698, 2]
+// Dependencies: [109, 5, 19, 8155, 1218, 4113, 6036, 676, 505, 530, 10401, 4343, 10402, 1236, 4129, 4809, 6039, 589, 7126, 10403, 10404, 10375, 10405, 10407, 6034, 4122, 8154, 698, 2]
 // Exports: useHandlePremiumPurchase
 
-// Module 7542 (validatePurchase)
+// Module 10400 (validatePurchase)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "noop" /* 19 */;
-import { setGPlayAnalytics } from "setGPlayAnalytics" /* 7543 */;
+import { setGPlayAnalytics } from "setGPlayAnalytics" /* 8155 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
 import closure_9 from "reset" /* 4113 */;
-import closure_10 from "updateProduct" /* 6031 */;
+import closure_10 from "updateProduct" /* 6036 */;
 import ME from "ME" /* 676 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
@@ -108,7 +108,7 @@ function _validatePurchase() {
           } else if (2 === tmp8) {
             c4 = 0;
             c6 = c3;
-            const tmp18 = new lib(7544)(c6);
+            const tmp18 = new lib(10401)(c6);
             throw tmp18;
           } else if (arg0 === 1) {
             c6 = 3;

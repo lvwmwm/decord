@@ -1,25 +1,25 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15146
+// Function ID: 15147
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 21, 4165, 712, 8878, 4877, 5939, 5554, 6182, 4392, 4879, 4440, 4172, 4891, 8188, 6187, 2]
+// Dependencies: [19, 17, 21, 4165, 712, 8906, 4878, 5944, 5559, 6188, 4393, 4880, 4441, 4172, 4892, 8297, 6193, 2]
 // Exports: default
 
-// Module 15082 (UserSettingsDesignSystemExperimentalButtons)
+// Module 15146 (UserSettingsDesignSystemExperimentalButtons)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import map from "map" /* 4165 */;
 import ManaContext from "ManaContext" /* 4172 */;
-import registerAssetDefault from "registerAsset" /* 4392 */;
-import Text from "Text" /* 4440 */;
-import Stack from "Stack" /* 4877 */;
-import Button from "Button" /* 4879 */;
-import LinearGradientDefault from "LinearGradient" /* 4891 */;
-import registerAssetDefault2 from "registerAsset" /* 5554 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5939 */;
-import registerAssetDefault3 from "registerAsset" /* 6182 */;
-import registerAssetDefault4 from "registerAsset" /* 6187 */;
-import RowButtonWrapper from "RowButtonWrapper" /* 8188 */;
-import TwinButtons from "TwinButtons" /* 8878 */;
+import registerAssetDefault from "registerAsset" /* 4393 */;
+import Text from "Text" /* 4441 */;
+import Stack from "Stack" /* 4878 */;
+import Button from "Button" /* 4880 */;
+import LinearGradientDefault from "LinearGradient" /* 4892 */;
+import registerAssetDefault2 from "registerAsset" /* 5559 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5944 */;
+import registerAssetDefault3 from "registerAsset" /* 6188 */;
+import registerAssetDefault4 from "registerAsset" /* 6193 */;
+import RowButtonWrapper from "RowButtonWrapper" /* 8297 */;
+import TwinButtons from "TwinButtons" /* 8906 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

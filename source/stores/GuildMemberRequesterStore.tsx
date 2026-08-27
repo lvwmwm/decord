@@ -1,12 +1,12 @@
-// Module ID: 5316
-// Function ID: 5317
+// Module ID: 5321
+// Function ID: 5322
 // Name: handleConnectionReset
-// Dependencies: [1391, 1992, 5317, 709, 589, 2]
+// Dependencies: [1391, 1992, 5322, 709, 589, 2]
 
-// Module 5316 (handleConnectionReset)
+// Module 5321 (handleConnectionReset)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import acknowledgeDefault from "acknowledge" /* 5317 */;
+import acknowledgeDefault from "acknowledge" /* 5322 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 import importDefaultResult from "trackCommunicationDisabled" /* 1992 */;
 

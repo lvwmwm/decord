@@ -1,9 +1,9 @@
-// Module ID: 14542
-// Function ID: 14543
+// Module ID: 14569
+// Function ID: 14570
 // Name: PlayerState
 // Dependencies: [2]
 
-// Module 14542 (PlayerState)
+// Module 14569 (PlayerState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/quests/native/AdsVideoTypes.tsx");

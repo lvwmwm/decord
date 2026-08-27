@@ -1,10 +1,10 @@
-// Module ID: 8713
-// Function ID: 8714
+// Module ID: 7669
+// Function ID: 7670
 // Name: PhoneOrEmailSelectorForceMode
 // Dependencies: [2]
 // Exports: getPhoneOrEmail, shouldShowCountryCodeSelector
 
-// Module 8713 (PhoneOrEmailSelectorForceMode)
+// Module 7669 (PhoneOrEmailSelectorForceMode)
 import set from "set" /* 2 */;
 
 let obj = { PHONE: "phone", EMAIL: "email" };

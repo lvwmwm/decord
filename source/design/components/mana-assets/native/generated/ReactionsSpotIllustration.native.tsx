@@ -1,14 +1,14 @@
-// Module ID: 6867
-// Function ID: 6868
+// Module ID: 6873
+// Function ID: 6874
 // Name: ReactionsSpotIllustration
-// Dependencies: [21, 5440, 6868, 2]
+// Dependencies: [21, 5445, 6874, 2]
 // Exports: ReactionsSpotIllustration
 
-// Module 6867 (ReactionsSpotIllustration)
+// Module 6873 (ReactionsSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6868 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6874 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ReactionsSpotIllustration.native.tsx");

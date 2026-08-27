@@ -1,9 +1,9 @@
-// Module ID: 8429
-// Function ID: 8430
+// Module ID: 7570
+// Function ID: 7571
 // Name: defineProperty
 // Dependencies: [32, 1307, 1337, 2]
 
-// Module 8429 (defineProperty)
+// Module 7570 (defineProperty)
 import _mod1307 from "module_1307" /* 1307 */;
 import defineProperty2 from "defineProperty" /* 1337 */;
 import closure_2 from "_slicedToArray" /* 32 */;

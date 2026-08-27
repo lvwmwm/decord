@@ -1,14 +1,14 @@
-// Module ID: 14163
-// Function ID: 14164
+// Module ID: 14190
+// Function ID: 14191
 // Name: FileUpIcon
-// Dependencies: [19, 21, 712, 4164, 14164, 2]
+// Dependencies: [19, 21, 712, 4164, 14191, 2]
 // Exports: FileUpIcon
 
-// Module 14163 (FileUpIcon)
+// Module 14190 (FileUpIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14164 */;
+import registerAsset from "registerAsset" /* 14191 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 11977
-// Function ID: 11978
+// Module ID: 11821
+// Function ID: 11822
 // Name: getChatPlaceholderRowWidth
 // Dependencies: [2]
 // Exports: default
 
-// Module 11977 (getChatPlaceholderRowWidth)
+// Module 11821 (getChatPlaceholderRowWidth)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("modules/chat/native/placeholder/getChatPlaceholderRowWidth.tsx");

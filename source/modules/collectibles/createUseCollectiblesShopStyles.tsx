@@ -1,12 +1,12 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10747
+// Function ID: 10748
 // Name: createUseCollectiblesShopStyles
-// Dependencies: [32, 4436, 8535, 7224, 647, 2]
+// Dependencies: [32, 4437, 8052, 7230, 647, 2]
 // Exports: default
 
-// Module 10350 (createUseCollectiblesShopStyles)
+// Module 10747 (createUseCollectiblesShopStyles)
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/createUseCollectiblesShopStyles.tsx");

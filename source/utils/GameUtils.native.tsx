@@ -1,9 +1,9 @@
-// Module ID: 9497
-// Function ID: 9498
+// Module ID: 8735
+// Function ID: 8736
 // Name: set
 // Dependencies: [2]
 
-// Module 9497 (set)
+// Module 8735 (set)
 import set from "set" /* 2 */;
 
 let c0 = "not supported";

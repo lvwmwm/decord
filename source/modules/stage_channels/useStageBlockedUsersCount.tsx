@@ -1,12 +1,12 @@
-// Module ID: 8225
-// Function ID: 8226
+// Module ID: 8672
+// Function ID: 8673
 // Name: useStageBlockedUsersCount
-// Dependencies: [5309, 589, 5315, 2]
+// Dependencies: [5314, 589, 5320, 2]
 // Exports: getStageBlockedUsersCount, getStageIgnoredUsersCount, useStageBlockedUsers, useStageBlockedUsersCount, useStageIgnoredUsers, useStageIgnoredUsersCount
 
-// Module 8225 (useStageBlockedUsersCount)
-import sortKey from "sortKey" /* 5315 */;
-import closure_2 from "getActiveStageChannelIds" /* 5309 */;
+// Module 8672 (useStageBlockedUsersCount)
+import sortKey from "sortKey" /* 5320 */;
+import closure_2 from "getActiveStageChannelIds" /* 5314 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useStageBlockedUsersCount.tsx");

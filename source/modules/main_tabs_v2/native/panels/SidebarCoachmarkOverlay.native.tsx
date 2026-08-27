@@ -1,11 +1,11 @@
-// Module ID: 15450
-// Function ID: 15451
+// Module ID: 15515
+// Function ID: 15516
 // Name: SidebarCoachmarkOverlayLayer
-// Dependencies: [32, 19, 17, 676, 21, 5888, 5889, 2]
+// Dependencies: [32, 19, 17, 676, 21, 5893, 5894, 2]
 // Exports: SidebarCoachmarkOverlay
 
-// Module 15450 (SidebarCoachmarkOverlayLayer)
-import useInitialValueDefault from "useInitialValue" /* 5888 */;
+// Module 15515 (SidebarCoachmarkOverlayLayer)
+import useInitialValueDefault from "useInitialValue" /* 5893 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

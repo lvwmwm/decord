@@ -1,14 +1,14 @@
-// Module ID: 12440
-// Function ID: 12441
+// Module ID: 12482
+// Function ID: 12483
 // Name: useShouldShowPremiumProfileFrameCTA
-// Dependencies: [12441, 9617, 1950, 2]
+// Dependencies: [12483, 12443, 1950, 2]
 // Exports: default
 
-// Module 12440 (useShouldShowPremiumProfileFrameCTA)
+// Module 12482 (useShouldShowPremiumProfileFrameCTA)
 import set from "set" /* 2 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
-import useCanPurchaseFramesDefault from "useCanPurchaseFrames" /* 9617 */;
-import useShouldShowPremiumProfileFrameEADefault from "useShouldShowPremiumProfileFrameEA" /* 12441 */;
+import useCanPurchaseFramesDefault from "useCanPurchaseFrames" /* 12443 */;
+import useShouldShowPremiumProfileFrameEADefault from "useShouldShowPremiumProfileFrameEA" /* 12483 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/hooks/useShouldShowPremiumProfileFrameCTA.tsx");
 

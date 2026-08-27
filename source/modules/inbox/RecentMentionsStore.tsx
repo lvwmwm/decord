@@ -1,26 +1,26 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7315
+// Function ID: 7316
 // Name: findOrCreateMessageRecord
-// Dependencies: [4099, 1218, 1391, 4687, 4459, 4098, 4266, 4653, 1922, 676, 595, 4689, 4683, 4703, 12, 4522, 6063, 7310, 589, 709, 2]
+// Dependencies: [4099, 1218, 1391, 4688, 4460, 4098, 4267, 4654, 1922, 676, 595, 4690, 4684, 4704, 12, 4523, 6069, 7316, 589, 709, 2]
 
-// Module 7309 (findOrCreateMessageRecord)
+// Module 7315 (findOrCreateMessageRecord)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import sleep from "sleep" /* 4522 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4683 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4689 */;
-import isMentioned from "isMentioned" /* 4703 */;
-import isMentionedDefault from "isMentioned" /* 4703 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6063 */;
+import sleep from "sleep" /* 4523 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4684 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4690 */;
+import isMentioned from "isMentioned" /* 4704 */;
+import isMentionedDefault from "isMentioned" /* 4704 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6069 */;
 import closure_3 from "hasFlag" /* 4099 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "reinjectEphemerals" /* 4687 */;
-import closure_7 from "generateOldThreadCutoff" /* 4459 */;
+import closure_6 from "reinjectEphemerals" /* 4688 */;
+import closure_7 from "generateOldThreadCutoff" /* 4460 */;
 import closure_8 from "markAllUserIdListsStale" /* 4098 */;
-import closure_9 from "handleConnectionOpen" /* 4266 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 4653 */;
+import closure_9 from "handleConnectionOpen" /* 4267 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4654 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { Storage } from "Storage" /* 595 */;
@@ -103,7 +103,7 @@ function parseMessage(message, channelId) {
       }
       id = id.getId();
       if (!blockedOrIgnoredForMessage.isBlockedOrIgnoredForMessage(message)) {
-        if (!tmp2(7310)(message, id)) {
+        if (!tmp2(7316)(message, id)) {
           let tmp12 = message;
           if (!(message instanceof closure_3)) {
             message = store2.getMessage(message.channel_id, message.id);
@@ -119,7 +119,7 @@ function parseMessage(message, channelId) {
           obj[2] = !closure_23.everyoneFilter;
           obj[3] = !closure_23.roleFilter;
           let tmp20 = null;
-          if (tmp2(4703)(obj)) {
+          if (tmp2(4704)(obj)) {
             let tmp2ResultResult = c26;
             if (c26) {
               tmp2ResultResult = closure_7.ackMessageId(channel.id) !== tmp12.id;
@@ -130,8 +130,8 @@ function parseMessage(message, channelId) {
               obj[1] = id;
               obj[2] = closure_10.isSuppressEveryoneEnabled(channel.getGuildId());
               obj[3] = closure_10.isSuppressRolesEnabled(channel.getGuildId());
-              tmp2ResultResult = tmp2(4703)(obj);
-              const tmp2Result = tmp2(4703);
+              tmp2ResultResult = tmp2(4704)(obj);
+              const tmp2Result = tmp2(4704);
             }
             tmp20 = tmp12;
             if (tmp2ResultResult) {
@@ -571,10 +571,11 @@ obj = {
     message = message.message;
     const currentUser = authStore.getCurrentUser();
     if (null != currentUser) {
-      let obj = { rawMessage: null, userId: null, suppressRoles: false, suppressEveryone: false };
+      let obj = isMentioned;
+      obj = { rawMessage: null, userId: null, suppressRoles: false, suppressEveryone: false };
       obj[0] = message;
       obj[1] = currentUser.id;
-      if (obj2.isRawMessageMentioned(obj)) {
+      if (obj.isRawMessageMentioned(obj)) {
         const tmp3 = parseMessage(message, message.channelId);
         if (null == tmp3) {
           return false;
@@ -606,7 +607,6 @@ obj = {
           }
         }
       }
-      obj2 = isMentioned;
     }
     return false;
   },
@@ -617,8 +617,8 @@ obj = {
         const findIndexResult = applyDefault.findIndex(substr, (id) => id.id === id);
         substr = substr.slice();
         if (null != substr[findIndexResult]) {
-          substr[findIndexResult] = id(4689).updateMessageRecord(tmp7, message.message);
-          const obj2 = id(4689);
+          substr[findIndexResult] = id(4690).updateMessageRecord(tmp7, message.message);
+          const obj2 = id(4690);
         }
       }
     }

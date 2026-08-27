@@ -1,13 +1,13 @@
-// Module ID: 9652
-// Function ID: 9653
+// Module ID: 10758
+// Function ID: 10759
 // Name: usePreviewCollectibleProduct
-// Dependencies: [32, 19, 7219, 1948, 7220, 7221, 9589, 1950, 8488, 2]
+// Dependencies: [32, 19, 7225, 1948, 7226, 7227, 8425, 1950, 8006, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 9652 (usePreviewCollectibleProduct)
+// Module 10758 (usePreviewCollectibleProduct)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7219 */;
+import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7225 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/usePreviewCollectiblesProduct.tsx");
@@ -16,7 +16,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
   const _require = product;
   dependencyMap = arg1;
   closure_2 = arg2;
-  const shopProductItems = _require(9589).useShopProductItems(product);
+  const shopProductItems = _require(8425).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;

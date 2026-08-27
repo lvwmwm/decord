@@ -1,10 +1,10 @@
-// Module ID: 9589
-// Function ID: 9590
+// Module ID: 8425
+// Function ID: 8426
 // Name: firstAvatarDecoration
 // Dependencies: [19, 1950, 1236, 2]
 // Exports: getBundleItemNames, useShopProductItems
 
-// Module 9589 (firstAvatarDecoration)
+// Module 8425 (firstAvatarDecoration)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_2 from "noop" /* 19 */;
 

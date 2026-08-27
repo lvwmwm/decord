@@ -1,12 +1,12 @@
-// Module ID: 10506
-// Function ID: 10507
+// Module ID: 10941
+// Function ID: 10942
 // Name: InappropriateConversationWarningBanner
-// Dependencies: [19, 4098, 9885, 21, 10487, 589, 10488, 4809, 10507, 2009, 10510, 10489, 1236, 2]
+// Dependencies: [19, 4098, 10573, 21, 10927, 589, 10928, 4810, 10942, 2009, 10945, 10929, 1236, 2]
 
-// Module 10506 (InappropriateConversationWarningBanner)
+// Module 10941 (InappropriateConversationWarningBanner)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "markAllUserIdListsStale" /* 4098 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 9885 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 10573 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

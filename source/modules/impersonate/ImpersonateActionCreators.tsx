@@ -1,22 +1,22 @@
-// Module ID: 5420
-// Function ID: 5421
+// Module ID: 5425
+// Function ID: 5426
 // Name: updateImpersonating
-// Dependencies: [1391, 1982, 1992, 1985, 4089, 1981, 4653, 1984, 676, 1398, 698, 4652, 1990, 709, 1222, 2]
+// Dependencies: [1391, 1982, 1992, 1985, 4089, 1981, 4654, 1984, 676, 1398, 698, 4653, 1990, 709, 1222, 2]
 // Exports: startImpersonating, stopImpersonating, updateImpersonatedChannels, updateImpersonatedData, updateImpersonatedRoles
 
-// Module 5420 (updateImpersonating)
+// Module 5425 (updateImpersonating)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import transitionTo from "transitionTo" /* 1222 */;
 import ImpersonateType from "ImpersonateType" /* 1990 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4652 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "comparator" /* 1982 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_8 from "handleConnectionOpen" /* 1981 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4653 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4654 */;
 import closure_10 from "initialize" /* 1984 */;
 import ME from "ME" /* 676 */;
 import { isStaticChannelRoute } from "set" /* 1398 */;

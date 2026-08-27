@@ -1,9 +1,9 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15880
+// Function ID: 15881
 // Name: ManageAccountsScreens
 // Dependencies: [676, 2]
 
-// Module 15815 (ManageAccountsScreens)
+// Module 15880 (ManageAccountsScreens)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

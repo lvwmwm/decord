@@ -1,17 +1,17 @@
-// Module ID: 11611
-// Function ID: 11612
+// Module ID: 11462
+// Function ID: 11463
 // Name: items
-// Dependencies: [5348, 8484, 1391, 5328, 1922, 676, 1925, 1938, 3471, 4102, 4106, 1937, 506, 4094, 589, 2]
+// Dependencies: [5353, 8002, 1391, 5333, 1922, 676, 1925, 1938, 3471, 4102, 4106, 1937, 506, 4094, 589, 2]
 // Exports: getCustomTypingIndicatorSuggestionMessage, getCustomTypingIndicatorSuggestionPresets, getCustomTypingIndicatorSuggestionWithNameMessage, getRandomCustomTypingIndicatorAnimation, getRandomCustomTypingIndicatorSuggestion, getSurpriseMeEmojiPool, getViewableCustomTypingIndicatorConfig, pickRandomCustomTypingIndicatorEmojis, useCurrentCustomTypingIndicatorConfig
 
-// Module 11611 (items)
+// Module 11462 (items)
 import fromStringAll from "fromString" /* 506 */;
 import messagesProxyDefault from "messagesProxy" /* 3471 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4102 */;
-import closure_4 from "getEmojiToGroupId" /* 5348 */;
-import closure_5 from "handleFormOpen" /* 8484 */;
+import closure_4 from "getEmojiToGroupId" /* 5353 */;
+import closure_5 from "handleFormOpen" /* 8002 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "insertUnsortedGuilds" /* 5328 */;
+import closure_7 from "insertUnsortedGuilds" /* 5333 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import { Permissions } from "ME" /* 676 */;
 import { EmojiIntention } from "set" /* 1925 */;

@@ -1,14 +1,14 @@
-// Module ID: 14779
-// Function ID: 14780
-// Dependencies: [19, 4264, 1303, 1302, 14780, 8302, 676, 21, 1500, 500, 8607, 1236, 9667, 705, 3147, 1995, 4896, 14781, 647, 10584, 14167, 2]
+// Module ID: 14806
+// Function ID: 14807
+// Dependencies: [19, 4265, 1303, 1302, 14807, 7816, 676, 21, 1500, 500, 7540, 1236, 9010, 705, 3147, 1995, 4897, 14808, 647, 10988, 14194, 2]
 
-// Module 14779
+// Module 14806
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "isSyncedModeThemesEnabled" /* 4264 */;
+import closure_4 from "isSyncedModeThemesEnabled" /* 4265 */;
 import closure_5 from "initialize" /* 1303 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
-import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 14780 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 8302 */;
+import DEFAULT_FONT_SCALE_STORE_STATE from "DEFAULT_FONT_SCALE_STORE_STATE" /* 14807 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7816 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -16,10 +16,10 @@ const require = arg1;
 let c3 = importAllResult;
 ({ DEFAULT_FONT_SCALE_STORE_STATE: error, useFontScaleStore: closure_8 } = DEFAULT_FONT_SCALE_STORE_STATE);
 const memoResult = importAllResult.memo(() => {
-  nativeStackNavigation(4896)(() => {
+  nativeStackNavigation(4897)(() => {
     if (closure_5.shouldSync("appearance")) {
-      const userCustomThemes = lib(14781).fetchUserCustomThemes();
-      const obj = lib(14781);
+      const userCustomThemes = lib(14808).fetchUserCustomThemes();
+      const obj = lib(14808);
     }
   });
   let items = [closure_6, closure_4];
@@ -64,7 +64,7 @@ const memoResult = importAllResult.memo(() => {
     callback(table[13]).batchUpdates(() => state.setState(closure_7));
   }, []);
   const node = importAllResult.useMemo(() => {
-    let obj = lib(10584);
+    let obj = lib(10988);
     obj = { sections: null };
     const items = [constants.MOBILE_VISUAL_REFRESH];
     const items1 = [{ settings: items }, , , , , , , , , ];
@@ -112,7 +112,7 @@ const memoResult = importAllResult.memo(() => {
     return obj.createList(obj);
   }, []);
   let obj2 = _require(1500);
-  return jsx(nativeStackNavigation(14167), { node }, "" + theme + "-" + gradientPresetId);
+  return jsx(nativeStackNavigation(14194), { node }, "" + theme + "-" + gradientPresetId);
 });
 const result = require("set").fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");
 

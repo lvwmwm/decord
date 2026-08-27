@@ -1,17 +1,17 @@
-// Module ID: 11504
-// Function ID: 11505
+// Module ID: 11358
+// Function ID: 11359
 // Name: useCurrentUserHasAutomodQuarantinedProfile
-// Dependencies: [19, 10358, 1218, 1992, 1910, 4089, 4266, 676, 4077, 685, 647, 4095, 1236, 10359, 10360, 6191, 2]
+// Dependencies: [19, 8954, 1218, 1992, 1910, 4089, 4267, 676, 4077, 685, 647, 4095, 1236, 8955, 8956, 6197, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11504 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11358 (useCurrentUserHasAutomodQuarantinedProfile)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "zustandStore" /* 10358 */;
+import closure_3 from "zustandStore" /* 8954 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
 import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_8 from "handleConnectionOpen" /* 4266 */;
+import closure_8 from "handleConnectionOpen" /* 4267 */;
 import ME from "ME" /* 676 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 import { ProfileCustomizationSubsection as closure_12 } from "MAX_FAVORITES" /* 685 */;

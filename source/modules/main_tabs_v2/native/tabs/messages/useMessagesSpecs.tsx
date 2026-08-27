@@ -1,10 +1,10 @@
-// Module ID: 15459
-// Function ID: 15460
+// Module ID: 15524
+// Function ID: 15525
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 676, 4886, 1629, 1367, 15460, 15468, 15480, 712, 2]
+// Dependencies: [109, 19, 676, 4887, 1629, 1367, 15525, 15533, 15545, 712, 2]
 // Exports: default
 
-// Module 15459 (useMessagesSpecs)
+// Module 15524 (useMessagesSpecs)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
 import { DM_WIDTH } from "ME" /* 676 */;
@@ -14,18 +14,18 @@ let closure_3 = ["height"];
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
 
 export default function useMessagesSpecs() {
-  fontScale = fontScale(4886).useFontScale();
+  fontScale = fontScale(4887).useFontScale();
   top = top(1629)().top;
   const tmp2 = top(1367)("MessagesHeader");
   dependencyMap = tmp2;
   const items = [fontScale, top, tmp2];
   return React.useMemo(() => {
-    let obj = fontScale(15460);
+    let obj = fontScale(15525);
     const messagesHeaderHeight = obj.getMessagesHeaderHeight(fontScale, dependencyMap);
-    const messagesItemChannelSizes = fontScale(15468).getMessagesItemChannelSizes(fontScale);
+    const messagesItemChannelSizes = fontScale(15533).getMessagesItemChannelSizes(fontScale);
     obj = { headerSize: messagesHeaderHeight, listTop: top + messagesHeaderHeight, listLeft: closure_1_6, listItemHeight: messagesItemChannelSizes.height, listItemSizes: closure_1_4(messagesItemChannelSizes, closure_1_3), listItemSuggestedFriendHeight: null, scrollIndicatorInsetEnd: null };
-    const obj2 = fontScale(15468);
-    obj[5] = fontScale(15480).getMessagesItemSuggestedFriendHeight(fontScale);
+    const obj2 = fontScale(15533);
+    obj[5] = fontScale(15545).getMessagesItemSuggestedFriendHeight(fontScale);
     obj[6] = top(712).space.PX_4;
     return obj;
   }, items);

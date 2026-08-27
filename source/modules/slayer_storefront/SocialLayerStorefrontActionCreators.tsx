@@ -1,16 +1,16 @@
-// Module ID: 7969
-// Function ID: 7970
+// Module ID: 8427
+// Function ID: 8428
 // Name: _fetchSocialLayerStorefront
-// Dependencies: [5, 7796, 6022, 676, 687, 709, 6020, 7797, 530, 1903, 584, 2]
+// Dependencies: [5, 8428, 6027, 676, 687, 709, 6025, 8429, 530, 1903, 584, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 7969 (_fetchSocialLayerStorefront)
+// Module 8427 (_fetchSocialLayerStorefront)
 import failsDefault from "fails" /* 584 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getPromotionIdOverride" /* 7796 */;
-import closure_5 from "handleUserSettingsStoreUpdate" /* 6022 */;
+import closure_4 from "getPromotionIdOverride" /* 8428 */;
+import closure_5 from "handleUserSettingsStoreUpdate" /* 6027 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;

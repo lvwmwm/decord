@@ -1,14 +1,14 @@
-// Module ID: 10932
-// Function ID: 10933
+// Module ID: 9577
+// Function ID: 9578
 // Name: StageChannelRaiseHandAck
-// Dependencies: [5, 32, 19, 17, 4154, 1396, 676, 21, 1236, 4444, 712, 4638, 589, 4896, 10933, 8225, 10922, 5313, 8009, 8011, 7990, 7986, 1297, 4440, 4880, 4879, 10924, 10430, 4379, 1364, 7960, 4932, 2]
+// Dependencies: [5, 32, 19, 17, 4154, 1396, 676, 21, 1236, 4445, 712, 4639, 589, 4897, 9578, 8672, 9566, 5318, 8613, 8615, 8600, 8596, 1297, 4441, 4881, 4880, 9568, 9472, 4380, 1364, 9451, 4933, 2]
 // Exports: default
 
-// Module 10932 (StageChannelRaiseHandAck)
+// Module 9577 (StageChannelRaiseHandAck)
 import ThemesDefault from "Themes" /* 712 */;
-import computeChannelNameDefault from "computeChannelName" /* 4638 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4896 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10924 */;
+import computeChannelNameDefault from "computeChannelName" /* 4639 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4897 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9568 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
@@ -17,7 +17,7 @@ import closure_8 from "setContent" /* 4154 */;
 import closure_9 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
 import { Fonts } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 class StageChannelRaiseHandAck {
@@ -60,19 +60,19 @@ class StageChannelRaiseHandAck {
                 if (null != lib) {
                   if (obj9.shouldAgeVerifyToSpeakForCurrentUser(lib.id)) {
                     obj1 = { entryPoint: null };
-                    obj1[0] = tmp42(8011).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND;
-                    const result = closure_1_1(8009).showAgeVerificationGetStartedModal(obj1);
-                    const obj4 = closure_1_1(8009);
+                    obj1[0] = tmp42(8615).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND;
+                    const result = closure_1_1(8613).showAgeVerificationGetStartedModal(obj1);
+                    const obj4 = closure_1_1(8613);
                   } else {
                     dependencyMap(true);
                     dependencyMap = 1;
                     c4 = 2;
                     c5 = 1;
                     const obj2 = { value: null, done: false };
-                    obj2[0] = tmp42(7990).audienceAckRequestToSpeak(lib, false);
+                    obj2[0] = tmp42(8600).audienceAckRequestToSpeak(lib, false);
                     return obj2;
                   }
-                  obj9 = lib(5313);
+                  obj9 = lib(5318);
                 }
                 c5 = 3;
               }
@@ -88,8 +88,8 @@ class StageChannelRaiseHandAck {
               dependencyMap = 0;
               dependencyMap(false);
               if (null == closure_1_8.getKey()) {
-                closure_1_2(7986).openStageChannel(lib);
-                const obj8 = closure_1_2(7986);
+                closure_1_2(8596).openStageChannel(lib);
+                const obj8 = closure_1_2(8596);
               }
             }
             dependencyMap = 0;
@@ -302,7 +302,7 @@ export default function GlobalStageChannelStatus(arg0) {
     stringResult = intl.string(id(1236).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(10430)(id);
+  let invitedHeaderText = tmp3(9472)(id);
   let obj = id(589);
   const items = [closure_9];
   const items1 = [id];
@@ -338,11 +338,11 @@ export default function GlobalStageChannelStatus(arg0) {
           obj[0] = tmp.noticeContainer;
           obj1 = { animated: true, barStyle: null };
           obj1[1] = str;
-          const items2 = [callback2(tmp3(7960), obj1), , ];
+          const items2 = [callback2(tmp3(9451), obj1), , ];
           const obj2 = { style: null, size: null, source: null };
           obj2[0] = activeSpeakerIcon;
           obj2[1] = tmp8(1297).Icon.Sizes.REFRESH_SMALL_16;
-          tmp8Result = tmp8(4932);
+          tmp8Result = tmp8(4933);
           obj2[2] = tmp8Result.getChannelIconWithGuild(channel, guild);
           items2[1] = callback2(tmp8(1297).Icon, obj2);
           tmp13Result = "" !== str2;

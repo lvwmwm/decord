@@ -1,14 +1,14 @@
-// Module ID: 10833
-// Function ID: 10834
+// Module ID: 9475
+// Function ID: 9476
 // Name: IgnoreThermalStateAlert
-// Dependencies: [19, 21, 4444, 4898, 1236, 10771, 4440, 2]
+// Dependencies: [19, 21, 4445, 4899, 1236, 9390, 4441, 2]
 // Exports: IgnoreThermalStateAlert
 
-// Module 10833 (IgnoreThermalStateAlert)
+// Module 9475 (IgnoreThermalStateAlert)
 import noopAll from "noop" /* 19 */;
-import componentDidMountDefault from "componentDidMount" /* 4898 */;
+import componentDidMountDefault from "componentDidMount" /* 4899 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;
@@ -35,11 +35,11 @@ export const IgnoreThermalStateAlert = function IgnoreThermalStateAlert(onConfir
   obj = { style: tmp2.header, variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = onConfirm(1236).intl;
   obj[3] = intl3.string(onConfirm(1236).t.v5X4fZ);
-  const items = [callback(onConfirm(4440).Text, obj), ];
+  const items = [callback(onConfirm(4441).Text, obj), ];
   obj = { style: tmp2.text, variant: "text-md/medium", children: null };
   const intl4 = onConfirm(1236).intl;
   obj[2] = intl4.string(onConfirm(1236).t.VOgTjy);
-  items[1] = callback(onConfirm(4440).Text, obj);
+  items[1] = callback(onConfirm(4441).Text, obj);
   obj.children = items;
   return callback2(componentDidMountDefault, obj);
 };

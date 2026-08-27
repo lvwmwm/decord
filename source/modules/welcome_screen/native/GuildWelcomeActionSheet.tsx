@@ -1,26 +1,26 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 12109
+// Function ID: 12110
 // Name: WelcomeChannelRow
-// Dependencies: [19, 17, 5348, 1391, 1910, 4089, 12284, 12288, 676, 1925, 505, 21, 4444, 712, 5408, 589, 4638, 1222, 4411, 5440, 1435, 4102, 4440, 1297, 11436, 8185, 709, 12286, 698, 5936, 12289, 1236, 2]
+// Dependencies: [19, 17, 5353, 1391, 1910, 4089, 12106, 12110, 676, 1925, 505, 21, 4445, 712, 5413, 589, 4639, 1222, 4412, 5445, 1435, 4102, 4441, 1297, 11291, 8295, 709, 12108, 698, 5941, 12111, 1236, 2]
 // Exports: default
 
-// Module 12287 (WelcomeChannelRow)
+// Module 12109 (WelcomeChannelRow)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getEmojiToGroupId" /* 5348 */;
+import closure_6 from "getEmojiToGroupId" /* 5353 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
 import closure_9 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_10 from "handleInviteData" /* 12284 */;
-import { NO_WELCOME_SCREEN } from "handleInviteData" /* 12284 */;
-import { WELCOME_SCREEN_TYPE } from "WELCOME_SCREEN_TYPE" /* 12288 */;
+import closure_10 from "handleInviteData" /* 12106 */;
+import { NO_WELCOME_SCREEN } from "handleInviteData" /* 12106 */;
+import { WELCOME_SCREEN_TYPE } from "WELCOME_SCREEN_TYPE" /* 12110 */;
 import ME from "ME" /* 676 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
 import { Permissions } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import importDefaultResult from "createTextStyle" /* 5408 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import importDefaultResult from "createTextStyle" /* 5413 */;
 
 const require = arg1;
 class WelcomeChannelRow {
@@ -252,8 +252,8 @@ export default function GuildWelcomeActionSheet(guildId) {
       obj1 = { style: null, guild: null, size: null, textScale: 2 };
       obj1[0] = tmp.guildIcon;
       obj1[1] = stateFromStores;
-      obj1[2] = onHide(12289).Sizes.MEDIUM;
-      const items9 = [callback(onHide(12289), obj1), , , , ];
+      obj1[2] = onHide(12111).Sizes.MEDIUM;
+      const items9 = [callback(onHide(12111), obj1), , , , ];
       const obj2 = { style: null, variant: "heading-xl/extrabold", color: "text-default", children: null };
       obj2[0] = tmp.header;
       const intl = tmp2(1236).intl;
@@ -263,17 +263,17 @@ export default function GuildWelcomeActionSheet(guildId) {
         return closure_1_17(guildId(headerGuildName[22]).Text, { style: headerGuildName.headerGuildName, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children }, arg1);
       };
       obj2[3] = intl.format(tmp2(1236).t["0aydCN"], obj3);
-      items9[1] = callback(tmp2(4440).Text, obj2);
+      items9[1] = callback(tmp2(4441).Text, obj2);
       const obj4 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
       obj4[0] = tmp.guildDescription;
       obj4[3] = welcomeScreen.description;
-      items9[2] = callback(tmp2(4440).Text, obj4);
+      items9[2] = callback(tmp2(4441).Text, obj4);
       const obj5 = { style: null, variant: "eyebrow", color: "text-default", children: null };
       obj5[0] = tmp.channelsTitle;
       const intl2 = tmp2(1236).intl;
-      const tmp17 = onHide(12289);
+      const tmp17 = onHide(12111);
       obj5[3] = intl2.string(tmp2(1236).t["haj5+i"]).toUpperCase();
-      items9[3] = callback(tmp2(4440).Text, obj5);
+      items9[3] = callback(tmp2(4441).Text, obj5);
       let welcome_channels = welcomeScreen.welcome_channels;
       items9[4] = welcome_channels.map((welcomeChannel) => {
         closure_0 = arg1;
@@ -286,7 +286,7 @@ export default function GuildWelcomeActionSheet(guildId) {
       });
       obj[1] = items9;
       obj[1] = callback2(hasError, obj);
-      tmp12 = callback(tmp2(5936).ActionSheet, obj);
+      tmp12 = callback(tmp2(5941).ActionSheet, obj);
       const str = intl2.string(tmp2(1236).t["haj5+i"]);
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 4296
-// Function ID: 4297
+// Module ID: 4297
+// Function ID: 4298
 // Name: items
 // Dependencies: [689, 2]
 // Exports: generateRandomColorOptions
 
-// Module 4296 (items)
+// Module 4297 (items)
 import set from "set" /* 2 */;
 
 let items = ["#94E0CF", "#9AF0B1", "#9A90FF", "#9A53FF", "#FDA6E4", "#FFE6C0", "#EFB4AA", "#56B69F", "#29C566", "#5348CA", "#6D24D4", "#CA48C8", "#F0AE29", "#DF4232"];

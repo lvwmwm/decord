@@ -1,10 +1,10 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14517
+// Function ID: 14518
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 4444, 14491, 1236, 1297, 4440, 10563, 4808, 14469, 4898, 1435, 4881, 12728, 4877, 5015, 8245, 5546, 5940, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4445, 14518, 1236, 1297, 4441, 8437, 4809, 14496, 4899, 1435, 4882, 12429, 4878, 5020, 7697, 5551, 5944, 5945, 2]
 // Exports: default
 
-// Module 14490 (ConnectedApplicationIdentity)
+// Module 14517 (ConnectedApplicationIdentity)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -180,13 +180,15 @@ export default function ConnectedApplicationIdentity(identity) {
     obj5[1] = callback2(tmp2(tmp3[20]).TableRow, obj6);
     const items4 = [callback2(View, obj5), ];
     const obj7 = { style: null, children: null };
-    obj7[0] = { marginVertical: 8 };
-    const obj8 = { label: null, value: null, onValueChange: null };
+    obj7[0] = legacyClassComponentStyles.connectedAccountContentContainer;
+    const obj8 = { hasIcons: false, children: null };
+    const obj9 = { label: null, value: null, onValueChange: null };
     let intl3 = tmp2(tmp3[7]).intl;
-    obj8[0] = intl3.string(tmp2(tmp3[7]).t.f7yOAX);
-    obj8[1] = tmp6;
-    obj8[2] = tmp12;
-    obj7[1] = callback2(tmp2(tmp3[21]).TableSwitchRow, obj8);
+    obj9[0] = intl3.string(tmp2(tmp3[7]).t.f7yOAX);
+    obj9[1] = tmp6;
+    obj9[2] = tmp12;
+    obj8[1] = callback2(tmp2(tmp3[22]).TableSwitchRow, obj9);
+    obj7[1] = callback2(tmp2(tmp3[21]).TableRowGroup, obj8);
     items4[1] = callback2(View, obj7);
     obj4[1] = items4;
     obj3[1] = callback3(View, obj4);

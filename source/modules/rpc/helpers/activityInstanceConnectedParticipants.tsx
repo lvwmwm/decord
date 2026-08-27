@@ -1,13 +1,13 @@
-// Module ID: 14005
-// Function ID: 14006
+// Module ID: 14032
+// Function ID: 14033
 // Name: activityInstanceConnectedParticipants
-// Dependencies: [1390, 1922, 4346, 4079, 4637, 10902, 1370, 12, 2]
+// Dependencies: [1390, 1922, 4347, 4079, 4638, 9430, 1370, 12, 2]
 // Exports: activityInstanceConnectedParticipants
 
-// Module 14005 (activityInstanceConnectedParticipants)
+// Module 14032 (activityInstanceConnectedParticipants)
 import closure_3 from "participantFromServer" /* 1390 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4346 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4347 */;
 
 const require = arg1;
 let obj = { [RPC_SCOPE_CONFIG.RPC_SCOPE_CONFIG.ANY]: items };

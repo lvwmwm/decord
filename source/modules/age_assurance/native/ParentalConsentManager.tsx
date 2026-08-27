@@ -1,10 +1,10 @@
-// Module ID: 16884
-// Function ID: 16885
+// Module ID: 16950
+// Function ID: 16951
 // Name: onPostConnectionOpen
-// Dependencies: [5, 1922, 676, 1625, 4423, 500, 5433, 4140, 16885, 16887, 698, 1208, 16888, 2]
+// Dependencies: [5, 1922, 676, 1625, 4424, 500, 5438, 4140, 16951, 16953, 698, 1208, 16954, 2]
 
-// Module 16884 (onPostConnectionOpen)
-import initializeDefault from "initialize" /* 5433 */;
+// Module 16950 (onPostConnectionOpen)
+import initializeDefault from "initialize" /* 5438 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { AnalyticEvents } from "ME" /* 676 */;

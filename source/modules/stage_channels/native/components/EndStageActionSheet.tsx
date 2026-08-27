@@ -1,17 +1,17 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 12703
+// Function ID: 12704
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 5305, 676, 21, 4444, 712, 4411, 9364, 8183, 1297, 1236, 4440, 4879, 7990, 2]
+// Dependencies: [19, 17, 5310, 676, 21, 4445, 712, 4412, 9695, 8664, 1297, 1236, 4441, 4880, 8600, 2]
 // Exports: default
 
-// Module 12939 (EndStageActionSheet)
+// Module 12703 (EndStageActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8183 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8664 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH" /* 5305 */;
+import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH" /* 5310 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;
@@ -37,7 +37,7 @@ export default function EndStageActionSheet(channel) {
   obj1 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
   const intl2 = channel(1236).intl;
   obj1[3] = intl2.string(channel(1236).t.mT7jwN);
-  items[1] = callback(channel(4440).Text, obj1);
+  items[1] = callback(channel(4441).Text, obj1);
   let obj2 = { style: tmp.cancelButton, children: null };
   const obj3 = { variant: "secondary", text: null, onPress: null };
   const intl3 = channel(1236).intl;
@@ -47,7 +47,7 @@ export default function EndStageActionSheet(channel) {
     const obj = closure_1_1(closure_1_2[7]);
     channel(closure_1_2[8]).handleDisconnect(channel);
   };
-  obj2[1] = callback(channel(4879).Button, obj3);
+  obj2[1] = callback(channel(4880).Button, obj3);
   items[2] = callback(View, obj2);
   const obj4 = { style: tmp.confirmButton, children: null };
   const obj5 = { variant: "destructive", text: null, onPress: null };
@@ -60,7 +60,7 @@ export default function EndStageActionSheet(channel) {
     const obj2 = closure_1_1(closure_1_2[7]);
     channel(closure_1_2[8]).handleDisconnect(channel);
   };
-  obj4[1] = callback(channel(4879).Button, obj5);
+  obj4[1] = callback(channel(4880).Button, obj5);
   items[3] = callback(View, obj4);
   obj[1] = items;
   obj[0] = callback2(View, obj);

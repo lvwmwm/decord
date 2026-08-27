@@ -1,12 +1,12 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16514
+// Function ID: 16515
 // Name: MorphablePanelModes
-// Dependencies: [19, 11915, 1494, 1629, 4184, 5599, 10465, 16448, 16451, 4412, 2]
+// Dependencies: [19, 11758, 1494, 1629, 4185, 5604, 10911, 16512, 16515, 4413, 2]
 // Exports: default
 
-// Module 16450 (MorphablePanelModes)
+// Module 16514 (MorphablePanelModes)
 import closure_3 from "noop" /* 19 */;
-import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE" /* 11915 */;
+import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE" /* 11758 */;
 
 const require = arg1;
 ({ IS_IOS: c4, MIN_PAN_GESTURE_MOVE: c5, MorphablePanelModes } = MIN_PAN_GESTURE_MOVE);

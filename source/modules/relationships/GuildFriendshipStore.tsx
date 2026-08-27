@@ -1,12 +1,12 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 13291
+// Function ID: 13292
 // Name: resetStates
-// Dependencies: [589, 5404, 709, 2]
+// Dependencies: [589, 5409, 709, 2]
 
-// Module 13264 (resetStates)
+// Module 13291 (resetStates)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5404 */;
+import showTooManyUserGuildsAlertDefault from "showTooManyUserGuildsAlert" /* 5409 */;
 
 function resetStates() {
   closure_3 = {};

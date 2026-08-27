@@ -1,12 +1,12 @@
-// Module ID: 10370
-// Function ID: 10371
+// Module ID: 10767
+// Function ID: 10768
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4184, 1356, 4878, 10371, 4440, 2]
+// Dependencies: [32, 19, 21, 4185, 1356, 4879, 10768, 4441, 2]
 
-// Module 10370 (BalanceCounter)
+// Module 10767 (BalanceCounter)
 import context from "context" /* 1356 */;
-import _mod4184 from "module_4184" /* 4184 */;
-import Text from "Text" /* 4440 */;
+import _mod4185 from "module_4185" /* 4185 */;
+import Text from "Text" /* 4441 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import closure_8 from "noop" /* 19 */;
@@ -42,7 +42,7 @@ class BalanceCounter {
     closure_2 = closure_6(null);
     tmp2 = closure_2;
     tmp = closure_0;
-    obj = require("module_4184");
+    obj = require("module_4185");
     sharedValue = require("module_0");
     closure_3 = sharedValue;
     closure_4 = closure_6(null);
@@ -86,8 +86,11 @@ class BalanceCounter {
               const diff = tmp - tmp2.current;
               onValueChange(diff);
               tmp2.current = tmp;
-              const desiredAnimationConfigs = value(ref[6]).getDesiredAnimationConfigs(diff, value(ref[6]).EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS);
-              duration = desiredAnimationConfigs.duration;
+              let obj = value(ref[6]);
+              obj = { targetTime: null };
+              obj[0] = value(ref[6]).EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS;
+              const orbBalanceCounterAnimationConfigs = obj.getOrbBalanceCounterAnimationConfigs(diff, obj);
+              duration = orbBalanceCounterAnimationConfigs.duration;
               if (null != ref2.current) {
                 const _clearTimeout = clearTimeout;
                 clearTimeout(tmp12.current);
@@ -98,7 +101,7 @@ class BalanceCounter {
               ref2.current = setTimeout(() => {
                 closure_1_10(closure_1_3, duration, duration);
                 closure_1_4.current = null;
-              }, desiredAnimationConfigs.delay);
+              }, orbBalanceCounterAnimationConfigs.delay);
               return clearAnimationTimeout;
             } else {
               _undefined(tmp);
@@ -110,7 +113,7 @@ class BalanceCounter {
         ref.current = tmp;
       }
     }, items);
-    tmp12 = require("module_4184");
+    tmp12 = require("module_4185");
     class F {
       constructor() {
         if (closure_8) {
@@ -120,10 +123,10 @@ class BalanceCounter {
           str = Math.round(closure_3.get());
           tmp3 = value;
           tmp4 = closure_2;
-          obj = require("module_4184");
+          obj = require("module_4185");
           tmp5 = closure_6;
           tmp6 = obj.runOnJS(closure_6)(str);
-          obj2 = require("module_4184");
+          obj2 = require("module_4185");
           tmp7 = closure_7;
           runOnJSResult = obj2.runOnJS(closure_7);
           tmp8Result = runOnJSResult(str.toString().length);
@@ -131,7 +134,7 @@ class BalanceCounter {
         return {};
       }
     }
-    obj = { isAnimating: first, animatedValue: sharedValue, runOnJS: require("module_4184").runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp7 };
+    obj = { isAnimating: first, animatedValue: sharedValue, runOnJS: require("module_4185").runOnJS, setDisplayValue: tmp5, setMaxDigits: tmp7 };
     F.__closure = obj;
     F.__workletHash = 4408542396979;
     F.__initData = clearAnimationTimeout;
@@ -151,7 +154,7 @@ class BalanceCounter {
       obj3[1] = style;
       obj3[3] = require("module_0");
       obj1[1] = closure_9(require("Text").Text, obj3);
-      tmp14 = closure_9(require("module_4184").View, obj1);
+      tmp14 = closure_9(require("module_4185").View, obj1);
     }
     return tmp14;
   }

@@ -1,9 +1,9 @@
-// Module ID: 13513
-// Function ID: 13514
+// Module ID: 13540
+// Function ID: 13541
 // Name: metadata
 // Dependencies: [2]
 
-// Module 13513 (metadata)
+// Module 13540 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/images/consoles/mobile_background.jpg.js");

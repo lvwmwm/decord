@@ -1,20 +1,20 @@
-// Module ID: 12558
-// Function ID: 12559
+// Module ID: 9316
+// Function ID: 9317
 // Name: TimestampBadge
-// Dependencies: [19, 17, 676, 21, 4444, 11652, 7409, 7902, 9861, 9866, 8977, 12559, 12560, 712, 12561, 8460, 4985, 4440, 11273, 2]
+// Dependencies: [19, 17, 676, 21, 4445, 9317, 7417, 9171, 9166, 9172, 9119, 9319, 9320, 712, 9321, 7976, 4990, 4441, 9331, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 12558 (TimestampBadge)
+// Module 9316 (TimestampBadge)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7409 */;
-import calculateTimestampDurations from "calculateTimestampDurations" /* 8460 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 12559 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 12560 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7417 */;
+import calculateTimestampDurations from "calculateTimestampDurations" /* 7976 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 9319 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 9320 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -60,15 +60,15 @@ export const TimestampBadge = function TimestampBadge(activity) {
         flag2 = false;
       }
       if (flag2) {
-        let GameControllerIcon = tmp2(11652).HourglassIcon;
-      } else if (tmp10(7409)(activity)) {
-        GameControllerIcon = tmp2(7902).AppsIcon;
+        let GameControllerIcon = tmp2(9317).HourglassIcon;
+      } else if (tmp10(7417)(activity)) {
+        GameControllerIcon = tmp2(9171).AppsIcon;
       } else if (activity.type === ActivityTypes.WATCHING) {
-        GameControllerIcon = tmp2(9861).TvIcon;
+        GameControllerIcon = tmp2(9166).TvIcon;
       } else if (activity.type === tmp6.LISTENING) {
-        GameControllerIcon = tmp2(9866).MusicIcon;
+        GameControllerIcon = tmp2(9172).MusicIcon;
       } else {
-        GameControllerIcon = tmp2(8977).GameControllerIcon;
+        GameControllerIcon = tmp2(9119).GameControllerIcon;
       }
       obj = { style: null, children: null };
       obj[0] = tmp.container;
@@ -82,7 +82,7 @@ export const TimestampBadge = function TimestampBadge(activity) {
       obj2[2] = flag;
       obj1[0] = obj2;
       obj1[1] = tmp.bold;
-      items[1] = callback(tmp2(12561).ActiveTimestamp, obj1);
+      items[1] = callback(tmp2(9321).ActiveTimestamp, obj1);
       obj[1] = items;
       return callback2(View, obj);
     }
@@ -100,10 +100,10 @@ export const PartyBadge = function PartyBadge(activity) {
         obj[0] = tmp.container;
         obj = { size: "xxs", color: null };
         obj[1] = ThemesDefault.colors.TEXT_MUTED;
-        const items = [callback(tmp9(4985).GroupIcon, obj), ];
+        const items = [callback(tmp9(4990).GroupIcon, obj), ];
         obj = { variant: "text-sm/medium", color: "text-muted", children: null };
         obj[2] = richGameStateBadgeText;
-        items[1] = callback(tmp9(4440).Text, obj);
+        items[1] = callback(tmp9(4441).Text, obj);
         obj[1] = items;
         tmp8 = callback2(View, obj);
       }
@@ -126,10 +126,10 @@ export const EpisodeBadge = function EpisodeBadge(activity) {
     obj[0] = tmp.container;
     obj = { size: "xxs", color: null };
     obj[1] = ThemesDefault.colors.TEXT_MUTED;
-    const items = [callback(tmp2(11273).TopicsIcon, obj), ];
+    const items = [callback(tmp2(9331).TopicsIcon, obj), ];
     obj1 = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj1[2] = episodeBadgeText;
-    items[1] = callback(tmp2(4440).Text, obj1);
+    items[1] = callback(tmp2(4441).Text, obj1);
     obj[1] = items;
     tmp6 = callback2(View, obj);
   }

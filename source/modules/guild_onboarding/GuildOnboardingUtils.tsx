@@ -1,22 +1,22 @@
-// Module ID: 5421
-// Function ID: 5422
+// Module ID: 5426
+// Function ID: 5427
 // Name: isChattableChannel
-// Dependencies: [1391, 5172, 1982, 1910, 4089, 5415, 676, 4077, 589, 1403, 4962, 5416, 4094, 1370, 643, 1903, 5422, 2]
+// Dependencies: [1391, 5177, 1982, 1910, 4089, 5420, 676, 4077, 589, 1403, 4964, 5421, 4094, 1370, 643, 1903, 5427, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 5421 (isChattableChannel)
+// Module 5426 (isChattableChannel)
 import shallowEqualDefault from "shallowEqual" /* 643 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import hasFlagAll from "hasFlag" /* 1403 */;
 import applyOverwritesAll from "applyOverwrites" /* 4094 */;
-import useCanChannelBeDefault from "useCanChannelBeDefault" /* 5416 */;
+import useCanChannelBeDefault from "useCanChannelBeDefault" /* 5421 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "set" /* 5172 */;
+import closure_5 from "set" /* 5177 */;
 import closure_6 from "comparator" /* 1982 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator" /* 1982 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
 import closure_9 from "getUncachedChannelPermissions" /* 4089 */;
-import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5415 */;
+import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5420 */;
 import ME from "ME" /* 676 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 

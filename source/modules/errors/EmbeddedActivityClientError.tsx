@@ -1,9 +1,9 @@
-// Module ID: 10770
-// Function ID: 10771
+// Module ID: 9396
+// Function ID: 9397
 // Name: prototype
 // Dependencies: [2]
 
-// Module 10770 (prototype)
+// Module 9396 (prototype)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/errors/EmbeddedActivityClientError.tsx");

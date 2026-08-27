@@ -1,9 +1,9 @@
-// Module ID: 9928
-// Function ID: 9929
+// Module ID: 10227
+// Function ID: 10228
 // Name: FREE_FAVORITE_LIMIT
 // Dependencies: [2]
 
-// Module 9928 (FREE_FAVORITE_LIMIT)
+// Module 10227 (FREE_FAVORITE_LIMIT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/FavoritesLimits.tsx");

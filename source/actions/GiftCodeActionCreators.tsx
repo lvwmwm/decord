@@ -1,15 +1,15 @@
-// Module ID: 10550
-// Function ID: 10551
+// Module ID: 8409
+// Function ID: 8410
 // Name: resolveGiftCode
-// Dependencies: [5, 4485, 7214, 7222, 676, 1924, 709, 4704, 5901, 7213, 4342, 530, 10551, 10552, 2]
+// Dependencies: [5, 4486, 7220, 7228, 676, 1924, 709, 4705, 5906, 7219, 4343, 530, 8410, 8411, 2]
 // Exports: resolveGiftCode
 
-// Module 10550 (resolveGiftCode)
-import _modDef10551 from "module_10551" /* 10551 */;
+// Module 8409 (resolveGiftCode)
+import _modDef8410 from "module_8410" /* 8410 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addApplication" /* 4485 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7214 */;
-import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7222 */;
+import closure_4 from "addApplication" /* 4486 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7220 */;
+import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7228 */;
 import ME from "ME" /* 676 */;
 import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_10 } from "GuildFeatures" /* 1924 */;
 
@@ -345,7 +345,7 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    _modDef10551.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    _modDef8410.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };

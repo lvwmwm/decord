@@ -1,16 +1,15 @@
-// Module ID: 14982
-// Function ID: 14983
+// Module ID: 15047
+// Function ID: 15048
 // Name: toggle
-// Dependencies: [8302, 14983, 10584, 1236, 4134, 14984, 2]
+// Dependencies: [7816, 10988, 1236, 4134, 15048, 2]
 
-// Module 14982 (toggle)
+// Module 15047 (toggle)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import MobileUserSettings from "MobileUserSettings" /* 8302 */;
-import apexExperiment from "apexExperiment" /* 14983 */;
-import onFriendOnlineNotificationSettingsChanged from "onFriendOnlineNotificationSettingsChanged" /* 14984 */;
-import createToggle from "createToggle" /* 10584 */;
+import MobileUserSettings from "MobileUserSettings" /* 7816 */;
+import onFriendOnlineNotificationSettingsChanged from "onFriendOnlineNotificationSettingsChanged" /* 15048 */;
+import createToggle from "createToggle" /* 10988 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
@@ -23,10 +22,7 @@ const toggle = createToggle.createToggle({
   },
   parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: explicitContentFromProto.EnableFriendOnlineNotifications.useSetting,
-  onValueChange: onFriendOnlineNotificationSettingsChanged.onFriendOnlineNotificationSettingsChanged,
-  usePredicate: function useExperiment() {
-    return apexExperiment.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
-  }
+  onValueChange: onFriendOnlineNotificationSettingsChanged.onFriendOnlineNotificationSettingsChanged
 });
 const obj = {
   useTitle() {
@@ -39,10 +35,7 @@ const obj = {
   },
   parent: MobileUserSettings.MobileUserSettings.NOTIFICATIONS,
   useValue: explicitContentFromProto.EnableFriendOnlineNotifications.useSetting,
-  onValueChange: onFriendOnlineNotificationSettingsChanged.onFriendOnlineNotificationSettingsChanged,
-  usePredicate: function useExperiment() {
-    return apexExperiment.useFriendOnlineNotificationExperiment("tabsV2Settings").showSettingsToggle;
-  }
+  onValueChange: onFriendOnlineNotificationSettingsChanged.onFriendOnlineNotificationSettingsChanged
 };
 const result = set.fileFinishedImporting("modules/user_settings/defs/native/FriendOnlineNotificationSetting.tsx");
 

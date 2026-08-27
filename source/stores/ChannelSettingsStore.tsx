@@ -1,9 +1,9 @@
-// Module ID: 8235
-// Function ID: 8236
+// Module ID: 8678
+// Function ID: 8679
 // Name: normalizeChannelPropertyForCompare
-// Dependencies: [1395, 7972, 1930, 1391, 676, 1235, 4100, 4102, 1400, 1401, 530, 709, 12, 1430, 4043, 589, 2]
+// Dependencies: [1395, 8582, 1930, 1391, 676, 1235, 4100, 4102, 1400, 1401, 530, 709, 12, 1430, 4043, 589, 2]
 
-// Module 8235 (normalizeChannelPropertyForCompare)
+// Module 8678 (normalizeChannelPropertyForCompare)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import initializeDefault from "initialize" /* 589 */;
@@ -16,7 +16,7 @@ import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAddi
 import hooksDefault from "hooks" /* 4043 */;
 import MAX_REACTIONS from "MAX_REACTIONS" /* 4100 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4102 */;
-import closure_10 from "createFromServer" /* 7972 */;
+import closure_10 from "createFromServer" /* 8582 */;
 import closure_11 from "createdAt" /* 1930 */;
 import closure_12 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;

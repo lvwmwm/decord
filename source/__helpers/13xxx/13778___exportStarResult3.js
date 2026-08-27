@@ -1,0 +1,13 @@
+// Module ID: 13778
+// Function ID: 13779
+// Name: __exportStarResult3
+// Dependencies: [13779]
+
+// Module 13778 (__exportStarResult3)
+import DefaultNumberOption from "DefaultNumberOption" /* 13779 */;
+
+require = arg1;
+const dependencyMap = arg6;
+arg5.GetNumberOption = function GetNumberOption(result1, minimumIntegerDigits, minimumSignificantDigits, arg3, arg4) {
+  return DefaultNumberOption.DefaultNumberOption(result1[minimumIntegerDigits], minimumSignificantDigits, arg3, arg4);
+};

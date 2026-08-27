@@ -1,14 +1,14 @@
-// Module ID: 4973
-// Function ID: 4974
+// Module ID: 4977
+// Function ID: 4978
 // Name: TextWarningIcon
-// Dependencies: [19, 21, 712, 4164, 4947, 2]
+// Dependencies: [19, 21, 712, 4164, 4948, 2]
 // Exports: TextWarningIcon
 
-// Module 4973 (TextWarningIcon)
+// Module 4977 (TextWarningIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4947 */;
+import registerAsset from "registerAsset" /* 4948 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

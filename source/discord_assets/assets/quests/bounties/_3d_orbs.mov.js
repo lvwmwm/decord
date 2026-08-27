@@ -1,9 +1,9 @@
-// Module ID: 14576
-// Function ID: 14577
+// Module ID: 14603
+// Function ID: 14604
 // Name: metadata
 // Dependencies: [2]
 
-// Module 14576 (metadata)
+// Module 14603 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/quests/bounties/_3d_orbs.mov.js");

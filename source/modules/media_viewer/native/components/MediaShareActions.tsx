@@ -1,19 +1,19 @@
-// Module ID: 9112
-// Function ID: 9113
+// Module ID: 8536
+// Function ID: 8537
 // Name: useMediaShareActions
-// Dependencies: [19, 9113, 1391, 4687, 9137, 676, 7273, 21, 647, 7272, 8451, 4411, 9061, 4635, 9138, 9062, 9147, 4158, 11302, 4455, 4301, 11297, 2009, 11281, 4393, 1236, 11309, 12510, 12511, 11367, 4978, 5936, 5938, 2]
+// Dependencies: [19, 8537, 1391, 4688, 8562, 676, 7279, 21, 647, 7278, 7966, 4412, 8500, 4636, 8563, 8502, 8572, 4158, 11179, 4456, 4302, 11176, 2009, 11160, 4394, 1236, 11187, 12692, 12733, 11229, 4982, 5941, 5943, 2]
 // Exports: default
 
-// Module 9112 (useMediaShareActions)
-import ActionSheet from "ActionSheet" /* 5936 */;
-import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5938 */;
+// Module 8536 (useMediaShareActions)
+import ActionSheet from "ActionSheet" /* 5941 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5943 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "filterStaffGuild" /* 9113 */;
+import closure_4 from "filterStaffGuild" /* 8537 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "reinjectEphemerals" /* 4687 */;
-import closure_7 from "messages" /* 9137 */;
+import closure_6 from "reinjectEphemerals" /* 4688 */;
+import closure_7 from "messages" /* 8562 */;
 import ME from "ME" /* 676 */;
-import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_11 } from "USER_SETTING_ACTION_SHEET_KEY" /* 7273 */;
+import { EXPLICIT_MEDIA_FALSE_POSITIVE_ACTION_SHEET_KEY as closure_11 } from "USER_SETTING_ACTION_SHEET_KEY" /* 7279 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -104,7 +104,7 @@ function useMediaShareActions(source) {
       if ("embed" !== source.accessoryType) {
         const attachmentId = tmp8.attachmentId;
         if (null != attachmentId) {
-          obj = { message: null, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "M9 13h1v-1H9v1ZM10 12h1v-1h-1v1ZM9 11h1v-1H9v1Z" };
+          obj = { message: null, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "M15 7h-1v1h1V7Z" };
           obj[0] = tmp3;
           obj = { onlyAttachmentIds: null };
           const items = [attachmentId];
@@ -115,7 +115,7 @@ function useMediaShareActions(source) {
         }
       } else {
         obj1 = source(tmp[18]);
-        obj1 = { message: null, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "M9 13h1v-1H9v1ZM10 12h1v-1h-1v1ZM9 11h1v-1H9v1Z" };
+        obj1 = { message: null, source: "media-viewer", initialSelectedDestinations: "Array", forwardOptions: "M15 7h-1v1h1V7Z" };
         obj1[0] = tmp3;
         const obj2 = { onlyEmbedIndices: null };
         const items1 = [tmp8.mediaIndex];
@@ -235,9 +235,9 @@ export default function MediaShareActionSheet(source) {
     children: useMediaShareActions(obj).map((IconComponent) => {
       let obj = { icon: null, onPress: null, label: null };
       obj = { IconComponent: IconComponent.IconComponent };
-      obj[0] = callback2(callback(5938).ActionSheetRow.Icon, obj);
+      obj[0] = callback2(callback(5943).ActionSheetRow.Icon, obj);
       ({ action: obj[1], label: obj[2] } = IconComponent);
-      return callback2(callback(5938).ActionSheetRow, obj, arg1);
+      return callback2(callback(5943).ActionSheetRow, obj, arg1);
     })
   };
   obj[0] = jsx(ActionSheetRowIcon.ActionSheetRow.Group, {
@@ -245,9 +245,9 @@ export default function MediaShareActionSheet(source) {
     children: useMediaShareActions(obj).map((IconComponent) => {
       let obj = { icon: null, onPress: null, label: null };
       obj = { IconComponent: IconComponent.IconComponent };
-      obj[0] = callback2(callback(5938).ActionSheetRow.Icon, obj);
+      obj[0] = callback2(callback(5943).ActionSheetRow.Icon, obj);
       ({ action: obj[1], label: obj[2] } = IconComponent);
-      return callback2(callback(5938).ActionSheetRow, obj, arg1);
+      return callback2(callback(5943).ActionSheetRow, obj, arg1);
     })
   });
   return jsx(ActionSheet.ActionSheet, {
@@ -255,9 +255,9 @@ export default function MediaShareActionSheet(source) {
     children: useMediaShareActions(obj).map((IconComponent) => {
       let obj = { icon: null, onPress: null, label: null };
       obj = { IconComponent: IconComponent.IconComponent };
-      obj[0] = callback2(callback(5938).ActionSheetRow.Icon, obj);
+      obj[0] = callback2(callback(5943).ActionSheetRow.Icon, obj);
       ({ action: obj[1], label: obj[2] } = IconComponent);
-      return callback2(callback(5938).ActionSheetRow, obj, arg1);
+      return callback2(callback(5943).ActionSheetRow, obj, arg1);
     })
   });
 };

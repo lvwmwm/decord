@@ -1,10 +1,10 @@
-// Module ID: 8004
-// Function ID: 8005
+// Module ID: 7640
+// Function ID: 7641
 // Name: ErrorText
-// Dependencies: [19, 21, 4167, 1363, 4877, 8005, 4440, 2]
+// Dependencies: [19, 21, 4167, 1363, 4878, 7641, 4441, 2]
 // Exports: ErrorText
 
-// Module 8004 (ErrorText)
+// Module 7640 (ErrorText)
 import closure_2 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -29,7 +29,7 @@ export const ErrorText = function ErrorText(children) {
     }
   }, items);
   obj = { direction: "horizontal", spacing: 4, align: "flex-start", style: children.style, children: null };
-  const items1 = [callback(nodeText(8005).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), callback(nodeText(4440).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
+  const items1 = [callback(nodeText(7641).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), callback(nodeText(4441).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })];
   obj[4] = items1;
-  return callback2(nodeText(4877).Stack, obj);
+  return callback2(nodeText(4878).Stack, obj);
 };

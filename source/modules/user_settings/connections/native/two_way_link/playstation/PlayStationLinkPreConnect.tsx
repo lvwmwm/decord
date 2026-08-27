@@ -1,14 +1,14 @@
-// Module ID: 10704
-// Function ID: 10705
+// Module ID: 9254
+// Function ID: 9255
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 10701, 21, 4444, 1500, 10705, 10644, 1236, 2]
+// Dependencies: [19, 9251, 21, 4445, 1500, 9255, 9231, 1236, 2]
 // Exports: PlayStationLinkPreConnect
 
-// Module 10704 (PlayStationLinkPreConnect)
+// Module 9254 (PlayStationLinkPreConnect)
 import closure_3 from "noop" /* 19 */;
-import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes" /* 10701 */;
+import { PlayStationLinkModalScenes as closure_4 } from "PlayStationLinkModalScenes" /* 9251 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles({ image: { width: 231, height: 160 } });
@@ -32,5 +32,5 @@ export const PlayStationLinkPreConnect = function PlayStationLinkPreConnect(plat
   obj[5] = intl.string(navigation(1236).t["6n+UPR"]);
   const intl2 = navigation(1236).intl;
   obj[6] = intl2.string(navigation(1236).t.JaaqIf);
-  return jsx(navigation(10644).TwoWayLinkPreConnect, { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
+  return jsx(navigation(9231).TwoWayLinkPreConnect, { platformType: platformType.platformType, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
 };

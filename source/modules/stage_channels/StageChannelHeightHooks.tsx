@@ -1,12 +1,12 @@
-// Module ID: 10922
-// Function ID: 10923
+// Module ID: 9566
+// Function ID: 9567
 // Name: CALL_ACTION_BAR_HEIGHT
-// Dependencies: [8225, 2]
+// Dependencies: [8672, 2]
 // Exports: useGetActionBarHeight, useGetStageRTCPanelHeight
 
-// Module 10922 (CALL_ACTION_BAR_HEIGHT)
+// Module 9566 (CALL_ACTION_BAR_HEIGHT)
 import set from "set" /* 2 */;
-import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8225 */;
+import useStageBlockedUsersCount from "useStageBlockedUsersCount" /* 8672 */;
 
 const result = set.fileFinishedImporting("modules/stage_channels/StageChannelHeightHooks.tsx");
 

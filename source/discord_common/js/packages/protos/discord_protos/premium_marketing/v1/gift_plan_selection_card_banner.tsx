@@ -1,13 +1,13 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 8396
+// Function ID: 8397
 // Name: create
-// Dependencies: [32, 1307, 7568, 7566, 7558, 2]
+// Dependencies: [32, 1307, 8395, 8393, 8385, 2]
 
-// Module 7569 (create)
+// Module 8396 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create from "create" /* 7558 */;
-import create2 from "create" /* 7566 */;
-import create3 from "create" /* 7568 */;
+import create from "create" /* 8385 */;
+import create2 from "create" /* 8393 */;
+import create3 from "create" /* 8395 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -24,7 +24,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
       name: "avatar_asset",
       kind: "message",
       T() {
-            return callback(7568).ThemeAwareAsset;
+            return callback(8395).ThemeAwareAsset;
           }
     };
     items[4] = { no: 5, name: "banner_asset_url", kind: "scalar", T: 9 };
@@ -35,7 +35,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
       name: "gradient",
       kind: "message",
       T() {
-            return callback(7566).Gradient;
+            return callback(8393).Gradient;
           }
     };
     items[8] = {
@@ -43,7 +43,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
       name: "banner_asset",
       kind: "message",
       T() {
-            return callback(7568).ThemeAwareAsset;
+            return callback(8395).ThemeAwareAsset;
           }
     };
     items[9] = {
@@ -51,7 +51,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
       name: "background_asset",
       kind: "message",
       T() {
-            return callback(7568).ThemeAwareAsset;
+            return callback(8395).ThemeAwareAsset;
           }
     };
     items[10] = {
@@ -59,7 +59,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
       name: "card_asset",
       kind: "message",
       T() {
-            return callback(7568).ThemeAwareAsset;
+            return callback(8395).ThemeAwareAsset;
           }
     };
     items[11] = {
@@ -67,7 +67,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
       name: "mobile_banner_asset",
       kind: "message",
       T() {
-            return callback(7568).ThemeAwareAsset;
+            return callback(8395).ThemeAwareAsset;
           }
     };
     items[12] = {
@@ -75,7 +75,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
       name: "header_localized",
       kind: "message",
       T() {
-            return callback(7558).LocalizedString;
+            return callback(8385).LocalizedString;
           }
     };
     items[13] = {
@@ -83,7 +83,7 @@ class GiftPlanSelectionCardBanner$Type extends MessageType {
       name: "desktop_body_localized",
       kind: "message",
       T() {
-            return callback(7558).LocalizedString;
+            return callback(8385).LocalizedString;
           }
     };
     obj = { no: 15, name: "mobile_body_localized", kind: "message", T: null };

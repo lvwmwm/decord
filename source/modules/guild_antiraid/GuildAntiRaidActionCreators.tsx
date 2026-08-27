@@ -1,15 +1,15 @@
-// Module ID: 11463
-// Function ID: 11464
+// Module ID: 11318
+// Function ID: 11319
 // Name: _setGuildRaidAlerts
-// Dependencies: [5, 1910, 8343, 676, 698, 4652, 9236, 4043, 530, 9999, 2]
+// Dependencies: [5, 1910, 7857, 676, 698, 4653, 9649, 4043, 530, 10105, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11463 (_setGuildRaidAlerts)
+// Module 11318 (_setGuildRaidAlerts)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4652 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 8343 */;
+import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 7857 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -194,7 +194,7 @@ function _handleResolveRaid() {
               guild = guild.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = callback2(9999)(guild);
+                tmp8 = callback2(10105)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {
@@ -285,7 +285,7 @@ function _handleReportRaid() {
               const guild = closure_1_4.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = v0(9999)(guild);
+                tmp8 = v0(10105)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {

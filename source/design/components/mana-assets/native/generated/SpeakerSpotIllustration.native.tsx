@@ -1,14 +1,14 @@
-// Module ID: 6961
-// Function ID: 6962
+// Module ID: 6967
+// Function ID: 6968
 // Name: SpeakerSpotIllustration
-// Dependencies: [21, 5440, 6962, 2]
+// Dependencies: [21, 5445, 6968, 2]
 // Exports: SpeakerSpotIllustration
 
-// Module 6961 (SpeakerSpotIllustration)
+// Module 6967 (SpeakerSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6962 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6968 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SpeakerSpotIllustration.native.tsx");

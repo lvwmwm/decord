@@ -1,14 +1,14 @@
-// Module ID: 10581
-// Function ID: 10582
+// Module ID: 10985
+// Function ID: 10986
 // Name: useLaunchPadType
-// Dependencies: [10580, 4134, 1306, 2]
+// Dependencies: [10984, 4134, 1306, 2]
 // Exports: default
 
-// Module 10581 (useLaunchPadType)
+// Module 10985 (useLaunchPadType)
 import set from "set" /* 2 */;
 import create from "create" /* 1306 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 10580 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 10984 */;
 
 const LaunchPadTypes = LAUNCH_PAD_SPRING_CONFIG.LaunchPadTypes;
 const result = set.fileFinishedImporting("modules/launchpad/native/useLaunchPadType.tsx");

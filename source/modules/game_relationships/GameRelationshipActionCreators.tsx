@@ -1,12 +1,12 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 8997
+// Function ID: 8998
 // Name: showRequestFailedAlert
-// Dependencies: [5, 676, 4342, 4808, 1236, 530, 1363, 2]
+// Dependencies: [5, 676, 4343, 4809, 1236, 530, 1363, 2]
 
-// Module 9850 (showRequestFailedAlert)
+// Module 8997 (showRequestFailedAlert)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4342 */;
-import setDefault from "set" /* 4808 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4343 */;
+import setDefault from "set" /* 4809 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 
@@ -358,7 +358,7 @@ export default {
       const intl = onSuccess(closure_1_2[4]).intl;
       AccessibilityAnnouncer.announce(intl.string(onSuccess(closure_1_2[4]).t.taJiuc));
     }).catch((arg0) => {
-      const aPIError = new onSuccess(4342).APIError(arg0);
+      const aPIError = new onSuccess(4343).APIError(arg0);
       let anyErrorMessage = aPIError.getAnyErrorMessage();
       const obj = { title: null, body: null };
       const intl = onSuccess(1236).intl;
@@ -368,7 +368,7 @@ export default {
         anyErrorMessage = intl2.string(tmp(1236).t.fEptJP);
       }
       obj[1] = anyErrorMessage;
-      callback(4808).show(obj);
+      callback(4809).show(obj);
       return Promise.reject(arg0);
     });
   },

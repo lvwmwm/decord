@@ -1,10 +1,10 @@
-// Module ID: 16050
-// Function ID: 16051
+// Module ID: 16115
+// Function ID: 16116
 // Name: FrameWebView
-// Dependencies: [19, 21, 10885, 11137, 10753, 2]
+// Dependencies: [19, 21, 9532, 9418, 9382, 2]
 // Exports: default
 
-// Module 16050 (FrameWebView)
+// Module 16115 (FrameWebView)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 16261
-// Function ID: 16262
+// Module ID: 16326
+// Function ID: 16327
 // Name: getGuildPermissionSpec
 // Dependencies: [505, 1236, 1370, 2]
 // Exports: generateChannelAppsSection, generateChannelEventsSection, generateChannelGeneralSection, generateChannelMembershipSection, generateChannelStageSection, generateChannelStageVoiceSection, generateChannelTextSection, generateChannelVoiceChatSection, generateChannelVoiceSection, generateGuildPermissionSpec, renderDescription
 
-// Module 16261 (getGuildPermissionSpec)
+// Module 16326 (getGuildPermissionSpec)
 import set from "set" /* 2 */;
 import sum from "sum" /* 505 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

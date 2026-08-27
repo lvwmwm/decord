@@ -1,14 +1,14 @@
-// Module ID: 6299
-// Function ID: 6300
+// Module ID: 6305
+// Function ID: 6306
 // Name: BellSpotIllustration
-// Dependencies: [21, 5440, 6300, 2]
+// Dependencies: [21, 5445, 6306, 2]
 // Exports: BellSpotIllustration
 
-// Module 6299 (BellSpotIllustration)
+// Module 6305 (BellSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6300 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6306 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BellSpotIllustration.native.tsx");

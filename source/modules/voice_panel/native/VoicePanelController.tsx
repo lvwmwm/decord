@@ -1,31 +1,31 @@
-// Module ID: 16478
-// Function ID: 16479
+// Module ID: 16542
+// Function ID: 16543
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 4436, 1390, 4460, 9077, 10915, 10815, 1391, 4495, 4518, 4680, 11914, 11912, 676, 4472, 9982, 4465, 11915, 21, 16479, 4184, 8991, 687, 16480, 589, 4162, 10870, 1236, 16481, 16482, 9371, 10771, 16483, 1494, 1629, 16508, 11916, 10465, 12, 514, 1231, 705, 10464, 11627, 7275, 698, 9110, 10798, 16438, 4172, 16509, 4673, 4652, 4306, 5993, 16510, 16511, 4079, 16512, 16518, 16519, 16443, 16520, 11913, 4324, 2]
+// Dependencies: [32, 19, 17, 4437, 1390, 4461, 8517, 9548, 9456, 1391, 4496, 4519, 4681, 11757, 11755, 676, 4473, 9387, 4466, 11758, 21, 16543, 4185, 9130, 687, 16544, 589, 4162, 9517, 1236, 16545, 16546, 9702, 9390, 16547, 1494, 1629, 16574, 11759, 10911, 12, 514, 1231, 705, 9536, 11478, 7281, 698, 8534, 9411, 16502, 4172, 16575, 4674, 4653, 4307, 5998, 16576, 16577, 4079, 16578, 16584, 16585, 16507, 16586, 11756, 4325, 2]
 // Exports: default
 
-// Module 16478 (VoicePanelController)
+// Module 16542 (VoicePanelController)
 import setDefault from "set" /* 687 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { AppState } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import closure_7 from "participantFromServer" /* 1390 */;
-import closure_8 from "getParticipants" /* 4460 */;
-import closure_9 from "module_9077" /* 9077 */;
-import closure_10 from "module_10915" /* 10915 */;
-import closure_11 from "initialize" /* 10815 */;
+import closure_8 from "getParticipants" /* 4461 */;
+import closure_9 from "module_8517" /* 8517 */;
+import closure_10 from "module_9548" /* 9548 */;
+import closure_11 from "initialize" /* 9456 */;
 import closure_12 from "ensureGuildLoaded" /* 1391 */;
-import closure_13 from "_detectH265HardwareDecode" /* 4495 */;
-import closure_14 from "createRTCConnection" /* 4518 */;
-import closure_15 from "withEqualityFn" /* 4680 */;
-import VoicePanelModes from "VoicePanelModes" /* 11914 */;
-import VoicePanelControlsModes from "VoicePanelControlsModes" /* 11912 */;
+import closure_13 from "_detectH265HardwareDecode" /* 4496 */;
+import closure_14 from "createRTCConnection" /* 4519 */;
+import closure_15 from "withEqualityFn" /* 4681 */;
+import VoicePanelModes from "VoicePanelModes" /* 11757 */;
+import VoicePanelControlsModes from "VoicePanelControlsModes" /* 11755 */;
 import ME from "ME" /* 676 */;
-import { OrientationLockState } from "items3" /* 4472 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9982 */;
-import { isActivityParticipant } from "ParticipantTypes" /* 4465 */;
-import { MorphablePanelModes } from "MIN_PAN_GESTURE_MOVE" /* 11915 */;
+import { OrientationLockState } from "items3" /* 4473 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9387 */;
+import { isActivityParticipant } from "ParticipantTypes" /* 4466 */;
+import { MorphablePanelModes } from "MIN_PAN_GESTURE_MOVE" /* 11758 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

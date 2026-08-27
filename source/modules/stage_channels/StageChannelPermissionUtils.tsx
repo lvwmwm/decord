@@ -1,10 +1,10 @@
-// Module ID: 5306
-// Function ID: 5307
+// Module ID: 5311
+// Function ID: 5312
 // Name: createModeratorOverwrite
 // Dependencies: [4090, 1434, 1218, 1391, 1910, 4089, 1396, 676, 506, 4094, 1399, 589, 2]
 // Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 5306 (createModeratorOverwrite)
+// Module 5311 (createModeratorOverwrite)
 import fromStringAll from "fromString" /* 506 */;
 import Permissions from "Permissions" /* 1399 */;
 import applyOverwritesAll from "applyOverwrites" /* 4094 */;

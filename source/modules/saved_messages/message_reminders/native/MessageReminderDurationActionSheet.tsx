@@ -1,16 +1,16 @@
-// Module ID: 11347
-// Function ID: 11348
+// Module ID: 11209
+// Function ID: 11210
 // Name: MessageReminderDurationActionSheet
-// Dependencies: [32, 19, 11280, 21, 4444, 712, 589, 687, 11348, 5568, 1236, 5015, 5446, 11349, 5546, 4411, 4675, 11350, 2009, 5569, 5939, 4395, 2]
+// Dependencies: [32, 19, 11159, 21, 4445, 712, 589, 687, 11210, 5573, 1236, 5020, 5451, 11211, 5551, 4412, 4676, 11212, 2009, 5574, 5944, 4396, 2]
 // Exports: default
 
-// Module 11347 (MessageReminderDurationActionSheet)
+// Module 11209 (MessageReminderDurationActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getTimeSafe" /* 11280 */;
+import closure_5 from "getTimeSafe" /* 11159 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -45,8 +45,8 @@ export default function MessageReminderDurationActionSheet(createReminder) {
   if (stateFromStores != null) {
     dueAt = stateFromStores.saveData.dueAt;
   }
-  obj = { dueAt, now: tmp7, type: tmp2(11348).DueInStringTypes.SHORT };
-  const dueInString = createReminder(11348).useDueInString(obj);
+  obj = { dueAt, now: tmp7, type: tmp2(11210).DueInStringTypes.SHORT };
+  const dueInString = createReminder(11210).useDueInString(obj);
   dueInText = dueInString.dueInText;
   isOverdue = dueInString.isOverdue;
   const items1 = [onBack, dueInText, isOverdue];
@@ -96,20 +96,20 @@ export default function MessageReminderDurationActionSheet(createReminder) {
     return mapped;
   }, items2);
   obj = { header: memo, bodyStyles: tmp.body, startExpanded: true, children: null };
-  const items3 = [dueInText(createReminder(5939).TableRowGroup, { hasIcons: false, children: memo1 }), ];
+  const items3 = [dueInText(createReminder(5944).TableRowGroup, { hasIcons: false, children: memo1 }), ];
   let tmp14Result = null != removeReminder;
   if (tmp14Result) {
     obj1 = { icon: null, label: null, onPress: null, start: true, end: true };
-    obj1[0] = tmp14(tmp2(4395).CheckmarkLargeIcon, {});
+    obj1[0] = tmp14(tmp2(4396).CheckmarkLargeIcon, {});
     let intl = tmp2(1236).intl;
     obj1[1] = intl.string(tmp2(1236).t.yjGtdJ);
     obj1[2] = function onPress() {
       removeReminder(closure_1_2[15]).hideActionSheet();
       removeReminder();
     };
-    tmp14Result = tmp14(tmp2(5546).TableRow, obj1, "remove-reminder");
+    tmp14Result = tmp14(tmp2(5551).TableRow, obj1, "remove-reminder");
   }
   items3[1] = tmp14Result;
   obj[3] = items3;
-  return isOverdue(createReminder(5569).BottomSheet, obj);
+  return isOverdue(createReminder(5574).BottomSheet, obj);
 };

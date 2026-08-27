@@ -1,11 +1,11 @@
-// Module ID: 16180
-// Function ID: 16181
+// Module ID: 16243
+// Function ID: 16244
 // Name: getFriendStatusCounts
-// Dependencies: [4533, 4098, 676, 2]
+// Dependencies: [4534, 4098, 676, 2]
 // Exports: default
 
-// Module 16180 (getFriendStatusCounts)
-import closure_0 from "sortActivity" /* 4533 */;
+// Module 16243 (getFriendStatusCounts)
+import closure_0 from "sortActivity" /* 4534 */;
 import closure_1 from "markAllUserIdListsStale" /* 4098 */;
 import { StatusTypes } from "ME" /* 676 */;
 

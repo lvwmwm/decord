@@ -1,18 +1,18 @@
-// Module ID: 4899
-// Function ID: 4900
+// Module ID: 4900
+// Function ID: 4901
 // Name: createRules
-// Dependencies: [4900, 4435, 4901, 4434, 4160, 4902, 2]
+// Dependencies: [4901, 4436, 4902, 4435, 4160, 4903, 2]
 // Exports: createWidgetMessageRules, getNotifCenterV2MessagePreviewParser, getParser, getParserWithoutLinks, getWidgetMessageRules
 
-// Module 4899 (createRules)
+// Module 4900 (createRules)
 import set from "set" /* 2 */;
 import tDefault from "t" /* 4160 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4434 */;
-import MarkupText from "MarkupText" /* 4435 */;
-import MarkupTextDefault from "MarkupText" /* 4435 */;
-import AST_KEY from "AST_KEY" /* 4900 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 4901 */;
-import parseLinkDefault from "parseLink" /* 4902 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4435 */;
+import MarkupText from "MarkupText" /* 4436 */;
+import MarkupTextDefault from "MarkupText" /* 4436 */;
+import AST_KEY from "AST_KEY" /* 4901 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 4902 */;
+import parseLinkDefault from "parseLink" /* 4903 */;
 
 function createRules(arg0) {
   let obj = arg1;

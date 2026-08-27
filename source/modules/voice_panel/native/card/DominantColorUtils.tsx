@@ -1,10 +1,10 @@
-// Module ID: 9613
-// Function ID: 9614
+// Module ID: 8436
+// Function ID: 8437
 // Name: getCachedSourceFromURI
-// Dependencies: [32, 19, 17, 1405, 4292, 712, 643, 2]
+// Dependencies: [32, 19, 17, 1405, 4293, 712, 643, 2]
 // Exports: getCachedSourceFromURI, useDominantColorFromImage, useDominantRGBFromImage
 
-// Module 9613 (getCachedSourceFromURI)
+// Module 8436 (getCachedSourceFromURI)
 import ThemesDefault from "Themes" /* 712 */;
 import privDefault from "priv" /* 1405 */;
 import closure_3 from "_slicedToArray" /* 32 */;
@@ -52,8 +52,8 @@ export const useDominantRGBFromImage = function useDominantRGBFromImage(arg0) {
     hexToRgbResult = store.get(arg0);
   }
   if (hexToRgbResult == null) {
-    hexToRgbResult = _require(4292).hexToRgb(ThemesDefault.unsafe_rawColors.PRIMARY_800);
-    const obj2 = _require(4292);
+    hexToRgbResult = _require(4293).hexToRgb(ThemesDefault.unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4293);
   }
   const tmp7 = callback(React.useState(hexToRgbResult), 2);
   dependencyMap = tmp7[1];
@@ -136,8 +136,8 @@ export const useDominantColorFromImage = function useDominantColorFromImage(arg0
     hexToRgbResult = store.get(arg0);
   }
   if (hexToRgbResult == null) {
-    hexToRgbResult = _require(4292).hexToRgb(ThemesDefault.unsafe_rawColors.PRIMARY_800);
-    const obj2 = _require(4292);
+    hexToRgbResult = _require(4293).hexToRgb(ThemesDefault.unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4293);
   }
   [tmp8, dependencyMap] = callback(React.useState(hexToRgbResult), 2);
   const items = [arg0];

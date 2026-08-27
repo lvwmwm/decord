@@ -1,15 +1,15 @@
-// Module ID: 11453
-// Function ID: 11454
+// Module ID: 11308
+// Function ID: 11309
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 4444, 712, 8445, 1955, 4411, 11454, 5532, 4440, 1236, 2]
+// Dependencies: [32, 19, 21, 4445, 712, 7960, 1955, 4412, 11309, 5537, 4441, 1236, 2]
 // Exports: default
 
-// Module 11453 (StringSelectComponentActionSheet)
+// Module 11308 (StringSelectComponentActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 createCacheKey = { selectionOptionItemWithDescription: { minHeight: 64 }, selectionOptionItemDescription: { marginTop: 2 }, emojiWrapper: null, textEmoji: null, fastImageEmoji: null };
@@ -31,7 +31,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8445);
+  let obj = selectionActionComponent(7960);
   let tmp3 = first(React.useState(new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId))), 2);
   first = tmp3[0];
   React = tmp3[1];
@@ -149,5 +149,5 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   };
   obj[12] = channelId;
   obj[13] = allowEmpty;
-  return tmp9(onSubmit(11454), obj);
+  return tmp9(onSubmit(11309), obj);
 };

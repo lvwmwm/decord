@@ -1,10 +1,10 @@
-// Module ID: 10421
-// Function ID: 10422
+// Module ID: 10872
+// Function ID: 10873
 // Name: parseReactionPermissions
 // Dependencies: [2]
 // Exports: default
 
-// Module 10421 (parseReactionPermissions)
+// Module 10872 (parseReactionPermissions)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/parseReactionPermissions.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 6413
-// Function ID: 6414
+// Module ID: 6419
+// Function ID: 6420
 // Name: DiscountsMegaphoneSpotIllustration
-// Dependencies: [21, 5440, 6414, 2]
+// Dependencies: [21, 5445, 6420, 2]
 // Exports: DiscountsMegaphoneSpotIllustration
 
-// Module 6413 (DiscountsMegaphoneSpotIllustration)
+// Module 6419 (DiscountsMegaphoneSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6414 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6420 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DiscountsMegaphoneSpotIllustration.native.tsx");

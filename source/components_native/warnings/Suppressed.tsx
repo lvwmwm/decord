@@ -1,13 +1,13 @@
-// Module ID: 16344
-// Function ID: 16345
+// Module ID: 16409
+// Function ID: 16410
 // Name: render
-// Dependencies: [19, 13292, 21, 16345, 1236, 16346, 16347, 4898, 2]
+// Dependencies: [19, 13319, 21, 16410, 1236, 16411, 16412, 4899, 2]
 
-// Module 16344 (render)
+// Module 16409 (render)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import registerAssetDefault from "registerAsset" /* 16346 */;
-import registerAssetDefault2 from "registerAsset" /* 16347 */;
-import closure_3 from "initialize" /* 13292 */;
+import registerAssetDefault from "registerAsset" /* 16411 */;
+import registerAssetDefault2 from "registerAsset" /* 16412 */;
+import closure_3 from "initialize" /* 13319 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -39,7 +39,7 @@ Suppressed.prototype["render"] = function render() {
     tmp6 = importDefault;
     tmp7 = registerAssetDefault2;
   }
-  return jsx(tmp6(4898), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
+  return jsx(tmp6(4899), { title: stringResult, body: stringResult1, iconSource: tmp7, onConfirm: this.close });
 };
 const result = require("set").fileFinishedImporting("components_native/warnings/Suppressed.tsx");
 

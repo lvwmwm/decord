@@ -1,10 +1,10 @@
-// Module ID: 9023
-// Function ID: 9024
+// Module ID: 8476
+// Function ID: 8477
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useIsProfileFramesEnabled
 
-// Module 9023 (apexExperiment)
+// Module 8476 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

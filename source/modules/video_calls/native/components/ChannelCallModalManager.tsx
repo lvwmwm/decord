@@ -1,12 +1,12 @@
-// Module ID: 10913
-// Function ID: 10914
+// Module ID: 9546
+// Function ID: 9547
 // Name: _initialize
-// Dependencies: [1922, 4463, 4626, 709, 4679, 2]
+// Dependencies: [1922, 4464, 4627, 709, 4680, 2]
 
-// Module 10913 (_initialize)
-import initializeDefault from "initialize" /* 4626 */;
+// Module 9546 (_initialize)
+import initializeDefault from "initialize" /* 4627 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import closure_4 from "updateVoiceState" /* 4463 */;
+import closure_4 from "updateVoiceState" /* 4464 */;
 
 let require = arg1;
 initializeDefault;

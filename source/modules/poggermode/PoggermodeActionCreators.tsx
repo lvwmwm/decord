@@ -1,15 +1,15 @@
-// Module ID: 7499
-// Function ID: 7500
+// Module ID: 7507
+// Function ID: 7508
 // Name: updatePoggermodeSettings
-// Dependencies: [1218, 7349, 7500, 709, 7502, 2]
+// Dependencies: [1218, 7356, 7508, 709, 7510, 2]
 // Exports: clearMessageCombo, updateCombo, updateComboOnMessageSend, updatePoggermodeSettings
 
-// Module 7499 (updatePoggermodeSettings)
+// Module 7507 (updatePoggermodeSettings)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getScreenshakeLocationNameDefault from "getScreenshakeLocationName" /* 7502 */;
+import getScreenshakeLocationNameDefault from "getScreenshakeLocationName" /* 7510 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "initialize" /* 7349 */;
-import closure_4 from "updateCombo" /* 7500 */;
+import closure_3 from "initialize" /* 7356 */;
+import closure_4 from "updateCombo" /* 7508 */;
 
 const result = require("set").fileFinishedImporting("modules/poggermode/PoggermodeActionCreators.tsx");
 
@@ -37,15 +37,15 @@ export const clearMessageCombo = function clearMessageCombo(arg0) {
   obj[1] = obj;
   obj.dispatch(obj);
 };
-export const updateComboOnMessageSend = function updateComboOnMessageSend(throwTypeErrorResult, id) {
+export const updateComboOnMessageSend = function updateComboOnMessageSend(closure_1_0, id) {
   id = id.getId();
-  const iter = userCombo.getUserCombo(id, throwTypeErrorResult);
+  const iter = userCombo.getUserCombo(id, closure_1_0);
   if (null != iter) {
     let obj = dispatcherDefault;
     obj = { type: "POGGERMODE_UPDATE_MESSAGE_COMBO", comboMessage: null };
     obj = { combo: null, channelId: null, messageId: null, displayed: false };
     obj[0] = iter;
-    obj[1] = throwTypeErrorResult;
+    obj[1] = closure_1_0;
     obj[2] = id;
     obj[1] = obj;
     obj.dispatch(obj);
@@ -68,5 +68,5 @@ export const updateComboOnMessageSend = function updateComboOnMessageSend(throwT
       num = num3 + 1;
     }
   }
-  dispatcherDefault.dispatch({ type: "POGGERMODE_UPDATE_COMBO", channelId: throwTypeErrorResult, userId: id, multiplier: num, value: 0 });
+  dispatcherDefault.dispatch({ type: "POGGERMODE_UPDATE_COMBO", channelId: closure_1_0, userId: id, multiplier: num, value: 0 });
 };

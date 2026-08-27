@@ -1,60 +1,20 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7462
+// Function ID: 7463
 // Name: items
-// Dependencies: [5, 7455, 7456, 7457, 7458, 7459, 7460, 7461, 7462, 7463, 7464, 7465, 7466, 7467, 7468, 7469, 7470, 7471, 7472, 7473, 7474, 7475, 7476, 7477, 7478, 7479, 7480, 7481, 7482, 7483, 7484, 7485, 7486, 7487, 7488, 7489, 7490, 7491, 2]
+// Dependencies: [5, 7463, 7464, 7465, 7466, 7467, 7468, 7469, 7470, 7471, 7472, 7473, 7474, 7475, 7476, 7477, 7478, 7479, 7480, 7481, 7482, 7483, 7484, 7485, 7486, 7487, 7488, 7489, 7490, 7491, 7492, 7493, 7494, 7495, 7496, 7497, 7498, 7499, 2]
 // Exports: getBurstAnimation
 
-// Module 7454 (items)
+// Module 7462 (items)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7455);
+    return callback(7463);
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return callback(7456);
-    }
-  },
-  {
-    load() {
-      return callback(7457);
-    }
-  },
-  {
-    load() {
-      return callback(7458);
-    }
-  },
-  {
-    load() {
-      return callback(7459);
-    }
-  },
-  {
-    load() {
-      return callback(7460);
-    }
-  },
-  {
-    load() {
-      return callback(7461);
-    }
-  },
-  {
-    load() {
-      return callback(7462);
-    }
-  },
-  {
-    load() {
-      return callback(7463);
-    }
-  },
   {
     load() {
       return callback(7464);
@@ -99,15 +59,12 @@ const items = [
     load() {
       return callback(7472);
     }
-  }
-];
-obj = {
-  load() {
-    return callback(7473);
-  }
-};
-const items1 = [
-  obj,
+  },
+  {
+    load() {
+      return callback(7473);
+    }
+  },
   {
     load() {
       return callback(7474);
@@ -142,12 +99,15 @@ const items1 = [
     load() {
       return callback(7480);
     }
-  },
-  {
-    load() {
-      return callback(7481);
-    }
-  },
+  }
+];
+obj = {
+  load() {
+    return callback(7481);
+  }
+};
+const items1 = [
+  obj,
   {
     load() {
       return callback(7482);
@@ -191,6 +151,46 @@ const items1 = [
   {
     load() {
       return callback(7490);
+    }
+  },
+  {
+    load() {
+      return callback(7491);
+    }
+  },
+  {
+    load() {
+      return callback(7492);
+    }
+  },
+  {
+    load() {
+      return callback(7493);
+    }
+  },
+  {
+    load() {
+      return callback(7494);
+    }
+  },
+  {
+    load() {
+      return callback(7495);
+    }
+  },
+  {
+    load() {
+      return callback(7496);
+    }
+  },
+  {
+    load() {
+      return callback(7497);
+    }
+  },
+  {
+    load() {
+      return callback(7498);
     }
   }
 ];

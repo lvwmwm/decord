@@ -1,13 +1,13 @@
-// Module ID: 4295
-// Function ID: 4296
+// Module ID: 4296
+// Function ID: 4297
 // Name: set
-// Dependencies: [505, 689, 4296, 2]
+// Dependencies: [505, 689, 4297, 2]
 // Exports: getDefaultGuildThemePresetSettings, getGuildThemePreset, getGuildThemePresetAppearance, getGuildThemeToneRange, getHueAdjustedColor, getLinearGradientForGuildThemePreset, getRandomSingleColorGuildTheme, getSaturationPinnedColor, getSingleColorGuildThemeGradientColors, getThemeAdjustedToneColor, getToneAdjustedColor
 
-// Module 4295 (set)
+// Module 4296 (set)
 import sum from "sum" /* 505 */;
 import nDefault from "n" /* 689 */;
-import items21 from "items" /* 4296 */;
+import items21 from "items" /* 4297 */;
 import set from "set" /* 2 */;
 
 const ThemeTypes = sum.ThemeTypes;
@@ -60,7 +60,7 @@ export const getGuildThemePreset = function getGuildThemePreset(presetId) {
   return tmp;
 };
 export const getDefaultGuildThemePresetSettings = function getDefaultGuildThemePresetSettings() {
-  return { presetId: mapped[0].id, customUserThemeSettings: "a" };
+  return { presetId: mapped[0].id, customUserThemeSettings: "r" };
 };
 export const getGuildThemePresetAppearance = function getGuildThemePresetAppearance(preset, arg1) {
   return arg1 === ThemeTypes.LIGHT ? preset.lightAppearance : preset.darkAppearance;

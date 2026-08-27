@@ -1,21 +1,21 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16109
+// Function ID: 16110
 // Name: VibegrationsSettingsSheet
-// Dependencies: [5, 32, 19, 17, 16022, 16025, 16023, 21, 4444, 712, 5541, 589, 1236, 3469, 9171, 12815, 4411, 8203, 8202, 8673, 8002, 4440, 4879, 5936, 5568, 9357, 2]
+// Dependencies: [5, 32, 19, 17, 16087, 16090, 16088, 21, 4445, 712, 5546, 589, 1236, 3469, 9181, 12834, 4412, 7625, 7626, 7616, 7638, 4441, 4880, 5941, 5573, 9683, 2]
 // Exports: default
 
-// Module 16044 (VibegrationsSettingsSheet)
+// Module 16109 (VibegrationsSettingsSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "newMessage" /* 16022 */;
-import rejectPendingPublish from "rejectPendingPublish" /* 16025 */;
-import closure_11 from "rejectPendingPublish" /* 16025 */;
-import closure_12 from "isProjectOwner" /* 16023 */;
+import closure_7 from "newMessage" /* 16087 */;
+import rejectPendingPublish from "rejectPendingPublish" /* 16090 */;
+import closure_11 from "rejectPendingPublish" /* 16090 */;
+import closure_12 from "isProjectOwner" /* 16088 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ requestProjectRebuild: closure_8, sendUserMessage: c9, submitProjectSettings: c10 } = rejectPendingPublish);
@@ -262,7 +262,7 @@ export default function VibegrationsSettingsSheet(projectId) {
     obj[9] = first2;
     tmp12Result = memo(projectId(closure_2[20]).TextInput, obj, value.name);
   }
-  let tmp3 = map(notifyAgent(5541)({ includeKeyboardHeight: true }).insets.bottom);
+  let tmp3 = map(notifyAgent(5546)({ includeKeyboardHeight: true }).insets.bottom);
   dependencyMap = tmp3;
   let obj = projectId(589);
   let items = [closure_11];
@@ -375,7 +375,7 @@ export default function VibegrationsSettingsSheet(projectId) {
     return items;
   }, items4);
   let someResult = found1.some((arg0) => map.has(arg0));
-  const segmentedControlState = projectId(9171).useSegmentedControlState({ items: memo3, pageWidth: tmp24, defaultIndex: num, onSetActiveIndex: tmp22 });
+  const segmentedControlState = projectId(9181).useSegmentedControlState({ items: memo3, pageWidth: tmp24, defaultIndex: num, onSetActiveIndex: tmp22 });
   if (tmp19) {
     let tmp28 = 1 === tmp21;
   } else {
@@ -566,7 +566,7 @@ export default function VibegrationsSettingsSheet(projectId) {
   obj = { title: null };
   let intl = tmp4(1236).intl;
   obj[0] = intl.string(notifyAgent(3469).gTMvzD);
-  obj[1] = memo(projectId(5568).BottomSheetTitleHeader, obj);
+  obj[1] = memo(projectId(5573).BottomSheetTitleHeader, obj);
   obj1 = { style: tmp3.container, children: null };
   let tmp32Result = null;
   if (null != note) {
@@ -574,7 +574,7 @@ export default function VibegrationsSettingsSheet(projectId) {
     if ("" !== note) {
       let obj2 = { variant: "text-sm/normal", color: "text-default", children: null };
       obj2[2] = note;
-      tmp32Result = tmp32(tmp4(4440).Text, obj2);
+      tmp32Result = tmp32(tmp4(4441).Text, obj2);
     }
   }
   const items7 = [tmp32Result, , , , ];
@@ -585,7 +585,7 @@ export default function VibegrationsSettingsSheet(projectId) {
       let obj3 = { variant: "text-sm/normal", color: "text-muted", children: null };
       let intl2 = tmp4(1236).intl;
       obj3[2] = intl2.string(tmp(3469).URnN4B);
-      tmp32Result = tmp32(tmp4(4440).Text, obj3);
+      tmp32Result = tmp32(tmp4(4441).Text, obj3);
     }
   }
   items7[1] = tmp32Result;
@@ -597,7 +597,7 @@ export default function VibegrationsSettingsSheet(projectId) {
       const obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
       const intl4 = tmp4(1236).intl;
       obj5[2] = intl4.string(tmp(3469)["Hl+eu7"]);
-      tmp32Result1 = tmp32(tmp4(4440).Text, obj5);
+      tmp32Result1 = tmp32(tmp4(4441).Text, obj5);
     }
     const items8 = [
       tmp32Result1,
@@ -625,7 +625,7 @@ export default function VibegrationsSettingsSheet(projectId) {
       obj6[0] = callback;
       const obj7 = { state: null };
       obj7[0] = segmentedControlState;
-      obj6[1] = tmp32(tmp4(9357).SegmentedControl, obj7);
+      obj6[1] = tmp32(tmp4(9683).SegmentedControl, obj7);
       tmp32Result2 = tmp32(tmp34, obj6);
     }
     const items9 = [tmp32Result2, ];
@@ -635,7 +635,7 @@ export default function VibegrationsSettingsSheet(projectId) {
       const obj9 = { variant: "text-xs/normal", color: "text-muted", children: null };
       let intl3 = tmp4(1236).intl;
       obj9[2] = intl3.string(tmp(3469)["Hl+eu7"]);
-      const items10 = [tmp32(tmp4(4440).Text, obj9), memo2.map(renderSecret)];
+      const items10 = [tmp32(tmp4(4441).Text, obj9), memo2.map(renderSecret)];
       obj8[1] = items10;
       tmp33Result = tmp33(tmp34, obj8);
     } else {
@@ -654,7 +654,7 @@ export default function VibegrationsSettingsSheet(projectId) {
     const obj11 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
     const intl5 = tmp4(1236).intl;
     obj11[2] = intl5.string(tmp(3469).n02OEo);
-    tmp32Result3 = tmp32(tmp4(4440).Text, obj11);
+    tmp32Result3 = tmp32(tmp4(4441).Text, obj11);
   }
   items7[3] = tmp32Result3;
   const obj12 = { text: null, variant: "primary", loading: null, disabled: null, onPress: null };
@@ -663,9 +663,9 @@ export default function VibegrationsSettingsSheet(projectId) {
   obj12[2] = first2;
   obj12[3] = !(null != memo4.values || null != memo4.secrets);
   obj12[4] = callback1;
-  items7[4] = memo(projectId(4879).Button, obj12);
+  items7[4] = memo(projectId(4880).Button, obj12);
   obj1[1] = items7;
   obj[2] = memo1(first1, obj1);
-  return memo(projectId(5936).ActionSheet, obj);
+  return memo(projectId(5941).ActionSheet, obj);
 };
 export const VIBEGRATIONS_SETTINGS_SHEET_KEY = "VibegrationsSettingsSheet";

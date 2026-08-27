@@ -1,12 +1,12 @@
-// Module ID: 16727
-// Function ID: 16728
+// Module ID: 16793
+// Function ID: 16794
 // Name: AcceptInviteModal
-// Dependencies: [19, 8730, 21, 503, 4429, 12344, 9548, 5955, 2]
+// Dependencies: [19, 7686, 21, 503, 4430, 12168, 8787, 5960, 2]
 // Exports: default
 
-// Module 16727 (AcceptInviteModal)
+// Module 16793 (AcceptInviteModal)
 import closure_3 from "noop" /* 19 */;
-import { CreateGuildModalStates } from "NUXGuildTemplatesAnalytics" /* 8730 */;
+import { CreateGuildModalStates } from "NUXGuildTemplatesAnalytics" /* 7686 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -18,7 +18,7 @@ export default function AcceptInviteModal(arg0) {
 
   }, []);
   const items = [arg0];
-  return jsx(_require(5955).Navigator, {
+  return jsx(_require(5960).Navigator, {
     screens: React.useMemo(() => {
       let obj = {};
       obj = { fullscreen: true, headerShown: false, impressionName: lib(closure_1_2[3]).ImpressionNames.INVITE_ACCEPT, impressionProperties: null, render: null };

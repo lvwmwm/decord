@@ -1,10 +1,10 @@
-// Module ID: 7146
-// Function ID: 7147
+// Module ID: 7152
+// Function ID: 7153
 // Name: create
 // Dependencies: [12, 2]
 // Exports: getRTCTotalBytes
 
-// Module 7146 (create)
+// Module 7152 (create)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12126
-// Function ID: 12127
+// Module ID: 11972
+// Function ID: 11973
 // Name: getExpiringGuildEntitlements
 // Dependencies: [2]
 // Exports: getExpiringGuildEntitlements
 
-// Module 12126 (getExpiringGuildEntitlements)
+// Module 11972 (getExpiringGuildEntitlements)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/premium/powerups/utils/getExpiringGuildEntitlements.tsx");

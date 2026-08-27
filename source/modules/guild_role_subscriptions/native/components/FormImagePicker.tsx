@@ -1,18 +1,18 @@
-// Module ID: 17161
-// Function ID: 17162
+// Module ID: 17227
+// Function ID: 17228
 // Name: pickImage
-// Dependencies: [5, 19, 17, 21, 4444, 712, 5029, 1469, 9272, 1236, 5440, 17162, 9889, 4440, 4879, 2]
+// Dependencies: [5, 19, 17, 21, 4445, 712, 5034, 1469, 8988, 1236, 5445, 17228, 10246, 4441, 4880, 2]
 // Exports: default
 
-// Module 17161 (pickImage)
+// Module 17227 (pickImage)
 import ThemesDefault from "Themes" /* 712 */;
-import preloadDefault from "preload" /* 5440 */;
-import renderDefault from "render" /* 9272 */;
+import preloadDefault from "preload" /* 5445 */;
+import renderDefault from "render" /* 8988 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function pickImage() {
@@ -239,8 +239,8 @@ export default function FormImagePicker(children) {
   obj = { style: tmp2.buttonColumn, children: null };
   obj = { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: children.description };
   const items = [
-    callback2(tmp6(4440).Text, obj),
-    callback2(tmp6(4879).Button, {
+    callback2(tmp6(4441).Text, obj),
+    callback2(tmp6(4880).Button, {
       text: stringResult,
       variant: "secondary",
       onPress() {

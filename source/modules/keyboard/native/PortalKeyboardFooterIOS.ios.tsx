@@ -1,14 +1,14 @@
-// Module ID: 8888
-// Function ID: 8889
+// Module ID: 9045
+// Function ID: 9046
 // Name: PortalKeyboardFooterIOS
-// Dependencies: [19, 21, 4444, 712, 1629, 1643, 4308, 4184, 1627, 691, 4313, 2]
+// Dependencies: [19, 21, 4445, 712, 1629, 1643, 4309, 4185, 1627, 691, 4314, 2]
 // Exports: default
 
-// Module 8888 (PortalKeyboardFooterIOS)
+// Module 9045 (PortalKeyboardFooterIOS)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 createCacheKey = { keyboardStickyFooter: null };
@@ -41,8 +41,8 @@ export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
   const reanimatedKeyboardAnimation = obj.useReanimatedKeyboardAnimation();
   height = reanimatedKeyboardAnimation.height;
   progress = reanimatedKeyboardAnimation.progress;
-  keyboardTypeSharedValue = animatedSheetIndex(4308).useKeyboardTypeSharedValue();
-  const obj2 = animatedSheetIndex(4308);
+  keyboardTypeSharedValue = animatedSheetIndex(4309).useKeyboardTypeSharedValue();
+  const obj2 = animatedSheetIndex(4309);
   class S {
     constructor() {
       tmp = animatedSheetIndex;
@@ -81,16 +81,16 @@ export default function PortalKeyboardFooterIOS(animatedSheetIndex) {
       return;
     }
   }
-  obj = { interpolate: animatedSheetIndex(4184).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1627).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(691).EXPRESSION_FOOTER_HEIGHT };
+  obj = { interpolate: animatedSheetIndex(4185).interpolate, progress, bottom, followSystemKeyboard: flag, keyboardType: keyboardTypeSharedValue, KeyboardTypes: animatedSheetIndex(1627).KeyboardTypes, animatedSheetIndex, height, EXPRESSION_FOOTER_HEIGHT: animatedSheetIndex(691).EXPRESSION_FOOTER_HEIGHT };
   S.__closure = obj;
   S.__workletHash = 9444646970651;
   S.__initData = keyboardTypeSharedValue;
-  animatedStyle = animatedSheetIndex(4184).useAnimatedStyle(S);
+  animatedStyle = animatedSheetIndex(4185).useAnimatedStyle(S);
   let items = [animatedStyle, tmp];
   const memo = bottom.useMemo(() => {
     const items = [keyboardStickyFooter.keyboardStickyFooter, animatedStyle];
     return items;
   }, items);
-  obj = { style: memo, children: height(animatedSheetIndex(4313).PortalHost, { name: str }) };
-  return height(flag(4184).View, obj);
+  obj = { style: memo, children: height(animatedSheetIndex(4314).PortalHost, { name: str }) };
+  return height(flag(4185).View, obj);
 };

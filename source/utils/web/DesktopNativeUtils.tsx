@@ -1,16 +1,16 @@
-// Module ID: 5523
-// Function ID: 5524
+// Module ID: 5528
+// Function ID: 5529
 // Name: sanitizeFilename
-// Dependencies: [32, 5, 676, 38, 4375, 500, 595, 5524, 4482, 4, 5525, 5526, 1487, 530, 4509, 2]
+// Dependencies: [32, 5, 676, 38, 4376, 500, 595, 5529, 4483, 4, 5530, 5531, 1487, 530, 4510, 2]
 
-// Module 5523 (sanitizeFilename)
+// Module 5528 (sanitizeFilename)
 import log from "log" /* 4 */;
 import Storage3 from "Storage" /* 595 */;
-import GuildThemeSourcePreference from "GuildThemeSourcePreference" /* 4375 */;
-import GameTheme from "GameTheme" /* 4482 */;
-import DomainMigrationEventType from "DomainMigrationEventType" /* 5524 */;
-import IPCEvents from "IPCEvents" /* 5525 */;
-import getExtensionFromContentType from "getExtensionFromContentType" /* 5526 */;
+import GuildThemeSourcePreference from "GuildThemeSourcePreference" /* 4376 */;
+import GameTheme from "GameTheme" /* 4483 */;
+import DomainMigrationEventType from "DomainMigrationEventType" /* 5529 */;
+import IPCEvents from "IPCEvents" /* 5530 */;
+import getExtensionFromContentType from "getExtensionFromContentType" /* 5531 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { NativeFeatures } from "ME" /* 676 */;
@@ -623,7 +623,7 @@ obj.setBadge = function setBadge(arg0) {
     let tmpResult = tmp(500);
     if ("win32" === tmpResult.getPlatformName()) {
       const self = this;
-      this.sendIPC(tmp(5525).IPCEvents.APP_BADGE_SET, arg0);
+      this.sendIPC(tmp(5530).IPCEvents.APP_BADGE_SET, arg0);
     } else {
       tmpResult = tmp(500);
       if ("linux" === tmpResult.getPlatformName()) {
@@ -948,7 +948,7 @@ obj.copyImageBlob = function copyImageBlob(arg0, arg1) {
 obj.canSaveImage = function canSaveImage(closure_1_0, closure_1_1) {
   if (null != closure_1_0) {
     if (require(500) /* set */.isPlatformEmbedded) {
-      const decideFileExtensionResult = tmp(5526).decideFileExtension(closure_1_0, closure_1_1);
+      const decideFileExtensionResult = tmp(5531).decideFileExtension(closure_1_0, closure_1_1);
       let hasItem = null == decideFileExtensionResult;
       if (!hasItem) {
         hasItem = set2.has(decideFileExtensionResult);
@@ -1728,7 +1728,7 @@ obj.setTrafficLightPosition = function setTrafficLightPosition(arg0) {
     if ("darwin" === tmpResult.getPlatformName()) {
       try {
         const self = this;
-        this.sendIPC(tmp(5525).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
+        this.sendIPC(tmp(5530).IPCEvents.WINDOW_SET_TRAFFIC_LIGHT_POSITION, arg0);
       } catch (err) {
       }
     }

@@ -1,12 +1,12 @@
-// Module ID: 13732
-// Function ID: 13733
+// Module ID: 13759
+// Function ID: 13760
 // Name: NormalTelemetryImpl
-// Dependencies: [13727, 13728, 2]
+// Dependencies: [13754, 13755, 2]
 
-// Module 13732 (NormalTelemetryImpl)
-import TelemetryChannel from "TelemetryChannel" /* 13728 */;
-import importDefaultResult from "append" /* 13727 */;
-import importDefaultResult1 from "TelemetryChannel" /* 13728 */;
+// Module 13759 (NormalTelemetryImpl)
+import TelemetryChannel from "TelemetryChannel" /* 13755 */;
+import importDefaultResult from "append" /* 13754 */;
+import importDefaultResult1 from "TelemetryChannel" /* 13755 */;
 
 require = arg1;
 class NormalTelemetryImpl extends tmp3 {

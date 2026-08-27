@@ -1,33 +1,33 @@
-// Module ID: 11811
-// Function ID: 11812
+// Module ID: 11640
+// Function ID: 11641
 // Name: AppLauncherCommandViewFooter
-// Dependencies: [5, 32, 19, 17, 4436, 8561, 1985, 1499, 676, 1624, 21, 4444, 712, 11812, 589, 4184, 4445, 4448, 4412, 4891, 4292, 4880, 1236, 4389, 9766, 4652, 5541, 11813, 7195, 9068, 11707, 705, 11688, 11815, 1955, 8560, 11636, 10775, 1494, 10467, 10226, 11816, 10227, 5029, 1892, 5020, 11817, 9767, 5571, 4440, 11818, 11819, 11847, 1297, 38, 11786, 9755, 7193, 8566, 9756, 11848, 11849, 11771, 11772, 2]
+// Dependencies: [5, 32, 19, 17, 4437, 8078, 1985, 1499, 676, 1624, 21, 4445, 712, 11641, 589, 4185, 4446, 4449, 4413, 4892, 4293, 4881, 1236, 4390, 8971, 4653, 5546, 11642, 7201, 8508, 11540, 705, 11521, 11644, 1955, 8077, 11487, 9398, 1494, 10913, 10347, 11645, 10348, 5034, 1892, 5025, 11646, 8367, 5576, 4441, 11647, 11648, 11676, 1297, 38, 11617, 8375, 7199, 8083, 8362, 11677, 11678, 11603, 11604, 2]
 // Exports: default
 
-// Module 11811 (AppLauncherCommandViewFooter)
+// Module 11640 (AppLauncherCommandViewFooter)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4440 */;
-import CollapsingText from "CollapsingText" /* 4880 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9767 */;
-import handleApplicationSelected from "handleApplicationSelected" /* 11707 */;
-import registerAssetDefault from "registerAsset" /* 11771 */;
-import registerAssetDefault2 from "registerAsset" /* 11772 */;
-import registerAssetDefault3 from "registerAsset" /* 11848 */;
-import registerAssetDefault4 from "registerAsset" /* 11849 */;
+import Text from "Text" /* 4441 */;
+import CollapsingText from "CollapsingText" /* 4881 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8367 */;
+import handleApplicationSelected from "handleApplicationSelected" /* 11540 */;
+import registerAssetDefault from "registerAsset" /* 11603 */;
+import registerAssetDefault2 from "registerAsset" /* 11604 */;
+import registerAssetDefault3 from "registerAsset" /* 11677 */;
+import registerAssetDefault4 from "registerAsset" /* 11678 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
-import getIndexKey from "getIndexKey" /* 8561 */;
+import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import getIndexKey from "getIndexKey" /* 8078 */;
 import closure_13 from "createGuildRoleRecordFromRust" /* 1985 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
 import ME from "ME" /* 676 */;
 import { MediaKeyboardTarget } from "DRAG_HANDLE" /* 1624 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function AppLauncherCommandViewFooter(arg0) {
@@ -55,8 +55,8 @@ function AppLauncherCommandViewFooter(arg0) {
       obj1 = { translateX: null };
       const obj9 = closure_1_0(stateFromStores[16]);
       const fn = function e() {
-        const obj = callback(4184);
-        return callback(4184).runOnJS(callback(4412).triggerHapticFeedback)(callback(4412).HapticFeedbackTypes.IMPACT_LIGHT);
+        const obj = callback(4185);
+        return callback(4185).runOnJS(callback(4413).triggerHapticFeedback)(callback(4413).HapticFeedbackTypes.IMPACT_LIGHT);
       };
       const obj2 = { runOnJS: null, triggerHapticFeedback: null, HapticFeedbackTypes: null };
       obj2[0] = closure_1_0(stateFromStores[15]).runOnJS;

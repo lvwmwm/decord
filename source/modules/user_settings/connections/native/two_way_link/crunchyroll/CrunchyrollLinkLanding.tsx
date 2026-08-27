@@ -1,17 +1,17 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 9263
+// Function ID: 9264
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 10712, 676, 21, 4444, 1236, 9070, 1500, 10639, 10714, 1995, 2]
+// Dependencies: [19, 9262, 676, 21, 4445, 1236, 8510, 1500, 9226, 9264, 1995, 2]
 // Exports: default
 
-// Module 10713 (CrunchyrollLinkLanding)
+// Module 9263 (CrunchyrollLinkLanding)
 import combinedDefault from "combined" /* 1995 */;
-import registerAssetDefault from "registerAsset" /* 10714 */;
+import registerAssetDefault from "registerAsset" /* 9264 */;
 import closure_3 from "noop" /* 19 */;
-import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes" /* 10712 */;
+import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes" /* 9262 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ HelpdeskArticles: c5, PlatformTypes: closure_6 } = ME);
@@ -26,7 +26,7 @@ export default function CrunchyrollLinkLanding() {
     const obj = { label: null, icon: null };
     const intl = navigation(1236).intl;
     obj[0] = intl.string(navigation(1236).t["2TXHQd"]);
-    obj[1] = navigation(9070).PlayIcon;
+    obj[1] = navigation(8510).PlayIcon;
     const items = [obj];
     return items;
   }, []);
@@ -42,5 +42,5 @@ export default function CrunchyrollLinkLanding() {
   obj[5] = combinedDefault.getArticleURL(constants.CRUNCHYROLL_CONNECTION);
   obj[6] = callback;
   obj[7] = memo;
-  return jsx(navigation(10639).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: registerAssetDefault, imgStyle: callback().image, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null });
+  return jsx(navigation(9226).TwoWayLinkLanding, { platformType: constants2.CRUNCHYROLL, img: registerAssetDefault, imgStyle: callback().image, headerConnect: null, body: null, learnMoreLink: null, onNext: null, valueProps: null });
 };

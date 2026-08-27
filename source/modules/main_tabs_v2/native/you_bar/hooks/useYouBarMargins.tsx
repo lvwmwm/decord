@@ -1,15 +1,15 @@
-// Module ID: 14620
-// Function ID: 14621
+// Module ID: 14647
+// Function ID: 14648
 // Name: useYouBarHorizontalMargin
-// Dependencies: [14621, 1629, 501, 1367, 4165, 712, 2]
+// Dependencies: [14648, 1629, 501, 1367, 4165, 712, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 14620 (useYouBarHorizontalMargin)
+// Module 14647 (useYouBarHorizontalMargin)
 import set from "set" /* 2 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import map from "map" /* 4165 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14621 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14648 */;
 
 ({ YOU_BAR_MARGIN_IOS: c3, YOU_BAR_MARGIN: c4, YOU_BAR_FLOATING_OFFSET_MINIMUM: c5 } = CONNECTION_BANNER_HEIGHT);
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarMargins.tsx");

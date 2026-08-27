@@ -1,14 +1,14 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9126
+// Function ID: 9127
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [19, 676, 4444, 712, 8756, 2]
+// Dependencies: [19, 676, 4445, 712, 7718, 2]
 // Exports: default
 
-// Module 8986 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 9126 (useExpressionPickerCategoriesPlaceholderConfig)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "noop" /* 19 */;
 import { CATEGORY_ICON_SIZE } from "ME" /* 676 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 createCacheKey = { placeholder: null };

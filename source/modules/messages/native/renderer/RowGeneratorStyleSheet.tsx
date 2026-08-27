@@ -1,10 +1,10 @@
-// Module ID: 8263
-// Function ID: 8264
+// Module ID: 7778
+// Function ID: 7779
 // Name: processColorOrThrow
 // Dependencies: [17, 2]
 // Exports: processColorOrThrow
 
-// Module 8263 (processColorOrThrow)
+// Module 7778 (processColorOrThrow)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

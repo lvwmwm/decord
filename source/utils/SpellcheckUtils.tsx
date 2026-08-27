@@ -1,10 +1,10 @@
-// Module ID: 5515
-// Function ID: 5516
+// Module ID: 5520
+// Function ID: 5521
 // Name: _setEnabled
-// Dependencies: [5, 5516, 4072, 500, 5518, 2]
+// Dependencies: [5, 5521, 4072, 500, 5523, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5515 (_setEnabled)
+// Module 5520 (_setEnabled)
 import set2 from "set" /* 500 */;
 import setDefault from "set" /* 4072 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;

@@ -1,16 +1,16 @@
-// Module ID: 8514
-// Function ID: 8515
+// Module ID: 8030
+// Function ID: 8031
 // Name: SolidCutout
-// Dependencies: [19, 17, 21, 8515, 8517, 4184, 2]
+// Dependencies: [19, 17, 21, 8031, 8033, 4185, 2]
 // Exports: default
 
-// Module 8514 (SolidCutout)
+// Module 8030 (SolidCutout)
 import noopAll from "noop" /* 19 */;
-import useCutoutBackgroundColor from "useCutoutBackgroundColor" /* 8515 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8517 */;
+import useCutoutBackgroundColor from "useCutoutBackgroundColor" /* 8031 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8033 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4184" /* 4184 */;
+import importDefaultResult from "module_4185" /* 4185 */;
 
 require = arg1;
 function SolidCutout(arg0) {

@@ -1,12 +1,12 @@
-// Module ID: 12084
-// Function ID: 12085
-// Dependencies: [19, 12085, 21, 12081, 12086, 1236, 2]
+// Module ID: 11930
+// Function ID: 11931
+// Dependencies: [19, 11931, 21, 11927, 11932, 1236, 2]
 
-// Module 12084
+// Module 11930
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12081 */;
-import ChatWarningIcon from "ChatWarningIcon" /* 12086 */;
-import { QUARANTINE_APPEAL_LINK } from "QUARANTINE_APPEAL_LINK" /* 12085 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 11927 */;
+import ChatWarningIcon from "ChatWarningIcon" /* 11932 */;
+import { QUARANTINE_APPEAL_LINK } from "QUARANTINE_APPEAL_LINK" /* 11931 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

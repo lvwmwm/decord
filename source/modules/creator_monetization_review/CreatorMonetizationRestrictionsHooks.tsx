@@ -1,11 +1,11 @@
-// Module ID: 6046
-// Function ID: 6047
+// Module ID: 6052
+// Function ID: 6053
 // Name: useShouldHideGuildPurchaseEntryPoints
-// Dependencies: [19, 4083, 1910, 676, 6047, 6048, 589, 4082, 2]
+// Dependencies: [19, 4083, 1910, 676, 6053, 6054, 589, 4082, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 6046 (useShouldHideGuildPurchaseEntryPoints)
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6047 */;
+// Module 6052 (useShouldHideGuildPurchaseEntryPoints)
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 6053 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "makeGroupListingIndexSubscriptionListingTag" /* 4083 */;
 import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4083 */;

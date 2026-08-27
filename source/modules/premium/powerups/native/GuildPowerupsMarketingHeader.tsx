@@ -1,20 +1,20 @@
-// Module ID: 13125
-// Function ID: 13126
+// Module ID: 13148
+// Function ID: 13149
 // Name: PerkText
-// Dependencies: [19, 17, 4330, 21, 4444, 712, 689, 4440, 13126, 12121, 12146, 1236, 2401, 13127, 2]
+// Dependencies: [19, 17, 4331, 21, 4445, 712, 689, 4441, 13149, 11967, 11992, 1236, 2401, 13150, 2]
 // Exports: default
 
-// Module 13125 (PerkText)
+// Module 13148 (PerkText)
 import nDefault from "n" /* 689 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4440 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 12146 */;
-import setDefault from "set" /* 13126 */;
+import Text from "Text" /* 4441 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 11992 */;
+import setDefault from "set" /* 13149 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "calculateAppliedBoosts" /* 4330 */;
+import closure_5 from "calculateAppliedBoosts" /* 4331 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function PerkText(children) {
@@ -63,7 +63,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       if (null != arr) {
         str2 = "";
         if (0 !== arr.length) {
-          let first = tmp2(13127)(arr);
+          let first = tmp2(13150)(arr);
           if (1 === first.length) {
             obj = { powerup: null };
             first = first[0];
@@ -85,7 +85,7 @@ export default function GuildPowerupsMarketingHeader(guild) {
       const obj4 = { perks: null };
       obj4[0] = str2;
       obj[2] = intl.format(tmp2(2401)["7lwpzR"], obj4);
-      obj[1] = jsx(guild(4440).Text, { style: null, variant: "text-sm/semibold", children: null });
+      obj[1] = jsx(guild(4441).Text, { style: null, variant: "text-sm/semibold", children: null });
       return <View style={null} variant="text-sm/semibold">{null}</View>;
     }
   }

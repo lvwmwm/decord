@@ -1,9 +1,9 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 15973
+// Function ID: 15974
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15908 (metadata)
+// Module 15973 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/icymi/header-image-light-3x.png.js");

@@ -1,27 +1,27 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11122
+// Function ID: 11123
 // Name: getCommandOptionComponents
-// Dependencies: [19, 17, 1391, 1985, 1910, 4687, 4098, 1922, 8561, 4903, 676, 1499, 4904, 21, 4444, 712, 1955, 1297, 4411, 8998, 4288, 4440, 4638, 1236, 5900, 589, 5440, 1438, 5548, 500, 11242, 4161, 5546, 1627, 7195, 4877, 5939, 5920, 8443, 5569, 2]
+// Dependencies: [19, 17, 1391, 1985, 1910, 4688, 4098, 1922, 8078, 4904, 676, 1499, 4905, 21, 4445, 712, 1955, 1297, 4412, 8819, 4289, 4441, 4639, 1236, 5905, 589, 5445, 1438, 5553, 500, 11123, 4161, 5551, 1627, 7201, 4878, 5944, 5925, 7958, 5574, 2]
 // Exports: default
 
-// Module 11241 (getCommandOptionComponents)
+// Module 11122 (getCommandOptionComponents)
 import ThemesDefault from "Themes" /* 712 */;
-import nameFromUserDefault from "nameFromUser" /* 4288 */;
+import nameFromUserDefault from "nameFromUser" /* 4289 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "reinjectEphemerals" /* 4687 */;
+import closure_10 from "reinjectEphemerals" /* 4688 */;
 import closure_11 from "markAllUserIdListsStale" /* 4098 */;
 import closure_12 from "mergeGuildAvatar" /* 1922 */;
-import closure_13 from "getIndexKey" /* 8561 */;
-import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 4903 */;
+import closure_13 from "getIndexKey" /* 8078 */;
+import { SUB_COMMAND_KEY_SEPARATOR } from "TRUE_OPTION_NAME" /* 4904 */;
 import ME from "ME" /* 676 */;
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
-import regExp from "regExp" /* 4904 */;
+import regExp from "regExp" /* 4905 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function getCommandOptionComponents(option) {
@@ -86,11 +86,11 @@ function getCommandOptionComponents(option) {
           if (null != channel) {
             let obj = { style: null, children: null };
             obj[0] = styles.commandOptionMentionText;
-            const items1 = [closure_18, tmp6(4638).computeChannelName(channel, authStore, closure_11)];
+            const items1 = [closure_18, tmp6(4639).computeChannelName(channel, authStore, closure_11)];
             obj[1] = items1;
             const _HermesInternal3 = HermesInternal;
             userComponent = callback2(tmp6(1297).LegacyText, obj, "optionValue-" + iter.name);
-            const tmp6Result = tmp6(4638);
+            const tmp6Result = tmp6(4639);
           }
           const str3 = iter.value;
         } else {
@@ -242,8 +242,8 @@ function getCommandCopyText(item10118, arg1, id, name_localized) {
           const channel = store.getChannel(item10118.value.toString());
           sum = null;
           if (null != channel) {
-            sum = closure_18 + tmp5(4638).computeChannelName(channel, authStore, closure_11);
-            const tmp5Result = tmp5(4638);
+            sum = closure_18 + tmp5(4639).computeChannelName(channel, authStore, closure_11);
+            const tmp5Result = tmp5(4639);
           }
           const str4 = item10118.value;
         } else if (tmp5(1955).ApplicationCommandOptionType.ROLE === type) {
@@ -671,7 +671,7 @@ export default function ExecutedCommandPopout(channelId) {
       const obj = stateFromStores(closure_1_3[38]);
     }
   }, items1);
-  obj = { value: messageId(5900)(messageId(5920).EXECUTED_COMMAND).analyticsLocations, children: null };
+  obj = { value: messageId(5905)(messageId(5925).EXECUTED_COMMAND).analyticsLocations, children: null };
   obj = { startExpanded: true, bodyStyles: tmp.container, children: null };
   let interactionData1;
   if (stateFromStores != null) {
@@ -714,6 +714,6 @@ export default function ExecutedCommandPopout(channelId) {
     tmp9Result = tmp9(closure_5, obj4);
   }
   obj[2] = tmp9Result;
-  obj[1] = closure_21(channelId(5569).BottomSheet, obj);
-  return closure_21(channelId(5900).AnalyticsLocationProvider, obj);
+  obj[1] = closure_21(channelId(5574).BottomSheet, obj);
+  return closure_21(channelId(5905).AnalyticsLocationProvider, obj);
 };

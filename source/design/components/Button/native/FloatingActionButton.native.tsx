@@ -1,15 +1,15 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 8913
+// Function ID: 8914
 // Name: styles
-// Dependencies: [19, 21, 4444, 712, 4884, 1367, 4184, 4878, 7964, 2]
+// Dependencies: [19, 21, 4445, 712, 4885, 1367, 4185, 4879, 7939, 2]
 // Exports: FloatingActionButton
 
-// Module 8885 (styles)
+// Module 8913 (styles)
 import ThemesDefault from "Themes" /* 712 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4884 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4885 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 const styles = createCacheKey.createStyles(() => {
@@ -43,7 +43,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   ({ icon, positionBottom } = positionRight);
   positionRight = positionRight.positionRight;
   const merged = Object.assign(positionRight, Object.create(null));
-  let obj = positionBottom(4184);
+  let obj = positionBottom(4185);
   class F {
     constructor() {
       tmp = positionBottom;
@@ -64,7 +64,7 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
       return obj;
     }
   }
-  obj = { withSpring: positionBottom(4878).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
+  obj = { withSpring: positionBottom(4879).withSpring, positionBottom, DEFAULT_POSITION_OFFSET: 16, SPRING_CONFIG: closure_6, positionRight };
   F.__closure = obj;
   F.__workletHash = 10762818944671;
   F.__initData = closure_7;
@@ -83,6 +83,6 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   }
   obj1.icon = cloneElementResult;
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = styles(positionRight(1367)("FloatingActionButton")));
-  obj[1] = jsx(positionBottom(7964).BaseIconButton, {});
-  return jsx(positionRight(4184).View, { style: animatedStyle, children: null });
+  obj[1] = jsx(positionBottom(7939).BaseIconButton, {});
+  return jsx(positionRight(4185).View, { style: animatedStyle, children: null });
 };

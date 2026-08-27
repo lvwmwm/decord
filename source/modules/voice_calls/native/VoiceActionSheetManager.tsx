@@ -1,12 +1,12 @@
-// Module ID: 13307
-// Function ID: 13308
+// Module ID: 13334
+// Function ID: 13335
 // Name: _initialize
-// Dependencies: [4495, 4463, 4626, 709, 4679, 2]
+// Dependencies: [4496, 4464, 4627, 709, 4680, 2]
 
-// Module 13307 (_initialize)
-import initializeDefault from "initialize" /* 4626 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4495 */;
-import closure_4 from "updateVoiceState" /* 4463 */;
+// Module 13334 (_initialize)
+import initializeDefault from "initialize" /* 4627 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4496 */;
+import closure_4 from "updateVoiceState" /* 4464 */;
 
 let require = arg1;
 initializeDefault;

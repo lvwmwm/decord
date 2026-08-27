@@ -1,13 +1,13 @@
-// Module ID: 10789
-// Function ID: 10790
+// Module ID: 9402
+// Function ID: 9403
 // Name: confirmActivityChangeModal
-// Dependencies: [4098, 1922, 4638, 4808, 1236, 1903, 2]
+// Dependencies: [4098, 1922, 4639, 4809, 1236, 1903, 2]
 // Exports: default
 
-// Module 10789 (confirmActivityChangeModal)
+// Module 9402 (confirmActivityChangeModal)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import computeChannelName from "computeChannelName" /* 4638 */;
-import setDefault from "set" /* 4808 */;
+import computeChannelName from "computeChannelName" /* 4639 */;
+import setDefault from "set" /* 4809 */;
 import closure_3 from "markAllUserIdListsStale" /* 4098 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 

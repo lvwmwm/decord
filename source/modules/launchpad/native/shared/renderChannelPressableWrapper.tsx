@@ -1,12 +1,12 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16471
+// Function ID: 16472
 // Name: items
-// Dependencies: [19, 17, 21, 16406, 2]
+// Dependencies: [19, 17, 21, 16470, 2]
 // Exports: default
 
-// Module 16407 (items)
+// Module 16471 (items)
 import noopAll from "noop" /* 19 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16406 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16470 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

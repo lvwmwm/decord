@@ -1,14 +1,14 @@
-// Module ID: 4675
-// Function ID: 4676
-// Dependencies: [676, 4676, 4298, 4677, 709, 4299, 4678, 2]
+// Module ID: 4676
+// Function ID: 4677
+// Dependencies: [676, 4677, 4299, 4678, 709, 4300, 4679, 2]
 
-// Module 4675
+// Module 4676
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import coerceMainRoute from "coerceMainRoute" /* 4298 */;
-import uniqueIdDefault from "uniqueId" /* 4676 */;
-import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 4677 */;
+import coerceMainRoute from "coerceMainRoute" /* 4299 */;
+import uniqueIdDefault from "uniqueId" /* 4677 */;
+import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 4678 */;
 
 const AppContext = ME.AppContext;
 const result = set.fileFinishedImporting("actions/ModalActionCreators.tsx");
@@ -31,17 +31,17 @@ export default {
     dispatcherDefault.dispatch(obj);
     return tmp;
   },
-  pushLazy(closure_1_1, closure_0, closure_4, navigationParams) {
+  pushLazy(closure_1_1, closure_0, c3, navigationParams) {
     const self = this;
     importDefault = closure_1_1;
     dependencyMap = closure_0;
-    let tmp = closure_4;
-    if (closure_4 === undefined) {
+    let tmp = c3;
+    if (c3 === undefined) {
       tmp = uniqueIdDefault("modal");
     }
     closure_3 = tmp;
     const _require = navigationParams;
-    const rootNavigationRef = _require(4299).getRootNavigationRef();
+    const rootNavigationRef = _require(4300).getRootNavigationRef();
     if (null != rootNavigationRef) {
       if (rootNavigationRef.isReady()) {
         if (closure_1_1 instanceof Promise) {
@@ -52,7 +52,7 @@ export default {
         nextPromise.then((arg0) => self.push(arg0, closure_2, closure_3, closure_0));
       }
     }
-    const obj = _require(4299);
+    const obj = _require(4300);
     return new Promise((arg0) => {
       closure_0 = arg0;
       return callback(table[6]).enqueue(() => callback(closure_1_4.pushLazy(closure_1_1, closure_1_2, closure_1_3, callback)));

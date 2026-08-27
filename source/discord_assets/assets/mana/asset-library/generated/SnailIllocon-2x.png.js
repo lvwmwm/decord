@@ -1,9 +1,9 @@
-// Module ID: 6950
-// Function ID: 6951
+// Module ID: 6956
+// Function ID: 6957
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6950 (metadata)
+// Module 6956 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SnailIllocon-2x.png.js");

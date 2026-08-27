@@ -1,13 +1,13 @@
-// Module ID: 4646
-// Function ID: 4647
+// Module ID: 4647
+// Function ID: 4648
 // Name: items
-// Dependencies: [1236, 2271, 4647, 4648, 4649, 4650, 2]
+// Dependencies: [1236, 2271, 4648, 4649, 4650, 4651, 2]
 // Exports: getBlurredBackgroundScale
 
-// Module 4646 (items)
+// Module 4647 (items)
 import messagesProxyDefault from "messagesProxy" /* 2271 */;
-import metadataDefault from "metadata" /* 4648 */;
-import metadataDefault2 from "metadata" /* 4649 */;
+import metadataDefault from "metadata" /* 4649 */;
+import metadataDefault2 from "metadata" /* 4650 */;
 
 let IE3e0y = arg1;
 let YpJ7QS = importDefault;

@@ -1,25 +1,25 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16063
+// Function ID: 16064
 // Name: MemberActionRow
-// Dependencies: [19, 17, 5348, 1391, 1992, 1910, 4089, 4659, 4660, 676, 1925, 4077, 21, 4444, 712, 589, 4638, 1435, 11925, 5440, 4102, 4440, 1297, 11436, 5015, 1236, 11929, 15999, 1403, 16000, 2]
+// Dependencies: [19, 17, 5353, 1391, 1992, 1910, 4089, 4660, 4661, 676, 1925, 4077, 21, 4445, 712, 589, 4639, 1435, 11768, 5445, 4102, 4441, 1297, 11291, 5020, 1236, 11773, 16064, 1403, 16065, 2]
 // Exports: default
 
-// Module 15998 (MemberActionRow)
+// Module 16063 (MemberActionRow)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getEmojiToGroupId" /* 5348 */;
+import closure_5 from "getEmojiToGroupId" /* 5353 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import closure_7 from "trackCommunicationDisabled" /* 1992 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
 import closure_9 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_10 from "handleSettingsLoadSuccess" /* 4659 */;
-import closure_11 from "set" /* 4660 */;
+import closure_10 from "handleSettingsLoadSuccess" /* 4660 */;
+import closure_11 from "set" /* 4661 */;
 import { Permissions } from "ME" /* 676 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function MemberActionRow(channelId) {

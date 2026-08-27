@@ -1,14 +1,14 @@
-// Module ID: 14554
-// Function ID: 14555
+// Module ID: 14581
+// Function ID: 14582
 // Name: TranscriptOutlineIcon
-// Dependencies: [19, 21, 712, 4164, 14555, 2]
+// Dependencies: [19, 21, 712, 4164, 14582, 2]
 // Exports: TranscriptOutlineIcon
 
-// Module 14554 (TranscriptOutlineIcon)
+// Module 14581 (TranscriptOutlineIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14555 */;
+import registerAsset from "registerAsset" /* 14582 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

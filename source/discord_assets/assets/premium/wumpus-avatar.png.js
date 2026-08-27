@@ -1,9 +1,9 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 12868
+// Function ID: 12869
 // Name: set
 // Dependencies: [2]
 
-// Module 12849 (set)
+// Module 12868 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/wumpus-avatar.png.js");

@@ -1,10 +1,10 @@
-// Module ID: 10462
-// Function ID: 10463
+// Module ID: 10909
+// Function ID: 10910
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [10463, 10466, 4308, 10467, 4184, 4165, 712, 1367, 1627, 2]
+// Dependencies: [10910, 10912, 4309, 10913, 4185, 4165, 712, 1367, 1627, 2]
 // Exports: default
 
-// Module 10462 (useChannelSafeAreaHeightSharedValue)
+// Module 10909 (useChannelSafeAreaHeightSharedValue)
 import set from "set" /* 2 */;
 
 let closure_3 = { code: "function useChannelSafeAreaHeightSharedValueAndroidTsx1(){const{chatInputFloating,chatInputSpaceBottom,keyboardOpenOrOpening,keyboardWillOpenSharedValue,keyboardOpenedHeight,insets,keyboardTypeSharedValue,KeyboardTypes,customKeyboardSheetHeightSV}=this.__closure;function resolveBottom(bottom){return chatInputFloating?Math.max(bottom,chatInputSpaceBottom):bottom;}if(keyboardOpenOrOpening.get()||keyboardWillOpenSharedValue.get()){const systemKeyboardHeight=keyboardOpenedHeight.get();if(systemKeyboardHeight<=0){return resolveBottom(insets.get().bottom);}return systemKeyboardHeight;}if(keyboardTypeSharedValue.get()===KeyboardTypes.SYSTEM){return resolveBottom(insets.get().bottom);}return customKeyboardSheetHeightSV.get();}" };

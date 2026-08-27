@@ -1,19 +1,19 @@
-// Module ID: 4325
-// Function ID: 4326
+// Module ID: 4326
+// Function ID: 4327
 // Name: resolveSavedActiveGuildTheme
-// Dependencies: [19, 1340, 1910, 4266, 4326, 4329, 676, 4295, 589, 4372, 4375, 2]
+// Dependencies: [19, 1340, 1910, 4267, 4327, 4330, 676, 4296, 589, 4373, 4376, 2]
 // Exports: getActiveGuildTheme, getActiveGuildThemeForGuildId, isRenderableGuildThemeSettings, resolveRenderableGuildThemeSettings, useActiveGuildTheme, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive
 
-// Module 4325 (resolveSavedActiveGuildTheme)
+// Module 4326 (resolveSavedActiveGuildTheme)
 import initialize from "initialize" /* 589 */;
-import set from "set" /* 4295 */;
-import apexExperiment from "apexExperiment" /* 4372 */;
+import set from "set" /* 4296 */;
+import apexExperiment from "apexExperiment" /* 4373 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "handleConnectionOpen" /* 4266 */;
-import closure_6 from "handleEnd" /* 4326 */;
-import closure_7 from "snapshotSelectedGuildId" /* 4329 */;
+import closure_5 from "handleConnectionOpen" /* 4267 */;
+import closure_6 from "handleEnd" /* 4327 */;
+import closure_7 from "snapshotSelectedGuildId" /* 4330 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 require = arg1;
@@ -284,7 +284,7 @@ export const getActiveGuildThemeForGuildId = function getActiveGuildThemeForGuil
         const features = guild.features;
         if (features.has(GuildFeatures.GUILD_THEME)) {
           const guildThemeSourcePreference = closure_3.resolveGuildThemeSourcePreference(guildId);
-          if (guildThemeSourcePreference === tmp8(4375).GuildThemeSourcePreference.PERSONAL) {
+          if (guildThemeSourcePreference === tmp8(4376).GuildThemeSourcePreference.PERSONAL) {
             return null;
           } else {
             let guildTheme = store2.getGuildThemeSnapshot(guildId);
@@ -316,7 +316,7 @@ export const getActiveGuildTheme = function getActiveGuildTheme() {
         if (features.has(GuildFeatures.GUILD_THEME)) {
           const guildThemeSourcePreference = closure_3.resolveGuildThemeSourcePreference(guildId);
           tmp11Result = null;
-          if (guildThemeSourcePreference !== tmp3(4375).GuildThemeSourcePreference.PERSONAL) {
+          if (guildThemeSourcePreference !== tmp3(4376).GuildThemeSourcePreference.PERSONAL) {
             let guildTheme = store2.getGuildThemeSnapshot(guildId);
             if (undefined === guildTheme) {
               guildTheme = guild.guildTheme;

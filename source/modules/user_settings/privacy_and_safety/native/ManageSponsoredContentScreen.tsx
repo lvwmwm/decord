@@ -1,20 +1,20 @@
-// Module ID: 15177
-// Function ID: 15178
+// Module ID: 15241
+// Function ID: 15242
 // Name: AdTopicRow
-// Dependencies: [19, 17, 676, 21, 1306, 2043, 4134, 5940, 1236, 4444, 712, 5939, 1995, 2]
+// Dependencies: [19, 17, 676, 21, 1306, 2043, 4134, 5945, 1236, 4445, 712, 5944, 1995, 2]
 // Exports: default
 
-// Module 15177 (AdTopicRow)
+// Module 15241 (AdTopicRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
 import messagesProxyDefault from "messagesProxy" /* 2043 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5939 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5944 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function AdTopicRow(adTopic) {
@@ -41,7 +41,7 @@ function AdTopicRow(adTopic) {
     const items = [...set];
     AdTopicOptOuts2.updateSetting(items);
   };
-  return closure_5(adTopic(5940).TableSwitchRow, obj);
+  return closure_5(adTopic(5945).TableSwitchRow, obj);
 }
 noopAll;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

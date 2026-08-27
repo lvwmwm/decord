@@ -1,9 +1,9 @@
-// Module ID: 9550
-// Function ID: 9551
+// Module ID: 8800
+// Function ID: 8801
 // Name: MAX_VISIBLE_ANNOUNCEMENTS
 // Dependencies: [2]
 
-// Module 9550 (MAX_VISIBLE_ANNOUNCEMENTS)
+// Module 8800 (MAX_VISIBLE_ANNOUNCEMENTS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/game_profile/GameProfileConstants.tsx");

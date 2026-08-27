@@ -1,17 +1,17 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 14395
+// Function ID: 14396
 // Name: toggle
-// Dependencies: [8302, 8567, 4683, 8568, 4685, 500, 8009, 8011, 4134, 10584, 1236, 2]
+// Dependencies: [7816, 8084, 4684, 8085, 4686, 500, 8613, 8615, 4134, 10988, 1236, 2]
 
-// Module 14368 (toggle)
+// Module 14395 (toggle)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4683 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8009 */;
-import MobileUserSettings from "MobileUserSettings" /* 8302 */;
-import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 8567 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 8568 */;
-import createToggle from "createToggle" /* 10584 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4684 */;
+import MobileUserSettings from "MobileUserSettings" /* 7816 */;
+import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 8084 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 8085 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8613 */;
+import createToggle from "createToggle" /* 10988 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {
@@ -31,7 +31,7 @@ const toggle = createToggle.createToggle({
     if (obj.shouldAgeVerifyForSettingsToggles()) {
       if (arg0) {
         obj = { entryPoint: null };
-        obj[0] = tmp(8011).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS;
+        obj[0] = tmp(8615).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS;
         const result = openIncodeAgeVerificationModalDefault.showAgeVerificationGetStartedModal(obj);
         const obj2 = openIncodeAgeVerificationModalDefault;
       }
@@ -46,7 +46,7 @@ const toggle = createToggle.createToggle({
     if (flag == null) {
       flag = true;
     }
-    let tmpResult = tmp(4685);
+    let tmpResult = tmp(4686);
     if (shouldAgeVerifyForSettingsToggles) {
       shouldAgeVerifyForSettingsToggles = !tmpResult.useIsVerifiedTeen();
     }
@@ -78,7 +78,7 @@ let obj = {
     if (obj.shouldAgeVerifyForSettingsToggles()) {
       if (arg0) {
         obj = { entryPoint: null };
-        obj[0] = tmp(8011).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS;
+        obj[0] = tmp(8615).AgeVerificationModalEntryPoint.AGE_RESTRICTED_DM_COMMANDS_SETTINGS;
         const result = openIncodeAgeVerificationModalDefault.showAgeVerificationGetStartedModal(obj);
         const obj2 = openIncodeAgeVerificationModalDefault;
       }
@@ -93,7 +93,7 @@ let obj = {
     if (flag == null) {
       flag = true;
     }
-    let tmpResult = tmp(4685);
+    let tmpResult = tmp(4686);
     if (shouldAgeVerifyForSettingsToggles) {
       shouldAgeVerifyForSettingsToggles = !tmpResult.useIsVerifiedTeen();
     }

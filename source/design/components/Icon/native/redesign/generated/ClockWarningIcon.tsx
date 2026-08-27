@@ -1,14 +1,14 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 11340
+// Function ID: 11341
 // Name: ClockWarningIcon
-// Dependencies: [19, 21, 712, 4164, 11487, 2]
+// Dependencies: [19, 21, 712, 4164, 11341, 2]
 // Exports: ClockWarningIcon
 
-// Module 11486 (ClockWarningIcon)
+// Module 11340 (ClockWarningIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 11487 */;
+import registerAsset from "registerAsset" /* 11341 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

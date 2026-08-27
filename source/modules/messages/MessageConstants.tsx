@@ -1,10 +1,10 @@
-// Module ID: 4437
-// Function ID: 4438
+// Module ID: 4438
+// Function ID: 4439
 // Name: MESSAGE_GROUP_SPACING
 // Dependencies: [676, 687, 584, 2]
 // Exports: isChannelStreamMessage
 
-// Module 4437 (MESSAGE_GROUP_SPACING)
+// Module 4438 (MESSAGE_GROUP_SPACING)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import setDefault from "set" /* 687 */;

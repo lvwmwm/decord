@@ -1,20 +1,20 @@
-// Module ID: 15165
-// Function ID: 15166
+// Module ID: 15229
+// Function ID: 15230
 // Name: UserListItem
-// Dependencies: [19, 17, 1922, 676, 21, 4444, 712, 589, 15166, 4288, 8531, 5900, 8998, 5546, 1297, 1236, 5553, 4165, 1500, 15164, 4440, 7957, 9425, 2]
+// Dependencies: [19, 17, 1922, 676, 21, 4445, 712, 589, 15230, 4289, 8048, 5905, 8819, 5551, 1297, 1236, 5558, 4165, 1500, 15228, 4441, 8037, 9760, 2]
 // Exports: default
 
-// Module 15165 (UserListItem)
+// Module 15229 (UserListItem)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9425 */;
+import Text from "Text" /* 4441 */;
+import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9760 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function UserListItem(userId) {

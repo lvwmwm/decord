@@ -1,10 +1,10 @@
-// Module ID: 14848
-// Function ID: 14849
+// Module ID: 14875
+// Function ID: 14876
 // Name: getSettingsOverrideReason
 // Dependencies: [4135, 685, 1236, 589, 2]
 // Exports: default, useSettingsOverrideReason
 
-// Module 14848 (getSettingsOverrideReason)
+// Module 14875 (getSettingsOverrideReason)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_2 from "updateExistingSettings" /* 4135 */;
 import { SettingsOverrideReasonKeys as closure_3 } from "MAX_FAVORITES" /* 685 */;

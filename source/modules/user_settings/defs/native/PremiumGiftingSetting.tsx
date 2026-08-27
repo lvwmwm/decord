@@ -1,16 +1,16 @@
-// Module ID: 14520
-// Function ID: 14521
+// Module ID: 14547
+// Function ID: 14548
 // Name: route
-// Dependencies: [19, 676, 21, 7090, 7654, 13016, 1297, 10584, 1236, 9790, 4120, 13102, 2]
+// Dependencies: [19, 676, 21, 7096, 8412, 13039, 1297, 10988, 1236, 10694, 4120, 13125, 2]
 
-// Module 14520 (route)
+// Module 14547 (route)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4120 */;
-import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13016 */;
+import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13039 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 10584 */;
+import createToggle from "createToggle" /* 10988 */;
 
 require = arg1;
 createToggle = {
@@ -46,7 +46,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_GIFTING,
   getComponent() {
-    return require(13102) /* GiftingSectionTitle */.default;
+    return require(13125) /* GiftingSectionTitle */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

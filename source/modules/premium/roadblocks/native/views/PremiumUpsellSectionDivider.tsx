@@ -1,20 +1,20 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 9064
+// Function ID: 9065
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 7105, 21, 4444, 712, 8921, 4891, 691, 4991, 2]
+// Dependencies: [19, 17, 7111, 21, 4445, 712, 9065, 4892, 691, 4996, 2]
 // Exports: default
 
-// Module 8920 (PremiumUpsellSectionDivider)
+// Module 9064 (PremiumUpsellSectionDivider)
 import noopAll from "noop" /* 19 */;
 import keys from "keys" /* 691 */;
 import ThemesDefault from "Themes" /* 712 */;
-import LinearGradientDefault from "LinearGradient" /* 4891 */;
-import LockIcon2 from "LockIcon" /* 4991 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 8921 */;
+import LinearGradientDefault from "LinearGradient" /* 4892 */;
+import LockIcon2 from "LockIcon" /* 4996 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 9065 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { Gradients } from "items" /* 7105 */;
+import { Gradients } from "items" /* 7111 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -90,10 +90,10 @@ export default function PremiumUpsellSectionDivider(arg0) {
     lock = lock.lock;
     obj3[1] = lock;
     obj2[4] = tmp3(LockIcon, obj3);
-    obj2 = tmp3(tmp4(4891), obj2);
+    obj2 = tmp3(tmp4(4892), obj2);
     obj1[1] = obj2;
     tmp3(tmp2, obj1);
-    const tmp4Result = tmp4(4891);
+    const tmp4Result = tmp4(4892);
   }
 };
 export const PREMIUM_UPSELL_SECTION_DIVIDER_HEIGHT = 28;

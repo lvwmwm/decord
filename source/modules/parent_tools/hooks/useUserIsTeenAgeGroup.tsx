@@ -1,12 +1,12 @@
-// Module ID: 14439
-// Function ID: 14440
+// Module ID: 14466
+// Function ID: 14467
 // Name: useUserIsTeenAgeGroup
-// Dependencies: [7209, 589, 2]
+// Dependencies: [7215, 589, 2]
 // Exports: default
 
-// Module 14439 (useUserIsTeenAgeGroup)
+// Module 14466 (useUserIsTeenAgeGroup)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "freshTeenActivityWithMap" /* 7209 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7215 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useUserIsTeenAgeGroup.tsx");

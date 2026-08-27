@@ -1,10 +1,10 @@
-// Module ID: 15639
-// Function ID: 15640
+// Module ID: 15703
+// Function ID: 15704
 // Name: items
-// Dependencies: [32, 19, 1383, 676, 1388, 644, 9927, 6197, 1377, 2]
+// Dependencies: [32, 19, 1383, 676, 1388, 644, 10226, 6203, 1377, 2]
 // Exports: setFavoritesGuildSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useFavoritesGuildSuggestionsVisibility, useHasFavoritesGuildSuggestions
 
-// Module 15639 (items)
+// Module 15703 (items)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "withContent" /* 1383 */;
@@ -31,7 +31,7 @@ export const setFavoritesGuildSuggestions = function setFavoritesGuildSuggestion
   state.setState({ suggestions });
 };
 export const useFavoritesGuildSuggestionsVisibility = function useFavoritesGuildSuggestionsVisibility() {
-  let obj = _require(9927);
+  let obj = _require(10226);
   const favoritesAccess = obj.useFavoritesAccess();
   let isFreemium = favoritesAccess.hasAccess;
   if (isFreemium) {
@@ -47,7 +47,7 @@ export const useFavoritesGuildSuggestionsVisibility = function useFavoritesGuild
   } else {
     items1 = [];
   }
-  const tmp5 = callback(_require(6197).useSelectedDismissibleContent(items1), 2);
+  const tmp5 = callback(_require(6203).useSelectedDismissibleContent(items1), 2);
   _require = tmp6;
   const items2 = [tmp5[1]];
   const layoutEffect = React.useLayoutEffect(() => {

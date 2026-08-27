@@ -1,22 +1,22 @@
-// Module ID: 16334
-// Function ID: 16335
+// Module ID: 16399
+// Function ID: 16400
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [19, 17, 8017, 21, 4444, 712, 5500, 7963, 1236, 5999, 8245, 4440, 4158, 14277, 2]
+// Dependencies: [19, 17, 8621, 21, 4445, 712, 5505, 7938, 1236, 6004, 7697, 4441, 4158, 14304, 2]
 // Exports: default
 
-// Module 16334 (SuspendedUserSafetyHubPage)
+// Module 16399 (SuspendedUserSafetyHubPage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5500 */;
-import IconButton from "IconButton" /* 7963 */;
-import registerAssetDefault from "registerAsset" /* 8245 */;
-import AutomatedUnderageAppealStatusDefault from "AutomatedUnderageAppealStatus" /* 14277 */;
+import Text from "Text" /* 4441 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5505 */;
+import registerAssetDefault from "registerAsset" /* 7697 */;
+import IconButton from "IconButton" /* 7938 */;
+import AutomatedUnderageAppealStatusDefault from "AutomatedUnderageAppealStatus" /* 14304 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8017 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8621 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -41,7 +41,7 @@ export default function SuspendedUserSafetyHubPage() {
   const intl = getSystemLocale.intl;
   obj1[1] = intl.string(getSystemLocale.t.cpT0Cq);
   obj1[2] = function onPress() {
-    callback(5999).closeSuspendedUser();
+    callback(6004).closeSuspendedUser();
   };
   obj1[3] = registerAssetDefault;
   const items = [callback(IconButton.IconButton, obj1), ];

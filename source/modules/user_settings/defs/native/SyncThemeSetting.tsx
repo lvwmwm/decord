@@ -1,20 +1,20 @@
-// Module ID: 14825
-// Function ID: 14826
+// Module ID: 14852
+// Function ID: 14853
 // Name: toggle
-// Dependencies: [4264, 1303, 1302, 1340, 8302, 676, 1367, 589, 1236, 14826, 8913, 10584, 2]
+// Dependencies: [4265, 1303, 1302, 1340, 7816, 676, 1367, 589, 1236, 14853, 8145, 10988, 2]
 
-// Module 14825 (toggle)
+// Module 14852 (toggle)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 8913 */;
-import track from "track" /* 14826 */;
-import closure_3 from "isSyncedModeThemesEnabled" /* 4264 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 8145 */;
+import track from "track" /* 14853 */;
+import closure_3 from "isSyncedModeThemesEnabled" /* 4265 */;
 import closure_4 from "initialize" /* 1303 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
 import closure_6 from "handleConnectionClosedOrResumed" /* 1340 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import createToggle from "createToggle" /* 10584 */;
+import createToggle from "createToggle" /* 10988 */;
 
 require = arg1;
 createToggle = {

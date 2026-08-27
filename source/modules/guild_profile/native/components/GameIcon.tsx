@@ -1,15 +1,15 @@
-// Module ID: 12480
-// Function ID: 12481
+// Module ID: 8942
+// Function ID: 8943
 // Name: styles
-// Dependencies: [19, 17, 21, 4444, 712, 1435, 12481, 5015, 12482, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 1435, 8943, 5020, 8944, 2]
 // Exports: default
 
-// Module 12480 (styles)
+// Module 8942 (styles)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
@@ -63,7 +63,7 @@ export default function GameIcon(arg0) {
         source = closure_4;
         obj1 = { style: null, children: null };
         obj1[0] = fireIcon.gameIconMask;
-        FireIcon = FireIcon(12482).FireIcon;
+        FireIcon = FireIcon(8944).FireIcon;
         const obj2 = { style: null, color: null };
         fireIcon = fireIcon.fireIcon;
         obj2[0] = fireIcon;
@@ -74,7 +74,7 @@ export default function GameIcon(arg0) {
       }
       callback[1] = style;
       obj[2] = callback;
-      let tmp14Result = closure_7(FireIcon(5015).PressableHighlight, obj);
+      let tmp14Result = closure_7(FireIcon(5020).PressableHighlight, obj);
       const tmp10 = closure_7;
     } else {
       const obj3 = { style: null, children: null };
@@ -91,7 +91,7 @@ export default function GameIcon(arg0) {
         const obj6 = { style: null, color: null };
         obj6[0] = fireIcon.fireIcon;
         obj6[1] = onPress(712).unsafe_rawColors.ORANGE_330;
-        obj5[1] = tmp16(FireIcon(12482).FireIcon, obj6);
+        obj5[1] = tmp16(FireIcon(8944).FireIcon, obj6);
         tmp16Result = tmp16(tmp15, obj5);
       }
       items3[1] = tmp16Result;

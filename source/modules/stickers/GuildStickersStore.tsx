@@ -1,9 +1,9 @@
-// Module ID: 5392
-// Function ID: 5393
+// Module ID: 5397
+// Function ID: 5398
 // Name: parseServerGuildSticker
-// Dependencies: [32, 1432, 1911, 1910, 5159, 4102, 1914, 2]
+// Dependencies: [32, 1432, 1911, 1910, 5164, 4102, 1914, 2]
 
-// Module 5392 (parseServerGuildSticker)
+// Module 5397 (parseServerGuildSticker)
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4102 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { TypeTag } from "TypeTag" /* 1432 */;
@@ -30,13 +30,13 @@ function parseServerGuildStickers(stickers) {
 }
 function deriveStickerMetadata(arg0, tags) {
   const items = [];
-  let obj = { type: items(5159).StickerMetadataTypes.STICKER_NAME, value: null };
+  let obj = { type: items(5164).StickerMetadataTypes.STICKER_NAME, value: null };
   const trimmed = tags.name.trim();
   obj[1] = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != tags.tags) {
     obj = { type: null, value: null };
-    obj[0] = tmp(5159).StickerMetadataTypes.TAG;
+    obj[0] = tmp(5164).StickerMetadataTypes.TAG;
     const trimmed1 = str.trim();
     obj[1] = trimmed1.toLocaleLowerCase();
     items.push(obj);
@@ -50,7 +50,7 @@ function deriveStickerMetadata(arg0, tags) {
       }
       if (tmp5) {
         obj = { type: null, value: null };
-        obj[0] = tmp(5159).StickerMetadataTypes.GUILD_NAME;
+        obj[0] = tmp(5164).StickerMetadataTypes.GUILD_NAME;
         obj[1] = toLocaleLowerCaseResult;
         items.push(obj);
       }
@@ -59,7 +59,7 @@ function deriveStickerMetadata(arg0, tags) {
     const byName = parseRawEmojiObjectDefault.getByName(str);
     if (null != byName) {
       obj1 = { type: null, value: null };
-      obj1[0] = tmp(5159).StickerMetadataTypes.CORRELATED_EMOJI;
+      obj1[0] = tmp(5164).StickerMetadataTypes.CORRELATED_EMOJI;
       obj1[1] = byName.surrogates;
       items.push(obj1);
       byName.forEachDiversity((surrogates) => items.push({ type: items(closure_1_2[4]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));

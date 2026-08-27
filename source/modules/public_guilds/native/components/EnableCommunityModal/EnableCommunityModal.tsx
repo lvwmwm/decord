@@ -1,22 +1,22 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17159
+// Function ID: 17160
 // Name: onModalClose
-// Dependencies: [19, 21, 17092, 5448, 5442, 1236, 6183, 8245, 17094, 17095, 17107, 17108, 5955, 2]
+// Dependencies: [19, 21, 17158, 5453, 5447, 1236, 6189, 7697, 17160, 17161, 17173, 17174, 5960, 2]
 // Exports: default
 
-// Module 17093 (onModalClose)
+// Module 17159 (onModalClose)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import HeaderBackImage from "HeaderBackImage" /* 5442 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5448 */;
-import NavigationStack from "NavigationStack" /* 5955 */;
-import _modDef17092 from "module_17092" /* 17092 */;
-import EnableCommunityModalSteps from "EnableCommunityModalSteps" /* 17094 */;
+import HeaderBackImage from "HeaderBackImage" /* 5447 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5453 */;
+import NavigationStack from "NavigationStack" /* 5960 */;
+import _modDef17158 from "module_17158" /* 17158 */;
+import EnableCommunityModalSteps from "EnableCommunityModalSteps" /* 17160 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
 function onModalClose() {
-  _modDef17092.close();
+  _modDef17158.close();
 }
 function HeaderBackButton(arg0) {
   useNavigatorBackPressHandler.useNavigatorBackPressHandler(() => {
@@ -32,10 +32,10 @@ const result = require("set").fileFinishedImporting("modules/public_guilds/nativ
 export default function EnableCommunityModal() {
   const memo = React.useMemo(() => {
     function headerRight() {
-      const obj = { source: callback2(8245), onPress: closure_5, accessibilityLabel: null };
+      const obj = { source: callback2(7697), onPress: closure_5, accessibilityLabel: null };
       const intl = callback(1236).intl;
       obj[2] = intl.string(callback(1236).t.cpT0Cq);
-      return callback3(callback(6183).HeaderActionButton, obj);
+      return callback3(callback(6189).HeaderActionButton, obj);
     }
     let obj = {
       headerRight,
@@ -44,7 +44,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(17095), {});
+        return callback3(callback2(17161), {});
       }
     };
     obj = {
@@ -53,7 +53,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(17107), {});
+        return callback3(callback2(17173), {});
       }
     };
     obj = {
@@ -62,7 +62,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(17108), {});
+        return callback3(callback2(17174), {});
       }
     };
     return { [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_1]: obj, [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_2]: obj, [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_3]: obj };

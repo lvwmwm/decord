@@ -1,9 +1,9 @@
-// Module ID: 6027
-// Function ID: 6028
+// Module ID: 6032
+// Function ID: 6033
 // Name: StorefrontPromotionRewardType
 // Dependencies: [2]
 
-// Module 6027 (StorefrontPromotionRewardType)
+// Module 6032 (StorefrontPromotionRewardType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/storefront/StorefrontTypes.tsx");

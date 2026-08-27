@@ -1,14 +1,14 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 12744
+// Function ID: 12745
 // Name: MoreVerticalIcon
-// Dependencies: [19, 21, 712, 4164, 12523, 2]
+// Dependencies: [19, 21, 712, 4164, 12745, 2]
 // Exports: MoreVerticalIcon
 
-// Module 12522 (MoreVerticalIcon)
+// Module 12744 (MoreVerticalIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 12523 */;
+import registerAsset from "registerAsset" /* 12745 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

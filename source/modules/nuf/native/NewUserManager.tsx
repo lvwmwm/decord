@@ -1,21 +1,21 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 16923
+// Function ID: 16924
 // Name: items
-// Dependencies: [5, 8696, 5172, 1922, 5517, 12333, 676, 12347, 16858, 12304, 12332, 691, 9280, 709, 5433, 12311, 12374, 2]
+// Dependencies: [5, 7649, 5177, 1922, 5522, 12157, 676, 12171, 16924, 12128, 12156, 691, 9829, 709, 5438, 12135, 12198, 2]
 
-// Module 16857 (items)
+// Module 16923 (items)
 import keys from "keys" /* 691 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 5433 */;
-import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 12332 */;
+import initializeDefault from "initialize" /* 5438 */;
+import _startContactSyncForDiscoverability from "_startContactSyncForDiscoverability" /* 12156 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleSetLocationMetadata" /* 8696 */;
-import closure_5 from "set" /* 5172 */;
+import closure_4 from "handleSetLocationMetadata" /* 7649 */;
+import closure_5 from "set" /* 5177 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "initialize" /* 5517 */;
-import { NewUserTypes } from "NewUserTypes" /* 12333 */;
+import closure_7 from "initialize" /* 5522 */;
+import { NewUserTypes } from "NewUserTypes" /* 12157 */;
 import { PlatformTypes } from "ME" /* 676 */;
-import { HUBS_IN_ONBOARDING_COUNTRIES as closure_10 } from "HubEmailConnectionSteps" /* 12347 */;
+import { HUBS_IN_ONBOARDING_COUNTRIES as closure_10 } from "HubEmailConnectionSteps" /* 12171 */;
 
 require = arg1;
 let obj = { REGISTRATION: "Registration", ADD_AVATAR: "Add Avatar", CONTACT_SYNC: "Contact Sync", GUILD_TEMPLATE: "Guild Template", STUDENT_HUB: "Student Hub", NEW_USER_INTENT: "New User Intent", ACCEPT_INVITE: "Accept Invite", DISCOVERABILITY: "Discoverability" };

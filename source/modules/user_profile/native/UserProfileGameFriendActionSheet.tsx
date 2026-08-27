@@ -1,10 +1,10 @@
-// Module ID: 12615
-// Function ID: 12616
+// Module ID: 12407
+// Function ID: 12408
 // Name: GameFriendApplicationRow
-// Dependencies: [5, 32, 19, 17, 4098, 676, 21, 4444, 712, 12251, 5938, 5498, 1297, 4440, 12616, 5906, 4637, 9459, 4161, 4411, 5936, 5568, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 4098, 676, 21, 4445, 712, 8992, 5943, 5503, 1297, 4441, 12408, 5911, 4638, 8980, 4161, 4412, 5941, 5573, 1236, 2]
 // Exports: default
 
-// Module 12615 (GameFriendApplicationRow)
+// Module 12407 (GameFriendApplicationRow)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -13,7 +13,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "markAllUserIdListsStale" /* 4098 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function GameFriendApplicationRow(application) {

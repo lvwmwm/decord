@@ -1,19 +1,19 @@
-// Module ID: 11526
-// Function ID: 11527
+// Module ID: 11380
+// Function ID: 11381
 // Name: DCDChatList
-// Dependencies: [19, 4436, 21, 4444, 1367, 5599, 11527, 11528, 589, 11168, 2]
+// Dependencies: [19, 4437, 21, 4445, 1367, 5604, 11381, 11382, 589, 10830, 2]
 
-// Module 11526 (DCDChatList)
+// Module 11380 (DCDChatList)
 import initialize from "initialize" /* 589 */;
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5599 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 11168 */;
-import __INTERNAL_VIEW_CONFIGDefault2 from "__INTERNAL_VIEW_CONFIG" /* 11527 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11528 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5604 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10830 */;
+import __INTERNAL_VIEW_CONFIGDefault2 from "__INTERNAL_VIEW_CONFIG" /* 11381 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11382 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function DCDChatList() {

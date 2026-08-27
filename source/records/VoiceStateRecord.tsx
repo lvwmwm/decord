@@ -1,9 +1,9 @@
-// Module ID: 4464
-// Function ID: 4465
+// Module ID: 4465
+// Function ID: 4466
 // Name: isVoiceMuted
 // Dependencies: [1931, 2]
 
-// Module 4464 (isVoiceMuted)
+// Module 4465 (isVoiceMuted)
 import toJSDefault from "toJS" /* 1931 */;
 
 toJSDefault;

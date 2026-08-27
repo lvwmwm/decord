@@ -1,15 +1,15 @@
-// Module ID: 12577
-// Function ID: 12578
+// Module ID: 9344
+// Function ID: 9345
 // Name: UserProfileActivityVoiceChannel
-// Dependencies: [17, 4089, 505, 21, 4444, 500, 5900, 9003, 4866, 12578, 4638, 589, 4993, 4997, 1236, 5951, 5015, 4162, 5950, 4440, 9248, 4679, 4411, 12579, 2009, 8998, 12580, 1297, 2]
+// Dependencies: [17, 4089, 505, 21, 4445, 500, 5905, 8490, 4867, 9345, 4639, 589, 4998, 5002, 1236, 5956, 5020, 4162, 5955, 4441, 9346, 4680, 4412, 9347, 2009, 8819, 9348, 1297, 2]
 // Exports: default
 
-// Module 12577 (UserProfileActivityVoiceChannel)
+// Module 9344 (UserProfileActivityVoiceChannel)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import sum from "sum" /* 505 */;
 import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import set from "set" /* 500 */;
 
 const View = get_ActivityIndicator.View;

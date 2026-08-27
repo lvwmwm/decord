@@ -1,13 +1,13 @@
-// Module ID: 7524
-// Function ID: 7525
+// Module ID: 9850
+// Function ID: 9851
 // Name: queryGamesAutocomplete
-// Dependencies: [5001, 636, 7525, 5002, 2]
+// Dependencies: [5006, 636, 9851, 5007, 2]
 // Exports: queryGamesAutocomplete
 
-// Module 7524 (queryGamesAutocomplete)
-import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH" /* 5002 */;
-import fetchStore from "fetchStore" /* 7525 */;
-import closure_2 from "set" /* 5001 */;
+// Module 9850 (queryGamesAutocomplete)
+import GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH from "GAME_AUTOCOMPLETE_MAX_QUERY_LENGTH" /* 5007 */;
+import fetchStore from "fetchStore" /* 9851 */;
+import closure_2 from "set" /* 5006 */;
 import importDefaultResult from "debounce" /* 636 */;
 
 require = arg1;

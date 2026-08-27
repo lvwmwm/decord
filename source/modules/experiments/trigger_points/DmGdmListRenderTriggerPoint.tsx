@@ -1,12 +1,12 @@
-// Module ID: 15488
-// Function ID: 15489
+// Module ID: 15553
+// Function ID: 15554
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4358, 7585, 2]
+// Dependencies: [4359, 10406, 2]
 
-// Module 15488 (commonTriggerPointConfiguration)
+// Module 15553 (commonTriggerPointConfiguration)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4358 */;
-import registeredExperimentIds from "registeredExperimentIds" /* 7585 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4359 */;
+import registeredExperimentIds from "registeredExperimentIds" /* 10406 */;
 
 const commonTriggerPointConfiguration = new registeredExperimentIds.CommonTriggerPointConfiguration([], ExperimentBuckets.CommonTriggerPoints.DM_GDM_LIST_RENDER, { location: "dm/gdm list rendered" });
 const result = set.fileFinishedImporting("modules/experiments/trigger_points/DmGdmListRenderTriggerPoint.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 4427
-// Function ID: 4428
+// Module ID: 4428
+// Function ID: 4429
 // Name: getPathsFromURL
-// Dependencies: [4428, 676, 678, 4431, 1489, 4432, 4433, 4359, 8425, 4429, 7405, 10651, 9117, 7361, 5345, 2]
+// Dependencies: [4429, 676, 678, 4432, 1489, 4433, 4434, 4360, 7566, 4430, 7413, 9208, 8541, 7368, 5350, 2]
 // Exports: default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, remainingPathFromDiscordHostMatch
 
-// Module 4427 (getPathsFromURL)
+// Module 4428 (getPathsFromURL)
 import Url from "Url" /* 1489 */;
-import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 4433 */;
-import closure_3 from "updateInvite" /* 4428 */;
+import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 4434 */;
+import closure_3 from "updateInvite" /* 4429 */;
 import { PRIMARY_DOMAIN } from "ME" /* 676 */;
 import { CollectibleShopTab } from "items" /* 678 */;
-import importDefaultResult from "set" /* 4431 */;
+import importDefaultResult from "set" /* 4432 */;
 
 require = arg1;
 function getPathsFromURL(target) {
@@ -1060,7 +1060,7 @@ export const isSuspiciousCodedLink = function isSuspiciousCodedLink(arr) {
           let flag;
           if (url.pathname != null) {
             const formatted = str2.toUpperCase();
-            flag = formatted.includes(url(4432).CodedLinkType.INVITE);
+            flag = formatted.includes(url(4433).CodedLinkType.INVITE);
           }
           if (flag == null) {
             flag = false;

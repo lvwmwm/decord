@@ -1,10 +1,10 @@
-// Module ID: 6017
-// Function ID: 6018
+// Module ID: 6022
+// Function ID: 6023
 // Name: useIsNewMember
 // Dependencies: [1984, 1992, 4077, 1403, 687, 589, 2]
 // Exports: default, getIsNewMember
 
-// Module 6017 (useIsNewMember)
+// Module 6022 (useIsNewMember)
 import setDefault from "set" /* 687 */;
 import hasFlag from "hasFlag" /* 1403 */;
 import closure_3 from "initialize" /* 1984 */;

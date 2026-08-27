@@ -1,12 +1,12 @@
-// Module ID: 7157
-// Function ID: 7158
+// Module ID: 7163
+// Function ID: 7164
 // Name: LIMITED_GUILD_MEMBER_THRESHOLD
-// Dependencies: [1391, 4364, 676, 2]
+// Dependencies: [1391, 4365, 676, 2]
 // Exports: isLimitedChannel, isLimitedChannelId
 
-// Module 7157 (LIMITED_GUILD_MEMBER_THRESHOLD)
+// Module 7163 (LIMITED_GUILD_MEMBER_THRESHOLD)
 import closure_0 from "ensureGuildLoaded" /* 1391 */;
-import closure_1 from "handleInviteData" /* 4364 */;
+import closure_1 from "handleInviteData" /* 4365 */;
 import { ChannelTypes } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/app_database/modules/messages/isLimitedChannel.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6083
-// Function ID: 6084
+// Module ID: 6091
+// Function ID: 6092
 // Name: getFpMessageInfo
-// Dependencies: [687, 589, 11, 6084, 709, 2]
+// Dependencies: [687, 589, 11, 6092, 709, 2]
 
-// Module 6083 (getFpMessageInfo)
+// Module 6091 (getFpMessageInfo)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
@@ -58,7 +58,7 @@ Object.defineProperty(prototype, "validContentScanVersion", {
       const _Math = Math;
       return Math.min(num2, 4);
     }
-    obj = require(6084) /* apexExperiment */;
+    obj = require(6092) /* apexExperiment */;
   },
   set: undefined
 });

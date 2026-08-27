@@ -1,16 +1,16 @@
-// Module ID: 12233
-// Function ID: 12234
+// Module ID: 9149
+// Function ID: 9150
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 7331, 5328, 7293, 589, 12, 9264, 2]
+// Dependencies: [32, 19, 7337, 5333, 7299, 589, 12, 9150, 2]
 // Exports: default
 
-// Module 12233 (useUserProfileMutuals)
-import usePrevValueDefault from "usePrevValue" /* 9264 */;
+// Module 9149 (useUserProfileMutuals)
+import usePrevValueDefault from "usePrevValue" /* 9150 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_5 from "recomputeAffinities" /* 7331 */;
-import closure_6 from "insertUnsortedGuilds" /* 5328 */;
-import closure_7 from "createUserWidgetFromServer" /* 7293 */;
+import closure_5 from "recomputeAffinities" /* 7337 */;
+import closure_6 from "insertUnsortedGuilds" /* 5333 */;
+import closure_7 from "createUserWidgetFromServer" /* 7299 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useUserProfileMutuals.tsx");

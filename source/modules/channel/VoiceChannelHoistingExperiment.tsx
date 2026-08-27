@@ -1,13 +1,13 @@
-// Module ID: 16760
-// Function ID: 16761
+// Module ID: 16826
+// Function ID: 16827
 // Name: experiment
-// Dependencies: [4358, 4355, 2]
+// Dependencies: [4359, 4356, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 16760 (experiment)
+// Module 16826 (experiment)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4358 */;
-import createExperiment from "createExperiment" /* 4355 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4359 */;
+import createExperiment from "createExperiment" /* 4356 */;
 
 const items = [{ id: 1, label: "Both waveform and highlight", config: { enableWaveformIcon: true, enableHighlight: true } }, { id: 2, label: "Waveform icon only", config: { enableWaveformIcon: true, enableHighlight: false } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2025-12_voice_channel_hoisting", label: "Voice Channel Hoisting", commonTriggerPoint: ExperimentBuckets.CommonTriggerPoints.VOICE_CALL, defaultConfig: { enableWaveformIcon: false, enableHighlight: false }, treatments: items });

@@ -1,14 +1,14 @@
-// Module ID: 11592
-// Function ID: 11593
+// Module ID: 11443
+// Function ID: 11444
 // Name: isNewMessageGroup
-// Dependencies: [676, 687, 6063, 11, 4131, 2]
+// Dependencies: [676, 687, 6069, 11, 4131, 2]
 // Exports: isNewGroupItem
 
-// Module 11592 (isNewMessageGroup)
+// Module 11443 (isNewMessageGroup)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import resetCache from "resetCache" /* 4131 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6063 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6069 */;
 import ME from "ME" /* 676 */;
 
 function isNewMessageGroup(isForumPost, content, hasFlag) {

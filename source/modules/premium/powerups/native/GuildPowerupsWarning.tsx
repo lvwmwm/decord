@@ -1,15 +1,15 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12039
+// Function ID: 12040
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 4444, 712, 8415, 12192, 8005, 4440, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 7936, 12040, 7641, 4441, 2]
 // Exports: default
 
-// Module 12191 (GuildPowerupsWarning)
+// Module 12039 (GuildPowerupsWarning)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;
@@ -32,7 +32,7 @@ export default function GuildPowerupsWarning(warnings) {
   ({ guildId, powerupNames } = warnings);
   const tmp = callback2();
   _require = tmp;
-  let obj = _require(8415);
+  let obj = _require(7936);
   manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsWarning");
   let tmp10Result = null;
   if (tmp6.shouldShow) {
@@ -42,11 +42,11 @@ export default function GuildPowerupsWarning(warnings) {
     obj[0] = tmp.contentContainer;
     obj1 = { color: null, size: "md" };
     obj1[0] = manaTypeConsolidationExperiment(712).colors.TEXT_FEEDBACK_WARNING;
-    let items = [callback(tmp2(8005).CircleErrorIcon, obj1), , , ];
+    let items = [callback(tmp2(7641).CircleErrorIcon, obj1), , , ];
     const obj2 = { variant: "text-md/semibold", color: "text-feedback-warning", style: null, children: null };
     obj2[2] = tmp.text;
     obj2[3] = tmp7;
-    items[1] = callback(tmp2(4440).Text, obj2);
+    items[1] = callback(tmp2(4441).Text, obj2);
     let str = "text-sm/medium";
     if (manaTypeConsolidationExperiment) {
       str = "experimental/body-sm/normal";
@@ -55,7 +55,7 @@ export default function GuildPowerupsWarning(warnings) {
     obj3[0] = str;
     obj3[1] = tmp.text;
     obj3[2] = tmp8;
-    items[2] = callback(tmp2(4440).Text, obj3);
+    items[2] = callback(tmp2(4441).Text, obj3);
     let mapped;
     if (warnings != null) {
       mapped = warnings.map((children) => {

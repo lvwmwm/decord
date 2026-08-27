@@ -1,16 +1,16 @@
-// Module ID: 14680
-// Function ID: 14681
+// Module ID: 14707
+// Function ID: 14708
 // Name: useVideoExternallyPaused
-// Dependencies: [4154, 8814, 4298, 10743, 589, 4810, 500, 2]
+// Dependencies: [4154, 8718, 4299, 11027, 589, 4811, 500, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 14680 (useVideoExternallyPaused)
+// Module 14707 (useVideoExternallyPaused)
 import set from "set" /* 500 */;
 import initialize from "initialize" /* 589 */;
-import coerceMainRoute from "coerceMainRoute" /* 4298 */;
-import useAlertStore from "useAlertStore" /* 4810 */;
-import updateContextMenuState from "updateContextMenuState" /* 8814 */;
-import getVideoQuestWatchCtaText from "getVideoQuestWatchCtaText" /* 10743 */;
+import coerceMainRoute from "coerceMainRoute" /* 4299 */;
+import useAlertStore from "useAlertStore" /* 4811 */;
+import updateContextMenuState from "updateContextMenuState" /* 8718 */;
+import getVideoQuestWatchCtaText from "getVideoQuestWatchCtaText" /* 11027 */;
 import closure_2 from "setContent" /* 4154 */;
 
 require = arg1;

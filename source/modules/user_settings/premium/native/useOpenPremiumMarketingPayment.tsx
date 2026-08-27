@@ -1,10 +1,10 @@
-// Module ID: 13042
-// Function ID: 13043
+// Module ID: 13065
+// Function ID: 13066
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 676, 1924, 5900, 7120, 7119, 7095, 1236, 4107, 2]
+// Dependencies: [19, 676, 1924, 5905, 7126, 7125, 7101, 1236, 4107, 2]
 // Exports: default
 
-// Module 13042 (useOpenPremiumMarketingPayment)
+// Module 13065 (useOpenPremiumMarketingPayment)
 import closure_3 from "noop" /* 19 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;

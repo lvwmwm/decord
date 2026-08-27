@@ -1,19 +1,19 @@
-// Module ID: 13994
-// Function ID: 13995
+// Module ID: 14021
+// Function ID: 14022
 // Name: processColor
-// Dependencies: [32, 17, 1390, 4485, 4466, 1391, 4495, 4518, 4098, 1922, 676, 712, 7427, 7426, 11080, 9870, 4638, 1236, 4626, 2]
+// Dependencies: [32, 17, 1390, 4486, 4467, 1391, 4496, 4519, 4098, 1922, 676, 712, 7435, 7434, 10043, 9176, 4639, 1236, 4627, 2]
 
-// Module 13994 (processColor)
+// Module 14021 (processColor)
 import ThemesDefault from "Themes" /* 712 */;
-import initializeDefault from "initialize" /* 4626 */;
+import initializeDefault from "initialize" /* 4627 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "participantFromServer" /* 1390 */;
-import closure_5 from "addApplication" /* 4485 */;
-import closure_6 from "reset" /* 4466 */;
+import closure_5 from "addApplication" /* 4486 */;
+import closure_6 from "reset" /* 4467 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4495 */;
-import closure_9 from "createRTCConnection" /* 4518 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4496 */;
+import closure_9 from "createRTCConnection" /* 4519 */;
 import closure_10 from "markAllUserIdListsStale" /* 4098 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import { InputModes } from "ME" /* 676 */;
@@ -27,7 +27,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "h", isPushToTalk: "c", embeddedActivity: "g", isStreaming: "\u{1F1F9}\u{1F1ED}" };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "HOSTED_FIELDS_TOKENIZATION_CVV_VERIFICATION_FAILED", embeddedActivity: "CVV verification failed during tokenization.", isStreaming: "new_moon" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = closure_1_9.getChannelId();
       const state = closure_1_9.getState();
@@ -222,7 +222,7 @@ prototype["terminate"] = function terminate() {
 };
 set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "h", isPushToTalk: "c", embeddedActivity: "g", isStreaming: "\u{1F1F9}\u{1F1ED}" };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: null, isPushToTalk: "HOSTED_FIELDS_TOKENIZATION_CVV_VERIFICATION_FAILED", embeddedActivity: "CVV verification failed during tokenization.", isStreaming: "new_moon" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = closure_1_9.getChannelId();
   const state = closure_1_9.getState();

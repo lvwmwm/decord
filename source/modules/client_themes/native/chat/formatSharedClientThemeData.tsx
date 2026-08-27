@@ -1,15 +1,15 @@
-// Module ID: 8550
-// Function ID: 8551
+// Module ID: 8067
+// Function ID: 8068
 // Name: formatSharedClientThemeData
-// Dependencies: [17, 7917, 1236, 2567, 2]
+// Dependencies: [17, 7892, 1236, 2567, 2]
 // Exports: formatSharedClientThemeData
 
-// Module 8550 (formatSharedClientThemeData)
+// Module 8067 (formatSharedClientThemeData)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import messagesProxyDefault from "messagesProxy" /* 2567 */;
-import registerAssetDefault from "registerAsset" /* 7917 */;
+import registerAssetDefault from "registerAsset" /* 7892 */;
 
 const Image = get_ActivityIndicator.Image;
 const result = set.fileFinishedImporting("modules/client_themes/native/chat/formatSharedClientThemeData.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12106
+// Function ID: 12107
 // Name: handleInviteData
 // Dependencies: [589, 709, 2]
 
-// Module 12284 (handleInviteData)
+// Module 12106 (handleInviteData)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

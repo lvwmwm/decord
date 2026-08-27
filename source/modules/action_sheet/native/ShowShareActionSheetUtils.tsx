@@ -1,17 +1,17 @@
-// Module ID: 9140
-// Function ID: 9141
+// Module ID: 8565
+// Function ID: 8566
 // Name: trackAppClickInNativeShareSheet
-// Dependencies: [676, 9141, 698, 9142, 1487, 500, 5526, 2]
+// Dependencies: [676, 8566, 698, 8567, 1487, 500, 5531, 2]
 // Exports: getMediaShareParams, resolveShareFileExtension, trackAppClickInNativeShareSheet
 
-// Module 9140 (trackAppClickInNativeShareSheet)
+// Module 8565 (trackAppClickInNativeShareSheet)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import getExtensionFromContentType from "getExtensionFromContentType" /* 5526 */;
-import SHARE_PREPARING_MODAL_KEY from "SHARE_PREPARING_MODAL_KEY" /* 9141 */;
-import apexExperiment from "apexExperiment" /* 9142 */;
+import getExtensionFromContentType from "getExtensionFromContentType" /* 5531 */;
+import SHARE_PREPARING_MODAL_KEY from "SHARE_PREPARING_MODAL_KEY" /* 8566 */;
+import apexExperiment from "apexExperiment" /* 8567 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_4 = SHARE_PREPARING_MODAL_KEY.SHARE_SHEET_PRESENT_DELAY_MS;
@@ -39,7 +39,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
           }
           ({ videoURI, contentType } = source);
           if (null != videoURI) {
-            tmpResult = tmp(5526);
+            tmpResult = tmp(5531);
             const decideFileExtensionResult = tmpResult.decideFileExtension(videoURI, contentType, true);
             obj = { mediaFallbackUrl: null, mediaStagingOptions: null };
             obj[0] = videoURI;
@@ -54,7 +54,7 @@ export const getMediaShareParams = function getMediaShareParams(source) {
             obj[1] = tmp11;
             return obj;
           } else {
-            const decideFileExtensionResult1 = tmp(5526).decideFileExtension(source.uri, contentType, true);
+            const decideFileExtensionResult1 = tmp(5531).decideFileExtension(source.uri, contentType, true);
             const obj2 = { mediaFallbackUrl: null, mediaStagingOptions: null };
             obj2[0] = source.shareURI;
             let tmp6;

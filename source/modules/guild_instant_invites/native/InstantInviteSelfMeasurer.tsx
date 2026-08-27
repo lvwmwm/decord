@@ -1,12 +1,12 @@
-// Module ID: 16249
-// Function ID: 16250
-// Dependencies: [19, 17, 21, 4444, 9902, 2]
+// Module ID: 16314
+// Function ID: 16315
+// Dependencies: [19, 17, 21, 4445, 10589, 2]
 
-// Module 16249
+// Module 16314
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -34,11 +34,11 @@ const memoResult = importAllResult.memo(function InstantInviteSelfMeasurer(type)
   if ("invite" === item.type) {
     obj = { invite: null };
     obj[0] = item.data;
-    let tmp2Result = tmp2(str(9902), obj);
+    let tmp2Result = tmp2(str(10589), obj);
   } else {
     obj = { channel: null };
     obj[0] = item.data;
-    tmp2Result = tmp2(onMeasured(9902).LinkedChannelInvite, obj);
+    tmp2Result = tmp2(onMeasured(10589).LinkedChannelInvite, obj);
   }
   obj[6] = tmp2Result;
   return <View style={items1} onLayout={importAllResult.useCallback((nativeEvent) => {

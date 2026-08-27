@@ -1,53 +1,53 @@
-// Module ID: 15912
-// Function ID: 15913
+// Module ID: 15977
+// Function ID: 15978
 // Name: WordTopic
-// Dependencies: [5, 32, 19, 17, 15906, 15913, 21, 8977, 9861, 4984, 15914, 9866, 4972, 7933, 11565, 10683, 15915, 8975, 15917, 8978, 10407, 4444, 712, 4173, 4879, 1629, 1500, 15919, 2009, 9128, 4162, 1236, 589, 9136, 4440, 2]
+// Dependencies: [5, 32, 19, 17, 15971, 15978, 21, 9119, 9166, 4989, 15979, 9172, 4976, 12953, 11416, 9296, 15980, 9117, 15982, 9120, 10801, 4445, 712, 4173, 4880, 1629, 1500, 15984, 2009, 8553, 4162, 1236, 589, 8561, 4441, 2]
 // Exports: default
 
-// Module 15912 (WordTopic)
+// Module 15977 (WordTopic)
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "getPrimaryCategories" /* 15906 */;
-import { GuildPrimaryCategory } from "GuildPrimaryCategory" /* 15913 */;
+import closure_8 from "getPrimaryCategories" /* 15971 */;
+import { GuildPrimaryCategory } from "GuildPrimaryCategory" /* 15978 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function WordTopic(categoryid) {
   categoryid = categoryid.categoryid;
   ({ selected, handlePress: importDefault } = categoryid);
   if (GuildPrimaryCategory.GAMING === categoryid) {
-    let tmp2 = callback2(categoryid(8977).GameControllerIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    let tmp2 = callback2(categoryid(9119).GameControllerIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.ENTERTAINMENT === categoryid) {
-    tmp2 = callback2(categoryid(9861).TvIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9166).TvIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.GENERAL_CHATTING === categoryid) {
-    tmp2 = callback2(categoryid(4984).ForumIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(4989).ForumIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.SCIENCE_AND_TECH === categoryid) {
-    tmp2 = callback2(categoryid(15914).ScienceIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(15979).ScienceIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.MUSIC === categoryid) {
-    tmp2 = callback2(categoryid(9866).MusicIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9172).MusicIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.EDUCATION === categoryid) {
-    tmp2 = callback2(categoryid(4972).BookCheckIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(4976).BookCheckIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.CREATIVE_ARTS === categoryid) {
-    tmp2 = callback2(categoryid(7933).PaintPaletteIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(12953).PaintPaletteIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.FINANCE === categoryid) {
-    tmp2 = callback2(categoryid(11565).PiggyBankIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(11416).PiggyBankIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.BOTS === categoryid) {
-    tmp2 = callback2(categoryid(10683).RobotIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9296).RobotIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.SPORTS === categoryid) {
-    tmp2 = callback2(categoryid(15915).MedalIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(15980).MedalIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.TRAVEL_AND_FOOD === categoryid) {
-    tmp2 = callback2(categoryid(8975).FoodIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9117).FoodIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.FASHION_AND_BEAUTY === categoryid) {
-    tmp2 = callback2(categoryid(15917).PaintbrushThinIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(15982).PaintbrushThinIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (tmp.FITNESS_AND_HEALTH === categoryid) {
-    tmp2 = callback2(categoryid(8978).BicycleIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(9120).BicycleIcon, { size: "md", color: "redesign-button-tertiary-text" });
   } else if (16 === categoryid) {
-    tmp2 = callback2(categoryid(10407).PencilSparkleIcon, { size: "md", color: "redesign-button-tertiary-text" });
+    tmp2 = callback2(categoryid(10801).PencilSparkleIcon, { size: "md", color: "redesign-button-tertiary-text" });
   }
   let obj = categoryid(4173);
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: selected });
@@ -66,7 +66,7 @@ function WordTopic(categoryid) {
       return callback(categoryid);
     };
     obj[5] = tmp2;
-    tmp48Result = callback2(categoryid(4879).Button, obj);
+    tmp48Result = callback2(categoryid(4880).Button, obj);
     const tmp48 = callback2;
   }
   return tmp48Result;
@@ -206,11 +206,11 @@ export default function ICYMITopicsScreen() {
   obj = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: null };
   let intl = first(1236).intl;
   obj[3] = intl.string(first(1236).t.Y5d99L);
-  const children = [callback2(first(4440).Text, obj), , , , ];
+  const children = [callback2(first(4441).Text, obj), , , , ];
   obj = { variant: "text-sm/normal", color: "text-muted", style: tmp.subtitle, children: null };
   const intl2 = first(1236).intl;
   obj[3] = intl2.string(first(1236).t.MGZsfv);
-  children[1] = callback2(first(4440).Text, obj);
+  children[1] = callback2(first(4441).Text, obj);
   obj1 = { style: tmp.separator };
   children[2] = callback2(closure_6, obj1);
   let obj2 = { showsVerticalScrollIndicator: false, style: tmp.container, contentContainerStyle: tmp.scrollContentContainer, contentInset: obj3, children: null };
@@ -233,7 +233,7 @@ export default function ICYMITopicsScreen() {
     const intl3 = tmp7(1236).intl;
     obj7[2] = intl3.string(tmp7(1236).t.PDTjLN);
     obj7[3] = callback;
-    obj5[1] = tmp12(tmp7(4879).Button, obj7);
+    obj5[1] = tmp12(tmp7(4880).Button, obj7);
     tmp12Result = tmp12(tmp13, obj5);
   }
   children[4] = tmp12Result;

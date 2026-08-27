@@ -1,11 +1,11 @@
-// Module ID: 4238
-// Function ID: 4239
+// Module ID: 4239
+// Function ID: 4240
 // Name: CameraRive
-// Dependencies: [109, 19, 21, 4178, 4239, 4233, 2]
+// Dependencies: [109, 19, 21, 4179, 4240, 4234, 2]
 
-// Module 4238 (CameraRive)
-import BaseRive from "BaseRive" /* 4178 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4233 */;
+// Module 4239 (CameraRive)
+import BaseRive from "BaseRive" /* 4179 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4234 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

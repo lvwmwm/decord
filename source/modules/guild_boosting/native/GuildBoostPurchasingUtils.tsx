@@ -1,10 +1,10 @@
-// Module ID: 7074
-// Function ID: 7075
+// Module ID: 7080
+// Function ID: 7081
 // Name: _launchGuildBoostFlowOrAlert
-// Dependencies: [5, 4113, 676, 1924, 4809, 1236, 698, 4789, 7075, 7080, 6034, 7081, 7082, 4107, 2]
+// Dependencies: [5, 4113, 676, 1924, 4810, 1236, 698, 4790, 7081, 7086, 6039, 7087, 7088, 4107, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7074 (_launchGuildBoostFlowOrAlert)
+// Module 7080 (_launchGuildBoostFlowOrAlert)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "reset" /* 4113 */;
 import ME from "ME" /* 676 */;
@@ -75,7 +75,7 @@ function _launchGuildBoostFlowOrAlert() {
                 return obj1;
               } else if (c4.hasFetchedSubscriptions()) {
                 premiumTypeSubscription = c4.getPremiumTypeSubscription();
-                let obj3 = callback(7075);
+                let obj3 = callback(7081);
                 externalManagementMessage = obj3.getExternalManagementMessage(premiumTypeSubscription);
                 if (null != externalManagementMessage) {
                   (function alertUnableToManageSub(closure_7, c0) {
@@ -92,8 +92,8 @@ function _launchGuildBoostFlowOrAlert() {
                   c8 = null;
                   if (null != premiumTypeSubscription) {
                     c4 = 1;
-                    constants = callback(7080).getProductIdFromSubscription(premiumTypeSubscription, true);
-                    const tmp65 = callback(6034).AppStorePremiumProductIdsToPremiumBundledItems[constants];
+                    constants = callback(7086).getProductIdFromSubscription(premiumTypeSubscription, true);
+                    const tmp65 = callback(6039).AppStorePremiumProductIdsToPremiumBundledItems[constants];
                     let interval;
                     if (tmp65 != null) {
                       interval = tmp65.interval;
@@ -104,12 +104,12 @@ function _launchGuildBoostFlowOrAlert() {
                     }
                     c8 = c1;
                     c4 = 0;
-                    const obj11 = callback(7080);
+                    const obj11 = callback(7086);
                   }
                 }
                 premiumTypeSubscription = 3;
               } else {
-                obj1 = callback(4789);
+                obj1 = callback(4790);
                 c5 = 2;
                 premiumTypeSubscription = 1;
                 let obj2 = { value: null, done: false };
@@ -130,11 +130,11 @@ function _launchGuildBoostFlowOrAlert() {
               c4 = 0;
               c8 = null;
             }
-            mobileBoostingEnabled = callback(7081).getMobileBoostingEnabled("GuildBoostPurchasing");
+            mobileBoostingEnabled = callback(7087).getMobileBoostingEnabled("GuildBoostPurchasing");
             if (mobileBoostingEnabled) {
               mobileBoostingEnabled = c8 === constants.YEAR;
             }
-            const obj5 = callback(7081);
+            const obj5 = callback(7087);
             obj3 = { showCurrentPlan: false, isBoostPurchaseFlow: true, allowYearlyBundles: null, predicate: null, analyticsLocation: null, analyticsLocations: null, guildId: null, onBack: null, onPaymentSuccess: null, onPaymentDismiss: null };
             obj3[2] = mobileBoostingEnabled;
             obj3[3] = function predicate(interval) {
@@ -169,8 +169,8 @@ function _launchGuildBoostFlowOrAlert() {
             obj3[7] = c3;
             obj3[8] = c4;
             obj3[9] = c5;
-            const result = callback(7082).launchPremiumPlanSelect(obj3);
-            const obj6 = callback(7082);
+            const result = callback(7088).launchPremiumPlanSelect(obj3);
+            const obj6 = callback(7088);
           }
         } catch (tmp45) {
           if (tmp3 === c4) {

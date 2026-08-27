@@ -1,29 +1,29 @@
-// Module ID: 13335
-// Function ID: 13336
+// Module ID: 13362
+// Function ID: 13363
 // Name: PrivateChannelSubtitle
-// Dependencies: [19, 17, 1390, 1910, 4089, 676, 21, 4444, 712, 13336, 13337, 4440, 13338, 589, 10974, 4638, 9280, 1236, 4298, 1297, 4962, 13340, 11053, 9940, 5015, 2]
+// Dependencies: [19, 17, 1390, 1910, 4089, 676, 21, 4445, 712, 13363, 13364, 4441, 13365, 589, 9948, 4639, 9829, 1236, 4299, 1297, 4964, 13367, 10014, 10034, 5020, 2]
 
-// Module 13335 (PrivateChannelSubtitle)
+// Module 13362 (PrivateChannelSubtitle)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import computeChannelNameDefault from "computeChannelName" /* 4638 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 4962 */;
-import PressableBase from "PressableBase" /* 5015 */;
-import registerAssetDefault from "registerAsset" /* 9940 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10974 */;
-import id from "id" /* 13336 */;
-import idDefault from "id" /* 13336 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13337 */;
-import OnGoingCallTimerDefault from "OnGoingCallTimer" /* 13338 */;
+import computeChannelNameDefault from "computeChannelName" /* 4639 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 4964 */;
+import PressableBase from "PressableBase" /* 5020 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 9948 */;
+import registerAssetDefault from "registerAsset" /* 10034 */;
+import id from "id" /* 13363 */;
+import idDefault from "id" /* 13363 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 13364 */;
+import OnGoingCallTimerDefault from "OnGoingCallTimer" /* 13365 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "participantFromServer" /* 1390 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function PrivateChannelSubtitle(channel) {
@@ -37,10 +37,10 @@ function PrivateChannelSubtitle(channel) {
   if (tmp6Result) {
     obj = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: " - " };
     obj[0] = tmp.subtitle;
-    tmp6Result = tmp6(tmp7(4440).Text, obj);
+    tmp6Result = tmp6(tmp7(4441).Text, obj);
   }
   items[1] = tmp6Result;
-  tmp6Result = state === tmp7(13336).CallStates.CONNECTED;
+  tmp6Result = state === tmp7(13363).CallStates.CONNECTED;
   if (tmp6Result) {
     obj1 = { channelId: null, style: null };
     obj1[0] = channel.id;

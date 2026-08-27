@@ -1,19 +1,19 @@
-// Module ID: 16384
-// Function ID: 16385
+// Module ID: 16448
+// Function ID: 16449
 // Name: ToastIcon
-// Dependencies: [32, 19, 17, 21, 4444, 712, 4165, 1297, 4440, 2]
+// Dependencies: [32, 19, 17, 21, 4445, 712, 4165, 1297, 4441, 2]
 // Exports: default
 
-// Module 16384 (ToastIcon)
+// Module 16448 (ToastIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import map from "map" /* 4165 */;
-import Text from "Text" /* 4440 */;
+import Text from "Text" /* 4441 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function ToastIcon(recolorLegacyIcon) {

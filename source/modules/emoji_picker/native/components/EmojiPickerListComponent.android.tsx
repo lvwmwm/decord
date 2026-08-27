@@ -1,19 +1,19 @@
-// Module ID: 8937
-// Function ID: 8938
-// Dependencies: [19, 5348, 5352, 8855, 1338, 21, 4444, 4184, 8938, 5571, 1625, 4102, 8764, 8927, 2]
+// Module ID: 9081
+// Function ID: 9082
+// Dependencies: [19, 5353, 5357, 9022, 1338, 21, 4445, 4185, 9082, 5576, 1625, 4102, 7726, 9071, 2]
 
-// Module 8937
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8938 */;
+// Module 9081
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 9082 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5348 */;
-import { EmojiCategoryTypes } from "EmojiCategoryTypes" /* 5352 */;
-import { IMAGE_SIZE } from "IMAGE_SIZE" /* 8855 */;
+import closure_4 from "getEmojiToGroupId" /* 5353 */;
+import { EmojiCategoryTypes } from "EmojiCategoryTypes" /* 5357 */;
+import { IMAGE_SIZE } from "IMAGE_SIZE" /* 9022 */;
 import { PADDING_VERTICAL } from "ExpressionPickerViewType" /* 1338 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import BottomSheetModal from "BottomSheetModal" /* 5571 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import BottomSheetModal from "BottomSheetModal" /* 5576 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
-import importDefaultResult from "module_4184" /* 4184 */;
+import importDefaultResult from "module_4185" /* 4185 */;
 
 const require = arg1;
 let c3 = importAllResult;

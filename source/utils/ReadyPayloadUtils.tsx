@@ -1,14 +1,14 @@
-// Module ID: 13222
-// Function ID: 13223
+// Module ID: 13245
+// Function ID: 13246
 // Name: hydrateGuild
-// Dependencies: [1395, 1956, 7321, 7325, 1977, 7326, 1973, 12, 38, 2]
+// Dependencies: [1395, 1956, 7327, 7331, 1977, 7332, 1973, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 13222 (hydrateGuild)
+// Module 13245 (hydrateGuild)
 import set2 from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import itemsDefault from "items" /* 1956 */;
-import isCacheEnabled from "isCacheEnabled" /* 7321 */;
+import isCacheEnabled from "isCacheEnabled" /* 7327 */;
 
 function hydrateGuild(guild) {
   closure_0 = guild;
@@ -363,7 +363,7 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
   const obj = itemsDefault;
   const tmp4 = require;
   if (obj2.isCacheEnabled()) {
-    let tmpResult = tmp(7325);
+    let tmpResult = tmp(7331);
     let committedVersions = tmpResult.getCommittedVersions();
   } else {
     committedVersions = Promise.resolve({});
@@ -378,8 +378,8 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = tmp(7326).okAsync(databaseResult);
-    const tmpResult1 = tmp(7326);
+    let okAsyncResult = tmp(7332).okAsync(databaseResult);
+    const tmpResult1 = tmp(7332);
   } else {
     okAsyncResult = Promise.resolve(false);
   }

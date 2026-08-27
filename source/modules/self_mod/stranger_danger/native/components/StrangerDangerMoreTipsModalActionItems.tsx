@@ -1,15 +1,15 @@
-// Module ID: 10504
-// Function ID: 10505
+// Module ID: 10939
+// Function ID: 10940
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 4098, 1922, 9885, 21, 589, 4288, 10487, 9459, 1236, 8720, 8718, 8801, 5939, 10505, 2]
+// Dependencies: [32, 19, 4098, 1922, 10573, 21, 589, 4289, 10927, 8980, 1236, 7676, 7674, 7771, 5944, 10940, 2]
 // Exports: default
 
-// Module 10504 (StrangerDangerMoreTipsModalActionItems)
+// Module 10939 (StrangerDangerMoreTipsModalActionItems)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "markAllUserIdListsStale" /* 4098 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 9885 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 10573 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

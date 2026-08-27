@@ -1,0 +1,10 @@
+// Module ID: 9911
+// Function ID: 9912
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 9911 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "640773adfa92ac6570f53272a991a094", name: "ic_move_to_audience", type: "png" });

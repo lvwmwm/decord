@@ -1,9 +1,9 @@
-// Module ID: 6892
-// Function ID: 6893
+// Module ID: 6898
+// Function ID: 6899
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6892 (metadata)
+// Module 6898 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyShieldRight3dIllustration-2x.png.js");

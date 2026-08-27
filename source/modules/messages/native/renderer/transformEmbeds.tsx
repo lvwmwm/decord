@@ -1,10 +1,10 @@
-// Module ID: 8432
-// Function ID: 8433
+// Module ID: 7947
+// Function ID: 7948
 // Name: transformEmbeds
-// Dependencies: [17, 676, 8433, 8434, 4802, 8435, 500, 8273, 4635, 8409, 4131, 6082, 6087, 4685, 1236, 2]
+// Dependencies: [17, 676, 7948, 7949, 4803, 7950, 500, 7788, 4636, 7930, 4131, 6090, 6095, 4686, 1236, 2]
 // Exports: default
 
-// Module 8432 (transformEmbeds)
+// Module 7947 (transformEmbeds)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;

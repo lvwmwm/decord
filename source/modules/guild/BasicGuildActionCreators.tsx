@@ -1,13 +1,13 @@
-// Module ID: 17256
-// Function ID: 17257
+// Module ID: 17322
+// Function ID: 17323
 // Name: _fetchBasicGuild
-// Dependencies: [5, 1910, 8283, 676, 709, 530, 2]
+// Dependencies: [5, 1910, 7797, 676, 709, 530, 2]
 // Exports: fetchBasicGuild
 
-// Module 17256 (_fetchBasicGuild)
+// Module 17322 (_fetchBasicGuild)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "getGuild" /* 8283 */;
+import closure_5 from "getGuild" /* 7797 */;
 import { Endpoints } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

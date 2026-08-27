@@ -1,12 +1,12 @@
-// Module ID: 13439
-// Function ID: 13440
+// Module ID: 13466
+// Function ID: 13467
 // Name: hasPerformanceForKrispFullband
-// Dependencies: [7342, 2]
+// Dependencies: [7348, 2]
 // Exports: default
 
-// Module 13439 (hasPerformanceForKrispFullband)
+// Module 13466 (hasPerformanceForKrispFullband)
 import set from "set" /* 2 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7342 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7348 */;
 
 const result = set.fileFinishedImporting("modules/device/hasPerformanceForKrispFullband.tsx");
 

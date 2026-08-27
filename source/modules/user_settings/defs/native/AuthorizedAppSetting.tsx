@@ -1,13 +1,13 @@
-// Module ID: 14467
-// Function ID: 14468
+// Module ID: 14494
+// Function ID: 14495
 // Name: route
-// Dependencies: [8302, 676, 10584, 14468, 2]
+// Dependencies: [7816, 676, 10988, 14495, 2]
 
-// Module 14467 (route)
+// Module 14494 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import MobileUserSettings from "MobileUserSettings" /* 8302 */;
-import createToggle from "createToggle" /* 10584 */;
+import MobileUserSettings from "MobileUserSettings" /* 7816 */;
+import createToggle from "createToggle" /* 10988 */;
 
 obj = {
   useTitle() {
@@ -20,7 +20,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.AUTHORIZED_APP,
   getComponent() {
-    return require(14468) /* AuthorizedAppScreen */.default;
+    return require(14495) /* AuthorizedAppScreen */.default;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,11 +1,11 @@
-// Module ID: 15983
-// Function ID: 15984
+// Module ID: 16048
+// Function ID: 16049
 // Name: emphasisHook
-// Dependencies: [5, 32, 19, 17, 1981, 4083, 676, 1398, 21, 14744, 589, 7863, 4440, 4809, 1236, 8637, 4043, 1297, 15977, 4411, 15984, 2009, 15973, 4958, 4879, 8902, 2]
+// Dependencies: [5, 32, 19, 17, 1981, 4083, 676, 1398, 21, 14771, 589, 8153, 4441, 4810, 1236, 7579, 4043, 1297, 16042, 4412, 16049, 2009, 16038, 4959, 4880, 9059, 2]
 // Exports: default
 
-// Module 15983 (emphasisHook)
-import Text from "Text" /* 4440 */;
+// Module 16048 (emphasisHook)
+import Text from "Text" /* 4441 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
@@ -24,14 +24,14 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(14744);
+  let obj = changeToListingId(14771);
   obj1 = activeListingId(4043)(activeSubscription.currentPeriodEnd);
   obj = { children: null };
   obj = { variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = activeSubscription(1236).intl;
   obj1 = { activeListingName: callback2(obj.useName(activeListingId), 1)[0], billingEndDate: obj1.format("MMMM Do"), emphasisHook };
   obj[2] = intl.format(activeSubscription(1236).t.lA7ztO, obj1);
-  const items = [callback3(activeSubscription(4440).Text, obj), callback3(activeSubscription(1297).Spacer, { size: 16 }), ];
+  const items = [callback3(activeSubscription(4441).Text, obj), callback3(activeSubscription(1297).Spacer, { size: 16 }), ];
   const obj2 = { text: null, onPress: null };
   const intl2 = activeSubscription(1236).intl;
   obj2[0] = intl2.string(activeSubscription(1236).t.SACegK);
@@ -40,7 +40,7 @@ function SwitchTiersButton(activeSubscription) {
     obj = { activeSubscription, activeListingId, changeToListingId };
     obj.openLazy(activeSubscription(closure_1_3[21])(closure_1_3[20], closure_1_3.paths), "ChangeSubscriptionCard:" + changeToListingId, obj);
   };
-  items[2] = callback3(activeSubscription(15977).ArrowButton, obj2);
+  items[2] = callback3(activeSubscription(16042).ArrowButton, obj2);
   obj[0] = items;
   return callback4(View, obj);
 }

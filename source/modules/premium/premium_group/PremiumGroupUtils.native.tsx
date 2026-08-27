@@ -1,10 +1,10 @@
-// Module ID: 8376
-// Function ID: 8377
+// Module ID: 7890
+// Function ID: 7891
 // Name: getPremiumGroupInviteEmbedText
-// Dependencies: [1922, 4121, 4288, 1236, 2985, 2, 8377]
+// Dependencies: [1922, 4121, 4289, 1236, 2985, 2, 7891]
 // Exports: getPremiumGroupInviteEmbedText, shouldShowPrimaryReminderNagbar, useCheckoutInstancePremiumGroupPurchaseEligibility, useIsEligibleForPremiumGroupMarketingMaterials, useIsEligibleForPremiumGroupNitroTabMarketingMaterials, useIsEligibleForPremiumGroupPurchase
 
-// Module 8376 (getPremiumGroupInviteEmbedText)
+// Module 7890 (getPremiumGroupInviteEmbedText)
 import messagesProxyDefault from "messagesProxy" /* 2985 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4121 */;
@@ -32,7 +32,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
       user = user.getUser(found);
       let nameFromUserResult = null;
       if (null != user) {
-        let obj4 = sender(4288);
+        let obj4 = sender(4289);
         nameFromUserResult = obj4.nameFromUser(user);
       }
       tmp8 = nameFromUserResult;
@@ -57,7 +57,7 @@ export const getPremiumGroupInviteEmbedText = function getPremiumGroupInviteEmbe
     }
     return tmp15;
   } else {
-    obj = sender(4288);
+    obj = sender(4289);
     const nameFromUserResult1 = obj.nameFromUser(sender);
     const obj3 = { message: null, header: null, body: null };
     const intl = sender(1236).intl;

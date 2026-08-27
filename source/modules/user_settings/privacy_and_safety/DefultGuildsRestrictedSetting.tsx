@@ -1,10 +1,10 @@
-// Module ID: 15191
-// Function ID: 15192
+// Module ID: 15255
+// Function ID: 15256
 // Name: useDefaultGuildsRestricted
 // Dependencies: [4134, 2]
 // Exports: useDefaultGuildsRestricted
 
-// Module 15191 (useDefaultGuildsRestricted)
+// Module 15255 (useDefaultGuildsRestricted)
 import set from "set" /* 2 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
 

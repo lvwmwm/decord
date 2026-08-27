@@ -1,19 +1,19 @@
-// Module ID: 5884
-// Function ID: 5885
+// Module ID: 5889
+// Function ID: 5890
 // Name: ActionSheetHeaderBar
-// Dependencies: [19, 17, 21, 4444, 712, 1236, 1494, 4165, 4866, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 1236, 1494, 4165, 4867, 2]
 // Exports: ActionSheetHeaderBar
 
-// Module 5884 (ActionSheetHeaderBar)
+// Module 5889 (ActionSheetHeaderBar)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import map from "map" /* 4165 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4866 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4867 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;

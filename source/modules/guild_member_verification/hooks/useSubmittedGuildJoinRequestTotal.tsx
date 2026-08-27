@@ -1,11 +1,11 @@
-// Module ID: 15652
-// Function ID: 15653
+// Module ID: 15716
+// Function ID: 15717
 // Name: useSubmittedGuildJoinRequestTotal
-// Dependencies: [7130, 589, 2]
+// Dependencies: [7136, 589, 2]
 // Exports: useSubmittedGuildJoinRequestTotal
 
-// Module 15652 (useSubmittedGuildJoinRequestTotal)
-import closure_2 from "updateSubmittedGuildJoinRequestTotal" /* 7130 */;
+// Module 15716 (useSubmittedGuildJoinRequestTotal)
+import closure_2 from "updateSubmittedGuildJoinRequestTotal" /* 7136 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useSubmittedGuildJoinRequestTotal.tsx");

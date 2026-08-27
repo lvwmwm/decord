@@ -1,10 +1,10 @@
-// Module ID: 14055
-// Function ID: 14056
-// Dependencies: [4485, 676, 10896, 7799, 1231, 14056, 2]
+// Module ID: 14082
+// Function ID: 14083
+// Dependencies: [4486, 676, 9424, 8368, 1231, 14083, 2]
 
-// Module 14055
-import authorizeWithPromptDefault from "authorizeWithPrompt" /* 14056 */;
-import closure_3 from "addApplication" /* 4485 */;
+// Module 14082
+import authorizeWithPromptDefault from "authorizeWithPrompt" /* 14083 */;
+import closure_3 from "addApplication" /* 4486 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

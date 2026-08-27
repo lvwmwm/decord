@@ -1,14 +1,14 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6909
+// Function ID: 6910
 // Name: ServerIconBonkBonkExample
-// Dependencies: [21, 5440, 6904, 2]
+// Dependencies: [21, 5445, 6910, 2]
 // Exports: ServerIconBonkBonkExample
 
-// Module 6903 (ServerIconBonkBonkExample)
+// Module 6909 (ServerIconBonkBonkExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6904 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6910 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconBonkBonkExample.native.tsx");

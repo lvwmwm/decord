@@ -1,10 +1,10 @@
-// Module ID: 16631
-// Function ID: 16632
+// Module ID: 16697
+// Function ID: 16698
 // Name: useControlAccessoryHeight
-// Dependencies: [19, 11913, 1367, 16601, 4184, 16606, 16483, 16605, 2]
+// Dependencies: [19, 11756, 1367, 16667, 4185, 16672, 16547, 16671, 2]
 // Exports: default
 
-// Module 16631 (useControlAccessoryHeight)
+// Module 16697 (useControlAccessoryHeight)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

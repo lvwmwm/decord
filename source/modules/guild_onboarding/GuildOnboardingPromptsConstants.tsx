@@ -1,10 +1,10 @@
-// Module ID: 5415
-// Function ID: 5416
+// Module ID: 5420
+// Function ID: 5421
 // Name: serverPromptToClientPrompt
 // Dependencies: [32, 109, 676, 659, 1236, 1903, 2]
 // Exports: clientPromptToServerPrompt, getConnectionIdentifier, getDefaultPrompt, getEmptyPrompt, isDefaultPrompt, isEmojiEmpty, parseConnectionIdentifier, serverApiResponseToClientState, validateOnboardingConnections
 
-// Module 5415 (serverPromptToClientPrompt)
+// Module 5420 (serverPromptToClientPrompt)
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isNullOrEmpty from "isNullOrEmpty" /* 1903 */;

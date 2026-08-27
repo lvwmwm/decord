@@ -1,17 +1,17 @@
-// Module ID: 4555
-// Function ID: 4556
+// Module ID: 4556
+// Function ID: 4557
 // Name: destroy
-// Dependencies: [5, 4508, 4546, 4556, 4558, 4559, 4560, 4589, 2]
+// Dependencies: [5, 4509, 4547, 4557, 4559, 4560, 4561, 4590, 2]
 
-// Module 4555 (destroy)
-import onDefault from "on" /* 4546 */;
-import WantsVideoQuality from "WantsVideoQuality" /* 4556 */;
-import logger2 from "logger" /* 4558 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4559 */;
-import cloneDeepDefault from "cloneDeep" /* 4560 */;
-import flatRestDefault from "flatRest" /* 4589 */;
+// Module 4556 (destroy)
+import onDefault from "on" /* 4547 */;
+import WantsVideoQuality from "WantsVideoQuality" /* 4557 */;
+import logger2 from "logger" /* 4559 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4560 */;
+import cloneDeepDefault from "cloneDeep" /* 4561 */;
+import flatRestDefault from "flatRest" /* 4590 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import DesktopSources from "DesktopSources" /* 4508 */;
+import DesktopSources from "DesktopSources" /* 4509 */;
 
 require = arg1;
 ({ ConnectionStates: c4, DEFAULT_VOICE_BITRATE: c5, MediaTypes: closure_6, ResolutionTypes: error, MediaEngineContextTypes: closure_8, VIDEO_QUALITY_FRAMERATE: c9, SIMULCAST_HQ_QUALITY: c10 } = DesktopSources);

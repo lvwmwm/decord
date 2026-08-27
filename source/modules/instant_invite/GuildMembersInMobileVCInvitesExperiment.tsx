@@ -1,10 +1,10 @@
-// Module ID: 9295
-// Function ID: 9296
+// Module ID: 9857
+// Function ID: 9858
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: getGuildMembersInMobileVCInvitesExperiment
 
-// Module 9295 (apexExperiment)
+// Module 9857 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

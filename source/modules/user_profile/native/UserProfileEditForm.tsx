@@ -1,19 +1,19 @@
-// Module ID: 14178
-// Function ID: 14179
+// Module ID: 14205
+// Function ID: 14206
 // Name: EditUserProfileBanner
-// Dependencies: [19, 17, 9005, 10358, 5948, 676, 685, 14179, 21, 8497, 14180, 4107, 5900, 5920, 14181, 4411, 14182, 2009, 8491, 8488, 8490, 1236, 9050, 14193, 8486, 6179, 5541, 712, 9676, 14194, 8501, 11504, 8529, 9662, 11607, 8496, 9051, 14197, 9738, 589, 9008, 9038, 9047, 14198, 4440, 4172, 9663, 14199, 9664, 9683, 14204, 14205, 14210, 14214, 14216, 14217, 14221, 14225, 14230, 14231, 14234, 14235, 2]
+// Dependencies: [19, 17, 8492, 8954, 5953, 676, 685, 14206, 21, 7694, 14207, 4107, 5905, 5925, 14208, 4412, 14209, 2009, 8009, 8006, 8008, 1236, 8462, 14220, 8004, 6185, 5546, 712, 9134, 14221, 8016, 11358, 8046, 8463, 11458, 8011, 8478, 14224, 8926, 589, 8495, 8460, 8464, 14225, 4441, 4172, 9140, 14226, 9007, 8844, 14231, 14232, 14237, 14241, 14243, 14244, 14248, 14252, 14257, 14258, 14261, 14262, 2]
 // Exports: default
 
-// Module 14178 (EditUserProfileBanner)
-import registerAssetDefault from "registerAsset" /* 14180 */;
+// Module 14205 (EditUserProfileBanner)
+import registerAssetDefault from "registerAsset" /* 14207 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 9005 */;
-import closure_7 from "zustandStore" /* 10358 */;
-import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 5948 */;
+import closure_6 from "initialize" /* 8492 */;
+import closure_7 from "zustandStore" /* 8954 */;
+import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 5953 */;
 import ME from "ME" /* 676 */;
 import { ProfileCustomizationScrollPositions as closure_11 } from "MAX_FAVORITES" /* 685 */;
-import { UserProfileEditAutoFocusElement as closure_12 } from "UserProfileEditAutoFocusElement" /* 14179 */;
+import { UserProfileEditAutoFocusElement as closure_12 } from "UserProfileEditAutoFocusElement" /* 14206 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

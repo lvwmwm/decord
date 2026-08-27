@@ -1,7 +1,7 @@
 // Module ID: 4107
 // Function ID: 4108
 // Name: getPremiumPlanItem
-// Dependencies: [32, 19, 4108, 1922, 4109, 4110, 4112, 4113, 676, 1924, 4121, 505, 3, 4122, 4119, 1946, 38, 1236, 2985, 4043, 4131, 4152, 6028, 4120, 13009, 687, 589, 10557, 4338, 13606, 7228, 1942, 1938, 8914, 2]
+// Dependencies: [32, 19, 4108, 1922, 4109, 4110, 4112, 4113, 676, 1924, 4121, 505, 3, 4122, 4119, 1946, 38, 1236, 2985, 4043, 4131, 4152, 6033, 4120, 13032, 687, 589, 8421, 4339, 13633, 7234, 1942, 1938, 8146, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
 // Module 4107 (getPremiumPlanItem)
@@ -16,11 +16,11 @@ import hooksDefault from "hooks" /* 4043 */;
 import getNonePlanIdForIntervalType from "getNonePlanIdForIntervalType" /* 4119 */;
 import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4122 */;
 import resetCache from "resetCache" /* 4131 */;
-import formatSize from "formatSize" /* 4338 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6028 */;
-import apexExperiment from "apexExperiment" /* 7228 */;
-import roundFPCountdownUnits from "roundFPCountdownUnits" /* 13009 */;
-import ProductCatalogFeature from "ProductCatalogFeature" /* 13606 */;
+import formatSize from "formatSize" /* 4339 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6033 */;
+import apexExperiment from "apexExperiment" /* 7234 */;
+import roundFPCountdownUnits from "roundFPCountdownUnits" /* 13032 */;
+import ProductCatalogFeature from "ProductCatalogFeature" /* 13633 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { isNoneSubscription } from "createFromServer" /* 4108 */;
@@ -615,7 +615,7 @@ function getPlanDescription(arg0) {
   const tmp4 = getPrice(dependencyMap3[planId].id, false, false, obj, true);
   const interval = tmp.interval;
   const tmp5 = planIdsForSkus;
-  obj1 = planIdsForSkus(6028);
+  obj1 = planIdsForSkus(6033);
   if (constants7.MONTH === interval) {
     const intl2 = tmp5(1236).intl;
     let stringResult = intl2.string(tmp5(1236).t.FPybU7);
@@ -1999,7 +1999,7 @@ function getItemsWithUpsertedPlanIdForGroup(renewalMutations, basePlanId, arg2, 
     obj[0] = basePlanId;
     obj[1] = closure_31;
     obj[1] = obj;
-    const checkoutError = new _require(10557).CheckoutError(obj);
+    const checkoutError = new _require(8421).CheckoutError(obj);
     throw checkoutError;
   }
 }
@@ -2549,8 +2549,8 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1938).Perk.SHOP_DISCOUNTS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13606);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13606).COLLECTIBLES, currentUser);
+      tmpResult = tmp(13633);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13633).COLLECTIBLES, currentUser);
     }
     return isCrepeEnabled;
   },
@@ -2565,8 +2565,8 @@ obj = {
       isCrepeEnabled = tmpResult.hasPerk(perks, tmp(1938).Perk.MORE_QUEST_ORBS);
     }
     if (!isCrepeEnabled) {
-      tmpResult = tmp(13606);
-      isCrepeEnabled = tmpResult.canUserUse(tmp(13606).QUEST_ORB_MULTIPLIER, perks);
+      tmpResult = tmp(13633);
+      isCrepeEnabled = tmpResult.canUserUse(tmp(13633).QUEST_ORB_MULTIPLIER, perks);
     }
     return isCrepeEnabled;
   },

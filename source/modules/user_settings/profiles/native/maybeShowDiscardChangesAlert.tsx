@@ -1,13 +1,13 @@
-// Module ID: 9678
-// Function ID: 9679
+// Module ID: 9136
+// Function ID: 9137
 // Name: maybeShowDiscardChangesAlert
-// Dependencies: [4809, 1236, 2]
+// Dependencies: [4810, 1236, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 9678 (maybeShowDiscardChangesAlert)
+// Module 9136 (maybeShowDiscardChangesAlert)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4809 from "module_4809" /* 4809 */;
+import _modDef4810 from "module_4810" /* 4810 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/profiles/native/maybeShowDiscardChangesAlert.tsx");
 
@@ -18,7 +18,7 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
     if (onHasEdits != null) {
       onHasEdits();
     }
-    let obj = onConfirm(4809);
+    let obj = onConfirm(4810);
     obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null };
     const intl = getSystemLocale.intl;
     obj[0] = intl.string(getSystemLocale.t.pvRCSu);
@@ -43,7 +43,7 @@ export default function maybeShowDiscardChangesAlert(onHasEdits) {
 };
 export const showDiscardChangesAlert = function showDiscardChangesAlert(arg0) {
   ({ onConfirm, onCancel } = arg0);
-  let obj = _modDef4809;
+  let obj = _modDef4810;
   obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t.pvRCSu);

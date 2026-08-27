@@ -1,9 +1,9 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 9207
+// Function ID: 9208
 // Name: OAuth2Steps
 // Dependencies: [2]
 
-// Module 10650 (OAuth2Steps)
+// Module 9207 (OAuth2Steps)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/oauth2/Constants.tsx");

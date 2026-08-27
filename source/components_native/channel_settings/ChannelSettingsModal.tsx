@@ -1,17 +1,17 @@
-// Module ID: 16238
-// Function ID: 16239
+// Module ID: 16303
+// Function ID: 16304
 // Name: styles
-// Dependencies: [19, 17, 676, 8622, 21, 4444, 712, 16239, 1236, 10040, 16147, 16247, 16248, 16250, 16255, 16256, 16265, 16268, 16277, 16279, 16280, 16281, 16282, 16283, 2]
+// Dependencies: [19, 17, 676, 7555, 21, 4445, 712, 16304, 1236, 10144, 16210, 16312, 16313, 16315, 16320, 16321, 16330, 16333, 16342, 16344, 16345, 16346, 16347, 16348, 2]
 // Exports: getChannelSettingsScreens
 
-// Module 16238 (styles)
+// Module 16303 (styles)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
-import { SearchTabs } from "MessageEmbedTypes" /* 8622 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 7555 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;

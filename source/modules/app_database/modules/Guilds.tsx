@@ -1,9 +1,9 @@
-// Module ID: 7322
-// Function ID: 7323
+// Module ID: 7328
+// Function ID: 7329
 // Name: getAsync
 // Dependencies: [5, 1434, 1218, 1992, 1985, 1910, 3, 1956, 1989, 1987, 1430, 2]
 
-// Module 7322 (getAsync)
+// Module 7328 (getAsync)
 import timestampDefault from "timestamp" /* 3 */;
 import fromGuildPropertiesWithAdditionalFieldsAll from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
 import fromServerArrayAll from "fromServerArray" /* 1987 */;

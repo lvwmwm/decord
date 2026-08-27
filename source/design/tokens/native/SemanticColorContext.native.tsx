@@ -1,14 +1,14 @@
 // Module ID: 4166
 // Function ID: 4167
 // Name: getSemanticColorContextFromThemeContext
-// Dependencies: [688, 689, 4167, 4171, 4263, 2]
+// Dependencies: [688, 689, 4167, 4171, 4264, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
 // Module 4166 (getSemanticColorContextFromThemeContext)
 import set from "set" /* 2 */;
 import nDefault from "n" /* 689 */;
 import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 4171 */;
-import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4263 */;
+import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4264 */;
 
 const result = set.fileFinishedImporting("design/tokens/native/SemanticColorContext.native.tsx");
 

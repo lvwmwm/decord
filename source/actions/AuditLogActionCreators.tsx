@@ -1,13 +1,13 @@
-// Module ID: 16977
-// Function ID: 16978
+// Module ID: 17043
+// Function ID: 17044
 // Name: makeRequest
-// Dependencies: [16967, 676, 530, 709, 2]
+// Dependencies: [17033, 676, 530, 709, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 16977 (makeRequest)
+// Module 17043 (makeRequest)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "AuditLogActions" /* 16967 */;
+import closure_3 from "AuditLogActions" /* 17033 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -121,7 +121,7 @@ export const filterByUserId = function filterByUserId(id, guildId) {
       if (!tmp5) {
         if (null != guildId) {
           dispatcherDefault.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          obj = { userId: null, action: "Array", targetId: "paddingHorizontal" };
+          obj = { userId: null, action: "Array", targetId: "isArray" };
           obj[0] = id;
           const tmp10Result = dispatcherDefault;
           nextPromise = makeRequest(guildId, obj).then((body) => {

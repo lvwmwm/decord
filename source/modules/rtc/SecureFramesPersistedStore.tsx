@@ -1,9 +1,9 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9761
+// Function ID: 9762
 // Name: items
 // Dependencies: [589, 709, 2]
 
-// Module 9426 (items)
+// Module 9761 (items)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

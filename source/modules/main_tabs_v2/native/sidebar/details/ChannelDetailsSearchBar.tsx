@@ -1,13 +1,13 @@
-// Module ID: 16058
-// Function ID: 16059
-// Dependencies: [19, 11979, 8620, 9886, 21, 4444, 12012, 11939, 12000, 12003, 16059, 5015, 1236, 10162, 2]
+// Module ID: 16123
+// Function ID: 16124
+// Dependencies: [19, 11823, 7553, 10574, 21, 4445, 11856, 11783, 11844, 11847, 16124, 5020, 1236, 10286, 2]
 
-// Module 16058
+// Module 16123
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "prototype" /* 11979 */;
-import { setIsChannelDetailsSearchActive as closure_5 } from "useChannelDetailsStore" /* 8620 */;
+import closure_4 from "prototype" /* 11823 */;
+import { setIsChannelDetailsSearchActive as closure_5 } from "useChannelDetailsStore" /* 7553 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let c3 = importAllResult;

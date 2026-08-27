@@ -1,9 +1,9 @@
-// Module ID: 6414
-// Function ID: 6415
+// Module ID: 6420
+// Function ID: 6421
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6414 (metadata)
+// Module 6420 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscountsMegaphoneSpotIllustration-2x.png.js");

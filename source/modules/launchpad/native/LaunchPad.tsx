@@ -1,35 +1,35 @@
-// Module ID: 16397
-// Function ID: 16398
+// Module ID: 16461
+// Function ID: 16462
 // Name: TabButton
-// Dependencies: [32, 19, 17, 4154, 7197, 6118, 5395, 1395, 1218, 1391, 7390, 7308, 1910, 13294, 4459, 5328, 4653, 4463, 676, 21, 712, 4444, 5015, 4440, 589, 4184, 4306, 6167, 1236, 12564, 9352, 15055, 500, 14122, 12405, 7529, 4298, 7530, 7518, 1494, 1629, 7519, 11127, 698, 16398, 16405, 14123, 16424, 16425, 2]
+// Dependencies: [32, 19, 17, 4154, 7203, 6125, 5400, 1395, 1218, 1391, 7398, 7314, 1910, 13321, 4460, 5333, 4654, 4464, 676, 21, 712, 4445, 5020, 4441, 589, 4185, 4307, 6173, 1236, 9326, 9667, 15119, 500, 14149, 10623, 9855, 4299, 9856, 9844, 1494, 1629, 9845, 12241, 698, 16462, 16469, 14150, 16488, 16489, 2]
 
-// Module 16397 (TabButton)
+// Module 16461 (TabButton)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4440 */;
-import PressableBase from "PressableBase" /* 5015 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 7529 */;
+import Text from "Text" /* 4441 */;
+import PressableBase from "PressableBase" /* 5020 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9855 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "setContent" /* 4154 */;
-import closure_7 from "handleReset" /* 7197 */;
-import getIdFromHistoryItem from "getIdFromHistoryItem" /* 6118 */;
-import closure_11 from "getIdFromHistoryItem" /* 6118 */;
-import closure_12 from "rebuild" /* 5395 */;
+import closure_7 from "handleReset" /* 7203 */;
+import getIdFromHistoryItem from "getIdFromHistoryItem" /* 6125 */;
+import closure_11 from "getIdFromHistoryItem" /* 6125 */;
+import closure_12 from "rebuild" /* 5400 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_15 from "fetchFingerprint" /* 1218 */;
 import closure_16 from "ensureGuildLoaded" /* 1391 */;
-import closure_17 from "init" /* 7390 */;
-import closure_18 from "updateGuildUnreadSentinel" /* 7308 */;
+import closure_17 from "init" /* 7398 */;
+import closure_18 from "updateGuildUnreadSentinel" /* 7314 */;
 import closure_19 from "createGuildRecordFromRust" /* 1910 */;
-import closure_20 from "rebuildUnreads" /* 13294 */;
-import closure_21 from "generateOldThreadCutoff" /* 4459 */;
-import closure_22 from "insertUnsortedGuilds" /* 5328 */;
-import closure_23 from "updateUserGuildSettingsInternal" /* 4653 */;
-import closure_24 from "updateVoiceState" /* 4463 */;
+import closure_20 from "rebuildUnreads" /* 13321 */;
+import closure_21 from "generateOldThreadCutoff" /* 4460 */;
+import closure_22 from "insertUnsortedGuilds" /* 5333 */;
+import closure_23 from "updateUserGuildSettingsInternal" /* 4654 */;
+import closure_24 from "updateVoiceState" /* 4464 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function TabButton(selected) {

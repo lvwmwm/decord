@@ -1,21 +1,21 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16144
+// Function ID: 16145
 // Name: MediaGridPlaceholderItem
-// Dependencies: [19, 17, 8622, 21, 4444, 712, 16080, 4184, 16082, 12, 4440, 1236, 11978, 16083, 2]
+// Dependencies: [19, 17, 7555, 21, 4445, 712, 16143, 4185, 16145, 12, 4441, 1236, 11822, 16146, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 16081 (MediaGridPlaceholderItem)
+// Module 16144 (MediaGridPlaceholderItem)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4184 from "module_4184" /* 4184 */;
-import Text from "Text" /* 4440 */;
-import useFullscreenPlaceholderCount from "useFullscreenPlaceholderCount" /* 16080 */;
-import _modDef16082 from "module_16082" /* 16082 */;
+import _modDef4185 from "module_4185" /* 4185 */;
+import Text from "Text" /* 4441 */;
+import useFullscreenPlaceholderCount from "useFullscreenPlaceholderCount" /* 16143 */;
+import _modDef16145 from "module_16145" /* 16145 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8622 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7555 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 ({ MEDIA_NUM_COLUMNS: c5, MEDIA_ITEM_GAP_WIDTH: closure_6, SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING } = MessageEmbedTypes);
@@ -31,9 +31,9 @@ export default function MediaGridPlaceholderItem(arg0) {
   ({ size, containerStyle } = arg0);
   let obj = useFullscreenPlaceholderCount;
   const placeholderAnimatedStyle = obj.usePlaceholderAnimatedStyle(true);
-  obj = { style: items, pointerEvents: "none", children: callback(_modDef16082, { height: size, width: size, style: containerStyle }) };
+  obj = { style: items, pointerEvents: "none", children: callback(_modDef16145, { height: size, width: size, style: containerStyle }) };
   items = [containerStyle, placeholderAnimatedStyle];
-  return callback(_modDef4184.View, obj);
+  return callback(_modDef4185.View, obj);
 };
 export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(visible) {
   ({ size: require, numRows } = visible);
@@ -75,9 +75,9 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
           style: row.row,
           children: arr.map((arg0, arg1) => {
             let obj = { height: closure_0, width: closure_0, style: null };
-            const tmp = numRows(16082);
+            const tmp = numRows(16145);
             obj = { itemIndex: closure_0 * closure_2_5 + arg1, numItems: closure_1_3.length, numColumns: closure_2_5, spacing: closure_2_6 };
-            obj[2] = closure_2_0(11978).getMediaGridItemStyles(obj);
+            obj[2] = closure_2_0(11822).getMediaGridItemStyles(obj);
             return closure_2_7(tmp, obj, arg1);
           })
         }),
@@ -92,5 +92,5 @@ export const RecentsMediaGridPlaceholder = function RecentsMediaGridPlaceholder(
     })
   ];
   obj[2] = items4;
-  return callback2(numRows(4184).View, obj);
+  return callback2(numRows(4185).View, obj);
 };

@@ -1,9 +1,9 @@
-// Module ID: 12110
-// Function ID: 12111
+// Module ID: 11956
+// Function ID: 11957
 // Name: dispatcher
 // Dependencies: [709, 2]
 
-// Module 12110 (dispatcher)
+// Module 11956 (dispatcher)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

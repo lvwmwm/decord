@@ -1,18 +1,18 @@
-// Module ID: 13289
-// Function ID: 13290
+// Module ID: 13316
+// Function ID: 13317
 // Name: getApplicationIdForActivity
-// Dependencies: [12895, 13290, 13291, 4472, 9871, 8523, 12555, 2]
+// Dependencies: [12807, 13317, 13318, 4473, 9177, 8040, 9308, 2]
 // Exports: default
 
-// Module 13289 (getApplicationIdForActivity)
+// Module 13316 (getApplicationIdForActivity)
 import set from "set" /* 2 */;
-import items3 from "items3" /* 4472 */;
-import _isStreamingDefault from "_isStreaming" /* 8523 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 9871 */;
-import isOnXboxDefault from "isOnXbox" /* 12555 */;
-import getIconURL from "getIconURL" /* 12895 */;
-import getIconURL2 from "getIconURL" /* 13290 */;
-import getIconURL3 from "getIconURL" /* 13291 */;
+import items3 from "items3" /* 4473 */;
+import _isStreamingDefault from "_isStreaming" /* 8040 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 9177 */;
+import isOnXboxDefault from "isOnXbox" /* 9308 */;
+import getIconURL from "getIconURL" /* 12807 */;
+import getIconURL2 from "getIconURL" /* 13317 */;
+import getIconURL3 from "getIconURL" /* 13318 */;
 
 const SpotifyApplication = getIconURL.SpotifyApplication;
 let closure_3 = getIconURL2.TWITCH_APPLICATION_ID_PREFIX;

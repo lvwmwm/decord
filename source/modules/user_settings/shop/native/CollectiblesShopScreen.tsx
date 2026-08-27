@@ -1,16 +1,16 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15186
+// Function ID: 15187
 // Name: CollectiblesShopScreen
-// Dependencies: [19, 678, 21, 7087, 15123, 6194, 15124, 5920, 2]
+// Dependencies: [19, 678, 21, 7093, 15187, 6200, 15188, 5925, 2]
 // Exports: default
 
-// Module 15122 (CollectiblesShopScreen)
+// Module 15186 (CollectiblesShopScreen)
 import noopAll from "noop" /* 19 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5920 */;
-import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 6194 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7087 */;
-import useShopOrientationLock from "useShopOrientationLock" /* 15123 */;
-import CollectiblesShopInternal from "CollectiblesShopInternal" /* 15124 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5925 */;
+import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 6200 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7093 */;
+import useShopOrientationLock from "useShopOrientationLock" /* 15187 */;
+import CollectiblesShopInternal from "CollectiblesShopInternal" /* 15188 */;
 import { CollectiblesMobileShopScreen as closure_3 } from "items" /* 678 */;
 import { jsx } from "jsxProd" /* 21 */;
 

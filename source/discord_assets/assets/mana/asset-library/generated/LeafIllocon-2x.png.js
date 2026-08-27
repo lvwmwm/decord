@@ -1,9 +1,9 @@
-// Module ID: 6712
-// Function ID: 6713
+// Module ID: 6718
+// Function ID: 6719
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6712 (metadata)
+// Module 6718 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LeafIllocon-2x.png.js");

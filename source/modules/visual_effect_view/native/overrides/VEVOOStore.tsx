@@ -1,10 +1,10 @@
-// Module ID: 4870
-// Function ID: 4871
+// Module ID: 4871
+// Function ID: 4872
 // Name: useVisualEffectViewOverrides
 // Dependencies: [644, 705, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
-// Module 4870 (useVisualEffectViewOverrides)
+// Module 4871 (useVisualEffectViewOverrides)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 705 */;
 import keys from "keys" /* 644 */;

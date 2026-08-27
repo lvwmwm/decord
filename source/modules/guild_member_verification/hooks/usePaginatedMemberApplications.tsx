@@ -1,10 +1,10 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 16085
+// Function ID: 16086
 // Name: result
-// Dependencies: [5, 32, 19, 4269, 11, 8652, 4342, 2]
+// Dependencies: [5, 32, 19, 4270, 11, 7594, 4343, 2]
 // Exports: usePaginatedMemberApplications
 
-// Module 16020 (result)
+// Module 16085 (result)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -88,8 +88,8 @@ export const usePaginatedMemberApplications = function usePaginatedMemberApplica
                   obj1[1] = tmp69;
                   obj1[2] = closure_6;
                   const merged = Object.assign((function getRequestPaginationParams(closure_0, aPIError, arg2, arg3, flag) {
-                    const tmp2 = arg3 === callback(4269).GuildJoinRequestApplicationStatuses.SUBMITTED;
-                    if (arg2 === callback(4269).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
+                    const tmp2 = arg3 === callback(4270).GuildJoinRequestApplicationStatuses.SUBMITTED;
+                    if (arg2 === callback(4270).GuildJoinRequestSortOrders.TIMESTAMP_DESC) {
                       if (!flag) {
                         if (0 !== aPIError.length) {
                           let obj = { before: null };

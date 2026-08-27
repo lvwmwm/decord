@@ -1,32 +1,32 @@
-// Module ID: 7517
-// Function ID: 7518
+// Module ID: 9843
+// Function ID: 9844
 // Name: handleConnectionOpen
-// Dependencies: [5001, 5395, 1302, 1218, 1391, 4806, 1982, 1992, 1910, 4089, 4459, 1981, 4266, 4653, 676, 7518, 12, 7529, 5332, 1236, 7530, 1370, 595, 589, 709, 2]
+// Dependencies: [5006, 5400, 1302, 1218, 1391, 4807, 1982, 1992, 1910, 4089, 4460, 1981, 4267, 4654, 676, 9844, 12, 9855, 5337, 1236, 9856, 1370, 595, 589, 709, 2]
 
-// Module 7517 (handleConnectionOpen)
+// Module 9843 (handleConnectionOpen)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import sortByMatchScore from "sortByMatchScore" /* 7518 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 7518 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 7529 */;
-import closure_4 from "set" /* 5001 */;
-import closure_5 from "rebuild" /* 5395 */;
+import sortByMatchScore from "sortByMatchScore" /* 9844 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 9844 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9855 */;
+import closure_4 from "set" /* 5006 */;
+import closure_5 from "rebuild" /* 5400 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "handleChanged" /* 4806 */;
-import { DraftType } from "handleChanged" /* 4806 */;
+import closure_9 from "handleChanged" /* 4807 */;
+import { DraftType } from "handleChanged" /* 4807 */;
 import closure_11 from "comparator" /* 1982 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
 import closure_13 from "trackCommunicationDisabled" /* 1992 */;
 import closure_14 from "createGuildRecordFromRust" /* 1910 */;
 import closure_15 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_16 from "generateOldThreadCutoff" /* 4459 */;
+import closure_16 from "generateOldThreadCutoff" /* 4460 */;
 import closure_17 from "handleConnectionOpen" /* 1981 */;
-import closure_18 from "handleConnectionOpen" /* 4266 */;
-import closure_19 from "updateUserGuildSettingsInternal" /* 4653 */;
+import closure_18 from "handleConnectionOpen" /* 4267 */;
+import closure_19 from "updateUserGuildSettingsInternal" /* 4654 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -45,7 +45,7 @@ function generateResultFromId(arg0) {
     return null;
   } else {
     if (tmp3) {
-      if (tmp2.type !== tmp7(7518).AutocompleterResultTypes.USER) {
+      if (tmp2.type !== tmp7(9844).AutocompleterResultTypes.USER) {
         return null;
       }
     } else if (null != c26) {
@@ -399,61 +399,61 @@ function handleUserSearchUpdate(arr, str) {
   if (!flag) {
     let DOWN = require;
     if (sortByMatchScore.AutocompleterResultTypes.USER_GLOBAL !== c26) {
-      if (DOWN(7518).AutocompleterResultTypes.USER !== tmp7) {
-        if (DOWN(7518).AutocompleterResultTypes.TEXT_CHANNEL === tmp7) {
+      if (DOWN(9844).AutocompleterResultTypes.USER !== tmp7) {
+        if (DOWN(9844).AutocompleterResultTypes.TEXT_CHANNEL === tmp7) {
           const intl5 = DOWN(1236).intl;
-          arr = arr.unshift(DOWN(7518).createHeaderResult(intl5.string(DOWN(1236).t.W26k4V)));
+          arr = arr.unshift(DOWN(9844).createHeaderResult(intl5.string(DOWN(1236).t.W26k4V)));
           let items = arr;
-          const DOWNResult = DOWN(7518);
-        } else if (DOWN(7518).AutocompleterResultTypes.VOICE_CHANNEL === tmp7) {
+          const DOWNResult = DOWN(9844);
+        } else if (DOWN(9844).AutocompleterResultTypes.VOICE_CHANNEL === tmp7) {
           const intl4 = DOWN(1236).intl;
-          arr = arr.unshift(DOWN(7518).createHeaderResult(intl4.string(DOWN(1236).t.zUoI5C)));
+          arr = arr.unshift(DOWN(9844).createHeaderResult(intl4.string(DOWN(1236).t.zUoI5C)));
           items = arr;
-          const DOWNResult1 = DOWN(7518);
-        } else if (DOWN(7518).AutocompleterResultTypes.GUILD === tmp7) {
+          const DOWNResult1 = DOWN(9844);
+        } else if (DOWN(9844).AutocompleterResultTypes.GUILD === tmp7) {
           const intl3 = DOWN(1236).intl;
-          arr.unshift(DOWN(7518).createHeaderResult(intl3.string(DOWN(1236).t.olADPs)));
+          arr.unshift(DOWN(9844).createHeaderResult(intl3.string(DOWN(1236).t.olADPs)));
           items = arr;
-          const DOWNResult2 = DOWN(7518);
-        } else if (DOWN(7518).AutocompleterResultTypes.APPLICATION === tmp7) {
+          const DOWNResult2 = DOWN(9844);
+        } else if (DOWN(9844).AutocompleterResultTypes.APPLICATION === tmp7) {
           const intl2 = DOWN(1236).intl;
-          arr.unshift(DOWN(7518).createHeaderResult(intl2.string(DOWN(1236).t.VwK1ld)));
+          arr.unshift(DOWN(9844).createHeaderResult(intl2.string(DOWN(1236).t.VwK1ld)));
           items = arr;
-          const DOWNResult3 = DOWN(7518);
-        } else if (DOWN(7518).AutocompleterResultTypes.GAME_PROFILE === tmp7) {
+          const DOWNResult3 = DOWN(9844);
+        } else if (DOWN(9844).AutocompleterResultTypes.GAME_PROFILE === tmp7) {
           const intl = DOWN(1236).intl;
-          arr.unshift(DOWN(7518).createHeaderResult(intl.string(DOWN(1236).t.gEp2SG)));
+          arr.unshift(DOWN(9844).createHeaderResult(intl.string(DOWN(1236).t.gEp2SG)));
           items = arr;
-          const DOWNResult4 = DOWN(7518);
+          const DOWNResult4 = DOWN(9844);
         } else {
-          const found = arr.filter((type) => type.type === callback(7518).AutocompleterResultTypes.GAME_PROFILE);
+          const found = arr.filter((type) => type.type === callback(9844).AutocompleterResultTypes.GAME_PROFILE);
           const substr = found.slice(0, 3);
           items = [];
-          HermesBuiltin.arraySpread(substr, HermesBuiltin.arraySpread(arr.filter((type) => type.type !== callback(7518).AutocompleterResultTypes.GAME_PROFILE), 0));
+          HermesBuiltin.arraySpread(substr, HermesBuiltin.arraySpread(arr.filter((type) => type.type !== callback(9844).AutocompleterResultTypes.GAME_PROFILE), 0));
           arr = items;
         }
         if (str !== str) {
           const _Math = Math;
           closure_29 = Math.max(str.length, closure_29);
-          str = DOWN(7518).findNextSelectedResult;
-          DOWN = DOWN(7518).FindResultDirections.DOWN;
+          str = DOWN(9844).findNextSelectedResult;
+          DOWN = DOWN(9844).FindResultDirections.DOWN;
           closure_23 = str(DOWN, -1, arr);
-          const DOWNResult5 = DOWN(7518);
+          const DOWNResult5 = DOWN(9844);
         } else {
           let tmp31 = null != tmp29;
           if (tmp31) {
-            tmp31 = tmp29.type === DOWN(7518).AutocompleterResultTypes.HEADER;
+            tmp31 = tmp29.type === DOWN(9844).AutocompleterResultTypes.HEADER;
           }
           if (tmp31) {
-            closure_23 = DOWN(7518).findNextSelectedResult(DOWN(7518).FindResultDirections.DOWN, closure_23, arr);
-            const DOWNResult6 = DOWN(7518);
+            closure_23 = DOWN(9844).findNextSelectedResult(DOWN(9844).FindResultDirections.DOWN, closure_23, arr);
+            const DOWNResult6 = DOWN(9844);
           }
         }
         quickSwitcherStoreClass.emitChange();
       }
     }
     let guild = null;
-    if (c26 !== DOWN(7518).AutocompleterResultTypes.USER_GLOBAL) {
+    if (c26 !== DOWN(9844).AutocompleterResultTypes.USER_GLOBAL) {
       guild = store3.getGuild(store4.getGuildId());
     }
     if (null != guild) {
@@ -466,8 +466,8 @@ function handleUserSearchUpdate(arr, str) {
       const intl6 = DOWN(1236).intl;
       formatToPlainStringResult = intl6.string(DOWN(1236).t.XFYW1o);
     }
-    arr.unshift(DOWN(7518).createHeaderResult(formatToPlainStringResult));
-    const DOWNResult7 = DOWN(7518);
+    arr.unshift(DOWN(9844).createHeaderResult(formatToPlainStringResult));
+    const DOWNResult7 = DOWN(9844);
   }
 }
 function handleQuickSwitcherHide() {
@@ -610,7 +610,7 @@ const quickSwitcherStoreClass = new QuickSwitcherStoreClass(dispatcherDefault, {
           let tmp6 = require;
         } else {
           if (tmp2) {
-            const items1 = [tmp31(7518).AutocompleterResultTypes.USER];
+            const items1 = [tmp31(9844).AutocompleterResultTypes.USER];
             setResultTypes(items1);
             tmp6 = tmp31;
           } else {
@@ -626,7 +626,7 @@ const quickSwitcherStoreClass = new QuickSwitcherStoreClass(dispatcherDefault, {
         }
         store.setLimit(num);
         const guildId = store4.getGuildId();
-        if (queryMode === tmp6(7518).AutocompleterResultTypes.USER) {
+        if (queryMode === tmp6(9844).AutocompleterResultTypes.USER) {
           if (null != guildId) {
             let obj = { userFilters: null };
             obj = { guild: null, friends: true };
@@ -635,10 +635,10 @@ const quickSwitcherStoreClass = new QuickSwitcherStoreClass(dispatcherDefault, {
             store.setOptions(obj, true);
           }
         }
-        if (queryMode === tmp6(7518).AutocompleterResultTypes.VOICE_CHANNEL) {
+        if (queryMode === tmp6(9844).AutocompleterResultTypes.VOICE_CHANNEL) {
           store.setOptions({ voiceChannelGuildFilter: null }, true);
         } else {
-          store.setOptions({ userFilters: null, voiceChannelGuildFilter: "a" }, true);
+          store.setOptions({ userFilters: null, voiceChannelGuildFilter: "r" }, true);
         }
       }
       if (queryMode === sortByMatchScore.AutocompleterResultTypes.USER) {

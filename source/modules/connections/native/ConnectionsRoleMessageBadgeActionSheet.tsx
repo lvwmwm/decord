@@ -1,17 +1,17 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 11306
+// Function ID: 11307
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1930, 1218, 1992, 1985, 1910, 11452, 5299, 676, 21, 4444, 712, 1236, 5298, 4395, 4440, 4379, 12, 4165, 5174, 11198, 9347, 1297, 1435, 1363, 38, 5900, 5920, 589, 698, 4652, 5404, 5569, 5944, 4879, 4411, 11201, 8998, 2]
+// Dependencies: [32, 19, 17, 1930, 1218, 1992, 1985, 1910, 11307, 5304, 676, 21, 4445, 712, 1236, 5303, 4396, 4441, 4380, 12, 4165, 5179, 11081, 8856, 1297, 1435, 1363, 38, 5905, 5925, 589, 698, 4653, 5409, 5574, 5949, 4880, 4412, 11084, 8819, 2]
 // Exports: default
 
-// Module 11451 (PopoutCheck)
+// Module 11306 (PopoutCheck)
 import applyDefault from "apply" /* 12 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useThemeDefault from "useTheme" /* 4379 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4395 */;
-import Text from "Text" /* 4440 */;
-import officialApplicationIds2 from "officialApplicationIds" /* 5298 */;
+import useThemeDefault from "useTheme" /* 4380 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4396 */;
+import Text from "Text" /* 4441 */;
+import officialApplicationIds2 from "officialApplicationIds" /* 5303 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -20,11 +20,11 @@ import closure_8 from "fetchFingerprint" /* 1218 */;
 import closure_9 from "trackCommunicationDisabled" /* 1992 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import closure_12 from "map" /* 11452 */;
-import { OperatorTypes } from "OperatorTypes" /* 5299 */;
+import closure_12 from "map" /* 11307 */;
+import { OperatorTypes } from "OperatorTypes" /* 5304 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function PopoutCheck(arg0) {
@@ -149,7 +149,7 @@ class PopoutChecks {
               const items1 = [null, , , ];
               let tmp26 = null;
               if (null != tmp7) {
-                const obj3 = { style: null, user: null, size: null, guildId: "a" };
+                const obj3 = { style: null, user: null, size: null, guildId: "Array" };
                 obj3[0] = tmp21.popoutCheckGroupPlatformIcon;
                 obj3[1] = tmp7;
                 obj3[2] = tmp11(tmp3[24]).AvatarSizes.XSMALL;

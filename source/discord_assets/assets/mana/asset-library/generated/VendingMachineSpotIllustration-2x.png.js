@@ -1,9 +1,9 @@
-// Module ID: 7036
-// Function ID: 7037
+// Module ID: 7042
+// Function ID: 7043
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7036 (metadata)
+// Module 7042 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VendingMachineSpotIllustration-2x.png.js");

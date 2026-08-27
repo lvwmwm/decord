@@ -1,20 +1,20 @@
-// Module ID: 15718
-// Function ID: 15719
+// Module ID: 15782
+// Function ID: 15783
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 1992, 1910, 1922, 8896, 676, 21, 4444, 712, 589, 698, 8567, 15571, 1297, 5408, 15719, 1236, 1995, 2]
+// Dependencies: [19, 17, 1992, 1910, 1922, 9053, 676, 21, 4445, 712, 589, 698, 8084, 15636, 1297, 5413, 15783, 1236, 1995, 2]
 // Exports: default
 
-// Module 15718 (NsfwGateGuildSidebar)
+// Module 15782 (NsfwGateGuildSidebar)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { NsfwGateSource } from "NsfwGateSource" /* 8896 */;
+import { NsfwGateSource } from "NsfwGateSource" /* 9053 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ AnalyticEvents: c9, HelpdeskArticles: c10, Fonts: unpackModuleId } = ME);

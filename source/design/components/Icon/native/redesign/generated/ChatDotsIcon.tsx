@@ -1,14 +1,14 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14902
+// Function ID: 14903
 // Name: ChatDotsIcon
-// Dependencies: [19, 21, 712, 4164, 14876, 2]
+// Dependencies: [19, 21, 712, 4164, 14903, 2]
 // Exports: ChatDotsIcon
 
-// Module 14875 (ChatDotsIcon)
+// Module 14902 (ChatDotsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14876 */;
+import registerAsset from "registerAsset" /* 14903 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

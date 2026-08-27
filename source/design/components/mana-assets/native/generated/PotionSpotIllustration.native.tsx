@@ -1,14 +1,14 @@
-// Module ID: 6839
-// Function ID: 6840
+// Module ID: 6845
+// Function ID: 6846
 // Name: PotionSpotIllustration
-// Dependencies: [21, 5440, 6840, 2]
+// Dependencies: [21, 5445, 6846, 2]
 // Exports: PotionSpotIllustration
 
-// Module 6839 (PotionSpotIllustration)
+// Module 6845 (PotionSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6840 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6846 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PotionSpotIllustration.native.tsx");

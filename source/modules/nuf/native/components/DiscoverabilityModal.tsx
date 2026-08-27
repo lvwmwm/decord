@@ -1,20 +1,20 @@
-// Module ID: 12375
-// Function ID: 12376
+// Module ID: 12199
+// Function ID: 12200
 // Name: DiscoverabilityLandingScene
-// Dependencies: [19, 17, 12305, 1922, 676, 21, 4444, 712, 5439, 1500, 589, 12312, 691, 12332, 12376, 12325, 503, 5955, 1236, 2]
+// Dependencies: [19, 17, 12129, 1922, 676, 21, 4445, 712, 5444, 1500, 589, 12136, 691, 12156, 12200, 12149, 503, 5960, 1236, 2]
 
-// Module 12375 (DiscoverabilityLandingScene)
+// Module 12199 (DiscoverabilityLandingScene)
 import keys from "keys" /* 691 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import NavigationStack from "NavigationStack" /* 5955 */;
-import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12325 */;
+import NavigationStack from "NavigationStack" /* 5960 */;
+import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12149 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useContactSyncModalStore } from "ContactSyncModes" /* 12305 */;
+import { useContactSyncModalStore } from "ContactSyncModes" /* 12129 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function DiscoverabilityLandingScene() {
@@ -66,9 +66,9 @@ function DiscoverabilityNameScene() {
   }, items);
   let obj = { style: tmp.container, children: null };
   callback = React.useCallback((arg0) => {
-    const result = allowPhone(12332).startContactSyncForDiscoverability(arg0);
-    const obj = allowPhone(12332);
-    const result1 = allowPhone(12332).closeDiscoverabilityModal(false);
+    const result = allowPhone(12156).startContactSyncForDiscoverability(arg0);
+    const obj = allowPhone(12156);
+    const result1 = allowPhone(12156).closeDiscoverabilityModal(false);
   }, []);
   obj = { onNext: callback, loading: false, initialName: null };
   const tmp2 = useContactSyncModalStore();

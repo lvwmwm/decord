@@ -1,10 +1,10 @@
-// Module ID: 5057
-// Function ID: 5058
+// Module ID: 5062
+// Function ID: 5063
 // Name: getIosJpegliConfig
 // Dependencies: [1472, 2]
 // Exports: getIosJpegliConfig
 
-// Module 5057 (getIosJpegliConfig)
+// Module 5062 (getIosJpegliConfig)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

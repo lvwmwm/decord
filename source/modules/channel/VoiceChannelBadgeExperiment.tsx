@@ -1,13 +1,13 @@
-// Module ID: 8552
-// Function ID: 8553
+// Module ID: 8069
+// Function ID: 8070
 // Name: experiment
-// Dependencies: [4358, 4355, 2]
+// Dependencies: [4359, 4356, 2]
 // Exports: getVoiceChannelBadgeExperiment, useVoiceChannelBadgeExperiment
 
-// Module 8552 (experiment)
+// Module 8069 (experiment)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4358 */;
-import createExperiment from "createExperiment" /* 4355 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4359 */;
+import createExperiment from "createExperiment" /* 4356 */;
 
 const items = [{ id: 0, label: "Control", config: { enabled: false } }, { id: 1, label: "Show voice badges", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ id: "2026-03_voice_badge", kind: "guild", commonTriggerPoint: ExperimentBuckets.CommonTriggerPoints.VOICE_CALL, label: "Display Voice Channel Badge", defaultConfig: { enabled: false }, treatments: items });

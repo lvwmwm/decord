@@ -1,9 +1,9 @@
-// Module ID: 7315
-// Function ID: 7316
+// Module ID: 7321
+// Function ID: 7322
 // Name: handleCacheOrSocketLoaded
 // Dependencies: [1910, 4098, 589, 709, 2]
 
-// Module 7315 (handleCacheOrSocketLoaded)
+// Module 7321 (handleCacheOrSocketLoaded)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "createGuildRecordFromRust" /* 1910 */;

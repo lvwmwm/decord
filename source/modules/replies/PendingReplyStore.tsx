@@ -1,15 +1,15 @@
-// Module ID: 7351
-// Function ID: 7352
+// Module ID: 7358
+// Function ID: 7359
 // Name: getState
-// Dependencies: [32, 1391, 4687, 11, 589, 709, 2]
+// Dependencies: [32, 1391, 4688, 11, 589, 709, 2]
 
-// Module 7351 (getState)
+// Module 7358 (getState)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "reinjectEphemerals" /* 4687 */;
+import closure_4 from "reinjectEphemerals" /* 4688 */;
 
 let closure_5 = {};
 let closure_6 = {};

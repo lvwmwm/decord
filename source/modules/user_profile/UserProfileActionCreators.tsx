@@ -1,10 +1,10 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 8009
+// Function ID: 8010
 // Name: _saveProfileChanges
-// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8492, 7353, 709, 8493, 530, 5060, 4342, 2]
+// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8010, 7360, 709, 7690, 530, 5065, 4343, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8491 (_saveProfileChanges)
+// Module 8009 (_saveProfileChanges)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;

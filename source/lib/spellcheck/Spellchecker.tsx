@@ -1,10 +1,10 @@
-// Module ID: 5518
-// Function ID: 5519
+// Module ID: 5523
+// Function ID: 5524
 // Name: _install
-// Dependencies: [5, 32, 1996, 3, 4072, 5519, 5520, 5521, 5522, 1370, 12, 1906, 2]
+// Dependencies: [5, 32, 1996, 3, 4072, 5524, 5525, 5526, 5527, 1370, 12, 1906, 2]
 // Exports: install
 
-// Module 5518 (_install)
+// Module 5523 (_install)
 import timestampDefault from "timestamp" /* 3 */;
 import set from "set" /* 1906 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;

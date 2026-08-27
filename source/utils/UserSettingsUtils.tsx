@@ -1,16 +1,16 @@
-// Module ID: 6188
-// Function ID: 6189
+// Module ID: 6194
+// Function ID: 6195
 // Name: getSanitizedRestrictedGuilds
-// Dependencies: [4807, 1910, 676, 4134, 4652, 6189, 1236, 1231, 2]
+// Dependencies: [4808, 1910, 676, 4134, 4653, 6195, 1236, 1231, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 6188 (getSanitizedRestrictedGuilds)
+// Module 6194 (getSanitizedRestrictedGuilds)
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4652 */;
-import getSearchSessionIdDefault from "getSearchSessionId" /* 6189 */;
-import closure_3 from "handleConnectionOpen" /* 4807 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4653 */;
+import getSearchSessionIdDefault from "getSearchSessionId" /* 6195 */;
+import closure_3 from "handleConnectionOpen" /* 4808 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
 

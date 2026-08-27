@@ -1,13 +1,13 @@
-// Module ID: 8566
-// Function ID: 8567
+// Module ID: 8083
+// Function ID: 8084
 // Name: computePermissions
-// Dependencies: [19, 1984, 1395, 1434, 1218, 1391, 1992, 1910, 4089, 1922, 676, 8567, 589, 506, 1955, 2]
+// Dependencies: [19, 1984, 1395, 1434, 1218, 1391, 1992, 1910, 4089, 1922, 676, 8084, 589, 506, 1955, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 8566 (computePermissions)
+// Module 8083 (computePermissions)
 import fromStringAll from "fromString" /* 506 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 8567 */;
+import resolveNsfwTogglesWithDefaults from "resolveNsfwTogglesWithDefaults" /* 8084 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "initialize" /* 1984 */;
 import { ChannelRecordBase } from "createChannelRecord" /* 1395 */;

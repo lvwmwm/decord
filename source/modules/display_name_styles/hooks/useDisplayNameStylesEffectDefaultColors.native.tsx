@@ -1,10 +1,10 @@
-// Module ID: 9689
-// Function ID: 9690
+// Module ID: 8852
+// Function ID: 8853
 // Name: useDisplayNameStylesEffectDefaultColors
 // Dependencies: [19, 1934, 688, 4165, 712, 1935, 2]
 // Exports: default
 
-// Module 9689 (useDisplayNameStylesEffectDefaultColors)
+// Module 8852 (useDisplayNameStylesEffectDefaultColors)
 import int2hslRaw from "int2hslRaw" /* 688 */;
 import ThemesDefault from "Themes" /* 712 */;
 import map from "map" /* 4165 */;

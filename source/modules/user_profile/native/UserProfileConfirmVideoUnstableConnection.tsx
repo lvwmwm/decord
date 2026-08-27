@@ -1,13 +1,13 @@
-// Module ID: 12255
-// Function ID: 12256
+// Module ID: 9002
+// Function ID: 9003
 // Name: UserProfileConfirmVideoUnstableConnection
-// Dependencies: [19, 21, 4814, 1236, 4814, 2]
+// Dependencies: [19, 21, 4815, 1236, 4815, 2]
 // Exports: default
 
-// Module 12255 (UserProfileConfirmVideoUnstableConnection)
+// Module 9002 (UserProfileConfirmVideoUnstableConnection)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4814 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4815 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

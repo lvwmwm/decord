@@ -1,10 +1,10 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16297
+// Function ID: 16298
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1922, 1388, 589, 4107, 1236, 6288, 8868, 2]
+// Dependencies: [19, 1922, 1388, 589, 4107, 1236, 6294, 8895, 2]
 // Exports: default
 
-// Module 16232 (BadgeCustomizationProfileCoachmark)
+// Module 16297 (BadgeCustomizationProfileCoachmark)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;

@@ -1,20 +1,20 @@
-// Module ID: 8542
-// Function ID: 8543
+// Module ID: 8059
+// Function ID: 8060
 // Name: reactionForId
-// Dependencies: [4436, 5348, 1391, 1992, 4687, 1922, 8543, 676, 4657, 4102, 4106, 1435, 8544, 4095, 4078, 8545, 1236, 7430, 8547, 500, 8548, 8549, 2]
+// Dependencies: [4437, 5353, 1391, 1992, 4688, 1922, 8060, 676, 4658, 4102, 4106, 1435, 8061, 4095, 4078, 8062, 1236, 7438, 8064, 500, 8065, 8066, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 8542 (reactionForId)
+// Module 8059 (reactionForId)
 import isCommunicationDisabled from "isCommunicationDisabled" /* 4078 */;
 import GuildMemberFlags from "GuildMemberFlags" /* 4095 */;
-import formatExpirationLabel from "formatExpirationLabel" /* 8544 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
-import closure_4 from "getEmojiToGroupId" /* 5348 */;
+import formatExpirationLabel from "formatExpirationLabel" /* 8061 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_4 from "getEmojiToGroupId" /* 5353 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import closure_7 from "reinjectEphemerals" /* 4687 */;
+import closure_7 from "reinjectEphemerals" /* 4688 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { getPollState } from "useMessagePollInteractions" /* 8543 */;
+import { getPollState } from "useMessagePollInteractions" /* 8060 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

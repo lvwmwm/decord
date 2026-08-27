@@ -1,15 +1,15 @@
-// Module ID: 8176
-// Function ID: 8177
+// Module ID: 8657
+// Function ID: 8658
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 8044, 8010, 589, 4685, 8011, 8046, 7274, 7279, 8177, 8015, 1236, 2]
+// Dependencies: [5, 32, 19, 8640, 8614, 589, 4686, 8615, 8642, 7280, 7285, 8658, 8619, 1236, 2]
 // Exports: default
 
-// Module 8176 (useAgeVerificationMethods)
+// Module 8657 (useAgeVerificationMethods)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 8044 */;
-import set from "set" /* 8010 */;
+import closure_6 from "initialize" /* 8640 */;
+import set from "set" /* 8614 */;
 
 const require = arg1;
 ({ VERIFICATION_METHOD_TITLE_MAP: error, VerificationMethod: closure_8 } = set);

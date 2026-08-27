@@ -1,10 +1,10 @@
-// Module ID: 7511
-// Function ID: 7512
+// Module ID: 7519
+// Function ID: 7520
 // Name: _stageAttachmentFiles
-// Dependencies: [5, 676, 5019, 2]
+// Dependencies: [5, 676, 5024, 2]
 // Exports: default
 
-// Module 7511 (_stageAttachmentFiles)
+// Module 7519 (_stageAttachmentFiles)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { AbortCodes } from "ME" /* 676 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 15947
-// Function ID: 15948
+// Module ID: 16012
+// Function ID: 16013
 // Name: UploadPlaceholder
-// Dependencies: [32, 19, 17, 1922, 9113, 21, 712, 4444, 15888, 1297, 10409, 4440, 1236, 8616, 4292, 589, 4699, 9452, 9665, 9741, 500, 5015, 4402, 9889, 11365, 7867, 11, 687, 15944, 4288, 7313, 15948, 8514, 2]
+// Dependencies: [32, 19, 17, 1922, 8537, 21, 712, 4445, 15953, 1297, 10803, 4441, 1236, 7549, 4293, 589, 4700, 8849, 9008, 9141, 500, 5020, 4403, 10246, 11227, 8160, 11, 687, 16009, 4289, 7319, 16013, 8030, 2]
 // Exports: default
 
-// Module 15947 (UploadPlaceholder)
+// Module 16012 (UploadPlaceholder)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4440 */;
-import registerAssetDefault from "registerAsset" /* 10409 */;
+import Text from "Text" /* 4441 */;
+import registerAssetDefault from "registerAsset" /* 10803 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "filterStaffGuild" /* 9113 */;
+import closure_7 from "filterStaffGuild" /* 8537 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import createICYMIStyles from "createICYMIStyles" /* 15888 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import createICYMIStyles from "createICYMIStyles" /* 15953 */;
 
 require = arg1;
 function UploadPlaceholder() {

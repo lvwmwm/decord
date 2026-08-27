@@ -1,10 +1,10 @@
-// Module ID: 16795
-// Function ID: 16796
+// Module ID: 16861
+// Function ID: 16862
 // Name: prototype
-// Dependencies: [32, 5, 1984, 1218, 1391, 1992, 1910, 4266, 4659, 4660, 4077, 5433, 1403, 4675, 16796, 2009, 11926, 691, 11925, 6016, 6017, 2]
+// Dependencies: [32, 5, 1984, 1218, 1391, 1992, 1910, 4267, 4660, 4661, 4077, 5438, 1403, 4676, 16862, 2009, 11769, 691, 11768, 6021, 6022, 2]
 
-// Module 16795 (prototype)
-import initializeDefault from "initialize" /* 5433 */;
+// Module 16861 (prototype)
+import initializeDefault from "initialize" /* 5438 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "initialize" /* 1984 */;
@@ -12,9 +12,9 @@ import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "trackCommunicationDisabled" /* 1992 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "handleConnectionOpen" /* 4266 */;
-import closure_11 from "handleSettingsLoadSuccess" /* 4659 */;
-import closure_12 from "set" /* 4660 */;
+import closure_10 from "handleConnectionOpen" /* 4267 */;
+import closure_11 from "handleSettingsLoadSuccess" /* 4660 */;
+import closure_12 from "set" /* 4661 */;
 import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
 
 const require = arg1;

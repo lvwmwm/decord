@@ -1,10 +1,10 @@
-// Module ID: 10130
-// Function ID: 10131
+// Module ID: 10255
+// Function ID: 10256
 // Name: PostComposerInputs
 // Dependencies: [32, 19, 2]
 // Exports: useFocusHandlers
 
-// Module 10130 (PostComposerInputs)
+// Module 10255 (PostComposerInputs)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "noop" /* 19 */;
 

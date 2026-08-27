@@ -1,9 +1,9 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 11948
+// Function ID: 11949
 // Name: Steps
 // Dependencies: [2]
 
-// Module 12102 (Steps)
+// Module 11948 (Steps)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_progress/GuildProgressConstants.tsx");

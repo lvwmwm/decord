@@ -1,12 +1,12 @@
-// Module ID: 8493
-// Function ID: 8494
+// Module ID: 7690
+// Function ID: 7691
 // Name: SafetyScannedUploadSurface
-// Dependencies: [8494, 2]
+// Dependencies: [7691, 2]
 // Exports: getSafetyScannedUploadSurfaceForProfileCustomization
 
-// Module 8493 (SafetyScannedUploadSurface)
+// Module 7690 (SafetyScannedUploadSurface)
 import set from "set" /* 2 */;
-import UploadTypes2 from "UploadTypes" /* 8494 */;
+import UploadTypes2 from "UploadTypes" /* 7691 */;
 
 const UploadTypes = UploadTypes2.UploadTypes;
 const obj = { USER_DEFAULT_PROFILE_AVATAR: "USER_DEFAULT_PROFILE_AVATAR", USER_DEFAULT_PROFILE_BANNER: "USER_DEFAULT_PROFILE_BANNER", USER_GUILD_PROFILE_AVATAR: "USER_GUILD_PROFILE_AVATAR", USER_GUILD_PROFILE_BANNER: "USER_GUILD_PROFILE_BANNER", GUILD_ICON: "GUILD_ICON", GUILD_BANNER: "GUILD_BANNER", GUILD_DISCOVERY_SPLASH: "GUILD_DISCOVERY_SPLASH", GUILD_INVITE_SPLASH: "GUILD_INVITE_SPLASH", EMOJI: "EMOJI", STICKER: "STICKER" };

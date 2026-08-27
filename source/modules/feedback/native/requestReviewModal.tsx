@@ -1,10 +1,10 @@
-// Module ID: 13237
-// Function ID: 13238
+// Module ID: 13263
+// Function ID: 13264
 // Name: _showAndroidRatingRequest
-// Dependencies: [5, 17, 3, 13238, 500, 2]
+// Dependencies: [5, 17, 3, 13264, 500, 2]
 // Exports: default
 
-// Module 13237 (_showAndroidRatingRequest)
+// Module 13263 (_showAndroidRatingRequest)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;

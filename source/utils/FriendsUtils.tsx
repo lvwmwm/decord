@@ -1,10 +1,10 @@
-// Module ID: 9463
-// Function ID: 9464
+// Module ID: 8984
+// Function ID: 8985
 // Name: validateDiscordTag
-// Dependencies: [32, 676, 1236, 38, 698, 9153, 2]
+// Dependencies: [32, 676, 1236, 38, 698, 8578, 2]
 // Exports: humanizeAbortCodeForA11y, isValidDiscordTag
 
-// Module 9463 (validateDiscordTag)
+// Module 8984 (validateDiscordTag)
 import _modDef38 from "module_38" /* 38 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
@@ -26,9 +26,9 @@ function validateDiscordTag(arr) {
       }
       obj[2] = str2.length;
       obj[3] = tmp4[0].length;
-      let tmp5Result = tmp5(9153);
+      let tmp5Result = tmp5(8578);
       obj[4] = tmp5Result.isEmail(arr);
-      tmp5Result = tmp5(9153);
+      tmp5Result = tmp5(8578);
       obj[5] = tmp5Result.isInvite(arr);
       obj[6] = regex.test(arr);
       obj.track(constants2.FRIEND_REQUEST_FAILED, obj);

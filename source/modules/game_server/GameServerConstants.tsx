@@ -1,13 +1,13 @@
-// Module ID: 4332
-// Function ID: 4333
+// Module ID: 4333
+// Function ID: 4334
 // Name: str11
-// Dependencies: [1929, 4333, 2]
+// Dependencies: [1929, 4334, 2]
 // Exports: GAME_SERVER_SURVEY_URL
 
-// Module 4332 (str11)
+// Module 4333 (str11)
 import set from "set" /* 2 */;
 import Environments from "Environments" /* 1929 */;
-import GameServerProviderType from "GameServerProviderType" /* 4333 */;
+import GameServerProviderType from "GameServerProviderType" /* 4334 */;
 
 let obj = { SELECT_GAME: "select-game", SERVER_SETTINGS: "server-settings" };
 obj = { type: "go-to-step", step: obj.SERVER_SETTINGS };

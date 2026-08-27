@@ -1,10 +1,10 @@
-// Module ID: 10194
-// Function ID: 10195
+// Module ID: 10318
+// Function ID: 10319
 // Name: _openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 676, 21, 698, 6050, 4789, 4809, 10195, 2009, 2]
+// Dependencies: [5, 19, 676, 21, 698, 6056, 4790, 4810, 10319, 2009, 2]
 // Exports: default
 
-// Module 10194 (_openStickersPremiumUpsellAlert)
+// Module 10318 (_openStickersPremiumUpsellAlert)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;

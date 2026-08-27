@@ -1,13 +1,13 @@
-// Module ID: 15939
-// Function ID: 15940
+// Module ID: 16004
+// Function ID: 16005
 // Name: sendMessageWithEmbed
-// Dependencies: [7353, 7129, 2]
+// Dependencies: [7360, 7135, 2]
 // Exports: sendMessageWithEmbed, sendMessageWithoutContentInventoryEntry
 
-// Module 15939 (sendMessageWithEmbed)
+// Module 16004 (sendMessageWithEmbed)
 import set from "set" /* 2 */;
-import trackInviteDefault from "trackInvite" /* 7129 */;
-import rebuildDefault from "rebuild" /* 7353 */;
+import trackInviteDefault from "trackInvite" /* 7135 */;
+import rebuildDefault from "rebuild" /* 7360 */;
 
 const result = set.fileFinishedImporting("modules/content_inventory/reactionUtils.tsx");
 

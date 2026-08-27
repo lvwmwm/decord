@@ -1,10 +1,10 @@
-// Module ID: 8321
-// Function ID: 8322
+// Module ID: 7835
+// Function ID: 7836
 // Name: getGuildProductPurchaseSystemMessageContentMobile
 // Dependencies: [676, 1236, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 8321 (getGuildProductPurchaseSystemMessageContentMobile)
+// Module 7835 (getGuildProductPurchaseSystemMessageContentMobile)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

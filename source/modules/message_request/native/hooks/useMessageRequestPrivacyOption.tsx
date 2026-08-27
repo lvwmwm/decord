@@ -1,11 +1,11 @@
-// Module ID: 13535
-// Function ID: 13536
+// Module ID: 13562
+// Function ID: 13563
 // Name: MessageRequestRestrictedGuildPrivacyOption
-// Dependencies: [19, 21, 4134, 6188, 5938, 1236, 12078, 2]
+// Dependencies: [19, 21, 4134, 6194, 5943, 1236, 11924, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 13535 (MessageRequestRestrictedGuildPrivacyOption)
-import setDefault from "set" /* 12078 */;
+// Module 13562 (MessageRequestRestrictedGuildPrivacyOption)
+import setDefault from "set" /* 11924 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -43,7 +43,7 @@ function MessageRequestRestrictedGuildPrivacyOption(guild) {
   obj[2] = tmp5;
   obj[3] = callback;
   obj[4] = hasItem1;
-  return jsx(id(5938).ActionSheetSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null, disabled: null });
+  return jsx(id(5943).ActionSheetSwitchRow, { label: null, subLabel: null, value: null, onValueChange: null, disabled: null });
 }
 const result = require("set").fileFinishedImporting("modules/message_request/native/hooks/useMessageRequestPrivacyOption.tsx");
 

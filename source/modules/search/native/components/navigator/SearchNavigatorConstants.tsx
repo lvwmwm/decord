@@ -1,9 +1,9 @@
-// Module ID: 16077
-// Function ID: 16078
+// Module ID: 16140
+// Function ID: 16141
 // Name: SearchNavigatorScreens
 // Dependencies: [2]
 
-// Module 16077 (SearchNavigatorScreens)
+// Module 16140 (SearchNavigatorScreens)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorConstants.tsx");

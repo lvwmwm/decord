@@ -1,12 +1,12 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 8817
+// Function ID: 8818
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7293, 1218, 1388, 589, 4265, 1377, 1379, 4411, 9568, 2009, 2]
+// Dependencies: [19, 7299, 1218, 1388, 589, 4266, 1377, 1379, 4412, 8818, 2009, 2]
 // Exports: default, useHasNeverWishlisted
 
-// Module 9567 (useWishlistNUXActionSheet)
+// Module 8817 (useWishlistNUXActionSheet)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createUserWidgetFromServer" /* 7293 */;
+import closure_4 from "createUserWidgetFromServer" /* 7299 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 

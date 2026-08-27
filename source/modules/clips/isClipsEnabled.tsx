@@ -1,12 +1,12 @@
-// Module ID: 4505
-// Function ID: 4506
+// Module ID: 4506
+// Function ID: 4507
 // Name: isClipsEnabled
-// Dependencies: [4501, 4506, 589, 2]
+// Dependencies: [4502, 4507, 589, 2]
 // Exports: isClipsEnabled, useIsClipsEnabled
 
-// Module 4505 (isClipsEnabled)
-import apexExperiment from "apexExperiment" /* 4506 */;
-import closure_2 from "_migrateDefaultStorage" /* 4501 */;
+// Module 4506 (isClipsEnabled)
+import apexExperiment from "apexExperiment" /* 4507 */;
+import closure_2 from "_migrateDefaultStorage" /* 4502 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/clips/isClipsEnabled.tsx");

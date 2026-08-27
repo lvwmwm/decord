@@ -1,20 +1,20 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15571
+// Function ID: 15572
 // Name: HappeningNowLiveStageContent
-// Dependencies: [19, 17, 14811, 676, 21, 4444, 712, 698, 11131, 2009, 15507, 15508, 15509, 14812, 4993, 1297, 15518, 4638, 1236, 4637, 2]
+// Dependencies: [19, 17, 14838, 676, 21, 4445, 712, 698, 12379, 2009, 15572, 15573, 15574, 14839, 4998, 1297, 15583, 4639, 1236, 4638, 2]
 
-// Module 15506 (HappeningNowLiveStageContent)
+// Module 15571 (HappeningNowLiveStageContent)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getNicknameDefault from "getNickname" /* 4637 */;
-import HAPPENING_NOW_CARD_MARGIN_RIGHT from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 14812 */;
-import useLiveStageData from "useLiveStageData" /* 15507 */;
+import getNicknameDefault from "getNickname" /* 4638 */;
+import HAPPENING_NOW_CARD_MARGIN_RIGHT from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 14839 */;
+import useLiveStageData from "useLiveStageData" /* 15572 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14811 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14838 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 class HappeningNowLiveStageContent {

@@ -1,18 +1,18 @@
-// Module ID: 5398
-// Function ID: 5399
+// Module ID: 5403
+// Function ID: 5404
 // Name: handleChannelSelect
-// Dependencies: [1340, 1391, 1910, 1981, 4266, 676, 685, 4530, 12, 589, 709, 2]
+// Dependencies: [1340, 1391, 1910, 1981, 4267, 676, 685, 4531, 12, 589, 709, 2]
 
-// Module 5398 (handleChannelSelect)
+// Module 5403 (handleChannelSelect)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4530 */;
+import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4531 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "handleConnectionOpen" /* 4266 */;
+import closure_6 from "handleConnectionOpen" /* 4267 */;
 import { ID_REGEX } from "ME" /* 676 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
 

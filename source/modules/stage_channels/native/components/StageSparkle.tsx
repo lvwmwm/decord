@@ -1,18 +1,18 @@
-// Module ID: 7999
-// Function ID: 8000
+// Module ID: 8609
+// Function ID: 8610
 // Name: StageSparkleInner
-// Dependencies: [19, 17, 21, 4444, 712, 8000, 5440, 8001, 4172, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 8610, 5445, 8611, 4172, 2]
 // Exports: default
 
-// Module 7999 (StageSparkleInner)
+// Module 8609 (StageSparkleInner)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import ManaContext from "ManaContext" /* 4172 */;
-import preloadDefault from "preload" /* 5440 */;
-import registerAssetDefault from "registerAsset" /* 8000 */;
+import preloadDefault from "preload" /* 5445 */;
+import registerAssetDefault from "registerAsset" /* 8610 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function StageSparkleInner(style) {
@@ -38,8 +38,8 @@ function StageSparkleInner(style) {
   }
   obj[1] = tmp6Result;
   const items1 = [closure_4(View, obj), ];
-  const obj2 = { style: tmp3.sparkles, source: tmp10(8001) };
-  items1[1] = closure_4(tmp10(5440), obj2);
+  const obj2 = { style: tmp3.sparkles, source: tmp10(8611) };
+  items1[1] = closure_4(tmp10(5445), obj2);
   obj[1] = items1;
   return closure_5(View, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 10036
-// Function ID: 10037
+// Module ID: 10140
+// Function ID: 10141
 // Name: usePreviewableMediaText
-// Dependencies: [19, 10028, 1236, 2]
+// Dependencies: [19, 10132, 1236, 2]
 // Exports: usePreviewableMediaText
 
-// Module 10036 (usePreviewableMediaText)
+// Module 10140 (usePreviewableMediaText)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

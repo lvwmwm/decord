@@ -1,15 +1,15 @@
-// Module ID: 8339
-// Function ID: 8340
+// Module ID: 7853
+// Function ID: 7854
 // Name: createThreadStarterSystemMessage
-// Dependencies: [7267, 676, 38, 1236, 8291, 2]
+// Dependencies: [7273, 676, 38, 1236, 7805, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 8339 (createThreadStarterSystemMessage)
+// Module 7853 (createThreadStarterSystemMessage)
 import _modDef38 from "module_38" /* 38 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8291 */;
-import closure_3 from "processMessage" /* 7267 */;
-import { ReferencedMessageState } from "processMessage" /* 7267 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7805 */;
+import closure_3 from "processMessage" /* 7273 */;
+import { ReferencedMessageState } from "processMessage" /* 7273 */;
 import { MessageTypes } from "ME" /* 676 */;
 
 require = arg1;

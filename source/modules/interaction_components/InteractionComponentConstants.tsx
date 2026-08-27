@@ -1,9 +1,9 @@
-// Module ID: 8437
-// Function ID: 8438
+// Module ID: 7952
+// Function ID: 7953
 // Name: TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS
 // Dependencies: [2]
 
-// Module 8437 (TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS)
+// Module 7952 (TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/interaction_components/InteractionComponentConstants.tsx");

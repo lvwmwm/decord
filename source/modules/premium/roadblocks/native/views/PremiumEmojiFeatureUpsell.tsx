@@ -1,15 +1,15 @@
-// Module ID: 8941
-// Function ID: 8942
+// Module ID: 9085
+// Function ID: 9086
 // Name: PremiumEmojiFeatureUpsell
-// Dependencies: [19, 17, 21, 4444, 712, 1629, 6179, 691, 4184, 8942, 8597, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 1629, 6185, 691, 4185, 9086, 7530, 2]
 // Exports: default
 
-// Module 8941 (PremiumEmojiFeatureUpsell)
+// Module 9085 (PremiumEmojiFeatureUpsell)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;

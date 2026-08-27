@@ -1,9 +1,9 @@
-// Module ID: 5101
-// Function ID: 5102
+// Module ID: 5106
+// Function ID: 5107
 // Name: create
-// Dependencies: [5, 1953, 5102, 2]
+// Dependencies: [5, 1953, 5107, 2]
 
-// Module 5101 (create)
+// Module 5106 (create)
 import decodeImageDefault from "decodeImage" /* 1953 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 

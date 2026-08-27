@@ -1,14 +1,14 @@
-// Module ID: 6635
-// Function ID: 6636
+// Module ID: 6641
+// Function ID: 6642
 // Name: GiftCardTwoLeft3dIllustration
-// Dependencies: [21, 5440, 6636, 2]
+// Dependencies: [21, 5445, 6642, 2]
 // Exports: GiftCardTwoLeft3dIllustration
 
-// Module 6635 (GiftCardTwoLeft3dIllustration)
+// Module 6641 (GiftCardTwoLeft3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6636 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6642 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftCardTwoLeft3dIllustration.native.tsx");

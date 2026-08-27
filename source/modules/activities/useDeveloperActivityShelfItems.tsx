@@ -1,13 +1,13 @@
-// Module ID: 11698
-// Function ID: 11699
+// Module ID: 11531
+// Function ID: 11532
 // Name: useDeveloperActivityShelfItems
-// Dependencies: [19, 7798, 4472, 589, 2]
+// Dependencies: [19, 8430, 4473, 589, 2]
 // Exports: useDeveloperActivityShelfItems
 
-// Module 11698 (useDeveloperActivityShelfItems)
+// Module 11531 (useDeveloperActivityShelfItems)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "initialize" /* 7798 */;
-import { DEFAULT_EMBEDDED_ACTIVITY_CONFIG as closure_4 } from "items3" /* 4472 */;
+import closure_3 from "initialize" /* 8430 */;
+import { DEFAULT_EMBEDDED_ACTIVITY_CONFIG as closure_4 } from "items3" /* 4473 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/useDeveloperActivityShelfItems.tsx");

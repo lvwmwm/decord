@@ -1,10 +1,10 @@
-// Module ID: 8946
-// Function ID: 8947
+// Module ID: 9089
+// Function ID: 9090
 // Name: useAnalyticsContext
 // Dependencies: [19, 698, 2]
 // Exports: useAnalyticsContext
 
-// Module 8946 (useAnalyticsContext)
+// Module 9089 (useAnalyticsContext)
 import expandEventProperties from "expandEventProperties" /* 698 */;
 import closure_2 from "noop" /* 19 */;
 

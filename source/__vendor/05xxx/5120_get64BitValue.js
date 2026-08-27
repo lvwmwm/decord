@@ -1,0 +1,9 @@
+// Module ID: 5120
+// Function ID: 5121
+// Name: get64BitValue
+// Dependencies: []
+
+// Module 5120 (get64BitValue)
+arg5.get64BitValue = function get64BitValue(getUint32, sum4) {
+  return getUint32.getUint32(sum4 + 4);
+};

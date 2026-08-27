@@ -1,13 +1,13 @@
-// Module ID: 10974
-// Function ID: 10975
+// Module ID: 9948
+// Function ID: 9949
 // Name: useIsVoiceChannelFull
-// Dependencies: [1910, 4089, 4463, 505, 589, 4630, 2]
+// Dependencies: [1910, 4089, 4464, 505, 589, 4631, 2]
 // Exports: default, useIsVoiceChannelLocked
 
-// Module 10974 (useIsVoiceChannelFull)
+// Module 9948 (useIsVoiceChannelFull)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_4 from "updateVoiceState" /* 4463 */;
+import closure_4 from "updateVoiceState" /* 4464 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

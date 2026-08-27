@@ -1,11 +1,11 @@
-// Module ID: 9979
-// Function ID: 9980
+// Module ID: 10087
+// Function ID: 10088
 // Name: canViewPotentiallyNSFWChannel
-// Dependencies: [1391, 1922, 4683, 2]
+// Dependencies: [1391, 1922, 4684, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 9979 (canViewPotentiallyNSFWChannel)
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4683 */;
+// Module 10087 (canViewPotentiallyNSFWChannel)
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4684 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 

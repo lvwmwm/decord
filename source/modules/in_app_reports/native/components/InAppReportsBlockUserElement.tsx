@@ -1,10 +1,10 @@
-// Module ID: 12929
-// Function ID: 12930
+// Module ID: 12693
+// Function ID: 12694
 // Name: BlockUserElement
-// Dependencies: [19, 1391, 4098, 676, 21, 589, 4637, 4652, 9459, 7996, 12927, 1236, 8801, 2]
+// Dependencies: [19, 1391, 4098, 676, 21, 589, 4638, 4653, 8980, 8606, 12690, 1236, 7771, 2]
 // Exports: default
 
-// Module 12929 (BlockUserElement)
+// Module 12693 (BlockUserElement)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "markAllUserIdListsStale" /* 4098 */;

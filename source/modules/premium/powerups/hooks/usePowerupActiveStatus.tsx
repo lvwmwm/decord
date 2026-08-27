@@ -1,15 +1,15 @@
-// Module ID: 12132
-// Function ID: 12133
+// Module ID: 11978
+// Function ID: 11979
 // Name: usePowerupActiveStatus
-// Dependencies: [1910, 4330, 4331, 676, 4332, 589, 2]
+// Dependencies: [1910, 4331, 4332, 676, 4333, 589, 2]
 // Exports: default, isPowerupActiveStatusActive, usePowerupsActiveStatuses
 
-// Module 12132 (usePowerupActiveStatus)
+// Module 11978 (usePowerupActiveStatus)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "calculateAppliedBoosts" /* 4330 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4331 */;
+import closure_3 from "calculateAppliedBoosts" /* 4331 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4332 */;
 import { GuildFeatures } from "ME" /* 676 */;
-import { GAME_SERVER_POWERUP_SKU_ID as closure_9 } from "str11" /* 4332 */;
+import { GAME_SERVER_POWERUP_SKU_ID as closure_9 } from "str11" /* 4333 */;
 
 const require = arg1;
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: c4, PowerupActiveStatusType: c5, POWERUPS_INCLUDED_IN_LEVEL: closure_6, BOOSTING_TIER_TO_LEVEL_SKU_ID: error } = BoostedGuildTiers);
@@ -60,7 +60,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
         if (null != stateFromStores) {
           if (null != guild) {
             if (null == closure_1_6[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "call" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
             } else {
               let tmp4;
               if (null != closure_1_7[tmp22]) {
@@ -129,11 +129,11 @@ export default function usePowerupActiveStatus(arg0, arg1) {
           return obj;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "call" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
     }
   });
   if (mapped.length <= 0) {
-    obj = { type: null, sourceEntitlement: "Array", sourcePowerup: "paddingHorizontal" };
+    obj = { type: null, sourceEntitlement: "Array", sourcePowerup: "isArray" };
     obj[0] = constants.INACTIVE;
     let first = obj;
   } else {
@@ -184,7 +184,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
         if (null != stateFromStores) {
           if (null != guild) {
             if (null == closure_1_6[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "call" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
             } else {
               let tmp4;
               if (null != closure_1_7[tmp22]) {
@@ -253,7 +253,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
           return obj;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "call" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "disabled" };
     }
   });
 };

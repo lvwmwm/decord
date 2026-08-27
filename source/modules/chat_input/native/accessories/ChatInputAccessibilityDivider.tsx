@@ -1,10 +1,10 @@
-// Module ID: 11903
-// Function ID: 11904
+// Module ID: 11746
+// Function ID: 11747
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 4866, 500, 1236, 2]
+// Dependencies: [19, 17, 21, 4867, 500, 1236, 2]
 
-// Module 11903 (ChatInputAccessibilityDivider)
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4866 */;
+// Module 11746 (ChatInputAccessibilityDivider)
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4867 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

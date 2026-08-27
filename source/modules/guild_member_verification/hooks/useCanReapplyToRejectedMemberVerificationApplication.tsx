@@ -1,15 +1,15 @@
-// Module ID: 8655
-// Function ID: 8656
+// Module ID: 7598
+// Function ID: 7599
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 4428, 4267, 676, 589, 5506, 2]
+// Dependencies: [5, 32, 19, 4429, 4268, 676, 589, 5511, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 8655 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 7598 (useCanReapplyToRejectedMemberVerificationApplication)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "updateInvite" /* 4428 */;
-import closure_7 from "handleGatewayJoinRequestUpdate" /* 4267 */;
+import closure_6 from "updateInvite" /* 4429 */;
+import closure_7 from "handleGatewayJoinRequestUpdate" /* 4268 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;

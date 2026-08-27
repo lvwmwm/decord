@@ -1,13 +1,13 @@
-// Module ID: 13231
-// Function ID: 13232
+// Module ID: 13257
+// Function ID: 13258
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4358, 13232, 7585, 2]
+// Dependencies: [4359, 13258, 10406, 2]
 
-// Module 13231 (commonTriggerPointConfiguration)
+// Module 13257 (commonTriggerPointConfiguration)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4358 */;
-import registeredExperimentIds from "registeredExperimentIds" /* 7585 */;
-import apexExperiment from "apexExperiment" /* 13232 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4359 */;
+import registeredExperimentIds from "registeredExperimentIds" /* 10406 */;
+import apexExperiment from "apexExperiment" /* 13258 */;
 
 const items = [apexExperiment.HotwheelsActivityFeedNvidiaExperiment];
 const commonTriggerPointConfiguration = new registeredExperimentIds.CommonTriggerPointConfiguration(items, ExperimentBuckets.CommonTriggerPoints.CONNECTION_OPEN, { location: "app open" });

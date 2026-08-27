@@ -1,12 +1,12 @@
-// Module ID: 16598
-// Function ID: 16599
+// Module ID: 16664
+// Function ID: 16665
 // Name: useDrawerToggle
-// Dependencies: [19, 11912, 11913, 4184, 8947, 16599, 1236, 2]
+// Dependencies: [19, 11755, 11756, 4185, 8501, 16665, 1236, 2]
 // Exports: default
 
-// Module 16598 (useDrawerToggle)
+// Module 16664 (useDrawerToggle)
 import closure_3 from "noop" /* 19 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11912 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11755 */;
 
 const require = arg1;
 let closure_5 = { code: "function useDrawerToggleTsx1(){const{controlsSpecs,VoicePanelControlsModes}=this.__closure;return controlsSpecs.get().mode===VoicePanelControlsModes.DRAWER;}" };

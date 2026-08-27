@@ -1,15 +1,15 @@
-// Module ID: 8852
-// Function ID: 8853
+// Module ID: 9019
+// Function ID: 9020
 // Name: EMOJI_PICKER_ACTION_SHEET_KEY
-// Dependencies: [1925, 8853, 4411, 8854, 2009, 2]
+// Dependencies: [1925, 9020, 4412, 9021, 2009, 2]
 // Exports: openEmojiPickerActionSheet
 
-// Module 8852 (EMOJI_PICKER_ACTION_SHEET_KEY)
+// Module 9019 (EMOJI_PICKER_ACTION_SHEET_KEY)
 import set from "set" /* 2 */;
 import set2 from "set" /* 1925 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
-import toggleGuildExpandedState from "toggleGuildExpandedState" /* 8853 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4412 */;
+import toggleGuildExpandedState from "toggleGuildExpandedState" /* 9020 */;
 
 const EmojiInteractionPoint = set2.EmojiInteractionPoint;
 const EmojiPickerActionSheet = "EmojiPickerActionSheet";
@@ -19,5 +19,5 @@ export const EMOJI_PICKER_ACTION_SHEET_KEY = "EmojiPickerActionSheet";
 export const openEmojiPickerActionSheet = function openEmojiPickerActionSheet(arg0, stack) {
   const result = toggleGuildExpandedState.initiateEmojiInteraction(EmojiInteractionPoint.EmojiPickerActionSheetOpened);
   const obj = toggleGuildExpandedState;
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(8854, dependencyMap.paths), EmojiPickerActionSheet, arg0, stack);
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9021, dependencyMap.paths), EmojiPickerActionSheet, arg0, stack);
 };

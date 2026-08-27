@@ -1,14 +1,14 @@
-// Module ID: 6595
-// Function ID: 6596
+// Module ID: 6601
+// Function ID: 6602
 // Name: GemLeftUpwards3dIllustration
-// Dependencies: [21, 5440, 6596, 2]
+// Dependencies: [21, 5445, 6602, 2]
 // Exports: GemLeftUpwards3dIllustration
 
-// Module 6595 (GemLeftUpwards3dIllustration)
+// Module 6601 (GemLeftUpwards3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6596 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6602 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemLeftUpwards3dIllustration.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6248
-// Function ID: 6249
+// Module ID: 6254
+// Function ID: 6255
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6248 (metadata)
+// Module 6254 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AgeVerificationSpotIllustration-2x.png.js");

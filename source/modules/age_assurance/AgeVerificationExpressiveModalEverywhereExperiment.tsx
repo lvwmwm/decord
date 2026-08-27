@@ -1,10 +1,10 @@
-// Module ID: 8167
-// Function ID: 8168
+// Module ID: 8648
+// Function ID: 8649
 // Name: useIsAgeVerificationExpressiveModalEverywhereEnabled
 // Dependencies: [1472, 2]
 // Exports: isAgeVerificationExpressiveModalEverywhereEnabled, useIsAgeVerificationExpressiveModalEverywhereEnabled
 
-// Module 8167 (useIsAgeVerificationExpressiveModalEverywhereEnabled)
+// Module 8648 (useIsAgeVerificationExpressiveModalEverywhereEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

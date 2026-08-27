@@ -1,18 +1,18 @@
-// Module ID: 17017
-// Function ID: 17018
+// Module ID: 17083
+// Function ID: 17084
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 4330, 21, 4444, 712, 589, 4334, 12153, 12121, 4891, 4877, 12156, 4440, 1236, 4879, 15655, 2]
+// Dependencies: [19, 17, 4331, 21, 4445, 712, 589, 4335, 11999, 11967, 4892, 4878, 12002, 4441, 1236, 4880, 15719, 2]
 // Exports: default
 
-// Module 17017 (GuildSettingsServerTagUpsellCard)
+// Module 17083 (GuildSettingsServerTagUpsellCard)
 import ThemesDefault from "Themes" /* 712 */;
-import LinearGradientDefault from "LinearGradient" /* 4891 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12153 */;
+import LinearGradientDefault from "LinearGradient" /* 4892 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 11999 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "calculateAppliedBoosts" /* 4330 */;
+import closure_5 from "calculateAppliedBoosts" /* 4331 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
@@ -67,7 +67,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
     const obj5 = { imageUrl: null, style: null };
     obj5[0] = tmp6;
     obj5[1] = tmp.powerupImage;
-    tmp10Result = tmp10(tmp5(12156), obj5);
+    tmp10Result = tmp10(tmp5(12002), obj5);
   }
   obj4[3] = tmp10Result;
   const items5 = [callback(closure_4, obj4), , ];
@@ -75,23 +75,23 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   const obj7 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText, children: null };
   const intl = tmp2(1236).intl;
   obj7[3] = intl.string(guildId(1236).t["2QmKZ2"]);
-  const items6 = [callback(guildId(4440).Text, obj7), ];
+  const items6 = [callback(guildId(4441).Text, obj7), ];
   const obj8 = { variant: "text-sm/medium", color: "text-subtle", style: items7, children: null };
   items7 = [, ];
   ({ centerText: arr8[0], body: arr8[1] } = tmp);
   const intl2 = tmp2(1236).intl;
   obj8[3] = intl2.string(guildId(1236).t.Tg0fDm);
-  items6[1] = callback(guildId(4440).Text, obj8);
+  items6[1] = callback(guildId(4441).Text, obj8);
   obj6[2] = items6;
-  items5[1] = closure_7(guildId(4877).Stack, obj6);
+  items5[1] = closure_7(guildId(4878).Stack, obj6);
   const obj9 = { variant: "primary", size: "lg", text: null, icon: null, iconPosition: "start", onPress: null };
   const intl3 = tmp2(1236).intl;
   obj9[2] = intl3.string(guildId(1236).t.kMRDWs);
-  obj9[3] = callback(guildId(15655).BoostTier2Icon, { color: "white" });
+  obj9[3] = callback(guildId(15719).BoostTier2Icon, { color: "white" });
   obj9[5] = guildId.onUnlockPress;
-  items5[2] = callback(guildId(4879).Button, obj9);
+  items5[2] = callback(guildId(4880).Button, obj9);
   obj3[1] = items5;
-  items4[3] = closure_7(guildId(4877).Stack, obj3);
+  items4[3] = closure_7(guildId(4878).Stack, obj3);
   obj[1] = items4;
   return closure_7(closure_4, obj);
 };

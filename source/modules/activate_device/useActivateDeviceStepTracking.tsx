@@ -1,11 +1,11 @@
-// Module ID: 13502
-// Function ID: 13503
+// Module ID: 13529
+// Function ID: 13530
 // Name: useActivateDeviceStepTracking
-// Dependencies: [19, 676, 9068, 13503, 698, 2]
+// Dependencies: [19, 676, 8508, 13530, 698, 2]
 // Exports: useActivateDeviceStepTracking
 
-// Module 13502 (useActivateDeviceStepTracking)
-import usePreviousDefault from "usePrevious" /* 9068 */;
+// Module 13529 (useActivateDeviceStepTracking)
+import usePreviousDefault from "usePrevious" /* 8508 */;
 import closure_3 from "noop" /* 19 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 

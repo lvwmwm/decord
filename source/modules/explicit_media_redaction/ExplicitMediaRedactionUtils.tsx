@@ -1,24 +1,24 @@
-// Module ID: 7272
-// Function ID: 7273
+// Module ID: 7278
+// Function ID: 7279
 // Name: redactionSettingToRenderedString
-// Dependencies: [4443, 1391, 6083, 7273, 676, 1306, 1236, 698, 6081, 7274, 7279, 7280, 4140, 5314, 4685, 6086, 2]
+// Dependencies: [4444, 1391, 6091, 7279, 676, 1306, 1236, 698, 6089, 7280, 7285, 7286, 4140, 5319, 4686, 6094, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage, hasMessageSnapshotsWithAttachmentsOrEmbeds, isObscuredMediaBelowConstraints, isPendingScanVersion, redactionSettingToRenderedString, shouldAgeVerifyForExplicitMedia, trackExplicitMediaRedactableMessagedLoaded, trackExplicitMediaScanComplete, trackMediaRedactionAction, trackRedactableMessageLoaded, trackScanTiming, trackScanningTimedOut, trackToggleMediaObscurityV2, useShouldAgeVerifyForExplicitMedia, useShouldAgeVerifyForReason
 
-// Module 7272 (redactionSettingToRenderedString)
+// Module 7278 (redactionSettingToRenderedString)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import create from "create" /* 1306 */;
 import isFeatureAgeGated2 from "isFeatureAgeGated" /* 4140 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4685 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5314 */;
-import isCurrentUserTeen from "isCurrentUserTeen" /* 6081 */;
-import ObscureReason from "ObscureReason" /* 6086 */;
-import setDefault from "set" /* 7274 */;
-import set from "set" /* 7279 */;
-import resetManager from "resetManager" /* 7280 */;
-import closure_3 from "getUserAgnosticState" /* 4443 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4686 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5319 */;
+import isCurrentUserTeen from "isCurrentUserTeen" /* 6089 */;
+import ObscureReason from "ObscureReason" /* 6094 */;
+import setDefault from "set" /* 7280 */;
+import set from "set" /* 7285 */;
+import resetManager from "resetManager" /* 7286 */;
+import closure_3 from "getUserAgnosticState" /* 4444 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "getFpMessageInfo" /* 6083 */;
-import USER_SETTING_ACTION_SHEET_KEY from "USER_SETTING_ACTION_SHEET_KEY" /* 7273 */;
+import closure_5 from "getFpMessageInfo" /* 6091 */;
+import USER_SETTING_ACTION_SHEET_KEY from "USER_SETTING_ACTION_SHEET_KEY" /* 7279 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;
@@ -122,12 +122,12 @@ export const trackScanningTimedOut = function trackScanningTimedOut(arg0) {
         obj[5] = resetManager.MESSAGE_SCAN_TIMEOUT;
         obj[6] = attachmentIds;
         obj.track(AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, obj);
-        let tmp3Result = tmp3(7274);
+        let tmp3Result = tmp3(7280);
         obj = { name: null, tags: null };
         obj[0] = set.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT;
         obj[1] = ["metricVersion:1"];
         tmp3Result.increment(obj);
-        tmp3Result = tmp3(7274);
+        tmp3Result = tmp3(7280);
         obj1 = { name: null };
         obj1[0] = set.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION;
         let num4;
@@ -178,8 +178,8 @@ export const trackExplicitMediaRedactableMessagedLoaded = function trackExplicit
     if (sum > 0) {
       obj = { name: null };
       obj[0] = set.MetricEvents.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2;
-      tmp10(7274).distribution(obj, sum);
-      const tmp10Result = tmp10(7274);
+      tmp10(7280).distribution(obj, sum);
+      const tmp10Result = tmp10(7280);
     }
     const obj3 = expandEventPropertiesDefault;
     tmp10 = importDefault;

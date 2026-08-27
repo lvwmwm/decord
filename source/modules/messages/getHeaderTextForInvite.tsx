@@ -1,10 +1,10 @@
-// Module ID: 12877
-// Function ID: 12878
+// Module ID: 12789
+// Function ID: 12790
 // Name: getHeaderTextForInvite
 // Dependencies: [1236, 2]
 // Exports: getHeaderTextForInvite
 
-// Module 12877 (getHeaderTextForInvite)
+// Module 12789 (getHeaderTextForInvite)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

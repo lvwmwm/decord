@@ -1,11 +1,11 @@
-// Module ID: 7141
-// Function ID: 7142
+// Module ID: 7147
+// Function ID: 7148
 // Name: getClientHeartbeatPiggybackProperties
-// Dependencies: [4467, 2]
+// Dependencies: [4468, 2]
 // Exports: getClientHeartbeatPiggybackProperties
 
-// Module 7141 (getClientHeartbeatPiggybackProperties)
-import initializeDefault from "initialize" /* 4467 */;
+// Module 7147 (getClientHeartbeatPiggybackProperties)
+import initializeDefault from "initialize" /* 4468 */;
 
 initializeDefault;
 const result = require("set").fileFinishedImporting("modules/analytics_sessions/ClientHeartbeatPiggyback.tsx");

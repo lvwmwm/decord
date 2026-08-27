@@ -1,9 +1,9 @@
-// Module ID: 10223
-// Function ID: 10224
+// Module ID: 10344
+// Function ID: 10345
 // Name: IMAGE_CAROUSEL_TILE_HEIGHT
 // Dependencies: [2]
 
-// Module 10223 (IMAGE_CAROUSEL_TILE_HEIGHT)
+// Module 10344 (IMAGE_CAROUSEL_TILE_HEIGHT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/image/native/ImageCarouselConstants.tsx");

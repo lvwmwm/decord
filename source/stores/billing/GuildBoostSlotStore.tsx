@@ -1,9 +1,9 @@
-// Module ID: 4336
-// Function ID: 4337
+// Module ID: 4337
+// Function ID: 4338
 // Name: handleGuildBoostsUpdate
 // Dependencies: [4113, 589, 709, 2]
 
-// Module 4336 (handleGuildBoostsUpdate)
+// Module 4337 (handleGuildBoostsUpdate)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "reset" /* 4113 */;

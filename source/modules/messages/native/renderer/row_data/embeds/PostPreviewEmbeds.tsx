@@ -1,10 +1,10 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12821
+// Function ID: 12822
 // Name: createPostPreviewEmbeds
-// Dependencies: [676, 12910, 2]
+// Dependencies: [676, 12822, 2]
 // Exports: createPostPreviewEmbeds
 
-// Module 12909 (createPostPreviewEmbeds)
+// Module 12821 (createPostPreviewEmbeds)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

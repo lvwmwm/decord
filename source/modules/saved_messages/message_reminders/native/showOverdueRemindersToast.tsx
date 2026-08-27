@@ -1,13 +1,13 @@
-// Module ID: 16910
-// Function ID: 16911
+// Module ID: 16976
+// Function ID: 16977
 // Name: showOverdueRemindersToast
-// Dependencies: [11280, 8599, 8605, 4162, 4407, 1236, 2]
+// Dependencies: [11159, 7532, 7538, 4162, 4408, 1236, 2]
 // Exports: showOverdueRemindersToast
 
-// Module 16910 (showOverdueRemindersToast)
+// Module 16976 (showOverdueRemindersToast)
 import dispatcherDefault from "dispatcher" /* 4162 */;
-import ForLaterFreemiumConfig from "ForLaterFreemiumConfig" /* 8599 */;
-import closure_3 from "getTimeSafe" /* 11280 */;
+import ForLaterFreemiumConfig from "ForLaterFreemiumConfig" /* 7532 */;
+import closure_3 from "getTimeSafe" /* 11159 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/saved_messages/message_reminders/native/showOverdueRemindersToast.tsx");
@@ -18,12 +18,12 @@ export const showOverdueRemindersToast = function showOverdueRemindersToast() {
     overdueMessageReminderCount = overdueMessageReminderCount.getOverdueMessageReminderCount();
     if (0 !== overdueMessageReminderCount) {
       const mostRecentOverdueDueAt = obj2.getMostRecentOverdueDueAt();
-      let tmpResult = tmp(8605);
+      let tmpResult = tmp(7538);
       if (mostRecentOverdueDueAt > tmpResult.getRemindersLastSeenAt()) {
-        tmpResult = tmp(8605);
+        tmpResult = tmp(7538);
         tmpResult.markRemindersSeen();
         obj = { key: "overdue-message-reminders", IconComponent: null, content: null, position: "bottom", toastDurationMs: 5000 };
-        obj[1] = tmp(4407).ClockIcon;
+        obj[1] = tmp(4408).ClockIcon;
         const intl = tmp(1236).intl;
         obj = { count: null };
         obj[0] = overdueMessageReminderCount;

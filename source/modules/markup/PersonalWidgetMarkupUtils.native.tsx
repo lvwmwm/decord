@@ -1,14 +1,14 @@
-// Module ID: 12735
-// Function ID: 12736
+// Module ID: 8712
+// Function ID: 8713
 // Name: parsePersonalWidgetReact
-// Dependencies: [4901, 12, 4902, 4435, 8314, 2]
+// Dependencies: [4902, 12, 4903, 4436, 7828, 2]
 
-// Module 12735 (parsePersonalWidgetReact)
-import MarkupTextDefault from "MarkupText" /* 4435 */;
-import parseLinkDefault from "parseLink" /* 4902 */;
-import importDefaultResult from "combineMarkupRules" /* 4901 */;
+// Module 8712 (parsePersonalWidgetReact)
+import MarkupTextDefault from "MarkupText" /* 4436 */;
+import parseLinkDefault from "parseLink" /* 4903 */;
+import importDefaultResult from "combineMarkupRules" /* 4902 */;
 import importDefaultResult1 from "apply" /* 12 */;
-import importAllResult from "reactParserFor" /* 8314 */;
+import importAllResult from "reactParserFor" /* 7828 */;
 
 const items = [importDefaultResult1.pick(parseLinkDefault.RULES, ["escape", "text", "strong", "em", "u", "url", "autolink", "emoji", "invisibleUnicode"]), MarkupTextDefault()];
 const importDefaultResultResult = importDefaultResult(items);

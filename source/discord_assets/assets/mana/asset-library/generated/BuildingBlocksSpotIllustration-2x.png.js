@@ -1,9 +1,9 @@
-// Module ID: 6320
-// Function ID: 6321
+// Module ID: 6326
+// Function ID: 6327
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6320 (metadata)
+// Module 6326 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BuildingBlocksSpotIllustration-2x.png.js");

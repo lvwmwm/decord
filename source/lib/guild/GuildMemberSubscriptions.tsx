@@ -1,9 +1,9 @@
-// Module ID: 6075
-// Function ID: 6076
+// Module ID: 6083
+// Function ID: 6084
 // Name: reset
-// Dependencies: [687, 4328, 11, 3, 12, 2]
+// Dependencies: [687, 4329, 11, 3, 12, 2]
 
-// Module 6075 (reset)
+// Module 6083 (reset)
 import timestampDefault from "timestamp" /* 3 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;

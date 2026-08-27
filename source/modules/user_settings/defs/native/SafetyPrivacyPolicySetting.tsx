@@ -1,15 +1,15 @@
-// Module ID: 15189
-// Function ID: 15190
+// Module ID: 15253
+// Function ID: 15254
 // Name: pressable
-// Dependencies: [8302, 676, 4158, 10584, 1236, 2]
+// Dependencies: [7816, 676, 4158, 10988, 1236, 2]
 
-// Module 15189 (pressable)
+// Module 15253 (pressable)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import _modDef4158 from "module_4158" /* 4158 */;
-import MobileUserSettings from "MobileUserSettings" /* 8302 */;
-import createToggle from "createToggle" /* 10584 */;
+import MobileUserSettings from "MobileUserSettings" /* 7816 */;
+import createToggle from "createToggle" /* 10988 */;
 
 const MarketingURLs = ME.MarketingURLs;
 const pressable = createToggle.createPressable({

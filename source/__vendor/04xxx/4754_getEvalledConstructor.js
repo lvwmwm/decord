@@ -1,0 +1,20 @@
+// Module ID: 4754
+// Function ID: 4755
+// Name: getEvalledConstructor
+// Dependencies: [540, 574]
+
+// Module 4754 (getEvalledConstructor)
+import getEvalledConstructor from "getEvalledConstructor" /* 540 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 574 */;
+
+const tmp = getEvalledConstructor("%Array%");
+const isArray = tmp.isArray;
+let tmp2 = !isArray;
+if (!isArray) {
+  tmp2 = callBoundIntrinsic("Object.prototype.toString");
+}
+let closure_0 = tmp2;
+
+export default tmp.isArray || (function IsArray(arg0) {
+  return "[object Array]" === callback(arg0);
+});

@@ -1,9 +1,9 @@
-// Module ID: 11912
-// Function ID: 11913
+// Module ID: 11755
+// Function ID: 11756
 // Name: VoicePanelControlsModes
 // Dependencies: [2]
 
-// Module 11912 (VoicePanelControlsModes)
+// Module 11755 (VoicePanelControlsModes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsConstants.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 10004
-// Function ID: 10005
+// Module ID: 9915
+// Function ID: 9916
 // Name: Soundpacks
 // Dependencies: [2]
 
-// Module 10004 (Soundpacks)
+// Module 9915 (Soundpacks)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/soundpacks/Constants.tsx");

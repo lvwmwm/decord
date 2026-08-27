@@ -1,10 +1,10 @@
-// Module ID: 8578
-// Function ID: 8579
+// Module ID: 8094
+// Function ID: 8095
 // Name: getAutoArchiveOptions
 // Dependencies: [1235, 687, 1236, 731, 4043, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 8578 (getAutoArchiveOptions)
+// Module 8094 (getAutoArchiveOptions)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import memoizeDefault from "memoize" /* 731 */;

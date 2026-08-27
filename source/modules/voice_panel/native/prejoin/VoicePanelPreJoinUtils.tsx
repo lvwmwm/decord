@@ -1,10 +1,10 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16657
+// Function ID: 16658
 // Name: areVoicePanelPreJoinContentPropsEqual
 // Dependencies: [643, 2]
 // Exports: areVoicePanelPreJoinContentPropsEqual
 
-// Module 16591 (areVoicePanelPreJoinContentPropsEqual)
+// Module 16657 (areVoicePanelPreJoinContentPropsEqual)
 import set from "set" /* 2 */;
 import shallowEqualDefault from "shallowEqual" /* 643 */;
 

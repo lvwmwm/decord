@@ -1,14 +1,14 @@
-// Module ID: 7063
-// Function ID: 7064
+// Module ID: 7069
+// Function ID: 7070
 // Name: WumpusGearSpotIllustration
-// Dependencies: [21, 5440, 7064, 2]
+// Dependencies: [21, 5445, 7070, 2]
 // Exports: WumpusGearSpotIllustration
 
-// Module 7063 (WumpusGearSpotIllustration)
+// Module 7069 (WumpusGearSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 7064 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 7070 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WumpusGearSpotIllustration.native.tsx");

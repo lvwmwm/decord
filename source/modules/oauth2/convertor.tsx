@@ -1,10 +1,10 @@
-// Module ID: 10659
-// Function ID: 10660
+// Module ID: 9216
+// Function ID: 9217
 // Name: convertOAuth2Authorization
 // Dependencies: [506, 2]
 // Exports: convertOAuth2Authorization
 
-// Module 10659 (convertOAuth2Authorization)
+// Module 9216 (convertOAuth2Authorization)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/oauth2/convertor.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 14066
-// Function ID: 14067
-// Dependencies: [10898, 14067, 2]
+// Module ID: 14093
+// Function ID: 14094
+// Dependencies: [9426, 14094, 2]
 
-// Module 14066
-import root from "root" /* 10898 */;
-import registerTransportDefault from "registerTransport" /* 14067 */;
+// Module 14093
+import root from "root" /* 9426 */;
+import registerTransportDefault from "registerTransport" /* 14094 */;
 
 require = arg1;
 const tmp2 = new registerTransportDefault(() => Promise.resolve(root));

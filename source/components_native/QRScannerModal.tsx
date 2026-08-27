@@ -1,21 +1,21 @@
-// Module ID: 13494
-// Function ID: 13495
+// Module ID: 13521
+// Function ID: 13522
 // Name: DCDQRScanner
-// Dependencies: [32, 19, 17, 676, 7210, 21, 500, 13495, 712, 5993, 1629, 1487, 13474, 4675, 13489, 2009, 6191, 11554, 4158, 4809, 1236, 9272, 8278, 1297, 2]
+// Dependencies: [32, 19, 17, 676, 7216, 21, 500, 13522, 712, 5998, 1629, 1487, 13501, 4676, 13516, 2009, 6197, 11405, 4158, 4810, 1236, 8988, 7745, 1297, 2]
 // Exports: default
 
-// Module 13494 (DCDQRScanner)
+// Module 13521 (DCDQRScanner)
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import _modDef4675 from "module_4675" /* 4675 */;
-import registerAssetDefault from "registerAsset" /* 8278 */;
-import renderDefault from "render" /* 9272 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13495 */;
+import _modDef4676 from "module_4676" /* 4676 */;
+import registerAssetDefault from "registerAsset" /* 7745 */;
+import renderDefault from "render" /* 8988 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13522 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { UserSettingsSections } from "ME" /* 676 */;
-import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_7 } from "items" /* 7210 */;
+import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_7 } from "items" /* 7216 */;
 import jsxProd from "jsxProd" /* 21 */;
 import set from "set" /* 500 */;
 
@@ -136,7 +136,7 @@ export default function QRScannerModal(showHelp) {
   obj1[2] = registerAssetDefault;
   const items2 = [tmp12.closeButton, { marginTop: top }];
   obj1[3] = items2;
-  obj1[4] = _modDef4675.pop;
+  obj1[4] = _modDef4676.pop;
   items1[1] = tmp14(renderDefault, obj1);
   let tmp14Result = null;
   if (tmp) {

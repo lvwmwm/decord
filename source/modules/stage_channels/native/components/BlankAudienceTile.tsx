@@ -1,10 +1,10 @@
-// Module ID: 11109
-// Function ID: 11110
-// Dependencies: [19, 17, 21, 1494, 11110, 2]
+// Module ID: 10071
+// Function ID: 10072
+// Dependencies: [19, 17, 21, 1494, 10072, 2]
 
-// Module 11109
+// Module 10071
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import RaisedHandIcon from "RaisedHandIcon" /* 11110 */;
+import RaisedHandIcon from "RaisedHandIcon" /* 10072 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

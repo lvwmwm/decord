@@ -1,16 +1,16 @@
-// Module ID: 9852
-// Function ID: 9853
+// Module ID: 8999
+// Function ID: 9000
 // Name: openAcceptFriendRequestConfirmModal
-// Dependencies: [9853, 676, 21, 698, 4809, 9854, 2009, 2]
+// Dependencies: [9000, 676, 21, 698, 4810, 9001, 2009, 2]
 // Exports: openAcceptFriendRequestConfirmModal
 
-// Module 9852 (openAcceptFriendRequestConfirmModal)
+// Module 8999 (openAcceptFriendRequestConfirmModal)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import _modDef4809 from "module_4809" /* 4809 */;
-import RELATIONSHIP_COUNT_ANIMATION_THRESHOLD from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD" /* 9853 */;
+import _modDef4810 from "module_4810" /* 4810 */;
+import RELATIONSHIP_COUNT_ANIMATION_THRESHOLD from "RELATIONSHIP_COUNT_ANIMATION_THRESHOLD" /* 9000 */;
 
 let closure_3 = RELATIONSHIP_COUNT_ANIMATION_THRESHOLD.ACCEPT_FRIEND_REQUEST_CONFIRMATION_MODAL_ID;
 const AnalyticEvents = ME.AnalyticEvents;
@@ -42,5 +42,5 @@ export const openAcceptFriendRequestConfirmModal = function openAcceptFriendRequ
       });
     }
   };
-  _modDef4809.openLazy(obj);
+  _modDef4810.openLazy(obj);
 };

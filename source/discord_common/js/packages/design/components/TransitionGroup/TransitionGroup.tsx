@@ -1,10 +1,10 @@
-// Module ID: 4175
-// Function ID: 4176
+// Module ID: 4176
+// Function ID: 4177
 // Name: wrapChildrenDefault
 // Dependencies: [32, 19, 21, 2]
 // Exports: TransitionItem
 
-// Module 4175 (wrapChildrenDefault)
+// Module 4176 (wrapChildrenDefault)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

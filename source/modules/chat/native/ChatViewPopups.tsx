@@ -1,10 +1,10 @@
-// Module ID: 12278
-// Function ID: 12279
+// Module ID: 12100
+// Function ID: 12101
 // Name: ChatViewPopups
-// Dependencies: [19, 12279, 12283, 12291, 2]
+// Dependencies: [19, 12101, 12105, 12113, 2]
 
-// Module 12278 (ChatViewPopups)
-import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 12279 */;
+// Module 12100 (ChatViewPopups)
+import useIsHubRealNamePromptShowingDefault from "useIsHubRealNamePromptShowing" /* 12101 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -33,11 +33,11 @@ class ChatViewPopups {
             closure_1.current = false;
             return false;
           };
-          ref(12291).open(obj);
+          ref(12113).open(obj);
           tmp.current = true;
-          const obj3 = ref(12291);
+          const obj3 = ref(12113);
         } else if (showWelcomeModal) {
-          obj = guildId(12283);
+          obj = guildId(12105);
           obj = { guildId: null, onHide: null };
           obj[0] = guildId;
           obj[1] = function onHide() {

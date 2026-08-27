@@ -1,10 +1,10 @@
-// Module ID: 14565
-// Function ID: 14566
+// Module ID: 14592
+// Function ID: 14593
 // Name: getBountyCtaInfo
 // Dependencies: [1236, 2]
 // Exports: getBountyCtaInfo
 
-// Module 14565 (getBountyCtaInfo)
+// Module 14592 (getBountyCtaInfo)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

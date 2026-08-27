@@ -1,10 +1,10 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15487
+// Function ID: 15488
 // Name: isDateValidDateOfBirth
 // Dependencies: [4043, 2]
 // Exports: default
 
-// Module 15422 (isDateValidDateOfBirth)
+// Module 15487 (isDateValidDateOfBirth)
 import set from "set" /* 2 */;
 import hooksDefault from "hooks" /* 4043 */;
 

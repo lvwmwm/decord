@@ -1,16 +1,16 @@
-// Module ID: 9355
-// Function ID: 9356
+// Module ID: 9673
+// Function ID: 9674
 // Name: getGuildScheduledEventHeaderProps
-// Dependencies: [7198, 1397, 9157, 712, 9258, 1236, 8231, 9356, 2]
+// Dependencies: [7204, 1397, 9555, 712, 9674, 1236, 8674, 9675, 2]
 // Exports: getGuildScheduledEventHeaderProps
 
-// Module 9355 (getGuildScheduledEventHeaderProps)
+// Module 9673 (getGuildScheduledEventHeaderProps)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
-import getRRule from "getRRule" /* 9157 */;
-import registerAssetDefault from "registerAsset" /* 9258 */;
-import scheduledEventSort from "scheduledEventSort" /* 7198 */;
+import getRRule from "getRRule" /* 9555 */;
+import registerAssetDefault from "registerAsset" /* 9674 */;
+import scheduledEventSort from "scheduledEventSort" /* 7204 */;
 
 ({ isGuildEventEnded: c3, isGuildScheduledEventActive: c4 } = scheduledEventSort);
 let closure_5 = GUILD_EVENT_MAX_NAME_LENGTH.GuildScheduledEventEntityTypes;
@@ -37,7 +37,7 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     const intl4 = tmp(1236).intl;
     let stringResult = intl4.string(tmp(1236).t["X2K3/4"]);
     if (isStage) {
-      tmp8Result = tmp8(8231);
+      tmp8Result = tmp8(8674);
     }
     let entity_type;
     if (event != null) {
@@ -50,11 +50,11 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
     let ICON_FEEDBACK_CRITICAL = tmp8(712).colors.ICON_FEEDBACK_POSITIVE;
     let stringResult1 = stringResult;
   } else if (tmp7) {
-    tmp8Result = tmp8(9356);
+    tmp8Result = tmp8(9675);
     stringResult1 = startDateTimeString;
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
   } else if (currentOrPastEvent) {
-    tmp8Result = tmp8(9356);
+    tmp8Result = tmp8(9675);
     const intl3 = tmp(1236).intl;
     stringResult1 = intl3.string(tmp(1236).t.WINqKV);
     ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
@@ -72,9 +72,9 @@ export const getGuildScheduledEventHeaderProps = function getGuildScheduledEvent
         formatToPlainStringResult = intl.string(tmp(1236).t.WINqKV);
       }
       stringResult1 = formatToPlainStringResult;
-      tmp8Result = tmp8(9356);
+      tmp8Result = tmp8(9675);
       ICON_FEEDBACK_CRITICAL = ICON_SUBTLE;
-      const tmp8Result1 = tmp8(9356);
+      const tmp8Result1 = tmp8(9675);
     }
   }
   if (isCanceled) {

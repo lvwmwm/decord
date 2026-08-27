@@ -1,10 +1,10 @@
-// Module ID: 4352
-// Function ID: 4353
+// Module ID: 4353
+// Function ID: 4354
 // Name: getPowerupEntitlementPrice
 // Dependencies: [2]
 // Exports: default
 
-// Module 4352 (getPowerupEntitlementPrice)
+// Module 4353 (getPowerupEntitlementPrice)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/premium/powerups/utils/getPowerupEntitlementPrice.tsx");

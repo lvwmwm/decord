@@ -1,14 +1,14 @@
-// Module ID: 8529
-// Function ID: 8530
+// Module ID: 8046
+// Function ID: 8047
 // Name: useDisplayProfile
-// Dependencies: [19, 1922, 7293, 589, 8530, 1991, 8533, 2]
+// Dependencies: [19, 1922, 7299, 589, 8047, 1991, 8050, 2]
 // Exports: default, getDisplayProfile, useDisplayProfileWithFetchEffect
 
-// Module 8529 (useDisplayProfile)
-import premiumSinceDefault from "premiumSince" /* 8533 */;
+// Module 8046 (useDisplayProfile)
+import premiumSinceDefault from "premiumSince" /* 8050 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "createUserWidgetFromServer" /* 7293 */;
+import closure_5 from "createUserWidgetFromServer" /* 7299 */;
 import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1991 */;
 
 const require = arg1;

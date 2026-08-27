@@ -1,12 +1,12 @@
-// Module ID: 7550
-// Function ID: 7551
+// Module ID: 7901
+// Function ID: 7902
 // Name: usePremiumDiscountOffer
-// Dependencies: [6031, 1924, 7551, 6034, 647, 2]
+// Dependencies: [6036, 1924, 7902, 6039, 647, 2]
 // Exports: usePremiumDiscountOffer, usePremiumGroupDiscountOffer
 
-// Module 7550 (usePremiumDiscountOffer)
-import useDiscountOfferDefault from "useDiscountOffer" /* 7551 */;
-import closure_3 from "updateProduct" /* 6031 */;
+// Module 7901 (usePremiumDiscountOffer)
+import useDiscountOfferDefault from "useDiscountOffer" /* 7902 */;
+import closure_3 from "updateProduct" /* 6036 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 const require = arg1;
@@ -19,7 +19,7 @@ export const usePremiumDiscountOffer = function usePremiumDiscountOffer() {
   const obj = offerIds(647);
   const tmp = offerIds;
   const tmp3 = importDefault;
-  let values = Object.values(offerIds(6034).DiscountIdToProductOfferId[closure_4]);
+  let values = Object.values(offerIds(6039).DiscountIdToProductOfferId[closure_4]);
   let tmp5 = null;
   if (0 !== values.length) {
     let tmp6 = null;
@@ -29,7 +29,7 @@ export const usePremiumDiscountOffer = function usePremiumDiscountOffer() {
     tmp5 = tmp6;
   }
   tmp4 = useDiscountOfferDefault(closure_4);
-  values = Object.values(tmp(6034).DiscountIdToProductOfferId[closure_5]);
+  values = Object.values(tmp(6039).DiscountIdToProductOfferId[closure_5]);
   let tmp8 = null;
   if (0 !== values.length) {
     let tmp9 = null;

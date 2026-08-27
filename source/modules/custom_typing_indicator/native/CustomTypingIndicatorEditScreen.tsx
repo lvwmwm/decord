@@ -1,10 +1,10 @@
-// Module ID: 14877
-// Function ID: 14878
+// Module ID: 14904
+// Function ID: 14905
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1922, 676, 1924, 21, 4444, 712, 1938, 1236, 3471, 1500, 1501, 589, 9696, 5900, 11607, 11611, 1937, 4607, 4411, 14878, 2009, 14879, 698, 8491, 8488, 8733, 4342, 14195, 8837, 11620, 4637, 4440, 14880, 5939, 5546, 1995, 4877, 4879, 9619, 8801, 14887, 9726, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 676, 1924, 21, 4445, 712, 1938, 1236, 3471, 1500, 1501, 589, 8861, 5905, 11458, 11462, 1937, 4608, 4412, 14905, 2009, 14906, 698, 8009, 8006, 7689, 4343, 14222, 8325, 11471, 4638, 4441, 14907, 5944, 5551, 1995, 4878, 4880, 11871, 7771, 14952, 8892, 2]
 // Exports: default
 
-// Module 14877 (CustomTypingIndicatorEditScreen)
+// Module 14904 (CustomTypingIndicatorEditScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -14,7 +14,7 @@ import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);
@@ -23,8 +23,8 @@ const require = arg1;
 createCacheKey = { screen: { flex: 1 }, container: null, previewContainer: null, section: null, description: null };
 createCacheKey = { padding: ThemesDefault.space.PX_16, rowGap: ThemesDefault.space.PX_24 };
 createCacheKey[1] = createCacheKey;
-createCacheKey[2] = { height: 200, display: "flex", alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_8 };
-let obj1 = { height: 200, display: "flex", alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_8 };
+createCacheKey[2] = { height: 140, display: "flex", alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_8 };
+let obj1 = { height: 140, display: "flex", alignItems: "center", justifyContent: "center", paddingHorizontal: ThemesDefault.space.PX_8 };
 createCacheKey[3] = { rowGap: ThemesDefault.space.PX_8 };
 let obj2 = { rowGap: ThemesDefault.space.PX_8 };
 createCacheKey[4] = { marginTop: ThemesDefault.space.PX_4 };

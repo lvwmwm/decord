@@ -1,20 +1,20 @@
-// Module ID: 8258
-// Function ID: 8259
+// Module ID: 8703
+// Function ID: 8704
 // Name: MessagePreview
-// Dependencies: [19, 17, 21, 4444, 712, 8259, 4292, 4440, 1236, 8804, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 7774, 4293, 4441, 1236, 8704, 2]
 // Exports: default
 
-// Module 8258 (MessagePreview)
+// Module 8703 (MessagePreview)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hexToRgba from "hexToRgba" /* 4292 */;
-import Text from "Text" /* 4440 */;
-import setOptionsDefault from "setOptions" /* 8259 */;
-import DCDChatItemDefault from "DCDChatItem" /* 8804 */;
+import hexToRgba from "hexToRgba" /* 4293 */;
+import Text from "Text" /* 4441 */;
+import setOptionsDefault from "setOptions" /* 7774 */;
+import DCDChatItemDefault from "DCDChatItem" /* 8704 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -40,7 +40,7 @@ export default function MessagePreview(message) {
   const items = [callback(Text.Text, obj), ];
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   const items1 = [tmp.chatItemContainer, { borderColor: hexWithOpacityResult }];
-  items[1] = callback(View, { style: items1, children: callback(DCDChatItemDefault, obj2) });
+  items[1] = callback(View, { accessible: true, style: items1, children: callback(DCDChatItemDefault, obj2) });
   obj[1] = items;
   return callback2(View, obj);
 };

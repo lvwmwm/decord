@@ -1,9 +1,9 @@
-// Module ID: 14789
-// Function ID: 14790
+// Module ID: 14816
+// Function ID: 14817
 // Name: THEME_ITEM_WIDTH
 // Dependencies: [2]
 
-// Module 14789 (THEME_ITEM_WIDTH)
+// Module 14816 (THEME_ITEM_WIDTH)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceConstants.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 9078
-// Function ID: 9079
+// Module ID: 8518
+// Function ID: 8519
 // Name: useMediaViewerSyncer
-// Dependencies: [32, 19, 9079, 500, 4184, 9080, 1629, 9062, 9081, 9061, 4878, 2]
+// Dependencies: [32, 19, 8519, 500, 4185, 8520, 1629, 8502, 8521, 8500, 4879, 2]
 // Exports: useMediaViewerSyncer
 
-// Module 9078 (useMediaViewerSyncer)
+// Module 8518 (useMediaViewerSyncer)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import THUMBNAIL_MARGIN from "THUMBNAIL_MARGIN" /* 9079 */;
+import THUMBNAIL_MARGIN from "THUMBNAIL_MARGIN" /* 8519 */;
 import set from "set" /* 500 */;
 
 const require = arg1;

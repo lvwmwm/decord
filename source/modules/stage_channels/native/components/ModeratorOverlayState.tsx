@@ -1,10 +1,10 @@
-// Module ID: 10917
-// Function ID: 10918
+// Module ID: 9550
+// Function ID: 9551
 // Name: useModeratorOverlayChannelState
 // Dependencies: [700, 705, 4074, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 10917 (useModeratorOverlayChannelState)
+// Module 9550 (useModeratorOverlayChannelState)
 import set from "set" /* 2 */;
 import identity from "identity" /* 700 */;
 

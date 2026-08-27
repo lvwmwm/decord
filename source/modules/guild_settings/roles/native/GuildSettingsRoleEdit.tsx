@@ -1,19 +1,19 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 17120
+// Function ID: 17121
 // Name: componentDidMount
-// Dependencies: [109, 5, 19, 17, 1986, 1218, 1992, 1985, 1910, 9237, 17041, 17036, 676, 17043, 21, 4444, 712, 4172, 5442, 6183, 1236, 4652, 17045, 12, 698, 9212, 17055, 4162, 10095, 8670, 5404, 11205, 4808, 1297, 5939, 5546, 17056, 17063, 17065, 17066, 4877, 8185, 1500, 589, 4094, 5886, 2]
+// Dependencies: [109, 5, 19, 17, 1986, 1218, 1992, 1985, 1910, 9650, 17107, 17102, 676, 17109, 21, 4445, 712, 4172, 5447, 6189, 1236, 4653, 17111, 12, 698, 9628, 17121, 4162, 9439, 7613, 5409, 11088, 4809, 1297, 5944, 5551, 17122, 17129, 17131, 17132, 4878, 8295, 1500, 589, 4094, 5891, 2]
 // Exports: default
 
-// Module 17054 (componentDidMount)
+// Module 17120 (componentDidMount)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import TableRowInner from "TableRowInner" /* 5546 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5939 */;
-import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 17056 */;
-import GuildSettingsRoleEditPermissionDefault from "GuildSettingsRoleEditPermission" /* 17063 */;
-import onMembersLoadFailDefault from "onMembersLoadFail" /* 17065 */;
-import HeaderSectionDefault from "HeaderSection" /* 17066 */;
+import TableRowInner from "TableRowInner" /* 5551 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5944 */;
+import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 17122 */;
+import GuildSettingsRoleEditPermissionDefault from "GuildSettingsRoleEditPermission" /* 17129 */;
+import onMembersLoadFailDefault from "onMembersLoadFail" /* 17131 */;
+import HeaderSectionDefault from "HeaderSection" /* 17132 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
@@ -23,14 +23,14 @@ import closure_10 from "fetchFingerprint" /* 1218 */;
 import closure_11 from "trackCommunicationDisabled" /* 1992 */;
 import closure_12 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_13 from "createGuildRecordFromRust" /* 1910 */;
-import closure_14 from "handleFormInit" /* 9237 */;
-import closure_15 from "handleSetSection" /* 17041 */;
-import { RoleColorsStyle } from "handleSetSection" /* 17041 */;
-import { GuildSettingsRoleEditSections as closure_17 } from "MAX_SUBCATEGORIES" /* 17036 */;
+import closure_14 from "handleFormInit" /* 9650 */;
+import closure_15 from "handleSetSection" /* 17107 */;
+import { RoleColorsStyle } from "handleSetSection" /* 17107 */;
+import { GuildSettingsRoleEditSections as closure_17 } from "MAX_SUBCATEGORIES" /* 17102 */;
 import ME from "ME" /* 676 */;
-import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS" /* 17043 */;
+import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS" /* 17109 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 let closure_4 = ["guild"];
@@ -386,7 +386,7 @@ prototype["updateNavigation"] = function updateNavigation(role, submitting) {
   submitting = this.state.submitting;
   let setOptionsResult = { headerLeft: null, headerRight: null, headerTitle: null };
   const sectionChanges = self.getSectionChanges();
-  setOptionsResult[0] = role(5442).getHeaderConditionalBackButton(self.handleBack);
+  setOptionsResult[0] = role(5447).getHeaderConditionalBackButton(self.handleBack);
   if (submitting) {
     let fn = () => callback(role(table[18]).HeaderSubmittingIndicator, {});
   } else if (sectionChanges) {
@@ -415,23 +415,23 @@ prototype["renderSubScreenButtons"] = function renderSubScreenButtons() {
   obj[1] = function onPress() {
     return self.onSubScreenValueChange(closure_1_17.PERMISSIONS);
   };
-  const items = [callback2(self(5546).TableRow, obj), , ];
+  const items = [callback2(self(5551).TableRow, obj), , ];
   obj = { label: null, onPress: null, arrow: true };
   const intl2 = self(1236).intl;
   obj[0] = intl2.string(self(1236).t["5//Muu"]);
   obj[1] = function onPress() {
     return self.onSubScreenValueChange(closure_1_17.VERIFICATIONS);
   };
-  items[1] = callback2(self(5546).TableRow, obj);
+  items[1] = callback2(self(5551).TableRow, obj);
   obj1 = { label: null, onPress: null, arrow: true };
   const intl3 = self(1236).intl;
   obj1[0] = intl3.string(self(1236).t.J4ZtH1);
   obj1[1] = function onPress() {
     return self.onSubScreenValueChange(closure_1_17.MEMBERS);
   };
-  items[2] = callback2(self(5546).TableRow, obj1);
+  items[2] = callback2(self(5551).TableRow, obj1);
   obj[1] = items;
-  return callback3(self(5939).TableRowGroup, obj);
+  return callback3(self(5944).TableRowGroup, obj);
 };
 prototype["renderDeleteButton"] = function renderDeleteButton() {
   let obj = { hasIcons: false, children: null };
@@ -526,7 +526,7 @@ prototype["render"] = function render() {
     obj4[1] = ThemesDefault.space.PX_16;
     obj3[1] = obj4;
     obj3[2] = tmp11Result;
-    let tmp22Result = tmp22(tmp24(4877).Stack, obj3);
+    let tmp22Result = tmp22(tmp24(4878).Stack, obj3);
   } else {
     const obj5 = { contentContainerStyle: null, children: null };
     obj5[0] = tmp.form;
@@ -554,8 +554,8 @@ prototype["render"] = function render() {
     }
     items[3] = renderDeleteButtonResult;
     obj6[1] = items;
-    obj5[1] = closure_23(tmp24(4877).Stack, obj6);
-    tmp22Result = tmp22(tmp24(8185).Form, obj5);
+    obj5[1] = closure_23(tmp24(4878).Stack, obj6);
+    tmp22Result = tmp22(tmp24(8295).Form, obj5);
     const tmp26 = closure_23;
   }
   obj2[1] = tmp22Result;

@@ -1,19 +1,19 @@
-// Module ID: 12596
-// Function ID: 12597
+// Module ID: 12388
+// Function ID: 12389
 // Name: UserVoiceSettings
-// Dependencies: [19, 17, 4916, 4495, 4089, 676, 505, 21, 4444, 9003, 589, 4632, 9444, 11012, 9371, 5947, 1236, 9402, 11031, 12597, 7921, 12599, 7926, 8005, 4440, 12251, 12490, 8185, 4411, 9429, 9425, 2]
+// Dependencies: [19, 17, 4917, 4496, 4089, 676, 505, 21, 4445, 8490, 589, 4633, 9779, 9989, 9702, 5952, 1236, 9737, 10008, 12389, 12007, 12391, 10113, 7641, 4441, 8992, 9793, 8295, 4412, 9764, 9760, 2]
 // Exports: default
 
-// Module 12596 (UserVoiceSettings)
+// Module 12388 (UserVoiceSettings)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "handleSoundCreateOrUpdate" /* 4916 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4495 */;
+import closure_4 from "handleSoundCreateOrUpdate" /* 4917 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4496 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
 import { VideoToggleState } from "ME" /* 676 */;
 import { Permissions } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function UserVoiceSettings(user) {
@@ -186,7 +186,7 @@ function CurrentUserVoiceSettings(channel) {
   ({ user, style } = channel);
   const tmp = callback3();
   let tmp9Result = dependencyMap;
-  let obj = channel(9003);
+  let obj = channel(8490);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   obj1 = channel(589);
   const items = [closure_5];
@@ -221,9 +221,9 @@ function CurrentUserVoiceSettings(channel) {
     obj = { label: null, icon: null, onPress: null };
     obj[0] = stringResult;
     if (stateFromStores) {
-      let MicrophoneIcon = tmp2(9402).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp2(9737).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp2(11031).MicrophoneIcon;
+      MicrophoneIcon = tmp2(10008).MicrophoneIcon;
     }
     obj1 = { children: null };
     obj[1] = MicrophoneIcon;
@@ -231,11 +231,11 @@ function CurrentUserVoiceSettings(channel) {
       trackUserProfileAction({ action: "MUTE" });
       trackUserProfileAction(closure_1_2[14]).toggleSelfMute();
     };
-    obj1[0] = closure_9(tmp2(5947).UserProfileFormRow, obj, "mute");
-    tmp9Result = tmp9(tmp2(5947).UserProfileCardRows, obj1);
+    obj1[0] = closure_9(tmp2(5952).UserProfileFormRow, obj, "mute");
+    tmp9Result = tmp9(tmp2(5952).UserProfileCardRows, obj1);
     obj[3] = tmp9Result;
-    tmp9Result = tmp9(trackUserProfileAction(5947), obj);
-    const tmp6Result = trackUserProfileAction(5947);
+    tmp9Result = tmp9(trackUserProfileAction(5952), obj);
+    const tmp6Result = trackUserProfileAction(5952);
   }
   return tmp8;
 }

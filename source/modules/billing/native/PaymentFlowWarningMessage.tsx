@@ -1,17 +1,17 @@
-// Module ID: 7620
-// Function ID: 7621
+// Module ID: 12875
+// Function ID: 12876
 // Name: PaymentFlowWarningMessage
-// Dependencies: [19, 17, 21, 4444, 712, 5331, 1297, 4440, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 5336, 1297, 4441, 2]
 // Exports: default
 
-// Module 7620 (PaymentFlowWarningMessage)
+// Module 12875 (PaymentFlowWarningMessage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4440 */;
+import Text from "Text" /* 4441 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;

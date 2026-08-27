@@ -1,20 +1,20 @@
-// Module ID: 11942
-// Function ID: 11943
+// Module ID: 11786
+// Function ID: 11787
 // Name: DefaultState
-// Dependencies: [32, 19, 17, 1910, 11943, 676, 21, 4444, 712, 11946, 4440, 1236, 1297, 589, 11947, 11948, 1629, 11975, 11976, 5442, 6166, 11956, 11940, 698, 2]
+// Dependencies: [32, 19, 17, 1910, 11787, 676, 21, 4445, 712, 11790, 4441, 1236, 1297, 589, 11791, 11792, 1629, 11819, 11820, 5447, 6172, 11800, 11784, 698, 2]
 // Exports: default
 
-// Module 11942 (DefaultState)
+// Module 11786 (DefaultState)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 11946 */;
+import registerAssetDefault from "registerAsset" /* 11790 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "getSearchState" /* 11943 */;
+import closure_10 from "getSearchState" /* 11787 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import ArrayResult from "module_20" /* 20 */;
 
 const require = arg1;
@@ -31,7 +31,7 @@ function DefaultState() {
       return closure_1_12(lib(closure_1_3[12]).LegacyText, { style: lib.proTip, children }, "protip");
     }
   });
-  items[1] = callback(_require(4440).Text, obj);
+  items[1] = callback(_require(4441).Text, obj);
   obj[1] = items;
   return callback2(closure_6, obj);
 }
@@ -42,7 +42,7 @@ function EmptyState(channel) {
   let obj = channel(589);
   const items = [closure_9];
   importDefault = obj.useStateFromStores(items, () => closure_1_9.getGuild(channel.getGuildId()));
-  obj1 = channel(11947);
+  obj1 = channel(11791);
   const canCreateOrAddGuildInDirectory = obj1.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1236).intl;
   if (canCreateOrAddGuildInDirectory) {
@@ -62,8 +62,8 @@ function EmptyState(channel) {
   const obj2 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl2 = tmp2(1236).intl;
   obj2[3] = intl2.string(channel(1236).t["6HXiuE"]);
-  items1[1] = callback(channel(4440).Text, obj2);
-  items1[2] = callback(channel(4440).Text, { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult });
+  items1[1] = callback(channel(4441).Text, obj2);
+  items1[2] = callback(channel(4441).Text, { style: tmp.emptyStateText, variant: "text-sm/medium", color: "text-default", children: formatResult });
   obj[1] = items1;
   return callback2(closure_6, obj);
 }

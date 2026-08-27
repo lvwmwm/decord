@@ -1,15 +1,15 @@
-// Module ID: 16126
-// Function ID: 16127
+// Module ID: 16189
+// Function ID: 16190
 // Name: BaseMessagesScreen
-// Dependencies: [19, 6072, 11979, 8621, 21, 12000, 589, 11980, 16117, 16127, 11978, 16128, 16129, 16072, 16084, 2]
+// Dependencies: [19, 6080, 11823, 7554, 21, 11844, 589, 11824, 16180, 16190, 11822, 16191, 16192, 16135, 16147, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 16126 (BaseMessagesScreen)
-import _modDef12000 from "module_12000" /* 12000 */;
+// Module 16189 (BaseMessagesScreen)
+import _modDef11844 from "module_11844" /* 11844 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleReaction" /* 6072 */;
-import closure_5 from "prototype" /* 11979 */;
-import { SearchResultContentEntityTypes as closure_6 } from "SearchEntrypointAnalyticsLocations" /* 8621 */;
+import closure_4 from "handleReaction" /* 6080 */;
+import closure_5 from "prototype" /* 11823 */;
+import { SearchResultContentEntityTypes as closure_6 } from "SearchEntrypointAnalyticsLocations" /* 7554 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -118,7 +118,7 @@ export const trackMessageItemPress = function trackMessageItemPress(messageId) {
   messageId = messageId.messageId;
   ({ searchContext, channelId, index } = messageId);
   message = message.getMessage(messageId);
-  let obj = _modDef12000;
+  let obj = _modDef11844;
   obj = { searchContext, channelId, messageId, userId: null, index: null, entityType: null };
   let id;
   if (message != null) {

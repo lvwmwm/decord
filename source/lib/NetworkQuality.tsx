@@ -1,11 +1,11 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13387
+// Function ID: 13388
 // Name: _initStats
-// Dependencies: [4538, 676, 4522, 2]
+// Dependencies: [4539, 676, 4523, 2]
 
-// Module 13360 (_initStats)
-import sleep from "sleep" /* 4522 */;
-import closure_2 from "handleConnectionInfoChange" /* 4538 */;
+// Module 13387 (_initStats)
+import sleep from "sleep" /* 4523 */;
+import closure_2 from "handleConnectionInfoChange" /* 4539 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

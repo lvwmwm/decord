@@ -1,10 +1,10 @@
-// Module ID: 7105
-// Function ID: 7106
+// Module ID: 7111
+// Function ID: 7112
 // Name: items
 // Dependencies: [1924, 712, 2]
 // Exports: getPremiumGradientColor
 
-// Module 7105 (items)
+// Module 7111 (items)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;

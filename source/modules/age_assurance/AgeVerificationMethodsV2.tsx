@@ -1,10 +1,10 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 8641
+// Function ID: 8642
 // Name: _fetchAgeVerificationMethodsV
 // Dependencies: [5, 676, 530, 2]
 // Exports: fetchAgeVerificationMethodsV2
 
-// Module 8045 (_fetchAgeVerificationMethodsV)
+// Module 8641 (_fetchAgeVerificationMethodsV)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 

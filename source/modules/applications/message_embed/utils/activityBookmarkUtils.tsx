@@ -1,10 +1,10 @@
-// Module ID: 7362
-// Function ID: 7363
+// Module ID: 7369
+// Function ID: 7370
 // Name: extractActivityBookmarkParams
 // Dependencies: [1487, 2]
 // Exports: extractActivityBookmarkParams
 
-// Module 7362 (extractActivityBookmarkParams)
+// Module 7369 (extractActivityBookmarkParams)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
 

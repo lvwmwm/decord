@@ -1,14 +1,14 @@
-// Module ID: 12166
-// Function ID: 12167
+// Module ID: 12014
+// Function ID: 12015
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 1910, 4336, 4331, 12167, 589, 12168, 5900, 12169, 4335, 4411, 12150, 5324, 7074, 4675, 7083, 2]
+// Dependencies: [19, 1910, 4337, 4332, 12015, 589, 12016, 5905, 12017, 4336, 4412, 11996, 5329, 7080, 4676, 7089, 2]
 // Exports: default
 
-// Module 12166 (useGuildPowerupOnActivate)
+// Module 12014 (useGuildPowerupOnActivate)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "handleGuildBoostsUpdate" /* 4336 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4331 */;
+import closure_5 from "handleGuildBoostsUpdate" /* 4337 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4332 */;
 
 const require = arg1;
 ({ BoostPurchaseIntent: closure_6, GuildPowerupType: error } = BoostedGuildTiers);
@@ -67,7 +67,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
               obj[1] = analyticsLocations;
               obj[2] = tmp.id;
               obj[3] = function onBack() {
-                return PERK(4675).popWithKey(diff(7083).PREMIUM_KEY);
+                return PERK(4676).popWithKey(diff(7089).PREMIUM_KEY);
               };
               obj[4] = function onPaymentSuccess() {
                 let obj = diff(onToggle[9]);
@@ -87,7 +87,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
                 }
               };
               obj[5] = function onPaymentDismiss() {
-                return PERK(4675).popWithKey(diff(7083).PREMIUM_KEY);
+                return PERK(4676).popWithKey(diff(7089).PREMIUM_KEY);
               };
               const result = tmp17Result.launchGuildBoostFlowOrAlert(obj);
             }

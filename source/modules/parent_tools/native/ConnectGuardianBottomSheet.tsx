@@ -1,24 +1,24 @@
-// Module ID: 14407
-// Function ID: 14408
+// Module ID: 14434
+// Function ID: 14435
 // Name: ConnectGuardianBottomSheet
-// Dependencies: [19, 17, 7209, 7210, 21, 4444, 712, 647, 4411, 14408, 5569, 4440, 1236, 2369, 14409, 4879, 2]
+// Dependencies: [19, 17, 7215, 7216, 21, 4445, 712, 647, 4412, 14435, 5574, 4441, 1236, 2369, 14436, 4880, 2]
 // Exports: default
 
-// Module 14407 (ConnectGuardianBottomSheet)
+// Module 14434 (ConnectGuardianBottomSheet)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import ThemesDefault from "Themes" /* 712 */;
 import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import Text from "Text" /* 4440 */;
-import Button from "Button" /* 4879 */;
-import Background from "Background" /* 5569 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14408 */;
-import ConnectGuardianCard from "ConnectGuardianCard" /* 14409 */;
+import Text from "Text" /* 4441 */;
+import Button from "Button" /* 4880 */;
+import Background from "Background" /* 5574 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 14435 */;
+import ConnectGuardianCard from "ConnectGuardianCard" /* 14436 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7209 */;
-import { CONNECT_GUARDIAN_BOTTOM_SHEET_KEY as closure_6 } from "items" /* 7210 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7215 */;
+import { CONNECT_GUARDIAN_BOTTOM_SHEET_KEY as closure_6 } from "items" /* 7216 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

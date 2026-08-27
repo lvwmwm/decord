@@ -1,10 +1,10 @@
-// Module ID: 16812
-// Function ID: 16813
+// Module ID: 16878
+// Function ID: 16879
 // Name: prototype
-// Dependencies: [5433, 2]
+// Dependencies: [5438, 2]
 
-// Module 16812 (prototype)
-import initializeDefault from "initialize" /* 5433 */;
+// Module 16878 (prototype)
+import initializeDefault from "initialize" /* 5438 */;
 
 initializeDefault;
 let prototype = function IAPManager() {

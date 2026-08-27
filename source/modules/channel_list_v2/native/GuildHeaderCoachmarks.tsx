@@ -1,10 +1,10 @@
-// Module ID: 15592
-// Function ID: 15593
+// Module ID: 15657
+// Function ID: 15658
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4089, 676, 1388, 21, 589, 15593, 15594, 15596, 12146, 15603, 12137, 12138, 1377, 6197, 12134, 15604, 15605, 15607, 2]
+// Dependencies: [32, 19, 4089, 676, 1388, 21, 589, 15658, 15659, 15661, 11992, 15668, 11983, 11984, 1377, 6203, 11980, 15669, 15670, 15672, 2]
 // Exports: default
 
-// Module 15592 (GuildHeaderCoachmarks)
+// Module 15657 (GuildHeaderCoachmarks)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "getUncachedChannelPermissions" /* 4089 */;

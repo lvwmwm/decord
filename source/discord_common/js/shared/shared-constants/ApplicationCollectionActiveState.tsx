@@ -1,9 +1,9 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 11567
+// Function ID: 11568
 // Name: ApplicationCollectionActiveState
 // Dependencies: [2]
 
-// Module 11734 (ApplicationCollectionActiveState)
+// Module 11567 (ApplicationCollectionActiveState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionActiveState.tsx");

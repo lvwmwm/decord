@@ -1,24 +1,24 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14513
+// Function ID: 14514
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5422, 1218, 5172, 1996, 676, 21, 4444, 712, 4379, 589, 12755, 5908, 5297, 4411, 14485, 2009, 10633, 14487, 8185, 14490, 4877, 14491, 2]
+// Dependencies: [19, 17, 5427, 1218, 5177, 1996, 676, 21, 4445, 712, 4380, 589, 12428, 5913, 5302, 4412, 14512, 2009, 9220, 14514, 8295, 4878, 14517, 14518, 2]
 // Exports: UserSettingsConnections
 
-// Module 14486 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14513 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import ThemesDefault from "Themes" /* 712 */;
-import useThemeDefault from "useTheme" /* 4379 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12755 */;
-import EmptyStateCardDefault from "EmptyStateCard" /* 14487 */;
+import useThemeDefault from "useTheme" /* 4380 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12428 */;
+import EmptyStateCardDefault from "EmptyStateCard" /* 14514 */;
 import closure_3 from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "recomputeFromAppTokens" /* 5422 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5422 */;
+import closure_5 from "recomputeFromAppTokens" /* 5427 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5427 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
-import closure_8 from "set" /* 5172 */;
+import closure_8 from "set" /* 5177 */;
 import closure_9 from "_getSystemLocale" /* 1996 */;
 import { AnalyticsLocations } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -85,19 +85,18 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
       }
       obj = { style: null, children: null };
       obj[0] = tmp.form;
+      obj = { spacing: 16, children: null };
       const items5 = [
         prop.map((application_id) => {
               closure_0 = application_id;
               const obj = { identity: application_id, token: authorizedApps.find((application) => application.application.id === application_id.application_id) };
-              return closure_1_11(callback(paths[21]), obj, "" + application_id.application_id + "-" + application_id.provider_issued_user_id);
+              return closure_1_11(callback(paths[22]), obj, "" + application_id.application_id + "-" + application_id.provider_issued_user_id);
             }),
-
+        accounts.map((account) => closure_1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id))
       ];
-      obj = { spacing: 16, children: null };
-      obj[1] = accounts.map((account) => closure_1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id));
-      items5[1] = callback(tmp4(4877).Stack, obj);
       obj[1] = items5;
-      tmp14 = callback2(tmp4(8185).Form, obj);
+      obj[1] = callback2(tmp4(4878).Stack, obj);
+      tmp14 = callback(tmp4(8295).Form, obj);
     }
     return tmp14;
   }

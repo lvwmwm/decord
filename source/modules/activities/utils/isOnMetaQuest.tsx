@@ -1,10 +1,10 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 9336
+// Function ID: 9337
 // Name: isOnMetaQuest
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 12570 (isOnMetaQuest)
+// Module 9336 (isOnMetaQuest)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

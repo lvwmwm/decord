@@ -1,22 +1,22 @@
-// Module ID: 11269
-// Function ID: 11270
+// Module ID: 11150
+// Function ID: 11151
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 4444, 712, 5569, 5440, 8361, 1297, 11270, 4440, 1236, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 5574, 5445, 7875, 1297, 11151, 4441, 1236, 2]
 // Exports: default
 
-// Module 11269 (PublicGuildAnnouncementProfile)
+// Module 11150 (PublicGuildAnnouncementProfile)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4440 */;
-import preloadDefault from "preload" /* 5440 */;
-import Background from "Background" /* 5569 */;
-import isPublicSystemMessage from "isPublicSystemMessage" /* 8361 */;
-import registerAssetDefault from "registerAsset" /* 11270 */;
+import Text from "Text" /* 4441 */;
+import preloadDefault from "preload" /* 5445 */;
+import Background from "Background" /* 5574 */;
+import isPublicSystemMessage from "isPublicSystemMessage" /* 7875 */;
+import registerAssetDefault from "registerAsset" /* 11151 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;

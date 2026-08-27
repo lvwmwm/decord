@@ -1,10 +1,10 @@
-// Module ID: 11180
-// Function ID: 11181
+// Module ID: 11063
+// Function ID: 11064
 // Name: maybeStartLurking
-// Dependencies: [5, 1395, 1434, 1391, 1992, 1985, 1910, 4089, 676, 1398, 5415, 5411, 6131, 9152, 8416, 4675, 11181, 2009, 6038, 4411, 11194, 11202, 1370, 4639, 4679, 5302, 2]
+// Dependencies: [5, 1395, 1434, 1391, 1992, 1985, 1910, 4089, 676, 1398, 5420, 5416, 6137, 8577, 7937, 4676, 11064, 2009, 6043, 4412, 11077, 11085, 1370, 4640, 4680, 5307, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11180 (maybeStartLurking)
+// Module 11063 (maybeStartLurking)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { isGuildVocalChannelType } from "createChannelRecord" /* 1395 */;
 import { isGuildLurker } from "GuildNSFWContentLevel" /* 1434 */;
@@ -15,8 +15,8 @@ import closure_10 from "createGuildRecordFromRust" /* 1910 */;
 import closure_11 from "getUncachedChannelPermissions" /* 4089 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1398 */;
-import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 5415 */;
-import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5411 */;
+import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 5420 */;
+import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5416 */;
 
 const require = arg1;
 function maybeStartLurking() {

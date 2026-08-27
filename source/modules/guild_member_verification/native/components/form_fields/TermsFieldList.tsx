@@ -1,17 +1,17 @@
-// Module ID: 5503
-// Function ID: 5504
+// Module ID: 5508
+// Function ID: 5509
 // Name: TermsFieldListItem
-// Dependencies: [19, 17, 21, 4444, 712, 4440, 4434, 1236, 5504, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 4441, 4435, 1236, 5509, 2]
 // Exports: default
 
-// Module 5503 (TermsFieldListItem)
+// Module 5508 (TermsFieldListItem)
 import ThemesDefault from "Themes" /* 712 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4434 */;
-import Text from "Text" /* 4440 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4435 */;
+import Text from "Text" /* 4441 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function TermsFieldListItem(arg0) {
@@ -51,7 +51,7 @@ export default function TermsFieldList(rules) {
   const intl = rules(1236).intl;
   obj[4] = intl.string(rules(1236).t.prJqwT);
   let items = [
-    callback(rules(4440).Text, obj),
+    callback(rules(4441).Text, obj),
     rules.map((rule) => {
       const items = [termsContainer.termsContainer, , ];
       let firstItem = null;

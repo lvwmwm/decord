@@ -1,29 +1,29 @@
-// Module ID: 5404
-// Function ID: 5405
+// Module ID: 5409
+// Function ID: 5410
 // Name: showTooManyUserGuildsAlert
-// Dependencies: [109, 5, 5405, 1218, 5329, 1982, 1910, 1981, 4266, 1922, 676, 1221, 4808, 1236, 709, 5406, 530, 1222, 5409, 2009, 5998, 6006, 6011, 6038, 6111, 4665, 503, 6112, 4094, 506, 6113, 4130, 698, 6117, 4683, 6119, 2]
+// Dependencies: [109, 5, 5410, 1218, 5334, 1982, 1910, 1981, 4267, 1922, 676, 1221, 4809, 1236, 709, 5411, 530, 1222, 5414, 2009, 6003, 6011, 6016, 6043, 6118, 4666, 503, 6119, 4094, 506, 6120, 4130, 698, 6124, 4684, 6126, 2]
 
-// Module 5404 (showTooManyUserGuildsAlert)
+// Module 5409 (showTooManyUserGuildsAlert)
 import encodeProperties from "encodeProperties" /* 503 */;
 import sendRequest from "sendRequest" /* 530 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import transitionTo from "transitionTo" /* 1222 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4665 from "module_4665" /* 4665 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4683 */;
-import setDefault from "set" /* 4808 */;
-import stopLurkingAll from "stopLurkingAll" /* 6111 */;
-import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 6117 */;
+import _modDef4666 from "module_4666" /* 4666 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4684 */;
+import setDefault from "set" /* 4809 */;
+import stopLurkingAll from "stopLurkingAll" /* 6118 */;
+import getPreviousSafeRouteForNsfwReturnDefault from "getPreviousSafeRouteForNsfwReturn" /* 6124 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "asyncGeneratorStep" /* 5 */;
-import closure_7 from "set" /* 5405 */;
+import closure_7 from "set" /* 5410 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
-import closure_9 from "set" /* 5329 */;
+import closure_9 from "set" /* 5334 */;
 import closure_10 from "comparator" /* 1982 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
 import closure_12 from "handleConnectionOpen" /* 1981 */;
-import closure_13 from "handleConnectionOpen" /* 4266 */;
+import closure_13 from "handleConnectionOpen" /* 4267 */;
 import closure_14 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { AgeGateSource } from "result" /* 1221 */;
@@ -629,7 +629,7 @@ export default {
   },
   setCommunicationDisabledUntil(moderator_report_id) {
     ({ guildId, userId, communicationDisabledUntilTimestamp, duration, reason, location: _location } = moderator_report_id);
-    let obj = _modDef4665;
+    let obj = _modDef4666;
     obj = { url: closure_16.GUILD_MEMBER(guildId, userId), reason, body: { communication_disabled_until: communicationDisabledUntilTimestamp, moderator_report_id: moderator_report_id.moderatorReportId }, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { event: encodeProperties.NetworkActionNames.USER_COMMUNICATION_DISABLED_UPDATE, properties: null };
     obj1 = { guild_id: guildId, target_user_id: userId, duration: null, reason: null, communication_disabled_until: null, location: null };
@@ -966,7 +966,7 @@ export default {
       const obj5 = closure_1_0(530);
       obj1[3] = obj5.rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = closure_1_1(6113);
+      const obj = closure_1_1(6120);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -998,7 +998,7 @@ export default {
       obj1[1] = closure_1_1;
       obj1[3] = closure_1_0(530).rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = closure_1_1(6113);
+      const obj = closure_1_1(6120);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -1015,7 +1015,7 @@ export default {
       obj1[1] = closure_1_1;
       obj1[3] = closure_1_0(530).rejectWithMigratedError();
       closure_0 = yield HTTP.patch(obj1);
-      const obj = closure_1_1(6113);
+      const obj = closure_1_1(6120);
       const result = obj.checkGuildTemplateDirty(closure_0);
       return closure_0;
     })();
@@ -1147,7 +1147,7 @@ export default {
         const defaultChannel = store.getDefaultChannel(guildId);
         if (null != defaultChannel) {
           if (!obj3.isChannelContentGated(defaultChannel)) {
-            let tmp11Result = tmp11(6119);
+            let tmp11Result = tmp11(6126);
             if (!tmp11Result.isChannelSpoilerGated(defaultChannel)) {
               tmp11Result = tmp11(1222);
               tmp11Result.transitionTo(closure_21.CHANNEL(guildId, defaultChannel.id));

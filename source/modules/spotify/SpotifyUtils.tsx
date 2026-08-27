@@ -1,16 +1,16 @@
-// Module ID: 11380
-// Function ID: 11381
+// Module ID: 9311
+// Function ID: 9312
 // Name: asString
-// Dependencies: [5, 4467, 11381, 5171, 9118, 676, 687, 5174, 11382, 11383, 2]
+// Dependencies: [5, 4468, 9312, 5176, 8542, 676, 687, 5179, 9313, 9314, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 11380 (asString)
+// Module 9311 (asString)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 4467 */;
-import closure_5 from "isProtocolRegistered" /* 11381 */;
-import closure_6 from "upsertAccount" /* 5171 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 9118 */;
+import closure_4 from "initialize" /* 4468 */;
+import closure_5 from "isProtocolRegistered" /* 9312 */;
+import closure_6 from "upsertAccount" /* 5176 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8542 */;
 import { PlatformTypes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -159,7 +159,7 @@ export const ensureSpotifyPlayable = function ensureSpotifyPlayable() {
     if (observedAppRunning.isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        playableComputerDevices(11382).setActiveDevice(socket.accountId, device.id);
+        playableComputerDevices(9313).setActiveDevice(socket.accountId, device.id);
         obj = { socket: null, device: null };
         obj[0] = socket;
         obj[1] = device;
@@ -228,7 +228,7 @@ export const ensureSpotifyPremium = function ensureSpotifyPremium() {
     if (socket.isPremium) {
       let resolved = Promise.resolve();
     } else {
-      const profile = socket(11382).getProfile(socket.accountId, socket.accessToken);
+      const profile = socket(9313).getProfile(socket.accountId, socket.accessToken);
       resolved = profile.then(() => {
         if (!socket.isPremium) {
           const _Error = Error;
@@ -236,7 +236,7 @@ export const ensureSpotifyPremium = function ensureSpotifyPremium() {
           return Promise.reject(error);
         }
       });
-      const obj = socket(11382);
+      const obj = socket(9313);
     }
     return resolved;
   }

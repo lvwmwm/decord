@@ -1,10 +1,10 @@
-// Module ID: 8543
-// Function ID: 8544
+// Module ID: 8060
+// Function ID: 8061
 // Name: useMessagePollInteractions
 // Dependencies: [700, 705, 643, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 8543 (useMessagePollInteractions)
+// Module 8060 (useMessagePollInteractions)
 import set from "set" /* 2 */;
 import shallowEqualDefault from "shallowEqual" /* 643 */;
 import identity from "identity" /* 700 */;

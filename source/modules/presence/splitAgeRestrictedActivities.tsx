@@ -1,13 +1,13 @@
-// Module ID: 13301
-// Function ID: 13302
+// Module ID: 13328
+// Function ID: 13329
 // Name: splitAgeRestrictedActivities
-// Dependencies: [13302, 10802, 2]
+// Dependencies: [13329, 9415, 2]
 // Exports: default
 
-// Module 13301 (splitAgeRestrictedActivities)
+// Module 13328 (splitAgeRestrictedActivities)
 import set from "set" /* 2 */;
-import isAgeRestrictedClassificationReference from "isAgeRestrictedClassificationReference" /* 10802 */;
-import apexExperiment from "apexExperiment" /* 13302 */;
+import isAgeRestrictedClassificationReference from "isAgeRestrictedClassificationReference" /* 9415 */;
+import apexExperiment from "apexExperiment" /* 13329 */;
 
 const result = set.fileFinishedImporting("modules/presence/splitAgeRestrictedActivities.tsx");
 

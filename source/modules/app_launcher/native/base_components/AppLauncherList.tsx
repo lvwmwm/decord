@@ -1,20 +1,20 @@
-// Module ID: 11825
-// Function ID: 11826
+// Module ID: 11654
+// Function ID: 11655
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 4444, 1629, 11759, 1297, 11826, 1236, 6167, 2]
+// Dependencies: [19, 17, 21, 4445, 1629, 11591, 1297, 11655, 1236, 6173, 2]
 // Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 11825 (AppLauncherList)
+// Module 11654 (AppLauncherList)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import SearchField from "SearchField" /* 6167 */;
-import useAppLauncherFlashListProps from "useAppLauncherFlashListProps" /* 11759 */;
-import useAppLauncherFlashListPropsDefault from "useAppLauncherFlashListProps" /* 11759 */;
-import registerAssetDefault from "registerAsset" /* 11826 */;
+import SearchField from "SearchField" /* 6173 */;
+import useAppLauncherFlashListProps from "useAppLauncherFlashListProps" /* 11591 */;
+import useAppLauncherFlashListPropsDefault from "useAppLauncherFlashListProps" /* 11591 */;
+import registerAssetDefault from "registerAsset" /* 11655 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

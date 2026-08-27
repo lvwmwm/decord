@@ -1,10 +1,10 @@
-// Module ID: 13118
-// Function ID: 13119
+// Module ID: 13141
+// Function ID: 13142
 // Name: PremiumText
-// Dependencies: [19, 17, 1924, 21, 4444, 4292, 712, 4107, 1236, 1297, 2]
+// Dependencies: [19, 17, 1924, 21, 4445, 4293, 712, 4107, 1236, 1297, 2]
 // Exports: default
 
-// Module 13118 (PremiumText)
+// Module 13141 (PremiumText)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
@@ -13,8 +13,8 @@ import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import hexToRgba from "hexToRgba" /* 4292 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import hexToRgba from "hexToRgba" /* 4293 */;
 
 require = arg1;
 function PremiumText(basePlanId) {

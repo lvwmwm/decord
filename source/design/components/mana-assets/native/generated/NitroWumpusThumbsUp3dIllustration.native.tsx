@@ -1,14 +1,14 @@
-// Module ID: 6813
-// Function ID: 6814
+// Module ID: 6819
+// Function ID: 6820
 // Name: NitroWumpusThumbsUp3dIllustration
-// Dependencies: [21, 5440, 6814, 2]
+// Dependencies: [21, 5445, 6820, 2]
 // Exports: NitroWumpusThumbsUp3dIllustration
 
-// Module 6813 (NitroWumpusThumbsUp3dIllustration)
+// Module 6819 (NitroWumpusThumbsUp3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6814 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6820 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusThumbsUp3dIllustration.native.tsx");

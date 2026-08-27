@@ -1,10 +1,10 @@
-// Module ID: 6037
-// Function ID: 6038
+// Module ID: 6042
+// Function ID: 6043
 // Name: _signOrder
 // Dependencies: [5, 676, 3, 4129, 530, 4122, 2]
 // Exports: fetchOrderEntitlements, getOrder, signOrder
 
-// Module 6037 (_signOrder)
+// Module 6042 (_signOrder)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 4129 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;

@@ -1,20 +1,20 @@
-// Module ID: 5310
-// Function ID: 5311
+// Module ID: 5315
+// Function ID: 5316
 // Name: anyoneHasFlagInContext
-// Dependencies: [32, 1391, 4495, 4518, 1981, 676, 4508, 4094, 589, 5311, 709, 2]
+// Dependencies: [32, 1391, 4496, 4519, 1981, 676, 4509, 4094, 589, 5316, 709, 2]
 
-// Module 5310 (anyoneHasFlagInContext)
+// Module 5315 (anyoneHasFlagInContext)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import applyOverwritesAll from "applyOverwrites" /* 4094 */;
-import getUnitIdDefault from "getUnitId" /* 5311 */;
+import getUnitIdDefault from "getUnitId" /* 5316 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4495 */;
-import closure_6 from "createRTCConnection" /* 4518 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4496 */;
+import closure_6 from "createRTCConnection" /* 4519 */;
 import closure_7 from "handleConnectionOpen" /* 1981 */;
 import { Permissions } from "ME" /* 676 */;
-import DesktopSources from "DesktopSources" /* 4508 */;
+import DesktopSources from "DesktopSources" /* 4509 */;
 
 function anyoneHasFlagInContext(DEFAULT, VOICE, arg2) {
   let flag = arg2;

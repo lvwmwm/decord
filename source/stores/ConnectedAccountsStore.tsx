@@ -1,13 +1,13 @@
-// Module ID: 5172
-// Function ID: 5173
+// Module ID: 5177
+// Function ID: 5178
 // Name: set
-// Dependencies: [5173, 676, 5174, 1430, 5297, 589, 709, 2]
+// Dependencies: [5178, 676, 5179, 1430, 5302, 589, 709, 2]
 
-// Module 5172 (set)
+// Module 5177 (set)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import callbackDefault from "callback" /* 5297 */;
-import closure_3 from "toString" /* 5173 */;
+import callbackDefault from "callback" /* 5302 */;
+import closure_3 from "toString" /* 5178 */;
 import set from "set" /* 2 */;
 
 const require = arg1;

@@ -1,25 +1,25 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15889
+// Function ID: 15890
 // Name: Username
-// Dependencies: [19, 17, 4466, 1391, 4089, 4533, 4098, 5170, 4463, 676, 21, 4444, 712, 15807, 9685, 9468, 9693, 15806, 589, 9662, 9665, 9857, 9858, 15825, 9855, 9741, 4440, 4288, 2]
+// Dependencies: [19, 17, 4467, 1391, 4089, 4534, 4098, 5175, 4464, 676, 21, 4445, 712, 15872, 8846, 8929, 8858, 15871, 589, 8463, 9008, 9162, 9163, 15890, 9160, 9141, 4441, 4289, 2]
 
-// Module 15824 (Username)
+// Module 15889 (Username)
 import ThemesDefault from "Themes" /* 712 */;
-import memoResult1Default from "memoResult1" /* 9468 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 9685 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 9693 */;
-import apexExperiment from "apexExperiment" /* 15807 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8846 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 8858 */;
+import memoResult1Default from "memoResult1" /* 8929 */;
+import apexExperiment from "apexExperiment" /* 15872 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "reset" /* 4466 */;
+import closure_4 from "reset" /* 4467 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_7 from "sortActivity" /* 4533 */;
+import closure_7 from "sortActivity" /* 4534 */;
 import closure_8 from "markAllUserIdListsStale" /* 4098 */;
-import closure_9 from "filterPlayingActivities" /* 5170 */;
-import closure_10 from "updateVoiceState" /* 4463 */;
+import closure_9 from "filterPlayingActivities" /* 5175 */;
+import closure_10 from "updateVoiceState" /* 4464 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

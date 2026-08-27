@@ -1,10 +1,10 @@
-// Module ID: 11390
-// Function ID: 11391
+// Module ID: 11243
+// Function ID: 11244
 // Name: getIsAskToJoin
 // Dependencies: [676, 2]
 // Exports: getIsAskToJoin
 
-// Module 11390 (getIsAskToJoin)
+// Module 11243 (getIsAskToJoin)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

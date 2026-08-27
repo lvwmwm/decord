@@ -1,18 +1,18 @@
-// Module ID: 14433
-// Function ID: 14434
+// Module ID: 14460
+// Function ID: 14461
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4444, 712, 8499, 14421, 14430, 14432, 4288, 14431, 4440, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 8014, 14448, 14457, 14459, 4289, 14458, 4441, 2]
 // Exports: default
 
-// Module 14433 (FamilyCenterActivityGiftRow)
+// Module 14460 (FamilyCenterActivityGiftRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8499 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 14421 */;
-import getCollectibleTypeName from "getCollectibleTypeName" /* 14430 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8014 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 14448 */;
+import getCollectibleTypeName from "getCollectibleTypeName" /* 14457 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -53,7 +53,7 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj[1] = price;
     let name = null;
     if (null != teenUserForId) {
-      let tmp2Result = tmp2(4288);
+      let tmp2Result = tmp2(4289);
       name = tmp2Result.getName(teenUserForId);
     }
     obj[2] = name;
@@ -61,10 +61,10 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj[4] = claimedAt;
     obj = { style: null, children: null };
     obj[0] = tmp.container;
-    const giftSubtext = tmp5(14432).getGiftSubtext(obj);
+    const giftSubtext = tmp5(14459).getGiftSubtext(obj);
     obj1 = { displayName: null, product: null, isSubscription: null, subscriptionPlanId: null };
     obj1[0] = displayName;
-    tmp2Result = tmp2(14431);
+    tmp2Result = tmp2(14458);
     if (product == null) {
       product = null;
     }
@@ -76,10 +76,10 @@ export default function FamilyCenterActivityGiftRow(arg0) {
     obj2[0] = tmp.textContainer;
     const obj3 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: null };
     obj3[4] = displayName;
-    const items1 = [closure_4(tmp5(4440).Text, obj3), ];
+    const items1 = [closure_4(tmp5(4441).Text, obj3), ];
     const obj4 = { variant: "text-xs/medium", color: "text-muted", children: null };
     obj4[2] = giftSubtext;
-    items1[1] = closure_4(tmp5(4440).Text, obj4);
+    items1[1] = closure_4(tmp5(4441).Text, obj4);
     obj2[1] = items1;
     items[1] = closure_5(View, obj2);
     obj[1] = items;

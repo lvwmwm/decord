@@ -1,18 +1,18 @@
-// Module ID: 14508
-// Function ID: 14509
+// Module ID: 14535
+// Function ID: 14536
 // Name: route
-// Dependencies: [19, 1922, 4113, 676, 21, 12966, 4107, 1236, 7090, 7654, 14509, 10584, 7916, 14511, 2]
+// Dependencies: [19, 1922, 4113, 676, 21, 12989, 4107, 1236, 7096, 8412, 14536, 10988, 8028, 14538, 2]
 
-// Module 14508 (route)
+// Module 14535 (route)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
-import apexExperiment from "apexExperiment" /* 12966 */;
-import ThemedTabBadgeDefault from "ThemedTabBadge" /* 14509 */;
+import apexExperiment from "apexExperiment" /* 12989 */;
+import ThemedTabBadgeDefault from "ThemedTabBadge" /* 14536 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import closure_5 from "reset" /* 4113 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 10584 */;
+import createToggle from "createToggle" /* 10988 */;
 
 require = arg1;
 createToggle = {
@@ -54,7 +54,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM,
   getComponent() {
-    return require(14511) /* PremiumScreen */.default;
+    return require(14538) /* PremiumScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

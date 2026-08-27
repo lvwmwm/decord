@@ -1,12 +1,12 @@
-// Module ID: 15670
-// Function ID: 15671
+// Module ID: 15734
+// Function ID: 15735
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [19, 1394, 676, 1388, 21, 9938, 5887, 589, 1236, 3147, 8868, 2]
+// Dependencies: [19, 1394, 676, 1388, 21, 10238, 5892, 589, 1236, 3147, 8895, 2]
 // Exports: default
 
-// Module 15670 (FavoritesGuildCoachmarkMenuItemContent)
-import Layer from "Layer" /* 5887 */;
-import items12 from "items1" /* 9938 */;
+// Module 15734 (FavoritesGuildCoachmarkMenuItemContent)
+import Layer from "Layer" /* 5892 */;
+import items12 from "items1" /* 10238 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "initializeFromUserSettings" /* 1394 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;

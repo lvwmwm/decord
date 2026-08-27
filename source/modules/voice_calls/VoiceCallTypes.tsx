@@ -1,9 +1,9 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9697
+// Function ID: 9698
 // Name: RouteTypes
 // Dependencies: [2]
 
-// Module 9366 (RouteTypes)
+// Module 9697 (RouteTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/voice_calls/VoiceCallTypes.tsx");

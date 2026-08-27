@@ -1,12 +1,12 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 14139
+// Function ID: 14140
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 4436, 21, 589, 1356, 2]
+// Dependencies: [19, 4437, 21, 589, 1356, 2]
 // Exports: default
 
-// Module 14112 (AccessibilityPreferencesContextProvider)
+// Module 14139 (AccessibilityPreferencesContextProvider)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

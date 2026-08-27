@@ -1,0 +1,10 @@
+// Module ID: 2403
+// Function ID: 2404
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 2403 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Bvd2VydXBz", scales: [1], hash: "96d5066d12dfb368bf04157fa3b27b0a", name: "cs.messages.96d5066d12dfb368bf04157fa3b27b0a.compiled.messages", type: "jsona" });

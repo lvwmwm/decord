@@ -1,10 +1,10 @@
-// Module ID: 10619
-// Function ID: 10620
+// Module ID: 10851
+// Function ID: 10852
 // Name: getDurationStringOfFractionalPremium
-// Dependencies: [4107, 1236, 7376, 4131, 687, 2]
+// Dependencies: [4107, 1236, 7386, 4131, 687, 2]
 // Exports: getDurationStringOfFractionalPremium, getFractionalPremiumQuestRewardName, getFractionalPremiumQuestRewards
 
-// Module 10619 (getDurationStringOfFractionalPremium)
+// Module 10851 (getDurationStringOfFractionalPremium)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

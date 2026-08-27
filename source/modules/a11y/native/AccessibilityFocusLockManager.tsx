@@ -1,12 +1,12 @@
-// Module ID: 4865
-// Function ID: 4866
+// Module ID: 4866
+// Function ID: 4867
 // Name: _updateAccessibilityFocusLock
-// Dependencies: [3, 4626, 4866, 4812, 2]
+// Dependencies: [3, 4627, 4867, 4813, 2]
 
-// Module 4865 (_updateAccessibilityFocusLock)
+// Module 4866 (_updateAccessibilityFocusLock)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 4626 */;
-import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4866 */;
+import initializeDefault from "initialize" /* 4627 */;
+import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4867 */;
 
 require = arg1;
 let closure_3 = new timestampDefault("AccessibilityFocusLockManager");
@@ -51,14 +51,14 @@ prototype["_updateAccessibilityFocusLock"] = function _updateAccessibilityFocusL
     }
   }
   if (self._focusLockEnabled) {
-    item10014(4812).disableFocusLock();
+    item10014(4813).disableFocusLock();
     self._focusLockEnabled = false;
-    const obj = item10014(4812);
+    const obj = item10014(4813);
   }
 };
 prototype["_initialize"] = function _initialize() {
   const self = this;
-  this._screenReaderEnabledListener = self(4866).addScreenReaderEnabledListener((_screenReaderEnabled) => {
+  this._screenReaderEnabledListener = self(4867).addScreenReaderEnabledListener((_screenReaderEnabled) => {
     self._screenReaderEnabled = _screenReaderEnabled;
     const result = self._updateAccessibilityFocusLock();
   });

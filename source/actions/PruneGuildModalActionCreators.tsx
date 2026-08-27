@@ -1,8 +1,8 @@
-// Module ID: 16012
-// Function ID: 16013
+// Module ID: 16077
+// Function ID: 16078
 // Dependencies: [5, 676, 530, 2]
 
-// Module 16012
+// Module 16077
 import sendRequest from "sendRequest" /* 530 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;

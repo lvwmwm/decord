@@ -1,12 +1,12 @@
-// Module ID: 6167
-// Function ID: 6168
+// Module ID: 6173
+// Function ID: 6174
 // Name: SearchField
-// Dependencies: [19, 21, 6168, 1236, 6181, 2]
+// Dependencies: [19, 21, 6174, 1236, 6187, 2]
 
-// Module 6167 (SearchField)
+// Module 6173 (SearchField)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import TextField from "TextField" /* 6168 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6181 */;
+import TextField from "TextField" /* 6174 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6187 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

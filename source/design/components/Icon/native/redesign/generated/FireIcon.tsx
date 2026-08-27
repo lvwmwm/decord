@@ -1,14 +1,14 @@
-// Module ID: 12482
-// Function ID: 12483
+// Module ID: 8944
+// Function ID: 8945
 // Name: FireIcon
-// Dependencies: [19, 21, 712, 4164, 12483, 2]
+// Dependencies: [19, 21, 712, 4164, 8945, 2]
 // Exports: FireIcon
 
-// Module 12482 (FireIcon)
+// Module 8944 (FireIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 12483 */;
+import registerAsset from "registerAsset" /* 8945 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

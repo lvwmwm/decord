@@ -1,11 +1,11 @@
-// Module ID: 6104
-// Function ID: 6105
+// Module ID: 6111
+// Function ID: 6112
 // Name: initialize
-// Dependencies: [5168, 1395, 1391, 1981, 676, 1398, 709, 6015, 4271, 4284, 530, 2]
+// Dependencies: [5173, 1395, 1391, 1981, 676, 1398, 709, 6020, 4272, 4285, 530, 2]
 
-// Module 6104 (initialize)
+// Module 6111 (initialize)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "_handleConnectionOpen" /* 5168 */;
+import closure_3 from "_handleConnectionOpen" /* 5173 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import closure_7 from "handleConnectionOpen" /* 1981 */;
@@ -34,7 +34,7 @@ function loadThread(channelId) {
   const _require = channelId;
   if (null == channelId) {
     return Promise.resolve();
-  } else if (channelId === _require(6015).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+  } else if (channelId === _require(6020).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
     return Promise.resolve();
   } else if (isStaticChannelRoute(channelId)) {
     return Promise.resolve();
@@ -61,11 +61,11 @@ function loadThread(channelId) {
         }
         return resolved;
       } else {
-        let tmp13Result = tmp13(4271);
+        let tmp13Result = tmp13(4272);
         const _location = location;
         obj = { path: null, exact: true };
-        const RouteParam = tmp13(4284).RouteParam;
-        const RouteParam2 = tmp13(4284).RouteParam;
+        const RouteParam = tmp13(4285).RouteParam;
+        const RouteParam2 = tmp13(4285).RouteParam;
         obj[0] = closure_9.CHANNEL(RouteParam.guildId(), RouteParam2.channelId(), ":messageId");
         importDefault = tmp13Result.matchPath(location.pathname, obj);
         const HTTP = tmp13(530).HTTP;
@@ -96,7 +96,7 @@ function loadThread(channelId) {
         }).catch(() => {
           closure_1_11[closure_0] = { type: "NOT_FOUND" };
           let obj = lib(closure_1_2[6]);
-          obj = { id: closure_0, guild_id: null, parent_id: "Array" };
+          obj = { id: closure_0, guild_id: null, parent_id: "r" };
           let guildId;
           if (lib != null) {
             const params = lib.params;
@@ -143,7 +143,7 @@ export default {
         let tmp9 = nextResult;
         let tmp10 = items1;
         let tmp11 = dependencyMap;
-        if (nextResult !== items1(6015).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+        if (nextResult !== items1(6020).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
           let tmp12 = isStaticChannelRoute;
           let tmp13 = nextResult;
           if (!isStaticChannelRoute(tmp9)) {

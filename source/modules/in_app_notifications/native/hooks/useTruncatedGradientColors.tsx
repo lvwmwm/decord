@@ -1,14 +1,14 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10111
+// Function ID: 10112
 // Name: useTruncatedGradientColors
-// Dependencies: [19, 4444, 4165, 712, 689, 2]
+// Dependencies: [19, 4445, 4165, 712, 689, 2]
 // Exports: default
 
-// Module 10011 (useTruncatedGradientColors)
+// Module 10111 (useTruncatedGradientColors)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const useMemo = noop.useMemo;
 let closure_4 = createCacheKey.createStyles({ gradient: { height: 40 } });

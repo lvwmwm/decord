@@ -1,14 +1,14 @@
-// Module ID: 10204
-// Function ID: 10205
-// Dependencies: [19, 17, 676, 21, 4444, 712, 8935, 5571, 1297, 1236, 10205, 2]
+// Module ID: 10328
+// Function ID: 10329
+// Dependencies: [19, 17, 676, 21, 4445, 712, 9079, 5576, 1297, 1236, 10329, 2]
 
-// Module 10204
+// Module 10328
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { EXPRESSION_FOOTER_HEIGHT } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -23,10 +23,10 @@ const memoResult = importAllResult.memo(function StickerPickerListEmptyState(ins
   insetBottom = insetBottom.insetBottom;
   const items = [insetBottom, insetTop];
   const memo = importAllResult.useMemo(() => ({ marginBottom: insetBottom + closure_1_5, marginTop: insetTop, flex: 1 }), items);
-  let obj = insetTop(8935);
+  let obj = insetTop(9079);
   const modalDismissGuardRefreshControl = obj.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(5571).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(5576).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo(function StickerPickerListEmptyState(ins
   const intl = tmp3(1236).intl;
   obj[0] = intl.string(insetTop(1236).t.jyiGfc);
   ({ emptyStateBody: obj3[1], emptyStateContainer: obj3[2], emptyStateImage: obj3[3] } = callback());
-  obj[4] = insetBottom(10205);
+  obj[4] = insetBottom(10329);
   obj[5] = { marginBottom: 0 };
   obj[3] = jsx(insetTop(1297).RefreshEmptyState, { body: null, bodyStyle: null, containerStyle: null, imageStyle: null, source: null, titleStyle: null });
   return <BottomSheetScrollView body={null} bodyStyle={null} containerStyle={null} imageStyle={null} source={null} titleStyle={null} />;

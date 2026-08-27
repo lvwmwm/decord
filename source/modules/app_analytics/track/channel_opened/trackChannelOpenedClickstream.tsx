@@ -1,11 +1,11 @@
-// Module ID: 7444
-// Function ID: 7445
+// Module ID: 7452
+// Function ID: 7453
 // Name: trackChannelOpenedClickstream
-// Dependencies: [1391, 676, 1398, 7138, 2]
+// Dependencies: [1391, 676, 1398, 7144, 2]
 // Exports: default
 
-// Module 7444 (trackChannelOpenedClickstream)
-import isClickstreamEnabled from "isClickstreamEnabled" /* 7138 */;
+// Module 7452 (trackChannelOpenedClickstream)
+import isClickstreamEnabled from "isClickstreamEnabled" /* 7144 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1398 */;

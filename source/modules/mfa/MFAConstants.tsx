@@ -1,9 +1,9 @@
-// Module ID: 15292
-// Function ID: 15293
+// Module ID: 15356
+// Function ID: 15357
 // Name: get webauthn
 // Dependencies: [1236, 2]
 
-// Module 15292 (get webauthn)
+// Module 15356 (get webauthn)
 import set from "set" /* 2 */;
 
 const obj = {};

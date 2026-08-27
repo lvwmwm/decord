@@ -1,14 +1,14 @@
-// Module ID: 14834
-// Function ID: 14835
+// Module ID: 14861
+// Function ID: 14862
 // Name: useMessagePreview
-// Dependencies: [1340, 4459, 4134, 589, 8627, 4139, 14835, 2]
+// Dependencies: [1340, 4460, 4134, 589, 7560, 4139, 14862, 2]
 // Exports: default, useMessagePreviewSetting
 
-// Module 14834 (useMessagePreview)
-import useIsNsfwGatedDefault from "useIsNsfwGated" /* 8627 */;
-import useLatestChannelMessageDefault from "useLatestChannelMessage" /* 14835 */;
+// Module 14861 (useMessagePreview)
+import useIsNsfwGatedDefault from "useIsNsfwGated" /* 7560 */;
+import useLatestChannelMessageDefault from "useLatestChannelMessage" /* 14862 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_4 from "generateOldThreadCutoff" /* 4459 */;
+import closure_4 from "generateOldThreadCutoff" /* 4460 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/useMessagePreviews.tsx");

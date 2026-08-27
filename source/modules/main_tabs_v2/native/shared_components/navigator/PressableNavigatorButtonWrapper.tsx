@@ -1,16 +1,16 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 7543
+// Function ID: 7544
 // Name: PressableNavigatorButtonWrapper
-// Dependencies: [17, 8608, 21, 4444, 712, 2]
+// Dependencies: [17, 7541, 21, 4445, 712, 2]
 // Exports: default
 
-// Module 8610 (PressableNavigatorButtonWrapper)
+// Module 7543 (PressableNavigatorButtonWrapper)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import MIN_HEADER_HEIGHT2 from "MIN_HEADER_HEIGHT" /* 8608 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import MIN_HEADER_HEIGHT2 from "MIN_HEADER_HEIGHT" /* 7541 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const View = get_ActivityIndicator.View;
 const MIN_HEADER_HEIGHT = MIN_HEADER_HEIGHT2.MIN_HEADER_HEIGHT;

@@ -1,16 +1,16 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17367
+// Function ID: 17368
 // Name: LogOutDisclaimer
-// Dependencies: [21, 13706, 4440, 1236, 2631, 5999, 2]
+// Dependencies: [21, 13733, 4441, 1236, 2631, 6004, 2]
 // Exports: default
 
-// Module 17301 (LogOutDisclaimer)
+// Module 17367 (LogOutDisclaimer)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import messagesProxyDefault from "messagesProxy" /* 2631 */;
-import Text from "Text" /* 4440 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 13706 */;
+import Text from "Text" /* 4441 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 13733 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("modules/safety_flows/native/LogOutDisclaimer.tsx");

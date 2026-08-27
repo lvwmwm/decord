@@ -1,9 +1,9 @@
-// Module ID: 16366
-// Function ID: 16367
+// Module ID: 16431
+// Function ID: 16432
 // Name: metadata
 // Dependencies: [2]
 
-// Module 16366 (metadata)
+// Module 16431 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/gifting/new_gifting_badges.png.js");

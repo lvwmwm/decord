@@ -1,20 +1,20 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 9021
+// Function ID: 9022
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1922, 8855, 676, 1925, 21, 4444, 712, 7432, 4184, 8856, 5541, 1629, 500, 5900, 5920, 8863, 4411, 8852, 8864, 4440, 1236, 6167, 8866, 4107, 8829, 2009, 4412, 4413, 8888, 5569, 4313, 8889, 8948, 8970, 2]
+// Dependencies: [32, 19, 17, 1922, 9022, 676, 1925, 21, 4445, 712, 7440, 4185, 9023, 5546, 1629, 500, 5905, 5925, 9030, 4412, 9019, 9031, 4441, 1236, 6173, 9033, 4107, 9035, 2009, 4413, 4414, 9045, 5574, 4314, 9046, 9090, 9112, 2]
 // Exports: default
 
-// Module 8854 (EmojiPickerActionSheet)
+// Module 9021 (EmojiPickerActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { EmojiPickerSource } from "IMAGE_SIZE" /* 8855 */;
+import { EmojiPickerSource } from "IMAGE_SIZE" /* 9022 */;
 import { EXPRESSION_FOOTER_HEIGHT } from "ME" /* 676 */;
 import { EmojiIntention } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

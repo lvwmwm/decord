@@ -1,10 +1,10 @@
-// Module ID: 15462
-// Function ID: 15463
+// Module ID: 15527
+// Function ID: 15528
 // Name: withEqualityFn
-// Dependencies: [676, 700, 4184, 4074, 2]
+// Dependencies: [676, 700, 4185, 4074, 2]
 // Exports: computeMaxX
 
-// Module 15462 (withEqualityFn)
+// Module 15527 (withEqualityFn)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import isIterable from "isIterable" /* 4074 */;
@@ -14,12 +14,12 @@ const DM_WIDTH = ME.DM_WIDTH;
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   const _require = arg0;
   dependencyMap = arg1;
-  let obj = { panelX: _require(4184).makeMutable(0), gestureState: null, maxX: 0, lastInteractionAt: null, isPanelTouchActive: null, setPanelX: null, updateMaxX: null, noteInteraction: null };
-  const obj2 = _require(4184);
-  obj[1] = _require(4184).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
+  let obj = { panelX: _require(4185).makeMutable(0), gestureState: null, maxX: 0, lastInteractionAt: null, isPanelTouchActive: null, setPanelX: null, updateMaxX: null, noteInteraction: null };
+  const obj2 = _require(4185);
+  obj[1] = _require(4185).makeMutable({ active: false, initialX: 0, initialY: 0, panelX: 0 });
   obj[3] = { current: 0 };
-  const obj3 = _require(4184);
-  obj[4] = _require(4184).makeMutable(false);
+  const obj3 = _require(4185);
+  obj[4] = _require(4185).makeMutable(false);
   obj[5] = function setPanelX(arg0) {
     ({ panelX, gestureState } = callback2());
     if ("open" === arg0) {

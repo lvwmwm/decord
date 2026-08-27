@@ -1,16 +1,16 @@
-// Module ID: 5506
-// Function ID: 5507
+// Module ID: 5511
+// Function ID: 5512
 // Name: _fetchVerificationForm
-// Dependencies: [5, 1984, 1992, 4428, 1922, 676, 530, 4429, 709, 5507, 5420, 4269, 5511, 4808, 1236, 4342, 698, 2]
+// Dependencies: [5, 1984, 1992, 4429, 1922, 676, 530, 4430, 709, 5512, 5425, 4270, 5516, 4809, 1236, 4343, 698, 2]
 // Exports: showCoachmark
 
-// Module 5506 (_fetchVerificationForm)
+// Module 5511 (_fetchVerificationForm)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "initialize" /* 1984 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "updateInvite" /* 4428 */;
+import closure_6 from "updateInvite" /* 4429 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

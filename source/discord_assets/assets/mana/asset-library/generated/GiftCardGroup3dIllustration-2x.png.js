@@ -1,9 +1,9 @@
-// Module ID: 6626
-// Function ID: 6627
+// Module ID: 6632
+// Function ID: 6633
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6626 (metadata)
+// Module 6632 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftCardGroup3dIllustration-2x.png.js");

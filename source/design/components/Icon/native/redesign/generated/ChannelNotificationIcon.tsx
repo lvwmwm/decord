@@ -1,14 +1,14 @@
-// Module ID: 9956
-// Function ID: 9957
+// Module ID: 10618
+// Function ID: 10619
 // Name: ChannelNotificationIcon
-// Dependencies: [19, 21, 712, 4164, 9957, 2]
+// Dependencies: [19, 21, 712, 4164, 10619, 2]
 // Exports: ChannelNotificationIcon
 
-// Module 9956 (ChannelNotificationIcon)
+// Module 10618 (ChannelNotificationIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 9957 */;
+import registerAsset from "registerAsset" /* 10619 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

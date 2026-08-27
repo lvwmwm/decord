@@ -1,14 +1,14 @@
-// Module ID: 8253
-// Function ID: 8254
+// Module ID: 8695
+// Function ID: 8696
 // Name: items
-// Dependencies: [6090, 1306, 1236, 8239, 2]
+// Dependencies: [6098, 1306, 1236, 8682, 2]
 
-// Module 8253 (items)
+// Module 8695 (items)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import create from "create" /* 1306 */;
-import resolveGoreSettingWithDefaults from "resolveGoreSettingWithDefaults" /* 6090 */;
-import ReportNames from "ReportNames" /* 8239 */;
+import resolveGoreSettingWithDefaults from "resolveGoreSettingWithDefaults" /* 6098 */;
+import ReportNames from "ReportNames" /* 8682 */;
 
 let obj = {
   getTitle() {

@@ -1,14 +1,14 @@
-// Module ID: 4977
-// Function ID: 4978
+// Module ID: 4981
+// Function ID: 4982
 // Name: TextIcon
-// Dependencies: [19, 21, 712, 4164, 4936, 2]
+// Dependencies: [19, 21, 712, 4164, 4937, 2]
 // Exports: TextIcon
 
-// Module 4977 (TextIcon)
+// Module 4981 (TextIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4936 */;
+import registerAsset from "registerAsset" /* 4937 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

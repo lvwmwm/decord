@@ -1,10 +1,10 @@
-// Module ID: 7083
-// Function ID: 7084
+// Module ID: 7089
+// Function ID: 7090
 // Name: PremiumModal
-// Dependencies: [19, 676, 21, 1236, 5442, 7084, 13045, 13048, 13090, 13102, 5900, 5955, 2]
+// Dependencies: [19, 676, 21, 1236, 5447, 7090, 13068, 13071, 13113, 13125, 5905, 5960, 2]
 // Exports: default
 
-// Module 7083 (PremiumModal)
+// Module 7089 (PremiumModal)
 import noopAll from "noop" /* 19 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;

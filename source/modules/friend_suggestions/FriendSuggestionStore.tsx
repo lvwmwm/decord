@@ -1,15 +1,15 @@
-// Module ID: 7334
-// Function ID: 7335
+// Module ID: 7340
+// Function ID: 7341
 // Name: initialize
-// Dependencies: [1930, 1922, 12, 7335, 7336, 589, 709, 2]
+// Dependencies: [1930, 1922, 12, 7341, 7342, 589, 709, 2]
 // Exports: transformFriendSuggestions
 
-// Module 7334 (initialize)
+// Module 7340 (initialize)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef7335 from "module_7335" /* 7335 */;
-import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 7336 */;
+import _modDef7341 from "module_7341" /* 7341 */;
+import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 7342 */;
 import closure_2 from "createdAt" /* 1930 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
@@ -51,8 +51,8 @@ const friendSuggestionStore = new FriendSuggestionStore(dispatcherDefault, {
       if (flag2) {
         c6 = true;
         c7 = false;
-        const response = _modDef7335.fetch();
-        const obj = _modDef7335;
+        const response = _modDef7341.fetch();
+        const obj = _modDef7341;
       }
     } else {
       maybeDispatchDevOnlyDummyFriendSuggestionsDefault();

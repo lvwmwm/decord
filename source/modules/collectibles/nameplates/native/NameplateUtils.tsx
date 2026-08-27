@@ -1,10 +1,10 @@
-// Module ID: 9606
-// Function ID: 9607
+// Module ID: 8455
+// Function ID: 8456
 // Name: getNameplateAssets
 // Dependencies: [1901, 2]
 // Exports: getNameplateAssets
 
-// Module 9606 (getNameplateAssets)
+// Module 8455 (getNameplateAssets)
 import set from "set" /* 2 */;
 import parseSkuIdFromServerData from "parseSkuIdFromServerData" /* 1901 */;
 

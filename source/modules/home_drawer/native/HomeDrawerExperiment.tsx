@@ -1,9 +1,9 @@
-// Module ID: 4304
-// Function ID: 4305
+// Module ID: 4305
+// Function ID: 4306
 // Name: MobileHomeDrawerExperiment
 // Dependencies: [1368, 2]
 
-// Module 4304 (MobileHomeDrawerExperiment)
+// Module 4305 (MobileHomeDrawerExperiment)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 const obj = { 1: null, 2: { enableHome: true, landOnHome: false, enablePeekHint: true } };

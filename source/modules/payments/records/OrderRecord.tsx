@@ -1,13 +1,13 @@
-// Module ID: 7098
-// Function ID: 7099
+// Module ID: 7104
+// Function ID: 7105
 // Name: createFromOrder
-// Dependencies: [1931, 4116, 7099, 7100, 505, 2]
+// Dependencies: [1931, 4116, 7105, 7106, 505, 2]
 
-// Module 7098 (createFromOrder)
+// Module 7104 (createFromOrder)
 import toJSDefault from "toJS" /* 1931 */;
 import { BaseInvoiceRecord } from "createFromServer" /* 4116 */;
-import closure_1 from "createFromServer" /* 7099 */;
-import closure_2 from "createFromServer" /* 7100 */;
+import closure_1 from "createFromServer" /* 7105 */;
+import closure_2 from "createFromServer" /* 7106 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
 toJSDefault;

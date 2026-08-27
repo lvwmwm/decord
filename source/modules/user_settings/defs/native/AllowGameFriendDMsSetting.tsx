@@ -1,15 +1,15 @@
-// Module ID: 15200
-// Function ID: 15201
+// Module ID: 15264
+// Function ID: 15265
 // Name: toggle
-// Dependencies: [8302, 10584, 1236, 4134, 15201, 2]
+// Dependencies: [7816, 10988, 1236, 4134, 15265, 2]
 
-// Module 15200 (toggle)
+// Module 15264 (toggle)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import MobileUserSettings from "MobileUserSettings" /* 8302 */;
-import useIsAllowGameFriendDMsSettingVisible from "useIsAllowGameFriendDMsSettingVisible" /* 15201 */;
-import createToggle from "createToggle" /* 10584 */;
+import MobileUserSettings from "MobileUserSettings" /* 7816 */;
+import useIsAllowGameFriendDMsSettingVisible from "useIsAllowGameFriendDMsSettingVisible" /* 15265 */;
+import createToggle from "createToggle" /* 10988 */;
 
 const toggle = createToggle.createToggle({
   useTitle() {

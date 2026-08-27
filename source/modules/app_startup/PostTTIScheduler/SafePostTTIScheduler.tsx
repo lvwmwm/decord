@@ -1,10 +1,10 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7344
+// Function ID: 7345
 // Name: waitSafelyForPostTTI
-// Dependencies: [7339, 2]
+// Dependencies: [7345, 2]
 // Exports: waitSafelyForPostTTI
 
-// Module 7338 (waitSafelyForPostTTI)
+// Module 7344 (waitSafelyForPostTTI)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_startup/PostTTIScheduler/SafePostTTIScheduler.tsx");

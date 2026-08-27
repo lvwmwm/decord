@@ -1,15 +1,15 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13030
+// Function ID: 13031
 // Name: PremiumPerkCarousel
-// Dependencies: [32, 19, 17, 21, 4444, 12968, 4440, 8916, 1297, 2]
+// Dependencies: [32, 19, 17, 21, 4445, 12991, 4441, 8148, 1297, 2]
 // Exports: default
 
-// Module 13007 (PremiumPerkCarousel)
+// Module 13030 (PremiumPerkCarousel)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

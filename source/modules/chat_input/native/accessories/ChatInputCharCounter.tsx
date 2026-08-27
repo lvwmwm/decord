@@ -1,16 +1,16 @@
-// Module ID: 12064
-// Function ID: 12065
+// Module ID: 11910
+// Function ID: 11911
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1922, 676, 1924, 21, 4444, 589, 4107, 8575, 8585, 4162, 1236, 5015, 4440, 7916, 2]
+// Dependencies: [32, 19, 1922, 676, 1924, 21, 4445, 589, 4107, 8092, 8101, 4162, 1236, 5020, 4441, 8028, 2]
 
-// Module 12064 (ChatInputCharCounter)
+// Module 11910 (ChatInputCharCounter)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import { UpsellTypes } from "ME" /* 676 */;
 import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -26,7 +26,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
   stateFromStores = obj.useStateFromStores(items, () => stateFromStores(_undefined[8]).canUseIncreasedMessageLength(currentUser.getCurrentUser()));
   const tmp = callback4();
   [tmp6, c2] = callback(importAllResult.useState(0), 2);
-  const tmp7 = stateFromStores(8575)();
+  const tmp7 = stateFromStores(8092)();
   callback = tmp7;
   const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     onMessageLengthChanged(length) {
@@ -42,9 +42,9 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
     obj = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium", children: null };
     const _HermesInternal = HermesInternal;
     obj[3] = "-" + tmp6;
-    const items2 = [callback2(tmp2(4440).Text, obj), callback2(tmp2(7916).NitroWheelIcon, { size: "sm" })];
+    const items2 = [callback2(tmp2(4441).Text, obj), callback2(tmp2(8028).NitroWheelIcon, { size: "sm" })];
     obj[2] = items2;
-    tmp10 = callback3(tmp2(5015).PressableOpacity, obj);
+    tmp10 = callback3(tmp2(5020).PressableOpacity, obj);
   }
   return tmp10;
 });

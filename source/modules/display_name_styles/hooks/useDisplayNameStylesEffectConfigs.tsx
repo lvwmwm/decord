@@ -1,12 +1,12 @@
-// Module ID: 9688
-// Function ID: 9689
+// Module ID: 8851
+// Function ID: 8852
 // Name: DISPLAY_NAME_STYLES_EFFECT_NAMES
-// Dependencies: [19, 1935, 2727, 9689, 1236, 1936, 2]
+// Dependencies: [19, 1935, 2727, 8852, 1236, 1936, 2]
 // Exports: useDisplayNameStylesEffectConfig
 
-// Module 9688 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
+// Module 8851 (DISPLAY_NAME_STYLES_EFFECT_NAMES)
 import messagesProxyDefault from "messagesProxy" /* 2727 */;
-import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 9689 */;
+import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 8852 */;
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

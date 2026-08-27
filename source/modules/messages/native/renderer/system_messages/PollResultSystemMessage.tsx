@@ -1,13 +1,13 @@
-// Module ID: 8368
-// Function ID: 8369
+// Module ID: 7882
+// Function ID: 7883
 // Name: createPollResultSystemMessage
-// Dependencies: [1925, 8288, 8290, 1236, 1435, 4102, 8369, 8291, 2]
+// Dependencies: [1925, 7802, 7804, 1236, 1435, 4102, 7883, 7805, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 8368 (createPollResultSystemMessage)
+// Module 7882 (createPollResultSystemMessage)
 import set from "set" /* 2 */;
 import set2 from "set" /* 1925 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8369 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 7883 */;
 
 const EMOJI_URL_BASE_SIZE = set2.EMOJI_URL_BASE_SIZE;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
@@ -20,14 +20,14 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
     return null;
   } else {
     message = message.message;
-    const messageAuthorWithProcessedColor = obj6(8288).getMessageAuthorWithProcessedColor(message);
+    const messageAuthorWithProcessedColor = obj6(7802).getMessageAuthorWithProcessedColor(message);
     let obj = { username: null, usernameOnClick: null, title: null, titleOnClick: null };
     obj[0] = messageAuthorWithProcessedColor.nick;
     obj = { message: null, author: null, roleStyle: null };
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = message.roleStyle;
-    obj[1] = tmp(8290)(obj);
+    obj[1] = tmp(7804)(obj);
     obj[2] = tmp3.questionText;
     obj1 = { action: "bindJumpToMessage", targetChannelId: null, targetMessageId: null, medium: true };
     obj1[1] = message.messageReference.channel_id;
@@ -93,7 +93,7 @@ export const createPollResultSystemMessage = function createPollResultSystemMess
       }
     }
     const obj10 = {};
-    const merged3 = Object.assign(tmp(8291)(message));
+    const merged3 = Object.assign(tmp(7805)(message));
     obj10.content = formatToPartsResult;
     return obj10;
   }

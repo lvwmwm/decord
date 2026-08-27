@@ -1,18 +1,18 @@
-// Module ID: 9834
-// Function ID: 9835
+// Module ID: 10549
+// Function ID: 10550
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 4444, 712, 6175, 1236, 4288, 6181, 1297, 4440, 6171, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 6181, 1236, 4289, 6187, 1297, 4441, 6177, 2]
 // Exports: default
 
-// Module 9834 (SelectedUserField)
+// Module 10549 (SelectedUserField)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import nameFromUserDefault from "nameFromUser" /* 4288 */;
-import useInputStyles from "useInputStyles" /* 6175 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6181 */;
+import nameFromUserDefault from "nameFromUser" /* 4289 */;
+import useInputStyles from "useInputStyles" /* 6181 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6187 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;
@@ -72,7 +72,7 @@ export default function SelectedUserField(onPress) {
     const obj4 = { variant: "text-md/medium", style: null, children: null };
     obj4[1] = tmp.userPillText;
     obj4[2] = nameFromUserDefault.getName(selectedUser);
-    items2[1] = tmp2(tmp4(4440).Text, obj4);
+    items2[1] = tmp2(tmp4(4441).Text, obj4);
     obj2[1] = items2;
     let tmp2Result = tmp6(tmp3, obj2);
     const obj10 = nameFromUserDefault;
@@ -81,7 +81,7 @@ export default function SelectedUserField(onPress) {
     obj5[2] = tmp.userPillText;
     const intl4 = tmp4(1236).intl;
     obj5[3] = intl4.string(tmp4(1236).t.R0vK0N);
-    tmp2Result = tmp2(tmp4(4440).Text, obj5);
+    tmp2Result = tmp2(tmp4(4441).Text, obj5);
   }
   items1[1] = tmp2Result;
   obj[4] = items1;
@@ -97,7 +97,7 @@ export default function SelectedUserField(onPress) {
     const obj7 = { text: null };
     obj7[0] = nameFromUserDefault.getName(selectedUser);
     obj6[3] = intl5.formatToPlainString(tmp4(1236).t["0Vb9FQ"], obj7);
-    obj6[4] = tmp2(tmp4(6171).CircleXIcon, { size: "xs" });
+    obj6[4] = tmp2(tmp4(6177).CircleXIcon, { size: "xs" });
     tmp2Result = tmp2(tmp7, obj6);
     const obj13 = nameFromUserDefault;
   }

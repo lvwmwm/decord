@@ -1,14 +1,14 @@
-// Module ID: 4984
-// Function ID: 4985
+// Module ID: 4989
+// Function ID: 4990
 // Name: ForumIcon
-// Dependencies: [19, 21, 712, 4164, 4952, 2]
+// Dependencies: [19, 21, 712, 4164, 4953, 2]
 // Exports: ForumIcon
 
-// Module 4984 (ForumIcon)
+// Module 4989 (ForumIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4952 */;
+import registerAsset from "registerAsset" /* 4953 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

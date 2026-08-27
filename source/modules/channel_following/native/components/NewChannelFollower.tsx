@@ -1,10 +1,10 @@
-// Module ID: 10434
-// Function ID: 10435
+// Module ID: 10883
+// Function ID: 10884
 // Name: canFollowIntoChannel
-// Dependencies: [32, 19, 17, 1391, 1982, 1910, 4089, 5328, 676, 21, 4444, 712, 7613, 4379, 589, 4638, 4896, 1363, 10435, 10436, 5569, 5571, 5951, 1297, 4932, 4440, 1236, 4877, 5939, 5546, 4411, 9183, 2009, 10437, 8185, 5323, 4879, 10440, 5884, 2]
+// Dependencies: [32, 19, 17, 1391, 1982, 1910, 4089, 5333, 676, 21, 4445, 712, 8012, 4380, 589, 4639, 4897, 1363, 10884, 10885, 5574, 5576, 5956, 1297, 4933, 4441, 1236, 4878, 5944, 5551, 4412, 9285, 2009, 10886, 8295, 5328, 4880, 10889, 5889, 2]
 // Exports: default
 
-// Module 10434 (canFollowIntoChannel)
+// Module 10883 (canFollowIntoChannel)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -14,10 +14,10 @@ import closure_8 from "comparator" /* 1982 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_9 } from "comparator" /* 1982 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
 import closure_11 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_12 from "insertUnsortedGuilds" /* 5328 */;
+import closure_12 from "insertUnsortedGuilds" /* 5333 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function canFollowIntoChannel(channel) {

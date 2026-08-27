@@ -1,11 +1,11 @@
-// Module ID: 7103
-// Function ID: 7104
+// Module ID: 7109
+// Function ID: 7110
 // Name: SyncedLoadingAlertModal
-// Dependencies: [5, 32, 19, 21, 4814, 1236, 4810, 2]
+// Dependencies: [5, 32, 19, 21, 4815, 1236, 4811, 2]
 // Exports: showCheckoutOrderErrorModal, showRetryConfirmModal
 
-// Module 7103 (SyncedLoadingAlertModal)
-import useAlertStore from "useAlertStore" /* 4810 */;
+// Module 7109 (SyncedLoadingAlertModal)
+import useAlertStore from "useAlertStore" /* 4811 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -91,16 +91,16 @@ function SyncedLoadingAlertModal(onConfirm) {
     }),
     loading: tmp2
   };
-  const items = [callback3(onConfirm(4814).AlertActionButton, obj), ];
+  const items = [callback3(onConfirm(4815).AlertActionButton, obj), ];
   obj1 = { variant: "secondary", text: null, onPress: null, loading: null };
   const intl = onConfirm(1236).intl;
   obj1[1] = intl.string(onConfirm(1236).t["ETE/oC"]);
   obj1[2] = onCancel;
   obj1[3] = tmp2;
-  items[1] = callback3(onConfirm(4814).AlertActionButton, obj1);
+  items[1] = callback3(onConfirm(4815).AlertActionButton, obj1);
   obj[0] = items;
   obj[2] = callback4(closure_6, obj);
-  return callback3(onConfirm(4814).AlertModal, obj);
+  return callback3(onConfirm(4815).AlertModal, obj);
 }
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
 const result = require("set").fileFinishedImporting("modules/checkout/native/showCheckoutOrderErrorModal.tsx");
@@ -203,6 +203,6 @@ export const showCheckoutOrderErrorModal = function showCheckoutOrderErrorModal(
     obj = {};
     const merged1 = Object.assign(merged);
     obj = { dismissable: obj.dismissable };
-    callback(4810).openAlert(key, closure_1_5(closure_1_8, obj), onCloseCallback, obj);
+    callback(4811).openAlert(key, closure_1_5(closure_1_8, obj), onCloseCallback, obj);
   });
 };

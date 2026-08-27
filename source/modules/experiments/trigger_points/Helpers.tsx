@@ -1,11 +1,11 @@
-// Module ID: 7585
-// Function ID: 7586
+// Module ID: 10406
+// Function ID: 10407
 // Name: registeredExperimentIds
-// Dependencies: [1212, 4358, 2]
+// Dependencies: [1212, 4359, 2]
 
-// Module 7585 (registeredExperimentIds)
+// Module 10406 (registeredExperimentIds)
 import closure_0 from "initialize" /* 1212 */;
-import { CommonTriggerPoints } from "ExperimentBuckets" /* 4358 */;
+import { CommonTriggerPoints } from "ExperimentBuckets" /* 4359 */;
 
 let result = require("set").fileFinishedImporting("modules/experiments/trigger_points/Helpers.tsx");
 class CommonTriggerPointConfiguration {

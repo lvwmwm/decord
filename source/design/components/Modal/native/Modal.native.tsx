@@ -1,14 +1,14 @@
-// Module ID: 11569
-// Function ID: 11570
+// Module ID: 11420
+// Function ID: 11421
 // Name: Modal
-// Dependencies: [19, 21, 1629, 5955, 5439, 2]
+// Dependencies: [19, 21, 1629, 5960, 5444, 2]
 // Exports: Modal
 
-// Module 11569 (Modal)
+// Module 11420 (Modal)
 import noopAll from "noop" /* 19 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5439 */;
-import NavigationStack from "NavigationStack" /* 5955 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5444 */;
+import NavigationStack from "NavigationStack" /* 5960 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

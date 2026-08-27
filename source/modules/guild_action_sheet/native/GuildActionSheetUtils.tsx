@@ -1,10 +1,10 @@
-// Module ID: 13587
-// Function ID: 13588
+// Module ID: 13614
+// Function ID: 13615
 // Name: useGuildActionSheetPermissions
 // Dependencies: [4089, 676, 589, 2]
 // Exports: useGuildActionSheetPermissions
 
-// Module 13587 (useGuildActionSheetPermissions)
+// Module 13614 (useGuildActionSheetPermissions)
 import closure_2 from "getUncachedChannelPermissions" /* 4089 */;
 import { Permissions } from "ME" /* 676 */;
 

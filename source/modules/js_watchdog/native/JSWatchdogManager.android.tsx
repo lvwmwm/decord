@@ -1,14 +1,14 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 16903
+// Function ID: 16904
 // Name: handleAppStateUpdate
-// Dependencies: [5, 676, 3, 687, 5433, 16838, 1208, 698, 7147, 7144, 7135, 2]
+// Dependencies: [5, 676, 3, 687, 5438, 16904, 1208, 698, 7153, 7150, 7141, 2]
 
-// Module 16837 (handleAppStateUpdate)
+// Module 16903 (handleAppStateUpdate)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 687 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5433 */;
-import getDeviceMetadata from "getDeviceMetadata" /* 7147 */;
+import initializeDefault from "initialize" /* 5438 */;
+import getDeviceMetadata from "getDeviceMetadata" /* 7153 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 
@@ -136,7 +136,7 @@ prototype["ping"] = function ping() {
                 obj3[0] = undefined;
                 return obj3;
               } else {
-                obj3 = checkForStallReportResult(16838);
+                obj3 = checkForStallReportResult(16904);
                 let pingResult;
                 if (obj3 != null) {
                   const _Date = Date;
@@ -154,7 +154,7 @@ prototype["ping"] = function ping() {
             throw arg1;
           } else if (arg0 !== 2) {
             if (arg1) {
-              obj = checkForStallReportResult(16838);
+              obj = checkForStallReportResult(16904);
               checkForStallReportResult = undefined;
               if (obj != null) {
                 checkForStallReportResult = obj.checkForStallReport();
@@ -170,7 +170,7 @@ prototype["ping"] = function ping() {
                 }
                 if (0 === checkForStallReportResult._analyticsReportsRemaining) {
                   checkForStallReportResult.stopWatchdog();
-                  obj1 = checkForStallReportResult(16838);
+                  obj1 = checkForStallReportResult(16904);
                   if (obj1 != null) {
                     obj1.disable();
                   }
@@ -238,7 +238,7 @@ prototype["startWatchdog"] = function startWatchdog() {
             closure_0 = undefined;
             c1 = undefined;
             if (null == closure_1_0._timeoutId) {
-              if (null != checkForStallReportResult(16838)) {
+              if (null != checkForStallReportResult(16904)) {
                 dependencyMap = 1;
                 c3 = 1;
                 obj1 = { value: null, done: false };
@@ -259,7 +259,7 @@ prototype["startWatchdog"] = function startWatchdog() {
               closure_0._enabled = true;
               if (closure_0._pingCompleted) {
                 checkForStallReportResult = undefined;
-                obj = checkForStallReportResult(16838);
+                obj = checkForStallReportResult(16904);
                 if (obj != null) {
                   checkForStallReportResult = obj.checkForStallReport();
                 }
@@ -337,7 +337,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
             closure_0 = tmp2;
             closure_0 = undefined;
             if (null != closure_1_0._cachedSession) {
-              obj1 = closure_1_0(7144);
+              obj1 = closure_1_0(7150);
               if (!obj1.isSessionExpired(closure_1_0._cachedSession)) {
                 const uuid = closure_1_0._cachedSession.uuid;
                 c3 = 3;
@@ -346,7 +346,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = closure_1_0(7135).getSession();
+            obj1[0] = closure_1_0(7141).getSession();
             return obj1;
           }
         } else if (arg0 === 1) {

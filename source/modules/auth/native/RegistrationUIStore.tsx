@@ -1,15 +1,15 @@
-// Module ID: 15385
-// Function ID: 15386
+// Module ID: 15450
+// Function ID: 15451
 // Name: useRegistrationUIStore
 // Dependencies: [644, 705, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 15385 (useRegistrationUIStore)
+// Module 15450 (useRegistrationUIStore)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 705 */;
 import keys from "keys" /* 644 */;
 
-let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "HermesInternal" }));
+let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "accessible" }));
 const result = set.fileFinishedImporting("modules/auth/native/RegistrationUIStore.tsx");
 
 export const useRegistrationUIStore = obj;

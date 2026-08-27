@@ -1,18 +1,18 @@
-// Module ID: 11015
-// Function ID: 11016
+// Module ID: 9992
+// Function ID: 9993
 // Name: SoundboardVolume
-// Dependencies: [19, 17, 676, 21, 4444, 6134, 5900, 11005, 1236, 5546, 11012, 6128, 4440, 1995, 2]
+// Dependencies: [19, 17, 676, 21, 4445, 6140, 5905, 9982, 1236, 5551, 9989, 6134, 4441, 1995, 2]
 // Exports: default
 
-// Module 11015 (SoundboardVolume)
+// Module 9992 (SoundboardVolume)
 import noopAll from "noop" /* 19 */;
 import combinedDefault from "combined" /* 1995 */;
-import contextDefault from "context" /* 5900 */;
-import VolumeSliderDefault from "VolumeSlider" /* 11012 */;
+import contextDefault from "context" /* 5905 */;
+import VolumeSliderDefault from "VolumeSlider" /* 9989 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;
@@ -22,7 +22,7 @@ const result = require("set").fileFinishedImporting("modules/user_settings/voice
 
 export default function SoundboardVolume() {
   const tmp = callback3();
-  let obj = analyticsLocations(6134);
+  let obj = analyticsLocations(6140);
   const amplitudinalSoundboardVolume = obj.getAmplitudinalSoundboardVolume();
   analyticsLocations = contextDefault().analyticsLocations;
   obj = { title: null, hasIcons: false, children: null };
@@ -39,9 +39,9 @@ export default function SoundboardVolume() {
   const obj2 = { style: tmp.slider, children: callback(VolumeSliderDefault, obj3) };
   obj5[0] = combinedDefault.getArticleURL(HelpdeskArticles.SOUNDBOARD);
   obj4[2] = intl3.format(analyticsLocations(1236).t.BPbGq7, obj5);
-  items[1] = callback(analyticsLocations(4440).Text, obj4);
+  items[1] = callback(analyticsLocations(4441).Text, obj4);
   obj1[0] = items;
   obj[1] = callback2(closure_6, obj1);
-  obj[2] = callback(analyticsLocations(5546).TableRow, obj);
-  return callback(analyticsLocations(11005).UserSettingsTableRowGroup, obj);
+  obj[2] = callback(analyticsLocations(5551).TableRow, obj);
+  return callback(analyticsLocations(9982).UserSettingsTableRowGroup, obj);
 };

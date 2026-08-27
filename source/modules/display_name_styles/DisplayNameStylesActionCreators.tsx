@@ -1,10 +1,10 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 14886
+// Function ID: 14887
 // Name: markDisplayNameStyleFontSeen
 // Dependencies: [709, 2]
 // Exports: markDisplayNameStyleEffectSeen, markDisplayNameStyleFontSeen, markDisplayNameStyleNewEffectsBadgeDismissed, markDisplayNameStyleNewFontsBadgeDismissed
 
-// Module 14859 (markDisplayNameStyleFontSeen)
+// Module 14886 (markDisplayNameStyleFontSeen)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

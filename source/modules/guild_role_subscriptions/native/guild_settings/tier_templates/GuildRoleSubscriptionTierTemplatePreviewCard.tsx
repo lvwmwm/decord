@@ -1,21 +1,21 @@
-// Module ID: 17214
-// Function ID: 17215
+// Module ID: 17280
+// Function ID: 17281
 // Name: ContentHeader
-// Dependencies: [19, 17, 676, 21, 4444, 712, 4440, 4411, 17215, 2009, 17219, 1297, 17218, 1236, 5890, 1500, 14744, 17220, 698, 4652, 14750, 17216, 8969, 2]
+// Dependencies: [19, 17, 676, 21, 4445, 712, 4441, 4412, 17281, 2009, 17285, 1297, 17284, 1236, 5895, 1500, 14771, 17286, 698, 4653, 14777, 17282, 9111, 2]
 // Exports: default
 
-// Module 17214 (ContentHeader)
+// Module 17280 (ContentHeader)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4440 */;
-import registerAssetDefault from "registerAsset" /* 5890 */;
-import getPrivateChannelIconComponent from "getPrivateChannelIconComponent" /* 17218 */;
+import Text from "Text" /* 4441 */;
+import registerAssetDefault from "registerAsset" /* 5895 */;
+import getPrivateChannelIconComponent from "getPrivateChannelIconComponent" /* 17284 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function ContentHeader(arg0) {

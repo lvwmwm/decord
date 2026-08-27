@@ -1,19 +1,19 @@
-// Module ID: 14222
-// Function ID: 14223
+// Module ID: 14249
+// Function ID: 14250
 // Name: EditProfileFrameInner
-// Dependencies: [32, 19, 17, 7230, 7221, 676, 21, 4444, 712, 8529, 7613, 5900, 5920, 698, 8488, 5569, 4440, 1236, 8498, 8501, 589, 14223, 8490, 8530, 14224, 8519, 8520, 8499, 9771, 4891, 2]
+// Dependencies: [32, 19, 17, 7236, 7227, 676, 21, 4445, 712, 8046, 8012, 5905, 5925, 698, 8006, 5574, 4441, 1236, 8013, 8016, 589, 14250, 8008, 8047, 14251, 8035, 8036, 8014, 10777, 4892, 2]
 // Exports: default
 
-// Module 14222 (EditProfileFrameInner)
+// Module 14249 (EditProfileFrameInner)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 7230 */;
-import { isProfileFrameRecord } from "fromServer" /* 7221 */;
+import closure_6 from "map" /* 7236 */;
+import { isProfileFrameRecord } from "fromServer" /* 7227 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function EditProfileFrameInner(user) {
@@ -97,7 +97,7 @@ function ProfileFrameSectionPreview(arg0) {
   let purchase;
   ({ previewSkuId, user, guildId } = arg0);
   const tmp = callback3();
-  const tmp2 = purchase(8499)(previewSkuId);
+  const tmp2 = purchase(8014)(previewSkuId);
   const product = tmp2.product;
   c0 = product;
   purchase = tmp2.purchase;
@@ -121,11 +121,11 @@ function ProfileFrameSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  const items1 = [callback(purchase(9771), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
+  const items1 = [callback(purchase(10777), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   obj = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: null };
   const items2 = ["" + tmp.previewGradient.color + "00", tmp.previewGradient.color];
   obj[3] = items2;
-  items1[1] = callback(purchase(4891), obj);
+  items1[1] = callback(purchase(4892), obj);
   obj[1] = items1;
   return callback2(closure_5, obj);
 }

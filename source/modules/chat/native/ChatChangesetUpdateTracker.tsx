@@ -1,10 +1,10 @@
-// Module ID: 11169
-// Function ID: 11170
+// Module ID: 10831
+// Function ID: 10832
 // Name: weakMap
 // Dependencies: [2]
 // Exports: getAndIncrementChangesetIdForChat, getChangesetIdForChat
 
-// Module 11169 (weakMap)
+// Module 10831 (weakMap)
 import set from "set" /* 2 */;
 
 const weakMap = new WeakMap();

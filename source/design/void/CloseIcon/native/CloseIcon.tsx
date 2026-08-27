@@ -1,12 +1,12 @@
-// Module ID: 13619
-// Function ID: 13620
+// Module ID: 13646
+// Function ID: 13647
 // Name: Close
-// Dependencies: [19, 21, 8052, 2]
+// Dependencies: [19, 21, 8173, 2]
 // Exports: default
 
-// Module 13619 (Close)
+// Module 13646 (Close)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8052 */;
+import inlineStyles from "inlineStyles" /* 8173 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

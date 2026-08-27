@@ -1,16 +1,16 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13647
+// Function ID: 13648
 // Name: AnimatedEllipsisDot
-// Dependencies: [19, 17, 4436, 21, 4444, 712, 4184, 4445, 589, 2]
+// Dependencies: [19, 17, 4437, 21, 4445, 712, 4185, 4446, 589, 2]
 
-// Module 13620 (AnimatedEllipsisDot)
+// Module 13647 (AnimatedEllipsisDot)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4436 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function AnimatedEllipsisDot(disableScale) {

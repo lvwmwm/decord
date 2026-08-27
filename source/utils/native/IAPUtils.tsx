@@ -1,22 +1,22 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 10714
+// Function ID: 10715
 // Name: serializePurchaseResponse
-// Dependencies: [5, 17, 4443, 4142, 1922, 6031, 676, 1924, 7631, 3, 38, 500, 7650, 6034, 12, 514, 4122, 589, 7651, 1626, 4423, 7652, 2]
+// Dependencies: [5, 17, 4444, 4142, 1922, 6036, 676, 1924, 10715, 3, 38, 500, 10734, 6039, 12, 514, 4122, 589, 10735, 1626, 4424, 10736, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 7630 (serializePurchaseResponse)
+// Module 10714 (serializePurchaseResponse)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import set2 from "set" /* 500 */;
 import v1 from "v1" /* 514 */;
 import getConstantsAll from "getConstants" /* 1626 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4423 */;
-import productSK2ToIAPProductDefault from "productSK2ToIAPProduct" /* 7650 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 7651 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4424 */;
+import productSK2ToIAPProductDefault from "productSK2ToIAPProduct" /* 10734 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 10735 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME" /* 4142 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "updateProduct" /* 6031 */;
+import closure_7 from "updateProduct" /* 6036 */;
 import ME from "ME" /* 676 */;
 import { NAMESPACE_SNOWFLAKE_UUID } from "GuildFeatures" /* 1924 */;
 import set from "set" /* 500 */;
@@ -303,7 +303,7 @@ function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(7631).getStorefront();
+              obj1[0] = closure_1_0(10715).getStorefront();
               return obj1;
             } else {
               c5 = 3;
@@ -356,17 +356,17 @@ function _fetchStoreFront() {
 }
 ({ CurrencyCodes: closure_8, IOS_BUNDLE_ID } = ME);
 ({ InAppUtils: unpackModuleId, RNIapIosSk2: closure_12 } = require("get ActivityIndicator").NativeModules);
-let items = [require("module_7631").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
+let items = [require("module_10715").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
 new timestampDefault("IAPUtils.tsx");
 let _default = {
   loadProducts() {
     if (obj.isIOS()) {
       const _Object = Object;
-      let items = [productSK2ToIAPProductDefault.fetchSubscriptions(Object.values(tmp(6034).ProductIds)), ];
+      let items = [productSK2ToIAPProductDefault.fetchSubscriptions(Object.values(tmp(6039).ProductIds)), ];
       const obj2 = productSK2ToIAPProductDefault;
       const _Object2 = Object;
-      items[1] = productSK2ToIAPProductDefault.fetchProducts(Object.values(tmp(6034).ProductIds));
+      items[1] = productSK2ToIAPProductDefault.fetchProducts(Object.values(tmp(6039).ProductIds));
       const obj3 = productSK2ToIAPProductDefault;
       let nextPromise = _Promise.all(items).then((arg0) => {
         [r10007, tmp] = arg0;

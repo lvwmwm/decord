@@ -1,17 +1,17 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17416
+// Function ID: 17417
 // Name: importDefaultResult2
-// Dependencies: [4443, 5350, 5392, 12606, 1218, 1985, 1910, 676, 3, 1916, 1914, 698, 709, 7085, 1208, 2]
+// Dependencies: [4444, 5355, 5397, 12398, 1218, 1985, 1910, 676, 3, 1916, 1914, 698, 709, 7091, 1208, 2]
 
-// Module 17350 (importDefaultResult2)
+// Module 17416 (importDefaultResult2)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import items6 from "items" /* 1914 */;
-import closure_3 from "getUserAgnosticState" /* 4443 */;
-import importDefaultResult from "fromServer" /* 5350 */;
-import importDefaultResult1 from "parseServerGuildSticker" /* 5392 */;
+import closure_3 from "getUserAgnosticState" /* 4444 */;
+import importDefaultResult from "fromServer" /* 5355 */;
+import importDefaultResult1 from "parseServerGuildSticker" /* 5397 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import importDefaultResult2 from "getNote" /* 12606 */;
+import importDefaultResult2 from "getNote" /* 12398 */;
 import importDefaultResult3 from "createGuildRoleRecordFromRust" /* 1985 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import importDefaultResult4 from "createGuildRecordFromRust" /* 1910 */;

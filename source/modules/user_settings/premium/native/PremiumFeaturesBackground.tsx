@@ -1,17 +1,17 @@
-// Module ID: 8512
-// Function ID: 8513
+// Module ID: 8027
+// Function ID: 8028
 // Name: PremiumFeaturesBackground
-// Dependencies: [19, 7105, 1924, 21, 4444, 712, 689, 4891, 691, 2]
+// Dependencies: [19, 7111, 1924, 21, 4445, 712, 689, 4892, 691, 2]
 // Exports: default
 
-// Module 8512 (PremiumFeaturesBackground)
+// Module 8027 (PremiumFeaturesBackground)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import LinearGradientDefault from "LinearGradient" /* 4891 */;
-import { Gradients } from "items" /* 7105 */;
+import LinearGradientDefault from "LinearGradient" /* 4892 */;
+import { Gradients } from "items" /* 7111 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 noopAll;

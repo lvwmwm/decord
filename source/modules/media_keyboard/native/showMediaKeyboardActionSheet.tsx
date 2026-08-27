@@ -1,14 +1,14 @@
-// Module ID: 10227
-// Function ID: 10228
+// Module ID: 10348
+// Function ID: 10349
 // Name: hideMediaKeyboardActionSheet
-// Dependencies: [17, 4411, 10228, 2009, 2]
+// Dependencies: [17, 4412, 10349, 2009, 2]
 // Exports: hideMediaKeyboardActionSheet, presentLimitedLibraryPicker, showMediaKeyboardActionSheet
 
-// Module 10227 (hideMediaKeyboardActionSheet)
+// Module 10348 (hideMediaKeyboardActionSheet)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4411 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4412 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const MEDIA_KEYBOARD_ACTION_SHEET = "MEDIA_KEYBOARD_ACTION_SHEET";
@@ -18,7 +18,7 @@ export const hideMediaKeyboardActionSheet = function hideMediaKeyboardActionShee
   ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet(MEDIA_KEYBOARD_ACTION_SHEET);
 };
 export const showMediaKeyboardActionSheet = function showMediaKeyboardActionSheet(arg0) {
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(10228, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(10349, dependencyMap.paths), MEDIA_KEYBOARD_ACTION_SHEET, arg0);
 };
 export const presentLimitedLibraryPicker = function presentLimitedLibraryPicker() {
   const NativePermissionManager = NativeModules.NativePermissionManager;

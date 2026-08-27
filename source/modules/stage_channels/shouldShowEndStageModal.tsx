@@ -1,13 +1,13 @@
-// Module ID: 10951
-// Function ID: 10952
+// Module ID: 9925
+// Function ID: 9926
 // Name: shouldShowEndStageModal
-// Dependencies: [1218, 5309, 5312, 1396, 5315, 2]
+// Dependencies: [1218, 5314, 5317, 1396, 5320, 2]
 // Exports: default
 
-// Module 10951 (shouldShowEndStageModal)
+// Module 9925 (shouldShowEndStageModal)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "getActiveStageChannelIds" /* 5309 */;
-import closure_4 from "buildStageChannelUserRoles" /* 5312 */;
+import closure_3 from "getActiveStageChannelIds" /* 5314 */;
+import closure_4 from "buildStageChannelUserRoles" /* 5317 */;
 import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
 
 const require = arg1;

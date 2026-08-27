@@ -1,13 +1,13 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 14849
+// Function ID: 14850
 // Name: SettingsAppearanceLightModeThemePickerScreen
-// Dependencies: [19, 1305, 21, 14783, 1236, 2]
+// Dependencies: [19, 1305, 21, 14810, 1236, 2]
 // Exports: default
 
-// Module 14822 (SettingsAppearanceLightModeThemePickerScreen)
+// Module 14849 (SettingsAppearanceLightModeThemePickerScreen)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ThemeTypesDefault from "ThemeTypes" /* 14783 */;
+import ThemeTypesDefault from "ThemeTypes" /* 14810 */;
 import { SystemTheme } from "SystemThemeState" /* 1305 */;
 import { jsx } from "jsxProd" /* 21 */;
 

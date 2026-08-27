@@ -1,18 +1,18 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 12048
+// Function ID: 12049
 // Name: GuildPowerupPerksSection
-// Dependencies: [17, 21, 4444, 712, 12183, 1236, 2401, 12201, 12203, 12205, 2]
+// Dependencies: [17, 21, 4445, 712, 12031, 1236, 2401, 12049, 12051, 12053, 2]
 // Exports: default
 
-// Module 12200 (GuildPowerupPerksSection)
+// Module 12048 (GuildPowerupPerksSection)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import messagesProxyDefault from "messagesProxy" /* 2401 */;
-import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 12183 */;
+import GuildPowerupsSectionHeaderDefault from "GuildPowerupsSectionHeader" /* 12031 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const View = get_ActivityIndicator.View;
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);

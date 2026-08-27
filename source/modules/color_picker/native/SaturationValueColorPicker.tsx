@@ -1,17 +1,17 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 14217
+// Function ID: 14218
 // Name: ColorBox
-// Dependencies: [32, 19, 17, 21, 4444, 712, 4184, 14188, 4891, 5599, 2]
+// Dependencies: [32, 19, 17, 21, 4445, 712, 4185, 14215, 4892, 5604, 2]
 // Exports: default
 
-// Module 14190 (ColorBox)
+// Module 14217 (ColorBox)
 import ThemesDefault from "Themes" /* 712 */;
-import LinearGradientDefault from "LinearGradient" /* 4891 */;
+import LinearGradientDefault from "LinearGradient" /* 4892 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function ColorBox(hue) {
@@ -21,7 +21,7 @@ function ColorBox(hue) {
   const tmp = callback3();
   const tmp2 = callback(React.useState("rgb(0,0,0)"), 2);
   importDefault = tmp3;
-  let obj = hue(4184);
+  let obj = hue(4185);
   class S {
     constructor() {
       obj = hue(closure_1_2[7]);
@@ -29,7 +29,7 @@ function ColorBox(hue) {
       return obj.hslToRgbWorklet(obj);
     }
   }
-  obj = { hslToRgbWorklet: hue(14188).hslToRgbWorklet, hue };
+  obj = { hslToRgbWorklet: hue(14215).hslToRgbWorklet, hue };
   S.__closure = obj;
   S.__workletHash = 8814597686728;
   S.__initData = closure_9;
@@ -41,7 +41,7 @@ function ColorBox(hue) {
       const runOnJSResult = hue(closure_1_2[6]).runOnJS(closure_1);
     }
   };
-  obj = { runOnJS: hue(4184).runOnJS, setColor: tmp3 };
+  obj = { runOnJS: hue(4185).runOnJS, setColor: tmp3 };
   fn.__closure = obj;
   fn.__workletHash = 14688428173537;
   fn.__initData = closure_10;

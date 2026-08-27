@@ -1,12 +1,12 @@
-// Module ID: 13633
-// Function ID: 13634
+// Module ID: 13660
+// Function ID: 13661
 // Name: getAnimatedTypingTranslateX
-// Dependencies: [1298, 13634, 2]
+// Dependencies: [1298, 13661, 2]
 // Exports: getAnimatedTypingTranslateX, getMobileStatusContainerRect, getStatusTypingDimensions, getVRStatusContainerRect
 
-// Module 13633 (getAnimatedTypingTranslateX)
+// Module 13660 (getAnimatedTypingTranslateX)
 import set from "set" /* 2 */;
-import STATUS_PADDINGDefault from "STATUS_PADDING" /* 13634 */;
+import STATUS_PADDINGDefault from "STATUS_PADDING" /* 13661 */;
 import STATUS_PADDING from "STATUS_PADDING" /* 1298 */;
 
 ({ STATUS_PADDING: obj1, StatusSizes: c3 } = STATUS_PADDING);

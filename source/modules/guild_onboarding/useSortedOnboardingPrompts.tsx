@@ -1,12 +1,12 @@
-// Module ID: 11185
-// Function ID: 11186
+// Module ID: 11068
+// Function ID: 11069
 // Name: useSortedOnboardingPrompts
-// Dependencies: [19, 5414, 647, 2]
+// Dependencies: [19, 5419, 647, 2]
 // Exports: default
 
-// Module 11185 (useSortedOnboardingPrompts)
+// Module 11068 (useSortedOnboardingPrompts)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleUpdate" /* 5414 */;
+import closure_3 from "handleUpdate" /* 5419 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding/useSortedOnboardingPrompts.tsx");

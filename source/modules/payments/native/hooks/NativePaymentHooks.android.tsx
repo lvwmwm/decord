@@ -1,15 +1,15 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 8153
+// Function ID: 8154
 // Name: notSupported
-// Dependencies: [5, 32, 19, 6031, 3, 589, 12, 7587, 4122, 2]
+// Dependencies: [5, 32, 19, 6036, 3, 589, 12, 8154, 4122, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 7863 (notSupported)
+// Module 8153 (notSupported)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "updateProduct" /* 6031 */;
+import closure_6 from "updateProduct" /* 6036 */;
 
 const require = arg1;
 function notSupported() {

@@ -1,16 +1,16 @@
-// Module ID: 16574
-// Function ID: 16575
+// Module ID: 16640
+// Function ID: 16641
 // Name: ActivityItemEmptyCard
-// Dependencies: [5, 19, 17, 21, 4444, 712, 11913, 5900, 10804, 10909, 5015, 16575, 16576, 5953, 2]
+// Dependencies: [5, 19, 17, 21, 4445, 712, 11756, 5905, 9435, 9542, 5020, 16641, 16642, 5958, 2]
 
-// Module 16574 (ActivityItemEmptyCard)
+// Module 16640 (ActivityItemEmptyCard)
 import ThemesDefault from "Themes" /* 712 */;
-import setDefault from "set" /* 5953 */;
+import setDefault from "set" /* 5958 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 function ActivityItemEmptyCard(activity) {

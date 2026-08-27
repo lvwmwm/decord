@@ -1,22 +1,22 @@
-// Module ID: 17125
-// Function ID: 17126
+// Module ID: 17191
+// Function ID: 17192
 // Name: HowItWorksCard
-// Dependencies: [19, 17, 21, 4444, 712, 4440, 5440, 1236, 17126, 1297, 17127, 17128, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 4441, 5445, 1236, 17192, 1297, 17193, 17194, 2]
 // Exports: default
 
-// Module 17125 (HowItWorksCard)
+// Module 17191 (HowItWorksCard)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4440 */;
-import preloadDefault from "preload" /* 5440 */;
-import registerAssetDefault from "registerAsset" /* 17126 */;
-import registerAssetDefault2 from "registerAsset" /* 17127 */;
-import registerAssetDefault3 from "registerAsset" /* 17128 */;
+import Text from "Text" /* 4441 */;
+import preloadDefault from "preload" /* 5445 */;
+import registerAssetDefault from "registerAsset" /* 17192 */;
+import registerAssetDefault2 from "registerAsset" /* 17193 */;
+import registerAssetDefault3 from "registerAsset" /* 17194 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function HowItWorksCard(iconSource) {

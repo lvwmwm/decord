@@ -1,27 +1,27 @@
-// Module ID: 8560
-// Function ID: 8561
+// Module ID: 8077
+// Function ID: 8078
 // Name: getShelfBadgeTypeIfActive
-// Dependencies: [109, 5, 8561, 4470, 11744, 676, 4903, 4437, 1236, 7799, 10763, 500, 1955, 7195, 10212, 7353, 7129, 4808, 1435, 9767, 11780, 7193, 10776, 2]
+// Dependencies: [109, 5, 8078, 4471, 8366, 676, 4904, 4438, 1236, 8368, 8369, 500, 1955, 7201, 8370, 7360, 7135, 4809, 1435, 8367, 8376, 7199, 8377, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 8560 (getShelfBadgeTypeIfActive)
+// Module 8077 (getShelfBadgeTypeIfActive)
 import set from "set" /* 500 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import buildCommand from "buildCommand" /* 7193 */;
-import getApplicationFlags from "getApplicationFlags" /* 7799 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 9767 */;
-import getPlatformDefault from "getPlatform" /* 10763 */;
-import canInstallApplication from "canInstallApplication" /* 10776 */;
+import buildCommand from "buildCommand" /* 7199 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8367 */;
+import getApplicationFlags from "getApplicationFlags" /* 8368 */;
+import getPlatformDefault from "getPlatform" /* 8369 */;
+import canInstallApplication from "canInstallApplication" /* 8377 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "getIndexKey" /* 8561 */;
-import closure_7 from "createExecutable" /* 4470 */;
-import closure_8 from "handleDismissWithDismissed" /* 11744 */;
+import closure_6 from "getIndexKey" /* 8078 */;
+import closure_7 from "createExecutable" /* 4471 */;
+import closure_8 from "handleDismissWithDismissed" /* 8366 */;
 import { ApplicationFlags } from "ME" /* 676 */;
-import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4903 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4437 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4904 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4438 */;
 
 require = arg1;
 function getShelfBadgeTypeIfActive(application) {

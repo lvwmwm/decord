@@ -1,13 +1,13 @@
-// Module ID: 7380
-// Function ID: 7381
+// Module ID: 7390
+// Function ID: 7391
 // Name: _firstPartyTasksFromServer
-// Dependencies: [7381, 5341, 7382, 7383, 2]
+// Dependencies: [7391, 5346, 7392, 7393, 2]
 // Exports: questTaskConfigFromServer, questTaskConfigV2FromServer
 
-// Module 7380 (_firstPartyTasksFromServer)
+// Module 7390 (_firstPartyTasksFromServer)
 import set from "set" /* 2 */;
-import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 7381 */;
-import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 7383 */;
+import QuestTaskConfigTypes from "QuestTaskConfigTypes" /* 7391 */;
+import QuestTaskJoinOperator from "QuestTaskJoinOperator" /* 7393 */;
 
 function _firstPartyTasksFromServer(tasks) {
   let obj = {};
@@ -53,13 +53,13 @@ export const questTaskConfigFromServer = function questTaskConfigFromServer(type
   type = type.type;
   if (QuestTaskConfigTypes.QuestTaskConfigTypes.FIRST_PARTY === type) {
     let obj = { type: null, tasks: null, joinOperator: null };
-    obj[0] = tmp(7381).QuestTaskConfigTypes.FIRST_PARTY;
+    obj[0] = tmp(7391).QuestTaskConfigTypes.FIRST_PARTY;
     obj[1] = _firstPartyTasksFromServer(type.tasks);
     obj[2] = type.join_operator;
     return obj;
-  } else if (tmp(7381).QuestTaskConfigTypes.THIRD_PARTY === type) {
+  } else if (tmp(7391).QuestTaskConfigTypes.THIRD_PARTY === type) {
     obj = { type: null, tasks: null, enrollmentUrl: null, developerApplicationId: null, joinOperator: null };
-    obj[0] = tmp(7381).QuestTaskConfigTypes.THIRD_PARTY;
+    obj[0] = tmp(7391).QuestTaskConfigTypes.THIRD_PARTY;
     obj[1] = _thirdPartyTasksFromServer(type.tasks);
     ({ enrollment_url: obj[2], developer_application_id: obj[3], join_operator: obj[4] } = type);
     return obj;

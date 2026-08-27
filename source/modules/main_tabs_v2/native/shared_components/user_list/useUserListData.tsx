@@ -1,22 +1,22 @@
-// Module ID: 9839
-// Function ID: 9840
+// Module ID: 10554
+// Function ID: 10555
 // Name: _toPropertyKey
-// Dependencies: [109, 32, 19, 7334, 7330, 7331, 1930, 4098, 1922, 676, 4085, 7329, 7522, 709, 7333, 5403, 12, 1236, 9297, 2]
+// Dependencies: [109, 32, 19, 7340, 7336, 7337, 1930, 4098, 1922, 676, 4085, 7335, 9848, 709, 7339, 5408, 12, 1236, 9859, 2]
 // Exports: default
 
-// Module 9839 (_toPropertyKey)
+// Module 10554 (_toPropertyKey)
 import applyDefault from "apply" /* 12 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5403 */;
-import getAllDefault from "getAll" /* 7329 */;
-import cleanString from "cleanString" /* 7333 */;
-import getTransformedUserDefault from "getTransformedUser" /* 7522 */;
+import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5408 */;
+import getAllDefault from "getAll" /* 7335 */;
+import cleanString from "cleanString" /* 7339 */;
+import getTransformedUserDefault from "getTransformedUser" /* 9848 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 7334 */;
-import closure_7 from "recountRelationshipTypes" /* 7330 */;
-import closure_8 from "recomputeAffinities" /* 7331 */;
+import closure_6 from "initialize" /* 7340 */;
+import closure_7 from "recountRelationshipTypes" /* 7336 */;
+import closure_8 from "recomputeAffinities" /* 7337 */;
 import closure_9 from "createdAt" /* 1930 */;
 import closure_10 from "markAllUserIdListsStale" /* 4098 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
@@ -550,7 +550,7 @@ prototype["filter"] = function filter(toLocaleLowerCase) {
   let self = this;
   self = this;
   let _require = toLocaleLowerCase;
-  let obj = _require(7333);
+  let obj = _require(7339);
   const cleanStringResult = obj.cleanString(toLocaleLowerCase);
   _require = cleanStringResult;
   if (this.currentQuery === cleanStringResult) {

@@ -1,10 +1,10 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12086
+// Function ID: 12087
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 1391, 676, 21, 4162, 1236, 6038, 4411, 8652, 4269, 4404, 712, 12265, 2009, 2]
+// Dependencies: [5, 32, 19, 1391, 676, 21, 4162, 1236, 6043, 4412, 7594, 4270, 4405, 712, 12087, 2009, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12264 (useJoinRequestButtonActions)
+// Module 12086 (useJoinRequestButtonActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 6044
-// Function ID: 6045
+// Module ID: 6050
+// Function ID: 6051
 // Name: useIsCreatorMonetizationEnabledGuild
 // Dependencies: [1910, 676, 589, 2]
 // Exports: default, isCreatorMonetizationEnabledGuild
 
-// Module 6044 (useIsCreatorMonetizationEnabledGuild)
+// Module 6050 (useIsCreatorMonetizationEnabledGuild)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 import { GuildFeatures } from "ME" /* 676 */;
 

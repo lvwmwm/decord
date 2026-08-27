@@ -1,13 +1,13 @@
-// Module ID: 6040
-// Function ID: 6041
+// Module ID: 6045
+// Function ID: 6046
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1983, 5410, 1391, 1985, 1910, 676, 1398, 6041, 6043, 6052, 6020, 6055, 6057, 6016, 6058, 6059, 4354, 6060, 6018, 1370, 6104, 4457, 4639, 2]
+// Dependencies: [5, 1983, 5415, 1391, 1985, 1910, 676, 1398, 6046, 6049, 6058, 6025, 6061, 6063, 6021, 6064, 6065, 4355, 6066, 6023, 1370, 6111, 4458, 4640, 2]
 // Exports: default
 
-// Module 6040 (_isAccessibleChannelOrThreadPath)
+// Module 6045 (_isAccessibleChannelOrThreadPath)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "isSubscriptionGated" /* 1983 */;
-import closure_5 from "shouldShowOnboarding" /* 5410 */;
+import closure_5 from "shouldShowOnboarding" /* 5415 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
@@ -113,7 +113,7 @@ function _isAccessibleChannelOrThreadPath() {
                           throwTypeErrorResult = callback;
                           throwTypeErrorResult = guild2;
                           throwTypeErrorResult = guild2;
-                          throwTypeErrorResult = callback(guild2[8]).canManageVibegrations(guild2, "isAccessibleChannelOrThreadPath");
+                          throwTypeErrorResult = callback(guild2[8]).canAccessVibegrations(guild2, "isAccessibleChannelOrThreadPath");
                           const obj34 = callback(guild2[8]);
                         }
                         c5 = 3;

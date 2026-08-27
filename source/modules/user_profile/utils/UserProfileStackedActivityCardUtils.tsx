@@ -1,10 +1,10 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12386
+// Function ID: 12387
 // Name: getUserProfileLiveActivities
 // Dependencies: [676, 12, 2]
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 12594 (getUserProfileLiveActivities)
+// Module 12386 (getUserProfileLiveActivities)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
 import ME from "ME" /* 676 */;

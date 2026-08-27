@@ -1,14 +1,14 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 16617
+// Function ID: 16618
 // Name: useConsoleConnectedAccountForVoiceUpsell
-// Dependencies: [5172, 5170, 4461, 10647, 676, 589, 16552, 2]
+// Dependencies: [5177, 5175, 4462, 9234, 676, 589, 16618, 2]
 // Exports: default
 
-// Module 16551 (useConsoleConnectedAccountForVoiceUpsell)
-import closure_3 from "set" /* 5172 */;
-import closure_4 from "filterPlayingActivities" /* 5170 */;
-import closure_5 from "set" /* 4461 */;
-import { CONSOLE_VOICE_PLATFORMS } from "XBOX_URL_BASE" /* 10647 */;
+// Module 16617 (useConsoleConnectedAccountForVoiceUpsell)
+import closure_3 from "set" /* 5177 */;
+import closure_4 from "filterPlayingActivities" /* 5175 */;
+import closure_5 from "set" /* 4462 */;
+import { CONSOLE_VOICE_PLATFORMS } from "XBOX_URL_BASE" /* 9234 */;
 import { ActivityTypes } from "ME" /* 676 */;
 
 const require = arg1;

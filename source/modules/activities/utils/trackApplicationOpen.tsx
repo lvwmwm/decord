@@ -1,10 +1,10 @@
-// Module ID: 10773
-// Function ID: 10774
+// Module ID: 9395
+// Function ID: 9396
 // Name: trackApplicationOpen
 // Dependencies: [676, 698, 2]
 // Exports: default
 
-// Module 10773 (trackApplicationOpen)
+// Module 9395 (trackApplicationOpen)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

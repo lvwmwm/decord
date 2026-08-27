@@ -1,10 +1,10 @@
-// Module ID: 7536
-// Function ID: 7537
+// Module ID: 12872
+// Function ID: 12873
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: isPremiumOfferReminderExperimentEnabled
 
-// Module 7536 (apexExperiment)
+// Module 12872 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

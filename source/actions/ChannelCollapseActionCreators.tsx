@@ -1,11 +1,11 @@
-// Module ID: 9959
-// Function ID: 9960
-// Dependencies: [4653, 709, 5431, 2]
+// Module ID: 10621
+// Function ID: 10622
+// Dependencies: [4654, 709, 5436, 2]
 
-// Module 9959
+// Module 10621
 import dispatcherDefault from "dispatcher" /* 709 */;
-import handleConnectionOpenDefault from "handleConnectionOpen" /* 5431 */;
-import closure_2 from "updateUserGuildSettingsInternal" /* 4653 */;
+import handleConnectionOpenDefault from "handleConnectionOpen" /* 5436 */;
+import closure_2 from "updateUserGuildSettingsInternal" /* 4654 */;
 
 let result = require("set").fileFinishedImporting("actions/ChannelCollapseActionCreators.tsx");
 

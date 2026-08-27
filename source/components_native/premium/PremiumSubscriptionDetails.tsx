@@ -1,60 +1,60 @@
-// Module ID: 7807
-// Function ID: 7808
+// Module ID: 12884
+// Function ID: 12885
 // Name: handleCancelSubscription
-// Dependencies: [32, 5, 19, 17, 1922, 6031, 676, 1924, 21, 712, 4444, 4107, 7592, 7808, 7809, 7589, 7590, 7591, 7593, 7810, 7811, 7812, 7538, 7813, 7814, 7815, 7816, 7817, 7594, 7818, 7819, 7820, 7821, 7822, 7823, 7824, 7597, 7825, 7826, 7827, 7599, 7828, 7829, 7830, 7583, 7630, 7831, 7832, 7082, 7080, 7092, 514, 4789, 1500, 589, 38, 5900, 6028, 500, 1297, 4879, 1236, 4440, 7843, 5920, 7844, 7845, 2]
+// Dependencies: [32, 5, 19, 17, 1922, 6036, 676, 1924, 21, 712, 4445, 4107, 10412, 12885, 12886, 10409, 10410, 10411, 10413, 12887, 12888, 12889, 8288, 12890, 12891, 12892, 12893, 12894, 10415, 12895, 12896, 12897, 12898, 12899, 12900, 12901, 10418, 12902, 12903, 12904, 7909, 12905, 12906, 12907, 10375, 10714, 12908, 12909, 7088, 7086, 7098, 514, 4790, 1500, 589, 38, 5905, 6033, 500, 1297, 4880, 1236, 4441, 12918, 5925, 12919, 12920, 2]
 // Exports: default, handleManageSubscription, onCancelClick
 
-// Module 7807 (handleCancelSubscription)
+// Module 12884 (handleCancelSubscription)
 import ThemesDefault from "Themes" /* 712 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
-import contextDefault from "context" /* 5900 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5920 */;
-import launchPremiumPlanSelect from "launchPremiumPlanSelect" /* 7082 */;
-import registerAssetDefault from "registerAsset" /* 7538 */;
-import registerAssetDefault2 from "registerAsset" /* 7589 */;
-import registerAssetDefault3 from "registerAsset" /* 7590 */;
-import registerAssetDefault4 from "registerAsset" /* 7591 */;
-import registerAssetDefault5 from "registerAsset" /* 7592 */;
-import registerAssetDefault6 from "registerAsset" /* 7593 */;
-import registerAssetDefault7 from "registerAsset" /* 7594 */;
-import registerAssetDefault8 from "registerAsset" /* 7597 */;
-import registerAssetDefault9 from "registerAsset" /* 7599 */;
-import registerAssetDefault10 from "registerAsset" /* 7808 */;
-import registerAssetDefault11 from "registerAsset" /* 7809 */;
-import registerAssetDefault12 from "registerAsset" /* 7810 */;
-import registerAssetDefault13 from "registerAsset" /* 7811 */;
-import registerAssetDefault14 from "registerAsset" /* 7812 */;
-import registerAssetDefault15 from "registerAsset" /* 7813 */;
-import registerAssetDefault16 from "registerAsset" /* 7814 */;
-import registerAssetDefault17 from "registerAsset" /* 7815 */;
-import registerAssetDefault18 from "registerAsset" /* 7816 */;
-import registerAssetDefault19 from "registerAsset" /* 7817 */;
-import registerAssetDefault20 from "registerAsset" /* 7818 */;
-import registerAssetDefault21 from "registerAsset" /* 7819 */;
-import registerAssetDefault22 from "registerAsset" /* 7820 */;
-import registerAssetDefault23 from "registerAsset" /* 7821 */;
-import registerAssetDefault24 from "registerAsset" /* 7822 */;
-import registerAssetDefault25 from "registerAsset" /* 7823 */;
-import registerAssetDefault26 from "registerAsset" /* 7824 */;
-import registerAssetDefault27 from "registerAsset" /* 7825 */;
-import registerAssetDefault28 from "registerAsset" /* 7826 */;
-import registerAssetDefault29 from "registerAsset" /* 7827 */;
-import registerAssetDefault30 from "registerAsset" /* 7828 */;
-import registerAssetDefault31 from "registerAsset" /* 7829 */;
-import registerAssetDefault32 from "registerAsset" /* 7830 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 7831 */;
-import createSubscriptionInvoicePreview from "createSubscriptionInvoicePreview" /* 7843 */;
+import contextDefault from "context" /* 5905 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5925 */;
+import launchPremiumPlanSelect from "launchPremiumPlanSelect" /* 7088 */;
+import registerAssetDefault from "registerAsset" /* 7909 */;
+import registerAssetDefault2 from "registerAsset" /* 8288 */;
+import registerAssetDefault3 from "registerAsset" /* 10409 */;
+import registerAssetDefault4 from "registerAsset" /* 10410 */;
+import registerAssetDefault5 from "registerAsset" /* 10411 */;
+import registerAssetDefault6 from "registerAsset" /* 10412 */;
+import registerAssetDefault7 from "registerAsset" /* 10413 */;
+import registerAssetDefault8 from "registerAsset" /* 10415 */;
+import registerAssetDefault9 from "registerAsset" /* 10418 */;
+import registerAssetDefault10 from "registerAsset" /* 12885 */;
+import registerAssetDefault11 from "registerAsset" /* 12886 */;
+import registerAssetDefault12 from "registerAsset" /* 12887 */;
+import registerAssetDefault13 from "registerAsset" /* 12888 */;
+import registerAssetDefault14 from "registerAsset" /* 12889 */;
+import registerAssetDefault15 from "registerAsset" /* 12890 */;
+import registerAssetDefault16 from "registerAsset" /* 12891 */;
+import registerAssetDefault17 from "registerAsset" /* 12892 */;
+import registerAssetDefault18 from "registerAsset" /* 12893 */;
+import registerAssetDefault19 from "registerAsset" /* 12894 */;
+import registerAssetDefault20 from "registerAsset" /* 12895 */;
+import registerAssetDefault21 from "registerAsset" /* 12896 */;
+import registerAssetDefault22 from "registerAsset" /* 12897 */;
+import registerAssetDefault23 from "registerAsset" /* 12898 */;
+import registerAssetDefault24 from "registerAsset" /* 12899 */;
+import registerAssetDefault25 from "registerAsset" /* 12900 */;
+import registerAssetDefault26 from "registerAsset" /* 12901 */;
+import registerAssetDefault27 from "registerAsset" /* 12902 */;
+import registerAssetDefault28 from "registerAsset" /* 12903 */;
+import registerAssetDefault29 from "registerAsset" /* 12904 */;
+import registerAssetDefault30 from "registerAsset" /* 12905 */;
+import registerAssetDefault31 from "registerAsset" /* 12906 */;
+import registerAssetDefault32 from "registerAsset" /* 12907 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 12908 */;
+import createSubscriptionInvoicePreview from "createSubscriptionInvoicePreview" /* 12918 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import closure_11 from "updateProduct" /* 6031 */;
+import closure_11 from "updateProduct" /* 6036 */;
 import ME from "ME" /* 676 */;
 import { SubscriptionPlanInfo } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function handleCancelSubscription() {
@@ -106,14 +106,14 @@ function _handleCancelSubscription() {
               obj1[0] = callback;
               obj1[1] = closure_1;
               obj1[2] = dependencyMap;
-              obj1[3] = callback(7583).STEP_ANALYTICS_NAMES[callback(undefined, 7583).CancellationFlowSteps.MOBILE_SUBSCRIPTION_MANAGE];
-              const result = callback(7583).trackPremiumSubscriptionCancellationFlowStep(obj1);
+              obj1[3] = callback(10375).STEP_ANALYTICS_NAMES[callback(undefined, 10375).CancellationFlowSteps.MOBILE_SUBSCRIPTION_MANAGE];
+              const result = callback(10375).trackPremiumSubscriptionCancellationFlowStep(obj1);
               let isPurchasedViaApple;
               if (callback != null) {
                 isPurchasedViaApple = tmp15.isPurchasedViaApple;
               }
               if (isPurchasedViaApple) {
-                let tmp18Result = tmp18(7630);
+                let tmp18Result = tmp18(10714);
                 c4 = 1;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
@@ -129,7 +129,7 @@ function _handleCancelSubscription() {
                   closure_1_8.openURL(tmp18Result.getExternalSubscriptionMethodUrl(tmp15.paymentGateway, "SUBSCRIPTION_MANAGEMENT"));
                 }
               }
-              const obj7 = callback(7583);
+              const obj7 = callback(10375);
             }
           } else if (arg0 === 1) {
             c3 = 3;
@@ -204,7 +204,7 @@ function _onResubscribeClick() {
               closure_1 = tmp2;
               if (lib.isACOM) {
                 obj1 = { requestIdentifier: null, subscriptionId: null };
-                const obj9 = lib(7092);
+                const obj9 = lib(7098);
                 obj1[0] = lib(514).v4();
                 obj1[1] = tmp25.id;
                 dependencyMap = 1;
@@ -213,7 +213,7 @@ function _onResubscribeClick() {
                 obj2[0] = obj9.resubscribeGenericSubscription(obj1, true);
                 return obj2;
               } else if (tmp25.isPurchasedViaApple) {
-                obj6 = lib(7630);
+                obj6 = lib(10714);
                 dependencyMap = 3;
                 c3 = 1;
                 const obj3 = { value: null, done: false };
@@ -234,7 +234,7 @@ function _onResubscribeClick() {
               obj4[0] = arg1;
               return obj4;
             } else {
-              obj2 = lib(4789);
+              obj2 = lib(4790);
               dependencyMap = 2;
               c3 = 1;
               obj5 = { value: null, done: false };
@@ -616,27 +616,27 @@ let closure_18 = createCacheKey.createStyles(obj3);
 createCacheKey = { ACTIVE: "active", RESUB: "resub", ERROR: "error" };
 let obj6 = {};
 let obj7 = {};
-obj7[createCacheKey.ACTIVE] = registerAssetDefault5;
+obj7[createCacheKey.ACTIVE] = registerAssetDefault6;
 obj7[createCacheKey.ERROR] = registerAssetDefault10;
 obj7[createCacheKey.RESUB] = registerAssetDefault11;
 obj6[require("getPremiumPlanItem").Branding.BUNDLE] = obj7;
 let obj8 = {};
-obj8[createCacheKey.ACTIVE] = registerAssetDefault2;
+obj8[createCacheKey.ACTIVE] = registerAssetDefault3;
 obj8[createCacheKey.ERROR] = registerAssetDefault10;
 obj8[createCacheKey.RESUB] = registerAssetDefault11;
 obj6[require("getPremiumPlanItem").Branding.TIER_0] = obj8;
 let obj9 = {};
-obj9[createCacheKey.ACTIVE] = registerAssetDefault3;
+obj9[createCacheKey.ACTIVE] = registerAssetDefault4;
 obj9[createCacheKey.ERROR] = registerAssetDefault10;
 obj9[createCacheKey.RESUB] = registerAssetDefault11;
 obj6[require("getPremiumPlanItem").Branding.TIER_1] = obj9;
 let obj10 = {};
-obj10[createCacheKey.ACTIVE] = registerAssetDefault4;
+obj10[createCacheKey.ACTIVE] = registerAssetDefault5;
 obj10[createCacheKey.ERROR] = registerAssetDefault10;
 obj10[createCacheKey.RESUB] = registerAssetDefault11;
 obj6[require("getPremiumPlanItem").Branding.TIER_2] = obj10;
 let obj11 = {};
-obj11[createCacheKey.ACTIVE] = registerAssetDefault6;
+obj11[createCacheKey.ACTIVE] = registerAssetDefault7;
 obj11[createCacheKey.ERROR] = registerAssetDefault12;
 obj11[createCacheKey.RESUB] = registerAssetDefault13;
 obj6[require("getPremiumPlanItem").Branding.PREMIUM_GUILD] = obj11;
@@ -647,7 +647,7 @@ obj13[createCacheKey.ERROR] = registerAssetDefault14;
 obj13[createCacheKey.RESUB] = registerAssetDefault14;
 obj12[require("getPremiumPlanItem").Branding.BUNDLE] = obj13;
 let obj14 = {};
-obj14[createCacheKey.ACTIVE] = registerAssetDefault;
+obj14[createCacheKey.ACTIVE] = registerAssetDefault2;
 obj14[createCacheKey.ERROR] = registerAssetDefault15;
 obj14[createCacheKey.RESUB] = registerAssetDefault16;
 obj12[require("getPremiumPlanItem").Branding.TIER_0] = obj14;
@@ -657,7 +657,7 @@ obj15[createCacheKey.ERROR] = registerAssetDefault18;
 obj15[createCacheKey.RESUB] = registerAssetDefault19;
 obj12[require("getPremiumPlanItem").Branding.TIER_1] = obj15;
 const obj16 = {};
-obj16[createCacheKey.ACTIVE] = registerAssetDefault7;
+obj16[createCacheKey.ACTIVE] = registerAssetDefault8;
 obj16[createCacheKey.ERROR] = registerAssetDefault20;
 obj16[createCacheKey.RESUB] = registerAssetDefault21;
 obj12[require("getPremiumPlanItem").Branding.TIER_2] = obj16;
@@ -674,8 +674,8 @@ obj19[createCacheKey.ERROR] = registerAssetDefault25;
 obj19[createCacheKey.RESUB] = registerAssetDefault26;
 obj18[require("getPremiumPlanItem").Branding.BUNDLE] = obj19;
 const obj20 = {};
-obj20[createCacheKey.ACTIVE] = registerAssetDefault8;
-obj20[createCacheKey.ERROR] = registerAssetDefault8;
+obj20[createCacheKey.ACTIVE] = registerAssetDefault9;
+obj20[createCacheKey.ERROR] = registerAssetDefault9;
 obj20[createCacheKey.RESUB] = registerAssetDefault27;
 obj18[require("getPremiumPlanItem").Branding.TIER_0] = obj20;
 const obj21 = {};
@@ -684,8 +684,8 @@ obj21[createCacheKey.ERROR] = registerAssetDefault28;
 obj21[createCacheKey.RESUB] = registerAssetDefault29;
 obj18[require("getPremiumPlanItem").Branding.TIER_1] = obj21;
 const obj22 = {};
-obj22[createCacheKey.ACTIVE] = registerAssetDefault9;
-obj22[createCacheKey.ERROR] = registerAssetDefault9;
+obj22[createCacheKey.ACTIVE] = registerAssetDefault;
+obj22[createCacheKey.ERROR] = registerAssetDefault;
 obj22[createCacheKey.RESUB] = registerAssetDefault30;
 obj18[require("getPremiumPlanItem").Branding.TIER_2] = obj22;
 const obj23 = {};
@@ -713,7 +713,7 @@ export default function PremiumSubscriptionDetails(subscription) {
     obj1[0] = tmp.title;
     const intl = tmp4(1236).intl;
     obj1[4] = intl.string(tmp4(1236).t.ITurwY);
-    const items = [callback3(tmp4(4440).Text, obj1), , , , ];
+    const items = [callback3(tmp4(4441).Text, obj1), , , , ];
     let tmp9Result = null != subscription.renewalMutations;
     if (tmp9Result) {
       tmp9Result = subscription.status !== constants3.CANCELED;
@@ -722,14 +722,14 @@ export default function PremiumSubscriptionDetails(subscription) {
       const obj2 = { subscription: null, renewalMutations: null };
       obj2[0] = subscription;
       obj2[1] = subscription.renewalMutations;
-      tmp9Result = tmp9(tmp2(7844), obj2);
+      tmp9Result = tmp9(tmp2(12919), obj2);
     }
     items[1] = tmp9Result;
     tmp9Result = subscription.status === constants3.ACCOUNT_HOLD;
     if (tmp9Result) {
       const obj3 = { subscription: null };
       obj3[0] = subscription;
-      tmp9Result = tmp9(tmp2(7845), obj3);
+      tmp9Result = tmp9(tmp2(12920), obj3);
     }
     items[2] = tmp9Result;
     const obj4 = { subscription: null, renewalInvoicePreview: null, onClickManagePremiumGuild: null };
@@ -741,7 +741,7 @@ export default function PremiumSubscriptionDetails(subscription) {
     obj5[0] = tmp.desktopSubtext;
     const intl2 = tmp4(1236).intl;
     obj5[2] = intl2.string(tmp4(1236).t["MTG+3O"]);
-    items[4] = callback3(tmp4(4440).Text, obj5);
+    items[4] = callback3(tmp4(4441).Text, obj5);
     obj[1] = items;
     tmp7Result = closure_17(closure_9, obj);
     const tmp7 = closure_17;
@@ -752,14 +752,14 @@ export default function PremiumSubscriptionDetails(subscription) {
 export const onCancelClick = function onCancelClick(subscription, analyticsLocations) {
   const _require = subscription;
   importDefault = analyticsLocations;
-  let obj = _require(7583);
+  let obj = _require(10375);
   const result = obj.trackPremiumSubscriptionCancellationStarted(subscription, analyticsLocations);
   if (obj2.isBoostOnlySubscription(subscription)) {
     let tmp4ResultResult = handleCancelSubscription(subscription, analyticsLocations);
   } else {
     obj = { subscription: null, mode: null, onContinue: null };
     obj[0] = subscription;
-    obj[1] = _require(7832).WhatYouLoseMode.CANCEL;
+    obj[1] = _require(12909).WhatYouLoseMode.CANCEL;
     obj[2] = function onContinue(arg0) {
       return closure_1_26(closure_0, closure_1, arg0);
     };
@@ -784,7 +784,7 @@ export const handleManageSubscription = function handleManageSubscription(subscr
     obj[3] = !hasActiveTrial;
     let prop;
     if (hasActiveTrial) {
-      prop = tmp9(7080).excludeNitroOnlyPlansForActiveTrial;
+      prop = tmp9(7086).excludeNitroOnlyPlansForActiveTrial;
     }
     obj[4] = prop;
     const result = launchPremiumPlanSelect.launchPremiumPlanSelect(obj);

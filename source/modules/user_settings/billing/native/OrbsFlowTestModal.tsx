@@ -1,22 +1,22 @@
-// Module ID: 15321
-// Function ID: 15322
+// Module ID: 15385
+// Function ID: 15386
 // Name: BalanceWidgetMenuSection
-// Dependencies: [32, 19, 17, 21, 8785, 5955, 8607, 9895, 4444, 712, 4877, 4440, 15322, 4411, 10373, 2009, 1236, 8002, 4879, 10362, 10372, 5541, 5887, 15324, 2]
+// Dependencies: [32, 19, 17, 21, 7755, 5960, 7540, 10582, 4445, 712, 4878, 4441, 15386, 4412, 10770, 2009, 1236, 7638, 4880, 10760, 10769, 5546, 5892, 15388, 2]
 
-// Module 15321 (BalanceWidgetMenuSection)
+// Module 15385 (BalanceWidgetMenuSection)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4440 */;
-import Stack from "Stack" /* 4877 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5541 */;
-import Layer from "Layer" /* 5887 */;
-import BalanceWidgetDefault from "BalanceWidget" /* 15322 */;
-import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 15324 */;
+import Text from "Text" /* 4441 */;
+import Stack from "Stack" /* 4878 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5546 */;
+import Layer from "Layer" /* 5892 */;
+import BalanceWidgetDefault from "BalanceWidget" /* 15386 */;
+import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 15388 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 8785 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7755 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function BalanceWidgetMenuSection() {
@@ -104,7 +104,7 @@ createCacheKey = { flexDirection: "row", justifyContent: "center", marginBottom:
 obj[3] = createCacheKey;
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function OrbsFlowTestModal() {
-  let obj = _require(5955);
+  let obj = _require(5960);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {

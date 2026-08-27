@@ -1,14 +1,14 @@
-// Module ID: 16429
-// Function ID: 16430
+// Module ID: 16493
+// Function ID: 16494
 // Name: FreezeAfterLayoutPipView
-// Dependencies: [32, 19, 9077, 21, 16430, 9989, 16432, 2]
+// Dependencies: [32, 19, 8517, 21, 16494, 9500, 16496, 2]
 // Exports: default
 
-// Module 16429 (FreezeAfterLayoutPipView)
-import ExternalPipViewVideoUnavailableDefault from "ExternalPipViewVideoUnavailable" /* 16432 */;
+// Module 16493 (FreezeAfterLayoutPipView)
+import ExternalPipViewVideoUnavailableDefault from "ExternalPipViewVideoUnavailable" /* 16496 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "module_9077" /* 9077 */;
+import closure_4 from "module_8517" /* 8517 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 function FreezeAfterLayoutPipView() {

@@ -1,9 +1,9 @@
-// Module ID: 14004
-// Function ID: 14005
+// Module ID: 14031
+// Function ID: 14032
 // Name: getBuilderPreviewApplicationId
 // Dependencies: [589, 709, 2]
 
-// Module 14004 (getBuilderPreviewApplicationId)
+// Module 14031 (getBuilderPreviewApplicationId)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

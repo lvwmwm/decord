@@ -1,14 +1,14 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15800
+// Function ID: 15801
 // Name: useGuildsBarBottomRightBadge
-// Dependencies: [32, 19, 21, 4444, 1297, 4165, 712, 15737, 15738, 15742, 2]
+// Dependencies: [32, 19, 21, 4445, 1297, 4165, 712, 15801, 15802, 15806, 2]
 // Exports: default
 
-// Module 15736 (useGuildsBarBottomRightBadge)
+// Module 15800 (useGuildsBarBottomRightBadge)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 const require = arg1;
 let closure_6 = createCacheKey.createStyles({ bottomRightBadge: { position: "absolute", right: 9, backgroundColor: "transparent", borderColor: "transparent" } });
@@ -97,7 +97,7 @@ export default function useGuildsBarBottomRightBadge(mentionCount) {
       obj5[2] = items2;
       return obj5;
     } else {
-      return { badge: null, cutout: "Array", cutouts: "paddingHorizontal" };
+      return { badge: null, cutout: "Array", cutouts: "isArray" };
     }
   }, items1);
 };

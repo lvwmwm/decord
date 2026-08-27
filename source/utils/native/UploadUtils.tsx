@@ -1,27 +1,27 @@
-// Module ID: 5029
-// Function ID: 5030
+// Module ID: 5034
+// Function ID: 5035
 // Name: openImagePickerUnhandled
-// Dependencies: [109, 5, 17, 1304, 4538, 1922, 676, 4682, 3, 5030, 5041, 5021, 5047, 500, 4161, 1236, 4107, 5020, 1271, 5050, 5052, 5025, 4423, 5053, 5054, 5055, 1370, 5056, 5057, 5058, 4696, 5059, 2]
+// Dependencies: [109, 5, 17, 1304, 4539, 1922, 676, 4683, 3, 5035, 5046, 5026, 5052, 500, 4161, 1236, 4107, 5025, 1271, 5055, 5057, 5030, 4424, 5058, 5059, 5060, 1370, 5061, 5062, 5063, 4697, 5064, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, isHEVCEncodingSupported, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 5029 (openImagePickerUnhandled)
+// Module 5034 (openImagePickerUnhandled)
 import timestampDefault from "timestamp" /* 3 */;
 import set from "set" /* 500 */;
 import enforcingDefault from "enforcing" /* 1271 */;
-import cancel from "cancel" /* 5020 */;
-import items2 from "items" /* 5021 */;
-import getUploadFileSizeSum from "getUploadFileSizeSum" /* 5025 */;
-import toString from "toString" /* 5052 */;
-import getTimeFormat from "getTimeFormat" /* 5059 */;
+import cancel from "cancel" /* 5025 */;
+import items2 from "items" /* 5026 */;
+import getUploadFileSizeSum from "getUploadFileSizeSum" /* 5030 */;
+import toString from "toString" /* 5057 */;
+import getTimeFormat from "getTimeFormat" /* 5064 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
 import closure_10 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import closure_11 from "handleConnectionInfoChange" /* 4538 */;
+import closure_11 from "handleConnectionInfoChange" /* 4539 */;
 import closure_12 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4682 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4683 */;
 
 require = arg1;
 function openImagePickerUnhandled() {
@@ -429,19 +429,19 @@ function _openImagePicker() {
               throw arg1;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj2 = { value: null, done: true };
+              let obj2 = { value: null, done: true };
               obj2[0] = arg1;
               return obj2;
             } else if (arg1) {
               c4 = 1;
               c5 = 3;
               c6 = 1;
-              const obj3 = { value: null, done: false };
+              let obj3 = { value: null, done: false };
               obj3[0] = callback2(callback);
               return obj3;
             } else {
               c6 = 3;
-              let obj4 = { value: null, done: true };
+              const obj4 = { value: null, done: true };
               obj4[0] = { errorStr: "Missing permission" };
               return obj4;
             }
@@ -451,13 +451,12 @@ function _openImagePicker() {
             if ("E_PICKER_CANCELLED" !== closure_2.code) {
               if (closure_2.message !== closure_23) {
                 if ("E_CROPPER_IMAGE_NOT_FOUND" === closure_2.code) {
-                  let obj5 = callback(closure_2[14]);
-                  const intl2 = callback(closure_2[15]).intl;
-                  obj5.presentFailedToast(intl2.string(callback(closure_2[15]).t.TTzyzW));
-                  obj5 = { errorStr: "No select photo access" };
+                  obj3 = callback(closure_2[14]);
+                  const intl = callback(closure_2[15]).intl;
+                  obj3.presentFailedToast(intl.string(callback(closure_2[15]).t.TTzyzW));
                 } else {
-                  obj4 = callback(closure_2[14]);
-                  obj4.presentFailedToast(closure_2.message);
+                  obj2 = callback(closure_2[14]);
+                  obj2.presentFailedToast(closure_2.message);
                   { errorStr: null }[0] = closure_2.message;
                 }
               }
@@ -475,23 +474,23 @@ function _openImagePicker() {
           } else {
             closure_1 = arg1;
             if (null != closure_1.errorStr) {
-              obj = callback(closure_2[14]);
-              const intl = callback(closure_2[15]).intl;
+              const intl2 = callback(closure_2[15]).intl;
               const obj8 = { reason: null };
               obj8[0] = closure_1.errorStr;
-              obj.presentFailedToast(intl.formatToPlainString(callback(closure_2[15]).t.Ex162J, obj8));
+              callback(closure_2[14]).presentFailedToast(intl2.formatToPlainString(callback(closure_2[15]).t.Ex162J, obj8));
+              const obj14 = callback(closure_2[14]);
             }
             c4 = 0;
             c6 = 3;
-            const obj9 = { value: null, done: true };
-            obj9[0] = closure_1;
-            return obj9;
+            obj = { value: null, done: true };
+            obj[0] = closure_1;
+            return obj;
           }
-        } catch (tmp46) {
-          closure_3 = tmp46;
+        } catch (tmp36) {
+          closure_3 = tmp36;
           if (tmp4 === c4) {
             c6 = tmp2;
-            throw tmp46;
+            throw tmp36;
           } else {
             c5 = tmp;
           }
@@ -989,7 +988,7 @@ function convertVideo(videoMetadata) {
   if (obj6.isAndroid()) {
     if (tmpResult.getSystemVersionMajor() > 34) {
       let _Math = Math;
-      let frameRate = Math.min(videoMetadata.frameRate, tmp(5052).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
+      let frameRate = Math.min(videoMetadata.frameRate, tmp(5057).DEFAULT_VIDEO_ENCODING_CONFIG.frameRate);
     }
     obj.frameRate = frameRate;
     obj.skipVideoTranscode = result1;
@@ -1526,7 +1525,7 @@ function convertVideo(videoMetadata) {
                   } else {
                     isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                     if (isVideo2) {
-                      const obj4 = { uri: null, overrideType: "a" };
+                      const obj4 = { uri: null, overrideType: "r" };
                       obj4[0] = str3;
                       isVideo2 = tmp12(tmp13[11]).getFile(obj4).isVideo;
                       const tmp12Result3 = tmp12(tmp13[11]);
@@ -1545,7 +1544,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj5 = { uri: null, overrideType: "a" };
+                  const obj5 = { uri: null, overrideType: "r" };
                   obj5[0] = str3;
                   isVideo = tmp12(tmp13[11]).getFile(obj5).isVideo;
                   const tmp12Result5 = tmp12(tmp13[11]);
@@ -2393,7 +2392,7 @@ function _tryConvertImage() {
                   if (closure_11) {
                     const obj9 = { path: null, encoderUsed: null };
                     obj9[0] = closure_11;
-                    obj9[1] = lib(4696).ImageEncoder.NATIVE;
+                    obj9[1] = lib(4697).ImageEncoder.NATIVE;
                     tmp51 = obj9;
                   }
                   c8 = 3;
@@ -2459,7 +2458,7 @@ function _tryConvertImage() {
                   return obj16;
                 } else {
                   dependencyMap.path = path;
-                  dependencyMap.encoderUsed = lib(4696).ImageEncoder.PASSTHROUGH;
+                  dependencyMap.encoderUsed = lib(4697).ImageEncoder.PASSTHROUGH;
                   c5 = 0;
                   c8 = 3;
                   let obj17 = { value: null, done: true };
@@ -2534,10 +2533,10 @@ function _tryConvertImage() {
                 obj22[0] = tmp10;
                 return obj22;
               }
-              obj16 = lib(5050);
+              obj16 = lib(5055);
               closure_13 = obj16.shouldForceConvertToJPG(closure_0, closure_1_1, closure_1_10);
               if (!closure_13) {
-                obj17 = lib(5050);
+                obj17 = lib(5055);
                 if (!obj17.shouldConvertToJPG(closure_0, closure_1_1, closure_1_2, closure_1_4, c7)) {
                   if ((function shouldConvertToGifFilepath(closure_0, closure_1_1) {
                     const isIOSResult = _undefined(500).isIOS();
@@ -2553,7 +2552,7 @@ function _tryConvertImage() {
                       } else {
                         tmp7 = null != closure_0.match(/^assets-library:\/\/.+&ext=gif$/i);
                       }
-                      tmpResult = _undefined(5050);
+                      tmpResult = _undefined(5055);
                     }
                   })(closure_0, closure_1_1)) {
                     c7 = 9;

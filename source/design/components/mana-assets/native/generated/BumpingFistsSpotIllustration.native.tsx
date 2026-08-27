@@ -1,14 +1,14 @@
-// Module ID: 6321
-// Function ID: 6322
+// Module ID: 6327
+// Function ID: 6328
 // Name: BumpingFistsSpotIllustration
-// Dependencies: [21, 5440, 6322, 2]
+// Dependencies: [21, 5445, 6328, 2]
 // Exports: BumpingFistsSpotIllustration
 
-// Module 6321 (BumpingFistsSpotIllustration)
+// Module 6327 (BumpingFistsSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5440 */;
-import metadataDefault from "metadata" /* 6322 */;
+import preloadDefault from "preload" /* 5445 */;
+import metadataDefault from "metadata" /* 6328 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BumpingFistsSpotIllustration.native.tsx");

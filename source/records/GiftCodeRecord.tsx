@@ -1,13 +1,13 @@
-// Module ID: 9825
-// Function ID: 9826
+// Module ID: 8380
+// Function ID: 8381
 // Name: frozen
-// Dependencies: [1931, 7128, 7554, 4108, 1924, 4043, 1403, 2]
+// Dependencies: [1931, 7134, 8381, 4108, 1924, 4043, 1403, 2]
 
-// Module 9825 (frozen)
+// Module 8380 (frozen)
 import toJSDefault from "toJS" /* 1931 */;
 import hooksDefault from "hooks" /* 4043 */;
-import closure_3 from "createFromServer" /* 7128 */;
-import closure_4 from "createFromServer" /* 7554 */;
+import closure_3 from "createFromServer" /* 7134 */;
+import closure_4 from "createFromServer" /* 8381 */;
 import closure_5 from "createFromServer" /* 4108 */;
 import { PremiumSubscriptionSKUToPremiumType as closure_6 } from "GuildFeatures" /* 1924 */;
 

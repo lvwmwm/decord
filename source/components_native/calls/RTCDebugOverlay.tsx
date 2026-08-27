@@ -1,28 +1,28 @@
-// Module ID: 11077
-// Function ID: 11078
+// Module ID: 10040
+// Function ID: 10041
 // Name: Text
-// Dependencies: [19, 17, 1391, 1910, 4518, 11078, 4532, 1922, 4508, 21, 4444, 4292, 712, 1297, 589, 4638, 11080, 11079, 709, 5500, 4879, 1236, 2]
+// Dependencies: [19, 17, 1391, 1910, 4519, 10041, 4533, 1922, 4509, 21, 4445, 4293, 712, 1297, 589, 4639, 10043, 10042, 709, 5505, 4880, 1236, 2]
 // Exports: default
 
-// Module 11077 (Text)
+// Module 10040 (Text)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Button2 from "Button" /* 4879 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5500 */;
+import Button2 from "Button" /* 4880 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5505 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "createRTCConnection" /* 4518 */;
-import closure_10 from "updateStats" /* 11078 */;
-import closure_11 from "initialize" /* 4532 */;
+import closure_9 from "createRTCConnection" /* 4519 */;
+import closure_10 from "updateStats" /* 10041 */;
+import closure_11 from "initialize" /* 4533 */;
 import closure_12 from "mergeGuildAvatar" /* 1922 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4508 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4509 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
-import hexToRgba from "hexToRgba" /* 4292 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
+import hexToRgba from "hexToRgba" /* 4293 */;
 
 require = arg1;
 function Text(arg0) {
@@ -99,7 +99,7 @@ function RTCDebugGeneral() {
   if (null != stateFromStores) {
     name = stateFromStores.name;
   }
-  obj = { title: "general", children: tmp5(ObjectKV, { obj: { guild: obj, channel: { id: channelId, name: channelId(4638)(stateFromStores1) } } }) };
+  obj = { title: "general", children: tmp5(ObjectKV, { obj: { guild: obj, channel: { id: channelId, name: channelId(4639)(stateFromStores1) } } }) };
   obj[1] = name;
   return closure_14(Section, obj);
 }
@@ -214,7 +214,7 @@ export default function RTCDebugOverlay(arg0) {
   const tmp = callback3();
   const effect = importAllResult.useEffect(() => {
     callback(table[17]).open();
-    return () => callback(709).wait(callback2(11079).close);
+    return () => callback(709).wait(callback2(10042).close);
   }, []);
   let obj = { top: true, left: true, right: true, bottom: true, style: items, children: null };
   items = [tmp.container, style];

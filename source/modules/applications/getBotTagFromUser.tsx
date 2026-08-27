@@ -1,12 +1,12 @@
-// Module ID: 9878
-// Function ID: 9879
+// Module ID: 10565
+// Function ID: 10566
 // Name: getBotTagTypeFromUser
-// Dependencies: [4473, 2]
+// Dependencies: [4474, 2]
 // Exports: getBotTagTypeFromUser
 
-// Module 9878 (getBotTagTypeFromUser)
+// Module 10565 (getBotTagTypeFromUser)
 import set from "set" /* 2 */;
-import ApplicationTypes from "ApplicationTypes" /* 4473 */;
+import ApplicationTypes from "ApplicationTypes" /* 4474 */;
 
 const BotTagTypes = ApplicationTypes.BotTagTypes;
 const result = set.fileFinishedImporting("modules/applications/getBotTagFromUser.tsx");

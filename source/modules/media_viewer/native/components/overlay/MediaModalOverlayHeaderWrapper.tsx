@@ -1,16 +1,16 @@
-// Module ID: 9145
-// Function ID: 9146
+// Module ID: 8570
+// Function ID: 8571
 // Name: MediaModalOverlayHeaderWrapper
-// Dependencies: [19, 17, 21, 4444, 5439, 1629, 2]
+// Dependencies: [19, 17, 21, 4445, 5444, 1629, 2]
 // Exports: MediaModalOverlayHeaderWrapper
 
-// Module 9145 (MediaModalOverlayHeaderWrapper)
+// Module 8570 (MediaModalOverlayHeaderWrapper)
 import noopAll from "noop" /* 19 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5439 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5444 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;

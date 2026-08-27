@@ -1,10 +1,10 @@
-// Module ID: 15386
-// Function ID: 15387
+// Module ID: 15451
+// Function ID: 15452
 // Name: RegistrationTransitionActionTypes
 // Dependencies: [691, 2]
 // Exports: authStateToRegisterTransitionStep
 
-// Module 15386 (RegistrationTransitionActionTypes)
+// Module 15451 (RegistrationTransitionActionTypes)
 import set from "set" /* 2 */;
 import keys from "keys" /* 691 */;
 

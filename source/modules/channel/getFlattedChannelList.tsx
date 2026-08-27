@@ -1,10 +1,10 @@
-// Module ID: 5427
-// Function ID: 5428
+// Module ID: 5432
+// Function ID: 5433
 // Name: getFlattenedChannelList
 // Dependencies: [12, 2]
 // Exports: default
 
-// Module 5427 (getFlattenedChannelList)
+// Module 5432 (getFlattenedChannelList)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 

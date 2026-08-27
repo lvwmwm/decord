@@ -1,10 +1,10 @@
-// Module ID: 4661
-// Function ID: 4662
+// Module ID: 4662
+// Function ID: 4663
 // Name: guildHasOnboardingHome
 // Dependencies: [676, 1913, 2]
 // Exports: default
 
-// Module 4661 (guildHasOnboardingHome)
+// Module 4662 (guildHasOnboardingHome)
 import set from "set" /* 2 */;
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
 import ME from "ME" /* 676 */;

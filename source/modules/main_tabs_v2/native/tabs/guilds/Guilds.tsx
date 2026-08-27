@@ -1,17 +1,17 @@
-// Module ID: 15452
-// Function ID: 15453
-// Dependencies: [19, 9789, 21, 15453, 4294, 10600, 4172, 14622, 15454, 15802, 14705, 2]
+// Module ID: 15517
+// Function ID: 15518
+// Dependencies: [19, 10751, 21, 15518, 4295, 11004, 4172, 14649, 15519, 15866, 14732, 2]
 
-// Module 15452
+// Module 15517
 import ManaContext from "ManaContext" /* 4172 */;
-import getGuildThemeNameDefault from "getGuildThemeName" /* 4294 */;
-import getIsEligibleForQuests from "getIsEligibleForQuests" /* 10600 */;
-import QuestDockMode from "QuestDockMode" /* 14622 */;
-import QuestDockWithGestureAnimationDefault from "QuestDockWithGestureAnimation" /* 14705 */;
-import trackTabPressed from "trackTabPressed" /* 15453 */;
-import LeftPanelContentDefault from "LeftPanelContent" /* 15454 */;
-import _modDef15802 from "module_15802" /* 15802 */;
-import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 9789 */;
+import getGuildThemeNameDefault from "getGuildThemeName" /* 4295 */;
+import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11004 */;
+import QuestDockMode from "QuestDockMode" /* 14649 */;
+import QuestDockWithGestureAnimationDefault from "QuestDockWithGestureAnimation" /* 14732 */;
+import trackTabPressed from "trackTabPressed" /* 15518 */;
+import LeftPanelContentDefault from "LeftPanelContent" /* 15519 */;
+import _modDef15866 from "module_15866" /* 15866 */;
+import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 10751 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -24,7 +24,7 @@ const memoResult = importAllResult.memo(function GuildsOnly() {
   const tmp4 = getGuildThemeNameDefault();
   let isEligibleForQuests = getIsEligibleForQuests.getIsEligibleForQuests();
   obj = { gradient: tmp4, children: null };
-  const items = [callback(LeftPanelContentDefault, {}), callback(_modDef15802, {}), ];
+  const items = [callback(LeftPanelContentDefault, {}), callback(_modDef15866, {}), ];
   if (isEligibleForQuests) {
     isEligibleForQuests = tmp6(QuestDockWithGestureAnimationDefault, {});
   }

@@ -1,15 +1,15 @@
-// Module ID: 4696
-// Function ID: 4697
+// Module ID: 4697
+// Function ID: 4698
 // Name: messageAttachmentToUnfurledMediaItem
-// Dependencies: [676, 1403, 1955, 4635, 1487, 2]
+// Dependencies: [676, 1403, 1955, 4636, 1487, 2]
 // Exports: embedMediaToMediaItem, getMediaItemDisplayUrl, getUnfurledMediaItemType, isVisualUnfurledMediaItem, messageAttachmentToMediaItem, toContentScanMetadata, toUnfurledMediaItem
 
-// Module 4696 (messageAttachmentToUnfurledMediaItem)
+// Module 4697 (messageAttachmentToUnfurledMediaItem)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import hasFlag from "hasFlag" /* 1403 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4635 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4636 */;
 
 function messageAttachmentToUnfurledMediaItem(flags) {
   obj = hasFlag;

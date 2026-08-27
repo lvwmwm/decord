@@ -1,12 +1,12 @@
-// Module ID: 8861
-// Function ID: 8862
+// Module ID: 9028
+// Function ID: 9029
 // Name: useEmojiHotrail
-// Dependencies: [19, 5352, 2]
+// Dependencies: [19, 5357, 2]
 // Exports: default, getEmojiHotrail
 
-// Module 8861 (useEmojiHotrail)
+// Module 9028 (useEmojiHotrail)
 import closure_0 from "noop" /* 19 */;
-import { EMOJI_ROW_SIZE } from "EmojiCategoryTypes" /* 5352 */;
+import { EMOJI_ROW_SIZE } from "EmojiCategoryTypes" /* 5357 */;
 
 const result = require("set").fileFinishedImporting("modules/emoji_picker/hooks/useEmojiHotrail.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12399
+// Function ID: 12400
 // Name: PaperPlusIcon
-// Dependencies: [19, 21, 712, 4164, 12608, 2]
+// Dependencies: [19, 21, 712, 4164, 12400, 2]
 // Exports: PaperPlusIcon
 
-// Module 12607 (PaperPlusIcon)
+// Module 12399 (PaperPlusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 12608 */;
+import registerAsset from "registerAsset" /* 12400 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

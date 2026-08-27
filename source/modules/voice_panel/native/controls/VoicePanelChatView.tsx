@@ -1,20 +1,20 @@
-// Module ID: 11911
-// Function ID: 11912
+// Module ID: 11754
+// Function ID: 11755
 // Name: memoResult1
-// Dependencies: [19, 17, 11912, 676, 21, 4444, 4673, 1367, 1231, 11909, 1236, 4398, 7963, 11913, 4184, 8227, 5017, 8616, 1494, 1629, 11920, 4457, 4294, 11157, 4172, 4863, 11921, 10450, 2]
+// Dependencies: [19, 17, 11755, 676, 21, 4445, 4674, 1367, 1231, 11752, 1236, 4399, 7938, 11756, 4185, 7729, 5022, 7549, 1494, 1629, 11763, 4458, 4295, 11043, 4172, 4864, 11764, 10897, 2]
 
-// Module 11911 (memoResult1)
+// Module 11754 (memoResult1)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5017 */;
-import IconButton from "IconButton" /* 7963 */;
-import setDefault from "set" /* 8227 */;
-import dismissPanelDefault from "dismissPanel" /* 11913 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5022 */;
+import setDefault from "set" /* 7729 */;
+import IconButton from "IconButton" /* 7938 */;
+import dismissPanelDefault from "dismissPanel" /* 11756 */;
 import importAllResult from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
-import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes" /* 11912 */;
+import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes" /* 11755 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -24,7 +24,7 @@ let closure_8 = createCacheKey.createStyles({ container: { flex: 1, overflow: "h
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = importAllResult.memo(() => {
   const windowDimensions = importAllResult.useContext(dismissPanelDefault).windowDimensions;
-  let obj = windowDimensions(4184);
+  let obj = windowDimensions(4185);
   const fn = function n() {
     return { width: windowDimensions.get().width, height: windowDimensions.get().height };
   };
@@ -47,15 +47,15 @@ const memoResult = importAllResult.memo(function VoicePanelDismissChatButton() {
     let obj = { accessibilityLabel: null, icon: null, onPress: null };
     const intl2 = getSystemLocale.intl;
     obj[0] = intl2.string(getSystemLocale.t["5MstTl"]);
-    obj[1] = tmp(4398);
+    obj[1] = tmp(4399);
     obj[2] = callback;
-    let tmp5Result = tmp5(tmp(11909), obj);
-    const tmpResult = tmp(11909);
+    let tmp5Result = tmp5(tmp(11752), obj);
+    const tmpResult = tmp(11752);
   } else {
     obj = { accessibilityLabel: null, icon: null, onPress: null, variant: "primary-overlay" };
     const intl = getSystemLocale.intl;
     obj[0] = intl.string(getSystemLocale.t["5MstTl"]);
-    obj[1] = tmp(4398);
+    obj[1] = tmp(4399);
     obj[2] = callback;
     tmp5Result = tmp5(IconButton.IconButton, obj);
   }

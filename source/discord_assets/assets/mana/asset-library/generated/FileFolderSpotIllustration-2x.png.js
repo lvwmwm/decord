@@ -1,9 +1,9 @@
-// Module ID: 6484
-// Function ID: 6485
+// Module ID: 6490
+// Function ID: 6491
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6484 (metadata)
+// Module 6490 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FileFolderSpotIllustration-2x.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 10145
+// Function ID: 10146
 // Name: MuteSettings
-// Dependencies: [19, 1391, 1910, 4098, 1922, 676, 21, 4440, 1236, 10042, 4411, 5939, 5546, 1297, 10044, 4638, 10045, 5936, 5568, 2]
+// Dependencies: [19, 1391, 1910, 4098, 1922, 676, 21, 4441, 1236, 10146, 4412, 5944, 5551, 1297, 10148, 4639, 10149, 5941, 5573, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 10041 (MuteSettings)
+// Module 10145 (MuteSettings)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
+import Text from "Text" /* 4441 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
@@ -127,7 +127,7 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     const intl4 = getSystemLocale.intl;
     obj1 = { mutedHook: null };
     obj1[0] = function mutedHook(children) {
-      return callback2(callback(4440).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children }, arg1);
+      return callback2(callback(4441).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children }, arg1);
     };
     obj[2] = intl4.format(getSystemLocale.t.O34r15, obj1);
     tmp3 = callback(Text.Text, obj);
@@ -136,7 +136,7 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     const intl3 = getSystemLocale.intl;
     const obj3 = { notificationHook: null };
     obj3[0] = function notificationHook(children) {
-      return callback2(callback(4440).Text, { variant: "text-sm/medium", color: "text-feedback-warning", children }, arg1);
+      return callback2(callback(4441).Text, { variant: "text-sm/medium", color: "text-feedback-warning", children }, arg1);
     };
     obj2[2] = intl3.format(getSystemLocale.t.nRwUIL, obj3);
     tmp3 = callback(Text.Text, obj2);

@@ -1,42 +1,42 @@
-// Module ID: 13090
-// Function ID: 13091
+// Module ID: 13113
+// Function ID: 13114
 // Name: BoostPurchaseNitroBanner
-// Dependencies: [5, 32, 19, 17, 7097, 1910, 4112, 4113, 6031, 13091, 1924, 676, 7105, 4426, 21, 4444, 5408, 5331, 712, 4877, 6202, 4440, 1236, 4107, 13092, 13093, 13094, 13095, 13096, 13097, 7916, 4165, 589, 13098, 7541, 4379, 1297, 698, 7831, 7832, 5546, 13099, 5995, 5599, 1363, 501, 7080, 7583, 4809, 13100, 2009, 5939, 4891, 7081, 6034, 4122, 4675, 7083, 7588, 5900, 6050, 5888, 4896, 7584, 7542, 1500, 7090, 7843, 5920, 7544, 4789, 7614, 7807, 7075, 7621, 4119, 7622, 2]
+// Dependencies: [5, 32, 19, 17, 7103, 1910, 4112, 4113, 6036, 13114, 1924, 676, 7111, 4427, 21, 4445, 5413, 5336, 712, 4878, 6208, 4441, 1236, 4107, 13115, 13116, 13117, 13118, 13119, 13120, 8028, 4165, 589, 13121, 12874, 4380, 1297, 698, 12908, 12909, 5551, 13122, 6000, 5604, 1363, 501, 7086, 10375, 4810, 13123, 2009, 5944, 4892, 7087, 6039, 4122, 4676, 7089, 10408, 5905, 6056, 5893, 4897, 10405, 10400, 1500, 7096, 12918, 5925, 10401, 4790, 8414, 12884, 7081, 8152, 4119, 10500, 2]
 // Exports: default
 
-// Module 13090 (BoostPurchaseNitroBanner)
+// Module 13113 (BoostPurchaseNitroBanner)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4107 */;
-import Text from "Text" /* 4440 */;
-import Stack from "Stack" /* 4877 */;
-import LinearGradientDefault from "LinearGradient" /* 4891 */;
-import createTextStyleDefault from "createTextStyle" /* 5408 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6202 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 7916 */;
-import registerAssetDefault from "registerAsset" /* 13092 */;
-import registerAssetDefault2 from "registerAsset" /* 13093 */;
-import registerAssetDefault3 from "registerAsset" /* 13094 */;
-import registerAssetDefault4 from "registerAsset" /* 13095 */;
-import registerAssetDefault5 from "registerAsset" /* 13096 */;
-import registerAssetDefault6 from "registerAsset" /* 13097 */;
+import Text from "Text" /* 4441 */;
+import Stack from "Stack" /* 4878 */;
+import LinearGradientDefault from "LinearGradient" /* 4892 */;
+import createTextStyleDefault from "createTextStyle" /* 5413 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6208 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8028 */;
+import registerAssetDefault from "registerAsset" /* 13115 */;
+import registerAssetDefault2 from "registerAsset" /* 13116 */;
+import registerAssetDefault3 from "registerAsset" /* 13117 */;
+import registerAssetDefault4 from "registerAsset" /* 13118 */;
+import registerAssetDefault5 from "registerAsset" /* 13119 */;
+import registerAssetDefault6 from "registerAsset" /* 13120 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { useNativeCheckoutStore } from "context" /* 7097 */;
+import { useNativeCheckoutStore } from "context" /* 7103 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
 import closure_11 from "addSubscriptionPlan" /* 4112 */;
 import closure_12 from "reset" /* 4113 */;
-import closure_13 from "updateProduct" /* 6031 */;
-import usePremiumPlanSelectStore from "usePremiumPlanSelectStore" /* 13091 */;
+import closure_13 from "updateProduct" /* 6036 */;
+import usePremiumPlanSelectStore from "usePremiumPlanSelectStore" /* 13114 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import ME from "ME" /* 676 */;
-import items from "items" /* 7105 */;
-import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4426 */;
+import items from "items" /* 7111 */;
+import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4427 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 function BoostPurchaseNitroBanner() {
@@ -449,7 +449,7 @@ function PlanSection(showBoostOnlyLabels) {
     obj = { title: null, hasIcons: true, children: null };
     obj[0] = showBoostOnlyLabels.label;
     obj[2] = mapped;
-    let tmp7Result = tmp7(shouldShowModernBoostFlow(5939).TableRowGroup, obj);
+    let tmp7Result = tmp7(shouldShowModernBoostFlow(5944).TableRowGroup, obj);
   } else {
     obj = { children: null };
     obj[0] = mapped;
@@ -466,18 +466,18 @@ function CurrentPlanRow(subscription) {
   const tmp = callback5();
   if (subscription.showCurrentPlan) {
     if (null != subscription) {
-      productIdFromSubscription = subscription(7080).getProductIdFromSubscription(subscription, true);
-      let obj4 = subscription(7080);
+      productIdFromSubscription = subscription(7086).getProductIdFromSubscription(subscription, true);
+      let obj4 = subscription(7086);
       const tmp13 = subscription;
-      const premiumBundledItemsFromProductId = subscription(7080).getPremiumBundledItemsFromProductId(productIdFromSubscription);
+      const premiumBundledItemsFromProductId = subscription(7086).getPremiumBundledItemsFromProductId(productIdFromSubscription);
       const premiumTier = premiumBundledItemsFromProductId.premiumTier;
       if (null != premiumTier) {
         let PREMIUM_GUILD = callback2(premiumTier);
       } else {
         PREMIUM_GUILD = constants6.PREMIUM_GUILD;
       }
-      const obj5 = subscription(7080);
-      toggledIntervalProduct = tmp13(7080).getToggledIntervalProduct(productIdFromSubscription);
+      const obj5 = subscription(7086);
+      toggledIntervalProduct = tmp13(7086).getToggledIntervalProduct(productIdFromSubscription);
       let obj = { style: null, colors: null, start: null, end: null, children: null };
       obj[0] = tmp.currentPlanGradient;
       obj[1] = PREMIUM_GUILD;
@@ -487,7 +487,7 @@ function CurrentPlanRow(subscription) {
       obj[1] = subscription;
       obj[2] = analyticsLoadId;
       let tmp11 = null == toggledIntervalProduct;
-      const tmp13Result = tmp13(7080);
+      const tmp13Result = tmp13(7086);
       if (tmp11) {
         tmp11 = subscription.status !== constants5.CANCELED;
       }
@@ -517,8 +517,8 @@ function CurrentPlanRow(subscription) {
                     let obj = {};
                     const merged = Object.assign(arg0);
                     obj.productId = closure_1_1;
-                    obj.continueWithUpsell = closure_3_3(/* F122353 */ function() { ... });
-                    obj.continueWithDefault = closure_3_3(/* F122354 */ function() { ... });
+                    obj.continueWithUpsell = closure_3_3(/* F122627 */ function() { ... });
+                    obj.continueWithDefault = closure_3_3(/* F122628 */ function() { ... });
                     return closure_3_32(closure_0, obj);
                   };
                 });

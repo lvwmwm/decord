@@ -1,11 +1,11 @@
-// Module ID: 10469
-// Function ID: 10470
+// Module ID: 10915
+// Function ID: 10916
 // Name: useCreateThreadViewProps
-// Dependencies: [1391, 10124, 647, 2]
+// Dependencies: [1391, 10249, 647, 2]
 // Exports: default
 
-// Module 10469 (useCreateThreadViewProps)
-import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 10124 */;
+// Module 10915 (useCreateThreadViewProps)
+import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 10249 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;

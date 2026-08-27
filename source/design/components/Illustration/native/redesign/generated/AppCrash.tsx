@@ -1,13 +1,13 @@
-// Module ID: 9298
-// Function ID: 9299
+// Module ID: 9860
+// Function ID: 9861
 // Name: getAppCrashSource
-// Dependencies: [19, 17, 21, 7834, 9299, 9300, 9301, 1363, 2]
+// Dependencies: [19, 17, 21, 8834, 9861, 9862, 9863, 1363, 2]
 // Exports: AppCrash, getAppCrashSource, useAppCrashSource
 
-// Module 9298 (getAppCrashSource)
+// Module 9860 (getAppCrashSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 7834 */;
+import getIllustrationSource from "getIllustrationSource" /* 8834 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getAppCrashSource = function getAppCrashSource(theme) {
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(9299);
+      return callback(9861);
     },
     darker() {
-      return callback(9300);
+      return callback(9862);
     },
     light() {
-      return callback(9301);
+      return callback(9863);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useAppCrashSource = function useAppCrashSource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9299);
+      return callback(9861);
     },
     darker() {
-      return callback(9300);
+      return callback(9862);
     },
     light() {
-      return callback(9301);
+      return callback(9863);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const AppCrash = function AppCrash(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9299);
+      return callback(9861);
     },
     darker() {
-      return callback(9300);
+      return callback(9862);
     },
     light() {
-      return callback(9301);
+      return callback(9863);
     }
   };
   obj = {};

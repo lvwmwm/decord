@@ -1,12 +1,12 @@
-// Module ID: 9381
-// Function ID: 9382
+// Module ID: 9712
+// Function ID: 9713
 // Name: getLastUsedVideoBackgroundOption
-// Dependencies: [19, 1340, 1922, 9378, 4107, 589, 2]
+// Dependencies: [19, 1340, 1922, 9709, 4107, 589, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 9381 (getLastUsedVideoBackgroundOption)
+// Module 9712 (getLastUsedVideoBackgroundOption)
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
-import isAnimatedBackgroundOption from "isAnimatedBackgroundOption" /* 9378 */;
+import isAnimatedBackgroundOption from "isAnimatedBackgroundOption" /* 9709 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;

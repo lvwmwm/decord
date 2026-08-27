@@ -1,10 +1,10 @@
-// Module ID: 10857
-// Function ID: 10858
+// Module ID: 9502
+// Function ID: 9503
 // Name: videoStreamTimedOut
 // Dependencies: [709, 2]
 // Exports: clearVideoStreamTimeout, videoStreamTimedOut
 
-// Module 10857 (videoStreamTimedOut)
+// Module 9502 (videoStreamTimedOut)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

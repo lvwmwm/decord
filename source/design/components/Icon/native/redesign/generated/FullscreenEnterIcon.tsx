@@ -1,14 +1,14 @@
-// Module ID: 14559
-// Function ID: 14560
+// Module ID: 14586
+// Function ID: 14587
 // Name: FullscreenEnterIcon
-// Dependencies: [19, 21, 712, 4164, 14560, 2]
+// Dependencies: [19, 21, 712, 4164, 14587, 2]
 // Exports: FullscreenEnterIcon
 
-// Module 14559 (FullscreenEnterIcon)
+// Module 14586 (FullscreenEnterIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14560 */;
+import registerAsset from "registerAsset" /* 14587 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

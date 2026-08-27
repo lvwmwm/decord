@@ -1,10 +1,10 @@
-// Module ID: 17227
-// Function ID: 17228
+// Module ID: 17293
+// Function ID: 17294
 // Name: useInviteApplicationBypassInfo
 // Dependencies: [4089, 676, 589, 2]
 // Exports: useInviteApplicationBypassInfo
 
-// Module 17227 (useInviteApplicationBypassInfo)
+// Module 17293 (useInviteApplicationBypassInfo)
 import closure_2 from "getUncachedChannelPermissions" /* 4089 */;
 import ME from "ME" /* 676 */;
 

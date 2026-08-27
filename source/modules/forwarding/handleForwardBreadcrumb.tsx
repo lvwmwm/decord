@@ -1,10 +1,10 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11422
+// Function ID: 11423
 // Name: _handleForwardBreadcrumb
-// Dependencies: [5, 1391, 1910, 676, 6131, 5404, 698, 6038, 2]
+// Dependencies: [5, 1391, 1910, 676, 6137, 5409, 698, 6043, 2]
 // Exports: default
 
-// Module 11571 (_handleForwardBreadcrumb)
+// Module 11422 (_handleForwardBreadcrumb)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;

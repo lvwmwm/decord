@@ -1,12 +1,12 @@
-// Module ID: 16331
-// Function ID: 16332
+// Module ID: 16396
+// Function ID: 16397
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4358, 7585, 2]
+// Dependencies: [4359, 10406, 2]
 
-// Module 16331 (commonTriggerPointConfiguration)
+// Module 16396 (commonTriggerPointConfiguration)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4358 */;
-import registeredExperimentIds from "registeredExperimentIds" /* 7585 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4359 */;
+import registeredExperimentIds from "registeredExperimentIds" /* 10406 */;
 
 const commonTriggerPointConfiguration = new registeredExperimentIds.CommonTriggerPointConfiguration([], ExperimentBuckets.CommonTriggerPoints.OPEN_USER_SETTINGS, { location: "open user settings" });
 const result = set.fileFinishedImporting("modules/experiments/trigger_points/OpenUserSettingsTriggerPoint.tsx");

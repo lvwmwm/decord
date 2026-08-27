@@ -1,11 +1,11 @@
-// Module ID: 12071
-// Function ID: 12072
+// Module ID: 11917
+// Function ID: 11918
 // Name: useChangelogIdFromChannel
-// Dependencies: [4687, 589, 2]
+// Dependencies: [4688, 589, 2]
 // Exports: default
 
-// Module 12071 (useChangelogIdFromChannel)
-import closure_2 from "reinjectEphemerals" /* 4687 */;
+// Module 11917 (useChangelogIdFromChannel)
+import closure_2 from "reinjectEphemerals" /* 4688 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/changelog/useChangelogIdFromChannel.tsx");

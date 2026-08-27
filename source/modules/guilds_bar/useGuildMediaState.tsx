@@ -1,23 +1,23 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15834
+// Function ID: 15835
 // Name: canConnectToChannel
-// Dependencies: [1390, 1396, 1395, 4466, 1218, 1391, 1910, 4089, 4098, 1981, 4653, 4463, 676, 692, 589, 13248, 9253, 13249, 4079, 8559, 11, 5307, 2]
+// Dependencies: [1390, 1396, 1395, 4467, 1218, 1391, 1910, 4089, 4098, 1981, 4654, 4464, 676, 692, 589, 13274, 9552, 4079, 13275, 8076, 11, 5312, 2]
 // Exports: default
 
-// Module 15770 (canConnectToChannel)
+// Module 15834 (canConnectToChannel)
 import set from "set" /* 692 */;
 import closure_3 from "participantFromServer" /* 1390 */;
 import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
 import { isVoiceChannel } from "createChannelRecord" /* 1395 */;
-import closure_6 from "reset" /* 4466 */;
+import closure_6 from "reset" /* 4467 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
 import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_11 from "markAllUserIdListsStale" /* 4098 */;
 import closure_12 from "handleConnectionOpen" /* 1981 */;
-import closure_13 from "updateUserGuildSettingsInternal" /* 4653 */;
-import closure_14 from "updateVoiceState" /* 4463 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 4654 */;
+import closure_14 from "updateVoiceState" /* 4464 */;
 import { BasicPermissions } from "ME" /* 676 */;
 
 require = arg1;
@@ -49,22 +49,33 @@ export default function useGuildMediaState(guild_id) {
   let obj2 = _require(isDontBadgeMutedVcsEnabled[15]);
   const guildActiveEvent = _require(isDontBadgeMutedVcsEnabled[16]).useGuildActiveEvent(guild_id);
   const obj3 = _require(isDontBadgeMutedVcsEnabled[16]);
-  const items1 = [guildActiveEvent, closure_11];
+  const items1 = [guildActiveEvent, selectedVoiceChannelHasVideo, closure_11];
   const stateFromStoresArray = _require(isDontBadgeMutedVcsEnabled[14]).useStateFromStoresArray(items1, () => {
     const embeddedActivitiesForGuild = guildActiveEvent.getEmbeddedActivitiesForGuild(closure_0);
-    return embeddedActivitiesForGuild.filter((userIds) => {
-      const items = [...userIds.userIds];
-      return !callback(table[17]).hasBlockedOrIgnoredUserIds(items, blockedOrIgnoredIDs.getBlockedOrIgnoredIDs());
+    return embeddedActivitiesForGuild.filter((location) => {
+      basicChannel = basicChannel.getBasicChannel(callback(table[17]).getEmbeddedActivityLocationChannelId(location.location));
+      let type;
+      if (basicChannel != null) {
+        type = basicChannel.type;
+      }
+      if (type === callback(table[13]).ChannelTypes.GUILD_SPACE) {
+        return false;
+      } else {
+        blockedOrIgnoredIDs = blockedOrIgnoredIDs.getBlockedOrIgnoredIDs();
+        const items = [];
+        HermesBuiltin.arraySpread(location.userIds, 0);
+        return !tmp(tmp2[18]).hasBlockedOrIgnoredUserIds(items, blockedOrIgnoredIDs);
+      }
+      const obj = callback(table[17]);
     });
   });
   const obj4 = _require(isDontBadgeMutedVcsEnabled[14]);
-  let tmp7 = guildActiveEvent;
   const first = stateFromStoresArray[0];
   let _location;
   if (first != null) {
     _location = first.location;
   }
-  const embeddedActivityLocationChannelId = _require(isDontBadgeMutedVcsEnabled[18]).getEmbeddedActivityLocationChannelId(_location);
+  const embeddedActivityLocationChannelId = _require(isDontBadgeMutedVcsEnabled[17]).getEmbeddedActivityLocationChannelId(_location);
   let tmpResult = tmp(tmp2[19]);
   const isActivitiesInTextEnabled = tmpResult.useIsActivitiesInTextEnabled(embeddedActivityLocationChannelId);
   tmpResult = tmp(tmp2[14]);
@@ -78,7 +89,7 @@ export default function useGuildMediaState(guild_id) {
       afkChannelId = guild.afkChannelId;
     }
     const usersWithVideo = closure_1_14.getUsersWithVideo(tmp3);
-    let obj = guild_id(isDontBadgeMutedVcsEnabled[17]);
+    let obj = guild_id(isDontBadgeMutedVcsEnabled[18]);
     const result = obj.filterBlockedUsersFromVoiceStates(closure_1_14.getVoiceStates(tmp3));
     isDontBadgeMutedVcsEnabled = result;
     let flag = false;
@@ -187,8 +198,8 @@ export default function useGuildMediaState(guild_id) {
   const guildHasVideo = stateFromStoresObject.guildHasVideo;
   selectedVoiceChannelHasVideo = stateFromStoresObject.selectedVoiceChannelHasVideo;
   id = guildHasVideo.getId();
-  let obj5 = _require(isDontBadgeMutedVcsEnabled[18]);
-  const items4 = [closure_12, selectedVoiceChannelHasVideo, tmp7, stateFromStoresArray, guildHasVoice, closure_10, closure_13];
+  let obj5 = _require(isDontBadgeMutedVcsEnabled[17]);
+  const items4 = [closure_12, selectedVoiceChannelHasVideo, stateFromStoresArray, guildHasVoice, closure_10, closure_13];
   const items5 = [guild_id, stateFromStores, selectedVoiceChannelHasVideo, id, isActivitiesInTextEnabled, stateFromStoresArray, guildActiveEvent, guildHasVoice, guildHasVideo, isDontBadgeMutedVcsEnabled];
   return _require(isDontBadgeMutedVcsEnabled[14]).useStateFromStoresObject(items4, () => {
     const voiceChannelId = closure_1_12.getVoiceChannelId();
@@ -231,8 +242,8 @@ export default function useGuildMediaState(guild_id) {
       }
       return tmp2;
     });
-    let result = guild_id(tmp7[17]).filterOutStreamsByBlockedOwner(guildHasVoice.getAllApplicationStreams());
-    const obj5 = guild_id(tmp7[17]);
+    let result = guild_id(tmp7[18]).filterOutStreamsByBlockedOwner(guildHasVoice.getAllApplicationStreams());
+    const obj5 = guild_id(tmp7[18]);
     let tmp14 = (() => {
       if (closure_5) {
         return arr.length > 0;
@@ -242,7 +253,7 @@ export default function useGuildMediaState(guild_id) {
           let tmp6 = closure_1_8;
           let tmp7 = closure_1_0;
           let tmp8 = closure_1_2;
-          let obj2 = closure_1_0(closure_1_2[18]);
+          let obj2 = closure_1_0(closure_1_2[17]);
           let channel = closure_1_8.getChannel(obj2.getEmbeddedActivityLocationChannelId(tmp4.location));
           if (null != channel) {
             let tmp11 = closure_1_5;

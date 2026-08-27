@@ -1,21 +1,21 @@
-// Module ID: 16411
-// Function ID: 16412
+// Module ID: 16475
+// Function ID: 16476
 // Name: ChannelContent
-// Dependencies: [19, 17, 10017, 4654, 21, 4444, 500, 16406, 4962, 16412, 4440, 4991, 8180, 15554, 2]
+// Dependencies: [19, 17, 10121, 4655, 21, 4445, 500, 16470, 4964, 16476, 4441, 4996, 8661, 15619, 2]
 // Exports: default
 
-// Module 16411 (ChannelContent)
-import Text from "Text" /* 4440 */;
-import LockIcon from "LockIcon" /* 4991 */;
-import WarningIcon from "WarningIcon" /* 8180 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16406 */;
-import _modDef16412 from "module_16412" /* 16412 */;
+// Module 16475 (ChannelContent)
+import Text from "Text" /* 4441 */;
+import LockIcon from "LockIcon" /* 4996 */;
+import WarningIcon from "WarningIcon" /* 8661 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16470 */;
+import _modDef16476 from "module_16476" /* 16476 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10017 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4654 */;
+import { SUBTITLE_OPACITY_NORMAL } from "hairlineWidth" /* 10121 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4655 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -26,7 +26,7 @@ function ChannelContent(arg0) {
   let tmp9Result = null != channel;
   if (tmp9Result) {
     if (!locked) {
-      locked = tmp2(4962)(channel);
+      locked = tmp2(4964)(channel);
     }
     tmp9Result = locked;
   }
@@ -60,7 +60,7 @@ function ChannelContent(arg0) {
   }
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
-  const items1 = [closure_7(_modDef16412, obj3), , ];
+  const items1 = [closure_7(_modDef16476, obj3), , ];
   tmp9Result = null;
   if (null != channelCategoryName) {
     const obj4 = { variant: "text-xs/bold", color: "text-muted", style: null, children: null };
@@ -102,7 +102,7 @@ function ChannelContent(arg0) {
     if (isSubscriptionGated) {
       const obj9 = { locked: null, isInMainTabsExperiment: true };
       obj9[0] = needSubscriptionToAccess;
-      isSubscriptionGated = tmp9(tmp2(15554), obj9);
+      isSubscriptionGated = tmp9(tmp2(15619), obj9);
     }
     items3[2] = isSubscriptionGated;
     obj5[1] = items3;

@@ -1,13 +1,13 @@
-// Module ID: 16010
-// Function ID: 16011
+// Module ID: 16075
+// Function ID: 16076
 // Name: MembersPruneActionSheetContent
-// Dependencies: [32, 19, 16011, 1910, 4089, 1922, 21, 709, 16012, 5936, 5568, 1236, 8203, 8202, 4440, 4879, 4411, 589, 6058, 2]
+// Dependencies: [32, 19, 16076, 1910, 4089, 1922, 21, 709, 16077, 5941, 5573, 1236, 7625, 7626, 4441, 4880, 4412, 589, 6064, 2]
 // Exports: default
 
-// Module 16010 (MembersPruneActionSheetContent)
+// Module 16075 (MembersPruneActionSheetContent)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import CACHE_TTL_MS from "CACHE_TTL_MS" /* 16011 */;
+import CACHE_TTL_MS from "CACHE_TTL_MS" /* 16076 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
 import closure_9 from "getUncachedChannelPermissions" /* 4089 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;

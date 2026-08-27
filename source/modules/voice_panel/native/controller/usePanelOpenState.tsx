@@ -1,14 +1,14 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 16585
+// Function ID: 16586
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 4680, 11914, 676, 4184, 1231, 11127, 4271, 4284, 11120, 10754, 2]
+// Dependencies: [32, 19, 4681, 11757, 676, 4185, 1231, 12241, 4272, 4285, 12234, 9383, 2]
 // Exports: default
 
-// Module 16519 (usePanelOpenState)
+// Module 16585 (usePanelOpenState)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "withEqualityFn" /* 4680 */;
-import { VoicePanelModes } from "VoicePanelModes" /* 11914 */;
+import closure_5 from "withEqualityFn" /* 4681 */;
+import { VoicePanelModes } from "VoicePanelModes" /* 11757 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -26,7 +26,7 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
     const state = first.getState();
     return state.closeChannel(closure_0);
   }
-  let obj = _require(4184);
+  let obj = _require(4185);
   const fn = function f() {
     return { connected: connected.get() };
   };
@@ -50,7 +50,7 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       return;
     }
   }
-  obj = { runOnJS: _require(4184).runOnJS, doCloseChannel };
+  obj = { runOnJS: _require(4185).runOnJS, doCloseChannel };
   O.__closure = obj;
   O.__workletHash = 9166012598595;
   O.__initData = closure_10;
@@ -87,12 +87,12 @@ export default function usePanelOpenState(arg0, arg1, arg2, connected) {
       ComponentDispatch2.unsubscribe(closure_2_7.VOICE_PANEL_CLOSE, componentActionClose);
     };
   }, items);
-  const tmp3 = callback(doCloseChannel.useState(() => callback2(11127).getHistory().location.pathname), 2);
+  const tmp3 = callback(doCloseChannel.useState(() => callback2(12241).getHistory().location.pathname), 2);
   const first = tmp3[0];
   closure_6 = tmp3[1];
   const items1 = [arg0, first];
   const effect1 = doCloseChannel.useEffect(() => {
-    closure_0 = callback2(11127).addRouteChangeListener((pathname) => {
+    closure_0 = callback2(12241).addRouteChangeListener((pathname) => {
       if (closure_5 !== pathname.pathname) {
         callback2(tmp);
         let obj = callback(closure_1_2[8]);

@@ -1,10 +1,10 @@
-// Module ID: 7834
-// Function ID: 7835
+// Module ID: 8834
+// Function ID: 8835
 // Name: getIllustrationSource
 // Dependencies: [4172, 2]
 // Exports: getIllustrationSource, useIllustrationSource
 
-// Module 7834 (getIllustrationSource)
+// Module 8834 (getIllustrationSource)
 import set from "set" /* 2 */;
 import ManaContext from "ManaContext" /* 4172 */;
 

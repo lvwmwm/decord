@@ -1,10 +1,10 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15055
+// Function ID: 15056
 // Name: onServerTrendingNotificationSettingsChanged
 // Dependencies: [4101, 676, 4134, 698, 2]
 // Exports: onServerTrendingNotificationSettingsChanged
 
-// Module 14991 (onServerTrendingNotificationSettingsChanged)
+// Module 15055 (onServerTrendingNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

@@ -1,13 +1,13 @@
-// Module ID: 8881
-// Function ID: 8882
+// Module ID: 8909
+// Function ID: 8910
 // Name: HeaderButton
-// Dependencies: [19, 21, 4884, 4440, 4444, 4880, 2]
+// Dependencies: [19, 21, 4885, 4441, 4445, 4881, 2]
 
-// Module 8881 (HeaderButton)
+// Module 8909 (HeaderButton)
 import noopAll from "noop" /* 19 */;
-import CollapsingText from "CollapsingText" /* 4880 */;
+import CollapsingText from "CollapsingText" /* 4881 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 class HeaderButton {

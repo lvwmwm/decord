@@ -1,10 +1,10 @@
-// Module ID: 10722
-// Function ID: 10723
+// Module ID: 9272
+// Function ID: 9273
 // Name: EXAMPLE_DOMAIN
 // Dependencies: [2]
 // Exports: getDnsName, getHttpName
 
-// Module 10722 (EXAMPLE_DOMAIN)
+// Module 9272 (EXAMPLE_DOMAIN)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/connections/DomainVerifyUtils.tsx");

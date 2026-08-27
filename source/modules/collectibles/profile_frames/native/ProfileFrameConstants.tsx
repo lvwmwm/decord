@@ -1,11 +1,11 @@
-// Module ID: 9033
-// Function ID: 9034
+// Module ID: 8481
+// Function ID: 8482
 // Name: PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO
-// Dependencies: [9018, 2]
+// Dependencies: [8471, 2]
 
-// Module 9033 (PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO)
+// Module 8481 (PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO)
 import set from "set" /* 2 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 9018 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8471 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrameConstants.tsx");
 

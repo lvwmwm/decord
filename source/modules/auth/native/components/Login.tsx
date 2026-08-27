@@ -1,23 +1,23 @@
-// Module ID: 8695
-// Function ID: 8696
+// Module ID: 7648
+// Function ID: 7649
 // Name: LinkButton
-// Dependencies: [5, 32, 19, 17, 8696, 1218, 676, 21, 4444, 5015, 4440, 4809, 1236, 500, 5039, 8697, 1500, 589, 1503, 5999, 8698, 4810, 8699, 8700, 8701, 4342, 8702, 8706, 8707, 8709, 8703, 4879, 8710, 1625, 8049, 8712, 8002, 8718, 8720, 8722, 4877, 8729, 8694, 2]
+// Dependencies: [5, 32, 19, 17, 7649, 1218, 676, 21, 4445, 5020, 4441, 4810, 1236, 500, 5044, 7650, 1500, 589, 1503, 6004, 7652, 4811, 7653, 7654, 7655, 4343, 7656, 7660, 7661, 7663, 7657, 4880, 7664, 1625, 7666, 7668, 7638, 7674, 7676, 7678, 4878, 7685, 7647, 2]
 // Exports: default
 
-// Module 8695 (LinkButton)
+// Module 7648 (LinkButton)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import _modDef4809 from "module_4809" /* 4809 */;
-import PressableBase from "PressableBase" /* 5015 */;
+import Text from "Text" /* 4441 */;
+import _modDef4810 from "module_4810" /* 4810 */;
+import PressableBase from "PressableBase" /* 5020 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleSetLocationMetadata" /* 8696 */;
+import closure_7 from "handleSetLocationMetadata" /* 7649 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
 import { AuthStates } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 class LinkButton {
@@ -38,7 +38,7 @@ class LinkButton {
   }
 }
 function handlePressPasswordManagerHint() {
-  let obj = _modDef4809;
+  let obj = _modDef4810;
   obj = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t.lzsy7t);
@@ -164,7 +164,7 @@ export default function Login(isMultiAccount) {
             v0(true);
             v02({});
             c3 = 2;
-            let obj3 = callback(5999);
+            let obj3 = callback(6004);
             v0 = 3;
             v02 = 1;
             obj1 = { value: null, done: false };
@@ -178,7 +178,7 @@ export default function Login(isMultiAccount) {
         } else {
           if (2 === tmp8) {
             c3 = 1;
-            let obj2 = closure_1_0(8700);
+            let obj2 = closure_1_0(7654);
             callback = obj2.getAuthenticationErrorsFromV6OrEarlierAPIError(dependencyMap);
             callback2(callback);
             c3 = 0;
@@ -197,9 +197,9 @@ export default function Login(isMultiAccount) {
           } else {
             closure_0 = arg1;
             if (false !== closure_0) {
-              if (closure_0 === closure_1_0(8698).PasswordResetMethods.ONE_TIME_LOGIN) {
-                obj = closure_1_0(4810);
-                obj.openAlert("one-time-login-forgot-password-confirm", closure_1_10(callback(8699), {}));
+              if (closure_0 === closure_1_0(7652).PasswordResetMethods.ONE_TIME_LOGIN) {
+                obj = closure_1_0(4811);
+                obj.openAlert("one-time-login-forgot-password-confirm", closure_1_10(callback(7653), {}));
               } else {
                 obj3 = { title: null, body: null };
                 const intl = closure_1_0(1236).intl;
@@ -208,8 +208,8 @@ export default function Login(isMultiAccount) {
                 const obj4 = { email: null };
                 obj4[0] = closure_6;
                 obj3[1] = intl2.format(closure_1_0(1236).t["6u5hQ9"], obj4);
-                callback(4809).show(obj3);
-                const obj8 = callback(4809);
+                callback(4810).show(obj3);
+                const obj8 = callback(4810);
               }
               c3 = 1;
             }

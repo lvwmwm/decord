@@ -1,10 +1,10 @@
-// Module ID: 12556
-// Function ID: 12557
+// Module ID: 9309
+// Function ID: 9310
 // Name: isOnPlayStation
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 12556 (isOnPlayStation)
+// Module 9309 (isOnPlayStation)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

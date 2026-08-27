@@ -1,17 +1,17 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 7996
+// Function ID: 7997
 // Name: createMessageFailedEmbed
-// Dependencies: [8260, 676, 8273, 8479, 1236, 8480, 5025, 2]
+// Dependencies: [7775, 676, 7788, 7997, 1236, 7998, 5030, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
-// Module 8478 (createMessageFailedEmbed)
+// Module 7996 (createMessageFailedEmbed)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Changeset from "Changeset" /* 8260 */;
-import frozen from "frozen" /* 8273 */;
-import registerAssetDefault from "registerAsset" /* 8479 */;
-import registerAssetDefault2 from "registerAsset" /* 8480 */;
+import Changeset from "Changeset" /* 7775 */;
+import frozen from "frozen" /* 7788 */;
+import registerAssetDefault from "registerAsset" /* 7997 */;
+import registerAssetDefault2 from "registerAsset" /* 7998 */;
 
 const MessageFailureState = Changeset.MessageFailureState;
 const MessageEmbedTypes = ME.MessageEmbedTypes;
@@ -41,8 +41,8 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       let str = "";
       if (0 !== uploaderFile.currentSize) {
         const _HermesInternal = HermesInternal;
-        str = " (" + tmp6(5025).sizeString(uploaderFile.currentSize) + ")";
-        const tmp6Result = tmp6(5025);
+        str = " (" + tmp6(5030).sizeString(uploaderFile.currentSize) + ")";
+        const tmp6Result = tmp6(5030);
       }
       obj[3] = "" + str;
       obj[4] = colors.embedBodyTextColor;

@@ -1,13 +1,13 @@
-// Module ID: 12850
-// Function ID: 12851
+// Module ID: 12869
+// Function ID: 12870
 // Name: ForLaterNitroUpsellBar
-// Dependencies: [19, 1924, 8595, 21, 5900, 11343, 11657, 4107, 1236, 2]
+// Dependencies: [19, 1924, 7529, 21, 5905, 11205, 11721, 4107, 1236, 2]
 // Exports: default
 
-// Module 12850 (ForLaterNitroUpsellBar)
+// Module 12869 (ForLaterNitroUpsellBar)
 import closure_3 from "noop" /* 19 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 8595 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7529 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -18,7 +18,7 @@ export default function ForLaterNitroUpsellBar(isReminder) {
   isReminder = isReminder.isReminder;
   const isAtLimit = isReminder.isAtLimit;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5900)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5905)().analyticsLocations;
   const items = [isReminder, analyticsLocations];
   const callback = React.useCallback(() => analyticsLocations(closure_1_2[5])(isReminder, analyticsLocations), items);
   let obj = isReminder(4107);

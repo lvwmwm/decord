@@ -1,9 +1,9 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 8566
+// Function ID: 8567
 // Name: SHARE_PREPARING_MODAL_KEY
 // Dependencies: [2]
 
-// Module 9141 (SHARE_PREPARING_MODAL_KEY)
+// Module 8566 (SHARE_PREPARING_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/share/native/SharePreparingModalConstants.tsx");

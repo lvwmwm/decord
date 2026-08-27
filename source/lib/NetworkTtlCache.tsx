@@ -1,9 +1,9 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13293
+// Function ID: 13294
 // Name: NetworkTtlCacheStatus
 // Dependencies: [2]
 
-// Module 13266 (NetworkTtlCacheStatus)
+// Module 13293 (NetworkTtlCacheStatus)
 import set from "set" /* 2 */;
 
 let closure_0 = { IDLE: "idle", LOADING: "loading", SUCCESS: "success", ERROR: "error" };

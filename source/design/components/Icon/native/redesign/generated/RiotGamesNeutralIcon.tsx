@@ -1,14 +1,14 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 8753
+// Function ID: 8754
 // Name: RiotGamesNeutralIcon
-// Dependencies: [19, 21, 712, 4164, 9516, 2]
+// Dependencies: [19, 21, 712, 4164, 8754, 2]
 // Exports: RiotGamesNeutralIcon
 
-// Module 9515 (RiotGamesNeutralIcon)
+// Module 8753 (RiotGamesNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 9516 */;
+import registerAsset from "registerAsset" /* 8754 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

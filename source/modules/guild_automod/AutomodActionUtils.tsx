@@ -1,12 +1,12 @@
-// Module ID: 16975
-// Function ID: 16976
+// Module ID: 17041
+// Function ID: 17042
 // Name: getRuleDefaultActionsFromConfig
-// Dependencies: [11495, 2]
+// Dependencies: [11349, 2]
 // Exports: getDefaultActions, getRuleDefaultActionsFromConfig, isActionBlockMessage, isActionFlagToChannel, isActionQuarantineUser, isActionUserCommunicationDisabled
 
-// Module 16975 (getRuleDefaultActionsFromConfig)
+// Module 17041 (getRuleDefaultActionsFromConfig)
 import set from "set" /* 2 */;
-import AutomodEventType from "AutomodEventType" /* 11495 */;
+import AutomodEventType from "AutomodEventType" /* 11349 */;
 
 let AutomodActionType = AutomodEventType.AutomodActionType;
 const result = set.fileFinishedImporting("modules/guild_automod/AutomodActionUtils.tsx");

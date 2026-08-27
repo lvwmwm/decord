@@ -1,21 +1,21 @@
-// Module ID: 12773
-// Function ID: 12774
+// Module ID: 12503
+// Function ID: 12504
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4460, 1391, 4098, 1981, 5948, 676, 4465, 10501, 21, 589, 12774, 12780, 12543, 9003, 5900, 5920, 8529, 9026, 9027, 12781, 12782, 9450, 9451, 5927, 9565, 503, 8998, 1236, 4457, 4411, 4675, 12787, 2009, 9459, 10503, 7996, 10502, 8238, 500, 12251, 698, 9458, 4679, 4134, 5928, 4288, 4161, 5934, 12545, 8813, 12786, 7963, 8819, 712, 12788, 2]
+// Dependencies: [32, 19, 17, 4461, 1391, 4098, 1981, 5953, 676, 4466, 8978, 21, 589, 12504, 12510, 8979, 8490, 5905, 5925, 8046, 8825, 8826, 12511, 12512, 9785, 9786, 5932, 8815, 503, 8819, 1236, 4458, 4412, 4676, 12517, 2009, 8980, 8989, 8606, 8990, 8681, 500, 8992, 698, 9791, 4680, 4134, 5933, 4289, 4161, 5939, 9006, 8717, 12516, 7938, 8723, 712, 12518, 2]
 // Exports: default
 
-// Module 12773 (UserProfileOverflowMenu)
+// Module 12503 (UserProfileOverflowMenu)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4460 */;
+import closure_6 from "getParticipants" /* 4461 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "markAllUserIdListsStale" /* 4098 */;
 import closure_9 from "handleConnectionOpen" /* 1981 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5948 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5953 */;
 import ME from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4465 */;
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 10501 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4466 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8978 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

@@ -1,15 +1,15 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 11921
+// Function ID: 11922
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 7293, 12076, 676, 12077, 9947, 4342, 8967, 8530, 698, 12079, 4134, 8238, 2]
+// Dependencies: [5, 32, 19, 7299, 11922, 676, 11923, 10616, 4343, 9109, 8047, 698, 11925, 4134, 8681, 2]
 // Exports: useMessageRequestActions
 
-// Module 12075 (useMessageRequestActions)
+// Module 11921 (useMessageRequestActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "createUserWidgetFromServer" /* 7293 */;
-import MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL" /* 12076 */;
+import closure_6 from "createUserWidgetFromServer" /* 7299 */;
+import MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL" /* 11922 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;

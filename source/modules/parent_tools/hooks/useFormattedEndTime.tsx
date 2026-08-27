@@ -1,10 +1,10 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16786
+// Function ID: 16787
 // Name: useFormattedEndTime
 // Dependencies: [1922, 1236, 589, 2]
 // Exports: default
 
-// Module 16720 (useFormattedEndTime)
+// Module 16786 (useFormattedEndTime)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 

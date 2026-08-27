@@ -1,18 +1,18 @@
-// Module ID: 12012
-// Function ID: 12013
+// Module ID: 11856
+// Function ID: 11857
 // Name: SEARCH_BAR_HEIGHT
-// Dependencies: [19, 17, 21, 4444, 712, 6181, 4440, 1236, 2]
+// Dependencies: [19, 17, 21, 4445, 712, 6187, 4441, 1236, 2]
 // Exports: SearchButtonContent
 
-// Module 12012 (SEARCH_BAR_HEIGHT)
+// Module 11856 (SEARCH_BAR_HEIGHT)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4440 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6181 */;
+import Text from "Text" /* 4441 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 6187 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 noopAll;

@@ -1,12 +1,12 @@
-// Module ID: 8448
-// Function ID: 8449
+// Module ID: 7963
+// Function ID: 7964
 // Name: transformSearchableSelectOptions
-// Dependencies: [1391, 1985, 1910, 1922, 676, 4697, 1370, 1438, 5925, 8449, 688, 712, 8450, 4932, 2]
+// Dependencies: [1391, 1985, 1910, 1922, 676, 4698, 1370, 1438, 5930, 7964, 688, 712, 7965, 4933, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 8448 (transformSearchableSelectOptions)
-import getChannelIcon from "getChannelIcon" /* 4932 */;
-import registerAssetDefault from "registerAsset" /* 8450 */;
+// Module 7963 (transformSearchableSelectOptions)
+import getChannelIcon from "getChannelIcon" /* 4933 */;
+import registerAssetDefault from "registerAsset" /* 7965 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;

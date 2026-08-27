@@ -1,20 +1,20 @@
-// Module ID: 12814
-// Function ID: 12815
+// Module ID: 12833
+// Function ID: 12834
 // Name: ButtonBadge
-// Dependencies: [19, 21, 4444, 712, 500, 1297, 1367, 4886, 5015, 4440, 8613, 2]
+// Dependencies: [19, 21, 4445, 712, 500, 1297, 1367, 4887, 5020, 4441, 7546, 2]
 // Exports: default
 
-// Module 12814 (ButtonBadge)
+// Module 12833 (ButtonBadge)
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import getFontScale from "getFontScale" /* 4886 */;
-import PressableBase from "PressableBase" /* 5015 */;
-import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 8613 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 8613 */;
+import getFontScale from "getFontScale" /* 4887 */;
+import PressableBase from "PressableBase" /* 5020 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7546 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7546 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4444 */;
+import createCacheKey from "createCacheKey" /* 4445 */;
 
 require = arg1;
 class ButtonBadge {
@@ -90,7 +90,7 @@ export default function IconActionButton(variant) {
   if (str === undefined) {
     str = "filled";
   }
-  ({ buttonText, badge, badgePosition, color, accessibilityLabel, style } = variant);
+  ({ buttonText, badge, badgePosition, color, buttonTextColor, accessibilityLabel, style } = variant);
   if (badgePosition === undefined) {
     badgePosition = "left";
   }
@@ -122,10 +122,11 @@ export default function IconActionButton(variant) {
   obj[6] = items;
   const items1 = [callback(closure_7, { IconComponent, color, source, isRefreshEnabled: tmp2 }), , , ];
   if (tmp11Result) {
-    obj = { variant: "text-sm/bold", style: null, children: null };
-    obj[1] = tmp3.actionText;
-    obj[2] = buttonText;
-    tmp11Result = tmp11(tmp4(4440).Text, obj);
+    obj = { variant: "text-sm/bold", color: null, style: null, children: null };
+    obj[1] = buttonTextColor;
+    obj[2] = tmp3.actionText;
+    obj[3] = buttonText;
+    tmp11Result = tmp11(tmp4(4441).Text, obj);
   }
   items1[1] = tmp11Result;
   tmp11Result = null;

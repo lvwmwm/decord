@@ -1,10 +1,10 @@
-// Module ID: 9026
-// Function ID: 9027
+// Module ID: 8825
+// Function ID: 8826
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useIsShopThisLookMobileEnabled
 
-// Module 9026 (apexExperiment)
+// Module 8825 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

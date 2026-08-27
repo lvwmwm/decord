@@ -1,13 +1,13 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 9568
+// Function ID: 9569
 // Name: useIsInvitedToSpeak
-// Dependencies: [1218, 1981, 589, 4632, 2]
+// Dependencies: [1218, 1981, 589, 4633, 2]
 // Exports: default
 
-// Module 10924 (useIsInvitedToSpeak)
+// Module 9568 (useIsInvitedToSpeak)
 import initialize from "initialize" /* 589 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4632 */;
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4632 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4633 */;
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4633 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
 

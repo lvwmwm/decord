@@ -1,12 +1,12 @@
-// Module ID: 14030
-// Function ID: 14031
-// Dependencies: [4346, 676, 530, 698, 2]
+// Module ID: 14057
+// Function ID: 14058
+// Dependencies: [4347, 676, 530, 698, 2]
 
-// Module 14030
+// Module 14057
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4346 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4347 */;
 import ME from "ME" /* 676 */;
 
 const RPC_LOCAL_SCOPE = RPC_SCOPE_CONFIG.RPC_LOCAL_SCOPE;

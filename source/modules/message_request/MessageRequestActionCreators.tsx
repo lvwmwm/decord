@@ -1,13 +1,13 @@
-// Module ID: 9947
-// Function ID: 9948
+// Module ID: 10616
+// Function ID: 10617
 // Name: _acceptMessageRequest
-// Dependencies: [5, 676, 530, 9948, 709, 5999, 2]
+// Dependencies: [5, 676, 530, 10617, 709, 6004, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 9947 (_acceptMessageRequest)
+// Module 10616 (_acceptMessageRequest)
 import sendRequest from "sendRequest" /* 530 */;
-import handleLogoutDefault from "handleLogout" /* 5999 */;
-import MessageRequestConsentStatusTypes from "MessageRequestConsentStatusTypes" /* 9948 */;
+import handleLogoutDefault from "handleLogout" /* 6004 */;
+import MessageRequestConsentStatusTypes from "MessageRequestConsentStatusTypes" /* 10617 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 

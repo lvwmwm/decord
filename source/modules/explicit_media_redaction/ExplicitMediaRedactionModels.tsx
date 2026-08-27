@@ -1,9 +1,9 @@
-// Module ID: 6087
-// Function ID: 6088
+// Module ID: 6095
+// Function ID: 6096
 // Name: ContentHarmTypeChannel
 // Dependencies: [2]
 
-// Module 6087 (ContentHarmTypeChannel)
+// Module 6095 (ContentHarmTypeChannel)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionModels.tsx");

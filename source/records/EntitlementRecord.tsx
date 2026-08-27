@@ -1,13 +1,13 @@
-// Module ID: 4486
-// Function ID: 4487
+// Module ID: 4487
+// Function ID: 4488
 // Name: createFromServer
-// Dependencies: [1931, 4487, 1930, 676, 4107, 4491, 2]
+// Dependencies: [1931, 4488, 1930, 676, 4107, 4492, 2]
 
-// Module 4486 (createFromServer)
+// Module 4487 (createFromServer)
 import toJSDefault from "toJS" /* 1931 */;
 import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
-import set from "set" /* 4491 */;
-import closure_3 from "createFromServer" /* 4487 */;
+import set from "set" /* 4492 */;
+import closure_3 from "createFromServer" /* 4488 */;
 import closure_4 from "createdAt" /* 1930 */;
 import { EntitlementTypes } from "ME" /* 676 */;
 

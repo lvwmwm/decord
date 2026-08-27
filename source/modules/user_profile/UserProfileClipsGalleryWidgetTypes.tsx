@@ -1,23 +1,23 @@
-// Module ID: 7301
-// Function ID: 7302
+// Module ID: 7307
+// Function ID: 7308
 // Name: convertClip
-// Dependencies: [7294, 659, 2]
+// Dependencies: [7300, 659, 2]
 
-// Module 7301 (convertClip)
+// Module 7307 (convertClip)
 import set from "set" /* 2 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
-import WidgetType from "WidgetType" /* 7294 */;
+import WidgetType from "WidgetType" /* 7300 */;
 
 function convertClip(gameId) {
   let obj = { game_id: gameId.gameId, title: gameId.title, tags: gameId.tags };
   if ("saved" === gameId.status) {
     obj = {};
     const merged = Object.assign(obj);
-    ({ id: obj3.id, fileId: obj3.file_id } = gameId);
+    ({ id: obj3.id, fileId: obj3.file_id, localClipId: obj3.local_clip_id } = gameId);
   } else {
     obj = {};
     const merged1 = Object.assign(obj);
-    obj.upload_filename = gameId.uploadFilename;
+    ({ uploadFilename: obj2.upload_filename, localClipId: obj2.local_clip_id } = gameId);
   }
   return obj;
 }

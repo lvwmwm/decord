@@ -1,14 +1,14 @@
-// Module ID: 7902
-// Function ID: 7903
+// Module ID: 9171
+// Function ID: 9172
 // Name: AppsIcon
-// Dependencies: [19, 21, 712, 4164, 7903, 2]
+// Dependencies: [19, 21, 712, 4164, 7980, 2]
 // Exports: AppsIcon
 
-// Module 7902 (AppsIcon)
+// Module 9171 (AppsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 7903 */;
+import registerAsset from "registerAsset" /* 7980 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

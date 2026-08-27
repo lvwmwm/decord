@@ -1,14 +1,14 @@
-// Module ID: 14845
-// Function ID: 14846
+// Module ID: 14872
+// Function ID: 14873
 // Name: AccessibilityIcon
-// Dependencies: [19, 21, 712, 4164, 14846, 2]
+// Dependencies: [19, 21, 712, 4164, 14873, 2]
 // Exports: AccessibilityIcon
 
-// Module 14845 (AccessibilityIcon)
+// Module 14872 (AccessibilityIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14846 */;
+import registerAsset from "registerAsset" /* 14873 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

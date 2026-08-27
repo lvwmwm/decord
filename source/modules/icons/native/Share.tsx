@@ -1,10 +1,10 @@
-// Module ID: 9306
-// Function ID: 9307
-// Dependencies: [500, 9307, 9308, 2]
+// Module ID: 9868
+// Function ID: 9869
+// Dependencies: [500, 9869, 9870, 2]
 
-// Module 9306
-import registerAssetDefault from "registerAsset" /* 9307 */;
-import registerAssetDefault2 from "registerAsset" /* 9308 */;
+// Module 9868
+import registerAssetDefault from "registerAsset" /* 9869 */;
+import registerAssetDefault2 from "registerAsset" /* 9870 */;
 import set from "set" /* 500 */;
 
 if (set.isIOS()) {

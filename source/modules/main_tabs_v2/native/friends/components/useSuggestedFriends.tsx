@@ -1,14 +1,14 @@
-// Module ID: 15484
-// Function ID: 15485
+// Module ID: 15549
+// Function ID: 15550
 // Name: useSuggestedFriends
-// Dependencies: [32, 19, 7334, 12327, 647, 12, 4288, 2]
+// Dependencies: [32, 19, 7340, 12151, 647, 12, 4289, 2]
 // Exports: default
 
-// Module 15484 (useSuggestedFriends)
+// Module 15549 (useSuggestedFriends)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "initialize" /* 7334 */;
-import { SuggestedFriendSource } from "SuggestedFriendSource" /* 12327 */;
+import closure_5 from "initialize" /* 7340 */;
+import { SuggestedFriendSource } from "SuggestedFriendSource" /* 12151 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/friends/components/useSuggestedFriends.tsx");
@@ -37,9 +37,9 @@ export default function useSuggestedFriends(arg0) {
       });
       let obj = first(flag[5]);
       return first(flag[5]).unionBy(found, mapped, (user) => user.user.id).sort((user, user2) => {
-        const name = callback(4288).getName(user.user);
-        const obj = callback(4288);
-        return name.localeCompare(callback(4288).getName(user2.user));
+        const name = callback(4289).getName(user.user);
+        const obj = callback(4289);
+        return name.localeCompare(callback(4289).getName(user2.user));
       });
     } else {
       return [];
