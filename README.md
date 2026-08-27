@@ -2,7 +2,7 @@
     <h1> Decord</h1>
 </div>
 
-A repo that tracks the [Discord](https://github.com/discord) Android app's code changes!
+A repo that tracks the [Discord](https://github.com/discord) Android app's code changes! Forked from [`nexpid/Themelings`](https://github.com/nexpid/Themelings).
 
 For a closer look at what's scraped, take a look at the [data](https://github.com/lvwmwm/decord/tree/data) branch
 
