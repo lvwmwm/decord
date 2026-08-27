@@ -51,13 +51,22 @@ export default async function code(progress: Progress, _code: string[]) {
 
 	const rawFiles = await scanDir(modulesPath, modulesPath);
 
+	function classifyUnmapped(relativePath: string): string {
+		if (/^module_\d+\.js$/.test(relativePath)) return "__polyfill";
+		const rest = relativePath.replace(/^\d+_/, "");
+		if (rest.startsWith("_")) return "__helpers";
+		return "__vendor";
+	}
+
 	function resolveDest(relativePath: string): string {
 		const id = extractModuleId(relativePath);
 		if (id !== undefined) {
 			const sourcePath = modulePaths.get(id);
 			if (sourcePath) return sanitizePath(sourcePath);
 			const bucket = Math.floor(id / 1000);
-			return `__unmapped/${String(bucket).padStart(2, "0")}xxx/${relativePath}`;
+			const bucketStr = `${String(bucket).padStart(2, "0")}xxx`;
+			const cat = classifyUnmapped(relativePath);
+			return `${cat}/${bucketStr}/${relativePath}`;
 		}
 		return `__unmapped/${relativePath}`;
 	}
