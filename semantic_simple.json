@@ -1,0 +1,2282 @@
+{
+    "ACTIVITY_TIMEBAR_PROGRESS_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ANDROID_NAVIGATION_BAR_BACKGROUND": {
+        "dark": "#0c0c0d80",
+        "light": "#f9f9f980",
+        "midnight": "#0f101480",
+        "darker": "#0f101480"
+    },
+    "ANDROID_NAVIGATION_SCRIM_BACKGROUND": {
+        "dark": "#0c0c0d80",
+        "light": "#f9f9f980",
+        "midnight": "#0f101480",
+        "darker": "#0f101480"
+    },
+    "APP_FRAME_BORDER": {
+        "dark": "#2b2d31",
+        "light": "#f2f3f5",
+        "midnight": "#6c6f7c3d",
+        "darker": "#1c1d23"
+    },
+    "APP_MESSAGE_EMBED_SECONDARY_TEXT": {
+        "dark": "#ffffffb3",
+        "light": "#ffffffb3",
+        "midnight": "#ffffffb3",
+        "darker": "#ffffffb3"
+    },
+    "BACKGROUND_ACCENT": {
+        "dark": "#41434a",
+        "light": "#6d6f78",
+        "midnight": "#2c2d35",
+        "darker": "#383a43"
+    },
+    "BACKGROUND_APP_LAUNCHER_CARD_DEFAULT": {
+        "dark": "#111214",
+        "light": "#ffffff",
+        "midnight": "#131318",
+        "darker": "#26272f"
+    },
+    "BACKGROUND_APP_LAUNCHER_ROW_DEFAULT": {
+        "dark": "#313338",
+        "light": "#ffffff",
+        "midnight": "#131318",
+        "darker": "#26272f"
+    },
+    "BACKGROUND_BASE_LOW": {
+        "dark": "#313338",
+        "light": "#ffffff",
+        "midnight": "#000000",
+        "darker": "#1c1d23"
+    },
+    "BACKGROUND_BASE_LOWER": {
+        "dark": "#2b2d31",
+        "light": "#f2f3f5",
+        "midnight": "#000000",
+        "darker": "#1c1d23"
+    },
+    "BACKGROUND_BASE_LOWEST": {
+        "dark": "#232428",
+        "light": "#ebedef",
+        "midnight": "#000000",
+        "darker": "#131318"
+    },
+    "BACKGROUND_BRAND": {
+        "dark": "#5865f2",
+        "light": "#5865f2",
+        "midnight": "#5865f2",
+        "darker": "#5865f2"
+    },
+    "BACKGROUND_CODE": {
+        "dark": "#5865f214",
+        "light": "#5865f20a",
+        "midnight": "#5865f214",
+        "darker": "#5865f214"
+    },
+    "BACKGROUND_FEEDBACK_CRITICAL": {
+        "dark": "#da373c",
+        "light": "#da373c",
+        "midnight": "#da373c",
+        "darker": "#da373c"
+    },
+    "BACKGROUND_FEEDBACK_INFO": {
+        "dark": "#0074e314",
+        "light": "#0074e314",
+        "midnight": "#0074e314",
+        "darker": "#0074e314"
+    },
+    "BACKGROUND_FEEDBACK_NOTIFICATION": {
+        "dark": "#f23f43",
+        "light": "#da373c",
+        "midnight": "#f23f43",
+        "darker": "#f23f43"
+    },
+    "BACKGROUND_FEEDBACK_POSITIVE": {
+        "dark": "#00854514",
+        "light": "#00854514",
+        "midnight": "#00854514",
+        "darker": "#00854514"
+    },
+    "BACKGROUND_FEEDBACK_WARNING": {
+        "dark": "#f0b2321a",
+        "light": "#af76151a",
+        "midnight": "#f0b2321a",
+        "darker": "#f0b2321a"
+    },
+    "BACKGROUND_MOD_MUTED": {
+        "dark": "#97979f14",
+        "light": "#97979f14",
+        "midnight": "#97979f14",
+        "darker": "#97979f14"
+    },
+    "BACKGROUND_MOD_NORMAL": {
+        "dark": "#4e505829",
+        "light": "#80848e29",
+        "midnight": "#6c6f7c33",
+        "darker": "#6c6f7c29"
+    },
+    "BACKGROUND_MOD_STRONG": {
+        "dark": "#4e50588a",
+        "light": "#80848e3d",
+        "midnight": "#6c6f7c2e",
+        "darker": "#6c6f7c3d"
+    },
+    "BACKGROUND_MOD_SUBTLE": {
+        "dark": "#4e50587a",
+        "light": "#80848e29",
+        "midnight": "#6c6f7c1f",
+        "darker": "#6c6f7c29"
+    },
+    "BACKGROUND_SCRIM": {
+        "dark": "#000000b3",
+        "light": "#0000008a",
+        "midnight": "#212229bf",
+        "darker": "#000000b3"
+    },
+    "BACKGROUND_SCRIM_LIGHTBOX": {
+        "dark": "#000000eb",
+        "light": "#000000eb",
+        "midnight": "#000000eb",
+        "darker": "#000000eb"
+    },
+    "BACKGROUND_SECONDARY_ALT": {
+        "dark": "#232428",
+        "light": "#ebedef",
+        "midnight": "#2c2d35",
+        "darker": "#383a43"
+    },
+    "BACKGROUND_SURFACE_HIGH": {
+        "dark": "#111214",
+        "light": "#ffffff",
+        "midnight": "#131318",
+        "darker": "#26272f"
+    },
+    "BACKGROUND_SURFACE_HIGHEST": {
+        "dark": "#111214",
+        "light": "#ffffff",
+        "midnight": "#212229",
+        "darker": "#2c2d35"
+    },
+    "BACKGROUND_TILE_GRADIENT_PINK_END": {
+        "dark": "#6600664d",
+        "light": "#fd99e94d",
+        "midnight": "#6600664d",
+        "darker": "#6600664d"
+    },
+    "BACKGROUND_TILE_GRADIENT_PINK_START": {
+        "dark": "#b3269c4d",
+        "light": "#fbe6ff4d",
+        "midnight": "#b3269c4d",
+        "darker": "#b3269c4d"
+    },
+    "BACKGROUND_VOICE_MUTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "BADGE_BACKGROUND_BRAND": {
+        "dark": "#5865f2",
+        "light": "#5865f2",
+        "midnight": "#5865f2",
+        "darker": "#5865f2"
+    },
+    "BADGE_BACKGROUND_DEFAULT": {
+        "dark": "#4e505829",
+        "light": "#80848e29",
+        "midnight": "#6c6f7c33",
+        "darker": "#6c6f7c29"
+    },
+    "BADGE_NOTIFICATION_BACKGROUND": {
+        "dark": "#f23f43",
+        "light": "#da373c",
+        "midnight": "#f23f43",
+        "darker": "#f23f43"
+    },
+    "BADGE_TEXT_BRAND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "BADGE_TEXT_DEFAULT": {
+        "dark": "#dbdee1",
+        "light": "#313338",
+        "midnight": "#dddee1",
+        "darker": "#c7c8ce"
+    },
+    "BG_SURFACE_RAISED": {
+        "dark": "#383a40",
+        "light": "#ffffff",
+        "midnight": "#131318",
+        "darker": "#26272f"
+    },
+    "BLACK": {
+        "dark": "#000000",
+        "light": "#000000",
+        "midnight": "#000000",
+        "darker": "#000000"
+    },
+    "BLUR_FALLBACK": {
+        "dark": "#1e1f22f5",
+        "light": "#41434af5",
+        "midnight": "#212229f5",
+        "darker": "#2c2d35f5"
+    },
+    "BLUR_FALLBACK_PRESSED": {
+        "dark": "#1a1b1ef5",
+        "light": "#383a40f5",
+        "midnight": "#1c1d23f5",
+        "darker": "#26272ff5"
+    },
+    "BORDER_FEEDBACK_CRITICAL": {
+        "dark": "#fa777b",
+        "light": "#a12829",
+        "midnight": "#fa777b",
+        "darker": "#fa777b"
+    },
+    "BORDER_FEEDBACK_INFO": {
+        "dark": "#2eb6ff",
+        "light": "#006be7",
+        "midnight": "#2eb6ff",
+        "darker": "#2eb6ff"
+    },
+    "BORDER_FEEDBACK_POSITIVE": {
+        "dark": "#2dc771",
+        "light": "#248045",
+        "midnight": "#2dc771",
+        "darker": "#2dc771"
+    },
+    "BORDER_FEEDBACK_WARNING": {
+        "dark": "#f0b232",
+        "light": "#9a650d",
+        "midnight": "#f0b232",
+        "darker": "#f0b232"
+    },
+    "BORDER_FOCUS": {
+        "dark": "#00aafc",
+        "light": "#0097f2",
+        "midnight": "#00aafc",
+        "darker": "#00aafc"
+    },
+    "BORDER_MUTED": {
+        "dark": "#ffffff08",
+        "light": "#0000000a",
+        "midnight": "#6c6f7c14",
+        "darker": "#6c6f7c0f"
+    },
+    "BORDER_NORMAL": {
+        "dark": "#97979f33",
+        "light": "#97979f66",
+        "midnight": "#97979f3d",
+        "darker": "#97979f33"
+    },
+    "BORDER_STRONG": {
+        "dark": "#ffffff29",
+        "light": "#00000029",
+        "midnight": "#6c6f7c3d",
+        "darker": "#6c6f7c38"
+    },
+    "BORDER_SUBTLE": {
+        "dark": "#ffffff14",
+        "light": "#00000014",
+        "midnight": "#6c6f7c24",
+        "darker": "#6c6f7c1f"
+    },
+    "BORDER_VOICE_MUTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "BUTTON_DANGER_BACKGROUND_DISABLED": {
+        "dark": "#da373c",
+        "light": "#da373c",
+        "midnight": "#da373c",
+        "darker": "#da373c"
+    },
+    "BUTTON_OUTLINE_BRAND_BACKGROUND_HOVER": {
+        "dark": "#5865f2",
+        "light": "#5865f2",
+        "midnight": "#5865f2",
+        "darker": "#5865f2"
+    },
+    "BUTTON_OUTLINE_BRAND_BORDER_ACTIVE": {
+        "dark": "#4752c4",
+        "light": "#4752c4",
+        "midnight": "#4752c4",
+        "darker": "#4752c4"
+    },
+    "BUTTON_OUTLINE_PRIMARY_TEXT": {
+        "dark": "#ffffff",
+        "light": "#000000",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CARD_BACKGROUND_DEFAULT": {
+        "dark": "#313338",
+        "light": "#ffffff",
+        "midnight": "#131318",
+        "darker": "#26272f"
+    },
+    "CARD_BORDER_DEFAULT": {
+        "dark": "#ffffff14",
+        "light": "#00000014",
+        "midnight": "#6c6f7c24",
+        "darker": "#6c6f7c1f"
+    },
+    "CARD_MUTED_BG": {
+        "dark": "#97979f14",
+        "light": "#97979f14",
+        "midnight": "#97979f14",
+        "darker": "#97979f14"
+    },
+    "CARD_MUTED_PRESSED_BG": {
+        "dark": "#4e50587a",
+        "light": "#80848e29",
+        "midnight": "#6c6f7c1f",
+        "darker": "#6c6f7c29"
+    },
+    "CARD_PRIMARY_PRESSED_BG": {
+        "dark": "#282a2e",
+        "light": "#ebedef",
+        "midnight": "#0c0c10",
+        "darker": "#212229"
+    },
+    "CARD_SECONDARY_BACKGROUND_ACTIVE": {
+        "dark": "#282a2e",
+        "light": "#ebedef",
+        "midnight": "#08080b",
+        "darker": "#18191f"
+    },
+    "CARD_SECONDARY_BACKGROUND_DEFAULT": {
+        "dark": "#2b2d31",
+        "light": "#ffffff",
+        "midnight": "#0c0c10",
+        "darker": "#212229"
+    },
+    "CARD_SECONDARY_BG": {
+        "dark": "#2b2d31",
+        "light": "#ffffff",
+        "midnight": "#0c0c10",
+        "darker": "#212229"
+    },
+    "CARD_SECONDARY_PRESSED_BG": {
+        "dark": "#282a2e",
+        "light": "#ebedef",
+        "midnight": "#08080b",
+        "darker": "#18191f"
+    },
+    "CHANNEL_BACKGROUND_DEFAULT": {
+        "dark": "#313338",
+        "light": "#ffffff",
+        "midnight": "#000000",
+        "darker": "#1c1d23"
+    },
+    "CHANNEL_ICON": {
+        "dark": "#80848e",
+        "light": "#6d6f78",
+        "midnight": "#818491",
+        "darker": "#818491"
+    },
+    "CHANNELS_DEFAULT": {
+        "dark": "#949ba4",
+        "light": "#5c5e66",
+        "midnight": "#9597a3",
+        "darker": "#9597a3"
+    },
+    "CHANNELTEXTAREA_BACKGROUND": {
+        "dark": "#383a40",
+        "light": "#ebedef",
+        "midnight": "#131318",
+        "darker": "#383a43"
+    },
+    "CHAT_BANNER_BG": {
+        "dark": "#2b2d31",
+        "light": "#f2f3f5",
+        "midnight": "#000000",
+        "darker": "#1c1d23"
+    },
+    "CHAT_BORDER": {
+        "dark": "#1e1f22",
+        "light": "#e3e5e8",
+        "midnight": "#1c1d23",
+        "darker": "#1c1d23"
+    },
+    "CHAT_INPUT_ACTION_BUTTON_BACKGROUND": {
+        "dark": "#232428",
+        "light": "#00000014",
+        "midnight": "#bcc1fa1a",
+        "darker": "#6c6f7c1f"
+    },
+    "CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT": {
+        "dark": "#dbdee1",
+        "light": "#313338",
+        "midnight": "#dddee1",
+        "darker": "#c7c8ce"
+    },
+    "CHAT_INPUT_ACTION_ICON_ACTIVE_TINT": {
+        "dark": "#949cf7",
+        "light": "#505cdc",
+        "midnight": "#7984f5",
+        "darker": "#949cf7"
+    },
+    "CHAT_INPUT_BACKGROUND": {
+        "dark": "#1e1f22",
+        "light": "#00000014",
+        "midnight": "#bcc1fa1a",
+        "darker": "#6c6f7c1f"
+    },
+    "CHAT_INPUT_ICON_DEFAULT_TINT": {
+        "dark": "#b5bac1",
+        "light": "#4e5058",
+        "midnight": "#c7c8ce",
+        "darker": "#c7c8ce"
+    },
+    "CHAT_INPUT_SEND_BUTTON_ACTIVE_BACKGROUND": {
+        "dark": "#5865f2",
+        "light": "#5865f2",
+        "midnight": "#5865f2",
+        "darker": "#5865f2"
+    },
+    "CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CHECKBOX_BACKGROUND_DEFAULT": {
+        "dark": "#00000000",
+        "light": "#00000000",
+        "midnight": "#00000000",
+        "darker": "#00000000"
+    },
+    "CHECKBOX_BACKGROUND_SELECTED_DEFAULT": {
+        "dark": "#5865f2",
+        "light": "#5865f2",
+        "midnight": "#5865f2",
+        "darker": "#5865f2"
+    },
+    "CHECKBOX_BORDER_DEFAULT": {
+        "dark": "#b5bac1",
+        "light": "#4e5058",
+        "midnight": "#c7c8ce",
+        "darker": "#c7c8ce"
+    },
+    "CHECKBOX_BORDER_SELECTED_DEFAULT": {
+        "dark": "#5865f2",
+        "light": "#5865f2",
+        "midnight": "#5865f2",
+        "darker": "#5865f2"
+    },
+    "CHECKBOX_ICON_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTENT_INVENTORY_OVERLAY_TEXT_PRIMARY": {
+        "dark": "#ffffffd9",
+        "light": "#ffffffd9",
+        "midnight": "#ffffffd9",
+        "darker": "#ffffffd9"
+    },
+    "CONTENT_INVENTORY_OVERLAY_TEXT_SECONDARY": {
+        "dark": "#ffffffb3",
+        "light": "#ffffffb3",
+        "midnight": "#ffffffb3",
+        "darker": "#ffffffb3"
+    },
+    "CONTEXT_MENU_BACKDROP_BACKGROUND": {
+        "dark": "#000000b3",
+        "light": "#0000008a",
+        "midnight": "#000000b3",
+        "darker": "#000000b3"
+    },
+    "CONTROL_BRAND_FOREGROUND": {
+        "dark": "#949cf7",
+        "light": "#5865f2",
+        "midnight": "#949cf7",
+        "darker": "#949cf7"
+    },
+    "CONTROL_BRAND_FOREGROUND_NEW": {
+        "dark": "#949cf7",
+        "light": "#5865f2",
+        "midnight": "#949cf7",
+        "darker": "#949cf7"
+    },
+    "CONTROL_CONNECTED_BACKGROUND_ACTIVE": {
+        "dark": "#1f703c",
+        "light": "#1f703c",
+        "midnight": "#1f703c",
+        "darker": "#1f703c"
+    },
+    "CONTROL_CONNECTED_BACKGROUND_DEFAULT": {
+        "dark": "#248045",
+        "light": "#248045",
+        "midnight": "#248045",
+        "darker": "#248045"
+    },
+    "CONTROL_CONNECTED_BORDER_ACTIVE": {
+        "dark": "#1f703c",
+        "light": "#1f703c",
+        "midnight": "#1f703c",
+        "darker": "#1f703c"
+    },
+    "CONTROL_CONNECTED_BORDER_DEFAULT": {
+        "dark": "#23a55a",
+        "light": "#24934e",
+        "midnight": "#23a55a",
+        "darker": "#23a55a"
+    },
+    "CONTROL_CONNECTED_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_CRITICAL_PRIMARY_BACKGROUND_ACTIVE": {
+        "dark": "#bb3033",
+        "light": "#bb3033",
+        "midnight": "#bb3033",
+        "darker": "#bb3033"
+    },
+    "CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT": {
+        "dark": "#da373c",
+        "light": "#da373c",
+        "midnight": "#da373c",
+        "darker": "#da373c"
+    },
+    "CONTROL_CRITICAL_PRIMARY_BORDER_ACTIVE": {
+        "dark": "#bb3033",
+        "light": "#bb3033",
+        "midnight": "#bb3033",
+        "darker": "#bb3033"
+    },
+    "CONTROL_CRITICAL_PRIMARY_BORDER_DEFAULT": {
+        "dark": "#da373c",
+        "light": "#da373c",
+        "midnight": "#da373c",
+        "darker": "#da373c"
+    },
+    "CONTROL_CRITICAL_PRIMARY_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_CRITICAL_SECONDARY_BACKGROUND_ACTIVE": {
+        "dark": "#4e50588a",
+        "light": "#80848e3d",
+        "midnight": "#6c6f7c2e",
+        "darker": "#6c6f7c3d"
+    },
+    "CONTROL_CRITICAL_SECONDARY_BACKGROUND_DEFAULT": {
+        "dark": "#4e50587a",
+        "light": "#80848e29",
+        "midnight": "#6c6f7c1f",
+        "darker": "#6c6f7c29"
+    },
+    "CONTROL_CRITICAL_SECONDARY_BORDER_ACTIVE": {
+        "dark": "#ffffff08",
+        "light": "#0000000a",
+        "midnight": "#6c6f7c14",
+        "darker": "#6c6f7c0f"
+    },
+    "CONTROL_CRITICAL_SECONDARY_BORDER_DEFAULT": {
+        "dark": "#ffffff08",
+        "light": "#0000000a",
+        "midnight": "#6c6f7c14",
+        "darker": "#6c6f7c0f"
+    },
+    "CONTROL_CRITICAL_SECONDARY_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_EXPRESSIVE_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_ICON_ONLY_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_ICON_ONLY_ICON_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_ICON_ONLY_ICON_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_OVERLAY_PRIMARY_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_OVERLAY_PRIMARY_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_OVERLAY_PRIMARY_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_OVERLAY_PRIMARY_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_OVERLAY_SECONDARY_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_OVERLAY_SECONDARY_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_PRIMARY_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_PRIMARY_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_PRIMARY_BORDER_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_PRIMARY_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_PRIMARY_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_SECONDARY_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_SECONDARY_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_SECONDARY_BORDER_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_SECONDARY_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CONTROL_SECONDARY_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "CUSTOM_STATUS_BUBBLE_BG": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "DATEPICKER_RANGE_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "DATEPICKER_RANGE_BACKGROUND_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EMBED_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EMBED_BACKGROUND_ALTERNATE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_BLUE_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_BLUE_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_GREEN_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_GREEN_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_NITRO_GREEN_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_NITRO_GREEN_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_NITRO_PINK_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_NITRO_PINK_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_PINK_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_PINK_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_PURPLE_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_PURPLE_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_DIAMOND_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_EMERALD_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_GOLD_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_GOLD_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_OPAL_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_OPAL_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_PLATINUM_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_PLATINUM_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_RUBY_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_SILVER_END": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "EXPRESSIVE_GRADIENT_TENURE_BADGE_SILVER_START": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "GRADIENT_PROGRESS_PILL_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "GUILD_FOLDER_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "GUILD_PROFILE_BANNER_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_FEEDBACK_CRITICAL": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_FEEDBACK_INFO": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_FEEDBACK_NOTIFICATION": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_FEEDBACK_POSITIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_FEEDBACK_WARNING": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_MUTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_OVERLAY_DARK": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_OVERLAY_LIGHT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_STATUS_DND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_STATUS_IDLE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_STATUS_OFFLINE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_STATUS_ONLINE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_STRONG": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_SUBTLE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_TRANSPARENT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_VOICE_CONNECTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_VOICE_DISCONNECTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_VOICE_MUTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "ICON_VOICE_SPEAKING": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INLINENOTICE_BORDER_CRITICAL": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INLINENOTICE_BORDER_INFO": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INLINENOTICE_BORDER_POSITIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INLINENOTICE_BORDER_WARNING": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INPUT_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INPUT_BORDER_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INPUT_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INPUT_BORDER_ERROR_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INPUT_ICON_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INPUT_PLACEHOLDER_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INPUT_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INPUT_TEXT_ERROR_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_ACCENT_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_ACCENT_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_ACCENT_BACKGROUND_SELECTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_BACKGROUND_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_BACKGROUND_SELECTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_ICON_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_ICON_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_ICON_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_MUTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_TEXT_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "INTERACTIVE_TEXT_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "KEYWORD_HIGHLIGHT_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "LEGACY_BLUR_FALLBACK_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "LEGACY_BLUR_FALLBACK_ULTRA_THIN": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MENTION_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MENTION_FOREGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MESSAGE_AUTOMOD_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MESSAGE_AUTOMOD_BACKGROUND_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MESSAGE_BACKGROUND_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MESSAGE_HIGHLIGHT_BACKGROUND_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MESSAGE_MENTIONED_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MESSAGE_MENTIONED_BACKGROUND_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MESSAGES_ITEM_CHANNEL_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_ACTIONSHEET_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_ALERT_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_BACKGROUND_SCRIM_OPAQUE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_CHANNEL_ITEM_BACKGROUND_SELECTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_CHAT_NEW_MESSAGE_BORDER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_CHAT_NEW_MESSAGE_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_CHATINPUT_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_CHATINPUT_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_CHATINPUT_BORDER_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_CHATINPUT_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_COACHMARK_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_COACHMARK_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_COMMAND_BAR_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_COMMAND_BAR_DIVIDER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_COMMAND_CATEGORIES_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_EMBED_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_EMOJI_BUTTON_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_FLOATING_ACCESSORY_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_FLOATING_ACCESSORY_BORDER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_FLOATINGBAR_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_FLOATINGBAR_BACKGROUND_HIGHER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_FLOATINGBAR_BACKGROUND_NAMEPLATE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_FLOATINGBAR_BACKGROUND_SCRIM": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_GUILDBAR_ICON_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_GUILDBAR_ICON_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_HEADER_BORDER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_HEADER_ICON_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_KEYBOARD_GAP_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_KEYBOARD_PANEL_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_LEGACY_BUTTON_SECONDARY_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_LEGACY_BUTTON_SECONDARY_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_SEARCHBAR_GRADIENT_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_SEGMENTED_CONTROL_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_SEGMENTED_CONTROL_INDICATOR_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_TEXT_HEADING_PRIMARY": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_THREAD_EMBED_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_TOAST_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_TYPING_INDICATOR_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_UNREADBAR_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_VOICE_MESSAGE_RECORDING_LOCK_BACKGROUND_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_VOICE_MESSAGE_RECORDING_LOCK_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_VOICE_MESSAGE_RECORDING_LOCK_ICON_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_VOICE_MESSAGE_RECORDING_LOCK_ICON_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_VOICE_MESSAGE_RECORDING_SPINNER_COLOR": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_VOICE_MESSAGE_RECORDING_WAVEFORM_BAR_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_VOICE_PANEL_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MOBILE_VOICE_PANEL_BADGE_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MODAL_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "MODAL_FOOTER_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "NAVIGATOR_HEADER_TINT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "NOTICE_BACKGROUND_POSITIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "OVERLAY_BACKDROP_LIGHTBOX": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PANEL_BG": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "POLLS_NORMAL_IMAGE_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "POLLS_VICTOR_FILL": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "POLLS_VOTED_FILL": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PREMIUM_NITRO_PINK_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PROFILE_GRADIENT_NOTE_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PROFILE_GRADIENT_OVERLAY": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PROFILE_GRADIENT_ROLE_PILL_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PROFILE_GRADIENT_ROLE_PILL_BORDER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PROFILE_GRADIENT_SECTION_BOX": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PROGRESSBAR_INDICATOR_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "PROGRESSBAR_TRACK_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "RADIO_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REACTION_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REACTION_BACKGROUND_REACTED_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REACTION_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REACTION_BORDER_REACTED_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REACTION_TEXT_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REACTION_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REACTION_TEXT_HOVER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REACTION_TEXT_REACTED_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_ACTIVITY_CARD_BADGE_ICON": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_BUTTON_PREMIUM_PRIMARY_PINK_FOR_GRADIENT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_BUTTON_PREMIUM_PRIMARY_PRESSED_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_BUTTON_PREMIUM_PRIMARY_PURPLE_FOR_GRADIENT_2": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_BUTTON_TERTIARY_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_BUTTON_TERTIARY_PRESSED_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_BUTTON_TERTIARY_PRESSED_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_BUTTON_TERTIARY_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_CHANNEL_NAME_MUTED_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_CHANNEL_NAME_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_CHAT_INPUT_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_IMAGE_BUTTON_PRESSED_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_INPUT_CONTROL_ACTIVE_BG": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "REDESIGN_INPUT_CONTROL_SELECTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SHARE_CHAT_INPUT_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SLIDER_TRACK_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SPINE_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SPOILER_HIDDEN_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SPOILER_REVEALED_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STAGE_CARD_PILL_BG": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STANDALONE_CHANNEL_CONTENT_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STANDALONE_CHANNEL_HEADER_BORDER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_DANGER": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_ONLINE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_POSITIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_POSITIVE_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_POSITIVE_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_SPEAKING": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_WARNING": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_WARNING_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STATUS_WARNING_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STEAM_REVIEW_TEXT_MIXED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STEAM_REVIEW_TEXT_NEGATIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "STEAM_REVIEW_TEXT_POSITIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SWITCH_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SWITCH_BACKGROUND_SELECTED_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SWITCH_BORDER_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SWITCH_BORDER_SELECTED_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SWITCH_THUMB_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SWITCH_THUMB_BACKGROUND_SELECTED_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SWITCH_THUMB_ICON_ACTIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "SWITCH_THUMB_ICON_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TAB_BAR_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TAB_LABEL_TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TAB_LABEL_TEXT_FOCUSED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TABLEROW_BACKGROUND_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TABLEROW_BACKGROUND_PRESSED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TABLEROW_ICON_COLOR_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_BRAND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_CODE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_DEFAULT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_FEEDBACK_CRITICAL": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_FEEDBACK_INFO": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_FEEDBACK_POSITIVE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_FEEDBACK_WARNING": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_LINK": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_MUTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_OVERLAY_DARK": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_OVERLAY_LIGHT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_STATUS_DND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_STATUS_IDLE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_STATUS_OFFLINE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_STATUS_ONLINE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_STRONG": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_SUBTLE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_VOICE_CONNECTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_VOICE_DISCONNECTED": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "TEXT_VOICE_SPEAKING": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "THEME_LOCKED_BLUR_FALLBACK": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "THREAD_CHANNEL_SPINE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "USER_PROFILE_ABOUT_ME_HEADING_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "USER_PROFILE_CONTAINER_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "USER_PROFILE_GRADIENT_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "VOICE_CHANNEL_USER_LIMIT_ACCENT_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "VOICE_CHANNEL_USER_LIMIT_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "VOICE_CHANNEL_USER_LIMIT_ICON": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "VOICE_CHANNEL_USER_LIMIT_TEXT": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "VOICE_VIDEO_VIDEO_TILE_BACKGROUND": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "VOICE_VIDEO_VIDEO_TILE_BLUR_FALLBACK": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    },
+    "WHITE": {
+        "dark": "#ffffff",
+        "light": "#ffffff",
+        "midnight": "#ffffff",
+        "darker": "#ffffff"
+    }
+}
