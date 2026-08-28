@@ -10,7 +10,7 @@ export const modulesPath = join(workFolder, "modules");
 export const modulePathsDest = join("..", "data", "module-paths.json");
 export const apkSplits = ["base", "config.hdpi", "config.xxhdpi"] as const;
 
-export const oprevFiles = ["source.jsonl", "raw.json", "semantic.json", "semantic_simple.json"] as const;
+export const oprevFiles = ["source.jsonl", "raw.json", "semantic.json", "semantic_simple.json", "icons.json"] as const;
 export const prevFiles = new Map<(typeof oprevFiles)[number], ArrayBuffer>();
 
 export const version = await Bun.file("../data/version.txt").text();

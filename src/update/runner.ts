@@ -8,6 +8,7 @@ import codeTask from "./tasks/code";
 import colorsTask from "./tasks/colors";
 import decompile from "./tasks/decompile";
 import diffs from "./tasks/diffs";
+import iconsTask from "./tasks/icons";
 import { formatError, handleShellErr, join } from "./utils";
 
 export async function runTasks() {
@@ -28,10 +29,14 @@ export async function runTasks() {
 			colors: "Colors",
 			colors_getting: "Extracting colors",
 			colors_pushing: "Committing colors",
+			icons: "Icon parser",
+			icons_getting: "Writing icons.json",
+			icons_copying: "Copying images",
 			diff: "Diffs",
 			diff_code: "Diffing code",
 			diff_raw: "Diffing raw colors",
 			diff_semantic: "Diffing semantic colors",
+			diff_icons: "Diffing icons",
 		},
 		true,
 	);
@@ -82,18 +87,13 @@ export async function runTasks() {
 
 		const code = (await Bun.file(codePath).text()).replace(/\r/g, "").split("\n");
 
-		await wrapPromise(codeTask(progress, code), progress, "code");
-		if (progress.someFailed("code"))
-			throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code")}`);
-
-		// colors (canvas) - uses same code array
-		try {
-			await wrapPromise(colorsTask(code), progress, "colors");
-		} catch (e: any) {
-			progress.update("colors", false, formatError(e));
-			// don't fail whole run if colors fails, just log
-			console.error("Colors task failed:", formatError(e));
-		}
+		await Promise.allSettled([
+			wrapPromise(codeTask(progress, code), progress, "code"),
+			wrapPromise(colorsTask(code), progress, "colors"),
+			wrapPromise(iconsTask(progress, code), progress, "icons"),
+		]);
+		if (progress.someFailed("code", "colors", "icons"))
+			throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code", "colors", "icons")}`);
 
 		while (!progress.isFinished("decompile_gzip")) {
 			await Bun.sleep(1000);

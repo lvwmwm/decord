@@ -3,6 +3,7 @@ import {
 	type Diff,
 	type Differs,
 	DiffType,
+	type Icons,
 	type RawColors,
 	type SemanticColors,
 } from "../../types";
@@ -138,6 +139,60 @@ async function diffSemantic() {
 	return changes;
 }
 
+async function diffIcons() {
+	if (!prevFiles.has("icons.json")) {
+		throw new Error("Missing prevFile: icons.json");
+	}
+
+	const oldIcons = JSON.parse(new TextDecoder().decode(prevFiles.get("icons.json"))) as Icons;
+	const newIcons: Icons = await Bun.file(join("../canvas", "icons.json")).json();
+
+	const iconDir = {
+		old: join("../canvas", "oldicons"),
+		new: join("../canvas", "icons"),
+	};
+
+	const renamed = new Set<string>();
+	const changes = new Map<string, Diff>();
+	for (const [name, icon] of Object.entries(newIcons)) {
+		const label = icon.hash.slice(0, 8);
+		if (!oldIcons[name]) {
+			const oldName = Object.entries(oldIcons).find(([key, val]) => !newIcons[key] && val.hash === icon.hash)?.[0];
+
+			if (!oldName)
+				changes.set(name, {
+					type: DiffType.Added,
+					source: join(iconDir.new, icon.file),
+					label,
+				});
+			else {
+				renamed.add(oldName);
+				changes.set(name, {
+					type: DiffType.Renamed,
+					oldName,
+					source: join(iconDir.new, icon.file),
+				});
+			}
+		} else if (oldIcons[name].hash !== icon.hash)
+			changes.set(name, {
+				type: DiffType.Changed,
+				source: join(iconDir.new, icon.file),
+				label,
+				oldSource: join(iconDir.old, oldIcons[name].file),
+				oldLabel: oldIcons[name].hash.slice(0, 8),
+			});
+	}
+	for (const [name, icon] of Object.entries(oldIcons))
+		if (!(newIcons[name] || renamed.has(name)))
+			changes.set(name, {
+				type: DiffType.Removed,
+				source: join(iconDir.old, icon.file),
+				label: icon.hash.slice(0, 8),
+			});
+
+	return changes;
+}
+
 function parseSource(text: string) {
 	const source = parseJsonl(text) as { file: string; size: number }[];
 	return Object.fromEntries(
@@ -191,6 +246,7 @@ export default async function diffs(progress: Progress) {
 		progress.update("diff", null);
 		progress.update("diff_raw", null);
 		progress.update("diff_semantic", null);
+		progress.update("diff_icons", null);
 		progress.update("diff_code", null);
 		return;
 	}
@@ -212,6 +268,13 @@ export default async function diffs(progress: Progress) {
 					"diff_semantic",
 				)
 			: progress.update("diff_semantic", null),
+		gitChanged.has("icons.json")
+			? wrapPromise(
+					diffIcons().then((x) => (differs.icons = x)),
+					progress,
+					"diff_icons",
+				)
+			: progress.update("diff_icons", null),
 		gitChanged.has("source.jsonl")
 			? wrapPromise(
 					diffCode().then((x) => (differs.code = x)),
