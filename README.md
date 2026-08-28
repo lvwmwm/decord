@@ -1,4 +1,3 @@
-# decord — canvas branch
 
 Forked from [`nexpid/Themelings`](https://github.com/nexpid/Themelings).
 
