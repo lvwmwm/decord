@@ -1,18 +1,18 @@
-// Module ID: 15926
-// Function ID: 15927
+// Module ID: 15944
+// Function ID: 15945
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 1434, 1910, 1922, 15927, 21, 4445, 712, 7318, 9892, 15928, 15929, 15930, 15931, 5445, 15932, 1297, 15933, 15934, 5905, 589, 5020, 8819, 8041, 15935, 4441, 2]
+// Dependencies: [19, 17, 1434, 1910, 1923, 15945, 21, 4446, 712, 7332, 9910, 15946, 15947, 15948, 15949, 5458, 15950, 1297, 15951, 15952, 5918, 589, 5033, 8836, 8055, 15953, 4442, 2]
 
-// Module 15926 (ForYouItemImage)
+// Module 15944 (ForYouItemImage)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { getGuildAcronym } from "GuildNSFWContentLevel" /* 1434 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import PROFILE_BACKGROUND from "PROFILE_BACKGROUND" /* 15927 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import PROFILE_BACKGROUND from "PROFILE_BACKGROUND" /* 15945 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 let c3 = importAllResult;

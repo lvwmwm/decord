@@ -1,18 +1,18 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16821
+// Function ID: 16822
 // Name: handleMessageCreate
-// Dependencies: [1391, 4688, 1981, 1922, 676, 8601, 3, 7135, 6101, 5438, 1955, 4140, 5319, 5168, 2]
+// Dependencies: [1391, 4701, 1982, 1923, 676, 8616, 3, 7148, 6114, 5451, 1956, 4141, 5332, 5181, 2]
 
-// Module 16803 (handleMessageCreate)
+// Module 16821 (handleMessageCreate)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 5438 */;
+import initializeDefault from "initialize" /* 5451 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "reinjectEphemerals" /* 4688 */;
-import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { transformUser } from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "reinjectEphemerals" /* 4701 */;
+import closure_5 from "handleConnectionOpen" /* 1982 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import { transformUser } from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import { SafetyToastType } from "SafetyToastType" /* 8601 */;
+import { SafetyToastType } from "SafetyToastType" /* 8616 */;
 
 let require = arg1;
 function handleMessageCreate(channelId) {
@@ -76,7 +76,7 @@ let prototype = function AgeVerificationManager() {
         }
         if (tmp16) {
           (function handleLoadChannelMessages(channelId) {
-            let obj = callback(7135);
+            let obj = callback(7148);
             obj = { channelId, limit: closure_9 };
             const messages = obj.fetchMessages(obj);
           })(tmp12);
@@ -95,8 +95,8 @@ let prototype = function AgeVerificationManager() {
               tmp4 = type1 !== tmp3.GUILD_MEDIA;
             }
             if (!tmp4) {
-              channelId(6101).preloadForumThreads(channel);
-              const obj = channelId(6101);
+              channelId(6114).preloadForumThreads(channel);
+              const obj = channelId(6114);
             }
           })(tmp12);
         }

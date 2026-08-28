@@ -1,25 +1,25 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16016
+// Function ID: 16017
 // Name: MediaMosaicVideo
-// Dependencies: [32, 19, 17, 4437, 1391, 4098, 1922, 8537, 676, 21, 4445, 712, 4636, 691, 589, 8533, 4185, 4446, 15999, 5445, 4441, 1236, 8510, 5034, 5020, 8553, 9990, 5002, 15954, 8500, 8550, 1370, 12, 5430, 8498, 4639, 2]
+// Dependencies: [32, 19, 17, 4438, 1391, 4099, 1923, 8552, 676, 21, 4446, 712, 4637, 691, 589, 8548, 4186, 4447, 16017, 5458, 4442, 1236, 8524, 5047, 5033, 8568, 10008, 5015, 15972, 8514, 8565, 1370, 12, 5443, 8512, 4640, 2]
 // Exports: default
 
-// Module 15998 (MediaMosaicVideo)
+// Module 16016 (MediaMosaicVideo)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import VideoComponentDefault from "VideoComponent" /* 8533 */;
-import context2 from "context" /* 15954 */;
+import VideoComponentDefault from "VideoComponent" /* 8548 */;
+import context2 from "context" /* 15972 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "markAllUserIdListsStale" /* 4098 */;
-import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import closure_11 from "filterStaffGuild" /* 8537 */;
+import closure_9 from "markAllUserIdListsStale" /* 4099 */;
+import closure_10 from "mergeGuildAvatar" /* 1923 */;
+import closure_11 from "filterStaffGuild" /* 8552 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function MediaMosaicVideo(source) {
@@ -53,9 +53,9 @@ function MediaMosaicImage(source) {
   const tmp2 = callback(React.useState(false), 2);
   first = tmp2[0];
   dependencyMap = tmp2[1];
-  let obj = source(4185);
+  let obj = source(4186);
   const fn = function c() {
-    let obj = source(4446);
+    let obj = source(4447);
     let num = 1;
     if (first) {
       num = 0;
@@ -63,7 +63,7 @@ function MediaMosaicImage(source) {
     obj = { opacity: obj.withTiming(num, { duration: 150 }) };
     return obj;
   };
-  obj = { withTiming: source(4446).withTiming, imageFinishedLoading: first };
+  obj = { withTiming: source(4447).withTiming, imageFinishedLoading: first };
   fn.__closure = obj;
   fn.__workletHash = 7803531897566;
   fn.__initData = closure_20;
@@ -73,15 +73,15 @@ function MediaMosaicImage(source) {
   const memo = React.useMemo(() => {
     if (null != source.placeholder) {
       const obj = { uri: null, width: null, height: null };
-      obj[0] = source(15999).createThumbhashImageFromPlaceholder(tmp.placeholder);
+      obj[0] = source(16017).createThumbhashImageFromPlaceholder(tmp.placeholder);
       ({ width: obj[1], height: obj[2] } = tmp);
       return obj;
     }
   }, items);
-  obj = { style: items1, children: callback2(first(5445), { source: memo, style: items2 }) };
+  obj = { style: items1, children: callback2(first(5458), { source: memo, style: items2 }) };
   items1 = [animatedStyle, tmp.thumbhashMedia];
   items2 = [style, tmp.media, dimensions];
-  const items3 = [callback2(first(4185).View, obj), ];
+  const items3 = [callback2(first(4186).View, obj), ];
   obj1 = {
     source,
     style: items4,
@@ -97,7 +97,7 @@ function MediaMosaicImage(source) {
   }
   const obj2 = { children: null };
   obj1[3] = num;
-  items3[1] = callback2(first(4185).Image, obj1, source.uri);
+  items3[1] = callback2(first(4186).Image, obj1, source.uri);
   obj2[0] = items3;
   return closure_17(closure_16, obj2);
 }
@@ -367,7 +367,7 @@ function SingleImage(source) {
   ({ initialIndex, handlePressMedia, visible } = source);
   const tmp = callback4();
   let obj = React;
-  const context = React.useContext(source(15954).ICYMIContext);
+  const context = React.useContext(source(15972).ICYMIContext);
   if (null == widthOverride) {
     let width;
     if (context != null) {

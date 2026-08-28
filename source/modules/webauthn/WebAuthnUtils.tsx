@@ -1,10 +1,10 @@
-// Module ID: 6010
-// Function ID: 6011
+// Module ID: 6023
+// Function ID: 6024
 // Name: encodeUserIdForWebAuthn
 // Dependencies: [2]
 // Exports: encodeUserIdForWebAuthn
 
-// Module 6010 (encodeUserIdForWebAuthn)
+// Module 6023 (encodeUserIdForWebAuthn)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/webauthn/WebAuthnUtils.tsx");

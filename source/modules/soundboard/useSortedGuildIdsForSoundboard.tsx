@@ -1,14 +1,14 @@
-// Module ID: 16558
-// Function ID: 16559
+// Module ID: 16576
+// Function ID: 16577
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 4089, 5333, 1922, 676, 505, 647, 4107, 2]
+// Dependencies: [19, 4090, 5346, 1923, 676, 505, 647, 4108, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 16558 (useSortedGuildIdsForSoundboard)
+// Module 16576 (useSortedGuildIdsForSoundboard)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_5 from "insertUnsortedGuilds" /* 5333 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_5 from "insertUnsortedGuilds" /* 5346 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 import { Permissions } from "sum" /* 505 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10945
+// Function ID: 10946
 // Name: trackViewedEvent
-// Dependencies: [1922, 676, 698, 2]
+// Dependencies: [1923, 676, 698, 2]
 // Exports: getUserIsTeen, trackCtaEvent, trackNamedViewEvent, trackViewedEvent
 
-// Module 10927 (trackViewedEvent)
+// Module 10945 (trackViewedEvent)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/self_mod/shared/SafetyWarningUtils.tsx");

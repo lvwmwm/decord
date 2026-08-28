@@ -1,22 +1,22 @@
-// Module ID: 7400
-// Function ID: 7401
+// Module ID: 7414
+// Function ID: 7415
 // Name: isSponsoredPlayQuest
-// Dependencies: [32, 4462, 1910, 4089, 4464, 7401, 5339, 7402, 7403, 7404, 7405, 7406, 2]
+// Dependencies: [32, 4463, 1910, 4090, 4465, 7415, 5352, 7416, 7417, 7418, 7419, 7420, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7400 (isSponsoredPlayQuest)
-import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7402 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7403 */;
-import canStreamInChannel from "canStreamInChannel" /* 7404 */;
-import QuestType2 from "QuestType" /* 7405 */;
-import getQuestContentName from "getQuestContentName" /* 7406 */;
+// Module 7414 (isSponsoredPlayQuest)
+import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7416 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7417 */;
+import canStreamInChannel from "canStreamInChannel" /* 7418 */;
+import QuestType2 from "QuestType" /* 7419 */;
+import getQuestContentName from "getQuestContentName" /* 7420 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "set" /* 4462 */;
+import closure_3 from "set" /* 4463 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_6 from "updateVoiceState" /* 4464 */;
-import closure_7 from "keys" /* 7401 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5339 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_6 from "updateVoiceState" /* 4465 */;
+import closure_7 from "keys" /* 7415 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5352 */;
 
 require = arg1;
 function isSponsoredPlayQuest(quest) {

@@ -1,30 +1,30 @@
-// Module ID: 11118
-// Function ID: 11119
+// Module ID: 11136
+// Function ID: 11137
 // Name: handleMessagesTapURLLink
-// Dependencies: [8078, 4486, 7780, 10902, 1930, 1391, 4429, 4688, 1922, 676, 1499, 1398, 6007, 1235, 11116, 4425, 7413, 11117, 8737, 8731, 8572, 11059, 8819, 4412, 8930, 2009, 5307, 4628, 11119, 10577, 11120, 7135, 5925, 8075, 1627, 11121, 4699, 1222, 7833, 11124, 11147, 2]
+// Dependencies: [8092, 4487, 7794, 10920, 1931, 1391, 4430, 4701, 1923, 676, 1499, 1398, 6020, 1235, 11134, 4426, 7427, 11135, 8753, 8747, 8587, 11077, 8836, 4413, 8948, 2010, 5320, 4629, 11137, 10595, 11138, 7148, 5938, 8089, 1627, 11139, 4712, 1222, 7847, 11142, 11165, 2]
 // Exports: handleMessagesTapLink
 
-// Module 11118 (handleMessagesTapURLLink)
+// Module 11136 (handleMessagesTapURLLink)
 import set from "set" /* 2 */;
 import AbortCodes from "AbortCodes" /* 1235 */;
 import set2 from "set" /* 1398 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
-import parseQueryDefault from "parseQuery" /* 4425 */;
-import str2 from "str2" /* 6007 */;
-import getIndexKey from "getIndexKey" /* 8078 */;
-import isLinkTrusted from "isLinkTrusted" /* 8572 */;
-import _mod8731 from "module_8731" /* 8731 */;
-import GameProfileEmbedAction from "GameProfileEmbedAction" /* 8737 */;
-import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 11059 */;
-import isLinkTrusted2 from "isLinkTrusted" /* 11116 */;
-import closure_4 from "addApplication" /* 4486 */;
-import closure_5 from "handleMessageSendFailedAutomod" /* 7780 */;
-import closure_6 from "handleQuickSwitcherUpdate" /* 10902 */;
-import closure_7 from "createdAt" /* 1930 */;
+import parseQueryDefault from "parseQuery" /* 4426 */;
+import str2 from "str2" /* 6020 */;
+import getIndexKey from "getIndexKey" /* 8092 */;
+import isLinkTrusted from "isLinkTrusted" /* 8587 */;
+import _mod8747 from "module_8747" /* 8747 */;
+import GameProfileEmbedAction from "GameProfileEmbedAction" /* 8753 */;
+import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 11077 */;
+import isLinkTrusted2 from "isLinkTrusted" /* 11134 */;
+import closure_4 from "addApplication" /* 4487 */;
+import closure_5 from "handleMessageSendFailedAutomod" /* 7794 */;
+import closure_6 from "handleQuickSwitcherUpdate" /* 10920 */;
+import closure_7 from "createdAt" /* 1931 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "updateInvite" /* 4429 */;
-import closure_10 from "reinjectEphemerals" /* 4688 */;
-import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "updateInvite" /* 4430 */;
+import closure_10 from "reinjectEphemerals" /* 4701 */;
+import closure_11 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 
 function handleMessagesTapURLLink(data, channelId) {
@@ -47,11 +47,11 @@ function handleMessagesTapURLLink(data, channelId) {
             invite = invite.getInvite(payload.inviteCode);
             let num = null == invite;
             if (!num) {
-              num = !tmp2(7413).isGuildScheduledEventInviteEmbed(invite);
-              const tmp2Result = tmp2(7413);
+              num = !tmp2(7427).isGuildScheduledEventInviteEmbed(invite);
+              const tmp2Result = tmp2(7427);
             }
             if (!num) {
-              tmp4(11117)(invite);
+              tmp4(11135)(invite);
               num = 0;
             }
             flag2 = !num;
@@ -84,9 +84,9 @@ function handleMessagesTapURLLink(data, channelId) {
         obj = { shouldOpenGameProfile: true, gameId: null };
         obj[1] = gameId;
         obj[3] = obj;
-        _mod8731.default.openGameProfileModal(obj);
+        _mod8747.default.openGameProfileModal(obj);
         flag3 = true;
-        const _default = _mod8731.default;
+        const _default = _mod8747.default;
       }
       flag2 = flag3;
     }
@@ -96,8 +96,8 @@ function handleMessagesTapURLLink(data, channelId) {
       obj1[0] = data.url;
       let isLinkTrustedResult = null != data.node;
       if (isLinkTrustedResult) {
-        isLinkTrustedResult = tmp19(11116).isLinkTrusted(data.node);
-        const tmp19Result = tmp19(11116);
+        isLinkTrustedResult = tmp19(11134).isLinkTrusted(data.node);
+        const tmp19Result = tmp19(11134);
       }
       obj1[1] = isLinkTrustedResult;
       obj1[2] = data.messageId;
@@ -129,7 +129,6 @@ export const handleMessagesTapLink = function handleMessagesTapLink(tapLinkData)
     }
     if (!tmp4(data, id)) {
       if (null != data.action) {
-        const action = data.action;
         if (chatInputRef != null) {
           const current = chatInputRef.current;
           if (current != null) {

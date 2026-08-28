@@ -1,17 +1,17 @@
-// Module ID: 7774
-// Function ID: 7775
+// Module ID: 7788
+// Function ID: 7789
 // Name: setOptions
-// Dependencies: [1302, 7775, 7776, 12, 7777, 7779, 12828, 12829, 1370, 2]
+// Dependencies: [1302, 7789, 7790, 12, 7791, 7793, 12847, 12848, 1370, 2]
 
-// Module 7774 (setOptions)
+// Module 7788 (setOptions)
 import applyDefault from "apply" /* 12 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import generateBlockedGroupRowData from "generateBlockedGroupRowData" /* 7777 */;
-import generateMessageRowData from "generateMessageRowData" /* 7779 */;
-import generateSeparatorRowData from "generateSeparatorRowData" /* 12828 */;
-import generateLoadingRowData from "generateLoadingRowData" /* 12829 */;
+import generateBlockedGroupRowData from "generateBlockedGroupRowData" /* 7791 */;
+import generateMessageRowData from "generateMessageRowData" /* 7793 */;
+import generateSeparatorRowData from "generateSeparatorRowData" /* 12847 */;
+import generateLoadingRowData from "generateLoadingRowData" /* 12848 */;
 import closure_3 from "handleThemeChange" /* 1302 */;
-import Changeset from "Changeset" /* 7775 */;
+import Changeset from "Changeset" /* 7789 */;
 
 require = arg1;
 ({ RowType: c4, SeparatorType: c5, LoadingType: closure_6 } = Changeset);

@@ -1,13 +1,13 @@
-// Module ID: 4479
-// Function ID: 4480
+// Module ID: 4480
+// Function ID: 4481
 // Name: getSizedImageProxyURL
-// Dependencies: [4480, 1469, 1487, 2]
+// Dependencies: [4481, 1469, 1487, 2]
 // Exports: getSizedImageAssetURL, isImageProxyURL
 
-// Module 4479 (getSizedImageProxyURL)
+// Module 4480 (getSizedImageProxyURL)
 import handleImageLoad from "handleImageLoad" /* 1469 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import getHostWithoutPort from "getHostWithoutPort" /* 4480 */;
+import getHostWithoutPort from "getHostWithoutPort" /* 4481 */;
 import set from "set" /* 2 */;
 
 function getSizedImageProxyURL(value, size) {

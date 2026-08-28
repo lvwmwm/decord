@@ -1,21 +1,21 @@
-// Module ID: 14458
-// Function ID: 14459
+// Module ID: 14442
+// Function ID: 14443
 // Name: AvatarDecorationPreviewImage
-// Dependencies: [19, 17, 8481, 21, 4445, 14457, 712, 8455, 8465, 10669, 11626, 8166, 8028, 1950, 1947, 2]
+// Dependencies: [19, 17, 8495, 21, 4446, 14441, 712, 8469, 8479, 10687, 11645, 8180, 8042, 1951, 1948, 2]
 // Exports: default
 
-// Module 14458 (AvatarDecorationPreviewImage)
+// Module 14442 (AvatarDecorationPreviewImage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
-import getNameplateAssets from "getNameplateAssets" /* 8455 */;
-import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8465 */;
-import ShopIcon from "ShopIcon" /* 11626 */;
-import getCollectibleTypeName from "getCollectibleTypeName" /* 14457 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
+import getNameplateAssets from "getNameplateAssets" /* 8469 */;
+import useMaybeFetchProfileFrameDefault from "useMaybeFetchProfileFrame" /* 8479 */;
+import ShopIcon from "ShopIcon" /* 11645 */;
+import getCollectibleTypeName from "getCollectibleTypeName" /* 14441 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { PROFILE_FRAME_ASPECT_RATIO as closure_5 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8481 */;
+import { PROFILE_FRAME_ASPECT_RATIO as closure_5 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8495 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function AvatarDecorationPreviewImage(arg0) {
@@ -78,9 +78,9 @@ function ProfileFramePreviewImage(arg0) {
     obj[1] = getCollectibleTypeName.PREVIEW_SIZE * closure_5;
     obj[2] = getCollectibleTypeName.PREVIEW_SIZE;
     obj[3] = tmp(712).colors.BACKGROUND_BASE_LOW;
-    obj[1] = jsx(tmp(10669), { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null });
+    obj[1] = jsx(tmp(10687), { profileFrame: null, previewWidth: null, previewHeight: null, profileBackgroundColor: null });
     tmp4 = <closure_3 profileFrame={null} previewWidth={null} previewHeight={null} profileBackgroundColor={null} />;
-    const tmpResult = tmp(10669);
+    const tmpResult = tmp(10687);
   }
   return tmp4;
 }
@@ -97,9 +97,9 @@ function SubscriptionPreview(arg0) {
     obj1 = { style: null, children: null };
     obj1[0] = styles.purchasePlaceholder;
     if (obj4.isGuildBoostSubscription(subscriptionPlanId)) {
-      let NitroWheelIcon = tmp5(8166).BoostGemIcon;
+      let NitroWheelIcon = tmp5(8180).BoostGemIcon;
     } else {
-      NitroWheelIcon = tmp5(8028).NitroWheelIcon;
+      NitroWheelIcon = tmp5(8042).NitroWheelIcon;
     }
     obj = { size: "custom", style: null };
     obj[1] = { width: 20, height: 20 };
@@ -123,8 +123,8 @@ function CollectiblePreview(arg0) {
       obj1[0] = product;
       obj1[1] = styles;
       return <AvatarDecorationPreviewImage product={null} styles={null} />;
-    } else if (tmp17(1950).CollectiblesItemType.NAMEPLATE === type) {
-      const nameplateDataFromProductRecord = tmp17(1947).getNameplateDataFromProductRecord(product);
+    } else if (tmp17(1951).CollectiblesItemType.NAMEPLATE === type) {
+      const nameplateDataFromProductRecord = tmp17(1948).getNameplateDataFromProductRecord(product);
       let tmp8 = null;
       if (null != nameplateDataFromProductRecord) {
         const obj2 = { nameplateData: null, styles: null };
@@ -133,12 +133,12 @@ function CollectiblePreview(arg0) {
         tmp8 = <NameplatePreviewImage nameplateData={null} styles={null} />;
       }
       return tmp8;
-    } else if (tmp17(1950).CollectiblesItemType.PROFILE_EFFECT === type) {
+    } else if (tmp17(1951).CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj3 = { product: null, styles: null };
       obj3[0] = product;
       obj3[1] = styles;
       return <ProfileEffectPreviewImage product={null} styles={null} />;
-    } else if (tmp17(1950).CollectiblesItemType.PROFILE_FRAME === type) {
+    } else if (tmp17(1951).CollectiblesItemType.PROFILE_FRAME === type) {
       const obj4 = { product: null, styles: null };
       obj4[0] = product;
       obj4[1] = styles;
@@ -148,7 +148,7 @@ function CollectiblePreview(arg0) {
       obj[0] = styles.purchasePlaceholder;
       const obj5 = { size: "custom", style: null };
       obj5[1] = { width: 20, height: 20 };
-      obj[1] = jsx(tmp17(11626).ShopIcon, { size: "custom", style: null });
+      obj[1] = jsx(tmp17(11645).ShopIcon, { size: "custom", style: null });
       return <closure_3 style={null}>{null}</closure_3>;
     }
   }

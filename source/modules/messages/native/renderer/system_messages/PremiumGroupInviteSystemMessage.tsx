@@ -1,18 +1,18 @@
-// Module ID: 7887
-// Function ID: 7888
+// Module ID: 7901
+// Function ID: 7902
 // Name: createPremiumGroupInviteSystemMessage
-// Dependencies: [1218, 1391, 4445, 712, 7888, 7805, 7788, 7892, 2]
+// Dependencies: [1218, 1391, 4446, 712, 7902, 7819, 7802, 7906, 2]
 // Exports: createPremiumGroupInviteSystemMessage
 
-// Module 7887 (createPremiumGroupInviteSystemMessage)
+// Module 7901 (createPremiumGroupInviteSystemMessage)
 import ThemesDefault from "Themes" /* 712 */;
-import frozen from "frozen" /* 7788 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7805 */;
-import createPremiumGroupInviteEmbed from "createPremiumGroupInviteEmbed" /* 7888 */;
-import registerAssetDefault from "registerAsset" /* 7892 */;
+import frozen from "frozen" /* 7802 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7819 */;
+import createPremiumGroupInviteEmbed from "createPremiumGroupInviteEmbed" /* 7902 */;
+import registerAssetDefault from "registerAsset" /* 7906 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 createCacheKey = { iconTintColor: ThemesDefault.colors.ICON_STRONG, iconDividerColor: ThemesDefault.colors.ICON_STRONG };

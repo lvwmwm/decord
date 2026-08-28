@@ -1,15 +1,15 @@
-// Module ID: 16863
-// Function ID: 16864
+// Module ID: 16881
+// Function ID: 16882
 // Name: prototype
-// Dependencies: [1992, 1910, 4267, 676, 4077, 5438, 5414, 1403, 2]
+// Dependencies: [1993, 1910, 4268, 676, 4078, 5451, 5427, 1403, 2]
 
-// Module 16863 (prototype)
-import initializeDefault from "initialize" /* 5438 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
+// Module 16881 (prototype)
+import initializeDefault from "initialize" /* 5451 */;
+import closure_3 from "trackCommunicationDisabled" /* 1993 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "handleConnectionOpen" /* 4267 */;
+import closure_5 from "handleConnectionOpen" /* 4268 */;
 import { GuildFeatures } from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4078 */;
 
 let require = arg1;
 let c8 = null;
@@ -59,7 +59,7 @@ let prototype = function GuildOnboardingManager() {
     }
   };
   applyArgumentsResult.handleGuildDelete = function handleGuildDelete(guild) {
-    const result = applyArgumentsResult(5414).discardOnboardingPromise(guild.guild.id);
+    const result = applyArgumentsResult(5427).discardOnboardingPromise(guild.guild.id);
   };
   applyArgumentsResult._openOnboardingIfIncomplete = function _openOnboardingIfIncomplete(guildId) {
     guild = guild.getGuild(guildId);
@@ -87,7 +87,7 @@ let prototype = function GuildOnboardingManager() {
         if (hasFlagResult) {
           obj = { guildId: null };
           obj[0] = guildId;
-          callback(5414)(obj);
+          callback(5427)(obj);
         }
       }
     }

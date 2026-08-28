@@ -1,10 +1,10 @@
-// Module ID: 13730
-// Function ID: 13731
+// Module ID: 13749
+// Function ID: 13750
 // Name: AccessibleNativeStackNavigator
-// Dependencies: [19, 21, 5960, 1501, 7755, 2]
+// Dependencies: [19, 21, 5973, 1501, 7769, 2]
 // Exports: default, useAccessibilityPatchedDescriptors
 
-// Module 13730 (AccessibleNativeStackNavigator)
+// Module 13749 (AccessibleNativeStackNavigator)
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

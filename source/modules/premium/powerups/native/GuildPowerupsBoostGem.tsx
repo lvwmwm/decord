@@ -1,16 +1,16 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 12019
+// Function ID: 12020
 // Name: GuildPowerupsBoostGem
-// Dependencies: [17, 21, 4445, 712, 12001, 2]
+// Dependencies: [17, 21, 4446, 712, 12020, 2]
 // Exports: default
 
-// Module 12000 (GuildPowerupsBoostGem)
+// Module 12019 (GuildPowerupsBoostGem)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BoostGemDefault from "BoostGem" /* 12001 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import BoostGemDefault from "BoostGem" /* 12020 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const View = get_ActivityIndicator.View;
 const jsx = jsxProd.jsx;

@@ -1,9 +1,9 @@
-// Module ID: 6810
-// Function ID: 6811
+// Module ID: 6823
+// Function ID: 6824
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6810 (metadata)
+// Module 6823 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWumpusGreenSpotIllustration-2x.png.js");

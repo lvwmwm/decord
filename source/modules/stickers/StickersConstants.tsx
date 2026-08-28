@@ -1,9 +1,9 @@
-// Module ID: 4137
-// Function ID: 4138
+// Module ID: 4138
+// Function ID: 4139
 // Name: STICKER_PICKER_TAB_PANEL_ID
 // Dependencies: [2]
 
-// Module 4137 (STICKER_PICKER_TAB_PANEL_ID)
+// Module 4138 (STICKER_PICKER_TAB_PANEL_ID)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/stickers/StickersConstants.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 16660
-// Function ID: 16661
+// Module ID: 16678
+// Function ID: 16679
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 1390, 9385, 1391, 4473, 9387, 9386, 21, 4445, 11756, 16586, 589, 4079, 10650, 9409, 4185, 16513, 5958, 7729, 16113, 9525, 2]
+// Dependencies: [19, 1390, 9403, 1391, 4474, 9405, 9404, 21, 4446, 11775, 16604, 589, 4080, 10668, 9427, 4186, 16531, 5971, 7743, 16131, 9543, 2]
 // Exports: default
 
-// Module 16660 (VoicePanelSecondaryPIPContent)
+// Module 16678 (VoicePanelSecondaryPIPContent)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "participantFromServer" /* 1390 */;
-import closure_5 from "map" /* 9385 */;
+import closure_5 from "map" /* 9403 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import { ActivityLayoutMode } from "items3" /* 4473 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9387 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9386 */;
+import { ActivityLayoutMode } from "items3" /* 4474 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9405 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9404 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ asLaunched: c9, FrameLayoutModes: c10, getPipOrientationLockStateForFrame: unpackModuleId } = FrameLayoutModes);

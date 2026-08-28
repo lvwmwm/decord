@@ -1,14 +1,14 @@
-// Module ID: 4082
-// Function ID: 4083
+// Module ID: 4083
+// Function ID: 4084
 // Name: isRestrictedFromShowingGuildPurchaseEntryPoints
-// Dependencies: [4083, 1910, 4084, 676, 2]
+// Dependencies: [4084, 1910, 4085, 676, 2]
 // Exports: isRestrictedFromMonetizationReapplication, isRestrictedFromShowingGuildPurchaseEntryPoints, isRestrictedFromUpdatingCreatorMonetizationSettings, shouldHideGuildPurchaseEntryPoints, shouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 4082 (isRestrictedFromShowingGuildPurchaseEntryPoints)
-import closure_0 from "makeGroupListingIndexSubscriptionListingTag" /* 4083 */;
-import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4083 */;
+// Module 4083 (isRestrictedFromShowingGuildPurchaseEntryPoints)
+import closure_0 from "makeGroupListingIndexSubscriptionListingTag" /* 4084 */;
+import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4084 */;
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import { CreatorMonetizationRestrictions as closure_3 } from "CreatorMonetizationRestrictions" /* 4084 */;
+import { CreatorMonetizationRestrictions as closure_3 } from "CreatorMonetizationRestrictions" /* 4085 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/creator_monetization_review/CreatorMonetizationRestrictionsUtils.tsx");

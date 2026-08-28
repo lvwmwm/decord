@@ -1,10 +1,10 @@
-// Module ID: 10444
-// Function ID: 10445
+// Module ID: 10460
+// Function ID: 10461
 // Name: GiftingBadgeIcon
 // Dependencies: [19, 17, 21, 2]
 // Exports: default
 
-// Module 10444 (GiftingBadgeIcon)
+// Module 10460 (GiftingBadgeIcon)
 import noopAll from "noop" /* 19 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

@@ -1,14 +1,14 @@
-// Module ID: 6363
-// Function ID: 6364
+// Module ID: 6376
+// Function ID: 6377
 // Name: ClydeShieldSpotIllustration
-// Dependencies: [21, 5445, 6364, 2]
+// Dependencies: [21, 5458, 6377, 2]
 // Exports: ClydeShieldSpotIllustration
 
-// Module 6363 (ClydeShieldSpotIllustration)
+// Module 6376 (ClydeShieldSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6364 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6377 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeShieldSpotIllustration.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 8164
-// Function ID: 8165
+// Module ID: 8178
+// Function ID: 8179
 // Name: ScreenStreamIcon
-// Dependencies: [19, 21, 712, 4164, 8165, 2]
+// Dependencies: [19, 21, 712, 4165, 8179, 2]
 // Exports: ScreenStreamIcon
 
-// Module 8164 (ScreenStreamIcon)
+// Module 8178 (ScreenStreamIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 8165 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 8179 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

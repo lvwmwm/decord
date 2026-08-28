@@ -1,10 +1,10 @@
-// Module ID: 13472
-// Function ID: 13473
+// Module ID: 13491
+// Function ID: 13492
 // Name: _queryAudioEffects
 // Dependencies: [5, 676, 4, 501, 709, 698, 2]
 // Exports: default
 
-// Module 13472 (_queryAudioEffects)
+// Module 13491 (_queryAudioEffects)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 

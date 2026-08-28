@@ -1,14 +1,14 @@
-// Module ID: 4864
-// Function ID: 4865
+// Module ID: 4877
+// Function ID: 4878
 // Name: AccessibilityView
-// Dependencies: [19, 17, 21, 4865, 4185, 2]
+// Dependencies: [19, 17, 21, 4878, 4186, 2]
 
-// Module 4864 (AccessibilityView)
-import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 4865 */;
+// Module 4877 (AccessibilityView)
+import useAccessibilityViewIsModalToggleDefault from "useAccessibilityViewIsModalToggle" /* 4878 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
-import importDefaultResult from "module_4185" /* 4185 */;
+import importDefaultResult from "module_4186" /* 4186 */;
 
 const forwardRefResult = importAllResult.forwardRef((accessibilityViewIsModal, ref) => {
   let flag = accessibilityViewIsModal.accessibilityViewIsModal;

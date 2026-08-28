@@ -1,16 +1,16 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 9483
+// Function ID: 9484
 // Name: sum
-// Dependencies: [4496, 676, 5575, 9466, 9469, 9472, 589, 2]
+// Dependencies: [4497, 676, 5588, 9484, 9487, 9490, 589, 2]
 // Exports: default
 
-// Module 9465 (sum)
+// Module 9483 (sum)
 import initialize from "initialize" /* 589 */;
-import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9469 */;
-import useCanCurrentUserSpeakInChannelDefault from "useCanCurrentUserSpeakInChannel" /* 9472 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4496 */;
+import useIsFiveButtonLayout from "useIsFiveButtonLayout" /* 9487 */;
+import useCanCurrentUserSpeakInChannelDefault from "useCanCurrentUserSpeakInChannel" /* 9490 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
 import { InputModes } from "ME" /* 676 */;
-import { ACTION_SHEET_HANDLE_SPACING as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5575 */;
+import { ACTION_SHEET_HANDLE_SPACING as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5588 */;
 
 require = arg1;
 let sum = 2 * require("ActionButton").SMALL_ACTION_BUTTON_DIMENSIONS.buttonRadius + 16 + 16;

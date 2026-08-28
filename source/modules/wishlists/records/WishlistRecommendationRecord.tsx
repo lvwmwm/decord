@@ -1,12 +1,12 @@
-// Module ID: 6026
-// Function ID: 6027
+// Module ID: 6039
+// Function ID: 6040
 // Name: fromServer
-// Dependencies: [1931, 4488, 4471, 2]
+// Dependencies: [1932, 4489, 4472, 2]
 
-// Module 6026 (fromServer)
-import toJSDefault from "toJS" /* 1931 */;
-import closure_0 from "createFromServer" /* 4488 */;
-import closure_1 from "createExecutable" /* 4471 */;
+// Module 6039 (fromServer)
+import toJSDefault from "toJS" /* 1932 */;
+import closure_0 from "createFromServer" /* 4489 */;
+import closure_1 from "createExecutable" /* 4472 */;
 
 toJSDefault;
 let prototype;

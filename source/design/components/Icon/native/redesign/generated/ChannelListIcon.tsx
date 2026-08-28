@@ -1,14 +1,14 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17036
+// Function ID: 17037
 // Name: ChannelListIcon
-// Dependencies: [19, 21, 712, 4164, 17019, 2]
+// Dependencies: [19, 21, 712, 4165, 17037, 2]
 // Exports: ChannelListIcon
 
-// Module 17018 (ChannelListIcon)
+// Module 17036 (ChannelListIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 17019 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 17037 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

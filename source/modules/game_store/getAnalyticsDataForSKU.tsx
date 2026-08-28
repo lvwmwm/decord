@@ -1,11 +1,11 @@
-// Module ID: 4801
-// Function ID: 4802
+// Module ID: 4814
+// Function ID: 4815
 // Name: getAnalyticsDataForSKU
-// Dependencies: [4486, 676, 2]
+// Dependencies: [4487, 676, 2]
 // Exports: default
 
-// Module 4801 (getAnalyticsDataForSKU)
-import closure_0 from "addApplication" /* 4486 */;
+// Module 4814 (getAnalyticsDataForSKU)
+import closure_0 from "addApplication" /* 4487 */;
 import { SKUFeatureTypes } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/game_store/getAnalyticsDataForSKU.tsx");

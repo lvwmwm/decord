@@ -1,12 +1,12 @@
-// Module ID: 10506
-// Function ID: 10507
+// Module ID: 10524
+// Function ID: 10525
 // Name: _discardDraftOrder
-// Dependencies: [5, 4427, 7108, 2]
+// Dependencies: [5, 4428, 7121, 2]
 // Exports: discardDraftOrder
 
-// Module 10506 (_discardDraftOrder)
+// Module 10524 (_discardDraftOrder)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { OrderStatus } from "CustomCheckoutFlow" /* 4427 */;
+import { OrderStatus } from "CustomCheckoutFlow" /* 4428 */;
 
 const require = arg1;
 function _discardDraftOrder() {

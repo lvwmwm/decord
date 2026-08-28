@@ -1,22 +1,22 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12476
+// Function ID: 12477
 // Name: PX_8
-// Dependencies: [19, 17, 7225, 1948, 7226, 7227, 8481, 8439, 21, 712, 4445, 8451, 10669, 5445, 10670, 8442, 1947, 8454, 2]
+// Dependencies: [19, 17, 7239, 1949, 7240, 7241, 8495, 8453, 21, 712, 4446, 8465, 10687, 5458, 10688, 8456, 1948, 8468, 2]
 
-// Module 12456 (PX_8)
+// Module 12476 (PX_8)
 import ThemesDefault from "Themes" /* 712 */;
-import getNameplateData from "getNameplateData" /* 1947 */;
-import preloadDefault from "preload" /* 5445 */;
-import StaticEffectDefault from "StaticEffect" /* 8442 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8451 */;
-import NameplateInnerDefault from "NameplateInner" /* 8454 */;
-import filterLayerDefault from "filterLayer" /* 10669 */;
-import metadataDefault from "metadata" /* 10670 */;
+import getNameplateData from "getNameplateData" /* 1948 */;
+import preloadDefault from "preload" /* 5458 */;
+import StaticEffectDefault from "StaticEffect" /* 8456 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8465 */;
+import NameplateInnerDefault from "NameplateInner" /* 8468 */;
+import filterLayerDefault from "filterLayer" /* 10687 */;
+import metadataDefault from "metadata" /* 10688 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7225 */;
-import { PROFILE_FRAME_ASPECT_RATIO as closure_8 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8481 */;
+import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7239 */;
+import { PROFILE_FRAME_ASPECT_RATIO as closure_8 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8495 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

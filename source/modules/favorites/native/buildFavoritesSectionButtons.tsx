@@ -1,18 +1,18 @@
-// Module ID: 10224
-// Function ID: 10225
+// Module ID: 10242
+// Function ID: 10243
 // Name: _addChannelToFavorites
-// Dependencies: [5, 21, 10225, 2009, 4412, 10230, 10229, 1236, 3147, 8028, 9101, 9103, 1297, 2]
+// Dependencies: [5, 21, 10243, 2010, 4413, 10248, 10247, 1236, 3148, 8042, 9119, 9121, 1297, 2]
 // Exports: default
 
-// Module 10224 (_addChannelToFavorites)
+// Module 10242 (_addChannelToFavorites)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import messagesProxyDefault from "messagesProxy" /* 3147 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4412 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8028 */;
-import StarIcon from "StarIcon" /* 9101 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 9103 */;
-import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10229 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
+import messagesProxyDefault from "messagesProxy" /* 3148 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8042 */;
+import StarIcon from "StarIcon" /* 9119 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 9121 */;
+import openFavoritesGuildLimitUpsell from "openFavoritesGuildLimitUpsell" /* 10247 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -160,7 +160,7 @@ function _removeChannelFromFavorites() {
 }
 function openNoAccessUpsell() {
   const obj = ACTION_SHEET_HEIGHT_HALFDefault;
-  obj.openLazy(asyncRequireImpl(10230, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
+  obj.openLazy(asyncRequireImpl(10248, dependencyMap.paths), openFavoritesGuildLimitUpsell.FAVORITES_UPSELL_SHEET_KEY, { source: "channel_context_menu" });
 }
 let result = require("set").fileFinishedImporting("modules/favorites/native/buildFavoritesSectionButtons.tsx");
 

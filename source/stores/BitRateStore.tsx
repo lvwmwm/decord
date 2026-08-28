@@ -1,13 +1,13 @@
-// Module ID: 4517
-// Function ID: 4518
+// Module ID: 4518
+// Function ID: 4519
 // Name: bitrate
-// Dependencies: [4509, 589, 709, 2]
+// Dependencies: [4510, 589, 709, 2]
 
-// Module 4517 (bitrate)
+// Module 4518 (bitrate)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DesktopSources from "DesktopSources" /* 4509 */;
+import DesktopSources from "DesktopSources" /* 4510 */;
 
 const DEFAULT_VOICE_BITRATE = DesktopSources.DEFAULT_VOICE_BITRATE;
 const Store = initializeDefault.Store;

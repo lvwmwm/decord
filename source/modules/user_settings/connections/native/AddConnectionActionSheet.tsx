@@ -1,15 +1,15 @@
-// Module ID: 14512
-// Function ID: 14513
+// Module ID: 14496
+// Function ID: 14497
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [676, 4475, 21, 4445, 1297, 4380, 1629, 7181, 5911, 5574, 5573, 1236, 5576, 5551, 4412, 9220, 1435, 1363, 5908, 5905, 5925, 2]
+// Dependencies: [676, 4476, 21, 4446, 1297, 4381, 1629, 7195, 5924, 5587, 5586, 1236, 5589, 5564, 4413, 9238, 1435, 1363, 5921, 5918, 5938, 2]
 // Exports: default
 
-// Module 14512 (AddApplicationIdentityTableRow)
+// Module 14496 (AddApplicationIdentityTableRow)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import items2 from "items" /* 4475 */;
+import items2 from "items" /* 4476 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import Button from "Button" /* 1297 */;
 
 function AddApplicationIdentityTableRow(application) {
@@ -17,10 +17,10 @@ function AddApplicationIdentityTableRow(application) {
   let _require;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5908)(application));
-  const tmp2 = analyticsLocations(5908)(application);
-  analyticsLocations = analyticsLocations(5905)(analyticsLocations(5925).ACTION_SHEET).analyticsLocations;
-  const tmp3 = analyticsLocations(5905);
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5921)(application));
+  const tmp2 = analyticsLocations(5921)(application);
+  analyticsLocations = analyticsLocations(5918)(analyticsLocations(5938).ACTION_SHEET).analyticsLocations;
+  const tmp3 = analyticsLocations(5918);
   let obj = _require(1297);
   const iconSource = application.getIconSource(obj.getIconSize(_require(1297).IconSizes.LARGE));
   obj = {
@@ -45,9 +45,9 @@ function AddApplicationIdentityTableRow(application) {
     tmp7Result = tmp7(tmp5(1297).Icon, obj);
   }
   obj[4] = tmp7Result;
-  obj[5] = closure_5(_require(5551).TableRow.Arrow, {});
+  obj[5] = closure_5(_require(5564).TableRow.Arrow, {});
   obj[6] = !canStartAuthorization;
-  return closure_5(_require(5551).TableRow, obj, application.id);
+  return closure_5(_require(5564).TableRow, obj, application.id);
 }
 const AnalyticsLocations = ME.AnalyticsLocations;
 let closure_4 = items2.getMigratedApplicationIdentityConnectionsScreenApplications;

@@ -1,36 +1,36 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16580
+// Function ID: 16581
 // Name: getSectionLabel
-// Dependencies: [19, 17, 1922, 16555, 21, 4445, 712, 4925, 1236, 9109, 589, 4107, 9055, 9065, 16563, 4887, 12, 5956, 1297, 16571, 10302, 4408, 8768, 9064, 7728, 4441, 2]
+// Dependencies: [19, 17, 1923, 16573, 21, 4446, 712, 4938, 1236, 9127, 589, 4108, 9073, 9083, 16581, 4900, 12, 5969, 1297, 16589, 10320, 4409, 8784, 9082, 7742, 4442, 2]
 
-// Module 16562 (getSectionLabel)
+// Module 16580 (getSectionLabel)
 import ThemesDefault from "Themes" /* 712 */;
-import SoundButtonOverlay from "SoundButtonOverlay" /* 4925 */;
-import renderDefaultEmptyDefault from "renderDefaultEmpty" /* 7728 */;
+import SoundButtonOverlay from "SoundButtonOverlay" /* 4938 */;
+import renderDefaultEmptyDefault from "renderDefaultEmpty" /* 7742 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT" /* 16555 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT" /* 16573 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function getSectionLabel(category) {
   const type = category.category.categoryInfo.type;
   if (SoundButtonOverlay.SoundboardSoundGridSectionType.GUILD === type) {
     return category.category.categoryInfo.guild.name;
-  } else if (tmp(4925).SoundboardSoundGridSectionType.DEFAULTS === type) {
+  } else if (tmp(4938).SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl4 = tmp(1236).intl;
     return intl4.string(tmp(1236).t.Rtvk9X);
-  } else if (tmp(4925).SoundboardSoundGridSectionType.FAVORITES === type) {
+  } else if (tmp(4938).SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl3 = tmp(1236).intl;
     return intl3.string(tmp(1236).t.y3LQCG);
-  } else if (tmp(4925).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+  } else if (tmp(4938).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
     const intl2 = tmp(1236).intl;
     return intl2.string(tmp(1236).t["+cGVV6"]);
-  } else if (tmp(4925).SoundboardSoundGridSectionType.SEARCH === type) {
+  } else if (tmp(4938).SoundboardSoundGridSectionType.SEARCH === type) {
     return null;
-  } else if (tmp(4925).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
+  } else if (tmp(4938).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
     const intl = tmp(1236).intl;
     const obj = { guildName: null };
     obj[0] = category.category.categoryInfo.guild.name;
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     START = END;
   }
   closure_5 = callback2();
-  let obj = channel(4887);
+  let obj = channel(4900);
   const fontScale = obj.useFontScale();
   let tmp3 = (function getFastListSectionsFromCategories(categories, closure_6, fontScale) {
     const items = [];
@@ -173,7 +173,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     while (iter !== undefined) {
       let tmp2 = callback;
       let tmp3 = dependencyMap;
-      let arr2 = callback(9109)(nextResult.items, closure_6);
+      let arr2 = callback(9127)(nextResult.items, closure_6);
       let tmp4 = closure_9;
       let obj = { category: null, height: null, soundsByRow: null };
       obj[0] = nextResult;
@@ -266,7 +266,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
   });
   let obj3 = channel(12);
   const items2 = [closure_5];
-  callback2 = channel(589).useStateFromStores(items2, () => callback(4107).canUseSoundboardEverywhere(currentUser.getCurrentUser()));
+  callback2 = channel(589).useStateFromStores(items2, () => callback(4108).canUseSoundboardEverywhere(currentUser.getCurrentUser()));
   obj = {
     onLayout(nativeEvent) {
       return callback4(0, nativeEvent.nativeEvent.layout.height);

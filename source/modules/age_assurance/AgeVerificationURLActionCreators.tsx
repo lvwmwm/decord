@@ -1,14 +1,14 @@
-// Module ID: 8619
-// Function ID: 8620
+// Module ID: 8634
+// Function ID: 8635
 // Name: requestAgeVerification
-// Dependencies: [5, 1218, 8614, 676, 8620, 530, 709, 2]
+// Dependencies: [5, 1218, 8629, 676, 8635, 530, 709, 2]
 // Exports: getAgeVerificationMethods, initiateAgeVerificationV2, registerIncodeInterview, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 8619 (requestAgeVerification)
+// Module 8634 (requestAgeVerification)
 import sendRequest from "sendRequest" /* 530 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import { VerificationVendorName } from "set" /* 8614 */;
+import { VerificationVendorName } from "set" /* 8629 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;

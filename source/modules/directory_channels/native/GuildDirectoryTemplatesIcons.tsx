@@ -1,17 +1,17 @@
-// Module ID: 11809
-// Function ID: 11810
+// Module ID: 11828
+// Function ID: 11829
 // Name: GUILD_TEMPLATE_ICONS
-// Dependencies: [11810, 11811, 11812, 11813, 11814, 11815, 11816, 2]
+// Dependencies: [11829, 11830, 11831, 11832, 11833, 11834, 11835, 2]
 
-// Module 11809 (GUILD_TEMPLATE_ICONS)
+// Module 11828 (GUILD_TEMPLATE_ICONS)
 import set from "set" /* 2 */;
-import registerAssetDefault from "registerAsset" /* 11810 */;
-import registerAssetDefault2 from "registerAsset" /* 11811 */;
-import registerAssetDefault3 from "registerAsset" /* 11812 */;
-import registerAssetDefault4 from "registerAsset" /* 11813 */;
-import registerAssetDefault5 from "registerAsset" /* 11814 */;
-import registerAssetDefault6 from "registerAsset" /* 11815 */;
-import registerAssetDefault7 from "registerAsset" /* 11816 */;
+import registerAssetDefault from "registerAsset" /* 11829 */;
+import registerAssetDefault2 from "registerAsset" /* 11830 */;
+import registerAssetDefault3 from "registerAsset" /* 11831 */;
+import registerAssetDefault4 from "registerAsset" /* 11832 */;
+import registerAssetDefault5 from "registerAsset" /* 11833 */;
+import registerAssetDefault6 from "registerAsset" /* 11834 */;
+import registerAssetDefault7 from "registerAsset" /* 11835 */;
 
 const obj = { CREATE: registerAssetDefault, HUB_SCHOOL_CLUB: registerAssetDefault2, HUB_STUDY: registerAssetDefault3, HUB_CLASS: registerAssetDefault4, HUB_SOCIAL: registerAssetDefault5, HUB_MAJOR: registerAssetDefault6, HUB_DORM: registerAssetDefault7 };
 const result = set.fileFinishedImporting("modules/directory_channels/native/GuildDirectoryTemplatesIcons.tsx");

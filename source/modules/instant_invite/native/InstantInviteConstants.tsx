@@ -1,9 +1,9 @@
-// Module ID: 9834
-// Function ID: 9835
+// Module ID: 9852
+// Function ID: 9853
 // Name: SHARE_APPS_KEY
 // Dependencies: [2]
 
-// Module 9834 (SHARE_APPS_KEY)
+// Module 9852 (SHARE_APPS_KEY)
 import set from "set" /* 2 */;
 
 let obj = { TWITTER: "twitter", WHATSAPP: "whatsapp", GMAIL: "googlegmail", LINE: "line", MESSENGER: "fb-messenger", TELEGRAM: "tg" };

@@ -1,28 +1,28 @@
-// Module ID: 15946
-// Function ID: 15947
+// Module ID: 15964
+// Function ID: 15965
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 676, 12151, 21, 4445, 10122, 712, 500, 1500, 698, 1297, 4887, 15941, 5020, 15942, 13734, 4441, 1236, 5560, 2]
+// Dependencies: [19, 17, 676, 12170, 21, 4446, 10140, 712, 500, 1500, 698, 1297, 4900, 15959, 5033, 15960, 13753, 4442, 1236, 5573, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
-// Module 15946 (ForYouShowAllRow)
+// Module 15964 (ForYouShowAllRow)
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4441 */;
-import getFontScale from "getFontScale" /* 4887 */;
-import PressableBase from "PressableBase" /* 5020 */;
-import registerAssetDefault from "registerAsset" /* 5560 */;
-import getLayoutStyles from "getLayoutStyles" /* 10122 */;
-import AvatarDuoPile from "AvatarDuoPile" /* 13734 */;
-import renderChannelPressableWrapper from "renderChannelPressableWrapper" /* 15941 */;
-import renderChannelWrapper from "renderChannelWrapper" /* 15942 */;
+import Text from "Text" /* 4442 */;
+import getFontScale from "getFontScale" /* 4900 */;
+import PressableBase from "PressableBase" /* 5033 */;
+import registerAssetDefault from "registerAsset" /* 5573 */;
+import getLayoutStyles from "getLayoutStyles" /* 10140 */;
+import AvatarDuoPile from "AvatarDuoPile" /* 13753 */;
+import renderChannelPressableWrapper from "renderChannelPressableWrapper" /* 15959 */;
+import renderChannelWrapper from "renderChannelWrapper" /* 15960 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { Sections } from "SuggestedFriendSource" /* 12151 */;
+import { Sections } from "SuggestedFriendSource" /* 12170 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function ForYouShowAllRow(panelVariant) {
@@ -115,7 +115,7 @@ export const ForYouSuggestedFriendShowAllRow = function ForYouSuggestedFriendSho
     children: React.useMemo(() => {
       const substr = suggestedFriends.slice(2, 4);
       return substr.map((user) => {
-        const obj = { user: user.user, guildId: "Array", size: "tongue" };
+        const obj = { user: user.user, guildId: "Array", size: true };
         const obj2 = closure_1_0(closure_1_2[6]);
         const tmp = closure_1_7;
         const AvatarSizes = closure_1_0(closure_1_2[11]).AvatarSizes;

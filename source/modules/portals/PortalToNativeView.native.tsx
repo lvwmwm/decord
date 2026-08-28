@@ -1,13 +1,13 @@
-// Module ID: 7726
-// Function ID: 7727
+// Module ID: 7740
+// Function ID: 7741
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 4445, 2]
+// Dependencies: [19, 17, 21, 4446, 2]
 // Exports: default
 
-// Module 7726 (PortalToNativeView)
+// Module 7740 (PortalToNativeView)
 import noopAll from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 noopAll;
 let closure_1 = require("get ActivityIndicator").requireNativeComponent("PortalToNativeView");

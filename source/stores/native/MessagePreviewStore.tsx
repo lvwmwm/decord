@@ -1,9 +1,9 @@
-// Module ID: 8562
-// Function ID: 8563
+// Module ID: 8577
+// Function ID: 8578
 // Name: messages
-// Dependencies: [4690, 589, 12, 709, 2]
+// Dependencies: [4703, 589, 12, 709, 2]
 
-// Module 8562 (messages)
+// Module 8577 (messages)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

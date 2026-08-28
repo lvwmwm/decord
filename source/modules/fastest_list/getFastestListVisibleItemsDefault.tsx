@@ -1,10 +1,10 @@
-// Module ID: 7724
-// Function ID: 7725
+// Module ID: 7738
+// Function ID: 7739
 // Name: getFastestListVisibleItemsDefault
 // Dependencies: [2]
 // Exports: default
 
-// Module 7724 (getFastestListVisibleItemsDefault)
+// Module 7738 (getFastestListVisibleItemsDefault)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/fastest_list/getFastestListVisibleItemsDefault.tsx");

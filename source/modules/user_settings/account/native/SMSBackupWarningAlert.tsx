@@ -1,14 +1,14 @@
-// Module ID: 7733
-// Function ID: 7734
+// Module ID: 7747
+// Function ID: 7748
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 4445, 4899, 1236, 4810, 4441, 2]
+// Dependencies: [19, 21, 4446, 4912, 1236, 4823, 4442, 2]
 // Exports: default
 
-// Module 7733 (SMSBackupWarningAlert)
+// Module 7747 (SMSBackupWarningAlert)
 import noopAll from "noop" /* 19 */;
-import componentDidMountDefault from "componentDidMount" /* 4899 */;
+import componentDidMountDefault from "componentDidMount" /* 4912 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 noopAll;
@@ -34,11 +34,11 @@ export default function SMSBackupWarningAlert(onConfirm) {
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl3 = onConfirm(1236).intl;
   obj[4] = intl3.string(onConfirm(1236).t.Ed4XQB);
-  const items = [callback(onConfirm(4441).Text, obj), ];
+  const items = [callback(onConfirm(4442).Text, obj), ];
   obj = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: null };
   const intl4 = onConfirm(1236).intl;
   obj[3] = intl4.string(onConfirm(1236).t.EDU2Eg);
-  items[1] = callback(onConfirm(4441).Text, obj);
+  items[1] = callback(onConfirm(4442).Text, obj);
   obj[4] = items;
   return callback2(componentDidMountDefault, obj);
 };

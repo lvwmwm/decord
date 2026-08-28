@@ -1,9 +1,9 @@
-// Module ID: 16094
-// Function ID: 16095
+// Module ID: 16112
+// Function ID: 16113
 // Name: open
 // Dependencies: [2]
 
-// Module 16094 (open)
+// Module 16112 (open)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/vibegrations/lib/VibegrationsWebSocket.tsx");

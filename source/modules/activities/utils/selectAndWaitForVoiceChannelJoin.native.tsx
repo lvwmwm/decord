@@ -1,12 +1,12 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9428
+// Function ID: 9429
 // Name: _selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 1981, 5307, 2]
+// Dependencies: [5, 1982, 5320, 2]
 // Exports: default
 
-// Module 9410 (_selectAndWaitForVoiceChannelJoin)
+// Module 9428 (_selectAndWaitForVoiceChannelJoin)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "handleConnectionOpen" /* 1981 */;
+import closure_3 from "handleConnectionOpen" /* 1982 */;
 
 function _selectAndWaitForVoiceChannelJoin() {
   const self = this;

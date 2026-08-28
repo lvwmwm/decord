@@ -1,15 +1,15 @@
-// Module ID: 7583
-// Function ID: 7584
+// Module ID: 7597
+// Function ID: 7598
 // Name: useSetInitialVerificationEffect
-// Dependencies: [19, 1922, 7584, 589, 4270, 2]
+// Dependencies: [19, 1923, 7598, 589, 4271, 2]
 // Exports: useInitialVerification, useSetInitialVerificationEffect, useUserVerificationState
 
-// Module 7583 (useSetInitialVerificationEffect)
+// Module 7597 (useSetInitialVerificationEffect)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import closure_4 from "map" /* 7584 */;
-import { setInitialVerification } from "map" /* 7584 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "map" /* 7598 */;
+import { setInitialVerification } from "map" /* 7598 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/native/MemberVerificationModalHooks.tsx");

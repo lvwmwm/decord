@@ -1,14 +1,14 @@
-// Module ID: 10237
-// Function ID: 10238
+// Module ID: 10255
+// Function ID: 10256
 // Name: useCanShowFavoritesGuildOnboarding
-// Dependencies: [4154, 1981, 589, 4299, 2]
+// Dependencies: [4155, 1982, 589, 4300, 2]
 // Exports: default
 
-// Module 10237 (useCanShowFavoritesGuildOnboarding)
+// Module 10255 (useCanShowFavoritesGuildOnboarding)
 import initialize from "initialize" /* 589 */;
-import coerceMainRoute from "coerceMainRoute" /* 4299 */;
-import closure_2 from "setContent" /* 4154 */;
-import closure_3 from "handleConnectionOpen" /* 1981 */;
+import coerceMainRoute from "coerceMainRoute" /* 4300 */;
+import closure_2 from "setContent" /* 4155 */;
+import closure_3 from "handleConnectionOpen" /* 1982 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/favorites/hooks/useCanShowFavoritesGuildOnboarding.native.tsx");

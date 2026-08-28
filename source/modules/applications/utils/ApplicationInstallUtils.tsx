@@ -1,13 +1,13 @@
-// Module ID: 8377
-// Function ID: 8378
+// Module ID: 8391
+// Function ID: 8392
 // Name: canInstallApplication
-// Dependencies: [8078, 4904, 8365, 2]
+// Dependencies: [8092, 4917, 8379, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8377 (canInstallApplication)
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8365 */;
-import closure_2 from "getIndexKey" /* 8078 */;
-import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4904 */;
+// Module 8391 (canInstallApplication)
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8379 */;
+import closure_2 from "getIndexKey" /* 8092 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4917 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/applications/utils/ApplicationInstallUtils.tsx");

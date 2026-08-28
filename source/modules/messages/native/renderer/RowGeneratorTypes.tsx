@@ -1,9 +1,9 @@
-// Module ID: 7967
-// Function ID: 7968
+// Module ID: 7981
+// Function ID: 7982
 // Name: MediaGalleryItemType
 // Dependencies: [2]
 
-// Module 7967 (MediaGalleryItemType)
+// Module 7981 (MediaGalleryItemType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorTypes.tsx");

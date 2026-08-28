@@ -1,13 +1,13 @@
-// Module ID: 8824
-// Function ID: 8825
+// Module ID: 8841
+// Function ID: 8842
 // Name: useMaybeTrackProfileFrameViewed
-// Dependencies: [19, 7220, 647, 8491, 2]
+// Dependencies: [19, 7234, 647, 8505, 2]
 // Exports: default
 
-// Module 8824 (useMaybeTrackProfileFrameViewed)
+// Module 8841 (useMaybeTrackProfileFrameViewed)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7220 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7234 */;
 
 ({ useEffect: obj1, useRef: c3 } = noop);
 let result = set.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeTrackProfileFrameViewed.tsx");

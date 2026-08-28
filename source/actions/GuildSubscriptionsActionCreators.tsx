@@ -1,13 +1,13 @@
-// Module ID: 6109
-// Function ID: 6110
+// Module ID: 6122
+// Function ID: 6123
 // Name: subscribeMembers
-// Dependencies: [709, 6084, 2]
+// Dependencies: [709, 6097, 2]
 // Exports: subscribeChannel, subscribeChannelDimensions, subscribeGuild, subscribeMembers, subscribeToMemberUpdates, unsubscribeFromMemberUpdates, unsubscribeMembers
 
-// Module 6109 (subscribeMembers)
+// Module 6122 (subscribeMembers)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import reset from "reset" /* 6084 */;
+import reset from "reset" /* 6097 */;
 
 let result = set.fileFinishedImporting("actions/GuildSubscriptionsActionCreators.tsx");
 

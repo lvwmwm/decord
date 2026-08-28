@@ -1,12 +1,12 @@
-// Module ID: 4172
-// Function ID: 4173
+// Module ID: 4173
+// Function ID: 4174
 // Name: ManaContext
-// Dependencies: [2, 1351, 4173, 4174, 1356, 1357, 1352, 1358, 4175, 4176, 1359, 1360, 1361, 1362, 4177, 1365, 4230, 4263]
+// Dependencies: [2, 1351, 4174, 4175, 1356, 1357, 1352, 1358, 4176, 4177, 1359, 1360, 1361, 1362, 4178, 1365, 4231, 4264]
 
-// Module 4172 (ManaContext)
+// Module 4173 (ManaContext)
 import set from "set" /* 2 */;
-import context from "context" /* 4230 */;
-import isImage from "isImage" /* 4263 */;
+import context from "context" /* 4231 */;
+import isImage from "isImage" /* 4264 */;
 import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD" /* 1357 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/native.tsx");
@@ -75,9 +75,9 @@ for (const key10067 in require("ThemeContextFlags")) {
   arg5[key10067] = require("ThemeContextFlags")[key10067];
   continue;
 }
-for (const key10071 in require("module_4177")) {
+for (const key10071 in require("module_4178")) {
   let tmp17 = key10071;
-  arg5[key10071] = require("module_4177")[key10071];
+  arg5[key10071] = require("module_4178")[key10071];
   continue;
 }
 for (const key10075 in require("WCAGContrastRatios")) {

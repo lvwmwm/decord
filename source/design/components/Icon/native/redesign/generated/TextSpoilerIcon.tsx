@@ -1,14 +1,14 @@
-// Module ID: 4978
-// Function ID: 4979
+// Module ID: 4991
+// Function ID: 4992
 // Name: TextSpoilerIcon
-// Dependencies: [19, 21, 712, 4164, 4949, 2]
+// Dependencies: [19, 21, 712, 4165, 4962, 2]
 // Exports: TextSpoilerIcon
 
-// Module 4978 (TextSpoilerIcon)
+// Module 4991 (TextSpoilerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4949 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 4962 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 9795
-// Function ID: 9796
+// Module ID: 9813
+// Function ID: 9814
 // Name: useGameConsoleAccounts
-// Dependencies: [5177, 676, 589, 1370, 2]
+// Dependencies: [5190, 676, 589, 1370, 2]
 // Exports: default
 
-// Module 9795 (useGameConsoleAccounts)
+// Module 9813 (useGameConsoleAccounts)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "set" /* 5177 */;
+import closure_2 from "set" /* 5190 */;
 import { PlatformTypes } from "ME" /* 676 */;
 
 require = arg1;

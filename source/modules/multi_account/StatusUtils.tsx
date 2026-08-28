@@ -1,10 +1,10 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 10113
+// Function ID: 10114
 // Name: getStatusExpiryParts
 // Dependencies: [1236, 2]
 // Exports: getStatusExpiryParts
 
-// Module 10095 (getStatusExpiryParts)
+// Module 10113 (getStatusExpiryParts)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

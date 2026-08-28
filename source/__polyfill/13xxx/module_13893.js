@@ -1,20 +1,19 @@
 // Module ID: 13893
 // Function ID: 13894
-// Dependencies: [13884, 13894, 13892, 13895]
+// Dependencies: [13889]
 
 // Module 13893
-import prop from "prop" /* 13884 */;
-import all from "all" /* 13892 */;
-import all2 from "all" /* 13894 */;
-import call from "call" /* 13895 */;
+import _mod13889 from "module_13889" /* 13889 */;
 
 
-export default prop ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
-  const tmp3 = all2("Symbol");
-  let tmpResultResult = all(tmp3);
-  if (tmpResultResult) {
-    tmpResultResult = call(tmp3.prototype, Object(arg0));
-    const tmpResult = call;
+export default !_mod13889(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  let hasOwnPropertyResult = typeof bindResult !== "function";
+  if (typeof bindResult === "function") {
+    hasOwnPropertyResult = bindResult.hasOwnProperty("prototype");
   }
-  return tmpResultResult;
+  return hasOwnPropertyResult;
 });

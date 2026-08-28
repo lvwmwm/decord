@@ -1,12 +1,12 @@
-// Module ID: 15292
-// Function ID: 15293
+// Module ID: 15444
+// Function ID: 15445
 // Name: MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG
-// Dependencies: [15293, 15294, 2]
+// Dependencies: [15445, 15446, 2]
 
-// Module 15292 (MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG)
+// Module 15444 (MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG)
 import set from "set" /* 2 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15293 */;
-import route from "route" /* 15294 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15445 */;
+import route from "route" /* 15446 */;
 
 const obj = {};
 obj[MobileNotifSettings.MobileNotifSettings.VOICE_ACTIVITY_TITLE] = route.VoiceActivityTitleSetting;

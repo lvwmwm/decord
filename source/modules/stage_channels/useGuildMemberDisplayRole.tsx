@@ -1,12 +1,12 @@
-// Module ID: 5324
-// Function ID: 5325
+// Module ID: 5337
+// Function ID: 5338
 // Name: getHighestHoistedRole
-// Dependencies: [1992, 1910, 4094, 589, 2]
+// Dependencies: [1993, 1910, 4095, 589, 2]
 // Exports: default
 
-// Module 5324 (getHighestHoistedRole)
-import applyOverwritesAll from "applyOverwrites" /* 4094 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
+// Module 5337 (getHighestHoistedRole)
+import applyOverwritesAll from "applyOverwrites" /* 4095 */;
+import closure_3 from "trackCommunicationDisabled" /* 1993 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 
 const require = arg1;

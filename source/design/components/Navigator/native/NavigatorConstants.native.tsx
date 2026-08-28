@@ -1,9 +1,9 @@
-// Module ID: 5444
-// Function ID: 5445
+// Module ID: 5457
+// Function ID: 5458
 // Name: NAV_BAR_HEIGHT
 // Dependencies: [2]
 
-// Module 5444 (NAV_BAR_HEIGHT)
+// Module 5457 (NAV_BAR_HEIGHT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("design/components/Navigator/native/NavigatorConstants.native.tsx");

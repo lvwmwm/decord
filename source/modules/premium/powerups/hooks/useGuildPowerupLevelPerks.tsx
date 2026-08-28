@@ -1,12 +1,12 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12024
+// Function ID: 12025
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [19, 4332, 4336, 1236, 2401, 1370, 2]
+// Dependencies: [19, 4333, 4337, 1236, 2402, 1370, 2]
 // Exports: default
 
-// Module 12005 (useGuildPowerupLevelPerks)
+// Module 12024 (useGuildPowerupLevelPerks)
 import closure_3 from "noop" /* 19 */;
-import { GUILD_FEATURE_TO_PERK } from "BoostedGuildTiers" /* 4332 */;
+import { GUILD_FEATURE_TO_PERK } from "BoostedGuildTiers" /* 4333 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupLevelPerks.tsx");

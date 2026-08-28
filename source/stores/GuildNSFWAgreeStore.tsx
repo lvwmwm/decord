@@ -1,13 +1,13 @@
-// Module ID: 4685
-// Function ID: 4686
+// Module ID: 4698
+// Function ID: 4699
 // Name: initialize
-// Dependencies: [595, 589, 4684, 709, 2]
+// Dependencies: [595, 589, 4697, 709, 2]
 
-// Module 4685 (initialize)
+// Module 4698 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4684 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4697 */;
 
 require = arg1;
 const GuildNSFWAgreeStore = "GuildNSFWAgreeStore";

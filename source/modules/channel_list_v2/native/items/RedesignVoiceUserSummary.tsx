@@ -1,13 +1,13 @@
-// Module ID: 15632
-// Function ID: 15633
+// Module ID: 15650
+// Function ID: 15651
 // Name: RedesignVoiceUserSummary
-// Dependencies: [19, 1981, 4520, 21, 589, 4631, 15631, 2]
+// Dependencies: [19, 1982, 4521, 21, 589, 4632, 15649, 2]
 // Exports: default
 
-// Module 15632 (RedesignVoiceUserSummary)
+// Module 15650 (RedesignVoiceUserSummary)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleConnectionOpen" /* 1981 */;
-import closure_5 from "getVoiceStatesForGuild" /* 4520 */;
+import closure_4 from "handleConnectionOpen" /* 1982 */;
+import closure_5 from "getVoiceStatesForGuild" /* 4521 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -27,7 +27,7 @@ export default function RedesignVoiceUserSummary(channels) {
   const items3 = [channels, stateFromStores1, stateFromStores];
   const stageIcon = stateFromStores1.useMemo(() => channels(stateFromStores[5]).isAnyVoiceStateStage(channels, stateFromStores1, stateFromStores), items3);
   const obj2 = channels(stateFromStores[4]);
-  obj = { channels, selectedChannelId: "r", selectedVoiceChannelId: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009464427057833978, voiceStates: 5168188345740660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj = { channels, selectedChannelId: "r", selectedVoiceChannelId: "r", voiceStates: "quests" };
   obj[2] = stateFromStores1;
   obj[3] = stateFromStores;
   const summarizedVoiceUsers = channels(stateFromStores[5]).computeSummarizedVoiceUsers(obj);

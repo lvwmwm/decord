@@ -1,10 +1,10 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 17015
+// Function ID: 17016
 // Name: setVerifyTimezone
-// Dependencies: [5438, 4134, 2]
+// Dependencies: [5451, 4135, 2]
 
-// Module 16997 (setVerifyTimezone)
-import initializeDefault from "initialize" /* 5438 */;
+// Module 17015 (setVerifyTimezone)
+import initializeDefault from "initialize" /* 5451 */;
 
 let require = arg1;
 let c2 = false;
@@ -33,7 +33,7 @@ prototype["ensureTimezoneUpdated"] = function ensureTimezoneUpdated() {
     const _Date = Date;
     const date = new Date();
     const timezoneOffset = date.getTimezoneOffset();
-    let TimezoneOffset = timezoneOffset(4134).TimezoneOffset;
+    let TimezoneOffset = timezoneOffset(4135).TimezoneOffset;
     if (TimezoneOffset.getSetting() !== timezoneOffset) {
       const _setImmediate = setImmediate;
       setImmediate(() => {

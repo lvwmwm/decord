@@ -1,10 +1,10 @@
-// Module ID: 8629
-// Function ID: 8630
+// Module ID: 8644
+// Function ID: 8645
 // Name: useIsAgeVerificationIncodeEnabled
 // Dependencies: [1472, 2]
 // Exports: isAgeVerificationIncodeEnabled, useIsAgeVerificationIncodeEnabled
 
-// Module 8629 (useIsAgeVerificationIncodeEnabled)
+// Module 8644 (useIsAgeVerificationIncodeEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

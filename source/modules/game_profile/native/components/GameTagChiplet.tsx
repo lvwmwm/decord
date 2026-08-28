@@ -1,14 +1,14 @@
-// Module ID: 16653
-// Function ID: 16654
-// Dependencies: [19, 17, 21, 4445, 8726, 8737, 8929, 2]
+// Module ID: 16671
+// Function ID: 16672
+// Dependencies: [19, 17, 21, 4446, 8742, 8753, 8947, 2]
 
-// Module 16653
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8726 */;
-import GameProfileEmbedAction from "GameProfileEmbedAction" /* 8737 */;
-import memoResult1 from "memoResult1" /* 8929 */;
+// Module 16671
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8742 */;
+import GameProfileEmbedAction from "GameProfileEmbedAction" /* 8753 */;
+import memoResult1 from "memoResult1" /* 8947 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

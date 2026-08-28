@@ -1,22 +1,22 @@
-// Module ID: 11193
-// Function ID: 11194
+// Module ID: 11211
+// Function ID: 11212
 // Name: MessagePreview
-// Dependencies: [19, 17, 21, 4445, 712, 4380, 7967, 7774, 8704, 11194, 1955, 11195, 12, 11196, 1236, 11198, 10133, 4988, 10115, 5445, 1493, 8030, 4441, 2855, 7985, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 4381, 7981, 7788, 8720, 11212, 1956, 11213, 12, 11214, 1236, 11216, 10151, 5001, 10133, 5458, 1493, 8044, 4442, 2856, 7999, 2]
 // Exports: ForwardPreview
 
-// Module 11193 (MessagePreview)
+// Module 11211 (MessagePreview)
 import ThemesDefault from "Themes" /* 712 */;
 import getSrcWithWidthAndHeightDefault from "getSrcWithWidthAndHeight" /* 1493 */;
-import messagesProxyDefault from "messagesProxy" /* 2855 */;
-import useThemeDefault from "useTheme" /* 4380 */;
-import preloadDefault from "preload" /* 5445 */;
-import SolidCutoutDefault from "SolidCutout" /* 8030 */;
-import DCDChatItemDefault from "DCDChatItem" /* 8704 */;
-import useForwardPreviewContent from "useForwardPreviewContent" /* 11194 */;
+import messagesProxyDefault from "messagesProxy" /* 2856 */;
+import useThemeDefault from "useTheme" /* 4381 */;
+import preloadDefault from "preload" /* 5458 */;
+import SolidCutoutDefault from "SolidCutout" /* 8044 */;
+import DCDChatItemDefault from "DCDChatItem" /* 8720 */;
+import useForwardPreviewContent from "useForwardPreviewContent" /* 11212 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function MessagePreview(content) {
@@ -27,7 +27,7 @@ function MessagePreview(content) {
   } else {
     TEXT_SUBTLE = tmp(712).colors.TEXT_SUBTLE;
   }
-  let obj = attachmentCount(4445);
+  let obj = attachmentCount(4446);
   const tmp4 = obj.createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(useThemeDefault());
   importDefault = tmp4;
   const items = [tmp4.seeMoreLabelColor, attachmentCount];
@@ -84,7 +84,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   let checkpointData = null;
   if (contentMessage.components.length > 0) {
     checkpointData = null;
-    if (contentMessage.components[0].type === tmp2(1955).ComponentType.CHECKPOINT_CARD) {
+    if (contentMessage.components[0].type === tmp2(1956).ComponentType.CHECKPOINT_CARD) {
       checkpointData = contentMessage.components[0].checkpointData;
     }
   }
@@ -94,7 +94,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     if (num == null) {
       num = 0;
     }
-    tmp6 = tmp2(11195).CHECKPOINT_PERSONA_COLORS[num];
+    tmp6 = tmp2(11213).CHECKPOINT_PERSONA_COLORS[num];
   }
   if (tmp6 != null) {
     const primaryColor = tmp6.primaryColor;
@@ -117,7 +117,7 @@ export const ForwardPreview = function ForwardPreview(message) {
         obj[0] = num2;
         obj[1] = num3;
         let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1236).t.Lr0Top, obj);
-        let AttachmentIcon = tmp2(11198).ImagesIcon;
+        let AttachmentIcon = tmp2(11216).ImagesIcon;
       }
       if (num3 > 0) {
         if (length === num3) {
@@ -136,7 +136,7 @@ export const ForwardPreview = function ForwardPreview(message) {
           const items1 = [callback(preloadDefault, obj1), ];
           const obj3 = { style: null, size: "md", color: "white" };
           obj3[0] = tmp.playIcon;
-          items1[1] = callback(tmp2(10133).CirclePlayIcon, obj3);
+          items1[1] = callback(tmp2(10151).CirclePlayIcon, obj3);
           obj[1] = items1;
           let tmp7 = callback2(View, obj);
           let tmp8 = AttachmentIcon;
@@ -194,15 +194,15 @@ export const ForwardPreview = function ForwardPreview(message) {
       const obj10 = { count: null };
       obj10[0] = num3;
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1236).t.SJ6pPX, obj10);
-      AttachmentIcon = tmp2(10133).CirclePlayIcon;
+      AttachmentIcon = tmp2(10151).CirclePlayIcon;
     } else if (num2 > 0) {
       const intl2 = tmp2(1236).intl;
       const obj11 = { count: null };
       obj11[0] = num2;
       if (1 === num2) {
-        let ImagesIcon = tmp2(4988).ImageIcon;
+        let ImagesIcon = tmp2(5001).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11198).ImagesIcon;
+        ImagesIcon = tmp2(11216).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.h4pFfU, obj11);
@@ -212,7 +212,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       const obj12 = { count: null };
       obj12[0] = length;
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1236).t["89ihS8"], obj12);
-      AttachmentIcon = tmp2(10115).AttachmentIcon;
+      AttachmentIcon = tmp2(10133).AttachmentIcon;
     }
   } else {
     tmp7 = null;
@@ -224,7 +224,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     tmp33 = tmp7;
     if (null != tmp7) {
       obj13 = { shape: null, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
-      obj13[0] = tmp2(8030).CutoutShape.RoundedRect;
+      obj13[0] = tmp2(8044).CutoutShape.RoundedRect;
       const obj14 = { style: null, children: null };
       obj14[0] = tmp.attachmentPreviewOverflow;
       const obj15 = { cutouts: null, children: null };
@@ -236,7 +236,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       obj16[0] = tmp.overflowCount;
       const items4 = ["+", length - 1];
       obj16[3] = items4;
-      items3[1] = callback2(tmp2(4441).Text, obj16);
+      items3[1] = callback2(tmp2(4442).Text, obj16);
       obj14[1] = items3;
       tmp33 = callback2(View, obj14);
     }
@@ -249,7 +249,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     const obj20 = { variant: "text-md/medium", children: null };
     const intl5 = tmp2(1236).intl;
     obj20[1] = intl5.string(messagesProxyDefault.goiR2u);
-    tmp36Result = tmp36(tmp2(4441).Text, obj20);
+    tmp36Result = tmp36(tmp2(4442).Text, obj20);
   }
   const items6 = [tmp36Result, , ];
   tmp36Result = hasContent;
@@ -290,7 +290,7 @@ export const ForwardPreview = function ForwardPreview(message) {
       const obj24 = { variant: null, color: "text-muted", children: null };
       obj24[0] = str3;
       obj24[2] = tmp9;
-      tmp36Result2 = tmp36(tmp2(4441).Text, obj24);
+      tmp36Result2 = tmp36(tmp2(4442).Text, obj24);
     }
     items7[1] = tmp36Result2;
     obj22[1] = items7;
@@ -310,7 +310,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     obj26[0] = obj27;
     obj26[1] = c7;
     obj26[2] = c7;
-    tmp2Result = tmp2(7985);
+    tmp2Result = tmp2(7999);
     let num5 = checkpointData.cardId;
     if (num5 == null) {
       num5 = 0;

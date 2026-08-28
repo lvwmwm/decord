@@ -1,19 +1,19 @@
-// Module ID: 8434
-// Function ID: 8435
+// Module ID: 8448
+// Function ID: 8449
 // Name: WarningBox
-// Dependencies: [19, 17, 21, 4445, 8435, 4441, 1236, 8437, 3339, 2]
+// Dependencies: [19, 17, 21, 4446, 8449, 4442, 1236, 8451, 3340, 2]
 // Exports: default
 
-// Module 8434 (WarningBox)
+// Module 8448 (WarningBox)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8435 */;
-import InfoBox from "InfoBox" /* 8437 */;
-import InfoBoxDefault from "InfoBox" /* 8437 */;
+import Text from "Text" /* 4442 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8449 */;
+import InfoBox from "InfoBox" /* 8451 */;
+import InfoBoxDefault from "InfoBox" /* 8451 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function WarningBox(application) {
@@ -30,7 +30,7 @@ function WarningBox(application) {
     obj[1] = tmp.warningBox;
     const intl = getSystemLocale.intl;
     if (mobileAccountLinkingDisabled) {
-      BMMo2K = name(3339).BMMo2K;
+      BMMo2K = name(3340).BMMo2K;
       tmp2 = application == tmp2;
       name = undefined;
       if (!tmp2) {

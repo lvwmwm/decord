@@ -1,17 +1,17 @@
-// Module ID: 12085
-// Function ID: 12086
+// Module ID: 12104
+// Function ID: 12105
 // Name: useGetJoinRequestAndGuildForInterviewChannel
-// Dependencies: [32, 19, 1910, 4089, 7136, 4268, 676, 11, 589, 7594, 2]
+// Dependencies: [32, 19, 1910, 4090, 7149, 4269, 676, 11, 589, 7608, 2]
 // Exports: default
 
-// Module 12085 (useGetJoinRequestAndGuildForInterviewChannel)
+// Module 12104 (useGetJoinRequestAndGuildForInterviewChannel)
 import initialize from "initialize" /* 589 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_7 from "updateSubmittedGuildJoinRequestTotal" /* 7136 */;
-import closure_8 from "handleGatewayJoinRequestUpdate" /* 4268 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_7 from "updateSubmittedGuildJoinRequestTotal" /* 7149 */;
+import closure_8 from "handleGatewayJoinRequestUpdate" /* 4269 */;
 import { Permissions } from "ME" /* 676 */;
 
 require = arg1;
@@ -53,19 +53,19 @@ export default function useGetJoinRequestAndGuildForInterviewChannel(id) {
   const effect = joinRequest.useEffect(() => {
     if (!tmp) {
       dependencyMap(true);
-      const requestToJoinGuilds = first(7594).fetchRequestToJoinGuilds();
-      const obj = first(7594);
+      const requestToJoinGuilds = first(7608).fetchRequestToJoinGuilds();
+      const obj = first(7608);
     }
   }, items1);
   const items2 = [joinRequest, castResult];
   const effect1 = joinRequest.useEffect(() => {
     if (null == joinRequest) {
       callback(true);
-      const joinRequestForInterview = first(7594).fetchJoinRequestForInterview(closure_3);
+      const joinRequestForInterview = first(7608).fetchJoinRequestForInterview(closure_3);
       joinRequestForInterview.finally(() => {
         callback(false);
       });
-      const obj = first(7594);
+      const obj = first(7608);
     }
   }, items2);
   return { loading, joinRequest, joinRequestGuild };

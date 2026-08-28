@@ -1,12 +1,12 @@
-// Module ID: 14005
-// Function ID: 14006
+// Module ID: 14024
+// Function ID: 14025
 // Name: A11Y_FEATURE_MAP
-// Dependencies: [13763, 2, 13685]
+// Dependencies: [13782, 2, 13704]
 
-// Module 14005 (A11Y_FEATURE_MAP)
+// Module 14024 (A11Y_FEATURE_MAP)
 import set from "set" /* 2 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 13685 */;
-import AccessibilityFeatureFlags2 from "AccessibilityFeatureFlags" /* 13763 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 13704 */;
+import AccessibilityFeatureFlags2 from "AccessibilityFeatureFlags" /* 13782 */;
 
 const AccessibilityFeatureFlags = AccessibilityFeatureFlags2.AccessibilityFeatureFlags;
 const result = set.fileFinishedImporting("modules/a11y/native/AccessibilityPreferencesSharedValue.tsx");

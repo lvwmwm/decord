@@ -1,12 +1,12 @@
-// Module ID: 4370
-// Function ID: 4371
+// Module ID: 4371
+// Function ID: 4372
 // Name: useGuildPowerupBoostLevelProgress
-// Dependencies: [1910, 676, 4351, 589, 2]
+// Dependencies: [1910, 676, 4352, 589, 2]
 // Exports: default, getGuildPowerupBoostLevelProgress
 
-// Module 4370 (useGuildPowerupBoostLevelProgress)
-import useGuildAppliedBoostCount from "useGuildAppliedBoostCount" /* 4351 */;
-import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4351 */;
+// Module 4371 (useGuildPowerupBoostLevelProgress)
+import useGuildAppliedBoostCount from "useGuildAppliedBoostCount" /* 4352 */;
+import useGuildAppliedBoostCountDefault from "useGuildAppliedBoostCount" /* 4352 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
 

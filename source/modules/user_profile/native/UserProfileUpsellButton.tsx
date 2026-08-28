@@ -1,15 +1,15 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 14181
+// Function ID: 14182
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 676, 1924, 21, 4445, 5905, 7125, 698, 4880, 8101, 1236, 8028, 2]
+// Dependencies: [19, 676, 1925, 21, 4446, 5918, 7138, 698, 4893, 8115, 1236, 8042, 2]
 // Exports: default
 
-// Module 14211 (UserProfileUpsellButton)
+// Module 14181 (UserProfileUpsellButton)
 import closure_3 from "noop" /* 19 */;
 import ME from "ME" /* 676 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1925 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ AnalyticsPages: c4, UpsellTypes: c5, AnalyticsSections: closure_6, AnalyticEvents: error } = ME);
@@ -19,8 +19,8 @@ let result = require("set").fileFinishedImporting("modules/user_profile/native/U
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5905)().analyticsLocations;
-  let obj = analyticsObject(7125);
+  analyticsLocations = analyticsLocations(5918)().analyticsLocations;
+  let obj = analyticsObject(7138);
   let label = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = React.useEffect(() => {
@@ -49,6 +49,6 @@ export default function UserProfileUpsellButton(analyticsObject) {
   }
   obj[2] = label;
   obj = { color: "white", size: "sm", style: callback().nitroWheel };
-  obj[3] = jsx(analyticsObject(8028).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
-  return jsx(analyticsObject(4880).Button, { color: "white", size: "sm", style: callback().nitroWheel });
+  obj[3] = jsx(analyticsObject(8042).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
+  return jsx(analyticsObject(4893).Button, { color: "white", size: "sm", style: callback().nitroWheel });
 };

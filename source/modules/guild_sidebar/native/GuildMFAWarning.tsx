@@ -1,23 +1,23 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 15718
+// Function ID: 15719
 // Name: handlePress
-// Dependencies: [5, 19, 17, 676, 21, 4445, 712, 9009, 1995, 2009, 4158, 5020, 15701, 4441, 1236, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4446, 712, 9027, 1996, 2010, 4159, 5033, 15719, 4442, 1236, 1297, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15700 (handlePress)
+// Module 15718 (handlePress)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4441 */;
-import PressableBase from "PressableBase" /* 5020 */;
-import map from "map" /* 9009 */;
-import registerAssetDefault from "registerAsset" /* 15701 */;
+import Text from "Text" /* 4442 */;
+import PressableBase from "PressableBase" /* 5033 */;
+import map from "map" /* 9027 */;
+import registerAssetDefault from "registerAsset" /* 15719 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function handlePress() {

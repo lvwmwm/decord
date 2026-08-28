@@ -1,16 +1,16 @@
-// Module ID: 12975
-// Function ID: 12976
+// Module ID: 12994
+// Function ID: 12995
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1910, 6027, 676, 8427, 6025, 1222, 6137, 8580, 2]
+// Dependencies: [5, 1910, 6040, 676, 8441, 6038, 1222, 6150, 8595, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 12975 (navigateToSocialLayerStorefrontWithGuildPreview)
+// Module 12994 (navigateToSocialLayerStorefrontWithGuildPreview)
 import transitionTo from "transitionTo" /* 1222 */;
-import getPrice from "getPrice" /* 6025 */;
-import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8427 */;
+import getPrice from "getPrice" /* 6038 */;
+import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8441 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "handleUserSettingsStoreUpdate" /* 6027 */;
+import closure_5 from "handleUserSettingsStoreUpdate" /* 6040 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -106,7 +106,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                     if (null != set) {
                       if (!set.has(guild3.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj4 = lib(8580);
+                          let obj4 = lib(8595);
                           let obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           obj2[1] = { location: "game_shop" };
@@ -121,7 +121,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                     c3 = 2;
                     guild = 1;
                     obj4 = { value: null, done: false };
-                    obj4[0] = id(6137).startLurking(id, {}, { shouldNavigate: false });
+                    obj4[0] = id(6150).startLurking(id, {}, { shouldNavigate: false });
                     return obj4;
                   }
                 } else {

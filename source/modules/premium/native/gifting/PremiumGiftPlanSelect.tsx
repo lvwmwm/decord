@@ -1,20 +1,20 @@
-// Module ID: 10393
-// Function ID: 10394
+// Module ID: 10411
+// Function ID: 10412
 // Name: items
-// Dependencies: [32, 19, 17, 8492, 10394, 1924, 676, 21, 4445, 712, 689, 1500, 1629, 1494, 10396, 4867, 5453, 589, 10440, 10438, 8489, 10374, 10442, 10445, 7577, 4185, 1297, 4446, 10453, 5925, 10454, 10488, 9451, 1236, 5503, 5445, 10706, 4892, 5444, 4441, 2]
+// Dependencies: [32, 19, 17, 8506, 10412, 1925, 676, 21, 4446, 712, 689, 1500, 1629, 1494, 10414, 4880, 5466, 589, 10456, 10454, 8503, 10392, 10458, 10461, 7591, 4186, 1297, 4447, 10469, 5938, 10470, 10504, 9469, 1236, 5516, 5458, 10724, 4905, 5457, 4442, 2]
 // Exports: default
 
-// Module 10393 (items)
+// Module 10411 (items)
 import nDefault from "n" /* 689 */;
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "initialize" /* 8492 */;
-import closure_10 from "createEmptyPromotionsByType" /* 10394 */;
+import closure_9 from "initialize" /* 8506 */;
+import closure_10 from "createEmptyPromotionsByType" /* 10412 */;
 import { VerticalGradient } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, Pressable: closure_6, View: error, ScrollView: closure_8 } = get_ActivityIndicator);
@@ -536,7 +536,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         const tmp4Result3 = tmp4(tmp2[30]);
       }
     } else {
-      const obj34 = { style: null, guildId: "r", size: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009464427057833978, user: 5168188345740660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+      const obj34 = { style: null, guildId: "r", size: "r", user: "quests" };
       obj34[0] = tmp13.avatar;
       const AvatarSizes = tmp(tmp2[26]).AvatarSizes;
       obj34[2] = tmp65Result ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;

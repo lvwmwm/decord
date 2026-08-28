@@ -1,17 +1,17 @@
-// Module ID: 14464
-// Function ID: 14465
+// Module ID: 14448
+// Function ID: 14449
 // Name: getSpendingLimitDisplayState
-// Dependencies: [1340, 7215, 1924, 589, 14382, 6033, 6034, 1236, 2369, 2]
+// Dependencies: [1340, 7229, 1925, 589, 14366, 6046, 6047, 1236, 2370, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 14464 (getSpendingLimitDisplayState)
+// Module 14448 (getSpendingLimitDisplayState)
 import initialize from "initialize" /* 589 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6033 */;
-import spendingLimitEqual from "spendingLimitEqual" /* 14382 */;
+import messagesProxyDefault from "messagesProxy" /* 2370 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6046 */;
+import spendingLimitEqual from "spendingLimitEqual" /* 14366 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_4 from "freshTeenActivityWithMap" /* 7215 */;
-import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1924 */;
+import closure_4 from "freshTeenActivityWithMap" /* 7229 */;
+import { SubscriptionIntervalTypes } from "GuildFeatures" /* 1925 */;
 
 require = arg1;
 function getSpendingLimitDisplayState(amount) {
@@ -28,7 +28,7 @@ function getSpendingLimitDisplayState(amount) {
       obj[1] = formatRateResult;
       return obj;
     } else {
-      let num = tmp5(6034).CurrencyExponents[amount.currency];
+      let num = tmp5(6047).CurrencyExponents[amount.currency];
       if (num == null) {
         num = 2;
       }
@@ -38,9 +38,9 @@ function getSpendingLimitDisplayState(amount) {
         obj[1] = formatRateResult;
         const intl = tmp5(1236).intl;
         obj1 = { amount: null };
-        obj1[0] = tmp5(6033).formatPrice(diff, currency);
+        obj1[0] = tmp5(6046).formatPrice(diff, currency);
         obj[2] = intl.formatToPlainString(messagesProxyDefault["+Q+bU1"], obj1);
-        const tmp5Result = tmp5(6033);
+        const tmp5Result = tmp5(6046);
       } else {
         obj = { kind: "on", monthlyText: null };
         obj[1] = formatRateResult;

@@ -1,14 +1,14 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11247
+// Function ID: 11248
 // Name: ChatArrowRightIcon
-// Dependencies: [19, 21, 712, 4164, 11230, 2]
+// Dependencies: [19, 21, 712, 4165, 11248, 2]
 // Exports: ChatArrowRightIcon
 
-// Module 11229 (ChatArrowRightIcon)
+// Module 11247 (ChatArrowRightIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 11230 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 11248 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

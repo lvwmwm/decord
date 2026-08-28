@@ -1,13 +1,13 @@
-// Module ID: 5026
-// Function ID: 5027
+// Module ID: 5039
+// Function ID: 5040
 // Name: items
-// Dependencies: [5027, 5025, 2]
+// Dependencies: [5040, 5038, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData
 
-// Module 5026 (items)
+// Module 5039 (items)
 import set from "set" /* 2 */;
-import cancel from "cancel" /* 5025 */;
-import getClipCreatedAt from "getClipCreatedAt" /* 5027 */;
+import cancel from "cancel" /* 5038 */;
+import getClipCreatedAt from "getClipCreatedAt" /* 5040 */;
 
 const items = [
   {
@@ -162,6 +162,8 @@ export const getAttachmentPayload = function getAttachmentPayload(closure_0, clo
     const obj3 = getClipCreatedAt;
     obj.clip_events_timeline = getClipCreatedAt.getClipEventsTimeline(closure_0.clip);
     const obj4 = getClipCreatedAt;
+    obj.clip_sync_timestamp = getClipCreatedAt.getClipSyncTimestamp(closure_0.clip);
+    const obj5 = getClipCreatedAt;
   }
   let tmp9 = "item" in closure_0 && null != closure_0.item;
   if (tmp9) {

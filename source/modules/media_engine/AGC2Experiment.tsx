@@ -1,10 +1,10 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13422
+// Function ID: 13423
 // Name: getAGC2ExperimentConfig
 // Dependencies: [1472, 2]
 // Exports: getAGC2ExperimentConfig
 
-// Module 13403 (getAGC2ExperimentConfig)
+// Module 13422 (getAGC2ExperimentConfig)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

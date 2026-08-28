@@ -1,14 +1,14 @@
-// Module ID: 14916
-// Function ID: 14917
+// Module ID: 14901
+// Function ID: 14902
 // Name: EmojiDisguisedFaceIcon
-// Dependencies: [19, 21, 712, 4164, 14917, 2]
+// Dependencies: [19, 21, 712, 4165, 14902, 2]
 // Exports: EmojiDisguisedFaceIcon
 
-// Module 14916 (EmojiDisguisedFaceIcon)
+// Module 14901 (EmojiDisguisedFaceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14917 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 14902 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

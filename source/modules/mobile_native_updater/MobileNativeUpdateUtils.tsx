@@ -1,15 +1,15 @@
-// Module ID: 13559
-// Function ID: 13560
+// Module ID: 13578
+// Function ID: 13579
 // Name: _checkForNewerBuild
-// Dependencies: [5, 4426, 3, 530, 4158, 500, 691, 2]
+// Dependencies: [5, 4427, 3, 530, 4159, 500, 691, 2]
 // Exports: checkForNewerBuild, openBuildInstaller
 
-// Module 13559 (_checkForNewerBuild)
+// Module 13578 (_checkForNewerBuild)
 import timestampDefault from "timestamp" /* 3 */;
 import keys from "keys" /* 691 */;
-import _mod4158 from "module_4158" /* 4158 */;
+import _mod4159 from "module_4159" /* 4159 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL" /* 4426 */;
+import { UPDATE_CONFIG } from "UPDATE_CHECK_INTERVAL" /* 4427 */;
 
 require = arg1;
 function _checkForNewerBuild() {
@@ -114,7 +114,7 @@ function openBuildInstallerUrl(install) {
       const _HermesInternal = HermesInternal;
       logger.error("Attempted to follow invalid install URL " + str);
     } else {
-      const openURLExternally = _mod4158.default.openURLExternally;
+      const openURLExternally = _mod4159.default.openURLExternally;
       if (obj.isIOS()) {
         openURLExternally(str.toString(), keys.WebBrowserType.SAFARI);
       } else {

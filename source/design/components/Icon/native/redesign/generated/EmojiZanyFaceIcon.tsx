@@ -1,14 +1,14 @@
-// Module ID: 14946
-// Function ID: 14947
+// Module ID: 14931
+// Function ID: 14932
 // Name: EmojiZanyFaceIcon
-// Dependencies: [19, 21, 712, 4164, 14947, 2]
+// Dependencies: [19, 21, 712, 4165, 14932, 2]
 // Exports: EmojiZanyFaceIcon
 
-// Module 14946 (EmojiZanyFaceIcon)
+// Module 14931 (EmojiZanyFaceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14947 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 14932 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

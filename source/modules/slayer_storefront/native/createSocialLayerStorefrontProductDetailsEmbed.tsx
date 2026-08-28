@@ -1,20 +1,20 @@
-// Module ID: 11046
-// Function ID: 11047
+// Module ID: 11064
+// Function ID: 11065
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 4486, 4494, 676, 7414, 7787, 1236, 11047, 6030, 6025, 3339, 8153, 4433, 8427, 501, 589, 1370, 5911, 2]
+// Dependencies: [32, 19, 4487, 4495, 676, 7428, 7801, 1236, 11065, 6043, 6038, 3340, 8167, 4434, 8441, 501, 589, 1370, 5924, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 11046 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 11064 (createSocialLayerStorefrontProductDetailsEmbed)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getPrice from "getPrice" /* 6025 */;
-import useSKUPrice from "useSKUPrice" /* 6030 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7787 */;
+import getPrice from "getPrice" /* 6038 */;
+import useSKUPrice from "useSKUPrice" /* 6043 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7801 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "addApplication" /* 4486 */;
-import closure_6 from "addSku" /* 4494 */;
+import closure_5 from "addApplication" /* 4487 */;
+import closure_6 from "addSku" /* 4495 */;
 import { PaymentGateways } from "ME" /* 676 */;
-import { InviteTypes } from "InviteSendStates" /* 7414 */;
+import { InviteTypes } from "InviteSendStates" /* 7428 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
@@ -50,7 +50,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(11047)(application)) {
+        if (tmp(11065)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result1 = useSKUPrice.isSlayerSkuAvailableOnThisPlatform(value);
             const obj4 = useSKUPrice;
@@ -78,7 +78,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
             if (result1) {
               let stringResult = string(tmp12(1236).t.boqtTA);
             } else {
-              stringResult = string(tmp(3339).BKf0MM);
+              stringResult = string(tmp(3340).BKf0MM);
             }
             obj.acceptLabelText = stringResult;
             let prop;

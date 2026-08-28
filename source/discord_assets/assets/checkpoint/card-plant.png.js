@@ -1,9 +1,9 @@
-// Module ID: 7986
-// Function ID: 7987
+// Module ID: 8000
+// Function ID: 8001
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7986 (metadata)
+// Module 8000 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/checkpoint/card-plant.png.js");

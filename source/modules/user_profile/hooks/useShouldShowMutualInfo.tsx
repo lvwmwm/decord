@@ -1,13 +1,13 @@
-// Module ID: 9151
-// Function ID: 9152
+// Module ID: 9169
+// Function ID: 9170
 // Name: useShouldShowMutualInfo
-// Dependencies: [1922, 589, 9152, 2]
+// Dependencies: [1923, 589, 9170, 2]
 // Exports: default
 
-// Module 9151 (useShouldShowMutualInfo)
+// Module 9169 (useShouldShowMutualInfo)
 import initialize from "initialize" /* 589 */;
-import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 9152 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import useIsUserProfileObfuscatedDefault from "useIsUserProfileObfuscated" /* 9170 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useShouldShowMutualInfo.tsx");

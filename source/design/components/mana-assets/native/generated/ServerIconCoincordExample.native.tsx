@@ -1,14 +1,14 @@
-// Module ID: 6913
-// Function ID: 6914
+// Module ID: 6926
+// Function ID: 6927
 // Name: ServerIconCoincordExample
-// Dependencies: [21, 5445, 6914, 2]
+// Dependencies: [21, 5458, 6927, 2]
 // Exports: ServerIconCoincordExample
 
-// Module 6913 (ServerIconCoincordExample)
+// Module 6926 (ServerIconCoincordExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6914 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6927 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconCoincordExample.native.tsx");

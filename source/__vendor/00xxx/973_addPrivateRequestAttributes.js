@@ -576,7 +576,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                               obj1[2] = obj;
                               closure_0 = undefined;
-                              closure_0 = callback(/* F117173 */ function() { ... });
+                              closure_0 = callback(/* F117216 */ function() { ... });
                               let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                               const tmp4Result2 = tmp4(tmp5[3]);
                             } else {
@@ -747,7 +747,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                               obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                               obj1[2] = obj;
                               closure_0 = undefined;
-                              closure_0 = callback(/* F117173 */ function() { ... });
+                              closure_0 = callback(/* F117216 */ function() { ... });
                               let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                               const tmp4Result2 = tmp4(tmp5[3]);
                             } else {
@@ -1336,7 +1336,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           c5 = 0;
                           c6 = 0;
                           c4 = 0;
-                          return (/* F121286 */ function*() { ... })();
+                          return (/* F121331 */ function*() { ... })();
                         });
                         let startSpanManualResult = tmp4Result1.startSpanManual(obj1, function(arg0) {
                           const self = this;
@@ -1365,7 +1365,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           if (tmp) {
                             callback(arg0, recordInputs);
                           }
-                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F117177 */ function() { ... }, () => { ... });
+                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F117220 */ function() { ... }, () => { ... });
                         });
                         const tmp4Result3 = tmp4(tmp5[3]);
                       }
@@ -1579,7 +1579,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           c5 = 0;
                           c6 = 0;
                           c4 = 0;
-                          return (/* F121286 */ function*() { ... })();
+                          return (/* F121331 */ function*() { ... })();
                         });
                         let startSpanManualResult = tmp4Result1.startSpanManual(obj1, function(arg0) {
                           const self = this;
@@ -1608,7 +1608,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                           if (tmp) {
                             callback(arg0, recordInputs);
                           }
-                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F117177 */ function() { ... }, () => { ... });
+                          return str(table[11]).handleCallbackErrors(() => { ... }, () => { ... }, /* F117220 */ function() { ... }, () => { ... });
                         });
                         const tmp4Result3 = tmp4(tmp5[3]);
                       }
@@ -1768,7 +1768,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                 obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                                 obj1[2] = obj;
                                 closure_0 = undefined;
-                                closure_0 = callback(/* F117173 */ function() { ... });
+                                closure_0 = callback(/* F117216 */ function() { ... });
                                 let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                                 const tmp4Result2 = tmp4(tmp5[3]);
                               } else {
@@ -1939,7 +1939,7 @@ export const instrumentGoogleGenAIClient = function instrumentGoogleGenAIClient(
                                 obj1[1] = tmp4(tmp5[3]).getSpanOperation(tmp2);
                                 obj1[2] = obj;
                                 closure_0 = undefined;
-                                closure_0 = callback(/* F117173 */ function() { ... });
+                                closure_0 = callback(/* F117216 */ function() { ... });
                                 let startSpanManualResult = tmp4Result1.startSpanManual(obj1, () => { ... });
                                 const tmp4Result2 = tmp4(tmp5[3]);
                               } else {

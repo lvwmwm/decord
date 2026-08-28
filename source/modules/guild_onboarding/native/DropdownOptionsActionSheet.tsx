@@ -1,19 +1,19 @@
-// Module ID: 5542
-// Function ID: 5543
+// Module ID: 5555
+// Function ID: 5556
 // Name: DropdownOptionRow
-// Dependencies: [19, 17, 5353, 5419, 1925, 21, 4445, 647, 5537, 1435, 1297, 1236, 4441, 5543, 1629, 4412, 5573, 5574, 5576, 4880, 2]
+// Dependencies: [19, 17, 5366, 5432, 1926, 21, 4446, 647, 5550, 1435, 1297, 1236, 4442, 5556, 1629, 4413, 5586, 5587, 5589, 4893, 2]
 // Exports: default
 
-// Module 5542 (DropdownOptionRow)
+// Module 5555 (DropdownOptionRow)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getEmojiToGroupId" /* 5353 */;
-import closure_6 from "handleUpdate" /* 5419 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
+import closure_5 from "getEmojiToGroupId" /* 5366 */;
+import closure_6 from "handleUpdate" /* 5432 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1926 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function DropdownOptionRow(option) {
@@ -124,7 +124,7 @@ export default function DropdownOptionsActionSheet(arg0) {
     const intl = tmp3(1236).intl;
     obj[0] = intl.string(tmp3(1236).t.E2ICbC);
     obj = { scrollable: true, header: null, children: null };
-    obj[1] = callback(tmp3(5573).BottomSheetTitleHeader, obj);
+    obj[1] = callback(tmp3(5586).BottomSheetTitleHeader, obj);
     obj1 = { contentContainerStyle: null, children: null };
     const obj2 = { paddingBottom: null };
     obj2[0] = useSafeAreaInsetsDefault().bottom;
@@ -141,11 +141,11 @@ export default function DropdownOptionsActionSheet(arg0) {
     obj5[0] = tmp5;
     const intl3 = tmp3(1236).intl;
     obj5[1] = intl3.string(tmp3(1236).t.cpT0Cq);
-    obj4[1] = callback(tmp3(4880).Button, obj5);
+    obj4[1] = callback(tmp3(4893).Button, obj5);
     items2[1] = callback(closure_4, obj4);
     obj1[1] = items2;
-    obj[2] = callback2(tmp3(5576).BottomSheetScrollView, obj1);
-    return callback(tmp3(5574).BottomSheet, obj);
+    obj[2] = callback2(tmp3(5589).BottomSheetScrollView, obj1);
+    return callback(tmp3(5587).BottomSheet, obj);
   }
   tmp = callback3();
 };

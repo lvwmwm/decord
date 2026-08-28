@@ -1,13 +1,13 @@
-// Module ID: 17320
-// Function ID: 17321
+// Module ID: 17338
+// Function ID: 17339
 // Name: prototype
-// Dependencies: [17, 1340, 5438, 500, 2]
+// Dependencies: [17, 1340, 5451, 500, 2]
 
-// Module 17320 (prototype)
+// Module 17338 (prototype)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set2 from "set" /* 500 */;
-import initializeDefault from "initialize" /* 5438 */;
+import initializeDefault from "initialize" /* 5451 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;

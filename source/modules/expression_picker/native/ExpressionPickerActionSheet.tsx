@@ -1,21 +1,21 @@
-// Module ID: 10268
-// Function ID: 10269
+// Module ID: 10286
+// Function ID: 10287
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 1391, 5575, 10269, 21, 4185, 4309, 1627, 589, 10270, 4412, 1494, 1629, 5444, 500, 9045, 5574, 10271, 2]
+// Dependencies: [19, 1391, 5588, 10287, 21, 4186, 4310, 1627, 589, 10288, 4413, 1494, 1629, 5457, 500, 9063, 5587, 10289, 2]
 // Exports: default
 
-// Module 10268 (ExpressionPickerActionSheet)
+// Module 10286 (ExpressionPickerActionSheet)
 import initialize from "initialize" /* 589 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import KeyboardTypes from "KeyboardTypes" /* 1627 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import _mod4185 from "module_4185" /* 4185 */;
-import useKeyboardType from "useKeyboardType" /* 4309 */;
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5444 */;
+import _mod4186 from "module_4186" /* 4186 */;
+import useKeyboardType from "useKeyboardType" /* 4310 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5457 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5575 */;
-import { STICKER_FORMATS } from "PADDING_HORIZONTAL" /* 10269 */;
+import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5588 */;
+import { STICKER_FORMATS } from "PADDING_HORIZONTAL" /* 10287 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -25,7 +25,7 @@ const result = require("set").fileFinishedImporting("modules/expression_picker/n
 export default function ExpressionPickerActionSheet(arg0) {
   ({ channelId: require, onPressEmoji: importDefault, onPressSticker: dependencyMap, onPressGIF: closure_3 } = arg0);
   ({ hideGifFavorites, onDismiss, visibleTabs, initialGifQuery } = arg0);
-  let obj = _mod4185;
+  let obj = _mod4186;
   const sharedValue = obj.useSharedValue(-1);
   obj1 = useKeyboardType;
   const keyboardContextForType = obj1.useKeyboardContextForType(KeyboardTypes.KeyboardTypes.EXPRESSION);
@@ -40,7 +40,7 @@ export default function ExpressionPickerActionSheet(arg0) {
     if (isIOSResult) {
       obj = { animatedSheetIndex: null, followSystemKeyboard: true };
       obj[0] = sharedValue;
-      isIOSResult = callback(tmp7(9045), obj);
+      isIOSResult = callback(tmp7(9063), obj);
     }
     obj = { children: null };
     const items1 = [isIOSResult, ];
@@ -77,8 +77,8 @@ export default function ExpressionPickerActionSheet(arg0) {
     obj2[9] = initialGifQuery;
     obj2[10] = STICKER_FORMATS;
     obj2[11] = diff;
-    obj1[5] = callback(tmp7(10271), obj2);
-    items1[1] = callback(tmp2(5574).BottomSheet, obj1);
+    obj1[5] = callback(tmp7(10289), obj2);
+    items1[1] = callback(tmp2(5587).BottomSheet, obj1);
     obj[0] = items1;
     tmp15Result = closure_9(closure_8, obj);
     const tmp15 = closure_9;

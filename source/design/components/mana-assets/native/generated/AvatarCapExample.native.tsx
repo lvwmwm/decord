@@ -1,14 +1,14 @@
-// Module ID: 6265
-// Function ID: 6266
+// Module ID: 6278
+// Function ID: 6279
 // Name: AvatarCapExample
-// Dependencies: [21, 5445, 6266, 2]
+// Dependencies: [21, 5458, 6279, 2]
 // Exports: AvatarCapExample
 
-// Module 6265 (AvatarCapExample)
+// Module 6278 (AvatarCapExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6266 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6279 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarCapExample.native.tsx");

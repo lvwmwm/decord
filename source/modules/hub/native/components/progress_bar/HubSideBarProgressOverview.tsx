@@ -1,12 +1,12 @@
-// Module ID: 15714
-// Function ID: 15715
+// Module ID: 15732
+// Function ID: 15733
 // Name: HubSidebarProgressOverview
-// Dependencies: [19, 9840, 21, 12121, 1236, 11953, 13628, 4412, 12125, 2009, 2]
+// Dependencies: [19, 9858, 21, 12140, 1236, 11972, 13647, 4413, 12144, 2010, 2]
 // Exports: default
 
-// Module 15714 (HubSidebarProgressOverview)
+// Module 15732 (HubSidebarProgressOverview)
 import noopAll from "noop" /* 19 */;
-import items from "items" /* 9840 */;
+import items from "items" /* 9858 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,14 +16,14 @@ const result = require("set").fileFinishedImporting("modules/hub/native/componen
 
 export default function HubSidebarProgressOverview(guild) {
   guild = guild.guild;
-  let obj = guild(12121);
+  let obj = guild(12140);
   const hubProgressBarCompletedSteps = obj.useHubProgressBarCompletedSteps(guild);
-  const nextHubProgressStep = guild(12121).getNextHubProgressStep(hubProgressBarCompletedSteps);
+  const nextHubProgressStep = guild(12140).getNextHubProgressStep(hubProgressBarCompletedSteps);
   if (null == nextHubProgressStep) {
     return null;
   } else {
     const size = hubProgressBarCompletedSteps.size;
-    const hubProgressTitleForStep = tmp(12121).getHubProgressTitleForStep(nextHubProgressStep);
+    const hubProgressTitleForStep = tmp(12140).getHubProgressTitleForStep(nextHubProgressStep);
     if (size < closure_4) {
       const intl2 = tmp(1236).intl;
       obj = { number: null, total: null };
@@ -36,7 +36,7 @@ export default function HubSidebarProgressOverview(guild) {
       formatToPlainStringResult = intl.string(tmp(1236).t["+Gyklt"]);
     }
     const _Math = Math;
-    const bound = Math.max(tmp(11953).MIN_PROGRESS_PERCENT, 100 * size / tmp11);
+    const bound = Math.max(tmp(11972).MIN_PROGRESS_PERCENT, 100 * size / tmp11);
     obj = { onPress: null, title: null, subtitle: null, percentComplete: null };
     obj[0] = function onPress() {
       let obj = closure_1_1(closure_1_2[7]);
@@ -46,7 +46,7 @@ export default function HubSidebarProgressOverview(guild) {
     obj[1] = hubProgressTitleForStep;
     obj[2] = formatToPlainStringResult;
     obj[3] = bound;
-    return jsx(tmp(13628).GuildProgressOverviewView, { onPress: null, title: null, subtitle: null, percentComplete: null });
+    return jsx(tmp(13647).GuildProgressOverviewView, { onPress: null, title: null, subtitle: null, percentComplete: null });
   }
-  const obj2 = guild(12121);
+  const obj2 = guild(12140);
 };

@@ -1,10 +1,10 @@
-// Module ID: 5361
-// Function ID: 5362
-// Dependencies: [5362, 5363, 2]
+// Module ID: 5374
+// Function ID: 5375
+// Dependencies: [5375, 5376, 2]
 
-// Module 5361
-import setParamsDefault from "setParams" /* 5362 */;
-import emojiTermsImporter from "emojiTermsImporter" /* 5363 */;
+// Module 5374
+import setParamsDefault from "setParams" /* 5375 */;
+import emojiTermsImporter from "emojiTermsImporter" /* 5376 */;
 
 require = arg1;
 let closure_2 = new setParamsDefault(function loadEmoji(arg0) {

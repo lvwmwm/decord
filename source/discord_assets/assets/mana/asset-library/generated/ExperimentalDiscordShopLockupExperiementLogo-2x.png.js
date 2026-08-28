@@ -1,9 +1,9 @@
-// Module ID: 6472
-// Function ID: 6473
+// Module ID: 6485
+// Function ID: 6486
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6472 (metadata)
+// Module 6485 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalDiscordShopLockupExperiementLogo-2x.png.js");

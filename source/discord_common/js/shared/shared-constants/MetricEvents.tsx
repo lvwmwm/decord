@@ -1,9 +1,9 @@
-// Module ID: 7285
-// Function ID: 7286
+// Module ID: 7299
+// Function ID: 7300
 // Name: set
 // Dependencies: [2]
 
-// Module 7285 (set)
+// Module 7299 (set)
 import set from "set" /* 2 */;
 
 const obj = { ALL: null, DEPRECATED: null };

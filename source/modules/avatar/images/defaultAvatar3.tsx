@@ -1,9 +1,9 @@
-// Module ID: 16930
-// Function ID: 16931
+// Module ID: 16948
+// Function ID: 16949
 // Name: set
 // Dependencies: [2]
 
-// Module 16930 (set)
+// Module 16948 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/avatar/images/defaultAvatar3.tsx");

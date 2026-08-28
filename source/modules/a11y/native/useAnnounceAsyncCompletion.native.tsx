@@ -1,10 +1,10 @@
-// Module ID: 10584
-// Function ID: 10585
+// Module ID: 10602
+// Function ID: 10603
 // Name: useAnnounceAsyncCompletion
-// Dependencies: [19, 17, 1363, 500, 4867, 2]
+// Dependencies: [19, 17, 1363, 500, 4880, 2]
 // Exports: default
 
-// Module 10584 (useAnnounceAsyncCompletion)
+// Module 10602 (useAnnounceAsyncCompletion)
 import closure_2 from "noop" /* 19 */;
 import { AccessibilityInfo } from "get ActivityIndicator" /* 17 */;
 

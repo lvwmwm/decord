@@ -1,27 +1,27 @@
-// Module ID: 11323
-// Function ID: 11324
+// Module ID: 11342
+// Function ID: 11343
 // Name: GuildSettingsModalMemberEditScene
-// Dependencies: [19, 17, 4437, 1434, 1986, 1992, 1985, 1910, 4089, 1922, 11324, 676, 21, 4445, 712, 4094, 12, 7616, 1297, 4441, 5551, 1236, 5944, 4172, 6189, 5447, 4289, 8856, 4078, 8295, 4878, 7638, 11325, 11326, 4161, 11331, 1500, 589, 38, 8360, 6108, 5891, 11336, 11338, 5893, 5960, 2]
+// Dependencies: [19, 17, 4438, 1434, 1987, 1993, 1986, 1910, 4090, 1923, 11343, 676, 21, 4446, 712, 4095, 12, 7630, 1297, 4442, 5564, 1236, 5957, 4173, 6202, 5460, 4290, 8873, 4079, 8309, 4891, 7652, 11344, 11345, 4162, 11350, 1500, 589, 38, 8374, 6121, 5904, 11355, 11357, 5906, 5973, 2]
 // Exports: default
 
-// Module 11323 (GuildSettingsModalMemberEditScene)
+// Module 11342 (GuildSettingsModalMemberEditScene)
 import ThemesDefault from "Themes" /* 712 */;
-import nameFromUserDefault from "nameFromUser" /* 4289 */;
-import Text from "Text" /* 4441 */;
+import nameFromUserDefault from "nameFromUser" /* 4290 */;
+import Text from "Text" /* 4442 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1986 */;
-import closure_10 from "trackCommunicationDisabled" /* 1992 */;
-import closure_11 from "createGuildRoleRecordFromRust" /* 1985 */;
+import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1987 */;
+import closure_10 from "trackCommunicationDisabled" /* 1993 */;
+import closure_11 from "createGuildRoleRecordFromRust" /* 1986 */;
 import closure_12 from "createGuildRecordFromRust" /* 1910 */;
-import closure_13 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_14 from "mergeGuildAvatar" /* 1922 */;
-import closure_15 from "handleStopEditingRoles" /* 11324 */;
+import closure_13 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_14 from "mergeGuildAvatar" /* 1923 */;
+import closure_15 from "handleStopEditingRoles" /* 11343 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 class GuildSettingsModalMemberEditScene {
@@ -368,7 +368,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       closure_1_1(closure_1_3[32]).startEditingRoles(applyArgumentsResult.props.guild.id, applyArgumentsResult.props.user.id);
     };
     applyArgumentsResult.handleToggleRole = function handleToggleRole(roleId, state) {
-      callback(11325).toggleRole(roleId, state);
+      callback(11344).toggleRole(roleId, state);
     };
     applyArgumentsResult.handleSetCommunicationDisabled = function handleSetCommunicationDisabled() {
       ({ guild, user } = applyArgumentsResult.props);
@@ -412,7 +412,7 @@ class GuildSettingsModalMemberEdit extends PureComponent2 {
       }
     };
     applyArgumentsResult.handleCancelEditMemberRoles = function handleCancelEditMemberRoles() {
-      callback(11325).stopEditingRoles();
+      callback(11344).stopEditingRoles();
     };
     return applyArgumentsResult;
   }
@@ -439,7 +439,7 @@ prototype["updateNavigator"] = function updateNavigator(submitting) {
         return closure_1_19(self(closure_1_3[24]).HeaderActionButton, obj);
       };
     } else if (null != onClose) {
-      let setOptionsResult = self(5447);
+      let setOptionsResult = self(5460);
       fn = setOptionsResult.getHeaderCloseButton(onClose);
     }
     setOptionsResult = { headerLeft: null, headerRight: null, headerTitle: null };
@@ -482,7 +482,7 @@ prototype["render"] = function render() {
     let tmp18Result = null;
     if (user.bot) {
       obj = { verified: null };
-      let tmp21Result = tmp21(8856);
+      let tmp21Result = tmp21(8873);
       obj[0] = user.isVerifiedBot();
       tmp18Result = tmp18(tmp21Result, obj);
     }
@@ -503,8 +503,8 @@ prototype["render"] = function render() {
         const intl2 = tmp19(1236).intl;
         obj2[1] = intl2.string(tmp19(1236).t.Z5s7PM);
         obj2[2] = self.handleTransferOwnership;
-        obj1[1] = tmp18(tmp19(5551).TableRow, obj2);
-        tmp18Result = tmp18(tmp19(5944).TableRowGroup, obj1);
+        obj1[1] = tmp18(tmp19(5564).TableRow, obj2);
+        tmp18Result = tmp18(tmp19(5957).TableRowGroup, obj1);
       }
       const obj3 = { style: null, contentContainerStyle: null, children: null };
       obj3[0] = tmp.form;
@@ -521,8 +521,8 @@ prototype["render"] = function render() {
       obj7[2] = guild.id;
       obj6[0] = tmp18(tmp19(1297).Avatar, obj7);
       obj6[1] = tmp7;
-      obj5[1] = tmp18(tmp19(5551).TableRow, obj6);
-      const items2 = [tmp18(tmp19(5944).TableRowGroup, obj5), , , , , , ];
+      obj5[1] = tmp18(tmp19(5564).TableRow, obj6);
+      const items2 = [tmp18(tmp19(5957).TableRowGroup, obj5), , , , , , ];
       if (!canChangeNick) {
         canChangeNick = currentUser.id === user.id;
       }
@@ -538,7 +538,7 @@ prototype["render"] = function render() {
         obj8[2] = intl4.string(tmp19(1236).t.h7UKXj);
         ({ handleChangeNickname: obj16[3], handleSaveNickname: obj16[4] } = self);
         obj8[6] = tmp3;
-        canChangeNick = tmp18(tmp19(7638).TextInput, obj8);
+        canChangeNick = tmp18(tmp19(7652).TextInput, obj8);
       }
       items2[1] = canChangeNick;
       if (canManageRoles) {
@@ -569,12 +569,12 @@ prototype["render"] = function render() {
         const obj11 = { variant: "danger", label: null, onPress: null };
         const intl5 = tmp19(1236).intl;
         const obj12 = { user: null };
-        tmp21Result = tmp21(4289);
+        tmp21Result = tmp21(4290);
         obj12[0] = tmp21Result.getName(user);
         obj11[1] = intl5.formatToPlainString(tmp19(1236).t.yOiJHB, obj12);
         obj11[2] = self.handleKick;
-        obj10[1] = tmp18(tmp19(5551).TableRow, obj11);
-        canKick = tmp18(tmp19(5944).TableRowGroup, obj10);
+        obj10[1] = tmp18(tmp19(5564).TableRow, obj11);
+        canKick = tmp18(tmp19(5957).TableRowGroup, obj10);
       }
       items2[4] = canKick;
       if (canBan) {
@@ -582,47 +582,47 @@ prototype["render"] = function render() {
         const obj14 = { variant: "danger", label: null, onPress: null };
         const intl6 = tmp19(1236).intl;
         const obj15 = { user: null };
-        obj15[0] = tmp21(4289).getName(user);
+        obj15[0] = tmp21(4290).getName(user);
         obj14[1] = intl6.formatToPlainString(tmp19(1236).t.TuAZuW, obj15);
         obj14[2] = self.handleBan;
-        obj13[1] = tmp18(tmp19(5551).TableRow, obj14);
-        canBan = tmp18(tmp19(5944).TableRowGroup, obj13);
-        const tmp21Result1 = tmp21(4289);
+        obj13[1] = tmp18(tmp19(5564).TableRow, obj14);
+        canBan = tmp18(tmp19(5957).TableRowGroup, obj13);
+        const tmp21Result1 = tmp21(4290);
       }
       items2[5] = canBan;
       items2[6] = tmp18Result;
       obj4[2] = items2;
-      obj3[2] = tmp16(tmp19(4878).Stack, obj4);
-      return tmp18(tmp19(8295).Form, obj3);
+      obj3[2] = tmp16(tmp19(4891).Stack, obj4);
+      return tmp18(tmp19(8309).Form, obj3);
     } else {
-      const result = tmp19(4078).isMemberCommunicationDisabled(member);
-      const TableRowGroup = tmp19(5944).TableRowGroup;
+      const result = tmp19(4079).isMemberCommunicationDisabled(member);
+      const TableRowGroup = tmp19(5957).TableRowGroup;
       const obj16 = { hasIcons: false, children: null };
-      const TableRow = tmp19(5551).TableRow;
+      const TableRow = tmp19(5564).TableRow;
       let obj17 = { variant: "danger", label: null, onPress: null };
       const intl = tmp19(1236).intl;
       const formatToPlainString = intl.formatToPlainString;
       let handleClearCommunicationDisabled = tmp19(1236).t;
       if (result) {
         const obj18 = { user: null };
-        obj18[0] = tmp21(4289).getName(user);
+        obj18[0] = tmp21(4290).getName(user);
         obj17[1] = formatToPlainString(handleClearCommunicationDisabled.RuL6o7, obj18);
         handleClearCommunicationDisabled = self.handleClearCommunicationDisabled;
         obj17[2] = handleClearCommunicationDisabled;
         obj17 = tmp18(TableRow, obj17);
         obj16[1] = obj17;
         let tmp18Result1 = tmp18(TableRowGroup, obj16);
-        const tmp21Result2 = tmp21(4289);
+        const tmp21Result2 = tmp21(4290);
       } else {
         const obj19 = { user: null };
-        obj19[0] = tmp21(4289).getName(user);
+        obj19[0] = tmp21(4290).getName(user);
         obj17[1] = formatToPlainString(handleClearCommunicationDisabled.FN7NIS, obj19);
         obj17[2] = self.handleSetCommunicationDisabled;
         obj16[1] = tmp18(TableRow, obj17);
         tmp18Result1 = tmp18(TableRowGroup, obj16);
-        const tmp21Result3 = tmp21(4289);
+        const tmp21Result3 = tmp21(4290);
       }
-      const tmp19Result = tmp19(4078);
+      const tmp19Result = tmp19(4079);
     }
     const obj28 = nameFromUserDefault;
     tmp16 = closure_20;
@@ -636,7 +636,7 @@ export default function MemberModalEdit(onClose) {
   const onRemove = onClose.onRemove;
   closure_2 = undefined;
   ({ guildId, userId } = onClose);
-  const tmp = onRemove(5893)(guildId);
+  const tmp = onRemove(5906)(guildId);
   closure_2 = tmp;
   const items = [onClose, onRemove, tmp];
   const memo = importAllResult.useMemo(() => {
@@ -681,6 +681,6 @@ export default function MemberModalEdit(onClose) {
   let obj = { screens: memo, initialRouteName: constants.MEMBER_EDIT, initialRouteStack: items1 };
   obj = { name: constants.MEMBER_EDIT, params: { userId } };
   items1 = [obj];
-  return callback3(onClose(5960).Navigator, obj);
+  return callback3(onClose(5973).Navigator, obj);
 };
 export { GuildSettingsModalMemberEditScene };

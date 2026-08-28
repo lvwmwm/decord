@@ -1,15 +1,15 @@
-// Module ID: 13146
-// Function ID: 13147
+// Module ID: 13165
+// Function ID: 13166
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 4337, 7091, 589, 691, 7098, 4340, 2]
+// Dependencies: [5, 32, 19, 4338, 7104, 589, 691, 7111, 4341, 2]
 // Exports: default
 
-// Module 13146 (useFetchGuildBoostSlots)
+// Module 13165 (useFetchGuildBoostSlots)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "handleGuildBoostsUpdate" /* 4337 */;
-import closure_7 from "getState" /* 7091 */;
+import closure_6 from "handleGuildBoostsUpdate" /* 4338 */;
+import closure_7 from "getState" /* 7104 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/useFetchGuildBoostSlots.tsx");

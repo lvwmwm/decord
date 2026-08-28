@@ -1,14 +1,14 @@
-// Module ID: 9307
-// Function ID: 9308
+// Module ID: 9325
+// Function ID: 9326
 // Name: entryToKey
-// Dependencies: [4534, 8538, 676, 7971, 7976, 8558, 8543, 8539, 12, 589, 709, 2]
+// Dependencies: [4535, 8553, 676, 7985, 7990, 8573, 8558, 8554, 12, 589, 709, 2]
 
-// Module 9307 (entryToKey)
+// Module 9325 (entryToKey)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "sortActivity" /* 4534 */;
-import closure_4 from "map" /* 8538 */;
+import closure_3 from "sortActivity" /* 4535 */;
+import closure_4 from "map" /* 8553 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -22,7 +22,7 @@ function getMatchingActivity(author_type) {
   if (!obj.isEntryExpired(author_type)) {
     let found;
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(8558).ContentInventoryAuthorType.USER) {
+      if (author_type.author_type === tmp(8573).ContentInventoryAuthorType.USER) {
         activities = activities.getActivities(author_type.author_id);
         found = activities.find((type) => {
           if (type.type === closure_1_5.PLAYING) {
@@ -46,7 +46,7 @@ function getMatchingActivity(author_type) {
       }
     }
     tmp3 = found;
-    tmpResult = tmp(7976);
+    tmpResult = tmp(7990);
   }
   return tmp3;
 }

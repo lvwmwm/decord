@@ -1,28 +1,28 @@
-// Module ID: 7561
-// Function ID: 7562
+// Module ID: 7575
+// Function ID: 7576
 // Name: useLoadForumUnreadCounts
-// Dependencies: [5, 19, 5353, 5400, 5401, 6103, 1391, 5321, 1910, 4089, 4460, 1922, 6102, 6076, 7562, 7445, 6072, 676, 1398, 1235, 589, 6104, 709, 12, 1370, 4897, 11, 7458, 1400, 7563, 4699, 7564, 7572, 7573, 5430, 2]
+// Dependencies: [5, 19, 5366, 5413, 5414, 6116, 1391, 5334, 1910, 4090, 4461, 1923, 6115, 6089, 7576, 7459, 6085, 676, 1398, 1235, 589, 6117, 709, 12, 1370, 4910, 11, 7472, 1400, 7577, 4712, 7578, 7586, 7587, 5443, 2]
 // Exports: getForumPostAuthor, useAutomaticForumSearch, useCanManageChannel, useCanSearchForumPosts, useCanViewArchivedPosts, useChannelTemplate, useDefaultReactionEmoji, useExistingPin, useFacepileUsers, useForumActiveThreadIds, useForumPostAuthor, useForumPostFirstMessageMarkup, useForumPostMessageAuthor, useForumPostReadStates, useForumSearchQuery, useForumSearchState, useForumThreadsForChannelList, useHasForumSearchQuery, useLastActiveTimestamp, useLoadForumUnreadCounts, useMaxPossibleForumPostReactions, useMessageCount, useMostUsedReaction, useSomeForumPostReactions, useUnreadThreadsCountForParent
 
-// Module 7561 (useLoadForumUnreadCounts)
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4699 */;
+// Module 7575 (useLoadForumUnreadCounts)
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getEmojiToGroupId" /* 5353 */;
-import closure_6 from "rebuild" /* 5400 */;
-import closure_7 from "handleThreadCreateOrUpdate" /* 5401 */;
-import closure_8 from "updateState" /* 6103 */;
+import closure_5 from "getEmojiToGroupId" /* 5366 */;
+import closure_6 from "rebuild" /* 5413 */;
+import closure_7 from "handleThreadCreateOrUpdate" /* 5414 */;
+import closure_8 from "updateState" /* 6116 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "handleConnectionReset" /* 5321 */;
+import closure_10 from "handleConnectionReset" /* 5334 */;
 import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import closure_12 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_13 from "generateOldThreadCutoff" /* 4460 */;
-import closure_14 from "mergeGuildAvatar" /* 1922 */;
-import closure_15 from "maybeRebuildState" /* 6102 */;
-import closure_16 from "handleLoadThreadsSuccess" /* 6076 */;
-import closure_17 from "set" /* 7562 */;
-import closure_18 from "initialize" /* 7445 */;
-import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 6072 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_13 from "generateOldThreadCutoff" /* 4461 */;
+import closure_14 from "mergeGuildAvatar" /* 1923 */;
+import closure_15 from "maybeRebuildState" /* 6115 */;
+import closure_16 from "handleLoadThreadsSuccess" /* 6089 */;
+import closure_17 from "set" /* 7576 */;
+import closure_18 from "initialize" /* 7459 */;
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 6085 */;
 import ME from "ME" /* 676 */;
 import { ChannelFlags } from "set" /* 1398 */;
 import { MAX_THREAD_UNREAD_MESSAGE_COUNT as closure_25 } from "AbortCodes" /* 1235 */;
@@ -384,8 +384,8 @@ export const useMessageCount = function useMessageCount(thread) {
     }
     return num;
   });
-  const messageCountText = _require(7563).getMessageCountText(stateFromStores, thread.id);
-  const obj2 = _require(7563);
+  const messageCountText = _require(7577).getMessageCountText(stateFromStores, thread.id);
+  const obj2 = _require(7577);
   const items1 = [closure_13];
   dependencyMap = _require(589).useStateFromStores(items1, () => {
     const items = [closure_1_13];
@@ -435,7 +435,7 @@ export const useForumPostMessageAuthor = function useForumPostMessageAuthor(mess
   let obj = id(589);
   const items = [closure_14];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_14.getUser(id));
-  const nullableMessageAuthor = id(4699).useNullableMessageAuthor(message);
+  const nullableMessageAuthor = id(4712).useNullableMessageAuthor(message);
   const items1 = [guildId, id];
   const effect = React.useEffect(() => {
     let tmp2 = null != id;
@@ -501,7 +501,7 @@ export const useForumPostAuthor = function useForumPostAuthor(thread) {
   }
   const items2 = [, ];
   ({ guild_id: arr3[0], ownerId: arr3[1] } = thread);
-  author = _require(4699).useNullableUserAuthor(author, thread);
+  author = _require(4712).useNullableUserAuthor(author, thread);
   const effect = React.useEffect(() => {
     if (null != thread.ownerId) {
       const member = closure_1_10.requestMember(tmp.guild_id, tmp.ownerId);

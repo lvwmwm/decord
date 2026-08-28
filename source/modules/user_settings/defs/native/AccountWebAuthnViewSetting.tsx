@@ -1,16 +1,16 @@
-// Module ID: 14354
-// Function ID: 14355
+// Module ID: 14338
+// Function ID: 14339
 // Name: route
-// Dependencies: [19, 14274, 1922, 7816, 676, 4809, 1236, 6008, 589, 10988, 14277, 2]
+// Dependencies: [19, 14243, 1923, 7830, 676, 4822, 1236, 6021, 589, 11006, 14246, 2]
 
-// Module 14354 (route)
+// Module 14338 (route)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _fetchWebAuthnConditionalChallenge from "_fetchWebAuthnConditionalChallenge" /* 6008 */;
+import _fetchWebAuthnConditionalChallenge from "_fetchWebAuthnConditionalChallenge" /* 6021 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "hasFetchedCredentials" /* 14274 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import createToggle from "createToggle" /* 10988 */;
+import closure_4 from "hasFetchedCredentials" /* 14243 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import createToggle from "createToggle" /* 11006 */;
 
 require = arg1;
 createToggle = {
@@ -30,7 +30,7 @@ createToggle = {
         flag = false;
       }
       if (!flag) {
-        let obj = callback2(4809);
+        let obj = callback2(4822);
         obj = { title: null, body: null };
         const intl = callback(1236).intl;
         obj[0] = intl.string(callback(1236).t.v740sh);
@@ -58,7 +58,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.WEBAUTHN_VIEW,
   getComponent() {
-    return require(14277) /* UserSettingsWebAuthn */.default;
+    return require(14246) /* UserSettingsWebAuthn */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

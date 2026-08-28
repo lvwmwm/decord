@@ -1,16 +1,16 @@
-// Module ID: 16598
-// Function ID: 16599
+// Module ID: 16616
+// Function ID: 16617
 // Name: areStableParticipantsEqual
-// Dependencies: [4461, 1218, 4496, 1922, 4466, 643, 589, 4638, 8827, 9512, 2]
+// Dependencies: [4462, 1218, 4497, 1923, 4467, 643, 589, 4639, 8844, 9530, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 16598 (areStableParticipantsEqual)
+// Module 16616 (areStableParticipantsEqual)
 import shallowEqualDefault from "shallowEqual" /* 643 */;
-import closure_3 from "getParticipants" /* 4461 */;
+import closure_3 from "getParticipants" /* 4462 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4466 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4467 */;
 
 const require = arg1;
 function areStableParticipantsEqual(arg0, arg1) {
@@ -43,14 +43,14 @@ export default function useStableParticipant(arg0, arg1, arg2) {
           obj[1] = tmp;
           obj[2] = user;
           const id = closure_1_4.getId();
-          obj[5] = callback(4638).getName(dependencyMap, tmp3, user);
-          const obj5 = callback(4638);
-          obj[6] = callback(8827).getAvatarDecoration(user, dependencyMap);
+          obj[5] = callback(4639).getName(dependencyMap, tmp3, user);
+          const obj5 = callback(4639);
+          obj[6] = callback(8844).getAvatarDecoration(user, dependencyMap);
           obj[10] = user.id === id;
           return obj;
         }
       } else {
-        const tmp15 = callback2(9512)(participant);
+        const tmp15 = callback2(9530)(participant);
         const type = participant.type;
         if (closure_1_7.ACTIVITY === type) {
           obj = { type: null, id: null, applicationId: null };

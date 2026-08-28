@@ -1,10 +1,10 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15536
+// Function ID: 15537
 // Name: trackTabPressed
-// Dependencies: [19, 676, 3, 698, 4185, 2]
+// Dependencies: [19, 676, 3, 698, 4186, 2]
 // Exports: trackTabPressed, useTrackTabPerformance
 
-// Module 15518 (trackTabPressed)
+// Module 15536 (trackTabPressed)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "noop" /* 19 */;
 import { AnalyticEvents } from "ME" /* 676 */;

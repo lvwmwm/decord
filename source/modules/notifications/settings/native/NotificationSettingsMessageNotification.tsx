@@ -1,16 +1,16 @@
-// Module ID: 10161
-// Function ID: 10162
+// Module ID: 10179
+// Function ID: 10180
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 4445, 712, 10162, 4441, 1236, 5020, 10163, 10160, 4412, 10165, 2009, 10152, 10167, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 10180, 4442, 1236, 5033, 10181, 10178, 4413, 10183, 2010, 10170, 10185, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 10161 (NotificationSettingsMessageNotification)
+// Module 10179 (NotificationSettingsMessageNotification)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 10163 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 10181 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 class NotificationSettingsMessageNotification {
@@ -89,7 +89,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
   let obj = {
     context: "guild",
     style: style.style,
-    setting: _require(10160).useGuildPresetSettings(style.guildId).notification,
+    setting: _require(10178).useGuildPresetSettings(style.guildId).notification,
     onCustomize() {
       let obj = closure_1_1(closure_1_2[11]);
       obj = { guildId: style.guildId };
@@ -103,7 +103,7 @@ export const NotificationSettingsChannelMessageNotification = function Notificat
   let obj = {
     context: "channel",
     style: style.style,
-    setting: _require(10152).useChannelPresetSettings(style.channel).notification,
+    setting: _require(10170).useChannelPresetSettings(style.channel).notification,
     onCustomize() {
       let obj = closure_1_1(closure_1_2[11]);
       obj = { channel: style.channel };

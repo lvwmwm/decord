@@ -1,13 +1,13 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8171
+// Function ID: 8172
 // Name: usePremiumFeatures
-// Dependencies: [19, 1924, 4121, 1938, 4163, 1236, 2985, 8158, 4107, 8160, 8162, 8028, 8164, 8166, 8168, 712, 2]
+// Dependencies: [19, 1925, 4122, 1939, 4164, 1236, 2986, 8172, 4108, 8174, 8176, 8042, 8178, 8180, 8182, 712, 2]
 // Exports: default
 
-// Module 8157 (usePremiumFeatures)
+// Module 8171 (usePremiumFeatures)
 import closure_3 from "noop" /* 19 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
-import { TOTAL_PREMIUM_GROUP_USERS } from "SubscriptionStatusTypes" /* 4121 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
+import { TOTAL_PREMIUM_GROUP_USERS } from "SubscriptionStatusTypes" /* 4122 */;
 
 const require = arg1;
 ({ NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: c4, PremiumTypes: c5 } = GuildFeatures);

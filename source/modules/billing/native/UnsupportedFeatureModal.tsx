@@ -1,10 +1,10 @@
-// Module ID: 10517
-// Function ID: 10518
+// Module ID: 10535
+// Function ID: 10536
 // Name: UnsupportedFeatureModal
-// Dependencies: [19, 17, 21, 5960, 5447, 4676, 4441, 1236, 2]
+// Dependencies: [19, 17, 21, 5973, 5460, 4689, 4442, 1236, 2]
 // Exports: default
 
-// Module 10517 (UnsupportedFeatureModal)
+// Module 10535 (UnsupportedFeatureModal)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -19,7 +19,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
   obj = { Unsupported: null };
   obj = {
     title: onDismiss.title,
-    headerLeft: onDismiss(5447).getHeaderCloseButton(() => {
+    headerLeft: onDismiss(5460).getHeaderCloseButton(() => {
       let arr = closure_1_1(closure_1_2[5]);
       arr = arr.pop();
       if (onDismiss != null) {
@@ -31,15 +31,15 @@ export default function UnsupportedFeatureModal(onDismiss) {
       obj = { variant: "text-lg/normal", color: "text-default", children: null };
       const intl = onDismiss(1236).intl;
       obj[2] = intl.string(onDismiss(1236).t.I22zuX);
-      obj[1] = callback(onDismiss(4441).Text, obj);
+      obj[1] = callback(onDismiss(4442).Text, obj);
       return callback(closure_3, obj);
     }
   };
   obj[0] = obj;
   obj[1] = obj;
-  return jsx(onDismiss(5960).Navigator, {
+  return jsx(onDismiss(5973).Navigator, {
     title: onDismiss.title,
-    headerLeft: onDismiss(5447).getHeaderCloseButton(() => {
+    headerLeft: onDismiss(5460).getHeaderCloseButton(() => {
       let arr = closure_1_1(closure_1_2[5]);
       arr = arr.pop();
       if (onDismiss != null) {
@@ -51,7 +51,7 @@ export default function UnsupportedFeatureModal(onDismiss) {
       obj = { variant: "text-lg/normal", color: "text-default", children: null };
       const intl = onDismiss(1236).intl;
       obj[2] = intl.string(onDismiss(1236).t.I22zuX);
-      obj[1] = callback(onDismiss(4441).Text, obj);
+      obj[1] = callback(onDismiss(4442).Text, obj);
       return callback(closure_3, obj);
     }
   });

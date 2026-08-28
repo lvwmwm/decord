@@ -1,12 +1,12 @@
-// Module ID: 9014
-// Function ID: 9015
+// Module ID: 9032
+// Function ID: 9033
 // Name: getRandomCustomStatusPrompt
-// Dependencies: [9013, 1236, 2]
+// Dependencies: [9031, 1236, 2]
 // Exports: default
 
-// Module 9014 (getRandomCustomStatusPrompt)
+// Module 9032 (getRandomCustomStatusPrompt)
 import set from "set" /* 2 */;
-import StatusTypes from "StatusTypes" /* 9013 */;
+import StatusTypes from "StatusTypes" /* 9031 */;
 
 ({ CustomStatusPrompts: obj1, CustomStatusPromptValues: c3 } = StatusTypes);
 const result = set.fileFinishedImporting("modules/custom_status/utils/getRandomCustomStatusPrompt.tsx");

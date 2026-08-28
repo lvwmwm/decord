@@ -1,15 +1,15 @@
-// Module ID: 11860
-// Function ID: 11861
+// Module ID: 11879
+// Function ID: 11880
 // Name: useEventsButtonProps
-// Dependencies: [19, 4460, 4654, 4655, 589, 9552, 4959, 7579, 9589, 4412, 11861, 2009, 1236, 11865, 2]
+// Dependencies: [19, 4461, 4667, 4668, 589, 9570, 4972, 7593, 9607, 4413, 11880, 2010, 1236, 11884, 2]
 // Exports: default
 
-// Module 11860 (useEventsButtonProps)
-import useGuildEventsDefault from "useGuildEvents" /* 9552 */;
+// Module 11879 (useEventsButtonProps)
+import useGuildEventsDefault from "useGuildEvents" /* 9570 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "generateOldThreadCutoff" /* 4460 */;
-import closure_5 from "updateUserGuildSettingsInternal" /* 4654 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4655 */;
+import closure_4 from "generateOldThreadCutoff" /* 4461 */;
+import closure_5 from "updateUserGuildSettingsInternal" /* 4667 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4668 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_scheduled_events/native/hooks/useEventsButtonProps.tsx");
@@ -50,13 +50,13 @@ export default function useEventsButtonProps(id) {
     const intl = tmp(1236).intl;
     name = intl.string(tmp(1236).t.tlopTM);
   }
-  let mode = tmp(11865).ChannelModes.DEFAULT;
+  let mode = tmp(11884).ChannelModes.DEFAULT;
   let tmp8 = hasUnread;
   if (hasUnread) {
     tmp8 = !eventsMuted;
   }
   if (tmp8) {
-    mode = tmp(11865).ChannelModes.UNREAD_IMPORTANT;
+    mode = tmp(11884).ChannelModes.UNREAD_IMPORTANT;
   }
   return { hasUnread, mentionCount, mode, name, eventsMuted, handlePress, handleLongPress };
 };

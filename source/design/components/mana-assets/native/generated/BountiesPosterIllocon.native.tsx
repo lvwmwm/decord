@@ -1,14 +1,14 @@
-// Module ID: 6315
-// Function ID: 6316
+// Module ID: 6328
+// Function ID: 6329
 // Name: BountiesPosterIllocon
-// Dependencies: [21, 5445, 6316, 2]
+// Dependencies: [21, 5458, 6329, 2]
 // Exports: BountiesPosterIllocon
 
-// Module 6315 (BountiesPosterIllocon)
+// Module 6328 (BountiesPosterIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6316 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6329 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterIllocon.native.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 16032
-// Function ID: 16033
+// Module ID: 16050
+// Function ID: 16051
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 4445, 712, 4185, 2]
+// Dependencies: [19, 17, 4446, 712, 4186, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 16032 (useMainTabsChannelScreenStyles)
+// Module 16050 (useMainTabsChannelScreenStyles)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "noop" /* 19 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 createCacheKey = { elevation: null };
@@ -70,7 +70,7 @@ export const useMainTabsChannelScreenStyles = function useMainTabsChannelScreenS
   fn.__closure = { freezeValue: parentFreezeValue, isDragging, translateX, maxWidth, elevationStyle: elevation, isCompletelyCovered: derivedValue };
   fn.__workletHash = 16765484569296;
   fn.__initData = closure_4;
-  const animatedStyle = _require(4185).useAnimatedStyle(fn);
+  const animatedStyle = _require(4186).useAnimatedStyle(fn);
   let items = [tmp, animatedStyle];
   return React.useMemo(() => {
     const items = [elevation.elevation, animatedStyle];

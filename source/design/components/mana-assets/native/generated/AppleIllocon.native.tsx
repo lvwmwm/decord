@@ -1,14 +1,14 @@
-// Module ID: 6261
-// Function ID: 6262
+// Module ID: 6274
+// Function ID: 6275
 // Name: AppleIllocon
-// Dependencies: [21, 5445, 6262, 2]
+// Dependencies: [21, 5458, 6275, 2]
 // Exports: AppleIllocon
 
-// Module 6261 (AppleIllocon)
+// Module 6274 (AppleIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6262 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6275 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AppleIllocon.native.tsx");

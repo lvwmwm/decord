@@ -1,25 +1,25 @@
-// Module ID: 11926
-// Function ID: 11927
+// Module ID: 11945
+// Function ID: 11946
 // Name: SpamMessageRequestHamActionSheet
-// Dependencies: [32, 19, 17, 1922, 21, 4445, 712, 589, 11921, 4162, 1236, 7613, 4412, 5574, 5573, 5942, 8295, 4880, 2]
+// Dependencies: [32, 19, 17, 1923, 21, 4446, 712, 589, 11940, 4163, 1236, 7627, 4413, 5587, 5586, 5955, 8309, 4893, 2]
 // Exports: default
 
-// Module 11926 (SpamMessageRequestHamActionSheet)
+// Module 11945 (SpamMessageRequestHamActionSheet)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 4880 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5573 */;
-import Background from "Background" /* 5574 */;
-import ActionSheetCloseButton from "ActionSheetCloseButton" /* 5942 */;
-import Form from "Form" /* 8295 */;
-import useMessageRequestActions from "useMessageRequestActions" /* 11921 */;
+import Button from "Button" /* 4893 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5586 */;
+import Background from "Background" /* 5587 */;
+import ActionSheetCloseButton from "ActionSheetCloseButton" /* 5955 */;
+import Form from "Form" /* 8309 */;
+import useMessageRequestActions from "useMessageRequestActions" /* 11940 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -50,15 +50,15 @@ export default function SpamMessageRequestHamActionSheet(arg0) {
   obj = {
     user: stateFromStores,
     onError() {
-      let obj = callback(4162);
+      let obj = callback(4163);
       obj = { key: "MESSAGE_REQUEST_REQUEST_ERROR_ALERT_TITLE", content: null, icon: null };
       const intl = recipientId(1236).intl;
       obj[1] = intl.string(recipientId(1236).t["EDYbS+"]);
-      obj[2] = callback(7613);
+      obj[2] = callback(7627);
       obj.open(obj);
     },
     onAcceptSuccess(arg0) {
-      callback(4412).hideActionSheet();
+      callback(4413).hideActionSheet();
     }
   };
   const messageRequestActions = obj1.useMessageRequestActions(obj);

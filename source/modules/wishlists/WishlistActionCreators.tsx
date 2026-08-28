@@ -1,20 +1,20 @@
-// Module ID: 10383
-// Function ID: 10384
+// Module ID: 10401
+// Function ID: 10402
 // Name: extraWishlistParams
-// Dependencies: [5, 7299, 1922, 4109, 6026, 10378, 676, 501, 1370, 709, 6030, 530, 10376, 1208, 4343, 698, 8048, 2]
+// Dependencies: [5, 7313, 1923, 4110, 6039, 10396, 676, 501, 1370, 709, 6043, 530, 10394, 1208, 4344, 698, 8062, 2]
 
-// Module 10383 (extraWishlistParams)
+// Module 10401 (extraWishlistParams)
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import useSKUPrice from "useSKUPrice" /* 6030 */;
+import useSKUPrice from "useSKUPrice" /* 6043 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createUserWidgetFromServer" /* 7299 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "handlePaymentSourceCreateEnd" /* 4109 */;
-import closure_7 from "fromServer" /* 6026 */;
-import closure_8 from "fromServer" /* 10378 */;
-import { getWishlistSkuIds } from "fromServer" /* 10378 */;
+import closure_4 from "createUserWidgetFromServer" /* 7313 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import closure_6 from "handlePaymentSourceCreateEnd" /* 4110 */;
+import closure_7 from "fromServer" /* 6039 */;
+import closure_8 from "fromServer" /* 10396 */;
+import { getWishlistSkuIds } from "fromServer" /* 10396 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

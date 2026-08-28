@@ -1,15 +1,15 @@
-// Module ID: 17249
-// Function ID: 17250
+// Module ID: 17267
+// Function ID: 17268
 // Name: resetImperatively
-// Dependencies: [700, 705, 4074, 2]
+// Dependencies: [700, 705, 4075, 2]
 // Exports: initializeImperatively, resetImperatively, useDescriptionState, useEmojiIdState, useEmojiNameState, useNameState, useRefIdState
 
-// Module 17249 (resetImperatively)
+// Module 17267 (resetImperatively)
 import set from "set" /* 2 */;
-import isIterable from "isIterable" /* 4074 */;
+import isIterable from "isIterable" /* 4075 */;
 import identity from "identity" /* 700 */;
 
-let closure_2 = Object.freeze({ name: "", emojiId: "call", emojiName: "header", description: "height", refId: "accessibilityRole" });
+let closure_2 = Object.freeze({ name: "", emojiId: "find", emojiName: "Promise", description: "container", refId: "surrogates" });
 let closure_3 = identity.createWithEqualityFn((arg0) => {
   closure_0 = arg0;
   const obj = {};

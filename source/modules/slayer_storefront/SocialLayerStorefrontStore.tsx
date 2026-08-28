@@ -1,12 +1,12 @@
-// Module ID: 6027
-// Function ID: 6028
+// Module ID: 6040
+// Function ID: 6041
 // Name: handleUserSettingsStoreUpdate
-// Dependencies: [1996, 1218, 589, 709, 2]
+// Dependencies: [1997, 1218, 589, 709, 2]
 
-// Module 6027 (handleUserSettingsStoreUpdate)
+// Module 6040 (handleUserSettingsStoreUpdate)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_1 from "_getSystemLocale" /* 1996 */;
+import closure_1 from "_getSystemLocale" /* 1997 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import set from "set" /* 2 */;
 

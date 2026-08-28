@@ -1,10 +1,10 @@
-// Module ID: 5914
-// Function ID: 5915
+// Module ID: 5927
+// Function ID: 5928
 // Name: accountLinkAuthorizationStarted
 // Dependencies: [709, 2]
 // Exports: accountLinkAuthorizationCompleted, accountLinkAuthorizationStarted, devtoolsSetGloballyDisabledAuthorizationFlows
 
-// Module 5914 (accountLinkAuthorizationStarted)
+// Module 5927 (accountLinkAuthorizationStarted)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

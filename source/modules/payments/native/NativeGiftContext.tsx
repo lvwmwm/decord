@@ -1,22 +1,22 @@
-// Module ID: 10396
-// Function ID: 10397
+// Module ID: 10414
+// Function ID: 10415
 // Name: NativeGiftContextProvider
-// Dependencies: [5, 32, 19, 8492, 10394, 8380, 1922, 676, 6037, 1924, 21, 3, 7107, 7108, 4122, 10397, 1236, 10398, 4107, 6039, 10399, 10400, 589, 10432, 10438, 8495, 8489, 4810, 698, 5925, 10439, 709, 500, 10375, 2]
+// Dependencies: [5, 32, 19, 8506, 10412, 8394, 1923, 676, 6050, 1925, 21, 3, 7120, 7121, 4123, 10415, 1236, 10416, 4108, 6052, 10417, 10418, 589, 10448, 10454, 8509, 8503, 4823, 698, 5938, 10455, 709, 500, 10393, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 10396 (NativeGiftContextProvider)
+// Module 10414 (NativeGiftContextProvider)
 import timestampDefault from "timestamp" /* 3 */;
-import createDefinedContextDefault from "createDefinedContext" /* 7107 */;
+import createDefinedContextDefault from "createDefinedContext" /* 7120 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importDefaultResult from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 8492 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10394 */;
-import closure_8 from "frozen" /* 8380 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "initialize" /* 8506 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10412 */;
+import closure_8 from "frozen" /* 8394 */;
+import closure_9 from "mergeGuildAvatar" /* 1923 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 6037 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 6050 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -266,7 +266,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     constants = undefined;
     table = undefined;
     jsx = undefined;
-    obj = { orderId: "a", planId: "<string:2715680769>", planSelection: "<string:3529244673>", giftInfo: "<string:1337458689>" };
+    obj = { orderId: "a", planId: "krydda", planSelection: "salt", giftInfo: "saltkar" };
     obj = { premiumType: null, planInterval: null };
     obj[0] = first;
     obj[1] = first1;

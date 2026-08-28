@@ -1,10 +1,10 @@
-// Module ID: 16504
-// Function ID: 16505
+// Module ID: 16522
+// Function ID: 16523
 // Name: useScreenNameSharedValue
-// Dependencies: [19, 4300, 4185, 2]
+// Dependencies: [19, 4301, 4186, 2]
 // Exports: default
 
-// Module 16504 (useScreenNameSharedValue)
+// Module 16522 (useScreenNameSharedValue)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
@@ -12,8 +12,8 @@ const unknown = "unknown";
 let result = require("set").fileFinishedImporting("modules/panels/morphable/native/useScreenNameSharedValue.tsx");
 
 export default function useScreenNameSharedValue() {
-  let rootNavigationRef = sharedValue(4300).getRootNavigationRef();
-  let obj = sharedValue(4300);
+  let rootNavigationRef = sharedValue(4301).getRootNavigationRef();
+  let obj = sharedValue(4301);
   let isReadyResult;
   if (rootNavigationRef != null) {
     isReadyResult = rootNavigationRef.isReady();
@@ -31,7 +31,7 @@ export default function useScreenNameSharedValue() {
   } else {
     tmp2 = unknown;
   }
-  sharedValue = sharedValue(4185).useSharedValue(tmp2);
+  sharedValue = sharedValue(4186).useSharedValue(tmp2);
   const items = [sharedValue];
   const effect = React.useEffect(() => {
     function handleStateChange() {

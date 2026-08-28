@@ -1,24 +1,24 @@
-// Module ID: 9418
-// Function ID: 9419
+// Module ID: 9436
+// Function ID: 9437
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 9385, 9386, 676, 4473, 4347, 8524, 501, 9375, 9376, 1208, 9419, 9420, 4810, 1236, 1370, 709, 1231, 514, 2]
+// Dependencies: [5, 17, 9403, 9404, 676, 4474, 4348, 8539, 501, 9393, 9394, 1208, 9437, 9438, 4823, 1236, 1370, 709, 1231, 514, 2]
 
-// Module 9418 (postMessageToWebView)
+// Module 9436 (postMessageToWebView)
 import v1 from "v1" /* 514 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import _modDef4810 from "module_4810" /* 4810 */;
-import enforcingDefault from "enforcing" /* 9375 */;
-import leaveFrameDefault from "leaveFrame" /* 9419 */;
+import _modDef4823 from "module_4823" /* 4823 */;
+import enforcingDefault from "enforcing" /* 9393 */;
+import leaveFrameDefault from "leaveFrame" /* 9437 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9385 */;
-import { isLaunched } from "FrameLayoutModes" /* 9386 */;
+import closure_4 from "map" /* 9403 */;
+import { isLaunched } from "FrameLayoutModes" /* 9404 */;
 import { ComponentActions } from "ME" /* 676 */;
-import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4473 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4347 */;
-import WebView from "WebView" /* 8524 */;
+import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4474 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4348 */;
+import WebView from "WebView" /* 8539 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 
 require = arg1;
@@ -174,7 +174,7 @@ class FramesNativeManager extends tmp5 {
 const prototype = FramesNativeManager.prototype;
 prototype["showRPCDisconnectErrorUI"] = function showRPCDisconnectErrorUI(reason) {
   ({ code, message } = reason);
-  let obj = _modDef4810;
+  let obj = _modDef4823;
   obj = { title: null, body: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.formatToPlainString(getSystemLocale.t.hbiAO6, { code });

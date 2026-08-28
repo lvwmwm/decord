@@ -1,20 +1,20 @@
-// Module ID: 11451
-// Function ID: 11452
+// Module ID: 11470
+// Function ID: 11471
 // Name: VoiceMessageRecordingStatus
-// Dependencies: [11452, 644, 4185, 705, 4879, 2]
+// Dependencies: [11471, 644, 4186, 705, 4892, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 11451 (VoiceMessageRecordingStatus)
+// Module 11470 (VoiceMessageRecordingStatus)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 705 */;
-import _mod4185 from "module_4185" /* 4185 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4879 */;
-import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11452 */;
+import _mod4186 from "module_4186" /* 4186 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4892 */;
+import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11471 */;
 import keys from "keys" /* 644 */;
 
 ({ VoiceMessageAnimationState: obj1, WAVEFORM_WAVE_MAX_VALUE: c3 } = VoiceMessageAnimationState);
 let obj = keys.create(() => {
-  obj = { voiceMessageAnimationState: _mod4185.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "ct", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "PX_16", showVoiceMessagesTooltip: "primary", savedVoiceMessageUploadData: true, isVoiceMessageButtonMounted: "lg", isUsingHoldGesture: null };
+  obj = { voiceMessageAnimationState: _mod4186.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "ct", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: false, waveformVersion: "PX_16", showVoiceMessagesTooltip: "TypingIndicatorInner", savedVoiceMessageUploadData: "M9 1H7v1h2V1ZM7 2H6v1h1V2ZM7 6H6v1h1V6Z", isVoiceMessageButtonMounted: null, isUsingHoldGesture: 0.75 };
   items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = closure_2);
   obj[6] = [];
@@ -60,7 +60,7 @@ export const addVoiceMessageWave = function addVoiceMessageWave(arg0) {
   const waveformVersion = obj.getState().waveformVersion;
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
-    obj = waveformVersion(4879);
+    obj = waveformVersion(4892);
     const result = currWaveHeight.set(obj.withSpring(arg0 / closure_3));
   }
   const items = [arg0, waveformVersion];
@@ -82,7 +82,7 @@ export const hideVoiceMessagesTooltip = function hideVoiceMessagesTooltip() {
 export const resetVoiceMessageState = function resetVoiceMessageState() {
   obj = batchUpdates;
   obj.batchUpdates(() => {
-    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "accessibilityRole" });
+    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "Boolean", savedVoiceMessageUploadData: "container" });
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {

@@ -1,24 +1,24 @@
-// Module ID: 11090
-// Function ID: 11091
+// Module ID: 11108
+// Function ID: 11109
 // Name: PaypalVanityTag
-// Dependencies: [19, 17, 5304, 21, 4445, 712, 1236, 11091, 11092, 12, 1898, 4441, 1297, 5303, 2]
+// Dependencies: [19, 17, 5317, 21, 4446, 712, 1236, 11109, 11110, 12, 1898, 4442, 1297, 5316, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11090 (PaypalVanityTag)
+// Module 11108 (PaypalVanityTag)
 import applyDefault from "apply" /* 12 */;
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import shortenAndLocalizeNumber from "shortenAndLocalizeNumber" /* 1898 */;
-import Text from "Text" /* 4441 */;
-import officialApplicationIds from "officialApplicationIds" /* 5303 */;
-import registerAssetDefault from "registerAsset" /* 11091 */;
-import registerAssetDefault2 from "registerAsset" /* 11092 */;
+import Text from "Text" /* 4442 */;
+import officialApplicationIds from "officialApplicationIds" /* 5316 */;
+import registerAssetDefault from "registerAsset" /* 11109 */;
+import registerAssetDefault2 from "registerAsset" /* 11110 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import OperatorTypes from "OperatorTypes" /* 5304 */;
+import OperatorTypes from "OperatorTypes" /* 5317 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function PaypalVanityTag(style) {

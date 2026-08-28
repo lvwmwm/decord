@@ -1,15 +1,15 @@
-// Module ID: 11752
-// Function ID: 11753
+// Module ID: 11771
+// Function ID: 11772
 // Name: ChatFloatingNavButton
-// Dependencies: [19, 17, 21, 4445, 712, 4185, 4165, 4879, 4883, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 4186, 4166, 4892, 4896, 2]
 // Exports: default
 
-// Module 11752 (ChatFloatingNavButton)
+// Module 11771 (ChatFloatingNavButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ Image: c4, Pressable: c5 } = get_ActivityIndicator);

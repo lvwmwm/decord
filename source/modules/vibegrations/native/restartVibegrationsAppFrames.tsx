@@ -1,13 +1,13 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 12853
+// Function ID: 12854
 // Name: restartVibegrationsAppFrames
-// Dependencies: [9385, 9418, 9382, 2]
+// Dependencies: [9403, 9436, 9400, 2]
 // Exports: default
 
-// Module 12834 (restartVibegrationsAppFrames)
-import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9382 */;
-import postMessageToWebViewDefault from "postMessageToWebView" /* 9418 */;
-import closure_2 from "map" /* 9385 */;
+// Module 12853 (restartVibegrationsAppFrames)
+import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9400 */;
+import postMessageToWebViewDefault from "postMessageToWebView" /* 9436 */;
+import closure_2 from "map" /* 9403 */;
 
 const result = require("set").fileFinishedImporting("modules/vibegrations/native/restartVibegrationsAppFrames.tsx");
 

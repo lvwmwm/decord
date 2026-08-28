@@ -1,14 +1,14 @@
-// Module ID: 7784
-// Function ID: 7785
+// Module ID: 7798
+// Function ID: 7799
 // Name: set
-// Dependencies: [1983, 1218, 1391, 7785, 11, 589, 709, 2]
+// Dependencies: [1984, 1218, 1391, 7799, 11, 589, 709, 2]
 
-// Module 7784 (set)
+// Module 7798 (set)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 7785 */;
-import closure_3 from "isSubscriptionGated" /* 1983 */;
+import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 7799 */;
+import closure_3 from "isSubscriptionGated" /* 1984 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import set from "set" /* 2 */;

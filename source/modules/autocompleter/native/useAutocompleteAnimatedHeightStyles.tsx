@@ -1,10 +1,10 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11898
+// Function ID: 11899
 // Name: useAutocompleteAnimatedHeightStyles
-// Dependencies: [4308, 4185, 4446, 4449, 2]
+// Dependencies: [4309, 4186, 4447, 4450, 2]
 // Exports: default
 
-// Module 11879 (useAutocompleteAnimatedHeightStyles)
+// Module 11898 (useAutocompleteAnimatedHeightStyles)
 import set from "set" /* 2 */;
 
 let closure_2 = { code: "function useAutocompleteAnimatedHeightStylesTsx1(){const{withTiming,height,timingStandard,isFrozenSharedValue}=this.__closure;return{height:withTiming(height,timingStandard),display:!isFrozenSharedValue.get()?'flex':'none'};}" };

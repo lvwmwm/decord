@@ -1,9 +1,9 @@
-// Module ID: 15991
-// Function ID: 15992
+// Module ID: 16009
+// Function ID: 16010
 // Name: ITEM_PADDING
 // Dependencies: [712, 2]
 
-// Module 15991 (ITEM_PADDING)
+// Module 16009 (ITEM_PADDING)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 

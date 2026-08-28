@@ -1,10 +1,10 @@
-// Module ID: 9231
-// Function ID: 9232
+// Module ID: 9249
+// Function ID: 9250
 // Name: _authorizeLink
-// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4445, 5302, 9232, 4158, 500, 9227, 5303, 38, 709, 4441, 1236, 5505, 4880, 2]
+// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4446, 5315, 9250, 4159, 500, 9245, 5316, 38, 709, 4442, 1236, 5518, 4893, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 9231 (_authorizeLink)
+// Module 9249 (_authorizeLink)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
@@ -12,7 +12,7 @@ import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { WebBrowserType } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function _authorizeLink() {
@@ -69,7 +69,7 @@ function _authorizeLink() {
             return obj;
           } else {
             url = body.body.url;
-            const obj5 = callback2(4158);
+            const obj5 = callback2(4159);
             const tmp19 = url;
             let tmp6 = closure_8;
             if (obj6.isAndroid()) {

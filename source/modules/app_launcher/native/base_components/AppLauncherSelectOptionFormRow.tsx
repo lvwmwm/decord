@@ -1,18 +1,18 @@
-// Module ID: 11663
-// Function ID: 11664
+// Module ID: 11682
+// Function ID: 11683
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [19, 21, 4445, 712, 11656, 8295, 4441, 1297, 5560, 2]
+// Dependencies: [19, 21, 4446, 712, 11675, 8309, 4442, 1297, 5573, 2]
 // Exports: default
 
-// Module 11663 (AppLauncherSelectOptionFormRow)
+// Module 11682 (AppLauncherSelectOptionFormRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4441 */;
-import Form from "Form" /* 8295 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11656 */;
+import Text from "Text" /* 4442 */;
+import Form from "Form" /* 8309 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 11675 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;
@@ -52,7 +52,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   }
   obj[4] = fn;
   const tmp2 = callback();
-  obj[5] = jsx(Button.Icon, { source: unselectedSubLabel(5560), size: Button.IconSizes.SMALL_20 });
+  obj[5] = jsx(Button.Icon, { source: unselectedSubLabel(5573), size: Button.IconSizes.SMALL_20 });
   const merged1 = Object.assign(merged);
   return jsx(Form.FormRow, { variant: str, color: null, lineClamp: 1, children: null });
 };

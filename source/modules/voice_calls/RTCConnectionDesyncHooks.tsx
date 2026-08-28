@@ -1,21 +1,21 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15754
+// Function ID: 15755
 // Name: useEnsureSyncedChannelVoiceStates
-// Dependencies: [32, 19, 4461, 4465, 1218, 1391, 1992, 13323, 4519, 1922, 4464, 12, 589, 1370, 9411, 2]
+// Dependencies: [32, 19, 4462, 4466, 1218, 1391, 1993, 13342, 4520, 1923, 4465, 12, 589, 1370, 9429, 2]
 // Exports: useDesyncedChannelParticipants, useEnsureSyncedChannelParticipants, useEnsureSyncedChannelVoiceStates, useIsRTCDisconnectedUIVisible
 
-// Module 15736 (useEnsureSyncedChannelVoiceStates)
+// Module 15754 (useEnsureSyncedChannelVoiceStates)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getParticipants" /* 4461 */;
-import closure_5 from "isVoiceMuted" /* 4465 */;
+import closure_4 from "getParticipants" /* 4462 */;
+import closure_5 from "isVoiceMuted" /* 4466 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "trackCommunicationDisabled" /* 1992 */;
-import closure_9 from "retryFailedUsers" /* 13323 */;
-import closure_10 from "createRTCConnection" /* 4519 */;
-import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import closure_12 from "updateVoiceState" /* 4464 */;
+import closure_8 from "trackCommunicationDisabled" /* 1993 */;
+import closure_9 from "retryFailedUsers" /* 13342 */;
+import closure_10 from "createRTCConnection" /* 4520 */;
+import closure_11 from "mergeGuildAvatar" /* 1923 */;
+import closure_12 from "updateVoiceState" /* 4465 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/voice_calls/RTCConnectionDesyncHooks.tsx");

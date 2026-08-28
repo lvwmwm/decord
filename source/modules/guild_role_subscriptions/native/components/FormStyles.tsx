@@ -1,14 +1,14 @@
-// Module ID: 13551
-// Function ID: 13552
+// Module ID: 13570
+// Function ID: 13571
 // Name: styles
-// Dependencies: [676, 4445, 5413, 712, 2]
+// Dependencies: [676, 4446, 5426, 712, 2]
 
-// Module 13551 (styles)
+// Module 13570 (styles)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "createTextStyle" /* 5413 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "createTextStyle" /* 5426 */;
 
 const Fonts = ME.Fonts;
 let obj = { padding: 16, flexGrow: 0, borderRadius: 8, marginHorizontal: 16 };

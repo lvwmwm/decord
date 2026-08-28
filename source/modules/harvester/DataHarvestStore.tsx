@@ -1,9 +1,9 @@
-// Module ID: 13276
-// Function ID: 13277
+// Module ID: 13295
+// Function ID: 13296
 // Name: harvestType
 // Dependencies: [589, 709, 2]
 
-// Module 13276 (harvestType)
+// Module 13295 (harvestType)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

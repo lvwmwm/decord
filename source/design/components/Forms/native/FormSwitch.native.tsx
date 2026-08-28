@@ -1,19 +1,19 @@
-// Module ID: 5946
-// Function ID: 5947
+// Module ID: 5959
+// Function ID: 5960
 // Name: FormSwitch
-// Dependencies: [32, 19, 17, 21, 4185, 4445, 712, 4882, 1356, 1367, 4879, 4883, 4165, 5947, 5948, 4413, 4414, 2]
+// Dependencies: [32, 19, 17, 21, 4186, 4446, 712, 4895, 1356, 1367, 4892, 4896, 4166, 5960, 5961, 4414, 4415, 2]
 // Exports: FormSwitch
 
-// Module 5946 (FormSwitch)
+// Module 5959 (FormSwitch)
 import ThemesDefault from "Themes" /* 712 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4879 */;
-import IconSizesDefault from "IconSizes" /* 4882 */;
-import SUBTLE_SPRING from "SUBTLE_SPRING" /* 4883 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4892 */;
+import IconSizesDefault from "IconSizes" /* 4895 */;
+import SUBTLE_SPRING from "SUBTLE_SPRING" /* 4896 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "module_4185" /* 4185 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "module_4186" /* 4186 */;
 
 require = arg1;
 let closure_6 = importDefaultResult.createAnimatedComponent(require("get ActivityIndicator").Pressable);

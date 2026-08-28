@@ -1,10 +1,10 @@
-// Module ID: 9954
-// Function ID: 9955
+// Module ID: 9972
+// Function ID: 9973
 // Name: getMessageLimit
 // Dependencies: [676, 2]
 // Exports: getMessageLimit, useMessageLimit
 
-// Module 9954 (getMessageLimit)
+// Module 9972 (getMessageLimit)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

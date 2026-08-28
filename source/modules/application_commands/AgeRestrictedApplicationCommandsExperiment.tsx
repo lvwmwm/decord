@@ -1,9 +1,9 @@
-// Module ID: 8364
-// Function ID: 8365
+// Module ID: 8378
+// Function ID: 8379
 // Name: getUnitId
 // Dependencies: [1368, 2]
 
-// Module 8364 (getUnitId)
+// Module 8378 (getUnitId)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 const obj = { 1: null };

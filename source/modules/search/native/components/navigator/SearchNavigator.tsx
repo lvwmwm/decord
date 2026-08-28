@@ -1,18 +1,18 @@
-// Module ID: 16356
-// Function ID: 16357
-// Dependencies: [19, 17, 7554, 16140, 676, 21, 4445, 712, 7755, 5960, 11844, 1629, 16357, 7540, 16352, 16353, 2]
+// Module ID: 16374
+// Function ID: 16375
+// Dependencies: [19, 17, 7568, 16158, 676, 21, 4446, 712, 7769, 5973, 11863, 1629, 16375, 7554, 16370, 16371, 2]
 
-// Module 16356
+// Module 16374
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SearchEntrypointAnalyticsLocations as closure_5 } from "SearchEntrypointAnalyticsLocations" /* 7554 */;
-import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16140 */;
+import { SearchEntrypointAnalyticsLocations as closure_5 } from "SearchEntrypointAnalyticsLocations" /* 7568 */;
+import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16158 */;
 import { SearchTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7755 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7769 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -24,7 +24,7 @@ let closure_10 = createCacheKey.createStyles(obj);
 let closure_11 = createNativeStackNavigator.createNativeStackNavigator();
 const memoResult = importAllResult.memo((route) => {
   const searchContext = route.route.params.searchContext;
-  let obj = searchContext(5960);
+  let obj = searchContext(5973);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const items = [searchContext];
   const effect = importAllResult.useEffect(() => {
@@ -52,7 +52,7 @@ const memoResult = importAllResult.memo((route) => {
       name: SearchNavigatorScreens.SEARCH_TABS,
       options: { headerShown: false, fullScreenGestureEnabled: true },
       getComponent() {
-        return searchContext(16357).default;
+        return searchContext(16375).default;
       }
     }),
     callback(closure_11.Screen, {
@@ -61,8 +61,8 @@ const memoResult = importAllResult.memo((route) => {
         route = route.route;
         const obj = {
           headerShown: true,
-          header: route(7540).renderHeader,
-          headerLeft: route(7540).getRenderBackImage(route.navigation),
+          header: route(7554).renderHeader,
+          headerLeft: route(7554).getRenderBackImage(route.navigation),
           headerTitle() {
             return closure_1_8(closure_1_1(closure_1_2[14]), { channelId: route.params.channelId });
           },
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo((route) => {
         return obj;
       },
       getComponent() {
-        return searchContext(16353).default;
+        return searchContext(16371).default;
       }
     })
   ];

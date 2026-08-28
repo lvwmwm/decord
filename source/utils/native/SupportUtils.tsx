@@ -1,12 +1,12 @@
-// Module ID: 15082
-// Function ID: 15083
+// Module ID: 15068
+// Function ID: 15069
 // Name: _emailSupport
-// Dependencies: [5, 1996, 1626, 4424, 4158, 1995, 2]
+// Dependencies: [5, 1997, 1626, 4425, 4159, 1996, 2]
 // Exports: emailSupport
 
-// Module 15082 (_emailSupport)
+// Module 15068 (_emailSupport)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "_getSystemLocale" /* 1996 */;
+import closure_5 from "_getSystemLocale" /* 1997 */;
 
 const require = arg1;
 function _emailSupport() {
@@ -38,10 +38,10 @@ function _emailSupport() {
             obj[0] = arg1;
             return obj;
           } else {
-            const tmp10 = closure_1_1(4158);
+            const tmp10 = closure_1_1(4159);
             closure_1 = tmp10;
             const openURL = tmp10.openURL;
-            obj1 = closure_1_1(1995);
+            obj1 = closure_1_1(1996);
             c2 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };

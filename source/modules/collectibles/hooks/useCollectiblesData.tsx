@@ -1,13 +1,13 @@
-// Module ID: 8014
-// Function ID: 8015
+// Module ID: 8028
+// Function ID: 8029
 // Name: useCollectiblesData
-// Dependencies: [32, 7220, 7236, 647, 2]
+// Dependencies: [32, 7234, 7250, 647, 2]
 // Exports: default
 
-// Module 8014 (useCollectiblesData)
+// Module 8028 (useCollectiblesData)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "updateCategoriesAndProducts" /* 7220 */;
-import closure_4 from "map" /* 7236 */;
+import closure_3 from "updateCategoriesAndProducts" /* 7234 */;
+import closure_4 from "map" /* 7250 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useCollectiblesData.tsx");

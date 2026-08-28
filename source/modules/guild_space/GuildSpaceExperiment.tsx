@@ -1,12 +1,12 @@
-// Module ID: 6024
-// Function ID: 6025
+// Module ID: 6037
+// Function ID: 6038
 // Name: experiment
-// Dependencies: [4356, 2]
+// Dependencies: [4357, 2]
 // Exports: getGuildSpaceExperimentEnabled, useGuildSpaceExperimentEnabled
 
-// Module 6024 (experiment)
+// Module 6037 (experiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4356 */;
+import createExperiment from "createExperiment" /* 4357 */;
 
 const items = [{ id: 1, label: "Enable Guild Space", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-06_guild_spaces", label: "Guild Space", defaultConfig: { enabled: false }, treatments: items });

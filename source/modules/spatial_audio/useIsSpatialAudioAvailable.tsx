@@ -1,13 +1,13 @@
-// Module ID: 13395
-// Function ID: 13396
+// Module ID: 13414
+// Function ID: 13415
 // Name: useIsSpatialAudioAvailable
-// Dependencies: [4496, 4509, 13396, 589, 2]
+// Dependencies: [4497, 4510, 13415, 589, 2]
 // Exports: default, isSpatialAudioAvailable
 
-// Module 13395 (useIsSpatialAudioAvailable)
-import apexExperimentDefault from "apexExperiment" /* 13396 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4496 */;
-import { Features } from "DesktopSources" /* 4509 */;
+// Module 13414 (useIsSpatialAudioAvailable)
+import apexExperimentDefault from "apexExperiment" /* 13415 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
+import { Features } from "DesktopSources" /* 4510 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/spatial_audio/useIsSpatialAudioAvailable.tsx");

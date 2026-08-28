@@ -1,18 +1,18 @@
-// Module ID: 9127
-// Function ID: 9128
+// Module ID: 9145
+// Function ID: 9146
 // Name: ExpressionPickerCategories
-// Dependencies: [19, 17, 21, 4445, 712, 1367, 4314, 9128, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 1367, 4315, 9146, 2]
 // Exports: default
 
-// Module 9127 (ExpressionPickerCategories)
+// Module 9145 (ExpressionPickerCategories)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import Portal from "Portal" /* 4314 */;
-import _modDef9128 from "module_9128" /* 9128 */;
+import Portal from "Portal" /* 4315 */;
+import _modDef9146 from "module_9146" /* 9146 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;
@@ -40,7 +40,7 @@ export default function ExpressionPickerCategories(arg0) {
   items[2] = style;
   let tmp5Result = null;
   if (!tmp4) {
-    tmp5Result = tmp5(_modDef9128, {});
+    tmp5Result = tmp5(_modDef9146, {});
   }
   const items1 = [tmp5Result, children];
   obj[1] = items1;

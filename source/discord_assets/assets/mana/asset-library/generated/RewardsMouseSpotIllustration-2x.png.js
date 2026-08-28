@@ -1,9 +1,9 @@
-// Module ID: 6878
-// Function ID: 6879
+// Module ID: 6891
+// Function ID: 6892
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6878 (metadata)
+// Module 6891 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RewardsMouseSpotIllustration-2x.png.js");

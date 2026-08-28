@@ -1,12 +1,12 @@
-// Module ID: 16352
-// Function ID: 16353
-// Dependencies: [19, 17, 21, 4445, 12841, 2]
+// Module ID: 16370
+// Function ID: 16371
+// Dependencies: [19, 17, 21, 4446, 12860, 2]
 
-// Module 16352
-import ChannelHeaderDefault from "ChannelHeader" /* 12841 */;
+// Module 16370
+import ChannelHeaderDefault from "ChannelHeader" /* 12860 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importAllResult from "noop" /* 19 */;
 
 let closure_4 = createCacheKey.createStyles({ container: { flexShrink: 1, paddingRight: 12, flexDirection: "row", alignItems: "center" } });

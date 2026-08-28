@@ -1,9 +1,9 @@
-// Module ID: 6974
-// Function ID: 6975
+// Module ID: 6987
+// Function ID: 6988
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6974 (metadata)
+// Module 6987 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StickersSpotIllustration-2x.png.js");

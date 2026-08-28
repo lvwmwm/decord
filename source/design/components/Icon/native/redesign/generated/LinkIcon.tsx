@@ -1,14 +1,14 @@
-// Module ID: 4388
-// Function ID: 4389
+// Module ID: 4389
+// Function ID: 4390
 // Name: LinkIcon
-// Dependencies: [19, 21, 712, 4164, 4389, 2]
+// Dependencies: [19, 21, 712, 4165, 4390, 2]
 // Exports: LinkIcon
 
-// Module 4388 (LinkIcon)
+// Module 4389 (LinkIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4389 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 4390 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

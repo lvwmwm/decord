@@ -1,17 +1,17 @@
-// Module ID: 8451
-// Function ID: 8452
+// Module ID: 8465
+// Function ID: 8466
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 4445, 712, 38, 1950, 8452, 8029, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 38, 1951, 8466, 8043, 2]
 // Exports: default
 
-// Module 8451 (AvatarDecorationSampleV2)
+// Module 8465 (AvatarDecorationSampleV2)
 import noopAll from "noop" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 712 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;
@@ -44,12 +44,12 @@ export default function AvatarDecorationSampleV2(arg0) {
   let obj = { style: items, resizeMode: "contain", source: null, accessible: false };
   items[1] = solidAvatar;
   if (null == avatarSource) {
-    avatarSource = tmp2(8452);
+    avatarSource = tmp2(8466);
   }
   obj = { children: null };
   obj[2] = avatarSource;
   const items1 = [closure_5(closure_3, obj), ];
-  obj = { style: tmp.avatarDecoration, accessibilityLabel: item.label, children: tmp8(tmp2(8029), { avatarDecoration: item, size, animate }) };
+  obj = { style: tmp.avatarDecoration, accessibilityLabel: item.label, children: tmp8(tmp2(8043), { avatarDecoration: item, size, animate }) };
   items1[1] = closure_5(closure_4, obj);
   obj[0] = items1;
   return closure_7(closure_6, obj);

@@ -1,23 +1,23 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 15852
+// Function ID: 15853
 // Name: canConnectToChannel
-// Dependencies: [1390, 1396, 1395, 4467, 1218, 1391, 1910, 4089, 4098, 1981, 4654, 4464, 676, 692, 589, 13274, 9552, 4079, 13275, 8076, 11, 5312, 2]
+// Dependencies: [1390, 1396, 1395, 4468, 1218, 1391, 1910, 4090, 4099, 1982, 4667, 4465, 676, 692, 589, 13293, 9570, 4080, 13294, 8090, 11, 5325, 2]
 // Exports: default
 
-// Module 15834 (canConnectToChannel)
+// Module 15852 (canConnectToChannel)
 import set from "set" /* 692 */;
 import closure_3 from "participantFromServer" /* 1390 */;
 import closure_4 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
 import { isVoiceChannel } from "createChannelRecord" /* 1395 */;
-import closure_6 from "reset" /* 4467 */;
+import closure_6 from "reset" /* 4468 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_11 from "markAllUserIdListsStale" /* 4098 */;
-import closure_12 from "handleConnectionOpen" /* 1981 */;
-import closure_13 from "updateUserGuildSettingsInternal" /* 4654 */;
-import closure_14 from "updateVoiceState" /* 4464 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_11 from "markAllUserIdListsStale" /* 4099 */;
+import closure_12 from "handleConnectionOpen" /* 1982 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 4667 */;
+import closure_14 from "updateVoiceState" /* 4465 */;
 import { BasicPermissions } from "ME" /* 676 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 12077
-// Function ID: 12078
+// Module ID: 12096
+// Function ID: 12097
 // Name: isAuthorizedAppTwoWay
-// Dependencies: [9236, 2]
+// Dependencies: [9254, 2]
 // Exports: default, useShouldWarnAuthorizedAppTwoWay
 
-// Module 12077 (isAuthorizedAppTwoWay)
+// Module 12096 (isAuthorizedAppTwoWay)
 import set from "set" /* 2 */;
-import set2 from "set" /* 9236 */;
+import set2 from "set" /* 9254 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/authorized_apps/shouldWarnAuthorizedAppTwoWay.tsx");
 

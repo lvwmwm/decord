@@ -1,12 +1,12 @@
-// Module ID: 16591
-// Function ID: 16592
+// Module ID: 16609
+// Function ID: 16610
 // Name: VoicePanelAccessibilityView
-// Dependencies: [19, 16582, 21, 4864, 16586, 2]
+// Dependencies: [19, 16600, 21, 4877, 16604, 2]
 // Exports: default
 
-// Module 16591 (VoicePanelAccessibilityView)
-import context from "context" /* 16586 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16582 */;
+// Module 16609 (VoicePanelAccessibilityView)
+import context from "context" /* 16604 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16600 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

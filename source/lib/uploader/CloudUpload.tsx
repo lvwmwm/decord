@@ -1,22 +1,22 @@
-// Module ID: 5024
-// Function ID: 5025
+// Module ID: 5037
+// Function ID: 5038
 // Name: set
-// Dependencies: [109, 5, 32, 4444, 1304, 4539, 676, 3, 530, 5025, 5032, 687, 584, 5065, 12, 1474, 5034, 5067, 5068, 5053, 5069, 5070, 5074, 5075, 1208, 5033, 5026, 5076, 5077, 2009, 5162, 698, 2]
+// Dependencies: [109, 5, 32, 4445, 1304, 4540, 676, 3, 530, 5038, 5045, 687, 584, 5078, 12, 1474, 5047, 5080, 5081, 5066, 5082, 5083, 5087, 5088, 1208, 5046, 5039, 5089, 5090, 2010, 5175, 698, 2]
 
-// Module 5024 (set)
+// Module 5037 (set)
 import timestampDefault from "timestamp" /* 3 */;
 import failsDefault from "fails" /* 584 */;
 import setDefault from "set" /* 687 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import cancel from "cancel" /* 5025 */;
-import cancelDefault from "cancel" /* 5025 */;
-import fromBlobDefault from "fromBlob" /* 5065 */;
+import cancel from "cancel" /* 5038 */;
+import cancelDefault from "cancel" /* 5038 */;
+import fromBlobDefault from "fromBlob" /* 5078 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "_slicedToArray" /* 32 */;
-import closure_7 from "getUserAgnosticState" /* 4444 */;
+import closure_7 from "getUserAgnosticState" /* 4445 */;
 import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import closure_9 from "handleConnectionInfoChange" /* 4539 */;
+import closure_9 from "handleConnectionInfoChange" /* 4540 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -2253,7 +2253,7 @@ prototype["delete"] = function delete() {
             obj[0] = arg1;
             return obj;
           } else if (null != v0.uploadedFilename) {
-            obj1 = v0(5070);
+            obj1 = v0(5083);
             const uploadTarget = obj1.getUploadTarget(tmp18.item.target);
             dependencyMap = 1;
             const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp18.uploadedFilename);

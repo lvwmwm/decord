@@ -1,10 +1,10 @@
-// Module ID: 11986
-// Function ID: 11987
+// Module ID: 12005
+// Function ID: 12006
 // Name: useExpiringPowerupCoachmarkEnabled
 // Dependencies: [1368, 2]
 // Exports: useExpiringPowerupCoachmarkEnabled
 
-// Module 11986 (useExpiringPowerupCoachmarkEnabled)
+// Module 12005 (useExpiringPowerupCoachmarkEnabled)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 const tmp2 = getUnitIdDefault({ name: "2026-02-expiring-powerup-coachmark", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

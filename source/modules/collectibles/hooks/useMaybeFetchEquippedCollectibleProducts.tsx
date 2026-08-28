@@ -1,12 +1,12 @@
-// Module ID: 8826
-// Function ID: 8827
+// Module ID: 8843
+// Function ID: 8844
 // Name: useEquippedCollectibleSkuIds
-// Dependencies: [19, 1922, 589, 8046, 8827, 8828, 8829, 2]
+// Dependencies: [19, 1923, 589, 8060, 8844, 8845, 8846, 2]
 // Exports: default
 
-// Module 8826 (useEquippedCollectibleSkuIds)
+// Module 8843 (useEquippedCollectibleSkuIds)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 
 const require = arg1;
 function useEquippedCollectibleSkuIds(id, guildId) {

@@ -1,16 +1,16 @@
-// Module ID: 9244
-// Function ID: 9245
+// Module ID: 9262
+// Function ID: 9263
 // Name: XboxLinkDiscordError
-// Dependencies: [19, 9223, 21, 1500, 9245, 9246, 1236, 2]
+// Dependencies: [19, 9241, 21, 1500, 9263, 9264, 1236, 2]
 // Exports: default
 
-// Module 9244 (XboxLinkDiscordError)
+// Module 9262 (XboxLinkDiscordError)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useNavigation from "useNavigation" /* 1500 */;
-import useConnectRetry from "useConnectRetry" /* 9245 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 9246 */;
-import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9223 */;
+import useConnectRetry from "useConnectRetry" /* 9263 */;
+import TwoWayLinkError from "TwoWayLinkError" /* 9264 */;
+import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9241 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

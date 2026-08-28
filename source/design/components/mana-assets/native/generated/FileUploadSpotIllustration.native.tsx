@@ -1,14 +1,14 @@
-// Module ID: 6491
-// Function ID: 6492
+// Module ID: 6504
+// Function ID: 6505
 // Name: FileUploadSpotIllustration
-// Dependencies: [21, 5445, 6492, 2]
+// Dependencies: [21, 5458, 6505, 2]
 // Exports: FileUploadSpotIllustration
 
-// Module 6491 (FileUploadSpotIllustration)
+// Module 6504 (FileUploadSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6492 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6505 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FileUploadSpotIllustration.native.tsx");

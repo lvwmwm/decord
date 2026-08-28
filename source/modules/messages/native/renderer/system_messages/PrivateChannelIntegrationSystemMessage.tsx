@@ -1,15 +1,15 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 7886
+// Function ID: 7887
 // Name: createPrivateChannelIntegrationSystemMessage
-// Dependencies: [676, 7802, 7804, 7837, 7805, 2]
+// Dependencies: [676, 7816, 7818, 7851, 7819, 2]
 // Exports: createPrivateChannelIntegrationSystemMessage
 
-// Module 7872 (createPrivateChannelIntegrationSystemMessage)
+// Module 7886 (createPrivateChannelIntegrationSystemMessage)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7802 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7804 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7805 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7816 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7818 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7819 */;
 
 const MessageTypes = ME.MessageTypes;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/PrivateChannelIntegrationSystemMessage.tsx");
@@ -30,7 +30,7 @@ export const createPrivateChannelIntegrationSystemMessage = function createPriva
     obj[2] = message.channel_id;
   }
   if (type === MessageTypes.PRIVATE_CHANNEL_INTEGRATION_ADDED) {
-    let tmpResult = tmp(7837);
+    let tmpResult = tmp(7851);
     obj = { application: null, username: null, usernameOnClick: null, applicationNameOnClick: null };
     obj[0] = application;
     obj[1] = messageAuthorWithProcessedColor.nick;
@@ -38,7 +38,7 @@ export const createPrivateChannelIntegrationSystemMessage = function createPriva
     obj[3] = tmp7;
     let privateChannelIntegrationAddedSystemMessageASTContent = tmpResult.getPrivateChannelIntegrationAddedSystemMessageASTContent(obj);
   } else {
-    tmpResult = tmp(7837);
+    tmpResult = tmp(7851);
     obj1 = { application: null, username: null, usernameOnClick: null, applicationNameOnClick: null };
     obj1[0] = application;
     obj1[1] = messageAuthorWithProcessedColor.nick;

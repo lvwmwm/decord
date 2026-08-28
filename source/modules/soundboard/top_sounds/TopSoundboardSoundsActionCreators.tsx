@@ -1,14 +1,14 @@
-// Module ID: 16561
-// Function ID: 16562
+// Module ID: 16579
+// Function ID: 16580
 // Name: maybeFetchTopSoundboardSoundsByGuild
-// Dependencies: [1922, 4917, 4918, 676, 16560, 4285, 709, 530, 2]
+// Dependencies: [1923, 4930, 4931, 676, 16578, 4286, 709, 530, 2]
 // Exports: fetchTopSoundboardSounds, maybeFetchTopSoundboardSoundsByGuild
 
-// Module 16561 (maybeFetchTopSoundboardSoundsByGuild)
+// Module 16579 (maybeFetchTopSoundboardSoundsByGuild)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import closure_4 from "handleSoundCreateOrUpdate" /* 4917 */;
-import closure_5 from "initialize" /* 4918 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "handleSoundCreateOrUpdate" /* 4930 */;
+import closure_5 from "initialize" /* 4931 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -17,7 +17,7 @@ const result = require("set").fileFinishedImporting("modules/soundboard/top_soun
 export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundboardSoundsByGuild(id) {
   if (null != id) {
     if (null != currentUser.getCurrentUser()) {
-      const TopSoundboardSoundsMobileExperiment = _require(16560).TopSoundboardSoundsMobileExperiment;
+      const TopSoundboardSoundsMobileExperiment = _require(16578).TopSoundboardSoundsMobileExperiment;
       if (TopSoundboardSoundsMobileExperiment.getConfig({ location: "maybeFetchTopSoundboardSoundsByGuild" }).enabled) {
         topSoundboardSoundsMetadata = topSoundboardSoundsMetadata.getTopSoundboardSoundsMetadata(id);
         if (null != topSoundboardSoundsMetadata) {
@@ -50,7 +50,7 @@ export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundb
             });
             const obj2 = dispatcherDefault;
           }
-          tmp9Result = tmp9(4285);
+          tmp9Result = tmp9(4286);
         }
       }
     }
@@ -58,7 +58,7 @@ export const maybeFetchTopSoundboardSoundsByGuild = function maybeFetchTopSoundb
 };
 export const fetchTopSoundboardSounds = function fetchTopSoundboardSounds(id) {
   const _require = id;
-  let obj = _require(4285);
+  let obj = _require(4286);
   if (!obj.isPseudoGuildId(id)) {
     obj = { type: "TOP_SOUNDBOARD_SOUNDS_FETCH", guildId: null };
     obj[1] = id;

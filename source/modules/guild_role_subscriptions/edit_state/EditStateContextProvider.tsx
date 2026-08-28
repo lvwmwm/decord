@@ -1,10 +1,10 @@
-// Module ID: 17238
-// Function ID: 17239
+// Module ID: 17256
+// Function ID: 17257
 // Name: useEditStateContext
 // Dependencies: [19, 21, 2]
 // Exports: EditStateContextProvider, useEditStateContext
 
-// Module 17238 (useEditStateContext)
+// Module 17256 (useEditStateContext)
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

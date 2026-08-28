@@ -1,21 +1,21 @@
-// Module ID: 11719
-// Function ID: 11720
+// Module ID: 11722
+// Function ID: 11723
 // Name: MenuRow
-// Dependencies: [17, 21, 4445, 712, 11720, 4441, 1236, 10115, 11709, 10608, 2]
+// Dependencies: [17, 21, 4446, 712, 11723, 4442, 1236, 10133, 11712, 10626, 2]
 // Exports: default
 
-// Module 11719 (MenuRow)
+// Module 11722 (MenuRow)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import AttachmentIcon from "AttachmentIcon" /* 10115 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 10608 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11709 */;
-import registerAssetDefault from "registerAsset" /* 11720 */;
+import Text from "Text" /* 4442 */;
+import AttachmentIcon from "AttachmentIcon" /* 10133 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 10626 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11712 */;
+import registerAssetDefault from "registerAsset" /* 11723 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 function MenuRow(arg0) {
   ({ icon, label, highlighted } = arg0);

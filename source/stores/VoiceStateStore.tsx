@@ -1,17 +1,17 @@
-// Module ID: 4464
-// Function ID: 4465
+// Module ID: 4465
+// Function ID: 4466
 // Name: updateVoiceState
-// Dependencies: [32, 4465, 676, 4466, 12, 589, 1625, 709, 2]
+// Dependencies: [32, 4466, 676, 4467, 12, 589, 1625, 709, 2]
 
-// Module 4464 (updateVoiceState)
+// Module 4465 (updateVoiceState)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
 import closure_5 from "_slicedToArray" /* 32 */;
-import closure_6 from "isVoiceMuted" /* 4465 */;
+import closure_6 from "isVoiceMuted" /* 4466 */;
 import { ME } from "ME" /* 676 */;
-import { VoicePlatforms } from "ParticipantTypes" /* 4466 */;
+import { VoicePlatforms } from "ParticipantTypes" /* 4467 */;
 import set from "set" /* 2 */;
 
 require = arg1;

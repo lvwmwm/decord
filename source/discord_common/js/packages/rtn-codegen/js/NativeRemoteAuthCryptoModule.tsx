@@ -1,9 +1,9 @@
-// Module ID: 15495
-// Function ID: 15496
+// Module ID: 15513
+// Function ID: 15514
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 15495 (enforcing)
+// Module 15513 (enforcing)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

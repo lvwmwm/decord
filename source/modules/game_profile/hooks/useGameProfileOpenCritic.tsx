@@ -1,16 +1,16 @@
-// Module ID: 8774
-// Function ID: 8775
+// Module ID: 8791
+// Function ID: 8792
 // Name: getOpenCriticTierText
-// Dependencies: [8775, 1236, 8776, 8777, 8778, 8779, 2]
+// Dependencies: [8792, 1236, 8793, 8794, 8795, 8796, 2]
 // Exports: getOpenCriticCircleRatingColor, getOpenCriticTierImage, getOpenCriticTierText
 
-// Module 8774 (getOpenCriticTierText)
+// Module 8791 (getOpenCriticTierText)
 import set from "set" /* 2 */;
-import OpenCriticTier from "OpenCriticTier" /* 8775 */;
-import metadataDefault from "metadata" /* 8776 */;
-import metadataDefault2 from "metadata" /* 8777 */;
-import metadataDefault3 from "metadata" /* 8778 */;
-import metadataDefault4 from "metadata" /* 8779 */;
+import OpenCriticTier from "OpenCriticTier" /* 8792 */;
+import metadataDefault from "metadata" /* 8793 */;
+import metadataDefault2 from "metadata" /* 8794 */;
+import metadataDefault3 from "metadata" /* 8795 */;
+import metadataDefault4 from "metadata" /* 8796 */;
 
 const result = set.fileFinishedImporting("modules/game_profile/hooks/useGameProfileOpenCritic.tsx");
 
@@ -18,13 +18,13 @@ export const getOpenCriticTierText = function getOpenCriticTierText(tier) {
   if (OpenCriticTier.OpenCriticTier.MIGHTY === tier) {
     const intl4 = tmp(1236).intl;
     return intl4.string(tmp(1236).t.aZej2g);
-  } else if (tmp(8775).OpenCriticTier.STRONG === tier) {
+  } else if (tmp(8792).OpenCriticTier.STRONG === tier) {
     const intl3 = tmp(1236).intl;
     return intl3.string(tmp(1236).t.MLxnSg);
-  } else if (tmp(8775).OpenCriticTier.FAIR === tier) {
+  } else if (tmp(8792).OpenCriticTier.FAIR === tier) {
     const intl2 = tmp(1236).intl;
     return intl2.string(tmp(1236).t["3f19KA"]);
-  } else if (tmp(8775).OpenCriticTier.WEAK === tier) {
+  } else if (tmp(8792).OpenCriticTier.WEAK === tier) {
     const intl = tmp(1236).intl;
     return intl.string(tmp(1236).t.jtVgSh);
   }
@@ -32,11 +32,11 @@ export const getOpenCriticTierText = function getOpenCriticTierText(tier) {
 export const getOpenCriticTierImage = function getOpenCriticTierImage(tier) {
   if (OpenCriticTier.OpenCriticTier.MIGHTY === tier) {
     return metadataDefault;
-  } else if (tmp(8775).OpenCriticTier.STRONG === tier) {
+  } else if (tmp(8792).OpenCriticTier.STRONG === tier) {
     return metadataDefault2;
-  } else if (tmp(8775).OpenCriticTier.FAIR === tier) {
+  } else if (tmp(8792).OpenCriticTier.FAIR === tier) {
     return metadataDefault3;
-  } else if (tmp(8775).OpenCriticTier.WEAK === tier) {
+  } else if (tmp(8792).OpenCriticTier.WEAK === tier) {
     return metadataDefault4;
   }
 };
@@ -44,11 +44,11 @@ export const getOpenCriticCircleRatingColor = function getOpenCriticCircleRating
   let foregroundColor = "#fc430a";
   if (OpenCriticTier.OpenCriticTier.MIGHTY !== tier) {
     foregroundColor = "#9e00b4";
-    if (tmp(8775).OpenCriticTier.STRONG !== tier) {
+    if (tmp(8792).OpenCriticTier.STRONG !== tier) {
       foregroundColor = "#4aa1ce";
-      if (tmp(8775).OpenCriticTier.FAIR !== tier) {
+      if (tmp(8792).OpenCriticTier.FAIR !== tier) {
         foregroundColor = "";
-        if (tmp(8775).OpenCriticTier.WEAK === tier) {
+        if (tmp(8792).OpenCriticTier.WEAK === tier) {
           foregroundColor = "#80b06a";
         }
       }

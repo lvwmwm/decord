@@ -1,14 +1,14 @@
-// Module ID: 9682
-// Function ID: 9683
+// Module ID: 9700
+// Function ID: 9701
 // Name: useInterestedEventUsers
-// Dependencies: [19, 7204, 1397, 589, 2]
+// Dependencies: [19, 7218, 1397, 589, 2]
 // Exports: default
 
-// Module 9682 (useInterestedEventUsers)
+// Module 9700 (useInterestedEventUsers)
 import set2 from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
-import closure_3 from "scheduledEventSort" /* 7204 */;
+import closure_3 from "scheduledEventSort" /* 7218 */;
 
 const useMemo = noop.useMemo;
 let closure_4 = GUILD_EVENT_MAX_NAME_LENGTH.GuildScheduledEventUserResponses;

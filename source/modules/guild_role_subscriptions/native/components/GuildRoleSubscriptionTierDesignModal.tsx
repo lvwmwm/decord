@@ -1,23 +1,23 @@
-// Module ID: 17264
-// Function ID: 17265
+// Module ID: 17282
+// Function ID: 17283
 // Name: MemberPreviews
-// Dependencies: [32, 19, 17, 14749, 676, 21, 4445, 712, 4165, 14782, 13551, 17238, 14771, 5930, 17221, 9825, 1236, 17227, 17265, 17230, 2]
+// Dependencies: [32, 19, 17, 14734, 676, 21, 4446, 712, 4166, 14767, 13570, 17256, 14756, 5943, 17239, 9843, 1236, 17245, 17283, 17248, 2]
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 17264 (MemberPreviews)
+// Module 17282 (MemberPreviews)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import map from "map" /* 4165 */;
-import getRoleEmojisAll from "getRoleEmojis" /* 14771 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 14782 */;
-import HeaderDefault from "Header" /* 17230 */;
+import map from "map" /* 4166 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14756 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 14767 */;
+import HeaderDefault from "Header" /* 17248 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { GuildRoleSubscriptionsTierScenes as closure_7 } from "MAX_SUBSCRIPTION_TIERS" /* 14749 */;
+import { GuildRoleSubscriptionsTierScenes as closure_7 } from "MAX_SUBSCRIPTION_TIERS" /* 14734 */;
 import { UPLOAD_SMALL_SIZE } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function MemberPreviews(role) {
@@ -43,8 +43,8 @@ function MemberPreviews(role) {
   return callback3(View, obj);
 }
 function Content() {
-  const tmp3 = role(13551)();
-  let obj = _require(17238);
+  const tmp3 = role(13570)();
+  let obj = _require(17256);
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
   obj1 = getRoleEmojisAll;
@@ -68,32 +68,32 @@ function Content() {
     tmp10 = obj;
   }
   const tmp6 = callback(obj1.useRoleColor(editStateId, guildId), 2);
-  const roleSubscriptionSettingsDisabled = _require(17221).useRoleSubscriptionSettingsDisabled();
+  const roleSubscriptionSettingsDisabled = _require(17239).useRoleSubscriptionSettingsDisabled();
   obj = { children: null };
   const items1 = [callback2(MemberPreviews, { role }), , , , ];
   obj1 = { style: tmp3.header, children: null };
-  let tmpResult = tmp(9825);
+  let tmpResult = tmp(9843);
   const intl = tmp4(1236).intl;
   obj1[1] = intl.string(_require(1236).t.sEr1zr);
   items1[1] = callback2(tmpResult, obj1);
   obj2 = { description: null, image: null, imageUploadSize: null, previewShape: null, previewResizeMode: "cover", setImage: null, disabled: null };
-  tmpResult = tmp(17227);
+  tmpResult = tmp(17245);
   const intl2 = tmp4(1236).intl;
   obj2[0] = intl2.string(_require(1236).t.Glqj9m);
   obj2[1] = tmp10;
   obj2[2] = UPLOAD_SMALL_SIZE;
-  obj2[3] = _require(17227).PreviewShape.SQUIRCLE;
+  obj2[3] = _require(17245).PreviewShape.SQUIRCLE;
   obj2[5] = function setImage(icon) {
-    return callback({ icon: icon.uri, unicodeEmoji: "Array" });
+    return callback({ icon: icon.uri, unicodeEmoji: "r" });
   };
   obj2[6] = roleSubscriptionSettingsDisabled;
   items1[2] = callback2(tmpResult, obj2);
   obj3 = { style: tmp3.header, children: null };
-  const tmp4Result = _require(17221);
+  const tmp4Result = _require(17239);
   const intl3 = tmp4(1236).intl;
   obj3[1] = intl3.string(_require(1236).t["W7hH+z"]);
-  items1[3] = callback2(role(9825), obj3);
-  items1[4] = callback2(role(17265), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });
+  items1[3] = callback2(role(9843), obj3);
+  items1[4] = callback2(role(17283), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled });
   obj[0] = items1;
   return callback3(closure_11, obj);
 }

@@ -1,10 +1,10 @@
-// Module ID: 11828
-// Function ID: 11829
+// Module ID: 11847
+// Function ID: 11848
 // Name: ANSWER_IN_REGEX
-// Dependencies: [4432, 2]
+// Dependencies: [4433, 2]
 // Exports: makeRegexForOptionsWithNegation, validateForMapWithNegation
 
-// Module 11828 (ANSWER_IN_REGEX)
+// Module 11847 (ANSWER_IN_REGEX)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/search/tokens/SearchTokensUtils.tsx");

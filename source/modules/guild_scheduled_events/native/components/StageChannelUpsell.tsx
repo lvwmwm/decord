@@ -1,27 +1,27 @@
-// Module ID: 9620
-// Function ID: 9621
+// Module ID: 9638
+// Function ID: 9639
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 1395, 9621, 9590, 676, 21, 4445, 712, 5020, 1297, 7697, 9622, 4441, 1236, 4880, 4676, 9623, 2009, 4412, 2]
+// Dependencies: [32, 19, 17, 1395, 9639, 9608, 676, 21, 4446, 712, 5033, 1297, 7711, 9640, 4442, 1236, 4893, 4689, 9641, 2010, 4413, 2]
 // Exports: default
 
-// Module 9620 (StageChannelUpsell)
+// Module 9638 (StageChannelUpsell)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4441 */;
-import Button2 from "Button" /* 4880 */;
-import PressableBase from "PressableBase" /* 5020 */;
-import registerAssetDefault from "registerAsset" /* 7697 */;
-import registerAssetDefault2 from "registerAsset" /* 9622 */;
+import Text from "Text" /* 4442 */;
+import Button2 from "Button" /* 4893 */;
+import PressableBase from "PressableBase" /* 5033 */;
+import registerAssetDefault from "registerAsset" /* 7711 */;
+import registerAssetDefault2 from "registerAsset" /* 9640 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { createChannelRecord } from "createChannelRecord" /* 1395 */;
-import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore" /* 9621 */;
-import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9590 */;
+import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore" /* 9639 */;
+import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9608 */;
 import { ChannelTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;

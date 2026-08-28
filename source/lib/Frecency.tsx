@@ -1,12 +1,12 @@
-// Module ID: 4531
-// Function ID: 4532
+// Module ID: 4532
+// Function ID: 4533
 // Name: DEFAULT_FRECENCY
-// Dependencies: [12, 4043, 2]
+// Dependencies: [12, 4044, 2]
 
-// Module 4531 (DEFAULT_FRECENCY)
+// Module 4532 (DEFAULT_FRECENCY)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
-import hooksDefault from "hooks" /* 4043 */;
+import hooksDefault from "hooks" /* 4044 */;
 
 function DEFAULT_FRECENCY(arg0, arg1, numOfRecentUses) {
   return Math.ceil(arg0 * (arg1 / numOfRecentUses.numOfRecentUses));

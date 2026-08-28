@@ -1,13 +1,13 @@
-// Module ID: 16607
-// Function ID: 16608
+// Module ID: 16625
+// Function ID: 16626
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 4519, 676, 21, 589, 9770, 8563, 9776, 1236, 9760, 2]
+// Dependencies: [19, 4520, 676, 21, 589, 9788, 8578, 9794, 1236, 9778, 2]
 // Exports: default
 
-// Module 16607 (SecureFramesCallVerificationBottomSheet)
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9776 */;
+// Module 16625 (SecureFramesCallVerificationBottomSheet)
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9794 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createRTCConnection" /* 4519 */;
+import closure_4 from "createRTCConnection" /* 4520 */;
 import { AnalyticsSections } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -42,7 +42,7 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
   const intl3 = channelId(1236).intl;
   obj = { helpArticle: null };
   const tmp3 = SecureFramesVerificationBottomSheetDefault;
-  obj[0] = channelId(9760).getSecureFramesHelpdeskArticle();
+  obj[0] = channelId(9778).getSecureFramesHelpdeskArticle();
   obj[2] = intl3.format(channelId(1236).t.wKxADe, obj);
   obj[3] = stateFromStores;
   obj[4] = callback;

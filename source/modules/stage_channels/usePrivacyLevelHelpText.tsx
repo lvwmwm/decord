@@ -1,14 +1,14 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 9842
+// Function ID: 9843
 // Name: useStagePrivacyLevelSettings
-// Dependencies: [4089, 676, 1397, 505, 589, 4094, 506, 1236, 1995, 2]
+// Dependencies: [4090, 676, 1397, 505, 589, 4095, 506, 1236, 1996, 2]
 // Exports: default
 
-// Module 9824 (useStagePrivacyLevelSettings)
+// Module 9842 (useStagePrivacyLevelSettings)
 import fromStringAll from "fromString" /* 506 */;
-import combinedDefault from "combined" /* 1995 */;
-import applyOverwritesAll from "applyOverwrites" /* 4094 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
+import combinedDefault from "combined" /* 1996 */;
+import applyOverwritesAll from "applyOverwrites" /* 4095 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import { GuildScheduledEventPrivacyLevel as closure_6 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 import { Permissions } from "sum" /* 505 */;

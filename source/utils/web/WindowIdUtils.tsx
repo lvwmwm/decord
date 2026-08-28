@@ -1,10 +1,10 @@
-// Module ID: 5518
-// Function ID: 5519
+// Module ID: 5531
+// Function ID: 5532
 // Name: getWindowId
 // Dependencies: [12, 2]
 // Exports: getMainWindowId, getWindowId, setupWindowId
 
-// Module 5518 (getWindowId)
+// Module 5531 (getWindowId)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
 

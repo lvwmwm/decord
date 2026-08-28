@@ -1,10 +1,10 @@
-// Module ID: 10282
-// Function ID: 10283
+// Module ID: 10300
+// Function ID: 10301
 // Name: useFrecencySettings
 // Dependencies: [19, 1340, 1374, 589, 2]
 // Exports: useFrecencySettings
 
-// Module 10282 (useFrecencySettings)
+// Module 10300 (useFrecencySettings)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 

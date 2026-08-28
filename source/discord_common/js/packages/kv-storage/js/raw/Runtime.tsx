@@ -1,9 +1,9 @@
-// Module ID: 1966
-// Function ID: 1967
+// Module ID: 1967
+// Function ID: 1968
 // Name: logger
-// Dependencies: [4, 1958, 2]
+// Dependencies: [4, 1959, 2]
 
-// Module 1966 (logger)
+// Module 1967 (logger)
 import set from "set" /* 2 */;
 import log from "log" /* 4 */;
 
@@ -103,7 +103,7 @@ prototype["initialize"] = function initialize() {
   let self = this;
   self = this;
   if (!this.initialized) {
-    const KV_RAW = self(1958).KV_RAW;
+    const KV_RAW = self(1959).KV_RAW;
     const obj = { status: null, response: null };
     obj[0] = function status(handle) {
       return self.onStatus(handle);

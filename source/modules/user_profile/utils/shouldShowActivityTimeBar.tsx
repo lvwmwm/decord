@@ -1,10 +1,10 @@
-// Module ID: 9320
-// Function ID: 9321
+// Module ID: 9338
+// Function ID: 9339
 // Name: shouldShowActivityTimeBar
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 9320 (shouldShowActivityTimeBar)
+// Module 9338 (shouldShowActivityTimeBar)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15106
+// Function ID: 15107
 // Name: toggle
-// Dependencies: [7397, 14154, 589, 10988, 15119, 14397, 2]
+// Dependencies: [7411, 15107, 589, 11006, 15108, 14381, 2]
 
-// Module 15118 (toggle)
+// Module 15106 (toggle)
 import initialize from "initialize" /* 589 */;
-import updateDevToolsSettings from "updateDevToolsSettings" /* 14154 */;
-import closure_2 from "initialize" /* 7397 */;
-import createToggle from "createToggle" /* 10988 */;
+import updateDevToolsSettings from "updateDevToolsSettings" /* 15107 */;
+import closure_2 from "initialize" /* 7411 */;
+import createToggle from "createToggle" /* 11006 */;
 
 require = arg1;
 createToggle = {

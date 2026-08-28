@@ -1,15 +1,15 @@
-// Module ID: 7693
-// Function ID: 7694
+// Module ID: 7707
+// Function ID: 7708
 // Name: trackUserAvatarUpdated
-// Dependencies: [676, 7694, 698, 1435, 2]
+// Dependencies: [676, 7708, 698, 1435, 2]
 // Exports: trackUserAvatarUpdated
 
-// Module 7693 (trackUserAvatarUpdated)
+// Module 7707 (trackUserAvatarUpdated)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getAvatarURL from "getAvatarURL" /* 1435 */;
-import AssetOriginTypes from "AssetOriginTypes" /* 7694 */;
+import AssetOriginTypes from "AssetOriginTypes" /* 7708 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/user_profile/utils/trackUserAvatarUpdated.tsx");

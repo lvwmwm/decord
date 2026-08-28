@@ -1,21 +1,21 @@
-// Module ID: 14021
-// Function ID: 14022
+// Module ID: 14040
+// Function ID: 14041
 // Name: processColor
-// Dependencies: [32, 17, 1390, 4486, 4467, 1391, 4496, 4519, 4098, 1922, 676, 712, 7435, 7434, 10043, 9176, 4639, 1236, 4627, 2]
+// Dependencies: [32, 17, 1390, 4487, 4468, 1391, 4497, 4520, 4099, 1923, 676, 712, 7449, 7448, 10061, 9194, 4640, 1236, 4628, 2]
 
-// Module 14021 (processColor)
+// Module 14040 (processColor)
 import ThemesDefault from "Themes" /* 712 */;
-import initializeDefault from "initialize" /* 4627 */;
+import initializeDefault from "initialize" /* 4628 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "participantFromServer" /* 1390 */;
-import closure_5 from "addApplication" /* 4486 */;
-import closure_6 from "reset" /* 4467 */;
+import closure_5 from "addApplication" /* 4487 */;
+import closure_6 from "reset" /* 4468 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_9 from "createRTCConnection" /* 4519 */;
-import closure_10 from "markAllUserIdListsStale" /* 4098 */;
-import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_9 from "createRTCConnection" /* 4520 */;
+import closure_10 from "markAllUserIdListsStale" /* 4099 */;
+import closure_11 from "mergeGuildAvatar" /* 1923 */;
 import { InputModes } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -27,7 +27,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "new_moon", isPushToTalk: "waxing_crescent_moon", embeddedActivity: "first_quarter_moon", isStreaming: "waxing_gibbous_moon" };
+    obj.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: 2132, isPushToTalk: 2133, embeddedActivity: 2134, isStreaming: 2135 };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = closure_1_9.getChannelId();
       const state = closure_1_9.getState();
@@ -222,7 +222,7 @@ prototype["terminate"] = function terminate() {
 };
 set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: "new_moon", isPushToTalk: "waxing_crescent_moon", embeddedActivity: "first_quarter_moon", isStreaming: "waxing_gibbous_moon" };
+set.state = { channelId: "flex", connectionState: "context", selfMute: false, deafened: 2132, isPushToTalk: 2133, embeddedActivity: 2134, isStreaming: 2135 };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = closure_1_9.getChannelId();
   const state = closure_1_9.getState();

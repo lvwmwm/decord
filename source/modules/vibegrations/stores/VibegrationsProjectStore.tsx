@@ -1,13 +1,13 @@
-// Module ID: 16088
-// Function ID: 16089
+// Module ID: 16106
+// Function ID: 16107
 // Name: isProjectOwner
-// Dependencies: [32, 1922, 589, 709, 2]
+// Dependencies: [32, 1923, 589, 709, 2]
 
-// Module 16088 (isProjectOwner)
+// Module 16106 (isProjectOwner)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "_slicedToArray" /* 32 */;
-import closure_1 from "mergeGuildAvatar" /* 1922 */;
+import closure_1 from "mergeGuildAvatar" /* 1923 */;
 import set from "set" /* 2 */;
 
 function isProjectOwner(item10010) {

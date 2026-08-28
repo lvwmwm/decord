@@ -1,18 +1,18 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 12541
+// Function ID: 12542
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4098, 676, 21, 4445, 712, 4134, 589, 12523, 4441, 4880, 7676, 1236, 2]
+// Dependencies: [32, 19, 17, 4099, 676, 21, 4446, 712, 4135, 589, 12542, 4442, 4893, 7690, 1236, 2]
 // Exports: default
 
-// Module 12522 (FriendRequestNote)
+// Module 12541 (FriendRequestNote)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "markAllUserIdListsStale" /* 4098 */;
+import closure_6 from "markAllUserIdListsStale" /* 4099 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);

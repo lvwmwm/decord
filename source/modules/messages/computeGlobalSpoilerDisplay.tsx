@@ -1,11 +1,11 @@
-// Module ID: 11040
-// Function ID: 11041
+// Module ID: 11058
+// Function ID: 11059
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [4089, 676, 647, 4134, 2]
+// Dependencies: [4090, 676, 647, 4135, 2]
 // Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 11040 (computeGlobalSpoilerDisplay)
-import closure_2 from "getUncachedChannelPermissions" /* 4089 */;
+// Module 11058 (computeGlobalSpoilerDisplay)
+import closure_2 from "getUncachedChannelPermissions" /* 4090 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -26,7 +26,7 @@ export const useShouldDisplaySpoilerObscurity = function useShouldDisplaySpoiler
   const _require = channel;
   const items = [closure_2];
   const stateFromStores = _require(647).useStateFromStores(items, () => closure_1_2.can(closure_1_3.MANAGE_MESSAGES, closure_0));
-  const RenderSpoilers = _require(4134).RenderSpoilers;
+  const RenderSpoilers = _require(4135).RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
   let flag = true;
   if (constants.ALWAYS !== setting) {

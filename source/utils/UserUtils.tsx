@@ -1,14 +1,14 @@
-// Module ID: 4289
-// Function ID: 4290
+// Module ID: 4290
+// Function ID: 4291
 // Name: nameFromUser
-// Dependencies: [4290, 1922, 676, 589, 1236, 2]
+// Dependencies: [4291, 1923, 676, 589, 1236, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 4289 (nameFromUser)
+// Module 4290 (nameFromUser)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_2 from "initialize" /* 4290 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_2 from "initialize" /* 4291 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

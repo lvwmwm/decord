@@ -1,10 +1,10 @@
-// Module ID: 10196
-// Function ID: 10197
+// Module ID: 10214
+// Function ID: 10215
 // Name: addValue
 // Dependencies: [19, 21, 2]
 // Exports: clearComponentRenderStats, default, dumpStats, getComponentRenderStats, pauseComponentProfiler, resetComponentProfiler, resumeComponentProfiler, serializeComponentRenderAverages
 
-// Module 10196 (addValue)
+// Module 10214 (addValue)
 import closure_0 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

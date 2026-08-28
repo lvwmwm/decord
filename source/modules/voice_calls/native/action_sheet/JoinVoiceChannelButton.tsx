@@ -1,16 +1,16 @@
-// Module ID: 13351
-// Function ID: 13352
+// Module ID: 13370
+// Function ID: 13371
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4089, 676, 21, 4445, 9948, 589, 1236, 1892, 5307, 4880, 2]
+// Dependencies: [19, 17, 4090, 676, 21, 4446, 9966, 589, 1236, 1892, 5320, 4893, 2]
 // Exports: default
 
-// Module 13351 (JoinVoiceChannelButton)
+// Module 13370 (JoinVoiceChannelButton)
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
 import { Permissions } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 let closure_9 = createCacheKey.createStyles({ container: { flexDirection: "row" } });
@@ -44,6 +44,6 @@ export default function JoinVoiceChannelButton(channel) {
     const obj = closure_1_2(closure_1_3[9]);
     const voiceChannel = closure_1_1(closure_1_3[10]).selectVoiceChannel(channel.id);
   }, items1);
-  obj[1] = jsx(channel(4880).Button, { disabled: flag, text: stringResult, onPress: callback });
+  obj[1] = jsx(channel(4893).Button, { disabled: flag, text: stringResult, onPress: callback });
   return <View style={items2}>{null}</View>;
 };

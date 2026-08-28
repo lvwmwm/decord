@@ -1,14 +1,14 @@
-// Module ID: 7073
-// Function ID: 7074
+// Module ID: 7086
+// Function ID: 7087
 // Name: WumpusWishlistingSpotIllustration
-// Dependencies: [21, 5445, 7074, 2]
+// Dependencies: [21, 5458, 7087, 2]
 // Exports: WumpusWishlistingSpotIllustration
 
-// Module 7073 (WumpusWishlistingSpotIllustration)
+// Module 7086 (WumpusWishlistingSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 7074 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 7087 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WumpusWishlistingSpotIllustration.native.tsx");

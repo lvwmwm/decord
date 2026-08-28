@@ -1,12 +1,12 @@
-// Module ID: 13336
-// Function ID: 13337
+// Module ID: 13355
+// Function ID: 13356
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 1388, 21, 4412, 5574, 13337, 13338, 1236, 2]
+// Dependencies: [19, 1388, 21, 4413, 5587, 13356, 13357, 1236, 2]
 // Exports: default
 
-// Module 13336 (NUFChannelsActionSheet)
-import NUFActionSheetTemplateDefault from "NUFActionSheetTemplate" /* 13337 */;
-import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13338 */;
+// Module 13355 (NUFChannelsActionSheet)
+import NUFActionSheetTemplateDefault from "NUFActionSheetTemplate" /* 13356 */;
+import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13357 */;
 import closure_3 from "noop" /* 19 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -43,5 +43,5 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
   obj[3] = intl3.string(markAsDismissed(1236).t.BddRzS);
   obj[4] = callback;
   obj[2] = jsx(NUFActionSheetTemplateDefault, { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null });
-  return jsx(markAsDismissed(5574).BottomSheet, { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null });
+  return jsx(markAsDismissed(5587).BottomSheet, { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null });
 };

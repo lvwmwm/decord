@@ -1,16 +1,16 @@
-// Module ID: 17268
-// Function ID: 17269
+// Module ID: 17286
+// Function ID: 17287
 // Name: StepNode
-// Dependencies: [19, 17, 4437, 21, 4445, 712, 4185, 4446, 4441, 589, 2]
+// Dependencies: [19, 17, 4438, 21, 4446, 712, 4186, 4447, 4442, 589, 2]
 // Exports: default
 
-// Module 17268 (StepNode)
+// Module 17286 (StepNode)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function StepNode(isCurrent) {

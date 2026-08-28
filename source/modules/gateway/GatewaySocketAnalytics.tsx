@@ -1,14 +1,14 @@
-// Module ID: 13214
-// Function ID: 13215
+// Module ID: 13233
+// Function ID: 13234
 // Name: prettyPrintTrace_
-// Dependencies: [109, 1922, 676, 10, 9, 698, 2]
+// Dependencies: [109, 1923, 676, 10, 9, 698, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 13214 (prettyPrintTrace_)
+// Module 13233 (prettyPrintTrace_)
 import isTracingDefault from "isTracing" /* 10 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 
 function prettyPrintTrace_(calls, arg1) {

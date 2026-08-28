@@ -1,12 +1,12 @@
-// Module ID: 4897
-// Function ID: 4898
+// Module ID: 4910
+// Function ID: 4911
 // Name: useMountLayoutEffect
-// Dependencies: [2, 4898]
+// Dependencies: [2, 4911]
 
-// Module 4897 (useMountLayoutEffect)
+// Module 4910 (useMountLayoutEffect)
 import set from "set" /* 2 */;
-import useMountEffect from "useMountEffect" /* 4898 */;
-import useMountEffectDefault from "useMountEffect" /* 4898 */;
+import useMountEffect from "useMountEffect" /* 4911 */;
+import useMountEffectDefault from "useMountEffect" /* 4911 */;
 
 const result = set.fileFinishedImporting("hooks/useMountEffect.tsx");
 

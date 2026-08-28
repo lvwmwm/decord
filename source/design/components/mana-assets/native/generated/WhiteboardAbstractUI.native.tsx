@@ -1,14 +1,14 @@
-// Module ID: 7055
-// Function ID: 7056
+// Module ID: 7068
+// Function ID: 7069
 // Name: WhiteboardAbstractUI
-// Dependencies: [21, 5445, 7056, 2]
+// Dependencies: [21, 5458, 7069, 2]
 // Exports: WhiteboardAbstractUI
 
-// Module 7055 (WhiteboardAbstractUI)
+// Module 7068 (WhiteboardAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 7056 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 7069 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WhiteboardAbstractUI.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 7023
-// Function ID: 7024
+// Module ID: 7036
+// Function ID: 7037
 // Name: SwordIllocon
-// Dependencies: [21, 5445, 7024, 2]
+// Dependencies: [21, 5458, 7037, 2]
 // Exports: SwordIllocon
 
-// Module 7023 (SwordIllocon)
+// Module 7036 (SwordIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 7024 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 7037 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SwordIllocon.native.tsx");

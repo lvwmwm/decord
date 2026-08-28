@@ -1,21 +1,21 @@
-// Module ID: 8101
-// Function ID: 8102
+// Module ID: 8115
+// Function ID: 8116
 // Name: usePremiumUpsellConfig
-// Dependencies: [19, 1922, 676, 1924, 21, 8102, 1236, 8103, 8104, 8105, 8106, 8107, 8108, 4810, 8109, 2009, 4107, 7126, 8149, 4307, 698, 4412, 8325, 2]
+// Dependencies: [19, 1923, 676, 1925, 21, 8116, 1236, 8117, 8118, 8119, 8120, 8121, 8122, 4823, 8123, 2010, 4108, 7139, 8163, 4308, 698, 4413, 8339, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
-// Module 8101 (usePremiumUpsellConfig)
+// Module 8115 (usePremiumUpsellConfig)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import registerAssetDefault from "registerAsset" /* 8102 */;
-import registerAssetDefault2 from "registerAsset" /* 8103 */;
-import registerAssetDefault3 from "registerAsset" /* 8104 */;
-import registerAssetDefault4 from "registerAsset" /* 8105 */;
-import registerAssetDefault5 from "registerAsset" /* 8106 */;
-import registerAssetDefault6 from "registerAsset" /* 8107 */;
+import registerAssetDefault from "registerAsset" /* 8116 */;
+import registerAssetDefault2 from "registerAsset" /* 8117 */;
+import registerAssetDefault3 from "registerAsset" /* 8118 */;
+import registerAssetDefault4 from "registerAsset" /* 8119 */;
+import registerAssetDefault5 from "registerAsset" /* 8120 */;
+import registerAssetDefault6 from "registerAsset" /* 8121 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -23,7 +23,7 @@ function usePremiumUpsellConfig(initialUpsellKey, analyticsLocations2, analytics
   const _require = initialUpsellKey;
   closure_1 = analyticsLocations2;
   dependencyMap = analyticsLocation;
-  let obj = _require(7126);
+  let obj = _require(7139);
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let items = [, ];
   ({ GLOBAL_EMOJI: arr[0], UPLOAD: arr[1] } = closure_7);

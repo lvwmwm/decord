@@ -1,14 +1,14 @@
-// Module ID: 4676
-// Function ID: 4677
-// Dependencies: [676, 4677, 4299, 4678, 709, 4300, 4679, 2]
+// Module ID: 4689
+// Function ID: 4690
+// Dependencies: [676, 4690, 4300, 4691, 709, 4301, 4692, 2]
 
-// Module 4676
+// Module 4689
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import coerceMainRoute from "coerceMainRoute" /* 4299 */;
-import uniqueIdDefault from "uniqueId" /* 4677 */;
-import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 4678 */;
+import coerceMainRoute from "coerceMainRoute" /* 4300 */;
+import uniqueIdDefault from "uniqueId" /* 4690 */;
+import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 4691 */;
 
 const AppContext = ME.AppContext;
 const result = set.fileFinishedImporting("actions/ModalActionCreators.tsx");
@@ -41,7 +41,7 @@ export default {
     }
     closure_3 = tmp;
     const _require = navigationParams;
-    const rootNavigationRef = _require(4300).getRootNavigationRef();
+    const rootNavigationRef = _require(4301).getRootNavigationRef();
     if (null != rootNavigationRef) {
       if (rootNavigationRef.isReady()) {
         if (closure_1_1 instanceof Promise) {
@@ -52,7 +52,7 @@ export default {
         nextPromise.then((arg0) => self.push(arg0, closure_2, closure_3, closure_0));
       }
     }
-    const obj = _require(4300);
+    const obj = _require(4301);
     return new Promise((arg0) => {
       closure_0 = arg0;
       return callback(table[6]).enqueue(() => callback(closure_1_4.pushLazy(closure_1_1, closure_1_2, closure_1_3, callback)));

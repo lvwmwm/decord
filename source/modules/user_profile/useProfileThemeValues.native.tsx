@@ -1,13 +1,13 @@
-// Module ID: 5927
-// Function ID: 5928
+// Module ID: 5940
+// Function ID: 5941
 // Name: useProfileThemeValues
-// Dependencies: [19, 4437, 647, 1367, 712, 711, 2]
+// Dependencies: [19, 4438, 647, 1367, 712, 711, 2]
 // Exports: useProfileThemeValues
 
-// Module 5927 (useProfileThemeValues)
+// Module 5940 (useProfileThemeValues)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 
 const useMemo = noop.useMemo;
 const result = set.fileFinishedImporting("modules/user_profile/useProfileThemeValues.native.tsx");

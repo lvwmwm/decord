@@ -1,13 +1,13 @@
-// Module ID: 7818
-// Function ID: 7819
+// Module ID: 7832
+// Function ID: 7833
 // Name: useUserCommunicationDisabled
-// Dependencies: [1992, 1922, 589, 4078, 2]
+// Dependencies: [1993, 1923, 589, 4079, 2]
 // Exports: default, useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 7818 (useUserCommunicationDisabled)
-import isCommunicationDisabled from "isCommunicationDisabled" /* 4078 */;
-import closure_2 from "trackCommunicationDisabled" /* 1992 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+// Module 7832 (useUserCommunicationDisabled)
+import isCommunicationDisabled from "isCommunicationDisabled" /* 4079 */;
+import closure_2 from "trackCommunicationDisabled" /* 1993 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_communication_disabled/useUserCommunicationDisabled.tsx");
@@ -37,7 +37,7 @@ export default function useUserCommunicationDisabled(arg0, arg1) {
   const items2 = [prop, ];
   const obj = _require(589);
   const tmp = _require;
-  items2[1] = _require(4078).isMemberCommunicationDisabled(stateFromStores);
+  items2[1] = _require(4079).isMemberCommunicationDisabled(stateFromStores);
   return items2;
 };
 export const useCurrentUserCommunicationDisabled = function useCurrentUserCommunicationDisabled(guild_id) {
@@ -69,7 +69,7 @@ export const useCurrentUserCommunicationDisabled = function useCurrentUserCommun
     prop = null;
   }
   const items3 = [prop, ];
-  tmpResult = tmp(4078);
+  tmpResult = tmp(4079);
   items3[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores1);
   return items3;
 };

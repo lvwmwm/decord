@@ -1,9 +1,9 @@
-// Module ID: 17095
-// Function ID: 17096
+// Module ID: 17113
+// Function ID: 17114
 // Name: IntegrationExpireBehaviorTypes
 // Dependencies: [2]
 
-// Module 17095 (IntegrationExpireBehaviorTypes)
+// Module 17113 (IntegrationExpireBehaviorTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/IntegrationExpireBehaviorTypes.tsx");

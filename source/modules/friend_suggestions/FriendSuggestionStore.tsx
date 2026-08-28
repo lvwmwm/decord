@@ -1,17 +1,17 @@
-// Module ID: 7340
-// Function ID: 7341
+// Module ID: 7354
+// Function ID: 7355
 // Name: initialize
-// Dependencies: [1930, 1922, 12, 7341, 7342, 589, 709, 2]
+// Dependencies: [1931, 1923, 12, 7355, 7356, 589, 709, 2]
 // Exports: transformFriendSuggestions
 
-// Module 7340 (initialize)
+// Module 7354 (initialize)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef7341 from "module_7341" /* 7341 */;
-import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 7342 */;
-import closure_2 from "createdAt" /* 1930 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import _modDef7355 from "module_7355" /* 7355 */;
+import maybeDispatchDevOnlyDummyFriendSuggestionsDefault from "maybeDispatchDevOnlyDummyFriendSuggestions" /* 7356 */;
+import closure_2 from "createdAt" /* 1931 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 
 let closure_4 = {};
 let c5 = 0;
@@ -51,8 +51,8 @@ const friendSuggestionStore = new FriendSuggestionStore(dispatcherDefault, {
       if (flag2) {
         c6 = true;
         c7 = false;
-        const response = _modDef7341.fetch();
-        const obj = _modDef7341;
+        const response = _modDef7355.fetch();
+        const obj = _modDef7355;
       }
     } else {
       maybeDispatchDevOnlyDummyFriendSuggestionsDefault();

@@ -1,9 +1,9 @@
-// Module ID: 7068
-// Function ID: 7069
+// Module ID: 7081
+// Function ID: 7082
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7068 (metadata)
+// Module 7081 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WumpusCouchSpotIllustration-2x.png.js");

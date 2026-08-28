@@ -1,23 +1,23 @@
-// Module ID: 11781
-// Function ID: 11782
+// Module ID: 11800
+// Function ID: 11801
 // Name: handleInviteDisabledPress
-// Dependencies: [19, 17, 1391, 1982, 1910, 1981, 10121, 676, 21, 4445, 712, 11782, 2009, 4811, 1500, 11783, 7670, 11784, 11822, 5556, 7938, 10034, 1236, 9677, 4880, 6188, 4185, 11856, 589, 9832, 9829, 11857, 11858, 11860, 2]
+// Dependencies: [19, 17, 1391, 1983, 1910, 1982, 10139, 676, 21, 4446, 712, 11801, 2010, 4824, 1500, 11802, 7684, 11803, 11841, 5569, 7952, 10052, 1236, 9695, 4893, 6201, 4186, 11875, 589, 9850, 9847, 11876, 11877, 11879, 2]
 
-// Module 11781 (handleInviteDisabledPress)
+// Module 11800 (handleInviteDisabledPress)
 import ThemesDefault from "Themes" /* 712 */;
-import useAlertStore from "useAlertStore" /* 4811 */;
-import setDefault from "set" /* 7670 */;
-import useEventsButtonPropsDefault from "useEventsButtonProps" /* 11860 */;
+import useAlertStore from "useAlertStore" /* 4824 */;
+import setDefault from "set" /* 7684 */;
+import useEventsButtonPropsDefault from "useEventsButtonProps" /* 11879 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "comparator" /* 1982 */;
+import closure_6 from "comparator" /* 1983 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "handleConnectionOpen" /* 1981 */;
-import { SEARCH_BAR_MARGIN_BOTTOM } from "hairlineWidth" /* 10121 */;
+import closure_8 from "handleConnectionOpen" /* 1982 */;
+import { SEARCH_BAR_MARGIN_BOTTOM } from "hairlineWidth" /* 10139 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function handleInviteDisabledPress() {
@@ -161,8 +161,8 @@ const memoResult = importAllResult.memo(function ConnectedGuildSearchAndInviteIn
     const channels = closure_1_6.getChannels(guild.id);
     const result = guild(closure_1_2[30]).handleOpenInviteActionsheet(guild, channelId, channels, closure_1_11.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(11857).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(11857);
+  const shouldShowInvitesDisabledNotif = guild(11876).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(11876);
   const tmp5 = useEventsButtonPropsDefault(guild);
   obj = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread, useEventsButton: null, useButtonComponent: null };
   if (flag2) {

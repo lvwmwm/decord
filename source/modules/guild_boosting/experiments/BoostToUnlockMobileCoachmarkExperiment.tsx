@@ -1,9 +1,9 @@
-// Module ID: 11981
-// Function ID: 11982
+// Module ID: 12000
+// Function ID: 12001
 // Name: getUnitId
 // Dependencies: [1368, 2]
 
-// Module 11981 (getUnitId)
+// Module 12000 (getUnitId)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 const tmp2 = getUnitIdDefault({ name: "2026-03-boost-to-unlock-mobile-coachmark", kind: "user", defaultConfig: { showCoachmark: false }, variations: { 0: { showCoachmark: false }, 1: { showCoachmark: true } } });

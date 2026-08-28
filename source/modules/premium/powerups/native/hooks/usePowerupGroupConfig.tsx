@@ -1,10 +1,10 @@
-// Module ID: 12028
-// Function ID: 12029
+// Module ID: 12047
+// Function ID: 12048
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 1910, 589, 8007, 1236, 2401, 12029, 12030, 1370, 2]
+// Dependencies: [19, 1910, 589, 8021, 1236, 2402, 12048, 12049, 1370, 2]
 // Exports: default
 
-// Module 12028 (usePowerupGroupConfig)
+// Module 12047 (usePowerupGroupConfig)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
 

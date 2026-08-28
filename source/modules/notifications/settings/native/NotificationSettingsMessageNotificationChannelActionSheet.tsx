@@ -1,14 +1,14 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10185
+// Function ID: 10186
 // Name: NotificationSettingsMessageNotificationChannelActionSheet
-// Dependencies: [19, 4654, 676, 4655, 685, 21, 10152, 10166, 1236, 10153, 5439, 5434, 2]
+// Dependencies: [19, 4667, 676, 4668, 685, 21, 10170, 10184, 1236, 10171, 5452, 5447, 2]
 // Exports: default
 
-// Module 10167 (NotificationSettingsMessageNotificationChannelActionSheet)
+// Module 10185 (NotificationSettingsMessageNotificationChannelActionSheet)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4654 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4667 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4655 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4668 */;
 import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 685 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -18,7 +18,7 @@ let result = require("set").fileFinishedImporting("modules/notifications/setting
 
 export default function NotificationSettingsMessageNotificationChannelActionSheet(channel) {
   const _require = channel;
-  let obj = _require(10152);
+  let obj = _require(10170);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   const unread = channelPresetSettings.unread;
   const notification = channelPresetSettings.notification;
@@ -44,5 +44,5 @@ export default function NotificationSettingsMessageNotificationChannelActionShee
     const NotificationLabel = channel(closure_1_2[11]).NotificationLabel;
     const result = unread(closure_1_2[10]).updateChannelOverrideSettings(channel.channel.guild_id, channel.channel.id, obj, NotificationLabel.notifications(message_notifications));
   };
-  return jsx(unread(10166), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
+  return jsx(unread(10184), { context: "channel", value: notification, allMessagesSubLabel: null, onChange: null });
 };

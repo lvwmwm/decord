@@ -1,19 +1,19 @@
-// Module ID: 11868
-// Function ID: 11869
+// Module ID: 11887
+// Function ID: 11888
 // Name: num2
-// Dependencies: [19, 17, 4437, 5575, 1925, 21, 4445, 500, 712, 589, 5020, 5537, 1435, 9023, 1494, 4106, 7809, 9019, 7440, 8160, 2]
+// Dependencies: [19, 17, 4438, 5588, 1926, 21, 4446, 500, 712, 589, 5033, 5550, 1435, 9041, 1494, 4107, 7823, 9037, 7454, 8174, 2]
 
-// Module 11868 (num2)
+// Module 11887 (num2)
 import ThemesDefault from "Themes" /* 712 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import EmojiDefault from "Emoji" /* 5537 */;
+import EmojiDefault from "Emoji" /* 5550 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5575 */;
-import set from "set" /* 1925 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5588 */;
+import set from "set" /* 1926 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -101,7 +101,7 @@ let closure_13 = importAllResult.memo((emoji) => {
   obj1[4] = url;
   obj[1] = closure_9(EmojiDefault, obj1);
   obj[4] = closure_9(View, obj);
-  return closure_9(emoji(5020).PressableOpacity, obj);
+  return closure_9(emoji(5033).PressableOpacity, obj);
 });
 const obj8 = { height: 12, width: 12, color: ThemesDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
 let result = set.fileFinishedImporting("modules/double_tap_to_react/native/SelectDoubleTapEmojiRow.tsx");
@@ -125,7 +125,7 @@ export default importAllResult.memo((selectedEmoji) => {
   const stateFromStores = obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const found = frequentlyUsedReactionEmojis.filter((emoji) => {
     let obj = onPressEmoji(substr[15]);
-    obj = { emoji, channel: "Array", intention: "tongue" };
+    obj = { emoji, channel: "Array", intention: true };
     obj[2] = constants.DEFAULT_REACT_EMOJI;
     return !obj.isEmojiFilteredOrLocked(obj);
   });

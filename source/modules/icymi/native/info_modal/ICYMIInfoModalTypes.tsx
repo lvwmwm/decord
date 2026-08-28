@@ -1,9 +1,9 @@
-// Module ID: 15968
-// Function ID: 15969
+// Module ID: 15986
+// Function ID: 15987
 // Name: ICYMI_INFO_MODAL_KEY
 // Dependencies: [2]
 
-// Module 15968 (ICYMI_INFO_MODAL_KEY)
+// Module 15986 (ICYMI_INFO_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/icymi/native/info_modal/ICYMIInfoModalTypes.tsx");

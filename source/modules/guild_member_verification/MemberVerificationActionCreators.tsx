@@ -1,17 +1,17 @@
-// Module ID: 5511
-// Function ID: 5512
+// Module ID: 5524
+// Function ID: 5525
 // Name: _fetchVerificationForm
-// Dependencies: [5, 1984, 1992, 4429, 1922, 676, 530, 4430, 709, 5512, 5425, 4270, 5516, 4809, 1236, 4343, 698, 2]
+// Dependencies: [5, 1985, 1993, 4430, 1923, 676, 530, 4431, 709, 5525, 5438, 4271, 5529, 4822, 1236, 4344, 698, 2]
 // Exports: showCoachmark
 
-// Module 5511 (_fetchVerificationForm)
+// Module 5524 (_fetchVerificationForm)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 1984 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "updateInvite" /* 4429 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "initialize" /* 1985 */;
+import closure_5 from "trackCommunicationDisabled" /* 1993 */;
+import closure_6 from "updateInvite" /* 4430 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

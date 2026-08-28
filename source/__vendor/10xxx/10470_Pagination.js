@@ -1,0 +1,11 @@
+// Module ID: 10470
+// Function ID: 10471
+// Name: Pagination
+// Dependencies: [10471, 10499]
+
+// Module 10470 (Pagination)
+import _modDef10471 from "module_10471" /* 10471 */;
+
+
+export default _modDef10471;
+export const Pagination = require("Basic").Pagination;

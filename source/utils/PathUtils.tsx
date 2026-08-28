@@ -1,10 +1,10 @@
-// Module ID: 4505
-// Function ID: 4506
+// Module ID: 4506
+// Function ID: 4507
 // Name: pathJoin
 // Dependencies: [500, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 4505 (pathJoin)
+// Module 4506 (pathJoin)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/PathUtils.tsx");

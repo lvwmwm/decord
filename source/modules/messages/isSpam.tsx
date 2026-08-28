@@ -1,12 +1,12 @@
-// Module ID: 7185
-// Function ID: 7186
+// Module ID: 7199
+// Function ID: 7200
 // Name: isSpamSupported
-// Dependencies: [1922, 676, 7186, 2]
+// Dependencies: [1923, 676, 7200, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 7185 (isSpamSupported)
-import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7186 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 7199 (isSpamSupported)
+import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7200 */;
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 5355
-// Function ID: 5356
+// Module ID: 5368
+// Function ID: 5369
 // Name: fromServer
-// Dependencies: [32, 1432, 1911, 4105, 1914, 2]
+// Dependencies: [32, 1432, 1911, 4106, 1914, 2]
 
-// Module 5355 (fromServer)
-import EmojiTypes from "EmojiTypes" /* 4105 */;
+// Module 5368 (fromServer)
+import EmojiTypes from "EmojiTypes" /* 4106 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { TypeTag } from "TypeTag" /* 1432 */;
 import { LibdiscoreStore } from "identity" /* 1911 */;

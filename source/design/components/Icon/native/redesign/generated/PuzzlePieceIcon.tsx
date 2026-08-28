@@ -1,14 +1,14 @@
-// Module ID: 14509
-// Function ID: 14510
+// Module ID: 14493
+// Function ID: 14494
 // Name: PuzzlePieceIcon
-// Dependencies: [19, 21, 712, 4164, 14510, 2]
+// Dependencies: [19, 21, 712, 4165, 14494, 2]
 // Exports: PuzzlePieceIcon
 
-// Module 14509 (PuzzlePieceIcon)
+// Module 14493 (PuzzlePieceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14510 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 14494 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

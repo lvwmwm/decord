@@ -1,24 +1,24 @@
-// Module ID: 11891
-// Function ID: 11892
+// Module ID: 11910
+// Function ID: 11911
 // Name: ChatInputNotificationNudgeImpl
-// Dependencies: [32, 19, 17, 4091, 4654, 11892, 676, 1388, 11893, 21, 4445, 712, 1367, 698, 10158, 4441, 5020, 11894, 1236, 11895, 5503, 589, 9197, 11903, 6203, 1377, 2]
+// Dependencies: [32, 19, 17, 4092, 4667, 11911, 676, 1388, 11912, 21, 4446, 712, 1367, 698, 10176, 4442, 5033, 11913, 1236, 11914, 5516, 589, 9215, 11922, 6216, 1377, 2]
 // Exports: default
 
-// Module 11891 (ChatInputNotificationNudgeImpl)
+// Module 11910 (ChatInputNotificationNudgeImpl)
 import ThemesDefault from "Themes" /* 712 */;
-import useIsAppDMDefault from "useIsAppDM" /* 9197 */;
-import apexExperimentDefault from "apexExperiment" /* 11903 */;
+import useIsAppDMDefault from "useIsAppDM" /* 9215 */;
+import apexExperimentDefault from "apexExperiment" /* 11922 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "storeThread" /* 4091 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4654 */;
-import { PermissionPromptType } from "set" /* 11892 */;
+import closure_7 from "storeThread" /* 4092 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4667 */;
+import { PermissionPromptType } from "set" /* 11911 */;
 import ME from "ME" /* 676 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
-import EventActionType from "EventActionType" /* 11893 */;
+import EventActionType from "EventActionType" /* 11912 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function ChatInputNotificationNudgeImpl(onDismiss) {
@@ -155,9 +155,9 @@ export default function ChatInputNotificationNudge(channel) {
   if (!stateFromStores) {
     tmp5 = !useIsAppDMDefault(channel);
   }
-  let tmpResult = tmp(11894);
+  let tmpResult = tmp(11913);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
-  tmpResult = tmp(11894);
+  tmpResult = tmp(11913);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
   const tmp4 = importDefault;
   const tmp4Result = apexExperimentDefault;
@@ -171,10 +171,10 @@ export default function ChatInputNotificationNudge(channel) {
   obj = { cooldownDurationMs: c20 };
   const tmp10 = c20;
   const tmp11 = callback;
-  const tmpResult1 = channel(6203);
-  [tmp13, tmp14] = callback(channel(6203).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
+  const tmpResult1 = channel(6216);
+  [tmp13, tmp14] = callback(channel(6216).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   importDefault = tmp14;
-  const tmp12 = callback(channel(6203).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
+  const tmp12 = callback(channel(6216).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   let prop1 = null;
   if (tmp5) {
     prop1 = null;
@@ -189,11 +189,11 @@ export default function ChatInputNotificationNudge(channel) {
     }
   }
   obj = { cooldownDurationMs: tmp10 };
-  const tmp11Result = tmp11(channel(6203).useSelectedTimeRecurringDismissibleContent(prop1, obj, undefined, true), 2);
+  const tmp11Result = tmp11(channel(6216).useSelectedTimeRecurringDismissibleContent(prop1, obj, undefined, true), 2);
   dependencyMap = tmp17;
   const items1 = [tmp14];
   const items2 = [tmp11Result[1]];
-  const tmpResult2 = channel(6203);
+  const tmpResult2 = channel(6216);
   const tmp18 = callback2(() => _undefined(closure_1_12.USER_DISMISS), items1);
   if (tmp13 === channel(1377).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
     obj1 = { promptType: null, location: null, surface: null, body: null, onDismiss: null };

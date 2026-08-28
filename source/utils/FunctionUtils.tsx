@@ -1,10 +1,10 @@
-// Module ID: 1991
-// Function ID: 1992
+// Module ID: 1992
+// Function ID: 1993
 // Name: areArraysShallowlyEqual
 // Dependencies: [2]
 // Exports: areArraysShallowlyEqual, cachedFunction, clearObject, isPlainObjectEmpty
 
-// Module 1991 (areArraysShallowlyEqual)
+// Module 1992 (areArraysShallowlyEqual)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/FunctionUtils.tsx");

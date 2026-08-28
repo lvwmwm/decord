@@ -1,20 +1,20 @@
-// Module ID: 12099
-// Function ID: 12100
+// Module ID: 12118
+// Function ID: 12119
 // Name: WaveformBar
-// Dependencies: [32, 19, 17, 4437, 11451, 11452, 676, 21, 4185, 4445, 712, 500, 4879, 4446, 1367, 4165, 5064, 4441, 4172, 2]
+// Dependencies: [32, 19, 17, 4438, 11470, 11471, 676, 21, 4186, 4446, 712, 500, 4892, 4447, 1367, 4166, 5077, 4442, 4173, 2]
 
-// Module 12099 (WaveformBar)
+// Module 12118 (WaveformBar)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11451 */;
-import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11452 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11470 */;
+import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11471 */;
 import { ThemeTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "module_4185" /* 4185 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "module_4186" /* 4186 */;
 import set from "set" /* 500 */;
 
 let require = arg1;

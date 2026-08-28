@@ -1,9 +1,9 @@
-// Module ID: 6692
-// Function ID: 6693
+// Module ID: 6705
+// Function ID: 6706
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6692 (metadata)
+// Module 6705 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeartIllocon-2x.png.js");

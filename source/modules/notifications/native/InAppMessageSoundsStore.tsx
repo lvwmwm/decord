@@ -1,13 +1,13 @@
-// Module ID: 10107
-// Function ID: 10108
+// Module ID: 10125
+// Function ID: 10126
 // Name: isInAppMessageSoundsEnabled
-// Dependencies: [595, 700, 4074, 2]
+// Dependencies: [595, 700, 4075, 2]
 // Exports: isInAppMessageSoundsEnabled, setInAppMessageSoundsEnabled, useInAppMessageSoundsEnabled
 
-// Module 10107 (isInAppMessageSoundsEnabled)
+// Module 10125 (isInAppMessageSoundsEnabled)
 import set from "set" /* 2 */;
 import Storage2 from "Storage" /* 595 */;
-import isIterable from "isIterable" /* 4074 */;
+import isIterable from "isIterable" /* 4075 */;
 import identity from "identity" /* 700 */;
 
 const InAppMessageSoundsEnabled = "InAppMessageSoundsEnabled";

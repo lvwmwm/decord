@@ -1,15 +1,15 @@
-// Module ID: 7125
-// Function ID: 7126
+// Module ID: 7138
+// Function ID: 7139
 // Name: useShouldShowPremiumTrialUserSettingsAvatarBadge
-// Dependencies: [1924, 7126, 4266, 1377, 12873, 4107, 1236, 2]
+// Dependencies: [1925, 7139, 4267, 1377, 12892, 4108, 1236, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 7125 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
+// Module 7138 (useShouldShowPremiumTrialUserSettingsAvatarBadge)
 import set from "set" /* 2 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4266 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7126 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4267 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7139 */;
 
 let closure_2 = GuildFeatures.PremiumSubscriptionSKUToPremiumType;
 let result = set.fileFinishedImporting("modules/premium/native/MobileTrialUtils.tsx");
@@ -52,11 +52,11 @@ export const useNitroTrialCtaOverride = function useNitroTrialCtaOverride(user_p
   if (null == subscriptionTrial) {
     return null;
   } else {
-    let tmpResult = tmp(12873);
+    let tmpResult = tmp(12892);
     obj = { location: null };
     obj[0] = user_profile_premium_upsell_card;
     if (tmpResult.isAndroidTwoWeekTrialsTrialCTAEnabled(obj)) {
-      tmpResult = tmp(4107);
+      tmpResult = tmp(4108);
       obj = { intervalType: null, intervalCount: null };
       ({ interval: obj3[0], intervalCount: obj3[1] } = subscriptionTrial);
       const result = tmpResult.formatIntervalDuration(obj);

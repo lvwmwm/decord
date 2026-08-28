@@ -1,10 +1,10 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10209
+// Function ID: 10210
 // Name: _uploadDebugLogFiles
-// Dependencies: [5, 1391, 676, 3, 17, 4343, 9486, 10192, 7, 10193, 10194, 1917, 4306, 10195, 10196, 10197, 530, 2]
+// Dependencies: [5, 1391, 676, 3, 17, 4344, 9504, 10210, 7, 10211, 10212, 1917, 4307, 10213, 10214, 10215, 530, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 10191 (_uploadDebugLogFiles)
+// Module 10209 (_uploadDebugLogFiles)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
@@ -60,7 +60,7 @@ function _uploadDebugLogFiles() {
           } else if (1 === tmp7) {
             c5 = 0;
             closure_2 = closure_4;
-            if (closure_2 instanceof callback(4343).UploadVoiceDebugLogsError) {
+            if (closure_2 instanceof callback(4344).UploadVoiceDebugLogsError) {
               closure_1 = (function uploadErrorToAVUnderlyingError(closure_2) {
                 const code = closure_2.code;
                 if (callback(tmp3[5]).UploadErrorCodes.GENERAL === code) {
@@ -76,9 +76,9 @@ function _uploadDebugLogFiles() {
                 }
               })(closure_2);
             }
-            let obj4 = callback(9486);
+            let obj4 = callback(9504);
             const obj2 = { type: null, underlyingError: null, errorMessage: null };
-            obj2[0] = callback(9486).AVError.DEBUG_LOG_UPLOAD_FAILED;
+            obj2[0] = callback(9504).AVError.DEBUG_LOG_UPLOAD_FAILED;
             obj2[1] = closure_1;
             obj2[2] = closure_1_2.message;
             obj4.reportAVError(obj2);
@@ -94,7 +94,7 @@ function _uploadDebugLogFiles() {
               obj3[0] = arg1;
               return obj3;
             } else {
-              obj1 = callback(10192);
+              obj1 = callback(10210);
               c6 = 3;
               c7 = 1;
               obj4 = { value: null, done: false };

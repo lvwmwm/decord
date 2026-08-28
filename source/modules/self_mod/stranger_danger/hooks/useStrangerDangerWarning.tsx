@@ -1,17 +1,17 @@
-// Module ID: 10921
-// Function ID: 10922
+// Module ID: 10939
+// Function ID: 10940
 // Name: useStrangerDangerWarning
-// Dependencies: [1922, 10573, 589, 10922, 10923, 10630, 8696, 10629, 2]
+// Dependencies: [1923, 10591, 589, 10940, 10941, 10648, 8712, 10647, 2]
 // Exports: useStrangerDangerWarning
 
-// Module 10921 (useStrangerDangerWarning)
+// Module 10939 (useStrangerDangerWarning)
 import initialize from "initialize" /* 589 */;
-import useUserIsTeen from "useUserIsTeen" /* 8696 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10630 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10922 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 10923 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 10573 */;
+import useUserIsTeen from "useUserIsTeen" /* 8712 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10648 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 10940 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 10941 */;
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 10591 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");

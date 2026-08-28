@@ -1,18 +1,18 @@
-// Module ID: 5960
-// Function ID: 5961
+// Module ID: 5973
+// Function ID: 5974
 // Name: NavigationStack
-// Dependencies: [32, 19, 17, 21, 4445, 712, 5961, 5447, 4165, 5962, 1629, 1236, 12, 5995, 1501, 4380, 6002, 1209, 2]
+// Dependencies: [32, 19, 17, 21, 4446, 712, 5974, 5460, 4166, 5975, 1629, 1236, 12, 6008, 1501, 4381, 6015, 1209, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 5960 (NavigationStack)
+// Module 5973 (NavigationStack)
 import ThemesDefault from "Themes" /* 712 */;
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
-import useNavigationTheme from "useNavigationTheme" /* 6002 */;
+import useNavigationTheme from "useNavigationTheme" /* 6015 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function NavigationStack(screens) {
@@ -225,7 +225,7 @@ function WrappedNavigationStack(arg0) {
     return tmp2;
   }), 1)[0];
   obj1 = useNavigationTheme;
-  navigationTheme = obj1.useNavigationTheme(navigationContainerRef(4380)());
+  navigationTheme = obj1.useNavigationTheme(navigationContainerRef(4381)());
   obj = { ref: navigationContainerRef, theme: navigationTheme, initialState: null, onReady: null, onStateChange: null, children: null };
   if (null == initialRouteState) {
     let tmp7;
@@ -264,7 +264,7 @@ export const useNavigatorScreens = function useNavigatorScreens(getNextRenewalDa
   return React.useMemo(getNextRenewalDateLabel, items);
 };
 export const useAccessibilityNativeStackOptions = function useAccessibilityNativeStackOptions() {
-  navigatorShouldCrossfade = navigatorShouldCrossfade(5961).useNavigatorShouldCrossfade();
+  navigatorShouldCrossfade = navigatorShouldCrossfade(5974).useNavigatorShouldCrossfade();
   const items = [navigatorShouldCrossfade];
   return React.useMemo(() => {
     let obj;

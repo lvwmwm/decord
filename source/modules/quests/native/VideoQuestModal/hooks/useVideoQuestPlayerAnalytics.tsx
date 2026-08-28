@@ -1,13 +1,13 @@
-// Module ID: 14684
-// Function ID: 14685
+// Module ID: 14668
+// Function ID: 14669
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [19, 17, 4539, 676, 11006, 7396, 11027, 14685, 14686, 7384, 5342, 14575, 7280, 7285, 2]
+// Dependencies: [19, 17, 4540, 676, 11024, 7410, 11045, 14669, 14553, 7398, 5355, 14559, 7294, 7299, 2]
 // Exports: default
 
-// Module 14684 (useVideoQuestPlayerAnalytics)
+// Module 14668 (useVideoQuestPlayerAnalytics)
 import closure_3 from "noop" /* 19 */;
 import { AppState } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleConnectionInfoChange" /* 4539 */;
+import closure_5 from "handleConnectionInfoChange" /* 4540 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;

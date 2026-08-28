@@ -1,10 +1,10 @@
-// Module ID: 11486
-// Function ID: 11487
+// Module ID: 11505
+// Function ID: 11506
 // Name: addRule
 // Dependencies: [17, 12, 2]
 // Exports: convertToNativeStyle
 
-// Module 11486 (addRule)
+// Module 11505 (addRule)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

@@ -1,16 +1,16 @@
-// Module ID: 11942
-// Function ID: 11943
+// Module ID: 11961
+// Function ID: 11962
 // Name: clearGuildMemberTimeout
-// Dependencies: [1992, 1922, 4078, 709, 5438, 2]
+// Dependencies: [1993, 1923, 4079, 709, 5451, 2]
 
-// Module 11942 (clearGuildMemberTimeout)
+// Module 11961 (clearGuildMemberTimeout)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isCommunicationDisabled from "isCommunicationDisabled" /* 4078 */;
-import initializeDefault from "initialize" /* 5438 */;
-import trackCommunicationDisabled from "trackCommunicationDisabled" /* 1992 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import isCommunicationDisabled from "isCommunicationDisabled" /* 4079 */;
+import initializeDefault from "initialize" /* 5451 */;
+import trackCommunicationDisabled from "trackCommunicationDisabled" /* 1993 */;
+import closure_5 from "trackCommunicationDisabled" /* 1993 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 
 function clearGuildMemberTimeout(closure_2, closure_1) {
   member = member.getMember(closure_2, closure_1);

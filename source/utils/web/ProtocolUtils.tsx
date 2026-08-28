@@ -1,10 +1,10 @@
-// Module ID: 12716
-// Function ID: 12717
+// Module ID: 12735
+// Function ID: 12736
 // Name: launchMobile
-// Dependencies: [4789, 2]
+// Dependencies: [4802, 2]
 
-// Module 12716 (launchMobile)
-import formatDefault from "format" /* 4789 */;
+// Module 12735 (launchMobile)
+import formatDefault from "format" /* 4802 */;
 
 const os = formatDefault.os;
 let family;

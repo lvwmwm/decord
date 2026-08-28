@@ -1,9 +1,9 @@
-// Module ID: 5331
-// Function ID: 5332
+// Module ID: 5344
+// Function ID: 5345
 // Name: PremiumGuildSubscribeModalScenes
 // Dependencies: [2]
 
-// Module 5331 (PremiumGuildSubscribeModalScenes)
+// Module 5344 (PremiumGuildSubscribeModalScenes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("components_native/premium/premium_guild_subscribe_modal/PremiumGuildSubscribeConstants.tsx");

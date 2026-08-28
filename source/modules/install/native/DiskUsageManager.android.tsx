@@ -1,10 +1,10 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 16915
+// Function ID: 16916
 // Name: _initialize
-// Dependencies: [5438, 2]
+// Dependencies: [5451, 2]
 
-// Module 16897 (_initialize)
-import initializeDefault from "initialize" /* 5438 */;
+// Module 16915 (_initialize)
+import initializeDefault from "initialize" /* 5451 */;
 
 initializeDefault;
 class DiskUsageManager extends tmp2 {

@@ -1,14 +1,14 @@
-// Module ID: 11916
-// Function ID: 11917
+// Module ID: 11935
+// Function ID: 11936
 // Name: useChangelogRenderedAnalytics
-// Dependencies: [19, 1996, 4460, 4459, 676, 11917, 589, 8576, 7933, 698, 2]
+// Dependencies: [19, 1997, 4461, 4460, 676, 11936, 589, 8591, 7947, 698, 2]
 // Exports: default
 
-// Module 11916 (useChangelogRenderedAnalytics)
+// Module 11935 (useChangelogRenderedAnalytics)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "generateOldThreadCutoff" /* 4460 */;
-import closure_6 from "handleUserSettingsProtoStoreChange" /* 4459 */;
+import closure_4 from "_getSystemLocale" /* 1997 */;
+import closure_5 from "generateOldThreadCutoff" /* 4461 */;
+import closure_6 from "handleUserSettingsProtoStoreChange" /* 4460 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;

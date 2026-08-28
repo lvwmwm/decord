@@ -1,17 +1,17 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9592
+// Function ID: 9593
 // Name: nativeEventEmitter
-// Dependencies: [19, 17, 4154, 4461, 9575, 1391, 4519, 21, 9571, 589, 9478, 4680, 1236, 9576, 4185, 9569, 2]
+// Dependencies: [19, 17, 4155, 4462, 9593, 1391, 4520, 21, 9589, 589, 9496, 4693, 1236, 9594, 4186, 9587, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 9574 (nativeEventEmitter)
+// Module 9592 (nativeEventEmitter)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "setContent" /* 4154 */;
-import closure_8 from "getParticipants" /* 4461 */;
-import closure_9 from "initialize" /* 9575 */;
+import closure_7 from "setContent" /* 4155 */;
+import closure_8 from "getParticipants" /* 4462 */;
+import closure_9 from "initialize" /* 9593 */;
 import closure_10 from "ensureGuildLoaded" /* 1391 */;
-import closure_11 from "createRTCConnection" /* 4519 */;
+import closure_11 from "createRTCConnection" /* 4520 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -158,7 +158,7 @@ export default function GlobalStatusIndicator(children) {
 };
 export const useGlobalStatusIndicatorHeightSharedValue = function useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState) {
   const _require = globalStatusIndicatorState;
-  const sharedValue = _require(4185).useSharedValue(globalStatusIndicatorState.height);
+  const sharedValue = _require(4186).useSharedValue(globalStatusIndicatorState.height);
   const items = [globalStatusIndicatorState.height, sharedValue];
   const effect = React.useEffect(() => {
     const result = sharedValue.set(globalStatusIndicatorState.height);

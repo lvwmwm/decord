@@ -1,13 +1,13 @@
-// Module ID: 7320
-// Function ID: 7321
+// Module ID: 7334
+// Function ID: 7335
 // Name: getDurationString
-// Dependencies: [1236, 4043, 2]
+// Dependencies: [1236, 4044, 2]
 // Exports: default, getAbbreviatedFormatter, getFullFormatter
 
-// Module 7320 (getDurationString)
+// Module 7334 (getDurationString)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 4043 */;
+import hooksDefault from "hooks" /* 4044 */;
 
 function getDurationString(seconds) {
   seconds = seconds.seconds;

@@ -1,23 +1,23 @@
-// Module ID: 6079
-// Function ID: 6080
+// Module ID: 6092
+// Function ID: 6093
 // Name: handlePermissionsChange
-// Dependencies: [4358, 6080, 1391, 1910, 4089, 1981, 4267, 1922, 676, 1398, 505, 6081, 1231, 11, 4707, 589, 709, 2]
+// Dependencies: [4359, 6093, 1391, 1910, 4090, 1982, 4268, 1923, 676, 1398, 505, 6094, 1231, 11, 4720, 589, 709, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6079 (handlePermissionsChange)
+// Module 6092 (handlePermissionsChange)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
-import SidebarType from "SidebarType" /* 6081 */;
-import closure_3 from "getHash" /* 4358 */;
-import closure_4 from "handleReaction" /* 6080 */;
+import SidebarType from "SidebarType" /* 6094 */;
+import closure_3 from "getHash" /* 4359 */;
+import closure_4 from "handleReaction" /* 6093 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_8 from "handleConnectionOpen" /* 1981 */;
-import closure_9 from "handleConnectionOpen" /* 4267 */;
-import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_8 from "handleConnectionOpen" /* 1982 */;
+import closure_9 from "handleConnectionOpen" /* 4268 */;
+import closure_10 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 1398 */;
 import { Permissions } from "sum" /* 505 */;
@@ -199,7 +199,7 @@ prototype["getCurrentSidebarChannelId"] = function getCurrentSidebarChannelId(ch
     let tmp9 = null;
     if (null != dependencyMap[tmp]) {
       if (tmp8.type !== SidebarType.SidebarType.VIEW_THREAD) {
-        if (tmp8.type !== tmp10(6081).SidebarType.VIEW_CHANNEL) {
+        if (tmp8.type !== tmp10(6094).SidebarType.VIEW_CHANNEL) {
           channelId = null;
         }
         tmp9 = channelId;
@@ -230,7 +230,7 @@ prototype["getCurrentSidebarMessageId"] = function getCurrentSidebarMessageId(ch
     let tmp9 = null;
     if (null != dependencyMap[tmp]) {
       if (tmp8.type !== SidebarType.SidebarType.VIEW_THREAD) {
-        if (tmp8.type !== tmp10(6081).SidebarType.VIEW_CHANNEL) {
+        if (tmp8.type !== tmp10(6094).SidebarType.VIEW_CHANNEL) {
           let tmp12 = null;
         }
         tmp9 = tmp12;

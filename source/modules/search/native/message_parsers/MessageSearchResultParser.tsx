@@ -1,11 +1,11 @@
-// Module ID: 16204
-// Function ID: 16205
+// Module ID: 16222
+// Function ID: 16223
 // Name: prototype
-// Dependencies: [4099, 7555, 16205, 11824, 16206, 12, 2]
+// Dependencies: [4100, 7569, 16223, 11843, 16224, 12, 2]
 
-// Module 16204 (prototype)
-import closure_2 from "hasFlag" /* 4099 */;
-import { EMBED_TYPES_WITHOUT_DESCRIPTION as closure_3 } from "MessageEmbedTypes" /* 7555 */;
+// Module 16222 (prototype)
+import closure_2 from "hasFlag" /* 4100 */;
+import { EMBED_TYPES_WITHOUT_DESCRIPTION as closure_3 } from "MessageEmbedTypes" /* 7569 */;
 
 const require = arg1;
 require("CachedSearchResultParser").CachedSearchResultParser;
@@ -108,11 +108,11 @@ const prototype = function SearchResultMessageParser(searchQueryString, lineClam
     }
     return content;
   };
-  let obj = _require(11824);
-  const tokenizeQueryResult = _require(11824).tokenizeQuery(searchQueryString);
-  const searchQueryFromTokens = _require(11824).getSearchQueryFromTokens(tokenizeQueryResult);
-  const obj2 = _require(11824);
-  const str = _require(11824).getQueryContentString(searchQueryFromTokens);
+  let obj = _require(11843);
+  const tokenizeQueryResult = _require(11843).tokenizeQuery(searchQueryString);
+  const searchQueryFromTokens = _require(11843).getSearchQueryFromTokens(tokenizeQueryResult);
+  const obj2 = _require(11843);
+  const str = _require(11843).getQueryContentString(searchQueryFromTokens);
   let str2;
   if (str != null) {
     str2 = str.trim();

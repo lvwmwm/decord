@@ -1,12 +1,12 @@
-// Module ID: 12040
-// Function ID: 12041
+// Module ID: 12059
+// Function ID: 12060
 // Name: useGuildPowerupsWarningConfig
-// Dependencies: [19, 12041, 4351, 589, 1236, 2401, 2]
+// Dependencies: [19, 12060, 4352, 589, 1236, 2402, 2]
 // Exports: default
 
-// Module 12040 (useGuildPowerupsWarningConfig)
+// Module 12059 (useGuildPowerupsWarningConfig)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleModifyingAppliedBoostStart" /* 12041 */;
+import closure_4 from "handleModifyingAppliedBoostStart" /* 12060 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsWarningConfig.tsx");

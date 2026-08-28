@@ -1,10 +1,10 @@
-// Module ID: 1981
-// Function ID: 1982
+// Module ID: 1982
+// Function ID: 1983
 // Name: handleConnectionOpen
-// Dependencies: [1395, 1218, 1391, 1982, 1910, 4496, 4089, 4267, 676, 1398, 595, 12, 1370, 506, 589, 709, 2]
+// Dependencies: [1395, 1218, 1391, 1983, 1910, 4497, 4090, 4268, 676, 1398, 595, 12, 1370, 506, 589, 709, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
-// Module 1981 (handleConnectionOpen)
+// Module 1982 (handleConnectionOpen)
 import applyDefault from "apply" /* 12 */;
 import fromStringAll from "fromString" /* 506 */;
 import initializeDefault from "initialize" /* 589 */;
@@ -15,11 +15,11 @@ import set2 from "set" /* 1398 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_13 from "fetchFingerprint" /* 1218 */;
 import closure_14 from "ensureGuildLoaded" /* 1391 */;
-import closure_15 from "comparator" /* 1982 */;
+import closure_15 from "comparator" /* 1983 */;
 import closure_16 from "createGuildRecordFromRust" /* 1910 */;
-import closure_17 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_18 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_19 from "handleConnectionOpen" /* 4267 */;
+import closure_17 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_18 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_19 from "handleConnectionOpen" /* 4268 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

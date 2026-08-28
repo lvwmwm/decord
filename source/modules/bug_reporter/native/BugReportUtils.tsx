@@ -1,10 +1,10 @@
-// Module ID: 10189
-// Function ID: 10190
+// Module ID: 10207
+// Function ID: 10208
 // Name: uriScheme
-// Dependencies: [5, 3, 514, 5034, 1208, 2]
+// Dependencies: [5, 3, 514, 5047, 1208, 2]
 // Exports: getAttachments
 
-// Module 10189 (uriScheme)
+// Module 10207 (uriScheme)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -188,7 +188,7 @@ function _getAttachments() {
             let obj6 = arr(514);
             dependencyMap = obj6.v4();
             let tmp55 = dependencyMap;
-            let obj8 = arr(5034);
+            let obj8 = arr(5047);
             let tmp56 = lib;
             c7 = 3;
             let num5 = 1;

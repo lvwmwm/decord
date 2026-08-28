@@ -1,16 +1,16 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 13382
+// Function ID: 13383
 // Name: id
-// Dependencies: [4461, 1218, 5174, 4519, 676, 4466, 589, 9571, 2]
+// Dependencies: [4462, 1218, 5187, 4520, 676, 4467, 589, 9589, 2]
 // Exports: default
 
-// Module 13363 (id)
-import closure_3 from "getParticipants" /* 4461 */;
+// Module 13382 (id)
+import closure_3 from "getParticipants" /* 4462 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "callConnect" /* 5174 */;
-import closure_6 from "createRTCConnection" /* 4519 */;
+import closure_5 from "callConnect" /* 5187 */;
+import closure_6 from "createRTCConnection" /* 4520 */;
 import ME from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4466 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4467 */;
 
 const require = arg1;
 ({ EMPTY_STRING_SNOWFLAKE_ID: error, RTCConnectionStates: closure_8 } = ME);
@@ -63,7 +63,7 @@ export default function _default() {
     }
     return tmp;
   });
-  const tmp3 = id(9571)();
+  const tmp3 = id(9589)();
   dependencyMap = tmp3;
   const items2 = [getRTCConnectionId];
   stateFromStores = _require(589).useStateFromStores(items2, getRTCConnectionId.getRTCConnectionId, []);

@@ -1,11 +1,11 @@
-// Module ID: 5035
-// Function ID: 5036
+// Module ID: 5048
+// Function ID: 5049
 // Name: NativePermissionsRequestOptions
-// Dependencies: [5036, 5037, 5038, 5042, 2, 5039]
+// Dependencies: [5049, 5050, 5051, 5055, 2, 5052]
 
-// Module 5035 (NativePermissionsRequestOptions)
-import { ProcessArgs } from "get" /* 5037 */;
-import importDefaultResult from "isEnabled" /* 5036 */;
+// Module 5048 (NativePermissionsRequestOptions)
+import { ProcessArgs } from "get" /* 5050 */;
+import importDefaultResult from "isEnabled" /* 5049 */;
 
 importDefaultResult.initialize();
 if (ProcessArgs.isDiscordTestSet()) {

@@ -1,13 +1,13 @@
-// Module ID: 14060
-// Function ID: 14061
+// Module ID: 14079
+// Function ID: 14080
 // Name: RPC_LOCAL_SCOPE
-// Dependencies: [4486, 4347, 676, 8541, 9427, 9175, 14030, 9424, 709, 9359, 9391, 12, 687, 7981, 698, 2]
+// Dependencies: [4487, 4348, 676, 8556, 9445, 9193, 14049, 9442, 709, 9377, 9409, 12, 687, 7995, 698, 2]
 
-// Module 14060 (RPC_LOCAL_SCOPE)
-import StatusDisplayTypes from "StatusDisplayTypes" /* 9175 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9427 */;
-import closure_3 from "addApplication" /* 4486 */;
-import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4347 */;
+// Module 14079 (RPC_LOCAL_SCOPE)
+import StatusDisplayTypes from "StatusDisplayTypes" /* 9193 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9445 */;
+import closure_3 from "addApplication" /* 4487 */;
+import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4348 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

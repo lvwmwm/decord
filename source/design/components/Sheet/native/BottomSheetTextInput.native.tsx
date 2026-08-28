@@ -1,10 +1,10 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9656
+// Function ID: 9657
 // Name: BottomSheetTextInput
-// Dependencies: [19, 21, 6186, 6184, 9639, 2]
+// Dependencies: [19, 21, 6199, 6197, 9657, 2]
 // Exports: BottomSheetTextInput
 
-// Module 9638 (BottomSheetTextInput)
+// Module 9656 (BottomSheetTextInput)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -17,8 +17,8 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
   ref = undefined;
   const merged = Object.assign(ref, Object.create(null));
   ref = React.useRef(null);
-  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(6186)({ onFocus, onBlur }));
-  let obj = ref(6184);
+  ({ onFocus: onFocus2, onBlur: onBlur2 } = ref(6199)({ onFocus, onBlur }));
+  let obj = ref(6197);
   const keyboardBlurring = obj.useKeyboardBlurring(ref);
   obj = {
     ref(current) {
@@ -32,9 +32,9 @@ export const BottomSheetTextInput = function BottomSheetTextInput(ref) {
     onFocus: onFocus2,
     onBlur: onBlur2
   };
-  const tmp3 = ref(6186)({ onFocus, onBlur });
+  const tmp3 = ref(6199)({ onFocus, onBlur });
   const merged1 = Object.assign(merged);
-  return jsx(ref(9639), {
+  return jsx(ref(9657), {
     ref(current) {
       ref.current = current;
       if (typeof ref === "function") {

@@ -1,10 +1,10 @@
-// Module ID: 8515
-// Function ID: 8516
+// Module ID: 8529
+// Function ID: 8530
 // Name: MediaModalSheetWrapper
-// Dependencies: [19, 676, 21, 5887, 4412, 8516, 2]
+// Dependencies: [19, 676, 21, 5900, 4413, 8530, 2]
 // Exports: default
 
-// Module 8515 (MediaModalSheetWrapper)
+// Module 8529 (MediaModalSheetWrapper)
 import closure_2 from "noop" /* 19 */;
 import { MEDIA_MODAL_KEY } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;

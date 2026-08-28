@@ -1,9 +1,9 @@
-// Module ID: 7038
-// Function ID: 7039
+// Module ID: 7051
+// Function ID: 7052
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7038 (metadata)
+// Module 7051 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TreasureChestSpotIllustration-2x.png.js");

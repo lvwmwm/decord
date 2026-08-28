@@ -1,12 +1,12 @@
-// Module ID: 16232
-// Function ID: 16233
+// Module ID: 16250
+// Function ID: 16251
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: [1391, 7451, 1222, 2]
+// Dependencies: [1391, 7465, 1222, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 16232 (getChannelOpenedRouteTrackingProps)
+// Module 16250 (getChannelOpenedRouteTrackingProps)
 import transitionTo from "transitionTo" /* 1222 */;
-import collectThreadMetadata from "collectThreadMetadata" /* 7451 */;
+import collectThreadMetadata from "collectThreadMetadata" /* 7465 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 
 require = arg1;

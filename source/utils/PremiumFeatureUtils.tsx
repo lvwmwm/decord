@@ -1,14 +1,14 @@
-// Module ID: 8146
-// Function ID: 8147
+// Module ID: 8160
+// Function ID: 8161
 // Name: getUserMaxFileSize
-// Dependencies: [1923, 676, 1924, 1946, 2]
+// Dependencies: [1924, 676, 1925, 1947, 2]
 // Exports: getUserMaxFileSize
 
-// Module 8146 (getUserMaxFileSize)
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
-import closure_2 from "setPremiumTypeActual" /* 1923 */;
+// Module 8160 (getUserMaxFileSize)
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1947 */;
+import closure_2 from "setPremiumTypeActual" /* 1924 */;
 import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 
 require = arg1;
 function getUserMaxFileSize(currentUser) {

@@ -1,13 +1,13 @@
-// Module ID: 6031
-// Function ID: 6032
+// Module ID: 6044
+// Function ID: 6045
 // Name: resetStoreState
-// Dependencies: [1996, 589, 1370, 709, 2]
+// Dependencies: [1997, 589, 1370, 709, 2]
 
-// Module 6031 (resetStoreState)
+// Module 6044 (resetStoreState)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import closure_2 from "_getSystemLocale" /* 1996 */;
+import closure_2 from "_getSystemLocale" /* 1997 */;
 
 require = arg1;
 function resetStoreState() {

@@ -1,15 +1,15 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8186
+// Function ID: 8187
 // Name: PremiumGroupWordmark
-// Dependencies: [19, 21, 4165, 712, 8173, 2]
+// Dependencies: [19, 21, 4166, 712, 8187, 2]
 // Exports: default
 
-// Module 8172 (PremiumGroupWordmark)
+// Module 8186 (PremiumGroupWordmark)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4165 */;
-import inlineStyles from "inlineStyles" /* 8173 */;
-import inlineStylesDefault from "inlineStyles" /* 8173 */;
+import map from "map" /* 4166 */;
+import inlineStyles from "inlineStyles" /* 8187 */;
+import inlineStylesDefault from "inlineStyles" /* 8187 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

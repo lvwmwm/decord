@@ -1,18 +1,18 @@
-// Module ID: 12042
-// Function ID: 12043
+// Module ID: 12061
+// Function ID: 12062
 // Name: PX_16
-// Dependencies: [19, 17, 21, 712, 501, 4445, 12031, 1236, 2401, 12043, 12044, 2]
+// Dependencies: [19, 17, 21, 712, 501, 4446, 12050, 1236, 2402, 12062, 12063, 2]
 // Exports: default
 
-// Module 12042 (PX_16)
+// Module 12061 (PX_16)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import items2 from "items" /* 12043 */;
+import items2 from "items" /* 12062 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 ({ jsx: c5, Fragment: closure_6, jsxs: error } = jsxProd);
@@ -48,10 +48,10 @@ export default function GuildPowerupsLevelsSection(arg0) {
   }, []);
   obj = { title: null, description: null };
   const intl = getSystemLocale.intl;
-  obj[0] = intl.string(listings(2401)["TXY/b0"]);
+  obj[0] = intl.string(listings(2402)["TXY/b0"]);
   const intl2 = getSystemLocale.intl;
-  obj[1] = intl2.string(listings(2401).aJv4PB);
-  const items1 = [callback(listings(12031), obj), ];
+  obj[1] = intl2.string(listings(2402).aJv4PB);
+  const items1 = [callback(listings(12050), obj), ];
   obj = {
     cardMarginRight: PX_16,
     cardWidth: 250,

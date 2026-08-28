@@ -1,15 +1,15 @@
-// Module ID: 5005
-// Function ID: 5006
+// Module ID: 5018
+// Function ID: 5019
 // Name: getGameMentionData
-// Dependencies: [4469, 5006, 1922, 5009, 589, 643, 2]
+// Dependencies: [4470, 5019, 1923, 5022, 589, 643, 2]
 // Exports: getGameMentionData, useGameMentionData
 
-// Module 5005 (getGameMentionData)
+// Module 5018 (getGameMentionData)
 import shallowEqualDefault from "shallowEqual" /* 643 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5009 */;
-import closure_3 from "handleLoadMessages" /* 4469 */;
-import closure_4 from "set" /* 5006 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5022 */;
+import closure_3 from "handleLoadMessages" /* 4470 */;
+import closure_4 from "set" /* 5019 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");

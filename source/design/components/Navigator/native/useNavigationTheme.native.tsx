@@ -1,10 +1,10 @@
-// Module ID: 6002
-// Function ID: 6003
+// Module ID: 6015
+// Function ID: 6016
 // Name: useNavigationTheme
-// Dependencies: [19, 4165, 712, 1363, 1501, 2]
+// Dependencies: [19, 4166, 712, 1363, 1501, 2]
 // Exports: useNavigationTheme
 
-// Module 6002 (useNavigationTheme)
+// Module 6015 (useNavigationTheme)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

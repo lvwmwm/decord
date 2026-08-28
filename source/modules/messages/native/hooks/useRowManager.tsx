@@ -1,10 +1,10 @@
-// Module ID: 11441
-// Function ID: 11442
+// Module ID: 11460
+// Function ID: 11461
 // Name: useRowManager
-// Dependencies: [9, 11442, 4376, 10829, 500, 10828, 2]
+// Dependencies: [9, 11461, 4377, 10847, 500, 10846, 2]
 // Exports: default
 
-// Module 11441 (useRowManager)
+// Module 11460 (useRowManager)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/hooks/useRowManager.tsx");

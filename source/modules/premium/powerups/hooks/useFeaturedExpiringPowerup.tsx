@@ -1,13 +1,13 @@
-// Module ID: 11985
-// Function ID: 11986
+// Module ID: 12004
+// Function ID: 12005
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 4352, 4331, 589, 11986, 7232, 2]
+// Dependencies: [19, 4353, 4332, 589, 12005, 7246, 2]
 // Exports: default
 
-// Module 11985 (useFeaturedExpiringPowerup)
+// Module 12004 (useFeaturedExpiringPowerup)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleGameServerInstanceCreated" /* 4352 */;
-import closure_4 from "calculateAppliedBoosts" /* 4331 */;
+import closure_3 from "handleGameServerInstanceCreated" /* 4353 */;
+import closure_4 from "calculateAppliedBoosts" /* 4332 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useFeaturedExpiringPowerup.tsx");

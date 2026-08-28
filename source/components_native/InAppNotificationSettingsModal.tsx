@@ -1,19 +1,19 @@
-// Module ID: 10143
-// Function ID: 10144
+// Module ID: 10161
+// Function ID: 10162
 // Name: ConnectedInAppNotificationSettingsScreen
-// Dependencies: [19, 1395, 1391, 4098, 4654, 1922, 676, 21, 5439, 5434, 4639, 8295, 1236, 10144, 6197, 589, 5447, 5960, 2]
+// Dependencies: [19, 1395, 1391, 4099, 4667, 1923, 676, 21, 5452, 5447, 4640, 8309, 1236, 10162, 6210, 589, 5460, 5973, 2]
 
-// Module 10143 (ConnectedInAppNotificationSettingsScreen)
+// Module 10161 (ConnectedInAppNotificationSettingsScreen)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import computeChannelName from "computeChannelName" /* 4639 */;
-import Form from "Form" /* 8295 */;
-import ChannelSettingsNotificationsGuardDefault from "ChannelSettingsNotificationsGuard" /* 10144 */;
+import computeChannelName from "computeChannelName" /* 4640 */;
+import Form from "Form" /* 8309 */;
+import ChannelSettingsNotificationsGuardDefault from "ChannelSettingsNotificationsGuard" /* 10162 */;
 import importAllResult from "noop" /* 19 */;
 import { isMultiUserDM } from "createChannelRecord" /* 1395 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "markAllUserIdListsStale" /* 4098 */;
-import closure_7 from "updateUserGuildSettingsInternal" /* 4654 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "markAllUserIdListsStale" /* 4099 */;
+import closure_7 from "updateUserGuildSettingsInternal" /* 4667 */;
+import closure_8 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -160,7 +160,7 @@ const memoResult = importAllResult.memo((channelId) => {
     obj[0] = obj;
     return obj;
   }, items);
-  return callback(channelId(5960).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return callback(channelId(5973).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });
 let result = require("set").fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

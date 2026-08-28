@@ -1,12 +1,12 @@
-// Module ID: 13659
-// Function ID: 13660
+// Module ID: 13678
+// Function ID: 13679
 // Name: WarningCircle
-// Dependencies: [19, 21, 8173, 2]
+// Dependencies: [19, 21, 8187, 2]
 // Exports: default
 
-// Module 13659 (WarningCircle)
+// Module 13678 (WarningCircle)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8173 */;
+import inlineStyles from "inlineStyles" /* 8187 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

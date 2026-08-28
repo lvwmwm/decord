@@ -1,16 +1,16 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17345
+// Function ID: 17346
 // Name: handleReferralMessages
-// Dependencies: [4113, 7129, 686, 11, 7903, 5438, 16914, 2]
+// Dependencies: [4114, 7142, 686, 11, 7917, 5451, 16932, 2]
 
-// Module 17327 (handleReferralMessages)
+// Module 17345 (handleReferralMessages)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import set from "set" /* 686 */;
-import initializeDefault from "initialize" /* 5438 */;
-import getPaymentGateway from "getPaymentGateway" /* 7903 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16914 */;
-import closure_3 from "reset" /* 4113 */;
-import closure_4 from "emitChanges" /* 7129 */;
+import initializeDefault from "initialize" /* 5451 */;
+import getPaymentGateway from "getPaymentGateway" /* 7917 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16932 */;
+import closure_3 from "reset" /* 4114 */;
+import closure_4 from "emitChanges" /* 7142 */;
 
 require = arg1;
 function handleReferralMessages(type) {

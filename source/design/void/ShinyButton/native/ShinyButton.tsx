@@ -1,16 +1,16 @@
-// Module ID: 13642
-// Function ID: 13643
+// Module ID: 13661
+// Function ID: 13662
 // Name: ShinyButton
-// Dependencies: [32, 19, 17, 4437, 21, 4445, 589, 4185, 4446, 1300, 2]
+// Dependencies: [32, 19, 17, 4438, 21, 4446, 589, 4186, 4447, 1300, 2]
 // Exports: default
 
-// Module 13642 (ShinyButton)
+// Module 13661 (ShinyButton)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { AppState } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 let items = [{ rotate: "30deg" }];

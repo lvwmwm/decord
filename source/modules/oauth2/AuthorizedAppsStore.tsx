@@ -1,16 +1,16 @@
-// Module ID: 5427
-// Function ID: 5428
+// Module ID: 5440
+// Function ID: 5441
 // Name: recomputeFromAppTokens
-// Dependencies: [32, 1391, 5428, 4688, 1370, 589, 709, 2]
+// Dependencies: [32, 1391, 5441, 4701, 1370, 589, 709, 2]
 
-// Module 5427 (recomputeFromAppTokens)
+// Module 5440 (recomputeFromAppTokens)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "isConnected" /* 5428 */;
-import closure_5 from "reinjectEphemerals" /* 4688 */;
+import closure_4 from "isConnected" /* 5441 */;
+import closure_5 from "reinjectEphemerals" /* 4701 */;
 
 require = arg1;
 function recomputeFromAppTokens() {

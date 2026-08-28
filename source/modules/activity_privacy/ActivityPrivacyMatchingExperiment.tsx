@@ -1,12 +1,12 @@
-// Module ID: 15286
-// Function ID: 15287
+// Module ID: 15438
+// Function ID: 15439
 // Name: useIsInActivityPrivacyCopyExperiment
-// Dependencies: [1472, 12422, 2]
+// Dependencies: [1472, 12442, 2]
 // Exports: getIsInActivityPrivacyUpsellExperiment, useIsInActivityPrivacyCopyExperiment
 
-// Module 15286 (useIsInActivityPrivacyCopyExperiment)
+// Module 15438 (useIsInActivityPrivacyCopyExperiment)
 import set from "set" /* 2 */;
-import apexExperiment from "apexExperiment" /* 12422 */;
+import apexExperiment from "apexExperiment" /* 12442 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 
 let closure_2 = ApexExperiment.createApexExperiment({ name: "2026-02-activity-privacy-matching", kind: "user", defaultConfig: { copyChanges: false, upsell: false }, variations: { 0: { copyChanges: false, upsell: false }, 1: { copyChanges: true, upsell: false }, 2: { copyChanges: true, upsell: true } } });

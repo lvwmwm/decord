@@ -1,13 +1,13 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14804
+// Function ID: 14805
 // Name: SynchronizeIcon
-// Dependencies: [19, 21, 8173, 2]
+// Dependencies: [19, 21, 8187, 2]
 // Exports: default
 
-// Module 14819 (SynchronizeIcon)
+// Module 14804 (SynchronizeIcon)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8173 */;
-import inlineStylesDefault from "inlineStyles" /* 8173 */;
+import inlineStyles from "inlineStyles" /* 8187 */;
+import inlineStylesDefault from "inlineStyles" /* 8187 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

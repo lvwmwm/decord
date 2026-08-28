@@ -1,14 +1,14 @@
-// Module ID: 17330
-// Function ID: 17331
+// Module ID: 17348
+// Function ID: 17349
 // Name: AVErrorNoAudioInputDetectedDefinition
-// Dependencies: [1391, 4496, 4519, 676, 9486, 17331, 2]
+// Dependencies: [1391, 4497, 4520, 676, 9504, 17349, 2]
 
-// Module 17330 (AVErrorNoAudioInputDetectedDefinition)
-import mapped from "mapped" /* 9486 */;
-import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17331 */;
+// Module 17348 (AVErrorNoAudioInputDetectedDefinition)
+import mapped from "mapped" /* 9504 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17349 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_4 from "createRTCConnection" /* 4519 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_4 from "createRTCConnection" /* 4520 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

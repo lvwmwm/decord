@@ -1,17 +1,17 @@
-// Module ID: 4267
-// Function ID: 4268
+// Module ID: 4268
+// Function ID: 4269
 // Name: handleConnectionOpen
-// Dependencies: [4268, 1218, 4271, 1910, 676, 1222, 589, 4272, 4285, 709, 2]
+// Dependencies: [4269, 1218, 4272, 1910, 676, 1222, 589, 4273, 4286, 709, 2]
 
-// Module 4267 (handleConnectionOpen)
+// Module 4268 (handleConnectionOpen)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import transitionTo from "transitionTo" /* 1222 */;
-import matchPath from "matchPath" /* 4272 */;
-import RouteParam2 from "RouteParam" /* 4285 */;
-import closure_2 from "handleGatewayJoinRequestUpdate" /* 4268 */;
+import matchPath from "matchPath" /* 4273 */;
+import RouteParam2 from "RouteParam" /* 4286 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4269 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "initialize" /* 4271 */;
+import closure_4 from "initialize" /* 4272 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
 import ME from "ME" /* 676 */;
 

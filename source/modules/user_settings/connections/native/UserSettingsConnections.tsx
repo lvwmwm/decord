@@ -1,24 +1,24 @@
-// Module ID: 14513
-// Function ID: 14514
+// Module ID: 14497
+// Function ID: 14498
 // Name: ADD_CONNECTIONS_SHEET_SENTINEL
-// Dependencies: [19, 17, 5427, 1218, 5177, 1996, 676, 21, 4445, 712, 4380, 589, 12428, 5913, 5302, 4412, 14512, 2009, 9220, 14514, 8295, 4878, 14517, 14518, 2]
+// Dependencies: [19, 17, 5440, 1218, 5190, 1997, 676, 21, 4446, 712, 4381, 589, 12448, 5926, 5315, 4413, 14496, 2010, 9238, 14498, 8309, 4891, 14501, 14502, 2]
 // Exports: UserSettingsConnections
 
-// Module 14513 (ADD_CONNECTIONS_SHEET_SENTINEL)
+// Module 14497 (ADD_CONNECTIONS_SHEET_SENTINEL)
 import ThemesDefault from "Themes" /* 712 */;
-import useThemeDefault from "useTheme" /* 4380 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12428 */;
-import EmptyStateCardDefault from "EmptyStateCard" /* 14514 */;
+import useThemeDefault from "useTheme" /* 4381 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 12448 */;
+import EmptyStateCardDefault from "EmptyStateCard" /* 14498 */;
 import closure_3 from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "recomputeFromAppTokens" /* 5427 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5427 */;
+import closure_5 from "recomputeFromAppTokens" /* 5440 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5440 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
-import closure_8 from "set" /* 5177 */;
-import closure_9 from "_getSystemLocale" /* 1996 */;
+import closure_8 from "set" /* 5190 */;
+import closure_9 from "_getSystemLocale" /* 1997 */;
 import { AnalyticsLocations } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ jsx: unpackModuleId, jsxs: closure_12 } = jsxProd);
@@ -95,8 +95,8 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
         accounts.map((account) => closure_1_11(callback(paths[23]), { theme: callback, locale: paths, account }, account.id))
       ];
       obj[1] = items5;
-      obj[1] = callback2(tmp4(4878).Stack, obj);
-      tmp14 = callback(tmp4(8295).Form, obj);
+      obj[1] = callback2(tmp4(4891).Stack, obj);
+      tmp14 = callback(tmp4(8309).Form, obj);
     }
     return tmp14;
   }

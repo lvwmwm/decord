@@ -1,10 +1,10 @@
-// Module ID: 5047
-// Function ID: 5048
+// Module ID: 5060
+// Function ID: 5061
 // Name: isActionPickSupported
 // Dependencies: [1625, 2]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported
 
-// Module 5047 (isActionPickSupported)
+// Module 5060 (isActionPickSupported)
 import set from "set" /* 2 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
 

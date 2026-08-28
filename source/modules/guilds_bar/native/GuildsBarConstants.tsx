@@ -1,13 +1,13 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15806
+// Function ID: 15807
 // Name: GUILD_ITEM_SIZE
-// Dependencies: [4165, 712, 2]
+// Dependencies: [4166, 712, 2]
 // Exports: useGuildWrapperSize
 
-// Module 15788 (GUILD_ITEM_SIZE)
+// Module 15806 (GUILD_ITEM_SIZE)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4165 */;
+import map from "map" /* 4166 */;
 
 const result = set.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
 

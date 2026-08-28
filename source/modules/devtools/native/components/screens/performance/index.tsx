@@ -1,17 +1,17 @@
-// Module ID: 15419
-// Function ID: 15420
+// Module ID: 15261
+// Function ID: 15262
 // Name: FRAME_BUDGET_MS
-// Dependencies: [2, 15420, 15421, 15422, 15423, 15424, 15425, 15426, 15427]
+// Dependencies: [2, 15262, 15263, 15264, 15265, 15266, 15267, 15268, 15269]
 
-// Module 15419 (FRAME_BUDGET_MS)
+// Module 15261 (FRAME_BUDGET_MS)
 import set from "set" /* 2 */;
-import FRAME_BUDGET_MS from "FRAME_BUDGET_MS" /* 15421 */;
-import useMountTimerDefault from "useMountTimer" /* 15422 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 15423 */;
-import useBenchmarkResultsDefault from "useBenchmarkResults" /* 15424 */;
-import BenchmarkResultsListDefault from "BenchmarkResultsList" /* 15425 */;
-import ScrollBenchmarkDefault from "ScrollBenchmark" /* 15426 */;
-import MountMeasureDefault from "MountMeasure" /* 15427 */;
+import FRAME_BUDGET_MS from "FRAME_BUDGET_MS" /* 15263 */;
+import useMountTimerDefault from "useMountTimer" /* 15264 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 15265 */;
+import useBenchmarkResultsDefault from "useBenchmarkResults" /* 15266 */;
+import BenchmarkResultsListDefault from "BenchmarkResultsList" /* 15267 */;
+import ScrollBenchmarkDefault from "ScrollBenchmark" /* 15268 */;
+import MountMeasureDefault from "MountMeasure" /* 15269 */;
 
 const result = set.fileFinishedImporting("modules/devtools/native/components/screens/performance/index.tsx");
 for (const key10018 in require("set")) {

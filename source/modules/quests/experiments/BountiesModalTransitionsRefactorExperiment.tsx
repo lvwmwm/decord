@@ -1,10 +1,10 @@
-// Module ID: 14561
-// Function ID: 14562
+// Module ID: 14545
+// Function ID: 14546
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useIsBountiesModalTransitionsRefactorEnabled
 
-// Module 14561 (apexExperiment)
+// Module 14545 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

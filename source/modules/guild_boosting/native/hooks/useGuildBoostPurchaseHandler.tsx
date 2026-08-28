@@ -1,10 +1,10 @@
-// Module ID: 12017
-// Function ID: 12018
+// Module ID: 12036
+// Function ID: 12037
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 676, 3, 7083, 10375, 7082, 698, 4810, 1236, 5329, 2]
+// Dependencies: [5, 19, 676, 3, 7096, 10393, 7095, 698, 4823, 1236, 5342, 2]
 // Exports: default
 
-// Module 12017 (useGuildBoostPurchaseHandler)
+// Module 12036 (useGuildBoostPurchaseHandler)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
@@ -17,7 +17,7 @@ let result = require("set").fileFinishedImporting("modules/guild_boosting/native
 
 export default function useGuildBoostPurchaseHandler(arg0) {
   let _require = arg0;
-  let obj = _require(7083);
+  let obj = _require(7096);
   _require = undefined;
   const result = obj.isMobileWebRedirectCheckoutEnabled();
   _require = callback((arg0, arg1) => {

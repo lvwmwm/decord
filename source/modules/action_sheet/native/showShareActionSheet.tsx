@@ -1,14 +1,14 @@
-// Module ID: 8563
-// Function ID: 8564
+// Module ID: 8578
+// Function ID: 8579
 // Name: showShareActionSheet
-// Dependencies: [17, 501, 8564, 8565, 8568, 1208, 2]
+// Dependencies: [17, 501, 8579, 8580, 8583, 1208, 2]
 // Exports: showShareActionSheet
 
-// Module 8563 (showShareActionSheet)
+// Module 8578 (showShareActionSheet)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 8564 */;
-import trackAppClickInNativeShareSheet from "trackAppClickInNativeShareSheet" /* 8565 */;
+import enforcingDefault from "enforcing" /* 8579 */;
+import trackAppClickInNativeShareSheet from "trackAppClickInNativeShareSheet" /* 8580 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 
 if (PlatformTypes.isAndroid()) {

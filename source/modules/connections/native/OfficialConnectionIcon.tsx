@@ -1,20 +1,20 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11099
+// Function ID: 11100
 // Name: OfficialConnectionIcon
-// Dependencies: [19, 17, 676, 21, 4445, 5929, 712, 688, 1297, 11082, 11083, 2]
+// Dependencies: [19, 17, 676, 21, 4446, 5942, 712, 688, 1297, 11100, 11101, 2]
 // Exports: default
 
-// Module 11081 (OfficialConnectionIcon)
+// Module 11099 (OfficialConnectionIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import useRoleIcon from "useRoleIcon" /* 5929 */;
-import registerAssetDefault from "registerAsset" /* 11082 */;
-import registerAssetDefault2 from "registerAsset" /* 11083 */;
+import useRoleIcon from "useRoleIcon" /* 5942 */;
+import registerAssetDefault from "registerAsset" /* 11100 */;
+import registerAssetDefault2 from "registerAsset" /* 11101 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;

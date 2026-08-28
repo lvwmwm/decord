@@ -1,10 +1,10 @@
-// Module ID: 7268
-// Function ID: 7269
+// Module ID: 7282
+// Function ID: 7283
 // Name: CollectiblesShopPerfCheckpoint
 // Dependencies: [676, 698, 2]
 // Exports: trackShopPerf
 
-// Module 7268 (CollectiblesShopPerfCheckpoint)
+// Module 7282 (CollectiblesShopPerfCheckpoint)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

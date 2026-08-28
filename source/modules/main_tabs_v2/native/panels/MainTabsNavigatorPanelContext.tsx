@@ -1,12 +1,12 @@
-// Module ID: 15514
-// Function ID: 15515
+// Module ID: 15532
+// Function ID: 15533
 // Name: context
-// Dependencies: [19, 5604, 7730, 2]
+// Dependencies: [19, 5617, 7744, 2]
 
-// Module 15514 (context)
+// Module 15532 (context)
 import importAllResult from "noop" /* 19 */;
-import { Gesture } from "LegacyBaseButton" /* 5604 */;
-import createFakeSharedValue from "createFakeSharedValue" /* 7730 */;
+import { Gesture } from "LegacyBaseButton" /* 5617 */;
+import createFakeSharedValue from "createFakeSharedValue" /* 7744 */;
 
 const obj = { gesture: null, disallowGesture: null, translateX: null };
 obj[0] = Gesture.Pan();

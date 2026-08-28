@@ -1,10 +1,10 @@
-// Module ID: 5162
-// Function ID: 5163
+// Module ID: 5175
+// Function ID: 5176
 // Name: _preConvertHeicForUpload
-// Dependencies: [5, 3, 5067, 4072, 2]
+// Dependencies: [5, 3, 5080, 4073, 2]
 // Exports: preConvertHeicForUpload
 
-// Module 5162 (_preConvertHeicForUpload)
+// Module 5175 (_preConvertHeicForUpload)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -59,7 +59,7 @@ function _preConvertHeicForUpload() {
                 obj2[0] = tmp35;
                 return obj2;
               }
-              obj8 = lib(5067);
+              obj8 = lib(5080);
               tmp36 = closure_1;
               tmp37 = dependencyMap;
             }
@@ -79,7 +79,7 @@ function _preConvertHeicForUpload() {
               }
               const _File = File;
               const items = [closure_1.convertedBlob];
-              obj = lib(5067);
+              obj = lib(5080);
               const obj4 = { type: "image/jpeg", lastModified: null };
               obj4[1] = lib.lastModified;
               const file = new File(items, obj.renameToJpegExtension(lib.name), obj4);
@@ -183,7 +183,7 @@ function _maybeConvertHeicToJpeg() {
               if (obj17.isHeicFile(lib)) {
                 const _performance = performance;
                 closure_3 = performance.now();
-                const tmp41 = num17(4072);
+                const tmp41 = num17(4073);
                 let sysimg;
                 if (tmp41 != null) {
                   sysimg = tmp41.sysimg;
@@ -206,7 +206,7 @@ function _maybeConvertHeicToJpeg() {
                 c8 = 3;
                 return { value: null, done: true };
               }
-              obj17 = lib(5067);
+              obj17 = lib(5080);
             }
           } else if (2 === tmp7) {
             if (arg0 === 1) {

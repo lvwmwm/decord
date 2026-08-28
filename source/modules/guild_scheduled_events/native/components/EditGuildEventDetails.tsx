@@ -1,16 +1,16 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9676
+// Function ID: 9677
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 7204, 1397, 21, 4445, 1236, 4043, 9555, 1500, 4441, 4880, 1892, 9595, 1351, 9599, 9647, 9601, 2]
+// Dependencies: [32, 19, 7218, 1397, 21, 4446, 1236, 4044, 9573, 1500, 4442, 4893, 1892, 9613, 1351, 9617, 9665, 9619, 2]
 // Exports: default
 
-// Module 9658 (EditGuildEventDetails)
+// Module 9676 (EditGuildEventDetails)
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { isGuildScheduledEventActive as closure_6 } from "scheduledEventSort" /* 7204 */;
+import { isGuildScheduledEventActive as closure_6 } from "scheduledEventSort" /* 7218 */;
 import { GuildScheduledEventEntityTypes as closure_7 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);

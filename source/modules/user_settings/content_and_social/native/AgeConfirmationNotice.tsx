@@ -1,14 +1,14 @@
-// Module ID: 14373
-// Function ID: 14374
+// Module ID: 14357
+// Function ID: 14358
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 8601, 21, 6098, 14303, 4158, 1995, 8613, 8615, 712, 1297, 4880, 1236, 4441, 2]
+// Dependencies: [19, 17, 8616, 21, 6111, 14272, 4159, 1996, 8628, 8630, 712, 1297, 4893, 1236, 4442, 2]
 // Exports: default
 
-// Module 14373 (AgeConfirmationNotice)
+// Module 14357 (AgeConfirmationNotice)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import SafetyToastType from "SafetyToastType" /* 8601 */;
+import SafetyToastType from "SafetyToastType" /* 8616 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,10 +16,10 @@ const require = arg1;
 let result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/native/AgeConfirmationNotice.tsx");
 
 export default function AgeConfirmationNotice() {
-  let obj = sensitiveContentFilterHelpArticle(6098);
+  let obj = sensitiveContentFilterHelpArticle(6111);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = React.useEffect(() => {
-    const result = sensitiveContentFilterHelpArticle(14303).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
+    const result = sensitiveContentFilterHelpArticle(14272).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.VIEWED);
   }, []);
   const items = [sensitiveContentFilterHelpArticle];
   importDefault = React.useCallback(() => {
@@ -31,10 +31,10 @@ export default function AgeConfirmationNotice() {
   obj = { style: null, children: null };
   obj = { marginBottom: null };
   const callback = React.useCallback(() => {
-    let obj = callback(8613);
-    obj = { entryPoint: sensitiveContentFilterHelpArticle(8615).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+    let obj = callback(8628);
+    obj = { entryPoint: sensitiveContentFilterHelpArticle(8630).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
     const result = obj.showAgeVerificationGetStartedModal(obj);
-    const result1 = sensitiveContentFilterHelpArticle(14303).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
+    const result1 = sensitiveContentFilterHelpArticle(14272).trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
   obj[0] = ThemesDefault.space.PX_8;
   obj[0] = obj;
@@ -43,7 +43,7 @@ export default function AgeConfirmationNotice() {
   const intl = sensitiveContentFilterHelpArticle(1236).intl;
   obj2[2] = intl.string(sensitiveContentFilterHelpArticle(1236).t.FDSSia);
   obj2[3] = callback;
-  obj1[2] = jsx(sensitiveContentFilterHelpArticle(4880).Button, { variant: "secondary", size: "sm", text: null, onPress: null });
+  obj1[2] = jsx(sensitiveContentFilterHelpArticle(4893).Button, { variant: "secondary", size: "sm", text: null, onPress: null });
   const intl2 = sensitiveContentFilterHelpArticle(1236).intl;
   obj1[3] = intl2.format(sensitiveContentFilterHelpArticle(1236).t.mFgsfg, {
     hook(children) {

@@ -1,10 +1,10 @@
-// Module ID: 6048
-// Function ID: 6049
+// Module ID: 6061
+// Function ID: 6062
 // Name: isVibegrationsGuildEnabled
 // Dependencies: [1910, 676, 1472, 589, 2]
 // Exports: useHasVibegrationsGuild, useIsVibegrationsGuildEnabled
 
-// Module 6048 (isVibegrationsGuildEnabled)
+// Module 6061 (isVibegrationsGuildEnabled)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;

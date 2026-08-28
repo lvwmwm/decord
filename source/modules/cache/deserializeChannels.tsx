@@ -1,10 +1,10 @@
-// Module ID: 1978
-// Function ID: 1979
+// Module ID: 1979
+// Function ID: 1980
 // Name: deserializeChannels
 // Dependencies: [32, 506, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
-// Module 1978 (deserializeChannels)
+// Module 1979 (deserializeChannels)
 import fromStringAll from "fromString" /* 506 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 

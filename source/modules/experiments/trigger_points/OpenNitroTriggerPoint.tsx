@@ -1,12 +1,12 @@
-// Module ID: 12986
-// Function ID: 12987
+// Module ID: 13005
+// Function ID: 13006
 // Name: commonTriggerPointConfiguration
-// Dependencies: [4359, 10406, 2]
+// Dependencies: [4360, 10521, 2]
 
-// Module 12986 (commonTriggerPointConfiguration)
+// Module 13005 (commonTriggerPointConfiguration)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4359 */;
-import registeredExperimentIds from "registeredExperimentIds" /* 10406 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4360 */;
+import registeredExperimentIds from "registeredExperimentIds" /* 10521 */;
 
 const commonTriggerPointConfiguration = new registeredExperimentIds.CommonTriggerPointConfiguration([], ExperimentBuckets.CommonTriggerPoints.OPEN_NITRO, { location: "open nitro tab/settings" });
 const result = set.fileFinishedImporting("modules/experiments/trigger_points/OpenNitroTriggerPoint.tsx");

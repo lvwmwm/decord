@@ -1,15 +1,15 @@
-// Module ID: 9229
-// Function ID: 9230
+// Module ID: 9247
+// Function ID: 9248
 // Name: XboxLinkPreConnect
-// Dependencies: [19, 9223, 676, 21, 4445, 1500, 9230, 9231, 1236, 2]
+// Dependencies: [19, 9241, 676, 21, 4446, 1500, 9248, 9249, 1236, 2]
 // Exports: default
 
-// Module 9229 (XboxLinkPreConnect)
+// Module 9247 (XboxLinkPreConnect)
 import closure_3 from "noop" /* 19 */;
-import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9223 */;
+import { XboxLinkModalScenes } from "XboxLinkModalScenes" /* 9241 */;
 import { PlatformTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 let closure_7 = createCacheKey.createStyles({ image: { width: 231, height: 160 } });
@@ -32,5 +32,5 @@ export default function XboxLinkPreConnect() {
   obj[5] = intl.string(navigation(1236).t["e/z3na"]);
   const intl2 = navigation(1236).intl;
   obj[6] = intl2.string(navigation(1236).t["7tXu0i"]);
-  return jsx(navigation(9231).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
+  return jsx(navigation(9249).TwoWayLinkPreConnect, { platformType: PlatformTypes.XBOX, onError: callback1, onNext: callback, img: memo, imgStyle: callback().image, title: null, body: null });
 };

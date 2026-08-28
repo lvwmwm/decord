@@ -1,19 +1,19 @@
-// Module ID: 15811
-// Function ID: 15812
-// Dependencies: [19, 4267, 676, 21, 15812, 1367, 15798, 589, 15800, 712, 1236, 15813, 4972, 2]
+// Module ID: 15829
+// Function ID: 15830
+// Dependencies: [19, 4268, 676, 21, 15830, 1367, 15816, 589, 15818, 712, 1236, 15831, 4985, 2]
 
-// Module 15811
+// Module 15829
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import ChatIcon from "ChatIcon" /* 4972 */;
-import UnreadIndicator from "UnreadIndicator" /* 15798 */;
-import UnreadIndicatorDefault from "UnreadIndicator" /* 15798 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 15800 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 15812 */;
-import HomeDrawerDMsRowDefault from "HomeDrawerDMsRow" /* 15813 */;
-import closure_3 from "handleConnectionOpen" /* 4267 */;
+import ChatIcon from "ChatIcon" /* 4985 */;
+import UnreadIndicator from "UnreadIndicator" /* 15816 */;
+import UnreadIndicatorDefault from "UnreadIndicator" /* 15816 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 15818 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 15830 */;
+import HomeDrawerDMsRowDefault from "HomeDrawerDMsRow" /* 15831 */;
+import closure_3 from "handleConnectionOpen" /* 4268 */;
 import { ME } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

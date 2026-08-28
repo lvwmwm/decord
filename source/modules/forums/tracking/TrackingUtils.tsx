@@ -1,24 +1,24 @@
-// Module ID: 7446
-// Function ID: 7447
+// Module ID: 7460
+// Function ID: 7461
 // Name: collectForumAnalyticsMetadata
-// Dependencies: [5401, 4091, 7447, 6103, 1391, 4807, 4089, 4806, 6076, 676, 1398, 1235, 7448, 1400, 7449, 11, 7450, 2]
+// Dependencies: [5414, 4092, 7461, 6116, 1391, 4820, 4090, 4819, 6089, 676, 1398, 1235, 7462, 1400, 7463, 11, 7464, 2]
 // Exports: collectForumPostAnalyticsMetadata, convertSortOrderToReadableString, getForumChannelSessionId, getForumPostAttachmentMimetypes, getForumPostDraftAppliedTagIds, getForumPostDraftNumAttachments, getNumActiveThreads
 
-// Module 7446 (collectForumAnalyticsMetadata)
+// Module 7460 (collectForumAnalyticsMetadata)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import set2 from "set" /* 1400 */;
-import getForumChannelSessionIdDefault from "getForumChannelSessionId" /* 7448 */;
-import setFilterTagIdsDefault from "setFilterTagIds" /* 7449 */;
-import closure_3 from "handleThreadCreateOrUpdate" /* 5401 */;
-import closure_4 from "storeThread" /* 4091 */;
-import closure_5 from "updateFromGuild" /* 7447 */;
-import closure_6 from "updateState" /* 6103 */;
+import getForumChannelSessionIdDefault from "getForumChannelSessionId" /* 7462 */;
+import setFilterTagIdsDefault from "setFilterTagIds" /* 7463 */;
+import closure_3 from "handleThreadCreateOrUpdate" /* 5414 */;
+import closure_4 from "storeThread" /* 4092 */;
+import closure_5 from "updateFromGuild" /* 7461 */;
+import closure_6 from "updateState" /* 6116 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "handleChanged" /* 4807 */;
-import { DraftType } from "handleChanged" /* 4807 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_11 from "map" /* 4806 */;
-import closure_12 from "handleLoadThreadsSuccess" /* 6076 */;
+import closure_8 from "handleChanged" /* 4820 */;
+import { DraftType } from "handleChanged" /* 4820 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_11 from "map" /* 4819 */;
+import closure_12 from "handleLoadThreadsSuccess" /* 6089 */;
 import { Permissions } from "ME" /* 676 */;
 import { ChannelFlags } from "set" /* 1398 */;
 import { ThreadSortOrderReadableForAnalytics as closure_15 } from "AbortCodes" /* 1235 */;
@@ -65,11 +65,11 @@ function collectForumAnalyticsMetadata(sessionId) {
       const obj3 = setFilterTagIdsDefault;
       obj[7] = setFilterTagIdsDefault.getSortOrderAnalytics(channel.id);
       if (sessionId == null) {
-        let tmp8Result = tmp8(7448);
+        let tmp8Result = tmp8(7462);
         sessionId = tmp8Result.getForumChannelSessionId(channel.id);
       }
       obj[8] = sessionId;
-      tmp8Result = tmp8(7449);
+      tmp8Result = tmp8(7463);
       obj[9] = tmp8Result.getLayoutAnalytics(channel.id);
       obj[10] = channel.defaultSortOrder;
       const obj4 = setFilterTagIdsDefault;
@@ -251,14 +251,14 @@ export const collectForumPostAnalyticsMetadata = function collectForumPostAnalyt
           }
           obj.forum_post_applied_tag_ids = items;
           obj.forum_post_is_pinned = channel.hasFlag(ChannelFlags.PINNED);
-          let tmp8Result = tmp8(7450);
+          let tmp8Result = tmp8(7464);
           const readStateSnapshotAnalytics = tmp8Result.getReadStateSnapshotAnalytics(channel.id);
           let isNew;
           if (readStateSnapshotAnalytics != null) {
             isNew = readStateSnapshotAnalytics.isNew;
           }
           obj.forum_post_is_new = isNew;
-          tmp8Result = tmp8(7450);
+          tmp8Result = tmp8(7464);
           const readStateSnapshotAnalytics1 = tmp8Result.getReadStateSnapshotAnalytics(channel.id);
           let hasUnreads;
           if (readStateSnapshotAnalytics1 != null) {

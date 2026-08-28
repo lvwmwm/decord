@@ -1,12 +1,12 @@
-// Module ID: 12820
-// Function ID: 12821
+// Module ID: 12839
+// Function ID: 12840
 // Name: transformStickers
-// Dependencies: [4805, 7840, 7793, 1236, 2]
+// Dependencies: [4818, 7854, 7807, 1236, 2]
 // Exports: default
 
-// Module 12820 (transformStickers)
+// Module 12839 (transformStickers)
 import set from "set" /* 2 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4805 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4818 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/transformStickers.tsx");
 

@@ -1,20 +1,20 @@
-// Module ID: 13125
-// Function ID: 13126
+// Module ID: 13144
+// Function ID: 13145
 // Name: GiftingSectionTitle
-// Dependencies: [32, 19, 17, 8492, 7076, 676, 1924, 21, 4445, 712, 1367, 5944, 4441, 7092, 1500, 1629, 589, 12, 4705, 7096, 13039, 10438, 8489, 12992, 709, 7077, 7098, 8495, 7695, 6194, 8149, 13126, 1236, 13127, 13133, 13137, 13140, 13142, 8414, 7699, 2465, 13143, 6000, 2]
+// Dependencies: [32, 19, 17, 8506, 7089, 676, 1925, 21, 4446, 712, 1367, 5957, 4442, 7105, 1500, 1629, 589, 12, 4718, 7109, 13058, 10454, 8503, 13011, 709, 7090, 7111, 8509, 7709, 6207, 8163, 13145, 1236, 13146, 13152, 13156, 13159, 13161, 8428, 7713, 2466, 13162, 6013, 2]
 
-// Module 13125 (GiftingSectionTitle)
+// Module 13144 (GiftingSectionTitle)
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "initialize" /* 8492 */;
-import closure_9 from "addEntitlement" /* 7076 */;
+import closure_8 from "initialize" /* 8506 */;
+import closure_9 from "addEntitlement" /* 7089 */;
 import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function GiftingSectionTitle(title) {
@@ -22,12 +22,12 @@ function GiftingSectionTitle(title) {
   if (useIsMobileVisualRefreshExperimentEnabledDefault("UserSettingsPremiumGifting")) {
     let obj = { title: null };
     obj[0] = title;
-    let tmp3Result = tmp3(tmp4(5944).TableRowGroupTitle, obj);
+    let tmp3Result = tmp3(tmp4(5957).TableRowGroupTitle, obj);
   } else {
     obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", color: "text-default", children: null };
     obj[0] = tmp.title;
     obj[4] = title;
-    tmp3Result = tmp3(tmp4(4441).Text, obj);
+    tmp3Result = tmp3(tmp4(4442).Text, obj);
   }
   return tmp3Result;
 }

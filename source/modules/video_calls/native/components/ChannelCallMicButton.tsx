@@ -1,14 +1,14 @@
-// Module ID: 10005
-// Function ID: 10006
+// Module ID: 10023
+// Function ID: 10024
 // Name: ChannelCallMicButton
-// Dependencies: [19, 4462, 21, 6141, 589, 10006, 10007, 9466, 1236, 10010, 10011, 712, 2]
+// Dependencies: [19, 4463, 21, 6154, 589, 10024, 10025, 9484, 1236, 10028, 10029, 712, 2]
 // Exports: ChannelCallMicButton
 
-// Module 10005 (ChannelCallMicButton)
-import getMuteStatesDefault from "getMuteStates" /* 6141 */;
-import ActionButtonAll from "ActionButton" /* 9466 */;
+// Module 10023 (ChannelCallMicButton)
+import getMuteStatesDefault from "getMuteStates" /* 6154 */;
+import ActionButtonAll from "ActionButton" /* 9484 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "set" /* 4462 */;
+import closure_5 from "set" /* 4463 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -25,7 +25,7 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
   const tmp3 = getMuteStatesDefault(channel);
-  const muteHandler = mute(10006).createMuteHandler(tmp3, stateFromStores);
+  const muteHandler = mute(10024).createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
   const memo = React.useMemo(() => closure_1_6(mute(closure_1_3[6]).VoicePanelRiveMicButton, { muted: mute }), items1);
@@ -33,7 +33,7 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
   const intl = mute(1236).intl;
   obj[1] = intl.string(mute(1236).t.B3zz0G);
   obj[2] = muteHandler.onPress;
-  obj[3] = importDefault(mute ? 10010 : 10011);
+  obj[3] = importDefault(mute ? 10028 : 10029);
   if (!flag) {
     flag = mute;
   }

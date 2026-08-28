@@ -1,11 +1,11 @@
-// Module ID: 7729
-// Function ID: 7730
+// Module ID: 7743
+// Function ID: 7744
 // Name: set
-// Dependencies: [2, 4186]
+// Dependencies: [2, 4187]
 
-// Module 7729 (set)
+// Module 7743 (set)
 import set from "set" /* 2 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4186 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4187 */;
 
 const result = set.fileFinishedImporting("modules/core/native/ReanimatedNativeView.tsx");
 

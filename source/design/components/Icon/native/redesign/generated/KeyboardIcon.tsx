@@ -1,14 +1,14 @@
-// Module ID: 10804
-// Function ID: 10805
+// Module ID: 10822
+// Function ID: 10823
 // Name: KeyboardIcon
-// Dependencies: [19, 21, 712, 4164, 10805, 2]
+// Dependencies: [19, 21, 712, 4165, 10823, 2]
 // Exports: KeyboardIcon
 
-// Module 10804 (KeyboardIcon)
+// Module 10822 (KeyboardIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 10805 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 10823 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 12678
-// Function ID: 12679
+// Module ID: 12697
+// Function ID: 12698
 // Name: handleFeaturedOrDeveloperFetchSuccess
 // Dependencies: [12, 589, 709, 2]
 
-// Module 12678 (handleFeaturedOrDeveloperFetchSuccess)
+// Module 12697 (handleFeaturedOrDeveloperFetchSuccess)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

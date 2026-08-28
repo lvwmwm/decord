@@ -1,14 +1,14 @@
-// Module ID: 9351
-// Function ID: 9352
+// Module ID: 9369
+// Function ID: 9370
 // Name: getChannelIconURL
-// Dependencies: [32, 1922, 676, 1370, 1435, 2]
+// Dependencies: [32, 1923, 676, 1370, 1435, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 9351 (getChannelIconURL)
+// Module 9369 (getChannelIconURL)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 import { ChannelTypes } from "ME" /* 676 */;
 
 require = arg1;

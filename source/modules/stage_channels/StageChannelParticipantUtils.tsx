@@ -1,12 +1,12 @@
-// Module ID: 9934
-// Function ID: 9935
+// Module ID: 9952
+// Function ID: 9953
 // Name: participantMemberInfo
-// Dependencies: [687, 4289, 1236, 2]
+// Dependencies: [687, 4290, 1236, 2]
 // Exports: participantMemberInfo
 
-// Module 9934 (participantMemberInfo)
+// Module 9952 (participantMemberInfo)
 import setDefault from "set" /* 687 */;
-import nameFromUser from "nameFromUser" /* 4289 */;
+import nameFromUser from "nameFromUser" /* 4290 */;
 
 require = arg1;
 const DAY = setDefault.Millis.DAY;

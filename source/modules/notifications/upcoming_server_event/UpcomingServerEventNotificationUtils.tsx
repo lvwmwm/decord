@@ -1,15 +1,15 @@
-// Module ID: 15058
-// Function ID: 15059
+// Module ID: 15044
+// Function ID: 15045
 // Name: onUpcomingServerEventNotificationSettingsChanged
-// Dependencies: [4101, 676, 4134, 698, 2]
+// Dependencies: [4102, 676, 4135, 698, 2]
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 15058 (onUpcomingServerEventNotificationSettingsChanged)
+// Module 15044 (onUpcomingServerEventNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4101 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4102 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
 
 let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
 const AnalyticEvents = ME.AnalyticEvents;

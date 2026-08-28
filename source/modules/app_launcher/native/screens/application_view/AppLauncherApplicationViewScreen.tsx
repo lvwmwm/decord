@@ -1,17 +1,17 @@
-// Module ID: 11616
-// Function ID: 11617
+// Module ID: 11635
+// Function ID: 11636
 // Name: AppLauncherApplicationViewScreenInner
-// Dependencies: [19, 17, 8078, 1499, 4904, 21, 4445, 8971, 11617, 8077, 1627, 11618, 5911, 4185, 11619, 2]
+// Dependencies: [19, 17, 8092, 1499, 4917, 21, 4446, 8989, 11636, 8091, 1627, 11637, 5924, 4186, 11638, 2]
 // Exports: default
 
-// Module 11616 (AppLauncherApplicationViewScreenInner)
+// Module 11635 (AppLauncherApplicationViewScreenInner)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getIndexKey" /* 8078 */;
+import closure_6 from "getIndexKey" /* 8092 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
-import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4904 */;
+import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4917 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function AppLauncherApplicationViewScreenInner(application) {

@@ -1,22 +1,22 @@
-// Module ID: 6102
-// Function ID: 6103
+// Module ID: 6115
+// Function ID: 6116
 // Name: maybeRebuildState
-// Dependencies: [5401, 6103, 1218, 1391, 4460, 1981, 1400, 1402, 12, 6104, 11, 589, 1433, 709, 2]
+// Dependencies: [5414, 6116, 1218, 1391, 4461, 1982, 1400, 1402, 12, 6117, 11, 589, 1433, 709, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 6102 (maybeRebuildState)
+// Module 6115 (maybeRebuildState)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import set3 from "set" /* 1400 */;
 import set4 from "set" /* 1402 */;
 import areSetsEqual from "areSetsEqual" /* 1433 */;
-import getCreationDefaultFormatter from "getCreationDefaultFormatter" /* 6104 */;
-import closure_4 from "handleThreadCreateOrUpdate" /* 5401 */;
-import closure_5 from "updateState" /* 6103 */;
+import getCreationDefaultFormatter from "getCreationDefaultFormatter" /* 6117 */;
+import closure_4 from "handleThreadCreateOrUpdate" /* 5414 */;
+import closure_5 from "updateState" /* 6116 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "generateOldThreadCutoff" /* 4460 */;
-import closure_9 from "handleConnectionOpen" /* 1981 */;
+import closure_8 from "generateOldThreadCutoff" /* 4461 */;
+import closure_9 from "handleConnectionOpen" /* 1982 */;
 import importDefaultResult from "apply" /* 12 */;
 import set from "set" /* 2 */;
 

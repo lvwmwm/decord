@@ -1,12 +1,12 @@
-// Module ID: 16809
-// Function ID: 16810
+// Module ID: 16827
+// Function ID: 16828
 // Name: setAudioInputEnabled
-// Dependencies: [4501, 2]
+// Dependencies: [4502, 2]
 // Exports: default
 
-// Module 16809 (setAudioInputEnabled)
+// Module 16827 (setAudioInputEnabled)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 4501 */;
+import enforcingDefault from "enforcing" /* 4502 */;
 
 const result = set.fileFinishedImporting("modules/voice_calls/utils/setAudioInputEnabled.android.tsx");
 

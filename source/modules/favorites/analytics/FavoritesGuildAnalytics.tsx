@@ -1,12 +1,12 @@
-// Module ID: 10233
-// Function ID: 10234
+// Module ID: 10251
+// Function ID: 10252
 // Name: setNextFavoritesGuildViewSource
-// Dependencies: [4267, 676, 1913, 698, 2]
+// Dependencies: [4268, 676, 1913, 698, 2]
 // Exports: consumeNextFavoritesGuildViewSource, setNextFavoritesGuildViewSource, trackFavoritesGuildAddToFavorites, trackFavoritesGuildOrderUpdated, trackFavoritesGuildRemoveFromFavorites, trackFavoritesGuildVisibilitySettingToggled
 
-// Module 10233 (setNextFavoritesGuildViewSource)
+// Module 10251 (setNextFavoritesGuildViewSource)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_3 from "handleConnectionOpen" /* 4267 */;
+import closure_3 from "handleConnectionOpen" /* 4268 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;

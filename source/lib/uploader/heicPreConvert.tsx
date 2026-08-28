@@ -1,12 +1,12 @@
-// Module ID: 8096
-// Function ID: 8097
+// Module ID: 8110
+// Function ID: 8111
 // Name: itemNeedsHeicPreConversion
-// Dependencies: [32, 5, 5025, 5067, 5162, 2009, 5068, 5053, 2]
+// Dependencies: [32, 5, 5038, 5080, 5175, 2010, 5081, 5066, 2]
 // Exports: maybePreConvertHeicItem
 
-// Module 8096 (itemNeedsHeicPreConversion)
-import cancel from "cancel" /* 5025 */;
-import set from "set" /* 5067 */;
+// Module 8110 (itemNeedsHeicPreConversion)
+import cancel from "cancel" /* 5038 */;
+import set from "set" /* 5080 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 

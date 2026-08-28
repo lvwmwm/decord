@@ -1,11 +1,11 @@
-// Module ID: 4261
-// Function ID: 4262
+// Module ID: 4262
+// Function ID: 4263
 // Name: ThemeAwareNitroWishlistingWumpusRive
-// Dependencies: [109, 19, 21, 4179, 4262, 4234, 2]
+// Dependencies: [109, 19, 21, 4180, 4263, 4235, 2]
 
-// Module 4261 (ThemeAwareNitroWishlistingWumpusRive)
-import BaseRive from "BaseRive" /* 4179 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4234 */;
+// Module 4262 (ThemeAwareNitroWishlistingWumpusRive)
+import BaseRive from "BaseRive" /* 4180 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4235 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

@@ -1,13 +1,13 @@
-// Module ID: 11522
-// Function ID: 11523
+// Module ID: 11541
+// Function ID: 11542
 // Name: openCustomKeyboard
-// Dependencies: [1498, 5998, 4310, 11482, 2]
+// Dependencies: [1498, 6011, 4311, 11501, 2]
 // Exports: default
 
-// Module 11522 (openCustomKeyboard)
+// Module 11541 (openCustomKeyboard)
 import set from "set" /* 2 */;
 import computeEntryState from "computeEntryState" /* 1498 */;
-import runAfterInteractions from "runAfterInteractions" /* 5998 */;
+import runAfterInteractions from "runAfterInteractions" /* 6011 */;
 
 const result = set.fileFinishedImporting("modules/keyboard/native/openCustomKeyboard.android.tsx");
 

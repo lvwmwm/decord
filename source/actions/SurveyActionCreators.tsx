@@ -1,17 +1,17 @@
-// Module ID: 4665
-// Function ID: 4666
+// Module ID: 4678
+// Function ID: 4679
 // Name: overrideSurvey
-// Dependencies: [4664, 676, 709, 698, 4666, 503, 1404, 530, 2]
+// Dependencies: [4677, 676, 709, 698, 4679, 503, 1404, 530, 2]
 // Exports: overrideSurvey, surveyFetch, surveyHide, surveySeen
 
-// Module 4665 (overrideSurvey)
+// Module 4678 (overrideSurvey)
 import encodeProperties from "encodeProperties" /* 503 */;
 import sendRequest from "sendRequest" /* 530 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef4666 from "module_4666" /* 4666 */;
-import closure_3 from "fetchSurveyIfNeeded" /* 4664 */;
-import { SURVEY_REFETCH_INTERVAL } from "fetchSurveyIfNeeded" /* 4664 */;
+import _modDef4679 from "module_4679" /* 4679 */;
+import closure_3 from "fetchSurveyIfNeeded" /* 4677 */;
+import { SURVEY_REFETCH_INTERVAL } from "fetchSurveyIfNeeded" /* 4677 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -67,7 +67,7 @@ export const surveyFetch = function surveyFetch(surveyOverride, disable_auto_see
     }
   };
   obj[2] = obj;
-  const obj2 = _modDef4666;
+  const obj2 = _modDef4679;
   obj[3] = sendRequest.rejectWithMigratedError();
   const value = obj2.get(obj);
   return value.then((body) => {
@@ -103,7 +103,7 @@ export const surveySeen = function surveySeen(key) {
   obj = { type: "SURVEY_SEEN", key };
   obj.dispatch(obj);
   obj = { url: closure_7.USER_SURVEY_SEEN(key), trackedActionData: null, rejectWithError: null };
-  const obj3 = _modDef4666;
+  const obj3 = _modDef4679;
   obj[1] = {
     event: _require(503).NetworkActionNames.USER_SURVEY_SEEN,
     properties() {

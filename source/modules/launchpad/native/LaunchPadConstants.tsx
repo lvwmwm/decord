@@ -1,11 +1,11 @@
-// Module ID: 10984
-// Function ID: 10985
+// Module ID: 11002
+// Function ID: 11003
 // Name: LAUNCH_PAD_SPRING_CONFIG
-// Dependencies: [17, 500, 4424, 2]
+// Dependencies: [17, 500, 4425, 2]
 
-// Module 10984 (LAUNCH_PAD_SPRING_CONFIG)
+// Module 11002 (LAUNCH_PAD_SPRING_CONFIG)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4424 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4425 */;
 import set from "set" /* 500 */;
 
 const Dimensions = get_ActivityIndicator.Dimensions;

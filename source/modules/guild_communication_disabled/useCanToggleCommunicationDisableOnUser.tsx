@@ -1,17 +1,17 @@
-// Module ID: 8360
-// Function ID: 8361
+// Module ID: 8374
+// Function ID: 8375
 // Name: canToggleCommunicationDisableOnUser
-// Dependencies: [1434, 1910, 4089, 1922, 676, 4094, 589, 2]
+// Dependencies: [1434, 1910, 4090, 1923, 676, 4095, 589, 2]
 // Exports: default
 
-// Module 8360 (canToggleCommunicationDisableOnUser)
+// Module 8374 (canToggleCommunicationDisableOnUser)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import applyOverwritesAll from "applyOverwrites" /* 4094 */;
+import applyOverwritesAll from "applyOverwrites" /* 4095 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 
 function canToggleCommunicationDisableOnUser(id, id2, items) {
   let tmp = items;

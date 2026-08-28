@@ -1,13 +1,13 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16647
+// Function ID: 16648
 // Name: EDGE_GUTTER
-// Dependencies: [11760, 10650, 2]
+// Dependencies: [11779, 10668, 2]
 // Exports: default
 
-// Module 16629 (EDGE_GUTTER)
+// Module 16647 (EDGE_GUTTER)
 import set from "set" /* 2 */;
-import tDefault from "t" /* 10650 */;
-import CARD_SIZE from "CARD_SIZE" /* 11760 */;
+import tDefault from "t" /* 10668 */;
+import CARD_SIZE from "CARD_SIZE" /* 11779 */;
 
 const EDGE_GUTTER = CARD_SIZE.EDGE_GUTTER;
 const fn = function t(arg0) {

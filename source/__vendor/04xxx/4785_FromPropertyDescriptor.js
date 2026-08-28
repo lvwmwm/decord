@@ -1,0 +1,20 @@
+// Module ID: 4785
+// Function ID: 4786
+// Name: FromPropertyDescriptor
+// Dependencies: [4779, 541, 4786]
+
+// Module 4785 (FromPropertyDescriptor)
+import isPropertyDescriptor from "isPropertyDescriptor" /* 4779 */;
+import fromPropertyDescriptor from "fromPropertyDescriptor" /* 4786 */;
+
+
+export default function FromPropertyDescriptor(arg0) {
+  if (undefined !== arg0) {
+    if (!isPropertyDescriptor(arg0)) {
+      const tmp5 = new tmp(541)("Assertion failed: `Desc` must be a Property Descriptor");
+      throw tmp5;
+    }
+    tmp = require;
+  }
+  return fromPropertyDescriptor(arg0);
+};

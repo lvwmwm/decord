@@ -1,11 +1,11 @@
-// Module ID: 16991
-// Function ID: 16992
+// Module ID: 17009
+// Function ID: 17010
 // Name: handleChannelDelete
-// Dependencies: [1218, 1391, 5438, 589, 709, 7573, 2]
+// Dependencies: [1218, 1391, 5451, 589, 709, 7587, 2]
 
-// Module 16991 (handleChannelDelete)
-import initializeDefault from "initialize" /* 5438 */;
-import withErrorHandlingDefault from "withErrorHandling" /* 7573 */;
+// Module 17009 (handleChannelDelete)
+import initializeDefault from "initialize" /* 5451 */;
+import withErrorHandlingDefault from "withErrorHandling" /* 7587 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 

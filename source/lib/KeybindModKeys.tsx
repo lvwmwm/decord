@@ -1,9 +1,9 @@
-// Module ID: 13470
-// Function ID: 13471
+// Module ID: 13489
+// Function ID: 13490
 // Name: modKey
 // Dependencies: [500, 2]
 
-// Module 13470 (modKey)
+// Module 13489 (modKey)
 import set from "set" /* 500 */;
 
 if (set.isMac()) {

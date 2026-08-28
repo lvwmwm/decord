@@ -1,9 +1,9 @@
-// Module ID: 14121
-// Function ID: 14122
+// Module ID: 14140
+// Function ID: 14141
 // Name: USE_ALT_GATEWAY_KEY
 // Dependencies: [2]
 
-// Module 14121 (USE_ALT_GATEWAY_KEY)
+// Module 14140 (USE_ALT_GATEWAY_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/gateway/GatewayAltEndpointCache.tsx");

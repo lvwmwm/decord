@@ -1,12 +1,12 @@
-// Module ID: 4475
-// Function ID: 4476
+// Module ID: 4476
+// Function ID: 4477
 // Name: items
-// Dependencies: [4476, 2]
+// Dependencies: [4477, 2]
 // Exports: getMigratedApplicationIdentityConnectionsScreenApplications
 
-// Module 4475 (items)
+// Module 4476 (items)
 import set from "set" /* 2 */;
-import apexExperiment from "apexExperiment" /* 4476 */;
+import apexExperiment from "apexExperiment" /* 4477 */;
 
 let obj = { RIOT_GAMES: "1443033465766281327", LEAGUE_OF_LEGENDS: "1443349464290168976", VALORANT: "1443350165678198935", BATTLENET: "1356665549089800303", WORLD_OF_WARCRAFT: "1384671873593512078" };
 obj = { [obj.RIOT_GAMES]: obj, [obj.LEAGUE_OF_LEGENDS]: obj1, [obj.VALORANT]: obj2, [obj.BATTLENET]: obj3, [obj.WORLD_OF_WARCRAFT]: obj4 };

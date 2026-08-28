@@ -1,10 +1,10 @@
-// Module ID: 10235
-// Function ID: 10236
+// Module ID: 10253
+// Function ID: 10254
 // Name: handleDCShownToUser
 // Dependencies: [709, 2]
 // Exports: handleDCDismissed, handleDCShownToUser, overrideDCFLastDCDismissed, overrideDismissibleContentFramework, overrideNewUserMinAgeRequired, resetDismissibleContentFrameworkStore
 
-// Module 10235 (handleDCShownToUser)
+// Module 10253 (handleDCShownToUser)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

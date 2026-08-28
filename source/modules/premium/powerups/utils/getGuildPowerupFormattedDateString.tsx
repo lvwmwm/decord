@@ -1,11 +1,11 @@
-// Module ID: 11979
-// Function ID: 11980
+// Module ID: 11998
+// Function ID: 11999
 // Name: getGuildPowerupFormattedDateString
-// Dependencies: [1996, 2]
+// Dependencies: [1997, 2]
 // Exports: default
 
-// Module 11979 (getGuildPowerupFormattedDateString)
-import closure_0 from "_getSystemLocale" /* 1996 */;
+// Module 11998 (getGuildPowerupFormattedDateString)
+import closure_0 from "_getSystemLocale" /* 1997 */;
 
 const result = require("set").fileFinishedImporting("modules/premium/powerups/utils/getGuildPowerupFormattedDateString.tsx");
 

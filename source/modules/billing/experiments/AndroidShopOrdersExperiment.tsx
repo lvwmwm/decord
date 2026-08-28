@@ -1,10 +1,10 @@
-// Module ID: 10399
-// Function ID: 10400
+// Module ID: 10417
+// Function ID: 10418
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useAndroidShopOrdersEnabled
 
-// Module 10399 (apexExperiment)
+// Module 10417 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 16062
-// Function ID: 16063
+// Module ID: 16080
+// Function ID: 16081
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 1910, 1922, 4660, 21, 4445, 712, 647, 8046, 8460, 6108, 8047, 4289, 4172, 688, 8038, 1297, 9140, 4441, 4638, 9635, 2]
+// Dependencies: [19, 17, 1910, 1923, 4673, 21, 4446, 712, 647, 8060, 8474, 6121, 8061, 4290, 4173, 688, 8052, 1297, 9158, 4442, 4639, 9653, 2]
 // Exports: default
 
-// Module 16062 (HomeWelcomeMessage)
+// Module 16080 (HomeWelcomeMessage)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "handleSettingsLoadSuccess" /* 4660 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import closure_7 from "handleSettingsLoadSuccess" /* 4673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);

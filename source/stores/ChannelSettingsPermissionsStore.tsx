@@ -1,18 +1,18 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16334
+// Function ID: 16335
 // Name: init
-// Dependencies: [8678, 1391, 676, 8603, 595, 4094, 12, 589, 709, 2]
+// Dependencies: [8694, 1391, 676, 8618, 595, 4095, 12, 589, 709, 2]
 
-// Module 16316 (init)
+// Module 16334 (init)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import applyOverwritesAll from "applyOverwrites" /* 4094 */;
-import closure_6 from "normalizeChannelPropertyForCompare" /* 8678 */;
+import applyOverwritesAll from "applyOverwrites" /* 4095 */;
+import closure_6 from "normalizeChannelPropertyForCompare" /* 8694 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import ME from "ME" /* 676 */;
-import { ADVANCED_MODE_ON_KEY } from "RowType" /* 8603 */;
+import { ADVANCED_MODE_ON_KEY } from "RowType" /* 8618 */;
 import { Storage } from "Storage" /* 595 */;
 import set from "set" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 13121
-// Function ID: 13122
+// Module ID: 13140
+// Function ID: 13141
 // Name: getViewerProductId
-// Dependencies: [19, 7103, 6036, 1924, 7086, 6039, 500, 6033, 4122, 589, 2]
+// Dependencies: [19, 7116, 6049, 1925, 7099, 6052, 500, 6046, 4123, 589, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 13121 (getViewerProductId)
-import getPremiumBundledItemsFromProductId from "getPremiumBundledItemsFromProductId" /* 7086 */;
+// Module 13140 (getViewerProductId)
+import getPremiumBundledItemsFromProductId from "getPremiumBundledItemsFromProductId" /* 7099 */;
 import closure_2 from "noop" /* 19 */;
-import { useNativeCheckoutStore } from "context" /* 7103 */;
-import closure_4 from "updateProduct" /* 6036 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { useNativeCheckoutStore } from "context" /* 7116 */;
+import closure_4 from "updateProduct" /* 6049 */;
+import { PremiumTypes } from "GuildFeatures" /* 1925 */;
 
 require = arg1;
 function getViewerProductId(subscription) {
@@ -19,9 +19,9 @@ function getViewerProductId(subscription) {
     try {
       const productIdFromSubscription = getPremiumBundledItemsFromProductId.getProductIdFromSubscription(subscription, false);
       try {
-        const productIdFromSubscription1 = tmp3(7086).getProductIdFromSubscription(subscription, true);
-        const tmp8 = tmp3(6039).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
-        const tmp10 = tmp3(6039).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
+        const productIdFromSubscription1 = tmp3(7099).getProductIdFromSubscription(subscription, true);
+        const tmp8 = tmp3(6052).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription];
+        const tmp10 = tmp3(6052).AppStorePremiumProductIdsToPremiumBundledItems[productIdFromSubscription1];
         if (null != tmp8) {
           if (null != tmp10) {
             if (tmp8.numPremiumGuild === tmp10.numPremiumGuild) {
@@ -31,7 +31,7 @@ function getViewerProductId(subscription) {
           }
         }
         tmp11 = productIdFromSubscription;
-        const tmp3Result = tmp3(7086);
+        const tmp3Result = tmp3(7099);
       } catch (err) {
         return tmp2;
       }

@@ -1,13 +1,13 @@
-// Module ID: 8087
-// Function ID: 8088
+// Module ID: 8101
+// Function ID: 8102
 // Name: useTopCommands
-// Dependencies: [19, 8080, 685, 1374, 589, 2]
+// Dependencies: [19, 8094, 685, 1374, 589, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 8087 (useTopCommands)
+// Module 8101 (useTopCommands)
 import closure_2 from "noop" /* 19 */;
-import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 8080 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 8080 */;
+import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 8094 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 8094 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
 
 const require = arg1;

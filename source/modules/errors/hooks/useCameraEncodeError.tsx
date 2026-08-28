@@ -1,12 +1,12 @@
-// Module ID: 16631
-// Function ID: 16632
+// Module ID: 16649
+// Function ID: 16650
 // Name: useCameraEncodeError
-// Dependencies: [1218, 9485, 589, 9486, 2]
+// Dependencies: [1218, 9503, 589, 9504, 2]
 // Exports: default
 
-// Module 16631 (useCameraEncodeError)
+// Module 16649 (useCameraEncodeError)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "isAVErrorContextOfType" /* 9485 */;
+import closure_3 from "isAVErrorContextOfType" /* 9503 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/errors/hooks/useCameraEncodeError.tsx");

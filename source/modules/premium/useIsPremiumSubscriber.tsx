@@ -1,12 +1,12 @@
-// Module ID: 8861
-// Function ID: 8862
+// Module ID: 8878
+// Function ID: 8879
 // Name: useIsPremiumSubscriber
-// Dependencies: [1922, 1924, 589, 1946, 2]
+// Dependencies: [1923, 1925, 589, 1947, 2]
 // Exports: useIsPremiumSubscriber
 
-// Module 8861 (useIsPremiumSubscriber)
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+// Module 8878 (useIsPremiumSubscriber)
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
+import { PremiumTypes } from "GuildFeatures" /* 1925 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/useIsPremiumSubscriber.tsx");

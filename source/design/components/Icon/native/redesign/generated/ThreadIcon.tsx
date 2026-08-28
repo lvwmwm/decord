@@ -1,14 +1,14 @@
-// Module ID: 4974
-// Function ID: 4975
+// Module ID: 4987
+// Function ID: 4988
 // Name: ThreadIcon
-// Dependencies: [19, 21, 712, 4164, 4935, 2]
+// Dependencies: [19, 21, 712, 4165, 4948, 2]
 // Exports: ThreadIcon
 
-// Module 4974 (ThreadIcon)
+// Module 4987 (ThreadIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4935 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 4948 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

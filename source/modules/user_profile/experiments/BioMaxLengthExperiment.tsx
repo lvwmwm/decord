@@ -1,10 +1,10 @@
-// Module ID: 8004
-// Function ID: 8005
+// Module ID: 8018
+// Function ID: 8019
 // Name: useBioMaxLength
 // Dependencies: [676, 1472, 2]
 // Exports: getBioMaxLength, useBioMaxLength
 
-// Module 8004 (useBioMaxLength)
+// Module 8018 (useBioMaxLength)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;

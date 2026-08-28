@@ -1,21 +1,21 @@
-// Module ID: 13308
-// Function ID: 13309
+// Module ID: 13327
+// Function ID: 13328
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 1391, 4098, 1922, 13302, 13305, 676, 21, 4445, 712, 589, 1236, 5941, 10931, 4441, 5944, 5551, 1297, 11312, 10008, 4880, 4412, 5307, 698, 2]
+// Dependencies: [19, 17, 1391, 4099, 1923, 13321, 13324, 676, 21, 4446, 712, 589, 1236, 5954, 10949, 4442, 5957, 5564, 1297, 11331, 10026, 4893, 4413, 5320, 698, 2]
 // Exports: default
 
-// Module 13308 (BlockedUserInVoiceChannelActionSheet)
+// Module 13327 (BlockedUserInVoiceChannelActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "markAllUserIdListsStale" /* 4098 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { setDismissalTimeForUser } from "useSharedSpacesWarningStore" /* 13302 */;
-import GdmWarningMedium from "GdmWarningMedium" /* 13305 */;
+import closure_6 from "markAllUserIdListsStale" /* 4099 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import { setDismissalTimeForUser } from "useSharedSpacesWarningStore" /* 13321 */;
+import GdmWarningMedium from "GdmWarningMedium" /* 13324 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 noopAll;

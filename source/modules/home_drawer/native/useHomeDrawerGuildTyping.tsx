@@ -1,15 +1,15 @@
-// Module ID: 15824
-// Function ID: 15825
+// Module ID: 15842
+// Function ID: 15843
 // Name: areHomeDrawerGuildTypingStatesEqual
-// Dependencies: [4091, 1395, 1391, 11456, 643, 15821, 15822, 589, 11, 2]
+// Dependencies: [4092, 1395, 1391, 11475, 643, 15839, 15840, 589, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 15824 (areHomeDrawerGuildTypingStatesEqual)
+// Module 15842 (areHomeDrawerGuildTypingStatesEqual)
 import shallowEqual from "shallowEqual" /* 643 */;
-import closure_3 from "storeThread" /* 4091 */;
+import closure_3 from "storeThread" /* 4092 */;
 import { isThread } from "createChannelRecord" /* 1395 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "handleTypingStart" /* 11456 */;
+import closure_6 from "handleTypingStart" /* 11475 */;
 
 require = arg1;
 function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) {

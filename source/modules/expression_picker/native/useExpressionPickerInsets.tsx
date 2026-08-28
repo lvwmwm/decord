@@ -1,10 +1,10 @@
-// Module ID: 10273
-// Function ID: 10274
+// Module ID: 10291
+// Function ID: 10292
 // Name: useExpressionPickerInsets
-// Dependencies: [19, 676, 1629, 5546, 712, 2]
+// Dependencies: [19, 676, 1629, 5559, 712, 2]
 // Exports: default
 
-// Module 10273 (useExpressionPickerInsets)
+// Module 10291 (useExpressionPickerInsets)
 import closure_2 from "noop" /* 19 */;
 import { EXPRESSION_FOOTER_HEIGHT } from "ME" /* 676 */;
 
@@ -19,7 +19,7 @@ export default function useExpressionPickerInsets(hasCategories) {
   if (hasCategories.hasCategories) {
     num = EXPRESSION_FOOTER_HEIGHT;
   }
-  const sum = bottom(5546)({ includeKeyboardHeight: true, includeCustomKeyboardHeight: false }).insets.bottom + num;
+  const sum = bottom(5559)({ includeKeyboardHeight: true, includeCustomKeyboardHeight: false }).insets.bottom + num;
   obj[1] = sum + bottom(712).space.PX_16;
   return obj;
 };

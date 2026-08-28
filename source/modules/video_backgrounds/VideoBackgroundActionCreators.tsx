@@ -1,14 +1,14 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 9728
+// Function ID: 9729
 // Name: _fetchVideoFilterAssets
-// Dependencies: [5, 4496, 1922, 676, 530, 709, 9711, 9712, 9709, 1374, 2]
+// Dependencies: [5, 4497, 1923, 676, 530, 709, 9729, 9730, 9727, 1374, 2]
 // Exports: applyMediaFilterSettings, deleteVideoFilterAsset, errorApplyingMediaFilterSettings, fetchVideoFilterAssets, startApplyMediaFilterSettings, uploadVideoFilterAsset
 
-// Module 9710 (_fetchVideoFilterAssets)
+// Module 9728 (_fetchVideoFilterAssets)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -164,7 +164,7 @@ function _uploadVideoFilterAsset() {
           } else if (1 === tmp7) {
             constants = 0;
             callback = closure_5;
-            const tmp24 = new callback(9711)(callback);
+            const tmp24 = new callback(9729)(callback);
             throw tmp24;
           } else if (arg0 === 1) {
             c8 = 3;
@@ -262,9 +262,9 @@ function _deleteVideoFilterAsset() {
             obj3[0] = arg1;
             return obj3;
           } else {
-            lib2 = lib(9712).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
-            const obj7 = lib(9712);
-            let result = lib(9709).isCustomBackgroundOption(lib2);
+            lib2 = lib(9730).getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
+            const obj7 = lib(9730);
+            let result = lib(9727).isCustomBackgroundOption(lib2);
             if (result) {
               result = lib2.id === lib.id;
             }
@@ -342,7 +342,7 @@ function _saveLastUsedBackgroundOption() {
             obj3.dispatch(obj5);
             c4 = 3;
           }
-          obj12 = lib(9709);
+          obj12 = lib(9727);
         }
       } else if (arg0 === 1) {
         c4 = 3;

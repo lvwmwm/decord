@@ -1,16 +1,16 @@
-// Module ID: 9561
-// Function ID: 9562
+// Module ID: 9579
+// Function ID: 9580
 // Name: canManageResource
-// Dependencies: [32, 19, 4089, 1922, 9562, 505, 506, 1430, 589, 2]
+// Dependencies: [32, 19, 4090, 1923, 9580, 505, 506, 1430, 589, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions, useManageResourcePermissions
 
-// Module 9561 (canManageResource)
+// Module 9579 (canManageResource)
 import fromStringAll from "fromString" /* 506 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import VIEW_CHANNEL from "VIEW_CHANNEL" /* 9562 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import VIEW_CHANNEL from "VIEW_CHANNEL" /* 9580 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

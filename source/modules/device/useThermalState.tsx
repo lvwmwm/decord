@@ -1,13 +1,13 @@
-// Module ID: 9438
-// Function ID: 9439
+// Module ID: 9456
+// Function ID: 9457
 // Name: useThermalState
-// Dependencies: [500, 9380, 2]
+// Dependencies: [500, 9398, 2]
 // Exports: default, getThermalState
 
-// Module 9438 (useThermalState)
+// Module 9456 (useThermalState)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
-import NativeModulesDefault from "NativeModules" /* 9380 */;
+import NativeModulesDefault from "NativeModules" /* 9398 */;
 
 let obj = { UNHANDLED: -1, [-1]: "UNHANDLED", NOMINAL: 0, [0]: "NOMINAL", FAIR: 1, [1]: "FAIR", SERIOUS: 2, [2]: "SERIOUS", CRITICAL: 3, [3]: "CRITICAL" };
 obj = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERATE", SEVERE: 3, [3]: "SEVERE", CRITICAL: 4, [4]: "CRITICAL", EMERGENCY: 5, [5]: "EMERGENCY", SHUTDOWN: 6, [6]: "SHUTDOWN" };

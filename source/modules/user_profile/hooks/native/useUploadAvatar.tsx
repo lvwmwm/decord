@@ -1,14 +1,14 @@
-// Module ID: 14227
-// Function ID: 14228
+// Module ID: 14196
+// Function ID: 14197
 // Name: useUploadAvatar
-// Dependencies: [5, 19, 1922, 676, 1924, 647, 8101, 4412, 5034, 4107, 14210, 8011, 8009, 8006, 8008, 2]
+// Dependencies: [5, 19, 1923, 676, 1925, 647, 8115, 4413, 5047, 4108, 14180, 8025, 8023, 8020, 8022, 2]
 // Exports: default
 
-// Module 14227 (useUploadAvatar)
+// Module 14196 (useUploadAvatar)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1925 */;
 
 const require = arg1;
 require("noop").useCallback;
@@ -69,14 +69,14 @@ export default function useUploadAvatar(guildId) {
             originalMd5 = undefined;
             c3 = undefined;
             closure_4 = undefined;
-            closure_1_1(4412).hideActionSheet();
-            const obj13 = closure_1_1(4412);
+            closure_1_1(4413).hideActionSheet();
+            const obj13 = closure_1_1(4413);
             obj1 = { size: null };
             obj1[0] = closure_1_7;
             originalMd5 = 1;
             c3 = 1;
             const obj2 = { value: null, done: false };
-            obj2[0] = closure_1_1(5034).openImagePicker(obj1);
+            obj2[0] = closure_1_1(5047).openImagePicker(obj1);
             return obj2;
           }
         } else if (arg0 === 1) {
@@ -96,7 +96,7 @@ export default function useUploadAvatar(guildId) {
           } else {
             let canUseAnimatedAvatarResult = base64;
             if (!base64) {
-              obj = closure_1_1(4107);
+              obj = closure_1_1(4108);
               canUseAnimatedAvatarResult = obj.canUseAnimatedAvatar(c3);
             }
             c3 = canUseAnimatedAvatarResult;
@@ -109,24 +109,24 @@ export default function useUploadAvatar(guildId) {
               }
             }
           }
-          obj1 = closure_1_0(14210);
+          obj1 = closure_1_0(14180);
           const obj4 = { imageUri: null, description: null, originalMd5: null };
           obj4[0] = base64;
-          obj3 = closure_1_0(8011);
+          obj3 = closure_1_0(8025);
           obj4[1] = obj3.generateAvatarDescription();
           obj4[2] = originalMd5;
           closure_4 = obj1.createPendingImage(obj4);
           if (closure_1_1) {
-            let tmp28Result = tmp28(8009);
+            let tmp28Result = tmp28(8023);
             tmp28Result.setTryItOutAvatar(closure_1_4);
           } else {
-            tmp28Result = tmp28(8006);
+            tmp28Result = tmp28(8020);
             const obj5 = { guildId: null, avatar: null };
             obj5[0] = closure_0;
             obj5[1] = closure_1_4;
             tmp28Result.setPendingChanges(obj5);
-            const result = closure_1_0(8008).announcePendingAvatarChange("set");
-            const obj7 = closure_1_0(8008);
+            const result = closure_1_0(8022).announcePendingAvatarChange("set");
+            const obj7 = closure_1_0(8022);
           }
         }
       } catch (tmp38) {

@@ -1,12 +1,12 @@
-// Module ID: 5564
-// Function ID: 5565
+// Module ID: 5577
+// Function ID: 5578
 // Name: FormLabel
-// Dependencies: [19, 21, 4441, 2]
+// Dependencies: [19, 21, 4442, 2]
 // Exports: default
 
-// Module 5564 (FormLabel)
+// Module 5577 (FormLabel)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4441 */;
+import Text from "Text" /* 4442 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

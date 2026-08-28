@@ -1,18 +1,18 @@
-// Module ID: 10346
-// Function ID: 10347
+// Module ID: 10364
+// Function ID: 10365
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 4807, 5575, 21, 4445, 712, 38, 5025, 1494, 1629, 4897, 4412, 5046, 10347, 4162, 7641, 5034, 10793, 10794, 5574, 5576, 4878, 4441, 500, 8533, 10363, 5944, 5551, 10795, 10797, 1236, 7616, 10799, 8095, 4988, 10801, 4880, 4403, 2]
+// Dependencies: [32, 19, 17, 4820, 5588, 21, 4446, 712, 38, 5038, 1494, 1629, 4910, 4413, 5059, 10365, 4163, 7655, 5047, 10811, 10812, 5587, 5589, 4891, 4442, 500, 8548, 10381, 5957, 5564, 10813, 10815, 1236, 7630, 10817, 8109, 5001, 10819, 4893, 4404, 2]
 // Exports: default
 
-// Module 10346 (UploadPreviewActionSheet)
+// Module 10364 (UploadPreviewActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { DraftType } from "handleChanged" /* 4807 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5575 */;
+import { DraftType } from "handleChanged" /* 4820 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5588 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ Image: c5, View: closure_6 } = get_ActivityIndicator);
@@ -119,9 +119,9 @@ export default function UploadPreviewActionSheet(onAdd) {
       }
     }).catch((code) => {
       if ("E_PICKER_CANCELLED" !== code.code) {
-        let obj = callback2(4162);
+        let obj = callback2(4163);
         obj = { key: "CROP_ERROR", IconComponent: null, content: null };
-        obj[1] = callback(7641).CircleErrorIcon;
+        obj[1] = callback(7655).CircleErrorIcon;
         obj[2] = code.message;
         obj.open(obj);
       }

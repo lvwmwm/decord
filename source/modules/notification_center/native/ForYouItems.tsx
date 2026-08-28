@@ -1,28 +1,28 @@
-// Module ID: 15919
-// Function ID: 15920
+// Module ID: 15937
+// Function ID: 15938
 // Name: ForYouFooter
-// Dependencies: [5, 32, 19, 17, 4437, 4486, 1391, 1910, 1922, 15913, 676, 6007, 21, 4445, 4441, 712, 4900, 15918, 1236, 1403, 7883, 7438, 10803, 10331, 8671, 589, 7564, 1297, 12081, 15920, 1500, 4425, 13503, 7318, 698, 8073, 15921, 11124, 4162, 11147, 2009, 4412, 15923, 4403, 15915, 5938, 15924, 15925, 11, 5020, 15926, 7319, 12522, 1501, 4134, 4139, 15936, 15937, 15938, 15939, 15940, 15946, 810, 15947, 15948, 1370, 15917, 8037, 15949, 2]
+// Dependencies: [5, 32, 19, 17, 4438, 4487, 1391, 1910, 1923, 15931, 676, 6020, 21, 4446, 4442, 712, 4913, 15936, 1236, 1403, 7897, 7452, 10821, 10349, 8687, 589, 7578, 1297, 12100, 15938, 1500, 4426, 13522, 7332, 698, 8087, 15939, 11142, 4163, 11165, 2010, 4413, 15941, 4404, 15933, 5951, 15942, 15943, 11, 5033, 15944, 7333, 12541, 1501, 4135, 4140, 15954, 15955, 15956, 15957, 15958, 15964, 810, 15965, 15966, 1370, 15935, 8051, 15967, 2]
 
-// Module 15919 (ForYouFooter)
+// Module 15937 (ForYouFooter)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4441 */;
-import createRulesAll from "createRules" /* 4900 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12081 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 15918 */;
+import Text from "Text" /* 4442 */;
+import createRulesAll from "createRules" /* 4913 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 12100 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 15936 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_10 from "addApplication" /* 4486 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_10 from "addApplication" /* 4487 */;
 import closure_11 from "ensureGuildLoaded" /* 1391 */;
 import closure_12 from "createGuildRecordFromRust" /* 1910 */;
-import closure_13 from "mergeGuildAvatar" /* 1922 */;
-import closure_14 from "handleLoadFinished" /* 15913 */;
+import closure_13 from "mergeGuildAvatar" /* 1923 */;
+import closure_14 from "handleLoadFinished" /* 15931 */;
 import ME from "ME" /* 676 */;
-import { NotificationTypes } from "str2" /* 6007 */;
+import { NotificationTypes } from "str2" /* 6020 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function ForYouFooter(loading) {
@@ -60,7 +60,7 @@ function ForYouMessagePreviewV2(item) {
   ({ compactMode, roleStyle } = item);
   let messagePreviewIconV2 = callback6();
   let SMALL = dependencyMap;
-  let obj = message_channel_id(4900);
+  let obj = message_channel_id(4913);
   const notifCenterV2MessagePreviewParser = obj.getNotifCenterV2MessagePreviewParser(callback5(), closure_28, roleStyle);
   const intl = item(1236).intl;
   const stringResult = intl.string(item(1236).t.BOi07B);
@@ -115,10 +115,10 @@ function ForYouMessagePreviewV2(item) {
         first = embeds[0];
       }
     }
-    const tmp15 = guild_id(7883)(first);
+    const tmp15 = guild_id(7897)(first);
     let result = stringResult;
     if (null != tmp15) {
-      let tmp2Result = tmp2(7438);
+      let tmp2Result = tmp2(7452);
       result = tmp2Result.formatPollResultNotificationCenterText(tmp15);
     }
   } else if (stickers.length > 0) {
@@ -226,18 +226,18 @@ function ForYouMessagePreviewV2(item) {
   if (acked) {
     str2 = "text-muted";
   }
-  const items5 = [item(7564).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
+  const items5 = [item(7578).renderMessageContentMarkup(notifCenterV2MessagePreviewParser, obj2, { textColor: str2 }), ];
   if (null == ATTACHMENT) {
     items5[1] = tmp26;
     obj1[3] = items5;
-    items3[1] = tmp21(tmp2(4441).Text, obj1);
+    items3[1] = tmp21(tmp2(4442).Text, obj1);
     obj[2] = items3;
     return tmp21(tmp22, obj);
   } else {
     const obj3 = { style: null, children: null };
     obj3[0] = messagePreviewIconV2.messagePreviewIconV2Container;
     if (constants3.ATTACHMENT === ATTACHMENT) {
-      let tmp29 = guild_id(10803);
+      let tmp29 = guild_id(10821);
       const obj4 = { source: null, size: null, style: null };
       obj4[0] = tmp29;
       SMALL = tmp2(1297).IconSizes.SMALL;
@@ -249,10 +249,10 @@ function ForYouMessagePreviewV2(item) {
     } else if (tmp28.STICKER !== ATTACHMENT) {
       tmp29 = null;
       if (tmp28.VOICE_MESSAGE === ATTACHMENT) {
-        tmp29 = guild_id(8671);
+        tmp29 = guild_id(8687);
       }
     }
-    tmp29 = guild_id(10331);
+    tmp29 = guild_id(10349);
   }
 }
 function ApplicationName(applicationId) {
@@ -857,6 +857,8 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "bottom":
       break;
+      case "container":
+      break;
       case "call":
       break;
       case "channel":
@@ -884,8 +886,6 @@ const memoResult = importAllResult.memo((loadMore) => {
       case "concat":
       break;
       case "constructor":
-      break;
-      case "container":
       break;
       case "content":
       break;
@@ -1240,11 +1240,13 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "ay":
       break;
-      case "guildGameIds":
+      case "guildIconText":
       break;
-      case "frameX":
+      case "IconTextBadge":
       break;
-      case "user.id":
+      case "TextBadge":
+      break;
+      case "useTraitHiddenOnAndroid":
       break;
       case "dragOffsetFromRight":
       break;
@@ -1286,11 +1288,19 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "serializeEnd":
       break;
-      case "controlEdgeToEdgeValues":
+      case "discovery_splash":
       break;
-      case "supportsReferrerPolicy":
+      case "splash":
       break;
-      case "icymiDesktopEnabled":
+      case "hash_mask":
+      break;
+      case "maskContentUnits":
+      break;
+      case "captureBillingException":
+      break;
+      case "stateDataTranslator":
+      break;
+      case "LanternSpotIllustration":
       break;
       case "MarkupParserNodeTypeError":
       break;
@@ -1326,6 +1336,8 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "INVITE_EMBED_ACTIONED":
       break;
+      case "MarketingPageBanner":
+      break;
       case "rm":
       break;
       case "m":
@@ -1347,16 +1359,6 @@ const memoResult = importAllResult.memo((loadMore) => {
       case "CardA11yWrapper":
       break;
       case "perGuildMaxCount":
-      break;
-      case "isContentClassificationRestricted":
-      break;
-      case "getNextBatch":
-      break;
-      case "SDK_PACKAGE_NAME":
-      break;
-      case "MEMBER_REQUEST_COUNT":
-      break;
-      case "TOO_MANY_USER_GUILDS":
       break;
       case "getChannelIcon":
       break;
@@ -1394,7 +1396,9 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "SAFETY_HUB_GET_SUSPENDED_AGE_VERIFICATION_METHODS":
       break;
-      case "MESSAGE_REACTIONS":
+      case "earlyCacheInfo":
+      break;
+      case "footerSuggestionsContainer":
       break;
       case "$ZodCheckMaxLength":
       break;
@@ -1418,19 +1422,9 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "mit":
       break;
-      case "with_application":
+      case "with_bundled_skus":
       break;
-      case "_applicationResults":
-      break;
-      case "applicationResults":
-      break;
-      case "onResult":
-      break;
-      case "getGlobalScope":
-      break;
-      case "openGiftCodeRedeemModal":
-      break;
-      case "getChildNodes":
+      case "purchaseUpdatedListener":
       break;
       case "$ZodMap":
       break;
@@ -1442,17 +1436,9 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "$ZodCheckGreaterThan":
       break;
-      case "millisecondsInSecond":
+      case "renderExecutedCommands":
       break;
-      case "revealMessage":
-      break;
-      case "getAvatarDecoration":
-      break;
-      case "getAvatarDecorationURL":
-      break;
-      case "getCanUseMultiAccountMobile":
-      break;
-      case "MobileGoLiveEntrypointTreatment":
+      case "totalTokens":
       break;
       case "ToIntlMathematicalValue":
       break;
@@ -1472,7 +1458,7 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "be":
       break;
-      case "breadcrumbType":
+      case "benefitType":
       break;
       case "$ZodObject":
       break;
@@ -1496,25 +1482,21 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "rect":
       break;
-      case "PAYMENT_REQUEST_GOOGLE_PAYMENT_FAILED_TO_TOKENIZE":
-      break;
-      case "EXP_TABLE":
-      break;
-      case "TABLEROW_BACKGROUND_DEFAULT":
-      break;
-      case "DEFAULT_STATE":
+      case "SETTINGS_DESKTOP_APP":
       break;
       case "PX_80":
       break;
       case "_":
       break;
-      case "connectionType":
+      case "XFU":
       break;
-      case "connectionTypeBuckets":
+      case "computeEntries":
       break;
-      case "suggested_user":
+      case "subscription_trial":
       break;
-      case "suggested_user_id":
+      case "subscription_trial_id":
+      break;
+      case "trial_id":
       break;
       case "AUTO_MODERATION_REMOVE_REGEX_PATTERNS":
       break;
@@ -1536,9 +1518,19 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "perUserFpsWindow":
       break;
-      case "woman_and_man_holding_hands_tone1_tone5":
+      case "woman_and_man_holding_hands_tone2":
       break;
-      case "contentContainerHorizontal":
+      case "woman_and_man_holding_hands_tone2_tone1":
+      break;
+      case "_parsedMessages":
+      break;
+      case "parsed":
+      break;
+      case "parsedMessage":
+      break;
+      case "view_watch_time":
+      break;
+      case "timeToInteractiveMs":
       break;
       case "QUEST_DECISION_RECEIVED":
       break;
@@ -1584,10 +1576,6 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "et":
       break;
-      case "getGuildsTree":
-      break;
-      case "GuildsTree":
-      break;
       case "postformat":
       break;
       case "form":
@@ -1632,13 +1620,11 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "RTC_CONNECTION_FLAGS":
       break;
-      case "updateRsvp":
+      case "cacheDisabled":
       break;
-      case "gzindex":
+      case "ideograph_advantage":
       break;
-      case "indexChange":
-      break;
-      case "getAppIdForBotUserId":
+      case "getAppHardwareAccelerationEnabled":
       break;
       case "ActionSheetHeaderPressableText":
       break;
@@ -1648,7 +1634,7 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "ext":
       break;
-      case "isReduceTransparencyEnabled":
+      case "isReduceMotionEnabled":
       break;
       case "AccessibilityFocusView":
       break;
@@ -1731,8 +1717,6 @@ const memoResult = importAllResult.memo((loadMore) => {
       case "ModuleNotFoundError":
       break;
       case "du":
-      break;
-      case "KeyRingSpotIllustration":
       break;
       case "__i":
       break;
@@ -1820,15 +1804,7 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "redBoxV2Android":
       break;
-      case "cancelBubble":
-      break;
-      case "Teal":
-      break;
-      case "allowed_mentions":
-      break;
-      case "mentions":
-      break;
-      case "mentionsCount":
+      case "createPublicInstance":
       break;
       case "dist":
       break;
@@ -1841,6 +1817,10 @@ const memoResult = importAllResult.memo((loadMore) => {
       case "tan":
       break;
       case "ce":
+      break;
+      case "SETTINGS_SENSITIVE_MEDIA_FILTERS":
+      break;
+      case "SENSITIVE_MEDIA_FILTERS":
       break;
       case "access":
       break;
@@ -1862,17 +1842,27 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "bel":
       break;
-      case "isCreatingThread":
+      case "NOTIF_CENTER_ITEMS":
       break;
-      case "QUEST_BAR_V2":
+      case "NOTIF_CENTER_ITEMS_ACK":
+      break;
+      case "ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON":
+      break;
+      case "NER":
+      break;
+      case "FEED":
+      break;
+      case "BUTTON_CORNER_RADIUS":
+      break;
+      case "USER_CONTACTS_SYNC":
+      break;
+      case "PROFILE_THEMES_SETTINGS_VIEWED_V2":
       break;
       case "Role":
       break;
       case "RoleFlags":
       break;
       case "scrollToQuestId":
-      break;
-      case "leadingText":
       break;
       case "accessibleDismiss":
       break;
@@ -1920,31 +1910,35 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "ms":
       break;
-      case "available_regions":
+      case "useThenable":
       break;
-      case "_regions":
+      case "enableAccessibilityFocusLock":
       break;
-      case "region":
+      case "TWITTER_VERIFIED":
       break;
-      case "regions":
+      case "VERIFIED_TEEN":
       break;
-      case "showLocalTime":
+      case "TEEN_EXPLICIT_CONTENT_FILTER_TO_EXPLICIT_CONTENT_REDACTION_NON_FRIEND_DM":
       break;
-      case "woman_in_motorized_wheelchair_facing_right_tone1":
+      case "NON_FRIEND_DM":
       break;
-      case "man_in_motorized_wheelchair_facing_right_tone1":
+      case "DM_FRIEND_NUDGE":
       break;
-      case "family_adult_child":
+      case "STICKER_AUTOCOMPLETE":
       break;
-      case "family_adult_child_child":
+      case "AUTOCOMPLETE_OPTION_DEBOUNCE_TIME":
       break;
-      case "childButton":
+      case "TIME_OVER_DEADLINE":
       break;
-      case "childButtonText":
+      case "DEAD":
       break;
-      case "externalLinkIcon":
+      case "DEADLINE_INITIAL_TIME_REMAINING":
       break;
-      case "containerSelected":
+      case "GDPR_REQUEST_DATA":
+      break;
+      case "REQUEST_DATA":
+      break;
+      case "REQUEST_DATA_LIMIT_DAYS":
       break;
       case "GuildEntityDao":
       break;
@@ -1952,7 +1946,7 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "Dao":
       break;
-      case "replaceExports":
+      case "renderThreadEmbeds":
       break;
       case "app":
       break;
@@ -1970,13 +1964,17 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "io":
       break;
-      case "showGuildTag":
-      break;
-      case "GuildTagBadgeSize":
+      case "showHidden":
       break;
       case "_applyCombination":
       break;
       case "ly":
+      break;
+      case "trequest":
+      break;
+      case "requestActivityItems":
+      break;
+      case "black_nib":
       break;
       case "ios_backgroundColor":
       break;
@@ -2007,8 +2005,6 @@ const memoResult = importAllResult.memo((loadMore) => {
       case "FormSubmitErrorType":
       break;
       case "person_walking_facing_right_tone4":
-      break;
-      case "isMap":
       break;
       case "guildIconBorder":
       break;
@@ -2050,15 +2046,23 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "shiftLeft":
       break;
-      case "StreamingTier2LargeBadge":
+      case "_container":
       break;
-      case "PREMIUM_UPSELL_FILE_UPLOAD":
+      case "contain":
       break;
-      case "FILE_UPLOAD_250_MB":
+      case "containerBorderColor":
       break;
-      case "channelInfo":
+      case "ai":
       break;
-      case "channelInfoContainer":
+      case "ner":
+      break;
+      case "hasAction":
+      break;
+      case "hasActionSheetOpen":
+      break;
+      case "numFinished":
+      break;
+      case "channelContainer":
       break;
       case "DynamicallyInjectedByGestureHandler":
       break;
@@ -2114,7 +2118,11 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "ix8XIj":
       break;
-      case "navigationBarColor":
+      case "browserLinkedErrorsIntegration":
+      break;
+      case "onHasEdits":
+      break;
+      case "getSendMessageOptionsForReply":
       break;
       case "uni":
       break;
@@ -2128,7 +2136,7 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "rs":
       break;
-      case "addUserId":
+      case "adRequestId":
       break;
       case "disableGuildSelect":
       break;
@@ -2136,17 +2144,11 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "concatSettings":
       break;
-      case "subtitleWrapper":
+      case "subtractOrZero":
       break;
-      case "titleWrapper":
+      case "ROBOT_VOICE":
       break;
-      case "titleWrapperLegacy":
-      break;
-      case "LegacyFlatList":
-      break;
-      case "ReactionsSpotIllustration":
-      break;
-      case "friend_anniversary_notifications":
+      case "VOICE_ACTION_SHEET":
       break;
       case "$constructor":
       break;
@@ -2166,22 +2168,6 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "windowLength":
       break;
-      case "_container":
-      break;
-      case "contain":
-      break;
-      case "containerBorderColor":
-      break;
-      case "ai":
-      break;
-      case "ner":
-      break;
-      case "toy":
-      break;
-      case "getDefaultEnvironment":
-      break;
-      case "trackMobileForumComposerDismissed":
-      break;
       case "creative_content":
       break;
       case "_contentAvailable":
@@ -2198,13 +2184,7 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "contextBarRow":
       break;
-      case "withAffinitySuggestions":
-      break;
-      case "AffinitySuggestions":
-      break;
-      case "ffi":
-      break;
-      case "ug":
+      case "withAlphabeticalSections":
       break;
       case "AccountAgeTier10LargeBadge":
       break;
@@ -2212,11 +2192,7 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "Badge":
       break;
-      case "safeRe":
-      break;
-      case "cardType":
-      break;
-      case "getComboId":
+      case "getColorLightnessAdjusted":
       break;
       case "cr":
       break;
@@ -2238,19 +2214,13 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "CTALabel":
       break;
-      case "getUTCMilliseconds":
-      break;
-      case "secondsInQuarter":
+      case "selectionHandleColor":
       break;
       case "_$esjava$cursor":
       break;
       case "cursorColor":
       break;
       case "so":
-      break;
-      case "handleRedeemVirtualCurrencyFail":
-      break;
-      case "NitroRubyBadgeLargeBadge":
       break;
       case "_clientSdkMetadata":
       break;
@@ -2262,8 +2232,6 @@ const memoResult = importAllResult.memo((loadMore) => {
       break;
       case "dddd":
       break;
-      case "HIDE_TOOLTIP":
-      break;
       case "__defaultLocale":
       break;
       case "def":
@@ -2271,6 +2239,38 @@ const memoResult = importAllResult.memo((loadMore) => {
       case "defaultLocale":
       break;
       case "fa":
+      break;
+      case "au":
+      break;
+      case "lt":
+      break;
+      case "localeIdentifier":
+      break;
+      case "define":
+      break;
+      case "efi":
+      break;
+      case "fi":
+      break;
+      case "fin":
+      break;
+      case "undelete":
+      break;
+      case "del":
+      break;
+      case "deleteAllExcept":
+      break;
+      case "ele":
+      break;
+      case "ptt_start":
+      break;
+      case "_startMs":
+      break;
+      case "startMs":
+      break;
+      case "shouldUseDMWishlistGiftingDesign":
+      break;
+      case "connectOrLurkStage":
       break;
       default:
         loadMore(onSoftAckItem[65]).assertNever(item);

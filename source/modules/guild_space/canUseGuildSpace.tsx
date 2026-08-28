@@ -1,12 +1,12 @@
-// Module ID: 6023
-// Function ID: 6024
+// Module ID: 6036
+// Function ID: 6037
 // Name: isGuildSpaceAdmin
-// Dependencies: [1910, 4089, 676, 589, 6024, 2]
+// Dependencies: [1910, 4090, 676, 589, 6037, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin, useCanUseGuildSpace, useIsGuildSpaceAdmin
 
-// Module 6023 (isGuildSpaceAdmin)
+// Module 6036 (isGuildSpaceAdmin)
 import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4090 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;
@@ -36,7 +36,7 @@ export function canUseGuildSpace(closure_2, getChannelIdForGuildTransition) {
 }
 export const useCanUseGuildSpace = function useCanUseGuildSpace(id, useGuildActionRows) {
   let stateFromStores = id;
-  const guildSpaceExperimentEnabled = stateFromStores(6024).useGuildSpaceExperimentEnabled(id, useGuildActionRows);
+  const guildSpaceExperimentEnabled = stateFromStores(6037).useGuildSpaceExperimentEnabled(id, useGuildActionRows);
   let tmpResult = tmp(589);
   const items = [closure_2];
   const items1 = [id];

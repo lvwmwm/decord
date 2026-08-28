@@ -1,18 +1,18 @@
-// Module ID: 10000
-// Function ID: 10001
+// Module ID: 10018
+// Function ID: 10019
 // Name: handleKrispLinkPressed
-// Dependencies: [19, 17, 1302, 676, 21, 1995, 698, 1236, 4158, 589, 1363, 10001, 10002, 4441, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 1996, 698, 1236, 4159, 589, 1363, 10019, 10020, 4442, 2]
 // Exports: default
 
-// Module 10000 (handleKrispLinkPressed)
+// Module 10018 (handleKrispLinkPressed)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import combinedDefault from "combined" /* 1995 */;
-import _modDef4158 from "module_4158" /* 4158 */;
-import Text from "Text" /* 4441 */;
+import combinedDefault from "combined" /* 1996 */;
+import _modDef4159 from "module_4159" /* 4159 */;
+import Text from "Text" /* 4442 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
 import ME from "ME" /* 676 */;
@@ -30,7 +30,7 @@ function handleKrispLinkPressed() {
   obj[2] = obj;
   expandEventPropertiesDefault.track(constants.NOISE_CANCELLATION_LINK_CLICKED, obj);
   const obj2 = expandEventPropertiesDefault;
-  _modDef4158.openURL(articleURL);
+  _modDef4159.openURL(articleURL);
 }
 noopAll;
 ({ Image: c3, View: c4, Pressable: c5 } = get_ActivityIndicator);
@@ -45,9 +45,9 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   obj1 = AccessibilityAnnouncer;
   if (obj1.isThemeLight(stateFromStores)) {
-    let tmp4Result = tmp4(10001);
+    let tmp4Result = tmp4(10019);
   } else {
-    tmp4Result = tmp4(10002);
+    tmp4Result = tmp4(10020);
   }
   obj = { style: closure_13.detailsView, children: null };
   obj = { style: closure_13.logo, source: tmp4Result, accessibilityLabel: null };

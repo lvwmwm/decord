@@ -1,10 +1,10 @@
-// Module ID: 4535
-// Function ID: 4536
+// Module ID: 4536
+// Function ID: 4537
 // Name: hasRichActivity
 // Dependencies: [676, 2]
 // Exports: default
 
-// Module 4535 (hasRichActivity)
+// Module 4536 (hasRichActivity)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

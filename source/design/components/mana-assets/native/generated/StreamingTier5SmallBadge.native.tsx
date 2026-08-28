@@ -1,14 +1,14 @@
-// Module ID: 6999
-// Function ID: 7000
+// Module ID: 7012
+// Function ID: 7013
 // Name: StreamingTier5SmallBadge
-// Dependencies: [21, 5445, 7000, 2]
+// Dependencies: [21, 5458, 7013, 2]
 // Exports: StreamingTier5SmallBadge
 
-// Module 6999 (StreamingTier5SmallBadge)
+// Module 7012 (StreamingTier5SmallBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import vanityUrlDefault from "vanityUrl" /* 7000 */;
+import preloadDefault from "preload" /* 5458 */;
+import vanityUrlDefault from "vanityUrl" /* 7013 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier5SmallBadge.native.tsx");

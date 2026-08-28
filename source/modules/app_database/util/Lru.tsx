@@ -1,9 +1,9 @@
-// Module ID: 7159
-// Function ID: 7160
+// Module ID: 7173
+// Function ID: 7174
 // Name: length
 // Dependencies: [2]
 
-// Module 7159 (length)
+// Module 7173 (length)
 import set from "set" /* 2 */;
 
 class Lru {

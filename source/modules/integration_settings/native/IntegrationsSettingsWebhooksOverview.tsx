@@ -1,29 +1,29 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16351
+// Function ID: 16352
 // Name: WebhookItem
-// Dependencies: [5, 19, 1391, 1982, 1910, 4089, 1922, 16334, 676, 21, 4445, 712, 1500, 1435, 5551, 1297, 1236, 11, 4289, 589, 16335, 8297, 16336, 4172, 1995, 4441, 16338, 5944, 8295, 4878, 5891, 2]
+// Dependencies: [5, 19, 1391, 1983, 1910, 4090, 1923, 16352, 676, 21, 4446, 712, 1500, 1435, 5564, 1297, 1236, 11, 4290, 589, 16353, 8311, 16354, 4173, 1996, 4442, 16356, 5957, 8309, 4891, 5904, 2]
 // Exports: default
 
-// Module 16333 (WebhookItem)
+// Module 16351 (WebhookItem)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1995 */;
-import Stack from "Stack" /* 4878 */;
-import NavScrim from "NavScrim" /* 5891 */;
-import Form from "Form" /* 8295 */;
+import combinedDefault from "combined" /* 1996 */;
+import Stack from "Stack" /* 4891 */;
+import NavScrim from "NavScrim" /* 5904 */;
+import Form from "Form" /* 8309 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import comparator from "comparator" /* 1982 */;
-import closure_8 from "comparator" /* 1982 */;
+import comparator from "comparator" /* 1983 */;
+import closure_8 from "comparator" /* 1983 */;
 import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import closure_12 from "handleWebhookCreateUpdate" /* 16334 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_11 from "mergeGuildAvatar" /* 1923 */;
+import closure_12 from "handleWebhookCreateUpdate" /* 16352 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function WebhookItem(avatar) {
@@ -233,7 +233,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   let dkHRkE = dependencyMap;
   const helpText = self.getHelpText();
-  const items = [callback(webhookType(4441).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+  const items = [callback(webhookType(4442).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
   let tmp4Result = webhookType === constants2.INCOMING;
   if (tmp4Result) {
     let obj = { guild: null, channel: null };
@@ -244,7 +244,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   items[1] = tmp4Result;
   if (0 === found.length) {
     obj = { Illustration: null, title: null };
-    obj[0] = tmp5(16338).WebhookEmpty;
+    obj[0] = tmp5(16356).WebhookEmpty;
     if (webhookType === constants2.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1236).intl;
       dkHRkE = tmp5(1236).t.dkHRkE;
@@ -264,7 +264,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
       return closure_18(closure_23, obj, id);
     });
     obj1 = { children: null };
-    items[2] = tmp4(tmp5(5944).TableRowGroup, obj);
+    items[2] = tmp4(tmp5(5957).TableRowGroup, obj);
     obj1[0] = items;
     return closure_20(closure_19, obj1);
   }

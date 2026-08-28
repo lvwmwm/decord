@@ -1,21 +1,21 @@
-// Module ID: 14898
-// Function ID: 14899
+// Module ID: 14883
+// Function ID: 14884
 // Name: ChatPreview
-// Dependencies: [19, 17, 21, 4445, 712, 8008, 1947, 8459, 1236, 2727, 10778, 4131, 1297, 8846, 8847, 4441, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 8022, 1948, 8473, 1236, 2728, 10796, 4132, 1297, 8863, 8864, 4442, 2]
 // Exports: default
 
-// Module 14898 (ChatPreview)
+// Module 14883 (ChatPreview)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import messagesProxyDefault from "messagesProxy" /* 2727 */;
-import Text from "Text" /* 4441 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8846 */;
-import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 8847 */;
+import messagesProxyDefault from "messagesProxy" /* 2728 */;
+import Text from "Text" /* 4442 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8863 */;
+import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 8864 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function ChatPreview(arg0) {

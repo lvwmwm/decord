@@ -1,19 +1,19 @@
-// Module ID: 9618
-// Function ID: 9619
+// Module ID: 9636
+// Function ID: 9637
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 1391, 4089, 7204, 1397, 676, 21, 4445, 1236, 9596, 589, 1500, 9619, 9601, 4441, 4880, 1892, 9595, 1351, 9599, 9647, 4043, 9648, 9649, 2]
+// Dependencies: [32, 19, 1391, 4090, 7218, 1397, 676, 21, 4446, 1236, 9614, 589, 1500, 9637, 9619, 4442, 4893, 1892, 9613, 1351, 9617, 9665, 4044, 9666, 9667, 2]
 // Exports: default
 
-// Module 9618 (EditGuildEventWhere)
+// Module 9636 (EditGuildEventWhere)
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import { isGuildScheduledEventActive as closure_8 } from "scheduledEventSort" /* 7204 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
+import { isGuildScheduledEventActive as closure_8 } from "scheduledEventSort" /* 7218 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ AGE_VERIFICATION_STAGE_CHANNEL_TYPES: c9, GuildScheduledEventEntityTypes: c10 } = GUILD_EVENT_MAX_NAME_LENGTH);
@@ -111,7 +111,7 @@ export default function EditGuildEventWhere(guild) {
               const error1 = new Error(intl2.string(tmp3(1236).t.q91szp));
               throw error1;
             }
-            obj = callback(9596);
+            obj = callback(9614);
           }
           if (null == tmp) {
             if (entityType !== tmp2.EXTERNAL) {
@@ -150,7 +150,7 @@ export default function EditGuildEventWhere(guild) {
       entityType: guildEvent.entityType,
       onChange(entityType) {
         _undefined(null);
-        const obj = { entityType, scheduledEndTime: "Array" };
+        const obj = { entityType, scheduledEndTime: "r" };
         if (entityType === closure_1_10.EXTERNAL) {
           let obj2 = guildEvent(ref[22])(guildEvent.scheduledStartTime);
           if (obj2 == null) {
@@ -174,7 +174,7 @@ export default function EditGuildEventWhere(guild) {
     entityType: guildEvent.entityType,
     onChange(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "Array" };
+      const obj = { entityType, scheduledEndTime: "r" };
       if (entityType === closure_1_10.EXTERNAL) {
         let obj2 = guildEvent(ref[22])(guildEvent.scheduledStartTime);
         if (obj2 == null) {

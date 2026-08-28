@@ -1,14 +1,14 @@
-// Module ID: 7802
-// Function ID: 7803
+// Module ID: 7816
+// Function ID: 7817
 // Name: getMessageAuthorWithProcessedColor
-// Dependencies: [17, 4699, 7803, 2]
+// Dependencies: [17, 4712, 7817, 2]
 // Exports: getMessageAuthorWithProcessedColor, getUserAuthorWithProcessedColor
 
-// Module 7802 (getMessageAuthorWithProcessedColor)
+// Module 7816 (getMessageAuthorWithProcessedColor)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4699 */;
-import processColorStrings from "processColorStrings" /* 7803 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4712 */;
+import processColorStrings from "processColorStrings" /* 7817 */;
 
 const processColor = get_ActivityIndicator.processColor;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/useAuthorWithProcessedColor.tsx");

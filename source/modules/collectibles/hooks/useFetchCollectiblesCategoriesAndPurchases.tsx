@@ -1,15 +1,15 @@
-// Module ID: 8016
-// Function ID: 8017
+// Module ID: 8030
+// Function ID: 8031
 // Name: useFetchPurchases
-// Dependencies: [32, 19, 4358, 7236, 647, 7219, 8017, 2]
+// Dependencies: [32, 19, 4359, 7250, 647, 7233, 8031, 2]
 // Exports: useGetOrFetchCollectiblesCategoriesAndPurchases, useGetOrFetchPurchase, useGetOrFetchPurchases
 
-// Module 8016 (useFetchPurchases)
-import setDefault from "set" /* 8017 */;
+// Module 8030 (useFetchPurchases)
+import setDefault from "set" /* 8031 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
-import closure_6 from "getHash" /* 4358 */;
-import closure_7 from "map" /* 7236 */;
+import closure_6 from "getHash" /* 4359 */;
+import closure_7 from "map" /* 7250 */;
 
 const require = arg1;
 function useFetchPurchases(flag) {

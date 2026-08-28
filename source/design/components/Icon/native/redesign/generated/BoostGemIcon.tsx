@@ -1,14 +1,14 @@
-// Module ID: 8166
-// Function ID: 8167
+// Module ID: 8180
+// Function ID: 8181
 // Name: BoostGemIcon
-// Dependencies: [19, 21, 712, 4164, 8167, 2]
+// Dependencies: [19, 21, 712, 4165, 8181, 2]
 // Exports: BoostGemIcon
 
-// Module 8166 (BoostGemIcon)
+// Module 8180 (BoostGemIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 8167 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 8181 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,22 +1,22 @@
-// Module ID: 16022
-// Function ID: 16023
+// Module ID: 16040
+// Function ID: 16041
 // Name: CutoutGuildIcon
-// Dependencies: [32, 19, 17, 1910, 8537, 21, 4445, 712, 8030, 5956, 589, 4380, 8550, 8552, 4185, 4879, 1503, 5020, 14607, 4441, 1236, 1363, 2]
+// Dependencies: [32, 19, 17, 1910, 8552, 21, 4446, 712, 8044, 5969, 589, 4381, 8565, 8567, 4186, 4892, 1503, 5033, 14591, 4442, 1236, 1363, 2]
 // Exports: default
 
-// Module 16022 (CutoutGuildIcon)
+// Module 16040 (CutoutGuildIcon)
 import ThemesDefault from "Themes" /* 712 */;
-import GuildIconSizes from "GuildIconSizes" /* 5956 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5956 */;
-import SolidCutout from "SolidCutout" /* 8030 */;
-import SolidCutoutDefault from "SolidCutout" /* 8030 */;
+import GuildIconSizes from "GuildIconSizes" /* 5969 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5969 */;
+import SolidCutout from "SolidCutout" /* 8044 */;
+import SolidCutoutDefault from "SolidCutout" /* 8044 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "filterStaffGuild" /* 8537 */;
+import closure_8 from "filterStaffGuild" /* 8552 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function CutoutGuildIcon(guild) {

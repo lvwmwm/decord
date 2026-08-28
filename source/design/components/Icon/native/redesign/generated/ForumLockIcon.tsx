@@ -1,14 +1,14 @@
-// Module ID: 4987
-// Function ID: 4988
+// Module ID: 5000
+// Function ID: 5001
 // Name: ForumLockIcon
-// Dependencies: [19, 21, 712, 4164, 4968, 2]
+// Dependencies: [19, 21, 712, 4165, 4981, 2]
 // Exports: ForumLockIcon
 
-// Module 4987 (ForumLockIcon)
+// Module 5000 (ForumLockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4968 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 4981 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

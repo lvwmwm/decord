@@ -1,9 +1,9 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 17358
+// Function ID: 17359
 // Name: AVErrorStreamFailedToStartDefinition
-// Dependencies: [676, 9486, 17331, 4511, 2]
+// Dependencies: [676, 9504, 17349, 4512, 2]
 
-// Module 17340 (AVErrorStreamFailedToStartDefinition)
+// Module 17358 (AVErrorStreamFailedToStartDefinition)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 
@@ -21,9 +21,9 @@ export const AVErrorStreamFailedToStartDefinition = {
       return tmp;
     });
     return found.map((currentUserActiveStream) => {
-      const obj = { type: callback(9486).AVError.STREAM_FAILED_TO_START };
-      const obj2 = callback(17331);
-      const merged = Object.assign(obj2.getStreamErrorContext(callback(4511).encodeStreamKey(currentUserActiveStream)));
+      const obj = { type: callback(9504).AVError.STREAM_FAILED_TO_START };
+      const obj2 = callback(17349);
+      const merged = Object.assign(obj2.getStreamErrorContext(callback(4512).encodeStreamKey(currentUserActiveStream)));
       return obj;
     });
   },

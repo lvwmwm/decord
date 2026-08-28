@@ -1,12 +1,12 @@
-// Module ID: 5360
-// Function ID: 5361
+// Module ID: 5373
+// Function ID: 5374
 // Name: dedupeEmojisByNameOrId
-// Dependencies: [4102, 2]
+// Dependencies: [4103, 2]
 // Exports: default
 
-// Module 5360 (dedupeEmojisByNameOrId)
+// Module 5373 (dedupeEmojisByNameOrId)
 import set from "set" /* 2 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4102 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4103 */;
 
 let result = set.fileFinishedImporting("modules/emojis/utils/dedupeEmojisByNameOrId.tsx");
 

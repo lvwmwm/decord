@@ -1,24 +1,24 @@
-// Module ID: 14489
-// Function ID: 14490
+// Module ID: 14473
+// Function ID: 14474
 // Name: OverlappingSchedulesWarning
-// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4412, 9608, 2009, 4445, 712, 1297, 4878, 4441, 1236, 2369, 1500, 7093, 10086, 647, 14490, 14491, 4403, 5944, 5945, 5551, 5505, 4880, 2]
+// Dependencies: [5, 32, 19, 17, 1923, 676, 21, 4413, 9626, 2010, 4446, 712, 1297, 4891, 4442, 1236, 2370, 1500, 7106, 10104, 647, 14474, 14475, 4404, 5957, 5958, 5564, 5518, 4893, 2]
 // Exports: default
 
-// Module 14489 (OverlappingSchedulesWarning)
+// Module 14473 (OverlappingSchedulesWarning)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button2 from "Button" /* 1297 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import Text from "Text" /* 4441 */;
-import Stack from "Stack" /* 4878 */;
+import messagesProxyDefault from "messagesProxy" /* 2370 */;
+import Text from "Text" /* 4442 */;
+import Stack from "Stack" /* 4891 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "mergeGuildAvatar" /* 1923 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function OverlappingSchedulesWarning(conflictingEntries) {
@@ -567,9 +567,9 @@ export default function ScheduleDowntimeScreen() {
     obj10[1] = callback2(tmp2(stringResult[14]).Text, obj11);
     obj10[3] = function handleStartTimePress() {
       const intl = lib(rule[15]).intl;
-      const f113069 = (first1) => {
+      const f113114 = (first1) => {
         callback(first1);
-        let obj = f113069(closure_1_2[19]);
+        let obj = f113114(closure_1_2[19]);
         const result = (obj.timeToMinutes(first1) + 540) % 1440;
         obj = { hours: Math.floor(result / 60), minutes: result % 60 };
         callback2(obj);

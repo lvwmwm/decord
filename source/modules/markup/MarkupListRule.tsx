@@ -1,11 +1,11 @@
-// Module ID: 4930
-// Function ID: 4931
+// Module ID: 4943
+// Function ID: 4944
 // Name: regExp
-// Dependencies: [4160, 38, 2]
+// Dependencies: [4161, 38, 2]
 
-// Module 4930 (regExp)
+// Module 4943 (regExp)
 import _modDef38 from "module_38" /* 38 */;
-import tDefault from "t" /* 4160 */;
+import tDefault from "t" /* 4161 */;
 import closure_10 from "module_0" /* 0 */;
 
 const re2 = /\n{2,}$/;

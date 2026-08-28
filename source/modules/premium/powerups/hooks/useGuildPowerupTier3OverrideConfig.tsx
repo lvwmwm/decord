@@ -1,11 +1,11 @@
-// Module ID: 12035
-// Function ID: 12036
+// Module ID: 12054
+// Function ID: 12055
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [1910, 676, 589, 1236, 2401, 2]
+// Dependencies: [1910, 676, 589, 1236, 2402, 2]
 // Exports: default
 
-// Module 12035 (useGuildPowerupTier3OverrideConfig)
-import messagesProxyDefault from "messagesProxy" /* 2401 */;
+// Module 12054 (useGuildPowerupTier3OverrideConfig)
+import messagesProxyDefault from "messagesProxy" /* 2402 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
 import { GuildFeatures } from "ME" /* 676 */;
 

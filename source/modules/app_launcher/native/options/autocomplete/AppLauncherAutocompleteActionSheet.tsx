@@ -1,24 +1,24 @@
-// Module ID: 11658
-// Function ID: 11659
+// Module ID: 11677
+// Function ID: 11678
 // Name: Item
-// Dependencies: [32, 19, 17, 7456, 1910, 676, 4904, 21, 12, 8370, 4445, 712, 647, 4412, 11653, 11654, 1236, 38, 5551, 4658, 4441, 1297, 11655, 2]
+// Dependencies: [32, 19, 17, 7470, 1910, 676, 4917, 21, 12, 8384, 4446, 712, 647, 4413, 11672, 11673, 1236, 38, 5564, 4671, 4442, 1297, 11674, 2]
 // Exports: default
 
-// Module 11658 (Item)
+// Module 11677 (Item)
 import _modDef38 from "module_38" /* 38 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import t from "t" /* 4658 */;
-import _executeCommandDefault from "_executeCommand" /* 8370 */;
-import registerAssetDefault from "registerAsset" /* 11655 */;
+import t from "t" /* 4671 */;
+import _executeCommandDefault from "_executeCommand" /* 8384 */;
+import registerAssetDefault from "registerAsset" /* 11674 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleInit" /* 7456 */;
+import closure_6 from "handleInit" /* 7470 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;

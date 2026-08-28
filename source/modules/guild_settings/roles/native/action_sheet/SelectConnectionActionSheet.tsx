@@ -1,18 +1,18 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17153
+// Function ID: 17154
 // Name: IdentityApplicationRow
-// Dependencies: [32, 19, 17, 21, 11078, 5551, 1297, 4380, 5573, 1236, 7181, 1435, 1363, 4412, 9181, 5941, 9683, 5576, 5505, 5944, 2]
+// Dependencies: [32, 19, 17, 21, 11096, 5564, 1297, 4381, 5586, 1236, 7195, 1435, 1363, 4413, 9199, 5954, 9701, 5589, 5518, 5957, 2]
 // Exports: default
 
-// Module 17135 (IdentityApplicationRow)
+// Module 17153 (IdentityApplicationRow)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useThemeDefault from "useTheme" /* 4380 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5505 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5573 */;
-import BottomSheetModal from "BottomSheetModal" /* 5576 */;
-import ActionSheet from "ActionSheet" /* 5941 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5944 */;
-import request from "request" /* 11078 */;
+import useThemeDefault from "useTheme" /* 4381 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5518 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5586 */;
+import BottomSheetModal from "BottomSheetModal" /* 5589 */;
+import ActionSheet from "ActionSheet" /* 5954 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5957 */;
+import request from "request" /* 11096 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -43,7 +43,7 @@ function IdentityApplicationRow(arg0) {
     }
     obj[2] = description;
     obj[3] = onPress;
-    return closure_6(tmp(5551).TableRow, obj);
+    return closure_6(tmp(5564).TableRow, obj);
   }
 }
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -78,7 +78,7 @@ export default function SelectConnectionActionSheet(arg0) {
       return tmp2;
     });
   }
-  let tmp3Result = tmp3(7181);
+  let tmp3Result = tmp3(7195);
   const platforms = tmp3Result.usePlatforms();
   const found1 = platforms.filter((type) => !set.has(type.type));
   let mapped1;
@@ -159,7 +159,7 @@ export default function SelectConnectionActionSheet(arg0) {
     const intl4 = tmp3(1236).intl;
     items.push(intl4.string(tmp3(1236).t.y3ZnnU));
   }
-  tmp3Result = tmp3(9181);
+  tmp3Result = tmp3(9199);
   obj = { pageWidth: 0, defaultIndex: first, onSetActiveIndex: tmp5[1], items: items.map((id) => ({ id, label: id, page: null })) };
   const segmentedControlState = tmp3Result.useSegmentedControlState(obj);
   if (1 === first) {
@@ -178,7 +178,7 @@ export default function SelectConnectionActionSheet(arg0) {
     obj1 = { children: null };
     const obj2 = { state: null };
     obj2[0] = segmentedControlState;
-    obj1[0] = tmp2(tmp3(9683).SegmentedControl, obj2);
+    obj1[0] = tmp2(tmp3(9701).SegmentedControl, obj2);
     let tmp2Result = tmp2(closure_5, obj1);
   } else {
     tmp2Result = null;

@@ -1,15 +1,15 @@
-// Module ID: 16895
-// Function ID: 16896
+// Module ID: 16913
+// Function ID: 16914
 // Name: onPostConnectionOpen
-// Dependencies: [5, 17, 1922, 676, 5438, 500, 16896, 530, 1208, 698, 2]
+// Dependencies: [5, 17, 1923, 676, 5451, 500, 16914, 530, 1208, 698, 2]
 
-// Module 16895 (onPostConnectionOpen)
+// Module 16913 (onPostConnectionOpen)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import _modDef1208 from "module_1208" /* 1208 */;
-import initializeDefault from "initialize" /* 5438 */;
+import initializeDefault from "initialize" /* 5451 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;

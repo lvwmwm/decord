@@ -1,15 +1,15 @@
-// Module ID: 8046
-// Function ID: 8047
+// Module ID: 8060
+// Function ID: 8061
 // Name: useDisplayProfile
-// Dependencies: [19, 1922, 7299, 589, 8047, 1991, 8050, 2]
+// Dependencies: [19, 1923, 7313, 589, 8061, 1992, 8064, 2]
 // Exports: default, getDisplayProfile, useDisplayProfileWithFetchEffect
 
-// Module 8046 (useDisplayProfile)
-import premiumSinceDefault from "premiumSince" /* 8050 */;
+// Module 8060 (useDisplayProfile)
+import premiumSinceDefault from "premiumSince" /* 8064 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "createUserWidgetFromServer" /* 7299 */;
-import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1991 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "createUserWidgetFromServer" /* 7313 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1992 */;
 
 const require = arg1;
 let closure_6 = areArraysShallowlyEqual.cachedFunction((arg0, arg1) => new premiumSinceDefault(arg0, arg1));

@@ -1,9 +1,9 @@
-// Module ID: 9010
-// Function ID: 9011
+// Module ID: 9028
+// Function ID: 9029
 // Name: enforcing
 // Dependencies: [17, 2]
 
-// Module 9010 (enforcing)
+// Module 9028 (enforcing)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 9621
-// Function ID: 9622
+// Module ID: 9639
+// Function ID: 9640
 // Name: useStageChannelUpsellCardStore
-// Dependencies: [1397, 700, 595, 705, 4074, 2]
+// Dependencies: [1397, 700, 595, 705, 4075, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 9621 (useStageChannelUpsellCardStore)
+// Module 9639 (useStageChannelUpsellCardStore)
 import set from "set" /* 2 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
-import isIterable from "isIterable" /* 4074 */;
+import isIterable from "isIterable" /* 4075 */;
 import identity from "identity" /* 700 */;
 
 let closure_2 = GUILD_EVENT_MAX_NAME_LENGTH.GUILD_EVENT_STAGE_UPSELL_CARD_KEY;

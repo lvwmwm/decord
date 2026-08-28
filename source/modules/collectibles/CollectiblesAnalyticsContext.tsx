@@ -1,10 +1,10 @@
-// Module ID: 8813
-// Function ID: 8814
+// Module ID: 8830
+// Function ID: 8831
 // Name: context
 // Dependencies: [19, 21, 2]
 // Exports: CollectiblesAnalyticsProvider, useCollectiblesAnalyticsContext
 
-// Module 8813 (context)
+// Module 8830 (context)
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

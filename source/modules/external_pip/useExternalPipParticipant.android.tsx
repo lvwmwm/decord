@@ -1,17 +1,17 @@
-// Module ID: 16498
-// Function ID: 16499
+// Module ID: 16516
+// Function ID: 16517
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4461, 1218, 4496, 4519, 4466, 589, 2]
+// Dependencies: [32, 19, 4462, 1218, 4497, 4520, 4467, 589, 2]
 // Exports: default
 
-// Module 16498 (useExternalPipParticipant)
+// Module 16516 (useExternalPipParticipant)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getParticipants" /* 4461 */;
+import closure_4 from "getParticipants" /* 4462 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_7 from "createRTCConnection" /* 4519 */;
-import ParticipantTypes from "ParticipantTypes" /* 4466 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_7 from "createRTCConnection" /* 4520 */;
+import ParticipantTypes from "ParticipantTypes" /* 4467 */;
 
 const require = arg1;
 ({ isStreamParticipant: closure_8, ParticipantTypes: c9 } = ParticipantTypes);
@@ -265,7 +265,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "accessibilityRole" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "container" };
   }, items4);
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];
   const effect = React.useEffect(() => {

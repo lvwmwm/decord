@@ -1,10 +1,10 @@
-// Module ID: 10451
-// Function ID: 10452
+// Module ID: 10467
+// Function ID: 10468
 // Name: useTimeout
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 10451 (useTimeout)
+// Module 10467 (useTimeout)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 16635
-// Function ID: 16636
+// Module ID: 16653
+// Function ID: 16654
 // Name: UserVideoFailed
-// Dependencies: [17, 676, 21, 4445, 712, 9486, 9491, 4441, 1236, 4880, 9502, 4544, 9702, 2]
+// Dependencies: [17, 676, 21, 4446, 712, 9504, 9509, 4442, 1236, 4893, 9520, 4545, 9720, 2]
 // Exports: default
 
-// Module 16635 (UserVideoFailed)
+// Module 16653 (UserVideoFailed)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import mapped from "mapped" /* 9486 */;
+import Text from "Text" /* 4442 */;
+import mapped from "mapped" /* 9504 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const View = get_ActivityIndicator.View;
 const VideoToggleState = ME.VideoToggleState;
@@ -40,7 +40,7 @@ export default function UserVideoFailed(arg0) {
   if (!removeSplashImage) {
     obj = { style: null };
     obj[0] = tmp2.placeholderImage;
-    tmp9 = callback(tmp3(9491).StreamFailed, obj);
+    tmp9 = callback(tmp3(9509).StreamFailed, obj);
   }
   obj1 = { children: null };
   const items1 = [tmp9, ];
@@ -68,7 +68,7 @@ export default function UserVideoFailed(arg0) {
         closure_1_1(closure_1_2[12]).setDisableLocalVideo(closure_0, closure_1_4.MANUAL_ENABLED, closure_1_0(closure_1_2[11]).MediaEngineContextTypes.DEFAULT, false);
       }, 1000);
     };
-    tmp11Result = tmp11(tmp3(4880).Button, obj5);
+    tmp11Result = tmp11(tmp3(4893).Button, obj5);
   }
   obj4[1] = tmp11Result;
   items2[2] = callback(View, obj4);

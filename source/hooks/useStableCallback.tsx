@@ -1,11 +1,11 @@
-// Module ID: 7670
-// Function ID: 7671
+// Module ID: 7684
+// Function ID: 7685
 // Name: set
-// Dependencies: [2, 7671]
+// Dependencies: [2, 7685]
 
-// Module 7670 (set)
+// Module 7684 (set)
 import set from "set" /* 2 */;
-import useStableCallbackDefault from "useStableCallback" /* 7671 */;
+import useStableCallbackDefault from "useStableCallback" /* 7685 */;
 
 const result = set.fileFinishedImporting("hooks/useStableCallback.tsx");
 

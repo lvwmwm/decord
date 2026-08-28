@@ -1,10 +1,10 @@
-// Module ID: 15052
-// Function ID: 15053
+// Module ID: 15038
+// Function ID: 15039
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: isEligibleForProfileUpdatesNotificationsToggle, useProfileUpdatesNotificationExperiment
 
-// Module 15052 (apexExperiment)
+// Module 15038 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

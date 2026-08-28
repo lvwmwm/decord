@@ -1,10 +1,10 @@
-// Module ID: 4905
-// Function ID: 4906
+// Module ID: 4918
+// Function ID: 4919
 // Name: regExp
 // Dependencies: [2]
 // Exports: extractGameMentionIds, formatGameMentionRaw, formatGameMentionToken
 
-// Module 4905 (regExp)
+// Module 4918 (regExp)
 import set from "set" /* 2 */;
 
 let closure_0 = [];

@@ -1,14 +1,14 @@
-// Module ID: 10350
-// Function ID: 10351
+// Module ID: 10368
+// Function ID: 10369
 // Name: PollsIcon
-// Dependencies: [19, 21, 712, 4164, 10351, 2]
+// Dependencies: [19, 21, 712, 4165, 10369, 2]
 // Exports: PollsIcon
 
-// Module 10350 (PollsIcon)
+// Module 10368 (PollsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 10351 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 10369 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

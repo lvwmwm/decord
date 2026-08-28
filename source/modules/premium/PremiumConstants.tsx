@@ -1,14 +1,14 @@
-// Module ID: 1924
-// Function ID: 1925
+// Module ID: 1925
+// Function ID: 1926
 // Name: GuildFeatures
-// Dependencies: [676, 1925, 1236, 1926, 679, 2, 1927]
+// Dependencies: [676, 1926, 1236, 1927, 679, 2, 1928]
 
-// Module 1924 (GuildFeatures)
+// Module 1925 (GuildFeatures)
 import set7 from "set" /* 679 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import set8 from "set" /* 1925 */;
-import BadgeRarity from "BadgeRarity" /* 1926 */;
-import GiftIntentType from "GiftIntentType" /* 1927 */;
+import set8 from "set" /* 1926 */;
+import BadgeRarity from "BadgeRarity" /* 1927 */;
+import GiftIntentType from "GiftIntentType" /* 1928 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

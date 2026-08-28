@@ -1,20 +1,20 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16822
+// Function ID: 16823
 // Name: _initialize
-// Dependencies: [4468, 4496, 4519, 5175, 5315, 4520, 676, 687, 5438, 4329, 4653, 16234, 4619, 2]
+// Dependencies: [4469, 4497, 4520, 5188, 5328, 4521, 676, 687, 5451, 4330, 4666, 16252, 4620, 2]
 
-// Module 16804 (_initialize)
+// Module 16822 (_initialize)
 import setDefault from "set" /* 687 */;
-import _openRobloxURLWithRootPlaceId from "_openRobloxURLWithRootPlaceId" /* 4619 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
-import initializeDefault from "initialize" /* 5438 */;
-import getGamePlatformDefault from "getGamePlatform" /* 16234 */;
-import closure_3 from "initialize" /* 4468 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_5 from "createRTCConnection" /* 4519 */;
-import closure_6 from "filterPlayingActivities" /* 5175 */;
-import closure_7 from "anyoneHasFlagInContext" /* 5315 */;
-import closure_8 from "getVoiceStatesForGuild" /* 4520 */;
+import _openRobloxURLWithRootPlaceId from "_openRobloxURLWithRootPlaceId" /* 4620 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4666 */;
+import initializeDefault from "initialize" /* 5451 */;
+import getGamePlatformDefault from "getGamePlatform" /* 16252 */;
+import closure_3 from "initialize" /* 4469 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_5 from "createRTCConnection" /* 4520 */;
+import closure_6 from "filterPlayingActivities" /* 5188 */;
+import closure_7 from "anyoneHasFlagInContext" /* 5328 */;
+import closure_8 from "getVoiceStatesForGuild" /* 4521 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

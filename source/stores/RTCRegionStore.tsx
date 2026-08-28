@@ -1,9 +1,9 @@
-// Module ID: 4540
-// Function ID: 4541
+// Module ID: 4541
+// Function ID: 4542
 // Name: initialize
 // Dependencies: [687, 589, 12, 709, 2]
 
-// Module 4540 (initialize)
+// Module 4541 (initialize)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;

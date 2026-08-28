@@ -1,15 +1,15 @@
-// Module ID: 15540
-// Function ID: 15541
+// Module ID: 15558
+// Function ID: 15559
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 676, 4438, 11749, 1222, 7135, 4162, 1236, 11748, 15541, 2]
+// Dependencies: [5, 32, 19, 676, 4439, 11768, 1222, 7148, 4163, 1236, 11767, 15559, 2]
 // Exports: default
 
-// Module 15540 (usePrivateChannelWave)
+// Module 15558 (usePrivateChannelWave)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import ME from "ME" /* 676 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4438 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4439 */;
 
 const require = arg1;
 ({ ME: closure_6, Routes: error } = ME);
@@ -113,7 +113,7 @@ export default function usePrivateChannelWave(id) {
       }
     }
   }), items);
-  obj[0] = _require(15541).usePrivateChannelWaveEligible(id, arg1);
+  obj[0] = _require(15559).usePrivateChannelWaveEligible(id, arg1);
   obj[1] = callback;
   return obj;
 };

@@ -1,29 +1,29 @@
-// Module ID: 10572
-// Function ID: 10573
+// Module ID: 10590
+// Function ID: 10591
 // Name: handleVoiceOrStageChannelConnectPress
-// Dependencies: [5, 19, 10573, 6127, 1396, 5401, 1395, 5437, 1391, 7205, 1910, 4089, 4460, 4098, 1981, 4654, 1922, 676, 10574, 21, 8595, 2009, 4680, 1236, 10575, 8819, 4386, 4458, 4639, 4809, 10246, 10577, 4388, 4676, 10588, 3147, 9276, 1222, 10608, 10224, 10035, 9829, 10610, 5433, 4300, 5503, 10612, 8661, 10613, 10614, 10616, 10239, 10240, 10242, 7676, 5430, 10158, 9667, 5439, 5434, 10618, 8677, 4974, 10620, 10621, 4998, 4972, 4412, 10622, 10623, 4674, 8596, 8715, 8681, 7674, 5409, 6192, 4392, 9627, 8969, 5933, 4161, 5905, 5925, 10226, 589, 1399, 7213, 7560, 4134, 5956, 1297, 10624, 10631, 10632, 5941, 1625, 10655, 5943, 2]
+// Dependencies: [5, 19, 10591, 6140, 1396, 5414, 1395, 5450, 1391, 7219, 1910, 4090, 4461, 4099, 1982, 4667, 1923, 676, 10592, 21, 8610, 2010, 4693, 1236, 10593, 8836, 4387, 4459, 4640, 4822, 10264, 10595, 4389, 4689, 10606, 3148, 9294, 1222, 10626, 10242, 10053, 9847, 10628, 5446, 4301, 5516, 10630, 8677, 10631, 10632, 10634, 10257, 10258, 10260, 7690, 5443, 10176, 9685, 5452, 5447, 10636, 8693, 4987, 10638, 10639, 5011, 4985, 4413, 10640, 10641, 4687, 8611, 8731, 8697, 7688, 5422, 6205, 4393, 9645, 8987, 5946, 4162, 5918, 5938, 10244, 589, 1399, 7227, 7574, 4135, 5969, 1297, 10642, 10649, 10650, 5954, 1625, 10673, 5956, 2]
 // Exports: default
 
-// Module 10572 (handleVoiceOrStageChannelConnectPress)
+// Module 10590 (handleVoiceOrStageChannelConnectPress)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 10573 */;
-import closure_6 from "initialize" /* 6127 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 10591 */;
+import closure_6 from "initialize" /* 6140 */;
 import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import closure_8 from "handleThreadCreateOrUpdate" /* 5401 */;
+import closure_8 from "handleThreadCreateOrUpdate" /* 5414 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
-import closure_13 from "incrementVersion" /* 5437 */;
+import closure_13 from "incrementVersion" /* 5450 */;
 import closure_14 from "ensureGuildLoaded" /* 1391 */;
-import closure_15 from "handleConnectionOpen" /* 7205 */;
+import closure_15 from "handleConnectionOpen" /* 7219 */;
 import closure_16 from "createGuildRecordFromRust" /* 1910 */;
-import closure_17 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_18 from "generateOldThreadCutoff" /* 4460 */;
-import closure_19 from "markAllUserIdListsStale" /* 4098 */;
-import closure_20 from "handleConnectionOpen" /* 1981 */;
-import closure_21 from "updateUserGuildSettingsInternal" /* 4654 */;
-import closure_22 from "mergeGuildAvatar" /* 1922 */;
+import closure_17 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_18 from "generateOldThreadCutoff" /* 4461 */;
+import closure_19 from "markAllUserIdListsStale" /* 4099 */;
+import closure_20 from "handleConnectionOpen" /* 1982 */;
+import closure_21 from "updateUserGuildSettingsInternal" /* 4667 */;
+import closure_22 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import { ChannelDetailsNavigatorScreens as closure_32 } from "ChannelDetailsNavigatorScreens" /* 10574 */;
+import { ChannelDetailsNavigatorScreens as closure_32 } from "ChannelDetailsNavigatorScreens" /* 10592 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

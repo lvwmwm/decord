@@ -1,12 +1,12 @@
-// Module ID: 8827
-// Function ID: 8828
+// Module ID: 8844
+// Function ID: 8845
 // Name: useAvatarDecoration
-// Dependencies: [32, 1992, 647, 2]
+// Dependencies: [32, 1993, 647, 2]
 // Exports: getAvatarDecoration, useAvatarDecoration
 
-// Module 8827 (useAvatarDecoration)
+// Module 8844 (useAvatarDecoration)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
+import closure_3 from "trackCommunicationDisabled" /* 1993 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecoration.tsx");

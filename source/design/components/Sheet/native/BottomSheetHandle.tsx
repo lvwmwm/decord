@@ -1,10 +1,10 @@
-// Module ID: 5888
-// Function ID: 5889
+// Module ID: 5901
+// Function ID: 5902
 // Name: useBottomSheetImperativeHandle
 // Dependencies: [19, 2]
 // Exports: useBottomSheetImperativeHandle
 
-// Module 5888 (useBottomSheetImperativeHandle)
+// Module 5901 (useBottomSheetImperativeHandle)
 import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("design/components/Sheet/native/BottomSheetHandle.tsx");

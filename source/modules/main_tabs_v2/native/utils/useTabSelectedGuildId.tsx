@@ -1,13 +1,13 @@
-// Module ID: 14265
-// Function ID: 14266
+// Module ID: 14234
+// Function ID: 14235
 // Name: useTabSelectedGuildId
-// Dependencies: [4267, 5333, 647, 2]
+// Dependencies: [4268, 5346, 647, 2]
 // Exports: default
 
-// Module 14265 (useTabSelectedGuildId)
+// Module 14234 (useTabSelectedGuildId)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
-import closure_2 from "handleConnectionOpen" /* 4267 */;
-import closure_3 from "insertUnsortedGuilds" /* 5333 */;
+import closure_2 from "handleConnectionOpen" /* 4268 */;
+import closure_3 from "insertUnsortedGuilds" /* 5346 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/utils/useTabSelectedGuildId.tsx");

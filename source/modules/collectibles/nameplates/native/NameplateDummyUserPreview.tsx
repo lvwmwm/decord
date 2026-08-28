@@ -1,19 +1,19 @@
-// Module ID: 8453
-// Function ID: 8454
+// Module ID: 8467
+// Function ID: 8468
 // Name: NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG
-// Dependencies: [19, 17, 1302, 21, 1297, 712, 4445, 589, 1364, 8454, 8456, 8457, 2]
+// Dependencies: [19, 17, 1302, 21, 1297, 712, 4446, 589, 1364, 8468, 8470, 8471, 2]
 // Exports: NameplateDummyUserPreview
 
-// Module 8453 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
+// Module 8467 (NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import NameplateInnerDefault from "NameplateInner" /* 8454 */;
+import NameplateInnerDefault from "NameplateInner" /* 8468 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "handleThemeChange" /* 1302 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;
@@ -69,7 +69,7 @@ export const NameplateDummyUserPreview = function NameplateDummyUserPreview(hide
   const stateFromStores = obj.useStateFromStores(items, () => callback(table[8]).isThemeDark(theme.theme));
   obj = { nameplate, fullOpacity: true, style: tmp3.nameplate, animate };
   const items2 = [callback(NameplateInnerDefault, obj), , ];
-  obj1 = { style: tmp3.avatarContainer, children: callback(Button.Avatar, { source: importDefault(stateFromStores ? 8456 : 8457), size: NORMAL, "aria-hidden": true, style: tmp3.avatar }) };
+  obj1 = { style: tmp3.avatarContainer, children: callback(Button.Avatar, { source: importDefault(stateFromStores ? 8470 : 8471), size: NORMAL, "aria-hidden": true, style: tmp3.avatar }) };
   items2[1] = callback(View, obj1);
   const items3 = [tmp3.placeholderBar, { width: hideAvatar.width }];
   items2[2] = callback(View, { style: items3 });

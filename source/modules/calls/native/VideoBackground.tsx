@@ -1,19 +1,19 @@
-// Module ID: 8042
-// Function ID: 8043
+// Module ID: 8056
+// Function ID: 8057
 // Name: useDominantRGBFromImage
-// Dependencies: [32, 19, 17, 676, 21, 4445, 12, 8043, 8044, 4293, 712, 8045, 1297, 4892, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4446, 12, 8057, 8058, 4294, 712, 8059, 1297, 4905, 2]
 // Exports: useDominantColorFromImage
 
-// Module 8042 (useDominantRGBFromImage)
+// Module 8056 (useDominantRGBFromImage)
 import Button from "Button" /* 1297 */;
-import LinearGradientDefault from "LinearGradient" /* 4892 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 8045 */;
+import LinearGradientDefault from "LinearGradient" /* 4905 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 8059 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { NOOP } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;
@@ -25,15 +25,15 @@ function useDominantRGBFromImage(arg0, arg1) {
     first = arg1[0];
     tmp = first;
   }
-  let tmp5 = first(8043)();
+  let tmp5 = first(8057)();
   dependencyMap = tmp5;
   let hexToRgbResult;
   if (null != arg0) {
-    hexToRgbResult = tmp3(8044).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(8058).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
-    hexToRgbResult = _require(4293).hexToRgb(tmp3(712).unsafe_rawColors.PRIMARY_800);
-    const obj2 = _require(4293);
+    hexToRgbResult = _require(4294).hexToRgb(tmp3(712).unsafe_rawColors.PRIMARY_800);
+    const obj2 = _require(4294);
   }
   const tmp8 = callback(importAllResult.useState(hexToRgbResult), 2);
   callback = tmp8[1];

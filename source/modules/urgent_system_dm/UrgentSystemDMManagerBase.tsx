@@ -1,15 +1,15 @@
-// Module ID: 16993
-// Function ID: 16994
+// Module ID: 17011
+// Function ID: 17012
 // Name: maybeShowUrgentMessageModal
-// Dependencies: [1391, 1981, 1922, 16994, 676, 8048, 5438, 2]
+// Dependencies: [1391, 1982, 1923, 17012, 676, 8062, 5451, 2]
 
-// Module 16993 (maybeShowUrgentMessageModal)
-import initializeDefault from "initialize" /* 5438 */;
-import _fetchProfileAll from "_fetchProfile" /* 8048 */;
+// Module 17011 (maybeShowUrgentMessageModal)
+import initializeDefault from "initialize" /* 5451 */;
+import _fetchProfileAll from "_fetchProfile" /* 8062 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "handleConnectionOpen" /* 1981 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import { SYSTEM_USER } from "SYSTEM_USER" /* 16994 */;
+import closure_3 from "handleConnectionOpen" /* 1982 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import { SYSTEM_USER } from "SYSTEM_USER" /* 17012 */;
 import { UserFlags } from "ME" /* 676 */;
 
 function maybeShowUrgentMessageModal(arg0) {

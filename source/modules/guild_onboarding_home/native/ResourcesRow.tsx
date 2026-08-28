@@ -1,17 +1,17 @@
-// Module ID: 16058
-// Function ID: 16059
+// Module ID: 16076
+// Function ID: 16077
 // Name: ResourcesRow
-// Dependencies: [19, 17, 16059, 21, 4445, 712, 16060, 11768, 4412, 16061, 2009, 5020, 4441, 1236, 2]
+// Dependencies: [19, 17, 16077, 21, 4446, 712, 16078, 11787, 4413, 16079, 2010, 5033, 4442, 1236, 2]
 // Exports: default
 
-// Module 16058 (ResourcesRow)
+// Module 16076 (ResourcesRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16060 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16078 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY" /* 16059 */;
+import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_4 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY" /* 16077 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 noopAll;
@@ -60,8 +60,8 @@ export default function ResourcesRow(guildId) {
     obj1 = { count: null };
     obj1[0] = arr.length - 2;
     obj[2] = intl.format(guildId(1236).t.F6iMs4, obj1);
-    obj[2] = callback(guildId(4441).Text, obj);
-    tmp6 = callback(guildId(5020).PressableOpacity, obj);
+    obj[2] = callback(guildId(4442).Text, obj);
+    tmp6 = callback(guildId(5033).PressableOpacity, obj);
   }
   items[1] = tmp6;
   obj[2] = items;

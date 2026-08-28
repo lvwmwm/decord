@@ -1,19 +1,19 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 11867
+// Function ID: 11868
 // Name: handleSearchQuery
-// Dependencies: [1391, 6080, 11849, 11850, 11851, 11823, 7555, 643, 11824, 589, 709, 2]
+// Dependencies: [1391, 6093, 11868, 11869, 11870, 11842, 7569, 643, 11843, 589, 709, 2]
 
-// Module 11848 (handleSearchQuery)
+// Module 11867 (handleSearchQuery)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 11824 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11843 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "handleReaction" /* 6080 */;
-import closure_5 from "search" /* 11849 */;
-import closure_6 from "setAutocompleteOptions" /* 11850 */;
-import closure_7 from "teardown" /* 11851 */;
-import closure_8 from "prototype" /* 11823 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7555 */;
+import closure_4 from "handleReaction" /* 6093 */;
+import closure_5 from "search" /* 11868 */;
+import closure_6 from "setAutocompleteOptions" /* 11869 */;
+import closure_7 from "teardown" /* 11870 */;
+import closure_8 from "prototype" /* 11842 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7569 */;
 
 require = arg1;
 function handleSearchQuery(searchContext) {
@@ -49,7 +49,7 @@ function computeLayoutForState(value) {
     } else {
       arr = table2[searchContext.type];
     }
-    channel = channel.getChannel(_require(11824).getChannelIdFromSearchContext(searchContext));
+    channel = channel.getChannel(_require(11843).getChannelIdFromSearchContext(searchContext));
     let flag;
     if (channel != null) {
       flag = channel.isArchivedThread();
@@ -83,7 +83,7 @@ function computeLayoutForState(value) {
         return closure_5;
       }
     });
-    let tmp6Result = tmp6(11824);
+    let tmp6Result = tmp6(11843);
     autocompleteVisible = tmp6Result.getSearchContextId(searchContext);
     const reduced = found.reduce((arg0, closure_1) => {
       if (reduced.MEMBERS === closure_1) {
@@ -125,7 +125,7 @@ function computeLayoutForState(value) {
     tmp6Result = tmp6(643);
     const result = tmp6Result.areArraysShallowEqual(value.candidateTabs, found);
     let tmp13 = !result;
-    const obj2 = _require(11824);
+    const obj2 = _require(11843);
     const result1 = _require(643).areArraysShallowEqual(value.visibleTabs, visibleTabs);
     const visibleTabCounts2 = value.visibleTabCounts;
     let tmp16 = visibleTabCounts2 === visibleTabCounts;

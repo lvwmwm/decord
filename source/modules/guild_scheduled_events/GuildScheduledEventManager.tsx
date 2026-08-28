@@ -1,14 +1,14 @@
-// Module ID: 9672
-// Function ID: 9673
+// Module ID: 9690
+// Function ID: 9691
 // Name: getGuildEventsForCurrentUser
-// Dependencies: [5, 4267, 7204, 9594, 5438, 2]
+// Dependencies: [5, 4268, 7218, 9612, 5451, 2]
 
-// Module 9672 (getGuildEventsForCurrentUser)
-import initializeDefault from "initialize" /* 5438 */;
-import _modDef9594 from "module_9594" /* 9594 */;
+// Module 9690 (getGuildEventsForCurrentUser)
+import initializeDefault from "initialize" /* 5451 */;
+import _modDef9612 from "module_9612" /* 9612 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "handleConnectionOpen" /* 4267 */;
-import closure_4 from "scheduledEventSort" /* 7204 */;
+import closure_3 from "handleConnectionOpen" /* 4268 */;
+import closure_4 from "scheduledEventSort" /* 7218 */;
 import set from "set" /* 2 */;
 
 function getGuildEventsForCurrentUser() {
@@ -185,7 +185,7 @@ prototype["getGuildEventUserCounts"] = function getGuildEventUserCounts(guild_id
   })();
 };
 prototype["getGuildEventUsers"] = function getGuildEventUsers(id, arg1, guild_id) {
-  return _modDef9594.fetchUsersForGuildEvent(id, arg1, guild_id);
+  return _modDef9612.fetchUsersForGuildEvent(id, arg1, guild_id);
 };
 prototype["getGuildEventsForCurrentUser"] = function getGuildEventsForCurrentUser(arg0) {
   return getGuildEventsForCurrentUser(arg0);

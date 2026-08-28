@@ -1,9 +1,9 @@
-// Module ID: 7070
-// Function ID: 7071
+// Module ID: 7083
+// Function ID: 7084
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7070 (metadata)
+// Module 7083 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WumpusGearSpotIllustration-2x.png.js");

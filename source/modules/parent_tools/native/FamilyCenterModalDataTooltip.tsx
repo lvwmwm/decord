@@ -1,21 +1,21 @@
-// Module ID: 14446
-// Function ID: 14447
+// Module ID: 14430
+// Function ID: 14431
 // Name: Row
-// Dependencies: [19, 17, 7216, 21, 4972, 11412, 4163, 12950, 4974, 11414, 4408, 10694, 4445, 712, 4441, 11411, 1236, 2369, 8698, 7271, 8623, 8624, 11418, 4880, 4676, 5447, 11420, 2]
+// Dependencies: [19, 17, 7230, 21, 4985, 11431, 4164, 12969, 4987, 11433, 4409, 10712, 4446, 712, 4442, 11430, 1236, 2370, 8714, 7285, 8638, 8639, 11437, 4893, 4689, 5460, 11439, 2]
 // Exports: default
 
-// Module 14446 (Row)
+// Module 14430 (Row)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import Text from "Text" /* 4441 */;
-import _modDef4676 from "module_4676" /* 4676 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8698 */;
-import Modal from "Modal" /* 11420 */;
+import messagesProxyDefault from "messagesProxy" /* 2370 */;
+import Text from "Text" /* 4442 */;
+import _modDef4689 from "module_4689" /* 4689 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8714 */;
+import Modal from "Modal" /* 11439 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function Row(arg0) {
@@ -34,18 +34,18 @@ function Row(arg0) {
 }
 function FamilyCenterModalDataTooltipScreen() {
   const tmp = callback4();
-  obj = _require(11411);
+  obj = _require(11430);
   const intl = _require(1236).intl;
   const intl2 = _require(1236).intl;
   const ageSpecificText = obj.useAgeSpecificText(intl.string(messagesProxyDefault.n6LOrh), intl2.string(messagesProxyDefault.JNLpDZ));
   _require = useIsInAdultAgeGroupDefault();
-  obj1 = _require(7271);
+  obj1 = _require(7285);
   const sortedActivityTypeConfigs = obj1.getSortedActivityTypeConfigs();
   obj = { children: null };
   obj = { children: null };
   obj1 = { style: tmp.container, children: null };
   const items = [
-    callback(_require(4441).Text, { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText }),
+    callback(_require(4442).Text, { style: tmp.groupHeader, variant: "text-lg/bold", color: "mobile-text-heading-primary", children: ageSpecificText }),
     sortedActivityTypeConfigs.map((arg0) => {
       [tmp, obj] = arg0;
       obj = { IconComponent: closure_1_7[tmp], header: obj.tooltipHeader(), description: obj.tooltipDescription(closure_0) };
@@ -54,16 +54,16 @@ function FamilyCenterModalDataTooltipScreen() {
   ];
   obj1[1] = items;
   obj[0] = callback2(View, obj1);
-  const items1 = [callback(_require(8624).ModalContent, obj), ];
+  const items1 = [callback(_require(8639).ModalContent, obj), ];
   const obj3 = { children: null };
   const obj4 = { variant: "primary", text: null, onPress: null };
   const intl3 = _require(1236).intl;
   obj4[1] = intl3.string(_require(1236).t["NX+WJN"]);
-  obj4[2] = _modDef4676.pop;
-  obj3[0] = callback(_require(4880).Button, obj4);
-  items1[1] = callback(_require(11418).ModalFooter, obj3);
+  obj4[2] = _modDef4689.pop;
+  obj3[0] = callback(_require(4893).Button, obj4);
+  items1[1] = callback(_require(11437).ModalFooter, obj3);
   obj[0] = items1;
-  return callback2(_require(8623).ModalScreen, obj);
+  return callback2(_require(8638).ModalScreen, obj);
 }
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { [USER_INTERACTION]: require("ChatIcon").ChatIcon, [USER_CALLED]: require("PhoneIcon").PhoneIcon, [USER_ADD]: require("FriendsIcon").FriendsIcon, [GUILD_ADD]: require("ServerGridIcon").ServerGridIcon, [GUILD_INTERACTION]: require("ThreadIcon").ThreadIcon, [PURCHASES]: require("CreditCardIcon").CreditCardIcon, [TOTAL_VOICE_MINUTES]: require("ClockIcon").ClockIcon, [GIFTS]: require("GiftIcon").GiftIcon };
@@ -92,7 +92,7 @@ export default function FamilyCenterModalDataTooltip() {
     obj = { DATA_TOOLTIP: null };
     obj = {
       headerShown: true,
-      headerLeft: callback(5447).getHeaderCloseButton(callback2(4676).pop),
+      headerLeft: callback(5460).getHeaderCloseButton(callback2(4689).pop),
       headerTitle() {
         return null;
       },

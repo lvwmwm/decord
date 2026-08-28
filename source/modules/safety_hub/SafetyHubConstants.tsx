@@ -1,9 +1,9 @@
-// Module ID: 8621
-// Function ID: 8622
+// Module ID: 8636
+// Function ID: 8637
 // Name: SafetyHubView
 // Dependencies: [676, 503, 2]
 
-// Module 8621 (SafetyHubView)
+// Module 8636 (SafetyHubView)
 import set from "set" /* 2 */;
 import encodeProperties from "encodeProperties" /* 503 */;
 import ME from "ME" /* 676 */;

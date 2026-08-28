@@ -1,12 +1,12 @@
-// Module ID: 7133
-// Function ID: 7134
+// Module ID: 7146
+// Function ID: 7147
 // Name: createFromServer
-// Dependencies: [1931, 7134, 1924, 2]
+// Dependencies: [1932, 7147, 1925, 2]
 
-// Module 7133 (createFromServer)
-import toJSDefault from "toJS" /* 1931 */;
-import closure_0 from "createFromServer" /* 7134 */;
-import { PREMIUM_TIER_2_REFERRAL_TRIAL_ID as closure_1 } from "GuildFeatures" /* 1924 */;
+// Module 7146 (createFromServer)
+import toJSDefault from "toJS" /* 1932 */;
+import closure_0 from "createFromServer" /* 7147 */;
+import { PREMIUM_TIER_2_REFERRAL_TRIAL_ID as closure_1 } from "GuildFeatures" /* 1925 */;
 
 toJSDefault;
 let UserTrialOfferRecord;

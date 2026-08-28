@@ -1,13 +1,13 @@
-// Module ID: 7834
-// Function ID: 7835
+// Module ID: 7848
+// Function ID: 7849
 // Name: getJoinButtonLabels
-// Dependencies: [1236, 5164, 2]
+// Dependencies: [1236, 5177, 2]
 // Exports: getJoinButtonLabels, getRenewButtonLabels
 
-// Module 7834 (getJoinButtonLabels)
+// Module 7848 (getJoinButtonLabels)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import StickerFormat from "StickerFormat" /* 5164 */;
+import StickerFormat from "StickerFormat" /* 5177 */;
 
 let obj = { id: "781323471249604648", format_type: StickerFormat.StickerFormat.APNG, description: "Cheerful Choco jumps out of gift box", name: "Surprise" };
 let items = [obj, , , , ];

@@ -1,13 +1,13 @@
-// Module ID: 13246
-// Function ID: 13247
+// Module ID: 13265
+// Function ID: 13266
 // Name: b64ToDeclarativeSettingsProto
-// Dependencies: [1342, 13247, 2]
+// Dependencies: [1342, 13266, 2]
 // Exports: b64ToDeclarativeSettingsProto
 
-// Module 13246 (b64ToDeclarativeSettingsProto)
+// Module 13265 (b64ToDeclarativeSettingsProto)
 import set from "set" /* 2 */;
 import b64ToProto from "b64ToProto" /* 1342 */;
-import create from "create" /* 13247 */;
+import create from "create" /* 13266 */;
 
 const result = set.fileFinishedImporting("modules/notifications/settings/NotifSettingsUtils.tsx");
 

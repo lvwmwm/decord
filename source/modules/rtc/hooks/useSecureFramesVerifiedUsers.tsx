@@ -1,12 +1,12 @@
-// Module ID: 15228
-// Function ID: 15229
+// Module ID: 15380
+// Function ID: 15381
 // Name: useSecureFramesVerifiedUserIds
-// Dependencies: [9744, 589, 2]
+// Dependencies: [9762, 589, 2]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 15228 (useSecureFramesVerifiedUserIds)
+// Module 15380 (useSecureFramesVerifiedUserIds)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "initialize" /* 9744 */;
+import closure_2 from "initialize" /* 9762 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesVerifiedUsers.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 6949
-// Function ID: 6950
+// Module ID: 6962
+// Function ID: 6963
 // Name: SkullIllocon
-// Dependencies: [21, 5445, 6950, 2]
+// Dependencies: [21, 5458, 6963, 2]
 // Exports: SkullIllocon
 
-// Module 6949 (SkullIllocon)
+// Module 6962 (SkullIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6950 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6963 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SkullIllocon.native.tsx");

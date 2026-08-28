@@ -1,14 +1,14 @@
-// Module ID: 9433
-// Function ID: 9434
+// Module ID: 9451
+// Function ID: 9452
 // Name: send
-// Dependencies: [676, 9434, 9424, 9423, 2]
+// Dependencies: [676, 9452, 9442, 9441, 2]
 
-// Module 9433 (send)
+// Module 9451 (send)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import HANDSHAKEDefault from "HANDSHAKE" /* 9423 */;
-import prototypeDefault from "prototype" /* 9424 */;
-import checkRpcVersionDefault from "checkRpcVersion" /* 9434 */;
+import HANDSHAKEDefault from "HANDSHAKE" /* 9441 */;
+import prototypeDefault from "prototype" /* 9442 */;
+import checkRpcVersionDefault from "checkRpcVersion" /* 9452 */;
 
 const RPCCloseCodes = ME.RPCCloseCodes;
 checkRpcVersionDefault;

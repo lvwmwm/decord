@@ -1,15 +1,15 @@
-// Module ID: 6076
-// Function ID: 6077
+// Module ID: 6089
+// Function ID: 6090
 // Name: handleLoadThreadsSuccess
-// Dependencies: [6077, 1922, 11, 4690, 589, 709, 2]
+// Dependencies: [6090, 1923, 11, 4703, 589, 709, 2]
 
-// Module 6076 (handleLoadThreadsSuccess)
+// Module 6089 (handleLoadThreadsSuccess)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4690 */;
-import closure_3 from "handleConnectionOpenOrResumed" /* 6077 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4703 */;
+import closure_3 from "handleConnectionOpenOrResumed" /* 6090 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 function handleLoadThreadsSuccess(arg0) {

@@ -1,18 +1,18 @@
-// Module ID: 8053
-// Function ID: 8054
+// Module ID: 8067
+// Function ID: 8068
 // Name: GridAvatar
-// Dependencies: [19, 17, 4437, 4534, 21, 4445, 712, 589, 1297, 8041, 2]
+// Dependencies: [19, 17, 4438, 4535, 21, 4446, 712, 589, 1297, 8055, 2]
 // Exports: default
 
-// Module 8053 (GridAvatar)
+// Module 8067 (GridAvatar)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_4 from "sortActivity" /* 4534 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_4 from "sortActivity" /* 4535 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function GridAvatar(user) {
@@ -38,7 +38,7 @@ function GridAvatar(user) {
   obj[3] = size;
   if (undefined !== pendingAvatarSrc) {
     obj = { source: null };
-    const tmp2Result = tmp2(8041);
+    const tmp2Result = tmp2(8055);
     obj[0] = tmp2Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores1);
     const merged = Object.assign(obj);
     obj1 = obj;

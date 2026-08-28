@@ -1,14 +1,14 @@
-// Module ID: 12007
-// Function ID: 12008
+// Module ID: 12026
+// Function ID: 12027
 // Name: SoundboardIcon
-// Dependencies: [19, 21, 712, 4164, 12008, 2]
+// Dependencies: [19, 21, 712, 4165, 12027, 2]
 // Exports: SoundboardIcon
 
-// Module 12007 (SoundboardIcon)
+// Module 12026 (SoundboardIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 12008 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 12027 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

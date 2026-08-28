@@ -1,0 +1,22 @@
+// Module ID: 4787
+// Function ID: 4788
+// Name: HasProperty
+// Dependencies: [4728, 541, 4775]
+
+// Module 4787 (HasProperty)
+import isObject from "isObject" /* 4728 */;
+
+
+export default function HasProperty(arg0, arg1) {
+  if (isObject(arg0)) {
+    if (tmp(4775)(arg1)) {
+      return arg1 in arg0;
+    } else {
+      const tmp10 = new tmp(541)("Assertion failed: `P` must be a Property Key");
+      throw tmp10;
+    }
+  } else {
+    const tmp5 = new tmp(541)("Assertion failed: `O` must be an Object");
+    throw tmp5;
+  }
+};

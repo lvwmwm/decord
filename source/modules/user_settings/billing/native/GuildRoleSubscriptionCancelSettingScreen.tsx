@@ -1,13 +1,13 @@
-// Module ID: 14769
-// Function ID: 14770
+// Module ID: 14754
+// Function ID: 14755
 // Name: GuildRoleSubscriptionCancelSettingScreen
-// Dependencies: [19, 21, 7093, 14770, 2]
+// Dependencies: [19, 21, 7106, 14755, 2]
 // Exports: default
 
-// Module 14769 (GuildRoleSubscriptionCancelSettingScreen)
+// Module 14754 (GuildRoleSubscriptionCancelSettingScreen)
 import noopAll from "noop" /* 19 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7093 */;
-import WhatYouLoseDefault from "WhatYouLose" /* 14770 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7106 */;
+import WhatYouLoseDefault from "WhatYouLose" /* 14755 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

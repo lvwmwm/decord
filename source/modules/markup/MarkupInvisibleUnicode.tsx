@@ -1,10 +1,10 @@
-// Module ID: 5004
-// Function ID: 5005
+// Module ID: 5017
+// Function ID: 5018
 // Name: INVISIBLE_CHAR_REGEX
 // Dependencies: [2]
 // Exports: stripLeadingInvisibleUnicode
 
-// Module 5004 (INVISIBLE_CHAR_REGEX)
+// Module 5017 (INVISIBLE_CHAR_REGEX)
 import set from "set" /* 2 */;
 
 const re0 = /^[\u200B-\u200D\uFEFF\u180E\u061C]+/;

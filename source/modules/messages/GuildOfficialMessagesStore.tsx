@@ -1,17 +1,17 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 13305
+// Function ID: 13306
 // Name: updateGuildState
-// Dependencies: [1391, 1992, 1910, 4098, 1922, 676, 4690, 1403, 589, 709, 2]
+// Dependencies: [1391, 1993, 1910, 4099, 1923, 676, 4703, 1403, 589, 709, 2]
 
-// Module 13286 (updateGuildState)
+// Module 13305 (updateGuildState)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import hasFlag from "hasFlag" /* 1403 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
+import closure_3 from "trackCommunicationDisabled" /* 1993 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "markAllUserIdListsStale" /* 4098 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "markAllUserIdListsStale" /* 4099 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import { MessageFlags } from "ME" /* 676 */;
 
 require = arg1;
@@ -307,7 +307,7 @@ const guildOfficialMessagesStore = new GuildOfficialMessagesStore(dispatcherDefa
             let tmp5 = null != tmp4;
             if (tmp5) {
               if (null == tmp4.messages[message.id]) {
-                const messageRecord = tmp23(4690).createMessageRecord(message);
+                const messageRecord = tmp23(4703).createMessageRecord(message);
                 if (null != obj[guildId]) {
                   obj = {};
                   const merged = Object.assign(obj);
@@ -324,7 +324,7 @@ const guildOfficialMessagesStore = new GuildOfficialMessagesStore(dispatcherDefa
                   const merged3 = Object.assign(obj1);
                   obj[guildId] = obj;
                 }
-                const tmp23Result = tmp23(4690);
+                const tmp23Result = tmp23(4703);
               }
               tmp5 = tmp6;
             }
@@ -355,7 +355,7 @@ const guildOfficialMessagesStore = new GuildOfficialMessagesStore(dispatcherDefa
         return false;
       } else if (null == message.author) {
         if (null != tmp42) {
-          let obj5 = id(4690);
+          let obj5 = id(4703);
           const updateMessageRecordResult = obj5.updateMessageRecord(tmp42, message);
           if (null != obj11[guildId]) {
             let obj = {};
@@ -382,7 +382,7 @@ const guildOfficialMessagesStore = new GuildOfficialMessagesStore(dispatcherDefa
         const hasFlagResult = obj11.hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL);
         if (hasFlagResult) {
           if (null == tmp42) {
-            let tmp43Result = tmp43(4690);
+            let tmp43Result = tmp43(4703);
             const messageRecord = tmp43Result.createMessageRecord(message);
             if (null != obj11[guildId]) {
               const obj3 = {};
@@ -426,7 +426,7 @@ const guildOfficialMessagesStore = new GuildOfficialMessagesStore(dispatcherDefa
         }
         if (hasFlagResult) {
           if (null != tmp42) {
-            tmp43Result = tmp43(4690);
+            tmp43Result = tmp43(4703);
             const updateMessageRecordResult1 = tmp43Result.updateMessageRecord(tmp42, message);
             if (null != obj11[guildId]) {
               obj11 = {};

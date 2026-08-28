@@ -1,14 +1,14 @@
-// Module ID: 8759
-// Function ID: 8760
+// Module ID: 8775
+// Function ID: 8776
 // Name: XboxNeutralIcon
-// Dependencies: [19, 21, 712, 4164, 8760, 2]
+// Dependencies: [19, 21, 712, 4165, 8776, 2]
 // Exports: XboxNeutralIcon
 
-// Module 8759 (XboxNeutralIcon)
+// Module 8775 (XboxNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 8760 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 8776 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

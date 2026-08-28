@@ -1,9 +1,9 @@
-// Module ID: 7190
-// Function ID: 7191
+// Module ID: 7204
+// Function ID: 7205
 // Name: AutomodQuarantineEventMessageEmbedKeys
 // Dependencies: [2]
 
-// Module 7190 (AutomodQuarantineEventMessageEmbedKeys)
+// Module 7204 (AutomodQuarantineEventMessageEmbedKeys)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodQuarantineEventMessageEmbedKeys.tsx");

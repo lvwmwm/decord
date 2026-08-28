@@ -1,13 +1,13 @@
-// Module ID: 5912
-// Function ID: 5913
+// Module ID: 5925
+// Function ID: 5926
 // Name: useAuthorizedAppsTokens
-// Dependencies: [19, 5427, 589, 1370, 5913, 2]
+// Dependencies: [19, 5440, 589, 1370, 5926, 2]
 // Exports: useAuthorizedAppsToken
 
-// Module 5912 (useAuthorizedAppsTokens)
+// Module 5925 (useAuthorizedAppsTokens)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "recomputeFromAppTokens" /* 5427 */;
-import { FetchState } from "recomputeFromAppTokens" /* 5427 */;
+import closure_4 from "recomputeFromAppTokens" /* 5440 */;
+import { FetchState } from "recomputeFromAppTokens" /* 5440 */;
 
 const require = arg1;
 function useAuthorizedAppsTokens(closure_3, arg1) {

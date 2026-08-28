@@ -1,15 +1,15 @@
-// Module ID: 16655
-// Function ID: 16656
+// Module ID: 16673
+// Function ID: 16674
 // Name: GameRow
-// Dependencies: [19, 21, 6106, 8726, 8737, 1236, 9792, 5551, 9787, 16656, 9728, 2]
+// Dependencies: [19, 21, 6119, 8742, 8753, 1236, 9810, 5564, 9805, 16674, 9746, 2]
 
-// Module 16655 (GameRow)
+// Module 16673 (GameRow)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8726 */;
-import VoiceBadges from "VoiceBadges" /* 9728 */;
-import useIsVoiceChannelGamesExperimentEnabledDefault from "useIsVoiceChannelGamesExperimentEnabled" /* 9787 */;
-import _modDef9792 from "module_9792" /* 9792 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 16656 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 8742 */;
+import VoiceBadges from "VoiceBadges" /* 9746 */;
+import useIsVoiceChannelGamesExperimentEnabledDefault from "useIsVoiceChannelGamesExperimentEnabled" /* 9805 */;
+import _modDef9810 from "module_9810" /* 9810 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 16674 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -17,9 +17,9 @@ require = arg1;
 function GameRow(gameId) {
   gameId = gameId.gameId;
   let _require;
-  let obj = _require(6106);
+  let obj = _require(6119);
   const data = obj.useGame(gameId).data;
-  obj = { gameId, source: _require(8737).GameProfileSources.VoiceChannelGames };
+  obj = { gameId, source: _require(8753).GameProfileSources.VoiceChannelGames };
   const tmp4Result = useOpenGameProfileModalDefault(obj);
   _require = tmp4Result;
   if (null == data) {
@@ -33,7 +33,7 @@ function GameRow(gameId) {
     }
     obj = { game: null, size: 32, fallback: "placeholder" };
     obj[0] = data;
-    const tmp7 = jsx(_modDef9792, { game: null, size: 32, fallback: "placeholder" });
+    const tmp7 = jsx(_modDef9810, { game: null, size: 32, fallback: "placeholder" });
     if (null == tmp4Result) {
       obj1 = { icon: null, label: null, disabled: true };
       obj1[0] = tmp7;
@@ -51,7 +51,7 @@ function GameRow(gameId) {
       obj3[0] = name;
       obj2[5] = intl2.formatToPlainString(tmp(1236).t["9sZWVp"], obj3);
     }
-    return jsx(tmp(5551).TableRow, obj2);
+    return jsx(tmp(5564).TableRow, obj2);
   }
   const tmp3 = importDefault;
   const tmp4 = useOpenGameProfileModalDefault;

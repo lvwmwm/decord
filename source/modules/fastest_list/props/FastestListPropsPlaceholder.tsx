@@ -1,9 +1,9 @@
-// Module ID: 7718
-// Function ID: 7719
+// Module ID: 7732
+// Function ID: 7733
 // Name: FastestListPropsPlaceholderType
 // Dependencies: [2]
 
-// Module 7718 (FastestListPropsPlaceholderType)
+// Module 7732 (FastestListPropsPlaceholderType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/fastest_list/props/FastestListPropsPlaceholder.tsx");

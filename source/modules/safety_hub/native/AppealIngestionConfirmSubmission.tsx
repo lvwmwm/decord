@@ -1,22 +1,22 @@
-// Module ID: 11396
-// Function ID: 11397
+// Module ID: 11415
+// Function ID: 11416
 // Name: AppealIngestionConfirmSubmission
-// Dependencies: [19, 17, 11368, 676, 21, 4445, 589, 11373, 1236, 11388, 11397, 8620, 4441, 4412, 11395, 2009, 709, 11391, 11392, 2]
+// Dependencies: [19, 17, 11387, 676, 21, 4446, 589, 11392, 1236, 11407, 11416, 8635, 4442, 4413, 11414, 2010, 709, 11410, 11411, 2]
 // Exports: default
 
-// Module 11396 (AppealIngestionConfirmSubmission)
+// Module 11415 (AppealIngestionConfirmSubmission)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8620 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11373 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 11388 */;
-import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 11397 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8635 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 11392 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 11407 */;
+import AppealIngestionBreadcrumbsDefault from "AppealIngestionBreadcrumbs" /* 11416 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11368 */;
+import closure_4 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11387 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;
@@ -67,17 +67,17 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
     if (tmp11Result) {
       obj1 = { flaggedContent: null };
       obj1[0] = flagged_content;
-      tmp11Result = tmp11(tmp13(11391), obj1);
+      tmp11Result = tmp11(tmp13(11410), obj1);
     }
     const obj2 = { children: null };
     items5[2] = tmp11Result;
     const obj3 = { classification: null };
     obj3[0] = safetyHubClassification.classification;
-    items5[3] = tmp11(tmp13(11392), obj3);
+    items5[3] = tmp11(tmp13(11411), obj3);
     obj[1] = items5;
     items3[1] = tmp10(tmp12, obj);
     obj2[0] = items3;
-    return tmp10(tmp2(11388).AppealIngestionModalScreen, obj2);
+    return tmp10(tmp2(11407).AppealIngestionModalScreen, obj2);
   } else {
     const obj4 = { variant: "heading-md/normal", color: "text-link", style: null, onPress: null, children: null };
     obj4[2] = tmp.detailsAction;
@@ -88,10 +88,10 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
           let obj = callback(709);
           obj = { type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE", userInput };
           obj.dispatch(obj);
-          callback(4412).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
+          callback(4413).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
         },
         onClose() {
-          return callback(4412).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
+          return callback(4413).hideActionSheet("AppealIngestionFreeTextAppealReasonActionSheet");
         }
       };
       return obj.openLazy(callback(paths[15])(paths[14], paths.paths), "AppealIngestionFreeTextAppealReasonActionSheet", obj);
@@ -104,6 +104,6 @@ export default function AppealIngestionConfirmSubmission(isDsaEligible) {
       stringResult2 = intl3.string(tmp2(1236).t.uoQFIp);
     }
     obj4[4] = stringResult2;
-    tmp11Result = tmp11(tmp2(4441).Text, obj4);
+    tmp11Result = tmp11(tmp2(4442).Text, obj4);
   }
 };

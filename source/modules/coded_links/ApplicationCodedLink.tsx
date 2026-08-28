@@ -1,12 +1,12 @@
-// Module ID: 7367
-// Function ID: 7368
+// Module ID: 7381
+// Function ID: 7382
 // Name: set
-// Dependencies: [4433, 1370, 7368, 7369, 2]
+// Dependencies: [4434, 1370, 7382, 7383, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7367 (set)
+// Module 7381 (set)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import CodedLinkType from "CodedLinkType" /* 4433 */;
+import CodedLinkType from "CodedLinkType" /* 4434 */;
 import set from "set" /* 2 */;
 
 const items = [CodedLinkType.CodedLinkType.APP_DIRECTORY_PROFILE, CodedLinkType.CodedLinkType.ACTIVITY_BOOKMARK, CodedLinkType.CodedLinkType.APP_DIRECTORY_STOREFRONT, CodedLinkType.CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU, CodedLinkType.CodedLinkType.APP_OAUTH2_LINK];
@@ -25,10 +25,10 @@ export const isApplicationCodedLinkMobileSupported = function isApplicationCoded
 };
 export const getApplicationCodedLinkData = function getApplicationCodedLinkData(type, code, url) {
   if (CodedLinkType.CodedLinkType.APP_DIRECTORY_PROFILE !== type) {
-    if (tmp(4433).CodedLinkType.APP_OAUTH2_LINK !== type) {
-      if (tmp(4433).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
-        if (tmp(4433).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          let tmpResult = tmp(7368);
+    if (tmp(4434).CodedLinkType.APP_OAUTH2_LINK !== type) {
+      if (tmp(4434).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
+        if (tmp(4434).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
+          let tmpResult = tmp(7382);
           const result = tmpResult.parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
@@ -38,11 +38,11 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
             tmp5 = obj;
           }
           return tmp5;
-        } else if (tmp(4433).CodedLinkType.ACTIVITY_BOOKMARK === type) {
+        } else if (tmp(4434).CodedLinkType.ACTIVITY_BOOKMARK === type) {
           obj = { type: null, applicationId: null, params: null };
           obj[0] = type;
           obj[1] = code;
-          tmpResult = tmp(7369);
+          tmpResult = tmp(7383);
           obj[2] = tmpResult.extractActivityBookmarkParams(url);
           return obj;
         }

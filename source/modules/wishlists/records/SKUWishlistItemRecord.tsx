@@ -1,12 +1,12 @@
-// Module ID: 10382
-// Function ID: 10383
+// Module ID: 10400
+// Function ID: 10401
 // Name: fromServer
-// Dependencies: [4488, 10379, 2]
+// Dependencies: [4489, 10397, 2]
 // Exports: isSKUWishlistItemRecord
 
-// Module 10382 (fromServer)
-import fromServerDefault from "fromServer" /* 10379 */;
-import closure_0 from "createFromServer" /* 4488 */;
+// Module 10400 (fromServer)
+import fromServerDefault from "fromServer" /* 10397 */;
+import closure_0 from "createFromServer" /* 4489 */;
 
 fromServerDefault;
 let prototype;

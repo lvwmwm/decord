@@ -1,27 +1,27 @@
-// Module ID: 9702
-// Function ID: 9703
+// Module ID: 9720
+// Function ID: 9721
 // Name: trackDeviceChanged
-// Dependencies: [5, 4518, 1391, 4496, 4519, 1981, 1922, 676, 9703, 4509, 3, 698, 636, 709, 9704, 9706, 9707, 9509, 2]
+// Dependencies: [5, 4519, 1391, 4497, 4520, 1982, 1923, 676, 9721, 4510, 3, 698, 636, 709, 9722, 9724, 9725, 9527, 2]
 
-// Module 9702 (trackDeviceChanged)
+// Module 9720 (trackDeviceChanged)
 import timestampDefault from "timestamp" /* 3 */;
 import debounceDefault from "debounce" /* 636 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isPremiumResolution from "isPremiumResolution" /* 9509 */;
-import snapVolumeToDefault from "snapVolumeToDefault" /* 9704 */;
-import trackVoiceAndVideoDebuggingSettingsUpdatedDefault from "trackVoiceAndVideoDebuggingSettingsUpdated" /* 9706 */;
-import _getFilterBlob from "_getFilterBlob" /* 9707 */;
+import isPremiumResolution from "isPremiumResolution" /* 9527 */;
+import snapVolumeToDefault from "snapVolumeToDefault" /* 9722 */;
+import trackVoiceAndVideoDebuggingSettingsUpdatedDefault from "trackVoiceAndVideoDebuggingSettingsUpdated" /* 9724 */;
+import _getFilterBlob from "_getFilterBlob" /* 9725 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 4518 */;
+import closure_4 from "initialize" /* 4519 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_7 from "createRTCConnection" /* 4519 */;
-import closure_8 from "handleConnectionOpen" /* 1981 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_7 from "createRTCConnection" /* 4520 */;
+import closure_8 from "handleConnectionOpen" /* 1982 */;
+import closure_9 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import { SoundOutputChannel } from "SoundOutputChannel" /* 9703 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4509 */;
+import { SoundOutputChannel } from "SoundOutputChannel" /* 9721 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4510 */;
 
 require = arg1;
 function trackDeviceChanged(inputDevices, inputDeviceId, found, Video, arg4) {
@@ -642,7 +642,7 @@ obj = {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = v0(9706)("debug_logging_enabled", closure_1_0, closure_1_6.getDebugLogging());
+              obj1[0] = v0(9724)("debug_logging_enabled", closure_1_0, closure_1_6.getDebugLogging());
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -729,7 +729,7 @@ obj = {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = v0(9706)("audio_subsystem", closure_1_0, closure_1_6.getAudioSubsystem());
+              obj1[0] = v0(9724)("audio_subsystem", closure_1_0, closure_1_6.getAudioSubsystem());
               return obj1;
             }
           } else if (arg0 === 1) {

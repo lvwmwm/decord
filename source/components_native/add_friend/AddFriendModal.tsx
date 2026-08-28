@@ -1,21 +1,21 @@
-// Module ID: 13506
-// Function ID: 13507
+// Module ID: 13525
+// Function ID: 13526
 // Name: AddFriendModalScene
-// Dependencies: [32, 19, 17, 1922, 676, 12130, 21, 4445, 5413, 712, 12132, 4897, 698, 500, 1503, 4676, 4289, 1236, 8563, 6189, 13507, 5447, 4441, 13508, 13510, 1629, 5960, 2]
+// Dependencies: [32, 19, 17, 1923, 676, 12149, 21, 4446, 5426, 712, 12151, 4910, 698, 500, 1503, 4689, 4290, 1236, 8578, 6202, 13526, 5460, 4442, 13527, 13529, 1629, 5973, 2]
 // Exports: default
 
-// Module 13506 (AddFriendModalScene)
+// Module 13525 (AddFriendModalScene)
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 12130 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12149 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "createTextStyle" /* 5413 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "createTextStyle" /* 5426 */;
 
 const require = arg1;
 function AddFriendModalScene(onSkip) {
@@ -146,5 +146,5 @@ export default function AddFriendModal(arg0) {
     obj[0] = obj;
     return obj;
   }, items);
-  return callback2(_require(5960).Navigator, { screens, initialRouteName: "ADD_FRIEND", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
+  return callback2(_require(5973).Navigator, { screens, initialRouteName: "ADD_FRIEND", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
 };

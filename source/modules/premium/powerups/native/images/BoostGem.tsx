@@ -1,13 +1,13 @@
-// Module ID: 12001
-// Function ID: 12002
+// Module ID: 12020
+// Function ID: 12021
 // Name: BoostGem
-// Dependencies: [19, 21, 8173, 2]
+// Dependencies: [19, 21, 8187, 2]
 // Exports: default
 
-// Module 12001 (BoostGem)
+// Module 12020 (BoostGem)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8173 */;
-import inlineStylesDefault from "inlineStyles" /* 8173 */;
+import inlineStyles from "inlineStyles" /* 8187 */;
+import inlineStylesDefault from "inlineStyles" /* 8187 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

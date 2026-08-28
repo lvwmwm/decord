@@ -1,15 +1,15 @@
-// Module ID: 13057
-// Function ID: 13058
+// Module ID: 13076
+// Function ID: 13077
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [4113, 4121, 1236, 2985, 1938, 7890, 13058, 589, 2]
+// Dependencies: [4114, 4122, 1236, 2986, 1939, 7904, 13077, 589, 2]
 // Exports: default
 
-// Module 13057 (usePremiumGroupFeaturesTableCardText)
+// Module 13076 (usePremiumGroupFeaturesTableCardText)
 import initialize from "initialize" /* 589 */;
-import create from "create" /* 1938 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13058 */;
-import closure_3 from "reset" /* 4113 */;
-import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4121 */;
+import create from "create" /* 1939 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13077 */;
+import closure_3 from "reset" /* 4114 */;
+import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4122 */;
 
 require = arg1;
 ({ getPremiumGroupProductName: c4, HELP_CENTER_LINK: c5 } = SubscriptionStatusTypes);
@@ -24,9 +24,9 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
   if (arg0 === create.PremiumSubscriptionGroupRole.UNSPECIFIED) {
     return null;
   } else {
-    if (arg0 === tmp(1938).PremiumSubscriptionGroupRole.PRIMARY) {
-      let priceString = tmp(7890).getPriceString(stateFromStores, { withIntervals: true });
-      const tmpResult = tmp(7890);
+    if (arg0 === tmp(1939).PremiumSubscriptionGroupRole.PRIMARY) {
+      let priceString = tmp(7904).getPriceString(stateFromStores, { withIntervals: true });
+      const tmpResult = tmp(7904);
     } else {
       priceString = null;
       if (null != tmp4) {
@@ -34,22 +34,22 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
         obj = { primaryName: null, premiumGroupProductName: null };
         obj[0] = tmp4;
         obj[1] = callback();
-        priceString = intl.format(tmp3(2985).Nu9LNm, obj);
+        priceString = intl.format(tmp3(2986).Nu9LNm, obj);
       }
     }
     let str = "...";
     if (null != priceString) {
       str = priceString;
     }
-    if (arg0 === tmp(1938).PremiumSubscriptionGroupRole.PRIMARY) {
+    if (arg0 === tmp(1939).PremiumSubscriptionGroupRole.PRIMARY) {
       const intl3 = tmp(1236).intl;
       obj = { helpCenterLink: null, premiumGroupProductName: null };
       obj[0] = closure_5;
       obj[1] = callback();
-      let formatResult = intl3.format(tmp3(2985)["+R/K74"], obj);
+      let formatResult = intl3.format(tmp3(2986)["+R/K74"], obj);
     } else {
       const intl2 = tmp(1236).intl;
-      const tmp3Result = tmp3(2985);
+      const tmp3Result = tmp3(2986);
       obj1 = { helpCenterLink: null };
       obj1[0] = closure_5;
       formatResult = intl2.format(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj1);

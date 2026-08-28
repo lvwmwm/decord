@@ -1,31 +1,31 @@
-// Module ID: 12212
-// Function ID: 12213
+// Module ID: 12231
+// Function ID: 12232
 // Name: forumKeyExtractor
-// Dependencies: [19, 17, 4090, 5401, 1391, 4807, 5309, 11494, 676, 1301, 505, 21, 4445, 712, 5413, 500, 7549, 4441, 1236, 7561, 6101, 589, 12213, 6071, 9, 8727, 8737, 5020, 8731, 5915, 4412, 12215, 2009, 1367, 4880, 11638, 8858, 12216, 10339, 7575, 12217, 4639, 11520, 11493, 12218, 8037, 7444, 5022, 4162, 12221, 6068, 5905, 5925, 4959, 10976, 7573, 12222, 7454, 10247, 10265, 4413, 4414, 10263, 7579, 5546, 10974, 8913, 12225, 11771, 2]
+// Dependencies: [19, 17, 4091, 5414, 1391, 4820, 5322, 11513, 676, 1301, 505, 21, 4446, 712, 5426, 500, 7563, 4442, 1236, 7575, 6114, 589, 12232, 6084, 9, 8743, 8753, 5033, 8747, 5928, 4413, 12234, 2010, 1367, 4893, 11657, 8875, 12235, 10357, 7589, 12236, 4640, 11539, 11512, 12237, 8051, 7458, 5035, 4163, 12240, 6081, 5918, 5938, 4972, 10994, 7587, 12241, 7468, 10265, 10283, 4414, 4415, 10281, 7593, 5559, 10992, 8931, 12244, 11790, 2]
 // Exports: default
 
-// Module 12212 (forumKeyExtractor)
+// Module 12231 (forumKeyExtractor)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import dispatcherDefault from "dispatcher" /* 4162 */;
-import Text from "Text" /* 4441 */;
-import useGradientBottom from "useGradientBottom" /* 7549 */;
-import registerAssetDefault from "registerAsset" /* 12221 */;
+import dispatcherDefault from "dispatcher" /* 4163 */;
+import Text from "Text" /* 4442 */;
+import useGradientBottom from "useGradientBottom" /* 7563 */;
+import registerAssetDefault from "registerAsset" /* 12240 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "initialize" /* 4090 */;
-import closure_6 from "handleThreadCreateOrUpdate" /* 5401 */;
+import closure_5 from "initialize" /* 4091 */;
+import closure_6 from "handleThreadCreateOrUpdate" /* 5414 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "handleChanged" /* 4807 */;
-import closure_9 from "recomputeGuild" /* 5309 */;
-import { useForumChannelStore } from "set" /* 11494 */;
+import closure_8 from "handleChanged" /* 4820 */;
+import closure_9 from "recomputeGuild" /* 5322 */;
+import { useForumChannelStore } from "set" /* 11513 */;
 import ME from "ME" /* 676 */;
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1301 */;
 import { Fonts } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "createTextStyle" /* 5413 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "createTextStyle" /* 5426 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -165,10 +165,10 @@ function SortAndViewOptions(channel) {
     t = { variant: "secondary", text: null, onPress: null, size: "sm", icon: null };
     t[1] = string3Result;
     t[2] = callback;
-    ArrowsUpDownIcon = ArrowsUpDownIcon(11638).ArrowsUpDownIcon;
+    ArrowsUpDownIcon = ArrowsUpDownIcon(11657).ArrowsUpDownIcon;
     tmp5Result = tmp5(ArrowsUpDownIcon, { size: "xxs" });
     t[4] = tmp5Result;
-    tmp5Result = tmp5(ArrowsUpDownIcon(4880).Button, t);
+    tmp5Result = tmp5(ArrowsUpDownIcon(4893).Button, t);
   } else {
     const intl = ArrowsUpDownIcon(1236).intl;
     const string = intl.string;
@@ -187,7 +187,7 @@ function SortAndViewOptions(channel) {
     obj[0] = tmp.optionsPill;
     obj = { size: "xs", style: null };
     obj[1] = tmp.sortOptionsIcon;
-    const items1 = [tmp5(ArrowsUpDownIcon(11638).ArrowsUpDownIcon, obj), , ];
+    const items1 = [tmp5(ArrowsUpDownIcon(11657).ArrowsUpDownIcon, obj), , ];
     obj1 = { variant: "text-sm/medium", color: "interactive-text-default", style: null, children: null };
     obj1[2] = tmp.sortOptionsText;
     const intl2 = ArrowsUpDownIcon(1236).intl;
@@ -199,11 +199,11 @@ function SortAndViewOptions(channel) {
       string2Result = string2(t2.xyYt8A);
     }
     obj1[3] = string2Result;
-    items1[1] = tmp5(ArrowsUpDownIcon(4441).Text, obj1);
-    items1[2] = tmp5(ArrowsUpDownIcon(8858).ChevronSmallDownIcon, { size: "xs" });
+    items1[1] = tmp5(ArrowsUpDownIcon(4442).Text, obj1);
+    items1[2] = tmp5(ArrowsUpDownIcon(8875).ChevronSmallDownIcon, { size: "xs" });
     obj[1] = items1;
     obj[6] = closure_16(View, obj);
-    return tmp5(ArrowsUpDownIcon(5020).PressableOpacity, obj);
+    return tmp5(ArrowsUpDownIcon(5033).PressableOpacity, obj);
   }
 }
 function TagFilter(channel) {
@@ -220,8 +220,8 @@ function TagFilter(channel) {
     const intl3 = tmp4(1236).intl;
     obj[1] = intl3.string(tmp4(1236).t["112vVE"]);
     obj[2] = handlePress;
-    obj[4] = tmp3(tmp4(10339).TagIcon, { size: "xxs" });
-    let tmp3Result = tmp3(tmp4(4880).Button, obj);
+    obj[4] = tmp3(tmp4(10357).TagIcon, { size: "xxs" });
+    let tmp3Result = tmp3(tmp4(4893).Button, obj);
   } else {
     obj = { accessibilityRole: "button", accessibilityLabel: null, activeOpacity: 0.8, style: null, onPress: null, children: null };
     const intl = tmp4(1236).intl;
@@ -237,7 +237,7 @@ function TagFilter(channel) {
       const obj2 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
       obj2[2] = tmp.countText;
       obj2[3] = tagFilter.size;
-      obj1[1] = tmp3(tmp4(4441).Text, obj2);
+      obj1[1] = tmp3(tmp4(4442).Text, obj2);
       tmp3Result = tmp3(tmp6, obj1);
     }
     const items = [tmp3Result, , ];
@@ -245,11 +245,11 @@ function TagFilter(channel) {
     obj3[2] = tmp.sortOptionsText;
     const intl2 = tmp4(1236).intl;
     obj3[3] = intl2.string(tmp4(1236).t["112vVE"]);
-    items[1] = tmp3(tmp4(4441).Text, obj3);
-    items[2] = tmp3(tmp4(8858).ChevronSmallDownIcon, { size: "xs" });
+    items[1] = tmp3(tmp4(4442).Text, obj3);
+    items[2] = tmp3(tmp4(8875).ChevronSmallDownIcon, { size: "xs" });
     obj[1] = items;
     obj[5] = closure_16(View, obj);
-    tmp3Result = tmp3(tmp4(5020).PressableOpacity, obj);
+    tmp3Result = tmp3(tmp4(5033).PressableOpacity, obj);
     const tmp5 = closure_16;
   }
   return tmp3Result;

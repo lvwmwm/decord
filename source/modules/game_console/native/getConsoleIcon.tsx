@@ -1,15 +1,15 @@
-// Module ID: 9812
-// Function ID: 9813
+// Module ID: 9830
+// Function ID: 9831
 // Name: getConsoleIcon
-// Dependencies: [676, 4466, 9239, 9813, 2]
+// Dependencies: [676, 4467, 9257, 9831, 2]
 // Exports: default, getConsoleIconForVoicePlatform
 
-// Module 9812 (getConsoleIcon)
+// Module 9830 (getConsoleIcon)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import ParticipantTypes from "ParticipantTypes" /* 4466 */;
-import registerAssetDefault from "registerAsset" /* 9239 */;
-import registerAssetDefault2 from "registerAsset" /* 9813 */;
+import ParticipantTypes from "ParticipantTypes" /* 4467 */;
+import registerAssetDefault from "registerAsset" /* 9257 */;
+import registerAssetDefault2 from "registerAsset" /* 9831 */;
 
 const VoicePlatforms = ParticipantTypes.VoicePlatforms;
 const obj = { [XBOX]: registerAssetDefault, [PLAYSTATION]: registerAssetDefault2, [PLAYSTATION_STAGING]: registerAssetDefault2 };

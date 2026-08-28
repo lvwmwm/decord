@@ -1,12 +1,12 @@
-// Module ID: 15487
-// Function ID: 15488
+// Module ID: 15505
+// Function ID: 15506
 // Name: isDateValidDateOfBirth
-// Dependencies: [4043, 2]
+// Dependencies: [4044, 2]
 // Exports: default
 
-// Module 15487 (isDateValidDateOfBirth)
+// Module 15505 (isDateValidDateOfBirth)
 import set from "set" /* 2 */;
-import hooksDefault from "hooks" /* 4043 */;
+import hooksDefault from "hooks" /* 4044 */;
 
 const result = set.fileFinishedImporting("modules/auth/native/experiment/isDateValidDateOfBirth.tsx");
 

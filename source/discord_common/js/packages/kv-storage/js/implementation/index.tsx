@@ -1,9 +1,9 @@
-// Module ID: 1958
-// Function ID: 1959
+// Module ID: 1959
+// Function ID: 1960
 // Name: set
-// Dependencies: [2, 1959]
+// Dependencies: [2, 1960]
 
-// Module 1958 (set)
+// Module 1959 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/implementation/index.tsx");

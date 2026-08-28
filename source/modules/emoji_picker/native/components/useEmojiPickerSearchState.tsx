@@ -1,13 +1,13 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 9048
+// Function ID: 9049
 // Name: useEmojiPickerSearchState
-// Dependencies: [32, 19, 5353, 705, 1374, 2]
+// Dependencies: [32, 19, 5366, 705, 1374, 2]
 // Exports: default
 
-// Module 9030 (useEmojiPickerSearchState)
+// Module 9048 (useEmojiPickerSearchState)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5353 */;
+import closure_4 from "getEmojiToGroupId" /* 5366 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/emoji_picker/native/components/useEmojiPickerSearchState.tsx");

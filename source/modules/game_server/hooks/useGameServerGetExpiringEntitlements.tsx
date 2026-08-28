@@ -1,12 +1,12 @@
-// Module ID: 12038
-// Function ID: 12039
+// Module ID: 12057
+// Function ID: 12058
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: [19, 4352, 589, 11972, 2]
+// Dependencies: [19, 4353, 589, 11991, 2]
 // Exports: default
 
-// Module 12038 (useGameServerGetExpiringEntitlements)
+// Module 12057 (useGameServerGetExpiringEntitlements)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleGameServerInstanceCreated" /* 4352 */;
+import closure_3 from "handleGameServerInstanceCreated" /* 4353 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_server/hooks/useGameServerGetExpiringEntitlements.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 7604
-// Function ID: 7605
+// Module ID: 7618
+// Function ID: 7619
 // Name: AVATAR_SIZE
-// Dependencies: [19, 17, 7582, 21, 4445, 712, 1435, 7605, 1629, 4185, 4892, 5956, 7606, 4441, 1236, 2]
+// Dependencies: [19, 17, 7596, 21, 4446, 712, 1435, 7619, 1629, 4186, 4905, 5969, 7620, 4442, 1236, 2]
 // Exports: default
 
-// Module 7604 (AVATAR_SIZE)
+// Module 7618 (AVATAR_SIZE)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import BANNER_RATIO_HEIGHT_16_9 from "BANNER_RATIO_HEIGHT_16_9" /* 7582 */;
+import BANNER_RATIO_HEIGHT_16_9 from "BANNER_RATIO_HEIGHT_16_9" /* 7596 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 noopAll;

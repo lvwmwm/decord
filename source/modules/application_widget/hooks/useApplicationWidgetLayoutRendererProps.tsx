@@ -1,16 +1,16 @@
-// Module ID: 12677
-// Function ID: 12678
+// Module ID: 12696
+// Function ID: 12697
 // Name: useApplicationWidgetLayoutRendererProps
-// Dependencies: [32, 19, 12678, 12430, 1996, 12429, 589, 12679, 12582, 1370, 12682, 2]
+// Dependencies: [32, 19, 12697, 12450, 1997, 12449, 589, 12698, 12601, 1370, 12701, 2]
 // Exports: default
 
-// Module 12677 (useApplicationWidgetLayoutRendererProps)
+// Module 12696 (useApplicationWidgetLayoutRendererProps)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleFeaturedOrDeveloperFetchSuccess" /* 12678 */;
-import closure_6 from "map" /* 12430 */;
-import { FetchState } from "map" /* 12430 */;
-import closure_8 from "_getSystemLocale" /* 1996 */;
+import closure_5 from "handleFeaturedOrDeveloperFetchSuccess" /* 12697 */;
+import closure_6 from "map" /* 12450 */;
+import { FetchState } from "map" /* 12450 */;
+import closure_8 from "_getSystemLocale" /* 1997 */;
 
 const require = arg1;
 let closure_9 = [];

@@ -1,37 +1,37 @@
-// Module ID: 13671
-// Function ID: 13672
+// Module ID: 13690
+// Function ID: 13691
 // Name: getStatusSize
-// Dependencies: [19, 17, 676, 1298, 21, 4445, 712, 9349, 13660, 13661, 8030, 7999, 13672, 8029, 13662, 4882, 9516, 9517, 2]
+// Dependencies: [19, 17, 676, 1298, 21, 4446, 712, 9367, 13679, 13680, 8044, 8013, 13691, 8043, 13681, 4895, 9534, 9535, 2]
 
-// Module 13671 (getStatusSize)
+// Module 13690 (getStatusSize)
 import ThemesDefault from "Themes" /* 712 */;
-import getDecorationSizeForAvatarSize from "getDecorationSizeForAvatarSize" /* 7999 */;
-import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 9349 */;
+import getDecorationSizeForAvatarSize from "getDecorationSizeForAvatarSize" /* 8013 */;
+import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 9367 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { StatusTypes } from "ME" /* 676 */;
 import STATUS_PADDING from "STATUS_PADDING" /* 1298 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function getStatusSize(arg0) {
   if (StaticNativeCutoutAvatarImage.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(9349).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(9349).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(9349).AvatarSizes.SMALL !== arg0) {
-          if (tmp(9349).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+    if (tmp(9367).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(9367).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(9367).AvatarSizes.SMALL !== arg0) {
+          if (tmp(9367).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return closure_7.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(9349).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(9349).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(9349).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(9349).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(9349).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(9349).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(9349).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(9349).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(9349).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(9367).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(9367).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(9367).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(9367).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(9367).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(9367).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(9367).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(9367).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(9367).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }

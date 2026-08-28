@@ -1,8 +1,8 @@
-// Module ID: 7341
-// Function ID: 7342
+// Module ID: 7355
+// Function ID: 7356
 // Dependencies: [5, 676, 530, 709, 2]
 
-// Module 7341
+// Module 7355
 import sendRequest from "sendRequest" /* 530 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;

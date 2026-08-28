@@ -1,14 +1,14 @@
-// Module ID: 8660
-// Function ID: 8661
+// Module ID: 8676
+// Function ID: 8677
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 4815, 1236, 2919, 4815, 2]
+// Dependencies: [19, 21, 4828, 1236, 2920, 4828, 2]
 // Exports: default
 
-// Module 8660 (ManualReviewPendingAlertModal)
+// Module 8676 (ManualReviewPendingAlertModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2919 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4815 */;
+import messagesProxyDefault from "messagesProxy" /* 2920 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4828 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

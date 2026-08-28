@@ -1,13 +1,13 @@
-// Module ID: 6051
-// Function ID: 6052
+// Module ID: 6064
+// Function ID: 6065
 // Name: computeHasRoleSubscriptionsInGuild
-// Dependencies: [1218, 1992, 1985, 1910, 676, 589, 2]
+// Dependencies: [1218, 1993, 1986, 1910, 676, 589, 2]
 // Exports: default
 
-// Module 6051 (computeHasRoleSubscriptionsInGuild)
+// Module 6064 (computeHasRoleSubscriptionsInGuild)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
-import closure_4 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_3 from "trackCommunicationDisabled" /* 1993 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 1986 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
 import { GuildFeatures } from "ME" /* 676 */;
 

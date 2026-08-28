@@ -1,10 +1,10 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 16267
+// Function ID: 16268
 // Name: getGroupDMNitroCapConfig
 // Dependencies: [1368, 2]
 // Exports: getGroupDMNitroCapConfig
 
-// Module 16249 (getGroupDMNitroCapConfig)
+// Module 16267 (getGroupDMNitroCapConfig)
 import getUnitIdDefault from "getUnitId" /* 1368 */;
 
 const tmp2 = getUnitIdDefault({ kind: "user", name: "2026-06-nitro-gdm-cap-increase", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

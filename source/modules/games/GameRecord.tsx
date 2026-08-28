@@ -1,14 +1,14 @@
-// Module ID: 4470
-// Function ID: 4471
+// Module ID: 4471
+// Function ID: 4472
 // Name: getOfficialApplicationId
-// Dependencies: [1931, 4471, 1955, 4478, 1435, 1370, 2]
+// Dependencies: [1932, 4472, 1956, 4479, 1435, 1370, 2]
 
-// Module 4470 (getOfficialApplicationId)
+// Module 4471 (getOfficialApplicationId)
 import getAvatarURL from "getAvatarURL" /* 1435 */;
-import toJSDefault from "toJS" /* 1931 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4478 */;
-import closure_3 from "createExecutable" /* 4471 */;
-import { createExecutable } from "createExecutable" /* 4471 */;
+import toJSDefault from "toJS" /* 1932 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4479 */;
+import closure_3 from "createExecutable" /* 4472 */;
+import { createExecutable } from "createExecutable" /* 4472 */;
 
 require = arg1;
 toJSDefault;

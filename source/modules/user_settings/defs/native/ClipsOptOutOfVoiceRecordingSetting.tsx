@@ -1,12 +1,12 @@
-// Module ID: 14530
-// Function ID: 14531
+// Module ID: 14514
+// Function ID: 14515
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 7816, 4134, 709, 10988, 1236, 2]
+// Dependencies: [5, 7830, 4135, 709, 11006, 1236, 2]
 
-// Module 14530 (_updateClipsAllowVoiceRecording)
+// Module 14514 (_updateClipsAllowVoiceRecording)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import createToggle from "createToggle" /* 10988 */;
+import createToggle from "createToggle" /* 11006 */;
 
 require = arg1;
 function _updateClipsAllowVoiceRecording() {
@@ -43,7 +43,7 @@ function _updateClipsAllowVoiceRecording() {
               return obj;
             } else {
               const callback2 = tmp4;
-              const ClipsAllowVoiceRecording = callback(4134).ClipsAllowVoiceRecording;
+              const ClipsAllowVoiceRecording = callback(4135).ClipsAllowVoiceRecording;
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };

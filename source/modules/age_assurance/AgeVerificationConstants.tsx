@@ -1,13 +1,13 @@
-// Module ID: 8614
-// Function ID: 8615
+// Module ID: 8629
+// Function ID: 8630
 // Name: set
-// Dependencies: [676, 8615, 1236, 8613, 1995, 2887, 2]
+// Dependencies: [676, 8630, 1236, 8628, 1996, 2888, 2]
 // Exports: getAgeVerificationGetStartedSteps
 
-// Module 8614 (set)
+// Module 8629 (set)
 import ME from "ME" /* 676 */;
-import messagesProxyDefault from "messagesProxy" /* 2887 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8615 */;
+import messagesProxyDefault from "messagesProxy" /* 2888 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8630 */;
 import set from "set" /* 2 */;
 
 const HelpdeskArticles = ME.HelpdeskArticles;

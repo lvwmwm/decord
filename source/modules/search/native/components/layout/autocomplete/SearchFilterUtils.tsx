@@ -1,22 +1,22 @@
-// Module ID: 16128
-// Function ID: 16129
+// Module ID: 16146
+// Function ID: 16147
 // Name: getSearchTokenLabel
-// Dependencies: [7555, 7554, 676, 1236, 11312, 10115, 13496, 4991, 9676, 16129, 11709, 9296, 11825, 11847, 11822, 4412, 9608, 2009, 11844, 2]
+// Dependencies: [7569, 7568, 676, 1236, 11331, 10133, 13515, 5004, 9694, 16147, 11712, 9314, 11844, 11866, 11841, 4413, 9626, 2010, 11863, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 16128 (getSearchTokenLabel)
+// Module 16146 (getSearchTokenLabel)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import AtIcon from "AtIcon" /* 4991 */;
-import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 7554 */;
-import RobotIcon from "RobotIcon" /* 9296 */;
-import CalendarIcon from "CalendarIcon" /* 9676 */;
-import AttachmentIcon from "AttachmentIcon" /* 10115 */;
-import UserIcon from "UserIcon" /* 11312 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 11709 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13496 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 16129 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7555 */;
+import AtIcon from "AtIcon" /* 5004 */;
+import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 7568 */;
+import RobotIcon from "RobotIcon" /* 9314 */;
+import CalendarIcon from "CalendarIcon" /* 9694 */;
+import AttachmentIcon from "AttachmentIcon" /* 10133 */;
+import UserIcon from "UserIcon" /* 11331 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 11712 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 13515 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 16147 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7569 */;
 import ME from "ME" /* 676 */;
 
 ({ EMPTY_SEARCH_QUERY_STRING: c3, SearchQueryTagTypes: c4 } = MessageEmbedTypes);
@@ -213,7 +213,7 @@ export const getSearchTokenPressHandler = function getSearchTokenPressHandler(cl
 export const getSearchFilterSuggestions = function getSearchFilterSuggestions(textInputValue) {
   closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(11825));
+  const keys = Object.keys(items(11844));
   const item = keys.forEach((type) => {
     let obj = textInputValue(closure_1_2[12]);
     if (obj.isSearchFilterTokenType(type)) {

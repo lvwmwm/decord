@@ -1,12 +1,12 @@
-// Module ID: 7601
-// Function ID: 7602
+// Module ID: 7615
+// Function ID: 7616
 // Name: MemberVerificationAlertIncomplete
-// Dependencies: [19, 4268, 21, 647, 7579, 7586, 1236, 7590, 7602, 4880, 2]
+// Dependencies: [19, 4269, 21, 647, 7593, 7600, 1236, 7604, 7616, 4893, 2]
 // Exports: default
 
-// Module 7601 (MemberVerificationAlertIncomplete)
+// Module 7615 (MemberVerificationAlertIncomplete)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleGatewayJoinRequestUpdate" /* 4268 */;
+import closure_4 from "handleGatewayJoinRequestUpdate" /* 4269 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -56,20 +56,20 @@ export default function MemberVerificationAlertIncomplete(guildId) {
   }
   obj = {};
   const merged1 = Object.assign(merged);
-  obj.icon = guildId(7602).ListViewIcon;
+  obj.icon = guildId(7616).ListViewIcon;
   obj.header = formatToPlainStringResult;
   obj1 = { children: null };
   const obj2 = { variant: "secondary", text: null, onPress: null };
   const intl3 = tmp2(1236).intl;
   obj2[1] = intl3.string(guildId(1236).t.h3aGmv);
   obj2[2] = callback;
-  const items4 = [callback(guildId(4880).Button, obj2), ];
+  const items4 = [callback(guildId(4893).Button, obj2), ];
   const obj3 = { text: null, variant: "destructive", onPress: null };
   const intl4 = tmp2(1236).intl;
   obj3[0] = intl4.string(guildId(1236).t.OQFlFD);
   obj3[2] = callback1;
-  items4[1] = callback(guildId(4880).Button, obj3);
+  items4[1] = callback(guildId(4893).Button, obj3);
   obj1[0] = items4;
   obj.buttons = callback2(closure_6, obj1);
-  return callback(onClose(7590), obj);
+  return callback(onClose(7604), obj);
 };

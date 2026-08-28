@@ -1,26 +1,26 @@
-// Module ID: 12188
-// Function ID: 12189
+// Module ID: 12207
+// Function ID: 12208
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12171, 676, 21, 4445, 712, 1500, 5546, 12184, 4343, 12179, 1297, 1236, 4441, 7637, 4880, 2]
+// Dependencies: [5, 32, 19, 17, 12190, 676, 21, 4446, 712, 1500, 5559, 12203, 4344, 12198, 1297, 1236, 4442, 7651, 4893, 2]
 // Exports: default
 
-// Module 12188 (HubEmailConnectionSubmitSchool)
+// Module 12207 (HubEmailConnectionSubmitSchool)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import useNavigation from "useNavigation" /* 1500 */;
-import Text from "Text" /* 4441 */;
-import Button2 from "Button" /* 4880 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5546 */;
-import _modDef7637 from "module_7637" /* 7637 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12179 */;
+import Text from "Text" /* 4442 */;
+import Button2 from "Button" /* 4893 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5559 */;
+import _modDef7651 from "module_7651" /* 7651 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12198 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12171 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12190 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 ({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -196,7 +196,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       }
     }, 100);
   };
-  items1[2] = callback2(_modDef7637, obj4);
+  items1[2] = callback2(_modDef7651, obj4);
   obj1[1] = items1;
   const items2 = [closure_10(first, obj1), callback2(first, { style: tmp.redesignGrowSpacing }), ];
   const obj7 = { style: tmp.redesignSubmit, children: null };

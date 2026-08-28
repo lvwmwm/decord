@@ -1,14 +1,14 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16346
+// Function ID: 16347
 // Name: SlashIcon
-// Dependencies: [19, 21, 712, 4164, 16329, 2]
+// Dependencies: [19, 21, 712, 4165, 16347, 2]
 // Exports: SlashIcon
 
-// Module 16328 (SlashIcon)
+// Module 16346 (SlashIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 16329 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 16347 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

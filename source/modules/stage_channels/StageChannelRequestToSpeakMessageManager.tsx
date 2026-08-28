@@ -1,16 +1,16 @@
-// Module ID: 16983
-// Function ID: 16984
+// Module ID: 17001
+// Function ID: 17002
 // Name: handleVoiceStateUpdates
-// Dependencies: [1218, 1391, 4688, 4089, 1981, 1922, 676, 5438, 1399, 16984, 686, 7135, 2]
+// Dependencies: [1218, 1391, 4701, 4090, 1982, 1923, 676, 5451, 1399, 17002, 686, 7148, 2]
 
-// Module 16983 (handleVoiceStateUpdates)
-import initializeDefault from "initialize" /* 5438 */;
+// Module 17001 (handleVoiceStateUpdates)
+import initializeDefault from "initialize" /* 5451 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "reinjectEphemerals" /* 4688 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_7 from "handleConnectionOpen" /* 1981 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "reinjectEphemerals" /* 4701 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_7 from "handleConnectionOpen" /* 1982 */;
+import closure_8 from "mergeGuildAvatar" /* 1923 */;
 import { MessageFlags } from "ME" /* 676 */;
 
 const require = arg1;

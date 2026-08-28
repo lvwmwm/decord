@@ -1,10 +1,10 @@
-// Module ID: 14223
-// Function ID: 14224
+// Module ID: 14193
+// Function ID: 14194
 // Name: _updateBadgeSettings
-// Dependencies: [5, 676, 530, 709, 8495, 1208, 2]
+// Dependencies: [5, 676, 530, 709, 8509, 1208, 2]
 // Exports: updateBadgeSettings
 
-// Module 14223 (_updateBadgeSettings)
+// Module 14193 (_updateBadgeSettings)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 

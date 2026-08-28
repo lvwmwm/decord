@@ -1,9 +1,9 @@
-// Module ID: 17388
-// Function ID: 17389
+// Module ID: 17406
+// Function ID: 17407
 // Name: DeeplinkSource
 // Dependencies: [2]
 
-// Module 17388 (DeeplinkSource)
+// Module 17406 (DeeplinkSource)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/deep_link/DeepLinkTypes.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 7336
-// Function ID: 7337
+// Module ID: 7350
+// Function ID: 7351
 // Name: recountRelationshipTypes
-// Dependencies: [4098, 676, 4085, 589, 709, 2]
+// Dependencies: [4099, 676, 4086, 589, 709, 2]
 
-// Module 7336 (recountRelationshipTypes)
+// Module 7350 (recountRelationshipTypes)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "markAllUserIdListsStale" /* 4098 */;
+import closure_0 from "markAllUserIdListsStale" /* 4099 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 
 function recountRelationshipTypes() {

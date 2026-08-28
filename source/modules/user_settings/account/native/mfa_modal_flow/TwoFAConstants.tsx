@@ -1,9 +1,9 @@
-// Module ID: 14338
-// Function ID: 14339
+// Module ID: 14322
+// Function ID: 14323
 // Name: frozen
 // Dependencies: [676, 2]
 
-// Module 14338 (frozen)
+// Module 14322 (frozen)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

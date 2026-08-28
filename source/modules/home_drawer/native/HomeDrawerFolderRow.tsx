@@ -1,20 +1,20 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15826
+// Function ID: 15827
 // Name: Wrapper
-// Dependencies: [19, 17, 7314, 1910, 5333, 4654, 4464, 676, 21, 4445, 589, 10158, 4441, 1236, 15809, 4305, 4302, 2]
+// Dependencies: [19, 17, 7328, 1910, 5346, 4667, 4465, 676, 21, 4446, 589, 10176, 4442, 1236, 15827, 4306, 4303, 2]
 // Exports: default
 
-// Module 15808 (Wrapper)
+// Module 15826 (Wrapper)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateGuildUnreadSentinel" /* 7314 */;
+import closure_5 from "updateGuildUnreadSentinel" /* 7328 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "insertUnsortedGuilds" /* 5333 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4654 */;
-import closure_9 from "updateVoiceState" /* 4464 */;
+import closure_7 from "insertUnsortedGuilds" /* 5346 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4667 */;
+import closure_9 from "updateVoiceState" /* 4465 */;
 import { NOOP } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function Wrapper(folder) {
@@ -235,7 +235,7 @@ export default function HomeDrawerFolderExpandedChildren(folderId) {
     }
     return guildFolderById;
   });
-  const MobileHomeDrawerExperiment = folderId(4305).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = folderId(4306).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

@@ -1,20 +1,20 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16838
+// Function ID: 16839
 // Name: _initialize
-// Dependencies: [9914, 5174, 1391, 10084, 1981, 4290, 4464, 4520, 4461, 9913, 5438, 2]
+// Dependencies: [9932, 5187, 1391, 10102, 1982, 4291, 4465, 4521, 4462, 9931, 5451, 2]
 
-// Module 16820 (_initialize)
-import initializeDefault from "initialize" /* 5438 */;
-import importDefaultResult from "Soundpacks" /* 9914 */;
-import closure_3 from "callConnect" /* 5174 */;
+// Module 16838 (_initialize)
+import initializeDefault from "initialize" /* 5451 */;
+import importDefaultResult from "Soundpacks" /* 9932 */;
+import closure_3 from "callConnect" /* 5187 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "DesktopNotificationTypes" /* 10084 */;
-import closure_6 from "handleConnectionOpen" /* 1981 */;
-import closure_7 from "initialize" /* 4290 */;
-import closure_8 from "updateVoiceState" /* 4464 */;
-import closure_9 from "getVoiceStatesForGuild" /* 4520 */;
-import closure_10 from "getParticipants" /* 4461 */;
-import createSoundForPack from "createSoundForPack" /* 9913 */;
+import closure_5 from "DesktopNotificationTypes" /* 10102 */;
+import closure_6 from "handleConnectionOpen" /* 1982 */;
+import closure_7 from "initialize" /* 4291 */;
+import closure_8 from "updateVoiceState" /* 4465 */;
+import closure_9 from "getVoiceStatesForGuild" /* 4521 */;
+import closure_10 from "getParticipants" /* 4462 */;
+import createSoundForPack from "createSoundForPack" /* 9931 */;
 
 let require = arg1;
 let closure_11 = createSoundForPack.createSoundForPack("call_calling", importDefaultResult.getSoundpack());

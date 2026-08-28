@@ -1,16 +1,16 @@
-// Module ID: 11959
-// Function ID: 11960
+// Module ID: 11978
+// Function ID: 11979
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 4332, 21, 4445, 712, 4355, 11960, 11970, 11990, 1629, 5905, 11995, 11996, 12025, 4676, 4351, 5454, 1236, 2401, 7540, 5447, 12032, 12034, 12042, 12048, 12058, 12066, 2]
+// Dependencies: [19, 17, 4333, 21, 4446, 712, 4356, 11979, 11989, 12009, 1629, 5918, 12014, 12015, 12044, 4689, 4352, 5467, 1236, 2402, 7554, 5460, 12051, 12053, 12061, 12067, 12077, 12085, 2]
 // Exports: default
 
-// Module 11959 (GuildPowerupsModal)
+// Module 11978 (GuildPowerupsModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4332 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4333 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);

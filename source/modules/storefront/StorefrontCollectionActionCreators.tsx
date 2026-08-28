@@ -1,15 +1,15 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12512
+// Function ID: 12513
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1996, 12490, 7239, 676, 687, 709, 4708, 4344, 2]
+// Dependencies: [5, 1997, 12510, 7253, 676, 687, 709, 4721, 4345, 2]
 // Exports: maybeFetchCollectionsForApplication, maybeFetchCollectionsWithProducts
 
-// Module 12492 (_maybeFetchCollectionsWithProducts)
+// Module 12512 (_maybeFetchCollectionsWithProducts)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "getFetchState" /* 12490 */;
-import closure_6 from "fromServer" /* 7239 */;
+import closure_4 from "_getSystemLocale" /* 1997 */;
+import closure_5 from "getFetchState" /* 12510 */;
+import closure_6 from "fromServer" /* 7253 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;

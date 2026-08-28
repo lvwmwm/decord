@@ -1,14 +1,14 @@
-// Module ID: 12562
-// Function ID: 12563
+// Module ID: 12581
+// Function ID: 12582
 // Name: TwitchNeutralIcon
-// Dependencies: [19, 21, 712, 4164, 12563, 2]
+// Dependencies: [19, 21, 712, 4165, 12582, 2]
 // Exports: TwitchNeutralIcon
 
-// Module 12562 (TwitchNeutralIcon)
+// Module 12581 (TwitchNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 12563 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 12582 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

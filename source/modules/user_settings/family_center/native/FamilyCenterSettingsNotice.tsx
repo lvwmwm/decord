@@ -1,14 +1,14 @@
-// Module ID: 14371
-// Function ID: 14372
+// Module ID: 14355
+// Function ID: 14356
 // Name: FamilyCenterSettingsParentalControlsNotice
-// Dependencies: [19, 8601, 21, 8697, 14302, 2369, 7265, 4458, 2]
+// Dependencies: [19, 8616, 21, 8713, 14271, 2370, 7279, 4459, 2]
 // Exports: default
 
-// Module 14371 (FamilyCenterSettingsParentalControlsNotice)
+// Module 14355 (FamilyCenterSettingsParentalControlsNotice)
 import noopAll from "noop" /* 19 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14302 */;
-import { SafetySettingsNoticeType } from "SafetyToastType" /* 8601 */;
+import messagesProxyDefault from "messagesProxy" /* 2370 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14271 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 8616 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,7 +16,7 @@ noopAll;
 const result = require("set").fileFinishedImporting("modules/user_settings/family_center/native/FamilyCenterSettingsNotice.tsx");
 
 export default function FamilyCenterSettingsParentalControlsNotice() {
-  let obj = activeLinkUserIds(8697);
+  let obj = activeLinkUserIds(8713);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   obj = {
     label: messagesProxyDefault.i284fU,

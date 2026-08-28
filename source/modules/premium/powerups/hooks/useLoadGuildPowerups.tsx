@@ -1,10 +1,10 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 11979
+// Function ID: 11980
 // Name: useLoadGuildPowerups
-// Dependencies: [19, 4355, 11961, 11967, 2]
+// Dependencies: [19, 4356, 11980, 11986, 2]
 // Exports: default
 
-// Module 11960 (useLoadGuildPowerups)
+// Module 11979 (useLoadGuildPowerups)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

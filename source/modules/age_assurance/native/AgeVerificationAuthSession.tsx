@@ -1,10 +1,10 @@
-// Module ID: 8627
-// Function ID: 8628
+// Module ID: 8642
+// Function ID: 8643
 // Name: discard
 // Dependencies: [5, 17, 3, 644, 500, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 8627 (discard)
+// Module 8642 (discard)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

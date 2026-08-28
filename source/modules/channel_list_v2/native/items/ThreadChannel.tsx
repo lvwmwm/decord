@@ -1,29 +1,29 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15632
+// Function ID: 15633
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4091, 1391, 4089, 4460, 1981, 1922, 4464, 4520, 10121, 676, 4655, 1235, 21, 4445, 712, 8173, 4887, 589, 11778, 4456, 10222, 15615, 15617, 9346, 15620, 1297, 15622, 15631, 4631, 2]
+// Dependencies: [19, 17, 4092, 1391, 4090, 4461, 1982, 1923, 4465, 4521, 10139, 676, 4668, 1235, 21, 4446, 712, 8187, 4900, 589, 11797, 4457, 10240, 15633, 15635, 9364, 15638, 1297, 15640, 15649, 4632, 2]
 // Exports: default
 
-// Module 15614 (ThreadChannel)
+// Module 15632 (ThreadChannel)
 import ThemesDefault from "Themes" /* 712 */;
-import inlineStyles from "inlineStyles" /* 8173 */;
-import inlineStylesDefault from "inlineStyles" /* 8173 */;
+import inlineStyles from "inlineStyles" /* 8187 */;
+import inlineStylesDefault from "inlineStyles" /* 8187 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "storeThread" /* 4091 */;
+import closure_5 from "storeThread" /* 4092 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_8 from "generateOldThreadCutoff" /* 4460 */;
-import closure_9 from "handleConnectionOpen" /* 1981 */;
-import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import closure_11 from "updateVoiceState" /* 4464 */;
-import closure_12 from "getVoiceStatesForGuild" /* 4520 */;
-import hairlineWidth from "hairlineWidth" /* 10121 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_8 from "generateOldThreadCutoff" /* 4461 */;
+import closure_9 from "handleConnectionOpen" /* 1982 */;
+import closure_10 from "mergeGuildAvatar" /* 1923 */;
+import closure_11 from "updateVoiceState" /* 4465 */;
+import closure_12 from "getVoiceStatesForGuild" /* 4521 */;
+import hairlineWidth from "hairlineWidth" /* 10139 */;
 import { Permissions } from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4655 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4668 */;
 import { OpenThreadAnalyticsLocations as closure_16 } from "AbortCodes" /* 1235 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function ThreadChannel(channel) {

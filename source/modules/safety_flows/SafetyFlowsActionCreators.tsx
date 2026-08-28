@@ -1,10 +1,10 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17380
+// Function ID: 17381
 // Name: _getCurrentTask
-// Dependencies: [5, 676, 4666, 503, 4344, 2]
+// Dependencies: [5, 676, 4679, 503, 4345, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 17362 (_getCurrentTask)
+// Module 17380 (_getCurrentTask)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -18,7 +18,7 @@ function _getCurrentTask() {
     const obj2 = { event: null };
     obj2[0] = closure_1_0(503).NetworkActionNames.USER_VERIFY;
     obj1[1] = obj2;
-    closure_0 = yield v0(4666).get(obj1);
+    closure_0 = yield v0(4679).get(obj1);
     let body = null;
     if (204 !== closure_0.status) {
       body = closure_0.body;
@@ -47,7 +47,7 @@ function _completeTask() {
       const obj2 = { event: null };
       obj2[0] = callback(503).NetworkActionNames.USER_VERIFY;
       obj1[2] = obj2;
-      yield v0(4666).post(obj1);
+      yield v0(4679).post(obj1);
       return body.body;
     })();
   });

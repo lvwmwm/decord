@@ -1,18 +1,18 @@
-// Module ID: 5557
-// Function ID: 5558
+// Module ID: 5570
+// Function ID: 5571
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 4445, 712, 4882, 2]
+// Dependencies: [109, 19, 17, 21, 4446, 712, 4895, 2]
 // Exports: TableRowIcon
 
-// Module 5557 (TableRowIcon)
+// Module 5570 (TableRowIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import IconSizes from "IconSizes" /* 4882 */;
-import IconSizesDefault from "IconSizes" /* 4882 */;
+import IconSizes from "IconSizes" /* 4895 */;
+import IconSizesDefault from "IconSizes" /* 4895 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 let closure_3 = ["color"];

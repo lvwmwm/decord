@@ -1,9 +1,9 @@
-// Module ID: 8733
-// Function ID: 8734
+// Module ID: 8749
+// Function ID: 8750
 // Name: getSimilarGames
 // Dependencies: [589, 709, 2]
 
-// Module 8733 (getSimilarGames)
+// Module 8749 (getSimilarGames)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

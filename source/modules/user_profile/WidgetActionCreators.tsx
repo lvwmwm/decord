@@ -1,11 +1,11 @@
-// Module ID: 7306
-// Function ID: 7307
-// Dependencies: [5, 1922, 676, 709, 530, 7307, 1208, 2]
+// Module ID: 7320
+// Function ID: 7321
+// Dependencies: [5, 1923, 676, 709, 530, 7321, 1208, 2]
 
-// Module 7306
+// Module 7320
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -246,7 +246,7 @@ export default {
       obj5[0] = upload_url;
       obj5[1] = body;
       const obj6 = { "Content-Type": null };
-      obj6[0] = closure_1_0(7307).WIDGET_CLIP_CONTENT_TYPE;
+      obj6[0] = closure_1_0(7321).WIDGET_CLIP_CONTENT_TYPE;
       obj5[2] = obj6;
       obj5[3] = function onRequestProgress(direction) {
         let tmp = "upload" === direction.direction;

@@ -1,11 +1,11 @@
-// Module ID: 13309
-// Function ID: 13310
+// Module ID: 13328
+// Function ID: 13329
 // Name: onPostConnectionOpen
-// Dependencies: [5438, 8427, 2]
+// Dependencies: [5451, 8441, 2]
 
-// Module 13309 (onPostConnectionOpen)
-import initializeDefault from "initialize" /* 5438 */;
-import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8427 */;
+// Module 13328 (onPostConnectionOpen)
+import initializeDefault from "initialize" /* 5451 */;
+import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8441 */;
 
 require = arg1;
 initializeDefault;

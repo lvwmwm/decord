@@ -1,17 +1,17 @@
-// Module ID: 12727
-// Function ID: 12728
+// Module ID: 12746
+// Function ID: 12747
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 4445, 712, 12728, 4441, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 12747, 4442, 2]
 // Exports: URLCallout
 
-// Module 12727 (URLCallout)
+// Module 12746 (URLCallout)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4441 */;
-import useUrlParts from "useUrlParts" /* 12728 */;
+import Text from "Text" /* 4442 */;
+import useUrlParts from "useUrlParts" /* 12747 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;

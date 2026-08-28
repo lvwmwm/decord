@@ -1,12 +1,12 @@
-// Module ID: 6039
-// Function ID: 6040
+// Module ID: 6052
+// Function ID: 6053
 // Name: SubscriptionPlans
-// Dependencies: [1924, 1625, 2]
+// Dependencies: [1925, 1625, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 6039 (SubscriptionPlans)
+// Module 6052 (SubscriptionPlans)
 import set from "set" /* 2 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 import isMetaQuest from "isMetaQuest" /* 1625 */;
 
 ({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = GuildFeatures);

@@ -1,12 +1,12 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11449
+// Function ID: 11450
 // Name: onTapCheckpointCard
-// Dependencies: [1391, 676, 698, 4653, 2]
+// Dependencies: [1391, 676, 698, 4666, 2]
 // Exports: onTapCheckpointCard
 
-// Module 11430 (onTapCheckpointCard)
+// Module 11449 (onTapCheckpointCard)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4666 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 

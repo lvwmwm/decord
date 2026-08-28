@@ -1,10 +1,10 @@
-// Module ID: 7929
-// Function ID: 7930
+// Module ID: 7943
+// Function ID: 7944
 // Name: isMessageNewerThanImprovedMarkdownEpoch
 // Dependencies: [11, 2]
 // Exports: isMessageNewerThanImprovedMarkdownEpoch
 
-// Module 7929 (isMessageNewerThanImprovedMarkdownEpoch)
+// Module 7943 (isMessageNewerThanImprovedMarkdownEpoch)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 

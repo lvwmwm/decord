@@ -1,13 +1,13 @@
-// Module ID: 7673
-// Function ID: 7674
+// Module ID: 7687
+// Function ID: 7688
 // Name: SplitTextField
-// Dependencies: [19, 17, 21, 6181, 6175, 6176, 6180, 6183, 2]
+// Dependencies: [19, 17, 21, 6194, 6188, 6189, 6193, 6196, 2]
 
-// Module 7673 (SplitTextField)
-import useTextFieldState from "useTextFieldState" /* 6175 */;
-import useInputClearButton from "useInputClearButton" /* 6176 */;
-import useInputStyles from "useInputStyles" /* 6181 */;
-import BaseTextField from "BaseTextField" /* 6183 */;
+// Module 7687 (SplitTextField)
+import useTextFieldState from "useTextFieldState" /* 6188 */;
+import useInputClearButton from "useInputClearButton" /* 6189 */;
+import useInputStyles from "useInputStyles" /* 6194 */;
+import BaseTextField from "BaseTextField" /* 6196 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
@@ -29,7 +29,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
     ({ content: obj5[0], pressableProps: obj5[1] } = inputClearButtonConfig);
     tmp6 = obj;
   }
-  let tmpResult = tmp(6180);
+  let tmpResult = tmp(6193);
   const inputAttachments = tmpResult.useInputAttachments(size, tmp6);
   let tmp8 = null;
   ({ trailing, inputStyle } = inputAttachments);
@@ -48,7 +48,7 @@ const forwardRefResult = importAllResult.forwardRef((size, ref) => {
         return items;
       };
       const merged = Object.assign(size.leadingPressableProps);
-      tmpResult = tmp(6180);
+      tmpResult = tmp(6193);
       obj2.children = tmpResult.renderInputAttachment(undefined, size.leadingText, inputStyles.text);
       obj1[1] = <closure_2 style={null} />;
       tmp8 = <closure_3 style={null}>{null}</closure_3>;

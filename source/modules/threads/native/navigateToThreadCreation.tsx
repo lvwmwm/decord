@@ -1,13 +1,13 @@
-// Module ID: 10780
-// Function ID: 10781
+// Module ID: 10798
+// Function ID: 10799
 // Name: navigateToThreadCreation
-// Dependencies: [7442, 4299, 4456, 2]
+// Dependencies: [7456, 4300, 4457, 2]
 // Exports: navigateToThreadCreation
 
-// Module 10780 (navigateToThreadCreation)
+// Module 10798 (navigateToThreadCreation)
 import set from "set" /* 2 */;
-import transitionToChannel from "transitionToChannel" /* 4456 */;
-import patchThreadDefault from "patchThread" /* 7442 */;
+import transitionToChannel from "transitionToChannel" /* 4457 */;
+import patchThreadDefault from "patchThread" /* 7456 */;
 
 let result = set.fileFinishedImporting("modules/threads/native/navigateToThreadCreation.tsx");
 

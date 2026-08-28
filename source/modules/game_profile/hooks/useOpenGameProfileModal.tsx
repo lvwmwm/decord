@@ -1,10 +1,10 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8742
+// Function ID: 8743
 // Name: useOpenGameProfileModal
-// Dependencies: [8727, 8731, 2]
+// Dependencies: [8743, 8747, 2]
 // Exports: default
 
-// Module 8726 (useOpenGameProfileModal)
+// Module 8742 (useOpenGameProfileModal)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/game_profile/hooks/useOpenGameProfileModal.tsx");

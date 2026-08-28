@@ -1,16 +1,16 @@
-// Module ID: 4459
-// Function ID: 4460
+// Module ID: 4460
+// Function ID: 4461
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1996, 1340, 1980, 595, 4134, 589, 709, 2]
+// Dependencies: [1997, 1340, 1981, 595, 4135, 589, 709, 2]
 
-// Module 4459 (handleUserSettingsProtoStoreChange)
+// Module 4460 (handleUserSettingsProtoStoreChange)
 import initializeDefault from "initialize" /* 589 */;
 import Storage3 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import closure_2 from "_getSystemLocale" /* 1996 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
+import closure_2 from "_getSystemLocale" /* 1997 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
-import CHANGELOG_MODAL_KEY from "CHANGELOG_MODAL_KEY" /* 1980 */;
+import CHANGELOG_MODAL_KEY from "CHANGELOG_MODAL_KEY" /* 1981 */;
 import set from "set" /* 2 */;
 
 require = arg1;

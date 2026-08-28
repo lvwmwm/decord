@@ -1,9 +1,9 @@
-// Module ID: 6918
-// Function ID: 6919
+// Module ID: 6931
+// Function ID: 6932
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6918 (metadata)
+// Module 6931 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconEyespyExample-2x.png.js");

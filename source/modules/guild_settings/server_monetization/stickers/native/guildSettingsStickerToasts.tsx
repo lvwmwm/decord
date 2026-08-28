@@ -1,15 +1,15 @@
-// Module ID: 17077
-// Function ID: 17078
+// Module ID: 17095
+// Function ID: 17096
 // Name: showGuildSettingsStickerError
-// Dependencies: [4162, 7641, 1236, 4400, 2]
+// Dependencies: [4163, 7655, 1236, 4401, 2]
 // Exports: showGuildSettingsStickerError, showGuildSettingsStickerSuccess
 
-// Module 17077 (showGuildSettingsStickerError)
+// Module 17095 (showGuildSettingsStickerError)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import dispatcherDefault from "dispatcher" /* 4162 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4400 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7641 */;
+import dispatcherDefault from "dispatcher" /* 4163 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4401 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7655 */;
 
 const result = set.fileFinishedImporting("modules/guild_settings/server_monetization/stickers/native/guildSettingsStickerToasts.tsx");
 

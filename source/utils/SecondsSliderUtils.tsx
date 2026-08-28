@@ -1,13 +1,13 @@
-// Module ID: 16308
-// Function ID: 16309
+// Module ID: 16326
+// Function ID: 16327
 // Name: getSecondsSliderLabel
-// Dependencies: [1236, 4043, 2]
+// Dependencies: [1236, 4044, 2]
 // Exports: getSecondsSliderLabel
 
-// Module 16308 (getSecondsSliderLabel)
+// Module 16326 (getSecondsSliderLabel)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 4043 */;
+import hooksDefault from "hooks" /* 4044 */;
 
 const result = set.fileFinishedImporting("utils/SecondsSliderUtils.tsx");
 

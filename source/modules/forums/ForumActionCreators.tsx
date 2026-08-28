@@ -1,14 +1,14 @@
-// Module ID: 7573
-// Function ID: 7574
+// Module ID: 7587
+// Function ID: 7588
 // Name: withErrorHandling
-// Dependencies: [5, 676, 4809, 1236, 709, 530, 7442, 7574, 7575, 7576, 7444, 2]
+// Dependencies: [5, 676, 4822, 1236, 709, 530, 7456, 7588, 7589, 7590, 7458, 2]
 
-// Module 7573 (withErrorHandling)
+// Module 7587 (withErrorHandling)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen" /* 7574 */;
-import prototype from "prototype" /* 7575 */;
-import maybeMarkSeen from "maybeMarkSeen" /* 7576 */;
+import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen" /* 7588 */;
+import prototype from "prototype" /* 7589 */;
+import maybeMarkSeen from "maybeMarkSeen" /* 7590 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 
@@ -202,7 +202,7 @@ export default {
     closure_1 = arg1;
     return callback(function*() {
       closure_0 = tmp4;
-      const obj2 = v0(7442);
+      const obj2 = v0(7456);
       yield obj2.unarchiveThreadIfNecessary(closure_1_0);
       const HTTP = closure_1_0(530).HTTP;
       const obj3 = { url: null, body: null, rejectWithError: null };
@@ -246,7 +246,7 @@ export default {
       obj1[1] = closure_1_1;
       closure_1_1(709).dispatch(obj1);
       dependencyMap = 1;
-      const obj13 = closure_1_1(7442);
+      const obj13 = closure_1_1(7456);
       yield obj13.searchThreads(closure_1_0, closure_1_1, dependencyMap, c3, c4);
       if (1 === tmp7) {
         dependencyMap = 0;
@@ -264,8 +264,8 @@ export default {
         obj4[0] = length;
         obj4[1] = closure_1;
         obj4[2] = length.length;
-        closure_1_0(7444).trackForumSearched(obj4);
-        const obj7 = closure_1_0(7444);
+        closure_1_0(7458).trackForumSearched(obj4);
+        const obj7 = closure_1_0(7458);
         const obj5 = { type: "FORUM_SEARCH_SUCCESS", channelId: null, threadIds: null };
         obj5[1] = closure_1;
         obj5[2] = length;

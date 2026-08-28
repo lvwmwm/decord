@@ -1,20 +1,20 @@
-// Module ID: 11751
-// Function ID: 11752
+// Module ID: 11770
+// Function ID: 11771
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 9455, 5173, 4688, 21, 4445, 712, 500, 4165, 1367, 589, 9572, 1236, 11752, 11753, 7938, 11754, 2]
+// Dependencies: [19, 17, 9473, 5186, 4701, 21, 4446, 712, 500, 4166, 1367, 589, 9590, 1236, 11771, 11772, 7952, 11773, 2]
 // Exports: default
 
-// Module 11751 (JumpToPresentButton)
+// Module 11770 (JumpToPresentButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4165 */;
+import map from "map" /* 4166 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "updateChatInputContainerHeight" /* 9455 */;
-import { useChatInputContainerHeight as closure_5 } from "updateChatInputContainerHeight" /* 9455 */;
-import closure_6 from "_handleConnectionOpen" /* 5173 */;
-import closure_7 from "reinjectEphemerals" /* 4688 */;
+import closure_4 from "updateChatInputContainerHeight" /* 9473 */;
+import { useChatInputContainerHeight as closure_5 } from "updateChatInputContainerHeight" /* 9473 */;
+import closure_6 from "_handleConnectionOpen" /* 5186 */;
+import closure_7 from "reinjectEphemerals" /* 4701 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -59,11 +59,11 @@ export default function JumpToPresentButton(channelId) {
     }
     return tmp;
   });
-  obj1 = channelId(9572);
+  obj1 = channelId(9590);
   const isVoicePanelMounted = obj1.useIsVoicePanelMounted(channelId);
   let tmp5 = screenIndex(1367)("JumpToPresentButton");
-  const isVoicePanelOpen = channelId(9572).useIsVoicePanelOpen(channelId);
-  const obj3 = channelId(9572);
+  const isVoicePanelOpen = channelId(9590).useIsVoicePanelOpen(channelId);
+  const obj3 = channelId(9590);
   const items1 = [closure_7];
   const stateFromStores = channelId(589).useStateFromStores(items1, () => null != closure_1_7.getMessages(channelId).jumpReturnTargetId);
   if (!tmp7) {
@@ -87,8 +87,8 @@ export default function JumpToPresentButton(channelId) {
     if (tmp5) {
       obj = { accessibilityLabel: null, icon: null, onPress: null };
       obj[0] = stringResult;
-      tmp3Result = tmp3(11752);
-      tmp3Result = tmp3(11753);
+      tmp3Result = tmp3(11771);
+      tmp3Result = tmp3(11772);
       obj[1] = tmp3Result;
       obj[2] = onJumpToPresent;
       let tmp13Result = tmp13(tmp3Result, obj);
@@ -96,11 +96,11 @@ export default function JumpToPresentButton(channelId) {
       obj1 = { accessibilityLabel: null, onPress: null, icon: null, variant: "primary-overlay" };
       obj1[0] = stringResult;
       obj1[1] = onJumpToPresent;
-      obj1[2] = tmp3(11753);
-      tmp13Result = tmp13(tmp6(7938).IconButton, obj1);
+      obj1[2] = tmp3(11772);
+      tmp13Result = tmp13(tmp6(7952).IconButton, obj1);
     }
   } else {
-    obj[1] = tmp13(tmp6(11754).MemoedVoicePanelDismissChatButton, {});
+    obj[1] = tmp13(tmp6(11773).MemoedVoicePanelDismissChatButton, {});
     return tmp13(tmp14, obj);
   }
 };

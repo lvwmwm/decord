@@ -1,20 +1,20 @@
-// Module ID: 11593
-// Function ID: 11594
+// Module ID: 11612
+// Function ID: 11613
 // Name: getApplicationIdFromApplicationItem
-// Dependencies: [32, 19, 17, 8078, 11557, 1499, 21, 4445, 712, 11540, 11545, 11594, 8367, 1236, 5551, 8077, 11543, 1629, 7708, 8076, 11556, 7201, 7199, 11595, 11596, 1351, 11579, 11572, 11591, 4441, 11597, 8906, 11598, 2]
+// Dependencies: [32, 19, 17, 8092, 11576, 1499, 21, 4446, 712, 11559, 11564, 11613, 8381, 1236, 5564, 8091, 11562, 1629, 7722, 8090, 11575, 7215, 7213, 11614, 11615, 1351, 11598, 11591, 11610, 4442, 11616, 8924, 11617, 2]
 
-// Module 11593 (getApplicationIdFromApplicationItem)
+// Module 11612 (getApplicationIdFromApplicationItem)
 import ThemesDefault from "Themes" /* 712 */;
-import TableRowInner from "TableRowInner" /* 5551 */;
-import usePlaceholderWidth from "usePlaceholderWidth" /* 11543 */;
+import TableRowInner from "TableRowInner" /* 5564 */;
+import usePlaceholderWidth from "usePlaceholderWidth" /* 11562 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { getSection } from "getIndexKey" /* 8078 */;
-import { FetchState } from "getSearchResults" /* 11557 */;
+import { getSection } from "getIndexKey" /* 8092 */;
+import { FetchState } from "getSearchResults" /* 11576 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function getApplicationIdFromApplicationItem(type) {
@@ -40,16 +40,16 @@ function CommandRow(arg0) {
   let hasOptions;
   let onPressSend;
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  obj = hasOptions(11540);
+  obj = hasOptions(11559);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     obj = { iconSource: null };
     obj[0] = appLauncherIconSource;
-    tmp4 = callback2(onPressSend(11545), obj);
+    tmp4 = callback2(onPressSend(11564), obj);
   }
-  let tmpResult = tmp(11594);
-  obj = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(8367).AppLauncherSectionName.SEARCH };
+  let tmpResult = tmp(11613);
+  obj = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(8381).AppLauncherSectionName.SEARCH };
   const commandRowSend = tmpResult.useCommandRowSend(obj);
   hasOptions = commandRowSend.hasOptions;
   onPressSend = commandRowSend.onPressSend;
@@ -72,15 +72,15 @@ function CommandRow(arg0) {
     }
   }, items1);
   obj1 = { icon: tmp4, label: command.displayName, subLabel: null, subLabelLineClamp: 1, start: null, end: null, onPress: null, accessibilityActions: null, onAccessibilityAction: null, trailing: null };
-  tmpResult = tmp(8077);
+  tmpResult = tmp(8091);
   obj1[2] = tmpResult.getSectionName(application);
   obj1[4] = isFirstRow;
   obj1[5] = isLastRow;
   obj1[6] = onPress;
   obj1[7] = memo;
   obj1[8] = callback;
-  obj1[9] = callback2(onPressSend(11594), { hasOptions, sending: commandRowSend.sending, onPressSend });
-  return callback2(hasOptions(5551).TableRow, obj1);
+  obj1[9] = callback2(onPressSend(11613), { hasOptions, sending: commandRowSend.sending, onPressSend });
+  return callback2(hasOptions(5564).TableRow, obj1);
 }
 function PlaceholderCommandRow(isFirstRow) {
   let flag = isFirstRow.isFirstRow;

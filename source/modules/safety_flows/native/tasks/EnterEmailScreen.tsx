@@ -1,12 +1,12 @@
-// Module ID: 17368
-// Function ID: 17369
+// Module ID: 17386
+// Function ID: 17387
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 1500, 17369, 1236, 2631, 17360, 4878, 7638, 2]
+// Dependencies: [32, 19, 21, 1500, 17387, 1236, 2632, 17378, 4891, 7652, 2]
 // Exports: default
 
-// Module 17368 (EnterEmailScreen)
-import messagesProxyDefault from "messagesProxy" /* 2631 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 17369 */;
+// Module 17386 (EnterEmailScreen)
+import messagesProxyDefault from "messagesProxy" /* 2632 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 17387 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -27,7 +27,7 @@ export default function EnterEmailScreen() {
   obj[2] = function onAction() {
     arr = arr.push(arr(closure_1_2[7]).SafetyFlowScreens.VERIFY_EMAIL);
   };
-  obj = { children: jsx(_require(7638).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
-  obj[3] = jsx(_require(4878).Stack, { children: jsx(_require(7638).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
-  return jsx(SafetyFlowTaskScreenDefault, { children: jsx(_require(7638).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  obj = { children: jsx(_require(7652).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
+  obj[3] = jsx(_require(4891).Stack, { children: jsx(_require(7652).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  return jsx(SafetyFlowTaskScreenDefault, { children: jsx(_require(7652).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
 };

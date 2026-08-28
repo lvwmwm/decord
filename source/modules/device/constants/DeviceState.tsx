@@ -1,9 +1,9 @@
-// Module ID: 7429
-// Function ID: 7430
+// Module ID: 7443
+// Function ID: 7444
 // Name: ThermalState
 // Dependencies: [2]
 
-// Module 7429 (ThermalState)
+// Module 7443 (ThermalState)
 import set from "set" /* 2 */;
 
 let obj = { NOMINAL: "NOMINAL", FAIR: "FAIR", SERIOUS: "SERIOUS", CRITICAL: "CRITICAL", UNKNOWN: "UNKNOWN" };

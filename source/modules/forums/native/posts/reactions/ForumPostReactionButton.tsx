@@ -1,27 +1,27 @@
-// Module ID: 10220
-// Function ID: 10221
+// Module ID: 10238
+// Function ID: 10239
 // Name: BurstReactionButton
-// Dependencies: [19, 17, 21, 4445, 712, 10221, 5020, 1236, 4441, 7440, 10812, 10871, 4134, 10817, 688, 1435, 4100, 5537, 10873, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 10239, 5033, 1236, 4442, 7454, 10830, 10889, 4135, 10835, 688, 1435, 4101, 5550, 10891, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 10220 (BurstReactionButton)
+// Module 10238 (BurstReactionButton)
 import int2hslRaw from "int2hslRaw" /* 688 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4100 */;
-import Text from "Text" /* 4441 */;
-import PressableBase from "PressableBase" /* 5020 */;
-import EmojiDefault from "Emoji" /* 5537 */;
-import ReactionTypes from "ReactionTypes" /* 7440 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10221 */;
-import handleOutOfSuperReactions from "handleOutOfSuperReactions" /* 10812 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 10817 */;
-import AnimatedCountDefault from "AnimatedCount" /* 10873 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4101 */;
+import Text from "Text" /* 4442 */;
+import PressableBase from "PressableBase" /* 5033 */;
+import EmojiDefault from "Emoji" /* 5550 */;
+import ReactionTypes from "ReactionTypes" /* 7454 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 10239 */;
+import handleOutOfSuperReactions from "handleOutOfSuperReactions" /* 10830 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 10835 */;
+import AnimatedCountDefault from "AnimatedCount" /* 10891 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 class BurstReactionButton {

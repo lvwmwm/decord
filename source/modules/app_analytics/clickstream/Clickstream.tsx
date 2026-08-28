@@ -1,17 +1,17 @@
-// Module ID: 7144
-// Function ID: 7145
+// Module ID: 7158
+// Function ID: 7159
 // Name: isClickstreamEnabled
-// Dependencies: [32, 1218, 4519, 11, 7145, 698, 7146, 2]
+// Dependencies: [32, 1218, 4520, 11, 7159, 698, 7160, 2]
 // Exports: trackClickstream
 
-// Module 7144 (isClickstreamEnabled)
+// Module 7158 (isClickstreamEnabled)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import clickstreamExperimentEnabled from "clickstreamExperimentEnabled" /* 7145 */;
-import getClickstreamDrainEvent from "getClickstreamDrainEvent" /* 7146 */;
+import clickstreamExperimentEnabled from "clickstreamExperimentEnabled" /* 7159 */;
+import getClickstreamDrainEvent from "getClickstreamDrainEvent" /* 7160 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "createRTCConnection" /* 4519 */;
+import closure_5 from "createRTCConnection" /* 4520 */;
 
 require = arg1;
 function isClickstreamEnabled(flag) {

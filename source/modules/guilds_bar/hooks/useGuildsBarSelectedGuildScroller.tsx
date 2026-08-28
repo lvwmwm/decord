@@ -1,12 +1,12 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 15881
+// Function ID: 15882
 // Name: useGuildsBarSelectedGuildScroller
-// Dependencies: [19, 4267, 2]
+// Dependencies: [19, 4268, 2]
 // Exports: default
 
-// Module 15863 (useGuildsBarSelectedGuildScroller)
+// Module 15881 (useGuildsBarSelectedGuildScroller)
 import closure_0 from "noop" /* 19 */;
-import closure_1 from "handleConnectionOpen" /* 4267 */;
+import closure_1 from "handleConnectionOpen" /* 4268 */;
 
 const result = require("set").fileFinishedImporting("modules/guilds_bar/hooks/useGuildsBarSelectedGuildScroller.tsx");
 

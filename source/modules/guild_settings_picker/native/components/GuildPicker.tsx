@@ -1,10 +1,10 @@
-// Module ID: 13547
-// Function ID: 13548
+// Module ID: 13566
+// Function ID: 13567
 // Name: GuildPicker
-// Dependencies: [19, 21, 13548, 13549, 4412, 9285, 2009, 1236, 2]
+// Dependencies: [19, 21, 13567, 13568, 4413, 9303, 2010, 1236, 2]
 // Exports: default
 
-// Module 13547 (GuildPicker)
+// Module 13566 (GuildPicker)
 import noopAll from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -17,9 +17,9 @@ export default function GuildPicker(isGuildIncluded) {
   const guildId = isGuildIncluded.guildId;
   const onChange = isGuildIncluded.onChange;
   dependencyMap = undefined;
-  ({ options: c2, selectedGuild } = onChange(13548)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
+  ({ options: c2, selectedGuild } = onChange(13567)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
   let name;
-  const tmp2 = onChange(13548)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
+  const tmp2 = onChange(13567)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
   const tmp3 = jsx;
   if (selectedGuild != null) {
     name = selectedGuild.name;
@@ -49,5 +49,5 @@ export default function GuildPicker(isGuildIncluded) {
   };
   let intl = guildId(1236).intl;
   obj[2] = intl.string(guildId(1236).t.etZ9tX);
-  return tmp3(onChange(13549), obj);
+  return tmp3(onChange(13568), obj);
 };

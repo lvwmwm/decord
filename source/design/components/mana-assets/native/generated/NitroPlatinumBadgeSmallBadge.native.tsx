@@ -1,14 +1,14 @@
-// Module ID: 6777
-// Function ID: 6778
+// Module ID: 6790
+// Function ID: 6791
 // Name: NitroPlatinumBadgeSmallBadge
-// Dependencies: [21, 5445, 6778, 2]
+// Dependencies: [21, 5458, 6791, 2]
 // Exports: NitroPlatinumBadgeSmallBadge
 
-// Module 6777 (NitroPlatinumBadgeSmallBadge)
+// Module 6790 (NitroPlatinumBadgeSmallBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import vanityUrlDefault from "vanityUrl" /* 6778 */;
+import preloadDefault from "preload" /* 5458 */;
+import vanityUrlDefault from "vanityUrl" /* 6791 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroPlatinumBadgeSmallBadge.native.tsx");

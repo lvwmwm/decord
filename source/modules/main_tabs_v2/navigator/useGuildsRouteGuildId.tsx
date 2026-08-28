@@ -1,10 +1,10 @@
-// Module ID: 15520
-// Function ID: 15521
+// Module ID: 15538
+// Function ID: 15539
 // Name: useGuildsRouteGuildId
 // Dependencies: [1501, 2]
 // Exports: default, useGuildsRouteGuildAndChannelId
 
-// Module 15520 (useGuildsRouteGuildId)
+// Module 15538 (useGuildsRouteGuildId)
 import set from "set" /* 2 */;
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
 

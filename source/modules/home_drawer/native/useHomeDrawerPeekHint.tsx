@@ -1,21 +1,21 @@
-// Module ID: 15529
-// Function ID: 15530
+// Module ID: 15547
+// Function ID: 15548
 // Name: items
-// Dependencies: [32, 19, 4437, 15527, 676, 1388, 4185, 1377, 1501, 15530, 589, 15520, 4266, 6203, 4446, 4879, 15526, 2]
+// Dependencies: [32, 19, 4438, 15545, 676, 1388, 4186, 1377, 1501, 15548, 589, 15538, 4267, 6216, 4447, 4892, 15544, 2]
 // Exports: useHomeDrawerPeekHint
 
-// Module 15529 (items)
+// Module 15547 (items)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_5 from "withEqualityFn" /* 15527 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_5 from "withEqualityFn" /* 15545 */;
 import { ME } from "ME" /* 676 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
-import { Easing } from "module_4185" /* 4185 */;
+import { Easing } from "module_4186" /* 4186 */;
 
 const require = arg1;
 let c8 = 2000;
-let closure_9 = Easing.inOut(require("module_4185").Easing.cubic);
+let closure_9 = Easing.inOut(require("module_4186").Easing.cubic);
 let closure_10 = [];
 let items = [require("DismissibleContent").DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
 let closure_12 = { code: "function useHomeDrawerPeekHintTsx1(){const{gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD}=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;}" };

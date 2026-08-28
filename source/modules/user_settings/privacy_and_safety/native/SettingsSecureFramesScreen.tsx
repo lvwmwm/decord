@@ -1,20 +1,20 @@
-// Module ID: 15229
-// Function ID: 15230
+// Module ID: 15381
+// Function ID: 15382
 // Name: UserListItem
-// Dependencies: [19, 17, 1922, 676, 21, 4445, 712, 589, 15230, 4289, 8048, 5905, 8819, 5551, 1297, 1236, 5558, 4165, 1500, 15228, 4441, 8037, 9760, 2]
+// Dependencies: [19, 17, 1923, 676, 21, 4446, 712, 589, 15382, 4290, 8062, 5918, 8836, 5564, 1297, 1236, 5571, 4166, 1500, 15380, 4442, 8051, 9778, 2]
 // Exports: default
 
-// Module 15229 (UserListItem)
+// Module 15381 (UserListItem)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9760 */;
+import Text from "Text" /* 4442 */;
+import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9778 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function UserListItem(userId) {
@@ -43,7 +43,7 @@ function UserListItem(userId) {
   }, items3);
   let tmp8Result = null != stateFromStores;
   if (tmp8Result) {
-    obj = { user: null, guildId: "Array", size: "tongue" };
+    obj = { user: null, guildId: "Array", size: true };
     obj[0] = stateFromStores;
     obj[2] = tmp(tmp2[14]).AvatarSizes.REFRESH_MEDIUM_32;
     tmp8Result = tmp8(tmp(tmp2[14]).Avatar, obj);

@@ -1,16 +1,16 @@
-// Module ID: 9178
-// Function ID: 9179
+// Module ID: 9196
+// Function ID: 9197
 // Name: unpackStageChannelParty
-// Dependencies: [32, 1218, 1391, 1910, 5317, 5310, 676, 2]
+// Dependencies: [32, 1218, 1391, 1910, 5330, 5323, 676, 2]
 // Exports: isStageActivity, packStageChannelPartyId, shouldShowActivity
 
-// Module 9178 (unpackStageChannelParty)
+// Module 9196 (unpackStageChannelParty)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "fetchFingerprint" /* 1218 */;
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 import closure_3 from "createGuildRecordFromRust" /* 1910 */;
-import closure_4 from "buildStageChannelUserRoles" /* 5317 */;
-import { STAGE_APPLICATION_ID } from "MAX_STAGE_TOPIC_LENGTH" /* 5310 */;
+import closure_4 from "buildStageChannelUserRoles" /* 5330 */;
+import { STAGE_APPLICATION_ID } from "MAX_STAGE_TOPIC_LENGTH" /* 5323 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 function unpackStageChannelParty(c17) {

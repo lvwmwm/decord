@@ -1,10 +1,10 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 8938
+// Function ID: 8939
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: shouldMigrateToAdAnalyticsInterface
 
-// Module 8920 (apexExperiment)
+// Module 8938 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 10141
-// Function ID: 10142
+// Module ID: 10159
+// Function ID: 10160
 // Name: useGetInitialMessagePreview
-// Dependencies: [19, 4099, 6099, 2]
+// Dependencies: [19, 4100, 6112, 2]
 // Exports: useGetInitialMessagePreview
 
-// Module 10141 (useGetInitialMessagePreview)
+// Module 10159 (useGetInitialMessagePreview)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "hasFlag" /* 4099 */;
-import { MessageSnapshotRecord } from "hasFlag" /* 4099 */;
+import closure_3 from "hasFlag" /* 4100 */;
+import { MessageSnapshotRecord } from "hasFlag" /* 4100 */;
 
 const result = require("set").fileFinishedImporting("modules/in_app_notifications/native/hooks/useGetInitialMessagePreview.tsx");
 

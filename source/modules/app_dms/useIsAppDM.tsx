@@ -1,11 +1,11 @@
-// Module ID: 9197
-// Function ID: 9198
+// Module ID: 9215
+// Function ID: 9216
 // Name: useIsAppDM
-// Dependencies: [1922, 647, 2]
+// Dependencies: [1923, 647, 2]
 // Exports: default
 
-// Module 9197 (useIsAppDM)
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 9215 (useIsAppDM)
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_dms/useIsAppDM.tsx");

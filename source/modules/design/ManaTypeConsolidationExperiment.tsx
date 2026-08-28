@@ -1,10 +1,10 @@
-// Module ID: 7936
-// Function ID: 7937
+// Module ID: 7950
+// Function ID: 7951
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: useManaTypeConsolidationExperiment
 
-// Module 7936 (apexExperiment)
+// Module 7950 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

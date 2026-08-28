@@ -1,13 +1,13 @@
-// Module ID: 15835
-// Function ID: 15836
+// Module ID: 15853
+// Function ID: 15854
 // Name: logger
-// Dependencies: [13273, 4, 1208, 594, 2]
+// Dependencies: [13292, 4, 1208, 594, 2]
 // Exports: compareGuildMediaState
 
-// Module 15835 (logger)
+// Module 15853 (logger)
 import addAll from "add" /* 594 */;
 import _modDef1208 from "module_1208" /* 1208 */;
-import closure_3 from "markAllStale" /* 13273 */;
+import closure_3 from "markAllStale" /* 13292 */;
 import set from "set" /* 2 */;
 
 const logger = new require("log").Logger("GuildMediaStateShadowCompare");

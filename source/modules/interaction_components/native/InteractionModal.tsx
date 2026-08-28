@@ -1,32 +1,32 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 16898
+// Function ID: 16899
 // Name: onClose
-// Dependencies: [19, 17, 13966, 21, 4445, 712, 4676, 16881, 5546, 1297, 1435, 4441, 5020, 1236, 5503, 7953, 16882, 4880, 2]
+// Dependencies: [19, 17, 13985, 21, 4446, 712, 4689, 16899, 5559, 1297, 1435, 4442, 5033, 1236, 5516, 7967, 16900, 4893, 2]
 // Exports: openInteractionModal
 
-// Module 16880 (onClose)
+// Module 16898 (onClose)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import Text from "Text" /* 4441 */;
-import _modDef4676 from "module_4676" /* 4676 */;
-import Button2 from "Button" /* 4880 */;
-import PressableBase from "PressableBase" /* 5020 */;
-import XSmallIcon from "XSmallIcon" /* 5503 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5546 */;
-import isInteractionComponent from "isInteractionComponent" /* 7953 */;
-import getData from "getData" /* 16881 */;
-import renderComponents from "renderComponents" /* 16882 */;
+import Text from "Text" /* 4442 */;
+import _modDef4689 from "module_4689" /* 4689 */;
+import Button2 from "Button" /* 4893 */;
+import PressableBase from "PressableBase" /* 5033 */;
+import XSmallIcon from "XSmallIcon" /* 5516 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5559 */;
+import isInteractionComponent from "isInteractionComponent" /* 7967 */;
+import getData from "getData" /* 16899 */;
+import renderComponents from "renderComponents" /* 16900 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { InteractionModalState } from "getModalState" /* 13966 */;
+import { InteractionModalState } from "getModalState" /* 13985 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function onClose() {
-  return _modDef4676.popWithKey(interaction_modal);
+  return _modDef4689.popWithKey(interaction_modal);
 }
 class InteractionModal {
   constructor(arg0) {
@@ -136,6 +136,6 @@ const result = require("set").fileFinishedImporting("modules/interaction_compone
 
 export default InteractionModal;
 export const openInteractionModal = function openInteractionModal(closure_0) {
-  let arr = _modDef4676;
+  let arr = _modDef4689;
   arr = arr.push(InteractionModal, closure_0, interaction_modal);
 };

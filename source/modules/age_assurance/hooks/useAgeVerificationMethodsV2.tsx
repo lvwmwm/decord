@@ -1,14 +1,14 @@
-// Module ID: 8639
-// Function ID: 8640
+// Module ID: 8655
+// Function ID: 8656
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 8640, 8641, 709, 2]
+// Dependencies: [5, 32, 19, 8656, 8657, 709, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 8639 (useAgeVerificationMethodsV2)
+// Module 8655 (useAgeVerificationMethodsV2)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 8640 */;
+import closure_6 from "initialize" /* 8656 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/age_assurance/hooks/useAgeVerificationMethodsV2.tsx");
@@ -86,7 +86,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
               closure_1_2(true);
               closure_1_3(false);
               c4 = 2;
-              let obj2 = lib(8641);
+              let obj2 = lib(8657);
               c5 = 3;
               c6 = 1;
               obj2 = { value: null, done: false };

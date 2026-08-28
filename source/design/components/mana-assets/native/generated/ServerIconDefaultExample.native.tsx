@@ -1,14 +1,14 @@
-// Module ID: 6915
-// Function ID: 6916
+// Module ID: 6928
+// Function ID: 6929
 // Name: ServerIconDefaultExample
-// Dependencies: [21, 5445, 6916, 2]
+// Dependencies: [21, 5458, 6929, 2]
 // Exports: ServerIconDefaultExample
 
-// Module 6915 (ServerIconDefaultExample)
+// Module 6928 (ServerIconDefaultExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6916 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6929 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconDefaultExample.native.tsx");

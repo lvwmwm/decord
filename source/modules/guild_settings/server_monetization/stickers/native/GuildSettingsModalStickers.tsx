@@ -1,19 +1,19 @@
-// Module ID: 17070
-// Function ID: 17071
+// Module ID: 17088
+// Function ID: 17089
 // Name: BoostedGuildTiers
-// Dependencies: [19, 17, 1910, 4089, 1922, 676, 4137, 21, 1236, 17071, 8166, 13096, 4445, 712, 1629, 589, 9561, 17073, 5999, 4336, 4441, 4339, 4880, 17074, 8295, 4878, 5944, 5551, 4996, 10181, 1297, 4289, 5558, 17080, 2]
+// Dependencies: [19, 17, 1910, 4090, 1923, 676, 4138, 21, 1236, 17089, 8180, 13115, 4446, 712, 1629, 589, 9579, 17091, 6012, 4337, 4442, 4340, 4893, 17092, 8309, 4891, 5957, 5564, 5009, 10199, 1297, 4290, 5571, 17098, 2]
 
-// Module 17070 (BoostedGuildTiers)
+// Module 17088 (BoostedGuildTiers)
 import ThemesDefault from "Themes" /* 712 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import { MAX_STICKER_FILE_SIZE } from "STICKER_PICKER_TAB_PANEL_ID" /* 4137 */;
+import { MAX_STICKER_FILE_SIZE } from "STICKER_PICKER_TAB_PANEL_ID" /* 4138 */;
 import jsxProd from "jsxProd" /* 21 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4 } from "getSystemLocale" /* 1236 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 4463
-// Function ID: 4464
+// Module ID: 4464
+// Function ID: 4465
 // Name: handleUpdate
 // Dependencies: [1218, 589, 12, 709, 2]
 
-// Module 4463 (handleUpdate)
+// Module 4464 (handleUpdate)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

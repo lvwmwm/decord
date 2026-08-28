@@ -1,10 +1,10 @@
-// Module ID: 4288
-// Function ID: 4289
+// Module ID: 4289
+// Function ID: 4290
 // Name: useNewUserDismissibleContent
 // Dependencies: [1218, 1381, 1377, 687, 647, 11, 2]
 // Exports: disableNewUserDismissibleContent, isUserAccountOldEnough, useNewUserDismissibleContent
 
-// Module 4288 (useNewUserDismissibleContent)
+// Module 4289 (useNewUserDismissibleContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import setDefault from "set" /* 687 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;

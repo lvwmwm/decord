@@ -1,12 +1,12 @@
-// Module ID: 12582
-// Function ID: 12583
+// Module ID: 12601
+// Function ID: 12602
 // Name: resolvedValuesFromUserApplicationIdentityProfile
-// Dependencies: [2, 12583, 12584, 12585, 12588, 12666, 12667]
+// Dependencies: [2, 12602, 12603, 12604, 12607, 12685, 12686]
 
-// Module 12582 (resolvedValuesFromUserApplicationIdentityProfile)
+// Module 12601 (resolvedValuesFromUserApplicationIdentityProfile)
 import set from "set" /* 2 */;
-import isVisualUnfurledMedia from "isVisualUnfurledMedia" /* 12667 */;
-import isVisualUnfurledMediaDefault from "isVisualUnfurledMedia" /* 12667 */;
+import isVisualUnfurledMedia from "isVisualUnfurledMedia" /* 12686 */;
+import isVisualUnfurledMediaDefault from "isVisualUnfurledMedia" /* 12686 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/application-widget-renderer/src/index.tsx");
 for (const key10018 in require("toAsciiDigits")) {

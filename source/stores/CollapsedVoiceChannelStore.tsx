@@ -1,9 +1,9 @@
-// Module ID: 7205
-// Function ID: 7206
+// Module ID: 7219
+// Function ID: 7220
 // Name: handleConnectionOpen
 // Dependencies: [1391, 11, 589, 709, 2]
 
-// Module 7205 (handleConnectionOpen)
+// Module 7219 (handleConnectionOpen)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

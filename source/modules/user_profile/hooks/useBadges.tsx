@@ -1,13 +1,13 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 8492
+// Function ID: 8493
 // Name: useBadges
-// Dependencies: [4290, 1922, 4134, 647, 1236, 2]
+// Dependencies: [4291, 1923, 4135, 647, 1236, 2]
 // Exports: default
 
-// Module 8478 (useBadges)
-import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import closure_2 from "initialize" /* 4290 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+// Module 8492 (useBadges)
+import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
+import closure_2 from "initialize" /* 4291 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 const legacy_username = "legacy_username";

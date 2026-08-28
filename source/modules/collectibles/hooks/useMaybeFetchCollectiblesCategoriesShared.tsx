@@ -1,14 +1,14 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8033
+// Function ID: 8034
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 4358, 7220, 678, 589, 7267, 7219, 2]
+// Dependencies: [32, 19, 4359, 7234, 678, 589, 7281, 7233, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 8019 (useMaybeFetchCollectiblesCategoriesShared)
+// Module 8033 (useMaybeFetchCollectiblesCategoriesShared)
 import closure_2 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
-import closure_5 from "getHash" /* 4358 */;
-import closure_6 from "updateCategoriesAndProducts" /* 7220 */;
+import closure_5 from "getHash" /* 4359 */;
+import closure_6 from "updateCategoriesAndProducts" /* 7234 */;
 import items from "items" /* 678 */;
 
 const require = arg1;

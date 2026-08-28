@@ -1,15 +1,15 @@
-// Module ID: 4638
-// Function ID: 4639
+// Module ID: 4639
+// Function ID: 4640
 // Name: getNickname
-// Dependencies: [1391, 1992, 4098, 1236, 4289, 589, 2]
+// Dependencies: [1391, 1993, 4099, 1236, 4290, 589, 2]
 // Exports: getNickname, useName
 
-// Module 4638 (getNickname)
+// Module 4639 (getNickname)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import nameFromUserDefault from "nameFromUser" /* 4289 */;
+import nameFromUserDefault from "nameFromUser" /* 4290 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "trackCommunicationDisabled" /* 1992 */;
-import closure_5 from "markAllUserIdListsStale" /* 4098 */;
+import closure_4 from "trackCommunicationDisabled" /* 1993 */;
+import closure_5 from "markAllUserIdListsStale" /* 4099 */;
 
 require = arg1;
 function getNickname(id, arg1, id) {

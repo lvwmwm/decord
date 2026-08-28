@@ -1,10 +1,10 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8534
+// Function ID: 8535
 // Name: MediaViewerDimensionsProvider
 // Dependencies: [19, 21, 1494, 38, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 8520 (MediaViewerDimensionsProvider)
+// Module 8534 (MediaViewerDimensionsProvider)
 import _modDef38 from "module_38" /* 38 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import importAllResult from "noop" /* 19 */;

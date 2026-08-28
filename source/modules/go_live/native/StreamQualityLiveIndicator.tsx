@@ -1,18 +1,18 @@
-// Module ID: 9508
-// Function ID: 9509
+// Module ID: 9526
+// Function ID: 9527
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 676, 1924, 4509, 21, 4445, 712, 9449, 9089, 5905, 4185, 4446, 1297, 9509, 9510, 698, 8325, 8149, 4107, 5020, 5445, 8147, 2]
+// Dependencies: [19, 17, 676, 1925, 4510, 21, 4446, 712, 9467, 9107, 5918, 4186, 4447, 1297, 9527, 9528, 698, 8339, 8163, 4108, 5033, 5458, 8161, 2]
 // Exports: default
 
-// Module 9508 (StreamQualityLiveIndicator)
+// Module 9526 (StreamQualityLiveIndicator)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
-import { ResolutionTypes } from "DesktopSources" /* 4509 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
+import { ResolutionTypes } from "DesktopSources" /* 4510 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ PremiumTypes: closure_6, PremiumUpsellTypes: error } = GuildFeatures);

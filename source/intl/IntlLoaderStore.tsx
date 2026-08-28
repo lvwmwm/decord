@@ -1,11 +1,11 @@
-// Module ID: 1997
-// Function ID: 1998
+// Module ID: 1998
+// Function ID: 1999
 // Name: _setAppLocale
-// Dependencies: [5, 700, 1998, 1236, 2008, 1274, 3535, 4010, 4041, 4043, 1208, 2]
+// Dependencies: [5, 700, 1999, 1236, 2009, 1274, 3536, 4011, 4042, 4044, 1208, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
-// Module 1997 (_setAppLocale)
-import codeDefault from "code" /* 1998 */;
+// Module 1998 (_setAppLocale)
+import codeDefault from "code" /* 1999 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import identity from "identity" /* 700 */;
 
@@ -82,7 +82,7 @@ function _setAppLocale() {
                         c1 = 1;
                         dependencyMap = 1;
                         obj1 = { value: null, done: false };
-                        obj1[0] = closure_1_0(2008).preloadAllIntlMessageFiles();
+                        obj1[0] = closure_1_0(2009).preloadAllIntlMessageFiles();
                         return obj1;
                       }
                     } else if (1 === tmp4) {
@@ -434,19 +434,19 @@ function _setMomentLocale() {
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   closure_0 = arg0;
   importDefault = arg1;
-  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "accessibilityRole", localeData: -1304231935, setLoadingStarted: -201326184, setLoadingSucceeded: -1912602023, setLoadingFailed: 1358955265, setLocaleData: -2142907343 };
+  let obj = { isLoading: false, inProgressLocale: "Boolean", error: "container", localeData: "jsx", setLoadingStarted: "disabled", setLoadingSucceeded: "Array", setLoadingFailed: "isArray", setLocaleData: "isArray" };
   obj[3] = codeDefault;
   obj[4] = function setLoadingStarted(closure_0) {
     return callback({ isLoading: true, inProgressLocale: closure_0 });
   };
   obj[5] = function setLoadingSucceeded(closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      callback({ isLoading: false, inProgressLocale: "Boolean", error: "accessibilityRole" });
+      callback({ isLoading: false, inProgressLocale: "Boolean", error: "container" });
     }
   };
   obj[6] = function setLoadingFailed(arg0, closure_0) {
     if (callback2().inProgressLocale === closure_0) {
-      const obj = { isLoading: false, inProgressLocale: "Array", error: 0 };
+      const obj = { isLoading: false, inProgressLocale: "Array", error: "min" };
       obj[2] = arg0;
       callback(obj);
     }

@@ -1,10 +1,10 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12892
+// Function ID: 12893
 // Name: apexExperiment
 // Dependencies: [1472, 2]
 // Exports: isAndroidTwoWeekTrialsExperimentEnabled, isAndroidTwoWeekTrialsTrialCTAEnabled
 
-// Module 12873 (apexExperiment)
+// Module 12892 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

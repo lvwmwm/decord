@@ -1,13 +1,13 @@
-// Module ID: 9472
-// Function ID: 9473
+// Module ID: 9490
+// Function ID: 9491
 // Name: useCanCurrentUserSpeakInChannel
-// Dependencies: [1218, 589, 4633, 2]
+// Dependencies: [1218, 589, 4634, 2]
 // Exports: default
 
-// Module 9472 (useCanCurrentUserSpeakInChannel)
+// Module 9490 (useCanCurrentUserSpeakInChannel)
 import initialize from "initialize" /* 589 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4633 */;
-import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4633 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4634 */;
+import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4634 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 
 require = arg1;

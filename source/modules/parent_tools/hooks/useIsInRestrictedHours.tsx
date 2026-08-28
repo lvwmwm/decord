@@ -1,14 +1,14 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16806
+// Function ID: 16807
 // Name: useIsInRestrictedHours
-// Dependencies: [1922, 7215, 589, 16789, 2]
+// Dependencies: [1923, 7229, 589, 16807, 2]
 // Exports: default
 
-// Module 16788 (useIsInRestrictedHours)
+// Module 16806 (useIsInRestrictedHours)
 import initialize from "initialize" /* 589 */;
-import scheduleUpcomingWarning from "scheduleUpcomingWarning" /* 16789 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7215 */;
+import scheduleUpcomingWarning from "scheduleUpcomingWarning" /* 16807 */;
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7229 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useIsInRestrictedHours.tsx");

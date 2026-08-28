@@ -1,16 +1,16 @@
-// Module ID: 15864
-// Function ID: 15865
+// Module ID: 15882
+// Function ID: 15883
 // Name: PreviewItem
-// Dependencies: [19, 5333, 15787, 15788, 21, 4445, 15526, 4185, 4879, 7729, 4172, 4165, 712, 15797, 15819, 4074, 2]
+// Dependencies: [19, 5346, 15805, 15806, 21, 4446, 15544, 4186, 4892, 7743, 4173, 4166, 712, 15815, 15837, 4075, 2]
 
-// Module 15864 (PreviewItem)
-import isIterable from "isIterable" /* 4074 */;
+// Module 15882 (PreviewItem)
+import isIterable from "isIterable" /* 4075 */;
 import importAllResult from "noop" /* 19 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5333 */;
-import closure_5 from "withEqualityFn" /* 15787 */;
-import { GUILD_ITEM_INSET_LEFT } from "GUILD_ITEM_SIZE" /* 15788 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5346 */;
+import closure_5 from "withEqualityFn" /* 15805 */;
+import { GUILD_ITEM_INSET_LEFT } from "GUILD_ITEM_SIZE" /* 15806 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function PreviewItem(dragRegion) {
@@ -137,7 +137,7 @@ function PreviewItem(dragRegion) {
   const memo = gestureState.useMemo(() => {
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "accessibilityRole", expanded: "<string:4132503553>", children: "<string:3782279680>" };
+        const obj = { type: null, id: -1, parentId: "ct", name: "Array", color: "accessibilityRole", expanded: "<string:4132503553>", children: "<string:242287104>" };
         obj[0] = listInsets.FOLDER;
         const items = [tmp2];
         obj[6] = items;
@@ -341,7 +341,7 @@ const memoResult = importAllResult.memo(function GuildsBarDragPreview() {
       if (null != dragSpecs) {
         if (null != overSpecs) {
           const state = overSpecs.state;
-          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "bestand", scrollPosition: "geopende bestandsmap", dragRegion: "geopende map", windowSize: "map", dropComplete: "open", listInsets: "index" };
+          obj = { draggedNode: null, draggedHeight: null, overState: null, overNode: null, dropPosition: "o", gestureState: "MEDIA_ENGINE_SET_AEC_DUMP", scrollPosition: null, dragRegion: "heading-xl/semibold", windowSize: "text-strong", dropComplete: "header", listInsets: null };
           ({ node: obj[0], itemSize: obj[1] } = dragSpecs);
           obj[2] = state;
           let node;

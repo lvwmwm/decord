@@ -1,13 +1,13 @@
-// Module ID: 16183
-// Function ID: 16184
-// Dependencies: [19, 1391, 1992, 1910, 1922, 676, 21, 5905, 589, 16184, 7708, 635, 6109, 4289, 8819, 10558, 2]
+// Module ID: 16201
+// Function ID: 16202
+// Dependencies: [19, 1391, 1993, 1910, 1923, 676, 21, 5918, 589, 16202, 7722, 635, 6122, 4290, 8836, 10576, 2]
 
-// Module 16183
+// Module 16201
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
+import closure_5 from "trackCommunicationDisabled" /* 1993 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

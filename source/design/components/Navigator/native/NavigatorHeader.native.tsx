@@ -1,22 +1,22 @@
-// Module ID: 5447
-// Function ID: 5448
+// Module ID: 5460
+// Function ID: 5461
 // Name: HeaderBackImage
-// Dependencies: [5, 19, 17, 676, 21, 4445, 712, 4441, 5448, 5451, 1501, 5453, 1236, 5454, 5503, 500, 1629, 5444, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4446, 712, 4442, 5461, 5464, 1501, 5466, 1236, 5467, 5516, 500, 1629, 5457, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5447 (HeaderBackImage)
+// Module 5460 (HeaderBackImage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import Text from "Text" /* 4441 */;
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5444 */;
-import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5448 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5451 */;
-import Background from "Background" /* 5454 */;
+import Text from "Text" /* 4442 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5457 */;
+import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5461 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5464 */;
+import Background from "Background" /* 5467 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 class HeaderBackImage {
@@ -61,7 +61,7 @@ function CloseButton(onPress) {
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.create(null));
-  let obj = onPress(5453);
+  let obj = onPress(5466);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -75,7 +75,7 @@ function CustomHeaderBackButton(onPress) {
   obj.backImage = function backImage() {
     return callback(closure_9, {});
   };
-  return callback(onPress(5454).HeaderBackButton, obj);
+  return callback(onPress(5467).HeaderBackButton, obj);
 }
 function HeaderTextButton(text) {
   text = text.text;

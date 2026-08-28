@@ -1,10 +1,10 @@
-// Module ID: 7622
-// Function ID: 7623
+// Module ID: 7636
+// Function ID: 7637
 // Name: ChangeEmailFields
 // Dependencies: [644, 705, 2]
 // Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken, useChangeEmailError
 
-// Module 7622 (ChangeEmailFields)
+// Module 7636 (ChangeEmailFields)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 705 */;
 import keys from "keys" /* 644 */;

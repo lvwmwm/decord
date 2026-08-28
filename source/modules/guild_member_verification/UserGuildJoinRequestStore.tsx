@@ -1,15 +1,15 @@
-// Module ID: 4268
-// Function ID: 4269
+// Module ID: 4269
+// Function ID: 4270
 // Name: handleGatewayJoinRequestUpdate
-// Dependencies: [1922, 4269, 589, 1430, 709, 2]
+// Dependencies: [1923, 4270, 589, 1430, 709, 2]
 // Exports: joinRequestFromServer
 
-// Module 4268 (handleGatewayJoinRequestUpdate)
+// Module 4269 (handleGatewayJoinRequestUpdate)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
-import isActionedApplicationStatus from "isActionedApplicationStatus" /* 4269 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import isActionedApplicationStatus from "isActionedApplicationStatus" /* 4270 */;
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 function handleGatewayJoinRequestUpdate(arg0) {

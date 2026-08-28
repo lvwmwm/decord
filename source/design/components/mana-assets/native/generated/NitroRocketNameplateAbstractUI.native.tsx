@@ -1,14 +1,14 @@
-// Module ID: 6779
-// Function ID: 6780
+// Module ID: 6792
+// Function ID: 6793
 // Name: NitroRocketNameplateAbstractUI
-// Dependencies: [21, 5445, 6780, 2]
+// Dependencies: [21, 5458, 6793, 2]
 // Exports: NitroRocketNameplateAbstractUI
 
-// Module 6779 (NitroRocketNameplateAbstractUI)
+// Module 6792 (NitroRocketNameplateAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6780 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6793 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRocketNameplateAbstractUI.native.tsx");

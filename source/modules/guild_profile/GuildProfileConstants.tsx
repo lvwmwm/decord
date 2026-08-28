@@ -1,9 +1,9 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 8950
+// Function ID: 8951
 // Name: BannerPalettePresets
 // Dependencies: [2]
 
-// Module 8932 (BannerPalettePresets)
+// Module 8950 (BannerPalettePresets)
 import set from "set" /* 2 */;
 
 let obj = { BOULDER: "Boulder", CASCADE: "Cascade", THUNDER: "Thunder", SOUL: "Soul", MARSH: "Marsh", VOLCANO: "Volcano", EARTH: "Earth", ZEPHYR: "Zephyr", RISING: "Rising" };

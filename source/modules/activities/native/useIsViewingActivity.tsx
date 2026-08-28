@@ -1,13 +1,13 @@
-// Module ID: 9463
-// Function ID: 9464
+// Module ID: 9481
+// Function ID: 9482
 // Name: useIsViewingActivity
-// Dependencies: [4461, 9450, 4299, 9447, 589, 2]
+// Dependencies: [4462, 9468, 4300, 9465, 589, 2]
 // Exports: useIsViewingActivity
 
-// Module 9463 (useIsViewingActivity)
-import ChannelCallCameraPreviewDefault from "ChannelCallCameraPreview" /* 9447 */;
-import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9450 */;
-import closure_3 from "getParticipants" /* 4461 */;
+// Module 9481 (useIsViewingActivity)
+import ChannelCallCameraPreviewDefault from "ChannelCallCameraPreview" /* 9465 */;
+import useIsActivityFocusedDefault from "useIsActivityFocused" /* 9468 */;
+import closure_3 from "getParticipants" /* 4462 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/native/useIsViewingActivity.tsx");
@@ -15,8 +15,8 @@ const result = require("set").fileFinishedImporting("modules/activities/native/u
 export const useIsViewingActivity = function useIsViewingActivity(channelId) {
   channelId = channelId.channelId;
   let tmp = useIsActivityFocusedDefault(channelId);
-  const isModalOpen = channelId(4299).useIsModalOpen(ChannelCallCameraPreviewDefault);
-  const obj = channelId(4299);
+  const isModalOpen = channelId(4300).useIsModalOpen(ChannelCallCameraPreviewDefault);
+  const obj = channelId(4300);
   const items = [closure_3];
   const items1 = [channelId];
   const stateFromStores = channelId(589).useStateFromStores(items, () => closure_1_3.getChatOpen(channelId), items1);

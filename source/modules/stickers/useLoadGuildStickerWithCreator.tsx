@@ -1,15 +1,15 @@
-// Module ID: 17073
-// Function ID: 17074
+// Module ID: 17091
+// Function ID: 17092
 // Name: useLoadGuildStickersWithCreator
-// Dependencies: [5, 32, 19, 1922, 5397, 589, 10299, 2]
+// Dependencies: [5, 32, 19, 1923, 5410, 589, 10317, 2]
 // Exports: default
 
-// Module 17073 (useLoadGuildStickersWithCreator)
+// Module 17091 (useLoadGuildStickersWithCreator)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "parseServerGuildSticker" /* 5397 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import closure_6 from "parseServerGuildSticker" /* 5410 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stickers/useLoadGuildStickerWithCreator.tsx");

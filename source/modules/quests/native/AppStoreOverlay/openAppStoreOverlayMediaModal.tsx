@@ -1,13 +1,13 @@
-// Module ID: 11021
-// Function ID: 11022
+// Module ID: 11039
+// Function ID: 11040
 // Name: _openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4154, 676, 1494, 8499, 2009, 8502, 8506, 11022, 1236, 38, 4412, 11023, 2]
+// Dependencies: [32, 5, 4155, 676, 1494, 8513, 2010, 8516, 8520, 11040, 1236, 38, 4413, 11041, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 11021 (_openAppStoreOverlayMediaModal)
+// Module 11039 (_openAppStoreOverlayMediaModal)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "setContent" /* 4154 */;
+import closure_5 from "setContent" /* 4155 */;
 import { MEDIA_MODAL_KEY } from "ME" /* 676 */;
 
 const require = arg1;
@@ -99,7 +99,7 @@ function _openAppStoreOverlayMediaModal() {
             dependencyMap = v0(closure_8, 3);
             setMediaViewerSources = 32.setMediaViewerSources;
             MediaViewerAnalytics = 5.MediaViewerAnalytics;
-            initVideoStateStore = 4154.initVideoStateStore;
+            initVideoStateStore = 4155.initVideoStateStore;
             const obj4 = { text: null, onPress: null };
             const intl = callback(c2[10]).intl;
             obj4[0] = intl.string(callback(c2[10]).t.lwQdjB);

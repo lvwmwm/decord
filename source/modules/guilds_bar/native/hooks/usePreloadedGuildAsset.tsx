@@ -1,11 +1,11 @@
-// Module ID: 15841
-// Function ID: 15842
+// Module ID: 15859
+// Function ID: 15860
 // Name: usePreloadedGuildAsset
-// Dependencies: [32, 19, 5506, 5445, 2]
+// Dependencies: [32, 19, 5519, 5458, 2]
 // Exports: default
 
-// Module 15841 (usePreloadedGuildAsset)
-import useRefValueDefault from "useRefValue" /* 5506 */;
+// Module 15859 (usePreloadedGuildAsset)
+import useRefValueDefault from "useRefValue" /* 5519 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 10850
-// Function ID: 10851
+// Module ID: 10868
+// Function ID: 10869
 // Name: items
-// Dependencies: [4107, 1942, 1938, 7234, 2]
+// Dependencies: [4108, 1943, 1939, 7248, 2]
 // Exports: getQuestOrbMultiplierSource, shouldReceiveQuestOrbMultiplier
 
-// Module 10850 (items)
+// Module 10868 (items)
 import set from "set" /* 2 */;
-import parseServerPerkConfigKind from "parseServerPerkConfigKind" /* 1942 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
+import parseServerPerkConfigKind from "parseServerPerkConfigKind" /* 1943 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4108 */;
 
 let obj = { UPSELL: "UPSELL", NITRO: "NITRO", CREPE: "CREPE", INELIGIBLE: "INELIGIBLE" };
 obj = { NITRO: "nitro", CREPE: "crepe" };
@@ -30,10 +30,10 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
       if (perks != null) {
         perks = perks.perks;
       }
-      const perkSource = parseServerPerkConfigKind.getPerkSource(perks, tmp4(1938).Perk.MORE_QUEST_ORBS);
+      const perkSource = parseServerPerkConfigKind.getPerkSource(perks, tmp4(1939).Perk.MORE_QUEST_ORBS);
       let hasItem;
       if (perkSource != null) {
-        hasItem = perkSource.includes(tmp4(1938).PerkSource.SOURCE_NITRO);
+        hasItem = perkSource.includes(tmp4(1939).PerkSource.SOURCE_NITRO);
       }
       if (hasItem) {
         let NITRO = obj.NITRO;
@@ -42,14 +42,14 @@ export const getQuestOrbMultiplierSource = function getQuestOrbMultiplierSource(
         if (tmp4Result.getIsCrepeEnabled("getQuestOrbMultiplierSource")) {
           let hasItem1;
           if (perkSource != null) {
-            hasItem1 = perkSource.includes(tmp4(1938).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+            hasItem1 = perkSource.includes(tmp4(1939).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
           }
           NITRO = null;
           if (hasItem1) {
             NITRO = obj.CREPE;
           }
         }
-        tmp4Result = tmp4(7234);
+        tmp4Result = tmp4(7248);
       }
       return NITRO;
     }

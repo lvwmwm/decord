@@ -1,16 +1,16 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12230
+// Function ID: 12231
 // Name: TabsGradient
-// Dependencies: [19, 676, 21, 4185, 4892, 4445, 4879, 2]
+// Dependencies: [19, 676, 21, 4186, 4905, 4446, 4892, 2]
 // Exports: default
 
-// Module 12211 (TabsGradient)
-import LinearGradientDefault from "LinearGradient" /* 4892 */;
+// Module 12230 (TabsGradient)
+import LinearGradientDefault from "LinearGradient" /* 4905 */;
 import closure_2 from "noop" /* 19 */;
 import { HorizontalGradient } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "module_4185" /* 4185 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "module_4186" /* 4186 */;
 
 const require = arg1;
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);

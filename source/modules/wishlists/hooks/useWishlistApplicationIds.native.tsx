@@ -1,10 +1,10 @@
-// Module ID: 10491
-// Function ID: 10492
+// Module ID: 10507
+// Function ID: 10508
 // Name: useWishlistApplicationIds
 // Dependencies: [19, 676, 2]
 // Exports: useWishlistApplicationIds
 
-// Module 10491 (useWishlistApplicationIds)
+// Module 10507 (useWishlistApplicationIds)
 import closure_0 from "noop" /* 19 */;
 import { COLLECTIBLES_APPLICATION_ID as closure_1 } from "ME" /* 676 */;
 

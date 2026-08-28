@@ -1,14 +1,14 @@
-// Module ID: 7037
-// Function ID: 7038
+// Module ID: 7050
+// Function ID: 7051
 // Name: TreasureChestSpotIllustration
-// Dependencies: [21, 5445, 7038, 2]
+// Dependencies: [21, 5458, 7051, 2]
 // Exports: TreasureChestSpotIllustration
 
-// Module 7037 (TreasureChestSpotIllustration)
+// Module 7050 (TreasureChestSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 7038 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 7051 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/TreasureChestSpotIllustration.native.tsx");

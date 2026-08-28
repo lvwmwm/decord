@@ -1,13 +1,13 @@
-// Module ID: 13065
-// Function ID: 13066
+// Module ID: 13084
+// Function ID: 13085
 // Name: useOpenPremiumMarketingPayment
-// Dependencies: [19, 676, 1924, 5905, 7126, 7125, 7101, 1236, 4107, 2]
+// Dependencies: [19, 676, 1925, 5918, 7139, 7138, 7114, 1236, 4108, 2]
 // Exports: default
 
-// Module 13065 (useOpenPremiumMarketingPayment)
+// Module 13084 (useOpenPremiumMarketingPayment)
 import closure_3 from "noop" /* 19 */;
 import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 
 const require = arg1;
 ({ AnalyticsPages, AnalyticsSections, AnalyticsObjectTypes } = ME);

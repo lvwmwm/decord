@@ -1,10 +1,10 @@
-// Module ID: 7571
-// Function ID: 7572
+// Module ID: 7585
+// Function ID: 7586
 // Name: useIsUserProfileEmbedRenderingEnabled
 // Dependencies: [1472, 2]
 // Exports: getIsUserProfileEmbedRenderingEnabled, useIsUserProfileEmbedRenderingEnabled
 
-// Module 7571 (useIsUserProfileEmbedRenderingEnabled)
+// Module 7585 (useIsUserProfileEmbedRenderingEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

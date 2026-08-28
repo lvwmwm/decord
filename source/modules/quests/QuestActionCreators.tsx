@@ -1,22 +1,22 @@
-// Module ID: 10833
-// Function ID: 10834
+// Module ID: 10851
+// Function ID: 10852
 // Name: _manuallyStartConsoleQuest
-// Dependencies: [5, 7377, 8923, 5334, 4539, 5333, 7381, 7383, 5339, 676, 530, 709, 4344, 5342, 1236, 7388, 1208, 4666, 503, 10834, 8920, 8921, 8925, 7379, 7396, 10837, 7376, 10838, 7141, 7399, 10839, 4285, 10840, 10841, 10856, 698, 7355, 10858, 10842, 687, 10859, 2]
+// Dependencies: [5, 7391, 8941, 5347, 4540, 5346, 7395, 7397, 5352, 676, 530, 709, 4345, 5355, 1236, 7402, 1208, 4679, 503, 10852, 8938, 8939, 8943, 7393, 7410, 10855, 7390, 10856, 7154, 7413, 10857, 4286, 10858, 10859, 10874, 698, 7369, 10876, 10860, 687, 10877, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 10833 (_manuallyStartConsoleQuest)
+// Module 10851 (_manuallyStartConsoleQuest)
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 7377 */;
-import { getVisibleGuildIdsMethod } from "SidebarVisibilityMethodStore" /* 8923 */;
-import closure_6 from "set" /* 5334 */;
-import closure_7 from "handleConnectionInfoChange" /* 4539 */;
-import closure_8 from "insertUnsortedGuilds" /* 5333 */;
-import closure_9 from "initializeState" /* 7381 */;
-import closure_10 from "_toPropertyKey" /* 7383 */;
-import { FetchStatus } from "_toPropertyKey" /* 7383 */;
-import { ORBS_INTRO_QUEST_ID } from "QuestsExperimentLocations" /* 5339 */;
+import closure_4 from "map" /* 7391 */;
+import { getVisibleGuildIdsMethod } from "SidebarVisibilityMethodStore" /* 8941 */;
+import closure_6 from "set" /* 5347 */;
+import closure_7 from "handleConnectionInfoChange" /* 4540 */;
+import closure_8 from "insertUnsortedGuilds" /* 5346 */;
+import closure_9 from "initializeState" /* 7395 */;
+import closure_10 from "_toPropertyKey" /* 7397 */;
+import { FetchStatus } from "_toPropertyKey" /* 7397 */;
+import { ORBS_INTRO_QUEST_ID } from "QuestsExperimentLocations" /* 5352 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -566,7 +566,7 @@ function _sendHeartbeat() {
               body = 3;
               c7 = 1;
               const obj6 = { value: null, done: false };
-              obj6[0] = callback2(4666).post(obj2);
+              obj6[0] = callback2(4679).post(obj2);
               return obj6;
             }
           } else {
@@ -575,7 +575,7 @@ function _sendHeartbeat() {
               c7 = c4;
               obj4 = callback2(709);
               const obj7 = { type: "QUESTS_SEND_HEARTBEAT_FAILURE", error: null, questId: null, streamKey: null };
-              const tmp29 = new callback2(4344)(c7);
+              const tmp29 = new callback2(4345)(c7);
               obj7[1] = tmp29;
               obj7[2] = callback;
               obj7[3] = callback2;
@@ -588,7 +588,7 @@ function _sendHeartbeat() {
               body = arg1;
               obj = callback2(709);
               const obj8 = { type: "QUESTS_SEND_HEARTBEAT_SUCCESS", userStatus: null, questId: null, streamKey: null };
-              obj2 = callback(7388);
+              obj2 = callback(7402);
               obj8[1] = obj2.questUserStatusFromServer(body.body);
               obj8[2] = callback;
               obj8[3] = callback2;
@@ -793,7 +793,7 @@ function _enrollInQuest() {
             lib = arg1;
             obj12 = { type: "QUESTS_ENROLL_SUCCESS", enrolledQuestUserStatus: null };
             const obj23 = lib(709);
-            obj12[1] = callback(7388).questUserStatusFromServer(lib.body);
+            obj12[1] = callback(7402).questUserStatusFromServer(lib.body);
             obj23.dispatch(obj12);
             obj13 = { type: null };
             obj13[0] = constants.SUCCESS;
@@ -1023,7 +1023,7 @@ function _fetchQuestRewardCode() {
             dependencyMap = closure_3;
             let obj4 = lib(709);
             obj4 = { type: "QUESTS_FETCH_REWARD_CODE_FAILURE", error: null, questId: null };
-            const tmp28 = new lib(4344)(dependencyMap);
+            const tmp28 = new lib(4345)(dependencyMap);
             obj4[1] = tmp28;
             obj4[2] = callback;
             obj4.dispatch(obj4);
@@ -1036,7 +1036,7 @@ function _fetchQuestRewardCode() {
             obj = lib(709);
             const obj5 = { type: "QUESTS_FETCH_REWARD_CODE_SUCCESS", questId: null, rewardCode: null };
             obj5[1] = callback;
-            obj2 = callback(7388);
+            obj2 = callback(7402);
             obj5[2] = obj2.questsRewardCodeFromServer(lib.body);
             obj.dispatch(obj5);
             c4 = 0;
@@ -1142,7 +1142,7 @@ function _dismissQuestContent() {
               dependencyMap = closure_4;
               obj4 = lib(709);
               const obj5 = { type: "QUESTS_DISMISS_CONTENT_FAILURE", error: null, questId: null };
-              const tmp27 = new lib(4344)(dependencyMap);
+              const tmp27 = new lib(4345)(dependencyMap);
               obj5[1] = tmp27;
               obj5[2] = callback;
               obj4.dispatch(obj5);
@@ -1153,7 +1153,7 @@ function _dismissQuestContent() {
               lib = arg1;
               obj = lib(709);
               obj6 = { type: "QUESTS_DISMISS_CONTENT_SUCCESS", dismissedQuestUserStatus: null };
-              obj2 = callback(7388);
+              obj2 = callback(7402);
               obj6[1] = obj2.questUserStatusFromServer(lib.body);
               obj.dispatch(obj6);
               c5 = 0;
@@ -1327,7 +1327,7 @@ function _resetQuestPreviewStatus() {
         dependencyMap = closure_3;
         let obj4 = lib(709);
         const obj3 = { type: "QUESTS_PREVIEW_UPDATE_FAILURE", error: null, questId: null };
-        const tmp27 = new lib(4344)(dependencyMap);
+        const tmp27 = new lib(4345)(dependencyMap);
         obj3[1] = tmp27;
         obj3[2] = callback;
         obj4.dispatch(obj3);
@@ -1339,7 +1339,7 @@ function _resetQuestPreviewStatus() {
         lib = arg1;
         obj = lib(709);
         obj4 = { type: "QUESTS_PREVIEW_UPDATE_SUCCESS", previewQuestUserStatus: null };
-        const obj2 = callback(7388);
+        const obj2 = callback(7402);
         obj4[1] = obj2.questUserStatusFromServer(lib.body);
         obj.dispatch(obj4);
         c4 = 0;
@@ -1378,7 +1378,7 @@ function _resetQuestDismissibilityStatus() {
         dependencyMap = closure_3;
         let obj4 = lib(709);
         const obj3 = { type: "QUESTS_PREVIEW_UPDATE_FAILURE", error: null, questId: null };
-        const tmp27 = new lib(4344)(dependencyMap);
+        const tmp27 = new lib(4345)(dependencyMap);
         obj3[1] = tmp27;
         obj3[2] = callback;
         obj4.dispatch(obj3);
@@ -1390,7 +1390,7 @@ function _resetQuestDismissibilityStatus() {
         lib = arg1;
         obj = lib(709);
         obj4 = { type: "QUESTS_PREVIEW_UPDATE_SUCCESS", previewQuestUserStatus: null };
-        const obj2 = callback(7388);
+        const obj2 = callback(7402);
         obj4[1] = obj2.questUserStatusFromServer(lib.body);
         obj.dispatch(obj4);
         c4 = 0;
@@ -1460,7 +1460,7 @@ function _fetchClaimedQuests() {
             callback = dependencyMap;
             let obj3 = callback(709);
             obj3 = { type: "QUESTS_FETCH_CLAIMED_QUESTS_FAILURE", error: null };
-            const tmp25 = new callback(4344)(callback);
+            const tmp25 = new callback(4345)(callback);
             obj3[1] = tmp25;
             obj3.dispatch(obj3);
           } else if (arg0 === 1) {
@@ -1594,7 +1594,7 @@ function _fetchQuestToDeliver() {
                 const message = lib;
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
-                let obj19 = callback2(10838);
+                let obj19 = callback2(10856);
                 const obj3 = { wasSuccessful: false, currentFetchedAt: null };
                 throwTypeErrorResult = dependencyMap;
                 obj3[1] = dependencyMap;
@@ -1606,7 +1606,7 @@ function _fetchQuestToDeliver() {
                 throwTypeErrorResult = callback2;
                 throwTypeErrorResult = dependencyMap;
                 throwTypeErrorResult = obj4;
-                throwTypeErrorResult = Object.assign(callback2(7355)());
+                throwTypeErrorResult = Object.assign(callback2(7369)());
                 throwTypeErrorResult = undefined;
                 if (message != null) {
                   throwTypeErrorResult = message.message;
@@ -1624,7 +1624,7 @@ function _fetchQuestToDeliver() {
                 throwTypeErrorResult = message;
                 throwTypeErrorResult = new.target;
                 throwTypeErrorResult = new.target;
-                const obj24 = new callback2(4344)(message);
+                const obj24 = new callback2(4345)(message);
                 throwTypeErrorResult = obj24;
                 obj4.api_error = obj24.getAnyErrorMessage();
                 throwTypeErrorResult = callback2;
@@ -1639,7 +1639,7 @@ function _fetchQuestToDeliver() {
                 throwTypeErrorResult = message;
                 throwTypeErrorResult = new.target;
                 throwTypeErrorResult = new.target;
-                throwTypeErrorResult = new callback2(4344)(message);
+                throwTypeErrorResult = new callback2(4345)(message);
                 obj5[1] = throwTypeErrorResult;
                 throwTypeErrorResult = callback;
                 obj5[2] = callback;
@@ -1662,7 +1662,7 @@ function _fetchQuestToDeliver() {
                   closure_3 = body;
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
-                  obj16 = callback(7399);
+                  obj16 = callback(7413);
                   c7 = 3;
                   guildsTree = 1;
                   let obj7 = { value: null, done: false };
@@ -1685,7 +1685,7 @@ function _fetchQuestToDeliver() {
                   closure_4 = body;
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
-                  const LessPersonalizedAdsExperiment = callback(10839).LessPersonalizedAdsExperiment;
+                  const LessPersonalizedAdsExperiment = callback(10857).LessPersonalizedAdsExperiment;
                   lib = LessPersonalizedAdsExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" });
                   throwTypeErrorResult = lib;
                   v0 = lib();
@@ -1697,6 +1697,7 @@ function _fetchQuestToDeliver() {
                   }
                   c7 = items;
                   guildsTree = guildsTree.getGuildsTree();
+                  throwTypeErrorResult = c7;
                   const found = c7.filter((stateFromStores) => {
                     if (obj.isPseudoGuildId(stateFromStores)) {
                       return false;
@@ -1796,41 +1797,41 @@ function _fetchQuestToDeliver() {
                 if (creative != null) {
                   creative_type = creative.creative_type;
                 }
-                if (creative_type !== callback(7379).AdCreativeType.BOUNTY) {
+                if (creative_type !== callback(7393).AdCreativeType.BOUNTY) {
                   creative = body.creative;
                 } else {
-                  const BountiesMobileQuestBarExperiment = callback(10840).BountiesMobileQuestBarExperiment;
+                  const BountiesMobileQuestBarExperiment = callback(10858).BountiesMobileQuestBarExperiment;
                   creative = null;
                 }
                 obj16 = null;
                 if (null != creative) {
                   creative_type = creative.creative_type;
-                  if (callback(7379).AdCreativeType.QUEST === creative_type) {
-                    obj = callback(7388);
+                  if (callback(7393).AdCreativeType.QUEST === creative_type) {
+                    obj = callback(7402);
                     user = obj.questConfigFromServer(creative.creative_content);
                     const obj14 = { type: null, questId: null };
-                    obj14[0] = callback(7379).AdCreativeType.QUEST;
+                    obj14[0] = callback(7393).AdCreativeType.QUEST;
                     obj14[1] = user.id;
                     obj16 = obj14;
                   } else {
                     throwTypeErrorResult = closure_4;
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = dependencyMap;
-                    if (callback(7379).AdCreativeType.BOUNTY === creative_type) {
+                    if (callback(7393).AdCreativeType.BOUNTY === creative_type) {
                       throwTypeErrorResult = closure_3;
                       throwTypeErrorResult = closure_4;
                       throwTypeErrorResult = callback;
                       throwTypeErrorResult = dependencyMap;
                       throwTypeErrorResult = creative;
-                      closure_16 = callback(10841).bountyFromServer(creative.creative_content);
+                      closure_16 = callback(10859).bountyFromServer(creative.creative_content);
                       const obj15 = { type: null, bounty: null };
                       throwTypeErrorResult = callback;
                       throwTypeErrorResult = dependencyMap;
-                      obj15[0] = callback(7379).AdCreativeType.BOUNTY;
+                      obj15[0] = callback(7393).AdCreativeType.BOUNTY;
                       throwTypeErrorResult = closure_16;
                       obj15[1] = closure_16;
                       obj16 = obj15;
-                      const obj32 = callback(10841);
+                      const obj32 = callback(10859);
                     }
                   }
                 } else {
@@ -1844,18 +1845,18 @@ function _fetchQuestToDeliver() {
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = dependencyMap;
                     throwTypeErrorResult = quest;
-                    user = callback(7388).questConfigFromServer(quest);
+                    user = callback(7402).questConfigFromServer(quest);
                     obj16 = { type: null, questId: null };
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = dependencyMap;
-                    obj16[0] = callback(7379).AdCreativeType.QUEST;
+                    obj16[0] = callback(7393).AdCreativeType.QUEST;
                     throwTypeErrorResult = user;
                     obj16[1] = user.id;
-                    const obj30 = callback(7388);
+                    const obj30 = callback(7402);
                   }
                 }
                 obj2 = callback2(709);
-                const obj17 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", quest: null, creative: null, adDecisionData: null, metadataSealed: null, trafficMetadataSealed: null, adContext: null, responseTtlSeconds: null, placement: null, fetchedAt: null };
+                const obj17 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_SUCCESS", quest: null, creative: null, adDecisionData: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null, adContext: null, responseTtlSeconds: null, placement: null, fetchedAt: null };
                 obj17[1] = user;
                 obj17[2] = obj16;
                 const ad_identifiers = body.ad_identifiers;
@@ -1900,12 +1901,13 @@ function _fetchQuestToDeliver() {
                 obj17[3] = obj18;
                 obj17[4] = body.metadata_sealed;
                 obj17[5] = body.traffic_metadata_sealed;
-                obj17[6] = body.ad_context;
-                obj17[7] = body.response_ttl_seconds;
-                obj17[8] = callback;
-                obj17[9] = dependencyMap;
+                obj17[6] = body.provenance_metadata_sealed;
+                obj17[7] = body.ad_context;
+                obj17[8] = body.response_ttl_seconds;
+                obj17[9] = callback;
+                obj17[10] = dependencyMap;
                 obj2.dispatch(obj17);
-                obj5 = callback2(10838);
+                obj5 = callback2(10856);
                 obj19 = { wasSuccessful: true, adRequestId: null, currentCreative: null, currentFetchedAt: null };
                 const _String = String;
                 obj19[1] = String(body.request_id);
@@ -1918,13 +1920,13 @@ function _fetchQuestToDeliver() {
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = callback;
                   throwTypeErrorResult = dependencyMap;
-                  if (callback === callback(5342).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
-                    obj7 = callback2(10856);
+                  if (callback === callback(5355).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
+                    obj7 = callback2(10874);
                     obj7.startTracking(user.id);
                   }
                   obj8 = callback2(698);
                   const obj20 = {};
-                  const merged = Object.assign(callback2(7355)());
+                  const merged = Object.assign(callback2(7369)());
                   obj20.quest_id = user.id;
                   obj20.caller_source = callback2;
                   const _String2 = String;
@@ -2026,8 +2028,8 @@ function _fetchEarnedQuestToDeliver() {
                 if (0 !== found.length) {
                   const _Date = Date;
                   c3 = Date.now();
-                  const result = callback2(10858).recordEarnedRequestAttempt(tmp74, tmp75);
-                  const obj16 = callback2(10858);
+                  const result = callback2(10876).recordEarnedRequestAttempt(tmp74, tmp75);
+                  const obj16 = callback2(10876);
                   obj1 = { type: "QUESTS_FETCH_EARNED_QUEST_TO_DELIVER_BEGIN", content: null };
                   obj1[1] = tmp74;
                   callback2(709).dispatch(obj1);
@@ -2036,7 +2038,7 @@ function _fetchEarnedQuestToDeliver() {
                   response_ttl_seconds = 2;
                   fetchingEarnedQuestToDeliverByPlacement = 1;
                   const obj2 = { value: null, done: false };
-                  obj2[0] = callback(7141).getSession();
+                  obj2[0] = callback(7154).getSession();
                   return obj2;
                 }
               }
@@ -2469,7 +2471,7 @@ function _fetchQuestPreview() {
             dependencyMap = closure_3;
             let obj4 = lib(709);
             obj4 = { type: "QUESTS_FETCH_PREVIEW_FAILURE", error: null, questId: null };
-            const tmp28 = new lib(4344)(dependencyMap);
+            const tmp28 = new lib(4345)(dependencyMap);
             obj4[1] = tmp28;
             obj4[2] = callback;
             obj4.dispatch(obj4);
@@ -2482,7 +2484,7 @@ function _fetchQuestPreview() {
             obj = lib(709);
             const obj5 = { type: "QUESTS_FETCH_PREVIEW_SUCCESS", questId: null, quest: null };
             obj5[1] = callback;
-            obj2 = callback(7388);
+            obj2 = callback(7402);
             obj5[2] = obj2.questWithUserStatusFromServer(lib.body);
             obj.dispatch(obj5);
             c4 = 0;
@@ -2572,8 +2574,9 @@ function _fetchQuestHomeHero() {
                 callback2 = Date.now();
                 obj1 = { type: "QUESTS_FETCH_QUEST_HOME_HERO_BEGIN", placement: null };
                 obj1[1] = QUEST_HOME_BANNER_DESKTOP;
-                closure_1_1(closure_1_2[11]).dispatch(obj1);
+                throwTypeErrorResult = closure_1_1(closure_1_2[11]).dispatch(obj1);
                 body = 1;
+                throwTypeErrorResult = closure_1_0;
                 throwTypeErrorResult = closure_1_2;
                 const obj15 = closure_1_1(closure_1_2[11]);
                 c6 = 2;
@@ -2590,8 +2593,8 @@ function _fetchQuestHomeHero() {
             closure_9 = c4;
             let obj12 = callback2(closure_2[11]);
             const obj3 = { type: "QUESTS_FETCH_QUEST_HOME_HERO_FAILURE", error: null, placement: null };
-            const tmp89 = new callback2(closure_2[12])(closure_9);
-            obj3[1] = tmp89;
+            const tmp91 = new callback2(closure_2[12])(closure_9);
+            obj3[1] = tmp91;
             obj3[2] = callback;
             obj12.dispatch(obj3);
             throw closure_9;
@@ -2696,7 +2699,7 @@ function _fetchQuestHomeHero() {
               closure_8 = obj.questHomeHeroFromServer(type);
             }
             obj1 = callback2(closure_2[11]);
-            const obj11 = { type: "QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS", questHomeHero: null, adDecisionData: null, metadataSealed: null, trafficMetadataSealed: null, adContext: null, responseTtlSeconds: null, placement: null, fetchedAt: null };
+            const obj11 = { type: "QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS", questHomeHero: null, adDecisionData: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null, adContext: null, responseTtlSeconds: null, placement: null, fetchedAt: null };
             obj11[1] = closure_8;
             let ad_id;
             if (c6 != null) {
@@ -2756,18 +2759,23 @@ function _fetchQuestHomeHero() {
               prop = c6.traffic_metadata_sealed;
             }
             obj11[4] = prop;
+            let prop1;
+            if (c6 != null) {
+              prop1 = c6.provenance_metadata_sealed;
+            }
+            obj11[5] = prop1;
             let ad_context;
             if (c6 != null) {
               ad_context = c6.ad_context;
             }
-            obj11[5] = ad_context;
+            obj11[6] = ad_context;
             let response_ttl_seconds;
             if (c6 != null) {
               response_ttl_seconds = c6.response_ttl_seconds;
             }
-            obj11[6] = response_ttl_seconds;
-            obj11[7] = callback;
-            obj11[8] = callback2;
+            obj11[7] = response_ttl_seconds;
+            obj11[8] = callback;
+            obj11[9] = callback2;
             obj1.dispatch(obj11);
             body = 0;
           }
@@ -2866,8 +2874,8 @@ function _fetchQuestHomeHeroPreview() {
             c6 = closure_5;
             let obj5 = callback2(body[11]);
             const obj4 = { type: "QUESTS_FETCH_QUEST_HOME_HERO_FAILURE", error: null, placement: null };
-            const tmp67 = new callback2(body[12])(c6);
-            obj4[1] = tmp67;
+            const tmp69 = new callback2(body[12])(c6);
+            obj4[1] = tmp69;
             obj4[2] = QUEST_HOME_BANNER_DESKTOP;
             obj5.dispatch(obj4);
             throw c6;
@@ -2911,7 +2919,7 @@ function _fetchQuestHomeHeroPreview() {
               closure_5 = obj.questHomeHeroFromServer(creative_type);
             }
             obj1 = callback2(body[11]);
-            const obj6 = { type: "QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS", questHomeHero: null, adDecisionData: null, metadataSealed: null, trafficMetadataSealed: null, adContext: null, responseTtlSeconds: null, placement: null, fetchedAt: null };
+            const obj6 = { type: "QUESTS_FETCH_QUEST_HOME_HERO_SUCCESS", questHomeHero: null, adDecisionData: null, metadataSealed: null, trafficMetadataSealed: null, provenanceMetadataSealed: null, adContext: null, responseTtlSeconds: null, placement: null, fetchedAt: null };
             obj6[1] = closure_5;
             let ad_id;
             if (closure_3 != null) {
@@ -2971,28 +2979,33 @@ function _fetchQuestHomeHeroPreview() {
               prop = closure_3.traffic_metadata_sealed;
             }
             obj6[4] = prop;
+            let prop1;
+            if (closure_3 != null) {
+              prop1 = closure_3.provenance_metadata_sealed;
+            }
+            obj6[5] = prop1;
             let ad_context;
             if (closure_3 != null) {
               ad_context = closure_3.ad_context;
             }
-            obj6[5] = ad_context;
+            obj6[6] = ad_context;
             let response_ttl_seconds;
             if (closure_3 != null) {
               response_ttl_seconds = closure_3.response_ttl_seconds;
             }
-            obj6[6] = response_ttl_seconds;
-            obj6[7] = QUEST_HOME_BANNER_DESKTOP;
-            obj6[8] = callback2;
+            obj6[7] = response_ttl_seconds;
+            obj6[8] = QUEST_HOME_BANNER_DESKTOP;
+            obj6[9] = callback2;
             obj1.dispatch(obj6);
             c6 = 0;
             c8 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp72) {
-          closure_5 = tmp72;
+        } catch (tmp74) {
+          closure_5 = tmp74;
           if (tmp4 === c6) {
             c8 = tmp2;
-            throw tmp72;
+            throw tmp74;
           } else {
             c7 = tmp;
           }

@@ -1,15 +1,15 @@
-// Module ID: 10047
-// Function ID: 10048
+// Module ID: 10065
+// Function ID: 10066
 // Name: StageChannelCallList
-// Dependencies: [32, 19, 10048, 5310, 21, 1297, 10049, 5320, 4897, 5326, 38, 10056, 1236, 10057, 10058, 10070, 7728, 10074, 1494, 5023, 2]
+// Dependencies: [32, 19, 10066, 5323, 21, 1297, 10067, 5333, 4910, 5339, 38, 10074, 1236, 10075, 10076, 10088, 7742, 10092, 1494, 5036, 2]
 // Exports: default
 
-// Module 10047 (StageChannelCallList)
+// Module 10065 (StageChannelCallList)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH" /* 5310 */;
+import { MAX_AUDIENCE_ROW_LIMIT } from "MAX_STAGE_TOPIC_LENGTH" /* 5323 */;
 import jsxProd from "jsxProd" /* 21 */;
-import useActiveSpeakerPillScrollHandler from "useActiveSpeakerPillScrollHandler" /* 10048 */;
+import useActiveSpeakerPillScrollHandler from "useActiveSpeakerPillScrollHandler" /* 10066 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -310,10 +310,10 @@ export default function StageChannelCallList(channel) {
   channel = channel.channel;
   let width;
   let isScreenLandscape;
-  obj = width(10074);
+  obj = width(10092);
   const throttleDurationForChannel = obj.useThrottleDurationForChannel(channel.id);
   width = isScreenLandscape(1494)().width;
-  isScreenLandscape = width(5023).useIsScreenLandscape();
+  isScreenLandscape = width(5036).useIsScreenLandscape();
   const items = [width, isScreenLandscape];
   const memo = importAllResult.useMemo(() => {
     let num = 3;
@@ -327,8 +327,8 @@ export default function StageChannelCallList(channel) {
     obj[width(closure_1_2[7]).StageChannelParticipantNamedIndex.AUDIENCE] = closure_1_7;
     return obj;
   }, items);
-  const obj2 = width(5023);
-  const tmp4 = callback(width(10074).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
+  const obj2 = width(5036);
+  const tmp4 = callback(width(10092).useStageChannelParticipantsListThrottled(channel.id, memo, throttleDurationForChannel, true), 2);
   obj = { channel, listSections: tmp4[0], rowsBySection: tmp4[1] };
   return callback3(closure_12, obj);
 };

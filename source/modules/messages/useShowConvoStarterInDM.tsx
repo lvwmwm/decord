@@ -1,17 +1,17 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11769
+// Function ID: 11770
 // Name: MAX_MESSAGES_ALLOWED_FOR_GREETING
-// Dependencies: [19, 6018, 4688, 4098, 1922, 676, 1398, 10921, 589, 2]
+// Dependencies: [19, 6031, 4701, 4099, 1923, 676, 1398, 10939, 589, 2]
 // Exports: useShowConvoStarterInDM
 
-// Module 11750 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
+// Module 11769 (MAX_MESSAGES_ALLOWED_FOR_GREETING)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import set2 from "set" /* 1398 */;
-import closure_3 from "processChannel" /* 6018 */;
-import closure_4 from "reinjectEphemerals" /* 4688 */;
-import closure_5 from "markAllUserIdListsStale" /* 4098 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "processChannel" /* 6031 */;
+import closure_4 from "reinjectEphemerals" /* 4701 */;
+import closure_5 from "markAllUserIdListsStale" /* 4099 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 
 let useRef = noop.useRef;
@@ -34,9 +34,9 @@ export const useShowConvoStarterInDM = function useShowConvoStarterInDM(channel)
   if (tmp) {
     recipientId = channel.getRecipientId();
   }
-  const strangerDangerWarning = _require(10921).useStrangerDangerWarning(channel.id);
+  const strangerDangerWarning = _require(10939).useStrangerDangerWarning(channel.id);
   const hasFlagResult = channel.hasFlag(ChannelFlags.HAS_ONLY_SYSTEM_MESSAGES);
-  const obj = _require(10921);
+  const obj = _require(10939);
   const items = [recipientId, closure_3, strangerDangerWarning, hasFlagResult];
   const items1 = [strangerDangerWarning, tmp, channel.id, recipientId, hasFlagResult];
   return _require(589).useStateFromStores(items, () => {

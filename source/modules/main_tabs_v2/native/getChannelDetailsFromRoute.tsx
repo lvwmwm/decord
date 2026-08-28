@@ -1,12 +1,12 @@
-// Module ID: 14126
-// Function ID: 14127
+// Module ID: 14145
+// Function ID: 14146
 // Name: getChannelDetailsFromRoute
-// Dependencies: [4299, 2]
+// Dependencies: [4300, 2]
 // Exports: default
 
-// Module 14126 (getChannelDetailsFromRoute)
+// Module 14145 (getChannelDetailsFromRoute)
 import set from "set" /* 2 */;
-import coerceMainRoute from "coerceMainRoute" /* 4299 */;
+import coerceMainRoute from "coerceMainRoute" /* 4300 */;
 
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/getChannelDetailsFromRoute.tsx");
 

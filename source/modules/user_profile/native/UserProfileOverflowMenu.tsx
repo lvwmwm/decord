@@ -1,21 +1,21 @@
-// Module ID: 12503
-// Function ID: 12504
+// Module ID: 12522
+// Function ID: 12523
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4461, 1391, 4098, 1981, 5953, 676, 4466, 8978, 21, 589, 12504, 12510, 8979, 8490, 5905, 5925, 8046, 8825, 8826, 12511, 12512, 9785, 9786, 5932, 8815, 503, 8819, 1236, 4458, 4412, 4676, 12517, 2009, 8980, 8989, 8606, 8990, 8681, 500, 8992, 698, 9791, 4680, 4134, 5933, 4289, 4161, 5939, 9006, 8717, 12516, 7938, 8723, 712, 12518, 2]
+// Dependencies: [32, 19, 17, 4462, 1391, 4099, 1982, 5966, 676, 4467, 8996, 21, 589, 12523, 12529, 8997, 8504, 5918, 5938, 8060, 8842, 8843, 12530, 12531, 9803, 9804, 5945, 8832, 503, 8836, 1236, 4459, 4413, 4689, 12536, 2010, 8998, 9007, 8621, 9008, 8697, 500, 9010, 698, 9809, 4693, 4135, 5946, 4290, 4162, 5952, 9024, 8733, 12535, 7952, 8739, 712, 12537, 2]
 // Exports: default
 
-// Module 12503 (UserProfileOverflowMenu)
+// Module 12522 (UserProfileOverflowMenu)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4461 */;
+import closure_6 from "getParticipants" /* 4462 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "markAllUserIdListsStale" /* 4098 */;
-import closure_9 from "handleConnectionOpen" /* 1981 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5953 */;
+import closure_8 from "markAllUserIdListsStale" /* 4099 */;
+import closure_9 from "handleConnectionOpen" /* 1982 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5966 */;
 import ME from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4466 */;
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8978 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4467 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8996 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

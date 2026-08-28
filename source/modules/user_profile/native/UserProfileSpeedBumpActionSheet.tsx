@@ -1,21 +1,21 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8837
+// Function ID: 8838
 // Name: InformationTable
-// Dependencies: [32, 19, 17, 1391, 1992, 1922, 8488, 676, 21, 4445, 712, 8821, 1236, 5944, 5551, 1297, 1363, 4380, 589, 8046, 5905, 5925, 8490, 8822, 698, 8048, 8819, 5574, 5576, 7772, 7675, 4441, 4638, 4880, 5020, 4134, 2]
+// Dependencies: [32, 19, 17, 1391, 1993, 1923, 8502, 676, 21, 4446, 712, 8838, 1236, 5957, 5564, 1297, 1363, 4381, 589, 8060, 5918, 5938, 8504, 8839, 698, 8062, 8836, 5587, 5589, 7786, 7689, 4442, 4639, 4893, 5033, 4135, 2]
 
-// Module 8820 (InformationTable)
+// Module 8837 (InformationTable)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 8821 */;
+import registerAssetDefault from "registerAsset" /* 8838 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "trackCommunicationDisabled" /* 1992 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8488 */;
+import closure_7 from "trackCommunicationDisabled" /* 1993 */;
+import closure_8 from "mergeGuildAvatar" /* 1923 */;
+import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8502 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function InformationTable(speedBumpType) {
@@ -44,7 +44,7 @@ function InformationTable(speedBumpType) {
       return closure_1_12(items(closure_1_2[14]).TableRow, obj, arg1);
     })
   };
-  return callback2(items(5944).TableRowGroup, obj);
+  return callback2(items(5957).TableRowGroup, obj);
 }
 let c4 = importAllResult;
 ({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId } = ME);

@@ -1,9 +1,9 @@
-// Module ID: 11558
-// Function ID: 11559
+// Module ID: 11577
+// Function ID: 11578
 // Name: SearchAppsRequestSource
 // Dependencies: [2]
 
-// Module 11558 (SearchAppsRequestSource)
+// Module 11577 (SearchAppsRequestSource)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SearchAppsRequestSource.tsx");

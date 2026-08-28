@@ -1,10 +1,10 @@
-// Module ID: 5106
-// Function ID: 5107
+// Module ID: 5119
+// Function ID: 5120
 // Name: create
-// Dependencies: [5, 1953, 5107, 2]
+// Dependencies: [5, 1954, 5120, 2]
 
-// Module 5106 (create)
-import decodeImageDefault from "decodeImage" /* 1953 */;
+// Module 5119 (create)
+import decodeImageDefault from "decodeImage" /* 1954 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;

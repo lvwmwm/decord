@@ -1,10 +1,10 @@
-// Module ID: 8521
-// Function ID: 8522
+// Module ID: 8535
+// Function ID: 8536
 // Name: lerpVarWidthThumbnailScrollBounds
 // Dependencies: [2]
 // Exports: lerpVarWidthThumbnailScrollBounds
 
-// Module 8521 (lerpVarWidthThumbnailScrollBounds)
+// Module 8535 (lerpVarWidthThumbnailScrollBounds)
 import set from "set" /* 2 */;
 
 function lerpVarWidthThumbnailScrollBounds(closure_1, arg1) {

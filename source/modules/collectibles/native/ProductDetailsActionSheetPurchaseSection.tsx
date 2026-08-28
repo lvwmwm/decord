@@ -1,23 +1,23 @@
-// Module ID: 12473
-// Function ID: 12474
+// Module ID: 12493
+// Function ID: 12494
 // Name: GiftButton
-// Dependencies: [32, 19, 17, 7236, 678, 676, 10751, 1924, 21, 4445, 712, 7938, 10694, 4412, 12440, 10661, 1236, 12469, 12468, 12452, 1500, 5905, 4676, 12474, 2009, 7219, 12478, 679, 12479, 10744, 10674, 4441, 4881, 1950, 4380, 1363, 4165, 8814, 589, 8861, 4107, 7232, 7231, 11267, 10750, 12481, 12482, 10404, 12484, 1629, 4892, 8173, 4880, 501, 5925, 1995, 12485, 2]
+// Dependencies: [32, 19, 17, 7250, 678, 676, 10769, 1925, 21, 4446, 712, 7952, 10712, 4413, 12460, 10679, 1236, 12489, 12488, 12472, 1500, 5918, 4689, 12494, 2010, 7233, 12498, 679, 12499, 10762, 10692, 4442, 4894, 1951, 4381, 1363, 4166, 8831, 589, 8878, 4108, 7246, 7245, 11285, 10768, 12501, 12502, 10422, 12504, 1629, 4905, 8187, 4893, 501, 5938, 1996, 12505, 2]
 // Exports: default
 
-// Module 12473 (GiftButton)
+// Module 12493 (GiftButton)
 import ThemesDefault from "Themes" /* 712 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
-import Text from "Text" /* 4441 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
+import Text from "Text" /* 4442 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 7236 */;
+import closure_6 from "map" /* 7250 */;
 import items from "items" /* 678 */;
 import ME from "ME" /* 676 */;
-import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 10751 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 10769 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function GiftButton(onTrackPress) {

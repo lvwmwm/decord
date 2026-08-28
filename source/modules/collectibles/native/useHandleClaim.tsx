@@ -1,10 +1,10 @@
-// Module ID: 12481
-// Function ID: 12482
+// Module ID: 12501
+// Function ID: 12502
 // Name: useHandleClaim
-// Dependencies: [5, 19, 7219, 4412, 10744, 4162, 1236, 2]
+// Dependencies: [5, 19, 7233, 4413, 10762, 4163, 1236, 2]
 // Exports: useHandleClaim
 
-// Module 12481 (useHandleClaim)
+// Module 12501 (useHandleClaim)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 

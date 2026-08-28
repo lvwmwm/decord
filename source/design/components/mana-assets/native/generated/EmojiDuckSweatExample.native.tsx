@@ -1,14 +1,14 @@
-// Module ID: 6445
-// Function ID: 6446
+// Module ID: 6458
+// Function ID: 6459
 // Name: EmojiDuckSweatExample
-// Dependencies: [21, 5445, 6446, 2]
+// Dependencies: [21, 5458, 6459, 2]
 // Exports: EmojiDuckSweatExample
 
-// Module 6445 (EmojiDuckSweatExample)
+// Module 6458 (EmojiDuckSweatExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6446 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6459 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiDuckSweatExample.native.tsx");

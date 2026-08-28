@@ -1,14 +1,14 @@
-// Module ID: 10404
-// Function ID: 10405
+// Module ID: 10422
+// Function ID: 10423
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [19, 4113, 10394, 1924, 589, 7126, 10403, 7096, 7119, 2]
+// Dependencies: [19, 4114, 10412, 1925, 589, 7139, 10421, 7109, 7132, 2]
 // Exports: useIsEligibleForBogoOffer
 
-// Module 10404 (useIsEligibleForBogoOffer)
+// Module 10422 (useIsEligibleForBogoOffer)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "reset" /* 4113 */;
-import closure_4 from "createEmptyPromotionsByType" /* 10394 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import closure_3 from "reset" /* 4114 */;
+import closure_4 from "createEmptyPromotionsByType" /* 10412 */;
+import { PremiumTypes } from "GuildFeatures" /* 1925 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/native/hooks/useIsEligibleForBogoOffer.android.tsx");
@@ -20,13 +20,13 @@ export const useIsEligibleForBogoOffer = function useIsEligibleForBogoOffer() {
   const items1 = [closure_3];
   const stateFromStores1 = forceUpdate(589).useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
   const obj2 = forceUpdate(589);
-  const premiumTrialOffer = forceUpdate(7126).usePremiumTrialOffer();
-  const obj4 = forceUpdate(7126);
-  const premiumDiscountOffer = forceUpdate(10403).usePremiumDiscountOffer();
-  const obj5 = forceUpdate(10403);
-  const isPaymentsBlocked = forceUpdate(7096).useIsPaymentsBlocked();
-  const obj6 = forceUpdate(7096);
-  forceUpdate = forceUpdate(7119).useForceUpdate();
+  const premiumTrialOffer = forceUpdate(7139).usePremiumTrialOffer();
+  const obj4 = forceUpdate(7139);
+  const premiumDiscountOffer = forceUpdate(10421).usePremiumDiscountOffer();
+  const obj5 = forceUpdate(10421);
+  const isPaymentsBlocked = forceUpdate(7109).useIsPaymentsBlocked();
+  const obj6 = forceUpdate(7109);
+  forceUpdate = forceUpdate(7132).useForceUpdate();
   let valueOfResult = null;
   if (null != stateFromStores) {
     const endDate = stateFromStores.endDate;

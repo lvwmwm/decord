@@ -1,21 +1,21 @@
-// Module ID: 11740
-// Function ID: 11741
+// Module ID: 11759
+// Function ID: 11760
 // Name: _startAudioRecording
-// Dependencies: [5, 4496, 11451, 11452, 676, 3, 11741, 206, 12, 4544, 698, 4413, 500, 2]
+// Dependencies: [5, 4497, 11470, 11471, 676, 3, 11760, 206, 12, 4545, 698, 4414, 500, 2]
 // Exports: emitVoiceMessageRecorded, endAudioRecording, generateBase64EncodedWaveform, startAudioRecording, triggerHaptic
 
-// Module 11740 (_startAudioRecording)
+// Module 11759 (_startAudioRecording)
 import timestampDefault from "timestamp" /* 3 */;
 import byteLengthDefault from "byteLength" /* 206 */;
 import set from "set" /* 500 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import HapticFeedbackTypes2 from "HapticFeedbackTypes" /* 4413 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4544 */;
-import downsampleWaveformDefault from "downsampleWaveform" /* 11741 */;
+import HapticFeedbackTypes2 from "HapticFeedbackTypes" /* 4414 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4545 */;
+import downsampleWaveformDefault from "downsampleWaveform" /* 11760 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4496 */;
-import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11451 */;
-import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11452 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4497 */;
+import VoiceMessageRecordingStatus from "VoiceMessageRecordingStatus" /* 11470 */;
+import VoiceMessageAnimationState from "VoiceMessageAnimationState" /* 11471 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import importDefaultResult from "apply" /* 12 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 6689
-// Function ID: 6690
+// Module ID: 6702
+// Function ID: 6703
 // Name: HeartHandsSpotIllustration
-// Dependencies: [21, 5445, 6690, 2]
+// Dependencies: [21, 5458, 6703, 2]
 // Exports: HeartHandsSpotIllustration
 
-// Module 6689 (HeartHandsSpotIllustration)
+// Module 6702 (HeartHandsSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6690 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6703 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HeartHandsSpotIllustration.native.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 16836
-// Function ID: 16837
+// Module ID: 16854
+// Function ID: 16855
 // Name: handleInteraction
-// Dependencies: [4267, 1925, 5438, 9025, 2]
+// Dependencies: [4268, 1926, 5451, 9043, 2]
 
-// Module 16836 (handleInteraction)
-import initializeDefault from "initialize" /* 5438 */;
-import maybeFetchTopEmojisByGuild from "maybeFetchTopEmojisByGuild" /* 9025 */;
-import closure_2 from "handleConnectionOpen" /* 4267 */;
-import { EmojiInteractionPoint } from "set" /* 1925 */;
+// Module 16854 (handleInteraction)
+import initializeDefault from "initialize" /* 5451 */;
+import maybeFetchTopEmojisByGuild from "maybeFetchTopEmojisByGuild" /* 9043 */;
+import closure_2 from "handleConnectionOpen" /* 4268 */;
+import { EmojiInteractionPoint } from "set" /* 1926 */;
 
 require = arg1;
 initializeDefault;

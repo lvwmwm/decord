@@ -1,19 +1,19 @@
-// Module ID: 11358
-// Function ID: 11359
+// Module ID: 11377
+// Function ID: 11378
 // Name: useCurrentUserHasAutomodQuarantinedProfile
-// Dependencies: [19, 8954, 1218, 1992, 1910, 4089, 4267, 676, 4077, 685, 647, 4095, 1236, 8955, 8956, 6197, 2]
+// Dependencies: [19, 8972, 1218, 1993, 1910, 4090, 4268, 676, 4078, 685, 647, 4096, 1236, 8973, 8974, 6210, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 11358 (useCurrentUserHasAutomodQuarantinedProfile)
+// Module 11377 (useCurrentUserHasAutomodQuarantinedProfile)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "zustandStore" /* 8954 */;
+import closure_3 from "zustandStore" /* 8972 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
+import closure_5 from "trackCommunicationDisabled" /* 1993 */;
 import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_8 from "handleConnectionOpen" /* 4267 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_8 from "handleConnectionOpen" /* 4268 */;
 import ME from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4077 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4078 */;
 import { ProfileCustomizationSubsection as closure_12 } from "MAX_FAVORITES" /* 685 */;
 
 const require = arg1;

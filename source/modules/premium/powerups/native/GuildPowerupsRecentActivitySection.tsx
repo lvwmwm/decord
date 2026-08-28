@@ -1,22 +1,22 @@
-// Module ID: 12058
-// Function ID: 12059
+// Module ID: 12077
+// Function ID: 12078
 // Name: GuildPowerupsRecentActivityRow
-// Dependencies: [17, 4437, 21, 4445, 712, 7936, 12059, 4131, 589, 7803, 8166, 12061, 12063, 1297, 4441, 12065, 1236, 2]
+// Dependencies: [17, 4438, 21, 4446, 712, 7950, 12078, 4132, 589, 7817, 8180, 12080, 12082, 1297, 4442, 12084, 1236, 2]
 // Exports: default
 
-// Module 12058 (GuildPowerupsRecentActivityRow)
+// Module 12077 (GuildPowerupsRecentActivityRow)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import resetCache from "resetCache" /* 4131 */;
-import apexExperiment from "apexExperiment" /* 7936 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12059 */;
-import useMaybeGetSortedBoostsDefault from "useMaybeGetSortedBoosts" /* 12059 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12065 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import resetCache from "resetCache" /* 4132 */;
+import apexExperiment from "apexExperiment" /* 7950 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 12078 */;
+import useMaybeGetSortedBoostsDefault from "useMaybeGetSortedBoosts" /* 12078 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 12084 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 function GuildPowerupsRecentActivityRow(row) {
   row = row.row;
@@ -37,16 +37,16 @@ function GuildPowerupsRecentActivityRow(row) {
       obj = { color: null };
       obj[0] = roleColor;
     }
-    let tmpResult = tmp(7803);
+    let tmpResult = tmp(7817);
     const processColorStringsArray = tmpResult.useProcessColorStringsArray(roleColorStrings);
-    tmpResult = tmp(7803);
+    tmpResult = tmp(7817);
     const isRoleStyleAndRoleColorsEligibleForERC = tmpResult.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      let BoostGemSlashIcon = tmp(8166).BoostGemIcon;
+      let BoostGemSlashIcon = tmp(8180).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp(12061).BoostTier1Icon;
+      BoostGemSlashIcon = tmp(12080).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp(12063).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp(12082).BoostGemSlashIcon;
     }
     obj = { style: null, children: null };
     obj[0] = tmp4.boostRowContainer;
@@ -80,12 +80,12 @@ function GuildPowerupsRecentActivityRow(row) {
     }
     obj5[4] = tmp23;
     obj5[5] = username;
-    items2[1] = closure_5(tmp(4441).Text, obj5);
-    items2[2] = closure_5(tmp(4441).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
+    items2[1] = closure_5(tmp(4442).Text, obj5);
+    items2[2] = closure_5(tmp(4442).Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
     const obj6 = { variant: "text-md/medium", lineClamp: 1, style: null, children: null };
     obj6[2] = tmp4.messageText;
     obj6[3] = getBoostRowMessageTextDefault(row);
-    items2[3] = closure_5(tmp(4441).Text, obj6);
+    items2[3] = closure_5(tmp(4442).Text, obj6);
     obj3[1] = items2;
     items1[1] = closure_6(View, obj3);
     let str4 = "text-xs/semibold";
@@ -101,7 +101,7 @@ function GuildPowerupsRecentActivityRow(row) {
     obj7[1] = str5;
     obj7[2] = tmp4.timestamp;
     obj7[3] = calendarFormatResult;
-    items1[2] = closure_5(tmp(4441).Text, obj7);
+    items1[2] = closure_5(tmp(4442).Text, obj7);
     obj[1] = items1;
     return closure_6(View, obj);
   }
@@ -138,7 +138,7 @@ export default function GuildPowerupsRecentActivitySection(guildId) {
     obj[1] = str;
     const intl = tmp(1236).intl;
     obj[2] = intl.string(tmp(1236).t.yM9Krm);
-    const items = [closure_5(tmp(4441).Text, obj), ];
+    const items = [closure_5(tmp(4442).Text, obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp4.boostContainer;
     obj1[1] = arr.map((boost) => callback(closure_8, { row: boost }, "boost-" + boost.boost.id));

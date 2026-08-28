@@ -1,11 +1,11 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 10836
+// Function ID: 10837
 // Name: useCanRemoveAllReactions
-// Dependencies: [4089, 676, 6068, 589, 2]
+// Dependencies: [4090, 676, 6081, 589, 2]
 // Exports: default
 
-// Module 10818 (useCanRemoveAllReactions)
-import closure_2 from "getUncachedChannelPermissions" /* 4089 */;
+// Module 10836 (useCanRemoveAllReactions)
+import closure_2 from "getUncachedChannelPermissions" /* 4090 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;

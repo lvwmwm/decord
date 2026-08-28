@@ -1,0 +1,32 @@
+// Module ID: 3898
+// Function ID: 3899
+// Name: isThisISOWeek
+// Dependencies: [3888, 3542]
+// Exports: default
+
+// Module 3898 (isThisISOWeek)
+import isSameISOWeek from "isSameISOWeek" /* 3888 */;
+import requiredArgs from "requiredArgs" /* 3542 */;
+
+if (!isSameISOWeek) {
+  let obj = { default: null };
+  obj[0] = isSameISOWeek;
+  let tmp3 = obj;
+} else {
+  tmp3 = isSameISOWeek;
+}
+isSameISOWeek = tmp3;
+if (!requiredArgs) {
+  obj = { default: null };
+  obj[0] = requiredArgs;
+  let tmp5 = obj;
+} else {
+  tmp5 = requiredArgs;
+}
+requiredArgs = tmp5;
+
+export default function isThisISOWeek(arg0) {
+  requiredArgs.default(1, arguments);
+  return isSameISOWeek.default(arg0, Date.now());
+};
+export default exports.default;

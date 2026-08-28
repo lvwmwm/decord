@@ -1,19 +1,19 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12072
+// Function ID: 12073
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 4437, 4352, 21, 4445, 712, 589, 12054, 12055, 12046, 12050, 4172, 2]
+// Dependencies: [19, 17, 4438, 4353, 21, 4446, 712, 589, 12073, 12074, 12065, 12069, 4173, 2]
 // Exports: default
 
-// Module 12053 (GuildPowerupsGameServerCard)
+// Module 12072 (GuildPowerupsGameServerCard)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12050 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12055 */;
+import GuildPowerupsPerkCardDefault from "GuildPowerupsPerkCard" /* 12069 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12074 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_5 from "handleGameServerInstanceCreated" /* 4352 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_5 from "handleGameServerInstanceCreated" /* 4353 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 noopAll;
@@ -47,7 +47,7 @@ export default function GuildPowerupsGameServerCard(guildId) {
       const obj2 = { reducedMotion: null };
       obj2[0] = stateFromStores1;
       obj1[1] = obj2;
-      obj[1] = jsx(tmp2(4172).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: null });
+      obj[1] = jsx(tmp2(4173).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: null });
       obj[4] = <View style={null}>{null}</View>;
       obj[6] = tmp6;
       obj[7] = tmp9;

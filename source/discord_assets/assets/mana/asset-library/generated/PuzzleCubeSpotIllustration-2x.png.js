@@ -1,9 +1,9 @@
-// Module ID: 6866
-// Function ID: 6867
+// Module ID: 6879
+// Function ID: 6880
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6866 (metadata)
+// Module 6879 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PuzzleCubeSpotIllustration-2x.png.js");

@@ -1,22 +1,22 @@
-// Module ID: 8761
-// Function ID: 8762
+// Module ID: 8777
+// Function ID: 8778
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4445, 712, 8734, 4158, 1629, 5941, 5576, 4441, 1236, 4880, 4412, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 8750, 4159, 1629, 5954, 5589, 4442, 1236, 4893, 4413, 2]
 // Exports: default
 
-// Module 8761 (GameProfileStoreLinksActionSheet)
+// Module 8777 (GameProfileStoreLinksActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import _modDef4158 from "module_4158" /* 4158 */;
-import Text from "Text" /* 4441 */;
-import BottomSheetModal from "BottomSheetModal" /* 5576 */;
-import ActionSheet from "ActionSheet" /* 5941 */;
-import _getDeepLinkUrlDefault from "_getDeepLinkUrl" /* 8734 */;
+import _modDef4159 from "module_4159" /* 4159 */;
+import Text from "Text" /* 4442 */;
+import BottomSheetModal from "BottomSheetModal" /* 5589 */;
+import ActionSheet from "ActionSheet" /* 5954 */;
+import _getDeepLinkUrlDefault from "_getDeepLinkUrl" /* 8750 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;
@@ -34,7 +34,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   ({ websiteButtons, trackAction: require } = gameName);
   importDefault = undefined;
   const tmp = callback3();
-  importDefault = _getDeepLinkUrlDefault(_modDef4158.openURL);
+  importDefault = _getDeepLinkUrlDefault(_modDef4159.openURL);
   let obj = { children: null };
   obj = { contentContainerStyle: null, children: null };
   obj = { paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };

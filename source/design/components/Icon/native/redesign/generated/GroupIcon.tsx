@@ -1,14 +1,14 @@
-// Module ID: 4990
-// Function ID: 4991
+// Module ID: 5003
+// Function ID: 5004
 // Name: GroupIcon
-// Dependencies: [19, 21, 712, 4164, 4938, 2]
+// Dependencies: [19, 21, 712, 4165, 4951, 2]
 // Exports: GroupIcon
 
-// Module 4990 (GroupIcon)
+// Module 5003 (GroupIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4938 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 4951 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

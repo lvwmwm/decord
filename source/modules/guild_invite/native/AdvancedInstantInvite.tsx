@@ -1,16 +1,16 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 17310
+// Function ID: 17311
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 4098, 1922, 21, 4445, 4933, 4639, 17293, 9833, 17294, 4412, 17295, 2009, 17296, 1236, 5956, 5557, 4878, 712, 5944, 5551, 5945, 1403, 8594, 2]
+// Dependencies: [19, 17, 4099, 1923, 21, 4446, 4946, 4640, 17311, 9851, 17312, 4413, 17313, 2010, 17314, 1236, 5969, 5570, 4891, 712, 5957, 5564, 5958, 1403, 8609, 2]
 // Exports: default
 
-// Module 17292 (AdvancedInstantInvite)
+// Module 17310 (AdvancedInstantInvite)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "markAllUserIdListsStale" /* 4098 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "markAllUserIdListsStale" /* 4099 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

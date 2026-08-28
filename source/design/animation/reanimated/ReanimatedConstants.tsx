@@ -1,13 +1,13 @@
-// Module ID: 4447
-// Function ID: 4448
+// Module ID: 4448
+// Function ID: 4449
 // Name: CONFIG_NEVER_ANIMATE
-// Dependencies: [4185, 2]
+// Dependencies: [4186, 2]
 
-// Module 4447 (CONFIG_NEVER_ANIMATE)
+// Module 4448 (CONFIG_NEVER_ANIMATE)
 import set from "set" /* 2 */;
-import _mod4185 from "module_4185" /* 4185 */;
+import _mod4186 from "module_4186" /* 4186 */;
 
-let obj = { duration: 1, reduceMotion: _mod4185.ReduceMotion.Always };
+let obj = { duration: 1, reduceMotion: _mod4186.ReduceMotion.Always };
 obj = {};
 const merged = Object.assign(obj);
 obj.reduceMotion = undefined;

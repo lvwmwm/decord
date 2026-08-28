@@ -1,29 +1,29 @@
-// Module ID: 8383
-// Function ID: 8384
+// Module ID: 8397
+// Function ID: 8398
 // Name: create
-// Dependencies: [32, 1307, 8384, 8388, 8389, 8390, 8391, 8392, 8394, 8396, 8397, 8398, 8399, 8400, 8401, 8402, 8403, 8404, 8405, 8406, 8407, 2]
+// Dependencies: [32, 1307, 8398, 8402, 8403, 8404, 8405, 8406, 8408, 8410, 8411, 8412, 8413, 8414, 8415, 8416, 8417, 8418, 8419, 8420, 8421, 2]
 
-// Module 8383 (create)
+// Module 8397 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create from "create" /* 8384 */;
-import create2 from "create" /* 8388 */;
-import create3 from "create" /* 8389 */;
-import create4 from "create" /* 8390 */;
-import create5 from "create" /* 8391 */;
-import create6 from "create" /* 8392 */;
-import create7 from "create" /* 8394 */;
-import create8 from "create" /* 8396 */;
-import create9 from "create" /* 8397 */;
-import create10 from "create" /* 8398 */;
-import create11 from "create" /* 8399 */;
-import create12 from "create" /* 8400 */;
-import create13 from "create" /* 8401 */;
-import create14 from "create" /* 8402 */;
-import create15 from "create" /* 8403 */;
-import create16 from "create" /* 8404 */;
-import create17 from "create" /* 8405 */;
-import create18 from "create" /* 8406 */;
-import create19 from "create" /* 8407 */;
+import create from "create" /* 8398 */;
+import create2 from "create" /* 8402 */;
+import create3 from "create" /* 8403 */;
+import create4 from "create" /* 8404 */;
+import create5 from "create" /* 8405 */;
+import create6 from "create" /* 8406 */;
+import create7 from "create" /* 8408 */;
+import create8 from "create" /* 8410 */;
+import create9 from "create" /* 8411 */;
+import create10 from "create" /* 8412 */;
+import create11 from "create" /* 8413 */;
+import create12 from "create" /* 8414 */;
+import create13 from "create" /* 8415 */;
+import create14 from "create" /* 8416 */;
+import create15 from "create" /* 8417 */;
+import create16 from "create" /* 8418 */;
+import create17 from "create" /* 8419 */;
+import create18 from "create" /* 8420 */;
+import create19 from "create" /* 8421 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -38,7 +38,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8384).AnnouncementModalVariant1Properties;
+            return callback(8398).AnnouncementModalVariant1Properties;
           }
     };
     items[2] = {
@@ -47,7 +47,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8388).PremiumTab;
+            return callback(8402).PremiumTab;
           }
     };
     items[3] = {
@@ -56,7 +56,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8389).MarketingPageBanner;
+            return callback(8403).MarketingPageBanner;
           }
     };
     items[4] = {
@@ -65,7 +65,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8390).PaymentModalBanner;
+            return callback(8404).PaymentModalBanner;
           }
     };
     items[5] = {
@@ -74,7 +74,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8391).MobileBottomSheet;
+            return callback(8405).MobileBottomSheet;
           }
     };
     items[6] = {
@@ -83,7 +83,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8392).GiftIcon;
+            return callback(8406).GiftIcon;
           }
     };
     items[7] = {
@@ -92,7 +92,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8394).GiftIconCoachmark;
+            return callback(8408).GiftIconCoachmark;
           }
     };
     items[8] = {
@@ -101,7 +101,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8396).GiftPlanSelectionCardBanner;
+            return callback(8410).GiftPlanSelectionCardBanner;
           }
     };
     items[9] = {
@@ -110,7 +110,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8397).GiftCustomizationBanner;
+            return callback(8411).GiftCustomizationBanner;
           }
     };
     items[10] = {
@@ -119,7 +119,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8398).BillingSettingsNitroGiftBanner;
+            return callback(8412).BillingSettingsNitroGiftBanner;
           }
     };
     items[11] = {
@@ -128,7 +128,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8399).GiftReminderNagbar;
+            return callback(8413).GiftReminderNagbar;
           }
     };
     items[12] = {
@@ -137,7 +137,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8400).GiftReminderCoachmark;
+            return callback(8414).GiftReminderCoachmark;
           }
     };
     items[13] = {
@@ -146,7 +146,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8401).PremiumTabTooltip;
+            return callback(8415).PremiumTabTooltip;
           }
     };
     items[14] = {
@@ -155,7 +155,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8402).PremiumTabPopover;
+            return callback(8416).PremiumTabPopover;
           }
     };
     items[15] = {
@@ -164,7 +164,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8403).Nagbar;
+            return callback(8417).Nagbar;
           }
     };
     items[16] = {
@@ -173,7 +173,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8404).PlanSelectCardBanner;
+            return callback(8418).PlanSelectCardBanner;
           }
     };
     items[17] = {
@@ -182,7 +182,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8405).BillingSettingsBanner;
+            return callback(8419).BillingSettingsBanner;
           }
     };
     obj = { no: 21, name: "shop_nagbar", kind: "message", oneof: "properties", T: null };
@@ -199,7 +199,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8407).AdminEditorTestComponent;
+            return callback(8421).AdminEditorTestComponent;
           }
     };
     items[20] = { no: 3, name: "content_identifier", kind: "scalar", T: 9 };

@@ -1,14 +1,14 @@
-// Module ID: 14659
-// Function ID: 14660
+// Module ID: 14641
+// Function ID: 14642
 // Name: RedoIcon
-// Dependencies: [19, 21, 712, 4164, 14660, 2]
+// Dependencies: [19, 21, 712, 4165, 14642, 2]
 // Exports: RedoIcon
 
-// Module 14659 (RedoIcon)
+// Module 14641 (RedoIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14660 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 14642 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

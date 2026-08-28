@@ -1,22 +1,22 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 15617
+// Function ID: 15618
 // Name: getFriendInviteCode
-// Dependencies: [5, 19, 17, 676, 21, 12833, 712, 4445, 8580, 4161, 1236, 9829, 7436, 4300, 5020, 4441, 13507, 15600, 2]
+// Dependencies: [5, 19, 17, 676, 21, 12852, 712, 4446, 8595, 4162, 1236, 9847, 7450, 4301, 5033, 4442, 13526, 15618, 2]
 
-// Module 15599 (getFriendInviteCode)
+// Module 15617 (getFriendInviteCode)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import PressableBase from "PressableBase" /* 5020 */;
-import ButtonBadgeDefault from "ButtonBadge" /* 12833 */;
-import registerAssetDefault from "registerAsset" /* 13507 */;
-import registerAssetDefault2 from "registerAsset" /* 15600 */;
+import Text from "Text" /* 4442 */;
+import PressableBase from "PressableBase" /* 5033 */;
+import ButtonBadgeDefault from "ButtonBadge" /* 12852 */;
+import registerAssetDefault from "registerAsset" /* 13526 */;
+import registerAssetDefault2 from "registerAsset" /* 15618 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { InstantInviteSources } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function getFriendInviteCode() {
@@ -70,7 +70,7 @@ function _getFriendInviteCode() {
           }
         } else if (1 === tmp7) {
           c3 = 0;
-          let obj2 = code(4161);
+          let obj2 = code(4162);
           const intl = code(1236).intl;
           obj2.presentError(intl.string(code(1236).t.R0RpRX));
           c5 = 3;
@@ -172,10 +172,10 @@ function _handleShare() {
           return obj;
         } else {
           callback = arg1;
-          const obj5 = callback(9829);
+          const obj5 = callback(9847);
           const intl = callback(1236).intl;
           const obj2 = { link: null };
-          obj2[0] = callback2(7436)(callback);
+          obj2[0] = callback2(7450)(callback);
           obj5.handleOpenShareSheet(callback, null, intl.formatToPlainString(callback(1236).t.PJf9P9, obj2), constants.ADD_FRIENDS_WIDGET);
           c3 = 3;
           return { value: "HermesInternal", done: null };

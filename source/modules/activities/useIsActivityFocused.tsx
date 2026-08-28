@@ -1,12 +1,12 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9468
+// Function ID: 9469
 // Name: useIsActivityFocused
-// Dependencies: [4461, 1390, 9411, 589, 2]
+// Dependencies: [4462, 1390, 9429, 589, 2]
 // Exports: default, isActivityFocused
 
-// Module 9450 (useIsActivityFocused)
-import sortKey from "sortKey" /* 9411 */;
-import closure_2 from "getParticipants" /* 4461 */;
+// Module 9468 (useIsActivityFocused)
+import sortKey from "sortKey" /* 9429 */;
+import closure_2 from "getParticipants" /* 4462 */;
 import closure_3 from "participantFromServer" /* 1390 */;
 
 require = arg1;

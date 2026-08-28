@@ -1,12 +1,12 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11489
+// Function ID: 11490
 // Name: useTypingText
-// Dependencies: [32, 1922, 589, 4638, 1236, 2]
+// Dependencies: [32, 1923, 589, 4639, 1236, 2]
 // Exports: default
 
-// Module 11470 (useTypingText)
+// Module 11489 (useTypingText)
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/chat/useTypingText.tsx");

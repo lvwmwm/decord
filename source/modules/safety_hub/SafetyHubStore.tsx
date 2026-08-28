@@ -1,15 +1,15 @@
-// Module ID: 11368
-// Function ID: 11369
+// Module ID: 11387
+// Function ID: 11388
 // Name: handleSafetyHubRequestAgeVerificationResetModalAction
-// Dependencies: [8621, 8622, 11369, 589, 709, 2]
+// Dependencies: [8636, 8637, 11388, 589, 709, 2]
 
-// Module 11368 (handleSafetyHubRequestAgeVerificationResetModalAction)
+// Module 11387 (handleSafetyHubRequestAgeVerificationResetModalAction)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import ContentIdType from "ContentIdType" /* 8622 */;
-import createAggregatorDefault from "createAggregator" /* 11369 */;
-import SafetyHubView from "SafetyHubView" /* 8621 */;
+import ContentIdType from "ContentIdType" /* 8637 */;
+import createAggregatorDefault from "createAggregator" /* 11388 */;
+import SafetyHubView from "SafetyHubView" /* 8636 */;
 
 function handleSafetyHubRequestAgeVerificationResetModalAction(arg0) {
   if (arg0 == null) {

@@ -1,23 +1,23 @@
-// Module ID: 16947
-// Function ID: 16948
+// Module ID: 16965
+// Function ID: 16966
 // Name: haveNotSeenPromptSince
-// Dependencies: [5, 17, 4091, 1218, 1391, 4654, 11892, 11893, 676, 4683, 4412, 16948, 2009, 503, 4043, 11895, 10088, 698, 500, 5438, 15027, 691, 2]
+// Dependencies: [5, 17, 4092, 1218, 1391, 4667, 11911, 11912, 676, 4696, 4413, 16966, 2010, 503, 4044, 11914, 10106, 698, 500, 5451, 15013, 691, 2]
 
-// Module 16947 (haveNotSeenPromptSince)
-import hooksDefault from "hooks" /* 4043 */;
-import initializeDefault from "initialize" /* 5438 */;
-import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken" /* 11895 */;
+// Module 16965 (haveNotSeenPromptSince)
+import hooksDefault from "hooks" /* 4044 */;
+import initializeDefault from "initialize" /* 5451 */;
+import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken" /* 11914 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "storeThread" /* 4091 */;
+import closure_5 from "storeThread" /* 4092 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4654 */;
-import closure_9 from "set" /* 11892 */;
-import { PermissionPromptType } from "set" /* 11892 */;
-import EventActionType from "EventActionType" /* 11893 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4667 */;
+import closure_9 from "set" /* 11911 */;
+import { PermissionPromptType } from "set" /* 11911 */;
+import EventActionType from "EventActionType" /* 11912 */;
 import ME from "ME" /* 676 */;
-import { NotificationAuthorizationStatus as closure_16 } from "NativePermissionStatus" /* 4683 */;
+import { NotificationAuthorizationStatus as closure_16 } from "NativePermissionStatus" /* 4696 */;
 
 require = arg1;
 function haveNotSeenPromptSince(arg0, arg1) {
@@ -188,8 +188,8 @@ function _logNotificationPermissionStatus2() {
           return obj;
         } else {
           callback = arg1;
-          callback2 = callback(10088).allowInAppNotifications();
-          const obj5 = callback(10088);
+          callback2 = callback(10106).allowInAppNotifications();
+          const obj5 = callback(10106);
           const obj2 = { os_enabled: null, foreground_app_enabled: null, background_app_enabled: null, notification_authorization_status: null };
           obj2[0] = callback === constants2.AUTHORIZED;
           obj2[1] = callback2;

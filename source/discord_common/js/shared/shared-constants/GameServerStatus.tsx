@@ -1,9 +1,9 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 11983
+// Function ID: 11984
 // Name: GameServerStatus
 // Dependencies: [2]
 
-// Module 11964 (GameServerStatus)
+// Module 11983 (GameServerStatus)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameServerStatus.tsx");

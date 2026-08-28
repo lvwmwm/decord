@@ -1,11 +1,11 @@
-// Module ID: 17386
-// Function ID: 17387
+// Module ID: 17404
+// Function ID: 17405
 // Name: AccountLinkManagerNative
-// Dependencies: [16433, 4410, 2]
+// Dependencies: [16451, 4411, 2]
 
-// Module 17386 (AccountLinkManagerNative)
+// Module 17404 (AccountLinkManagerNative)
 import set from "set" /* 2 */;
-import _claimIncentivizedAccountLinkingReward from "_claimIncentivizedAccountLinkingReward" /* 16433 */;
+import _claimIncentivizedAccountLinkingReward from "_claimIncentivizedAccountLinkingReward" /* 16451 */;
 
 const AccountLinkManager = _claimIncentivizedAccountLinkingReward.AccountLinkManager;
 class AccountLinkManagerNative extends AccountLinkManager {

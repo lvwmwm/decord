@@ -1,14 +1,14 @@
-// Module ID: 6257
-// Function ID: 6258
+// Module ID: 6270
+// Function ID: 6271
 // Name: AnimatedBannersAbstractUI
-// Dependencies: [21, 5445, 6258, 2]
+// Dependencies: [21, 5458, 6271, 2]
 // Exports: AnimatedBannersAbstractUI
 
-// Module 6257 (AnimatedBannersAbstractUI)
+// Module 6270 (AnimatedBannersAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6258 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6271 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AnimatedBannersAbstractUI.native.tsx");

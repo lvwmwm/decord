@@ -1,11 +1,11 @@
-// Module ID: 12136
-// Function ID: 12137
+// Module ID: 12155
+// Function ID: 12156
 // Name: _updateDiscoverability
-// Dependencies: [5, 5177, 676, 4134, 1403, 698, 12132, 5302, 2]
+// Dependencies: [5, 5190, 676, 4135, 1403, 698, 12151, 5315, 2]
 
-// Module 12136 (_updateDiscoverability)
+// Module 12155 (_updateDiscoverability)
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5177 */;
+import closure_4 from "set" /* 5190 */;
 import ME from "ME" /* 676 */;
 
 let closure_0 = arg1;
@@ -99,7 +99,7 @@ function _updateDiscoverability() {
               dependencyMap = obj1.hasFlag(dependencyMap, constants2.FIND_BY_EMAIL);
             }
             obj3[2] = dependencyMap;
-            obj2 = phone(12132);
+            obj2 = phone(12151);
             obj3[3] = obj2.isContactSyncEnabled(localAccount.getLocalAccount(constants3.CONTACTS));
             callback2(698).track(constants.USER_DISCOVERY_UPDATED, obj3);
             constants2 = 3;

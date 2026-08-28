@@ -1,11 +1,11 @@
-// Module ID: 13375
-// Function ID: 13376
+// Module ID: 13394
+// Function ID: 13395
 // Name: setUserID
-// Dependencies: [4547, 3, 4329, 2]
+// Dependencies: [4548, 3, 4330, 2]
 
-// Module 13375 (setUserID)
+// Module 13394 (setUserID)
 import timestampDefault from "timestamp" /* 3 */;
-import onDefault from "on" /* 4547 */;
+import onDefault from "on" /* 4548 */;
 
 const require = arg1;
 let obj = { RequestedSSRCsUpdate: "requested-ssrcs-update", RequestedStreamsUpdate: "requested-streams-update" };

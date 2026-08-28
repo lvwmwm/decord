@@ -1,9 +1,9 @@
-// Module ID: 17433
-// Function ID: 17434
+// Module ID: 17451
+// Function ID: 17452
 // Name: promise
-// Dependencies: [17, 17425, 8580, 7436, 2]
+// Dependencies: [17, 17443, 8595, 7450, 2]
 
-// Module 17433 (promise)
+// Module 17451 (promise)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

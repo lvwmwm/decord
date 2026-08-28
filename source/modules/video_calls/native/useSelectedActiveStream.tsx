@@ -1,12 +1,12 @@
-// Module ID: 13361
-// Function ID: 13362
+// Module ID: 13380
+// Function ID: 13381
 // Name: useSelectedActiveStream
-// Dependencies: [4461, 4467, 589, 2]
+// Dependencies: [4462, 4468, 589, 2]
 // Exports: default
 
-// Module 13361 (useSelectedActiveStream)
-import closure_2 from "getParticipants" /* 4461 */;
-import closure_3 from "reset" /* 4467 */;
+// Module 13380 (useSelectedActiveStream)
+import closure_2 from "getParticipants" /* 4462 */;
+import closure_3 from "reset" /* 4468 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/native/useSelectedActiveStream.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11744
-// Function ID: 11745
+// Module ID: 11763
+// Function ID: 11764
 // Name: getChatInputPositionStyle
 // Dependencies: [17, 500, 2]
 // Exports: default
 
-// Module 11744 (getChatInputPositionStyle)
+// Module 11763 (getChatInputPositionStyle)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set2 from "set" /* 500 */;

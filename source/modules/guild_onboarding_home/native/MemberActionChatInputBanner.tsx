@@ -1,24 +1,24 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11790
+// Function ID: 11791
 // Name: ActionChannelInfo
-// Dependencies: [32, 19, 17, 4437, 5353, 1391, 1992, 676, 1925, 21, 4445, 712, 647, 4639, 4441, 1236, 1297, 11291, 5445, 1435, 4102, 11772, 11769, 4185, 4446, 11773, 5020, 1222, 11770, 6021, 2]
+// Dependencies: [32, 19, 17, 4438, 5366, 1391, 1993, 676, 1926, 21, 4446, 712, 647, 4640, 4442, 1236, 1297, 11310, 5458, 1435, 4103, 11791, 11788, 4186, 4447, 11792, 5033, 1222, 11789, 6034, 2]
 
-// Module 11771 (ActionChannelInfo)
+// Module 11790 (ActionChannelInfo)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 11291 */;
-import newMemberActionFromServer from "newMemberActionFromServer" /* 11769 */;
-import useMemberActionsForChannel from "useMemberActionsForChannel" /* 11772 */;
+import registerAssetDefault from "registerAsset" /* 11310 */;
+import newMemberActionFromServer from "newMemberActionFromServer" /* 11788 */;
+import useMemberActionsForChannel from "useMemberActionsForChannel" /* 11791 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_7 from "getEmojiToGroupId" /* 5353 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_7 from "getEmojiToGroupId" /* 5366 */;
 import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "trackCommunicationDisabled" /* 1992 */;
+import closure_9 from "trackCommunicationDisabled" /* 1993 */;
 import { Routes } from "ME" /* 676 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1926 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function ActionChannelInfo(action) {
@@ -41,7 +41,7 @@ function ActionChannelInfo(action) {
     obj2[0] = tmp4;
     obj1[2] = intl.format(tmp(1236).t.MkzlDL, obj2);
   }
-  return closure_12(action(4441).Text, obj1);
+  return closure_12(action(4442).Text, obj1);
 }
 function ChannelActionEmoji(emoji) {
   emoji = emoji.emoji;
@@ -71,7 +71,7 @@ function ChannelActionEmoji(emoji) {
     obj = { style: null, source: null, resizeMode: "contain" };
     obj[0] = tmp.emoji;
     obj1 = { uri: null };
-    let tmp5Result = tmp5(5445);
+    let tmp5Result = tmp5(5458);
     tmp5Result = tmp5(1435);
     const obj2 = { id: null, animated: null, size: null };
     ({ id: obj10[0], animated: obj10[1] } = stateFromStores);
@@ -82,15 +82,15 @@ function ChannelActionEmoji(emoji) {
   } else {
     tmp2Result = tmp6;
     if (null != name) {
-      const tmp5Result1 = tmp5(4102);
+      const tmp5Result1 = tmp5(4103);
       tmp2Result = tmp6;
       if (null != tmp5Result1.getByName(tmp5Result2.convertSurrogateToName(name, false))) {
         const obj3 = { style: null, variant: "heading-lg/normal", children: null };
         obj3[0] = tmp.textEmoji;
         obj3[2] = name;
-        tmp2Result = tmp2(tmp3(4441).Text, obj3);
+        tmp2Result = tmp2(tmp3(4442).Text, obj3);
       }
-      tmp5Result2 = tmp5(4102);
+      tmp5Result2 = tmp5(4103);
     }
   }
   return tmp2Result;
@@ -375,7 +375,7 @@ let closure_18 = { code: "function MemberActionChatInputBannerTsx1(){const{useRe
 let closure_19 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  let obj = channel(6021);
+  let obj = channel(6034);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [closure_9];
   const stateFromStores = channel(647).useStateFromStores(items, () => {

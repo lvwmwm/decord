@@ -1,9 +1,9 @@
-// Module ID: 5322
-// Function ID: 5323
+// Module ID: 5335
+// Function ID: 5336
 // Name: acknowledge
-// Dependencies: [4329, 12, 2]
+// Dependencies: [4330, 12, 2]
 
-// Module 5322 (acknowledge)
+// Module 5335 (acknowledge)
 import set3 from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 

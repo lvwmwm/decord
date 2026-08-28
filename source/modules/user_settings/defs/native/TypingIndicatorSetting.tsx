@@ -1,18 +1,19 @@
-// Module ID: 14899
-// Function ID: 14900
+// Module ID: 14884
+// Function ID: 14885
 // Name: dismissiblePremiumNewBadgeRouteProps
-// Dependencies: [676, 14900, 1377, 10988, 1236, 3471, 14902, 11458, 14904, 2]
+// Dependencies: [676, 14885, 1377, 11006, 1236, 3472, 14887, 11477, 14889, 14938, 2]
 
-// Module 14899 (dismissiblePremiumNewBadgeRouteProps)
+// Module 14884 (dismissiblePremiumNewBadgeRouteProps)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import messagesProxyDefault from "messagesProxy" /* 3471 */;
-import apexExperiment from "apexExperiment" /* 11458 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 14902 */;
-import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps" /* 14900 */;
-import createToggle from "createToggle" /* 10988 */;
+import messagesProxyDefault from "messagesProxy" /* 3472 */;
+import apexExperiment from "apexExperiment" /* 11477 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 14887 */;
+import SettingsBadgeType from "SettingsBadgeType" /* 14938 */;
+import createDismissiblePremiumNewBadgeRouteProps from "createDismissiblePremiumNewBadgeRouteProps" /* 14885 */;
+import createToggle from "createToggle" /* 11006 */;
 
 const dismissiblePremiumNewBadgeRouteProps = createDismissiblePremiumNewBadgeRouteProps.createDismissiblePremiumNewBadgeRouteProps(DismissibleContent.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE);
 ({ useTrailing, usePreNavigationAction } = dismissiblePremiumNewBadgeRouteProps);
@@ -33,7 +34,10 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.TYPING_INDICATOR,
   getComponent() {
-    return require(14904) /* CustomTypingIndicatorEditScreen */.default;
+    return require(14889) /* CustomTypingIndicatorEditScreen */.default;
+  },
+  usePersistentBadge() {
+    return { badgeType: SettingsBadgeType.SettingsBadgeType.BETA };
   }
 };
 const route = createToggle.createRoute(obj);

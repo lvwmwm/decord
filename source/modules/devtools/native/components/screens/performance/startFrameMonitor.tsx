@@ -1,10 +1,10 @@
-// Module ID: 15421
-// Function ID: 15422
+// Module ID: 15263
+// Function ID: 15264
 // Name: FRAME_BUDGET_MS
 // Dependencies: [2]
 // Exports: startFrameMonitor
 
-// Module 15421 (FRAME_BUDGET_MS)
+// Module 15263 (FRAME_BUDGET_MS)
 import set from "set" /* 2 */;
 
 let c0 = 16.666666666666668;

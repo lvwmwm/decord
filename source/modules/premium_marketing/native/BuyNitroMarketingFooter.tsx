@@ -1,18 +1,18 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 13002
+// Function ID: 13003
 // Name: BuyNitroMarketingFooter
-// Dependencies: [17, 21, 4445, 712, 5604, 12962, 5925, 2]
+// Dependencies: [17, 21, 4446, 712, 5617, 12981, 5938, 2]
 // Exports: default
 
-// Module 12983 (BuyNitroMarketingFooter)
+// Module 13002 (BuyNitroMarketingFooter)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5604 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5925 */;
-import BuyNitroPurchaseButtonDefault from "BuyNitroPurchaseButton" /* 12962 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5617 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5938 */;
+import BuyNitroPurchaseButtonDefault from "BuyNitroPurchaseButton" /* 12981 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 ({ Platform, View: c3 } = get_ActivityIndicator);
 const jsx = jsxProd.jsx;

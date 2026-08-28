@@ -1,17 +1,17 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 8995
+// Function ID: 8996
 // Name: BotUserProfileOverflowMenu
-// Dependencies: [19, 1391, 4098, 1981, 1922, 676, 8978, 21, 589, 8979, 8490, 5905, 5925, 8819, 1236, 8980, 4412, 8989, 2009, 503, 8606, 8990, 8991, 8991, 500, 8992, 698, 5933, 4289, 4161, 8368, 8077, 9005, 4134, 9006, 8717, 7938, 8723, 712, 2]
+// Dependencies: [19, 1391, 4099, 1982, 1923, 676, 8996, 21, 589, 8997, 8504, 5918, 5938, 8836, 1236, 8998, 4413, 9007, 2010, 503, 8621, 9008, 9009, 9009, 500, 9010, 698, 5946, 4290, 4162, 8382, 8091, 9023, 4135, 9024, 8733, 7952, 8739, 712, 2]
 // Exports: default
 
-// Module 8977 (BotUserProfileOverflowMenu)
+// Module 8995 (BotUserProfileOverflowMenu)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "markAllUserIdListsStale" /* 4098 */;
-import closure_6 from "handleConnectionOpen" /* 1981 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "markAllUserIdListsStale" /* 4099 */;
+import closure_6 from "handleConnectionOpen" /* 1982 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8978 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8996 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

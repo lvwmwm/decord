@@ -1,10 +1,10 @@
-// Module ID: 7392
-// Function ID: 7393
+// Module ID: 7406
+// Function ID: 7407
 // Name: videoAssetFromServer
 // Dependencies: [2]
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer, videoAssetFromServer
 
-// Module 7392 (videoAssetFromServer)
+// Module 7406 (videoAssetFromServer)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/quests/types/v2/Video.tsx");

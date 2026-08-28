@@ -1,16 +1,16 @@
-// Module ID: 16780
-// Function ID: 16781
+// Module ID: 16798
+// Function ID: 16799
 // Name: CaptchaManager
-// Dependencies: [19, 17, 1996, 1302, 676, 21, 698, 7280, 7285, 589, 514, 585, 16781, 10834, 4676, 16782, 2009, 2]
+// Dependencies: [19, 17, 1997, 1302, 676, 21, 698, 7294, 7299, 589, 514, 585, 16799, 10852, 4689, 16800, 2010, 2]
 // Exports: InlineHcaptcha
 
-// Module 16780 (CaptchaManager)
+// Module 16798 (CaptchaManager)
 import convertStringArrayToSkemaErrorItems from "convertStringArrayToSkemaErrorItems" /* 585 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import siteKeyDefault from "siteKey" /* 16781 */;
+import siteKeyDefault from "siteKey" /* 16799 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_getSystemLocale" /* 1996 */;
+import closure_5 from "_getSystemLocale" /* 1997 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;

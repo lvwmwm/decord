@@ -1,14 +1,14 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 16382
+// Function ID: 16383
 // Name: OAUTH2_AUTHORIZE_MODAL_KEY
-// Dependencies: [676, 9199, 8566, 4680, 2]
+// Dependencies: [676, 9217, 8581, 4693, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 16364 (OAUTH2_AUTHORIZE_MODAL_KEY)
+// Module 16382 (OAUTH2_AUTHORIZE_MODAL_KEY)
 import ME from "ME" /* 676 */;
-import openChannelCallModal from "openChannelCallModal" /* 4680 */;
-import SHARE_PREPARING_MODAL_KEY from "SHARE_PREPARING_MODAL_KEY" /* 8566 */;
-import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9199 */;
+import openChannelCallModal from "openChannelCallModal" /* 4693 */;
+import SHARE_PREPARING_MODAL_KEY from "SHARE_PREPARING_MODAL_KEY" /* 8581 */;
+import OAUTH2_AUTHORIZE_MODAL_KEY from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9217 */;
 import set from "set" /* 2 */;
 
 ({ OAUTH2_AUTHORIZE_MODAL_KEY, OAUTH2_ERROR_RESULT_MODAL_KEY, OAUTH2_SUCCESS_RESULT_MODAL_KEY } = OAUTH2_AUTHORIZE_MODAL_KEY);

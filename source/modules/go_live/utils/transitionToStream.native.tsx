@@ -1,13 +1,13 @@
-// Module ID: 4675
-// Function ID: 4676
+// Module ID: 4688
+// Function ID: 4689
 // Name: transitionToStream
-// Dependencies: [1391, 4412, 4676, 4680, 2]
+// Dependencies: [1391, 4413, 4689, 4693, 2]
 // Exports: default
 
-// Module 4675 (transitionToStream)
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4412 */;
-import _modDef4676 from "module_4676" /* 4676 */;
-import openChannelCallModal from "openChannelCallModal" /* 4680 */;
+// Module 4688 (transitionToStream)
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
+import _modDef4689 from "module_4689" /* 4689 */;
+import openChannelCallModal from "openChannelCallModal" /* 4693 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 require = arg1;
@@ -18,8 +18,8 @@ export default function transitionToStream(channelId) {
   if (null != channel) {
     ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet();
     const obj = ACTION_SHEET_HEIGHT_HALFDefault;
-    _modDef4676.popAll();
-    const obj2 = _modDef4676;
+    _modDef4689.popAll();
+    const obj2 = _modDef4689;
     openChannelCallModal.openGuildVoiceModal(channel, "Go Live");
     const obj3 = openChannelCallModal;
   }

@@ -1,14 +1,14 @@
-// Module ID: 12013
-// Function ID: 12014
+// Module ID: 12032
+// Function ID: 12033
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 4331, 4332, 589, 11978, 1236, 2401, 2]
+// Dependencies: [19, 4332, 4333, 589, 11997, 1236, 2402, 2]
 // Exports: default
 
-// Module 12013 (useCanGuildPowerupBeToggled)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11978 */;
+// Module 12032 (useCanGuildPowerupBeToggled)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 11997 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "calculateAppliedBoosts" /* 4331 */;
-import { PowerupActiveStatusType } from "BoostedGuildTiers" /* 4332 */;
+import closure_4 from "calculateAppliedBoosts" /* 4332 */;
+import { PowerupActiveStatusType } from "BoostedGuildTiers" /* 4333 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useCanGuildPowerupBeToggled.tsx");
@@ -58,7 +58,7 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
           if (null != found1) {
             if (null != allPowerups[found1]) {
               const intl = callback(1236).intl;
-              const tmp11 = lib(2401);
+              const tmp11 = lib(2402);
               let title;
               if (allPowerups[found1] != null) {
                 title = tmp13.title;

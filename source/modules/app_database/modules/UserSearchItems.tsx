@@ -1,16 +1,16 @@
-// Module ID: 7335
-// Function ID: 7336
+// Module ID: 7349
+// Function ID: 7350
 // Name: getAll
-// Dependencies: [5, 7336, 7337, 4098, 1922, 676, 3, 1956, 7339, 2]
+// Dependencies: [5, 7350, 7351, 4099, 1923, 676, 3, 1957, 7353, 2]
 
-// Module 7335 (getAll)
+// Module 7349 (getAll)
 import timestampDefault from "timestamp" /* 3 */;
-import itemsDefault from "items" /* 1956 */;
+import itemsDefault from "items" /* 1957 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "recountRelationshipTypes" /* 7336 */;
-import closure_5 from "recomputeAffinities" /* 7337 */;
-import closure_6 from "markAllUserIdListsStale" /* 4098 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "recountRelationshipTypes" /* 7350 */;
+import closure_5 from "recomputeAffinities" /* 7351 */;
+import closure_6 from "markAllUserIdListsStale" /* 4099 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -132,7 +132,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     if (null != user) {
       let tmp14 = set;
       let tmp15 = dependencyMap;
-      let obj5 = set(7339);
+      let obj5 = set(7353);
       let tmp16 = user;
       let names = obj5.getNames(tmp6);
       let tmp18 = nextResult;
@@ -167,7 +167,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
     if (null != user1) {
       let tmp22 = set;
       let tmp23 = dependencyMap;
-      let obj7 = set(7339);
+      let obj7 = set(7353);
       let tmp24 = user1;
       let names1 = obj7.getNames(tmp11);
       let tmp26 = item10033;

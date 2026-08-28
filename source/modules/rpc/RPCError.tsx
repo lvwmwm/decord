@@ -1,11 +1,11 @@
-// Module ID: 9424
-// Function ID: 9425
+// Module ID: 9442
+// Function ID: 9443
 // Name: prototype
-// Dependencies: [2, 9425]
+// Dependencies: [2, 9443]
 
-// Module 9424 (prototype)
+// Module 9442 (prototype)
 import set from "set" /* 2 */;
-import prototype from "prototype" /* 9425 */;
+import prototype from "prototype" /* 9443 */;
 
 const result = set.fileFinishedImporting("modules/rpc/RPCError.tsx");
 

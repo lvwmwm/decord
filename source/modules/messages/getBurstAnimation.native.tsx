@@ -1,90 +1,20 @@
-// Module ID: 7462
-// Function ID: 7463
+// Module ID: 7476
+// Function ID: 7477
 // Name: items
-// Dependencies: [5, 7463, 7464, 7465, 7466, 7467, 7468, 7469, 7470, 7471, 7472, 7473, 7474, 7475, 7476, 7477, 7478, 7479, 7480, 7481, 7482, 7483, 7484, 7485, 7486, 7487, 7488, 7489, 7490, 7491, 7492, 7493, 7494, 7495, 7496, 7497, 7498, 7499, 2]
+// Dependencies: [5, 7477, 7478, 7479, 7480, 7481, 7482, 7483, 7484, 7485, 7486, 7487, 7488, 7489, 7490, 7491, 7492, 7493, 7494, 7495, 7496, 7497, 7498, 7499, 7500, 7501, 7502, 7503, 7504, 7505, 7506, 7507, 7508, 7509, 7510, 7511, 7512, 7513, 2]
 // Exports: getBurstAnimation
 
-// Module 7462 (items)
+// Module 7476 (items)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7463);
+    return callback(7477);
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return callback(7464);
-    }
-  },
-  {
-    load() {
-      return callback(7465);
-    }
-  },
-  {
-    load() {
-      return callback(7466);
-    }
-  },
-  {
-    load() {
-      return callback(7467);
-    }
-  },
-  {
-    load() {
-      return callback(7468);
-    }
-  },
-  {
-    load() {
-      return callback(7469);
-    }
-  },
-  {
-    load() {
-      return callback(7470);
-    }
-  },
-  {
-    load() {
-      return callback(7471);
-    }
-  },
-  {
-    load() {
-      return callback(7472);
-    }
-  },
-  {
-    load() {
-      return callback(7473);
-    }
-  },
-  {
-    load() {
-      return callback(7474);
-    }
-  },
-  {
-    load() {
-      return callback(7475);
-    }
-  },
-  {
-    load() {
-      return callback(7476);
-    }
-  },
-  {
-    load() {
-      return callback(7477);
-    }
-  },
   {
     load() {
       return callback(7478);
@@ -99,15 +29,12 @@ const items = [
     load() {
       return callback(7480);
     }
-  }
-];
-obj = {
-  load() {
-    return callback(7481);
-  }
-};
-const items1 = [
-  obj,
+  },
+  {
+    load() {
+      return callback(7481);
+    }
+  },
   {
     load() {
       return callback(7482);
@@ -172,12 +99,15 @@ const items1 = [
     load() {
       return callback(7494);
     }
-  },
-  {
-    load() {
-      return callback(7495);
-    }
-  },
+  }
+];
+obj = {
+  load() {
+    return callback(7495);
+  }
+};
+const items1 = [
+  obj,
   {
     load() {
       return callback(7496);
@@ -191,6 +121,76 @@ const items1 = [
   {
     load() {
       return callback(7498);
+    }
+  },
+  {
+    load() {
+      return callback(7499);
+    }
+  },
+  {
+    load() {
+      return callback(7500);
+    }
+  },
+  {
+    load() {
+      return callback(7501);
+    }
+  },
+  {
+    load() {
+      return callback(7502);
+    }
+  },
+  {
+    load() {
+      return callback(7503);
+    }
+  },
+  {
+    load() {
+      return callback(7504);
+    }
+  },
+  {
+    load() {
+      return callback(7505);
+    }
+  },
+  {
+    load() {
+      return callback(7506);
+    }
+  },
+  {
+    load() {
+      return callback(7507);
+    }
+  },
+  {
+    load() {
+      return callback(7508);
+    }
+  },
+  {
+    load() {
+      return callback(7509);
+    }
+  },
+  {
+    load() {
+      return callback(7510);
+    }
+  },
+  {
+    load() {
+      return callback(7511);
+    }
+  },
+  {
+    load() {
+      return callback(7512);
     }
   }
 ];

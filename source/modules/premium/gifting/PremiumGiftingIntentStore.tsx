@@ -1,21 +1,21 @@
-// Module ID: 7919
-// Function ID: 7920
+// Module ID: 7933
+// Function ID: 7934
 // Name: getCurrentTime
-// Dependencies: [4358, 1212, 7337, 1340, 6006, 4098, 676, 7920, 4134, 7921, 12, 589, 709, 2]
+// Dependencies: [4359, 1212, 7351, 1340, 6019, 4099, 676, 7934, 4135, 7935, 12, 589, 709, 2]
 
-// Module 7919 (getCurrentTime)
+// Module 7933 (getCurrentTime)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS from "FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS" /* 7920 */;
-import getFriendAnniversaryGateConfig from "getFriendAnniversaryGateConfig" /* 7921 */;
-import closure_3 from "getHash" /* 4358 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
+import FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS from "FRIEND_ANNIVERSARY_ELIGIBILITY_WINDOW_DAYS" /* 7934 */;
+import getFriendAnniversaryGateConfig from "getFriendAnniversaryGateConfig" /* 7935 */;
+import closure_3 from "getHash" /* 4359 */;
 import closure_4 from "initialize" /* 1212 */;
-import closure_5 from "recomputeAffinities" /* 7337 */;
+import closure_5 from "recomputeAffinities" /* 7351 */;
 import closure_6 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_7 from "hasConsented" /* 6006 */;
-import closure_8 from "markAllUserIdListsStale" /* 4098 */;
+import closure_7 from "hasConsented" /* 6019 */;
+import closure_8 from "markAllUserIdListsStale" /* 4099 */;
 import { Consents } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -123,7 +123,7 @@ function generateFriendAnniversaries(c15) {
   highAffinity = dependencyMap;
   set1 = new Set();
   if (obj2.getFriendAnniversaryGateConfig({ location: "PremiumGiftingIntentStore generateFriendAnniversaries" }).enabled) {
-    const EnableFriendAnniversaryNotifications = highestAffinity(4134).EnableFriendAnniversaryNotifications;
+    const EnableFriendAnniversaryNotifications = highestAffinity(4135).EnableFriendAnniversaryNotifications;
     if (EnableFriendAnniversaryNotifications.getSetting()) {
       closure_15 = c15;
       const friendIDs = store.getFriendIDs();
@@ -145,7 +145,7 @@ function generateFriendAnniversaries(c15) {
             }
           });
           const sorted = obj.sort((arg0, arg1) => closure_5.compareByDmProbability(arg0, arg1));
-          const result = highestAffinity(7920).categorizeFriendAnniversariesByAffinity(obj, (userId) => {
+          const result = highestAffinity(7934).categorizeFriendAnniversariesByAffinity(obj, (userId) => {
             const userAffinity = closure_5.getUserAffinity(userId);
             let dmProbability;
             if (userAffinity != null) {
@@ -154,7 +154,7 @@ function generateFriendAnniversaries(c15) {
             return dmProbability;
           }, true);
           ({ highestAffinity, highAffinity } = result);
-          const highestAffinityResult = highestAffinity(7920);
+          const highestAffinityResult = highestAffinity(7934);
         }
         sampleSizeResult = _null;
       }

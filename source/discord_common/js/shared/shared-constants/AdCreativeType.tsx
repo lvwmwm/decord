@@ -1,9 +1,9 @@
-// Module ID: 7379
-// Function ID: 7380
+// Module ID: 7393
+// Function ID: 7394
 // Name: AdCreativeType
 // Dependencies: [2]
 
-// Module 7379 (AdCreativeType)
+// Module 7393 (AdCreativeType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AdCreativeType.tsx");

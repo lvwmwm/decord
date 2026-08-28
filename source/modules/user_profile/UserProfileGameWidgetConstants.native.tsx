@@ -1,16 +1,16 @@
-// Module ID: 12568
-// Function ID: 12569
+// Module ID: 12587
+// Function ID: 12588
 // Name: widgetGameTagMetadata
-// Dependencies: [12569, 12570, 12572, 12574, 4163, 2]
+// Dependencies: [12588, 12589, 12591, 12593, 4164, 2]
 // Exports: getWidgetGameTagMetadata
 
-// Module 12568 (widgetGameTagMetadata)
+// Module 12587 (widgetGameTagMetadata)
 import set from "set" /* 2 */;
-import FriendsIcon from "FriendsIcon" /* 4163 */;
-import RibbonIcon from "RibbonIcon" /* 12570 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 12572 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 12574 */;
-import WidgetGameTagIconRole from "WidgetGameTagIconRole" /* 12569 */;
+import FriendsIcon from "FriendsIcon" /* 4164 */;
+import RibbonIcon from "RibbonIcon" /* 12589 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 12591 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 12593 */;
+import WidgetGameTagIconRole from "WidgetGameTagIconRole" /* 12588 */;
 
 const obj = {};
 obj[WidgetGameTagIconRole.WidgetGameTagIconRole.RIBBON] = RibbonIcon.RibbonIcon;

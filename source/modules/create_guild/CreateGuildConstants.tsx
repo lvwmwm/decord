@@ -1,14 +1,14 @@
-// Module ID: 12159
-// Function ID: 12160
+// Module ID: 12178
+// Function ID: 12179
 // Name: GuildTemplateId
-// Dependencies: [676, 1236, 4094, 506, 2]
+// Dependencies: [676, 1236, 4095, 506, 2]
 // Exports: getGuildTemplatesMap
 
-// Module 12159 (GuildTemplateId)
+// Module 12178 (GuildTemplateId)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 506 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import applyOverwritesAll from "applyOverwrites" /* 4094 */;
+import applyOverwritesAll from "applyOverwrites" /* 4095 */;
 import ME from "ME" /* 676 */;
 
 ({ ChannelTypes: c3, Permissions: c4 } = ME);

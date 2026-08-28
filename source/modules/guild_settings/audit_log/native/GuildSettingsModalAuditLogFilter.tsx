@@ -1,19 +1,19 @@
-// Module ID: 17042
-// Function ID: 17043
+// Module ID: 17060
+// Function ID: 17061
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1922, 17033, 676, 21, 4445, 712, 1236, 4289, 17035, 1629, 1500, 5406, 17043, 10599, 7627, 5551, 1297, 10032, 17044, 6173, 8833, 8037, 5891, 2]
+// Dependencies: [32, 19, 17, 1923, 17051, 676, 21, 4446, 712, 1236, 4290, 17053, 1629, 1500, 5419, 17061, 10617, 7641, 5564, 1297, 10050, 17062, 6186, 8850, 8051, 5904, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 17042 (GuildSettingsModalAuditLogFilter)
+// Module 17060 (GuildSettingsModalAuditLogFilter)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "AuditLogActions" /* 17033 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import closure_7 from "AuditLogActions" /* 17051 */;
 import { AuditLogFilterTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
@@ -235,8 +235,8 @@ export const createAuditLogFilterUserData = function createAuditLogFilterUserDat
 };
 export const createAuditLogFilterActionData = function createAuditLogFilterActionData(closure_4) {
   const _require = closure_4;
-  const obj = _require(17035);
-  const mapped = _require(17035).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
+  const obj = _require(17053);
+  const mapped = _require(17053).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
   return mapped.sort((selected, selected2) => {
     let num = -1;
     if (!selected.selected) {

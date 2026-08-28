@@ -1,11 +1,11 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11786
+// Function ID: 11787
 // Name: getCurrentAndNextResourceChannel
-// Dependencies: [4660, 589, 2]
+// Dependencies: [4673, 589, 2]
 // Exports: default, usePreviousAndNextResourceChannel
 
-// Module 11767 (getCurrentAndNextResourceChannel)
-import closure_2 from "handleSettingsLoadSuccess" /* 4660 */;
+// Module 11786 (getCurrentAndNextResourceChannel)
+import closure_2 from "handleSettingsLoadSuccess" /* 4673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/getNextResourceChannel.tsx");

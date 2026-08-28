@@ -1,19 +1,19 @@
-// Module ID: 14205
-// Function ID: 14206
+// Module ID: 14175
+// Function ID: 14176
 // Name: EditUserProfileBanner
-// Dependencies: [19, 17, 8492, 8954, 5953, 676, 685, 14206, 21, 7694, 14207, 4107, 5905, 5925, 14208, 4412, 14209, 2009, 8009, 8006, 8008, 1236, 8462, 14220, 8004, 6185, 5546, 712, 9134, 14221, 8016, 11358, 8046, 8463, 11458, 8011, 8478, 14224, 8926, 589, 8495, 8460, 8464, 14225, 4441, 4172, 9140, 14226, 9007, 8844, 14231, 14232, 14237, 14241, 14243, 14244, 14248, 14252, 14257, 14258, 14261, 14262, 2]
+// Dependencies: [19, 17, 8506, 8972, 5966, 676, 685, 14176, 21, 7708, 14177, 4108, 5918, 5938, 14178, 4413, 14179, 2010, 8023, 8020, 8022, 1236, 8476, 14190, 8018, 6198, 5559, 712, 9152, 14191, 8030, 11377, 8060, 8477, 11477, 8025, 8492, 12431, 8944, 589, 8509, 8474, 8478, 14194, 4442, 4173, 9158, 14195, 9025, 8861, 14200, 14201, 14206, 14210, 14212, 14213, 14217, 14221, 14226, 14227, 14230, 14231, 2]
 // Exports: default
 
-// Module 14205 (EditUserProfileBanner)
-import registerAssetDefault from "registerAsset" /* 14207 */;
+// Module 14175 (EditUserProfileBanner)
+import registerAssetDefault from "registerAsset" /* 14177 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 8492 */;
-import closure_7 from "zustandStore" /* 8954 */;
-import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 5953 */;
+import closure_6 from "initialize" /* 8506 */;
+import closure_7 from "zustandStore" /* 8972 */;
+import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 5966 */;
 import ME from "ME" /* 676 */;
 import { ProfileCustomizationScrollPositions as closure_11 } from "MAX_FAVORITES" /* 685 */;
-import { UserProfileEditAutoFocusElement as closure_12 } from "UserProfileEditAutoFocusElement" /* 14206 */;
+import { UserProfileEditAutoFocusElement as closure_12 } from "UserProfileEditAutoFocusElement" /* 14176 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -74,7 +74,7 @@ function EditUserProfileBanner(user) {
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
 ({ DISPLAY_NAME_MAX_LENGTH: c9, PRONOUNS_MAX_LENGTH: c10 } = ME);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: registerAssetDefault, staticImageUri: registerAssetDefault, description: "", originalAsset: "call" };
+let obj = { assetOrigin: require("AssetOriginTypes").AssetOriginTypes.NEW_ASSET, imageUri: registerAssetDefault, staticImageUri: registerAssetDefault, description: "", originalAsset: "paddingHorizontal" };
 let result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 
 export default function UserProfileEditForm(currentUser) {
@@ -343,7 +343,7 @@ export default function UserProfileEditForm(currentUser) {
     tmp40Result = tmp40(tmp(tmp2[51]), obj19);
   }
   items14[2] = tmp40Result;
-  const obj20 = { inputRef: ref2, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, maxLength: null, isDisabled: null };
+  const obj20 = { inputRef: ref2, label: null, errorMessage: null, value: null, onFocus: null, onChange: null, maxLength: null, spellCheck: false, autoCorrect: false, isDisabled: null };
   const tmpResult4 = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[50]);
   const intl3 = tmp5(tmp2[21]).intl;
   obj20[1] = intl3.string(str(pendingBadgeHiddenBadges[21]).t["+T3RI/"]);
@@ -359,7 +359,7 @@ export default function UserProfileEditForm(currentUser) {
     return obj.setPendingChanges(obj);
   };
   obj20[6] = closure_10;
-  obj20[7] = isSubmitting;
+  obj20[9] = isSubmitting;
   items14[3] = callback(pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[50]), obj20);
   let tmp40Result1 = !isTryItOut;
   if (!isTryItOut) {

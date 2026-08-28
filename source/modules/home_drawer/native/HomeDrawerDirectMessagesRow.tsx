@@ -1,23 +1,23 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15831
+// Function ID: 15832
 // Name: HomeDrawerDMsRow
-// Dependencies: [19, 17, 4534, 4098, 676, 21, 4445, 712, 589, 4441, 1236, 15809, 4305, 4302, 2]
+// Dependencies: [19, 17, 4535, 4099, 676, 21, 4446, 712, 589, 4442, 1236, 15827, 4306, 4303, 2]
 // Exports: default
 
-// Module 15813 (HomeDrawerDMsRow)
+// Module 15831 (HomeDrawerDMsRow)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4305 */;
-import Text from "Text" /* 4441 */;
-import HomeDrawerSharedItem from "HomeDrawerSharedItem" /* 15809 */;
+import MobileHomeDrawerExperiment2 from "MobileHomeDrawerExperiment" /* 4306 */;
+import Text from "Text" /* 4442 */;
+import HomeDrawerSharedItem from "HomeDrawerSharedItem" /* 15827 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "sortActivity" /* 4534 */;
-import closure_5 from "markAllUserIdListsStale" /* 4098 */;
+import closure_4 from "sortActivity" /* 4535 */;
+import closure_5 from "markAllUserIdListsStale" /* 4099 */;
 import { StatusTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function HomeDrawerDMsRow() {
@@ -40,7 +40,7 @@ function HomeDrawerDMsRow() {
     const obj2 = { numFriends: null };
     obj2[0] = stateFromStores;
     obj1[3] = intl.format(tmp2(1236).t.N5UIKr, obj2);
-    items1[1] = callback(tmp2(4441).Text, obj1);
+    items1[1] = callback(tmp2(4442).Text, obj1);
     obj[1] = items1;
     tmp5 = callback2(View, obj);
   }

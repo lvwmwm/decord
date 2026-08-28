@@ -1,14 +1,14 @@
-// Module ID: 9967
-// Function ID: 9968
+// Module ID: 9985
+// Function ID: 9986
 // Name: getGoLiveAutoQualityExperimentConfig
-// Dependencies: [1212, 4537, 4504, 1368, 589, 595, 4628, 2]
+// Dependencies: [1212, 4538, 4505, 1368, 589, 595, 4629, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 9967 (getGoLiveAutoQualityExperimentConfig)
+// Module 9985 (getGoLiveAutoQualityExperimentConfig)
 import Storage3 from "Storage" /* 595 */;
 import closure_2 from "initialize" /* 1212 */;
-import closure_3 from "ApplicationStreamPresets" /* 4537 */;
-import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4504 */;
+import closure_3 from "ApplicationStreamPresets" /* 4538 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4505 */;
 import importDefaultResult from "getUnitId" /* 1368 */;
 
 require = arg1;
@@ -51,10 +51,10 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
         const obj = { preset: null, resolution: null, frameRate: null, soundshareEnabled: null, noTrack: true };
         obj[0] = tmp9.PRESET_AUTO;
         ({ resolution: obj2[1], fps: obj2[2], soundshareEnabled: obj2[3] } = state);
-        tmp(4628).updateStreamSettings(obj);
+        tmp(4629).updateStreamSettings(obj);
         const Storage2 = tmp(595).Storage;
         const result = Storage2.set(GoLiveAutoQualityMigrationVersion, 1);
-        const tmpResult = tmp(4628);
+        const tmpResult = tmp(4629);
       }
     }
   }

@@ -1,14 +1,14 @@
-// Module ID: 8430
-// Function ID: 8431
+// Module ID: 8444
+// Function ID: 8445
 // Name: initialize
-// Dependencies: [676, 8368, 589, 4134, 709, 2]
+// Dependencies: [676, 8382, 589, 4135, 709, 2]
 
-// Module 8430 (initialize)
+// Module 8444 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
 
 const ApplicationFlags = ME.ApplicationFlags;
 let closure_3 = { lastUsedObject: {}, useActivityUrlOverride: false, activityUrlOverride: null, filter: "" };

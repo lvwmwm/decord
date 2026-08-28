@@ -1,10 +1,10 @@
-// Module ID: 6015
-// Function ID: 6016
+// Module ID: 6028
+// Function ID: 6029
 // Name: hideHotspot
 // Dependencies: [676, 698, 709, 2]
 // Exports: clearHotspotOverride, hideHotspot, setHotspotOverride
 
-// Module 6015 (hideHotspot)
+// Module 6028 (hideHotspot)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

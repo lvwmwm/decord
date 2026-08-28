@@ -1,13 +1,13 @@
-// Module ID: 6074
-// Function ID: 6075
+// Module ID: 6087
+// Function ID: 6088
 // Name: useAvailableTags
-// Dependencies: [19, 1391, 4089, 505, 589, 1370, 6075, 2]
+// Dependencies: [19, 1391, 4090, 505, 589, 1370, 6088, 2]
 // Exports: useAppliedTags, useAvailableTags, useSomeAppliedTags, useVisibleAppliedForumTags, useVisibleForumTags
 
-// Module 6074 (useAvailableTags)
+// Module 6087 (useAvailableTags)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

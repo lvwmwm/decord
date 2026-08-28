@@ -1,10 +1,10 @@
-// Module ID: 7240
-// Function ID: 7241
+// Module ID: 7254
+// Function ID: 7255
 // Name: fromServer
-// Dependencies: [1931, 7230, 688, 2]
+// Dependencies: [1932, 7244, 688, 2]
 
-// Module 7240 (fromServer)
-import toJSDefault from "toJS" /* 1931 */;
+// Module 7254 (fromServer)
+import toJSDefault from "toJS" /* 1932 */;
 
 const require = arg1;
 toJSDefault;
@@ -20,15 +20,15 @@ class prototype extends tmp2 {
 prototype["fromServer"] = function fromServer(arg0) {
   ({ background_colors, button_colors, confetti_colors } = arg0);
   const mapped = background_colors.map((color) => {
-    const tmp = callback2(7230);
+    const tmp = callback2(7244);
     return tmp(callback(688).int2hex(color));
   });
   const mapped1 = button_colors.map((color) => {
-    const tmp = callback2(7230);
+    const tmp = callback2(7244);
     return tmp(callback(688).int2hex(color));
   });
   const mapped2 = confetti_colors.map((color) => {
-    const tmp = callback2(7230);
+    const tmp = callback2(7244);
     return tmp(callback(688).int2hex(color));
   });
   if (typeof prototype !== "function") {

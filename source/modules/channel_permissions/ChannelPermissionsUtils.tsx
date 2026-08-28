@@ -1,25 +1,25 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 9646
+// Function ID: 9647
 // Name: getRoleRowData
-// Dependencies: [1395, 1434, 1986, 1992, 1922, 8603, 676, 1989, 1236, 506, 11, 4289, 1370, 4094, 9629, 1955, 4631, 2]
+// Dependencies: [1395, 1434, 1987, 1993, 1923, 8618, 676, 1990, 1236, 506, 11, 4290, 1370, 4095, 9647, 1956, 4632, 2]
 // Exports: canCreatePrivateChannel, extractPermissionOverwrites, flipEveryonePermission, getAllExistingRolesWithPermission, getExistingMembers, getExistingMembersRows, getExistingRoles, getExistingRolesRowWithPermissionDisabled, getExistingRolesRows, getMembersRows, getNoRolesRow, getPrivateChannelHintText, getRemoveTooltipHint, getRolesRows, getRolesRowsWithPermissionDisabled, getRowTypeLabel, grantUserChannelAccess, isEveryoneRoleId, isPrivateGuildChannel, isPrivateTextChannel, toggleChannelEveryonePermission
 
-// Module 9628 (getRoleRowData)
+// Module 9646 (getRoleRowData)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import fromStringAll from "fromString" /* 506 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import compareGuildRoles from "compareGuildRoles" /* 1989 */;
-import applyOverwritesAll from "applyOverwrites" /* 4094 */;
-import nameFromUserDefault from "nameFromUser" /* 4289 */;
-import RowType2 from "RowType" /* 8603 */;
-import _updatePermission from "_updatePermission" /* 9629 */;
-import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1986 */;
-import closure_8 from "trackCommunicationDisabled" /* 1992 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1956 */;
+import compareGuildRoles from "compareGuildRoles" /* 1990 */;
+import applyOverwritesAll from "applyOverwrites" /* 4095 */;
+import nameFromUserDefault from "nameFromUser" /* 4290 */;
+import RowType2 from "RowType" /* 8618 */;
+import _updatePermission from "_updatePermission" /* 9647 */;
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1987 */;
+import closure_8 from "trackCommunicationDisabled" /* 1993 */;
+import closure_9 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 
 function getRoleRowData(colorString) {

@@ -1,9 +1,9 @@
-// Module ID: 7712
-// Function ID: 7713
+// Module ID: 7726
+// Function ID: 7727
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [106, 65, 114, 2]
 
-// Module 7712 (__INTERNAL_VIEW_CONFIG)
+// Module 7726 (__INTERNAL_VIEW_CONFIG)
 import set from "set" /* 2 */;
 import renderElement from "renderElement" /* 114 */;
 import weakSet from "weakSet" /* 106 */;

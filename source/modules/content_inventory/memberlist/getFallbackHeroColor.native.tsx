@@ -1,10 +1,10 @@
-// Module ID: 7975
-// Function ID: 7976
+// Module ID: 7989
+// Function ID: 7990
 // Name: getFallbackHeroColor
 // Dependencies: [712, 2]
 // Exports: getFallbackHeroColor
 
-// Module 7975 (getFallbackHeroColor)
+// Module 7989 (getFallbackHeroColor)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 

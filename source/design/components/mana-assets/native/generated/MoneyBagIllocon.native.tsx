@@ -1,14 +1,14 @@
-// Module ID: 6739
-// Function ID: 6740
+// Module ID: 6752
+// Function ID: 6753
 // Name: MoneyBagIllocon
-// Dependencies: [21, 5445, 6740, 2]
+// Dependencies: [21, 5458, 6753, 2]
 // Exports: MoneyBagIllocon
 
-// Module 6739 (MoneyBagIllocon)
+// Module 6752 (MoneyBagIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6740 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6753 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MoneyBagIllocon.native.tsx");

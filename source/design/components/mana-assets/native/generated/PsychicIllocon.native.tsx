@@ -1,14 +1,14 @@
-// Module ID: 6861
-// Function ID: 6862
+// Module ID: 6874
+// Function ID: 6875
 // Name: PsychicIllocon
-// Dependencies: [21, 5445, 6862, 2]
+// Dependencies: [21, 5458, 6875, 2]
 // Exports: PsychicIllocon
 
-// Module 6861 (PsychicIllocon)
+// Module 6874 (PsychicIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6862 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6875 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PsychicIllocon.native.tsx");

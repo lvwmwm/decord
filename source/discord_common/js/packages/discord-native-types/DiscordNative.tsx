@@ -1,9 +1,9 @@
-// Module ID: 4510
-// Function ID: 4511
+// Module ID: 4511
+// Function ID: 4512
 // Name: SystemServiceNotAvailableError
 // Dependencies: [2]
 
-// Module 4510 (SystemServiceNotAvailableError)
+// Module 4511 (SystemServiceNotAvailableError)
 import set from "set" /* 2 */;
 
 class SystemServiceNotAvailableError extends Error {

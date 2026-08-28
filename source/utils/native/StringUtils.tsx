@@ -1,12 +1,12 @@
-// Module ID: 8855
-// Function ID: 8856
+// Module ID: 8872
+// Function ID: 8873
 // Name: splitGraphemes
-// Dependencies: [8854, 2]
+// Dependencies: [8871, 2]
 // Exports: splitGraphemes
 
-// Module 8855 (splitGraphemes)
+// Module 8872 (splitGraphemes)
 import set from "set" /* 2 */;
-import rawDefault from "raw" /* 8854 */;
+import rawDefault from "raw" /* 8871 */;
 
 const result = set.fileFinishedImporting("utils/native/StringUtils.tsx");
 

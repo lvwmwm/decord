@@ -1,10 +1,10 @@
-// Module ID: 12818
-// Function ID: 12819
+// Module ID: 12837
+// Function ID: 12838
 // Name: setCoverImageURL
 // Dependencies: [709, 2]
 // Exports: setCoverImageURL
 
-// Module 12818 (setCoverImageURL)
+// Module 12837 (setCoverImageURL)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

@@ -1,22 +1,22 @@
-// Module ID: 9349
-// Function ID: 9350
+// Module ID: 9367
+// Function ID: 9368
 // Name: StaticNativeCutoutAvatarImage
-// Dependencies: [19, 17, 9350, 21, 3, 1435, 9351, 9352, 8030, 5445, 4185, 4879, 514, 8173, 643, 2]
+// Dependencies: [19, 17, 9368, 21, 3, 1435, 9369, 9370, 8044, 5458, 4186, 4892, 514, 8187, 643, 2]
 
-// Module 9349 (StaticNativeCutoutAvatarImage)
+// Module 9367 (StaticNativeCutoutAvatarImage)
 import timestampDefault from "timestamp" /* 3 */;
 import v1 from "v1" /* 514 */;
 import shallowEqualDefault from "shallowEqual" /* 643 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import preloadDefault from "preload" /* 5445 */;
-import SolidCutoutDefault from "SolidCutout" /* 8030 */;
-import inlineStyles from "inlineStyles" /* 8173 */;
-import inlineStylesDefault from "inlineStyles" /* 8173 */;
-import getChannelIconURL from "getChannelIconURL" /* 9351 */;
-import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 9352 */;
+import preloadDefault from "preload" /* 5458 */;
+import SolidCutoutDefault from "SolidCutout" /* 8044 */;
+import inlineStyles from "inlineStyles" /* 8187 */;
+import inlineStylesDefault from "inlineStyles" /* 8187 */;
+import getChannelIconURL from "getChannelIconURL" /* 9369 */;
+import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 9370 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { CHANNEL_SPRING_CONFIG } from "n" /* 9350 */;
+import { CHANNEL_SPRING_CONFIG } from "n" /* 9368 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -37,7 +37,7 @@ function StaticNativeCutoutAvatarImage(cutout) {
 function AnimatedNativeCutoutAvatarImage(cutout) {
   cutout = cutout.cutout;
   ({ source, style, imageStyle } = cutout);
-  obj = cutout(4185);
+  obj = cutout(4186);
   const fn = function h() {
     const size = cutout;
     if (cutout.shape === cutout(closure_1_2[8]).CutoutShape.RoundedRect) {
@@ -66,14 +66,14 @@ function AnimatedNativeCutoutAvatarImage(cutout) {
     const cutouts = [obj];
     return { cutouts };
   };
-  obj = { cutout, CutoutShape: cutout(8030).CutoutShape, withSpring: cutout(4879).withSpring, CHANNEL_SPRING_CONFIG };
+  obj = { cutout, CutoutShape: cutout(8044).CutoutShape, withSpring: cutout(4892).withSpring, CHANNEL_SPRING_CONFIG };
   fn.__closure = obj;
   fn.__workletHash = 12529564164821;
   fn.__initData = closure_15;
   const animatedProps = obj.useAnimatedProps(fn);
   obj = { style, animatedProps, children: callback(preloadDefault, { style: items, source: getReactNativeSVGImageSourceDefault(source), usesSmallCache: true }) };
   items = [obj.image, imageStyle];
-  return callback(cutout(8030).ClipViewAnimated, obj);
+  return callback(cutout(8044).ClipViewAnimated, obj);
 }
 function NativeCutoutAvatarImage(animate) {
   if (true === animate.animate) {

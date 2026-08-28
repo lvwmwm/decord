@@ -1,10 +1,10 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 7363
+// Function ID: 7364
 // Name: AppStartInfo
-// Dependencies: [32, 5, 7350, 4306, 2]
+// Dependencies: [32, 5, 7364, 4307, 2]
 
-// Module 7349 (AppStartInfo)
-import enforcingDefault from "enforcing" /* 7350 */;
+// Module 7363 (AppStartInfo)
+import enforcingDefault from "enforcing" /* 7364 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -35,18 +35,18 @@ export const AppStartInfo = {
         error = new Error("NativeTTIManager.getAppStartedTimestamp() returned an invalid timestamp. That's unexpected!");
         throw error;
       }
-      const items = [callback(4306).getAppStartType(), , ];
-      const obj12 = callback(4306);
-      items[1] = callback(4306).getLaunchScenario();
-      const obj13 = callback(4306);
-      items[2] = callback(4306).getAppFirstVisibleTimestamp();
+      const items = [callback(4307).getAppStartType(), , ];
+      const obj12 = callback(4307);
+      items[1] = callback(4307).getLaunchScenario();
+      const obj13 = callback(4307);
+      items[2] = callback(4307).getAppFirstVisibleTimestamp();
       dependencyMap = yield Promise.all(items);
       closure_4 = 5;
-      closure_5 = 7350;
+      closure_5 = 7364;
       obj5 = { app_start_type: null, app_launch_scenario: null };
       obj5[0] = c3;
       obj5[1] = closure_4;
-      const mainActivityCreationTime = callback(7350).getMainActivityCreationTime();
+      const mainActivityCreationTime = callback(7364).getMainActivityCreationTime();
       if (null != mainActivityCreationTime) {
         obj5.android_time_creation_to_create_main_activity = mainActivityCreationTime - callback;
       }

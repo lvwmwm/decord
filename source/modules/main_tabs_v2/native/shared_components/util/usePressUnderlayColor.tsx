@@ -1,16 +1,16 @@
-// Module ID: 16479
-// Function ID: 16480
+// Module ID: 16497
+// Function ID: 16498
 // Name: usePressUnderlayColor
-// Dependencies: [16480, 4380, 4165, 712, 4293, 2]
+// Dependencies: [16498, 4381, 4166, 712, 4294, 2]
 // Exports: default
 
-// Module 16479 (usePressUnderlayColor)
+// Module 16497 (usePressUnderlayColor)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4165 */;
-import hexToRgba from "hexToRgba" /* 4293 */;
-import useThemeDefault from "useTheme" /* 4380 */;
-import CHANNEL_THEME_COLOR_PALETTE from "CHANNEL_THEME_COLOR_PALETTE" /* 16480 */;
+import map from "map" /* 4166 */;
+import hexToRgba from "hexToRgba" /* 4294 */;
+import useThemeDefault from "useTheme" /* 4381 */;
+import CHANNEL_THEME_COLOR_PALETTE from "CHANNEL_THEME_COLOR_PALETTE" /* 16498 */;
 
 let closure_3 = CHANNEL_THEME_COLOR_PALETTE.DEFAULT_CHANNEL_EMOJI_BACKGROUND_COLOR;
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/util/usePressUnderlayColor.tsx");

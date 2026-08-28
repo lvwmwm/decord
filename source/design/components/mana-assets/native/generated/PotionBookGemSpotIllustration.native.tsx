@@ -1,14 +1,14 @@
-// Module ID: 6843
-// Function ID: 6844
+// Module ID: 6856
+// Function ID: 6857
 // Name: PotionBookGemSpotIllustration
-// Dependencies: [21, 5445, 6844, 2]
+// Dependencies: [21, 5458, 6857, 2]
 // Exports: PotionBookGemSpotIllustration
 
-// Module 6843 (PotionBookGemSpotIllustration)
+// Module 6856 (PotionBookGemSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6844 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6857 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PotionBookGemSpotIllustration.native.tsx");

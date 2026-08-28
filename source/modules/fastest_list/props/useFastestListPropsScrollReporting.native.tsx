@@ -1,10 +1,10 @@
-// Module ID: 7722
-// Function ID: 7723
+// Module ID: 7736
+// Function ID: 7737
 // Name: useFastestListPropsScrollReporting
-// Dependencies: [4185, 2]
+// Dependencies: [4186, 2]
 // Exports: default
 
-// Module 7722 (useFastestListPropsScrollReporting)
+// Module 7736 (useFastestListPropsScrollReporting)
 import set from "set" /* 2 */;
 
 let closure_2 = { code: "function useFastestListPropsScrollReportingNativeTsx1(event){const{scrollPosition,horizontal}=this.__closure;if(scrollPosition!=null){scrollPosition.set(horizontal?event.contentOffset.x:event.contentOffset.y);}}" };

@@ -1,16 +1,16 @@
-// Module ID: 9709
-// Function ID: 9710
+// Module ID: 9727
+// Function ID: 9728
 // Name: isAnimatedBackgroundOption
-// Dependencies: [1391, 4519, 7692, 676, 1435, 4653, 698, 2]
+// Dependencies: [1391, 4520, 7706, 676, 1435, 4666, 698, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9709 (isAnimatedBackgroundOption)
+// Module 9727 (isAnimatedBackgroundOption)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getAvatarURL from "getAvatarURL" /* 1435 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4666 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "createRTCConnection" /* 4519 */;
-import VideoFilterType from "VideoFilterType" /* 7692 */;
+import closure_4 from "createRTCConnection" /* 4520 */;
+import VideoFilterType from "VideoFilterType" /* 7706 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

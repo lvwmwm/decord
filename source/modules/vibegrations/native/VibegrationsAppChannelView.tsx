@@ -1,18 +1,18 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16129
+// Function ID: 16130
 // Name: VibegrationsAppChannelView
-// Dependencies: [32, 19, 17, 9385, 9386, 21, 4445, 712, 15514, 1895, 6046, 16112, 9418, 9382, 16113, 4441, 1236, 3469, 4880, 2]
+// Dependencies: [32, 19, 17, 9403, 9404, 21, 4446, 712, 15532, 1895, 6059, 16130, 9436, 9400, 16131, 4442, 1236, 3470, 4893, 2]
 // Exports: default
 
-// Module 16111 (VibegrationsAppChannelView)
+// Module 16129 (VibegrationsAppChannelView)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "map" /* 9385 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9386 */;
+import closure_7 from "map" /* 9403 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9404 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);

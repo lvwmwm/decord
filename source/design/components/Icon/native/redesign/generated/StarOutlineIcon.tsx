@@ -1,14 +1,14 @@
-// Module ID: 9103
-// Function ID: 9104
+// Module ID: 9121
+// Function ID: 9122
 // Name: StarOutlineIcon
-// Dependencies: [19, 21, 712, 4164, 9104, 2]
+// Dependencies: [19, 21, 712, 4165, 9122, 2]
 // Exports: StarOutlineIcon
 
-// Module 9103 (StarOutlineIcon)
+// Module 9121 (StarOutlineIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 9104 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 9122 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

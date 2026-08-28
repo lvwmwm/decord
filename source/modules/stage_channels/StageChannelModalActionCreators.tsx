@@ -1,19 +1,19 @@
-// Module ID: 8595
-// Function ID: 8596
+// Module ID: 8610
+// Function ID: 8611
 // Name: connectToStage
-// Dependencies: [5, 4467, 1391, 1910, 4089, 1981, 1399, 8596, 6118, 5409, 12704, 12705, 5307, 4511, 4628, 12707, 2]
+// Dependencies: [5, 4468, 1391, 1910, 4090, 1982, 1399, 8611, 6131, 5422, 12723, 12724, 5320, 4512, 4629, 12726, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 8595 (connectToStage)
-import _modDef5307 from "module_5307" /* 5307 */;
-import openStageChannelSettingsAll from "openStageChannelSettings" /* 8596 */;
-import _initializeDefault from "_initialize" /* 12705 */;
+// Module 8610 (connectToStage)
+import _modDef5320 from "module_5320" /* 5320 */;
+import openStageChannelSettingsAll from "openStageChannelSettings" /* 8611 */;
+import _initializeDefault from "_initialize" /* 12724 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "reset" /* 4467 */;
+import closure_5 from "reset" /* 4468 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_9 from "handleConnectionOpen" /* 1981 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_9 from "handleConnectionOpen" /* 1982 */;
 
 const require = arg1;
 function connectToStage(channel, flag) {
@@ -27,11 +27,11 @@ function connectToStage(channel, flag) {
     if (canResult) {
       let num = openStageChannelSettingsAll.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       if (num) {
-        const result = tmp7(8596).openStageBlockedUsersSheet(channel, () => {
+        const result = tmp7(8611).openStageBlockedUsersSheet(channel, () => {
           closure_1_11(closure_0, true);
         });
         num = 1;
-        const tmp7Result = tmp7(8596);
+        const tmp7Result = tmp7(8611);
       }
       tmp6 = num;
       const obj2 = openStageChannelSettingsAll;
@@ -44,19 +44,19 @@ function connectToStage(channel, flag) {
   _initializeDefault.initialize();
   const obj = closure_9;
   const obj4 = _initializeDefault;
-  const voiceChannel = _modDef5307.selectVoiceChannel(channel.id);
+  const voiceChannel = _modDef5320.selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
     allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(channel.id);
     const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !streamMarkedFull.isStreamMarkedFull(channel(table[13]).encodeStreamKey(currentUserActiveStream)));
     if (null != found) {
-      _require(4628).watchStream(found, { noFocus: true });
-      const obj6 = _require(4628);
+      _require(4629).watchStream(found, { noFocus: true });
+      const obj6 = _require(4629);
     }
     return true;
   }
-  const obj5 = _modDef5307;
+  const obj5 = _modDef5320;
 }
 function connectAndOpen(channel, flag) {
   const _require = channel;
@@ -77,19 +77,19 @@ function connectAndOpen(channel, flag) {
     result = voiceChannelId !== channel.id;
   }
   if (result) {
-    result = _require(12707).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12707);
+    result = _require(12726).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12726);
   }
   if (result) {
-    result = flag2(8596).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(8611).showChannelChangeConfirmationAlert(channel, () => {
       closure_1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(8596);
+    const obj2 = flag2(8611);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(8596).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(8596);
+      flag2(8611).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(8611);
     }
   }
 }

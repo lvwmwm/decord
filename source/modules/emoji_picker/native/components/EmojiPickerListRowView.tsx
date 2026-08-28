@@ -1,11 +1,11 @@
-// Module ID: 9069
-// Function ID: 9070
+// Module ID: 9087
+// Function ID: 9088
 // Name: View
-// Dependencies: [17, 500, 9070, 2]
+// Dependencies: [17, 500, 9088, 2]
 
-// Module 9069 (View)
+// Module 9087 (View)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 9070 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 9088 */;
 import set from "set" /* 500 */;
 
 let View = get_ActivityIndicator.View;

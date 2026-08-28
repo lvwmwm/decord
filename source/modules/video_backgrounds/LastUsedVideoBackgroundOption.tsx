@@ -1,15 +1,15 @@
-// Module ID: 9712
-// Function ID: 9713
+// Module ID: 9730
+// Function ID: 9731
 // Name: getLastUsedVideoBackgroundOption
-// Dependencies: [19, 1340, 1922, 9709, 4107, 589, 2]
+// Dependencies: [19, 1340, 1923, 9727, 4108, 589, 2]
 // Exports: getLastUsedVideoBackgroundOption, useLastUsedVideoBackgroundOption
 
-// Module 9712 (getLastUsedVideoBackgroundOption)
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4107 */;
-import isAnimatedBackgroundOption from "isAnimatedBackgroundOption" /* 9709 */;
+// Module 9730 (getLastUsedVideoBackgroundOption)
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4108 */;
+import isAnimatedBackgroundOption from "isAnimatedBackgroundOption" /* 9727 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_backgrounds/LastUsedVideoBackgroundOption.tsx");

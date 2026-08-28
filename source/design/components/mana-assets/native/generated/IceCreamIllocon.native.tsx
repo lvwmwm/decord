@@ -1,14 +1,14 @@
-// Module ID: 6703
-// Function ID: 6704
+// Module ID: 6716
+// Function ID: 6717
 // Name: IceCreamIllocon
-// Dependencies: [21, 5445, 6704, 2]
+// Dependencies: [21, 5458, 6717, 2]
 // Exports: IceCreamIllocon
 
-// Module 6703 (IceCreamIllocon)
+// Module 6716 (IceCreamIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6704 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6717 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/IceCreamIllocon.native.tsx");

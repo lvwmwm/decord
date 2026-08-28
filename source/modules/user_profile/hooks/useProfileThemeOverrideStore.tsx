@@ -1,15 +1,15 @@
-// Module ID: 8461
-// Function ID: 8462
+// Module ID: 8475
+// Function ID: 8476
 // Name: useProfileThemeOverrideStore
-// Dependencies: [676, 644, 4380, 8052, 1363, 2]
+// Dependencies: [676, 644, 4381, 8066, 1363, 2]
 // Exports: useEffectiveThemeOverride, useHasNonNitroThemeOverride, useIsBannerDisabledByOverride
 
-// Module 8461 (useProfileThemeOverrideStore)
+// Module 8475 (useProfileThemeOverrideStore)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import useThemeDefault from "useTheme" /* 4380 */;
-import getProfileTheme from "getProfileTheme" /* 8052 */;
+import useThemeDefault from "useTheme" /* 4381 */;
+import getProfileTheme from "getProfileTheme" /* 8066 */;
 import keys from "keys" /* 644 */;
 
 const ThemeTypes = ME.ThemeTypes;

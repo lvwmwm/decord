@@ -1,13 +1,13 @@
-// Module ID: 12411
-// Function ID: 12412
+// Module ID: 12430
+// Function ID: 12431
 // Name: useUserProfileGameFriendApplicationIds
-// Dependencies: [19, 4098, 1922, 589, 12408, 2]
+// Dependencies: [19, 4099, 1923, 589, 12427, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 12411 (useUserProfileGameFriendApplicationIds)
+// Module 12430 (useUserProfileGameFriendApplicationIds)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "markAllUserIdListsStale" /* 4098 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "markAllUserIdListsStale" /* 4099 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 
 const require = arg1;
 let closure_5 = [];

@@ -1,15 +1,15 @@
-// Module ID: 9953
-// Function ID: 9954
+// Module ID: 9971
+// Function ID: 9972
 // Name: isRefreshableAttachmentUrl
-// Dependencies: [5, 4915, 676, 687, 4480, 4479, 1487, 530, 2]
+// Dependencies: [5, 4928, 676, 687, 4481, 4480, 1487, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentPathUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9953 (isRefreshableAttachmentUrl)
+// Module 9971 (isRefreshableAttachmentUrl)
 import setDefault from "set" /* 687 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4479 */;
+import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4480 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { ATTACHMENT_PATH_PREFIXES } from "set" /* 4915 */;
+import { ATTACHMENT_PATH_PREFIXES } from "set" /* 4928 */;
 import { Endpoints } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

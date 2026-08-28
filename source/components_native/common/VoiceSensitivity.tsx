@@ -1,23 +1,23 @@
-// Module ID: 9987
-// Function ID: 9988
+// Module ID: 10005
+// Function ID: 10006
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 4496, 5315, 7091, 676, 4683, 21, 4445, 712, 4293, 1494, 589, 5035, 4544, 1351, 1236, 1297, 8295, 8313, 500, 2]
+// Dependencies: [5, 32, 19, 17, 4497, 5328, 7104, 676, 4696, 21, 4446, 712, 4294, 1494, 589, 5048, 4545, 1351, 1236, 1297, 8309, 8327, 500, 2]
 // Exports: default
 
-// Module 9987 (VoiceSensitivity)
+// Module 10005 (VoiceSensitivity)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_8 from "anyoneHasFlagInContext" /* 5315 */;
-import closure_9 from "getState" /* 7091 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_8 from "anyoneHasFlagInContext" /* 5328 */;
+import closure_9 from "getState" /* 7104 */;
 import { AppStates } from "ME" /* 676 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4683 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4696 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import hexToRgba from "hexToRgba" /* 4293 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import hexToRgba from "hexToRgba" /* 4294 */;
 
 const require = arg1;
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);

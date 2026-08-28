@@ -1,9 +1,9 @@
-// Module ID: 10084
-// Function ID: 10085
+// Module ID: 10102
+// Function ID: 10103
 // Name: DesktopNotificationTypes
 // Dependencies: [676, 500, 589, 709, 2]
 
-// Module 10084 (DesktopNotificationTypes)
+// Module 10102 (DesktopNotificationTypes)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import initializeDefault from "initialize" /* 589 */;

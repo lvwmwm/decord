@@ -1,29 +1,29 @@
-// Module ID: 14026
-// Function ID: 14027
+// Module ID: 14045
+// Function ID: 14046
 // Name: loadServer
-// Dependencies: [32, 9385, 7381, 1391, 1992, 1910, 4496, 4534, 4519, 4098, 1981, 1922, 4464, 4347, 676, 4473, 9386, 4509, 500, 709, 698, 14027, 589, 1370, 9429, 9438, 14032, 9430, 7402, 2]
+// Dependencies: [32, 9403, 7395, 1391, 1993, 1910, 4497, 4535, 4520, 4099, 1982, 1923, 4465, 4348, 676, 4474, 9404, 4510, 500, 709, 698, 14046, 589, 1370, 9447, 9456, 14051, 9448, 7416, 2]
 
-// Module 14026 (loadServer)
+// Module 14045 (loadServer)
 import set2 from "set" /* 500 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "map" /* 9385 */;
-import closure_5 from "initializeState" /* 7381 */;
+import closure_4 from "map" /* 9403 */;
+import closure_5 from "initializeState" /* 7395 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "trackCommunicationDisabled" /* 1992 */;
+import closure_7 from "trackCommunicationDisabled" /* 1993 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_10 from "sortActivity" /* 4534 */;
-import closure_11 from "createRTCConnection" /* 4519 */;
-import closure_12 from "markAllUserIdListsStale" /* 4098 */;
-import closure_13 from "handleConnectionOpen" /* 1981 */;
-import closure_14 from "mergeGuildAvatar" /* 1922 */;
-import closure_15 from "updateVoiceState" /* 4464 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4347 */;
+import closure_9 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_10 from "sortActivity" /* 4535 */;
+import closure_11 from "createRTCConnection" /* 4520 */;
+import closure_12 from "markAllUserIdListsStale" /* 4099 */;
+import closure_13 from "handleConnectionOpen" /* 1982 */;
+import closure_14 from "mergeGuildAvatar" /* 1923 */;
+import closure_15 from "updateVoiceState" /* 4465 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4348 */;
 import ME from "ME" /* 676 */;
-import { ActivityLayoutMode } from "items3" /* 4473 */;
-import { FrameLayoutModes } from "FrameLayoutModes" /* 9386 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4509 */;
+import { ActivityLayoutMode } from "items3" /* 4474 */;
+import { FrameLayoutModes } from "FrameLayoutModes" /* 9404 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4510 */;
 
 require = arg1;
 ({ ActivityActionTypes: closure_17, RelationshipTypes: closure_18, AnalyticEvents: closure_19, RPCEvents: closure_20, RPCCloseCodes: closure_21 } = ME);
@@ -558,7 +558,7 @@ prototype["init"] = function init() {
     callback(698).track(constants.AUTHORIZED_APP_CONNECTED, obj);
   };
   this.rpcServer.onDisconnect = (id, reason) => {
-    let obj = callback(14027);
+    let obj = callback(14046);
     obj.releaseSocket(id.id);
     obj = { type: "RPC_APP_DISCONNECTED", socketId: id.id, application: id.application, source: id.source, reason };
     callback(709).dispatch(obj);

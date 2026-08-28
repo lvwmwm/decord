@@ -1,20 +1,20 @@
-// Module ID: 14879
-// Function ID: 14880
+// Module ID: 14864
+// Function ID: 14865
 // Name: ApplyButton
-// Dependencies: [32, 19, 17, 4437, 1922, 676, 1624, 21, 1935, 4445, 712, 1501, 589, 14880, 8008, 4700, 4380, 1936, 1933, 8848, 8851, 8852, 643, 14881, 14882, 14883, 14884, 698, 4413, 8009, 8006, 4412, 14887, 2009, 14888, 14889, 14894, 14897, 1236, 14233, 4172, 4702, 14898, 2727, 4441, 1297, 5955, 688, 14234, 4880, 11871, 7771, 1629, 4185, 4879, 2]
+// Dependencies: [32, 19, 17, 4438, 1923, 676, 1624, 21, 1936, 4446, 712, 1501, 589, 14865, 8022, 4713, 4381, 1937, 1934, 8865, 8868, 8869, 643, 14866, 14867, 14868, 14869, 698, 4414, 8023, 8020, 4413, 14872, 2010, 14873, 14874, 14879, 14882, 1236, 14202, 4173, 4715, 14883, 2728, 4442, 1297, 5968, 688, 14203, 4893, 11890, 7785, 1629, 4186, 4892, 2]
 // Exports: default
 
-// Module 14879 (ApplyButton)
+// Module 14864 (ApplyButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_9 from "mergeGuildAvatar" /* 1923 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { MEDIA_PICKER_SEND_BUTTON_SPRING as closure_11 } from "DRAG_HANDLE" /* 1624 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function ApplyButton(onPress) {

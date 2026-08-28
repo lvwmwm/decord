@@ -1,13 +1,13 @@
-// Module ID: 5536
-// Function ID: 5537
+// Module ID: 5549
+// Function ID: 5550
 // Name: _fetchMemberCountsFromBackend
-// Dependencies: [5, 5535, 676, 709, 530, 1405, 5409, 2]
+// Dependencies: [5, 5548, 676, 709, 530, 1405, 5422, 2]
 // Exports: fetchMemberCounts, requestMembersForRole
 
-// Module 5536 (_fetchMemberCountsFromBackend)
+// Module 5549 (_fetchMemberCountsFromBackend)
 import privDefault from "priv" /* 1405 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getRoleMemberCount" /* 5535 */;
+import closure_4 from "getRoleMemberCount" /* 5548 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;

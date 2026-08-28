@@ -1,9 +1,9 @@
-// Module ID: 11596
-// Function ID: 11597
+// Module ID: 11615
+// Function ID: 11616
 // Name: ApplicationDirectorySearchResultType
 // Dependencies: [2]
 
-// Module 11596 (ApplicationDirectorySearchResultType)
+// Module 11615 (ApplicationDirectorySearchResultType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationDirectorySearchResultType.tsx");

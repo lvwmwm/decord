@@ -1,23 +1,23 @@
-// Module ID: 16778
-// Function ID: 16779
+// Module ID: 16796
+// Function ID: 16797
 // Name: CaptchaModal
-// Dependencies: [19, 17, 15450, 15451, 21, 4445, 7650, 1501, 16779, 5574, 4878, 6208, 4441, 1236, 4880, 10834, 16780, 15458, 2]
+// Dependencies: [19, 17, 15468, 15469, 21, 4446, 7664, 1501, 16797, 5587, 4891, 6221, 4442, 1236, 4893, 10852, 16798, 15476, 2]
 // Exports: default
 
-// Module 16778 (CaptchaModal)
+// Module 16796 (CaptchaModal)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
-import Text from "Text" /* 4441 */;
-import Stack from "Stack" /* 4878 */;
-import Button from "Button" /* 4880 */;
-import Background from "Background" /* 5574 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6208 */;
+import Text from "Text" /* 4442 */;
+import Stack from "Stack" /* 4891 */;
+import Button from "Button" /* 4893 */;
+import Background from "Background" /* 5587 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6221 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore" /* 15450 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15451 */;
+import { doesRegistrationHaveIdentityType as closure_6 } from "useRegistrationUIStore" /* 15468 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15469 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 ({ Keyboard: c4, View: c5 } = get_ActivityIndicator);
@@ -37,7 +37,7 @@ export default function CaptchaModal(arg0) {
   ({ close: dependencyMap, sitekey: closure_3, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let navigation;
   let callback;
-  const tmp2 = callback2(onReject(7650)());
+  const tmp2 = callback2(onReject(7664)());
   let obj = createStandardNavigationFactories;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -59,7 +59,7 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  callback = onReject(16779)({ onReject, analyticsType: memo });
+  callback = onReject(16797)({ onReject, analyticsType: memo });
   const effect = React.useEffect(() => {
     closure_4.dismiss();
   }, []);

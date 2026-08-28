@@ -1,18 +1,18 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 12740
+// Function ID: 12741
 // Name: openGuildProductLink
-// Dependencies: [4810, 1236, 2]
+// Dependencies: [4823, 1236, 2]
 // Exports: openGuildProductLink
 
-// Module 12721 (openGuildProductLink)
+// Module 12740 (openGuildProductLink)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4810 from "module_4810" /* 4810 */;
+import _modDef4823 from "module_4823" /* 4823 */;
 
 const result = set.fileFinishedImporting("modules/guild_products/GuildProductLinkActionCreators.native.tsx");
 
 export const openGuildProductLink = function openGuildProductLink(closure_0, closure_1) {
-  let obj = _modDef4810;
+  let obj = _modDef4823;
   obj = { body: null, confirmText: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t["mYlo/T"]);

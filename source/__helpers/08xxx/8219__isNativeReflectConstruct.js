@@ -1,17 +1,18 @@
 // Module ID: 8219
 // Function ID: 8220
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8189, 8212]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8220]
 
 // Module 8219 (_isNativeReflectConstruct)
+import noopAll from "noop" /* 19 */;
 import _inheritsDefault from "_inherits" /* 98 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8212 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const FeDiffuseLighting = arg1;
+const Defs = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,12 +32,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeDiffuseLighting {
+noopAll;
+class Defs {
   constructor() {
     self = this;
-    tmp = closure_2(this, FeDiffuseLighting);
+    tmp = closure_2(this, Defs);
     tmp2 = closure_4;
-    obj = closure_4(FeDiffuseLighting);
+    obj = closure_4(Defs);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -51,19 +53,16 @@ class FeDiffuseLighting {
     return tmp3(self, constructResult);
   }
 }
-_inheritsDefault(FeDiffuseLighting, _isNativeReflectConstructDefault);
-let obj = {
-  key: "render",
-  value: function render() {
-    const result = FeDiffuseLighting(8189).warnUnimplementedFilter();
-    return null;
+_inheritsDefault(Defs, require("noop").Component);
+const items = [
+  {
+    key: "render",
+    value: function render() {
+      return jsx(Defs(8220), { children: this.props.children });
+    }
   }
-};
-const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeDiffuseLighting, items);
-importDefaultResultResult.displayName = "FeDiffuseLighting";
-obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = obj;
+];
+const importDefaultResultResult = importDefaultResult(Defs, items);
+importDefaultResultResult.displayName = "Defs";
 
 export default importDefaultResultResult;

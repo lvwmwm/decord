@@ -1,14 +1,14 @@
-// Module ID: 7208
-// Function ID: 7209
+// Module ID: 7222
+// Function ID: 7223
 // Name: handleChange
-// Dependencies: [1391, 1981, 4654, 589, 709, 2]
+// Dependencies: [1391, 1982, 4667, 589, 709, 2]
 
-// Module 7208 (handleChange)
+// Module 7222 (handleChange)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "ensureGuildLoaded" /* 1391 */;
-import closure_1 from "handleConnectionOpen" /* 1981 */;
-import closure_2 from "updateUserGuildSettingsInternal" /* 4654 */;
+import closure_1 from "handleConnectionOpen" /* 1982 */;
+import closure_2 from "updateUserGuildSettingsInternal" /* 4667 */;
 
 function handleChange() {
   channelId = channelId.getChannelId();

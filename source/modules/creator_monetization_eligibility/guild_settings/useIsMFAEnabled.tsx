@@ -1,13 +1,13 @@
-// Module ID: 17185
-// Function ID: 17186
+// Module ID: 17203
+// Function ID: 17204
 // Name: useIsMFAEnabled
-// Dependencies: [9650, 1922, 676, 647, 2]
+// Dependencies: [9668, 1923, 676, 647, 2]
 // Exports: useIsMFAEnabled
 
-// Module 17185 (useIsMFAEnabled)
+// Module 17203 (useIsMFAEnabled)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
-import closure_2 from "handleFormInit" /* 9650 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_2 from "handleFormInit" /* 9668 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 import { MFALevels } from "ME" /* 676 */;
 
 require = arg1;

@@ -1,17 +1,17 @@
-// Module ID: 10077
-// Function ID: 10078
-// Dependencies: [32, 19, 17, 4461, 10048, 676, 21, 4445, 712, 589, 5327, 5020, 10057, 4441, 1236, 2]
+// Module ID: 10095
+// Function ID: 10096
+// Dependencies: [32, 19, 17, 4462, 10066, 676, 21, 4446, 712, 589, 5340, 5033, 10075, 4442, 1236, 2]
 
-// Module 10077
+// Module 10095
 import ThemesDefault from "Themes" /* 712 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 10057 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10075 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getParticipants" /* 4461 */;
+import closure_5 from "getParticipants" /* 4462 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import useActiveSpeakerPillScrollHandler from "useActiveSpeakerPillScrollHandler" /* 10048 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import useActiveSpeakerPillScrollHandler from "useActiveSpeakerPillScrollHandler" /* 10066 */;
 
 const require = arg1;
 ({ useActiveSpeakerPillScrollHandler: closure_6, useActiveSpeakerPillState: error } = require("useActiveSpeakerPillScrollHandler"));
@@ -36,7 +36,7 @@ const memoResult = importAllResult.memo((channel) => {
     const speakingParticipants = closure_1_5.getSpeakingParticipants(channel.id);
     const items = [speakingParticipants.map((user) => user.user), closure_1_5.getParticipantsVersion(channel.id)];
     return items;
-  }, items1, channel(5327).isVersionEqual), 1)[0];
+  }, items1, channel(5340).isVersionEqual), 1)[0];
   let tmp5 = null;
   if (0 !== first.length) {
     tmp5 = null;
@@ -63,11 +63,11 @@ const memoResult = importAllResult.memo((channel) => {
       const obj5 = { count: null };
       obj5[0] = first.length;
       obj4[3] = intl.format(tmp2(1236).t["+dia6l"], obj5);
-      obj3[1] = callback3(tmp2(4441).Text, obj4);
+      obj3[1] = callback3(tmp2(4442).Text, obj4);
       items2[1] = callback3(View, obj3);
       obj[1] = items2;
       obj[3] = callback4(View, obj);
-      tmp5 = callback3(tmp2(5020).PressableOpacity, obj);
+      tmp5 = callback3(tmp2(5033).PressableOpacity, obj);
       const tmp10 = UserSummaryItemDefault;
     }
   }

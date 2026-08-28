@@ -1,23 +1,23 @@
-// Module ID: 10180
-// Function ID: 10181
+// Module ID: 10198
+// Function ID: 10199
 // Name: useEnabledHarmTypesBitmaskForChannelAndAuthorId
-// Dependencies: [19, 1340, 1391, 4098, 1922, 6090, 589, 6097, 6093, 2]
+// Dependencies: [19, 1340, 1391, 4099, 1923, 6103, 589, 6110, 6106, 2]
 // Exports: useEnabledHarmTypesBitmaskForMessage
 
-// Module 10180 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
-import getEligibleHarmTypesConfigsForContext from "getEligibleHarmTypesConfigsForContext" /* 6090 */;
+// Module 10198 (useEnabledHarmTypesBitmaskForChannelAndAuthorId)
+import getEligibleHarmTypesConfigsForContext from "getEligibleHarmTypesConfigsForContext" /* 6103 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "markAllUserIdListsStale" /* 4098 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "markAllUserIdListsStale" /* 4099 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
   const _require = channelId;
   dependencyMap = authorId;
-  const eligibleHarmTypesConfigsForContext = _require(6090).getEligibleHarmTypesConfigsForContext();
-  let obj = _require(6090);
+  const eligibleHarmTypesConfigsForContext = _require(6103).getEligibleHarmTypesConfigsForContext();
+  let obj = _require(6103);
   let items = [closure_6];
   const stateFromStores = _require(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj2 = _require(589);
@@ -34,7 +34,7 @@ function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
     const merged = Object.assign(arg0);
     obj[harmType.harmType] = harmType.getProtoUserSettings(settings.settings);
     return obj;
-  }, {}), items3, _require(6097).areSettingsEqual);
+  }, {}), items3, _require(6110).areSettingsEqual);
   const items4 = [stateFromStores1, eligibleHarmTypesConfigsForContext, stateFromStores2, authorId, stateFromStores];
   const memo = eligibleHarmTypesConfigsForContext.useMemo(() => {
     if (null != stateFromStores1) {
@@ -63,10 +63,10 @@ function useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId) {
     }
   }, items4);
   if (0 === memo.length) {
-    let NONE = tmp(6093).ContentHarmTypeBitMask.NONE;
+    let NONE = tmp(6106).ContentHarmTypeBitMask.NONE;
   } else {
-    NONE = tmp(6090).contentHarmTypesToFlags(memo);
-    const tmpResult = tmp(6090);
+    NONE = tmp(6103).contentHarmTypesToFlags(memo);
+    const tmpResult = tmp(6103);
   }
   return NONE;
 }

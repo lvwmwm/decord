@@ -1,12 +1,12 @@
-// Module ID: 8075
-// Function ID: 8076
+// Module ID: 8089
+// Function ID: 8090
 // Name: canViewInteractionInfo
-// Dependencies: [1955, 2]
+// Dependencies: [1956, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 8075 (canViewInteractionInfo)
+// Module 8089 (canViewInteractionInfo)
 import set from "set" /* 2 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1956 */;
 
 const result = set.fileFinishedImporting("modules/applications/ApplicationInteractionInfoUtils.tsx");
 

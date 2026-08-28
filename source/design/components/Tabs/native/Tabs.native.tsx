@@ -1,17 +1,17 @@
-// Module ID: 9187
-// Function ID: 9188
+// Module ID: 9205
+// Function ID: 9206
 // Name: defaultCountFormatter
-// Dependencies: [19, 17, 1996, 21, 4185, 4445, 712, 4879, 9130, 9188, 5604, 500, 2]
+// Dependencies: [19, 17, 1997, 21, 4186, 4446, 712, 4892, 9148, 9206, 5617, 500, 2]
 // Exports: Tabs
 
-// Module 9187 (defaultCountFormatter)
+// Module 9205 (defaultCountFormatter)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_getSystemLocale" /* 1996 */;
+import closure_5 from "_getSystemLocale" /* 1997 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "module_4185" /* 4185 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "module_4186" /* 4186 */;
 
 const require = arg1;
 function defaultCountFormatter(toLocaleString) {

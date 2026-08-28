@@ -1,10 +1,10 @@
-// Module ID: 13553
-// Function ID: 13554
+// Module ID: 13572
+// Function ID: 13573
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 32, 19, 17, 1395, 1391, 4089, 676, 11182, 10552, 21, 4445, 712, 500, 1236, 13554, 10638, 1370, 13555, 4709, 698, 9952, 4456, 8564, 11202, 2009, 4811, 13556, 13557, 5454, 7540, 1625, 5447, 10641, 13558, 2]
+// Dependencies: [5, 32, 19, 17, 1395, 1391, 4090, 676, 11200, 10570, 21, 4446, 712, 500, 1236, 13573, 10656, 1370, 13574, 4722, 698, 9970, 4457, 8579, 11220, 2010, 4824, 13575, 13576, 5467, 7554, 1625, 5460, 10659, 13577, 2]
 // Exports: default
 
-// Module 13553 (getAttachmentsRestriction)
+// Module 13572 (getAttachmentsRestriction)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -13,12 +13,12 @@ import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import createChannelRecord from "createChannelRecord" /* 1395 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4090 */;
 import ME from "ME" /* 676 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11182 */;
-import { UserRowModes } from "UserRowModes" /* 10552 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11200 */;
+import { UserRowModes } from "UserRowModes" /* 10570 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -262,7 +262,7 @@ export default function ShareScreen(sharedContent) {
                               c4 = 3;
                               return { value: false, done: true };
                             } else {
-                              obj1 = callback(13555);
+                              obj1 = callback(13574);
                               obj1 = { attachments: null, channel: null, comment: null };
                               obj1[0] = closure_1_1;
                               obj1[1] = channel;

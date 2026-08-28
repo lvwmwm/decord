@@ -1,17 +1,17 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16582
+// Function ID: 16583
 // Name: useSoundButtonStyleConfig
-// Dependencies: [5, 19, 4437, 1302, 16555, 5575, 1494, 589, 1363, 1374, 6134, 2]
+// Dependencies: [5, 19, 4438, 1302, 16573, 5588, 1494, 589, 1363, 1374, 6147, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 16564 (useSoundButtonStyleConfig)
+// Module 16582 (useSoundButtonStyleConfig)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
-import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT" /* 16555 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5575 */;
+import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT" /* 16573 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5588 */;
 
 const require = arg1;
 ({ SOUNDS_PER_ROW: error, SOUND_ROW_PADDING: closure_8 } = SOUND_BUTTON_HEIGHT);

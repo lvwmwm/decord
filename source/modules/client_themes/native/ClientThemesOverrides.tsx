@@ -1,20 +1,20 @@
-// Module ID: 7549
-// Function ID: 7550
+// Module ID: 7563
+// Function ID: 7564
 // Name: useGradientBottom
-// Dependencies: [19, 4445, 4264, 7550, 2]
+// Dependencies: [19, 4446, 4265, 7564, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 7549 (useGradientBottom)
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7550 */;
+// Module 7563 (useGradientBottom)
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7564 */;
 import closure_3 from "noop" /* 19 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 let closure_4 = createCacheKey.createStyles({ none: { backgroundColor: "transparent" } });
 const result = require("set").fileFinishedImporting("modules/client_themes/native/ClientThemesOverrides.tsx");
 
 export const useGradientBottom = function useGradientBottom() {
-  gradientValue = gradientValue(4264).useGradientValue(gradientValue(4264).GradientPercentage.END);
+  gradientValue = gradientValue(4265).useGradientValue(gradientValue(4265).GradientPercentage.END);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp2;
@@ -27,7 +27,7 @@ export const useGradientBottom = function useGradientBottom() {
   }, items);
 };
 export const useGradientTop = function useGradientTop() {
-  gradientValue = gradientValue(4264).useGradientValue(gradientValue(4264).GradientPercentage.START);
+  gradientValue = gradientValue(4265).useGradientValue(gradientValue(4265).GradientPercentage.START);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp2;
@@ -40,7 +40,7 @@ export const useGradientTop = function useGradientTop() {
   }, items);
 };
 export const useGradientMidpoint = function useGradientMidpoint() {
-  gradientValue = gradientValue(4264).useGradientValue(gradientValue(4264).GradientPercentage.MID);
+  gradientValue = gradientValue(4265).useGradientValue(gradientValue(4265).GradientPercentage.MID);
   const items = [gradientValue];
   return React.useMemo(() => {
     let tmp2;

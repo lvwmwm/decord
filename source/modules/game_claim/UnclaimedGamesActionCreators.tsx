@@ -1,14 +1,14 @@
-// Module ID: 15693
-// Function ID: 15694
+// Module ID: 15711
+// Function ID: 15712
 // Name: fetchUnclaimedGames
-// Dependencies: [5, 15694, 676, 530, 709, 589, 687, 584, 2]
+// Dependencies: [5, 15712, 676, 530, 709, 589, 687, 584, 2]
 // Exports: useHasUnclaimedGames, useUnclaimedGameIdsForGuild
 
-// Module 15693 (fetchUnclaimedGames)
+// Module 15711 (fetchUnclaimedGames)
 import failsDefault from "fails" /* 584 */;
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import importDefaultResult from "getMap" /* 15694 */;
+import importDefaultResult from "getMap" /* 15712 */;
 import { Endpoints } from "ME" /* 676 */;
 import initialize from "initialize" /* 589 */;
 

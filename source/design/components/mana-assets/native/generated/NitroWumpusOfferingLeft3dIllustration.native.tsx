@@ -1,14 +1,14 @@
-// Module ID: 6813
-// Function ID: 6814
+// Module ID: 6826
+// Function ID: 6827
 // Name: NitroWumpusOfferingLeft3dIllustration
-// Dependencies: [21, 5445, 6814, 2]
+// Dependencies: [21, 5458, 6827, 2]
 // Exports: NitroWumpusOfferingLeft3dIllustration
 
-// Module 6813 (NitroWumpusOfferingLeft3dIllustration)
+// Module 6826 (NitroWumpusOfferingLeft3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6814 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6827 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroWumpusOfferingLeft3dIllustration.native.tsx");

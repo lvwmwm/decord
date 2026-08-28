@@ -1,18 +1,18 @@
-// Module ID: 9766
-// Function ID: 9767
+// Module ID: 9784
+// Function ID: 9785
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [5, 32, 19, 1218, 4496, 4519, 9762, 4509, 589, 38, 206, 9745, 2]
+// Dependencies: [5, 32, 19, 1218, 4497, 4520, 9780, 4510, 589, 38, 206, 9763, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 9766 (useSecureFramesPairwiseFingerprint)
+// Module 9784 (useSecureFramesPairwiseFingerprint)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_8 from "createRTCConnection" /* 4519 */;
-import { SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION as closure_9 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9762 */;
-import { Features } from "DesktopSources" /* 4509 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_8 from "createRTCConnection" /* 4520 */;
+import { SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION as closure_9 } from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9780 */;
+import { Features } from "DesktopSources" /* 4510 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesPairwiseFingerprint.tsx");

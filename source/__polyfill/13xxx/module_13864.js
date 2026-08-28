@@ -1,12 +1,23 @@
 // Module ID: 13864
 // Function ID: 13865
-// Dependencies: [13865, 13930]
+// Dependencies: [13865, 13866]
 
 // Module 13864
-import assign from "assign" /* 13930 */;
-import module_13865 from "module_13865" /* 13865 */;
-
-let obj = { target: "Object", stat: true, arity: 2, forced: null };
-obj[3] = Object.assign !== assign;
-obj = { assign };
-module_13865(obj, obj);
+const require = arg1;
+const dependencyMap = arg6;
+arg5.shouldPolyfill = undefined;
+arg5.supportedValuesOf = undefined;
+let obj = {
+  enumerable: true,
+  get() {
+    return require(13865) /* shouldPolyfill */.shouldPolyfill;
+  }
+};
+Object.defineProperty(arg5, "shouldPolyfill", obj);
+obj = {
+  enumerable: true,
+  get() {
+    return require(13866) /* supportedValuesOf */.supportedValuesOf;
+  }
+};
+Object.defineProperty(arg5, "supportedValuesOf", obj);

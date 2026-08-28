@@ -1,10 +1,10 @@
-// Module ID: 9670
-// Function ID: 9671
+// Module ID: 9688
+// Function ID: 9689
 // Name: getGuildEventImageURL
 // Dependencies: [676, 1469, 2]
 // Exports: default
 
-// Module 9670 (getGuildEventImageURL)
+// Module 9688 (getGuildEventImageURL)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import handleImageLoad from "handleImageLoad" /* 1469 */;

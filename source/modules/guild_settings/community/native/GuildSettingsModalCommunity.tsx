@@ -1,23 +1,23 @@
-// Module ID: 17152
-// Function ID: 17153
+// Module ID: 17170
+// Function ID: 17171
 // Name: GuildSettingsModalCommunity
-// Dependencies: [19, 1391, 1982, 4089, 4098, 1922, 9650, 15978, 676, 21, 4445, 712, 4165, 1500, 589, 9649, 1236, 6189, 5447, 4639, 4412, 9285, 2009, 8295, 4878, 5944, 5551, 2]
+// Dependencies: [19, 1391, 1983, 4090, 4099, 1923, 9668, 15996, 676, 21, 4446, 712, 4166, 1500, 589, 9667, 1236, 6202, 5460, 4640, 4413, 9303, 2010, 8309, 4891, 5957, 5564, 2]
 // Exports: default
 
-// Module 17152 (GuildSettingsModalCommunity)
+// Module 17170 (GuildSettingsModalCommunity)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "comparator" /* 1982 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_6 } from "comparator" /* 1982 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_8 from "markAllUserIdListsStale" /* 4098 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import closure_10 from "handleFormInit" /* 9650 */;
-import { calculateLocaleOptions } from "GuildPrimaryCategory" /* 15978 */;
+import closure_5 from "comparator" /* 1983 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_6 } from "comparator" /* 1983 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_8 from "markAllUserIdListsStale" /* 4099 */;
+import closure_9 from "mergeGuildAvatar" /* 1923 */;
+import closure_10 from "handleFormInit" /* 9668 */;
+import { calculateLocaleOptions } from "GuildPrimaryCategory" /* 15996 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ ChannelTypes: closure_12, GuildFeatures: map1, GuildSettingsSections: closure_14, Permissions: closure_15 } = ME);
@@ -193,10 +193,10 @@ export default function GuildSettingsModalCommunity(guildId) {
     obj[0] = intl.string(preferredLocale(navigation[16]).t.Yr6nGx);
     obj[1] = callback1();
     obj[2] = function onItemSelect(rulesChannelId) {
-      let obj = callback(9649);
+      let obj = callback(9667);
       obj = { rulesChannelId };
       obj.updateGuild(obj);
-      callback(4412).hideActionSheet();
+      callback(4413).hideActionSheet();
     };
     let id;
     if (rulesChannel != null) {
@@ -213,10 +213,10 @@ export default function GuildSettingsModalCommunity(guildId) {
     obj[0] = intl.string(preferredLocale(navigation[16]).t.VqhxxN);
     obj[1] = callback1();
     obj[2] = function onItemSelect(publicUpdatesChannelId) {
-      let obj = callback(9649);
+      let obj = callback(9667);
       obj = { publicUpdatesChannelId };
       obj.updateGuild(obj);
-      callback(4412).hideActionSheet();
+      callback(4413).hideActionSheet();
     };
     let id;
     if (publicUpdatesChannel != null) {

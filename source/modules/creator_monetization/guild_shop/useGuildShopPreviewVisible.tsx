@@ -1,11 +1,11 @@
-// Module ID: 6062
-// Function ID: 6063
+// Module ID: 6075
+// Function ID: 6076
 // Name: useGuildShopPreviewVisible
-// Dependencies: [4089, 676, 4266, 1377, 647, 6057, 2]
+// Dependencies: [4090, 676, 4267, 1377, 647, 6070, 2]
 // Exports: useGuildShopPreviewVisible
 
-// Module 6062 (useGuildShopPreviewVisible)
-import closure_2 from "getUncachedChannelPermissions" /* 4089 */;
+// Module 6075 (useGuildShopPreviewVisible)
+import closure_2 from "getUncachedChannelPermissions" /* 4090 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -14,8 +14,8 @@ let result = require("set").fileFinishedImporting("modules/creator_monetization/
 
 export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(features) {
   const _require = features;
-  const result = _require(4266).useIsDismissibleContentDismissed_UNSAFE(_require(1377).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
-  const obj = _require(4266);
+  const result = _require(4267).useIsDismissibleContentDismissed_UNSAFE(_require(1377).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
+  const obj = _require(4267);
   const tmp = _require;
   const items = [closure_2];
   let flag;
@@ -40,9 +40,9 @@ export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(fe
   }
   const items1 = [, , ];
   ({ CREATOR_MONETIZABLE: arr2[0], CREATOR_MONETIZABLE_PROVISIONAL: arr2[1], ROLE_SUBSCRIPTIONS_ENABLED: arr2[2] } = constants);
-  const guildEligibleForGuildProducts = tmp(6057).useGuildEligibleForGuildProducts(id);
+  const guildEligibleForGuildProducts = tmp(6070).useGuildEligibleForGuildProducts(id);
   let tmp9 = null != features;
-  const tmpResult = tmp(6057);
+  const tmpResult = tmp(6070);
   if (tmp9) {
     tmp9 = stateFromStores;
   }

@@ -1,10 +1,10 @@
-// Module ID: 4961
-// Function ID: 4962
+// Module ID: 4974
+// Function ID: 4975
 // Name: items
-// Dependencies: [4270, 2]
+// Dependencies: [4271, 2]
 
-// Module 4961 (items)
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4270 */;
+// Module 4974 (items)
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4271 */;
 import set from "set" /* 2 */;
 
 const items = [{ field_type: MAX_RESULTS_PER_PAGE.VerificationFormFieldTypes.VERIFICATION }];

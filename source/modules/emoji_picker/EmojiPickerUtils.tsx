@@ -1,27 +1,27 @@
-// Module ID: 9023
-// Function ID: 9024
+// Module ID: 9041
+// Function ID: 9042
 // Name: initializeSearch
-// Dependencies: [19, 5353, 1910, 5333, 1922, 5357, 676, 1925, 1338, 1924, 514, 9024, 4653, 9025, 9027, 9028, 589, 1946, 9029, 1236, 4106, 4102, 698, 12, 687, 1374, 2]
+// Dependencies: [19, 5366, 1910, 5346, 1923, 5370, 676, 1926, 1338, 1925, 514, 9042, 4666, 9043, 9045, 9046, 589, 1947, 9047, 1236, 4107, 4103, 698, 12, 687, 1374, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useFavoriteEmojis, useFrequentlyUsedEmojis, useFrequentlyUsedReactionEmojis, useIsFavoriteEmoji
 
-// Module 9023 (initializeSearch)
+// Module 9041 (initializeSearch)
 import v1 from "v1" /* 514 */;
 import setDefault from "set" /* 687 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4102 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4653 */;
-import withEqualityFn from "withEqualityFn" /* 9024 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4103 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4666 */;
+import withEqualityFn from "withEqualityFn" /* 9042 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5353 */;
+import closure_4 from "getEmojiToGroupId" /* 5366 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "insertUnsortedGuilds" /* 5333 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5357 */;
+import closure_6 from "insertUnsortedGuilds" /* 5346 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5370 */;
 import ME from "ME" /* 676 */;
-import set from "set" /* 1925 */;
+import set from "set" /* 1926 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1338 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1925 */;
 import apply from "apply" /* 12 */;
 
 require = arg1;

@@ -1,21 +1,21 @@
-// Module ID: 15477
-// Function ID: 15478
+// Module ID: 15495
+// Function ID: 15496
 // Name: PasswordStrength
-// Dependencies: [109, 32, 19, 7649, 15450, 21, 4445, 712, 4185, 15474, 1236, 4441, 15468, 7663, 589, 4144, 7638, 4169, 7674, 7676, 2]
+// Dependencies: [109, 32, 19, 7663, 15468, 21, 4446, 712, 4186, 15492, 1236, 4442, 15486, 7677, 589, 4145, 7652, 4170, 7688, 7690, 2]
 
-// Module 15477 (PasswordStrength)
+// Module 15495 (PasswordStrength)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import PasswordScore from "PasswordScore" /* 15474 */;
+import Text from "Text" /* 4442 */;
+import PasswordScore from "PasswordScore" /* 15492 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_7 from "handleSetLocationMetadata" /* 7649 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15450 */;
+import closure_7 from "handleSetLocationMetadata" /* 7663 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15468 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import { FadeIn, FadeOut, LinearTransition, Easing } from "module_4185" /* 4185 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import { FadeIn, FadeOut, LinearTransition, Easing } from "module_4186" /* 4186 */;
 
 require = arg1;
 function PasswordStrength(passwordScore) {
@@ -30,13 +30,13 @@ function PasswordStrength(passwordScore) {
             const intl2 = tmp9(1236).intl;
             let str = intl2.string(tmp9(1236).t["w/8TuV"]);
             let strong = tmp.weak;
-          } else if (passwordScore === tmp9(15474).PasswordScore.MEDIUM) {
+          } else if (passwordScore === tmp9(15492).PasswordScore.MEDIUM) {
             const intl = tmp9(1236).intl;
             str = intl.string(tmp9(1236).t["2fmTpT"]);
             strong = tmp.medium;
           } else {
             str = "";
-            if (passwordScore === tmp9(15474).PasswordScore.STRONG) {
+            if (passwordScore === tmp9(15492).PasswordScore.STRONG) {
               const intl4 = tmp9(1236).intl;
               str = intl4.string(tmp9(1236).t.Xraqqc);
               strong = tmp.strong;
@@ -77,7 +77,7 @@ obj3[1] = require("module_300");
 const obj4 = { layout: null };
 const obj2 = { color: ThemesDefault.colors.TEXT_FEEDBACK_POSITIVE };
 obj4[0] = require("module_300");
-const easingResult = LinearTransition.easing(Easing.inOut(require("module_4185").Easing.quad));
+const easingResult = LinearTransition.easing(Easing.inOut(require("module_4186").Easing.quad));
 const forwardRefResult = importAllResult.forwardRef((arg0, ref) => {
   ({ password, onPasswordChange } = arg0);
   ({ returnKeyType, autoFocus } = arg0);

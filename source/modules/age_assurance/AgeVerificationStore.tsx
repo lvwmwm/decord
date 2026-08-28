@@ -1,13 +1,13 @@
-// Module ID: 8640
-// Function ID: 8641
+// Module ID: 8656
+// Function ID: 8657
 // Name: initialize
-// Dependencies: [1922, 595, 589, 709, 2]
+// Dependencies: [1923, 595, 589, 709, 2]
 
-// Module 8640 (initialize)
+// Module 8656 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 let c3 = 86400000;

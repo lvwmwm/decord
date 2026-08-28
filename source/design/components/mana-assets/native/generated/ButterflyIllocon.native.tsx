@@ -1,14 +1,14 @@
-// Module ID: 6331
-// Function ID: 6332
+// Module ID: 6344
+// Function ID: 6345
 // Name: ButterflyIllocon
-// Dependencies: [21, 5445, 6332, 2]
+// Dependencies: [21, 5458, 6345, 2]
 // Exports: ButterflyIllocon
 
-// Module 6331 (ButterflyIllocon)
+// Module 6344 (ButterflyIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6332 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6345 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ButterflyIllocon.native.tsx");

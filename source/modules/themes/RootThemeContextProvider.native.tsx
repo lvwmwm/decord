@@ -1,12 +1,12 @@
-// Module ID: 14137
-// Function ID: 14138
+// Module ID: 14156
+// Function ID: 14157
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4437, 1302, 505, 21, 589, 4295, 1367, 7936, 14138, 4172, 10078, 4450, 2]
+// Dependencies: [19, 4438, 1302, 505, 21, 589, 4296, 1367, 7950, 14157, 4173, 10096, 4451, 2]
 // Exports: RootThemeContextProvider
 
-// Module 14137 (RootThemeContextProvider)
+// Module 14156 (RootThemeContextProvider)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import { jsx } from "jsxProd" /* 21 */;

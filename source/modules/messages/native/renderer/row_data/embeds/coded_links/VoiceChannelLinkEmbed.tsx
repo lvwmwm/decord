@@ -1,23 +1,23 @@
-// Module ID: 12801
-// Function ID: 12802
+// Module ID: 12820
+// Function ID: 12821
 // Name: createVoiceChannelLinkEmbed
-// Dependencies: [32, 17, 1434, 1391, 1910, 4089, 4098, 1922, 676, 7414, 7787, 1435, 500, 1236, 4933, 4639, 2]
+// Dependencies: [32, 17, 1434, 1391, 1910, 4090, 4099, 1923, 676, 7428, 7801, 1435, 500, 1236, 4946, 4640, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 12801 (createVoiceChannelLinkEmbed)
+// Module 12820 (createVoiceChannelLinkEmbed)
 import set from "set" /* 500 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7787 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7801 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { getGuildAcronym } from "GuildNSFWContentLevel" /* 1434 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_9 from "markAllUserIdListsStale" /* 4098 */;
-import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_9 from "markAllUserIdListsStale" /* 4099 */;
+import closure_10 from "mergeGuildAvatar" /* 1923 */;
 import { Permissions } from "ME" /* 676 */;
-import { InviteTypes } from "InviteSendStates" /* 7414 */;
+import { InviteTypes } from "InviteSendStates" /* 7428 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/VoiceChannelLinkEmbed.tsx");
@@ -75,14 +75,14 @@ export const createVoiceChannelLinkEmbed = function createVoiceChannelLinkEmbed(
             obj.acceptLabelText = stringResult;
             obj.onlineText = undefined;
             obj.memberText = undefined;
-            let tmp16Result = tmp16(4933);
+            let tmp16Result = tmp16(4946);
             const assetSource = Image.resolveAssetSource(tmp16Result.getChannelIcon(channel));
             let uri;
             if (assetSource != null) {
               uri = assetSource.uri;
             }
             obj.channelIcon = uri;
-            tmp16Result = tmp16(4639);
+            tmp16Result = tmp16(4640);
             obj.titleText = tmp16Result.computeChannelName(channel, closure_10, closure_9);
             obj.titleColor = colors.titleColor;
             let tmp24;

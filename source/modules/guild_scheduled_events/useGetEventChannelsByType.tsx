@@ -1,16 +1,16 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 9635
+// Function ID: 9636
 // Name: getEventChannelsByType
-// Dependencies: [1396, 1982, 4089, 9562, 589, 9561, 2]
+// Dependencies: [1396, 1983, 4090, 9580, 589, 9579, 2]
 // Exports: useCanCreateEventInStageChannel, useCanCreateEventInVoiceChannel, useGetEventChannelsByType
 
-// Module 9617 (getEventChannelsByType)
-import canManageResource from "canManageResource" /* 9561 */;
+// Module 9635 (getEventChannelsByType)
+import canManageResource from "canManageResource" /* 9579 */;
 import closure_2 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import closure_3 from "comparator" /* 1982 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4089 */;
-import VIEW_CHANNEL from "VIEW_CHANNEL" /* 9562 */;
+import closure_3 from "comparator" /* 1983 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1983 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
+import VIEW_CHANNEL from "VIEW_CHANNEL" /* 9580 */;
 
 require = arg1;
 function getEventChannelsByType(id, channelTypeFromEntity) {

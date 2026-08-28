@@ -1,15 +1,15 @@
-// Module ID: 13255
-// Function ID: 13256
+// Module ID: 13274
+// Function ID: 13275
 // Name: handleConnectionOpen
-// Dependencies: [4358, 1212, 13256, 13257, 589, 709, 2]
+// Dependencies: [4359, 1212, 13275, 13276, 589, 709, 2]
 
-// Module 13255 (handleConnectionOpen)
+// Module 13274 (handleConnectionOpen)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcher from "dispatcher" /* 709 */;
-import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 13257 */;
-import closure_3 from "getHash" /* 4358 */;
+import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 13276 */;
+import closure_3 from "getHash" /* 4359 */;
 import closure_4 from "initialize" /* 1212 */;
-import apexExperiment from "apexExperiment" /* 13256 */;
+import apexExperiment from "apexExperiment" /* 13275 */;
 import importDefaultResult from "dispatcher" /* 709 */;
 
 require = arg1;

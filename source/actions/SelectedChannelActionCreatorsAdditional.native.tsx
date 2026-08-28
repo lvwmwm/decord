@@ -1,18 +1,18 @@
-// Module ID: 5308
-// Function ID: 5309
+// Module ID: 5321
+// Function ID: 5322
 // Name: selectVoiceChannelAdditional
-// Dependencies: [1391, 1910, 5309, 4089, 1981, 1922, 4464, 5310, 4631, 5311, 4161, 5312, 5313, 4412, 5325, 2009, 13198, 514, 709, 2]
+// Dependencies: [1391, 1910, 5322, 4090, 1982, 1923, 4465, 5323, 4632, 5324, 4162, 5325, 5326, 4413, 5338, 2010, 13217, 514, 709, 2]
 // Exports: selectVoiceChannelAdditional
 
-// Module 5308 (selectVoiceChannelAdditional)
+// Module 5321 (selectVoiceChannelAdditional)
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "recomputeGuild" /* 5309 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_7 from "handleConnectionOpen" /* 1981 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import closure_9 from "updateVoiceState" /* 4464 */;
-import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 5310 */;
+import closure_5 from "recomputeGuild" /* 5322 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_7 from "handleConnectionOpen" /* 1982 */;
+import closure_8 from "mergeGuildAvatar" /* 1923 */;
+import closure_9 from "updateVoiceState" /* 4465 */;
+import { STAGE_BOOSTING_SHEET_KEY } from "MAX_STAGE_TOPIC_LENGTH" /* 5323 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("actions/SelectedChannelActionCreatorsAdditional.native.tsx");

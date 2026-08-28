@@ -1,16 +1,16 @@
-// Module ID: 17014
-// Function ID: 17015
+// Module ID: 17032
+// Function ID: 17033
 // Name: close
-// Dependencies: [32, 19, 1910, 9650, 676, 21, 15645, 9649, 503, 1236, 5447, 17015, 17027, 17031, 17032, 17042, 17057, 17058, 17070, 17082, 17084, 16333, 16342, 17092, 17096, 17098, 16344, 15646, 17099, 17100, 17120, 17139, 17143, 17146, 11323, 11336, 11338, 17147, 17152, 17153, 17175, 17215, 17216, 17232, 17271, 17275, 17276, 17279, 17287, 1629, 5893, 589, 5960, 2]
+// Dependencies: [32, 19, 1910, 9668, 676, 21, 15663, 9667, 503, 1236, 5460, 17033, 17045, 17049, 17050, 17060, 17075, 17076, 17088, 17100, 17102, 16351, 16360, 17110, 17114, 17116, 16362, 15664, 17117, 17118, 17138, 17157, 17161, 17164, 11342, 11355, 11357, 17165, 17170, 17171, 17193, 17233, 17234, 17250, 17289, 17293, 17294, 17297, 17305, 1629, 5906, 589, 5973, 2]
 // Exports: default
 
-// Module 17014 (close)
-import _modDef9649 from "module_9649" /* 9649 */;
-import dispatcherDefault from "dispatcher" /* 15645 */;
+// Module 17032 (close)
+import _modDef9667 from "module_9667" /* 9667 */;
+import dispatcherDefault from "dispatcher" /* 15663 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "handleFormInit" /* 9650 */;
+import closure_6 from "handleFormInit" /* 9668 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -18,7 +18,7 @@ const require = arg1;
 function close() {
   dispatcherDefault.terminate();
   const obj = dispatcherDefault;
-  _modDef9649.close();
+  _modDef9667.close();
 }
 ({ GuildSettingsSections: error, WebhookTypes: closure_8 } = ME);
 const result = require("set").fileFinishedImporting("modules/guild_settings/native/GuildSettingsModal.tsx");

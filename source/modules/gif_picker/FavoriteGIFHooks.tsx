@@ -1,11 +1,11 @@
-// Module ID: 10281
-// Function ID: 10282
+// Module ID: 10299
+// Function ID: 10300
 // Name: useFavoriteGIFs
-// Dependencies: [19, 10282, 12, 2]
+// Dependencies: [19, 10300, 12, 2]
 // Exports: useFavoriteGIFs, useIsFavoriteGIF, useShouldShowTooltipOnFavorite, useSortedFavoriteGIFs
 
-// Module 10281 (useFavoriteGIFs)
-import useFrecencySettings from "useFrecencySettings" /* 10282 */;
+// Module 10299 (useFavoriteGIFs)
+import useFrecencySettings from "useFrecencySettings" /* 10300 */;
 import closure_3 from "noop" /* 19 */;
 
 require = arg1;
@@ -25,7 +25,7 @@ export const useFavoriteGIFs = function useFavoriteGIFs() {
 };
 export const useSortedFavoriteGIFs = function useSortedFavoriteGIFs(transformFavoriteGifUrl) {
   const _require = transformFavoriteGifUrl;
-  const favoriteGifs = _require(10282).useFrecencySettings().favoriteGifs;
+  const favoriteGifs = _require(10300).useFrecencySettings().favoriteGifs;
   let gifs;
   if (favoriteGifs != null) {
     gifs = favoriteGifs.gifs;

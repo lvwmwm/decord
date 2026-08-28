@@ -1,10 +1,10 @@
-// Module ID: 13750
-// Function ID: 13751
+// Module ID: 13769
+// Function ID: 13770
 // Name: setClientState
 // Dependencies: [17, 500, 502, 2]
 // Exports: setClientState
 
-// Module 13750 (setClientState)
+// Module 13769 (setClientState)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import enforcingDefault from "enforcing" /* 502 */;

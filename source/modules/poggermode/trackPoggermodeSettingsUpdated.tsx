@@ -1,13 +1,13 @@
-// Module ID: 7510
-// Function ID: 7511
+// Module ID: 7524
+// Function ID: 7525
 // Name: getScreenshakeLocationName
-// Dependencies: [7357, 676, 12, 698, 2]
+// Dependencies: [7371, 676, 12, 698, 2]
 
-// Module 7510 (getScreenshakeLocationName)
+// Module 7524 (getScreenshakeLocationName)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import ConfettiLocation from "ConfettiLocation" /* 7357 */;
+import ConfettiLocation from "ConfettiLocation" /* 7371 */;
 import importDefaultResult from "apply" /* 12 */;
 
 function getScreenshakeLocationName(arg0) {

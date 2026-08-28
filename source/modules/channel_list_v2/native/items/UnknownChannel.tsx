@@ -1,19 +1,19 @@
-// Module ID: 15740
-// Function ID: 15741
+// Module ID: 15758
+// Function ID: 15759
 // Name: handlePress
-// Dependencies: [19, 10121, 4655, 21, 4445, 712, 4162, 1236, 10811, 4639, 10571, 15617, 2]
+// Dependencies: [19, 10139, 4668, 21, 4446, 712, 4163, 1236, 10829, 4640, 10589, 15635, 2]
 
-// Module 15740 (handlePress)
+// Module 15758 (handlePress)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import dispatcherDefault from "dispatcher" /* 4162 */;
-import computeChannelNameDefault from "computeChannelName" /* 4639 */;
-import registerAssetDefault from "registerAsset" /* 10811 */;
-import getChannelModeDefault from "getChannelMode" /* 15617 */;
+import dispatcherDefault from "dispatcher" /* 4163 */;
+import computeChannelNameDefault from "computeChannelName" /* 4640 */;
+import registerAssetDefault from "registerAsset" /* 10829 */;
+import getChannelModeDefault from "getChannelMode" /* 15635 */;
 import importAllResult from "noop" /* 19 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4655 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4668 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function handlePress() {

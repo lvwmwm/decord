@@ -1,10 +1,10 @@
-// Module ID: 8616
-// Function ID: 8617
+// Module ID: 8631
+// Function ID: 8632
 // Name: AGE_VERIFICATION_INCODE_PATH
 // Dependencies: [2]
 // Exports: buildIncodeFallbackSessionInjection, buildIncodeParamsInjection, parseIncodeWebViewMessage, postIncodeCaptureComplete, postIncodeFallbackRequest, postIncodeResult, readInjectedIncodeParams
 
-// Module 8616 (AGE_VERIFICATION_INCODE_PATH)
+// Module 8631 (AGE_VERIFICATION_INCODE_PATH)
 import set from "set" /* 2 */;
 
 let c0 = "__DISCORD_AGE_VERIFICATION_INCODE_PARAMS__";

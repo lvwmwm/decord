@@ -1,19 +1,19 @@
-// Module ID: 6030
-// Function ID: 6031
+// Module ID: 6043
+// Function ID: 6044
 // Name: useSKUPrice
-// Dependencies: [19, 1996, 1922, 6031, 676, 1924, 12, 6032, 501, 1403, 589, 6025, 6033, 4107, 6040, 2]
+// Dependencies: [19, 1997, 1923, 6044, 676, 1925, 12, 6045, 501, 1403, 589, 6038, 6046, 4108, 6053, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 6030 (useSKUPrice)
+// Module 6043 (useSKUPrice)
 import applyDefault from "apply" /* 12 */;
-import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 6032 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6033 */;
+import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 6045 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6046 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "resetStoreState" /* 6031 */;
+import closure_4 from "_getSystemLocale" /* 1997 */;
+import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import closure_6 from "resetStoreState" /* 6044 */;
 import ME from "ME" /* 676 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { PremiumTypes } from "GuildFeatures" /* 1925 */;
 
 require = arg1;
 function useSKUPrice(sku) {
@@ -85,7 +85,7 @@ function useSKUPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "disabled", purchaseType: false, storeHasPrice: false };
+    obj = { userPrice: "r", pricesForPurchaseType: "disabled", purchaseType: true, storeHasPrice: true };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;
@@ -381,7 +381,7 @@ export const useSKUOrbPrice = function useSKUOrbPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "disabled", purchaseType: false, storeHasPrice: false };
+    obj = { userPrice: "r", pricesForPurchaseType: "disabled", purchaseType: true, storeHasPrice: true };
     obj[2] = SELF_PURCHASE;
     obj[3] = null != stateFromStores1;
     return obj;

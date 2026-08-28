@@ -1,15 +1,15 @@
-// Module ID: 7580
-// Function ID: 7581
-// Dependencies: [4961, 676, 698, 5511, 4676, 7581, 2009, 2]
+// Module ID: 7594
+// Function ID: 7595
+// Dependencies: [4974, 676, 698, 5524, 4689, 7595, 2010, 2]
 
-// Module 7580
+// Module 7594
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4676 from "module_4676" /* 4676 */;
-import _fetchVerificationFormDefault from "_fetchVerificationForm" /* 5511 */;
-import items from "items" /* 4961 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
+import _modDef4689 from "module_4689" /* 4689 */;
+import _fetchVerificationFormDefault from "_fetchVerificationForm" /* 5524 */;
+import items from "items" /* 4974 */;
 
 ({ MEMBER_VERIFICATION_TYPE: c3, IN_APP_MEMBER_VERIFICATION_MODAL_KEY: c4 } = items);
 const AnalyticEvents = ME.AnalyticEvents;
@@ -23,7 +23,7 @@ export default {
     expandEventPropertiesDefault.track(AnalyticEvents.OPEN_MODAL, obj);
     const obj2 = expandEventPropertiesDefault;
     obj = { guildId, onClose: connect };
-    _modDef4676.pushLazy(asyncRequireImpl(7581, dependencyMap.paths), obj, closure_4);
+    _modDef4689.pushLazy(asyncRequireImpl(7595, dependencyMap.paths), obj, closure_4);
   },
   closeMemberVerificationModal() {
     let flag = arg0;
@@ -36,6 +36,6 @@ export default {
       obj[0] = closure_3;
       obj.track(AnalyticEvents.MODAL_DISMISSED, obj);
     }
-    _modDef4676.popWithKey(closure_4);
+    _modDef4689.popWithKey(closure_4);
   }
 };

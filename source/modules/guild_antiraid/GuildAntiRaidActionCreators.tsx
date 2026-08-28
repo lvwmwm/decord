@@ -1,15 +1,15 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11337
+// Function ID: 11338
 // Name: _setGuildRaidAlerts
-// Dependencies: [5, 1910, 7857, 676, 698, 4653, 9649, 4043, 530, 10105, 2]
+// Dependencies: [5, 1910, 7871, 676, 698, 4666, 9667, 4044, 530, 10123, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11318 (_setGuildRaidAlerts)
+// Module 11337 (_setGuildRaidAlerts)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4666 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 7857 */;
+import { DEFAULT_LOCKDOWN_DURATION } from "GUILD_REPORT_RAID_MOBILE_KEY" /* 7871 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -118,7 +118,7 @@ function _setGuildIncidentActions() {
       }
       let toISOStringResult = null;
       if (tmp5) {
-        let obj2 = callback2(4043)();
+        let obj2 = callback2(4044)();
         toISOStringResult = obj2.add(tmp8, "hours").toISOString();
         const addResult = obj2.add(tmp8, "hours");
       }
@@ -194,7 +194,7 @@ function _handleResolveRaid() {
               guild = guild.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = callback2(10105)(guild);
+                tmp8 = callback2(10123)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {
@@ -285,7 +285,7 @@ function _handleReportRaid() {
               const guild = closure_1_4.getGuild(callback);
               let tmp8 = null;
               if (null != guild) {
-                tmp8 = v0(10105)(guild);
+                tmp8 = v0(10123)(guild);
               }
               let tmp5 = null;
               if (null != tmp8) {

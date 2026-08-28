@@ -1,12 +1,12 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 12018
+// Function ID: 12019
 // Name: useGetGuildPowerupBannerImage
-// Dependencies: [4437, 589, 2]
+// Dependencies: [4438, 589, 2]
 // Exports: default, getGuildPowerupBannerImage
 
-// Module 11999 (useGetGuildPowerupBannerImage)
+// Module 12018 (useGetGuildPowerupBannerImage)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGetGuildPowerupBannerImage.tsx");

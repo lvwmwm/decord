@@ -1,12 +1,12 @@
-// Module ID: 13326
-// Function ID: 13327
+// Module ID: 13345
+// Function ID: 13346
 // Name: checkGuildIsHub
-// Dependencies: [6013, 1910, 676, 589, 709, 2]
+// Dependencies: [6026, 1910, 676, 589, 709, 2]
 
-// Module 13326 (checkGuildIsHub)
+// Module 13345 (checkGuildIsHub)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "set" /* 6013 */;
+import closure_0 from "set" /* 6026 */;
 import closure_1 from "createGuildRecordFromRust" /* 1910 */;
 import { GuildFeatures } from "ME" /* 676 */;
 

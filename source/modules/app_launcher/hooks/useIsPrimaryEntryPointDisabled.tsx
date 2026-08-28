@@ -1,13 +1,13 @@
-// Module ID: 11631
-// Function ID: 11632
+// Module ID: 11650
+// Function ID: 11651
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [4471, 4089, 505, 589, 9407, 11546, 8076, 8369, 500, 1236, 2]
+// Dependencies: [4472, 4090, 505, 589, 9425, 11565, 8090, 8383, 500, 1236, 2]
 // Exports: default
 
-// Module 11631 (useIsPrimaryEntryPointDisabled)
-import getPlatformDefault from "getPlatform" /* 8369 */;
-import closure_3 from "createExecutable" /* 4471 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4089 */;
+// Module 11650 (useIsPrimaryEntryPointDisabled)
+import getPlatformDefault from "getPlatform" /* 8383 */;
+import closure_3 from "createExecutable" /* 4472 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;
@@ -27,10 +27,10 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   if (channel != null) {
     id = channel.id;
   }
-  const embeddedActivityLaunchability = channel(9407).useEmbeddedActivityLaunchability(id);
+  const embeddedActivityLaunchability = channel(9425).useEmbeddedActivityLaunchability(id);
   let flag = false;
-  if (channel(11546).ActivityAction.LEAVE !== activityAction) {
-    if (tmp2(11546).ActivityAction.START === activityAction) {
+  if (channel(11565).ActivityAction.LEAVE !== activityAction) {
+    if (tmp2(11565).ActivityAction.START === activityAction) {
       flag = false;
       if (null != channel) {
         let isGuildVoiceResult;
@@ -39,11 +39,11 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         }
         if (isGuildVoiceResult) {
           flag = false;
-          if (embeddedActivityLaunchability !== tmp2(9407).EmbeddedActivityLaunchability.CAN_LAUNCH) {
+          if (embeddedActivityLaunchability !== tmp2(9425).EmbeddedActivityLaunchability.CAN_LAUNCH) {
             flag = true;
           }
         } else {
-          let tmp2Result = tmp2(8076);
+          let tmp2Result = tmp2(8090);
           flag = false;
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
@@ -52,7 +52,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
       }
     } else {
       flag = false;
-      if (tmp2(11546).ActivityAction.JOIN === activityAction) {
+      if (tmp2(11565).ActivityAction.JOIN === activityAction) {
         let isGuildVoiceResult1;
         if (channel != null) {
           isGuildVoiceResult1 = channel.isGuildVoice();
@@ -60,7 +60,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
         if (isGuildVoiceResult1) {
           flag = !stateFromStores;
         } else {
-          tmp2Result = tmp2(8076);
+          tmp2Result = tmp2(8090);
           flag = false;
           if (!tmp2Result.isActivitiesInTextEnabled(channel)) {
             flag = true;
@@ -71,7 +71,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
   }
   let disabled = flag;
   let reason;
-  if (activityAction !== channel(11546).ActivityAction.LEAVE) {
+  if (activityAction !== channel(11565).ActivityAction.LEAVE) {
     const tmp10 = application instanceof closure_3 ? application.embeddedActivityConfig : application.embedded_activity_config;
     getPlatformDefault;
     tmp2(500);

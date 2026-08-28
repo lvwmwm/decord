@@ -1,11 +1,11 @@
-// Module ID: 5449
-// Function ID: 5450
+// Module ID: 5462
+// Function ID: 5463
 // Name: useDesignToggle
-// Dependencies: [5450, 589, 2]
+// Dependencies: [5463, 589, 2]
 // Exports: default
 
-// Module 5449 (useDesignToggle)
-import closure_2 from "getUserAgnosticState" /* 5450 */;
+// Module 5462 (useDesignToggle)
+import closure_2 from "getUserAgnosticState" /* 5463 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/devtools/design_toggles/useDesignToggle.tsx");

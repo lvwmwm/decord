@@ -1,15 +1,15 @@
-// Module ID: 15253
-// Function ID: 15254
+// Module ID: 15405
+// Function ID: 15406
 // Name: pressable
-// Dependencies: [7816, 676, 4158, 10988, 1236, 2]
+// Dependencies: [7830, 676, 4159, 11006, 1236, 2]
 
-// Module 15253 (pressable)
+// Module 15405 (pressable)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4158 from "module_4158" /* 4158 */;
-import MobileUserSettings from "MobileUserSettings" /* 7816 */;
-import createToggle from "createToggle" /* 10988 */;
+import _modDef4159 from "module_4159" /* 4159 */;
+import MobileUserSettings from "MobileUserSettings" /* 7830 */;
+import createToggle from "createToggle" /* 11006 */;
 
 const MarketingURLs = ME.MarketingURLs;
 const pressable = createToggle.createPressable({
@@ -19,7 +19,7 @@ const pressable = createToggle.createPressable({
   },
   parent: MobileUserSettings.MobileUserSettings.DATA_AND_PRIVACY,
   onPress: function onPrivacyPolicyPress() {
-    _modDef4158.openURL(MarketingURLs.PRIVACY);
+    _modDef4159.openURL(MarketingURLs.PRIVACY);
   },
   withArrow: true
 });
@@ -30,7 +30,7 @@ const obj = {
   },
   parent: MobileUserSettings.MobileUserSettings.DATA_AND_PRIVACY,
   onPress: function onPrivacyPolicyPress() {
-    _modDef4158.openURL(MarketingURLs.PRIVACY);
+    _modDef4159.openURL(MarketingURLs.PRIVACY);
   },
   withArrow: true
 };

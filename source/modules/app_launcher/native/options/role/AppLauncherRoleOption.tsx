@@ -1,13 +1,13 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11689
+// Function ID: 11690
 // Name: AppLauncherRoleOption
-// Dependencies: [32, 19, 1985, 21, 647, 11663, 4412, 11668, 2009, 11668, 2]
+// Dependencies: [32, 19, 1986, 21, 647, 11682, 4413, 11687, 2010, 11687, 2]
 // Exports: default
 
-// Module 11670 (AppLauncherRoleOption)
+// Module 11689 (AppLauncherRoleOption)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1986 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

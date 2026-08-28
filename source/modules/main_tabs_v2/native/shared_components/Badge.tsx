@@ -1,13 +1,13 @@
-// Module ID: 7546
-// Function ID: 7547
+// Module ID: 7560
+// Function ID: 7561
 // Name: DEFAULT_BADGE_SIZE
-// Dependencies: [19, 17, 21, 4445, 712, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 2]
 
-// Module 7546 (DEFAULT_BADGE_SIZE)
+// Module 7560 (DEFAULT_BADGE_SIZE)
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importAllResult from "noop" /* 19 */;
 
 let obj = { badge: null, badgeClassic: null, mask: null };

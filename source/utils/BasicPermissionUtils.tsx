@@ -1,9 +1,9 @@
-// Module ID: 4097
-// Function ID: 4098
+// Module ID: 4098
+// Function ID: 4099
 // Name: has
 // Dependencies: [506, 2]
 
-// Module 4097 (has)
+// Module 4098 (has)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 506 */;
 

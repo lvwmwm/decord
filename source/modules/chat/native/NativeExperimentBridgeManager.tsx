@@ -1,18 +1,18 @@
-// Module ID: 17314
-// Function ID: 17315
+// Module ID: 17332
+// Function ID: 17333
 // Name: syncYYTextReplacementExperiment
-// Dependencies: [17, 1996, 1218, 500, 17315, 5171, 17316, 698, 17317, 530, 5438, 2]
+// Dependencies: [17, 1997, 1218, 500, 17333, 5184, 17334, 698, 17335, 530, 5451, 2]
 
-// Module 17314 (syncYYTextReplacementExperiment)
+// Module 17332 (syncYYTextReplacementExperiment)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set2 from "set" /* 500 */;
 import sendRequest from "sendRequest" /* 530 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5438 */;
-import shouldEnableYYTextReplacement from "shouldEnableYYTextReplacement" /* 17315 */;
-import apexExperimentDefault from "apexExperiment" /* 17317 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
+import initializeDefault from "initialize" /* 5451 */;
+import shouldEnableYYTextReplacement from "shouldEnableYYTextReplacement" /* 17333 */;
+import apexExperimentDefault from "apexExperiment" /* 17335 */;
+import closure_4 from "_getSystemLocale" /* 1997 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 
 function syncYYTextReplacementExperiment() {
@@ -33,7 +33,7 @@ function updateIOSExperiments() {
     if (NSUserDefaultsBridge != null) {
       const setShouldEnableYYTextReplacement = NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
       if (setShouldEnableYYTextReplacement != null) {
-        let tmpResult = tmp(17315);
+        let tmpResult = tmp(17333);
         const result = setShouldEnableYYTextReplacement(tmpResult.shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
       }
     }
@@ -42,7 +42,7 @@ function updateIOSExperiments() {
   if (NSUserDefaultsBridge2 != null) {
     const setShouldFixPushNotificationRawPayload = NSUserDefaultsBridge2.setShouldFixPushNotificationRawPayload;
     if (setShouldFixPushNotificationRawPayload != null) {
-      tmpResult = tmp(5171);
+      tmpResult = tmp(5184);
       const result1 = setShouldFixPushNotificationRawPayload(tmpResult.isIOSPushNotificationRawPayloadFixExperimentEnabled());
     }
   }

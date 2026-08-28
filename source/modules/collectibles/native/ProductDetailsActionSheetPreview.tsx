@@ -1,17 +1,17 @@
-// Module ID: 12454
-// Function ID: 12455
+// Module ID: 12474
+// Function ID: 12475
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4445, 712, 1950, 12455, 12457, 2]
+// Dependencies: [32, 19, 17, 21, 4446, 712, 1951, 12475, 12477, 2]
 // Exports: default
 
-// Module 12454 (ProductDetailsActionSheetPreview)
+// Module 12474 (ProductDetailsActionSheetPreview)
 import ThemesDefault from "Themes" /* 712 */;
-import memoDefault from "memo" /* 12455 */;
+import memoDefault from "memo" /* 12475 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ useCallback: c4, useState: c5 } = noop);
@@ -34,7 +34,7 @@ export default function ProductDetailsActionSheetPreview(onBundleActiveItemChang
     }, []),
     children: null
   };
-  if (product.type === _require(1950).CollectiblesItemType.BUNDLE) {
+  if (product.type === _require(1951).CollectiblesItemType.BUNDLE) {
     obj = { product: null, width: null, handlePreviewPress: null, onTrackPress: null, onActiveItemChange: null };
     obj[0] = product;
     obj[1] = tmp3;
@@ -50,7 +50,7 @@ export default function ProductDetailsActionSheetPreview(onBundleActiveItemChang
     obj1[1] = tmp3;
     obj1[2] = handlePreviewPress;
     obj1[3] = onTrackPress;
-    obj[1] = tmp7(_require(12457).IndividualProductPreview, obj1);
+    obj[1] = tmp7(_require(12477).IndividualProductPreview, obj1);
     tmp7Result = tmp7(tmp8, obj);
   }
   obj[2] = tmp7Result;

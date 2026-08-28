@@ -1,13 +1,13 @@
-// Module ID: 16499
-// Function ID: 16500
-// Dependencies: [19, 1391, 1981, 1390, 21, 589, 4079, 692, 16500, 16509, 2]
+// Module ID: 16517
+// Function ID: 16518
+// Dependencies: [19, 1391, 1982, 1390, 21, 589, 4080, 692, 16518, 16527, 2]
 
-// Module 16499
+// Module 16517
 import initialize from "initialize" /* 589 */;
-import BaseActivityPanelControllerDefault from "BaseActivityPanelController" /* 16500 */;
-import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16509 */;
+import BaseActivityPanelControllerDefault from "BaseActivityPanelController" /* 16518 */;
+import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16527 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "handleConnectionOpen" /* 1981 */;
+import closure_4 from "handleConnectionOpen" /* 1982 */;
 import closure_5 from "participantFromServer" /* 1390 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

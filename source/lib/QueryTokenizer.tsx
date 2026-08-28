@@ -1,9 +1,9 @@
-// Module ID: 11830
-// Function ID: 11831
+// Module ID: 11849
+// Function ID: 11850
 // Name: getMatch
 // Dependencies: [2]
 
-// Module 11830 (getMatch)
+// Module 11849 (getMatch)
 import set from "set" /* 2 */;
 
 function getMatch(str, arg1, index) {

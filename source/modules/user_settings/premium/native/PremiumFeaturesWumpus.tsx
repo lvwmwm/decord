@@ -1,14 +1,14 @@
-// Module ID: 8287
-// Function ID: 8288
+// Module ID: 8301
+// Function ID: 8302
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1924, 21, 4445, 7651, 8288, 8289, 8290, 8291, 8292, 8293, 5445, 2]
+// Dependencies: [19, 1925, 21, 4446, 7665, 8302, 8303, 8304, 8305, 8306, 8307, 5458, 2]
 // Exports: default
 
-// Module 8287 (PremiumFeaturesWumpus)
+// Module 8301 (PremiumFeaturesWumpus)
 import closure_2 from "noop" /* 19 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { PremiumTypes } from "GuildFeatures" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 ({ jsx: c4, Fragment: c5, jsxs: closure_6 } = jsxProd);
 let items = [{ scaleX: -1 }];
@@ -19,7 +19,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   premiumType = premiumType.premiumType;
   dependencyMap = undefined;
   const tmp = callback2();
-  const tmp2 = premiumType(7651)();
+  const tmp2 = premiumType(7665)();
   dependencyMap = tmp2;
   const items = [premiumType, tmp2];
   const memo = React.useMemo(() => {
@@ -44,7 +44,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   }, items);
   ({ wumpusImageSource, cloudsImageSource } = memo);
   let obj = { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource };
-  const items1 = [callback(premiumType(5445), obj), ];
+  const items1 = [callback(premiumType(5458), obj), ];
   const items2 = [tmp.wumpus, ];
   let wumpusLeft = premiumType === PremiumTypes.TIER_0;
   if (wumpusLeft) {
@@ -52,7 +52,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   }
   obj = { children: null };
   items2[1] = wumpusLeft;
-  items1[1] = callback(premiumType(5445), { style: items2, resizeMode: "contain", source: wumpusImageSource });
+  items1[1] = callback(premiumType(5458), { style: items2, resizeMode: "contain", source: wumpusImageSource });
   obj[0] = items1;
   return closure_6(closure_5, obj);
 };

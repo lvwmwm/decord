@@ -1,10 +1,10 @@
-// Module ID: 9528
-// Function ID: 9529
+// Module ID: 9546
+// Function ID: 9547
 // Name: RESPONSIVE_DENSITY_MEDIA_QUERY
 // Dependencies: [1306, 2]
 // Exports: resolveUIDensity
 
-// Module 9528 (RESPONSIVE_DENSITY_MEDIA_QUERY)
+// Module 9546 (RESPONSIVE_DENSITY_MEDIA_QUERY)
 import set from "set" /* 2 */;
 import create from "create" /* 1306 */;
 

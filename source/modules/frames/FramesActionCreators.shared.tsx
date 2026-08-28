@@ -1,17 +1,17 @@
-// Module ID: 9384
-// Function ID: 9385
+// Module ID: 9402
+// Function ID: 9403
 // Name: _launchFrame
-// Dependencies: [5, 9385, 9386, 9387, 9389, 709, 9390, 9373, 9416, 9417, 2]
+// Dependencies: [5, 9403, 9404, 9405, 9407, 709, 9408, 9391, 9434, 9435, 2]
 // Exports: attachFrameIframe, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 9384 (_launchFrame)
+// Module 9402 (_launchFrame)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9389 */;
-import getFramesManagerDefault from "getFramesManager" /* 9417 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9407 */;
+import getFramesManagerDefault from "getFramesManager" /* 9435 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9385 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9386 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9387 */;
+import closure_4 from "map" /* 9403 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9404 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9405 */;
 
 require = arg1;
 function _launchFrame() {
@@ -88,7 +88,7 @@ function _launchFrame() {
                 return obj3;
               } else {
                 if (callback4(callback2) === c5.MAIN) {
-                  let obj9 = callback(9389);
+                  let obj9 = callback(9407);
                   const result = obj9.leaveCurrentEmbeddedActivity();
                   callback6();
                 }
@@ -102,15 +102,15 @@ function _launchFrame() {
                 c5 = 4;
                 c6 = 1;
                 const obj5 = { value: null, done: false };
-                obj5[0] = callback(9390).createProxyTicket(callback, callback3(callback2));
+                obj5[0] = callback(9408).createProxyTicket(callback, callback3(callback2));
                 return obj5;
               }
             }
           } else if (2 === tmp7) {
             frame = 0;
             callback3 = intent;
-            c5 = callback2(9373)();
-            let obj7 = callback(9416);
+            c5 = callback2(9391)();
+            let obj7 = callback(9434);
             c5 = 3;
             c6 = 1;
             const obj6 = { value: null, done: false };
@@ -332,8 +332,8 @@ function _refreshProxyTicket() {
           } else if (2 === tmp9) {
             frame = 1;
             c5 = closure_3;
-            closure_3 = applicationId(9373)();
-            let obj8 = callback(9416);
+            closure_3 = applicationId(9391)();
+            let obj8 = callback(9434);
             c5 = 3;
             c6 = 1;
             const obj4 = { value: null, done: false };

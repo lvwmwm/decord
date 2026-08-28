@@ -1,10 +1,10 @@
-// Module ID: 1921
-// Function ID: 1922
+// Module ID: 1922
+// Function ID: 1923
 // Name: setTimeout
 // Dependencies: [1919, 2]
 // Exports: keepAliveWorkaround, registerTimerPolyfills, setTimersMonitorCallback
 
-// Module 1921 (setTimeout)
+// Module 1922 (setTimeout)
 import set from "set" /* 2 */;
 import typedGlobal from "typedGlobal" /* 1919 */;
 

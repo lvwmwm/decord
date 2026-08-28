@@ -1,9 +1,9 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15712
+// Function ID: 15713
 // Name: getMap
 // Dependencies: [589, 709, 2]
 
-// Module 15694 (getMap)
+// Module 15712 (getMap)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

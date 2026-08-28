@@ -1,11 +1,11 @@
-// Module ID: 4800
-// Function ID: 4801
+// Module ID: 4813
+// Function ID: 4814
 // Name: performRedirect
-// Dependencies: [5, 676, 505, 4791, 4796, 530, 2]
+// Dependencies: [5, 676, 505, 4804, 4809, 530, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 4800 (performRedirect)
-import _validatePaymentSourceBillingAddress from "_validatePaymentSourceBillingAddress" /* 4791 */;
+// Module 4813 (performRedirect)
+import _validatePaymentSourceBillingAddress from "_validatePaymentSourceBillingAddress" /* 4804 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 import { PaymentSourceTypes } from "sum" /* 505 */;
@@ -124,7 +124,7 @@ prototype["getStripe"] = function getStripe() {
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_1(4796).getStripe();
+              obj1[0] = closure_1_1(4809).getStripe();
               return obj1;
             }
           }
@@ -140,7 +140,7 @@ prototype["getStripe"] = function getStripe() {
           closure_0.stripe = arg1;
         }
         if (null == closure_0.stripe) {
-          let obj2 = closure_1_0(4791);
+          let obj2 = closure_1_0(4804);
           throw obj2.dispatchConfirmationError("Stripe cannot be null on a redirect.");
         } else {
           c3 = 3;

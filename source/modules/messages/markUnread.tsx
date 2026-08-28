@@ -1,17 +1,17 @@
-// Module ID: 10243
-// Function ID: 10244
+// Module ID: 10261
+// Function ID: 10262
 // Name: markUnreadBySnowflakeID
-// Dependencies: [5, 4091, 1391, 4688, 4460, 1922, 676, 3, 11, 7442, 530, 2]
+// Dependencies: [5, 4092, 1391, 4701, 4461, 1923, 676, 3, 11, 7456, 530, 2]
 // Exports: default
 
-// Module 10243 (markUnreadBySnowflakeID)
+// Module 10261 (markUnreadBySnowflakeID)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "storeThread" /* 4091 */;
+import closure_4 from "storeThread" /* 4092 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "reinjectEphemerals" /* 4688 */;
-import { shouldBadgeMessage } from "generateOldThreadCutoff" /* 4460 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "reinjectEphemerals" /* 4701 */;
+import { shouldBadgeMessage } from "generateOldThreadCutoff" /* 4461 */;
+import closure_8 from "mergeGuildAvatar" /* 1923 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -73,7 +73,7 @@ function _markUnreadBySnowflakeID() {
                   channel = 1;
                   c6 = 1;
                   obj1 = { value: null, done: false };
-                  obj1[0] = callback2(7442).unarchiveThread(channel, false);
+                  obj1[0] = callback2(7456).unarchiveThread(channel, false);
                   return obj1;
                 }
               }
@@ -107,7 +107,7 @@ function _markUnreadBySnowflakeID() {
             return obj;
           }
           if (!closure_4.hasJoined(callback)) {
-            obj2 = callback2(7442);
+            obj2 = callback2(7456);
             channel = 2;
             c6 = 1;
             const obj5 = { value: null, done: false };

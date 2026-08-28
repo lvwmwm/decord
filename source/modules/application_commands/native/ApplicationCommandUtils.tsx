@@ -1,20 +1,20 @@
-// Module ID: 11701
-// Function ID: 11702
+// Module ID: 11734
+// Function ID: 11735
 // Name: getApplicationCommandsIconSource
-// Dependencies: [4807, 4806, 4904, 1435, 11702, 11703, 7201, 1902, 10345, 8095, 2]
+// Dependencies: [4820, 4819, 4917, 1435, 11735, 11736, 7215, 1902, 10363, 8109, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 11701 (getApplicationCommandsIconSource)
+// Module 11734 (getApplicationCommandsIconSource)
 import set from "set" /* 2 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
 import registerAssetDefault from "registerAsset" /* 1902 */;
-import handleChanged from "handleChanged" /* 4807 */;
-import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4904 */;
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7201 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10345 */;
-import registerAssetDefault2 from "registerAsset" /* 11702 */;
-import registerAssetDefault3 from "registerAsset" /* 11703 */;
-import closure_4 from "map" /* 4806 */;
+import handleChanged from "handleChanged" /* 4820 */;
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4917 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7215 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10363 */;
+import registerAssetDefault2 from "registerAsset" /* 11735 */;
+import registerAssetDefault3 from "registerAsset" /* 11736 */;
+import closure_4 from "map" /* 4819 */;
 
 const DraftType = handleChanged.DraftType;
 const BuiltInSectionId = TRUE_OPTION_NAME.BuiltInSectionId;

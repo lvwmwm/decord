@@ -1,9 +1,9 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 8002
+// Function ID: 8003
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7988 (metadata)
+// Module 8002 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/checkpoint/card-capybara.png.js");

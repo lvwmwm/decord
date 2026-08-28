@@ -1,9 +1,9 @@
-// Module ID: 16555
-// Function ID: 16556
+// Module ID: 16573
+// Function ID: 16574
 // Name: SOUND_BUTTON_HEIGHT
 // Dependencies: [2]
 
-// Module 16555 (SOUND_BUTTON_HEIGHT)
+// Module 16573 (SOUND_BUTTON_HEIGHT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/soundboard/native/SoundboardStyleConstants.tsx");

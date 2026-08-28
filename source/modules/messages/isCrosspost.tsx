@@ -1,10 +1,10 @@
-// Module ID: 7877
-// Function ID: 7878
+// Module ID: 7891
+// Function ID: 7892
 // Name: isCrosspost
 // Dependencies: [676, 1403, 2]
 // Exports: default
 
-// Module 7877 (isCrosspost)
+// Module 7891 (isCrosspost)
 import set from "set" /* 2 */;
 import hasFlag from "hasFlag" /* 1403 */;
 import ME from "ME" /* 676 */;

@@ -1,16 +1,16 @@
-// Module ID: 5025
-// Function ID: 5026
+// Module ID: 5038
+// Function ID: 5039
 // Name: cancel
-// Dependencies: [652, 5026, 12, 5030, 514, 2]
+// Dependencies: [652, 5039, 12, 5043, 514, 2]
 // Exports: isResolvedUpload
 
-// Module 5025 (cancel)
+// Module 5038 (cancel)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import v1 from "v1" /* 514 */;
 import EventEmitter2 from "EventEmitter" /* 652 */;
-import items from "items" /* 5026 */;
-import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 5030 */;
+import items from "items" /* 5039 */;
+import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 5043 */;
 
 let obj = { REACT_NATIVE: 0, [0]: "REACT_NATIVE", WEB: 1, [1]: "WEB" };
 const EventEmitter = EventEmitter2.EventEmitter;

@@ -1,9 +1,9 @@
-// Module ID: 10358
-// Function ID: 10359
+// Module ID: 10376
+// Function ID: 10377
 // Name: get ActivityIndicator
 // Dependencies: [17, 2]
 
-// Module 10358 (get ActivityIndicator)
+// Module 10376 (get ActivityIndicator)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

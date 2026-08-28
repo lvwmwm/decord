@@ -1,24 +1,24 @@
-// Module ID: 16658
-// Function ID: 16659
+// Module ID: 16676
+// Function ID: 16677
 // Name: VoicePanelPIP
-// Dependencies: [32, 19, 17, 1390, 9385, 4681, 11757, 11755, 16582, 9387, 9386, 21, 4445, 11756, 16586, 4185, 16581, 4879, 5604, 10911, 16588, 9500, 589, 4079, 9382, 9390, 8501, 1236, 7729, 16659, 5958, 16660, 16661, 4172, 2]
+// Dependencies: [32, 19, 17, 1390, 9403, 4694, 11776, 11774, 16600, 9405, 9404, 21, 4446, 11775, 16604, 4186, 16599, 4892, 5617, 10929, 16606, 9518, 589, 4080, 9400, 9408, 8515, 1236, 7743, 16677, 5971, 16678, 16679, 4173, 2]
 
-// Module 16658 (VoicePanelPIP)
-import ManaContext from "ManaContext" /* 4172 */;
-import context2 from "context" /* 16586 */;
+// Module 16676 (VoicePanelPIP)
+import ManaContext from "ManaContext" /* 4173 */;
+import context2 from "context" /* 16604 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "participantFromServer" /* 1390 */;
-import closure_8 from "map" /* 9385 */;
-import closure_9 from "withEqualityFn" /* 4681 */;
-import VoicePanelModes from "VoicePanelModes" /* 11757 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11755 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16582 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9387 */;
-import { isLaunched } from "FrameLayoutModes" /* 9386 */;
+import closure_8 from "map" /* 9403 */;
+import closure_9 from "withEqualityFn" /* 4694 */;
+import VoicePanelModes from "VoicePanelModes" /* 11776 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11774 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16600 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9405 */;
+import { isLaunched } from "FrameLayoutModes" /* 9404 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function VoicePanelPIP() {
@@ -562,7 +562,7 @@ let closure_35 = importAllResult.memo((transitionState) => {
   let obj = panelCardStillInPIP;
   let tmp = transitionState.pipMode === VoicePanelPIPModes.IN_PANEL;
   if (!tmp) {
-    tmp = transitionState === transitionState(4172).TransitionStates.MOUNTED;
+    tmp = transitionState === transitionState(4173).TransitionStates.MOUNTED;
   }
   [tmp5, c2] = callback(panelCardStillInPIP.useState(tmp), 2);
   const effect = obj.useEffect(() => {
@@ -595,7 +595,7 @@ let closure_35 = importAllResult.memo((transitionState) => {
       };
     }
   }, items1);
-  panelCardStillInPIP = obj.useContext(transitionCleanUp(11756)).panelCardStillInPIP;
+  panelCardStillInPIP = obj.useContext(transitionCleanUp(11775)).panelCardStillInPIP;
   const tmp4 = callback(panelCardStillInPIP.useState(tmp), 2);
   class I {
     constructor() {
@@ -607,7 +607,7 @@ let closure_35 = importAllResult.memo((transitionState) => {
       return tmp;
     }
   }
-  obj = { transitionState, TransitionStates: transitionState(4172).TransitionStates, panelCardStillInPIP };
+  obj = { transitionState, TransitionStates: transitionState(4173).TransitionStates, panelCardStillInPIP };
   I.__closure = obj;
   I.__workletHash = 3025452431419;
   I.__initData = closure_33;
@@ -628,11 +628,11 @@ let closure_35 = importAllResult.memo((transitionState) => {
       return;
     }
   }
-  obj = { runOnJS: transitionState(4185).runOnJS, fireCleanup: callback };
+  obj = { runOnJS: transitionState(4186).runOnJS, fireCleanup: callback };
   S.__closure = obj;
   S.__workletHash = 5494714290933;
   S.__initData = closure_34;
-  const animatedReaction = transitionState(4185).useAnimatedReaction(I, S);
+  const animatedReaction = transitionState(4186).useAnimatedReaction(I, S);
   let tmp10 = null;
   if (tmp5) {
     tmp10 = callback2(VoicePanelPIP, {});

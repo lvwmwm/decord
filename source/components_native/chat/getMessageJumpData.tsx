@@ -1,18 +1,18 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11057
+// Function ID: 11058
 // Name: getMessageJumpData
-// Dependencies: [32, 19, 1496, 1922, 500, 1895, 4376, 11, 2]
+// Dependencies: [32, 19, 1496, 1923, 500, 1895, 4377, 11, 2]
 // Exports: default, useMessageJumpAndroidKeyboardHeight
 
-// Module 11039 (getMessageJumpData)
+// Module 11057 (getMessageJumpData)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import set from "set" /* 500 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 1895 */;
-import GuildThemeSourcePreference from "GuildThemeSourcePreference" /* 4376 */;
+import GuildThemeSourcePreference from "GuildThemeSourcePreference" /* 4377 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "subscribeToKeyboardUIStore" /* 1496 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("components_native/chat/getMessageJumpData.tsx");

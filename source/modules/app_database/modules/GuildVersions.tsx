@@ -1,11 +1,11 @@
-// Module ID: 7331
-// Function ID: 7332
+// Module ID: 7345
+// Function ID: 7346
 // Name: getCommittedVersions
-// Dependencies: [32, 5, 1910, 3, 1956, 1370, 2]
+// Dependencies: [32, 5, 1910, 3, 1957, 1370, 2]
 
-// Module 7331 (getCommittedVersions)
+// Module 7345 (getCommittedVersions)
 import timestampDefault from "timestamp" /* 3 */;
-import itemsDefault from "items" /* 1956 */;
+import itemsDefault from "items" /* 1957 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;

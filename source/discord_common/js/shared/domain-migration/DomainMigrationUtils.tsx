@@ -1,10 +1,10 @@
-// Module ID: 5529
-// Function ID: 5530
+// Module ID: 5542
+// Function ID: 5543
 // Name: DomainMigrationEventType
 // Dependencies: [2]
 // Exports: extractMessage, sendPostMessage
 
-// Module 5529 (DomainMigrationEventType)
+// Module 5542 (DomainMigrationEventType)
 import set from "set" /* 2 */;
 
 let obj = { MIGRATION_SOURCE_DOMAIN: 0, [0]: "MIGRATION_SOURCE_DOMAIN", MIGRATION_DESTINATION_DOMAIN: 1, [1]: "MIGRATION_DESTINATION_DOMAIN" };

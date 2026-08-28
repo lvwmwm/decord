@@ -1,10 +1,10 @@
-// Module ID: 4126
-// Function ID: 4127
+// Module ID: 4127
+// Function ID: 4128
 // Name: loaderMaker
-// Dependencies: [32, 19, 21, 4127, 2]
+// Dependencies: [32, 19, 21, 4128, 2]
 // Exports: LazyLibrary, makeLazy, makeLazyWithPreload
 
-// Module 4126 (loaderMaker)
+// Module 4127 (loaderMaker)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;

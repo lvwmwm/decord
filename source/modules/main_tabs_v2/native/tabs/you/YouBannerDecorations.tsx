@@ -1,24 +1,24 @@
-// Module ID: 16285
-// Function ID: 16286
+// Module ID: 16303
+// Function ID: 16304
 // Name: useHasSettingsBadge
-// Dependencies: [19, 17, 1922, 1388, 1924, 21, 4445, 501, 712, 1367, 13039, 7128, 4266, 1377, 589, 8046, 8460, 8464, 1363, 689, 4107, 16286, 11004, 16287, 16288, 11250, 5342, 16289, 14549, 1236, 16290, 16292, 8028, 6192, 4892, 2]
+// Dependencies: [19, 17, 1923, 1388, 1925, 21, 4446, 501, 712, 1367, 13058, 7141, 4267, 1377, 589, 8060, 8474, 8478, 1363, 689, 4108, 16304, 11022, 16305, 16306, 11268, 5355, 16307, 14533, 1236, 16308, 16310, 8042, 6205, 4905, 2]
 // Exports: useHasSettingsBadge
 
-// Module 16285 (useHasSettingsBadge)
+// Module 16303 (useHasSettingsBadge)
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4266 */;
-import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7128 */;
-import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13039 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4267 */;
+import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7141 */;
+import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13058 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
-import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_9 } from "GuildFeatures" /* 1924 */;
+import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_9 } from "GuildFeatures" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 let c3 = importAllResult;

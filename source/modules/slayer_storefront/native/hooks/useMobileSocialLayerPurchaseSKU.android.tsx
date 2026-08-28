@@ -1,11 +1,11 @@
-// Module ID: 10508
-// Function ID: 10509
+// Module ID: 10526
+// Function ID: 10527
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [19, 676, 8154, 10509, 2]
+// Dependencies: [19, 676, 8168, 10527, 2]
 // Exports: default
 
-// Module 10508 (useMobileSocialLayerPurchaseSKU)
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10509 */;
+// Module 10526 (useMobileSocialLayerPurchaseSKU)
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10527 */;
 import closure_3 from "noop" /* 19 */;
 import { PriceSetAssignmentPurchaseTypes as closure_4 } from "ME" /* 676 */;
 

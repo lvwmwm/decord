@@ -1,18 +1,18 @@
-// Module ID: 4100
-// Function ID: 4101
+// Module ID: 4101
+// Function ID: 4102
 // Name: MAX_REACTIONS
-// Dependencies: [1218, 676, 4101, 4102, 1236, 7440, 4134, 698, 2]
+// Dependencies: [1218, 676, 4102, 4103, 1236, 7454, 4135, 698, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 4100 (MAX_REACTIONS)
+// Module 4101 (MAX_REACTIONS)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4102 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4134 */;
-import ReactionTypes from "ReactionTypes" /* 7440 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4103 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
+import ReactionTypes from "ReactionTypes" /* 7454 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
-import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags" /* 4101 */;
+import { NotificationSettingsUpdateType as closure_6 } from "AccountNotificationFlags" /* 4102 */;
 
 require = arg1;
 ({ AnalyticsSections: c4, AnalyticEvents: c5 } = ME);

@@ -1,12 +1,12 @@
-// Module ID: 7560
-// Function ID: 7561
+// Module ID: 7574
+// Function ID: 7575
 // Name: useIsNsfwGated
-// Dependencies: [4685, 1922, 589, 2]
+// Dependencies: [4698, 1923, 589, 2]
 // Exports: default
 
-// Module 7560 (useIsNsfwGated)
-import closure_2 from "initialize" /* 4685 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+// Module 7574 (useIsNsfwGated)
+import closure_2 from "initialize" /* 4698 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/age_gate/useIsNsfwGated.tsx");

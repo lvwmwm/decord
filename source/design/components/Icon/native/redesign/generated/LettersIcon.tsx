@@ -1,14 +1,14 @@
-// Module ID: 12956
-// Function ID: 12957
+// Module ID: 12975
+// Function ID: 12976
 // Name: LettersIcon
-// Dependencies: [19, 21, 712, 4164, 12957, 2]
+// Dependencies: [19, 21, 712, 4165, 12976, 2]
 // Exports: LettersIcon
 
-// Module 12956 (LettersIcon)
+// Module 12975 (LettersIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 12957 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 12976 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

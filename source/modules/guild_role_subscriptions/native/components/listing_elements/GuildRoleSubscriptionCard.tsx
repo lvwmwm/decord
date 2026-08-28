@@ -1,19 +1,19 @@
-// Module ID: 14781
-// Function ID: 14782
+// Module ID: 14766
+// Function ID: 14767
 // Name: SectionTitle
-// Dependencies: [32, 19, 17, 21, 4445, 712, 4441, 14771, 9111, 1236, 1297, 14782, 14783, 14786, 2]
+// Dependencies: [32, 19, 17, 21, 4446, 712, 4442, 14756, 9129, 1236, 1297, 14767, 14768, 14771, 2]
 // Exports: Content
 
-// Module 14781 (SectionTitle)
+// Module 14766 (SectionTitle)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4441 */;
-import getRoleEmojisAll from "getRoleEmojis" /* 14771 */;
-import EmojiGalleryDefault from "EmojiGallery" /* 14783 */;
+import Text from "Text" /* 4442 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14756 */;
+import EmojiGalleryDefault from "EmojiGallery" /* 14768 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 class SectionTitle {
@@ -59,7 +59,7 @@ export const Content = function Content(arg0) {
   obj1 = { children: null };
   const intl = guildId(1236).intl;
   obj1[0] = intl.string(guildId(1236).t["DJ+bGu"]);
-  const items = [callback2(SectionTitle, obj1), callback2(guildId(1297).Spacer, { size: 8 }), callback2(guildId(14782).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  const items = [callback2(SectionTitle, obj1), callback2(guildId(1297).Spacer, { size: 8 }), callback2(guildId(14767).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   obj[0] = items;
   const items1 = [callback3(closure_7, obj), , , ];
   let tmp4Result = null;
@@ -93,7 +93,7 @@ export const Content = function Content(arg0) {
     const items4 = [tmp7(tmp8, obj7), tmp7(tmp5(1297).Spacer, { size: 14 }), ];
     const obj9 = { gap: 14, children: null };
     obj9[1] = first1.map((benefit) => closure_1_6(guildId(closure_1_3[13]).ChannelBenefitRow, { benefit, guildId }, benefit.ref_id));
-    items4[2] = tmp7(tmp5(9111).GappedList, obj9);
+    items4[2] = tmp7(tmp5(9129).GappedList, obj9);
     obj6[0] = items4;
     tmp4Result = tmp4(tmp6, obj6);
   }
@@ -109,11 +109,11 @@ export const Content = function Content(arg0) {
     const items5 = [tmp7(tmp8, obj11), tmp7(tmp5(1297).Spacer, { size: 14 }), ];
     const obj13 = { gap: 14, children: null };
     obj13[1] = first2.map((benefit) => closure_1_6(guildId(closure_1_3[13]).IntangibleBenefitRow, { benefit, guildId }, arg1));
-    items5[2] = tmp7(tmp5(9111).GappedList, obj13);
+    items5[2] = tmp7(tmp5(9129).GappedList, obj13);
     obj10[0] = items5;
     tmp4Result1 = tmp4(tmp6, obj10);
   }
   items1[3] = tmp4Result1;
   obj[1] = items1;
-  return callback3(guildId(9111).GappedList, obj);
+  return callback3(guildId(9129).GappedList, obj);
 };

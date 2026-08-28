@@ -1,16 +1,16 @@
-// Module ID: 5430
-// Function ID: 5431
+// Module ID: 5443
+// Function ID: 5444
 // Name: ack
-// Dependencies: [5400, 1395, 1391, 5431, 1922, 676, 709, 11, 2]
+// Dependencies: [5413, 1395, 1391, 5444, 1923, 676, 709, 11, 2]
 // Exports: ackChannel, ackGuildFeature, ackUserFeature, bulkAck, clearOldestUnreadMessageId, disableAutomaticAck, enableAutomaticAck, localAck, registerVisibleInlineChannel, unregisterVisibleInlineChannel
 
-// Module 5430 (ack)
+// Module 5443 (ack)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "rebuild" /* 5400 */;
+import closure_2 from "rebuild" /* 5413 */;
 import { isReadableType } from "createChannelRecord" /* 1395 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "setIndex" /* 5431 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "setIndex" /* 5444 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import { CURRENT_APP_CONTEXT } from "ME" /* 676 */;
 
 function ack(channelId, location, arg2, arg3, messageId) {
@@ -95,7 +95,7 @@ export const ackChannel = function ackChannel(channel, arg1) {
       tmpResult.dispatch(obj);
       const fromTimestampResult = tmpResult.fromTimestamp(Date.now());
     } else {
-      obj = { type: "CHANNEL_ACK", channelId: null, messageId: "y", immediate: "always", force: null, context: "lg", location: null };
+      obj = { type: "CHANNEL_ACK", channelId: null, messageId: "y", immediate: 3, force: true, context: false, location: "echoCancellation" };
       obj[1] = id;
       obj[3] = true;
       obj[4] = true;

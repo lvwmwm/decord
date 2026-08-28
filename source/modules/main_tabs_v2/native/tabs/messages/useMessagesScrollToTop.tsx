@@ -1,12 +1,12 @@
-// Module ID: 15551
-// Function ID: 15552
+// Module ID: 15569
+// Function ID: 15570
 // Name: useMessagesScrollToTop
-// Dependencies: [19, 4437, 4299, 8974, 1501, 2]
+// Dependencies: [19, 4438, 4300, 8992, 1501, 2]
 // Exports: default
 
-// Module 15551 (useMessagesScrollToTop)
+// Module 15569 (useMessagesScrollToTop)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesScrollToTop.tsx");

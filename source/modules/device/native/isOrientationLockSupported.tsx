@@ -1,12 +1,12 @@
-// Module ID: 9446
-// Function ID: 9447
+// Module ID: 9464
+// Function ID: 9465
 // Name: isOrientationLockSupported
-// Dependencies: [4424, 1625, 2]
+// Dependencies: [4425, 1625, 2]
 // Exports: default
 
-// Module 9446 (isOrientationLockSupported)
+// Module 9464 (isOrientationLockSupported)
 import set from "set" /* 2 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4424 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4425 */;
 
 let result = set.fileFinishedImporting("modules/device/native/isOrientationLockSupported.tsx");
 
@@ -18,7 +18,7 @@ export default function isOrientationLockSupported() {
     result = !tmpResult.isMetaQuest();
   }
   if (result) {
-    tmpResult = tmp(4424);
+    tmpResult = tmp(4425);
     result = tmpResult.isOrientationLockSupported();
   }
   return result;

@@ -1,23 +1,23 @@
-// Module ID: 16671
-// Function ID: 16672
+// Module ID: 16689
+// Function ID: 16690
 // Name: FloatingCTA
-// Dependencies: [32, 19, 1391, 11757, 11760, 505, 21, 1367, 712, 4445, 4878, 8297, 4172, 11756, 16551, 6204, 647, 16547, 4185, 11763, 10650, 4879, 7729, 10337, 2]
+// Dependencies: [32, 19, 1391, 11776, 11779, 505, 21, 1367, 712, 4446, 4891, 8311, 4173, 11775, 16569, 6217, 647, 16565, 4186, 11782, 10668, 4892, 7743, 10355, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 16671 (FloatingCTA)
+// Module 16689 (FloatingCTA)
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabled from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import ManaContext from "ManaContext" /* 4172 */;
-import Stack from "Stack" /* 4878 */;
-import RowButtonWrapper from "RowButtonWrapper" /* 8297 */;
+import ManaContext from "ManaContext" /* 4173 */;
+import Stack from "Stack" /* 4891 */;
+import RowButtonWrapper from "RowButtonWrapper" /* 8311 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import VoicePanelModes from "VoicePanelModes" /* 11757 */;
-import { CALL_TILE_GUTTER } from "CARD_SIZE" /* 11760 */;
+import VoicePanelModes from "VoicePanelModes" /* 11776 */;
+import { CALL_TILE_GUTTER } from "CARD_SIZE" /* 11779 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function FloatingCTA(trailing) {
@@ -70,7 +70,7 @@ class VoicePanelFloatingCTAContainer {
     closure_11 = memo;
     obj3 = require("useFloatingCTAProps");
     floatingCTAProps = obj3.useFloatingCTAProps(stateFromStores);
-    obj4 = require("module_4185");
+    obj4 = require("module_4186");
     class A {
       constructor() {
         tmp = wrapperSpecs;
@@ -94,7 +94,7 @@ class VoicePanelFloatingCTAContainer {
             const obj = closure_1_0(closure_1_2[18]);
           }
         };
-        obj1 = { state: tmp4, TransitionStates: require("ManaContext").TransitionStates, runOnJS: require("module_4185").runOnJS, cleanUp };
+        obj1 = { state: tmp4, TransitionStates: require("ManaContext").TransitionStates, runOnJS: require("module_4186").runOnJS, cleanUp };
         fn.__closure = obj1;
         fn.__workletHash = 7334460639890;
         fn.__initData = closure_1_14;
@@ -124,7 +124,7 @@ class VoicePanelFloatingCTAContainer {
         return obj;
       }
     }
-    obj = { getControlsDefaultWidth: require("VOICE_PANEL_DRAWER_MAX_WIDTH").getControlsDefaultWidth, windowDimensions, safeArea, state, TransitionStates: require("ManaContext").TransitionStates, controlsSpecs, roundToNearestPixel: require("t"), withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, OPACITY_CHANGE_PHYSICS: closure_12, runOnJS: require("module_4185").runOnJS, cleanUp, wrapperSpecs, UI_SHOW_HIDE_PHYSICS: windowDimensions, gestureState, CALL_TILE_GUTTER: channelId, accessoryHeights };
+    obj = { getControlsDefaultWidth: require("VOICE_PANEL_DRAWER_MAX_WIDTH").getControlsDefaultWidth, windowDimensions, safeArea, state, TransitionStates: require("ManaContext").TransitionStates, controlsSpecs, roundToNearestPixel: require("t"), withSpring: require("CONFIG_NEVER_ANIMATE").withSpring, OPACITY_CHANGE_PHYSICS: closure_12, runOnJS: require("module_4186").runOnJS, cleanUp, wrapperSpecs, UI_SHOW_HIDE_PHYSICS: windowDimensions, gestureState, CALL_TILE_GUTTER: channelId, accessoryHeights };
     A.__closure = obj;
     A.__workletHash = 3338259366067;
     A.__initData = closure_13;

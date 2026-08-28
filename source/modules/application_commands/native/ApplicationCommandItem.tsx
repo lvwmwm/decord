@@ -1,17 +1,17 @@
-// Module ID: 11886
-// Function ID: 11887
+// Module ID: 11905
+// Function ID: 11906
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 1992, 10259, 21, 4445, 712, 4887, 589, 11701, 5020, 1236, 5445, 4441, 2]
+// Dependencies: [19, 17, 1993, 10277, 21, 4446, 712, 4900, 589, 11734, 5033, 1236, 5458, 4442, 2]
 // Exports: default
 
-// Module 11886 (ApplicationCommandItem)
+// Module 11905 (ApplicationCommandItem)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10259 */;
+import closure_5 from "trackCommunicationDisabled" /* 1993 */;
+import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10277 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

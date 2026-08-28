@@ -1,14 +1,14 @@
-// Module ID: 14922
-// Function ID: 14923
+// Module ID: 14907
+// Function ID: 14908
 // Name: EmojiFaceWithSpiralEyesIcon
-// Dependencies: [19, 21, 712, 4164, 14923, 2]
+// Dependencies: [19, 21, 712, 4165, 14908, 2]
 // Exports: EmojiFaceWithSpiralEyesIcon
 
-// Module 14922 (EmojiFaceWithSpiralEyesIcon)
+// Module 14907 (EmojiFaceWithSpiralEyesIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 14923 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 14908 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

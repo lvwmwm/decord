@@ -1,13 +1,13 @@
-// Module ID: 15628
-// Function ID: 15629
+// Module ID: 15646
+// Function ID: 15647
 // Name: useMemoWithEqualityFunction
-// Dependencies: [19, 15629, 2]
+// Dependencies: [19, 15647, 2]
 // Exports: default
 
-// Module 15628 (useMemoWithEqualityFunction)
+// Module 15646 (useMemoWithEqualityFunction)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import useInitRefDefault from "useInitRef" /* 15629 */;
+import useInitRefDefault from "useInitRef" /* 15647 */;
 
 const useRef = noop.useRef;
 let closure_3 = Symbol();

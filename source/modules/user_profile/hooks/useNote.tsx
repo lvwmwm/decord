@@ -1,13 +1,13 @@
-// Module ID: 12397
-// Function ID: 12398
+// Module ID: 12416
+// Function ID: 12417
 // Name: _fetchNote
-// Dependencies: [5, 19, 12398, 676, 589, 709, 530, 2]
+// Dependencies: [5, 19, 12417, 676, 589, 709, 530, 2]
 // Exports: default
 
-// Module 12397 (_fetchNote)
+// Module 12416 (_fetchNote)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getNote" /* 12398 */;
+import closure_5 from "getNote" /* 12417 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;

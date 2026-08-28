@@ -1,19 +1,19 @@
-// Module ID: 13198
-// Function ID: 13199
+// Module ID: 13217
+// Function ID: 13218
 // Name: collectCallFeedback
-// Dependencies: [9708, 1391, 4496, 4519, 1981, 1922, 9696, 4653, 9712, 9709, 709, 2]
+// Dependencies: [9726, 1391, 4497, 4520, 1982, 1923, 9714, 4666, 9730, 9727, 709, 2]
 // Exports: default
 
-// Module 13198 (collectCallFeedback)
+// Module 13217 (collectCallFeedback)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4653 */;
-import closure_3 from "handleSyncedStoresUpdate" /* 9708 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4666 */;
+import closure_3 from "handleSyncedStoresUpdate" /* 9726 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4496 */;
-import closure_6 from "createRTCConnection" /* 4519 */;
-import closure_7 from "handleConnectionOpen" /* 1981 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import closure_9 from "handleAudioRouteChanged" /* 9696 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_6 from "createRTCConnection" /* 4520 */;
+import closure_7 from "handleConnectionOpen" /* 1982 */;
+import closure_8 from "mergeGuildAvatar" /* 1923 */;
+import closure_9 from "handleAudioRouteChanged" /* 9714 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/voice_calls/collectCallFeedback.tsx");
@@ -51,7 +51,7 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
         if (obj.hasUsedBackgroundInCall) {
           obj = {};
           const merged1 = Object.assign(obj);
-          let tmp5Result = tmp5(9712);
+          let tmp5Result = tmp5(9730);
           const lastUsedVideoBackgroundOption = tmp5Result.getLastUsedVideoBackgroundOption(currentUser.getCurrentUser());
           const videoDevices = store.getVideoDevices();
           const tmp22 = videoDevices[store.getVideoDeviceId(store)];
@@ -62,12 +62,12 @@ export default function collectCallFeedback(arg0, arg1, arg2, videoEnabled) {
           obj1 = { video_device_name: null, video_hardware_scaling_enabled: null, video_effect_type: null, video_effect_detail: null };
           obj1[0] = name;
           obj1[1] = store.getHardwareEncoding();
-          tmp5Result = tmp5(9709);
+          tmp5Result = tmp5(9727);
           obj1[2] = tmp5Result.getEffectAnalyticsType(lastUsedVideoBackgroundOption);
-          obj1[3] = tmp5(9709).getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
+          obj1[3] = tmp5(9727).getEffectDetailAnalyticsName(lastUsedVideoBackgroundOption);
           const merged2 = Object.assign(obj1);
           const obj10 = store;
-          const tmp5Result1 = tmp5(9709);
+          const tmp5Result1 = tmp5(9727);
           const obj2 = { type: "VIDEO_BACKGROUND_SHOW_FEEDBACK", analyticsData: null };
           obj2[1] = obj;
           dispatcherDefault.dispatch(obj2);

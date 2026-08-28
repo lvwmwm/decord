@@ -1,14 +1,14 @@
-// Module ID: 16543
-// Function ID: 16544
+// Module ID: 16561
+// Function ID: 16562
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 1391, 1981, 676, 4079, 9409, 9410, 9440, 1231, 2]
+// Dependencies: [5, 19, 1391, 1982, 676, 4080, 9427, 9428, 9458, 1231, 2]
 // Exports: default
 
-// Module 16543 (useTransitionToConnectedActivityInVoice)
+// Module 16561 (useTransitionToConnectedActivityInVoice)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "handleConnectionOpen" /* 1981 */;
+import closure_6 from "handleConnectionOpen" /* 1982 */;
 import { ComponentActions } from "ME" /* 676 */;
 
 const require = arg1;

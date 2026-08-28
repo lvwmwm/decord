@@ -1,19 +1,19 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14781
+// Function ID: 14782
 // Name: volumeSlider
-// Dependencies: [4467, 1218, 4496, 7816, 589, 4544, 38, 9702, 9985, 10988, 1236, 2]
+// Dependencies: [4468, 1218, 4497, 7830, 589, 4545, 38, 9720, 10003, 11006, 1236, 2]
 
-// Module 14796 (volumeSlider)
+// Module 14781 (volumeSlider)
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4544 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9702 */;
-import apexExperimentDefault from "apexExperiment" /* 9985 */;
-import closure_3 from "reset" /* 4467 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4545 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9720 */;
+import apexExperimentDefault from "apexExperiment" /* 10003 */;
+import closure_3 from "reset" /* 4468 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4496 */;
-import createToggle from "createToggle" /* 10988 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4497 */;
+import createToggle from "createToggle" /* 11006 */;
 
 require = arg1;
 createToggle = {

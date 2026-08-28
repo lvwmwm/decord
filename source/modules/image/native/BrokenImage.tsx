@@ -1,13 +1,13 @@
-// Module ID: 11574
-// Function ID: 11575
+// Module ID: 11593
+// Function ID: 11594
 // Name: BrokenImage
-// Dependencies: [19, 21, 8173, 2]
+// Dependencies: [19, 21, 8187, 2]
 // Exports: default
 
-// Module 11574 (BrokenImage)
+// Module 11593 (BrokenImage)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8173 */;
-import inlineStylesDefault from "inlineStyles" /* 8173 */;
+import inlineStyles from "inlineStyles" /* 8187 */;
+import inlineStylesDefault from "inlineStyles" /* 8187 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

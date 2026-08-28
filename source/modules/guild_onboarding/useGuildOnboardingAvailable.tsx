@@ -1,11 +1,11 @@
-// Module ID: 6131
-// Function ID: 6132
+// Module ID: 6144
+// Function ID: 6145
 // Name: useGuildOnboardingAvailable
-// Dependencies: [1984, 676, 589, 2]
+// Dependencies: [1985, 676, 589, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 6131 (useGuildOnboardingAvailable)
-import closure_2 from "initialize" /* 1984 */;
+// Module 6144 (useGuildOnboardingAvailable)
+import closure_2 from "initialize" /* 1985 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;

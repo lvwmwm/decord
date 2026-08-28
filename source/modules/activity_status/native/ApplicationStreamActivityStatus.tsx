@@ -1,14 +1,14 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9182
+// Function ID: 9183
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 1236, 9165, 9166, 9168, 2]
+// Dependencies: [19, 21, 1236, 9183, 9184, 9186, 2]
 // Exports: default
 
-// Module 9164 (ApplicationStreamActivityStatus)
+// Module 9182 (ApplicationStreamActivityStatus)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 9165 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 9168 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 9183 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 9186 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -57,7 +57,7 @@ export default function ApplicationStreamActivityStatus(hideText) {
   let tmp12 = !hideIcon;
   if (!hideIcon) {
     obj = { icon: null, style: null };
-    obj[0] = tmp7(9166).TvIcon;
+    obj[0] = tmp7(9184).TvIcon;
     obj[1] = iconStyle;
     tmp12 = callback(ActivityStatusIconDefault, obj);
     const tmp15 = ActivityStatusIconDefault;

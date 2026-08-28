@@ -1,12 +1,12 @@
-// Module ID: 10397
-// Function ID: 10398
+// Module ID: 10415
+// Function ID: 10416
 // Name: useGiftStyles
-// Dependencies: [1924, 2]
+// Dependencies: [1925, 2]
 // Exports: useGiftStyles
 
-// Module 10397 (useGiftStyles)
+// Module 10415 (useGiftStyles)
 import set from "set" /* 2 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 
 const PremiumGiftStyles = GuildFeatures.PremiumGiftStyles;
 const result = set.fileFinishedImporting("modules/premium/gifting/hooks/useGiftStyles.tsx");

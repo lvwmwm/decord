@@ -1,18 +1,18 @@
-// Module ID: 12824
-// Function ID: 12825
+// Module ID: 12843
+// Function ID: 12844
 // Name: createSafetyPolicyNoticeEmbed
-// Dependencies: [17, 676, 8621, 4043, 1236, 7788, 8662, 2]
+// Dependencies: [17, 676, 8636, 4044, 1236, 7802, 8678, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 12824 (createSafetyPolicyNoticeEmbed)
+// Module 12843 (createSafetyPolicyNoticeEmbed)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 4043 */;
-import frozen from "frozen" /* 7788 */;
-import SafetyHubView from "SafetyHubView" /* 8621 */;
-import registerAssetDefault from "registerAsset" /* 8662 */;
+import hooksDefault from "hooks" /* 4044 */;
+import frozen from "frozen" /* 7802 */;
+import SafetyHubView from "SafetyHubView" /* 8636 */;
+import registerAssetDefault from "registerAsset" /* 8678 */;
 
 const Image = get_ActivityIndicator.Image;
 const MessageEmbedTypes = ME.MessageEmbedTypes;

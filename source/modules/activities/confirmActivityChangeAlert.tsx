@@ -1,15 +1,15 @@
-// Module ID: 9402
-// Function ID: 9403
+// Module ID: 9420
+// Function ID: 9421
 // Name: confirmActivityChangeModal
-// Dependencies: [4098, 1922, 4639, 4809, 1236, 1903, 2]
+// Dependencies: [4099, 1923, 4640, 4822, 1236, 1903, 2]
 // Exports: default
 
-// Module 9402 (confirmActivityChangeModal)
+// Module 9420 (confirmActivityChangeModal)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import computeChannelName from "computeChannelName" /* 4639 */;
-import setDefault from "set" /* 4809 */;
-import closure_3 from "markAllUserIdListsStale" /* 4098 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import computeChannelName from "computeChannelName" /* 4640 */;
+import setDefault from "set" /* 4822 */;
+import closure_3 from "markAllUserIdListsStale" /* 4099 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");

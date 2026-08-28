@@ -1,14 +1,14 @@
-// Module ID: 4408
-// Function ID: 4409
+// Module ID: 4409
+// Function ID: 4410
 // Name: ClockIcon
-// Dependencies: [19, 21, 712, 4164, 4409, 2]
+// Dependencies: [19, 21, 712, 4165, 4410, 2]
 // Exports: ClockIcon
 
-// Module 4408 (ClockIcon)
+// Module 4409 (ClockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 4409 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 4410 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 5429
-// Function ID: 5430
+// Module ID: 5442
+// Function ID: 5443
 // Name: getFlattenedChannels
 // Dependencies: [1391, 12, 1370, 589, 2]
 // Exports: useFlattenedChannels
 
-// Module 5429 (getFlattenedChannels)
+// Module 5442 (getFlattenedChannels)
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;

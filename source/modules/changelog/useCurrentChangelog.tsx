@@ -1,15 +1,15 @@
-// Module ID: 7932
-// Function ID: 7933
+// Module ID: 7946
+// Function ID: 7947
 // Name: useChangelog
-// Dependencies: [19, 1996, 4459, 1980, 647, 7933, 2]
+// Dependencies: [19, 1997, 4460, 1981, 647, 7947, 2]
 // Exports: useCurrentChangelog
 
-// Module 7932 (useChangelog)
+// Module 7946 (useChangelog)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 4459 */;
-import { ChangelogLoadState } from "CHANGELOG_MODAL_KEY" /* 1980 */;
+import closure_4 from "_getSystemLocale" /* 1997 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 4460 */;
+import { ChangelogLoadState } from "CHANGELOG_MODAL_KEY" /* 1981 */;
 
 require = arg1;
 function useChangelog(changelogId, stateFromStores) {

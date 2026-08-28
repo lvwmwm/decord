@@ -1,10 +1,10 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12508
+// Function ID: 12509
 // Name: useHandleBuyNow
-// Dependencies: [5, 32, 19, 676, 3, 10678, 7219, 4412, 10744, 1625, 6113, 4122, 4162, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 3, 10696, 7233, 4413, 10762, 1625, 6126, 4123, 4163, 1236, 2]
 // Exports: default, useHandleBuyNow
 
-// Module 12488 (useHandleBuyNow)
+// Module 12508 (useHandleBuyNow)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -53,7 +53,7 @@ function useHandleBuyNow(product) {
               v0 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(7219).fetchCollectiblesPurchases();
+              obj1[0] = closure_1_0(7233).fetchCollectiblesPurchases();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -66,9 +66,9 @@ function useHandleBuyNow(product) {
             return obj2;
           } else {
             callback(false);
-            obj = v0(4412);
+            obj = v0(4413);
             obj.hideActionSheet();
-            obj1 = v0(10744);
+            obj1 = v0(10762);
             const obj3 = { product: null, useCategoryImage: true };
             obj3[0] = closure_0;
             obj1.open(obj3);

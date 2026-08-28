@@ -1,18 +1,18 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16320
+// Function ID: 16321
 // Name: ConnectedCreateThreadHeaderButton
-// Dependencies: [19, 17, 1391, 10574, 676, 16140, 21, 7755, 647, 6068, 10780, 7540, 1236, 12225, 698, 8677, 16303, 5960, 5453, 4300, 1629, 16351, 500, 16352, 16353, 16354, 16355, 16197, 2]
+// Dependencies: [19, 17, 1391, 10592, 676, 16158, 21, 7769, 647, 6081, 10798, 7554, 1236, 12244, 698, 8693, 16321, 5973, 5466, 4301, 1629, 16369, 500, 16370, 16371, 16372, 16373, 16215, 2]
 
-// Module 16302 (ConnectedCreateThreadHeaderButton)
-import registerAssetDefault from "registerAsset" /* 12225 */;
+// Module 16320 (ConnectedCreateThreadHeaderButton)
+import registerAssetDefault from "registerAsset" /* 12244 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import { ChannelDetailsNavigatorScreens as closure_6 } from "ChannelDetailsNavigatorScreens" /* 10574 */;
+import { ChannelDetailsNavigatorScreens as closure_6 } from "ChannelDetailsNavigatorScreens" /* 10592 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16140 */;
+import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16158 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7755 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7769 */;
 
 const require = arg1;
 function ConnectedCreateThreadHeaderButton(channelId) {
@@ -30,7 +30,7 @@ function ConnectedCreateThreadHeaderButton(channelId) {
 }
 function CreateThreadHeaderButton(channel) {
   channel = channel.channel;
-  let obj = channel(6068);
+  let obj = channel(6081);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
@@ -40,7 +40,7 @@ function CreateThreadHeaderButton(channel) {
     obj[0] = intl.string(tmp(1236).t.rBIGBL);
     obj[1] = tmp4;
     obj[2] = registerAssetDefault;
-    tmp5 = callback(tmp(7540).HeaderIconButton, obj);
+    tmp5 = callback(tmp(7554).HeaderIconButton, obj);
   }
   return tmp5;
 }
@@ -139,7 +139,7 @@ const memoResult = importAllResult.memo((navigation) => {
         route = route.route;
         let obj = {
           header(arg0) {
-            let obj = route(7540);
+            let obj = route(7554);
             obj = {};
             const merged = Object.assign(arg0);
             obj.shouldHandleSafeArea = route(500).isAndroid();

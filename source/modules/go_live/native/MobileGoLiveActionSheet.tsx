@@ -1,27 +1,27 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 9981
+// Function ID: 9982
 // Name: ApplicationStreamPresets
-// Dependencies: [32, 19, 4537, 4467, 1391, 1910, 1981, 1922, 4504, 676, 4509, 21, 4445, 712, 501, 4412, 9963, 2009, 503, 589, 9964, 9969, 5905, 5925, 4185, 4628, 9702, 7666, 1236, 2207, 9970, 9972, 5958, 4441, 4164, 9088, 5574, 5576, 5505, 5944, 7625, 8101, 691, 7626, 9086, 7530, 8892, 5945, 4880, 9962, 2]
+// Dependencies: [32, 19, 4538, 4468, 1391, 1910, 1982, 1923, 4505, 676, 4510, 21, 4446, 712, 501, 4413, 9981, 2010, 503, 589, 9982, 9987, 5918, 5938, 4186, 4629, 9720, 7680, 1236, 2208, 9988, 9990, 5971, 4442, 4165, 9106, 5587, 5589, 5518, 5957, 7639, 8115, 691, 7640, 9104, 7544, 8910, 5958, 4893, 9980, 2]
 // Exports: showMobileGoLiveActionSheet
 
-// Module 9963 (ApplicationStreamPresets)
+// Module 9981 (ApplicationStreamPresets)
 import encodeProperties from "encodeProperties" /* 503 */;
 import ThemesDefault from "Themes" /* 712 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4412 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "ApplicationStreamPresets" /* 4537 */;
-import closure_6 from "reset" /* 4467 */;
+import closure_5 from "ApplicationStreamPresets" /* 4538 */;
+import closure_6 from "reset" /* 4468 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
 import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "handleConnectionOpen" /* 1981 */;
-import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4504 */;
+import closure_9 from "handleConnectionOpen" /* 1982 */;
+import closure_10 from "mergeGuildAvatar" /* 1923 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4505 */;
 import { ApplicationStreamStates } from "ME" /* 676 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4509 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4510 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 
 require = arg1;
@@ -327,5 +327,5 @@ export const showMobileGoLiveActionSheet = function showMobileGoLiveActionSheet(
   obj = { impressionName: encodeProperties.ImpressionNames.MOBILE_GO_LIVE_ACTION_SHEET, impressionProperties: null };
   obj = { location_stack: closure_1 };
   obj[1] = obj;
-  obj.openLazy(asyncRequireImpl(9963, dependencyMap.paths), MobileGoLiveActionSheet, obj);
+  obj.openLazy(asyncRequireImpl(9981, dependencyMap.paths), MobileGoLiveActionSheet, obj);
 };

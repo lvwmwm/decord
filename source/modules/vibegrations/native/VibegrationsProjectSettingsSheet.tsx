@@ -1,20 +1,20 @@
-// Module ID: 16099
-// Function ID: 16100
+// Module ID: 16117
+// Function ID: 16118
 // Name: RoleColorCircle
-// Dependencies: [5, 32, 19, 17, 1985, 16088, 676, 21, 4445, 712, 589, 6047, 4412, 1236, 3469, 5941, 4441, 5573, 9609, 6173, 5576, 5944, 7616, 6046, 16093, 7638, 5551, 4880, 2]
+// Dependencies: [5, 32, 19, 17, 1986, 16106, 676, 21, 4446, 712, 589, 6060, 4413, 1236, 3470, 5954, 4442, 5586, 9627, 6186, 5589, 5957, 7630, 6059, 16111, 7652, 5564, 4893, 2]
 // Exports: default
 
-// Module 16099 (RoleColorCircle)
+// Module 16117 (RoleColorCircle)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_8 from "isProjectOwner" /* 16088 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 1986 */;
+import closure_8 from "isProjectOwner" /* 16106 */;
 import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function RoleColorCircle(color) {

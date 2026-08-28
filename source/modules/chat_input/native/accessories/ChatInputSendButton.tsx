@@ -1,21 +1,21 @@
-// Module ID: 11738
-// Function ID: 11739
+// Module ID: 11757
+// Function ID: 11758
 // Name: renderChatInputSendButton
-// Dependencies: [32, 19, 17, 4437, 7364, 11453, 21, 4445, 712, 4165, 11730, 11739, 11723, 4390, 1236, 1367, 589, 4172, 11743, 4185, 2]
+// Dependencies: [32, 19, 17, 4438, 7378, 11472, 21, 4446, 712, 4166, 11749, 11758, 11742, 4391, 1236, 1367, 589, 4173, 11762, 4186, 2]
 
-// Module 11738 (renderChatInputSendButton)
+// Module 11757 (renderChatInputSendButton)
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4165 */;
-import _modDef4185 from "module_4185" /* 4185 */;
-import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 11743 */;
+import map from "map" /* 4166 */;
+import _modDef4186 from "module_4186" /* 4186 */;
+import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 11762 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_7 from "setCooldown" /* 7364 */;
-import { CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS as closure_8 } from "TextAreaCta" /* 11453 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_7 from "setCooldown" /* 7378 */;
+import { CHAT_INPUT_FLOATING_BOUNCE_ENTER_DELAY_MS as closure_8 } from "TextAreaCta" /* 11472 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function renderChatInputSendButton(type, arg1, state, cleanup) {
@@ -31,7 +31,7 @@ function FloatingSlot(arg0) {
   ({ buttonHeight, buttonMargin } = arg0);
   ({ buttonWidth, sendVoiceMessageEnabled, children } = arg0);
   const style = [{ height: buttonHeight }, useChatInputFloatingWidthDefault({ expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin }).animatedStyle];
-  return jsx(_modDef4185.View, { style, children });
+  return jsx(_modDef4186.View, { style, children });
 }
 let c4 = importAllResult;
 let closure_10 = { BUTTON_SEND: "send-button", BUTTON_SEND_DISABLED: "send-button-disabled", BUTTON_SEND_VOICE_MESSAGE: "voice-message-button", BUTTON_SEND_VOICE_MESSAGE_DISABLED: "voice-message-button-disabled" };
@@ -54,17 +54,17 @@ let closure_12 = importAllResult.memo((type) => {
     num = closure_8;
   }
   obj = { cleanup, state, withBounce, bounceEnterDelayMs: num, children: null };
-  let tmp3Result = tmp3(11730);
+  let tmp3Result = tmp3(11749);
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     obj = { disabled: null, channelId: null };
     obj[0] = isOnCooldown;
     obj[1] = channelId;
-    let tmp7Result = tmp7(tmp3(11739), obj);
+    let tmp7Result = tmp7(tmp3(11758), obj);
   } else {
     obj1 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null, disabled: null };
     ({ button: obj4[1], buttonActive: obj4[2], iconActive: obj4[3] } = tmp5);
-    tmp3Result = tmp3(11723);
-    obj1[4] = tmp(4390).SendMessageIcon;
+    tmp3Result = tmp3(11742);
+    obj1[4] = tmp(4391).SendMessageIcon;
     const intl = tmp(1236).intl;
     obj1[5] = intl.string(tmp(1236).t.TXNS7S);
     obj1[6] = onSendMessage;

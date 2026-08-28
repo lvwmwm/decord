@@ -1,21 +1,21 @@
-// Module ID: 17129
-// Function ID: 17130
+// Module ID: 17147
+// Function ID: 17148
 // Name: GuildSettingsRoleEditPermission
-// Dependencies: [32, 19, 17, 1434, 4089, 1922, 676, 21, 4445, 712, 4094, 38, 4441, 1236, 4412, 17130, 2009, 16322, 17127, 6173, 698, 506, 16326, 5945, 5944, 1297, 9642, 2]
+// Dependencies: [32, 19, 17, 1434, 4090, 1923, 676, 21, 4446, 712, 4095, 38, 4442, 1236, 4413, 17148, 2010, 16340, 17145, 6186, 698, 506, 16344, 5958, 5957, 1297, 9660, 2]
 // Exports: default
 
-// Module 17129 (GuildSettingsRoleEditPermission)
+// Module 17147 (GuildSettingsRoleEditPermission)
 import ThemesDefault from "Themes" /* 712 */;
-import applyOverwritesAll from "applyOverwrites" /* 4094 */;
+import applyOverwritesAll from "applyOverwrites" /* 4095 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { isGuildOwner } from "GuildNSFWContentLevel" /* 1434 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_11 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ View: closure_6, Keyboard: error, SectionList: closure_8 } = get_ActivityIndicator);
@@ -87,11 +87,11 @@ export default function GuildSettingsRoleEditPermission(guild) {
       obj.openLazy(guild(closure_1_3[16])(closure_1_3[15], closure_1_3.paths), "role-permission-templates-" + guild.id + "-" + role.id, obj);
     };
     obj[2] = intl.format(guild(1236).t.ZhSOBy, obj1);
-    tmp18Result = tmp18(guild(4441).Text, obj);
+    tmp18Result = tmp18(guild(4442).Text, obj);
   }
   tmp18Result = tmp18(tmp19, { children: tmp18Result });
   canResult = applyOverwritesAll.can(obj);
-  const guildPermissionSpec = role(16322).generateGuildPermissionSpec(guild);
+  const guildPermissionSpec = role(16340).generateGuildPermissionSpec(guild);
   const mapped = guildPermissionSpec.map((permissions) => {
     const obj = {};
     const merged = Object.assign(permissions);
@@ -104,12 +104,12 @@ export default function GuildSettingsRoleEditPermission(guild) {
   });
   const found = mapped.filter((permissions) => permissions.permissions.length > 0);
   const mapped1 = found.map((title) => ({ title: title.title, data: title.permissions }));
-  const children = [closure_14(role(17127), { role }), , , ];
-  const tmp14Result = role(16322);
+  const children = [closure_14(role(17145), { role }), , , ];
+  const tmp14Result = role(16340);
   const tmp24 = mapped1.length > 0;
   const tmp25 = closure_16;
   const tmp26 = closure_15;
-  children[1] = closure_14(closure_6, { children: closure_14(guild(6173).SearchField, obj3) });
+  children[1] = closure_14(closure_6, { children: closure_14(guild(6186).SearchField, obj3) });
   children[2] = tmp18Result;
   if (tmp24) {
     const obj4 = { sections: null, stickySectionHeadersEnabled: false, renderItem: null, renderSectionHeader: null, SectionSeparatorComponent: null, ItemSeparatorComponent: null, keyExtractor: null, keyboardDismissMode: "on-drag", contentContainerStyle: null };
@@ -182,7 +182,7 @@ export default function GuildSettingsRoleEditPermission(guild) {
     let tmp18Result1 = tmp18(closure_8, obj4);
   } else {
     let obj5 = { Illustration: null, style: null, bodyStyle: null, body: null };
-    obj5[0] = tmp27(9642).NoResultsAlt;
+    obj5[0] = tmp27(9660).NoResultsAlt;
     ({ emptyState: obj10[1], emptyStateText: obj10[2] } = tmp);
     const intl2 = tmp27(1236).intl;
     const obj6 = { query: null };

@@ -1,16 +1,16 @@
-// Module ID: 14221
-// Function ID: 14222
+// Module ID: 14191
+// Function ID: 14192
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 19, 8002, 7299, 1922, 676, 589, 709, 7689, 10753, 7693, 7696, 14222, 8009, 4343, 14223, 8048, 14224, 4134, 13567, 1236, 2]
+// Dependencies: [109, 5, 19, 8016, 7313, 1923, 676, 589, 709, 7703, 10771, 7707, 7710, 14192, 8023, 4344, 14193, 8062, 12431, 4135, 13586, 1236, 2]
 // Exports: default
 
-// Module 14221 (useUserProfileEditForm)
+// Module 14191 (useUserProfileEditForm)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "noop" /* 19 */;
-import closure_7 from "handleFormOpen" /* 8002 */;
-import closure_8 from "createUserWidgetFromServer" /* 7299 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "handleFormOpen" /* 8016 */;
+import closure_8 from "createUserWidgetFromServer" /* 7313 */;
+import closure_9 from "mergeGuildAvatar" /* 1923 */;
 import { FormStates } from "ME" /* 676 */;
 
 const require = arg1;
@@ -31,7 +31,7 @@ export default function useUserProfileEditForm() {
     }
     return isSubmitting;
   });
-  const effect = React.useEffect(() => () => callback2(709).wait(callback(7689).resetAllPending), []);
+  const effect = React.useEffect(() => () => callback2(709).wait(callback(7703).resetAllPending), []);
   const items2 = [stateFromStores, pendingChanges];
   callback = React.useCallback(callback(() => {
     c6 = 0;
@@ -563,7 +563,7 @@ export default function useUserProfileEditForm() {
               if (closure_1_1) {
                 c3 = 3;
               } else {
-                let obj2 = closure_1_0(7689);
+                let obj2 = closure_1_0(7703);
                 obj1 = { avatarDecoration: null };
                 obj1[0] = closure_1_0.pendingAvatarDecoration;
                 dependencyMap = 1;
@@ -583,7 +583,7 @@ export default function useUserProfileEditForm() {
               ok = ok.ok;
             }
             if (ok) {
-              obj = closure_1_0(7689);
+              obj = closure_1_0(7703);
               const result = obj.resetPendingAccountChanges();
             }
           }
@@ -597,7 +597,7 @@ export default function useUserProfileEditForm() {
         }
       }
     }), items3),
-    resetPending: pendingChanges(7689).resetAllPending
+    resetPending: pendingChanges(7703).resetAllPending
   };
   const merged = Object.assign(pendingChanges);
   const merged1 = Object.assign(tryItOutChanges);

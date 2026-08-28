@@ -1,19 +1,19 @@
-// Module ID: 12213
-// Function ID: 12214
+// Module ID: 12232
+// Function ID: 12233
 // Name: useTrackThreadBrowserTab
-// Dependencies: [32, 19, 12214, 1391, 4089, 4460, 5401, 7443, 4091, 505, 7458, 589, 12, 1370, 11, 7442, 7573, 2]
+// Dependencies: [32, 19, 12233, 1391, 4090, 4461, 5414, 7457, 4092, 505, 7472, 589, 12, 1370, 11, 7456, 7587, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 12213 (useTrackThreadBrowserTab)
+// Module 12232 (useTrackThreadBrowserTab)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { useShouldShowResolvedFlagsForChannel as closure_5 } from "useReportToModChannelFiltersStore" /* 12214 */;
+import { useShouldShowResolvedFlagsForChannel as closure_5 } from "useReportToModChannelFiltersStore" /* 12233 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_8 from "generateOldThreadCutoff" /* 4460 */;
-import closure_9 from "handleThreadCreateOrUpdate" /* 5401 */;
-import closure_10 from "listKey" /* 7443 */;
-import closure_11 from "storeThread" /* 4091 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_8 from "generateOldThreadCutoff" /* 4461 */;
+import closure_9 from "handleThreadCreateOrUpdate" /* 5414 */;
+import closure_10 from "listKey" /* 7457 */;
+import closure_11 from "storeThread" /* 4092 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

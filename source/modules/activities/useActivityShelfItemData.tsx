@@ -1,11 +1,11 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16655
+// Function ID: 16656
 // Name: useActivityShelfItemData
-// Dependencies: [19, 11528, 2]
+// Dependencies: [19, 11547, 2]
 // Exports: useActivityShelfItemData
 
-// Module 16637 (useActivityShelfItemData)
-import useActivityShelfItemsDefault from "useActivityShelfItems" /* 11528 */;
+// Module 16655 (useActivityShelfItemData)
+import useActivityShelfItemsDefault from "useActivityShelfItems" /* 11547 */;
 import closure_2 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/activities/useActivityShelfItemData.tsx");

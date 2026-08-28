@@ -1,11 +1,11 @@
-// Module ID: 16643
-// Function ID: 16644
+// Module ID: 16661
+// Function ID: 16662
 // Name: useActivityUsers
-// Dependencies: [1922, 1390, 647, 2]
+// Dependencies: [1923, 1390, 647, 2]
 // Exports: default
 
-// Module 16643 (useActivityUsers)
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 16661 (useActivityUsers)
+import closure_2 from "mergeGuildAvatar" /* 1923 */;
 import closure_3 from "participantFromServer" /* 1390 */;
 
 const require = arg1;

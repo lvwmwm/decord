@@ -1,14 +1,14 @@
-// Module ID: 7838
-// Function ID: 7839
+// Module ID: 7852
+// Function ID: 7853
 // Name: computeIsStickerReplyEnabled
-// Dependencies: [1992, 4089, 1922, 676, 6068, 2]
+// Dependencies: [1993, 4090, 1923, 676, 6081, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 7838 (computeIsStickerReplyEnabled)
-import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6068 */;
-import closure_2 from "trackCommunicationDisabled" /* 1992 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+// Module 7852 (computeIsStickerReplyEnabled)
+import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6081 */;
+import closure_2 from "trackCommunicationDisabled" /* 1993 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_4 from "mergeGuildAvatar" /* 1923 */;
 import { Permissions } from "ME" /* 676 */;
 
 require = arg1;

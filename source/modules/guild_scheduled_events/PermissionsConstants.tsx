@@ -1,9 +1,9 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9580
+// Function ID: 9581
 // Name: VIEW_CHANNEL
 // Dependencies: [676, 506, 1399, 2]
 
-// Module 9562 (VIEW_CHANNEL)
+// Module 9580 (VIEW_CHANNEL)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import Permissions2 from "Permissions" /* 1399 */;

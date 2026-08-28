@@ -1,13 +1,13 @@
-// Module ID: 12415
-// Function ID: 12416
+// Module ID: 12435
+// Function ID: 12436
 // Name: useUserProfileWidgets
-// Dependencies: [1218, 7299, 7303, 589, 2]
+// Dependencies: [1218, 7313, 7317, 589, 2]
 // Exports: default
 
-// Module 12415 (useUserProfileWidgets)
+// Module 12435 (useUserProfileWidgets)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "createUserWidgetFromServer" /* 7299 */;
-import closure_4 from "initialize" /* 7303 */;
+import closure_3 from "createUserWidgetFromServer" /* 7313 */;
+import closure_4 from "initialize" /* 7317 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useUserProfileWidgets.tsx");

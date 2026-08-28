@@ -1,18 +1,18 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 16111
+// Function ID: 16112
 // Name: reloadVibegrationsAppFrames
-// Dependencies: [5, 9385, 16088, 676, 9386, 709, 16091, 9382, 530, 6047, 5906, 12681, 2]
+// Dependencies: [5, 9403, 16106, 676, 9404, 709, 16109, 9400, 530, 6060, 5919, 12700, 2]
 // Exports: createProject, deleteProject, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 16093 (reloadVibegrationsAppFrames)
+// Module 16111 (reloadVibegrationsAppFrames)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9382 */;
-import vibegrationLocation from "vibegrationLocation" /* 16091 */;
+import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9400 */;
+import vibegrationLocation from "vibegrationLocation" /* 16109 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9385 */;
-import closure_5 from "isProjectOwner" /* 16088 */;
+import closure_4 from "map" /* 9403 */;
+import closure_5 from "isProjectOwner" /* 16106 */;
 import { Endpoints } from "ME" /* 676 */;
-import { isLaunched } from "FrameLayoutModes" /* 9386 */;
+import { isLaunched } from "FrameLayoutModes" /* 9404 */;
 
 require = arg1;
 function reloadVibegrationsAppFrames(application_id) {

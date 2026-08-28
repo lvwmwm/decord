@@ -1,9 +1,9 @@
-// Module ID: 7034
-// Function ID: 7035
+// Module ID: 7047
+// Function ID: 7048
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7034 (metadata)
+// Module 7047 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TrafficConeSpotIllustration-2x.png.js");

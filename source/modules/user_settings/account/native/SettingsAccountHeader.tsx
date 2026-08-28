@@ -1,22 +1,22 @@
-// Module ID: 14301
-// Function ID: 14302
+// Module ID: 14270
+// Function ID: 14271
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 4098, 1922, 676, 8601, 21, 4445, 712, 14302, 1236, 6197, 589, 7699, 7620, 5551, 4880, 2]
+// Dependencies: [19, 17, 4099, 1923, 676, 8616, 21, 4446, 712, 14271, 1236, 6210, 589, 7713, 7634, 5564, 4893, 2]
 
-// Module 14301 (RestrictedAccountRedirect)
+// Module 14270 (RestrictedAccountRedirect)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import handleOpenEmailVerification from "handleOpenEmailVerification" /* 7699 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14302 */;
+import handleOpenEmailVerification from "handleOpenEmailVerification" /* 7713 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14271 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "markAllUserIdListsStale" /* 4098 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "markAllUserIdListsStale" /* 4099 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import { AnalyticsSections } from "ME" /* 676 */;
-import { SafetySettingsNoticeType } from "SafetyToastType" /* 8601 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 8616 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function RestrictedAccountRedirect() {
@@ -65,8 +65,8 @@ const memoResult = importAllResult.memo(() => {
       obj1 = { text: null, accessibilityLabel: null, onPress: null };
       ({ button: obj6[0], button: obj6[1] } = bannerText);
       obj1[2] = callback;
-      obj[4] = callback(tmp2(4880).Button, obj1);
-      tmp14 = callback(tmp2(5551).TableRow, obj);
+      obj[4] = callback(tmp2(4893).Button, obj1);
+      tmp14 = callback(tmp2(5564).TableRow, obj);
     }
     items2[1] = tmp14;
     obj[1] = items2;

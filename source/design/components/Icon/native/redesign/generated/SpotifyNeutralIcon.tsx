@@ -1,14 +1,14 @@
-// Module ID: 15581
-// Function ID: 15582
+// Module ID: 15599
+// Function ID: 15600
 // Name: SpotifyNeutralIcon
-// Dependencies: [19, 21, 712, 4164, 15582, 2]
+// Dependencies: [19, 21, 712, 4165, 15600, 2]
 // Exports: SpotifyNeutralIcon
 
-// Module 15581 (SpotifyNeutralIcon)
+// Module 15599 (SpotifyNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4164 */;
-import registerAsset from "registerAsset" /* 15582 */;
+import BaseIconImage from "BaseIconImage" /* 4165 */;
+import registerAsset from "registerAsset" /* 15600 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,17 +1,17 @@
-// Module ID: 6064
-// Function ID: 6065
+// Module ID: 6077
+// Function ID: 6078
 // Name: getContextForPermission
-// Dependencies: [32, 1434, 1910, 4089, 1922, 4093, 676, 506, 4094, 589, 2]
+// Dependencies: [32, 1434, 1910, 4090, 1923, 4094, 676, 506, 4095, 589, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanAccessMemberSafetyPage, useCanBulkBanUser
 
-// Module 6064 (getContextForPermission)
+// Module 6077 (getContextForPermission)
 import fromStringAll from "fromString" /* 506 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { isGuildOwner } from "GuildNSFWContentLevel" /* 1434 */;
 import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4089 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { MemberSafetyPagePermissions as closure_8 } from "MemberSafetyPagePermissions" /* 4093 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import { MemberSafetyPagePermissions as closure_8 } from "MemberSafetyPagePermissions" /* 4094 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

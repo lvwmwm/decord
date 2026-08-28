@@ -1,11 +1,11 @@
-// Module ID: 13755
-// Function ID: 13756
+// Module ID: 13774
+// Function ID: 13775
 // Name: TelemetryChannel
-// Dependencies: [13756, 2]
+// Dependencies: [13775, 2]
 
-// Module 13755 (TelemetryChannel)
+// Module 13774 (TelemetryChannel)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 13756 */;
+import enforcingDefault from "enforcing" /* 13775 */;
 
 const result = set.fileFinishedImporting("modules/telemetry_ring/native/TelemetryRingNative.android.tsx");
 

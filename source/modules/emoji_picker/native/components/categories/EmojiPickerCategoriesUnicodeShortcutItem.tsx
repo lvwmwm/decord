@@ -1,16 +1,16 @@
-// Module ID: 9129
-// Function ID: 9130
+// Module ID: 9147
+// Function ID: 9148
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 676, 21, 4445, 4185, 9130, 5020, 1236, 9114, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4446, 4186, 9148, 5033, 1236, 9132, 2]
 // Exports: default
 
-// Module 9129 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 9147 (EmojiPickerCategoriesUnicodeShortcutItem)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ EXPRESSION_FOOTER_HEIGHT: closure_6, NODE_SIZE } = ME);

@@ -1,18 +1,18 @@
-// Module ID: 12844
-// Function ID: 12845
+// Module ID: 12863
+// Function ID: 12864
 // Name: GroupDmMemberCount
-// Dependencies: [19, 1391, 4534, 4098, 1922, 676, 21, 1297, 4445, 712, 589, 12841, 4639, 1236, 9160, 12845, 4289, 12847, 2]
+// Dependencies: [19, 1391, 4535, 4099, 1923, 676, 21, 1297, 4446, 712, 589, 12860, 4640, 1236, 9178, 12864, 4290, 12866, 2]
 
-// Module 12844 (GroupDmMemberCount)
+// Module 12863 (GroupDmMemberCount)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "sortActivity" /* 4534 */;
-import closure_6 from "markAllUserIdListsStale" /* 4098 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "sortActivity" /* 4535 */;
+import closure_6 from "markAllUserIdListsStale" /* 4099 */;
+import closure_7 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function GroupDmMemberCount(channel) {
@@ -45,7 +45,7 @@ function GroupDmMemberCount(channel) {
     }, 0);
   });
   const obj = channel(589);
-  return channel(12847).renderMemberCountText(stateFromStores, channel.recipients.length);
+  return channel(12866).renderMemberCountText(stateFromStores, channel.recipients.length);
 }
 let c3 = importAllResult;
 ({ ChannelTypes: closure_8, StatusTypes: c9 } = ME);

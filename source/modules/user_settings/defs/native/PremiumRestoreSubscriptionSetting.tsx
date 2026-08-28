@@ -1,17 +1,17 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 14772
+// Function ID: 14773
 // Name: pressable
-// Dependencies: [1922, 21, 7098, 4810, 1236, 14788, 2009, 589, 500, 10988, 8028, 2]
+// Dependencies: [1923, 21, 7111, 4823, 1236, 14773, 2010, 589, 500, 11006, 8042, 2]
 
-// Module 14787 (pressable)
+// Module 14772 (pressable)
 import set from "set" /* 500 */;
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _modDef4810 from "module_4810" /* 4810 */;
-import applyAppleReceiptDefault from "applyAppleReceipt" /* 7098 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import _modDef4823 from "module_4823" /* 4823 */;
+import applyAppleReceiptDefault from "applyAppleReceipt" /* 7111 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 10988 */;
+import createToggle from "createToggle" /* 11006 */;
 
 require = arg1;
 createToggle = {
@@ -60,7 +60,7 @@ createToggle = {
         });
       }
     };
-    _modDef4810.openLazy(obj);
+    _modDef4823.openLazy(obj);
   },
   withArrow: true,
   usePredicate: function useHasPremiumRestoreSubscriptionSetting() {

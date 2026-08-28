@@ -1,12 +1,12 @@
-// Module ID: 8369
-// Function ID: 8370
+// Module ID: 8383
+// Function ID: 8384
 // Name: getPlatform
-// Dependencies: [1955, 2]
+// Dependencies: [1956, 2]
 // Exports: default
 
-// Module 8369 (getPlatform)
+// Module 8383 (getPlatform)
 import set from "set" /* 2 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1956 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/getPlatform.tsx");
 

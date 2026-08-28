@@ -1,17 +1,17 @@
-// Module ID: 8856
-// Function ID: 8857
+// Module ID: 8873
+// Function ID: 8874
 // Name: getBotLabel
-// Dependencies: [19, 17, 4474, 21, 4445, 712, 1236, 8857, 4441, 2]
+// Dependencies: [19, 17, 4475, 21, 4446, 712, 1236, 8874, 4442, 2]
 
-// Module 8856 (getBotLabel)
+// Module 8873 (getBotLabel)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 8857 */;
+import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 8874 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { BotTagTypes } from "ApplicationTypes" /* 4474 */;
+import { BotTagTypes } from "ApplicationTypes" /* 4475 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 function getBotLabel(BOT) {

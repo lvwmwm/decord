@@ -1,13 +1,13 @@
-// Module ID: 10986
-// Function ID: 10987
+// Module ID: 11004
+// Function ID: 11005
 // Name: useIsSwipeToMemberListEnabled
-// Dependencies: [10987, 1306, 2]
+// Dependencies: [11005, 1306, 2]
 // Exports: isSwipeToMemberListEnabled, useIsSwipeToMemberListEnabled
 
-// Module 10986 (useIsSwipeToMemberListEnabled)
+// Module 11004 (useIsSwipeToMemberListEnabled)
 import set from "set" /* 2 */;
 import create from "create" /* 1306 */;
-import useSwipeToReplySettingValue from "useSwipeToReplySettingValue" /* 10987 */;
+import useSwipeToReplySettingValue from "useSwipeToReplySettingValue" /* 11005 */;
 
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/member_list/SwipeToMemberListUtils.tsx");
 

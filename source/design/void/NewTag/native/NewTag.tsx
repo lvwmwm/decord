@@ -1,19 +1,19 @@
-// Module ID: 13651
-// Function ID: 13652
+// Module ID: 13670
+// Function ID: 13671
 // Name: NewTag
-// Dependencies: [19, 17, 676, 21, 4445, 712, 4892, 4441, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4446, 712, 4905, 4442, 1236, 2]
 // Exports: default
 
-// Module 13651 (NewTag)
+// Module 13670 (NewTag)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import LinearGradientDefault from "LinearGradient" /* 4892 */;
+import Text from "Text" /* 4442 */;
+import LinearGradientDefault from "LinearGradient" /* 4905 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { HorizontalGradient } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;

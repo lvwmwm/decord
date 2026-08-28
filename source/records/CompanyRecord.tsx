@@ -1,10 +1,10 @@
-// Module ID: 4472
-// Function ID: 4473
+// Module ID: 4473
+// Function ID: 4474
 // Name: createFromServer
-// Dependencies: [1931, 2]
+// Dependencies: [1932, 2]
 
-// Module 4472 (createFromServer)
-import toJSDefault from "toJS" /* 1931 */;
+// Module 4473 (createFromServer)
+import toJSDefault from "toJS" /* 1932 */;
 
 toJSDefault;
 let prototype;

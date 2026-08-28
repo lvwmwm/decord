@@ -1,15 +1,15 @@
-// Module ID: 7204
-// Function ID: 7205
+// Module ID: 7218
+// Function ID: 7219
 // Name: scheduledEventSort
-// Dependencies: [1218, 1992, 1397, 4085, 12, 11, 589, 709, 2]
+// Dependencies: [1218, 1993, 1397, 4086, 12, 11, 589, 709, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 7204 (scheduledEventSort)
+// Module 7218 (scheduledEventSort)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
+import closure_3 from "trackCommunicationDisabled" /* 1993 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
 
 function scheduledEventSort(status) {

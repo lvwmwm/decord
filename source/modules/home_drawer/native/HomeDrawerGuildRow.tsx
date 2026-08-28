@@ -1,26 +1,26 @@
-// Module ID: 15820
-// Function ID: 15821
+// Module ID: 15838
+// Function ID: 15839
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 4091, 1395, 1391, 1982, 7314, 1910, 4460, 4098, 4654, 1922, 676, 4655, 21, 4445, 589, 4305, 4302, 12862, 10158, 4441, 15821, 15822, 4639, 11, 15823, 15824, 11470, 15825, 15826, 15827, 15829, 15830, 15809, 2]
+// Dependencies: [19, 17, 4092, 1395, 1391, 1983, 7328, 1910, 4461, 4099, 4667, 1923, 676, 4668, 21, 4446, 589, 4306, 4303, 12881, 10176, 4442, 15839, 15840, 4640, 11, 15841, 15842, 11489, 15843, 15844, 15845, 15847, 15848, 15827, 2]
 // Exports: default
 
-// Module 15820 (GuildRowWrapper)
+// Module 15838 (GuildRowWrapper)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "storeThread" /* 4091 */;
+import closure_5 from "storeThread" /* 4092 */;
 import { isThread } from "createChannelRecord" /* 1395 */;
 import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "comparator" /* 1982 */;
-import closure_9 from "updateGuildUnreadSentinel" /* 7314 */;
+import closure_8 from "comparator" /* 1983 */;
+import closure_9 from "updateGuildUnreadSentinel" /* 7328 */;
 import closure_10 from "createGuildRecordFromRust" /* 1910 */;
-import closure_11 from "generateOldThreadCutoff" /* 4460 */;
-import closure_12 from "markAllUserIdListsStale" /* 4098 */;
-import closure_13 from "updateUserGuildSettingsInternal" /* 4654 */;
-import closure_14 from "mergeGuildAvatar" /* 1922 */;
+import closure_11 from "generateOldThreadCutoff" /* 4461 */;
+import closure_12 from "markAllUserIdListsStale" /* 4099 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 4667 */;
+import closure_14 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4655 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4668 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function GuildRowWrapper(guild) {
@@ -345,7 +345,7 @@ export default function HomeDrawerGuildRow(guildId) {
   obj = guildId(589);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4305).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(4306).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

@@ -1,16 +1,16 @@
-// Module ID: 7680
-// Function ID: 7681
+// Module ID: 7694
+// Function ID: 7695
 // Name: AuthHeader
-// Dependencies: [19, 676, 21, 4445, 5413, 712, 1297, 2]
+// Dependencies: [19, 676, 21, 4446, 5426, 712, 1297, 2]
 // Exports: default
 
-// Module 7680 (AuthHeader)
+// Module 7694 (AuthHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "createTextStyle" /* 5413 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "createTextStyle" /* 5426 */;
 
 require = arg1;
 noopAll;

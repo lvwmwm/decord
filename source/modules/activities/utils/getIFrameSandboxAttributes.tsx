@@ -1,10 +1,10 @@
-// Module ID: 9537
-// Function ID: 9538
+// Module ID: 9555
+// Function ID: 9556
 // Name: getIFrameSandboxAttributes
 // Dependencies: [2]
 // Exports: default
 
-// Module 9537 (getIFrameSandboxAttributes)
+// Module 9555 (getIFrameSandboxAttributes)
 import set from "set" /* 2 */;
 
 let closure_0 = ["allow-pointer-lock", "allow-scripts", "allow-same-origin", "allow-forms"];

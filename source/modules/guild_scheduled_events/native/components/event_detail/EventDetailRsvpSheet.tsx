@@ -1,24 +1,24 @@
-// Module ID: 9690
-// Function ID: 9691
+// Module ID: 9708
+// Function ID: 9709
 // Name: EmptyDisplay
-// Dependencies: [19, 17, 4534, 1922, 505, 21, 4445, 712, 5413, 8609, 9691, 4441, 1236, 8295, 5445, 5905, 589, 1297, 9692, 4289, 8819, 9693, 5576, 6000, 2]
+// Dependencies: [19, 17, 4535, 1923, 505, 21, 4446, 712, 5426, 8624, 9709, 4442, 1236, 8309, 5458, 5918, 589, 1297, 9710, 4290, 8836, 9711, 5589, 6013, 2]
 
-// Module 9690 (EmptyDisplay)
+// Module 9708 (EmptyDisplay)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import preloadDefault from "preload" /* 5445 */;
-import Form from "Form" /* 8295 */;
-import StageSparkleInnerDefault from "StageSparkleInner" /* 8609 */;
-import registerAssetDefault from "registerAsset" /* 9691 */;
+import Text from "Text" /* 4442 */;
+import preloadDefault from "preload" /* 5458 */;
+import Form from "Form" /* 8309 */;
+import StageSparkleInnerDefault from "StageSparkleInner" /* 8624 */;
+import registerAssetDefault from "registerAsset" /* 9709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "sortActivity" /* 4534 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "sortActivity" /* 4535 */;
+import closure_6 from "mergeGuildAvatar" /* 1923 */;
 import { Fonts } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
-import importDefaultResult from "createTextStyle" /* 5413 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "createTextStyle" /* 5426 */;
 
 require = arg1;
 function EmptyDisplay(arg0) {
@@ -228,7 +228,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   eventUser = eventUser.eventUser;
   let analyticsLocations;
   const tmp = callback3();
-  analyticsLocations = analyticsLocations(5905)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5918)().analyticsLocations;
   let obj = eventUser(589);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getUser(eventUser.user_id));
@@ -253,12 +253,12 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj1 = { user: stateFromStores, nick: null, usernameStyle: null, nicknameStyle: null };
   const member = eventUser.member;
   let nick;
-  let tmp2Result = tmp2(9692);
+  let tmp2Result = tmp2(9710);
   if (member != null) {
     nick = member.nick;
   }
   if (nick == null) {
-    tmp2Result = tmp2(4289);
+    tmp2Result = tmp2(4290);
     nick = tmp2Result.getName(eventUser.user);
   }
   obj1[1] = nick;
@@ -267,7 +267,7 @@ const memoResult = importAllResult.memo((eventUser) => {
   obj[3] = function onPress() {
     analyticsLocations(closure_1_2[20])({ userId: eventUser.user_id, sourceAnalyticsLocations: analyticsLocations });
   };
-  return closure_7(eventUser(8295).FormRow, obj, eventUser.user_id);
+  return closure_7(eventUser(8309).FormRow, obj, eventUser.user_id);
 });
 EventDetailRsvpSheet.displayName = "EventDetailRsvpSheet";
 let obj3 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 16, height: 32, width: 32, alignItems: "center", justifyContent: "center" };

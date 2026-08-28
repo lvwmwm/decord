@@ -1,20 +1,20 @@
-// Module ID: 16317
-// Function ID: 16318
+// Module ID: 16335
+// Function ID: 16336
 // Name: ViewModerators
-// Dependencies: [5, 19, 1992, 1985, 1910, 676, 8603, 21, 698, 4412, 16318, 2009, 1500, 589, 5311, 9628, 1399, 1955, 4810, 1236, 4458, 9629, 4161, 1297, 9633, 4878, 5944, 5551, 9145, 2]
+// Dependencies: [5, 19, 1993, 1986, 1910, 676, 8618, 21, 698, 4413, 16336, 2010, 1500, 589, 5324, 9646, 1399, 1956, 4823, 1236, 4459, 9647, 4162, 1297, 9651, 4891, 5957, 5564, 9163, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 16317 (ViewModerators)
+// Module 16335 (ViewModerators)
 import noopAll from "noop" /* 19 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4412 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_5 from "trackCommunicationDisabled" /* 1993 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 1986 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { RowType } from "RowType" /* 8603 */;
+import { RowType } from "RowType" /* 8618 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -224,5 +224,5 @@ export const openAddModeratorsActionSheet = function openAddModeratorsActionShee
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
   const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel, canSkip: flag };
-  obj2.openLazy(asyncRequireImpl(16318, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
+  obj2.openLazy(asyncRequireImpl(16336, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
 };

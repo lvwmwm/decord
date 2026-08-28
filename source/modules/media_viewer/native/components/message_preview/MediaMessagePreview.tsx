@@ -1,23 +1,23 @@
-// Module ID: 12749
-// Function ID: 12750
+// Module ID: 12768
+// Function ID: 12769
 // Name: MeasureMessage
-// Dependencies: [32, 19, 17, 6076, 6080, 1391, 4688, 8562, 676, 21, 7774, 7967, 4445, 8520, 8704, 712, 589, 10871, 1236, 11, 12750, 11062, 10810, 7441, 11099, 5604, 11380, 11118, 4456, 2]
+// Dependencies: [32, 19, 17, 6089, 6093, 1391, 4701, 8577, 676, 21, 7788, 7981, 4446, 8534, 8720, 712, 589, 10889, 1236, 11, 12769, 11080, 10828, 7455, 11117, 5617, 11399, 11136, 4457, 2]
 // Exports: default
 
-// Module 12749 (MeasureMessage)
+// Module 12768 (MeasureMessage)
 import ThemesDefault from "Themes" /* 712 */;
-import setOptionsDefault from "setOptions" /* 7774 */;
+import setOptionsDefault from "setOptions" /* 7788 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleLoadThreadsSuccess" /* 6076 */;
-import closure_8 from "handleReaction" /* 6080 */;
+import closure_7 from "handleLoadThreadsSuccess" /* 6089 */;
+import closure_8 from "handleReaction" /* 6093 */;
 import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "reinjectEphemerals" /* 4688 */;
-import closure_11 from "messages" /* 8562 */;
+import closure_10 from "reinjectEphemerals" /* 4701 */;
+import closure_11 from "messages" /* 8577 */;
 import { ThemeTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 function MeasureMessage(message) {
@@ -308,7 +308,7 @@ export default function MediaMessagePreview(channelId) {
           }
         }
         obj = channelId(onClose[27]);
-        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "BuyNitroPurchaseFlow", message: "absolute", messageChannel: null, selectedChannelId: "call", tapLinkData: "withTiming" };
+        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "BuyNitroPurchaseFlow", message: "absolute", messageChannel: null, selectedChannelId: "container", tapLinkData: "kind" };
         obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
           channel = channel.getChannel(arg1);
           if (null != channel) {

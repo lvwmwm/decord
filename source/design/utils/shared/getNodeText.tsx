@@ -1,9 +1,9 @@
-// Module ID: 4168
-// Function ID: 4169
+// Module ID: 4169
+// Function ID: 4170
 // Name: getNodeText
 // Dependencies: [19, 2]
 
-// Module 4168 (getNodeText)
+// Module 4169 (getNodeText)
 import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("design/utils/shared/getNodeText.tsx");

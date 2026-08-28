@@ -1,33 +1,33 @@
-// Module ID: 14332
-// Function ID: 14333
+// Module ID: 14316
+// Function ID: 14317
 // Name: componentWillUnmount
-// Dependencies: [19, 17, 1384, 6198, 1922, 676, 21, 4445, 712, 4172, 7689, 7696, 12, 698, 7695, 7699, 14333, 4441, 1236, 4878, 7638, 4880, 7093, 589, 38, 1500, 2]
+// Dependencies: [19, 17, 1384, 6211, 1923, 676, 21, 4446, 712, 4173, 7703, 7710, 12, 698, 7709, 7713, 14317, 4442, 1236, 4891, 7652, 4893, 7106, 589, 38, 1500, 2]
 // Exports: default
 
-// Module 14332 (componentWillUnmount)
+// Module 14316 (componentWillUnmount)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4441 */;
-import Stack from "Stack" /* 4878 */;
-import Button from "Button" /* 4880 */;
-import TextInput from "TextInput" /* 7638 */;
-import saveProfileAndAccountRequestAll from "saveProfileAndAccountRequest" /* 7689 */;
-import handleOpenEmailVerificationDefault from "handleOpenEmailVerification" /* 7699 */;
-import registerAssetDefault from "registerAsset" /* 14333 */;
+import Text from "Text" /* 4442 */;
+import Stack from "Stack" /* 4891 */;
+import Button from "Button" /* 4893 */;
+import TextInput from "TextInput" /* 7652 */;
+import saveProfileAndAccountRequestAll from "saveProfileAndAccountRequest" /* 7703 */;
+import handleOpenEmailVerificationDefault from "handleOpenEmailVerification" /* 7713 */;
+import registerAssetDefault from "registerAsset" /* 14317 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "handleUpdateUser" /* 1384 */;
-import closure_8 from "handleFormClose" /* 6198 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_8 from "handleFormClose" /* 6211 */;
+import closure_9 from "mergeGuildAvatar" /* 1923 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
 ({ Image: c4, View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ AnalyticEvents: c10, LoginRequiredActions: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let closure_14 = { newPassword: "call", password: 17072449 };
+let closure_14 = { newPassword: "container", password: 17069889 };
 createCacheKey = { onePass: { width: 20, height: 20 }, unverifiedWrapper: null, container: null, header: null, requiredActionsSubtitle: null, requiredActionsTitle: null, image: null };
 createCacheKey = { overflow: "hidden", borderRadius: ThemesDefault.radii.xs, marginVertical: 16 };
 createCacheKey[1] = createCacheKey;
@@ -230,7 +230,7 @@ EditPassword.contextType = require("ManaContext").ThemeContext;
 let result = require("set").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountEditPassword.tsx");
 
 export default function EditPasswordWrapper() {
-  let obj = flag(7093);
+  let obj = flag(7106);
   const params = obj.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {

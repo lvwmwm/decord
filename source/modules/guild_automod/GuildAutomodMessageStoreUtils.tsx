@@ -1,10 +1,10 @@
-// Module ID: 13330
-// Function ID: 13331
+// Module ID: 13349
+// Function ID: 13350
 // Name: isNotAutomodEmbed
 // Dependencies: [693, 2]
 // Exports: isNotAutomodEmbed
 
-// Module 13330 (isNotAutomodEmbed)
+// Module 13349 (isNotAutomodEmbed)
 import set from "set" /* 2 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 693 */;
 

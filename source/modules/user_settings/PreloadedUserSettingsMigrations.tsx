@@ -1,19 +1,19 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14042
+// Function ID: 14043
 // Name: migrateHotspotLocation
-// Dependencies: [1391, 676, 11897, 1306, 1376, 6012, 595, 1342, 589, 1337, 1377, 7199, 2]
+// Dependencies: [1391, 676, 11916, 1306, 1376, 6025, 595, 1342, 589, 1337, 1377, 7213, 2]
 
-// Module 14023 (migrateHotspotLocation)
+// Module 14042 (migrateHotspotLocation)
 import initializeDefault from "initialize" /* 589 */;
 import Storage4 from "Storage" /* 595 */;
 import create from "create" /* 1306 */;
 import defineProperty from "defineProperty" /* 1337 */;
 import b64ToProto from "b64ToProto" /* 1342 */;
 import DismissibleContent from "DismissibleContent" /* 1377 */;
-import HotspotStore2 from "HotspotStore" /* 6012 */;
+import HotspotStore2 from "HotspotStore" /* 6025 */;
 import closure_3 from "ensureGuildLoaded" /* 1391 */;
 import { ChannelNoticeTypes } from "ME" /* 676 */;
-import { MULTIACCOUNT_TOOLTIP_SEEN_KEY as closure_5 } from "MAX_ACCOUNTS" /* 11897 */;
+import { MULTIACCOUNT_TOOLTIP_SEEN_KEY as closure_5 } from "MAX_ACCOUNTS" /* 11916 */;
 
 require = arg1;
 function migrateHotspotLocation(userContent, ACTIVITY_BEB_TUTORIAL, ACCOUNT_MULTIACCOUNT_TOOLTIP) {
@@ -166,8 +166,8 @@ let items = [
       const Storage = Storage4.Storage;
       let hasHiddenHotspotResult = true === Storage.get("HAS_SEEN_HUB_UPSELL");
       if (!hasHiddenHotspotResult) {
-        const HotspotStore = tmp(6012).HotspotStore;
-        hasHiddenHotspotResult = HotspotStore.hasHiddenHotspot(tmp(6012).HotspotLocations.HUB_SECOND_EMAIL_CONNECTION_UPSELL);
+        const HotspotStore = tmp(6025).HotspotStore;
+        hasHiddenHotspotResult = HotspotStore.hasHiddenHotspot(tmp(6025).HotspotLocations.HUB_SECOND_EMAIL_CONNECTION_UPSELL);
       }
       let flag = false;
       if (hasHiddenHotspotResult) {
@@ -824,7 +824,7 @@ let items = [
           Storage2.remove("lastChangeLogId");
           return false;
         }
-        tmpResult = tmp(7199);
+        tmpResult = tmp(7213);
       }
     },
     cleanup() {

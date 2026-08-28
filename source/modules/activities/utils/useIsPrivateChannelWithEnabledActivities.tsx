@@ -1,10 +1,10 @@
-// Module ID: 9471
-// Function ID: 9472
+// Module ID: 9489
+// Function ID: 9490
 // Name: useIsPrivateChannelWithEnabledActivities
 // Dependencies: [1391, 647, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 9471 (useIsPrivateChannelWithEnabledActivities)
+// Module 9489 (useIsPrivateChannelWithEnabledActivities)
 import closure_2 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;

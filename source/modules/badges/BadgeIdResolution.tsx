@@ -1,12 +1,12 @@
-// Module ID: 8493
-// Function ID: 8494
+// Module ID: 8507
+// Function ID: 8508
 // Name: set
-// Dependencies: [8494, 8489, 2]
+// Dependencies: [8508, 8503, 2]
 // Exports: isLegacyBadgeId, legacyBadgeIdToBadgeId, resolveProfileBadgeId
 
-// Module 8493 (set)
-import BadgeId from "BadgeId" /* 8489 */;
-import LEGACY_BADGE_ID_MAP from "LEGACY_BADGE_ID_MAP" /* 8494 */;
+// Module 8507 (set)
+import BadgeId from "BadgeId" /* 8503 */;
+import LEGACY_BADGE_ID_MAP from "LEGACY_BADGE_ID_MAP" /* 8508 */;
 import set from "set" /* 2 */;
 
 let set = new Set(Object.values(LEGACY_BADGE_ID_MAP.LEGACY_BADGE_ID_MAP));

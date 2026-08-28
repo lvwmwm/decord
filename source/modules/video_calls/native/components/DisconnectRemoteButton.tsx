@@ -1,13 +1,13 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10033
+// Function ID: 10034
 // Name: DisconnectRemoteButton
-// Dependencies: [19, 4462, 21, 589, 9466, 7697, 9978, 1236, 9798, 9695, 2]
+// Dependencies: [19, 4463, 21, 589, 9484, 7711, 9996, 1236, 9816, 9713, 2]
 // Exports: DisconnectRemoteButton
 
-// Module 10015 (DisconnectRemoteButton)
+// Module 10033 (DisconnectRemoteButton)
 import noopAll from "noop" /* 19 */;
-import ActionButtonAll from "ActionButton" /* 9466 */;
-import closure_4 from "set" /* 4462 */;
+import ActionButtonAll from "ActionButton" /* 9484 */;
+import closure_4 from "set" /* 4463 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -21,7 +21,7 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
   const items = [closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ awaitingRemote: null != store.getAwaitingRemoteSessionInfo(), remoteSessionId: store.getRemoteSessionId() }));
   remoteSessionId = stateFromStoresObject.remoteSessionId;
-  obj = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7697 : 9978), accessibilityLabel: null, isSmallSize: null, onPress: null };
+  obj = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7711 : 9996), accessibilityLabel: null, isSmallSize: null, onPress: null };
   const intl = tmp(1236).intl;
   obj[1] = intl.string(channel(1236).t["6vrfgt"]);
   obj[2] = channel.isSmallSize;
@@ -36,5 +36,5 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
       const obj = channel(closure_1_3[8]);
     }
   };
-  return jsx(ActionButtonAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7697 : 9978), accessibilityLabel: null, isSmallSize: null, onPress: null });
+  return jsx(ActionButtonAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7711 : 9996), accessibilityLabel: null, isSmallSize: null, onPress: null });
 };

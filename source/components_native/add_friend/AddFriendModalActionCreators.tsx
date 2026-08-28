@@ -1,25 +1,25 @@
-// Module ID: 13505
-// Function ID: 13506
-// Dependencies: [1922, 4676, 13506, 2009, 2]
+// Module ID: 13524
+// Function ID: 13525
+// Dependencies: [1923, 4689, 13525, 2010, 2]
 
-// Module 13505
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4676 from "module_4676" /* 4676 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+// Module 13524
+import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
+import _modDef4689 from "module_4689" /* 4689 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("components_native/add_friend/AddFriendModalActionCreators.tsx");
 
 export default {
   openAddFriendModalDeeplink() {
-    _modDef4676.pushLazy(asyncRequireImpl(13506, dependencyMap.paths));
+    _modDef4689.pushLazy(asyncRequireImpl(13525, dependencyMap.paths));
   },
   openAddFriendModal(arg0) {
     if (null != currentUser.getCurrentUser()) {
-      let obj = _modDef4676;
+      let obj = _modDef4689;
       obj = { sourceMetadata: null };
       obj[0] = arg0;
-      obj.pushLazy(asyncRequireImpl(13506, dependencyMap.paths), obj);
+      obj.pushLazy(asyncRequireImpl(13525, dependencyMap.paths), obj);
     }
   }
 };

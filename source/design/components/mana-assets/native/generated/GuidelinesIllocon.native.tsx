@@ -1,14 +1,14 @@
-// Module ID: 6677
-// Function ID: 6678
+// Module ID: 6690
+// Function ID: 6691
 // Name: GuidelinesIllocon
-// Dependencies: [21, 5445, 6678, 2]
+// Dependencies: [21, 5458, 6691, 2]
 // Exports: GuidelinesIllocon
 
-// Module 6677 (GuidelinesIllocon)
+// Module 6690 (GuidelinesIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6678 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6691 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GuidelinesIllocon.native.tsx");

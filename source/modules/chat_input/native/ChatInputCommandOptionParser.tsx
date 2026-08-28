@@ -1,23 +1,23 @@
-// Module ID: 11485
-// Function ID: 11486
+// Module ID: 11504
+// Function ID: 11505
 // Name: findGameMentionTokens
-// Dependencies: [17, 4437, 5353, 1985, 4089, 676, 4905, 1925, 11486, 4106, 11487, 4478, 1903, 7972, 4134, 10258, 712, 4639, 2]
+// Dependencies: [17, 4438, 5366, 1986, 4090, 676, 4918, 1926, 11505, 4107, 11506, 4479, 1903, 7986, 4135, 10276, 712, 4640, 2]
 // Exports: getChannelHighlightNodes, getEmojiHighlightNodes, getGameHighlightNodes, getGameMentionInputNodes, getMatchedOptions, getMatchedOptionsWithValue, getRoleHighlightNodes, getSilentHighlightNodes, getTextBeforeFirstOption, getUsernameHighlightNodes, serializeComposerGameMentions
 
-// Module 11485 (findGameMentionTokens)
+// Module 11504 (findGameMentionTokens)
 import set2 from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
-import set3 from "set" /* 1925 */;
-import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4106 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4478 */;
-import registerAssetDefault from "registerAsset" /* 7972 */;
-import addRule from "addRule" /* 11486 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_5 from "getEmojiToGroupId" /* 5353 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4089 */;
-import regExp from "regExp" /* 4905 */;
+import set3 from "set" /* 1926 */;
+import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4107 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4479 */;
+import registerAssetDefault from "registerAsset" /* 7986 */;
+import addRule from "addRule" /* 11505 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_5 from "getEmojiToGroupId" /* 5366 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 1986 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
+import regExp from "regExp" /* 4918 */;
 
 function findGameMentionTokens(text, name, items) {
   closure_0 = name;
@@ -299,7 +299,7 @@ export const getEmojiHighlightNodes = function getEmojiHighlightNodes(channel, a
 };
 export const getUsernameHighlightNodes = function getUsernameHighlightNodes(channel, arg1) {
   const items = [];
-  let obj = _require(11487);
+  let obj = _require(11506);
   const users = obj.getUsers(channel);
   _require = (arg0) => arg0;
   let match = regex3.exec(arg1);
@@ -432,7 +432,7 @@ export const getGameHighlightNodes = function getGameHighlightNodes(mentionGames
   return items1;
 };
 export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
-  const IncludeGameMentionsInAutocomplete = _require(4134).IncludeGameMentionsInAutocomplete;
+  const IncludeGameMentionsInAutocomplete = _require(4135).IncludeGameMentionsInAutocomplete;
   const items = [];
   if (IncludeGameMentionsInAutocomplete.getSetting()) {
     _require = closure_9;
@@ -441,7 +441,7 @@ export const getGameMentionInputNodes = function getGameMentionInputNodes(arr) {
       do {
         let tmp3 = _require;
         let tmp4 = dependencyMap;
-        let obj = _require(10258);
+        let obj = _require(10276);
         let tmp5 = index;
         if (obj.isWhitespaceSeparatingBoundary(arr, index)) {
           arr = items.push(index);
@@ -484,7 +484,7 @@ export const getChannelHighlightNodes = function getChannelHighlightNodes(channe
   let _loop4Result;
   const _require = arg1;
   let items = [];
-  dependencyMap = _require(11487).getChannels(channel);
+  dependencyMap = _require(11506).getChannels(channel);
   c3 = 0;
   function _loop4() {
     let arr = lib;

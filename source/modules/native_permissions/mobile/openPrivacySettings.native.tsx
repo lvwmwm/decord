@@ -1,13 +1,13 @@
-// Module ID: 5043
-// Function ID: 5044
+// Module ID: 5056
+// Function ID: 5057
 // Name: openPrivacySettings
-// Dependencies: [17, 500, 5044, 2]
+// Dependencies: [17, 500, 5057, 2]
 // Exports: default
 
-// Module 5043 (openPrivacySettings)
+// Module 5056 (openPrivacySettings)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 5044 */;
+import enforcingDefault from "enforcing" /* 5057 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const result = set.fileFinishedImporting("modules/native_permissions/mobile/openPrivacySettings.native.tsx");

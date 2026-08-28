@@ -1,9 +1,9 @@
-// Module ID: 3535
-// Function ID: 3536
+// Module ID: 3536
+// Function ID: 3537
 // Name: dateFnsLocales
-// Dependencies: [5, 3536, 2009, 3548, 3554, 3560, 3566, 3572, 1998, 3574, 3580, 3586, 3592, 3598, 3604, 3610, 3616, 3622, 3628, 3634, 3640, 3646, 3652, 3658, 3664, 3670, 3676, 3682, 3986, 3992, 3998, 4004, 2]
+// Dependencies: [5, 3537, 2010, 3549, 3555, 3561, 3567, 3573, 1999, 3575, 3581, 3587, 3593, 3599, 3605, 3611, 3617, 3623, 3629, 3635, 3641, 3647, 3653, 3659, 3665, 3671, 3677, 3683, 3987, 3993, 3999, 4005, 2]
 
-// Module 3535 (dateFnsLocales)
+// Module 3536 (dateFnsLocales)
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 9629
-// Function ID: 9630
+// Module ID: 9647
+// Function ID: 9648
 // Name: _updatePermission
-// Dependencies: [5, 9630, 709, 4458, 2]
+// Dependencies: [5, 9648, 709, 4459, 2]
 // Exports: init, saveAndClearPermissionUpdates, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 9629 (_updatePermission)
+// Module 9647 (_updatePermission)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -56,7 +56,7 @@ function _updatePermission() {
                   c6 = 1;
                   c7 = 1;
                   obj1 = { value: null, done: false };
-                  obj1[0] = guildId(9630).checkChattableChannelThresholdMetAfterChannelPermissionDeny(tmp22, tmp25, tmp24);
+                  obj1[0] = guildId(9648).checkChattableChannelThresholdMetAfterChannelPermissionDeny(tmp22, tmp25, tmp24);
                   return obj1;
                 }
               }
@@ -147,18 +147,18 @@ export const savePermissionUpdates = function savePermissionUpdates(id, items, a
         if (null == arr) {
           return chain();
         } else {
-          const result = chain(4458).updatePermissionOverwrite(callback, arr);
+          const result = chain(4459).updatePermissionOverwrite(callback, arr);
           result.then(chain, chain);
-          const obj2 = chain(4458);
+          const obj2 = chain(4459);
         }
       } else {
         arr = closure_1_2.pop();
         if (null == arr) {
           return chain();
         } else {
-          const result1 = chain(4458).clearPermissionOverwrite(callback, arr);
+          const result1 = chain(4459).clearPermissionOverwrite(callback, arr);
           result1.then(chain, chain);
-          const obj = chain(4458);
+          const obj = chain(4459);
         }
       }
     }
@@ -190,18 +190,18 @@ export const saveAndClearPermissionUpdates = function saveAndClearPermissionUpda
         if (null == arr) {
           return chain();
         } else {
-          const result = chain(4458).updatePermissionOverwrite(callback, arr);
+          const result = chain(4459).updatePermissionOverwrite(callback, arr);
           result.then(chain, chain);
-          const obj2 = chain(4458);
+          const obj2 = chain(4459);
         }
       } else {
         arr = closure_1_2.pop();
         if (null == arr) {
           return chain();
         } else {
-          const result1 = chain(4458).clearPermissionOverwrite(callback, arr);
+          const result1 = chain(4459).clearPermissionOverwrite(callback, arr);
           result1.then(chain, chain);
-          const obj = chain(4458);
+          const obj = chain(4459);
         }
       }
     }

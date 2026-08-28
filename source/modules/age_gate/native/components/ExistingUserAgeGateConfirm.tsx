@@ -1,18 +1,18 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 16819
+// Function ID: 16820
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 676, 21, 4445, 1500, 5505, 4441, 1236, 1995, 4880, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4446, 1500, 5518, 4442, 1236, 1996, 4893, 2]
 // Exports: default
 
-// Module 16801 (ExistingUserAgeGateConfirm)
-import combinedDefault from "combined" /* 1995 */;
+// Module 16819 (ExistingUserAgeGateConfirm)
+import combinedDefault from "combined" /* 1996 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);
@@ -64,14 +64,14 @@ export default function ExistingUserAgeGateConfirm(age) {
   obj = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = onConfirm(1236).intl;
   obj[3] = intl.format(onConfirm(1236).t.wumolR, { age: age.age });
-  const items = [callback2(onConfirm(4441).Text, obj), , ];
+  const items = [callback2(onConfirm(4442).Text, obj), , ];
   obj1 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
   const intl2 = onConfirm(1236).intl;
   const obj2 = { helpURL: null };
   const tmp2 = callback(React.useState(false), 2);
   obj2[0] = combinedDefault.getArticleURL(HelpdeskArticles.AGE_GATE);
   obj1[3] = intl2.format(onConfirm(1236).t.n3QjDE, obj2);
-  items[1] = callback2(onConfirm(4441).Text, obj1);
+  items[1] = callback2(onConfirm(4442).Text, obj1);
   const obj3 = { style: tmp.buttonWrapper, children: null };
   const obj4 = { loading: tmp3, disabled: tmp3, text: null, onPress: null, grow: true };
   const intl3 = onConfirm(1236).intl;
@@ -86,8 +86,8 @@ export default function ExistingUserAgeGateConfirm(age) {
     }
     return applyArgumentsResult;
   };
-  obj3[1] = callback2(onConfirm(4880).Button, obj4);
+  obj3[1] = callback2(onConfirm(4893).Button, obj4);
   items[2] = callback2(View, obj3);
   obj[2] = items;
-  return callback3(onConfirm(5505).SafeAreaPaddingView, obj);
+  return callback3(onConfirm(5518).SafeAreaPaddingView, obj);
 };

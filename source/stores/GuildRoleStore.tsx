@@ -1,18 +1,18 @@
-// Module ID: 1985
-// Function ID: 1986
+// Module ID: 1986
+// Function ID: 1987
 // Name: createGuildRoleRecordFromRust
-// Dependencies: [1431, 1911, 1434, 1986, 506, 1987, 1989, 1914, 2]
+// Dependencies: [1431, 1911, 1434, 1987, 506, 1988, 1990, 1914, 2]
 
-// Module 1985 (createGuildRoleRecordFromRust)
+// Module 1986 (createGuildRoleRecordFromRust)
 import set2 from "set" /* 2 */;
 import fromStringAll from "fromString" /* 506 */;
 import isValueEqual from "isValueEqual" /* 1431 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
 import identity from "identity" /* 1911 */;
 import items from "items" /* 1914 */;
-import GuildRoleRecordTypeTag2 from "GuildRoleRecordTypeTag" /* 1986 */;
-import fromServerArrayAll from "fromServerArray" /* 1987 */;
-import compareGuildRolesAll from "compareGuildRoles" /* 1989 */;
+import GuildRoleRecordTypeTag2 from "GuildRoleRecordTypeTag" /* 1987 */;
+import fromServerArrayAll from "fromServerArray" /* 1988 */;
+import compareGuildRolesAll from "compareGuildRoles" /* 1990 */;
 
 function createGuildRoleRecordFromRust(permissions) {
   const obj = {};

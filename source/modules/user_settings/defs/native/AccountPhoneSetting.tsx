@@ -1,17 +1,17 @@
-// Module ID: 14322
-// Function ID: 14323
+// Module ID: 14306
+// Function ID: 14307
 // Name: pressable
-// Dependencies: [1922, 7816, 7702, 589, 4676, 7701, 2009, 7704, 10988, 1236, 2]
+// Dependencies: [1923, 7830, 7716, 589, 4689, 7715, 2010, 7718, 11006, 1236, 2]
 
-// Module 14322 (pressable)
+// Module 14306 (pressable)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4676 from "module_4676" /* 4676 */;
-import ChangePhoneReason from "ChangePhoneReason" /* 7704 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_4 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7702 */;
-import createToggle from "createToggle" /* 10988 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
+import _modDef4689 from "module_4689" /* 4689 */;
+import ChangePhoneReason from "ChangePhoneReason" /* 7718 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_4 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7716 */;
+import createToggle from "createToggle" /* 11006 */;
 
 require = arg1;
 createToggle = {
@@ -32,9 +32,9 @@ createToggle = {
     });
   },
   onPress: function onAccountPhoneSettingPress() {
-    let obj = _modDef4676;
+    let obj = _modDef4689;
     obj = { allowDeletePhone: true, reason: ChangePhoneReason.ChangePhoneReason.USER_SETTINGS_UPDATE };
-    obj.pushLazy(asyncRequireImpl(7701, dependencyMap.paths), obj, closure_4);
+    obj.pushLazy(asyncRequireImpl(7715, dependencyMap.paths), obj, closure_4);
   },
   withArrow: true
 };

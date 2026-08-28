@@ -1,12 +1,12 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10506
+// Function ID: 10507
 // Name: handleUserSettingsStoreUpdate
-// Dependencies: [1996, 589, 709, 2]
+// Dependencies: [1997, 589, 709, 2]
 
-// Module 10490 (handleUserSettingsStoreUpdate)
+// Module 10506 (handleUserSettingsStoreUpdate)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "_getSystemLocale" /* 1996 */;
+import closure_0 from "_getSystemLocale" /* 1997 */;
 
 function handleUserSettingsStoreUpdate() {
   if (locale === closure_0.locale) {

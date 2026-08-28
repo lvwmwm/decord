@@ -1,16 +1,16 @@
-// Module ID: 12081
-// Function ID: 12082
+// Module ID: 12100
+// Function ID: 12101
 // Name: ApplicationIconAndName
-// Dependencies: [21, 4445, 712, 1297, 4441, 2]
+// Dependencies: [21, 4446, 712, 1297, 4442, 2]
 // Exports: default
 
-// Module 12081 (ApplicationIconAndName)
+// Module 12100 (ApplicationIconAndName)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4441 */;
+import Text from "Text" /* 4442 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 ({ jsx: c3, Fragment: c4, jsxs: c5 } = jsxProd);
 let closure_6 = createCacheKey.createStyles((width) => {

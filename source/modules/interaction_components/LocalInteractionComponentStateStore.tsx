@@ -1,12 +1,12 @@
-// Module ID: 7954
-// Function ID: 7955
+// Module ID: 7968
+// Function ID: 7969
 // Name: getInteractionComponentStates
-// Dependencies: [7955, 589, 709, 2]
+// Dependencies: [7969, 589, 709, 2]
 
-// Module 7954 (getInteractionComponentStates)
+// Module 7968 (getInteractionComponentStates)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import LimitedMapDefault from "LimitedMap" /* 7955 */;
+import LimitedMapDefault from "LimitedMap" /* 7969 */;
 
 let closure_0 = new LimitedMapDefault(196606);
 let c1 = 0;

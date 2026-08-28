@@ -1,10 +1,10 @@
-// Module ID: 4088
-// Function ID: 4089
+// Module ID: 4089
+// Function ID: 4090
 // Name: createFavoritesGuildChannelRecord
 // Dependencies: [676, 2]
 // Exports: createFavoritesGuildChannelRecord
 
-// Module 4088 (createFavoritesGuildChannelRecord)
+// Module 4089 (createFavoritesGuildChannelRecord)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

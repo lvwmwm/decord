@@ -1,15 +1,15 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 12089
+// Function ID: 12090
 // Name: renderCircle
-// Dependencies: [19, 17, 21, 4445, 4172, 712, 8173, 2]
+// Dependencies: [19, 17, 21, 4446, 4173, 712, 8187, 2]
 
-// Module 12070 (renderCircle)
+// Module 12089 (renderCircle)
 import ThemesDefault from "Themes" /* 712 */;
-import inlineStyles from "inlineStyles" /* 8173 */;
-import inlineStylesDefault from "inlineStyles" /* 8173 */;
+import inlineStyles from "inlineStyles" /* 8187 */;
+import inlineStylesDefault from "inlineStyles" /* 8187 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

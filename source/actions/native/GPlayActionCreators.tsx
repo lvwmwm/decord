@@ -1,20 +1,20 @@
-// Module ID: 8154
-// Function ID: 8155
+// Module ID: 8168
+// Function ID: 8169
 // Name: getPlanIdForProduct
-// Dependencies: [109, 5, 17, 8155, 1218, 6036, 676, 6037, 1924, 505, 3, 6039, 6056, 4144, 709, 4120, 584, 500, 1474, 4122, 698, 4809, 1236, 530, 2]
+// Dependencies: [109, 5, 17, 8169, 1218, 6049, 676, 6050, 1925, 505, 3, 6052, 6069, 4145, 709, 4121, 584, 500, 1474, 4123, 698, 4822, 1236, 530, 2]
 // Exports: downgradeSubscription, ensureSkusLoaded, loadUserCountry, purchase, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 8154 (getPlanIdForProduct)
+// Module 8168 (getPlanIdForProduct)
 import timestampDefault from "timestamp" /* 3 */;
 import failsDefault from "fails" /* 584 */;
 import closure_7 from "_objectWithoutProperties" /* 109 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import setGPlayAnalytics from "setGPlayAnalytics" /* 8155 */;
+import setGPlayAnalytics from "setGPlayAnalytics" /* 8169 */;
 import closure_11 from "fetchFingerprint" /* 1218 */;
-import closure_12 from "updateProduct" /* 6036 */;
+import closure_12 from "updateProduct" /* 6049 */;
 import ME from "ME" /* 676 */;
-import GPlayConnectionState from "GPlayConnectionState" /* 6037 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GPlayConnectionState from "GPlayConnectionState" /* 6050 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
 let closure_0 = arg1;
@@ -587,7 +587,7 @@ function _subscribe() {
       if (1 === tmp7) {
         c9 = 0;
         message = closure_8;
-        obj1 = callback(4122);
+        obj1 = callback(4123);
         const obj2 = { productId: null, oldProductId: null };
         obj2[0] = callback;
         c5 = callback2;
@@ -598,7 +598,7 @@ function _subscribe() {
         obj2[1] = c5;
         obj3[0] = obj2;
         const result = obj1.captureBillingException(message, obj3);
-        let obj4 = callback2(4809);
+        let obj4 = callback2(4822);
         obj4 = { title: null, body: null };
         const intl = callback(1236).intl;
         obj4[0] = intl.string(callback(1236).t["U+H+kd"]);
@@ -732,7 +732,7 @@ function _verifyPurchase() {
           } else if (1 === tmp8) {
             c6 = 0;
             c6 = closure_5;
-            obj3 = lib(4122);
+            obj3 = lib(4123);
             const obj5 = { tags: null };
             let obj6 = { productId: null };
             obj6[0] = lib.productId;
@@ -876,7 +876,7 @@ closure_0 = importDefaultResult(() => {
                   obj3[0] = callback3(SubscriptionProductIds);
                   return obj3;
                 }
-                obj14 = SubscriptionProductIds(4120);
+                obj14 = SubscriptionProductIds(4121);
               }
             }
             c6 = 3;
@@ -1181,7 +1181,7 @@ closure_0 = importDefaultResult(() => {
                   })(IAPProductIds);
                   return obj3;
                 }
-                obj14 = IAPProductIds(4120);
+                obj14 = IAPProductIds(4121);
               }
             }
             c6 = 3;
@@ -2116,7 +2116,7 @@ export const subscribe = function subscribe() {
   }
   return applyArgumentsResult;
 };
-export const verifyPurchase = function verifyPurchase(purchase, closure_2) {
+export const verifyPurchase = function verifyPurchase() {
   const self = this;
   const apply = _verifyPurchase.apply;
   if (typeof apply === "unknown") {
@@ -2126,8 +2126,8 @@ export const verifyPurchase = function verifyPurchase(purchase, closure_2) {
   }
   return applyArgumentsResult;
 };
-export const sendPaymentCompleteAnalytics = function sendPaymentCompleteAnalytics(purchase) {
-  const tmp = state.getState().analyticsByProductId[purchase.productId];
+export const sendPaymentCompleteAnalytics = function sendPaymentCompleteAnalytics(productId) {
+  const tmp = state.getState().analyticsByProductId[productId.productId];
   if (null != tmp) {
     const succeededOnlyFields = tmp.succeededOnlyFields;
     const tmp4 = callback2(tmp, closure_4);
@@ -2137,7 +2137,7 @@ export const sendPaymentCompleteAnalytics = function sendPaymentCompleteAnalytic
     const merged = Object.assign(tmp4);
     const merged1 = Object.assign(succeededOnlyFields);
     _true(getUserCountry[20]).track(constants.PAYMENT_FLOW_SUCCEEDED, obj);
-    callback3(purchase.productId);
+    callback3(productId.productId);
     const obj2 = _true(getUserCountry[20]);
   }
 };

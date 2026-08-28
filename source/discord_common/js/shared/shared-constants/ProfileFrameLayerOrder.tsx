@@ -1,9 +1,9 @@
-// Module ID: 8471
-// Function ID: 8472
+// Module ID: 8485
+// Function ID: 8486
 // Name: ProfileFrameLayerOrder
 // Dependencies: [2]
 
-// Module 8471 (ProfileFrameLayerOrder)
+// Module 8485 (ProfileFrameLayerOrder)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProfileFrameLayerOrder.tsx");

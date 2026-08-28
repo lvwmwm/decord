@@ -1,10 +1,10 @@
-// Module ID: 1986
-// Function ID: 1987
+// Module ID: 1987
+// Function ID: 1988
 // Name: GuildRoleRecordTypeTag
 // Dependencies: [1431, 506, 12, 2]
 // Exports: hasAnyPermission, hasPermission, isEveryoneRole, isRoleEqual
 
-// Module 1986 (GuildRoleRecordTypeTag)
+// Module 1987 (GuildRoleRecordTypeTag)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import fromString from "fromString" /* 506 */;

@@ -1,15 +1,15 @@
-// Module ID: 9348
-// Function ID: 9349
+// Module ID: 9366
+// Function ID: 9367
 // Name: AvatarPile
-// Dependencies: [19, 21, 9349, 9192, 9194, 8030, 9193, 2]
+// Dependencies: [19, 21, 9367, 9210, 9212, 8044, 9211, 2]
 // Exports: AvatarPile
 
-// Module 9348 (AvatarPile)
-import SolidCutout from "SolidCutout" /* 8030 */;
-import Pile from "Pile" /* 9192 */;
-import map from "map" /* 9193 */;
-import getListSummaryLabel from "getListSummaryLabel" /* 9194 */;
-import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 9349 */;
+// Module 9366 (AvatarPile)
+import SolidCutout from "SolidCutout" /* 8044 */;
+import Pile from "Pile" /* 9210 */;
+import map from "map" /* 9211 */;
+import getListSummaryLabel from "getListSummaryLabel" /* 9212 */;
+import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 9367 */;
 import closure_2 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 4626
-// Function ID: 4627
+// Module ID: 4627
+// Function ID: 4628
 // Name: handleThumbnailUpload
-// Dependencies: [5, 17, 4467, 1391, 1981, 676, 4473, 3, 4329, 4134, 709, 530, 4627, 4498, 38, 4628, 4674, 4511, 1494, 9962, 9578, 1236, 2]
+// Dependencies: [5, 17, 4468, 1391, 1982, 676, 4474, 3, 4330, 4135, 709, 530, 4628, 4499, 38, 4629, 4687, 4512, 1494, 9980, 9596, 1236, 2]
 
-// Module 4626 (handleThumbnailUpload)
+// Module 4627 (handleThumbnailUpload)
 import timestampDefault from "timestamp" /* 3 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import inject from "inject" /* 4498 */;
-import initializeDefault from "initialize" /* 4627 */;
+import inject from "inject" /* 4499 */;
+import initializeDefault from "initialize" /* 4628 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Linking } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "reset" /* 4467 */;
+import closure_5 from "reset" /* 4468 */;
 import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import importDefaultResult from "handleConnectionOpen" /* 1981 */;
+import importDefaultResult from "handleConnectionOpen" /* 1982 */;
 import ME from "ME" /* 676 */;
-import { getAppIntentScheme } from "items3" /* 4473 */;
+import { getAppIntentScheme } from "items3" /* 4474 */;
 
 require = arg1;
 function handleThumbnailUpload() {
@@ -182,11 +182,11 @@ prototype["_initialize"] = function _initialize() {
     currentAppIntent = currentAppIntent.getCurrentAppIntent();
     if (null != channel) {
       const guildId = channel.getGuildId();
-      currentUserActiveStream(4628).startStream(guildId, channel.id, { sourceId: "screen:0" });
+      currentUserActiveStream(4629).startStream(guildId, channel.id, { sourceId: "screen:0" });
       currentUserActiveStream = currentAppIntent.getCurrentUserActiveStream();
       if (null != currentUserActiveStream) {
-        const tmp2Result = callback2(4674);
-        const participant = tmp2Result.selectParticipant(channel.id, tmp9(4511).encodeStreamKey(currentUserActiveStream));
+        const tmp2Result = callback2(4687);
+        const participant = tmp2Result.selectParticipant(channel.id, tmp9(4512).encodeStreamKey(currentUserActiveStream));
         if ("android" === voiceEngine.platform) {
           closure_15.start(15000, () => {
             closure_1_1(closure_1_2[14])(null != closure_1_19, "Voice Engine should be initialized in callback");
@@ -201,9 +201,9 @@ prototype["_initialize"] = function _initialize() {
         if (null != currentAppIntent) {
           closure_4.openURL(callback3(currentAppIntent));
         }
-        const tmp9Result = tmp9(4511);
+        const tmp9Result = tmp9(4512);
       }
-      const obj3 = currentUserActiveStream(4628);
+      const obj3 = currentUserActiveStream(4629);
       tmp9 = currentUserActiveStream;
     } else {
       let result = voiceEngine.stopBroadcastWithError(-1, "Not currently in a voice channel");
@@ -213,7 +213,7 @@ prototype["_initialize"] = function _initialize() {
     logger.log("Broadcast Finished");
     closure_14.stop();
     closure_15.stop();
-    const result = callback(9962).handleCloseScreenshare();
+    const result = callback(9980).handleCloseScreenshare();
   });
   const result2 = voiceEngine.setBroadcastAnnotatedCallback((arg0) => {
     logger.log("Broadcast Annotated:", arg0);
@@ -227,7 +227,7 @@ prototype["_initialize"] = function _initialize() {
   });
   const result3 = voiceEngine.setBroadcastBlockedCallback(() => {
     logger.log("Broadcast Blocked");
-    let obj = callback2(9578);
+    let obj = callback2(9596);
     obj = { alertBody: null };
     const intl = callback(1236).intl;
     obj[0] = intl.string(callback(1236).t.iYQlwv);

@@ -1,15 +1,15 @@
-// Module ID: 10713
-// Function ID: 10714
+// Module ID: 10731
+// Function ID: 10732
 // Name: GiftingRewardPreviewAvatar
-// Dependencies: [19, 4437, 1922, 21, 589, 1297, 2]
+// Dependencies: [19, 4438, 1923, 21, 589, 1297, 2]
 // Exports: default
 
-// Module 10713 (GiftingRewardPreviewAvatar)
+// Module 10731 (GiftingRewardPreviewAvatar)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import Button from "Button" /* 1297 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_3 from "mergeGuildAvatar" /* 1923 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -28,9 +28,9 @@ export default function GiftingRewardPreviewAvatar(asset) {
     obj[0] = asset.asset;
     tmp5 = obj;
   }
-  obj = { user: stateFromStores, guildId: "r", avatarDecoration: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009464427057833978, animate: 5168188345740660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
+  obj = { user: stateFromStores, guildId: "r", avatarDecoration: "r", animate: "quests" };
   obj[2] = tmp5;
   obj[3] = !stateFromStores1;
   const merged = Object.assign(asset);
-  return jsx(Button.Avatar, { user: stateFromStores, guildId: "r", avatarDecoration: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000009464427057833978, animate: 5168188345740660000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 });
+  return jsx(Button.Avatar, { user: stateFromStores, guildId: "r", avatarDecoration: "r", animate: "quests" });
 };

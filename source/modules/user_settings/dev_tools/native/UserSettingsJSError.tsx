@@ -1,12 +1,12 @@
-// Module ID: 15371
-// Function ID: 15372
+// Module ID: 15213
+// Function ID: 15214
 // Name: UserSettingsJSError
-// Dependencies: [19, 21, 4441, 2]
+// Dependencies: [19, 21, 4442, 2]
 // Exports: default
 
-// Module 15371 (UserSettingsJSError)
+// Module 15213 (UserSettingsJSError)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4441 */;
+import Text from "Text" /* 4442 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

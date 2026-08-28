@@ -1,9 +1,9 @@
-// Module ID: 6748
-// Function ID: 6749
+// Module ID: 6761
+// Function ID: 6762
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6748 (vanityUrl)
+// Module 6761 (vanityUrl)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroBronzeBadgeLargeBadge-2x.png.js");

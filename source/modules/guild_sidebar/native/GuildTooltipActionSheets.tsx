@@ -1,14 +1,14 @@
-// Module ID: 15744
-// Function ID: 15745
+// Module ID: 15762
+// Function ID: 15763
 // Name: NUFChannelsActionSheetImporter
-// Dependencies: [32, 19, 1388, 21, 13336, 2009, 15745, 15747, 15750, 15752, 15753, 1377, 15754, 15755, 5393, 15756, 10337, 10338, 4185, 2]
+// Dependencies: [32, 19, 1388, 21, 13355, 2010, 15763, 15765, 15768, 15770, 15771, 1377, 15772, 15773, 5406, 15774, 10355, 10356, 4186, 2]
 // Exports: default
 
-// Module 15744 (NUFChannelsActionSheetImporter)
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10337 */;
-import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 15755 */;
-import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 15756 */;
+// Module 15762 (NUFChannelsActionSheetImporter)
+import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10355 */;
+import useIsGuildEligibleForRoleSubscriptionsUpsellDefault from "useIsGuildEligibleForRoleSubscriptionsUpsell" /* 15773 */;
+import useIsEligibleForTierTemplateUpsellDefault from "useIsEligibleForTierTemplateUpsell" /* 15774 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { DismissibleContentGroupName as closure_5 } from "ContentDismissActionType" /* 1388 */;
@@ -16,19 +16,19 @@ import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
 function NUFChannelsActionSheetImporter() {
-  return asyncRequireImpl(13336, dependencyMap.paths);
+  return asyncRequireImpl(13355, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsUpsellActionSheetImporter() {
-  return asyncRequireImpl(15745, dependencyMap.paths);
+  return asyncRequireImpl(15763, dependencyMap.paths);
 }
 function GuildRoleSubscriptionsIAPUpsellActionSheetImporter() {
-  return asyncRequireImpl(15747, dependencyMap.paths);
+  return asyncRequireImpl(15765, dependencyMap.paths);
 }
 function CreatorMonetizationOnboardingV2UpsellActionSheetImporter() {
-  return asyncRequireImpl(15750, dependencyMap.paths);
+  return asyncRequireImpl(15768, dependencyMap.paths);
 }
 function TierTemplatesUpsellActionSheetImporter() {
-  return asyncRequireImpl(15752, dependencyMap.paths);
+  return asyncRequireImpl(15770, dependencyMap.paths);
 }
 class GuildTooltipActionSheets {
   constructor(arg0) {

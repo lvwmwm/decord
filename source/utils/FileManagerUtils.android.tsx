@@ -1,10 +1,10 @@
-// Module ID: 8469
-// Function ID: 8470
+// Module ID: 8483
+// Function ID: 8484
 // Name: _readFile
 // Dependencies: [5, 3, 1271, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8469 (_readFile)
+// Module 8483 (_readFile)
 import timestampDefault from "timestamp" /* 3 */;
 import enforcingDefault from "enforcing" /* 1271 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;

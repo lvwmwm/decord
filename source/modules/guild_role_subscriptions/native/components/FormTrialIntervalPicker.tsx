@@ -1,12 +1,12 @@
-// Module ID: 17244
-// Function ID: 17245
+// Module ID: 17262
+// Function ID: 17263
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 13549, 1236, 14775, 4412, 9285, 2009, 2]
+// Dependencies: [19, 21, 13568, 1236, 14760, 4413, 9303, 2010, 2]
 // Exports: default
 
-// Module 17244 (FormTrialIntervalPicker)
+// Module 17262 (FormTrialIntervalPicker)
 import noopAll from "noop" /* 19 */;
-import LockedIconDefault from "LockedIcon" /* 13549 */;
+import LockedIconDefault from "LockedIcon" /* 13568 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -21,7 +21,7 @@ export default function FormTrialIntervalPicker(disabled) {
     let intl = interval(1236).intl;
     let stringResult = intl.string(interval(1236).t.WZG1BU);
   } else {
-    let obj = interval(14775);
+    let obj = interval(14760);
     stringResult = obj.formatPlanIntervalDuration(interval);
   }
   obj = {

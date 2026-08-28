@@ -1,10 +1,10 @@
-// Module ID: 8658
-// Function ID: 8659
+// Module ID: 8674
+// Function ID: 8675
 // Name: useIsGoogleWalletEnabled
 // Dependencies: [1472, 2]
 // Exports: isGoogleWalletEnabled, useIsGoogleWalletEnabled
 
-// Module 8658 (useIsGoogleWalletEnabled)
+// Module 8674 (useIsGoogleWalletEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1472 */;
 

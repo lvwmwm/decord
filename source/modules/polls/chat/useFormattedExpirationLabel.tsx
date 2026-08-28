@@ -1,13 +1,13 @@
-// Module ID: 8061
-// Function ID: 8062
+// Module ID: 8075
+// Function ID: 8076
 // Name: formatExpirationLabel
-// Dependencies: [4043, 1236, 2]
+// Dependencies: [4044, 1236, 2]
 // Exports: default
 
-// Module 8061 (formatExpirationLabel)
+// Module 8075 (formatExpirationLabel)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 4043 */;
+import hooksDefault from "hooks" /* 4044 */;
 
 function formatExpirationLabel(expiry) {
   const tmp2 = hooksDefault();

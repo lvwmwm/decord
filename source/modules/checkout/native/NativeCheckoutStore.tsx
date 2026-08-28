@@ -1,16 +1,16 @@
-// Module ID: 7103
-// Function ID: 7104
+// Module ID: 7116
+// Function ID: 7117
 // Name: context
-// Dependencies: [5, 32, 19, 7104, 7107, 4074, 700, 7108, 12, 4122, 7109, 2]
+// Dependencies: [5, 32, 19, 7117, 7120, 4075, 700, 7121, 12, 4123, 7122, 2]
 // Exports: createNativeStore, useNativeCheckoutStore, useNativeCheckoutStoreOrNull
 
-// Module 7103 (context)
+// Module 7116 (context)
 import identity from "identity" /* 700 */;
-import isIterable from "isIterable" /* 4074 */;
-import createDefinedContextDefault from "createDefinedContext" /* 7107 */;
+import isIterable from "isIterable" /* 4075 */;
+import createDefinedContextDefault from "createDefinedContext" /* 7120 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "createFromOrder" /* 7104 */;
+import closure_5 from "createFromOrder" /* 7117 */;
 import importDefaultResult from "_slicedToArray" /* 32 */;
 
 require = arg1;
@@ -41,7 +41,7 @@ export const useNativeCheckoutStoreOrNull = function useNativeCheckoutStoreOrNul
   return contextResult;
 };
 export const createNativeStore = function createNativeStore(arg0) {
-  ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, paymentGateway: closure_3, orderRequired: closure_4, onOrderRetryCancellation: closure_5, initialSubscriptionFacet: closure_6 } = arg0);
+  ({ order: require, checkoutInitParameters: importDefault, contextMetadata: dependencyMap, analyticsFields: closure_3, paymentGateway: closure_4, orderRequired: closure_5, onOrderRetryCancellation: closure_6, initialSubscriptionFacet: context } = arg0);
   return identity.createWithEqualityFn((arg0, arg1) => {
     closure_0 = arg0;
     closure_1 = arg1;
@@ -206,7 +206,7 @@ export const createNativeStore = function createNativeStore(arg0) {
                       if (null != closure_1_1.activeSubscription) {
                         obj1.subscription_id = closure_1_1.activeSubscription.id;
                       }
-                      let tmp19 = null != closure_1_6;
+                      let tmp19 = null != closure_1_7;
                       if (tmp19) {
                         tmp19 = null != tmp18.subscription_preview.subscription_trial_id;
                       }
@@ -226,7 +226,7 @@ export const createNativeStore = function createNativeStore(arg0) {
                     let obj6 = closure_2_0(closure_2_2[7]);
                     const obj4 = { orderLineItems: null, paymentGateway: null, isGift: null, subscriptionFacet: null, externalGatewayFacet: null, countryCode: null };
                     obj4[0] = mapped;
-                    obj4[1] = c3;
+                    obj4[1] = c4;
                     obj4[2] = closure_1_1.isGift;
                     obj4[3] = tmp15;
                     obj4[4] = tmp20;
@@ -292,9 +292,15 @@ export const createNativeStore = function createNativeStore(arg0) {
       recreateOrder: null,
       checkoutInitParameters: null,
       contextMetadata: null,
+      analyticsFields: null,
+      purchaseInFlight: false,
+      getPurchaseInFlight: null,
+      setPurchaseInFlight: null,
       orderRequired: null,
       checkoutSucceeded: false,
       setCheckoutSucceeded: null,
+      checkoutFailed: false,
+      setCheckoutFailed: null,
       onOrderRetryCancellation: null
     };
     closure_7 = closure_1_3((arg0, arg1) => {
@@ -491,7 +497,7 @@ export const createNativeStore = function createNativeStore(arg0) {
               c5 = 4;
               c6 = 1;
               const obj4 = { value: null, done: false };
-              obj4[0] = obj5.showCheckoutOrderErrorModal(() => v0(closure_0), c5);
+              obj4[0] = obj5.showCheckoutOrderErrorModal(() => v0(closure_0), c6);
               return obj4;
             } else {
               if (3 === tmp8) {
@@ -550,11 +556,21 @@ export const createNativeStore = function createNativeStore(arg0) {
     };
     obj[7] = closure_1;
     obj[8] = runPatchOrderLineItems;
-    obj[9] = runRecreateOrder;
-    obj[11] = function setCheckoutSucceeded() {
+    obj[9] = _runPatchOrderLineItems;
+    obj[11] = function getPurchaseInFlight() {
+      return callback2().purchaseInFlight;
+    };
+    obj[12] = function setPurchaseInFlight(purchaseInFlight) {
+      return callback({ purchaseInFlight });
+    };
+    obj[13] = _runRecreateOrder;
+    obj[15] = function setCheckoutSucceeded() {
       return callback({ checkoutSucceeded: true });
     };
-    obj[12] = _runRecreateOrder;
+    obj[17] = function setCheckoutFailed() {
+      return callback({ checkoutFailed: true });
+    };
+    obj[18] = closure_6;
     return obj;
   }, isIterable.shallow);
 };

@@ -1,12 +1,12 @@
-// Module ID: 14674
-// Function ID: 14675
+// Module ID: 14658
+// Function ID: 14659
 // Name: openVideoQuestModal
-// Dependencies: [7381, 14668, 514, 4676, 14675, 2009, 11027, 2]
+// Dependencies: [7395, 14652, 514, 4689, 14659, 2010, 11045, 2]
 // Exports: default
 
-// Module 14674 (openVideoQuestModal)
+// Module 14658 (openVideoQuestModal)
 import v1All from "v1" /* 514 */;
-import closure_4 from "initializeState" /* 7381 */;
+import closure_4 from "initializeState" /* 7395 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/quests/native/VideoQuestModal/openVideoQuestModal.tsx");
@@ -25,7 +25,7 @@ export default function openVideoQuestModal(questId) {
       }
     }
     if (null == completedAt) {
-      sourceQuestContent(14668)();
+      sourceQuestContent(14652)();
     }
   }
   const v4Result = v1All.v4();
@@ -43,7 +43,7 @@ export default function openVideoQuestModal(questId) {
     },
     sourceQuestContent
   };
-  const obj3 = sourceQuestContent(4676);
-  const tmp8 = questId(2009)(14675, dependencyMap.paths);
-  return obj3.pushLazy(tmp8, obj, questId(11027).getVideoQuestModalKey(questId));
+  const obj3 = sourceQuestContent(4689);
+  const tmp8 = questId(2010)(14659, dependencyMap.paths);
+  return obj3.pushLazy(tmp8, obj, questId(11045).getVideoQuestModalKey(questId));
 };

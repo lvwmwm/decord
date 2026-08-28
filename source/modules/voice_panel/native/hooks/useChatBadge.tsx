@@ -1,11 +1,11 @@
-// Module ID: 16624
-// Function ID: 16625
+// Module ID: 16642
+// Function ID: 16643
 // Name: useChatBadge
-// Dependencies: [4460, 589, 2]
+// Dependencies: [4461, 589, 2]
 // Exports: default
 
-// Module 16624 (useChatBadge)
-import closure_2 from "generateOldThreadCutoff" /* 4460 */;
+// Module 16642 (useChatBadge)
+import closure_2 from "generateOldThreadCutoff" /* 4461 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/voice_panel/native/hooks/useChatBadge.tsx");

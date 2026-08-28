@@ -1,14 +1,14 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 6862
+// Function ID: 6863
 // Name: PowerupSpotIllustration
-// Dependencies: [21, 5445, 6850, 2]
+// Dependencies: [21, 5458, 6863, 2]
 // Exports: PowerupSpotIllustration
 
-// Module 6849 (PowerupSpotIllustration)
+// Module 6862 (PowerupSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6850 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6863 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PowerupSpotIllustration.native.tsx");

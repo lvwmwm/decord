@@ -1,21 +1,21 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13639
+// Function ID: 13640
 // Name: CommunityPill
-// Dependencies: [19, 17, 13621, 1910, 6077, 676, 21, 4445, 712, 501, 1236, 8793, 8792, 9290, 8796, 5020, 4162, 1297, 4441, 7651, 589, 1430, 13622, 13623, 1494, 5956, 1435, 1469, 7549, 4165, 5445, 8789, 12849, 2]
+// Dependencies: [19, 17, 13640, 1910, 6090, 676, 21, 4446, 712, 501, 1236, 8810, 8809, 9308, 8813, 5033, 4163, 1297, 4442, 7665, 589, 1430, 13641, 13642, 1494, 5969, 1435, 1469, 7563, 4166, 5458, 8806, 12868, 2]
 // Exports: default
 
-// Module 13620 (CommunityPill)
+// Module 13639 (CommunityPill)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 8793 */;
-import registerAssetDefault2 from "registerAsset" /* 8796 */;
+import registerAssetDefault from "registerAsset" /* 8810 */;
+import registerAssetDefault2 from "registerAsset" /* 8813 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 13621 */;
+import closure_6 from "initialize" /* 13640 */;
 import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "handleConnectionOpenOrResumed" /* 6077 */;
+import closure_8 from "handleConnectionOpenOrResumed" /* 6090 */;
 import { GuildFeatures } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 
 const require = arg1;
@@ -26,10 +26,10 @@ function CommunityPill(guildVisibility) {
   const intl = GlobeEarthIcon(1236).intl;
   importDefault = intl.string(GlobeEarthIcon(1236).t.TME4LJ);
   let tmp4Result = registerAssetDefault;
-  if (guildVisibility.guildVisibility === GlobeEarthIcon(8792).GuildVisibility.PUBLIC) {
+  if (guildVisibility.guildVisibility === GlobeEarthIcon(8809).GuildVisibility.PUBLIC) {
     const intl2 = tmp2(1236).intl;
     importDefault = intl2.string(tmp2(1236).t.op2cJ6);
-    GlobeEarthIcon = tmp2(9290).GlobeEarthIcon;
+    GlobeEarthIcon = tmp2(9308).GlobeEarthIcon;
     tmp4Result = registerAssetDefault2;
   }
   let obj = {
@@ -47,9 +47,9 @@ function CommunityPill(guildVisibility) {
   obj = { variant: "text-xs/medium", color: "text-default", style: tmp.communityPillText, children: null };
   const intl3 = tmp2(1236).intl;
   obj[3] = intl3.string(GlobeEarthIcon(1236).t.K7iRig);
-  items[1] = callback(GlobeEarthIcon(4441).Text, obj);
+  items[1] = callback(GlobeEarthIcon(4442).Text, obj);
   obj[3] = items;
-  return callback2(GlobeEarthIcon(5020).PressableOpacity, obj);
+  return callback2(GlobeEarthIcon(5033).PressableOpacity, obj);
 }
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);

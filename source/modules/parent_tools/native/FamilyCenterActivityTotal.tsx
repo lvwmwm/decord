@@ -1,18 +1,18 @@
-// Module ID: 14450
-// Function ID: 14451
+// Module ID: 14434
+// Function ID: 14435
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 4445, 712, 14449, 7271, 4441, 2]
+// Dependencies: [19, 17, 21, 4446, 712, 14433, 7285, 4442, 2]
 // Exports: default
 
-// Module 14450 (FamilyCenterActivityTotal)
+// Module 14434 (FamilyCenterActivityTotal)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4441 */;
-import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7271 */;
-import useActionsForDisplayType from "useActionsForDisplayType" /* 14449 */;
+import Text from "Text" /* 4442 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7285 */;
+import useActionsForDisplayType from "useActionsForDisplayType" /* 14433 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;

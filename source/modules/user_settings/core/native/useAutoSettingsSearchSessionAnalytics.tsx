@@ -1,15 +1,15 @@
-// Module ID: 16397
-// Function ID: 16398
+// Module ID: 16415
+// Function ID: 16416
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 7091, 14196, 589, 691, 8508, 4897, 6195, 2]
+// Dependencies: [19, 7104, 14275, 589, 691, 8522, 4910, 6208, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 16397 (useAutoSettingsSearchSessionAnalytics)
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4897 */;
-import usePreviousDefault from "usePrevious" /* 8508 */;
+// Module 16415 (useAutoSettingsSearchSessionAnalytics)
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4910 */;
+import usePreviousDefault from "usePrevious" /* 8522 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getState" /* 7091 */;
-import closure_5 from "zustandStore" /* 14196 */;
+import closure_4 from "getState" /* 7104 */;
+import closure_5 from "zustandStore" /* 14275 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/user_settings/core/native/useAutoSettingsSearchSessionAnalytics.tsx");

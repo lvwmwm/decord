@@ -1,17 +1,17 @@
-// Module ID: 14110
-// Function ID: 14111
+// Module ID: 14129
+// Function ID: 14130
 // Name: _terminate
-// Dependencies: [17, 4437, 1981, 500, 14111, 4627, 709, 4813, 2]
+// Dependencies: [17, 4438, 1982, 500, 14130, 4628, 709, 4826, 2]
 // Exports: handleVoiceMessageDeleted, pauseCurrentAudioPlayer, playCurrentAudioPlayer
 
-// Module 14110 (_terminate)
+// Module 14129 (_terminate)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 4627 */;
-import enforcingDefault from "enforcing" /* 14111 */;
+import initializeDefault from "initialize" /* 4628 */;
+import enforcingDefault from "enforcing" /* 14130 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4437 */;
-import closure_6 from "handleConnectionOpen" /* 1981 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_6 from "handleConnectionOpen" /* 1982 */;
 
 ({ AppState: c3, NativeModules: c4 } = get_ActivityIndicator);
 initializeDefault;
@@ -21,14 +21,14 @@ class VoiceMessagesPlaybackManager extends tmp3 {
     closure_0 = applyArgumentsResult;
     applyArgumentsResult.appState = AppState.currentState;
     applyArgumentsResult.handleSetPrefersReducedMotion = function handleSetPrefersReducedMotion(prefersReducedMotion) {
-      const result = callback(4813).handleSetPrefersReducedMotion(prefersReducedMotion.prefersReducedMotion);
+      const result = callback(4826).handleSetPrefersReducedMotion(prefersReducedMotion.prefersReducedMotion);
     };
     applyArgumentsResult.handleMessageDelete = function handleMessageDelete(id) {
       id = id.id;
       if (id.channelId === currentlySelectedChannelId.getCurrentlySelectedChannelId()) {
         if (obj.isAndroid()) {
-          const result = callback(14111).handleVoiceMessageDeleted(id);
-          const obj2 = callback(14111);
+          const result = callback(14130).handleVoiceMessageDeleted(id);
+          const obj2 = callback(14130);
         } else {
           const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
           if (DCDAudioPlayerManager != null) {
@@ -40,8 +40,8 @@ class VoiceMessagesPlaybackManager extends tmp3 {
     };
     applyArgumentsResult.handleLogout = function handleLogout() {
       if (obj.isAndroid()) {
-        callback(14111).pauseCurrentPlayer(false);
-        const obj2 = callback(14111);
+        callback(14130).pauseCurrentPlayer(false);
+        const obj2 = callback(14130);
       } else {
         const DCDAudioPlayerManager = closure_4.DCDAudioPlayerManager;
         if (DCDAudioPlayerManager != null) {

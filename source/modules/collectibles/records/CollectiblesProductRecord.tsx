@@ -1,14 +1,14 @@
-// Module ID: 7222
-// Function ID: 7223
+// Module ID: 7236
+// Function ID: 7237
 // Name: fromServer
-// Dependencies: [32, 7223, 7224, 7229, 678, 676, 4490, 1950, 2]
+// Dependencies: [32, 7237, 7238, 7243, 678, 676, 4491, 1951, 2]
 
-// Module 7222 (fromServer)
-import getPricesFromServerDefault from "getPricesFromServer" /* 4490 */;
-import fromServerDefault from "fromServer" /* 7229 */;
+// Module 7236 (fromServer)
+import getPricesFromServerDefault from "getPricesFromServer" /* 4491 */;
+import fromServerDefault from "fromServer" /* 7243 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "fromServer" /* 7223 */;
-import createCollectiblesItemsFromServerResponse from "createCollectiblesItemsFromServerResponse" /* 7224 */;
+import closure_4 from "fromServer" /* 7237 */;
+import createCollectiblesItemsFromServerResponse from "createCollectiblesItemsFromServerResponse" /* 7238 */;
 import { REWARD_CATEGORY_AND_REWARD_SKU_IDS as closure_7 } from "items" /* 678 */;
 import ME from "ME" /* 676 */;
 
@@ -84,7 +84,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
     }
     if (null != collectibles) {
       if (skus.skus.length > 1) {
-        let type = _require(1950).CollectiblesItemType.VARIANTS_GROUP;
+        let type = _require(1951).CollectiblesItemType.VARIANTS_GROUP;
       } else {
         type = collectibles.type;
       }
@@ -93,7 +93,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
         obj = {};
       }
       let items = obj.items;
-      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: 12.75, bundledProducts: null };
+      obj = { storeListingId: null, skuId: null, name: null, summary: null, styles: null, type: null, premiumType: null, items: null, categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, variants: null, googleSkuIds: null, eligibleOffers: "r", isFirstParty: "function FadeOutLottieAnimationTsx2(finished){const{runOnJS,setIsFadeOut}=this.__closure;if(finished)runOnJS(setIsFadeOut)(false);}", bundledProducts: 25 };
       ({ id: obj2[0], id: obj2[1] } = first);
       ({ name: obj2[2], summary: obj2[3], primaryCollectionStyles: obj2[4] } = skus);
       obj[5] = type;
@@ -120,7 +120,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
       obj[9] = closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === first.id);
       ({ prices: obj2[10], previewAssetPaths } = first);
       obj[11] = previewAssetPaths;
-      let str2 = _require(1950).CollectiblesItemType.VARIANTS_GROUP;
+      let str2 = _require(1951).CollectiblesItemType.VARIANTS_GROUP;
       let found;
       if (type === str2) {
         skus = skus.skus;
@@ -140,7 +140,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
             }
             ({ items, item } = obj);
             first = closure_1_3(tenantMetadata.selectedOptions, 1)[0];
-            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "channelId", items: "delete", categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, googleSkuIds: null, eligibleOffers: null, variants: null, bundledProducts: null, isFirstParty: "e" };
+            obj = { baseVariantName: null, baseVariantSkuId: null, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "e", type: "Array", premiumType: "container", items: "track", categorySkuId: null, isCategoryReward: null, prices: null, previewAssets: null, googleSkuIds: null, eligibleOffers: null, variants: null, bundledProducts: null, isFirstParty: "embed" };
             obj[0] = skus.name;
             obj[1] = first.id;
             let str;

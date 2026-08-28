@@ -1,26 +1,26 @@
-// Module ID: 13503
-// Function ID: 13504
+// Module ID: 13522
+// Function ID: 13523
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5521, 7204, 7100, 12988, 1218, 676, 1398, 4512, 4683, 9199, 7216, 4427, 13504, 11366, 7816, 12128, 4676, 4300, 13505, 8819, 6197, 8787, 11277, 1892, 8409, 698, 8411, 6044, 11100, 11405, 13512, 12160, 9205, 2009, 9200, 9198, 13514, 13516, 1625, 5035, 13521, 4158, 13523, 1910, 6138, 9594, 9680, 6113, 4675, 9798, 4299, 5350, 1222, 709, 5302, 1487, 9649, 13526, 13541, 500, 13552, 9829, 13559, 4790, 13560, 7219, 5925, 9764, 7396, 5344, 11250, 10373, 13632, 5329, 9383, 8737, 8731, 4410, 2]
+// Dependencies: [109, 5, 5534, 7218, 7113, 13007, 1218, 676, 1398, 4513, 4696, 9217, 7230, 4428, 13523, 11385, 7830, 12147, 4689, 4301, 13524, 8836, 6210, 8804, 11296, 1892, 8423, 698, 8425, 6057, 11118, 11424, 13531, 12179, 9223, 2010, 9218, 9216, 13533, 13535, 1625, 5048, 13540, 4159, 13542, 1910, 6151, 9612, 9698, 6126, 4688, 9816, 4300, 5363, 1222, 709, 5315, 1487, 9667, 13545, 13560, 500, 13571, 9847, 13578, 4803, 13579, 7233, 5938, 9782, 7410, 5357, 11268, 10391, 13651, 5342, 9401, 8753, 8747, 4411, 2]
 // Exports: default
 
-// Module 13503 (handleSupportedURL)
+// Module 13522 (handleSupportedURL)
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "asyncGeneratorStep" /* 5 */;
-import closure_8 from "scheduledEventSort" /* 7204 */;
-import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7100 */;
-import closure_10 from "zustandStore" /* 12988 */;
+import closure_8 from "scheduledEventSort" /* 7218 */;
+import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7113 */;
+import closure_10 from "zustandStore" /* 13007 */;
 import closure_11 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1398 */;
-import { StreamTypes } from "StreamIssueReportReasons" /* 4512 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4683 */;
-import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9199 */;
-import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7216 */;
-import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow" /* 4427 */;
-import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13504 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11366 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7816 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4513 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4696 */;
+import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9217 */;
+import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7230 */;
+import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow" /* 4428 */;
+import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13523 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11385 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7830 */;
 
 const require = arg1;
 let closure_4 = ["code", "state"];
@@ -206,7 +206,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: true };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: null };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };

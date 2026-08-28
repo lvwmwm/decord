@@ -1,32 +1,32 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14441
+// Function ID: 14442
 // Name: getCollectibleTypeName
-// Dependencies: [7225, 7226, 1924, 1950, 1236, 2369, 1435, 2]
+// Dependencies: [7239, 7240, 1925, 1951, 1236, 2370, 1435, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 14457 (getCollectibleTypeName)
+// Module 14441 (getCollectibleTypeName)
 import set from "set" /* 2 */;
 import getAvatarURL from "getAvatarURL" /* 1435 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import fromServer from "fromServer" /* 7225 */;
-import fromServer2 from "fromServer" /* 7226 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
+import messagesProxyDefault from "messagesProxy" /* 2370 */;
+import fromServer from "fromServer" /* 7239 */;
+import fromServer2 from "fromServer" /* 7240 */;
+import GuildFeatures from "GuildFeatures" /* 1925 */;
 
 function getCollectibleTypeName(type) {
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     const intl5 = tmp(1236).intl;
     return intl5.string(messagesProxyDefault.obi47v);
-  } else if (tmp(1950).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (tmp(1951).CollectiblesItemType.PROFILE_EFFECT === type) {
     const intl4 = tmp(1236).intl;
     return intl4.string(messagesProxyDefault.RX8BMR);
-  } else if (tmp(1950).CollectiblesItemType.NAMEPLATE === type) {
+  } else if (tmp(1951).CollectiblesItemType.NAMEPLATE === type) {
     const intl3 = tmp(1236).intl;
     return intl3.string(messagesProxyDefault.nNGEHk);
-  } else if (tmp(1950).CollectiblesItemType.BUNDLE === type) {
+  } else if (tmp(1951).CollectiblesItemType.BUNDLE === type) {
     const intl2 = tmp(1236).intl;
     return intl2.string(messagesProxyDefault.VS1fKo);
-  } else if (tmp(1950).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (tmp(1951).CollectiblesItemType.PROFILE_FRAME === type) {
     const intl = tmp(1236).intl;
     return intl.string(messagesProxyDefault.JiIY1l);
   } else {

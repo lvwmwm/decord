@@ -1,12 +1,12 @@
-// Module ID: 15572
-// Function ID: 15573
+// Module ID: 15590
+// Function ID: 15591
 // Name: useLiveStageData
-// Dependencies: [19, 5314, 1391, 647, 5320, 12, 2]
+// Dependencies: [19, 5327, 1391, 647, 5333, 12, 2]
 // Exports: useLiveStageData
 
-// Module 15572 (useLiveStageData)
+// Module 15590 (useLiveStageData)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getActiveStageChannelIds" /* 5314 */;
+import closure_4 from "getActiveStageChannelIds" /* 5327 */;
 import closure_5 from "ensureGuildLoaded" /* 1391 */;
 
 const require = arg1;

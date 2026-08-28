@@ -1,20 +1,20 @@
-// Module ID: 14839
-// Function ID: 14840
+// Module ID: 14824
+// Function ID: 14825
 // Name: HAPPENING_NOW_CARD_MARGIN_RIGHT
-// Dependencies: [19, 17, 14838, 21, 4445, 712, 7651, 1367, 4295, 5553, 4441, 2]
+// Dependencies: [19, 17, 14823, 21, 4446, 712, 7665, 1367, 4296, 5566, 4442, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 14839 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
+// Module 14824 (HAPPENING_NOW_CARD_MARGIN_RIGHT)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import Text from "Text" /* 4441 */;
-import PressableCard from "PressableCard" /* 5553 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7651 */;
+import Text from "Text" /* 4442 */;
+import PressableCard from "PressableCard" /* 5566 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7665 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14838 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14823 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4445 */;
+import createCacheKey from "createCacheKey" /* 4446 */;
 
 require = arg1;
 noopAll;

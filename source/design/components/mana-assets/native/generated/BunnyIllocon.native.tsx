@@ -1,14 +1,14 @@
-// Module ID: 6329
-// Function ID: 6330
+// Module ID: 6342
+// Function ID: 6343
 // Name: BunnyIllocon
-// Dependencies: [21, 5445, 6330, 2]
+// Dependencies: [21, 5458, 6343, 2]
 // Exports: BunnyIllocon
 
-// Module 6329 (BunnyIllocon)
+// Module 6342 (BunnyIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5445 */;
-import metadataDefault from "metadata" /* 6330 */;
+import preloadDefault from "preload" /* 5458 */;
+import metadataDefault from "metadata" /* 6343 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BunnyIllocon.native.tsx");

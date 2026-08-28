@@ -1,12 +1,12 @@
-// Module ID: 7227
-// Function ID: 7228
+// Module ID: 7241
+// Function ID: 7242
 // Name: fromServer
-// Dependencies: [1949, 1950, 2]
+// Dependencies: [1950, 1951, 2]
 // Exports: isProfileFrameRecord
 
-// Module 7227 (fromServer)
-import fromServerDefault from "fromServer" /* 1949 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+// Module 7241 (fromServer)
+import fromServerDefault from "fromServer" /* 1950 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
 
 require = arg1;
 fromServerDefault;
