@@ -31,6 +31,10 @@ jobs:
               with:
                   ref: data
                   path: data
+            - uses: actions/checkout@v4
+              with:
+                  ref: canvas
+                  path: canvas
 
             - uses: dtolnay/rust-toolchain@stable
 
@@ -44,6 +48,8 @@ jobs:
               run: |
                   git config user.name github-actions
                   git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+                  git -C ../canvas config user.name github-actions
+                  git -C ../canvas config user.email 41898282+github-actions[bot]@users.noreply.github.com
 
             - name: Check for version
               id: check
@@ -64,6 +70,11 @@ jobs:
             - name: Publish changes
               if: ${{ steps.check.outputs.version != 'false' }}
               working-directory: data
+              run: git push
+
+            - name: Publish canvas
+              if: ${{ steps.check.outputs.version != 'false' }}
+              working-directory: canvas
               run: git push
 
             - name: Tag changes
