@@ -4,14 +4,16 @@ import { handleShellErr } from "./utils";
 export const gitChanged = new Set<string>();
 
 export async function fetchGitChanged() {
-	for (const changed of (
-		await Bun.$`git status -z -- ':!source'`.cwd("../data").quiet().then(handleShellErr)
-	)
-		.text()
-		.split("\x00")
-		.filter((x) => x !== "")
-		.map((x) => x.slice(3)))
-		gitChanged.add(changed);
+	for (const cwd of ["../data", "../canvas"] as const) {
+		try {
+			const out = await Bun.$`git status -z`.cwd(cwd).quiet().nothrow().then((r) => r.text());
+			for (const changed of out
+				.split("\x00")
+				.filter((x) => x !== "")
+				.map((x) => x.slice(3)))
+				if (changed) gitChanged.add(changed);
+		} catch {}
+	}
 }
 
 const gitQueue: Promise<void>[] = [];

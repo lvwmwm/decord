@@ -30,6 +30,8 @@ export async function runTasks() {
 			colors_pushing: "Committing colors",
 			diff: "Diffs",
 			diff_code: "Diffing code",
+			diff_raw: "Diffing raw colors",
+			diff_semantic: "Diffing semantic colors",
 		},
 		true,
 	);
@@ -53,8 +55,13 @@ export async function runTasks() {
 
 			progress.start("preinit_save");
 			for (const oprev of oprevFiles) {
-				const file = Bun.file(join("../data", oprev));
-				if (await file.exists()) prevFiles.set(oprev, await file.arrayBuffer());
+				for (const base of ["../data", "../canvas"] as const) {
+					const file = Bun.file(join(base, oprev));
+					if (await file.exists()) {
+						prevFiles.set(oprev, await file.arrayBuffer());
+						break;
+					}
+				}
 			}
 			progress.update("preinit_save", true);
 			progress.update("preinit", true);
