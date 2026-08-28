@@ -16,7 +16,7 @@ export async function fetchGitChanged() {
 
 const gitQueue: Promise<void>[] = [];
 
-export async function commit(files: string[], message: string) {
+export async function commit(files: string[], message: string, cwd = "../data") {
 	while (gitQueue[0]) {
 		await gitQueue[0];
 	}
@@ -27,15 +27,15 @@ export async function commit(files: string[], message: string) {
 	if (process.env.NODE_ENV === "test" && !commitAnyway) {
 		await fetchGitChanged();
 	} else {
-		await Bun.$`git restore --staged .`.cwd("../data").nothrow().quiet().then(handleShellErr);
-		await fetchGitChanged();
+		await Bun.$`git restore --staged .`.cwd(cwd).nothrow().quiet().then(handleShellErr);
+		if (cwd === "../data") await fetchGitChanged();
 		await Bun.$`git add ${{ raw: files.map((x) => Bun.$.escape(x)).join(" ") }}`
-			.cwd("../data")
+			.cwd(cwd)
 			.nothrow()
 			.quiet()
 			.then(handleShellErr);
 		await Bun.$`git commit -m ${message}`
-			.cwd("../data")
+			.cwd(cwd)
 			.nothrow()
 			.quiet()
 			.then((e) => void e);

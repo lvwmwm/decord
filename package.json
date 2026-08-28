@@ -10,6 +10,7 @@
 		"format": "biome check --fix ."
 	},
 	"dependencies": {
+		"color": "^5.0.2",
 		"discord-api-types": "^0.38.46"
 	},
 	"devDependencies": {

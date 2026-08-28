@@ -5,6 +5,7 @@ import { commit } from "./git";
 import { log, makeProgress, wrapPromise } from "./progress";
 import { apksFolder, codePath, cuteVersion, isMock, isQuiet, oprevFiles, prevFiles, version } from "./shared";
 import codeTask from "./tasks/code";
+import colorsTask from "./tasks/colors";
 import decompile from "./tasks/decompile";
 import diffs from "./tasks/diffs";
 import { formatError, handleShellErr, join } from "./utils";
@@ -24,6 +25,9 @@ export async function runTasks() {
 			code_getting: "Finding file imports",
 			code_remaking: "Recreating code",
 			code_pushing: "Committing source",
+			colors: "Colors",
+			colors_getting: "Extracting colors",
+			colors_pushing: "Committing colors",
 			diff: "Diffs",
 			diff_code: "Diffing code",
 		},
@@ -38,8 +42,12 @@ export async function runTasks() {
 			progress.start("preinit_discard");
 			await Bun.$`git reset --hard`.cwd("../data").nothrow().quiet().then(handleShellErr);
 			await Bun.write("../data/version.txt", version);
+			// canvas branch may not exist in test
+			await Bun.$`git reset --hard`.cwd("../canvas").nothrow().quiet().then(() => {});
+			await Bun.write("../canvas/version.txt", version).catch(() => {});
 
 			await Bun.$`git restore --staged .`.cwd("../data").nothrow().quiet().then(handleShellErr);
+			await Bun.$`git restore --staged .`.cwd("../canvas").nothrow().quiet().then(() => {});
 
 			progress.update("preinit_discard", true);
 
@@ -71,6 +79,15 @@ export async function runTasks() {
 		if (progress.someFailed("code"))
 			throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code")}`);
 
+		// colors (canvas) - uses same code array
+		try {
+			await wrapPromise(colorsTask(code), progress, "colors");
+		} catch (e: any) {
+			progress.update("colors", false, formatError(e));
+			// don't fail whole run if colors fails, just log
+			console.error("Colors task failed:", formatError(e));
+		}
+
 		while (!progress.isFinished("decompile_gzip")) {
 			await Bun.sleep(1000);
 		}
@@ -101,4 +118,8 @@ export async function runTasks() {
 	}
 
 	await commit(["version.txt"], `chore: bump app version to ${cuteVersion}`);
+	// canvas version bump (if canvas checkout exists)
+	try {
+		await commit(["version.txt"], `chore: bump app version to ${cuteVersion}`, "../canvas");
+	} catch {}
 }
