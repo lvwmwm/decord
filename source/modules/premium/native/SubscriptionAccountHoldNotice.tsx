@@ -1,17 +1,17 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 12973
+// Function ID: 12974
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 676, 21, 4446, 712, 1297, 12240, 4442, 1236, 4108, 4893, 2]
+// Dependencies: [19, 17, 676, 21, 4448, 712, 1297, 12274, 4444, 1236, 4109, 4896, 2]
 // Exports: default
 
-// Module 12939 (SubscriptionAccountHoldNotice)
+// Module 12973 (SubscriptionAccountHoldNotice)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 12240 */;
+import registerAssetDefault from "registerAsset" /* 12274 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { SubscriptionStatusTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 noopAll;
@@ -45,9 +45,9 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     const intl = subscription(1236).intl;
     const obj2 = { endDate: null, planDescription: null };
     obj2[0] = subscription.currentPeriodEnd;
-    obj2[1] = subscription(4108).getDisplayName(subscription.planId);
+    obj2[1] = subscription(4109).getDisplayName(subscription.planId);
     obj1[2] = intl.format(subscription(1236).t["7I21Iz"], obj2);
-    items[1] = callback(subscription(4442).Text, obj1);
+    items[1] = callback(subscription(4444).Text, obj1);
     obj[1] = items;
     const items1 = [callback2(closure_4, obj), ];
     const obj3 = { size: "sm", text: null, onPress: null };
@@ -56,10 +56,10 @@ export default function SubscriptionAccountHoldNotice(subscription) {
     obj3[2] = function onPress() {
       return closure_1_3.openURL(subscription(closure_1_2[10]).getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
     };
-    items1[1] = callback(subscription(4893).Button, obj3);
+    items1[1] = callback(subscription(4896).Button, obj3);
     obj[1] = items1;
     tmp2 = callback2(closure_4, obj);
-    const obj6 = subscription(4108);
+    const obj6 = subscription(4109);
   }
   return tmp2;
 };

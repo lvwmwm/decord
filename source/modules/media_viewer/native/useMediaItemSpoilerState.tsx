@@ -1,10 +1,10 @@
-// Module ID: 12760
-// Function ID: 12761
+// Module ID: 12795
+// Function ID: 12796
 // Name: useMediaItemSpoilerState
-// Dependencies: [32, 19, 8513, 4186, 4447, 1297, 2]
+// Dependencies: [32, 19, 8535, 4187, 4449, 1297, 2]
 // Exports: useMediaItemSpoilerState
 
-// Module 12760 (useMediaItemSpoilerState)
+// Module 12795 (useMediaItemSpoilerState)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 

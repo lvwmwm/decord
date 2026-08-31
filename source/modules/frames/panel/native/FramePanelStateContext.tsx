@@ -1,9 +1,9 @@
-// Module ID: 16552
-// Function ID: 16553
+// Module ID: 16586
+// Function ID: 16587
 // Name: context
-// Dependencies: [19, 16526, 2]
+// Dependencies: [19, 16560, 2]
 
-// Module 16552 (context)
+// Module 16586 (context)
 import importAllResult from "noop" /* 19 */;
 
 const context = importAllResult.createContext(require("useActivityWebViewLock").activityPanelStateContextDefault);

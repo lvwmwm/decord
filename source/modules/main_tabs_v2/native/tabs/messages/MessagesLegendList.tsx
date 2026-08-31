@@ -1,8 +1,8 @@
-// Module ID: 15574
-// Function ID: 15575
-// Dependencies: [19, 21, 15575, 15551, 15615, 15616, 15563, 15561, 15566, 15576, 15614, 15617, 15619, 2]
+// Module ID: 15608
+// Function ID: 15609
+// Dependencies: [19, 21, 15609, 15585, 15649, 15650, 15597, 15595, 15600, 15610, 15648, 15651, 15653, 2]
 
-// Module 15574
+// Module 15608
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -29,9 +29,9 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Mess
   renderHeader = data.renderHeader;
   renderFooter = data.renderFooter;
   setAddedFriendSuggestions = data.setAddedFriendSuggestions;
-  ({ accessibilityLabel, handleScrollAnimated, isRefreshEnabled, recycleItems } = listItemHeight);
+  ({ accessibilityLabel, handleScrollAnimated, recycleItems } = listItemHeight);
   ref = listLeft.useRef(null);
-  data = estimatedItemSize(listItemSuggestedFriendHeight[2])(data, { listItemHeight: estimatedItemSize, isRefreshEnabled });
+  data = estimatedItemSize(listItemSuggestedFriendHeight[2])(data, { listItemHeight: estimatedItemSize });
   friendsHeaderIndex = data.friendsHeaderIndex;
   friendsHeaderOffset = data.friendsHeaderOffset;
   estimatedHeaderSize = data.listHeaderHeight;

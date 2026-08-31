@@ -1,10 +1,10 @@
-// Module ID: 7189
-// Function ID: 7190
+// Module ID: 7210
+// Function ID: 7211
 // Name: result
 // Dependencies: [687, 2]
 // Exports: createMemberSearchCursor
 
-// Module 7189 (result)
+// Module 7210 (result)
 import setDefault from "set" /* 687 */;
 
 const result = 2 * setDefault.Millis.DAY;

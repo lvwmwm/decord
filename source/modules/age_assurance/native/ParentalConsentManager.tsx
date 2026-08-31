@@ -1,12 +1,12 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 17001
+// Function ID: 17002
 // Name: onPostConnectionOpen
-// Dependencies: [5, 1923, 676, 1625, 4425, 500, 5451, 4141, 16969, 16971, 698, 1208, 16972, 2]
+// Dependencies: [5, 1922, 676, 1624, 4427, 500, 5454, 4142, 17002, 17004, 698, 1208, 17005, 2]
 
-// Module 16968 (onPostConnectionOpen)
-import initializeDefault from "initialize" /* 5451 */;
+// Module 17001 (onPostConnectionOpen)
+import initializeDefault from "initialize" /* 5454 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;
@@ -41,7 +41,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -88,7 +88,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
                       }
                       let tmp8 = tmp9;
                     } else {
-                      tmp8 = parsed >= 35;
+                      tmp8 = parsed >= 23;
                     }
                     return tmp8;
                   }
@@ -119,7 +119,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         }
         v0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         v0 = tmp;
         throw tmp9;
@@ -207,7 +207,7 @@ prototype["collectAgeSignal"] = function collectAgeSignal() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

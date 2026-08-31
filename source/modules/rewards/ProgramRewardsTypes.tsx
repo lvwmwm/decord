@@ -1,12 +1,12 @@
-// Module ID: 13314
-// Function ID: 13315
+// Module ID: 13348
+// Function ID: 13349
 // Name: RewardProgram
-// Dependencies: [2, 13315, 13316]
+// Dependencies: [2, 13349, 13350]
 
-// Module 13314 (RewardProgram)
+// Module 13348 (RewardProgram)
 import set from "set" /* 2 */;
-import RewardProgram from "RewardProgram" /* 13315 */;
-import ProgramCurrentState from "ProgramCurrentState" /* 13316 */;
+import RewardProgram from "RewardProgram" /* 13349 */;
+import ProgramCurrentState from "ProgramCurrentState" /* 13350 */;
 
 const result = set.fileFinishedImporting("modules/rewards/ProgramRewardsTypes.tsx");
 

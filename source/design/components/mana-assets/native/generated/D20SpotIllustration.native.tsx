@@ -1,14 +1,14 @@
-// Module ID: 6400
-// Function ID: 6401
+// Module ID: 6411
+// Function ID: 6412
 // Name: D20SpotIllustration
-// Dependencies: [21, 5458, 6401, 2]
+// Dependencies: [21, 5461, 6412, 2]
 // Exports: D20SpotIllustration
 
-// Module 6400 (D20SpotIllustration)
+// Module 6411 (D20SpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6401 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6412 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/D20SpotIllustration.native.tsx");

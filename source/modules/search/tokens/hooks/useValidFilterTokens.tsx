@@ -1,11 +1,11 @@
-// Module ID: 16149
-// Function ID: 16150
+// Module ID: 16183
+// Function ID: 16184
 // Name: useValidOrderedFilterTokens
-// Dependencies: [4291, 589, 11848, 1433, 2]
+// Dependencies: [4293, 589, 11879, 1429, 2]
 // Exports: useValidFilterTokens, useValidOrderedFilterTokens
 
-// Module 16149 (useValidOrderedFilterTokens)
-import closure_2 from "initialize" /* 4291 */;
+// Module 16183 (useValidOrderedFilterTokens)
+import closure_2 from "initialize" /* 4293 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/search/tokens/hooks/useValidFilterTokens.tsx");
@@ -25,5 +25,5 @@ export const useValidFilterTokens = function useValidFilterTokens(searchContext)
   return _require(589).useStateFromStores(items, () => {
     const items = [closure_1_2];
     return searchContext(closure_1_1[2]).getValidFilterTokens(searchContext, items);
-  }, items1, _require(1433).areSetsEqual);
+  }, items1, _require(1429).areSetsEqual);
 };

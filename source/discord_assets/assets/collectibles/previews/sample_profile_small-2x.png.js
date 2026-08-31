@@ -1,9 +1,9 @@
-// Module ID: 10688
-// Function ID: 10689
+// Module ID: 10712
+// Function ID: 10713
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10688 (metadata)
+// Module 10712 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/collectibles/previews/sample_profile_small-2x.png.js");

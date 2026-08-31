@@ -1,22 +1,22 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11110
+// Function ID: 11111
 // Name: maybeStartLurking
-// Dependencies: [5, 1395, 1434, 1391, 1993, 1986, 1910, 4090, 676, 1398, 5433, 5429, 6150, 8592, 7951, 4689, 11082, 2010, 6056, 4413, 11095, 11103, 1370, 4641, 4693, 5320, 2]
+// Dependencies: [5, 1391, 1430, 1387, 1992, 1985, 1909, 4091, 676, 1394, 5436, 5432, 6153, 8614, 7973, 4691, 11111, 2009, 6059, 4415, 11124, 11132, 1471, 4643, 4695, 5323, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11081 (maybeStartLurking)
+// Module 11110 (maybeStartLurking)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import { isGuildVocalChannelType } from "createChannelRecord" /* 1395 */;
-import { isGuildLurker } from "GuildNSFWContentLevel" /* 1434 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "trackCommunicationDisabled" /* 1993 */;
-import closure_9 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_10 from "createGuildRecordFromRust" /* 1910 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4090 */;
+import { isGuildVocalChannelType } from "createChannelRecord" /* 1391 */;
+import { isGuildLurker } from "GuildNSFWContentLevel" /* 1430 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "trackCommunicationDisabled" /* 1992 */;
+import closure_9 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_10 from "createGuildRecordFromRust" /* 1909 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4091 */;
 import ME from "ME" /* 676 */;
-import { StaticChannelRoute } from "set" /* 1398 */;
-import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 5433 */;
-import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5429 */;
+import { StaticChannelRoute } from "set" /* 1394 */;
+import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 5436 */;
+import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5432 */;
 
 const require = arg1;
 function maybeStartLurking() {
@@ -51,7 +51,7 @@ function _maybeStartLurking() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ function _handleMessagesTapChannel() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -173,7 +173,7 @@ function _handleMessagesTapChannel() {
                 let role2;
                 v0 = 1;
                 channelId = 1;
-                return { value: "ct", done: true };
+                return { value: "Object", done: true };
               }
             } else {
               if (1 === tmp5) {
@@ -214,7 +214,7 @@ function _handleMessagesTapChannel() {
                         throwTypeErrorResult = selfMember;
                         if (null == selfMember) {
                           channelId = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         } else {
                           throwTypeErrorResult = navigationReplace;
                           throwTypeErrorResult = channelId;
@@ -242,7 +242,7 @@ function _handleMessagesTapChannel() {
                               const obj27 = navigationReplace(v0[15]);
                             } else {
                               channelId = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           } else if ("customize" === throwTypeErrorResult) {
                             throwTypeErrorResult = callback;
@@ -268,7 +268,7 @@ function _handleMessagesTapChannel() {
                               const obj25 = navigationReplace(v0[15]);
                             } else {
                               channelId = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           } else {
                             if ("home" !== throwTypeErrorResult) {
@@ -286,7 +286,7 @@ function _handleMessagesTapChannel() {
                                     throwTypeErrorResult = guild;
                                     if (null == guild) {
                                       channelId = 3;
-                                      return { value: "HermesInternal", done: null };
+                                      return { value: "HermesInternal", done: "HermesInternal" };
                                     } else {
                                       throwTypeErrorResult = navigationReplace;
                                       throwTypeErrorResult = callback;
@@ -380,14 +380,14 @@ function _handleMessagesTapChannel() {
                               throwTypeErrorResult = throwTypeErrorResult(closure_15.CHANNEL(guildId, constants4.GUILD_HOME), obj8);
                             } else {
                               channelId = 3;
-                              return { value: "HermesInternal", done: null };
+                              return { value: "HermesInternal", done: "HermesInternal" };
                             }
                           }
                         }
                       }
                       channelId = 3;
                       channelId = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   }
                   if (null != messageId) {
@@ -437,7 +437,7 @@ function _handleMessagesTapChannel() {
                               throwTypeErrorResult = channel;
                               if (!role2.can(constants3.CONNECT, channel)) {
                                 channelId = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               }
                             }
                             throwTypeErrorResult = navigationReplace;
@@ -534,7 +534,7 @@ function _handleMessagesTapChannel() {
                   return obj14;
                 } else if (arg1) {
                   channelId = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else if (3 === tmp5) {
                 if (arg0 === 1) {
@@ -547,7 +547,7 @@ function _handleMessagesTapChannel() {
                   return obj15;
                 } else if (arg1) {
                   channelId = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else if (arg0 === 1) {
                 channelId = 3;

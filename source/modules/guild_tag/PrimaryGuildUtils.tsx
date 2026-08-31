@@ -1,10 +1,10 @@
-// Module ID: 1933
-// Function ID: 1934
+// Module ID: 1932
+// Function ID: 1933
 // Name: isUserPrimaryGuildEqual
 // Dependencies: [2]
 // Exports: ensureUserPrimaryGuild, isUserPrimaryGuildEqual
 
-// Module 1933 (isUserPrimaryGuildEqual)
+// Module 1932 (isUserPrimaryGuildEqual)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_tag/PrimaryGuildUtils.tsx");

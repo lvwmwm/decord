@@ -1,26 +1,26 @@
-// Module ID: 4632
-// Function ID: 4633
+// Module ID: 4634
+// Function ID: 4635
 // Name: allowChannelAccess
-// Dependencies: [1395, 1391, 1983, 4090, 1982, 4521, 676, 1925, 4095, 506, 1956, 4633, 4634, 1236, 4290, 4635, 11, 2, 4642]
+// Dependencies: [1391, 1387, 1982, 4091, 1981, 4523, 676, 1924, 4096, 506, 1955, 4635, 4636, 1236, 4292, 4637, 11, 2, 4644]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4632 (allowChannelAccess)
+// Module 4634 (allowChannelAccess)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import fromStringAll from "fromString" /* 506 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1956 */;
-import applyOverwritesAll from "applyOverwrites" /* 4095 */;
-import hasStream from "hasStream" /* 4633 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4634 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4642 */;
-import createChannelRecord from "createChannelRecord" /* 1395 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "comparator" /* 1983 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_10 from "handleConnectionOpen" /* 1982 */;
-import closure_11 from "getVoiceStatesForGuild" /* 4521 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
+import applyOverwritesAll from "applyOverwrites" /* 4096 */;
+import hasStream from "hasStream" /* 4635 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4636 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4644 */;
+import createChannelRecord from "createChannelRecord" /* 1391 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "comparator" /* 1982 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_10 from "handleConnectionOpen" /* 1981 */;
+import closure_11 from "getVoiceStatesForGuild" /* 4523 */;
 import ME from "ME" /* 676 */;
 
 function allowChannelAccess(id, channelType, MEMBER) {
@@ -109,7 +109,7 @@ export const permissionOverwritesForRoles = function permissionOverwritesForRole
     }
     const obj = { id: null, type: null, allow: null, deny: null };
     obj[0] = guildId;
-    obj[1] = _require(1956).PermissionOverwriteType.ROLE;
+    obj[1] = _require(1955).PermissionOverwriteType.ROLE;
     obj[2] = applyOverwritesAll.NONE;
     obj[3] = addResult2;
     items.push(obj);

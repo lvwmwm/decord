@@ -1,9 +1,9 @@
-// Module ID: 11813
-// Function ID: 11814
+// Module ID: 11844
+// Function ID: 11845
 // Name: GuildDirectoryCreate
 // Dependencies: [2]
 
-// Module 11813 (GuildDirectoryCreate)
+// Module 11844 (GuildDirectoryCreate)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/directory_channels/native/GuildDirectoryConstants.tsx");

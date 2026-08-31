@@ -1,9 +1,9 @@
-// Module ID: 8100
-// Function ID: 8101
+// Module ID: 8122
+// Function ID: 8123
 // Name: ScoreMethod
 // Dependencies: [2]
 
-// Module 8100 (ScoreMethod)
+// Module 8122 (ScoreMethod)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandQueryTypes.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 11385
-// Function ID: 11386
+// Module ID: 11414
+// Function ID: 11415
 // Name: AccountSettingsTabs
 // Dependencies: [2]
 
-// Module 11385 (AccountSettingsTabs)
+// Module 11414 (AccountSettingsTabs)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/account/native/SettingsAccountConstants.tsx");

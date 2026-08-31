@@ -1,14 +1,14 @@
-// Module ID: 16079
-// Function ID: 16080
+// Module ID: 16113
+// Function ID: 16114
 // Name: OnboardingHomeResourcesSheet
-// Dependencies: [19, 16077, 21, 4166, 712, 16078, 11787, 4413, 5954, 5956, 1435, 5458, 2]
+// Dependencies: [19, 16111, 21, 4167, 712, 16112, 11818, 4415, 5957, 5959, 1431, 5461, 2]
 // Exports: default
 
-// Module 16079 (OnboardingHomeResourcesSheet)
+// Module 16113 (OnboardingHomeResourcesSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 16078 */;
-import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_3 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY" /* 16077 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 16112 */;
+import { ONBOARDING_HOME_RESOURCES_SHEET_KEY as closure_3 } from "ONBOARDING_HOME_RESOURCES_SHEET_KEY" /* 16111 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -18,7 +18,7 @@ const result = require("set").fileFinishedImporting("modules/guild_onboarding_ho
 export default function OnboardingHomeResourcesSheet(guildId) {
   guildId = guildId.guildId;
   importDefault = undefined;
-  let obj = guildId(4166);
+  let obj = guildId(4167);
   importDefault = obj.useToken(ThemesDefault.modules.mobile.TABLE_ROW_ICON_SIZE);
   obj = { children: null };
   obj = {
@@ -49,7 +49,7 @@ export default function OnboardingHomeResourcesSheet(guildId) {
       return closure_1_4(guildId(closure_1_2[9]).ActionSheetRow, obj, label.channelId);
     })
   };
-  obj[0] = jsx(guildId(5956).ActionSheetRow.Group, {
+  obj[0] = jsx(guildId(5959).ActionSheetRow.Group, {
     hasIcons: true,
     children: useResourceChannelsDefault(guildId).map((label) => {
       closure_0 = label;
@@ -77,7 +77,7 @@ export default function OnboardingHomeResourcesSheet(guildId) {
       return closure_1_4(guildId(closure_1_2[9]).ActionSheetRow, obj, label.channelId);
     })
   });
-  return jsx(guildId(5954).ActionSheet, {
+  return jsx(guildId(5957).ActionSheet, {
     hasIcons: true,
     children: useResourceChannelsDefault(guildId).map((label) => {
       closure_0 = label;

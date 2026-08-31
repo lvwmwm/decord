@@ -1,14 +1,14 @@
-// Module ID: 9246
-// Function ID: 9247
+// Module ID: 9268
+// Function ID: 9269
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 9245, 4442, 1236, 2]
+// Dependencies: [19, 21, 9267, 4444, 1236, 2]
 // Exports: TwoWayLinkStepHeader
 
-// Module 9246 (TwoWayLinkStepHeader)
+// Module 9268 (TwoWayLinkStepHeader)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import styles from "styles" /* 9245 */;
+import Text from "Text" /* 4444 */;
+import styles from "styles" /* 9267 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,25 +1,25 @@
-// Module ID: 7456
-// Function ID: 7457
+// Module ID: 7477
+// Function ID: 7478
 // Name: patchThread
-// Dependencies: [5, 1395, 1218, 1391, 4090, 7457, 4092, 7467, 676, 1398, 530, 709, 4822, 1236, 4666, 7468, 7469, 7472, 7473, 1370, 1402, 2]
+// Dependencies: [5, 1391, 1218, 1387, 4091, 7478, 4093, 7488, 676, 1394, 530, 709, 4825, 1236, 4668, 7489, 7490, 7493, 7494, 1471, 1398, 2]
 
-// Module 7456 (patchThread)
+// Module 7477 (patchThread)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4666 */;
-import dispatcherDefault2 from "dispatcher" /* 7468 */;
-import setActiveCommand from "setActiveCommand" /* 7469 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4668 */;
+import dispatcherDefault2 from "dispatcher" /* 7489 */;
+import setActiveCommand from "setActiveCommand" /* 7490 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1395 */;
+import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1391 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_8 from "listKey" /* 7457 */;
-import { PAGE_SIZE } from "listKey" /* 7457 */;
-import closure_10 from "storeThread" /* 4092 */;
-import closure_11 from "handleSummarizeThreadFinish" /* 7467 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_8 from "listKey" /* 7478 */;
+import { PAGE_SIZE } from "listKey" /* 7478 */;
+import closure_10 from "storeThread" /* 4093 */;
+import closure_11 from "handleSummarizeThreadFinish" /* 7488 */;
 import ME from "ME" /* 676 */;
-import { ChannelFlags } from "set" /* 1398 */;
+import { ChannelFlags } from "set" /* 1394 */;
 
 require = arg1;
 function patchThread(id, body) {
@@ -94,7 +94,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -226,7 +226,7 @@ export default {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -412,7 +412,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -462,7 +462,7 @@ export default {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp9) {
           c0 = tmp;
           throw tmp9;
@@ -508,7 +508,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -586,7 +586,7 @@ export default {
                 closure_1_18(lib, false);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -632,7 +632,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -823,7 +823,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -997,7 +997,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1124,7 +1124,7 @@ export default {
     const callback = c3;
     let MATCH_SOME = c4;
     if (c4 === undefined) {
-      MATCH_SOME = _require(1402).ThreadSearchTagSetting.MATCH_SOME;
+      MATCH_SOME = _require(1398).ThreadSearchTagSetting.MATCH_SOME;
     }
     return callback(function*() {
       let threads = tmp3;

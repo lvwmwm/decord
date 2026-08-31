@@ -1,17 +1,17 @@
-// Module ID: 10001
-// Function ID: 10002
+// Module ID: 10024
+// Function ID: 10025
 // Name: getUserAgnosticState
-// Dependencies: [676, 698, 500, 1625, 589, 709, 2]
+// Dependencies: [676, 698, 500, 1624, 589, 709, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 10001 (getUserAgnosticState)
+// Module 10024 (getUserAgnosticState)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import initializeDefault from "initialize" /* 589 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isMetaQuest from "isMetaQuest" /* 1625 */;
+import isMetaQuest from "isMetaQuest" /* 1624 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let c4 = false;

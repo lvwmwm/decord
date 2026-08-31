@@ -1,21 +1,21 @@
-// Module ID: 16242
-// Function ID: 16243
+// Module ID: 16276
+// Function ID: 16277
 // Name: DirectMessageIcon
-// Dependencies: [19, 17, 1391, 1910, 4090, 4535, 1923, 676, 21, 4446, 712, 589, 1297, 4640, 1500, 4457, 5033, 4442, 1236, 4632, 3406, 10586, 4946, 8863, 5918, 8836, 2]
+// Dependencies: [19, 17, 1387, 1909, 4091, 4537, 1922, 676, 21, 4448, 712, 589, 1297, 4642, 1499, 4459, 5036, 4444, 1236, 4634, 3407, 10610, 4949, 8886, 5921, 8859, 2]
 
-// Module 16242 (DirectMessageIcon)
+// Module 16276 (DirectMessageIcon)
 import ThemesDefault from "Themes" /* 712 */;
-import messagesProxyDefault from "messagesProxy" /* 3406 */;
+import messagesProxyDefault from "messagesProxy" /* 3407 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_8 from "sortActivity" /* 4535 */;
-import closure_9 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_8 from "sortActivity" /* 4537 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function DirectMessageIcon(channel) {
@@ -114,7 +114,7 @@ function ChannelSubtitle(channel) {
       if ("" !== stateFromStores) {
         obj = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: null };
         obj[3] = stateFromStores;
-        tmp8 = callback(tmp(4442).Text, obj);
+        tmp8 = callback(tmp(4444).Text, obj);
       }
     }
     return tmp8;
@@ -122,8 +122,8 @@ function ChannelSubtitle(channel) {
     const intl = tmp(1236).intl;
     let stringResult = intl.string(messagesProxyDefault["D+2/QP"]);
   } else {
-    stringResult = tmp(4632).channelTypeString(channel);
-    const tmpResult = tmp(4632);
+    stringResult = tmp(4634).channelTypeString(channel);
+    const tmpResult = tmp(4634);
   }
 }
 function ChannelNameHeaderContent(channel) {
@@ -241,7 +241,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5918)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5921)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = importAllResult.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -255,7 +255,7 @@ function DMChannelNameHeader(channel) {
   }, items);
   const tmp = callback2();
   const items1 = [tmp.container, channel.containerStyle];
-  return callback(channel(5033).PressableOpacity, { style: items1, onPress: callback, children: callback(ChannelNameHeaderContent, { channel }) });
+  return callback(channel(5036).PressableOpacity, { style: items1, onPress: callback, children: callback(ChannelNameHeaderContent, { channel }) });
 }
 function DefaultChannelNameHeader(arg0) {
   ({ channel, containerStyle } = arg0);

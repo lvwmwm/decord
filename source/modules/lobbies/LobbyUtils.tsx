@@ -1,11 +1,11 @@
-// Module ID: 10608
-// Function ID: 10609
+// Module ID: 10632
+// Function ID: 10633
 // Name: canUnlinkLobbyChannel
-// Dependencies: [4090, 676, 589, 2]
+// Dependencies: [4091, 676, 589, 2]
 // Exports: canUnlinkLobbyChannel, useCanUnlinkLobbyChannel
 
-// Module 10608 (canUnlinkLobbyChannel)
-import closure_2 from "getUncachedChannelPermissions" /* 4090 */;
+// Module 10632 (canUnlinkLobbyChannel)
+import closure_2 from "getUncachedChannelPermissions" /* 4091 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;

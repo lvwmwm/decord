@@ -1,14 +1,14 @@
-// Module ID: 16722
-// Function ID: 16723
+// Module ID: 16755
+// Function ID: 16756
 // Name: useHideSelfVideo
-// Dependencies: [1218, 4497, 676, 4510, 589, 9720, 2]
+// Dependencies: [1218, 4499, 676, 4512, 589, 9742, 2]
 // Exports: default
 
-// Module 16722 (useHideSelfVideo)
+// Module 16755 (useHideSelfVideo)
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4499 */;
 import { VideoToggleState } from "ME" /* 676 */;
-import DesktopSources from "DesktopSources" /* 4510 */;
+import DesktopSources from "DesktopSources" /* 4512 */;
 
 const require = arg1;
 ({ MediaEngineContextTypes: closure_6, Features: error } = DesktopSources);

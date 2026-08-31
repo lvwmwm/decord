@@ -1,16 +1,16 @@
-// Module ID: 8050
-// Function ID: 8051
+// Module ID: 8072
+// Function ID: 8073
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 4446, 8036, 4442, 12, 8051, 2]
+// Dependencies: [32, 19, 17, 21, 4448, 8058, 4444, 12, 8073, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 8050 (EditCollectiblesPickerList)
-import Text from "Text" /* 4442 */;
+// Module 8072 (EditCollectiblesPickerList)
+import Text from "Text" /* 4444 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 let c3 = importAllResult;

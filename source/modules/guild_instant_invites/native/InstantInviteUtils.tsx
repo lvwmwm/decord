@@ -1,13 +1,13 @@
-// Module ID: 10618
-// Function ID: 10619
+// Module ID: 10642
+// Function ID: 10643
 // Name: useInviteActions
-// Dependencies: [5, 1391, 1923, 676, 1236, 10612, 10619, 8578, 7450, 5946, 4162, 9847, 8595, 4163, 2]
+// Dependencies: [5, 1387, 1922, 676, 1236, 10636, 10643, 8600, 7471, 5949, 4163, 9870, 8617, 4164, 2]
 // Exports: useInviteActions
 
-// Module 10618 (useInviteActions)
+// Module 10642 (useInviteActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import { InstantInviteSources } from "ME" /* 676 */;
 
 const require = arg1;
@@ -27,9 +27,9 @@ export const useInviteActions = function useInviteActions(invite) {
   let obj = { label: null, iconSource: null, action: null };
   let intl = invite(1236).intl;
   obj[0] = intl.string(invite(1236).t.RDE0Sc);
-  obj[1] = onInviteRevoked(10612).share;
+  obj[1] = onInviteRevoked(10636).share;
   obj[2] = function action() {
-    onInviteRevoked(10619)(() => {
+    onInviteRevoked(10643)(() => {
       let obj = closure_1_0(closure_1_2[7]);
       let tmp4;
       if (!closure_3) {
@@ -64,23 +64,23 @@ export const useInviteActions = function useInviteActions(invite) {
   obj = { label: null, iconSource: null, action: null };
   const intl2 = invite(1236).intl;
   obj[0] = intl2.string(invite(1236).t.OpuAlK);
-  obj[1] = onInviteRevoked(10612).copy;
+  obj[1] = onInviteRevoked(10636).copy;
   obj[2] = function action() {
     if (c3) {
-      let tmpResult = tmp(9847);
+      let tmpResult = tmp(9870);
       tmpResult.handleCopy(invite.code, invite.channel, closure_1_6.GROUP_DM, false);
     } else {
-      tmpResult = tmp(5946);
-      tmpResult.copy(onInviteRevoked(7450)(invite.code));
-      const result = invite(4162).presentCopiedToClipboard();
-      const obj2 = invite(4162);
+      tmpResult = tmp(5949);
+      tmpResult.copy(onInviteRevoked(7471)(invite.code));
+      const result = invite(4163).presentCopiedToClipboard();
+      const obj2 = invite(4163);
     }
   };
   items[1] = obj;
   obj1 = { label: null, iconSource: null, variant: "destructive", action: null };
   const intl3 = invite(1236).intl;
   obj1[0] = intl3.string(invite(1236).t.v6Yazx);
-  obj1[1] = onInviteRevoked(10612).revoke;
+  obj1[1] = onInviteRevoked(10636).revoke;
   dependencyMap = callback(function*() {
     closure_0 = tmp3;
     c3 = 1;

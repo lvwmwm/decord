@@ -1,20 +1,20 @@
-// Module ID: 14848
-// Function ID: 14849
+// Module ID: 14882
+// Function ID: 14883
 // Name: addWant
-// Dependencies: [32, 5, 5186, 1395, 1218, 1391, 13303, 676, 3, 5451, 12, 1957, 709, 530, 14849, 2]
+// Dependencies: [32, 5, 5189, 1391, 1218, 1387, 13337, 676, 3, 5454, 12, 1956, 709, 530, 14883, 2]
 
-// Module 14848 (addWant)
+// Module 14882 (addWant)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 5451 */;
-import FetchStatus from "FetchStatus" /* 14849 */;
+import initializeDefault from "initialize" /* 5454 */;
+import FetchStatus from "FetchStatus" /* 14883 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "_handleConnectionOpen" /* 5186 */;
-import { isThread } from "createChannelRecord" /* 1395 */;
+import closure_5 from "_handleConnectionOpen" /* 5189 */;
+import { isThread } from "createChannelRecord" /* 1391 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
-import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "initialize" /* 13303 */;
+import closure_8 from "ensureGuildLoaded" /* 1387 */;
+import closure_9 from "initialize" /* 13337 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;
@@ -84,7 +84,7 @@ class MessagePreviewManager extends tmp3 {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {
@@ -116,7 +116,7 @@ class MessagePreviewManager extends tmp3 {
                 c7 = 1;
                 let num9 = 1;
                 c8 = 1;
-                return { value: "ct", done: true };
+                return { value: "Object", done: true };
               }
             } else {
               if (1 === tmp4) {
@@ -287,7 +287,7 @@ prototype["fetchLocal"] = function fetchLocal(guild_id) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -315,7 +315,7 @@ prototype["fetchLocal"] = function fetchLocal(guild_id) {
                 const localFetching5 = closure_1_1.localFetching;
                 localFetching5.add(closure_1_0);
                 id = closure_1_7.getId();
-                let obj3 = closure_1_1(1957);
+                let obj3 = closure_1_1(1956);
                 const messagesResult = obj3.messages();
                 let mostRecents;
                 if (messagesResult != null) {
@@ -421,7 +421,7 @@ prototype["fetchDms"] = function fetchDms(closure_4) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -468,7 +468,7 @@ prototype["fetchDms"] = function fetchDms(closure_4) {
             obj5[2] = body;
             obj.dispatch(obj5);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c3 = tmp;

@@ -1,12 +1,12 @@
-// Module ID: 15910
-// Function ID: 15911
+// Module ID: 15944
+// Function ID: 15945
 // Name: useICYMITabBadge
-// Dependencies: [8552, 589, 2]
+// Dependencies: [8574, 589, 2]
 // Exports: default, icymiTabBadgeShown
 
-// Module 15910 (useICYMITabBadge)
+// Module 15944 (useICYMITabBadge)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "filterStaffGuild" /* 8552 */;
+import closure_2 from "filterStaffGuild" /* 8574 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/icymi/useICYMITabBadge.tsx");

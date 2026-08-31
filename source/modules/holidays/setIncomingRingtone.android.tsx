@@ -1,10 +1,10 @@
-// Module ID: 16895
-// Function ID: 16896
+// Module ID: 16928
+// Function ID: 16929
 // Name: setIncomingRingtone
 // Dependencies: [17, 2]
 // Exports: setIncomingRingtone
 
-// Module 16895 (setIncomingRingtone)
+// Module 16928 (setIncomingRingtone)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

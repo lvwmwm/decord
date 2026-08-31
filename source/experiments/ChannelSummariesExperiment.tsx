@@ -1,15 +1,15 @@
-// Module ID: 10922
-// Function ID: 10923
+// Module ID: 10946
+// Function ID: 10947
 // Name: canSeeChannelSummaries
-// Dependencies: [1434, 1910, 676, 1398, 1913, 647, 2]
+// Dependencies: [1430, 1909, 676, 1394, 1912, 647, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 10922 (canSeeChannelSummaries)
+// Module 10946 (canSeeChannelSummaries)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1398 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
-import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import set2 from "set" /* 1394 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1912 */;
+import closure_3 from "createGuildRecordFromRust" /* 1909 */;
 import ME from "ME" /* 676 */;
 
 function canSeeChannelSummaries(channel, flag, arg2) {

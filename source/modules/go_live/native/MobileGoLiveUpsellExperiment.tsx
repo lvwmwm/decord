@@ -1,11 +1,11 @@
-// Module ID: 9987
-// Function ID: 9988
+// Module ID: 10010
+// Function ID: 10011
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 
-// Module 9987 (apexExperiment)
+// Module 10010 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null, 2: { showMobileGoLiveUpsell: true, goLiveUpsellVariant: "one-step" } };
 obj[2] = { showMobileGoLiveUpsell: true, goLiveUpsellVariant: "two-step" };

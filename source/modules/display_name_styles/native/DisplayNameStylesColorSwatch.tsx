@@ -1,19 +1,19 @@
-// Module ID: 14203
-// Function ID: 14204
+// Module ID: 14237
+// Function ID: 14238
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 4446, 712, 1936, 14204, 4905, 688, 2]
+// Dependencies: [17, 21, 4448, 712, 1935, 14238, 4908, 688, 2]
 // Exports: default
 
-// Module 14203 (DisplayNameStylesColorSwatch)
+// Module 14237 (DisplayNameStylesColorSwatch)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import int2hslRaw from "int2hslRaw" /* 688 */;
 import ThemesDefault from "Themes" /* 712 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1936 */;
-import LinearGradientDefault from "LinearGradient" /* 4905 */;
-import GummyStripesDefault from "GummyStripes" /* 14204 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1935 */;
+import LinearGradientDefault from "LinearGradient" /* 4908 */;
+import GummyStripesDefault from "GummyStripes" /* 14238 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const View = get_ActivityIndicator.View;
 const jsx = jsxProd.jsx;

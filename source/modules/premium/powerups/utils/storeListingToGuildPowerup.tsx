@@ -1,14 +1,14 @@
-// Module ID: 11988
-// Function ID: 11989
+// Module ID: 12021
+// Function ID: 12022
 // Name: storeListingToGuildPowerup
-// Dependencies: [1925, 4333, 1926, 2]
+// Dependencies: [1924, 4335, 1925, 2]
 // Exports: default
 
-// Module 11988 (storeListingToGuildPowerup)
+// Module 12021 (storeListingToGuildPowerup)
 import set from "set" /* 2 */;
-import set2 from "set" /* 1926 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4333 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+import set2 from "set" /* 1925 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4335 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 ({ DEFAULT_SOUND_SLOTS: c0, DEFAULT_STICKER_SLOTS: closure_1 } = GuildFeatures);
 const GuildPowerupType = BoostedGuildTiers.GuildPowerupType;

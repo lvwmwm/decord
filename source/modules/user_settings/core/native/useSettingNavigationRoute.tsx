@@ -1,12 +1,12 @@
-// Module ID: 7106
-// Function ID: 7107
+// Module ID: 7127
+// Function ID: 7128
 // Name: useSettingNavigationRoute
-// Dependencies: [1501, 2]
+// Dependencies: [1500, 2]
 // Exports: useSettingNavigationRoute
 
-// Module 7106 (useSettingNavigationRoute)
+// Module 7127 (useSettingNavigationRoute)
 import set from "set" /* 2 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1501 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1500 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/core/native/useSettingNavigationRoute.tsx");
 

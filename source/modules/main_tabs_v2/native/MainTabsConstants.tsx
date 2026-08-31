@@ -1,9 +1,9 @@
-// Module ID: 10769
-// Function ID: 10770
+// Module ID: 10793
+// Function ID: 10794
 // Name: MODE_CHANGE_PHYSICS
 // Dependencies: [2]
 
-// Module 10769 (MODE_CHANGE_PHYSICS)
+// Module 10793 (MODE_CHANGE_PHYSICS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/MainTabsConstants.tsx");

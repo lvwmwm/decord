@@ -1,11 +1,11 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17111
+// Function ID: 17112
 // Name: prototype
-// Dependencies: [1932, 1931, 2]
+// Dependencies: [1931, 1930, 2]
 
-// Module 17078 (prototype)
-import toJSDefault from "toJS" /* 1932 */;
-import closure_0 from "createdAt" /* 1931 */;
+// Module 17111 (prototype)
+import toJSDefault from "toJS" /* 1931 */;
+import closure_0 from "createdAt" /* 1930 */;
 
 toJSDefault;
 const result = require("set").fileFinishedImporting("records/EmojiRecord.tsx");

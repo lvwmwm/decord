@@ -1,19 +1,19 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9721
+// Function ID: 9722
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 1910, 7218, 1397, 21, 4446, 712, 1236, 5918, 5938, 589, 9689, 9700, 9610, 9690, 1629, 9199, 9680, 9701, 5587, 5589, 9703, 9708, 2]
+// Dependencies: [32, 19, 17, 1909, 7239, 1393, 21, 4448, 712, 1236, 5921, 5941, 589, 9711, 9722, 9632, 9712, 1628, 9221, 9702, 9723, 5590, 5592, 9725, 9730, 2]
 // Exports: default
 
-// Module 9699 (GuildScheduledEventDetailsActionSheet)
+// Module 9721 (GuildScheduledEventDetailsActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "scheduledEventSort" /* 7218 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import closure_7 from "scheduledEventSort" /* 7239 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ EventDetailSections: closure_8, MAX_RSVP_USER_DISPLAY_COUNT: c9 } = GUILD_EVENT_MAX_NAME_LENGTH);

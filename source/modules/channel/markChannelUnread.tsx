@@ -1,16 +1,16 @@
-// Module ID: 10260
-// Function ID: 10261
+// Module ID: 10284
+// Function ID: 10285
 // Name: markChannelUnread
-// Dependencies: [1391, 4461, 3, 11, 10261, 589, 2]
+// Dependencies: [1387, 4463, 3, 11, 10285, 589, 2]
 // Exports: default, useCanMarkChannelUnread
 
-// Module 10260 (markChannelUnread)
+// Module 10284 (markChannelUnread)
 import timestampDefault from "timestamp" /* 3 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import markUnreadBySnowflakeID from "markUnreadBySnowflakeID" /* 10261 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import generateOldThreadCutoff from "generateOldThreadCutoff" /* 4461 */;
-import closure_6 from "generateOldThreadCutoff" /* 4461 */;
+import markUnreadBySnowflakeID from "markUnreadBySnowflakeID" /* 10285 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import generateOldThreadCutoff from "generateOldThreadCutoff" /* 4463 */;
+import closure_6 from "generateOldThreadCutoff" /* 4463 */;
 
 require = arg1;
 ({ isNonMutedPrivateMessage: c4, ReadState: c5 } = generateOldThreadCutoff);

@@ -1,14 +1,14 @@
-// Module ID: 11664
-// Function ID: 11665
+// Module ID: 11695
+// Function ID: 11696
 // Name: fileTypesFormattedStringHelper
-// Dependencies: [32, 19, 1997, 500, 1236, 589, 4822, 2]
+// Dependencies: [32, 19, 1996, 500, 1236, 589, 4825, 2]
 // Exports: getFileTypeFiltering, useFileTypeFiltering, useFileTypesFormattedString
 
-// Module 11664 (fileTypesFormattedStringHelper)
+// Module 11695 (fileTypesFormattedStringHelper)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "_getSystemLocale" /* 1997 */;
+import closure_5 from "_getSystemLocale" /* 1996 */;
 
 require = arg1;
 function fileTypesFormattedStringHelper(arr, locale) {

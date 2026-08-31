@@ -1,9 +1,9 @@
-// Module ID: 7181
-// Function ID: 7182
+// Module ID: 7202
+// Function ID: 7203
 // Name: getAll
-// Dependencies: [5, 1340, 1218, 3, 1957, 1974, 12, 2]
+// Dependencies: [5, 1340, 1218, 3, 1956, 1973, 12, 2]
 
-// Module 7181 (getAll)
+// Module 7202 (getAll)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
@@ -37,7 +37,7 @@ class UserSettingsProto {
       if (databaseResult != null) {
         databaseResult.transaction((database) => {
           const state = closure_3.computeState();
-          obj = callback(1957);
+          obj = callback(1956);
           const result = obj.userSettingsTransaction(database);
           for (const key10014 in state) {
             let tmp3 = key10014;
@@ -56,7 +56,7 @@ class UserSettingsProto {
           if (num == null) {
             num = -1;
           }
-          const result1 = callback(1957).nonGuildVersionsTransaction(database);
+          const result1 = callback(1956).nonGuildVersionsTransaction(database);
           result1.put({ id: "user_settings_version", version: num });
         }, "handleUserSettingsProtoChange");
       }
@@ -81,7 +81,7 @@ prototype["getAll"] = function getAll(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       while (true) {
@@ -207,7 +207,7 @@ obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
   if (databaseResult != null) {
     databaseResult.transaction((database) => {
       const state = closure_3.computeState();
-      obj = callback(1957);
+      obj = callback(1956);
       const result = obj.userSettingsTransaction(database);
       for (const key10014 in state) {
         let tmp3 = key10014;
@@ -226,7 +226,7 @@ obj.handleUserSettingsProtoChange = function handleUserSettingsProtoChange() {
       if (num == null) {
         num = -1;
       }
-      const result1 = callback(1957).nonGuildVersionsTransaction(database);
+      const result1 = callback(1956).nonGuildVersionsTransaction(database);
       result1.put({ id: "user_settings_version", version: num });
     }, "handleUserSettingsProtoChange");
   }

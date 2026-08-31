@@ -1,21 +1,21 @@
-// Module ID: 16820
-// Function ID: 16821
+// Module ID: 16853
+// Function ID: 16854
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4446, 712, 4697, 4699, 5518, 6221, 4442, 4893, 8628, 8630, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 4699, 4701, 5521, 6224, 4444, 4896, 8650, 8652, 2]
 // Exports: default
 
-// Module 16820 (AgeGateVerify)
+// Module 16853 (AgeGateVerify)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4442 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4697 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4699 */;
-import Button from "Button" /* 4893 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5518 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6221 */;
+import Text from "Text" /* 4444 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4699 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4701 */;
+import Button from "Button" /* 4896 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5521 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6224 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -50,8 +50,8 @@ export default function AgeGateVerify(source) {
     const obj3 = { text: null, onPress: null, grow: true };
     obj3[0] = verifyAgreementButtonText;
     obj3[1] = function onPress() {
-      let obj = callback2(8628);
-      obj = { entryPoint: callback(8630).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
+      let obj = callback2(8650);
+      obj = { entryPoint: callback(8652).AgeVerificationModalEntryPoint.NSFW_AGE_GATE };
       const result = obj.showAgeVerificationGetStartedModal(obj);
     };
     obj2[1] = tmp7(Button.Button, obj3);

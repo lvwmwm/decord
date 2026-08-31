@@ -1,29 +1,29 @@
-// Module ID: 8627
-// Function ID: 8628
+// Module ID: 8649
+// Function ID: 8650
 // Name: StageChannelAgeVerificationNoticeContent
-// Dependencies: [19, 17, 676, 21, 4446, 712, 4699, 1236, 4442, 4153, 1996, 8628, 8630, 4401, 8677, 1297, 5331, 2]
+// Dependencies: [19, 17, 676, 21, 4448, 712, 4701, 1236, 4444, 4154, 1995, 8650, 8652, 4403, 8699, 1297, 5334, 2]
 // Exports: default
 
-// Module 8627 (StageChannelAgeVerificationNoticeContent)
+// Module 8649 (StageChannelAgeVerificationNoticeContent)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4401 */;
-import Text2 from "Text" /* 4442 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4699 */;
-import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5331 */;
-import WarningIcon2 from "WarningIcon" /* 8677 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4403 */;
+import Text2 from "Text" /* 4444 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4701 */;
+import useIsStageSpeakingDisabledForCurrentUser from "useIsStageSpeakingDisabledForCurrentUser" /* 5334 */;
+import WarningIcon2 from "WarningIcon" /* 8699 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
   closure_1 = undefined;
   closure_1 = callback2();
-  let obj = onConfirmPress(4699);
+  let obj = onConfirmPress(4701);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
   const intl = onConfirmPress(1236).intl;
   const format = intl.format;

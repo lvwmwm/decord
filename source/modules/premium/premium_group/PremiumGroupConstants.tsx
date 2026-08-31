@@ -1,16 +1,16 @@
-// Module ID: 4122
-// Function ID: 4123
+// Module ID: 4123
+// Function ID: 4124
 // Name: SubscriptionStatusTypes
-// Dependencies: [676, 687, 1996, 1236, 2986, 2]
+// Dependencies: [676, 687, 1995, 1236, 2987, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
-// Module 4122 (SubscriptionStatusTypes)
+// Module 4123 (SubscriptionStatusTypes)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2986 */;
+import messagesProxyDefault from "messagesProxy" /* 2987 */;
 import ME from "ME" /* 676 */;
-import importDefaultResult from "combined" /* 1996 */;
+import importDefaultResult from "combined" /* 1995 */;
 
 ({ SubscriptionStatusTypes, HelpdeskArticles } = ME);
 const items = [, , , , ];

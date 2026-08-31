@@ -1,20 +1,20 @@
-// Module ID: 15572
-// Function ID: 15573
+// Module ID: 15606
+// Function ID: 15607
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4446, 1494, 1500, 8832, 503, 5036, 14634, 15573, 4442, 1236, 4893, 2]
+// Dependencies: [32, 19, 17, 21, 4448, 1493, 1499, 8855, 503, 5039, 14668, 15607, 4444, 1236, 4896, 2]
 // Exports: default
 
-// Module 15572 (MessagesEmptyState)
+// Module 15606 (MessagesEmptyState)
 import encodeProperties from "encodeProperties" /* 503 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useNavigation from "useNavigation" /* 1500 */;
-import Text from "Text" /* 4442 */;
-import Button from "Button" /* 4893 */;
+import useNavigation from "useNavigation" /* 1499 */;
+import Text from "Text" /* 4444 */;
+import Button from "Button" /* 4896 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 ({ View: c5, Image: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -24,7 +24,7 @@ let result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/t
 
 export default function MessagesEmptyState() {
   const tmp = callback2();
-  let width = navigation(1494)().width;
+  let width = navigation(1493)().width;
   [tmp5, require] = callback(React.useState(0), 2);
   callback = React.useCallback((nativeEvent) => {
     callback(nativeEvent.nativeEvent.layout.width);
@@ -40,14 +40,14 @@ export default function MessagesEmptyState() {
   const tmp4 = callback(React.useState(0), 2);
   obj[0] = encodeProperties.ImpressionTypes.VIEW;
   obj[1] = encodeProperties.ImpressionNames.MESSAGES_EMPTY_NUX;
-  navigation(8832)(obj);
+  navigation(8855)(obj);
   if (tmp5 > 0) {
     width = tmp5;
   }
   const result = 0.9 * width;
-  let tmp7Result = tmp7(5036);
+  let tmp7Result = tmp7(5039);
   const isScreenLandscape = tmp7Result.useIsScreenLandscape();
-  tmp7Result = tmp7(14634);
+  tmp7Result = tmp7(14668);
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp18;
   if (isScreenLandscape) {
@@ -60,12 +60,12 @@ export default function MessagesEmptyState() {
   const obj2 = { style: tmp.container, onLayout: callback, children: null };
   const obj3 = { style: tmp.innerContainer, children: null };
   const obj4 = { style: tmp.imageContainer, children: null };
-  const obj5 = { resizeMode: "contain", source: tmp2(15573), style: null };
+  const obj5 = { resizeMode: "contain", source: tmp2(15607), style: null };
   let num = 350;
   if (result < 622) {
     num = result / 622 * 350;
   }
-  const tmp10 = navigation(8832);
+  const tmp10 = navigation(8855);
   const tmp17 = closure_7;
   const tmp21 = closure_6;
   obj5[2] = { height: num, width: Math.min(result, 622) };

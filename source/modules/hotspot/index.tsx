@@ -1,11 +1,11 @@
-// Module ID: 6025
-// Function ID: 6026
+// Module ID: 6028
+// Function ID: 6029
 // Name: HotspotStore
-// Dependencies: [6026, 2, 6027, 6028]
+// Dependencies: [6029, 2, 6030, 6031]
 
-// Module 6025 (HotspotStore)
-import importDefaultResult from "set" /* 6026 */;
-import HotspotLocations from "HotspotLocations" /* 6027 */;
+// Module 6028 (HotspotStore)
+import importDefaultResult from "set" /* 6029 */;
+import HotspotLocations from "HotspotLocations" /* 6030 */;
 
 const result = require("set").fileFinishedImporting("modules/hotspot/index.tsx");
 for (const key10022 in tmp4) {

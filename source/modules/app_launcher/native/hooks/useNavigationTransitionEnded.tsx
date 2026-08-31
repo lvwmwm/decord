@@ -1,13 +1,13 @@
-// Module ID: 11636
-// Function ID: 11637
+// Module ID: 11667
+// Function ID: 11668
 // Name: useNavigationTransitionEnded
-// Dependencies: [32, 19, 1499, 1501, 2]
+// Dependencies: [32, 19, 1498, 1500, 2]
 // Exports: default
 
-// Module 11636 (useNavigationTransitionEnded)
+// Module 11667 (useNavigationTransitionEnded)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import { useAppLauncherNavigation } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1499 */;
+import { useAppLauncherNavigation } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/hooks/useNavigationTransitionEnded.tsx");
@@ -17,7 +17,7 @@ export default function useNavigationTransitionEnded() {
   const _require = tmp2;
   const tmp3 = useAppLauncherNavigation();
   dependencyMap = tmp3;
-  route = _require(1501).useRoute();
+  route = _require(1500).useRoute();
   const items = [tmp3, route, tmp[1]];
   const effect = React.useEffect(() => closure_1.addListener("transitionEnd", () => {
     state = state.getState();

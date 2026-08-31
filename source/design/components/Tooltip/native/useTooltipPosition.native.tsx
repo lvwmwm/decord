@@ -1,10 +1,10 @@
-// Module ID: 8917
-// Function ID: 8918
+// Module ID: 8940
+// Function ID: 8941
 // Name: useTooltipPosition
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 8917 (useTooltipPosition)
+// Module 8940 (useTooltipPosition)
 import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("design/components/Tooltip/native/useTooltipPosition.native.tsx");

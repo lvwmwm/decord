@@ -1,13 +1,13 @@
-// Module ID: 11137
-// Function ID: 11138
+// Module ID: 11166
+// Function ID: 11167
 // Name: openPinnedMessages
-// Dependencies: [10592, 4301, 2]
+// Dependencies: [10616, 4303, 2]
 // Exports: default
 
-// Module 11137 (openPinnedMessages)
+// Module 11166 (openPinnedMessages)
 import set from "set" /* 2 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4301 */;
-import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10592 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4303 */;
+import ChannelDetailsNavigatorScreens from "ChannelDetailsNavigatorScreens" /* 10616 */;
 
 let closure_2 = ChannelDetailsNavigatorScreens.ChannelDetailsNavigatorScreens;
 const result = set.fileFinishedImporting("modules/messages/native/openPinnedMessages.tsx");

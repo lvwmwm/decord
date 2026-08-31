@@ -1,15 +1,15 @@
-// Module ID: 12730
-// Function ID: 12731
-// Dependencies: [4430, 12, 12214, 2]
+// Module ID: 12765
+// Function ID: 12766
+// Dependencies: [4432, 12, 12248, 2]
 
-// Module 12730
-import _modDef12214 from "module_12214" /* 12214 */;
-import closure_2 from "updateInvite" /* 4430 */;
+// Module 12765
+import _modDef12248 from "module_12248" /* 12248 */;
+import closure_2 from "updateInvite" /* 4432 */;
 import importDefaultResult from "apply" /* 12 */;
 
 let closure_3 = importDefaultResult.throttle((code) => {
   invite = invite.getInvite(code.code);
-  _modDef12214.open({ invite });
+  _modDef12248.open({ invite });
 }, 1000, { trailing: false });
 const obj = {
   onOpenHubInvite(invite) {

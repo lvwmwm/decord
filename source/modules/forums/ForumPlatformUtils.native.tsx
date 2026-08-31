@@ -1,9 +1,9 @@
-// Module ID: 8619
-// Function ID: 8620
+// Module ID: 8641
+// Function ID: 8642
 // Name: getSystemLocale
 // Dependencies: [1236, 2]
 
-// Module 8619 (getSystemLocale)
+// Module 8641 (getSystemLocale)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

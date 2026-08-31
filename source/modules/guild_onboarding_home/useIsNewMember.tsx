@@ -1,15 +1,15 @@
-// Module ID: 6035
-// Function ID: 6036
+// Module ID: 6038
+// Function ID: 6039
 // Name: useIsNewMember
-// Dependencies: [1985, 1993, 4078, 1403, 687, 589, 2]
+// Dependencies: [1984, 1992, 4079, 1399, 687, 589, 2]
 // Exports: default, getIsNewMember
 
-// Module 6035 (useIsNewMember)
+// Module 6038 (useIsNewMember)
 import setDefault from "set" /* 687 */;
-import hasFlag from "hasFlag" /* 1403 */;
-import closure_3 from "initialize" /* 1985 */;
-import closure_4 from "trackCommunicationDisabled" /* 1993 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4078 */;
+import hasFlag from "hasFlag" /* 1399 */;
+import closure_3 from "initialize" /* 1984 */;
+import closure_4 from "trackCommunicationDisabled" /* 1992 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4079 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");

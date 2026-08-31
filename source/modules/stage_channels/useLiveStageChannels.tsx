@@ -1,13 +1,13 @@
-// Module ID: 15705
-// Function ID: 15706
+// Module ID: 15739
+// Function ID: 15740
 // Name: useLiveStageChannels
-// Dependencies: [1391, 4090, 1396, 1399, 589, 1370, 11, 2]
+// Dependencies: [1387, 4091, 1392, 1395, 589, 1471, 11, 2]
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 15705 (useLiveStageChannels)
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+// Module 15739 (useLiveStageChannels)
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useLiveStageChannels.tsx");

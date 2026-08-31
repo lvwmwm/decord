@@ -1,14 +1,14 @@
-// Module ID: 12471
-// Function ID: 12472
+// Module ID: 12505
+// Function ID: 12506
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 7313, 5918, 1903, 589, 10394, 10401, 1363, 1236, 2]
+// Dependencies: [5, 32, 19, 7334, 5921, 1902, 589, 10418, 10425, 1363, 1236, 2]
 // Exports: useWishlistButtonState
 
-// Module 12471 (useWishlistButtonState)
+// Module 12505 (useWishlistButtonState)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "createUserWidgetFromServer" /* 7313 */;
+import closure_6 from "createUserWidgetFromServer" /* 7334 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useWishlistButtonState.tsx");
@@ -66,7 +66,7 @@ export const useWishlistButtonState = function useWishlistButtonState(onRemoveSu
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

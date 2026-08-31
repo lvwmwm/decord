@@ -1,18 +1,18 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16145
+// Function ID: 16146
 // Name: reloadVibegrationsAppFrames
-// Dependencies: [5, 9403, 16106, 676, 9404, 709, 16109, 9400, 530, 6060, 5919, 12700, 2]
+// Dependencies: [5, 9425, 16140, 676, 9426, 709, 16143, 9422, 530, 6063, 5922, 12735, 2]
 // Exports: createProject, deleteProject, refreshPublishedProject, reloadVibegrationsProjectFrames, renameProject, setBuilderPreviewApplicationId, setBuilderPreviewMobile, setChatSidebarWidth, setComposerDraft, setGuildHints, setProjectIcon, setSelectedProjectForGuild, trackPublishFailed, updateProjectSettings
 
-// Module 16111 (reloadVibegrationsAppFrames)
+// Module 16145 (reloadVibegrationsAppFrames)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9400 */;
-import vibegrationLocation from "vibegrationLocation" /* 16109 */;
+import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9422 */;
+import vibegrationLocation from "vibegrationLocation" /* 16143 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9403 */;
-import closure_5 from "isProjectOwner" /* 16106 */;
+import closure_4 from "map" /* 9425 */;
+import closure_5 from "isProjectOwner" /* 16140 */;
 import { Endpoints } from "ME" /* 676 */;
-import { isLaunched } from "FrameLayoutModes" /* 9404 */;
+import { isLaunched } from "FrameLayoutModes" /* 9426 */;
 
 require = arg1;
 function reloadVibegrationsAppFrames(application_id) {
@@ -70,7 +70,7 @@ function _listProjects() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -346,7 +346,7 @@ function _setProjectIcon() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -483,7 +483,7 @@ function _refreshPublishedProject() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -509,7 +509,7 @@ function _refreshPublishedProject() {
               let application_id;
               c4 = 1;
               project = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

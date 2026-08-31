@@ -1,16 +1,16 @@
-// Module ID: 1948
-// Function ID: 1949
+// Module ID: 1947
+// Function ID: 1948
 // Name: getNameplateData
-// Dependencies: [1949, 505, 1952, 1954, 1236, 2]
+// Dependencies: [1948, 505, 1951, 1953, 1236, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1948 (getNameplateData)
+// Module 1947 (getNameplateData)
 import set from "set" /* 2 */;
 import sum from "sum" /* 505 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import fromServer from "fromServer" /* 1949 */;
-import NAMEPLATE_PALETTES from "NAMEPLATE_PALETTES" /* 1952 */;
-import decodeImageDefault from "decodeImage" /* 1954 */;
+import fromServer from "fromServer" /* 1948 */;
+import NAMEPLATE_PALETTES from "NAMEPLATE_PALETTES" /* 1951 */;
+import decodeImageDefault from "decodeImage" /* 1953 */;
 
 const isNameplateRecord = fromServer.isNameplateRecord;
 const ThemeTypes = sum.ThemeTypes;
@@ -23,7 +23,7 @@ export const getNameplateData = function getNameplateData(nameplate) {
     ({ skuId: obj[0], asset: obj[1], label: obj[2] } = nameplate);
     let INVALID_NAMEPLATE_PALETTE = NAMEPLATE_PALETTES.NAMEPLATE_PALETTES[nameplate.palette];
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1952).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1951).INVALID_NAMEPLATE_PALETTE;
     }
     obj[3] = INVALID_NAMEPLATE_PALETTE;
     tmp = obj;
@@ -44,7 +44,7 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
         ({ skuId: obj[0], asset: obj[1], label: obj[2], palette } = first);
         let INVALID_NAMEPLATE_PALETTE = NAMEPLATE_PALETTES.NAMEPLATE_PALETTES[palette];
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1952).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1951).INVALID_NAMEPLATE_PALETTE;
         }
         obj[3] = INVALID_NAMEPLATE_PALETTE;
         tmp = obj;

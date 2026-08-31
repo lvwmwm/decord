@@ -1,14 +1,14 @@
-// Module ID: 7052
-// Function ID: 7053
+// Module ID: 7071
+// Function ID: 7072
 // Name: TrophyIllocon
-// Dependencies: [21, 5458, 7053, 2]
+// Dependencies: [21, 5461, 7072, 2]
 // Exports: TrophyIllocon
 
-// Module 7052 (TrophyIllocon)
+// Module 7071 (TrophyIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 7053 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 7072 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/TrophyIllocon.native.tsx");

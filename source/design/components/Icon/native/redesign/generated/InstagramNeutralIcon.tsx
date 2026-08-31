@@ -1,14 +1,14 @@
-// Module ID: 7958
-// Function ID: 7959
+// Module ID: 7980
+// Function ID: 7981
 // Name: InstagramNeutralIcon
-// Dependencies: [19, 21, 712, 4165, 7959, 2]
+// Dependencies: [19, 21, 712, 4166, 7981, 2]
 // Exports: InstagramNeutralIcon
 
-// Module 7958 (InstagramNeutralIcon)
+// Module 7980 (InstagramNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 7959 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 7981 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

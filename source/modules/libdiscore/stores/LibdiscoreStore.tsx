@@ -1,9 +1,9 @@
-// Module ID: 1911
-// Function ID: 1912
+// Module ID: 1910
+// Function ID: 1911
 // Name: identity
-// Dependencies: [3, 589, 709, 1912, 2]
+// Dependencies: [3, 589, 709, 1911, 2]
 
-// Module 1911 (identity)
+// Module 1910 (identity)
 import timestampDefault from "timestamp" /* 3 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import { Store } from "initialize" /* 589 */;

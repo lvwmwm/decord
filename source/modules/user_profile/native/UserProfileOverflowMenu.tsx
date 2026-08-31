@@ -1,21 +1,21 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 12556
+// Function ID: 12557
 // Name: UserProfileOverflowMenu
-// Dependencies: [32, 19, 17, 4462, 1391, 4099, 1982, 5966, 676, 4467, 8996, 21, 589, 12523, 12529, 8997, 8504, 5918, 5938, 8060, 8842, 8843, 12530, 12531, 9803, 9804, 5945, 8832, 503, 8836, 1236, 4459, 4413, 4689, 12536, 2010, 8998, 9007, 8621, 9008, 8697, 500, 9010, 698, 9809, 4693, 4135, 5946, 4290, 4162, 5952, 9024, 8733, 12535, 7952, 8739, 712, 12537, 2]
+// Dependencies: [32, 19, 17, 4464, 1387, 4100, 1981, 5969, 676, 4469, 9019, 21, 589, 12557, 12563, 9020, 8526, 5921, 5941, 8082, 8865, 8866, 12564, 12565, 9826, 9827, 5948, 8855, 503, 8859, 1236, 4461, 4415, 4691, 12570, 2009, 9021, 9030, 8643, 9031, 8719, 500, 9033, 698, 9832, 4695, 4136, 5949, 4292, 4163, 5955, 9047, 8755, 12569, 7974, 8761, 712, 12571, 2]
 // Exports: default
 
-// Module 12522 (UserProfileOverflowMenu)
+// Module 12556 (UserProfileOverflowMenu)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getParticipants" /* 4462 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "markAllUserIdListsStale" /* 4099 */;
-import closure_9 from "handleConnectionOpen" /* 1982 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5966 */;
+import closure_6 from "getParticipants" /* 4464 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "markAllUserIdListsStale" /* 4100 */;
+import closure_9 from "handleConnectionOpen" /* 1981 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5969 */;
 import ME from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4467 */;
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8996 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4469 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 9019 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

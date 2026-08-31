@@ -1,12 +1,12 @@
-// Module ID: 10941
-// Function ID: 10942
+// Module ID: 10966
+// Function ID: 10967
 // Name: useIsMessageRequest
-// Dependencies: [6031, 6032, 589, 2]
+// Dependencies: [6034, 6035, 589, 2]
 // Exports: useIsEitherTypeOfMessageRequest, useIsMessageRequest
 
-// Module 10941 (useIsMessageRequest)
-import closure_2 from "processChannel" /* 6031 */;
-import closure_3 from "processChannel" /* 6032 */;
+// Module 10966 (useIsMessageRequest)
+import closure_2 from "processChannel" /* 6034 */;
+import closure_3 from "processChannel" /* 6035 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useIsMessageRequest.tsx");

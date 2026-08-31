@@ -1,11 +1,11 @@
-// Module ID: 4238
-// Function ID: 4239
+// Module ID: 4239
+// Function ID: 4240
 // Name: BountiesScrollIndicatorRive
-// Dependencies: [109, 19, 21, 4180, 4239, 4235, 2]
+// Dependencies: [109, 19, 21, 4181, 4240, 4236, 2]
 
-// Module 4238 (BountiesScrollIndicatorRive)
-import BaseRive from "BaseRive" /* 4180 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4235 */;
+// Module 4239 (BountiesScrollIndicatorRive)
+import BaseRive from "BaseRive" /* 4181 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4236 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -27,7 +27,7 @@ let closure_9 = {
       startAnimation1 = onDataBindingChange.startAnimation;
     }
     const triggerBinding = BaseRive.useTriggerBinding("startAnimation", instance, startAnimation, startAnimation1, playIfNeeded);
-    let tmpResult = tmp(4180);
+    let tmpResult = tmp(4181);
     let looping;
     if (dataBinding != null) {
       looping = dataBinding.looping;
@@ -37,7 +37,7 @@ let closure_9 = {
       looping1 = onDataBindingChange.looping;
     }
     const booleanBinding = tmpResult.useBooleanBinding("looping", instance, looping, looping1, playIfNeeded);
-    tmpResult = tmp(4180);
+    tmpResult = tmp(4181);
     let color;
     if (dataBinding != null) {
       color = dataBinding.color;

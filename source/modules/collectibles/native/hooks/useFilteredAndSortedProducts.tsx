@@ -1,12 +1,12 @@
-// Module ID: 14610
-// Function ID: 14611
+// Module ID: 14643
+// Function ID: 14644
 // Name: useFilteredAndSortedProducts
-// Dependencies: [19, 1923, 678, 14611, 14612, 14613, 589, 4108, 7245, 2]
+// Dependencies: [19, 1922, 678, 14644, 14645, 14646, 589, 4109, 7266, 2]
 // Exports: useFilteredAndSortedProducts
 
-// Module 14610 (useFilteredAndSortedProducts)
+// Module 14643 (useFilteredAndSortedProducts)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { CollectiblesMobileShopScreen as closure_5 } from "items" /* 678 */;
 
 const require = arg1;

@@ -1,20 +1,20 @@
-// Module ID: 15551
-// Function ID: 15552
+// Module ID: 15585
+// Function ID: 15586
 // Name: getMessagesItemChannelSizes
-// Dependencies: [32, 19, 1391, 21, 9027, 712, 15552, 589, 15561, 8051, 15562, 2]
+// Dependencies: [32, 19, 1387, 21, 9050, 712, 15586, 589, 15595, 8073, 15596, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 15551 (getMessagesItemChannelSizes)
+// Module 15585 (getMessagesItemChannelSizes)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 9027 */;
-import MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING from "MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING" /* 15552 */;
-import MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDINGDefault from "MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING" /* 15552 */;
-import _modDef15561 from "module_15561" /* 15561 */;
-import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15562 */;
+import map from "map" /* 9050 */;
+import MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING from "MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING" /* 15586 */;
+import MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDINGDefault from "MESSAGES_ITEM_CHANNEL_PRESSABLE_PADDING" /* 15586 */;
+import _modDef15595 from "module_15595" /* 15595 */;
+import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15596 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -40,7 +40,7 @@ let closure_7 = importAllResult.memo(function MessagesItemChannel(arg0) {
     obj = { height: null, row: null };
     obj[0] = placeholderHeight;
     obj[1] = row;
-    tmp5 = jsx(_modDef15561, { height: null, row: null });
+    tmp5 = jsx(_modDef15595, { height: null, row: null });
   }
   return tmp5;
 });
@@ -53,7 +53,7 @@ const memoResult = importAllResult.memo((arg0) => {
   return <closure_7 />;
 });
 const memoResult1 = importAllResult.memo((channelId) => {
-  let obj = _require(8051);
+  let obj = _require(8073);
   const items = [channelId.channelId];
   const tmp = callback(obj.useRecyclingState(false, items), 2);
   _require = tmp2;

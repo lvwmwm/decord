@@ -1,22 +1,22 @@
-// Module ID: 10098
-// Function ID: 10099
+// Module ID: 10121
+// Function ID: 10122
 // Name: NotificationsContainer
-// Dependencies: [19, 17, 4091, 1391, 1982, 676, 1388, 21, 4446, 4303, 10099, 589, 9490, 8522, 4267, 1377, 10898, 10899, 9604, 2]
+// Dependencies: [19, 17, 4092, 1387, 1981, 676, 1384, 21, 4448, 4305, 10122, 589, 9512, 8544, 4268, 1373, 10922, 10923, 9626, 2]
 // Exports: ChannelContainer
 
-// Module 10098 (NotificationsContainer)
+// Module 10121 (NotificationsContainer)
 import initialize from "initialize" /* 589 */;
-import useChatLayoutDefault from "useChatLayout" /* 4303 */;
-import NotificationsDefault from "Notifications" /* 10099 */;
+import useChatLayoutDefault from "useChatLayout" /* 4305 */;
+import NotificationsDefault from "Notifications" /* 10122 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "initialize" /* 4091 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "handleConnectionOpen" /* 1982 */;
+import closure_5 from "initialize" /* 4092 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "handleConnectionOpen" /* 1981 */;
 import { ChannelTypes } from "ME" /* 676 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function NotificationsContainer() {
@@ -54,7 +54,7 @@ export const ChannelContainer = function ChannelContainer(children) {
   ({ channel, isStageChannel } = stateFromStoresObject);
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(9490)(stateFromStoresObject.voiceChannelId);
+    tmp5 = channelId(9512)(stateFromStoresObject.voiceChannelId);
   }
   let tmpResult = tmp(589);
   const items1 = [closure_5];
@@ -70,9 +70,9 @@ export const ChannelContainer = function ChannelContainer(children) {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp8 = channelId(8522)(isPrivateResult);
+  const tmp8 = channelId(8544)(isPrivateResult);
   React = tmp8;
-  const tmp9 = channelId(8522)(channelId);
+  const tmp9 = channelId(8544)(channelId);
   closure_4 = tmp9;
   const items2 = [channelId, tmp9, isPrivateResult, tmp8];
   const effect = React.useEffect(() => {
@@ -97,7 +97,7 @@ export const ChannelContainer = function ChannelContainer(children) {
       const result = obj.UNSAFE_markDismissibleContentAsDismissed(closure_1_0(_undefined[15]).DismissibleContent.ACTIVITY_GDM_CALL_TOOLTIP, obj);
     }
   }, items2);
-  tmpResult = tmp(10898);
+  tmpResult = tmp(10922);
   const channelStyles = tmpResult.useChannelStyles();
   obj = { style: channelStyles.scene, children: null };
   obj = { style: channelStyles.flex, children: null };
@@ -111,14 +111,14 @@ export const ChannelContainer = function ChannelContainer(children) {
     if (stateFromStores) {
       obj1 = { channel: null };
       obj1[0] = channel;
-      tmp15 = callback(tmp4(10899), obj1);
+      tmp15 = callback(tmp4(10923), obj1);
     }
   }
   const items3 = [tmp15, children.children, ];
   if (tmp5) {
     const obj2 = { style: null };
     obj2[0] = channelStyles.callPTTButton;
-    tmp5 = callback(tmp4(9604), obj2);
+    tmp5 = callback(tmp4(9626), obj2);
   }
   items3[2] = tmp5;
   obj[1] = items3;

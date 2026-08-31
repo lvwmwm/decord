@@ -1,17 +1,17 @@
-// Module ID: 5571
-// Function ID: 5572
+// Module ID: 5574
+// Function ID: 5575
 // Name: TableRowArrow
-// Dependencies: [19, 21, 4446, 712, 1367, 4895, 5572, 5573, 2]
+// Dependencies: [19, 21, 4448, 712, 4898, 5575, 2]
 // Exports: TableRowArrow
 
-// Module 5571 (TableRowArrow)
+// Module 5574 (TableRowArrow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import IconSizes from "IconSizes" /* 4895 */;
-import IconSizesDefault from "IconSizes" /* 4895 */;
+import IconSizes from "IconSizes" /* 4898 */;
+import IconSizesDefault from "IconSizes" /* 4898 */;
+import registerAssetDefault from "registerAsset" /* 5575 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -24,12 +24,7 @@ const obj1 = { color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 const result = require("set").fileFinishedImporting("design/components/TableRow/native/TableRowArrow.native.tsx");
 
 export const TableRowArrow = function TableRowArrow() {
-  const tmp4 = callback();
-  const obj = { style: tmp4.icon, color: tmp4.iconColor.color, source: null, size: null };
-  const tmp = importDefault;
-  const tmp3 = useIsMobileVisualRefreshExperimentEnabledDefault("TableRowArrow");
-  const tmp5 = jsx;
-  obj[2] = tmp(tmp3 ? 5572 : 5573);
-  obj[3] = IconSizes.IconSizes.CUSTOM;
-  return tmp5(IconSizesDefault, obj);
+  const tmp = callback();
+  const obj = { style: tmp.icon, color: tmp.iconColor.color, source: registerAssetDefault, size: IconSizes.IconSizes.CUSTOM };
+  return jsx(IconSizesDefault, { style: tmp.icon, color: tmp.iconColor.color, source: registerAssetDefault, size: IconSizes.IconSizes.CUSTOM });
 };

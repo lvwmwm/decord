@@ -1,10 +1,10 @@
-// Module ID: 16932
-// Function ID: 16933
+// Module ID: 16965
+// Function ID: 16966
 // Name: setupLoadFromMessageManagerHandlers
 // Dependencies: [2]
 // Exports: default
 
-// Module 16932 (setupLoadFromMessageManagerHandlers)
+// Module 16965 (setupLoadFromMessageManagerHandlers)
 import set2 from "set" /* 2 */;
 
 const result = set2.fileFinishedImporting("modules/messages/setupLoadFromMessageManagerHandlers.tsx");

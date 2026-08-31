@@ -1,26 +1,26 @@
-// Module ID: 7514
-// Function ID: 7515
+// Module ID: 7535
+// Function ID: 7536
 // Name: onDismiss
-// Dependencies: [19, 17, 21, 4446, 712, 4413, 7515, 1236, 5587, 7475, 7516, 7454, 1297, 4442, 4893, 4267, 1377, 7514, 2010, 709, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 4415, 7536, 1236, 5590, 7496, 7537, 7475, 1297, 4444, 4896, 4268, 1373, 7535, 2009, 709, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
-// Module 7514 (onDismiss)
+// Module 7535 (onDismiss)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import DismissibleContent from "DismissibleContent" /* 1377 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
-import Text from "Text" /* 4442 */;
-import Button2 from "Button" /* 4893 */;
-import Background from "Background" /* 5587 */;
-import ReactionTypes from "ReactionTypes" /* 7454 */;
-import _generateAnimationSource from "_generateAnimationSource" /* 7475 */;
-import getDeviceSpecificString from "getDeviceSpecificString" /* 7515 */;
-import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 7516 */;
+import DismissibleContent from "DismissibleContent" /* 1373 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
+import Text from "Text" /* 4444 */;
+import Button2 from "Button" /* 4896 */;
+import Background from "Background" /* 5590 */;
+import ReactionTypes from "ReactionTypes" /* 7475 */;
+import _generateAnimationSource from "_generateAnimationSource" /* 7496 */;
+import getDeviceSpecificString from "getDeviceSpecificString" /* 7536 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 7537 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function onDismiss() {
@@ -90,13 +90,13 @@ export const openBurstReactionFirstSendActionSheet = function openBurstReactionF
     obj[3] = emoji;
     tmpResult.dispatch(obj);
   } else {
-    const result = tmp4(4267).UNSAFE_markDismissibleContentAsDismissed(tmp4(1377).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
-    tmpResult = tmp(4413);
+    const result = tmp4(4268).UNSAFE_markDismissibleContentAsDismissed(tmp4(1373).DismissibleContent.SUPER_REACTIONS_FIRST_SENT);
+    tmpResult = tmp(4415);
     obj = { channelId: null, messageId: null, emoji: null };
     obj[0] = channelId;
     obj[1] = messageId;
     obj[2] = emoji;
-    tmpResult.openLazy(tmp4(2010)(7514, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
-    const tmp4Result = tmp4(4267);
+    tmpResult.openLazy(tmp4(2009)(7535, dependencyMap.paths), "BurstReactionFirstSendActionSheet", obj);
+    const tmp4Result = tmp4(4268);
   }
 };

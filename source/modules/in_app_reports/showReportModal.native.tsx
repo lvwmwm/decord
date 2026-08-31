@@ -1,11 +1,11 @@
-// Module ID: 8699
-// Function ID: 8700
+// Module ID: 8721
+// Function ID: 8722
 // Name: _showReportModal
-// Dependencies: [5, 8700, 8701, 4689, 8702, 2010, 2]
+// Dependencies: [5, 8722, 8723, 4691, 8724, 2009, 2]
 // Exports: hideReportModal, showReportModal
 
-// Module 8699 (_showReportModal)
-import _modDef4689 from "module_4689" /* 4689 */;
+// Module 8721 (_showReportModal)
+import _modDef4691 from "module_4691" /* 4691 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -30,7 +30,7 @@ function _showReportModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -56,7 +56,7 @@ function _showReportModal() {
               closure_4 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -158,5 +158,5 @@ export const showReportModal = function showReportModal(arg0, arg1, arg2) {
   return applyArgumentsResult;
 };
 export const hideReportModal = function hideReportModal() {
-  _modDef4689.popWithKey(IN_APP_REPORT_MODAL_KEY);
+  _modDef4691.popWithKey(IN_APP_REPORT_MODAL_KEY);
 };

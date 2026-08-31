@@ -1,15 +1,15 @@
-// Module ID: 16142
-// Function ID: 16143
-// Dependencies: [19, 17, 21, 4446, 16143, 16145, 16150, 2]
+// Module ID: 16176
+// Function ID: 16177
+// Dependencies: [19, 17, 21, 4448, 16177, 16179, 16184, 2]
 
-// Module 16142
-import _modDef16143 from "module_16143" /* 16143 */;
-import SearchFilterPrefixRowDefault from "SearchFilterPrefixRow" /* 16145 */;
-import _modDef16150 from "module_16150" /* 16150 */;
+// Module 16176
+import _modDef16177 from "module_16177" /* 16177 */;
+import SearchFilterPrefixRowDefault from "SearchFilterPrefixRow" /* 16179 */;
+import _modDef16184 from "module_16184" /* 16184 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 ({ jsx: c3, jsxs: c4 } = jsxProd);
 let closure_5 = createCacheKey.createStyles({ header: { flexDirection: "row", alignItems: "center", paddingLeft: 16, zIndex: 10 }, headerWithBackButton: { paddingLeft: 0 }, headerSearch: { flex: 1, flexGrow: 1 }, headerControlsRight: { paddingRight: 16, paddingLeft: 12 }, suggestionsAnchor: { height: 0 }, suggestions: { position: "absolute", left: 0, right: -50, top: 8 }, suggestionsWithBackButton: { left: -28 } });
@@ -23,7 +23,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
   const items1 = [backButton, , ];
   obj = { style: tmp.headerSearch, children: null };
   obj = { ref, searchContext, setSuggestionsDismissed };
-  const items2 = [callback(_modDef16143, obj), ];
+  const items2 = [callback(_modDef16177, obj), ];
   obj1 = { style: tmp.suggestionsAnchor, children: null };
   const obj2 = { searchContext, onLayoutMeasure: onSuggestionsLayoutMesure, dismissed: suggestionsDismissed, containerStyle: null };
   const items3 = [tmp.suggestions, ];
@@ -40,7 +40,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((arg0, ref) =
   const tmp4 = null != backButton && tmp.headerWithBackButton;
   const tmp6 = importDefault;
   const tmp8 = SearchFilterPrefixRowDefault;
-  items1[2] = callback(View, { style: tmp.headerControlsRight, children: callback(_modDef16150, { searchContext }) });
+  items1[2] = callback(View, { style: tmp.headerControlsRight, children: callback(_modDef16184, { searchContext }) });
   obj[1] = items1;
   return closure_4(View, obj);
 }));

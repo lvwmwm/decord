@@ -1,14 +1,14 @@
-// Module ID: 9943
-// Function ID: 9944
+// Module ID: 9966
+// Function ID: 9967
 // Name: shouldShowEndStageModal
-// Dependencies: [1218, 5327, 5330, 1396, 5333, 2]
+// Dependencies: [1218, 5330, 5333, 1392, 5336, 2]
 // Exports: default
 
-// Module 9943 (shouldShowEndStageModal)
+// Module 9966 (shouldShowEndStageModal)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "getActiveStageChannelIds" /* 5327 */;
-import closure_4 from "buildStageChannelUserRoles" /* 5330 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
+import closure_3 from "getActiveStageChannelIds" /* 5330 */;
+import closure_4 from "buildStageChannelUserRoles" /* 5333 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/shouldShowEndStageModal.tsx");

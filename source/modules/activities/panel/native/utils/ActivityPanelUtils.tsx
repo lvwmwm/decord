@@ -1,13 +1,13 @@
-// Module ID: 16519
-// Function ID: 16520
+// Module ID: 16553
+// Function ID: 16554
 // Name: useIsActivityPanelFullscreen
-// Dependencies: [1390, 9405, 589, 4080, 9427, 2]
+// Dependencies: [1386, 9427, 589, 4081, 9449, 2]
 // Exports: useIsActivityPanelFullscreen
 
-// Module 16519 (useIsActivityPanelFullscreen)
+// Module 16553 (useIsActivityPanelFullscreen)
 import initialize from "initialize" /* 589 */;
-import closure_3 from "participantFromServer" /* 1390 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9405 */;
+import closure_3 from "participantFromServer" /* 1386 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9427 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/panel/native/utils/ActivityPanelUtils.tsx");

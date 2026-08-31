@@ -1,16 +1,16 @@
-// Module ID: 9698
-// Function ID: 9699
+// Module ID: 9720
+// Function ID: 9721
 // Name: openGuildEventDetails
-// Dependencies: [5, 1397, 9608, 4413, 9699, 2010, 9573, 9712, 2]
+// Dependencies: [5, 1393, 9630, 4415, 9721, 2009, 9595, 9734, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 9698 (openGuildEventDetails)
-import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
-import getRRule from "getRRule" /* 9573 */;
+// Module 9720 (openGuildEventDetails)
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
+import getRRule from "getRRule" /* 9595 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
-import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9608 */;
+import { EXPLICIT_END_EVENT_SHEET_KEY as closure_4 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
+import { GUILD_EVENT_INFO_ACTION_SHEET_KEY as closure_5 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9630 */;
 
 require = arg1;
 function openGuildEventDetails(arg0) {
@@ -23,7 +23,7 @@ function openGuildEventDetails(arg0) {
     const tmp2Result = getRRule;
   }
   obj[3] = recurrenceId;
-  obj.openLazy(asyncRequireImpl(9699, dependencyMap.paths), closure_5, obj, "stack");
+  obj.openLazy(asyncRequireImpl(9721, dependencyMap.paths), closure_5, obj, "stack");
 }
 function _transitionToEventDetailsFromInvite() {
   const self = this;
@@ -44,7 +44,7 @@ function _transitionToEventDetailsFromInvite() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -86,7 +86,7 @@ function _transitionToEventDetailsFromInvite() {
             obj[2] = recurrenceId;
             closure_6(obj);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           c5 = tmp;
@@ -120,5 +120,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel };
-  obj.openLazy(asyncRequireImpl(9712, dependencyMap.paths), closure_4, obj);
+  obj.openLazy(asyncRequireImpl(9734, dependencyMap.paths), closure_4, obj);
 };

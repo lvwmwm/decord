@@ -1,16 +1,16 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 12725
+// Function ID: 12726
 // Name: items
-// Dependencies: [4915, 12, 4916, 12691, 4437, 7842, 2]
+// Dependencies: [4918, 12, 4919, 12726, 4439, 7864, 2]
 // Exports: parseApplicationWidgetText, parseApplicationWidgetTextToAST
 
-// Module 12690 (items)
-import MarkupTextDefault from "MarkupText" /* 4437 */;
-import parseLinkDefault from "parseLink" /* 4916 */;
-import parseDefault from "parse" /* 12691 */;
-import importDefaultResult from "combineMarkupRules" /* 4915 */;
+// Module 12725 (items)
+import MarkupTextDefault from "MarkupText" /* 4439 */;
+import parseLinkDefault from "parseLink" /* 4919 */;
+import parseDefault from "parse" /* 12726 */;
+import importDefaultResult from "combineMarkupRules" /* 4918 */;
 import importDefaultResult1 from "apply" /* 12 */;
-import importAllResult from "reactParserFor" /* 7842 */;
+import importAllResult from "reactParserFor" /* 7864 */;
 
 const items = ["text", "link", "emoji"];
 const items1 = [importDefaultResult1.pick(parseLinkDefault.RULES, items), , ];

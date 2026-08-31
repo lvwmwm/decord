@@ -1,9 +1,9 @@
-// Module ID: 1927
-// Function ID: 1928
+// Module ID: 1926
+// Function ID: 1927
 // Name: BadgeRarity
 // Dependencies: [2]
 
-// Module 1927 (BadgeRarity)
+// Module 1926 (BadgeRarity)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/BadgeRarity.tsx");

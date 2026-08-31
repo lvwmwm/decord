@@ -1,13 +1,13 @@
-// Module ID: 8472
-// Function ID: 8473
+// Module ID: 8494
+// Function ID: 8495
 // Name: ProfileEffectUserPreview
-// Dependencies: [19, 21, 8473, 1236, 2]
+// Dependencies: [19, 21, 8495, 1236, 2]
 // Exports: default
 
-// Module 8472 (ProfileEffectUserPreview)
+// Module 8494 (ProfileEffectUserPreview)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import filterLayerDefault from "filterLayer" /* 8473 */;
+import filterLayerDefault from "filterLayer" /* 8495 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

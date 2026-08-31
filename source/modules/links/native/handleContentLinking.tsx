@@ -1,10 +1,10 @@
-// Module ID: 11118
-// Function ID: 11119
+// Module ID: 11147
+// Function ID: 11148
 // Name: _handleContentLinking
-// Dependencies: [5, 5534, 676, 4689, 6056, 1222, 10919, 2]
+// Dependencies: [5, 5537, 676, 4691, 6059, 1222, 10943, 2]
 // Exports: default
 
-// Module 11118 (_handleContentLinking)
+// Module 11147 (_handleContentLinking)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Routes } from "ME" /* 676 */;
 
@@ -27,7 +27,7 @@ function _handleContentLinking() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -58,7 +58,7 @@ function _handleContentLinking() {
               let skipMessageFetch;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp5) {
@@ -139,7 +139,7 @@ function _handleContentLinking() {
                 obj4.setSelectedSummary(callback2, c4);
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             if (safe) {
               obj4 = { navigationReplace: null, openChannel: true, skipMessageFetch: null };

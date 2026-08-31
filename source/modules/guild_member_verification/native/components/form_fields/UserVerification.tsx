@@ -1,16 +1,16 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7653
+// Function ID: 7654
 // Name: UserVerification
-// Dependencies: [19, 21, 4446, 4271, 7633, 4442, 1236, 2]
+// Dependencies: [19, 21, 4448, 4272, 7654, 4444, 1236, 2]
 // Exports: default
 
-// Module 7632 (UserVerification)
+// Module 7653 (UserVerification)
 import noopAll from "noop" /* 19 */;
-import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4271 */;
-import Text from "Text" /* 4442 */;
-import BaseIdentityVerificationFieldDefault from "BaseIdentityVerificationField" /* 7633 */;
+import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4272 */;
+import Text from "Text" /* 4444 */;
+import BaseIdentityVerificationFieldDefault from "BaseIdentityVerificationField" /* 7654 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -27,8 +27,8 @@ export default function UserVerification(arg0) {
     let tmp5 = platform === MAX_RESULTS_PER_PAGE.UserVerificationFieldPlatforms.PHONE;
     if (tmp5) {
       let obj = { passesVerification: null, platform: null };
-      obj[0] = verification[tmp12(undefined, 4271).UserVerificationFieldPlatforms.PHONE];
-      obj[1] = tmp12(4271).UserVerificationFieldPlatforms.PHONE;
+      obj[0] = verification[tmp12(undefined, 4272).UserVerificationFieldPlatforms.PHONE];
+      obj[1] = tmp12(4272).UserVerificationFieldPlatforms.PHONE;
       tmp5 = callback(BaseIdentityVerificationFieldDefault, obj);
       const tmp4 = BaseIdentityVerificationFieldDefault;
     }

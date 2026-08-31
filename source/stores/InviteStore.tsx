@@ -1,14 +1,14 @@
-// Module ID: 4430
-// Function ID: 4431
+// Module ID: 4432
+// Function ID: 4433
 // Name: updateInvite
-// Dependencies: [676, 4431, 589, 709, 2]
+// Dependencies: [676, 4433, 589, 709, 2]
 
-// Module 4430 (updateInvite)
+// Module 4432 (updateInvite)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import readSnowflake from "readSnowflake" /* 4431 */;
+import readSnowflake from "readSnowflake" /* 4433 */;
 
 function updateInvite(code, arg1) {
   let str = code;

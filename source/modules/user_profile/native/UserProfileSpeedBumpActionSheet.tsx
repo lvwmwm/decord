@@ -1,21 +1,21 @@
-// Module ID: 8837
-// Function ID: 8838
+// Module ID: 8860
+// Function ID: 8861
 // Name: InformationTable
-// Dependencies: [32, 19, 17, 1391, 1993, 1923, 8502, 676, 21, 4446, 712, 8838, 1236, 5957, 5564, 1297, 1363, 4381, 589, 8060, 5918, 5938, 8504, 8839, 698, 8062, 8836, 5587, 5589, 7786, 7689, 4442, 4639, 4893, 5033, 4135, 2]
+// Dependencies: [32, 19, 17, 1387, 1992, 1922, 8524, 676, 21, 4448, 712, 8861, 1236, 5960, 5567, 1297, 1363, 4383, 589, 8082, 5921, 5941, 8526, 8862, 698, 8084, 8859, 5590, 5592, 7807, 7710, 4444, 4641, 4896, 5036, 4136, 2]
 
-// Module 8837 (InformationTable)
+// Module 8860 (InformationTable)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 8838 */;
+import registerAssetDefault from "registerAsset" /* 8861 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "trackCommunicationDisabled" /* 1993 */;
-import closure_8 from "mergeGuildAvatar" /* 1923 */;
-import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8502 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "trackCommunicationDisabled" /* 1992 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8524 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function InformationTable(speedBumpType) {
@@ -44,7 +44,7 @@ function InformationTable(speedBumpType) {
       return closure_1_12(items(closure_1_2[14]).TableRow, obj, arg1);
     })
   };
-  return callback2(items(5957).TableRowGroup, obj);
+  return callback2(items(5960).TableRowGroup, obj);
 }
 let c4 = importAllResult;
 ({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId } = ME);

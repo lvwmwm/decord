@@ -1,23 +1,23 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9496
+// Function ID: 9497
 // Name: initialize
-// Dependencies: [1982, 9460, 8549, 659, 589, 709, 2]
+// Dependencies: [1981, 9482, 8571, 659, 589, 709, 2]
 
-// Module 9474 (initialize)
+// Module 9496 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "handleConnectionOpen" /* 1982 */;
-import { VoiceCallOverlayType } from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9460 */;
+import closure_3 from "handleConnectionOpen" /* 1981 */;
+import { VoiceCallOverlayType } from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9482 */;
 
 let c4 = false;
 let c5 = false;
 let c6 = false;
 let c7 = false;
 let obj = {};
-obj = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "", isInitialized: false, isVisible: "AndroidDrawerLayout" };
+obj = { x: "Array", y: "PX_16", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = obj;
-obj = { x: "Array", y: "flex", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "", isInitialized: false, isVisible: "AndroidDrawerLayout" };
+obj = { x: "Array", y: "PX_16", width: "y", height: "HermesInternal", screenOrientation: require("handleOrientationChange").OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = obj;
 let c10 = true;
 const Store = initializeDefault.Store;

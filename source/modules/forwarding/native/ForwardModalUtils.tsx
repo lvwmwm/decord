@@ -1,15 +1,15 @@
-// Module ID: 11197
-// Function ID: 11198
+// Module ID: 11226
+// Function ID: 11227
 // Name: FORWARD_MODAL_KEY
-// Dependencies: [19, 21, 11198, 10652, 11199, 2010, 4689, 11219, 4824, 2]
+// Dependencies: [19, 21, 11227, 10676, 11228, 2009, 4691, 11248, 4827, 2]
 // Exports: closeForwardModal, openForwardModal, showForwardFailedAlertModal
 
-// Module 11197 (FORWARD_MODAL_KEY)
-import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
-import _modDef4689 from "module_4689" /* 4689 */;
-import useAlertStore from "useAlertStore" /* 4824 */;
-import showSearchableDestinationListModalDefault from "showSearchableDestinationListModal" /* 10652 */;
-import trackForwardStart from "trackForwardStart" /* 11198 */;
+// Module 11226 (FORWARD_MODAL_KEY)
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import _modDef4691 from "module_4691" /* 4691 */;
+import useAlertStore from "useAlertStore" /* 4827 */;
+import showSearchableDestinationListModalDefault from "showSearchableDestinationListModal" /* 10676 */;
+import trackForwardStart from "trackForwardStart" /* 11227 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -26,10 +26,10 @@ export const openForwardModal = function openForwardModal(arg0) {
   ({ forwardOptions, customSendHandler } = arg0);
   trackForwardStart.trackForwardStart(message.channel_id, message.id, source);
   const obj = trackForwardStart;
-  showSearchableDestinationListModalDefault(asyncRequireImpl(11199, dependencyMap.paths), { message, initialSelectedDestinations, forwardOptions, source, customSendHandler }, c5);
+  showSearchableDestinationListModalDefault(asyncRequireImpl(11228, dependencyMap.paths), { message, initialSelectedDestinations, forwardOptions, source, customSendHandler }, c5);
 };
 export const closeForwardModal = function closeForwardModal() {
-  _modDef4689.popWithKey(c5);
+  _modDef4691.popWithKey(c5);
 };
 export const showForwardFailedAlertModal = function showForwardFailedAlertModal(arg0) {
   ({ message, failedDestinations, forwardOptions } = arg0);

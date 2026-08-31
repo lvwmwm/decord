@@ -1,13 +1,13 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 9438
+// Function ID: 9439
 // Name: _installApplicationOnDemandIfNeeded
-// Dependencies: [5, 4472, 4487, 676, 8391, 5919, 8379, 4666, 4308, 9216, 2]
+// Dependencies: [5, 4474, 4489, 676, 8413, 5922, 8401, 4668, 4310, 9238, 2]
 // Exports: installApplicationOnDemandIfNeeded
 
-// Module 9416 (_installApplicationOnDemandIfNeeded)
+// Module 9438 (_installApplicationOnDemandIfNeeded)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "createExecutable" /* 4472 */;
-import closure_4 from "addApplication" /* 4487 */;
+import closure_3 from "createExecutable" /* 4474 */;
+import closure_4 from "addApplication" /* 4489 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
@@ -29,7 +29,7 @@ function _installApplicationOnDemandIfNeeded() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ function _installApplicationOnDemandIfNeeded() {
               let scopes;
               c3 = 1;
               application = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp5) {
@@ -77,7 +77,7 @@ function _installApplicationOnDemandIfNeeded() {
                 if (obj11.shouldInstallApplicationOnDemand(obj2)) {
                   application = application.getApplication(callback);
                   if (null == application) {
-                    let obj5 = callback(5919);
+                    let obj5 = callback(5922);
                     c3 = 2;
                     application = 1;
                     const obj3 = { value: null, done: false };
@@ -90,7 +90,7 @@ function _installApplicationOnDemandIfNeeded() {
                   obj4[0] = Promise.resolve({ isAuthorized: true });
                   return obj4;
                 }
-                obj11 = callback(8391);
+                obj11 = callback(8413);
               }
             } else if (arg0 === 1) {
               application = 3;
@@ -104,7 +104,7 @@ function _installApplicationOnDemandIfNeeded() {
               obj = arg1;
               application = c3.createFromServer(obj);
             }
-            USER_INSTALL = callback(8379).ApplicationIntegrationType.USER_INSTALL;
+            USER_INSTALL = callback(8401).ApplicationIntegrationType.USER_INSTALL;
             scopes = undefined;
             if (application != null) {
               const integrationTypesConfig = application.integrationTypesConfig;
@@ -118,7 +118,7 @@ function _installApplicationOnDemandIfNeeded() {
               }
             }
             if (null != c3) {
-              obj2 = callback(4666);
+              obj2 = callback(4668);
               obj5 = { application_id: null, location: null, section_name: null, source: null };
               obj5[0] = callback;
               obj5[1] = c3.location;

@@ -1,15 +1,15 @@
-// Module ID: 10969
-// Function ID: 10970
+// Module ID: 10994
+// Function ID: 10995
 // Name: getSafetyAlertsSettingOrDefault
-// Dependencies: [1340, 1923, 10591, 10945, 2]
+// Dependencies: [1340, 1922, 10615, 10970, 2]
 // Exports: getInappropriateConversationTakeoverForChannel, getSafetyAlertsSettingOrDefault, shouldShowInappropriateConversationTakeoverForChannelRecord, shouldShowTakeoverForWarnings
 
-// Module 10969 (getSafetyAlertsSettingOrDefault)
-import trackViewedEvent from "trackViewedEvent" /* 10945 */;
+// Module 10994 (getSafetyAlertsSettingOrDefault)
+import trackViewedEvent from "trackViewedEvent" /* 10970 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
-import closure_4 from "handleConnectionOpen" /* 10591 */;
-import { SafetyWarningTypes } from "handleConnectionOpen" /* 10591 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "handleConnectionOpen" /* 10615 */;
+import { SafetyWarningTypes } from "handleConnectionOpen" /* 10615 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationUtils.tsx");

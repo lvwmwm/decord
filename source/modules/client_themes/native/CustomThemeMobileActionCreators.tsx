@@ -1,10 +1,10 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11488
+// Function ID: 11489
 // Name: updateCustomTheme
 // Dependencies: [709, 2]
 // Exports: clearPreviewTheme, previewCustomTheme, resetCustomTheme, updateCustomTheme
 
-// Module 11458 (updateCustomTheme)
+// Module 11488 (updateCustomTheme)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

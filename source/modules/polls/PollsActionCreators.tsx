@@ -1,21 +1,21 @@
-// Module ID: 11231
-// Function ID: 11232
+// Module ID: 11260
+// Function ID: 11261
 // Name: getPollVoteEventProperties
-// Dependencies: [5, 4091, 7287, 1218, 1391, 4820, 5322, 4701, 4819, 8074, 676, 38, 4822, 1236, 5422, 11232, 8073, 4666, 12, 589, 709, 7454, 11237, 1363, 8078, 7148, 8111, 4344, 2]
+// Dependencies: [5, 4092, 7308, 1218, 1387, 4822, 5325, 4703, 4821, 8096, 676, 38, 4825, 1236, 5425, 11261, 8095, 4668, 12, 589, 709, 7475, 11266, 1363, 8100, 7169, 8133, 4346, 2]
 
-// Module 11231 (getPollVoteEventProperties)
-import setDefault from "set" /* 4822 */;
-import showVotesForAnswerAll from "showVotesForAnswer" /* 11232 */;
+// Module 11260 (getPollVoteEventProperties)
+import setDefault from "set" /* 4825 */;
+import showVotesForAnswerAll from "showVotesForAnswer" /* 11261 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "initialize" /* 4091 */;
-import closure_6 from "processMessage" /* 7287 */;
+import closure_5 from "initialize" /* 4092 */;
+import closure_6 from "processMessage" /* 7308 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
-import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import { DraftType } from "handleChanged" /* 4820 */;
-import closure_10 from "recomputeGuild" /* 5322 */;
-import closure_11 from "reinjectEphemerals" /* 4701 */;
-import closure_12 from "map" /* 4819 */;
-import useMessagePollInteractions from "useMessagePollInteractions" /* 8074 */;
+import closure_8 from "ensureGuildLoaded" /* 1387 */;
+import { DraftType } from "handleChanged" /* 4822 */;
+import closure_10 from "recomputeGuild" /* 5325 */;
+import closure_11 from "reinjectEphemerals" /* 4703 */;
+import closure_12 from "map" /* 4821 */;
+import useMessagePollInteractions from "useMessagePollInteractions" /* 8096 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -174,7 +174,7 @@ function _optimisticallySetAnswers() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -203,7 +203,7 @@ function _optimisticallySetAnswers() {
               closure_8 = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp5) {
@@ -249,7 +249,7 @@ function _optimisticallySetAnswers() {
                     let tmp6 = closure_6;
                     obj[4] = closure_6;
                     let tmp7 = _undefined;
-                    obj[6] = _undefined(7454).ReactionTypes.VOTE;
+                    obj[6] = _undefined(7475).ReactionTypes.VOTE;
                     dispatchResult = obj.dispatch(obj);
                     continue;
                   }
@@ -274,7 +274,7 @@ function _optimisticallySetAnswers() {
               return obj;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c5 = tmp;
@@ -328,7 +328,7 @@ function _handlePollSubmitVote() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -355,7 +355,7 @@ function _handlePollSubmitVote() {
                 items = undefined;
                 channel = 1;
                 c9 = 1;
-                return { value: "ct", done: true };
+                return { value: "Object", done: true };
               }
             } else {
               if (1 === tmp7) {
@@ -587,7 +587,7 @@ function _handleClearPollVote() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -610,7 +610,7 @@ function _handleClearPollVote() {
               channel2 = undefined;
               dependencyMap = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {
@@ -656,7 +656,7 @@ function _handleClearPollVote() {
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -708,7 +708,7 @@ function _handlePollActionTapped() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -731,7 +731,7 @@ function _handlePollActionTapped() {
               ({ channelId: c0, messageId: c1, type: c2 } = c0);
               table = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp5) {
@@ -881,7 +881,7 @@ function _createPoll() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -912,7 +912,7 @@ function _createPoll() {
               let obj2;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -984,17 +984,17 @@ function _createPoll() {
               c5 = 3;
               c6 = 1;
               const obj5 = { value: null, done: false };
-              obj5[0] = lib2(7148).sendPollMessage(lib.id, obj2, obj4);
+              obj5[0] = lib2(7169).sendPollMessage(lib.id, obj2, obj4);
               return obj5;
             }
           } else {
             if (2 === tmp7) {
               c4 = 0;
               closure_11 = dependencyMap;
-              if (closure_11 instanceof lib(4344).APIError) {
+              if (closure_11 instanceof lib(4346).APIError) {
                 let aPIError = closure_11;
               } else {
-                aPIError = new lib(4344).APIError(closure_11);
+                aPIError = new lib(4346).APIError(closure_11);
               }
               if ("poll" === aPIError.getAnyErrorMessage()) {
                 if (null != closure_11.text) {
@@ -1066,7 +1066,7 @@ function _endPollEarly() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1088,7 +1088,7 @@ function _endPollEarly() {
               ({ channelId: c0, messageId: c1 } = callback);
               dependencyMap = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -1108,7 +1108,7 @@ function _endPollEarly() {
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback2(4822).confirm(obj2);
+              obj3[0] = callback2(4825).confirm(obj2);
               return obj3;
             }
           } else {
@@ -1122,7 +1122,7 @@ function _endPollEarly() {
                 obj4[0] = arg1;
                 return obj4;
               } else if (arg1) {
-                obj1 = callback3(11237);
+                obj1 = callback3(11266);
                 const obj5 = { channelId: null, messageId: null };
                 obj5[0] = callback;
                 obj5[1] = callback2;
@@ -1142,7 +1142,7 @@ function _endPollEarly() {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           c4 = tmp;

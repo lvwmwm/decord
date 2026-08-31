@@ -1,11 +1,11 @@
-// Module ID: 17376
-// Function ID: 17377
+// Module ID: 17409
+// Function ID: 17410
 // Name: handleConnectionOpenSupplemental
-// Dependencies: [17377, 5451, 2]
+// Dependencies: [17410, 5454, 2]
 
-// Module 17376 (handleConnectionOpenSupplemental)
-import initializeDefault from "initialize" /* 5451 */;
-import _openSafetyFlow from "_openSafetyFlow" /* 17377 */;
+// Module 17409 (handleConnectionOpenSupplemental)
+import initializeDefault from "initialize" /* 5454 */;
+import _openSafetyFlow from "_openSafetyFlow" /* 17410 */;
 
 require = arg1;
 function handleConnectionOpenSupplemental() {

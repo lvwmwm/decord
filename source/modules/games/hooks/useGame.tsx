@@ -1,13 +1,13 @@
-// Module ID: 6119
-// Function ID: 6120
+// Module ID: 6122
+// Function ID: 6123
 // Name: importDefaultResult1
-// Dependencies: [5, 19, 4470, 676, 589, 687, 6120, 2]
+// Dependencies: [5, 19, 4472, 676, 589, 687, 6123, 2]
 // Exports: useGames
 
-// Module 6119 (importDefaultResult1)
+// Module 6122 (importDefaultResult1)
 import setDefault from "set" /* 687 */;
 import closure_3 from "noop" /* 19 */;
-import importDefaultResult1 from "handleLoadMessages" /* 4470 */;
+import importDefaultResult1 from "handleLoadMessages" /* 4472 */;
 import initialize from "initialize" /* 589 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 
@@ -50,7 +50,7 @@ let closure_2 = importDefaultResult((arg0) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -83,7 +83,7 @@ let closure_2 = importDefaultResult((arg0) => {
           return obj;
         }
         table = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       } catch (tmp9) {
         table = tmp;
         throw tmp9;

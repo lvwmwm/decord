@@ -1,10 +1,10 @@
-// Module ID: 15742
-// Function ID: 15743
+// Module ID: 15776
+// Function ID: 15777
 // Name: updateGuildPremiumSubscriptionCount
 // Dependencies: [709, 2]
 // Exports: resetGuildPremiumSubscriptionCount, updateGuildPremiumSubscriptionCount
 
-// Module 15742 (updateGuildPremiumSubscriptionCount)
+// Module 15776 (updateGuildPremiumSubscriptionCount)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

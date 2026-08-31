@@ -1,14 +1,14 @@
-// Module ID: 17200
-// Function ID: 17201
+// Module ID: 17233
+// Function ID: 17234
 // Name: _createCreatorMonetizationEnableRequest
-// Dependencies: [5, 676, 4475, 530, 709, 5919, 2]
+// Dependencies: [5, 676, 4477, 530, 709, 5922, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 17200 (_createCreatorMonetizationEnableRequest)
+// Module 17233 (_createCreatorMonetizationEnableRequest)
 import sendRequest from "sendRequest" /* 530 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4475 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4477 */;
 
 require = arg1;
 function _createCreatorMonetizationEnableRequest() {
@@ -29,7 +29,7 @@ function _createCreatorMonetizationEnableRequest() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -64,7 +64,7 @@ function _createCreatorMonetizationEnableRequest() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -126,7 +126,7 @@ function _acceptCreatorMonetizationTerms() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -161,7 +161,7 @@ function _acceptCreatorMonetizationTerms() {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           dependencyMap = tmp;
@@ -197,7 +197,7 @@ function _acceptCreatorMonetizationTermsV() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -232,7 +232,7 @@ function _acceptCreatorMonetizationTermsV() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c1 = tmp;
@@ -330,7 +330,7 @@ function _requestRemoveMonetization() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -366,7 +366,7 @@ function _requestRemoveMonetization() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c1 = tmp;

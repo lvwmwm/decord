@@ -1,12 +1,12 @@
-// Module ID: 8583
-// Function ID: 8584
+// Module ID: 8605
+// Function ID: 8606
 // Name: showSharePreparingModal
-// Dependencies: [8581, 4689, 8584, 2010, 2]
+// Dependencies: [8603, 4691, 8606, 2009, 2]
 // Exports: showSharePreparingModal
 
-// Module 8583 (showSharePreparingModal)
+// Module 8605 (showSharePreparingModal)
 import set from "set" /* 2 */;
-import SHARE_PREPARING_MODAL_KEY2 from "SHARE_PREPARING_MODAL_KEY" /* 8581 */;
+import SHARE_PREPARING_MODAL_KEY2 from "SHARE_PREPARING_MODAL_KEY" /* 8603 */;
 
 const SHARE_PREPARING_MODAL_KEY = SHARE_PREPARING_MODAL_KEY2.SHARE_PREPARING_MODAL_KEY;
 const result = set.fileFinishedImporting("modules/share/native/showSharePreparingModal.tsx");

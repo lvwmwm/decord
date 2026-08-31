@@ -1,17 +1,17 @@
-// Module ID: 9982
-// Function ID: 9983
+// Module ID: 10005
+// Function ID: 10006
 // Name: getApplicationStreamPresetValues
-// Dependencies: [4505, 9983, 9984, 2]
+// Dependencies: [4507, 10006, 10007, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 9982 (getApplicationStreamPresetValues)
+// Module 10005 (getApplicationStreamPresetValues)
 import set from "set" /* 2 */;
-import _modDef9983 from "module_9983" /* 9983 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 9984 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4505 */;
+import _modDef10006 from "module_10006" /* 10006 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 10007 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4507 */;
 
 function getApplicationStreamPresetValues() {
-  let obj = _modDef9983;
+  let obj = _modDef10006;
   obj = { [closure_3.PRESET_DOCUMENTS]: items };
   obj = { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_15 };
   items = [obj, { resolution: closure_4.RESOLUTION_SOURCE, fps: closure_2.FPS_5 }];

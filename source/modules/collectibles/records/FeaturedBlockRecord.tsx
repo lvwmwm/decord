@@ -1,12 +1,12 @@
-// Module ID: 7266
-// Function ID: 7267
+// Module ID: 7287
+// Function ID: 7288
 // Name: fromServer
-// Dependencies: [7267, 7265, 7268, 2]
+// Dependencies: [7288, 7286, 7289, 2]
 
-// Module 7266 (fromServer)
+// Module 7287 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7265 */;
-import fromServer from "fromServer" /* 7267 */;
+import ShopBlockType from "ShopBlockType" /* 7286 */;
+import fromServer from "fromServer" /* 7288 */;
 
 let closure_2 = fromServer.FeaturedCategorySubblockRecord;
 let prototype;

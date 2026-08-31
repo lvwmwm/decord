@@ -1,39 +1,39 @@
-// Module ID: 7796
-// Function ID: 7797
+// Module ID: 7817
+// Function ID: 7818
 // Name: createThreadEmbed
-// Dependencies: [17, 4438, 4487, 4266, 5366, 7794, 7797, 4091, 7798, 7287, 4092, 6116, 1302, 1218, 1391, 1993, 1910, 4099, 7529, 1923, 4439, 7789, 676, 7800, 4640, 7801, 11, 7577, 6139, 1236, 7802, 7803, 7804, 4818, 1403, 7452, 7809, 4922, 7810, 7812, 6082, 7814, 7943, 7944, 7960, 6103, 7292, 4135, 7961, 7965, 7888, 8010, 4712, 1438, 1435, 8013, 1297, 5942, 8068, 1370, 8069, 4079, 5316, 8070, 8071, 4132, 8073, 8081, 8021, 6079, 712, 8082, 7817, 8084, 8085, 7940, 8088, 8392, 12804, 12823, 12825, 12839, 7820, 7821, 12840, 12843, 12844, 12845, 7822, 12846, 2]
+// Dependencies: [17, 4440, 4489, 4267, 5369, 7815, 7818, 4092, 7819, 7308, 4093, 6119, 1302, 1218, 1387, 1992, 1909, 4100, 7550, 1922, 4441, 7810, 676, 7821, 4642, 7822, 11, 7598, 6142, 1236, 7823, 7824, 7825, 4820, 1399, 7473, 7830, 4925, 7831, 7833, 6085, 7835, 7965, 7966, 7982, 6106, 7313, 4136, 7983, 7987, 7910, 8032, 4714, 1434, 1431, 8035, 1297, 5945, 8090, 1471, 8091, 4080, 5319, 8092, 8093, 4133, 8095, 8103, 8043, 6082, 712, 8104, 7838, 8106, 8107, 7962, 8110, 8414, 12839, 12858, 12860, 12874, 7842, 7843, 12875, 12878, 12879, 12880, 7844, 7840, 2]
 
-// Module 7796 (createThreadEmbed)
+// Module 7817 (createThreadEmbed)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import computeChannelName from "computeChannelName" /* 4640 */;
-import processMessage from "processMessage" /* 7287 */;
-import _formatMessageCountLabel from "_formatMessageCountLabel" /* 7577 */;
-import Changeset from "Changeset" /* 7789 */;
-import items6 from "items" /* 7800 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7801 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_5 from "addApplication" /* 4487 */;
-import closure_6 from "isSyncedModeThemesEnabled" /* 4266 */;
-import closure_7 from "getEmojiToGroupId" /* 5366 */;
-import closure_8 from "handleMessageSendFailedAutomod" /* 7794 */;
-import closure_9 from "deleteNonce" /* 7797 */;
-import closure_10 from "initialize" /* 4091 */;
-import closure_11 from "set" /* 7798 */;
-import closure_12 from "processMessage" /* 7287 */;
-import closure_14 from "storeThread" /* 4092 */;
-import closure_15 from "updateState" /* 6116 */;
+import computeChannelName from "computeChannelName" /* 4642 */;
+import processMessage from "processMessage" /* 7308 */;
+import _formatMessageCountLabel from "_formatMessageCountLabel" /* 7598 */;
+import Changeset from "Changeset" /* 7810 */;
+import items6 from "items" /* 7821 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7822 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_5 from "addApplication" /* 4489 */;
+import closure_6 from "reset" /* 4267 */;
+import closure_7 from "getEmojiToGroupId" /* 5369 */;
+import closure_8 from "handleMessageSendFailedAutomod" /* 7815 */;
+import closure_9 from "deleteNonce" /* 7818 */;
+import closure_10 from "initialize" /* 4092 */;
+import closure_11 from "set" /* 7819 */;
+import closure_12 from "processMessage" /* 7308 */;
+import closure_14 from "storeThread" /* 4093 */;
+import closure_15 from "updateState" /* 6119 */;
 import closure_16 from "handleThemeChange" /* 1302 */;
 import closure_17 from "fetchFingerprint" /* 1218 */;
-import closure_18 from "ensureGuildLoaded" /* 1391 */;
-import closure_19 from "trackCommunicationDisabled" /* 1993 */;
-import closure_20 from "createGuildRecordFromRust" /* 1910 */;
-import closure_21 from "markAllUserIdListsStale" /* 4099 */;
-import closure_22 from "initialize" /* 7529 */;
-import closure_23 from "mergeGuildAvatar" /* 1923 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4439 */;
+import closure_18 from "ensureGuildLoaded" /* 1387 */;
+import closure_19 from "trackCommunicationDisabled" /* 1992 */;
+import closure_20 from "createGuildRecordFromRust" /* 1909 */;
+import closure_21 from "markAllUserIdListsStale" /* 4100 */;
+import closure_22 from "initialize" /* 7550 */;
+import closure_23 from "mergeGuildAvatar" /* 1922 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4441 */;
 import ME from "ME" /* 676 */;
 
 function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, options, arg5) {
@@ -54,7 +54,7 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
         let string2 = _formatMessageCountLabel.formatMessageCountLabel(count, channel1.id);
         if (null != count) {
           if (count > 0) {
-            let tmp15Result = tmp15(6139);
+            let tmp15Result = tmp15(6142);
             if (tmp15Result.isChannelSpoilerGated(channel1)) {
               let obj = { title: null, messageCountLabel: null, messageCountAccessibilityLabel: null, messagePreviewString: null, archived: false, backgroundColor: null };
               obj[0] = channelName;
@@ -79,8 +79,8 @@ function createThreadEmbed(message, roleStyle, isInlineReplyPreview, channel1, o
                 obj[2] = string2;
                 const intl4 = tmp15(1236).intl;
                 obj[3] = intl4.string(tmp15(1236).t.ZTo4HS);
-                tmp15Result = tmp15(7802);
-                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(7803));
+                tmp15Result = tmp15(7823);
+                obj[5] = tmp15Result.getAssetUriForEmbed(tmp19(7824));
                 obj[6] = backgroundColor;
                 obj1 = obj;
               } else {
@@ -1229,7 +1229,7 @@ function createMessageContent(message) {
       applicationIconSource = author.getAvatarSource(undefined);
       tmp13Result7 = tmp13(tmp3[53]);
     }
-    parseMessageMarkupResult = { content: "PX_16", hasSpoilerEmbeds: "CONNECTION_OPEN", hasBailedAst: "WRITE_CACHES" };
+    parseMessageMarkupResult = { content: "ct", hasSpoilerEmbeds: "pop", hasBailedAst: "push" };
     const tmp13Result1 = tmp13(tmp3[42]);
   }
 }

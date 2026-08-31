@@ -1,12 +1,12 @@
-// Module ID: 4109
-// Function ID: 4110
+// Module ID: 4110
+// Function ID: 4111
 // Name: createFromServer
-// Dependencies: [1932, 1925, 2]
+// Dependencies: [1931, 1924, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 4109 (createFromServer)
-import toJSDefault from "toJS" /* 1932 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+// Module 4110 (createFromServer)
+import toJSDefault from "toJS" /* 1931 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 toJSDefault;
 ({ PremiumSubscriptionSKUs: c0, PremiumTypes: closure_1, SubscriptionPlans: obj1 } = GuildFeatures);

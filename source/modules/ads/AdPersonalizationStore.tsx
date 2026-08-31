@@ -1,9 +1,9 @@
-// Module ID: 13269
-// Function ID: 13270
+// Module ID: 13303
+// Function ID: 13304
 // Name: reset
 // Dependencies: [589, 709, 2]
 
-// Module 13269 (reset)
+// Module 13303 (reset)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

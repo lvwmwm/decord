@@ -1,15 +1,15 @@
-// Module ID: 14041
-// Function ID: 14042
+// Module ID: 14075
+// Function ID: 14076
 // Name: handleConnectionOpen
-// Dependencies: [1340, 685, 1343, 14042, 14043, 709, 12, 1374, 2]
+// Dependencies: [1340, 685, 1343, 14076, 14077, 709, 12, 1370, 2]
 
-// Module 14041 (handleConnectionOpen)
+// Module 14075 (handleConnectionOpen)
 import applyDefault from "apply" /* 12 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import MAX_FAVORITESDefault from "MAX_FAVORITES" /* 1343 */;
-import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
-import migrateHotspotLocationDefault from "migrateHotspotLocation" /* 14042 */;
-import readFavoriteGIFsDefault from "readFavoriteGIFs" /* 14043 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1370 */;
+import migrateHotspotLocationDefault from "migrateHotspotLocation" /* 14076 */;
+import readFavoriteGIFsDefault from "readFavoriteGIFs" /* 14077 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
 
@@ -17,10 +17,10 @@ require = arg1;
 function handleConnectionOpen() {
   fullState = fullState.getFullState();
   if (fullState[UserSettingsTypes.PRELOADED_USER_SETTINGS].editInfo.triggeredMigrations) {
-    const PreloadedUserSettingsActionCreators = fullState(1374).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = fullState(1370).PreloadedUserSettingsActionCreators;
     let result = PreloadedUserSettingsActionCreators.markDirtyFromMigration(tmp2.proto, tmp2.editInfo.cleanupFuncs);
   }
-  const item = applyDefault.forEach(fullState(1374).UserSettingsActionCreatorsByType, (scheduleSaveFromOfflineEdit) => {
+  const item = applyDefault.forEach(fullState(1370).UserSettingsActionCreatorsByType, (scheduleSaveFromOfflineEdit) => {
     const tmp = fullState[Number(undefined, arg1)];
     if (tmp2) {
       const result = scheduleSaveFromOfflineEdit.scheduleSaveFromOfflineEdit();

@@ -1,9 +1,9 @@
-// Module ID: 1627
-// Function ID: 1628
+// Module ID: 1626
+// Function ID: 1627
 // Name: KeyboardTypes
 // Dependencies: [2]
 
-// Module 1627 (KeyboardTypes)
+// Module 1626 (KeyboardTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/keyboard/native/KeyboardTypes.tsx");

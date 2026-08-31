@@ -1,22 +1,22 @@
-// Module ID: 10414
-// Function ID: 10415
+// Module ID: 10438
+// Function ID: 10439
 // Name: NativeGiftContextProvider
-// Dependencies: [5, 32, 19, 8506, 10412, 8394, 1923, 676, 6050, 1925, 21, 3, 7120, 7121, 4123, 10415, 1236, 10416, 4108, 6052, 10417, 10418, 589, 10448, 10454, 8509, 8503, 4823, 698, 5938, 10455, 709, 500, 10393, 2]
+// Dependencies: [5, 32, 19, 8528, 10436, 8416, 1922, 676, 6053, 1924, 21, 3, 7141, 7142, 4124, 10439, 1236, 10440, 4109, 6055, 10441, 10442, 589, 10472, 10478, 8531, 8525, 4826, 698, 5941, 10479, 709, 500, 10417, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 10414 (NativeGiftContextProvider)
+// Module 10438 (NativeGiftContextProvider)
 import timestampDefault from "timestamp" /* 3 */;
-import createDefinedContextDefault from "createDefinedContext" /* 7120 */;
+import createDefinedContextDefault from "createDefinedContext" /* 7141 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importDefaultResult from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 8506 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10412 */;
-import closure_8 from "frozen" /* 8394 */;
-import closure_9 from "mergeGuildAvatar" /* 1923 */;
+import closure_6 from "initialize" /* 8528 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10436 */;
+import closure_8 from "frozen" /* 8416 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 6050 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 6053 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -266,7 +266,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     constants = undefined;
     table = undefined;
     jsx = undefined;
-    obj = { orderId: "a", planId: "krydda", planSelection: "salt", giftInfo: "saltkar" };
+    obj = { orderId: "a", planId: -7881303896031234, planSelection: 0.00000000000000000000000000000000000007052980861263414, giftInfo: 57380714359466420000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 };
     obj = { premiumType: null, planInterval: null };
     obj[0] = first;
     obj[1] = first1;
@@ -353,7 +353,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -449,7 +449,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                               if (closure_1_13.current.orderId !== closure_6) {
                                 v0 = 0;
                                 c5 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               } else {
                                 revision = revision.revision;
                                 v0(revision);
@@ -470,7 +470,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                               if (closure_1_13.current.orderId !== closure_6) {
                                 v0 = 0;
                                 c5 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               }
                             }
                           } else if (arg0 === 1) {
@@ -497,7 +497,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                           v0 = 0;
                         }
                         c5 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       } catch (tmp68) {
                         closure_2 = tmp68;
                         if (tmp4 === v0) {
@@ -522,7 +522,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -618,7 +618,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                               if (closure_1_13.current.orderId !== closure_6) {
                                 v0 = 0;
                                 c5 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               } else {
                                 revision = revision.revision;
                                 v0(revision);
@@ -639,7 +639,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                               if (closure_1_13.current.orderId !== closure_6) {
                                 v0 = 0;
                                 c5 = 3;
-                                return { value: "HermesInternal", done: null };
+                                return { value: "HermesInternal", done: "HermesInternal" };
                               }
                             }
                           } else if (arg0 === 1) {
@@ -666,7 +666,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
                           v0 = 0;
                         }
                         c5 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       } catch (tmp68) {
                         closure_2 = tmp68;
                         if (tmp4 === v0) {
@@ -751,7 +751,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

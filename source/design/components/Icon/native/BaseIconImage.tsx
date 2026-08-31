@@ -1,18 +1,18 @@
-// Module ID: 4165
-// Function ID: 4166
+// Module ID: 4166
+// Function ID: 4167
 // Name: BaseIconImage
-// Dependencies: [19, 17, 21, 4166, 2]
+// Dependencies: [19, 17, 21, 4167, 2]
 // Exports: BaseIconImage
 
-// Module 4165 (BaseIconImage)
+// Module 4166 (BaseIconImage)
 import noopAll from "noop" /* 19 */;
-import map from "map" /* 4166 */;
+import map from "map" /* 4167 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
 noopAll;
-let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "Array", height: "ct" }, refresh_sm: { width: 18, height: 18 } };
+let closure_4 = { xxs: { width: 12, height: 12 }, xs: { width: 16, height: 16 }, sm: { width: 18, height: 18 }, md: { width: 24, height: 24 }, lg: { width: 32, height: 32 }, custom: { width: "cix", height: "id" }, refresh_sm: { width: 18, height: 18 } };
 const result = require("set").fileFinishedImporting("design/components/Icon/native/BaseIconImage.tsx");
 
 export const BaseIconImage = function BaseIconImage(source) {

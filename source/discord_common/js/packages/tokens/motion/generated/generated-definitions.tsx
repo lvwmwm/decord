@@ -1,9 +1,9 @@
-// Module ID: 4897
-// Function ID: 4898
+// Module ID: 4900
+// Function ID: 4901
 // Name: SUBTLE_SPRING
 // Dependencies: [2]
 
-// Module 4897 (SUBTLE_SPRING)
+// Module 4900 (SUBTLE_SPRING)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/tokens/motion/generated/generated-definitions.tsx");

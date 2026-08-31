@@ -1,13 +1,13 @@
-// Module ID: 6061
-// Function ID: 6062
+// Module ID: 6064
+// Function ID: 6065
 // Name: isVibegrationsGuildEnabled
-// Dependencies: [1910, 676, 1472, 589, 2]
+// Dependencies: [1909, 676, 1468, 589, 2]
 // Exports: useHasVibegrationsGuild, useIsVibegrationsGuildEnabled
 
-// Module 6061 (isVibegrationsGuildEnabled)
-import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+// Module 6064 (isVibegrationsGuildEnabled)
+import closure_2 from "createGuildRecordFromRust" /* 1909 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const require = arg1;
 function isVibegrationsGuildEnabled(guildId) {
@@ -51,7 +51,7 @@ export { isVibegrationsGuildEnabled };
 export { hasVibegrationsGuild };
 export const useHasVibegrationsGuild = function useHasVibegrationsGuild(arg0) {
   const _require = arg0;
-  const items = [closure_2, _require(1472).ApexExperimentStore];
+  const items = [closure_2, _require(1468).ApexExperimentStore];
   const items1 = [arg0];
   return _require(589).useStateFromStores(items, () => closure_1_6(Object.values(closure_1_2.getGuilds()), closure_0), items1);
 };

@@ -1,15 +1,15 @@
-// Module ID: 15478
-// Function ID: 15479
+// Module ID: 15512
+// Function ID: 15513
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 15468, 15469, 676, 1500, 15466, 1236, 15479, 10852, 7668, 15476, 691, 15467, 1501, 7683, 7677, 8593, 2]
+// Dependencies: [5, 32, 19, 15502, 15503, 676, 1499, 15499, 1236, 15513, 10876, 7689, 15510, 691, 15501, 1500, 7704, 7698, 8615, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 15478 (useIdentityRegistrationStep)
+// Module 15512 (useIdentityRegistrationStep)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15468 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15469 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15502 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15503 */;
 import { AbortCodes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -60,7 +60,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -101,7 +101,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             ref = c4;
             if (ref instanceof callback(navigation[10]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
               obj1 = callback(navigation[11]);
               const authenticationErrorsFromAPIError = obj1.getAuthenticationErrorsFromAPIError(closure_5);
@@ -166,7 +166,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             obj7[2] = closure_1;
             obj7[3] = callback;
             obj7[4] = function onPhoneTokenReceived(arg0) {
-              let obj = { email: "r", phone: "flex", phoneToken: null };
+              let obj = { email: "r", phone: "PX_16", phoneToken: null };
               obj[1] = closure_1;
               obj[2] = arg0;
               v3(obj);
@@ -183,7 +183,7 @@ export const useIdentityRegistrationStep = function useIdentityRegistrationStep(
             };
             closure_1_2.push(callback(navigation[13]).AuthStates.VERIFY_PHONE, obj7);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp55) {
           c4 = tmp55;

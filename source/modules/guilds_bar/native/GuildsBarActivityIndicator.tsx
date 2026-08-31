@@ -1,30 +1,30 @@
-// Module ID: 15855
-// Function ID: 15856
+// Module ID: 15889
+// Function ID: 15890
 // Name: getMediaIcon
-// Dependencies: [19, 21, 4446, 712, 4166, 5971, 1297, 9694, 9692, 5011, 8690, 12568, 15856, 10131, 15857, 5015, 15858, 9189, 7994, 15851, 2]
+// Dependencies: [19, 21, 4448, 712, 4167, 5974, 1297, 9716, 9714, 5014, 8712, 12603, 15890, 10154, 15891, 5018, 15892, 9211, 8016, 15885, 2]
 // Exports: useActivityIndicatorState
 
-// Module 15855 (getMediaIcon)
+// Module 15889 (getMediaIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import map from "map" /* 4166 */;
-import StageIcon from "StageIcon" /* 5011 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5015 */;
-import setDefault from "set" /* 5971 */;
-import registerAssetDefault from "registerAsset" /* 7994 */;
-import registerAssetDefault2 from "registerAsset" /* 8690 */;
-import AppsIcon from "AppsIcon" /* 9189 */;
-import registerAssetDefault3 from "registerAsset" /* 9692 */;
-import CalendarIcon from "CalendarIcon" /* 9694 */;
-import VideoIcon from "VideoIcon" /* 10131 */;
-import ScreenIcon from "ScreenIcon" /* 12568 */;
-import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 15851 */;
-import registerAssetDefault4 from "registerAsset" /* 15856 */;
-import registerAssetDefault5 from "registerAsset" /* 15857 */;
-import registerAssetDefault6 from "registerAsset" /* 15858 */;
+import map from "map" /* 4167 */;
+import StageIcon from "StageIcon" /* 5014 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5018 */;
+import setDefault from "set" /* 5974 */;
+import registerAssetDefault from "registerAsset" /* 8016 */;
+import registerAssetDefault2 from "registerAsset" /* 8712 */;
+import AppsIcon from "AppsIcon" /* 9211 */;
+import registerAssetDefault3 from "registerAsset" /* 9714 */;
+import CalendarIcon from "CalendarIcon" /* 9716 */;
+import VideoIcon from "VideoIcon" /* 10154 */;
+import ScreenIcon from "ScreenIcon" /* 12603 */;
+import useGuildsBarGuildMediaStateDefault from "useGuildsBarGuildMediaState" /* 15885 */;
+import registerAssetDefault4 from "registerAsset" /* 15890 */;
+import registerAssetDefault5 from "registerAsset" /* 15891 */;
+import registerAssetDefault6 from "registerAsset" /* 15892 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function getMediaIcon(closure_3) {

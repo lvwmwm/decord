@@ -1,14 +1,14 @@
-// Module ID: 17194
-// Function ID: 17195
+// Module ID: 17227
+// Function ID: 17228
 // Name: useGuildApplication
-// Dependencies: [5, 32, 19, 4487, 589, 5919, 4344, 2]
+// Dependencies: [5, 32, 19, 4489, 589, 5922, 4346, 2]
 // Exports: default
 
-// Module 17194 (useGuildApplication)
+// Module 17227 (useGuildApplication)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "addApplication" /* 4487 */;
+import closure_6 from "addApplication" /* 4489 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/applications/useGuildApplication.tsx");
@@ -38,7 +38,7 @@ export default function useGuildApplication(arg0, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

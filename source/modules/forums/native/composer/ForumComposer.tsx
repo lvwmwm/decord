@@ -1,37 +1,37 @@
-// Module ID: 10268
-// Function ID: 10269
+// Module ID: 10292
+// Function ID: 10293
 // Name: Tags
-// Dependencies: [5, 32, 19, 17, 4438, 1302, 4820, 1993, 4090, 1982, 7378, 4819, 1923, 676, 1398, 1388, 1338, 1235, 505, 21, 4446, 712, 5918, 589, 1363, 4310, 8106, 4640, 7575, 7374, 6087, 4290, 5559, 4186, 7468, 4457, 7148, 12, 7587, 8693, 10269, 10270, 4823, 1236, 10271, 10273, 500, 10274, 10275, 10278, 1377, 10279, 2010, 10280, 10281, 8309, 1297, 6086, 1627, 1498, 7661, 8836, 10284, 4442, 10285, 10350, 10355, 10356, 10357, 10359, 10361, 6202, 10822, 5001, 10365, 7458, 4413, 10824, 8174, 4893, 4985, 2]
+// Dependencies: [5, 32, 19, 17, 4440, 1302, 4822, 1992, 4091, 1981, 7399, 4821, 1922, 676, 1394, 1384, 1338, 1235, 505, 21, 4448, 712, 5921, 589, 1363, 4312, 8128, 4642, 7596, 7395, 6090, 4292, 5562, 4187, 7489, 4459, 7169, 12, 7608, 8715, 10293, 10294, 4826, 1236, 10295, 10297, 500, 10298, 10299, 10302, 1373, 10303, 2009, 10304, 10305, 8331, 1297, 6089, 1626, 1497, 7682, 8859, 10308, 4444, 10309, 10374, 10379, 10380, 10381, 10383, 10385, 6205, 10846, 5004, 10389, 7479, 4415, 10848, 8196, 4896, 4988, 2]
 // Exports: default
 
-// Module 10268 (Tags)
+// Module 10292 (Tags)
 import ThemesDefault from "Themes" /* 712 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4310 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5559 */;
-import TagIcon from "TagIcon" /* 10357 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4312 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5562 */;
+import TagIcon from "TagIcon" /* 10381 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 import closure_11 from "handleThemeChange" /* 1302 */;
-import closure_12 from "handleChanged" /* 4820 */;
-import { DraftType } from "handleChanged" /* 4820 */;
-import closure_14 from "trackCommunicationDisabled" /* 1993 */;
-import closure_15 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_16 from "handleConnectionOpen" /* 1982 */;
-import closure_17 from "setCooldown" /* 7378 */;
-import { SlowmodeType } from "setCooldown" /* 7378 */;
-import closure_19 from "map" /* 4819 */;
-import closure_20 from "mergeGuildAvatar" /* 1923 */;
+import closure_12 from "handleChanged" /* 4822 */;
+import { DraftType } from "handleChanged" /* 4822 */;
+import closure_14 from "trackCommunicationDisabled" /* 1992 */;
+import closure_15 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_16 from "handleConnectionOpen" /* 1981 */;
+import closure_17 from "setCooldown" /* 7399 */;
+import { SlowmodeType } from "setCooldown" /* 7399 */;
+import closure_19 from "map" /* 4821 */;
+import closure_20 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { ChannelFlags } from "set" /* 1398 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { ChannelFlags } from "set" /* 1394 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1338 */;
 import { OpenThreadAnalyticsLocations as closure_27 } from "AbortCodes" /* 1235 */;
 import sum from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function Tags(tags) {
@@ -88,7 +88,7 @@ function ActionBar(channel) {
   const tmp6 = useKeyboardTypeDefault();
   closure_7 = tmp6;
   let isMediaChannelResult = channel.isMediaChannel();
-  const tmp8 = tmp6 === channel(1627).KeyboardTypes.MEDIA;
+  const tmp8 = tmp6 === channel(1626).KeyboardTypes.MEDIA;
   closure_8 = tmp8;
   if (!isMediaChannelResult) {
     let tmp9 = stateFromStores1;
@@ -112,7 +112,7 @@ function ActionBar(channel) {
     obj = { attachments: null, channelId: null, highlightThumbnails: true };
     obj[0] = stateFromStores;
     obj[1] = channel.id;
-    isMediaChannelResult = callback(tmp5(10361), obj);
+    isMediaChannelResult = callback(tmp5(10385), obj);
   }
   const items3 = [isMediaChannelResult, ];
   obj1 = { style: tmp.actions, children: null };
@@ -125,7 +125,7 @@ function ActionBar(channel) {
       const items5 = [, ];
       ({ actionButton: arr9[0], mediaButton: arr9[1] } = tmp);
       obj2[1] = items5;
-      obj2[2] = tmp2(10357).TagIcon;
+      obj2[2] = tmp2(10381).TagIcon;
       obj2[3] = function onPress() {
         isEdit.dismiss();
         let obj = closure_1_1(closure_1_2[76]);
@@ -151,18 +151,18 @@ function ActionBar(channel) {
         };
         obj.openLazy(channel(closure_1_2[52])(closure_1_2[77], closure_1_2.paths), "ForumPostTagsActionSheet", obj);
       };
-      tmp10 = callback(tmp2(6202).HeaderActionButton, obj2);
+      tmp10 = callback(tmp2(6205).HeaderActionButton, obj2);
     }
     items4[1] = tmp10;
-    let tmp18 = lastInput === tmp2(10273).PostComposerInputs.CONTENT;
+    let tmp18 = lastInput === tmp2(10297).PostComposerInputs.CONTENT;
     if (tmp18) {
       const obj3 = { accessibilityLabel: null, style: null, IconComponent: null, onPress: null, foregroundRipple: true };
       const intl3 = tmp2(1236).intl;
       obj3[0] = intl3.string(tmp2(1236).t.iZ7Mz9);
       obj3[1] = tmp.actionButton;
-      obj3[2] = tmp2(8174).ReactionIcon;
+      obj3[2] = tmp2(8196).ReactionIcon;
       obj3[3] = onShowExpressionPicker;
-      tmp18 = callback(tmp2(6202).HeaderActionButton, obj3);
+      tmp18 = callback(tmp2(6205).HeaderActionButton, obj3);
     }
     items4[2] = tmp18;
     const obj4 = { style: null, children: null };
@@ -184,13 +184,13 @@ function ActionBar(channel) {
     obj5[2] = submitting;
     const obj6 = { size: "sm", color: null };
     obj6[1] = tmp5(712).colors.WHITE;
-    obj5[3] = callback(tmp2(4985).ChatIcon, obj6);
+    obj5[3] = callback(tmp2(4988).ChatIcon, obj6);
     obj5[4] = function onPress() {
       if (canPost) {
         callback({});
       }
     };
-    obj4[1] = callback(tmp2(4893).Button, obj5);
+    obj4[1] = callback(tmp2(4896).Button, obj5);
     items4[3] = callback(tmp13, obj4);
     obj1[1] = items4;
     items3[1] = tmp12(tmp13, obj1);
@@ -204,9 +204,9 @@ function ActionBar(channel) {
     ({ actionButton: arr7[0], mediaButton: arr7[1] } = tmp);
     obj7[1] = items6;
     if (tmp8) {
-      let ImageIcon = tmp2(10822).KeyboardIcon;
+      let ImageIcon = tmp2(10846).KeyboardIcon;
     } else {
-      ImageIcon = tmp2(5001).ImageIcon;
+      ImageIcon = tmp2(5004).ImageIcon;
     }
     obj7[2] = ImageIcon;
     obj7[3] = function onPress() {
@@ -219,7 +219,7 @@ function ActionBar(channel) {
       }
       const result1 = channel(closure_1_2[75]).trackForumChannelMediaUploaderClicked({ isMobile: true });
     };
-    callback(tmp2(6202).HeaderActionButton, obj7);
+    callback(tmp2(6205).HeaderActionButton, obj7);
     const tmp15 = callback;
   }
 }
@@ -526,7 +526,7 @@ export default function ForumComposer(parentChannel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -691,7 +691,7 @@ export default function ForumComposer(parentChannel) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -714,7 +714,7 @@ export default function ForumComposer(parentChannel) {
                 c1 = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "ct", done: true };
+                return { value: "Object", done: true };
               }
             } else {
               if (1 === tmp8) {

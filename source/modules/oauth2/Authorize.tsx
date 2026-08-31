@@ -1,16 +1,16 @@
-// Module ID: 9226
-// Function ID: 9227
+// Module ID: 9248
+// Function ID: 9249
 // Name: filterScopes
-// Dependencies: [1391, 4268, 676, 9227, 8556, 5363, 4095, 506, 2]
+// Dependencies: [1387, 4269, 676, 9249, 8578, 5366, 4096, 506, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 9226 (filterScopes)
+// Module 9248 (filterScopes)
 import fromStringAll from "fromString" /* 506 */;
-import applyOverwritesAll from "applyOverwrites" /* 4095 */;
-import keysSorter from "keysSorter" /* 5363 */;
-import set from "set" /* 8556 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "handleConnectionOpen" /* 4268 */;
+import applyOverwritesAll from "applyOverwrites" /* 4096 */;
+import keysSorter from "keysSorter" /* 5366 */;
+import set from "set" /* 8578 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "handleConnectionOpen" /* 4269 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -24,10 +24,10 @@ export const filterScopes = function filterScopes(items) {
   });
   let hasItem = found.includes(set.OAuth2Scopes.BOT);
   if (hasItem) {
-    hasItem = !found.includes(tmp(8556).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    hasItem = !found.includes(tmp(8578).OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   if (hasItem) {
-    found.push(tmp(8556).OAuth2Scopes.APPLICATIONS_COMMANDS);
+    found.push(tmp(8578).OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
   return found;
 };

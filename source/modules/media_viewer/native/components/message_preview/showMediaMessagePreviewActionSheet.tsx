@@ -1,14 +1,14 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12804
+// Function ID: 12805
 // Name: showMediaMessagePreviewActionSheet
-// Dependencies: [1391, 1923, 4413, 12770, 2010, 2]
+// Dependencies: [1387, 1922, 4415, 12805, 2009, 2]
 // Exports: default
 
-// Module 12769 (showMediaMessagePreviewActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+// Module 12804 (showMediaMessagePreviewActionSheet)
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/media_viewer/native/components/message_preview/showMediaMessagePreviewActionSheet.tsx");
@@ -26,7 +26,7 @@ export default function showMediaMessagePreviewActionSheet(message) {
         obj[1] = message;
         obj[2] = user;
         obj[3] = message.closeMediaModal;
-        obj.openLazy(asyncRequireImpl(12770, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
+        obj.openLazy(asyncRequireImpl(12805, dependencyMap.paths), "MediaMessagePreviewActionSheet", obj);
       }
     }
   }

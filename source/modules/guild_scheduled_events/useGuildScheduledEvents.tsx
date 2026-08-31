@@ -1,20 +1,20 @@
-// Module ID: 9570
-// Function ID: 9571
+// Module ID: 9592
+// Function ID: 9593
 // Name: useGuildEvents
-// Dependencies: [32, 19, 1391, 1910, 4090, 7218, 9571, 1397, 676, 687, 589, 9573, 9572, 9576, 2]
+// Dependencies: [32, 19, 1387, 1909, 4091, 7239, 9593, 1393, 676, 687, 589, 9595, 9594, 9598, 2]
 // Exports: default, getGuildActiveEvent, useActiveEvent, useActiveEventsByChannel, useFirstActiveEventChannel, useGuildActiveEvent, useGuildChannelScheduledEvents, useGuildUpcomingEvents, useGuildUpcomingEventsNotice, useImminentUpcomingGuildEvents
 
-// Module 9570 (useGuildEvents)
+// Module 9592 (useGuildEvents)
 import setDefault from "set" /* 687 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
-import scheduledEventSort from "scheduledEventSort" /* 7218 */;
-import closure_9 from "scheduledEventSort" /* 7218 */;
-import closure_10 from "initialize" /* 9571 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4091 */;
+import scheduledEventSort from "scheduledEventSort" /* 7239 */;
+import closure_9 from "scheduledEventSort" /* 7239 */;
+import closure_10 from "initialize" /* 9593 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -335,11 +335,11 @@ export const useImminentUpcomingGuildEvents = function useImminentUpcomingGuildE
   }, items1);
   const items2 = [stateFromStores];
   return React.useMemo(() => stateFromStores.filter((status) => {
-    const eventSchedule = callback(9576).getEventSchedule(status);
+    const eventSchedule = callback(9598).getEventSchedule(status);
     ({ startTime, endTime } = eventSchedule);
-    const obj = callback(9576);
+    const obj = callback(9598);
     let toISOStringResult1;
-    const obj2 = callback(9573);
+    const obj2 = callback(9595);
     if (endTime != null) {
       toISOStringResult1 = endTime.toISOString();
     }

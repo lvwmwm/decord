@@ -1,21 +1,21 @@
-// Module ID: 15876
-// Function ID: 15877
+// Module ID: 15910
+// Function ID: 15911
 // Name: checkNodeAndIterate
-// Dependencies: [32, 19, 17, 7328, 4268, 5346, 15806, 14632, 21, 4446, 7742, 1629, 14625, 14634, 636, 643, 589, 4186, 15877, 2]
+// Dependencies: [32, 19, 17, 7349, 4269, 5349, 15840, 14666, 21, 4448, 7763, 1628, 14659, 14668, 636, 643, 589, 4187, 15911, 2]
 
-// Module 15876 (checkNodeAndIterate)
-import renderDefaultEmpty from "renderDefaultEmpty" /* 7742 */;
+// Module 15910 (checkNodeAndIterate)
+import renderDefaultEmpty from "renderDefaultEmpty" /* 7763 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "updateGuildUnreadSentinel" /* 7328 */;
-import closure_7 from "handleConnectionOpen" /* 4268 */;
-import closure_8 from "insertUnsortedGuilds" /* 5346 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5346 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15806 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14632 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 7349 */;
+import closure_7 from "handleConnectionOpen" /* 4269 */;
+import closure_8 from "insertUnsortedGuilds" /* 5349 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5349 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15840 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14666 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function checkNodeAndIterate(arg0) {
@@ -146,7 +146,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
               }
               let tmp8 = nextResult;
               let type = tmp4.type;
-              if (tmp41(7742).FastListItemTypes.SECTION === type) {
+              if (tmp41(7763).FastListItemTypes.SECTION === type) {
                 let tmp18 = nextResult;
                 let node = guildsTree.getNode(tmp4.recyclerKey);
                 let element = node;
@@ -181,7 +181,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
                 }
                 continue;
               } else {
-                if (tmp41(7742).FastListItemTypes.ITEM === type) {
+                if (tmp41(7763).FastListItemTypes.ITEM === type) {
                   let tmp10 = nextResult;
                   let node1 = guildsTree.getNode(tmp4.recyclerKey);
                   let tmp12 = node1;
@@ -263,7 +263,7 @@ function findFirstOrLastMentionedItem(scrollPosValue) {
               }
               return tmp37;
             }
-            let obj3 = { beforeItem: null, afterItem: "r" };
+            let obj3 = { beforeItem: null, afterItem: "Array" };
             let obj4 = { section: null, row: null, mention: true };
             obj4[0] = sum;
             obj4[1] = tmp32.item;
@@ -282,8 +282,8 @@ let c4 = importAllResult;
 ({ FastListRenderSections: c10, useGuildWrapperSize: unpackModuleId, GUILD_LIST_WIDTH } = GUILD_ITEM_SIZE);
 ({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: map1 } = CONNECTION_BANNER_HEIGHT);
 let closure_15 = createCacheKey.createStyles({ wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } });
-let closure_17 = { beforeItem: "Array", afterItem: "ct" };
-let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "r" };
+let closure_17 = { beforeItem: "cix", afterItem: "id" };
+let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
 let closure_20 = { code: "function GuildsBarUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
 let closure_21 = { code: "function GuildsBarUnreadBarsTsx2(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };
 const memoResult = importAllResult.memo(function GuildsBarUnreadBars(fastList) {

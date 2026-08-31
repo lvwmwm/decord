@@ -1,17 +1,17 @@
-// Module ID: 16984
-// Function ID: 16985
+// Module ID: 17017
+// Function ID: 17018
 // Name: _terminate
-// Dependencies: [5, 1997, 1923, 4114, 10412, 1925, 676, 505, 5451, 12947, 4108, 13057, 2]
+// Dependencies: [5, 1996, 1922, 4115, 10436, 1924, 676, 505, 5454, 12981, 4109, 13091, 2]
 
-// Module 16984 (_terminate)
-import initializeDefault from "initialize" /* 5451 */;
-import fetchActivePromotions from "fetchActivePromotions" /* 12947 */;
+// Module 17017 (_terminate)
+import initializeDefault from "initialize" /* 5454 */;
+import fetchActivePromotions from "fetchActivePromotions" /* 12981 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1997 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
-import closure_6 from "reset" /* 4114 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10412 */;
-import { PremiumTypes } from "GuildFeatures" /* 1925 */;
+import closure_4 from "_getSystemLocale" /* 1996 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "reset" /* 4115 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10436 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import { EntitlementTypes } from "ME" /* 676 */;
 import { SubscriptionTypes } from "sum" /* 505 */;
 
@@ -44,7 +44,7 @@ class PromotionsManager extends tmp2 {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ class PromotionsManager extends tmp2 {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp6) {
           v0 = tmp;
           throw tmp6;
@@ -120,7 +120,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -153,7 +153,7 @@ prototype["onPostConnectionOpen"] = function onPostConnectionOpen() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp9) {
         v0 = tmp;

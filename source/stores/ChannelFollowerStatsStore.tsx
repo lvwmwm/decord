@@ -1,9 +1,9 @@
-// Module ID: 11189
-// Function ID: 11190
+// Module ID: 11218
+// Function ID: 11219
 // Name: getFollowerStatsForChannel
 // Dependencies: [589, 709, 2]
 
-// Module 11189 (getFollowerStatsForChannel)
+// Module 11218 (getFollowerStatsForChannel)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

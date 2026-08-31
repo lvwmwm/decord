@@ -1,14 +1,14 @@
-// Module ID: 10817
-// Function ID: 10818
+// Module ID: 10841
+// Function ID: 10842
 // Name: SpoilerIcon
-// Dependencies: [19, 21, 712, 4165, 10818, 2]
+// Dependencies: [19, 21, 712, 4166, 10842, 2]
 // Exports: SpoilerIcon
 
-// Module 10817 (SpoilerIcon)
+// Module 10841 (SpoilerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 10818 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 10842 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

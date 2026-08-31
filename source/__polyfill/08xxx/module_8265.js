@@ -1,8 +1,0 @@
-// Module ID: 8265
-// Function ID: 8266
-// Dependencies: []
-
-// Module 8265
-const obj = { objectBoundingBox: 0, userSpaceOnUse: 1 };
-arg5.default = obj;
-arg5.units = obj;

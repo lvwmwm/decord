@@ -1,16 +1,16 @@
-// Module ID: 11227
-// Function ID: 11228
+// Module ID: 11256
+// Function ID: 11257
 // Name: MessageReminderDurationActionSheet
-// Dependencies: [32, 19, 11177, 21, 4446, 712, 589, 687, 11228, 5586, 1236, 5033, 5464, 11229, 5564, 4413, 4689, 11230, 2010, 4044, 5587, 5957, 4397, 2]
+// Dependencies: [32, 19, 11206, 21, 4448, 712, 589, 687, 11257, 5589, 1236, 5036, 5467, 11258, 5567, 4415, 4691, 11259, 2009, 4045, 5590, 5960, 4399, 2]
 // Exports: default
 
-// Module 11227 (MessageReminderDurationActionSheet)
+// Module 11256 (MessageReminderDurationActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getTimeSafe" /* 11177 */;
+import closure_5 from "getTimeSafe" /* 11206 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -45,8 +45,8 @@ export default function MessageReminderDurationActionSheet(createReminder) {
   if (stateFromStores != null) {
     dueAt = stateFromStores.saveData.dueAt;
   }
-  obj = { dueAt, now: tmp7, type: tmp2(11228).DueInStringTypes.SHORT };
-  const dueInString = createReminder(11228).useDueInString(obj);
+  obj = { dueAt, now: tmp7, type: tmp2(11257).DueInStringTypes.SHORT };
+  const dueInString = createReminder(11257).useDueInString(obj);
   dueInText = dueInString.dueInText;
   isOverdue = dueInString.isOverdue;
   const items1 = [onBack, dueInText, isOverdue];
@@ -100,20 +100,20 @@ export default function MessageReminderDurationActionSheet(createReminder) {
     return mapped;
   }, items2);
   obj = { header: memo, bodyStyles: tmp.body, startExpanded: true, children: null };
-  const items3 = [dueInText(createReminder(5957).TableRowGroup, { hasIcons: false, children: memo1 }), ];
+  const items3 = [dueInText(createReminder(5960).TableRowGroup, { hasIcons: false, children: memo1 }), ];
   let tmp14Result = null != removeReminder;
   if (tmp14Result) {
     obj1 = { icon: null, label: null, onPress: null, start: true, end: true };
-    obj1[0] = tmp14(tmp2(4397).CheckmarkLargeIcon, {});
+    obj1[0] = tmp14(tmp2(4399).CheckmarkLargeIcon, {});
     let intl = tmp2(1236).intl;
     obj1[1] = intl.string(tmp2(1236).t.yjGtdJ);
     obj1[2] = function onPress() {
       removeReminder(closure_1_2[15]).hideActionSheet();
       removeReminder();
     };
-    tmp14Result = tmp14(tmp2(5564).TableRow, obj1, "remove-reminder");
+    tmp14Result = tmp14(tmp2(5567).TableRow, obj1, "remove-reminder");
   }
   items3[1] = tmp14Result;
   obj[3] = items3;
-  return isOverdue(createReminder(5587).BottomSheet, obj);
+  return isOverdue(createReminder(5590).BottomSheet, obj);
 };

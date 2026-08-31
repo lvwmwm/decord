@@ -1,16 +1,16 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 12756
+// Function ID: 12757
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 505, 21, 4446, 712, 1236, 2470, 4442, 4893, 1297, 2]
+// Dependencies: [19, 17, 505, 21, 4448, 712, 1236, 2471, 4444, 4896, 1297, 2]
 // Exports: default
 
-// Module 12721 (InAppReportsBottomButton)
+// Module 12756 (InAppReportsBottomButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import messagesProxyDefault from "messagesProxy" /* 2470 */;
+import messagesProxyDefault from "messagesProxy" /* 2471 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 noopAll;
@@ -74,7 +74,7 @@ export default function InAppReportsBottomButton(button) {
         obj1 = { style: null, variant: "text-xs/medium", color: "text-default", children: null };
         obj1[0] = tmp.descriptionText;
         obj1[3] = tmp3;
-        tmp14Result = tmp14(tmp17(4442).Text, obj1);
+        tmp14Result = tmp14(tmp17(4444).Text, obj1);
       }
       const items1 = [tmp14Result, , ];
       const obj2 = { disabled: null, onPress: null, text: null, variant: null };
@@ -84,7 +84,7 @@ export default function InAppReportsBottomButton(button) {
       };
       obj2[2] = stringResult2;
       obj2[3] = str2;
-      items1[1] = callback(tmp17(4893).Button, obj2);
+      items1[1] = callback(tmp17(4896).Button, obj2);
       tmp14Result = null;
       if (hasError) {
         const obj3 = { style: null, children: null };

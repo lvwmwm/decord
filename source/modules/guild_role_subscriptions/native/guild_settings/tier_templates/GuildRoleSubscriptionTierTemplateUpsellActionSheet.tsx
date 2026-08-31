@@ -1,25 +1,25 @@
-// Module ID: 15770
-// Function ID: 15771
+// Module ID: 15804
+// Function ID: 15805
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
-// Dependencies: [32, 19, 17, 4438, 676, 1388, 21, 4446, 712, 5036, 647, 5587, 1236, 8548, 4442, 4893, 9667, 4413, 2]
+// Dependencies: [32, 19, 17, 4440, 676, 1384, 21, 4448, 712, 5039, 647, 5590, 1236, 8570, 4444, 4896, 9689, 4415, 2]
 // Exports: default
 
-// Module 15770 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 15804 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import Button from "Button" /* 4893 */;
-import getIsScreenLandscape from "getIsScreenLandscape" /* 5036 */;
-import Background from "Background" /* 5587 */;
+import Text from "Text" /* 4444 */;
+import Button from "Button" /* 4896 */;
+import getIsScreenLandscape from "getIsScreenLandscape" /* 5039 */;
+import Background from "Background" /* 5590 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 import ME from "ME" /* 676 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 ({ GuildSettingsSections: error, GuildSettingsSubsections: closure_8 } = ME);
@@ -67,7 +67,7 @@ export default function GuildRoleSubscriptionTierTemplateUpsellActionSheet(arg0)
   obj1 = { accessibilityRole: "image", accessibilityLabel: null, children: null };
   const intl = getSystemLocale.intl;
   obj1[1] = intl.string(getSystemLocale.t.gCgirr);
-  obj1[2] = callback2(markAsDismissed(8548), { style: tmp.videoContainer, src: closure_12, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
+  obj1[2] = callback2(markAsDismissed(8570), { style: tmp.videoContainer, src: closure_12, width: tmp3, height: tmp3 / 1.7289156626506024, muted: true, paused: stateFromStores, ariaHidden: true });
   const items2 = [callback2(View, obj1), , ];
   const obj3 = { style: tmp.info, children: null };
   const obj4 = { variant: "heading-lg/semibold", style: tmp.title, color: "mobile-text-heading-primary", children: null };

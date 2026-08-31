@@ -1,9 +1,9 @@
-// Module ID: 9471
-// Function ID: 9472
+// Module ID: 9493
+// Function ID: 9494
 // Name: pushStackEntry
-// Dependencies: [19, 17, 644, 705, 500, 1641, 2]
+// Dependencies: [19, 17, 644, 705, 500, 1640, 2]
 
-// Module 9471 (pushStackEntry)
+// Module 9493 (pushStackEntry)
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import keys from "keys" /* 644 */;
 import importAllResult from "noop" /* 19 */;
@@ -66,8 +66,8 @@ HomeIndicator["_updatePropsStack"] = function _updatePropsStack() {
     const obj2 = callback(705);
     const tmp2 = undefined !== prefersDeferringSystemGestures && prefersDeferringSystemGestures;
     if (obj3.isAndroid()) {
-      const result = callback2(1641).setNavigationBarVisible(!tmp);
-      const obj4 = callback2(1641);
+      const result = callback2(1640).setNavigationBarVisible(!tmp);
+      const obj4 = callback2(1640);
     } else if (DCDHomeIndicator.DCDHomeIndicator) {
       DCDHomeIndicator = tmp5.DCDHomeIndicator;
       DCDHomeIndicator.setPrefersAutoHidden(tmp);

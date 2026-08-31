@@ -1,14 +1,14 @@
-// Module ID: 12485
-// Function ID: 12486
+// Module ID: 12519
+// Function ID: 12520
 // Name: getBundleDescription
-// Dependencies: [19, 1236, 1951, 2]
+// Dependencies: [19, 1236, 1950, 2]
 // Exports: useProductDescription
 
-// Module 12485 (getBundleDescription)
+// Module 12519 (getBundleDescription)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 
 function getBundleDescription(bundledProducts) {
   let flag = arg1;
@@ -50,7 +50,7 @@ function getBundleDescription(bundledProducts) {
       } else {
         let tmp33 = tmp5;
         let tmp34 = tmp7;
-        if (tmp6(1951).CollectiblesItemType.PROFILE_EFFECT === type) {
+        if (tmp6(1950).CollectiblesItemType.PROFILE_EFFECT === type) {
           let tmp9 = tmp5;
           let tmp10 = tmp7;
           let intl = tmp6(1236).intl;
@@ -61,7 +61,7 @@ function getBundleDescription(bundledProducts) {
         } else {
           let tmp35 = tmp5;
           let tmp36 = tmp7;
-          if (tmp6(1951).CollectiblesItemType.NAMEPLATE === type) {
+          if (tmp6(1950).CollectiblesItemType.NAMEPLATE === type) {
             let tmp37 = tmp5;
             let tmp38 = tmp7;
             let intl6 = tmp6(1236).intl;

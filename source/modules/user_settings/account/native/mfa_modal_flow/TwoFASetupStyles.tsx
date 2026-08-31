@@ -1,14 +1,14 @@
-// Module ID: 14325
-// Function ID: 14326
+// Module ID: 14359
+// Function ID: 14360
 // Name: styles
-// Dependencies: [676, 4446, 5426, 712, 2]
+// Dependencies: [676, 4448, 5429, 712, 2]
 
-// Module 14325 (styles)
+// Module 14359 (styles)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import importDefaultResult from "createTextStyle" /* 5426 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import importDefaultResult from "createTextStyle" /* 5429 */;
 
 let obj = { text: { textAlign: "center", marginLeft: 20, marginRight: 20 }, modalHeader: null, modalBody: null };
 obj = {};

@@ -1,11 +1,11 @@
-// Module ID: 1474
-// Function ID: 1475
+// Module ID: 1473
+// Function ID: 1474
 // Name: awaitOnline
-// Dependencies: [1475, 2]
+// Dependencies: [1474, 2]
 
-// Module 1474 (awaitOnline)
+// Module 1473 (awaitOnline)
 import set from "set" /* 2 */;
-import notifyListeners from "notifyListeners" /* 1475 */;
+import notifyListeners from "notifyListeners" /* 1474 */;
 
 let closure_2 = [];
 let c3 = false;

@@ -1,17 +1,18 @@
-// Module ID: 8423
-// Function ID: 8424
+// Module ID: 8445
+// Function ID: 8446
 // Name: resolveGiftCode
-// Dependencies: [5, 4487, 7234, 7242, 676, 1925, 709, 4718, 5919, 7233, 4344, 530, 8424, 8425, 2]
-// Exports: resolveGiftCode
+// Dependencies: [5, 4489, 7255, 7263, 676, 1924, 709, 4720, 5922, 7254, 4346, 4132, 1208, 530, 8446, 8447, 2]
+// Exports: reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 8423 (resolveGiftCode)
-import _modDef8424 from "module_8424" /* 8424 */;
+// Module 8445 (resolveGiftCode)
+import prototypeDefault from "prototype" /* 4132 */;
+import _modDef8446 from "module_8446" /* 8446 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "addApplication" /* 4487 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7234 */;
-import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7242 */;
+import closure_4 from "addApplication" /* 4489 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7255 */;
+import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7263 */;
 import ME from "ME" /* 676 */;
-import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_10 } from "GuildFeatures" /* 1925 */;
+import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_10 } from "GuildFeatures" /* 1924 */;
 
 const require = arg1;
 function resolveGiftCode() {
@@ -45,7 +46,7 @@ function _resolveGiftCode() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -74,7 +75,7 @@ function _resolveGiftCode() {
               application = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {
@@ -215,12 +216,36 @@ function _resolveGiftCode() {
   }
   return applyArgumentsResult;
 }
+function reportUnexpectedGiftCodeError(status) {
+  if (status instanceof prototypeDefault) {
+    if (404 !== status.status) {
+      let tmpResult = tmp(1208);
+      let str = status.status;
+      if (str == null) {
+        str = "unknown";
+      }
+      let obj = { tags: null };
+      obj = { gift_code_resolve_status: null };
+      obj[0] = String(str);
+      obj[0] = obj;
+      tmpResult.captureException(status.error, obj);
+    }
+  } else {
+    const _Error = Error;
+    if (status instanceof Error) {
+      tmpResult = tmp(1208);
+      tmpResult.captureException(status);
+    }
+  }
+  return null;
+}
 ({ COLLECTIBLES_APPLICATION_ID: error, Endpoints: closure_8, RPCCommands: c9 } = ME);
 const merged = Object.assign(require("redeemGiftCode").default);
 const result = require("set").fileFinishedImporting("actions/GiftCodeActionCreators.tsx");
 
 export default {
   resolveGiftCode,
+  reportUnexpectedGiftCodeError,
   fetchUserGiftCodesForSKU(skuId, subscriptionPlanId) {
     closure_0 = skuId;
     let tmp = subscriptionPlanId;
@@ -235,7 +260,7 @@ export default {
       obj1[2] = closure_1_1;
       closure_1_1(closure_1_2[6]).dispatch(obj1);
       c3 = 1;
-      const HTTP = closure_1_0(closure_1_2[11]).HTTP;
+      const HTTP = closure_1_0(closure_1_2[13]).HTTP;
       const obj2 = { url: null, query: null, oldFormErrors: true, rejectWithError: true };
       obj2[0] = closure_1_8.USER_GIFT_CODES;
       let obj3 = { sku_id: null, subscription_plan_id: null };
@@ -287,7 +312,7 @@ export default {
       obj1[2] = closure_1_1;
       closure_1_1(closure_1_2[6]).dispatch(obj1);
       c3 = 1;
-      const HTTP = closure_1_0(closure_1_2[11]).HTTP;
+      const HTTP = closure_1_0(closure_1_2[13]).HTTP;
       const obj2 = { url: null, body: null, oldFormErrors: true, rejectWithError: true };
       obj2[0] = closure_1_8.USER_GIFT_CODE_CREATE;
       const obj3 = { sku_id: null, subscription_plan_id: null, gift_style: null };
@@ -319,7 +344,7 @@ export default {
       obj1[1] = closure_1_0;
       v0(closure_1_2[6]).dispatch(obj1);
       c3 = 1;
-      const HTTP = closure_1_0(closure_1_2[11]).HTTP;
+      const HTTP = closure_1_0(closure_1_2[13]).HTTP;
       const obj2 = { url: null, oldFormErrors: true, rejectWithError: true };
       obj2[0] = closure_1_8.USER_GIFT_CODE_REVOKE(closure_1_0);
       yield HTTP.del(obj2);
@@ -345,7 +370,8 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    _modDef8424.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    _modDef8446.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };
+export { reportUnexpectedGiftCodeError };

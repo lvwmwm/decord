@@ -1,10 +1,10 @@
-// Module ID: 9675
-// Function ID: 9676
+// Module ID: 9697
+// Function ID: 9698
 // Name: toServerGuildProfile
 // Dependencies: [2]
 // Exports: toServerGuildProfile
 
-// Module 9675 (toServerGuildProfile)
+// Module 9697 (toServerGuildProfile)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_tag/GuildTagTypes.tsx");

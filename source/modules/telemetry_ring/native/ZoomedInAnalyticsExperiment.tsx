@@ -1,12 +1,12 @@
-// Module ID: 13771
-// Function ID: 13772
+// Module ID: 13805
+// Function ID: 13806
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: isZoomedExperimentEnabled
 
-// Module 13771 (apexExperiment)
+// Module 13805 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

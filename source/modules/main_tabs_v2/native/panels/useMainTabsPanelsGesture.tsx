@@ -1,14 +1,14 @@
-// Module ID: 15528
-// Function ID: 15529
+// Module ID: 15562
+// Function ID: 15563
 // Name: useMainTabsPanelsGesture
-// Dependencies: [19, 11002, 500, 15529, 11003, 1629, 1494, 4186, 4447, 4450, 4892, 15530, 5617, 2]
+// Dependencies: [19, 11027, 500, 15563, 11028, 1628, 1493, 4187, 4449, 4452, 4895, 15564, 5620, 2]
 // Exports: default
 
-// Module 15528 (useMainTabsPanelsGesture)
+// Module 15562 (useMainTabsPanelsGesture)
 import closure_3 from "noop" /* 19 */;
-import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG" /* 11002 */;
+import { LaunchPadTypes } from "LAUNCH_PAD_SPRING_CONFIG" /* 11027 */;
 import set from "set" /* 500 */;
-import isTimingConfig from "isTimingConfig" /* 15529 */;
+import isTimingConfig from "isTimingConfig" /* 15563 */;
 
 const require = arg1;
 set = set.isAndroid();

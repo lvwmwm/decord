@@ -1,16 +1,16 @@
-// Module ID: 15308
-// Function ID: 15309
+// Module ID: 15341
+// Function ID: 15342
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4446, 712, 4442, 4166, 4294, 9199, 4891, 9205, 12230, 9207, 4893, 5958, 2]
+// Dependencies: [32, 19, 17, 21, 4448, 712, 4444, 4167, 4296, 9221, 4894, 9227, 12264, 9229, 4896, 5961, 2]
 // Exports: default
 
-// Module 15308 (UserSettingsDesignSystemTabs)
+// Module 15341 (UserSettingsDesignSystemTabs)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
@@ -78,32 +78,32 @@ export default function UserSettingsDesignSystemTabs() {
     }
     return items;
   }, items);
-  let obj = first(9199);
+  let obj = first(9221);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: tmp[0], defaultIndex: 1 });
   callback = React.useCallback((nativeEvent) => {
     first(nativeEvent.nativeEvent.layout.width);
   }, []);
-  obj1 = first(4166);
+  obj1 = first(4167);
   const token = obj1.useToken(first(712).colors.BACKGROUND_BASE_LOW);
   let items1 = [token, ];
-  let obj2 = first(4294);
+  let obj2 = first(4296);
   items1[1] = obj2.hexWithOpacity(token, 0);
   obj = { style: callback3().container, onLayout: callback, children: null };
-  const items2 = [callback2(first(9205).Tabs, { state: segmentedControlState, grow: first1 }), ];
+  const items2 = [callback2(first(9227).Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp20Result = first2;
   if (first2) {
     obj = { state: null, colors: null };
     obj[0] = segmentedControlState;
     obj[1] = items1;
-    tmp20Result = tmp20(first(12230), obj);
+    tmp20Result = tmp20(first(12264), obj);
   }
   obj1 = { children: null };
   obj2 = { spacing: 24, children: null };
   items2[1] = tmp20Result;
-  const items3 = [closure_7(closure_5, { children: items2 }), callback2(first(9207).SegmentedControlPages, { state: segmentedControlState }), , ];
+  const items3 = [closure_7(closure_5, { children: items2 }), callback2(first(9229).SegmentedControlPages, { state: segmentedControlState }), , ];
   const obj3 = { spacing: 8, direction: "horizontal", children: null };
   const items4 = [
-    callback2(first(4893).Button, {
+    callback2(first(4896).Button, {
       text: "Add Tab",
       variant: "active",
       size: "sm",
@@ -112,7 +112,7 @@ export default function UserSettingsDesignSystemTabs() {
         return lib(first + 1);
       }
     }),
-    callback2(first(4893).Button, {
+    callback2(first(4896).Button, {
       text: "Remove Tab",
       variant: "destructive",
       size: "sm",
@@ -123,13 +123,13 @@ export default function UserSettingsDesignSystemTabs() {
     })
   ];
   obj3[2] = items4;
-  items3[2] = closure_7(first(4891).Stack, obj3);
+  items3[2] = closure_7(first(4894).Stack, obj3);
   const obj6 = { children: null };
-  const items5 = [callback2(first(5958).TableSwitchRow, { start: true, label: "Enable Grow", value: first1, onValueChange: tmp4[1] }), callback2(first(5958).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), callback2(first(5958).TableSwitchRow, { end: true, label: "Enable Overflow Gradient", value: first2, onValueChange: tmp9[1] })];
+  const items5 = [callback2(first(5961).TableSwitchRow, { start: true, label: "Enable Grow", value: first1, onValueChange: tmp4[1] }), callback2(first(5961).TableSwitchRow, { label: "Enable Counts", value: tmp7, onValueChange: tmp8 }), callback2(first(5961).TableSwitchRow, { end: true, label: "Enable Overflow Gradient", value: first2, onValueChange: tmp9[1] })];
   obj6[0] = items5;
   items3[3] = closure_7(closure_5, obj6);
   obj2[1] = items3;
-  obj[2] = closure_7(first(4891).Stack, obj2);
+  obj[2] = closure_7(first(4894).Stack, obj2);
   obj1[0] = callback2(closure_5, obj);
   return callback2(closure_6, obj1);
 };

@@ -1,11 +1,11 @@
-// Module ID: 11937
-// Function ID: 11938
-// Dependencies: [5, 19, 1923, 21, 1500, 11938, 589, 11940, 4163, 1236, 7627, 4457, 11946, 2]
+// Module ID: 11970
+// Function ID: 11971
+// Dependencies: [5, 19, 1922, 21, 1499, 11971, 589, 11973, 4164, 1236, 7648, 4459, 11979, 2]
 
-// Module 11937
-import ChatInputGuardDefault from "ChatInputGuard" /* 11946 */;
+// Module 11970
+import ChatInputGuardDefault from "ChatInputGuard" /* 11979 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -65,10 +65,10 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
               obj2[0] = arg1;
               return obj2;
             } else {
-              obj = lib(4457);
+              obj = lib(4459);
               obj.transitionToChannel(lib.id, { navigationReplace: true });
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp14) {
             c3 = tmp;
@@ -104,7 +104,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -136,7 +136,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
               return obj;
             } else {
               c1 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp9) {
             c1 = tmp;
@@ -154,10 +154,10 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
     }
     return applyArgumentsResult;
   }
-  let obj = channel(1500);
+  let obj = channel(1499);
   importDefault = obj.useNavigation();
-  const isMessageRequestRestrictedViewer = channel(11938).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
-  let obj2 = channel(11938);
+  const isMessageRequestRestrictedViewer = channel(11971).useIsMessageRequestRestrictedViewer("ChatInputGuardMessageRequest");
+  let obj2 = channel(11971);
   const items = [_onAcceptClick];
   const stateFromStores = channel(589).useStateFromStores(items, () => _onAcceptClick.getUser(channel.getRecipientId()));
   const obj3 = channel(589);
@@ -175,7 +175,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
 
     }
   };
-  const messageRequestActions = channel(11940).useMessageRequestActions(obj);
+  const messageRequestActions = channel(11973).useMessageRequestActions(obj);
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   let tmp6 = isAcceptLoading;
   if (!isAcceptLoading) {
@@ -191,7 +191,7 @@ const memoResult = importAllResult.memo(function ChatInputGuardMessageRequest(ch
     tmp6 = isOptimisticRejected;
   }
   obj = { type: "button-action", message: null, subtext: null, buttonPrimaryText: null, buttonPrimaryOnPress: null, buttonPrimaryDisabled: null, buttonPrimaryLoading: null, buttonSecondaryText: null, buttonSecondaryOnPress: null, buttonSecondaryDisabled: null, buttonSecondaryLoading: null };
-  const obj4 = channel(11940);
+  const obj4 = channel(11973);
   const tmp7 = _onRejectClick;
   let intl = tmp(1236).intl;
   obj[1] = intl.string(channel(1236).t["e/eQVB"]);

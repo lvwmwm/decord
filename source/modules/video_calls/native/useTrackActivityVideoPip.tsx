@@ -1,12 +1,12 @@
-// Module ID: 9563
-// Function ID: 9564
+// Module ID: 9585
+// Function ID: 9586
 // Name: useTrackActivityPip
-// Dependencies: [19, 9474, 676, 647, 8522, 9541, 698, 2]
+// Dependencies: [19, 9496, 676, 647, 8544, 9563, 698, 2]
 // Exports: default
 
-// Module 9563 (useTrackActivityPip)
+// Module 9585 (useTrackActivityPip)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initialize" /* 9474 */;
+import closure_4 from "initialize" /* 9496 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
@@ -16,9 +16,9 @@ export default function useTrackActivityPip(arg0) {
   const _require = arg0;
   const items = [closure_4];
   const stateFromStores = _require(647).useStateFromStores(items, () => pipEnabledWhileFocusedOnActivityOrStream.isPipEnabledWhileFocusedOnActivityOrStream());
-  let tmp2 = stateFromStores(8522)(stateFromStores);
+  let tmp2 = stateFromStores(8544)(stateFromStores);
   dependencyMap = tmp2;
-  const tmp3 = stateFromStores(9541)();
+  const tmp3 = stateFromStores(9563)();
   const React = tmp3;
   const items1 = [stateFromStores, tmp2, arg0, tmp3];
   const effect = React.useEffect(() => {

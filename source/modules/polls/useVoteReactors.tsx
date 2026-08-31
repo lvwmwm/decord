@@ -1,11 +1,11 @@
-// Module ID: 11234
-// Function ID: 11235
+// Module ID: 11263
+// Function ID: 11264
 // Name: useVoteReactors
-// Dependencies: [7453, 676, 589, 7454, 659, 2]
+// Dependencies: [7474, 676, 589, 7475, 659, 2]
 // Exports: default
 
-// Module 11234 (useVoteReactors)
-import closure_3 from "reactionKey" /* 7453 */;
+// Module 11263 (useVoteReactors)
+import closure_3 from "reactionKey" /* 7474 */;
 import { DEFAULT_NUM_REACTION_USERS as closure_4 } from "ME" /* 676 */;
 
 const require = arg1;

@@ -1,13 +1,13 @@
-// Module ID: 14126
-// Function ID: 14127
+// Module ID: 14160
+// Function ID: 14161
 // Name: _initialize
-// Dependencies: [1218, 4497, 4628, 709, 2]
+// Dependencies: [1218, 4499, 4630, 709, 2]
 
-// Module 14126 (_initialize)
+// Module 14160 (_initialize)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 4628 */;
+import initializeDefault from "initialize" /* 4630 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
 
 initializeDefault;
 class BaseSoundboardManager extends tmp2 {

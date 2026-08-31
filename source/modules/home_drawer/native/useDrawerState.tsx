@@ -1,10 +1,10 @@
-// Module ID: 15548
-// Function ID: 15549
+// Module ID: 15582
+// Function ID: 15583
 // Name: useDrawerOpen
-// Dependencies: [32, 19, 1501, 4300, 2]
+// Dependencies: [32, 19, 1500, 4302, 2]
 // Exports: useDrawerOpen
 
-// Module 15548 (useDrawerOpen)
+// Module 15582 (useDrawerOpen)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 

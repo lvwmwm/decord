@@ -1,10 +1,10 @@
-// Module ID: 1898
-// Function ID: 1899
+// Module ID: 1897
+// Function ID: 1898
 // Name: shortenAndLocalizeNumber
 // Dependencies: [1236, 2]
 // Exports: formatPercent, humanizeValue, parseInteger, shortenAndLocalizeNumber
 
-// Module 1898 (shortenAndLocalizeNumber)
+// Module 1897 (shortenAndLocalizeNumber)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

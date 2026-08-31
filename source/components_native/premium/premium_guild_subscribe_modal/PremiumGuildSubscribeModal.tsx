@@ -1,18 +1,18 @@
-// Module ID: 5343
-// Function ID: 5344
+// Module ID: 5346
+// Function ID: 5347
 // Name: PremiumGuildSubscribeModal
-// Dependencies: [32, 19, 1302, 5344, 676, 21, 5345, 5460, 5342, 6202, 1363, 6203, 6204, 6205, 1236, 6207, 6210, 1297, 6212, 13197, 5906, 4890, 5973, 2]
+// Dependencies: [32, 19, 1302, 5347, 676, 21, 5348, 5463, 5345, 6205, 1363, 6206, 6207, 6208, 1236, 6210, 6213, 1297, 6215, 13230, 5909, 4893, 5976, 2]
 // Exports: default
 
-// Module 5343 (PremiumGuildSubscribeModal)
+// Module 5346 (PremiumGuildSubscribeModal)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 4890 */;
-import useInitialValueDefault from "useInitialValue" /* 5906 */;
-import NavigationStack from "NavigationStack" /* 5973 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 4893 */;
+import useInitialValueDefault from "useInitialValue" /* 5909 */;
+import NavigationStack from "NavigationStack" /* 5976 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
-import { PremiumGuildSubscribeModalScenes as closure_6 } from "PremiumGuildSubscribeModalScenes" /* 5344 */;
+import { PremiumGuildSubscribeModalScenes as closure_6 } from "PremiumGuildSubscribeModalScenes" /* 5347 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -45,7 +45,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
         let obj3 = { headerShown: false, render: null };
         obj3[1] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(5345), {});
+          return callback3(callback2(5348), {});
         };
         obj2[closure_1_6.GUILD_SELECT] = obj3;
         const obj4 = { headerLeft: null, headerRight: null, headerTitle: null, render: null };
@@ -53,25 +53,25 @@ export default function PremiumGuildSubscribeModal(arg0) {
         obj4[1] = function headerRight() {
           let obj = callback(1363);
           if (obj.isThemeDark(theme.theme)) {
-            let tmp4Result = tmp4(6203);
+            let tmp4Result = tmp4(6206);
           } else {
-            tmp4Result = tmp4(6204);
+            tmp4Result = tmp4(6207);
           }
-          obj = { source: tmp4Result, IconComponent: tmp2(6205).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
+          obj = { source: tmp4Result, IconComponent: tmp2(6208).SettingsIcon, accessibilityLabel: null, accessibilityHint: null, onPress: null };
           const intl = tmp2(1236).intl;
           obj[2] = intl.string(callback(1236).t["3D5yo/"]);
           const intl2 = tmp2(1236).intl;
           obj[3] = intl2.string(callback(1236).t["+CbP2v"]);
           obj[4] = function onPress() {
-            let obj = callback(6207);
+            let obj = callback(6210);
             obj = { destinationPane: constants.GUILD_BOOSTING };
             const result = obj.trackUserSettingsPaneViewed(obj);
-            callback(5342).closeApplyBoostModal();
-            const obj3 = callback(5342);
+            callback(5345).closeApplyBoostModal();
+            const obj3 = callback(5345);
             obj = { screen: constants.GUILD_BOOSTING };
-            callback(6210).openUserSettings(obj);
+            callback(6213).openUserSettings(obj);
           };
-          return closure_8(callback(6202).HeaderActionButton, obj);
+          return closure_8(callback(6205).HeaderActionButton, obj);
         };
         obj4[2] = function headerTitle(children) {
           children = children.children;
@@ -85,11 +85,11 @@ export default function PremiumGuildSubscribeModal(arg0) {
             tmpResult = tmp(callback(1297).LegacyText, obj);
           }
           obj[1] = tmpResult;
-          return closure_8(callback(5460).NavigatorHeader, obj);
+          return closure_8(callback(5463).NavigatorHeader, obj);
         };
         obj4[3] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(6212), {});
+          return callback3(callback2(6215), {});
         };
         obj2[closure_1_6.OVERVIEW] = obj4;
         const obj5 = { headerLeft: null, headerTitle: null, render: null };
@@ -99,7 +99,7 @@ export default function PremiumGuildSubscribeModal(arg0) {
         obj5[1] = intl.string(closure_1_0(closure_1_2[14]).t.VJEVbu);
         obj5[2] = function render(arg0) {
           const merged = Object.assign(arg0);
-          return callback3(callback2(13197), {});
+          return callback3(callback2(13230), {});
         };
         obj2[closure_1_6.CONFIRMATION] = obj5;
         obj1[1] = obj2;

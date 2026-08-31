@@ -1,15 +1,15 @@
-// Module ID: 17105
-// Function ID: 17106
+// Module ID: 17138
+// Function ID: 17139
 // Name: useGuildTagBadgeCollection
-// Dependencies: [19, 9668, 4332, 7800, 589, 2]
+// Dependencies: [19, 9690, 4334, 7821, 589, 2]
 // Exports: default
 
-// Module 17105 (useGuildTagBadgeCollection)
+// Module 17138 (useGuildTagBadgeCollection)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "handleFormInit" /* 9668 */;
-import closure_4 from "calculateAppliedBoosts" /* 4332 */;
-import items from "items" /* 7800 */;
+import closure_3 from "handleFormInit" /* 9690 */;
+import closure_4 from "calculateAppliedBoosts" /* 4334 */;
+import items from "items" /* 7821 */;
 
 const useMemo = noop.useMemo;
 ({ BADGE_PACKS: c5, BADGES: closure_6, BADGE_PACK_TO_SKU_ID: error } = items);

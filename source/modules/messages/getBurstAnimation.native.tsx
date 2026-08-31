@@ -1,128 +1,20 @@
-// Module ID: 7476
-// Function ID: 7477
+// Module ID: 7497
+// Function ID: 7498
 // Name: items
-// Dependencies: [5, 7477, 7478, 7479, 7480, 7481, 7482, 7483, 7484, 7485, 7486, 7487, 7488, 7489, 7490, 7491, 7492, 7493, 7494, 7495, 7496, 7497, 7498, 7499, 7500, 7501, 7502, 7503, 7504, 7505, 7506, 7507, 7508, 7509, 7510, 7511, 7512, 7513, 2]
+// Dependencies: [5, 7498, 7499, 7500, 7501, 7502, 7503, 7504, 7505, 7506, 7507, 7508, 7509, 7510, 7511, 7512, 7513, 7514, 7515, 7516, 7517, 7518, 7519, 7520, 7521, 7522, 7523, 7524, 7525, 7526, 7527, 7528, 7529, 7530, 7531, 7532, 7533, 7534, 2]
 // Exports: getBurstAnimation
 
-// Module 7476 (items)
+// Module 7497 (items)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 let closure_0 = arg1;
 let obj = {
   load() {
-    return callback(7477);
+    return callback(7498);
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return callback(7478);
-    }
-  },
-  {
-    load() {
-      return callback(7479);
-    }
-  },
-  {
-    load() {
-      return callback(7480);
-    }
-  },
-  {
-    load() {
-      return callback(7481);
-    }
-  },
-  {
-    load() {
-      return callback(7482);
-    }
-  },
-  {
-    load() {
-      return callback(7483);
-    }
-  },
-  {
-    load() {
-      return callback(7484);
-    }
-  },
-  {
-    load() {
-      return callback(7485);
-    }
-  },
-  {
-    load() {
-      return callback(7486);
-    }
-  },
-  {
-    load() {
-      return callback(7487);
-    }
-  },
-  {
-    load() {
-      return callback(7488);
-    }
-  },
-  {
-    load() {
-      return callback(7489);
-    }
-  },
-  {
-    load() {
-      return callback(7490);
-    }
-  },
-  {
-    load() {
-      return callback(7491);
-    }
-  },
-  {
-    load() {
-      return callback(7492);
-    }
-  },
-  {
-    load() {
-      return callback(7493);
-    }
-  },
-  {
-    load() {
-      return callback(7494);
-    }
-  }
-];
-obj = {
-  load() {
-    return callback(7495);
-  }
-};
-const items1 = [
-  obj,
-  {
-    load() {
-      return callback(7496);
-    }
-  },
-  {
-    load() {
-      return callback(7497);
-    }
-  },
-  {
-    load() {
-      return callback(7498);
-    }
-  },
   {
     load() {
       return callback(7499);
@@ -192,6 +84,114 @@ const items1 = [
     load() {
       return callback(7512);
     }
+  },
+  {
+    load() {
+      return callback(7513);
+    }
+  },
+  {
+    load() {
+      return callback(7514);
+    }
+  },
+  {
+    load() {
+      return callback(7515);
+    }
+  }
+];
+obj = {
+  load() {
+    return callback(7516);
+  }
+};
+const items1 = [
+  obj,
+  {
+    load() {
+      return callback(7517);
+    }
+  },
+  {
+    load() {
+      return callback(7518);
+    }
+  },
+  {
+    load() {
+      return callback(7519);
+    }
+  },
+  {
+    load() {
+      return callback(7520);
+    }
+  },
+  {
+    load() {
+      return callback(7521);
+    }
+  },
+  {
+    load() {
+      return callback(7522);
+    }
+  },
+  {
+    load() {
+      return callback(7523);
+    }
+  },
+  {
+    load() {
+      return callback(7524);
+    }
+  },
+  {
+    load() {
+      return callback(7525);
+    }
+  },
+  {
+    load() {
+      return callback(7526);
+    }
+  },
+  {
+    load() {
+      return callback(7527);
+    }
+  },
+  {
+    load() {
+      return callback(7528);
+    }
+  },
+  {
+    load() {
+      return callback(7529);
+    }
+  },
+  {
+    load() {
+      return callback(7530);
+    }
+  },
+  {
+    load() {
+      return callback(7531);
+    }
+  },
+  {
+    load() {
+      return callback(7532);
+    }
+  },
+  {
+    load() {
+      return callback(7533);
+    }
   }
 ];
 closure_0 = asyncGeneratorStepDefault((arg0, arg1, arg2) => {
@@ -213,7 +213,7 @@ closure_0 = asyncGeneratorStepDefault((arg0, arg1, arg2) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -237,7 +237,7 @@ closure_0 = asyncGeneratorStepDefault((arg0, arg1, arg2) => {
             burstAnimationHash = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "ct", done: true };
+            return { value: "Object", done: true };
           }
         } else if (arg0 === 1) {
           c7 = 3;

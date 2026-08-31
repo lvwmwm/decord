@@ -1,14 +1,14 @@
-// Module ID: 7710
-// Function ID: 7711
+// Module ID: 7731
+// Function ID: 7732
 // Name: showInvalidUsernameToast
-// Dependencies: [4163, 1236, 7711, 2]
+// Dependencies: [4164, 1236, 7732, 2]
 // Exports: showInvalidUsernameToast
 
-// Module 7710 (showInvalidUsernameToast)
+// Module 7731 (showInvalidUsernameToast)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import dispatcherDefault from "dispatcher" /* 4163 */;
-import registerAssetDefault from "registerAsset" /* 7711 */;
+import dispatcherDefault from "dispatcher" /* 4164 */;
+import registerAssetDefault from "registerAsset" /* 7732 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/account/native/showInvalidUsernameToastNative.tsx");
 

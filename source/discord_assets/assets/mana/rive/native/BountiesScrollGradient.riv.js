@@ -1,9 +1,9 @@
-// Module ID: 4237
-// Function ID: 4238
+// Module ID: 4238
+// Function ID: 4239
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4237 (metadata)
+// Module 4238 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/BountiesScrollGradient.riv.js");

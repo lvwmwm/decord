@@ -1,12 +1,12 @@
-// Module ID: 17408
-// Function ID: 17409
+// Module ID: 17441
+// Function ID: 17442
 // Name: externalFingerprint
-// Dependencies: [1218, 5363, 709, 2]
+// Dependencies: [1218, 5366, 709, 2]
 // Exports: default
 
-// Module 17408 (externalFingerprint)
+// Module 17441 (externalFingerprint)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import keysSorter from "keysSorter" /* 5363 */;
+import keysSorter from "keysSorter" /* 5366 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 
 require = arg1;

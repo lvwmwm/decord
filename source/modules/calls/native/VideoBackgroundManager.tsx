@@ -1,11 +1,11 @@
-// Module ID: 8058
-// Function ID: 8059
+// Module ID: 8080
+// Function ID: 8081
 // Name: prototype
-// Dependencies: [1982, 5451, 2]
+// Dependencies: [1981, 5454, 2]
 
-// Module 8058 (prototype)
-import initializeDefault from "initialize" /* 5451 */;
-import closure_0 from "handleConnectionOpen" /* 1982 */;
+// Module 8080 (prototype)
+import initializeDefault from "initialize" /* 5454 */;
+import closure_0 from "handleConnectionOpen" /* 1981 */;
 
 initializeDefault;
 let prototype = function VideoBackgroundManager() {

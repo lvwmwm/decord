@@ -1,25 +1,25 @@
-// Module ID: 9836
-// Function ID: 9837
+// Module ID: 9859
+// Function ID: 9860
 // Name: NavigationBar
-// Dependencies: [5, 32, 19, 17, 1391, 1910, 1397, 9608, 21, 4446, 712, 4689, 5033, 1236, 1297, 7759, 4442, 9835, 589, 9579, 9837, 5518, 8627, 9840, 4893, 2]
+// Dependencies: [5, 32, 19, 17, 1387, 1909, 1393, 9630, 21, 4448, 712, 4691, 5036, 1236, 1297, 7780, 4444, 9858, 589, 9601, 9860, 5521, 8649, 9863, 4896, 2]
 // Exports: default
 
-// Module 9836 (NavigationBar)
+// Module 9859 (NavigationBar)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import registerAssetDefault from "registerAsset" /* 7759 */;
-import GuildEventCardControlsDefault from "GuildEventCardControls" /* 9835 */;
+import Text from "Text" /* 4444 */;
+import registerAssetDefault from "registerAsset" /* 7780 */;
+import GuildEventCardControlsDefault from "GuildEventCardControls" /* 9858 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
-import { START_EVENT_MODAL_KEY } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9608 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "createGuildRecordFromRust" /* 1909 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
+import { START_EVENT_MODAL_KEY } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9630 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function NavigationBar(onClose) {
@@ -33,7 +33,7 @@ function NavigationBar(onClose) {
   };
   obj = { source: registerAssetDefault };
   obj[3] = callback(onClose(1297).Icon, obj);
-  obj[0] = callback(onClose(5033).PressableOpacity, obj);
+  obj[0] = callback(onClose(5036).PressableOpacity, obj);
   return callback(View, obj);
 }
 function StartEventHeader(children) {
@@ -107,7 +107,7 @@ export default function StartEventModal(event) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -147,7 +147,7 @@ export default function StartEventModal(event) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp11) {
           c0 = tmp;
           throw tmp11;

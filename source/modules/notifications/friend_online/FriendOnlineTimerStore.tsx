@@ -1,9 +1,9 @@
-// Module ID: 17323
-// Function ID: 17324
+// Module ID: 17356
+// Function ID: 17357
 // Name: initialize
 // Dependencies: [687, 589, 709, 2]
 
-// Module 17323 (initialize)
+// Module 17356 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

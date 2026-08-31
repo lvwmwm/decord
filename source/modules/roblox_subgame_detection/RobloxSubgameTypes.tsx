@@ -1,10 +1,10 @@
-// Module ID: 4621
-// Function ID: 4622
+// Module ID: 4623
+// Function ID: 4624
 // Name: ROBLOX_PROTOCOL_URL
 // Dependencies: [2]
 // Exports: ROBLOX_DEFERRED_WEB_URL
 
-// Module 4621 (ROBLOX_PROTOCOL_URL)
+// Module 4623 (ROBLOX_PROTOCOL_URL)
 import set from "set" /* 2 */;
 
 class ROBLOX_PROTOCOL_URL {

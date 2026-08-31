@@ -1,17 +1,17 @@
-// Module ID: 9091
-// Function ID: 9092
+// Module ID: 9114
+// Function ID: 9115
 // Name: useShowNitroUpsellCallback
-// Dependencies: [19, 4186, 2]
+// Dependencies: [19, 4187, 2]
 // Exports: default
 
-// Module 9091 (useShowNitroUpsellCallback)
+// Module 9114 (useShowNitroUpsellCallback)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/premium/roadblocks/native/hooks/useShowNitroUpsellCallback.tsx");
 
 export default function useShowNitroUpsellCallback() {
-  let obj = sharedValue(4186);
+  let obj = sharedValue(4187);
   sharedValue = obj.useSharedValue(false);
   const items = [sharedValue];
   obj = {

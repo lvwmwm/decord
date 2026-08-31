@@ -1,0 +1,10 @@
+// Module ID: 9340
+// Function ID: 9341
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 9340 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d6a8eeb03988caf260d6fea57b710519", name: "ArrowSmallLeftIcon", type: "png" });

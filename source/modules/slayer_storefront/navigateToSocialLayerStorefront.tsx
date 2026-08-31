@@ -1,16 +1,16 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 13028
+// Function ID: 13029
 // Name: navigateToSocialLayerStorefrontWithGuildPreview
-// Dependencies: [5, 1910, 6040, 676, 8441, 6038, 1222, 6150, 8595, 2]
+// Dependencies: [5, 1909, 6043, 676, 8463, 6041, 1222, 6153, 8617, 2]
 // Exports: default, eagerNavigateToSocialLayerStorefront, eagerNavigateToSocialLayerStorefrontForApplication
 
-// Module 12994 (navigateToSocialLayerStorefrontWithGuildPreview)
+// Module 13028 (navigateToSocialLayerStorefrontWithGuildPreview)
 import transitionTo from "transitionTo" /* 1222 */;
-import getPrice from "getPrice" /* 6038 */;
-import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8441 */;
+import getPrice from "getPrice" /* 6041 */;
+import _fetchSocialLayerStorefront from "_fetchSocialLayerStorefront" /* 8463 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "handleUserSettingsStoreUpdate" /* 6040 */;
+import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "handleUserSettingsStoreUpdate" /* 6043 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -42,7 +42,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
               let guild3;
               c3 = 1;
               guild = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp5) {
@@ -106,7 +106,7 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                     if (null != set) {
                       if (!set.has(guild3.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj4 = lib(8595);
+                          let obj4 = lib(8617);
                           let obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           obj2[1] = { location: "game_shop" };
@@ -121,12 +121,12 @@ function _navigateToSocialLayerStorefrontWithGuildPreview() {
                     c3 = 2;
                     guild = 1;
                     obj4 = { value: null, done: false };
-                    obj4[0] = id(6150).startLurking(id, {}, { shouldNavigate: false });
+                    obj4[0] = id(6153).startLurking(id, {}, { shouldNavigate: false });
                     return obj4;
                   }
                 } else {
                   guild = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               }
             } else if (2 === tmp5) {

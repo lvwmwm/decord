@@ -1,16 +1,16 @@
-// Module ID: 5409
-// Function ID: 5410
+// Module ID: 5412
+// Function ID: 5413
 // Name: loadSavedGuildStickers
-// Dependencies: [5, 1393, 1910, 5410, 5411, 1957, 1977, 10, 5412, 709, 589, 2]
+// Dependencies: [5, 1389, 1909, 5413, 5414, 1956, 1976, 10, 5415, 709, 589, 2]
 
-// Module 5409 (loadSavedGuildStickers)
+// Module 5412 (loadSavedGuildStickers)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "allGuildIds" /* 1393 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "parseServerGuildSticker" /* 5410 */;
-import closure_7 from "parseServerPackSticker" /* 5411 */;
+import closure_4 from "allGuildIds" /* 1389 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_6 from "parseServerGuildSticker" /* 5413 */;
+import closure_7 from "parseServerPackSticker" /* 5414 */;
 
 const require = arg1;
 function loadSavedGuildStickers() {
@@ -37,7 +37,7 @@ function _loadSavedGuildStickers() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -57,12 +57,12 @@ function _loadSavedGuildStickers() {
             c0 = undefined;
             callback = undefined;
             if (Loaded === closure_1_8.Unloaded) {
-              obj1 = closure_1_1(1957);
+              obj1 = closure_1_1(1956);
               const databaseResult = obj1.database();
               c0 = databaseResult;
               if (null != databaseResult) {
                 Loaded = tmp28.Loaded;
-                let obj2 = closure_1_0(1977);
+                let obj2 = closure_1_0(1976);
                 dependencyMap = 1;
                 c3 = 1;
                 obj1 = { value: null, done: false };

@@ -1,14 +1,14 @@
-// Module ID: 13637
-// Function ID: 13638
+// Module ID: 13671
+// Function ID: 13672
 // Name: getReportRaidHelpArticleURL
-// Dependencies: [676, 1996, 1236, 2]
+// Dependencies: [676, 1995, 1236, 2]
 // Exports: getReportRaidHelpArticleURL, getReportRaidTypeLabel
 
-// Module 13637 (getReportRaidHelpArticleURL)
+// Module 13671 (getReportRaidHelpArticleURL)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1996 */;
+import combinedDefault from "combined" /* 1995 */;
 
 const HelpdeskArticles = ME.HelpdeskArticles;
 const obj = { DM_SPAM: "DM_SPAM", MESSAGE_SPAM: "MESSAGE_SPAM", MENTION_SPAM: "MENTION_SPAM", SUSPICIOUS_USERS: "SUSPICIOUS_USERS", SETTINGS_SPAM: "SETTINGS_SPAM" };

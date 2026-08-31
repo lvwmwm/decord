@@ -1,14 +1,14 @@
-// Module ID: 7987
-// Function ID: 7988
+// Module ID: 8009
+// Function ID: 8010
 // Name: hasFetchedColors
-// Dependencies: [32, 5, 19, 4438, 644, 705, 1491, 4294, 589, 7244, 2]
+// Dependencies: [32, 5, 19, 4440, 644, 705, 1490, 4296, 589, 7265, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 7987 (hasFetchedColors)
+// Module 8009 (hasFetchedColors)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 import keys from "keys" /* 644 */;
 
 const require = arg1;
@@ -33,7 +33,7 @@ function _maybeFetchColors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ function _maybeFetchColors() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp8) {
           c1 = tmp;
           throw tmp8;
@@ -113,7 +113,7 @@ function _fetchColors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -168,7 +168,7 @@ function _fetchColors() {
               throw arg1;
             } else if (arg0 !== 2) {
               table = arg1;
-              obj = callback(4294);
+              obj = callback(4296);
               dependencyMap = obj.getComplimentaryPaletteForColor(table[0]);
               obj1 = callback(705);
               obj1.batchUpdates(() => {

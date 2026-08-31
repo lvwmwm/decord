@@ -1,10 +1,10 @@
-// Module ID: 9249
-// Function ID: 9250
+// Module ID: 9271
+// Function ID: 9272
 // Name: _authorizeLink
-// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4446, 5315, 9250, 4159, 500, 9245, 5316, 38, 709, 4442, 1236, 5518, 4893, 2]
+// Dependencies: [32, 5, 19, 17, 676, 21, 3, 4448, 5318, 9272, 4160, 500, 9267, 5319, 38, 709, 4444, 1236, 5521, 4896, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 9249 (_authorizeLink)
+// Module 9271 (_authorizeLink)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
@@ -12,7 +12,7 @@ import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { WebBrowserType } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function _authorizeLink() {
@@ -33,7 +33,7 @@ function _authorizeLink() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ function _authorizeLink() {
             return obj;
           } else {
             url = body.body.url;
-            const obj5 = callback2(4159);
+            const obj5 = callback2(4160);
             const tmp19 = url;
             let tmp6 = closure_8;
             if (obj6.isAndroid()) {
@@ -133,7 +133,7 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -193,7 +193,7 @@ export const TwoWayLinkPreConnect = function TwoWayLinkPreConnect(platformType) 
           closure_1_1(closure_1_2[14])(null != state, "Authorize URL state query parameter must be present");
           c4.current = state;
           c5 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp15) {
         closure_2 = tmp15;

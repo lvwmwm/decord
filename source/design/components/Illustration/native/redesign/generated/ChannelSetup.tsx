@@ -1,13 +1,13 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17217
+// Function ID: 17218
 // Name: getChannelSetupSource
-// Dependencies: [19, 17, 21, 8851, 17185, 17186, 17187, 1363, 2]
+// Dependencies: [19, 17, 21, 8874, 17218, 17219, 17220, 1363, 2]
 // Exports: ChannelSetup, getChannelSetupSource, useChannelSetupSource
 
-// Module 17184 (getChannelSetupSource)
+// Module 17217 (getChannelSetupSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 8851 */;
+import getIllustrationSource from "getIllustrationSource" /* 8874 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getChannelSetupSource = function getChannelSetupSource(theme) {
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(17185);
+      return callback(17218);
     },
     darker() {
-      return callback(17186);
+      return callback(17219);
     },
     light() {
-      return callback(17187);
+      return callback(17220);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useChannelSetupSource = function useChannelSetupSource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(17185);
+      return callback(17218);
     },
     darker() {
-      return callback(17186);
+      return callback(17219);
     },
     light() {
-      return callback(17187);
+      return callback(17220);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const ChannelSetup = function ChannelSetup(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(17185);
+      return callback(17218);
     },
     darker() {
-      return callback(17186);
+      return callback(17219);
     },
     light() {
-      return callback(17187);
+      return callback(17220);
     }
   };
   obj = {};

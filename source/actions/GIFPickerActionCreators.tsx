@@ -1,19 +1,19 @@
-// Module ID: 10295
-// Function ID: 10296
+// Module ID: 10319
+// Function ID: 10320
 // Name: doSearchRequest
-// Dependencies: [1997, 10294, 676, 685, 4666, 10296, 10297, 530, 709, 12, 514, 1487, 9971, 1374, 1341, 4822, 1236, 698, 2]
+// Dependencies: [1996, 10318, 676, 685, 4668, 10320, 10321, 530, 709, 12, 514, 1486, 9994, 1370, 1341, 4825, 1236, 698, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 10295 (doSearchRequest)
+// Module 10319 (doSearchRequest)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4666 */;
-import isRefreshableAttachmentUrlAll from "isRefreshableAttachmentUrl" /* 9971 */;
-import GIF_PROVIDER from "GIF_PROVIDER" /* 10296 */;
-import isKlipyProvider from "isKlipyProvider" /* 10297 */;
-import closure_4 from "_getSystemLocale" /* 1997 */;
-import closure_5 from "getFormatFromUrl" /* 10294 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4668 */;
+import isRefreshableAttachmentUrlAll from "isRefreshableAttachmentUrl" /* 9994 */;
+import GIF_PROVIDER from "GIF_PROVIDER" /* 10320 */;
+import isKlipyProvider from "isKlipyProvider" /* 10321 */;
+import closure_4 from "_getSystemLocale" /* 1996 */;
+import closure_5 from "getFormatFromUrl" /* 10318 */;
 import ME from "ME" /* 676 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
 import importDefaultResult from "apply" /* 12 */;
@@ -31,7 +31,7 @@ function doSearchRequest(q, arg1, limit) {
     obj = {};
   }
   let obj2 = collectGuildAnalyticsMetadataDefault;
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(10296).GIF_PROVIDER };
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(10320).GIF_PROVIDER };
   obj2.trackWithMetadata(constants.SEARCH_STARTED, obj);
   const HTTP = _require(530).HTTP;
   obj1 = { url: constants2.GIFS_SEARCH, query: null, oldFormErrors: true, rejectWithError: true };
@@ -44,7 +44,7 @@ function doSearchRequest(q, arg1, limit) {
     const startTime = obj.startTime;
     const merged = Object.assign(obj, Object.create(null));
     obj = { offset: 0, limit: null, totalResults: body.length };
-    let obj2 = q(10297);
+    let obj2 = q(10321);
     obj = {};
     const analyticsID = closure_1_5.getAnalyticsID();
     const merged1 = Object.assign(obj);
@@ -61,9 +61,9 @@ function doSearchRequest(q, arg1, limit) {
     obj2 = {};
     const merged3 = Object.assign(result);
     const merged4 = Object.assign(obj1);
-    obj2.gif_provider = q(10296).GIF_PROVIDER;
-    callback(4666).trackWithMetadata(closure_1_6.SEARCH_RESULT_VIEWED, obj2);
-    const obj6 = callback(4666);
+    obj2.gif_provider = q(10320).GIF_PROVIDER;
+    callback(4668).trackWithMetadata(closure_1_6.SEARCH_RESULT_VIEWED, obj2);
+    const obj6 = callback(4668);
     const tmp2 = q;
     callback(709).dispatch({ type: "GIF_PICKER_QUERY_SUCCESS", query: q, items: body });
   }, () => {
@@ -222,7 +222,7 @@ export const fetchTrendingGIFs = function fetchTrendingGIFs(closure_10) {
     obj = {};
   }
   let obj2 = collectGuildAnalyticsMetadataDefault;
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(10296).GIF_PROVIDER };
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(10320).GIF_PROVIDER };
   obj2.trackWithMetadata(constants.SEARCH_STARTED, obj);
   const HTTP = _require(530).HTTP;
   obj1 = { url: constants2.GIFS_TRENDING_GIFS, query: null, oldFormErrors: true, rejectWithError: true };
@@ -267,9 +267,9 @@ export const gifUrlKey = function gifUrlKey(uri) {
   let tmp4 = uri;
   if (null != toURLSafeResult) {
     if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-      str = tmp5(9971).removeSignedUrlParameters(toURLSafeResult);
+      str = tmp5(9994).removeSignedUrlParameters(toURLSafeResult);
       str = str.toString();
-      const tmp5Result = tmp5(9971);
+      const tmp5Result = tmp5(9994);
     }
     tmp4 = str;
     obj2 = isRefreshableAttachmentUrlAll;
@@ -279,7 +279,7 @@ export const gifUrlKey = function gifUrlKey(uri) {
 };
 export const addFavoriteGIF = function addFavoriteGIF(item) {
   const _require = item;
-  const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1370).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteGifs", (gifs) => {
     let obj = closure_1_1(closure_1_3[9]);
     const values = Object.values(gifs.gifs);
@@ -404,7 +404,7 @@ export const addFavoriteGIF = function addFavoriteGIF(item) {
 };
 export const removeFavoriteGIF = function removeFavoriteGIF(uri) {
   const _require = uri;
-  const FrecencyUserSettingsActionCreators = _require(1374).FrecencyUserSettingsActionCreators;
+  const FrecencyUserSettingsActionCreators = _require(1370).FrecencyUserSettingsActionCreators;
   FrecencyUserSettingsActionCreators.updateAsync("favoriteGifs", (gifs) => {
     if (closure_0 in gifs.gifs) {
       delete tmp[tmp2];

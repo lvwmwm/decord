@@ -1,13 +1,13 @@
-// Module ID: 7182
-// Function ID: 7183
+// Module ID: 7203
+// Function ID: 7204
 // Name: getAll
-// Dependencies: [5, 1391, 4461, 3, 1957, 12, 11, 2]
+// Dependencies: [5, 1387, 4463, 3, 1956, 12, 11, 2]
 
-// Module 7182 (getAll)
+// Module 7203 (getAll)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "generateOldThreadCutoff" /* 4461 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "generateOldThreadCutoff" /* 4463 */;
 import set from "set" /* 2 */;
 
 let set = importDefault;
@@ -119,7 +119,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
         }
         continue;
       }
-      obj1 = statesTransaction(1957);
+      obj1 = statesTransaction(1956);
       const result = obj1.nonGuildVersionsTransaction(database);
       let obj = { id: "highest_last_message_id", versionString: null };
       obj[1] = str2;
@@ -134,7 +134,7 @@ prototype["handleWriteCaches"] = function handleWriteCaches(database) {
       const iter2 = sorted.reverse();
     }
   }
-  statesTransaction = statesTransaction(1957).readStatesTransaction(database);
+  statesTransaction = statesTransaction(1956).readStatesTransaction(database);
   statesTransaction.delete();
   const item = allReadStates.forEach((type) => statesTransaction.put("" + type.type + "-" + type.channelId, type));
 };

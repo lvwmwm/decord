@@ -115,7 +115,7 @@ arg5.captureAppStart = function captureAppStart() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -154,7 +154,7 @@ arg5.captureAppStart = function captureAppStart() {
               const debug3 = closure_1_0(integrationByName[0]).debug;
               debug3.warn("[AppStart] Could not capture App Start, missing client.");
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             const obj9 = closure_1_0(integrationByName[0]);
           }
@@ -231,7 +231,7 @@ arg5._captureAppStart = function _captureAppStart(isManual) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -270,7 +270,7 @@ arg5._captureAppStart = function _captureAppStart(isManual) {
               const debug3 = closure_1_0(integrationByName[0]).debug;
               debug3.warn("[AppStart] Could not capture App Start, missing client.");
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             const obj9 = closure_1_0(integrationByName[0]);
           }
@@ -398,7 +398,7 @@ arg5.appStartIntegration = () => {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -905,7 +905,7 @@ arg5.appStartIntegration = () => {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -969,7 +969,7 @@ arg5.appStartIntegration = () => {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

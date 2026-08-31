@@ -1,18 +1,18 @@
-// Module ID: 16249
-// Function ID: 16250
+// Module ID: 16283
+// Function ID: 16284
 // Name: trackFavoritesGuildViewed
-// Dependencies: [1923, 1394, 676, 1925, 10244, 1947, 698, 10251, 2]
+// Dependencies: [1922, 1390, 676, 1924, 10268, 1946, 698, 10275, 2]
 // Exports: default
 
-// Module 16249 (trackFavoritesGuildViewed)
+// Module 16283 (trackFavoritesGuildViewed)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1947 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10244 */;
-import setNextFavoritesGuildViewSource from "setNextFavoritesGuildViewSource" /* 10251 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
-import closure_4 from "initializeFromUserSettings" /* 1394 */;
+import isPremiumAtLeastDefault from "isPremiumAtLeast" /* 1946 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10268 */;
+import setNextFavoritesGuildViewSource from "setNextFavoritesGuildViewSource" /* 10275 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "initializeFromUserSettings" /* 1390 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { PremiumTypes } from "GuildFeatures" /* 1925 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/favorites/analytics/trackFavoritesGuildViewed.tsx");

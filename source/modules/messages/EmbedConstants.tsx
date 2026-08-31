@@ -1,9 +1,9 @@
-// Module ID: 4817
-// Function ID: 4818
+// Module ID: 4819
+// Function ID: 4820
 // Name: MessageEmbedTypes
 // Dependencies: [676, 2]
 
-// Module 4817 (MessageEmbedTypes)
+// Module 4819 (MessageEmbedTypes)
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

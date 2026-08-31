@@ -1,15 +1,15 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15084
+// Function ID: 15085
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 10101, 21, 4446, 589, 11, 8309, 4891, 5957, 5958, 1236, 1374, 2]
+// Dependencies: [19, 10124, 21, 4448, 589, 11, 8331, 4894, 5960, 5961, 1236, 1370, 2]
 // Exports: default
 
-// Module 15051 (UserSettingsCommunityNotifications)
+// Module 15084 (UserSettingsCommunityNotifications)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import noopAll from "noop" /* 19 */;
-import closure_3 from "computeAlertSettings" /* 10101 */;
+import closure_3 from "computeAlertSettings" /* 10124 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 noopAll;
@@ -54,8 +54,8 @@ export default function UserSettingsCommunityNotifications() {
       obj[2] = items;
       return closure_1_5(stateFromStores(closure_1_2[8]).TableRowGroup, obj, arg0);
     });
-    obj[0] = callback(tmp2(4891).Stack, obj);
-    tmp5 = callback(tmp2(8309).Form, obj);
+    obj[0] = callback(tmp2(4894).Stack, obj);
+    tmp5 = callback(tmp2(8331).Form, obj);
   }
   return tmp5;
 };

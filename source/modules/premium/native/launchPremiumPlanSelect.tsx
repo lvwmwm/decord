@@ -1,15 +1,15 @@
-// Module ID: 7101
-// Function ID: 7102
+// Module ID: 7122
+// Function ID: 7123
 // Name: launchPremiumPlanSelect
-// Dependencies: [676, 7099, 4689, 7102, 2010, 7102, 6207, 2]
+// Dependencies: [676, 7120, 4691, 7123, 2009, 7123, 6210, 2]
 // Exports: launchPremiumPlanSelect
 
-// Module 7101 (launchPremiumPlanSelect)
+// Module 7122 (launchPremiumPlanSelect)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
-import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 6207 */;
-import PremiumModal from "PremiumModal" /* 7102 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 6210 */;
+import PremiumModal from "PremiumModal" /* 7123 */;
 
 const UserSettingsSections = ME.UserSettingsSections;
 let result = set.fileFinishedImporting("modules/premium/native/launchPremiumPlanSelect.tsx");
@@ -71,9 +71,9 @@ export const launchPremiumPlanSelect = function launchPremiumPlanSelect(isBoostP
     obj[9] = tmp;
     obj[10] = onPaymentSuccess;
     obj[11] = onPaymentDismiss;
-    const obj3 = flag2(4689);
-    obj3.pushLazy(asyncRequireImpl(7102, dependencyMap.paths), obj, PremiumModal.PREMIUM_KEY);
-    const tmp7 = asyncRequireImpl(7102, dependencyMap.paths);
+    const obj3 = flag2(4691);
+    obj3.pushLazy(asyncRequireImpl(7123, dependencyMap.paths), obj, PremiumModal.PREMIUM_KEY);
+    const tmp7 = asyncRequireImpl(7123, dependencyMap.paths);
   }
   let result = getSanitizedRestrictedGuilds.trackUserSettingsPaneViewed({ destinationPane: PREMIUM_PLAN_SELECT });
 };

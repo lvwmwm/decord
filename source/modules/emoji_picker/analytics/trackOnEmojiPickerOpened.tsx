@@ -1,19 +1,19 @@
-// Module ID: 9067
-// Function ID: 9068
+// Module ID: 9090
+// Function ID: 9091
 // Name: trackOnEmojiPickerOpened
-// Dependencies: [19, 5366, 1391, 1982, 676, 1926, 1338, 9045, 9046, 4666, 4107, 2]
+// Dependencies: [19, 5369, 1387, 1981, 676, 1925, 1338, 9068, 9069, 4668, 4108, 2]
 // Exports: useTrackOnEmojiPickerOpenedForReactions
 
-// Module 9067 (trackOnEmojiPickerOpened)
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4666 */;
-import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9045 */;
-import useEmojiHotrail from "useEmojiHotrail" /* 9046 */;
+// Module 9090 (trackOnEmojiPickerOpened)
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4668 */;
+import useTopAndNewlyAddedEmojis from "useTopAndNewlyAddedEmojis" /* 9068 */;
+import useEmojiHotrail from "useEmojiHotrail" /* 9069 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5366 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "handleConnectionOpen" /* 1982 */;
+import closure_4 from "getEmojiToGroupId" /* 5369 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "handleConnectionOpen" /* 1981 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { EmojiIntention } from "set" /* 1926 */;
+import { EmojiIntention } from "set" /* 1925 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1338 */;
 
 require = arg1;
@@ -84,7 +84,7 @@ function trackOnEmojiPickerOpened(arg0) {
       }
       return animated;
     }).length,
-    num_custom_expressions_favorites: prop.filter(tmp11(4107).isCustomEmoji).length,
+    num_custom_expressions_favorites: prop.filter(tmp11(4108).isCustomEmoji).length,
     num_standard_expressions_favorites: prop.filter((id) => null == id.id).length,
     num_expressions_frecent: substr1.length,
     num_animated_expressions_frecent: substr1.filter((animated) => {
@@ -94,7 +94,7 @@ function trackOnEmojiPickerOpened(arg0) {
       }
       return animated;
     }).length,
-    num_custom_expressions_frecent: substr1.filter(tmp11(4107).isCustomEmoji).length,
+    num_custom_expressions_frecent: substr1.filter(tmp11(4108).isCustomEmoji).length,
     num_standard_expressions_frecent: substr1.filter((id) => null == id.id).length,
     num_current_guild_expressions: guildEmoji.length,
     num_custom_expressions_total: customEmoji.size,

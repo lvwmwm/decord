@@ -1,16 +1,16 @@
-// Module ID: 15760
-// Function ID: 15761
+// Module ID: 15794
+// Function ID: 15795
 // Name: ChannelListPanelBackdrop
-// Dependencies: [19, 17, 676, 21, 4446, 712, 15544, 1629, 14625, 15761, 2]
+// Dependencies: [19, 17, 676, 21, 4448, 712, 15578, 1628, 14659, 15795, 2]
 // Exports: default
 
-// Module 15760 (ChannelListPanelBackdrop)
+// Module 15794 (ChannelListPanelBackdrop)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { DM_WIDTH } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ View: c4, StyleSheet } = get_ActivityIndicator);
@@ -31,9 +31,9 @@ export default function ChannelListPanelBackdrop(children) {
   let mobileQuestDockHeight;
   const tmp = callback();
   dependencyMap = tmp;
-  let obj = style(15544);
+  let obj = style(15578);
   const isHomeDrawerEnabled = obj.useIsHomeDrawerEnabled();
-  obj1 = style(14625);
+  obj1 = style(14659);
   mobileQuestDockHeight = obj1.useMobileQuestDockHeight();
   let items = [tmp, contentInset, mobileQuestDockHeight, style];
   obj = {
@@ -83,7 +83,7 @@ export default function ChannelListPanelBackdrop(children) {
   } else {
     ScreenAlignedThemedGradientSliding = contentInset(tmp9);
   }
-  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1629)().top };
+  obj = { offsetX: DM_WIDTH, offsetY: contentInset(1628)().top };
   const items1 = [closure_6(ScreenAlignedThemedGradientSliding, obj), , ];
   obj1 = { pointerEvents: "none", style: tmp.panelTint };
   items1[1] = closure_6(closure_4, obj1);

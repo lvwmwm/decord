@@ -1,10 +1,10 @@
-// Module ID: 7463
-// Function ID: 7464
+// Module ID: 7484
+// Function ID: 7485
 // Name: setFilterTagIds
-// Dependencies: [1391, 2]
+// Dependencies: [1387, 2]
 
-// Module 7463 (setFilterTagIds)
-import set from "ensureGuildLoaded" /* 1391 */;
+// Module 7484 (setFilterTagIds)
+import set from "ensureGuildLoaded" /* 1387 */;
 import set from "set" /* 2 */;
 
 set = Object.create(function ForumChannelAnalyticsManager() {

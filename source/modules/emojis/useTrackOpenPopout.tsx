@@ -1,16 +1,16 @@
-// Module ID: 9112
-// Function ID: 9113
+// Module ID: 9135
+// Function ID: 9136
 // Name: useTrackOpenPopout
-// Dependencies: [19, 1391, 1982, 1926, 676, 4666, 4910, 9038, 698, 2]
+// Dependencies: [19, 1387, 1981, 1925, 676, 4668, 4913, 9061, 698, 2]
 // Exports: useTrackOpenPopout
 
-// Module 9112 (useTrackOpenPopout)
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4666 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4910 */;
+// Module 9135 (useTrackOpenPopout)
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4668 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4913 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "handleConnectionOpen" /* 1982 */;
-import { EmojiInteractionPoint } from "set" /* 1926 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "handleConnectionOpen" /* 1981 */;
+import { EmojiInteractionPoint } from "set" /* 1925 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

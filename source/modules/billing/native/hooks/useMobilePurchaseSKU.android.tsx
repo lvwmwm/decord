@@ -1,15 +1,15 @@
-// Module ID: 10527
-// Function ID: 10528
+// Module ID: 10551
+// Function ID: 10552
 // Name: useMobilePurchaseSKU
-// Dependencies: [5, 19, 7116, 1923, 676, 6050, 3, 10418, 10417, 5906, 698, 709, 7121, 4123, 1903, 10528, 514, 2]
+// Dependencies: [5, 19, 7137, 1922, 676, 6053, 3, 10442, 10441, 5909, 698, 709, 7142, 4124, 1902, 10552, 514, 2]
 // Exports: default
 
-// Module 10527 (useMobilePurchaseSKU)
+// Module 10551 (useMobilePurchaseSKU)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { useNativeCheckoutStoreOrNull as closure_5 } from "context" /* 7116 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import { useNativeCheckoutStoreOrNull as closure_5 } from "context" /* 7137 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { CurrencyCodes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -123,7 +123,7 @@ export default function useMobilePurchaseSKU(skuId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ export default function useMobilePurchaseSKU(skuId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -408,7 +408,7 @@ export default function useMobilePurchaseSKU(skuId) {
           }
           c4 = 0;
           v02 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
         const obj9 = { productId: null, skuId: null, isOneTimePurchase: true, analyticsLoadId: null, analyticsLocations: null, analyticsData: null, isGift: null, giftInfoOptions: null, onPurchaseError: null };
         obj9[0] = closure_1;

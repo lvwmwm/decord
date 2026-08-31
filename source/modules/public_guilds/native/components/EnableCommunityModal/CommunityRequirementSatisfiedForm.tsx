@@ -1,10 +1,10 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17223
+// Function ID: 17224
 // Name: CommunityRequirementSatisfiedForm
-// Dependencies: [19, 17, 21, 4162, 17180, 5033, 2]
+// Dependencies: [19, 17, 21, 4163, 17213, 5036, 2]
 // Exports: default
 
-// Module 17190 (CommunityRequirementSatisfiedForm)
+// Module 17223 (CommunityRequirementSatisfiedForm)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -16,7 +16,7 @@ let result = require("set").fileFinishedImporting("modules/public_guilds/native/
 
 export default function CommunityRequirementSatisfiedForm(formSwitchDisabled) {
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
-  let obj = formSwitchDisabled(17180);
+  let obj = formSwitchDisabled(17213);
   const enableCommunitySharedStyles = obj.useEnableCommunitySharedStyles();
   obj = { style: enableCommunitySharedStyles.communityRequirementSatisfiedFormWrapper, children: null };
   const items = [formSwitchDisabled.children, ];
@@ -30,7 +30,7 @@ export default function CommunityRequirementSatisfiedForm(formSwitchDisabled) {
         const obj = formSwitchDisabled(closure_1_1[3]);
       }
     };
-    tmp6 = callback(formSwitchDisabled(5033).PressableOpacity, obj);
+    tmp6 = callback(formSwitchDisabled(5036).PressableOpacity, obj);
   }
   items[1] = tmp6;
   obj[1] = items;

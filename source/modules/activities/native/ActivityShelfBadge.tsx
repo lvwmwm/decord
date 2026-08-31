@@ -1,16 +1,16 @@
-// Module ID: 11594
-// Function ID: 11595
+// Module ID: 11625
+// Function ID: 11626
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 676, 21, 4446, 712, 1297, 1956, 4442, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4448, 712, 1297, 1955, 4444, 1236, 2]
 // Exports: default
 
-// Module 11594 (ActivityShelfBadge)
+// Module 11625 (ActivityShelfBadge)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1956 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import Button from "Button" /* 1297 */;
 
 require = arg1;
@@ -42,11 +42,11 @@ export default function ActivityShelfBadge(arg0) {
     obj[1] = tmp.badgeText;
     const intl = tmp2(1236).intl;
     obj[3] = intl.string(tmp2(1236).t.y2b7CA);
-    obj[1] = jsx(tmp2(4442).Text, { variant: "text-xs/semibold", style: null, color: "text-overlay-light", children: null });
+    obj[1] = jsx(tmp2(4444).Text, { variant: "text-xs/semibold", style: null, color: "text-overlay-light", children: null });
     let tmp6 = <View variant="text-xs/semibold" style={null} color="text-overlay-light">{null}</View>;
   } else {
     tmp6 = null;
-    if (labelType === tmp2(1956).EmbeddedActivityLabelTypes.UPDATED) {
+    if (labelType === tmp2(1955).EmbeddedActivityLabelTypes.UPDATED) {
       obj = { style: null, children: null };
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
@@ -55,7 +55,7 @@ export default function ActivityShelfBadge(arg0) {
       obj1[1] = tmp.badgeText;
       const intl2 = tmp2(1236).intl;
       obj1[3] = intl2.string(tmp2(1236).t["/qdhkk"]);
-      obj[1] = jsx(tmp2(4442).Text, { variant: "text-xs/semibold", style: null, color: "text-overlay-light", children: null });
+      obj[1] = jsx(tmp2(4444).Text, { variant: "text-xs/semibold", style: null, color: "text-overlay-light", children: null });
       tmp6 = <View style={null}>{null}</View>;
     }
   }

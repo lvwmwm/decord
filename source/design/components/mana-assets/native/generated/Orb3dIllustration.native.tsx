@@ -1,14 +1,14 @@
-// Module ID: 6834
-// Function ID: 6835
+// Module ID: 6851
+// Function ID: 6852
 // Name: Orb3dIllustration
-// Dependencies: [21, 5458, 6835, 2]
+// Dependencies: [21, 5461, 6852, 2]
 // Exports: Orb3dIllustration
 
-// Module 6834 (Orb3dIllustration)
+// Module 6851 (Orb3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6835 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6852 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/Orb3dIllustration.native.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 9737
-// Function ID: 9738
+// Module ID: 9759
+// Function ID: 9760
 // Name: isVideoBackgroundSupported
-// Dependencies: [4497, 4510, 500, 9738, 2]
+// Dependencies: [4499, 4512, 500, 9760, 2]
 // Exports: default
 
-// Module 9737 (isVideoBackgroundSupported)
-import apexExperimentDefault from "apexExperiment" /* 9738 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
-import { Features } from "DesktopSources" /* 4510 */;
+// Module 9759 (isVideoBackgroundSupported)
+import apexExperimentDefault from "apexExperiment" /* 9760 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
+import { Features } from "DesktopSources" /* 4512 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_backgrounds/isVideoBackgroundSupported.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 4487
-// Function ID: 4488
+// Module ID: 4489
+// Function ID: 4490
 // Name: addApplication
-// Dependencies: [32, 4472, 589, 709, 2]
+// Dependencies: [32, 4474, 589, 709, 2]
 
-// Module 4487 (addApplication)
+// Module 4489 (addApplication)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "_slicedToArray" /* 32 */;
-import closure_1 from "createExecutable" /* 4472 */;
+import closure_1 from "createExecutable" /* 4474 */;
 import set from "set" /* 2 */;
 
 function addApplication(fromServer) {

@@ -1,14 +1,14 @@
-// Module ID: 11739
-// Function ID: 11740
+// Module ID: 11770
+// Function ID: 11771
 // Name: useUploadDisabled
-// Dependencies: [4820, 4090, 4819, 676, 589, 6033, 2]
+// Dependencies: [4822, 4091, 4821, 676, 589, 6036, 2]
 // Exports: default
 
-// Module 11739 (useUploadDisabled)
+// Module 11770 (useUploadDisabled)
 import set from "set" /* 2 */;
-import handleChanged from "handleChanged" /* 4820 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_4 from "map" /* 4819 */;
+import handleChanged from "handleChanged" /* 4822 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_4 from "map" /* 4821 */;
 import ME from "ME" /* 676 */;
 
 const DraftType = handleChanged.DraftType;

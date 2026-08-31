@@ -1,10 +1,10 @@
-// Module ID: 15587
-// Function ID: 15588
+// Module ID: 15621
+// Function ID: 15622
 // Name: useHappeningNowScrollBehavior
 // Dependencies: [32, 19, 2]
 // Exports: default, useHappeningNowScrollSnapping
 
-// Module 15587 (useHappeningNowScrollBehavior)
+// Module 15621 (useHappeningNowScrollBehavior)
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "noop" /* 19 */;
 

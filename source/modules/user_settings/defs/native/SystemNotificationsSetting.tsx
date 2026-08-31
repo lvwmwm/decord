@@ -1,16 +1,16 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15051
+// Function ID: 15052
 // Name: _handleEnableSystemNotification
-// Dependencies: [5, 17, 7830, 676, 4696, 11912, 11920, 698, 9596, 11006, 1236, 2]
+// Dependencies: [5, 17, 7852, 676, 4698, 11946, 11954, 698, 9618, 11031, 1236, 2]
 
-// Module 15018 (_handleEnableSystemNotification)
+// Module 15051 (_handleEnableSystemNotification)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus" /* 4696 */;
-import EventActionType from "EventActionType" /* 11912 */;
-import createToggle from "createToggle" /* 11006 */;
+import { NotificationAuthorizationStatus as closure_6 } from "NativePermissionStatus" /* 4698 */;
+import EventActionType from "EventActionType" /* 11946 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 function _handleEnableSystemNotification() {
@@ -27,7 +27,7 @@ function _handleEnableSystemNotification() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ function _handleEnableSystemNotification() {
         } else {
           closure_0 = arg1;
           if (closure_0 === constants2.UNDETERMINED) {
-            let obj3 = callback(11920);
+            let obj3 = callback(11954);
             const permission = obj3.requestPermission((permission_granted) => {
               let obj = tmp2(table[7]);
               obj = { action_type: constants2.ALLOW_TO_REQUEST, action_location: constants3.NOTIFICATION_SETTING, permission_granted };
@@ -82,7 +82,7 @@ function _handleEnableSystemNotification() {
             obj3 = { setting_type: "os", current_status: null };
             obj3[1] = num3;
             obj.track(constants.NOTIFICATION_SETTINGS_CLICKED, obj3);
-            obj2 = callback(9596);
+            obj2 = callback(9618);
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;

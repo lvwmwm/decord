@@ -1,14 +1,14 @@
-// Module ID: 10694
-// Function ID: 10695
+// Module ID: 10718
+// Function ID: 10719
 // Name: getCardProductName
-// Dependencies: [1951, 1236, 7245, 2]
+// Dependencies: [1950, 1236, 7266, 2]
 // Exports: getCardProductName, getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 10694 (getCardProductName)
+// Module 10718 (getCardProductName)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7245 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7266 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
 
@@ -88,17 +88,17 @@ export const getProductNameAndTypeLabel = function getProductNameAndTypeLabel(cl
       let obj = { product: null };
       obj[0] = "";
       return intl5.formatToPlainString(tmp3(1236).t.lvBzLi, obj);
-    } else if (tmp3(1951).CollectiblesItemType.PROFILE_EFFECT === productType) {
+    } else if (tmp3(1950).CollectiblesItemType.PROFILE_EFFECT === productType) {
       const intl4 = tmp3(1236).intl;
       obj = { product: null };
       obj[0] = "";
       return intl4.formatToPlainString(tmp3(1236).t.eR7moP, obj);
-    } else if (tmp3(1951).CollectiblesItemType.NAMEPLATE === productType) {
+    } else if (tmp3(1950).CollectiblesItemType.NAMEPLATE === productType) {
       const intl3 = tmp3(1236).intl;
       obj1 = { product: null };
       obj1[0] = "";
       return intl3.formatToPlainString(tmp3(1236).t.YFOwHj, obj1);
-    } else if (tmp3(1951).CollectiblesItemType.PROFILE_FRAME === productType) {
+    } else if (tmp3(1950).CollectiblesItemType.PROFILE_FRAME === productType) {
       const intl2 = tmp3(1236).intl;
       const obj2 = { product: null };
       obj2[0] = "";

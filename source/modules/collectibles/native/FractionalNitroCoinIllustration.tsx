@@ -1,12 +1,12 @@
-// Module ID: 10689
-// Function ID: 10690
+// Module ID: 10713
+// Function ID: 10714
 // Name: FRACTIONAL_NITRO_COIN_SIZE
-// Dependencies: [19, 678, 21, 6221, 2]
+// Dependencies: [19, 678, 21, 6224, 2]
 // Exports: FractionalNitroCoinIllustration
 
-// Module 10689 (FRACTIONAL_NITRO_COIN_SIZE)
+// Module 10713 (FRACTIONAL_NITRO_COIN_SIZE)
 import noopAll from "noop" /* 19 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6221 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6224 */;
 import { EXTERNAL_PRODUCT_SKU_IDS } from "items" /* 678 */;
 import { jsx } from "jsxProd" /* 21 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 8106
-// Function ID: 8107
+// Module ID: 8128
+// Function ID: 8129
 // Name: useMessageMaxLength
-// Dependencies: [1923, 676, 4108, 589, 2]
+// Dependencies: [1922, 676, 4109, 589, 2]
 // Exports: default, getMaxMessageLength
 
-// Module 8106 (useMessageMaxLength)
+// Module 8128 (useMessageMaxLength)
 import initialize from "initialize" /* 589 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4108 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4109 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

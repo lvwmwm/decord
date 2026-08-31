@@ -1,13 +1,13 @@
-// Module ID: 10345
-// Function ID: 10346
+// Module ID: 10369
+// Function ID: 10370
 // Name: useStickerPickerListData
-// Dependencies: [19, 10319, 10287, 1338, 10318, 12, 1236, 5177, 9069, 2]
+// Dependencies: [19, 10343, 10311, 1338, 10342, 12, 1236, 5180, 9092, 2]
 // Exports: default
 
-// Module 10345 (useStickerPickerListData)
+// Module 10369 (useStickerPickerListData)
 import closure_3 from "noop" /* 19 */;
-import { useStickerPickerStore } from "useStickerPickerStore" /* 10319 */;
-import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10287 */;
+import { useStickerPickerStore } from "useStickerPickerStore" /* 10343 */;
+import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10311 */;
 
 const require = arg1;
 ({ MIN_MARGIN: c5, ROW_HEIGHT: closure_6, STICKER_SIZE: error, LABEL_HEIGHT } = PADDING_HORIZONTAL);

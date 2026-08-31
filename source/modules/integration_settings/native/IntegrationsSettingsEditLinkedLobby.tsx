@@ -1,16 +1,16 @@
-// Module ID: 16362
-// Function ID: 16363
+// Module ID: 16396
+// Function ID: 16397
 // Name: EditLinkedLobby
-// Dependencies: [19, 17, 1923, 21, 4446, 712, 4166, 1500, 5918, 5938, 5924, 4640, 589, 10609, 8836, 1236, 4442, 8309, 4891, 1297, 1435, 5957, 5564, 2]
+// Dependencies: [19, 17, 1922, 21, 4448, 712, 4167, 1499, 5921, 5941, 5927, 4642, 589, 10633, 8859, 1236, 4444, 8331, 4894, 1297, 1431, 5960, 5567, 2]
 // Exports: default
 
-// Module 16362 (EditLinkedLobby)
+// Module 16396 (EditLinkedLobby)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);

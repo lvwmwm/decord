@@ -1,10 +1,10 @@
-// Module ID: 17446
-// Function ID: 17447
+// Module ID: 17479
+// Function ID: 17480
 // Name: promise
-// Dependencies: [1391, 17443, 10039, 10024, 2]
+// Dependencies: [1387, 17476, 10062, 10047, 2]
 
-// Module 17446 (promise)
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
+// Module 17479 (promise)
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/headless_tasks/android/ToggleDeafen.tsx");

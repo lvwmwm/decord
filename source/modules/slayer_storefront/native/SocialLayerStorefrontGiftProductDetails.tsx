@@ -1,17 +1,17 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10699
+// Function ID: 10700
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 676, 21, 4446, 712, 5924, 10514, 1435, 8449, 4442, 2]
+// Dependencies: [19, 17, 676, 21, 4448, 712, 5927, 10538, 1431, 8471, 4444, 2]
 // Exports: default
 
-// Module 10675 (SocialLayerStorefrontGiftProductDetails)
+// Module 10699 (SocialLayerStorefrontGiftProductDetails)
 import ThemesDefault from "Themes" /* 712 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8449 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8471 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { PriceSetAssignmentPurchaseTypes as closure_6 } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ Image: c4, View: c5 } = get_ActivityIndicator);
@@ -32,9 +32,9 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
   let getOrFetchApplication;
   const tmp = callback2();
-  let obj = getOrFetchApplication(5924);
+  let obj = getOrFetchApplication(5927);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  obj1 = getOrFetchApplication(10514);
+  obj1 = getOrFetchApplication(10538);
   obj = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj1.useFormattedSKUPrice(obj).userPrice;
   const items = [getOrFetchApplication];
@@ -67,18 +67,18 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     const items2 = [tmp8Result, ];
     const obj5 = { variant: "text-sm/medium", color: "text-muted", children: null };
     obj5[2] = getOrFetchApplication.name;
-    items2[1] = tmp8(tmp2(4442).Text, obj5);
+    items2[1] = tmp8(tmp2(4444).Text, obj5);
     obj2[1] = items2;
     tmp6Result = tmp6(tmp7, obj2);
   }
-  const items3 = [tmp6Result, callback(getOrFetchApplication(4442).Text, { variant: "text-md/semibold", children: sku.name })];
+  const items3 = [tmp6Result, callback(getOrFetchApplication(4444).Text, { variant: "text-md/semibold", children: sku.name })];
   obj1[1] = items3;
   items1[1] = closure_8(closure_5, obj1);
   tmp8Result = null != userPrice;
   if (tmp8Result) {
     const obj7 = { variant: "text-md/semibold", children: null };
     obj7[1] = userPrice;
-    tmp8Result = tmp8(tmp2(4442).Text, obj7);
+    tmp8Result = tmp8(tmp2(4444).Text, obj7);
   }
   items1[2] = tmp8Result;
   obj[1] = items1;

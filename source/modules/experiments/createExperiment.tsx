@@ -1,15 +1,15 @@
-// Module ID: 4358
-// Function ID: 4359
+// Module ID: 4360
+// Function ID: 4361
 // Name: createExperiment
-// Dependencies: [32, 19, 1218, 4359, 4360, 4367, 4368, 4369, 2]
+// Dependencies: [32, 19, 1218, 4361, 4362, 4369, 4370, 4371, 2]
 // Exports: default
 
-// Module 4358 (createExperiment)
+// Module 4360 (createExperiment)
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "getHash" /* 4359 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4360 */;
+import closure_7 from "getHash" /* 4361 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4362 */;
 
 const require = arg1;
 ({ useState: c4, useEffect: c5 } = noop);

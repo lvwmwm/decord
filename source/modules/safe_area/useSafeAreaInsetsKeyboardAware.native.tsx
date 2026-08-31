@@ -1,13 +1,13 @@
-// Module ID: 5559
-// Function ID: 5560
+// Module ID: 5562
+// Function ID: 5563
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1496, 5560, 5561, 1629, 1497, 500, 1895, 4310, 1627, 5562, 2]
+// Dependencies: [32, 19, 1495, 5563, 5564, 1628, 1496, 500, 1894, 4312, 1626, 5565, 2]
 // Exports: default
 
-// Module 5559 (useSafeAreaInsetsKeyboardAware)
+// Module 5562 (useSafeAreaInsetsKeyboardAware)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "subscribeToKeyboardUIStore" /* 1496 */;
+import closure_5 from "subscribeToKeyboardUIStore" /* 1495 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/safe_area/useSafeAreaInsetsKeyboardAware.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17393
+// Function ID: 17394
 // Name: AVErrorScreenshareOSErrorDefinition
-// Dependencies: [500, 9504, 17349, 4512, 2]
+// Dependencies: [500, 9526, 17382, 4514, 2]
 
-// Module 17360 (AVErrorScreenshareOSErrorDefinition)
+// Module 17393 (AVErrorScreenshareOSErrorDefinition)
 import set from "set" /* 2 */;
 import closure_2 from "module_4294963475" /* 4294963475 */;
 
@@ -14,15 +14,15 @@ export const AVErrorScreenshareOSErrorDefinition = {
     activeStreams = activeStreams.activeStreams;
     const found = activeStreams.filter((errorCode) => null != errorCode.errorCode);
     return found.map((errorCode) => {
-      const obj = { type: callback(9504).AVError.SCREENSHARE_OS_ERROR, errorMessage: null };
+      const obj = { type: callback(9526).AVError.SCREENSHARE_OS_ERROR, errorMessage: null };
       if (obj2.isMac()) {
         if (str === closure_2) {
           const _HermesInternal = HermesInternal;
           let combined = "" + str + " - your Mac may be low on disk space";
         }
         obj[1] = combined;
-        let tmpResult = tmp(17349);
-        tmpResult = tmp(4512);
+        let tmpResult = tmp(17382);
+        tmpResult = tmp(4514);
         const merged = Object.assign(tmpResult.getStreamErrorContext(tmpResult.encodeStreamKey(errorCode)));
         return obj;
       }

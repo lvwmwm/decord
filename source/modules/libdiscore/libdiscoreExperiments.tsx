@@ -1,15 +1,15 @@
-// Module ID: 1914
-// Function ID: 1915
+// Module ID: 1913
+// Function ID: 1914
 // Name: items
-// Dependencies: [1915, 3, 1917, 38, 2]
+// Dependencies: [1914, 3, 1916, 38, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
-// Module 1914 (items)
+// Module 1913 (items)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import ensureValidMode2 from "ensureValidMode" /* 1915 */;
-import isBlockedDomain from "isBlockedDomain" /* 1917 */;
+import ensureValidMode2 from "ensureValidMode" /* 1914 */;
+import isBlockedDomain from "isBlockedDomain" /* 1916 */;
 
 const ensureValidMode = ensureValidMode2.ensureValidMode;
 let closure_4 = new timestampDefault("libdiscoreExperiments");
@@ -41,9 +41,9 @@ prototype["getCachedConfig"] = function getCachedConfig() {
   const self = this;
   if (this.cachedConfig === closure_6) {
     if (obj.isLibdiscoreInitialized()) {
-      const experimentCacher = tmp(1917).getExperimentCacher();
+      const experimentCacher = tmp(1916).getExperimentCacher();
       self.cachedConfig = experimentCacher.getConfig(self.id);
-      const tmpResult = tmp(1917);
+      const tmpResult = tmp(1916);
     } else {
       self.cachedConfig = undefined;
     }

@@ -1,18 +1,18 @@
-// Module ID: 5322
-// Function ID: 5323
+// Module ID: 5325
+// Function ID: 5326
 // Name: recomputeGuild
-// Dependencies: [1434, 1993, 1986, 1910, 1923, 676, 4078, 1403, 709, 11, 589, 2]
+// Dependencies: [1430, 1992, 1985, 1909, 1922, 676, 4079, 1399, 709, 11, 589, 2]
 
-// Module 5322 (recomputeGuild)
+// Module 5325 (recomputeGuild)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import GuildMemberFlags2 from "GuildMemberFlags" /* 4078 */;
-import closure_4 from "trackCommunicationDisabled" /* 1993 */;
-import closure_5 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
+import GuildMemberFlags2 from "GuildMemberFlags" /* 4079 */;
+import closure_4 from "trackCommunicationDisabled" /* 1992 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -208,7 +208,7 @@ function recomputeGuild(guildId) {
             if (num == null) {
               num = 0;
             }
-            const obj2 = _require(1403);
+            const obj2 = _require(1399);
           }
         }
       }

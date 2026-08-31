@@ -1,9 +1,9 @@
-// Module ID: 13316
-// Function ID: 13317
+// Module ID: 13350
+// Function ID: 13351
 // Name: ProgramCurrentState
 // Dependencies: [2]
 
-// Module 13316 (ProgramCurrentState)
+// Module 13350 (ProgramCurrentState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ProgramCurrentState.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 7421
-// Function ID: 7422
+// Module ID: 7442
+// Function ID: 7443
 // Name: getAdUser
-// Dependencies: [32, 19, 7422, 7423, 7424, 2]
+// Dependencies: [32, 19, 7443, 7444, 7445, 2]
 // Exports: getAdUser, useAdUser
 
-// Module 7421 (getAdUser)
-import _fetchAdUser from "_fetchAdUser" /* 7424 */;
+// Module 7442 (getAdUser)
+import _fetchAdUser from "_fetchAdUser" /* 7445 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "adUser" /* 7422 */;
-import { DEFAULT_TIMEOUT_MS } from "DEFAULT_TIMEOUT_MS" /* 7423 */;
+import closure_4 from "adUser" /* 7443 */;
+import { DEFAULT_TIMEOUT_MS } from "DEFAULT_TIMEOUT_MS" /* 7444 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/ads/utils/AdDataUtils.android.tsx");

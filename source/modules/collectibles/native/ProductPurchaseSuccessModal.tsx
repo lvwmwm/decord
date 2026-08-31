@@ -1,23 +1,23 @@
-// Module ID: 10763
-// Function ID: 10764
+// Module ID: 10787
+// Function ID: 10788
 // Name: CancelButton
-// Dependencies: [32, 853, 19, 17, 4438, 676, 21, 4446, 712, 1951, 10762, 5467, 5516, 1236, 4186, 4892, 4447, 4414, 7244, 10764, 4166, 4905, 8831, 10766, 589, 10767, 10768, 10773, 8549, 10776, 8439, 5518, 10777, 8452, 8465, 8472, 10795, 10796, 4442, 7246, 4893, 2]
+// Dependencies: [32, 853, 19, 17, 4440, 676, 21, 4448, 712, 1950, 10786, 5470, 5519, 1236, 4187, 4895, 4449, 4416, 7265, 10788, 4167, 4908, 8854, 10790, 589, 10791, 10792, 10797, 8571, 10800, 8461, 5521, 10801, 8474, 8487, 8494, 10819, 10820, 4444, 7267, 4896, 2]
 // Exports: default
 
-// Module 10763 (CancelButton)
+// Module 10787 (CancelButton)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
-import Background from "Background" /* 5467 */;
-import tinycolorDefault from "tinycolor" /* 7244 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import Background from "Background" /* 5470 */;
+import tinycolorDefault from "tinycolor" /* 7265 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "_toArray" /* 853 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function CancelButton(arg0) {
@@ -129,7 +129,7 @@ let closure_16 = createCacheKey.createStyles((arg0) => {
   }
   obj2[5] = PX_32;
   if (flag) {
-    if (arg0 === tmp3(1951).CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === tmp3(1950).CollectiblesItemType.AVATAR_DECORATION) {
       const obj3 = { shadowColor: null, shadowOffset: null, shadowOpacity: 1, shadowRadius: 60, elevation: 24 };
       obj3[0] = tmp(712).unsafe_rawColors.PRIMARY_630;
       obj3[1] = { width: 0, height: 0 };
@@ -141,7 +141,7 @@ let closure_16 = createCacheKey.createStyles((arg0) => {
     const obj4 = { paddingTop: null, minHeight: null, flexDirection: "column", alignItems: "center", justifyContent: "flex-start", gap: null };
     obj4[0] = tmp(712).space.PX_24;
     let str2;
-    if (arg0 === tmp3(1951).CollectiblesItemType.AVATAR_DECORATION) {
+    if (arg0 === tmp3(1950).CollectiblesItemType.AVATAR_DECORATION) {
       str2 = "32%";
     }
     obj4[1] = str2;

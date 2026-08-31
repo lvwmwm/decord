@@ -1,15 +1,15 @@
-// Module ID: 15835
-// Function ID: 15836
+// Module ID: 15869
+// Function ID: 15870
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 15805, 676, 1388, 21, 4186, 10251, 15830, 1236, 3148, 15836, 8913, 2]
+// Dependencies: [32, 19, 15839, 676, 1384, 21, 4187, 10275, 15864, 1236, 3149, 15870, 8936, 2]
 // Exports: default
 
-// Module 15835 (FavoritesGuildCoachmarkIntro)
+// Module 15869 (FavoritesGuildCoachmarkIntro)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "withEqualityFn" /* 15805 */;
+import closure_5 from "withEqualityFn" /* 15839 */;
 import { FAVORITES } from "ME" /* 676 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

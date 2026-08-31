@@ -1,28 +1,28 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16677
+// Function ID: 16678
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4468, 4520, 5328, 11776, 11774, 16600, 11779, 676, 4467, 11777, 21, 4186, 4442, 4905, 1297, 4446, 712, 4629, 4512, 5971, 1236, 4893, 11775, 589, 9502, 4545, 12402, 9505, 9501, 16645, 9515, 8450, 8059, 4447, 4892, 7743, 5458, 4166, 16646, 10668, 9148, 4173, 5918, 16604, 16616, 16599, 16647, 16648, 8836, 5617, 16649, 11778, 16650, 16651, 16652, 16653, 16654, 16664, 2]
+// Dependencies: [32, 19, 17, 4470, 4522, 5331, 11807, 11805, 16633, 11810, 676, 4469, 11808, 21, 4187, 4444, 4908, 1297, 4448, 712, 4631, 4514, 5974, 1236, 4896, 11806, 589, 9524, 4547, 12436, 9527, 9523, 16678, 9537, 8472, 8081, 4449, 4895, 7764, 5461, 4167, 16679, 10692, 9170, 4174, 5921, 16637, 16649, 16632, 16680, 16681, 8859, 5620, 16682, 11809, 16683, 16684, 16685, 16686, 16687, 16697, 2]
 
-// Module 16644 (SelfStreamCard)
+// Module 16677 (SelfStreamCard)
 import ThemesDefault from "Themes" /* 712 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4892 */;
-import LinearGradientDefault from "LinearGradient" /* 4905 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4895 */;
+import LinearGradientDefault from "LinearGradient" /* 4908 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "reset" /* 4468 */;
-import closure_7 from "createRTCConnection" /* 4520 */;
-import closure_8 from "anyoneHasFlagInContext" /* 5328 */;
-import VoicePanelModes from "VoicePanelModes" /* 11776 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11774 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16600 */;
-import { EDGE_GUTTER } from "CARD_SIZE" /* 11779 */;
+import closure_6 from "reset" /* 4470 */;
+import closure_7 from "createRTCConnection" /* 4522 */;
+import closure_8 from "anyoneHasFlagInContext" /* 5331 */;
+import VoicePanelModes from "VoicePanelModes" /* 11807 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11805 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16633 */;
+import { EDGE_GUTTER } from "CARD_SIZE" /* 11810 */;
 import { ApplicationStreamStates } from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4467 */;
-import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 11777 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4469 */;
+import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 11808 */;
 import jsxProd from "jsxProd" /* 21 */;
-import importDefaultResult from "module_4186" /* 4186 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import importDefaultResult from "module_4187" /* 4187 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function SelfStreamCard(sharedCoords) {
@@ -1165,7 +1165,7 @@ let closure_43 = { code: "function VoicePanelCardTsx9(){const{focused}=this.__cl
 let closure_44 = { code: "function VoicePanelCardTsx10(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 let closure_45 = { code: "function VoicePanelCardTsx11(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 let closure_46 = { code: "function VoicePanelCardTsx12(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-let closure_47 = { isSelf: false, hasVideo: false, user: { id: "r" } };
+let closure_47 = { isSelf: false, hasVideo: false, user: { id: "Array" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING) {
   let flag = arg2;
   if (arg2 === undefined) {
@@ -1178,13 +1178,13 @@ function layoutTransitionFunction(originX, SUBTLE_SPRING) {
     str2 = "animate-never";
   }
   obj = { originX: obj.withSpring(originX.targetOriginX, SUBTLE_SPRING, str2), originY: null, width: null, height: null };
-  let tmpResult = tmp(4892);
+  let tmpResult = tmp(4895);
   let str3 = str;
   if (flag) {
     str3 = "animate-never";
   }
   obj[1] = tmpResult.withSpring(originX.targetOriginY, SUBTLE_SPRING, str3);
-  tmpResult = tmp(4892);
+  tmpResult = tmp(4895);
   let str4 = str;
   if (flag) {
     str4 = "animate-never";
@@ -1450,7 +1450,7 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "container", layout: "Array", layoutPhysics: "container" };
+  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "bottom", layout: "<string:1360069526>", layoutPhysics: "<string:1359244823>" };
   obj8[3] = layoutTransition;
   obj8[4] = physics;
   tmp26Result = callback(closure_37, obj8);

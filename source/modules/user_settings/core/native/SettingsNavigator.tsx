@@ -1,21 +1,21 @@
-// Module ID: 16413
-// Function ID: 16414
+// Module ID: 16447
+// Function ID: 16448
 // Name: SettingHeaderBadge
-// Dependencies: [32, 19, 17, 1997, 14275, 676, 21, 7769, 4446, 712, 14938, 1297, 4442, 1501, 13004, 16414, 6207, 647, 5918, 5938, 14277, 7167, 14278, 5973, 13748, 4166, 5033, 1236, 15922, 16415, 14169, 16416, 38, 2]
+// Dependencies: [32, 19, 17, 1996, 14309, 676, 21, 7790, 4448, 712, 14971, 1297, 4444, 1500, 13038, 16448, 6210, 647, 5921, 5941, 14311, 7188, 14312, 5976, 13782, 4167, 5036, 1236, 15956, 16449, 14203, 16450, 38, 2]
 
-// Module 16413 (SettingHeaderBadge)
+// Module 16447 (SettingHeaderBadge)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4442 */;
-import SettingsBadgeType from "SettingsBadgeType" /* 14938 */;
+import Text from "Text" /* 4444 */;
+import SettingsBadgeType from "SettingsBadgeType" /* 14971 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_getSystemLocale" /* 1997 */;
-import closure_7 from "zustandStore" /* 14275 */;
+import closure_6 from "_getSystemLocale" /* 1996 */;
+import closure_7 from "zustandStore" /* 14309 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7769 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7790 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function SettingHeaderBadge(badge) {

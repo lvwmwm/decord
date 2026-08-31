@@ -1,19 +1,19 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14922
+// Function ID: 14923
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1923, 676, 21, 4446, 712, 1939, 1236, 3472, 1500, 1501, 589, 4108, 5918, 11477, 11481, 1938, 4609, 4413, 14890, 2010, 14891, 698, 8023, 8020, 7703, 4344, 14192, 8339, 11490, 4639, 4442, 14892, 5957, 5564, 1996, 4891, 4893, 11890, 7785, 14937, 8910, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4448, 712, 1938, 1236, 3473, 1499, 1500, 589, 4109, 5921, 11506, 11510, 1937, 4611, 4415, 14923, 2009, 14924, 698, 8045, 8042, 7724, 4346, 14226, 8361, 11519, 4641, 4444, 14925, 5960, 5567, 1995, 4894, 4896, 11921, 7806, 14970, 8933, 2]
 // Exports: default
 
-// Module 14889 (CustomTypingIndicatorEditScreen)
+// Module 14922 (CustomTypingIndicatorEditScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "mergeGuildAvatar" /* 1923 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);
@@ -142,7 +142,7 @@ export default function CustomTypingIndicatorEditScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -191,7 +191,7 @@ export default function CustomTypingIndicatorEditScreen() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           c4 = 3;

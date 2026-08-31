@@ -1,14 +1,14 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16363
+// Function ID: 16364
 // Name: GridSquareIcon
-// Dependencies: [19, 21, 712, 4165, 15311, 2]
+// Dependencies: [19, 21, 712, 4166, 15344, 2]
 // Exports: GridSquareIcon
 
-// Module 16329 (GridSquareIcon)
+// Module 16363 (GridSquareIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 15311 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 15344 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

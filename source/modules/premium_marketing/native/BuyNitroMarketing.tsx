@@ -1,16 +1,16 @@
-// Module ID: 12943
-// Function ID: 12944
+// Module ID: 12977
+// Function ID: 12978
 // Name: BuyNitroMarketing
-// Dependencies: [19, 17, 1925, 21, 4446, 712, 12944, 1500, 12945, 12952, 12950, 12953, 5918, 12946, 10453, 12979, 12986, 12987, 8051, 12989, 12992, 12997, 13001, 13002, 13003, 2]
+// Dependencies: [19, 17, 1924, 21, 4448, 712, 12978, 1499, 12979, 12986, 12984, 12987, 5921, 12980, 10477, 13013, 13020, 13021, 8073, 13023, 13026, 13031, 13035, 13036, 13037, 2]
 // Exports: default
 
-// Module 12943 (BuyNitroMarketing)
+// Module 12977 (BuyNitroMarketing)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { PremiumTypes } from "GuildFeatures" /* 1925 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);
@@ -50,7 +50,7 @@ export default function BuyNitroMarketing(onPaymentDismiss) {
   let obj3 = applicationId(onPaymentDismiss[9]);
   let tmp7;
   if (null != initialTier) {
-    obj = { tier: null, productId: "r" };
+    obj = { tier: null, productId: "Array" };
     obj[0] = initialTier;
     tmp7 = obj;
   }

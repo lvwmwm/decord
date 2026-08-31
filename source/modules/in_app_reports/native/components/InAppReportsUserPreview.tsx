@@ -1,19 +1,19 @@
-// Module ID: 8724
-// Function ID: 8725
+// Module ID: 8746
+// Function ID: 8747
 // Name: UserPreview
-// Dependencies: [19, 17, 21, 4446, 712, 4294, 4442, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 4296, 4444, 1236, 1297, 2]
 // Exports: default
 
-// Module 8724 (UserPreview)
+// Module 8746 (UserPreview)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import hexToRgba from "hexToRgba" /* 4294 */;
-import Text from "Text" /* 4442 */;
+import hexToRgba from "hexToRgba" /* 4296 */;
+import Text from "Text" /* 4444 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -47,7 +47,7 @@ export default function UserPreview(user) {
   if (tmp7Result) {
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj4[2] = user.globalName;
-    tmp7Result = tmp7(tmp2(4442).Text, obj4);
+    tmp7Result = tmp7(tmp2(4444).Text, obj4);
   }
   const items3 = [tmp7Result, callback(Text.Text, { color: "text-default", variant: "text-sm/normal", children: user.username })];
   obj3[1] = items3;

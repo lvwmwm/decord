@@ -1,11 +1,11 @@
-// Module ID: 12091
-// Function ID: 12092
+// Module ID: 12124
+// Function ID: 12125
 // Name: useIsRelationshipTypeSpamReportable
-// Dependencies: [4099, 676, 589, 2]
+// Dependencies: [4100, 676, 589, 2]
 // Exports: useIsRelationshipTypeSpamReportable
 
-// Module 12091 (useIsRelationshipTypeSpamReportable)
-import closure_2 from "markAllUserIdListsStale" /* 4099 */;
+// Module 12124 (useIsRelationshipTypeSpamReportable)
+import closure_2 from "markAllUserIdListsStale" /* 4100 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 
 const require = arg1;

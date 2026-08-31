@@ -1,13 +1,13 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11070
+// Function ID: 11071
 // Name: _openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4155, 676, 1494, 8513, 2010, 8516, 8520, 11040, 1236, 38, 4413, 11041, 2]
+// Dependencies: [32, 5, 4156, 676, 1493, 8535, 2009, 8538, 8542, 11071, 1236, 38, 4415, 11072, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 11039 (_openAppStoreOverlayMediaModal)
+// Module 11070 (_openAppStoreOverlayMediaModal)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "setContent" /* 4155 */;
+import closure_5 from "setContent" /* 4156 */;
 import { MEDIA_MODAL_KEY } from "ME" /* 676 */;
 
 const require = arg1;
@@ -29,7 +29,7 @@ function _openAppStoreOverlayMediaModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ function _openAppStoreOverlayMediaModal() {
               let initVideoStateStore;
               v0 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -99,7 +99,7 @@ function _openAppStoreOverlayMediaModal() {
             dependencyMap = v0(closure_8, 3);
             setMediaViewerSources = 32.setMediaViewerSources;
             MediaViewerAnalytics = 5.MediaViewerAnalytics;
-            initVideoStateStore = 4155.initVideoStateStore;
+            initVideoStateStore = 4156.initVideoStateStore;
             const obj4 = { text: null, onPress: null };
             const intl = callback(c2[10]).intl;
             obj4[0] = intl.string(callback(c2[10]).t.lwQdjB);
@@ -126,14 +126,19 @@ function _openAppStoreOverlayMediaModal() {
                 }
                 arg0(size.x, size.y, size.width, size.height, size.resizeMode);
               };
-            })(callback)((arg0, arg1, width, height, resizeMode) => {
+            })(callback)((arg0, arg1, width, height) => {
+              let str = arg4;
               initialIndex(_undefined2[11])(_undefined3.isOpen(), "An action sheet must be open to open the media modal as an action sheet");
               let obj = initialIndex(_undefined2[12]);
               const tmp = initialIndex(_undefined2[11]);
               obj = {};
               const merged = Object.assign(closure_7);
               obj.initialIndex = initialIndex;
-              obj = { x: arg0, y: arg1, width, height, resizeMode };
+              obj = { x: arg0, y: arg1, width, height, resizeMode: null };
+              if (arg4 == null) {
+                str = "cover";
+              }
+              obj[4] = str;
               obj.originLayout = obj;
               obj.onCloseCallback = c6;
               obj.disableHapticOnOpen = true;
@@ -143,7 +148,7 @@ function _openAppStoreOverlayMediaModal() {
               initVideoStateStore();
             });
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c4 = tmp;

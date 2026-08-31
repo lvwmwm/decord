@@ -1,15 +1,15 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15069
+// Function ID: 15070
 // Name: onFriendGamingActivityNotificationSettingsChanged
-// Dependencies: [4102, 676, 4135, 698, 2]
+// Dependencies: [4103, 676, 4136, 698, 2]
 // Exports: onFriendGamingActivityNotificationSettingsChanged
 
-// Module 15036 (onFriendGamingActivityNotificationSettingsChanged)
+// Module 15069 (onFriendGamingActivityNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4102 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4103 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
 
 let closure_3 = AccountNotificationFlags.NotificationSettingsUpdateType;
 const AnalyticEvents = ME.AnalyticEvents;

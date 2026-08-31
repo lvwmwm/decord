@@ -1,15 +1,15 @@
-// Module ID: 7952
-// Function ID: 7953
+// Module ID: 7974
+// Function ID: 7975
 // Name: IconButton
-// Dependencies: [19, 21, 4446, 712, 4901, 7953, 4442, 2]
+// Dependencies: [19, 21, 4448, 712, 4904, 7975, 4444, 2]
 
-// Module 7952 (IconButton)
+// Module 7974 (IconButton)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4442 */;
-import BaseButton from "BaseButton" /* 4901 */;
-import BaseIconButton from "BaseIconButton" /* 7953 */;
+import Text from "Text" /* 4444 */;
+import BaseButton from "BaseButton" /* 4904 */;
+import BaseIconButton from "BaseIconButton" /* 7975 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;

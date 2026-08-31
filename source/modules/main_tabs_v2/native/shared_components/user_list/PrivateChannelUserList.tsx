@@ -1,12 +1,12 @@
-// Module ID: 11692
-// Function ID: 11693
-// Dependencies: [19, 1391, 4099, 1923, 676, 21, 5918, 589, 12, 1370, 11122, 1236, 8836, 10576, 2]
+// Module ID: 11723
+// Function ID: 11724
+// Dependencies: [19, 1387, 4100, 1922, 676, 21, 5921, 589, 12, 1471, 11151, 1236, 8859, 10600, 2]
 
-// Module 11692
+// Module 11723
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "markAllUserIdListsStale" /* 4099 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "markAllUserIdListsStale" /* 4100 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

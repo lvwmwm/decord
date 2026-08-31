@@ -1,12 +1,12 @@
-// Module ID: 7513
-// Function ID: 7514
+// Module ID: 7534
+// Function ID: 7535
 // Name: replaceAnimationColors
-// Dependencies: [4294, 12, 2]
+// Dependencies: [4296, 12, 2]
 // Exports: replaceAnimationColors
 
-// Module 7513 (replaceAnimationColors)
+// Module 7534 (replaceAnimationColors)
 import set from "set" /* 2 */;
-import hexToRgba from "hexToRgba" /* 4294 */;
+import hexToRgba from "hexToRgba" /* 4296 */;
 import apply from "apply" /* 12 */;
 
 const memoizeResult = apply.memoize((str) => {

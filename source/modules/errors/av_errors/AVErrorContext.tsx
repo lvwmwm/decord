@@ -1,16 +1,16 @@
-// Module ID: 17349
-// Function ID: 17350
+// Module ID: 17382
+// Function ID: 17383
 // Name: getVoiceChannelErrorContext
-// Dependencies: [4497, 4520, 1982, 4534, 4545, 4512, 2]
+// Dependencies: [4499, 4522, 1981, 4536, 4547, 4514, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 17349 (getVoiceChannelErrorContext)
-import isStreamKey from "isStreamKey" /* 4512 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4545 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4497 */;
-import closure_3 from "createRTCConnection" /* 4520 */;
-import closure_4 from "handleConnectionOpen" /* 1982 */;
-import closure_5 from "initialize" /* 4534 */;
+// Module 17382 (getVoiceChannelErrorContext)
+import isStreamKey from "isStreamKey" /* 4514 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4547 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_3 from "createRTCConnection" /* 4522 */;
+import closure_4 from "handleConnectionOpen" /* 1981 */;
+import closure_5 from "initialize" /* 4536 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/errors/av_errors/AVErrorContext.tsx");

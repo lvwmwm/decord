@@ -1,14 +1,14 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17372
+// Function ID: 17373
 // Name: fetchForwardReferencedGuilds
-// Dependencies: [676, 17340, 5451, 16932, 2]
+// Dependencies: [676, 17373, 5454, 16965, 2]
 
-// Module 17339 (fetchForwardReferencedGuilds)
+// Module 17372 (fetchForwardReferencedGuilds)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import initializeDefault from "initialize" /* 5451 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16932 */;
-import _fetchBasicGuild from "_fetchBasicGuild" /* 17340 */;
+import initializeDefault from "initialize" /* 5454 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 16965 */;
+import _fetchBasicGuild from "_fetchBasicGuild" /* 17373 */;
 
 function fetchForwardReferencedGuilds(message_reference) {
   message_reference = message_reference.message_reference;

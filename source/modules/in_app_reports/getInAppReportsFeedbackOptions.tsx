@@ -1,10 +1,10 @@
-// Module ID: 16872
-// Function ID: 16873
+// Module ID: 16905
+// Function ID: 16906
 // Name: getInAppReportsFeedbackOptions
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 16872 (getInAppReportsFeedbackOptions)
+// Module 16905 (getInAppReportsFeedbackOptions)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

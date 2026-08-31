@@ -1,11 +1,11 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 12144
+// Function ID: 12145
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [4438, 1297, 589, 4186, 4447, 4450, 2]
+// Dependencies: [4440, 1297, 589, 4187, 4449, 4452, 2]
 // Exports: default
 
-// Module 12111 (useChatPlaceholderAnimatedStyles)
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+// Module 12144 (useChatPlaceholderAnimatedStyles)
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 
 const require = arg1;
 let obj = { duration: 1300, easing: require("Button").STANDARD_EASING };

@@ -1,11 +1,11 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 15631
+// Function ID: 15632
 // Name: _getEmojiCacheKey
-// Dependencies: [5, 17, 1405, 2]
+// Dependencies: [5, 17, 1401, 2]
 // Exports: getEmojiDominantColors
 
-// Module 15597 (_getEmojiCacheKey)
-import privDefault from "priv" /* 1405 */;
+// Module 15631 (_getEmojiCacheKey)
+import privDefault from "priv" /* 1401 */;
 import closure_0 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 
@@ -31,7 +31,7 @@ function _getFromCacheOrFallback2() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -56,7 +56,7 @@ function _getFromCacheOrFallback2() {
               closure_5 = undefined;
               c2 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -147,7 +147,7 @@ function _getEmojiDominantColors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -169,7 +169,7 @@ function _getEmojiDominantColors() {
               ({ emoji: c0, emojiSource: closure_1 } = c0);
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

@@ -1,18 +1,18 @@
-// Module ID: 8494
-// Function ID: 8495
+// Module ID: 8516
+// Function ID: 8517
 // Name: ProfileFrameLayer
-// Dependencies: [19, 17, 8481, 8495, 5966, 21, 4446, 8496, 5458, 8493, 8497, 2]
+// Dependencies: [19, 17, 8503, 8517, 5969, 21, 4448, 8518, 5461, 8515, 8519, 2]
 // Exports: default
 
-// Module 8494 (ProfileFrameLayer)
-import OverrideProfileFrameLayerDefault from "OverrideProfileFrameLayer" /* 8497 */;
+// Module 8516 (ProfileFrameLayer)
+import OverrideProfileFrameLayerDefault from "OverrideProfileFrameLayer" /* 8519 */;
 import closure_2 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { useFramePreviewOverrideStore as closure_4 } from "measure" /* 8481 */;
-import PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8495 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5966 */;
+import { useFramePreviewOverrideStore as closure_4 } from "measure" /* 8503 */;
+import PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8517 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 5969 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 function ProfileFrameLayer(skuId) {
   const layer = skuId.layer;

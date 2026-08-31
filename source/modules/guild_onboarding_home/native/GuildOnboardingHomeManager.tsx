@@ -1,21 +1,21 @@
-// Module ID: 16879
-// Function ID: 16880
+// Module ID: 16912
+// Function ID: 16913
 // Name: prototype
-// Dependencies: [32, 5, 1985, 1218, 1391, 1993, 1910, 4268, 4673, 4674, 4078, 5451, 1403, 4689, 16880, 2010, 11788, 691, 11787, 6034, 6035, 2]
+// Dependencies: [32, 5, 1984, 1218, 1387, 1992, 1909, 4269, 4675, 4676, 4079, 5454, 1399, 4691, 16913, 2009, 11819, 691, 11818, 6037, 6038, 2]
 
-// Module 16879 (prototype)
-import initializeDefault from "initialize" /* 5451 */;
+// Module 16912 (prototype)
+import initializeDefault from "initialize" /* 5454 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "initialize" /* 1985 */;
+import closure_5 from "initialize" /* 1984 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "trackCommunicationDisabled" /* 1993 */;
-import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "handleConnectionOpen" /* 4268 */;
-import closure_11 from "handleSettingsLoadSuccess" /* 4673 */;
-import closure_12 from "set" /* 4674 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4078 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "trackCommunicationDisabled" /* 1992 */;
+import closure_9 from "createGuildRecordFromRust" /* 1909 */;
+import closure_10 from "handleConnectionOpen" /* 4269 */;
+import closure_11 from "handleSettingsLoadSuccess" /* 4675 */;
+import closure_12 from "set" /* 4676 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4079 */;
 
 const require = arg1;
 initializeDefault;
@@ -132,7 +132,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -158,7 +158,7 @@ let prototype = function GuildOnboardingHomeManager() {
               let found;
               memberActions = 1;
               completedActions = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp5) {
@@ -303,7 +303,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -363,7 +363,7 @@ let prototype = function GuildOnboardingHomeManager() {
               const result = obj.completeNewMemberAction(callback, closure_1);
             }
             actionType = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp31) {
           actionType = tmp;
@@ -400,7 +400,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -499,7 +499,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -589,7 +589,7 @@ let prototype = function GuildOnboardingHomeManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

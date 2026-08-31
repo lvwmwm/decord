@@ -1,11 +1,11 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13553
+// Function ID: 13554
 // Name: trimTrailingPunctuation
-// Dependencies: [1488, 2]
+// Dependencies: [1487, 2]
 // Exports: default
 
-// Module 13519 (trimTrailingPunctuation)
-import importDefaultResult from "ip" /* 1488 */;
+// Module 13553 (trimTrailingPunctuation)
+import importDefaultResult from "ip" /* 1487 */;
 
 function trimTrailingPunctuation(str) {
   return str.replace(closure_2, "");

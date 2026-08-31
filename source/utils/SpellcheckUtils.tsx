@@ -1,12 +1,12 @@
-// Module ID: 5533
-// Function ID: 5534
+// Module ID: 5536
+// Function ID: 5537
 // Name: _setEnabled
-// Dependencies: [5, 5534, 4073, 500, 5536, 2]
+// Dependencies: [5, 5537, 4074, 500, 5539, 2]
 // Exports: addResultListener, getCachedMisspelling, getCorrections, isMisspelled, isSupported, replaceWithCorrection, setAppLocale, setEnabled, setLearnedWords
 
-// Module 5533 (_setEnabled)
+// Module 5536 (_setEnabled)
 import set2 from "set" /* 500 */;
-import setDefault from "set" /* 4073 */;
+import setDefault from "set" /* 4074 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import set from "set" /* 500 */;
 
@@ -29,7 +29,7 @@ function _setEnabled() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ function _setEnabled() {
               closure_1.enabled = closure_0;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           c3 = tmp;
@@ -102,7 +102,7 @@ function _setLearnedWords() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function _setLearnedWords() {
               learnedWords.setLearnedWords(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c3 = tmp;
@@ -176,7 +176,7 @@ function _isMisspelled() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ function _isMisspelled() {
               misspelled = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -275,7 +275,7 @@ function _getCorrections() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -303,7 +303,7 @@ function _getCorrections() {
               correctionsForMisspelling = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -375,7 +375,7 @@ function _getCachedMisspelling() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -400,7 +400,7 @@ function _getCachedMisspelling() {
               cachedMisspelling2 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -483,7 +483,7 @@ function _replaceWithCorrection() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -520,7 +520,7 @@ function _replaceWithCorrection() {
               closure_1.replaceMisspelling(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp14) {
           c3 = tmp;

@@ -1,17 +1,17 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11718
+// Function ID: 11719
 // Name: RoleIcon
-// Dependencies: [32, 19, 5548, 1987, 1986, 676, 21, 11685, 9652, 589, 5549, 5564, 4442, 5003, 5419, 4413, 11672, 11673, 2]
+// Dependencies: [32, 19, 5551, 1986, 1985, 676, 21, 11716, 9674, 589, 5552, 5567, 4444, 5006, 5422, 4415, 11703, 11704, 2]
 // Exports: default
 
-// Module 11687 (RoleIcon)
-import ShieldUserIcon from "ShieldUserIcon" /* 9652 */;
-import stylesDefault from "styles" /* 11685 */;
+// Module 11718 (RoleIcon)
+import ShieldUserIcon from "ShieldUserIcon" /* 9674 */;
+import stylesDefault from "styles" /* 11716 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "getRoleMemberCount" /* 5548 */;
-import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1987 */;
-import closure_8 from "createGuildRoleRecordFromRust" /* 1986 */;
+import closure_6 from "getRoleMemberCount" /* 5551 */;
+import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1986 */;
+import closure_8 from "createGuildRoleRecordFromRust" /* 1985 */;
 import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12275
+// Function ID: 12276
 // Name: openCreateGameInvitePostModal
-// Dependencies: [4689, 12242, 2010, 2]
+// Dependencies: [4691, 12276, 2009, 2]
 // Exports: closeCreateGameInvitePostModal, openCreateGameInvitePostModal
 
-// Module 12241 (openCreateGameInvitePostModal)
+// Module 12275 (openCreateGameInvitePostModal)
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
-import _modDef4689 from "module_4689" /* 4689 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import _modDef4691 from "module_4691" /* 4691 */;
 
 let c3 = "create-game-invite-post";
 const result = set.fileFinishedImporting("modules/game_invite_channels/native/CreateGameInvitePostModalActionCreators.tsx");
 
 export const openCreateGameInvitePostModal = function openCreateGameInvitePostModal(closure_0) {
-  _modDef4689.pushLazy(asyncRequireImpl(12242, dependencyMap.paths), closure_0, c3);
+  _modDef4691.pushLazy(asyncRequireImpl(12276, dependencyMap.paths), closure_0, c3);
 };
 export const closeCreateGameInvitePostModal = function closeCreateGameInvitePostModal() {
-  _modDef4689.popWithKey(c3);
+  _modDef4691.popWithKey(c3);
 };

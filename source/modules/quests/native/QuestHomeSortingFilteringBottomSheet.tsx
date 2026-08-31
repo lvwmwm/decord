@@ -1,21 +1,21 @@
-// Module ID: 14537
-// Function ID: 14538
+// Module ID: 14571
+// Function ID: 14572
 // Name: FilterFooter
-// Dependencies: [32, 19, 17, 5352, 21, 4446, 712, 5518, 5341, 4893, 1236, 4880, 1363, 4413, 11021, 5587, 5586, 5589, 4891, 7639, 7640, 5957, 7630, 10870, 2]
+// Dependencies: [32, 19, 17, 5355, 21, 4448, 712, 5521, 5344, 4896, 1236, 4883, 1363, 4415, 11046, 5590, 5589, 5592, 4894, 7660, 7661, 5960, 7651, 10894, 2]
 // Exports: default
 
-// Module 14537 (FilterFooter)
+// Module 14571 (FilterFooter)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 4893 */;
-import ButtonGroup from "ButtonGroup" /* 5341 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5518 */;
+import Button from "Button" /* 4896 */;
+import ButtonGroup from "ButtonGroup" /* 5344 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5521 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { QuestHomeSortMethods } from "QuestsExperimentLocations" /* 5352 */;
+import { QuestHomeSortMethods } from "QuestsExperimentLocations" /* 5355 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function FilterFooter(inline) {

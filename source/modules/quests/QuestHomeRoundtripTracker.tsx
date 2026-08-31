@@ -1,15 +1,15 @@
-// Module ID: 14703
-// Function ID: 14704
+// Module ID: 14737
+// Function ID: 14738
 // Name: clearTimeoutTimer
-// Dependencies: [676, 698, 7294, 7299, 10875, 2]
+// Dependencies: [676, 698, 7315, 7320, 10899, 2]
 
-// Module 14703 (clearTimeoutTimer)
+// Module 14737 (clearTimeoutTimer)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import setDefault from "set" /* 7294 */;
-import set2 from "set" /* 7299 */;
-import _modDef10875 from "module_10875" /* 10875 */;
+import setDefault from "set" /* 7315 */;
+import set2 from "set" /* 7320 */;
+import _modDef10899 from "module_10899" /* 10899 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let c4 = 30000;
@@ -85,7 +85,7 @@ prototype["stopTracking"] = function stopTracking() {
       const _Math2 = Math;
       self.sendMetric(flag2, Math.min(rounded, c4), flag);
     }
-    obj2 = _modDef10875;
+    obj2 = _modDef10899;
   }
 };
 prototype["clearTracking"] = function clearTracking() {

@@ -1,12 +1,12 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11799
+// Function ID: 11800
 // Name: getDmHasMessageHistory
-// Dependencies: [1391, 676, 698, 2]
+// Dependencies: [1387, 676, 698, 2]
 // Exports: getDmHasMessageHistory, trackWaveCtaClicked
 
-// Module 11768 (getDmHasMessageHistory)
+// Module 11799 (getDmHasMessageHistory)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/channel/trackWaveCtaClicked.tsx");

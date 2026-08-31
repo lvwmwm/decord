@@ -1,19 +1,19 @@
-// Module ID: 7945
-// Function ID: 7946
+// Module ID: 7967
+// Function ID: 7968
 // Name: LHeading
-// Dependencies: [19, 17, 1997, 676, 21, 712, 4446, 1297, 647, 7946, 698, 4159, 4161, 7948, 4436, 5518, 7952, 7954, 1236, 4074, 7956, 7958, 2]
+// Dependencies: [19, 17, 1996, 676, 21, 712, 4448, 1297, 647, 7968, 698, 4160, 4162, 7970, 4438, 5521, 7974, 7976, 1236, 4075, 7978, 7980, 2]
 // Exports: changelogRules, getRenderChangelog
 
-// Module 7945 (LHeading)
+// Module 7967 (LHeading)
 import ThemesDefault from "Themes" /* 712 */;
-import get_defaultRulesDefault from "get defaultRules" /* 4436 */;
-import defaultRulesDefault from "defaultRules" /* 7948 */;
+import get_defaultRulesDefault from "get defaultRules" /* 4438 */;
+import defaultRulesDefault from "defaultRules" /* 7970 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_getSystemLocale" /* 1997 */;
+import closure_6 from "_getSystemLocale" /* 1996 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function LHeading(children) {
@@ -66,7 +66,7 @@ function LinkInner(target) {
   obj = target(647);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  changelog = target(7946).useChangelog(changelogId, stateFromStores).changelog;
+  changelog = target(7968).useChangelog(changelogId, stateFromStores).changelog;
   obj = {
     accessibilityRole: "link",
     style: className,
@@ -173,29 +173,29 @@ const memoResult1 = importAllResult.memo((video) => {
   obj[4] = items1;
   const items2 = [closure_11(closure_5, obj), ];
   obj2 = { bottom: true, style: tmp.footer, children: null };
-  obj3 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(id(7954).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }), accessibilityLabel: null, onPress: null };
+  obj3 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(id(7976).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }), accessibilityLabel: null, onPress: null };
   const intl = id(1236).intl;
   obj3[4] = intl.string(id(1236).t["/lXfom"]);
   obj3[5] = function onPress() {
-    callback(4159).openURL(callback(4074)(constants.TWITTER));
+    callback(4160).openURL(callback(4075)(constants.TWITTER));
   };
-  const items3 = [callback(id(7952).IconButton, obj3), , ];
-  const obj4 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(id(7956).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }), accessibilityLabel: null, onPress: null };
+  const items3 = [callback(id(7974).IconButton, obj3), , ];
+  const obj4 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(id(7978).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }), accessibilityLabel: null, onPress: null };
   const intl2 = id(1236).intl;
   obj4[4] = intl2.string(id(1236).t["h0or/l"]);
   obj4[5] = function onPress() {
-    callback(4159).openURL(constants2.FACEBOOK_URL);
+    callback(4160).openURL(constants2.FACEBOOK_URL);
   };
-  items3[1] = callback(id(7952).IconButton, obj4);
-  const obj5 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(id(7958).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }), accessibilityLabel: null, onPress: null };
+  items3[1] = callback(id(7974).IconButton, obj4);
+  const obj5 = { size: "sm", variant: "tertiary", accessibilityRole: "link", icon: callback(id(7980).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }), accessibilityLabel: null, onPress: null };
   const intl3 = id(1236).intl;
   obj5[4] = intl3.string(id(1236).t["5uVPyf"]);
   obj5[5] = function onPress() {
-    callback(4159).openURL(constants2.INSTAGRAM_URL);
+    callback(4160).openURL(constants2.INSTAGRAM_URL);
   };
-  items3[2] = callback(id(7952).IconButton, obj5);
+  items3[2] = callback(id(7974).IconButton, obj5);
   obj2[2] = items3;
-  items2[1] = closure_11(id(5518).SafeAreaPaddingView, obj2);
+  items2[1] = closure_11(id(5521).SafeAreaPaddingView, obj2);
   obj[1] = items2;
   return closure_11(closure_4, obj);
 });

@@ -1,16 +1,16 @@
-// Module ID: 7866
-// Function ID: 7867
+// Module ID: 7888
+// Function ID: 7889
 // Name: createNewThreadSystemMessage
-// Dependencies: [1391, 4099, 1923, 7816, 1236, 7818, 4640, 7819, 2]
+// Dependencies: [1387, 4100, 1922, 7837, 1236, 7839, 4642, 7841, 2]
 // Exports: createNewThreadSystemMessage
 
-// Module 7866 (createNewThreadSystemMessage)
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7816 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7818 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7819 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "markAllUserIdListsStale" /* 4099 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
+// Module 7888 (createNewThreadSystemMessage)
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7837 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7839 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7841 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "markAllUserIdListsStale" /* 4100 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/NewThreadSystemMessage.tsx");
@@ -28,8 +28,8 @@ export const createNewThreadSystemMessage = function createNewThreadSystemMessag
   const intl = tmp(1236).intl;
   obj = { actorName: messageAuthorWithProcessedColor.nick, actorHook: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle: roleStyle.roleStyle }), threadName: null, threadOnClick: null };
   if (null != channel) {
-    let content = tmp(4640).computeChannelName(channel, closure_5, closure_4);
-    const tmpResult = tmp(4640);
+    let content = tmp(4642).computeChannelName(channel, closure_5, closure_4);
+    const tmpResult = tmp(4642);
   } else {
     content = message.content;
   }

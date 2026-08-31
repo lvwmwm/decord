@@ -1,17 +1,17 @@
-// Module ID: 14655
-// Function ID: 14656
+// Module ID: 14689
+// Function ID: 14690
 // Name: QuestBottomSheetHeader
-// Dependencies: [32, 19, 17, 1923, 21, 4446, 712, 11021, 7416, 14625, 589, 10865, 7414, 1236, 14654, 5355, 7393, 14626, 4880, 4889, 4442, 5033, 8739, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4448, 712, 11046, 7437, 14659, 589, 10889, 7435, 1236, 14688, 5358, 7414, 14660, 4883, 4892, 4444, 5036, 8761, 2]
 // Exports: default
 
-// Module 14655 (QuestBottomSheetHeader)
+// Module 14689 (QuestBottomSheetHeader)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

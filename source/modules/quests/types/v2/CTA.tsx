@@ -1,10 +1,10 @@
-// Module ID: 7409
-// Function ID: 7410
+// Module ID: 7430
+// Function ID: 7431
 // Name: questCtaConfigFromServer
 // Dependencies: [2]
 // Exports: questCtaConfigFromServer
 
-// Module 7409 (questCtaConfigFromServer)
+// Module 7430 (questCtaConfigFromServer)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/quests/types/v2/CTA.tsx");

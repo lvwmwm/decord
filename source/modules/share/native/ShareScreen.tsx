@@ -1,24 +1,24 @@
-// Module ID: 13572
-// Function ID: 13573
+// Module ID: 13606
+// Function ID: 13607
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 32, 19, 17, 1395, 1391, 4090, 676, 11200, 10570, 21, 4446, 712, 500, 1236, 13573, 10656, 1370, 13574, 4722, 698, 9970, 4457, 8579, 11220, 2010, 4824, 13575, 13576, 5467, 7554, 1625, 5460, 10659, 13577, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 1387, 4091, 676, 11229, 10594, 21, 4448, 712, 500, 1236, 13607, 10680, 1471, 13608, 4724, 698, 9993, 4459, 8601, 11249, 2009, 4827, 13609, 13610, 5470, 7575, 1624, 5463, 10683, 13611, 2]
 // Exports: default
 
-// Module 13572 (getAttachmentsRestriction)
+// Module 13606 (getAttachmentsRestriction)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import createChannelRecord from "createChannelRecord" /* 1395 */;
-import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4090 */;
+import createChannelRecord from "createChannelRecord" /* 1391 */;
+import closure_9 from "ensureGuildLoaded" /* 1387 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4091 */;
 import ME from "ME" /* 676 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11200 */;
-import { UserRowModes } from "UserRowModes" /* 10570 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11229 */;
+import { UserRowModes } from "UserRowModes" /* 10594 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -129,7 +129,7 @@ export default function ShareScreen(sharedContent) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -239,7 +239,7 @@ export default function ShareScreen(sharedContent) {
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -262,7 +262,7 @@ export default function ShareScreen(sharedContent) {
                               c4 = 3;
                               return { value: false, done: true };
                             } else {
-                              obj1 = callback(13574);
+                              obj1 = callback(13608);
                               obj1 = { attachments: null, channel: null, comment: null };
                               obj1[0] = closure_1_1;
                               obj1[1] = channel;
@@ -291,7 +291,7 @@ export default function ShareScreen(sharedContent) {
                           obj3[4] = closure_1_2;
                           callback2(698).track(closure_3_11.SHARE_MESSAGE_SENT, obj3);
                           c4 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } catch (tmp11) {
                         c4 = tmp;

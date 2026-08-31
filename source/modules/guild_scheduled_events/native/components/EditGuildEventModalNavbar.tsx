@@ -1,21 +1,21 @@
-// Module ID: 9616
-// Function ID: 9617
+// Module ID: 9638
+// Function ID: 9639
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 4446, 9613, 1370, 5518, 4442, 1236, 6202, 7711, 2]
+// Dependencies: [32, 19, 17, 21, 4448, 9635, 1471, 5521, 4444, 1236, 6205, 7732, 2]
 // Exports: default
 
-// Module 9616 (EditGuildEventModalNavbar)
+// Module 9638 (EditGuildEventModalNavbar)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5518 */;
-import HeaderActionButton from "HeaderActionButton" /* 6202 */;
-import registerAssetDefault from "registerAsset" /* 7711 */;
-import EditGuildEventScreens from "EditGuildEventScreens" /* 9613 */;
+import Text from "Text" /* 4444 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5521 */;
+import HeaderActionButton from "HeaderActionButton" /* 6205 */;
+import registerAssetDefault from "registerAsset" /* 7732 */;
+import EditGuildEventScreens from "EditGuildEventScreens" /* 9635 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -28,13 +28,13 @@ export default function EditGuildEventModalNavbar(screen) {
   const tmp = callback4();
   if (EditGuildEventScreens.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (tmp2(9613).EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp2(9635).EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (tmp2(9613).EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp2(9635).EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
-    tmp2(1370).assertNever(screen);
-    const tmp2Result = tmp2(1370);
+    tmp2(1471).assertNever(screen);
+    const tmp2Result = tmp2(1471);
   }
   [tmp6, tmp7] = callback(items, 2);
   let obj = { top: true, style: tmp.header, children: null };

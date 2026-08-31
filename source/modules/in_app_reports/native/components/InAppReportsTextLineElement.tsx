@@ -1,17 +1,17 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 8739
+// Function ID: 8740
 // Name: TextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4446, 712, 5906, 4913, 500, 4425, 4159, 4442, 4893, 1236, 5946, 4162, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4448, 712, 5909, 4916, 500, 4427, 4160, 4444, 4896, 1236, 5949, 4163, 2]
 // Exports: default
 
-// Module 8717 (TextLineElement)
+// Module 8739 (TextLineElement)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ View: error, Linking: closure_8 } = get_ActivityIndicator);
@@ -44,7 +44,7 @@ export default function TextLineElement(element) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ export default function TextLineElement(element) {
               obj.openURL(closure_0);
             }
             table = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           table = tmp;

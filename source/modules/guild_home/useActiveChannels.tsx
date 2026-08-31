@@ -1,19 +1,19 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 15619
+// Function ID: 15620
 // Name: getActiveTextChannels
-// Dependencies: [1395, 1391, 4090, 4667, 13290, 676, 1398, 1370, 2]
+// Dependencies: [1391, 1387, 4091, 4669, 13324, 676, 1394, 1471, 2]
 // Exports: getActiveTextChannels
 
-// Module 15585 (getActiveTextChannels)
+// Module 15619 (getActiveTextChannels)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import createChannelRecord from "createChannelRecord" /* 1395 */;
-import set2 from "set" /* 1398 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_5 from "updateUserGuildSettingsInternal" /* 4667 */;
-import closure_6 from "truncateOldMessageData" /* 13290 */;
+import createChannelRecord from "createChannelRecord" /* 1391 */;
+import set2 from "set" /* 1394 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_5 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_6 from "truncateOldMessageData" /* 13324 */;
 
 const isTextChannel = createChannelRecord.isTextChannel;
 const Permissions = ME.Permissions;

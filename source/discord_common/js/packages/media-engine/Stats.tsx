@@ -1,9 +1,9 @@
-// Module ID: 4555
-// Function ID: 4556
+// Module ID: 4557
+// Function ID: 4558
 // Name: STATS_INTERVAL
 // Dependencies: [2]
 
-// Module 4555 (STATS_INTERVAL)
+// Module 4557 (STATS_INTERVAL)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/Stats.tsx");

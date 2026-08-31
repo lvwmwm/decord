@@ -1,0 +1,45 @@
+// Module ID: 7799
+// Function ID: 7800
+// Name: getModalRouteKeys
+// Dependencies: []
+
+// Module 7799 (getModalRouteKeys)
+arg5.getModalRouteKeys = (arr) => {
+  closure_0 = arg1;
+  return arr.reduce((arr, key) => {
+    let options;
+    if (table[key.key] != null) {
+      options = tmp.options;
+    }
+    if (options == null) {
+      options = {};
+    }
+    const presentation = options.presentation;
+    let tmp2 = arr.length && !presentation;
+    if (!tmp2) {
+      tmp2 = "modal" === presentation;
+    }
+    if (!tmp2) {
+      tmp2 = "transparentModal" === presentation;
+    }
+    if (!tmp2) {
+      tmp2 = "containedModal" === presentation;
+    }
+    if (!tmp2) {
+      tmp2 = "containedTransparentModal" === presentation;
+    }
+    if (!tmp2) {
+      tmp2 = "fullScreenModal" === presentation;
+    }
+    if (!tmp2) {
+      tmp2 = "formSheet" === presentation;
+    }
+    if (!tmp2) {
+      tmp2 = "pageSheet" === presentation;
+    }
+    if (tmp2) {
+      arr.push(key.key);
+    }
+    return arr;
+  }, []);
+};

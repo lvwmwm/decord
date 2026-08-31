@@ -1,22 +1,22 @@
-// Module ID: 11684
-// Function ID: 11685
+// Module ID: 11715
+// Function ID: 11716
 // Name: MentionableIcon
-// Dependencies: [32, 19, 4438, 1986, 1923, 505, 21, 4446, 712, 589, 11685, 10593, 11686, 1297, 11687, 11688, 11682, 4413, 11686, 2010, 2]
+// Dependencies: [32, 19, 4440, 1985, 1922, 505, 21, 4448, 712, 589, 11716, 10617, 11717, 1297, 11718, 11719, 11713, 4415, 11717, 2009, 2]
 // Exports: default
 
-// Module 11684 (MentionableIcon)
+// Module 11715 (MentionableIcon)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import UserCircleIcon from "UserCircleIcon" /* 10593 */;
-import stylesDefault from "styles" /* 11685 */;
+import UserCircleIcon from "UserCircleIcon" /* 10617 */;
+import stylesDefault from "styles" /* 11716 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_6 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_6 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { StatusTypes } from "sum" /* 505 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function MentionableIcon(mentionable) {
@@ -33,19 +33,19 @@ function MentionableIcon(mentionable) {
     return tmp7;
   } else {
     const type = mentionable.type;
-    if (tmp2(11686).MentionableItemTypes.USER === type) {
+    if (tmp2(11717).MentionableItemTypes.USER === type) {
       obj = { user: null, guildId: null, animate: null, size: null };
       obj[0] = mentionable.result.user;
       obj[1] = mentionable.guildId;
       obj[2] = !stateFromStores;
       obj[3] = tmp2(1297).AvatarSizes.REFRESH_MEDIUM_32;
       return tmp5(tmp2(1297).Avatar, obj);
-    } else if (tmp2(11686).MentionableItemTypes.ROLE === type) {
+    } else if (tmp2(11717).MentionableItemTypes.ROLE === type) {
       obj1 = { role: null };
       obj1[0] = mentionable.result;
-      return tmp5(tmp2(11687).RoleIcon, obj1);
+      return tmp5(tmp2(11718).RoleIcon, obj1);
     } else {
-      const GLOBAL = tmp2(11686).MentionableItemTypes.GLOBAL;
+      const GLOBAL = tmp2(11717).MentionableItemTypes.GLOBAL;
       return tmp7;
     }
   }

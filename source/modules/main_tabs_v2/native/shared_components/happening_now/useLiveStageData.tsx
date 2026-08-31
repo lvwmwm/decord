@@ -1,13 +1,13 @@
-// Module ID: 15590
-// Function ID: 15591
+// Module ID: 15624
+// Function ID: 15625
 // Name: useLiveStageData
-// Dependencies: [19, 5327, 1391, 647, 5333, 12, 2]
+// Dependencies: [19, 5330, 1387, 647, 5336, 12, 2]
 // Exports: useLiveStageData
 
-// Module 15590 (useLiveStageData)
+// Module 15624 (useLiveStageData)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getActiveStageChannelIds" /* 5327 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "getActiveStageChannelIds" /* 5330 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/useLiveStageData.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 6072
-// Function ID: 6073
+// Module ID: 6075
+// Function ID: 6076
 // Name: computeGuildRoleSubscriptionSettingsVisibility
-// Dependencies: [1434, 4090, 1923, 676, 589, 6073, 6065, 2]
+// Dependencies: [1430, 4091, 1922, 676, 589, 6076, 6068, 2]
 // Exports: canManageGuildRoleSubscriptions, canSeeGuildRoleSubscriptionSettings, canSeeGuildRoleSubscriptionSettingsContent, getGuildRoleSubscriptionSettingsVisibility, useCanManageGuildRoleSubscriptions, useCanSeeGuildRoleSubscriptionSettings
 
-// Module 6072 (computeGuildRoleSubscriptionSettingsVisibility)
+// Module 6075 (computeGuildRoleSubscriptionSettingsVisibility)
 import set from "set" /* 2 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import set2 from "set" /* 6073 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
+import set2 from "set" /* 6076 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
 function computeGuildRoleSubscriptionSettingsVisibility(guild) {
@@ -73,8 +73,8 @@ function useGuildRoleSubscriptionSettingsVisibility(stateFromStores) {
     return tmp3;
   });
   const obj2 = _require(589);
-  const isUserInCreatorMonetizationEligibleCountry = _require(6073).useIsUserInCreatorMonetizationEligibleCountry();
-  _require(6065);
+  const isUserInCreatorMonetizationEligibleCountry = _require(6076).useIsUserInCreatorMonetizationEligibleCountry();
+  _require(6068);
   if (stateFromStores != null) {
     const id = stateFromStores.id;
   }

@@ -1,12 +1,12 @@
-// Module ID: 15451
-// Function ID: 15452
-// Dependencies: [19, 21, 4446, 500, 712, 8327, 2]
+// Module ID: 15484
+// Function ID: 15485
+// Dependencies: [19, 21, 4448, 500, 712, 8349, 2]
 
-// Module 15451
+// Module 15484
 import ThemesDefault from "Themes" /* 712 */;
-import _getRequireWildcardCacheDefault from "_getRequireWildcardCache" /* 8327 */;
+import _modDef8349 from "module_8349" /* 8349 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import set from "set" /* 500 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -34,7 +34,7 @@ export default importAllResult.memo(function VEVOOSlider(disabled) {
   const obj = { style: items, disabled: disabled.disabled, value: current, minimumValue: 0, maximumValue: 1, minimumTrackTintColor: ThemesDefault.unsafe_rawColors.BRAND_500, maximumTrackTintColor: ThemesDefault.unsafe_rawColors.PRIMARY_400, onValueChange, onResponderGrant: null };
   items[1] = { opacity: num };
   current = initialValue.current;
-  const tmp5 = _getRequireWildcardCacheDefault;
+  const tmp5 = _modDef8349;
   let fn;
   if (obj2.isAndroid()) {
     fn = () => true;

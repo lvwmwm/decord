@@ -1,15 +1,15 @@
-// Module ID: 9971
-// Function ID: 9972
+// Module ID: 9994
+// Function ID: 9995
 // Name: isRefreshableAttachmentUrl
-// Dependencies: [5, 4928, 676, 687, 4481, 4480, 1487, 530, 2]
+// Dependencies: [5, 4931, 676, 687, 4483, 4482, 1486, 530, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentPathUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 9971 (isRefreshableAttachmentUrl)
+// Module 9994 (isRefreshableAttachmentUrl)
 import setDefault from "set" /* 687 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4480 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4482 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { ATTACHMENT_PATH_PREFIXES } from "set" /* 4928 */;
+import { ATTACHMENT_PATH_PREFIXES } from "set" /* 4931 */;
 import { Endpoints } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -181,7 +181,7 @@ function _maybeRefreshAttachmentUrl() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

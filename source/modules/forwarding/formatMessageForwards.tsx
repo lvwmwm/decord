@@ -1,19 +1,19 @@
-// Module ID: 7810
-// Function ID: 7811
+// Module ID: 7831
+// Function ID: 7832
 // Name: getForwardInfo
-// Dependencies: [7811, 1391, 1910, 4090, 4099, 1923, 1435, 1236, 4132, 4640, 6112, 2]
+// Dependencies: [7832, 1387, 1909, 4091, 4100, 1922, 1431, 1236, 4133, 4642, 6115, 2]
 // Exports: maybeCreateSingleForwardForMessage
 
-// Module 7810 (getForwardInfo)
-import getAvatarURLDefault from "getAvatarURL" /* 1435 */;
-import resetCache from "resetCache" /* 4132 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6112 */;
-import closure_3 from "getGuild" /* 7811 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_7 from "markAllUserIdListsStale" /* 4099 */;
-import closure_8 from "mergeGuildAvatar" /* 1923 */;
+// Module 7831 (getForwardInfo)
+import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+import resetCache from "resetCache" /* 4133 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6115 */;
+import closure_3 from "getGuild" /* 7832 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_7 from "markAllUserIdListsStale" /* 4100 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 class MessageForward {
@@ -94,7 +94,7 @@ MessageForward.prototype["getForwardInfo"] = function getForwardInfo(arg0, closu
         if (obj1.can(channel1.accessPermissions, channel1)) {
           obj4 = { snapshotIndex: null, footerInfo: null };
           obj4[0] = snapshotIndex;
-          const tmp3Result = tmp3(4640);
+          const tmp3Result = tmp3(4642);
           const channelName = tmp3Result.computeChannelName(channel1, tmp, tmp2, true);
           const obj5 = { originLabel: null, timestampLabel: null, accessibilityLabel: null };
           obj5[0] = channelName;

@@ -1,22 +1,22 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16451
+// Function ID: 16452
 // Name: SuspendedUserSafetyHubPage
-// Dependencies: [19, 17, 8636, 21, 4446, 712, 5518, 7952, 1236, 6017, 7711, 4442, 4159, 14288, 2]
+// Dependencies: [19, 17, 8658, 21, 4448, 712, 5521, 7974, 1236, 6020, 7732, 4444, 4160, 14322, 2]
 // Exports: default
 
-// Module 16417 (SuspendedUserSafetyHubPage)
+// Module 16451 (SuspendedUserSafetyHubPage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5518 */;
-import registerAssetDefault from "registerAsset" /* 7711 */;
-import IconButton from "IconButton" /* 7952 */;
-import AutomatedUnderageAppealStatusDefault from "AutomatedUnderageAppealStatus" /* 14288 */;
+import Text from "Text" /* 4444 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5521 */;
+import registerAssetDefault from "registerAsset" /* 7732 */;
+import IconButton from "IconButton" /* 7974 */;
+import AutomatedUnderageAppealStatusDefault from "AutomatedUnderageAppealStatus" /* 14322 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8636 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8658 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -41,14 +41,14 @@ export default function SuspendedUserSafetyHubPage() {
   const intl = getSystemLocale.intl;
   obj1[1] = intl.string(getSystemLocale.t.cpT0Cq);
   obj1[2] = function onPress() {
-    callback(6017).closeSuspendedUser();
+    callback(6020).closeSuspendedUser();
   };
   obj1[3] = registerAssetDefault;
   const items = [callback(IconButton.IconButton, obj1), ];
   const obj2 = {
     style: tmp.text,
     onPress() {
-      callback(4159).openURL(constants.WARNING_SYSTEM_HELPCENTER_LINK);
+      callback(4160).openURL(constants.WARNING_SYSTEM_HELPCENTER_LINK);
     },
     variant: "text-xs/medium",
     color: "control-critical-primary-text-default",

@@ -1,9 +1,9 @@
-// Module ID: 7985
-// Function ID: 7986
+// Module ID: 8007
+// Function ID: 8008
 // Name: ContentInventoryEntryType
 // Dependencies: [2]
 
-// Module 7985 (ContentInventoryEntryType)
+// Module 8007 (ContentInventoryEntryType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryEntryType.tsx");

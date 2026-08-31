@@ -1,24 +1,24 @@
-// Module ID: 11199
-// Function ID: 11200
+// Module ID: 11228
+// Function ID: 11229
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7288, 8552, 1391, 4701, 8577, 11200, 10570, 21, 4446, 712, 1494, 10656, 589, 11198, 11197, 5466, 11201, 4163, 1236, 1370, 11202, 4824, 11203, 9970, 4457, 11204, 11205, 4632, 4414, 4415, 4162, 5946, 500, 10658, 6202, 4389, 5035, 10659, 11208, 10670, 2]
+// Dependencies: [5, 32, 19, 17, 7309, 8574, 1387, 4703, 8599, 11229, 10594, 21, 4448, 712, 1493, 10680, 589, 11227, 11226, 5469, 11230, 4164, 1236, 1471, 11231, 4827, 11232, 9993, 4459, 11233, 11234, 4634, 4416, 4417, 4163, 5949, 500, 10682, 6205, 4391, 5038, 10683, 11237, 10694, 2]
 // Exports: default
 
-// Module 11199 (ForwardModal)
+// Module 11228 (ForwardModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "removePendingListFetch" /* 7288 */;
-import closure_8 from "filterStaffGuild" /* 8552 */;
-import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "reinjectEphemerals" /* 4701 */;
-import closure_11 from "messages" /* 8577 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11200 */;
-import { UserRowModes } from "UserRowModes" /* 10570 */;
+import closure_7 from "removePendingListFetch" /* 7309 */;
+import closure_8 from "filterStaffGuild" /* 8574 */;
+import closure_9 from "ensureGuildLoaded" /* 1387 */;
+import closure_10 from "reinjectEphemerals" /* 4703 */;
+import closure_11 from "messages" /* 8599 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11229 */;
+import { UserRowModes } from "UserRowModes" /* 10594 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
@@ -174,7 +174,7 @@ export default function ForwardModal(message) {
             obj[0] = arr;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

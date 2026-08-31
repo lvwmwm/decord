@@ -1,9 +1,9 @@
-// Module ID: 13331
-// Function ID: 13332
+// Module ID: 13365
+// Function ID: 13366
 // Name: getSkuIdForChannel
 // Dependencies: [589, 709, 2]
 
-// Module 13331 (getSkuIdForChannel)
+// Module 13365 (getSkuIdForChannel)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

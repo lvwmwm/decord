@@ -1,9 +1,9 @@
-// Module ID: 1432
-// Function ID: 1433
+// Module ID: 1428
+// Function ID: 1429
 // Name: TypeTag
 // Dependencies: [2]
 
-// Module 1432 (TypeTag)
+// Module 1428 (TypeTag)
 import set from "set" /* 2 */;
 
 const forResult = Symbol.for("PlainRecord.TypeTag");

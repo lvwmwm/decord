@@ -1,24 +1,24 @@
-// Module ID: 9283
-// Function ID: 9284
+// Module ID: 9305
+// Function ID: 9306
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [19, 9280, 676, 8555, 21, 4446, 1500, 9249, 9284, 1236, 2]
+// Dependencies: [19, 9302, 676, 8577, 21, 4448, 1499, 9271, 9306, 1236, 2]
 // Exports: default
 
-// Module 9283 (CrunchyrollLinkPreConnect)
-import registerAssetDefault from "registerAsset" /* 9284 */;
+// Module 9305 (CrunchyrollLinkPreConnect)
+import registerAssetDefault from "registerAsset" /* 9306 */;
 import closure_3 from "noop" /* 19 */;
-import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes" /* 9280 */;
+import { CrunchyrollLinkModalScenes as closure_4 } from "CrunchyrollLinkModalScenes" /* 9302 */;
 import { PlatformTypes } from "ME" /* 676 */;
-import { CRUNCHYROLL_LINK_DEST_ORIGIN as closure_6 } from "CRUNCHYROLL_LINK_DEST_ORIGIN" /* 8555 */;
+import { CRUNCHYROLL_LINK_DEST_ORIGIN as closure_6 } from "CRUNCHYROLL_LINK_DEST_ORIGIN" /* 8577 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let closure_8 = createCacheKey.createStyles({ image: { width: 152, height: 123 } });
 const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkPreConnect.tsx");
 
 export default function CrunchyrollLinkPreConnect() {
-  let obj = navigation(1500);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -34,5 +34,5 @@ export default function CrunchyrollLinkPreConnect() {
   const intl2 = navigation(1236).intl;
   obj[6] = intl2.string(navigation(1236).t.oS4NEH);
   obj[7] = closure_6;
-  return jsx(navigation(9249).TwoWayLinkPreConnect, { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: registerAssetDefault, imgStyle: callback().image, title: null, body: null, redirectDestination: null });
+  return jsx(navigation(9271).TwoWayLinkPreConnect, { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: registerAssetDefault, imgStyle: callback().image, title: null, body: null, redirectDestination: null });
 };

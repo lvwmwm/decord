@@ -1,14 +1,14 @@
-// Module ID: 11866
-// Function ID: 11867
-// Dependencies: [676, 11867, 11842, 11843, 709, 2]
+// Module ID: 11897
+// Function ID: 11898
+// Dependencies: [676, 11898, 11873, 11874, 709, 2]
 
-// Module 11866
+// Module 11897
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 11843 */;
-import handleSearchQuery from "handleSearchQuery" /* 11867 */;
-import prototype from "prototype" /* 11842 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11874 */;
+import handleSearchQuery from "handleSearchQuery" /* 11898 */;
+import prototype from "prototype" /* 11873 */;
 
 const SearchTypes = ME.SearchTypes;
 const result = set.fileFinishedImporting("modules/search/native/SearchPlatformActionCreators.tsx");

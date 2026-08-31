@@ -1,10 +1,10 @@
-// Module ID: 1630
-// Function ID: 1631
-// Dependencies: [1631, 644, 2]
+// Module ID: 1629
+// Function ID: 1630
+// Dependencies: [1630, 644, 2]
 
-// Module 1630
+// Module 1629
 import set from "set" /* 2 */;
-import EMPTY_SAFE_AREA_INSETS from "EMPTY_SAFE_AREA_INSETS" /* 1631 */;
+import EMPTY_SAFE_AREA_INSETS from "EMPTY_SAFE_AREA_INSETS" /* 1630 */;
 import keys from "keys" /* 644 */;
 
 let obj = { safeAreaInsets: EMPTY_SAFE_AREA_INSETS.INITIAL_SAFE_AREA_INSETS };

@@ -1,16 +1,16 @@
-// Module ID: 11822
-// Function ID: 11823
+// Module ID: 11853
+// Function ID: 11854
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4446, 11823, 1430, 11824, 11811, 11812, 4442, 1236, 11820, 2]
+// Dependencies: [5, 19, 17, 21, 4448, 11854, 1426, 11855, 11842, 11843, 4444, 1236, 11851, 2]
 // Exports: default
 
-// Module 11822 (GuildDirectoryCreateOrAddDescription)
+// Module 11853 (GuildDirectoryCreateOrAddDescription)
 import noopAll from "noop" /* 19 */;
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 11820 */;
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 11851 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 noopAll;
@@ -41,7 +41,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -63,7 +63,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
                   const template = tmp37.template;
                   if (null == template) {
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     c4 = 1;
                     c5 = 1;
@@ -112,7 +112,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
               return obj;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp29) {
             c5 = tmp;
             throw tmp29;
@@ -136,11 +136,11 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = directoryChannelId(1236).intl;
   obj1[4] = intl.string(directoryChannelId(1236).t["5bQcoa"]);
-  const items = [callback(directoryChannelId(4442).Text, obj1), ];
+  const items = [callback(directoryChannelId(4444).Text, obj1), ];
   let obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = directoryChannelId(1236).intl;
   obj2[3] = intl2.string(directoryChannelId(1236).t.Ie60Wc);
-  items[1] = callback(directoryChannelId(4442).Text, obj2);
+  items[1] = callback(directoryChannelId(4444).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(_onSubmit, obj), ];
   let obj3 = {
@@ -163,5 +163,5 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   items1[1] = callback(GuildDirectoryEditDescriptionTemplateDefault, obj3);
   obj[2] = items1;
   obj[0] = callback2(closure_5, obj);
-  return callback(directoryChannelId(11812).GuildDirectoryAddModalScreen, obj);
+  return callback(directoryChannelId(11843).GuildDirectoryAddModalScreen, obj);
 };

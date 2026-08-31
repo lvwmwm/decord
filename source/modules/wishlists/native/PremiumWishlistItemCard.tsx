@@ -1,11 +1,11 @@
-// Module ID: 10721
-// Function ID: 10722
+// Module ID: 10745
+// Function ID: 10746
 // Name: PremiumWishlistItemCard
-// Dependencies: [19, 21, 10718, 10719, 2]
+// Dependencies: [19, 21, 10742, 10743, 2]
 // Exports: default
 
-// Module 10721 (PremiumWishlistItemCard)
-import SourceIconDefault from "SourceIcon" /* 10719 */;
+// Module 10745 (PremiumWishlistItemCard)
+import SourceIconDefault from "SourceIcon" /* 10743 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 

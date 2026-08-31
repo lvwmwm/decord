@@ -1,10 +1,10 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17422
+// Function ID: 17423
 // Name: ResendVerificationCodeButton
-// Dependencies: [5, 32, 19, 17, 21, 17380, 4162, 4163, 1236, 2632, 14462, 4399, 4442, 2]
+// Dependencies: [5, 32, 19, 17, 21, 17413, 4163, 4164, 1236, 2633, 14496, 4401, 4444, 2]
 // Exports: default
 
-// Module 17389 (ResendVerificationCodeButton)
+// Module 17422 (ResendVerificationCodeButton)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -46,7 +46,7 @@ export default function ResendVerificationCodeButton(flowId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,14 +1,14 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 12906
+// Function ID: 12907
 // Name: initialize
-// Dependencies: [5186, 1391, 11, 589, 709, 2]
+// Dependencies: [5189, 1387, 11, 589, 709, 2]
 
-// Module 12872 (initialize)
+// Module 12906 (initialize)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "_handleConnectionOpen" /* 5186 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_2 from "_handleConnectionOpen" /* 5189 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
 
 let closure_4 = Object.freeze({ online: null, total: null });
 let closure_5 = {};

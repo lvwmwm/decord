@@ -1,10 +1,10 @@
-// Module ID: 4151
-// Function ID: 4152
+// Module ID: 4152
+// Function ID: 4153
 // Name: defaultMeridiem
-// Dependencies: [4135, 1306, 4149, 4152, 4044, 2]
+// Dependencies: [4136, 1306, 4150, 4153, 4045, 2]
 // Exports: default
 
-// Module 4151 (defaultMeridiem)
+// Module 4152 (defaultMeridiem)
 import set from "set" /* 2 */;
 
 function defaultMeridiem(arg0, arg1, arg2) {
@@ -23,7 +23,7 @@ function defaultMeridiem(arg0, arg1, arg2) {
   return str;
 }
 function getLocaleData() {
-  let obj = format5(4044);
+  let obj = format5(4045);
   const _config = obj.localeData()._config;
   ({ months, monthsShort, weekdays, weekdaysShort, weekdaysMin, meridiem } = _config);
   if (undefined === meridiem) {
@@ -36,7 +36,7 @@ function getLocaleData() {
   ordinal = "month";
   format5 = months;
   if (typeof months === "function") {
-    let tmpResult = tmp(4044);
+    let tmpResult = tmp(4045);
     dependencyMap = months.bind(tmpResult.localeData());
     let fn = (arg0, arg1) => {
       closure_0 = arg0;
@@ -55,7 +55,7 @@ function getLocaleData() {
   ordinal = "month";
   format5 = monthsShort;
   if (typeof monthsShort === "function") {
-    tmpResult = tmp(4044);
+    tmpResult = tmp(4045);
     dependencyMap = monthsShort.bind(tmpResult.localeData());
     let fn2 = (arg0, arg1) => {
       closure_0 = arg0;
@@ -74,12 +74,12 @@ function getLocaleData() {
   ordinal = "day";
   format5 = weekdays;
   if (typeof weekdays === "function") {
-    dependencyMap = weekdays.bind(tmp(4044).localeData());
+    dependencyMap = weekdays.bind(tmp(4045).localeData());
     let fn3 = (arg0, arg1) => {
       closure_0 = arg0;
       return callback({ [closure_0]: () => closure_0 }, arg1);
     };
-    const tmpResult1 = tmp(4044);
+    const tmpResult1 = tmp(4045);
   } else {
     const _Array3 = Array;
     let format3 = weekdays;
@@ -93,12 +93,12 @@ function getLocaleData() {
   ordinal = "day";
   format5 = weekdaysShort;
   if (typeof weekdaysShort === "function") {
-    dependencyMap = weekdaysShort.bind(tmp(4044).localeData());
+    dependencyMap = weekdaysShort.bind(tmp(4045).localeData());
     let fn4 = (arg0, arg1) => {
       closure_0 = arg0;
       return callback({ [closure_0]: () => closure_0 }, arg1);
     };
-    const tmpResult2 = tmp(4044);
+    const tmpResult2 = tmp(4045);
   } else {
     const _Array4 = Array;
     let format4 = weekdaysShort;
@@ -112,12 +112,12 @@ function getLocaleData() {
   ordinal = "day";
   format5 = weekdaysMin;
   if (typeof weekdaysMin === "function") {
-    dependencyMap = weekdaysMin.bind(tmp(4044).localeData());
+    dependencyMap = weekdaysMin.bind(tmp(4045).localeData());
     let fn5 = (arg0, arg1) => {
       closure_0 = arg0;
       return callback({ [closure_0]: () => closure_0 }, arg1);
     };
-    const tmpResult3 = tmp(4044);
+    const tmpResult3 = tmp(4045);
   } else {
     const _Array5 = Array;
     format5 = weekdaysMin;
@@ -153,11 +153,11 @@ export default function makeFormatter(str) {
   _require = tmp;
   let result = undefined === arg1 && !flag;
   if (result) {
-    result = undefined !== _require(4149).makeFormatter;
+    result = undefined !== _require(4150).makeFormatter;
   }
   if (result) {
-    result = _require(4149).supportsSystemDateFormatter();
-    const obj = _require(4149);
+    result = _require(4150).supportsSystemDateFormatter();
+    const obj = _require(4150);
   }
   let replaced = str;
   if (!result) {
@@ -200,23 +200,8 @@ export default function makeFormatter(str) {
     });
   }
   const items = [];
-  while (replaced.length > 0) {
-    let charAtResult = str.charAt(0);
-    let tmp19 = tmp8;
-    let tmp20 = tmp9;
-    let tmp21 = tmp10;
-    let tmp22 = tmp11;
-    let tmp23 = tmp12;
-    let tmp24 = tmp13;
-    let tmp25 = flag2;
-    let tmp26 = flag3;
-    let tmp27 = tmp14;
-    let tmp28 = tmp15;
-    let tmp29 = tmp16;
-    let tmp30 = tmp17;
-    let tmp31 = str;
-    let tmp32 = flag2;
-    let tmp33 = flag3;
+  if (replaced.length > 0) {
+    str.charAt(0);
   }
   // // eliminated: always false
   // // eliminated: always false

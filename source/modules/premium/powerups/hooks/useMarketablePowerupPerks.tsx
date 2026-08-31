@@ -1,13 +1,13 @@
-// Module ID: 13168
-// Function ID: 13169
+// Module ID: 13201
+// Function ID: 13202
 // Name: set
-// Dependencies: [19, 4332, 4333, 4336, 589, 12074, 2]
+// Dependencies: [19, 4334, 4335, 4338, 589, 12107, 2]
 // Exports: default
 
-// Module 13168 (set)
+// Module 13201 (set)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "calculateAppliedBoosts" /* 4332 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4333 */;
+import closure_4 from "calculateAppliedBoosts" /* 4334 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4335 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -30,7 +30,7 @@ export default function useMarketablePowerupPerks(arg0) {
     }
     return tmp2;
   });
-  let tmp2 = stateFromStores(12074)(arg0);
+  let tmp2 = stateFromStores(12107)(arg0);
   dependencyMap = tmp2;
   let items1 = [stateFromStores, tmp2];
   return React.useMemo(() => {

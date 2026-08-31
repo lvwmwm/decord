@@ -1,11 +1,11 @@
-// Module ID: 7320
-// Function ID: 7321
-// Dependencies: [5, 1923, 676, 709, 530, 7321, 1208, 2]
+// Module ID: 7341
+// Function ID: 7342
+// Dependencies: [5, 1922, 676, 709, 530, 7342, 1208, 2]
 
-// Module 7320
+// Module 7341
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -31,7 +31,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ export default {
                 return obj3;
               } else {
                 constants = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           } else if (1 === tmp8) {
@@ -132,7 +132,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -246,7 +246,7 @@ export default {
       obj5[0] = upload_url;
       obj5[1] = body;
       const obj6 = { "Content-Type": null };
-      obj6[0] = closure_1_0(7321).WIDGET_CLIP_CONTENT_TYPE;
+      obj6[0] = closure_1_0(7342).WIDGET_CLIP_CONTENT_TYPE;
       obj5[2] = obj6;
       obj5[3] = function onRequestProgress(direction) {
         let tmp = "upload" === direction.direction;
@@ -277,7 +277,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -367,7 +367,7 @@ export default {
             obj1.dispatch(obj4);
             constants = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp41) {
           closure_4 = tmp41;

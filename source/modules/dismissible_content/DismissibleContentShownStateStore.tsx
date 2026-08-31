@@ -1,21 +1,25 @@
-// Module ID: 1383
-// Function ID: 1384
+// Module ID: 1379
+// Function ID: 1380
 // Name: withContent
-// Dependencies: [1384, 1385, 1386, 700, 1382, 705, 589, 1387, 709, 2]
+// Dependencies: [1380, 1381, 1382, 700, 1378, 705, 589, 1383, 709, 2]
 // Exports: addCandidateContent, default, getCurrentFatigableWinner, getCurrentlyShownCounts, getLastShownDismissibleContent, isAnyContentShown, isContentShown, isInCooldown, isPostConnectionOpen, isStateInCooldown, removeCandidateContent, reset, resetFatigueCooldown, useIsAnyContentShown, useIsContentShown
 
-// Module 1383 (withContent)
+// Module 1379 (withContent)
 import initializeDefault from "initialize" /* 589 */;
 import batchUpdates from "batchUpdates" /* 705 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isActionRequiredDefault from "isActionRequired" /* 1387 */;
-import closure_3 from "handleUpdateUser" /* 1384 */;
-import closure_4 from "handleRequiredAction" /* 1385 */;
+import isActionRequiredDefault from "isActionRequired" /* 1383 */;
+import closure_3 from "handleUpdateUser" /* 1380 */;
+import closure_4 from "handleRequiredAction" /* 1381 */;
 import identity from "identity" /* 700 */;
 
 require = arg1;
 function withContent(currentlyShown, content) {
   const _require = content;
+  let tmp = arg2;
+  if (arg2 === undefined) {
+    tmp = null;
+  }
   if (null == content) {
     return currentlyShown;
   } else {
@@ -30,7 +34,7 @@ function withContent(currentlyShown, content) {
       const currentlyShownGroup = currentlyShown.currentlyShownGroup;
       currentlyShownGroup.add(content.groupName);
     }
-    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1382).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+    const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1378).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
     if (!CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content)) {
       currentlyShown.shownFatigableCandidate = content;
       const prevFatigableCandidate = currentlyShown.prevFatigableCandidate;
@@ -47,7 +51,7 @@ function withContent(currentlyShown, content) {
     }
     const onAdded = content.onAdded;
     if (onAdded != null) {
-      onAdded();
+      onAdded(tmp);
     }
     return currentlyShown;
   }
@@ -75,7 +79,18 @@ function withUpdateWinner(candidates) {
           let candidates2 = candidates.candidates;
           value = candidates2.get(candidates.prevFatigableCandidate.content);
         }
+        require = value;
+        let candidates3 = candidates.candidates;
+        let items = [];
+        HermesBuiltin.arraySpread(candidates3.keys(), 0);
         let shownFatigableCandidate = candidates.shownFatigableCandidate;
+        let found = items.filter((arg0) => {
+          let content;
+          if (obj != null) {
+            content = obj.content;
+          }
+          return arg0 !== content;
+        });
         if (null != shownFatigableCandidate) {
           if (null != shownFatigableCandidate.content) {
             let currentlyShown = candidates.currentlyShown;
@@ -94,8 +109,8 @@ function withUpdateWinner(candidates) {
             candidates.shownFatigableCandidate = null;
           }
         }
-        withContent(candidates, value);
-        const tmp6 = withContent;
+        withContent(candidates, value, found);
+        const tmp9 = withContent;
       }
       return candidates;
     }
@@ -103,18 +118,18 @@ function withUpdateWinner(candidates) {
       let scheduledResult = taskRunner.scheduled();
       if (!scheduledResult) {
         const _Date = Date;
-        let tmp17 = null == candidates.shownFatigableCandidate;
-        if (tmp17) {
-          tmp17 = tmp16 - candidates.lastWinnerTime < 3600000;
+        let tmp20 = null == candidates.shownFatigableCandidate;
+        if (tmp20) {
+          tmp20 = tmp19 - candidates.lastWinnerTime < 3600000;
         }
-        scheduledResult = tmp17;
+        scheduledResult = tmp20;
         const date1 = new Date();
       }
       if (!scheduledResult) {
         obj.schedule(() => {
-          callback(table[5]).batchUpdates(() => {
+          value(table[5]).batchUpdates(() => {
             state.setState((candidates) => {
-              const obj = {};
+              let obj = {};
               const merged = Object.assign(candidates);
               obj.candidates = new Map(candidates.candidates);
               const map = new Map(candidates.candidates);
@@ -143,8 +158,18 @@ function withUpdateWinner(candidates) {
                 });
               }
               const candidates3 = obj.candidates;
+              value = candidates3.get(found[Math.floor(Math, Math.random(Math) * found.length)]);
+              obj = value;
+              const candidates4 = obj.candidates;
+              const items1 = [...candidates4.keys()];
               const shownFatigableCandidate = obj.shownFatigableCandidate;
-              const value = candidates3.get(found[Math.floor(Math, Math.random(Math) * found.length)]);
+              const found1 = items1.filter((arg0) => {
+                let content;
+                if (obj != null) {
+                  content = obj.content;
+                }
+                return arg0 !== content;
+              });
               if (null != shownFatigableCandidate) {
                 if (null != shownFatigableCandidate.content) {
                   const currentlyShown = obj.currentlyShown;
@@ -163,7 +188,7 @@ function withUpdateWinner(candidates) {
                   obj.shownFatigableCandidate = null;
                 }
               }
-              closure_8(obj, value);
+              closure_8(obj, value, found1);
               return obj;
             });
           });
@@ -252,7 +277,7 @@ export const isStateInCooldown = function isStateInCooldown(shownFatigableCandid
 };
 export const addCandidateContent = function addCandidateContent(content) {
   const _require = content;
-  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1382).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
+  const CONTENT_TYPES_WITH_BYPASS_FATIGUE = _require(1378).CONTENT_TYPES_WITH_BYPASS_FATIGUE;
   closure_1 = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(content.content);
   _require(705).batchUpdates(() => {
     closure_1_6.setState((candidates) => {

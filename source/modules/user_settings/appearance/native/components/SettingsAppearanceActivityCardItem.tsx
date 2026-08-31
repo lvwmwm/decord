@@ -1,18 +1,18 @@
-// Module ID: 14822
-// Function ID: 14823
+// Module ID: 14856
+// Function ID: 14857
 // Name: ActivityCardItem
-// Dependencies: [19, 17, 1997, 14823, 21, 4186, 1297, 4446, 712, 647, 8044, 5458, 4442, 1898, 14824, 14825, 14826, 2]
+// Dependencies: [19, 17, 1996, 14857, 21, 4187, 1297, 4448, 712, 647, 8066, 5461, 4444, 1897, 14858, 14859, 14860, 2]
 // Exports: default
 
-// Module 14822 (ActivityCardItem)
+// Module 14856 (ActivityCardItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_4 from "_getSystemLocale" /* 1997 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14823 */;
+import closure_4 from "_getSystemLocale" /* 1996 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14857 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import importDefaultResult from "module_4186" /* 4186 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import importDefaultResult from "module_4187" /* 4187 */;
 
 const require = arg1;
 noopAll;

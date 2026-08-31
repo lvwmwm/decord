@@ -1,14 +1,14 @@
-// Module ID: 7030
-// Function ID: 7031
+// Module ID: 7049
+// Function ID: 7050
 // Name: SunIllocon
-// Dependencies: [21, 5458, 7031, 2]
+// Dependencies: [21, 5461, 7050, 2]
 // Exports: SunIllocon
 
-// Module 7030 (SunIllocon)
+// Module 7049 (SunIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 7031 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 7050 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SunIllocon.native.tsx");

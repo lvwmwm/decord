@@ -1,12 +1,12 @@
-// Module ID: 7105
-// Function ID: 7106
+// Module ID: 7126
+// Function ID: 7127
 // Name: useStoreConnectionErrorAlert
-// Dependencies: [19, 6049, 589, 4822, 1236, 2]
+// Dependencies: [19, 6052, 589, 4825, 1236, 2]
 // Exports: default
 
-// Module 7105 (useStoreConnectionErrorAlert)
+// Module 7126 (useStoreConnectionErrorAlert)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateProduct" /* 6049 */;
+import closure_4 from "updateProduct" /* 6052 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/native/useStoreConnectionErrorAlert.tsx");

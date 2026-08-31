@@ -1,14 +1,14 @@
-// Module ID: 4164
-// Function ID: 4165
+// Module ID: 4165
+// Function ID: 4166
 // Name: FriendsIcon
-// Dependencies: [19, 21, 712, 4165, 4382, 2]
+// Dependencies: [19, 21, 712, 4166, 4384, 2]
 // Exports: FriendsIcon
 
-// Module 4164 (FriendsIcon)
+// Module 4165 (FriendsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 4382 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 4384 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

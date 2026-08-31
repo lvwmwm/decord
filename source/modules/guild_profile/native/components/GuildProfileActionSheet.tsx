@@ -1,19 +1,19 @@
-// Module ID: 8948
-// Function ID: 8949
+// Module ID: 8971
+// Function ID: 8972
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 8949, 8950, 676, 21, 4446, 712, 4381, 8951, 589, 4166, 8026, 5918, 5938, 8952, 8953, 4893, 1236, 8967, 8954, 8968, 689, 5587, 4905, 5589, 5902, 2]
+// Dependencies: [19, 17, 8972, 8973, 676, 21, 4448, 712, 4383, 8974, 589, 4167, 8048, 5921, 5941, 8975, 8976, 4896, 1236, 8990, 8977, 8991, 689, 5590, 4908, 5592, 5905, 2]
 // Exports: default
 
-// Module 8948 (GuildProfileActionSheet)
+// Module 8971 (GuildProfileActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleUpdateStart" /* 8949 */;
-import { GuildProfileFetchStatus } from "handleUpdateStart" /* 8949 */;
-import { INVALID_ACCESS_ERROR_CODE } from "BannerPalettePresets" /* 8950 */;
+import closure_6 from "handleUpdateStart" /* 8972 */;
+import { GuildProfileFetchStatus } from "handleUpdateStart" /* 8972 */;
+import { INVALID_ACCESS_ERROR_CODE } from "BannerPalettePresets" /* 8973 */;
 import { VerticalGradient } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ View: c4, ActivityIndicator: c5 } = get_ActivityIndicator);

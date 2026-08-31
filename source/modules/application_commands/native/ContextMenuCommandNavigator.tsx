@@ -1,17 +1,17 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16411
+// Function ID: 16412
 // Name: ContextMenuCommandNavigator
-// Dependencies: [19, 17, 21, 7769, 4446, 712, 7167, 5973, 1629, 7554, 1236, 16378, 16380, 2]
+// Dependencies: [19, 17, 21, 7790, 4448, 712, 7188, 5976, 1628, 7575, 1236, 16412, 16414, 2]
 // Exports: default
 
-// Module 16377 (ContextMenuCommandNavigator)
+// Module 16411 (ContextMenuCommandNavigator)
 import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7769 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7790 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -25,8 +25,8 @@ const result = require("set").fileFinishedImporting("modules/application_command
 export default function ContextMenuCommandNavigator() {
   const tmp = callback3();
   const _require = tmp;
-  const layoutEffect = React.useLayoutEffect(() => lib(7167).trackAppUIViewed(), []);
-  let obj = _require(5973);
+  const layoutEffect = React.useLayoutEffect(() => lib(7188).trackAppUIViewed(), []);
+  let obj = _require(5976);
   importDefault = obj.useAccessibilityNativeStackOptions();
   const rect = useSafeAreaInsetsDefault();
   obj = { style: items, children: null };
@@ -65,7 +65,7 @@ export default function ContextMenuCommandNavigator() {
   obj2[0] = intl.string(_require(1236).t.PHjkRE);
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return lib(16378).default;
+    return lib(16412).default;
   };
   const items1 = [
     callback(Screen, obj1),
@@ -80,7 +80,7 @@ export default function ContextMenuCommandNavigator() {
         return { title };
       },
       getComponent() {
-        return lib(16380).default;
+        return lib(16414).default;
       }
     })
   ];

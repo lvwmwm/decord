@@ -1,9 +1,9 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 11000
+// Function ID: 11001
 // Name: VibingWumpusAction
 // Dependencies: [2]
 
-// Module 10975 (VibingWumpusAction)
+// Module 11000 (VibingWumpusAction)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/self_mod/inappropriate_conversation/InappropriateConversationsConstants.tsx");

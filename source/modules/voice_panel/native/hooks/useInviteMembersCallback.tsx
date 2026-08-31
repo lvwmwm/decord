@@ -1,12 +1,12 @@
-// Module ID: 16568
-// Function ID: 16569
+// Module ID: 16602
+// Function ID: 16603
 // Name: useInviteMembersCallback
-// Dependencies: [19, 1391, 676, 4300, 9847, 2]
+// Dependencies: [19, 1387, 676, 4302, 9870, 2]
 // Exports: useInviteMembersCallback
 
-// Module 16568 (useInviteMembersCallback)
+// Module 16602 (useInviteMembersCallback)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

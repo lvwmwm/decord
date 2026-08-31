@@ -1,13 +1,13 @@
-// Module ID: 5325
-// Function ID: 5326
+// Module ID: 5328
+// Function ID: 5329
 // Name: canJoinVoiceChannel
-// Dependencies: [1395, 676, 2]
+// Dependencies: [1391, 676, 2]
 // Exports: default
 
-// Module 5325 (canJoinVoiceChannel)
+// Module 5328 (canJoinVoiceChannel)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import createChannelRecord from "createChannelRecord" /* 1395 */;
+import createChannelRecord from "createChannelRecord" /* 1391 */;
 
 const isPrivate = createChannelRecord.isPrivate;
 const BasicPermissions = ME.BasicPermissions;

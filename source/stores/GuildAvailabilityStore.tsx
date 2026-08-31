@@ -1,13 +1,13 @@
-// Module ID: 4821
-// Function ID: 4822
+// Module ID: 4823
+// Function ID: 4824
 // Name: handleConnectionOpen
-// Dependencies: [1910, 3, 589, 709, 2]
+// Dependencies: [1909, 3, 589, 709, 2]
 
-// Module 4821 (handleConnectionOpen)
+// Module 4823 (handleConnectionOpen)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "createGuildRecordFromRust" /* 1910 */;
+import closure_0 from "createGuildRecordFromRust" /* 1909 */;
 import set from "set" /* 2 */;
 
 function handleConnectionOpen(unavailableGuilds) {

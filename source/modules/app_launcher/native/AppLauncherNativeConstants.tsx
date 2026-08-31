@@ -1,14 +1,14 @@
-// Module ID: 1499
-// Function ID: 1500
+// Module ID: 1498
+// Function ID: 1499
 // Name: APP_LAUNCHER_BUILT_IN_SECTION_ICON
-// Dependencies: [1500, 712, 2, 1623]
+// Dependencies: [1499, 712, 2, 1622]
 // Exports: useAppLauncherNavigation
 
-// Module 1499 (APP_LAUNCHER_BUILT_IN_SECTION_ICON)
+// Module 1498 (APP_LAUNCHER_BUILT_IN_SECTION_ICON)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useNavigation from "useNavigation" /* 1500 */;
-import registerAssetDefault from "registerAsset" /* 1623 */;
+import useNavigation from "useNavigation" /* 1499 */;
+import registerAssetDefault from "registerAsset" /* 1622 */;
 
 const result = set.fileFinishedImporting("modules/app_launcher/native/AppLauncherNativeConstants.tsx");
 

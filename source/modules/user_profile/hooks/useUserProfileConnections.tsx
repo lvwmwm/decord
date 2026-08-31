@@ -1,13 +1,13 @@
-// Module ID: 12451
-// Function ID: 12452
+// Module ID: 12485
+// Function ID: 12486
 // Name: useUserProfileConnections
-// Dependencies: [19, 7313, 7195, 589, 5192, 2]
+// Dependencies: [19, 7334, 7216, 589, 5195, 2]
 // Exports: default
 
-// Module 12451 (useUserProfileConnections)
+// Module 12485 (useUserProfileConnections)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "createUserWidgetFromServer" /* 7313 */;
+import closure_4 from "createUserWidgetFromServer" /* 7334 */;
 
 const useMemo = noop.useMemo;
 let closure_5 = [];

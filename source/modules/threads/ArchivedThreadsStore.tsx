@@ -1,19 +1,19 @@
-// Module ID: 7457
-// Function ID: 7458
+// Module ID: 7478
+// Function ID: 7479
 // Name: listKey
-// Dependencies: [32, 1395, 1391, 4461, 4092, 1400, 7458, 12, 1402, 11, 6117, 589, 709, 2]
+// Dependencies: [32, 1391, 1387, 4463, 4093, 1396, 7479, 12, 1398, 11, 6120, 589, 709, 2]
 
-// Module 7457 (listKey)
+// Module 7478 (listKey)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import set from "set" /* 1400 */;
-import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7458 */;
+import set from "set" /* 1396 */;
+import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7479 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "generateOldThreadCutoff" /* 4461 */;
-import closure_7 from "storeThread" /* 4092 */;
+import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1391 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "generateOldThreadCutoff" /* 4463 */;
+import closure_7 from "storeThread" /* 4093 */;
 
 require = arg1;
 function listKey(channelId, sortOrder, tagFilter, tagSetting) {
@@ -112,7 +112,7 @@ function resortListState(value) {
     const mapped = sorted.map((id) => id.id);
     const tmp7Result = applyDefault(store.getAllThreadsForParent(value.channelId));
     value.threads = mapped.reverse().value();
-  } else if (sortOrder === sortOrder(1400).ThreadSortOrder.LATEST_ACTIVITY) {
+  } else if (sortOrder === sortOrder(1396).ThreadSortOrder.LATEST_ACTIVITY) {
     id = id.id;
     let id2 = closure_6.lastMessageId(id);
   } else {
@@ -296,7 +296,7 @@ const archivedThreadsStore = new ArchivedThreadsStore(dispatcherDefault, {
     } else {
       return false;
     }
-    obj = channel(6117);
+    obj = channel(6120);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     let flag = false;

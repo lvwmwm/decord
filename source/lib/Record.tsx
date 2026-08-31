@@ -1,9 +1,9 @@
-// Module ID: 1932
-// Function ID: 1933
+// Module ID: 1931
+// Function ID: 1932
 // Name: toJS
 // Dependencies: [2]
 
-// Module 1932 (toJS)
+// Module 1931 (toJS)
 import set from "set" /* 2 */;
 
 let Record;

@@ -1,12 +1,12 @@
-// Module ID: 12737
-// Function ID: 12738
+// Module ID: 12772
+// Function ID: 12773
 // Name: getOne
-// Dependencies: [12738, 589, 709, 2]
+// Dependencies: [12773, 589, 709, 2]
 
-// Module 12737 (getOne)
+// Module 12772 (getOne)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "getAssetURL" /* 12738 */;
+import closure_0 from "getAssetURL" /* 12773 */;
 
 let closure_1 = {};
 const Store = initializeDefault.Store;

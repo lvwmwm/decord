@@ -1,18 +1,18 @@
-// Module ID: 14049
-// Function ID: 14050
+// Module ID: 14083
+// Function ID: 14084
 // Name: validateEmbeddedAppFrame
-// Dependencies: [9403, 14050, 4348, 676, 9404, 9447, 8382, 9442, 2]
+// Dependencies: [9425, 14084, 4350, 676, 9426, 9469, 8404, 9464, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14049 (validateEmbeddedAppFrame)
-import getApplicationFlags from "getApplicationFlags" /* 8382 */;
-import prototypeDefault from "prototype" /* 9442 */;
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9447 */;
-import closure_3 from "map" /* 9403 */;
-import closure_4 from "getBuilderPreviewApplicationId" /* 14050 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4348 */;
+// Module 14083 (validateEmbeddedAppFrame)
+import getApplicationFlags from "getApplicationFlags" /* 8404 */;
+import prototypeDefault from "prototype" /* 9464 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9469 */;
+import closure_3 from "map" /* 9425 */;
+import closure_4 from "getBuilderPreviewApplicationId" /* 14084 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4350 */;
 import ME from "ME" /* 676 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9404 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9426 */;
 
 require = arg1;
 function validateEmbeddedAppFrame(transport) {
@@ -40,7 +40,7 @@ function validateEmbeddedAppFrame(transport) {
           tmp13 = null;
           if (tmp12.MAIN === type) {
             if (tmp35.applicationId === builderPreviewApplicationId.getBuilderPreviewApplicationId()) {
-              obj1 = { channelId: "Array", guildId: "ct" };
+              obj1 = { channelId: "cix", guildId: "id" };
             } else {
               obj1 = null;
             }

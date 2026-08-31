@@ -1,12 +1,12 @@
-// Module ID: 12558
-// Function ID: 12559
+// Module ID: 12593
+// Function ID: 12594
 // Name: useTrackProductCardImpression
-// Dependencies: [19, 7234, 676, 8830, 589, 8831, 4108, 7246, 698, 2]
+// Dependencies: [19, 7255, 676, 8853, 589, 8854, 4109, 7267, 698, 2]
 // Exports: useTrackProductCardImpression
 
-// Module 12558 (useTrackProductCardImpression)
+// Module 12593 (useTrackProductCardImpression)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7234 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7255 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;

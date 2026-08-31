@@ -1,13 +1,13 @@
-// Module ID: 11995
-// Function ID: 11996
+// Module ID: 12028
+// Function ID: 12029
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [4332, 589, 4336, 11996, 1377, 1236, 2402, 11998, 2]
+// Dependencies: [4334, 589, 4338, 12029, 1373, 1236, 2401, 12031, 2]
 // Exports: default
 
-// Module 11995 (useGuildPowerupRollbackNotificationConfig)
-import messagesProxyDefault from "messagesProxy" /* 2402 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 11998 */;
-import closure_3 from "calculateAppliedBoosts" /* 4332 */;
+// Module 12028 (useGuildPowerupRollbackNotificationConfig)
+import messagesProxyDefault from "messagesProxy" /* 2401 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12031 */;
+import closure_3 from "calculateAppliedBoosts" /* 4334 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackNotificationConfig.tsx");
@@ -19,7 +19,7 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, locat
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_3.getStateForGuild(closure_0));
   let tmp4;
   if (stateFromStores != null) {
-    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4336).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
+    tmp4 = stateFromStores.allPowerups[tmp(undefined, 4338).GUILD_POWERUP_MAX_FILE_SIZE_250_MB_SKU_ID];
   }
   if (tmp4 != null) {
     const storeRemovalDate = tmp4.storeRemovalDate;
@@ -41,7 +41,7 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, locat
         tmp5 = null;
         if (null != cost) {
           obj = { dismissibleContent: null, title: null, description: null };
-          obj[0] = tmp(1377).DismissibleContent.FILE_UPLOAD_POWERUP_ROLLBACK_NOTIFICATION;
+          obj[0] = tmp(1373).DismissibleContent.FILE_UPLOAD_POWERUP_ROLLBACK_NOTIFICATION;
           const intl = tmp(1236).intl;
           obj = { dateString: null };
           obj[0] = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);

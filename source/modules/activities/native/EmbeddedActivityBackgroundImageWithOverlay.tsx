@@ -1,17 +1,17 @@
-// Module ID: 9559
-// Function ID: 9560
+// Module ID: 9581
+// Function ID: 9582
 // Name: EmbeddedActivityBackgroundImageWithOverlay
-// Dependencies: [32, 19, 17, 21, 4446, 712, 9560, 2]
+// Dependencies: [32, 19, 17, 21, 4448, 712, 9582, 2]
 // Exports: default
 
-// Module 9559 (EmbeddedActivityBackgroundImageWithOverlay)
+// Module 9581 (EmbeddedActivityBackgroundImageWithOverlay)
 import ThemesDefault from "Themes" /* 712 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9560 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9582 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 ({ ImageBackground: c4, View: c5, StyleSheet: closure_6 } = get_ActivityIndicator);
 createCacheKey = { overlay: null };

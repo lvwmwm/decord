@@ -1,9 +1,9 @@
-// Module ID: 13232
-// Function ID: 13233
+// Module ID: 13265
+// Function ID: 13266
 // Name: WorkSchedulerTelemetryEvent
 // Dependencies: [32, 12, 2]
 
-// Module 13232 (WorkSchedulerTelemetryEvent)
+// Module 13265 (WorkSchedulerTelemetryEvent)
 import apply from "apply" /* 12 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 

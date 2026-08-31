@@ -1,20 +1,20 @@
-// Module ID: 4438
-// Function ID: 4439
+// Module ID: 4440
+// Function ID: 4441
 // Name: maybeApplyNoTextColorForLightCustomTheme
-// Dependencies: [109, 1303, 1302, 1340, 676, 4439, 4440, 4135, 589, 595, 1363, 709, 2]
+// Dependencies: [109, 1303, 1302, 1340, 676, 4441, 4442, 4136, 589, 595, 1363, 709, 2]
 
-// Module 4438 (maybeApplyNoTextColorForLightCustomTheme)
+// Module 4440 (maybeApplyNoTextColorForLightCustomTheme)
 import initializeDefault from "initialize" /* 589 */;
 import Storage7 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import setDefault from "set" /* 4440 */;
+import setDefault from "set" /* 4442 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "initialize" /* 1303 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
 import closure_7 from "handleConnectionClosedOrResumed" /* 1340 */;
 import ME from "ME" /* 676 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4439 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4441 */;
 
 require = arg1;
 function maybeApplyNoTextColorForLightCustomTheme() {
@@ -26,7 +26,7 @@ function maybeApplyNoTextColorForLightCustomTheme() {
       tmp3 = theme.theme !== ThemeTypes.LIGHT;
     }
     if (!tmp3) {
-      const ClientThemeSettings = require(4135) /* explicitContentFromProto */.ClientThemeSettings;
+      const ClientThemeSettings = require(4136) /* explicitContentFromProto */.ClientThemeSettings;
       const setting = ClientThemeSettings.getSetting();
       let tmp10 = null != setting.backgroundGradientPresetId;
       if (!tmp10) {
@@ -130,7 +130,7 @@ prototype["initialize"] = function initialize(arg0) {
   self.syncWith(items, maybeApplyNoTextColorForLightCustomTheme);
 };
 Object.defineProperty(prototype, "fontScale", {
-  get: function fontScale(applicationAccountLinkMarkAsDismissed, arg1, id) {
+  get: function fontScale(arg0) {
     return obj.fontSize / Accessibility.FONT_SIZE_DEFAULT * 100;
   },
   set: undefined
@@ -246,7 +246,7 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
     if (null != obj.messageGroupSpacing) {
       let messageGroupSpacing = obj.messageGroupSpacing;
     } else {
-      const MessageDisplayCompact = require(4135) /* explicitContentFromProto */.MessageDisplayCompact;
+      const MessageDisplayCompact = require(4136) /* explicitContentFromProto */.MessageDisplayCompact;
       messageGroupSpacing = MessageDisplayCompact.getSetting() ? closure_11 : closure_12;
     }
     return messageGroupSpacing;
@@ -255,14 +255,14 @@ Object.defineProperty(prototype, "messageGroupSpacing", {
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingIncreased", {
   get: function isMessageGroupSpacingIncreased() {
-    const MessageDisplayCompact = require(4135) /* explicitContentFromProto */.MessageDisplayCompact;
+    const MessageDisplayCompact = require(4136) /* explicitContentFromProto */.MessageDisplayCompact;
     return this.messageGroupSpacing > (MessageDisplayCompact.getSetting() ? closure_11 : closure_12);
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isMessageGroupSpacingDecreased", {
   get: function isMessageGroupSpacingDecreased() {
-    const MessageDisplayCompact = require(4135) /* explicitContentFromProto */.MessageDisplayCompact;
+    const MessageDisplayCompact = require(4136) /* explicitContentFromProto */.MessageDisplayCompact;
     return this.messageGroupSpacing < (MessageDisplayCompact.getSetting() ? closure_11 : closure_12);
   },
   set: undefined

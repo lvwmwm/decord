@@ -1,16 +1,16 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11413
+// Function ID: 11414
 // Name: ClassificationDetailModal
-// Dependencies: [19, 676, 11385, 21, 4446, 712, 4689, 5460, 11386, 6210, 11421, 11393, 1501, 5973, 1236, 2]
+// Dependencies: [19, 676, 11414, 21, 4448, 712, 4691, 5463, 11415, 6213, 11450, 11422, 1500, 5976, 1236, 2]
 // Exports: default
 
-// Module 11384 (ClassificationDetailModal)
+// Module 11413 (ClassificationDetailModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_4 from "noop" /* 19 */;
 import { UserSettingsSections } from "ME" /* 676 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11385 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11414 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let closure_8 = { CLASSIFICATION_DETAIL: "CLASSIFICATION_DETAIL" };
@@ -31,7 +31,7 @@ export default function ClassificationDetailModal(classificationId) {
   let safetyHubInitialized;
   const tmp = callback();
   dependencyMap = tmp;
-  let obj = classificationId(11421);
+  let obj = classificationId(11450);
   safetyHubInitialized = obj.useSafetyHubInitialized();
   const items = [safetyHubInitialized];
   const effect = safetyHubInitialized.useEffect(() => {
@@ -40,7 +40,7 @@ export default function ClassificationDetailModal(classificationId) {
       const obj = flag(headerStyle[11]);
     }
   }, items);
-  const isFocused = classificationId(1501).useIsFocused();
+  const isFocused = classificationId(1500).useIsFocused();
   const items1 = [classificationId, flag, tmp, source];
   const memo = safetyHubInitialized.useMemo(() => {
     closure_1 = closure_2;
@@ -72,9 +72,9 @@ export default function ClassificationDetailModal(classificationId) {
             }
           },
           onError() {
-            let arr = callback2(4689);
+            let arr = callback2(4691);
             arr = arr.pop();
-            let obj = callback(6210);
+            let obj = callback(6213);
             obj = { screen: constants.ACCOUNT, params: obj };
             obj = { initialTab: constants2.STANDING };
             obj.openUserSettings(obj);
@@ -88,5 +88,5 @@ export default function ClassificationDetailModal(classificationId) {
   obj = { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null };
   const intl = classificationId(1236).intl;
   obj[2] = intl.string(classificationId(1236).t["13/7kX"]);
-  return jsx(classificationId(5973).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
+  return jsx(classificationId(5976).Navigator, { screens: memo, initialRouteName: constants.CLASSIFICATION_DETAIL, headerBackTitle: null });
 };

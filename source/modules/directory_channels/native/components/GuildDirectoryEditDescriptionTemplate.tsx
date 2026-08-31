@@ -1,18 +1,18 @@
-// Module ID: 11820
-// Function ID: 11821
+// Module ID: 11851
+// Function ID: 11852
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 11815, 11808, 21, 4446, 589, 4345, 7755, 1236, 7639, 7640, 4893, 2]
+// Dependencies: [5, 32, 19, 17, 11846, 11839, 21, 4448, 589, 4347, 7776, 1236, 7660, 7661, 4896, 2]
 // Exports: default
 
-// Module 11820 (GuildDirectoryEditDescriptionTemplate)
+// Module 11851 (GuildDirectoryEditDescriptionTemplate)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "isFetching" /* 11815 */;
-import DirectoryEntryTypes from "DirectoryEntryTypes" /* 11808 */;
+import closure_8 from "isFetching" /* 11846 */;
+import DirectoryEntryTypes from "DirectoryEntryTypes" /* 11839 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ View: closure_6, Keyboard: error } = get_ActivityIndicator);
@@ -42,7 +42,7 @@ export default function GuildDirectoryEditDescriptionTemplate(buttonLabel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

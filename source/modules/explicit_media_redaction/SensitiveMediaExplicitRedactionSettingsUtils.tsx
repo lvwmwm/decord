@@ -1,17 +1,17 @@
-// Module ID: 6109
-// Function ID: 6110
+// Module ID: 6112
+// Function ID: 6113
 // Name: resolveExplicitContentSettingWithDefaults
-// Dependencies: [1923, 4137, 1306, 4141, 4148, 4135, 6110, 2]
+// Dependencies: [1922, 4138, 1306, 4142, 4149, 4136, 6113, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 6109 (resolveExplicitContentSettingWithDefaults)
+// Module 6112 (resolveExplicitContentSettingWithDefaults)
 import create from "create" /* 1306 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4141 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4148 */;
-import getShouldObscureForSetting from "getShouldObscureForSetting" /* 6110 */;
-import closure_2 from "mergeGuildAvatar" /* 1923 */;
-import { ExplicitContentFilterTypes } from "items" /* 4137 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4142 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4149 */;
+import getShouldObscureForSetting from "getShouldObscureForSetting" /* 6113 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
+import { ExplicitContentFilterTypes } from "items" /* 4138 */;
 
 require = arg1;
 function resolveExplicitContentSettingWithDefaults(isFriend) {
@@ -62,7 +62,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
       if (!flag5) {
         const BLUR = tmp4(1306).ExplicitContentRedaction.BLUR;
       }
-      const ExplicitContentFilter2 = tmp4(4135).ExplicitContentFilter;
+      const ExplicitContentFilter2 = tmp4(4136).ExplicitContentFilter;
       setting = ExplicitContentFilter2.getSetting();
       if (flag6) {
         let tmp11 = obj[setting];
@@ -79,7 +79,7 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
         flag4 = false;
       }
       if (flag3) {
-        const ExplicitContentFilter = tmp4(4135).ExplicitContentFilter;
+        const ExplicitContentFilter = tmp4(4136).ExplicitContentFilter;
         const setting1 = ExplicitContentFilter.getSetting();
         if (flag4) {
           let SHOW = obj[setting1];
@@ -148,7 +148,7 @@ export const resolveSettingWithDefaultsForTeen = function resolveSettingWithDefa
     flag2 = false;
   }
   if (flag) {
-    const ExplicitContentFilter = tmp(4135).ExplicitContentFilter;
+    const ExplicitContentFilter = tmp(4136).ExplicitContentFilter;
     const setting = ExplicitContentFilter.getSetting();
     if (flag2) {
       let tmp5 = obj[setting];

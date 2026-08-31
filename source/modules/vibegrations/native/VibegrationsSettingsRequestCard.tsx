@@ -1,16 +1,16 @@
-// Module ID: 16126
-// Function ID: 16127
+// Module ID: 16160
+// Function ID: 16161
 // Name: VibegrationsSettingsRequestCard
-// Dependencies: [19, 17, 16108, 21, 4446, 712, 589, 4413, 16127, 4442, 1236, 3470, 4893, 2]
+// Dependencies: [19, 17, 16142, 21, 4448, 712, 589, 4415, 16161, 4444, 1236, 3471, 4896, 2]
 // Exports: default
 
-// Module 16126 (VibegrationsSettingsRequestCard)
+// Module 16160 (VibegrationsSettingsRequestCard)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "rejectPendingPublish" /* 16108 */;
+import closure_5 from "rejectPendingPublish" /* 16142 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -58,8 +58,8 @@ export default function VibegrationsSettingsRequestCard(projectId) {
   }, items1);
   obj = { variant: "text-xs/semibold", color: "text-muted", children: null };
   const intl = tmp2(1236).intl;
-  obj[2] = intl.string(request(3470).wgDhiQ);
-  const items2 = [callback(projectId(4442).Text, obj), , , ];
+  obj[2] = intl.string(request(3471).wgDhiQ);
+  const items2 = [callback(projectId(4444).Text, obj), , , ];
   if (null != request.note) {
     if ("" !== request.note) {
       let note = request.note;
@@ -82,11 +82,11 @@ export default function VibegrationsSettingsRequestCard(projectId) {
     const obj3 = { variant: "secondary", size: "sm", onPress: null, text: null };
     obj3[2] = callback;
     const intl3 = tmp2(1236).intl;
-    obj3[3] = intl3.string(tmp8(3470)["KO2xN+"]);
-    items2[3] = tmp7(tmp2(4893).Button, obj3);
+    obj3[3] = intl3.string(tmp8(3471)["KO2xN+"]);
+    items2[3] = tmp7(tmp2(4896).Button, obj3);
     obj[1] = items2;
     return closure_7(tmp6, obj);
   }
   const intl2 = tmp2(1236).intl;
-  note = intl2.string(tmp8(3470)["V+DBhs"]);
+  note = intl2.string(tmp8(3471)["V+DBhs"]);
 };

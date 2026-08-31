@@ -1,17 +1,17 @@
-// Module ID: 10761
-// Function ID: 10762
+// Module ID: 10785
+// Function ID: 10786
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 7239, 1949, 1923, 21, 4446, 712, 589, 10414, 1500, 10454, 8438, 10392, 10762, 8468, 1948, 1297, 10731, 4893, 1236, 2]
+// Dependencies: [19, 17, 7260, 1948, 1922, 21, 4448, 712, 589, 10438, 1499, 10478, 8460, 10416, 10786, 8490, 1947, 1297, 10755, 4896, 1236, 2]
 // Exports: default
 
-// Module 10761 (PremiumGiftingPromotionSuccessActions)
+// Module 10785 (PremiumGiftingPromotionSuccessActions)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isAvatarDecorationRecord, isNameplateRecord } from "fromServer" /* 7239 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import { isAvatarDecorationRecord, isNameplateRecord } from "fromServer" /* 7260 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);

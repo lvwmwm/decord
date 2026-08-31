@@ -1,21 +1,21 @@
-// Module ID: 15906
-// Function ID: 15907
+// Module ID: 15940
+// Function ID: 15941
 // Name: YouBarAvatarLarge
-// Dependencies: [5, 32, 19, 17, 4438, 5188, 1923, 14632, 676, 21, 4446, 712, 589, 1297, 4173, 4186, 8844, 8044, 4892, 4166, 8043, 8013, 4414, 6210, 2010, 5617, 2]
+// Dependencies: [5, 32, 19, 17, 4440, 5191, 1922, 14666, 676, 21, 4448, 712, 589, 1297, 4174, 4187, 8867, 8066, 4895, 4167, 8065, 8035, 4416, 6213, 2009, 5620, 2]
 
-// Module 15906 (YouBarAvatarLarge)
+// Module 15940 (YouBarAvatarLarge)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_9 from "filterPlayingActivities" /* 5188 */;
-import closure_10 from "mergeGuildAvatar" /* 1923 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14632 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_9 from "filterPlayingActivities" /* 5191 */;
+import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14666 */;
 import { StatusTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function YouBarAvatarLarge(transitionState) {
@@ -187,7 +187,7 @@ function YouBarAvatarLarge(transitionState) {
     obj4[0] = obj5;
     obj2[2] = closure_22(sharedValue1, obj4);
     const items6 = [closure_22(tmp23Result, obj2), , , ];
-    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: "GUILD_POWERUPS_RESET_NOTIFICATIONS" };
+    const obj6 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, status: null, statusSizeOverride: null, cutout: null, statusStyle: -49.856 };
     obj6[0] = stateFromStores;
     obj6[2] = closure_11;
     if (OFFLINE === StatusTypes.UNKNOWN) {
@@ -318,7 +318,7 @@ function YouBarAvatar(transitionState) {
     obj1[2] = -result;
     const items3 = [obj1, animatedStyle];
     obj[0] = items3;
-    obj2 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration: null, status: true, autoStatusCutout: "/assets/modules/checkout/messages" };
+    obj2 = { user: null, guildId: "Array", size: false, animate: true, needsOffscreenAlphaCompositing: null, avatarDecoration: null, status: true, autoStatusCutout: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi" };
     obj2[0] = stateFromStores;
     obj2[2] = closure_13;
     obj2[5] = avatarDecoration;
@@ -397,7 +397,7 @@ const memoResult = importAllResult.memo(function YouBarAvatarAnimated(isLargeAva
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -433,7 +433,7 @@ const memoResult = importAllResult.memo(function YouBarAvatarAnimated(isLargeAva
           arg1.openUserSettings();
           callback(false);
           paths = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp12) {
         paths = tmp;

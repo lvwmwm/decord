@@ -1,10 +1,10 @@
-// Module ID: 12524
-// Function ID: 12525
+// Module ID: 12558
+// Function ID: 12559
 // Name: setSendState
 // Dependencies: [644, 705, 2]
 // Exports: setSendState
 
-// Module 12524 (setSendState)
+// Module 12558 (setSendState)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 

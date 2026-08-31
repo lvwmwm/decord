@@ -1,16 +1,16 @@
-// Module ID: 7620
-// Function ID: 7621
+// Module ID: 7641
+// Function ID: 7642
 // Name: getGuildBadgeSource
-// Dependencies: [19, 676, 21, 7621, 7622, 7623, 7624, 1430, 1297, 2]
+// Dependencies: [19, 676, 21, 7642, 7643, 7644, 7645, 1426, 1297, 2]
 
-// Module 7620 (getGuildBadgeSource)
+// Module 7641 (getGuildBadgeSource)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1297 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1430 */;
-import registerAssetDefault from "registerAsset" /* 7621 */;
-import registerAssetDefault2 from "registerAsset" /* 7622 */;
-import registerAssetDefault3 from "registerAsset" /* 7623 */;
-import registerAssetDefault4 from "registerAsset" /* 7624 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
+import registerAssetDefault from "registerAsset" /* 7642 */;
+import registerAssetDefault2 from "registerAsset" /* 7643 */;
+import registerAssetDefault3 from "registerAsset" /* 7644 */;
+import registerAssetDefault4 from "registerAsset" /* 7645 */;
 import { GuildFeatures } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15602
+// Function ID: 15603
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 
-// Module 15568 (apexExperiment)
+// Module 15602 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null, 2: { list: "flash", recycleItems: false }, 3: { list: "legend", recycleItems: false } };
 obj[3] = { list: "legend", recycleItems: true };

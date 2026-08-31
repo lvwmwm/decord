@@ -1,14 +1,14 @@
-// Module ID: 5434
-// Function ID: 5435
+// Module ID: 5437
+// Function ID: 5438
 // Name: useCanChannelBeDefault
-// Dependencies: [1984, 1391, 676, 506, 589, 4095, 2]
+// Dependencies: [1983, 1387, 676, 506, 589, 4096, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 5434 (useCanChannelBeDefault)
+// Module 5437 (useCanChannelBeDefault)
 import fromStringAll from "fromString" /* 506 */;
-import applyOverwritesAll from "applyOverwrites" /* 4095 */;
-import closure_3 from "isSubscriptionGated" /* 1984 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import applyOverwritesAll from "applyOverwrites" /* 4096 */;
+import closure_3 from "isSubscriptionGated" /* 1983 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

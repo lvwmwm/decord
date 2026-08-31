@@ -1,9 +1,9 @@
-// Module ID: 6967
-// Function ID: 6968
+// Module ID: 6986
+// Function ID: 6987
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6967 (metadata)
+// Module 6986 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SmokeIllocon-2x.png.js");

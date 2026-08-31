@@ -1,20 +1,20 @@
-// Module ID: 16828
-// Function ID: 16829
+// Module ID: 16861
+// Function ID: 16862
 // Name: handleConnectionOpen
-// Dependencies: [32, 4463, 4930, 1218, 4497, 4510, 9723, 11, 1306, 595, 1374, 9722, 12, 13492, 9816, 5451, 2]
+// Dependencies: [32, 4465, 4933, 1218, 4499, 4512, 9745, 11, 1306, 595, 1370, 9744, 12, 13526, 9839, 5454, 2]
 
-// Module 16828 (handleConnectionOpen)
+// Module 16861 (handleConnectionOpen)
 import Storage2 from "Storage" /* 595 */;
-import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
-import initializeDefault from "initialize" /* 5451 */;
-import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 9723 */;
-import getPendingAudioSettings from "getPendingAudioSettings" /* 13492 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1370 */;
+import initializeDefault from "initialize" /* 5454 */;
+import AudioSettingsDefaultVolumes from "AudioSettingsDefaultVolumes" /* 9745 */;
+import getPendingAudioSettings from "getPendingAudioSettings" /* 13526 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "set" /* 4463 */;
-import closure_5 from "handleSoundCreateOrUpdate" /* 4930 */;
+import closure_4 from "set" /* 4465 */;
+import closure_5 from "handleSoundCreateOrUpdate" /* 4933 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4497 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4510 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4499 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4512 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;
@@ -25,7 +25,7 @@ function handleConnectionOpen() {
     HermesBuiltin.throwTypeError();
   }
   if (!Storage.get("AudioContextSettingsMigrated:" + id)) {
-    const PreloadedUserSettingsActionCreators = tmp(1374).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = tmp(1370).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("audioContextSettings", (arg0) => {
       let flag = false;
       const entries = Object.entries(state.getState().settingsByContext);
@@ -37,7 +37,7 @@ function handleConnectionOpen() {
         let tmp8 = tmp5[1];
         let tmp9 = callback;
         let tmp10 = dependencyMap;
-        let obj = callback(9722);
+        let obj = callback(9744);
         let result = obj.coerceAudioContextForProto(first);
         if (null != result) {
           let tmp52 = result;
@@ -82,7 +82,7 @@ function handleConnectionOpen() {
             let merged = Object.assign(obj[first1]);
             let tmp31 = callback;
             let tmp32 = dependencyMap;
-            let obj4 = callback(9722);
+            let obj4 = callback(9744);
             let tmp33 = first;
             obj1.volume = obj4.snapVolumeToDefault(tmp25[1], tmp7);
             obj[first1] = obj1;
@@ -127,7 +127,7 @@ function handleConnectionOpen() {
       const Storage = callback(595).Storage;
       const result1 = Storage.set(callback3(id.getId()), true);
       return flag;
-    }, tmp(1374).UserSettingsDelay.AUTOMATED);
+    }, tmp(1370).UserSettingsDelay.AUTOMATED);
   }
 }
 function handleSetLocalVolume(arg0) {

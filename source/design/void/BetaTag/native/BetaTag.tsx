@@ -1,20 +1,20 @@
-// Module ID: 12890
-// Function ID: 12891
+// Module ID: 12924
+// Function ID: 12925
 // Name: BetaTag
-// Dependencies: [19, 17, 7124, 21, 4446, 712, 4905, 691, 4442, 1236, 2]
+// Dependencies: [19, 17, 7145, 21, 4448, 712, 4908, 691, 4444, 1236, 2]
 // Exports: default
 
-// Module 12890 (BetaTag)
+// Module 12924 (BetaTag)
 import noopAll from "noop" /* 19 */;
 import keys from "keys" /* 691 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import LinearGradientDefault from "LinearGradient" /* 4905 */;
+import Text from "Text" /* 4444 */;
+import LinearGradientDefault from "LinearGradient" /* 4908 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { Gradients } from "items" /* 7124 */;
+import { Gradients } from "items" /* 7145 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;

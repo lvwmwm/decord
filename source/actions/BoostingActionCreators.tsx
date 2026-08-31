@@ -1,14 +1,14 @@
-// Module ID: 4341
-// Function ID: 4342
+// Module ID: 4343
+// Function ID: 4344
 // Name: _fetchAppliedGuildBoostsForGuild
-// Dependencies: [5, 4342, 4343, 4114, 676, 530, 709, 4344, 2]
+// Dependencies: [5, 4344, 4345, 4115, 676, 530, 709, 4346, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 4341 (_fetchAppliedGuildBoostsForGuild)
+// Module 4343 (_fetchAppliedGuildBoostsForGuild)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createFromServer" /* 4342 */;
-import closure_5 from "createFromServer" /* 4343 */;
-import closure_6 from "reset" /* 4114 */;
+import closure_4 from "createFromServer" /* 4344 */;
+import closure_5 from "createFromServer" /* 4345 */;
+import closure_6 from "reset" /* 4115 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -31,7 +31,7 @@ function _fetchAppliedGuildBoostsForGuild() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ function _fetchAppliedGuildBoostsForGuild() {
               dependencyMap = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -143,7 +143,7 @@ function _fetchAppliedGuildBoostsForUser() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -167,7 +167,7 @@ function _fetchAppliedGuildBoostsForUser() {
               callback = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -282,7 +282,7 @@ function _fetchAppliedBoostsCooldown() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -320,7 +320,7 @@ function _fetchAppliedBoostsCooldown() {
             c5 = 3;
             return { value: null, done: true };
           } else {
-            const appliedGuildBoostError = new ends_at(4344).AppliedGuildBoostError(lib);
+            const appliedGuildBoostError = new ends_at(4346).AppliedGuildBoostError(lib);
             throw appliedGuildBoostError;
           }
         } else if (arg0 === 1) {
@@ -385,7 +385,7 @@ function _applyToGuild() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -411,7 +411,7 @@ function _applyToGuild() {
               let appliedGuildBoostError;
               c7 = 1;
               c8 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -519,7 +519,7 @@ function _unapplyFromGuild() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -554,7 +554,7 @@ function _unapplyFromGuild() {
           } else if (1 === tmp7) {
             c5 = 0;
             dependencyMap = closure_4;
-            appliedGuildBoostError = new callback(4344).AppliedGuildBoostError(dependencyMap);
+            appliedGuildBoostError = new callback(4346).AppliedGuildBoostError(dependencyMap);
             let obj3 = appliedGuildBoostError(709);
             obj3 = { type: "GUILD_UNAPPLY_BOOST_FAIL", error: null };
             obj3[1] = appliedGuildBoostError;
@@ -577,7 +577,7 @@ function _unapplyFromGuild() {
             obj5[1] = callback;
             obj.dispatch(obj5);
             c7 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp33) {
           closure_4 = tmp33;

@@ -1,12 +1,12 @@
-// Module ID: 6215
-// Function ID: 6216
+// Module ID: 6218
+// Function ID: 6219
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: useGiftCardsExperimentConfig
 
-// Module 6215 (apexExperiment)
+// Module 6218 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

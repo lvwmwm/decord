@@ -1,12 +1,12 @@
-// Module ID: 16836
-// Function ID: 16837
+// Module ID: 16869
+// Function ID: 16870
 // Name: getAppMajorVersion
-// Dependencies: [1626, 2]
+// Dependencies: [1625, 2]
 // Exports: getAppMajorVersion
 
-// Module 16836 (getAppMajorVersion)
+// Module 16869 (getAppMajorVersion)
 import set from "set" /* 2 */;
-import getConstants from "getConstants" /* 1626 */;
+import getConstants from "getConstants" /* 1625 */;
 
 const constants = getConstants.getConstants();
 const result = set.fileFinishedImporting("utils/native/AppInfoUtils.tsx");

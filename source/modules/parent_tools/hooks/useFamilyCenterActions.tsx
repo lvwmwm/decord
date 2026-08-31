@@ -1,15 +1,15 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11456
+// Function ID: 11457
 // Name: useFamilyCenterActions
-// Dependencies: [5, 32, 19, 7229, 7230, 7231, 4344, 2]
+// Dependencies: [5, 32, 19, 7250, 7251, 7252, 4346, 2]
 // Exports: useFamilyCenterActions
 
-// Module 11427 (useFamilyCenterActions)
+// Module 11456 (useFamilyCenterActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "freshTeenActivityWithMap" /* 7229 */;
-import { UserLinkStatus } from "items" /* 7230 */;
+import closure_6 from "freshTeenActivityWithMap" /* 7250 */;
+import { UserLinkStatus } from "items" /* 7251 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useFamilyCenterActions.tsx");
@@ -76,7 +76,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -180,7 +180,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -284,7 +284,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -388,7 +388,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -488,7 +488,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -579,7 +579,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -684,7 +684,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -788,7 +788,7 @@ export const useFamilyCenterActions = function useFamilyCenterActions(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

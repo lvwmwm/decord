@@ -1,15 +1,15 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 15604
+// Function ID: 15605
 // Name: useMessagesReconnectToCallsEffect
-// Dependencies: [32, 19, 5186, 1391, 6030, 709, 2]
+// Dependencies: [32, 19, 5189, 1387, 6033, 709, 2]
 // Exports: default
 
-// Module 15570 (useMessagesReconnectToCallsEffect)
+// Module 15604 (useMessagesReconnectToCallsEffect)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_handleConnectionOpen" /* 5186 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "makeSortedChannel" /* 6030 */;
+import closure_4 from "_handleConnectionOpen" /* 5189 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "makeSortedChannel" /* 6033 */;
 
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesReconnectToCallsEffect.tsx");
 

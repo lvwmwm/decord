@@ -1,13 +1,13 @@
-// Module ID: 14269
-// Function ID: 14270
+// Module ID: 14303
+// Function ID: 14304
 // Name: useIs2FAEnabled
-// Dependencies: [1218, 1923, 647, 2]
+// Dependencies: [1218, 1922, 647, 2]
 // Exports: useIs2FAEnabled, useIsTOTPEnabled, useIsUserVerified
 
-// Module 14269 (useIs2FAEnabled)
+// Module 14303 (useIs2FAEnabled)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/account/native/SettingsAccountUtils.tsx");

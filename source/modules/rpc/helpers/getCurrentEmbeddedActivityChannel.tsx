@@ -1,12 +1,12 @@
-// Module ID: 14055
-// Function ID: 14056
+// Module ID: 14089
+// Function ID: 14090
 // Name: getCurrentEmbeddedActivityChannel
-// Dependencies: [1390, 1391, 2]
+// Dependencies: [1386, 1387, 2]
 // Exports: default
 
-// Module 14055 (getCurrentEmbeddedActivityChannel)
-import closure_0 from "participantFromServer" /* 1390 */;
-import closure_1 from "ensureGuildLoaded" /* 1391 */;
+// Module 14089 (getCurrentEmbeddedActivityChannel)
+import closure_0 from "participantFromServer" /* 1386 */;
+import closure_1 from "ensureGuildLoaded" /* 1387 */;
 
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/getCurrentEmbeddedActivityChannel.tsx");
 

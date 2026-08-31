@@ -1,12 +1,12 @@
-// Module ID: 4675
-// Function ID: 4676
+// Module ID: 4677
+// Function ID: 4678
 // Name: guildHasOnboardingHome
-// Dependencies: [676, 1913, 2]
+// Dependencies: [676, 1912, 2]
 // Exports: default
 
-// Module 4675 (guildHasOnboardingHome)
+// Module 4677 (guildHasOnboardingHome)
 import set from "set" /* 2 */;
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1912 */;
 import ME from "ME" /* 676 */;
 
 ({ GuildFeatures: obj1, ME: c3 } = ME);

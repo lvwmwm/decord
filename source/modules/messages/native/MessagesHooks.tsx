@@ -1,18 +1,18 @@
-// Module ID: 11014
-// Function ID: 11015
+// Module ID: 11039
+// Function ID: 11040
 // Name: useMessageAuthorActivities
-// Dependencies: [32, 19, 17, 10883, 9473, 4821, 1910, 4535, 589, 12, 643, 5919, 1370, 7427, 11015, 10828, 11016, 2]
+// Dependencies: [32, 19, 17, 10907, 9495, 4823, 1909, 4537, 589, 12, 643, 5922, 1471, 7448, 11040, 10852, 11041, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 11014 (useMessageAuthorActivities)
+// Module 11039 (useMessageAuthorActivities)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { findNodeHandle } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_toTimestampMs" /* 10883 */;
-import { updateShouldShowJumpToPresentButton as closure_7 } from "updateChatInputContainerHeight" /* 9473 */;
-import closure_8 from "handleConnectionOpen" /* 4821 */;
-import closure_9 from "createGuildRecordFromRust" /* 1910 */;
-import closure_10 from "sortActivity" /* 4535 */;
+import closure_6 from "_toTimestampMs" /* 10907 */;
+import { updateShouldShowJumpToPresentButton as closure_7 } from "updateChatInputContainerHeight" /* 9495 */;
+import closure_8 from "handleConnectionOpen" /* 4823 */;
+import closure_9 from "createGuildRecordFromRust" /* 1909 */;
+import closure_10 from "sortActivity" /* 4537 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/messages/native/MessagesHooks.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 9036
+// Function ID: 9037
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 8505, 9014, 4828, 1236, 4828, 2]
+// Dependencies: [19, 21, 8527, 9037, 4831, 1236, 4831, 2]
 // Exports: default
 
-// Module 9013 (UserProfileConfirmRemoveGameFriend)
+// Module 9036 (UserProfileConfirmRemoveGameFriend)
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -32,12 +32,12 @@ export default function UserProfileConfirmRemoveGameFriend(gameName) {
   const intl3 = userId(1236).intl;
   obj[1] = intl3.string(userId(1236).t.RLcE6x);
   obj[2] = callback;
-  const items1 = [callback(userId(4828).AlertActionButton, obj, "confirm-remove"), ];
+  const items1 = [callback(userId(4831).AlertActionButton, obj, "confirm-remove"), ];
   obj1 = { variant: "secondary", text: null };
   const intl4 = userId(1236).intl;
   obj1[1] = intl4.string(userId(1236).t["eN6+rI"]);
-  items1[1] = callback(userId(4828).AlertActionButton, obj1, "nevermind");
+  items1[1] = callback(userId(4831).AlertActionButton, obj1, "nevermind");
   obj[0] = items1;
-  obj[2] = callback2(userId(4828).AlertActions, obj);
-  return callback(userId(4828).AlertModal, obj);
+  obj[2] = callback2(userId(4831).AlertActions, obj);
+  return callback(userId(4831).AlertModal, obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 7982
-// Function ID: 7983
+// Module ID: 8004
+// Function ID: 8005
 // Name: set
-// Dependencies: [7983, 1487, 2]
+// Dependencies: [8005, 1486, 2]
 // Exports: isSuspiciousDownload
 
-// Module 7982 (set)
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1487 */;
-import _modDef7983 from "module_7983" /* 7983 */;
+// Module 8004 (set)
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import _modDef8005 from "module_8005" /* 8005 */;
 import set from "set" /* 2 */;
 
-let set = new Set(_modDef7983);
+let set = new Set(_modDef8005);
 let obj = { "github.com": null, "bitbucket.org": null, "gitlab.com": null };
 const regExp = new RegExp("/releases\\S*/download|archive/refs/\\S*|/i/raw/i/\\S*|/user-attachments\\S*");
 obj[0] = regExp;

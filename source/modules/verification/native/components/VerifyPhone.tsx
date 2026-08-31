@@ -1,10 +1,10 @@
-// Module ID: 7748
-// Function ID: 7749
+// Module ID: 7769
+// Function ID: 7770
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 21, 7718, 7749, 7750, 1236, 2]
+// Dependencies: [5, 32, 19, 21, 7739, 7770, 7771, 1236, 2]
 // Exports: default
 
-// Module 7748 (VerifyPhone)
+// Module 7769 (VerifyPhone)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -48,7 +48,7 @@ export default function VerifyPhone(phone) {
           obj[0] = token;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -107,7 +107,7 @@ export default function VerifyPhone(phone) {
             } else if (token) {
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             c4 = 0;
             c6 = 3;
@@ -161,7 +161,7 @@ export default function VerifyPhone(phone) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -195,7 +195,7 @@ export default function VerifyPhone(phone) {
           } else {
             closure_1_4(false);
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp12) {
           c3 = tmp;

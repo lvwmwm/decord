@@ -1,22 +1,22 @@
-// Module ID: 11290
-// Function ID: 11291
+// Module ID: 11319
+// Function ID: 11320
 // Name: QuestCollectibleRewardModalMessages
-// Dependencies: [1923, 5352, 21, 4446, 712, 589, 10865, 11021, 4442, 1236, 7401, 10762, 2]
+// Dependencies: [1922, 5355, 21, 4448, 712, 589, 10889, 11046, 4444, 1236, 7422, 10786, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 11290 (QuestCollectibleRewardModalMessages)
+// Module 11319 (QuestCollectibleRewardModalMessages)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import getQuestLogger from "getQuestLogger" /* 7401 */;
-import MODAL_KEYDefault from "MODAL_KEY" /* 10762 */;
-import _getDefaultRewardName from "_getDefaultRewardName" /* 10865 */;
-import useQuests from "useQuests" /* 11021 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5352 */;
+import Text from "Text" /* 4444 */;
+import getQuestLogger from "getQuestLogger" /* 7422 */;
+import MODAL_KEYDefault from "MODAL_KEY" /* 10786 */;
+import _getDefaultRewardName from "_getDefaultRewardName" /* 10889 */;
+import useQuests from "useQuests" /* 11046 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5355 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function QuestCollectibleRewardModalMessages(quest) {

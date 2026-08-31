@@ -1,24 +1,24 @@
-// Module ID: 9030
-// Function ID: 9031
+// Module ID: 9053
+// Function ID: 9054
 // Name: ClearInputButton
-// Dependencies: [32, 19, 17, 1923, 9031, 676, 1926, 21, 4446, 712, 5033, 1236, 1297, 7660, 9032, 698, 8477, 589, 9033, 9034, 1363, 9036, 4889, 9037, 5559, 9152, 9154, 4308, 9155, 7554, 5460, 4442, 9159, 8317, 5957, 5564, 4413, 9160, 2010, 9162, 4404, 501, 1643, 4689, 5973, 2]
+// Dependencies: [32, 19, 17, 1922, 9054, 676, 1925, 21, 4448, 712, 5036, 1236, 1297, 7681, 9055, 698, 8499, 589, 9056, 9057, 1363, 9059, 4892, 9060, 5562, 9174, 9176, 4310, 9177, 7575, 5463, 4444, 9181, 8339, 5960, 5567, 4415, 9182, 2009, 9184, 4406, 501, 1642, 4691, 5976, 2]
 // Exports: default
 
-// Module 9030 (ClearInputButton)
+// Module 9053 (ClearInputButton)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import PressableBase from "PressableBase" /* 5033 */;
-import registerAssetDefault from "registerAsset" /* 7660 */;
+import PressableBase from "PressableBase" /* 5036 */;
+import registerAssetDefault from "registerAsset" /* 7681 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
-import { STATUS_MAX_LENGTH } from "StatusTypes" /* 9031 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { STATUS_MAX_LENGTH } from "StatusTypes" /* 9054 */;
 import ME from "ME" /* 676 */;
-import { EmojiIntention } from "set" /* 1926 */;
+import { EmojiIntention } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function ClearInputButton(onPress) {
@@ -339,8 +339,8 @@ createCacheKey[3] = { flexDirection: "row", alignItems: "center" };
 createCacheKey[4] = { marginRight: 8 };
 createCacheKey[5] = { color: ThemesDefault.colors.TEXT_STRONG, lineHeight: 16, flexGrow: 1, alignSelf: "flex-start", paddingVertical: 0, paddingHorizontal: 0 };
 let obj1 = { color: ThemesDefault.colors.TEXT_STRONG, lineHeight: 16, flexGrow: 1, alignSelf: "flex-start", paddingVertical: 0, paddingHorizontal: 0 };
-createCacheKey[6] = { fontSize: 16, lineHeight: 20, fontFamily: Fonts.PRIMARY_MEDIUM, color: ThemesDefault.colors.TEXT_STRONG, flexGrow: 1, height: "auto", textAlignVertical: "center" };
-let obj2 = { fontSize: 16, lineHeight: 20, fontFamily: Fonts.PRIMARY_MEDIUM, color: ThemesDefault.colors.TEXT_STRONG, flexGrow: 1, height: "auto", textAlignVertical: "center" };
+createCacheKey[6] = { fontSize: 16, fontFamily: Fonts.PRIMARY_MEDIUM, color: ThemesDefault.colors.TEXT_STRONG, flexGrow: 1, height: "auto", textAlignVertical: "center" };
+let obj2 = { fontSize: 16, fontFamily: Fonts.PRIMARY_MEDIUM, color: ThemesDefault.colors.TEXT_STRONG, flexGrow: 1, height: "auto", textAlignVertical: "center" };
 createCacheKey[7] = { color: ThemesDefault.colors.TEXT_MUTED };
 const merged = Object.assign(ThemesDefault.shadows.SHADOW_LOW);
 createCacheKey[8] = { alignItems: "center" };
@@ -365,7 +365,7 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
       const obj = { title: null };
       const intl = callback(1236).intl;
       obj[0] = intl.string(callback(1236).t.Iuzg8R);
-      return callback3(callback(7554).GenericHeaderTitle, obj);
+      return callback3(callback(7575).GenericHeaderTitle, obj);
     };
     obj[2] = analyticsLocations(closure_1_2[30]).getHeaderCloseButton(_prompt(closure_1_2[43]).pop);
     obj[4] = function render(arg0, navigation) {
@@ -383,5 +383,5 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     obj = { height: 56 };
   }
   obj[3] = obj;
-  return tmp2(analyticsLocations(5973).Navigator, obj);
+  return tmp2(analyticsLocations(5976).Navigator, obj);
 };

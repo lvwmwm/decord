@@ -1,10 +1,10 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 13246
+// Function ID: 13247
 // Name: componentDidMount
-// Dependencies: [109, 19, 17, 21, 5910, 2]
+// Dependencies: [109, 19, 17, 21, 5913, 2]
 
-// Module 13213 (componentDidMount)
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5910 */;
+// Module 13246 (componentDidMount)
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5913 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

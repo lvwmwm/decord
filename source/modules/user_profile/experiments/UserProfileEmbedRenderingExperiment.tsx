@@ -1,12 +1,12 @@
-// Module ID: 7585
-// Function ID: 7586
+// Module ID: 7606
+// Function ID: 7607
 // Name: useIsUserProfileEmbedRenderingEnabled
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: getIsUserProfileEmbedRenderingEnabled, useIsUserProfileEmbedRenderingEnabled
 
-// Module 7585 (useIsUserProfileEmbedRenderingEnabled)
+// Module 7606 (useIsUserProfileEmbedRenderingEnabled)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

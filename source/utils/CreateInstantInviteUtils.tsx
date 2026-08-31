@@ -1,15 +1,15 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17342
+// Function ID: 17343
 // Name: getInvitableChannelForGuild
-// Dependencies: [1983, 4090, 676, 2]
+// Dependencies: [1982, 4091, 676, 2]
 // Exports: getInvitableChannelForGuild
 
-// Module 17309 (getInvitableChannelForGuild)
+// Module 17342 (getInvitableChannelForGuild)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import comparator from "comparator" /* 1983 */;
-import closure_2 from "comparator" /* 1983 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4090 */;
+import comparator from "comparator" /* 1982 */;
+import closure_2 from "comparator" /* 1982 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4091 */;
 
 ({ GUILD_SELECTABLE_CHANNELS_KEY: c0, GUILD_VOCAL_CHANNELS_KEY: closure_1 } = comparator);
 const Permissions = ME.Permissions;

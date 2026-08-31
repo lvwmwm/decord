@@ -1,10 +1,10 @@
-// Module ID: 6060
-// Function ID: 6061
+// Module ID: 6063
+// Function ID: 6064
 // Name: frozen
 // Dependencies: [2]
 // Exports: cacheHitRate, formatVibegrationsAttachmentLimit, isProjectPublic, isProjectShared, isVibegrationsAttachmentWithinLimit, projectSupportsCollaboratorRoles, projectSupportsVisibility, promptRunes, runeCount, runesFromUsd, sumTokenUsage, usageOrEmpty, vibegrationsAttachmentLimit
 
-// Module 6060 (frozen)
+// Module 6063 (frozen)
 import set from "set" /* 2 */;
 
 const frozen = Object.freeze({ PUBLIC: 1, SHAREABLE: 2 });

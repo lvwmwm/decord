@@ -1,11 +1,11 @@
-// Module ID: 11878
-// Function ID: 11879
+// Module ID: 11909
+// Function ID: 11910
 // Name: useIsHubForGuild
-// Dependencies: [1910, 676, 589, 2]
+// Dependencies: [1909, 676, 589, 2]
 // Exports: default
 
-// Module 11878 (useIsHubForGuild)
-import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+// Module 11909 (useIsHubForGuild)
+import closure_2 from "createGuildRecordFromRust" /* 1909 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;

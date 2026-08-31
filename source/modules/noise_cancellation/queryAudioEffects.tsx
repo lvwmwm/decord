@@ -1,10 +1,10 @@
-// Module ID: 13491
-// Function ID: 13492
+// Module ID: 13525
+// Function ID: 13526
 // Name: _queryAudioEffects
 // Dependencies: [5, 676, 4, 501, 709, 698, 2]
 // Exports: default
 
-// Module 13491 (_queryAudioEffects)
+// Module 13525 (_queryAudioEffects)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
@@ -30,7 +30,7 @@ function _queryAudioEffects() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ function _queryAudioEffects() {
             obj2 = lib(698);
             obj2.track(constants.AUDIO_EFFECTS_PROBE_COMPLETED, { succeeded: false });
             c8 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else if (arg0 === 1) {
             c8 = 3;
             throw arg1;

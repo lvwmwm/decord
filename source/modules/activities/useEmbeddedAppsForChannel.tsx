@@ -1,16 +1,16 @@
-// Module ID: 11567
-// Function ID: 11568
+// Module ID: 11598
+// Function ID: 11599
 // Name: useEmbeddedApps
-// Dependencies: [19, 4535, 1923, 1390, 589, 4080, 5924, 1370, 2]
+// Dependencies: [19, 4537, 1922, 1386, 589, 4081, 5927, 1471, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 11567 (useEmbeddedApps)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5924 */;
+// Module 11598 (useEmbeddedApps)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5927 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "sortActivity" /* 4535 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
-import closure_6 from "participantFromServer" /* 1390 */;
-import { NO_ACTIVITIES } from "participantFromServer" /* 1390 */;
+import closure_4 from "sortActivity" /* 4537 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "participantFromServer" /* 1386 */;
+import { NO_ACTIVITIES } from "participantFromServer" /* 1386 */;
 
 const require = arg1;
 function useEmbeddedApps(arr, arg1) {

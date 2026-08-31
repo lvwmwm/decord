@@ -1,14 +1,14 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 8204
+// Function ID: 8205
 // Name: UserSquareIcon
-// Dependencies: [19, 21, 712, 4165, 8183, 2]
+// Dependencies: [19, 21, 712, 4166, 8205, 2]
 // Exports: UserSquareIcon
 
-// Module 8182 (UserSquareIcon)
+// Module 8204 (UserSquareIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 8183 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 8205 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

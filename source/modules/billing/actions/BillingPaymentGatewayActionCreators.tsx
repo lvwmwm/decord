@@ -1,14 +1,14 @@
-// Module ID: 4806
-// Function ID: 4807
+// Module ID: 4808
+// Function ID: 4809
 // Name: _getClientSecret
-// Dependencies: [5, 676, 505, 3, 530, 1236, 4804, 4807, 709, 38, 4808, 4809, 4130, 4344, 2]
+// Dependencies: [5, 676, 505, 3, 530, 1236, 4806, 4809, 709, 38, 4810, 4811, 4131, 4346, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 4806 (_getClientSecret)
+// Module 4808 (_getClientSecret)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _validatePaymentSourceBillingAddress from "_validatePaymentSourceBillingAddress" /* 4804 */;
+import _validatePaymentSourceBillingAddress from "_validatePaymentSourceBillingAddress" /* 4806 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 import sum from "sum" /* 505 */;
@@ -69,7 +69,7 @@ function _createCardToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -118,10 +118,10 @@ function _createCardToken() {
             token = lib.token;
             error = lib.error;
             if (null != error) {
-              obj2 = lib(4804);
+              obj2 = lib(4806);
               throw obj2.dispatchConfirmationError(error);
             } else if (null == token) {
-              obj1 = lib(4804);
+              obj1 = lib(4806);
               throw obj1.dispatchConfirmationError("token not available with successful stripe call");
             } else {
               c5 = 3;
@@ -159,20 +159,20 @@ function _confirmEPS() {
       name = 0;
       c4 = tmp2;
       if (null == lib) {
-        throw lib(4804).dispatchConfirmationError("Stripe not loaded");
+        throw lib(4806).dispatchConfirmationError("Stripe not loaded");
       }
       if (null == tmp62) {
-        throw lib(4804).dispatchConfirmationError("Bank required for EPS");
+        throw lib(4806).dispatchConfirmationError("Bank required for EPS");
       }
       ({ email: c4, name } = tmp63);
       ({ line1: c6, line2: c7, city: c8, state: c9, postalCode: c10, country: c11 } = tmp63);
       if (null == name) {
-        let obj9 = lib(4804);
+        let obj9 = lib(4806);
         throw obj9.dispatchConfirmationError("Name required for EPS");
       }
       let obj6 = callback(709);
       obj6.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
-      const obj7 = lib(4804);
+      const obj7 = lib(4806);
       closure_12 = yield obj7.validatePaymentSourceBillingAddress(tmp63);
       const obj3 = { type: "eps", eps: null, billing_details: null };
       const obj4 = { bank: null };
@@ -194,14 +194,14 @@ function _confirmEPS() {
       const paymentMethod = closure_13.paymentMethod;
       error = closure_13.error;
       if (null != error) {
-        const obj2 = lib(4804);
+        const obj2 = lib(4806);
         throw obj2.dispatchConfirmationError(error);
       }
       if (null == paymentMethod) {
-        obj1 = lib(4804);
+        obj1 = lib(4806);
         throw obj1.dispatchConfirmationError("paymentMethod not available with successful stripe call");
       }
-      const obj15 = lib(4804);
+      const obj15 = lib(4806);
       obj9 = { billingAddressToken: null, analyticsLocation: null, bank: null };
       obj9[0] = closure_12;
       obj9[1] = dependencyMap;
@@ -231,17 +231,17 @@ function _confirmPrzelewy() {
       c5 = 0;
       let email = tmp2;
       if (null == lib) {
-        throw lib(4804).dispatchConfirmationError("Stripe not loaded");
+        throw lib(4806).dispatchConfirmationError("Stripe not loaded");
       }
       email = tmp62.email;
       ({ name: c5, line1: c6, line2: c7, city: c8, state: c9, postalCode: c10, country: c11 } = tmp62);
       if (null == email) {
-        let obj9 = lib(4804);
+        let obj9 = lib(4806);
         throw obj9.dispatchConfirmationError("Email required for Przelewy24");
       }
       let obj6 = lib2(709);
       obj6.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
-      const obj7 = lib(4804);
+      const obj7 = lib(4806);
       closure_12 = yield obj7.validatePaymentSourceBillingAddress(tmp62);
       const p24Bank = lib2.p24Bank;
       const obj3 = { type: "p24", p24: null, billing_details: null };
@@ -264,14 +264,14 @@ function _confirmPrzelewy() {
       const paymentMethod = closure_14.paymentMethod;
       error = closure_14.error;
       if (null != error) {
-        const obj2 = lib(4804);
+        const obj2 = lib(4806);
         throw obj2.dispatchConfirmationError(error);
       }
       if (null == paymentMethod) {
-        obj1 = lib(4804);
+        obj1 = lib(4806);
         throw obj1.dispatchConfirmationError("paymentMethod not available with successful stripe call");
       }
-      const obj14 = lib(4804);
+      const obj14 = lib(4806);
       obj9 = { billingAddressToken: null, analyticsLocation: null, bank: null };
       obj9[0] = closure_12;
       obj9[1] = dependencyMap;
@@ -447,7 +447,7 @@ function _createExpressCheckoutPaymentMethod() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -471,7 +471,7 @@ function _createExpressCheckoutPaymentMethod() {
               dependencyMap = undefined;
               dependencyMap = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -483,7 +483,7 @@ function _createExpressCheckoutPaymentMethod() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj4 = callback(4804);
+              let obj4 = callback(4806);
               dependencyMap = 2;
               c4 = 1;
               const obj2 = { value: null, done: false };
@@ -500,7 +500,7 @@ function _createExpressCheckoutPaymentMethod() {
             return obj3;
           } else {
             dependencyMap = arg1;
-            obj = callback(4804);
+            obj = callback(4806);
             obj4 = { billingAddressToken: null, analyticsLocation: null };
             obj4[0] = dependencyMap;
             obj4[1] = c2;
@@ -546,7 +546,7 @@ function _confirmPaymentElementSource() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -615,7 +615,7 @@ function _confirmCardPaymentSource() {
           obj[0] = client_secret;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -643,7 +643,7 @@ function _confirmCardPaymentSource() {
                   obj8.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
                   c4 = null;
                   closure_7 = 1;
-                  let obj9 = lib(4808);
+                  let obj9 = lib(4810);
                   setupIntent = 3;
                   c9 = 1;
                   obj1 = { value: null, done: false };
@@ -651,12 +651,12 @@ function _confirmCardPaymentSource() {
                   return obj1;
                 }
               }
-              throw lib(4804).dispatchConfirmationError("Stripe or token not loaded");
+              throw lib(4806).dispatchConfirmationError("Stripe or token not loaded");
             }
           } else if (1 === tmp7) {
             closure_7 = 0;
             c9 = constants;
-            let obj7 = lib(4804);
+            let obj7 = lib(4806);
             throw obj7.dispatchConfirmationError(c9);
           } else if (2 === tmp7) {
             if (arg0 === 1) {
@@ -669,7 +669,7 @@ function _confirmCardPaymentSource() {
               return obj2;
             } else {
               closure_5 = client_secret;
-              constants = callback2(4809).parseBillingAddressInfoToStripeBillingDetails(callback2);
+              constants = callback2(4811).parseBillingAddressInfoToStripeBillingDetails(callback2);
               const obj3 = { payment_method: null };
               const obj4 = { card: null, billing_details: null };
               const obj5 = { token: null };
@@ -696,7 +696,7 @@ function _confirmCardPaymentSource() {
             } else {
               client_secret = client_secret.client_secret;
               closure_7 = 0;
-              obj2 = lib(4804);
+              obj2 = lib(4806);
               setupIntent = 2;
               c9 = 1;
               obj8 = { value: null, done: false };
@@ -714,7 +714,7 @@ function _confirmCardPaymentSource() {
           } else {
             closure_7 = client_secret;
             setupIntent = callback3(closure_7.setupIntent, closure_7.error, (error) => callback(table[6]).dispatchConfirmationError(error)).setupIntent;
-            const obj15 = lib(4804);
+            const obj15 = lib(4806);
             const obj10 = { billingAddressToken: null, analyticsLocation: null };
             obj10[0] = closure_5;
             obj10[1] = dependencyMap;
@@ -757,9 +757,9 @@ function _createStripePaymentSource() {
       let name = 0;
       closure_4 = tmp2;
       if (null == lib) {
-        throw lib(4804).dispatchConfirmationError("Stripe not loaded");
+        throw lib(4806).dispatchConfirmationError("Stripe not loaded");
       }
-      let obj8 = lib(4804);
+      let obj8 = lib(4806);
       closure_4 = yield obj8.validatePaymentSourceBillingAddress(tmp68);
       name = lib2.name;
       const city = lib2.city;
@@ -785,14 +785,14 @@ function _createStripePaymentSource() {
       const paymentMethod = closure_13.paymentMethod;
       error = closure_13.error;
       if (null != error) {
-        obj4 = lib(4804);
+        obj4 = lib(4806);
         throw obj4.dispatchConfirmationError(error);
       }
       if (null == paymentMethod) {
-        obj3 = lib(4804);
+        obj3 = lib(4806);
         throw obj3.dispatchConfirmationError("stripePaymentMethod not available with successful stripe call");
       }
-      const obj = lib(4804);
+      const obj = lib(4806);
       obj8 = { billingAddressToken: null, analyticsLocation: null };
       obj8[0] = closure_4;
       obj8[1] = dependencyMap;
@@ -864,7 +864,7 @@ function _createAdyenVaultablePaymentSource() {
           obj[0] = paymentSource;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -892,7 +892,7 @@ function _createAdyenVaultablePaymentSource() {
               adyen_redirect_url = undefined;
               c12 = 1;
               closure_13 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -1083,7 +1083,7 @@ function _createStripePaymentSourceToken() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

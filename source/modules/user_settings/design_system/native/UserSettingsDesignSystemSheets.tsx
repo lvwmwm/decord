@@ -1,27 +1,28 @@
-// Module ID: 15330
-// Function ID: 15331
+// Module ID: 15363
+// Function ID: 15364
 // Name: DemoActionSheet
-// Dependencies: [32, 19, 17, 676, 21, 4446, 5954, 5586, 9627, 5955, 4891, 7652, 5956, 4413, 1367, 4893, 1236, 10250, 6337, 13357, 5566, 4442, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4448, 5957, 5589, 9649, 5958, 4894, 7673, 5959, 4415, 4896, 1236, 10274, 6344, 5569, 4444, 2]
 // Exports: default
 
-// Module 15330 (DemoActionSheet)
+// Module 15363 (DemoActionSheet)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
-import Text from "Text" /* 4442 */;
-import Stack from "Stack" /* 4891 */;
-import Button from "Button" /* 4893 */;
-import PressableCard from "PressableCard" /* 5566 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5586 */;
-import ActionSheet from "ActionSheet" /* 5954 */;
-import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5956 */;
-import TextInput from "TextInput" /* 7652 */;
-import PromoSheet from "PromoSheet" /* 10250 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
+import Text from "Text" /* 4444 */;
+import Stack from "Stack" /* 4894 */;
+import Button from "Button" /* 4896 */;
+import PressableCard from "PressableCard" /* 5569 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5589 */;
+import ActionSheet from "ActionSheet" /* 5957 */;
+import ActionSheetRowIcon from "ActionSheetRowIcon" /* 5959 */;
+import metadataDefault from "metadata" /* 6344 */;
+import TextInput from "TextInput" /* 7673 */;
+import PromoSheet from "PromoSheet" /* 10274 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { NOOP } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function DemoActionSheet() {
@@ -47,14 +48,14 @@ function DemoActionSheet() {
     obj = { onPress: null, label: null };
     obj[0] = NOOP;
     obj[1] = tmp12;
-    tmp14Result = tmp14(tmp15(9627).ActionSheetHeaderPressableText, obj);
+    tmp14Result = tmp14(tmp15(9649).ActionSheetHeaderPressableText, obj);
   }
   obj[2] = tmp14Result;
   tmp14Result = tmp2;
   if (tmp2) {
     obj = { onPress: null };
     obj[0] = NOOP;
-    tmp14Result = tmp14(tmp15(5955).ActionSheetCloseButton, obj);
+    tmp14Result = tmp14(tmp15(5958).ActionSheetCloseButton, obj);
   }
   obj1 = { header: closure_7(RedesignBottomSheetTitleHeaderBase.BottomSheetTitleHeader, obj), children: null };
   obj[3] = tmp14Result;
@@ -106,22 +107,13 @@ function DemoPromoSheet() {
   };
   const intl = getSystemLocale.intl;
   obj[2] = intl.string(getSystemLocale.t.BddRzS);
-  const tmp5 = callback2(Button.Button, obj);
-  if (tmp3) {
-    obj = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
-    obj = { type: "image", src: null, aspectRatio: "16/9" };
-    obj1 = { uri: null };
-    obj1[0] = tmp(6337);
-    obj[1] = obj1;
-    obj[0] = obj;
-    obj[4] = tmp5;
-    let obj2 = obj;
-  } else {
-    obj2 = { illustration: null, title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
-    obj2[0] = tmp4(tmp(13357), {});
-    obj2[3] = tmp5;
-  }
-  return callback2(PromoSheet.PromoSheet, obj2);
+  obj = { graphic: null, gradientColor: "purple", title: "Here's a Promo Sheet", description: "You can use this to promote new features, products, or anything else you'd like!", actions: null };
+  obj = { type: "image", src: null, aspectRatio: "16/9" };
+  const tmp = callback2(Button.Button, obj);
+  obj[1] = { uri: metadataDefault };
+  obj[0] = obj;
+  obj[4] = tmp;
+  return callback2(PromoSheet.PromoSheet, obj);
 }
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
 let closure_9 = createCacheKey.createStyles({ container: { padding: 16, alignItems: "center" } });

@@ -1,14 +1,14 @@
-// Module ID: 5368
-// Function ID: 5369
+// Module ID: 5371
+// Function ID: 5372
 // Name: fromServer
-// Dependencies: [32, 1432, 1911, 4106, 1914, 2]
+// Dependencies: [32, 1428, 1910, 4107, 1913, 2]
 
-// Module 5368 (fromServer)
-import EmojiTypes from "EmojiTypes" /* 4106 */;
+// Module 5371 (fromServer)
+import EmojiTypes from "EmojiTypes" /* 4107 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import { TypeTag } from "TypeTag" /* 1432 */;
-import { LibdiscoreStore } from "identity" /* 1911 */;
-import { LibdiscoreBatchStoreRefactorExperiment } from "items" /* 1914 */;
+import { TypeTag } from "TypeTag" /* 1428 */;
+import { LibdiscoreStore } from "identity" /* 1910 */;
+import { LibdiscoreBatchStoreRefactorExperiment } from "items" /* 1913 */;
 
 require = arg1;
 function fromServer(guildId) {

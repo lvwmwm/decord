@@ -1,17 +1,17 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14674
+// Function ID: 14675
 // Name: QuestDockDismissalNotification
-// Dependencies: [19, 17, 21, 4446, 712, 4442, 1236, 11789, 4163, 12240, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 4444, 1236, 11820, 4164, 12274, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 14640 (QuestDockDismissalNotification)
+// Module 14674 (QuestDockDismissalNotification)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import dispatcherDefault from "dispatcher" /* 4163 */;
-import registerAssetDefault from "registerAsset" /* 12240 */;
+import dispatcherDefault from "dispatcher" /* 4164 */;
+import registerAssetDefault from "registerAsset" /* 12274 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function QuestDockDismissalNotification() {
@@ -27,7 +27,7 @@ function QuestDockDismissalNotification() {
     }
   };
   obj[2] = intl.format(_require(1236).t.dYE1px, obj);
-  return jsx(_require(4442).Text, {
+  return jsx(_require(4444).Text, {
     arrowHook() {
       let obj = { style: closure_0.toastArrowForwardIconContainer, children: null };
       obj = { resizeMode: "contain", source: closure_1_1(closure_1_2[7]), style: closure_0.toastArrowForwardIcon };

@@ -1,12 +1,12 @@
-// Module ID: 8845
-// Function ID: 8846
+// Module ID: 8868
+// Function ID: 8869
 // Name: useNameplate
-// Dependencies: [19, 1993, 589, 1948, 2]
+// Dependencies: [19, 1992, 589, 1947, 2]
 // Exports: useNameplate
 
-// Module 8845 (useNameplate)
+// Module 8868 (useNameplate)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "trackCommunicationDisabled" /* 1993 */;
+import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/nameplates/hooks/useNameplate.tsx");

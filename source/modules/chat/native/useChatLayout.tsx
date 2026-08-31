@@ -1,12 +1,12 @@
-// Module ID: 4303
-// Function ID: 4304
+// Module ID: 4305
+// Function ID: 4306
 // Name: useChatLayout
-// Dependencies: [19, 4304, 2]
+// Dependencies: [19, 4306, 2]
 // Exports: default, getChatLayout
 
-// Module 4303 (useChatLayout)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4304 */;
-import useWindowSizeClassifierDefault from "useWindowSizeClassifier" /* 4304 */;
+// Module 4305 (useChatLayout)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 4306 */;
+import useWindowSizeClassifierDefault from "useWindowSizeClassifier" /* 4306 */;
 import closure_3 from "noop" /* 19 */;
 
 require = arg1;

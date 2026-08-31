@@ -1,11 +1,11 @@
-// Module ID: 13429
-// Function ID: 13430
+// Module ID: 13463
+// Function ID: 13464
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 
-// Module 13429 (apexExperiment)
+// Module 13463 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { minCaptureWidth: 130, minCaptureHeight: 130 };

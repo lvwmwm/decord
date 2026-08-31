@@ -1,10 +1,10 @@
-// Module ID: 13675
-// Function ID: 13676
+// Module ID: 13709
+// Function ID: 13710
 // Name: LocalImageThumbnail
-// Dependencies: [19, 17, 21, 500, 13676, 2]
+// Dependencies: [19, 17, 21, 500, 13710, 2]
 // Exports: default
 
-// Module 13675 (LocalImageThumbnail)
+// Module 13709 (LocalImageThumbnail)
 import noopAll from "noop" /* 19 */;
 import { Image as _default } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

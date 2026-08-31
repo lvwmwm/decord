@@ -1,18 +1,18 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11867
+// Function ID: 11868
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 1983, 1923, 676, 21, 4446, 5457, 5421, 5047, 11823, 5422, 1430, 9876, 5518, 11837, 2]
+// Dependencies: [5, 32, 19, 1982, 1922, 676, 21, 4448, 5460, 5424, 5050, 11854, 5425, 1426, 9899, 5521, 11868, 2]
 // Exports: default
 
-// Module 11836 (CreateGuildContainer)
+// Module 11867 (CreateGuildContainer)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "comparator" /* 1983 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import closure_6 from "comparator" /* 1982 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { UPLOAD_MEDIUM_SIZE } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 createCacheKey = { flex: { flex: 1 }, contentContainer: null };
@@ -71,7 +71,7 @@ export default function CreateGuildContainer(onCreate) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -112,7 +112,7 @@ export default function CreateGuildContainer(onCreate) {
             callback(base64);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp17) {
         c3 = tmp;
@@ -133,7 +133,7 @@ export default function CreateGuildContainer(onCreate) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

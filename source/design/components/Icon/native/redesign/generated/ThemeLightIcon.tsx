@@ -1,14 +1,14 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14830
+// Function ID: 14831
 // Name: ThemeLightIcon
-// Dependencies: [19, 21, 712, 4165, 14797, 2]
+// Dependencies: [19, 21, 712, 4166, 14831, 2]
 // Exports: ThemeLightIcon
 
-// Module 14796 (ThemeLightIcon)
+// Module 14830 (ThemeLightIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 14797 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 14831 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

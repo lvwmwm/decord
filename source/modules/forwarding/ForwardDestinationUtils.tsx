@@ -1,18 +1,18 @@
-// Module ID: 11201
-// Function ID: 11202
+// Module ID: 11230
+// Function ID: 11231
 // Name: useSelectedDestinationChannel
-// Dependencies: [19, 5409, 1395, 1391, 4090, 4099, 1923, 676, 10656, 1370, 589, 692, 4818, 1956, 4697, 1236, 4816, 7379, 4290, 4640, 2]
+// Dependencies: [19, 5412, 1391, 1387, 4091, 4100, 1922, 676, 10680, 1471, 589, 692, 4820, 1955, 4699, 1236, 4818, 7400, 4292, 4642, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 11201 (useSelectedDestinationChannel)
-import canBypassSlowmodeHelper from "canBypassSlowmodeHelper" /* 7379 */;
+// Module 11230 (useSelectedDestinationChannel)
+import canBypassSlowmodeHelper from "canBypassSlowmodeHelper" /* 7400 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "loadSavedGuildStickers" /* 5409 */;
-import createChannelRecord from "createChannelRecord" /* 1395 */;
-import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_10 from "markAllUserIdListsStale" /* 4099 */;
-import closure_11 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "loadSavedGuildStickers" /* 5412 */;
+import createChannelRecord from "createChannelRecord" /* 1391 */;
+import closure_8 from "ensureGuildLoaded" /* 1387 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_10 from "markAllUserIdListsStale" /* 4100 */;
+import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -21,8 +21,8 @@ require = arg1;
 const result = require("set").fileFinishedImporting("modules/forwarding/ForwardDestinationUtils.tsx");
 
 export const useSelectedDestinationChannel = function useSelectedDestinationChannel(selectedDestinations) {
-  const mapped = selectedDestinations.map(found(10656).getChannelIdFromDestinationId);
-  found = mapped.find(found(1370).isNotNullish);
+  const mapped = selectedDestinations.map(found(10680).getChannelIdFromDestinationId);
+  found = mapped.find(found(1471).isNotNullish);
   const items = [closure_8];
   const items1 = [found];
   const stateFromStores = found(589).useStateFromStores(items, () => closure_1_8.getChannel(found), items1);
@@ -48,22 +48,22 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
   if (null != components) {
     let tmp5 = components.components.length > 0;
     if (tmp5) {
-      tmp5 = components.components[0].type === _require(1956).ComponentType.CHECKPOINT_CARD;
+      tmp5 = components.components[0].type === _require(1955).ComponentType.CHECKPOINT_CARD;
     }
     let tmp6 = components.messageSnapshots.length > 0;
     if (tmp6) {
       let message = components.messageSnapshots[0].message;
       let tmp7 = message.components.length > 0;
       if (tmp7) {
-        tmp7 = message.components[0].type === _require(1956).ComponentType.CHECKPOINT_CARD;
+        tmp7 = message.components[0].type === _require(1955).ComponentType.CHECKPOINT_CARD;
       }
       tmp6 = tmp7;
     }
     if (null != channel) {
-      let obj = _require(4697);
+      let obj = _require(4699);
       if (obj.isChannelOrGuildNSFW(channel)) {
         if (tmp) {
-          let tmp11Result = tmp11(4697);
+          let tmp11Result = tmp11(4699);
         }
         obj = { label: null, lineClamp: 2 };
         const intl = tmp11(1236).intl;
@@ -83,7 +83,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
             const messageSnapshots = components.messageSnapshots;
           }
           if (components.embeds.length > 0) {
-            tmp11Result = tmp11(4816);
+            tmp11Result = tmp11(4818);
             if (!tmp11Result.canEmbedLinks(type, closure_9)) {
               if (!tmp11Result1.shouldStripEmbeds(components)) {
                 obj1 = { label: null };
@@ -91,7 +91,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
                 obj1[0] = intl3.string(tmp11(1236).t.Wr4RIX);
                 return obj1;
               }
-              tmp11Result1 = tmp11(4816);
+              tmp11Result1 = tmp11(4818);
             }
           } else {
             const messageSnapshots2 = components.messageSnapshots;
@@ -103,11 +103,11 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
               obj2[0] = intl4.string(tmp11(1236).t.Wr4RIX);
               return obj2;
             }
-            tmp11Result2 = tmp11(4816);
+            tmp11Result2 = tmp11(4818);
           }
           const items = [];
           const messageSnapshots3 = components.messageSnapshots;
-          let arraySpreadResult = HermesBuiltin.arraySpread(tmp11(4818).getMessageStickers(components), 0);
+          let arraySpreadResult = HermesBuiltin.arraySpread(tmp11(4820).getMessageStickers(components), 0);
           arraySpreadResult = HermesBuiltin.arraySpread(messageSnapshots3.flatMap((message) => type(table[12]).getMessageStickers(message.message)), arraySpreadResult);
           if (items.length > 0) {
             if (!closure_9.can(constants2.USE_EXTERNAL_STICKERS, type)) {
@@ -141,7 +141,7 @@ export const getDestinationIsUnavailable = function getDestinationIsUnavailable(
           } else {
             const messageSnapshots4 = components.messageSnapshots;
           }
-          const tmp11Result3 = tmp11(4818);
+          const tmp11Result3 = tmp11(4820);
         }
       }
     }
@@ -171,8 +171,8 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         if (null != user) {
           nickname = nickname.getNickname(user.id);
           if (nickname == null) {
-            nickname = callback2(4290).getName(user);
-            const obj2 = callback2(4290);
+            nickname = callback2(4292).getName(user);
+            const obj2 = callback2(4292);
           }
           tmp13 = nickname;
         }
@@ -181,7 +181,7 @@ export const useSelectedDestinationNames = function useSelectedDestinationNames(
         channel = channel.getChannel(id);
         let channelName = null;
         if (null != channel) {
-          const obj = callback(4640);
+          const obj = callback(4642);
           channelName = obj.computeChannelName(channel, user, nickname, true);
         }
         return channelName;

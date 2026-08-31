@@ -1,15 +1,15 @@
-// Module ID: 12243
-// Function ID: 12244
+// Module ID: 12277
+// Function ID: 12278
 // Name: useCreateGameInvitePost
-// Dependencies: [5, 32, 19, 9372, 5188, 676, 6084, 589, 9380, 8107, 2]
+// Dependencies: [5, 32, 19, 9394, 5191, 676, 6087, 589, 9402, 8129, 2]
 // Exports: useCreateGameInvitePost
 
-// Module 12243 (useCreateGameInvitePost)
+// Module 12277 (useCreateGameInvitePost)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "updateActivities" /* 9372 */;
-import closure_7 from "filterPlayingActivities" /* 5188 */;
+import closure_6 from "updateActivities" /* 9394 */;
+import closure_7 from "filterPlayingActivities" /* 5191 */;
 import { ActivityActionTypes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -100,7 +100,7 @@ export const useCreateGameInvitePost = function useCreateGameInvitePost(appliedT
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

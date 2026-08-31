@@ -1,14 +1,14 @@
-// Module ID: 9231
-// Function ID: 9232
+// Module ID: 9253
+// Function ID: 9254
 // Name: getApplicationDetailsText
-// Dependencies: [676, 9232, 1236, 5023, 2]
+// Dependencies: [676, 9254, 1236, 5026, 2]
 // Exports: getApplicationDetailsText, isContentClassificationRestricted
 
-// Module 9231 (getApplicationDetailsText)
+// Module 9253 (getApplicationDetailsText)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5023 */;
-import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9232 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5026 */;
+import useIsSocialLayerParentApplication from "useIsSocialLayerParentApplication" /* 9254 */;
 
 const MarketingURLs = ME.MarketingURLs;
 let result = set.fileFinishedImporting("modules/oauth2/Utils.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 11405
-// Function ID: 11406
+// Module ID: 11434
+// Function ID: 11435
 // Name: items
-// Dependencies: [19, 17, 11387, 8636, 21, 4446, 712, 1236, 589, 1629, 11404, 8628, 8630, 4413, 5587, 5589, 4442, 5957, 5564, 4159, 4893, 11393, 2]
+// Dependencies: [19, 17, 11416, 8658, 21, 4448, 712, 1236, 589, 1628, 11433, 8650, 8652, 4415, 5590, 5592, 4444, 5960, 5567, 4160, 4896, 11422, 2]
 // Exports: default
 
-// Module 11405 (items)
+// Module 11434 (items)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11387 */;
-import SafetyHubView from "SafetyHubView" /* 8636 */;
+import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11416 */;
+import SafetyHubView from "SafetyHubView" /* 8658 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6 } from "getSystemLocale" /* 1236 */;
 
 const require = arg1;
@@ -61,7 +61,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   obj1 = onClose(589);
   const items1 = [callback1];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => callback1.getIsLoadingAgeVerification());
-  const bottom = classificationId(1629)().bottom;
+  const bottom = classificationId(1628)().bottom;
   const items2 = [onClose];
   callback = stateFromStores.useCallback(() => {
     if (onClose != null) {
@@ -103,15 +103,15 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   const obj4 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
   const intl = onClose(1236).intl;
   obj4[2] = intl.string(onClose(1236).t["9SDLnj"]);
-  const items5 = [callback(onClose(4442).Text, obj4), ];
+  const items5 = [callback(onClose(4444).Text, obj4), ];
   const obj5 = { variant: "heading-md/medium", color: "text-default", children: null };
   const intl2 = onClose(1236).intl;
   obj5[2] = intl2.string(onClose(1236).t["yvx//1"]);
-  items5[1] = callback(onClose(4442).Text, obj5);
+  items5[1] = callback(onClose(4444).Text, obj5);
   obj3[1] = items5;
   const items6 = [callback2(callback, obj3), , , ];
   const obj6 = {
-    children: callback(onClose(5957).TableRowGroup, {
+    children: callback(onClose(5960).TableRowGroup, {
       hasIcons: true,
       children: items.map((arg0, arg1) => {
         ({ title, description } = arg0);
@@ -136,8 +136,8 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   obj10[2] = function onPress() {
     return classificationId(number[19]).openURL(constants.AGE_VERIFICATION_LINK);
   };
-  obj9[2] = callback(onClose(5564).TableRow, obj10);
-  obj8[1] = callback(onClose(5957).TableRowGroup, obj9);
+  obj9[2] = callback(onClose(5567).TableRow, obj10);
+  obj8[1] = callback(onClose(5960).TableRowGroup, obj9);
   items6[2] = callback(callback, obj8);
   const obj11 = { style: tmp.footer, children: null };
   const obj12 = {
@@ -150,15 +150,15 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
   };
   const intl6 = onClose(1236).intl;
   obj12[3] = intl6.string(onClose(1236).t["54b8V0"]);
-  const items7 = [callback(onClose(4893).Button, obj12), ];
+  const items7 = [callback(onClose(4896).Button, obj12), ];
   const obj13 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore, children: null };
   const intl7 = onClose(1236).intl;
   obj13[3] = intl7.format(onClose(1236).t.ZbWsOF, { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK });
-  items7[1] = callback(onClose(4442).Text, obj13);
+  items7[1] = callback(onClose(4444).Text, obj13);
   obj11[1] = items7;
   items6[3] = callback2(callback, obj11);
   obj1[1] = items6;
   obj[1] = callback2(callback, obj1);
-  obj[2] = callback(onClose(5589).BottomSheetScrollView, obj);
-  return callback(onClose(5587).BottomSheet, obj);
+  obj[2] = callback(onClose(5592).BottomSheetScrollView, obj);
+  return callback(onClose(5590).BottomSheet, obj);
 };

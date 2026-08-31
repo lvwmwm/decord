@@ -1,16 +1,16 @@
-// Module ID: 11915
-// Function ID: 11916
+// Module ID: 11949
+// Function ID: 11950
 // Name: initialize
-// Dependencies: [11916, 11917, 707, 11918, 589, 709, 2]
+// Dependencies: [11950, 11951, 707, 11952, 589, 709, 2]
 
-// Module 11915 (initialize)
+// Module 11949 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import MAX_ACCOUNTS2 from "MAX_ACCOUNTS" /* 11916 */;
-import isStaffDefault from "isStaff" /* 11917 */;
-import calculatePositionDeltas from "calculatePositionDeltas" /* 11918 */;
+import MAX_ACCOUNTS2 from "MAX_ACCOUNTS" /* 11950 */;
+import isStaffDefault from "isStaff" /* 11951 */;
+import calculatePositionDeltas from "calculatePositionDeltas" /* 11952 */;
 
 const MAX_ACCOUNTS = MAX_ACCOUNTS2.MAX_ACCOUNTS;
 let obj = { INVALID: 0, [0]: "INVALID", VALIDATING: 1, [1]: "VALIDATING", VALID: 2, [2]: "VALID" };

@@ -1,9 +1,9 @@
-// Module ID: 6725
-// Function ID: 6726
+// Module ID: 6738
+// Function ID: 6739
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6725 (metadata)
+// Module 6738 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LanternSpotIllustration-2x.png.js");

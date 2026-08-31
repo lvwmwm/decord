@@ -1,9 +1,9 @@
-// Module ID: 11846
-// Function ID: 11847
+// Module ID: 11877
+// Function ID: 11878
 // Name: handleReset
-// Dependencies: [4703, 589, 709, 2]
+// Dependencies: [4705, 589, 709, 2]
 
-// Module 11846 (handleReset)
+// Module 11877 (handleReset)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 9845
+// Function ID: 9846
 // Name: trackVoiceCallTransfer
-// Dependencies: [1391, 4520, 4464, 676, 698, 2]
+// Dependencies: [1387, 4522, 4466, 676, 698, 2]
 // Exports: default
 
-// Module 9822 (trackVoiceCallTransfer)
+// Module 9845 (trackVoiceCallTransfer)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "createRTCConnection" /* 4520 */;
-import closure_4 from "handleUpdate" /* 4464 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "createRTCConnection" /* 4522 */;
+import closure_4 from "handleUpdate" /* 4466 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/game_console/trackVoiceCallTransfer.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6487
-// Function ID: 6488
+// Module ID: 6500
+// Function ID: 6501
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6487 (metadata)
+// Module 6500 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalDuckTypingBubbleAbstractUI-2x.png.js");

@@ -1,11 +1,11 @@
-// Module ID: 6063
-// Function ID: 6064
+// Module ID: 6066
+// Function ID: 6067
 // Name: useIsCreatorMonetizationEnabledGuild
-// Dependencies: [1910, 676, 589, 2]
+// Dependencies: [1909, 676, 589, 2]
 // Exports: default, isCreatorMonetizationEnabledGuild
 
-// Module 6063 (useIsCreatorMonetizationEnabledGuild)
-import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+// Module 6066 (useIsCreatorMonetizationEnabledGuild)
+import closure_2 from "createGuildRecordFromRust" /* 1909 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;

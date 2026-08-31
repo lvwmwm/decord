@@ -1,10 +1,10 @@
-// Module ID: 5070
-// Function ID: 5071
+// Module ID: 5073
+// Function ID: 5074
 // Name: toString
 // Dependencies: [1304, 3, 2]
 // Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
 
-// Module 5070 (toString)
+// Module 5073 (toString)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;

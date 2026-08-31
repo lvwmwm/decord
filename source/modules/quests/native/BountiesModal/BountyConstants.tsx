@@ -1,9 +1,9 @@
-// Module ID: 14580
-// Function ID: 14581
+// Module ID: 14614
+// Function ID: 14615
 // Name: END_CARD_IMAGE_SIZE
 // Dependencies: [2]
 
-// Module 14580 (END_CARD_IMAGE_SIZE)
+// Module 14614 (END_CARD_IMAGE_SIZE)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/quests/native/BountiesModal/BountyConstants.tsx");

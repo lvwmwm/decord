@@ -1,22 +1,22 @@
-// Module ID: 16518
-// Function ID: 16519
+// Module ID: 16552
+// Function ID: 16553
 // Name: BaseActivityPanelController
-// Dependencies: [32, 19, 4487, 8531, 9566, 1391, 1390, 4474, 9405, 21, 1992, 16519, 4186, 8549, 16520, 1629, 1494, 16521, 16524, 9464, 9542, 9590, 16525, 5466, 9544, 4308, 589, 4080, 9427, 5320, 4457, 16526, 9408, 2]
+// Dependencies: [32, 19, 4489, 8553, 9588, 1387, 1386, 4476, 9427, 21, 1991, 16553, 4187, 8571, 16554, 1628, 1493, 16555, 16558, 9486, 9564, 9612, 16559, 5469, 9566, 4310, 589, 4081, 9449, 5323, 4459, 16560, 9430, 2]
 // Exports: default
 
-// Module 16518 (BaseActivityPanelController)
-import _runPrimaryAppCommandOrJoinEmbeddedActivityAll from "_runPrimaryAppCommandOrJoinEmbeddedActivity" /* 9408 */;
+// Module 16552 (BaseActivityPanelController)
+import _runPrimaryAppCommandOrJoinEmbeddedActivityAll from "_runPrimaryAppCommandOrJoinEmbeddedActivity" /* 9430 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "addApplication" /* 4487 */;
-import closure_7 from "module_8531" /* 8531 */;
-import closure_8 from "module_9566" /* 9566 */;
-import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "participantFromServer" /* 1390 */;
-import items3 from "items3" /* 4474 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9405 */;
+import closure_6 from "addApplication" /* 4489 */;
+import closure_7 from "module_8553" /* 8553 */;
+import closure_8 from "module_9588" /* 9588 */;
+import closure_9 from "ensureGuildLoaded" /* 1387 */;
+import closure_10 from "participantFromServer" /* 1386 */;
+import items3 from "items3" /* 4476 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9427 */;
 import { jsx } from "jsxProd" /* 21 */;
-import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1992 */;
+import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1991 */;
 
 const require = arg1;
 class BaseActivityPanelController {
@@ -42,12 +42,12 @@ class BaseActivityPanelController {
     tmp3 = require("useSafeAreaInsets")();
     tmp4 = require("useWindowDimensions")();
     tmp5 = closure_0;
-    obj = require("module_4186");
+    obj = require("module_4187");
     sharedValue = obj.useSharedValue({ x: -1, y: -1 });
     closure_3 = sharedValue;
     tmp7 = require("usePIPAvoidanceSpecs")(tmp3);
     closure_4 = tmp7;
-    obj2 = require("module_4186");
+    obj2 = require("module_4187");
     sharedValue1 = obj2.useSharedValue(closure_16);
     closure_5 = sharedValue1;
     obj3 = closure_5;
@@ -87,7 +87,7 @@ class BaseActivityPanelController {
     effect = obj3.useEffect(() => {
       if (null != isActivityPanelFullscreen) {
         if (null == ref2.current) {
-          if (!isActivityPanelFullscreen(9544)(closure_10.isWindowLandscape, defaultOrientationLockState)) {
+          if (!isActivityPanelFullscreen(9566)(closure_10.isWindowLandscape, defaultOrientationLockState)) {
             if (!closure_8) {
               first(closure_1_14.LAUNCHING_WITH_ORIENTATION_CHANGE);
             }
@@ -103,7 +103,7 @@ class BaseActivityPanelController {
       }
       let tmp4 = sharedValue1 === closure_1_14.LAUNCHING_WITH_ORIENTATION_CHANGE;
       if (tmp4) {
-        tmp4 = isActivityPanelFullscreen(9544)(closure_10.isWindowLandscape, defaultOrientationLockState);
+        tmp4 = isActivityPanelFullscreen(9566)(closure_10.isWindowLandscape, defaultOrientationLockState);
       }
       if (tmp4) {
         first(closure_1_14.PANEL);
@@ -118,9 +118,9 @@ class BaseActivityPanelController {
         tmp3 = ref.current !== tmp2.PANEL;
       }
       if (tmp3) {
-        sharedValue1(4308).dismissKeyboard();
+        sharedValue1(4310).dismissKeyboard();
         const result = sharedValue1.set(closure_1_16);
-        const obj = sharedValue1(4308);
+        const obj = sharedValue1(4310);
       }
       ref.current = sharedValue1;
     }, items1);
@@ -143,11 +143,11 @@ class BaseActivityPanelController {
       if (!first) {
         if (isActivityPanelFullscreen === closure_1_14.PANEL) {
           if (sharedValue1) {
-            isActivityPanelFullscreen(16520)(dependencyMap);
+            isActivityPanelFullscreen(16554)(dependencyMap);
           }
         }
-        const result = sharedValue1(8549).restoreDefaultOrientation();
-        const obj = sharedValue1(8549);
+        const result = sharedValue1(8571).restoreDefaultOrientation();
+        const obj = sharedValue1(8571);
       }
     }, items2);
     layoutEffect1 = obj3.useLayoutEffect(() => () => callback(table[13]).restoreDefaultOrientation(), []);
@@ -198,7 +198,7 @@ class BaseActivityPanelController {
     closure_3 = tmp28;
     id1 = obj3.useId();
     closure_4 = id1;
-    tmp5Result4 = require("module_4186");
+    tmp5Result4 = require("module_4187");
     fn = function l() {
       return sharedValue1.get().gestureActive;
     };
@@ -207,11 +207,11 @@ class BaseActivityPanelController {
     fn.__initData = closure_18;
     fn2 = function s(arg0, arg1) {
       if (arg0 !== arg1) {
-        sharedValue1(4186).runOnJS(dependencyMap)(arg0);
-        const obj = sharedValue1(4186);
+        sharedValue1(4187).runOnJS(dependencyMap)(arg0);
+        const obj = sharedValue1(4187);
       }
     };
-    obj = { runOnJS: require("module_4186").runOnJS, setWrapperGestureInProgress: tmp28 };
+    obj = { runOnJS: require("module_4187").runOnJS, setWrapperGestureInProgress: tmp28 };
     fn2.__closure = obj;
     fn2.__workletHash = 5831467313798;
     fn2.__initData = closure_19;
@@ -351,7 +351,7 @@ export default function ActivityPanelController(children) {
       }
     }
   }, items1);
-  obj = { context: connectedActivityInTextChannelId(16526), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: _runPrimaryAppCommandOrJoinEmbeddedActivityAll.updateActivityPanelMode, children: children.children };
-  return <BaseActivityPanelController context={connectedActivityInTextChannelId(16526)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={_runPrimaryAppCommandOrJoinEmbeddedActivityAll.updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
+  obj = { context: connectedActivityInTextChannelId(16560), orientationLockStateForApp, mode, hasConnectedActivity, connectedActivityAppId, currentApp, updateActivityPanelMode: _runPrimaryAppCommandOrJoinEmbeddedActivityAll.updateActivityPanelMode, children: children.children };
+  return <BaseActivityPanelController context={connectedActivityInTextChannelId(16560)} orientationLockStateForApp={orientationLockStateForApp} mode={mode} hasConnectedActivity={hasConnectedActivity} connectedActivityAppId={connectedActivityAppId} currentApp={currentApp} updateActivityPanelMode={_runPrimaryAppCommandOrJoinEmbeddedActivityAll.updateActivityPanelMode}>{arg0.children}</BaseActivityPanelController>;
 };
 export { BaseActivityPanelController };

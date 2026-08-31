@@ -1,17 +1,17 @@
-// Module ID: 8947
-// Function ID: 8948
+// Module ID: 8970
+// Function ID: 8971
 // Name: memoResult1
-// Dependencies: [19, 17, 1923, 7800, 21, 4446, 712, 500, 1236, 4442, 5033, 589, 8021, 4413, 8948, 2010, 2]
+// Dependencies: [19, 17, 1922, 7821, 21, 4448, 712, 500, 1236, 4444, 5036, 589, 8043, 4415, 8971, 2009, 2]
 
-// Module 8947 (memoResult1)
+// Module 8970 (memoResult1)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
-import { GuildTagBadgeSize } from "items" /* 7800 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { GuildTagBadgeSize } from "items" /* 7821 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import set from "set" /* 500 */;
 
 require = arg1;

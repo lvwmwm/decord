@@ -1,9 +1,9 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 14971
+// Function ID: 14972
 // Name: SettingsBadgeType
 // Dependencies: [2]
 
-// Module 14938 (SettingsBadgeType)
+// Module 14971 (SettingsBadgeType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/settings/native/renderer/SettingRendererTypes.tsx");

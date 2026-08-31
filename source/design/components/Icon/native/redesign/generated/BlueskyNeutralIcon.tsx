@@ -1,14 +1,14 @@
-// Module ID: 12577
-// Function ID: 12578
+// Module ID: 12612
+// Function ID: 12613
 // Name: BlueskyNeutralIcon
-// Dependencies: [19, 21, 712, 4165, 12578, 2]
+// Dependencies: [19, 21, 712, 4166, 12613, 2]
 // Exports: BlueskyNeutralIcon
 
-// Module 12577 (BlueskyNeutralIcon)
+// Module 12612 (BlueskyNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 12578 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 12613 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

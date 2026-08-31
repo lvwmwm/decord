@@ -1,13 +1,13 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 11828
+// Function ID: 11829
 // Name: useShowConnectedUserLimit
-// Dependencies: [676, 9719, 2]
+// Dependencies: [676, 9741, 2]
 // Exports: default, useConnectedUserLimit, useConnectedUserLimitFormatted
 
-// Module 11797 (useShowConnectedUserLimit)
+// Module 11828 (useShowConnectedUserLimit)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9719 */;
+import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9741 */;
 
 let closure_2 = ME.MAX_STAGE_VOICE_USER_LIMIT;
 const result = set.fileFinishedImporting("modules/guild_sidebar/useShowConnectedUserLimit.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12460
+// Function ID: 12461
 // Name: GameFriendApplicationRow
-// Dependencies: [5, 32, 19, 17, 4099, 676, 21, 4446, 712, 9010, 5956, 5516, 1297, 4442, 12427, 5924, 4639, 8998, 4162, 4413, 5954, 5586, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 4100, 676, 21, 4448, 712, 9033, 5959, 5519, 1297, 4444, 12461, 5927, 4641, 9021, 4163, 4415, 5957, 5589, 1236, 2]
 // Exports: default
 
-// Module 12426 (GameFriendApplicationRow)
+// Module 12460 (GameFriendApplicationRow)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "markAllUserIdListsStale" /* 4099 */;
+import closure_8 from "markAllUserIdListsStale" /* 4100 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function GameFriendApplicationRow(application) {
@@ -93,7 +93,7 @@ export default function UserProfileGameFriendActionSheet(user) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

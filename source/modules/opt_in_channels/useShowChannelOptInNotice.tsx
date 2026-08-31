@@ -1,13 +1,13 @@
-// Module ID: 10994
-// Function ID: 10995
+// Module ID: 11019
+// Function ID: 11020
 // Name: useShowChannelOptInNotice
-// Dependencies: [4667, 676, 1398, 7227, 589, 6034, 2]
+// Dependencies: [4669, 676, 1394, 7248, 589, 6037, 2]
 // Exports: default
 
-// Module 10994 (useShowChannelOptInNotice)
-import closure_2 from "updateUserGuildSettingsInternal" /* 4667 */;
+// Module 11019 (useShowChannelOptInNotice)
+import closure_2 from "updateUserGuildSettingsInternal" /* 4669 */;
 import { NULL_STRING_GUILD_ID } from "ME" /* 676 */;
-import { ChannelFlags } from "set" /* 1398 */;
+import { ChannelFlags } from "set" /* 1394 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/opt_in_channels/useShowChannelOptInNotice.tsx");
@@ -18,7 +18,7 @@ export default function useShowChannelOptInNotice(getGuildId) {
   if (getGuildId != null) {
     guildId = getGuildId.getGuildId();
   }
-  let optInEnabledForGuild = _require(7227).useOptInEnabledForGuild(null != guildId ? getGuildId.guild_id : NULL_STRING_GUILD_ID);
+  let optInEnabledForGuild = _require(7248).useOptInEnabledForGuild(null != guildId ? getGuildId.guild_id : NULL_STRING_GUILD_ID);
   let tmpResult = tmp(589);
   const items = [closure_2];
   const stateFromStores = tmpResult.useStateFromStores(items, () => {
@@ -28,7 +28,7 @@ export default function useShowChannelOptInNotice(getGuildId) {
     }
     return result;
   });
-  tmpResult = tmp(6034);
+  tmpResult = tmp(6037);
   let guild_id;
   if (getGuildId != null) {
     guild_id = getGuildId.guild_id;
@@ -54,5 +54,5 @@ export default function useShowChannelOptInNotice(getGuildId) {
     }
     return optInEnabledForGuild;
   }
-  const obj = _require(7227);
+  const obj = _require(7248);
 };

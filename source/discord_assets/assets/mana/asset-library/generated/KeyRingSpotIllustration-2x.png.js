@@ -1,9 +1,9 @@
-// Module ID: 6723
-// Function ID: 6724
+// Module ID: 6736
+// Function ID: 6737
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6723 (metadata)
+// Module 6736 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/KeyRingSpotIllustration-2x.png.js");

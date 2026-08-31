@@ -1,11 +1,11 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10835
+// Function ID: 10836
 // Name: useCanSetThumbnail
-// Dependencies: [1391, 647, 2]
+// Dependencies: [1387, 647, 2]
 // Exports: default
 
-// Module 10811 (useCanSetThumbnail)
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
+// Module 10835 (useCanSetThumbnail)
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/media_channel/useCanSetThumbnail.tsx");

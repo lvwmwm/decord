@@ -1,20 +1,20 @@
-// Module ID: 13557
-// Function ID: 13558
+// Module ID: 13591
+// Function ID: 13592
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4446, 1236, 9227, 5458, 1435, 13556, 4442, 4893, 2]
+// Dependencies: [19, 17, 21, 4448, 1236, 9249, 5461, 1431, 13590, 4444, 4896, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 13557 (ActivateDeviceSuccess)
+// Module 13591 (ActivateDeviceSuccess)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAvatarURL from "getAvatarURL" /* 1435 */;
-import Text from "Text" /* 4442 */;
-import Button from "Button" /* 4893 */;
-import preloadDefault from "preload" /* 5458 */;
-import innerContentDefault from "innerContent" /* 13556 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import Text from "Text" /* 4444 */;
+import Button from "Button" /* 4896 */;
+import preloadDefault from "preload" /* 5461 */;
+import innerContentDefault from "innerContent" /* 13590 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -55,7 +55,7 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
     obj1 = { variant: "text-md/medium", color: "text-default", style: null, children: null };
     obj1[2] = innerContentDefault.centerText;
     obj1[3] = stringResult;
-    tmp18Result = tmp18(tmp19(4442).Text, obj1);
+    tmp18Result = tmp18(tmp19(4444).Text, obj1);
   }
   const obj2 = { children: null };
   items1[1] = tmp18Result;

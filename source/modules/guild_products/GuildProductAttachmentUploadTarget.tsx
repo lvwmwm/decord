@@ -1,12 +1,12 @@
-// Module ID: 5084
-// Function ID: 5085
+// Module ID: 5087
+// Function ID: 5088
 // Name: getCreateAttachmentURL
-// Dependencies: [5085, 676, 2]
+// Dependencies: [5088, 676, 2]
 
-// Module 5084 (getCreateAttachmentURL)
+// Module 5087 (getCreateAttachmentURL)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import GUILD_PRODUCT_EDIT_MODAL_KEY from "GUILD_PRODUCT_EDIT_MODAL_KEY" /* 5085 */;
+import GUILD_PRODUCT_EDIT_MODAL_KEY from "GUILD_PRODUCT_EDIT_MODAL_KEY" /* 5088 */;
 
 ({ MAX_ATTACHMENT_UPLOAD_COUNT: c0, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_1, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: obj1 } = GUILD_PRODUCT_EDIT_MODAL_KEY);
 const Endpoints = ME.Endpoints;

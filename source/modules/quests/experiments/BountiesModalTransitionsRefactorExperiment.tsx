@@ -1,12 +1,12 @@
-// Module ID: 14545
-// Function ID: 14546
+// Module ID: 14579
+// Function ID: 14580
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: useIsBountiesModalTransitionsRefactorEnabled
 
-// Module 14545 (apexExperiment)
+// Module 14579 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

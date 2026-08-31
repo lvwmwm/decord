@@ -1,0 +1,34 @@
+// Module ID: 3894
+// Function ID: 3895
+// Name: isSameQuarter
+// Dependencies: [3754, 3543]
+// Exports: default
+
+// Module 3894 (isSameQuarter)
+import startOfQuarter from "startOfQuarter" /* 3754 */;
+import requiredArgs from "requiredArgs" /* 3543 */;
+
+if (!startOfQuarter) {
+  let obj = { default: null };
+  obj[0] = startOfQuarter;
+  let tmp3 = obj;
+} else {
+  tmp3 = startOfQuarter;
+}
+startOfQuarter = tmp3;
+if (!requiredArgs) {
+  obj = { default: null };
+  obj[0] = requiredArgs;
+  let tmp5 = obj;
+} else {
+  tmp5 = requiredArgs;
+}
+requiredArgs = tmp5;
+
+export default function isSameQuarter(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = startOfQuarter.default(arg0);
+  const time = defaultResult1.getTime();
+  return time === startOfQuarter.default(arg1).getTime();
+};
+export default exports.default;

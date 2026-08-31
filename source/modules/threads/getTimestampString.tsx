@@ -1,10 +1,10 @@
-// Module ID: 7191
-// Function ID: 7192
+// Module ID: 7212
+// Function ID: 7213
 // Name: getTimestampString
-// Dependencies: [1236, 4044, 2]
+// Dependencies: [1236, 4045, 2]
 // Exports: default
 
-// Module 7191 (getTimestampString)
+// Module 7212 (getTimestampString)
 import set from "set" /* 2 */;
 
 let c3 = 2592000;

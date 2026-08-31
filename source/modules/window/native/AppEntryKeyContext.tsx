@@ -1,10 +1,10 @@
-// Module ID: 1497
-// Function ID: 1498
+// Module ID: 1496
+// Function ID: 1497
 // Name: context
 // Dependencies: [19, 3, 2]
 // Exports: useAppEntryKey
 
-// Module 1497 (context)
+// Module 1496 (context)
 import timestampDefault from "timestamp" /* 3 */;
 import importAllResult from "noop" /* 19 */;
 

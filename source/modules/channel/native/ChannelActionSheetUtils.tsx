@@ -1,14 +1,14 @@
-// Module ID: 10630
-// Function ID: 10631
+// Module ID: 10654
+// Function ID: 10655
 // Name: copyGuildChannelOrThreadLink
-// Dependencies: [4632, 5946, 4162, 2]
+// Dependencies: [4634, 5949, 4163, 2]
 // Exports: copyGuildChannelOrThreadLink
 
-// Module 10630 (copyGuildChannelOrThreadLink)
+// Module 10654 (copyGuildChannelOrThreadLink)
 import set from "set" /* 2 */;
-import presentAddedFriendToast from "presentAddedFriendToast" /* 4162 */;
-import allowChannelAccess from "allowChannelAccess" /* 4632 */;
-import _copy from "_copy" /* 5946 */;
+import presentAddedFriendToast from "presentAddedFriendToast" /* 4163 */;
+import allowChannelAccess from "allowChannelAccess" /* 4634 */;
+import _copy from "_copy" /* 5949 */;
 
 const result = set.fileFinishedImporting("modules/channel/native/ChannelActionSheetUtils.tsx");
 

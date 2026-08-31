@@ -1,14 +1,14 @@
-// Module ID: 6612
-// Function ID: 6613
+// Module ID: 6625
+// Function ID: 6626
 // Name: GemLeftForward3dIllustration
-// Dependencies: [21, 5458, 6613, 2]
+// Dependencies: [21, 5461, 6626, 2]
 // Exports: GemLeftForward3dIllustration
 
-// Module 6612 (GemLeftForward3dIllustration)
+// Module 6625 (GemLeftForward3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6613 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6626 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemLeftForward3dIllustration.native.tsx");

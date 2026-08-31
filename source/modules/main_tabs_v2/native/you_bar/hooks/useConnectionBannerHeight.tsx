@@ -1,15 +1,15 @@
-// Module ID: 14635
-// Function ID: 14636
+// Module ID: 14669
+// Function ID: 14670
 // Name: useConnectionBannerHeight
-// Dependencies: [13271, 14632, 13272, 589, 2]
+// Dependencies: [13305, 14666, 13306, 589, 2]
 // Exports: useConnectionBannerHeight
 
-// Module 14635 (useConnectionBannerHeight)
+// Module 14669 (useConnectionBannerHeight)
 import initialize from "initialize" /* 589 */;
-import apexExperimentDefault from "apexExperiment" /* 13272 */;
-import closure_3 from "updateState" /* 13271 */;
-import { ConnectivityIndicatorState as closure_4 } from "updateState" /* 13271 */;
-import { CONNECTION_BANNER_HEIGHT } from "CONNECTION_BANNER_HEIGHT" /* 14632 */;
+import apexExperimentDefault from "apexExperiment" /* 13306 */;
+import closure_3 from "updateState" /* 13305 */;
+import { ConnectivityIndicatorState as closure_4 } from "updateState" /* 13305 */;
+import { CONNECTION_BANNER_HEIGHT } from "CONNECTION_BANNER_HEIGHT" /* 14666 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useConnectionBannerHeight.tsx");

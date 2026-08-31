@@ -1,14 +1,14 @@
-// Module ID: 6860
-// Function ID: 6861
+// Module ID: 6877
+// Function ID: 6878
 // Name: PottedPlantIllocon
-// Dependencies: [21, 5458, 6861, 2]
+// Dependencies: [21, 5461, 6878, 2]
 // Exports: PottedPlantIllocon
 
-// Module 6860 (PottedPlantIllocon)
+// Module 6877 (PottedPlantIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6861 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6878 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PottedPlantIllocon.native.tsx");

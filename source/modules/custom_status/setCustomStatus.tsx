@@ -1,17 +1,17 @@
-// Module ID: 9034
-// Function ID: 9035
+// Module ID: 9057
+// Function ID: 9058
 // Name: setCustomStatus
-// Dependencies: [9031, 676, 4135, 4044, 9035, 698, 2]
+// Dependencies: [9054, 676, 4136, 4045, 9058, 698, 2]
 // Exports: default
 
-// Module 9034 (setCustomStatus)
+// Module 9057 (setCustomStatus)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import hooksDefault from "hooks" /* 4044 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import StatusTypes from "StatusTypes" /* 9031 */;
-import getClearAfterDurationDefault from "getClearAfterDuration" /* 9035 */;
+import hooksDefault from "hooks" /* 4045 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import StatusTypes from "StatusTypes" /* 9054 */;
+import getClearAfterDurationDefault from "getClearAfterDuration" /* 9058 */;
 
 const ClearAfterValues = StatusTypes.ClearAfterValues;
 const AnalyticEvents = ME.AnalyticEvents;

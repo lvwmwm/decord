@@ -1,9 +1,9 @@
-// Module ID: 6845
-// Function ID: 6846
+// Module ID: 6862
+// Function ID: 6863
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6845 (metadata)
+// Module 6862 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PaintPaletteSpotIllustration-2x.png.js");

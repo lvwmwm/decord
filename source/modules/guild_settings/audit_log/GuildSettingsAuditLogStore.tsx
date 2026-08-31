@@ -1,18 +1,18 @@
-// Module ID: 17051
-// Function ID: 17052
+// Module ID: 17084
+// Function ID: 17085
 // Name: AuditLogActions
-// Dependencies: [17052, 1395, 1987, 1993, 1986, 1910, 676, 506, 12, 589, 709, 2]
+// Dependencies: [17085, 1391, 1986, 1992, 1985, 1909, 676, 506, 12, 589, 709, 2]
 
-// Module 17051 (AuditLogActions)
+// Module 17084 (AuditLogActions)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "getTargetType" /* 17052 */;
-import { AuditLogChange } from "getTargetType" /* 17052 */;
-import { isGuildSelectableChannelType as closure_4 } from "createChannelRecord" /* 1395 */;
-import { hasAnyPermission } from "GuildRoleRecordTypeTag" /* 1987 */;
-import closure_6 from "trackCommunicationDisabled" /* 1993 */;
-import closure_7 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_8 from "createGuildRecordFromRust" /* 1910 */;
+import closure_2 from "getTargetType" /* 17085 */;
+import { AuditLogChange } from "getTargetType" /* 17085 */;
+import { isGuildSelectableChannelType as closure_4 } from "createChannelRecord" /* 1391 */;
+import { hasAnyPermission } from "GuildRoleRecordTypeTag" /* 1986 */;
+import closure_6 from "trackCommunicationDisabled" /* 1992 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_8 from "createGuildRecordFromRust" /* 1909 */;
 import ME from "ME" /* 676 */;
 import importAllResult from "fromString" /* 506 */;
 

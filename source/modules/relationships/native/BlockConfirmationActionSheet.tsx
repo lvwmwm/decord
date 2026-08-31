@@ -1,25 +1,25 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 9031
+// Function ID: 9032
 // Name: BlockedInformationTable
-// Dependencies: [32, 19, 17, 1391, 4099, 1923, 8999, 8996, 676, 21, 4446, 712, 8838, 1236, 4403, 5957, 5564, 1297, 1629, 5918, 5938, 589, 8062, 5587, 698, 5589, 7786, 4442, 4639, 7689, 4413, 9007, 2010, 503, 4893, 8998, 8621, 1996, 4159, 2]
+// Dependencies: [32, 19, 17, 1387, 4100, 1922, 9022, 9019, 676, 21, 4448, 712, 8861, 1236, 4405, 5960, 5567, 1297, 1628, 5921, 5941, 589, 8084, 5590, 698, 5592, 7807, 4444, 4641, 7710, 4415, 9030, 2009, 503, 4896, 9021, 8643, 1995, 4160, 2]
 
-// Module 9008 (BlockedInformationTable)
+// Module 9031 (BlockedInformationTable)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import registerAssetDefault from "registerAsset" /* 4403 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5957 */;
-import registerAssetDefault2 from "registerAsset" /* 8838 */;
+import registerAssetDefault from "registerAsset" /* 4405 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5960 */;
+import registerAssetDefault2 from "registerAsset" /* 8861 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "markAllUserIdListsStale" /* 4099 */;
-import closure_8 from "mergeGuildAvatar" /* 1923 */;
-import { UserRemediationAction } from "ClearFriendRequestFilters" /* 8999 */;
-import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8996 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "markAllUserIdListsStale" /* 4100 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import { UserRemediationAction } from "ClearFriendRequestFilters" /* 9022 */;
+import IGNORE_CONFIRMATION_ACTION_SHEET_KEY from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 9019 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function BlockedInformationTable() {
@@ -32,7 +32,7 @@ function BlockedInformationTable() {
       obj[3] = icon.text();
       obj[4] = icon.subtext();
       obj[6] = icon.a11yLabel();
-      return callback2(callback(5564).TableRow, obj, arg1);
+      return callback2(callback(5567).TableRow, obj, arg1);
     })
   });
 }
@@ -159,9 +159,9 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
   c5 = undefined;
   let stateFromStores;
   let tmp = callback4();
-  const bottom = channelId(1629)().bottom;
-  items = [channelId(5938).IGNORE_CONFIRMATION_ACTION_SHEET];
-  const tmp4 = channelId(5918);
+  const bottom = channelId(1628)().bottom;
+  items = [channelId(5941).IGNORE_CONFIRMATION_ACTION_SHEET];
+  const tmp4 = channelId(5921);
   [tmp6, c5] = callback(importAllResult.useState(false), 2);
   let obj = userId(589);
   const items1 = [closure_8];
@@ -214,7 +214,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj2[0] = tmp.header;
     let obj3 = { style: null, children: null };
     obj3[0] = tmp.avatarContainer;
-    const obj4 = { guildId: "Array", user: false, animate: null, size: null, style: 0 };
+    const obj4 = { guildId: "Array", user: false, animate: null, size: null, style: "fast" };
     obj4[1] = stateFromStores;
     obj4[3] = tmp7(1297).AvatarSizes.XLARGE;
     obj4[4] = tmp.avatar;
@@ -223,7 +223,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj5[0] = tmp.avatarIconContainer;
     const obj6 = { size: null, source: null };
     obj6[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-    obj6[1] = tmp2(7786);
+    obj6[1] = tmp2(7807);
     obj5[1] = closure_14(tmp7(1297).Icon, obj6);
     items8[1] = closure_14(c5, obj5);
     obj3[1] = items8;
@@ -232,14 +232,14 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     obj7[0] = tmp.headerText;
     const intl = tmp7(1236).intl;
     const obj8 = { username: null };
-    obj8[0] = tmp2(4639).getName(stateFromStores2, channelId, stateFromStores);
+    obj8[0] = tmp2(4641).getName(stateFromStores2, channelId, stateFromStores);
     obj7[4] = intl.format(tmp7(1236).t.CIbzHR, obj8);
-    items9[1] = closure_14(tmp7(4442).Text, obj7);
+    items9[1] = closure_14(tmp7(4444).Text, obj7);
     const obj9 = { style: null, variant: "heading-md/medium", color: "text-default", accessibilityRole: "header", children: null };
     obj9[0] = tmp.headerText;
     const intl2 = tmp7(1236).intl;
     obj9[4] = intl2.string(tmp7(1236).t.S70jou);
-    items9[2] = closure_14(tmp7(4442).Text, obj9);
+    items9[2] = closure_14(tmp7(4444).Text, obj9);
     obj2[1] = items9;
     const items10 = [callback3(c5, obj2), , , ];
     const obj10 = { style: null, children: null };
@@ -256,7 +256,7 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
       const obj13 = { icon: null, label: null, subLabel: null, accessibilityLabel: null, onPress: null, arrow: true };
       const obj14 = { size: null, source: null };
       obj14[0] = tmp7(1297).Icon.Sizes.MEDIUM;
-      obj14[1] = tmp2(7689);
+      obj14[1] = tmp2(7710);
       obj13[0] = tmp13(tmp7(1297).Icon, obj14);
       const intl4 = tmp7(1236).intl;
       obj13[1] = intl4.string(tmp7(1236).t.hC8tcc);
@@ -272,8 +272,8 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
         obj = { userId, channelId, onSuccess: closure_4, onIgnore: closure_3, impressionName: userId(closure_1_2[33]).ImpressionNames.IGNORE_USER_CONFIRMATION };
         obj3.openLazy(userId(closure_1_2[32])(closure_1_2[31], closure_1_2.paths), closure_1_10, obj, "replaceTopSheet");
       };
-      obj12[2] = tmp13(tmp7(5564).TableRow, obj13);
-      obj11[1] = tmp13(tmp7(5957).TableRowGroup, obj12);
+      obj12[2] = tmp13(tmp7(5567).TableRow, obj13);
+      obj11[1] = tmp13(tmp7(5960).TableRowGroup, obj12);
       tmp13Result = tmp13(tmp19, obj11);
     }
     const obj15 = { children: null };
@@ -307,27 +307,27 @@ const memoResult = importAllResult.memo(function BlockConfirmationActionSheet(us
     };
     obj17[4] = tmp6;
     obj17[5] = tmp6;
-    const items11 = [closure_14(tmp7(4893).Button, obj17), ];
+    const items11 = [closure_14(tmp7(4896).Button, obj17), ];
     const obj18 = { style: null, variant: "text-sm/normal", color: "text-default", children: null };
     obj18[0] = tmp.footerText;
     const intl8 = tmp7(1236).intl;
     const obj19 = { articleLink: null };
     obj19[0] = function articleLink() {
-      channelId(4413).hideActionSheet();
-      const obj = channelId(4413);
-      const articleURL = channelId(1996).getArticleURL(constants2.STEALTH_REMEDIATION_FEATURE_GUIDE);
-      const obj2 = channelId(1996);
-      channelId(4159).openURL(articleURL);
+      channelId(4415).hideActionSheet();
+      const obj = channelId(4415);
+      const articleURL = channelId(1995).getArticleURL(constants2.STEALTH_REMEDIATION_FEATURE_GUIDE);
+      const obj2 = channelId(1995);
+      channelId(4160).openURL(articleURL);
     };
     obj18[3] = intl8.format(tmp7(1236).t.CpTgBn, obj19);
-    items11[1] = closure_14(tmp7(4442).Text, obj18);
+    items11[1] = closure_14(tmp7(4444).Text, obj18);
     obj16[1] = items11;
     items10[3] = callback3(c5, obj16);
     obj15[0] = items10;
-    obj[4] = callback3(tmp7(5589).BottomSheetScrollView, obj15);
-    obj[1] = closure_14(tmp7(5587).BottomSheet, obj);
-    tmp13Result = tmp13(tmp7(5918).AnalyticsLocationProvider, obj);
-    const tmp2Result = tmp2(4639);
+    obj[4] = callback3(tmp7(5592).BottomSheetScrollView, obj15);
+    obj[1] = closure_14(tmp7(5590).BottomSheet, obj);
+    tmp13Result = tmp13(tmp7(5921).AnalyticsLocationProvider, obj);
+    const tmp2Result = tmp2(4641);
   }
   return tmp13Result;
 });

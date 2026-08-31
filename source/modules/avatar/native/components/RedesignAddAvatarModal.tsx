@@ -1,19 +1,19 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 16993
+// Function ID: 16994
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8016, 676, 21, 4446, 712, 1629, 589, 14180, 16945, 8025, 8056, 5047, 8020, 8022, 4442, 1236, 16954, 4893, 16942, 2]
+// Dependencies: [5, 32, 19, 17, 8038, 676, 21, 4448, 712, 1628, 589, 14214, 16978, 8047, 8078, 5050, 8042, 8044, 4444, 1236, 16987, 4896, 16975, 2]
 // Exports: default
 
-// Module 16960 (RedesignAddAvatarModal)
+// Module 16993 (RedesignAddAvatarModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleFormOpen" /* 8016 */;
+import closure_8 from "handleFormOpen" /* 8038 */;
 import { UPLOAD_MEDIUM_SIZE } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -54,7 +54,7 @@ export default function RedesignAddAvatarModal(route) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ export default function RedesignAddAvatarModal(route) {
               dependencyMap = 1;
               v0 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = closure_1_0(5047).openImagePicker(obj1);
+              obj2[0] = closure_1_0(5050).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -95,18 +95,18 @@ export default function RedesignAddAvatarModal(route) {
             if (null == base64) {
               pendingImage = undefined;
               if (null != closure_1_0) {
-                obj = closure_1_0(14180);
+                obj = closure_1_0(14214);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = closure_1_0(8025);
+                obj2 = closure_1_0(8047);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
-              obj3 = closure_1_0(8020);
+              obj3 = closure_1_0(8042);
               let obj5 = { avatar: null };
               obj5[0] = pendingImage;
               obj3.setPendingChanges(obj5);
-              obj5 = closure_1_0(8022);
+              obj5 = closure_1_0(8044);
               let str = "set";
               if (null == pendingImage) {
                 str = "remove";

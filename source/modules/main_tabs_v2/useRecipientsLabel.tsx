@@ -1,12 +1,12 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10611
+// Function ID: 10612
 // Name: useRecipientsLabel
-// Dependencies: [19, 1923, 1236, 589, 1370, 4290, 2]
+// Dependencies: [19, 1922, 1236, 589, 1471, 4292, 2]
 // Exports: useRecipientsLabel
 
-// Module 10587 (useRecipientsLabel)
+// Module 10611 (useRecipientsLabel)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/useRecipientsLabel.tsx");

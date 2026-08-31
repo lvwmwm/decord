@@ -1,17 +1,17 @@
-// Module ID: 9382
-// Function ID: 9383
+// Module ID: 9404
+// Function ID: 9405
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [1391, 1910, 4090, 1923, 4465, 676, 9383, 4632, 9384, 589, 2]
+// Dependencies: [1387, 1909, 4091, 1922, 4467, 676, 9405, 4634, 9406, 589, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 9382 (getEmbeddedActivityJoinability)
-import allowChannelAccess from "allowChannelAccess" /* 4632 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9383 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
-import closure_7 from "updateVoiceState" /* 4465 */;
+// Module 9404 (getEmbeddedActivityJoinability)
+import allowChannelAccess from "allowChannelAccess" /* 4634 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 9405 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "updateVoiceState" /* 4467 */;
 import { Permissions } from "ME" /* 676 */;
 
 require = arg1;

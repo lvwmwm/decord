@@ -1,14 +1,14 @@
-// Module ID: 10174
-// Function ID: 10175
+// Module ID: 10197
+// Function ID: 10198
 // Name: MagicWandIcon
-// Dependencies: [19, 21, 712, 4165, 10175, 2]
+// Dependencies: [19, 21, 712, 4166, 10198, 2]
 // Exports: MagicWandIcon
 
-// Module 10174 (MagicWandIcon)
+// Module 10197 (MagicWandIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 10175 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 10198 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

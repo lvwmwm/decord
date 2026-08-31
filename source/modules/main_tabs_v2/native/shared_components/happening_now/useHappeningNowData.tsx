@@ -1,34 +1,34 @@
-// Module ID: 15579
-// Function ID: 15580
+// Module ID: 15613
+// Function ID: 15614
 // Name: importDefaultResult1
-// Dependencies: [32, 19, 1390, 5186, 13290, 7218, 1396, 7351, 4468, 1218, 6091, 1391, 1983, 1910, 4090, 4535, 4099, 4667, 1923, 4465, 14823, 676, 9877, 589, 15580, 15581, 6122, 6097, 709, 9590, 10, 12, 4697, 15582, 15583, 15584, 6123, 15585, 9850, 1370, 5519, 2]
+// Dependencies: [32, 19, 1386, 5189, 13324, 7239, 1392, 7372, 4470, 1218, 6094, 1387, 1982, 1909, 4091, 4537, 4100, 4669, 1922, 4467, 14857, 676, 9900, 589, 15614, 15615, 6125, 6100, 709, 9612, 10, 12, 4699, 15616, 15617, 15618, 6126, 15619, 9873, 1471, 5522, 2]
 // Exports: default
 
-// Module 15579 (importDefaultResult1)
+// Module 15613 (importDefaultResult1)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "participantFromServer" /* 1390 */;
-import closure_6 from "_handleConnectionOpen" /* 5186 */;
-import closure_7 from "truncateOldMessageData" /* 13290 */;
-import scheduledEventSort from "scheduledEventSort" /* 7218 */;
-import closure_11 from "scheduledEventSort" /* 7218 */;
-import closure_12 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import closure_13 from "recomputeAffinities" /* 7351 */;
-import closure_14 from "reset" /* 4468 */;
+import closure_5 from "participantFromServer" /* 1386 */;
+import closure_6 from "_handleConnectionOpen" /* 5189 */;
+import closure_7 from "truncateOldMessageData" /* 13324 */;
+import scheduledEventSort from "scheduledEventSort" /* 7239 */;
+import closure_11 from "scheduledEventSort" /* 7239 */;
+import closure_12 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
+import closure_13 from "recomputeAffinities" /* 7372 */;
+import closure_14 from "reset" /* 4470 */;
 import closure_15 from "fetchFingerprint" /* 1218 */;
-import importDefaultResult from "getMemberListId" /* 6091 */;
-import { MemberListRowTypes } from "getMemberListId" /* 6091 */;
-import importDefaultResult1 from "ensureGuildLoaded" /* 1391 */;
-import closure_19 from "comparator" /* 1983 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_20 } from "comparator" /* 1983 */;
-import closure_21 from "createGuildRecordFromRust" /* 1910 */;
-import closure_22 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_23 from "sortActivity" /* 4535 */;
-import closure_24 from "markAllUserIdListsStale" /* 4099 */;
-import closure_25 from "updateUserGuildSettingsInternal" /* 4667 */;
-import importDefaultResult2 from "mergeGuildAvatar" /* 1923 */;
-import importDefaultResult3 from "updateVoiceState" /* 4465 */;
-import { HappeningNowItem } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14823 */;
+import importDefaultResult from "getMemberListId" /* 6094 */;
+import { MemberListRowTypes } from "getMemberListId" /* 6094 */;
+import importDefaultResult1 from "ensureGuildLoaded" /* 1387 */;
+import closure_19 from "comparator" /* 1982 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_20 } from "comparator" /* 1982 */;
+import closure_21 from "createGuildRecordFromRust" /* 1909 */;
+import closure_22 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_23 from "sortActivity" /* 4537 */;
+import closure_24 from "markAllUserIdListsStale" /* 4100 */;
+import closure_25 from "updateUserGuildSettingsInternal" /* 4669 */;
+import importDefaultResult2 from "mergeGuildAvatar" /* 1922 */;
+import importDefaultResult3 from "updateVoiceState" /* 4467 */;
+import { HappeningNowItem } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14857 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

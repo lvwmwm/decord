@@ -1,12 +1,12 @@
-// Module ID: 13042
-// Function ID: 13043
+// Module ID: 13076
+// Function ID: 13077
 // Name: buildReferralUserRow
-// Dependencies: [4099, 10570, 2]
+// Dependencies: [4100, 10594, 2]
 // Exports: buildReferralUserRow
 
-// Module 13042 (buildReferralUserRow)
-import closure_0 from "markAllUserIdListsStale" /* 4099 */;
-import { UserRowModes } from "UserRowModes" /* 10570 */;
+// Module 13076 (buildReferralUserRow)
+import closure_0 from "markAllUserIdListsStale" /* 4100 */;
+import { UserRowModes } from "UserRowModes" /* 10594 */;
 
 const result = require("set").fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheetUtils.tsx");
 

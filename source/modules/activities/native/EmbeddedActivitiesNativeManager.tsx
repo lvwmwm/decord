@@ -1,29 +1,29 @@
-// Module ID: 9392
-// Function ID: 9393
+// Module ID: 9414
+// Function ID: 9415
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 1391, 4520, 1390, 4474, 676, 4348, 8539, 500, 9393, 9394, 1208, 9395, 9438, 4823, 1236, 9398, 4080, 698, 709, 9456, 9408, 4163, 9457, 1231, 1370, 514, 2]
+// Dependencies: [5, 17, 1387, 4522, 1386, 4476, 676, 4350, 8561, 500, 9415, 9416, 1208, 9417, 9460, 4826, 1236, 9420, 4081, 698, 709, 9478, 9430, 4164, 9479, 1231, 1471, 514, 2]
 
-// Module 9392 (postMessageToWebView)
+// Module 9414 (postMessageToWebView)
 import v1 from "v1" /* 514 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import dispatcherDefault2 from "dispatcher" /* 4163 */;
-import _modDef4823 from "module_4823" /* 4823 */;
-import enforcingDefault from "enforcing" /* 9393 */;
-import getShelfItemTrackingPropertiesDefault from "getShelfItemTrackingProperties" /* 9395 */;
-import NativeModulesDefault from "NativeModules" /* 9398 */;
-import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity" /* 9408 */;
-import registerAssetDefault from "registerAsset" /* 9457 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+import dispatcherDefault2 from "dispatcher" /* 4164 */;
+import _modDef4826 from "module_4826" /* 4826 */;
+import enforcingDefault from "enforcing" /* 9415 */;
+import getShelfItemTrackingPropertiesDefault from "getShelfItemTrackingProperties" /* 9417 */;
+import NativeModulesDefault from "NativeModules" /* 9420 */;
+import _runPrimaryAppCommandOrJoinEmbeddedActivity from "_runPrimaryAppCommandOrJoinEmbeddedActivity" /* 9430 */;
+import registerAssetDefault from "registerAsset" /* 9479 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "createRTCConnection" /* 4520 */;
-import closure_6 from "participantFromServer" /* 1390 */;
-import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4474 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "createRTCConnection" /* 4522 */;
+import closure_6 from "participantFromServer" /* 1386 */;
+import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4476 */;
 import ME from "ME" /* 676 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4348 */;
-import WebView from "WebView" /* 8539 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4350 */;
+import WebView from "WebView" /* 8561 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -262,7 +262,7 @@ class EmbeddedActivitiesNativeManager extends tmp6 {
 const prototype = EmbeddedActivitiesNativeManager.prototype;
 prototype["showErrorModal"] = function showErrorModal(reason, id) {
   ({ code, message } = reason);
-  let obj = _modDef4823;
+  let obj = _modDef4826;
   obj = { title: null, body: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.formatToPlainString(getSystemLocale.t.hbiAO6, { code });
@@ -270,7 +270,7 @@ prototype["showErrorModal"] = function showErrorModal(reason, id) {
   obj.show(obj);
 };
 prototype["showLaunchErrorModal"] = function showLaunchErrorModal(message) {
-  let obj = _modDef4823;
+  let obj = _modDef4826;
   obj = { title: null, body: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t.PtobXW);

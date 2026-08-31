@@ -1,18 +1,18 @@
-// Module ID: 7768
-// Function ID: 7769
+// Module ID: 7789
+// Function ID: 7790
 // Name: HeaderWithBorder
-// Dependencies: [19, 21, 4166, 712, 7554, 500, 7769, 5973, 7779, 7780, 1236, 7781, 12849, 12850, 4301, 2]
+// Dependencies: [19, 21, 4167, 712, 7575, 500, 7790, 5976, 7800, 7801, 1236, 7802, 12883, 12884, 4303, 2]
 // Exports: default, openConversationNavigator
 
-// Module 7768 (HeaderWithBorder)
+// Module 7789 (HeaderWithBorder)
 import noopAll from "noop" /* 19 */;
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4166 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4301 */;
-import GenericHeaderTitle from "GenericHeaderTitle" /* 7554 */;
+import map from "map" /* 4167 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4303 */;
+import GenericHeaderTitle from "GenericHeaderTitle" /* 7575 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7769 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7790 */;
 
 require = arg1;
 function HeaderWithBorder(arg0) {
@@ -33,11 +33,11 @@ const result = require("set").fileFinishedImporting("modules/conversations/compo
 export default function ConversationNavigator(route) {
   const params = route.route.params;
   const channelId = params.channelId;
-  let obj = channelId(5973);
+  let obj = channelId(5976);
   obj = { id: "conversation-navigator", screenOptions: obj.useAccessibilityNativeStackOptions(), children: null };
   obj = {
     initialParams: { channelId, guildId: params.guildId },
-    name: channelId(7779).ConversationNavigatorScreens.LIST,
+    name: channelId(7800).ConversationNavigatorScreens.LIST,
     options(navigation) {
       let obj = {
         header(arg0) {
@@ -55,14 +55,14 @@ export default function ConversationNavigator(route) {
       return obj;
     },
     getComponent() {
-      return channelId(7781).default;
+      return channelId(7802).default;
     }
   };
   ({ Navigator, Screen } = Screen);
   const items = [
     callback(Screen, obj),
     callback(Screen.Screen, {
-      name: channelId(7779).ConversationNavigatorScreens.FOCUS,
+      name: channelId(7800).ConversationNavigatorScreens.FOCUS,
       options(route) {
         route = route.route;
         const obj = {
@@ -70,7 +70,7 @@ export default function ConversationNavigator(route) {
             const merged = Object.assign(arg0);
             return callback(closure_5, {});
           },
-          headerLeft: route(7554).getRenderBackImage(route.navigation),
+          headerLeft: route(7575).getRenderBackImage(route.navigation),
           headerTitle() {
             return closure_1_3(closure_1_1(closure_1_2[9]), { channelId: route.params.channelId, title: route.params.title, hasRightAction: true });
           },
@@ -81,7 +81,7 @@ export default function ConversationNavigator(route) {
         return obj;
       },
       getComponent() {
-        return channelId(12850).default;
+        return channelId(12884).default;
       }
     })
   ];

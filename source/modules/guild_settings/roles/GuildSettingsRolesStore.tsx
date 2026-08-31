@@ -1,24 +1,24 @@
-// Module ID: 17125
-// Function ID: 17126
+// Module ID: 17158
+// Function ID: 17159
 // Name: handleSetSection
-// Dependencies: [1431, 17126, 1987, 1986, 9668, 17120, 676, 17127, 11918, 4922, 1370, 506, 4095, 688, 1989, 12, 589, 709, 2]
+// Dependencies: [1427, 17159, 1986, 1985, 9690, 17153, 676, 17160, 11952, 4925, 1471, 506, 4096, 688, 1988, 12, 589, 709, 2]
 
-// Module 17125 (handleSetSection)
+// Module 17158 (handleSetSection)
 import applyDefault from "apply" /* 12 */;
 import fromStringAll from "fromString" /* 506 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import isValueEqual from "isValueEqual" /* 1431 */;
-import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1987 */;
-import applyOverwritesAll from "applyOverwrites" /* 4095 */;
-import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 11918 */;
-import MAX_SUBCATEGORIES from "MAX_SUBCATEGORIES" /* 17120 */;
-import closure_8 from "map" /* 17126 */;
-import closure_10 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_11 from "handleFormInit" /* 9668 */;
+import isValueEqual from "isValueEqual" /* 1427 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1986 */;
+import applyOverwritesAll from "applyOverwrites" /* 4096 */;
+import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 11952 */;
+import MAX_SUBCATEGORIES from "MAX_SUBCATEGORIES" /* 17153 */;
+import closure_8 from "map" /* 17159 */;
+import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_11 from "handleFormInit" /* 9690 */;
 import ME from "ME" /* 676 */;
-import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17127 */;
+import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17160 */;
 import set from "set" /* 2 */;
 
 function handleSetSection(arg0) {
@@ -601,7 +601,7 @@ obj = {
     if (null == found) {
       return false;
     } else {
-      const result = id(1989).extractColorStringsFromServerColors(colors);
+      const result = id(1988).extractColorStringsFromServerColors(colors);
       const value = map2.get(id);
       let tmp21 = null != value;
       if (tmp21) {
@@ -972,7 +972,7 @@ obj = {
         obj[0] = currentStyle;
         obj[1] = value.styleColors;
         const result = obj3.set(id, obj);
-        const result1 = id(1989).extractColorStringsFromServerColors(tmp19);
+        const result1 = id(1988).extractColorStringsFromServerColors(tmp19);
         const primary_color = tmp19.primary_color;
         obj = { color: null, colors: null, colorString: null, colorStrings: null };
         obj[0] = primary_color;

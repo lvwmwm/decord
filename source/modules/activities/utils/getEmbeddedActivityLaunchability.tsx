@@ -1,17 +1,17 @@
-// Module ID: 9425
-// Function ID: 9426
+// Module ID: 9447
+// Function ID: 9448
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [1391, 1910, 4090, 4465, 4474, 676, 9384, 589, 1236, 2]
+// Dependencies: [1387, 1909, 4091, 4467, 4476, 676, 9406, 589, 1236, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 9425 (getEmbeddedActivityLaunchability)
+// Module 9447 (getEmbeddedActivityLaunchability)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9384 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "createGuildRecordFromRust" /* 1910 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_5 from "updateVoiceState" /* 4465 */;
-import { SUPPORTED_ACTIVITIES_CHANNEL_TYPES as closure_6 } from "items3" /* 4474 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9406 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_5 from "updateVoiceState" /* 4467 */;
+import { SUPPORTED_ACTIVITIES_CHANNEL_TYPES as closure_6 } from "items3" /* 4476 */;
 import { Permissions } from "ME" /* 676 */;
 
 require = arg1;

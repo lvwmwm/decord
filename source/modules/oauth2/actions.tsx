@@ -1,16 +1,16 @@
-// Module ID: 9233
-// Function ID: 9234
+// Module ID: 9255
+// Function ID: 9256
 // Name: getLocationContextServer
-// Dependencies: [5, 1391, 1982, 676, 530, 6017, 507, 2]
+// Dependencies: [5, 1387, 1981, 676, 530, 6020, 507, 2]
 // Exports: acceptWhitelist, authorize, fetchAuthorization, fetchChannels, finishUserCode, finishUserCodeTwoWayLinkError, logoutWithRedirect, startSamsungAuthorization, verifyUserCode
 
-// Module 9233 (getLocationContextServer)
+// Module 9255 (getLocationContextServer)
 import getAuthenticationPath from "getAuthenticationPath" /* 507 */;
 import sendRequest from "sendRequest" /* 530 */;
-import handleLogoutDefault from "handleLogout" /* 6017 */;
+import handleLogoutDefault from "handleLogout" /* 6020 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "handleConnectionOpen" /* 1982 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "handleConnectionOpen" /* 1981 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -60,7 +60,7 @@ function _authorize() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ function _authorize() {
               ({ authorize: c0, clientId: c1, scopes: c2, responseType: c3, redirectUri: c4, codeChallenge: c5, codeChallengeMethod: c6, state: c7, permissions: c8, guildId: c9, channelId: c10, integrationType: c11, connectedAccountProvider: c12, nonce: c13 } = callback);
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -199,7 +199,7 @@ function _fetchAuthorization() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ function _fetchAuthorization() {
               ({ clientId: c0, scopes: c1, responseType: c2, redirectUri: c3, codeChallenge: c4, codeChallengeMethod: c5, state: c6, integrationType: c7, connectedAccountProvider: c8, nonce: c9, signal: c10 } = callback);
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -319,7 +319,7 @@ function _startSamsungAuthorization() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -361,7 +361,7 @@ function _startSamsungAuthorization() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c5 = tmp;

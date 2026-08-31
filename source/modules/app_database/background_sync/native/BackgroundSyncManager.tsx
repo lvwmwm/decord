@@ -1,13 +1,13 @@
-// Module ID: 16829
-// Function ID: 16830
+// Module ID: 16862
+// Function ID: 16863
 // Name: handleMessageCreate
-// Dependencies: [1218, 1923, 5451, 16830, 2]
+// Dependencies: [1218, 1922, 5454, 16863, 2]
 
-// Module 16829 (handleMessageCreate)
-import initializeDefault from "initialize" /* 5451 */;
-import _backgroundSync from "_backgroundSync" /* 16830 */;
+// Module 16862 (handleMessageCreate)
+import initializeDefault from "initialize" /* 5454 */;
+import _backgroundSync from "_backgroundSync" /* 16863 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 initializeDefault;

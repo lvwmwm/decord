@@ -1,11 +1,11 @@
-// Module ID: 8572
-// Function ID: 8573
+// Module ID: 8594
+// Function ID: 8595
 // Name: useLabFeature
-// Dependencies: [8570, 589, 2]
+// Dependencies: [8592, 589, 2]
 // Exports: default
 
-// Module 8572 (useLabFeature)
-import closure_2 from "getUserAgnosticState" /* 8570 */;
+// Module 8594 (useLabFeature)
+import closure_2 from "getUserAgnosticState" /* 8592 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/labs/useLabFeature.tsx");

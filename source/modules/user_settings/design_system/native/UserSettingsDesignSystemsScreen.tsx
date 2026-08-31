@@ -1,13 +1,13 @@
-// Module ID: 15147
-// Function ID: 15148
+// Module ID: 15180
+// Function ID: 15181
 // Name: SettingsDesignSystemsScreen
-// Dependencies: [19, 7830, 21, 11006, 14273, 2]
+// Dependencies: [19, 7852, 21, 11031, 14307, 2]
 // Exports: default
 
-// Module 15147 (SettingsDesignSystemsScreen)
-import _modDef14273 from "module_14273" /* 14273 */;
+// Module 15180 (SettingsDesignSystemsScreen)
+import _modDef14307 from "module_14307" /* 14307 */;
 import closure_3 from "noop" /* 19 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7830 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7852 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -28,5 +28,5 @@ export default function SettingsDesignSystemsScreen() {
     sections[3] = { label: "Legacy Audit", settings: items4 };
     return callback(table[3]).createList({ sections });
   }, []);
-  return jsx(_modDef14273, { node });
+  return jsx(_modDef14307, { node });
 };

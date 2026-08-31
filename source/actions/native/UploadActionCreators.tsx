@@ -1,12 +1,12 @@
-// Module ID: 11258
-// Function ID: 11259
-// Dependencies: [4820, 7529, 709, 2]
+// Module ID: 11287
+// Function ID: 11288
+// Dependencies: [4822, 7550, 709, 2]
 
-// Module 11258
+// Module 11287
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "handleChanged" /* 4820 */;
-import { DraftType } from "handleChanged" /* 4820 */;
-import closure_4 from "initialize" /* 7529 */;
+import closure_2 from "handleChanged" /* 4822 */;
+import { DraftType } from "handleChanged" /* 4822 */;
+import closure_4 from "initialize" /* 7550 */;
 
 const result = require("set").fileFinishedImporting("actions/native/UploadActionCreators.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 10417
-// Function ID: 10418
+// Module ID: 10441
+// Function ID: 10442
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: useAndroidShopOrdersEnabled
 
-// Module 10417 (apexExperiment)
+// Module 10441 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

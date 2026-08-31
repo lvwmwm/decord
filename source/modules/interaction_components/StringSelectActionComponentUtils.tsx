@@ -1,12 +1,12 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 7996
+// Function ID: 7997
 // Name: getInitialStringSelectOptions
-// Dependencies: [7968, 1956, 2]
+// Dependencies: [7990, 1955, 2]
 // Exports: getInitialStringSelectOptions
 
-// Module 7974 (getInitialStringSelectOptions)
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1956 */;
-import closure_2 from "getInteractionComponentStates" /* 7968 */;
+// Module 7996 (getInitialStringSelectOptions)
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
+import closure_2 from "getInteractionComponentStates" /* 7990 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/interaction_components/StringSelectActionComponentUtils.tsx");

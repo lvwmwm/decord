@@ -1,25 +1,25 @@
-// Module ID: 16450
-// Function ID: 16451
+// Module ID: 16484
+// Function ID: 16485
 // Name: ConnectionIcon
-// Dependencies: [19, 17, 4487, 5190, 1388, 21, 4446, 712, 4173, 1629, 589, 5192, 5921, 5918, 5938, 16451, 4413, 16453, 2010, 5586, 5587, 4891, 16439, 4442, 1236, 2952, 10692, 4893, 12752, 1364, 1435, 4895, 5928, 5924, 2]
+// Dependencies: [19, 17, 4489, 5193, 1384, 21, 4448, 712, 4174, 1628, 589, 5195, 5924, 5921, 5941, 16485, 4415, 16487, 2009, 5589, 5590, 4894, 16473, 4444, 1236, 2953, 10716, 4896, 12787, 1364, 1431, 4898, 5931, 5927, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 16450 (ConnectionIcon)
+// Module 16484 (ConnectionIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import isThemeLight from "isThemeLight" /* 1364 */;
-import getAvatarURL from "getAvatarURL" /* 1435 */;
-import IconSizes from "IconSizes" /* 4895 */;
-import IconSizesDefault from "IconSizes" /* 4895 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 5921 */;
-import GameIcon from "GameIcon" /* 5928 */;
-import GameIconDefault from "GameIcon" /* 5928 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import IconSizes from "IconSizes" /* 4898 */;
+import IconSizesDefault from "IconSizes" /* 4898 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 5924 */;
+import GameIcon from "GameIcon" /* 5931 */;
+import GameIconDefault from "GameIcon" /* 5931 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "addApplication" /* 4487 */;
-import closure_6 from "set" /* 5190 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import closure_5 from "addApplication" /* 4489 */;
+import closure_6 from "set" /* 5193 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function ConnectionIcon(arg0) {
@@ -211,7 +211,7 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(5924).useGetOrFetchApplication(replacedBy);
+  const getOrFetchApplication = deprecatedPlatformTypes(5927).useGetOrFetchApplication(replacedBy);
   const tmp5 = useStartAuthorizeDefault(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {

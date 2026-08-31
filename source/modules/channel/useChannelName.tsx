@@ -1,15 +1,15 @@
-// Module ID: 4640
-// Function ID: 4641
+// Module ID: 4642
+// Function ID: 4643
 // Name: computeChannelName
-// Dependencies: [32, 4359, 4099, 1923, 676, 1370, 4290, 1236, 589, 2]
+// Dependencies: [32, 4361, 4100, 1922, 676, 1471, 4292, 1236, 589, 2]
 // Exports: computeDefaultGroupDmName, computeDefaultGroupDmNameFromUserIds, computeGroupDmName, default, escapeChannelName, unescapeChannelName, useComputedGroupDmName
 
-// Module 4640 (computeChannelName)
-import nameFromUserDefault from "nameFromUser" /* 4290 */;
+// Module 4642 (computeChannelName)
+import nameFromUserDefault from "nameFromUser" /* 4292 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "getHash" /* 4359 */;
-import closure_5 from "markAllUserIdListsStale" /* 4099 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "getHash" /* 4361 */;
+import closure_5 from "markAllUserIdListsStale" /* 4100 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -38,7 +38,7 @@ function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
       } else {
         const recipients = channel.recipients;
         const mapped = recipients.map(closure_9.getUser);
-        const first = callback(mapped.filter(_require(1370).isNotNullish), 1)[0];
+        const first = callback(mapped.filter(_require(1471).isNotNullish), 1)[0];
         if (null == first) {
           return "???";
         } else {
@@ -67,7 +67,7 @@ function computeChannelName(channel, closure_9, closure_7, arg3, arg4) {
         const recipients1 = channel.recipients;
         _require = closure_7;
         const mapped1 = recipients1.map(closure_9.getUser);
-        const found = mapped1.filter(_require(1370).isNotNullish);
+        const found = mapped1.filter(_require(1471).isNotNullish);
         const mapped2 = found.map((id) => {
           nickname = nickname.getNickname(id.id);
           if (nickname == null) {
@@ -166,7 +166,7 @@ export default function useChannelName(arg0) {
 export const computeDefaultGroupDmNameFromUserIds = function computeDefaultGroupDmNameFromUserIds(arr, getUser) {
   const _require = arg2;
   const mapped = arr.map(getUser.getUser);
-  const found = mapped.filter(_require(1370).isNotNullish);
+  const found = mapped.filter(_require(1471).isNotNullish);
   const mapped1 = found.map((id) => {
     nickname = nickname.getNickname(id.id);
     if (nickname == null) {
@@ -190,7 +190,7 @@ export const computeDefaultGroupDmName = function computeDefaultGroupDmName(reci
   recipients = recipients.recipients;
   const _require = arg2;
   const mapped = recipients.map(getUser.getUser);
-  const found = mapped.filter(_require(1370).isNotNullish);
+  const found = mapped.filter(_require(1471).isNotNullish);
   const mapped1 = found.map((id) => {
     nickname = nickname.getNickname(id.id);
     if (nickname == null) {

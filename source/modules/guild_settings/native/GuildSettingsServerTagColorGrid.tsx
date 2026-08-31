@@ -1,16 +1,16 @@
-// Module ID: 17108
-// Function ID: 17109
+// Module ID: 17141
+// Function ID: 17142
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 7800, 21, 712, 4446, 1236, 4891, 4442, 17106, 17109, 13587, 14692, 14880, 2]
+// Dependencies: [19, 17, 7821, 21, 712, 4448, 1236, 4894, 4444, 17139, 17142, 13621, 14726, 14913, 2]
 // Exports: default
 
-// Module 17108 (GuildSettingsServerTagColorGrid)
+// Module 17141 (GuildSettingsServerTagColorGrid)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import items from "items" /* 7800 */;
+import items from "items" /* 7821 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 noopAll;

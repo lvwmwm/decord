@@ -1,14 +1,14 @@
-// Module ID: 4294
-// Function ID: 4295
+// Module ID: 4296
+// Function ID: 4297
 // Name: hexToRgba
-// Dependencies: [32, 689, 1236, 3, 4295, 2]
+// Dependencies: [32, 689, 1236, 3, 4297, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgb, hexToRgbArray, hexToRgba, hexToRgbaString, hexWithOpacity, hslToString, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 4294 (hexToRgba)
+// Module 4296 (hexToRgba)
 import timestampDefault from "timestamp" /* 3 */;
 import nDefault from "n" /* 689 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hslToRgbDefault from "hslToRgb" /* 4295 */;
+import hslToRgbDefault from "hslToRgb" /* 4297 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;

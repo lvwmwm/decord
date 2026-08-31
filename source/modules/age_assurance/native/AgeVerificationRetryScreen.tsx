@@ -1,18 +1,18 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 8693
+// Function ID: 8694
 // Name: GetStartedScreen
-// Dependencies: [5, 19, 17, 676, 8636, 21, 4446, 712, 4699, 8630, 8667, 1236, 8628, 500, 6221, 4442, 5957, 5564, 1996, 2]
+// Dependencies: [5, 19, 17, 676, 8658, 21, 4448, 712, 4701, 8652, 8689, 1236, 8650, 500, 6224, 4444, 5960, 5567, 1995, 2]
 // Exports: default
 
-// Module 8671 (GetStartedScreen)
+// Module 8693 (GetStartedScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8636 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8658 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, ScrollView: closure_6, View: error } = get_ActivityIndicator);
@@ -62,7 +62,7 @@ export default function GetStartedScreen(modalSessionId) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -94,7 +94,7 @@ export default function GetStartedScreen(modalSessionId) {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           c0 = tmp;

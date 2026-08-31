@@ -1,13 +1,13 @@
-// Module ID: 8491
-// Function ID: 8492
+// Module ID: 8513
+// Function ID: 8514
 // Name: useProfileFrame
-// Dependencies: [7234, 7250, 7241, 589, 2]
+// Dependencies: [7255, 7271, 7262, 589, 2]
 // Exports: default
 
-// Module 8491 (useProfileFrame)
-import closure_2 from "updateCategoriesAndProducts" /* 7234 */;
-import closure_3 from "map" /* 7250 */;
-import { isProfileFrameRecord } from "fromServer" /* 7241 */;
+// Module 8513 (useProfileFrame)
+import closure_2 from "updateCategoriesAndProducts" /* 7255 */;
+import closure_3 from "map" /* 7271 */;
+import { isProfileFrameRecord } from "fromServer" /* 7262 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrame.tsx");

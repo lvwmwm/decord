@@ -1,12 +1,12 @@
-// Module ID: 4623
-// Function ID: 4624
+// Module ID: 4625
+// Function ID: 4626
 // Name: sendSMS
-// Dependencies: [17, 500, 4624, 2]
+// Dependencies: [17, 500, 4626, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 4623 (sendSMS)
+// Module 4625 (sendSMS)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 4624 */;
+import enforcingDefault from "enforcing" /* 4626 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
 ({ Linking: c3, NativeModules: c4 } = get_ActivityIndicator);

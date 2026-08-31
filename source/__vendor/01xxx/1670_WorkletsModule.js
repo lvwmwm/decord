@@ -4,7 +4,7 @@
 // Dependencies: [1671]
 
 // Module 1670 (WorkletsModule)
-import WorkletsModule from "WorkletsModule" /* 1671 */;
+import jSWorkletsModule from "jSWorkletsModule" /* 1671 */;
 
 
-export const WorkletsModule = WorkletsModule.WorkletsModule;
+export const WorkletsModule = jSWorkletsModule.WorkletsModule;

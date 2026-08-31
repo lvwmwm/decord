@@ -1,9 +1,9 @@
-// Module ID: 8001
-// Function ID: 8002
+// Module ID: 8023
+// Function ID: 8024
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8001 (metadata)
+// Module 8023 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/checkpoint/card-donut.png.js");

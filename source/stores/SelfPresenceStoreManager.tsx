@@ -1,12 +1,12 @@
-// Module ID: 16998
-// Function ID: 16999
+// Module ID: 17031
+// Function ID: 17032
 // Name: handleChange
-// Dependencies: [5188, 5451, 709, 2]
+// Dependencies: [5191, 5454, 709, 2]
 
-// Module 16998 (handleChange)
+// Module 17031 (handleChange)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 5451 */;
-import closure_2 from "filterPlayingActivities" /* 5188 */;
+import initializeDefault from "initialize" /* 5454 */;
+import closure_2 from "filterPlayingActivities" /* 5191 */;
 
 function handleChange() {
   let obj = dispatcherDefault;

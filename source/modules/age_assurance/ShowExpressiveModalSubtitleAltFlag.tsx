@@ -1,12 +1,12 @@
-// Module ID: 8654
-// Function ID: 8655
+// Module ID: 8676
+// Function ID: 8677
 // Name: useShouldShowExpressiveModalSubtitleAlt
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: shouldShowExpressiveModalSubtitleAlt, useShouldShowExpressiveModalSubtitleAlt
 
-// Module 8654 (useShouldShowExpressiveModalSubtitleAlt)
+// Module 8676 (useShouldShowExpressiveModalSubtitleAlt)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

@@ -1,13 +1,13 @@
-// Module ID: 9509
-// Function ID: 9510
+// Module ID: 9531
+// Function ID: 9532
 // Name: getStreamFailedSource
-// Dependencies: [19, 17, 21, 8851, 9510, 9511, 1363, 2]
+// Dependencies: [19, 17, 21, 8874, 9532, 9533, 1363, 2]
 // Exports: StreamFailed, getStreamFailedSource, useStreamFailedSource
 
-// Module 9509 (getStreamFailedSource)
+// Module 9531 (getStreamFailedSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 8851 */;
+import getIllustrationSource from "getIllustrationSource" /* 8874 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,10 +19,10 @@ export const getStreamFailedSource = function getStreamFailedSource(theme) {
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(9510);
+      return callback(9532);
     },
     darker() {
-      return callback(9511);
+      return callback(9533);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -31,10 +31,10 @@ export const useStreamFailedSource = function useStreamFailedSource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9510);
+      return callback(9532);
     },
     darker() {
-      return callback(9511);
+      return callback(9533);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -43,10 +43,10 @@ export const StreamFailed = function StreamFailed(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(9510);
+      return callback(9532);
     },
     darker() {
-      return callback(9511);
+      return callback(9533);
     }
   };
   obj = {};

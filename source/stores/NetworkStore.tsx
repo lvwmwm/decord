@@ -1,13 +1,13 @@
-// Module ID: 4540
-// Function ID: 4541
+// Module ID: 4542
+// Function ID: 4543
 // Name: handleConnectionInfoChange
-// Dependencies: [676, 589, 1474, 709, 2]
+// Dependencies: [676, 589, 1473, 709, 2]
 
-// Module 4540 (handleConnectionInfoChange)
+// Module 4542 (handleConnectionInfoChange)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import awaitOnlineDefault from "awaitOnline" /* 1474 */;
+import awaitOnlineDefault from "awaitOnline" /* 1473 */;
 import ME from "ME" /* 676 */;
 
 function handleConnectionInfoChange(type) {

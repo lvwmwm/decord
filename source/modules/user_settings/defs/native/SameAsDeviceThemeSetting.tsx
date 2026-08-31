@@ -1,15 +1,14 @@
-// Module ID: 14831
-// Function ID: 14832
+// Module ID: 14865
+// Function ID: 14866
 // Name: toggle
-// Dependencies: [1302, 7830, 589, 14711, 11006, 1236, 1367, 2]
+// Dependencies: [1302, 7852, 589, 14745, 11031, 1236, 2]
 
-// Module 14831 (toggle)
+// Module 14865 (toggle)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import handleSaveTheme from "handleSaveTheme" /* 14711 */;
-import closure_3 from "handleThemeChange" /* 1302 */;
-import createToggle from "createToggle" /* 11006 */;
+import handleSaveTheme from "handleSaveTheme" /* 14745 */;
+import closure_2 from "handleThemeChange" /* 1302 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 createToggle = {
@@ -18,11 +17,8 @@ createToggle = {
     return intl.string(getSystemLocale.t.c445ix);
   },
   parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
-  usePredicate() {
-    return useIsMobileVisualRefreshExperimentEnabledDefault("SameAsDeviceThemeSetting");
-  },
   useValue: function useSameAsDeviceThemeValue() {
-    const items = [closure_3];
+    const items = [closure_2];
     return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
   onValueChange: function onSameAsDeviceThemeValueChange(arg0) {

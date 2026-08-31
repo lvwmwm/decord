@@ -1,14 +1,14 @@
-// Module ID: 17063
-// Function ID: 17064
+// Module ID: 17096
+// Function ID: 17097
 // Name: ListBulletsIcon
-// Dependencies: [19, 21, 712, 4165, 17064, 2]
+// Dependencies: [19, 21, 712, 4166, 17097, 2]
 // Exports: ListBulletsIcon
 
-// Module 17063 (ListBulletsIcon)
+// Module 17096 (ListBulletsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 17064 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 17097 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

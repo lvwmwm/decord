@@ -1,10 +1,10 @@
-// Module ID: 15886
-// Function ID: 15887
+// Module ID: 15920
+// Function ID: 15921
 // Name: useIsTinyBroncoEligible
 // Dependencies: [2]
 // Exports: useIsTinyBroncoEligible, useShowTinyBroncoPromoSheet
 
-// Module 15886 (useIsTinyBroncoEligible)
+// Module 15920 (useIsTinyBroncoEligible)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoLazy.tsx");

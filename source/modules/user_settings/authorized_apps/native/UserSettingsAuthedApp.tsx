@@ -1,29 +1,29 @@
-// Module ID: 14480
-// Function ID: 14481
+// Module ID: 14514
+// Function ID: 14515
 // Name: WarningLabel
-// Dependencies: [19, 17, 1390, 5440, 1391, 4099, 4667, 1997, 676, 10592, 8996, 21, 4446, 712, 4401, 4442, 1500, 1501, 1236, 5926, 9392, 9232, 589, 12096, 1435, 4824, 12095, 4413, 9008, 2010, 503, 8998, 8621, 7709, 6207, 8587, 4301, 5452, 5447, 11, 11564, 8978, 5957, 5958, 5564, 2]
+// Dependencies: [19, 17, 1386, 5443, 1387, 4100, 4669, 1996, 676, 10616, 9019, 21, 4448, 712, 4403, 4444, 1499, 1500, 1236, 5929, 9414, 9254, 589, 12129, 1431, 4827, 12128, 4415, 9031, 2009, 503, 9021, 8643, 7730, 6210, 8609, 4303, 5455, 5450, 11, 11595, 9001, 5960, 5961, 5567, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14480 (WarningLabel)
+// Module 14514 (WarningLabel)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4401 */;
-import Text from "Text" /* 4442 */;
-import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5926 */;
-import postMessageToWebViewDefault from "postMessageToWebView" /* 9392 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4403 */;
+import Text from "Text" /* 4444 */;
+import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5929 */;
+import postMessageToWebViewDefault from "postMessageToWebView" /* 9414 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "participantFromServer" /* 1390 */;
-import closure_7 from "recomputeFromAppTokens" /* 5440 */;
-import closure_8 from "ensureGuildLoaded" /* 1391 */;
-import closure_9 from "markAllUserIdListsStale" /* 4099 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 4667 */;
-import closure_11 from "_getSystemLocale" /* 1997 */;
+import closure_6 from "participantFromServer" /* 1386 */;
+import closure_7 from "recomputeFromAppTokens" /* 5443 */;
+import closure_8 from "ensureGuildLoaded" /* 1387 */;
+import closure_9 from "markAllUserIdListsStale" /* 4100 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_11 from "_getSystemLocale" /* 1996 */;
 import ME from "ME" /* 676 */;
-import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 10592 */;
-import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 8996 */;
+import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 10616 */;
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 9019 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function WarningLabel(children) {
@@ -36,7 +36,7 @@ function WarningLabel(children) {
 }
 function AuthorizedAppTwoWay(application) {
   let navigation;
-  let obj = navigation(1500);
+  let obj = navigation(1499);
   navigation = obj.useNavigation();
   const items = [navigation];
   obj = { text: null };

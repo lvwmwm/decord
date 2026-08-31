@@ -1,16 +1,16 @@
-// Module ID: 13262
-// Function ID: 13263
+// Module ID: 13296
+// Function ID: 13297
 // Name: guildId
-// Dependencies: [1391, 4497, 4541, 676, 13260, 4135, 1403, 4507, 2]
+// Dependencies: [1387, 4499, 4543, 676, 13294, 4136, 1399, 4509, 2]
 
-// Module 13262 (guildId)
-import hasFlag from "hasFlag" /* 1403 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import isClipsEnabled from "isClipsEnabled" /* 4507 */;
-import shouldCommitDefault from "shouldCommit" /* 13260 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
-import closure_4 from "initialize" /* 4541 */;
+// Module 13296 (guildId)
+import hasFlag from "hasFlag" /* 1399 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import isClipsEnabled from "isClipsEnabled" /* 4509 */;
+import shouldCommitDefault from "shouldCommit" /* 13294 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_4 from "initialize" /* 4543 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

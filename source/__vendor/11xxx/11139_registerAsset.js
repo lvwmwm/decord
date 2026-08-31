@@ -1,0 +1,10 @@
+// Module ID: 11139
+// Function ID: 11140
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 11139 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 52, height: 54, scales: [1], hash: "952194349b0f8cbc08a58b40dbb32cb2", name: "connections-profile-steam-tf2", type: "png" });

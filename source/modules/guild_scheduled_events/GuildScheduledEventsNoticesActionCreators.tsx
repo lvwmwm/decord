@@ -1,10 +1,10 @@
-// Module ID: 16567
-// Function ID: 16568
+// Module ID: 16601
+// Function ID: 16602
 // Name: hideLiveChannelNotice
 // Dependencies: [709, 2]
 // Exports: dismissEventBanner, hideLiveChannelNotice, hideUpcomingEventNotice, markUpcomingEventNoticeAsSeen
 
-// Module 16567 (hideLiveChannelNotice)
+// Module 16601 (hideLiveChannelNotice)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

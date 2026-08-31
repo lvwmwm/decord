@@ -1,16 +1,16 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14683
+// Function ID: 14684
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 676, 21, 4446, 712, 4135, 9294, 1236, 9308, 11331, 9137, 6221, 4442, 10870, 5566, 1996, 4893, 2]
+// Dependencies: [17, 676, 21, 4448, 712, 4136, 9316, 1236, 9330, 11360, 9160, 6224, 4444, 10894, 5569, 1995, 4896, 2]
 // Exports: default
 
-// Module 14649 (QuestDisclosureModalInner)
+// Module 14683 (QuestDisclosureModalInner)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import ThemesDefault from "Themes" /* 712 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 ({ ScrollView: c3, View: c4 } = get_ActivityIndicator);
 const HelpdeskArticles = ME.HelpdeskArticles;
@@ -38,42 +38,42 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   ({ gamePublisher, gameTitle, isVideoQuest, onClose, cosponsorName } = isTargetedDisclosure);
   const tmp = callback();
   _require = tmp;
-  const DropsOptedOut = _require(4135).DropsOptedOut;
+  const DropsOptedOut = _require(4136).DropsOptedOut;
   const setting = DropsOptedOut.useSetting();
   let obj = { icon: null, text: null };
   if (setting) {
-    obj[0] = tmp5(tmp2(9294).ServerIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(9316).ServerIcon, { size: "xs" });
     const intl4 = tmp2(1236).intl;
     obj[1] = intl4.string(tmp2(1236).t["2bL0wT"]);
     let items = [obj];
     let tmp6 = tmp5;
     items1 = items;
   } else {
-    obj[0] = tmp5(tmp2(9308).GlobeEarthIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(9330).GlobeEarthIcon, { size: "xs" });
     const intl = tmp2(1236).intl;
     obj[1] = intl.string(tmp2(1236).t.xQSdPv);
     items1 = [obj, , ];
     obj = { icon: null, text: null };
-    obj[0] = tmp5(tmp2(11331).UserIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(11360).UserIcon, { size: "xs" });
     const intl2 = tmp2(1236).intl;
     obj[1] = intl2.string(tmp2(1236).t.mYt7hQ);
     items1[1] = obj;
     obj = { icon: null, text: null };
-    obj[0] = tmp5(tmp2(9137).GameControllerIcon, { size: "xs" });
+    obj[0] = tmp5(tmp2(9160).GameControllerIcon, { size: "xs" });
     const intl3 = tmp2(1236).intl;
     obj[1] = intl3.string(tmp2(1236).t.XAsWxQ);
     items1[2] = obj;
     tmp6 = tmp5;
   }
   obj1 = { style: tmp.container, contentContainerStyle: tmp.contentContainer, children: null };
-  const items2 = [tmp6(closure_4, { style: tmp.illustration, children: tmp6(_require(6221).WumpusCouchSpotIllustration, {}) }), , , , ];
+  const items2 = [tmp6(closure_4, { style: tmp.illustration, children: tmp6(_require(6224).WumpusCouchSpotIllustration, {}) }), , , , ];
   const obj3 = { variant: "text-md/normal", color: "mobile-text-heading-primary", children: null };
-  const obj2 = { style: tmp.illustration, children: tmp6(_require(6221).WumpusCouchSpotIllustration, {}) };
+  const obj2 = { style: tmp.illustration, children: tmp6(_require(6224).WumpusCouchSpotIllustration, {}) };
   const tmp7 = closure_7;
   const tmp8 = closure_3;
   const tmp9 = closure_4;
-  obj3[2] = _require(10870).getDisclosureText({ gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
-  items2[1] = tmp6(_require(4442).Text, obj3);
+  obj3[2] = _require(10894).getDisclosureText({ gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest });
+  items2[1] = tmp6(_require(4444).Text, obj3);
   if (isTargetedDisclosure) {
     const obj4 = { radius: 16, style: null, children: null };
     obj4[1] = tmp.targetList;
@@ -91,22 +91,22 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
       obj[1] = items;
       return closure_1_7(closure_1_4, obj, arg1);
     });
-    isTargetedDisclosure = tmp6(tmp2(5566).Card, obj4);
+    isTargetedDisclosure = tmp6(tmp2(5569).Card, obj4);
   }
   items2[2] = isTargetedDisclosure;
   const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
   const intl5 = tmp2(1236).intl;
   const obj6 = { privacySettingsUrl: null };
-  const tmp2Result = _require(10870);
-  obj6[0] = items1(1996).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
+  const tmp2Result = _require(10894);
+  obj6[0] = items1(1995).getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS);
   obj5[2] = intl5.format(_require(1236).t.tzq9Wa, obj6);
-  items2[3] = tmp6(_require(4442).Text, obj5);
+  items2[3] = tmp6(_require(4444).Text, obj5);
   const obj7 = { style: tmp.closeButton, children: null };
   const obj8 = { variant: "primary", grow: true, size: "lg", text: null, onPress: null };
   const intl6 = tmp2(1236).intl;
   obj8[3] = intl6.string(_require(1236).t.cpT0Cq);
   obj8[4] = onClose;
-  obj7[1] = tmp6(_require(4893).Button, obj8);
+  obj7[1] = tmp6(_require(4896).Button, obj8);
   items2[4] = tmp6(tmp9, obj7);
   obj1[2] = items2;
   return tmp7(tmp8, obj1);

@@ -1,17 +1,17 @@
-// Module ID: 16038
-// Function ID: 16039
+// Module ID: 16072
+// Function ID: 16073
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 1391, 1910, 21, 15971, 712, 589, 5422, 8568, 16010, 10589, 8567, 4640, 16012, 1236, 11, 5033, 4442, 4436, 16016, 16018, 2]
+// Dependencies: [19, 17, 1387, 1909, 21, 16005, 712, 589, 5425, 8590, 16044, 10613, 8589, 4642, 16046, 1236, 11, 5036, 4444, 4438, 16050, 16052, 2]
 // Exports: default
 
-// Module 16038 (ICYMIForumThreadRow)
+// Module 16072 (ICYMIForumThreadRow)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "createGuildRecordFromRust" /* 1909 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 15971 */;
+import createICYMIStyles from "createICYMIStyles" /* 16005 */;
 
 const require = arg1;
 class ICYMIForumThreadRow {

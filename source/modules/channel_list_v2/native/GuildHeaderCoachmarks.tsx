@@ -1,15 +1,15 @@
-// Module ID: 15675
-// Function ID: 15676
+// Module ID: 15709
+// Function ID: 15710
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4090, 676, 1388, 21, 589, 15676, 15677, 15679, 12011, 15686, 12002, 12003, 1377, 6216, 11999, 15687, 15688, 15690, 2]
+// Dependencies: [32, 19, 4091, 676, 1384, 21, 589, 15710, 15711, 15713, 12044, 15720, 12035, 12036, 1373, 6219, 12032, 15721, 15722, 15724, 2]
 // Exports: default
 
-// Module 15675 (GuildHeaderCoachmarks)
+// Module 15709 (GuildHeaderCoachmarks)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
 import { Permissions } from "ME" /* 676 */;
-import { DismissibleContentGroupName as closure_7 } from "ContentDismissActionType" /* 1388 */;
+import { DismissibleContentGroupName as closure_7 } from "ContentDismissActionType" /* 1384 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 4305
-// Function ID: 4306
+// Module ID: 4307
+// Function ID: 4308
 // Name: useBaseAppContainerDimensions
-// Dependencies: [19, 1494, 1629, 2]
+// Dependencies: [19, 1493, 1628, 2]
 // Exports: default, getBaseAppContainerDimensions
 
-// Module 4305 (useBaseAppContainerDimensions)
-import useWindowDimensions from "useWindowDimensions" /* 1494 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1629 */;
+// Module 4307 (useBaseAppContainerDimensions)
+import useWindowDimensions from "useWindowDimensions" /* 1493 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1628 */;
 import closure_3 from "noop" /* 19 */;
 
 require = arg1;

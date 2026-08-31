@@ -1,13 +1,13 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10038
+// Function ID: 10039
 // Name: getNoiseCancellationDeferredToSystem
-// Dependencies: [4497, 10016, 589, 2]
+// Dependencies: [4499, 10039, 589, 2]
 // Exports: getNoiseCancellationDeferredToSystem, useNoiseCancellationDeferredToSystem
 
-// Module 10015 (getNoiseCancellationDeferredToSystem)
+// Module 10038 (getNoiseCancellationDeferredToSystem)
 import initialize from "initialize" /* 589 */;
-import setDefault from "set" /* 10016 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
+import setDefault from "set" /* 10039 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/noise_cancellation/NoiseCancellationUtils.tsx");

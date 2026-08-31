@@ -1,29 +1,29 @@
-// Module ID: 8780
-// Function ID: 8781
+// Module ID: 8802
+// Function ID: 8803
 // Name: GameProfileView
-// Dependencies: [19, 17, 21, 4446, 712, 5918, 5938, 8781, 8785, 8787, 8788, 8798, 8799, 8802, 8816, 8826, 12564, 12566, 12583, 12584, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 5921, 5941, 8803, 8807, 8810, 8811, 8821, 8822, 8825, 8839, 8849, 12599, 12601, 12618, 12619, 2]
 // Exports: default
 
-// Module 8780 (GameProfileView)
+// Module 8802 (GameProfileView)
 import ThemesDefault from "Themes" /* 712 */;
-import contextDefault from "context" /* 5918 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5938 */;
-import GameProfileHeaderDefault from "GameProfileHeader" /* 8781 */;
-import ImageItemDefault from "ImageItem" /* 8785 */;
-import SteamReviewRowDefault from "SteamReviewRow" /* 8788 */;
-import GameProfileSummaryDefault from "GameProfileSummary" /* 8798 */;
-import GameProfileLinkAccountDefault from "GameProfileLinkAccount" /* 8799 */;
-import GameProfileCommunityServerDefault from "GameProfileCommunityServer" /* 8802 */;
-import EmbedAnnouncementCardDefault from "EmbedAnnouncementCard" /* 8816 */;
-import HorizontalSpacingDefault from "HorizontalSpacing" /* 8826 */;
-import SpacerDefault from "Spacer" /* 12564 */;
-import GameProfileWebsiteButtonDefault from "GameProfileWebsiteButton" /* 12566 */;
-import GameProfileGameClaimCtaDefault from "GameProfileGameClaimCta" /* 12583 */;
-import GameProfileReportButtonDefault from "GameProfileReportButton" /* 12584 */;
+import contextDefault from "context" /* 5921 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5941 */;
+import GameProfileHeaderDefault from "GameProfileHeader" /* 8803 */;
+import ImageItemDefault from "ImageItem" /* 8807 */;
+import SteamReviewRowDefault from "SteamReviewRow" /* 8811 */;
+import GameProfileSummaryDefault from "GameProfileSummary" /* 8821 */;
+import GameProfileLinkAccountDefault from "GameProfileLinkAccount" /* 8822 */;
+import GameProfileCommunityServerDefault from "GameProfileCommunityServer" /* 8825 */;
+import EmbedAnnouncementCardDefault from "EmbedAnnouncementCard" /* 8839 */;
+import HorizontalSpacingDefault from "HorizontalSpacing" /* 8849 */;
+import SpacerDefault from "Spacer" /* 12599 */;
+import GameProfileWebsiteButtonDefault from "GameProfileWebsiteButton" /* 12601 */;
+import GameProfileGameClaimCtaDefault from "GameProfileGameClaimCta" /* 12618 */;
+import GameProfileReportButtonDefault from "GameProfileReportButton" /* 12619 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -81,7 +81,7 @@ export default function GameProfileView(arg0) {
     obj2[0] = game;
     obj2[1] = websiteButtons;
     obj2[2] = trackAction;
-    obj1[1] = tmp5(tmp2(8787), obj2);
+    obj1[1] = tmp5(tmp2(8810), obj2);
     tmp5Result = tmp5(tmp7, obj1);
   }
   items2[1] = tmp5Result;
@@ -101,5 +101,5 @@ export default function GameProfileView(arg0) {
   items1[1] = closure_6(View, obj);
   obj[1] = items1;
   obj[1] = closure_6(View, obj);
-  return callback(onStoreLinksMeasured(5918).AnalyticsLocationProvider, obj);
+  return callback(onStoreLinksMeasured(5921).AnalyticsLocationProvider, obj);
 };

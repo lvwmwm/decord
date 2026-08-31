@@ -1,15 +1,15 @@
-// Module ID: 17312
-// Function ID: 17313
+// Module ID: 17345
+// Function ID: 17346
 // Name: useInviteAssignableRoles
-// Dependencies: [19, 1987, 1986, 4090, 1923, 676, 589, 4095, 2]
+// Dependencies: [19, 1986, 1985, 4091, 1922, 676, 589, 4096, 2]
 // Exports: default
 
-// Module 17312 (useInviteAssignableRoles)
+// Module 17345 (useInviteAssignableRoles)
 import closure_3 from "noop" /* 19 */;
-import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1987 */;
-import closure_5 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1986 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;

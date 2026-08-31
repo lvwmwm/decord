@@ -1,10 +1,10 @@
-// Module ID: 1375
-// Function ID: 1376
+// Module ID: 1371
+// Function ID: 1372
 // Name: getProtoFieldClass
 // Dependencies: [1342, 2]
 // Exports: createModifiedProto, getProtoFieldClass
 
-// Module 1375 (getProtoFieldClass)
+// Module 1371 (getProtoFieldClass)
 import set from "set" /* 2 */;
 import b64ToProto from "b64ToProto" /* 1342 */;
 

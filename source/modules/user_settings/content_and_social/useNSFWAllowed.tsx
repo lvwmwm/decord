@@ -1,12 +1,12 @@
-// Module ID: 8099
-// Function ID: 8100
+// Module ID: 8121
+// Function ID: 8122
 // Name: useNSFWAllowed
-// Dependencies: [1923, 589, 2]
+// Dependencies: [1922, 589, 2]
 // Exports: useNSFWAllowed
 
-// Module 8099 (useNSFWAllowed)
+// Module 8121 (useNSFWAllowed)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "mergeGuildAvatar" /* 1923 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/useNSFWAllowed.tsx");

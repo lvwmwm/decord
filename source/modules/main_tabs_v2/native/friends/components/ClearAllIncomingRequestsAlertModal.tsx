@@ -1,13 +1,13 @@
-// Module ID: 16291
-// Function ID: 16292
+// Module ID: 16325
+// Function ID: 16326
 // Name: handleConfirm
-// Dependencies: [5, 19, 21, 8998, 4828, 1236, 4828, 2]
+// Dependencies: [5, 19, 21, 9021, 4831, 1236, 4831, 2]
 // Exports: default
 
-// Module 16291 (handleConfirm)
+// Module 16325 (handleConfirm)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4828 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4831 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -36,7 +36,7 @@ function _handleConfirm() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -68,7 +68,7 @@ function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c0 = tmp;

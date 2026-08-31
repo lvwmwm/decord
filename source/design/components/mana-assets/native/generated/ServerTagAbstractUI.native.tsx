@@ -1,14 +1,14 @@
-// Module ID: 6948
-// Function ID: 6949
+// Module ID: 6965
+// Function ID: 6966
 // Name: ServerTagAbstractUI
-// Dependencies: [21, 5458, 6949, 2]
+// Dependencies: [21, 5461, 6966, 2]
 // Exports: ServerTagAbstractUI
 
-// Module 6948 (ServerTagAbstractUI)
+// Module 6965 (ServerTagAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6949 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6966 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerTagAbstractUI.native.tsx");

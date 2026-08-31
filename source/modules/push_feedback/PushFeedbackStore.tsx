@@ -1,13 +1,13 @@
-// Module ID: 10999
-// Function ID: 11000
+// Module ID: 11024
+// Function ID: 11025
 // Name: initialize
-// Dependencies: [6020, 589, 709, 2]
+// Dependencies: [6023, 589, 709, 2]
 
-// Module 10999 (initialize)
+// Module 11024 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import str2 from "str2" /* 6020 */;
+import str2 from "str2" /* 6023 */;
 
 const NotificationTypes = str2.NotificationTypes;
 let c1 = null;

@@ -1,12 +1,12 @@
-// Module ID: 16473
-// Function ID: 16474
+// Module ID: 16507
+// Function ID: 16508
 // Name: useLaunchPadGesture
-// Dependencies: [19, 11002, 4300, 1629, 5617, 500, 11496, 10929, 4186, 4414, 2]
+// Dependencies: [19, 11027, 4302, 1628, 5620, 500, 11572, 10953, 4187, 4416, 2]
 // Exports: default
 
-// Module 16473 (useLaunchPadGesture)
+// Module 16507 (useLaunchPadGesture)
 import closure_3 from "noop" /* 19 */;
-import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11002 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11027 */;
 
 const require = arg1;
 ({ LAUNCH_PAD_EDGE_GESTURE_AFFORDANCE: c4, LAUNCH_PAD_END_TRANSLATION_THRESHOLD: c5, LAUNCH_PAD_END_VELOCITY_THRESHOLD: closure_6, LAUNCH_PAD_PULL_TAB_HEIGHT: error, LAUNCH_PAD_PULL_TAB_HIT_SLOP: closure_8, LAUNCH_PAD_PULL_TAB_SCALE_FACTOR: c9, LAUNCH_PAD_PULL_TAB_WIDTH: c10, LaunchPadTypes: unpackModuleId } = LAUNCH_PAD_SPRING_CONFIG);

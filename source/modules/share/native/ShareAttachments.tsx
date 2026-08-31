@@ -1,17 +1,17 @@
-// Module ID: 13575
-// Function ID: 13576
+// Module ID: 13609
+// Function ID: 13610
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 4186, 4905, 1297, 4446, 712, 4447, 4294, 1236, 10216, 5047, 2]
+// Dependencies: [19, 17, 21, 4187, 4908, 1297, 4448, 712, 4449, 4296, 1236, 10240, 5050, 2]
 // Exports: default
 
-// Module 13575 (ShareAttachments)
+// Module 13609 (ShareAttachments)
 import ThemesDefault from "Themes" /* 712 */;
-import LinearGradientDefault from "LinearGradient" /* 4905 */;
+import LinearGradientDefault from "LinearGradient" /* 4908 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import importDefaultResult from "module_4186" /* 4186 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import importDefaultResult from "module_4187" /* 4187 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);

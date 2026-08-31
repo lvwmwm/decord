@@ -1,9 +1,9 @@
-// Module ID: 1384
-// Function ID: 1385
+// Module ID: 1380
+// Function ID: 1381
 // Name: handleUpdateUser
 // Dependencies: [589, 709, 2]
 
-// Module 1384 (handleUpdateUser)
+// Module 1380 (handleUpdateUser)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

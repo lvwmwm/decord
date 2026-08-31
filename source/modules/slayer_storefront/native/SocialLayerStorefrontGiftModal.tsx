@@ -1,12 +1,12 @@
-// Module ID: 10534
-// Function ID: 10535
+// Module ID: 10558
+// Function ID: 10559
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 4495, 676, 21, 589, 5918, 5938, 500, 8166, 4910, 698, 10510, 4121, 10535, 1236, 10532, 10516, 10536, 10675, 10676, 2]
+// Dependencies: [19, 4497, 676, 21, 589, 5921, 5941, 500, 8188, 4913, 698, 10534, 4122, 10559, 1236, 10556, 10540, 10560, 10699, 10700, 2]
 // Exports: default
 
-// Module 10534 (SocialLayerStorefrontGiftModal)
+// Module 10558 (SocialLayerStorefrontGiftModal)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "addSku" /* 4495 */;
+import closure_3 from "addSku" /* 4497 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

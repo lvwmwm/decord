@@ -1,9 +1,9 @@
-// Module ID: 7338
-// Function ID: 7339
+// Module ID: 7359
+// Function ID: 7360
 // Name: actions
 // Dependencies: [2]
 
-// Module 7338 (actions)
+// Module 7359 (actions)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_database/system/AppDatabaseManager.Entry.tsx");

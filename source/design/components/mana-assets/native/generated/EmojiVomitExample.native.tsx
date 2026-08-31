@@ -1,14 +1,14 @@
-// Module ID: 6468
-// Function ID: 6469
+// Module ID: 6481
+// Function ID: 6482
 // Name: EmojiVomitExample
-// Dependencies: [21, 5458, 6469, 2]
+// Dependencies: [21, 5461, 6482, 2]
 // Exports: EmojiVomitExample
 
-// Module 6468 (EmojiVomitExample)
+// Module 6481 (EmojiVomitExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6469 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6482 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiVomitExample.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 4683
-// Function ID: 4684
+// Module ID: 4685
+// Function ID: 4686
 // Name: SURVEY_ACTION_SAMPLE_PERCENTS
 // Dependencies: [2]
 
-// Module 4683 (SURVEY_ACTION_SAMPLE_PERCENTS)
+// Module 4685 (SURVEY_ACTION_SAMPLE_PERCENTS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SurveyActionSamplePercents.tsx");

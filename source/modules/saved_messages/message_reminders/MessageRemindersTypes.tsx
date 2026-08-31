@@ -1,12 +1,12 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11258
+// Function ID: 11259
 // Name: items
-// Dependencies: [4044, 1236, 2]
+// Dependencies: [4045, 1236, 2]
 
-// Module 11229 (items)
+// Module 11258 (items)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 4044 */;
+import hooksDefault from "hooks" /* 4045 */;
 
 const items = [
   {
@@ -71,10 +71,10 @@ const items = [
       } else {
         num3 = 8;
         if (1 === dayResult) {
-          const obj2 = tmp(4044)();
-          const startOfResult = tmp(4044)().startOf("day");
+          const obj2 = tmp(4045)();
+          const startOfResult = tmp(4045)().startOf("day");
           num3 = 8;
-          const addResult = tmp(4044)().startOf("day").add(9, "hours");
+          const addResult = tmp(4045)().startOf("day").add(9, "hours");
         }
       }
       const obj = hooksDefault();

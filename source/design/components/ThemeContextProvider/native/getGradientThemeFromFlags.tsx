@@ -1,12 +1,12 @@
-// Module ID: 4172
-// Function ID: 4173
+// Module ID: 4173
+// Function ID: 4174
 // Name: getGradientThemeFromFlags
-// Dependencies: [4173, 2]
+// Dependencies: [4174, 2]
 // Exports: getGradientThemeFromFlags
 
-// Module 4172 (getGradientThemeFromFlags)
+// Module 4173 (getGradientThemeFromFlags)
 import set from "set" /* 2 */;
-import ManaContext from "ManaContext" /* 4173 */;
+import ManaContext from "ManaContext" /* 4174 */;
 
 const result = set.fileFinishedImporting("design/components/ThemeContextProvider/native/getGradientThemeFromFlags.tsx");
 

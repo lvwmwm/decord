@@ -1,12 +1,12 @@
-// Module ID: 8786
-// Function ID: 8787
+// Module ID: 8808
+// Function ID: 8809
 // Name: MEDIA_ITEM_MAX_WIDTH
-// Dependencies: [1469, 4721, 4480, 2]
+// Dependencies: [1465, 4723, 4482, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 8786 (MEDIA_ITEM_MAX_WIDTH)
+// Module 8808 (MEDIA_ITEM_MAX_WIDTH)
 import set from "set" /* 2 */;
-import handleImageLoad from "handleImageLoad" /* 1469 */;
+import handleImageLoad from "handleImageLoad" /* 1465 */;
 
 let c2 = 366;
 let closure_3 = { width: 1920, height: 1080 };
@@ -35,9 +35,9 @@ export const buildMediaEntries = function buildMediaEntries(game) {
     }
     items = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(trailers.map((application_id) => {
-      const obj = { type: "trailer", originalUrl: callback(4721).getAssetURL(application_id.application_id, application_id.id, styles.width, "mp4"), previewUrl: null };
-      const obj2 = callback(4721);
-      obj[2] = callback(4721).getAssetURL(application_id.application_id, application_id.id, closure_2, "webp");
+      const obj = { type: "trailer", originalUrl: callback(4723).getAssetURL(application_id.application_id, application_id.id, styles.width, "mp4"), previewUrl: null };
+      const obj2 = callback(4723);
+      obj[2] = callback(4723).getAssetURL(application_id.application_id, application_id.id, closure_2, "webp");
       return obj;
     }), 0);
     let screenshotUrls = game.screenshotUrls;
@@ -47,7 +47,7 @@ export const buildMediaEntries = function buildMediaEntries(game) {
     arraySpreadResult = HermesBuiltin.arraySpread(screenshotUrls.map((originalUrl) => {
       let obj = { type: "image", originalUrl, previewUrl: null };
       obj = { size: closure_2, keepAspectRatio: true };
-      obj[2] = callback(4480).getSizedImageAssetURL(originalUrl, obj);
+      obj[2] = callback(4482).getSizedImageAssetURL(originalUrl, obj);
       return obj;
     }), arraySpreadResult);
   }

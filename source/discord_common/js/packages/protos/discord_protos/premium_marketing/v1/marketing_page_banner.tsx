@@ -1,13 +1,13 @@
-// Module ID: 8403
-// Function ID: 8404
+// Module ID: 8425
+// Function ID: 8426
 // Name: create
-// Dependencies: [32, 1307, 8401, 8400, 8399, 2]
+// Dependencies: [32, 1307, 8423, 8422, 8421, 2]
 
-// Module 8403 (create)
+// Module 8425 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create from "create" /* 8399 */;
-import create2 from "create" /* 8400 */;
-import create3 from "create" /* 8401 */;
+import create from "create" /* 8421 */;
+import create2 from "create" /* 8422 */;
+import create3 from "create" /* 8423 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -25,7 +25,7 @@ class MarketingPageBanner$Type extends MessageType {
       name: "button",
       kind: "message",
       T() {
-            return callback(8401).CTAButton;
+            return callback(8423).CTAButton;
           }
     };
     items[5] = {
@@ -33,7 +33,7 @@ class MarketingPageBanner$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(8400).HelpArticle;
+            return callback(8422).HelpArticle;
           }
     };
     items[6] = {
@@ -41,7 +41,7 @@ class MarketingPageBanner$Type extends MessageType {
       name: "header_localized",
       kind: "message",
       T() {
-            return callback(8399).LocalizedString;
+            return callback(8421).LocalizedString;
           }
     };
     obj = { no: 8, name: "body_localized", kind: "message", T: null };
@@ -233,7 +233,7 @@ let items = [
     name: "button",
     kind: "message",
     T() {
-      return callback(8401).CTAButton;
+      return callback(8423).CTAButton;
     }
   },
   {
@@ -241,7 +241,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(8400).HelpArticle;
+      return callback(8422).HelpArticle;
     }
   },
   {
@@ -249,7 +249,7 @@ let items = [
     name: "header_localized",
     kind: "message",
     T() {
-      return callback(8399).LocalizedString;
+      return callback(8421).LocalizedString;
     }
   },
 ,

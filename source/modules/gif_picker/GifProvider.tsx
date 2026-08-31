@@ -1,10 +1,10 @@
-// Module ID: 10296
-// Function ID: 10297
+// Module ID: 10320
+// Function ID: 10321
 // Name: GIF_PROVIDER
 // Dependencies: [1236, 2]
 // Exports: getSearchPlaceholder
 
-// Module 10296 (GIF_PROVIDER)
+// Module 10320 (GIF_PROVIDER)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

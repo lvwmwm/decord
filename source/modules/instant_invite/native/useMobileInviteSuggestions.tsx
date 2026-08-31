@@ -1,17 +1,17 @@
-// Module ID: 9859
-// Function ID: 9860
+// Module ID: 9882
+// Function ID: 9883
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 1993, 1910, 9860, 4521, 7428, 676, 505, 589, 698, 9875, 9876, 2]
+// Dependencies: [32, 19, 1992, 1909, 9883, 4523, 7449, 676, 505, 589, 698, 9898, 9899, 2]
 // Exports: default
 
-// Module 9859 (useMobileInviteSuggestions)
+// Module 9882 (useMobileInviteSuggestions)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "trackCommunicationDisabled" /* 1993 */;
-import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "_computeRows" /* 9860 */;
-import closure_8 from "getVoiceStatesForGuild" /* 4521 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 7428 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
+import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import closure_7 from "_computeRows" /* 9883 */;
+import closure_8 from "getVoiceStatesForGuild" /* 4523 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7449 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { NOOP_NULL } from "sum" /* 505 */;
 
@@ -60,7 +60,7 @@ export default function useMobileInviteSuggestions(arg0, arg1, arg2, arg3) {
       isGuildVoiceResult = set.isGuildVoice();
     }
     if (isGuildVoiceResult) {
-      let obj = lib(9875);
+      let obj = lib(9898);
       obj = { location: "useMobileInviteSuggestions", guildId: null };
       obj[1] = set.guild_id;
       isGuildVoiceResult = obj.getGuildMembersInMobileVCInvitesExperiment(obj);
@@ -84,8 +84,8 @@ export default function useMobileInviteSuggestions(arg0, arg1, arg2, arg3) {
       obj[1] = isFetchingRows.getGuild(set.guild_id);
       obj[2] = set;
       obj[3] = dependencyMap;
-      const inviteSuggestions = lib(9876).loadInviteSuggestions(obj);
-      const obj3 = lib(9876);
+      const inviteSuggestions = lib(9899).loadInviteSuggestions(obj);
+      const obj3 = lib(9899);
       inviteSuggestions.catch(closure_1_11).finally(() => {
         callback(false);
       });

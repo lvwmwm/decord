@@ -1,16 +1,16 @@
-// Module ID: 5408
-// Function ID: 5409
+// Module ID: 5411
+// Function ID: 5412
 // Name: handleStickersStoreUpdate
-// Dependencies: [1340, 5409, 685, 687, 4532, 12, 589, 709, 2]
+// Dependencies: [1340, 5412, 685, 687, 4534, 12, 589, 709, 2]
 
-// Module 5408 (handleStickersStoreUpdate)
+// Module 5411 (handleStickersStoreUpdate)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4532 */;
+import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4534 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_3 from "loadSavedGuildStickers" /* 5409 */;
+import closure_3 from "loadSavedGuildStickers" /* 5412 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
 
 function handleStickersStoreUpdate() {

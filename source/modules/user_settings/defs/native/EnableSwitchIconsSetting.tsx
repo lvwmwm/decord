@@ -1,19 +1,18 @@
-// Module ID: 14943
-// Function ID: 14944
+// Module ID: 14976
+// Function ID: 14977
 // Name: useEnableSwitchIconsSettingValue
-// Dependencies: [4438, 7830, 589, 1367, 11006, 1236, 14025, 2]
+// Dependencies: [4440, 7852, 589, 11031, 1236, 14059, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14943 (useEnableSwitchIconsSettingValue)
+// Module 14976 (useEnableSwitchIconsSettingValue)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import createToggle from "createToggle" /* 11006 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 function useEnableSwitchIconsSettingValue() {
-  const items = [closure_3];
+  const items = [closure_2];
   return initialize.useStateFromStores(items, () => isSwitchIconsEnabled.isSwitchIconsEnabled);
 }
 createToggle = {
@@ -24,9 +23,6 @@ createToggle = {
   parent: require("MobileUserSettings").MobileUserSettings.ACCESSIBILITY,
   useValue: useEnableSwitchIconsSettingValue,
   onValueChange: require("setFontSize").setSwitchIconsEnabled,
-  usePredicate: function useShowSwitchIconsSetting() {
-    return useIsMobileVisualRefreshExperimentEnabledDefault("SettingsAccessibilityScreen");
-  },
   hasIcon: true
 };
 createToggle = createToggle.createToggle(createToggle);

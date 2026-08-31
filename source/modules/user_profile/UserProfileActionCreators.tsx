@@ -1,19 +1,19 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8045
+// Function ID: 8046
 // Name: _saveProfileChanges
-// Dependencies: [5, 1923, 676, 1925, 1231, 1363, 1236, 698, 8024, 7374, 709, 7704, 530, 5078, 4344, 2]
+// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8046, 7395, 709, 7725, 530, 5081, 4346, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8023 (_saveProfileChanges)
+// Module 8045 (_saveProfileChanges)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1363 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 require = arg1;
 function _saveProfileChanges() {
@@ -37,7 +37,7 @@ function _saveProfileChanges() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -107,7 +107,7 @@ function _saveProfileChanges() {
                 const obj15 = callback2(body[13]);
               } else {
                 c9 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
               tmp71 = body;
             }

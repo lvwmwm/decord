@@ -1,11 +1,11 @@
-// Module ID: 10211
-// Function ID: 10212
+// Module ID: 10235
+// Function ID: 10236
 // Name: getPushNotificationLogs
-// Dependencies: [1218, 9598, 2]
+// Dependencies: [1218, 9620, 2]
 // Exports: default
 
-// Module 10211 (getPushNotificationLogs)
-import enforcingDefault from "enforcing" /* 9598 */;
+// Module 10235 (getPushNotificationLogs)
+import enforcingDefault from "enforcing" /* 9620 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 
 const result = require("set").fileFinishedImporting("modules/debug/getPushNotificationLogs.android.tsx");

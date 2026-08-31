@@ -1,14 +1,14 @@
-// Module ID: 6918
-// Function ID: 6919
+// Module ID: 6935
+// Function ID: 6936
 // Name: ServerBannerTheCrewExample
-// Dependencies: [21, 5458, 6919, 2]
+// Dependencies: [21, 5461, 6936, 2]
 // Exports: ServerBannerTheCrewExample
 
-// Module 6918 (ServerBannerTheCrewExample)
+// Module 6935 (ServerBannerTheCrewExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6919 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6936 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerBannerTheCrewExample.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6355
-// Function ID: 6356
+// Module ID: 6362
+// Function ID: 6363
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6355 (metadata)
+// Module 6362 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CaterpillarIllocon-2x.png.js");

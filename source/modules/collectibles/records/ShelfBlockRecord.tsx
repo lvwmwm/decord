@@ -1,11 +1,11 @@
-// Module ID: 7274
-// Function ID: 7275
+// Module ID: 7295
+// Function ID: 7296
 // Name: fromServer
-// Dependencies: [7265, 2]
+// Dependencies: [7286, 2]
 
-// Module 7274 (fromServer)
+// Module 7295 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7265 */;
+import ShopBlockType from "ShopBlockType" /* 7286 */;
 
 let prototype;
 prototype = function ShelfBlockRecord(show_button) {

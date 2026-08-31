@@ -1,13 +1,13 @@
-// Module ID: 10905
-// Function ID: 10906
+// Module ID: 10929
+// Function ID: 10930
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 4099, 1923, 21, 1629, 5955, 4413, 5586, 7640, 5570, 10906, 5954, 5589, 7639, 4946, 4640, 2]
+// Dependencies: [19, 4100, 1922, 21, 1628, 5958, 4415, 5589, 7661, 5573, 10930, 5957, 5592, 7660, 4949, 4642, 2]
 // Exports: default
 
-// Module 10905 (ChannelPickerActionSheet)
+// Module 10929 (ChannelPickerActionSheet)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "markAllUserIdListsStale" /* 4099 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import closure_3 from "markAllUserIdListsStale" /* 4100 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

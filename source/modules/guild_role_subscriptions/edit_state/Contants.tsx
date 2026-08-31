@@ -1,12 +1,12 @@
-// Module ID: 14759
-// Function ID: 14760
+// Module ID: 14793
+// Function ID: 14794
 // Name: result
-// Dependencies: [676, 1988, 2]
+// Dependencies: [676, 1987, 2]
 
-// Module 14759 (result)
+// Module 14793 (result)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import fromServerArray from "fromServerArray" /* 1988 */;
+import fromServerArray from "fromServerArray" /* 1987 */;
 
 const result = fromServerArray.constructGuildRoleInPlace({ id: "0", guildId: "0", name: "", mentionable: false, managed: false, position: 0, hoist: false, permissions: ME.Permissions.SEND_MESSAGES, color: 0, colors: { primary_color: 0, secondary_color: null, tertiary_color: null }, colorString: "0", colorStrings: { primaryColor: "0", secondaryColor: null, tertiaryColor: null }, icon: null, unicodeEmoji: null, flags: 0, description: null, tags: {}, version: 0 });
 const obj = { id: "0", guildId: "0", name: "", mentionable: false, managed: false, position: 0, hoist: false, permissions: ME.Permissions.SEND_MESSAGES, color: 0, colors: { primary_color: 0, secondary_color: null, tertiary_color: null }, colorString: "0", colorStrings: { primaryColor: "0", secondaryColor: null, tertiaryColor: null }, icon: null, unicodeEmoji: null, flags: 0, description: null, tags: {}, version: 0 };

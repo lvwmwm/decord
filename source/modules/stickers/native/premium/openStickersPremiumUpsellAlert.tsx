@@ -1,10 +1,10 @@
-// Module ID: 10336
-// Function ID: 10337
+// Module ID: 10360
+// Function ID: 10361
 // Name: _openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 676, 21, 698, 6069, 4803, 4823, 10337, 2010, 2]
+// Dependencies: [5, 19, 676, 21, 698, 6072, 4805, 4826, 10361, 2009, 2]
 // Exports: default
 
-// Module 10336 (_openStickersPremiumUpsellAlert)
+// Module 10360 (_openStickersPremiumUpsellAlert)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
@@ -29,7 +29,7 @@ function _openStickersPremiumUpsellAlert() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -79,7 +79,7 @@ function _openStickersPremiumUpsellAlert() {
             };
             obj.openLazy(obj4);
             constants = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           constants = tmp;

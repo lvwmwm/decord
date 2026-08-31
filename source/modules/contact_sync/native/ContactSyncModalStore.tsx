@@ -1,13 +1,13 @@
-// Module ID: 12148
-// Function ID: 12149
+// Module ID: 12182
+// Function ID: 12183
 // Name: ContactSyncModes
-// Dependencies: [5190, 1923, 12149, 676, 644, 705, 2]
+// Dependencies: [5193, 1922, 12183, 676, 644, 705, 2]
 // Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions, useIsOnboarding
 
-// Module 12148 (ContactSyncModes)
-import closure_2 from "set" /* 5190 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 12149 */;
+// Module 12182 (ContactSyncModes)
+import closure_2 from "set" /* 5193 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12183 */;
 import { PlatformTypes } from "ME" /* 676 */;
 import keys from "keys" /* 644 */;
 

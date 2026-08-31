@@ -1,12 +1,12 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15428
+// Function ID: 15429
 // Name: route
-// Dependencies: [19, 676, 14394, 14397, 11006, 1236, 9811, 15396, 2]
+// Dependencies: [19, 676, 14428, 14431, 11031, 1236, 9834, 15429, 2]
 
-// Module 15395 (route)
+// Module 15428 (route)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_2 from "noop" /* 19 */;
-import createToggle from "createToggle" /* 11006 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 createToggle = {
@@ -19,9 +19,9 @@ createToggle = {
   screen: createToggle,
   usePreNavigationAction() {
     return React.useCallback(() => {
-      const consents = callback(14394).fetchConsents();
-      const obj = callback(14394);
-      const harvestStatus = callback(14397).fetchHarvestStatus();
+      const consents = callback(14428).fetchConsents();
+      const obj = callback(14428);
+      const harvestStatus = callback(14431).fetchHarvestStatus();
       return true;
     }, []);
   }
@@ -29,7 +29,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.DATA_AND_PRIVACY,
   getComponent() {
-    return require(15396) /* DataAndPrivacySettings */.default;
+    return require(15429) /* DataAndPrivacySettings */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

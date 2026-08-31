@@ -1,9 +1,9 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 15926
+// Function ID: 15927
 // Name: YOU_SCREEN_ID
 // Dependencies: [1297, 712, 2]
 
-// Module 15892 (YOU_SCREEN_ID)
+// Module 15926 (YOU_SCREEN_ID)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;

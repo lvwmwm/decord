@@ -1,14 +1,14 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16032
+// Function ID: 16033
 // Name: MedalIcon
-// Dependencies: [19, 21, 712, 4165, 15999, 2]
+// Dependencies: [19, 21, 712, 4166, 16033, 2]
 // Exports: MedalIcon
 
-// Module 15998 (MedalIcon)
+// Module 16032 (MedalIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 15999 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 16033 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

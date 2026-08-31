@@ -1,19 +1,19 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 14805
+// Function ID: 14806
 // Name: BenefitRow
-// Dependencies: [19, 17, 1391, 21, 4446, 4103, 14769, 1297, 4442, 589, 4640, 1236, 4946, 2]
+// Dependencies: [19, 17, 1387, 21, 4448, 4104, 14803, 1297, 4444, 589, 4642, 1236, 4949, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 14771 (BenefitRow)
+// Module 14805 (BenefitRow)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 1297 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4103 */;
-import Text from "Text" /* 4442 */;
-import EmojiIconDefault from "EmojiIcon" /* 14769 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4104 */;
+import Text from "Text" /* 4444 */;
+import EmojiIconDefault from "EmojiIcon" /* 14803 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function BenefitRow(description) {
@@ -52,21 +52,21 @@ export const ChannelBenefitRow = function ChannelBenefitRow(benefit) {
   obj = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = benefit(1236).intl;
   obj[2] = "[" + intl.string(benefit(1236).t.bz1PZX) + "]";
-  let tmp8 = callback(benefit(4442).Text, obj);
+  let tmp8 = callback(benefit(4444).Text, obj);
   if (null != stateFromStores) {
     obj = { style: null, children: null };
     obj[0] = tmp.channelTitle;
     obj1 = { style: null, size: null, source: null };
     obj1[0] = tmp.channelIcon;
     obj1[1] = tmp2(1297).Icon.Sizes.CUSTOM;
-    obj1[2] = tmp2(4946).getChannelIcon(stateFromStores);
+    obj1[2] = tmp2(4949).getChannelIcon(stateFromStores);
     const items2 = [tmp7(tmp2(1297).Icon, obj1), ];
     const obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
     obj2[2] = tmp6;
-    items2[1] = tmp7(tmp2(4442).Text, obj2);
+    items2[1] = tmp7(tmp2(4444).Text, obj2);
     obj[1] = items2;
     tmp8 = callback2(View, obj);
-    const tmp2Result = tmp2(4946);
+    const tmp2Result = tmp2(4949);
   }
   if (null != benefit.emoji_id) {
     let str = benefit.emoji_id;

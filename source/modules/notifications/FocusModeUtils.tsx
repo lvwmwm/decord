@@ -1,15 +1,15 @@
-// Module ID: 10111
-// Function ID: 10112
+// Module ID: 10134
+// Function ID: 10135
 // Name: useFocusModeEnabled
-// Dependencies: [5188, 4102, 676, 4135, 1374, 1337, 698, 4822, 1236, 10112, 2]
+// Dependencies: [5191, 4103, 676, 4136, 1370, 1337, 698, 4825, 1236, 10135, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 10111 (useFocusModeEnabled)
+// Module 10134 (useFocusModeEnabled)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import setDefault from "set" /* 4822 */;
-import closure_3 from "filterPlayingActivities" /* 5188 */;
-import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags" /* 4102 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import setDefault from "set" /* 4825 */;
+import closure_3 from "filterPlayingActivities" /* 5191 */;
+import { NotificationSettingsUpdateType as closure_4 } from "AccountNotificationFlags" /* 4103 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -58,9 +58,9 @@ export const getFocusModeEnabled = function getFocusModeEnabled() {
 export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
   const _require = quiet_mode_enabled;
   importDefault = arg1;
-  const FocusMode = _require(4135).FocusMode;
+  const FocusMode = _require(4136).FocusMode;
   const setting = FocusMode.getSetting();
-  const PreloadedUserSettingsActionCreators = _require(1374).PreloadedUserSettingsActionCreators;
+  const PreloadedUserSettingsActionCreators = _require(1370).PreloadedUserSettingsActionCreators;
   PreloadedUserSettingsActionCreators.updateAsync("notifications", (arg0) => {
     const BoolValue = quiet_mode_enabled(closure_1_2[5]).BoolValue;
     arg0.quietMode = BoolValue.create({ value: quiet_mode_enabled });
@@ -74,7 +74,7 @@ export const setFocusMode = function setFocusMode(quiet_mode_enabled, arg1) {
       }
     }
     arg0.focusModeExpiresAtMs = str;
-  }, _require(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
+  }, _require(1370).UserSettingsDelay.INFREQUENT_USER_ACTION);
   let obj = expandEventPropertiesDefault;
   obj = { update_type: constants.ACCOUNT, quiet_mode_enabled, quiet_mode_enabled_old: setting };
   obj.track(constants2.NOTIFICATION_SETTINGS_UPDATED, obj);

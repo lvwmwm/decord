@@ -1,7 +1,7 @@
 // Module ID: 1236
 // Function ID: 1237
 // Name: getSystemLocale
-// Dependencies: [19, 676, 21, 17, 500, 666, 1237, 1274, 1297, 13760, 2, 13761, 13764]
+// Dependencies: [19, 676, 21, 17, 500, 666, 1237, 1274, 1297, 13794, 2, 13795, 13798]
 // Exports: getSystemLocale, useSyncMessages
 
 // Module 1236 (getSystemLocale)
@@ -10,8 +10,8 @@ import noopAll from "noop" /* 19 */;
 import enforcing from "enforcing" /* 666 */;
 import getAvailableLocales2 from "getAvailableLocales" /* 1237 */;
 import Button from "Button" /* 1297 */;
-import IntlLink from "IntlLink" /* 13760 */;
-import messagesProxyDefault from "messagesProxy" /* 13764 */;
+import IntlLink from "IntlLink" /* 13794 */;
+import messagesProxyDefault from "messagesProxy" /* 13798 */;
 import { Fonts } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 500 */;

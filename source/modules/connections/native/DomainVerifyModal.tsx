@@ -1,23 +1,23 @@
-// Module ID: 9289
-// Function ID: 9290
+// Module ID: 9311
+// Function ID: 9312
 // Name: DomainScreen
-// Dependencies: [32, 19, 17, 676, 21, 4446, 712, 1500, 530, 5518, 4442, 1236, 7651, 9290, 4893, 4689, 5460, 5973, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4448, 712, 1499, 530, 5521, 4444, 1236, 7672, 9312, 4896, 4691, 5463, 5976, 2]
 // Exports: default
 
-// Module 9289 (DomainScreen)
+// Module 9311 (DomainScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useNavigation from "useNavigation" /* 1500 */;
-import Text from "Text" /* 4442 */;
-import Button from "Button" /* 4893 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5518 */;
-import EXAMPLE_DOMAIN from "EXAMPLE_DOMAIN" /* 9290 */;
+import useNavigation from "useNavigation" /* 1499 */;
+import Text from "Text" /* 4444 */;
+import Button from "Button" /* 4896 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5521 */;
+import EXAMPLE_DOMAIN from "EXAMPLE_DOMAIN" /* 9312 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function DomainScreen(onClose) {
@@ -260,7 +260,7 @@ function HTTPProofScreen(children) {
     obj6 = { variant: "text-md/normal", color: "text-feedback-critical", style: null, children: null };
     obj6[2] = tmp.error;
     obj6[3] = tmp5;
-    tmp9Result = tmp9(tmp2(4442).Text, obj6);
+    tmp9Result = tmp9(tmp2(4444).Text, obj6);
   }
   items[2] = tmp9Result;
   const obj7 = { style: tmp.button, children: null };
@@ -349,7 +349,7 @@ export default function DomainVerifyModal(arg0) {
     obj = { headerTitle: null, headerLeft: null, render: null };
     const intl = onClose(1236).intl;
     obj[0] = intl.string(onClose(1236).t["7lo8+e"]);
-    let obj2 = onClose(5460);
+    let obj2 = onClose(5463);
     obj[1] = obj2.getHeaderBackButton(onClose);
     obj[2] = function render() {
       return closure_1_8(closure_1_12, { onClose });
@@ -358,7 +358,7 @@ export default function DomainVerifyModal(arg0) {
     obj = { headerTitle: null, headerLeft: null, render: null };
     const intl2 = onClose(1236).intl;
     obj[0] = intl2.string(onClose(1236).t["7lo8+e"]);
-    obj[1] = onClose(5460).getHeaderBackButton(onClose);
+    obj[1] = onClose(5463).getHeaderBackButton(onClose);
     obj[2] = function render(domain) {
       return closure_1_8(closure_1_13, { domain: domain.domain, proof: domain.proof, onClose });
     };
@@ -366,8 +366,8 @@ export default function DomainVerifyModal(arg0) {
     obj1 = { headerTitle: null, headerLeft: null, render: null };
     const intl3 = onClose(1236).intl;
     obj1[0] = intl3.string(onClose(1236).t["7lo8+e"]);
-    const obj5 = onClose(5460);
-    obj1[1] = onClose(5460).getHeaderBackButton(onClose);
+    const obj5 = onClose(5463);
+    obj1[1] = onClose(5463).getHeaderBackButton(onClose);
     obj1[2] = function render(domain) {
       return closure_1_8(closure_1_14, { domain: domain.domain, proof: domain.proof, onClose });
     };
@@ -377,6 +377,6 @@ export default function DomainVerifyModal(arg0) {
     obj2[1] = constants.DOMAIN;
     const intl4 = onClose(1236).intl;
     obj2[2] = intl4.string(onClose(1236).t["13/7kX"]);
-    return callback2(onClose(5973).Navigator, obj2);
+    return callback2(onClose(5976).Navigator, obj2);
   }
 };

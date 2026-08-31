@@ -1,9 +1,9 @@
-// Module ID: 11912
-// Function ID: 11913
+// Module ID: 11946
+// Function ID: 11947
 // Name: EventActionType
 // Dependencies: [2]
 
-// Module 11912 (EventActionType)
+// Module 11946 (EventActionType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/nuf/native/components/notification/NotificationPermissionConstants.tsx");

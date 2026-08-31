@@ -1,9 +1,9 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16358
+// Function ID: 16359
 // Name: ChannelSettingsAutoFocusElement
 // Dependencies: [2]
 
-// Module 16324 (ChannelSettingsAutoFocusElement)
+// Module 16358 (ChannelSettingsAutoFocusElement)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("components_native/channel_settings/ChannelSettingsConstants.tsx");

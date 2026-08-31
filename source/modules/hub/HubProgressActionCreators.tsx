@@ -1,12 +1,12 @@
-// Module ID: 9857
-// Function ID: 9858
+// Module ID: 9880
+// Function ID: 9881
 // Name: setHubProgressActionComplete
-// Dependencies: [1910, 9858, 676, 1374, 1403, 2]
+// Dependencies: [1909, 9881, 676, 1370, 1399, 2]
 // Exports: setHubProgressActionComplete, skipHubProgress
 
-// Module 9857 (setHubProgressActionComplete)
-import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9858 */;
+// Module 9880 (setHubProgressActionComplete)
+import closure_2 from "createGuildRecordFromRust" /* 1909 */;
+import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9881 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
@@ -22,7 +22,7 @@ export const setHubProgressActionComplete = function setHubProgressActionComplet
     }
     if (hasItem) {
       const items = [JOIN_GUILD];
-      const result = items(1374).updateUserGuildSettings(guildId, (hubProgress) => {
+      const result = items(1370).updateUserGuildSettings(guildId, (hubProgress) => {
         let flag = false;
         for (const item10008 of closure_0) {
           let tmp = item10008;
@@ -38,14 +38,14 @@ export const setHubProgressActionComplete = function setHubProgressActionComplet
           continue;
         }
         return flag;
-      }, items(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
-      const obj = items(1374);
+      }, items(1370).UserSettingsDelay.INFREQUENT_USER_ACTION);
+      const obj = items(1370);
     }
   }
 };
 export const skipHubProgress = function skipHubProgress(id) {
   const _require = HUB_PROGRESS_STEP_ORDER;
-  const result = _require(1374).updateUserGuildSettings(id, (hubProgress) => {
+  const result = _require(1370).updateUserGuildSettings(id, (hubProgress) => {
     let flag = false;
     for (const item10008 of closure_0) {
       let tmp = item10008;
@@ -61,5 +61,5 @@ export const skipHubProgress = function skipHubProgress(id) {
       continue;
     }
     return flag;
-  }, _require(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
+  }, _require(1370).UserSettingsDelay.INFREQUENT_USER_ACTION);
 };

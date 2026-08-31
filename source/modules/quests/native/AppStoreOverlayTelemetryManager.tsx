@@ -1,14 +1,14 @@
-// Module ID: 11027
-// Function ID: 11028
+// Module ID: 11060
+// Function ID: 11061
 // Name: handleAppStateUpdate
-// Dependencies: [676, 5451, 500, 691, 2]
+// Dependencies: [676, 5454, 500, 691, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 11027 (handleAppStateUpdate)
+// Module 11060 (handleAppStateUpdate)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import ME from "ME" /* 676 */;
-import initializeDefault from "initialize" /* 5451 */;
+import initializeDefault from "initialize" /* 5454 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let c3 = null;

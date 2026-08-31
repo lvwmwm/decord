@@ -1,14 +1,14 @@
-// Module ID: 6462
-// Function ID: 6463
+// Module ID: 6475
+// Function ID: 6476
 // Name: EmojiGGsExample
-// Dependencies: [21, 5458, 6463, 2]
+// Dependencies: [21, 5461, 6476, 2]
 // Exports: EmojiGGsExample
 
-// Module 6462 (EmojiGGsExample)
+// Module 6475 (EmojiGGsExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6463 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6476 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiGGsExample.native.tsx");

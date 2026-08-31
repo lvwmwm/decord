@@ -1,16 +1,16 @@
-// Module ID: 7947
-// Function ID: 7948
+// Module ID: 7969
+// Function ID: 7970
 // Name: cacheBustParam
-// Dependencies: [5, 4460, 676, 1981, 709, 4135, 530, 2]
+// Dependencies: [5, 4462, 676, 1980, 709, 4136, 530, 2]
 
-// Module 7947 (cacheBustParam)
+// Module 7969 (cacheBustParam)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleUserSettingsProtoStoreChange" /* 4460 */;
+import closure_4 from "handleUserSettingsProtoStoreChange" /* 4462 */;
 import { Endpoints } from "ME" /* 676 */;
-import { ChangelogPlatforms } from "CHANGELOG_MODAL_KEY" /* 1981 */;
+import { ChangelogPlatforms } from "CHANGELOG_MODAL_KEY" /* 1980 */;
 
 require = arg1;
 function cacheBustParam() {

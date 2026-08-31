@@ -1,13 +1,13 @@
-// Module ID: 14657
-// Function ID: 14658
+// Module ID: 14691
+// Function ID: 14692
 // Name: useWatchTaskPressHandler
-// Dependencies: [5, 19, 5352, 14633, 14654, 4413, 11024, 14658, 8938, 8939, 8943, 7393, 7420, 5355, 7410, 2]
+// Dependencies: [5, 19, 5355, 14667, 14688, 4415, 11049, 14692, 8961, 8962, 8966, 7414, 7441, 5358, 7431, 2]
 // Exports: useMobileActivityPressHandler, useWatchTaskPressHandler
 
-// Module 14657 (useWatchTaskPressHandler)
+// Module 14691 (useWatchTaskPressHandler)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5352 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5355 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/quests/native/QuestBottomSheet/QuestBottomSheetHooks.tsx");
@@ -117,7 +117,7 @@ export const useMobileActivityPressHandler = function useMobileActivityPressHand
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -150,14 +150,14 @@ export const useMobileActivityPressHandler = function useMobileActivityPressHand
           return obj2;
         } else {
           let captureAdUserAction = closure_1_0;
-          if (obj12.shouldMigrateToAdAnalyticsInterface(closure_1_0(8938).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_mobile_activity")) {
-            captureAdUserAction = captureAdUserAction(8939).captureAdUserAction;
+          if (obj12.shouldMigrateToAdAnalyticsInterface(closure_1_0(8961).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_bottom_sheet_mobile_activity")) {
+            captureAdUserAction = captureAdUserAction(8962).captureAdUserAction;
             let obj3 = { type: null, adCreativeType: null, adCreativeId: null, questContentCTA: null, surfaceId: null, sourceQuestContent: null, impressionId: null, questContentPosition: null };
-            obj3[0] = closure_1_0(8943).AdUserActionType.CLICK_INTERNAL;
-            obj3[1] = closure_1_0(7393).AdCreativeType.QUEST;
+            obj3[0] = closure_1_0(8966).AdUserActionType.CLICK_INTERNAL;
+            obj3[1] = closure_1_0(7414).AdCreativeType.QUEST;
             obj3[2] = closure_0;
-            obj3[3] = closure_1_0(7420).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY;
-            obj3[4] = closure_1_0(5355).QuestContent.QUEST_BOTTOM_SHEET;
+            obj3[3] = closure_1_0(7441).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY;
+            obj3[4] = closure_1_0(5358).QuestContent.QUEST_BOTTOM_SHEET;
             obj3[5] = c1;
             let id;
             if (closure_4 != null) {
@@ -170,14 +170,14 @@ export const useMobileActivityPressHandler = function useMobileActivityPressHand
             }
             obj3[7] = questContentPosition;
             captureAdUserAction(obj3);
-            const captureAdUserActionResult = captureAdUserAction(8939);
+            const captureAdUserActionResult = captureAdUserAction(8962);
             obj6 = closure_4;
             obj7 = closure_1_4;
           } else {
             const obj4 = { questId: null, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
             obj4[0] = closure_0;
-            obj4[1] = closure_1_0(5355).QuestContent.QUEST_BOTTOM_SHEET;
-            obj4[2] = closure_1_0(7420).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY;
+            obj4[1] = closure_1_0(5358).QuestContent.QUEST_BOTTOM_SHEET;
+            obj4[2] = closure_1_0(7441).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY;
             obj2 = closure_4;
             let questContentPosition1;
             if (closure_4 != null) {
@@ -191,11 +191,11 @@ export const useMobileActivityPressHandler = function useMobileActivityPressHand
             }
             obj4[4] = id1;
             obj4[5] = c1;
-            const result = captureAdUserAction(7410).trackQuestContentClicked(obj4);
-            const captureAdUserActionResult2 = captureAdUserAction(7410);
+            const result = captureAdUserAction(7431).trackQuestContentClicked(obj4);
+            const captureAdUserActionResult2 = captureAdUserAction(7431);
           }
           dependencyMap = 3;
-          obj12 = closure_1_0(8938);
+          obj12 = closure_1_0(8961);
         }
       } catch (tmp36) {
         dependencyMap = tmp;

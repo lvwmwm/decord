@@ -1,16 +1,16 @@
-// Module ID: 17018
-// Function ID: 17019
+// Module ID: 17051
+// Function ID: 17052
 // Name: updateVoiceSettings
-// Dependencies: [1218, 4518, 1391, 1982, 13417, 676, 709, 5451, 2]
+// Dependencies: [1218, 4520, 1387, 1981, 13451, 676, 709, 5454, 2]
 
-// Module 17018 (updateVoiceSettings)
+// Module 17051 (updateVoiceSettings)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 5451 */;
+import initializeDefault from "initialize" /* 5454 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "bitrate" /* 4518 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "handleConnectionOpen" /* 1982 */;
-import closure_6 from "mode" /* 13417 */;
+import closure_3 from "bitrate" /* 4520 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "handleConnectionOpen" /* 1981 */;
+import closure_6 from "mode" /* 13451 */;
 import { VideoQualityMode } from "ME" /* 676 */;
 
 function updateVoiceSettings() {

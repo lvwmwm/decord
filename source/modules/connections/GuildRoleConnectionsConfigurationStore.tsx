@@ -1,12 +1,12 @@
-// Module ID: 17126
-// Function ID: 17127
+// Module ID: 17159
+// Function ID: 17160
 // Name: map
-// Dependencies: [1910, 589, 709, 2]
+// Dependencies: [1909, 589, 709, 2]
 
-// Module 17126 (map)
+// Module 17159 (map)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "createGuildRecordFromRust" /* 1910 */;
+import closure_0 from "createGuildRecordFromRust" /* 1909 */;
 
 const map = new Map();
 const Store = initializeDefault.Store;

@@ -1,14 +1,14 @@
-// Module ID: 6438
-// Function ID: 6439
+// Module ID: 6449
+// Function ID: 6450
 // Name: DisplayNameLockeAbstractUI
-// Dependencies: [21, 5458, 6439, 2]
+// Dependencies: [21, 5461, 6450, 2]
 // Exports: DisplayNameLockeAbstractUI
 
-// Module 6438 (DisplayNameLockeAbstractUI)
+// Module 6449 (DisplayNameLockeAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6439 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6450 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameLockeAbstractUI.native.tsx");

@@ -1,28 +1,28 @@
-// Module ID: 16737
-// Function ID: 16738
+// Module ID: 16770
+// Function ID: 16771
 // Name: linkFromAppsFlyer
-// Dependencies: [32, 5, 16738, 16788, 17, 16808, 1998, 1982, 7104, 7153, 16809, 676, 9, 3, 17406, 7184, 17407, 11295, 589, 705, 1210, 17409, 13770, 500, 10, 17410, 9393, 709, 17411, 7167, 1208, 17412, 17413, 9596, 595, 698, 502, 1974, 8095, 2009, 1274, 17414, 2010, 8549, 17416, 13978, 7364, 17434, 17435, 17436, 9970, 7180, 7168, 4302, 1302, 4438, 1367, 14026, 16468, 16469, 707, 13767, 7152, 14031, 14044, 7328, 17437, 5617, 7154, 7168, 2]
+// Dependencies: [32, 5, 16771, 16821, 17, 16841, 1997, 1981, 7125, 7174, 16842, 676, 9, 3, 17439, 7205, 17440, 11324, 589, 705, 1210, 17442, 13804, 500, 10, 17443, 9415, 709, 17444, 7188, 1208, 17445, 17446, 9618, 595, 698, 502, 1973, 8117, 2008, 1274, 17447, 2009, 8571, 17449, 14012, 7385, 17467, 17468, 17469, 9993, 7201, 7189, 4304, 1302, 4440, 14060, 16502, 16503, 707, 13801, 7173, 14065, 14078, 7349, 17470, 5620, 7175, 7189, 2]
 // Exports: init, initHeadlessTask
 
-// Module 16737 (linkFromAppsFlyer)
+// Module 16770 (linkFromAppsFlyer)
 import timestampDefault from "timestamp" /* 3 */;
 import serializeDefault from "serialize" /* 9 */;
 import enforcingDefault from "enforcing" /* 502 */;
 import Storage4 from "Storage" /* 595 */;
 import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
 import _modDef1208 from "module_1208" /* 1208 */;
-import databaseNameDefault from "databaseName" /* 1974 */;
+import databaseNameDefault from "databaseName" /* 1973 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
-import module_16738 from "module_16738" /* 16738 */;
-import isAnalyticsEndpoint from "isAnalyticsEndpoint" /* 16788 */;
+import module_16771 from "module_16771" /* 16771 */;
+import isAnalyticsEndpoint from "isAnalyticsEndpoint" /* 16821 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import timestamp from "timestamp" /* 16808 */;
-import { subscribeToIntlLoadingSuccess as closure_11 } from "_setAppLocale" /* 1998 */;
-import closure_12 from "handleConnectionOpen" /* 1982 */;
-import closure_13 from "getState" /* 7104 */;
-import result from "result" /* 7153 */;
-import module_16809 from "module_16809" /* 16809 */;
+import timestamp from "timestamp" /* 16841 */;
+import { subscribeToIntlLoadingSuccess as closure_11 } from "_setAppLocale" /* 1997 */;
+import closure_12 from "handleConnectionOpen" /* 1981 */;
+import closure_13 from "getState" /* 7125 */;
+import result from "result" /* 7174 */;
+import module_16842 from "module_16842" /* 16842 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -71,7 +71,7 @@ function _getInitialURLs() {
         if (null != closure_1) {
           if (null != closure_1.url) {
             if (callback(closure_1.url)) {
-              let push = arr(17406).DeeplinkSource;
+              let push = arr(17439).DeeplinkSource;
               if (closure_1.isDeferred) {
                 let AppsFlyer = push.AppsFlyerDeferred;
               } else {
@@ -86,7 +86,7 @@ function _getInitialURLs() {
             } else {
               const obj4 = { url: null, source: null };
               obj4[0] = closure_1.url;
-              obj4[1] = arr(17406).DeeplinkSource.OS;
+              obj4[1] = arr(17439).DeeplinkSource.OS;
               arr = arr.push(obj4);
               dependencyMap = 3;
             }
@@ -106,7 +106,7 @@ function _getInitialURLs() {
       if (null != dependencyMap) {
         const obj6 = { url: null, source: null };
         obj6[0] = dependencyMap;
-        obj6[1] = arr(17406).DeeplinkSource.ReactNativeLinking;
+        obj6[1] = arr(17439).DeeplinkSource.ReactNativeLinking;
         arr.push(obj6);
       }
     }
@@ -289,7 +289,7 @@ function _trackFirstLaunched() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -449,7 +449,7 @@ function _initializeIntl() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -471,7 +471,7 @@ function _initializeIntl() {
               callback = undefined;
               paths = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -554,7 +554,7 @@ function _initializeIntl() {
           } else {
             callback2(() => callback());
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp29) {
           c4 = tmp;
@@ -592,7 +592,7 @@ function _init(_payload) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -646,7 +646,7 @@ function _init(_payload) {
                 throwTypeErrorResult = closure_1_0;
                 throwTypeErrorResult = c3;
                 throwTypeErrorResult = closure_1_0(500).isAndroid();
-                let _Promise6 = closure_1_0(8549);
+                let _Promise6 = closure_1_0(8571);
                 if (throwTypeErrorResult) {
                   throwTypeErrorResult = _Promise6.unlockOrientation({ unlockAfterRotatingToPreviousLock: false });
                 } else {
@@ -668,7 +668,7 @@ function _init(_payload) {
                 throwTypeErrorResult = closure_1_1;
                 throwTypeErrorResult = c3;
                 const obj14 = closure_1_0(500);
-                const initialNotification = closure_1_1(9596).getInitialNotification();
+                const initialNotification = closure_1_1(9618).getInitialNotification();
                 items[1] = initialNotification.catch(() => null);
                 throwTypeErrorResult = closure_1_28;
                 items[2] = closure_1_28();
@@ -676,16 +676,16 @@ function _init(_payload) {
                 items[3] = closure_1_30();
                 throwTypeErrorResult = closure_1_0;
                 throwTypeErrorResult = c3;
-                num2 = closure_1_0(2010);
+                num2 = closure_1_0(2009);
                 throwTypeErrorResult = c3;
                 throwTypeErrorResult = c3;
-                const obj15 = closure_1_1(9596);
-                throwTypeErrorResult = num2(17416, c3.paths).then((arg0) => arg0.default());
+                const obj15 = closure_1_1(9618);
+                throwTypeErrorResult = num2(17449, c3.paths).then((arg0) => arg0.default());
                 items[4] = throwTypeErrorResult;
                 throwTypeErrorResult = Promise.all(items);
                 v0 = 1;
                 c3 = 1;
-                const num2Result = num2(17416, c3.paths);
+                const num2Result = num2(17449, c3.paths);
               } else {
                 throwTypeErrorResult = closure_1_1;
                 throwTypeErrorResult = c3;
@@ -722,12 +722,12 @@ function _init(_payload) {
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = c3;
                 if (obj18.isAndroid()) {
-                  if (callback(13978).isTTITest) {
+                  if (callback(14012).isTTITest) {
                     throwTypeErrorResult = callback;
                     throwTypeErrorResult = onStorageInitialize;
                     throwTypeErrorResult = closure_1_0;
                     throwTypeErrorResult = c3;
-                    closure_6 = closure_1_0(7364).default;
+                    closure_6 = closure_1_0(7385).default;
                     throwTypeErrorResult = closure_6;
                     v0 = 2;
                     c3 = 1;
@@ -763,9 +763,9 @@ function _init(_payload) {
               throwTypeErrorResult = dependencyMap;
               closure_16 = 5.default;
               throwTypeErrorResult = dependencyMap;
-              closure_17 = 16738.default;
+              closure_17 = 16771.default;
               throwTypeErrorResult = dependencyMap;
-              closure_18 = 16788.default;
+              closure_18 = 16821.default;
               throwTypeErrorResult = dependencyMap;
               closure_19 = 17;
               throwTypeErrorResult = closure_16;
@@ -782,8 +782,8 @@ function _init(_payload) {
               if (!callback) {
                 closure_19.init();
               }
-              callback(5617);
-              obj = callback(7154);
+              callback(5620);
+              obj = callback(7175);
               const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             }
             if (callback) {
@@ -825,7 +825,7 @@ function _init(_payload) {
                 onStorageInitialize();
               }
             }
-            closure_1_1(7184)("DispatcherBridge", () => {
+            closure_1_1(7205)("DispatcherBridge", () => {
               _undefined(paths[47]);
             });
             if (callback) {
@@ -838,15 +838,15 @@ function _init(_payload) {
                 closure_20.verbose("Flux has initialized");
               });
             }
-            closure_1_1(17435)();
-            const result1 = closure_1_0(17436).setupLibdiscoreTimersMonitor();
+            closure_1_1(17468)();
+            const result1 = closure_1_0(17469).setupLibdiscoreTimersMonitor();
             const item = closure_1_4.forEach((url) => {
               url = url.url;
               onStorageInitialize(paths[15])("handleURL", () => callback(table[16])).default(url, true);
             });
             closure_8 = false;
             if (null != closure_1_5) {
-              const callback2 = closure_1_1(7184)("receiveNotification", () => _undefined(paths[31])).default;
+              const callback2 = closure_1_1(7205)("receiveNotification", () => _undefined(paths[31])).default;
               closure_1_1(9).extraProperties.tapped_notification = true;
               throwTypeErrorResult = callback2;
               throwTypeErrorResult = closure_1_5;
@@ -869,9 +869,9 @@ function _init(_payload) {
                 obj4[0] = c10;
                 throwTypeErrorResult = callback;
                 throwTypeErrorResult = c3;
-                obj4[3] = callback(7180).INITIAL_MESSAGE_FETCH_KEY;
-                throwTypeErrorResult = onStorageInitialize(9970).fetchMessages(obj4);
-                const obj8 = onStorageInitialize(9970);
+                obj4[3] = callback(7201).INITIAL_MESSAGE_FETCH_KEY;
+                throwTypeErrorResult = onStorageInitialize(9993).fetchMessages(obj4);
+                const obj8 = onStorageInitialize(9993);
               }
             }
             throwTypeErrorResult = callback;
@@ -886,18 +886,18 @@ function _init(_payload) {
             throwTypeErrorResult = new Promise((arg0) => {
               const _undefined = arg0;
               _undefined(paths[42])(paths[52], paths.paths).then((arg0) => arg0.default.loadCacheAsync(closure_1_4(callback(closure_1_3[53]).computeInitialNavigationState(), 1)[0], () => {
-                closure_1_0(closure_1_3[57]).updateSaturation(closure_1_0(closure_1_3[55]).default.saturation);
-                obj = closure_1_0(closure_1_3[57]);
-                closure_1_0(closure_1_3[58]).updateVisualRefresh(closure_1_0(closure_1_3[56]).isMobileVisualRefreshEnabled("NativeAppStartup"));
-                const obj2 = closure_1_0(closure_1_3[58]);
-                closure_1_0(closure_1_3[59]).updateTheme(closure_1_0(closure_1_3[54]).default.theme);
+                closure_1_0(closure_1_3[56]).updateSaturation(closure_1_0(closure_1_3[55]).default.saturation);
+                obj = closure_1_0(closure_1_3[56]);
+                closure_1_0(closure_1_3[57]).updateVisualRefresh(true);
+                const obj2 = closure_1_0(closure_1_3[57]);
+                closure_1_0(closure_1_3[58]).updateTheme(closure_1_0(closure_1_3[54]).default.theme);
                 callback();
               }));
             });
             _null = null;
             throwTypeErrorResult = v0;
             throwTypeErrorResult = c3;
-            const obj7 = closure_1_0(17436);
+            const obj7 = closure_1_0(17469);
             if (null != obj10.getToken()) {
               throwTypeErrorResult = callback;
               items2.Promise.resolve();
@@ -907,7 +907,7 @@ function _init(_payload) {
               throwTypeErrorResult = onStorageInitialize;
               throwTypeErrorResult = closure_1_0;
               throwTypeErrorResult = c3;
-              closure_13 = closure_1_0(13767);
+              closure_13 = closure_1_0(13801);
               throwTypeErrorResult = closure_13;
               throwTypeErrorResult = closure_13.beginLoadedExperimentsTimeout();
               throwTypeErrorResult = closure_13;
@@ -927,27 +927,27 @@ function _init(_payload) {
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2 = [closure_1_0(2010)(7152, c3.paths), , , , , ];
+            items2 = [closure_1_0(2009)(7173, c3.paths), , , , , ];
             throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[1] = closure_1_0(2010)(14031, c3.paths);
+            items2[1] = closure_1_0(2009)(14065, c3.paths);
             throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[2] = closure_1_0(2010)(14044, c3.paths);
+            items2[2] = closure_1_0(2009)(14078, c3.paths);
             throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[3] = closure_1_0(2010)(7328, c3.paths);
+            items2[3] = closure_1_0(2009)(7349, c3.paths);
             throwTypeErrorResult = closure_1_0;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
             throwTypeErrorResult = c3;
-            items2[4] = closure_1_0(2010)(17437, c3.paths);
+            items2[4] = closure_1_0(2009)(17470, c3.paths);
             throwTypeErrorResult = closure_1_7;
             items2[5] = closure_1_7;
             throwTypeErrorResult = items2.Promise.all(items2);
@@ -990,7 +990,7 @@ function _initHeadlessTask() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1034,7 +1034,7 @@ function _initHeadlessTask() {
           } else {
             callback3();
             onStorageInitialize();
-            onStorageInitialize(c3[69]);
+            onStorageInitialize(c3[68]);
             onStorageInitialize(c3[47]);
             callback(c3[18]).initialize();
             const obj8 = callback(c3[18]);
@@ -1043,7 +1043,7 @@ function _initHeadlessTask() {
                 closure_32.resolve();
               });
             });
-            const items1 = [onStorageInitialize(c3[42])(c3[66], c3.paths)];
+            const items1 = [onStorageInitialize(c3[42])(c3[65], c3.paths)];
             c2 = 2;
             c3 = 1;
             const obj3 = { value: null, done: false };

@@ -1,13 +1,13 @@
-// Module ID: 4458
-// Function ID: 4459
+// Module ID: 4460
+// Function ID: 4461
 // Name: useGuildIdForChannelRoute
-// Dependencies: [1394, 4268, 676, 589, 1913, 2]
+// Dependencies: [1390, 4269, 676, 589, 1912, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 4458 (useGuildIdForChannelRoute)
+// Module 4460 (useGuildIdForChannelRoute)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "initializeFromUserSettings" /* 1394 */;
-import closure_3 from "handleConnectionOpen" /* 4268 */;
+import closure_2 from "initializeFromUserSettings" /* 1390 */;
+import closure_3 from "handleConnectionOpen" /* 4269 */;
 import { FAVORITES } from "ME" /* 676 */;
 
 require = arg1;

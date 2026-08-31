@@ -1,20 +1,19 @@
-// Module ID: 14837
-// Function ID: 14838
+// Module ID: 14871
+// Function ID: 14872
 // Name: toggle
-// Dependencies: [4266, 1303, 1302, 1340, 7830, 676, 1367, 589, 1236, 14838, 8159, 11006, 2]
+// Dependencies: [4267, 1303, 1302, 1340, 7852, 676, 589, 1236, 14872, 8181, 11031, 2]
 
-// Module 14837 (toggle)
+// Module 14871 (toggle)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 8159 */;
-import track from "track" /* 14838 */;
-import closure_3 from "isSyncedModeThemesEnabled" /* 4266 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 8181 */;
+import track from "track" /* 14872 */;
+import closure_3 from "reset" /* 4267 */;
 import closure_4 from "initialize" /* 1303 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
 import closure_6 from "handleConnectionClosedOrResumed" /* 1340 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import createToggle from "createToggle" /* 11006 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 createToggle = {
@@ -24,12 +23,8 @@ createToggle = {
   },
   parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   useIsDisabled: function useSyncThemeDisabled() {
-    let stateFromStores = useIsMobileVisualRefreshExperimentEnabledDefault("SyncThemeSetting");
     const items = [closure_5];
-    if (stateFromStores) {
-      stateFromStores = obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
-    }
-    return stateFromStores;
+    return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
   useValue: function useSyncThemeAcrossClientsValue() {
     const items = [closure_4];

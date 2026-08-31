@@ -1,15 +1,15 @@
 // Module ID: 1302
 // Function ID: 1303
 // Name: handleThemeChange
-// Dependencies: [1303, 1304, 1340, 1305, 685, 676, 1339, 1345, 1373, 589, 1374, 709, 2]
+// Dependencies: [1303, 1304, 1340, 1305, 685, 676, 1339, 1345, 1369, 589, 1370, 709, 2]
 
 // Module 1302 (handleThemeChange)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getSystemThemeDefault from "getSystemTheme" /* 1339 */;
 import resolveThemeDefault from "resolveTheme" /* 1345 */;
-import updateBackgroundColorDefault from "updateBackgroundColor" /* 1373 */;
-import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
+import updateBackgroundColorDefault from "updateBackgroundColor" /* 1369 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1370 */;
 import closure_3 from "initialize" /* 1303 */;
 import closure_4 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
 import closure_5 from "handleConnectionClosedOrResumed" /* 1340 */;
@@ -155,7 +155,7 @@ obj = {
       let flag = tmp7 !== closure_13;
       if (flag) {
         closure_13 = tmp7;
-        tmp2(1373)(closure_13);
+        tmp2(1369)(closure_13);
         flag = true;
       }
       tmp = flag;

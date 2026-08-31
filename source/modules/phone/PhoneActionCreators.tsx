@@ -1,14 +1,14 @@
-// Module ID: 7718
-// Function ID: 7719
+// Module ID: 7739
+// Function ID: 7740
 // Name: ChangePhoneReason
-// Dependencies: [5, 1218, 7716, 676, 709, 530, 4679, 503, 2]
+// Dependencies: [5, 1218, 7737, 676, 709, 530, 4681, 503, 2]
 
-// Module 7718 (ChangePhoneReason)
+// Module 7739 (ChangePhoneReason)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7716 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7737 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;
@@ -111,7 +111,7 @@ export default {
       if (c3) {
         obj1.authorization = "";
       }
-      const obj5 = closure_1_1(4679);
+      const obj5 = closure_1_1(4681);
       const obj2 = { url: null, headers: null, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
       obj2[0] = closure_1_6.VERIFY_PHONE;
       obj2[1] = obj1;

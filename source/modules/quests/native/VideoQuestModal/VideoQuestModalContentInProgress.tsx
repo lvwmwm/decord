@@ -1,21 +1,21 @@
-// Module ID: 14664
-// Function ID: 14665
+// Module ID: 14698
+// Function ID: 14699
 // Name: importDefaultResult1
-// Dependencies: [32, 19, 17, 5352, 505, 21, 689, 712, 14665, 4446, 500, 10860, 4186, 4447, 1629, 5518, 4173, 14667, 14682, 7743, 14683, 14661, 14684, 4891, 5033, 4442, 14685, 5458, 4893, 10870, 7952, 1236, 9684, 10611, 11021, 11045, 14630, 8515, 4905, 14687, 10610, 14565, 14563, 12711, 8739, 14660, 4413, 14688, 2010, 11024, 7414, 8938, 8939, 8943, 7393, 7420, 5355, 7410, 8578, 14689, 11268, 14690, 5359, 2]
+// Dependencies: [32, 19, 17, 5355, 505, 21, 689, 712, 14699, 4448, 500, 10884, 4187, 4449, 1628, 5521, 4174, 14701, 14716, 7764, 14717, 14695, 14718, 4894, 5036, 4444, 14719, 5461, 4896, 10894, 7974, 1236, 9706, 10635, 11046, 11074, 14664, 8537, 4908, 14721, 10634, 14599, 14597, 12746, 8761, 14694, 4415, 14722, 2009, 11049, 7435, 8961, 8962, 8966, 7414, 7441, 5358, 7431, 8600, 14723, 11297, 14724, 5362, 2]
 
-// Module 14664 (importDefaultResult1)
+// Module 14698 (importDefaultResult1)
 import ThemesDefault from "Themes" /* 712 */;
-import PressableBase from "PressableBase" /* 5033 */;
+import PressableBase from "PressableBase" /* 5036 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5352 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5355 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importDefaultResult from "n" /* 689 */;
 import alphaResult1 from "module_0" /* 0 */;
 import alphaResult2 from "module_0" /* 0 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -568,7 +568,7 @@ const alphaResult3 = importDefaultResult(ThemesDefault.unsafe_rawColors.PLUM_23)
 const memoResult = importAllResult.memo(function VideoQuestModalContentInProgress(arg0) {
   ({ onClose, sourceQuestContent } = arg0);
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
-  let obj = sourceQuestContent(14660);
+  let obj = sourceQuestContent(14694);
   const quest = obj.useVideoQuestModalContext().quest;
   items = [quest];
   items1 = [quest];
@@ -584,11 +584,11 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentInProgres
   }, items2);
   let tmp = sourceQuestContent;
   const tmp5 = getQuestImpressionId(importAllResult.useState(false), 2);
-  getQuestImpressionId = sourceQuestContent(11024).useGetQuestImpressionId();
-  const obj2 = sourceQuestContent(11024);
+  getQuestImpressionId = sourceQuestContent(11049).useGetQuestImpressionId();
+  const obj2 = sourceQuestContent(11049);
   [tmp11, closure_4] = getQuestImpressionId(importAllResult.useState(false), 2);
   const tmp10 = getQuestImpressionId(importAllResult.useState(false), 2);
-  const isShareableQuestResult = sourceQuestContent(7414).isShareableQuest(quest.config);
+  const isShareableQuestResult = sourceQuestContent(7435).isShareableQuest(quest.config);
   closure_5 = isShareableQuestResult;
   const items3 = [isShareableQuestResult, quest.id, getQuestImpressionId, sourceQuestContent];
   const callback2 = importAllResult.useCallback(() => {
@@ -633,21 +633,21 @@ const memoResult = importAllResult.memo(function VideoQuestModalContentInProgres
       questUrl2.showShareActionSheet(obj1, "Video Quest Modal - " + id);
     }
   }, items3);
-  const obj3 = sourceQuestContent(7414);
+  const obj3 = sourceQuestContent(7435);
   const items4 = [quest.id];
-  const videoQuestClickCtaAndMaybeCloseModal = sourceQuestContent(14689).useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
+  const videoQuestClickCtaAndMaybeCloseModal = sourceQuestContent(14723).useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const callback3 = importAllResult.useCallback(() => {
     let obj = sourceQuestContent(closure_1_2[60]);
     obj = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj);
   }, items4);
-  const obj4 = sourceQuestContent(14689);
-  const videoExternallyPaused = sourceQuestContent(14690).useVideoExternallyPaused(quest.id, tmp11);
-  const tmp17 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5359).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
+  const obj4 = sourceQuestContent(14723);
+  const videoExternallyPaused = sourceQuestContent(14724).useVideoExternallyPaused(quest.id, tmp11);
+  const tmp17 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 5362).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp18 = null == tmp17;
   if (!tmp18) {
-    tmp18 = "portrait" === tmp(11045).getVideoOrientation(tmp17);
-    const tmpResult = tmp(11045);
+    tmp18 = "portrait" === tmp(11074).getVideoOrientation(tmp17);
+    const tmpResult = tmp(11074);
   }
   obj = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handlePrimaryCtaPress: videoQuestClickCtaAndMaybeCloseModal, handleRewardDetailsPress: callback3, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };
   return callback2(tmp18 ? closure_24 : closure_23, obj);

@@ -1,14 +1,14 @@
-// Module ID: 8761
-// Function ID: 8762
+// Module ID: 8783
+// Function ID: 8784
 // Name: SteamNeutralIcon
-// Dependencies: [19, 21, 712, 4165, 8762, 2]
+// Dependencies: [19, 21, 712, 4166, 8784, 2]
 // Exports: SteamNeutralIcon
 
-// Module 8761 (SteamNeutralIcon)
+// Module 8783 (SteamNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 8762 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 8784 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

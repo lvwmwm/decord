@@ -1,16 +1,16 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16165
+// Function ID: 16166
 // Name: FrameViewInner
-// Dependencies: [32, 19, 9403, 9404, 4474, 21, 5919, 709, 9436, 16132, 9543, 16133, 9558, 589, 2]
+// Dependencies: [32, 19, 9425, 9426, 4476, 21, 5922, 709, 9458, 16166, 9565, 16167, 9580, 589, 2]
 // Exports: InlineFrameView
 
-// Module 16131 (FrameViewInner)
+// Module 16165 (FrameViewInner)
 import initialize from "initialize" /* 589 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "map" /* 9403 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9404 */;
-import { ActivityPlatform } from "items3" /* 4474 */;
+import closure_5 from "map" /* 9425 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9426 */;
+import { ActivityPlatform } from "items3" /* 4476 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

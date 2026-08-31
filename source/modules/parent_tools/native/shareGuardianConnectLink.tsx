@@ -1,15 +1,15 @@
-// Module ID: 14417
-// Function ID: 14418
+// Module ID: 14451
+// Function ID: 14452
 // Name: shareGuardianConnectLink
-// Dependencies: [7230, 8578, 1236, 2370, 2]
+// Dependencies: [7251, 8600, 1236, 2369, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 14417 (shareGuardianConnectLink)
+// Module 14451 (shareGuardianConnectLink)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2370 */;
-import items from "items" /* 7230 */;
-import showShareActionSheet from "showShareActionSheet" /* 8578 */;
+import messagesProxyDefault from "messagesProxy" /* 2369 */;
+import items from "items" /* 7251 */;
+import showShareActionSheet from "showShareActionSheet" /* 8600 */;
 
 let closure_3 = items.FAMILY_CENTER_REQUEST_QR_CODE_URL;
 const result = set.fileFinishedImporting("modules/parent_tools/native/shareGuardianConnectLink.tsx");

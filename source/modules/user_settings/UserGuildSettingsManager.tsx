@@ -1,14 +1,14 @@
-// Module ID: 5449
-// Function ID: 5450
+// Module ID: 5452
+// Function ID: 5453
 // Name: handleConnectionOpen
-// Dependencies: [5, 5450, 1391, 676, 687, 530, 5451, 2]
+// Dependencies: [5, 5453, 1387, 676, 687, 530, 5454, 2]
 
-// Module 5449 (handleConnectionOpen)
+// Module 5452 (handleConnectionOpen)
 import setDefault from "set" /* 687 */;
-import initializeDefault from "initialize" /* 5451 */;
+import initializeDefault from "initialize" /* 5454 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "incrementVersion" /* 5450 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "incrementVersion" /* 5453 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -49,7 +49,7 @@ function _saveUserGuildSettings() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -117,7 +117,7 @@ function _saveUserGuildSettings() {
               return obj;
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp13) {
           c3 = tmp;
@@ -163,7 +163,7 @@ function _saveUserGuildSettingsBulk() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

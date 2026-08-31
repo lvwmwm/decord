@@ -1,15 +1,15 @@
-// Module ID: 11992
-// Function ID: 11993
+// Module ID: 12025
+// Function ID: 12026
 // Name: isContentDismissed
-// Dependencies: [1340, 676, 1388, 685, 1376, 589, 1374, 698, 1377, 2]
+// Dependencies: [1340, 676, 1384, 685, 1372, 589, 1370, 698, 1373, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 11992 (isContentDismissed)
+// Module 12025 (isContentDismissed)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import hasBit from "hasBit" /* 1376 */;
+import hasBit from "hasBit" /* 1372 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import { UserSettingsDelay } from "MAX_FAVORITES" /* 685 */;
 
 require = arg1;
@@ -42,7 +42,7 @@ export const markContentAsDismissed = function markContentAsDismissed(GAME_SERVE
   const _require = true;
   importDefault = GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK;
   dependencyMap = closure_0;
-  let obj = _require(1374);
+  let obj = _require(1370);
   const result = obj.updateUserGuildSettings(closure_0, (dismissedGuildContent) => {
     dismissedGuildContent = closure_1_3.getDismissedGuildContent(guildId);
     let hasBitResult = null != dismissedGuildContent;
@@ -59,7 +59,7 @@ export const markContentAsDismissed = function markContentAsDismissed(GAME_SERVE
   if (arg2) {
     let UNKNOWN = AUTO_DISMISS;
     obj = { type: null, guild_id: null, action: null };
-    obj[0] = _require(1377).DismissibleGuildContent[GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK];
+    obj[0] = _require(1373).DismissibleGuildContent[GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK];
     obj[1] = closure_0;
     if (AUTO_DISMISS == null) {
       UNKNOWN = ContentDismissActionType.UNKNOWN;
@@ -73,7 +73,7 @@ export const unmarkContentAsDismissed = function unmarkContentAsDismissed(dc, gu
   const _require = false;
   closure_1 = dc;
   dependencyMap = guildId;
-  const result = _require(1374).updateUserGuildSettings(guildId, (dismissedGuildContent) => {
+  const result = _require(1370).updateUserGuildSettings(guildId, (dismissedGuildContent) => {
     dismissedGuildContent = closure_1_3.getDismissedGuildContent(guildId);
     let hasBitResult = null != dismissedGuildContent;
     if (hasBitResult) {

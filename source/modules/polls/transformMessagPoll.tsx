@@ -1,12 +1,12 @@
-// Module ID: 4815
-// Function ID: 4816
+// Module ID: 4817
+// Function ID: 4818
 // Name: transformMessagePoll
-// Dependencies: [4044, 2]
+// Dependencies: [4045, 2]
 // Exports: default
 
-// Module 4815 (transformMessagePoll)
+// Module 4817 (transformMessagePoll)
 import set from "set" /* 2 */;
-import hooksDefault from "hooks" /* 4044 */;
+import hooksDefault from "hooks" /* 4045 */;
 
 const result = set.fileFinishedImporting("modules/polls/transformMessagPoll.tsx");
 

@@ -1,16 +1,16 @@
-// Module ID: 9634
-// Function ID: 9635
-// Dependencies: [5, 32, 19, 1397, 21, 4446, 712, 9613, 9610, 1892, 9612, 1351, 1236, 9614, 9635, 9616, 9636, 9676, 9677, 5973, 2]
+// Module ID: 9656
+// Function ID: 9657
+// Dependencies: [5, 32, 19, 1393, 21, 4448, 712, 9635, 9632, 1891, 9634, 1351, 1236, 9636, 9657, 9638, 9658, 9698, 9699, 5976, 2]
 
-// Module 9634
+// Module 9656
 import ThemesDefault from "Themes" /* 712 */;
-import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 9616 */;
+import EditGuildEventModalNavbarDefault from "EditGuildEventModalNavbar" /* 9638 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import { GuildScheduledEventEntityTypes as closure_7 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import { GuildScheduledEventEntityTypes as closure_7 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let obj = { cardStyle: null };
@@ -39,7 +39,7 @@ const memoResult = importAllResult.memo((guild) => {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -71,7 +71,7 @@ const memoResult = importAllResult.memo((guild) => {
             return obj;
           } else if (null == arg1) {
             id = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } else {
             if (!closure_5) {
               const AccessibilityAnnouncer = closure_1_0(closure_1_3[11]).AccessibilityAnnouncer;

@@ -1,14 +1,14 @@
-// Module ID: 16921
-// Function ID: 16922
+// Module ID: 16954
+// Function ID: 16955
 // Name: handleAppStateUpdate
-// Dependencies: [5, 676, 3, 687, 5451, 16922, 1208, 698, 7167, 7164, 7154, 2]
+// Dependencies: [5, 676, 3, 687, 5454, 16955, 1208, 698, 7188, 7185, 7175, 2]
 
-// Module 16921 (handleAppStateUpdate)
+// Module 16954 (handleAppStateUpdate)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 687 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5451 */;
-import getDeviceMetadata from "getDeviceMetadata" /* 7167 */;
+import initializeDefault from "initialize" /* 5454 */;
+import getDeviceMetadata from "getDeviceMetadata" /* 7188 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
 
@@ -71,7 +71,7 @@ prototype["ping"] = function ping() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -136,7 +136,7 @@ prototype["ping"] = function ping() {
                 obj3[0] = undefined;
                 return obj3;
               } else {
-                obj3 = checkForStallReportResult(16922);
+                obj3 = checkForStallReportResult(16955);
                 let pingResult;
                 if (obj3 != null) {
                   const _Date = Date;
@@ -154,7 +154,7 @@ prototype["ping"] = function ping() {
             throw arg1;
           } else if (arg0 !== 2) {
             if (arg1) {
-              obj = checkForStallReportResult(16922);
+              obj = checkForStallReportResult(16955);
               checkForStallReportResult = undefined;
               if (obj != null) {
                 checkForStallReportResult = obj.checkForStallReport();
@@ -170,7 +170,7 @@ prototype["ping"] = function ping() {
                 }
                 if (0 === checkForStallReportResult._analyticsReportsRemaining) {
                   checkForStallReportResult.stopWatchdog();
-                  obj1 = checkForStallReportResult(16922);
+                  obj1 = checkForStallReportResult(16955);
                   if (obj1 != null) {
                     obj1.disable();
                   }
@@ -218,7 +218,7 @@ prototype["startWatchdog"] = function startWatchdog() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -238,7 +238,7 @@ prototype["startWatchdog"] = function startWatchdog() {
             closure_0 = undefined;
             c1 = undefined;
             if (null == closure_1_0._timeoutId) {
-              if (null != checkForStallReportResult(16922)) {
+              if (null != checkForStallReportResult(16955)) {
                 dependencyMap = 1;
                 c3 = 1;
                 obj1 = { value: null, done: false };
@@ -259,7 +259,7 @@ prototype["startWatchdog"] = function startWatchdog() {
               closure_0._enabled = true;
               if (closure_0._pingCompleted) {
                 checkForStallReportResult = undefined;
-                obj = checkForStallReportResult(16922);
+                obj = checkForStallReportResult(16955);
                 if (obj != null) {
                   checkForStallReportResult = obj.checkForStallReport();
                 }
@@ -318,7 +318,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -337,7 +337,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
             closure_0 = tmp2;
             closure_0 = undefined;
             if (null != closure_1_0._cachedSession) {
-              obj1 = closure_1_0(7164);
+              obj1 = closure_1_0(7185);
               if (!obj1.isSessionExpired(closure_1_0._cachedSession)) {
                 const uuid = closure_1_0._cachedSession.uuid;
                 c3 = 3;
@@ -346,7 +346,7 @@ prototype["getCurrentSessionId"] = function getCurrentSessionId() {
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = closure_1_0(7154).getSession();
+            obj1[0] = closure_1_0(7175).getSession();
             return obj1;
           }
         } else if (arg0 === 1) {

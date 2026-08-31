@@ -1,25 +1,25 @@
-// Module ID: 14991
-// Function ID: 14992
+// Module ID: 15024
+// Function ID: 15025
 // Name: VideoUploadQualityNitroUpsell
-// Dependencies: [19, 17, 1923, 4114, 7830, 676, 21, 4446, 712, 1500, 647, 4108, 4442, 1236, 5566, 1297, 10327, 7709, 11006, 14273, 2]
+// Dependencies: [19, 17, 1922, 4115, 7852, 676, 21, 4448, 712, 1499, 647, 4109, 4444, 1236, 5569, 1297, 10351, 7730, 11031, 14307, 2]
 // Exports: default
 
-// Module 14991 (VideoUploadQualityNitroUpsell)
+// Module 15024 (VideoUploadQualityNitroUpsell)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 10327 */;
-import _modDef14273 from "module_14273" /* 14273 */;
+import registerAssetDefault from "registerAsset" /* 10351 */;
+import _modDef14307 from "module_14307" /* 14307 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
-import closure_6 from "reset" /* 4114 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7830 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "reset" /* 4115 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7852 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function VideoUploadQualityNitroUpsell() {
-  let obj = _require(1500);
+  let obj = _require(1499);
   _require = obj.useStackNavigation();
   const tmp3 = callback2();
   obj1 = _require(647);
@@ -32,7 +32,7 @@ function VideoUploadQualityNitroUpsell() {
   obj = { variant: "text-xs/normal", color: "text-muted", children: null };
   const intl = _require(1236).intl;
   obj[2] = intl.format(_require(1236).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" });
-  const children = [callback(_require(4442).Text, obj), ];
+  const children = [callback(_require(4444).Text, obj), ];
   let tmp7Result = !stateFromStores;
   if (!stateFromStores) {
     obj = { style: null, children: null };
@@ -54,10 +54,10 @@ function VideoUploadQualityNitroUpsell() {
       const obj = closure_1_1(closure_1_2[17]);
     };
     obj4[2] = intl2.format(tmp(1236).t.uW1zul, obj5);
-    items2[1] = tmp7(tmp(4442).Text, obj4);
+    items2[1] = tmp7(tmp(4444).Text, obj4);
     obj2[1] = items2;
     obj1[2] = tmp5(tmp6, obj2);
-    obj[1] = tmp7(tmp(5566).Card, obj1);
+    obj[1] = tmp7(tmp(5569).Card, obj1);
     tmp7Result = tmp7(tmp6, obj);
   }
   children[1] = tmp7Result;
@@ -165,5 +165,5 @@ export default function SettingsChatScreen(route) {
     obj[1] = initialSetting;
     return obj.createList(obj);
   }, items);
-  return callback(_modDef14273, { node });
+  return callback(_modDef14307, { node });
 };

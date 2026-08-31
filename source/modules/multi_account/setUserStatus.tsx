@@ -1,13 +1,13 @@
-// Module ID: 10112
-// Function ID: 10113
+// Module ID: 10135
+// Function ID: 10136
 // Name: _setUserStatus
-// Dependencies: [5, 5448, 5188, 676, 4290, 1236, 10113, 1374, 1337, 1350, 698, 2]
+// Dependencies: [5, 5451, 5191, 676, 4292, 1236, 10136, 1370, 1337, 1350, 698, 2]
 // Exports: default
 
-// Module 10112 (_setUserStatus)
+// Module 10135 (_setUserStatus)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 5448 */;
-import closure_5 from "filterPlayingActivities" /* 5188 */;
+import closure_4 from "initialize" /* 5451 */;
+import closure_5 from "filterPlayingActivities" /* 5191 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;
@@ -29,7 +29,7 @@ function _setUserStatus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ function _setUserStatus() {
               let obj5;
               c3 = 1;
               globalStats = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -82,7 +82,7 @@ function _setUserStatus() {
                 const _HermesInternal = HermesInternal;
                 str = "" + Date.now() + c3;
               }
-              const PreloadedUserSettingsActionCreators = callback(1374).PreloadedUserSettingsActionCreators;
+              const PreloadedUserSettingsActionCreators = callback(1370).PreloadedUserSettingsActionCreators;
               c3 = 2;
               globalStats = 1;
               const obj2 = { value: null, done: false };
@@ -100,7 +100,7 @@ function _setUserStatus() {
                 const UInt64Value = _undefined(_undefined2[8]).UInt64Value;
                 obj = { value: "" + Date.now() };
                 statusCreatedAtMs = UInt64Value.create(obj);
-              }, callback(1374).UserSettingsDelay.INFREQUENT_USER_ACTION);
+              }, callback(1370).UserSettingsDelay.INFREQUENT_USER_ACTION);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -167,7 +167,7 @@ function _setUserStatus() {
               obj3.track(constants.USER_STATUS_UPDATED, obj5);
             }
             globalStats = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp54) {
           globalStats = tmp;

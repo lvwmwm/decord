@@ -1,58 +1,58 @@
-// Module ID: 14053
-// Function ID: 14054
+// Module ID: 14087
+// Function ID: 14088
 // Name: crossPlatformCommands
-// Dependencies: [14054, 14056, 14058, 14059, 14060, 14061, 14062, 14068, 14075, 14076, 14077, 14078, 14079, 14080, 14081, 14088, 14091, 14092, 14093, 14094, 14095, 14096, 14097, 14098, 2]
+// Dependencies: [14088, 14090, 14092, 14093, 14094, 14095, 14096, 14102, 14109, 14110, 14111, 14112, 14113, 14114, 14115, 14122, 14125, 14126, 14127, 14128, 14129, 14130, 14131, 14132, 2]
 
-// Module 14053 (crossPlatformCommands)
-import _modDef14054 from "module_14054" /* 14054 */;
-import RPC_LOCAL_SCOPEDefault from "RPC_LOCAL_SCOPE" /* 14056 */;
-import itemsDefault from "items" /* 14058 */;
-import _modDef14059 from "module_14059" /* 14059 */;
-import _modDef14060 from "module_14060" /* 14060 */;
-import _modDef14061 from "module_14061" /* 14061 */;
-import itemsDefault2 from "items" /* 14062 */;
-import setDefault from "set" /* 14068 */;
-import _modDef14075 from "module_14075" /* 14075 */;
-import _modDef14076 from "module_14076" /* 14076 */;
-import AM_HARMONY_PRD_APPLICATION_IDDefault from "AM_HARMONY_PRD_APPLICATION_ID" /* 14077 */;
-import itemsDefault3 from "items" /* 14078 */;
-import RPC_LOCAL_SCOPEDefault2 from "RPC_LOCAL_SCOPE" /* 14079 */;
-import _modDef14080 from "module_14080" /* 14080 */;
-import getSubscriptionSkusViaListingsDefault from "getSubscriptionSkusViaListings" /* 14081 */;
+// Module 14087 (crossPlatformCommands)
 import _modDef14088 from "module_14088" /* 14088 */;
-import RPC_EMBEDDED_APP_SCOPEDefault from "RPC_EMBEDDED_APP_SCOPE" /* 14091 */;
-import _modDef14092 from "module_14092" /* 14092 */;
-import sumDefault from "sum" /* 14093 */;
-import RPC_LOCAL_SCOPEDefault3 from "RPC_LOCAL_SCOPE" /* 14094 */;
-import RPC_EMBEDDED_APP_SCOPEDefault2 from "RPC_EMBEDDED_APP_SCOPE" /* 14095 */;
-import _modDef14096 from "module_14096" /* 14096 */;
-import _modDef14097 from "module_14097" /* 14097 */;
-import _modDef14098 from "module_14098" /* 14098 */;
+import RPC_LOCAL_SCOPEDefault from "RPC_LOCAL_SCOPE" /* 14090 */;
+import itemsDefault from "items" /* 14092 */;
+import _modDef14093 from "module_14093" /* 14093 */;
+import _modDef14094 from "module_14094" /* 14094 */;
+import _modDef14095 from "module_14095" /* 14095 */;
+import itemsDefault2 from "items" /* 14096 */;
+import setDefault from "set" /* 14102 */;
+import _modDef14109 from "module_14109" /* 14109 */;
+import _modDef14110 from "module_14110" /* 14110 */;
+import AM_HARMONY_PRD_APPLICATION_IDDefault from "AM_HARMONY_PRD_APPLICATION_ID" /* 14111 */;
+import itemsDefault3 from "items" /* 14112 */;
+import RPC_LOCAL_SCOPEDefault2 from "RPC_LOCAL_SCOPE" /* 14113 */;
+import _modDef14114 from "module_14114" /* 14114 */;
+import getSubscriptionSkusViaListingsDefault from "getSubscriptionSkusViaListings" /* 14115 */;
+import _modDef14122 from "module_14122" /* 14122 */;
+import RPC_EMBEDDED_APP_SCOPEDefault from "RPC_EMBEDDED_APP_SCOPE" /* 14125 */;
+import _modDef14126 from "module_14126" /* 14126 */;
+import sumDefault from "sum" /* 14127 */;
+import RPC_LOCAL_SCOPEDefault3 from "RPC_LOCAL_SCOPE" /* 14128 */;
+import RPC_EMBEDDED_APP_SCOPEDefault2 from "RPC_EMBEDDED_APP_SCOPE" /* 14129 */;
+import _modDef14130 from "module_14130" /* 14130 */;
+import _modDef14131 from "module_14131" /* 14131 */;
+import _modDef14132 from "module_14132" /* 14132 */;
 
-const merged = Object.assign(_modDef14054);
+const merged = Object.assign(_modDef14088);
 const merged1 = Object.assign(RPC_LOCAL_SCOPEDefault);
 const merged2 = Object.assign(itemsDefault);
-const merged3 = Object.assign(_modDef14059);
-const merged4 = Object.assign(_modDef14060);
-const merged5 = Object.assign(_modDef14061);
+const merged3 = Object.assign(_modDef14093);
+const merged4 = Object.assign(_modDef14094);
+const merged5 = Object.assign(_modDef14095);
 const merged6 = Object.assign(itemsDefault2);
 const merged7 = Object.assign(setDefault);
-const merged8 = Object.assign(_modDef14075);
-const merged9 = Object.assign(_modDef14076);
+const merged8 = Object.assign(_modDef14109);
+const merged9 = Object.assign(_modDef14110);
 const merged10 = Object.assign(AM_HARMONY_PRD_APPLICATION_IDDefault);
 const merged11 = Object.assign(itemsDefault3);
 const merged12 = Object.assign(RPC_LOCAL_SCOPEDefault2);
-const merged13 = Object.assign(_modDef14080);
+const merged13 = Object.assign(_modDef14114);
 const merged14 = Object.assign(getSubscriptionSkusViaListingsDefault);
-const merged15 = Object.assign(_modDef14088);
+const merged15 = Object.assign(_modDef14122);
 const merged16 = Object.assign(RPC_EMBEDDED_APP_SCOPEDefault);
-const merged17 = Object.assign(_modDef14092);
+const merged17 = Object.assign(_modDef14126);
 const merged18 = Object.assign(sumDefault);
 const merged19 = Object.assign(RPC_LOCAL_SCOPEDefault3);
 const merged20 = Object.assign(RPC_EMBEDDED_APP_SCOPEDefault2);
-const merged21 = Object.assign(_modDef14096);
-const merged22 = Object.assign(_modDef14097);
-const merged23 = Object.assign(_modDef14098);
+const merged21 = Object.assign(_modDef14130);
+const merged22 = Object.assign(_modDef14131);
+const merged23 = Object.assign(_modDef14132);
 const result = require("set").fileFinishedImporting("modules/rpc/server/commands/crossPlatformRPCCommands.tsx");
 
 export const crossPlatformCommands = {};

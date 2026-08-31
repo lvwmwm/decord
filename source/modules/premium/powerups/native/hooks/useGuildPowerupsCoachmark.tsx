@@ -1,20 +1,20 @@
-// Module ID: 15691
-// Function ID: 15692
+// Module ID: 15725
+// Function ID: 15726
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 4438, 1910, 4333, 676, 1388, 505, 21, 4446, 712, 589, 4381, 4352, 12011, 11993, 15692, 11977, 12019, 1236, 2402, 12021, 15693, 12018, 4336, 15689, 15694, 15695, 12049, 15696, 8913, 2]
+// Dependencies: [19, 4440, 1909, 4335, 676, 1384, 505, 21, 4448, 712, 589, 4383, 4354, 12044, 12026, 15726, 12010, 12052, 1236, 2401, 12054, 15727, 12051, 4338, 15723, 15728, 15729, 12082, 15730, 8936, 2]
 // Exports: default
 
-// Module 15691 (useGuildPowerupsCoachmark)
+// Module 15725 (useGuildPowerupsCoachmark)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4333 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4335 */;
 import ME from "ME" /* 676 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ GUILD_TAG_BADGE_PACKS_WAVE_ONE_SKU_ID_SET: closure_6, GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: error, GuildPowerupType: closure_8 } = BoostedGuildTiers);

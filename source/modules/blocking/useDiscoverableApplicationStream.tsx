@@ -1,12 +1,12 @@
-// Module ID: 9180
-// Function ID: 9181
+// Module ID: 9202
+// Function ID: 9203
 // Name: getDiscoverableApplicationStream
-// Dependencies: [4468, 4099, 676, 589, 2]
+// Dependencies: [4470, 4100, 676, 589, 2]
 // Exports: default
 
-// Module 9180 (getDiscoverableApplicationStream)
-import closure_2 from "reset" /* 4468 */;
-import closure_3 from "markAllUserIdListsStale" /* 4099 */;
+// Module 9202 (getDiscoverableApplicationStream)
+import closure_2 from "reset" /* 4470 */;
+import closure_3 from "markAllUserIdListsStale" /* 4100 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 
 const require = arg1;

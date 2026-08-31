@@ -1,37 +1,37 @@
-// Module ID: 7965
-// Function ID: 7966
+// Module ID: 7987
+// Function ID: 7988
 // Name: transformToRowGeneratedComponent
-// Dependencies: [109, 17, 4706, 7966, 7578, 1370, 1956, 4705, 1236, 7967, 7974, 7975, 7977, 7980, 7981, 4699, 5044, 7982, 7984, 7807, 4637, 1403, 4710, 7963, 7962, 1487, 1405, 687, 4436, 7999, 501, 4103, 2]
+// Dependencies: [109, 17, 4708, 7988, 7599, 1471, 1955, 4707, 1236, 7989, 7996, 7997, 7999, 8002, 8003, 4701, 5047, 8004, 8006, 7828, 4639, 1399, 4712, 7985, 7984, 1486, 1401, 687, 4438, 8021, 501, 4104, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 7965 (transformToRowGeneratedComponent)
+// Module 7987 (transformToRowGeneratedComponent)
 import setDefault from "set" /* 687 */;
-import hasFlag from "hasFlag" /* 1403 */;
-import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4637 */;
-import messageAttachmentToUnfurledMediaItem from "messageAttachmentToUnfurledMediaItem" /* 4710 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 7962 */;
-import nativeStylePropertiesDefault from "nativeStyleProperties" /* 7963 */;
-import MediaGalleryItemType from "MediaGalleryItemType" /* 7981 */;
+import hasFlag from "hasFlag" /* 1399 */;
+import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4639 */;
+import messageAttachmentToUnfurledMediaItem from "messageAttachmentToUnfurledMediaItem" /* 4712 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 7984 */;
+import nativeStylePropertiesDefault from "nativeStyleProperties" /* 7985 */;
+import MediaGalleryItemType from "MediaGalleryItemType" /* 8003 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
-import { CheckpointVersions } from "CheckpointPersonas" /* 4706 */;
-import { TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS as closure_7 } from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS" /* 7966 */;
-import importDefaultResult from "priv" /* 1405 */;
+import { CheckpointVersions } from "CheckpointPersonas" /* 4708 */;
+import { TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS as closure_7 } from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS" /* 7988 */;
+import importDefaultResult from "priv" /* 1401 */;
 
 require = arg1;
 function transformToRowGeneratedComponent(message, accessory) {
   let _require = message;
   let initialSnowflakeSelectOptions = accessory;
   message = message.message;
-  let f81530 = message;
+  let f81658 = message;
   ({ interaction, guildId, shouldDisableInteractiveComponents, shouldObscureSpoiler } = message);
   const enabledContentHarmTypeFlags = message.enabledContentHarmTypeFlags;
   ({ shouldShowMosaicMediaDescriptions: processColor, shouldAgeVerify } = message);
   const type = accessory.type;
   let tmp = _require;
-  let tmp2 = f81530;
+  let tmp2 = f81658;
   ({ colors, markdownConfigs } = message);
-  if (_require(f81530[6]).ComponentType.ACTION_ROW === type) {
+  if (_require(f81658[6]).ComponentType.ACTION_ROW === type) {
     const components = accessory.components;
     let mapped = components.map((arg0) => {
       const tmp = closure_1_8(closure_0, arg0);
@@ -78,22 +78,22 @@ function transformToRowGeneratedComponent(message, accessory) {
     obj1.placeholder = tmp(tmp2[7]).getSelectPlaceholder(accessory);
     _require = accessory;
     initialSnowflakeSelectOptions = found1;
-    f81530 = (arg0) => initialSnowflakeSelectOptions.options[arg0].label;
+    f81658 = (arg0) => initialSnowflakeSelectOptions.options[arg0].label;
     const tmpResult3 = tmp(tmp2[7]);
     const obj2 = { expensive: null, cheap: null };
     obj2[0] = function expensive() {
       if (null != initialSnowflakeSelectOptions) {
         if (0 !== arr.length) {
-          const mapped = arr.map(f81530);
-          const intl = accessory(f81530[8]).intl;
+          const mapped = arr.map(f81658);
+          const intl = accessory(f81658[8]).intl;
           const obj = { selections: null };
           obj[0] = mapped.join(",");
-          return intl.formatToPlainString(accessory(f81530[8]).t["I/ROH+"], obj);
+          return intl.formatToPlainString(accessory(f81658[8]).t["I/ROH+"], obj);
         }
       }
-      const placeholder = accessory(f81530[7]).getSelectPlaceholder(accessory);
-      const intl2 = accessory(f81530[8]).intl;
-      return intl2.formatToPlainString(accessory(f81530[8]).t["3aednA"], { placeholder });
+      const placeholder = accessory(f81658[7]).getSelectPlaceholder(accessory);
+      const intl2 = accessory(f81658[8]).intl;
+      return intl2.formatToPlainString(accessory(f81658[8]).t["3aednA"], { placeholder });
     };
     const tmpResult4 = tmp(tmp2[19]);
     obj2[1] = tmp(tmp2[7]).getSelectPlaceholder(accessory);
@@ -219,7 +219,7 @@ function transformToRowGeneratedComponent(message, accessory) {
                   if (width > 0) {
                     if (null != height) {
                       if (height > 0) {
-                        let obj = accessory(f81530[20]);
+                        let obj = accessory(f81658[20]);
                         if (obj.isImageContentType(contentType)) {
                           let VISUAL_PLACEHOLDER = tmp(tmp2[14]).MediaGalleryItemType.IMAGE;
                           let tmp3 = tmp2;
@@ -249,7 +249,7 @@ function transformToRowGeneratedComponent(message, accessory) {
                         spoiler = false;
                       }
                       obj[2] = spoiler;
-                      obj[3] = f81530.author.bot;
+                      obj[3] = f81658.author.bot;
                       obj[4] = shouldObscureSpoiler;
                       obj[5] = enabledContentHarmTypeFlags;
                       obj[6] = shouldAgeVerify;
@@ -299,7 +299,7 @@ function transformToRowGeneratedComponent(message, accessory) {
                         let combined = null;
                         if (VISUAL_PLACEHOLDER === tmp4(tmp3[14]).MediaGalleryItemType.VIDEO) {
                           const _HermesInternal = HermesInternal;
-                          combined = "" + f81530.id + "_MediaGallery(" + initialSnowflakeSelectOptions.id + ")_" + arg1;
+                          combined = "" + f81658.id + "_MediaGallery(" + initialSnowflakeSelectOptions.id + ")_" + arg1;
                         }
                         obj.portalId = combined;
                         let tmp16 = obj;
@@ -319,8 +319,8 @@ function transformToRowGeneratedComponent(message, accessory) {
                     }
                   }
                 }
-                tmp3 = f81530;
-                VISUAL_PLACEHOLDER = accessory(f81530[14]).MediaGalleryItemType.VISUAL_PLACEHOLDER;
+                tmp3 = f81658;
+                VISUAL_PLACEHOLDER = accessory(f81658[14]).MediaGalleryItemType.VISUAL_PLACEHOLDER;
                 tmp4 = accessory;
               });
               const found2 = mapped3.filter(tmp(tmp2[5]).isNotNullish);
@@ -513,22 +513,22 @@ function transformToRowGeneratedComponent(message, accessory) {
     const tmpResult21 = tmp(tmp2[12]);
     obj17.placeholder = tmp(tmp2[7]).getSelectPlaceholder(accessory);
     _require = accessory;
-    f81530 = (label) => label.label;
+    f81658 = (label) => label.label;
     const tmpResult22 = tmp(tmp2[7]);
     obj18 = { expensive: null, cheap: null };
     obj18[0] = function expensive() {
       if (null != initialSnowflakeSelectOptions) {
         if (0 !== arr.length) {
-          const mapped = arr.map(f81530);
-          const intl = accessory(f81530[8]).intl;
+          const mapped = arr.map(f81658);
+          const intl = accessory(f81658[8]).intl;
           const obj = { selections: null };
           obj[0] = mapped.join(",");
-          return intl.formatToPlainString(accessory(f81530[8]).t["I/ROH+"], obj);
+          return intl.formatToPlainString(accessory(f81658[8]).t["I/ROH+"], obj);
         }
       }
-      const placeholder = accessory(f81530[7]).getSelectPlaceholder(accessory);
-      const intl2 = accessory(f81530[8]).intl;
-      return intl2.formatToPlainString(accessory(f81530[8]).t["3aednA"], { placeholder });
+      const placeholder = accessory(f81658[7]).getSelectPlaceholder(accessory);
+      const intl2 = accessory(f81658[8]).intl;
+      return intl2.formatToPlainString(accessory(f81658[8]).t["3aednA"], { placeholder });
     };
     const tmpResult23 = tmp(tmp2[19]);
     obj18[1] = tmp(tmp2[7]).getSelectPlaceholder(accessory);
@@ -543,14 +543,14 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            let VISUAL_PLACEHOLDER = tmp(7981).MediaGalleryItemType.IMAGE;
+            let VISUAL_PLACEHOLDER = tmp(8003).MediaGalleryItemType.IMAGE;
             let tmp4 = tmp;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(7981).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(8003).MediaGalleryItemType.VIDEO;
               tmp4 = tmp;
             }
-            tmpResult = tmp(4637);
+            tmpResult = tmp(4639);
           }
           obj = urlMatchesFileExtension;
         }
@@ -592,12 +592,12 @@ let c10 = importDefaultResult;
 let result = require("set").fileFinishedImporting("modules/messages/native/renderer/transformMessageComponents.tsx");
 
 export default function transformMessageComponents(message, arr) {
-  obj = { type: "textDisplayComponent", parserState: obj(7578).getInitialParserStateFromMessage(message.message, closure_7) };
+  obj = { type: "textDisplayComponent", parserState: obj(7599).getInitialParserStateFromMessage(message.message, closure_7) };
   obj = {};
   const merged = Object.assign(message);
   obj.markdownConfigs = { textDisplayComponent: obj };
   const mapped = arr.map((arg0) => closure_1_8(obj, arg0));
-  return mapped.filter(obj(1370).isNotNullish);
+  return mapped.filter(obj(1471).isNotNullish);
 };
 export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) {
   ({ width, height, contentType } = arg0);
@@ -606,12 +606,12 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) 
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp(7981).MediaGalleryItemType.IMAGE;
+            return tmp(8003).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              return tmp(7981).MediaGalleryItemType.VIDEO;
+              return tmp(8003).MediaGalleryItemType.VIDEO;
             }
-            tmpResult = tmp(4637);
+            tmpResult = tmp(4639);
           }
           obj = urlMatchesFileExtension;
         }

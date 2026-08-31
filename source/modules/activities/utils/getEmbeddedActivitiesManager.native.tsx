@@ -1,14 +1,14 @@
-// Module ID: 9391
-// Function ID: 9392
+// Module ID: 9413
+// Function ID: 9414
 // Name: getEmbeddedActivitiesManager
-// Dependencies: [9392, 2]
+// Dependencies: [9414, 2]
 // Exports: default
 
-// Module 9391 (getEmbeddedActivitiesManager)
+// Module 9413 (getEmbeddedActivitiesManager)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/getEmbeddedActivitiesManager.native.tsx");
 
 export default function getEmbeddedActivitiesManager() {
-  return importDefault(9392);
+  return importDefault(9414);
 };

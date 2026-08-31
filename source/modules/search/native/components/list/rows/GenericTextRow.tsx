@@ -1,13 +1,13 @@
-// Module ID: 16195
-// Function ID: 16196
-// Dependencies: [5, 19, 17, 21, 4446, 4442, 16167, 2]
+// Module ID: 16229
+// Function ID: 16230
+// Dependencies: [5, 19, 17, 21, 4448, 4444, 16201, 2]
 
-// Module 16195
+// Module 16229
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 let require = arg1;
 let c3 = importAllResult;
@@ -32,7 +32,7 @@ const memoResult = importAllResult.memo(function GenericTextRow(text) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ const memoResult = importAllResult.memo(function GenericTextRow(text) {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c0 = tmp;

@@ -1,23 +1,23 @@
-// Module ID: 14345
-// Function ID: 14346
+// Module ID: 14379
+// Function ID: 14380
 // Name: BlockedUserRow
-// Dependencies: [19, 1923, 21, 8998, 5918, 5564, 1297, 1236, 8836, 4893, 589, 2]
+// Dependencies: [19, 1922, 21, 9021, 5921, 5567, 1297, 1236, 8859, 4896, 589, 2]
 // Exports: default
 
-// Module 14345 (BlockedUserRow)
+// Module 14379 (BlockedUserRow)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function BlockedUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5918)().analyticsLocations;
+  analyticsLocations = analyticsLocations(5921)().analyticsLocations;
   let obj = { icon: null, label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
-  obj = { user: userRecord, guildId: "Array", size: true };
+  obj = { user: userRecord, guildId: "Array", size: -64684031 };
   obj[2] = userRecord(1297).AvatarSizes.REFRESH_MEDIUM_32;
-  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: true });
+  obj[0] = jsx(userRecord(1297).Avatar, { user: userRecord, guildId: "Array", size: -64684031 });
   let tmp4 = null != userRecord;
   if (tmp4) {
     let username = userRecord.globalName;
@@ -59,8 +59,8 @@ function BlockedUserRow(userRecord) {
   obj1[3] = function onPress() {
     analyticsLocations(closure_1_2[3]).unblockUser(userRecord.id, { location: "blocked-users-list-mobile-v2" });
   };
-  obj[9] = jsx(userRecord(4893).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5564).TableRow, { name: "unblock", label: null });
+  obj[9] = jsx(userRecord(4896).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5567).TableRow, { name: "unblock", label: null });
 }
 noopAll;
 const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/native/BlockedUserRowV2.tsx");

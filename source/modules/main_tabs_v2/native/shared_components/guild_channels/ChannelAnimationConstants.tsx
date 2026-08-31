@@ -1,12 +1,12 @@
-// Module ID: 9368
-// Function ID: 9369
+// Module ID: 9390
+// Function ID: 9391
 // Name: n
-// Dependencies: [4892, 2]
+// Dependencies: [4895, 2]
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 9368 (n)
+// Module 9390 (n)
 import set from "set" /* 2 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4892 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4895 */;
 
 let obj = { damping: 35, stiffness: 275, mass: 1, overshootClamping: true, restSpeedThreshold: 0.001, restDisplacementThreshold: 0.001 };
 const fn = function n() {

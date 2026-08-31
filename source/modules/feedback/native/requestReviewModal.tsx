@@ -1,10 +1,10 @@
-// Module ID: 13282
-// Function ID: 13283
+// Module ID: 13316
+// Function ID: 13317
 // Name: _showAndroidRatingRequest
-// Dependencies: [5, 17, 3, 13283, 500, 2]
+// Dependencies: [5, 17, 3, 13317, 500, 2]
 // Exports: default
 
-// Module 13282 (_showAndroidRatingRequest)
+// Module 13316 (_showAndroidRatingRequest)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
@@ -24,7 +24,7 @@ function _showAndroidRatingRequest() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

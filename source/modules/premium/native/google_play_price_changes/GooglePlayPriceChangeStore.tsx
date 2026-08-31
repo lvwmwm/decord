@@ -1,12 +1,12 @@
-// Module ID: 16442
-// Function ID: 16443
+// Module ID: 16476
+// Function ID: 16477
 // Name: onInitializeSync
-// Dependencies: [4114, 676, 500, 589, 709, 2]
+// Dependencies: [4115, 676, 500, 589, 709, 2]
 
-// Module 16442 (onInitializeSync)
+// Module 16476 (onInitializeSync)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "reset" /* 4114 */;
+import closure_2 from "reset" /* 4115 */;
 import set from "set" /* 2 */;
 
 const require = arg1;

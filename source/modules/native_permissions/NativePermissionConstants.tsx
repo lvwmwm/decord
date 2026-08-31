@@ -1,9 +1,9 @@
-// Module ID: 4696
-// Function ID: 4697
+// Module ID: 4698
+// Function ID: 4699
 // Name: NativePermissionStatus
 // Dependencies: [2]
 
-// Module 4696 (NativePermissionStatus)
+// Module 4698 (NativePermissionStatus)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/native_permissions/NativePermissionConstants.tsx");

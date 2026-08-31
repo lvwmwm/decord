@@ -1,9 +1,9 @@
-// Module ID: 1991
-// Function ID: 1992
+// Module ID: 1990
+// Function ID: 1991
 // Name: ImpersonateType
 // Dependencies: [2]
 
-// Module 1991 (ImpersonateType)
+// Module 1990 (ImpersonateType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/impersonate/ImpersonateTypes.tsx");

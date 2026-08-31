@@ -1,14 +1,14 @@
-// Module ID: 15648
-// Function ID: 15649
+// Module ID: 15682
+// Function ID: 15683
 // Name: VoiceUsersItem
-// Dependencies: [19, 17, 21, 4446, 2]
+// Dependencies: [19, 17, 21, 4448, 2]
 // Exports: default
 
-// Module 15648 (VoiceUsersItem)
+// Module 15682 (VoiceUsersItem)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 noopAll;
 let closure_2 = createCacheKey.createStyles({ voiceStates: { paddingRight: 8 }, voiceStatesCollapsed: { paddingRight: 0, flexDirection: "row", flexWrap: "wrap", alignItems: "center" } });

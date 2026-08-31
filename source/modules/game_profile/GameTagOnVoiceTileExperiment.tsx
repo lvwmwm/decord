@@ -1,10 +1,10 @@
-// Module ID: 16670
-// Function ID: 16671
+// Module ID: 16703
+// Function ID: 16704
 // Name: getUnitId
-// Dependencies: [1368, 2]
+// Dependencies: [1469, 2]
 
-// Module 16670 (getUnitId)
-import getUnitIdDefault from "getUnitId" /* 1368 */;
+// Module 16703 (getUnitId)
+import getUnitIdDefault from "getUnitId" /* 1469 */;
 
 const obj = { 1: null };
 obj[1] = { showGameTag: true };

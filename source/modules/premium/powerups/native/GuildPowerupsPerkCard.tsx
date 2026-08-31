@@ -1,21 +1,21 @@
-// Module ID: 12069
-// Function ID: 12070
+// Module ID: 12102
+// Function ID: 12103
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4446, 712, 4381, 1363, 7950, 12066, 12021, 4905, 4442, 12022, 1297, 1236, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 4383, 1363, 7972, 12099, 12054, 4908, 4444, 12055, 1297, 1236, 2]
 // Exports: default
 
-// Module 12069 (GuildPowerupsPerkCard)
+// Module 12102 (GuildPowerupsPerkCard)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import useThemeDefault from "useTheme" /* 4381 */;
-import Text from "Text" /* 4442 */;
-import LinearGradientDefault from "LinearGradient" /* 4905 */;
-import apexExperiment from "apexExperiment" /* 7950 */;
-import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive" /* 12022 */;
+import useThemeDefault from "useTheme" /* 4383 */;
+import Text from "Text" /* 4444 */;
+import LinearGradientDefault from "LinearGradient" /* 4908 */;
+import apexExperiment from "apexExperiment" /* 7972 */;
+import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive" /* 12055 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -53,9 +53,9 @@ export default function GuildPowerupsPerkCard(arg0) {
   obj = { containerStyle: items, style: tmp2.card, status, onPress, children: null };
   items = [tmp2.container, style];
   obj = { style: tmp2.imageContainer, children: null };
-  let tmp3Result = tmp3(12066);
+  let tmp3Result = tmp3(12099);
   if (riveComponent == null) {
-    tmp3Result = tmp3(12021);
+    tmp3Result = tmp3(12054);
     if (imageUrl == null) {
       imageUrl = "";
     }

@@ -1,14 +1,14 @@
-// Module ID: 9542
-// Function ID: 9543
+// Module ID: 9564
+// Function ID: 9565
 // Name: getIsTabletActivitySurface
-// Dependencies: [4425, 1625, 709, 2]
+// Dependencies: [4427, 1624, 709, 2]
 // Exports: getDefaultOrientationLockState, getIsTabletActivitySurface, setOrientationLockState
 
-// Module 9542 (getIsTabletActivitySurface)
+// Module 9564 (getIsTabletActivitySurface)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4425 */;
-import isMetaQuest from "isMetaQuest" /* 1625 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4427 */;
+import isMetaQuest from "isMetaQuest" /* 1624 */;
 
 let closure_2 = DCDDeviceManager.isIpadOS();
 let closure_3 = isMetaQuest.isMetaQuest();

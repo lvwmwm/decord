@@ -1,12 +1,12 @@
-// Module ID: 6125
-// Function ID: 6126
+// Module ID: 6128
+// Function ID: 6129
 // Name: performRoleSubscriptionUpsellRedirect
-// Dependencies: [5, 676, 1398, 6126, 2010, 3, 2]
+// Dependencies: [5, 676, 1394, 6129, 2009, 3, 2]
 
-// Module 6125 (performRoleSubscriptionUpsellRedirect)
+// Module 6128 (performRoleSubscriptionUpsellRedirect)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
-import { StaticChannelRoute } from "set" /* 1398 */;
+import { StaticChannelRoute } from "set" /* 1394 */;
 
 const require = arg1;
 function performRoleSubscriptionUpsellRedirect(guildId) {
@@ -38,7 +38,7 @@ function _performRoleSubscriptionUpsellRedirect() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -139,7 +139,7 @@ function _performRoleSubscriptionTeamCreationRedirect() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -170,7 +170,7 @@ function _performRoleSubscriptionTeamCreationRedirect() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c0 = tmp;
@@ -205,7 +205,7 @@ function _performRoleSubscriptionEditPayoutRedirect() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -236,7 +236,7 @@ function _performRoleSubscriptionEditPayoutRedirect() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp8) {
           c1 = tmp;
@@ -283,7 +283,7 @@ function _performDeveloperPortalRedirectWithTokenHandoff() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

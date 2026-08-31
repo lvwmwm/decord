@@ -1,14 +1,14 @@
-// Module ID: 6750
-// Function ID: 6751
+// Module ID: 6765
+// Function ID: 6766
 // Name: MissionScrollSpotIllustration
-// Dependencies: [21, 5458, 6751, 2]
+// Dependencies: [21, 5461, 6766, 2]
 // Exports: MissionScrollSpotIllustration
 
-// Module 6750 (MissionScrollSpotIllustration)
+// Module 6765 (MissionScrollSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6751 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6766 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MissionScrollSpotIllustration.native.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 6742
-// Function ID: 6743
+// Module ID: 6757
+// Function ID: 6758
 // Name: MapleIllocon
-// Dependencies: [21, 5458, 6743, 2]
+// Dependencies: [21, 5461, 6758, 2]
 // Exports: MapleIllocon
 
-// Module 6742 (MapleIllocon)
+// Module 6757 (MapleIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6743 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6758 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MapleIllocon.native.tsx");

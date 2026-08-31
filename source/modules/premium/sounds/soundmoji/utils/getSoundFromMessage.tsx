@@ -1,12 +1,12 @@
-// Module ID: 4937
-// Function ID: 4938
+// Module ID: 4940
+// Function ID: 4941
 // Name: getSoundFromSounds
-// Dependencies: [4701, 4932, 4938, 694, 2]
+// Dependencies: [4703, 4935, 4941, 694, 2]
 // Exports: default
 
-// Module 4937 (getSoundFromSounds)
-import closure_2 from "reinjectEphemerals" /* 4701 */;
-import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4932 */;
+// Module 4940 (getSoundFromSounds)
+import closure_2 from "reinjectEphemerals" /* 4703 */;
+import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4935 */;
 
 const require = arg1;
 function getSoundFromSounds(arr) {
@@ -30,7 +30,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
     if (guild_id2 == null) {
       guild_id2 = DEFAULT_SOUND_GUILD_ID;
     }
-    return _require(4938).soundboardSoundFromAPI(found, guild_id2);
+    return _require(4941).soundboardSoundFromAPI(found, guild_id2);
   } else {
     message = message.getMessage(arg0, arg1);
     if (null != message) {
@@ -84,7 +84,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
         if (guild_id == null) {
           guild_id = DEFAULT_SOUND_GUILD_ID;
         }
-        return tmp3(4938).soundboardSoundFromAPI(found1, guild_id);
+        return tmp3(4941).soundboardSoundFromAPI(found1, guild_id);
       }
       tmp3 = _require;
     }

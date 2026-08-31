@@ -1,15 +1,15 @@
-// Module ID: 1990
-// Function ID: 1991
+// Module ID: 1989
+// Function ID: 1990
 // Name: compareGuildRoles
-// Dependencies: [11, 688, 1989, 1988, 2]
+// Dependencies: [11, 688, 1988, 1987, 2]
 // Exports: doesRoleSortHigher, filterRoleDeletes, inviteRoleToDisplayData, sortGuildRoleRecords, sortInviteRoles
 
-// Module 1990 (compareGuildRoles)
+// Module 1989 (compareGuildRoles)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import int2hslRaw from "int2hslRaw" /* 688 */;
-import fromServerArrayAll from "fromServerArray" /* 1988 */;
-import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 1989 */;
+import fromServerArrayAll from "fromServerArray" /* 1987 */;
+import extractColorStringsFromServerColors from "extractColorStringsFromServerColors" /* 1988 */;
 
 function compareGuildRoles(guildId, id) {
   guildId = guildId.guildId;

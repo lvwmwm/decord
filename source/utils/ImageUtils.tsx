@@ -1,13 +1,13 @@
-// Module ID: 1491
-// Function ID: 1492
+// Module ID: 1490
+// Function ID: 1491
 // Name: fit
-// Dependencies: [5, 1492, 1493, 12, 38, 2]
+// Dependencies: [5, 1491, 1492, 12, 38, 2]
 // Exports: dataUriFileSize, dataUrlToFile, getCoverRatio, getPaletteForAvatar, getRatio, hasDimensions, isPNGAnimated, makeCssUrlString, preloadImage, readFileAsBase64, zoomFit, zoomScale
 
-// Module 1491 (fit)
+// Module 1490 (fit)
 import _modDef38 from "module_38" /* 38 */;
-import PQueueDefault from "PQueue" /* 1492 */;
-import getSrcWithWidthAndHeight from "getSrcWithWidthAndHeight" /* 1493 */;
+import PQueueDefault from "PQueue" /* 1491 */;
+import getSrcWithWidthAndHeight from "getSrcWithWidthAndHeight" /* 1492 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importDefaultResult from "apply" /* 12 */;
 
@@ -171,7 +171,7 @@ function _isPNGAnimated() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

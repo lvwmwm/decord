@@ -1,16 +1,16 @@
-// Module ID: 14516
-// Function ID: 14517
+// Module ID: 14550
+// Function ID: 14551
 // Name: toggle
-// Dependencies: [19, 7830, 676, 14363, 4135, 6207, 1403, 11006, 1236, 2]
+// Dependencies: [19, 7852, 676, 14397, 4136, 6210, 1399, 11031, 1236, 2]
 
-// Module 14516 (toggle)
+// Module 14550 (toggle)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hasFlagAll from "hasFlag" /* 1403 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14363 */;
+import hasFlagAll from "hasFlag" /* 1399 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14397 */;
 import closure_3 from "noop" /* 19 */;
 import { FriendSourceFlags } from "ME" /* 676 */;
-import createToggle from "createToggle" /* 11006 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 createToggle = {
@@ -20,7 +20,7 @@ createToggle = {
   },
   parent: require("MobileUserSettings").MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useFriendRequestsMutualFriendsSettingValue() {
-    const FriendSourceFlagsSetting = setting(4135).FriendSourceFlagsSetting;
+    const FriendSourceFlagsSetting = setting(4136).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();
     const items = [setting];
     return React.useMemo(() => setting(closure_1_2[5]).computeFlags(setting), items).mutualFriends;

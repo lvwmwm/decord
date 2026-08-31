@@ -1,12 +1,12 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7263
+// Function ID: 7264
 // Name: fromServer
-// Dependencies: [1950, 1951, 2]
+// Dependencies: [1949, 1950, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 7242 (fromServer)
-import fromServerDefault from "fromServer" /* 1950 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
+// Module 7263 (fromServer)
+import fromServerDefault from "fromServer" /* 1949 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 
 require = arg1;
 fromServerDefault;

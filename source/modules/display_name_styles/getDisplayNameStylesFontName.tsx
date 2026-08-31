@@ -1,11 +1,11 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14236
+// Function ID: 14237
 // Name: getDisplayNameStylesFontName
-// Dependencies: [1937, 2728, 2]
+// Dependencies: [1936, 2729, 2]
 // Exports: default
 
-// Module 14202 (getDisplayNameStylesFontName)
-import messagesProxyDefault from "messagesProxy" /* 2728 */;
+// Module 14236 (getDisplayNameStylesFontName)
+import messagesProxyDefault from "messagesProxy" /* 2729 */;
 
 const obj = {};
 obj[require("DisplayNameFont").DisplayNameFont.DEFAULT] = messagesProxyDefault.ZEL6mz;

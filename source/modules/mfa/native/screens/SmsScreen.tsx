@@ -1,10 +1,10 @@
-// Module ID: 15211
-// Function ID: 15212
+// Module ID: 15244
+// Function ID: 15245
 // Name: SmsScreen
-// Dependencies: [5, 32, 19, 17, 676, 21, 7664, 15204, 1236, 530, 15208, 15203, 7652, 4893, 15206, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 7685, 15237, 1236, 530, 15241, 15236, 7673, 4896, 15239, 2]
 // Exports: default
 
-// Module 15211 (SmsScreen)
+// Module 15244 (SmsScreen)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -54,7 +54,7 @@ export default function SmsScreen(mfaChallenge) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -152,7 +152,7 @@ export default function SmsScreen(mfaChallenge) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -251,11 +251,11 @@ export default function SmsScreen(mfaChallenge) {
     }
     return applyArgumentsResult;
   }
-  let obj = finish(15204);
-  const screenStyles = obj.useScreenStyles(finish(7664)());
+  let obj = finish(15237);
+  const screenStyles = obj.useScreenStyles(finish(7685)());
   const tmp4 = first(React.useState(null), 2);
   dependencyMap = tmp4[1];
-  const tmp2 = finish(7664)();
+  const tmp2 = finish(7685)();
   [tmp6, c3] = first(React.useState(false), 2);
   const tmp7 = first(React.useState(""), 2);
   first = tmp7[0];
@@ -295,7 +295,7 @@ export default function SmsScreen(mfaChallenge) {
   obj[0] = intl2.string(mfaChallenge(1236).t.o4JNrO);
   obj[1] = tmp10;
   obj = { style: screenStyles.inputContainer, children: null };
-  obj1 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(15208).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange, label: null, accessibilityLabel: null, placeholder: null, errorMessage: null };
+  obj1 = { autoFocus: true, autoCapitalize: "characters", maxLength: mfaChallenge(15241).SMS_CODE_LENGTH, autoComplete: "sms-otp", textContentType: "oneTimeCode", keyboardType: "number-pad", onChange: handleChange, label: null, accessibilityLabel: null, placeholder: null, errorMessage: null };
   const intl3 = mfaChallenge(1236).intl;
   obj1[7] = intl3.string(mfaChallenge(1236).t["/sHnXc"]);
   const intl4 = mfaChallenge(1236).intl;
@@ -303,7 +303,7 @@ export default function SmsScreen(mfaChallenge) {
   const intl5 = mfaChallenge(1236).intl;
   obj1[9] = intl5.string(mfaChallenge(1236).t.tARzgo);
   obj1[10] = tmp4[0];
-  const items1 = [handleChange(mfaChallenge(7652).TextInput, obj1), ];
+  const items1 = [handleChange(mfaChallenge(7673).TextInput, obj1), ];
   let obj2 = { text: null, variant: "secondary", size: "sm", onPress: null };
   const intl6 = mfaChallenge(1236).intl;
   obj2[0] = intl6.string(mfaChallenge(1236).t.WbaP3r);
@@ -317,11 +317,11 @@ export default function SmsScreen(mfaChallenge) {
     }
     return applyArgumentsResult;
   };
-  items1[1] = handleChange(mfaChallenge(4893).Button, obj2);
+  items1[1] = handleChange(mfaChallenge(4896).Button, obj2);
   obj[1] = items1;
   obj[2] = _handleChange(c6, obj);
   let obj3 = { variant: "primary", text: null, loading: null, onPress: null, disabled: null };
-  const tmp15 = finish(15203);
+  const tmp15 = finish(15236);
   const intl7 = mfaChallenge(1236).intl;
   obj3[1] = intl7.string(mfaChallenge(1236).t.geKm7t);
   let tmp17 = tmp6;
@@ -336,10 +336,10 @@ export default function SmsScreen(mfaChallenge) {
     tmp6 = tmp12;
   }
   if (!tmp6) {
-    tmp6 = first.length !== tmp8(15208).SMS_CODE_LENGTH;
+    tmp6 = first.length !== tmp8(15241).SMS_CODE_LENGTH;
   }
   obj3[4] = tmp6;
-  obj[3] = handleChange(finish(15206), obj3);
+  obj[3] = handleChange(finish(15239), obj3);
   obj[4] = { mfaChallenge, finish };
   return handleChange(tmp15, obj);
 };

@@ -1,20 +1,20 @@
-// Module ID: 8168
-// Function ID: 8169
+// Module ID: 8190
+// Function ID: 8191
 // Name: getPlanIdForProduct
-// Dependencies: [109, 5, 17, 8169, 1218, 6049, 676, 6050, 1925, 505, 3, 6052, 6069, 4145, 709, 4121, 584, 500, 1474, 4123, 698, 4822, 1236, 530, 2]
+// Dependencies: [109, 5, 17, 8191, 1218, 6052, 676, 6053, 1924, 505, 3, 6055, 6072, 4146, 709, 4122, 584, 500, 1473, 4124, 698, 4825, 1236, 530, 2]
 // Exports: downgradeSubscription, ensureSkusLoaded, loadUserCountry, purchase, sendPaymentCompleteAnalytics, subscribe, updatePendingDowngrade, verifyPurchase
 
-// Module 8168 (getPlanIdForProduct)
+// Module 8190 (getPlanIdForProduct)
 import timestampDefault from "timestamp" /* 3 */;
 import failsDefault from "fails" /* 584 */;
 import closure_7 from "_objectWithoutProperties" /* 109 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import setGPlayAnalytics from "setGPlayAnalytics" /* 8169 */;
+import setGPlayAnalytics from "setGPlayAnalytics" /* 8191 */;
 import closure_11 from "fetchFingerprint" /* 1218 */;
-import closure_12 from "updateProduct" /* 6049 */;
+import closure_12 from "updateProduct" /* 6052 */;
 import ME from "ME" /* 676 */;
-import GPlayConnectionState from "GPlayConnectionState" /* 6050 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+import GPlayConnectionState from "GPlayConnectionState" /* 6053 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
 let closure_0 = arg1;
@@ -76,7 +76,7 @@ function _fetchDesktopSubscriptionSkus() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           while (true) {
@@ -128,7 +128,7 @@ function _fetchDesktopSubscriptionSkus() {
                 c21 = 1;
                 let num9 = 1;
                 logger = 1;
-                return { value: "ct", done: true };
+                return { value: "Object", done: true };
               }
             } else if (1 === tmp4) {
               if (arg0 === 1) {
@@ -511,7 +511,7 @@ function _loadUserCountry() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -550,7 +550,7 @@ function _loadUserCountry() {
           obj3[1] = closure_0;
           obj.dispatch(obj3);
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp13) {
         c3 = tmp;
@@ -587,7 +587,7 @@ function _subscribe() {
       if (1 === tmp7) {
         c9 = 0;
         message = closure_8;
-        obj1 = callback(4123);
+        obj1 = callback(4124);
         const obj2 = { productId: null, oldProductId: null };
         obj2[0] = callback;
         c5 = callback2;
@@ -598,7 +598,7 @@ function _subscribe() {
         obj2[1] = c5;
         obj3[0] = obj2;
         const result = obj1.captureBillingException(message, obj3);
-        let obj4 = callback2(4822);
+        let obj4 = callback2(4825);
         obj4 = { title: null, body: null };
         const intl = callback(1236).intl;
         obj4[0] = intl.string(callback(1236).t["U+H+kd"]);
@@ -652,7 +652,7 @@ function _verifyPurchase() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -732,7 +732,7 @@ function _verifyPurchase() {
           } else if (1 === tmp8) {
             c6 = 0;
             c6 = closure_5;
-            obj3 = lib(4123);
+            obj3 = lib(4124);
             const obj5 = { tags: null };
             let obj6 = { productId: null };
             obj6[0] = lib.productId;
@@ -822,7 +822,7 @@ closure_0 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -846,7 +846,7 @@ closure_0 = importDefaultResult(() => {
             callback2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: true };
+            return { value: "Object", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -876,7 +876,7 @@ closure_0 = importDefaultResult(() => {
                   obj3[0] = callback3(SubscriptionProductIds);
                   return obj3;
                 }
-                obj14 = SubscriptionProductIds(4121);
+                obj14 = SubscriptionProductIds(4122);
               }
             }
             c6 = 3;
@@ -959,7 +959,7 @@ const importDefaultResultResult = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -982,7 +982,7 @@ const importDefaultResultResult = importDefaultResult(() => {
             c4 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: true };
+            return { value: "Object", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1050,7 +1050,7 @@ const importDefaultResultResult = importDefaultResult(() => {
                 throw c5;
               } else {
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -1108,7 +1108,7 @@ closure_0 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1132,7 +1132,7 @@ closure_0 = importDefaultResult(() => {
             callback2 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: true };
+            return { value: "Object", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1181,7 +1181,7 @@ closure_0 = importDefaultResult(() => {
                   })(IAPProductIds);
                   return obj3;
                 }
-                obj14 = IAPProductIds(4121);
+                obj14 = IAPProductIds(4122);
               }
             }
             c6 = 3;
@@ -1264,7 +1264,7 @@ const importDefaultResultResult1 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1287,7 +1287,7 @@ const importDefaultResultResult1 = importDefaultResult(() => {
             c4 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: true };
+            return { value: "Object", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1355,7 +1355,7 @@ const importDefaultResultResult1 = importDefaultResult(() => {
                 throw c5;
               } else {
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -1408,7 +1408,7 @@ closure_0 = importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -1440,7 +1440,7 @@ closure_0 = importDefaultResult(function*() {
         return obj;
       } else {
         c0 = 3;
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } catch (tmp8) {
       c0 = tmp;
@@ -1467,7 +1467,7 @@ const importDefaultResultResult2 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1490,7 +1490,7 @@ const importDefaultResultResult2 = importDefaultResult(() => {
             c4 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: true };
+            return { value: "Object", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1558,7 +1558,7 @@ const importDefaultResultResult2 = importDefaultResult(() => {
                 throw c5;
               } else {
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -1621,7 +1621,7 @@ closure_0 = importDefaultResult((arg0, arg1) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1684,7 +1684,7 @@ closure_0 = importDefaultResult((arg0, arg1) => {
         } else {
           c6 = 0;
           c8 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp40) {
         closure_5 = tmp40;
@@ -1710,7 +1710,7 @@ closure_0 = importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {
@@ -1827,7 +1827,7 @@ const importDefaultResultResult3 = importDefaultResult(() => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -1850,7 +1850,7 @@ const importDefaultResultResult3 = importDefaultResult(() => {
             c4 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "ct", done: true };
+            return { value: "Object", done: true };
           }
         } else if (1 === tmp7) {
           if (arg0 === 1) {
@@ -1918,7 +1918,7 @@ const importDefaultResultResult3 = importDefaultResult(() => {
                 throw c5;
               } else {
                 c6 = 3;
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             }
           }
@@ -1997,7 +1997,7 @@ export const ensureSkusLoaded = function ensureSkusLoaded(closure_30) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: null };
+                return { value: "HermesInternal", done: "HermesInternal" };
               }
             } else {
               try {

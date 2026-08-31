@@ -1,21 +1,21 @@
-// Module ID: 12949
-// Function ID: 12950
+// Module ID: 12983
+// Function ID: 12984
 // Name: claimedOutboundPromotionCodeFromServer
-// Dependencies: [5, 1340, 8395, 10412, 1925, 676, 4474, 1363, 530, 500, 698, 1403, 1377, 11, 1379, 8422, 2]
+// Dependencies: [5, 1340, 8417, 10436, 1924, 676, 4476, 1363, 530, 500, 698, 1399, 1373, 11, 1375, 8444, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 12949 (claimedOutboundPromotionCodeFromServer)
+// Module 12983 (claimedOutboundPromotionCodeFromServer)
 import set2 from "set" /* 500 */;
-import DismissibleContent from "DismissibleContent" /* 1377 */;
-import addVersionedDismissedContent from "addVersionedDismissedContent" /* 1379 */;
-import CountryListMode from "CountryListMode" /* 8422 */;
+import DismissibleContent from "DismissibleContent" /* 1373 */;
+import addVersionedDismissedContent from "addVersionedDismissedContent" /* 1375 */;
+import CountryListMode from "CountryListMode" /* 8444 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_5 from "createFromServer" /* 8395 */;
-import closure_6 from "createEmptyPromotionsByType" /* 10412 */;
-import { PromotionFlags } from "GuildFeatures" /* 1925 */;
+import closure_5 from "createFromServer" /* 8417 */;
+import closure_6 from "createEmptyPromotionsByType" /* 10436 */;
+import { PromotionFlags } from "GuildFeatures" /* 1924 */;
 import ME from "ME" /* 676 */;
-import { ActivityPlatform } from "items3" /* 4474 */;
+import { ActivityPlatform } from "items3" /* 4476 */;
 
 require = arg1;
 function claimedOutboundPromotionCodeFromServer(code) {
@@ -39,7 +39,7 @@ function _claimOutboundPromotion() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ function _claimOutboundPromotion() {
               c6 = undefined;
               body = 1;
               c6 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

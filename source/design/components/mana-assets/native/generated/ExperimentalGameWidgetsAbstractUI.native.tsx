@@ -1,14 +1,14 @@
-// Module ID: 6488
-// Function ID: 6489
+// Module ID: 6501
+// Function ID: 6502
 // Name: ExperimentalGameWidgetsAbstractUI
-// Dependencies: [21, 5458, 6489, 2]
+// Dependencies: [21, 5461, 6502, 2]
 // Exports: ExperimentalGameWidgetsAbstractUI
 
-// Module 6488 (ExperimentalGameWidgetsAbstractUI)
+// Module 6501 (ExperimentalGameWidgetsAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6489 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6502 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ExperimentalGameWidgetsAbstractUI.native.tsx");

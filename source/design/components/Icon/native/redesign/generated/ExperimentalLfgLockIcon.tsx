@@ -1,14 +1,14 @@
-// Module ID: 4998
-// Function ID: 4999
+// Module ID: 5001
+// Function ID: 5002
 // Name: ExperimentalLfgLockIcon
-// Dependencies: [19, 21, 712, 4165, 4979, 2]
+// Dependencies: [19, 21, 712, 4166, 4982, 2]
 // Exports: ExperimentalLfgLockIcon
 
-// Module 4998 (ExperimentalLfgLockIcon)
+// Module 5001 (ExperimentalLfgLockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 4979 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 4982 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

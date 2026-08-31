@@ -1,22 +1,22 @@
-// Module ID: 5037
-// Function ID: 5038
+// Module ID: 5040
+// Function ID: 5041
 // Name: set
-// Dependencies: [109, 5, 32, 4445, 1304, 4540, 676, 3, 530, 5038, 5045, 687, 584, 5078, 12, 1474, 5047, 5080, 5081, 5066, 5082, 5083, 5087, 5088, 1208, 5046, 5039, 5089, 5090, 2010, 5175, 698, 2]
+// Dependencies: [109, 5, 32, 4447, 1304, 4542, 676, 3, 530, 5041, 5048, 687, 584, 5081, 12, 1473, 5050, 5083, 5084, 5069, 5085, 5086, 5090, 5091, 1208, 5049, 5042, 5092, 5093, 2009, 5178, 698, 2]
 
-// Module 5037 (set)
+// Module 5040 (set)
 import timestampDefault from "timestamp" /* 3 */;
 import failsDefault from "fails" /* 584 */;
 import setDefault from "set" /* 687 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import cancel from "cancel" /* 5038 */;
-import cancelDefault from "cancel" /* 5038 */;
-import fromBlobDefault from "fromBlob" /* 5078 */;
+import cancel from "cancel" /* 5041 */;
+import cancelDefault from "cancel" /* 5041 */;
+import fromBlobDefault from "fromBlob" /* 5081 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "_slicedToArray" /* 32 */;
-import closure_7 from "getUserAgnosticState" /* 4445 */;
+import closure_7 from "getUserAgnosticState" /* 4447 */;
 import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import closure_9 from "handleConnectionInfoChange" /* 4540 */;
+import closure_9 from "handleConnectionInfoChange" /* 4542 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -471,7 +471,7 @@ prototype["startOrResumeUpload"] = function startOrResumeUpload(closure_3, arg1)
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -575,7 +575,7 @@ prototype["uploadFileWithResumption"] = function uploadFileWithResumption(respon
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -624,7 +624,7 @@ prototype["uploadFileWithResumption"] = function uploadFileWithResumption(respon
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -765,7 +765,7 @@ prototype["uploadFileWithResumption"] = function uploadFileWithResumption(respon
                       return obj;
                     } else {
                       c6 = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                     c3 = 0;
                     c6 = 3;
@@ -913,7 +913,7 @@ prototype["trackTime"] = function trackTime(compressTimeMs, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -997,7 +997,7 @@ prototype["upload"] = function upload() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1547,7 +1547,7 @@ prototype["reactNativeCompressAndExtractData"] = function reactNativeCompressAnd
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -1868,7 +1868,7 @@ CloudUpload["tryConvertToWebP"] = function tryConvertToWebP(file, arg1, id) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -2062,7 +2062,7 @@ CloudUpload["tryConvertHeicToJpeg"] = function tryConvertHeicToJpeg(file, arg1, 
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -2238,7 +2238,7 @@ prototype["delete"] = function delete() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -2253,7 +2253,7 @@ prototype["delete"] = function delete() {
             obj[0] = arg1;
             return obj;
           } else if (null != v0.uploadedFilename) {
-            obj1 = v0(5083);
+            obj1 = v0(5086);
             const uploadTarget = obj1.getUploadTarget(tmp18.item.target);
             dependencyMap = 1;
             const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp18.uploadedFilename);
@@ -2318,7 +2318,7 @@ prototype["ensureFreshResponseUrl"] = function ensureFreshResponseUrl() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

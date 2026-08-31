@@ -1,17 +1,17 @@
-// Module ID: 7474
-// Function ID: 7475
+// Module ID: 7495
+// Function ID: 7496
 // Name: getURL
-// Dependencies: [32, 5, 17, 4104, 4425, 500, 12, 1435, 7475, 1491, 4294, 7514, 7519, 2]
+// Dependencies: [32, 5, 17, 4105, 4427, 500, 12, 1431, 7496, 1490, 4296, 7535, 7540, 2]
 
-// Module 7474 (getURL)
+// Module 7495 (getURL)
 import applyDefault from "apply" /* 12 */;
 import set from "set" /* 500 */;
-import onDismiss from "onDismiss" /* 7514 */;
+import onDismiss from "onDismiss" /* 7535 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "defaultImageSrcGenerator" /* 4104 */;
-import importDefaultResult from "set" /* 7519 */;
+import closure_7 from "defaultImageSrcGenerator" /* 4105 */;
+import importDefaultResult from "set" /* 7540 */;
 
 require = arg1;
 function getURL(name) {
@@ -43,7 +43,7 @@ function _getEmojiColors() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -145,9 +145,9 @@ let obj = {
     if (!obj.isAndroid()) {
       found = applyDefault.filter(emojis, (unicodeVersion) => {
         unicodeVersion = unicodeVersion.unicodeVersion;
-        const systemVersionMajor = callback(4425).getSystemVersionMajor();
-        const obj = callback(4425);
-        const systemVersionMinor = callback(4425).getSystemVersionMinor();
+        const systemVersionMajor = callback(4427).getSystemVersionMajor();
+        const obj = callback(4427);
+        const systemVersionMinor = callback(4427).getSystemVersionMinor();
         let flag = true;
         if (unicodeVersion > 8) {
           if (9 === unicodeVersion) {

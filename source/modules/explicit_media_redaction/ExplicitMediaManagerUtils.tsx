@@ -1,10 +1,10 @@
-// Module ID: 7303
-// Function ID: 7304
+// Module ID: 7324
+// Function ID: 7325
 // Name: hasAttachmentsEmbedsComponentsOrSnapshots
 // Dependencies: [2]
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots
 
-// Module 7303 (hasAttachmentsEmbedsComponentsOrSnapshots)
+// Module 7324 (hasAttachmentsEmbedsComponentsOrSnapshots)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");

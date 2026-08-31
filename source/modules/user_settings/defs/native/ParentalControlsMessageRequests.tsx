@@ -1,18 +1,18 @@
-// Module ID: 15424
-// Function ID: 15425
+// Module ID: 15457
+// Function ID: 15458
 // Name: toggle
-// Dependencies: [7229, 7830, 8715, 14364, 15410, 8628, 8630, 14363, 11006, 1236, 2370, 2]
+// Dependencies: [7250, 7852, 8737, 14398, 15443, 8650, 8652, 14397, 11031, 1236, 2369, 2]
 
-// Module 15424 (toggle)
+// Module 15457 (toggle)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2370 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8628 */;
-import useSelectedTeen from "useSelectedTeen" /* 8715 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14363 */;
-import result2 from "result" /* 14364 */;
-import shouldAgeVerifyForDMDefaultOff from "shouldAgeVerifyForDMDefaultOff" /* 15410 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7229 */;
-import createToggle from "createToggle" /* 11006 */;
+import messagesProxyDefault from "messagesProxy" /* 2369 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8650 */;
+import useSelectedTeen from "useSelectedTeen" /* 8737 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14397 */;
+import result2 from "result" /* 14398 */;
+import shouldAgeVerifyForDMDefaultOff from "shouldAgeVerifyForDMDefaultOff" /* 15443 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7250 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 createToggle = {
@@ -46,7 +46,7 @@ createToggle = {
         let obj = shouldAgeVerifyForDMDefaultOff;
         if (obj.shouldAgeVerifyForDMDefaultOff()) {
           obj = { entryPoint: null };
-          obj[0] = tmp2(8630).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS;
+          obj[0] = tmp2(8652).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS;
           const result = openIncodeAgeVerificationModalDefault.showAgeVerificationGetStartedModal(obj);
           const obj2 = openIncodeAgeVerificationModalDefault;
         }

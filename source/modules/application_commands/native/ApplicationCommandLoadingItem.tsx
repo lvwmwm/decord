@@ -1,17 +1,17 @@
-// Module ID: 11904
-// Function ID: 11905
+// Module ID: 11935
+// Function ID: 11936
 // Name: ApplicationCommandLoadingItem
-// Dependencies: [19, 17, 10277, 21, 4446, 712, 4900, 2]
+// Dependencies: [19, 17, 10301, 21, 4448, 712, 4903, 2]
 // Exports: default
 
-// Module 11904 (ApplicationCommandLoadingItem)
+// Module 11935 (ApplicationCommandLoadingItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import getFontScale from "getFontScale" /* 4900 */;
+import getFontScale from "getFontScale" /* 4903 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10277 */;
+import { AUTOCOMPLETE_ROW_HEIGHT } from "AUTOCOMPLETE_ROW_HEIGHT" /* 10301 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;

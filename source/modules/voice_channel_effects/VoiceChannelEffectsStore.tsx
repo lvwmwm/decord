@@ -1,17 +1,17 @@
-// Module ID: 9532
-// Function ID: 9533
+// Module ID: 9554
+// Function ID: 9555
 // Name: recentlyUsedEmojis
-// Dependencies: [4467, 709, 687, 12, 6158, 1363, 589, 2]
+// Dependencies: [4469, 709, 687, 12, 6161, 1363, 589, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 9532 (recentlyUsedEmojis)
+// Module 9554 (recentlyUsedEmojis)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1363 */;
-import ParticipantTypes from "ParticipantTypes" /* 4467 */;
-import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType" /* 6158 */;
+import ParticipantTypes from "ParticipantTypes" /* 4469 */;
+import VoiceChannelEffectAnimationType from "VoiceChannelEffectAnimationType" /* 6161 */;
 import apply from "apply" /* 12 */;
 
 let closure_4 = ParticipantTypes.EMOJI_PICKER_EMOJI_TO_SHOW_COUNT;

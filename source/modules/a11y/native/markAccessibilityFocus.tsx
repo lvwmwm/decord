@@ -1,12 +1,12 @@
-// Module ID: 4827
-// Function ID: 4828
+// Module ID: 4830
+// Function ID: 4831
 // Name: markAccessibilityFocus
-// Dependencies: [4826, 2]
+// Dependencies: [4829, 2]
 // Exports: default
 
-// Module 4827 (markAccessibilityFocus)
+// Module 4830 (markAccessibilityFocus)
 import set from "set" /* 2 */;
-import enforcingDefault from "enforcing" /* 4826 */;
+import enforcingDefault from "enforcing" /* 4829 */;
 
 const result = set.fileFinishedImporting("modules/a11y/native/markAccessibilityFocus.tsx");
 

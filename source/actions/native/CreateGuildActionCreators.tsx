@@ -1,11 +1,11 @@
-// Module ID: 12215
-// Function ID: 12216
+// Module ID: 12249
+// Function ID: 12250
 // Name: showInstantInviteModal
-// Dependencies: [1983, 676, 9847, 2]
+// Dependencies: [1982, 676, 9870, 2]
 // Exports: showInstantInviteModal
 
-// Module 12215 (showInstantInviteModal)
-import closure_2 from "comparator" /* 1983 */;
+// Module 12249 (showInstantInviteModal)
+import closure_2 from "comparator" /* 1982 */;
 import { InstantInviteSources } from "ME" /* 676 */;
 
 const require = arg1;

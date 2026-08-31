@@ -1,13 +1,13 @@
-// Module ID: 7219
-// Function ID: 7220
+// Module ID: 7240
+// Function ID: 7241
 // Name: handleConnectionOpen
-// Dependencies: [1391, 11, 589, 709, 2]
+// Dependencies: [1387, 11, 589, 709, 2]
 
-// Module 7219 (handleConnectionOpen)
+// Module 7240 (handleConnectionOpen)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
 
 function handleConnectionOpen() {
   obj = DISCORD_EPOCHDefault;

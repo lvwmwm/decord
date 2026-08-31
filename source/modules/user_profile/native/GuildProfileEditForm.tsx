@@ -1,22 +1,22 @@
-// Module ID: 14238
-// Function ID: 14239
+// Module ID: 14272
+// Function ID: 14273
 // Name: EditGuildProfileBanner
-// Dependencies: [109, 19, 17, 1993, 7313, 5966, 676, 1925, 21, 4108, 5918, 5938, 14178, 4413, 14179, 2010, 8022, 1236, 8020, 8115, 8476, 14190, 8018, 6198, 5559, 712, 9152, 14233, 589, 8060, 8477, 8492, 8025, 13633, 14239, 8474, 8478, 4442, 4173, 14240, 9158, 9025, 8861, 14200, 4290, 14201, 14210, 14212, 14213, 14217, 14221, 14209, 8339, 8163, 2]
+// Dependencies: [109, 19, 17, 1992, 7334, 5969, 676, 1924, 21, 4109, 5921, 5941, 14212, 4415, 14213, 2009, 8044, 1236, 8042, 8137, 8498, 14224, 8040, 6201, 5562, 712, 9174, 14267, 589, 8082, 8499, 8514, 8047, 13667, 14273, 8496, 8500, 4444, 4174, 14274, 9180, 9048, 8884, 14234, 4292, 14235, 14244, 14246, 14247, 14251, 14255, 14243, 8361, 8185, 2]
 // Exports: default
 
-// Module 14238 (EditGuildProfileBanner)
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4108 */;
-import contextDefault from "context" /* 5918 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5938 */;
-import ProfilePreviewButtonDefault from "ProfilePreviewButton" /* 14178 */;
+// Module 14272 (EditGuildProfileBanner)
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4109 */;
+import contextDefault from "context" /* 5921 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5941 */;
+import ProfilePreviewButtonDefault from "ProfilePreviewButton" /* 14212 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "trackCommunicationDisabled" /* 1993 */;
-import closure_9 from "createUserWidgetFromServer" /* 7313 */;
-import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 5966 */;
+import closure_8 from "trackCommunicationDisabled" /* 1992 */;
+import closure_9 from "createUserWidgetFromServer" /* 7334 */;
+import { FLOATING_UPSELL_HEIGHT } from "ARBITRARY_LARGE_OFFSET" /* 5969 */;
 import ME from "ME" /* 676 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1925 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -78,7 +78,7 @@ function EditGuildProfileBanner(user) {
   obj[8] = intl.string(user(1236).t["95hPAe"]);
   obj[9] = disabled;
   obj[1] = closure_17(ProfilePreviewButtonDefault, obj);
-  return closure_17(user(5918).AnalyticsLocationProvider, obj);
+  return closure_17(user(5921).AnalyticsLocationProvider, obj);
 }
 let closure_3 = ["nick", "bio", "guild_tag"];
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);

@@ -1,12 +1,12 @@
-// Module ID: 9016
-// Function ID: 9017
+// Module ID: 9039
+// Function ID: 9040
 // Name: useIsFriendRequestAlertsV2Enabled
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: isFriendRequestAlertsV2Enabled, useIsFriendRequestAlertsV2Enabled
 
-// Module 9016 (useIsFriendRequestAlertsV2Enabled)
+// Module 9039 (useIsFriendRequestAlertsV2Enabled)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

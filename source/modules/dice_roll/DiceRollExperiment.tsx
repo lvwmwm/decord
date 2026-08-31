@@ -1,11 +1,11 @@
-// Module ID: 8375
-// Function ID: 8376
+// Module ID: 8397
+// Function ID: 8398
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 
-// Module 8375 (apexExperiment)
+// Module 8397 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

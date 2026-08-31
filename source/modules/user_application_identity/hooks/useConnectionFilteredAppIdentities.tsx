@@ -1,12 +1,12 @@
-// Module ID: 12448
-// Function ID: 12449
+// Module ID: 12482
+// Function ID: 12483
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [19, 4476, 12449, 2]
+// Dependencies: [19, 4478, 12483, 2]
 // Exports: default
 
-// Module 12448 (useConnectionFilteredAppIdentities)
+// Module 12482 (useConnectionFilteredAppIdentities)
 import closure_2 from "noop" /* 19 */;
-import { APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS as closure_3 } from "items" /* 4476 */;
+import { APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS as closure_3 } from "items" /* 4478 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_application_identity/hooks/useConnectionFilteredAppIdentities.tsx");

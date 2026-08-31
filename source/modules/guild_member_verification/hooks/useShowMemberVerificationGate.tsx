@@ -1,14 +1,14 @@
-// Module ID: 4972
-// Function ID: 4973
+// Module ID: 4975
+// Function ID: 4976
 // Name: shouldShowMembershipVerificationGate
-// Dependencies: [1993, 1910, 1923, 4973, 589, 2]
+// Dependencies: [1992, 1909, 1922, 4976, 589, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 4972 (shouldShowMembershipVerificationGate)
-import isValidFormResponse from "isValidFormResponse" /* 4973 */;
-import closure_2 from "trackCommunicationDisabled" /* 1993 */;
-import closure_3 from "createGuildRecordFromRust" /* 1910 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+// Module 4975 (shouldShowMembershipVerificationGate)
+import isValidFormResponse from "isValidFormResponse" /* 4976 */;
+import closure_2 from "trackCommunicationDisabled" /* 1992 */;
+import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 function shouldShowMembershipVerificationGate(guildId, items) {

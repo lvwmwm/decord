@@ -1,13 +1,13 @@
-// Module ID: 15258
-// Function ID: 15259
-// Dependencies: [19, 17, 21, 4446, 712, 1500, 1629, 5957, 15111, 5564, 14168, 2]
+// Module ID: 15291
+// Function ID: 15292
+// Dependencies: [19, 17, 21, 4448, 712, 1499, 1628, 5960, 15144, 5567, 14202, 2]
 
-// Module 15258
+// Module 15291
 import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -16,13 +16,13 @@ obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, padding: Them
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScreen() {
-  let obj = _require(1500);
+  let obj = _require(1499);
   _require = obj.useNavigation();
   obj = { style: callback().container, contentContainerStyle: null, children: null };
   obj = { paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };
   obj[1] = obj;
   obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(15111).PerformanceTestingScreens);
+  const entries = Object.entries(_require(15144).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
     [tmp, ] = arg0;
     return closure_1_4(callback(closure_1_2[9]).TableRow, {
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScree
       }
     }, tmp);
   });
-  obj[2] = jsx(_require(5957).TableRowGroup, { hasIcons: true, children: null });
+  obj[2] = jsx(_require(5960).TableRowGroup, { hasIcons: true, children: null });
   return <ScrollView paddingBottom={useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16} />;
 });
 const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");

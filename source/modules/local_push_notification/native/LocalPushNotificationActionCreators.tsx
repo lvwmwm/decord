@@ -1,14 +1,14 @@
-// Module ID: 17413
-// Function ID: 17414
+// Module ID: 17446
+// Function ID: 17447
 // Name: receiveLocalNotification
-// Dependencies: [13301, 676, 1398, 7167, 709, 1208, 698, 5422, 12398, 2010, 4457, 4377, 1222, 2]
+// Dependencies: [13335, 676, 1394, 7188, 709, 1208, 698, 5425, 12432, 2009, 4459, 4379, 1222, 2]
 // Exports: receiveLocalNotification
 
-// Module 17413 (receiveLocalNotification)
+// Module 17446 (receiveLocalNotification)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import set2 from "set" /* 1398 */;
-import LocalNotificationTypes2 from "LocalNotificationTypes" /* 13301 */;
+import set2 from "set" /* 1394 */;
+import LocalNotificationTypes2 from "LocalNotificationTypes" /* 13335 */;
 import ME from "ME" /* 676 */;
 
 const LocalNotificationTypes = LocalNotificationTypes2.LocalNotificationTypes;
@@ -18,7 +18,7 @@ let result = set.fileFinishedImporting("modules/local_push_notification/native/L
 
 export const receiveLocalNotification = function receiveLocalNotification(getData) {
   if (null != getData.getData) {
-    data(7167).trackAppOpened("notification");
+    data(7188).trackAppOpened("notification");
     data = getData.getData();
     let type = data.type;
     function dispatch() {
@@ -56,7 +56,7 @@ export const receiveLocalNotification = function receiveLocalNotification(getDat
         }
       }
     }
-    let obj2 = data(7167);
+    let obj2 = data(7188);
     if (obj.isDispatching()) {
       const _setImmediate = setImmediate;
       setImmediate(dispatch);

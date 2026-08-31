@@ -1,14 +1,14 @@
-// Module ID: 12105
-// Function ID: 12106
+// Module ID: 12138
+// Function ID: 12139
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 1391, 676, 21, 4163, 1236, 6056, 4413, 7608, 4271, 4406, 712, 12106, 2010, 2]
+// Dependencies: [5, 32, 19, 1387, 676, 21, 4164, 1236, 6059, 4415, 7629, 4272, 4408, 712, 12139, 2009, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12105 (useJoinRequestButtonActions)
+// Module 12138 (useJoinRequestButtonActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import { Routes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -50,7 +50,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -190,7 +190,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

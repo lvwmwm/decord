@@ -1,9 +1,9 @@
-// Module ID: 8705
-// Function ID: 8706
+// Module ID: 8727
+// Function ID: 8728
 // Name: REMEDIATION_ELEMENT_TYPES
 // Dependencies: [2]
 
-// Module 8705 (REMEDIATION_ELEMENT_TYPES)
+// Module 8727 (REMEDIATION_ELEMENT_TYPES)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/in_app_reports/MenuConstants.tsx");

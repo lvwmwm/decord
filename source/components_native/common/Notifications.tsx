@@ -1,14 +1,14 @@
-// Module ID: 10099
-// Function ID: 10100
+// Module ID: 10122
+// Function ID: 10123
 // Name: Notifications
-// Dependencies: [19, 10100, 21, 589, 10126, 2]
+// Dependencies: [19, 10123, 21, 589, 10149, 2]
 // Exports: default
 
-// Module 10099 (Notifications)
+// Module 10122 (Notifications)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
-import NotificationWrapperDefault from "NotificationWrapper" /* 10126 */;
-import closure_3 from "handleAlertMessage" /* 10100 */;
+import NotificationWrapperDefault from "NotificationWrapper" /* 10149 */;
+import closure_3 from "handleAlertMessage" /* 10123 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

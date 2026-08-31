@@ -1,15 +1,15 @@
-// Module ID: 15752
-// Function ID: 15753
+// Module ID: 15786
+// Function ID: 15787
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [19, 1394, 676, 1388, 21, 10256, 5905, 589, 1236, 3148, 8913, 2]
+// Dependencies: [19, 1390, 676, 1384, 21, 10280, 5908, 589, 1236, 3149, 8936, 2]
 // Exports: default
 
-// Module 15752 (FavoritesGuildCoachmarkMenuItemContent)
-import Layer from "Layer" /* 5905 */;
-import items12 from "items1" /* 10256 */;
+// Module 15786 (FavoritesGuildCoachmarkMenuItemContent)
+import Layer from "Layer" /* 5908 */;
+import items12 from "items1" /* 10280 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initializeFromUserSettings" /* 1394 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import closure_4 from "initializeFromUserSettings" /* 1390 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 2 */;
 
@@ -37,7 +37,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, callback, callback1];
   const memo = callback.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "VoiceControlToggleNuxActionSheet", onButtonPress: "M2 9H1v1h1V9ZM3 8H2v1h1V8ZM6 8H5v1h1V8ZM10 7H6v1h4V7ZM12 9h-1v1h1V9ZM14 8h-2v1h2V8Z" };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "installation", onButtonPress: null };
     const intl = stateFromStores(markPopoverAsDismissed[8]).intl;
     const tmp4 = shouldShowPopover(markPopoverAsDismissed[9]);
     if (stateFromStores) {

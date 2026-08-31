@@ -1,13 +1,13 @@
-// Module ID: 11257
-// Function ID: 11258
+// Module ID: 11286
+// Function ID: 11287
 // Name: canEditMessage
-// Dependencies: [676, 6082, 4703, 6112, 2]
+// Dependencies: [676, 6085, 4705, 6115, 2]
 // Exports: default
 
-// Module 11257 (canEditMessage)
+// Module 11286 (canEditMessage)
 import set from "set" /* 2 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4703 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6082 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4705 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6085 */;
 import ME from "ME" /* 676 */;
 
 ({ MessageFlags: c3, MessageStates: c4, MessageTypes: c5 } = ME);
@@ -33,7 +33,7 @@ export default function canEditMessage(author) {
                 const isPollResult = author.isPoll();
                 let tmp17 = !isPollResult;
                 if (!isPollResult) {
-                  const tmp18 = tmp6(6112)(author);
+                  const tmp18 = tmp6(6115)(author);
                   let tmp19 = !tmp18;
                   if (!tmp18) {
                     tmp19 = author.type !== constants3.MEDIA_MENTION_MESSAGE;

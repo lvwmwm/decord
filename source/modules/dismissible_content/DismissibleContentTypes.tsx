@@ -1,12 +1,12 @@
-// Module ID: 1378
-// Function ID: 1379
+// Module ID: 1374
+// Function ID: 1375
 // Name: isSingleUseDismissibleContent
-// Dependencies: [1377, 2]
+// Dependencies: [1373, 2]
 // Exports: isGuildDismissibleContent, isRecurringDismissibleContent, isSingleUseDismissibleContent, isSingleUseGuildDismissibleContent, isSnowflakeBoundDismissibleContent, isSnowflakeBoundGuildDismissibleContent, isTimeRecurringDismissibleContent, isTimeRecurringGuildDismissibleContent, isVersionedDismissibleContent
 
-// Module 1378 (isSingleUseDismissibleContent)
+// Module 1374 (isSingleUseDismissibleContent)
 import set from "set" /* 2 */;
-import DismissibleContent from "DismissibleContent" /* 1377 */;
+import DismissibleContent from "DismissibleContent" /* 1373 */;
 
 function isSingleUseDismissibleContent(item10020) {
   let hasItem = items1.includes(item10020);

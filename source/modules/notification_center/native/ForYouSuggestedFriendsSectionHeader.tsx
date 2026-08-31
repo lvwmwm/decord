@@ -1,17 +1,17 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15991
+// Function ID: 15992
 // Name: ForYouSuggestedFriendsSectionHeader
-// Dependencies: [19, 17, 21, 4446, 712, 4442, 1236, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 4444, 1236, 2]
 // Exports: default
 
-// Module 15957 (ForYouSuggestedFriendsSectionHeader)
+// Module 15991 (ForYouSuggestedFriendsSectionHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
+import Text from "Text" /* 4444 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;

@@ -1,17 +1,17 @@
-// Module ID: 16170
-// Function ID: 16171
+// Module ID: 16204
+// Function ID: 16205
 // Name: GuildVoiceChannelSubtitle
-// Dependencies: [19, 17, 1396, 7569, 21, 10140, 4290, 1236, 4446, 589, 16171, 5339, 5333, 16172, 16174, 11794, 2]
+// Dependencies: [19, 17, 1392, 7590, 21, 10163, 4292, 1236, 4448, 589, 16205, 5342, 5336, 16206, 16208, 11825, 2]
 
-// Module 16170 (GuildVoiceChannelSubtitle)
-import useStageParticipants from "useStageParticipants" /* 5339 */;
-import _modDef16172 from "module_16172" /* 16172 */;
+// Module 16204 (GuildVoiceChannelSubtitle)
+import useStageParticipants from "useStageParticipants" /* 5342 */;
+import _modDef16206 from "module_16206" /* 16206 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import { CHANNEL_LIST_SEARCH_LAYOUT as closure_6 } from "MessageEmbedTypes" /* 7569 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
+import { CHANNEL_LIST_SEARCH_LAYOUT as closure_6 } from "MessageEmbedTypes" /* 7590 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function GuildVoiceChannelSubtitle(channel) {
@@ -292,7 +292,7 @@ function GuildVoiceChannelExtras(arg0) {
     obj[2] = channel.guild_id;
     obj[3] = closure_6;
     obj[4] = tmp4;
-    obj[1] = tmp5(_modDef16172, obj);
+    obj[1] = tmp5(_modDef16206, obj);
     tmp5Result = tmp5(tmp6, obj);
   }
   obj[1] = tmp5Result;
@@ -320,12 +320,12 @@ const memoResult = importAllResult.memo(function GuildVoiceChannelRow(channel) {
     obj = { channel: null, voiceStates: null };
     obj[0] = channel;
     obj[1] = voiceStates;
-    obj[1] = tmp4(channel(11794).VocalChannelJoinButton, obj);
+    obj[1] = tmp4(channel(11825).VocalChannelJoinButton, obj);
     trailing = tmp4(View, obj);
   }
   obj[4] = trailing;
   obj[5] = <GuildVoiceChannelExtras channel={channel} voiceStates={voiceStates} users={mapped} />;
-  return jsx(onPress(16174), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
+  return jsx(onPress(16208), { onPress: callback, voiceStates, channel, subtitle: null, trailing: null, extras: null });
 });
 const result = require("set").fileFinishedImporting("modules/search/native/components/list/rows/GuildVoiceOrStageChannelRow.tsx");
 

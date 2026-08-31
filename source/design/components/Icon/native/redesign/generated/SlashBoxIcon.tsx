@@ -1,14 +1,14 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 9008
+// Function ID: 9009
 // Name: SlashBoxIcon
-// Dependencies: [19, 21, 712, 4165, 8986, 2]
+// Dependencies: [19, 21, 712, 4166, 9009, 2]
 // Exports: SlashBoxIcon
 
-// Module 8985 (SlashBoxIcon)
+// Module 9008 (SlashBoxIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 8986 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 9009 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

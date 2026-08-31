@@ -1,18 +1,18 @@
-// Module ID: 11373
-// Function ID: 11374
+// Module ID: 11402
+// Function ID: 11403
 // Name: _transformClientActionToApiAction
-// Dependencies: [5, 1986, 1910, 4090, 676, 11374, 1370, 11, 530, 11367, 4666, 7210, 709, 2]
+// Dependencies: [5, 1985, 1909, 4091, 676, 11403, 1471, 11, 530, 11396, 4668, 7231, 709, 2]
 // Exports: clearMentionRaidDetected, createAutomodRule, deleteAutomodRule, executeAlertAction, fetchAutomodRules, removeMentionRaidRestrictionWithFeedback, updateAutomodRule, validateAutomodRule
 
-// Module 11373 (_transformClientActionToApiAction)
+// Module 11402 (_transformClientActionToApiAction)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import _transformMetadataToCamelCase from "_transformMetadataToCamelCase" /* 11374 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+import _transformMetadataToCamelCase from "_transformMetadataToCamelCase" /* 11403 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4091 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -22,14 +22,14 @@ function _transformClientActionToApiAction(type) {
 }
 function _transformClientRuleToApiRule(id) {
   const _require = id;
-  let obj = _require(11374);
+  let obj = _require(11403);
   const result = obj._transformMetadataToSnakeCase(id.triggerMetadata);
   if (null != result) {
     delete tmp2[tmp];
   }
   obj = { id: id.id, name: id.name, guild_id: id.guildId, event_type: id.eventType, trigger_type: id.triggerType, trigger_metadata: result, actions: null, enabled: null, creator_id: null, position: null, exempt_channels: null, exempt_roles: null };
   const actions = id.actions;
-  const found = actions.filter(_require(1370).isNotNullish);
+  const found = actions.filter(_require(1471).isNotNullish);
   obj[6] = found.map(_transformClientActionToApiAction);
   ({ enabled: obj2[7], creatorId: obj2[8], position: obj2[9] } = id);
   let exemptChannels = id.exemptChannels;
@@ -205,7 +205,7 @@ function _fetchAutomodRules() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -288,7 +288,7 @@ function _executeAlertAction() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -333,7 +333,7 @@ function _executeAlertAction() {
             return obj;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp8) {
           c3 = tmp;
           throw tmp8;
@@ -423,16 +423,16 @@ export const removeMentionRaidRestrictionWithFeedback = function removeMentionRa
     canResult = closure_6.can(constants.MANAGE_GUILD, guild);
   }
   if (canResult) {
-    const result = _require(11367).openConfirmRemoveMentionRaid(() => {
-      let obj = callback(4666);
-      obj = { feedback_type: callback(7210).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
+    const result = _require(11396).openConfirmRemoveMentionRaid(() => {
+      let obj = callback(4668);
+      obj = { feedback_type: callback(7231).Feedback.MENTION_RAID_REMOVE_RESTRICTION, decision_id: closure_1 };
       obj.trackWithMetadata(closure_1_7.GUILD_AUTOMOD_FEEDBACK, obj);
       const HTTP = callback(530).HTTP;
       obj = { url: closure_1_8.GUILD_AUTOMOD_CLEAR_MENTION_RAID(callback), rejectWithError: true };
       HTTP.post(obj);
       dependencyMap();
     });
-    let obj = _require(11367);
+    let obj = _require(11396);
   }
 };
 export const clearMentionRaidDetected = function clearMentionRaidDetected(guildId) {

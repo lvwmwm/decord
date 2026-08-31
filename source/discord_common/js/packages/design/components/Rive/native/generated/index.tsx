@@ -1,8 +1,8 @@
-// Module ID: 4178
-// Function ID: 4179
-// Dependencies: [2, 4179, 4236, 4238, 4240, 4242, 4244, 4246, 4248, 4250, 4252, 4254, 4256, 4258, 4260, 4262]
+// Module ID: 4179
+// Function ID: 4180
+// Dependencies: [2, 4180, 4237, 4239, 4241, 4243, 4245, 4247, 4249, 4251, 4253, 4255, 4257, 4259, 4261, 4263]
 
-// Module 4178
+// Module 4179
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/index.tsx");

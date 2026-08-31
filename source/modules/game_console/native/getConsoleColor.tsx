@@ -1,10 +1,10 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16721
+// Function ID: 16722
 // Name: getConsoleColor
 // Dependencies: [676, 712, 2]
 // Exports: default
 
-// Module 16688 (getConsoleColor)
+// Module 16721 (getConsoleColor)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import ThemesDefault from "Themes" /* 712 */;

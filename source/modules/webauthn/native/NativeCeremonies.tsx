@@ -1,9 +1,9 @@
-// Module ID: 7669
-// Function ID: 7670
+// Module ID: 7690
+// Function ID: 7691
 // Name: _promptForRegisterCredential
-// Dependencies: [5, 17, 3, 6021, 1236, 500, 7670, 7671, 1625, 2]
+// Dependencies: [5, 17, 3, 6024, 1236, 500, 7691, 7692, 1624, 2]
 
-// Module 7669 (_promptForRegisterCredential)
+// Module 7690 (_promptForRegisterCredential)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
@@ -27,7 +27,7 @@ function _promptForRegisterCredential() {
           obj[0] = credential;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ function _promptForRegisterCredential() {
               challenge = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp6) {
             if (arg0 === 1) {
@@ -146,8 +146,8 @@ Object.defineProperty(obj, "shouldDisplayAndroidFidoSelector", {
   get: () => {
     let isAndroidResult = require(500) /* set */.isAndroid();
     if (isAndroidResult) {
-      isAndroidResult = !require(1625) /* isMetaQuest */.isMetaQuest();
-      const tmpResult = require(1625) /* isMetaQuest */;
+      isAndroidResult = !require(1624) /* isMetaQuest */.isMetaQuest();
+      const tmpResult = require(1624) /* isMetaQuest */;
     }
     return isAndroidResult;
   },
@@ -184,7 +184,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -203,7 +203,7 @@ obj.getPasskeyAuthenticator = function getPasskeyAuthenticator() {
               let code = tmp5;
               c5 = 1;
               c6 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

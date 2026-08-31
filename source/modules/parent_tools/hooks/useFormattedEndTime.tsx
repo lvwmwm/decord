@@ -1,12 +1,12 @@
-// Module ID: 16804
-// Function ID: 16805
+// Module ID: 16837
+// Function ID: 16838
 // Name: useFormattedEndTime
-// Dependencies: [1923, 1236, 589, 2]
+// Dependencies: [1922, 1236, 589, 2]
 // Exports: default
 
-// Module 16804 (useFormattedEndTime)
+// Module 16837 (useFormattedEndTime)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "mergeGuildAvatar" /* 1923 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useFormattedEndTime.tsx");

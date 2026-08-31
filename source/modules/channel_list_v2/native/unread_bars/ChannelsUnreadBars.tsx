@@ -1,24 +1,24 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 15734
+// Function ID: 15735
 // Name: shouldSkipSection
-// Dependencies: [32, 19, 17, 4438, 1391, 7328, 4461, 4667, 10139, 4668, 21, 4446, 7220, 4900, 7742, 14634, 636, 643, 589, 4186, 15651, 7665, 4414, 4415, 15701, 2]
+// Dependencies: [32, 19, 17, 4440, 1387, 7349, 4463, 4669, 10162, 4670, 21, 4448, 7241, 4903, 7763, 14668, 636, 643, 589, 4187, 15685, 7686, 4416, 4417, 15735, 2]
 
-// Module 15700 (shouldSkipSection)
-import getFontScale from "getFontScale" /* 4900 */;
-import computeSubtitle from "computeSubtitle" /* 7220 */;
-import renderDefaultEmpty from "renderDefaultEmpty" /* 7742 */;
+// Module 15734 (shouldSkipSection)
+import getFontScale from "getFontScale" /* 4903 */;
+import computeSubtitle from "computeSubtitle" /* 7241 */;
+import renderDefaultEmpty from "renderDefaultEmpty" /* 7763 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "updateGuildUnreadSentinel" /* 7328 */;
-import closure_9 from "generateOldThreadCutoff" /* 4461 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 4667 */;
-import { getScaledChannelRowHeight } from "hairlineWidth" /* 10139 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4668 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "updateGuildUnreadSentinel" /* 7349 */;
+import closure_9 from "generateOldThreadCutoff" /* 4463 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4669 */;
+import { getScaledChannelRowHeight } from "hairlineWidth" /* 10162 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4670 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function shouldSkipSection(diff1) {
@@ -142,7 +142,7 @@ function findNearestUnreadItem(containerSize, id) {
             let tmp18 = item10031;
             let tmp19 = tmp70;
             let tmp20 = tmp72;
-            if (tmp12.type !== tmp71(7742).FastListItemTypes.ITEM) {
+            if (tmp12.type !== tmp71(7763).FastListItemTypes.ITEM) {
               tmp9 = item10031;
             } else {
               let tmp21 = shouldSkipSection;

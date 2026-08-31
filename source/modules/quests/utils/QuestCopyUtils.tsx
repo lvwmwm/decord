@@ -1,15 +1,15 @@
-// Module ID: 10870
-// Function ID: 10871
+// Module ID: 10894
+// Function ID: 10895
 // Name: getContextualEntrypointHeading
-// Dependencies: [5352, 1236, 8938, 8939, 8943, 7393, 7410, 5946, 2]
+// Dependencies: [5355, 1236, 8961, 8962, 8966, 7414, 7431, 5949, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 10870 (getContextualEntrypointHeading)
+// Module 10894 (getContextualEntrypointHeading)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import _copy from "_copy" /* 5946 */;
-import apexExperiment from "apexExperiment" /* 8938 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5352 */;
+import _copy from "_copy" /* 5949 */;
+import apexExperiment from "apexExperiment" /* 8961 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5355 */;
 
 ({ QuestHomeSortMethods: obj1, RewardFilterTypes: c3, TaskFilterTypes: c4 } = QuestsExperimentLocations);
 let result = set.fileFinishedImporting("modules/quests/utils/QuestCopyUtils.tsx");
@@ -159,16 +159,16 @@ export const copyShareLink = function copyShareLink(id, ctaContent) {
   ctaContent = ctaContent.ctaContent;
   let obj = apexExperiment;
   if (obj.shouldMigrateToAdAnalyticsInterface(apexExperiment.AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "copy_share_link")) {
-    let tmpResult = tmp(8939);
+    let tmpResult = tmp(8962);
     obj = { type: null, adCreativeType: null, adCreativeId: null, questContentCTA: null, surfaceId: null, sourceQuestContent: null, questContentPosition: null, impressionId: null };
-    obj[0] = tmp(8943).AdUserActionType.CLICK_INTERNAL;
-    obj[1] = tmp(7393).AdCreativeType.QUEST;
+    obj[0] = tmp(8966).AdUserActionType.CLICK_INTERNAL;
+    obj[1] = tmp(7414).AdCreativeType.QUEST;
     obj[2] = id;
     obj[3] = ctaContent;
     ({ content: obj5[4], sourceQuestContent: obj5[5], position: obj5[6], impressionId: obj5[7] } = ctaContent);
     tmpResult.captureAdUserAction(obj);
   } else {
-    tmpResult = tmp(7410);
+    tmpResult = tmp(7431);
     obj = { questId: null, questContent: null, questContentCTA: null, questContentPosition: null, impressionId: null, sourceQuestContent: null };
     obj[0] = id;
     obj[1] = ctaContent.content;

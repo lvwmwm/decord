@@ -1,13 +1,13 @@
-// Module ID: 6131
-// Function ID: 6132
+// Module ID: 6134
+// Function ID: 6135
 // Name: stopLurkingAll
-// Dependencies: [5, 4520, 4091, 676, 709, 530, 1370, 2]
+// Dependencies: [5, 4522, 4092, 676, 709, 530, 1471, 2]
 // Exports: stopLurking
 
-// Module 6131 (stopLurkingAll)
+// Module 6134 (stopLurkingAll)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createRTCConnection" /* 4520 */;
-import closure_5 from "initialize" /* 4091 */;
+import closure_4 from "createRTCConnection" /* 4522 */;
+import closure_5 from "initialize" /* 4092 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -39,7 +39,7 @@ function _stopLurkingAll() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -75,7 +75,7 @@ function _stopLurkingAll() {
                     c6 = 0;
                     c7 = 0;
                     c5 = 0;
-                    return (/* F122516 */ function*() { ... })();
+                    return (/* F122694 */ function*() { ... })();
                   });
                   return function() {
                     const self = this;
@@ -103,7 +103,7 @@ function _stopLurkingAll() {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp13) {
           v0 = tmp;
           throw tmp13;
@@ -138,7 +138,7 @@ function _stopLurking() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -165,7 +165,7 @@ function _stopLurking() {
               table = undefined;
               c3 = 1;
               guildId = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp4) {
@@ -199,7 +199,7 @@ function _stopLurking() {
               return obj;
             }
             guildId = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           guildId = tmp;

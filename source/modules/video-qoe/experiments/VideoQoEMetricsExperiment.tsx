@@ -1,12 +1,12 @@
-// Module ID: 14677
-// Function ID: 14678
+// Module ID: 14711
+// Function ID: 14712
 // Name: getVideoQoEMetricsConfig
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: getVideoQoEMetricsConfig
 
-// Module 14677 (getVideoQoEMetricsConfig)
+// Module 14711 (getVideoQoEMetricsConfig)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-09-video-qoe-metrics-tracking", kind: "user", defaultConfig: { externalAnalyticsEnabled: false }, variations: { 0: { externalAnalyticsEnabled: false }, 1: { externalAnalyticsEnabled: true } } });
 const result = set.fileFinishedImporting("modules/video-qoe/experiments/VideoQoEMetricsExperiment.tsx");

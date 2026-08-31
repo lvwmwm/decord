@@ -1,13 +1,13 @@
-// Module ID: 7144
-// Function ID: 7145
+// Module ID: 7165
+// Function ID: 7166
 // Name: emitChanges
-// Dependencies: [1923, 676, 7145, 709, 686, 589, 2]
+// Dependencies: [1922, 676, 7166, 709, 686, 589, 2]
 
-// Module 7144 (emitChanges)
+// Module 7165 (emitChanges)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _fetchReferralEligibleUsers from "_fetchReferralEligibleUsers" /* 7145 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import _fetchReferralEligibleUsers from "_fetchReferralEligibleUsers" /* 7166 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { NOOP_NULL } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -145,8 +145,8 @@ const referralTrialStore = new ReferralTrialStore(dispatcherDefault, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function handleReferralTrialOfferUpdate(userTrialOfferId) {
     userTrialOfferId = userTrialOfferId.userTrialOfferId;
     if (!c8) {
-      const referralsRemaining = userTrialOfferId(7145).fetchReferralsRemaining();
-      const obj = userTrialOfferId(7145);
+      const referralsRemaining = userTrialOfferId(7166).fetchReferralsRemaining();
+      const obj = userTrialOfferId(7166);
     }
     if (!set1.has(userTrialOfferId)) {
       set1.add(userTrialOfferId);

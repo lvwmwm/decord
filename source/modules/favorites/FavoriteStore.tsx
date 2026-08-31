@@ -1,16 +1,16 @@
-// Module ID: 1394
-// Function ID: 1395
+// Module ID: 1390
+// Function ID: 1391
 // Name: initializeFromUserSettings
-// Dependencies: [1340, 1395, 1429, 676, 1306, 12, 589, 709, 2]
+// Dependencies: [1340, 1391, 1425, 676, 1306, 12, 589, 709, 2]
 
-// Module 1394 (initializeFromUserSettings)
+// Module 1390 (initializeFromUserSettings)
 import apply from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import create from "create" /* 1306 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
-import { createChannelRecord } from "createChannelRecord" /* 1395 */;
-import { FAVORITES_UNCATEGORIZED_PARENT_ID as closure_5 } from "date" /* 1429 */;
+import { createChannelRecord } from "createChannelRecord" /* 1391 */;
+import { FAVORITES_UNCATEGORIZED_PARENT_ID as closure_5 } from "date" /* 1425 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

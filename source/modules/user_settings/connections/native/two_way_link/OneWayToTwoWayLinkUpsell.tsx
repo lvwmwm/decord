@@ -1,19 +1,19 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14539
+// Function ID: 14540
 // Name: OneWayToTwoWayNewTag
-// Dependencies: [19, 17, 676, 1388, 21, 4446, 712, 5426, 1297, 10355, 4442, 4893, 1236, 2]
+// Dependencies: [19, 17, 676, 1384, 21, 4448, 712, 5429, 1297, 10379, 4444, 4896, 1236, 2]
 // Exports: OneWayToTwoWayLinkUpsell
 
-// Module 14505 (OneWayToTwoWayNewTag)
+// Module 14539 (OneWayToTwoWayNewTag)
 import ThemesDefault from "Themes" /* 712 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10355 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10379 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { Fonts } from "ME" /* 676 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import importDefaultResult from "createTextStyle" /* 5426 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import importDefaultResult from "createTextStyle" /* 5429 */;
 
 const require = arg1;
 function OneWayToTwoWayNewTag(markAsDismissed) {
@@ -62,18 +62,18 @@ export const OneWayToTwoWayLinkUpsell = function OneWayToTwoWayLinkUpsell(newInd
         return tmp2;
       }
     }),
-    callback(newIndicatorDismissibleContent(4442).Text, { style: tmp.title, variant: "text-md/semibold", children: title })
+    callback(newIndicatorDismissibleContent(4444).Text, { style: tmp.title, variant: "text-md/semibold", children: title })
   ];
   obj[1] = items1;
   const items2 = [callback2(View, obj), img];
   obj[1] = items2;
-  const items3 = [callback2(View, obj), callback(newIndicatorDismissibleContent(4442).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
+  const items3 = [callback2(View, obj), callback(newIndicatorDismissibleContent(4444).Text, { style: tmp.body, variant: "text-sm/medium", children: body }), ];
   const obj4 = { style: tmp.reconnectButton, children: null };
   const obj5 = { text: null, onPress: null };
   const intl = newIndicatorDismissibleContent(1236).intl;
   obj5[0] = intl.string(newIndicatorDismissibleContent(1236).t.vD60Pv);
   obj5[1] = onPress;
-  obj4[1] = callback(newIndicatorDismissibleContent(4893).Button, obj5);
+  obj4[1] = callback(newIndicatorDismissibleContent(4896).Button, obj5);
   items3[2] = callback(View, obj4);
   obj[1] = items3;
   return callback2(View, obj);

@@ -1,20 +1,20 @@
-// Module ID: 16645
-// Function ID: 16646
+// Module ID: 16678
+// Function ID: 16679
 // Name: VoicePanelModes
-// Dependencies: [32, 19, 17, 11776, 11774, 16600, 11777, 21, 4186, 9524, 4446, 11775, 4892, 9148, 4414, 5617, 9513, 16604, 9516, 9514, 16594, 10929, 16515, 9518, 4166, 712, 4447, 7743, 9521, 2]
+// Dependencies: [32, 19, 17, 11807, 11805, 16633, 11808, 21, 4187, 9546, 4448, 11806, 4895, 9170, 4416, 5620, 9535, 16637, 9538, 9536, 16627, 10953, 16549, 9540, 4167, 712, 4449, 7764, 9543, 2]
 
-// Module 16645 (VoicePanelModes)
-import _modDef9524 from "module_9524" /* 9524 */;
+// Module 16678 (VoicePanelModes)
+import _modDef9546 from "module_9546" /* 9546 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { PixelRatio } from "get ActivityIndicator" /* 17 */;
-import VoicePanelModes from "VoicePanelModes" /* 11776 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11774 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16600 */;
-import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 11777 */;
+import VoicePanelModes from "VoicePanelModes" /* 11807 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11805 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16633 */;
+import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 11808 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import importDefaultResult from "module_4186" /* 4186 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import importDefaultResult from "module_4187" /* 4187 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -24,7 +24,7 @@ const MODE_CHANGE_PHYSICS = VoicePanelModes.MODE_CHANGE_PHYSICS;
 let c13 = 25;
 let c14 = 0.05;
 let c15 = 0.0075;
-let closure_16 = importDefaultResult.createAnimatedComponent(_modDef9524);
+let closure_16 = importDefaultResult.createAnimatedComponent(_modDef9546);
 function getScaleChangeWithOverscroll(arg0, arg1, arg2) {
   if (arg0 >= arg2) {
     return arg1;

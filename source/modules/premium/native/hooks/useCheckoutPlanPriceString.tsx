@@ -1,12 +1,12 @@
-// Module ID: 12893
-// Function ID: 12894
+// Module ID: 12927
+// Function ID: 12928
 // Name: useCheckoutPlanPriceString
-// Dependencies: [19, 7116, 7099, 500, 2]
+// Dependencies: [19, 7137, 7120, 500, 2]
 // Exports: useCheckoutPlanPriceString
 
-// Module 12893 (useCheckoutPlanPriceString)
+// Module 12927 (useCheckoutPlanPriceString)
 import closure_2 from "noop" /* 19 */;
-import { useNativeCheckoutStore } from "context" /* 7116 */;
+import { useNativeCheckoutStore } from "context" /* 7137 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/native/hooks/useCheckoutPlanPriceString.tsx");

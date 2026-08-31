@@ -1,9 +1,9 @@
-// Module ID: 15880
-// Function ID: 15881
+// Module ID: 15914
+// Function ID: 15915
 // Name: SpecialGuildsNodeIds
 // Dependencies: [2]
 
-// Module 15880 (SpecialGuildsNodeIds)
+// Module 15914 (SpecialGuildsNodeIds)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guilds_bar/GuildsBarTypes.tsx");

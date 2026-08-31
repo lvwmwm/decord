@@ -1,13 +1,13 @@
-// Module ID: 9373
-// Function ID: 9374
+// Module ID: 9395
+// Function ID: 9396
 // Name: updateActivities
-// Dependencies: [9374, 659, 589, 709, 2]
+// Dependencies: [9396, 659, 589, 709, 2]
 
-// Module 9373 (updateActivities)
+// Module 9395 (updateActivities)
 import initializeDefault from "initialize" /* 589 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import handleUpdateActivityDefault from "handleUpdateActivity" /* 9374 */;
+import handleUpdateActivityDefault from "handleUpdateActivity" /* 9396 */;
 
 function updateActivities() {
   items = [];

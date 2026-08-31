@@ -1,15 +1,15 @@
-// Module ID: 6024
-// Function ID: 6025
+// Module ID: 6027
+// Function ID: 6028
 // Name: useShouldShowInlineGuildCapUpsell
-// Dependencies: [1910, 1923, 676, 589, 6025, 4108, 2]
+// Dependencies: [1909, 1922, 676, 589, 6028, 4109, 2]
 // Exports: hasIncreasedGuildCap, hideInlineGuildCapUpsell, isAtGuildCapAndNonPremium, useShouldShowInlineGuildCapUpsell
 
-// Module 6024 (useShouldShowInlineGuildCapUpsell)
+// Module 6027 (useShouldShowInlineGuildCapUpsell)
 import initialize from "initialize" /* 589 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4108 */;
-import HotspotStore2 from "HotspotStore" /* 6025 */;
-import closure_3 from "createGuildRecordFromRust" /* 1910 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4109 */;
+import HotspotStore2 from "HotspotStore" /* 6028 */;
+import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { MAX_USER_GUILDS } from "ME" /* 676 */;
 
 require = arg1;
@@ -21,12 +21,12 @@ export const useShouldShowInlineGuildCapUpsell = function useShouldShowInlineGui
   const obj = initialize;
   const items1 = [HotspotStore2.HotspotStore];
   const stateFromStores1 = initialize.useStateFromStores(items1, () => {
-    const HotspotStore = callback(6025).HotspotStore;
-    return HotspotStore.hasHotspot(callback(6025).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
+    const HotspotStore = callback(6028).HotspotStore;
+    return HotspotStore.hasHotspot(callback(6028).HotspotLocations.GUILD_CAP_INLINE_UPSELL);
   });
   const obj2 = initialize;
   const items2 = [closure_4];
-  const stateFromStoresObject = initialize.useStateFromStoresObject(items2, () => !callback2(4108).isPremium(currentUser.getCurrentUser()));
+  const stateFromStoresObject = initialize.useStateFromStoresObject(items2, () => !callback2(4109).isPremium(currentUser.getCurrentUser()));
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }

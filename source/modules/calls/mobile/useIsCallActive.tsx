@@ -1,13 +1,13 @@
-// Module ID: 7836
-// Function ID: 7837
+// Module ID: 7858
+// Function ID: 7859
 // Name: useIsCallActive
-// Dependencies: [5187, 4462, 4467, 589, 2]
+// Dependencies: [5190, 4464, 4469, 589, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 7836 (useIsCallActive)
-import closure_2 from "callConnect" /* 5187 */;
-import closure_3 from "getParticipants" /* 4462 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4467 */;
+// Module 7858 (useIsCallActive)
+import closure_2 from "callConnect" /* 5190 */;
+import closure_3 from "getParticipants" /* 4464 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4469 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/calls/mobile/useIsCallActive.tsx");

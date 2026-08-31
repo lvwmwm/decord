@@ -1,16 +1,16 @@
-// Module ID: 11062
-// Function ID: 11063
+// Module ID: 11091
+// Function ID: 11092
 // Name: fetchColors
-// Dependencies: [32, 5, 19, 4487, 4474, 11063, 8062, 5919, 7987, 38, 7995, 1956, 7984, 6112, 2]
+// Dependencies: [32, 5, 19, 4489, 4476, 11092, 8084, 5922, 8009, 38, 8017, 1955, 8006, 6115, 2]
 // Exports: default
 
-// Module 11062 (fetchColors)
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1956 */;
+// Module 11091 (fetchColors)
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "addApplication" /* 4487 */;
-import { ImageSizes } from "items3" /* 4474 */;
+import closure_6 from "addApplication" /* 4489 */;
+import { ImageSizes } from "items3" /* 4476 */;
 
 require = arg1;
 function fetchColors(play) {
@@ -35,7 +35,7 @@ function _fetchApplicationParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -101,7 +101,7 @@ function _fetchApplicationParts() {
             return obj;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp6) {
           c4 = tmp;
           throw tmp6;
@@ -136,7 +136,7 @@ function _fetchUserParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -168,7 +168,7 @@ function _fetchUserParts() {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } else {
                     try {
@@ -200,7 +200,7 @@ function _fetchUserParts() {
                         return obj;
                       } else {
                         v0 = 3;
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } catch (tmp8) {
                       v0 = tmp;
@@ -221,7 +221,7 @@ function _fetchUserParts() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp6) {
           c1 = tmp;
@@ -257,7 +257,7 @@ function _fetchWatchedContentParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -296,7 +296,7 @@ function _fetchWatchedContentParts() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp11) {
           c1 = tmp;
           throw tmp11;
@@ -331,7 +331,7 @@ function _fetchListenedContentParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -365,7 +365,7 @@ function _fetchListenedContentParts() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp7) {
           c1 = tmp;
           throw tmp7;
@@ -400,7 +400,7 @@ function _fetchTopArtistContentParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -417,7 +417,7 @@ function _fetchTopArtistContentParts() {
             } else if ("media" in lib.extra) {
               const image_url = lib.extra.media.image_url;
               v0(38)(null != image_url, "missing image url for top artist");
-              obj1 = lib(7987);
+              obj1 = lib(8009);
               dependencyMap = 1;
               v0 = 1;
               obj1 = { value: null, done: false };
@@ -434,7 +434,7 @@ function _fetchTopArtistContentParts() {
             return obj;
           }
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp10) {
           v0 = tmp;
           throw tmp10;
@@ -470,7 +470,7 @@ function _loadContentEntryParts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -500,7 +500,7 @@ function _loadContentEntryParts() {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {
@@ -517,7 +517,7 @@ function _loadContentEntryParts() {
                       if (closure_1_2.type === arr(closure_1_2[11]).ComponentType.CONTENT_INVENTORY_ENTRY) {
                         function _fetchEntryParts() {
                           const self = this;
-                          const tmp = closure_1_4(/* F122823 */ function() { ... });
+                          const tmp = closure_1_4(/* F122999 */ function() { ... });
                           closure_1 = tmp;
                           const apply = tmp.apply;
                           if (typeof apply === "unknown") {
@@ -592,7 +592,7 @@ function _loadContentEntryParts() {
                         })());
                       }
                       arr = 3;
-                      return { value: "HermesInternal", done: null };
+                      return { value: "HermesInternal", done: "HermesInternal" };
                     }
                   } catch (tmp4) {
                     arr = tmp;
@@ -633,7 +633,7 @@ function _loadContentEntryParts() {
               return obj2;
             } else {
               c11 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             if (3 !== tmp8) {
@@ -737,7 +737,7 @@ function isMessageRenderable(arg0) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
     if (nextResult.type === PermissionOverwriteType.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(7984);
+      let tmp3Result = tmp3(8006);
       let obj = { component: null, message: null };
       obj = { contentInventoryEntry: null };
       let tmp5 = nextResult;
@@ -773,7 +773,7 @@ export default function useLoadMessageContentEntries(arg0) {
   const tmp7 = first(first1.useState(new Set()), 2);
   first1 = tmp7[0];
   closure_6 = tmp7[1];
-  let obj = _require(7987);
+  let obj = _require(8009);
   _require = undefined;
   const colorStore = obj.useColorStore((palette) => palette.palette);
   _require = callback((arg0, arg1) => {
@@ -794,7 +794,7 @@ export default function useLoadMessageContentEntries(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

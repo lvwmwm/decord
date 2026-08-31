@@ -1,15 +1,16 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15477
+// Function ID: 15478
 // Name: MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG
-// Dependencies: [15445, 15446, 2]
+// Dependencies: [15478, 15479, 2]
 
-// Module 15444 (MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG)
-import set from "set" /* 2 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15445 */;
-import route from "route" /* 15446 */;
+// Module 15477 (MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG)
+import routeAll from "route" /* 15479 */;
 
 const obj = {};
-obj[MobileNotifSettings.MobileNotifSettings.VOICE_ACTIVITY_TITLE] = route.VoiceActivityTitleSetting;
-const result = set.fileFinishedImporting("modules/user_settings/notifications/native/codegen/MobileNotifSettingsRendererConfig.tsx");
+obj[require("MobileNotifSettings").MobileNotifSettings.NOTIF_REALTIME] = routeAll.RealtimeRoute;
+obj[require("MobileNotifSettings").MobileNotifSettings.NOTIF_CATEGORY_SOCIAL] = routeAll.CategorySocialRoute;
+obj[require("MobileNotifSettings").MobileNotifSettings.NOTIF_CATEGORY_SERVER] = routeAll.CategoryServerRoute;
+obj[require("MobileNotifSettings").MobileNotifSettings.NOTIF_CATEGORY_OTHER] = routeAll.CategoryOtherRoute;
+const result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/codegen/MobileNotifSettingsRendererConfig.tsx");
 
 export const MOBILE_NOTIF_SETTINGS_RENDERER_CONFIG = obj;

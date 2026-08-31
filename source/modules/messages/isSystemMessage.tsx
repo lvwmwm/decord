@@ -1,10 +1,10 @@
-// Module ID: 6082
-// Function ID: 6083
+// Module ID: 6085
+// Function ID: 6086
 // Name: isSystemMessage
 // Dependencies: [686, 2]
 // Exports: default
 
-// Module 6082 (isSystemMessage)
+// Module 6085 (isSystemMessage)
 import set from "set" /* 2 */;
 import set2 from "set" /* 686 */;
 

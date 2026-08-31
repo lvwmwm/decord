@@ -1,13 +1,13 @@
-// Module ID: 9468
-// Function ID: 9469
+// Module ID: 9490
+// Function ID: 9491
 // Name: useIsActivityFocused
-// Dependencies: [4462, 1390, 9429, 589, 2]
+// Dependencies: [4464, 1386, 9451, 589, 2]
 // Exports: default, isActivityFocused
 
-// Module 9468 (useIsActivityFocused)
-import sortKey from "sortKey" /* 9429 */;
-import closure_2 from "getParticipants" /* 4462 */;
-import closure_3 from "participantFromServer" /* 1390 */;
+// Module 9490 (useIsActivityFocused)
+import sortKey from "sortKey" /* 9451 */;
+import closure_2 from "getParticipants" /* 4464 */;
+import closure_3 from "participantFromServer" /* 1386 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/useIsActivityFocused.tsx");

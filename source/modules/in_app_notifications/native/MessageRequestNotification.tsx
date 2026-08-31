@@ -1,10 +1,10 @@
-// Module ID: 10897
-// Function ID: 10898
+// Module ID: 10921
+// Function ID: 10922
 // Name: MessageRequestInAppNotification
-// Dependencies: [19, 21, 1236, 10117, 4301, 10193, 1297, 10128, 2]
+// Dependencies: [19, 21, 1236, 10140, 4303, 10216, 1297, 10151, 2]
 // Exports: default
 
-// Module 10897 (MessageRequestInAppNotification)
+// Module 10921 (MessageRequestInAppNotification)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -26,9 +26,9 @@ export default function MessageRequestInAppNotification(notification) {
     return obj;
   }, items);
   const callback = React.useCallback(() => {
-    numMutualGuilds(10117).clearNotification();
-    const obj = numMutualGuilds(10117);
-    const rootNavigationRef = author(4301).getRootNavigationRef();
+    numMutualGuilds(10140).clearNotification();
+    const obj = numMutualGuilds(10140);
+    const rootNavigationRef = author(4303).getRootNavigationRef();
     if (rootNavigationRef != null) {
       rootNavigationRef.navigate("message-requests");
     }
@@ -40,8 +40,8 @@ export default function MessageRequestInAppNotification(notification) {
   obj = { text: null };
   let intl = author(1236).intl;
   obj[0] = intl.string(author(1236).t["Bx4/Lf"]);
-  obj[2] = jsx(author(10128).SystemMessageText, { text: null });
+  obj[2] = jsx(author(10151).SystemMessageText, { text: null });
   obj[3] = callback;
   obj[4] = notification;
-  return jsx(author(10193).NotificationPressable, { text: null });
+  return jsx(author(10216).NotificationPressable, { text: null });
 };

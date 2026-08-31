@@ -1,15 +1,15 @@
-// Module ID: 8299
-// Function ID: 8300
+// Module ID: 8321
+// Function ID: 8322
 // Name: PremiumFeaturesLogo
-// Dependencies: [19, 1925, 21, 8300, 7129, 5458, 4108, 2]
+// Dependencies: [19, 1924, 21, 8322, 7150, 5461, 4109, 2]
 // Exports: default
 
-// Module 8299 (PremiumFeaturesLogo)
+// Module 8321 (PremiumFeaturesLogo)
 import noopAll from "noop" /* 19 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4108 */;
-import registerAssetDefault from "registerAsset" /* 7129 */;
-import registerAssetDefault2 from "registerAsset" /* 8300 */;
-import { PremiumTypes } from "GuildFeatures" /* 1925 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4109 */;
+import registerAssetDefault from "registerAsset" /* 7150 */;
+import registerAssetDefault2 from "registerAsset" /* 8322 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -26,7 +26,7 @@ export default function PremiumFeaturesLogo(premiumType) {
     tmp3 = registerAssetDefault;
   }
   const obj = { accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null, resizeMode: "contain", source: null };
-  const tmpResult = tmp(5458);
+  const tmpResult = tmp(5461);
   obj[1] = getPremiumPlanItem.getPremiumTypeDisplayName(premiumType);
   obj[3] = premiumType.style;
   obj[5] = tmp3;

@@ -1,22 +1,22 @@
-// Module ID: 7414
-// Function ID: 7415
+// Module ID: 7435
+// Function ID: 7436
 // Name: isSponsoredPlayQuest
-// Dependencies: [32, 4463, 1910, 4090, 4465, 7415, 5352, 7416, 7417, 7418, 7419, 7420, 2]
+// Dependencies: [32, 4465, 1909, 4091, 4467, 7436, 5355, 7437, 7438, 7439, 7440, 7441, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7414 (isSponsoredPlayQuest)
-import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7416 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7417 */;
-import canStreamInChannel from "canStreamInChannel" /* 7418 */;
-import QuestType2 from "QuestType" /* 7419 */;
-import getQuestContentName from "getQuestContentName" /* 7420 */;
+// Module 7435 (isSponsoredPlayQuest)
+import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7437 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 7438 */;
+import canStreamInChannel from "canStreamInChannel" /* 7439 */;
+import QuestType2 from "QuestType" /* 7440 */;
+import getQuestContentName from "getQuestContentName" /* 7441 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "set" /* 4463 */;
-import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_6 from "updateVoiceState" /* 4465 */;
-import closure_7 from "keys" /* 7415 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5352 */;
+import closure_3 from "set" /* 4465 */;
+import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_6 from "updateVoiceState" /* 4467 */;
+import closure_7 from "keys" /* 7436 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5355 */;
 
 require = arg1;
 function isSponsoredPlayQuest(quest) {

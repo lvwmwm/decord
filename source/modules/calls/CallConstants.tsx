@@ -1,10 +1,10 @@
-// Module ID: 4467
-// Function ID: 4468
+// Module ID: 4469
+// Function ID: 4470
 // Name: ParticipantTypes
 // Dependencies: [2]
 // Exports: isActivityParticipant, isStreamParticipant, isUserParticipant
 
-// Module 4467 (ParticipantTypes)
+// Module 4469 (ParticipantTypes)
 import set from "set" /* 2 */;
 
 let obj = { STREAM: 0, [0]: "STREAM", HIDDEN_STREAM: 1, [1]: "HIDDEN_STREAM", USER: 2, [2]: "USER", ACTIVITY: 3, [3]: "ACTIVITY" };

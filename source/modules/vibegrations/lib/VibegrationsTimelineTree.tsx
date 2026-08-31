@@ -1,12 +1,12 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16153
+// Function ID: 16154
 // Name: buildTimelineTree
-// Dependencies: [32, 3470, 1236, 2]
+// Dependencies: [32, 3471, 1236, 2]
 // Exports: announcementNotes, currentStep, describeNode, describeTaskStatus, endsWithStreamedMessage, latestTodos, streamedContent, streamedMessages, turnLifecycle, turnSegments
 
-// Module 16119 (buildTimelineTree)
+// Module 16153 (buildTimelineTree)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3470 */;
+import messagesProxyDefault from "messagesProxy" /* 3471 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;

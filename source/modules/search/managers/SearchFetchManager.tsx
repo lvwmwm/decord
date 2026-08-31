@@ -1,12 +1,12 @@
-// Module ID: 11854
-// Function ID: 11855
+// Module ID: 11885
+// Function ID: 11886
 // Name: create
-// Dependencies: [11852, 11853, 2]
+// Dependencies: [11883, 11884, 2]
 
-// Module 11854 (create)
+// Module 11885 (create)
 import set from "set" /* 2 */;
-import cleanUp from "cleanUp" /* 11852 */;
-import fetch from "fetch" /* 11853 */;
+import cleanUp from "cleanUp" /* 11883 */;
+import fetch from "fetch" /* 11884 */;
 
 const AbstractSearchFetchManager = cleanUp.AbstractSearchFetchManager;
 class SearchFetchManager extends AbstractSearchFetchManager {

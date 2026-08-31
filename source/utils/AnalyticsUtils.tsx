@@ -1,7 +1,7 @@
 // Module ID: 698
 // Function ID: 699
 // Name: expandEventProperties
-// Dependencies: [109, 19, 699, 706, 676, 13782, 4475, 1917, 697, 503, 13780, 1208, 709, 7366, 1236, 7, 514, 2, 13783]
+// Dependencies: [109, 19, 699, 706, 676, 13816, 4477, 1916, 697, 503, 13814, 1208, 709, 7387, 1236, 7, 514, 2, 13817]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
 // Module 698 (expandEventProperties)
@@ -9,16 +9,16 @@ import reportAll from "report" /* 7 */;
 import v1 from "v1" /* 514 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import _modDef1208 from "module_1208" /* 1208 */;
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7366 */;
-import IGNORE_ANALYTICS_BREADCRUMB_EVENTS2 from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 13780 */;
-import MEAll from "ME" /* 13783 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7387 */;
+import IGNORE_ANALYTICS_BREADCRUMB_EVENTS2 from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 13814 */;
+import MEAll from "ME" /* 13817 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
 import withEqualityFn from "withEqualityFn" /* 699 */;
 import closure_9 from "refreshSourceMapCookie" /* 706 */;
 import ME from "ME" /* 676 */;
-import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags" /* 13782 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4475 */;
-import isBlockedDomain from "isBlockedDomain" /* 1917 */;
+import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags" /* 13816 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4477 */;
+import isBlockedDomain from "isBlockedDomain" /* 1916 */;
 import importAllResult from "noop" /* 19 */;
 import encodeProperties from "encodeProperties" /* 503 */;
 import importAllResult1 from "encodeProperties" /* 503 */;

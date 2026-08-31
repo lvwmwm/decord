@@ -1,14 +1,14 @@
-// Module ID: 15483
-// Function ID: 15484
+// Module ID: 15517
+// Function ID: 15518
 // Name: useInitialRegistrationStep
-// Dependencies: [19, 1218, 6019, 15468, 15467, 589, 6017, 2]
+// Dependencies: [19, 1218, 6022, 15502, 15501, 589, 6020, 2]
 // Exports: default
 
-// Module 15483 (useInitialRegistrationStep)
+// Module 15517 (useInitialRegistrationStep)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "hasConsented" /* 6019 */;
-import { resetRegistration } from "useRegistrationUIStore" /* 15468 */;
+import closure_5 from "hasConsented" /* 6022 */;
+import { resetRegistration } from "useRegistrationUIStore" /* 15502 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/auth/native/useInitialRegistrationStep.tsx");

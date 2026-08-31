@@ -1,10 +1,10 @@
-// Module ID: 14606
-// Function ID: 14607
+// Module ID: 14639
+// Function ID: 14640
 // Name: _search
-// Dependencies: [5, 676, 530, 585, 6148, 2]
+// Dependencies: [5, 676, 530, 585, 6151, 2]
 // Exports: search
 
-// Module 14606 (_search)
+// Module 14639 (_search)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -29,7 +29,7 @@ function _search() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -55,7 +55,7 @@ function _search() {
               aPIError = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

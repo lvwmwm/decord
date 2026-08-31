@@ -1,15 +1,15 @@
-// Module ID: 17124
-// Function ID: 17125
+// Module ID: 17157
+// Function ID: 17158
 // Name: title
-// Dependencies: [17125, 676, 17127, 506, 4095, 711, 1236, 2]
+// Dependencies: [17158, 676, 17160, 506, 4096, 711, 1236, 2]
 
-// Module 17124 (title)
+// Module 17157 (title)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import applyOverwritesAll from "applyOverwrites" /* 4095 */;
-import handleSetSection from "handleSetSection" /* 17125 */;
+import applyOverwritesAll from "applyOverwrites" /* 4096 */;
+import handleSetSection from "handleSetSection" /* 17158 */;
 import ME from "ME" /* 676 */;
-import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17127 */;
+import HOLOGRAPHIC_ROLE_COLORS from "HOLOGRAPHIC_ROLE_COLORS" /* 17160 */;
 import importAllResult from "fromString" /* 506 */;
 import unsafe_getRawColor from "unsafe_getRawColor" /* 711 */;
 

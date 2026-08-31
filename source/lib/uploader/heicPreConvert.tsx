@@ -1,12 +1,12 @@
-// Module ID: 8110
-// Function ID: 8111
+// Module ID: 8132
+// Function ID: 8133
 // Name: itemNeedsHeicPreConversion
-// Dependencies: [32, 5, 5038, 5080, 5175, 2010, 5081, 5066, 2]
+// Dependencies: [32, 5, 5041, 5083, 5178, 2009, 5084, 5069, 2]
 // Exports: maybePreConvertHeicItem
 
-// Module 8110 (itemNeedsHeicPreConversion)
-import cancel from "cancel" /* 5038 */;
-import set from "set" /* 5080 */;
+// Module 8132 (itemNeedsHeicPreConversion)
+import cancel from "cancel" /* 5041 */;
+import set from "set" /* 5083 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -44,7 +44,7 @@ function _maybePreConvertHeicItem() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

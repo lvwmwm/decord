@@ -1,15 +1,15 @@
-// Module ID: 4328
-// Function ID: 4329
+// Module ID: 4330
+// Function ID: 4331
 // Name: handleEnd
-// Dependencies: [1218, 4329, 4330, 709, 1909, 12, 589, 2]
+// Dependencies: [1218, 4331, 4332, 709, 1908, 12, 589, 2]
 
-// Module 4328 (handleEnd)
+// Module 4330 (handleEnd)
 import apply from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import cloneGuildThemeSettings from "cloneGuildThemeSettings" /* 1909 */;
+import cloneGuildThemeSettings from "cloneGuildThemeSettings" /* 1908 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import GuildThemePreviewOrigin from "GuildThemePreviewOrigin" /* 4329 */;
+import GuildThemePreviewOrigin from "GuildThemePreviewOrigin" /* 4331 */;
 
 require = arg1;
 function handleEnd() {
@@ -134,7 +134,7 @@ const guildThemePreviewStore = new GuildThemePreviewStore(dispatcherDefault, {
     if (null == obj.guildId) {
       return false;
     } else {
-      obj = { presetId: null, customUserThemeSettings: "r" };
+      obj = { presetId: null, customUserThemeSettings: "Array" };
       obj[0] = tmp;
       const isEqualResult = apply.isEqual(obj.draft, obj);
       let flag = !isEqualResult;

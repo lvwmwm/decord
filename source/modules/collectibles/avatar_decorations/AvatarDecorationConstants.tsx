@@ -1,11 +1,11 @@
-// Module ID: 1436
-// Function ID: 1437
+// Module ID: 1432
+// Function ID: 1433
 // Name: DECORATION_TO_AVATAR_RATIO
-// Dependencies: [1437, 2]
+// Dependencies: [1433, 2]
 
-// Module 1436 (DECORATION_TO_AVATAR_RATIO)
+// Module 1432 (DECORATION_TO_AVATAR_RATIO)
 import set from "set" /* 2 */;
-import frozen from "frozen" /* 1437 */;
+import frozen from "frozen" /* 1433 */;
 
 const AvatarSizes = frozen.AvatarSizes;
 const result = set.fileFinishedImporting("modules/collectibles/avatar_decorations/AvatarDecorationConstants.tsx");

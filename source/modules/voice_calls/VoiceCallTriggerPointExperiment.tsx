@@ -1,12 +1,12 @@
-// Module ID: 16846
-// Function ID: 16847
+// Module ID: 16879
+// Function ID: 16880
 // Name: experiment
-// Dependencies: [4360, 4357, 2]
+// Dependencies: [4362, 4359, 2]
 
-// Module 16846 (experiment)
+// Module 16879 (experiment)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4360 */;
-import createExperiment from "createExperiment" /* 4357 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4362 */;
+import createExperiment from "createExperiment" /* 4359 */;
 
 const items = [{ id: 1, label: "Treatment", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-04_voice_call_trigger_point", label: "Voice Call Trigger Point Experiment", commonTriggerPoint: ExperimentBuckets.CommonTriggerPoints.VOICE_CALL, defaultConfig: { enabled: false }, treatments: items });

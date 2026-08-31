@@ -1,27 +1,27 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9660
+// Function ID: 9661
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 1395, 9639, 9608, 676, 21, 4446, 712, 5033, 1297, 7711, 9640, 4442, 1236, 4893, 4689, 9641, 2010, 4413, 2]
+// Dependencies: [32, 19, 17, 1391, 9661, 9630, 676, 21, 4448, 712, 5036, 1297, 7732, 9662, 4444, 1236, 4896, 4691, 9663, 2009, 4415, 2]
 // Exports: default
 
-// Module 9638 (StageChannelUpsell)
+// Module 9660 (StageChannelUpsell)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4442 */;
-import Button2 from "Button" /* 4893 */;
-import PressableBase from "PressableBase" /* 5033 */;
-import registerAssetDefault from "registerAsset" /* 7711 */;
-import registerAssetDefault2 from "registerAsset" /* 9640 */;
+import Text from "Text" /* 4444 */;
+import Button2 from "Button" /* 4896 */;
+import PressableBase from "PressableBase" /* 5036 */;
+import registerAssetDefault from "registerAsset" /* 7732 */;
+import registerAssetDefault2 from "registerAsset" /* 9662 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { createChannelRecord } from "createChannelRecord" /* 1395 */;
-import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore" /* 9639 */;
-import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9608 */;
+import { createChannelRecord } from "createChannelRecord" /* 1391 */;
+import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore" /* 9661 */;
+import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9630 */;
 import { ChannelTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;

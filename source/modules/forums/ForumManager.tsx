@@ -1,13 +1,13 @@
-// Module ID: 16875
-// Function ID: 16876
+// Module ID: 16908
+// Function ID: 16909
 // Name: handleChannelPreload
-// Dependencies: [1391, 1398, 5451, 6114, 2]
+// Dependencies: [1387, 1394, 5454, 6117, 2]
 
-// Module 16875 (handleChannelPreload)
-import initializeDefault from "initialize" /* 5451 */;
-import loadForumPostData from "loadForumPostData" /* 6114 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import { isStaticChannelRoute } from "set" /* 1398 */;
+// Module 16908 (handleChannelPreload)
+import initializeDefault from "initialize" /* 5454 */;
+import loadForumPostData from "loadForumPostData" /* 6117 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import { isStaticChannelRoute } from "set" /* 1394 */;
 
 require = arg1;
 initializeDefault;

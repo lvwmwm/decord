@@ -1,23 +1,23 @@
-// Module ID: 9224
-// Function ID: 9225
+// Module ID: 9246
+// Function ID: 9247
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 4104, 4438, 4472, 5190, 1923, 9225, 676, 21, 4446, 4095, 589, 4880, 4186, 4447, 5919, 9226, 9227, 506, 9228, 530, 514, 9229, 9231, 9233, 8379, 5926, 1208, 9234, 9235, 4666, 9236, 4890, 9219, 4893, 1236, 6013, 5192, 9237, 9293, 8556, 9232, 9297, 9301, 9300, 9302, 9304, 9305, 9307, 9316, 5550, 2]
+// Dependencies: [5, 32, 19, 17, 4105, 4440, 4474, 5193, 1922, 9247, 676, 21, 4448, 4096, 589, 4883, 4187, 4449, 5922, 9248, 9249, 506, 9250, 530, 514, 9251, 9253, 9255, 8401, 5929, 1208, 9256, 9257, 4668, 9258, 4893, 9241, 4896, 1236, 6016, 5195, 9259, 9315, 8578, 9254, 9319, 9323, 9322, 9324, 9326, 9327, 9329, 9338, 5553, 2]
 // Exports: default
 
-// Module 9224 (useOAuth2AuthorizeForm)
+// Module 9246 (useOAuth2AuthorizeForm)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_8 from "defaultImageSrcGenerator" /* 4104 */;
-import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_10 from "createExecutable" /* 4472 */;
-import closure_11 from "set" /* 5190 */;
-import closure_12 from "mergeGuildAvatar" /* 1923 */;
-import OAuth2Steps from "OAuth2Steps" /* 9225 */;
+import closure_8 from "defaultImageSrcGenerator" /* 4105 */;
+import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_10 from "createExecutable" /* 4474 */;
+import closure_11 from "set" /* 5193 */;
+import closure_12 from "mergeGuildAvatar" /* 1922 */;
+import OAuth2Steps from "OAuth2Steps" /* 9247 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = OAuth2Steps);
@@ -392,7 +392,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -537,7 +537,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -563,7 +563,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 c4 = undefined;
                 c5 = 1;
                 c6 = 1;
-                return { value: "ct", done: true };
+                return { value: "Object", done: true };
               }
             } else {
               if (1 === tmp8) {
@@ -826,13 +826,13 @@ export default function useOAuth2AuthorizeForm(clientId) {
     if (first9) {
       const result = responseType(codeChallenge[22]).showConnectionDisclaimer();
       const obj2 = responseType(codeChallenge[22]);
-      const nextPromise = result.then(() => callback2(9228).getAccountUrlAndAuthCode());
-      const nextPromise1 = result.then(() => callback2(9228).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise = result.then(() => callback2(9250).getAccountUrlAndAuthCode());
+      const nextPromise1 = result.then(() => callback2(9250).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
       });
-      const nextPromise2 = result.then(() => callback2(9228).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise2 = result.then(() => callback2(9250).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -841,7 +841,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         const items = [tmp, closure_1_55(closure_0)];
         return Promise.all(items);
       });
-      const nextPromise3 = result.then(() => callback2(9228).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise3 = result.then(() => callback2(9250).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -853,7 +853,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         [tmp, tmp2] = arg0;
         return closure_1_1(closure_1_3[22]).finishSamsungAuthorization(tmp, tmp2, closure_5);
       });
-      result.then(() => callback2(9228).getAccountUrlAndAuthCode()).then((arg0) => {
+      result.then(() => callback2(9250).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -873,7 +873,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
       }).catch((arg0) => {
         callback2(1208).captureException(arg0);
       });
-      const nextPromise4 = result.then(() => callback2(9228).getAccountUrlAndAuthCode()).then((arg0) => {
+      const nextPromise4 = result.then(() => callback2(9250).getAccountUrlAndAuthCode()).then((arg0) => {
         [tmp, tmp2] = arg0;
         const items = [tmp2, callback(closure_1_3[27]).startSamsungAuthorization(callback, closure_45, closure_1, tmp, closure_5)];
         return Promise.all(items);
@@ -911,7 +911,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

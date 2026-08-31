@@ -1,10 +1,10 @@
-// Module ID: 4093
-// Function ID: 4094
+// Module ID: 4094
+// Function ID: 4095
 // Name: reset
 // Dependencies: [2]
 // Exports: computeIsMuted, isTemporarilyMuted
 
-// Module 4093 (reset)
+// Module 4094 (reset)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("lib/MuteTimers.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 6424
-// Function ID: 6425
+// Module ID: 6435
+// Function ID: 6436
 // Name: DiscordQuestsLockupLogo
-// Dependencies: [17, 21, 712, 4166, 6425, 2]
+// Dependencies: [17, 21, 712, 4167, 6436, 2]
 // Exports: DiscordQuestsLockupLogo
 
-// Module 6424 (DiscordQuestsLockupLogo)
+// Module 6435 (DiscordQuestsLockupLogo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4166 */;
-import metadataDefault from "metadata" /* 6425 */;
+import map from "map" /* 4167 */;
+import metadataDefault from "metadata" /* 6436 */;
 
 const Image = get_ActivityIndicator.Image;
 const jsx = jsxProd.jsx;

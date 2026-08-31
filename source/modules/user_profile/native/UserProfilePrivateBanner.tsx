@@ -1,19 +1,19 @@
-// Module ID: 12521
-// Function ID: 12522
+// Module ID: 12555
+// Function ID: 12556
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 5966, 21, 4446, 712, 688, 5009, 4442, 1236, 2]
+// Dependencies: [19, 17, 5969, 21, 4448, 712, 688, 5012, 4444, 1236, 2]
 // Exports: default
 
-// Module 12521 (UserProfilePrivateBanner)
+// Module 12555 (UserProfilePrivateBanner)
 import noopAll from "noop" /* 19 */;
 import int2hslRaw from "int2hslRaw" /* 688 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import LockIcon from "LockIcon" /* 5009 */;
+import Text from "Text" /* 4444 */;
+import LockIcon from "LockIcon" /* 5012 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;

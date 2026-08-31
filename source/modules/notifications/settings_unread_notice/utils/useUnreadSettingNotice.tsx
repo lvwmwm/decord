@@ -1,13 +1,13 @@
-// Module ID: 10983
-// Function ID: 10984
+// Module ID: 11008
+// Function ID: 11009
 // Name: useUnreadSettingNotice
-// Dependencies: [32, 19, 1395, 10168, 589, 10984, 2]
+// Dependencies: [32, 19, 1391, 10191, 589, 11009, 2]
 // Exports: default
 
-// Module 10983 (useUnreadSettingNotice)
+// Module 11008 (useUnreadSettingNotice)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING as closure_5 } from "createChannelRecord" /* 1395 */;
+import { CHANNEL_ELIGIBLE_FOR_UNREAD_SETTING as closure_5 } from "createChannelRecord" /* 1391 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/notifications/settings_unread_notice/utils/useUnreadSettingNotice.tsx");

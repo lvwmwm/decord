@@ -1,11 +1,11 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10674
+// Function ID: 10675
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 676, 10651, 1913, 1236, 3148, 2]
+// Dependencies: [19, 676, 10675, 1912, 1236, 3149, 2]
 // Exports: default
 
-// Module 10650 (useFavoritesGuildCategoryAddAction)
-import messagesProxyDefault from "messagesProxy" /* 3148 */;
+// Module 10674 (useFavoritesGuildCategoryAddAction)
+import messagesProxyDefault from "messagesProxy" /* 3149 */;
 import closure_3 from "noop" /* 19 */;
 import { ChannelTypes } from "ME" /* 676 */;
 
@@ -18,7 +18,7 @@ export default function useFavoritesGuildCategoryAddAction(id) {
   const callback = React.useCallback(() => {
     closure_1_1(closure_1_2[2])({ parentId: id.id, source: "favorites_add_to_category" });
   }, items);
-  let obj = _require(1913);
+  let obj = _require(1912);
   let tmp4 = null;
   if (obj.isFavoritesGuildId(id.getGuildId())) {
     tmp4 = null;

@@ -1,13 +1,13 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8112
+// Function ID: 8113
 // Name: isActivityInTextSupportedForChannel
-// Dependencies: [1391, 4090, 505, 692, 589, 2]
+// Dependencies: [1387, 4091, 505, 692, 589, 2]
 // Exports: getIsAppLauncherEnabled, isActivitiesInTextEnabled, useIsActivitiesInTextEnabled, useIsAppLauncherEnabled
 
-// Module 8090 (isActivityInTextSupportedForChannel)
+// Module 8112 (isActivityInTextSupportedForChannel)
 import set from "set" /* 692 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4090 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4091 */;
 import { Permissions } from "sum" /* 505 */;
 
 require = arg1;
@@ -34,7 +34,7 @@ function isActivityInTextSupportedForChannel(channel) {
 const result = require("set").fileFinishedImporting("modules/activities/ActivitiesInTextUtils.tsx");
 
 export { isActivityInTextSupportedForChannel };
-export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(channel) {
+export const isActivitiesInTextEnabled = function isActivitiesInTextEnabled(channel, arg1, arg2) {
   let flag = false;
   if (null != channel) {
     flag = false;

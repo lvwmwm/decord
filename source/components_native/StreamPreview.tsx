@@ -1,20 +1,20 @@
-// Module ID: 10080
-// Function ID: 10081
+// Module ID: 10103
+// Function ID: 10104
 // Name: render
-// Dependencies: [19, 17, 1302, 21, 4446, 712, 4173, 1363, 10081, 10082, 1236, 5033, 10083, 589, 2]
+// Dependencies: [19, 17, 1302, 21, 4448, 712, 4174, 1363, 10104, 10105, 1236, 5036, 10106, 589, 2]
 // Exports: default
 
-// Module 10080 (render)
+// Module 10103 (render)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import PressableBase from "PressableBase" /* 5033 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10083 */;
+import PressableBase from "PressableBase" /* 5036 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10106 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 ({ Image: c3, View: c4, StyleSheet } = get_ActivityIndicator);
@@ -38,9 +38,9 @@ DefaultFallback.prototype["render"] = function render() {
   let obj = { style: tmp.wrapper, children: null };
   obj = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
   if (obj3.isThemeDark(this.props.theme)) {
-    let tmp6Result = tmp6(10081);
+    let tmp6Result = tmp6(10104);
   } else {
-    tmp6Result = tmp6(10082);
+    tmp6Result = tmp6(10105);
   }
   obj[2] = tmp6Result;
   obj[1] = closure_6(closure_3, obj);
@@ -48,7 +48,7 @@ DefaultFallback.prototype["render"] = function render() {
 };
 DefaultFallback.contextType = require("ManaContext").ThemeContext;
 const obj2 = { touchable: null, imageContainer: null, image: null };
-const obj3 = { flex: 1, width: "100%", height: "View", aspectRatio: true, backgroundColor: true };
+const obj3 = { flex: 1, width: "100%", height: "x", aspectRatio: true, backgroundColor: true };
 obj3[4] = ThemesDefault.colors.BACKGROUND_BASE_LOWEST;
 obj2[0] = obj3;
 createCacheKey = { flex: 1, backgroundColor: ThemesDefault.unsafe_rawColors.BLACK };

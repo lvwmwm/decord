@@ -1,19 +1,19 @@
-// Module ID: 9050
-// Function ID: 9051
+// Module ID: 9073
+// Function ID: 9074
 // Name: ToastEmoji
-// Dependencies: [19, 4438, 1926, 21, 4446, 712, 500, 589, 1435, 5550, 4442, 1236, 4880, 1351, 4163, 2]
+// Dependencies: [19, 4440, 1925, 21, 4448, 712, 500, 589, 1431, 5553, 4444, 1236, 4883, 1351, 4164, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9050 (ToastEmoji)
+// Module 9073 (ToastEmoji)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import dispatcherDefault from "dispatcher" /* 4163 */;
-import Text from "Text" /* 4442 */;
+import dispatcherDefault from "dispatcher" /* 4164 */;
+import Text from "Text" /* 4444 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1926 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import set from "set" /* 500 */;
 
 require = arg1;
@@ -89,7 +89,7 @@ const result = set.fileFinishedImporting("modules/double_tap_to_react/native/Dou
 export { ToastEmoji };
 export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
-  let obj = emoji(4880);
+  let obj = emoji(4883);
   if (obj.getIsScreenReaderEnabled()) {
     const AccessibilityAnnouncer = tmp(1351).AccessibilityAnnouncer;
     const intl = tmp(1236).intl;

@@ -1,19 +1,19 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17079
+// Function ID: 17080
 // Name: getSource
-// Dependencies: [5, 19, 17, 676, 21, 4446, 712, 4173, 5047, 5033, 1236, 17047, 17048, 1297, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4448, 712, 4174, 5050, 5036, 1236, 17080, 17081, 1297, 2]
 
-// Module 17046 (getSource)
+// Module 17079 (getSource)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import PressableBase from "PressableBase" /* 5033 */;
-import registerAssetDefault from "registerAsset" /* 17047 */;
-import registerAssetDefault2 from "registerAsset" /* 17048 */;
+import PressableBase from "PressableBase" /* 5036 */;
+import registerAssetDefault from "registerAsset" /* 17080 */;
+import registerAssetDefault2 from "registerAsset" /* 17081 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { UPLOAD_MEDIUM_SIZE } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -44,7 +44,7 @@ class AssetChooser extends PureComponent {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -96,7 +96,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp17) {
           c3 = tmp;

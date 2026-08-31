@@ -1,11 +1,11 @@
-// Module ID: 9983
-// Function ID: 9984
-// Dependencies: [4505, 1368, 2]
+// Module ID: 10006
+// Function ID: 10007
+// Dependencies: [4507, 1469, 2]
 
-// Module 9983
+// Module 10006
 import set from "set" /* 2 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4505 */;
-import importDefaultResult from "getUnitId" /* 1368 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4507 */;
+import importDefaultResult from "getUnitId" /* 1469 */;
 
 const ApplicationStreamResolutions = RESOLUTION_720.ApplicationStreamResolutions;
 let obj = { videoPresetResolutionMax: ApplicationStreamResolutions.RESOLUTION_1440 };

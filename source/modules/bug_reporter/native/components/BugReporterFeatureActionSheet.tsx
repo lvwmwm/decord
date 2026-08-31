@@ -1,17 +1,17 @@
-// Module ID: 10231
-// Function ID: 10232
+// Module ID: 10255
+// Function ID: 10256
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4446, 712, 4442, 10208, 5564, 4413, 7641, 5559, 12, 5419, 7722, 10232, 5587, 5586, 1236, 6186, 7725, 2]
+// Dependencies: [32, 19, 17, 21, 4448, 712, 4444, 10231, 5567, 4415, 7662, 5562, 12, 5422, 7743, 10256, 5590, 5589, 1236, 6189, 7746, 2]
 // Exports: default
 
-// Module 10231 (BugReporterFeatureActionSheet)
+// Module 10255 (BugReporterFeatureActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4442 */;
+import Text from "Text" /* 4444 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -35,9 +35,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10208);
+  let obj = item(10231);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10208).getFeatureId(feature);
+  const featureId1 = item(10231).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -46,10 +46,10 @@ let closure_10 = importAllResult.memo((item) => {
       setFeature(item);
       setFeature(closure_1_2[9]).hideActionSheet();
     },
-    trailing: callback(item(7641).FormRadio, obj)
+    trailing: callback(item(7662).FormRadio, obj)
   };
   obj = { selected: featureId === featureId1 };
-  return callback(item(5564).TableRow, obj);
+  return callback(item(5567).TableRow, obj);
 });
 const obj2 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
 const result = require("set").fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

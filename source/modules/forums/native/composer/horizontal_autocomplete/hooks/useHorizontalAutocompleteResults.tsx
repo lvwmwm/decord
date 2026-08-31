@@ -1,10 +1,10 @@
-// Module ID: 10351
-// Function ID: 10352
+// Module ID: 10375
+// Function ID: 10376
 // Name: useHorizontalAutocompleteResults
-// Dependencies: [32, 19, 676, 10352, 691, 589, 2]
+// Dependencies: [32, 19, 676, 10376, 691, 589, 2]
 // Exports: useHorizontalAutocompleteResults
 
-// Module 10351 (useHorizontalAutocompleteResults)
+// Module 10375 (useHorizontalAutocompleteResults)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import ME from "ME" /* 676 */;

@@ -1,13 +1,13 @@
-// Module ID: 1943
-// Function ID: 1944
+// Module ID: 1942
+// Function ID: 1943
 // Name: parseServerPerkConfigKind
-// Dependencies: [32, 1944, 506, 1939, 2]
+// Dependencies: [32, 1943, 506, 1938, 2]
 // Exports: getPerkConfig, hasPerk, parseServerPerks
 
-// Module 1943 (parseServerPerkConfigKind)
+// Module 1942 (parseServerPerkConfigKind)
 import fromStringAll from "fromString" /* 506 */;
-import create from "create" /* 1939 */;
-import PerkConfigType from "PerkConfigType" /* 1944 */;
+import create from "create" /* 1938 */;
+import PerkConfigType from "PerkConfigType" /* 1943 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;
@@ -16,12 +16,12 @@ function parseServerPerkConfigKind(kind) {
     const type = kind.kind.type;
     if (PerkConfigType.PerkConfigType.INCREASED_FILE_UPLOAD_SIZE === type) {
       let obj = { type: null, maxSize: null };
-      obj[0] = tmp(1944).PerkConfigType.INCREASED_FILE_UPLOAD_SIZE;
+      obj[0] = tmp(1943).PerkConfigType.INCREASED_FILE_UPLOAD_SIZE;
       obj[1] = kind.kind.max_size;
       return obj;
-    } else if (tmp(1944).PerkConfigType.INCREASED_GUILD_LIMIT === type) {
+    } else if (tmp(1943).PerkConfigType.INCREASED_GUILD_LIMIT === type) {
       obj = { type: null, maxGuilds: null };
-      obj[0] = tmp(1944).PerkConfigType.INCREASED_GUILD_LIMIT;
+      obj[0] = tmp(1943).PerkConfigType.INCREASED_GUILD_LIMIT;
       obj[1] = kind.kind.max_guilds;
       return obj;
     }

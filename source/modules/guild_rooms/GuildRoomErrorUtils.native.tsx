@@ -1,10 +1,10 @@
-// Module ID: 4685
-// Function ID: 4686
+// Module ID: 4687
+// Function ID: 4688
 // Name: handleGuildRoomError
 // Dependencies: [676, 2]
 // Exports: handleGuildRoomError
 
-// Module 4685 (handleGuildRoomError)
+// Module 4687 (handleGuildRoomError)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 6892
-// Function ID: 6893
+// Module ID: 6909
+// Function ID: 6910
 // Name: RocketshipSpotIllustration
-// Dependencies: [21, 5458, 6893, 2]
+// Dependencies: [21, 5461, 6910, 2]
 // Exports: RocketshipSpotIllustration
 
-// Module 6892 (RocketshipSpotIllustration)
+// Module 6909 (RocketshipSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6893 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6910 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/RocketshipSpotIllustration.native.tsx");

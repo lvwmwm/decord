@@ -1,13 +1,13 @@
-// Module ID: 14228
-// Function ID: 14229
+// Module ID: 14262
+// Function ID: 14263
 // Name: useUserAvailableGuildsWithTags
-// Dependencies: [1993, 1910, 589, 8021, 2]
+// Dependencies: [1992, 1909, 589, 8043, 2]
 // Exports: useUserAvailableGuildsWithTags
 
-// Module 14228 (useUserAvailableGuildsWithTags)
+// Module 14262 (useUserAvailableGuildsWithTags)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "trackCommunicationDisabled" /* 1993 */;
-import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_2 from "trackCommunicationDisabled" /* 1992 */;
+import closure_3 from "createGuildRecordFromRust" /* 1909 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_tag/useUserAvailableGuildsWithTags.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 16472
-// Function ID: 16473
+// Module ID: 16506
+// Function ID: 16507
 // Name: setLaunchPadPullTabExclusionRect
-// Dependencies: [11002, 595, 500, 5057, 1494, 2]
+// Dependencies: [11027, 595, 500, 5060, 1493, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, getLaunchPadPullTabPositionCached, persistLaunchPadPullTabPosition, setLaunchPadPullTabPositionCached
 
-// Module 16472 (setLaunchPadPullTabExclusionRect)
+// Module 16506 (setLaunchPadPullTabExclusionRect)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import Storage2 from "Storage" /* 595 */;
-import enforcingDefault from "enforcing" /* 5057 */;
-import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11002 */;
+import enforcingDefault from "enforcing" /* 5060 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11027 */;
 
 function setLaunchPadPullTabExclusionRect() {
   let tmp = arg0;
@@ -23,9 +23,9 @@ function setLaunchPadPullTabExclusionRect() {
   }
   let obj = set2;
   if (obj.isAndroid()) {
-    let tmp7Result = tmp7(1494);
+    let tmp7Result = tmp7(1493);
     const diff = tmp7Result.getWindowDimensions().width - closure_5;
-    tmp7Result = tmp7(1494);
+    tmp7Result = tmp7(1493);
     const width = tmp7Result.getWindowDimensions().width;
     const sum = tmp + closure_3;
     let left;

@@ -1,11 +1,11 @@
-// Module ID: 9376
-// Function ID: 9377
+// Module ID: 9398
+// Function ID: 9399
 // Name: doesGameHaveRichPresence
-// Dependencies: [4487, 1956, 2]
+// Dependencies: [4489, 1955, 2]
 // Exports: doesGameHaveRichPresence
 
-// Module 9376 (doesGameHaveRichPresence)
-import closure_2 from "addApplication" /* 4487 */;
+// Module 9398 (doesGameHaveRichPresence)
+import closure_2 from "addApplication" /* 4489 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rich_presence/PresenceActivityFiltering.tsx");

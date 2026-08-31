@@ -1,15 +1,15 @@
-// Module ID: 11178
-// Function ID: 11179
+// Module ID: 11207
+// Function ID: 11208
 // Name: canForwardMessage
-// Dependencies: [1984, 1391, 1910, 4090, 676, 1403, 589, 2]
+// Dependencies: [1983, 1387, 1909, 4091, 676, 1399, 589, 2]
 // Exports: useCanForwardMessage
 
-// Module 11178 (canForwardMessage)
-import hasFlag from "hasFlag" /* 1403 */;
-import closure_2 from "isSubscriptionGated" /* 1984 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
+// Module 11207 (canForwardMessage)
+import hasFlag from "hasFlag" /* 1399 */;
+import closure_2 from "isSubscriptionGated" /* 1983 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

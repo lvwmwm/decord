@@ -1,14 +1,14 @@
-// Module ID: 11393
-// Function ID: 11394
+// Module ID: 11422
+// Function ID: 11423
 // Name: _getSafetyHubData
-// Dependencies: [5, 1218, 11387, 8636, 676, 709, 530, 4637, 8635, 2]
+// Dependencies: [5, 1218, 11416, 8658, 676, 709, 530, 4639, 8657, 2]
 // Exports: getSafetyHubData, getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification
 
-// Module 11393 (_getSafetyHubData)
+// Module 11422 (_getSafetyHubData)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11387 */;
-import SafetyHubView from "SafetyHubView" /* 8636 */;
+import closure_5 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11416 */;
+import SafetyHubView from "SafetyHubView" /* 8658 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -26,7 +26,7 @@ function _getSafetyHubData() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -168,7 +168,7 @@ function _getSafetyHubData() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp11) {
         v0 = tmp;
@@ -203,7 +203,7 @@ function _getSafetyHubDataForClassification() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -271,7 +271,7 @@ function _getSafetyHubDataForClassification() {
                         items = [first];
                       }
                       found.flagged_content = items;
-                      obj3 = callback(8635);
+                      obj3 = callback(8657);
                     }
                   }
                   let obj = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: null, accountStanding: null, isDsaEligible: null, username: null, isAppealEligible: null };
@@ -328,7 +328,7 @@ function _getSafetyHubDataForClassification() {
                         items = [first];
                       }
                       found.flagged_content = items;
-                      obj3 = callback(8635);
+                      obj3 = callback(8657);
                     }
                   }
                   let obj = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: null, accountStanding: null, isDsaEligible: null, username: null, isAppealEligible: null };
@@ -357,7 +357,7 @@ function _getSafetyHubDataForClassification() {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           v0 = tmp;
@@ -395,7 +395,7 @@ function _requestReview() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -479,7 +479,7 @@ function _requestReview() {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp15) {
           c3 = tmp;
@@ -515,7 +515,7 @@ function _requestSuspendedUserAgeVerification() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -574,7 +574,7 @@ function _requestSuspendedUserAgeVerification() {
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp5) {
           v0 = tmp;
@@ -616,7 +616,7 @@ function _checkSuspendedUserAgeVerification() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -683,7 +683,7 @@ function _checkSuspendedUserAgeVerification() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp5) {
         v0 = tmp;

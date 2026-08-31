@@ -1,17 +1,17 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10263
+// Function ID: 10264
 // Name: useNativeForumPostHandlers
-// Dependencies: [19, 4155, 1391, 4099, 1923, 6089, 6118, 676, 1235, 7454, 38, 4640, 4946, 1487, 7586, 9971, 8512, 500, 4414, 4415, 7458, 4457, 4308, 10240, 10830, 10828, 2]
+// Dependencies: [19, 4156, 1387, 4100, 1922, 6092, 6121, 676, 1235, 7475, 38, 4642, 4949, 1486, 7607, 9994, 8534, 500, 4416, 4417, 7479, 4459, 4310, 10264, 10854, 10852, 2]
 // Exports: default
 
-// Module 10239 (useNativeForumPostHandlers)
+// Module 10263 (useNativeForumPostHandlers)
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "setContent" /* 4155 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "markAllUserIdListsStale" /* 4099 */;
-import closure_8 from "mergeGuildAvatar" /* 1923 */;
-import closure_9 from "handleLoadThreadsSuccess" /* 6089 */;
-import closure_10 from "handleLoadThreadsSuccess" /* 6118 */;
+import closure_5 from "setContent" /* 4156 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "markAllUserIdListsStale" /* 4100 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "handleLoadThreadsSuccess" /* 6092 */;
+import closure_10 from "handleLoadThreadsSuccess" /* 6121 */;
 import ME from "ME" /* 676 */;
 import { OpenThreadAnalyticsLocations as closure_15 } from "AbortCodes" /* 1235 */;
 
@@ -23,7 +23,7 @@ export default function useNativeForumPostHandlers(threadId) {
   threadId = threadId.threadId;
   let NORMAL = threadId.reactionType;
   if (NORMAL === undefined) {
-    NORMAL = threadId(7454).ReactionTypes.NORMAL;
+    NORMAL = threadId(7475).ReactionTypes.NORMAL;
   }
   let callback1;
   const items = [threadId];

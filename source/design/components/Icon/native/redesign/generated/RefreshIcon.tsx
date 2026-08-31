@@ -1,14 +1,14 @@
-// Module ID: 14692
-// Function ID: 14693
+// Module ID: 14726
+// Function ID: 14727
 // Name: RefreshIcon
-// Dependencies: [19, 21, 712, 4165, 14693, 2]
+// Dependencies: [19, 21, 712, 4166, 14727, 2]
 // Exports: RefreshIcon
 
-// Module 14692 (RefreshIcon)
+// Module 14726 (RefreshIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 14693 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 14727 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

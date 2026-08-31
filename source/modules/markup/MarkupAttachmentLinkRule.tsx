@@ -1,12 +1,12 @@
-// Module ID: 4927
-// Function ID: 4928
+// Module ID: 4930
+// Function ID: 4931
 // Name: regExp
-// Dependencies: [4928, 4161, 2]
+// Dependencies: [4931, 4162, 2]
 
-// Module 4927 (regExp)
+// Module 4930 (regExp)
 import set from "set" /* 2 */;
-import tDefault from "t" /* 4161 */;
-import set2 from "set" /* 4928 */;
+import tDefault from "t" /* 4162 */;
+import set2 from "set" /* 4931 */;
 
 const mapped = Array.from(set2.ATTACHMENT_PATH_PREFIXES).map((str) => str.replaceAll("/", ""));
 const regExp = new RegExp("^https://(?:(?:media|images)\\.discordapp\\.net|(?:cdn\\.discordapp\\.com))/(?:" + mapped.join("|") + ")/\\d+/\\d+/([A-Za-z0-9._-]*[A-Za-z0-9_-])(?:[?][a-zA-Z0-9?&=_-]*)?");

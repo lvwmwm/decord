@@ -1,16 +1,16 @@
-// Module ID: 10601
-// Function ID: 10602
-// Dependencies: [5, 32, 19, 17, 1391, 21, 4446, 712, 5559, 589, 4640, 5906, 1435, 10602, 4459, 1236, 4163, 7655, 10603, 5033, 4442, 7652, 4893, 10605, 2]
+// Module ID: 10625
+// Function ID: 10626
+// Dependencies: [5, 32, 19, 17, 1387, 21, 4448, 712, 5562, 589, 4642, 5909, 1431, 10626, 4461, 1236, 4164, 7676, 10627, 5036, 4444, 7673, 4896, 10629, 2]
 
-// Module 10601
+// Module 10625
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "ensureGuildLoaded" /* 1391 */;
+import closure_8 from "ensureGuildLoaded" /* 1387 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let c5 = importAllResult;
@@ -144,7 +144,7 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef((channelId, r
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

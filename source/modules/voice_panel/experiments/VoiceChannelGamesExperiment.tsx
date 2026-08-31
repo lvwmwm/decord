@@ -1,11 +1,11 @@
-// Module ID: 9805
-// Function ID: 9806
+// Module ID: 9828
+// Function ID: 9829
 // Name: useIsVoiceChannelGamesExperimentEnabled
-// Dependencies: [1368, 2]
+// Dependencies: [1469, 2]
 // Exports: default
 
-// Module 9805 (useIsVoiceChannelGamesExperimentEnabled)
-import getUnitIdDefault from "getUnitId" /* 1368 */;
+// Module 9828 (useIsVoiceChannelGamesExperimentEnabled)
+import getUnitIdDefault from "getUnitId" /* 1469 */;
 
 const tmp2 = getUnitIdDefault({ kind: "user", name: "2026-08-mobile-voice-channel-games", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let closure_0 = tmp2;

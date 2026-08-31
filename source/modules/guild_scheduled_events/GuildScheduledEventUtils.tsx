@@ -1,13 +1,13 @@
-// Module ID: 9572
-// Function ID: 9573
+// Module ID: 9594
+// Function ID: 9595
 // Name: getNextShownUpcomingEventNoticeType
-// Dependencies: [1397, 4044, 11, 2]
+// Dependencies: [1393, 4045, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 9572 (getNextShownUpcomingEventNoticeType)
+// Module 9594 (getNextShownUpcomingEventNoticeType)
 import set from "set" /* 2 */;
-import hooksDefault from "hooks" /* 4044 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import hooksDefault from "hooks" /* 4045 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
 
 ({ UpcomingGuildEventNoticeTypes: obj1, NEW_EVENT_WINDOW_MILLISECONDS: c3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: c4, ACKED_RECENTLY_WINDOW_DAYS: c5 } = GUILD_EVENT_MAX_NAME_LENGTH);
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventUtils.tsx");
@@ -18,7 +18,7 @@ export const getNextShownUpcomingEventNoticeType = function getNextShownUpcoming
   const diff = time - closure_4;
   if (obj.isBetween(diff, time)) {
     if (null != arg1) {
-      const obj4 = tmp(4044)(arg1);
+      const obj4 = tmp(4045)(arg1);
       const isBetweenResult = obj4.isBetween(diff, time);
       let EVENT_STARTING_SOON;
       if (!isBetweenResult) {

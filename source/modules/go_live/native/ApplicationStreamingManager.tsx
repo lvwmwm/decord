@@ -1,17 +1,17 @@
-// Module ID: 17368
-// Function ID: 17369
+// Module ID: 17401
+// Function ID: 17402
 // Name: platformShowStreamFull
-// Dependencies: [19, 4538, 4505, 4510, 21, 3, 17369, 4823, 17370, 2010, 9987, 9720, 2]
+// Dependencies: [19, 4540, 4507, 4512, 21, 3, 17402, 4826, 17403, 2009, 10010, 9742, 2]
 
-// Module 17368 (platformShowStreamFull)
+// Module 17401 (platformShowStreamFull)
 import timestampDefault from "timestamp" /* 3 */;
 import noopAll from "noop" /* 19 */;
-import _modDef4823 from "module_4823" /* 4823 */;
-import apexExperimentDefault from "apexExperiment" /* 9987 */;
-import updateRegionDefault from "updateRegion" /* 17369 */;
-import closure_3 from "ApplicationStreamPresets" /* 4538 */;
-import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4505 */;
-import { MediaEngineContextTypes } from "DesktopSources" /* 4510 */;
+import _modDef4826 from "module_4826" /* 4826 */;
+import apexExperimentDefault from "apexExperiment" /* 10010 */;
+import updateRegionDefault from "updateRegion" /* 17402 */;
+import closure_3 from "ApplicationStreamPresets" /* 4540 */;
+import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4507 */;
+import { MediaEngineContextTypes } from "DesktopSources" /* 4512 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -23,7 +23,7 @@ class ApplicationStreamingManager extends tmp4 {
 }
 const prototype = ApplicationStreamingManager.prototype;
 prototype["platformShowStreamFull"] = function platformShowStreamFull() {
-  obj = _modDef4823;
+  obj = _modDef4826;
   obj = {
     importer() {
       return callback(paths[9])(paths[8], paths.paths).then((arg0) => {
@@ -49,7 +49,7 @@ prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sour
       state[0] = ApplicationStreamPresets.PRESET_CUSTOM;
     }
     ({ preset, resolution, fps, soundshareEnabled } = state);
-    setGoLiveSource = setGoLiveSource(9720).setGoLiveSource;
+    setGoLiveSource = setGoLiveSource(9742).setGoLiveSource;
     obj = { desktopSettings: null, qualityOptions: null, context: null };
     obj = { sourceId: null, sound: null };
     obj[0] = sourceId;
@@ -62,7 +62,7 @@ prototype["platformHandleStreamStart"] = function platformHandleStreamStart(sour
     obj[1] = obj1;
     obj[2] = MediaEngineContextTypes.STREAM;
     setGoLiveSource(obj);
-    const setGoLiveSourceResult = setGoLiveSource(9720);
+    const setGoLiveSourceResult = setGoLiveSource(9742);
   } else {
     const _HermesInternal = HermesInternal;
     obj.warn("invalid start_stream: both application + display modes were specified (source-id: " + sourceId + ")");

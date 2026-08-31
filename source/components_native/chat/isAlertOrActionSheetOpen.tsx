@@ -1,13 +1,13 @@
-// Module ID: 11077
-// Function ID: 11078
+// Module ID: 11106
+// Function ID: 11107
 // Name: isAlertOrActionSheetOpen
-// Dependencies: [4155, 11078, 4824, 2]
+// Dependencies: [4156, 11107, 4827, 2]
 // Exports: isAlertOrActionSheetOpen
 
-// Module 11077 (isAlertOrActionSheetOpen)
-import useAlertStore2 from "useAlertStore" /* 4824 */;
-import closure_2 from "setContent" /* 4155 */;
-import closure_3 from "getAlert" /* 11078 */;
+// Module 11106 (isAlertOrActionSheetOpen)
+import useAlertStore2 from "useAlertStore" /* 4827 */;
+import closure_2 from "setContent" /* 4156 */;
+import closure_3 from "getAlert" /* 11107 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("components_native/chat/isAlertOrActionSheetOpen.tsx");

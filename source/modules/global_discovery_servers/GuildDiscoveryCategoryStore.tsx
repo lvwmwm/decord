@@ -1,17 +1,17 @@
-// Module ID: 15989
-// Function ID: 15990
+// Module ID: 16023
+// Function ID: 16024
 // Name: getPrimaryCategories
-// Dependencies: [9669, 12, 589, 1370, 1236, 709, 2]
+// Dependencies: [9691, 12, 589, 1471, 1236, 709, 2]
 // Exports: areDiscoveryCategoriesEqual
 
-// Module 15989 (getPrimaryCategories)
+// Module 16023 (getPrimaryCategories)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9669 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9691 */;
 
 ({ DEFAULT_DISCOVERY_CATEGORY_ID: c3, OTHER_DISCOVERY_CATEGORY_ID: c4, DISCOVERY_ALL_CATEGORIES_ID: c5, DISCOVERY_SIDEBAR_CATEGORIES: closure_6 } = DEFAULT_DISCOVERY_CATEGORY_ID);
 let c7 = null;

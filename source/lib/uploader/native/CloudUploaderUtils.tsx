@@ -1,13 +1,13 @@
-// Module ID: 5082
-// Function ID: 5083
+// Module ID: 5085
+// Function ID: 5086
 // Name: getUploadPayload
-// Dependencies: [1997, 1218, 706, 5039, 12, 698, 2]
+// Dependencies: [1996, 1218, 706, 5042, 12, 698, 2]
 // Exports: getUploadPayload, prepareMessagePayload
 
-// Module 5082 (getUploadPayload)
+// Module 5085 (getUploadPayload)
 import applyDefault from "apply" /* 12 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_3 from "_getSystemLocale" /* 1997 */;
+import closure_3 from "_getSystemLocale" /* 1996 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "refreshSourceMapCookie" /* 706 */;
 

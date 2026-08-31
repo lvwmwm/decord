@@ -1,10 +1,10 @@
-// Module ID: 14262
-// Function ID: 14263
+// Module ID: 14296
+// Function ID: 14297
 // Name: useAnnounceError
 // Dependencies: [19, 1351, 2]
 // Exports: useAnnounceError
 
-// Module 14262 (useAnnounceError)
+// Module 14296 (useAnnounceError)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

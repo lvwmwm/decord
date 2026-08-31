@@ -1,10 +1,10 @@
-// Module ID: 10456
-// Function ID: 10457
+// Module ID: 10480
+// Function ID: 10481
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 1500, 10414, 10457, 4108, 6052, 4823, 1236, 10392, 2]
+// Dependencies: [5, 19, 1499, 10438, 10481, 4109, 6055, 4826, 1236, 10416, 2]
 // Exports: useSelectPremiumGift
 
-// Module 10456 (useSelectPremiumGift)
+// Module 10480 (useSelectPremiumGift)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -40,7 +40,7 @@ export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPla
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -101,7 +101,7 @@ export const useSelectPremiumGift = function useSelectPremiumGift(PremiumGiftPla
             v0(navigation);
             navigation.navigate(navigation(recipientUserId[9]).PremiumGiftScreens.CUSTOMIZATION);
             v02 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp29) {
           if (tmp4 === c3) {

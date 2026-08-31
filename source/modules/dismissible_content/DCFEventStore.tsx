@@ -1,9 +1,9 @@
-// Module ID: 1380
-// Function ID: 1381
+// Module ID: 1376
+// Function ID: 1377
 // Name: getDCFEvents
 // Dependencies: [589, 709, 2]
 
-// Module 1380 (getDCFEvents)
+// Module 1376 (getDCFEvents)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

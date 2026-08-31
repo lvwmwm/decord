@@ -1,14 +1,14 @@
-// Module ID: 9517
-// Function ID: 9518
+// Module ID: 9539
+// Function ID: 9540
 // Name: isIncomingVideoEnabled
-// Dependencies: [4548, 4330, 3, 687, 709, 9518, 9519, 2]
+// Dependencies: [4550, 4332, 3, 687, 709, 9540, 9541, 2]
 
-// Module 9517 (isIncomingVideoEnabled)
+// Module 9539 (isIncomingVideoEnabled)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import onDefault from "on" /* 4548 */;
-import NativeEventEmitterDefault from "NativeEventEmitter" /* 9518 */;
+import onDefault from "on" /* 4550 */;
+import NativeEventEmitterDefault from "NativeEventEmitter" /* 9540 */;
 
 const require = arg1;
 let obj = { WindowVisibilityChanged: "window-visibility-changed", IncomingVideoEnabledChanged: "incoming-video-enabled-changed" };

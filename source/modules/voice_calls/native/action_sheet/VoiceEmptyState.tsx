@@ -1,22 +1,22 @@
-// Module ID: 13368
-// Function ID: 13369
+// Module ID: 13402
+// Function ID: 13403
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 676, 21, 4446, 5426, 712, 1629, 1297, 1236, 13369, 13370, 2]
+// Dependencies: [19, 17, 676, 21, 4448, 5429, 712, 1628, 1297, 1236, 13403, 13404, 2]
 // Exports: default
 
-// Module 13368 (VoiceEmptyState)
+// Module 13402 (VoiceEmptyState)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import registerAssetDefault from "registerAsset" /* 13369 */;
-import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 13370 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import registerAssetDefault from "registerAsset" /* 13403 */;
+import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 13404 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { Fonts } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import importDefaultResult from "createTextStyle" /* 5426 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import importDefaultResult from "createTextStyle" /* 5429 */;
 
 require = arg1;
 noopAll;

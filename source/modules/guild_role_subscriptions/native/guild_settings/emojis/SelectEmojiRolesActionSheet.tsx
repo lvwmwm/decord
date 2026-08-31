@@ -1,23 +1,23 @@
-// Module ID: 17296
-// Function ID: 17297
+// Module ID: 17329
+// Function ID: 17330
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1301, 505, 21, 4446, 712, 5426, 14741, 5033, 1297, 1236, 5586, 5954, 7742, 8309, 4442, 2]
+// Dependencies: [32, 19, 17, 1301, 505, 21, 4448, 712, 5429, 14775, 5036, 1297, 1236, 5589, 5957, 7763, 8331, 4444, 2]
 // Exports: default
 
-// Module 17296 (SelectEmojiRolesActionSheet)
+// Module 17329 (SelectEmojiRolesActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import PressableBase from "PressableBase" /* 5033 */;
-import ActionSheet from "ActionSheet" /* 5954 */;
-import useFetchListingsForGuild from "useFetchListingsForGuild" /* 14741 */;
+import PressableBase from "PressableBase" /* 5036 */;
+import ActionSheet from "ActionSheet" /* 5957 */;
+import useFetchListingsForGuild from "useFetchListingsForGuild" /* 14775 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { Fonts } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import importDefaultResult from "createTextStyle" /* 5426 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import importDefaultResult from "createTextStyle" /* 5429 */;
 
 require = arg1;
 ({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);
@@ -99,7 +99,7 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   const intl4 = tmp5(1236).intl;
   obj1[1] = intl4.string(getSystemLocale.t.MZusPv);
   obj1[2] = tmp7Result;
-  tmp7Result = tmp7(tmp5(5586).BottomSheetTitleHeader, obj1);
+  tmp7Result = tmp7(tmp5(5589).BottomSheetTitleHeader, obj1);
   const items1 = [subscriptionListingsForGuild.length];
-  return closure_6(ActionSheet.ActionSheet, { scrollable: true, header: tmp7Result, startExpanded: true, onDismiss: onCancel, children: closure_6(emoji(7742), obj3) });
+  return closure_6(ActionSheet.ActionSheet, { scrollable: true, header: tmp7Result, startExpanded: true, onDismiss: onCancel, children: closure_6(emoji(7763), obj3) });
 };

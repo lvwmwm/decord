@@ -1,11 +1,11 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16375
+// Function ID: 16376
 // Name: isGuildEligibleForStageChannels
-// Dependencies: [1910, 676, 589, 2]
+// Dependencies: [1909, 676, 589, 2]
 // Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
 
-// Module 16341 (isGuildEligibleForStageChannels)
-import closure_2 from "createGuildRecordFromRust" /* 1910 */;
+// Module 16375 (isGuildEligibleForStageChannels)
+import closure_2 from "createGuildRecordFromRust" /* 1909 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;

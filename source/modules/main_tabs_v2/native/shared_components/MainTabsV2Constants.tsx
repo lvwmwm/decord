@@ -1,10 +1,9 @@
-// Module ID: 7555
-// Function ID: 7556
+// Module ID: 7576
+// Function ID: 7577
 // Name: MIN_HEADER_HEIGHT
-// Dependencies: [17, 1367, 2]
-// Exports: getMinHeaderHeight
+// Dependencies: [17, 2]
 
-// Module 7555 (MIN_HEADER_HEIGHT)
+// Module 7576 (MIN_HEADER_HEIGHT)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 
@@ -13,11 +12,4 @@ const result1 = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_co
 
 export const MIN_HEADER_HEIGHT = 56;
 export const HEADER_CORNER_RADIUS = 8;
-export const getMinHeaderHeight = function getMinHeaderHeight(ClientThemesBackgroundStore) {
-  let num = 56;
-  if (obj.isMobileVisualRefreshEnabled(ClientThemesBackgroundStore)) {
-    num = 64;
-  }
-  return num;
-};
 export const MIDNIGHT_BORDER_WIDTH = result;

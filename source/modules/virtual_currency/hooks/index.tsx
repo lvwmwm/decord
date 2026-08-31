@@ -1,8 +1,8 @@
-// Module ID: 11285
-// Function ID: 11286
-// Dependencies: [2, 10773, 11286]
+// Module ID: 11314
+// Function ID: 11315
+// Dependencies: [2, 10797, 11315]
 
-// Module 11285
+// Module 11314
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/virtual_currency/hooks/index.tsx");

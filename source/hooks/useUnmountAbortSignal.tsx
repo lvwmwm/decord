@@ -1,12 +1,12 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 6069
+// Function ID: 6070
 // Name: useUnmountAbortSignal
-// Dependencies: [5906, 4910, 2]
+// Dependencies: [5909, 4913, 2]
 // Exports: default, useUnmountAbortSignalWithDelay
 
-// Module 6066 (useUnmountAbortSignal)
+// Module 6069 (useUnmountAbortSignal)
 import set from "set" /* 2 */;
-import useInitialValueDefault from "useInitialValue" /* 5906 */;
+import useInitialValueDefault from "useInitialValue" /* 5909 */;
 
 const result = set.fileFinishedImporting("hooks/useUnmountAbortSignal.tsx");
 
@@ -16,7 +16,7 @@ export default function useUnmountAbortSignal() {
     return abortController;
   });
   const _require = tmp;
-  const unmountEffect = _require(4910).useUnmountEffect(() => {
+  const unmountEffect = _require(4913).useUnmountEffect(() => {
     closure_0.abort();
   });
   return tmp.signal;
@@ -28,7 +28,7 @@ export const useUnmountAbortSignalWithDelay = function useUnmountAbortSignalWith
     return abortController;
   });
   importDefault = tmp;
-  const unmountEffect = _require(4910).useUnmountEffect(() => {
+  const unmountEffect = _require(4913).useUnmountEffect(() => {
     const timerId = setTimeout(() => {
       closure_1.abort();
     }, closure_0);

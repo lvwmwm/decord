@@ -1,20 +1,20 @@
-// Module ID: 11457
-// Function ID: 11458
+// Module ID: 11487
+// Function ID: 11488
 // Name: PrimaryActionButton
-// Dependencies: [32, 19, 17, 4114, 676, 1925, 21, 4446, 712, 698, 11458, 4293, 5587, 5586, 1236, 2568, 4442, 8159, 4893, 589, 4108, 7114, 5938, 1297, 1347, 2]
+// Dependencies: [32, 19, 17, 4115, 676, 1924, 21, 4448, 712, 698, 11488, 4295, 5590, 5589, 1236, 2569, 4444, 8181, 4896, 589, 4109, 7135, 5941, 1297, 1347, 2]
 // Exports: default
 
-// Module 11457 (PrimaryActionButton)
+// Module 11487 (PrimaryActionButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import noop from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_9 from "reset" /* 4114 */;
+import closure_9 from "reset" /* 4115 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { PremiumTypes } from "GuildFeatures" /* 1925 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function PrimaryActionButton(onPressApply) {
@@ -29,10 +29,10 @@ function PrimaryActionButton(onPressApply) {
     obj[0] = intl2.string(tmp2(1236).t.pj0XBN);
     obj[1] = function onPressSubscribe() {
       const obj = { premiumType: TIER_2.TIER_2, analyticsLocations: null, analyticsLocation: null };
-      const items = [callback(5938).SHARE_CUSTOM_CLIENT_THEME_EMBED];
+      const items = [callback(5941).SHARE_CUSTOM_CLIENT_THEME_EMBED];
       obj[1] = items;
       obj[2] = {};
-      callback(7114)(obj);
+      callback(7135)(obj);
     };
     obj[2] = function renderIcon() {
       const style = [lib.nitroWheelButton];
@@ -45,7 +45,7 @@ function PrimaryActionButton(onPressApply) {
     const intl = tmp2(1236).intl;
     obj[0] = intl.string(tmp2(1236).t["1Qm822"]);
     obj[1] = onPressApply.onPressApply;
-    tmp6 = callback4(tmp2(4893).Button, obj);
+    tmp6 = callback4(tmp2(4896).Button, obj);
   }
   return tmp6;
 }

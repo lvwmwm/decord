@@ -1,9 +1,9 @@
-// Module ID: 7462
-// Function ID: 7463
+// Module ID: 7483
+// Function ID: 7484
 // Name: getForumChannelSessionId
 // Dependencies: [514, 2]
 
-// Module 7462 (getForumChannelSessionId)
+// Module 7483 (getForumChannelSessionId)
 import set from "set" /* 2 */;
 import v1 from "v1" /* 514 */;
 

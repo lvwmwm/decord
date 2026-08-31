@@ -1,9 +1,9 @@
-// Module ID: 6983
-// Function ID: 6984
+// Module ID: 7002
+// Function ID: 7003
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6983 (metadata)
+// Module 7002 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SpiderIllocon-2x.png.js");

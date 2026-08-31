@@ -1,17 +1,17 @@
-// Module ID: 12692
-// Function ID: 12693
+// Module ID: 12727
+// Function ID: 12728
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [19, 17, 21, 4446, 712, 12601, 12688, 12689, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 12636, 12723, 12724, 2]
 // Exports: default
 
-// Module 12692 (UserProfileApplicationWidgetTopContainedLayout)
+// Module 12727 (UserProfileApplicationWidgetTopContainedLayout)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 12601 */;
-import formatDurationNarrow from "formatDurationNarrow" /* 12688 */;
+import resolvedValuesFromUserApplicationIdentityProfile from "resolvedValuesFromUserApplicationIdentityProfile" /* 12636 */;
+import formatDurationNarrow from "formatDurationNarrow" /* 12723 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -67,7 +67,7 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
   } else {
     const obj4 = { style: null };
     obj4[0] = tmp.imageSkeleton;
-    tmp12Result = tmp12(tmp2(12689).ImageSkeleton, obj4);
+    tmp12Result = tmp12(tmp2(12724).ImageSkeleton, obj4);
   }
   const obj5 = { children: null };
   items3[1] = tmp12Result;

@@ -1,11 +1,11 @@
-// Module ID: 1971
-// Function ID: 1972
+// Module ID: 1970
+// Function ID: 1971
 // Name: databases
-// Dependencies: [1966, 2]
+// Dependencies: [1965, 2]
 
-// Module 1971 (databases)
+// Module 1970 (databases)
 import set from "set" /* 2 */;
-import open from "open" /* 1966 */;
+import open from "open" /* 1965 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/api/Kv.tsx");
 const prototype = function Kv() {

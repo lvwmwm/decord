@@ -1,11 +1,11 @@
-// Module ID: 7440
-// Function ID: 7441
+// Module ID: 7461
+// Function ID: 7462
 // Name: getStats
-// Dependencies: [5, 7434, 7366, 7441, 2]
+// Dependencies: [5, 7455, 7387, 7462, 2]
 
-// Module 7440 (getStats)
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7366 */;
-import getSamples from "getSamples" /* 7434 */;
+// Module 7461 (getStats)
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7387 */;
+import getSamples from "getSamples" /* 7455 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -98,7 +98,7 @@ prototype["getCurrentBattery"] = function getCurrentBattery() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -167,7 +167,7 @@ prototype["setLastBattery"] = function setLastBattery() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -200,7 +200,7 @@ prototype["setLastBattery"] = function setLastBattery() {
         } else {
           closure_0.lastBattery = arg1;
           c2 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp7) {
         c2 = tmp;
@@ -223,7 +223,7 @@ prototype["getBatteryLevelStats"] = function getBatteryLevelStats() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

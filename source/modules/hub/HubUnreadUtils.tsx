@@ -1,12 +1,12 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15765
+// Function ID: 15766
 // Name: useHubUnreadCount
-// Dependencies: [11815, 4461, 589, 11, 11807, 2]
+// Dependencies: [11846, 4463, 589, 11, 11838, 2]
 // Exports: useHubUnreadCount
 
-// Module 15731 (useHubUnreadCount)
-import closure_3 from "isFetching" /* 11815 */;
-import closure_4 from "generateOldThreadCutoff" /* 4461 */;
+// Module 15765 (useHubUnreadCount)
+import closure_3 from "isFetching" /* 11846 */;
+import closure_4 from "generateOldThreadCutoff" /* 4463 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/hub/HubUnreadUtils.tsx");

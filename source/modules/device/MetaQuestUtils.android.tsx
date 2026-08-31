@@ -1,11 +1,11 @@
-// Module ID: 1625
-// Function ID: 1626
+// Module ID: 1624
+// Function ID: 1625
 // Name: isMetaQuest
-// Dependencies: [670, 1626, 2]
+// Dependencies: [670, 1625, 2]
 // Exports: isMetaQuest, isQuestRelease
 
-// Module 1625 (isMetaQuest)
-import getConstantsAll from "getConstants" /* 1626 */;
+// Module 1624 (isMetaQuest)
+import getConstantsAll from "getConstants" /* 1625 */;
 import importDefaultResult from "enforcing" /* 670 */;
 
 const isMetaQuestResult = importDefaultResult.isMetaQuest();

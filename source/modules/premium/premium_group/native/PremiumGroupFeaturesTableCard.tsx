@@ -1,21 +1,21 @@
-// Module ID: 13075
-// Function ID: 13076
+// Module ID: 13109
+// Function ID: 13110
 // Name: BetaPill
-// Dependencies: [17, 7124, 21, 4446, 712, 4442, 1236, 13076, 1297, 4905, 4294, 8186, 2]
+// Dependencies: [17, 7145, 21, 4448, 712, 4444, 1236, 13110, 1297, 4908, 4296, 8208, 2]
 // Exports: default
 
-// Module 13075 (BetaPill)
+// Module 13109 (BetaPill)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import hexToRgba from "hexToRgba" /* 4294 */;
-import Text from "Text" /* 4442 */;
-import items3 from "items" /* 7124 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13076 */;
+import hexToRgba from "hexToRgba" /* 4296 */;
+import Text from "Text" /* 4444 */;
+import items3 from "items" /* 7145 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13110 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 class BetaPill {
   constructor() {
@@ -64,7 +64,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj[1] = { x: 1, y: 0 };
     let obj2 = hexToRgba;
     const items = [obj2.hexWithOpacity("#8547C6", 0.15), , ];
-    const tmp2Result = tmp2(4905);
+    const tmp2Result = tmp2(4908);
     items[1] = hexToRgba.hexWithOpacity("#B845C1", 0.15);
     const obj4 = hexToRgba;
     items[2] = hexToRgba.hexWithOpacity("#AB5D8A", 0.15);
@@ -73,7 +73,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj[4] = tmp.premiumGroupCard;
     obj = { style: null, children: null };
     obj[0] = tmp.headerContainer;
-    const items1 = [callback(tmp2(8186), { width: 181, height: 16 }), callback(BetaPill, {})];
+    const items1 = [callback(tmp2(8208), { width: 181, height: 16 }), callback(BetaPill, {})];
     obj[1] = items1;
     const items2 = [callback2(View, obj), , ];
     obj1 = { variant: "text-sm/normal", style: null, children: null };

@@ -1,18 +1,18 @@
-// Module ID: 10361
-// Function ID: 10362
+// Module ID: 10385
+// Function ID: 10386
 // Name: Tile
-// Dependencies: [19, 17, 4820, 4819, 10362, 21, 4446, 712, 4186, 4447, 1297, 4892, 38, 5038, 589, 10363, 10216, 10821, 8860, 4442, 1236, 8524, 7690, 5033, 7660, 1494, 8109, 10365, 2]
+// Dependencies: [19, 17, 4822, 4821, 10386, 21, 4448, 712, 4187, 4449, 1297, 4895, 38, 5041, 589, 10387, 10240, 10845, 8883, 4444, 1236, 8546, 7711, 5036, 7681, 1493, 8131, 10389, 2]
 // Exports: useTileEntranceAnimatedStyle
 
-// Module 10361 (Tile)
+// Module 10385 (Tile)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { DraftType } from "handleChanged" /* 4820 */;
-import closure_7 from "map" /* 4819 */;
-import IMAGE_CAROUSEL_TILE_HEIGHT from "IMAGE_CAROUSEL_TILE_HEIGHT" /* 10362 */;
+import { DraftType } from "handleChanged" /* 4822 */;
+import closure_7 from "map" /* 4821 */;
+import IMAGE_CAROUSEL_TILE_HEIGHT from "IMAGE_CAROUSEL_TILE_HEIGHT" /* 10386 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function Tile(onEdit) {
@@ -383,7 +383,7 @@ let result = require("set").fileFinishedImporting("components_native/chat/ImageC
 
 export default memoResult;
 export const useTileEntranceAnimatedStyle = function useTileEntranceAnimatedStyle(arg0) {
-  let obj = sharedValue(4186);
+  let obj = sharedValue(4187);
   sharedValue = obj.useSharedValue(0);
   const items = [sharedValue, arg0];
   const effect = importAllResult.useEffect(() => {
@@ -402,9 +402,9 @@ export const useTileEntranceAnimatedStyle = function useTileEntranceAnimatedStyl
     obj[1] = items;
     return obj;
   };
-  obj = { withTiming: sharedValue(4447).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1297).STANDARD_EASING, withSpring: sharedValue(4892).withSpring };
+  obj = { withTiming: sharedValue(4449).withTiming, animatedStylePropValue: sharedValue, STANDARD_EASING: sharedValue(1297).STANDARD_EASING, withSpring: sharedValue(4895).withSpring };
   fn.__closure = obj;
   fn.__workletHash = 14458898683767;
   fn.__initData = closure_14;
-  return sharedValue(4186).useAnimatedStyle(fn);
+  return sharedValue(4187).useAnimatedStyle(fn);
 };

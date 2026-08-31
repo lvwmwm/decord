@@ -1,16 +1,16 @@
-// Module ID: 8052
-// Function ID: 8053
-// Dependencies: [19, 17, 4438, 1993, 4535, 676, 21, 4446, 712, 1297, 589, 8053, 8022, 8054, 8055, 5033, 2]
+// Module ID: 8074
+// Function ID: 8075
+// Dependencies: [19, 17, 4440, 1992, 4537, 676, 21, 4448, 712, 1297, 589, 8075, 8044, 8076, 8077, 5036, 2]
 
-// Module 8052
+// Module 8074
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_5 from "trackCommunicationDisabled" /* 1993 */;
-import closure_6 from "sortActivity" /* 4535 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
+import closure_6 from "sortActivity" /* 4537 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -53,7 +53,7 @@ const forwardRefResult = importAllResult.forwardRef((animate) => {
   });
   const tmp4 = callback();
   const tmp9 = id;
-  let obj4 = guildId(8022);
+  let obj4 = guildId(8044);
   obj = { pendingValue: pendingAvatarDecoration, userValue: null, guildValue: null, guildId: null };
   let avatarDecoration;
   if (user != null) {
@@ -68,19 +68,19 @@ const forwardRefResult = importAllResult.forwardRef((animate) => {
   obj[3] = guildId;
   obj = { isMobileOnline, isVROnline, size, status: null, statusStyle: null, streaming: null, animate: null, avatarDecoration: null };
   let tmp14 = null;
-  const tmp10 = id(8053);
+  const tmp10 = id(8075);
   if (!disableStatus) {
     tmp14 = status;
   }
   obj[3] = tmp14;
   const items4 = [tmp4.avatarStatusStyle, statusStyle];
   obj[4] = items4;
-  obj[5] = tmp9(8054)(activities);
+  obj[5] = tmp9(8076)(activities);
   if (flag) {
     flag = !stateFromStores;
   }
   obj[6] = flag;
-  obj[7] = id(8053)(obj4.getProfilePreviewValue(obj));
+  obj[7] = id(8075)(obj4.getProfilePreviewValue(obj));
   if (null != onPress) {
     obj1 = { ref: null, onPress: null, onLongPress: null, style: null, activeOpacity: 0.8, accessibilityRole: "imagebutton" };
     obj1[0] = arg1;
@@ -90,7 +90,7 @@ const forwardRefResult = importAllResult.forwardRef((animate) => {
     const merged1 = Object.assign(merged);
     if (undefined !== pendingAvatarSrc) {
       obj2 = { source: null };
-      obj = obj(8055);
+      obj = obj(8077);
       avatarSource = obj.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
       obj2[0] = avatarSource;
       obj = Object.assign(obj);
@@ -102,7 +102,7 @@ const forwardRefResult = importAllResult.forwardRef((animate) => {
       const merged2 = Object.assign(obj);
     }
     obj1.children = jsx(obj(1297).Avatar, obj3);
-    jsx(obj(5033).PressableOpacity, { ref: null, onPress: null, onLongPress: null, style: null, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
+    jsx(obj(5036).PressableOpacity, { ref: null, onPress: null, onLongPress: null, style: null, activeOpacity: 0.8, accessibilityRole: "imagebutton" });
   } else {
     obj4 = { ref: null, style: null, accessibilityRole: "image", accessible: true };
     obj4[0] = arg1;
@@ -110,7 +110,7 @@ const forwardRefResult = importAllResult.forwardRef((animate) => {
     const merged3 = Object.assign(merged);
     if (undefined !== pendingAvatarSrc) {
       const obj5 = { source: null };
-      const objResult = obj(8055);
+      const objResult = obj(8077);
       obj5[0] = objResult.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores);
       const merged4 = Object.assign(obj);
       let obj6 = obj5;

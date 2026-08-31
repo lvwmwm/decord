@@ -1,22 +1,22 @@
-// Module ID: 10950
-// Function ID: 10951
+// Module ID: 10975
+// Function ID: 10976
 // Name: MoreTipsModalScreen
-// Dependencies: [19, 17, 10591, 676, 21, 4446, 712, 10951, 4442, 1236, 10952, 6202, 4689, 7711, 1297, 1629, 647, 10945, 7294, 7299, 5973, 2]
+// Dependencies: [19, 17, 10615, 676, 21, 4448, 712, 10976, 4444, 1236, 10977, 6205, 4691, 7732, 1297, 1628, 647, 10970, 7315, 7320, 5976, 2]
 // Exports: default
 
-// Module 10950 (MoreTipsModalScreen)
+// Module 10975 (MoreTipsModalScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import Text from "Text" /* 4442 */;
-import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 10951 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10952 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import Text from "Text" /* 4444 */;
+import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 10976 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10977 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 10591 */;
+import closure_6 from "handleConnectionOpen" /* 10615 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function MoreTipsModalScreen(learnMore) {
@@ -122,5 +122,5 @@ export default function MoreTipsModal(channelId) {
       return closure_1_8(closure_1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
     }
   };
-  return callback(_require(5973).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
+  return callback(_require(5976).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
 };

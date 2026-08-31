@@ -1,23 +1,23 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 12803
+// Function ID: 12804
 // Name: MeasureMessage
-// Dependencies: [32, 19, 17, 6089, 6093, 1391, 4701, 8577, 676, 21, 7788, 7981, 4446, 8534, 8720, 712, 589, 10889, 1236, 11, 12769, 11080, 10828, 7455, 11117, 5617, 11399, 11136, 4457, 2]
+// Dependencies: [32, 19, 17, 6092, 6096, 1387, 4703, 8599, 676, 21, 7809, 8003, 4448, 8556, 8742, 712, 589, 10913, 1236, 11, 12804, 11109, 10852, 7476, 11146, 5620, 11428, 11165, 4459, 2]
 // Exports: default
 
-// Module 12768 (MeasureMessage)
+// Module 12803 (MeasureMessage)
 import ThemesDefault from "Themes" /* 712 */;
-import setOptionsDefault from "setOptions" /* 7788 */;
+import setOptionsDefault from "setOptions" /* 7809 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleLoadThreadsSuccess" /* 6089 */;
-import closure_8 from "handleReaction" /* 6093 */;
-import closure_9 from "ensureGuildLoaded" /* 1391 */;
-import closure_10 from "reinjectEphemerals" /* 4701 */;
-import closure_11 from "messages" /* 8577 */;
+import closure_7 from "handleLoadThreadsSuccess" /* 6092 */;
+import closure_8 from "handleReaction" /* 6096 */;
+import closure_9 from "ensureGuildLoaded" /* 1387 */;
+import closure_10 from "reinjectEphemerals" /* 4703 */;
+import closure_11 from "messages" /* 8599 */;
 import { ThemeTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function MeasureMessage(message) {
@@ -308,7 +308,7 @@ export default function MediaMessagePreview(channelId) {
           }
         }
         obj = channelId(onClose[27]);
-        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "BuyNitroPurchaseFlow", message: "absolute", messageChannel: null, selectedChannelId: "container", tapLinkData: "kind" };
+        obj = { allowWithinModal: true, chatInputRef: "Boolean", handleTransitionToThread: "artiste", message: "palette", messageChannel: "artiste", selectedChannelId: "homme", tapLinkData: "m\u00E9tier" };
         obj[2] = function handleTransitionToThread(arg0, arg1, arg2) {
           channel = channel.getChannel(arg1);
           if (null != channel) {

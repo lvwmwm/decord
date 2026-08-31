@@ -1,21 +1,21 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 9805
+// Function ID: 9806
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [32, 19, 17, 1391, 1923, 9780, 676, 1301, 21, 4446, 712, 589, 4639, 9784, 9785, 9759, 9786, 9778, 4689, 4163, 4406, 1236, 9787, 9788, 8578, 5918, 8836, 9789, 1297, 5518, 5033, 5464, 4442, 4891, 9790, 9792, 4893, 2]
+// Dependencies: [32, 19, 17, 1387, 1922, 9802, 676, 1301, 21, 4448, 712, 589, 4641, 9806, 9808, 9781, 9809, 9800, 4691, 4164, 4408, 1236, 9810, 9811, 8600, 5921, 8859, 9812, 1297, 5521, 5036, 5467, 4444, 4894, 9813, 9815, 4896, 2]
 // Exports: default
 
-// Module 9783 (SecureFramesUserVerificationModal)
+// Module 9805 (SecureFramesUserVerificationModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "mergeGuildAvatar" /* 1923 */;
-import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9780 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY from "SECURE_FRAMES_LINKING_BOTTOM_SHEET_KEY" /* 9802 */;
 import ME from "ME" /* 676 */;
 import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1301 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ ActivityIndicator: c5, View: closure_6 } = get_ActivityIndicator);
@@ -39,7 +39,7 @@ export default function SecureFramesUserVerificationModal(userId) {
   const channelId = userId.channelId;
   let name;
   let fingerprint;
-  let userKey;
+  let fingerprintUserKey;
   let readableSecureFramesFingerprint;
   let isUserSecureFramesVerified;
   let isCurrentUserKeyPersistent;
@@ -65,19 +65,19 @@ export default function SecureFramesUserVerificationModal(userId) {
   let obj3 = userId(name[13]);
   const secureFramesPairwiseFingerprint = obj3.useSecureFramesPairwiseFingerprint({ userId });
   fingerprint = secureFramesPairwiseFingerprint.fingerprint;
-  userKey = secureFramesPairwiseFingerprint.userKey;
+  fingerprintUserKey = secureFramesPairwiseFingerprint.fingerprintUserKey;
   let obj4 = userId(name[14]);
   obj = { fingerprintBase64: fingerprint, chunkSize: enabled, desiredLength: analyticsLocations };
   readableSecureFramesFingerprint = obj4.useReadableSecureFramesFingerprint(obj);
   let obj6 = userId(name[15]);
-  isUserSecureFramesVerified = obj6.useIsUserSecureFramesVerified({ userId, channelId });
+  isUserSecureFramesVerified = obj6.useIsUserSecureFramesVerified({ userId, channelId, userKey: fingerprintUserKey });
   let obj7 = userId(name[16]);
-  const isPersistentSecureFramesFingerprint = obj7.useIsPersistentSecureFramesFingerprint({ userId });
+  const isPersistentSecureFramesFingerprint = obj7.useIsPersistentSecureFramesFingerprint({ userId, userKey: fingerprintUserKey });
   isCurrentUserKeyPersistent = isPersistentSecureFramesFingerprint.isCurrentUserKeyPersistent;
   isOtherUserKeyPersistent = isPersistentSecureFramesFingerprint.isOtherUserKeyPersistent;
-  const items2 = [channelId, userKey, isOtherUserKeyPersistent, name, userId];
-  let callback = userKey.useCallback(() => {
-    if (null != userKey) {
+  const items2 = [channelId, fingerprintUserKey, isOtherUserKeyPersistent, name, userId];
+  let callback = fingerprintUserKey.useCallback(() => {
+    if (null != fingerprintUserKey) {
       let obj = userId(name[17]);
       obj.addVerification(userId, tmp, isOtherUserKeyPersistent, channelId, closure_1_13.E2EE_USER_VERIFY_MODAL);
       let arr = channelId(name[18]);
@@ -93,9 +93,9 @@ export default function SecureFramesUserVerificationModal(userId) {
       const obj2 = channelId(name[19]);
     }
   }, items2);
-  const items3 = [userKey, isOtherUserKeyPersistent, userId];
-  const callback1 = userKey.useCallback(() => {
-    if (null != userKey) {
+  const items3 = [fingerprintUserKey, isOtherUserKeyPersistent, userId];
+  const callback1 = fingerprintUserKey.useCallback(() => {
+    if (null != fingerprintUserKey) {
       userId(name[17]).deleteVerification(userId, tmp, isOtherUserKeyPersistent);
       let arr = channelId(name[18]);
       arr = arr.pop();
@@ -105,7 +105,7 @@ export default function SecureFramesUserVerificationModal(userId) {
   let obj8 = userId(name[22]);
   enabled = obj8.useSecureFramesDeeplinkExperiment({ location: "SecureFramesUserVerificationModal" }).enabled;
   const items4 = [channelId, readableSecureFramesFingerprint, fingerprint, enabled, userId];
-  callback2 = userKey.useCallback(() => {
+  callback2 = fingerprintUserKey.useCallback(() => {
     if (null != fingerprint) {
       if (null != readableSecureFramesFingerprint) {
         let obj = name;
@@ -135,7 +135,7 @@ export default function SecureFramesUserVerificationModal(userId) {
   }, items4);
   analyticsLocations = channelId(name[25])().analyticsLocations;
   const items5 = [analyticsLocations, channelId, userId];
-  const callback3 = userKey.useCallback(() => {
+  const callback3 = fingerprintUserKey.useCallback(() => {
     let arr = channelId(name[18]);
     arr = arr.pop();
     channelId(name[26])({ userId, channelId, isVoiceContext: true, sourceAnalyticsLocations: analyticsLocations });
@@ -145,7 +145,7 @@ export default function SecureFramesUserVerificationModal(userId) {
   const alertIfSecureFramesKeyInconsistent = obj9.useAlertIfSecureFramesKeyInconsistent(obj);
   const items6 = [isUserSecureFramesVerified];
   const items7 = [isCurrentUserKeyPersistent, isOtherUserKeyPersistent, name];
-  [tmp18, tmp19] = fingerprint(userKey.useMemo(() => {
+  [tmp18, tmp19] = fingerprint(fingerprintUserKey.useMemo(() => {
     const intl = userId(name[21]).intl;
     const string = intl.string;
     const t = userId(name[21]).t;
@@ -158,12 +158,12 @@ export default function SecureFramesUserVerificationModal(userId) {
     return items1;
   }, items6), 2);
   const items8 = [channelId, userId];
-  const memo = userKey.useMemo(() => {
+  const memo = fingerprintUserKey.useMemo(() => {
     let obj = userId(name[17]);
     obj = { isCurrentUserKeyPersistent, isOtherUserKeyPersistent, otherUserNickname: name };
     return obj.getUserVerificationFooterText(obj);
   }, items7);
-  const effect = userKey.useEffect(() => {
+  const effect = fingerprintUserKey.useEffect(() => {
     let obj = userId(name[23]);
     obj = { userId, channelId };
     const result = obj.trackE2EEUserVerificationViewed(obj);
@@ -205,10 +205,10 @@ export default function SecureFramesUserVerificationModal(userId) {
   obj6[4] = items11;
   items10[1] = closure_17(userId(name[33]).Stack, obj6);
   obj9 = { style: tmp.code, children: null };
-  const items12 = [callback(channelId(name[34]), { style: tmp.helpMessage, userId, userKey }), ];
+  const items12 = [callback(channelId(name[34]), { style: tmp.helpMessage, userId, userKey: fingerprintUserKey }), ];
   const obj11 = { title: null, chunks: null, columns: null, trailing: null };
-  const obj10 = { style: tmp.helpMessage, userId, userKey };
-  const tmp17 = fingerprint(userKey.useMemo(() => {
+  const obj10 = { style: tmp.helpMessage, userId, userKey: fingerprintUserKey };
+  const tmp17 = fingerprint(fingerprintUserKey.useMemo(() => {
     const intl = userId(name[21]).intl;
     const string = intl.string;
     const t = userId(name[21]).t;

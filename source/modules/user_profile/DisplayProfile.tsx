@@ -1,13 +1,13 @@
-// Module ID: 8064
-// Function ID: 8065
+// Module ID: 8086
+// Function ID: 8087
 // Name: premiumSince
-// Dependencies: [1925, 7315, 4108, 1435, 8022, 2]
+// Dependencies: [1924, 7336, 4109, 1431, 8044, 2]
 
-// Module 8064 (premiumSince)
+// Module 8086 (premiumSince)
 import set from "set" /* 2 */;
-import getAvatarURL from "getAvatarURL" /* 1435 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
-import useAvatarsWithGuilds from "useAvatarsWithGuilds" /* 8022 */;
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import useAvatarsWithGuilds from "useAvatarsWithGuilds" /* 8044 */;
 
 const PremiumTypes = GuildFeatures.PremiumTypes;
 const result = set.fileFinishedImporting("modules/user_profile/DisplayProfile.tsx");
@@ -123,7 +123,7 @@ Object.defineProperty(prototype, "gameWidgets", {
     const widgets = this._userProfile.widgets;
     let found;
     if (widgets != null) {
-      found = widgets.filter(require(7315) /* items */.isGameWidget);
+      found = widgets.filter(require(7336) /* items */.isGameWidget);
     }
     return found;
   },
@@ -145,7 +145,7 @@ Object.defineProperty(prototype, "primaryColor", {
 });
 Object.defineProperty(prototype, "canUsePremiumProfileCustomization", {
   get: function canUsePremiumProfileCustomization() {
-    return importDefault(4108).isPremiumAtLeast(this.premiumType, PremiumTypes.TIER_2);
+    return importDefault(4109).isPremiumAtLeast(this.premiumType, PremiumTypes.TIER_2);
   },
   set: undefined
 });

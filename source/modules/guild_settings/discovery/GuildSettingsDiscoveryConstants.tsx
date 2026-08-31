@@ -1,10 +1,10 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 16030
+// Function ID: 16031
 // Name: GuildPrimaryCategory
 // Dependencies: [1236, 2]
 // Exports: calculateLocaleOptions
 
-// Module 15996 (GuildPrimaryCategory)
+// Module 16030 (GuildPrimaryCategory)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

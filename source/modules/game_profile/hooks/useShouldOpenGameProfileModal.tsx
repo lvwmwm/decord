@@ -1,16 +1,16 @@
-// Module ID: 8743
-// Function ID: 8744
+// Module ID: 8765
+// Function ID: 8766
 // Name: useShouldOpenGameProfileModal
-// Dependencies: [19, 4470, 676, 698, 1403, 8744, 5023, 8745, 38, 2]
+// Dependencies: [19, 4472, 676, 698, 1399, 8766, 5026, 8767, 38, 2]
 // Exports: default, gameIdIsAcceptable, gameIsAcceptable, trackEntryPoint
 
-// Module 8743 (useShouldOpenGameProfileModal)
+// Module 8765 (useShouldOpenGameProfileModal)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import hasFlagAll from "hasFlag" /* 1403 */;
-import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5023 */;
-import GameFlags from "GameFlags" /* 8744 */;
+import hasFlagAll from "hasFlag" /* 1399 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5026 */;
+import GameFlags from "GameFlags" /* 8766 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleLoadMessages" /* 4470 */;
+import closure_5 from "handleLoadMessages" /* 4472 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

@@ -1,8 +1,8 @@
-// Module ID: 15620
-// Function ID: 15621
-// Dependencies: [32, 19, 21, 15575, 15551, 15615, 15616, 15563, 15561, 15566, 15576, 15614, 15617, 8051, 2]
+// Module ID: 15654
+// Function ID: 15655
+// Dependencies: [32, 19, 21, 15609, 15585, 15649, 15650, 15597, 15595, 15600, 15610, 15648, 15651, 8073, 2]
 
-// Module 15620
+// Module 15654
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -33,9 +33,9 @@ const memoResult = importAllResult.memo(importAllResult.forwardRef(function Mess
   renderHeader = data.renderHeader;
   renderFooter = data.renderFooter;
   setAddedFriendSuggestions = data.setAddedFriendSuggestions;
-  ({ accessibilityLabel, handleScrollAnimated, isRefreshEnabled } = listItemHeight);
+  ({ accessibilityLabel, handleScrollAnimated } = listItemHeight);
   ref = listRefHappeningNow.useRef(null);
-  let tmp2 = listItemHeight(listItemSuggestedFriendHeight[3])(data, { listItemHeight, isRefreshEnabled });
+  let tmp2 = listItemHeight(listItemSuggestedFriendHeight[3])(data, { listItemHeight });
   data = tmp2.listData;
   friendsHeaderIndex = tmp2.friendsHeaderIndex;
   extraData = tmp2.friendsHeaderOffset;

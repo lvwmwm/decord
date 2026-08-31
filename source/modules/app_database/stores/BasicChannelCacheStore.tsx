@@ -1,14 +1,14 @@
-// Module ID: 1392
-// Function ID: 1393
+// Module ID: 1388
+// Function ID: 1389
 // Name: hasChannel
-// Dependencies: [32, 1393, 3, 589, 709, 2]
+// Dependencies: [32, 1389, 3, 589, 709, 2]
 
-// Module 1392 (hasChannel)
+// Module 1388 (hasChannel)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "allGuildIds" /* 1393 */;
+import closure_3 from "allGuildIds" /* 1389 */;
 
 let object = importDefault;
 new timestampDefault("BasicChannelCacheStore");

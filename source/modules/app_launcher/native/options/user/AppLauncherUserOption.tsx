@@ -1,17 +1,17 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11721
+// Function ID: 11722
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 4438, 21, 4446, 712, 589, 11682, 1892, 4413, 11691, 2010, 11691, 1297, 11685, 10593, 11688, 4442, 2]
+// Dependencies: [32, 19, 4440, 21, 4448, 712, 589, 11713, 1891, 4415, 11722, 2009, 11722, 1297, 11716, 10617, 11719, 4444, 2]
 // Exports: default
 
-// Module 11690 (AppLauncherUserOption)
+// Module 11721 (AppLauncherUserOption)
 import ThemesDefault from "Themes" /* 712 */;
-import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 11682 */;
+import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 11713 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 createCacheKey = { iconWrapper: null };
@@ -93,23 +93,23 @@ export default function AppLauncherUserOption(option) {
     let tmp9Result = tmp9(tmp2(1297).Avatar, obj);
   } else {
     obj1 = { icon: null, wrapperStyle: null };
-    obj1[0] = tmp9(tmp2(10593).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
+    obj1[0] = tmp9(tmp2(10617).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
     obj1[1] = tmp.iconWrapper;
-    tmp9Result = tmp9(tmp10(11685), obj1);
-    const tmp10Result = tmp10(11685);
+    tmp9Result = tmp9(tmp10(11716), obj1);
+    const tmp10Result = tmp10(11716);
   }
   obj[5] = tmp9Result;
   if (null != tmp8) {
     let obj2 = { guildId: null, user: null };
     obj2[0] = guild_id;
     obj2[1] = tmp8;
-    tmp9Result = tmp9(tmp10(11688), obj2);
+    tmp9Result = tmp9(tmp10(11719), obj2);
   } else {
     tmp9Result = null;
     if (null != tmp6) {
       const obj3 = { variant: "text-md/medium", color: "text-default", children: null };
       obj3[2] = tmp6;
-      tmp9Result = tmp9(tmp2(4442).Text, obj3);
+      tmp9Result = tmp9(tmp2(4444).Text, obj3);
     }
   }
   obj[6] = tmp9Result;

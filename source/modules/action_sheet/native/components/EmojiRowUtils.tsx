@@ -1,12 +1,12 @@
-// Module ID: 11240
-// Function ID: 11241
+// Module ID: 11269
+// Function ID: 11270
 // Name: shouldShowEmojiRow
-// Dependencies: [676, 1403, 2]
+// Dependencies: [676, 1399, 2]
 // Exports: shouldShowEmojiRow
 
-// Module 11240 (shouldShowEmojiRow)
+// Module 11269 (shouldShowEmojiRow)
 import set from "set" /* 2 */;
-import hasFlag from "hasFlag" /* 1403 */;
+import hasFlag from "hasFlag" /* 1399 */;
 import ME from "ME" /* 676 */;
 
 ({ MessageFlags: obj1, MessageStates: c3, MessageTypes: c4 } = ME);

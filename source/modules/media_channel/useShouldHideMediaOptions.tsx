@@ -1,12 +1,12 @@
-// Module ID: 11179
-// Function ID: 11180
+// Module ID: 11208
+// Function ID: 11209
 // Name: useShouldHideMediaOptions
-// Dependencies: [1391, 1398, 647, 2]
+// Dependencies: [1387, 1394, 647, 2]
 // Exports: default
 
-// Module 11179 (useShouldHideMediaOptions)
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import { ChannelFlags } from "set" /* 1398 */;
+// Module 11208 (useShouldHideMediaOptions)
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import { ChannelFlags } from "set" /* 1394 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/media_channel/useShouldHideMediaOptions.tsx");

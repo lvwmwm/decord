@@ -1,9 +1,9 @@
-// Module ID: 6713
-// Function ID: 6714
+// Module ID: 6726
+// Function ID: 6727
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6713 (metadata)
+// Module 6726 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HighFiveSpotIllustration-2x.png.js");

@@ -1,19 +1,19 @@
-// Module ID: 14725
-// Function ID: 14726
+// Module ID: 14759
+// Function ID: 14760
 // Name: QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED
-// Dependencies: [32, 19, 17, 5352, 14629, 505, 21, 4446, 712, 4892, 14636, 14630, 501, 7393, 14626, 14647, 5355, 7420, 4381, 1363, 4166, 14718, 4186, 14625, 7743, 14726, 14695, 5458, 14728, 14729, 14684, 4442, 1236, 5033, 10792, 8739, 2]
+// Dependencies: [32, 19, 17, 5355, 14663, 505, 21, 4448, 712, 4895, 14670, 14664, 501, 7414, 14660, 14681, 5358, 7441, 4383, 1363, 4167, 14752, 4187, 14659, 7764, 14760, 14729, 5461, 14762, 14763, 14718, 4444, 1236, 5036, 10816, 8761, 2]
 
-// Module 14725 (QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)
+// Module 14759 (QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)
 import ThemesDefault from "Themes" /* 712 */;
-import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4892 */;
+import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4895 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5352 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14629 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5355 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14663 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 let c4 = importAllResult;

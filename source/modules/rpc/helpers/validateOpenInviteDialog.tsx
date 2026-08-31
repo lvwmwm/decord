@@ -1,20 +1,20 @@
-// Module ID: 14067
-// Function ID: 14068
+// Module ID: 14101
+// Function ID: 14102
 // Name: validateOpenInviteDialog
-// Dependencies: [9403, 1391, 1910, 4090, 4348, 676, 9404, 9442, 14055, 9682, 2]
+// Dependencies: [9425, 1387, 1909, 4091, 4350, 676, 9426, 9464, 14089, 9704, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 14067 (validateOpenInviteDialog)
-import prototypeDefault from "prototype" /* 9442 */;
-import canViewInviteModal from "canViewInviteModal" /* 9682 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14055 */;
-import closure_3 from "map" /* 9403 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4090 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4348 */;
+// Module 14101 (validateOpenInviteDialog)
+import prototypeDefault from "prototype" /* 9464 */;
+import canViewInviteModal from "canViewInviteModal" /* 9704 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14089 */;
+import closure_3 from "map" /* 9425 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4091 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4350 */;
 import { RPCErrors } from "ME" /* 676 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9404 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9426 */;
 
 require = arg1;
 ({ asLaunched: c9, EmbeddedSurfaceType: c10 } = FrameLayoutModes);
@@ -34,7 +34,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
       const surface = tmp46.surface;
       const type = surface.type;
       if (constants.MAIN === type) {
-        obj = { frame: null, channel: "Array", guild: "text" };
+        obj = { frame: null, channel: "Array", guild: "accessibilityLabel" };
         obj[0] = tmp46;
         return obj;
       } else if (tmp23.APP_CHANNEL === type) {
@@ -54,20 +54,20 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
       if (null == obj9) {
         const obj3 = { errorCode: null };
         obj3[0] = RPCErrors.INVALID_CHANNEL;
-        const tmp21 = new tmp48(9442)(obj3, "Invalid channel");
+        const tmp21 = new tmp48(9464)(obj3, "Invalid channel");
         throw tmp21;
       } else {
         const guild = store.getGuild(obj9.getGuildId());
         if (null == guild) {
           const obj4 = { errorCode: null };
           obj4[0] = RPCErrors.INVALID_CHANNEL;
-          let tmp48Result = tmp48(9442);
+          let tmp48Result = tmp48(9464);
           const _HermesInternal2 = HermesInternal;
           tmp48Result = new tmp48Result(obj4, "Invalid guild " + obj9.getGuildId());
           throw tmp48Result;
         } else {
           if (obj10.canViewInviteModal(closure_6, guild, obj9)) {
-            const obj5 = { frame: "r", channel: "flex", guild: null };
+            const obj5 = { frame: "r", channel: "PX_16", guild: null };
             obj5[1] = obj9;
             obj5[2] = guild;
             return obj5;
@@ -75,7 +75,7 @@ export const validateOpenInviteDialog = function validateOpenInviteDialog(socket
             obj = { errorCode: null };
             obj[0] = RPCErrors.INVALID_PERMISSIONS;
             const _HermesInternal = HermesInternal;
-            let tmp = tmp48(9442);
+            let tmp = tmp48(9464);
             tmp = new tmp(obj, "No invite permissions for " + obj9.id);
             throw tmp;
           }

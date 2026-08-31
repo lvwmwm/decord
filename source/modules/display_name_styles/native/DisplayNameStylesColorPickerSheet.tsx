@@ -1,18 +1,18 @@
-// Module ID: 14882
-// Function ID: 14883
+// Module ID: 14915
+// Function ID: 14916
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1935, 676, 21, 4446, 712, 8026, 8869, 4414, 4413, 14182, 698, 5587, 5586, 1236, 2728, 4893, 12, 688, 1936, 14880, 2]
+// Dependencies: [32, 19, 17, 1934, 676, 21, 4448, 712, 8048, 8892, 4416, 4415, 14216, 698, 5590, 5589, 1236, 2729, 4896, 12, 688, 1935, 14913, 2]
 // Exports: default
 
-// Module 14882 (DisplayNameStylesColorPickerSheet)
+// Module 14915 (DisplayNameStylesColorPickerSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { getColorPresetsForEffect } from "items3" /* 1935 */;
+import { getColorPresetsForEffect } from "items3" /* 1934 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ View: c5, Pressable: closure_6 } = get_ActivityIndicator);

@@ -1,17 +1,17 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 15966
+// Function ID: 15967
 // Name: PAGE_SIZE_WITH_MENTIONS
-// Dependencies: [5, 32, 19, 7329, 7331, 15931, 4668, 589, 15933, 5443, 8057, 2]
+// Dependencies: [5, 32, 19, 7350, 7352, 15965, 4670, 589, 15967, 5446, 8079, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 15932 (PAGE_SIZE_WITH_MENTIONS)
+// Module 15966 (PAGE_SIZE_WITH_MENTIONS)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "findOrCreateMessageRecord" /* 7329 */;
-import closure_7 from "_validate" /* 7331 */;
-import closure_8 from "handleLoadFinished" /* 15931 */;
-import { ReadStateTypes } from "ReadStateTypes" /* 4668 */;
+import closure_6 from "findOrCreateMessageRecord" /* 7350 */;
+import closure_7 from "_validate" /* 7352 */;
+import closure_8 from "handleLoadFinished" /* 15965 */;
+import { ReadStateTypes } from "ReadStateTypes" /* 4670 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/notification_center/useNotificationCenterItemsLoader.tsx");
@@ -146,7 +146,7 @@ export const useNotificationCenterItemsLoader = function useNotificationCenterIt
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

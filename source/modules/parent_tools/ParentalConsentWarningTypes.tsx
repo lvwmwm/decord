@@ -1,9 +1,9 @@
-// Module ID: 14407
-// Function ID: 14408
+// Module ID: 14441
+// Function ID: 14442
 // Name: frozen
 // Dependencies: [2]
 
-// Module 14407 (frozen)
+// Module 14441 (frozen)
 import set from "set" /* 2 */;
 
 const frozen = Object.freeze({ BANNER: "banner", MODAL: "modal" });

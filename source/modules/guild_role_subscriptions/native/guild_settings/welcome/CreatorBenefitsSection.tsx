@@ -1,27 +1,27 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 17246
+// Function ID: 17247
 // Name: EarningPreview
-// Dependencies: [19, 17, 14734, 21, 4446, 712, 1363, 4381, 4442, 1236, 5458, 17214, 17215, 17216, 17217, 17218, 17219, 17220, 17221, 2]
+// Dependencies: [19, 17, 14768, 21, 4448, 712, 1363, 4383, 4444, 1236, 5461, 17247, 17248, 17249, 17250, 17251, 17252, 17253, 17254, 2]
 // Exports: default
 
-// Module 17213 (EarningPreview)
+// Module 17246 (EarningPreview)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import useThemeDefault from "useTheme" /* 4381 */;
-import Text from "Text" /* 4442 */;
-import preloadDefault from "preload" /* 5458 */;
-import registerAssetDefault from "registerAsset" /* 17214 */;
-import registerAssetDefault2 from "registerAsset" /* 17217 */;
-import registerAssetDefault3 from "registerAsset" /* 17218 */;
-import registerAssetDefault4 from "registerAsset" /* 17219 */;
-import registerAssetDefault5 from "registerAsset" /* 17220 */;
-import registerAssetDefault6 from "registerAsset" /* 17221 */;
+import useThemeDefault from "useTheme" /* 4383 */;
+import Text from "Text" /* 4444 */;
+import preloadDefault from "preload" /* 5461 */;
+import registerAssetDefault from "registerAsset" /* 17247 */;
+import registerAssetDefault2 from "registerAsset" /* 17250 */;
+import registerAssetDefault3 from "registerAsset" /* 17251 */;
+import registerAssetDefault4 from "registerAsset" /* 17252 */;
+import registerAssetDefault5 from "registerAsset" /* 17253 */;
+import registerAssetDefault6 from "registerAsset" /* 17254 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { CREATOR_REVENUE_SHARE_PERCENTAGE as closure_4 } from "MAX_SUBSCRIPTION_TIERS" /* 14734 */;
+import { CREATOR_REVENUE_SHARE_PERCENTAGE as closure_4 } from "MAX_SUBSCRIPTION_TIERS" /* 14768 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function EarningPreview() {
@@ -69,9 +69,9 @@ function ConsistentEarningBenefit() {
   ({ horizontalContainer: arr2[0], benefitAvatars: arr2[1] } = tmp4);
   const tmp3 = useThemeDefault();
   if (obj4.isThemeDark(tmp3)) {
-    let tmpResult = tmp(17215);
+    let tmpResult = tmp(17248);
   } else {
-    tmpResult = tmp(17216);
+    tmpResult = tmp(17249);
   }
   const items2 = [callback(BenefitAvatar, { avatarSource: tmpResult }), , ];
   obj4 = AccessibilityAnnouncer;

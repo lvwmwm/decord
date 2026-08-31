@@ -1,21 +1,21 @@
-// Module ID: 8660
-// Function ID: 8661
+// Module ID: 8682
+// Function ID: 8683
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 4446, 1236, 2888, 8638, 8639, 4891, 7680, 712, 4442, 2]
+// Dependencies: [19, 21, 4448, 1236, 2889, 8660, 8661, 4894, 7701, 712, 4444, 2]
 // Exports: default
 
-// Module 8660 (AgeVerificationOtherWindowScreen)
+// Module 8682 (AgeVerificationOtherWindowScreen)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2888 */;
-import Text from "Text" /* 4442 */;
-import Stack from "Stack" /* 4891 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7680 */;
-import ModalScreen from "ModalScreen" /* 8638 */;
-import ModalContent from "ModalContent" /* 8639 */;
+import messagesProxyDefault from "messagesProxy" /* 2889 */;
+import Text from "Text" /* 4444 */;
+import Stack from "Stack" /* 4894 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7701 */;
+import ModalScreen from "ModalScreen" /* 8660 */;
+import ModalContent from "ModalContent" /* 8661 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;

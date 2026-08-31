@@ -1,14 +1,14 @@
-// Module ID: 14518
-// Function ID: 14519
+// Module ID: 14552
+// Function ID: 14553
 // Name: pressable
-// Dependencies: [5, 4696, 12, 1625, 5048, 4689, 13540, 2010, 11006, 1236, 14421, 2]
+// Dependencies: [5, 4698, 12, 1624, 5051, 4691, 13574, 2009, 11031, 1236, 14455, 2]
 
-// Module 14518 (pressable)
+// Module 14552 (pressable)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4696 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4698 */;
 import apply from "apply" /* 12 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import createToggle from "createToggle" /* 11006 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 apply = {
@@ -30,7 +30,7 @@ apply = {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -105,7 +105,7 @@ const debounceResult = apply.debounce(importDefaultResult(function*() {
       obj[0] = arg1;
       return obj;
     } else {
-      return { value: "HermesInternal", done: null };
+      return { value: "HermesInternal", done: "HermesInternal" };
     }
   } else {
     try {

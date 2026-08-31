@@ -1,15 +1,15 @@
-// Module ID: 12460
-// Function ID: 12461
+// Module ID: 12494
+// Function ID: 12495
 // Name: PRODUCT_DETAILS_ACTION_SHEET_KEY
-// Dependencies: [7245, 7233, 4413, 12461, 2010, 2]
+// Dependencies: [7266, 7254, 4415, 12495, 2009, 2]
 // Exports: openProductDetailsActionSheet, openProductDetailsActionSheetForSku
 
-// Module 12460 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
+// Module 12494 (PRODUCT_DETAILS_ACTION_SHEET_KEY)
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
-import openCollectiblesShop from "openCollectiblesShop" /* 7233 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7245 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
+import openCollectiblesShop from "openCollectiblesShop" /* 7254 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7266 */;
 
 let c3 = "Shop Product Preview";
 const result = set.fileFinishedImporting("modules/collectibles/native/openProductDetailsActionSheet.tsx");
@@ -39,7 +39,7 @@ export const openProductDetailsActionSheet = function openProductDetailsActionSh
   const tmp2 = dependencyMap;
   const tmpResult = openCollectiblesShop;
   obj = { product, initialVariantIndex: num, analyticsLocations, shopAnalyticsContext };
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12461, tmp2.paths), c3, obj, stack);
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12495, tmp2.paths), c3, obj, stack);
 };
 export const openProductDetailsActionSheetForSku = function openProductDetailsActionSheetForSku(skuId, stack) {
   skuId = skuId.skuId;
@@ -47,5 +47,5 @@ export const openProductDetailsActionSheetForSku = function openProductDetailsAc
   let obj = openCollectiblesShop;
   obj.productDetailsOpened(skuId);
   obj = { skuId, initialVariantIndex, analyticsLocations, shopAnalyticsContext };
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12461, dependencyMap.paths), c3, obj, stack);
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12495, dependencyMap.paths), c3, obj, stack);
 };

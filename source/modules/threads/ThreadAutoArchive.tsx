@@ -1,16 +1,16 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8130
+// Function ID: 8131
 // Name: getAutoArchiveOptions
-// Dependencies: [1235, 687, 1236, 731, 4044, 2]
+// Dependencies: [1235, 687, 1236, 731, 4045, 2]
 // Exports: getAutoArchiveDuration, getAutoArchiveDurationText
 
-// Module 8108 (getAutoArchiveOptions)
+// Module 8130 (getAutoArchiveOptions)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import memoizeDefault from "memoize" /* 731 */;
 import AbortCodes from "AbortCodes" /* 1235 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 4044 */;
+import hooksDefault from "hooks" /* 4045 */;
 
 function getAutoArchiveOptions() {
   let obj = { id: "1hour", label: null, value: null };

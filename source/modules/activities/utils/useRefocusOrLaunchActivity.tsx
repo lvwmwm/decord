@@ -1,15 +1,15 @@
-// Module ID: 11050
-// Function ID: 11051
+// Module ID: 11079
+// Function ID: 11080
 // Name: useRefocusOrLaunchActivity
-// Dependencies: [5, 19, 9403, 1390, 9404, 5919, 589, 9409, 9400, 9458, 11051, 2]
+// Dependencies: [5, 19, 9425, 1386, 9426, 5922, 589, 9431, 9422, 9480, 11080, 2]
 // Exports: default
 
-// Module 11050 (useRefocusOrLaunchActivity)
+// Module 11079 (useRefocusOrLaunchActivity)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "map" /* 9403 */;
-import closure_6 from "participantFromServer" /* 1390 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9404 */;
+import closure_5 from "map" /* 9425 */;
+import closure_6 from "participantFromServer" /* 1386 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9426 */;
 
 const require = arg1;
 ({ MAIN_SURFACE: error, FrameLayoutModes: closure_8 } = FrameLayoutModes);
@@ -47,7 +47,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -74,8 +74,8 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                     obj1 = { frameId: null, layoutMode: null };
                     obj1[0] = tmp10.id;
                     obj1[1] = closure_1_8.FOCUSED;
-                    const result = closure_1_1(9400).updateFrameLayoutMode(obj1);
-                    const obj9 = closure_1_1(9400);
+                    const result = closure_1_1(9422).updateFrameLayoutMode(obj1);
+                    const obj9 = closure_1_1(9422);
                   }
                 }
                 if (tmp9) {
@@ -84,15 +84,15 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                   if ("guild_id" in _location) {
                     guild_id = _location.guild_id;
                   }
-                  closure_1_1(9458)(guild_id, _location);
-                  const tmp25 = closure_1_1(9458);
+                  closure_1_1(9480)(guild_id, _location);
+                  const tmp25 = closure_1_1(9480);
                 } else {
                   if (dependencyMap != null) {
                     dependencyMap();
                   }
                   c4 = 1;
                   if (closure_1_7) {
-                    let obj5 = closure_1_1(9400);
+                    let obj5 = closure_1_1(9422);
                     let obj2 = { applicationId: null, surface: null };
                     obj2[0] = tmp41;
                     obj2[1] = closure_1_7;
@@ -114,7 +114,7 @@ export default function useRefocusOrLaunchActivity(applicationId) {
                     }
                   }
                 }
-                obj2 = closure_1_0(11051);
+                obj2 = closure_1_0(11080);
                 const obj4 = { appId: null, botId: null, analyticsLocations: null };
                 obj4[0] = tmp41;
                 let id1;

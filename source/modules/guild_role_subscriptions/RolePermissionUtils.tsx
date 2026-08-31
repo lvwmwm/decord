@@ -1,14 +1,14 @@
-// Module ID: 4082
-// Function ID: 4083
+// Module ID: 4083
+// Function ID: 4084
 // Name: hasViewChannelPermission
-// Dependencies: [1987, 676, 506, 2]
+// Dependencies: [1986, 676, 506, 2]
 // Exports: hasViewChannelPermission, isChannelAccessDeniedBy, isChannelAccessGrantedBy
 
-// Module 4082 (hasViewChannelPermission)
+// Module 4083 (hasViewChannelPermission)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 506 */;
 import ME from "ME" /* 676 */;
-import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1987 */;
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1986 */;
 
 const hasPermission = GuildRoleRecordTypeTag.hasPermission;
 const Permissions = ME.Permissions;

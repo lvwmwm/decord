@@ -1,15 +1,15 @@
-// Module ID: 4485
-// Function ID: 4486
+// Module ID: 4487
+// Function ID: 4488
 // Name: setLibraryApplications
-// Dependencies: [4486, 1218, 676, 595, 4494, 1403, 589, 12, 709, 2]
+// Dependencies: [4488, 1218, 676, 595, 4496, 1399, 589, 12, 709, 2]
 
-// Module 4485 (setLibraryApplications)
+// Module 4487 (setLibraryApplications)
 import initializeDefault from "initialize" /* 589 */;
 import Storage6 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import hasFlagAll from "hasFlag" /* 1403 */;
-import getComboId from "getComboId" /* 4494 */;
-import closure_4 from "createFromServer" /* 4486 */;
+import hasFlagAll from "hasFlag" /* 1399 */;
+import getComboId from "getComboId" /* 4496 */;
+import closure_4 from "createFromServer" /* 4488 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 import { LibraryApplicationFlags } from "ME" /* 676 */;
 import set from "set" /* 2 */;
@@ -170,7 +170,7 @@ prototype["getActiveLibraryApplication"] = function getActiveLibraryApplication(
       if (tmp2Result.isUserEntitledToLibraryApplication(obj2)) {
         return obj2;
       }
-      tmp2Result = tmp2(4494);
+      tmp2Result = tmp2(4496);
     }
     tmp2 = require;
   }

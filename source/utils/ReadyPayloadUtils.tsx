@@ -1,14 +1,14 @@
-// Module ID: 13264
-// Function ID: 13265
+// Module ID: 13298
+// Function ID: 13299
 // Name: hydrateGuild
-// Dependencies: [1395, 1957, 7341, 7345, 1978, 7346, 1974, 12, 38, 2]
+// Dependencies: [1391, 1956, 7362, 7366, 1977, 7367, 1973, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 13264 (hydrateGuild)
+// Module 13298 (hydrateGuild)
 import set2 from "set" /* 2 */;
-import createChannelRecord from "createChannelRecord" /* 1395 */;
-import itemsDefault from "items" /* 1957 */;
-import isCacheEnabled from "isCacheEnabled" /* 7341 */;
+import createChannelRecord from "createChannelRecord" /* 1391 */;
+import itemsDefault from "items" /* 1956 */;
+import isCacheEnabled from "isCacheEnabled" /* 7362 */;
 
 function hydrateGuild(guild) {
   closure_0 = guild;
@@ -363,14 +363,14 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
   const obj = itemsDefault;
   const tmp4 = require;
   if (obj2.isCacheEnabled()) {
-    let tmpResult = tmp(7345);
+    let tmpResult = tmp(7366);
     let committedVersions = tmpResult.getCommittedVersions();
   } else {
     committedVersions = Promise.resolve({});
   }
   obj2 = isCacheEnabled;
   if (tmp4Result.isCacheEnabled()) {
-    tmpResult = tmp(1978);
+    tmpResult = tmp(1977);
     let guildIds = tmpResult.getGuildIds();
   } else {
     const _Set = Set;
@@ -378,8 +378,8 @@ export const preloadReadyPayloadData = function preloadReadyPayloadData() {
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = tmp(7346).okAsync(databaseResult);
-    const tmpResult1 = tmp(7346);
+    let okAsyncResult = tmp(7367).okAsync(databaseResult);
+    const tmpResult1 = tmp(7367);
   } else {
     okAsyncResult = Promise.resolve(false);
   }
@@ -399,7 +399,7 @@ export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPriori
     tmp4 = false === closure_1.databaseOk;
   }
   if (tmp4) {
-    let tmp2Result = tmp2(1974);
+    let tmp2Result = tmp2(1973);
     const result = tmp2Result.replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok");
   }
   tmp2Result = tmp2(12);

@@ -1,13 +1,13 @@
-// Module ID: 7516
-// Function ID: 7517
+// Module ID: 7537
+// Function ID: 7538
 // Name: BurstReactionAnimationPreview
-// Dependencies: [19, 21, 7454, 7517, 2]
+// Dependencies: [19, 21, 7475, 7538, 2]
 // Exports: default
 
-// Module 7516 (BurstReactionAnimationPreview)
+// Module 7537 (BurstReactionAnimationPreview)
 import noopAll from "noop" /* 19 */;
-import ReactionTypes from "ReactionTypes" /* 7454 */;
-import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 7517 */;
+import ReactionTypes from "ReactionTypes" /* 7475 */;
+import BurstReactionAnimationDefault from "BurstReactionAnimation" /* 7538 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

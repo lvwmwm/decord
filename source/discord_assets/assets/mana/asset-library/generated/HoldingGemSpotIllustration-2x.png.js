@@ -1,9 +1,9 @@
-// Module ID: 6715
-// Function ID: 6716
+// Module ID: 6728
+// Function ID: 6729
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6715 (metadata)
+// Module 6728 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HoldingGemSpotIllustration-2x.png.js");

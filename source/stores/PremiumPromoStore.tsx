@@ -1,15 +1,15 @@
-// Module ID: 13339
-// Function ID: 13340
+// Module ID: 13373
+// Function ID: 13374
 // Name: initialize
-// Dependencies: [1218, 4099, 687, 11, 589, 709, 2]
+// Dependencies: [1218, 4100, 687, 11, 589, 709, 2]
 
-// Module 13339 (initialize)
+// Module 13373 (initialize)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "markAllUserIdListsStale" /* 4099 */;
+import closure_3 from "markAllUserIdListsStale" /* 4100 */;
 
 let closure_4 = 180 * setDefault.Millis.DAY;
 let c5 = false;

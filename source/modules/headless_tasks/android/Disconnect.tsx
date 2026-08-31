@@ -1,10 +1,10 @@
-// Module ID: 17442
-// Function ID: 17443
+// Module ID: 17475
+// Function ID: 17476
 // Name: promise
-// Dependencies: [1391, 17443, 9713, 2]
+// Dependencies: [1387, 17476, 9735, 2]
 
-// Module 17442 (promise)
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
+// Module 17475 (promise)
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/headless_tasks/android/Disconnect.tsx");

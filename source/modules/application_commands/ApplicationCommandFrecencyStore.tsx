@@ -1,16 +1,16 @@
-// Module ID: 8094
-// Function ID: 8095
+// Module ID: 8116
+// Function ID: 8117
 // Name: handleUserSettingsProtoStoreChange
-// Dependencies: [1340, 4917, 4475, 685, 4532, 12, 589, 709, 2]
+// Dependencies: [1340, 4920, 4477, 685, 4534, 12, 589, 709, 2]
 // Exports: getFilteredTopCommands, getTopRealCommands
 
-// Module 8094 (handleUserSettingsProtoStoreChange)
+// Module 8116 (handleUserSettingsProtoStoreChange)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4532 */;
+import DEFAULT_FRECENCYDefault from "DEFAULT_FRECENCY" /* 4534 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
-import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4917 */;
+import TRUE_OPTION_NAME from "TRUE_OPTION_NAME" /* 4920 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
 
 function handleUserSettingsProtoStoreChange() {

@@ -1,27 +1,27 @@
-// Module ID: 17305
-// Function ID: 17306
+// Module ID: 17338
+// Function ID: 17339
 // Name: MessagePreview
-// Dependencies: [32, 19, 17, 4438, 1910, 9668, 5523, 4439, 505, 21, 4446, 712, 1236, 14796, 10895, 14798, 4446, 1500, 589, 9667, 5460, 6202, 4413, 15813, 2010, 9199, 4186, 5564, 14184, 688, 4442, 9701, 4132, 6079, 689, 1297, 14811, 2]
+// Dependencies: [32, 19, 17, 4440, 1909, 9690, 5526, 4441, 505, 21, 4448, 712, 1236, 14830, 10919, 14832, 4448, 1499, 589, 9689, 5463, 6205, 4415, 15847, 2009, 9221, 4187, 5567, 14218, 688, 4444, 9723, 4133, 6082, 689, 1297, 14845, 2]
 // Exports: default
 
-// Module 17305 (MessagePreview)
+// Module 17338 (MessagePreview)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import _modDef4186 from "module_4186" /* 4186 */;
-import Text from "Text" /* 4442 */;
-import useCanManageGuildOfficialMessages from "useCanManageGuildOfficialMessages" /* 6079 */;
-import registerAssetDefault from "registerAsset" /* 14811 */;
+import _modDef4187 from "module_4187" /* 4187 */;
+import Text from "Text" /* 4444 */;
+import useCanManageGuildOfficialMessages from "useCanManageGuildOfficialMessages" /* 6082 */;
+import registerAssetDefault from "registerAsset" /* 14845 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "handleFormInit" /* 9668 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4439 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_7 from "createGuildRecordFromRust" /* 1909 */;
+import closure_8 from "handleFormInit" /* 9690 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4441 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function MessagePreview(theme) {
@@ -67,7 +67,7 @@ function MessagePreview(theme) {
   items2[1] = callback2(closure_5, obj2);
   obj[1] = items2;
   obj[2] = callback2(closure_5, obj);
-  return callback(_modDef4186.View, obj);
+  return callback(_modDef4187.View, obj);
 }
 ({ View: c5, StyleSheet } = get_ActivityIndicator);
 ({ DEFAULT_GUILD_OFFICIAL_COLOR: c9, GUILD_OFFICIAL_HIGHLIGHT_ALPHA: c10 } = MESSAGE_GROUP_SPACING);

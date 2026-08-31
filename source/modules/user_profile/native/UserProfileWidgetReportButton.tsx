@@ -1,14 +1,14 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8752
+// Function ID: 8753
 // Name: UserProfileWidgetReportButton
-// Dependencies: [19, 17, 21, 1236, 8731, 8697, 8733, 8739, 712, 2]
+// Dependencies: [19, 17, 21, 1236, 8753, 8719, 8755, 8761, 712, 2]
 // Exports: default
 
-// Module 8730 (UserProfileWidgetReportButton)
+// Module 8752 (UserProfileWidgetReportButton)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import FlagIcon from "FlagIcon" /* 8731 */;
-import ContextMenu from "ContextMenu" /* 8733 */;
+import FlagIcon from "FlagIcon" /* 8753 */;
+import ContextMenu from "ContextMenu" /* 8755 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -37,7 +37,7 @@ export default function UserProfileWidgetReportButton(arg0) {
       const intl = callback(1236).intl;
       obj.accessibilityLabel = intl.string(callback(1236).t.xpSHSk);
       obj = { size: "sm", color: callback2(712).colors.TEXT_MUTED };
-      obj.children = callback3(callback(8739).MoreHorizontalIcon, obj);
+      obj.children = callback3(callback(8761).MoreHorizontalIcon, obj);
       return callback3(closure_3, obj);
     }
   };
@@ -51,7 +51,7 @@ export default function UserProfileWidgetReportButton(arg0) {
       const intl = callback(1236).intl;
       obj.accessibilityLabel = intl.string(callback(1236).t.xpSHSk);
       obj = { size: "sm", color: callback2(712).colors.TEXT_MUTED };
-      obj.children = callback3(callback(8739).MoreHorizontalIcon, obj);
+      obj.children = callback3(callback(8761).MoreHorizontalIcon, obj);
       return callback3(closure_3, obj);
     }
   });

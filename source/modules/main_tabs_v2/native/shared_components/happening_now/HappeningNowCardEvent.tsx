@@ -1,18 +1,18 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15640
+// Function ID: 15641
 // Name: HAPPENING_NOW_CONTENT_HEIGHT
-// Dependencies: [19, 17, 1997, 1923, 14823, 676, 21, 4446, 712, 1297, 8044, 589, 15607, 9573, 9689, 698, 9698, 1435, 9688, 14824, 5003, 4442, 1898, 1236, 2]
+// Dependencies: [19, 17, 1996, 1922, 14857, 676, 21, 4448, 712, 1297, 8066, 589, 15641, 9595, 9711, 698, 9720, 1431, 9710, 14858, 5006, 4444, 1897, 1236, 2]
 
-// Module 15606 (HAPPENING_NOW_CONTENT_HEIGHT)
+// Module 15640 (HAPPENING_NOW_CONTENT_HEIGHT)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_getSystemLocale" /* 1997 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14823 */;
+import closure_6 from "_getSystemLocale" /* 1996 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14857 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let c3 = importAllResult;

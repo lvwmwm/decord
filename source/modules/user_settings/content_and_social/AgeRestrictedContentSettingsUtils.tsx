@@ -1,16 +1,16 @@
-// Module ID: 8098
-// Function ID: 8099
+// Module ID: 8120
+// Function ID: 8121
 // Name: resolveNsfwTogglesWithDefaults
-// Dependencies: [1923, 4135, 4699, 8099, 4141, 5332, 2]
+// Dependencies: [1922, 4136, 4701, 8121, 4142, 5335, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 8098 (resolveNsfwTogglesWithDefaults)
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4141 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4699 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5332 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 8099 */;
-import closure_2 from "mergeGuildAvatar" /* 1923 */;
+// Module 8120 (resolveNsfwTogglesWithDefaults)
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4142 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4701 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5335 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 8121 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/AgeRestrictedContentSettingsUtils.tsx");

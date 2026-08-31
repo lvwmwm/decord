@@ -1,18 +1,18 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12575
+// Function ID: 12576
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4099, 676, 21, 4446, 712, 4135, 589, 12542, 4442, 4893, 7690, 1236, 2]
+// Dependencies: [32, 19, 17, 4100, 676, 21, 4448, 712, 12576, 589, 12577, 4444, 4896, 7711, 1236, 2]
 // Exports: default
 
-// Module 12541 (FriendRequestNote)
+// Module 12575 (FriendRequestNote)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "markAllUserIdListsStale" /* 4099 */;
+import closure_6 from "markAllUserIdListsStale" /* 4100 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
@@ -31,11 +31,11 @@ export default function FriendRequestNote(styles) {
   let note;
   let React;
   const tmp = callback();
-  const HideFriendRequestNotes = require(analyticsLocation[8]).HideFriendRequestNotes;
-  const setting = HideFriendRequestNotes.useSetting();
-  let obj = require(analyticsLocation[9]);
+  let obj = require(analyticsLocation[8]);
+  const hideFriendRequestNotes = obj.useHideFriendRequestNotes();
+  obj1 = require(analyticsLocation[9]);
   const items = [closure_6];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ note: closure_1_6.getNote(closure_0), type: closure_1_6.getRelationshipType(closure_0) }));
+  const stateFromStoresObject = obj1.useStateFromStoresObject(items, () => ({ note: closure_1_6.getNote(closure_0), type: closure_1_6.getRelationshipType(closure_0) }));
   note = stateFromStoresObject.note;
   [tmp7, c3] = note(React.useState(stateFromStoresObject.type === RelationshipTypes.PENDING_OUTGOING), 2);
   const items1 = [analyticsLocation, note];
@@ -54,7 +54,7 @@ export default function FriendRequestNote(styles) {
     const result = obj.trackViewFriendRequestNote(obj);
   }, items1);
   let tmp13Result = null;
-  if (!setting) {
+  if (!hideFriendRequestNotes) {
     tmp13Result = null;
     if (null != note) {
       tmp13Result = null;

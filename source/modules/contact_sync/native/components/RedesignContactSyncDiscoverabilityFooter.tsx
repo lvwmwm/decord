@@ -1,17 +1,17 @@
-// Module ID: 12157
-// Function ID: 12158
+// Module ID: 12191
+// Function ID: 12192
 // Name: RedesignContactSyncDiscoverabilityFooter
-// Dependencies: [676, 21, 5957, 1236, 1996, 5958, 2]
+// Dependencies: [676, 21, 5960, 1236, 1995, 5961, 2]
 // Exports: default
 
-// Module 12157 (RedesignContactSyncDiscoverabilityFooter)
+// Module 12191 (RedesignContactSyncDiscoverabilityFooter)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1996 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5957 */;
-import TableSwitchRow from "TableSwitchRow" /* 5958 */;
+import combinedDefault from "combined" /* 1995 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5960 */;
+import TableSwitchRow from "TableSwitchRow" /* 5961 */;
 
 const HelpdeskArticles = ME.HelpdeskArticles;
 const jsx = jsxProd.jsx;

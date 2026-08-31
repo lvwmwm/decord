@@ -1,16 +1,16 @@
-// Module ID: 16432
-// Function ID: 16433
+// Module ID: 16466
+// Function ID: 16467
 // Name: MobileSurvey
-// Dependencies: [5, 19, 4677, 676, 21, 4446, 589, 698, 4678, 4912, 1236, 4159, 1297, 712, 9259, 2]
+// Dependencies: [5, 19, 4679, 676, 21, 4448, 589, 698, 4680, 4915, 1236, 4160, 1297, 712, 9281, 2]
 // Exports: default
 
-// Module 16432 (MobileSurvey)
+// Module 16466 (MobileSurvey)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "fetchSurveyIfNeeded" /* 4677 */;
+import closure_5 from "fetchSurveyIfNeeded" /* 4679 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let closure_8 = createCacheKey.createStyles({ confirmIcon: { marginLeft: 4 } });
@@ -38,7 +38,7 @@ export default function MobileSurvey() {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -70,7 +70,7 @@ export default function MobileSurvey() {
                 return obj;
               }
               c0 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } catch (tmp9) {
               c0 = tmp;
               throw tmp9;
@@ -119,8 +119,8 @@ export default function MobileSurvey() {
     obj[5] = function renderConfirmRightIcon() {
       return closure_1_7(lib(closure_1_2[12]).Icon, { style: lib.confirmIcon, color: stateFromStores(closure_1_2[13]).unsafe_rawColors.WHITE, size: lib(closure_1_2[12]).Icon.Sizes.SMALL, source: stateFromStores(closure_1_2[14]) });
     };
-    tmp5 = jsx(stateFromStores(4912), { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null });
-    const tmp8 = stateFromStores(4912);
+    tmp5 = jsx(stateFromStores(4915), { body: null, confirmText: null, cancelText: null, onConfirm: null, onCancel: null, renderConfirmRightIcon: null });
+    const tmp8 = stateFromStores(4915);
   }
   return tmp5;
 };

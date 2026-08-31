@@ -1,16 +1,16 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16320
+// Function ID: 16321
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 676, 21, 4446, 712, 698, 5559, 4880, 7563, 500, 6014, 5035, 13527, 1236, 2]
+// Dependencies: [19, 17, 676, 21, 4448, 712, 698, 5562, 4883, 7584, 500, 6017, 5038, 13561, 1236, 2]
 // Exports: default
 
-// Module 16286 (UsernameSearchScreen)
+// Module 16320 (UsernameSearchScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ ScrollView: c4, View: c5 } = get_ActivityIndicator);
@@ -40,7 +40,7 @@ export default function UsernameSearchScreen(navigation) {
     obj = { friend_add_type: constants2.FRIENDS_ADD_BY_USERNAME_MODAL };
     obj.track(constants.FRIEND_ADD_VIEWED, obj);
   }, []);
-  const insets = ref(5559)().insets;
+  const insets = ref(5562)().insets;
   ref = React.useRef(null);
   const items = [navigation];
   const effect1 = React.useEffect(() => navigation.addListener("transitionEnd", (data) => {
@@ -56,7 +56,7 @@ export default function UsernameSearchScreen(navigation) {
       }
     }
   }), items);
-  let obj = navigation(7563);
+  let obj = navigation(7584);
   const clientThemesOverride = obj.useClientThemesOverride();
   obj1 = navigation(500);
   let prop = null;
@@ -72,13 +72,13 @@ export default function UsernameSearchScreen(navigation) {
   obj = { style: tmp.background, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.content, clientThemesOverride];
-  let tmp3Result = tmp3(6014);
-  const items2 = [callback(ref(5035), { absolute: true }), ];
+  let tmp3Result = tmp3(6017);
+  const items2 = [callback(ref(5038), { absolute: true }), ];
   obj1 = { alwaysBounceVertical: false, keyboardShouldPersistTaps: "handled", contentContainerStyle: null, children: null };
   const items3 = [tmp.container, prop, { paddingBottom: insets.bottom + ref(712).space.PX_16 }];
   obj1[2] = items3;
   const obj3 = { style: tmp.inputContainer, autoFocusInput: false, headerText: null, headerTextStyle: null, ref: null };
-  tmp3Result = tmp3(13527);
+  tmp3Result = tmp3(13561);
   const intl = tmp7(1236).intl;
   obj3[2] = intl.string(navigation(1236).t.YEOwDM);
   obj3[3] = tmp.headerText;

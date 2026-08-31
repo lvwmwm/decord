@@ -1,10 +1,10 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 12471
+// Function ID: 12472
 // Name: usePageHeights
-// Dependencies: [32, 19, 4186, 1494, 1629, 2]
+// Dependencies: [32, 19, 4187, 1493, 1628, 2]
 // Exports: usePageHeights, usePagerFillHeight, usePagesHeightStyle
 
-// Module 12437 (usePageHeights)
+// Module 12471 (usePageHeights)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -13,7 +13,7 @@ let closure_5 = { code: "function useSegmentedPagesHeightTsx1(){const{pageHeight
 let result = require("set").fileFinishedImporting("modules/user_profile/native/useSegmentedPagesHeight.tsx");
 
 export const usePageHeights = function usePageHeights() {
-  let obj = sharedValue(4186);
+  let obj = sharedValue(4187);
   sharedValue = obj.useSharedValue([]);
   closure_1 = React.useRef([]);
   let items = [sharedValue];
@@ -35,8 +35,8 @@ export const usePageHeights = function usePageHeights() {
   return obj;
 };
 export const usePagerFillHeight = function usePagerFillHeight() {
-  const height = bottom(1494)().height;
-  bottom = bottom(1629)().bottom;
+  const height = bottom(1493)().height;
+  bottom = bottom(1628)().bottom;
   const tmp = ref(React.useState(0), 2);
   dependencyMap = tmp[1];
   ref = React.useRef(null);

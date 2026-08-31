@@ -1,22 +1,22 @@
-// Module ID: 17325
-// Function ID: 17326
+// Module ID: 17358
+// Function ID: 17359
 // Name: getBackoffJitter
-// Dependencies: [5, 5186, 5190, 5319, 13505, 11447, 8553, 8575, 676, 687, 12, 17326, 709, 13277, 17327, 5451, 2]
+// Dependencies: [5, 5189, 5193, 5322, 13539, 11477, 8575, 8597, 676, 687, 12, 17359, 709, 13311, 17360, 5454, 2]
 
-// Module 17325 (getBackoffJitter)
+// Module 17358 (getBackoffJitter)
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 5451 */;
-import apexExperiment from "apexExperiment" /* 13277 */;
-import mapDefault from "map" /* 13505 */;
-import ContentInventoryFeature from "ContentInventoryFeature" /* 17327 */;
+import initializeDefault from "initialize" /* 5454 */;
+import apexExperiment from "apexExperiment" /* 13311 */;
+import mapDefault from "map" /* 13539 */;
+import ContentInventoryFeature from "ContentInventoryFeature" /* 17360 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_handleConnectionOpen" /* 5186 */;
-import closure_5 from "set" /* 5190 */;
-import closure_6 from "checkIdleAFK" /* 5319 */;
-import closure_7 from "updateImpressionCaches" /* 11447 */;
-import closure_8 from "map" /* 8553 */;
-import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 8575 */;
+import closure_4 from "_handleConnectionOpen" /* 5189 */;
+import closure_5 from "set" /* 5193 */;
+import closure_6 from "checkIdleAFK" /* 5322 */;
+import closure_7 from "updateImpressionCaches" /* 11477 */;
+import closure_8 from "map" /* 8575 */;
+import { ContentInventoryFeedKey } from "ContentInventoryFeedKey" /* 8597 */;
 import { PlatformTypes } from "ME" /* 676 */;
 import apply from "apply" /* 12 */;
 import set from "set" /* 2 */;
@@ -196,7 +196,7 @@ function _fetchInventory() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -227,7 +227,7 @@ function _fetchInventory() {
               c7 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp7) {

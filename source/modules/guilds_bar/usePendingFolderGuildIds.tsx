@@ -1,13 +1,13 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 8993
+// Function ID: 8994
 // Name: usePendingFolderGuildIds
-// Dependencies: [4269, 1910, 589, 2]
+// Dependencies: [4270, 1909, 589, 2]
 // Exports: default, getPendingFolderGuildIds
 
-// Module 8970 (usePendingFolderGuildIds)
+// Module 8993 (usePendingFolderGuildIds)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "handleGatewayJoinRequestUpdate" /* 4269 */;
-import closure_3 from "createGuildRecordFromRust" /* 1910 */;
+import closure_2 from "handleGatewayJoinRequestUpdate" /* 4270 */;
+import closure_3 from "createGuildRecordFromRust" /* 1909 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");

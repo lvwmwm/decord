@@ -1,16 +1,16 @@
-// Module ID: 4091
-// Function ID: 4092
+// Module ID: 4092
+// Function ID: 4093
 // Name: initialize
-// Dependencies: [1434, 1993, 1910, 1923, 676, 589, 709, 2]
+// Dependencies: [1430, 1992, 1909, 1922, 676, 589, 709, 2]
 
-// Module 4091 (initialize)
+// Module 4092 (initialize)
 import set2 from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1434 */;
-import closure_1 from "trackCommunicationDisabled" /* 1993 */;
-import closure_2 from "createGuildRecordFromRust" /* 1910 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
+import closure_1 from "trackCommunicationDisabled" /* 1992 */;
+import closure_2 from "createGuildRecordFromRust" /* 1909 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
 const isGuildLurker = GuildNSFWContentLevel.isGuildLurker;

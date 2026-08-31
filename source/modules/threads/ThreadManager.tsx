@@ -1,13 +1,13 @@
-// Module ID: 17009
-// Function ID: 17010
+// Module ID: 17042
+// Function ID: 17043
 // Name: handleChannelDelete
-// Dependencies: [1218, 1391, 5451, 589, 709, 7587, 2]
+// Dependencies: [1218, 1387, 5454, 589, 709, 7608, 2]
 
-// Module 17009 (handleChannelDelete)
-import initializeDefault from "initialize" /* 5451 */;
-import withErrorHandlingDefault from "withErrorHandling" /* 7587 */;
+// Module 17042 (handleChannelDelete)
+import initializeDefault from "initialize" /* 5454 */;
+import withErrorHandlingDefault from "withErrorHandling" /* 7608 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
 
 initializeDefault;
 class ThreadManager extends tmp2 {

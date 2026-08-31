@@ -1,16 +1,16 @@
-// Module ID: 15911
-// Function ID: 15912
+// Module ID: 15945
+// Function ID: 15946
 // Name: YouBarButtonIcon
-// Dependencies: [19, 17, 14632, 21, 4446, 712, 8044, 7560, 7952, 2]
+// Dependencies: [19, 17, 14666, 21, 4448, 712, 8066, 7581, 7974, 2]
 
-// Module 15911 (YouBarButtonIcon)
+// Module 15945 (YouBarButtonIcon)
 import ThemesDefault from "Themes" /* 712 */;
-import IconButton from "IconButton" /* 7952 */;
+import IconButton from "IconButton" /* 7974 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14632 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14666 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 class YouBarButtonIcon {
@@ -86,7 +86,7 @@ class YouBarButtonIcon {
     items2 = [, ];
     items2[0] = memo;
     items2[1] = hasBadge;
-    memo1 = obj2.useMemo(() => ({ position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "channel_id", bottom: "getGuild", padding: "key", minWidth: "method" }), items1);
+    memo1 = obj2.useMemo(() => ({ position: "absolute", left: size2 - badgeSize + num3, top: size2 - badgeSize + num4, right: "channel_id", bottom: "index", padding: "key", minWidth: "l" }), items1);
     obj1 = { style: { position: "relative", height: tmp, width: tmp }, children: null };
     memo2 = obj2.useMemo(() => {
       if (size2) {

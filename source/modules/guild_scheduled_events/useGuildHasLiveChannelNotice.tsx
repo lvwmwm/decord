@@ -1,19 +1,19 @@
-// Module ID: 15703
-// Function ID: 15704
+// Module ID: 15737
+// Function ID: 15738
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 5327, 1396, 4468, 1391, 4090, 4521, 15704, 1397, 505, 15705, 589, 9570, 15706, 5339, 5333, 2]
+// Dependencies: [19, 5330, 1392, 4470, 1387, 4091, 4523, 15738, 1393, 505, 15739, 589, 9592, 15740, 5342, 5336, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 15703 (useGuildHasLiveChannelNotice)
+// Module 15737 (useGuildHasLiveChannelNotice)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getActiveStageChannelIds" /* 5327 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import closure_6 from "reset" /* 4468 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_9 from "getVoiceStatesForGuild" /* 4521 */;
-import closure_10 from "initialize" /* 15704 */;
-import { GuildScheduledEventEntityTypes as closure_11 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import closure_4 from "getActiveStageChannelIds" /* 5330 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
+import closure_6 from "reset" /* 4470 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_9 from "getVoiceStatesForGuild" /* 4523 */;
+import closure_10 from "initialize" /* 15738 */;
+import { GuildScheduledEventEntityTypes as closure_11 } from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

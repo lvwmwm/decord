@@ -1,12 +1,12 @@
-// Module ID: 8443
-// Function ID: 8444
+// Module ID: 8465
+// Function ID: 8466
 // Name: isTestModeForApplication
-// Dependencies: [8444, 8445, 589, 2]
+// Dependencies: [8466, 8467, 589, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 8443 (isTestModeForApplication)
-import closure_2 from "initialize" /* 8444 */;
-import closure_3 from "reset" /* 8445 */;
+// Module 8465 (isTestModeForApplication)
+import closure_2 from "initialize" /* 8466 */;
+import closure_3 from "reset" /* 8467 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/game_store/TestModeUtils.tsx");

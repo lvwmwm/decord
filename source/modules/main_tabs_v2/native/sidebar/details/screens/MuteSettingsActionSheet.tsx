@@ -1,17 +1,17 @@
-// Module ID: 10163
-// Function ID: 10164
+// Module ID: 10186
+// Function ID: 10187
 // Name: MuteSettings
-// Dependencies: [19, 1391, 1910, 4099, 1923, 676, 21, 4442, 1236, 10164, 4413, 5957, 5564, 1297, 10166, 4640, 10167, 5954, 5586, 2]
+// Dependencies: [19, 1387, 1909, 4100, 1922, 676, 21, 4444, 1236, 10187, 4415, 5960, 5567, 1297, 10189, 4642, 10190, 5957, 5589, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 10163 (MuteSettings)
+// Module 10186 (MuteSettings)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
+import Text from "Text" /* 4444 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "markAllUserIdListsStale" /* 4099 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_6 from "markAllUserIdListsStale" /* 4100 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -127,7 +127,7 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     const intl4 = getSystemLocale.intl;
     obj1 = { mutedHook: null };
     obj1[0] = function mutedHook(children) {
-      return callback2(callback(4442).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children }, arg1);
+      return callback2(callback(4444).Text, { variant: "text-sm/medium", color: "text-feedback-critical", children }, arg1);
     };
     obj[2] = intl4.format(getSystemLocale.t.O34r15, obj1);
     tmp3 = callback(Text.Text, obj);
@@ -136,7 +136,7 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     const intl3 = getSystemLocale.intl;
     const obj3 = { notificationHook: null };
     obj3[0] = function notificationHook(children) {
-      return callback2(callback(4442).Text, { variant: "text-sm/medium", color: "text-feedback-warning", children }, arg1);
+      return callback2(callback(4444).Text, { variant: "text-sm/medium", color: "text-feedback-warning", children }, arg1);
     };
     obj2[2] = intl3.format(getSystemLocale.t.nRwUIL, obj3);
     tmp3 = callback(Text.Text, obj2);

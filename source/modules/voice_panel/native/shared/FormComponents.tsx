@@ -1,19 +1,19 @@
-// Module ID: 9746
-// Function ID: 9747
+// Module ID: 9768
+// Function ID: 9769
 // Name: VoiceBadges
-// Dependencies: [19, 4535, 21, 4446, 712, 5971, 5957, 9747, 1297, 5918, 9748, 9759, 9803, 4713, 8866, 8836, 589, 7430, 9805, 9806, 9808, 4442, 1236, 5564, 4893, 9809, 9810, 4290, 8947, 9811, 2]
+// Dependencies: [19, 4537, 21, 4448, 712, 5974, 5960, 9769, 1297, 5921, 9770, 9781, 9826, 4715, 8889, 8859, 589, 7451, 9828, 9829, 9831, 4444, 1236, 5567, 4896, 9832, 9833, 4292, 8970, 9834, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9746 (VoiceBadges)
+// Module 9768 (VoiceBadges)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5957 */;
-import setDefault from "set" /* 5971 */;
-import VideoDisabledSvgIcon from "VideoDisabledSvgIcon" /* 9747 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5960 */;
+import setDefault from "set" /* 5974 */;
+import VideoDisabledSvgIcon from "VideoDisabledSvgIcon" /* 9769 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "sortActivity" /* 4535 */;
+import closure_4 from "sortActivity" /* 4537 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function VoiceBadges(arg0) {
@@ -24,7 +24,7 @@ function VoiceBadges(arg0) {
   if (null != muteDeafenIconState) {
     obj = { style: null, children: null };
     obj[0] = tmp.iconWrapper;
-    let tmp3Result = tmp3(5971);
+    let tmp3Result = tmp3(5974);
     obj = { state: null, size: null, style: null };
     obj[0] = muteDeafenIconState;
     obj[1] = Button.IconSizes.SMALL;
@@ -37,7 +37,7 @@ function VoiceBadges(arg0) {
   if (null != videoIconState) {
     obj1 = { style: null, children: null };
     obj1[0] = tmp.iconWrapper;
-    tmp3Result = tmp3(5971);
+    tmp3Result = tmp3(5974);
     const obj2 = { state: null, size: null, style: null };
     obj2[0] = videoIconState;
     obj2[1] = Button.IconSizes.SMALL;

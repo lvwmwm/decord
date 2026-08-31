@@ -1,10 +1,10 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17036
+// Function ID: 17037
 // Name: prototype
-// Dependencies: [5451, 17004, 2]
+// Dependencies: [5454, 17037, 2]
 
-// Module 17003 (prototype)
-import initializeDefault from "initialize" /* 5451 */;
+// Module 17036 (prototype)
+import initializeDefault from "initialize" /* 5454 */;
 
 let require = arg1;
 initializeDefault;

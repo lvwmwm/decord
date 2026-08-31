@@ -1,12 +1,12 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 7549
+// Function ID: 7550
 // Name: _uploadMessageAttachments
-// Dependencies: [5, 7529, 7530, 4703, 709, 2]
+// Dependencies: [5, 7550, 7551, 4705, 709, 2]
 // Exports: uploadMessageAttachments
 
-// Module 7528 (_uploadMessageAttachments)
+// Module 7549 (_uploadMessageAttachments)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 7529 */;
+import closure_4 from "initialize" /* 7550 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -28,7 +28,7 @@ function _uploadMessageAttachments() {
           obj[0] = attachments;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -56,7 +56,7 @@ function _uploadMessageAttachments() {
               closure_7 = undefined;
               c4 = 1;
               set = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -69,13 +69,13 @@ function _uploadMessageAttachments() {
               return obj1;
             } else if (set.has(dependencyMap)) {
               set = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else {
-              const tmp16 = new callback2(7530)();
+              const tmp16 = new callback2(7551)();
               set = tmp16;
               const _HermesInternal = HermesInternal;
               closure_6 = "pending-upload-" + set._file.id;
-              let obj2 = callback(4703);
+              let obj2 = callback(4705);
               obj2 = {};
               const merged = Object.assign(callback2);
               obj2.key = closure_6;

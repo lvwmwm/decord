@@ -1,13 +1,13 @@
-// Module ID: 16566
-// Function ID: 16567
+// Module ID: 16600
+// Function ID: 16601
 // Name: initialize
-// Dependencies: [1397, 589, 709, 2]
+// Dependencies: [1393, 589, 709, 2]
 
-// Module 16566 (initialize)
+// Module 16600 (initialize)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1397 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
 
 const GuildScheduledEventStatus = GUILD_EVENT_MAX_NAME_LENGTH.GuildScheduledEventStatus;
 let closure_1 = {};

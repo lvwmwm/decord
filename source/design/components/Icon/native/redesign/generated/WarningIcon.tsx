@@ -1,14 +1,14 @@
-// Module ID: 8677
-// Function ID: 8678
+// Module ID: 8699
+// Function ID: 8700
 // Name: WarningIcon
-// Dependencies: [19, 21, 712, 4165, 8678, 2]
+// Dependencies: [19, 21, 712, 4166, 8700, 2]
 // Exports: WarningIcon
 
-// Module 8677 (WarningIcon)
+// Module 8699 (WarningIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 8678 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 8700 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

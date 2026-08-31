@@ -1,15 +1,15 @@
-// Module ID: 16372
-// Function ID: 16373
-// Dependencies: [19, 17, 1391, 7569, 21, 4446, 712, 1503, 589, 11802, 16228, 2]
+// Module ID: 16406
+// Function ID: 16407
+// Dependencies: [19, 17, 1387, 7590, 21, 4448, 712, 1502, 589, 11833, 16262, 2]
 
-// Module 16372
+// Module 16406
 import ThemesDefault from "Themes" /* 712 */;
-import InitialPinsScreenDefault from "InitialPinsScreen" /* 16228 */;
+import InitialPinsScreenDefault from "InitialPinsScreen" /* 16262 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import { SearchTabs } from "MessageEmbedTypes" /* 7569 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 7590 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -18,7 +18,7 @@ obj = { flex: 1, backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOWER };
 obj[0] = obj;
 let closure_7 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(() => {
-  let obj = channelId(1503);
+  let obj = channelId(1502);
   channelId = obj.useRoute().params.channelId;
   const items = [closure_4];
   const stateFromStores = channelId(589).useStateFromStores(items, () => {
@@ -30,7 +30,7 @@ const memoResult = importAllResult.memo(() => {
     return guild_id;
   });
   const obj2 = channelId(589);
-  const channelDetailsSearchContext = channelId(11802).useChannelDetailsSearchContext(channelId, stateFromStores);
+  const channelDetailsSearchContext = channelId(11833).useChannelDetailsSearchContext(channelId, stateFromStores);
   obj = { style: callback().container, children: jsx(InitialPinsScreenDefault, obj) };
   obj = { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS };
   return <View searchContext={channelDetailsSearchContext} isFocused tab={SearchTabs.PINS} />;

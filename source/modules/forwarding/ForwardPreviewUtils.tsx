@@ -1,11 +1,11 @@
-// Module ID: 11212
-// Function ID: 11213
+// Module ID: 11241
+// Function ID: 11242
 // Name: useForwardPreviewContent
-// Dependencies: [4090, 589, 4816, 2]
+// Dependencies: [4091, 589, 4818, 2]
 // Exports: useForwardPreviewContent
 
-// Module 11212 (useForwardPreviewContent)
-import closure_2 from "getUncachedChannelPermissions" /* 4090 */;
+// Module 11241 (useForwardPreviewContent)
+import closure_2 from "getUncachedChannelPermissions" /* 4091 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/forwarding/ForwardPreviewUtils.tsx");

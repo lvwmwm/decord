@@ -1,12 +1,12 @@
-// Module ID: 8646
-// Function ID: 8647
+// Module ID: 8668
+// Function ID: 8669
 // Name: useIsExpressiveModalV2Enabled
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: isExpressiveModalV2Enabled, useIsExpressiveModalV2Enabled
 
-// Module 8646 (useIsExpressiveModalV2Enabled)
+// Module 8668 (useIsExpressiveModalV2Enabled)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null, 2: { enabled: true } };
 obj[2] = { enabled: true };

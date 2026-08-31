@@ -1,22 +1,22 @@
-// Module ID: 9550
-// Function ID: 9551
+// Module ID: 9572
+// Function ID: 9573
 // Name: getSafeArea
-// Dependencies: [5, 32, 19, 17, 8444, 4474, 676, 4348, 21, 4446, 3, 500, 9551, 514, 8539, 9552, 9553, 1626, 9555, 9556, 698, 1231, 647, 4822, 1236, 530, 9557, 1487, 9394, 9438, 8522, 4687, 9392, 2]
+// Dependencies: [5, 32, 19, 17, 8466, 4476, 676, 4350, 21, 4448, 3, 500, 9573, 514, 8561, 9574, 9575, 1625, 9577, 9578, 698, 1231, 647, 4825, 1236, 530, 9579, 1486, 9416, 9460, 8544, 4689, 9414, 2]
 // Exports: default, useHasInvalidUrlErrorState
 
-// Module 9550 (getSafeArea)
+// Module 9572 (getSafeArea)
 import timestampDefault from "timestamp" /* 3 */;
-import usePreviousDefault from "usePrevious" /* 8522 */;
+import usePreviousDefault from "usePrevious" /* 8544 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import { Linking } from "get ActivityIndicator" /* 17 */;
-import closure_8 from "initialize" /* 8444 */;
-import items3 from "items3" /* 4474 */;
+import closure_8 from "initialize" /* 8466 */;
+import items3 from "items3" /* 4476 */;
 import ME from "ME" /* 676 */;
-import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4348 */;
+import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4350 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import set from "set" /* 500 */;
 
 const require = arg1;
@@ -163,7 +163,7 @@ class BaseActivityWebView {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -413,7 +413,7 @@ class BaseActivityWebView {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 }
               } else {
                 try {
@@ -463,7 +463,7 @@ class BaseActivityWebView {
                     closure_1_30(items.map((arg0) => "^" + content_security_policy(table[26])(arg0).replace(/\\\*/g, ".*")));
                     closure_1_28(true);
                     c4 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } catch (tmp7) {
                   c4 = tmp;
@@ -604,7 +604,7 @@ class BaseActivityWebView {
                     obj[0] = arg1;
                     return obj;
                   } else {
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 } else {
                   try {

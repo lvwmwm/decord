@@ -1,13 +1,13 @@
-// Module ID: 1470
-// Function ID: 1471
+// Module ID: 1466
+// Function ID: 1467
 // Name: apexExperiment
-// Dependencies: [1471, 1472, 2]
+// Dependencies: [1467, 1468, 2]
 // Exports: getAttachmentImageLadderConfig
 
-// Module 1470 (apexExperiment)
+// Module 1466 (apexExperiment)
 import set from "set" /* 2 */;
-import items from "items" /* 1471 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import items from "items" /* 1467 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let obj = { enabled: false, maxUpscale: items.ATTACHMENT_LADDER_MAX_UPSCALE, minSnapDownDpr: 2 };
 obj = { name: "2026-07-attachment-image-ladder", kind: "user", defaultConfig: obj, variations: null };

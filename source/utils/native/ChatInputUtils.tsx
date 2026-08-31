@@ -1,14 +1,14 @@
-// Module ID: 4308
-// Function ID: 4309
+// Module ID: 4310
+// Function ID: 4311
 // Name: getBestActiveInput
-// Dependencies: [4309, 1892, 4310, 1627, 1498, 4311, 2]
+// Dependencies: [4311, 1891, 4312, 1626, 1497, 4313, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4308 (getBestActiveInput)
+// Module 4310 (getBestActiveInput)
 import set from "set" /* 2 */;
-import KeyboardTypes from "KeyboardTypes" /* 1627 */;
-import dismissGlobalKeyboard from "dismissGlobalKeyboard" /* 1892 */;
-import zustandStore from "zustandStore" /* 4311 */;
+import KeyboardTypes from "KeyboardTypes" /* 1626 */;
+import dismissGlobalKeyboard from "dismissGlobalKeyboard" /* 1891 */;
+import zustandStore from "zustandStore" /* 4313 */;
 
 function getBestActiveInput() {
   let str;
@@ -239,12 +239,12 @@ export const dismissKeyboard = function dismissKeyboard() {
   if (null != obj2) {
     obj2.closeCustomKeyboard();
   }
-  let tmpResult = tmp(4310);
+  let tmpResult = tmp(4312);
   const keyboardType = tmpResult.getKeyboardType();
   if (keyboardType !== KeyboardTypes.KeyboardTypes.SYSTEM) {
-    tmpResult = tmp(1498);
+    tmpResult = tmp(1497);
     obj = { type: null };
-    obj[0] = tmp(1627).KeyboardTypes.SYSTEM;
+    obj[0] = tmp(1626).KeyboardTypes.SYSTEM;
     tmpResult.setKeyboardType(obj);
   }
   const result1 = zustandStore.closePortalKeyboardRequest();

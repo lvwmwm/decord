@@ -1,9 +1,9 @@
-// Module ID: 13301
-// Function ID: 13302
+// Module ID: 13335
+// Function ID: 13336
 // Name: LocalNotificationTypes
 // Dependencies: [2]
 
-// Module 13301 (LocalNotificationTypes)
+// Module 13335 (LocalNotificationTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/local_push_notification/native/Constants.tsx");

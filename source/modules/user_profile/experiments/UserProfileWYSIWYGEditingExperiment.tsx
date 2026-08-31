@@ -1,12 +1,12 @@
-// Module ID: 8973
-// Function ID: 8974
+// Module ID: 8996
+// Function ID: 8997
 // Name: useIsEligibleForUserProfileWYSIWYGEditing
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: getIsEligibleForUserProfileWYSIWYGEditing, useIsEligibleForUserProfileWYSIWYGEditing
 
-// Module 8973 (useIsEligibleForUserProfileWYSIWYGEditing)
+// Module 8996 (useIsEligibleForUserProfileWYSIWYGEditing)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

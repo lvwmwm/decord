@@ -1,10 +1,10 @@
-// Module ID: 11040
-// Function ID: 11041
+// Module ID: 11071
+// Function ID: 11072
 // Name: useMediaModalFooterActionStore
 // Dependencies: [644, 705, 2]
 // Exports: clearMediaModalFooterAction, setMediaModalFooterAction
 
-// Module 11040 (useMediaModalFooterActionStore)
+// Module 11071 (useMediaModalFooterActionStore)
 import set from "set" /* 2 */;
 import batchUpdates from "batchUpdates" /* 705 */;
 import keys from "keys" /* 644 */;
@@ -18,5 +18,5 @@ export const setMediaModalFooterAction = function setMediaModalFooterAction(arg0
   _require(705).batchUpdates(() => closure_1_2.setState({ footerAction: closure_0 }));
 };
 export const clearMediaModalFooterAction = function clearMediaModalFooterAction() {
-  batchUpdates.batchUpdates(() => state.setState({ footerAction: "r" }));
+  batchUpdates.batchUpdates(() => state.setState({ footerAction: "Array" }));
 };

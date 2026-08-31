@@ -1,17 +1,17 @@
-// Module ID: 4535
-// Function ID: 4536
+// Module ID: 4537
+// Function ID: 4538
 // Name: sortActivity
-// Dependencies: [1218, 1923, 676, 4536, 12, 659, 11, 589, 709, 2]
+// Dependencies: [1218, 1922, 676, 4538, 12, 659, 11, 589, 709, 2]
 
-// Module 4535 (sortActivity)
+// Module 4537 (sortActivity)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import hasRichActivityDefault from "hasRichActivity" /* 4536 */;
+import hasRichActivityDefault from "hasRichActivity" /* 4538 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
 function sortActivity(type, type2) {
@@ -50,7 +50,7 @@ function sortActivity(type, type2) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(4536)(type)) {
+    if (tmp3(4538)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;

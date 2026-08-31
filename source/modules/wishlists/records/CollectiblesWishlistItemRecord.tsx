@@ -1,18 +1,18 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10422
+// Function ID: 10423
 // Name: createCollectiblesItemFromServerResponse
-// Dependencies: [7239, 7238, 1949, 7240, 7241, 4489, 10397, 676, 1951, 2]
+// Dependencies: [7260, 7259, 1948, 7261, 7262, 4491, 10421, 676, 1950, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 10398 (createCollectiblesItemFromServerResponse)
-import CollectiblesItemType from "CollectiblesItemType" /* 1951 */;
-import fromServerDefault from "fromServer" /* 10397 */;
-import closure_2 from "fromServer" /* 7239 */;
-import { transformSKUToCollectiblesItem as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 7238 */;
-import closure_4 from "fromServer" /* 1949 */;
-import closure_5 from "fromServer" /* 7240 */;
-import closure_6 from "fromServer" /* 7241 */;
-import closure_7 from "createFromServer" /* 4489 */;
+// Module 10422 (createCollectiblesItemFromServerResponse)
+import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import fromServerDefault from "fromServer" /* 10421 */;
+import closure_2 from "fromServer" /* 7260 */;
+import { transformSKUToCollectiblesItem as closure_3 } from "createCollectiblesItemsFromServerResponse" /* 7259 */;
+import closure_4 from "fromServer" /* 1948 */;
+import closure_5 from "fromServer" /* 7261 */;
+import closure_6 from "fromServer" /* 7262 */;
+import closure_7 from "createFromServer" /* 4491 */;
 import { SKUProductLines } from "ME" /* 676 */;
 
 require = arg1;
@@ -20,11 +20,11 @@ function createCollectiblesItemFromServerResponse(collectibles_item) {
   const type = collectibles_item.type;
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
     return closure_2.fromServer(collectibles_item);
-  } else if (tmp(1951).CollectiblesItemType.PROFILE_EFFECT === type) {
+  } else if (tmp(1950).CollectiblesItemType.PROFILE_EFFECT === type) {
     return closure_5.fromServer(collectibles_item);
-  } else if (tmp(1951).CollectiblesItemType.NAMEPLATE === type) {
+  } else if (tmp(1950).CollectiblesItemType.NAMEPLATE === type) {
     return closure_4.fromServer(collectibles_item);
-  } else if (tmp(1951).CollectiblesItemType.PROFILE_FRAME === type) {
+  } else if (tmp(1950).CollectiblesItemType.PROFILE_FRAME === type) {
     return closure_6.fromServer(collectibles_item);
   } else {
     return null;

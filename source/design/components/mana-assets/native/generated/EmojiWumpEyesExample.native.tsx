@@ -1,14 +1,14 @@
-// Module ID: 6472
-// Function ID: 6473
+// Module ID: 6485
+// Function ID: 6486
 // Name: EmojiWumpEyesExample
-// Dependencies: [21, 5458, 6473, 2]
+// Dependencies: [21, 5461, 6486, 2]
 // Exports: EmojiWumpEyesExample
 
-// Module 6472 (EmojiWumpEyesExample)
+// Module 6485 (EmojiWumpEyesExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6473 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6486 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiWumpEyesExample.native.tsx");

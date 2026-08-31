@@ -1,13 +1,13 @@
-// Module ID: 7911
-// Function ID: 7912
+// Module ID: 7933
+// Function ID: 7934
 // Name: useIsEligibleSenderForReferralProgram
-// Dependencies: [7144, 7912, 589, 2]
+// Dependencies: [7165, 7934, 589, 2]
 // Exports: useIsEligibleSenderForReferralProgram
 
-// Module 7911 (useIsEligibleSenderForReferralProgram)
+// Module 7933 (useIsEligibleSenderForReferralProgram)
 import initialize from "initialize" /* 589 */;
-import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 7912 */;
-import closure_2 from "emitChanges" /* 7144 */;
+import useMaybeFetchReferralsRemaining from "useMaybeFetchReferralsRemaining" /* 7934 */;
+import closure_2 from "emitChanges" /* 7165 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/referral_program/hooks/useIsEligibleSenderForReferralProgram.tsx");

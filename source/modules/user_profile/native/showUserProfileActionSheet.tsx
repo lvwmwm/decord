@@ -1,15 +1,15 @@
-// Module ID: 8836
-// Function ID: 8837
+// Module ID: 8859
+// Function ID: 8860
 // Name: showUserProfileActionSheet
-// Dependencies: [5, 5534, 4099, 1923, 2010, 4135, 8837, 4413, 8840, 2]
+// Dependencies: [5, 5537, 4100, 1922, 2009, 4136, 8860, 4415, 8863, 2]
 // Exports: getUserProfileActionSheetKey, getUserProfileBlockedSpeedBumpActionSheetKey, getUserProfileIgnoredSpeedBumpActionSheetKey, showUserProfileActionSheetPostConnection
 
-// Module 8836 (showUserProfileActionSheet)
-import asyncRequireImpl from "asyncRequireImpl" /* 2010 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4413 */;
+// Module 8859 (showUserProfileActionSheet)
+import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "markAllUserIdListsStale" /* 4099 */;
+import closure_5 from "markAllUserIdListsStale" /* 4100 */;
 
 require = arg1;
 function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
@@ -20,7 +20,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
     const isBlockedResult = closure_5.isBlocked(ignoreBlockedSpeedBump.userId);
     const isIgnoredResult = closure_5.isIgnored(ignoreBlockedSpeedBump.userId);
     if (isIgnoredResult) {
-      const tmp8 = tmp2(2010)(8837, tmp3.paths);
+      const tmp8 = tmp2(2009)(8860, tmp3.paths);
       let obj = ACTION_SHEET_HEIGHT_HALFDefault;
       const _HermesInternal = HermesInternal;
       const combined = "UserProfileIgnoredSpeedBump" + ignoreBlockedSpeedBump.userId;
@@ -35,7 +35,7 @@ function showUserProfileActionSheet(ignoreBlockedSpeedBump, arg1) {
       obj.openLazy(tmp8, combined, obj, str);
     }
   }
-  const tmp20 = asyncRequireImpl(8840, dependencyMap.paths);
+  const tmp20 = asyncRequireImpl(8863, dependencyMap.paths);
   const combined1 = "UserProfile" + ignoreBlockedSpeedBump.userId;
   obj = {};
   const merged1 = Object.assign(ignoreBlockedSpeedBump);
@@ -72,7 +72,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -107,7 +107,7 @@ export const showUserProfileActionSheetPostConnection = function showUserProfile
             closure_1_6(userId);
           }
           paths = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp14) {
         paths = tmp;

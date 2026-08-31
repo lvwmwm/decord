@@ -1,13 +1,13 @@
-// Module ID: 14172
-// Function ID: 14173
+// Module ID: 14206
+// Function ID: 14207
 // Name: route
-// Dependencies: [676, 11006, 1236, 14173, 2]
+// Dependencies: [676, 11031, 1236, 14207, 2]
 
-// Module 14172 (route)
+// Module 14206 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import createToggle from "createToggle" /* 11006 */;
+import createToggle from "createToggle" /* 11031 */;
 
 obj = {
   useTitle() {
@@ -21,7 +21,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.PROFILE_CUSTOMIZATION,
   getComponent() {
-    return require(14173) /* ProfileCustomizationSubsection */.default;
+    return require(14207) /* ProfileCustomizationSubsection */.default;
   }
 };
 const route = createToggle.createRoute(obj);

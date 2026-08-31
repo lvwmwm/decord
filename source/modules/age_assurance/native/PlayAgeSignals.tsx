@@ -1,10 +1,10 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 17006
+// Function ID: 17007
 // Name: _getAgeSignals
-// Dependencies: [5, 16974, 16975, 2]
+// Dependencies: [5, 17007, 17008, 2]
 // Exports: getAgeSignals
 
-// Module 16973 (_getAgeSignals)
+// Module 17006 (_getAgeSignals)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -22,7 +22,7 @@ function _getAgeSignals() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -95,7 +95,9 @@ function _getAgeSignals() {
 }
 let result = require("set").fileFinishedImporting("modules/age_assurance/native/PlayAgeSignals.tsx");
 
-export const AgeSignalsVerificationStatus = { VERIFIED: 0, SUPERVISED: 1, SUPERVISED_APPROVAL_PENDING: 2, SUPERVISED_APPROVAL_DENIED: 3, UNKNOWN: 4, DECLARED: 5 };
+export const AgeSignalsStatus = { UNSPECIFIED: 0, SHARED: 1, NOT_SHARED: 2, VERIFICATION_REQUIRED: 3 };
+export const AgeRangeSource = { UNSPECIFIED: 0, TIER_A: 1, TIER_B: 2, TIER_C: 3, TIER_D: 4 };
+export const SignificantChangeStatus = { UNSPECIFIED: 0, APPROVED: 1, PENDING: 2, DECLINED: 3 };
 export const getAgeSignals = function getAgeSignals() {
   const self = this;
   const apply = _getAgeSignals.apply;

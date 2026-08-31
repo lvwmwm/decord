@@ -1,13 +1,13 @@
-// Module ID: 13431
-// Function ID: 13432
+// Module ID: 13465
+// Function ID: 13466
 // Name: getAudioFidelityExperimentConfig
-// Dependencies: [1472, 1370, 2]
+// Dependencies: [1468, 1471, 2]
 // Exports: getAudioFidelityExperimentConfig, getVoiceFidelityCaps
 
-// Module 13431 (getAudioFidelityExperimentConfig)
+// Module 13465 (getAudioFidelityExperimentConfig)
 import set from "set" /* 2 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1370 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 let obj = { 1: null, 2: { capSampleRate: true, capChannelCount: false, condition: "krisp" }, 3: { capSampleRate: true, capChannelCount: false, condition: "noiseSuppression" }, 4: { capSampleRate: true, capChannelCount: false, condition: "echoCancellation" }, 5: { capSampleRate: true, capChannelCount: false, condition: "any" }, 6: { capSampleRate: true, capChannelCount: true, condition: "krisp" }, 7: { capSampleRate: true, capChannelCount: true, condition: "noiseSuppression" }, 8: { capSampleRate: true, capChannelCount: true, condition: "echoCancellation" } };
 obj[8] = { capSampleRate: true, capChannelCount: true, condition: "any" };

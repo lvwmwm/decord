@@ -1,18 +1,18 @@
-// Module ID: 10403
-// Function ID: 10404
+// Module ID: 10427
+// Function ID: 10428
 // Name: shouldFetchStorefrontPromotions
-// Dependencies: [5, 4110, 6044, 8442, 10404, 10405, 676, 687, 709, 530, 6043, 2]
+// Dependencies: [5, 4111, 6047, 8464, 10428, 10429, 676, 687, 709, 530, 6046, 2]
 // Exports: fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 10403 (shouldFetchStorefrontPromotions)
+// Module 10427 (shouldFetchStorefrontPromotions)
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import resetStoreStateDefault from "resetStoreState" /* 6044 */;
+import resetStoreStateDefault from "resetStoreState" /* 6047 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handlePaymentSourceCreateEnd" /* 4110 */;
-import closure_5 from "getPromotionIdOverride" /* 8442 */;
-import closure_6 from "handleReset" /* 10404 */;
-import closure_7 from "parseSkuIds" /* 10405 */;
+import closure_4 from "handlePaymentSourceCreateEnd" /* 4111 */;
+import closure_5 from "getPromotionIdOverride" /* 8464 */;
+import closure_6 from "handleReset" /* 10428 */;
+import closure_7 from "parseSkuIds" /* 10429 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -51,7 +51,7 @@ function _maybeFetchStorefrontPromotions() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ function _maybeFetchStorefrontPromotions() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         } catch (tmp8) {
           c1 = tmp;
           throw tmp8;
@@ -131,7 +131,7 @@ function _fetchStorefrontPromotions() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -241,7 +241,7 @@ function _fetchStorefrontPricesForApplicationId() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -262,7 +262,7 @@ function _fetchStorefrontPricesForApplicationId() {
               applicationId = applicationId.applicationId;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -292,7 +292,7 @@ function _fetchStorefrontPricesForApplicationId() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           c4 = tmp;
@@ -330,7 +330,7 @@ function _fetchStorefrontPricesForSkuIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -351,7 +351,7 @@ function _fetchStorefrontPricesForSkuIds() {
               skuIds = skuIds.skuIds;
               c3 = 1;
               c4 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -381,7 +381,7 @@ function _fetchStorefrontPricesForSkuIds() {
             return obj;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp11) {
           c4 = tmp;
@@ -425,7 +425,7 @@ function _fetchStorefrontPrices() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -460,7 +460,7 @@ function _fetchStorefrontPrices() {
             obj = body(709);
             let obj2 = { type: "SKUS_PRICING_FETCH_SUCCESS", priceId: null, data: null };
             obj2[1] = callback;
-            obj2 = callback(6043);
+            obj2 = callback(6046);
             obj2[2] = obj2.transformStorefrontPricesServer(body);
             obj.dispatch(obj2);
             dependencyMap = 0;

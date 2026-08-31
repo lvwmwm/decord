@@ -1,18 +1,18 @@
-// Module ID: 13699
-// Function ID: 13700
+// Module ID: 13733
+// Function ID: 13734
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 4446, 712, 500, 4900, 4922, 4905, 1370, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 500, 4903, 4925, 4908, 1471, 2]
 // Exports: RoleDot
 
-// Module 13699 (RoleDot)
+// Module 13733 (RoleDot)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import getFontScale from "getFontScale" /* 4900 */;
-import LinearGradientDefault from "LinearGradient" /* 4905 */;
-import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4922 */;
+import getFontScale from "getFontScale" /* 4903 */;
+import LinearGradientDefault from "LinearGradient" /* 4908 */;
+import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4925 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -86,7 +86,7 @@ export const RoleDot = function RoleDot(background) {
         const obj5 = { colors: null, start: null, end: null, style: null };
         const items5 = [, , ];
         ({ primaryColor: arr7[0], secondaryColor: arr7[1], tertiaryColor: arr7[2] } = colors);
-        obj5[0] = items5.filter(tmp2(1370).isNotNullish);
+        obj5[0] = items5.filter(tmp2(1471).isNotNullish);
         obj5[1] = { x: 0, y: 0 };
         obj5[2] = { x: 1, y: 0 };
         const items6 = [tmp.dot, obj1];

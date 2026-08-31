@@ -1,11 +1,11 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 13753
+// Function ID: 13754
 // Name: items
-// Dependencies: [19, 21, 9977, 13720, 2]
+// Dependencies: [19, 21, 10000, 13754, 2]
 
-// Module 13719 (items)
-import LottieIcon from "LottieIcon" /* 9977 */;
-import registerAsset from "registerAsset" /* 13720 */;
+// Module 13753 (items)
+import LottieIcon from "LottieIcon" /* 10000 */;
+import registerAsset from "registerAsset" /* 13754 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

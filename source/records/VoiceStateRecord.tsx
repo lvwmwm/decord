@@ -1,10 +1,10 @@
-// Module ID: 4466
-// Function ID: 4467
+// Module ID: 4468
+// Function ID: 4469
 // Name: isVoiceMuted
-// Dependencies: [1932, 2]
+// Dependencies: [1931, 2]
 
-// Module 4466 (isVoiceMuted)
-import toJSDefault from "toJS" /* 1932 */;
+// Module 4468 (isVoiceMuted)
+import toJSDefault from "toJS" /* 1931 */;
 
 toJSDefault;
 const result = require("set").fileFinishedImporting("records/VoiceStateRecord.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17213
+// Function ID: 17214
 // Name: styles
-// Dependencies: [17, 4446, 2]
+// Dependencies: [17, 4448, 2]
 
-// Module 17180 (styles)
+// Module 17213 (styles)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const Platform = get_ActivityIndicator.Platform;
 const styles = createCacheKey.createStyles({ content: { alignItems: "center", paddingLeft: 16, paddingRight: 16, marginTop: 30 }, header: { marginTop: 12, textAlign: "center" }, description: { marginBottom: 16, marginTop: 8, textAlign: "center" }, formHint: { paddingHorizontal: 16 }, communityRequirementSatisfiedFormWrapper: { position: "relative" }, communityRequirementSatisfiedFormPressable: { position: "absolute", width: 80, top: 0, right: 0, height: "100%" } });

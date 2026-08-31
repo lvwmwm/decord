@@ -1,14 +1,14 @@
-// Module ID: 6288
-// Function ID: 6289
+// Module ID: 6293
+// Function ID: 6294
 // Name: AvatarGraggleExample
-// Dependencies: [21, 5458, 6289, 2]
+// Dependencies: [21, 5461, 6294, 2]
 // Exports: AvatarGraggleExample
 
-// Module 6288 (AvatarGraggleExample)
+// Module 6293 (AvatarGraggleExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6289 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6294 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarGraggleExample.native.tsx");

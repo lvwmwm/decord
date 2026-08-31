@@ -1,10 +1,10 @@
-// Module ID: 9356
-// Function ID: 9357
+// Module ID: 9378
+// Function ID: 9379
 // Name: getActivityPlatformDisplayName
-// Dependencies: [676, 1236, 9355, 2]
+// Dependencies: [676, 1236, 9377, 2]
 // Exports: default
 
-// Module 9356 (getActivityPlatformDisplayName)
+// Module 9378 (getActivityPlatformDisplayName)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

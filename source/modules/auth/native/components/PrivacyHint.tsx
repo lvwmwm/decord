@@ -1,21 +1,21 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15540
+// Function ID: 15541
 // Name: PrivacyPolicyDescription
-// Dependencies: [19, 17, 6018, 15468, 676, 21, 4446, 4442, 1236, 4174, 7631, 8309, 15507, 2]
+// Dependencies: [19, 17, 6021, 15502, 676, 21, 4448, 4444, 1236, 4175, 7652, 8331, 15541, 2]
 // Exports: default
 
-// Module 15506 (PrivacyPolicyDescription)
+// Module 15540 (PrivacyPolicyDescription)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4174 */;
-import Text from "Text" /* 4442 */;
-import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15507 */;
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4175 */;
+import Text from "Text" /* 4444 */;
+import PromotionalEmailCheckBoxDefault from "PromotionalEmailCheckBox" /* 15541 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { usePromoEmailConsentStore } from "setPromoEmailConsentState" /* 6018 */;
-import { useRegistrationUIStore } from "useRegistrationUIStore" /* 15468 */;
+import { usePromoEmailConsentStore } from "setPromoEmailConsentState" /* 6021 */;
+import { useRegistrationUIStore } from "useRegistrationUIStore" /* 15502 */;
 import { MarketingURLs } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function PrivacyPolicyDescription(style) {
@@ -41,12 +41,12 @@ function PrivacyPolicyCheckbox(onToggleConsent) {
   if (asCheckbox) {
     obj = { checked: null };
     obj[0] = consent;
-    let tmp7Result = tmp7(tmp2(7631).FormCheckbox, obj);
+    let tmp7Result = tmp7(tmp2(7652).FormCheckbox, obj);
     let tmp9 = tmp7;
   } else {
     obj1 = { selected: null };
     obj1[0] = consent;
-    tmp7Result = tmp7(tmp2(8309).FormRow.Radio, obj1);
+    tmp7Result = tmp7(tmp2(8331).FormRow.Radio, obj1);
     tmp9 = tmp7;
   }
   const items = [tmp7Result, ];

@@ -1,14 +1,14 @@
-// Module ID: 9528
-// Function ID: 9529
+// Module ID: 9550
+// Function ID: 9551
 // Name: useStreamError
-// Dependencies: [9503, 9504, 589, 2]
+// Dependencies: [9525, 9526, 589, 2]
 // Exports: default
 
-// Module 9528 (useStreamError)
-import closure_2 from "isAVErrorContextOfType" /* 9503 */;
+// Module 9550 (useStreamError)
+import closure_2 from "isAVErrorContextOfType" /* 9525 */;
 
 const require = arg1;
-let closure_3 = { [arg1(9504).AVError.STREAM_SOUNDSHARE_FAILED]: 0, [arg1(9504).AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [arg1(9504).AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [arg1(9504).AVError.STREAM_SEND_LOW_FPS]: 2, [arg1(9504).AVError.STREAM_VIEW_LOW_FPS]: 2, [arg1(9504).AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };
+let closure_3 = { [arg1(9526).AVError.STREAM_SOUNDSHARE_FAILED]: 0, [arg1(9526).AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [arg1(9526).AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [arg1(9526).AVError.STREAM_SEND_LOW_FPS]: 2, [arg1(9526).AVError.STREAM_VIEW_LOW_FPS]: 2, [arg1(9526).AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };
 const result = require("set").fileFinishedImporting("modules/go_live/useStreamError.tsx");
 
 export default function useStreamError(id) {

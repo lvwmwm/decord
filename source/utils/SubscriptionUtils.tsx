@@ -1,20 +1,20 @@
-// Module ID: 8434
-// Function ID: 8435
+// Module ID: 8456
+// Function ID: 8457
 // Name: getSubscriptionPlans
-// Dependencies: [32, 19, 4113, 676, 1925, 38, 8435, 4108, 6069, 589, 8437, 4044, 2]
+// Dependencies: [32, 19, 4114, 676, 1924, 38, 8457, 4109, 6072, 589, 8459, 4045, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 8434 (getSubscriptionPlans)
+// Module 8456 (getSubscriptionPlans)
 import _modDef38 from "module_38" /* 38 */;
-import hooksDefault from "hooks" /* 4044 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4108 */;
-import prototype from "prototype" /* 8435 */;
-import PauseDuration from "PauseDuration" /* 8437 */;
+import hooksDefault from "hooks" /* 4045 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4109 */;
+import prototype from "prototype" /* 8457 */;
+import PauseDuration from "PauseDuration" /* 8459 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "addSubscriptionPlan" /* 4113 */;
+import closure_5 from "addSubscriptionPlan" /* 4114 */;
 import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 require = arg1;
 ({ SubscriptionStatusTypes: closure_6, SubscriptionTypes: error } = ME);
@@ -102,8 +102,8 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     const tmp9 = null != table[subscriptionPlanId];
     const result = getPremiumPlanItem.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     if (!closure_5.isFetchingForSKU(result)) {
-      const subscriptionPlansForSKU = tmp12(6069).fetchSubscriptionPlansForSKU(result, closure_1);
-      const tmp12Result = tmp12(6069);
+      const subscriptionPlansForSKU = tmp12(6072).fetchSubscriptionPlansForSKU(result, closure_1);
+      const tmp12Result = tmp12(6072);
     }
     const obj3 = getPremiumPlanItem;
   }

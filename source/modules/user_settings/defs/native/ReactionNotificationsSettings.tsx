@@ -1,17 +1,17 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15052
+// Function ID: 15053
 // Name: onChange
-// Dependencies: [7830, 4101, 4135, 1236, 1306, 11006, 2]
+// Dependencies: [7852, 4102, 4136, 1236, 1306, 11031, 2]
 // Exports: onChange
 
-// Module 15019 (onChange)
+// Module 15052 (onChange)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import create from "create" /* 1306 */;
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4101 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import MobileUserSettings from "MobileUserSettings" /* 7830 */;
-import createToggle from "createToggle" /* 11006 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4102 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import MobileUserSettings from "MobileUserSettings" /* 7852 */;
+import createToggle from "createToggle" /* 11031 */;
 
 function onChange(arg0) {
   const obj = MAX_REACTIONS;

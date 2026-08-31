@@ -1,12 +1,12 @@
-// Module ID: 8070
-// Function ID: 8071
+// Module ID: 8092
+// Function ID: 8093
 // Name: createUploaderAttachments
-// Dependencies: [7789, 4637, 7980, 1236, 5037, 2]
+// Dependencies: [7810, 4639, 8002, 1236, 5040, 2]
 // Exports: default
 
-// Module 8070 (createUploaderAttachments)
+// Module 8092 (createUploaderAttachments)
 import set from "set" /* 2 */;
-import Changeset from "Changeset" /* 7789 */;
+import Changeset from "Changeset" /* 7810 */;
 
 const AttachmentType = Changeset.AttachmentType;
 const result = set.fileFinishedImporting("modules/messages/native/renderer/transformUploaderAttachments.tsx");

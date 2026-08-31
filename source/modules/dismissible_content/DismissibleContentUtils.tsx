@@ -1,27 +1,27 @@
-// Module ID: 1379
-// Function ID: 1380
+// Module ID: 1375
+// Function ID: 1376
 // Name: addVersionedDismissedContent
-// Dependencies: [32, 5, 1340, 1380, 1381, 1383, 1388, 676, 1378, 1389, 11, 1374, 4289, 589, 1377, 709, 10253, 698, 1382, 2]
+// Dependencies: [32, 5, 1340, 1376, 1377, 1379, 1384, 676, 1374, 1385, 11, 1370, 4290, 589, 1373, 709, 10277, 698, 1378, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
-// Module 1379 (addVersionedDismissedContent)
+// Module 1375 (addVersionedDismissedContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import updateUserGuildSettings from "updateUserGuildSettings" /* 1374 */;
-import DismissibleContent from "DismissibleContent" /* 1377 */;
-import isSingleUseDismissibleContent from "isSingleUseDismissibleContent" /* 1378 */;
-import set2 from "set" /* 1382 */;
-import getVersionedDismissibleContentCurrentVersion from "getVersionedDismissibleContentCurrentVersion" /* 1389 */;
-import useNewUserDismissibleContent from "useNewUserDismissibleContent" /* 4289 */;
-import handleDCShownToUser from "handleDCShownToUser" /* 10253 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1370 */;
+import DismissibleContent from "DismissibleContent" /* 1373 */;
+import isSingleUseDismissibleContent from "isSingleUseDismissibleContent" /* 1374 */;
+import set2 from "set" /* 1378 */;
+import getVersionedDismissibleContentCurrentVersion from "getVersionedDismissibleContentCurrentVersion" /* 1385 */;
+import useNewUserDismissibleContent from "useNewUserDismissibleContent" /* 4290 */;
+import handleDCShownToUser from "handleDCShownToUser" /* 10277 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "handleConnectionClosedOrResumed" /* 1340 */;
-import { DCFEventTypes } from "getDCFEvents" /* 1380 */;
-import closure_7 from "set" /* 1381 */;
-import withContent from "withContent" /* 1383 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { DCFEventTypes } from "getDCFEvents" /* 1376 */;
+import closure_7 from "set" /* 1377 */;
+import withContent from "withContent" /* 1379 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -77,7 +77,7 @@ function _markLatestVersionDismissibleContentAsDismissed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ function _markLatestVersionDismissibleContentAsDismissed() {
             return obj;
           } else {
             table = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           table = tmp;
@@ -176,7 +176,7 @@ function _markVersionedDismissibleContentAsDismissed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -212,7 +212,7 @@ function _markVersionedDismissibleContentAsDismissed() {
           } else {
             callback(closure_0, closure_1);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           c6 = tmp;
@@ -250,7 +250,7 @@ function _markSnowflakeBoundDismissibleContentAsDismissed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ function _markSnowflakeBoundDismissibleContentAsDismissed() {
           } else {
             callback(closure_0, closure_1);
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp23) {
           c6 = tmp;
@@ -326,7 +326,7 @@ function _markTimeRecurringDismissibleContentAsDismissed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -361,7 +361,7 @@ function _markTimeRecurringDismissibleContentAsDismissed() {
           } else {
             callback(closure_0, closure_1);
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp19) {
           c5 = tmp;
@@ -380,31 +380,45 @@ function _markTimeRecurringDismissibleContentAsDismissed() {
   return applyArgumentsResult;
 }
 function trackDismissibleContentShown(WISHLIST_MOBILE_NUX_ACTION_SHEET) {
-  [tmp2, tmp3] = callback(callback4(), 2);
+  let tmp = arg2;
+  if (arg2 === undefined) {
+    tmp = null;
+  }
+  [tmp3, tmp4] = callback(callback4(), 2);
   let obj = expandEventPropertiesDefault;
-  obj = { type: DismissibleContent.DismissibleContent[WISHLIST_MOBILE_NUX_ACTION_SHEET], content_count: tmp2, fatigable_content_count: tmp3, group_name: null, bypass_fatigue: null, guild_id: null, version: null, snowflake_id: null };
+  obj = { type: DismissibleContent.DismissibleContent[WISHLIST_MOBILE_NUX_ACTION_SHEET], unselected_content_types: null, content_count: null, fatigable_content_count: null, group_name: null, bypass_fatigue: null, guild_id: null, version: null, snowflake_id: null };
+  let mapped;
+  if (tmp != null) {
+    mapped = tmp.map((arg0) => callback(table[14]).DismissibleContent[arg0]);
+  }
+  if (mapped == null) {
+    mapped = null;
+  }
+  obj[1] = mapped;
+  obj[2] = tmp3;
+  obj[3] = tmp4;
   let groupName;
   if (arg1 != null) {
     groupName = arg1.groupName;
   }
-  obj[3] = groupName;
+  obj[4] = groupName;
   const CONTENT_TYPES_WITH_BYPASS_FATIGUE = set2.CONTENT_TYPES_WITH_BYPASS_FATIGUE;
-  obj[4] = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(WISHLIST_MOBILE_NUX_ACTION_SHEET);
+  obj[5] = CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(WISHLIST_MOBILE_NUX_ACTION_SHEET);
   let guildId;
   if (arg1 != null) {
     guildId = arg1.guildId;
   }
-  obj[5] = guildId;
+  obj[6] = guildId;
   let version;
   if (arg1 != null) {
     version = arg1.version;
   }
-  obj[6] = version;
+  obj[7] = version;
   let snowflakeId;
   if (arg1 != null) {
     snowflakeId = arg1.snowflakeId;
   }
-  obj[7] = snowflakeId;
+  obj[8] = snowflakeId;
   obj.track(AnalyticEvents.DISMISSIBLE_CONTENT_SHOWN, obj);
 }
 function trackDismissibleContentDismissed(closure_0, guildId) {
@@ -507,13 +521,13 @@ export const getDismissedRecurringDismissibleContentState = function getDismisse
   let obj = isSingleUseDismissibleContent;
   let num = 0;
   if (obj.isVersionedDismissibleContent(id)) {
-    let tmp2Result = tmp2(1389);
+    let tmp2Result = tmp2(1385);
     num = tmp2Result.getVersionedDismissibleContentCurrentVersion(id);
   }
   obj = { lastDismissedVersion: num, lastDismissedAtMs: null, lastDismissedObjectId: null, numTimesDismissed: null };
   const date = new Date();
   obj[1] = new Date().getTime().toString();
-  tmp2Result = tmp2(1378);
+  tmp2Result = tmp2(1374);
   let str2 = "0";
   if (tmp2Result.isSnowflakeBoundDismissibleContent(id)) {
     const _Date = Date;
@@ -614,7 +628,7 @@ export const isTimeRecurringDismissibleContentDismissed = function isTimeRecurri
       }
     }
     if (undefined === tmp5) {
-      return { isDismissed: false, lastDismissedAtMs: "r" };
+      return { isDismissed: false, lastDismissedAtMs: "Array" };
     } else {
       let flag = true;
       if (null != cooldownConfig) {
@@ -782,13 +796,13 @@ export const requestMarkDismissibleContentAsShown = function requestMarkDismissi
           groupName = guildId.groupName;
         }
         obj[1] = groupName;
-        obj[2] = function onAdded() {
+        obj[2] = function onAdded(arg0) {
           guildId = undefined;
           if (closure_1 != null) {
             guildId = tmp2.guildId;
           }
           PASSWORDLESS_UPSELL(closure_1_2[16]).handleDCShownToUser(PASSWORDLESS_UPSELL, guildId);
-          closure_1_27(PASSWORDLESS_UPSELL, closure_1);
+          closure_1_27(PASSWORDLESS_UPSELL, closure_1, arg0);
           if (closure_1 != null) {
             const onShown = tmp2.onShown;
             if (onShown != null) {

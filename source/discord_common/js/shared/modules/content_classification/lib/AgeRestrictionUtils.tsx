@@ -1,12 +1,12 @@
-// Module ID: 5032
-// Function ID: 5033
+// Module ID: 5035
+// Function ID: 5036
 // Name: compare
-// Dependencies: [5026, 2]
+// Dependencies: [5029, 2]
 // Exports: compare
 
-// Module 5032 (compare)
+// Module 5035 (compare)
 import set from "set" /* 2 */;
-import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5026 */;
+import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5029 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/modules/content_classification/lib/AgeRestrictionUtils.tsx");
 

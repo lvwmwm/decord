@@ -1,15 +1,15 @@
-// Module ID: 11365
-// Function ID: 11366
+// Module ID: 11394
+// Function ID: 11395
 // Name: MemberRolesList
-// Dependencies: [19, 17, 1986, 21, 4446, 589, 10622, 2]
+// Dependencies: [19, 17, 1985, 21, 4448, 589, 10646, 2]
 // Exports: default
 
-// Module 11365 (MemberRolesList)
+// Module 11394 (MemberRolesList)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "createGuildRoleRecordFromRust" /* 1986 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 1985 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 noopAll;

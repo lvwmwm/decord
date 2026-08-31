@@ -1,9 +1,9 @@
-// Module ID: 1397
-// Function ID: 1398
+// Module ID: 1393
+// Function ID: 1394
 // Name: GUILD_EVENT_MAX_NAME_LENGTH
 // Dependencies: [676, 687, 2]
 
-// Module 1397 (GUILD_EVENT_MAX_NAME_LENGTH)
+// Module 1393 (GUILD_EVENT_MAX_NAME_LENGTH)
 import ME from "ME" /* 676 */;
 import setDefault from "set" /* 687 */;
 import set from "set" /* 2 */;

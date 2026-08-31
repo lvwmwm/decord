@@ -1,10 +1,10 @@
-// Module ID: 11665
-// Function ID: 11666
+// Module ID: 11696
+// Function ID: 11697
 // Name: useLatch
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 11665 (useLatch)
+// Module 11696 (useLatch)
 import closure_0 from "noop" /* 19 */;
 
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/hooks/useLatch.tsx");

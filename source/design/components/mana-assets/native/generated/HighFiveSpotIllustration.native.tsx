@@ -1,14 +1,14 @@
-// Module ID: 6712
-// Function ID: 6713
+// Module ID: 6725
+// Function ID: 6726
 // Name: HighFiveSpotIllustration
-// Dependencies: [21, 5458, 6713, 2]
+// Dependencies: [21, 5461, 6726, 2]
 // Exports: HighFiveSpotIllustration
 
-// Module 6712 (HighFiveSpotIllustration)
+// Module 6725 (HighFiveSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6713 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6726 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HighFiveSpotIllustration.native.tsx");

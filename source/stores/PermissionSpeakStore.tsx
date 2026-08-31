@@ -1,14 +1,14 @@
-// Module ID: 13338
-// Function ID: 13339
+// Module ID: 13372
+// Function ID: 13373
 // Name: initialize
-// Dependencies: [1391, 1910, 595, 589, 709, 2]
+// Dependencies: [1387, 1909, 595, 589, 709, 2]
 
-// Module 13338 (initialize)
+// Module 13372 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
 
 require = arg1;
 const hideSuppressWarning = "hideSuppressWarning";

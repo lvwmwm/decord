@@ -1,18 +1,18 @@
-// Module ID: 8802
-// Function ID: 8803
+// Module ID: 8825
+// Function ID: 8826
 // Name: GameProfileCommunityServer
-// Dependencies: [5, 32, 19, 17, 1393, 21, 4446, 712, 8756, 4429, 4434, 8803, 589, 8753, 6151, 8804, 1430, 4442, 1236, 5969, 8806, 1297, 4893, 2]
+// Dependencies: [5, 32, 19, 17, 1389, 21, 4448, 712, 8778, 4431, 4436, 8826, 589, 8775, 6154, 8827, 1426, 4444, 1236, 5972, 8829, 1297, 4896, 2]
 // Exports: default
 
-// Module 8802 (GameProfileCommunityServer)
+// Module 8825 (GameProfileCommunityServer)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "allGuildIds" /* 1393 */;
+import closure_7 from "allGuildIds" /* 1389 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);
@@ -99,7 +99,7 @@ export default function GameProfileCommunityServer(game) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

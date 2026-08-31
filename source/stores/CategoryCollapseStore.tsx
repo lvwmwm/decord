@@ -1,17 +1,17 @@
-// Module ID: 5450
-// Function ID: 5451
+// Module ID: 5453
+// Function ID: 5454
 // Name: incrementVersion
-// Dependencies: [1340, 1391, 4821, 1983, 676, 1306, 1370, 1913, 589, 709, 2]
+// Dependencies: [1340, 1387, 4823, 1982, 676, 1306, 1471, 1912, 589, 709, 2]
 
-// Module 5450 (incrementVersion)
+// Module 5453 (incrementVersion)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import create from "create" /* 1306 */;
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1913 */;
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1912 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "handleConnectionOpen" /* 4821 */;
-import closure_5 from "comparator" /* 1983 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "handleConnectionOpen" /* 4823 */;
+import closure_5 from "comparator" /* 1982 */;
 import { ChannelTypes } from "ME" /* 676 */;
 
 require = arg1;

@@ -1,21 +1,21 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 16872
+// Function ID: 16873
 // Name: handleGuildCreate
-// Dependencies: [5, 1218, 1391, 4821, 1910, 5186, 676, 1398, 3, 687, 5451, 698, 709, 7344, 13257, 1403, 514, 2]
+// Dependencies: [5, 1218, 1387, 4823, 1909, 5189, 676, 1394, 3, 687, 5454, 698, 709, 7365, 13291, 1399, 514, 2]
 
-// Module 16839 (handleGuildCreate)
+// Module 16872 (handleGuildCreate)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 687 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5451 */;
+import initializeDefault from "initialize" /* 5454 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "handleConnectionOpen" /* 4821 */;
-import closure_7 from "createGuildRecordFromRust" /* 1910 */;
-import closure_8 from "_handleConnectionOpen" /* 5186 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "handleConnectionOpen" /* 4823 */;
+import closure_7 from "createGuildRecordFromRust" /* 1909 */;
+import closure_8 from "_handleConnectionOpen" /* 5189 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { ChannelFlags } from "set" /* 1398 */;
+import { ChannelFlags } from "set" /* 1394 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -284,7 +284,7 @@ function _scheduleGuildResyncs() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -432,7 +432,7 @@ function _scheduleGuildResyncs() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c4 = tmp;
@@ -482,7 +482,7 @@ function _getResyncGuilds() {
 }
 function scheduleIntegrityCheck(guild_id) {
   const _require = guild_id;
-  let obj = _require(13257);
+  let obj = _require(13291);
   if (obj.isChannelMetadataIntegrityCheckEnabled("scheduleIntegrityCheck")) {
     if (null != dependencyMap3[guild_id]) {
       let _clearTimeout = clearTimeout;

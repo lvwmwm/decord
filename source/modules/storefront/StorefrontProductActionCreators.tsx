@@ -1,15 +1,15 @@
-// Module ID: 8846
-// Function ID: 8847
+// Module ID: 8869
+// Function ID: 8870
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1997, 8847, 7255, 676, 687, 709, 4721, 4345, 2]
+// Dependencies: [5, 1996, 8870, 7276, 676, 687, 709, 4723, 4347, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8846 (_maybeFetchProductsWithSkus)
+// Module 8869 (_maybeFetchProductsWithSkus)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1997 */;
-import closure_5 from "getFetchState" /* 8847 */;
-import closure_6 from "fromServer" /* 7255 */;
+import closure_4 from "_getSystemLocale" /* 1996 */;
+import closure_5 from "getFetchState" /* 8870 */;
+import closure_6 from "fromServer" /* 7276 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -32,7 +32,7 @@ function _maybeFetchProductsWithSkus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ function _maybeFetchProductsWithSkus() {
               let body;
               c5 = 1;
               fromServer = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -204,7 +204,7 @@ function _maybeFetchProductsBySkuIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ function _maybeFetchProductsBySkuIds() {
               let body;
               c5 = 1;
               fromServer = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp7) {

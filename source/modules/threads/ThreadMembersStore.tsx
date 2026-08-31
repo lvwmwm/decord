@@ -1,14 +1,14 @@
-// Module ID: 7461
-// Function ID: 7462
+// Module ID: 7482
+// Function ID: 7483
 // Name: updateFromGuild
-// Dependencies: [1395, 1391, 12, 589, 709, 2]
+// Dependencies: [1391, 1387, 12, 589, 709, 2]
 
-// Module 7461 (updateFromGuild)
+// Module 7482 (updateFromGuild)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import createChannelRecord from "createChannelRecord" /* 1395 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
+import createChannelRecord from "createChannelRecord" /* 1391 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
 
 function updateFromGuild(threads) {
   threads = threads.threads;

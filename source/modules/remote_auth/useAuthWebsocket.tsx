@@ -1,10 +1,10 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15545
+// Function ID: 15546
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 676, 3, 15510, 584, 7684, 13223, 15512, 1231, 530, 6017, 15514, 2]
+// Dependencies: [5, 32, 19, 676, 3, 15544, 584, 7705, 13256, 15546, 1231, 530, 6020, 15548, 2]
 // Exports: useAuthWebsocket
 
-// Module 15511 (useAuthWebsocket)
+// Module 15545 (useAuthWebsocket)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -130,7 +130,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -159,7 +159,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                   c8 = undefined;
                   closure_3 = 1;
                   catchPromise = 1;
-                  return { value: "ct", done: true };
+                  return { value: "Object", done: true };
                 }
               } else if (1 === tmp5) {
                 if (arg0 === 1) {
@@ -259,11 +259,11 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
                   } else if ("heartbeat_ack" === op) {
                     _true = true;
                     catchPromise = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     !(function warn() { ... })("received unsupported message");
                     catchPromise = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   }
                 }
               } else if (2 === tmp5) {
@@ -375,7 +375,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -451,7 +451,7 @@ export const useAuthWebsocket = function useAuthWebsocket(callback, arg1) {
               c2.send(JSON.stringify(obj6));
               closure_1_8.current = c3;
               c3 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp16) {
             c3 = tmp;

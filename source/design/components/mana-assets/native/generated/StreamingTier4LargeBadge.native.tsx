@@ -1,14 +1,14 @@
-// Module ID: 7006
-// Function ID: 7007
+// Module ID: 7025
+// Function ID: 7026
 // Name: StreamingTier4LargeBadge
-// Dependencies: [21, 5458, 7007, 2]
+// Dependencies: [21, 5461, 7026, 2]
 // Exports: StreamingTier4LargeBadge
 
-// Module 7006 (StreamingTier4LargeBadge)
+// Module 7025 (StreamingTier4LargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import vanityUrlDefault from "vanityUrl" /* 7007 */;
+import preloadDefault from "preload" /* 5461 */;
+import vanityUrlDefault from "vanityUrl" /* 7026 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/StreamingTier4LargeBadge.native.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 10919
-// Function ID: 10920
+// Module ID: 10943
+// Function ID: 10944
 // Name: fetchSummary
-// Dependencies: [5, 19, 5186, 1391, 10920, 676, 687, 709, 530, 4344, 12, 10922, 647, 2]
+// Dependencies: [5, 19, 5189, 1387, 10944, 676, 687, 709, 530, 4346, 12, 10946, 647, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 10919 (fetchSummary)
+// Module 10943 (fetchSummary)
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "_handleConnectionOpen" /* 5186 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "handleQuickSwitcherUpdate" /* 10920 */;
+import closure_5 from "_handleConnectionOpen" /* 5189 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "handleQuickSwitcherUpdate" /* 10944 */;
 import { Routes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -45,7 +45,7 @@ function _fetchSummary() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -172,7 +172,7 @@ function _fetchSummaries() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -219,7 +219,7 @@ function _fetchSummaries() {
           } else {
             if (1 === dispatchResult1) {
               c6 = 0;
-              const aPIError = new callback(4344).APIError(closure_5);
+              const aPIError = new callback(4346).APIError(closure_5);
               dependencyMap = aPIError;
             } else if (arg0 === 1) {
               c8 = 3;
@@ -359,7 +359,7 @@ function _fetchChannelAffinities() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -442,7 +442,7 @@ function _fetchChannelAffinities() {
           obj4[4] = Date.now();
           obj1.dispatch(obj4);
           c6 = 3;
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } catch (tmp38) {
         channel_affinities = tmp38;
@@ -494,7 +494,7 @@ function _fetchSummariesBulk() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -532,7 +532,7 @@ function _fetchSummariesBulk() {
               let summaries;
               c7 = 1;
               constants = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -611,7 +611,7 @@ function _fetchSummariesBulk() {
             if (2 === tmp7) {
               summaries = 0;
               c7 = _undefined;
-              aPIError = new substr(4344).APIError(c7);
+              aPIError = new substr(4346).APIError(c7);
             } else if (arg0 === 1) {
               constants = 3;
               throw arg1;
@@ -641,7 +641,7 @@ function _fetchSummariesBulk() {
             obj9[5] = aPIError;
             obj1.dispatch(obj9);
             constants = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp39) {
           _undefined = tmp39;
@@ -704,7 +704,7 @@ function useChannelSummaries(channelIds) {
             return obj2;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           c4 = 3;
@@ -770,7 +770,7 @@ function _deleteSummary() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -800,7 +800,7 @@ function _deleteSummary() {
           } else if (1 === tmp7) {
             c4 = 0;
             callback = closure_3;
-            const aPIError = new lib(4344).APIError(callback);
+            const aPIError = new lib(4346).APIError(callback);
             throw aPIError;
           } else if (arg0 === 1) {
             c6 = 3;
@@ -818,7 +818,7 @@ function _deleteSummary() {
             obj.dispatch(obj4);
             c4 = 0;
             c6 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp25) {
           closure_3 = tmp25;
@@ -907,7 +907,7 @@ export const useMaybeFetchChannelAffinitiesAndSummaries = function useMaybeFetch
             return obj2;
           } else {
             c4 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else if (arg0 === 1) {
           c4 = 3;

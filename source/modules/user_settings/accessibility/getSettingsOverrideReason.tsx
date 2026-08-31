@@ -1,12 +1,12 @@
-// Module ID: 14860
-// Function ID: 14861
+// Module ID: 14893
+// Function ID: 14894
 // Name: getSettingsOverrideReason
-// Dependencies: [4136, 685, 1236, 589, 2]
+// Dependencies: [4137, 685, 1236, 589, 2]
 // Exports: default, useSettingsOverrideReason
 
-// Module 14860 (getSettingsOverrideReason)
+// Module 14893 (getSettingsOverrideReason)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_2 from "updateExistingSettings" /* 4136 */;
+import closure_2 from "updateExistingSettings" /* 4137 */;
 import { SettingsOverrideReasonKeys as closure_3 } from "MAX_FAVORITES" /* 685 */;
 
 require = arg1;

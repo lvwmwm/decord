@@ -1,13 +1,13 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15247
+// Function ID: 15248
 // Name: updateClientPremiumTypeOverride
-// Dependencies: [1923, 709, 7444, 2]
+// Dependencies: [1922, 709, 7465, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 15214 (updateClientPremiumTypeOverride)
+// Module 15247 (updateClientPremiumTypeOverride)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import createMessage from "createMessage" /* 7444 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import createMessage from "createMessage" /* 7465 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/OverridePremiumTypeActions.tsx");

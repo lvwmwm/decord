@@ -1,12 +1,12 @@
-// Module ID: 7950
-// Function ID: 7951
+// Module ID: 7972
+// Function ID: 7973
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: useManaTypeConsolidationExperiment
 
-// Module 7950 (apexExperiment)
+// Module 7972 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

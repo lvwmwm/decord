@@ -1,12 +1,12 @@
-// Module ID: 9448
-// Function ID: 9449
+// Module ID: 9470
+// Function ID: 9471
 // Name: transformUser
-// Dependencies: [1899, 2]
+// Dependencies: [1898, 2]
 // Exports: default
 
-// Module 9448 (transformUser)
+// Module 9470 (transformUser)
 import set from "set" /* 2 */;
-import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1899 */;
+import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1898 */;
 
 const result = set.fileFinishedImporting("modules/rpc/helpers/transformUser.tsx");
 

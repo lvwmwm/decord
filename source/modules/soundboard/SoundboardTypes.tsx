@@ -1,10 +1,10 @@
-// Module ID: 4938
-// Function ID: 4939
+// Module ID: 4941
+// Function ID: 4942
 // Name: SoundButtonOverlay
 // Dependencies: [2]
 // Exports: soundboardSoundFromAPI, soundboardSoundToAPI
 
-// Module 4938 (SoundButtonOverlay)
+// Module 4941 (SoundButtonOverlay)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/soundboard/SoundboardTypes.tsx");

@@ -1,30 +1,30 @@
-// Module ID: 7542
-// Function ID: 7543
+// Module ID: 7563
+// Function ID: 7564
 // Name: AlwaysCompressImagesSwitch
-// Dependencies: [32, 19, 17, 4438, 1302, 1304, 4268, 1923, 1925, 676, 4505, 7543, 7537, 21, 4446, 712, 4166, 4108, 7544, 5088, 5043, 7545, 7546, 1236, 4159, 1996, 7548, 7549, 4413, 7541, 7550, 7551, 12885, 12886, 11714, 11723, 12889, 691, 589, 8159, 5958, 4442, 500, 8463, 5458, 5918, 8115, 9073, 698, 8909, 4308, 5954, 4905, 12890, 4893, 7906, 2]
+// Dependencies: [32, 19, 17, 4440, 1302, 1304, 4269, 1922, 1924, 676, 4507, 7564, 7558, 21, 4448, 712, 4167, 4109, 7565, 5091, 5046, 7566, 7567, 1236, 4160, 1995, 7569, 7570, 4415, 7562, 7571, 7572, 12919, 12920, 11745, 11754, 12923, 691, 589, 8181, 5961, 4444, 500, 8485, 5461, 5921, 8137, 9096, 698, 8932, 4310, 5957, 4908, 12924, 4896, 7928, 2]
 // Exports: default
 
-// Module 7542 (AlwaysCompressImagesSwitch)
+// Module 7563 (AlwaysCompressImagesSwitch)
 import set from "set" /* 500 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import preloadDefault from "preload" /* 5458 */;
-import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8463 */;
+import preloadDefault from "preload" /* 5461 */;
+import useAPNGPlayerControls from "useAPNGPlayerControls" /* 8485 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 import closure_7 from "handleThemeChange" /* 1302 */;
 import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import closure_9 from "handleConnectionOpen" /* 4268 */;
-import closure_10 from "mergeGuildAvatar" /* 1923 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+import closure_9 from "handleConnectionOpen" /* 4269 */;
+import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 import ME from "ME" /* 676 */;
-import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4505 */;
-import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7543 */;
-import { MAX_SCHEDULED_MESSAGES_PER_USER as closure_21 } from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 7537 */;
+import { ApplicationStreamFPS } from "RESOLUTION_720" /* 4507 */;
+import SAVED_BOOKMARKS_MAX from "SAVED_BOOKMARKS_MAX" /* 7564 */;
+import { MAX_SCHEDULED_MESSAGES_PER_USER as closure_21 } from "MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS" /* 7558 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function AlwaysCompressImagesSwitch(isKestrelTreatment) {
@@ -52,8 +52,8 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       obj1[0] = tmp.compressionHint;
       const intl2 = tmp2(1236).intl;
       obj1[2] = intl2.string(tmp2(1236).t["wC0+Ph"]);
-      obj[5] = callback2(tmp2(4442).Text, obj1);
-      obj[1] = callback2(tmp2(5958).TableSwitchRow, obj);
+      obj[5] = callback2(tmp2(4444).Text, obj1);
+      obj[1] = callback2(tmp2(5961).TableSwitchRow, obj);
       tmp6 = callback2(View, obj);
     }
   }

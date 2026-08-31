@@ -1,12 +1,12 @@
-// Module ID: 13484
-// Function ID: 13485
+// Module ID: 13518
+// Function ID: 13519
 // Name: getWmfCpuEncodeIntel
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: getWmfCpuEncodeIntel
 
-// Module 13484 (getWmfCpuEncodeIntel)
+// Module 13518 (getWmfCpuEncodeIntel)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

@@ -1,17 +1,17 @@
-// Module ID: 7092
-// Function ID: 7093
+// Module ID: 7113
+// Function ID: 7114
 // Name: _handleBoostPress
-// Dependencies: [5, 19, 17, 4338, 676, 5344, 1925, 21, 7093, 4689, 5342, 13165, 1500, 5918, 647, 1939, 12036, 4893, 1236, 5009, 2]
+// Dependencies: [5, 19, 17, 4340, 676, 5347, 1924, 21, 7114, 4691, 5345, 13198, 1499, 5921, 647, 1938, 12069, 4896, 1236, 5012, 2]
 // Exports: default
 
-// Module 7092 (_handleBoostPress)
+// Module 7113 (_handleBoostPress)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleGuildBoostsUpdate" /* 4338 */;
+import closure_6 from "handleGuildBoostsUpdate" /* 4340 */;
 import ME from "ME" /* 676 */;
-import { PremiumGuildSubscribeModalScenes as closure_11 } from "PremiumGuildSubscribeModalScenes" /* 5344 */;
-import { FractionalPremiumStates } from "GuildFeatures" /* 1925 */;
+import { PremiumGuildSubscribeModalScenes as closure_11 } from "PremiumGuildSubscribeModalScenes" /* 5347 */;
+import { FractionalPremiumStates } from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -35,7 +35,7 @@ function _handleBoostPress() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ function _handleBoostPress() {
               c4 = 1;
               c5 = 1;
               const obj3 = { value: null, done: false };
-              obj3[0] = callback(7093).launchGuildBoostFlowOrAlert(obj1);
+              obj3[0] = callback(7114).launchGuildBoostFlowOrAlert(obj1);
               return obj3;
             }
           } else if (arg0 === 1) {
@@ -78,10 +78,10 @@ function _handleBoostPress() {
             obj4[0] = arg1;
             return obj4;
           } else {
-            obj = callback(5342);
+            obj = callback(5345);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp10) {
           c5 = tmp;

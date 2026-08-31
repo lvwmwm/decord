@@ -1,13 +1,13 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15899
+// Function ID: 15900
 // Name: useChannelUnreadBadgeState
-// Dependencies: [7224, 4461, 4667, 589, 7227, 2]
+// Dependencies: [7245, 4463, 4669, 589, 7248, 2]
 // Exports: useBaseChannelUnreadBadgeState, useChannelUnreadBadgeState
 
-// Module 15865 (useChannelUnreadBadgeState)
-import closure_2 from "guildHasCommunity" /* 7224 */;
-import closure_3 from "generateOldThreadCutoff" /* 4461 */;
-import closure_4 from "updateUserGuildSettingsInternal" /* 4667 */;
+// Module 15899 (useChannelUnreadBadgeState)
+import closure_2 from "guildHasCommunity" /* 7245 */;
+import closure_3 from "generateOldThreadCutoff" /* 4463 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 4669 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/launchpad/native/shared/useChannelUnreadBadgeState.tsx");
@@ -35,8 +35,8 @@ export const useChannelUnreadBadgeState = function useChannelUnreadBadgeState(ch
   const stateFromStores = _require(589).useStateFromStores(items1, () => closure_1_2.shouldIndicateNewChannel(user.guild_id, user.id), items2);
   const obj2 = _require(589);
   obj = { unread, resolvedUnreadSetting: null, newChannel: null, optInEnabled: null, mentionCount: null, isMentionLowImportance: null };
-  const optInEnabledForGuild = _require(7227).useOptInEnabledForGuild(channel.guild_id);
-  const obj3 = _require(7227);
+  const optInEnabledForGuild = _require(7248).useOptInEnabledForGuild(channel.guild_id);
+  const obj3 = _require(7248);
   const items3 = [closure_4];
   obj[1] = _require(589).useStateFromStores(items3, () => closure_1_4.resolveUnreadSetting(closure_0));
   obj[2] = stateFromStores;

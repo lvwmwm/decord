@@ -1,12 +1,12 @@
-// Module ID: 7424
-// Function ID: 7425
+// Module ID: 7445
+// Function ID: 7446
 // Name: _fetchAdUser
-// Dependencies: [5, 7422, 676, 698, 709, 7425, 2]
+// Dependencies: [5, 7443, 676, 698, 709, 7446, 2]
 // Exports: fetchAdUser
 
-// Module 7424 (_fetchAdUser)
+// Module 7445 (_fetchAdUser)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "adUser" /* 7422 */;
+import closure_3 from "adUser" /* 7443 */;
 import ME from "ME" /* 676 */;
 
 function _fetchAdUser() {
@@ -28,7 +28,7 @@ function _fetchAdUser() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

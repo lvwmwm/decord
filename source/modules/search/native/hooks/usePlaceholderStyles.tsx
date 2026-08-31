@@ -1,13 +1,13 @@
-// Module ID: 16161
-// Function ID: 16162
+// Module ID: 16195
+// Function ID: 16196
 // Name: useFullscreenPlaceholderCount
-// Dependencies: [4438, 7569, 1494, 589, 4186, 4447, 1297, 2]
+// Dependencies: [4440, 7590, 1493, 589, 4187, 4449, 1297, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 16161 (useFullscreenPlaceholderCount)
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes" /* 7569 */;
+// Module 16195 (useFullscreenPlaceholderCount)
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import { FADE_LAYOUT_ANIMATION_DURATION as closure_4 } from "MessageEmbedTypes" /* 7590 */;
 
 const require = arg1;
 let closure_5 = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
@@ -78,9 +78,9 @@ export const usePlaceholderAnimatedStyle = function usePlaceholderAnimatedStyle(
       return tmp5;
     }
   }
-  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4186).withRepeat, withSequence: _require(4186).withSequence, withTiming: _require(4447).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
+  obj = { useReducedMotion: stateFromStores, visible, withRepeat: _require(4187).withRepeat, withSequence: _require(4187).withSequence, withTiming: _require(4449).withTiming, STANDARD_EASING: _require(1297).STANDARD_EASING, FADE_LAYOUT_ANIMATION_DURATION: closure_4 };
   A.__closure = obj;
   A.__workletHash = 9750536800906;
   A.__initData = closure_5;
-  return _require(4186).useAnimatedStyle(A);
+  return _require(4187).useAnimatedStyle(A);
 };

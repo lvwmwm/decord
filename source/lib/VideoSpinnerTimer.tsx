@@ -1,17 +1,17 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9537
+// Function ID: 9538
 // Name: map
-// Dependencies: [1218, 1391, 4540, 4520, 4465, 676, 3, 4524, 698, 2]
+// Dependencies: [1218, 1387, 4542, 4522, 4467, 676, 3, 4526, 698, 2]
 
-// Module 9515 (map)
+// Module 9537 (map)
 import timestampDefault from "timestamp" /* 3 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import sleep from "sleep" /* 4524 */;
+import sleep from "sleep" /* 4526 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "handleConnectionInfoChange" /* 4540 */;
-import closure_6 from "createRTCConnection" /* 4520 */;
-import closure_7 from "updateVoiceState" /* 4465 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "handleConnectionInfoChange" /* 4542 */;
+import closure_6 from "createRTCConnection" /* 4522 */;
+import closure_7 from "updateVoiceState" /* 4467 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

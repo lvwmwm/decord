@@ -1,9 +1,9 @@
-// Module ID: 7057
-// Function ID: 7058
+// Module ID: 7076
+// Function ID: 7077
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7057 (metadata)
+// Module 7076 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VibingWumpusSpotIllustration-2x.png.js");

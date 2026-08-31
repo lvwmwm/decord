@@ -1,17 +1,17 @@
-// Module ID: 16483
-// Function ID: 16484
+// Module ID: 16517
+// Function ID: 16518
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4446, 7559, 15855, 712, 16482, 4166, 16484, 4186, 4892, 2]
+// Dependencies: [19, 17, 21, 4448, 7580, 15889, 712, 16516, 4167, 16518, 4187, 4895, 2]
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 16483 (SimpleGuildContainer)
-import MaskedBadgeDefault from "MaskedBadge" /* 7559 */;
-import getMediaIcon from "getMediaIcon" /* 15855 */;
-import getMediaIconDefault from "getMediaIcon" /* 15855 */;
+// Module 16517 (SimpleGuildContainer)
+import MaskedBadgeDefault from "MaskedBadge" /* 7580 */;
+import getMediaIcon from "getMediaIcon" /* 15889 */;
+import getMediaIconDefault from "getMediaIcon" /* 15889 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 let c3 = importAllResult;

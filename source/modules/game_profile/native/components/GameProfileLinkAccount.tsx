@@ -1,16 +1,16 @@
-// Module ID: 8799
-// Function ID: 8800
+// Module ID: 8822
+// Function ID: 8823
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 1923, 21, 4446, 712, 5921, 589, 8753, 4442, 1236, 5458, 1297, 4893, 8800, 2]
+// Dependencies: [19, 17, 1922, 21, 4448, 712, 5924, 589, 8775, 4444, 1236, 5461, 1297, 4896, 8823, 2]
 // Exports: default
 
-// Module 8799 (GameProfileLinkAccount)
+// Module 8822 (GameProfileLinkAccount)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

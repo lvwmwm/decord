@@ -1,13 +1,13 @@
-// Module ID: 6182
-// Function ID: 6183
+// Module ID: 6185
+// Function ID: 6186
 // Name: getCurrentVoiceChannel
-// Dependencies: [1218, 1391, 4465, 2]
+// Dependencies: [1218, 1387, 4467, 2]
 // Exports: default
 
-// Module 6182 (getCurrentVoiceChannel)
+// Module 6185 (getCurrentVoiceChannel)
 import closure_0 from "fetchFingerprint" /* 1218 */;
-import closure_1 from "ensureGuildLoaded" /* 1391 */;
-import closure_2 from "updateVoiceState" /* 4465 */;
+import closure_1 from "ensureGuildLoaded" /* 1387 */;
+import closure_2 from "updateVoiceState" /* 4467 */;
 
 const result = require("set").fileFinishedImporting("modules/rpc/helpers/getCurrentVoiceChannel.tsx");
 

@@ -1,18 +1,18 @@
-// Module ID: 4712
-// Function ID: 4713
+// Module ID: 4714
+// Function ID: 4715
 // Name: useNullableMessageAuthor
-// Dependencies: [1391, 1993, 1986, 1910, 4099, 1923, 38, 589, 4290, 4713, 2]
+// Dependencies: [1387, 1992, 1985, 1909, 4100, 1922, 38, 589, 4292, 4715, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4712 (useNullableMessageAuthor)
+// Module 4714 (useNullableMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
-import nameFromUserDefault from "nameFromUser" /* 4290 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import closure_4 from "trackCommunicationDisabled" /* 1993 */;
-import closure_5 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "markAllUserIdListsStale" /* 4099 */;
-import closure_8 from "mergeGuildAvatar" /* 1923 */;
+import nameFromUserDefault from "nameFromUser" /* 4292 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "trackCommunicationDisabled" /* 1992 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import closure_7 from "markAllUserIdListsStale" /* 4100 */;
+import closure_8 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
 function useNullableMessageAuthor(message) {

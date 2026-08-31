@@ -1,18 +1,18 @@
-// Module ID: 8617
-// Function ID: 8618
+// Module ID: 8639
+// Function ID: 8640
 // Name: fillChunk
-// Dependencies: [4520, 1396, 5323, 676, 8618, 12, 4639, 1236, 4095, 2]
+// Dependencies: [4522, 1392, 5326, 676, 8640, 12, 4641, 1236, 4096, 2]
 // Exports: fillChunk, getParticipantNamesText, getRemoveModeratorTooltipHint, getStageChannelMetadata, summarizeUsernamesParticipating, summarizeUsernamesParticipatingWithSpeakerNickname
 
-// Module 8617 (fillChunk)
+// Module 8639 (fillChunk)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import applyOverwritesAll from "applyOverwrites" /* 4095 */;
-import getNicknameDefault from "getNickname" /* 4639 */;
-import closure_4 from "createRTCConnection" /* 4520 */;
-import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH" /* 5323 */;
+import applyOverwritesAll from "applyOverwrites" /* 4096 */;
+import getNicknameDefault from "getNickname" /* 4641 */;
+import closure_4 from "createRTCConnection" /* 4522 */;
+import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
+import { RequestToSpeakPermissionStates as closure_6 } from "MAX_STAGE_TOPIC_LENGTH" /* 5326 */;
 import { Permissions } from "ME" /* 676 */;
-import { RowType } from "RowType" /* 8618 */;
+import { RowType } from "RowType" /* 8640 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelUtils.tsx");

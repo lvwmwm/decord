@@ -1,9 +1,9 @@
-// Module ID: 15945
-// Function ID: 15946
+// Module ID: 15979
+// Function ID: 15980
 // Name: PROFILE_BACKGROUND
 // Dependencies: [2]
 
-// Module 15945 (PROFILE_BACKGROUND)
+// Module 15979 (PROFILE_BACKGROUND)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/notification_center/Constants.tsx");

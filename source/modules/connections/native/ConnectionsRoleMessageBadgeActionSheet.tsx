@@ -1,30 +1,30 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11354
+// Function ID: 11355
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1931, 1218, 1993, 1986, 1910, 11326, 5317, 676, 21, 4446, 712, 1236, 5316, 4397, 4442, 4381, 12, 4166, 5192, 11099, 8873, 1297, 1435, 1363, 38, 5918, 5938, 589, 698, 4666, 5422, 5587, 5962, 4893, 4413, 11102, 8836, 2]
+// Dependencies: [32, 19, 17, 1930, 1218, 1992, 1985, 1909, 11355, 5320, 676, 21, 4448, 712, 1236, 5319, 4399, 4444, 4383, 12, 4167, 5195, 11128, 8896, 1297, 1431, 1363, 38, 5921, 5941, 589, 698, 4668, 5425, 5590, 5965, 4896, 4415, 11131, 8859, 2]
 // Exports: default
 
-// Module 11325 (PopoutCheck)
+// Module 11354 (PopoutCheck)
 import applyDefault from "apply" /* 12 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useThemeDefault from "useTheme" /* 4381 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4397 */;
-import Text from "Text" /* 4442 */;
-import officialApplicationIds2 from "officialApplicationIds" /* 5316 */;
+import useThemeDefault from "useTheme" /* 4383 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4399 */;
+import Text from "Text" /* 4444 */;
+import officialApplicationIds2 from "officialApplicationIds" /* 5319 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "createdAt" /* 1931 */;
+import closure_7 from "createdAt" /* 1930 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
-import closure_9 from "trackCommunicationDisabled" /* 1993 */;
-import closure_10 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import closure_12 from "map" /* 11326 */;
-import { OperatorTypes } from "OperatorTypes" /* 5317 */;
+import closure_9 from "trackCommunicationDisabled" /* 1992 */;
+import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_11 from "createGuildRecordFromRust" /* 1909 */;
+import closure_12 from "map" /* 11355 */;
+import { OperatorTypes } from "OperatorTypes" /* 5320 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function PopoutCheck(arg0) {

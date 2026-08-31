@@ -1,14 +1,14 @@
-// Module ID: 7760
-// Function ID: 7761
+// Module ID: 7781
+// Function ID: 7782
 // Name: useConversationsHeaderButton
-// Dependencies: [5, 19, 7288, 7290, 7761, 692, 7762, 7763, 589, 7766, 7765, 7768, 1236, 2]
+// Dependencies: [5, 19, 7309, 7311, 7782, 692, 7783, 7784, 589, 7787, 7786, 7789, 1236, 2]
 // Exports: useConversationsHeaderButton
 
-// Module 7760 (useConversationsHeaderButton)
+// Module 7781 (useConversationsHeaderButton)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "removePendingListFetch" /* 7288 */;
-import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7290 */;
+import closure_4 from "removePendingListFetch" /* 7309 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7311 */;
 
 const require = arg1;
 ({ CONVERSATION_HAS_MORE_EXPIRATION_MS: c5, MOBILE_FETCH_LIMIT: closure_6, MOBILE_PREVIEW_MESSAGE_COUNT: error } = CONVERSATION_COLORS);
@@ -47,7 +47,7 @@ export const useConversationsHeaderButton = function useConversationsHeaderButto
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {

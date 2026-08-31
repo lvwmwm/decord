@@ -1,20 +1,20 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16674
+// Function ID: 16675
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 676, 21, 4446, 712, 1231, 16642, 5971, 16546, 4985, 1236, 2]
+// Dependencies: [19, 676, 21, 4448, 712, 1231, 16675, 5974, 16580, 4988, 1236, 2]
 // Exports: default
 
-// Module 16641 (VoicePanelHeaderChatButton)
+// Module 16674 (VoicePanelHeaderChatButton)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ChatIcon from "ChatIcon" /* 4985 */;
-import setDefault from "set" /* 5971 */;
-import _modDef16546 from "module_16546" /* 16546 */;
-import useChatBadgeDefault from "useChatBadge" /* 16642 */;
+import ChatIcon from "ChatIcon" /* 4988 */;
+import setDefault from "set" /* 5974 */;
+import _modDef16580 from "module_16580" /* 16580 */;
+import useChatBadgeDefault from "useChatBadge" /* 16675 */;
 import closure_3 from "noop" /* 19 */;
 import { ComponentActions } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -41,7 +41,7 @@ export default function VoicePanelHeaderChatButton(channelId) {
   const intl = getSystemLocale.intl;
   obj[1] = intl.string(getSystemLocale.t["5KxXrK"]);
   obj[2] = callback;
-  const children = [callback(_modDef16546, obj), ];
+  const children = [callback(_modDef16580, obj), ];
   let tmp8Result = null != tmp5;
   if (tmp8Result) {
     obj = { style: null, children: null };
@@ -50,9 +50,9 @@ export default function VoicePanelHeaderChatButton(channelId) {
     const items1 = [, ];
     ({ badge: arr2[0], notificationBadge: arr2[1] } = tmp);
     obj1[0] = items1;
-    obj[1] = tmp8(tmp3(5971), obj1);
-    tmp8Result = tmp8(tmp3(5971), obj);
-    const tmp3Result = tmp3(5971);
+    obj[1] = tmp8(tmp3(5974), obj1);
+    tmp8Result = tmp8(tmp3(5974), obj);
+    const tmp3Result = tmp3(5974);
   }
   children[1] = tmp8Result;
   return tmp6(tmp7, { children });

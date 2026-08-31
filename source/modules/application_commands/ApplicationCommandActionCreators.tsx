@@ -1,18 +1,18 @@
-// Module ID: 7469
-// Function ID: 7470
+// Module ID: 7490
+// Function ID: 7491
 // Name: setActiveCommand
-// Dependencies: [1218, 7470, 676, 38, 7215, 709, 530, 11, 1956, 2]
+// Dependencies: [1218, 7491, 676, 38, 7236, 709, 530, 11, 1955, 2]
 // Exports: fetchCommand, fetchCommands, fetchCommandsForApplication, performAutocomplete, setActiveCommand, setAppLauncherActiveCommand, setPreferredCommandId, updateApplicationGuildCommandPermissions, updateChannelState, updateOptionStates, updateOptionValidationStates, updateRegistry
 
-// Module 7469 (setActiveCommand)
+// Module 7490 (setActiveCommand)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1956 */;
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7215 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7236 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "handleInit" /* 7470 */;
+import closure_4 from "handleInit" /* 7491 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;

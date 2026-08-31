@@ -1,10 +1,10 @@
-// Module ID: 7175
-// Function ID: 7176
+// Module ID: 7196
+// Function ID: 7197
 // Name: isPrivateChannel
 // Dependencies: [2]
 // Exports: isPrivateChannel
 
-// Module 7175 (isPrivateChannel)
+// Module 7196 (isPrivateChannel)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_database/modules/messages/isPrivateChannel.tsx");

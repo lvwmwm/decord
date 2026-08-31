@@ -1,13 +1,13 @@
-// Module ID: 9621
-// Function ID: 9622
+// Module ID: 9643
+// Function ID: 9644
 // Name: useChannelsUserCanStartStageIn
-// Dependencies: [1983, 4090, 1399, 589, 2]
+// Dependencies: [1982, 4091, 1395, 589, 2]
 // Exports: useChannelsUserCanStartStageIn
 
-// Module 9621 (useChannelsUserCanStartStageIn)
-import closure_2 from "comparator" /* 1983 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1983 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
+// Module 9643 (useChannelsUserCanStartStageIn)
+import closure_2 from "comparator" /* 1982 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4091 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useGuildsUserCanStartStageIn.tsx");

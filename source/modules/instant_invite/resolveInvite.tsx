@@ -1,15 +1,15 @@
-// Module ID: 8803
-// Function ID: 8804
+// Module ID: 8826
+// Function ID: 8827
 // Name: map
-// Dependencies: [1218, 1910, 7428, 676, 7427, 4431, 698, 4679, 503, 1404, 2]
+// Dependencies: [1218, 1909, 7449, 676, 7448, 4433, 698, 4681, 503, 1400, 2]
 // Exports: default
 
-// Module 8803 (map)
+// Module 8826 (map)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import _modDef4679 from "module_4679" /* 4679 */;
+import _modDef4681 from "module_4681" /* 4681 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import InviteSendStates from "InviteSendStates" /* 7428 */;
+import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import InviteSendStates from "InviteSendStates" /* 7449 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;
@@ -22,7 +22,7 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
   const _require = inviteKey;
   importDefault = arg1;
   dependencyMap = inviteInstanceId;
-  let obj = _require(4431);
+  let obj = _require(4433);
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   const baseCode = result.baseCode;
   ({ targetChannelId, targetMessageId, guildScheduledEventId } = result);
@@ -160,8 +160,8 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
       return obj.exact(obj);
     };
     obj1[3] = obj2;
-    const value = _modDef4679.get(obj1);
-    const tmp4Result = _modDef4679;
+    const value = _modDef4681.get(obj1);
+    const tmp4Result = _modDef4681;
     const cleanupPromise = value.then((body) => {
       body = body.body;
       if (null != callback) {

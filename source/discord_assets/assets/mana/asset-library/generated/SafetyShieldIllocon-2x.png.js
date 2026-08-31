@@ -1,9 +1,9 @@
-// Module ID: 6907
-// Function ID: 6908
+// Module ID: 6924
+// Function ID: 6925
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6907 (metadata)
+// Module 6924 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SafetyShieldIllocon-2x.png.js");

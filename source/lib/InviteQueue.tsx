@@ -1,14 +1,14 @@
-// Module ID: 9924
-// Function ID: 9925
+// Module ID: 9947
+// Function ID: 9948
 // Name: sum
-// Dependencies: [1391, 687, 7526, 3, 7148, 4459, 2]
+// Dependencies: [1387, 687, 7547, 3, 7169, 4461, 2]
 
-// Module 9924 (sum)
+// Module 9947 (sum)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 687 */;
-import trackInviteDefault from "trackInvite" /* 7148 */;
-import enqueueDefault from "enqueue" /* 7526 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
+import trackInviteDefault from "trackInvite" /* 7169 */;
+import enqueueDefault from "enqueue" /* 7547 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
 
 const sum = setDefault.Millis.SECOND + 10;
 let c3 = sum;
@@ -40,8 +40,8 @@ function drain(location, sum, arg2, prototype, arg4, InviteQueue, drain, depende
   if (self.GROUP_DM !== type) {
     if (tmp.CHANNEL !== type) {
       if (tmp.USER === type) {
-        obj = inviteAnalyticsMetadata(4459);
-        inviteAnalyticsMetadata(4459).ensurePrivateChannel(location.user.id).then((arg0) => {
+        obj = inviteAnalyticsMetadata(4461);
+        inviteAnalyticsMetadata(4461).ensurePrivateChannel(location.user.id).then((arg0) => {
           const channel = sum.getChannel(arg0);
           if (null != channel) {
             self._sendInvite(channel, _location.inviteKey, _location, inviteAnalyticsMetadata, sum);
@@ -49,7 +49,7 @@ function drain(location, sum, arg2, prototype, arg4, InviteQueue, drain, depende
             sum(null, false);
           }
         }, () => sum(null, false));
-        const ensurePrivateChannelResult = inviteAnalyticsMetadata(4459).ensurePrivateChannel(location.user.id);
+        const ensurePrivateChannelResult = inviteAnalyticsMetadata(4461).ensurePrivateChannel(location.user.id);
       }
     }
   }

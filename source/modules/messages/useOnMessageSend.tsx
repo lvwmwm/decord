@@ -1,10 +1,10 @@
-// Module ID: 16264
-// Function ID: 16265
+// Module ID: 16298
+// Function ID: 16299
 // Name: useOnMessageSend
 // Dependencies: [19, 676, 709, 2]
 // Exports: default
 
-// Module 16264 (useOnMessageSend)
+// Module 16298 (useOnMessageSend)
 import closure_2 from "noop" /* 19 */;
 import { MessageStates } from "ME" /* 676 */;
 

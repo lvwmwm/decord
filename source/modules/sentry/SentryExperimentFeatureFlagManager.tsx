@@ -1,14 +1,14 @@
-// Module ID: 17402
-// Function ID: 17403
+// Module ID: 17435
+// Function ID: 17436
 // Name: isLikelyControl
-// Dependencies: [4359, 1212, 4268, 1208, 5451, 2]
+// Dependencies: [4361, 1212, 4269, 1208, 5454, 2]
 
-// Module 17402 (isLikelyControl)
+// Module 17435 (isLikelyControl)
 import _modDef1208 from "module_1208" /* 1208 */;
-import initializeDefault from "initialize" /* 5451 */;
-import closure_2 from "getHash" /* 4359 */;
+import initializeDefault from "initialize" /* 5454 */;
+import closure_2 from "getHash" /* 4361 */;
 import closure_3 from "initialize" /* 1212 */;
-import closure_4 from "handleConnectionOpen" /* 4268 */;
+import closure_4 from "handleConnectionOpen" /* 4269 */;
 import set from "set" /* 2 */;
 
 function isLikelyControl(defaultConfig, variantId2) {

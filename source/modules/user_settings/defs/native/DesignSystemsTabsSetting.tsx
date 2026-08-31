@@ -1,13 +1,13 @@
-// Module ID: 15307
-// Function ID: 15308
+// Module ID: 15340
+// Function ID: 15341
 // Name: route
-// Dependencies: [7830, 676, 11006, 15308, 2]
+// Dependencies: [7852, 676, 11031, 15341, 2]
 
-// Module 15307 (route)
+// Module 15340 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import MobileUserSettings from "MobileUserSettings" /* 7830 */;
-import createToggle from "createToggle" /* 11006 */;
+import MobileUserSettings from "MobileUserSettings" /* 7852 */;
+import createToggle from "createToggle" /* 11031 */;
 
 obj = {
   useTitle() {
@@ -19,7 +19,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.DESIGN_SYSTEM_TABS,
   getComponent() {
-    return require(15308) /* UserSettingsDesignSystemTabs */.default;
+    return require(15341) /* UserSettingsDesignSystemTabs */.default;
   }
 };
 const route = createToggle.createRoute(obj);

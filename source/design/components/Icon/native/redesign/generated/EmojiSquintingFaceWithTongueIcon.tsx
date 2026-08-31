@@ -1,14 +1,14 @@
-// Module ID: 14925
-// Function ID: 14926
+// Module ID: 14958
+// Function ID: 14959
 // Name: EmojiSquintingFaceWithTongueIcon
-// Dependencies: [19, 21, 712, 4165, 14926, 2]
+// Dependencies: [19, 21, 712, 4166, 14959, 2]
 // Exports: EmojiSquintingFaceWithTongueIcon
 
-// Module 14925 (EmojiSquintingFaceWithTongueIcon)
+// Module 14958 (EmojiSquintingFaceWithTongueIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 14926 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 14959 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,36 +1,36 @@
-// Module ID: 17138
-// Function ID: 17139
+// Module ID: 17171
+// Function ID: 17172
 // Name: componentDidMount
-// Dependencies: [109, 5, 19, 17, 1987, 1218, 1993, 1986, 1910, 9668, 17125, 17120, 676, 17127, 21, 4446, 712, 4173, 5460, 6202, 1236, 4666, 17129, 12, 698, 9646, 17139, 4163, 9457, 7627, 5422, 11106, 4822, 1297, 5957, 5564, 17140, 17147, 17149, 17150, 4891, 8309, 1500, 589, 4095, 5904, 2]
+// Dependencies: [109, 5, 19, 17, 1986, 1218, 1992, 1985, 1909, 9690, 17158, 17153, 676, 17160, 21, 4448, 712, 4174, 5463, 6205, 1236, 4668, 17162, 12, 698, 9668, 17172, 4164, 9479, 7648, 5425, 11135, 4825, 1297, 5960, 5567, 17173, 17180, 17182, 17183, 4894, 8331, 1499, 589, 4096, 5907, 2]
 // Exports: default
 
-// Module 17138 (componentDidMount)
+// Module 17171 (componentDidMount)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import TableRowInner from "TableRowInner" /* 5564 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5957 */;
-import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 17140 */;
-import GuildSettingsRoleEditPermissionDefault from "GuildSettingsRoleEditPermission" /* 17147 */;
-import onMembersLoadFailDefault from "onMembersLoadFail" /* 17149 */;
-import HeaderSectionDefault from "HeaderSection" /* 17150 */;
+import TableRowInner from "TableRowInner" /* 5567 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5960 */;
+import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 17173 */;
+import GuildSettingsRoleEditPermissionDefault from "GuildSettingsRoleEditPermission" /* 17180 */;
+import onMembersLoadFailDefault from "onMembersLoadFail" /* 17182 */;
+import HeaderSectionDefault from "HeaderSection" /* 17183 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1987 */;
+import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1986 */;
 import closure_10 from "fetchFingerprint" /* 1218 */;
-import closure_11 from "trackCommunicationDisabled" /* 1993 */;
-import closure_12 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_13 from "createGuildRecordFromRust" /* 1910 */;
-import closure_14 from "handleFormInit" /* 9668 */;
-import closure_15 from "handleSetSection" /* 17125 */;
-import { RoleColorsStyle } from "handleSetSection" /* 17125 */;
-import { GuildSettingsRoleEditSections as closure_17 } from "MAX_SUBCATEGORIES" /* 17120 */;
+import closure_11 from "trackCommunicationDisabled" /* 1992 */;
+import closure_12 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_13 from "createGuildRecordFromRust" /* 1909 */;
+import closure_14 from "handleFormInit" /* 9690 */;
+import closure_15 from "handleSetSection" /* 17158 */;
+import { RoleColorsStyle } from "handleSetSection" /* 17158 */;
+import { GuildSettingsRoleEditSections as closure_17 } from "MAX_SUBCATEGORIES" /* 17153 */;
 import ME from "ME" /* 676 */;
-import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS" /* 17127 */;
+import { HOLOGRAPHIC_ROLE_COLORS } from "HOLOGRAPHIC_ROLE_COLORS" /* 17160 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 let closure_4 = ["guild"];
@@ -250,7 +250,7 @@ class GuildSettingsRoleEdit extends PureComponent {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -292,7 +292,7 @@ class GuildSettingsRoleEdit extends PureComponent {
             obj1.deleteRole(v0.id, user.id);
             arr = arr.pop();
             user = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           } catch (tmp18) {
             user = tmp;
             throw tmp18;
@@ -386,7 +386,7 @@ prototype["updateNavigation"] = function updateNavigation(role, submitting) {
   submitting = this.state.submitting;
   let setOptionsResult = { headerLeft: null, headerRight: null, headerTitle: null };
   const sectionChanges = self.getSectionChanges();
-  setOptionsResult[0] = role(5460).getHeaderConditionalBackButton(self.handleBack);
+  setOptionsResult[0] = role(5463).getHeaderConditionalBackButton(self.handleBack);
   if (submitting) {
     let fn = () => callback(role(table[18]).HeaderSubmittingIndicator, {});
   } else if (sectionChanges) {
@@ -415,23 +415,23 @@ prototype["renderSubScreenButtons"] = function renderSubScreenButtons() {
   obj[1] = function onPress() {
     return self.onSubScreenValueChange(closure_1_17.PERMISSIONS);
   };
-  const items = [callback2(self(5564).TableRow, obj), , ];
+  const items = [callback2(self(5567).TableRow, obj), , ];
   obj = { label: null, onPress: null, arrow: true };
   const intl2 = self(1236).intl;
   obj[0] = intl2.string(self(1236).t["5//Muu"]);
   obj[1] = function onPress() {
     return self.onSubScreenValueChange(closure_1_17.VERIFICATIONS);
   };
-  items[1] = callback2(self(5564).TableRow, obj);
+  items[1] = callback2(self(5567).TableRow, obj);
   obj1 = { label: null, onPress: null, arrow: true };
   const intl3 = self(1236).intl;
   obj1[0] = intl3.string(self(1236).t.J4ZtH1);
   obj1[1] = function onPress() {
     return self.onSubScreenValueChange(closure_1_17.MEMBERS);
   };
-  items[2] = callback2(self(5564).TableRow, obj1);
+  items[2] = callback2(self(5567).TableRow, obj1);
   obj[1] = items;
-  return callback3(self(5957).TableRowGroup, obj);
+  return callback3(self(5960).TableRowGroup, obj);
 };
 prototype["renderDeleteButton"] = function renderDeleteButton() {
   let obj = { hasIcons: false, children: null };
@@ -526,7 +526,7 @@ prototype["render"] = function render() {
     obj4[1] = ThemesDefault.space.PX_16;
     obj3[1] = obj4;
     obj3[2] = tmp11Result;
-    let tmp22Result = tmp22(tmp24(4891).Stack, obj3);
+    let tmp22Result = tmp22(tmp24(4894).Stack, obj3);
   } else {
     const obj5 = { contentContainerStyle: null, children: null };
     obj5[0] = tmp.form;
@@ -554,8 +554,8 @@ prototype["render"] = function render() {
     }
     items[3] = renderDeleteButtonResult;
     obj6[1] = items;
-    obj5[1] = closure_23(tmp24(4891).Stack, obj6);
-    tmp22Result = tmp22(tmp24(8309).Form, obj5);
+    obj5[1] = closure_23(tmp24(4894).Stack, obj6);
+    tmp22Result = tmp22(tmp24(8331).Form, obj5);
     const tmp26 = closure_23;
   }
   obj2[1] = tmp22Result;

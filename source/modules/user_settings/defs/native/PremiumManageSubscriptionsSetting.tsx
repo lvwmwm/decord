@@ -1,13 +1,13 @@
-// Module ID: 14525
-// Function ID: 14526
+// Module ID: 14559
+// Function ID: 14560
 // Name: route
-// Dependencies: [19, 676, 7109, 8426, 4108, 13008, 11006, 1236, 14526, 14524, 2]
+// Dependencies: [19, 676, 7130, 8448, 4109, 13042, 11031, 1236, 14560, 14558, 2]
 
-// Module 14525 (route)
+// Module 14559 (route)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4108 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4109 */;
 import closure_3 from "noop" /* 19 */;
-import createToggle from "createToggle" /* 11006 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 createToggle = {
@@ -41,7 +41,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PREMIUM_MANAGE_PLAN,
   getComponent() {
-    return require(14524) /* PremiumPlanSelectSettingScreen */.default;
+    return require(14558) /* PremiumPlanSelectSettingScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

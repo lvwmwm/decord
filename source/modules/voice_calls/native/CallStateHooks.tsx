@@ -1,21 +1,21 @@
-// Module ID: 13382
-// Function ID: 13383
+// Module ID: 13416
+// Function ID: 13417
 // Name: id
-// Dependencies: [4462, 1218, 5187, 4520, 676, 4467, 589, 9589, 2]
+// Dependencies: [4464, 1218, 5190, 4522, 676, 4469, 589, 9611, 2]
 // Exports: default
 
-// Module 13382 (id)
-import closure_3 from "getParticipants" /* 4462 */;
+// Module 13416 (id)
+import closure_3 from "getParticipants" /* 4464 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "callConnect" /* 5187 */;
-import closure_6 from "createRTCConnection" /* 4520 */;
+import closure_5 from "callConnect" /* 5190 */;
+import closure_6 from "createRTCConnection" /* 4522 */;
 import ME from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4467 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4469 */;
 
 const require = arg1;
 ({ EMPTY_STRING_SNOWFLAKE_ID: error, RTCConnectionStates: closure_8 } = ME);
 let obj = {};
-const merged = Object.assign({ initialized: false, callId: "r" });
+const merged = Object.assign({ initialized: false, callId: "Array" });
 obj = { DISCONNECTED: "disconneted", DISCONNECTING: "disconnecting", CONNECTING: "connecting", RINGING: "ringing", CONNECTED: "connected" };
 const result = require("set").fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
 
@@ -63,7 +63,7 @@ export default function _default() {
     }
     return tmp;
   });
-  const tmp3 = id(9589)();
+  const tmp3 = id(9611)();
   dependencyMap = tmp3;
   const items2 = [getRTCConnectionId];
   stateFromStores = _require(589).useStateFromStores(items2, getRTCConnectionId.getRTCConnectionId, []);

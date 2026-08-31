@@ -1,13 +1,13 @@
-// Module ID: 5937
-// Function ID: 5938
+// Module ID: 5940
+// Function ID: 5941
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5190, 589, 5315, 2]
+// Dependencies: [5, 19, 5193, 589, 5318, 2]
 // Exports: useProviderConnection
 
-// Module 5937 (useProviderConnection)
+// Module 5940 (useProviderConnection)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "set" /* 5190 */;
+import closure_5 from "set" /* 5193 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
@@ -47,7 +47,7 @@ export const useProviderConnection = function useProviderConnection(provider_id)
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

@@ -1,12 +1,12 @@
-// Module ID: 14335
-// Function ID: 14336
+// Module ID: 14369
+// Function ID: 14370
 // Name: showUserSettingsInputAlert
-// Dependencies: [19, 21, 4823, 14336, 2010, 1236, 4912, 2]
+// Dependencies: [19, 21, 4826, 14370, 2009, 1236, 4915, 2]
 // Exports: default
 
-// Module 14335 (showUserSettingsInputAlert)
+// Module 14369 (showUserSettingsInputAlert)
 import noopAll from "noop" /* 19 */;
-import _modDef4823 from "module_4823" /* 4823 */;
+import _modDef4826 from "module_4826" /* 4826 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/user_settings/accou
 export default function showUserSettingsInputAlert(arg0) {
   ({ onSubmit: require, onSuccess: importDefault, onError: dependencyMap } = arg0);
   closure_3 = Object.assign(arg0, Object.create(null));
-  let obj = _modDef4823;
+  let obj = _modDef4826;
   obj = {
     importer() {
       return closure_1_0(closure_1_2[4])(closure_1_2[3], closure_1_2.paths).then((arg0) => {

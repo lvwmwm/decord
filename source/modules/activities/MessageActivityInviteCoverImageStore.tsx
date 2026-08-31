@@ -1,12 +1,12 @@
-// Module ID: 12836
-// Function ID: 12837
+// Module ID: 12871
+// Function ID: 12872
 // Name: getCoverImageURL
-// Dependencies: [1405, 589, 709, 2]
+// Dependencies: [1401, 589, 709, 2]
 
-// Module 12836 (getCoverImageURL)
+// Module 12871 (getCoverImageURL)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import privDefault from "priv" /* 1405 */;
+import privDefault from "priv" /* 1401 */;
 
 let closure_0 = new privDefault({ max: 500 });
 const Store = initializeDefault.Store;

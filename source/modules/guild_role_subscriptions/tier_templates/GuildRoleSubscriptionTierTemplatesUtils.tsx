@@ -1,21 +1,21 @@
-// Module ID: 14762
-// Function ID: 14763
+// Module ID: 14796
+// Function ID: 14797
 // Name: getUsedTemplateChannelsForGuild
-// Dependencies: [5, 19, 1391, 4084, 14757, 14763, 676, 1398, 4722, 647, 1403, 709, 9644, 6072, 13565, 2]
+// Dependencies: [5, 19, 1387, 4085, 14791, 14797, 676, 1394, 4724, 647, 1399, 709, 9666, 6075, 13599, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 14762 (getUsedTemplateChannelsForGuild)
-import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6072 */;
-import GuildFeatures2 from "GuildFeatures" /* 13565 */;
+// Module 14796 (getUsedTemplateChannelsForGuild)
+import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6075 */;
+import GuildFeatures2 from "GuildFeatures" /* 13599 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { useMemo } from "noop" /* 19 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "makeGroupListingIndexSubscriptionListingTag" /* 4084 */;
-import { useEditStateStore } from "AllChannelAccessOptions" /* 14757 */;
-import closure_9 from "initialize" /* 14763 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "makeGroupListingIndexSubscriptionListingTag" /* 4085 */;
+import { useEditStateStore } from "AllChannelAccessOptions" /* 14791 */;
+import closure_9 from "initialize" /* 14797 */;
 import { GuildFeatures } from "ME" /* 676 */;
-import { ChannelFlags } from "set" /* 1398 */;
-import importDefaultResult from "allSettled" /* 4722 */;
+import { ChannelFlags } from "set" /* 1394 */;
+import importDefaultResult from "allSettled" /* 4724 */;
 
 require = arg1;
 function getUsedTemplateChannelsForGuild(arg0) {
@@ -69,7 +69,7 @@ function _createChannelsFromTemplateTierBenefits() {
           obj[0] = arr;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

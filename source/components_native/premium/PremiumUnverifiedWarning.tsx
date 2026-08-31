@@ -1,15 +1,15 @@
-// Module ID: 13161
-// Function ID: 13162
+// Module ID: 13193
+// Function ID: 13194
 // Name: render
-// Dependencies: [19, 1923, 21, 4446, 712, 4173, 1297, 1236, 589, 2]
+// Dependencies: [19, 1922, 21, 4448, 712, 4174, 1297, 1236, 589, 2]
 
-// Module 13161 (render)
+// Module 13193 (render)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import importDefaultResult from "mergeGuildAvatar" /* 1923 */;
+import importDefaultResult from "mergeGuildAvatar" /* 1922 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import importAllResult from "noop" /* 19 */;
 import importDefaultResult1 from "initialize" /* 589 */;
 

@@ -1,11 +1,12 @@
-// Module ID: 9014
-// Function ID: 9015
-// Dependencies: [4099, 676, 9015, 8998, 4141, 4148, 9016, 9017, 709, 2]
+// Module ID: 9037
+// Function ID: 9038
+// Dependencies: [4100, 676, 9038, 9021, 4142, 4149, 9039, 9040, 709, 4292, 2]
 
-// Module 9014
-import handleRelationshipAddErrorDefault from "handleRelationshipAddError" /* 8998 */;
-import showRequestFailedAlertDefault from "showRequestFailedAlert" /* 9015 */;
-import closure_3 from "markAllUserIdListsStale" /* 4099 */;
+// Module 9037
+import nameFromUserDefault from "nameFromUser" /* 4292 */;
+import handleRelationshipAddErrorDefault from "handleRelationshipAddError" /* 9021 */;
+import showRequestFailedAlertDefault from "showRequestFailedAlert" /* 9038 */;
+import closure_3 from "markAllUserIdListsStale" /* 4100 */;
 import { AbortCodes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -75,7 +76,7 @@ export default {
     let result = obj.isSettingTeenByDefault(userId(_location[5]).SettingsDefaultFeature.FRIEND_REQUEST_STRANGER_CONFIRMATION);
     obj1 = userId(_location[6]);
     const result1 = obj1.isFriendRequestAlertsV2Enabled("maybeConfirmFriendRequestAccept");
-    const isStrangerResult = stranger.isStranger(userId);
+    const isStrangerResult = closure_3.isStranger(userId);
     if (null == applicationId) {
       if (result) {
         if (false !== isStrangerResult) {
@@ -518,5 +519,13 @@ export default {
         tmp3();
       }
     });
+  },
+  getDisplayName(id) {
+    let nickname = closure_3.getNickname(id.id);
+    if (nickname == null) {
+      nickname = nameFromUserDefault.getName(id);
+      const obj = nameFromUserDefault;
+    }
+    return nickname;
   }
 };

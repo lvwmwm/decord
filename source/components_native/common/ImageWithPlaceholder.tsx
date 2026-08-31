@@ -1,13 +1,13 @@
-// Module ID: 8820
-// Function ID: 8821
+// Module ID: 8843
+// Function ID: 8844
 // Name: ImagePlaceholderVersions
-// Dependencies: [17, 21, 500, 8821, 5458, 2]
+// Dependencies: [17, 21, 500, 8844, 5461, 2]
 // Exports: ImageWithPlaceholder
 
-// Module 8820 (ImagePlaceholderVersions)
+// Module 8843 (ImagePlaceholderVersions)
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8821 */;
+import preloadDefault from "preload" /* 5461 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8844 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 500 */;
 

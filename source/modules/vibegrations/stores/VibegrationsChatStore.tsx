@@ -1,27 +1,27 @@
-// Module ID: 16105
-// Function ID: 16106
+// Module ID: 16139
+// Function ID: 16140
 // Name: newMessage
-// Dependencies: [32, 109, 7229, 10102, 1982, 4268, 5188, 16106, 676, 1398, 1236, 3470, 16107, 4135, 9931, 589, 709, 2]
+// Dependencies: [32, 109, 7250, 10125, 1981, 4269, 5191, 16140, 676, 1394, 1236, 3471, 16141, 4136, 9954, 589, 709, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 16105 (newMessage)
+// Module 16139 (newMessage)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3470 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4135 */;
-import createSoundForPack from "createSoundForPack" /* 9931 */;
-import _modDef16107 from "module_16107" /* 16107 */;
+import messagesProxyDefault from "messagesProxy" /* 3471 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import createSoundForPack from "createSoundForPack" /* 9954 */;
+import _modDef16141 from "module_16141" /* 16141 */;
 import closure_6 from "_slicedToArray" /* 32 */;
 import closure_7 from "_objectWithoutProperties" /* 109 */;
-import closure_8 from "freshTeenActivityWithMap" /* 7229 */;
-import closure_9 from "DesktopNotificationTypes" /* 10102 */;
-import closure_10 from "handleConnectionOpen" /* 1982 */;
-import closure_11 from "handleConnectionOpen" /* 4268 */;
-import closure_12 from "filterPlayingActivities" /* 5188 */;
-import closure_13 from "isProjectOwner" /* 16106 */;
+import closure_8 from "freshTeenActivityWithMap" /* 7250 */;
+import closure_9 from "DesktopNotificationTypes" /* 10125 */;
+import closure_10 from "handleConnectionOpen" /* 1981 */;
+import closure_11 from "handleConnectionOpen" /* 4269 */;
+import closure_12 from "filterPlayingActivities" /* 5191 */;
+import closure_13 from "isProjectOwner" /* 16140 */;
 import ME from "ME" /* 676 */;
-import { StaticChannelRoute } from "set" /* 1398 */;
+import { StaticChannelRoute } from "set" /* 1394 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -333,7 +333,7 @@ function recordThinkingTransition(projectId) {
       }
       const project = store.getProject(projectId);
       if (null != project) {
-        result = _modDef16107.areTurnNotificationsDisabled();
+        result = _modDef16141.areTurnNotificationsDisabled();
         if (!result) {
           result = status.getStatus() === constants.DND;
         }
@@ -359,8 +359,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = channelId.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(16107).isWindowFocused();
-            const tmp68Result = tmp68(16107);
+            isWindowFocusedResult = tmp68(16141).isWindowFocused();
+            const tmp68Result = tmp68(16141);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -450,12 +450,12 @@ function recordThinkingTransition(projectId) {
                 tmp58 = bit_message1;
               }
               obj[5] = tmp58;
-              const result3 = _modDef16107.presentTurnNotification(obj);
-              const obj7 = _modDef16107;
+              const result3 = _modDef16141.presentTurnNotification(obj);
+              const obj7 = _modDef16141;
             }
           }
         }
-        const obj10 = _modDef16107;
+        const obj10 = _modDef16141;
         tmp68 = importDefault;
       }
       obj5 = store;
@@ -1106,7 +1106,7 @@ const vibegrationsChatStore = new VibegrationsChatStore(dispatcherDefault, {
                 const items = [];
                 obj = { type: "step", kind: "terminal_error", message: null };
                 const intl = callback(1236).intl;
-                obj[2] = intl.string(callback2(3470)["wjWm+/"]);
+                obj[2] = intl.string(callback2(3471)["wjWm+/"]);
                 items[HermesBuiltin.arraySpread(disposition.steps, 0)] = obj;
                 obj.steps = items;
                 tmp2 = obj;

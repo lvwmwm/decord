@@ -1,17 +1,17 @@
-// Module ID: 16025
-// Function ID: 16026
+// Module ID: 16059
+// Function ID: 16060
 // Name: useReplyActions
-// Dependencies: [5, 19, 1391, 4820, 1923, 1926, 4439, 21, 589, 7985, 8109, 4459, 16026, 4290, 7374, 7148, 16022, 4413, 4163, 1236, 14426, 8568, 9037, 7454, 16026, 2010, 2]
+// Dependencies: [5, 19, 1387, 4822, 1922, 1925, 4441, 21, 589, 8007, 8131, 4461, 16060, 4292, 7395, 7169, 16056, 4415, 4164, 1236, 14460, 8590, 9060, 7475, 16060, 2009, 2]
 // Exports: useReplyActions
 
-// Module 16025 (useReplyActions)
+// Module 16059 (useReplyActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import { DraftType } from "handleChanged" /* 4820 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
-import { EmojiIntention } from "set" /* 1926 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4439 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import { DraftType } from "handleChanged" /* 4822 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { EmojiIntention } from "set" /* 1925 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4441 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -78,7 +78,7 @@ export const useReplyActions = function useReplyActions(content) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

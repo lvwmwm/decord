@@ -1,10 +1,10 @@
-// Module ID: 11780
-// Function ID: 11781
+// Module ID: 11811
+// Function ID: 11812
 // Name: t
 // Dependencies: [2]
 // Exports: default
 
-// Module 11780 (t)
+// Module 11811 (t)
 import set from "set" /* 2 */;
 
 const fn = function t(top) {

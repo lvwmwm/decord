@@ -1,21 +1,21 @@
-// Module ID: 6081
-// Function ID: 6082
+// Module ID: 6084
+// Function ID: 6085
 // Name: useCanUnarchiveThread
-// Dependencies: [32, 4358, 1395, 1218, 1391, 4090, 5413, 676, 589, 506, 6082, 11, 12, 6083, 6084, 4697, 2]
+// Dependencies: [32, 4360, 1391, 1218, 1387, 4091, 5416, 676, 589, 506, 6085, 11, 12, 6086, 6087, 4699, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartPrivateThread, useCanStartPublicThread, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useHasPermissionToJoinThreadVoice, useIsActiveChannelOrUnarchivableThread, useIsNonModInLockedThread, useIsThreadModerator
 
-// Module 6081 (useCanUnarchiveThread)
+// Module 6084 (useCanUnarchiveThread)
 import fromStringAll from "fromString" /* 506 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6082 */;
-import useIsRemoteDefault from "useIsRemote" /* 6083 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6085 */;
+import useIsRemoteDefault from "useIsRemote" /* 6086 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import { THREADED_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
+import { THREADED_CHANNEL_TYPES } from "createChannelRecord" /* 1391 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_9 from "rebuild" /* 5413 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_9 from "rebuild" /* 5416 */;
 import ME from "ME" /* 676 */;
-import importDefaultResult from "createExperiment" /* 4358 */;
+import importDefaultResult from "createExperiment" /* 4360 */;
 
 const require = arg1;
 function useCanUnarchiveThread(channel) {
@@ -524,13 +524,13 @@ export const useCanJoinThreadVoice = function useCanJoinThreadVoice(channel) {
   }
   obj = { guildId: channel.guild_id, location: "e791ea_1" };
   let enabled = importDefaultResultResult.useExperiment(obj, { autoTrackExposure: false }).enabled;
-  let tmp3Result = tmp3(6084);
+  let tmp3Result = tmp3(6087);
   const isGameInvitesPost = tmp3Result.useIsGameInvitesPost(channel);
-  tmp3Result = tmp3(4697);
+  tmp3Result = tmp3(4699);
   let shouldAgeVerifyForAgeGate = tmp3Result.useShouldAgeVerifyForAgeGate();
   if (shouldAgeVerifyForAgeGate) {
-    shouldAgeVerifyForAgeGate = tmp3(4697).shouldShowAgeGateForChannelId(channel.id);
-    const tmp3Result1 = tmp3(4697);
+    shouldAgeVerifyForAgeGate = tmp3(4699).shouldShowAgeGateForChannelId(channel.id);
+    const tmp3Result1 = tmp3(4699);
   }
   let isVocalThreadResult = !tmp2;
   if (!tmp2) {

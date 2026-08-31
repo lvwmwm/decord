@@ -1,14 +1,14 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 16671
+// Function ID: 16672
 // Name: useCanConnect
-// Dependencies: [1391, 1910, 4090, 4465, 505, 589, 4632, 2]
+// Dependencies: [1387, 1909, 4091, 4467, 505, 589, 4634, 2]
 // Exports: default
 
-// Module 16638 (useCanConnect)
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "createGuildRecordFromRust" /* 1910 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_5 from "updateVoiceState" /* 4465 */;
+// Module 16671 (useCanConnect)
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_5 from "updateVoiceState" /* 4467 */;
 import { Permissions } from "sum" /* 505 */;
 
 const require = arg1;

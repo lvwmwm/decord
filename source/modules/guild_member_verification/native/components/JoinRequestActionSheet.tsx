@@ -1,17 +1,17 @@
-// Module ID: 16098
-// Function ID: 16099
+// Module ID: 16132
+// Function ID: 16133
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4438, 1931, 1923, 676, 21, 4446, 589, 8060, 8026, 4186, 8474, 4381, 5940, 4166, 712, 688, 8066, 7609, 1980, 8061, 5587, 1297, 8850, 1236, 4173, 5589, 16099, 5902, 2]
+// Dependencies: [19, 17, 4440, 1930, 1922, 676, 21, 4448, 589, 8082, 8048, 4187, 8496, 4383, 5943, 4167, 712, 688, 8088, 7630, 1979, 8083, 5590, 1297, 8873, 1236, 4174, 5592, 16133, 5905, 2]
 
-// Module 16098 (JoinRequestActionSheet)
+// Module 16132 (JoinRequestActionSheet)
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_6 from "createdAt" /* 1931 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_6 from "createdAt" /* 1930 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 class JoinRequestActionSheet {
@@ -57,7 +57,7 @@ class JoinRequestActionSheet {
     obj3 = guildId;
     ({ bottomSheetRef, bottomSheetClose } = bottomSheetRef);
     ref = guildId.useRef(null);
-    tmp2Result1 = require("module_4186");
+    tmp2Result1 = require("module_4187");
     sharedValue = require("module_0");
     closure_5 = sharedValue;
     items2 = [];

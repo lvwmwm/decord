@@ -1,26 +1,26 @@
-// Module ID: 11347
-// Function ID: 11348
+// Module ID: 11376
+// Function ID: 11377
 // Name: items
-// Dependencies: [5, 32, 19, 17, 1995, 676, 21, 1236, 4446, 712, 5559, 9152, 4910, 698, 11348, 4163, 4639, 9457, 4442, 7639, 7640, 7755, 4893, 2]
+// Dependencies: [5, 32, 19, 17, 1994, 676, 21, 1236, 4448, 712, 5562, 9174, 4913, 698, 11377, 4164, 4641, 9479, 4444, 7660, 7661, 7776, 4896, 2]
 
-// Module 11347 (items)
+// Module 11376 (items)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import Button from "Button" /* 4893 */;
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4910 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5559 */;
-import context from "context" /* 7639 */;
-import TextArea from "TextArea" /* 7755 */;
-import _calculateScrollOffsetDefault from "_calculateScrollOffset" /* 9152 */;
+import Text from "Text" /* 4444 */;
+import Button from "Button" /* 4896 */;
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4913 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5562 */;
+import context from "context" /* 7660 */;
+import TextArea from "TextArea" /* 7776 */;
+import _calculateScrollOffsetDefault from "_calculateScrollOffset" /* 9174 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import getFriendlyDurationString from "getFriendlyDurationString" /* 1995 */;
+import getFriendlyDurationString from "getFriendlyDurationString" /* 1994 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 let c5 = importAllResult;
@@ -98,7 +98,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
               return obj;
             } else {
               closure_1 = tmp4;
-              let obj3 = closure_1_1(11348);
+              let obj3 = closure_1_1(11377);
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -131,8 +131,8 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
             return obj2;
           } else {
             const intl = closure_1_0(1236).intl;
-            const obj8 = closure_1_1(4163);
-            const name = closure_1_1(4639).getName(closure_1, null, c0);
+            const obj8 = closure_1_1(4164);
+            const name = closure_1_1(4641).getName(closure_1, null, c0);
             c0 = name;
             if (name == null) {
               c0 = "";
@@ -141,11 +141,11 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
             obj3 = { user: null };
             obj3[0] = c0;
             obj[1] = intl.formatToPlainString(closure_1_0(1236).t.O9C3Nt, obj3);
-            obj[2] = closure_1_1(9457);
+            obj[2] = closure_1_1(9479);
             obj8.open(obj);
             dependencyMap();
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp20) {
           c3 = tmp;

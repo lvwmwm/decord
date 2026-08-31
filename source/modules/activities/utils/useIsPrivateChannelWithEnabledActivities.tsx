@@ -1,11 +1,11 @@
-// Module ID: 9489
-// Function ID: 9490
+// Module ID: 9511
+// Function ID: 9512
 // Name: useIsPrivateChannelWithEnabledActivities
-// Dependencies: [1391, 647, 2]
+// Dependencies: [1387, 647, 2]
 // Exports: default, isPrivateChannelWithEnabledActivities
 
-// Module 9489 (useIsPrivateChannelWithEnabledActivities)
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
+// Module 9511 (useIsPrivateChannelWithEnabledActivities)
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/useIsPrivateChannelWithEnabledActivities.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 15803
-// Function ID: 15804
-// Dependencies: [19, 21, 4446, 500, 9518, 15804, 15814, 15699, 11066, 5617, 5971, 7742, 15882, 10254, 2]
+// Module ID: 15837
+// Function ID: 15838
+// Dependencies: [19, 21, 4448, 500, 9540, 15838, 15848, 15733, 11095, 5620, 5974, 7763, 15916, 10278, 2]
 
-// Module 15803
+// Module 15837
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -17,12 +17,12 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
     flag = false;
   }
   listProps = undefined;
-  let tmp4 = fastListRef(15804)();
+  let tmp4 = fastListRef(15838)();
   fastListRef = tmp4.fastListRef;
   listProps = fastListRef;
   ({ scrollPosition, gesture, scrollerRef, persistantKeys, onFastListScroll, onFastListScrollWorklet } = tmp4);
   let tmp = callback();
-  ({ listProps, listDataProps } = fastListRef(15814)(fastListRef));
+  ({ listProps, listDataProps } = fastListRef(15848)(fastListRef));
   const items = [fastListRef];
   const effect = importAllResult.useEffect(() => {
     const result = listProps(ref[7]).registerGuildVisibilityMethod(listProps);
@@ -75,14 +75,14 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
     }
   }, items1);
   let obj = { profile: null, children: null };
-  const tmp5 = fastListRef(15814)(fastListRef);
-  obj[0] = listProps(11066).Profiles.Guilds;
+  const tmp5 = fastListRef(15848)(fastListRef);
+  obj[0] = listProps(11095).Profiles.Guilds;
   obj = { gesture, children: null };
   obj = { style: tmp.wrapper, collapsable: false, nativeID: "guilds-bar-view", children: null };
-  const tmp10 = fastListRef(11066);
+  const tmp10 = fastListRef(11095);
   const tmp11 = closure_5;
   obj1 = {};
-  const tmp12 = fastListRef(5971);
+  const tmp12 = fastListRef(5974);
   const merged = Object.assign(listProps);
   const merged1 = Object.assign(listDataProps);
   obj1.ref = fastListRef;
@@ -101,10 +101,10 @@ const memoResult = importAllResult.memo(function GuildsBar(enableHome) {
   }
   obj1.style = obj2;
   obj1.nativeID = "guilds-bar-fast-list";
-  const items2 = [closure_4(fastListRef(7742), obj1), closure_4(fastListRef(15882), {}), closure_4(fastListRef(10254), {})];
+  const items2 = [closure_4(fastListRef(7763), obj1), closure_4(fastListRef(15916), {}), closure_4(fastListRef(10278), {})];
   obj[3] = items2;
   obj[1] = tmp11(tmp12, obj);
-  obj[1] = closure_4(listProps(5617).GestureDetector, obj);
+  obj[1] = closure_4(listProps(5620).GestureDetector, obj);
   return closure_4(tmp10, obj);
 });
 let result = require("set").fileFinishedImporting("modules/guilds_bar/native/GuildsBar.tsx");

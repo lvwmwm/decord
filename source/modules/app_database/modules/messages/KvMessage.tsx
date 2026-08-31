@@ -1,12 +1,12 @@
-// Module ID: 7179
-// Function ID: 7180
+// Module ID: 7200
+// Function ID: 7201
 // Name: fromMessage
-// Dependencies: [32, 1993, 1923, 676, 2]
+// Dependencies: [32, 1992, 1922, 676, 2]
 
-// Module 7179 (fromMessage)
+// Module 7200 (fromMessage)
 import closure_0 from "_slicedToArray" /* 32 */;
-import closure_1 from "trackCommunicationDisabled" /* 1993 */;
-import closure_2 from "mergeGuildAvatar" /* 1923 */;
+import closure_1 from "trackCommunicationDisabled" /* 1992 */;
+import closure_2 from "mergeGuildAvatar" /* 1922 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 
 let prototype;

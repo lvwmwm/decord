@@ -1,22 +1,22 @@
-// Module ID: 11974
-// Function ID: 11975
+// Module ID: 12007
+// Function ID: 12008
 // Name: GuildProgressHeader
-// Dependencies: [5, 19, 17, 9668, 1983, 11967, 676, 21, 4446, 712, 589, 11972, 4162, 698, 11975, 11976, 9847, 6739, 1236, 9667, 5047, 6335, 4457, 4413, 1231, 6853, 11977, 5938, 6325, 4442, 4893, 5033, 5954, 1297, 2]
+// Dependencies: [5, 19, 17, 9690, 1982, 12000, 676, 21, 4448, 712, 589, 12005, 4163, 698, 12008, 12009, 9870, 6754, 1236, 9689, 5050, 6342, 4459, 4415, 1231, 6870, 12010, 5941, 6332, 4444, 4896, 5036, 5957, 1297, 2]
 // Exports: default
 
-// Module 11974 (GuildProgressHeader)
+// Module 12007 (GuildProgressHeader)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4442 */;
+import Text from "Text" /* 4444 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormInit" /* 9668 */;
-import closure_7 from "comparator" /* 1983 */;
-import Steps from "Steps" /* 11967 */;
+import closure_6 from "handleFormInit" /* 9690 */;
+import closure_7 from "comparator" /* 1982 */;
+import Steps from "Steps" /* 12000 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 class GuildProgressHeader {
@@ -65,7 +65,7 @@ export default function GuildProgressActionSheet(guild) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -83,16 +83,16 @@ export default function GuildProgressActionSheet(guild) {
               closure_1 = tmp5;
               let base64 = tmp2;
               base64 = undefined;
-              closure_1_1(9667).init(closure_1_5);
-              const obj6 = closure_1_1(9667);
-              closure_1_0(11972).hideActionSheet(closure_1_0.id);
-              const obj7 = closure_1_0(11972);
+              closure_1_1(9689).init(closure_1_5);
+              const obj6 = closure_1_1(9689);
+              closure_1_0(12005).hideActionSheet(closure_1_0.id);
+              const obj7 = closure_1_0(12005);
               obj1 = { size: null };
               obj1[0] = closure_1_10;
               dependencyMap = 1;
               c3 = 1;
               const obj2 = { value: null, done: false };
-              obj2[0] = closure_1_1(5047).openImagePicker(obj1);
+              obj2[0] = closure_1_1(5050).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -106,11 +106,11 @@ export default function GuildProgressActionSheet(guild) {
           } else {
             base64 = arg1.base64;
             if (null != base64) {
-              obj = closure_1_1(9667);
+              obj = closure_1_1(9689);
               obj.updateIcon(closure_5, base64);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp16) {
           c3 = tmp;

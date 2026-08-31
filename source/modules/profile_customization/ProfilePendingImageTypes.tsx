@@ -1,9 +1,9 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7729
+// Function ID: 7730
 // Name: AssetOriginTypes
 // Dependencies: [2]
 
-// Module 7708 (AssetOriginTypes)
+// Module 7729 (AssetOriginTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/profile_customization/ProfilePendingImageTypes.tsx");

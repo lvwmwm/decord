@@ -1,12 +1,12 @@
-// Module ID: 9871
-// Function ID: 9872
+// Module ID: 9894
+// Function ID: 9895
 // Name: HeaderRecord
-// Dependencies: [5417, 2]
+// Dependencies: [5420, 2]
 // Exports: createHeaderResult
 
-// Module 9871 (HeaderRecord)
+// Module 9894 (HeaderRecord)
 import set from "set" /* 2 */;
-import HeaderRecord from "HeaderRecord" /* 5417 */;
+import HeaderRecord from "HeaderRecord" /* 5420 */;
 
 ({ HeaderRecord: c0, AutocompleterResultTypes: closure_1 } = HeaderRecord);
 const result = set.fileFinishedImporting("modules/autocompleter/createAutocompleterResult.tsx");

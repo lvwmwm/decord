@@ -1,12 +1,12 @@
-// Module ID: 10328
-// Function ID: 10329
+// Module ID: 10352
+// Function ID: 10353
 // Name: StickerPackBanner
-// Dependencies: [19, 17, 21, 4818, 2]
+// Dependencies: [19, 17, 21, 4820, 2]
 // Exports: default
 
-// Module 10328 (StickerPackBanner)
+// Module 10352 (StickerPackBanner)
 import noopAll from "noop" /* 19 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4818 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4820 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

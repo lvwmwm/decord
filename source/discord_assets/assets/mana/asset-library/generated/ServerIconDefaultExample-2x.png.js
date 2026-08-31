@@ -1,12 +1,12 @@
-// Module ID: 6929
-// Function ID: 6930
+// Module ID: 6946
+// Function ID: 6947
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6929 (metadata)
+// Module 6946 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconDefaultExample-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/32aa5cb19c7130ede864e229812094daf9a09bd46c50c0283d9fe9d88c14839c.png";
-export const metadata = { fileBytes: 26971 };
+export default "https://cdn.discordapp.com/assets/content/6820e2499206d8acde78b5e4eb02a5ece9043f2de24e45d828ae381d00e58f01.png";
+export const metadata = { fileBytes: 27213 };

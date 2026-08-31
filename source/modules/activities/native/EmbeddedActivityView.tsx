@@ -1,19 +1,19 @@
-// Module ID: 9543
-// Function ID: 9544
+// Module ID: 9565
+// Function ID: 9566
 // Name: useBaseActivityView
-// Dependencies: [109, 32, 19, 17, 1390, 4474, 4475, 21, 4446, 9542, 1494, 709, 9544, 9545, 9547, 9540, 589, 9549, 9392, 9550, 9558, 2]
+// Dependencies: [109, 32, 19, 17, 1386, 4476, 4477, 21, 4448, 9564, 1493, 709, 9566, 9567, 9569, 9562, 589, 9571, 9414, 9572, 9580, 2]
 
-// Module 9543 (useBaseActivityView)
-import WakeLockDefault from "WakeLock" /* 9547 */;
+// Module 9565 (useBaseActivityView)
+import WakeLockDefault from "WakeLock" /* 9569 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "participantFromServer" /* 1390 */;
-import items3 from "items3" /* 4474 */;
-import { OBEY_SILENT_HARDWARE_SWITCH_APP_IDS as closure_12 } from "ApplicationTypes" /* 4475 */;
+import closure_9 from "participantFromServer" /* 1386 */;
+import items3 from "items3" /* 4476 */;
+import { OBEY_SILENT_HARDWARE_SWITCH_APP_IDS as closure_12 } from "ApplicationTypes" /* 4477 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 function useBaseActivityView(orientationLockState) {
@@ -124,7 +124,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
   dependencyMap = undefined;
   let setIsResetting;
   currentEmbeddedActivity = currentEmbeddedActivity.getCurrentEmbeddedActivity();
-  const tmp4 = currentEmbeddedActivity(9540)();
+  const tmp4 = currentEmbeddedActivity(9562)();
   dependencyMap = tmp4;
   let obj = layoutMode(589);
   const items = [currentEmbeddedActivity];
@@ -141,7 +141,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
   if (null == currentEmbeddedActivity) {
     obj = { instance_id: "" };
   } else {
-    let tmp5Result = tmp5(9545);
+    let tmp5Result = tmp5(9567);
     const discordEnvQueryParams = tmp5Result.getDiscordEnvQueryParams();
     const ui_density = discordEnvQueryParams.ui_density;
     const tmp38 = callback(discordEnvQueryParams, setIsResetting);
@@ -189,7 +189,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       obj.guild_id = guild_id2;
     }
   }
-  currentEmbeddedActivity(9549)({ connectedEmbeddedActivity: currentEmbeddedActivity });
+  currentEmbeddedActivity(9571)({ connectedEmbeddedActivity: currentEmbeddedActivity });
   const items2 = [layoutMode, currentEmbeddedActivity];
   const layoutEffect = obj1.useLayoutEffect(() => {
     if (null != currentEmbeddedActivity) {
@@ -235,7 +235,7 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
   if (!tmp22) {
     tmp22 = null == tmp4;
   }
-  obj1 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp22, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: tmp5(9542).setOrientationLockState };
+  obj1 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp22, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: tmp5(9564).setOrientationLockState };
   const tmp7 = callback2(importAllResult.useState(true), 2);
   setIsResetting = useBaseActivityView(obj1).setIsResetting;
   let tmp28Result = null;
@@ -270,19 +270,19 @@ const memoResult = importAllResult.memo(function EmbeddedActivityViewInner(portr
       obj3[6] = compositeInstanceId;
       obj3[7] = obj;
       obj3[8] = callback;
-      tmp5Result = tmp5(9558);
+      tmp5Result = tmp5(9580);
       obj3[9] = tmp5Result.allowPopups(tmp4);
       obj3[11] = layoutMode === constants.PIP || layoutMode === constants.GRID;
-      obj3[12] = tmp5(9392).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
+      obj3[12] = tmp5(9414).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
       if (tmp26) {
         landscapeSafeAreasConfig = portraitSafeAreasConfig.landscapeSafeAreasConfig;
       }
       obj3[13] = landscapeSafeAreasConfig;
       obj3[14] = !set.has(id);
-      obj2[3] = closure_13(tmp2(9550), obj3);
+      obj2[3] = closure_13(tmp2(9572), obj3);
       tmp28Result = tmp28(BaseActivityView, obj2);
       const tmp29 = BaseActivityView;
-      const tmp2Result = tmp2(9550);
+      const tmp2Result = tmp2(9572);
     }
   }
   return tmp28Result;

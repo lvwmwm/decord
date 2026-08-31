@@ -1,14 +1,14 @@
-// Module ID: 10645
-// Function ID: 10646
+// Module ID: 10669
+// Function ID: 10670
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1340, 1923, 589, 8712, 10646, 2]
+// Dependencies: [1340, 1922, 589, 8734, 10670, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 10645 (useSafetyAlertsSettingOrDefault)
+// Module 10669 (useSafetyAlertsSettingOrDefault)
 import initialize from "initialize" /* 589 */;
-import useUserIsTeen from "useUserIsTeen" /* 8712 */;
+import useUserIsTeen from "useUserIsTeen" /* 8734 */;
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_3 from "mergeGuildAvatar" /* 1923 */;
+import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useSafetyAlertsSettingOrDefault.tsx");

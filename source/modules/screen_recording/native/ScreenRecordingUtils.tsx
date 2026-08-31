@@ -1,13 +1,13 @@
-// Module ID: 15456
-// Function ID: 15457
+// Module ID: 15489
+// Function ID: 15490
 // Name: _getLatestVideo
-// Dependencies: [5, 17, 15455, 4822, 15457, 15458, 4413, 15459, 2010, 10208, 5038, 8483, 10207, 1494, 2]
+// Dependencies: [5, 17, 15488, 4825, 15490, 15491, 4415, 15492, 2009, 10231, 5041, 8505, 10230, 1493, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 15456 (_getLatestVideo)
+// Module 15489 (_getLatestVideo)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15455 */;
+import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15488 */;
 
 const require = arg1;
 function _getLatestVideo() {
@@ -24,7 +24,7 @@ function _getLatestVideo() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -122,7 +122,7 @@ function _checkAndRequestPermissions() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -150,7 +150,7 @@ function _checkAndRequestPermissions() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          let obj3 = callback(4822);
+          let obj3 = callback(4825);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to check permissions, error: " + callback;
@@ -171,12 +171,12 @@ function _checkAndRequestPermissions() {
           if (closure_0.photosGranted) {
             let flag2 = closure_0.microphoneGranted;
             if (!flag2) {
-              obj1 = callback(4822);
+              obj1 = callback(4825);
               obj1.show({ title: "Error", body: "Microphone permission is required to record audio" });
               flag2 = false;
             }
           } else {
-            obj = callback(4822);
+            obj = callback(4825);
             obj.show({ title: "Error", body: "Photos permission is required to save recordings" });
           }
           c3 = 0;
@@ -221,7 +221,7 @@ function _startRecordingProcess() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -334,7 +334,7 @@ function _stopRecordingProcess() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -361,7 +361,7 @@ function _stopRecordingProcess() {
         } else if (1 === tmp7) {
           c3 = 0;
           closure_0 = dependencyMap;
-          let obj3 = callback(4822);
+          let obj3 = callback(4825);
           const obj2 = { title: "Error", body: null };
           const _HermesInternal = HermesInternal;
           obj2[1] = "Failed to stop screen recording, error: " + closure_0;
@@ -382,7 +382,7 @@ function _stopRecordingProcess() {
         } else {
           let flag = arg1.success;
           if (!flag) {
-            obj = callback(4822);
+            obj = callback(4825);
             obj.show({ title: "Error", body: "Failed to stop screen recording, but not error" });
             flag = false;
           }
@@ -438,7 +438,7 @@ function _submitBugReportWithScreenRecording() {
             obj[0] = features;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -811,7 +811,7 @@ function _handleStopAndSend() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -843,7 +843,7 @@ function _handleStopAndSend() {
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "HermesInternal", done: null };
+                        return { value: "HermesInternal", done: "HermesInternal" };
                       }
                     } else {
                       try {
@@ -882,7 +882,7 @@ function _handleStopAndSend() {
                           const state1 = closure_2_4.getState();
                           state1.stopRecording();
                           c2 = 3;
-                          return { value: "HermesInternal", done: null };
+                          return { value: "HermesInternal", done: "HermesInternal" };
                         }
                       } catch (tmp13) {
                         c2 = tmp;
@@ -928,7 +928,7 @@ function _handleStopAndSend() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp9) {
           c1 = tmp;

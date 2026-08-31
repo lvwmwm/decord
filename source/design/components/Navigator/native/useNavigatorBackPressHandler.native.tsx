@@ -1,10 +1,10 @@
-// Module ID: 5466
-// Function ID: 5467
+// Module ID: 5469
+// Function ID: 5470
 // Name: useNavigatorBackPressHandler
-// Dependencies: [19, 17, 1501, 500, 2]
+// Dependencies: [19, 17, 1500, 500, 2]
 // Exports: useNavigatorBackPressHandler
 
-// Module 5466 (useNavigatorBackPressHandler)
+// Module 5469 (useNavigatorBackPressHandler)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
@@ -17,7 +17,7 @@ export const useNavigatorBackPressHandler = function useNavigatorBackPressHandle
   const layoutEffect = React.useLayoutEffect(() => {
     closure_1.current = closure_0;
   });
-  const focusEffect = _require(1501).useFocusEffect(React.useCallback(() => {
+  const focusEffect = _require(1500).useFocusEffect(React.useCallback(() => {
     if (!obj.isIOS()) {
       callback = closure_1_3.addEventListener("hardwareBackPress", () => ref.current());
       return () => closure_0.remove();

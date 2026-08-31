@@ -1,9 +1,9 @@
-// Module ID: 6859
-// Function ID: 6860
+// Module ID: 6876
+// Function ID: 6877
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6859 (metadata)
+// Module 6876 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PotionSpotIllustration-2x.png.js");

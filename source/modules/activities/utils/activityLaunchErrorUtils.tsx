@@ -1,13 +1,13 @@
-// Module ID: 9434
-// Function ID: 9435
+// Module ID: 9456
+// Function ID: 9457
 // Name: _getActivityLaunchErrorInfo
-// Dependencies: [5, 8444, 676, 1236, 9414, 4135, 9408, 4708, 7971, 2]
+// Dependencies: [5, 8466, 676, 1236, 9436, 4136, 9430, 4710, 7993, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 9434 (_getActivityLaunchErrorInfo)
+// Module 9456 (_getActivityLaunchErrorInfo)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 8444 */;
-import { DevShelfFetchState } from "initialize" /* 8444 */;
+import closure_4 from "initialize" /* 8466 */;
+import { DevShelfFetchState } from "initialize" /* 8466 */;
 import { AbortCodes } from "ME" /* 676 */;
 
 const require = arg1;
@@ -30,7 +30,7 @@ function _getActivityLaunchErrorInfo() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

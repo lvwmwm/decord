@@ -1,20 +1,20 @@
-// Module ID: 7829
-// Function ID: 7830
+// Module ID: 7851
+// Function ID: 7852
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 7824, 676, 7830, 21, 4446, 6210, 4824, 4828, 7655, 1236, 2]
+// Dependencies: [19, 17, 7846, 676, 7852, 21, 4448, 6213, 4827, 4831, 7676, 1236, 2]
 // Exports: default
 
-// Module 7829 (DoubleTapNitroAlert)
+// Module 7851 (DoubleTapNitroAlert)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4828 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7655 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4831 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7676 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY" /* 7824 */;
+import { NITRO_UPSELL_ALERT_KEY } from "NITRO_UPSELL_ALERT_KEY" /* 7846 */;
 import { UserSettingsSections } from "ME" /* 676 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7830 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7852 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 ({ jsx: error, Fragment: closure_8, jsxs: c9 } = jsxProd);
@@ -23,13 +23,13 @@ const result = require("set").fileFinishedImporting("modules/double_tap_to_react
 
 export default function DoubleTapNitroAlert(emojiName) {
   const callback = React.useCallback(() => {
-    let obj = callback(6210);
+    let obj = callback(6213);
     obj = { screen: constants.TEXT, params: obj };
     obj = { initialSetting: constants2.DOUBLE_TAP_EMOJI };
     obj.openUserSettings(obj);
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = callback(6210);
+    let obj = callback(6213);
     obj = { screen: constants.PREMIUM };
     obj.openUserSettings(obj, () => {
       callback(table[8]).dismissAlert(closure_4);

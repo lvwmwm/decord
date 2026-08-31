@@ -1,16 +1,16 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11219
+// Function ID: 11220
 // Name: LongPressMessageChatItemPreview
-// Dependencies: [21, 4446, 712, 7788, 8720, 2]
+// Dependencies: [21, 4448, 712, 7809, 8742, 2]
 // Exports: default
 
-// Module 11190 (LongPressMessageChatItemPreview)
+// Module 11219 (LongPressMessageChatItemPreview)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import setOptionsDefault from "setOptions" /* 7788 */;
-import DCDChatItemDefault from "DCDChatItem" /* 8720 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import setOptionsDefault from "setOptions" /* 7809 */;
+import DCDChatItemDefault from "DCDChatItem" /* 8742 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const jsx = jsxProd.jsx;
 let obj = { chatItem: null };

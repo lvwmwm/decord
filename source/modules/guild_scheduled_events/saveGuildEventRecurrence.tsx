@@ -1,14 +1,14 @@
-// Module ID: 9611
-// Function ID: 9612
+// Module ID: 9633
+// Function ID: 9634
 // Name: saveGuildEventRecurrence
-// Dependencies: [9573, 9612, 11, 2]
+// Dependencies: [9595, 9634, 11, 2]
 // Exports: default
 
-// Module 9611 (saveGuildEventRecurrence)
+// Module 9633 (saveGuildEventRecurrence)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import getRRule from "getRRule" /* 9573 */;
-import _modDef9612 from "module_9612" /* 9612 */;
+import getRRule from "getRRule" /* 9595 */;
+import _modDef9634 from "module_9634" /* 9634 */;
 
 let result = set.fileFinishedImporting("modules/guild_scheduled_events/saveGuildEventRecurrence.tsx");
 
@@ -19,15 +19,15 @@ export default function saveGuildEventRecurrence(guild_id, nextRecurrenceIdInEve
   if (!obj2.areDatesIdentical(baseScheduleForRecurrence.startDate, startDate.startDate)) {
     startDate = startDate.startDate;
   }
-  let tmpResult = tmp(9573);
+  let tmpResult = tmp(9595);
   let endDate = null;
   if (!tmpResult.areDatesIdentical(baseScheduleForRecurrence.endDate, startDate.endDate)) {
     endDate = startDate.endDate;
   }
   if (null != event_exception_id) {
-    tmpResult = tmp(9573);
+    tmpResult = tmp(9595);
     const result = tmpResult.areSchedulesIdentical(startDate, baseScheduleForRecurrence);
-    const obj5 = _modDef9612;
+    const obj5 = _modDef9634;
     if (result) {
       let result1 = obj5.deleteGuildEventException(guild_id.guild_id, guild_id.id, event_exception_id.event_exception_id);
     } else {
@@ -63,7 +63,7 @@ export default function saveGuildEventRecurrence(guild_id, nextRecurrenceIdInEve
       toISOStringResult3 = endDate.toISOString();
     }
     obj[2] = toISOStringResult3;
-    return _modDef9612.createGuildEventException(obj, guild_id.guild_id, guild_id.id);
+    return _modDef9634.createGuildEventException(obj, guild_id.guild_id, guild_id.id);
   }
   obj2 = getRRule;
 };

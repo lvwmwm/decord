@@ -1,13 +1,13 @@
-// Module ID: 7124
-// Function ID: 7125
+// Module ID: 7145
+// Function ID: 7146
 // Name: items
-// Dependencies: [1925, 712, 2]
+// Dependencies: [1924, 712, 2]
 // Exports: getPremiumGradientColor
 
-// Module 7124 (items)
+// Module 7145 (items)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 const PremiumTypes = GuildFeatures.PremiumTypes;
 const obj = { PREMIUM_TIER_0: null, PREMIUM_TIER_1: null, PREMIUM_TIER_2: null, PREMIUM_TIER_2_TRI_COLOR: null, PREMIUM_GUILD: null, PREMIUM_TIER_0_PERK_CARD: null, PREMIUM_TIER_2_OFFER_COLOR: null };

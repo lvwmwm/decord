@@ -1,13 +1,13 @@
-// Module ID: 10108
-// Function ID: 10109
+// Module ID: 10131
+// Function ID: 10132
 // Name: isChannelCurrentlyVisible
-// Dependencies: [6092, 1982, 4268, 2]
+// Dependencies: [6095, 1981, 4269, 2]
 // Exports: isChannelCurrentlyVisible
 
-// Module 10108 (isChannelCurrentlyVisible)
-import closure_0 from "handlePermissionsChange" /* 6092 */;
-import closure_1 from "handleConnectionOpen" /* 1982 */;
-import closure_2 from "handleConnectionOpen" /* 4268 */;
+// Module 10131 (isChannelCurrentlyVisible)
+import closure_0 from "handlePermissionsChange" /* 6095 */;
+import closure_1 from "handleConnectionOpen" /* 1981 */;
+import closure_2 from "handleConnectionOpen" /* 4269 */;
 
 const result = require("set").fileFinishedImporting("modules/channel/ChannelVisibilityUtils.tsx");
 

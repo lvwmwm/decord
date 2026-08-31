@@ -1,9 +1,9 @@
-// Module ID: 10635
-// Function ID: 10636
+// Module ID: 10659
+// Function ID: 10660
 // Name: MessageRequestConsentStatusTypes
 // Dependencies: [2]
 
-// Module 10635 (MessageRequestConsentStatusTypes)
+// Module 10659 (MessageRequestConsentStatusTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/message_request/MessageRequestTypes.tsx");

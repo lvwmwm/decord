@@ -1,9 +1,9 @@
-// Module ID: 7277
-// Function ID: 7278
+// Module ID: 7298
+// Function ID: 7299
 // Name: getMarketingBySurface
 // Dependencies: [589, 709, 2]
 
-// Module 7277 (getMarketingBySurface)
+// Module 7298 (getMarketingBySurface)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

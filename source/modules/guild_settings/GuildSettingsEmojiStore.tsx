@@ -1,15 +1,15 @@
-// Module ID: 17077
-// Function ID: 17078
+// Module ID: 17110
+// Function ID: 17111
 // Name: initialize
-// Dependencies: [17078, 4268, 1405, 687, 589, 709, 2]
+// Dependencies: [17111, 4269, 1401, 687, 589, 709, 2]
 
-// Module 17077 (initialize)
+// Module 17110 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "prototype" /* 17078 */;
-import closure_1 from "handleConnectionOpen" /* 4268 */;
-import importDefaultResult from "priv" /* 1405 */;
+import closure_0 from "prototype" /* 17111 */;
+import closure_1 from "handleConnectionOpen" /* 4269 */;
+import importDefaultResult from "priv" /* 1401 */;
 
 let closure_2 = {};
 let closure_3 = {};

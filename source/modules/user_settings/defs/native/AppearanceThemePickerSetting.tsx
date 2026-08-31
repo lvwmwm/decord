@@ -1,13 +1,13 @@
-// Module ID: 14794
-// Function ID: 14795
+// Module ID: 14828
+// Function ID: 14829
 // Name: route
-// Dependencies: [1302, 7830, 676, 1367, 589, 11006, 1236, 14790, 14795, 2]
+// Dependencies: [1302, 7852, 676, 589, 11031, 1236, 14824, 14829, 2]
 
-// Module 14794 (route)
+// Module 14828 (route)
+import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useIsMobileVisualRefreshExperimentEnabledDefault from "useIsMobileVisualRefreshExperimentEnabled" /* 1367 */;
-import closure_3 from "handleThemeChange" /* 1302 */;
-import createToggle from "createToggle" /* 11006 */;
+import closure_2 from "handleThemeChange" /* 1302 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 createToggle = {
@@ -17,13 +17,8 @@ createToggle = {
   },
   parent: require("MobileUserSettings").MobileUserSettings.APPEARANCE,
   usePredicate: function useIsSingleThemePickerVisible() {
-    const tmp = useIsMobileVisualRefreshExperimentEnabledDefault("AppearanceThemePickerSetting");
-    const items = [closure_3];
-    let tmp2 = !tmp;
-    if (tmp) {
-      tmp2 = !obj.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
-    }
-    return tmp2;
+    const items = [closure_2];
+    return !initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
   useTrailing: require("useAppearanceSettingTrailing").useAppearanceSettingTrailing,
   screen: createToggle
@@ -31,7 +26,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_THEME_PICKER,
   getComponent() {
-    return require(14795) /* ThemeTypes */.default;
+    return require(14829) /* ThemeTypes */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

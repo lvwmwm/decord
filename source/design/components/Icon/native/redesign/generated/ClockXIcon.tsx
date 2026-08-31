@@ -1,14 +1,14 @@
-// Module ID: 11249
-// Function ID: 11250
+// Module ID: 11278
+// Function ID: 11279
 // Name: ClockXIcon
-// Dependencies: [19, 21, 712, 4165, 11250, 2]
+// Dependencies: [19, 21, 712, 4166, 11279, 2]
 // Exports: ClockXIcon
 
-// Module 11249 (ClockXIcon)
+// Module 11278 (ClockXIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 11250 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 11279 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

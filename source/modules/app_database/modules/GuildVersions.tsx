@@ -1,14 +1,14 @@
-// Module ID: 7345
-// Function ID: 7346
+// Module ID: 7366
+// Function ID: 7367
 // Name: getCommittedVersions
-// Dependencies: [32, 5, 1910, 3, 1957, 1370, 2]
+// Dependencies: [32, 5, 1909, 3, 1956, 1471, 2]
 
-// Module 7345 (getCommittedVersions)
+// Module 7366 (getCommittedVersions)
 import timestampDefault from "timestamp" /* 3 */;
-import itemsDefault from "items" /* 1957 */;
+import itemsDefault from "items" /* 1956 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
 import set from "set" /* 2 */;
 
 let set = arg1;
@@ -79,7 +79,7 @@ prototype["getCommittedVersions"] = function getCommittedVersions() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: null };
+        return { value: "HermesInternal", done: "HermesInternal" };
       }
     } else {
       try {
@@ -209,8 +209,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   } else if ("update" === op) {
     writes = emojis.writes;
   } else {
-    set(1370).assertNever(emojis);
-    const obj = set(1370);
+    set(1471).assertNever(emojis);
+    const obj = set(1471);
   }
   this.updateWith(id, writes);
   const stickers = guild.stickers;
@@ -220,8 +220,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   } else if ("update" === op2) {
     writes2 = stickers.writes;
   } else {
-    set(1370).assertNever(stickers);
-    const obj2 = set(1370);
+    set(1471).assertNever(stickers);
+    const obj2 = set(1471);
   }
   self.updateWith(id, writes2);
   const channels = guild.channels;
@@ -231,8 +231,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   } else if ("update" === op3) {
     writes3 = channels.writes;
   } else {
-    set(1370).assertNever(channels);
-    const obj3 = set(1370);
+    set(1471).assertNever(channels);
+    const obj3 = set(1471);
   }
   self.updateWith(id, writes3);
   const roles = guild.roles;
@@ -242,8 +242,8 @@ prototype["handleGuildCreate"] = function handleGuildCreate(guild) {
   } else if ("update" === op4) {
     writes4 = roles.writes;
   } else {
-    set(1370).assertNever(roles);
-    const obj4 = set(1370);
+    set(1471).assertNever(roles);
+    const obj4 = set(1471);
   }
   self.updateWith(id, writes4);
   self.commit(arg1);

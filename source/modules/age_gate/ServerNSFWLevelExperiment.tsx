@@ -1,12 +1,12 @@
-// Module ID: 1907
-// Function ID: 1908
+// Module ID: 1906
+// Function ID: 1907
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: isServerNSFWLevelEnabled
 
-// Module 1907 (apexExperiment)
+// Module 1906 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

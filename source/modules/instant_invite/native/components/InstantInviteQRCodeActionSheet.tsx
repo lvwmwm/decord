@@ -1,20 +1,20 @@
-// Module ID: 9892
-// Function ID: 9893
+// Module ID: 9915
+// Function ID: 9916
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 1910, 1923, 676, 21, 4446, 712, 5969, 589, 1236, 709, 4162, 5954, 5586, 9893, 4442, 2]
+// Dependencies: [19, 17, 1909, 1922, 676, 21, 4448, 712, 5972, 589, 1236, 709, 4163, 5957, 5589, 9916, 4444, 2]
 // Exports: default
 
-// Module 9892 (InstantInviteQRCodeActionSheet)
+// Module 9915 (InstantInviteQRCodeActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5969 */;
-import frozenDefault from "frozen" /* 9893 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 5972 */;
+import frozenDefault from "frozen" /* 9916 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ InstantInviteSources: error, RelationshipTypes: closure_8 } = ME);
@@ -65,12 +65,12 @@ export default function InstantInviteQRCodeActionSheet(location) {
       if (null != store.getGuild(channel2.guild_id)) {
         const obj2 = { guild: null, size: null };
         obj2[0] = obj7.getGuild(channel2.guild_id);
-        obj2[1] = tmp6(5969).GuildIconSizes.LARGE;
+        obj2[1] = tmp6(5972).GuildIconSizes.LARGE;
         tmp13 = callback(GuildIconSizesDefault, obj2);
         const tmp16 = GuildIconSizesDefault;
       }
     }
-    presentFriendRequestAcceptedToast = tmp6(4162).presentFriendRequestAcceptedToast;
+    presentFriendRequestAcceptedToast = tmp6(4163).presentFriendRequestAcceptedToast;
     const items1 = [presentFriendRequestAcceptedToast];
     const effect = React.useEffect(() => {
       function handleRelationshipAdd(relationship) {
@@ -87,7 +87,7 @@ export default function InstantInviteQRCodeActionSheet(location) {
     const obj3 = { header: null, children: null };
     const obj4 = { title: null };
     obj4[0] = stringResult;
-    obj3[0] = callback(tmp6(5586).BottomSheetTitleHeader, obj4);
+    obj3[0] = callback(tmp6(5589).BottomSheetTitleHeader, obj4);
     const obj5 = { style: null, children: null };
     obj5[0] = tmp.container;
     const obj6 = { text: null, size: 240, style: null, accessibilityLabel: null };
@@ -117,12 +117,12 @@ export default function InstantInviteQRCodeActionSheet(location) {
     if (tmp19Result) {
       const obj10 = { variant: "text-md/normal", children: null };
       obj10[1] = tmp12.visible;
-      tmp19Result = tmp19(tmp6(4442).Text, obj10);
+      tmp19Result = tmp19(tmp6(4444).Text, obj10);
     }
     items3[1] = tmp19Result;
     obj5[1] = items3;
     obj3[1] = closure_10(View, obj5);
-    return callback(tmp6(5954).ActionSheet, obj3);
+    return callback(tmp6(5957).ActionSheet, obj3);
   }
   tmp12 = null;
   if (_location === constants.ADD_FRIENDS_MODAL) {

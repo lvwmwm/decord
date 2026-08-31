@@ -1,10 +1,10 @@
-// Module ID: 13546
-// Function ID: 13547
+// Module ID: 13580
+// Function ID: 13581
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 13545, 6202, 7711, 1236, 13547, 5973, 2]
+// Dependencies: [19, 21, 13579, 6205, 7732, 1236, 13581, 5976, 2]
 // Exports: default
 
-// Module 13546 (ActivateDeviceModal)
+// Module 13580 (ActivateDeviceModal)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -43,5 +43,5 @@ export default function ActivateDeviceModal(userCode) {
   let obj = { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null };
   let intl = userCode(1236).intl;
   obj[2] = intl.string(userCode(1236).t["13/7kX"]);
-  return jsx(userCode(5973).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null });
+  return jsx(userCode(5976).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null });
 };

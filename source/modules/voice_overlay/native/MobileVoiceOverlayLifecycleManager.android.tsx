@@ -1,23 +1,23 @@
-// Module ID: 14115
-// Function ID: 14116
+// Module ID: 14149
+// Function ID: 14150
 // Name: importDefaultResult1
-// Dependencies: [1391, 1983, 1910, 4497, 4090, 4520, 4099, 5328, 1923, 4465, 10001, 676, 14116, 14117, 14118, 14119, 7711, 13374, 14120, 14121, 8691, 1236, 14122, 10012, 7448, 4640, 5350, 698, 4666, 4628, 2]
+// Dependencies: [1387, 1982, 1909, 4499, 4091, 4522, 4100, 5331, 1922, 4467, 10024, 676, 14150, 14151, 14152, 14153, 7732, 13408, 14154, 14155, 8713, 1236, 14156, 10035, 7469, 4642, 5353, 698, 4668, 4630, 2]
 
-// Module 14115 (importDefaultResult1)
-import initializeDefault from "initialize" /* 4628 */;
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1983 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import importDefaultResult from "_detectH265HardwareDecode" /* 4497 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4090 */;
-import importDefaultResult1 from "createRTCConnection" /* 4520 */;
-import closure_9 from "markAllUserIdListsStale" /* 4099 */;
-import closure_10 from "anyoneHasFlagInContext" /* 5328 */;
-import closure_11 from "mergeGuildAvatar" /* 1923 */;
-import importDefaultResult2 from "updateVoiceState" /* 4465 */;
-import closure_13 from "getUserAgnosticState" /* 10001 */;
+// Module 14149 (importDefaultResult1)
+import initializeDefault from "initialize" /* 4630 */;
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import importDefaultResult from "_detectH265HardwareDecode" /* 4499 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
+import importDefaultResult1 from "createRTCConnection" /* 4522 */;
+import closure_9 from "markAllUserIdListsStale" /* 4100 */;
+import closure_10 from "anyoneHasFlagInContext" /* 5331 */;
+import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import importDefaultResult2 from "updateVoiceState" /* 4467 */;
+import closure_13 from "getUserAgnosticState" /* 10024 */;
 import ME from "ME" /* 676 */;
-import registerAsset from "registerAsset" /* 14116 */;
+import registerAsset from "registerAsset" /* 14150 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6, intl as intl7, intl as intl8, intl as intl9, intl as intl10, intl as intl11 } from "getSystemLocale" /* 1236 */;
 
 const require = arg1;

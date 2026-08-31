@@ -1,10 +1,10 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 17480
+// Function ID: 17481
 // Name: promise
-// Dependencies: [1391, 17443, 6154, 10024, 2]
+// Dependencies: [1387, 17476, 6157, 10047, 2]
 
-// Module 17447 (promise)
-import closure_3 from "ensureGuildLoaded" /* 1391 */;
+// Module 17480 (promise)
+import closure_3 from "ensureGuildLoaded" /* 1387 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/headless_tasks/android/ToggleSelfMute.tsx");

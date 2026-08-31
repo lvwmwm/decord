@@ -1,11 +1,11 @@
-// Module ID: 4515
-// Function ID: 4516
+// Module ID: 4517
+// Function ID: 4518
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 
-// Module 4515 (apexExperiment)
+// Module 4517 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { enableDistributedClips: true };

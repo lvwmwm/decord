@@ -1,12 +1,12 @@
-// Module ID: 6132
-// Function ID: 6133
+// Module ID: 6135
+// Function ID: 6136
 // Name: apexExperiment
-// Dependencies: [1472, 2]
+// Dependencies: [1468, 2]
 // Exports: useBulkBanPubSubExperimentConfig
 
-// Module 6132 (apexExperiment)
+// Module 6135 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null };
 obj[1] = { usePubSub: true };

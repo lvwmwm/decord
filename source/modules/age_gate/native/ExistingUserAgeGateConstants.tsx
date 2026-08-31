@@ -1,9 +1,9 @@
-// Module ID: 16815
-// Function ID: 16816
+// Module ID: 16848
+// Function ID: 16849
 // Name: ExistingUserAgeGateScreens
 // Dependencies: [2]
 
-// Module 16815 (ExistingUserAgeGateScreens)
+// Module 16848 (ExistingUserAgeGateScreens)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/age_gate/native/ExistingUserAgeGateConstants.tsx");

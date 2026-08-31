@@ -1,13 +1,13 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8065
+// Function ID: 8066
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 17, 4438, 21, 647, 1435, 500, 8044, 8048, 5458, 2]
+// Dependencies: [19, 17, 4440, 21, 647, 1431, 500, 8066, 8070, 5461, 2]
 // Exports: default
 
-// Module 8043 (CutoutableAvatarDecoration)
+// Module 8065 (CutoutableAvatarDecoration)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

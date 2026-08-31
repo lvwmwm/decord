@@ -1,11 +1,11 @@
-// Module ID: 7272
-// Function ID: 7273
+// Module ID: 7293
+// Function ID: 7294
 // Name: fromServer
-// Dependencies: [7265, 2]
+// Dependencies: [7286, 2]
 
-// Module 7272 (fromServer)
+// Module 7293 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7265 */;
+import ShopBlockType from "ShopBlockType" /* 7286 */;
 
 let prototype;
 prototype = function ImmersiveBannerBlockRecord(end_time) {

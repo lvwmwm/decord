@@ -1,12 +1,12 @@
-// Module ID: 17253
-// Function ID: 17254
+// Module ID: 17286
+// Function ID: 17287
 // Name: pushTierEditScene
-// Dependencies: [17244, 676, 9667, 2]
+// Dependencies: [17277, 676, 9689, 2]
 // Exports: pushTierEditScene, pushTierTemplateSelectionScene
 
-// Module 17253 (pushTierEditScene)
-import _modDef9667 from "module_9667" /* 9667 */;
-import closure_2 from "usePriceTiers" /* 17244 */;
+// Module 17286 (pushTierEditScene)
+import _modDef9689 from "module_9689" /* 9689 */;
+import closure_2 from "usePriceTiers" /* 17277 */;
 import { GuildSettingsSections } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/native/GuildRoleSettingsActionCreators.tsx");
@@ -14,9 +14,9 @@ const result = require("set").fileFinishedImporting("modules/guild_role_subscrip
 export const pushTierEditScene = function pushTierEditScene(arr, arg1) {
   closure_2.resetImperatively();
   arr.push(GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_EDIT, arg1);
-  _modDef9667.setSection(GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_EDIT);
+  _modDef9689.setSection(GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_EDIT);
 };
 export const pushTierTemplateSelectionScene = function pushTierTemplateSelectionScene(arr, arg1) {
   arr.push(GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_TEMPLATE_SELECTION, arg1);
-  _modDef9667.setSection(GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_TEMPLATE_SELECTION);
+  _modDef9689.setSection(GuildSettingsSections.ROLE_SUBSCRIPTIONS_TIER_TEMPLATE_SELECTION);
 };

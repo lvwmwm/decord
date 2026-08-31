@@ -1,13 +1,13 @@
-// Module ID: 1917
-// Function ID: 1918
+// Module ID: 1916
+// Function ID: 1917
 // Name: isBlockedDomain
-// Dependencies: [1918, 2, 1921]
+// Dependencies: [1917, 2, 1920]
 // Exports: consumeLogs, getExperimentCacher, getHttpClientAPI, isBlockedDomain, isUnsupportedBrowser, startFetchingBlockedDomains
 
-// Module 1917 (isBlockedDomain)
+// Module 1916 (isBlockedDomain)
 import set from "set" /* 2 */;
-import LIBDISCORE_JSI from "LIBDISCORE_JSI" /* 1918 */;
-import _initLibdiscore from "_initLibdiscore" /* 1921 */;
+import LIBDISCORE_JSI from "LIBDISCORE_JSI" /* 1917 */;
+import _initLibdiscore from "_initLibdiscore" /* 1920 */;
 
 let result = set.fileFinishedImporting("../discord_common/js/packages/libdiscore/js_shim/js/shim.native.tsx");
 

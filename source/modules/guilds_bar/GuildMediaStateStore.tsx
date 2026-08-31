@@ -1,28 +1,28 @@
-// Module ID: 13292
-// Function ID: 13293
+// Module ID: 13326
+// Function ID: 13327
 // Name: markAllStale
-// Dependencies: [1390, 1212, 7218, 1396, 1395, 4468, 1218, 1391, 1910, 4090, 4099, 1982, 4667, 4465, 676, 13293, 692, 9570, 13294, 11, 5325, 4080, 8090, 589, 643, 709, 2]
+// Dependencies: [1386, 1212, 7239, 1392, 1391, 4470, 1218, 1387, 1909, 4091, 4100, 1981, 4669, 4467, 676, 13327, 692, 9592, 13328, 11, 5328, 4081, 8112, 589, 643, 709, 2]
 
-// Module 13292 (markAllStale)
+// Module 13326 (markAllStale)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import shallowEqualDefault from "shallowEqual" /* 643 */;
 import set from "set" /* 692 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "participantFromServer" /* 1390 */;
+import closure_3 from "participantFromServer" /* 1386 */;
 import closure_4 from "initialize" /* 1212 */;
-import closure_5 from "scheduledEventSort" /* 7218 */;
-import closure_6 from "handleStageInstanceCreateOrUpdate" /* 1396 */;
-import { isVoiceChannel } from "createChannelRecord" /* 1395 */;
-import closure_8 from "reset" /* 4468 */;
+import closure_5 from "scheduledEventSort" /* 7239 */;
+import closure_6 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
+import { isVoiceChannel } from "createChannelRecord" /* 1391 */;
+import closure_8 from "reset" /* 4470 */;
 import closure_9 from "fetchFingerprint" /* 1218 */;
-import closure_10 from "ensureGuildLoaded" /* 1391 */;
-import closure_11 from "createGuildRecordFromRust" /* 1910 */;
-import closure_12 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_13 from "markAllUserIdListsStale" /* 4099 */;
-import closure_14 from "handleConnectionOpen" /* 1982 */;
-import closure_15 from "updateUserGuildSettingsInternal" /* 4667 */;
-import closure_16 from "updateVoiceState" /* 4465 */;
+import closure_10 from "ensureGuildLoaded" /* 1387 */;
+import closure_11 from "createGuildRecordFromRust" /* 1909 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_13 from "markAllUserIdListsStale" /* 4100 */;
+import closure_14 from "handleConnectionOpen" /* 1981 */;
+import closure_15 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_16 from "updateVoiceState" /* 4467 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -123,7 +123,7 @@ function computeGuildMediaState(closure_0) {
       }
       continue;
     }
-    obj = { skipMutedVcs: callback(13293).getIsDontBadgeMutedVcsEnabled("GuildMediaStateStore"), currentUserId: id.getId(), selectedVoiceChannelId: voiceChannelId, selectedVoiceGuildId: null, selectedVoiceChannelHasVideo: null, isSelectedVoiceChannelStage: null, blockedOrIgnoredUserIds: null, streamChannelIdsByGuild: null };
+    obj = { skipMutedVcs: callback(13327).getIsDontBadgeMutedVcsEnabled("GuildMediaStateStore"), currentUserId: id.getId(), selectedVoiceChannelId: voiceChannelId, selectedVoiceGuildId: null, selectedVoiceChannelHasVideo: null, isSelectedVoiceChannelStage: null, blockedOrIgnoredUserIds: null, streamChannelIdsByGuild: null };
     let guild_id;
     if (channel != null) {
       guild_id = channel.guild_id;
@@ -159,7 +159,7 @@ function computeGuildMediaState(closure_0) {
     obj[1] = tmp2.selectedVoiceChannelHasVideo;
     obj[2] = null != activeStreamForUser.getActiveStreamForUser(tmp2.currentUserId, closure_0);
     obj[3] = tmp2.isSelectedVoiceChannelStage;
-    const guildActiveEvent = _require(9570).getGuildActiveEvent(closure_0);
+    const guildActiveEvent = _require(9592).getGuildActiveEvent(closure_0);
     let channel_id;
     if (guildActiveEvent != null) {
       channel_id = guildActiveEvent.channel_id;
@@ -248,24 +248,24 @@ function computeGuildMediaState(closure_0) {
           const basicChannel = store.getBasicChannel(arg0);
           let tmp2 = null != basicChannel;
           if (tmp2) {
-            tmp2 = lib(5325)(basicChannel, closure_12);
+            tmp2 = lib(5328)(basicChannel, closure_12);
           }
           return tmp2;
         });
-        let obj5 = _require(4080);
+        let obj5 = _require(4081);
         let first = found[0];
         let _location;
         if (first != null) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = obj5.getEmbeddedActivityLocationChannelId(_location);
-        let tmp34Result = tmp34(8090);
+        let tmp34Result = tmp34(8112);
         let tmp38 = store;
         if (tmp34Result.isActivitiesInTextEnabled(store.getChannel(embeddedActivityLocationChannelId))) {
           let someResult2 = found.length > 0;
         } else {
           someResult2 = found.some((location) => {
-            const channel = store.getChannel(callback(4080).getEmbeddedActivityLocationChannelId(location.location));
+            const channel = store.getChannel(callback(4081).getEmbeddedActivityLocationChannelId(location.location));
             let tmp2 = null != channel;
             if (tmp2) {
               tmp2 = callback2(channel.type);
@@ -278,7 +278,7 @@ function computeGuildMediaState(closure_0) {
         obj[1] = flag;
         obj[2] = someResult;
         obj[3] = someResult1;
-        tmp34Result = tmp34(9570);
+        tmp34Result = tmp34(9592);
         obj[4] = null != tmp34Result.getGuildActiveEvent(arg0);
         obj[5] = someResult2;
         return obj;

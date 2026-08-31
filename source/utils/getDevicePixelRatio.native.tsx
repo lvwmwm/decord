@@ -1,10 +1,10 @@
-// Module ID: 1896
-// Function ID: 1897
+// Module ID: 1895
+// Function ID: 1896
 // Name: getDevicePixelRatio
 // Dependencies: [17, 2]
 // Exports: default
 
-// Module 1896 (getDevicePixelRatio)
+// Module 1895 (getDevicePixelRatio)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

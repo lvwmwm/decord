@@ -1,18 +1,18 @@
-// Module ID: 10530
-// Function ID: 10531
+// Module ID: 10554
+// Function ID: 10555
 // Name: items
-// Dependencies: [1997, 6040, 676, 10531, 1236, 3340, 2]
+// Dependencies: [1996, 6043, 676, 10555, 1236, 3341, 2]
 // Exports: getCheckoutDisclaimerMessageForApplication, getFinePrintMessageForApplication, getGiftLinkAccountDescriptionForApplication, getMobileFinePrintMessageForApplication, getNotSupportedSentence, getRedeemPurchaseDescriptionForApplication
 
-// Module 10530 (items)
+// Module 10554 (items)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3340 */;
-import closure_3 from "_getSystemLocale" /* 1997 */;
-import closure_4 from "handleUserSettingsStoreUpdate" /* 6040 */;
+import messagesProxyDefault from "messagesProxy" /* 3341 */;
+import closure_3 from "_getSystemLocale" /* 1996 */;
+import closure_4 from "handleUserSettingsStoreUpdate" /* 6043 */;
 import { MarketingURLs } from "ME" /* 676 */;
 
 require = arg1;
-let closure_6 = { [arg1(10531).StorefrontPlatform.DESKTOP]: "PC", [arg1(10531).StorefrontPlatform.XBOX]: "Xbox", [arg1(10531).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(10531).StorefrontPlatform.SWITCH]: "Switch", [arg1(10531).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(10531).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(10531).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
+let closure_6 = { [arg1(10555).StorefrontPlatform.DESKTOP]: "PC", [arg1(10555).StorefrontPlatform.XBOX]: "Xbox", [arg1(10555).StorefrontPlatform.PLAYSTATION]: "PlayStation", [arg1(10555).StorefrontPlatform.SWITCH]: "Switch", [arg1(10555).StorefrontPlatform.APPLE_ARCADE]: "Apple Arcade", [arg1(10555).StorefrontPlatform.NETFLIX]: "Netflix", [arg1(10555).StorefrontPlatform.AMAZON_KIDS_PLUS]: "Amazon Kids+" };
 let items = [require("StorefrontPlatform").StorefrontPlatform.PLAYSTATION];
 const result = require("set").fileFinishedImporting("modules/slayer_storefront/utils/SlayerStorefrontDisclaimerUtils.tsx");
 
@@ -91,7 +91,7 @@ export const getFinePrintMessageForApplication = function getFinePrintMessageFor
       const listFormat = new Intl.ListFormat(closure_3.locale);
       obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
       obj[1] = arr.length;
-      str2 = intl3.formatToPlainString(tmp4(3340)["5h8p5P"], obj);
+      str2 = intl3.formatToPlainString(tmp4(3341)["5h8p5P"], obj);
     }
     obj1 = { platforms_info: null };
     obj1[0] = str2;
@@ -136,13 +136,13 @@ export const getMobileFinePrintMessageForApplication = function getMobileFinePri
       const listFormat = new Intl.ListFormat(closure_3.locale);
       obj[0] = listFormat.format(arr2.map((arg0) => table[arg0]));
       obj[1] = arr2.length;
-      str2 = intl3.formatToPlainString(tmp3(3340)["5h8p5P"], obj);
+      str2 = intl3.formatToPlainString(tmp3(3341)["5h8p5P"], obj);
     }
     obj = { platforms_info: null };
     obj[0] = str2;
     items = [format(tmp4.Q0dHYO, obj), ];
     const intl2 = tmp(1236).intl;
-    items[1] = intl2.format(tmp3(3340).Ufm9XX, obj);
+    items[1] = intl2.format(tmp3(3341).Ufm9XX, obj);
     let items1 = items;
   } else {
     items1 = [format(tmp4.Ufm9XX, obj)];
@@ -198,7 +198,7 @@ export const getGiftLinkAccountDescriptionForApplication = function getGiftLinkA
     const listFormat = new Intl.ListFormat(closure_3.locale);
     obj[0] = listFormat.format(arr.map((arg0) => table[arg0]));
     obj[1] = arr.length;
-    str = intl2.formatToPlainString(tmp4(3340)["5h8p5P"], obj);
+    str = intl2.formatToPlainString(tmp4(3341)["5h8p5P"], obj);
   }
   obj[1] = str;
   return intl.format(vyAtfo, obj);

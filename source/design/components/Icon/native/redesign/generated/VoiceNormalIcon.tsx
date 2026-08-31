@@ -1,14 +1,14 @@
-// Module ID: 5015
-// Function ID: 5016
+// Module ID: 5018
+// Function ID: 5019
 // Name: VoiceNormalIcon
-// Dependencies: [19, 21, 712, 4165, 4955, 2]
+// Dependencies: [19, 21, 712, 4166, 4958, 2]
 // Exports: VoiceNormalIcon
 
-// Module 5015 (VoiceNormalIcon)
+// Module 5018 (VoiceNormalIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 4955 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 4958 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

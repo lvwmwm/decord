@@ -1,10 +1,10 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9701
+// Function ID: 9702
 // Name: guildEventDetailsParser
-// Dependencies: [4436, 2]
+// Dependencies: [4438, 2]
 
-// Module 9679 (guildEventDetailsParser)
-import importDefaultResult from "get defaultRules" /* 4436 */;
+// Module 9701 (guildEventDetailsParser)
+import importDefaultResult from "get defaultRules" /* 4438 */;
 
 const reactParserForResult = importDefaultResult.reactParserFor(importDefaultResult.guildEventLocationRules);
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/guildEventDetailsParser.native.tsx");

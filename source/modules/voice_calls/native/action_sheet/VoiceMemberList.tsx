@@ -1,29 +1,29 @@
-// Module ID: 13371
-// Function ID: 13372
+// Module ID: 13405
+// Function ID: 13406
 // Name: ItemSeparator
-// Dependencies: [32, 5, 19, 17, 1390, 1931, 4468, 4090, 1923, 4521, 676, 1301, 5588, 505, 21, 4446, 13367, 9966, 589, 8309, 13056, 1236, 10052, 4300, 9847, 4442, 9107, 5918, 1892, 5320, 9389, 4693, 13372, 13373, 1494, 13380, 12, 4413, 8836, 4173, 13381, 7742, 2]
+// Dependencies: [32, 5, 19, 17, 1386, 1930, 4470, 4091, 1922, 4523, 676, 1301, 5591, 505, 21, 4448, 13401, 9989, 589, 8331, 13090, 1236, 10075, 4302, 9870, 4444, 9130, 5921, 1891, 5323, 9411, 4695, 13406, 13407, 1493, 13414, 12, 4415, 8859, 4174, 13415, 7763, 2]
 
-// Module 13371 (ItemSeparator)
-import Text from "Text" /* 4442 */;
-import Form from "Form" /* 8309 */;
-import registerAssetDefault from "registerAsset" /* 10052 */;
-import _modDef13367 from "module_13367" /* 13367 */;
+// Module 13405 (ItemSeparator)
+import Text from "Text" /* 4444 */;
+import Form from "Form" /* 8331 */;
+import registerAssetDefault from "registerAsset" /* 10075 */;
+import _modDef13401 from "module_13401" /* 13401 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "participantFromServer" /* 1390 */;
-import closure_10 from "createdAt" /* 1931 */;
-import closure_11 from "reset" /* 4468 */;
-import closure_12 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_13 from "mergeGuildAvatar" /* 1923 */;
-import closure_14 from "getVoiceStatesForGuild" /* 4521 */;
+import closure_9 from "participantFromServer" /* 1386 */;
+import closure_10 from "createdAt" /* 1930 */;
+import closure_11 from "reset" /* 4470 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_13 from "mergeGuildAvatar" /* 1922 */;
+import closure_14 from "getVoiceStatesForGuild" /* 4523 */;
 import ME from "ME" /* 676 */;
 import { FORM_ROW_VERTICAL_PADDING } from "semanticColor" /* 1301 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5588 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5591 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function ItemSeparator() {
@@ -89,7 +89,7 @@ function VoiceSectionRow(arg0) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } else {
             try {
@@ -189,7 +189,7 @@ function VoiceSectionRow(arg0) {
 ({ AnalyticsPages: closure_15, InstantInviteSources: closure_16, Permissions: closure_17 } = ME);
 ({ jsx: closure_21, jsxs: closure_22, Fragment: closure_23 } = jsxProd);
 let closure_24 = createCacheKey.createStyles({ container: { flex: 1, flexShrink: 1 }, sectionContainer: { paddingTop: 16, paddingHorizontal: 16 }, sectionTitle: { lineHeight: 16 }, voiceChannelContainer: { overflow: "hidden", flexGrow: 1, flexShrink: 1, minHeight: 1 }, headerFormDivider: { marginLeft: 0 }, rowFormDivider: { marginHorizontal: 16 } });
-let closure_25 = importAllResult.memo((channel) => callback2(_modDef13367, { channel: channel.channel }));
+let closure_25 = importAllResult.memo((channel) => callback2(_modDef13401, { channel: channel.channel }));
 let closure_26 = importAllResult.memo((channel) => {
   channel = channel.channel;
   channel(589);
@@ -205,8 +205,8 @@ let closure_26 = importAllResult.memo((channel) => {
       const intl = tmp4(1236).intl;
       obj[0] = intl.string(tmp4(1236).t["6Qgrev"]);
       obj[2] = registerAssetDefault;
-      obj[3] = tmp4(13056).CircularIconButton.Sizes.MEDIUM_32;
-      obj[0] = callback2(tmp4(13056).CircularIconButton, obj);
+      obj[3] = tmp4(13090).CircularIconButton.Sizes.MEDIUM_32;
+      obj[0] = callback2(tmp4(13090).CircularIconButton, obj);
       const intl2 = tmp4(1236).intl;
       obj[1] = intl2.string(tmp4(1236).t["6Qgrev"]);
       obj[2] = function onPress() {
@@ -220,7 +220,7 @@ let closure_26 = importAllResult.memo((channel) => {
           const result = tmp2Result.showInstantInviteActionSheet(tmp, obj);
         }
       };
-      items[1] = callback2(tmp4(8309).FormRow, obj);
+      items[1] = callback2(tmp4(8331).FormRow, obj);
       obj[0] = items;
       tmp7 = callback3(importAllResult.Fragment, obj);
     }

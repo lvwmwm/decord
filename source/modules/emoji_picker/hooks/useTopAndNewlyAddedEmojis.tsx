@@ -1,12 +1,12 @@
-// Module ID: 9045
-// Function ID: 9046
+// Module ID: 9068
+// Function ID: 9069
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [5366, 1926, 647, 2]
+// Dependencies: [5369, 1925, 647, 2]
 // Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 9045 (useTopAndNewlyAddedEmojis)
-import closure_2 from "getEmojiToGroupId" /* 5366 */;
-import { EmojiIntention } from "set" /* 1926 */;
+// Module 9068 (useTopAndNewlyAddedEmojis)
+import closure_2 from "getEmojiToGroupId" /* 5369 */;
+import { EmojiIntention } from "set" /* 1925 */;
 
 const require = arg1;
 let closure_4 = [];

@@ -1,13 +1,13 @@
-// Module ID: 10776
-// Function ID: 10777
+// Module ID: 10800
+// Function ID: 10801
 // Name: usePreviewCollectibleProduct
-// Dependencies: [32, 19, 7239, 1949, 7240, 7241, 8439, 1951, 8020, 2]
+// Dependencies: [32, 19, 7260, 1948, 7261, 7262, 8461, 1950, 8042, 2]
 // Exports: usePreviewCollectibleProduct
 
-// Module 10776 (usePreviewCollectibleProduct)
+// Module 10800 (usePreviewCollectibleProduct)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7239 */;
+import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7260 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/usePreviewCollectiblesProduct.tsx");
@@ -16,7 +16,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
   const _require = product;
   dependencyMap = arg1;
   closure_2 = arg2;
-  const shopProductItems = _require(8439).useShopProductItems(product);
+  const shopProductItems = _require(8461).useShopProductItems(product);
   const firstProfileEffect = shopProductItems.firstProfileEffect;
   const firstAvatarDecoration = shopProductItems.firstAvatarDecoration;
   const firstNameplate = shopProductItems.firstNameplate;
@@ -80,7 +80,7 @@ export const usePreviewCollectibleProduct = function usePreviewCollectibleProduc
       }
       return () => {
         if (closure_1) {
-          closure_1_0(closure_1_1[8]).setPendingChanges({ avatarDecoration: "r", profileEffect: "accessibilityRole", nameplate: "Button", profileFrame: "limit" });
+          closure_1_0(closure_1_1[8]).setPendingChanges({ avatarDecoration: "Array", profileEffect: "HermesInternal", nameplate: "r", profileFrame: "bottom" });
           const obj = closure_1_0(closure_1_1[8]);
         }
       };

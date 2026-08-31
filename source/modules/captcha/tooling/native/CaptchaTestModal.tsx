@@ -1,18 +1,18 @@
-// Module ID: 15216
-// Function ID: 15217
+// Module ID: 15249
+// Function ID: 15250
 // Name: CaptchaTestScreen
-// Dependencies: [5, 32, 19, 17, 21, 4446, 712, 15217, 15218, 4163, 4442, 1297, 5518, 4893, 4689, 5460, 5973, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4448, 712, 15250, 15251, 4164, 4444, 1297, 5521, 4896, 4691, 5463, 5976, 1236, 2]
 // Exports: default
 
-// Module 15216 (CaptchaTestScreen)
+// Module 15249 (CaptchaTestScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import { HCAPTCHA_DIFFICULTY_OPTIONS as prop, CAPTCHA_DECIDER_TYPE_OPTIONS as prop1 } from "found" /* 15217 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import { HCAPTCHA_DIFFICULTY_OPTIONS as prop, CAPTCHA_DECIDER_TYPE_OPTIONS as prop1 } from "found" /* 15250 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -38,7 +38,7 @@ function CaptchaTestScreen(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -231,5 +231,5 @@ export default function CaptchaTestModal() {
   let obj = { screens: memo, initialRouteName: constants.TEST_CAPTCHA, headerBackTitle: null };
   const intl = _require(1236).intl;
   obj[2] = intl.string(_require(1236).t["13/7kX"]);
-  return callback(_require(5973).Navigator, obj);
+  return callback(_require(5976).Navigator, obj);
 };

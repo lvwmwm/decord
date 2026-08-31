@@ -1,14 +1,14 @@
-// Module ID: 7912
-// Function ID: 7913
+// Module ID: 7934
+// Function ID: 7935
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1923, 7144, 1925, 589, 7913, 7914, 7088, 1947, 2]
+// Dependencies: [19, 1922, 7165, 1924, 589, 7935, 7936, 7109, 1946, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 7912 (useMaybeFetchReferralsRemaining)
+// Module 7934 (useMaybeFetchReferralsRemaining)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
-import closure_5 from "emitChanges" /* 7144 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "emitChanges" /* 7165 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 const require = arg1;
 ({ PremiumTypes: closure_6, FractionalPremiumStates: error } = GuildFeatures);
@@ -23,18 +23,18 @@ export const useMaybeFetchReferralsRemaining = function useMaybeFetchReferralsRe
   const stateFromStores = flag(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = flag(589);
   let tmp = flag;
-  const hasDiscountApplied = flag(7913).useHasDiscountApplied();
-  const obj2 = flag(7913);
-  const hasActiveTrial = flag(7914).useHasActiveTrial();
-  const tmp6 = fetched(7088)();
+  const hasDiscountApplied = flag(7935).useHasDiscountApplied();
+  const obj2 = flag(7935);
+  const hasActiveTrial = flag(7936).useHasActiveTrial();
+  const tmp6 = fetched(7109)();
   let verified;
   if (stateFromStores != null) {
     verified = stateFromStores.verified;
   }
   fetched = true === verified;
   if (fetched) {
-    fetched = tmp(1947).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
-    const tmpResult = tmp(1947);
+    fetched = tmp(1946).isPremiumExactly(stateFromStores, TIER_2.TIER_2);
+    const tmpResult = tmp(1946);
   }
   if (fetched) {
     fetched = tmp6.fetched;

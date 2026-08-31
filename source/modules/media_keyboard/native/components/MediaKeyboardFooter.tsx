@@ -1,18 +1,18 @@
-// Module ID: 10385
-// Function ID: 10386
+// Module ID: 10409
+// Function ID: 10410
 // Name: FOOTER_HEIGHT
-// Dependencies: [19, 17, 21, 4446, 712, 10374, 4442, 1236, 4893, 10386, 2]
+// Dependencies: [19, 17, 21, 4448, 712, 10398, 4444, 1236, 4896, 10410, 2]
 
-// Module 10385 (FOOTER_HEIGHT)
+// Module 10409 (FOOTER_HEIGHT)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4442 */;
-import Button from "Button" /* 4893 */;
-import _modDef10374 from "module_10374" /* 10374 */;
-import registerAssetDefault from "registerAsset" /* 10386 */;
+import Text from "Text" /* 4444 */;
+import Button from "Button" /* 4896 */;
+import _modDef10398 from "module_10398" /* 10398 */;
+import registerAssetDefault from "registerAsset" /* 10410 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -30,7 +30,7 @@ let obj2 = { color: ThemesDefault.colors.BACKGROUND_SURFACE_HIGHEST, margin: The
 const memoResult = importAllResult.memo(function MediaKeyboardFooter(arg0) {
   ({ disabled, onViewAll } = arg0);
   const tmp = callback3();
-  let obj = _modDef10374;
+  let obj = _modDef10398;
   if (obj.useHasReachedEnd()) {
     obj = { style: null, children: null };
     obj[0] = tmp.container;

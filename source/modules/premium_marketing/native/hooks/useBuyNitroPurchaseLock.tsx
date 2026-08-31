@@ -1,11 +1,11 @@
-// Module ID: 12950
-// Function ID: 12951
+// Module ID: 12984
+// Function ID: 12985
 // Name: useIsBuyNitroPurchaseBlocked
-// Dependencies: [6049, 644, 589, 2]
+// Dependencies: [6052, 644, 589, 2]
 // Exports: useIsBuyNitroPurchaseBlocked
 
-// Module 12950 (useIsBuyNitroPurchaseBlocked)
-import closure_2 from "updateProduct" /* 6049 */;
+// Module 12984 (useIsBuyNitroPurchaseBlocked)
+import closure_2 from "updateProduct" /* 6052 */;
 import keys from "keys" /* 644 */;
 
 const require = arg1;

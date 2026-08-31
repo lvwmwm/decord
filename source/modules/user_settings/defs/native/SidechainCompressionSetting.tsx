@@ -1,15 +1,15 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 14821
+// Function ID: 14822
 // Name: toggle
-// Dependencies: [4497, 7830, 4510, 589, 11006, 1236, 9720, 2]
+// Dependencies: [4499, 7852, 4512, 589, 11031, 1236, 9742, 2]
 
-// Module 14787 (toggle)
+// Module 14821 (toggle)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9720 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
-import { Features } from "DesktopSources" /* 4510 */;
-import createToggle from "createToggle" /* 11006 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9742 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
+import { Features } from "DesktopSources" /* 4512 */;
+import createToggle from "createToggle" /* 11031 */;
 
 require = arg1;
 createToggle = {

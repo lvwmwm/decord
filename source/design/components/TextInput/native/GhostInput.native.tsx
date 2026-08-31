@@ -1,19 +1,19 @@
-// Module ID: 13746
-// Function ID: 13747
+// Module ID: 13780
+// Function ID: 13781
 // Name: GhostInput
-// Dependencies: [109, 19, 21, 4446, 4442, 712, 6194, 4175, 6188, 7653, 6197, 2]
+// Dependencies: [109, 19, 21, 4448, 4444, 712, 6197, 4176, 6191, 7674, 6200, 2]
 // Exports: GhostInput
 
-// Module 13746 (GhostInput)
+// Module 13780 (GhostInput)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4442 */;
-import useInputStyles from "useInputStyles" /* 6194 */;
-import useKeyboardBlurring from "useKeyboardBlurring" /* 6197 */;
-import Input from "Input" /* 7653 */;
+import Text from "Text" /* 4444 */;
+import useInputStyles from "useInputStyles" /* 6197 */;
+import useKeyboardBlurring from "useKeyboardBlurring" /* 6200 */;
+import Input from "Input" /* 7674 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 let closure_3 = ["labelId"];
@@ -47,9 +47,9 @@ export const GhostInput = function GhostInput(size) {
   const tmp4 = callback2(size.size, size.status);
   const isCentered = size.isCentered;
   const autoFocus = size.autoFocus;
-  let tmpResult = tmp(4175);
+  let tmpResult = tmp(4176);
   const fieldLabelA11yNative = tmpResult.useFieldLabelA11yNative(size);
-  tmpResult = tmp(6188);
+  tmpResult = tmp(6191);
   const textField = tmpResult.useTextField(size, undefined);
   obj = {};
   const merged = Object.assign(size);

@@ -1,18 +1,18 @@
-// Module ID: 9479
-// Function ID: 9480
+// Module ID: 9501
+// Function ID: 9502
 // Name: updateSpeaker
-// Dependencies: [4468, 1218, 4497, 5328, 4462, 4467, 4512, 12, 589, 709, 2]
+// Dependencies: [4470, 1218, 4499, 5331, 4464, 4469, 4514, 12, 589, 709, 2]
 
-// Module 9479 (updateSpeaker)
+// Module 9501 (updateSpeaker)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isStreamKey from "isStreamKey" /* 4512 */;
-import closure_4 from "reset" /* 4468 */;
+import isStreamKey from "isStreamKey" /* 4514 */;
+import closure_4 from "reset" /* 4470 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4497 */;
-import closure_7 from "anyoneHasFlagInContext" /* 5328 */;
-import closure_8 from "getParticipants" /* 4462 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4467 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_7 from "anyoneHasFlagInContext" /* 5331 */;
+import closure_8 from "getParticipants" /* 4464 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4469 */;
 import importDefaultResult from "apply" /* 12 */;
 
 require = arg1;

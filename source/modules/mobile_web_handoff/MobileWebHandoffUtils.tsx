@@ -1,9 +1,9 @@
-// Module ID: 6129
-// Function ID: 6130
+// Module ID: 6132
+// Function ID: 6133
 // Name: _createHandoffToken
 // Dependencies: [5, 676, 514, 530, 2]
 
-// Module 6129 (_createHandoffToken)
+// Module 6132 (_createHandoffToken)
 import v1 from "v1" /* 514 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
@@ -27,7 +27,7 @@ function _createHandoffToken() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {

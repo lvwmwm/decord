@@ -1,36 +1,36 @@
-// Module ID: 8880
-// Function ID: 8881
+// Module ID: 8903
+// Function ID: 8904
 // Name: useMobileTenureBadgeImages
-// Dependencies: [1925, 8881, 8882, 8883, 8884, 8885, 8886, 8887, 8888, 8889, 8890, 8891, 8892, 8893, 8894, 8895, 8896, 8897, 8898, 8899, 8900, 8901, 8902, 8903, 8904, 2]
+// Dependencies: [1924, 8904, 8905, 8906, 8907, 8908, 8909, 8910, 8911, 8912, 8913, 8914, 8915, 8916, 8917, 8918, 8919, 8920, 8921, 8922, 8923, 8924, 8925, 8926, 8927, 2]
 // Exports: getMobileTenureBadgeImages, useMobileTenureBadgeImages
 
-// Module 8880 (useMobileTenureBadgeImages)
+// Module 8903 (useMobileTenureBadgeImages)
 import set from "set" /* 2 */;
-import GuildFeatures from "GuildFeatures" /* 1925 */;
-import registerAssetDefault from "registerAsset" /* 8881 */;
-import metadataDefault from "metadata" /* 8882 */;
-import metadataDefault2 from "metadata" /* 8883 */;
-import registerAssetDefault2 from "registerAsset" /* 8884 */;
-import metadataDefault3 from "metadata" /* 8885 */;
-import metadataDefault4 from "metadata" /* 8886 */;
-import registerAssetDefault3 from "registerAsset" /* 8887 */;
-import metadataDefault5 from "metadata" /* 8888 */;
-import metadataDefault6 from "metadata" /* 8889 */;
-import registerAssetDefault4 from "registerAsset" /* 8890 */;
-import metadataDefault7 from "metadata" /* 8891 */;
-import metadataDefault8 from "metadata" /* 8892 */;
-import registerAssetDefault5 from "registerAsset" /* 8893 */;
-import metadataDefault9 from "metadata" /* 8894 */;
-import metadataDefault10 from "metadata" /* 8895 */;
-import registerAssetDefault6 from "registerAsset" /* 8896 */;
-import metadataDefault11 from "metadata" /* 8897 */;
-import metadataDefault12 from "metadata" /* 8898 */;
-import registerAssetDefault7 from "registerAsset" /* 8899 */;
-import metadataDefault13 from "metadata" /* 8900 */;
-import metadataDefault14 from "metadata" /* 8901 */;
-import registerAssetDefault8 from "registerAsset" /* 8902 */;
-import metadataDefault15 from "metadata" /* 8903 */;
-import metadataDefault16 from "metadata" /* 8904 */;
+import GuildFeatures from "GuildFeatures" /* 1924 */;
+import registerAssetDefault from "registerAsset" /* 8904 */;
+import metadataDefault from "metadata" /* 8905 */;
+import metadataDefault2 from "metadata" /* 8906 */;
+import registerAssetDefault2 from "registerAsset" /* 8907 */;
+import metadataDefault3 from "metadata" /* 8908 */;
+import metadataDefault4 from "metadata" /* 8909 */;
+import registerAssetDefault3 from "registerAsset" /* 8910 */;
+import metadataDefault5 from "metadata" /* 8911 */;
+import metadataDefault6 from "metadata" /* 8912 */;
+import registerAssetDefault4 from "registerAsset" /* 8913 */;
+import metadataDefault7 from "metadata" /* 8914 */;
+import metadataDefault8 from "metadata" /* 8915 */;
+import registerAssetDefault5 from "registerAsset" /* 8916 */;
+import metadataDefault9 from "metadata" /* 8917 */;
+import metadataDefault10 from "metadata" /* 8918 */;
+import registerAssetDefault6 from "registerAsset" /* 8919 */;
+import metadataDefault11 from "metadata" /* 8920 */;
+import metadataDefault12 from "metadata" /* 8921 */;
+import registerAssetDefault7 from "registerAsset" /* 8922 */;
+import metadataDefault13 from "metadata" /* 8923 */;
+import metadataDefault14 from "metadata" /* 8924 */;
+import registerAssetDefault8 from "registerAsset" /* 8925 */;
+import metadataDefault15 from "metadata" /* 8926 */;
+import metadataDefault16 from "metadata" /* 8927 */;
 
 const TieredTenureBadge = GuildFeatures.TieredTenureBadge;
 let obj = {};

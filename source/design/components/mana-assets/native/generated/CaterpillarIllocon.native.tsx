@@ -1,14 +1,14 @@
-// Module ID: 6354
-// Function ID: 6355
+// Module ID: 6361
+// Function ID: 6362
 // Name: CaterpillarIllocon
-// Dependencies: [21, 5458, 6355, 2]
+// Dependencies: [21, 5461, 6362, 2]
 // Exports: CaterpillarIllocon
 
-// Module 6354 (CaterpillarIllocon)
+// Module 6361 (CaterpillarIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6355 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6362 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CaterpillarIllocon.native.tsx");

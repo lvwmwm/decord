@@ -1,21 +1,21 @@
-// Module ID: 11931
-// Function ID: 11932
+// Module ID: 11964
+// Function ID: 11965
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4091, 1395, 1993, 1910, 5322, 4099, 1923, 11472, 676, 7716, 21, 589, 4973, 4079, 4096, 11932, 11933, 10941, 10940, 11934, 11935, 4666, 8998, 4689, 7715, 2010, 7718, 7634, 11102, 10798, 11937, 11947, 11946, 4401, 1236, 11949, 11952, 11953, 11954, 11958, 11959, 11962, 11963, 9694, 11965, 2]
+// Dependencies: [19, 4092, 1391, 1992, 1909, 5325, 4100, 1922, 11502, 676, 7737, 21, 589, 4976, 4080, 4097, 11965, 11966, 10966, 10965, 11967, 11968, 4668, 9021, 4691, 7736, 2009, 7739, 7655, 11131, 10822, 11970, 11980, 11979, 4403, 1236, 11982, 11985, 11986, 11987, 11991, 11992, 11995, 11996, 9716, 11998, 2]
 // Exports: default
 
-// Module 11931 (ChatInputGuardWrapper)
+// Module 11964 (ChatInputGuardWrapper)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "initialize" /* 4091 */;
-import { isThread } from "createChannelRecord" /* 1395 */;
-import closure_5 from "trackCommunicationDisabled" /* 1993 */;
-import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "recomputeGuild" /* 5322 */;
-import closure_8 from "markAllUserIdListsStale" /* 4099 */;
-import closure_9 from "mergeGuildAvatar" /* 1923 */;
-import { TextAreaCta } from "TextAreaCta" /* 11472 */;
+import closure_3 from "initialize" /* 4092 */;
+import { isThread } from "createChannelRecord" /* 1391 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
+import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import closure_7 from "recomputeGuild" /* 5325 */;
+import closure_8 from "markAllUserIdListsStale" /* 4100 */;
+import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import { TextAreaCta } from "TextAreaCta" /* 11502 */;
 import ME from "ME" /* 676 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7716 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7737 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

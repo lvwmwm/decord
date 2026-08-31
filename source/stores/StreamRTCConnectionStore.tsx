@@ -1,23 +1,23 @@
-// Module ID: 4534
-// Function ID: 4535
+// Module ID: 4536
+// Function ID: 4537
 // Name: initialize
-// Dependencies: [4469, 1218, 4497, 4535, 4520, 676, 4513, 38, 4537, 12, 4512, 7430, 709, 4545, 500, 589, 13388, 2]
+// Dependencies: [4471, 1218, 4499, 4537, 4522, 676, 4515, 38, 4539, 12, 4514, 7451, 709, 4547, 500, 589, 13422, 2]
 
-// Module 4534 (initialize)
+// Module 4536 (initialize)
 import applyDefault from "apply" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 589 */;
-import isStreamKey from "isStreamKey" /* 4512 */;
-import isOwnerDefault from "isOwner" /* 4537 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4545 */;
-import canSpectateDefault from "canSpectate" /* 13388 */;
-import closure_4 from "initialize" /* 4469 */;
+import isStreamKey from "isStreamKey" /* 4514 */;
+import isOwnerDefault from "isOwner" /* 4539 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4547 */;
+import canSpectateDefault from "canSpectate" /* 13422 */;
+import closure_4 from "initialize" /* 4471 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import importDefaultResult from "_detectH265HardwareDecode" /* 4497 */;
-import closure_7 from "sortActivity" /* 4535 */;
-import closure_8 from "createRTCConnection" /* 4520 */;
+import importDefaultResult from "_detectH265HardwareDecode" /* 4499 */;
+import closure_7 from "sortActivity" /* 4537 */;
+import closure_8 from "createRTCConnection" /* 4522 */;
 import ME from "ME" /* 676 */;
-import { StreamTypes } from "StreamIssueReportReasons" /* 4513 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4515 */;
 import importDefaultResult1 from "dispatcher" /* 709 */;
 
 require = arg1;
@@ -251,7 +251,7 @@ if (importDefaultResult.isSupported()) {
     appContext = appContext.appContext;
     ({ pid, nativePickerStyleUsed: importDefault, goLiveModalDurationMs } = appContext);
     ({ streamType, guildId, channelId, sourceId, sourcePid, analyticsLocations } = appContext);
-    let obj = appContext(4512);
+    let obj = appContext(4514);
     obj = { streamType, guildId, channelId, ownerId: id.getId() };
     const encodeStreamKeyResult = obj.encodeStreamKey(obj);
     closure_11[encodeStreamKeyResult] = { appContext, analyticsLocations };
@@ -292,7 +292,7 @@ if (importDefaultResult.isSupported()) {
   obj[9] = function handleStreamStop(appContext) {
     appContext = appContext.appContext;
     const streamKey = appContext.streamKey;
-    closure_11[streamKey] = { appContext, analyticsLocations: "r" };
+    closure_11[streamKey] = { appContext, analyticsLocations: "Array" };
     const item = applyDefault.forEach(closure_18, (analyticsContext) => {
       analyticsContext = analyticsContext.analyticsContext;
       analyticsContext.setActionContext(appContext);
@@ -322,8 +322,8 @@ if (importDefaultResult.isSupported()) {
         tmp11 = null == dependencyMap2[streamKey];
       }
       if (tmp11) {
-        tmp10[streamKey] = tmp4(7430).getStreamerApplication(decodeStreamKeyResult, closure_7);
-        const tmp4Result = tmp4(7430);
+        tmp10[streamKey] = tmp4(7451).getStreamerApplication(decodeStreamKeyResult, closure_7);
+        const tmp4Result = tmp4(7451);
       }
       obj = { streamRegion: null, streamApplication: null, streamSourceType: null, actionContext: null, numViewers: null, goLiveModalDurationMs: null, analyticsLocations: null };
       obj[0] = region;
@@ -386,7 +386,7 @@ if (importDefaultResult.isSupported()) {
         analyticsLocations = tmp23.analyticsLocations;
       }
       obj[6] = analyticsLocations;
-      const streamRTCAnalyticsContext = new tmp4(4537).StreamRTCAnalyticsContext(obj);
+      const streamRTCAnalyticsContext = new tmp4(4539).StreamRTCAnalyticsContext(obj);
       _modDef38(null != closure_3, "Creating RTCConnection without session.");
       obj = { sessionId: null, streamKey: null, serverId: null, channelId: null, initialLayout: null, analyticsContext: null, parentMediaSessionId: null };
       obj[0] = closure_3;

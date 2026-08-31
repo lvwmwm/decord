@@ -1,12 +1,12 @@
-// Module ID: 10831
-// Function ID: 10832
+// Module ID: 10855
+// Function ID: 10856
 // Name: MessageReactions
-// Dependencies: [19, 4701, 21, 589, 5918, 5938, 10832, 2]
+// Dependencies: [19, 4703, 21, 589, 5921, 5941, 10856, 2]
 // Exports: default
 
-// Module 10831 (MessageReactions)
+// Module 10855 (MessageReactions)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "reinjectEphemerals" /* 4701 */;
+import closure_4 from "reinjectEphemerals" /* 4703 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 12122
-// Function ID: 12123
+// Module ID: 12156
+// Function ID: 12157
 // Name: GuildPrompts
 // Dependencies: [2]
 
-// Module 12122 (GuildPrompts)
+// Module 12156 (GuildPrompts)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild/Constants.tsx");

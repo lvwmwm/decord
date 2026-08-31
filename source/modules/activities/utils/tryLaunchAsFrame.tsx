@@ -1,14 +1,14 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9432
+// Function ID: 9433
 // Name: tryLaunchAsFrame
-// Dependencies: [4487, 9404, 9409, 9400, 2]
+// Dependencies: [4489, 9426, 9431, 9422, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 9410 (tryLaunchAsFrame)
-import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9400 */;
-import canLaunchFrame from "canLaunchFrame" /* 9409 */;
-import closure_3 from "addApplication" /* 4487 */;
-import { MAIN_SURFACE } from "FrameLayoutModes" /* 9404 */;
+// Module 9432 (tryLaunchAsFrame)
+import _launchFrameOnNativeDefault from "_launchFrameOnNative" /* 9422 */;
+import canLaunchFrame from "canLaunchFrame" /* 9431 */;
+import closure_3 from "addApplication" /* 4489 */;
+import { MAIN_SURFACE } from "FrameLayoutModes" /* 9426 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/tryLaunchAsFrame.tsx");

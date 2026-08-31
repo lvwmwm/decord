@@ -1,11 +1,11 @@
-// Module ID: 15382
-// Function ID: 15383
+// Module ID: 15415
+// Function ID: 15416
 // Name: useSecureFramesUserVerifiedKeys
-// Dependencies: [9762, 589, 12, 2]
+// Dependencies: [9784, 589, 12, 2]
 // Exports: useSecureFramesUserVerifiedKeys
 
-// Module 15382 (useSecureFramesUserVerifiedKeys)
-import closure_3 from "initialize" /* 9762 */;
+// Module 15415 (useSecureFramesUserVerifiedKeys)
+import closure_3 from "initialize" /* 9784 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/hooks/useSecureFramesUserVerifiedKeys.tsx");

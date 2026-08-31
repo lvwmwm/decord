@@ -1,20 +1,20 @@
-// Module ID: 8520
-// Function ID: 8521
+// Module ID: 8542
+// Function ID: 8543
 // Name: useVideoControls
-// Dependencies: [32, 19, 4438, 21, 644, 705, 8521, 4446, 589, 8513, 8522, 8514, 8523, 2]
+// Dependencies: [32, 19, 4440, 21, 644, 705, 8543, 4448, 589, 8535, 8544, 8536, 8545, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8520 (useVideoControls)
+// Module 8542 (useVideoControls)
 import batchUpdates from "batchUpdates" /* 705 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
 import { jsx } from "jsxProd" /* 21 */;
 import keys from "keys" /* 644 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
-keys = keys.create(() => ({ controls: "ct", paused: true }));
+keys = keys.create(() => ({ controls: "Object", paused: true }));
 let closure_8 = createCacheKey.createStyles({ slider: { marginBottom: 8 } });
 let result = require("set").fileFinishedImporting("modules/media_viewer/native/useVideoControls.tsx");
 
@@ -80,7 +80,7 @@ export default function useVideoControls(arg0, portal) {
 export const useVideoStateStore = keys;
 export const initVideoStateStore = function initVideoStateStore() {
   batchUpdates.batchUpdates(() => {
-    state.setState({ controls: "ct", paused: true });
+    state.setState({ controls: "Object", paused: true });
   });
 };
 export const setMuted = function setMuted(arg0) {

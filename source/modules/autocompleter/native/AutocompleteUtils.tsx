@@ -1,24 +1,24 @@
-// Module ID: 10276
-// Function ID: 10277
+// Module ID: 10300
+// Function ID: 10301
 // Name: AutocompleteFormDivider
-// Dependencies: [19, 17, 1395, 1983, 4099, 1923, 676, 10277, 4918, 21, 4446, 712, 4640, 5350, 4290, 8315, 2]
+// Dependencies: [19, 17, 1391, 1982, 4100, 1922, 676, 10301, 4921, 21, 4448, 712, 4642, 5353, 4292, 8337, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10276 (AutocompleteFormDivider)
+// Module 10300 (AutocompleteFormDivider)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import nameFromUserDefault from "nameFromUser" /* 4290 */;
-import computeChannelName from "computeChannelName" /* 4640 */;
-import DividerDefault from "Divider" /* 8315 */;
-import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord" /* 1395 */;
-import closure_4 from "comparator" /* 1983 */;
-import closure_5 from "markAllUserIdListsStale" /* 4099 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import nameFromUserDefault from "nameFromUser" /* 4292 */;
+import computeChannelName from "computeChannelName" /* 4642 */;
+import DividerDefault from "Divider" /* 8337 */;
+import { isGuildSelectableChannelType as closure_3 } from "createChannelRecord" /* 1391 */;
+import closure_4 from "comparator" /* 1982 */;
+import closure_5 from "markAllUserIdListsStale" /* 4100 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10277 */;
-import regExp from "regExp" /* 4918 */;
+import AUTOCOMPLETE_ROW_HEIGHT from "AUTOCOMPLETE_ROW_HEIGHT" /* 10301 */;
+import regExp from "regExp" /* 4921 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function AutocompleteFormDivider() {

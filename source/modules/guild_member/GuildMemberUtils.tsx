@@ -1,15 +1,15 @@
-// Module ID: 11341
-// Function ID: 11342
+// Module ID: 11370
+// Function ID: 11371
 // Name: getGuildMemberAgeInRange
-// Dependencies: [1993, 1910, 4090, 1923, 4078, 676, 589, 11, 1403, 2]
+// Dependencies: [1992, 1909, 4091, 1922, 4079, 676, 589, 11, 1399, 2]
 // Exports: canManageMessages, hasBanMemberPerms, hasKickMemberPerms, useCanBanMember, useCanKickMember, useCanManageMessages, useGuildMemberAgeInRange, useNewMemberBadge
 
-// Module 11341 (getGuildMemberAgeInRange)
-import closure_3 from "trackCommunicationDisabled" /* 1993 */;
-import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4078 */;
+// Module 11370 (getGuildMemberAgeInRange)
+import closure_3 from "trackCommunicationDisabled" /* 1992 */;
+import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4079 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;
@@ -122,7 +122,7 @@ export const useNewMemberBadge = function useNewMemberBadge(arg0, arg1) {
   obj = _require(589);
   const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => {
-    obj = callback(1403);
+    obj = callback(1399);
     const member = closure_1_3.getMember(callback, obj);
     let num;
     if (member != null) {

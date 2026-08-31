@@ -1,17 +1,17 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10034
+// Function ID: 10035
 // Name: UserSettingsVoiceOverlay
-// Dependencies: [19, 10001, 21, 647, 10000, 1236, 5958, 10012, 2]
+// Dependencies: [19, 10024, 21, 647, 10023, 1236, 5961, 10035, 2]
 // Exports: default
 
-// Module 10011 (UserSettingsVoiceOverlay)
+// Module 10034 (UserSettingsVoiceOverlay)
 import noopAll from "noop" /* 19 */;
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import TableSwitchRow from "TableSwitchRow" /* 5958 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 10000 */;
-import dispatcherDefault from "dispatcher" /* 10012 */;
-import closure_3 from "getUserAgnosticState" /* 10001 */;
+import TableSwitchRow from "TableSwitchRow" /* 5961 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 10023 */;
+import dispatcherDefault from "dispatcher" /* 10035 */;
+import closure_3 from "getUserAgnosticState" /* 10024 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

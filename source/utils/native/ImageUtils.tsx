@@ -1,15 +1,15 @@
-// Module ID: 1493
-// Function ID: 1494
+// Module ID: 1492
+// Function ID: 1493
 // Name: getSrcWithWidthAndHeight
-// Dependencies: [32, 17, 676, 1470, 1494, 1484, 1471, 1896, 12, 1438, 1435, 2]
+// Dependencies: [32, 17, 676, 1466, 1493, 1483, 1467, 1895, 12, 1434, 1431, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1493 (getSrcWithWidthAndHeight)
-import getAvatarURL from "getAvatarURL" /* 1435 */;
-import ensureAvatarSource from "ensureAvatarSource" /* 1438 */;
-import items2 from "items" /* 1471 */;
-import parseDefault from "parse" /* 1484 */;
-import useWindowDimensions from "useWindowDimensions" /* 1494 */;
+// Module 1492 (getSrcWithWidthAndHeight)
+import getAvatarURL from "getAvatarURL" /* 1431 */;
+import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
+import items2 from "items" /* 1467 */;
+import parseDefault from "parse" /* 1483 */;
+import useWindowDimensions from "useWindowDimensions" /* 1493 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_6 } from "ME" /* 676 */;
@@ -65,7 +65,7 @@ function getSrcWithWidthAndHeight(animated) {
       obj[2] = sourceWidth;
       obj[3] = sourceHeight;
       const obj2 = items2;
-      obj[4] = items2.getSnapDownMaxUpscale(tmp9, tmp2(1896)());
+      obj[4] = items2.getSnapDownMaxUpscale(tmp9, tmp2(1895)());
       size = obj2.snapAttachmentDimensions(obj);
       const obj4 = items2;
     }
@@ -81,7 +81,7 @@ function getSrcWithWidthAndHeight(animated) {
   let tmp2Result = tmp2(12);
   let text = tmp5;
   if (!tmp2Result.isEmpty(tmp6)) {
-    tmp2Result = tmp2(1484);
+    tmp2Result = tmp2(1483);
     text = `${tmp5}?${obj6.stringify(tmp6)}`;
   }
   return text;

@@ -1,9 +1,9 @@
-// Module ID: 1385
-// Function ID: 1386
+// Module ID: 1381
+// Function ID: 1382
 // Name: handleRequiredAction
 // Dependencies: [589, 709, 2]
 
-// Module 1385 (handleRequiredAction)
+// Module 1381 (handleRequiredAction)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

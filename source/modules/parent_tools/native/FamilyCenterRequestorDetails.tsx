@@ -1,19 +1,19 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14493
+// Function ID: 14494
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 4446, 1297, 712, 8713, 14431, 4442, 2]
+// Dependencies: [19, 17, 21, 4448, 1297, 712, 8735, 14465, 4444, 2]
 // Exports: default
 
-// Module 14459 (FamilyCenterRequestorDetails)
+// Module 14493 (FamilyCenterRequestorDetails)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4442 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8713 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14431 */;
+import Text from "Text" /* 4444 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8735 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14465 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;

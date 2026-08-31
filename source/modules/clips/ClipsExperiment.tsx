@@ -1,17 +1,17 @@
-// Module ID: 4508
-// Function ID: 4509
+// Module ID: 4510
+// Function ID: 4511
 // Name: apexExperiment
-// Dependencies: [4497, 1923, 1925, 1472, 4509, 589, 4108, 2]
+// Dependencies: [4499, 1922, 1924, 1468, 4511, 589, 4109, 2]
 // Exports: areClipsAvailable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 4508 (apexExperiment)
+// Module 4510 (apexExperiment)
 import initialize from "initialize" /* 589 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4108 */;
-import isClientClipsCapableDefault from "isClientClipsCapable" /* 4509 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4497 */;
-import closure_4 from "mergeGuildAvatar" /* 1923 */;
-import { PremiumTypes } from "GuildFeatures" /* 1925 */;
-import ApexExperiment from "ApexExperiment" /* 1472 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4109 */;
+import isClientClipsCapableDefault from "isClientClipsCapable" /* 4511 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 require = arg1;
 ApexExperiment = { 1: null, 2: { enableClips: true, ignorePlatformRestriction: false } };

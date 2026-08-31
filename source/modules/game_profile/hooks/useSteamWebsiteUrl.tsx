@@ -1,11 +1,11 @@
-// Module ID: 8757
-// Function ID: 8758
+// Module ID: 8779
+// Function ID: 8780
 // Name: buildSteamStoreUrl
-// Dependencies: [4470, 676, 589, 8758, 8756, 1903, 2]
+// Dependencies: [4472, 676, 589, 8780, 8778, 1902, 2]
 // Exports: buildSteamStoreUrl, useSteamWebsiteUrl
 
-// Module 8757 (buildSteamStoreUrl)
-import closure_2 from "handleLoadMessages" /* 4470 */;
+// Module 8779 (buildSteamStoreUrl)
+import closure_2 from "handleLoadMessages" /* 4472 */;
 import { Distributors } from "ME" /* 676 */;
 
 const require = arg1;
@@ -30,7 +30,7 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
           return null;
         } else {
           const websites = game.websites;
-          const found = websites.find((category) => category.category === callback(8756).ThirdPartyGameApplicationWebsiteCategory.STEAM);
+          const found = websites.find((category) => category.category === callback(8778).ThirdPartyGameApplicationWebsiteCategory.STEAM);
           if (found != null) {
             const url = found.url;
           }
@@ -38,8 +38,8 @@ export const useSteamWebsiteUrl = function useSteamWebsiteUrl(id) {
           const found1 = thirdPartySkus.filter((distributor) => {
             let tmp = distributor.distributor === constants.STEAM;
             if (tmp) {
-              tmp = !callback(1903).isNullOrEmpty(distributor.id);
-              const obj = callback(1903);
+              tmp = !callback(1902).isNullOrEmpty(distributor.id);
+              const obj = callback(1902);
             }
             return tmp;
           });

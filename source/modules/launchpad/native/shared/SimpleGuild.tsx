@@ -1,18 +1,18 @@
-// Module ID: 16481
-// Function ID: 16482
+// Module ID: 16515
+// Function ID: 16516
 // Name: SimpleGuild
-// Dependencies: [19, 17, 1434, 7328, 1910, 676, 21, 4446, 5969, 16482, 589, 16483, 16485, 1236, 15855, 4985, 712, 16484, 2]
+// Dependencies: [19, 17, 1430, 7349, 1909, 676, 21, 4448, 5972, 16516, 589, 16517, 16519, 1236, 15889, 4988, 712, 16518, 2]
 // Exports: default
 
-// Module 16481 (SimpleGuild)
+// Module 16515 (SimpleGuild)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { getGuildIconSource } from "GuildNSFWContentLevel" /* 1434 */;
-import closure_6 from "updateGuildUnreadSentinel" /* 7328 */;
-import closure_7 from "createGuildRecordFromRust" /* 1910 */;
+import { getGuildIconSource } from "GuildNSFWContentLevel" /* 1430 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 7349 */;
+import closure_7 from "createGuildRecordFromRust" /* 1909 */;
 import { ME } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let closure_10 = createCacheKey.createStyles({ dmsWrapper: { flex: 1, justifyContent: "center", alignItems: "center" } });

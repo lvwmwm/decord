@@ -1,33 +1,33 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12279
+// Function ID: 12280
 // Name: ChannelTitleContent
-// Dependencies: [19, 17, 5186, 1395, 1391, 1910, 4535, 4099, 1923, 676, 1398, 1388, 21, 4446, 5426, 712, 589, 1236, 4946, 4640, 9178, 12246, 12247, 1297, 12248, 12249, 5458, 12250, 9069, 5033, 4442, 4290, 8054, 9006, 4267, 1377, 10355, 12251, 2]
+// Dependencies: [19, 17, 5189, 1391, 1387, 1909, 4537, 4100, 1922, 676, 1394, 1384, 21, 4448, 5429, 712, 589, 1236, 4949, 4642, 9200, 12280, 12281, 1297, 12282, 12283, 5461, 12284, 9092, 5036, 4444, 4292, 8076, 9029, 4268, 1373, 10379, 12285, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 12245 (ChannelTitleContent)
+// Module 12279 (ChannelTitleContent)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4442 */;
-import computeChannelName from "computeChannelName" /* 4640 */;
-import PressableBase from "PressableBase" /* 5033 */;
-import ActivityStatusDefault from "ActivityStatus" /* 9178 */;
+import Text from "Text" /* 4444 */;
+import computeChannelName from "computeChannelName" /* 4642 */;
+import PressableBase from "PressableBase" /* 5036 */;
+import ActivityStatusDefault from "ActivityStatus" /* 9200 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_handleConnectionOpen" /* 5186 */;
-import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1395 */;
-import closure_7 from "ensureGuildLoaded" /* 1391 */;
-import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "sortActivity" /* 4535 */;
-import closure_10 from "markAllUserIdListsStale" /* 4099 */;
-import closure_11 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "_handleConnectionOpen" /* 5189 */;
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1391 */;
+import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "createGuildRecordFromRust" /* 1909 */;
+import closure_9 from "sortActivity" /* 4537 */;
+import closure_10 from "markAllUserIdListsStale" /* 4100 */;
+import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { StaticChannelRoute } from "set" /* 1398 */;
-import ContentDismissActionType from "ContentDismissActionType" /* 1388 */;
+import { StaticChannelRoute } from "set" /* 1394 */;
+import ContentDismissActionType from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import importDefaultResult from "createTextStyle" /* 5426 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import importDefaultResult from "createTextStyle" /* 5429 */;
 
 require = arg1;
 function ChannelTitleContent(arg0) {
@@ -420,12 +420,12 @@ export const ChannelTitleWithoutRoute = function ChannelTitleWithoutRoute(arg0) 
   }
   let channelIcon = null;
   if (null != stateFromStores) {
-    let tmp2Result = tmp2(4946);
+    let tmp2Result = tmp2(4949);
     channelIcon = tmp2Result.getChannelIcon(stateFromStores);
   }
   let channelName = null;
   if (null != stateFromStores) {
-    tmp2Result = tmp2(4640);
+    tmp2Result = tmp2(4642);
     channelName = tmp2Result.computeChannelName(stateFromStores, closure_11, closure_10);
   }
   let isDMResult;

@@ -1,35 +1,35 @@
-// Module ID: 9371
-// Function ID: 9372
+// Module ID: 9393
+// Function ID: 9394
 // Name: JoinActivityButton
-// Dependencies: [5, 19, 1390, 1391, 5190, 4366, 1910, 9372, 4090, 4099, 1982, 5188, 4465, 676, 8557, 21, 4446, 712, 5918, 4080, 647, 9378, 9379, 7431, 4893, 1236, 9189, 9389, 4413, 11266, 9195, 1297, 7998, 9328, 4159, 12400, 8054, 4689, 4301, 8610, 4693, 5192, 1435, 9238, 6210, 8561, 9332, 1487, 8587, 2]
+// Dependencies: [5, 19, 1386, 1387, 5193, 4368, 1909, 9394, 4091, 4100, 1981, 5191, 4467, 676, 8579, 21, 4448, 712, 5921, 4081, 647, 9400, 9401, 7452, 4896, 1236, 9211, 9411, 4415, 11295, 9217, 1297, 8020, 9350, 4160, 12434, 8076, 4691, 4303, 8632, 4695, 5195, 1431, 9260, 6213, 8583, 9354, 1486, 8609, 2]
 // Exports: ConnectPlatformButton, CustomActivityButton, JoinActivityButton, JoinGameActivityButton, PlayOnSpotifyButton, VoiceChannelButtons, WatchActivityButton
 
-// Module 9371 (JoinActivityButton)
+// Module 9393 (JoinActivityButton)
 import noopAll from "noop" /* 19 */;
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Button2 from "Button" /* 4893 */;
-import contextDefault from "context" /* 5918 */;
-import _isStreamingDefault from "_isStreaming" /* 8054 */;
-import getStreamURLDefault from "getStreamURL" /* 12400 */;
+import Button2 from "Button" /* 4896 */;
+import contextDefault from "context" /* 5921 */;
+import _isStreamingDefault from "_isStreaming" /* 8076 */;
+import getStreamURLDefault from "getStreamURL" /* 12434 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "participantFromServer" /* 1390 */;
-import closure_5 from "ensureGuildLoaded" /* 1391 */;
-import closure_6 from "set" /* 5190 */;
-import closure_7 from "handleInviteData" /* 4366 */;
-import closure_8 from "createGuildRecordFromRust" /* 1910 */;
-import closure_9 from "updateActivities" /* 9372 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4090 */;
-import closure_11 from "markAllUserIdListsStale" /* 4099 */;
-import closure_12 from "handleConnectionOpen" /* 1982 */;
-import closure_13 from "filterPlayingActivities" /* 5188 */;
-import closure_14 from "updateVoiceState" /* 4465 */;
+import closure_4 from "participantFromServer" /* 1386 */;
+import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "set" /* 5193 */;
+import closure_7 from "handleInviteData" /* 4368 */;
+import closure_8 from "createGuildRecordFromRust" /* 1909 */;
+import closure_9 from "updateActivities" /* 9394 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_11 from "markAllUserIdListsStale" /* 4100 */;
+import closure_12 from "handleConnectionOpen" /* 1981 */;
+import closure_13 from "filterPlayingActivities" /* 5191 */;
+import closure_14 from "updateVoiceState" /* 4467 */;
 import ME from "ME" /* 676 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8557 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8579 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;
@@ -110,8 +110,8 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
   let tmp3 = null;
   if (null != application) {
     tmp3 = null;
-    if (stateFromStores !== tmp(9379).ActivityJoinability.CANNOT_JOIN) {
-      if (stateFromStores === tmp(9379).ActivityJoinability.JOINED) {
+    if (stateFromStores !== tmp(9401).ActivityJoinability.CANNOT_JOIN) {
+      if (stateFromStores === tmp(9401).ActivityJoinability.JOINED) {
         const intl2 = tmp(1236).intl;
         let stringResult = intl2.string(tmp(1236).t.DPfdsq);
       } else {
@@ -120,7 +120,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
       }
       obj = { text: null, variant: "active", disabled: null, onPress: null };
       obj[0] = stringResult;
-      JOINED = tmp(9379).ActivityJoinability.JOINED;
+      JOINED = tmp(9401).ActivityJoinability.JOINED;
       obj[2] = stateFromStores === JOINED;
       obj[3] = function onPress() {
         onAction({ action: "PRESS_JOIN_BUTTON" });
@@ -129,7 +129,7 @@ export const JoinGameActivityButton = function JoinGameActivityButton(onAction) 
         const joined = obj.join(obj);
         closure_1_1(closure_1_2[28]).hideAllActionSheets();
       };
-      jsx(tmp(4893).Button, { text: null, variant: "active", disabled: null, onPress: null });
+      jsx(tmp(4896).Button, { text: null, variant: "active", disabled: null, onPress: null });
       const tmp6 = jsx;
     }
   }
@@ -140,7 +140,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
   let sync_id;
   sync_id = activity.sync_id;
   let tmp4 = null;
-  if (sync_id(9195)(activity)) {
+  if (sync_id(9217)(activity)) {
     tmp4 = null;
     if (null != sync_id) {
       let obj = { text: null, icon: null, variant: "secondary", onPress: null };
@@ -150,7 +150,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
       obj[0] = intl.formatToPlainString(getSystemLocale.t.LEgD7t, obj);
       obj = { size: null, source: null, disableColor: true, style: null };
       obj[0] = Button.Icon.Sizes.SMALL;
-      obj[1] = sync_id(7998);
+      obj[1] = sync_id(8020);
       obj[3] = tmp.icon;
       obj[1] = jsx(Button.Icon, { size: null, source: null, disableColor: true, style: null });
       obj[3] = callback(function*() {
@@ -165,7 +165,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -195,7 +195,7 @@ export const PlayOnSpotifyButton = function PlayOnSpotifyButton(arg0) {
             } else if (1 === tmp7) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             } else if (arg0 === 1) {
               c5 = 3;
               throw arg1;
@@ -409,7 +409,7 @@ export const CustomActivityButton = function CustomActivityButton(index) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -456,13 +456,13 @@ export const CustomActivityButton = function CustomActivityButton(index) {
                 if (closure_0.button_urls.length <= closure_2) {
                   v0 = 0;
                   c5 = 3;
-                  return { value: "HermesInternal", done: null };
+                  return { value: "HermesInternal", done: "HermesInternal" };
                 } else {
                   closure_1 = closure_0.button_urls[closure_2];
                   if (typeof closure_1 !== "string") {
                     v0 = 0;
                     c5 = 3;
-                    return { value: "HermesInternal", done: null };
+                    return { value: "HermesInternal", done: "HermesInternal" };
                   } else {
                     closure_2 = closure_1_1(closure_1_2[47]).safeParseWithQuery(closure_1);
                     let protocol;
@@ -493,7 +493,7 @@ export const CustomActivityButton = function CustomActivityButton(index) {
               }
               v0 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
           } catch (tmp20) {
             closure_2 = tmp20;

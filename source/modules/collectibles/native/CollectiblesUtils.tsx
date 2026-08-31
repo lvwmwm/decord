@@ -1,19 +1,19 @@
-// Module ID: 10682
-// Function ID: 10683
+// Module ID: 10706
+// Function ID: 10707
 // Name: hasAtLeastOneGPlaySynced
-// Dependencies: [676, 6046, 4121, 6049, 7246, 4108, 7245, 10683, 10684, 2]
+// Dependencies: [676, 6049, 4122, 6052, 7267, 4109, 7266, 10707, 10708, 2]
 // Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, isGPlaySynced
 
-// Module 10682 (hasAtLeastOneGPlaySynced)
+// Module 10706 (hasAtLeastOneGPlaySynced)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4108 */;
-import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4121 */;
-import updateProductDefault from "updateProduct" /* 6049 */;
-import getProductOrbPrice from "getProductOrbPrice" /* 7245 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7246 */;
-import BalanceWidgetMode from "BalanceWidgetMode" /* 10683 */;
-import metadataDefault from "metadata" /* 10684 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4109 */;
+import isPremiumGiftingSupported from "isPremiumGiftingSupported" /* 4122 */;
+import updateProductDefault from "updateProduct" /* 6052 */;
+import getProductOrbPrice from "getProductOrbPrice" /* 7266 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7267 */;
+import BalanceWidgetMode from "BalanceWidgetMode" /* 10707 */;
+import metadataDefault from "metadata" /* 10708 */;
 
 function hasAtLeastOneGPlaySynced(nextResult) {
   const products = nextResult.products;
@@ -148,7 +148,7 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
         result = null;
       }
     } else {
-      let tmp7Result = tmp7(7246);
+      let tmp7Result = tmp7(7267);
       result = tmp7Result.extractPriceByPurchaseTypes(googleSkuIds, DEFAULT);
     }
     if (null == result) {
@@ -156,7 +156,7 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
     } else if (null != result.priceString) {
       let priceString = result.priceString;
     } else {
-      tmp7Result = tmp7(6046);
+      tmp7Result = tmp7(6049);
       priceString = tmp7Result.formatPrice(result.amount, result.currency);
     }
   }

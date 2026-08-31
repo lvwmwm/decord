@@ -1,12 +1,12 @@
-// Module ID: 11855
-// Function ID: 11856
+// Module ID: 11886
+// Function ID: 11887
 // Name: isComplete
-// Dependencies: [7569, 7568, 2]
+// Dependencies: [7590, 7589, 2]
 
-// Module 11855 (isComplete)
+// Module 11886 (isComplete)
 import set2 from "set" /* 2 */;
-import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 7568 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7569 */;
+import SearchEntrypointAnalyticsLocations from "SearchEntrypointAnalyticsLocations" /* 7589 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7590 */;
 
 function isComplete(type) {
   return type.type === SearchQueryTagTypes.COMPLETE;

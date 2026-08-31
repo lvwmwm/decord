@@ -1,9 +1,9 @@
-// Module ID: 6893
-// Function ID: 6894
+// Module ID: 6910
+// Function ID: 6911
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6893 (metadata)
+// Module 6910 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RocketshipSpotIllustration-2x.png.js");

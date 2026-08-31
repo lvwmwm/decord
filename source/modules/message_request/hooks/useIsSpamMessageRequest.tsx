@@ -1,11 +1,11 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10965
+// Function ID: 10966
 // Name: useIsSpamMessageRequest
-// Dependencies: [6032, 589, 2]
+// Dependencies: [6035, 589, 2]
 // Exports: useIsSpamMessageRequest
 
-// Module 10940 (useIsSpamMessageRequest)
-import closure_2 from "processChannel" /* 6032 */;
+// Module 10965 (useIsSpamMessageRequest)
+import closure_2 from "processChannel" /* 6035 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useIsSpamMessageRequest.tsx");

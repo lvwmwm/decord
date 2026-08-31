@@ -1,14 +1,14 @@
-// Module ID: 12804
-// Function ID: 12805
+// Module ID: 12839
+// Function ID: 12840
 // Name: createCodedLinkEmbeds
-// Dependencies: [32, 4091, 1910, 1923, 7381, 11450, 4434, 12805, 12806, 12816, 12818, 12811, 12820, 12813, 11017, 11313, 11064, 12821, 1370, 2]
+// Dependencies: [32, 4092, 1909, 1922, 7402, 11480, 4436, 12840, 12841, 12851, 12853, 12846, 12855, 12848, 11042, 11342, 11093, 12856, 1471, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 12804 (createCodedLinkEmbeds)
+// Module 12839 (createCodedLinkEmbeds)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "initialize" /* 4091 */;
-import closure_4 from "createGuildRecordFromRust" /* 1910 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import closure_3 from "initialize" /* 4092 */;
+import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 16832
-// Function ID: 16833
+// Module ID: 16865
+// Function ID: 16866
 // Name: disconnect
-// Dependencies: [1390, 1391, 4465, 4521, 7148, 1236, 5320, 5451, 4330, 2]
+// Dependencies: [1386, 1387, 4467, 4523, 7169, 1236, 5323, 5454, 4332, 2]
 
-// Module 16832 (disconnect)
+// Module 16865 (disconnect)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import start from "start" /* 4330 */;
-import _modDef5320 from "module_5320" /* 5320 */;
-import initializeDefault from "initialize" /* 5451 */;
-import trackInviteDefault from "trackInvite" /* 7148 */;
-import closure_3 from "participantFromServer" /* 1390 */;
-import closure_4 from "ensureGuildLoaded" /* 1391 */;
-import closure_5 from "updateVoiceState" /* 4465 */;
-import closure_6 from "getVoiceStatesForGuild" /* 4521 */;
+import start from "start" /* 4332 */;
+import _modDef5323 from "module_5323" /* 5323 */;
+import initializeDefault from "initialize" /* 5454 */;
+import trackInviteDefault from "trackInvite" /* 7169 */;
+import closure_3 from "participantFromServer" /* 1386 */;
+import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "updateVoiceState" /* 4467 */;
+import closure_6 from "getVoiceStatesForGuild" /* 4523 */;
 
 require = arg1;
 function disconnect() {
@@ -41,8 +41,8 @@ function disconnect() {
       const intl = getSystemLocale.intl;
       trackInviteDefault.sendBotMessage(currentClientVoiceChannelId1, intl.formatToPlainString(getSystemLocale.t.XYof5G, { number: 3 }));
       const obj3 = trackInviteDefault;
-      const voiceChannel = _modDef5320.selectVoiceChannel(null);
-      const obj4 = _modDef5320;
+      const voiceChannel = _modDef5323.selectVoiceChannel(null);
+      const obj4 = _modDef5323;
     }
   }
 }

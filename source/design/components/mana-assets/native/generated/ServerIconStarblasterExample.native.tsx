@@ -1,14 +1,14 @@
-// Module ID: 6942
-// Function ID: 6943
+// Module ID: 6959
+// Function ID: 6960
 // Name: ServerIconStarblasterExample
-// Dependencies: [21, 5458, 6943, 2]
+// Dependencies: [21, 5461, 6960, 2]
 // Exports: ServerIconStarblasterExample
 
-// Module 6942 (ServerIconStarblasterExample)
+// Module 6959 (ServerIconStarblasterExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6943 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6960 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconStarblasterExample.native.tsx");

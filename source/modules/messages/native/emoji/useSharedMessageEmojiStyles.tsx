@@ -1,12 +1,12 @@
-// Module ID: 9111
-// Function ID: 9112
+// Module ID: 9134
+// Function ID: 9135
 // Name: styles
-// Dependencies: [4446, 712, 2]
+// Dependencies: [4448, 712, 2]
 
-// Module 9111 (styles)
+// Module 9134 (styles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 let obj = { emojiContainer: { flexDirection: "row", alignItems: "center" }, emojiDescriptionWrapper: { flexDirection: "column", flex: 1 }, emojiWrapper: { marginLeft: -8, marginRight: 8 }, emojiIcon: null, divider: null, ctaButton: null };
 obj = { width: 40, height: 40, marginRight: 12, borderRadius: ThemesDefault.radii.sm, resizeMode: "contain" };

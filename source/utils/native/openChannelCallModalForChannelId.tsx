@@ -1,13 +1,13 @@
-// Module ID: 12398
-// Function ID: 12399
+// Module ID: 12432
+// Function ID: 12433
 // Name: openChannelCallModalForChannelId
-// Dependencies: [1391, 8610, 4693, 2]
+// Dependencies: [1387, 8632, 4695, 2]
 // Exports: default
 
-// Module 12398 (openChannelCallModalForChannelId)
-import openChannelCallModal from "openChannelCallModal" /* 4693 */;
-import connectToStage from "connectToStage" /* 8610 */;
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
+// Module 12432 (openChannelCallModalForChannelId)
+import openChannelCallModal from "openChannelCallModal" /* 4695 */;
+import connectToStage from "connectToStage" /* 8632 */;
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("utils/native/openChannelCallModalForChannelId.tsx");

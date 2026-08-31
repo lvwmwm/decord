@@ -1,15 +1,15 @@
-// Module ID: 8167
-// Function ID: 8168
+// Module ID: 8189
+// Function ID: 8190
 // Name: notSupported
-// Dependencies: [5, 32, 19, 6049, 3, 589, 12, 8168, 4123, 2]
+// Dependencies: [5, 32, 19, 6052, 3, 589, 12, 8190, 4124, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 8167 (notSupported)
+// Module 8189 (notSupported)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "updateProduct" /* 6049 */;
+import closure_6 from "updateProduct" /* 6052 */;
 
 const require = arg1;
 function notSupported() {
@@ -47,7 +47,7 @@ function useGoogleSkuIds(arg0, arg1) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {

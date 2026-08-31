@@ -1,12 +1,12 @@
-// Module ID: 5966
-// Function ID: 5967
+// Module ID: 5969
+// Function ID: 5970
 // Name: ARBITRARY_LARGE_OFFSET
-// Dependencies: [1297, 5967, 2]
+// Dependencies: [1297, 5970, 2]
 
-// Module 5966 (ARBITRARY_LARGE_OFFSET)
+// Module 5969 (ARBITRARY_LARGE_OFFSET)
 import set from "set" /* 2 */;
 import Button from "Button" /* 1297 */;
-import ICON_SIZE from "ICON_SIZE" /* 5967 */;
+import ICON_SIZE from "ICON_SIZE" /* 5970 */;
 
 const XXLARGE = Button.AvatarSizes.XXLARGE;
 const tmp2 = Button.AVATAR_SIZE_MAP[XXLARGE];

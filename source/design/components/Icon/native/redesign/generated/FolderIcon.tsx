@@ -1,14 +1,14 @@
-// Module ID: 4988
-// Function ID: 4989
+// Module ID: 4991
+// Function ID: 4992
 // Name: FolderIcon
-// Dependencies: [19, 21, 712, 4165, 4949, 2]
+// Dependencies: [19, 21, 712, 4166, 4952, 2]
 // Exports: FolderIcon
 
-// Module 4988 (FolderIcon)
+// Module 4991 (FolderIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 4949 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 4952 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

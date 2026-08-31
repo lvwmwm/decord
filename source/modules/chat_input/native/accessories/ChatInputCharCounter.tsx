@@ -1,16 +1,16 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 11961
+// Function ID: 11962
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1923, 676, 1925, 21, 4446, 589, 4108, 8106, 8115, 4163, 1236, 5033, 4442, 8042, 2]
+// Dependencies: [32, 19, 1922, 676, 1924, 21, 4448, 589, 4109, 8128, 8137, 4164, 1236, 5036, 4444, 8064, 2]
 
-// Module 11929 (ChatInputCharCounter)
+// Module 11961 (ChatInputCharCounter)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "mergeGuildAvatar" /* 1923 */;
+import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import { UpsellTypes } from "ME" /* 676 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1925 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -26,7 +26,7 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
   stateFromStores = obj.useStateFromStores(items, () => stateFromStores(_undefined[8]).canUseIncreasedMessageLength(currentUser.getCurrentUser()));
   const tmp = callback4();
   [tmp6, c2] = callback(importAllResult.useState(0), 2);
-  const tmp7 = stateFromStores(8106)();
+  const tmp7 = stateFromStores(8128)();
   callback = tmp7;
   const imperativeHandle = importAllResult.useImperativeHandle(ref, () => ({
     onMessageLengthChanged(length) {
@@ -42,9 +42,9 @@ const forwardRefResult = importAllResult.forwardRef((analyticsLocations, ref) =>
     obj = { color: "text-feedback-critical", lineClamp: 1, variant: "text-xs/medium", children: null };
     const _HermesInternal = HermesInternal;
     obj[3] = "-" + tmp6;
-    const items2 = [callback2(tmp2(4442).Text, obj), callback2(tmp2(8042).NitroWheelIcon, { size: "sm" })];
+    const items2 = [callback2(tmp2(4444).Text, obj), callback2(tmp2(8064).NitroWheelIcon, { size: "sm" })];
     obj[2] = items2;
-    tmp10 = callback3(tmp2(5033).PressableOpacity, obj);
+    tmp10 = callback3(tmp2(5036).PressableOpacity, obj);
   }
   return tmp10;
 });

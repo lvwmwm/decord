@@ -1,22 +1,22 @@
-// Module ID: 16437
-// Function ID: 16438
+// Module ID: 16471
+// Function ID: 16472
 // Name: PX_4
-// Dependencies: [19, 17, 4438, 10412, 676, 1388, 21, 4446, 712, 500, 589, 10462, 16438, 8522, 4413, 5918, 5938, 10391, 5587, 8463, 5458, 4442, 4893, 10712, 1236, 2]
+// Dependencies: [19, 17, 4440, 10436, 676, 1384, 21, 4448, 712, 500, 589, 10486, 16472, 8544, 4415, 5921, 5941, 10415, 5590, 8485, 5461, 4444, 4896, 10736, 1236, 2]
 // Exports: default
 
-// Module 16437 (PX_4)
+// Module 16471 (PX_4)
 import ThemesDefault from "Themes" /* 712 */;
-import contextDefault from "context" /* 5918 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5938 */;
-import usePreviousDefault from "usePrevious" /* 8522 */;
+import contextDefault from "context" /* 5921 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5941 */;
+import usePreviousDefault from "usePrevious" /* 8544 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4438 */;
-import closure_6 from "createEmptyPromotionsByType" /* 10412 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_6 from "createEmptyPromotionsByType" /* 10436 */;
 import ME from "ME" /* 676 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1388 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 import set from "set" /* 500 */;
 
 const require = arg1;
@@ -55,7 +55,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let obj = markAsDismissed(589);
   const items = [analyticsLocations];
   const stateFromStores = obj.useStateFromStores(items, () => analyticsLocations.useReducedMotion);
-  obj1 = markAsDismissed(10462);
+  obj1 = markAsDismissed(10486);
   let asset;
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
@@ -64,7 +64,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   let tmp2Result = tmp2(589);
   const items1 = [closure_6];
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
-  tmp2Result = tmp2(16438);
+  tmp2Result = tmp2(16472);
   let endDate;
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
@@ -80,8 +80,8 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   const effect = React.useEffect(() => {
     if (dependencyMap) {
       if (!callback) {
-        callback(4413).hideActionSheet();
-        const obj = callback(4413);
+        callback(4415).hideActionSheet();
+        const obj = callback(4415);
       }
     }
     let tmp5 = closure_4;
@@ -89,9 +89,9 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       tmp5 = !closure_3;
     }
     if (tmp5) {
-      callback(4413).hideActionSheet();
+      callback(4415).hideActionSheet();
       markAsDismissed(closure_1_10.AUTO_DISMISS);
-      const obj2 = callback(4413);
+      const obj2 = callback(4415);
     }
   }, items2);
   analyticsLocations = contextDefault(QUICK_SWITCHERDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
@@ -113,7 +113,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
         let obj2 = { variant: "text-xs/bold", color: "text-overlay-light", style: null, children: null };
         obj2[2] = tmp.countdownBadgeText;
         obj2[3] = str.toUpperCase();
-        obj1[1] = tmp18(tmp2(4442).Text, obj2);
+        obj1[1] = tmp18(tmp2(4444).Text, obj2);
         tmp18Result = tmp18(tmp21, obj1);
       }
       items4[1] = tmp18Result;
@@ -122,21 +122,21 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       const obj4 = { style: null, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
       obj4[0] = tmp.text;
       obj4[3] = coachmarkComponent.header;
-      const items5 = [tmp18(tmp2(4442).Text, obj4), ];
+      const items5 = [tmp18(tmp2(4444).Text, obj4), ];
       const obj5 = { style: null, variant: "text-md/normal", color: "text-default", children: null };
       obj5[0] = tmp.text;
       obj5[3] = coachmarkComponent.body;
-      items5[1] = tmp18(tmp2(4442).Text, obj5);
+      items5[1] = tmp18(tmp2(4444).Text, obj5);
       obj3[1] = items5;
       items4[2] = tmp20(tmp21, obj3);
       const obj6 = { grow: true, icon: null, text: null, onPress: null };
       const obj7 = { size: "sm", color: null };
       obj7[1] = tmp10(712).colors.WHITE;
-      obj6[1] = tmp18(tmp2(10712).GiftIcon, obj7);
+      obj6[1] = tmp18(tmp2(10736).GiftIcon, obj7);
       const intl = tmp2(1236).intl;
       obj6[2] = intl.string(tmp2(1236).t.Ve9Ge6);
       obj6[3] = tmp16;
-      items4[3] = tmp18(tmp2(4893).Button, obj6);
+      items4[3] = tmp18(tmp2(4896).Button, obj6);
       obj[1] = items4;
       obj[2] = tmp20(tmp21, obj);
       tmp18Result = tmp18(tmp19, obj);
@@ -150,7 +150,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           const obj9 = { url: null, style: null, autoplay: true };
           obj9[0] = themeAndReducedMotionAwareAssetUrl;
           obj9[1] = tmp.imageShared;
-          obj8[1] = tmp18(tmp2(8463).APNGPlayer, obj9);
+          obj8[1] = tmp18(tmp2(8485).APNGPlayer, obj9);
           let tmp18Result1 = tmp18(tmp21, obj8);
         }
       }
@@ -159,7 +159,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       obj11[0] = themeAndReducedMotionAwareAssetUrl;
       obj10[0] = obj11;
       obj10[1] = tmp.imageShared;
-      tmp18Result1 = tmp18(tmp10(5458), obj10);
+      tmp18Result1 = tmp18(tmp10(5461), obj10);
       tmp2Result1 = tmp2(500);
     }
   }

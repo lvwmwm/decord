@@ -1,12 +1,12 @@
-// Module ID: 16704
-// Function ID: 16705
+// Module ID: 16737
+// Function ID: 16738
 // Name: getBadgeLeft
-// Dependencies: [19, 17, 21, 9486, 8187, 2]
+// Dependencies: [19, 17, 21, 9508, 8209, 2]
 
-// Module 16704 (getBadgeLeft)
-import inlineStyles from "inlineStyles" /* 8187 */;
-import inlineStylesDefault from "inlineStyles" /* 8187 */;
-import CircleWithCutout from "CircleWithCutout" /* 9486 */;
+// Module 16737 (getBadgeLeft)
+import inlineStyles from "inlineStyles" /* 8209 */;
+import inlineStylesDefault from "inlineStyles" /* 8209 */;
+import CircleWithCutout from "CircleWithCutout" /* 9508 */;
 import { PixelRatio } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

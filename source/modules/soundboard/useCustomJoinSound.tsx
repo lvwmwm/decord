@@ -1,12 +1,12 @@
-// Module ID: 6183
-// Function ID: 6184
+// Module ID: 6186
+// Function ID: 6187
 // Name: CustomSoundType
-// Dependencies: [1340, 4932, 589, 2]
+// Dependencies: [1340, 4935, 589, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 6183 (CustomSoundType)
+// Module 6186 (CustomSoundType)
 import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
-import { CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID as closure_3 } from "MAX_LENGTH_SOUND_NAME" /* 4932 */;
+import { CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID as closure_3 } from "MAX_LENGTH_SOUND_NAME" /* 4935 */;
 
 const require = arg1;
 let obj = { GLOBAL: 0, [0]: "GLOBAL", GUILD: 1, [1]: "GUILD" };

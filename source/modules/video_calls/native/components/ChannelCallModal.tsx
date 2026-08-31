@@ -1,21 +1,21 @@
-// Module ID: 9465
-// Function ID: 9466
+// Module ID: 9487
+// Function ID: 9488
 // Name: ChannelCallCameraPreview
-// Dependencies: [32, 19, 4462, 1391, 9459, 9460, 9466, 676, 21, 9463, 9467, 4300, 9472, 9564, 9469, 9565, 4186, 4308, 12252, 589, 1494, 9468, 12253, 5918, 5938, 12397, 4693, 5617, 9496, 2]
+// Dependencies: [32, 19, 4464, 1387, 9481, 9482, 9488, 676, 21, 9485, 9489, 4302, 9494, 9586, 9491, 9587, 4187, 4310, 12286, 589, 1493, 9490, 12287, 5921, 5941, 12431, 4695, 5620, 9518, 2]
 
-// Module 9465 (ChannelCallCameraPreview)
-import coerceMainRoute from "coerceMainRoute" /* 4300 */;
-import useIsConnectedToVoiceChannel from "useIsConnectedToVoiceChannel" /* 9463 */;
-import useRevealProviderValue from "useRevealProviderValue" /* 9467 */;
-import CameraPreviewDefault from "CameraPreview" /* 9472 */;
-import CallWithVoiceChatDefault from "CallWithVoiceChat" /* 9565 */;
+// Module 9487 (ChannelCallCameraPreview)
+import coerceMainRoute from "coerceMainRoute" /* 4302 */;
+import useIsConnectedToVoiceChannel from "useIsConnectedToVoiceChannel" /* 9485 */;
+import useRevealProviderValue from "useRevealProviderValue" /* 9489 */;
+import CameraPreviewDefault from "CameraPreview" /* 9494 */;
+import CallWithVoiceChatDefault from "CallWithVoiceChat" /* 9587 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "getParticipants" /* 4462 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9459 */;
-import { VoiceChatDrawerState } from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9460 */;
-import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET" /* 9466 */;
+import closure_5 from "getParticipants" /* 4464 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9481 */;
+import { VoiceChatDrawerState } from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9482 */;
+import PIP_GESTURE_ACTIVE_OFFSET from "PIP_GESTURE_ACTIVE_OFFSET" /* 9488 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -67,10 +67,10 @@ let closure_18 = importAllResult.memo((arg0) => {
     if (null != first) {
       closure_1_1(closure_1_2[13]).initialize(tmp);
       return () => {
-        callback2(9564).terminate();
-        const obj = callback2(9564);
-        callback2(9469).setHidden(false);
-        const obj2 = callback2(9469);
+        callback2(9586).terminate();
+        const obj = callback2(9586);
+        callback2(9491).setHidden(false);
+        const obj2 = callback2(9491);
         if (!obj3.isModalOpen(closure_31)) {
           callback3();
         }

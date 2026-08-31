@@ -1,11 +1,11 @@
-// Module ID: 7731
-// Function ID: 7732
+// Module ID: 7752
+// Function ID: 7753
 // Name: createNativePlaceholderConfig
-// Dependencies: [19, 17, 7732, 4294, 2]
+// Dependencies: [19, 17, 7753, 4296, 2]
 // Exports: default
 
-// Module 7731 (createNativePlaceholderConfig)
-import FastestListPropsPlaceholderType from "FastestListPropsPlaceholderType" /* 7732 */;
+// Module 7752 (createNativePlaceholderConfig)
+import FastestListPropsPlaceholderType from "FastestListPropsPlaceholderType" /* 7753 */;
 import closure_2 from "noop" /* 19 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
 
@@ -19,13 +19,13 @@ function createNativePlaceholderConfig(type) {
   if (type == null) {
     NONE = FastestListPropsPlaceholderType.FastestListPropsPlaceholderType.NONE;
   }
-  obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "diversity", borderBottomLeftRadius: "y", borderBottomRightRadius: "e", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "Boolean", dividerPaddingRight: "e", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "o", placeholderShapeGap: "e", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "l", placeholderFeedColor: "e", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "e", placeholderFeedLabelSecondarySize: "e", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "container", placeholderType: false, width: false, height: false, verticalAlignment: false, horizontalAlignment: false };
+  obj = { borderRadius: "Array", borderTopLeftRadius: "count", borderTopRightRadius: "displayName", borderBottomLeftRadius: "y", borderBottomRightRadius: "e", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "Boolean", dividerPaddingRight: "e", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "o", placeholderShapeGap: "e", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "l", placeholderFeedColor: "e", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "e", placeholderFeedLabelSecondarySize: "e", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "bottom", placeholderType: true, width: true, height: true, verticalAlignment: true, horizontalAlignment: true };
   obj[24] = NONE;
   if (null == type) {
     return obj;
   } else {
     if (FastestListPropsPlaceholderType.FastestListPropsPlaceholderType.NONE !== type) {
-      if (tmp15(7732).FastestListPropsPlaceholderType.SHAPE === type) {
+      if (tmp15(7753).FastestListPropsPlaceholderType.SHAPE === type) {
         let num9 = type.borderRadius;
         if (num9 == null) {
           num9 = 0;
@@ -46,7 +46,7 @@ function createNativePlaceholderConfig(type) {
           num11 = 0;
         }
         obj.placeholderShapePaddingVertical = num11;
-        const tmp14 = processColor(tmp15(4294).hexToRgbaString(type.colorHex, type.opacity));
+        const tmp14 = processColor(tmp15(4296).hexToRgbaString(type.colorHex, type.opacity));
         obj.placeholderShapeColor = tmp14;
         let num12 = type.shapeCount;
         if (num12 == null) {
@@ -63,8 +63,8 @@ function createNativePlaceholderConfig(type) {
           str2 = "center";
         }
         obj.horizontalAlignment = str2;
-        const tmp15Result = tmp15(4294);
-      } else if (tmp15(7732).FastestListPropsPlaceholderType.FEED_ITEM === type) {
+        const tmp15Result = tmp15(4296);
+      } else if (tmp15(7753).FastestListPropsPlaceholderType.FEED_ITEM === type) {
         let num = type.borderRadius;
         if (num == null) {
           num = 0;

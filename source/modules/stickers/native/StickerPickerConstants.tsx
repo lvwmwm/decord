@@ -1,11 +1,11 @@
-// Module ID: 10287
-// Function ID: 10288
+// Module ID: 10311
+// Function ID: 10312
 // Name: PADDING_HORIZONTAL
-// Dependencies: [1338, 5177, 2]
+// Dependencies: [1338, 5180, 2]
 
-// Module 10287 (PADDING_HORIZONTAL)
+// Module 10311 (PADDING_HORIZONTAL)
 import set from "set" /* 2 */;
-import StickerFormat from "StickerFormat" /* 5177 */;
+import StickerFormat from "StickerFormat" /* 5180 */;
 import ExpressionPickerViewType from "ExpressionPickerViewType" /* 1338 */;
 
 const PADDING_VERTICAL = ExpressionPickerViewType.PADDING_VERTICAL;

@@ -1,14 +1,14 @@
-// Module ID: 6598
-// Function ID: 6599
+// Module ID: 6611
+// Function ID: 6612
 // Name: GamePresenceIllocon
-// Dependencies: [21, 5458, 6599, 2]
+// Dependencies: [21, 5461, 6612, 2]
 // Exports: GamePresenceIllocon
 
-// Module 6598 (GamePresenceIllocon)
+// Module 6611 (GamePresenceIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6599 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6612 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GamePresenceIllocon.native.tsx");

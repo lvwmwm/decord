@@ -1,9 +1,9 @@
-// Module ID: 14621
-// Function ID: 14622
+// Module ID: 14652
+// Function ID: 14653
 // Name: metadata
 // Dependencies: [2]
 
-// Module 14621 (metadata)
+// Module 14652 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/quests/bounties/bounty_banner.mp4.js");

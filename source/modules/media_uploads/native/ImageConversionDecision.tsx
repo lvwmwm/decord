@@ -1,13 +1,13 @@
-// Module ID: 5068
-// Function ID: 5069
+// Module ID: 5071
+// Function ID: 5072
 // Name: isPhotoKitAsset
-// Dependencies: [500, 5069, 2]
+// Dependencies: [500, 5072, 2]
 // Exports: isHeicUTI, isPhotoKitAsset, shouldConvertToJPG, shouldForceConvertToJPG
 
-// Module 5068 (isPhotoKitAsset)
+// Module 5071 (isPhotoKitAsset)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
-import _initializeDefault from "_initialize" /* 5069 */;
+import _initializeDefault from "_initialize" /* 5072 */;
 
 const result = set.fileFinishedImporting("modules/media_uploads/native/ImageConversionDecision.tsx");
 
@@ -92,13 +92,13 @@ export const shouldConvertToJPG = function shouldConvertToJPG(closure_0, closure
             if (obj2.isExtensionAnimated(formatted)) {
               return false;
             } else {
-              const supportedExtensions = tmp14(5069).getSupportedExtensions();
+              const supportedExtensions = tmp14(5072).getSupportedExtensions();
               if (null !== supportedExtensions) {
                 if (supportedExtensions.has(formatted)) {
                   return true;
                 }
               }
-              const tmp14Result = tmp14(5069);
+              const tmp14Result = tmp14(5072);
             }
             obj2 = _initializeDefault;
             tmp14 = importDefault;

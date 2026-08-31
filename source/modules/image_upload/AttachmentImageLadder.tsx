@@ -1,10 +1,10 @@
-// Module ID: 1471
-// Function ID: 1472
+// Module ID: 1467
+// Function ID: 1468
 // Name: items
 // Dependencies: [2]
 // Exports: getSnapDownMaxUpscale, snapAttachmentDimensions
 
-// Module 1471 (items)
+// Module 1467 (items)
 import set from "set" /* 2 */;
 
 const items = [128, 192, 256, 320, 384, 512, 640, 768, 1024, 1280, 1536, 2048, 3072, 4096];

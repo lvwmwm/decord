@@ -1,11 +1,11 @@
-// Module ID: 6032
-// Function ID: 6033
+// Module ID: 6035
+// Function ID: 6036
 // Name: processChannel
-// Dependencies: [1391, 1220, 2]
+// Dependencies: [1387, 1220, 2]
 
-// Module 6032 (processChannel)
+// Module 6035 (processChannel)
 import clearAllDefault from "clearAll" /* 1220 */;
-import prototype from "ensureGuildLoaded" /* 1391 */;
+import prototype from "ensureGuildLoaded" /* 1387 */;
 import set from "set" /* 2 */;
 
 function processChannel(isSpam) {

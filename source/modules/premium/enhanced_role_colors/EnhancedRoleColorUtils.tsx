@@ -1,10 +1,10 @@
-// Module ID: 1989
-// Function ID: 1990
+// Module ID: 1988
+// Function ID: 1989
 // Name: extractColorStringsFromServerColors
 // Dependencies: [676, 688, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc
 
-// Module 1989 (extractColorStringsFromServerColors)
+// Module 1988 (extractColorStringsFromServerColors)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import int2hslRaw from "int2hslRaw" /* 688 */;

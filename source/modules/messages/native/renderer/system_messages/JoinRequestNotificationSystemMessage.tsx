@@ -1,17 +1,17 @@
-// Module ID: 7900
-// Function ID: 7901
+// Module ID: 7922
+// Function ID: 7923
 // Name: createJoinRequestNotificationSystemMessage
-// Dependencies: [7149, 4269, 1910, 1923, 676, 1236, 11, 7819, 2]
+// Dependencies: [7170, 4270, 1909, 1922, 676, 1236, 11, 7841, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 7900 (createJoinRequestNotificationSystemMessage)
+// Module 7922 (createJoinRequestNotificationSystemMessage)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7819 */;
-import closure_3 from "updateSubmittedGuildJoinRequestTotal" /* 7149 */;
-import closure_4 from "handleGatewayJoinRequestUpdate" /* 4269 */;
-import closure_5 from "createGuildRecordFromRust" /* 1910 */;
-import closure_6 from "mergeGuildAvatar" /* 1923 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7841 */;
+import closure_3 from "updateSubmittedGuildJoinRequestTotal" /* 7170 */;
+import closure_4 from "handleGatewayJoinRequestUpdate" /* 4270 */;
+import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { MessageTypes } from "ME" /* 676 */;
 
 require = arg1;

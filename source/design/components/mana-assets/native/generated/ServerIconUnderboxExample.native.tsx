@@ -1,14 +1,14 @@
-// Module ID: 6946
-// Function ID: 6947
+// Module ID: 6963
+// Function ID: 6964
 // Name: ServerIconUnderboxExample
-// Dependencies: [21, 5458, 6947, 2]
+// Dependencies: [21, 5461, 6964, 2]
 // Exports: ServerIconUnderboxExample
 
-// Module 6946 (ServerIconUnderboxExample)
+// Module 6963 (ServerIconUnderboxExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 6947 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 6964 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconUnderboxExample.native.tsx");

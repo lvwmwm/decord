@@ -1,9 +1,9 @@
-// Module ID: 11585
-// Function ID: 11586
+// Module ID: 11616
+// Function ID: 11617
 // Name: ApplicationCollectionSurface
 // Dependencies: [2]
 
-// Module 11585 (ApplicationCollectionSurface)
+// Module 11616 (ApplicationCollectionSurface)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionSurface.tsx");

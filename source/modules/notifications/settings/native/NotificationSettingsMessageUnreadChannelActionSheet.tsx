@@ -1,15 +1,15 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10214
+// Function ID: 10215
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
-// Dependencies: [19, 4667, 676, 4668, 685, 21, 10170, 10190, 1236, 5452, 10171, 5447, 2]
+// Dependencies: [19, 4669, 676, 4670, 685, 21, 10193, 10213, 1236, 5455, 10194, 5450, 2]
 // Exports: default
 
-// Module 10191 (NotificationSettingsMessageUnreadChannelActionSheet)
+// Module 10214 (NotificationSettingsMessageUnreadChannelActionSheet)
 import noopAll from "noop" /* 19 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 10190 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4667 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 10213 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4669 */;
 import { UserNotificationSettings } from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4668 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4670 */;
 import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 685 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,7 +19,7 @@ let result = require("set").fileFinishedImporting("modules/notifications/setting
 
 export default function NotificationSettingsMessageUnreadChannelActionSheet(channel) {
   const _require = channel;
-  let obj = _require(10170);
+  let obj = _require(10193);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   ({ unread, notification } = channelPresetSettings);
   obj = { value: unread, disabledMentionOnlyWithReason: null, onChange: null };

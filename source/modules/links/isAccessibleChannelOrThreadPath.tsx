@@ -1,18 +1,18 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6061
+// Function ID: 6062
 // Name: _isAccessibleChannelOrThreadPath
-// Dependencies: [5, 1984, 5428, 1391, 1986, 1910, 676, 1398, 6059, 6062, 6071, 6038, 6074, 6076, 6034, 6077, 6078, 4356, 6079, 6036, 1370, 6124, 4459, 4641, 2]
+// Dependencies: [5, 1983, 5431, 1387, 1985, 1909, 676, 1394, 6062, 6065, 6074, 6041, 6077, 6079, 6037, 6080, 6081, 4358, 6082, 6039, 1471, 6127, 4461, 4643, 2]
 // Exports: default
 
-// Module 6058 (_isAccessibleChannelOrThreadPath)
+// Module 6061 (_isAccessibleChannelOrThreadPath)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "isSubscriptionGated" /* 1984 */;
-import closure_5 from "shouldShowOnboarding" /* 5428 */;
-import closure_6 from "ensureGuildLoaded" /* 1391 */;
-import closure_7 from "createGuildRoleRecordFromRust" /* 1986 */;
-import closure_8 from "createGuildRecordFromRust" /* 1910 */;
+import closure_4 from "isSubscriptionGated" /* 1983 */;
+import closure_5 from "shouldShowOnboarding" /* 5431 */;
+import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_8 from "createGuildRecordFromRust" /* 1909 */;
 import ME from "ME" /* 676 */;
-import set from "set" /* 1398 */;
+import set from "set" /* 1394 */;
 
 const require = arg1;
 function _isAccessibleChannelOrThreadPath() {
@@ -37,7 +37,7 @@ function _isAccessibleChannelOrThreadPath() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } else {
           try {
@@ -63,7 +63,7 @@ function _isAccessibleChannelOrThreadPath() {
                 channelGatedAndVisible = undefined;
                 channelGatedAndVisible = 1;
                 c5 = 1;
-                return { value: "ct", done: true };
+                return { value: "Object", done: true };
               }
             } else {
               if (1 === tmp5) {

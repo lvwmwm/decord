@@ -1,15 +1,15 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15822
+// Function ID: 15823
 // Name: OneColumnGuildUpsellList
-// Dependencies: [32, 19, 15153, 21, 4446, 8832, 503, 1501, 589, 5918, 5938, 15789, 8051, 2]
+// Dependencies: [32, 19, 15186, 21, 4448, 8855, 503, 1500, 589, 5921, 5941, 15823, 8073, 2]
 // Exports: OneColumnGuildUpsellList
 
-// Module 15788 (OneColumnGuildUpsellList)
+// Module 15822 (OneColumnGuildUpsellList)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "set" /* 15153 */;
+import closure_5 from "set" /* 15186 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 let closure_7 = { itemVisiblePercentThreshold: 50, minimumViewTime: 500 };
@@ -70,7 +70,7 @@ export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAc
   const items2 = [stateFromStoresObject];
   stateFromStoresObject = obj.useStateFromStoresObject(items2, () => stateFromStoresObject.getGuildGameIds());
   let tmp = callback();
-  analyticsLocations = analyticsLocations(5918)(analyticsLocations(5938).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations;
+  analyticsLocations = analyticsLocations(5921)(analyticsLocations(5941).GAME_COMMUNITY_MULTI_GUILD_UPSELL_GUILDS_BAR_ENTRYPOINT).analyticsLocations;
   const items3 = [onDismiss, stateFromStoresObject, cardAction];
   dependencyMap = undefined;
   const callback3 = React.useCallback((item) => {
@@ -83,10 +83,10 @@ export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAc
     obj[3] = tmp;
     return closure_1_6(analyticsLocations(ref[11]), obj, item.id);
   }, items3);
-  const tmp10 = analyticsLocations(5918);
+  const tmp10 = analyticsLocations(5921);
   dependencyMap = React.useRef(new Set());
   const set = new Set();
-  const focusEffect = stateFromStoresObject(1501).useFocusEffect(React.useCallback(() => {
+  const focusEffect = stateFromStoresObject(1500).useFocusEffect(React.useCallback(() => {
     const current = ref.current;
     current.clear();
   }, []));
@@ -133,5 +133,5 @@ export const OneColumnGuildUpsellList = function OneColumnGuildUpsellList(cardAc
   obj[8] = callback3;
   obj[10] = callback1;
   obj[12] = callback2;
-  return jsx(stateFromStoresObject(8051).FlashList, { ref, style: null, onViewableItemsChanged: null, viewabilityConfig: null, contentContainerStyle: null, keyExtractor: null, data: null, ListHeaderComponent: null, renderItem: null, drawDistance: 3000, onScroll: null, scrollEventThrottle: 16, onLoad: null });
+  return jsx(stateFromStoresObject(8073).FlashList, { ref, style: null, onViewableItemsChanged: null, viewabilityConfig: null, contentContainerStyle: null, keyExtractor: null, data: null, ListHeaderComponent: null, renderItem: null, drawDistance: 3000, onScroll: null, scrollEventThrottle: 16, onLoad: null });
 };

@@ -1,0 +1,12 @@
+// Module ID: 5601
+// Function ID: 5602
+// Name: context
+// Dependencies: [19]
+
+// Module 5601 (context)
+import noop from "noop" /* 19 */;
+
+const context = noop.createContext(null);
+
+export const BottomSheetInternalContext = context;
+export const BottomSheetInternalProvider = context.Provider;

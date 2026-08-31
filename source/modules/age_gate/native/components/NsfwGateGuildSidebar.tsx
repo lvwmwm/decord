@@ -1,20 +1,20 @@
-// Module ID: 15800
-// Function ID: 15801
+// Module ID: 15834
+// Function ID: 15835
 // Name: NsfwGateGuildSidebar
-// Dependencies: [19, 17, 1993, 1910, 1923, 9071, 676, 21, 4446, 712, 589, 698, 8098, 15654, 1297, 5426, 15801, 1236, 1996, 2]
+// Dependencies: [19, 17, 1992, 1909, 1922, 9094, 676, 21, 4448, 712, 589, 698, 8120, 15688, 1297, 5429, 15835, 1236, 1995, 2]
 // Exports: default
 
-// Module 15800 (NsfwGateGuildSidebar)
+// Module 15834 (NsfwGateGuildSidebar)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "trackCommunicationDisabled" /* 1993 */;
-import closure_6 from "createGuildRecordFromRust" /* 1910 */;
-import closure_7 from "mergeGuildAvatar" /* 1923 */;
-import { NsfwGateSource } from "NsfwGateSource" /* 9071 */;
+import closure_5 from "trackCommunicationDisabled" /* 1992 */;
+import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { NsfwGateSource } from "NsfwGateSource" /* 9094 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 const require = arg1;
 ({ AnalyticEvents: c9, HelpdeskArticles: c10, Fonts: unpackModuleId } = ME);

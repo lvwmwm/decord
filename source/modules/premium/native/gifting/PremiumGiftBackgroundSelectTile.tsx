@@ -1,29 +1,29 @@
-// Module ID: 10698
-// Function ID: 10699
+// Module ID: 10722
+// Function ID: 10723
 // Name: PremiumGiftStyles
-// Dependencies: [19, 17, 1925, 10699, 21, 10700, 10701, 10702, 10703, 10704, 10705, 10706, 10707, 10708, 4446, 712, 1236, 2434, 5458, 2]
+// Dependencies: [19, 17, 1924, 10723, 21, 10724, 10725, 10726, 10727, 10728, 10729, 10730, 10731, 10732, 4448, 712, 1236, 2433, 5461, 2]
 // Exports: default
 
-// Module 10698 (PremiumGiftStyles)
+// Module 10722 (PremiumGiftStyles)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2434 */;
-import preloadDefault from "preload" /* 5458 */;
-import registerAssetDefault from "registerAsset" /* 10700 */;
-import registerAssetDefault2 from "registerAsset" /* 10701 */;
-import registerAssetDefault3 from "registerAsset" /* 10702 */;
-import registerAssetDefault4 from "registerAsset" /* 10703 */;
-import metadataDefault from "metadata" /* 10704 */;
-import metadataDefault2 from "metadata" /* 10705 */;
-import metadataDefault3 from "metadata" /* 10706 */;
-import metadataDefault4 from "metadata" /* 10707 */;
-import metadataDefault5 from "metadata" /* 10708 */;
+import messagesProxyDefault from "messagesProxy" /* 2433 */;
+import preloadDefault from "preload" /* 5461 */;
+import registerAssetDefault from "registerAsset" /* 10724 */;
+import registerAssetDefault2 from "registerAsset" /* 10725 */;
+import registerAssetDefault3 from "registerAsset" /* 10726 */;
+import registerAssetDefault4 from "registerAsset" /* 10727 */;
+import metadataDefault from "metadata" /* 10728 */;
+import metadataDefault2 from "metadata" /* 10729 */;
+import metadataDefault3 from "metadata" /* 10730 */;
+import metadataDefault4 from "metadata" /* 10731 */;
+import metadataDefault5 from "metadata" /* 10732 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { PremiumGiftStyles } from "GuildFeatures" /* 1925 */;
-import { GIFT_STYLE_DESCRIPTIONS } from "GIFT_STYLE_DESCRIPTIONS" /* 10699 */;
+import { PremiumGiftStyles } from "GuildFeatures" /* 1924 */;
+import { GIFT_STYLE_DESCRIPTIONS } from "GIFT_STYLE_DESCRIPTIONS" /* 10723 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 noopAll;

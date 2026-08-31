@@ -1,12 +1,12 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12506
+// Function ID: 12507
 // Name: getProductPurchaseState
-// Dependencies: [7250, 12473, 1951, 589, 2]
+// Dependencies: [7271, 12507, 1950, 589, 2]
 // Exports: useProductPurchaseState
 
-// Module 12472 (getProductPurchaseState)
-import compactDefault from "compact" /* 12473 */;
-import closure_3 from "map" /* 7250 */;
+// Module 12506 (getProductPurchaseState)
+import compactDefault from "compact" /* 12507 */;
+import closure_3 from "map" /* 7271 */;
 
 const require = arg1;
 function getProductPurchaseState(closure_1_5, skuId) {
@@ -21,7 +21,7 @@ function getProductPurchaseState(closure_1_5, skuId) {
   if (skuId != null) {
     type = skuId.type;
   }
-  if (_require(1951).CollectiblesItemType.BUNDLE === type) {
+  if (_require(1950).CollectiblesItemType.BUNDLE === type) {
     if (!tmp) {
       tmp = items.length > 0 && tmp3Result.length === items.length;
       const tmp7 = items.length > 0 && tmp3Result.length === items.length;
@@ -30,7 +30,7 @@ function getProductPurchaseState(closure_1_5, skuId) {
     obj[0] = tmp;
     obj[1] = tmp3Result.length > 0 && tmp3Result.length < items.length;
     return obj;
-  } else if (tmp5(1951).CollectiblesItemType.VARIANTS_GROUP === type) {
+  } else if (tmp5(1950).CollectiblesItemType.VARIANTS_GROUP === type) {
     const variants = skuId.variants;
     let everyResult;
     if (variants != null) {

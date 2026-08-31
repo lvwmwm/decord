@@ -1,14 +1,14 @@
-// Module ID: 7066
-// Function ID: 7067
+// Module ID: 7085
+// Function ID: 7086
 // Name: WateringCanSpotIllustration
-// Dependencies: [21, 5458, 7067, 2]
+// Dependencies: [21, 5461, 7086, 2]
 // Exports: WateringCanSpotIllustration
 
-// Module 7066 (WateringCanSpotIllustration)
+// Module 7085 (WateringCanSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5458 */;
-import metadataDefault from "metadata" /* 7067 */;
+import preloadDefault from "preload" /* 5461 */;
+import metadataDefault from "metadata" /* 7086 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WateringCanSpotIllustration.native.tsx");

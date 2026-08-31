@@ -1,20 +1,20 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16690
+// Function ID: 16691
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 4446, 4294, 712, 9456, 1629, 4442, 2]
+// Dependencies: [19, 17, 21, 4448, 4296, 712, 9478, 1628, 4444, 2]
 // Exports: default
 
-// Module 16657 (ActivitiesDebugOverlay)
+// Module 16690 (ActivitiesDebugOverlay)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1629 */;
-import Text from "Text" /* 4442 */;
-import useThermalState from "useThermalState" /* 9456 */;
-import useThermalStateDefault from "useThermalState" /* 9456 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import Text from "Text" /* 4444 */;
+import useThermalState from "useThermalState" /* 9478 */;
+import useThermalStateDefault from "useThermalState" /* 9478 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
-import hexToRgba from "hexToRgba" /* 4294 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
+import hexToRgba from "hexToRgba" /* 4296 */;
 
 require = arg1;
 noopAll;
@@ -35,14 +35,14 @@ export default function ActivitiesDebugOverlay() {
   if (useThermalState.ThermalStates.UNHANDLED !== tmp4) {
     str = "text-feedback-positive";
     str2 = "nominal";
-    if (tmp5(9456).ThermalStates.NOMINAL !== tmp4) {
+    if (tmp5(9478).ThermalStates.NOMINAL !== tmp4) {
       str = "text-feedback-warning";
       str2 = "fair";
-      if (tmp5(9456).ThermalStates.FAIR !== tmp4) {
+      if (tmp5(9478).ThermalStates.FAIR !== tmp4) {
         str2 = "serious";
         str = "text-feedback-critical";
-        if (tmp5(9456).ThermalStates.SERIOUS !== tmp4) {
-          if (tmp5(9456).ThermalStates.CRITICAL === tmp4) {
+        if (tmp5(9478).ThermalStates.SERIOUS !== tmp4) {
+          if (tmp5(9478).ThermalStates.CRITICAL === tmp4) {
             str2 = "critical";
             str = "text-feedback-critical";
           }

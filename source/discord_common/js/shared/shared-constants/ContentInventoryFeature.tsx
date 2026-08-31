@@ -1,9 +1,9 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17360
+// Function ID: 17361
 // Name: ContentInventoryFeature
 // Dependencies: [2]
 
-// Module 17327 (ContentInventoryFeature)
+// Module 17360 (ContentInventoryFeature)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ContentInventoryFeature.tsx");

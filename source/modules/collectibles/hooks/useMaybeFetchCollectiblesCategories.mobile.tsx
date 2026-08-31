@@ -1,13 +1,13 @@
-// Module ID: 8032
-// Function ID: 8033
+// Module ID: 8054
+// Function ID: 8055
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [4445, 589, 8033, 2]
+// Dependencies: [4447, 589, 8055, 2]
 // Exports: default
 
-// Module 8032 (useMaybeFetchCollectiblesCategories)
+// Module 8054 (useMaybeFetchCollectiblesCategories)
 import initialize from "initialize" /* 589 */;
-import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 8033 */;
-import closure_2 from "getUserAgnosticState" /* 4445 */;
+import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 8055 */;
+import closure_2 from "getUserAgnosticState" /* 4447 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx");
@@ -36,5 +36,9 @@ export default function useMaybeFetchCollectiblesCategories(paymentGateway) {
   if (paymentGateway != null) {
     noOp = paymentGateway.noOp;
   }
-  return useMaybeFetchCollectiblesCategoriesShared.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1);
+  let skipFetch;
+  if (paymentGateway != null) {
+    skipFetch = paymentGateway.skipFetch;
+  }
+  return useMaybeFetchCollectiblesCategoriesShared.useMaybeFetchCollectiblesCategoriesShared(obj, noOp, arg1, skipFetch);
 };

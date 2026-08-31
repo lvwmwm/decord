@@ -1,14 +1,14 @@
-// Module ID: 4393
-// Function ID: 4394
+// Module ID: 4395
+// Function ID: 4396
 // Name: CopyIcon
-// Dependencies: [19, 21, 712, 4165, 4394, 2]
+// Dependencies: [19, 21, 712, 4166, 4396, 2]
 // Exports: CopyIcon
 
-// Module 4393 (CopyIcon)
+// Module 4395 (CopyIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 4394 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 4396 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

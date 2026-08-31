@@ -1,12 +1,12 @@
-// Module ID: 17377
-// Function ID: 17378
+// Module ID: 17410
+// Function ID: 17411
 // Name: _openSafetyFlow
-// Dependencies: [5, 1385, 676, 17378, 4689, 17379, 17380, 17381, 2010, 2]
+// Dependencies: [5, 1381, 676, 17411, 4691, 17412, 17413, 17414, 2009, 2]
 // Exports: openSafetyFlow
 
-// Module 17377 (_openSafetyFlow)
+// Module 17410 (_openSafetyFlow)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleRequiredAction" /* 1385 */;
+import closure_4 from "handleRequiredAction" /* 1381 */;
 import { UserRequiredActions } from "ME" /* 676 */;
 
 const require = arg1;
@@ -29,7 +29,7 @@ function _openSafetyFlow() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -56,7 +56,7 @@ function _openSafetyFlow() {
               closure_2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "ct", done: true };
+              return { value: "Object", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -131,7 +131,7 @@ function _openSafetyFlow() {
               }
               constants = 0;
               c7 = 3;
-              return { value: "HermesInternal", done: null };
+              return { value: "HermesInternal", done: "HermesInternal" };
             }
             c7 = 3;
           }

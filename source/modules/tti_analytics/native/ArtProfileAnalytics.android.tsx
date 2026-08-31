@@ -1,10 +1,10 @@
-// Module ID: 7368
-// Function ID: 7369
+// Module ID: 7389
+// Function ID: 7390
 // Name: _trackAndroidArtProfileSnapshotAsync
-// Dependencies: [32, 5, 676, 7364, 4330, 698, 2]
+// Dependencies: [32, 5, 676, 7385, 4332, 698, 2]
 // Exports: trackAndroidArtProfileSnapshot
 
-// Module 7368 (_trackAndroidArtProfileSnapshotAsync)
+// Module 7389 (_trackAndroidArtProfileSnapshotAsync)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { AnalyticEvents } from "ME" /* 676 */;
@@ -29,7 +29,7 @@ function _trackAndroidArtProfileSnapshotAsync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: null };
+          return { value: "HermesInternal", done: "HermesInternal" };
         }
       } else {
         try {
@@ -93,7 +93,7 @@ function _trackAndroidArtProfileSnapshotAsync() {
             obj2.current_profile_last_modified_ms = c5.currentProfileLastModifiedMs;
             callback2(table[5]).track(c5.ANDROID_ART_PROFILE_SNAPSHOT, obj2, { logEventProperties: true });
             c5 = 3;
-            return { value: "HermesInternal", done: null };
+            return { value: "HermesInternal", done: "HermesInternal" };
           }
         } catch (tmp6) {
           c5 = tmp;

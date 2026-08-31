@@ -1,9 +1,9 @@
-// Module ID: 16463
-// Function ID: 16464
+// Module ID: 16497
+// Function ID: 16498
 // Name: NativeAPNGPreloadModule
 // Dependencies: [17, 2]
 
-// Module 16463 (NativeAPNGPreloadModule)
+// Module 16497 (NativeAPNGPreloadModule)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

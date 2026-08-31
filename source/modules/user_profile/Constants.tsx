@@ -1,13 +1,13 @@
-// Module ID: 8502
-// Function ID: 8503
+// Module ID: 8524
+// Function ID: 8525
 // Name: USER_PROFILE_TOOLTIP_DELAY
-// Dependencies: [676, 8503, 2]
+// Dependencies: [676, 8525, 2]
 // Exports: getBadgeAssetFromCDN, getBadgeName
 
-// Module 8502 (USER_PROFILE_TOOLTIP_DELAY)
+// Module 8524 (USER_PROFILE_TOOLTIP_DELAY)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import BadgeId from "BadgeId" /* 8503 */;
+import BadgeId from "BadgeId" /* 8525 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("modules/user_profile/Constants.tsx");

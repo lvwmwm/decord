@@ -1,18 +1,18 @@
-// Module ID: 6194
-// Function ID: 6195
+// Module ID: 6197
+// Function ID: 6198
 // Name: useInputStyles
-// Dependencies: [19, 17, 21, 712, 4166, 4446, 6195, 4442, 4186, 4892, 2]
+// Dependencies: [19, 17, 21, 712, 4167, 4448, 6198, 4444, 4187, 4895, 2]
 // Exports: InputFieldContainer
 
-// Module 6194 (useInputStyles)
+// Module 6197 (useInputStyles)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4166 */;
-import Text from "Text" /* 4442 */;
-import InputHeights from "InputHeights" /* 6195 */;
+import map from "map" /* 4167 */;
+import Text from "Text" /* 4444 */;
+import InputHeights from "InputHeights" /* 6198 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4446 */;
+import createCacheKey from "createCacheKey" /* 4448 */;
 
 require = arg1;
 function useInputStyles(size) {
@@ -40,11 +40,11 @@ function useInputStyles(size) {
     INPUT_FIELD_RADIUS_LG = ThemesDefault.modules.mobile.INPUT_FIELD_RADIUS_LG;
   }
   let token = map.useToken(INPUT_FIELD_RADIUS_LG);
-  let tmpResult = tmp(4166);
+  let tmpResult = tmp(4167);
   if (flag) {
     token = tmpResult.useToken(ThemesDefault.modules.mobile.INPUT_FIELD_ROUND_RADIUS);
   }
-  tmpResult = tmp(4166);
+  tmpResult = tmp(4167);
   if ("sm" === str) {
     let INPUT_FIELD_TEXT_STYLE_LG = tmp7(712).modules.mobile.INPUT_FIELD_TEXT_STYLE_SM;
   } else if ("md" === str) {

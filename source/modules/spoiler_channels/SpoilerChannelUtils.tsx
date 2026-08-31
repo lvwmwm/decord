@@ -1,12 +1,12 @@
-// Module ID: 6139
-// Function ID: 6140
+// Module ID: 6142
+// Function ID: 6143
 // Name: isChannelSpoilerGated
-// Dependencies: [1391, 6140, 589, 2]
+// Dependencies: [1387, 6143, 589, 2]
 // Exports: shouldShowSpoilerGateForChannelId, useGetSpoilerGatingChannelId, useIsChannelSpoilerGated, useShouldShowSpoilerGateForChannelId
 
-// Module 6139 (isChannelSpoilerGated)
-import closure_2 from "ensureGuildLoaded" /* 1391 */;
-import closure_3 from "initialize" /* 6140 */;
+// Module 6142 (isChannelSpoilerGated)
+import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "initialize" /* 6143 */;
 
 const require = arg1;
 function isChannelSpoilerGated(channel) {

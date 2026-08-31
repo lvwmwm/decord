@@ -1,14 +1,14 @@
-// Module ID: 11963
-// Function ID: 11964
+// Module ID: 11996
+// Function ID: 11997
 // Name: ChatXIcon
-// Dependencies: [19, 21, 712, 4165, 11964, 2]
+// Dependencies: [19, 21, 712, 4166, 11997, 2]
 // Exports: ChatXIcon
 
-// Module 11963 (ChatXIcon)
+// Module 11996 (ChatXIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4165 */;
-import registerAsset from "registerAsset" /* 11964 */;
+import BaseIconImage from "BaseIconImage" /* 4166 */;
+import registerAsset from "registerAsset" /* 11997 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

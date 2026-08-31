@@ -1,10 +1,10 @@
-// Module ID: 14743
-// Function ID: 14744
+// Module ID: 14777
+// Function ID: 14778
 // Name: getRoleSubscriptionPlanId
 // Dependencies: [38, 2]
 // Exports: getRoleSubscriptionMutationPlanId, getRoleSubscriptionPlanId
 
-// Module 14743 (getRoleSubscriptionPlanId)
+// Module 14777 (getRoleSubscriptionPlanId)
 import set from "set" /* 2 */;
 import _modDef38 from "module_38" /* 38 */;
 

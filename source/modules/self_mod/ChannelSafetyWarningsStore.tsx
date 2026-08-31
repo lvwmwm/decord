@@ -1,13 +1,13 @@
-// Module ID: 10591
-// Function ID: 10592
+// Module ID: 10615
+// Function ID: 10616
 // Name: handleConnectionOpen
-// Dependencies: [1391, 687, 589, 709, 2]
+// Dependencies: [1387, 687, 589, 709, 2]
 
-// Module 10591 (handleConnectionOpen)
+// Module 10615 (handleConnectionOpen)
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "ensureGuildLoaded" /* 1391 */;
+import closure_0 from "ensureGuildLoaded" /* 1387 */;
 import set from "set" /* 2 */;
 
 function handleConnectionOpen() {
