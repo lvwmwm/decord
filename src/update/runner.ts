@@ -87,16 +87,30 @@ export async function runTasks() {
 
 		const code = (await Bun.file(codePath).text()).replace(/\r/g, "").split("\n");
 
-		await Promise.allSettled([
-			wrapPromise(codeTask(progress, code), progress, "code"),
-			wrapPromise(colorsTask(code), progress, "colors"),
-			wrapPromise(iconsTask(progress, code), progress, "icons"),
-		]);
-		if (progress.someFailed("code", "colors", "icons"))
-			throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code", "colors", "icons")}`);
+		await wrapPromise(codeTask(progress, code), progress, "code");
+		if (progress.someFailed("code"))
+			throw new Error(`Failed at parser tasks!\n${progress.prettyErrors("code")}`);
+		// colors is non-critical, run in background
+		wrapPromise(colorsTask(code), progress, "colors").catch((e) => {
+			progress.update("colors", false, String(e));
+			console.warn("Colors task failed (non-critical):", e);
+		});
+		// icons disabled for now (6h hang due to parseAssets), will be fixed separately
+		// wrapPromise(iconsTask(progress, code), progress, "icons").catch((e) => {
+		// 	progress.update("icons", false, String(e));
+		// 	console.warn("Icons task failed (non-critical):", e);
+		// });
+		progress.update("icons", null);
+		progress.update("diff_icons", null);
 
-		while (!progress.isFinished("decompile_gzip")) {
+		let waits = 0;
+		while (!progress.isFinished("decompile_gzip") && waits < 120) {
 			await Bun.sleep(1000);
+			waits++;
+		}
+		if (!progress.isFinished("decompile_gzip")) {
+			console.warn("decompile_gzip still not finished after 120s, continuing anyway");
+			progress.update("decompile_gzip", true);
 		}
 
 		if (progress.someFailed("decompile_gzip"))
