@@ -1,11 +1,11 @@
 // Module ID: 1995
 // Function ID: 1996
 // Name: combined
-// Dependencies: [1996, 676, 4075, 500, 2]
+// Dependencies: [1996, 676, 4105, 500, 2]
 
 // Module 1995 (combined)
 import set from "set" /* 500 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4075 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4105 */;
 import closure_3 from "_getSystemLocale" /* 1996 */;
 import ME from "ME" /* 676 */;
 

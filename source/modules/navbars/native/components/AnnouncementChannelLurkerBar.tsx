@@ -1,14 +1,14 @@
-// Module ID: 10923
-// Function ID: 10924
+// Module ID: 10961
+// Function ID: 10962
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 4448, 712, 4444, 1236, 4896, 10924, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 4474, 1236, 4928, 10962, 2]
 
-// Module 10923 (AnnouncementChannelLurkerBar)
+// Module 10961 (AnnouncementChannelLurkerBar)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 class AnnouncementChannelLurkerBar {

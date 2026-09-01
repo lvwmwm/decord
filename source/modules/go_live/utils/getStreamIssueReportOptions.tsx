@@ -1,13 +1,13 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16797
+// Function ID: 16798
 // Name: getStreamIssueReportOptions
-// Dependencies: [4515, 1236, 2]
+// Dependencies: [4545, 1236, 2]
 // Exports: default
 
-// Module 16761 (getStreamIssueReportOptions)
+// Module 16797 (getStreamIssueReportOptions)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import StreamIssueReportReasons2 from "StreamIssueReportReasons" /* 4515 */;
+import StreamIssueReportReasons2 from "StreamIssueReportReasons" /* 4545 */;
 
 const StreamIssueReportReasons = StreamIssueReportReasons2.StreamIssueReportReasons;
 const result = set.fileFinishedImporting("modules/go_live/utils/getStreamIssueReportOptions.tsx");

@@ -1,23 +1,23 @@
-// Module ID: 9878
-// Function ID: 9879
+// Module ID: 9917
+// Function ID: 9918
 // Name: Loading
-// Dependencies: [32, 19, 17, 1392, 9871, 1909, 4091, 7449, 676, 21, 4448, 712, 9879, 1628, 5921, 5941, 5927, 589, 4433, 7471, 9870, 4415, 8859, 9880, 1306, 9882, 5590, 5589, 1236, 1297, 9901, 9905, 9907, 6189, 9899, 9943, 9944, 2]
+// Dependencies: [32, 19, 17, 1392, 9910, 1909, 4121, 7481, 676, 21, 4478, 712, 9918, 1628, 5953, 5973, 5959, 589, 4463, 7503, 9909, 4445, 8896, 9919, 1306, 9921, 5622, 5621, 1236, 1297, 9940, 9944, 9946, 6221, 9938, 9982, 9983, 2]
 // Exports: default
 
-// Module 9878 (Loading)
+// Module 9917 (Loading)
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef9879 from "module_9879" /* 9879 */;
+import _modDef9918 from "module_9918" /* 9918 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
-import closure_8 from "updateWithLatestInvite" /* 9871 */;
+import closure_8 from "updateWithLatestInvite" /* 9910 */;
 import closure_9 from "createGuildRecordFromRust" /* 1909 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4091 */;
-import { InviteTargetTypes } from "InviteSendStates" /* 7449 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4121 */;
+import { InviteTargetTypes } from "InviteSendStates" /* 7481 */;
 import { Permissions } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function Loading() {
@@ -31,7 +31,7 @@ function Loading() {
     let tmp4 = dependencyMap;
     let obj = { row: null };
     obj[0] = num;
-    let arr = items.push(callback2(_modDef9879, obj, num));
+    let arr = items.push(callback2(_modDef9918, obj, num));
     num = num + 1;
   } while (num < 10);
   obj = { children: null };

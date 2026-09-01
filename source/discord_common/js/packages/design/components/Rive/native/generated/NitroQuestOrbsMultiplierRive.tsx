@@ -1,11 +1,11 @@
-// Module ID: 4257
-// Function ID: 4258
+// Module ID: 4287
+// Function ID: 4288
 // Name: NitroQuestOrbsMultiplierRive
-// Dependencies: [109, 19, 21, 4181, 4258, 4236, 2]
+// Dependencies: [109, 19, 21, 4211, 4288, 4266, 2]
 
-// Module 4257 (NitroQuestOrbsMultiplierRive)
-import BaseRive from "BaseRive" /* 4181 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4236 */;
+// Module 4287 (NitroQuestOrbsMultiplierRive)
+import BaseRive from "BaseRive" /* 4211 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4266 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

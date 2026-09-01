@@ -1,21 +1,21 @@
-// Module ID: 17425
-// Function ID: 17426
+// Module ID: 17461
+// Function ID: 17462
 // Name: ParentalConsentConnectionNavbar
-// Dependencies: [19, 17, 1922, 21, 4448, 5460, 712, 1628, 589, 4444, 6020, 1236, 2633, 2]
+// Dependencies: [19, 17, 1922, 21, 4478, 5492, 712, 1628, 589, 4474, 6052, 1236, 2663, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 17425 (ParentalConsentConnectionNavbar)
+// Module 17461 (ParentalConsentConnectionNavbar)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import messagesProxyDefault from "messagesProxy" /* 2633 */;
-import Text from "Text" /* 4444 */;
+import messagesProxyDefault from "messagesProxy" /* 2663 */;
+import Text from "Text" /* 4474 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

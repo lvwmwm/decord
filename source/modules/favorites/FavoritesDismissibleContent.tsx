@@ -1,17 +1,17 @@
-// Module ID: 10280
-// Function ID: 10281
+// Module ID: 10319
+// Function ID: 10320
 // Name: items1
-// Dependencies: [32, 19, 1384, 1373, 6220, 10270, 10268, 10279, 6219, 10278, 2]
+// Dependencies: [32, 19, 1384, 1373, 6252, 10309, 10307, 10318, 6251, 10317, 2]
 // Exports: useFavoritesBetaTagDismissibleContent, useFavoritesMenuItemPopoverDismissibleContent, useShouldRenderFavoritesMenuItemPopover
 
-// Module 10280 (items1)
+// Module 10319 (items1)
 import DismissibleContent from "DismissibleContent" /* 1373 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6219 */;
-import canShowTimeRecurringContent from "canShowTimeRecurringContent" /* 6220 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10268 */;
-import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10270 */;
-import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10278 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10279 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 6251 */;
+import canShowTimeRecurringContent from "canShowTimeRecurringContent" /* 6252 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10307 */;
+import useFavoritesGuildConfig from "useFavoritesGuildConfig" /* 10309 */;
+import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10317 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10318 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;

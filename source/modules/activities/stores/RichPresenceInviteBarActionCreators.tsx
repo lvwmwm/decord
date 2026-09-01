@@ -1,10 +1,10 @@
-// Module ID: 11037
-// Function ID: 11038
+// Module ID: 11074
+// Function ID: 11075
 // Name: markChannelInvited
 // Dependencies: [709, 2]
 // Exports: dismissSession, markChannelInvited
 
-// Module 11037 (markChannelInvited)
+// Module 11074 (markChannelInvited)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

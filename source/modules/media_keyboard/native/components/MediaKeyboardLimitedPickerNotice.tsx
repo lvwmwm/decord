@@ -1,14 +1,14 @@
-// Module ID: 10411
-// Function ID: 10412
+// Module ID: 10450
+// Function ID: 10451
 // Name: MediaKeyboardLimitedPickerNotice
-// Dependencies: [19, 17, 21, 4448, 4444, 1236, 4896, 2]
+// Dependencies: [19, 17, 21, 4478, 4474, 1236, 4928, 2]
 // Exports: default
 
-// Module 10411 (MediaKeyboardLimitedPickerNotice)
+// Module 10450 (MediaKeyboardLimitedPickerNotice)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
@@ -34,13 +34,13 @@ export default function MediaKeyboardLimitedPickerNotice(onHeightChange) {
   obj = { style: tmp.text, variant: "text-sm/normal", children: null };
   const intl = onHeightChange(1236).intl;
   obj[2] = intl.string(onHeightChange(1236).t["5g7NcN"]);
-  const items2 = [callback(onHeightChange(4444).Text, obj), ];
+  const items2 = [callback(onHeightChange(4474).Text, obj), ];
   obj = { style: tmp.button, children: null };
   obj1 = { size: "sm", variant: "tertiary", text: null, onPress: null };
   const intl2 = onHeightChange(1236).intl;
   obj1[2] = intl2.string(onHeightChange(1236).t.JuXTi6);
   obj1[3] = onHeightChange.onPress;
-  obj[1] = callback(onHeightChange(4896).Button, obj1);
+  obj[1] = callback(onHeightChange(4928).Button, obj1);
   items2[1] = callback(View, obj);
   obj[2] = items2;
   return closure_5(View, obj);

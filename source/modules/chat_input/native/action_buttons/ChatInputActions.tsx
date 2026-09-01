@@ -1,16 +1,16 @@
-// Module ID: 11769
-// Function ID: 11770
+// Module ID: 11802
+// Function ID: 11803
 // Name: ChatInputActions
-// Dependencies: [32, 19, 11502, 676, 21, 4448, 712, 4901, 7584, 4167, 6201, 4312, 1626, 11770, 7557, 4892, 5063, 1236, 10407, 5004, 10392, 11771, 9211, 10156, 11743, 11745, 698, 4187, 8755, 11773, 4171, 11774, 11775, 11779, 2]
+// Dependencies: [32, 19, 11535, 676, 21, 4478, 712, 4933, 7616, 4197, 6233, 4342, 1626, 11803, 7589, 4924, 5095, 1236, 10446, 5036, 10431, 11804, 9250, 10195, 11776, 11778, 7591, 698, 4217, 8792, 11806, 4201, 11807, 11808, 11812, 2]
 
-// Module 11769 (ChatInputActions)
+// Module 11802 (ChatInputActions)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import TextAreaCta from "TextAreaCta" /* 11502 */;
+import TextAreaCta from "TextAreaCta" /* 11535 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -161,7 +161,7 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
       obj5[0] = intl7.string(canStartThreads(isAppLauncherEnabled[17]).t["3+ii4F"]);
       obj5[1] = canStartThreads(isAppLauncherEnabled[24]).CalendarPlusIcon;
       obj5[2] = function action() {
-        return closure_1_0(closure_1_2[25]).openScheduleMessageActionSheet(id.id);
+        return closure_1_0(closure_1_2[25]).openScheduleMessageActionSheet(id.id, closure_1_0(closure_1_2[26]).ScheduledMessageEntryPoint.ATTACH_MENU);
       };
       items.push(obj5);
     }
@@ -169,7 +169,7 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
   }, items);
   let items1 = [onContextMenuOpen];
   closure_22 = importAllResult.useCallback(() => {
-    let obj = channel(isAppLauncherEnabled[26]);
+    let obj = channel(isAppLauncherEnabled[27]);
     obj = { type: canPostPolls.OPENED };
     obj.track(onPollsPress.CHAT_INPUT_OMNI_BUTTON_ACTION, obj);
     if (onContextMenuOpen != null) {
@@ -178,7 +178,7 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
   }, items1);
   closure_23 = importAllResult.useCallback((arg0) => {
     if (arg0) {
-      let obj = channel(isAppLauncherEnabled[26]);
+      let obj = channel(isAppLauncherEnabled[27]);
       obj = { type: null };
       obj[0] = canPostPolls.CLOSED;
       obj.track(onPollsPress.CHAT_INPUT_OMNI_BUTTON_ACTION, obj);
@@ -200,7 +200,7 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
   X.__workletHash = 13622805272332;
   X.__initData = closure_11;
   obj = { children: null };
-  const animatedStyle = canStartThreads(isAppLauncherEnabled[27]).useAnimatedStyle(X);
+  const animatedStyle = canStartThreads(isAppLauncherEnabled[28]).useAnimatedStyle(X);
   obj1 = {
     style: items3,
     children: items2.map((arg0, arg1) => {
@@ -214,10 +214,10 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
           obj[5] = function children(arg0) {
             ({ ref, accessibilityActions, onAccessibilityAction } = arg0);
             let obj = { ref: null, accessibilityLabel: null, accessibilityHint: null, accessibilityState: null, accessibilityActions: null, onAccessibilityAction: null, active: null, activeIconStyle: null, disabled: null, IconComponent: null, onPress: null };
-            const tmp = channel(isAppLauncherEnabled[29]);
+            const tmp = channel(isAppLauncherEnabled[30]);
             const items = [ref, closure_1_20, closure_1_9];
             const items1 = [...items.filter(Boolean)];
-            obj[0] = canStartThreads(isAppLauncherEnabled[30]).mergeRefs.apply(items1);
+            obj[0] = canStartThreads(isAppLauncherEnabled[31]).mergeRefs.apply(items1);
             const intl = canStartThreads(isAppLauncherEnabled[17]).intl;
             obj[1] = intl.string(canStartThreads(isAppLauncherEnabled[17]).t.aDZSuz);
             const intl2 = canStartThreads(isAppLauncherEnabled[17]).intl;
@@ -229,16 +229,16 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
             obj[6] = active;
             obj[7] = closure_1_11.activeBrand;
             obj[8] = closure_1_4;
-            obj[9] = canStartThreads(isAppLauncherEnabled[31]).MediaKeyboardButtonIcon;
+            obj[9] = canStartThreads(isAppLauncherEnabled[32]).MediaKeyboardButtonIcon;
             obj[10] = function onPress(arg0) {
               return callback(arg0, closure_1_5.PHOTOS);
             };
             return onAttachPress(tmp, obj);
           };
-          let tmp44Result = onAttachPress(canStartThreads(isAppLauncherEnabled[28]).ContextMenu, obj, arg1);
+          let tmp44Result = onAttachPress(canStartThreads(isAppLauncherEnabled[29]).ContextMenu, obj, arg1);
         } else {
           if (null != closure_9) {
-            let obj4 = canStartThreads(tmp46[30]);
+            let obj4 = canStartThreads(tmp46[31]);
             let mergeRefsResult = obj4.mergeRefs(closure_20, tmp48);
           } else {
             mergeRefsResult = closure_20;
@@ -255,13 +255,13 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
           obj[4] = active;
           obj[5] = closure_11.activeBrand;
           obj[6] = closure_4;
-          obj[7] = canStartThreads(isAppLauncherEnabled[31]).MediaKeyboardButtonIcon;
+          obj[7] = canStartThreads(isAppLauncherEnabled[32]).MediaKeyboardButtonIcon;
           obj[8] = function onPress(arg0) {
             return callback(arg0, closure_1_5.PHOTOS);
           };
-          tmp44Result = onAttachPress(channel(isAppLauncherEnabled[29]), obj, arg1);
+          tmp44Result = onAttachPress(channel(isAppLauncherEnabled[30]), obj, arg1);
           const tmp44 = onAttachPress;
-          const tmp47 = channel(isAppLauncherEnabled[29]);
+          const tmp47 = channel(isAppLauncherEnabled[30]);
         }
         return tmp44Result;
       } else if (tmp.APPS === type) {
@@ -272,7 +272,7 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
         obj2[3] = onPressAction;
         obj2[4] = closure_12;
         obj2[5] = closure_11.activeBrand;
-        return onAttachPress(channel(isAppLauncherEnabled[32]), obj2, arg1);
+        return onAttachPress(channel(isAppLauncherEnabled[33]), obj2, arg1);
       } else if (tmp.ALL_PHOTOS === type) {
         const obj3 = { accessibilityLabel: null, accessible: null, accessibilityState: null, active: null, activeIconStyle: null, disabled: null, IconComponent: null, onPress: null, style: null };
         let intl = canStartThreads(isAppLauncherEnabled[17]).intl;
@@ -289,7 +289,7 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
           return callback(arg0, closure_1_5.ALL_PHOTOS);
         };
         obj3[8] = closure_12;
-        return onAttachPress(channel(isAppLauncherEnabled[29]), obj3, arg1);
+        return onAttachPress(channel(isAppLauncherEnabled[30]), obj3, arg1);
       } else {
         obj = { accessible: null, canStartThreads: null, channel: null, onPress: null, styleButtonWrapper: null, styleButton: null, shouldShowThread: null };
         obj[0] = !closure_24;
@@ -310,12 +310,12 @@ const forwardRefResult = importAllResult.forwardRef((canStartThreads, ref) => {
           tmp12 = tmp13;
         }
         obj[6] = tmp12;
-        return onAttachPress(channel(isAppLauncherEnabled[33]), obj, "gift-or-thread");
+        return onAttachPress(channel(isAppLauncherEnabled[34]), obj, "gift-or-thread");
       }
     })
   };
   items3 = [tmp.actions, animatedStyle, { gap: token }];
-  obj[0] = onAttachPress(tmp4(isAppLauncherEnabled[27]).View, obj1);
+  obj[0] = onAttachPress(tmp4(isAppLauncherEnabled[28]).View, obj1);
   return onAttachPress(closure_9, obj);
 });
 forwardRefResult.displayName = "ChatInputActions";

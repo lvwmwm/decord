@@ -1,9 +1,9 @@
-// Module ID: 4367
-// Function ID: 4368
+// Module ID: 4397
+// Function ID: 4398
 // Name: getGuild
 // Dependencies: [1426, 589, 709, 2]
 
-// Module 4367 (getGuild)
+// Module 4397 (getGuild)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;

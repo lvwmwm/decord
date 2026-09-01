@@ -1,11 +1,11 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17380
+// Function ID: 17381
 // Name: useInviteApplicationBypassInfo
-// Dependencies: [4091, 676, 589, 2]
+// Dependencies: [4121, 676, 589, 2]
 // Exports: useInviteApplicationBypassInfo
 
-// Module 17344 (useInviteApplicationBypassInfo)
-import closure_2 from "getUncachedChannelPermissions" /* 4091 */;
+// Module 17380 (useInviteApplicationBypassInfo)
+import closure_2 from "getUncachedChannelPermissions" /* 4121 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

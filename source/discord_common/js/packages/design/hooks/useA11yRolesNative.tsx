@@ -1,10 +1,10 @@
-// Module ID: 4175
-// Function ID: 4176
+// Module ID: 4205
+// Function ID: 4206
 // Name: useCheckboxA11yNative
 // Dependencies: [17, 2]
 // Exports: useCheckboxA11yNative, useRadioA11yNative
 
-// Module 4175 (useCheckboxA11yNative)
+// Module 4205 (useCheckboxA11yNative)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

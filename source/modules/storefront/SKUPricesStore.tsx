@@ -1,9 +1,9 @@
-// Module ID: 6047
-// Function ID: 6048
+// Module ID: 6079
+// Function ID: 6080
 // Name: resetStoreState
 // Dependencies: [1996, 589, 1471, 709, 2]
 
-// Module 6047 (resetStoreState)
+// Module 6079 (resetStoreState)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;

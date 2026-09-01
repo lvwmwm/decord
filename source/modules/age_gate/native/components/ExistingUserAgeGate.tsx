@@ -1,10 +1,10 @@
-// Module ID: 16850
-// Function ID: 16851
+// Module ID: 16886
+// Function ID: 16887
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 1381, 1922, 1221, 16848, 676, 21, 4448, 1499, 589, 698, 1236, 1995, 38, 15516, 4691, 4045, 15539, 5521, 4444, 16851, 4896, 2]
+// Dependencies: [5, 32, 19, 17, 1381, 1922, 1221, 16884, 676, 21, 4478, 1499, 589, 698, 1236, 1995, 38, 15551, 4723, 4075, 15574, 5553, 4474, 16887, 4928, 2]
 // Exports: default
 
-// Module 16850 (ExistingUserAgeGate)
+// Module 16886 (ExistingUserAgeGate)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -12,10 +12,10 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "handleRequiredAction" /* 1381 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import result from "result" /* 1221 */;
-import { ExistingUserAgeGateScreens as closure_11 } from "ExistingUserAgeGateScreens" /* 16848 */;
+import { ExistingUserAgeGateScreens as closure_11 } from "ExistingUserAgeGateScreens" /* 16884 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ AgeGateAnalyticAction: c9, AgeGateSource: c10 } = result);
@@ -64,7 +64,7 @@ export default function ExistingUserAgeGate(onSuccess) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -174,7 +174,7 @@ export default function ExistingUserAgeGate(onSuccess) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -219,7 +219,7 @@ export default function ExistingUserAgeGate(onSuccess) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c0 = tmp;
           throw tmp10;

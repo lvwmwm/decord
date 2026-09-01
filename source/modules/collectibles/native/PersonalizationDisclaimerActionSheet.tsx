@@ -1,21 +1,21 @@
-// Module ID: 15395
-// Function ID: 15396
+// Module ID: 15429
+// Function ID: 15430
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 676, 21, 4448, 712, 4160, 1995, 5590, 4444, 1236, 5344, 4896, 8691, 4415, 2]
+// Dependencies: [19, 676, 21, 4478, 712, 4190, 1995, 5622, 4474, 1236, 5376, 4928, 8728, 4445, 2]
 // Exports: default
 
-// Module 15395 (PersonalizationDisclaimerActionSheet)
+// Module 15429 (PersonalizationDisclaimerActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import Button from "Button" /* 4896 */;
-import ButtonGroup from "ButtonGroup" /* 5344 */;
-import Background from "Background" /* 5590 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8691 */;
+import Text from "Text" /* 4474 */;
+import Button from "Button" /* 4928 */;
+import ButtonGroup from "ButtonGroup" /* 5376 */;
+import Background from "Background" /* 5622 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8728 */;
 import closure_3 from "noop" /* 19 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -30,7 +30,7 @@ const result = require("set").fileFinishedImporting("modules/collectibles/native
 export default function PersonalizationDisclaimerActionSheet() {
   const tmp = callback3();
   const callback = React.useCallback(() => {
-    const obj = callback(4160);
+    const obj = callback(4190);
     obj.openURL(callback(1995).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
   }, []);
   let obj = { contentStyles: tmp.container, children: null };
@@ -49,7 +49,7 @@ export default function PersonalizationDisclaimerActionSheet() {
   const intl3 = getSystemLocale.intl;
   obj3[2] = intl3.string(getSystemLocale.t.WAI6xu);
   obj3[3] = function onPress() {
-    return callback(4415).hideActionSheet();
+    return callback(4445).hideActionSheet();
   };
   items1[1] = callback(Button.Button, obj3);
   obj[0] = items1;

@@ -1,13 +1,13 @@
-// Module ID: 14108
-// Function ID: 14109
+// Module ID: 14141
+// Function ID: 14142
 // Name: items
-// Dependencies: [4431, 1486, 1236, 2]
+// Dependencies: [4461, 1486, 1236, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 14108 (items)
+// Module 14141 (items)
 import set from "set" /* 2 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
-import getPathsFromURL from "getPathsFromURL" /* 4431 */;
+import getPathsFromURL from "getPathsFromURL" /* 4461 */;
 
 const items = [getPathsFromURL.parseQuestsEmbedCode];
 const result = set.fileFinishedImporting("modules/activities/utils/activityShareLink.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 12508
-// Function ID: 12509
+// Module ID: 12541
+// Function ID: 12542
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4448, 712, 1950, 12509, 12511, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 712, 1950, 12542, 12544, 2]
 // Exports: default
 
-// Module 12508 (ProductDetailsActionSheetPreview)
+// Module 12541 (ProductDetailsActionSheetPreview)
 import ThemesDefault from "Themes" /* 712 */;
-import memoDefault from "memo" /* 12509 */;
+import memoDefault from "memo" /* 12542 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ useCallback: c4, useState: c5 } = noop);
@@ -50,7 +50,7 @@ export default function ProductDetailsActionSheetPreview(onBundleActiveItemChang
     obj1[1] = tmp3;
     obj1[2] = handlePreviewPress;
     obj1[3] = onTrackPress;
-    obj[1] = tmp7(_require(12511).IndividualProductPreview, obj1);
+    obj[1] = tmp7(_require(12544).IndividualProductPreview, obj1);
     tmp7Result = tmp7(tmp8, obj);
   }
   obj[2] = tmp7Result;

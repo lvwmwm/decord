@@ -1,18 +1,18 @@
-// Module ID: 8850
-// Function ID: 8851
+// Module ID: 8887
+// Function ID: 8888
 // Name: CollectiblesShopCardInternalV2
-// Dependencies: [19, 17, 1302, 7255, 678, 21, 4448, 712, 8851, 7266, 8852, 8854, 8856, 8857, 1236, 4164, 5921, 12587, 12505, 12497, 589, 1363, 5036, 7267, 1950, 8064, 4444, 8062, 11921, 12501, 10716, 12502, 12589, 12590, 8853, 4415, 12494, 12592, 12593, 4109, 12506, 12522, 12594, 12596, 514, 2]
+// Dependencies: [19, 17, 1302, 7287, 678, 21, 4478, 712, 8888, 7298, 8889, 8891, 8893, 8894, 1236, 4194, 5953, 12620, 12538, 12530, 589, 1363, 5068, 7299, 1950, 8096, 4474, 8094, 11954, 12534, 10754, 12535, 12622, 12623, 8890, 4445, 12527, 12625, 12626, 4139, 12539, 12555, 12627, 12629, 514, 2]
 
-// Module 8850 (CollectiblesShopCardInternalV2)
+// Module 8887 (CollectiblesShopCardInternalV2)
 import ThemesDefault from "Themes" /* 712 */;
-import context from "context" /* 8853 */;
+import context from "context" /* 8890 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
-import closure_6 from "updateCategoriesAndProducts" /* 7255 */;
+import closure_6 from "updateCategoriesAndProducts" /* 7287 */;
 import items from "items" /* 678 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function CollectiblesShopCardInternalV2(product) {

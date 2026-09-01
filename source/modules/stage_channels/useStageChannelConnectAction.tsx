@@ -1,13 +1,13 @@
-// Module ID: 9604
-// Function ID: 9605
+// Module ID: 9643
+// Function ID: 9644
 // Name: useStageChannelConnectAction
-// Dependencies: [8635, 9600, 2]
+// Dependencies: [8667, 9639, 2]
 // Exports: default, useStageChannelStartEvent
 
-// Module 9604 (useStageChannelConnectAction)
+// Module 9643 (useStageChannelConnectAction)
 import set from "set" /* 2 */;
-import useStageChannelIsLiveDefault from "useStageChannelIsLive" /* 8635 */;
-import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 9600 */;
+import useStageChannelIsLiveDefault from "useStageChannelIsLive" /* 8667 */;
+import useCurrentUserStageRolesDefault from "useCurrentUserStageRoles" /* 9639 */;
 
 const obj = { NORMAL: 0, [0]: "NORMAL", START_EVENT: 1, [1]: "START_EVENT" };
 const result = set.fileFinishedImporting("modules/stage_channels/useStageChannelConnectAction.tsx");

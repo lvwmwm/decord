@@ -1,15 +1,15 @@
-// Module ID: 12023
-// Function ID: 12024
+// Module ID: 12056
+// Function ID: 12057
 // Name: getState
-// Dependencies: [4355, 1909, 4334, 12024, 589, 709, 2]
+// Dependencies: [4385, 1909, 4364, 12057, 589, 709, 2]
 
-// Module 12023 (getState)
+// Module 12056 (getState)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 12024 */;
-import closure_2 from "handleGameServerInstanceCreated" /* 4355 */;
+import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 12057 */;
+import closure_2 from "handleGameServerInstanceCreated" /* 4385 */;
 import closure_3 from "createGuildRecordFromRust" /* 1909 */;
-import closure_4 from "calculateAppliedBoosts" /* 4334 */;
+import closure_4 from "calculateAppliedBoosts" /* 4364 */;
 
 require = arg1;
 let closure_5 = {};

@@ -1,12 +1,12 @@
-// Module ID: 14173
-// Function ID: 14174
+// Module ID: 14206
+// Function ID: 14207
 // Name: USE_ALT_GATEWAY_KEY
-// Dependencies: [1468, 2, 14174]
+// Dependencies: [1468, 2, 14207]
 // Exports: useShouldUseAltGateway
 
-// Module 14173 (USE_ALT_GATEWAY_KEY)
+// Module 14206 (USE_ALT_GATEWAY_KEY)
 import set from "set" /* 2 */;
-import USE_ALT_GATEWAY_KEY from "USE_ALT_GATEWAY_KEY" /* 14174 */;
+import USE_ALT_GATEWAY_KEY from "USE_ALT_GATEWAY_KEY" /* 14207 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 
 const obj = { 1: null, 2: { enableAltGateway: false } };

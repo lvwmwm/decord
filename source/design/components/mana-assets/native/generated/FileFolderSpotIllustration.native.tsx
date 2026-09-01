@@ -1,14 +1,14 @@
-// Module ID: 6515
-// Function ID: 6516
+// Module ID: 6547
+// Function ID: 6548
 // Name: FileFolderSpotIllustration
-// Dependencies: [21, 5461, 6516, 2]
+// Dependencies: [21, 5493, 6548, 2]
 // Exports: FileFolderSpotIllustration
 
-// Module 6515 (FileFolderSpotIllustration)
+// Module 6547 (FileFolderSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6516 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6548 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/FileFolderSpotIllustration.native.tsx");

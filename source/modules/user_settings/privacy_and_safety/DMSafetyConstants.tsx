@@ -1,9 +1,9 @@
-// Module ID: 4138
-// Function ID: 4139
+// Module ID: 4168
+// Function ID: 4169
 // Name: items
 // Dependencies: [1306, 2]
 
-// Module 4138 (items)
+// Module 4168 (items)
 import set from "set" /* 2 */;
 import create from "create" /* 1306 */;
 

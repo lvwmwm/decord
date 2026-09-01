@@ -1,11 +1,11 @@
-// Module ID: 5949
-// Function ID: 5950
+// Module ID: 5981
+// Function ID: 5982
 // Name: _copy
-// Dependencies: [5, 5950, 2]
+// Dependencies: [5, 5982, 2]
 // Exports: copy, getString
 
-// Module 5949 (_copy)
-import useClipboardDefault from "useClipboard" /* 5950 */;
+// Module 5981 (_copy)
+import useClipboardDefault from "useClipboard" /* 5982 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 function _copy() {
@@ -27,7 +27,7 @@ function _copy() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -63,7 +63,7 @@ function _copy() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           c2 = tmp;

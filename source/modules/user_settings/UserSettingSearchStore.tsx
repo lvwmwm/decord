@@ -1,11 +1,11 @@
-// Module ID: 14309
-// Function ID: 14310
+// Module ID: 14342
+// Function ID: 14343
 // Name: zustandStore
-// Dependencies: [4314, 2]
+// Dependencies: [4344, 2]
 
-// Module 14309 (zustandStore)
+// Module 14342 (zustandStore)
 import set from "set" /* 2 */;
-import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4314 */;
+import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4344 */;
 
 const zustandStore = defaultStatesAreEqual.createZustandStore(() => ({ query: "", isActive: false, isFocused: false, selected: null }));
 const result = set.fileFinishedImporting("modules/user_settings/UserSettingSearchStore.tsx");

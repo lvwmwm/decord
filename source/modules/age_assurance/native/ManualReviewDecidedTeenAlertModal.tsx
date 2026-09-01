@@ -1,14 +1,14 @@
-// Module ID: 8698
-// Function ID: 8699
+// Module ID: 8735
+// Function ID: 8736
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 21, 4831, 1236, 2921, 4831, 2]
+// Dependencies: [19, 21, 4863, 1236, 2951, 4863, 2]
 // Exports: default
 
-// Module 8698 (ManualReviewDecidedTeenAlertModal)
+// Module 8735 (ManualReviewDecidedTeenAlertModal)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2921 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4831 */;
+import messagesProxyDefault from "messagesProxy" /* 2951 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4863 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

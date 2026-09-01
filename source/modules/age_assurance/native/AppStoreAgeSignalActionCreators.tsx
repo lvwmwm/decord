@@ -1,10 +1,10 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 17040
+// Function ID: 17041
 // Name: _requestAgeSignalChallenge
 // Dependencies: [5, 676, 530, 2]
 // Exports: requestAgeSignalChallenge, submitAgeSignal
 
-// Module 17004 (_requestAgeSignalChallenge)
+// Module 17040 (_requestAgeSignalChallenge)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -58,7 +58,7 @@ function _submitAgeSignal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -97,7 +97,7 @@ function _submitAgeSignal() {
             return obj;
           } else {
             constants = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           constants = tmp;

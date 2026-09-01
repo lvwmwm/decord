@@ -1,14 +1,14 @@
-// Module ID: 14679
-// Function ID: 14680
+// Module ID: 14712
+// Function ID: 14713
 // Name: UnsendIcon
-// Dependencies: [19, 21, 712, 4166, 14680, 2]
+// Dependencies: [19, 21, 712, 4196, 14713, 2]
 // Exports: UnsendIcon
 
-// Module 14679 (UnsendIcon)
+// Module 14712 (UnsendIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14680 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 14713 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

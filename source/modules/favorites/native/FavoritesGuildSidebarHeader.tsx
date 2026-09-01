@@ -1,23 +1,23 @@
-// Module ID: 15833
-// Function ID: 15834
+// Module ID: 15869
+// Function ID: 15870
 // Name: EmptyBody
-// Dependencies: [19, 17, 15755, 21, 4448, 712, 10268, 10675, 4415, 10272, 2009, 10271, 4444, 1236, 3149, 4997, 5018, 4988, 4894, 2]
+// Dependencies: [19, 17, 15791, 21, 4478, 712, 10307, 10713, 4445, 10311, 2009, 10310, 4474, 1236, 3179, 5029, 5050, 5020, 4926, 2]
 // Exports: default
 
-// Module 15833 (EmptyBody)
+// Module 15869 (EmptyBody)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3149 */;
-import Text from "Text" /* 4444 */;
-import Stack from "Stack" /* 4894 */;
-import ChatIcon from "ChatIcon" /* 4988 */;
-import TextIcon from "TextIcon" /* 4997 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5018 */;
+import messagesProxyDefault from "messagesProxy" /* 3179 */;
+import Text from "Text" /* 4474 */;
+import Stack from "Stack" /* 4926 */;
+import ChatIcon from "ChatIcon" /* 5020 */;
+import TextIcon from "TextIcon" /* 5029 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5050 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useHasFavoritesGuildSuggestions as closure_5 } from "items" /* 15755 */;
+import { useHasFavoritesGuildSuggestions as closure_5 } from "items" /* 15791 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function EmptyBody() {

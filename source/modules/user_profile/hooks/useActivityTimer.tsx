@@ -1,12 +1,12 @@
-// Module ID: 9383
-// Function ID: 9384
+// Module ID: 9422
+// Function ID: 9423
 // Name: useActivityTimer
-// Dependencies: [32, 19, 687, 8012, 4332, 2]
+// Dependencies: [32, 19, 687, 8044, 4362, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 9383 (useActivityTimer)
+// Module 9422 (useActivityTimer)
 import setDefault from "set" /* 687 */;
-import calculateTimestampDurations from "calculateTimestampDurations" /* 8012 */;
+import calculateTimestampDurations from "calculateTimestampDurations" /* 8044 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 
@@ -18,7 +18,7 @@ export default function useActivityTimer(start) {
   start = start.start;
   let first;
   importDefault = undefined;
-  const interval = new first(4332).Interval();
+  const interval = new first(4362).Interval();
   first = callback(callback3(interval), 1)[0];
   const tmp3 = callback(callback3(() => Date.now()), 2);
   importDefault = tmp3[1];

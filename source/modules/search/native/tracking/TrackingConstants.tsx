@@ -1,11 +1,11 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7621
+// Function ID: 7622
 // Name: SearchEntrypointAnalyticsLocations
-// Dependencies: [7590, 2]
+// Dependencies: [7622, 2]
 
-// Module 7589 (SearchEntrypointAnalyticsLocations)
+// Module 7621 (SearchEntrypointAnalyticsLocations)
 import set from "set" /* 2 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7590 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7622 */;
 
 ({ SearchHistoryItemTypes, SearchTabs } = MessageEmbedTypes);
 let obj = { RECENT: "recent", CHANNELS: "channels", MEDIA: "media", PINS: "pins", LINKS: "links", FILES: "files", MESSAGES: "messages", PEOPLE: "people", MEMBERS: "members", THREADS: "threads" };

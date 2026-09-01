@@ -1,10 +1,10 @@
-// Module ID: 12039
-// Function ID: 12040
+// Module ID: 12072
+// Function ID: 12073
 // Name: useIsNewGamesCoachmarkEnabled
 // Dependencies: [1468, 2]
 // Exports: useIsNewGamesCoachmarkEnabled
 
-// Module 12039 (useIsNewGamesCoachmarkEnabled)
+// Module 12072 (useIsNewGamesCoachmarkEnabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

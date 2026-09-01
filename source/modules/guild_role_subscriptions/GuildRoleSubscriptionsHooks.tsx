@@ -1,18 +1,18 @@
-// Module ID: 14775
-// Function ID: 14776
+// Module ID: 14808
+// Function ID: 14809
 // Name: useFetchListingsForGuild
-// Dependencies: [5, 32, 19, 5189, 4085, 589, 6070, 5522, 14776, 14777, 11737, 1471, 2]
+// Dependencies: [5, 32, 19, 5221, 4115, 589, 6102, 5554, 14809, 14810, 11770, 1471, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 14775 (useFetchListingsForGuild)
-import _fetchSubscriptionsSettingsAll from "_fetchSubscriptionsSettings" /* 6070 */;
-import useRequestDefault from "useRequest" /* 11737 */;
+// Module 14808 (useFetchListingsForGuild)
+import _fetchSubscriptionsSettingsAll from "_fetchSubscriptionsSettings" /* 6102 */;
+import useRequestDefault from "useRequest" /* 11770 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
-import closure_7 from "_handleConnectionOpen" /* 5189 */;
-import closure_8 from "makeGroupListingIndexSubscriptionListingTag" /* 4085 */;
-import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4085 */;
+import closure_7 from "_handleConnectionOpen" /* 5221 */;
+import closure_8 from "makeGroupListingIndexSubscriptionListingTag" /* 4115 */;
+import { FetchState } from "makeGroupListingIndexSubscriptionListingTag" /* 4115 */;
 
 const require = arg1;
 function useFetchListingsForGuild(guildId) {
@@ -98,7 +98,7 @@ export const useCreateSubscriptionGroupListing = function useCreateSubscriptionG
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -134,7 +134,7 @@ export const useCreateSubscriptionGroupListing = function useCreateSubscriptionG
               c5 = 0;
               callback(false);
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               c6 = 3;
               throw arg1;
@@ -220,7 +220,7 @@ export const useUpdateSubscriptionGroupListing = function useUpdateSubscriptionG
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -256,7 +256,7 @@ export const useUpdateSubscriptionGroupListing = function useUpdateSubscriptionG
             c6 = 0;
             callback(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c7 = 3;
             throw arg1;
@@ -384,8 +384,8 @@ export const useSubscriptionGroupListing = function useSubscriptionGroupListing(
 };
 export const useGroupListingsForGuild = function useGroupListingsForGuild(guildId) {
   const _require = guildId;
-  closure_1 = _require(14776).useGroupListingsFetchContext("useGroupListingsForGuild");
-  const obj = _require(14776);
+  closure_1 = _require(14809).useGroupListingsFetchContext("useGroupListingsForGuild");
+  const obj = _require(14809);
   const items = [closure_8];
   return _require(589).useStateFromStores(items, () => {
     if (null != closure_0) {
@@ -469,7 +469,7 @@ export const useDeleteSubscriptionListing = function useDeleteSubscriptionListin
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -505,7 +505,7 @@ export const useDeleteSubscriptionListing = function useDeleteSubscriptionListin
               c6 = 0;
               callback(false);
               c7 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               c7 = 3;
               throw arg1;
@@ -588,7 +588,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -611,7 +611,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
                 ({ guildId: c0, groupListingId: c1, listingId: c2 } = callback);
                 c5 = 1;
                 c6 = 1;
-                return { value: "Object", done: true };
+                return { value: "PX_16", done: null };
               }
             } else if (1 === tmp9) {
               if (arg0 === 1) {
@@ -647,7 +647,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
               c4 = 0;
               callback(false);
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               c6 = 3;
               throw arg1;
@@ -746,7 +746,7 @@ export const useUpdateSubscriptionsSettings = function useUpdateSubscriptionsSet
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -846,7 +846,7 @@ export const useDeleteSubscriptionGroupListing = function useDeleteSubscriptionG
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -882,7 +882,7 @@ export const useDeleteSubscriptionGroupListing = function useDeleteSubscriptionG
               c5 = 0;
               callback(false);
               c6 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               c6 = 3;
               throw arg1;
@@ -966,7 +966,7 @@ export const useFetchSubscriptionsSettings = function useFetchSubscriptionsSetti
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1070,7 +1070,7 @@ export const useUpdateSubscriptionsTrial = function useUpdateSubscriptionsTrial(
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,10 +1,10 @@
-// Module ID: 15268
-// Function ID: 15269
+// Module ID: 15302
+// Function ID: 15303
 // Name: items
 // Dependencies: [1373, 2]
 // Exports: getGuildDCString, getUserDCString
 
-// Module 15268 (items)
+// Module 15302 (items)
 import set from "set" /* 2 */;
 import DismissibleContent from "DismissibleContent" /* 1373 */;
 

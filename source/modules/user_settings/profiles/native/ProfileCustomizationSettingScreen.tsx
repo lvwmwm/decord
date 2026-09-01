@@ -1,23 +1,23 @@
-// Module ID: 14207
-// Function ID: 14208
+// Module ID: 14240
+// Function ID: 14241
 // Name: ProfileCustomizationSubsection
-// Dependencies: [5, 109, 32, 19, 17, 8995, 8038, 685, 676, 21, 4448, 1236, 14208, 14266, 4167, 712, 1499, 7127, 9221, 9176, 7724, 4310, 14225, 14267, 647, 4668, 8997, 5463, 7575, 1500, 9227, 9229, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9032, 8070, 685, 676, 21, 4478, 1236, 14241, 14299, 4197, 712, 1499, 7159, 9260, 9215, 7756, 4340, 14258, 14300, 647, 4700, 9034, 5495, 7607, 1500, 9266, 9268, 2]
 
-// Module 14207 (ProfileCustomizationSubsection)
+// Module 14240 (ProfileCustomizationSubsection)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14208 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14266 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14241 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14299 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
 import closure_7 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_10 from "zustandStore" /* 8995 */;
-import closure_11 from "handleFormOpen" /* 8038 */;
+import closure_10 from "zustandStore" /* 9032 */;
+import closure_11 from "handleFormOpen" /* 8070 */;
 import { ProfileCustomizationSubsection } from "MAX_FAVORITES" /* 685 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 let closure_3 = ["handleSubmit"];
@@ -158,7 +158,7 @@ const memoResult = importAllResult.memo(() => {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -193,7 +193,7 @@ const memoResult = importAllResult.memo(() => {
                   callback(true);
                 }
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp9) {
               c2 = tmp;

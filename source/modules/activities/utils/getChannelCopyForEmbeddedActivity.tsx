@@ -1,10 +1,10 @@
-// Module ID: 9216
-// Function ID: 9217
+// Module ID: 9255
+// Function ID: 9256
 // Name: getChannelCopyForEmbeddedActivity
 // Dependencies: [1236, 2]
 // Exports: default
 
-// Module 9216 (getChannelCopyForEmbeddedActivity)
+// Module 9255 (getChannelCopyForEmbeddedActivity)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

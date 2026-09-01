@@ -1,13 +1,13 @@
-// Module ID: 9035
-// Function ID: 9036
+// Module ID: 9073
+// Function ID: 9074
 // Name: UserProfileConfirmRemoveFriend
-// Dependencies: [19, 21, 4831, 1236, 4831, 2]
+// Dependencies: [19, 21, 4863, 1236, 4863, 2]
 // Exports: default
 
-// Module 9035 (UserProfileConfirmRemoveFriend)
+// Module 9073 (UserProfileConfirmRemoveFriend)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4831 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4863 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

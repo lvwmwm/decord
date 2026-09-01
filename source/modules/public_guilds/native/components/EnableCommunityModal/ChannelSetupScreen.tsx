@@ -1,19 +1,19 @@
-// Module ID: 17224
-// Function ID: 17225
+// Module ID: 17260
+// Function ID: 17261
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9690, 1387, 1982, 4100, 1922, 7912, 676, 21, 4167, 712, 17213, 589, 4642, 1236, 17214, 4415, 9325, 2009, 9689, 17211, 4444, 4894, 5960, 5567, 2]
+// Dependencies: [19, 17, 9729, 1387, 1982, 4130, 1922, 7944, 676, 21, 4197, 712, 17249, 589, 4674, 1236, 17250, 4445, 9364, 2009, 9728, 17247, 4474, 4926, 5992, 5599, 2]
 // Exports: default
 
-// Module 17224 (ChannelSetupScreen)
+// Module 17260 (ChannelSetupScreen)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleFormInit" /* 9690 */;
+import closure_6 from "handleFormInit" /* 9729 */;
 import closure_7 from "ensureGuildLoaded" /* 1387 */;
 import closure_8 from "comparator" /* 1982 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_9 } from "comparator" /* 1982 */;
-import closure_10 from "markAllUserIdListsStale" /* 4100 */;
+import closure_10 from "markAllUserIdListsStale" /* 4130 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import { CREATE_NEW_CHANNEL_VALUE } from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 7912 */;
+import { CREATE_NEW_CHANNEL_VALUE } from "PUBLIC_SUCCESS_MODAL_SEEN_KEY" /* 7944 */;
 import { ChannelTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -96,10 +96,10 @@ export default function ChannelSetupScreen() {
     obj[0] = intl.string(guild(publicUpdatesChannel[15]).t.Yr6nGx);
     obj[1] = callback();
     obj[2] = function onItemSelect(rulesChannelId) {
-      let obj = callback(9689);
+      let obj = callback(9728);
       obj = { rulesChannelId };
       obj.updateGuild(obj);
-      callback(4415).hideActionSheet();
+      callback(4445).hideActionSheet();
     };
     let id;
     if (rulesChannel != null) {
@@ -118,10 +118,10 @@ export default function ChannelSetupScreen() {
     obj[0] = intl.string(guild(publicUpdatesChannel[15]).t.VqhxxN);
     obj[1] = callback();
     obj[2] = function onItemSelect(publicUpdatesChannelId) {
-      let obj = callback(9689);
+      let obj = callback(9728);
       obj = { publicUpdatesChannelId };
       obj.updateGuild(obj);
-      callback(4415).hideActionSheet();
+      callback(4445).hideActionSheet();
     };
     let id;
     if (publicUpdatesChannel != null) {

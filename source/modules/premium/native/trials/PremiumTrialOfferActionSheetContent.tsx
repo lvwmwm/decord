@@ -1,21 +1,21 @@
-// Module ID: 15254
-// Function ID: 15255
-// Dependencies: [19, 17, 21, 4448, 712, 11360, 1236, 9320, 4991, 6224, 4444, 4109, 15255, 4896, 8064, 2]
+// Module ID: 15288
+// Function ID: 15289
+// Dependencies: [19, 17, 21, 4478, 712, 11398, 1236, 9359, 5023, 6256, 4474, 4139, 15289, 4928, 8096, 2]
 
-// Module 15254
+// Module 15288
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import Button from "Button" /* 4896 */;
-import FolderIcon from "FolderIcon" /* 4991 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6224 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8064 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 9320 */;
-import UserIcon from "UserIcon" /* 11360 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 15255 */;
+import Text from "Text" /* 4474 */;
+import Button from "Button" /* 4928 */;
+import FolderIcon from "FolderIcon" /* 5023 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6256 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8096 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 9359 */;
+import UserIcon from "UserIcon" /* 11398 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 15289 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -66,8 +66,8 @@ const memoResult = importAllResult.memo(function PremiumTrialOfferActionSheetCon
     if (subscriptionTrial != null) {
       skuId1 = subscriptionTrial.skuId;
     }
-    displayNameFromSku = tmp3(4109).getDisplayNameFromSku(skuId1);
-    const tmp3Result = tmp3(4109);
+    displayNameFromSku = tmp3(4139).getDisplayNameFromSku(skuId1);
+    const tmp3Result = tmp3(4139);
   }
   obj3[3] = intl7.formatToPlainString(getSystemLocale.t.q8eMc0, { displayName: displayNameFromSku, duration: intervalDuration });
   items1[1] = callback(Text.Text, obj3);

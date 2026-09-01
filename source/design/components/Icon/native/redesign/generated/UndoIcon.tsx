@@ -1,14 +1,14 @@
-// Module ID: 14677
-// Function ID: 14678
+// Module ID: 14710
+// Function ID: 14711
 // Name: UndoIcon
-// Dependencies: [19, 21, 712, 4166, 14678, 2]
+// Dependencies: [19, 21, 712, 4196, 14711, 2]
 // Exports: UndoIcon
 
-// Module 14677 (UndoIcon)
+// Module 14710 (UndoIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14678 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 14711 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

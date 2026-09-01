@@ -1,20 +1,20 @@
-// Module ID: 9133
-// Function ID: 9134
+// Module ID: 9172
+// Function ID: 9173
 // Name: Emoji
-// Dependencies: [19, 17, 4269, 21, 4448, 712, 9134, 4108, 5461, 4444, 9135, 4104, 9064, 9136, 1236, 8331, 4896, 9138, 2]
+// Dependencies: [19, 17, 4299, 21, 4478, 712, 9173, 4138, 5493, 4474, 9174, 4134, 9102, 9175, 1236, 8363, 4928, 9177, 2]
 // Exports: default
 
-// Module 9133 (Emoji)
+// Module 9172 (Emoji)
 import ThemesDefault from "Themes" /* 712 */;
-import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4108 */;
-import Text from "Text" /* 4444 */;
-import preloadDefault from "preload" /* 5461 */;
-import styles from "styles" /* 9134 */;
+import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
+import Text from "Text" /* 4474 */;
+import preloadDefault from "preload" /* 5493 */;
+import styles from "styles" /* 9173 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleConnectionOpen" /* 4269 */;
+import closure_5 from "handleConnectionOpen" /* 4299 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function Emoji(surrogate) {

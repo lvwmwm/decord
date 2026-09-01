@@ -1,10 +1,10 @@
-// Module ID: 9535
-// Function ID: 9536
+// Module ID: 9574
+// Function ID: 9575
 // Name: ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT
 // Dependencies: [1218, 1468, 589, 2]
 // Exports: isSurfaceDirectRendererExperimentEnabled, useSurfaceDirectRendererExperiment
 
-// Module 9535 (ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT)
+// Module 9574 (ANDROID_SURFACE_DIRECT_RENDERER_EXPERIMENT)
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

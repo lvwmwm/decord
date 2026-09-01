@@ -1,11 +1,11 @@
-// Module ID: 10603
-// Function ID: 10604
+// Module ID: 10641
+// Function ID: 10642
 // Name: getPrivateChannelCall
-// Dependencies: [4467, 676, 4695, 7858, 1236, 9735, 2]
+// Dependencies: [4497, 676, 4727, 7890, 1236, 9774, 2]
 // Exports: default
 
-// Module 10603 (getPrivateChannelCall)
-import closure_2 from "updateVoiceState" /* 4467 */;
+// Module 10641 (getPrivateChannelCall)
+import closure_2 from "updateVoiceState" /* 4497 */;
 import { NOOP_NULL } from "ME" /* 676 */;
 
 const require = arg1;

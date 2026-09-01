@@ -1,18 +1,18 @@
-// Module ID: 9631
-// Function ID: 9632
+// Module ID: 9670
+// Function ID: 9671
 // Name: EditGuildEventRecurrenceModal
-// Dependencies: [5, 32, 19, 21, 4448, 712, 9599, 9595, 9632, 1891, 9633, 4896, 1236, 9638, 9635, 9639, 9640, 4444, 5976, 2]
+// Dependencies: [5, 32, 19, 21, 4478, 712, 9638, 9634, 9671, 1891, 9672, 4928, 1236, 9677, 9674, 9678, 9679, 4474, 6008, 2]
 // Exports: default
 
-// Module 9631 (EditGuildEventRecurrenceModal)
+// Module 9670 (EditGuildEventRecurrenceModal)
 import ThemesDefault from "Themes" /* 712 */;
-import useEventExceptionDefault from "useEventException" /* 9599 */;
-import useLazyAPIPromiseDefault from "useLazyAPIPromise" /* 9632 */;
+import useEventExceptionDefault from "useEventException" /* 9638 */;
+import useLazyAPIPromiseDefault from "useLazyAPIPromise" /* 9671 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -49,7 +49,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -116,9 +116,9 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
   }
   const tmp2 = useEventExceptionDefault(recurrenceId, guildEvent.id);
   dependencyMap = tmp2;
-  let obj = guildEvent(9595);
+  let obj = guildEvent(9634);
   const baseScheduleForRecurrence = obj.getBaseScheduleForRecurrence(recurrenceId, guildEvent);
-  obj1 = guildEvent(9595);
+  obj1 = guildEvent(9634);
   scheduleForRecurrenceWithException = obj1.getScheduleForRecurrenceWithException(baseScheduleForRecurrence, tmp2);
   let tmp = callback2();
   [c5, c6] = callback(React.useState(scheduleForRecurrenceWithException), 2);
@@ -127,7 +127,7 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
   closure_8 = tmp6[1];
   const tmp8 = callback(useLazyAPIPromiseDefault(() => {
     const result = recurrenceId(1891).dismissGlobalKeyboard();
-    return closure_1_1(9633)(guildEvent, recurrenceId, c5, dependencyMap);
+    return closure_1_1(9672)(guildEvent, recurrenceId, c5, dependencyMap);
   }), 2);
   callback2 = tmp8[0];
   error = tmp8[1].error;
@@ -156,12 +156,12 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     return applyArgumentsResult;
   };
   obj[3] = null != first;
-  closure_13 = first(guildEvent(4896).Button, obj);
+  closure_13 = first(guildEvent(4928).Button, obj);
   obj = {
     title: "",
     customNavbar() {
-      const obj = { screen: guildEvent(9635).EditGuildEventScreens.DETAILS, onClose: closure_1 };
-      return first(closure_1_1(9638), obj);
+      const obj = { screen: guildEvent(9674).EditGuildEventScreens.DETAILS, onClose: closure_1 };
+      return first(closure_1_1(9677), obj);
     },
     headerLeft() {
       return null;
@@ -169,19 +169,19 @@ export default function EditGuildEventRecurrenceModal(guildEvent) {
     render() {
       let obj = { action: closure_13, children: null };
       obj = { guildEvent, recurrenceId, schedule: c5, onChange: handleScheduleChange };
-      const items = [first(closure_1_1(9640), obj), ];
+      const items = [first(closure_1_1(9679), obj), ];
       let tmp4Result = null;
       if (null != first) {
         obj = { variant: "text-md/normal", color: "text-feedback-critical", children: null };
         obj[2] = tmp5;
-        tmp4Result = first(guildEvent(4444).Text, obj);
+        tmp4Result = first(guildEvent(4474).Text, obj);
       }
       items[1] = tmp4Result;
       obj[1] = items;
-      return closure_8(closure_1_1(9639), obj);
+      return closure_8(closure_1_1(9678), obj);
     },
     fullscreen: true
   };
   obj1 = { screens: { [closure_10.TIME]: obj }, initialRouteName: error.TIME, cardShadowEnabled: false, cardOverlayEnabled: false, cardStyle: tmp.cardStyle };
-  return first(guildEvent(5976).Navigator, obj1);
+  return first(guildEvent(6008).Navigator, obj1);
 };

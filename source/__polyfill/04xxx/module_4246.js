@@ -1,0 +1,6 @@
+// Module ID: 4246
+// Function ID: 4247
+// Dependencies: []
+
+// Module 4246
+arg5.RiveEventType = { General: 0, [0]: "General", OpenUrl: 1, [1]: "OpenUrl" };

@@ -1,18 +1,18 @@
-// Module ID: 11064
-// Function ID: 11065
+// Module ID: 11101
+// Function ID: 11102
 // Name: AppStoreOverlayFooter
-// Dependencies: [32, 19, 17, 676, 5591, 21, 4448, 712, 1628, 4167, 689, 4908, 4896, 1236, 1493, 8048, 4913, 7431, 4154, 11061, 4415, 5590, 5905, 5592, 5461, 4444, 11065, 11068, 11073, 2]
+// Dependencies: [32, 19, 17, 676, 5623, 21, 4478, 712, 1628, 4197, 689, 4940, 4928, 1236, 1493, 8080, 4945, 7463, 4184, 11098, 4445, 5622, 5937, 5624, 5493, 4474, 11102, 11105, 11110, 2]
 // Exports: default
 
-// Module 11064 (AppStoreOverlayFooter)
+// Module 11101 (AppStoreOverlayFooter)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
-import { ACTION_SHEET_MINIMUM_BOTTOM_PADDING as closure_8 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5591 */;
+import { ACTION_SHEET_MINIMUM_BOTTOM_PADDING as closure_8 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5623 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function AppStoreOverlayFooter(arg0) {
@@ -21,7 +21,7 @@ function AppStoreOverlayFooter(arg0) {
   ({ onInstallPress, onLayout } = arg0);
   const tmp = callback3();
   bottom = token(1628)().bottom;
-  let obj = bottom(4167);
+  let obj = bottom(4197);
   token = obj.useToken(token(712).colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   const items1 = [bottom];
@@ -33,13 +33,13 @@ function AppStoreOverlayFooter(arg0) {
   obj = { style: tmp.footer, onLayout, children: null };
   const memo1 = React.useMemo(() => ({ paddingBottom: Math.max(bottom, closure_1_8) }), items1);
   obj = { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: constants.START, end: constants.END };
-  const items2 = [callback(token(4908), obj), ];
+  const items2 = [callback(token(4940), obj), ];
   obj1 = { style: memo1, children: null };
   const obj2 = { size: "lg", text: null, onPress: null };
   const intl = bottom(1236).intl;
   obj2[1] = intl.string(bottom(1236).t.lwQdjB);
   obj2[2] = onInstallPress;
-  obj1[1] = callback(bottom(4896).Button, obj2);
+  obj1[1] = callback(bottom(4928).Button, obj2);
   items2[1] = callback(View, obj1);
   obj[2] = items2;
   return callback2(View, obj);

@@ -1,17 +1,17 @@
-// Module ID: 16944
-// Function ID: 16945
+// Module ID: 16980
+// Function ID: 16981
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 4477, 21, 4448, 712, 16932, 5562, 8571, 16945, 4893, 4164, 1236, 9572, 9580, 5036, 4401, 4444, 8896, 2]
+// Dependencies: [32, 19, 17, 4507, 21, 4478, 712, 16968, 5594, 8603, 16981, 4925, 4194, 1236, 9611, 9619, 5068, 4431, 4474, 8933, 2]
 // Exports: default
 
-// Module 16944 (InteractionIframeModal)
+// Module 16980 (InteractionIframeModal)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { BotTagTypes } from "ApplicationTypes" /* 4477 */;
+import { BotTagTypes } from "ApplicationTypes" /* 4507 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -55,7 +55,7 @@ export default function InteractionIframeModal(children) {
   importDefault(callback[11])(callback1);
   let tmp11 = null;
   if (!tmp5[0]) {
-    obj = { onActivityCrash: null, applicationId: null, channelId: null, guildId: null, activityUrl: null, activitySessionId: null, queryParams: null, onLoadError: null, allowPopups: null, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "Object", ignoreSilentHardwareSwitch: "arrow" };
+    obj = { onActivityCrash: null, applicationId: null, channelId: null, guildId: null, activityUrl: null, activitySessionId: null, queryParams: null, onLoadError: null, allowPopups: null, referrerPolicy: "origin", isPipOrGridMode: false, webViewKey: "PX_16", ignoreSilentHardwareSwitch: "kj\u00F8nnsn\u00F8ytral" };
     obj[0] = function onActivityCrash() {
       callback(true);
       const timerId = setTimeout(() => callback(false), 0);

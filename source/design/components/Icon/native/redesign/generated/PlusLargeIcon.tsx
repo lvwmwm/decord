@@ -1,14 +1,14 @@
-// Module ID: 10650
-// Function ID: 10651
+// Module ID: 10688
+// Function ID: 10689
 // Name: PlusLargeIcon
-// Dependencies: [19, 21, 712, 4166, 10651, 2]
+// Dependencies: [19, 21, 712, 4196, 10689, 2]
 // Exports: PlusLargeIcon
 
-// Module 10650 (PlusLargeIcon)
+// Module 10688 (PlusLargeIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 10651 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 10689 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 6278
-// Function ID: 6279
+// Module ID: 6310
+// Function ID: 6311
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6278 (metadata)
+// Module 6310 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AppleIllocon-2x.png.js");

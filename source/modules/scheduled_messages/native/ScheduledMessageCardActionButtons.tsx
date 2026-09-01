@@ -1,18 +1,18 @@
-// Module ID: 11752
-// Function ID: 11753
+// Module ID: 11785
+// Function ID: 11786
 // Name: ScheduledMessageCardActionButtons
-// Dependencies: [21, 1236, 4393, 11745, 10288, 4411, 6193, 8755, 7974, 8762, 2]
+// Dependencies: [21, 1236, 4423, 11778, 10327, 4441, 6225, 8792, 8006, 8799, 2]
 // Exports: default
 
-// Module 11752 (ScheduledMessageCardActionButtons)
+// Module 11785 (ScheduledMessageCardActionButtons)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import SendMessageIcon from "SendMessageIcon" /* 4393 */;
-import ClockIcon from "ClockIcon" /* 4411 */;
-import CircleXIcon from "CircleXIcon" /* 6193 */;
-import ContextMenu from "ContextMenu" /* 8755 */;
-import PencilIcon from "PencilIcon" /* 10288 */;
+import SendMessageIcon from "SendMessageIcon" /* 4423 */;
+import ClockIcon from "ClockIcon" /* 4441 */;
+import CircleXIcon from "CircleXIcon" /* 6225 */;
+import ContextMenu from "ContextMenu" /* 8792 */;
+import PencilIcon from "PencilIcon" /* 10327 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageCardActionButtons.tsx");
@@ -40,7 +40,7 @@ export default function ScheduledMessageCardActionButtons(arg0) {
   obj[0] = intl3.string(getSystemLocale.t.SBcdAN);
   obj[1] = ClockIcon.ClockIcon;
   obj[2] = function action() {
-    return closure_1_0(closure_1_2[3]).openRescheduleMessageActionSheet(closure_0.scheduledMessageId, closure_0.sendAtTimestamp);
+    return closure_1_0(closure_1_2[3]).openRescheduleMessageActionSheet(closure_0.scheduledMessageId, closure_0.sendAtTimestamp, closure_0.createArgs.channelId);
   };
   items[2] = obj;
   obj1 = { label: null, IconComponent: null, action: null, variant: "destructive" };

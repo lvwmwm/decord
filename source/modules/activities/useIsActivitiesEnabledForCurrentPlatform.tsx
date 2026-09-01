@@ -1,12 +1,12 @@
-// Module ID: 9406
-// Function ID: 9407
+// Module ID: 9445
+// Function ID: 9446
 // Name: useIsActivitiesEnabledForCurrentPlatform
-// Dependencies: [4722, 2]
+// Dependencies: [4754, 2]
 // Exports: getIsActivitiesEnabledForCurrentPlatform, useIsActivitiesEnabledForCurrentPlatform
 
-// Module 9406 (useIsActivitiesEnabledForCurrentPlatform)
+// Module 9445 (useIsActivitiesEnabledForCurrentPlatform)
 import set from "set" /* 2 */;
-import isTablet from "isTablet" /* 4722 */;
+import isTablet from "isTablet" /* 4754 */;
 
 const result = set.fileFinishedImporting("modules/activities/useIsActivitiesEnabledForCurrentPlatform.tsx");
 

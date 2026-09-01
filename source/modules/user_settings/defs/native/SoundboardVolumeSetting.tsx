@@ -1,16 +1,16 @@
-// Module ID: 14816
-// Function ID: 14817
+// Module ID: 14849
+// Function ID: 14850
 // Name: volumeSlider
-// Dependencies: [7852, 11031, 1236, 6156, 6150, 5941, 2]
+// Dependencies: [7884, 11068, 1236, 6188, 6182, 5973, 2]
 
-// Module 14816 (volumeSlider)
+// Module 14849 (volumeSlider)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5941 */;
-import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2" /* 6150 */;
-import hasPermissionToPlaySound from "hasPermissionToPlaySound" /* 6156 */;
-import MobileUserSettings from "MobileUserSettings" /* 7852 */;
-import createToggle from "createToggle" /* 11031 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5973 */;
+import _fetchDefaultSoundsFromApi2 from "_fetchDefaultSoundsFromApi2" /* 6182 */;
+import hasPermissionToPlaySound from "hasPermissionToPlaySound" /* 6188 */;
+import MobileUserSettings from "MobileUserSettings" /* 7884 */;
+import createToggle from "createToggle" /* 11068 */;
 
 const volumeSlider = createToggle.createVolumeSlider({
   useTitle() {

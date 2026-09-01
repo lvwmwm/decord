@@ -1,13 +1,13 @@
-// Module ID: 7963
-// Function ID: 7964
+// Module ID: 7995
+// Function ID: 7996
 // Name: getEphemeralReasonMessage
-// Dependencies: [7964, 1236, 2]
+// Dependencies: [7996, 1236, 2]
 // Exports: getEphemeralReasonMessage
 
-// Module 7963 (getEphemeralReasonMessage)
+// Module 7995 (getEphemeralReasonMessage)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import EphemeralMessageReason from "EphemeralMessageReason" /* 7964 */;
+import EphemeralMessageReason from "EphemeralMessageReason" /* 7996 */;
 
 const result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandUserAppUtils.tsx");
 

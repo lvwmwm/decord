@@ -1,12 +1,12 @@
-// Module ID: 7840
-// Function ID: 7841
+// Module ID: 7872
+// Function ID: 7873
 // Name: createDisplayNameStylesMobile
-// Dependencies: [4440, 1992, 1922, 1936, 2]
+// Dependencies: [4470, 1992, 1922, 1941, 2]
 // Exports: createDisplayNameStylesMobile, getDisplayNameFontIdForMobileUser
 
-// Module 7840 (createDisplayNameStylesMobile)
-import DisplayNameFont from "DisplayNameFont" /* 1936 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+// Module 7872 (createDisplayNameStylesMobile)
+import DisplayNameFont from "DisplayNameFont" /* 1941 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_3 from "trackCommunicationDisabled" /* 1992 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 

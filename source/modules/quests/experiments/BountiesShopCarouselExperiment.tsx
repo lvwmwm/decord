@@ -1,10 +1,10 @@
-// Module ID: 14650
-// Function ID: 14651
+// Module ID: 14683
+// Function ID: 14684
 // Name: apexExperiment
 // Dependencies: [1468, 2]
 // Exports: getBountiesEntryPointButtonVariant
 
-// Module 14650 (apexExperiment)
+// Module 14683 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

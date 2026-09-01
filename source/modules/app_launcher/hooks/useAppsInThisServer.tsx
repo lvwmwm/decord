@@ -1,14 +1,14 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11694
+// Function ID: 11695
 // Name: useAppsInThisServer
-// Dependencies: [19, 8114, 1922, 4920, 589, 8411, 1955, 8124, 11660, 12, 8399, 2]
+// Dependencies: [19, 8146, 1922, 4952, 589, 8443, 1955, 8156, 11693, 12, 8431, 2]
 // Exports: default
 
-// Module 11661 (useAppsInThisServer)
+// Module 11694 (useAppsInThisServer)
 import closure_4 from "noop" /* 19 */;
-import { useGuildIndexState } from "getIndexKey" /* 8114 */;
+import { useGuildIndexState } from "getIndexKey" /* 8146 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { DISCOVERY_COMMANDS_QUERY_LIMIT as closure_7 } from "TRUE_OPTION_NAME" /* 4920 */;
+import { DISCOVERY_COMMANDS_QUERY_LIMIT as closure_7 } from "TRUE_OPTION_NAME" /* 4952 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/app_launcher/hooks/useAppsInThisServer.tsx");

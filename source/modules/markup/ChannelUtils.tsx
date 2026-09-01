@@ -1,10 +1,10 @@
-// Module ID: 4929
-// Function ID: 4930
+// Module ID: 4961
+// Function ID: 4962
 // Name: isChannelTypeMentionable
 // Dependencies: [1391, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 4929 (isChannelTypeMentionable)
+// Module 4961 (isChannelTypeMentionable)
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1391 */;
 

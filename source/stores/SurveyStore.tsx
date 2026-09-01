@@ -1,19 +1,19 @@
-// Module ID: 4679
-// Function ID: 4680
+// Module ID: 4711
+// Function ID: 4712
 // Name: fetchSurveyIfNeeded
-// Dependencies: [4368, 1909, 4091, 4269, 1922, 676, 687, 4680, 506, 595, 4045, 589, 709, 2]
+// Dependencies: [4398, 1909, 4121, 4299, 1922, 676, 687, 4712, 506, 595, 4075, 589, 709, 2]
 
-// Module 4679 (fetchSurveyIfNeeded)
+// Module 4711 (fetchSurveyIfNeeded)
 import initializeDefault from "initialize" /* 589 */;
 import Storage2 from "Storage" /* 595 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import hooksDefault from "hooks" /* 4045 */;
-import overrideSurvey from "overrideSurvey" /* 4680 */;
-import closure_4 from "handleInviteData" /* 4368 */;
+import hooksDefault from "hooks" /* 4075 */;
+import overrideSurvey from "overrideSurvey" /* 4712 */;
+import closure_4 from "handleInviteData" /* 4398 */;
 import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_7 from "handleConnectionOpen" /* 4269 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_7 from "handleConnectionOpen" /* 4299 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
@@ -603,6 +603,7 @@ let c15 = false;
 let closure_16 = {};
 let c17 = null;
 let c18 = false;
+let c19 = null;
 const DAY = setDefault.Millis.DAY;
 const result = 10 * setDefault.Millis.HOUR;
 obj = { IS_OWNER: "is_owner", IS_ADMIN: "is_admin", IS_COMMUNITY: "is_community", GUILD_SIZE: "guild_size", IS_HUB: "is_hub", IS_VIEWING: "is_viewing", GUILD_PERMISSIONS: "guild_permissions", GUILD_SIZE_ALL: "guild_size_all" };
@@ -640,6 +641,9 @@ prototype["getCurrentSurvey"] = function getCurrentSurvey() {
 prototype["getSurveyOverride"] = function getSurveyOverride() {
   return obj.surveyOverride;
 };
+prototype["getActionTriggeredSurveyOverride"] = function getActionTriggeredSurveyOverride() {
+  return c19;
+};
 prototype["getLastSeenTimestamp"] = function getLastSeenTimestamp() {
   return obj.lastSeen;
 };
@@ -649,7 +653,7 @@ prototype["shouldAllowSurveyAction"] = function shouldAllowSurveyAction() {
   if (num == null) {
     num = 0;
   }
-  return timestamp - num >= closure_20;
+  return timestamp - num >= closure_21;
 };
 SurveyStore.displayName = "SurveyStore";
 SurveyStore.persistKey = "SurveyStore";
@@ -699,13 +703,18 @@ obj = {
   },
   SURVEY_OVERRIDE: function handleSurveyOverride(id) {
     id = id.id;
-    obj.surveyOverride = id;
-    if (null != id) {
-      const hiddenSurveys = obj.hiddenSurveys;
-      delete tmp[tmp2];
+    if (id.isActionTriggered) {
+      c19 = id;
+    } else {
+      c19 = null;
+      obj.surveyOverride = id;
+      if (null != id) {
+        const hiddenSurveys = obj.hiddenSurveys;
+        delete tmp2[tmp];
+      }
+      obj = overrideSurvey;
+      obj.surveyFetch(obj.surveyOverride, true);
     }
-    obj = overrideSurvey;
-    obj.surveyFetch(obj.surveyOverride, true);
   },
   PUSH_NOTIFICATION_CLICK: function handlePushNotificationClick() {
     c14 = true;

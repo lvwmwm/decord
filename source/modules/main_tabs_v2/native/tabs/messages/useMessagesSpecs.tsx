@@ -1,10 +1,10 @@
-// Module ID: 15576
-// Function ID: 15577
+// Module ID: 15611
+// Function ID: 15612
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 676, 4903, 1628, 15577, 15585, 15597, 712, 2]
+// Dependencies: [109, 19, 676, 4935, 1628, 15612, 15621, 15633, 712, 2]
 // Exports: default
 
-// Module 15576 (useMessagesSpecs)
+// Module 15611 (useMessagesSpecs)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
 import { DM_WIDTH } from "ME" /* 676 */;
@@ -14,7 +14,7 @@ let closure_3 = ["height"];
 const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesSpecs.tsx");
 
 export default function useMessagesSpecs() {
-  fontScale = fontScale(4903).useFontScale();
+  fontScale = fontScale(4935).useFontScale();
   top = top(1628)().top;
   const items = [fontScale, top];
   return React.useMemo(() => {

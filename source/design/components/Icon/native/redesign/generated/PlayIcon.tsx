@@ -1,14 +1,14 @@
-// Module ID: 8546
-// Function ID: 8547
+// Module ID: 8578
+// Function ID: 8579
 // Name: PlayIcon
-// Dependencies: [19, 21, 712, 4166, 8547, 2]
+// Dependencies: [19, 21, 712, 4196, 8579, 2]
 // Exports: PlayIcon
 
-// Module 8546 (PlayIcon)
+// Module 8578 (PlayIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 8547 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 8579 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

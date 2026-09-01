@@ -1,14 +1,14 @@
-// Module ID: 10755
-// Function ID: 10756
+// Module ID: 10793
+// Function ID: 10794
 // Name: GiftingRewardPreviewAvatar
-// Dependencies: [19, 4440, 1922, 21, 589, 1297, 2]
+// Dependencies: [19, 4470, 1922, 21, 589, 1297, 2]
 // Exports: default
 
-// Module 10755 (GiftingRewardPreviewAvatar)
+// Module 10793 (GiftingRewardPreviewAvatar)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import Button from "Button" /* 1297 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -28,9 +28,9 @@ export default function GiftingRewardPreviewAvatar(asset) {
     obj[0] = asset.asset;
     tmp5 = obj;
   }
-  obj = { user: stateFromStores, guildId: "r", avatarDecoration: "Object", animate: null };
+  obj = { user: stateFromStores, guildId: "r", avatarDecoration: "PX_16", animate: null };
   obj[2] = tmp5;
   obj[3] = !stateFromStores1;
   const merged = Object.assign(asset);
-  return jsx(Button.Avatar, { user: stateFromStores, guildId: "r", avatarDecoration: "Object", animate: null });
+  return jsx(Button.Avatar, { user: stateFromStores, guildId: "r", avatarDecoration: "PX_16", animate: null });
 };

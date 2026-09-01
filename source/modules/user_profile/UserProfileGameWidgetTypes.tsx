@@ -1,14 +1,14 @@
-// Module ID: 7336
-// Function ID: 7337
+// Module ID: 7368
+// Function ID: 7369
 // Name: items
-// Dependencies: [7335, 5024, 7337, 2]
+// Dependencies: [7367, 5055, 7369, 2]
 // Exports: isGameWidget, isGameWidgetType
 
-// Module 7336 (items)
+// Module 7368 (items)
 import set from "set" /* 2 */;
-import GAME_WIDGET_LIMITS_BY_TYPE from "GAME_WIDGET_LIMITS_BY_TYPE" /* 5024 */;
-import WidgetType from "WidgetType" /* 7335 */;
-import findGameWidget from "findGameWidget" /* 7337 */;
+import GAME_WIDGET_LIMITS_BY_TYPE from "GAME_WIDGET_LIMITS_BY_TYPE" /* 5055 */;
+import WidgetType from "WidgetType" /* 7367 */;
+import findGameWidget from "findGameWidget" /* 7369 */;
 
 const items = [WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES, WidgetType.WidgetType.PLAYED_GAMES];
 let BaseGameWidget;

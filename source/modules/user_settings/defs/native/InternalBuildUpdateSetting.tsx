@@ -1,16 +1,16 @@
-// Module ID: 15307
-// Function ID: 15308
+// Module ID: 15341
+// Function ID: 15342
 // Name: pressable
-// Dependencies: [14016, 21, 13612, 589, 4045, 14415, 4397, 14726, 11031, 2]
+// Dependencies: [14049, 21, 13645, 589, 4075, 14448, 4427, 14759, 11068, 2]
 
-// Module 15307 (pressable)
+// Module 15341 (pressable)
 import initialize from "initialize" /* 589 */;
-import hooksDefault from "hooks" /* 4045 */;
-import _checkForNewerBuildAll from "_checkForNewerBuild" /* 13612 */;
-import useStaffOrDeveloperSettingPredicate from "useStaffOrDeveloperSettingPredicate" /* 14415 */;
-import closure_4 from "checkForNewerBuild" /* 14016 */;
+import hooksDefault from "hooks" /* 4075 */;
+import _checkForNewerBuildAll from "_checkForNewerBuild" /* 13645 */;
+import useStaffOrDeveloperSettingPredicate from "useStaffOrDeveloperSettingPredicate" /* 14448 */;
+import closure_4 from "checkForNewerBuild" /* 14049 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11031 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 createToggle = {
@@ -21,9 +21,9 @@ createToggle = {
   IconComponent: function InstallNativeUpdateIcon() {
     const items = [closure_4];
     if (obj.useStateFromStores(items, () => null !== closure_4.latestFetchedBuild().newBuild)) {
-      let RefreshIcon = tmp(4397).DownloadIcon;
+      let RefreshIcon = tmp(4427).DownloadIcon;
     } else {
-      RefreshIcon = tmp(14726).RefreshIcon;
+      RefreshIcon = tmp(14759).RefreshIcon;
     }
     return <RefreshIcon />;
   },

@@ -1,14 +1,14 @@
-// Module ID: 12268
-// Function ID: 12269
+// Module ID: 12301
+// Function ID: 12302
 // Name: ForumDisplaySettingsActionSheet
-// Dependencies: [32, 19, 1387, 11540, 21, 1236, 1396, 1397, 1398, 589, 4913, 7479, 5957, 5589, 9649, 5592, 4894, 712, 7660, 7661, 2]
+// Dependencies: [32, 19, 1387, 11573, 21, 1236, 1396, 1397, 1398, 589, 4945, 7511, 5989, 5621, 9688, 5624, 4926, 712, 7692, 7693, 2]
 // Exports: default
 
-// Module 12268 (ForumDisplaySettingsActionSheet)
+// Module 12301 (ForumDisplaySettingsActionSheet)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import set from "set" /* 11540 */;
+import set from "set" /* 11573 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

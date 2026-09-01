@@ -1,17 +1,17 @@
-// Module ID: 14220
-// Function ID: 14221
+// Module ID: 14253
+// Function ID: 14254
 // Name: HSVColorPicker
-// Dependencies: [19, 17, 21, 4448, 4187, 14221, 14222, 2]
+// Dependencies: [19, 17, 21, 4478, 4217, 14254, 14255, 2]
 // Exports: default
 
-// Module 14220 (HSVColorPicker)
+// Module 14253 (HSVColorPicker)
 import noopAll from "noop" /* 19 */;
-import _mod4187 from "module_4187" /* 4187 */;
-import ColorBoxDefault from "ColorBox" /* 14221 */;
-import HuePickerDefault from "HuePicker" /* 14222 */;
+import _mod4217 from "module_4217" /* 4217 */;
+import ColorBoxDefault from "ColorBox" /* 14254 */;
+import HuePickerDefault from "HuePicker" /* 14255 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -22,15 +22,15 @@ const result = require("set").fileFinishedImporting("modules/color_picker/native
 export default function HSVColorPicker(arg0) {
   ({ hue, saturation, value, onPanUpdate, onPanFinalize } = arg0);
   ({ saturationValuePickerStyle, saturationValueColorBoxStyle, saturationValueColorBoxInnerStyle, saturationValueSelectorStyle, huePickerStyle, hueColorBarInnerStyle, hueSliderStyle } = arg0);
-  let obj = _mod4187;
+  let obj = _mod4217;
   const sharedValue = obj.useSharedValue(0);
   const tmp = callback();
-  const sharedValue1 = _mod4187.useSharedValue(1);
-  const obj2 = _mod4187;
+  const sharedValue1 = _mod4217.useSharedValue(1);
+  const obj2 = _mod4217;
   obj = { style: tmp.hsvColorPicker, children: null };
-  const sharedValue2 = _mod4187.useSharedValue(1);
+  const sharedValue2 = _mod4217.useSharedValue(1);
   let tmp11 = hue;
-  const obj3 = _mod4187;
+  const obj3 = _mod4217;
   const tmp6 = closure_5;
   const tmp7 = View;
   const tmp9 = importDefault;

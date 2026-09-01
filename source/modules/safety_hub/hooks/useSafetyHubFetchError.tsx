@@ -1,12 +1,12 @@
-// Module ID: 14324
-// Function ID: 14325
+// Module ID: 14357
+// Function ID: 14358
 // Name: useSafetyHubFetchError
-// Dependencies: [11416, 589, 2]
+// Dependencies: [8701, 589, 2]
 // Exports: useSafetyHubFetchError
 
-// Module 14324 (useSafetyHubFetchError)
+// Module 14357 (useSafetyHubFetchError)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11416 */;
+import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8701 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubFetchError.tsx");

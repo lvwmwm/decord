@@ -1,9 +1,9 @@
-// Module ID: 4074
-// Function ID: 4075
+// Module ID: 4104
+// Function ID: 4105
 // Name: set
 // Dependencies: [2]
 
-// Module 4074 (set)
+// Module 4104 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("lib/DiscordNative.tsx");

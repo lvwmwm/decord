@@ -1,12 +1,12 @@
-// Module ID: 9666
-// Function ID: 9667
-// Dependencies: [4669, 676, 685, 709, 4681, 503, 1400, 530, 5455, 5450, 6136, 2]
+// Module ID: 9705
+// Function ID: 9706
+// Dependencies: [4701, 676, 685, 709, 4713, 503, 1400, 530, 5487, 5482, 6168, 2]
 
-// Module 9666
+// Module 9705
 import encodeProperties from "encodeProperties" /* 503 */;
 import sendRequest from "sendRequest" /* 530 */;
-import _modDef4681 from "module_4681" /* 4681 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4669 */;
+import _modDef4713 from "module_4713" /* 4713 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4701 */;
 import ME from "ME" /* 676 */;
 import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES" /* 685 */;
 
@@ -67,7 +67,7 @@ export default {
     }
     obj = { url: closure_6.GUILD_CHANNELS(guildId), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     const tmp = permissionOverwrites;
-    const tmpResult = permissionOverwrites(4681);
+    const tmpResult = permissionOverwrites(4713);
     obj[3] = {
       event: guildId(503).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
@@ -135,7 +135,7 @@ export default {
     });
   },
   createRoleSubscriptionTemplateChannel(closure_0, name, type, topic) {
-    let obj = _modDef4681;
+    let obj = _modDef4713;
     obj = { url: closure_6.GUILD_CHANNELS(closure_0), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     obj = { name, type, topic };
     obj[3] = {

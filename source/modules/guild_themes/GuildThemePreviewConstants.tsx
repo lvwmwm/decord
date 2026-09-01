@@ -1,9 +1,9 @@
-// Module ID: 4331
-// Function ID: 4332
+// Module ID: 4361
+// Function ID: 4362
 // Name: GuildThemePreviewOrigin
 // Dependencies: [2]
 
-// Module 4331 (GuildThemePreviewOrigin)
+// Module 4361 (GuildThemePreviewOrigin)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_themes/GuildThemePreviewConstants.tsx");

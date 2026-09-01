@@ -1,13 +1,13 @@
-// Module ID: 13663
-// Function ID: 13664
+// Module ID: 13696
+// Function ID: 13697
 // Name: items
-// Dependencies: [19, 21, 13623, 8209, 2]
+// Dependencies: [19, 21, 13656, 8241, 2]
 // Exports: GuildBadgeSpider
 
-// Module 13663 (items)
+// Module 13696 (items)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8209 */;
-import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13623 */;
+import inlineStyles from "inlineStyles" /* 8241 */;
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13656 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

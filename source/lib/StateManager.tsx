@@ -1,9 +1,9 @@
-// Module ID: 13294
-// Function ID: 13295
+// Module ID: 13327
+// Function ID: 13328
 // Name: shouldCommit
 // Dependencies: [659, 2]
 
-// Module 13294 (shouldCommit)
+// Module 13327 (shouldCommit)
 import set from "set" /* 2 */;
 import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
 

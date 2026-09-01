@@ -1,9 +1,9 @@
-// Module ID: 8408
-// Function ID: 8409
+// Module ID: 8440
+// Function ID: 8441
 // Name: numberParts
 // Dependencies: [2]
 
-// Module 8408 (numberParts)
+// Module 8440 (numberParts)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("intl/number-parts.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12525
+// Function ID: 12526
 // Name: useTrackUserProfileWishlistView
-// Dependencies: [19, 10419, 589, 2]
+// Dependencies: [19, 10458, 589, 2]
 // Exports: default
 
-// Module 12492 (useTrackUserProfileWishlistView)
+// Module 12525 (useTrackUserProfileWishlistView)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "get" /* 10419 */;
+import closure_4 from "get" /* 10458 */;
 
 ({ useEffect: obj1, useRef: c3 } = noop);
 const result = set.fileFinishedImporting("modules/user_profile/hooks/native/useTrackUserProfileWishlistView.tsx");

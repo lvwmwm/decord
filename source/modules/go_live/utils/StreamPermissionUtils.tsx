@@ -1,19 +1,19 @@
-// Module ID: 7439
-// Function ID: 7440
+// Module ID: 7471
+// Function ID: 7472
 // Name: canStreamInChannel
-// Dependencies: [4465, 1391, 1982, 1909, 4091, 4467, 676, 5328, 4634, 4699, 589, 2]
+// Dependencies: [4495, 1391, 1982, 1909, 4121, 4497, 676, 5360, 4666, 4731, 589, 2]
 // Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 7439 (canStreamInChannel)
-import allowChannelAccess from "allowChannelAccess" /* 4634 */;
-import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4699 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5328 */;
-import closure_3 from "set" /* 4465 */;
+// Module 7471 (canStreamInChannel)
+import allowChannelAccess from "allowChannelAccess" /* 4666 */;
+import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4731 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5360 */;
+import closure_3 from "set" /* 4495 */;
 import { ChannelRecordBase } from "createChannelRecord" /* 1391 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
 import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_8 from "updateVoiceState" /* 4467 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_8 from "updateVoiceState" /* 4497 */;
 import { Permissions } from "ME" /* 676 */;
 
 require = arg1;

@@ -1,22 +1,22 @@
-// Module ID: 14448
-// Function ID: 14449
+// Module ID: 14481
+// Function ID: 14482
 // Name: FamilyCenterActivityBannerButton
-// Dependencies: [19, 17, 21, 4448, 8735, 8736, 14449, 712, 11459, 1236, 2369, 14456, 14457, 4444, 2]
+// Dependencies: [19, 17, 21, 4478, 8772, 8773, 14482, 712, 11492, 1236, 2369, 14489, 14490, 4474, 2]
 // Exports: default
 
-// Module 14448 (FamilyCenterActivityBannerButton)
+// Module 14481 (FamilyCenterActivityBannerButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import Text from "Text" /* 4444 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8735 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8736 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11459 */;
-import FamilyCenterTeenQRCodeButtonInner from "FamilyCenterTeenQRCodeButtonInner" /* 14449 */;
+import Text from "Text" /* 4474 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8772 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8773 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11492 */;
+import FamilyCenterTeenQRCodeButtonInner from "FamilyCenterTeenQRCodeButtonInner" /* 14482 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function FamilyCenterActivityBannerButton() {
@@ -72,7 +72,7 @@ export default function FamilyCenterActivityBanner() {
   obj = { style: tmp4.container, children: null };
   obj = { source: null, style: null };
   const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(messagesProxyDefault.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" }), intl4.format(messagesProxyDefault.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  obj[0] = tmp(tmp3 ? 14456 : 14457);
+  obj[0] = tmp(tmp3 ? 14489 : 14490);
   obj[1] = tmp4.art;
   const items = [closure_5(closure_4, obj), , , ];
   obj1 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

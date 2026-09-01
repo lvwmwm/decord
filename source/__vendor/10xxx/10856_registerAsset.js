@@ -1,0 +1,10 @@
+// Module ID: 10856
+// Function ID: 10857
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 10856 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "367021fc812df044b1b4d5405a1e12c2", name: "CircleQuestionIcon-primary", type: "png" });

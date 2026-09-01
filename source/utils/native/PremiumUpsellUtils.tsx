@@ -1,17 +1,17 @@
-// Module ID: 8137
-// Function ID: 8138
+// Module ID: 8169
+// Function ID: 8170
 // Name: usePremiumUpsellConfig
-// Dependencies: [19, 1922, 676, 1924, 21, 8138, 1236, 8139, 8140, 8141, 8142, 8143, 8144, 4826, 8145, 2009, 4109, 7160, 8185, 4310, 698, 4415, 8361, 2]
+// Dependencies: [19, 1922, 676, 1924, 21, 8170, 1236, 8171, 8172, 8173, 8174, 8175, 8176, 4858, 8177, 2009, 4139, 7192, 8217, 4340, 698, 4445, 8393, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
-// Module 8137 (usePremiumUpsellConfig)
+// Module 8169 (usePremiumUpsellConfig)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import registerAssetDefault from "registerAsset" /* 8138 */;
-import registerAssetDefault2 from "registerAsset" /* 8139 */;
-import registerAssetDefault3 from "registerAsset" /* 8140 */;
-import registerAssetDefault4 from "registerAsset" /* 8141 */;
-import registerAssetDefault5 from "registerAsset" /* 8142 */;
-import registerAssetDefault6 from "registerAsset" /* 8143 */;
+import registerAssetDefault from "registerAsset" /* 8170 */;
+import registerAssetDefault2 from "registerAsset" /* 8171 */;
+import registerAssetDefault3 from "registerAsset" /* 8172 */;
+import registerAssetDefault4 from "registerAsset" /* 8173 */;
+import registerAssetDefault5 from "registerAsset" /* 8174 */;
+import registerAssetDefault6 from "registerAsset" /* 8175 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
@@ -23,7 +23,7 @@ function usePremiumUpsellConfig(initialUpsellKey, analyticsLocations2, analytics
   const _require = initialUpsellKey;
   closure_1 = analyticsLocations2;
   dependencyMap = analyticsLocation;
-  let obj = _require(7160);
+  let obj = _require(7192);
   const premiumTrialOffer = obj.usePremiumTrialOffer();
   let items = [, ];
   ({ GLOBAL_EMOJI: arr[0], UPLOAD: arr[1] } = closure_7);

@@ -1,10 +1,10 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 10002
+// Function ID: 10003
 // Name: updateStageMusicMuted
 // Dependencies: [709, 2]
 // Exports: updateStageMusicMuted, updateStageMusicShouldPlay
 
-// Module 9963 (updateStageMusicMuted)
+// Module 10002 (updateStageMusicMuted)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

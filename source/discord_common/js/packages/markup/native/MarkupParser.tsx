@@ -1,12 +1,12 @@
-// Module ID: 7865
-// Function ID: 7866
+// Module ID: 7897
+// Function ID: 7898
 // Name: saferParse
-// Dependencies: [7866, 4162, 2]
+// Dependencies: [7898, 4192, 2]
 
-// Module 7865 (saferParse)
+// Module 7897 (saferParse)
 import set from "set" /* 2 */;
-import tDefault from "t" /* 4162 */;
-import collectAst from "collectAst" /* 7866 */;
+import tDefault from "t" /* 4192 */;
+import collectAst from "collectAst" /* 7898 */;
 
 function saferParse(arg0, arg1, inline) {
   let text = arg1;

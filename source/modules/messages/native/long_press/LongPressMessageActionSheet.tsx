@@ -1,20 +1,20 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 11241
+// Function ID: 11242
 // Name: LongPressMessageActionSheet
-// Dependencies: [32, 19, 7815, 11205, 11206, 4101, 1218, 1909, 4091, 4441, 676, 21, 5921, 5941, 4668, 11203, 7853, 11207, 7567, 589, 6084, 11208, 11209, 4136, 6082, 11210, 4707, 1399, 11211, 7993, 11212, 5959, 11213, 5957, 1624, 11269, 11270, 1236, 9369, 4395, 4406, 4391, 10288, 11274, 11234, 4990, 11276, 10282, 11278, 8196, 5011, 10652, 11280, 11282, 8064, 11284, 11253, 4411, 9336, 4988, 5007, 4397, 9010, 7850, 8753, 9002, 2471, 4998, 6091, 6103, 11286, 4639, 6106, 7473, 8111, 2]
+// Dependencies: [32, 19, 7847, 11242, 11243, 4131, 1218, 1909, 4121, 4471, 676, 21, 5953, 5973, 4700, 11240, 7885, 11244, 7599, 589, 6116, 11245, 11246, 4166, 6114, 11247, 4739, 1399, 11248, 8025, 11249, 5991, 11250, 5989, 1624, 11306, 11307, 1236, 9408, 4425, 4436, 4421, 10327, 11311, 11271, 5022, 11313, 10321, 11315, 8228, 5043, 10690, 11317, 11319, 8096, 11321, 11290, 4441, 9375, 5020, 5039, 4427, 9047, 7882, 8790, 9039, 2501, 5030, 6123, 6135, 11323, 4671, 6138, 7505, 8143, 2]
 // Exports: default
 
-// Module 11204 (LongPressMessageActionSheet)
+// Module 11241 (LongPressMessageActionSheet)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleMessageSendFailedAutomod" /* 7815 */;
-import closure_6 from "handleSelectedGuildChange" /* 11205 */;
-import closure_7 from "getTimeSafe" /* 11206 */;
-import { isMessageComponentsV2 } from "hasFlag" /* 4101 */;
+import closure_5 from "handleMessageSendFailedAutomod" /* 7847 */;
+import closure_6 from "handleSelectedGuildChange" /* 11242 */;
+import closure_7 from "getTimeSafe" /* 11243 */;
+import { isMessageComponentsV2 } from "hasFlag" /* 4131 */;
 import closure_9 from "fetchFingerprint" /* 1218 */;
 import closure_10 from "createGuildRecordFromRust" /* 1909 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4091 */;
-import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4441 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4121 */;
+import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 7139
-// Function ID: 7140
+// Module ID: 7171
+// Function ID: 7172
 // Name: createFromServer
-// Dependencies: [32, 1931, 6051, 6049, 2]
+// Dependencies: [32, 1936, 6083, 6081, 2]
 
-// Module 7139 (createFromServer)
-import toJSDefault from "toJS" /* 1931 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6049 */;
-import addDefault from "add" /* 6051 */;
+// Module 7171 (createFromServer)
+import toJSDefault from "toJS" /* 1936 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6081 */;
+import addDefault from "add" /* 6083 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;

@@ -1,15 +1,15 @@
-// Module ID: 9687
-// Function ID: 9688
+// Module ID: 9726
+// Function ID: 9727
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 4448, 4444, 2]
+// Dependencies: [19, 17, 21, 4478, 4474, 2]
 // Exports: default
 
-// Module 9687 (EditGuildEventStepHeader)
+// Module 9726 (EditGuildEventStepHeader)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4444 */;
+import Text from "Text" /* 4474 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

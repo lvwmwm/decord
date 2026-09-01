@@ -1,10 +1,10 @@
-// Module ID: 5409
-// Function ID: 5410
+// Module ID: 5441
+// Function ID: 5442
 // Name: items
-// Dependencies: [19, 1909, 676, 500, 5410, 647, 2]
+// Dependencies: [19, 1909, 676, 500, 5442, 647, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 5409 (items)
+// Module 5441 (items)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "createGuildRecordFromRust" /* 1909 */;
 
@@ -15,7 +15,7 @@ const result = require("set").fileFinishedImporting("modules/guild_role_subscrip
 
 export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guildId) {
   if (obj.isIOS()) {
-    const str = tmp(5410).getSystemVersion();
+    const str = tmp(5442).getSystemVersion();
     if (null != str) {
       const parts = str.split(".");
       const _Number = Number;
@@ -78,7 +78,7 @@ export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guil
 export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIAP(guildId) {
   const _require = guildId;
   const memo = React.useMemo(() => {
-    const str = guildId(5410).getSystemVersion();
+    const str = guildId(5442).getSystemVersion();
     let tmp = null != str;
     if (tmp) {
       const parts = str.split(".");

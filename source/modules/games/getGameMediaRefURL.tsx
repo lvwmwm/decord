@@ -1,13 +1,13 @@
-// Module ID: 4481
-// Function ID: 4482
+// Module ID: 4511
+// Function ID: 4512
 // Name: getGameMediaRefURL
-// Dependencies: [1902, 1431, 4482, 2]
+// Dependencies: [1902, 1431, 4512, 2]
 // Exports: default
 
-// Module 4481 (getGameMediaRefURL)
+// Module 4511 (getGameMediaRefURL)
 import set from "set" /* 2 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4482 */;
+import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4512 */;
 
 const result = set.fileFinishedImporting("modules/games/getGameMediaRefURL.tsx");
 

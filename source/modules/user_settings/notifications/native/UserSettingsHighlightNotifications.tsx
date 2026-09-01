@@ -1,15 +1,15 @@
-// Module ID: 15086
-// Function ID: 15087
+// Module ID: 15119
+// Function ID: 15120
 // Name: Row
-// Dependencies: [19, 1909, 5349, 4669, 676, 21, 5455, 5450, 589, 5972, 5961, 8331, 2]
+// Dependencies: [19, 1909, 5381, 4701, 676, 21, 5487, 5482, 589, 6004, 5993, 8363, 2]
 // Exports: default
 
-// Module 15086 (Row)
-import GuildIconSizesDefault from "GuildIconSizes" /* 5972 */;
+// Module 15119 (Row)
+import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "insertUnsortedGuilds" /* 5349 */;
-import closure_6 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_5 from "insertUnsortedGuilds" /* 5381 */;
+import closure_6 from "updateUserGuildSettingsInternal" /* 4701 */;
 import { HighlightSettings } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -48,7 +48,7 @@ function Row(guildId) {
     obj[3] = callback;
     obj[4] = isStart;
     obj[5] = isEnd;
-    return jsx(tmp2(5961).TableSwitchRow, { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
+    return jsx(tmp2(5993).TableSwitchRow, { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
   }
   tmp2 = guildId;
 }
@@ -63,7 +63,7 @@ export default function UserSettingsHighlightNotifications() {
   if (0 !== stateFromStoresArray.length) {
     obj = { children: null };
     obj[0] = tmp3;
-    tmp4 = jsx(stateFromStoresArray(8331).Form, { children: null });
+    tmp4 = jsx(stateFromStoresArray(8363).Form, { children: null });
   }
   return tmp4;
 };

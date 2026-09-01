@@ -1,16 +1,16 @@
-// Module ID: 17267
-// Function ID: 17268
+// Module ID: 17303
+// Function ID: 17304
 // Name: GuildSettingsRoleSubscriptionsGroupEditInner
-// Dependencies: [5, 32, 19, 17, 4477, 21, 1499, 14775, 17268, 17227, 5562, 17269, 12, 5463, 6205, 1236, 4163, 712, 17271, 17276, 17282, 2]
+// Dependencies: [5, 32, 19, 17, 4507, 21, 1499, 14808, 17304, 17263, 5594, 17305, 12, 5495, 6237, 1236, 4193, 712, 17307, 17312, 17318, 2]
 // Exports: default
 
-// Module 17267 (GuildSettingsRoleSubscriptionsGroupEditInner)
-import ApplicationRejectedNoticeDefault from "ApplicationRejectedNotice" /* 17282 */;
+// Module 17303 (GuildSettingsRoleSubscriptionsGroupEditInner)
+import ApplicationRejectedNoticeDefault from "ApplicationRejectedNotice" /* 17318 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4477 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4507 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -101,7 +101,7 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,9 +1,9 @@
-// Module ID: 4417
-// Function ID: 4418
+// Module ID: 4447
+// Function ID: 4448
 // Name: IMPACT_LIGHT
 // Dependencies: [2]
 
-// Module 4417 (IMPACT_LIGHT)
+// Module 4447 (IMPACT_LIGHT)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/haptics/HapticFeedbackTypes.tsx");

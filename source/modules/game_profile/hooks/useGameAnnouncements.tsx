@@ -1,13 +1,13 @@
-// Module ID: 8845
-// Function ID: 8846
+// Module ID: 8882
+// Function ID: 8883
 // Name: useGameAnnouncements
-// Dependencies: [19, 8771, 589, 8846, 2]
+// Dependencies: [19, 8808, 589, 8883, 2]
 // Exports: default
 
-// Module 8845 (useGameAnnouncements)
+// Module 8882 (useGameAnnouncements)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "getSimilarGames" /* 8771 */;
+import closure_3 from "getSimilarGames" /* 8808 */;
 
 const useEffect = noop.useEffect;
 let result = set.fileFinishedImporting("modules/game_profile/hooks/useGameAnnouncements.tsx");

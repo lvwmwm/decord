@@ -1,12 +1,12 @@
-// Module ID: 12531
-// Function ID: 12532
+// Module ID: 12564
+// Function ID: 12565
 // Name: useVirtualCurrencyBalance
-// Dependencies: [10798, 589, 2]
+// Dependencies: [10836, 589, 2]
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
 
-// Module 12531 (useVirtualCurrencyBalance)
+// Module 12564 (useVirtualCurrencyBalance)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "redeemError" /* 10798 */;
+import closure_2 from "redeemError" /* 10836 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/virtual_currency/hooks/useVirtualCurrencyBalance.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 14159
-// Function ID: 14160
+// Module ID: 14192
+// Function ID: 14193
 // Name: map
-// Dependencies: [5, 4499, 1981, 4933, 3, 14160, 14161, 14162, 9954, 6150, 2]
+// Dependencies: [5, 4529, 1981, 4965, 3, 14193, 14194, 14195, 9993, 6182, 2]
 
-// Module 14159 (map)
+// Module 14192 (map)
 import timestampDefault from "timestamp" /* 3 */;
-import _initializeDefault from "_initialize" /* 14160 */;
+import _initializeDefault from "_initialize" /* 14193 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "handleSoundCreateOrUpdate" /* 4933 */;
+import closure_6 from "handleSoundCreateOrUpdate" /* 4965 */;
 
 const require = arg1;
 let map = new Map();
@@ -75,7 +75,7 @@ let prototype = function SoundboardManager() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ let prototype = function SoundboardManager() {
               c4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -147,7 +147,7 @@ let prototype = function SoundboardManager() {
               const result = obj2.reportSoundFinishedPlaying(c2, c3);
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           c3 = tmp30;

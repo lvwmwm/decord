@@ -1,15 +1,15 @@
-// Module ID: 7119
-// Function ID: 7120
+// Module ID: 7151
+// Function ID: 7152
 // Name: LinkButton
-// Dependencies: [19, 21, 4448, 5036, 4444, 2]
+// Dependencies: [19, 21, 4478, 5068, 4474, 2]
 // Exports: LinkButton
 
-// Module 7119 (LinkButton)
+// Module 7151 (LinkButton)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4444 */;
-import PressableBase from "PressableBase" /* 5036 */;
+import Text from "Text" /* 4474 */;
+import PressableBase from "PressableBase" /* 5068 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

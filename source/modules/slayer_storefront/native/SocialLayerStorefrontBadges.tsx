@@ -1,18 +1,18 @@
-// Module ID: 10553
-// Function ID: 10554
+// Module ID: 10591
+// Function ID: 10592
 // Name: ExclusiveBadge
-// Dependencies: [19, 17, 21, 4448, 712, 500, 9002, 4444, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 500, 9039, 4474, 1236, 2]
 // Exports: ExclusiveBadge
 
-// Module 10553 (ExclusiveBadge)
+// Module 10591 (ExclusiveBadge)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import ClydeIcon from "ClydeIcon" /* 9002 */;
+import Text from "Text" /* 4474 */;
+import ClydeIcon from "ClydeIcon" /* 9039 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 import set from "set" /* 500 */;
 
 require = arg1;

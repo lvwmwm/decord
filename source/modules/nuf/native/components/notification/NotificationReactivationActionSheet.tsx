@@ -1,18 +1,18 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17035
+// Function ID: 17036
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 11946, 676, 21, 4448, 712, 698, 11947, 4415, 5590, 17000, 4444, 1236, 5344, 4896, 2]
+// Dependencies: [19, 17, 11979, 676, 21, 4478, 712, 698, 11980, 4445, 5622, 17036, 4474, 1236, 5376, 4928, 2]
 // Exports: default
 
-// Module 16999 (NotificationReactivationActionSheet)
+// Module 17035 (NotificationReactivationActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 17000 */;
+import registerAssetDefault from "registerAsset" /* 17036 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { EventActionType } from "EventActionType" /* 11946 */;
+import { EventActionType } from "EventActionType" /* 11979 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ View: c4, Image: c5 } = get_ActivityIndicator);
@@ -42,7 +42,7 @@ export default function NotificationReactivationActionSheet(location) {
   }, items);
   const callback1 = React.useCallback(() => {
     let obj = closure_1_1(closure_1_2[7]);
-    obj = { action_type: closure_1_6.SKIP_STEP, action_location: _location, permission_granted: "Array" };
+    obj = { action_type: closure_1_6.SKIP_STEP, action_location: _location, permission_granted: "r" };
     obj.track(closure_1_7.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj);
     closure_1_1(closure_1_2[9]).hideActionSheet();
   }, items1);
@@ -53,25 +53,25 @@ export default function NotificationReactivationActionSheet(location) {
   obj1 = { style: tmp.title, variant: "heading-xl/bold", accessibilityRole: "header", children: null };
   const intl = _location(1236).intl;
   obj1[3] = intl.string(_location(1236).t.a4bgO0);
-  items2[1] = callback(_location(4444).Text, obj1);
+  items2[1] = callback(_location(4474).Text, obj1);
   const obj2 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl2 = _location(1236).intl;
   obj2[3] = intl2.string(_location(1236).t["rW5gw/"]);
-  items2[2] = callback(_location(4444).Text, obj2);
+  items2[2] = callback(_location(4474).Text, obj2);
   const obj3 = { style: tmp.buttons, children: null };
   const obj4 = { text: null, onPress: null };
   const intl3 = _location(1236).intl;
   obj4[0] = intl3.string(_location(1236).t.a4bgO0);
   obj4[1] = callback;
-  const items3 = [callback(_location(4896).Button, obj4), ];
+  const items3 = [callback(_location(4928).Button, obj4), ];
   const obj5 = { text: null, onPress: null, variant: "secondary" };
   const intl4 = _location(1236).intl;
   obj5[0] = intl4.string(_location(1236).t["/L3kom"]);
   obj5[1] = callback1;
-  items3[1] = callback(_location(4896).Button, obj5);
+  items3[1] = callback(_location(4928).Button, obj5);
   obj3[1] = items3;
-  items2[3] = callback2(_location(5344).ButtonGroup, obj3);
+  items2[3] = callback2(_location(5376).ButtonGroup, obj3);
   obj[1] = items2;
   obj[0] = callback2(closure_4, obj);
-  return callback(_location(5590).BottomSheet, obj);
+  return callback(_location(5622).BottomSheet, obj);
 };

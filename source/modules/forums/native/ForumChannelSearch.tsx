@@ -1,15 +1,15 @@
-// Module ID: 12890
-// Function ID: 12891
+// Module ID: 12923
+// Function ID: 12924
 // Name: ForumChannelCloseSearchButton
-// Dependencies: [19, 17, 1387, 7480, 21, 4448, 1500, 12891, 7575, 4896, 1236, 7608, 589, 6189, 7479, 2]
+// Dependencies: [19, 17, 1387, 7512, 21, 4478, 1500, 12924, 7607, 4928, 1236, 7640, 589, 6221, 7511, 2]
 
-// Module 12890 (ForumChannelCloseSearchButton)
+// Module 12923 (ForumChannelCloseSearchButton)
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "initialize" /* 7480 */;
+import closure_6 from "initialize" /* 7512 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -52,7 +52,7 @@ const memoResult = importAllResult.memo((channelId) => {
 const memoResult1 = importAllResult.memo((channelId) => {
   channelId = channelId.channelId;
   ({ guildId: importDefault, placeholder } = channelId);
-  let obj = channelId(12891);
+  let obj = channelId(12924);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   const tmp = callback();
   const items = [closure_6];

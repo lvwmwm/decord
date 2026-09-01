@@ -1,22 +1,22 @@
-// Module ID: 11902
-// Function ID: 11903
+// Module ID: 11935
+// Function ID: 11936
 // Name: matchGroupDMRecipients
-// Dependencies: [32, 19, 17, 1387, 4100, 1922, 10594, 21, 4448, 712, 5422, 4292, 4642, 12, 10596, 1236, 4444, 10598, 10600, 10693, 11903, 2]
+// Dependencies: [32, 19, 17, 1387, 4130, 1922, 10632, 21, 4478, 712, 5454, 4322, 4674, 12, 10634, 1236, 4474, 10636, 10638, 10731, 11936, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 11902 (matchGroupDMRecipients)
+// Module 11935 (matchGroupDMRecipients)
 import ThemesDefault from "Themes" /* 712 */;
-import computeChannelName from "computeChannelName" /* 4642 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5422 */;
+import computeChannelName from "computeChannelName" /* 4674 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5454 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "markAllUserIdListsStale" /* 4100 */;
+import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { UserRowModes } from "UserRowModes" /* 10594 */;
+import { UserRowModes } from "UserRowModes" /* 10632 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function matchGroupDMRecipients(trimmed1, recipients) {
@@ -37,7 +37,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         let num3 = 1;
         return 1;
       } else {
-        let tmp19Result = tmp19(4292);
+        let tmp19Result = tmp19(4322);
         let tmp5 = user;
         let globalName = tmp19Result.getGlobalName(tmp4);
         let toLocaleLowerCaseResult1;
@@ -46,7 +46,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult1) {
           let tmp8 = toLocaleLowerCaseResult1;
-          if (tmp19(5422)(trimmed1, tmp7)) {
+          if (tmp19(5454)(trimmed1, tmp7)) {
             let tmp15 = obj;
             obj.return();
             let num2 = 1;
@@ -62,7 +62,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult2) {
           let tmp13 = toLocaleLowerCaseResult2;
-          if (tmp19(5422)(trimmed1, tmp12)) {
+          if (tmp19(5454)(trimmed1, tmp12)) {
             let tmp14 = obj;
             obj.return();
             let num = 1;

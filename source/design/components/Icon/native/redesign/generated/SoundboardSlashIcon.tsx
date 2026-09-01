@@ -1,14 +1,14 @@
-// Module ID: 12442
-// Function ID: 12443
+// Module ID: 12475
+// Function ID: 12476
 // Name: SoundboardSlashIcon
-// Dependencies: [19, 21, 712, 4166, 12443, 2]
+// Dependencies: [19, 21, 712, 4196, 12476, 2]
 // Exports: SoundboardSlashIcon
 
-// Module 12442 (SoundboardSlashIcon)
+// Module 12475 (SoundboardSlashIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 12443 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 12476 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

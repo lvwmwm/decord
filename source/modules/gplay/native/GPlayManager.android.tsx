@@ -1,25 +1,25 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 10485
+// Function ID: 10486
 // Name: handleConnectionStateUpdated
-// Dependencies: [109, 5, 19, 17, 7133, 7134, 1218, 4115, 6052, 8191, 6053, 676, 4430, 1924, 21, 3, 6055, 709, 8190, 1217, 4045, 7142, 4124, 4805, 698, 4826, 1236, 10448, 2009, 4691, 7123, 2]
+// Dependencies: [109, 5, 19, 17, 7165, 7166, 1218, 4145, 6084, 8223, 6085, 676, 4460, 1924, 21, 3, 6087, 709, 8222, 1217, 4075, 7174, 4154, 4837, 698, 4858, 1236, 10486, 2009, 4723, 7155, 2]
 
-// Module 10447 (handleConnectionStateUpdated)
+// Module 10485 (handleConnectionStateUpdated)
 import timestampDefault from "timestamp" /* 3 */;
 import noopAll from "noop" /* 19 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getPlanIdForProduct from "getPlanIdForProduct" /* 8190 */;
+import getPlanIdForProduct from "getPlanIdForProduct" /* 8222 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 7133 */;
-import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7134 */;
+import closure_6 from "initialize" /* 7165 */;
+import usePremiumPlanPurchasedStore from "usePremiumPlanPurchasedStore" /* 7166 */;
 import closure_9 from "fetchFingerprint" /* 1218 */;
-import closure_10 from "reset" /* 4115 */;
-import closure_11 from "updateProduct" /* 6052 */;
-import { useGPlayAnalyticsStore } from "setGPlayAnalytics" /* 8191 */;
-import GPlayConnectionState from "GPlayConnectionState" /* 6053 */;
+import closure_10 from "reset" /* 4145 */;
+import closure_11 from "updateProduct" /* 6084 */;
+import { useGPlayAnalyticsStore } from "setGPlayAnalytics" /* 8223 */;
+import GPlayConnectionState from "GPlayConnectionState" /* 6085 */;
 import ME from "ME" /* 676 */;
-import { OrderStatus } from "CustomCheckoutFlow" /* 4430 */;
+import { OrderStatus } from "CustomCheckoutFlow" /* 4460 */;
 import { SubscriptionPlanInfo } from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -69,7 +69,7 @@ function _handlePurchaseUpdated() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -100,7 +100,7 @@ function _handlePurchaseUpdated() {
                   let dispatchResult = obj4.dispatch(obj);
                   let tmp24 = lib;
                   let tmp25 = dependencyMap;
-                  let obj7 = lib(4805);
+                  let obj7 = lib(4837);
                   c6 = 8;
                   let num4 = 1;
                   c7 = 1;
@@ -123,7 +123,7 @@ function _handlePurchaseUpdated() {
               } else {
                 let tmp15 = lib;
                 let tmp16 = dependencyMap;
-                obj1 = lib(4805);
+                obj1 = lib(4837);
                 c6 = 9;
                 let num2 = 1;
                 c7 = 1;
@@ -197,7 +197,7 @@ function _handleDowngradeCommand() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -218,7 +218,7 @@ function _handleDowngradeCommand() {
               downgradeCommand = downgradeCommand.downgradeCommand;
               c3 = 1;
               c4 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp4) {
@@ -263,7 +263,7 @@ function _handleDowngradeCommand() {
               return obj;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           c4 = tmp;
@@ -297,7 +297,7 @@ function _executePendingDowngrade() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -333,9 +333,9 @@ function _executePendingDowngrade() {
           if (2 === tmp8) {
             c3 = 1;
             lib = dependencyMap;
-            let obj5 = pendingDowngrade(4124);
+            let obj5 = pendingDowngrade(4154);
             const result = obj5.captureBillingException(lib);
-            let obj6 = lib(4826);
+            let obj6 = lib(4858);
             const obj2 = { title: null, body: null };
             const intl = pendingDowngrade(1236).intl;
             obj2[0] = intl.string(pendingDowngrade(1236).t["U+H+kd"]);
@@ -446,7 +446,7 @@ function _fetchAndAlertActiveSubscription() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -464,7 +464,7 @@ function _fetchAndAlertActiveSubscription() {
             closure_1 = tmp5;
             let callback = tmp2;
             callback = undefined;
-            obj1 = closure_1_0(4805);
+            obj1 = closure_1_0(4837);
             dependencyMap = 1;
             c3 = 1;
             obj1 = { value: null, done: false };
@@ -501,7 +501,7 @@ function _fetchAndAlertActiveSubscription() {
               obj.openLazy(obj);
             });
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp24) {
@@ -548,7 +548,7 @@ function _handleAppStateUpdated() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -569,7 +569,7 @@ function _handleAppStateUpdated() {
               state = state.state;
               c5 = 1;
               c6 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp8) {

@@ -1,10 +1,10 @@
-// Module ID: 11120
-// Function ID: 11121
+// Module ID: 11157
+// Function ID: 11158
 // Name: categoryCollapse
 // Dependencies: [709, 2]
 // Exports: categoryCollapse, categoryCollapseAll, categoryExpand, categoryExpandAll
 
-// Module 11120 (categoryCollapse)
+// Module 11157 (categoryCollapse)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

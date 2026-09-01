@@ -1,16 +1,16 @@
-// Module ID: 13340
-// Function ID: 13341
+// Module ID: 13373
+// Function ID: 13374
 // Name: initialize
-// Dependencies: [11949, 676, 3, 15, 707, 698, 589, 709, 2]
+// Dependencies: [11982, 676, 3, 15, 707, 698, 589, 709, 2]
 
-// Module 13340 (initialize)
+// Module 13373 (initialize)
 import timestampDefault from "timestamp" /* 3 */;
 import createFastConnectSocket from "createFastConnectSocket" /* 15 */;
 import initializeDefault from "initialize" /* 589 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_4 from "initialize" /* 11949 */;
+import closure_4 from "initialize" /* 11982 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

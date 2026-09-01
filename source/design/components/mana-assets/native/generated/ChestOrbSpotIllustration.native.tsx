@@ -1,14 +1,14 @@
-// Module ID: 6371
-// Function ID: 6372
+// Module ID: 6403
+// Function ID: 6404
 // Name: ChestOrbSpotIllustration
-// Dependencies: [21, 5461, 6372, 2]
+// Dependencies: [21, 5493, 6404, 2]
 // Exports: ChestOrbSpotIllustration
 
-// Module 6371 (ChestOrbSpotIllustration)
+// Module 6403 (ChestOrbSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6372 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6404 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ChestOrbSpotIllustration.native.tsx");

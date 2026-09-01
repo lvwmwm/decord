@@ -1,17 +1,17 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15902
+// Function ID: 15903
 // Name: useFavoritesGuildUnreads
-// Dependencies: [5416, 4093, 1387, 7349, 4091, 4463, 4669, 589, 11, 2]
+// Dependencies: [5448, 4123, 1387, 7381, 4121, 4493, 4701, 589, 11, 2]
 // Exports: default
 
-// Module 15867 (useFavoritesGuildUnreads)
-import closure_3 from "rebuild" /* 5416 */;
-import closure_4 from "storeThread" /* 4093 */;
+// Module 15902 (useFavoritesGuildUnreads)
+import closure_3 from "rebuild" /* 5448 */;
+import closure_4 from "storeThread" /* 4123 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "updateGuildUnreadSentinel" /* 7349 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_8 from "generateOldThreadCutoff" /* 4463 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 7381 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_8 from "generateOldThreadCutoff" /* 4493 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4701 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildUnreads.tsx");

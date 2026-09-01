@@ -1,27 +1,27 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14652
+// Function ID: 14653
 // Name: BountiesRecapOrbsBackground
-// Dependencies: [19, 17, 4440, 21, 712, 4448, 500, 8485, 14620, 8570, 14621, 1628, 589, 14622, 4444, 1236, 10716, 4896, 2]
+// Dependencies: [19, 17, 4470, 21, 712, 4478, 500, 8517, 14653, 8602, 14654, 1628, 589, 14655, 4474, 1236, 10754, 4928, 2]
 // Exports: BountiesScrollRecapPage
 
-// Module 14619 (BountiesRecapOrbsBackground)
+// Module 14652 (BountiesRecapOrbsBackground)
 import noopAll from "noop" /* 19 */;
 import set from "set" /* 500 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import Text from "Text" /* 4444 */;
-import Button from "Button" /* 4896 */;
-import VideoComponent from "VideoComponent" /* 8570 */;
-import OrbsIcon from "OrbsIcon" /* 10716 */;
-import metadataDefault from "metadata" /* 14620 */;
-import metadataDefault2 from "metadata" /* 14621 */;
-import metadataDefault3 from "metadata" /* 14622 */;
+import Text from "Text" /* 4474 */;
+import Button from "Button" /* 4928 */;
+import VideoComponent from "VideoComponent" /* 8602 */;
+import OrbsIcon from "OrbsIcon" /* 10754 */;
+import metadataDefault from "metadata" /* 14653 */;
+import metadataDefault2 from "metadata" /* 14654 */;
+import metadataDefault3 from "metadata" /* 14655 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function BountiesRecapOrbsBackground(arg0) {
@@ -34,7 +34,7 @@ function BountiesRecapOrbsBackground(arg0) {
     obj[0] = metadataDefault;
     obj[1] = closure_3.absoluteFillObject;
     obj[2] = !reducedMotion;
-    obj[4] = tmp3(tmp(8485).APNGPlayer, obj);
+    obj[4] = tmp3(tmp(8517).APNGPlayer, obj);
     let tmp3Result = tmp3(closure_4, obj);
   } else {
     obj1 = { source: null, style: null, resizeMode: "contain", paused: null, disableFocus: true, preventsDisplaySleepDuringVideoPlayback: false, importantForAccessibility: "no-hide-descendants" };
@@ -43,7 +43,7 @@ function BountiesRecapOrbsBackground(arg0) {
     obj1[0] = obj2;
     obj1[1] = style;
     obj1[3] = reducedMotion;
-    tmp3Result = tmp3(tmp(8570).VideoComponent, obj1);
+    tmp3Result = tmp3(tmp(8602).VideoComponent, obj1);
   }
   return tmp3Result;
 }

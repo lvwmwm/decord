@@ -1,23 +1,23 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16323
+// Function ID: 16324
 // Name: Loading
-// Dependencies: [19, 17, 1982, 1909, 4270, 676, 21, 4448, 712, 6016, 7616, 589, 5909, 4272, 7621, 1222, 4302, 1628, 6017, 16288, 2]
+// Dependencies: [19, 17, 1982, 1909, 4300, 676, 21, 4478, 712, 6048, 7648, 589, 5941, 4302, 7653, 1222, 4332, 1628, 6049, 16324, 2]
 
-// Module 16287 (Loading)
+// Module 16323 (Loading)
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import ActivityIndicator from "ActivityIndicator" /* 6016 */;
-import _modDef6017 from "module_6017" /* 6017 */;
-import MemberVerificationModalDefault from "MemberVerificationModal" /* 7616 */;
+import ActivityIndicator from "ActivityIndicator" /* 6048 */;
+import _modDef6049 from "module_6049" /* 6049 */;
+import MemberVerificationModalDefault from "MemberVerificationModal" /* 7648 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "comparator" /* 1982 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "handleGatewayJoinRequestUpdate" /* 4270 */;
+import closure_8 from "handleGatewayJoinRequestUpdate" /* 4300 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
-import makeAuthenticated from "makeAuthenticated" /* 16288 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
+import makeAuthenticated from "makeAuthenticated" /* 16324 */;
 
 require = arg1;
 function Loading() {
@@ -168,9 +168,9 @@ const authenticated = makeAuthenticated.makeAuthenticated(function MemberVerific
     obj1[0] = guildId;
     obj1[1] = callback;
     obj[1] = <MemberVerificationRouteView guildId={null} onClose={null} />;
-    obj[2] = jsx(_modDef6017, { marginLeft: null, marginRight: null });
+    obj[2] = jsx(_modDef6049, { marginLeft: null, marginRight: null });
     tmp10 = <ExistingJoinRequestHandler marginLeft={null} marginRight={null} />;
-    const tmp3Result = _modDef6017;
+    const tmp3Result = _modDef6049;
   }
   return tmp10;
 });

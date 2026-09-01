@@ -1,14 +1,14 @@
-// Module ID: 6979
-// Function ID: 6980
+// Module ID: 7011
+// Function ID: 7012
 // Name: SingleWidgetAbstractUI
-// Dependencies: [21, 5461, 6980, 2]
+// Dependencies: [21, 5493, 7012, 2]
 // Exports: SingleWidgetAbstractUI
 
-// Module 6979 (SingleWidgetAbstractUI)
+// Module 7011 (SingleWidgetAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6980 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 7012 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SingleWidgetAbstractUI.native.tsx");

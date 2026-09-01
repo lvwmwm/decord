@@ -1,13 +1,13 @@
-// Module ID: 17199
-// Function ID: 17200
+// Module ID: 17235
+// Function ID: 17236
 // Name: getBansEmptySource
-// Dependencies: [19, 17, 21, 8874, 17200, 17201, 17202, 1363, 2]
+// Dependencies: [19, 17, 21, 8911, 17236, 17237, 17238, 1363, 2]
 // Exports: BansEmpty, getBansEmptySource, useBansEmptySource
 
-// Module 17199 (getBansEmptySource)
+// Module 17235 (getBansEmptySource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 8874 */;
+import getIllustrationSource from "getIllustrationSource" /* 8911 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getBansEmptySource = function getBansEmptySource(theme) {
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(17200);
+      return callback(17236);
     },
     darker() {
-      return callback(17201);
+      return callback(17237);
     },
     light() {
-      return callback(17202);
+      return callback(17238);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useBansEmptySource = function useBansEmptySource() {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(17200);
+      return callback(17236);
     },
     darker() {
-      return callback(17201);
+      return callback(17237);
     },
     light() {
-      return callback(17202);
+      return callback(17238);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const BansEmpty = function BansEmpty(arg0) {
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(17200);
+      return callback(17236);
     },
     darker() {
-      return callback(17201);
+      return callback(17237);
     },
     light() {
-      return callback(17202);
+      return callback(17238);
     }
   };
   obj = {};

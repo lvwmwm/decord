@@ -1,22 +1,22 @@
-// Module ID: 10209
-// Function ID: 10210
+// Module ID: 10248
+// Function ID: 10249
 // Name: NotificationSettingsMessageUnread
-// Dependencies: [19, 17, 21, 4448, 712, 10203, 4444, 1236, 5036, 10210, 10201, 4415, 10212, 2009, 10193, 10214, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 10242, 4474, 1236, 5068, 10249, 10240, 4445, 10251, 2009, 10232, 10253, 2]
 // Exports: NotificationSettingsChannelMessageUnread, NotificationSettingsGuildMessageUnread
 
-// Module 10209 (NotificationSettingsMessageUnread)
+// Module 10248 (NotificationSettingsMessageUnread)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 10210 */;
+import NotificationSettingsMockChannelsDefault from "NotificationSettingsMockChannels" /* 10249 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function NotificationSettingsMessageUnread(onPress) {
   const _require = onPress;
   const tmp = callback3();
-  let obj = _require(10203);
+  let obj = _require(10242);
   const unreadSelectOptions = obj.getUnreadSelectOptions();
   const found = unreadSelectOptions.find((value) => value.value === onPress.setting);
   obj = { style: onPress.style, children: null };
@@ -24,11 +24,11 @@ function NotificationSettingsMessageUnread(onPress) {
   obj1 = { variant: "text-sm/semibold", color: "text-default", style: tmp.headerTitle, children: null };
   const intl = _require(1236).intl;
   obj1[3] = intl.string(_require(1236).t.Tqd1Af);
-  const items = [callback(_require(4444).Text, obj1), ];
+  const items = [callback(_require(4474).Text, obj1), ];
   const obj2 = { variant: "text-xs/semibold", color: "text-default", children: null };
   const intl2 = _require(1236).intl;
   obj2[2] = intl2.string(_require(1236).t.RpQgm5);
-  items[1] = callback(_require(4444).Text, obj2);
+  items[1] = callback(_require(4474).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
   const obj3 = { onPress: onPress.onCustomize, activeOpacity: 0.6, children: null };
@@ -43,17 +43,17 @@ function NotificationSettingsMessageUnread(onPress) {
     str = "unset";
   }
   obj6[2] = str;
-  items2[1] = callback(_require(4444).Text, obj6);
+  items2[1] = callback(_require(4474).Text, obj6);
   const obj7 = { onPress: onPress.onCustomize, children: null };
   const obj8 = { variant: "text-sm/semibold", style: tmp.cta, color: "text-brand", children: null };
   const intl3 = tmp2(1236).intl;
   const items3 = [intl3.string(_require(1236).t.yxiV9W), " "];
   obj8[3] = items3;
-  obj7[1] = callback2(_require(4444).Text, obj8);
-  items2[2] = callback(_require(5036).PressableOpacity, obj7);
+  obj7[1] = callback2(_require(4474).Text, obj8);
+  items2[2] = callback(_require(5068).PressableOpacity, obj7);
   obj4[1] = items2;
   obj3[2] = callback2(View, obj4);
-  items1[1] = callback(_require(5036).PressableOpacity, obj3);
+  items1[1] = callback(_require(5068).PressableOpacity, obj3);
   obj[1] = items1;
   return callback2(View, obj);
 }
@@ -73,7 +73,7 @@ export const NotificationSettingsGuildMessageUnread = function NotificationSetti
   const _require = style;
   let obj = {
     style: style.style,
-    setting: _require(10201).useGuildPresetSettings(style.guildId).unread,
+    setting: _require(10240).useGuildPresetSettings(style.guildId).unread,
     onCustomize() {
       let obj = closure_1_1(closure_1_2[11]);
       obj = { guildId: style.guildId };
@@ -86,7 +86,7 @@ export const NotificationSettingsChannelMessageUnread = function NotificationSet
   const _require = style;
   let obj = {
     style: style.style,
-    setting: _require(10193).useChannelPresetSettings(style.channel).unread,
+    setting: _require(10232).useChannelPresetSettings(style.channel).unread,
     onCustomize() {
       let obj = closure_1_1(closure_1_2[11]);
       obj = { channel: style.channel };

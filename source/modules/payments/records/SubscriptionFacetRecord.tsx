@@ -1,10 +1,10 @@
-// Module ID: 7140
-// Function ID: 7141
+// Module ID: 7172
+// Function ID: 7173
 // Name: createFromServer
-// Dependencies: [1931, 2]
+// Dependencies: [1936, 2]
 
-// Module 7140 (createFromServer)
-import toJSDefault from "toJS" /* 1931 */;
+// Module 7172 (createFromServer)
+import toJSDefault from "toJS" /* 1936 */;
 
 toJSDefault;
 let prototype;

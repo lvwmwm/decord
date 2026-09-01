@@ -1,12 +1,12 @@
-// Module ID: 9880
-// Function ID: 9881
+// Module ID: 9919
+// Function ID: 9920
 // Name: setHubProgressActionComplete
-// Dependencies: [1909, 9881, 676, 1370, 1399, 2]
+// Dependencies: [1909, 9920, 676, 1370, 1399, 2]
 // Exports: setHubProgressActionComplete, skipHubProgress
 
-// Module 9880 (setHubProgressActionComplete)
+// Module 9919 (setHubProgressActionComplete)
 import closure_2 from "createGuildRecordFromRust" /* 1909 */;
-import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9881 */;
+import { HUB_PROGRESS_STEP_ORDER } from "items" /* 9920 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;

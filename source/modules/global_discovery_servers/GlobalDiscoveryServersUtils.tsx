@@ -1,18 +1,18 @@
-// Module ID: 17376
-// Function ID: 17377
+// Module ID: 17412
+// Function ID: 17413
 // Name: _navigateToGuild
-// Dependencies: [5, 1996, 13323, 9691, 676, 1236, 1471, 6153, 698, 17375, 514, 2]
+// Dependencies: [5, 1996, 13356, 9730, 676, 1236, 1471, 6185, 698, 17411, 514, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, handleTabPressPrefetch, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 17376 (_navigateToGuild)
+// Module 17412 (_navigateToGuild)
 import v1 from "v1" /* 514 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import prototypeDefault from "prototype" /* 17375 */;
+import prototypeDefault from "prototype" /* 17411 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_getSystemLocale" /* 1996 */;
-import closure_6 from "map" /* 13323 */;
-import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9691 */;
+import closure_6 from "map" /* 13356 */;
+import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9730 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;
@@ -34,7 +34,7 @@ function _navigateToGuild() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -61,7 +61,7 @@ function _navigateToGuild() {
               let obj2;
               dependencyMap = 1;
               c4 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -76,7 +76,7 @@ function _navigateToGuild() {
               obj2 = {};
               const merged = Object.assign(c5);
               obj2.loadId = c0;
-              let obj4 = callback2(6153);
+              let obj4 = callback2(6185);
               dependencyMap = 2;
               c4 = 1;
               const obj3 = { value: null, done: false };
@@ -101,7 +101,7 @@ function _navigateToGuild() {
             obj5[4] = c4;
             obj.track(constants.GUILD_DISCOVERY_GUILD_SELECTED, obj5);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           c4 = tmp;
@@ -262,9 +262,8 @@ export const fromDiscoverableGuildServer = function fromDiscoverableGuildServer(
   return obj;
 };
 export const fromDiscoverableGuildSearchResult = function fromDiscoverableGuildSearchResult(id) {
-  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "bottom", discoverySplash: "removeProperty", emojis: "SymbolLock" };
+  const obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "accessible", discoverySplash: null, emojis: [] };
   ({ approximate_presence_count: obj[7], approximate_member_count: obj[8], discovery_splash: obj[11] } = id);
-  obj[12] = [];
   return obj;
 };
 export const getLanguageCodeFallback = function getLanguageCodeFallback() {

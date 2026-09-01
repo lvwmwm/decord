@@ -1,13 +1,13 @@
-// Module ID: 17132
-// Function ID: 17133
-// Dependencies: [5, 32, 19, 17, 5412, 21, 589, 10341, 4164, 7676, 1236, 5590, 5589, 712, 5960, 5567, 10288, 17125, 4406, 2]
+// Module ID: 17168
+// Function ID: 17169
+// Dependencies: [5, 32, 19, 17, 5444, 21, 589, 10380, 4194, 7708, 1236, 5622, 5621, 712, 5992, 5599, 10327, 17161, 4436, 2]
 
-// Module 17132
+// Module 17168
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "loadSavedGuildStickers" /* 5412 */;
+import closure_8 from "loadSavedGuildStickers" /* 5444 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -32,7 +32,7 @@ const memoResult = importAllResult.memo(function GuildSettingsModalStickerInfoAc
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

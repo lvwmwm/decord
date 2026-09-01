@@ -1,12 +1,12 @@
-// Module ID: 15593
-// Function ID: 15594
+// Module ID: 15629
+// Function ID: 15630
 // Name: usePrivateChannelWaveEligible
-// Dependencies: [4703, 4100, 1394, 676, 589, 11, 4133, 4045, 10964, 2]
+// Dependencies: [4735, 4130, 1394, 676, 589, 11, 4163, 4075, 11001, 2]
 // Exports: usePrivateChannelWaveEligible
 
-// Module 15593 (usePrivateChannelWaveEligible)
-import closure_3 from "reinjectEphemerals" /* 4703 */;
-import closure_4 from "markAllUserIdListsStale" /* 4100 */;
+// Module 15629 (usePrivateChannelWaveEligible)
+import closure_3 from "reinjectEphemerals" /* 4735 */;
+import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import { ChannelFlags } from "set" /* 1394 */;
 import { MessageTypes } from "ME" /* 676 */;
 
@@ -63,10 +63,10 @@ export const usePrivateChannelWaveEligible = function usePrivateChannelWaveEligi
   const obj4 = _require(589);
   const obj5 = recipientId(11);
   const extractTimestampResult = recipientId(11).extractTimestamp(isDM.id);
-  const obj6 = _require(4133);
-  const tmp9 = recipientId(4045)();
-  const isWithinIntervalResult = obj6.isWithinInterval(recipientId(4045)(), recipientId(4045)(extractTimestampResult), 1814400000);
-  const strangerDangerWarning = _require(10964).useStrangerDangerWarning(isDM.id);
+  const obj6 = _require(4163);
+  const tmp9 = recipientId(4075)();
+  const isWithinIntervalResult = obj6.isWithinInterval(recipientId(4075)(), recipientId(4075)(extractTimestampResult), 1814400000);
+  const strangerDangerWarning = _require(11001).useStrangerDangerWarning(isDM.id);
   if (tmp) {
     tmp = stateFromStores;
   }

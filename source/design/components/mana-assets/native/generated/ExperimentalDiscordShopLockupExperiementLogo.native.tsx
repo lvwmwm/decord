@@ -1,16 +1,16 @@
-// Module ID: 6497
-// Function ID: 6498
+// Module ID: 6529
+// Function ID: 6530
 // Name: ExperimentalDiscordShopLockupExperiementLogo
-// Dependencies: [17, 21, 712, 4167, 6498, 2]
+// Dependencies: [17, 21, 712, 4197, 6530, 2]
 // Exports: ExperimentalDiscordShopLockupExperiementLogo
 
-// Module 6497 (ExperimentalDiscordShopLockupExperiementLogo)
+// Module 6529 (ExperimentalDiscordShopLockupExperiementLogo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4167 */;
-import metadataDefault from "metadata" /* 6498 */;
+import map from "map" /* 4197 */;
+import metadataDefault from "metadata" /* 6530 */;
 
 const Image = get_ActivityIndicator.Image;
 const jsx = jsxProd.jsx;

@@ -1,10 +1,10 @@
-// Module ID: 17470
-// Function ID: 17471
+// Module ID: 17506
+// Function ID: 17507
 // Name: init
 // Dependencies: [17, 2]
 // Exports: init
 
-// Module 17470 (init)
+// Module 17506 (init)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

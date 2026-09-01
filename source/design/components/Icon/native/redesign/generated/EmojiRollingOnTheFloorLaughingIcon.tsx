@@ -1,14 +1,14 @@
-// Module ID: 14966
-// Function ID: 14967
+// Module ID: 14999
+// Function ID: 15000
 // Name: EmojiRollingOnTheFloorLaughingIcon
-// Dependencies: [19, 21, 712, 4166, 14967, 2]
+// Dependencies: [19, 21, 712, 4196, 15000, 2]
 // Exports: EmojiRollingOnTheFloorLaughingIcon
 
-// Module 14966 (EmojiRollingOnTheFloorLaughingIcon)
+// Module 14999 (EmojiRollingOnTheFloorLaughingIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14967 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 15000 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

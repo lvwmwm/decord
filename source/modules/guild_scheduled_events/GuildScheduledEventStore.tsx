@@ -1,10 +1,10 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7271
+// Function ID: 7272
 // Name: scheduledEventSort
-// Dependencies: [1218, 1992, 1393, 4087, 12, 11, 589, 709, 2]
+// Dependencies: [1218, 1992, 1393, 4117, 12, 11, 589, 709, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 7239 (scheduledEventSort)
+// Module 7271 (scheduledEventSort)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

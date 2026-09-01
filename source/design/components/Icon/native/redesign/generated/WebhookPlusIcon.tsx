@@ -1,14 +1,14 @@
-// Module ID: 16388
-// Function ID: 16389
+// Module ID: 16424
+// Function ID: 16425
 // Name: WebhookPlusIcon
-// Dependencies: [19, 21, 712, 4166, 16389, 2]
+// Dependencies: [19, 21, 712, 4196, 16425, 2]
 // Exports: WebhookPlusIcon
 
-// Module 16388 (WebhookPlusIcon)
+// Module 16424 (WebhookPlusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 16389 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 16425 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,19 +1,19 @@
-// Module ID: 12501
-// Function ID: 12502
+// Module ID: 12534
+// Function ID: 12535
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 1996, 1302, 21, 4448, 712, 1236, 589, 1363, 7152, 4444, 2]
+// Dependencies: [19, 17, 1996, 1302, 21, 4478, 712, 1236, 589, 1363, 7184, 4474, 2]
 // Exports: default
 
-// Module 12501 (LimitedTimeBadge)
+// Module 12534 (LimitedTimeBadge)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
-import useCountdownDefault from "useCountdown" /* 7152 */;
+import useCountdownDefault from "useCountdown" /* 7184 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -83,7 +83,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
     obj3[0] = days;
     obj2[2] = intl7.formatToPlainString(tmp2(1236).t.TlZULM, obj3);
     obj2[4] = sum;
-    obj1[1] = jsx(tmp2(4444).Text, { color: null, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
+    obj1[1] = jsx(tmp2(4474).Text, { color: null, variant: "text-xs/bold", accessibilityLabel: null, allowFontScaling: false, children: null });
     return <View style={null}>{null}</View>;
   }
 };

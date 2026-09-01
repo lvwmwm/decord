@@ -1,12 +1,12 @@
-// Module ID: 16972
-// Function ID: 16973
+// Module ID: 17008
+// Function ID: 17009
 // Name: prototype
-// Dependencies: [4499, 7125, 676, 5454, 16973, 9742, 2]
+// Dependencies: [4529, 7157, 676, 5486, 17009, 9781, 2]
 
-// Module 16972 (prototype)
-import initializeDefault from "initialize" /* 5454 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_3 from "getState" /* 7125 */;
+// Module 17008 (prototype)
+import initializeDefault from "initialize" /* 5486 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_3 from "getState" /* 7157 */;
 import { AppStates } from "ME" /* 676 */;
 
 initializeDefault;

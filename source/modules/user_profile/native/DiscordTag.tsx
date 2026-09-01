@@ -1,17 +1,17 @@
-// Module ID: 9732
-// Function ID: 9733
+// Module ID: 9771
+// Function ID: 9772
 // Name: DiscordTag
-// Dependencies: [19, 17, 21, 4448, 712, 4444, 8896, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 4474, 8933, 2]
 // Exports: default
 
-// Module 9732 (DiscordTag)
+// Module 9771 (DiscordTag)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4444 */;
-import getBotLabelDefault from "getBotLabel" /* 8896 */;
+import Text from "Text" /* 4474 */;
+import getBotLabelDefault from "getBotLabel" /* 8933 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -48,7 +48,7 @@ export default function DiscordTag(arg0) {
         obj1[2] = discriminatorStyle;
         const items1 = ["#", user.discriminator];
         obj1[3] = items1;
-        tmp2Result = tmp2(tmp4(4444).Text, obj1);
+        tmp2Result = tmp2(tmp4(4474).Text, obj1);
       }
       items[1] = tmp2Result;
       obj[4] = items;

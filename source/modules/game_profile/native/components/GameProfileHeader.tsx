@@ -1,16 +1,16 @@
-// Module ID: 8803
-// Function ID: 8804
+// Module ID: 8840
+// Function ID: 8841
 // Name: GameProfileHeader
-// Dependencies: [32, 19, 17, 21, 4448, 712, 4187, 8804, 4908, 8805, 4444, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 712, 4217, 8841, 4940, 8842, 4474, 2]
 // Exports: default
 
-// Module 8803 (GameProfileHeader)
+// Module 8840 (GameProfileHeader)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ View: c5, Image: closure_6 } = get_ActivityIndicator);

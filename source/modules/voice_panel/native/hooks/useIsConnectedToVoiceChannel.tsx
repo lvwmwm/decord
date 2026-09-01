@@ -1,13 +1,13 @@
-// Module ID: 16582
-// Function ID: 16583
+// Module ID: 16618
+// Function ID: 16619
 // Name: useIsConnectedToVoiceChannel
-// Dependencies: [1218, 4522, 4467, 676, 589, 2]
+// Dependencies: [1218, 4554, 4497, 676, 589, 2]
 // Exports: default
 
-// Module 16582 (useIsConnectedToVoiceChannel)
+// Module 16618 (useIsConnectedToVoiceChannel)
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "createRTCConnection" /* 4522 */;
-import closure_4 from "updateVoiceState" /* 4467 */;
+import closure_3 from "createRTCConnection" /* 4554 */;
+import closure_4 from "updateVoiceState" /* 4497 */;
 import { RTCConnectionStates } from "ME" /* 676 */;
 
 const require = arg1;

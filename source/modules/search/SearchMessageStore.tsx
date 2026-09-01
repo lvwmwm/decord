@@ -1,17 +1,17 @@
-// Module ID: 6096
-// Function ID: 6097
+// Module ID: 6128
+// Function ID: 6129
 // Name: handleReaction
-// Dependencies: [1218, 1387, 4100, 676, 4346, 4705, 4102, 589, 709, 2]
+// Dependencies: [1218, 1387, 4130, 676, 4376, 4737, 4132, 589, 709, 2]
 
-// Module 6096 (handleReaction)
+// Module 6128 (handleReaction)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import MAX_REACTIONS from "MAX_REACTIONS" /* 4102 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4346 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4705 */;
+import MAX_REACTIONS from "MAX_REACTIONS" /* 4132 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4376 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "markAllUserIdListsStale" /* 4100 */;
+import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import { ChannelTypes } from "ME" /* 676 */;
 
 require = arg1;

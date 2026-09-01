@@ -1,9 +1,9 @@
-// Module ID: 17377
-// Function ID: 17378
+// Module ID: 17413
+// Function ID: 17414
 // Name: GlobalDiscoveryServersLimits
 // Dependencies: [2]
 
-// Module 17377 (GlobalDiscoveryServersLimits)
+// Module 17413 (GlobalDiscoveryServersLimits)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GlobalDiscoveryServersLimits.tsx");

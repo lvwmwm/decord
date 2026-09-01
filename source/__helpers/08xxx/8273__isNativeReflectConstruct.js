@@ -1,16 +1,18 @@
 // Module ID: 8273
 // Function ID: 8274
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 8225]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8274]
 
 // Module 8273 (_isNativeReflectConstruct)
+import noopAll from "noop" /* 19 */;
 import _inheritsDefault from "_inherits" /* 98 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const FeSpotLight = arg1;
+const Defs = importDefault;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,12 +32,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeSpotLight {
+noopAll;
+class Defs {
   constructor() {
     self = this;
-    tmp = closure_2(this, FeSpotLight);
+    tmp = closure_2(this, Defs);
     tmp2 = closure_4;
-    obj = closure_4(FeSpotLight);
+    obj = closure_4(Defs);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -50,18 +53,16 @@ class FeSpotLight {
     return tmp3(self, constructResult);
   }
 }
-_inheritsDefault(FeSpotLight, require("noop").Component);
+_inheritsDefault(Defs, require("noop").Component);
 const items = [
   {
     key: "render",
     value: function render() {
-      const result = FeSpotLight(8225).warnUnimplementedFilter();
-      return null;
+      return jsx(Defs(8274), { children: this.props.children });
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(FeSpotLight, items);
-importDefaultResultResult.displayName = "FeSpotLight";
-importDefaultResultResult.defaultProps = {};
+const importDefaultResultResult = importDefaultResult(Defs, items);
+importDefaultResultResult.displayName = "Defs";
 
 export default importDefaultResultResult;

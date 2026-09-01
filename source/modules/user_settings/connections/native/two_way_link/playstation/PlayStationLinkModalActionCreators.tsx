@@ -1,22 +1,22 @@
-// Module ID: 9289
-// Function ID: 9290
-// Dependencies: [4691, 9290, 2009, 2]
+// Module ID: 9328
+// Function ID: 9329
+// Dependencies: [4723, 9329, 2009, 2]
 
-// Module 9289
+// Module 9328
 import set from "set" /* 2 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4691 from "module_4691" /* 4691 */;
+import _modDef4723 from "module_4723" /* 4723 */;
 
 let c3 = "USER_SETTINGS_CONNECTIONS_PS_LINK_MODAL_KEY";
 const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/playstation/PlayStationLinkModalActionCreators.tsx");
 
 export default {
   showModal(locationStack, platformType) {
-    let obj = _modDef4691;
+    let obj = _modDef4723;
     obj = { locationStack, platformType };
-    obj.pushLazy(asyncRequireImpl(9290, dependencyMap.paths), obj, c3);
+    obj.pushLazy(asyncRequireImpl(9329, dependencyMap.paths), obj, c3);
   },
   hideModal() {
-    _modDef4691.popWithKey(c3);
+    _modDef4723.popWithKey(c3);
   }
 };

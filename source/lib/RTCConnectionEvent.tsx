@@ -1,9 +1,9 @@
-// Module ID: 4546
-// Function ID: 4547
+// Module ID: 4578
+// Function ID: 4579
 // Name: RTCConnectionEvent
 // Dependencies: [2]
 
-// Module 4546 (RTCConnectionEvent)
+// Module 4578 (RTCConnectionEvent)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("lib/RTCConnectionEvent.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15851
+// Function ID: 15852
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 7125, 676, 589, 4413, 8544, 4164, 1236, 3019, 2]
+// Dependencies: [19, 7157, 676, 589, 4443, 8576, 4194, 1236, 3049, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 15815 (useDefaultAuthorizationNotifiers)
+// Module 15851 (useDefaultAuthorizationNotifiers)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getState" /* 7125 */;
+import closure_4 from "getState" /* 7157 */;
 import { AppStates } from "ME" /* 676 */;
 
 const require = arg1;

@@ -1,20 +1,20 @@
-// Module ID: 7207
-// Function ID: 7208
+// Module ID: 7239
+// Function ID: 7240
 // Name: getMemberSafetyPageStore
-// Dependencies: [32, 1218, 1992, 1909, 1922, 7208, 676, 1471, 11, 7214, 7215, 7210, 589, 709, 2]
+// Dependencies: [32, 1218, 1992, 1909, 1922, 7240, 676, 1471, 11, 7246, 7247, 7242, 589, 709, 2]
 
-// Module 7207 (getMemberSafetyPageStore)
+// Module 7239 (getMemberSafetyPageStore)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import hasMemberSupplemental from "hasMemberSupplemental" /* 7214 */;
-import createFetchKeys from "createFetchKeys" /* 7215 */;
+import hasMemberSupplemental from "hasMemberSupplemental" /* 7246 */;
+import createFetchKeys from "createFetchKeys" /* 7247 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRecordFromRust" /* 1909 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { GuildMemberSafetyPageStore as closure_8 } from "getSearchIndex" /* 7208 */;
+import { GuildMemberSafetyPageStore as closure_8 } from "getSearchIndex" /* 7240 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
 
 require = arg1;
@@ -499,7 +499,7 @@ const memberSafetyStore = new MemberSafetyStore(dispatcherDefault, {
       tmp14 = members[members.length - 1];
     }
     obj = { totalResultsCount: totalResultsCount.total_result_count, elasticSearchCursor: null };
-    let tmp9Result = tmp9(7210);
+    let tmp9Result = tmp9(7242);
     let joined_at;
     if (first != null) {
       const member = first.member;
@@ -520,7 +520,7 @@ const memberSafetyStore = new MemberSafetyStore(dispatcherDefault, {
     }
     obj1 = { before: tmp9Result.createMemberSearchCursor(obj), after: null };
     obj[1] = id;
-    tmp9Result = tmp9(7210);
+    tmp9Result = tmp9(7242);
     let joined_at1;
     if (tmp14 != null) {
       const member3 = tmp14.member;

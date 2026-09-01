@@ -1,13 +1,13 @@
-// Module ID: 11525
-// Function ID: 11526
+// Module ID: 11558
+// Function ID: 11559
 // Name: useScheduledMessageDraftCoachmarkState
-// Dependencies: [32, 19, 4822, 1384, 1373, 4268, 589, 1375, 2]
+// Dependencies: [32, 19, 4854, 1384, 1373, 4298, 589, 1375, 2]
 // Exports: useScheduledMessageDraftCoachmarkState
 
-// Module 11525 (useScheduledMessageDraftCoachmarkState)
+// Module 11558 (useScheduledMessageDraftCoachmarkState)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleChanged" /* 4822 */;
+import closure_4 from "handleChanged" /* 4854 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 
 const require = arg1;
@@ -22,9 +22,9 @@ export const useScheduledMessageDraftCoachmarkState = function useScheduledMessa
   let first;
   closure_4 = undefined;
   let isCoachmarkVisible;
-  let result = channel(4268).useIsDismissibleContentDismissed_UNSAFE(closure_6);
+  let result = channel(4298).useIsDismissibleContentDismissed_UNSAFE(closure_6);
   dependencyMap = result;
-  let obj = channel(4268);
+  let obj = channel(4298);
   const items = [closure_4];
   const stateFromStores = channel(589).useStateFromStores(items, () => null != scheduledMessage.getScheduledMessage(channel.id));
   if (isEligible) {

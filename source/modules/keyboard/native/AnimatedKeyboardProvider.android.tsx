@@ -1,9 +1,9 @@
-// Module ID: 14194
-// Function ID: 14195
-// Dependencies: [1640, 2, 14195]
+// Module ID: 14227
+// Function ID: 14228
+// Dependencies: [1640, 2, 14228]
 
-// Module 14194
-import mutableDefault from "mutable" /* 14195 */;
+// Module 14227
+import mutableDefault from "mutable" /* 14228 */;
 import importDefaultResult from "enforcing" /* 1640 */;
 
 const result = importDefaultResult.setNavigationBarContrastEnforced(false);

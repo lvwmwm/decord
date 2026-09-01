@@ -1,13 +1,13 @@
-// Module ID: 7248
-// Function ID: 7249
+// Module ID: 7280
+// Function ID: 7281
 // Name: useOptInEnabledForGuild
-// Dependencies: [1909, 4091, 4669, 1922, 676, 589, 2]
+// Dependencies: [1909, 4121, 4701, 1922, 676, 589, 2]
 // Exports: isOptInEnabledForGuild, useOptInEnabledForGuild, useShouldShowOnboardingAdminUpsellForGuild
 
-// Module 7248 (useOptInEnabledForGuild)
+// Module 7280 (useOptInEnabledForGuild)
 import closure_2 from "createGuildRecordFromRust" /* 1909 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_4 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_4 from "updateUserGuildSettingsInternal" /* 4701 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

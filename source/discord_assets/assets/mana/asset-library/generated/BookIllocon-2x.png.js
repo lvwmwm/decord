@@ -1,9 +1,9 @@
-// Module ID: 6330
-// Function ID: 6331
+// Module ID: 6362
+// Function ID: 6363
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6330 (metadata)
+// Module 6362 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BookIllocon-2x.png.js");

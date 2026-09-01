@@ -1,15 +1,15 @@
-// Module ID: 12281
-// Function ID: 12282
+// Module ID: 12314
+// Function ID: 12315
 // Name: useIsViewingPremiumMemberships
-// Dependencies: [676, 1394, 4280, 4287, 2]
+// Dependencies: [676, 1394, 4310, 4317, 2]
 // Exports: default
 
-// Module 12281 (useIsViewingPremiumMemberships)
+// Module 12314 (useIsViewingPremiumMemberships)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import set2 from "set" /* 1394 */;
-import _extends from "_extends" /* 4280 */;
-import RouteParam2 from "RouteParam" /* 4287 */;
+import _extends from "_extends" /* 4310 */;
+import RouteParam2 from "RouteParam" /* 4317 */;
 
 const Routes = ME.Routes;
 const StaticChannelRoute = set2.StaticChannelRoute;

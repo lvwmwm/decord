@@ -1,14 +1,14 @@
-// Module ID: 11237
-// Function ID: 11238
+// Module ID: 11274
+// Function ID: 11275
 // Name: ForwardMessageFooter
-// Dependencies: [32, 19, 4822, 21, 11227, 11230, 589, 7489, 11238, 1236, 11239, 11240, 4896, 11247, 2]
+// Dependencies: [32, 19, 4854, 21, 11264, 11267, 589, 7521, 11275, 1236, 11276, 11277, 4928, 11284, 2]
 // Exports: ForwardMessageFooter
 
-// Module 11237 (ForwardMessageFooter)
+// Module 11274 (ForwardMessageFooter)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "handleChanged" /* 4822 */;
-import { DraftType } from "handleChanged" /* 4822 */;
+import closure_5 from "handleChanged" /* 4854 */;
+import { DraftType } from "handleChanged" /* 4854 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

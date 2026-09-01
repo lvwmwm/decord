@@ -1,14 +1,14 @@
-// Module ID: 8196
-// Function ID: 8197
+// Module ID: 8228
+// Function ID: 8229
 // Name: ReactionIcon
-// Dependencies: [19, 21, 712, 4166, 8197, 2]
+// Dependencies: [19, 21, 712, 4196, 8229, 2]
 // Exports: ReactionIcon
 
-// Module 8196 (ReactionIcon)
+// Module 8228 (ReactionIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 8197 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 8229 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

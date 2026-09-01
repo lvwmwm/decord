@@ -1,23 +1,23 @@
-// Module ID: 12511
-// Function ID: 12512
+// Module ID: 12544
+// Function ID: 12545
 // Name: ProfilePreviewWrapper
-// Dependencies: [19, 17, 678, 21, 4448, 712, 4908, 8854, 8494, 10819, 12512, 12513, 1950, 679, 12514, 12517, 2]
+// Dependencies: [19, 17, 678, 21, 4478, 712, 4940, 8891, 8526, 10857, 12545, 12546, 1950, 679, 12547, 12550, 2]
 // Exports: IndividualProductPreview
 
-// Module 12511 (ProfilePreviewWrapper)
+// Module 12544 (ProfilePreviewWrapper)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
-import LinearGradientDefault from "LinearGradient" /* 4908 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 8494 */;
-import useCurrentUser from "useCurrentUser" /* 8854 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10819 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12512 */;
-import NameplateUserDefault from "NameplateUser" /* 12513 */;
+import LinearGradientDefault from "LinearGradient" /* 4940 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 8526 */;
+import useCurrentUser from "useCurrentUser" /* 8891 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10857 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 12545 */;
+import NameplateUserDefault from "NameplateUser" /* 12546 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import items from "items" /* 678 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function ProfilePreviewWrapper(children) {
@@ -129,11 +129,11 @@ export const IndividualProductPreview = function IndividualProductPreview(arg0) 
   } else if (tmp(1950).CollectiblesItemType.EXTERNAL_SKU === type) {
     const ALL = tmp(679).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      let tmp5 = callback(tmp(12514).FractionalNitroPreview, {});
+      let tmp5 = callback(tmp(12547).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === constants.ORB_PROFILE_BADGE) {
-        tmp5 = callback(tmp(12517).OrbBadgePreview, {});
+        tmp5 = callback(tmp(12550).OrbBadgePreview, {});
       }
     }
     return tmp5;

@@ -1,14 +1,14 @@
-// Module ID: 14455
-// Function ID: 14456
+// Module ID: 14488
+// Function ID: 14489
 // Name: QrCodeIcon
-// Dependencies: [19, 21, 712, 4166, 9914, 2]
+// Dependencies: [19, 21, 712, 4196, 9953, 2]
 // Exports: QrCodeIcon
 
-// Module 14455 (QrCodeIcon)
+// Module 14488 (QrCodeIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 9914 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 9953 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

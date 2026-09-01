@@ -1,15 +1,15 @@
-// Module ID: 7465
-// Function ID: 7466
+// Module ID: 7497
+// Function ID: 7498
 // Name: createMessage
-// Dependencies: [7308, 1930, 1922, 676, 38, 7466, 2]
+// Dependencies: [7340, 1935, 1922, 676, 38, 7498, 2]
 // Exports: createBotMessage, default, userRecordToServer
 
-// Module 7465 (createMessage)
+// Module 7497 (createMessage)
 import _modDef38 from "module_38" /* 38 */;
-import snowflakeSequence from "snowflakeSequence" /* 7466 */;
-import closure_3 from "processMessage" /* 7308 */;
-import { ReferencedMessageState } from "processMessage" /* 7308 */;
-import closure_5 from "createdAt" /* 1930 */;
+import snowflakeSequence from "snowflakeSequence" /* 7498 */;
+import closure_3 from "processMessage" /* 7340 */;
+import { ReferencedMessageState } from "processMessage" /* 7340 */;
+import closure_5 from "createdAt" /* 1935 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

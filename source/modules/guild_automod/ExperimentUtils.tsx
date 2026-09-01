@@ -1,12 +1,12 @@
-// Module ID: 10144
-// Function ID: 10145
+// Module ID: 10183
+// Function ID: 10184
 // Name: isInMentionRaidExperiment
-// Dependencies: [10145, 2]
+// Dependencies: [10184, 2]
 // Exports: isInMentionRaidExperiment, useIsMentionRaidExperimentEnabled
 
-// Module 10144 (isInMentionRaidExperiment)
+// Module 10183 (isInMentionRaidExperiment)
 import set from "set" /* 2 */;
-import experiment from "experiment" /* 10145 */;
+import experiment from "experiment" /* 10184 */;
 
 const result = set.fileFinishedImporting("modules/guild_automod/ExperimentUtils.tsx");
 

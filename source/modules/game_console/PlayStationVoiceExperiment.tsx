@@ -1,9 +1,9 @@
-// Module ID: 7219
-// Function ID: 7220
+// Module ID: 7251
+// Function ID: 7252
 // Name: PlayStationVoiceExperiment
 // Dependencies: [1469, 2]
 
-// Module 7219 (PlayStationVoiceExperiment)
+// Module 7251 (PlayStationVoiceExperiment)
 import getUnitIdDefault from "getUnitId" /* 1469 */;
 
 const obj = { 1: null };

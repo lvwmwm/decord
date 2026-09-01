@@ -1,17 +1,17 @@
-// Module ID: 14018
-// Function ID: 14019
+// Module ID: 14051
+// Function ID: 14052
 // Name: handleUpdateVADPermission
-// Dependencies: [1218, 1387, 4499, 4091, 4522, 4467, 676, 709, 589, 2]
+// Dependencies: [1218, 1387, 4529, 4121, 4554, 4497, 676, 709, 589, 2]
 
-// Module 14018 (handleUpdateVADPermission)
+// Module 14051 (handleUpdateVADPermission)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_6 from "createRTCConnection" /* 4522 */;
-import closure_7 from "updateVoiceState" /* 4467 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_6 from "createRTCConnection" /* 4554 */;
+import closure_7 from "updateVoiceState" /* 4497 */;
 import ME from "ME" /* 676 */;
 
 function handleUpdateVADPermission() {

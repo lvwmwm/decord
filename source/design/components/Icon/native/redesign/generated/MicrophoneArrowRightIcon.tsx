@@ -1,14 +1,14 @@
-// Module ID: 9971
-// Function ID: 9972
+// Module ID: 10010
+// Function ID: 10011
 // Name: MicrophoneArrowRightIcon
-// Dependencies: [19, 21, 712, 4166, 9972, 2]
+// Dependencies: [19, 21, 712, 4196, 10011, 2]
 // Exports: MicrophoneArrowRightIcon
 
-// Module 9971 (MicrophoneArrowRightIcon)
+// Module 10010 (MicrophoneArrowRightIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 9972 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 10011 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

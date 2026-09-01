@@ -1,13 +1,13 @@
-// Module ID: 11657
-// Function ID: 11658
+// Module ID: 11690
+// Function ID: 11691
 // Name: useFetchDeveloperActivityShelfItems
-// Dependencies: [19, 8466, 9406, 4136, 589, 9430, 2]
+// Dependencies: [19, 8498, 9445, 4166, 589, 9469, 2]
 // Exports: useFetchDeveloperActivityShelfItems
 
-// Module 11657 (useFetchDeveloperActivityShelfItems)
+// Module 11690 (useFetchDeveloperActivityShelfItems)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "initialize" /* 8466 */;
-import { DevShelfFetchState } from "initialize" /* 8466 */;
+import closure_3 from "initialize" /* 8498 */;
+import { DevShelfFetchState } from "initialize" /* 8498 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/useFetchDeveloperActivityShelfItems.tsx");

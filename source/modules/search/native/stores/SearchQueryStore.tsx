@@ -1,18 +1,18 @@
-// Module ID: 11873
-// Function ID: 11874
+// Module ID: 11906
+// Function ID: 11907
 // Name: prototype
-// Dependencies: [1387, 4100, 1922, 7590, 7589, 676, 4642, 1236, 11874, 11886, 1991, 589, 709, 2]
+// Dependencies: [1387, 4130, 1922, 7622, 7621, 676, 4674, 1236, 11907, 11919, 1991, 589, 709, 2]
 
-// Module 11873 (prototype)
+// Module 11906 (prototype)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 11874 */;
-import isCompleteDefault from "isComplete" /* 11886 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 11907 */;
+import isCompleteDefault from "isComplete" /* 11919 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "markAllUserIdListsStale" /* 4100 */;
+import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7590 */;
-import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7589 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7622 */;
+import { SearchFilterAddLocations } from "SearchEntrypointAnalyticsLocations" /* 7621 */;
 import ME from "ME" /* 676 */;
 import areArraysShallowlyEqual from "areArraysShallowlyEqual" /* 1991 */;
 
@@ -178,8 +178,8 @@ const prototype = function SearchQueryStateManager(type) {
   } else {
     let channelName;
     if (null != channel) {
-      channelName = obj(4642).computeChannelName(channel, closure_5, closure_4);
-      const obj2 = obj(4642);
+      channelName = obj(4674).computeChannelName(channel, closure_5, closure_4);
+      const obj2 = obj(4674);
     }
     if (null == channelName) {
       let items1 = [];
@@ -190,11 +190,11 @@ const prototype = function SearchQueryStateManager(type) {
       const intl = obj(1236).intl;
       const stringResult = intl.string(obj(1236).t.WNpFHa);
       let _HermesInternal = HermesInternal;
-      obj[2] = "" + stringResult + ": " + obj(11874).quoteChannelName(channelName);
+      obj[2] = "" + stringResult + ": " + obj(11907).quoteChannelName(channelName);
       obj[3] = type.channelId;
       obj[4] = SearchFilterAddLocations.CLIENT_AUTO_ADD;
       items1 = [obj];
-      const obj4 = obj(11874);
+      const obj4 = obj(11907);
     }
     items = items1;
   }

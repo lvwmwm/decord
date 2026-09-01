@@ -1,15 +1,15 @@
-// Module ID: 4115
-// Function ID: 4116
+// Module ID: 4145
+// Function ID: 4146
 // Name: reset
-// Dependencies: [1923, 4110, 4116, 1218, 676, 589, 709, 2]
+// Dependencies: [1923, 4140, 4146, 1218, 676, 589, 709, 2]
 // Exports: getSubscriptionOfType
 
-// Module 4115 (reset)
+// Module 4145 (reset)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "setPremiumTypeActual" /* 1923 */;
-import { isNoneSubscription } from "createFromServer" /* 4110 */;
-import { SubscriptionRecord } from "createSubscriptionItemFromServer" /* 4116 */;
+import closure_0 from "setActualFromUser" /* 1923 */;
+import { isNoneSubscription } from "createFromServer" /* 4140 */;
+import { SubscriptionRecord } from "createSubscriptionItemFromServer" /* 4146 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
 

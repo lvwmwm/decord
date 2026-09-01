@@ -1,10 +1,10 @@
-// Module ID: 9704
-// Function ID: 9705
+// Module ID: 9743
+// Function ID: 9744
 // Name: canViewInviteModal
 // Dependencies: [676, 2]
 // Exports: canViewInviteModal
 
-// Module 9704 (canViewInviteModal)
+// Module 9743 (canViewInviteModal)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

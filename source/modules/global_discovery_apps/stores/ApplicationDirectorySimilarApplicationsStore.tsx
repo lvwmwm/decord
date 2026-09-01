@@ -1,9 +1,9 @@
-// Module ID: 11613
-// Function ID: 11614
+// Module ID: 11646
+// Function ID: 11647
 // Name: getSimilarApplications
 // Dependencies: [1401, 589, 709, 2]
 
-// Module 11613 (getSimilarApplications)
+// Module 11646 (getSimilarApplications)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import privDefault from "priv" /* 1401 */;

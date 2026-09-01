@@ -1,10 +1,10 @@
-// Module ID: 5093
-// Function ID: 5094
+// Module ID: 5125
+// Function ID: 5126
 // Name: _shouldConvertToWebP
-// Dependencies: [5, 3, 5094, 1217, 2]
+// Dependencies: [5, 3, 5126, 1217, 2]
 // Exports: maybeConvertToWebP
 
-// Module 5093 (_shouldConvertToWebP)
+// Module 5125 (_shouldConvertToWebP)
 import timestampDefault from "timestamp" /* 3 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1217 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
@@ -39,7 +39,7 @@ function _shouldConvertToWebP2() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ function _performWebPConversion() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -522,7 +522,7 @@ function _maybeConvertToWebP() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

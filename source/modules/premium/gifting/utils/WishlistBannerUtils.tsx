@@ -1,10 +1,10 @@
-// Module ID: 10533
-// Function ID: 10534
+// Module ID: 10571
+// Function ID: 10572
 // Name: getSubtitle
-// Dependencies: [19, 1236, 10418, 6041, 2]
+// Dependencies: [19, 1236, 10457, 6073, 2]
 // Exports: getBannerMode, useWishlistBannerConfig
 
-// Module 10533 (getSubtitle)
+// Module 10571 (getSubtitle)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

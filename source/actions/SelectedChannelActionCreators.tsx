@@ -1,15 +1,15 @@
-// Module ID: 5323
-// Function ID: 5324
-// Dependencies: [4465, 1387, 4499, 676, 709, 1222, 5324, 9839, 2]
+// Module ID: 5355
+// Function ID: 5356
+// Dependencies: [4495, 1387, 4529, 676, 709, 1222, 5356, 9878, 2]
 
-// Module 5323
+// Module 5355
 import dispatcherDefault from "dispatcher" /* 709 */;
 import transitionTo from "transitionTo" /* 1222 */;
-import selectVoiceChannelAdditional from "selectVoiceChannelAdditional" /* 5324 */;
-import disconnectRemoteAll from "disconnectRemote" /* 9839 */;
-import closure_4 from "set" /* 4465 */;
+import selectVoiceChannelAdditional from "selectVoiceChannelAdditional" /* 5356 */;
+import disconnectRemoteAll from "disconnectRemote" /* 9878 */;
+import closure_4 from "set" /* 4495 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4529 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

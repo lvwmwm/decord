@@ -1,13 +1,13 @@
-// Module ID: 8439
-// Function ID: 8440
+// Module ID: 8471
+// Function ID: 8472
 // Name: create
-// Dependencies: [32, 1307, 8423, 8422, 8421, 1337, 2]
+// Dependencies: [32, 1307, 8455, 8454, 8453, 1337, 2]
 
-// Module 8439 (create)
+// Module 8471 (create)
 import _mod1307 from "module_1307" /* 1307 */;
 import defineProperty from "defineProperty" /* 1337 */;
-import create from "create" /* 8421 */;
-import create2 from "create" /* 8422 */;
+import create from "create" /* 8453 */;
+import create2 from "create" /* 8454 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -22,7 +22,7 @@ class Nagbar$Type extends MessageType {
       name: "cta_action",
       kind: "enum",
       T() {
-            const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(8423).ButtonAction, "BUTTON_ACTION_"];
+            const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(8455).ButtonAction, "BUTTON_ACTION_"];
             return items;
           }
     };
@@ -32,7 +32,7 @@ class Nagbar$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(8422).HelpArticle;
+            return callback(8454).HelpArticle;
           }
     };
     items[5] = {
@@ -40,7 +40,7 @@ class Nagbar$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(8421).LocalizedString;
+            return callback(8453).LocalizedString;
           }
     };
     obj = { no: 7, name: "cta_label_localized", kind: "message", T: null };
@@ -223,7 +223,7 @@ let items = [
     name: "cta_action",
     kind: "enum",
     T() {
-      const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(8423).ButtonAction, "BUTTON_ACTION_"];
+      const items = ["discord_protos.premium_marketing.v1.ButtonAction", callback(8455).ButtonAction, "BUTTON_ACTION_"];
       return items;
     }
   },
@@ -233,7 +233,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(8422).HelpArticle;
+      return callback(8454).HelpArticle;
     }
   },
   {
@@ -241,7 +241,7 @@ let items = [
     name: "body_localized",
     kind: "message",
     T() {
-      return callback(8421).LocalizedString;
+      return callback(8453).LocalizedString;
     }
   },
 ,

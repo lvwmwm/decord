@@ -1,43 +1,43 @@
-// Module ID: 7206
-// Function ID: 7207
+// Module ID: 7238
+// Function ID: 7239
 // Name: noop
-// Dependencies: [7191, 1983, 4267, 1346, 4361, 7207, 7238, 4333, 6034, 6035, 4704, 7250, 7245, 7308, 7334, 1996, 1302, 1340, 1387, 5447, 1982, 1992, 1389, 7349, 1985, 1909, 4703, 4091, 4463, 5349, 4669, 1922, 7356, 6033, 2]
+// Dependencies: [7223, 1983, 4297, 1346, 4391, 7239, 7270, 4363, 6066, 6067, 4736, 7282, 7277, 7340, 7366, 1996, 1302, 1340, 1387, 5479, 1982, 1992, 1389, 7381, 1985, 1909, 4735, 4121, 4493, 5381, 4701, 1922, 7388, 6065, 2]
 // Exports: default
 
-// Module 7206 (noop)
+// Module 7238 (noop)
 import set from "set" /* 2 */;
-import handleSelectedChannelStoreChanged from "handleSelectedChannelStoreChanged" /* 7191 */;
+import handleSelectedChannelStoreChanged from "handleSelectedChannelStoreChanged" /* 7223 */;
 import isSubscriptionGated from "isSubscriptionGated" /* 1983 */;
-import reset from "reset" /* 4267 */;
-import getHash from "getHash" /* 4361 */;
-import getMemberSafetyPageStore from "getMemberSafetyPageStore" /* 7207 */;
-import handleReset from "handleReset" /* 7238 */;
-import snapshotSelectedGuildId from "snapshotSelectedGuildId" /* 4333 */;
-import processChannel from "processChannel" /* 6034 */;
-import dropChannelIfEmpty from "dropChannelIfEmpty" /* 4704 */;
-import freshTeenActivityWithMap from "freshTeenActivityWithMap" /* 7250 */;
-import guildHasCommunity from "guildHasCommunity" /* 7245 */;
-import processMessage from "processMessage" /* 7308 */;
-import createUserWidgetFromServer from "createUserWidgetFromServer" /* 7334 */;
+import reset from "reset" /* 4297 */;
+import getHash from "getHash" /* 4391 */;
+import getMemberSafetyPageStore from "getMemberSafetyPageStore" /* 7239 */;
+import handleReset from "handleReset" /* 7270 */;
+import snapshotSelectedGuildId from "snapshotSelectedGuildId" /* 4363 */;
+import processChannel from "processChannel" /* 6066 */;
+import dropChannelIfEmpty from "dropChannelIfEmpty" /* 4736 */;
+import freshTeenActivityWithMap from "freshTeenActivityWithMap" /* 7282 */;
+import guildHasCommunity from "guildHasCommunity" /* 7277 */;
+import processMessage from "processMessage" /* 7340 */;
+import createUserWidgetFromServer from "createUserWidgetFromServer" /* 7366 */;
 import _getSystemLocale from "_getSystemLocale" /* 1996 */;
 import handleThemeChange from "handleThemeChange" /* 1302 */;
 import handleConnectionClosedOrResumed from "handleConnectionClosedOrResumed" /* 1340 */;
 import ensureGuildLoaded from "ensureGuildLoaded" /* 1387 */;
-import setIndex from "setIndex" /* 5447 */;
+import setIndex from "setIndex" /* 5479 */;
 import comparator from "comparator" /* 1982 */;
 import trackCommunicationDisabled from "trackCommunicationDisabled" /* 1992 */;
 import allGuildIds from "allGuildIds" /* 1389 */;
-import updateGuildUnreadSentinel from "updateGuildUnreadSentinel" /* 7349 */;
+import updateGuildUnreadSentinel from "updateGuildUnreadSentinel" /* 7381 */;
 import createGuildRoleRecordFromRust from "createGuildRoleRecordFromRust" /* 1985 */;
 import createGuildRecordFromRust from "createGuildRecordFromRust" /* 1909 */;
-import reinjectEphemerals from "reinjectEphemerals" /* 4703 */;
-import getUncachedChannelPermissions from "getUncachedChannelPermissions" /* 4091 */;
-import generateOldThreadCutoff from "generateOldThreadCutoff" /* 4463 */;
-import insertUnsortedGuilds from "insertUnsortedGuilds" /* 5349 */;
-import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal" /* 4669 */;
+import reinjectEphemerals from "reinjectEphemerals" /* 4735 */;
+import getUncachedChannelPermissions from "getUncachedChannelPermissions" /* 4121 */;
+import generateOldThreadCutoff from "generateOldThreadCutoff" /* 4493 */;
+import insertUnsortedGuilds from "insertUnsortedGuilds" /* 5381 */;
+import updateUserGuildSettingsInternal from "updateUserGuildSettingsInternal" /* 4701 */;
 import mergeGuildAvatar from "mergeGuildAvatar" /* 1922 */;
-import handleCacheOrSocketLoaded from "handleCacheOrSocketLoaded" /* 7356 */;
-import makeSortedChannel from "makeSortedChannel" /* 6033 */;
+import handleCacheOrSocketLoaded from "handleCacheOrSocketLoaded" /* 7388 */;
+import makeSortedChannel from "makeSortedChannel" /* 6065 */;
 
 const result = set.fileFinishedImporting("modules/app_startup/AllCacheStores.native.tsx");
 

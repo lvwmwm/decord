@@ -1,12 +1,12 @@
-// Module ID: 14123
-// Function ID: 14124
+// Module ID: 14156
+// Function ID: 14157
 // Name: validateScope
-// Dependencies: [4350, 2]
+// Dependencies: [4380, 2]
 // Exports: default
 
-// Module 14123 (validateScope)
+// Module 14156 (validateScope)
 import set from "set" /* 2 */;
-import RPC_SCOPE_CONFIG2 from "RPC_SCOPE_CONFIG" /* 4350 */;
+import RPC_SCOPE_CONFIG2 from "RPC_SCOPE_CONFIG" /* 4380 */;
 
 let RPC_SCOPE_CONFIG = RPC_SCOPE_CONFIG2.RPC_SCOPE_CONFIG;
 const result = set.fileFinishedImporting("modules/rpc/helpers/validateScope.tsx");

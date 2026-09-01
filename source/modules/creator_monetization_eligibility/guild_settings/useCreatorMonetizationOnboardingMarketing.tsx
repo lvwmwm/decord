@@ -1,10 +1,10 @@
-// Module ID: 17264
-// Function ID: 17265
+// Module ID: 17300
+// Function ID: 17301
 // Name: useCreatorMonetizationOnboardingMarketing
-// Dependencies: [5, 32, 19, 17233, 4346, 2]
+// Dependencies: [5, 32, 19, 17269, 4376, 2]
 // Exports: default
 
-// Module 17264 (useCreatorMonetizationOnboardingMarketing)
+// Module 17300 (useCreatorMonetizationOnboardingMarketing)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -37,7 +37,7 @@ export default function useCreatorMonetizationOnboardingMarketing(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

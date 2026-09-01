@@ -1,9 +1,9 @@
-// Module ID: 5529
-// Function ID: 5530
+// Module ID: 5561
+// Function ID: 5562
 // Name: MAX_TRAITS
 // Dependencies: [2]
 
-// Module 5529 (MAX_TRAITS)
+// Module 5561 (MAX_TRAITS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/GuildProfileLimits.tsx");

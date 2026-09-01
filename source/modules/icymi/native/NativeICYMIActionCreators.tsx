@@ -1,8 +1,8 @@
-// Module ID: 16016
-// Function ID: 16017
-// Dependencies: [5, 676, 8589, 530, 709, 4164, 1236, 2]
+// Module ID: 16051
+// Function ID: 16052
+// Dependencies: [5, 676, 8621, 530, 709, 4194, 1236, 2]
 
-// Module 16016
+// Module 16051
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -24,7 +24,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

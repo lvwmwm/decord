@@ -1,12 +1,12 @@
-// Module ID: 9893
-// Function ID: 9894
+// Module ID: 9932
+// Function ID: 9933
 // Name: _fetchGameAutocomplete
-// Dependencies: [5, 5022, 676, 5023, 709, 530, 2]
+// Dependencies: [5, 5053, 676, 5054, 709, 530, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 9893 (_fetchGameAutocomplete)
+// Module 9932 (_fetchGameAutocomplete)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5022 */;
+import closure_4 from "set" /* 5053 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -29,7 +29,7 @@ function _fetchGameAutocomplete() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

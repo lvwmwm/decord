@@ -1,23 +1,23 @@
-// Module ID: 12918
-// Function ID: 12919
+// Module ID: 12951
+// Function ID: 12952
 // Name: IntroDemo
-// Dependencies: [17, 5591, 21, 4448, 712, 7572, 12919, 12920, 4444, 1236, 12921, 11253, 4411, 5971, 2]
+// Dependencies: [17, 5623, 21, 4478, 712, 7604, 12952, 12953, 4474, 1236, 12954, 11290, 4441, 6003, 2]
 // Exports: default
 
-// Module 12918 (IntroDemo)
+// Module 12951 (IntroDemo)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ClockIcon from "ClockIcon" /* 4411 */;
-import Text from "Text" /* 4444 */;
-import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5591 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 5971 */;
-import SavedMessageSortTypes from "SavedMessageSortTypes" /* 7572 */;
-import BookmarkIcon from "BookmarkIcon" /* 11253 */;
-import setDefault from "set" /* 12921 */;
+import ClockIcon from "ClockIcon" /* 4441 */;
+import Text from "Text" /* 4474 */;
+import ACTION_SHEET_START_HEIGHT_RATIO from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5623 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6003 */;
+import SavedMessageSortTypes from "SavedMessageSortTypes" /* 7604 */;
+import BookmarkIcon from "BookmarkIcon" /* 11290 */;
+import setDefault from "set" /* 12954 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 function IntroDemo(isReminder) {
   isReminder = isReminder.isReminder;
@@ -129,7 +129,7 @@ export default function ForLaterIntro(type) {
   const tmp4 = type.type === SavedMessageSortTypes.SavedMessageSortTypes.REMINDER;
   let obj = { style: tmp.scrollView, contentContainerStyle: tmp.pageContainer, children: null };
   obj = { style: tmp.container, children: null };
-  obj = { source: importDefault(tmp4 ? 12919 : 12920), style: tmp.upsellImage };
+  obj = { source: importDefault(tmp4 ? 12952 : 12953), style: tmp.upsellImage };
   const items = [closure_6(closure_3, obj), , ];
   obj1 = { style: tmp.textContainer, children: null };
   const obj2 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", style: tmp.text, children: null };

@@ -1,13 +1,13 @@
-// Module ID: 16584
-// Function ID: 16585
-// Dependencies: [19, 9425, 9426, 21, 589, 16585, 16587, 2]
+// Module ID: 16620
+// Function ID: 16621
+// Dependencies: [19, 9464, 9465, 21, 589, 16621, 16623, 2]
 
-// Module 16584
+// Module 16620
 import initialize from "initialize" /* 589 */;
-import FramePanelControllerDefault from "FramePanelController" /* 16585 */;
-import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16587 */;
-import closure_3 from "map" /* 9425 */;
-import { isLaunched } from "FrameLayoutModes" /* 9426 */;
+import FramePanelControllerDefault from "FramePanelController" /* 16621 */;
+import renderActivityOrPIPDefault from "renderActivityOrPIP" /* 16623 */;
+import closure_3 from "map" /* 9464 */;
+import { isLaunched } from "FrameLayoutModes" /* 9465 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

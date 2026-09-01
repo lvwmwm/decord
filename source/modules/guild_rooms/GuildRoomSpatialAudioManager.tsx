@@ -1,20 +1,20 @@
-// Module ID: 16917
-// Function ID: 16918
+// Module ID: 16953
+// Function ID: 16954
 // Name: _initialize
-// Dependencies: [32, 4361, 1212, 1218, 1387, 4499, 4522, 4647, 5454, 16918, 9742, 4688, 2]
+// Dependencies: [32, 4391, 1212, 1218, 1387, 4529, 4554, 4679, 5486, 16954, 9781, 4720, 2]
 
-// Module 16917 (_initialize)
-import GUILD_ROOMS_EXPERIMENT_ID from "GUILD_ROOMS_EXPERIMENT_ID" /* 4688 */;
-import initializeDefault from "initialize" /* 5454 */;
-import GUILD_ROOM_SPATIAL_AUDIO_ENABLED from "GUILD_ROOM_SPATIAL_AUDIO_ENABLED" /* 16918 */;
+// Module 16953 (_initialize)
+import GUILD_ROOMS_EXPERIMENT_ID from "GUILD_ROOMS_EXPERIMENT_ID" /* 4720 */;
+import initializeDefault from "initialize" /* 5486 */;
+import GUILD_ROOM_SPATIAL_AUDIO_ENABLED from "GUILD_ROOM_SPATIAL_AUDIO_ENABLED" /* 16954 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "getHash" /* 4361 */;
+import closure_4 from "getHash" /* 4391 */;
 import closure_5 from "initialize" /* 1212 */;
 import closure_6 from "fetchFingerprint" /* 1218 */;
 import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_9 from "createRTCConnection" /* 4522 */;
-import closure_10 from "resolveCreatingNotes" /* 4647 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_9 from "createRTCConnection" /* 4554 */;
+import closure_10 from "resolveCreatingNotes" /* 4679 */;
 
 require = arg1;
 initializeDefault;
@@ -100,7 +100,7 @@ prototype["apply"] = function apply() {
           obj[0] = roomUsers.getRoomUsers(channelId);
           obj[1] = id.getId();
           obj[2] = channelId;
-          _require = _require(16918).computeLivingRoomWorldPoints(obj);
+          _require = _require(16954).computeLivingRoomWorldPoints(obj);
           const mediaEngine = obj.getMediaEngine();
           mediaEngine.eachConnection((setUserPosition) => {
             const entries = Object.entries(callback);
@@ -115,7 +115,7 @@ prototype["apply"] = function apply() {
               continue;
             }
           });
-          const obj3 = _require(16918);
+          const obj3 = _require(16954);
         }
       }
     }

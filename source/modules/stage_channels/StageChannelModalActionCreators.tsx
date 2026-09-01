@@ -1,18 +1,18 @@
-// Module ID: 8632
-// Function ID: 8633
+// Module ID: 8664
+// Function ID: 8665
 // Name: connectToStage
-// Dependencies: [5, 4470, 1387, 1909, 4091, 1981, 1395, 8633, 6134, 5425, 12758, 12759, 5323, 4514, 4631, 12761, 2]
+// Dependencies: [5, 4500, 1387, 1909, 4121, 1981, 1395, 8665, 6166, 5457, 12791, 12792, 5355, 4544, 4663, 12794, 2]
 // Exports: connectOrLurkStage, navigateToStage, showUserProfile
 
-// Module 8632 (connectToStage)
-import _modDef5323 from "module_5323" /* 5323 */;
-import openStageChannelSettingsAll from "openStageChannelSettings" /* 8633 */;
-import _initializeDefault from "_initialize" /* 12759 */;
+// Module 8664 (connectToStage)
+import _modDef5355 from "module_5355" /* 5355 */;
+import openStageChannelSettingsAll from "openStageChannelSettings" /* 8665 */;
+import _initializeDefault from "_initialize" /* 12792 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "reset" /* 4470 */;
+import closure_5 from "reset" /* 4500 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4121 */;
 import closure_9 from "handleConnectionOpen" /* 1981 */;
 
 const require = arg1;
@@ -27,11 +27,11 @@ function connectToStage(channel, flag) {
     if (canResult) {
       let num = openStageChannelSettingsAll.shouldShowBlockedUsers(channel.id) && tmp !== channel.id;
       if (num) {
-        const result = tmp7(8633).openStageBlockedUsersSheet(channel, () => {
+        const result = tmp7(8665).openStageBlockedUsersSheet(channel, () => {
           closure_1_11(closure_0, true);
         });
         num = 1;
-        const tmp7Result = tmp7(8633);
+        const tmp7Result = tmp7(8665);
       }
       tmp6 = num;
       const obj2 = openStageChannelSettingsAll;
@@ -44,19 +44,19 @@ function connectToStage(channel, flag) {
   _initializeDefault.initialize();
   const obj = closure_9;
   const obj4 = _initializeDefault;
-  const voiceChannel = _modDef5323.selectVoiceChannel(channel.id);
+  const voiceChannel = _modDef5355.selectVoiceChannel(channel.id);
   if (obj.getVoiceChannelId() !== channel.id) {
     return false;
   } else {
     allApplicationStreamsForChannel = allApplicationStreamsForChannel.getAllApplicationStreamsForChannel(channel.id);
     const found = allApplicationStreamsForChannel.find((currentUserActiveStream) => !streamMarkedFull.isStreamMarkedFull(channel(table[13]).encodeStreamKey(currentUserActiveStream)));
     if (null != found) {
-      _require(4631).watchStream(found, { noFocus: true });
-      const obj6 = _require(4631);
+      _require(4663).watchStream(found, { noFocus: true });
+      const obj6 = _require(4663);
     }
     return true;
   }
-  const obj5 = _modDef5323;
+  const obj5 = _modDef5355;
 }
 function connectAndOpen(channel, flag) {
   const _require = channel;
@@ -77,19 +77,19 @@ function connectAndOpen(channel, flag) {
     result = voiceChannelId !== channel.id;
   }
   if (result) {
-    result = _require(12761).shouldShowVoiceChannelChangeConfirmation(channel);
-    const obj = _require(12761);
+    result = _require(12794).shouldShowVoiceChannelChangeConfirmation(channel);
+    const obj = _require(12794);
   }
   if (result) {
-    result = flag2(8633).showChannelChangeConfirmationAlert(channel, () => {
+    result = flag2(8665).showChannelChangeConfirmationAlert(channel, () => {
       closure_1_11(closure_0, flag, flag2, true);
     });
-    const obj2 = flag2(8633);
+    const obj2 = flag2(8665);
   }
   if (!result) {
     if (connectToStage(channel, flag)) {
-      flag2(8633).navigateToStage(channel, voiceChannelId);
-      const obj3 = flag2(8633);
+      flag2(8665).navigateToStage(channel, voiceChannelId);
+      const obj3 = flag2(8665);
     }
   }
 }
@@ -117,7 +117,7 @@ export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -191,7 +191,7 @@ export const connectOrLurkStage = function connectOrLurkStage(closure_0, closure
               return flag;
             });
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c4 = tmp;

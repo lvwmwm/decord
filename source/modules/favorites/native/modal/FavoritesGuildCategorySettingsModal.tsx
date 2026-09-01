@@ -1,10 +1,10 @@
-// Module ID: 15665
-// Function ID: 15666
+// Module ID: 15701
+// Function ID: 15702
 // Name: FavoritesGuildCategorySettings
-// Dependencies: [32, 19, 17, 1390, 1425, 21, 4448, 712, 1499, 589, 1912, 10267, 7575, 1236, 4825, 1297, 4894, 7673, 5960, 5567, 4406, 10622, 10623, 2]
+// Dependencies: [32, 19, 17, 1390, 1425, 21, 4478, 712, 1499, 589, 1912, 10306, 7607, 1236, 4857, 1297, 4926, 7705, 5992, 5599, 4436, 10660, 10661, 2]
 // Exports: default
 
-// Module 15665 (FavoritesGuildCategorySettings)
+// Module 15701 (FavoritesGuildCategorySettings)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -12,7 +12,7 @@ import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "initializeFromUserSettings" /* 1390 */;
 import { MAX_FAVORITE_CATEGORY_NAME_LENGTH as closure_7 } from "date" /* 1425 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function FavoritesGuildCategorySettings(categoryId) {
@@ -145,12 +145,12 @@ let result = require("set").fileFinishedImporting("modules/favorites/native/moda
 export default function FavoritesGuildCategorySettingsModal(categoryId) {
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(10622)().onGoBack;
+  onGoBack = onGoBack(10660)().onGoBack;
   const obj = { screenKey: "favoritesGuildCategorySettings", title: null, render: null };
   const intl = categoryId(1236).intl;
   obj[1] = intl.string(categoryId(1236).t["/uELTj"]);
   obj[2] = function render() {
     return closure_1_8(closure_1_11, { categoryId, onGoBack });
   };
-  return callback(onGoBack(10623), obj);
+  return callback(onGoBack(10661), obj);
 };

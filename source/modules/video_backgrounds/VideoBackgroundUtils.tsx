@@ -1,16 +1,16 @@
-// Module ID: 9749
-// Function ID: 9750
+// Module ID: 9788
+// Function ID: 9789
 // Name: isAnimatedBackgroundOption
-// Dependencies: [1387, 4522, 7727, 676, 1431, 4668, 698, 2]
+// Dependencies: [1387, 4554, 7759, 676, 1431, 4700, 698, 2]
 // Exports: getEffectAnalyticsType, getVideoBackgroundOptionFromProto, getVideoBackgroundProtoFromOption, isCustomBackgroundOption, isDefaultBackgroundOption, trackBackgroundOptionAdded, trackBackgroundOptionDeleted, trackBackgroundOptionUpdated
 
-// Module 9749 (isAnimatedBackgroundOption)
+// Module 9788 (isAnimatedBackgroundOption)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getAvatarURL from "getAvatarURL" /* 1431 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4668 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "createRTCConnection" /* 4522 */;
-import VideoFilterType from "VideoFilterType" /* 7727 */;
+import closure_4 from "createRTCConnection" /* 4554 */;
+import VideoFilterType from "VideoFilterType" /* 7759 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;
@@ -174,7 +174,7 @@ export const trackBackgroundOptionDeleted = function trackBackgroundOptionDelete
 };
 export const getVideoBackgroundProtoFromOption = function getVideoBackgroundProtoFromOption(closure_0) {
   if (null == closure_0) {
-    let obj = { oneofKind: "Array" };
+    let obj = { oneofKind: "r" };
   } else {
     let tmp = null != closure_0 && typeof closure_0 === "object";
     if (tmp) {

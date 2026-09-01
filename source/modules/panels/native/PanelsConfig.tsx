@@ -1,10 +1,10 @@
-// Module ID: 15563
-// Function ID: 15564
+// Module ID: 15598
+// Function ID: 15599
 // Name: isTimingConfig
 // Dependencies: [1297, 2]
 // Exports: isTimingConfig
 
-// Module 15563 (isTimingConfig)
+// Module 15598 (isTimingConfig)
 import set from "set" /* 2 */;
 import Button from "Button" /* 1297 */;
 

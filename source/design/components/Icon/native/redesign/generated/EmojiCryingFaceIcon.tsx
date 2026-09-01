@@ -1,14 +1,14 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 14965
+// Function ID: 14966
 // Name: EmojiCryingFaceIcon
-// Dependencies: [19, 21, 712, 4166, 14933, 2]
+// Dependencies: [19, 21, 712, 4196, 14966, 2]
 // Exports: EmojiCryingFaceIcon
 
-// Module 14932 (EmojiCryingFaceIcon)
+// Module 14965 (EmojiCryingFaceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14933 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 14966 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

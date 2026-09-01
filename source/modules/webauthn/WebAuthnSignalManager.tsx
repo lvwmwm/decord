@@ -1,10 +1,10 @@
-// Module ID: 17374
-// Function ID: 17375
+// Module ID: 17410
+// Function ID: 17411
 // Name: handleAuthenticatorDelete
-// Dependencies: [5, 1218, 5454, 6025, 2]
+// Dependencies: [5, 1218, 5486, 6057, 2]
 
-// Module 17374 (handleAuthenticatorDelete)
-import initializeDefault from "initialize" /* 5454 */;
+// Module 17410 (handleAuthenticatorDelete)
+import initializeDefault from "initialize" /* 5486 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 
@@ -31,7 +31,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -63,7 +63,7 @@ prototype["handleAuthenticatorDelete"] = function handleAuthenticatorDelete(cred
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v0 = tmp;
@@ -86,7 +86,7 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -119,7 +119,7 @@ prototype["handleWebAuthnCredentialsLoaded"] = function handleWebAuthnCredential
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         v0 = tmp;
@@ -142,7 +142,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -174,7 +174,7 @@ prototype["handleCurrentUserUpdate"] = function handleCurrentUserUpdate(user) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         v0 = tmp;

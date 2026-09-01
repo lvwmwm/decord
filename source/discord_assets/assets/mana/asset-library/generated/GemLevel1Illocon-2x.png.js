@@ -1,9 +1,9 @@
-// Module ID: 6630
-// Function ID: 6631
+// Module ID: 6662
+// Function ID: 6663
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6630 (metadata)
+// Module 6662 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLevel1Illocon-2x.png.js");

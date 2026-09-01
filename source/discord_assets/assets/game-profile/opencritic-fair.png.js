@@ -1,9 +1,9 @@
-// Module ID: 8818
-// Function ID: 8819
+// Module ID: 8855
+// Function ID: 8856
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8818 (metadata)
+// Module 8855 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/game-profile/opencritic-fair.png.js");

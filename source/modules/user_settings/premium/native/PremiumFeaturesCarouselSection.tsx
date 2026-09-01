@@ -1,24 +1,24 @@
-// Module ID: 13099
-// Function ID: 13100
+// Module ID: 13132
+// Function ID: 13133
 // Name: PremiumFeaturesCardBackground
-// Dependencies: [32, 19, 17, 676, 7145, 1924, 21, 712, 4448, 4908, 691, 4444, 5461, 1236, 12989, 12990, 12993, 12994, 4883, 1624, 10494, 1297, 5921, 1493, 698, 2]
+// Dependencies: [32, 19, 17, 676, 7177, 1924, 21, 712, 4478, 4940, 691, 4474, 5493, 1236, 13022, 13023, 13026, 13027, 4915, 1624, 10532, 1297, 5953, 1493, 698, 2]
 // Exports: default
 
-// Module 13099 (PremiumFeaturesCardBackground)
+// Module 13132 (PremiumFeaturesCardBackground)
 import keys from "keys" /* 691 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4444 */;
-import LinearGradientDefault from "LinearGradient" /* 4908 */;
-import preloadDefault from "preload" /* 5461 */;
-import PaginationDefault from "Pagination" /* 10494 */;
+import Text from "Text" /* 4474 */;
+import LinearGradientDefault from "LinearGradient" /* 4940 */;
+import preloadDefault from "preload" /* 5493 */;
+import PaginationDefault from "Pagination" /* 10532 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { Gradients } from "items" /* 7145 */;
+import { Gradients } from "items" /* 7177 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 class PremiumFeaturesCardBackground {
@@ -58,7 +58,7 @@ function PremiumFeaturesCarousel(arg0) {
   let mapped;
   let React;
   const tmp = callback4();
-  let obj = width(4883);
+  let obj = width(4915);
   const isScreenReaderEnabled = obj.useIsScreenReaderEnabled();
   const tmp5 = mapped(React.useState(0), 2);
   const first = tmp5[0];
@@ -72,7 +72,7 @@ function PremiumFeaturesCarousel(arg0) {
     let obj = { title: null, imageSrc: null, imageStyle: null, premiumTypes: null };
     const intl = width(1236).intl;
     obj[0] = intl.string(width(1236).t["3cyhe3"]);
-    obj[1] = lib(12989);
+    obj[1] = lib(13022);
     obj[2] = lib.emojiImage;
     const items = [, ];
     ({ TIER_0: arr[0], TIER_2: arr[1] } = closure_1_9);
@@ -81,7 +81,7 @@ function PremiumFeaturesCarousel(arg0) {
     obj = { title: null, imageSrc: null, premiumTypes: null };
     const intl2 = width(1236).intl;
     obj[0] = intl2.string(width(1236).t["8AhJqy"]);
-    obj[1] = lib(12990);
+    obj[1] = lib(13023);
     const items2 = [, ];
     ({ TIER_0: arr3[0], TIER_2: arr3[1] } = closure_1_9);
     const set = new Set(items);
@@ -90,7 +90,7 @@ function PremiumFeaturesCarousel(arg0) {
     obj = { title: null, imageSrc: null, premiumTypes: null };
     const intl3 = width(1236).intl;
     obj[0] = intl3.string(width(1236).t["t/Mvdj"]);
-    obj[1] = lib(12993);
+    obj[1] = lib(13026);
     const items3 = [closure_1_9.TIER_2];
     const set1 = new Set(items2);
     obj[2] = new Set(items3);
@@ -98,7 +98,7 @@ function PremiumFeaturesCarousel(arg0) {
     obj1 = { title: null, imageSrc: null, premiumTypes: null };
     const intl4 = width(1236).intl;
     obj1[0] = intl4.string(width(1236).t["n+DGY/"]);
-    obj1[1] = lib(12994);
+    obj1[1] = lib(13027);
     const items4 = [closure_1_9.TIER_2];
     const set2 = new Set(items3);
     obj1[2] = new Set(items4);
@@ -184,7 +184,7 @@ export default function PremiumFeaturesCarouselSection(style) {
   dependencyMap = undefined;
   let callback;
   const tmp = callback4();
-  analyticsLocations = first(5921)().analyticsLocations;
+  analyticsLocations = first(5953)().analyticsLocations;
   const tmp2 = callback(React.useState(false), 2);
   first = tmp2[0];
   dependencyMap = tmp2[1];
@@ -212,7 +212,7 @@ export default function PremiumFeaturesCarouselSection(style) {
   obj = { style: tmp.headerText, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: null };
   const intl = analyticsLocations(1236).intl;
   obj[4] = intl.string(analyticsLocations(1236).t.RGadQR);
-  const items2 = [callback2(analyticsLocations(4444).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
+  const items2 = [callback2(analyticsLocations(4474).Text, obj), callback2(PremiumFeaturesCarousel, { width: tmp4[0], onEndReached: callback })];
   obj[2] = items2;
   return callback3(closure_6, obj);
 };

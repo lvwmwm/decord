@@ -1,16 +1,16 @@
-// Module ID: 10124
-// Function ID: 10125
+// Module ID: 10163
+// Function ID: 10164
 // Name: computeAlertSettings
-// Dependencies: [4361, 1340, 1909, 4091, 7892, 589, 709, 2]
+// Dependencies: [4391, 1340, 1909, 4121, 7924, 589, 709, 2]
 
-// Module 10124 (computeAlertSettings)
+// Module 10163 (computeAlertSettings)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import DATE_CONFIG from "DATE_CONFIG" /* 7892 */;
-import closure_2 from "getHash" /* 4361 */;
+import DATE_CONFIG from "DATE_CONFIG" /* 7924 */;
+import closure_2 from "getHash" /* 4391 */;
 import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4121 */;
 
 require = arg1;
 function computeAlertSettings() {
@@ -40,8 +40,8 @@ function updateGuildIncident(id) {
   if (null != incidentsData) {
     let hasDetectedActivityResult = DATE_CONFIG.hasDetectedActivity(incidentsData);
     if (!hasDetectedActivityResult) {
-      hasDetectedActivityResult = tmp6(7892).isUnderLockdown(incidentsData);
-      const tmp6Result = tmp6(7892);
+      hasDetectedActivityResult = tmp6(7924).isUnderLockdown(incidentsData);
+      const tmp6Result = tmp6(7924);
     }
     if (hasDetectedActivityResult) {
       tmp5 = incidentsData;
@@ -102,8 +102,8 @@ const guildIncidentsStore = new GuildIncidentsStore(dispatcherDefault, {
     if (null != incidentsData) {
       let hasDetectedActivityResult = DATE_CONFIG.hasDetectedActivity(incidentsData);
       if (!hasDetectedActivityResult) {
-        hasDetectedActivityResult = tmp6(7892).isUnderLockdown(incidentsData);
-        const tmp6Result = tmp6(7892);
+        hasDetectedActivityResult = tmp6(7924).isUnderLockdown(incidentsData);
+        const tmp6Result = tmp6(7924);
       }
       if (hasDetectedActivityResult) {
         tmp5 = incidentsData;
@@ -134,8 +134,8 @@ const guildIncidentsStore = new GuildIncidentsStore(dispatcherDefault, {
     if (null != incidentsData) {
       let hasDetectedActivityResult = DATE_CONFIG.hasDetectedActivity(incidentsData);
       if (!hasDetectedActivityResult) {
-        hasDetectedActivityResult = tmp6(7892).isUnderLockdown(incidentsData);
-        const tmp6Result = tmp6(7892);
+        hasDetectedActivityResult = tmp6(7924).isUnderLockdown(incidentsData);
+        const tmp6Result = tmp6(7924);
       }
       if (hasDetectedActivityResult) {
         tmp5 = incidentsData;

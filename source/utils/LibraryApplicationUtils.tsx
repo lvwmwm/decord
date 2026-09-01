@@ -1,14 +1,14 @@
-// Module ID: 4496
-// Function ID: 4497
+// Module ID: 4526
+// Function ID: 4527
 // Name: getComboId
-// Dependencies: [32, 1922, 4497, 676, 4136, 2]
+// Dependencies: [32, 1922, 4527, 676, 4166, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 4496 (getComboId)
-import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+// Module 4526 (getComboId)
+import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import closure_4 from "addSku" /* 4497 */;
+import closure_4 from "addSku" /* 4527 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

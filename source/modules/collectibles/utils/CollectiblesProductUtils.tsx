@@ -1,13 +1,13 @@
-// Module ID: 7266
-// Function ID: 7267
+// Module ID: 7298
+// Function ID: 7299
 // Name: getProductOrbPrice
-// Dependencies: [32, 7261, 676, 1950, 2]
+// Dependencies: [32, 7293, 676, 1950, 2]
 // Exports: getHasNonOrbPrice, getHasOrbPrice, getIsVariantProduct, getProductFiatPrice, getProductOrbPrice, getProductSkuIds, getProductType, getProductsWithOrbsPrice, getSelectedProduct, isDynamicProduct, isOrbsExclusiveProduct
 
-// Module 7266 (getProductOrbPrice)
+// Module 7298 (getProductOrbPrice)
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import { isProfileEffectRecord } from "fromServer" /* 7261 */;
+import { isProfileEffectRecord } from "fromServer" /* 7293 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

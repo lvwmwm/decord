@@ -1,10 +1,10 @@
-// Module ID: 10945
-// Function ID: 10946
+// Module ID: 10983
+// Function ID: 10984
 // Name: result
 // Dependencies: [687, 1236, 2]
 // Exports: getSummaryFeedbackReasons
 
-// Module 10945 (result)
+// Module 10983 (result)
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 

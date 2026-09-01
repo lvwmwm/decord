@@ -1,14 +1,14 @@
-// Module ID: 7087
-// Function ID: 7088
+// Module ID: 7119
+// Function ID: 7120
 // Name: WaypostSpotIllustration
-// Dependencies: [21, 5461, 7088, 2]
+// Dependencies: [21, 5493, 7120, 2]
 // Exports: WaypostSpotIllustration
 
-// Module 7087 (WaypostSpotIllustration)
+// Module 7119 (WaypostSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 7088 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 7120 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/WaypostSpotIllustration.native.tsx");

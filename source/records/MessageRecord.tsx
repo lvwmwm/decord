@@ -1,14 +1,14 @@
-// Module ID: 4101
-// Function ID: 4102
+// Module ID: 4131
+// Function ID: 4132
 // Name: hasFlag
-// Dependencies: [1931, 676, 1399, 4102, 6115, 7475, 8401, 2]
+// Dependencies: [1936, 676, 1399, 4132, 6147, 7507, 8433, 2]
 // Exports: isMessageComponentsV2
 
-// Module 4101 (hasFlag)
+// Module 4131 (hasFlag)
 import hasFlag from "hasFlag" /* 1399 */;
-import toJSDefault from "toJS" /* 1931 */;
-import isForwardMessageDefault from "isForwardMessage" /* 6115 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8401 */;
+import toJSDefault from "toJS" /* 1936 */;
+import isForwardMessageDefault from "isForwardMessage" /* 6147 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8433 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 9613
-// Function ID: 9614
+// Module ID: 9652
+// Function ID: 9653
 // Name: useMyCurrentStageChannel
 // Dependencies: [1387, 1981, 589, 2]
 // Exports: default
 
-// Module 9613 (useMyCurrentStageChannel)
+// Module 9652 (useMyCurrentStageChannel)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "ensureGuildLoaded" /* 1387 */;
 import closure_3 from "handleConnectionOpen" /* 1981 */;

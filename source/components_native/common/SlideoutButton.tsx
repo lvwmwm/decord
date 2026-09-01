@@ -1,17 +1,17 @@
-// Module ID: 10858
-// Function ID: 10859
+// Module ID: 10896
+// Function ID: 10897
 // Name: SlideoutButton
-// Dependencies: [19, 17, 676, 21, 4448, 4296, 712, 5036, 1297, 2]
+// Dependencies: [19, 17, 676, 21, 4478, 4326, 712, 5068, 1297, 2]
 
-// Module 10858 (SlideoutButton)
+// Module 10896 (SlideoutButton)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import PressableBase from "PressableBase" /* 5036 */;
+import PressableBase from "PressableBase" /* 5068 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
-import hexToRgba from "hexToRgba" /* 4296 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
+import hexToRgba from "hexToRgba" /* 4326 */;
 
 require = arg1;
 class SlideoutButton {

@@ -1,9 +1,9 @@
-// Module ID: 6478
-// Function ID: 6479
+// Module ID: 6510
+// Function ID: 6511
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6478 (metadata)
+// Module 6510 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiSlotsAbstractUI-2x.png.js");

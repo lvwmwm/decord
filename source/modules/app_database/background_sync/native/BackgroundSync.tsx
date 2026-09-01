@@ -1,23 +1,23 @@
-// Module ID: 16863
-// Function ID: 16864
+// Module ID: 16899
+// Function ID: 16900
 // Name: _backgroundSync
-// Dependencies: [32, 5, 1391, 1387, 4463, 7125, 7192, 676, 5412, 5369, 1909, 3, 687, 595, 7468, 500, 709, 1208, 698, 1956, 530, 11, 12, 7366, 7369, 7367, 13291, 15136, 7190, 1471, 7200, 2]
+// Dependencies: [32, 5, 1391, 1387, 4493, 7157, 7224, 676, 5444, 5401, 1909, 3, 687, 595, 7500, 500, 709, 1208, 698, 1956, 530, 11, 12, 7398, 7401, 7399, 13324, 15169, 7222, 1471, 7232, 2]
 // Exports: backgroundSync
 
-// Module 16863 (_backgroundSync)
+// Module 16899 (_backgroundSync)
 import timestampDefault from "timestamp" /* 3 */;
 import setDefault from "set" /* 687 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import createChannelRecord from "createChannelRecord" /* 1391 */;
 import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "generateOldThreadCutoff" /* 4463 */;
-import closure_9 from "getState" /* 7125 */;
-import closure_10 from "result" /* 7192 */;
+import closure_8 from "generateOldThreadCutoff" /* 4493 */;
+import closure_9 from "getState" /* 7157 */;
+import closure_10 from "result" /* 7224 */;
 import ME from "ME" /* 676 */;
-import loadSavedGuildStickers from "loadSavedGuildStickers" /* 5412 */;
+import loadSavedGuildStickers from "loadSavedGuildStickers" /* 5444 */;
 import ensureGuildLoaded from "ensureGuildLoaded" /* 1387 */;
-import getEmojiToGroupId from "getEmojiToGroupId" /* 5369 */;
+import getEmojiToGroupId from "getEmojiToGroupId" /* 5401 */;
 import createGuildRecordFromRust from "createGuildRecordFromRust" /* 1909 */;
 
 const require = arg1;
@@ -46,7 +46,7 @@ function _backgroundSync() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -87,7 +87,7 @@ function _backgroundSync() {
                 c7 = undefined;
                 c6 = 1;
                 c7 = 1;
-                return { value: "Object", done: true };
+                return { value: "PX_16", done: null };
               }
             } else if (1 === tmp8) {
               if (arg0 === 1) {
@@ -388,7 +388,7 @@ function _backgroundSyncPrivateChannels() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -539,7 +539,7 @@ function _backgroundSyncGuildData() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -565,11 +565,11 @@ function _backgroundSyncGuildData() {
               let guilds;
               let api_code_version;
               closure_11 = undefined;
-              const items = [callback2(7366).getCommittedVersions(), , ];
-              const obj18 = callback2(7366);
-              items[1] = callback2(7369).getCommittedVersions();
-              const obj19 = callback2(7369);
-              items[2] = callback2(7367).canUseGuildVersions();
+              const items = [callback2(7398).getCommittedVersions(), , ];
+              const obj18 = callback2(7398);
+              items[1] = callback2(7401).getCommittedVersions();
+              const obj19 = callback2(7401);
+              items[2] = callback2(7399).canUseGuildVersions();
               c5 = 1;
               c6 = 1;
               obj1 = { value: null, done: false };
@@ -599,12 +599,12 @@ function _backgroundSyncGuildData() {
                 obj4[0] = c5;
                 obj4[1] = c6.highest_last_message_id;
                 obj4[2] = c6.api_code_version;
-                let obj11 = callback(13291);
+                let obj11 = callback(13324);
                 obj4[3] = obj11.isChannelMetadataObfuscationEnabled("background-sync");
                 let obj5 = obj4;
               } else {
                 obj5 = { channel_privacy: null };
-                let obj9 = callback(13291);
+                let obj9 = callback(13324);
                 obj5[0] = obj9.isChannelMetadataObfuscationEnabled("background-sync");
               }
               obj3[1] = obj5;
@@ -731,7 +731,7 @@ function _backgroundSyncGuildData() {
               c6 = 3;
               throw body;
             } else if (arg0 !== 2) {
-              obj = callback(15136);
+              obj = callback(15169);
               obj.writeCaches(true);
               const _Date = Date;
               callback.time_save_guild_data = Date.now() - callback2;
@@ -795,7 +795,7 @@ function _backgroundSyncGuildChannels() {
             obj[0] = body;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           while (true) {
@@ -1275,7 +1275,7 @@ function _processChannelChanges() {
           obj[0] = arr;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -1327,7 +1327,7 @@ function _processChannelChanges() {
                 let tmp23 = callback;
                 let tmp24 = dependencyMap;
                 let tmp25 = callback3;
-                let tmp26 = callback3(obj2.partition(modified_messages, callback(7190).isLikelyNotDelta), 2);
+                let tmp26 = callback3(obj2.partition(modified_messages, callback(7222).isLikelyNotDelta), 2);
                 let arr4 = tmp26[1];
                 dependencyMap2 = arr4;
                 let push = new_messages.push;
@@ -1351,7 +1351,7 @@ function _processChannelChanges() {
               }
               let num5 = 3;
               c12 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp4) {
             if (arg0 === 1) {

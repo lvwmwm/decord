@@ -1,10 +1,10 @@
-// Module ID: 7820
-// Function ID: 7821
+// Module ID: 7852
+// Function ID: 7853
 // Name: useIsFirstMessageInMediaPost
 // Dependencies: [1387, 647, 11, 2]
 // Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost, useIsFirstMessageInMediaPost
 
-// Module 7820 (useIsFirstMessageInMediaPost)
+// Module 7852 (useIsFirstMessageInMediaPost)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 13019
-// Function ID: 13020
+// Module ID: 13052
+// Function ID: 13053
 // Name: presentBuyNitroPurchaseSuccess
-// Dependencies: [19, 7134, 1924, 21, 1236, 4827, 4831, 2]
+// Dependencies: [19, 7166, 1924, 21, 1236, 4859, 4863, 2]
 // Exports: presentBuyNitroPurchaseSuccess
 
-// Module 13019 (presentBuyNitroPurchaseSuccess)
+// Module 13052 (presentBuyNitroPurchaseSuccess)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useAlertStore from "useAlertStore" /* 4827 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4831 */;
-import { reset } from "usePremiumPlanPurchasedStore" /* 7134 */;
+import useAlertStore from "useAlertStore" /* 4859 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4863 */;
+import { reset } from "usePremiumPlanPurchasedStore" /* 7166 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 

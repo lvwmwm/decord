@@ -1,14 +1,14 @@
-// Module ID: 6365
-// Function ID: 6366
+// Module ID: 6397
+// Function ID: 6398
 // Name: ChatControllersSpotIllustration
-// Dependencies: [21, 5461, 6366, 2]
+// Dependencies: [21, 5493, 6398, 2]
 // Exports: ChatControllersSpotIllustration
 
-// Module 6365 (ChatControllersSpotIllustration)
+// Module 6397 (ChatControllersSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6366 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6398 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ChatControllersSpotIllustration.native.tsx");

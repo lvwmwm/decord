@@ -1,12 +1,12 @@
-// Module ID: 11907
-// Function ID: 11908
+// Module ID: 11940
+// Function ID: 11941
 // Name: useInvitesDisabledPermission
-// Dependencies: [10124, 4091, 676, 589, 2]
+// Dependencies: [10163, 4121, 676, 589, 2]
 // Exports: useInvitesDisabled, useInvitesDisabledPermission, useShouldShowInvitesDisabledNotif
 
-// Module 11907 (useInvitesDisabledPermission)
-import closure_2 from "computeAlertSettings" /* 10124 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4091 */;
+// Module 11940 (useInvitesDisabledPermission)
+import closure_2 from "computeAlertSettings" /* 10163 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4121 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8122
+// Function ID: 8123
 // Name: didReplyMention
 // Dependencies: [2]
 // Exports: default
 
-// Module 8090 (didReplyMention)
+// Module 8122 (didReplyMention)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/replies/didReplyMention.tsx");

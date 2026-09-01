@@ -1,9 +1,9 @@
-// Module ID: 7192
-// Function ID: 7193
+// Module ID: 7224
+// Function ID: 7225
 // Name: result
 // Dependencies: [5, 3, 687, 589, 709, 1956, 2]
 
-// Module 7192 (result)
+// Module 7224 (result)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
@@ -63,7 +63,7 @@ function refresh() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ function refresh() {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp38) {
         c3 = tmp;

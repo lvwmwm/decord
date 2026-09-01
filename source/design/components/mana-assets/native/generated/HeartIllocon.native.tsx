@@ -1,14 +1,14 @@
-// Module ID: 6717
-// Function ID: 6718
+// Module ID: 6749
+// Function ID: 6750
 // Name: HeartIllocon
-// Dependencies: [21, 5461, 6718, 2]
+// Dependencies: [21, 5493, 6750, 2]
 // Exports: HeartIllocon
 
-// Module 6717 (HeartIllocon)
+// Module 6749 (HeartIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6718 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6750 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HeartIllocon.native.tsx");

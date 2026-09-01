@@ -1,10 +1,10 @@
-// Module ID: 16138
-// Function ID: 16139
+// Module ID: 16173
+// Function ID: 16174
 // Name: ProjectList
-// Dependencies: [5, 32, 19, 17, 1992, 1909, 4091, 16139, 16142, 16140, 676, 9426, 21, 4448, 712, 1628, 1499, 589, 6062, 16145, 1236, 3471, 4444, 7776, 4896, 5960, 5567, 7354, 5562, 9422, 12887, 4826, 4415, 16149, 16151, 8194, 6208, 14572, 9369, 6063, 5463, 6205, 8546, 8755, 8761, 16152, 6064, 5976, 2]
+// Dependencies: [5, 32, 19, 17, 1992, 1909, 4121, 16174, 16177, 16175, 676, 9465, 21, 4478, 712, 1628, 1499, 589, 6094, 16180, 1236, 3501, 4474, 7808, 4928, 5992, 5599, 7386, 5594, 9461, 12920, 4858, 4445, 16184, 16186, 8226, 6240, 14605, 9408, 6095, 5495, 6237, 8578, 8792, 8798, 16187, 6096, 6008, 2]
 // Exports: default
 
-// Module 16138 (ProjectList)
+// Module 16173 (ProjectList)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -12,16 +12,16 @@ import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "trackCommunicationDisabled" /* 1992 */;
 import closure_10 from "createGuildRecordFromRust" /* 1909 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_12 from "newMessage" /* 16139 */;
-import rejectPendingPublish from "rejectPendingPublish" /* 16142 */;
-import closure_16 from "rejectPendingPublish" /* 16142 */;
-import closure_17 from "isProjectOwner" /* 16140 */;
-import { isProjectOwner } from "isProjectOwner" /* 16140 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_12 from "newMessage" /* 16174 */;
+import rejectPendingPublish from "rejectPendingPublish" /* 16177 */;
+import closure_16 from "rejectPendingPublish" /* 16177 */;
+import closure_17 from "isProjectOwner" /* 16175 */;
+import { isProjectOwner } from "isProjectOwner" /* 16175 */;
 import { Permissions } from "ME" /* 676 */;
-import { MAIN_SURFACE } from "FrameLayoutModes" /* 9426 */;
+import { MAIN_SURFACE } from "FrameLayoutModes" /* 9465 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function ProjectList(guildId) {
@@ -100,7 +100,7 @@ function ProjectList(guildId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -437,7 +437,7 @@ function ChatScene(guildId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -654,12 +654,12 @@ function ChatScene(guildId) {
           align: "below",
           children(arg0) {
             ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
-            const obj = { ref, IconComponent: callback(8761).MoreHorizontalIcon, onPress, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null };
+            const obj = { ref, IconComponent: callback(8798).MoreHorizontalIcon, onPress, accessibilityLabel: null, accessibilityActions: null, onAccessibilityAction: null };
             const intl = callback(1236).intl;
             obj[3] = intl.string(callback(1236).t["UKOtz+"]);
             obj[4] = accessibilityActions;
             obj[5] = onAccessibilityAction;
-            return callback2(callback(6205).HeaderActionButton, obj);
+            return callback2(callback(6237).HeaderActionButton, obj);
           }
         };
         items[1] = closure_1_21(stringResult(closure_1_2[43]).ContextMenu, obj);

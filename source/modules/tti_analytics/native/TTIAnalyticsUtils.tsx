@@ -1,28 +1,28 @@
-// Module ID: 7188
-// Function ID: 7189
+// Module ID: 7220
+// Function ID: 7221
 // Name: getDeviceMetadata
-// Dependencies: [5, 7189, 4361, 1302, 1218, 1387, 706, 676, 7382, 1394, 21, 4427, 7383, 514, 1625, 4303, 4302, 10, 1208, 698, 7384, 4309, 7386, 9, 687, 7387, 7389, 4826, 4915, 2009, 2]
+// Dependencies: [5, 7221, 4391, 1302, 1218, 1387, 706, 676, 7414, 1394, 21, 4457, 7415, 514, 1625, 4333, 4332, 10, 1208, 698, 7416, 4339, 7418, 9, 687, 7419, 7421, 4858, 4947, 2009, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 7188 (getDeviceMetadata)
+// Module 7220 (getDeviceMetadata)
 import isTracingDefault from "isTracing" /* 10 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import getConstantsAll from "getConstants" /* 1625 */;
-import coerceMainRoute from "coerceMainRoute" /* 4302 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4303 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4427 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7383 */;
-import AppStartInfo2 from "AppStartInfo" /* 7384 */;
+import coerceMainRoute from "coerceMainRoute" /* 4332 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 7415 */;
+import AppStartInfo2 from "AppStartInfo" /* 7416 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleClearCaches" /* 7189 */;
-import closure_5 from "getHash" /* 4361 */;
+import closure_4 from "handleClearCaches" /* 7221 */;
+import closure_5 from "getHash" /* 4391 */;
 import closure_6 from "handleThemeChange" /* 1302 */;
 import closure_7 from "fetchFingerprint" /* 1218 */;
 import closure_8 from "ensureGuildLoaded" /* 1387 */;
 import closure_9 from "refreshSourceMapCookie" /* 706 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 7382 */;
+import { ACCEPT_INVITE_MODAL_KEY } from "ACCEPT_INVITE_MODAL_KEY" /* 7414 */;
 import { StaticChannelRoutes } from "set" /* 1394 */;
 import { jsx } from "jsxProd" /* 21 */;
 import v1 from "v1" /* 514 */;
@@ -141,7 +141,7 @@ function _trackAppUIViewedAsync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -166,7 +166,7 @@ function _trackAppUIViewedAsync() {
               closure_5 = 1;
               c6 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = callback2(4309).getAppFirstVisibleTimestamp();
+              obj1[0] = callback2(4339).getAppFirstVisibleTimestamp();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -180,15 +180,15 @@ function _trackAppUIViewedAsync() {
           } else {
             closure_4 = arg1;
             closure_5 = closure_3 - closure_4;
-            callback2(4309).reportFullyDrawn();
-            const obj5 = callback2(4309);
+            callback2(4339).reportFullyDrawn();
+            const obj5 = callback2(4339);
             callback2(10).mark("\u2757", "Track app_ui_viewed");
             const obj6 = callback2(10);
             callback2(10).addDetail("TTI", closure_5);
             const obj7 = callback2(10);
             callback2(10).markAt("\u{1F3C3}", "app_opened", closure_4);
             const obj8 = callback2(10);
-            callback(7386).ttiRecorded(closure_5);
+            callback(7418).ttiRecorded(closure_5);
             let _setTimeout = setTimeout;
             let timerId = setTimeout(() => {
               let str = closure_0;
@@ -210,7 +210,7 @@ function _trackAppUIViewedAsync() {
               if (null == timeout) {
                 let _setTimeout = setTimeout;
                 timeout = setTimeout(() => {
-                  callback(9).setTTICallback(/* F122703 */ function() { ... });
+                  callback(9).setTTICallback(/* F122881 */ function() { ... });
                   callback3();
                   c25 = null;
                 }, 15 * callback(687).Millis.SECOND);
@@ -253,7 +253,7 @@ function _trackAppUIViewedAsync() {
               }
             })();
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c6 = tmp;
@@ -293,7 +293,7 @@ function _logLegacyAppUiViewed() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -320,7 +320,7 @@ function _logLegacyAppUiViewed() {
               c7 = 1;
               c8 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = callback(4309).getJSBundleTimestamps();
+              obj1[0] = callback(4339).getJSBundleTimestamps();
               return obj1;
             }
           } else if (arg0 === 1) {
@@ -353,7 +353,7 @@ function _logLegacyAppUiViewed() {
             const merged2 = Object.assign(closure_0);
             callback(698).track(constants.APP_UI_VIEWED, obj2, { logEventProperties: true });
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           c8 = tmp;
@@ -395,7 +395,7 @@ function _trackAppUIViewed() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -552,7 +552,7 @@ function _trackAppUIViewed() {
             })(theme);
           }
           theme = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp57) {
         theme = tmp;
@@ -611,7 +611,7 @@ function _trackAppLaunchCompletedAsync() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -652,7 +652,7 @@ function _trackAppLaunchCompletedAsync() {
             obj = callback(table[19]);
             obj.track(constants.APP_LAUNCH_COMPLETED, closure_0, { logEventProperties: true });
             c8 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp21) {
           c8 = tmp;

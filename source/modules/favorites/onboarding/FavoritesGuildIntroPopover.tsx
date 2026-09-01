@@ -1,12 +1,12 @@
-// Module ID: 10278
-// Function ID: 10279
+// Module ID: 10317
+// Function ID: 10318
 // Name: hasOfferedFavoritesGuildOnboarding
-// Dependencies: [32, 19, 1379, 1390, 676, 644, 1373, 10268, 589, 10279, 6219, 2]
+// Dependencies: [32, 19, 1379, 1390, 676, 644, 1373, 10307, 589, 10318, 6251, 2]
 // Exports: hasOfferedFavoritesGuildOnboarding, isFavoritesIntroPopoverShown, resetHasOfferedFavoritesGuildOnboarding, useFavoritesIntroPopover, useIsFavoritesIntroPopoverShown
 
-// Module 10278 (hasOfferedFavoritesGuildOnboarding)
+// Module 10317 (hasOfferedFavoritesGuildOnboarding)
 import DismissibleContent from "DismissibleContent" /* 1373 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10279 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10318 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import withContent from "withContent" /* 1379 */;
@@ -21,14 +21,14 @@ let c4 = importAllResult;
 let closure_10 = keys.create(() => ({ shouldShowPopover: false, markPopoverAsDismissed: NOOP }));
 let c11 = false;
 const memoResult = importAllResult.memo(function FavoritesGuildIntroPopover() {
-  const favoritesAccess = _require(10268).useFavoritesAccess("FavoritesGuildIntroPopover");
+  const favoritesAccess = _require(10307).useFavoritesAccess("FavoritesGuildIntroPopover");
   ({ hasAccess, isFreemium } = favoritesAccess);
-  const obj = _require(10268);
+  const obj = _require(10307);
   const items = [closure_8];
   const stateFromStores = _require(589).useStateFromStores(items, () => false === obj.favoriteGuildVisibleSetting);
   const obj2 = _require(589);
   const tmp5 = useCanShowFavoritesGuildOnboardingDefault();
-  _require(6219);
+  _require(6251);
   if (hasAccess) {
     if (isFreemium) {
       if (!stateFromStores) {
@@ -44,7 +44,7 @@ const memoResult = importAllResult.memo(function FavoritesGuildIntroPopover() {
           } else {
             items3 = [];
           }
-          const tmp12 = callback(tmp(6219).useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(1373).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
+          const tmp12 = callback(tmp(6251).useSelectedDismissibleContent(items3, undefined, true), 1)[0] === tmp(1373).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM;
           importDefault = tmp12;
           const items4 = [tmp12];
           const effect = importAllResult.useEffect(() => {

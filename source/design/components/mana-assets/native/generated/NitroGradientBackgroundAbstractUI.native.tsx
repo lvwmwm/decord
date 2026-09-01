@@ -1,14 +1,14 @@
-// Module ID: 6795
-// Function ID: 6796
+// Module ID: 6827
+// Function ID: 6828
 // Name: NitroGradientBackgroundAbstractUI
-// Dependencies: [21, 5461, 6796, 2]
+// Dependencies: [21, 5493, 6828, 2]
 // Exports: NitroGradientBackgroundAbstractUI
 
-// Module 6795 (NitroGradientBackgroundAbstractUI)
+// Module 6827 (NitroGradientBackgroundAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6796 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6828 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroGradientBackgroundAbstractUI.native.tsx");

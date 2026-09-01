@@ -1,10 +1,10 @@
-// Module ID: 7205
-// Function ID: 7206
+// Module ID: 7237
+// Function ID: 7238
 // Name: timeRequire
 // Dependencies: [10, 2]
 // Exports: default
 
-// Module 7205 (timeRequire)
+// Module 7237 (timeRequire)
 import set from "set" /* 2 */;
 import isTracingDefault from "isTracing" /* 10 */;
 

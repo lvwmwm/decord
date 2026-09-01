@@ -1,14 +1,14 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10050
+// Function ID: 10051
 // Name: SpeedometerIcon
-// Dependencies: [19, 21, 712, 4166, 10012, 2]
+// Dependencies: [19, 21, 712, 4196, 10051, 2]
 // Exports: SpeedometerIcon
 
-// Module 10011 (SpeedometerIcon)
+// Module 10050 (SpeedometerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 10012 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 10051 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

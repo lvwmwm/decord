@@ -1,15 +1,15 @@
-// Module ID: 17021
-// Function ID: 17022
+// Module ID: 17057
+// Function ID: 17058
 // Name: handleRelationshipAdd
-// Dependencies: [676, 1363, 1236, 17022, 5454, 2]
+// Dependencies: [676, 1363, 1236, 17058, 5486, 2]
 
-// Module 17021 (handleRelationshipAdd)
+// Module 17057 (handleRelationshipAdd)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1363 */;
-import initializeDefault from "initialize" /* 5454 */;
-import showPendingNotificationAll from "showPendingNotification" /* 17022 */;
+import initializeDefault from "initialize" /* 5486 */;
+import showPendingNotificationAll from "showPendingNotification" /* 17058 */;
 
 function handleRelationshipAdd(relationship) {
   relationship = relationship.relationship;

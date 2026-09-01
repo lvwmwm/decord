@@ -1,10 +1,10 @@
-// Module ID: 4382
-// Function ID: 4383
+// Module ID: 4412
+// Function ID: 4413
 // Name: useCustomThemeDisplaySettings
 // Dependencies: [32, 1346, 589, 1347, 2]
 // Exports: useCustomThemeDisplaySettings
 
-// Module 4382 (useCustomThemeDisplaySettings)
+// Module 4412 (useCustomThemeDisplaySettings)
 import initialize from "initialize" /* 589 */;
 import getThemeForColor from "getThemeForColor" /* 1347 */;
 import closure_2 from "_slicedToArray" /* 32 */;

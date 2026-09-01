@@ -1,10 +1,10 @@
-// Module ID: 14922
-// Function ID: 14923
+// Module ID: 14955
+// Function ID: 14956
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4448, 712, 1938, 1236, 3473, 1499, 1500, 589, 4109, 5921, 11506, 11510, 1937, 4611, 4415, 14923, 2009, 14924, 698, 8045, 8042, 7724, 4346, 14226, 8361, 11519, 4641, 4444, 14925, 5960, 5567, 1995, 4894, 4896, 11921, 7806, 14970, 8933, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 676, 21, 4478, 712, 1930, 1236, 3503, 1499, 1500, 589, 4139, 5953, 11539, 11543, 1942, 4643, 4445, 14956, 2009, 14957, 698, 8077, 8074, 7756, 4376, 14259, 8393, 11552, 4673, 4474, 14958, 5992, 5599, 1995, 4926, 4928, 11954, 7838, 15003, 8970, 2]
 // Exports: default
 
-// Module 14922 (CustomTypingIndicatorEditScreen)
+// Module 14955 (CustomTypingIndicatorEditScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -13,7 +13,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ ScrollView: closure_6, View: error } = get_ActivityIndicator);
@@ -142,7 +142,7 @@ export default function CustomTypingIndicatorEditScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -191,7 +191,7 @@ export default function CustomTypingIndicatorEditScreen() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c4 = 3;

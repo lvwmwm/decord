@@ -1,11 +1,11 @@
-// Module ID: 14399
-// Function ID: 14400
+// Module ID: 14432
+// Function ID: 14433
 // Name: defineParentalControlledSetting
-// Dependencies: [7253, 7252, 589, 2]
+// Dependencies: [7285, 7284, 589, 2]
 // Exports: defineParentalControlledSetting, wrapParentalControlledSettingWithExperimentDefaults
 
-// Module 14399 (defineParentalControlledSetting)
-import closure_3 from "getSettings" /* 7253 */;
+// Module 14432 (defineParentalControlledSetting)
+import closure_3 from "getSettings" /* 7285 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/family_center/ParentalControlledUserSettingsDefinitions.tsx");

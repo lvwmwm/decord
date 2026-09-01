@@ -1,10 +1,10 @@
-// Module ID: 10947
-// Function ID: 10948
+// Module ID: 10985
+// Function ID: 10986
 // Name: SummarySources
 // Dependencies: [2]
 // Exports: createSummaryFromServer
 
-// Module 10947 (SummarySources)
+// Module 10985 (SummarySources)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/summaries/Summary.tsx");

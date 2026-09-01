@@ -1,26 +1,26 @@
-// Module ID: 10003
-// Function ID: 10004
+// Module ID: 10042
+// Function ID: 10043
 // Name: stopScreenshare
-// Dependencies: [19, 17, 4470, 4499, 676, 4512, 4427, 7469, 4501, 9735, 4631, 4514, 9742, 9526, 10004, 9998, 1624, 10015, 10016, 10017, 10018, 589, 10010, 5921, 1236, 2]
+// Dependencies: [19, 17, 4500, 4529, 676, 4542, 4457, 7501, 4531, 9774, 4663, 4544, 9781, 9565, 10043, 10037, 1624, 10054, 10055, 10056, 10057, 589, 10049, 5953, 1236, 2]
 // Exports: default, getOSRequirement, getStreamPressHandler, handleCloseScreenshare, tryStartScreenShare
 
-// Module 10003 (stopScreenshare)
-import inject from "inject" /* 4501 */;
-import isStreamKey from "isStreamKey" /* 4514 */;
-import watchStream from "watchStream" /* 4631 */;
-import contextDefault from "context" /* 5921 */;
-import initializeDefault from "initialize" /* 7469 */;
-import _handleToggleVideo from "_handleToggleVideo" /* 9735 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9742 */;
-import useHasVideoPermission from "useHasVideoPermission" /* 9998 */;
-import useHasVideoPermissionDefault from "useHasVideoPermission" /* 9998 */;
-import apexExperimentDefault from "apexExperiment" /* 10010 */;
+// Module 10042 (stopScreenshare)
+import inject from "inject" /* 4531 */;
+import isStreamKey from "isStreamKey" /* 4544 */;
+import watchStream from "watchStream" /* 4663 */;
+import contextDefault from "context" /* 5953 */;
+import initializeDefault from "initialize" /* 7501 */;
+import _handleToggleVideo from "_handleToggleVideo" /* 9774 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9781 */;
+import useHasVideoPermission from "useHasVideoPermission" /* 10037 */;
+import useHasVideoPermissionDefault from "useHasVideoPermission" /* 10037 */;
+import apexExperimentDefault from "apexExperiment" /* 10049 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "reset" /* 4470 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_4 from "reset" /* 4500 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4529 */;
 import { ApplicationStreamStates } from "ME" /* 676 */;
-import { Features } from "DesktopSources" /* 4512 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4427 */;
+import { Features } from "DesktopSources" /* 4542 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 
 require = arg1;
 function stopScreenshare() {
@@ -28,8 +28,8 @@ function stopScreenshare() {
   voiceEngine.stopBroadcast();
   const currentUserActiveStream = authStore.getCurrentUserActiveStream();
   if (null != currentUserActiveStream) {
-    let tmpResult = tmp(4631);
-    tmpResult = tmp(4514);
+    let tmpResult = tmp(4663);
+    tmpResult = tmp(4544);
     tmpResult.stopStream(tmpResult.encodeStreamKey(currentUserActiveStream));
   }
   const obj = inject;
@@ -107,7 +107,7 @@ export default function useScreenshareUtils(arg0) {
             }
           }
         } else {
-          fn = callback(9735).showScreenshareDisabledAlert;
+          fn = callback(9774).showScreenshareDisabledAlert;
         }
       } else {
         fn = function l() {
@@ -119,12 +119,12 @@ export default function useScreenshareUtils(arg0) {
       }
       obj[3] = fn;
       if (obj2.isMetaQuest()) {
-        tmp19(tmp ? 10015 : 10016);
+        tmp19(tmp ? 10054 : 10055);
       } else {
         if (tmp4) {
-          let tmp20 = 10017;
+          let tmp20 = 10056;
         } else {
-          tmp20 = tmp ? 10018 : 10017;
+          tmp20 = tmp ? 10057 : 10056;
         }
         obj[4] = tmp19(tmp20);
         return obj;

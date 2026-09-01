@@ -1,10 +1,10 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 10832
+// Function ID: 10833
 // Name: useHandleUseNow
-// Dependencies: [5, 32, 19, 678, 1950, 1236, 8461, 10795, 8045, 7724, 2]
+// Dependencies: [5, 32, 19, 678, 1950, 1236, 8493, 10833, 8077, 7756, 2]
 // Exports: useHandleUseNow
 
-// Module 10794 (useHandleUseNow)
+// Module 10832 (useHandleUseNow)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -89,7 +89,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -109,7 +109,7 @@ export const useHandleUseNow = function useHandleUseNow(product) {
               c0 = undefined;
               if (!closure_1_8) {
                 c7 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 closure_1_3(true);
                 obj1 = {};

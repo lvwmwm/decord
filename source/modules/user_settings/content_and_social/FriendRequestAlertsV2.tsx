@@ -1,10 +1,10 @@
-// Module ID: 9039
-// Function ID: 9040
+// Module ID: 9077
+// Function ID: 9078
 // Name: useIsFriendRequestAlertsV2Enabled
 // Dependencies: [1468, 2]
 // Exports: isFriendRequestAlertsV2Enabled, useIsFriendRequestAlertsV2Enabled
 
-// Module 9039 (useIsFriendRequestAlertsV2Enabled)
+// Module 9077 (useIsFriendRequestAlertsV2Enabled)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

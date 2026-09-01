@@ -1,10 +1,10 @@
-// Module ID: 4082
-// Function ID: 4083
+// Module ID: 4112
+// Function ID: 4113
 // Name: isSubscriptionRole
 // Dependencies: [2]
 // Exports: isSubscriptionRole, isSubscriptionRoleAvailableForPurchase
 
-// Module 4082 (isSubscriptionRole)
+// Module 4112 (isSubscriptionRole)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_role_subscriptions/PremiumRoleUtils.tsx");

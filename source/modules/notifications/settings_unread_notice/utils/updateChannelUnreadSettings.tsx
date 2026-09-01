@@ -1,23 +1,23 @@
-// Module ID: 11016
-// Function ID: 11017
+// Module ID: 11053
+// Function ID: 11054
 // Name: updateChannelUnreadSettings
-// Dependencies: [4669, 676, 4670, 685, 5455, 10194, 5450, 2]
+// Dependencies: [4701, 676, 4702, 685, 5487, 10233, 5482, 2]
 // Exports: default
 
-// Module 11016 (updateChannelUnreadSettings)
-import UserNotificationSettings from "UserNotificationSettings" /* 5450 */;
-import _modDef5455 from "module_5455" /* 5455 */;
-import resetGuildUnreadFlags from "resetGuildUnreadFlags" /* 10194 */;
-import closure_3 from "updateUserGuildSettingsInternal" /* 4669 */;
+// Module 11053 (updateChannelUnreadSettings)
+import UserNotificationSettings from "UserNotificationSettings" /* 5482 */;
+import _modDef5487 from "module_5487" /* 5487 */;
+import resetGuildUnreadFlags from "resetGuildUnreadFlags" /* 10233 */;
+import closure_3 from "updateUserGuildSettingsInternal" /* 4701 */;
 import { AnalyticsObjects } from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4670 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 685 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/notifications/settings_unread_notice/utils/updateChannelUnreadSettings.tsx");
 
 export default function updateChannelUnreadSettings(closure_0, id, UNREADS_ONLY_MENTIONS) {
-  let obj = _modDef5455;
+  let obj = _modDef5487;
   obj = { flags: resetGuildUnreadFlags.withChannelUnreadFlags(channelIdFlags.getChannelIdFlags(closure_0, id), UNREADS_ONLY_MENTIONS) };
   const NotificationLabel = UserNotificationSettings.NotificationLabel;
   if (UNREADS_ONLY_MENTIONS === constants.UNREADS_ALL_MESSAGES) {

@@ -1,15 +1,15 @@
-// Module ID: 14506
-// Function ID: 14507
+// Module ID: 14539
+// Function ID: 14540
 // Name: route
-// Dependencies: [7852, 676, 11031, 1236, 2369, 14507, 2]
+// Dependencies: [7884, 676, 11068, 1236, 2369, 14540, 2]
 
-// Module 14506 (route)
+// Module 14539 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import MobileUserSettings from "MobileUserSettings" /* 7852 */;
-import createToggle from "createToggle" /* 11031 */;
+import MobileUserSettings from "MobileUserSettings" /* 7884 */;
+import createToggle from "createToggle" /* 11068 */;
 
 obj = {
   useTitle() {
@@ -23,7 +23,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.FAMILY_CENTER_SCHEDULE_DOWNTIME,
   getComponent() {
-    return require(14507) /* OverlappingSchedulesWarning */.default;
+    return require(14540) /* OverlappingSchedulesWarning */.default;
   }
 };
 const route = createToggle.createRoute(obj);

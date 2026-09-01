@@ -1,12 +1,12 @@
-// Module ID: 13806
-// Function ID: 13807
+// Module ID: 13839
+// Function ID: 13840
 // Name: getIntervalMs
-// Dependencies: [5, 13807, 3, 595, 2]
+// Dependencies: [5, 13840, 3, 595, 2]
 
-// Module 13806 (getIntervalMs)
+// Module 13839 (getIntervalMs)
 import timestampDefault from "timestamp" /* 3 */;
 import Storage2 from "Storage" /* 595 */;
-import appendDefault from "append" /* 13807 */;
+import appendDefault from "append" /* 13840 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -87,7 +87,7 @@ prototype["flushNow"] = function flushNow() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -121,7 +121,7 @@ prototype["flushNow"] = function flushNow() {
           return obj;
         }
         c0 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp5) {
         c0 = tmp;
         throw tmp5;
@@ -245,7 +245,7 @@ prototype["_collectPages"] = function _collectPages(budget, arg1) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -325,7 +325,7 @@ prototype["_exportPages"] = function _exportPages(closure_0, flush) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

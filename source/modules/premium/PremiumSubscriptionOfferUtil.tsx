@@ -1,21 +1,21 @@
-// Module ID: 7935
-// Function ID: 7936
+// Module ID: 7967
+// Function ID: 7968
 // Name: useHasDiscountApplied
-// Dependencies: [32, 19, 4115, 1924, 7160, 7936, 7937, 589, 4045, 7938, 7939, 1955, 7942, 2]
+// Dependencies: [32, 19, 4145, 1924, 7192, 7968, 7969, 589, 4075, 7970, 7971, 1955, 7974, 2]
 // Exports: renewalInvoiceChurnDiscountInfo, useActiveDiscountInfo, useFetchChurnUserDiscountOffer, useIsInPremiumOfferExperience, useIsNUXEligible, useShouldFetchChurnOffer
 
-// Module 7935 (useHasDiscountApplied)
+// Module 7967 (useHasDiscountApplied)
 import initialize from "initialize" /* 589 */;
-import hooksDefault from "hooks" /* 4045 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7160 */;
-import useHasActiveTrial from "useHasActiveTrial" /* 7936 */;
-import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7937 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 7938 */;
-import getPaymentGateway from "getPaymentGateway" /* 7939 */;
-import useIsInReverseTrial from "useIsInReverseTrial" /* 7942 */;
+import hooksDefault from "hooks" /* 4075 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7192 */;
+import useHasActiveTrial from "useHasActiveTrial" /* 7968 */;
+import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 7969 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 7970 */;
+import getPaymentGateway from "getPaymentGateway" /* 7971 */;
+import useIsInReverseTrial from "useIsInReverseTrial" /* 7974 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "reset" /* 4115 */;
+import closure_5 from "reset" /* 4145 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 require = arg1;

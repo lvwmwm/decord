@@ -1,10 +1,10 @@
-// Module ID: 7828
-// Function ID: 7829
+// Module ID: 7860
+// Function ID: 7861
 // Name: getAccessibilityLabelOrCheapFallbackUnsafe
-// Dependencies: [7829, 2]
+// Dependencies: [7861, 2]
 // Exports: getAccessibilityLabelOrCheapFallbackUnsafe
 
-// Module 7828 (getAccessibilityLabelOrCheapFallbackUnsafe)
+// Module 7860 (getAccessibilityLabelOrCheapFallbackUnsafe)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/a11y/native/getAccessibilityLabelOrCheapFallbackUnsafe.tsx");

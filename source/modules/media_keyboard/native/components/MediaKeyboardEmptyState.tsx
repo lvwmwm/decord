@@ -1,23 +1,23 @@
-// Module ID: 10412
-// Function ID: 10413
+// Module ID: 10451
+// Function ID: 10452
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 4698, 21, 4448, 712, 4444, 4896, 6208, 1236, 10413, 10407, 10414, 2]
+// Dependencies: [19, 17, 4730, 21, 4478, 712, 4474, 4928, 6240, 1236, 10452, 10446, 10453, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10412 (MediaKeyboardEmptyState)
+// Module 10451 (MediaKeyboardEmptyState)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import Button from "Button" /* 4896 */;
-import SettingsIcon from "SettingsIcon" /* 6208 */;
-import CameraIcon from "CameraIcon" /* 10407 */;
-import registerAssetDefault from "registerAsset" /* 10413 */;
-import registerAssetDefault2 from "registerAsset" /* 10414 */;
+import Text from "Text" /* 4474 */;
+import Button from "Button" /* 4928 */;
+import SettingsIcon from "SettingsIcon" /* 6240 */;
+import CameraIcon from "CameraIcon" /* 10446 */;
+import registerAssetDefault from "registerAsset" /* 10452 */;
+import registerAssetDefault2 from "registerAsset" /* 10453 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { NativePermissionStatus } from "NativePermissionStatus" /* 4698 */;
+import { NativePermissionStatus } from "NativePermissionStatus" /* 4730 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 class MediaKeyboardEmptyState {

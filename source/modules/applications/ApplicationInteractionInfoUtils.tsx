@@ -1,10 +1,10 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8143
+// Function ID: 8144
 // Name: canViewInteractionInfo
 // Dependencies: [1955, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 8111 (canViewInteractionInfo)
+// Module 8143 (canViewInteractionInfo)
 import set from "set" /* 2 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
 

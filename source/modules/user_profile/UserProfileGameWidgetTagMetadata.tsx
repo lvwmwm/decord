@@ -1,13 +1,13 @@
-// Module ID: 12623
-// Function ID: 12624
+// Module ID: 12656
+// Function ID: 12657
 // Name: WidgetGameTagIconRole
-// Dependencies: [7345, 1236, 2]
+// Dependencies: [7377, 1236, 2]
 // Exports: buildWidgetGameTagMetadata
 
-// Module 12623 (WidgetGameTagIconRole)
+// Module 12656 (WidgetGameTagIconRole)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import WidgetGameTag from "WidgetGameTag" /* 7345 */;
+import WidgetGameTag from "WidgetGameTag" /* 7377 */;
 
 let obj = { RIBBON: "ribbon", THUMBS_UP: "thumbsUp", THUMBS_DOWN: "thumbsDown", FRIENDS: "friends" };
 obj = {

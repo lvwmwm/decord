@@ -1,11 +1,11 @@
-// Module ID: 10395
-// Function ID: 10396
-// Dependencies: [19, 21, 8537, 1236, 8947, 2]
+// Module ID: 10434
+// Function ID: 10435
+// Dependencies: [19, 21, 8569, 1236, 8984, 2]
 
-// Module 10395
+// Module 10434
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import map from "map" /* 8537 */;
-import TwinButtons from "TwinButtons" /* 8947 */;
+import map from "map" /* 8569 */;
+import TwinButtons from "TwinButtons" /* 8984 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 15611
-// Function ID: 15612
+// Module ID: 15647
+// Function ID: 15648
 // Name: renderCard
-// Dependencies: [32, 19, 17, 14857, 676, 21, 7765, 4448, 712, 5620, 7705, 15612, 698, 4913, 1500, 15613, 5921, 5941, 15620, 15621, 4187, 10953, 12, 8073, 1236, 15622, 15623, 15640, 15642, 15643, 15626, 15639, 15644, 15638, 15625, 1471, 2]
+// Dependencies: [32, 19, 17, 14890, 676, 21, 7797, 4478, 712, 5652, 7737, 15648, 698, 4945, 1500, 15649, 5953, 5973, 15656, 15657, 4217, 10991, 12, 8105, 1236, 15658, 15659, 15676, 15678, 15679, 15662, 15675, 15680, 15674, 15661, 1471, 2]
 
-// Module 15611 (renderCard)
+// Module 15647 (renderCard)
 import ThemesDefault from "Themes" /* 712 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5620 */;
-import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 15622 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5652 */;
+import HappeningNowCardPlaceholder from "HappeningNowCardPlaceholder" /* 15658 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14857 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14890 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createFakeSharedValue from "createFakeSharedValue" /* 7765 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
-import { Gesture } from "LegacyBaseButton" /* 5620 */;
+import createFakeSharedValue from "createFakeSharedValue" /* 7797 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
+import { Gesture } from "LegacyBaseButton" /* 5652 */;
 
 require = arg1;
 function renderCard(kind, fullWidth) {
@@ -70,7 +70,7 @@ const memoResult = importAllResult.memo((listRef) => {
   obj = obj(isFocused[14]);
   isFocused = obj.useIsFocused();
   ref = isFocused;
-  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "AM", isFocused: "PM" };
+  obj = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "a", isFocused: "USER_QUARANTINED" };
   obj[3] = isFocused;
   const tmp7 = callback(ref(isFocused[15])(listRef.cards, obj), 2);
   let first = tmp7[0];

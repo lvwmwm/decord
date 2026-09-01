@@ -1,10 +1,10 @@
-// Module ID: 11351
-// Function ID: 11352
+// Module ID: 11389
+// Function ID: 11390
 // Name: _sendGiftIntentGif
-// Dependencies: [32, 5, 19, 17, 1387, 676, 4441, 21, 4448, 712, 7169, 7395, 698, 5941, 5562, 589, 7776, 1236, 11352, 10317, 4896, 4691, 5909, 5463, 5976, 2]
+// Dependencies: [32, 5, 19, 17, 1387, 676, 4471, 21, 4478, 712, 7201, 7427, 698, 5973, 5594, 589, 7808, 1236, 11390, 10356, 4928, 4723, 5941, 5495, 6008, 2]
 // Exports: default
 
-// Module 11351 (_sendGiftIntentGif)
+// Module 11389 (_sendGiftIntentGif)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
@@ -12,9 +12,9 @@ import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1387 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4441 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function _sendGiftIntentGif() {
@@ -35,7 +35,7 @@ function _sendGiftIntentGif() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -60,7 +60,7 @@ function _sendGiftIntentGif() {
               c4 = undefined;
               url = 1;
               c4 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp5) {
@@ -113,7 +113,7 @@ function _sendGiftIntentGif() {
               obj5[2] = items;
               callback(c2[12]).track(constants.GIFT_INTENT_MESSAGE_SENT, obj5);
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
             obj2 = callback(c2[10]);
             const id = user.id;

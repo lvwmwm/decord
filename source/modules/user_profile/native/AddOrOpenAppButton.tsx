@@ -1,15 +1,15 @@
-// Module ID: 9236
-// Function ID: 9237
+// Module ID: 9275
+// Function ID: 9276
 // Name: AddAppButton
-// Dependencies: [5, 32, 19, 8114, 676, 1498, 21, 9237, 9238, 4415, 5949, 9046, 4163, 1486, 8691, 9342, 1236, 4896, 712, 5922, 4461, 4310, 1626, 698, 2]
+// Dependencies: [5, 32, 19, 8146, 676, 1498, 21, 9276, 9277, 4445, 5981, 9084, 4193, 1486, 8728, 9381, 1236, 4928, 712, 5954, 4491, 4340, 1626, 698, 2]
 // Exports: default
 
-// Module 9236 (AddAppButton)
-import useIsAppDMDefault from "useIsAppDM" /* 9237 */;
+// Module 9275 (AddAppButton)
+import useIsAppDMDefault from "useIsAppDM" /* 9276 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { getSection } from "getIndexKey" /* 8114 */;
+import { getSection } from "getIndexKey" /* 8146 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -32,7 +32,7 @@ function AddAppButton(application) {
   const customInstallUrl = application.customInstallUrl;
   if (null != customInstallUrl) {
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(8691).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(8728).LinkExternalSmallIcon;
       let tmp6 = application;
     }
     const items1 = [application];
@@ -62,9 +62,9 @@ function AddAppButton(application) {
     obj = { size: "sm", color: null };
     obj[1] = guildId(712).colors.WHITE;
     obj[5] = <PlusSmallIcon size="sm" color={null} />;
-    return jsx(tmp6(4896).Button, { size: "sm", color: null });
+    return jsx(tmp6(4928).Button, { size: "sm", color: null });
   }
-  PlusSmallIcon = application(9342).PlusSmallIcon;
+  PlusSmallIcon = application(9381).PlusSmallIcon;
   tmp6 = application;
 }
 function OpenAppButton(profileApplication) {
@@ -87,7 +87,7 @@ function OpenAppButton(profileApplication) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

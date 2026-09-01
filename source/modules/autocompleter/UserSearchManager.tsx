@@ -1,21 +1,21 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9928
+// Function ID: 9929
 // Name: getTransformedUser
-// Dependencies: [1391, 1930, 1387, 1992, 4100, 1922, 676, 4292, 1399, 514, 5454, 9890, 1471, 1208, 12, 11, 2]
+// Dependencies: [1391, 1935, 1387, 1992, 4130, 1922, 676, 4322, 1399, 514, 5486, 9929, 1471, 1208, 12, 11, 2]
 
-// Module 9889 (getTransformedUser)
+// Module 9928 (getTransformedUser)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import _modDef1208 from "module_1208" /* 1208 */;
 import createChannelRecord from "createChannelRecord" /* 1391 */;
 import hasFlagAll from "hasFlag" /* 1399 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import initializeDefault from "initialize" /* 5454 */;
-import UserSearchWorkerManager from "UserSearchWorkerManager" /* 9890 */;
-import closure_5 from "createdAt" /* 1930 */;
+import initializeDefault from "initialize" /* 5486 */;
+import UserSearchWorkerManager from "UserSearchWorkerManager" /* 9929 */;
+import closure_5 from "createdAt" /* 1935 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import closure_7 from "trackCommunicationDisabled" /* 1992 */;
-import closure_8 from "markAllUserIdListsStale" /* 4100 */;
+import closure_8 from "markAllUserIdListsStale" /* 4130 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 
 function getTransformedUser(author) {

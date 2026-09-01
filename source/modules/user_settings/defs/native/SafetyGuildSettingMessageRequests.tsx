@@ -1,23 +1,23 @@
-// Module ID: 15442
-// Function ID: 15443
+// Module ID: 15476
+// Function ID: 15477
 // Name: showMessageRequestRestrictionModal
-// Dependencies: [1909, 15433, 7852, 11032, 4136, 4825, 1236, 4915, 15443, 8650, 8652, 6210, 15440, 14397, 11031, 2]
+// Dependencies: [1909, 15467, 7884, 11069, 4166, 4857, 1236, 4947, 15477, 8682, 8684, 6242, 15474, 14430, 11068, 2]
 
-// Module 15442 (showMessageRequestRestrictionModal)
+// Module 15476 (showMessageRequestRestrictionModal)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
-import setDefault from "set" /* 4825 */;
-import componentDidMountDefault from "componentDidMount" /* 4915 */;
-import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 6210 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8650 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8652 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14397 */;
-import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15440 */;
-import shouldAgeVerifyForDMDefaultOff from "shouldAgeVerifyForDMDefaultOff" /* 15443 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+import setDefault from "set" /* 4857 */;
+import componentDidMountDefault from "componentDidMount" /* 4947 */;
+import getSanitizedRestrictedGuilds from "getSanitizedRestrictedGuilds" /* 6242 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8682 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8684 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14430 */;
+import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15474 */;
+import shouldAgeVerifyForDMDefaultOff from "shouldAgeVerifyForDMDefaultOff" /* 15477 */;
 import closure_3 from "createGuildRecordFromRust" /* 1909 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15433 */;
-import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11032 */;
-import createToggle from "createToggle" /* 11031 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15467 */;
+import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11069 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 function showMessageRequestRestrictionModal(arg0) {
@@ -77,9 +77,9 @@ createToggle = {
       }
       tmp7 = hasItem;
     }
-    const MessageRequestRestrictedDefault = tmp(4136).MessageRequestRestrictedDefault;
+    const MessageRequestRestrictedDefault = tmp(4166).MessageRequestRestrictedDefault;
     const obj3 = useParentalControlledExplicitContentSettings;
-    const MessageRequestRestrictedGuildIds = tmp(4136).MessageRequestRestrictedGuildIds;
+    const MessageRequestRestrictedGuildIds = tmp(4166).MessageRequestRestrictedGuildIds;
     const setting1 = MessageRequestRestrictedGuildIds.useSetting();
     let tmp9 = !setting1.includes(selectedGuildId);
     let tmp10 = !tmp7;

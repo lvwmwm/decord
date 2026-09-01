@@ -1,15 +1,15 @@
-// Module ID: 15425
-// Function ID: 15426
+// Module ID: 15459
+// Function ID: 15460
 // Name: route
-// Dependencies: [7852, 676, 11031, 1236, 2043, 15426, 2]
+// Dependencies: [7884, 676, 11068, 1236, 2043, 15460, 2]
 
-// Module 15425 (route)
+// Module 15459 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import messagesProxyDefault from "messagesProxy" /* 2043 */;
-import MobileUserSettings from "MobileUserSettings" /* 7852 */;
-import createToggle from "createToggle" /* 11031 */;
+import MobileUserSettings from "MobileUserSettings" /* 7884 */;
+import createToggle from "createToggle" /* 11068 */;
 
 obj = {
   useTitle() {
@@ -22,7 +22,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.MANAGE_SPONSORED_CONTENT,
   getComponent() {
-    return require(15426) /* AdTopicRow */.default;
+    return require(15460) /* AdTopicRow */.default;
   }
 };
 const route = createToggle.createRoute(obj);

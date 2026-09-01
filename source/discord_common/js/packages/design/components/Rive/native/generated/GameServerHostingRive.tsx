@@ -1,11 +1,11 @@
-// Module ID: 4253
-// Function ID: 4254
+// Module ID: 4283
+// Function ID: 4284
 // Name: GameServerHostingRive
-// Dependencies: [109, 19, 21, 4181, 4254, 4236, 2]
+// Dependencies: [109, 19, 21, 4211, 4284, 4266, 2]
 
-// Module 4253 (GameServerHostingRive)
-import BaseRive from "BaseRive" /* 4181 */;
-import getDerivedStateFromError from "getDerivedStateFromError" /* 4236 */;
+// Module 4283 (GameServerHostingRive)
+import BaseRive from "BaseRive" /* 4211 */;
+import getDerivedStateFromError from "getDerivedStateFromError" /* 4266 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

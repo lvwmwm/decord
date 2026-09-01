@@ -1,15 +1,15 @@
-// Module ID: 13191
-// Function ID: 13192
+// Module ID: 13224
+// Function ID: 13225
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 4115, 6052, 21, 4902, 4444, 589, 6055, 10756, 5921, 10481, 4826, 1236, 4109, 10415, 4897, 13192, 2]
+// Dependencies: [5, 19, 17, 4145, 6084, 21, 4934, 4474, 589, 6087, 10794, 5953, 10519, 4858, 1236, 4139, 10454, 4929, 13225, 2]
 // Exports: default
 
-// Module 13191 (GiftPurchaseButton)
+// Module 13224 (GiftPurchaseButton)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "reset" /* 4115 */;
-import closure_7 from "updateProduct" /* 6052 */;
+import closure_6 from "reset" /* 4145 */;
+import closure_7 from "updateProduct" /* 6084 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -67,7 +67,7 @@ export default function GiftPurchaseButton(style) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -101,7 +101,7 @@ export default function GiftPurchaseButton(style) {
           }
         } else if (1 === tmp7) {
           premiumType = 0;
-          obj1 = closure_1_1(4826);
+          obj1 = closure_1_1(4858);
           const obj3 = { title: null, body: null };
           const intl = closure_1_0(1236).intl;
           obj3[0] = intl.string(closure_1_0(1236).t.R0RpRX);
@@ -124,10 +124,10 @@ export default function GiftPurchaseButton(style) {
         } else {
           closure_0 = arg1;
           premiumType = 0;
-          premiumTypeFromPlanId = closure_1_0(4109).getPremiumTypeFromPlanId(closure_0);
+          premiumTypeFromPlanId = closure_1_0(4139).getPremiumTypeFromPlanId(closure_0);
           premiumType = premiumTypeFromPlanId.premiumType;
           planInterval = premiumTypeFromPlanId.planInterval;
-          const obj9 = closure_1_0(4109);
+          const obj9 = closure_1_0(4139);
           const obj5 = { recipientUserId: null, premiumType: null, planInterval: null, analyticsLocation: null, analyticsLocations: null, order: null };
           obj5[0] = premiumType;
           obj5[1] = premiumType;
@@ -135,9 +135,9 @@ export default function GiftPurchaseButton(style) {
           obj5[3] = premiumTypeFromPlanId;
           obj5[4] = c4;
           obj5[5] = closure_0;
-          closure_1_0(10415).openGiftModal(obj5);
+          closure_1_0(10454).openGiftModal(obj5);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp24) {
         if (tmp4 === premiumType) {

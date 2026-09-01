@@ -1,17 +1,17 @@
-// Module ID: 14274
-// Function ID: 14275
+// Module ID: 14307
+// Function ID: 14308
 // Name: EditGuildIdentityAvatar
-// Dependencies: [19, 1992, 1922, 676, 1924, 21, 4448, 589, 5921, 5941, 8037, 14230, 8047, 4109, 8044, 8137, 4415, 14231, 2009, 14232, 14232, 8035, 5036, 1236, 8074, 14233, 2]
+// Dependencies: [19, 1992, 1922, 676, 1924, 21, 4478, 589, 5953, 5973, 8069, 14263, 8079, 4139, 8076, 8169, 4445, 14264, 2009, 14265, 14265, 8067, 5068, 1236, 8106, 14266, 2]
 // Exports: default
 
-// Module 14274 (EditGuildIdentityAvatar)
+// Module 14307 (EditGuildIdentityAvatar)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "trackCommunicationDisabled" /* 1992 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ AnalyticsSections: closure_6, AnalyticsObjects: error, UpsellTypes: closure_8 } = ME);

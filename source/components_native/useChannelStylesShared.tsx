@@ -1,12 +1,12 @@
-// Module ID: 10922
-// Function ID: 10923
+// Module ID: 10960
+// Function ID: 10961
 // Name: styles
-// Dependencies: [4448, 712, 2]
+// Dependencies: [4478, 712, 2]
 
-// Module 10922 (styles)
+// Module 10960 (styles)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 let obj = { container: { flex: 1 }, background: null };
 obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW };

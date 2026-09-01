@@ -1,14 +1,14 @@
-// Module ID: 11462
-// Function ID: 11463
+// Module ID: 11495
+// Function ID: 11496
 // Name: CreditCardIcon
-// Dependencies: [19, 21, 712, 4166, 11463, 2]
+// Dependencies: [19, 21, 712, 4196, 11496, 2]
 // Exports: CreditCardIcon
 
-// Module 11462 (CreditCardIcon)
+// Module 11495 (CreditCardIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 11463 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 11496 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

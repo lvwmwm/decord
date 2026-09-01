@@ -1,19 +1,19 @@
-// Module ID: 5589
-// Function ID: 5590
+// Module ID: 5621
+// Function ID: 5622
 // Name: RedesignBottomSheetTitleHeaderBase
-// Dependencies: [32, 19, 17, 21, 4448, 712, 1493, 4167, 4444, 5464, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 712, 1493, 4197, 4474, 5496, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 5589 (RedesignBottomSheetTitleHeaderBase)
+// Module 5621 (RedesignBottomSheetTitleHeaderBase)
 import ThemesDefault from "Themes" /* 712 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import Text from "Text" /* 4444 */;
-import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5464 */;
+import Text from "Text" /* 4474 */;
+import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5496 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function RedesignBottomSheetTitleHeaderBase(children) {
@@ -65,7 +65,7 @@ function RedesignBottomSheetTitleHeaderComplex(subtitle) {
   ({ title, leading, trailing, onTitleTextLayout } = subtitle);
   const tmp = callback4();
   const tmp2 = callback6();
-  let obj = _require(4167);
+  let obj = _require(4197);
   const diff = useWindowDimensionsDefault().width - 2 * obj.useToken(ThemesDefault.modules.mobile.SHEET_HEADER_PADDING_HORIZONTAL);
   [tmp5, c0] = callback(React.useState(undefined), 2);
   callback = React.useCallback((nativeEvent) => {

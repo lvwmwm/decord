@@ -1,29 +1,29 @@
-// Module ID: 8419
-// Function ID: 8420
+// Module ID: 8451
+// Function ID: 8452
 // Name: create
-// Dependencies: [32, 1307, 8420, 8424, 8425, 8426, 8427, 8428, 8430, 8432, 8433, 8434, 8435, 8436, 8437, 8438, 8439, 8440, 8441, 8442, 8443, 2]
+// Dependencies: [32, 1307, 8452, 8456, 8457, 8458, 8459, 8460, 8462, 8464, 8465, 8466, 8467, 8468, 8469, 8470, 8471, 8472, 8473, 8474, 8475, 2]
 
-// Module 8419 (create)
+// Module 8451 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create from "create" /* 8420 */;
-import create2 from "create" /* 8424 */;
-import create3 from "create" /* 8425 */;
-import create4 from "create" /* 8426 */;
-import create5 from "create" /* 8427 */;
-import create6 from "create" /* 8428 */;
-import create7 from "create" /* 8430 */;
-import create8 from "create" /* 8432 */;
-import create9 from "create" /* 8433 */;
-import create10 from "create" /* 8434 */;
-import create11 from "create" /* 8435 */;
-import create12 from "create" /* 8436 */;
-import create13 from "create" /* 8437 */;
-import create14 from "create" /* 8438 */;
-import create15 from "create" /* 8439 */;
-import create16 from "create" /* 8440 */;
-import create17 from "create" /* 8441 */;
-import create18 from "create" /* 8442 */;
-import create19 from "create" /* 8443 */;
+import create from "create" /* 8452 */;
+import create2 from "create" /* 8456 */;
+import create3 from "create" /* 8457 */;
+import create4 from "create" /* 8458 */;
+import create5 from "create" /* 8459 */;
+import create6 from "create" /* 8460 */;
+import create7 from "create" /* 8462 */;
+import create8 from "create" /* 8464 */;
+import create9 from "create" /* 8465 */;
+import create10 from "create" /* 8466 */;
+import create11 from "create" /* 8467 */;
+import create12 from "create" /* 8468 */;
+import create13 from "create" /* 8469 */;
+import create14 from "create" /* 8470 */;
+import create15 from "create" /* 8471 */;
+import create16 from "create" /* 8472 */;
+import create17 from "create" /* 8473 */;
+import create18 from "create" /* 8474 */;
+import create19 from "create" /* 8475 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -38,7 +38,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8420).AnnouncementModalVariant1Properties;
+            return callback(8452).AnnouncementModalVariant1Properties;
           }
     };
     items[2] = {
@@ -47,7 +47,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8424).PremiumTab;
+            return callback(8456).PremiumTab;
           }
     };
     items[3] = {
@@ -56,7 +56,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8425).MarketingPageBanner;
+            return callback(8457).MarketingPageBanner;
           }
     };
     items[4] = {
@@ -65,7 +65,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8426).PaymentModalBanner;
+            return callback(8458).PaymentModalBanner;
           }
     };
     items[5] = {
@@ -74,7 +74,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8427).MobileBottomSheet;
+            return callback(8459).MobileBottomSheet;
           }
     };
     items[6] = {
@@ -83,7 +83,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8428).GiftIcon;
+            return callback(8460).GiftIcon;
           }
     };
     items[7] = {
@@ -92,7 +92,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8430).GiftIconCoachmark;
+            return callback(8462).GiftIconCoachmark;
           }
     };
     items[8] = {
@@ -101,7 +101,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8432).GiftPlanSelectionCardBanner;
+            return callback(8464).GiftPlanSelectionCardBanner;
           }
     };
     items[9] = {
@@ -110,7 +110,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8433).GiftCustomizationBanner;
+            return callback(8465).GiftCustomizationBanner;
           }
     };
     items[10] = {
@@ -119,7 +119,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8434).BillingSettingsNitroGiftBanner;
+            return callback(8466).BillingSettingsNitroGiftBanner;
           }
     };
     items[11] = {
@@ -128,7 +128,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8435).GiftReminderNagbar;
+            return callback(8467).GiftReminderNagbar;
           }
     };
     items[12] = {
@@ -137,7 +137,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8436).GiftReminderCoachmark;
+            return callback(8468).GiftReminderCoachmark;
           }
     };
     items[13] = {
@@ -146,7 +146,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8437).PremiumTabTooltip;
+            return callback(8469).PremiumTabTooltip;
           }
     };
     items[14] = {
@@ -155,7 +155,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8438).PremiumTabPopover;
+            return callback(8470).PremiumTabPopover;
           }
     };
     items[15] = {
@@ -164,7 +164,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8439).Nagbar;
+            return callback(8471).Nagbar;
           }
     };
     items[16] = {
@@ -173,7 +173,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8440).PlanSelectCardBanner;
+            return callback(8472).PlanSelectCardBanner;
           }
     };
     items[17] = {
@@ -182,7 +182,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8441).BillingSettingsBanner;
+            return callback(8473).BillingSettingsBanner;
           }
     };
     obj = { no: 21, name: "shop_nagbar", kind: "message", oneof: "properties", T: null };
@@ -199,7 +199,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
       kind: "message",
       oneof: "properties",
       T() {
-            return callback(8443).AdminEditorTestComponent;
+            return callback(8475).AdminEditorTestComponent;
           }
     };
     items[20] = { no: 3, name: "content_identifier", kind: "scalar", T: 9 };
@@ -211,7 +211,7 @@ class PremiumMarketingComponentProperties$Type extends MessageType {
 }
 const prototype = PremiumMarketingComponentProperties$Type.prototype;
 prototype["create"] = function create(arr) {
-  let obj = { properties: { oneofKind: "Array" }, contentIdentifier: "", isDefaultBase: false };
+  let obj = { properties: { oneofKind: "r" }, contentIdentifier: "", isDefaultBase: false };
   const _Object = Object;
   obj = { enumerable: false, value: this };
   _Object.defineProperty(obj, _mod1307.MESSAGE_TYPE, obj);

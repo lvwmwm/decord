@@ -1,10 +1,10 @@
-// Module ID: 17006
-// Function ID: 17007
+// Module ID: 17042
+// Function ID: 17043
 // Name: _getAgeSignals
-// Dependencies: [5, 17007, 17008, 2]
+// Dependencies: [5, 17043, 17044, 2]
 // Exports: getAgeSignals
 
-// Module 17006 (_getAgeSignals)
+// Module 17042 (_getAgeSignals)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -22,7 +22,7 @@ function _getAgeSignals() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

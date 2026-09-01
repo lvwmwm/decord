@@ -1,10 +1,10 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 15958
+// Function ID: 15959
 // Name: YouBarActivityStatusExperiment
 // Dependencies: [1469, 2]
 // Exports: useYouBarActivityStatusEnabled
 
-// Module 15923 (YouBarActivityStatusExperiment)
+// Module 15958 (YouBarActivityStatusExperiment)
 import getUnitIdDefault from "getUnitId" /* 1469 */;
 
 const tmp2 = getUnitIdDefault({ name: "2026-05-you-bar-activity-status", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });

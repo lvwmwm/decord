@@ -1,10 +1,10 @@
-// Module ID: 11160
-// Function ID: 11161
+// Module ID: 11197
+// Function ID: 11198
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 1387, 1992, 1985, 1909, 4091, 676, 21, 4448, 712, 1628, 589, 1499, 4642, 9668, 1236, 5590, 5589, 5036, 4415, 8715, 11161, 6208, 8333, 11159, 10076, 1297, 5592, 9673, 4444, 2]
+// Dependencies: [19, 17, 1387, 1992, 1985, 1909, 4121, 676, 21, 4478, 712, 1628, 589, 1499, 4674, 9707, 1236, 5622, 5621, 5068, 4445, 8752, 11198, 6240, 8365, 11196, 10115, 1297, 5624, 9712, 4474, 2]
 // Exports: default
 
-// Module 11160 (ChannelMembersActionSheet)
+// Module 11197 (ChannelMembersActionSheet)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
@@ -14,10 +14,10 @@ import closure_4 from "ensureGuildLoaded" /* 1387 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4121 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -77,9 +77,9 @@ export default function ChannelMembersActionSheet(arg0) {
       if (null != sortedGuildRoles) {
         const canResult = closure_8.can(constants.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        let tmp5Result = tmp5(9668);
+        let tmp5Result = tmp5(9707);
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        tmp5Result = tmp5(9668);
+        tmp5Result = tmp5(9707);
         const items5 = [];
         obj = { title: null, data: null };
         const existingMembersRows = tmp5Result.getExistingMembersRows(stateFromStoresArray, stateFromStores, guild, stateFromStores.accessPermissions);
@@ -109,12 +109,12 @@ export default function ChannelMembersActionSheet(arg0) {
           };
           let intl = tmp5(1236).intl;
           obj2[2] = intl.string(tmp5(1236).t.XPDhcc);
-          obj2[3] = tmp29(tmp5(6208).SettingsIcon, {});
-          tmp29Result = tmp29(tmp5(5036).PressableOpacity, obj2);
+          obj2[3] = tmp29(tmp5(6240).SettingsIcon, {});
+          tmp29Result = tmp29(tmp5(5068).PressableOpacity, obj2);
         }
         obj3 = { scrollable: true, header: null, startExpanded: true, children: null };
         obj1[2] = tmp29Result;
-        obj3[1] = closure_11(tmp5(5589).BottomSheetTitleHeader, obj1);
+        obj3[1] = closure_11(tmp5(5621).BottomSheetTitleHeader, obj1);
         const obj4 = { style: null, children: null };
         obj4[0] = tmp.container;
         if (canResult) {
@@ -124,8 +124,8 @@ export default function ChannelMembersActionSheet(arg0) {
           obj5[1] = function onPress() {
             return closure_1_0(sectionRowWrapper[25]).openAddMembersActionSheet(stateFromStores);
           };
-          obj5[2] = tmp29(tmp5(10076).GroupPlusIcon, {});
-          tmp29Result = tmp29(tmp5(8333).RowButton, obj5);
+          obj5[2] = tmp29(tmp5(10115).GroupPlusIcon, {});
+          tmp29Result = tmp29(tmp5(8365).RowButton, obj5);
         } else {
           const obj6 = { style: null, children: null };
           obj6[0] = tmp.warning;
@@ -155,10 +155,10 @@ export default function ChannelMembersActionSheet(arg0) {
           return closure_1_11(closure_1_0(sectionRowWrapper[30]).Text, obj);
         };
         obj8[3] = items5;
-        items6[1] = closure_11(tmp5(5592).BottomSheetSectionList, obj8);
+        items6[1] = closure_11(tmp5(5624).BottomSheetSectionList, obj8);
         obj4[1] = items6;
         obj3[3] = closure_12(stateFromStores, obj4);
-        return closure_11(tmp5(5590).BottomSheet, obj3);
+        return closure_11(tmp5(5622).BottomSheet, obj3);
       }
     }
   }

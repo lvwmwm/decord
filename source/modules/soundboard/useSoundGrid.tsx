@@ -1,20 +1,20 @@
-// Module ID: 16608
-// Function ID: 16609
+// Module ID: 16644
+// Function ID: 16645
 // Name: createSoundItems
-// Dependencies: [32, 19, 1387, 1909, 4091, 1981, 1922, 4933, 4935, 1924, 4941, 4339, 16609, 589, 4109, 16610, 9601, 16611, 4913, 16612, 2]
+// Dependencies: [32, 19, 1387, 1909, 4121, 1981, 1922, 4965, 4967, 1924, 4973, 4369, 16645, 589, 4139, 16646, 9640, 16647, 4945, 16648, 2]
 // Exports: default, useSearchCategories
 
-// Module 16608 (createSoundItems)
-import SoundButtonOverlay from "SoundButtonOverlay" /* 4941 */;
+// Module 16644 (createSoundItems)
+import SoundButtonOverlay from "SoundButtonOverlay" /* 4973 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
 import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
 import closure_8 from "handleConnectionOpen" /* 1981 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import closure_10 from "handleSoundCreateOrUpdate" /* 4933 */;
-import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4935 */;
+import closure_10 from "handleSoundCreateOrUpdate" /* 4965 */;
+import MAX_LENGTH_SOUND_NAME from "MAX_LENGTH_SOUND_NAME" /* 4967 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
 require = arg1;

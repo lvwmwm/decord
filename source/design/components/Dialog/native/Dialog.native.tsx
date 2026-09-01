@@ -1,11 +1,11 @@
-// Module ID: 4879
-// Function ID: 4880
+// Module ID: 4911
+// Function ID: 4912
 // Name: Dialog
-// Dependencies: [19, 17, 21, 4880, 2]
+// Dependencies: [19, 17, 21, 4912, 2]
 // Exports: Dialog
 
-// Module 4879 (Dialog)
-import AccessibilityView from "AccessibilityView" /* 4880 */;
+// Module 4911 (Dialog)
+import AccessibilityView from "AccessibilityView" /* 4912 */;
 import closure_2 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

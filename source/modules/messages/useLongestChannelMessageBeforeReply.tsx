@@ -1,11 +1,11 @@
-// Module ID: 11981
-// Function ID: 11982
+// Module ID: 12014
+// Function ID: 12015
 // Name: useLongestChannelMessageBeforeReply
-// Dependencies: [4703, 589, 2]
+// Dependencies: [4735, 589, 2]
 // Exports: useLongestChannelMessageBeforeReply
 
-// Module 11981 (useLongestChannelMessageBeforeReply)
-import closure_2 from "reinjectEphemerals" /* 4703 */;
+// Module 12014 (useLongestChannelMessageBeforeReply)
+import closure_2 from "reinjectEphemerals" /* 4735 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/useLongestChannelMessageBeforeReply.tsx");

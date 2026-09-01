@@ -1,14 +1,14 @@
-// Module ID: 14976
-// Function ID: 14977
+// Module ID: 15009
+// Function ID: 15010
 // Name: useEnableSwitchIconsSettingValue
-// Dependencies: [4440, 7852, 589, 11031, 1236, 14059, 2]
+// Dependencies: [4470, 7884, 589, 11068, 1236, 14092, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 14976 (useEnableSwitchIconsSettingValue)
+// Module 15009 (useEnableSwitchIconsSettingValue)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
-import createToggle from "createToggle" /* 11031 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 function useEnableSwitchIconsSettingValue() {

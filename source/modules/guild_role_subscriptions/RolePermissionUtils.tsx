@@ -1,10 +1,10 @@
-// Module ID: 4083
-// Function ID: 4084
+// Module ID: 4113
+// Function ID: 4114
 // Name: hasViewChannelPermission
 // Dependencies: [1986, 676, 506, 2]
 // Exports: hasViewChannelPermission, isChannelAccessDeniedBy, isChannelAccessGrantedBy
 
-// Module 4083 (hasViewChannelPermission)
+// Module 4113 (hasViewChannelPermission)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 506 */;
 import ME from "ME" /* 676 */;

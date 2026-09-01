@@ -1,24 +1,24 @@
-// Module ID: 16094
-// Function ID: 16095
+// Module ID: 16129
+// Function ID: 16130
 // Name: TruncatedText
-// Dependencies: [32, 19, 17, 4114, 21, 4448, 712, 4444, 1236, 5036, 1297, 16095, 8189, 14790, 647, 8192, 6049, 2]
+// Dependencies: [32, 19, 17, 4144, 21, 4478, 712, 4474, 1236, 5068, 1297, 16130, 8221, 14823, 647, 8224, 6081, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 16094 (TruncatedText)
+// Module 16129 (TruncatedText)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4444 */;
-import PressableBase from "PressableBase" /* 5036 */;
-import notSupportedDefault from "notSupported" /* 8189 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 8192 */;
-import getRoleEmojisAll from "getRoleEmojis" /* 14790 */;
-import registerAssetDefault from "registerAsset" /* 16095 */;
+import Text from "Text" /* 4474 */;
+import PressableBase from "PressableBase" /* 5068 */;
+import notSupportedDefault from "notSupported" /* 8221 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 8224 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14823 */;
+import registerAssetDefault from "registerAsset" /* 16130 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "addSubscriptionPlan" /* 4114 */;
+import closure_8 from "addSubscriptionPlan" /* 4144 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 ({ TouchableOpacity: closure_6, View: error } = get_ActivityIndicator);
@@ -79,7 +79,7 @@ export const TruncatedText = function TruncatedText(lineClamp) {
         callback(nativeEvent.nativeEvent.lines.length > num);
       }
     };
-    const items = [closure_9(num(4444).Text, obj), first];
+    const items = [closure_9(num(4474).Text, obj), first];
     obj[3] = items;
     return closure_10(closure_6, obj);
   } else {
@@ -95,7 +95,7 @@ export const TruncatedText = function TruncatedText(lineClamp) {
     }
     obj1 = { variant: "text-sm/medium", color: "text-default", children: null };
     obj1[2] = stringResult;
-    t = tmp7(num(4444).Text, obj1);
+    t = tmp7(num(4474).Text, obj1);
     obj[1] = t;
     closure_9(closure_7, obj);
     const tmp8 = closure_7;
@@ -123,8 +123,8 @@ export const useFormattedSubscriptionPlan = function useFormattedSubscriptionPla
   let str = "No Price Available";
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    str = "" + tmp2(6049).formatPrice(price.amount, price.currency) + "/mo.";
-    const tmp2Result = tmp2(6049);
+    str = "" + tmp2(6081).formatPrice(price.amount, price.currency) + "/mo.";
+    const tmp2Result = tmp2(6081);
   }
   return str;
 };

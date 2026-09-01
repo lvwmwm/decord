@@ -1,14 +1,14 @@
-// Module ID: 6755
-// Function ID: 6756
+// Module ID: 6787
+// Function ID: 6788
 // Name: MailboxSpotIllustration
-// Dependencies: [21, 5461, 6756, 2]
+// Dependencies: [21, 5493, 6788, 2]
 // Exports: MailboxSpotIllustration
 
-// Module 6755 (MailboxSpotIllustration)
+// Module 6787 (MailboxSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6756 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6788 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MailboxSpotIllustration.native.tsx");

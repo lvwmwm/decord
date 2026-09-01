@@ -1,9 +1,9 @@
-// Module ID: 7417
-// Function ID: 7418
+// Module ID: 7449
+// Function ID: 7450
 // Name: useConsoleQuestUIStore
 // Dependencies: [644, 2]
 
-// Module 7417 (useConsoleQuestUIStore)
+// Module 7449 (useConsoleQuestUIStore)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 

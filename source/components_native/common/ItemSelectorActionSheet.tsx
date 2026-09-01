@@ -1,10 +1,10 @@
-// Module ID: 9325
-// Function ID: 9326
+// Module ID: 9364
+// Function ID: 9365
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 4167, 712, 1628, 5590, 5589, 5958, 5592, 7660, 7661, 2]
+// Dependencies: [19, 21, 4197, 712, 1628, 5622, 5621, 5990, 5624, 7692, 7693, 2]
 // Exports: default
 
-// Module 9325 (ItemSelectorActionSheet)
+// Module 9364 (ItemSelectorActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
@@ -19,7 +19,7 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(4167);
+  let obj = items(4197);
   const token = obj.useToken(ThemesDefault.modules.mobile.TABLE_ROW_PADDING);
   const findIndexResult = items.findIndex((value) => value.value === closure_1);
   obj = { title, trailing: null };
@@ -27,9 +27,9 @@ export default function ItemSelectorActionSheet(arg0) {
   if (null != onClose) {
     obj = { onPress: null };
     obj[0] = onClose;
-    tmp6Result = tmp6(tmp(5958).ActionSheetCloseButton, obj);
+    tmp6Result = tmp6(tmp(5990).ActionSheetCloseButton, obj);
   }
-  obj1 = { scrollable: true, header: closure_3(items(5589).BottomSheetTitleHeader, obj), children: null };
+  obj1 = { scrollable: true, header: closure_3(items(5621).BottomSheetTitleHeader, obj), children: null };
   obj[1] = tmp6Result;
   const obj2 = { contentContainerStyle: { paddingHorizontal: token, paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 }, children: null };
   items = [body, ];
@@ -40,7 +40,7 @@ export default function ItemSelectorActionSheet(arg0) {
   const obj3 = { paddingHorizontal: token, paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };
   const tmp3 = importDefault;
   const tmp8 = closure_4;
-  items[1] = closure_3(items(7660).TableRadioGroup, {
+  items[1] = closure_3(items(7692).TableRadioGroup, {
     value: num,
     accessibilityLabel: title,
     hasIcons,
@@ -49,9 +49,9 @@ export default function ItemSelectorActionSheet(arg0) {
         dependencyMap(iter.value);
       }
     },
-    children: items.map((label, value) => callback(items(7661).TableRadioRow, { label: label.label, value }, value))
+    children: items.map((label, value) => callback(items(7693).TableRadioRow, { label: label.label, value }, value))
   });
   obj2[1] = items;
-  obj1[2] = tmp8(items(5592).BottomSheetScrollView, obj2);
-  return closure_3(items(5590).BottomSheet, obj1);
+  obj1[2] = tmp8(items(5624).BottomSheetScrollView, obj2);
+  return closure_3(items(5622).BottomSheet, obj1);
 };

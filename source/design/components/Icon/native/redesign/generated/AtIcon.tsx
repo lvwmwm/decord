@@ -1,14 +1,14 @@
-// Module ID: 5007
-// Function ID: 5008
+// Module ID: 5039
+// Function ID: 5040
 // Name: AtIcon
-// Dependencies: [19, 21, 712, 4166, 4955, 2]
+// Dependencies: [19, 21, 712, 4196, 4987, 2]
 // Exports: AtIcon
 
-// Module 5007 (AtIcon)
+// Module 5039 (AtIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 4955 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 4987 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

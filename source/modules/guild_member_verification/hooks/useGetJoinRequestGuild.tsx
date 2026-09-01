@@ -1,12 +1,12 @@
-// Module ID: 8998
-// Function ID: 8999
+// Module ID: 9035
+// Function ID: 9036
 // Name: useGetGuildJoinRequest
-// Dependencies: [19, 4270, 589, 7629, 2]
+// Dependencies: [19, 4300, 589, 7661, 2]
 // Exports: default
 
-// Module 8998 (useGetGuildJoinRequest)
+// Module 9035 (useGetGuildJoinRequest)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleGatewayJoinRequestUpdate" /* 4270 */;
+import closure_4 from "handleGatewayJoinRequestUpdate" /* 4300 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member_verification/hooks/useGetJoinRequestGuild.tsx");

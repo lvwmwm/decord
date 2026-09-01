@@ -1,14 +1,14 @@
-// Module ID: 6941
-// Function ID: 6942
+// Module ID: 6973
+// Function ID: 6974
 // Name: ServerIconBoomBGoneExample
-// Dependencies: [21, 5461, 6942, 2]
+// Dependencies: [21, 5493, 6974, 2]
 // Exports: ServerIconBoomBGoneExample
 
-// Module 6941 (ServerIconBoomBGoneExample)
+// Module 6973 (ServerIconBoomBGoneExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6942 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6974 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ServerIconBoomBGoneExample.native.tsx");

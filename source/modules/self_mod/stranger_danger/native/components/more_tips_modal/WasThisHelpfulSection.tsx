@@ -1,18 +1,18 @@
-// Module ID: 10977
-// Function ID: 10978
+// Module ID: 11014
+// Function ID: 11015
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10615, 10963, 21, 4448, 712, 647, 10971, 4164, 1236, 8394, 8395, 10970, 4444, 1297, 10978, 10979, 2]
+// Dependencies: [19, 17, 10653, 11000, 21, 4478, 712, 647, 11008, 4194, 1236, 8426, 8427, 11007, 4474, 1297, 11015, 11016, 2]
 // Exports: default
 
-// Module 10977 (WasThisHelpfulSection)
+// Module 11014 (WasThisHelpfulSection)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 10615 */;
-import { SafetyWarningFeedbackTypes as closure_7 } from "handleConnectionOpen" /* 10615 */;
-import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 10963 */;
+import closure_6 from "handleConnectionOpen" /* 10653 */;
+import { SafetyWarningFeedbackTypes as closure_7 } from "handleConnectionOpen" /* 10653 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 11000 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);

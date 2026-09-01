@@ -1,10 +1,10 @@
-// Module ID: 8544
-// Function ID: 8545
+// Module ID: 8576
+// Function ID: 8577
 // Name: usePrevious
 // Dependencies: [19, 2]
 // Exports: default, useCurrentWhen, usePreviousWhen
 
-// Module 8544 (usePrevious)
+// Module 8576 (usePrevious)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
 

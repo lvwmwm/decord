@@ -1,15 +1,15 @@
-// Module ID: 15537
-// Function ID: 15538
+// Module ID: 15572
+// Function ID: 15573
 // Name: ExternalLink
-// Dependencies: [19, 17, 21, 4448, 712, 7685, 1499, 7715, 1236, 4444, 5344, 4896, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 7717, 1499, 7747, 1236, 4474, 5376, 4928, 2]
 // Exports: default
 
-// Module 15537 (ExternalLink)
+// Module 15572 (ExternalLink)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ Linking: c4, ScrollView: c5, View: closure_6 } = get_ActivityIndicator);

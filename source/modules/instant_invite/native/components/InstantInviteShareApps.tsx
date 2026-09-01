@@ -1,15 +1,15 @@
-// Module ID: 9907
-// Function ID: 9908
-// Dependencies: [32, 19, 17, 9908, 21, 4448, 712, 4903, 5620, 9942, 7974, 9706, 2]
+// Module ID: 9946
+// Function ID: 9947
+// Dependencies: [32, 19, 17, 9947, 21, 4478, 712, 4935, 5652, 9981, 8006, 9745, 2]
 
-// Module 9907
+// Module 9946
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import SHARE_APPS_KEY from "SHARE_APPS_KEY" /* 9908 */;
+import SHARE_APPS_KEY from "SHARE_APPS_KEY" /* 9947 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c4 = importAllResult;
@@ -23,12 +23,12 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
   onItemPressed = onItemPressed.onItemPressed;
   closure_1 = undefined;
   dependencyMap = undefined;
-  let obj = onItemPressed(4903);
+  let obj = onItemPressed(4935);
   closure_1 = obj.useFontScale();
   const tmp = callback2();
   [arr, c2] = callback(importAllResult.useState(closure_8), 2);
   const tmp2 = callback(importAllResult.useState(closure_8), 2);
-  const gesture = onItemPressed(5620).useNativeGesture({ disallowInterruption: true });
+  const gesture = onItemPressed(5652).useNativeGesture({ disallowInterruption: true });
   const effect = importAllResult.useEffect(() => {
     Promise.all(closure_1_7.map((isAvailable) => isAvailable.isAvailable)).then((arr) => {
       const items = [];
@@ -108,7 +108,7 @@ const memoResult = importAllResult.memo(function InstantInviteShareApps(onItemPr
     obj[1] = tmpResult;
     return closure_1_9(closure_1_5, obj, type.type);
   })}</closure_6>;
-  return jsx(onItemPressed(5620).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(5652).GestureDetector, { gesture, children });
 });
 const result = require("set").fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

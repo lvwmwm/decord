@@ -1,20 +1,20 @@
-// Module ID: 15439
-// Function ID: 15440
+// Module ID: 15473
+// Function ID: 15474
 // Name: toggle
-// Dependencies: [1909, 15433, 7852, 11032, 14397, 15440, 4136, 4825, 1236, 4915, 6210, 15441, 11031, 2]
+// Dependencies: [1909, 15467, 7884, 11069, 14430, 15474, 4166, 4857, 1236, 4947, 6242, 15475, 11068, 2]
 
-// Module 15439 (toggle)
+// Module 15473 (toggle)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
-import setDefault from "set" /* 4825 */;
-import componentDidMountDefault from "componentDidMount" /* 4915 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14397 */;
-import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15440 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15441 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+import setDefault from "set" /* 4857 */;
+import componentDidMountDefault from "componentDidMount" /* 4947 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14430 */;
+import useDefaultGuildsRestricted from "useDefaultGuildsRestricted" /* 15474 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 15475 */;
 import closure_3 from "createGuildRecordFromRust" /* 1909 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15433 */;
-import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11032 */;
-import createToggle from "createToggle" /* 11031 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 15467 */;
+import { GUILD_SELECT_ALL_SERVERS_OPTION_ID as closure_6 } from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11069 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 ({ getSelectedGuildId: c4, useUserSafetySettingsSelectedGuildStore: c5 } = GUILD_SELECT_ALL_SERVERS_OPTION_ID);
@@ -99,14 +99,14 @@ createToggle = {
       setDefault.show(obj);
       const obj3 = setDefault;
     } else {
-      obj = _require(6210);
+      obj = _require(6242);
       const sanitizedRestrictedGuilds = obj.getSanitizedRestrictedGuilds();
       if (arg0) {
         sanitizedRestrictedGuilds.delete(tmp);
       } else {
         sanitizedRestrictedGuilds.add(tmp);
       }
-      let RestrictedGuildIds = _require(4136).RestrictedGuildIds;
+      let RestrictedGuildIds = _require(4166).RestrictedGuildIds;
       const _Array = Array;
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
       const tmp2 = _require;

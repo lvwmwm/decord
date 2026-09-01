@@ -1,9 +1,9 @@
-// Module ID: 7008
-// Function ID: 7009
+// Module ID: 7040
+// Function ID: 7041
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7008 (metadata)
+// Module 7040 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreamSpotIllustration-2x.png.js");

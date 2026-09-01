@@ -1,10 +1,10 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15650
+// Function ID: 15651
 // Name: _fetchActiveChannels
-// Dependencies: [5, 676, 709, 530, 4347, 2]
+// Dependencies: [5, 676, 709, 530, 4377, 2]
 // Exports: fetchActiveChannels
 
-// Module 15614 (_fetchActiveChannels)
+// Module 15650 (_fetchActiveChannels)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -29,7 +29,7 @@ function _fetchActiveChannels() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -54,7 +54,7 @@ function _fetchActiveChannels() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

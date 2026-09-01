@@ -1,26 +1,26 @@
-// Module ID: 15872
-// Function ID: 15873
+// Module ID: 15907
+// Function ID: 15908
 // Name: GuildRowWrapper
-// Dependencies: [19, 17, 4093, 1391, 1387, 1982, 7349, 1909, 4463, 4100, 4669, 1922, 676, 4670, 21, 4448, 589, 4308, 4305, 12915, 10199, 4444, 15873, 15874, 4642, 11, 15875, 15876, 11518, 15877, 15878, 15879, 15881, 15882, 15861, 2]
+// Dependencies: [19, 17, 4123, 1391, 1387, 1982, 7381, 1909, 4493, 4130, 4701, 1922, 676, 4702, 21, 4478, 589, 4338, 4335, 12948, 10238, 4474, 15908, 15909, 4674, 11, 15910, 15911, 11551, 15912, 15913, 15914, 15916, 15917, 15896, 2]
 // Exports: default
 
-// Module 15872 (GuildRowWrapper)
+// Module 15907 (GuildRowWrapper)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "storeThread" /* 4093 */;
+import closure_5 from "storeThread" /* 4123 */;
 import { isThread } from "createChannelRecord" /* 1391 */;
 import closure_7 from "ensureGuildLoaded" /* 1387 */;
 import closure_8 from "comparator" /* 1982 */;
-import closure_9 from "updateGuildUnreadSentinel" /* 7349 */;
+import closure_9 from "updateGuildUnreadSentinel" /* 7381 */;
 import closure_10 from "createGuildRecordFromRust" /* 1909 */;
-import closure_11 from "generateOldThreadCutoff" /* 4463 */;
-import closure_12 from "markAllUserIdListsStale" /* 4100 */;
-import closure_13 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_11 from "generateOldThreadCutoff" /* 4493 */;
+import closure_12 from "markAllUserIdListsStale" /* 4130 */;
+import closure_13 from "updateUserGuildSettingsInternal" /* 4701 */;
 import closure_14 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4670 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function GuildRowWrapper(guild) {
@@ -162,7 +162,7 @@ function GuildRowWrapper(guild) {
     const tmp = unreadChannel.getMutableGuildStates()[guild.id];
     guild = tmp;
     if (null == tmp) {
-      return { mentionChannel: "ip", mentionChannelName: "isArray", mentionChannelCount: null };
+      return { mentionChannel: "disabled", mentionChannelName: "isArray", mentionChannelCount: null };
     } else {
       const keys = disableSubtitle(onActiveHookChange[25]).keys(tmp.mentionCounts);
       const found = keys.filter((id) => {
@@ -345,7 +345,7 @@ export default function HomeDrawerGuildRow(guildId) {
   obj = guildId(589);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4308).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(4338).MobileHomeDrawerExperiment;
   let tmp3 = null;
   if (null != stateFromStores) {
     tmp3 = null;

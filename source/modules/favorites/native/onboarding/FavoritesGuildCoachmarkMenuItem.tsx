@@ -1,12 +1,12 @@
-// Module ID: 15786
-// Function ID: 15787
+// Module ID: 15822
+// Function ID: 15823
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [19, 1390, 676, 1384, 21, 10280, 5908, 589, 1236, 3149, 8936, 2]
+// Dependencies: [19, 1390, 676, 1384, 21, 10319, 5940, 589, 1236, 3179, 8973, 2]
 // Exports: default
 
-// Module 15786 (FavoritesGuildCoachmarkMenuItemContent)
-import Layer from "Layer" /* 5908 */;
-import items12 from "items1" /* 10280 */;
+// Module 15822 (FavoritesGuildCoachmarkMenuItemContent)
+import Layer from "Layer" /* 5940 */;
+import items12 from "items1" /* 10319 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "initializeFromUserSettings" /* 1390 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
@@ -37,7 +37,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, callback, callback1];
   const memo = callback.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "installation", onButtonPress: null };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "unknown_error", onButtonPress: 0 };
     const intl = stateFromStores(markPopoverAsDismissed[8]).intl;
     const tmp4 = shouldShowPopover(markPopoverAsDismissed[9]);
     if (stateFromStores) {

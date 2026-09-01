@@ -1,14 +1,14 @@
-// Module ID: 9181
-// Function ID: 9182
+// Module ID: 9220
+// Function ID: 9221
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 4448, 4136, 1431, 8196, 5553, 2]
+// Dependencies: [19, 21, 4478, 4166, 1431, 8228, 5585, 2]
 // Exports: default
 
-// Module 9181 (ActivityEmoji)
-import EmojiDefault from "Emoji" /* 5553 */;
+// Module 9220 (ActivityEmoji)
+import EmojiDefault from "Emoji" /* 5585 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let closure_5 = createCacheKey.createStyles({ emoji: { flexShrink: 0, width: "100%", height: "100%" }, text: { textAlign: "center", fontFamily: "System" } });
@@ -28,7 +28,7 @@ export default function ActivityEmoji(emoji) {
   const tmp = callback();
   let ReactionIcon = emoji;
   let obj = dependencyMap;
-  const AnimateEmoji = emoji(4136).AnimateEmoji;
+  const AnimateEmoji = emoji(4166).AnimateEmoji;
   let animated;
   const setting = AnimateEmoji.useSetting();
   if (emoji != null) {
@@ -66,7 +66,7 @@ export default function ActivityEmoji(emoji) {
     }
   }
   if (null == emoji) {
-    ReactionIcon = ReactionIcon(8196).ReactionIcon;
+    ReactionIcon = ReactionIcon(8228).ReactionIcon;
     obj = { style: null, size: "sm" };
     obj[0] = style;
     <ReactionIcon style={null} size="sm" />;

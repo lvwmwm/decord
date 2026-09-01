@@ -1,18 +1,18 @@
-// Module ID: 7172
-// Function ID: 7173
+// Module ID: 7204
+// Function ID: 7205
 // Name: trackRoundtrip
-// Dependencies: [1387, 4368, 4542, 676, 3, 7173, 698, 7390, 589, 709, 2]
+// Dependencies: [1387, 4398, 4574, 676, 3, 7205, 698, 7422, 589, 709, 2]
 
-// Module 7172 (trackRoundtrip)
+// Module 7204 (trackRoundtrip)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 7173 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7390 */;
+import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 7205 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7422 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "handleInviteData" /* 4368 */;
-import closure_5 from "handleConnectionInfoChange" /* 4542 */;
+import closure_4 from "handleInviteData" /* 4398 */;
+import closure_5 from "handleConnectionInfoChange" /* 4574 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

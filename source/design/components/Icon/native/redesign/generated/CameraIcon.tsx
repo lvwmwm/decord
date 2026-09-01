@@ -1,14 +1,14 @@
-// Module ID: 10407
-// Function ID: 10408
+// Module ID: 10446
+// Function ID: 10447
 // Name: CameraIcon
-// Dependencies: [19, 21, 712, 4166, 10408, 2]
+// Dependencies: [19, 21, 712, 4196, 10447, 2]
 // Exports: CameraIcon
 
-// Module 10407 (CameraIcon)
+// Module 10446 (CameraIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 10408 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 10447 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

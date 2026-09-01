@@ -1,14 +1,14 @@
-// Module ID: 6721
-// Function ID: 6722
+// Module ID: 6753
+// Function ID: 6754
 // Name: HelloWumpusSpotIllustration
-// Dependencies: [21, 5461, 6722, 2]
+// Dependencies: [21, 5493, 6754, 2]
 // Exports: HelloWumpusSpotIllustration
 
-// Module 6721 (HelloWumpusSpotIllustration)
+// Module 6753 (HelloWumpusSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6722 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6754 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HelloWumpusSpotIllustration.native.tsx");

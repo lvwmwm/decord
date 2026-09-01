@@ -1,14 +1,14 @@
-// Module ID: 6905
-// Function ID: 6906
+// Module ID: 6937
+// Function ID: 6938
 // Name: RewardsLaptopSpotIllustration
-// Dependencies: [21, 5461, 6906, 2]
+// Dependencies: [21, 5493, 6938, 2]
 // Exports: RewardsLaptopSpotIllustration
 
-// Module 6905 (RewardsLaptopSpotIllustration)
+// Module 6937 (RewardsLaptopSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6906 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6938 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/RewardsLaptopSpotIllustration.native.tsx");

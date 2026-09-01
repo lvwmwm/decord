@@ -1,14 +1,14 @@
-// Module ID: 6673
-// Function ID: 6674
+// Module ID: 6705
+// Function ID: 6706
 // Name: GiftTrollIllocon
-// Dependencies: [21, 5461, 6674, 2]
+// Dependencies: [21, 5493, 6706, 2]
 // Exports: GiftTrollIllocon
 
-// Module 6673 (GiftTrollIllocon)
+// Module 6705 (GiftTrollIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6674 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6706 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GiftTrollIllocon.native.tsx");

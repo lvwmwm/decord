@@ -1,12 +1,12 @@
-// Module ID: 5537
-// Function ID: 5538
+// Module ID: 5569
+// Function ID: 5570
 // Name: processCallbacks
-// Dependencies: [5538, 5189, 709, 2]
+// Dependencies: [5570, 5221, 709, 2]
 // Exports: addPostConnectionCallback
 
-// Module 5537 (processCallbacks)
-import closure_0 from "initialize" /* 5538 */;
-import closure_1 from "_handleConnectionOpen" /* 5189 */;
+// Module 5569 (processCallbacks)
+import closure_0 from "initialize" /* 5570 */;
+import closure_1 from "_handleConnectionOpen" /* 5221 */;
 import importDefaultResult from "dispatcher" /* 709 */;
 
 function processCallbacks() {

@@ -1,13 +1,13 @@
-// Module ID: 10077
-// Function ID: 10078
+// Module ID: 10116
+// Function ID: 10117
 // Name: useMyCurrentStageChannelRole
-// Dependencies: [1218, 1981, 5333, 589, 2]
+// Dependencies: [1218, 1981, 5365, 589, 2]
 // Exports: default
 
-// Module 10077 (useMyCurrentStageChannelRole)
+// Module 10116 (useMyCurrentStageChannelRole)
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import closure_3 from "handleConnectionOpen" /* 1981 */;
-import closure_4 from "buildStageChannelUserRoles" /* 5333 */;
+import closure_4 from "buildStageChannelUserRoles" /* 5365 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useMyCurrentStageChannelRole.tsx");

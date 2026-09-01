@@ -1,12 +1,12 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16147
+// Function ID: 16148
 // Name: useResourceChannels
-// Dependencies: [1387, 4675, 647, 2]
+// Dependencies: [1387, 4707, 647, 2]
 // Exports: default
 
-// Module 16112 (useResourceChannels)
+// Module 16147 (useResourceChannels)
 import closure_2 from "ensureGuildLoaded" /* 1387 */;
-import closure_3 from "handleSettingsLoadSuccess" /* 4675 */;
+import closure_3 from "handleSettingsLoadSuccess" /* 4707 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/useResourceChannels.tsx");

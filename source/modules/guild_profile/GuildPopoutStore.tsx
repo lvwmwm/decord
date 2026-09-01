@@ -1,12 +1,12 @@
-// Module ID: 13674
-// Function ID: 13675
+// Module ID: 13707
+// Function ID: 13708
 // Name: initialize
-// Dependencies: [1218, 6153, 589, 709, 2]
+// Dependencies: [1218, 6185, 589, 709, 2]
 
-// Module 13674 (initialize)
+// Module 13707 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _startLurking from "_startLurking" /* 6153 */;
+import _startLurking from "_startLurking" /* 6185 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 
 require = arg1;

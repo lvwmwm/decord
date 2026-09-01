@@ -1,24 +1,24 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17340
+// Function ID: 17341
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 676, 21, 4448, 712, 5429, 14790, 5521, 9029, 4444, 1236, 1297, 2]
+// Dependencies: [32, 19, 17, 676, 21, 4478, 712, 5461, 14823, 5553, 9067, 4474, 1236, 1297, 2]
 // Exports: default
 
-// Module 17304 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 17340 (GuildRoleSubscriptionBenefitModalHeader)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4444 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5521 */;
-import renderDefault from "render" /* 9029 */;
-import getRoleEmojisAll from "getRoleEmojis" /* 14790 */;
+import Text from "Text" /* 4474 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5553 */;
+import renderDefault from "render" /* 9067 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14823 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { Fonts } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
-import importDefaultResult from "createTextStyle" /* 5429 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
+import importDefaultResult from "createTextStyle" /* 5461 */;
 
 require = arg1;
 noopAll;

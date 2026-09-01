@@ -1,10 +1,10 @@
-// Module ID: 7660
-// Function ID: 7661
+// Module ID: 7692
+// Function ID: 7693
 // Name: context
-// Dependencies: [32, 19, 676, 21, 5566, 5960, 7661, 2]
+// Dependencies: [32, 19, 676, 21, 5598, 5992, 7693, 2]
 // Exports: TableRadioGroup
 
-// Module 7660 (context)
+// Module 7692 (context)
 import closure_2 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -53,7 +53,7 @@ export const TableRadioGroup = function TableRadioGroup(arg0) {
       return closure_3;
     }
   }), items);
-  jsx = obj.useContext(onChange(5566).RedesignCompatContext);
+  jsx = obj.useContext(onChange(5598).RedesignCompatContext);
   const items1 = [undefined !== value, onChange];
   callback = obj.useCallback((arg0) => {
     if (!closure_1) {
@@ -81,7 +81,7 @@ export const TableRadioGroup = function TableRadioGroup(arg0) {
     })
   };
   Children = obj.Children;
-  obj[1] = jsx(onChange(5960).TableRowGroup, {
+  obj[1] = jsx(onChange(5992).TableRowGroup, {
     accessibilityRole: "radiogroup",
     accessibilityLabel,
     title,

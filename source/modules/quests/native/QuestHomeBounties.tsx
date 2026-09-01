@@ -1,23 +1,23 @@
-// Module ID: 14636
-// Function ID: 14637
+// Module ID: 14669
+// Function ID: 14670
 // Name: EmptyState
-// Dependencies: [32, 19, 17, 7415, 5355, 1384, 21, 712, 14637, 4448, 11303, 1236, 6224, 4444, 14634, 1373, 6219, 709, 14638, 4416, 7431, 7441, 5358, 14575, 6014, 8961, 8962, 8966, 7414, 14647, 11307, 8073, 11046, 589, 14648, 14653, 2]
+// Dependencies: [32, 19, 17, 7447, 5387, 1384, 21, 712, 14670, 4478, 11341, 1236, 6256, 4474, 14667, 1373, 6251, 709, 14671, 4446, 7463, 7473, 5390, 14608, 6046, 8998, 8999, 9003, 7446, 14680, 11345, 8105, 11083, 589, 14681, 14686, 2]
 
-// Module 14636 (EmptyState)
+// Module 14669 (EmptyState)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4444 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6224 */;
-import useTrackQuestEventWithImpression from "useTrackQuestEventWithImpression" /* 11303 */;
-import StarfieldBackgroundDefault from "StarfieldBackground" /* 14648 */;
-import ListEdgeSpacerDefault from "ListEdgeSpacer" /* 14653 */;
+import Text from "Text" /* 4474 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6256 */;
+import useTrackQuestEventWithImpression from "useTrackQuestEventWithImpression" /* 11341 */;
+import StarfieldBackgroundDefault from "StarfieldBackground" /* 14681 */;
+import ListEdgeSpacerDefault from "ListEdgeSpacer" /* 14686 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "set" /* 7415 */;
-import { BountyCarouselEmptyStateReason as closure_7 } from "QuestsExperimentLocations" /* 5355 */;
+import closure_6 from "set" /* 7447 */;
+import { BountyCarouselEmptyStateReason as closure_7 } from "QuestsExperimentLocations" /* 5387 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function EmptyState(reason) {
@@ -364,7 +364,7 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(shopCarouselC
   if (showOrbShopPlaceholderCarousel === undefined) {
     showOrbShopPlaceholderCarousel = false;
   }
-  let obj = first(11046);
+  let obj = first(11083);
   const questHomeBounties = obj.useQuestHomeBounties().questHomeBounties;
   const tmp3 = callback4();
   first = undefined;
@@ -376,7 +376,7 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(shopCarouselC
   } else {
     items1 = [];
   }
-  let tmpResult = tmp(6219);
+  let tmpResult = tmp(6251);
   const tmp4 = callback(tmpResult.useSelectedDismissibleContent(items1), 2);
   first = tmp4[0];
   importDefault = tmp6;
@@ -415,8 +415,8 @@ const memoResult = importAllResult.memo(function QuestHomeBounties(shopCarouselC
       if (verticalScrollEnabled) {
         let tmp12 = "none" !== placement && obtainableOrbRewards > 0;
         if (tmp12) {
-          tmp12 = orbShopProducts.length >= tmp(14638).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-          const tmp13 = orbShopProducts.length >= tmp(14638).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+          tmp12 = orbShopProducts.length >= tmp(14671).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+          const tmp13 = orbShopProducts.length >= tmp(14671).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
         }
         if (!tmp12) {
           obj = { style: null, children: null };

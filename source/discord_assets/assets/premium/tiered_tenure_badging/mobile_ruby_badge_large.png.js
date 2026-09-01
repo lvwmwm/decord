@@ -1,9 +1,9 @@
-// Module ID: 8924
-// Function ID: 8925
+// Module ID: 8961
+// Function ID: 8962
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8924 (metadata)
+// Module 8961 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_ruby_badge_large.png.js");

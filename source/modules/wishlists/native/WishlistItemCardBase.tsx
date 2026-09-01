@@ -1,19 +1,19 @@
-// Module ID: 10743
-// Function ID: 10744
+// Module ID: 10781
+// Function ID: 10782
 // Name: SourceIcon
-// Dependencies: [19, 17, 21, 712, 4448, 4164, 9165, 4174, 8500, 4167, 10418, 1236, 1471, 9821, 5012, 2]
+// Dependencies: [19, 17, 21, 712, 4478, 4194, 9204, 4204, 8532, 4197, 10457, 1236, 1471, 9860, 5044, 2]
 // Exports: default
 
-// Module 10743 (SourceIcon)
+// Module 10781 (SourceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import map from "map" /* 4167 */;
-import ManaContext from "ManaContext" /* 4174 */;
-import useUserProfileColors from "useUserProfileColors" /* 8500 */;
+import map from "map" /* 4197 */;
+import ManaContext from "ManaContext" /* 4204 */;
+import useUserProfileColors from "useUserProfileColors" /* 8532 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function SourceIcon(toastText) {
@@ -31,7 +31,7 @@ function SourceIcon(toastText) {
     children: null
   };
   obj = { color: ThemesDefault.colors.INTERACTIVE_ICON_DEFAULT, size: "md" };
-  obj[5] = callback(toastText(9165).HeartIcon, obj);
+  obj[5] = callback(toastText(9204).HeartIcon, obj);
   return callback(closure_3, obj);
 }
 noopAll;
@@ -109,7 +109,7 @@ export default function WishlistItemCardBase(username) {
       stringResult = intl2.string(tmp2(1236).t.wu4gyV);
     }
   }
-  let tmp14Result1 = source === tmp2(10418).WishlistItemSource.WISHLIST;
+  let tmp14Result1 = source === tmp2(10457).WishlistItemSource.WISHLIST;
   items1[1] = stringResult;
   let tmp10 = null;
   if (tmp14Result1) {
@@ -133,7 +133,7 @@ export default function WishlistItemCardBase(username) {
     const obj3 = { color: null, size: "custom", style: null };
     obj3[0] = tmp5(712).colors.WHITE;
     obj3[2] = { width: 40, height: 40 };
-    obj2[4] = tmp14(tmp2(9821).CheckmarkLargeBoldIcon, obj3);
+    obj2[4] = tmp14(tmp2(9860).CheckmarkLargeBoldIcon, obj3);
     tmp14Result = tmp14(tmp15, obj2);
   }
   items3[1] = tmp14Result;
@@ -144,7 +144,7 @@ export default function WishlistItemCardBase(username) {
     const obj5 = { color: null, size: "custom", style: null };
     obj5[0] = tmp5(712).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT;
     obj5[2] = { width: 18, height: 18 };
-    obj4[4] = tmp14(tmp2(5012).LockIcon, obj5);
+    obj4[4] = tmp14(tmp2(5044).LockIcon, obj5);
     tmp14Result = tmp14(tmp15, obj4);
   }
   items3[2] = tmp14Result;

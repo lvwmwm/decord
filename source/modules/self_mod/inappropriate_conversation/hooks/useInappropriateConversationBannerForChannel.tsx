@@ -1,16 +1,16 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 10706
+// Function ID: 10707
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [10615, 10667, 10669, 10671, 10672, 2]
+// Dependencies: [10653, 10705, 10707, 10709, 10710, 2]
 // Exports: useInappropriateConversationBannerForChannel
 
-// Module 10668 (useInappropriateConversationBannerForChannel)
+// Module 10706 (useInappropriateConversationBannerForChannel)
 import set from "set" /* 2 */;
-import handleConnectionOpen from "handleConnectionOpen" /* 10615 */;
-import InappropriateConversationExperiment from "InappropriateConversationExperiment" /* 10667 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10669 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10671 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10672 */;
+import handleConnectionOpen from "handleConnectionOpen" /* 10653 */;
+import InappropriateConversationExperiment from "InappropriateConversationExperiment" /* 10705 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 10707 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 10709 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 10710 */;
 
 const SafetyWarningTypes = handleConnectionOpen.SafetyWarningTypes;
 const result = set.fileFinishedImporting("modules/self_mod/inappropriate_conversation/hooks/useInappropriateConversationBannerForChannel.tsx");

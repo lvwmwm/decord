@@ -1,13 +1,13 @@
-// Module ID: 4811
-// Function ID: 4812
+// Module ID: 4843
+// Function ID: 4844
 // Name: getStripe
-// Dependencies: [5, 32, 1996, 676, 3, 4812, 530, 589, 2]
+// Dependencies: [5, 32, 1996, 676, 3, 4844, 530, 589, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 4811 (getStripe)
+// Module 4843 (getStripe)
 import timestampDefault from "timestamp" /* 3 */;
 import initialize from "initialize" /* 589 */;
-import _typeof from "_typeof" /* 4812 */;
+import _typeof from "_typeof" /* 4844 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "_getSystemLocale" /* 1996 */;
@@ -46,7 +46,7 @@ function _authenticatePaymentIntentForPaymentId() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

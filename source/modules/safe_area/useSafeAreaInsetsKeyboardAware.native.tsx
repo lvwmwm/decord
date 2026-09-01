@@ -1,10 +1,10 @@
-// Module ID: 5562
-// Function ID: 5563
+// Module ID: 5594
+// Function ID: 5595
 // Name: useSafeAreaInsetsKeyboardAware
-// Dependencies: [32, 19, 1495, 5563, 5564, 1628, 1496, 500, 1894, 4312, 1626, 5565, 2]
+// Dependencies: [32, 19, 1495, 5595, 5596, 1628, 1496, 500, 1894, 4342, 1626, 5597, 2]
 // Exports: default
 
-// Module 5562 (useSafeAreaInsetsKeyboardAware)
+// Module 5594 (useSafeAreaInsetsKeyboardAware)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "subscribeToKeyboardUIStore" /* 1495 */;

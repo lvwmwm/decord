@@ -1,16 +1,16 @@
-// Module ID: 7486
-// Function ID: 7487
+// Module ID: 7518
+// Function ID: 7519
 // Name: collectThreadMetadata
-// Dependencies: [7482, 6119, 1391, 4091, 676, 1222, 11, 2]
+// Dependencies: [7514, 6151, 1391, 4121, 676, 1222, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 7486 (collectThreadMetadata)
+// Module 7518 (collectThreadMetadata)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import transitionTo from "transitionTo" /* 1222 */;
-import closure_3 from "updateFromGuild" /* 7482 */;
-import closure_4 from "updateState" /* 6119 */;
+import closure_3 from "updateFromGuild" /* 7514 */;
+import closure_4 from "updateState" /* 6151 */;
 import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1391 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4121 */;
 import { Permissions } from "ME" /* 676 */;
 
 require = arg1;

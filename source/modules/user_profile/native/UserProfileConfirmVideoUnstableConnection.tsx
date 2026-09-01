@@ -1,13 +1,13 @@
-// Module ID: 9043
-// Function ID: 9044
+// Module ID: 9081
+// Function ID: 9082
 // Name: UserProfileConfirmVideoUnstableConnection
-// Dependencies: [19, 21, 4831, 1236, 4831, 2]
+// Dependencies: [19, 21, 4863, 1236, 4863, 2]
 // Exports: default
 
-// Module 9043 (UserProfileConfirmVideoUnstableConnection)
+// Module 9081 (UserProfileConfirmVideoUnstableConnection)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4831 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4863 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;

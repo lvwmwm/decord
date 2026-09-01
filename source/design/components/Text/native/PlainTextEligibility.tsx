@@ -1,10 +1,10 @@
-// Module ID: 4457
-// Function ID: 4458
+// Module ID: 4487
+// Function ID: 4488
 // Name: set
 // Dependencies: [17, 2]
 // Exports: getPlainTextEligibility, isPlainTextEligible
 
-// Module 4457 (set)
+// Module 4487 (set)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 2 */;
 

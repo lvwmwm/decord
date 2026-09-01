@@ -1,20 +1,20 @@
-// Module ID: 13178
-// Function ID: 13179
+// Module ID: 13211
+// Function ID: 13212
 // Name: GiftingSectionTitle
-// Dependencies: [32, 19, 17, 8528, 7110, 676, 1924, 21, 4448, 712, 5960, 7126, 1499, 1628, 589, 12, 4720, 7130, 13092, 10478, 8525, 13045, 709, 7111, 7132, 8531, 7730, 6210, 8185, 13179, 4444, 1236, 13180, 13186, 13188, 13191, 13193, 8450, 7734, 2465, 13194, 6016, 2]
+// Dependencies: [32, 19, 17, 8560, 7142, 676, 1924, 21, 4478, 712, 5992, 7158, 1499, 1628, 589, 12, 4752, 7162, 13125, 10516, 8557, 13078, 709, 7143, 7164, 8563, 7762, 6242, 8217, 13212, 4474, 1236, 13213, 13219, 13221, 13224, 13226, 8482, 7766, 2465, 13227, 6048, 2]
 
-// Module 13178 (GiftingSectionTitle)
+// Module 13211 (GiftingSectionTitle)
 import ThemesDefault from "Themes" /* 712 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5960 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 5992 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "initialize" /* 8528 */;
-import closure_9 from "addEntitlement" /* 7110 */;
+import closure_8 from "initialize" /* 8560 */;
+import closure_9 from "addEntitlement" /* 7142 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function GiftingSectionTitle(title) {

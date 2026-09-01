@@ -1,14 +1,14 @@
-// Module ID: 14948
-// Function ID: 14949
+// Module ID: 14981
+// Function ID: 14982
 // Name: EmojiPartyingFaceIcon
-// Dependencies: [19, 21, 712, 4166, 14949, 2]
+// Dependencies: [19, 21, 712, 4196, 14982, 2]
 // Exports: EmojiPartyingFaceIcon
 
-// Module 14948 (EmojiPartyingFaceIcon)
+// Module 14981 (EmojiPartyingFaceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14949 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 14982 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

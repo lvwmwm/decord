@@ -1,18 +1,18 @@
-// Module ID: 7993
-// Function ID: 7994
+// Module ID: 8025
+// Function ID: 8026
 // Name: _executeMessageComponentInteraction
-// Dependencies: [5, 1218, 7818, 676, 11, 7477, 7994, 1955, 530, 7169, 7995, 709, 4711, 2, 4709]
+// Dependencies: [5, 1218, 7850, 676, 11, 7509, 8026, 1955, 530, 7201, 8027, 709, 4743, 2, 4741]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 7993 (_executeMessageComponentInteraction)
+// Module 8025 (_executeMessageComponentInteraction)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import _fetchMessageInteractionData from "_fetchMessageInteractionData" /* 7994 */;
-import getFirstSkemaFieldError from "getFirstSkemaFieldError" /* 7995 */;
+import _fetchMessageInteractionData from "_fetchMessageInteractionData" /* 8026 */;
+import getFirstSkemaFieldError from "getFirstSkemaFieldError" /* 8027 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "deleteNonce" /* 7818 */;
+import closure_5 from "deleteNonce" /* 7850 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -35,7 +35,7 @@ function _executeMessageComponentInteraction() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -66,7 +66,7 @@ function _executeMessageComponentInteraction() {
               let obj6;
               sessionId = 1;
               c5 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp7) {
@@ -83,7 +83,7 @@ function _executeMessageComponentInteraction() {
                 closure_9 = callback2(11).fromTimestamp(Date.now());
                 if (c5.canQueueInteraction(callback2, closure_9)) {
                   c3 = 1;
-                  let obj8 = callback2(7477);
+                  let obj8 = callback2(7509);
                   sessionId = 3;
                   c5 = 1;
                   const obj2 = { value: null, done: false };
@@ -95,7 +95,7 @@ function _executeMessageComponentInteraction() {
             } else if (2 === tmp7) {
               c3 = 0;
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else if (3 === tmp7) {
               if (arg0 === 1) {
                 c5 = 3;
@@ -126,9 +126,9 @@ function _executeMessageComponentInteraction() {
                     obj = _undefined(_undefined2[9]);
                   }
                 };
-                callback(7994).addQueued(closure_9, obj4);
+                callback(8026).addQueued(closure_9, obj4);
                 if (null != c8) {
-                  obj1 = callback(7994);
+                  obj1 = callback(8026);
                   const result = obj1.queueInteractionComponentState(callback2, closure_9, c8, sessionId);
                 }
                 obj6 = { type: null, nonce: null, guild_id: null, channel_id: null, message_flags: null, message_id: null, application_id: null, session_id: null, data: null };
@@ -169,7 +169,7 @@ function _executeMessageComponentInteraction() {
               return obj;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp46) {
           if (tmp4 === c3) {

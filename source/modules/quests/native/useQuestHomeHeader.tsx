@@ -1,21 +1,21 @@
-// Module ID: 14570
-// Function ID: 14571
+// Module ID: 14603
+// Function ID: 14604
 // Name: QuestHomeHeaderTitle
-// Dependencies: [19, 17, 5355, 676, 678, 21, 4448, 712, 14567, 4444, 1236, 10797, 4415, 10812, 2009, 698, 5941, 7254, 10801, 14571, 7975, 14572, 1499, 12776, 2]
+// Dependencies: [19, 17, 5387, 676, 678, 21, 4478, 712, 14600, 4474, 1236, 10835, 4445, 10850, 2009, 698, 5973, 7286, 10839, 14604, 8007, 14605, 1499, 12809, 2]
 // Exports: default
 
-// Module 14570 (QuestHomeHeaderTitle)
+// Module 14603 (QuestHomeHeaderTitle)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import QuestsIcon from "QuestsIcon" /* 14567 */;
+import Text from "Text" /* 4474 */;
+import QuestsIcon from "QuestsIcon" /* 14600 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { QuestHomeSortMethods } from "QuestsExperimentLocations" /* 5355 */;
+import { QuestHomeSortMethods } from "QuestsExperimentLocations" /* 5387 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { CollectiblesMobileShopScreen as closure_7 } from "items" /* 678 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function QuestHomeHeaderTitle() {
@@ -33,7 +33,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   isVirtualCurrencyEnabled = isVirtualCurrencyEnabled.isVirtualCurrencyEnabled;
   const merged = Object.assign(isVirtualCurrencyEnabled, Object.create(null));
   let balance;
-  let obj = balance(10797);
+  let obj = balance(10835);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   obj = { style: callback3().headerRightContainer, children: null };
@@ -41,7 +41,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
     obj = { balance: null, onPress: null };
     obj[0] = balance;
     obj[1] = tmp5;
-    isVirtualCurrencyEnabled = callback(balance(10801).BalanceWidgetPillButton, obj);
+    isVirtualCurrencyEnabled = callback(balance(10839).BalanceWidgetPillButton, obj);
   }
   let items = [isVirtualCurrencyEnabled, ];
   const merged1 = Object.assign(merged);

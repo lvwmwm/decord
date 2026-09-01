@@ -1,12 +1,12 @@
-// Module ID: 16824
-// Function ID: 16825
+// Module ID: 16860
+// Function ID: 16861
 // Name: getTimeZone
-// Dependencies: [4427, 2]
+// Dependencies: [4457, 2]
 // Exports: default
 
-// Module 16824 (getTimeZone)
+// Module 16860 (getTimeZone)
 import set from "set" /* 2 */;
-import DCDDeviceManager from "DCDDeviceManager" /* 4427 */;
+import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 
 const result = set.fileFinishedImporting("lib/getTimeZone.native.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 16921
-// Function ID: 16922
+// Module ID: 16957
+// Function ID: 16958
 // Name: handleMessageCreate
-// Dependencies: [676, 5454, 698, 2]
+// Dependencies: [676, 5486, 698, 2]
 
-// Module 16921 (handleMessageCreate)
+// Module 16957 (handleMessageCreate)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5454 */;
+import initializeDefault from "initialize" /* 5486 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 initializeDefault;

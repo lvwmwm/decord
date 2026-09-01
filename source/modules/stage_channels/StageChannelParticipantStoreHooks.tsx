@@ -1,12 +1,12 @@
-// Module ID: 5342
-// Function ID: 5343
+// Module ID: 5374
+// Function ID: 5375
 // Name: useStageParticipants
-// Dependencies: [32, 5330, 589, 5343, 5336, 2]
+// Dependencies: [32, 5362, 589, 5375, 5368, 2]
 // Exports: useActualStageSpeakerCount, useSortedRequestToSpeakParticipants, useStageParticipants, useStageParticipantsCount
 
-// Module 5342 (useStageParticipants)
+// Module 5374 (useStageParticipants)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "getActiveStageChannelIds" /* 5330 */;
+import closure_3 from "getActiveStageChannelIds" /* 5362 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/StageChannelParticipantStoreHooks.tsx");
@@ -19,7 +19,7 @@ export const useStageParticipants = function useStageParticipants(id, SPEAKER) {
   return callback(_require(589).useStateFromStores(items, () => {
     const items = [closure_1_3.getMutableParticipants(closure_0, closure_1), closure_1_3.getParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(5343).isVersionEqual), 1)[0];
+  }, items1, _require(5375).isVersionEqual), 1)[0];
 };
 export const useStageParticipantsCount = function useStageParticipantsCount(id, AUDIENCE) {
   const _require = id;
@@ -35,7 +35,7 @@ export const useSortedRequestToSpeakParticipants = function useSortedRequestToSp
   return callback(_require(589).useStateFromStores(items, () => {
     const items = [closure_1_3.getMutableRequestToSpeakParticipants(closure_0), closure_1_3.getRequestToSpeakParticipantsVersion(closure_0)];
     return items;
-  }, items1, _require(5343).isVersionEqual), 1)[0];
+  }, items1, _require(5375).isVersionEqual), 1)[0];
 };
 export const useActualStageSpeakerCount = function useActualStageSpeakerCount(id) {
   const _require = id;

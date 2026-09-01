@@ -1,15 +1,15 @@
-// Module ID: 11558
-// Function ID: 11559
+// Module ID: 11591
+// Function ID: 11592
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 4448, 712, 7596, 11518, 11559, 4187, 1297, 4444, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 7628, 11551, 11592, 4217, 1297, 4474, 2]
 // Exports: default
 
-// Module 11558 (ForumPostTypingUsers)
+// Module 11591 (ForumPostTypingUsers)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 noopAll;

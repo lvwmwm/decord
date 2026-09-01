@@ -1,12 +1,12 @@
-// Module ID: 15917
-// Function ID: 15918
+// Module ID: 15952
+// Function ID: 15953
 // Name: NonCollapsableGestureDetector
-// Dependencies: [109, 19, 17, 21, 5620, 2]
+// Dependencies: [109, 19, 17, 21, 5652, 2]
 // Exports: NonCollapsableGestureDetector
 
-// Module 15917 (NonCollapsableGestureDetector)
+// Module 15952 (NonCollapsableGestureDetector)
 import noopAll from "noop" /* 19 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5620 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5652 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

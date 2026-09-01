@@ -1,15 +1,15 @@
-// Module ID: 17369
-// Function ID: 17370
+// Module ID: 17405
+// Function ID: 17406
 // Name: updateSocialRpcNetworkConfig
-// Dependencies: [17, 1996, 1218, 698, 530, 5454, 500, 2]
+// Dependencies: [17, 1996, 1218, 698, 530, 5486, 500, 2]
 
-// Module 17369 (updateSocialRpcNetworkConfig)
+// Module 17405 (updateSocialRpcNetworkConfig)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set2 from "set" /* 500 */;
 import sendRequest from "sendRequest" /* 530 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5454 */;
+import initializeDefault from "initialize" /* 5486 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 

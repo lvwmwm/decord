@@ -1,22 +1,22 @@
-// Module ID: 11545
-// Function ID: 11546
+// Module ID: 11578
+// Function ID: 11579
 // Name: GIFIcon
-// Dependencies: [32, 19, 17, 21, 4448, 712, 1297, 11546, 11547, 10845, 4444, 1493, 1471, 11548, 6090, 7607, 11552, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 712, 1297, 11579, 11580, 10883, 4474, 1493, 1471, 11581, 6122, 7639, 11585, 2]
 // Exports: default
 
-// Module 11545 (GIFIcon)
+// Module 11578 (GIFIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import Text from "Text" /* 4444 */;
-import registerAssetDefault from "registerAsset" /* 10845 */;
-import registerAssetDefault2 from "registerAsset" /* 11546 */;
-import registerAssetDefault3 from "registerAsset" /* 11547 */;
+import Text from "Text" /* 4474 */;
+import registerAssetDefault from "registerAsset" /* 10883 */;
+import registerAssetDefault2 from "registerAsset" /* 11579 */;
+import registerAssetDefault3 from "registerAsset" /* 11580 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function GIFIcon() {

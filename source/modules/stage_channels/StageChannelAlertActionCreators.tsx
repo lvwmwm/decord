@@ -1,12 +1,12 @@
-// Module ID: 12760
-// Function ID: 12761
+// Module ID: 12793
+// Function ID: 12794
 // Name: openStageChannelAudienceNoticeModal
-// Dependencies: [8633, 2]
+// Dependencies: [8665, 2]
 // Exports: openStageChannelAudienceNoticeModal
 
-// Module 12760 (openStageChannelAudienceNoticeModal)
+// Module 12793 (openStageChannelAudienceNoticeModal)
 import set from "set" /* 2 */;
-import openStageChannelSettingsAll from "openStageChannelSettings" /* 8633 */;
+import openStageChannelSettingsAll from "openStageChannelSettings" /* 8665 */;
 
 let result = set.fileFinishedImporting("modules/stage_channels/StageChannelAlertActionCreators.tsx");
 

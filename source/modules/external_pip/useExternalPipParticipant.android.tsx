@@ -1,17 +1,17 @@
-// Module ID: 16550
-// Function ID: 16551
+// Module ID: 16586
+// Function ID: 16587
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4464, 1218, 4499, 4522, 4469, 589, 2]
+// Dependencies: [32, 19, 4494, 1218, 4529, 4554, 4499, 589, 2]
 // Exports: default
 
-// Module 16550 (useExternalPipParticipant)
+// Module 16586 (useExternalPipParticipant)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getParticipants" /* 4464 */;
+import closure_4 from "getParticipants" /* 4494 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
-import closure_6 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_7 from "createRTCConnection" /* 4522 */;
-import ParticipantTypes from "ParticipantTypes" /* 4469 */;
+import closure_6 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_7 from "createRTCConnection" /* 4554 */;
+import ParticipantTypes from "ParticipantTypes" /* 4499 */;
 
 const require = arg1;
 ({ isStreamParticipant: closure_8, ParticipantTypes: c9 } = ParticipantTypes);
@@ -64,7 +64,7 @@ export default function useExternalPipParticipant() {
       id2 = tmp6.id;
     }
     if (stateFromStores1.current !== id2) {
-      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "Object", focusedParticipantType: null };
+      let obj = { focusedParticipantStreamId: "Array", focusedParticipantUserId: "PX_16", focusedParticipantType: null };
       obj[2] = _undefined.current;
     } else {
       let type1;
@@ -265,7 +265,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "accessibilityLabel" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "accessible" };
   }, items4);
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];
   const effect = React.useEffect(() => {

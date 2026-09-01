@@ -1,23 +1,23 @@
-// Module ID: 5918
-// Function ID: 5919
+// Module ID: 5950
+// Function ID: 5951
 // Name: GuildOnboardingConnectionPrompt
-// Dependencies: [19, 17, 5458, 5443, 5193, 1909, 5435, 5436, 5432, 676, 21, 4448, 5460, 712, 1499, 1628, 589, 5442, 698, 4668, 5434, 5521, 4444, 1236, 5919, 5941, 4896, 2]
+// Dependencies: [19, 17, 5490, 5475, 5225, 1909, 5467, 5468, 5464, 676, 21, 4478, 5492, 712, 1499, 1628, 589, 5474, 698, 4700, 5466, 5553, 4474, 1236, 5951, 5973, 4928, 2]
 // Exports: default
 
-// Module 5918 (GuildOnboardingConnectionPrompt)
+// Module 5950 (GuildOnboardingConnectionPrompt)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "get" /* 5458 */;
-import closure_7 from "recomputeFromAppTokens" /* 5443 */;
-import closure_8 from "set" /* 5193 */;
+import closure_6 from "get" /* 5490 */;
+import closure_7 from "recomputeFromAppTokens" /* 5475 */;
+import closure_8 from "set" /* 5225 */;
 import closure_9 from "createGuildRecordFromRust" /* 1909 */;
-import closure_10 from "handleUpdate" /* 5435 */;
-import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5436 */;
-import { GuildOnboardingModalStates as closure_12 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5432 */;
+import closure_10 from "handleUpdate" /* 5467 */;
+import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5468 */;
+import { GuildOnboardingModalStates as closure_12 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5464 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);

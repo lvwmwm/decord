@@ -1,15 +1,15 @@
-// Module ID: 10342
-// Function ID: 10343
+// Module ID: 10381
+// Function ID: 10382
 // Name: useStickerCategories
-// Dependencies: [19, 17, 1909, 1922, 10343, 676, 1338, 10340, 5180, 10344, 10345, 1626, 2]
+// Dependencies: [19, 17, 1909, 1922, 10382, 676, 1338, 10379, 5212, 10383, 10384, 1626, 2]
 // Exports: dropPreloadedSticker, openStickerPickerToPackId, preloadSticker, useStickerCategories
 
-// Module 10342 (useStickerCategories)
+// Module 10381 (useStickerCategories)
 import closure_3 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRecordFromRust" /* 1909 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { useStickerPickerStore } from "useStickerPickerStore" /* 10343 */;
+import { useStickerPickerStore } from "useStickerPickerStore" /* 10382 */;
 import { GuildNSFWContentLevel } from "ME" /* 676 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1338 */;
 
@@ -42,15 +42,15 @@ export const useStickerCategories = function useStickerCategories(channel) {
       return tmp2;
     });
     return found1.map((type) => {
-      if (type.type !== callback(5180).StickerCategoryTypes.FAVORITE) {
-        if (type.type !== tmp(5180).StickerCategoryTypes.RECENT) {
+      if (type.type !== callback(5212).StickerCategoryTypes.FAVORITE) {
+        if (type.type !== tmp(5212).StickerCategoryTypes.RECENT) {
           return type;
         }
       }
-      if (type.type === callback(5180).StickerCategoryTypes.FAVORITE) {
-        let tmp4 = lib(10344);
+      if (type.type === callback(5212).StickerCategoryTypes.FAVORITE) {
+        let tmp4 = lib(10383);
       } else {
-        tmp4 = lib(10345);
+        tmp4 = lib(10384);
       }
       const obj = {};
       const merged = Object.assign(type);

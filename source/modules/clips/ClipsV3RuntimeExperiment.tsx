@@ -1,10 +1,10 @@
-// Module ID: 5045
-// Function ID: 5046
+// Module ID: 5077
+// Function ID: 5078
 // Name: apexExperiment
 // Dependencies: [1468, 2]
 // Exports: getClipsRuntime, isClipsV3Enabled, isClipsV3MLEnabled, setActiveClipsRuntime, useIsClipsV3Enabled, useIsClipsV3MLEnabled
 
-// Module 5045 (apexExperiment)
+// Module 5077 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

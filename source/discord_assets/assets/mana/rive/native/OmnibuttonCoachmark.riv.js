@@ -1,9 +1,9 @@
-// Module ID: 4260
-// Function ID: 4261
+// Module ID: 4290
+// Function ID: 4291
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4260 (metadata)
+// Module 4290 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/OmnibuttonCoachmark.riv.js");

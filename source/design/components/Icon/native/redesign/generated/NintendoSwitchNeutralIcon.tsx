@@ -1,14 +1,14 @@
-// Module ID: 12607
-// Function ID: 12608
+// Module ID: 12640
+// Function ID: 12641
 // Name: NintendoSwitchNeutralIcon
-// Dependencies: [19, 21, 712, 4166, 12608, 2]
+// Dependencies: [19, 21, 712, 4196, 12641, 2]
 // Exports: NintendoSwitchNeutralIcon
 
-// Module 12607 (NintendoSwitchNeutralIcon)
+// Module 12640 (NintendoSwitchNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 12608 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 12641 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

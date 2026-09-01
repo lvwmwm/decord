@@ -1,12 +1,12 @@
-// Module ID: 5580
-// Function ID: 5581
+// Module ID: 5612
+// Function ID: 5613
 // Name: FormSubLabel
-// Dependencies: [19, 21, 4444, 2]
+// Dependencies: [19, 21, 4474, 2]
 // Exports: default
 
-// Module 5580 (FormSubLabel)
+// Module 5612 (FormSubLabel)
 import noopAll from "noop" /* 19 */;
-import Text from "Text" /* 4444 */;
+import Text from "Text" /* 4474 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 7454
-// Function ID: 7455
+// Module ID: 7486
+// Function ID: 7487
 // Name: parseEncoder
-// Dependencies: [32, 7455, 7461, 4526, 2]
+// Dependencies: [32, 7487, 7493, 4558, 2]
 // Exports: parseCodecType
 
-// Module 7454 (parseEncoder)
-import getSamples from "getSamples" /* 7455 */;
-import getStatsDefault from "getStats" /* 7461 */;
+// Module 7486 (parseEncoder)
+import getSamples from "getSamples" /* 7487 */;
+import getStatsDefault from "getStats" /* 7493 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import set from "set" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 6119
-// Function ID: 6120
+// Module ID: 6151
+// Function ID: 6152
 // Name: updateState
-// Dependencies: [1391, 4101, 1930, 1387, 4703, 1235, 676, 12, 11, 4705, 589, 709, 2]
+// Dependencies: [1391, 4131, 1935, 1387, 4735, 1235, 676, 12, 11, 4737, 589, 709, 2]
 
-// Module 6119 (updateState)
+// Module 6151 (updateState)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import AbortCodes from "AbortCodes" /* 1235 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4705 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
 import createChannelRecord from "createChannelRecord" /* 1391 */;
-import closure_5 from "hasFlag" /* 4101 */;
-import closure_6 from "createdAt" /* 1930 */;
+import closure_5 from "hasFlag" /* 4131 */;
+import closure_6 from "createdAt" /* 1935 */;
 import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "reinjectEphemerals" /* 4703 */;
+import closure_8 from "reinjectEphemerals" /* 4735 */;
 import set from "set" /* 2 */;
 
 function updateState(type) {

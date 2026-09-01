@@ -1,18 +1,18 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14886
+// Function ID: 14887
 // Name: ChannelRowItem
-// Dependencies: [19, 17, 676, 21, 4448, 712, 1297, 10610, 4444, 2]
+// Dependencies: [19, 17, 676, 21, 4478, 712, 1297, 10648, 4474, 2]
 // Exports: default
 
-// Module 14853 (ChannelRowItem)
+// Module 14886 (ChannelRowItem)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button2 from "Button" /* 1297 */;
-import FacepileGroupDMAvatar from "FacepileGroupDMAvatar" /* 10610 */;
+import FacepileGroupDMAvatar from "FacepileGroupDMAvatar" /* 10648 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { StatusTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 import Button from "Button" /* 1297 */;
 
 require = arg1;
@@ -81,7 +81,7 @@ export default function ChannelRowItem(isUnread) {
   items1[1] = closure_4(View, obj);
   const obj3 = { style: tmp2.channelItemContent, children: null };
   obj4 = { style: tmp2.channelItemTop, children: null };
-  const items3 = [closure_4(tmp6(4444).Text, { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title }), closure_4(tmp6(4444).Text, { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp })];
+  const items3 = [closure_4(tmp6(4474).Text, { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title }), closure_4(tmp6(4474).Text, { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp })];
   obj4[1] = items3;
   const items4 = [closure_5(View, obj4), ];
   if (null == preview) {
@@ -94,7 +94,7 @@ export default function ChannelRowItem(isUnread) {
     animatedStyles = { animated: true, style: null, variant: "redesign/message-preview/medium", lineClamp: 1, children: null };
     animatedStyles[1] = flag ? animatedStyles.textNormal : animatedStyles.textMuted;
     animatedStyles[4] = preview;
-    tmp5Result = tmp5(tmp6(4444).Text, animatedStyles);
+    tmp5Result = tmp5(tmp6(4474).Text, animatedStyles);
     const tmp12 = flag ? animatedStyles.textNormal : animatedStyles.textMuted;
   }
 };

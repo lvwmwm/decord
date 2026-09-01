@@ -1,10 +1,10 @@
-// Module ID: 7319
-// Function ID: 7320
+// Module ID: 7351
+// Function ID: 7352
 // Name: addGlobalTag
 // Dependencies: [673, 2]
 // Exports: addGlobalTag, getGlobalTagsArray
 
-// Module 7319 (addGlobalTag)
+// Module 7351 (addGlobalTag)
 import set from "set" /* 2 */;
 import DesignIds from "DesignIds" /* 673 */;
 

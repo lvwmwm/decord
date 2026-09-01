@@ -1,16 +1,16 @@
-// Module ID: 11857
-// Function ID: 11858
+// Module ID: 11890
+// Function ID: 11891
 // Name: GuildTemplatesItem
-// Dependencies: [19, 17, 11839, 11844, 21, 4448, 11858, 1297, 11859, 1499, 1628, 11843, 4444, 1236, 5960, 7679, 2]
+// Dependencies: [19, 17, 11872, 11877, 21, 4478, 11891, 1297, 11892, 1499, 1628, 11876, 4474, 1236, 5992, 7711, 2]
 // Exports: default
 
-// Module 11857 (GuildTemplatesItem)
+// Module 11890 (GuildTemplatesItem)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import DirectoryEntryTypes from "DirectoryEntryTypes" /* 11839 */;
-import { GuildDirectoryCreate } from "GuildDirectoryCreate" /* 11844 */;
+import DirectoryEntryTypes from "DirectoryEntryTypes" /* 11872 */;
+import { GuildDirectoryCreate } from "GuildDirectoryCreate" /* 11877 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 class GuildTemplatesItem {

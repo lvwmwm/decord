@@ -1,9 +1,9 @@
-// Module ID: 6139
-// Function ID: 6140
+// Module ID: 6171
+// Function ID: 6172
 // Name: GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD
 // Dependencies: [2]
 
-// Module 6139 (GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD)
+// Module 6171 (GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_templates/GuildTemplatesConstants.tsx");

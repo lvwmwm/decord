@@ -1,11 +1,11 @@
-// Module ID: 8053
-// Function ID: 8054
+// Module ID: 8085
+// Function ID: 8086
 // Name: set
-// Dependencies: [2, 8054]
+// Dependencies: [2, 8086]
 
-// Module 8053 (set)
+// Module 8085 (set)
 import set from "set" /* 2 */;
-import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 8054 */;
+import useMaybeFetchCollectiblesCategoriesDefault from "useMaybeFetchCollectiblesCategories" /* 8086 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.tsx");
 

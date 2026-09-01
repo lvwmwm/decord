@@ -1,9 +1,9 @@
-// Module ID: 5417
-// Function ID: 5418
+// Module ID: 5449
+// Function ID: 5450
 // Name: handleThreadCreateOrUpdate
 // Dependencies: [1391, 1387, 12, 589, 11, 709, 2]
 
-// Module 5417 (handleThreadCreateOrUpdate)
+// Module 5449 (handleThreadCreateOrUpdate)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;

@@ -1,15 +1,15 @@
-// Module ID: 14395
-// Function ID: 14396
+// Module ID: 14428
+// Function ID: 14429
 // Name: ExplicitMediaSettingsActionSheet
-// Dependencies: [19, 17, 21, 4448, 712, 4415, 5590, 5589, 7660, 1306, 7661, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 4445, 5622, 5621, 7692, 1306, 7693, 2]
 // Exports: default
 
-// Module 14395 (ExplicitMediaSettingsActionSheet)
+// Module 14428 (ExplicitMediaSettingsActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -33,15 +33,15 @@ export default function ExplicitMediaSettingsActionSheet(options) {
       const obj2 = closure_1_1(closure_1_2[5]);
     }
   }, items);
-  const items1 = [callback(options(5589).BottomSheetTitleHeader, { title, subtitle }), ];
+  const items1 = [callback(options(5621).BottomSheetTitleHeader, { title, subtitle }), ];
   let obj = { style: callback2().content, children: null };
   if (SHOW == null) {
     SHOW = options(1306).ExplicitContentRedaction.SHOW;
   }
   obj = { startExpanded: true, children: null };
   obj = { defaultValue: SHOW, onChange: callback, hasIcons: false, children: options.map((label) => callback(options(table[10]).TableRadioRow, { label: label.label, value: label.value }, label.value)) };
-  obj[1] = callback(options(7660).TableRadioGroup, obj);
+  obj[1] = callback(options(7692).TableRadioGroup, obj);
   items1[1] = callback(View, obj);
   obj[1] = items1;
-  return closure_6(options(5590).BottomSheet, obj);
+  return closure_6(options(5622).BottomSheet, obj);
 };

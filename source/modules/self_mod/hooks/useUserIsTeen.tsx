@@ -1,10 +1,10 @@
-// Module ID: 8734
-// Function ID: 8735
+// Module ID: 8771
+// Function ID: 8772
 // Name: useUserIsTeen
 // Dependencies: [1922, 589, 2]
 // Exports: useUserIsTeen
 
-// Module 8734 (useUserIsTeen)
+// Module 8771 (useUserIsTeen)
 import initialize from "initialize" /* 589 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 9165
-// Function ID: 9166
+// Module ID: 9204
+// Function ID: 9205
 // Name: HeartIcon
-// Dependencies: [19, 21, 712, 4166, 9166, 2]
+// Dependencies: [19, 21, 712, 4196, 9205, 2]
 // Exports: HeartIcon
 
-// Module 9165 (HeartIcon)
+// Module 9204 (HeartIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 9166 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 9205 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

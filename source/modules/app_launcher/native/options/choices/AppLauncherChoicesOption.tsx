@@ -1,15 +1,15 @@
-// Module ID: 11701
-// Function ID: 11702
+// Module ID: 11734
+// Function ID: 11735
 // Name: AppLauncherChoicesOption
-// Dependencies: [32, 19, 21, 4448, 712, 1891, 4415, 11702, 2009, 11706, 8331, 4444, 2]
+// Dependencies: [32, 19, 21, 4478, 712, 1891, 4445, 11735, 2009, 11739, 8363, 4474, 2]
 // Exports: default
 
-// Module 11701 (AppLauncherChoicesOption)
+// Module 11734 (AppLauncherChoicesOption)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 createCacheKey = { container: null };

@@ -1,0 +1,31 @@
+// Module ID: 4774
+// Function ID: 4775
+// Name: ToNumber
+// Dependencies: [540, 4775, 4776, 541, 4781]
+
+// Module 4774 (ToNumber)
+import getEvalledConstructor from "getEvalledConstructor" /* 540 */;
+import isPrimitive from "isPrimitive" /* 4775 */;
+
+let closure_2 = getEvalledConstructor("%Number%");
+
+export default function ToNumber(arg0) {
+  let tmp3 = arg0;
+  if (!isPrimitive(arg0)) {
+    tmp3 = tmp(4776)(arg0, closure_2);
+  }
+  if (typeof tmp3 === "symbol") {
+    const tmp12 = new tmp(541)("Cannot convert a Symbol value to a number");
+    throw tmp12;
+  } else if (typeof tmp3 === "bigint") {
+    const tmp8 = new tmp(541)("Conversion from 'BigInt' to 'number' is not allowed.");
+    throw tmp8;
+  } else {
+    if (typeof tmp3 === "string") {
+      let tmp5 = tmp(4781)(tmp3);
+    } else {
+      tmp5 = +tmp3;
+    }
+    return tmp5;
+  }
+};

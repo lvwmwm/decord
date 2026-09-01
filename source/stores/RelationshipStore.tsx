@@ -1,13 +1,13 @@
-// Module ID: 4100
-// Function ID: 4101
+// Module ID: 4130
+// Function ID: 4131
 // Name: markAllUserIdListsStale
-// Dependencies: [32, 4101, 1922, 676, 709, 589, 2]
+// Dependencies: [32, 4131, 1922, 676, 709, 589, 2]
 
-// Module 4100 (markAllUserIdListsStale)
+// Module 4130 (markAllUserIdListsStale)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "hasFlag" /* 4101 */;
+import closure_3 from "hasFlag" /* 4131 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import set from "set" /* 2 */;
@@ -106,7 +106,7 @@ let closure_15 = {};
 let c16 = 0;
 let c17 = 0;
 let c18 = 0;
-let closure_19 = { friends: "Array", blocked: "HermesInternal", ignored: "r", blockedOrIgnored: "bottom" };
+let closure_19 = { friends: "spriteIndex", blocked: "category", ignored: "paths", blockedOrIgnored: "replace" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = initializeDefault.Store;

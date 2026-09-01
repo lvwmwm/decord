@@ -1,21 +1,21 @@
-// Module ID: 6033
-// Function ID: 6034
+// Module ID: 6065
+// Function ID: 6066
 // Name: makeSortedChannel
-// Dependencies: [6034, 6035, 1391, 1387, 1909, 4463, 4669, 1922, 11, 4087, 4045, 6036, 589, 709, 2]
+// Dependencies: [6066, 6067, 1391, 1387, 1909, 4493, 4701, 1922, 11, 4117, 4075, 6068, 589, 709, 2]
 
-// Module 6033 (makeSortedChannel)
+// Module 6065 (makeSortedChannel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import hooksDefault from "hooks" /* 4045 */;
-import FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID" /* 6036 */;
-import closure_3 from "processChannel" /* 6034 */;
-import closure_4 from "processChannel" /* 6035 */;
+import hooksDefault from "hooks" /* 4075 */;
+import FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID from "FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID" /* 6068 */;
+import closure_3 from "processChannel" /* 6066 */;
+import closure_4 from "processChannel" /* 6067 */;
 import { isPrivate } from "createChannelRecord" /* 1391 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "generateOldThreadCutoff" /* 4463 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_8 from "generateOldThreadCutoff" /* 4493 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4701 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;
@@ -83,7 +83,7 @@ const secondaryIndexMap = new require("version").SecondaryIndexMap(function inde
 let closure_15 = [];
 let closure_16 = [];
 let closure_17 = [];
-const f37149 = () => {
+const f37224 = () => {
 
 };
 const Store = initializeDefault.Store;
@@ -96,7 +96,7 @@ prototype["initialize"] = function initialize() {
   this.syncWith(items, handleConnectionOpen);
 };
 prototype["getPrivateChannelIds"] = function getPrivateChannelIds() {
-  if (typeof f37149 !== "function") {
+  if (typeof f37224 !== "function") {
     HermesBuiltin.throwTypeError();
   }
   let values = secondaryIndexMap.values(constants.FAVORITE);

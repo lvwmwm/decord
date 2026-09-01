@@ -1,21 +1,21 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 15633
+// Function ID: 15634
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [32, 19, 17, 4100, 676, 21, 4448, 712, 9050, 8859, 2009, 647, 1236, 4292, 15598, 15599, 698, 5036, 1297, 4444, 4896, 4393, 8073, 15596, 2]
+// Dependencies: [32, 19, 17, 4130, 676, 21, 4478, 712, 9088, 8896, 2009, 647, 1236, 4322, 15634, 15635, 698, 5068, 1297, 4474, 4928, 4423, 8105, 15632, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 15597 (getMessagesItemSuggestedFriendHeight)
+// Module 15633 (getMessagesItemSuggestedFriendHeight)
 import ThemesDefault from "Themes" /* 712 */;
-import noop from "noop" /* 8073 */;
-import map from "map" /* 9050 */;
-import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15596 */;
+import noop from "noop" /* 8105 */;
+import map from "map" /* 9088 */;
+import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15632 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "markAllUserIdListsStale" /* 4100 */;
+import closure_6 from "markAllUserIdListsStale" /* 4130 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 let c4 = importAllResult;
@@ -103,7 +103,7 @@ let closure_12 = importAllResult.memo(function MessagesItemSuggestedFriendView(h
     setAddedPressed(true);
   }, items4);
   obj = { accessibilityRole: "button", style: memo, onPress: callback, collapsable: false, children: null };
-  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: "Array", size: "<string:285213222>" };
+  obj = { style: tmp.avatar, user: suggestedFriend.user, guildId: "Array", size: true };
   obj[3] = height(suggestedFriend[18]).AvatarSizes.REFRESH_MEDIUM_32;
   const items5 = [callback2(height(suggestedFriend[18]).Avatar, obj), , ];
   obj1 = { style: tmp.textContainer, children: null };

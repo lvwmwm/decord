@@ -1,15 +1,15 @@
-// Module ID: 9612
-// Function ID: 9613
+// Module ID: 9651
+// Function ID: 9652
 // Name: isVoicePanelEnabled
-// Dependencies: [1387, 4522, 4696, 4697, 647, 2]
+// Dependencies: [1387, 4554, 4728, 4729, 647, 2]
 // Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 9612 (isVoicePanelEnabled)
+// Module 9651 (isVoicePanelEnabled)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
-import useIsStageVoicePanelEnabled from "useIsStageVoicePanelEnabled" /* 4697 */;
+import useIsStageVoicePanelEnabled from "useIsStageVoicePanelEnabled" /* 4729 */;
 import closure_2 from "ensureGuildLoaded" /* 1387 */;
-import closure_3 from "createRTCConnection" /* 4522 */;
-import closure_4 from "withEqualityFn" /* 4696 */;
+import closure_3 from "createRTCConnection" /* 4554 */;
+import closure_4 from "withEqualityFn" /* 4728 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/voice_panel/VoicePanelUtils.native.tsx");

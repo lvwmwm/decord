@@ -1,9 +1,9 @@
-// Module ID: 7611
-// Function ID: 7612
+// Module ID: 7643
+// Function ID: 7644
 // Name: maybeMarkSeen
 // Dependencies: [5, 38, 709, 2]
 
-// Module 7611 (maybeMarkSeen)
+// Module 7643 (maybeMarkSeen)
 import _modDef38 from "module_38" /* 38 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
@@ -289,7 +289,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -322,7 +322,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
                 } else {
                   callback();
                   c2 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp9) {
                 c2 = tmp;
@@ -350,7 +350,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -383,7 +383,7 @@ AnalyticsFeedItemSeenManager.prototype["maybeFlushSeenItems"] = function maybeFl
             } else {
               callback();
               c3 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             c3 = tmp;

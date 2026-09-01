@@ -1,14 +1,14 @@
-// Module ID: 14962
-// Function ID: 14963
+// Module ID: 14995
+// Function ID: 14996
 // Name: EmojiWoozyFaceIcon
-// Dependencies: [19, 21, 712, 4166, 14963, 2]
+// Dependencies: [19, 21, 712, 4196, 14996, 2]
 // Exports: EmojiWoozyFaceIcon
 
-// Module 14962 (EmojiWoozyFaceIcon)
+// Module 14995 (EmojiWoozyFaceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14963 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 14996 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,13 +1,13 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17140
+// Function ID: 17141
 // Name: getEmptyServerSettingsAuditLogSource
-// Dependencies: [19, 17, 21, 8874, 17105, 17106, 17107, 1363, 2]
+// Dependencies: [19, 17, 21, 8911, 17141, 17142, 17143, 1363, 2]
 // Exports: EmptyServerSettingsAuditLog, getEmptyServerSettingsAuditLogSource, useEmptyServerSettingsAuditLogSource
 
-// Module 17104 (getEmptyServerSettingsAuditLogSource)
+// Module 17140 (getEmptyServerSettingsAuditLogSource)
 import noopAll from "noop" /* 19 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getIllustrationSource from "getIllustrationSource" /* 8874 */;
+import getIllustrationSource from "getIllustrationSource" /* 8911 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -19,13 +19,13 @@ export const getEmptyServerSettingsAuditLogSource = function getEmptyServerSetti
   let obj = getIllustrationSource;
   obj = {
     dark() {
-      return callback(17105);
+      return callback(17141);
     },
     darker() {
-      return callback(17106);
+      return callback(17142);
     },
     light() {
-      return callback(17107);
+      return callback(17143);
     }
   };
   return obj.getIllustrationSource(theme, obj);
@@ -34,13 +34,13 @@ export const useEmptyServerSettingsAuditLogSource = function useEmptyServerSetti
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(17105);
+      return callback(17141);
     },
     darker() {
-      return callback(17106);
+      return callback(17142);
     },
     light() {
-      return callback(17107);
+      return callback(17143);
     }
   };
   return getIllustrationSource.getIllustrationSource(obj.useThemeContext().theme, obj);
@@ -49,13 +49,13 @@ export const EmptyServerSettingsAuditLog = function EmptyServerSettingsAuditLog(
   let obj = AccessibilityAnnouncer;
   obj = {
     dark() {
-      return callback(17105);
+      return callback(17141);
     },
     darker() {
-      return callback(17106);
+      return callback(17142);
     },
     light() {
-      return callback(17107);
+      return callback(17143);
     }
   };
   obj = {};

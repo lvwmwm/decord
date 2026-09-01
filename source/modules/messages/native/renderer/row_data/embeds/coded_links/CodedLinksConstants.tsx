@@ -1,9 +1,9 @@
-// Module ID: 10908
-// Function ID: 10909
+// Module ID: 10946
+// Function ID: 10947
 // Name: CodedLinkExtendedType
 // Dependencies: [2]
 
-// Module 10908 (CodedLinkExtendedType)
+// Module 10946 (CodedLinkExtendedType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksConstants.tsx");

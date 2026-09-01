@@ -1,10 +1,10 @@
-// Module ID: 7178
-// Function ID: 7179
+// Module ID: 7210
+// Function ID: 7211
 // Name: monotonicNowMs
 // Dependencies: [1919, 2]
 // Exports: monotonicNowMs
 
-// Module 7178 (monotonicNowMs)
+// Module 7210 (monotonicNowMs)
 import set from "set" /* 2 */;
 import monotonicNowMs from "monotonicNowMs" /* 1919 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10528
+// Function ID: 10529
 // Name: PremiumFeaturesPromotionalLogo
-// Dependencies: [32, 19, 4440, 21, 589, 8485, 500, 10491, 5461, 2]
+// Dependencies: [32, 19, 4470, 21, 589, 8517, 500, 10529, 5493, 2]
 // Exports: default
 
-// Module 10490 (PremiumFeaturesPromotionalLogo)
+// Module 10528 (PremiumFeaturesPromotionalLogo)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 9174
-// Function ID: 9175
+// Module ID: 9213
+// Function ID: 9214
 // Name: _calculateScrollOffset
-// Dependencies: [5, 19, 1493, 712, 9175, 5563, 2]
+// Dependencies: [5, 19, 1493, 712, 9214, 5595, 2]
 // Exports: default
 
-// Module 9174 (_calculateScrollOffset)
+// Module 9213 (_calculateScrollOffset)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -28,7 +28,7 @@ function _calculateScrollOffset() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ function _calculateScrollOffset() {
                   return obj4;
                 } else {
                   c6 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             }
@@ -143,7 +143,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

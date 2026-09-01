@@ -1,26 +1,26 @@
-// Module ID: 10754
-// Function ID: 10755
+// Module ID: 10792
+// Function ID: 10793
 // Name: RewardPreview
-// Dependencies: [19, 17, 8528, 7260, 1948, 1922, 10436, 676, 21, 4448, 712, 5562, 8490, 1947, 1297, 4444, 1236, 4908, 10755, 1499, 10438, 589, 10756, 10477, 8433, 10488, 10475, 10473, 10478, 8525, 10417, 10416, 8460, 10486, 10492, 2433, 5461, 7974, 10288, 10493, 5941, 1995, 4896, 4310, 2]
+// Dependencies: [19, 17, 8560, 7292, 1948, 1922, 10475, 676, 21, 4478, 712, 5594, 8522, 1947, 1297, 4474, 1236, 4940, 10793, 1499, 10477, 589, 10794, 10515, 8465, 10526, 10513, 10511, 10516, 8557, 10456, 10455, 8492, 10524, 10530, 2433, 5493, 8006, 10327, 10531, 5973, 1995, 4928, 4340, 2]
 // Exports: default
 
-// Module 10754 (RewardPreview)
+// Module 10792 (RewardPreview)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import getNameplateData from "getNameplateData" /* 1947 */;
-import Text from "Text" /* 4444 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5562 */;
-import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10488 */;
+import Text from "Text" /* 4474 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
+import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10526 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "initialize" /* 8528 */;
-import { isAvatarDecorationRecord, isNameplateRecord } from "fromServer" /* 7260 */;
+import closure_6 from "initialize" /* 8560 */;
+import { isAvatarDecorationRecord, isNameplateRecord } from "fromServer" /* 7292 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import closure_10 from "createEmptyPromotionsByType" /* 10436 */;
+import closure_10 from "createEmptyPromotionsByType" /* 10475 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function RewardPreview(arg0) {
@@ -32,7 +32,7 @@ function RewardPreview(arg0) {
     obj = { style: null, children: null };
     obj[0] = tmp3.nameplateWrapper;
     obj1 = { nameplate: null, fullOpacity: true, animate: true };
-    let tmpResult = tmp(8490);
+    let tmpResult = tmp(8522);
     let obj8 = getNameplateData;
     obj1[0] = obj8.getNameplateData(collectiblesItem);
     obj[1] = callback(tmpResult, obj1);
@@ -56,7 +56,7 @@ function RewardPreview(arg0) {
     if (isAvatarDecorationRecord(collectiblesItem)) {
       obj = { style: null, useAngle: true, angle: null, angleCenter: null, colors: null };
       obj[0] = tmp3.selectedRewardBannerGradient;
-      tmpResult = tmp(4908);
+      tmpResult = tmp(4940);
       if (gradientAngle == null) {
         gradientAngle = 90;
       }
@@ -70,7 +70,7 @@ function RewardPreview(arg0) {
       const obj7 = { size: null, asset: null };
       obj7[0] = Button.AvatarSizes.NORMAL;
       obj7[1] = collectiblesItem.asset;
-      obj6[1] = callback(tmp(10755), obj7);
+      obj6[1] = callback(tmp(10793), obj7);
       items1[1] = callback(closure_5, obj6);
       obj8 = { style: null, variant: "text-xs/medium", color: "text-overlay-light", children: null };
       obj8[0] = tmp3.selectedRewardText;
@@ -81,7 +81,7 @@ function RewardPreview(arg0) {
       tmp7Result = callback2(closure_13, obj5);
       const tmp7 = callback2;
       const tmp8 = closure_13;
-      const tmpResult1 = tmp(10755);
+      const tmpResult1 = tmp(10793);
     }
   }
   return tmp7Result;
@@ -142,7 +142,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
   let tmp3 = callback3(useSafeAreaInsetsKeyboardAwareDefault().insets.bottom);
   let obj = defaultSelection(1499);
   importDefault = obj.useNavigation();
-  obj1 = defaultSelection(10438);
+  obj1 = defaultSelection(10477);
   const nativeGiftContext = obj1.useNativeGiftContext();
   ({ onPurchase: c2, isPurchasing, allRewards: c3, claimableRewards } = nativeGiftContext);
   selectedGiftingPromotionReward = nativeGiftContext.selectedGiftingPromotionReward;
@@ -151,7 +151,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
   let obj2 = defaultSelection(589);
   let items = [closure_9];
   const stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj3 = defaultSelection(10756);
+  let obj3 = defaultSelection(10794);
   const canPurchaseIAP = obj3.useCanPurchaseIAP(productId);
   let obj4 = defaultSelection(589);
   let items1 = [closure_10];
@@ -185,9 +185,9 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
     tmp12 = null == selectedGiftingPromotionReward;
   }
   closure_10 = tmp12;
-  let tmpResult = tmp(10475);
+  let tmpResult = tmp(10513);
   const config = tmpResult.useConfig({ location: "PremiumGiftPurchaseButton" });
-  const GiftingBadgeExperiment = tmp4(10478).GiftingBadgeExperiment;
+  const GiftingBadgeExperiment = tmp4(10516).GiftingBadgeExperiment;
   let tmp4Result = tmp4(589);
   const items2 = [setSelectedGiftingPromotionReward];
   const stateFromStoresObject = tmp4Result.useStateFromStoresObject(items2, () => {
@@ -219,7 +219,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
     items4[1] = String(tmp(712).colors.BACKGROUND_BRAND);
     tmp16 = items4;
   }
-  tmp4Result = tmp4(8460);
+  tmp4Result = tmp4(8492);
   const product = tmp4Result.useFetchCollectiblesProduct(selectedGiftingPromotionReward).product;
   const intl = tmp4(1236).intl;
   const string = intl.string;
@@ -237,13 +237,13 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
   if (stateFromStores1 != null) {
     prop = stateFromStores1.mobileBackgroundAsset;
   }
-  const themeAndReducedMotionAwareAssetUrl = defaultSelection(10486).useThemeAndReducedMotionAwareAssetUrl(prop);
-  const tmp4Result1 = defaultSelection(10486);
+  const themeAndReducedMotionAwareAssetUrl = defaultSelection(10524).useThemeAndReducedMotionAwareAssetUrl(prop);
+  const tmp4Result1 = defaultSelection(10524);
   let asset;
   if (stateFromStores1 != null) {
     asset = stateFromStores1.asset;
   }
-  const themeAndReducedMotionAwareAssetUrl1 = defaultSelection(10486).useThemeAndReducedMotionAwareAssetUrl(asset);
+  const themeAndReducedMotionAwareAssetUrl1 = defaultSelection(10524).useThemeAndReducedMotionAwareAssetUrl(asset);
   let first;
   if (product != null) {
     first = product.items[0];
@@ -251,11 +251,11 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
   obj = { style: tmp3.container, children: null };
   if (tmp11) {
     if (config.enabled) {
-      if (selectedGiftingPromotionReward === tmp4(10473).GiftingPromotionRewardSKUIds.SUMMER_2026_GOGO_FAKE_SKU_ID) {
+      if (selectedGiftingPromotionReward === tmp4(10511).GiftingPromotionRewardSKUIds.SUMMER_2026_GOGO_FAKE_SKU_ID) {
         obj = { style: null, imageUrl: null, title: null, subtitle: null };
         obj[0] = tmp3.promoDetails;
         obj[1] = themeAndReducedMotionAwareAssetUrl1;
-        tmpResult = tmp(10492);
+        tmpResult = tmp(10530);
         const intl4 = tmp4(1236).intl;
         obj[2] = intl4.string(tmp(2433)["P+DDLh"]);
         const intl5 = tmp4(1236).intl;
@@ -270,7 +270,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         obj2 = { paidURL: null };
         obj2[0] = tmp(1995).getArticleURL(HelpdeskArticles.PAID_TERMS);
         obj1[1] = intl6.format(tmp4(1236).t.hYoGUM, obj2);
-        tmp41 = callback(tmp4(4444).Text, obj1);
+        tmp41 = callback(tmp4(4474).Text, obj1);
         const tmpResult1 = tmp(1995);
       }
       items5[1] = tmp41;
@@ -318,7 +318,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         };
       }
       obj3[4] = fn;
-      items5[2] = callback(tmp4(4896).Button, obj3);
+      items5[2] = callback(tmp4(4928).Button, obj3);
       obj[1] = items5;
       return tmp24(tmp25, obj);
     }
@@ -344,7 +344,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
       obj6[2] = num3;
       obj6[3] = { x: 0.5, y: 0.5 };
       obj6[4] = colors;
-      const items6 = [callback(tmp(4908), obj6), ];
+      const items6 = [callback(tmp(4940), obj6), ];
       let tmp33Result = null != themeAndReducedMotionAwareAssetUrl;
       if (tmp33Result) {
         const obj7 = { style: null, resizeMode: "cover", source: null };
@@ -352,14 +352,14 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         const obj8 = { uri: null };
         obj8[0] = themeAndReducedMotionAwareAssetUrl;
         obj7[2] = obj8;
-        tmp33Result = tmp33(tmp(5461), obj7);
+        tmp33Result = tmp33(tmp(5493), obj7);
       }
       items6[1] = tmp33Result;
       obj5[2] = items6;
       const items7 = [tmp24(tmp25, obj5), , ];
       tmp33Result = null != themeAndReducedMotionAwareAssetUrl1;
       if (tmp33Result) {
-        let inAppFlowImageLargeTilted = assetVariant === tmp4(8433).GiftCustomizationBanner_AssetVariant.LARGE_TILTED;
+        let inAppFlowImageLargeTilted = assetVariant === tmp4(8465).GiftCustomizationBanner_AssetVariant.LARGE_TILTED;
         const items8 = [tmp3.inAppFlowImage, ];
         if (inAppFlowImageLargeTilted) {
           inAppFlowImageLargeTilted = tmp3.inAppFlowImageLargeTilted;
@@ -370,18 +370,18 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         const obj10 = { uri: null };
         obj10[0] = themeAndReducedMotionAwareAssetUrl1;
         obj9[2] = obj10;
-        tmp33Result = tmp33(tmp(5461), obj9);
-        const tmpResult3 = tmp(5461);
+        tmp33Result = tmp33(tmp(5493), obj9);
+        const tmpResult3 = tmp(5493);
       }
       items7[1] = tmp33Result;
       const obj11 = { style: null, variant: "text-xs/semibold", color: "text-overlay-light", children: null };
       obj11[0] = tmp3.chooseRewardText;
       const intl3 = tmp4(1236).intl;
       obj11[3] = intl3.string(tmp4(1236).t.cMiNit);
-      items7[2] = callback(tmp4(4444).Text, obj11);
+      items7[2] = callback(tmp4(4474).Text, obj11);
       obj4[1] = items7;
       tmp27Result = tmp24(tmp25, obj4);
-      const tmpResult2 = tmp(4908);
+      const tmpResult2 = tmp(4940);
     }
   }
   if (null != first) {
@@ -408,7 +408,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
         let tmp29Result = !tmp10;
         if (!tmp10) {
           const obj15 = { variant: "tertiary", size: "sm", icon: null, accessibilityLabel: null, onPress: null };
-          obj15[2] = tmp29(tmp4(10288).PencilIcon, { size: "sm" });
+          obj15[2] = tmp29(tmp4(10327).PencilIcon, { size: "sm" });
           const intl2 = tmp4(1236).intl;
           obj15[3] = intl2.string(tmp4(1236).t.bt75uw);
           obj15[4] = function onPress() {
@@ -439,7 +439,7 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
               const tmp4 = _undefined;
             }
           };
-          tmp29Result = tmp29(tmp4(7974).IconButton, obj15);
+          tmp29Result = tmp29(tmp4(8006).IconButton, obj15);
         }
         items9[1] = tmp29Result;
         obj12[1] = items9;
@@ -460,10 +460,10 @@ export default function PremiumGiftPurchaseButton(defaultSelection) {
       }
       obj16[1] = str2;
       obj16[2] = nextTier.simple_icon_url;
-      obj16[3] = tmp(5941).PREMIUM_GIFT_CUSTOMIZATION;
-      tmp27Result = callback(tmp(10493), obj16);
+      obj16[3] = tmp(5973).PREMIUM_GIFT_CUSTOMIZATION;
+      tmp27Result = callback(tmp(10531), obj16);
       const tmp27 = callback;
-      const tmpResult4 = tmp(10493);
+      const tmpResult4 = tmp(10531);
     }
   }
 };

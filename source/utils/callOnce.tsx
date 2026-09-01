@@ -1,10 +1,10 @@
-// Module ID: 7381
-// Function ID: 7382
+// Module ID: 7413
+// Function ID: 7414
 // Name: callOnce
 // Dependencies: [2]
 // Exports: callOnce
 
-// Module 7381 (callOnce)
+// Module 7413 (callOnce)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/callOnce.tsx");

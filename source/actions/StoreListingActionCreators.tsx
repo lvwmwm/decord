@@ -1,16 +1,16 @@
-// Module ID: 14118
-// Function ID: 14119
+// Module ID: 14151
+// Function ID: 14152
 // Name: fetchStoreListingsForApplications
-// Dependencies: [4489, 4497, 14119, 676, 4723, 530, 709, 8465, 2]
+// Dependencies: [4519, 4527, 14152, 676, 4755, 530, 709, 8497, 2]
 // Exports: fetchAllStoreListingsForApplication, fetchStoreListingForSku, fetchStoreListingsForApplications
 
-// Module 14118 (fetchStoreListingsForApplications)
+// Module 14151 (fetchStoreListingsForApplications)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4723 */;
-import closure_3 from "addApplication" /* 4489 */;
-import closure_4 from "addSku" /* 4497 */;
-import closure_5 from "addRegularStoreListing" /* 14119 */;
+import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4755 */;
+import closure_3 from "addApplication" /* 4519 */;
+import closure_4 from "addSku" /* 4527 */;
+import closure_5 from "addRegularStoreListing" /* 14152 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;
@@ -77,7 +77,7 @@ export const fetchStoreListingForSku = function fetchStoreListingForSku(skuId) {
   const value = closure_4.get(skuId);
   let result = null != value;
   if (result) {
-    let obj = _require(8465);
+    let obj = _require(8497);
     result = obj.isTestModeForApplication(value.applicationId);
   }
   importDefault = result;
@@ -91,7 +91,7 @@ export const fetchStoreListingForSku = function fetchStoreListingForSku(skuId) {
     STORE_LISTINGS_SKUResult = obj5.STORE_PUBLISHED_LISTINGS_SKU(skuId);
   }
   obj = { url: STORE_LISTINGS_SKUResult, rejectWithError: null };
-  const obj4 = _require(4723);
+  const obj4 = _require(4755);
   obj[1] = tmp7(530).rejectWithMigratedError();
   const result1 = obj4.httpGetWithCountryCodeQuery(obj);
   const tmp7Result = tmp7(530);

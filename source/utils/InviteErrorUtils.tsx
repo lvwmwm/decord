@@ -1,13 +1,13 @@
-// Module ID: 12229
-// Function ID: 12230
+// Module ID: 12262
+// Function ID: 12263
 // Name: getDescriptiveInviteError
-// Dependencies: [1922, 676, 4109, 1236, 1995, 2]
+// Dependencies: [1922, 676, 4139, 1236, 1995, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 12229 (getDescriptiveInviteError)
+// Module 12262 (getDescriptiveInviteError)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import combinedDefault from "combined" /* 1995 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4109 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

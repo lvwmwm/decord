@@ -1,26 +1,26 @@
-// Module ID: 12892
-// Function ID: 12893
-// Dependencies: [19, 17, 4464, 1387, 4499, 4100, 1922, 4467, 7588, 676, 4469, 1980, 7589, 4512, 21, 1297, 4448, 712, 589, 10992, 7858, 12893, 10603, 12583, 12894, 11833, 11894, 4668, 4415, 12907, 2009, 5036, 1236, 6203, 12908, 8613, 4160, 698, 12787, 6208, 4695, 5018, 7593, 7591, 4444, 10154, 2]
+// Module ID: 12925
+// Function ID: 12926
+// Dependencies: [19, 17, 4494, 1387, 4529, 4130, 1922, 4497, 7620, 676, 4499, 1980, 7621, 4542, 21, 1297, 4478, 712, 589, 11029, 7890, 12926, 10641, 12616, 12927, 11866, 11927, 4700, 4445, 12940, 2009, 5068, 1236, 6235, 12941, 8645, 4190, 698, 12820, 6240, 4727, 5050, 7625, 7623, 4474, 10193, 2]
 
-// Module 12892
+// Module 12925
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getParticipants" /* 4464 */;
-import { NO_PARTICIPANTS } from "getParticipants" /* 4464 */;
+import closure_5 from "getParticipants" /* 4494 */;
+import { NO_PARTICIPANTS } from "getParticipants" /* 4494 */;
 import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_9 from "markAllUserIdListsStale" /* 4100 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_9 from "markAllUserIdListsStale" /* 4130 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import closure_11 from "updateVoiceState" /* 4467 */;
-import { setIsChannelDetailsSearchActive as closure_12 } from "useChannelDetailsStore" /* 7588 */;
+import closure_11 from "updateVoiceState" /* 4497 */;
+import { setIsChannelDetailsSearchActive as closure_12 } from "useChannelDetailsStore" /* 7620 */;
 import ME from "ME" /* 676 */;
-import { ParticipantTypes } from "ParticipantTypes" /* 4469 */;
+import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
 import { CHANGELOG_URL } from "CHANGELOG_MODAL_KEY" /* 1980 */;
-import { SearchEntrypointAnalyticsLocations as closure_18 } from "SearchEntrypointAnalyticsLocations" /* 7589 */;
-import { Features } from "DesktopSources" /* 4512 */;
+import { SearchEntrypointAnalyticsLocations as closure_18 } from "SearchEntrypointAnalyticsLocations" /* 7621 */;
+import { Features } from "DesktopSources" /* 4542 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -73,7 +73,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     }
     return isInChannelResult;
   }, items2);
-  tmp2Result = tmp2(10992);
+  tmp2Result = tmp2(11029);
   inappropriateConversationSafetyToolsWarningForChannel = tmp2Result.useInappropriateConversationSafetyToolsWarningForChannel(channelId);
   closure_6 = tmp7;
   const items3 = [totalParticipantCount, closure_10];
@@ -109,8 +109,8 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  const isCallActiveNullable = channelId(7858).useIsCallActiveNullable(id);
-  const tmp2Result3 = channelId(7858);
+  const isCallActiveNullable = channelId(7890).useIsCallActiveNullable(id);
+  const tmp2Result3 = channelId(7890);
   const items5 = [inappropriateConversationSafetyToolsWarningForChannel];
   callParticipants = channelId(589).useStateFromStoresObject(items5, () => {
     obj = stateFromStores;
@@ -152,7 +152,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     tmp14 = callParticipants.length > 0;
   }
   closure_10 = tmp14;
-  const tmp16 = screenIndex(12893)({ context: { type: "channel", channel: stateFromStores } });
+  const tmp16 = screenIndex(12926)({ context: { type: "channel", channel: stateFromStores } });
   application = tmp16.application;
   const items7 = [stateFromStores];
   callback = obj8.useCallback(() => {
@@ -250,7 +250,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     }
     return tmpResult;
   }, items12);
-  if (screenIndex(8613)(channelId)) {
+  if (screenIndex(8645)(channelId)) {
     obj = { style: null, onPress: null, accessibilityLabel: null, children: null };
     obj[0] = tmp.button;
     obj[1] = function onPress() {
@@ -261,8 +261,8 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
     };
     const intl5 = tmp2(1236).intl;
     obj[2] = intl5.string(tmp2(1236).t["+KSnWX"]);
-    obj[3] = callback(tmp2(12787).WindowLaunchIcon, { size: "sm" });
-    let tmp24Result = callback(tmp2(5036).PressableOpacity, obj);
+    obj[3] = callback(tmp2(12820).WindowLaunchIcon, { size: "sm" });
+    let tmp24Result = callback(tmp2(5068).PressableOpacity, obj);
   } else if (tmp16.isAppDM) {
     let tmp40 = null;
     if (null != application) {
@@ -273,15 +273,15 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
       obj1[1] = callback2;
       const intl3 = tmp2(1236).intl;
       obj1[2] = intl3.string(tmp2(1236).t["5h0QOP"]);
-      obj1[4] = callback(tmp2(6203).MagnifyingGlassIcon, { size: "sm" });
-      const items13 = [callback(tmp2(5036).PressableOpacity, obj1), ];
+      obj1[4] = callback(tmp2(6235).MagnifyingGlassIcon, { size: "sm" });
+      const items13 = [callback(tmp2(5068).PressableOpacity, obj1), ];
       let obj2 = { style: null, onPress: null, accessibilityLabel: null, accessibilityRole: "button", children: null };
       obj2[0] = tmp.button;
       obj2[1] = callback3;
       const intl4 = tmp2(1236).intl;
       obj2[2] = intl4.string(tmp2(1236).t["+1H47t"]);
-      obj2[4] = callback(tmp2(6208).SettingsIcon, { size: "sm" });
-      items13[1] = callback(tmp2(5036).PressableOpacity, obj2);
+      obj2[4] = callback(tmp2(6240).SettingsIcon, { size: "sm" });
+      items13[1] = callback(tmp2(5068).PressableOpacity, obj2);
       obj[1] = items13;
       tmp40 = callback2(recipientId, obj);
     }
@@ -331,13 +331,13 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
         let unsafe_rawColors = tmp15(712).unsafe_rawColors;
         unsafe_rawColors = { size: "sm", color: null };
         unsafe_rawColors[1] = stateFromStores1 ? unsafe_rawColors.GREEN_360 : unsafe_rawColors.BRAND_400;
-        let tmp29Result = tmp29(tmp2(5018).VoiceNormalIcon, unsafe_rawColors);
+        let tmp29Result = tmp29(tmp2(5050).VoiceNormalIcon, unsafe_rawColors);
         const tmp33 = stateFromStores1 ? unsafe_rawColors.GREEN_360 : unsafe_rawColors.BRAND_400;
       } else {
         if (stateFromStores1) {
           const obj6 = { size: "sm", color: null };
           obj6[1] = tmp15(712).unsafe_rawColors.RED_400;
-          tmp29Result = tmp29(tmp2(7593).PhoneHangUpIcon, obj6);
+          tmp29Result = tmp29(tmp2(7625).PhoneHangUpIcon, obj6);
           let tmp32 = tmp29;
         } else {
           let GREEN_360;
@@ -346,7 +346,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
           }
           const obj7 = { size: "sm", color: null };
           obj7[1] = GREEN_360;
-          tmp29Result = tmp29(tmp2(7591).PhoneCallIcon, obj7);
+          tmp29Result = tmp29(tmp2(7623).PhoneCallIcon, obj7);
           tmp32 = tmp29;
         }
         const items15 = [
@@ -357,7 +357,7 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
                   if (0 === arg1) {
                     num = screenIndex(tmp4[17]).space.PX_4;
                   }
-                  obj = { style: { marginLeft: num }, user: user.user, guildId: "r", size: 0, cutout: "absolute" };
+                  obj = { style: { marginLeft: num }, user: user.user, guildId: "r", size: false, cutout: false };
                   obj[3] = channelId(closure_2[15]).AvatarSizes.XSMALL;
                   if (arg1 !== diff) {
                     const tmp7 = closure_1_23;
@@ -374,12 +374,12 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
           const obj9 = { variant: "text-xxs/semibold", color: "button-outline-primary-text", children: null };
           const items16 = ["+", totalParticipantCount - 5];
           obj9[2] = items16;
-          obj8[1] = tmp24(tmp2(4444).Text, obj9);
+          obj8[1] = tmp24(tmp2(4474).Text, obj9);
           tmp32Result = tmp32(tmp25, obj8);
         }
         items15[2] = tmp32Result;
         obj4[5] = items15;
-        const items17 = [tmp24(tmp2(5036).PressableOpacity, obj4), , ];
+        const items17 = [tmp24(tmp2(5068).PressableOpacity, obj4), , ];
         tmp32Result = null;
         if (!isMultiUserDMResult) {
           tmp32Result = null;
@@ -400,8 +400,8 @@ const memoResult = importAllResult.memo(function PrivateChannelButtons(channelId
             obj10[2] = stateFromStores2;
             const intl2 = tmp2(1236).intl;
             obj10[3] = intl2.string(tmp2(1236).t.oCqlGG);
-            obj10[5] = tmp32(tmp2(10154).VideoIcon, { size: "sm" });
-            tmp32Result = tmp32(tmp2(5036).PressableOpacity, obj10);
+            obj10[5] = tmp32(tmp2(10193).VideoIcon, { size: "sm" });
+            tmp32Result = tmp32(tmp2(5068).PressableOpacity, obj10);
           }
         }
         items17[1] = tmp32Result;

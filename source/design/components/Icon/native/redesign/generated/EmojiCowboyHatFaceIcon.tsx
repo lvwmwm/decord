@@ -1,14 +1,14 @@
-// Module ID: 14930
-// Function ID: 14931
+// Module ID: 14963
+// Function ID: 14964
 // Name: EmojiCowboyHatFaceIcon
-// Dependencies: [19, 21, 712, 4166, 14931, 2]
+// Dependencies: [19, 21, 712, 4196, 14964, 2]
 // Exports: EmojiCowboyHatFaceIcon
 
-// Module 14930 (EmojiCowboyHatFaceIcon)
+// Module 14963 (EmojiCowboyHatFaceIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14931 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 14964 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

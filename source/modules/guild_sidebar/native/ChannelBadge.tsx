@@ -1,18 +1,18 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 15817
+// Function ID: 15818
 // Name: ChannelBadge
-// Dependencies: [19, 17, 1996, 21, 4448, 647, 15782, 11830, 4444, 1897, 2]
+// Dependencies: [19, 17, 1996, 21, 4478, 647, 15818, 11863, 4474, 1897, 2]
 // Exports: default
 
-// Module 15781 (ChannelBadge)
+// Module 15817 (ChannelBadge)
 import noopAll from "noop" /* 19 */;
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
-import NewBadgeDefault from "NewBadge" /* 11830 */;
-import MentionsBadgeDefault from "MentionsBadge" /* 15782 */;
+import NewBadgeDefault from "NewBadge" /* 11863 */;
+import MentionsBadgeDefault from "MentionsBadge" /* 15818 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -56,7 +56,7 @@ export default function ChannelBadge(arg0) {
             obj2[0] = tmp.channelInfoContainer;
             const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
             obj3[2] = tmp2(1897).humanizeValue(postsWithUnreadsCount, stateFromStores);
-            obj2[1] = jsx(tmp2(4444).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
+            obj2[1] = jsx(tmp2(4474).Text, { variant: "text-xs/semibold", color: "text-muted", children: null });
             tmp5 = <View style={null}>{null}</View>;
             const tmp2Result = tmp2(1897);
           }

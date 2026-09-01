@@ -1,14 +1,14 @@
-// Module ID: 5012
-// Function ID: 5013
+// Module ID: 5044
+// Function ID: 5045
 // Name: LockIcon
-// Dependencies: [19, 21, 712, 4166, 4986, 2]
+// Dependencies: [19, 21, 712, 4196, 5018, 2]
 // Exports: LockIcon
 
-// Module 5012 (LockIcon)
+// Module 5044 (LockIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 4986 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 5018 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,13 +1,13 @@
-// Module ID: 17299
-// Function ID: 17300
+// Module ID: 17335
+// Function ID: 17336
 // Name: showCreateBenefitModal
-// Dependencies: [17300, 4691, 17301, 2009, 17307, 2]
+// Dependencies: [17336, 4723, 17337, 2009, 17343, 2]
 // Exports: showCreateBenefitModal, showEditBenefitModal, showEditEmojisModal
 
-// Module 17299 (showCreateBenefitModal)
+// Module 17335 (showCreateBenefitModal)
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4691 from "module_4691" /* 4691 */;
-import closure_3 from "resetImperatively" /* 17300 */;
+import _modDef4723 from "module_4723" /* 4723 */;
+import closure_3 from "resetImperatively" /* 17336 */;
 
 require = arg1;
 const GuildRoleSubscriptionBenefitEditorModal = "GuildRoleSubscriptionBenefitEditorModal";
@@ -16,20 +16,20 @@ let result = require("set").fileFinishedImporting("modules/guild_role_subscripti
 export const showCreateBenefitModal = function showCreateBenefitModal(arg0) {
   ({ guildId, listingId, type, onSave } = arg0);
   closure_3.resetImperatively();
-  _modDef4691.pushLazy(asyncRequireImpl(17301, dependencyMap.paths), { benefitType: type, guildId, onSave, listingId }, GuildRoleSubscriptionBenefitEditorModal);
+  _modDef4723.pushLazy(asyncRequireImpl(17337, dependencyMap.paths), { benefitType: type, guildId, onSave, listingId }, GuildRoleSubscriptionBenefitEditorModal);
 };
 export const showEditBenefitModal = function showEditBenefitModal(benefit) {
   benefit = benefit.benefit;
   ({ guildId, listingId, onDelete, onSave } = benefit);
   const result = closure_3.initializeImperatively(benefit);
-  let obj = _modDef4691;
+  let obj = _modDef4723;
   obj = { benefitType: benefit.ref_type, guildId, onDelete, onSave, listingId };
-  obj.pushLazy(asyncRequireImpl(17301, dependencyMap.paths), obj, GuildRoleSubscriptionBenefitEditorModal);
+  obj.pushLazy(asyncRequireImpl(17337, dependencyMap.paths), obj, GuildRoleSubscriptionBenefitEditorModal);
 };
 export const showEditEmojisModal = function showEditEmojisModal(initialTierEmojiIds) {
   initialTierEmojiIds = initialTierEmojiIds.initialTierEmojiIds;
   ({ guildId, subscriptionRoleId, listingId, onSave } = initialTierEmojiIds);
-  let obj = _modDef4691;
+  let obj = _modDef4723;
   obj = { guildId, subscriptionRoleId, initialTierEmojiIds: null, listingId: null, onSave: null };
   if (initialTierEmojiIds == null) {
     const _Set = Set;
@@ -38,5 +38,5 @@ export const showEditEmojisModal = function showEditEmojisModal(initialTierEmoji
   obj[2] = initialTierEmojiIds;
   obj[3] = listingId;
   obj[4] = onSave;
-  obj.pushLazy(asyncRequireImpl(17307, dependencyMap.paths), obj, "GuildRoleSubscriptionEmojiEditorModal");
+  obj.pushLazy(asyncRequireImpl(17343, dependencyMap.paths), obj, "GuildRoleSubscriptionEmojiEditorModal");
 };

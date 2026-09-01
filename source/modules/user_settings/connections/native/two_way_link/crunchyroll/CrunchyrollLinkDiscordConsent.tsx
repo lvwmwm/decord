@@ -1,14 +1,14 @@
-// Module ID: 9307
-// Function ID: 9308
+// Module ID: 9346
+// Function ID: 9347
 // Name: CrunchyrollLinkDiscordConsent
-// Dependencies: [19, 9302, 676, 8577, 21, 1499, 9275, 2]
+// Dependencies: [19, 9341, 676, 8609, 21, 1499, 9314, 2]
 // Exports: default
 
-// Module 9307 (CrunchyrollLinkDiscordConsent)
+// Module 9346 (CrunchyrollLinkDiscordConsent)
 import closure_2 from "noop" /* 19 */;
-import { CrunchyrollLinkModalScenes as closure_3 } from "CrunchyrollLinkModalScenes" /* 9302 */;
+import { CrunchyrollLinkModalScenes as closure_3 } from "CrunchyrollLinkModalScenes" /* 9341 */;
 import { PlatformTypes } from "ME" /* 676 */;
-import CRUNCHYROLL_LINK_DEST_ORIGIN from "CRUNCHYROLL_LINK_DEST_ORIGIN" /* 8577 */;
+import CRUNCHYROLL_LINK_DEST_ORIGIN from "CRUNCHYROLL_LINK_DEST_ORIGIN" /* 8609 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -29,5 +29,5 @@ export default function CrunchyrollLinkDiscordConsent(arg0) {
     navigation.push(closure_1_3.ERROR);
   }, items1);
   obj = { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 };
-  return jsx(navigation(9275).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 });
+  return jsx(navigation(9314).TwoWayLinkDiscordConsent, { platformType: PlatformTypes.CRUNCHYROLL, callbackCode, callbackState, clientId: closure_5, scopes: closure_6, onNext: callback, onError: callback1 });
 };

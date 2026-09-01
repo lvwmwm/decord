@@ -1,14 +1,14 @@
-// Module ID: 11954
-// Function ID: 11955
-// Dependencies: [5, 17, 11945, 676, 11948, 698, 9618, 9954, 2]
+// Module ID: 11987
+// Function ID: 11988
+// Dependencies: [5, 17, 11978, 676, 11981, 698, 9657, 9993, 2]
 
-// Module 11954
+// Module 11987
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import NativeModulesDefault from "NativeModules" /* 9618 */;
-import createSoundForPack from "createSoundForPack" /* 9954 */;
+import NativeModulesDefault from "NativeModules" /* 9657 */;
+import createSoundForPack from "createSoundForPack" /* 9993 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { PermissionStateType } from "set" /* 11945 */;
+import { PermissionStateType } from "set" /* 11978 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;
@@ -29,8 +29,8 @@ export default {
   },
   requestPermission(arg0) {
     const _require = arg0;
-    let result = _require(11948).setPushPermissionState(PermissionStateType.REQUESTED);
-    let obj = _require(11948);
+    let result = _require(11981).setPushPermissionState(PermissionStateType.REQUESTED);
+    let obj = _require(11981);
     expandEventPropertiesDefault.track(AnalyticEvents.PERMISSIONS_REQUESTED, { type: "notification" });
     const obj2 = expandEventPropertiesDefault;
     const permissions = NativeModulesDefault.requestPermissions();
@@ -75,7 +75,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ export default {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c0 = tmp;

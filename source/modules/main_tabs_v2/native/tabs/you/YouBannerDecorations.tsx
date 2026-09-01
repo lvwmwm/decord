@@ -1,23 +1,23 @@
-// Module ID: 16337
-// Function ID: 16338
+// Module ID: 16373
+// Function ID: 16374
 // Name: useHasSettingsBadge
-// Dependencies: [19, 17, 1922, 1384, 1924, 21, 4448, 501, 712, 13092, 7162, 4268, 1373, 589, 8082, 8496, 8500, 1363, 689, 4109, 16338, 11047, 16339, 16340, 11297, 5358, 16341, 14567, 1236, 16342, 16344, 8064, 6208, 4908, 2]
+// Dependencies: [19, 17, 1922, 1384, 1924, 21, 4478, 501, 712, 13125, 7194, 4298, 1373, 589, 8114, 8528, 8532, 1363, 689, 4139, 16374, 11084, 16375, 16376, 11334, 5390, 16377, 14600, 1236, 16378, 16380, 8096, 6240, 4940, 2]
 // Exports: useHasSettingsBadge
 
-// Module 16337 (useHasSettingsBadge)
+// Module 16373 (useHasSettingsBadge)
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import ThemesDefault from "Themes" /* 712 */;
 import DismissibleContent from "DismissibleContent" /* 1373 */;
-import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4268 */;
-import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7162 */;
-import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13092 */;
+import UNSAFE_isDismissibleContentDismissed from "UNSAFE_isDismissibleContentDismissed" /* 4298 */;
+import hasUserTrialOfferExpired from "hasUserTrialOfferExpired" /* 7194 */;
+import useEligibleActiveOutboundPromotions from "useEligibleActiveOutboundPromotions" /* 13125 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import { PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID as closure_9 } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 let c3 = importAllResult;

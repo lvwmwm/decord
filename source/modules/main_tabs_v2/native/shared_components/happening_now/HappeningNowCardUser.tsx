@@ -1,16 +1,16 @@
-// Module ID: 15643
-// Function ID: 15644
-// Dependencies: [19, 17, 4537, 1922, 14857, 676, 21, 1297, 4448, 5921, 589, 698, 8859, 2009, 4292, 9386, 14858, 8076, 2]
+// Module ID: 15679
+// Function ID: 15680
+// Dependencies: [19, 17, 4569, 1922, 14890, 676, 21, 1297, 4478, 5953, 589, 698, 8896, 2009, 4322, 9425, 14891, 8108, 2]
 
-// Module 15643
+// Module 15679
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "sortActivity" /* 4537 */;
+import closure_5 from "sortActivity" /* 4569 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { HappeningNowCardTrackingType as closure_7 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14857 */;
+import { HappeningNowCardTrackingType as closure_7 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14890 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c3 = importAllResult;

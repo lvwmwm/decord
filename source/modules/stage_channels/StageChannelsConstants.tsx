@@ -1,10 +1,10 @@
-// Module ID: 5326
-// Function ID: 5327
+// Module ID: 5358
+// Function ID: 5359
 // Name: MAX_STAGE_TOPIC_LENGTH
 // Dependencies: [676, 1236, 1995, 2]
 // Exports: getStagePublicInfoText
 
-// Module 5326 (MAX_STAGE_TOPIC_LENGTH)
+// Module 5358 (MAX_STAGE_TOPIC_LENGTH)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;

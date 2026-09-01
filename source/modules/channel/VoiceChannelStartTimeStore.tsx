@@ -1,14 +1,14 @@
-// Module ID: 10907
-// Function ID: 10908
+// Module ID: 10945
+// Function ID: 10946
 // Name: _toTimestampMs
-// Dependencies: [5189, 687, 589, 692, 709, 2]
+// Dependencies: [5221, 687, 589, 692, 709, 2]
 
-// Module 10907 (_toTimestampMs)
+// Module 10945 (_toTimestampMs)
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import set2 from "set" /* 692 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "_handleConnectionOpen" /* 5189 */;
+import closure_3 from "_handleConnectionOpen" /* 5221 */;
 import set from "set" /* 2 */;
 
 require = arg1;

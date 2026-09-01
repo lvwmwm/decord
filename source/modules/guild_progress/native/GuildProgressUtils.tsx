@@ -1,20 +1,20 @@
-// Module ID: 12005
-// Function ID: 12006
+// Module ID: 12038
+// Function ID: 12039
 // Name: useIOSCompletionStates
-// Dependencies: [1982, 1909, 4091, 12006, 12000, 676, 4415, 12007, 2009, 12008, 589, 12003, 12119, 1236, 11, 2]
+// Dependencies: [1982, 1909, 4121, 12039, 12033, 676, 4445, 12040, 2009, 12041, 589, 12036, 12152, 1236, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet, useGuildProgressStep, useIsEligibleForGuildProgress
 
-// Module 12005 (useIOSCompletionStates)
+// Module 12038 (useIOSCompletionStates)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
-import dispatcherDefault from "dispatcher" /* 12008 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
+import dispatcherDefault from "dispatcher" /* 12041 */;
 import closure_3 from "comparator" /* 1982 */;
 import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_6 from "completeStep" /* 12006 */;
-import { Steps } from "Steps" /* 12000 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_6 from "completeStep" /* 12039 */;
+import { Steps } from "Steps" /* 12033 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -23,10 +23,10 @@ function useIOSCompletionStates(guild) {
   let obj = _require(589);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.can(closure_1_9.ADMINISTRATOR, closure_0));
-  const guildPersonalized = _require(12003).useGuildPersonalized(guild);
-  const obj2 = _require(12003);
-  const guildPopulated = _require(12003).useGuildPopulated(guild);
-  const obj3 = _require(12003);
+  const guildPersonalized = _require(12036).useGuildPersonalized(guild);
+  const obj2 = _require(12036);
+  const guildPopulated = _require(12036).useGuildPopulated(guild);
+  const obj3 = _require(12036);
   const items1 = [closure_3];
   const stateFromStores1 = _require(589).useStateFromStores(items1, () => closure_1_3.getDefaultChannel(guild.id));
   const obj4 = _require(589);
@@ -36,7 +36,7 @@ function useIOSCompletionStates(guild) {
   } else {
     items3 = [];
   }
-  const channelsMessaged = _require(12003).useChannelsMessaged(items3);
+  const channelsMessaged = _require(12036).useChannelsMessaged(items3);
   let tmpResult = tmp(589);
   const items4 = [closure_6];
   let stateFromStores2 = channelsMessaged;
@@ -66,12 +66,12 @@ function useIOSCompletionStates(guild) {
     }
     return num > 0;
   });
-  const obj5 = _require(12003);
+  const obj5 = _require(12036);
   const tmp8 = closure_6;
   const items6 = [tmp8];
   const stateFromStores4 = _require(589).useStateFromStores(items6, () => closure_1_6.getProgress(guild.id));
   if (stateFromStores) {
-    const ServerSetupBoostCtaExperiment = tmp(12119).ServerSetupBoostCtaExperiment;
+    const ServerSetupBoostCtaExperiment = tmp(12152).ServerSetupBoostCtaExperiment;
     const enabled = ServerSetupBoostCtaExperiment.getConfig({ location: "GuildProgress" }).enabled;
     const items7 = [guildPopulated, guildPersonalized, stateFromStores2];
     if (enabled) {
@@ -116,7 +116,7 @@ export const PROGRESS_BACKGROUND_COLOR = "rgba(78, 93, 148, 0.3)";
 export const openActionSheet = function openActionSheet(guild) {
   let obj = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { guild };
-  obj.openLazy(asyncRequireImpl(12007, dependencyMap.paths), "guild-progress-" + guild.id, obj);
+  obj.openLazy(asyncRequireImpl(12040, dependencyMap.paths), "guild-progress-" + guild.id, obj);
 };
 export const hideActionSheet = function hideActionSheet(arg0) {
   ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet("guild-progress-" + arg0);

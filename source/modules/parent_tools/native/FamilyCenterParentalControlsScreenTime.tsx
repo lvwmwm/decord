@@ -1,17 +1,17 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14538
+// Function ID: 14539
 // Name: ScheduleRuleRow
-// Dependencies: [17, 676, 21, 4448, 712, 10127, 5567, 4444, 1236, 2369, 14466, 1499, 5960, 2]
+// Dependencies: [17, 676, 21, 4478, 712, 10166, 5599, 4474, 1236, 2369, 14499, 1499, 5992, 2]
 // Exports: default
 
-// Module 14505 (ScheduleRuleRow)
+// Module 14538 (ScheduleRuleRow)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
 import ThemesDefault from "Themes" /* 712 */;
 import messagesProxyDefault from "messagesProxy" /* 2369 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 function ScheduleRuleRow(rule) {
   rule = rule.rule;
@@ -19,10 +19,10 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(10127);
+  let obj = rule(10166);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  const obj2 = rule(10127);
-  obj = { label: scheduleRuleDateRange, subLabel: rule(10127).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
+  const obj2 = rule(10166);
+  obj = { label: scheduleRuleDateRange, subLabel: rule(10166).formatDays(rule.days), trailing: null, arrow: null, onPress: null };
   const intl = rule(1236).intl;
   const string = intl.string;
   const tmp4 = messagesProxyDefault;
@@ -31,7 +31,7 @@ function ScheduleRuleRow(rule) {
   } else {
     stringResult = string(tmp4["4z9fN+"]);
   }
-  obj[2] = closure_5(rule(4444).Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult });
+  obj[2] = closure_5(rule(4474).Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult });
   obj[3] = !readOnly;
   let fn;
   if (!readOnly) {
@@ -44,7 +44,7 @@ function ScheduleRuleRow(rule) {
     };
   }
   obj[4] = fn;
-  return closure_5(rule(5567).TableRow, obj);
+  return closure_5(rule(5599).TableRow, obj);
 }
 const View = get_ActivityIndicator.View;
 const UserSettingsSections = ME.UserSettingsSections;

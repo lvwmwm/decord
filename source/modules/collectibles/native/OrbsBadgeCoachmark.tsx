@@ -1,16 +1,16 @@
-// Module ID: 8934
-// Function ID: 8935
+// Module ID: 8971
+// Function ID: 8972
 // Name: OrbsBadgeCoachmarkImg
-// Dependencies: [19, 17, 21, 4448, 8935, 1236, 4303, 8936, 2]
+// Dependencies: [19, 17, 21, 4478, 8972, 1236, 4333, 8973, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 8934 (OrbsBadgeCoachmarkImg)
-import metadataDefault from "metadata" /* 8935 */;
-import useCoachmark from "useCoachmark" /* 8936 */;
+// Module 8971 (OrbsBadgeCoachmarkImg)
+import metadataDefault from "metadata" /* 8972 */;
+import useCoachmark from "useCoachmark" /* 8973 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function OrbsBadgeCoachmarkImg() {

@@ -1,11 +1,11 @@
-// Module ID: 4187
-// Function ID: 4188
-// Dependencies: [501, 1653, 4188, 2]
+// Module ID: 4217
+// Function ID: 4218
+// Dependencies: [501, 1653, 4218, 2]
 
-// Module 4187
+// Module 4217
 import set from "set" /* 2 */;
 import cancelAnimationDefault from "cancelAnimation" /* 1653 */;
-import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4188 */;
+import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4218 */;
 import PlatformTypes from "PlatformTypes" /* 501 */;
 
 if (PlatformTypes.isAndroid()) {

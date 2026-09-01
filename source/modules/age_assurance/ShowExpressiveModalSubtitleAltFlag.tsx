@@ -1,10 +1,10 @@
-// Module ID: 8676
-// Function ID: 8677
+// Module ID: 8713
+// Function ID: 8714
 // Name: useShouldShowExpressiveModalSubtitleAlt
 // Dependencies: [1468, 2]
 // Exports: shouldShowExpressiveModalSubtitleAlt, useShouldShowExpressiveModalSubtitleAlt
 
-// Module 8676 (useShouldShowExpressiveModalSubtitleAlt)
+// Module 8713 (useShouldShowExpressiveModalSubtitleAlt)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

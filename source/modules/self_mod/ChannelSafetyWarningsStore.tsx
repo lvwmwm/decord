@@ -1,9 +1,9 @@
-// Module ID: 10615
-// Function ID: 10616
+// Module ID: 10653
+// Function ID: 10654
 // Name: handleConnectionOpen
 // Dependencies: [1387, 687, 589, 709, 2]
 
-// Module 10615 (handleConnectionOpen)
+// Module 10653 (handleConnectionOpen)
 import initializeDefault from "initialize" /* 589 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

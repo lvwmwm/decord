@@ -1,19 +1,19 @@
-// Module ID: 17016
-// Function ID: 17017
+// Module ID: 17052
+// Function ID: 17053
 // Name: onPostConnectionOpen
-// Dependencies: [4704, 1340, 1387, 7955, 676, 687, 5454, 584, 10479, 709, 7169, 2]
+// Dependencies: [4736, 1340, 1387, 7987, 676, 687, 5486, 584, 10517, 709, 7201, 2]
 
-// Module 17016 (onPostConnectionOpen)
+// Module 17052 (onPostConnectionOpen)
 import failsDefault from "fails" /* 584 */;
 import setDefault from "set" /* 687 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 5454 */;
-import trackInviteDefault from "trackInvite" /* 7169 */;
-import fetchAndReconcileGiftIntentDismissals from "fetchAndReconcileGiftIntentDismissals" /* 10479 */;
-import closure_3 from "dropChannelIfEmpty" /* 4704 */;
+import initializeDefault from "initialize" /* 5486 */;
+import trackInviteDefault from "trackInvite" /* 7201 */;
+import fetchAndReconcileGiftIntentDismissals from "fetchAndReconcileGiftIntentDismissals" /* 10517 */;
+import closure_3 from "dropChannelIfEmpty" /* 4736 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "getCurrentTime" /* 7955 */;
+import closure_6 from "getCurrentTime" /* 7987 */;
 import { MessageTypes } from "ME" /* 676 */;
 
 require = arg1;

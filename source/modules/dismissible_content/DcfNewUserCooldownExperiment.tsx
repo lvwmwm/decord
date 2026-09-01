@@ -1,10 +1,10 @@
-// Module ID: 4291
-// Function ID: 4292
+// Module ID: 4321
+// Function ID: 4322
 // Name: useDcfNewUserCooldown
 // Dependencies: [1468, 687, 2]
 // Exports: getDcfNewUserCooldown, useDcfNewUserCooldown
 
-// Module 4291 (useDcfNewUserCooldown)
+// Module 4321 (useDcfNewUserCooldown)
 import set from "set" /* 2 */;
 import setDefault from "set" /* 687 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;

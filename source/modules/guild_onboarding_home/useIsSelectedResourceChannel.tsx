@@ -1,11 +1,11 @@
-// Module ID: 10941
-// Function ID: 10942
+// Module ID: 10979
+// Function ID: 10980
 // Name: useIsSelectedResourceChannel
-// Dependencies: [6095, 1387, 1981, 676, 1394, 647, 1399, 10942, 6037, 2]
+// Dependencies: [6127, 1387, 1981, 676, 1394, 647, 1399, 10980, 6069, 2]
 // Exports: default
 
-// Module 10941 (useIsSelectedResourceChannel)
-import closure_3 from "handlePermissionsChange" /* 6095 */;
+// Module 10979 (useIsSelectedResourceChannel)
+import closure_3 from "handlePermissionsChange" /* 6127 */;
 import closure_4 from "ensureGuildLoaded" /* 1387 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
 import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
@@ -34,6 +34,6 @@ export default function useIsSelectedResourceChannel(arg0) {
   if (stateFromStores == null) {
     tmp2 = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  const obj2 = _require(6037);
-  return null != stateFromStores && _require(6037).useCanSeeOnboardingHome(tmp2);
+  const obj2 = _require(6069);
+  return null != stateFromStores && _require(6069).useCanSeeOnboardingHome(tmp2);
 };

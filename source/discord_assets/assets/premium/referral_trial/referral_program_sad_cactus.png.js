@@ -1,9 +1,9 @@
-// Module ID: 13079
-// Function ID: 13080
+// Module ID: 13112
+// Function ID: 13113
 // Name: metadata
 // Dependencies: [2]
 
-// Module 13079 (metadata)
+// Module 13112 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/referral_trial/referral_program_sad_cactus.png.js");

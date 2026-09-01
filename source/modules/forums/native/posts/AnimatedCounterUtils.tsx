@@ -1,10 +1,10 @@
-// Module ID: 10916
-// Function ID: 10917
+// Module ID: 10954
+// Function ID: 10955
 // Name: defaultFormatter
 // Dependencies: [2]
 // Exports: defaultFormatter
 
-// Module 10916 (defaultFormatter)
+// Module 10954 (defaultFormatter)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/forums/native/posts/AnimatedCounterUtils.tsx");

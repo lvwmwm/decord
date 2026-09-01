@@ -1,10 +1,10 @@
-// Module ID: 4140
-// Function ID: 4141
+// Module ID: 4170
+// Function ID: 4171
 // Name: defineProtoSetting
 // Dependencies: [1303, 1340, 685, 1370, 589, 709, 2]
 // Exports: defineProtoSetting, wrapSettingWithExperimentDefaults, wrapSettingWithOverride, wrapSettingWithSelectiveSyncing
 
-// Module 4140 (defineProtoSetting)
+// Module 4170 (defineProtoSetting)
 import closure_3 from "initialize" /* 1303 */;
 import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
 import { UserSettingsDelay } from "MAX_FAVORITES" /* 685 */;
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/user_settings/UserS
 
 export const defineProtoSetting = function defineProtoSetting(textAndImages, activityRestrictedGuildIds, explicitContentFromProto, explicitContentToProto, set) {
   let getSetting = textAndImages;
-  let f75781 = activityRestrictedGuildIds;
+  let f75937 = activityRestrictedGuildIds;
   closure_2 = explicitContentFromProto;
   closure_3 = explicitContentToProto;
   let obj = set;
@@ -34,7 +34,7 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
   getSetting = function getSetting() {
     let tmp3;
     if (INFREQUENT_USER_ACTION.settings[getSetting] != null) {
-      tmp3 = tmp2[f75781];
+      tmp3 = tmp2[f75937];
     }
     return closure_2(tmp3);
   };
@@ -45,14 +45,14 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
-      return f75788(tmp2);
+      return f75944(tmp2);
     },
     useSetting() {
       const items = [INFREQUENT_USER_ACTION];
       return getSetting(explicitContentFromProto[4]).useStateFromStores(items, getSetting, undefined, fn);
     }
   };
-  f75781 = (favorites) => {
+  f75937 = (favorites) => {
     closure_0 = favorites;
     const PreloadedUserSettingsActionCreators = getSetting(explicitContentFromProto[3]).PreloadedUserSettingsActionCreators;
     return PreloadedUserSettingsActionCreators.updateAsync(closure_0, (arg0) => {
@@ -63,10 +63,10 @@ export const defineProtoSetting = function defineProtoSetting(textAndImages, act
 };
 export function wrapSettingWithSelectiveSyncing(defineProtoSetting, text, animateEmoji) {
   let getSetting = defineProtoSetting;
-  let f75785 = text;
+  let f75941 = text;
   closure_2 = animateEmoji;
   getSetting = function getSetting() {
-    const tmp = closure_1_3.getState()[f75785];
+    const tmp = closure_1_3.getState()[f75941];
     let setting;
     if (tmp != null) {
       setting = tmp.settings[closure_2];
@@ -76,18 +76,18 @@ export function wrapSettingWithSelectiveSyncing(defineProtoSetting, text, animat
     }
     return setting;
   };
-  f75785 = (arg0) => {
-    if (closure_1_3.shouldSync(f75785)) {
+  f75941 = (arg0) => {
+    if (closure_1_3.shouldSync(f75941)) {
       let updateSettingResult = getSetting.updateSetting(arg0);
     } else {
-      let obj = f75785(animateEmoji[5]);
+      let obj = f75941(animateEmoji[5]);
       obj = { type: "SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE", changes: null };
       obj = {};
       obj1 = { settings: null };
       const obj2 = {};
       obj2[animateEmoji] = arg0;
       obj1[0] = obj2;
-      obj[f75785] = obj1;
+      obj[f75941] = obj1;
       obj[1] = obj;
       obj.dispatch(obj);
       updateSettingResult = Promise.resolve();
@@ -117,13 +117,13 @@ export function wrapSettingWithSelectiveSyncing(defineProtoSetting, text, animat
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
-      return f75788(tmp2);
+      return f75944(tmp2);
     }
   };
 }
 export function wrapSettingWithOverride(defineProtoSetting, animateEmoji, arg2, arg3) {
   let getSetting = defineProtoSetting;
-  let f75788 = animateEmoji;
+  let f75944 = animateEmoji;
   closure_2 = arg2;
   closure_3 = arg3;
   getSetting = function getSetting() {
@@ -133,9 +133,9 @@ export function wrapSettingWithOverride(defineProtoSetting, animateEmoji, arg2, 
     }
     return setting;
   };
-  f75788 = (arg0) => {
-    const items = [f75788];
-    f75788(709).dispatch({ type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items });
+  f75944 = (arg0) => {
+    const items = [f75944];
+    f75944(709).dispatch({ type: "USER_SETTINGS_OVERRIDE_CLEAR", settings: items });
     return getSetting.updateSetting(arg0);
   };
   return {
@@ -153,7 +153,7 @@ export function wrapSettingWithOverride(defineProtoSetting, animateEmoji, arg2, 
       if (typeof fn === "function") {
         tmp2 = fn(getSetting());
       }
-      return f75788(tmp2);
+      return f75944(tmp2);
     }
   };
 }

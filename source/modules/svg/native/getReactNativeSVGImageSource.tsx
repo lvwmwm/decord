@@ -1,10 +1,10 @@
-// Module ID: 9392
-// Function ID: 9393
+// Module ID: 9431
+// Function ID: 9432
 // Name: getReactNativeSVGImageSource
 // Dependencies: [500, 2]
 // Exports: default
 
-// Module 9392 (getReactNativeSVGImageSource)
+// Module 9431 (getReactNativeSVGImageSource)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/svg/native/getReactNativeSVGImageSource.tsx");

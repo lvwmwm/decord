@@ -1,13 +1,13 @@
-// Module ID: 4704
-// Function ID: 4705
+// Module ID: 4736
+// Function ID: 4737
 // Name: dropChannelIfEmpty
-// Dependencies: [1387, 676, 1399, 4705, 589, 709, 2]
+// Dependencies: [1387, 676, 1399, 4737, 589, 709, 2]
 
-// Module 4704 (dropChannelIfEmpty)
+// Module 4736 (dropChannelIfEmpty)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import hasFlag from "hasFlag" /* 1399 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4705 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
 import closure_2 from "ensureGuildLoaded" /* 1387 */;
 import { MessageFlags } from "ME" /* 676 */;
 

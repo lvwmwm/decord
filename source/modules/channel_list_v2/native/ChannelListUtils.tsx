@@ -1,14 +1,14 @@
-// Module ID: 15736
-// Function ID: 15737
+// Module ID: 15772
+// Function ID: 15773
 // Name: isFavoritesSection
-// Dependencies: [676, 7241, 4668, 2]
+// Dependencies: [676, 7273, 4700, 2]
 // Exports: isFavoritesSection, isNamedCategorySection, isRecentsSection, isVoiceChannelsSection, logChannelListEndReached
 
-// Module 15736 (isFavoritesSection)
+// Module 15772 (isFavoritesSection)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4668 */;
-import computeSubtitle from "computeSubtitle" /* 7241 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
+import computeSubtitle from "computeSubtitle" /* 7273 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/channel_list_v2/native/ChannelListUtils.tsx");

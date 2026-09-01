@@ -1,22 +1,22 @@
-// Module ID: 16280
-// Function ID: 16281
+// Module ID: 16316
+// Function ID: 16317
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4448, 712, 10268, 10675, 4415, 10272, 2009, 10271, 6224, 4894, 4444, 1236, 3149, 4896, 12258, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 10307, 10713, 4445, 10311, 2009, 10310, 6256, 4926, 4474, 1236, 3179, 4928, 12291, 2]
 // Exports: default
 
-// Module 16280 (FavoritesEmptyState)
+// Module 16316 (FavoritesEmptyState)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3149 */;
-import Text from "Text" /* 4444 */;
-import Stack from "Stack" /* 4894 */;
-import Button from "Button" /* 4896 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6224 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10268 */;
+import messagesProxyDefault from "messagesProxy" /* 3179 */;
+import Text from "Text" /* 4474 */;
+import Stack from "Stack" /* 4926 */;
+import Button from "Button" /* 4928 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6256 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10307 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -53,14 +53,14 @@ export default function FavoritesEmptyState() {
   if (obj.useFavoritesAccess("favorites_empty_state").hasAccess) {
     const obj3 = { variant: "primary", text: null, icon: null, onPress: null };
     const intl4 = tmp2(1236).intl;
-    obj3[1] = intl4.string(tmp9(3149)["6kk0gM"]);
-    obj3[2] = tmp8(tmp2(12258).PlusMediumIcon, {});
+    obj3[1] = intl4.string(tmp9(3179)["6kk0gM"]);
+    obj3[2] = tmp8(tmp2(12291).PlusMediumIcon, {});
     obj3[3] = callback;
     let obj4 = obj3;
   } else {
     obj4 = { variant: "primary", text: null, onPress: null };
     const intl3 = tmp2(1236).intl;
-    obj4[1] = intl3.string(tmp9(3149).yYVbdv);
+    obj4[1] = intl3.string(tmp9(3179).yYVbdv);
     obj4[2] = callback1;
   }
   items[2] = callback(Button.Button, obj4);

@@ -1,9 +1,9 @@
-// Module ID: 15480
-// Function ID: 15481
+// Module ID: 15514
+// Function ID: 15515
 // Name: frozen
 // Dependencies: [2]
 
-// Module 15480 (frozen)
+// Module 15514 (frozen)
 import set from "set" /* 2 */;
 
 const frozen = Object.freeze({ NOTIF_REALTIME: "Realtime", NOTIF_CATEGORY_SOCIAL: "Category social", NOTIF_CATEGORY_SERVER: "Category server", NOTIF_CATEGORY_OTHER: "Category other" });

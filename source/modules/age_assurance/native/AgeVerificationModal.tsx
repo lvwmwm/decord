@@ -1,15 +1,15 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8699
+// Function ID: 8700
 // Name: AgeVerifyScreen
-// Dependencies: [19, 8651, 21, 8657, 4302, 4701, 8561, 4448, 712, 4691, 6205, 1236, 5976, 2]
+// Dependencies: [19, 8683, 21, 8689, 4332, 4733, 8593, 4478, 712, 4723, 6237, 1236, 6008, 2]
 // Exports: default
 
-// Module 8667 (AgeVerifyScreen)
+// Module 8699 (AgeVerifyScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
-import { AGE_VERIFICATION_MODAL_KEY as closure_4 } from "set" /* 8651 */;
+import { AGE_VERIFICATION_MODAL_KEY as closure_4 } from "set" /* 8683 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function AgeVerifyScreen(uri) {
@@ -80,7 +80,7 @@ export default function AgeVerificationModal(webviewUrl) {
   const memo = React.useMemo(() => {
     function handleClose() {
       dependencyMap();
-      let arr = callback2(4691);
+      let arr = callback2(4723);
       arr = arr.pop();
     }
     return {
@@ -91,7 +91,7 @@ export default function AgeVerificationModal(webviewUrl) {
           const obj = { onPress: handleClose, text: null };
           const intl = callback(1236).intl;
           obj[1] = intl.string(callback(1236).t.cpT0Cq);
-          return closure_1_5(callback(6205).HeaderActionButton, obj);
+          return closure_1_5(callback(6237).HeaderActionButton, obj);
         },
         render() {
           return closure_1_5(closure_1_7, { webviewUrl: closure_0, onComplete: closure_1, onClose: handleClose });

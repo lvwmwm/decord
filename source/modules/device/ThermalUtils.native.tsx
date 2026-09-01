@@ -1,10 +1,10 @@
-// Module ID: 9420
-// Function ID: 9421
+// Module ID: 9459
+// Function ID: 9460
 // Name: NativeModules
-// Dependencies: [17, 500, 9421, 4427, 644, 705, 2]
+// Dependencies: [17, 500, 9460, 4457, 644, 705, 2]
 
-// Module 9420 (NativeModules)
-import enforcingDefault from "enforcing" /* 9421 */;
+// Module 9459 (NativeModules)
+import enforcingDefault from "enforcing" /* 9460 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 500 */;
 import keys from "keys" /* 644 */;
@@ -27,7 +27,7 @@ let closure_5 = keys.create((arg0) => {
     } else {
       resolved = Promise.resolve(undefined);
     }
-    tmpResult = _require(4427);
+    tmpResult = _require(4457);
   } else {
     const DCDDeviceThermalStateManager = NativeModules.DCDDeviceThermalStateManager;
     const thermalState1 = DCDDeviceThermalStateManager.getThermalState();
@@ -55,7 +55,7 @@ let closure_5 = keys.create((arg0) => {
         return tmp;
       }));
     });
-    return { rawThermalState: "Array" };
+    return { rawThermalState: "r" };
   }
 });
 const result = set.fileFinishedImporting("modules/device/ThermalUtils.native.tsx");

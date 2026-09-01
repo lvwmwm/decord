@@ -1,30 +1,30 @@
-// Module ID: 14836
-// Function ID: 14837
+// Module ID: 14869
+// Function ID: 14870
 // Name: GradientThemeBackground
-// Dependencies: [19, 17, 1302, 14835, 505, 21, 4448, 712, 4297, 1364, 5038, 1297, 14837, 647, 4167, 14838, 1349, 4175, 5036, 1236, 2]
+// Dependencies: [19, 17, 1302, 14868, 505, 21, 4478, 712, 4327, 1364, 5070, 1297, 14870, 647, 4197, 14871, 1349, 4205, 5068, 1236, 2]
 // Exports: default
 
-// Module 14836 (GradientThemeBackground)
+// Module 14869 (GradientThemeBackground)
 import noopAll from "noop" /* 19 */;
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import ClientThemeType from "ClientThemeType" /* 1349 */;
 import isThemeLight from "isThemeLight" /* 1364 */;
-import map from "map" /* 4167 */;
-import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4175 */;
-import hslToRgbDefault from "hslToRgb" /* 4297 */;
-import PressableBase from "PressableBase" /* 5036 */;
-import getMixedGradientColor from "getMixedGradientColor" /* 5038 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5038 */;
-import registerAssetDefault from "registerAsset" /* 14837 */;
-import SynchronizeIconDefault from "SynchronizeIcon" /* 14838 */;
+import map from "map" /* 4197 */;
+import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4205 */;
+import hslToRgbDefault from "hslToRgb" /* 4327 */;
+import PressableBase from "PressableBase" /* 5068 */;
+import getMixedGradientColor from "getMixedGradientColor" /* 5070 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5070 */;
+import registerAssetDefault from "registerAsset" /* 14870 */;
+import SynchronizeIconDefault from "SynchronizeIcon" /* 14871 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "handleThemeChange" /* 1302 */;
-import importDefaultResult from "THEME_ITEM_WIDTH" /* 14835 */;
+import importDefaultResult from "THEME_ITEM_WIDTH" /* 14868 */;
 import { ThemeTypes } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function GradientThemeBackground(arg0) {
@@ -65,9 +65,9 @@ function DefaultThemeBackground(item) {
   } else {
     theme = item.theme;
   }
-  let tmpResult = tmp(4167);
+  let tmpResult = tmp(4197);
   const token = tmpResult.useToken(ThemesDefault.colors.BACKGROUND_BASE_LOWER, theme);
-  tmpResult = tmp(4167);
+  tmpResult = tmp(4197);
   const token1 = tmpResult.useToken(ThemesDefault.colors.BORDER_STRONG, theme);
   obj = { style: null, children: null };
   obj = { width: "100%", height: "100%", backgroundColor: token, borderColor: token1, borderWidth: 1, borderRadius: null };

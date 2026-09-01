@@ -1,10 +1,10 @@
-// Module ID: 5563
-// Function ID: 5564
+// Module ID: 5595
+// Function ID: 5596
 // Name: getKeyboardDuration
 // Dependencies: [1496, 500, 1497, 2]
 // Exports: getKeyboardDuration
 
-// Module 5563 (getKeyboardDuration)
+// Module 5595 (getKeyboardDuration)
 import set from "set" /* 2 */;
 import context from "context" /* 1496 */;
 import computeEntryStateDefault from "computeEntryState" /* 1497 */;

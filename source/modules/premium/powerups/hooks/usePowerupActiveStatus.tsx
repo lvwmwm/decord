@@ -1,15 +1,15 @@
-// Module ID: 12030
-// Function ID: 12031
+// Module ID: 12063
+// Function ID: 12064
 // Name: usePowerupActiveStatus
-// Dependencies: [1909, 4334, 4335, 676, 4336, 589, 2]
+// Dependencies: [1909, 4364, 4365, 676, 4366, 589, 2]
 // Exports: default, isPowerupActiveStatusActive, usePowerupsActiveStatuses
 
-// Module 12030 (usePowerupActiveStatus)
+// Module 12063 (usePowerupActiveStatus)
 import closure_2 from "createGuildRecordFromRust" /* 1909 */;
-import closure_3 from "calculateAppliedBoosts" /* 4334 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4335 */;
+import closure_3 from "calculateAppliedBoosts" /* 4364 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
 import { GuildFeatures } from "ME" /* 676 */;
-import { GAME_SERVER_POWERUP_SKU_ID as closure_9 } from "str11" /* 4336 */;
+import { GAME_SERVER_POWERUP_SKU_ID as closure_9 } from "str11" /* 4366 */;
 
 const require = arg1;
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: c4, PowerupActiveStatusType: c5, POWERUPS_INCLUDED_IN_LEVEL: closure_6, BOOSTING_TIER_TO_LEVEL_SKU_ID: error } = BoostedGuildTiers);
@@ -60,7 +60,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
         if (null != stateFromStores) {
           if (null != guild) {
             if (null == closure_1_6[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "accessibilityLabel" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "accessible" };
             } else {
               let tmp4;
               if (null != closure_1_7[tmp22]) {
@@ -113,7 +113,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
             obj1[3] = levelPowerup;
             obj = obj1;
           } else if (hasItem1) {
-            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: "<string:285213222>" };
+            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: true };
             obj2[0] = tmp11.TIER_OVERRIDE_ACTIVATED;
             obj2[1] = skuId;
             obj2[3] = skuId;
@@ -129,11 +129,11 @@ export default function usePowerupActiveStatus(arg0, arg1) {
           return obj;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "accessibilityLabel" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "accessible" };
     }
   });
   if (mapped.length <= 0) {
-    obj = { type: null, sourceEntitlement: "Array", sourcePowerup: "accessibilityLabel" };
+    obj = { type: null, sourceEntitlement: "Array", sourcePowerup: "accessible" };
     obj[0] = constants.INACTIVE;
     let first = obj;
   } else {
@@ -184,7 +184,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
         if (null != stateFromStores) {
           if (null != guild) {
             if (null == closure_1_6[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "accessibilityLabel" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "accessible" };
             } else {
               let tmp4;
               if (null != closure_1_7[tmp22]) {
@@ -237,7 +237,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
             obj1[3] = levelPowerup;
             obj = obj1;
           } else if (hasItem1) {
-            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: "<string:285213222>" };
+            const obj2 = { type: null, powerup: null, sourceEntitlement: "Array", sourcePowerup: true };
             obj2[0] = tmp11.TIER_OVERRIDE_ACTIVATED;
             obj2[1] = skuId;
             obj2[3] = skuId;
@@ -253,7 +253,7 @@ export const usePowerupsActiveStatuses = function usePowerupsActiveStatuses(guil
           return obj;
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "accessibilityLabel" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "accessible" };
     }
   });
 };

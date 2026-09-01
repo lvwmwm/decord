@@ -1,10 +1,10 @@
-// Module ID: 16549
-// Function ID: 16550
+// Module ID: 16585
+// Function ID: 16586
 // Name: updateVideoSize
 // Dependencies: [709, 2]
 // Exports: updateVideoSize
 
-// Module 16549 (updateVideoSize)
+// Module 16585 (updateVideoSize)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

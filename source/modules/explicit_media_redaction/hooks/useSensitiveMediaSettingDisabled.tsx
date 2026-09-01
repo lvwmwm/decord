@@ -1,12 +1,12 @@
-// Module ID: 14396
-// Function ID: 14397
+// Module ID: 14429
+// Function ID: 14430
 // Name: useSensitiveMediaSettingDisabled
-// Dependencies: [14397, 2]
+// Dependencies: [14430, 2]
 // Exports: useSensitiveMediaSettingDisabled
 
-// Module 14396 (useSensitiveMediaSettingDisabled)
+// Module 14429 (useSensitiveMediaSettingDisabled)
 import set from "set" /* 2 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14397 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14430 */;
 
 const result = set.fileFinishedImporting("modules/explicit_media_redaction/hooks/useSensitiveMediaSettingDisabled.tsx");
 

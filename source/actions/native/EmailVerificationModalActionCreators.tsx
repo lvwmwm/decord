@@ -1,14 +1,14 @@
-// Module ID: 7655
-// Function ID: 7656
-// Dependencies: [676, 698, 4691, 7656, 2009, 709, 2]
+// Module ID: 7687
+// Function ID: 7688
+// Dependencies: [676, 698, 4723, 7688, 2009, 709, 2]
 
-// Module 7655
+// Module 7687
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4691 from "module_4691" /* 4691 */;
+import _modDef4723 from "module_4723" /* 4723 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const EMAIL_VERIFICATION_MODAL_KEY = "EMAIL_VERIFICATION_MODAL_KEY";
@@ -24,7 +24,7 @@ export default {
       expandEventPropertiesDefault.track(AnalyticEvents.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED);
       const obj = expandEventPropertiesDefault;
     }
-    _modDef4691.pushLazy(asyncRequireImpl(7656, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
+    _modDef4723.pushLazy(asyncRequireImpl(7688, dependencyMap.paths), { isChangeEmail: flag }, EMAIL_VERIFICATION_MODAL_KEY);
   },
   close() {
     dispatcherDefault.wait(() => {

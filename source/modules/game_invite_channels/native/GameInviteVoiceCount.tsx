@@ -1,16 +1,16 @@
-// Module ID: 11565
-// Function ID: 11566
+// Module ID: 11598
+// Function ID: 11599
 // Name: GameInviteVoiceCount
-// Dependencies: [19, 17, 4523, 21, 4448, 589, 5018, 712, 4444, 2]
+// Dependencies: [19, 17, 4555, 21, 4478, 589, 5050, 712, 4474, 2]
 // Exports: default
 
-// Module 11565 (GameInviteVoiceCount)
+// Module 11598 (GameInviteVoiceCount)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "getVoiceStatesForGuild" /* 4523 */;
+import closure_4 from "getVoiceStatesForGuild" /* 4555 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 noopAll;
@@ -30,10 +30,10 @@ export default function GameInviteVoiceCount(channel) {
     obj[0] = tmp.container;
     obj = { size: "xs", color: null };
     obj[1] = ThemesDefault.colors.ICON_FEEDBACK_POSITIVE;
-    const items2 = [callback(tmp2(5018).VoiceNormalIcon, obj), ];
+    const items2 = [callback(tmp2(5050).VoiceNormalIcon, obj), ];
     obj1 = { variant: "text-sm/medium", color: "text-feedback-positive", children: null };
     obj1[2] = stateFromStores;
-    items2[1] = callback(tmp2(4444).Text, obj1);
+    items2[1] = callback(tmp2(4474).Text, obj1);
     obj[1] = items2;
     tmp5 = callback2(View, obj);
   }

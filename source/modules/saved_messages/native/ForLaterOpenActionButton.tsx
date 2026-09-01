@@ -1,20 +1,20 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15992
+// Function ID: 15993
 // Name: BadgedIcon
-// Dependencies: [19, 17, 11206, 21, 8066, 15958, 4448, 712, 4383, 4167, 4902, 7572, 4411, 11253, 589, 7567, 7562, 7565, 5941, 7571, 7974, 1236, 2]
+// Dependencies: [19, 17, 11243, 21, 8098, 15993, 4478, 712, 4413, 4197, 4934, 7604, 4441, 11290, 589, 7599, 7594, 7597, 5973, 7603, 8006, 1236, 2]
 
-// Module 15957 (BadgedIcon)
+// Module 15992 (BadgedIcon)
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4167 */;
-import useThemeDefault from "useTheme" /* 4383 */;
-import styleProperties from "styleProperties" /* 4902 */;
-import SavedMessageSortTypes from "SavedMessageSortTypes" /* 7572 */;
-import SolidCutoutDefault from "SolidCutout" /* 8066 */;
+import map from "map" /* 4197 */;
+import useThemeDefault from "useTheme" /* 4413 */;
+import styleProperties from "styleProperties" /* 4934 */;
+import SavedMessageSortTypes from "SavedMessageSortTypes" /* 7604 */;
+import SolidCutoutDefault from "SolidCutout" /* 8098 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getTimeSafe" /* 11206 */;
+import closure_5 from "getTimeSafe" /* 11243 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function BadgedIcon(arg0) {
@@ -25,9 +25,9 @@ function BadgedIcon(arg0) {
   obj1 = styleProperties;
   const iconSizeStyles = obj1.useIconSizeStyles("sm", true, 2);
   if (type === SavedMessageSortTypes.SavedMessageSortTypes.REMINDER) {
-    let BookmarkIcon = tmp4(4411).ClockIcon;
+    let BookmarkIcon = tmp4(4441).ClockIcon;
   } else {
-    BookmarkIcon = tmp4(11253).BookmarkIcon;
+    BookmarkIcon = tmp4(11290).BookmarkIcon;
   }
   obj = { style: items, children: null };
   items = [tmp6.container, iconSizeStyles];

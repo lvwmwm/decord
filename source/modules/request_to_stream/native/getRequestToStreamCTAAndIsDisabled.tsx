@@ -1,15 +1,15 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12906
+// Function ID: 12907
 // Name: getRequestToStreamCTAAndIsDisabled
-// Dependencies: [32, 1218, 11296, 11, 11289, 1236, 2825, 2]
+// Dependencies: [32, 1218, 11333, 11, 11326, 1236, 2855, 2]
 // Exports: default
 
-// Module 12873 (getRequestToStreamCTAAndIsDisabled)
+// Module 12906 (getRequestToStreamCTAAndIsDisabled)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2825 */;
-import result2 from "result" /* 11289 */;
-import canFulfillStreamRequest from "canFulfillStreamRequest" /* 11296 */;
+import messagesProxyDefault from "messagesProxy" /* 2855 */;
+import result2 from "result" /* 11326 */;
+import canFulfillStreamRequest from "canFulfillStreamRequest" /* 11333 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 
@@ -27,34 +27,34 @@ export default function getRequestToStreamCTAAndIsDisabled(id) {
   const stringResult = intl.string(messagesProxyDefault["5+172e"]);
   if (tmp9) {
     const intl6 = tmp(1236).intl;
-    let text = intl6.string(tmp6(2825).u4QmWl);
+    let text = intl6.string(tmp6(2855).u4QmWl);
     let isDisabled = true;
   } else if (id.author.id === id) {
     const intl5 = tmp(1236).intl;
-    text = intl5.string(tmp6(2825)["8HU1M2"]);
+    text = intl5.string(tmp6(2855)["8HU1M2"]);
     isDisabled = true;
   } else {
     isDisabled = false;
     text = stringResult;
     if (!tmp3[0]) {
-      if (tmp(11296).StreamRequestUnfulfillableReason.ALREADY_STREAMING === tmp4) {
+      if (tmp(11333).StreamRequestUnfulfillableReason.ALREADY_STREAMING === tmp4) {
         const intl4 = tmp(1236).intl;
-        text = intl4.string(tmp6(2825).P0wwmM);
+        text = intl4.string(tmp6(2855).P0wwmM);
         isDisabled = true;
-      } else if (tmp(11296).StreamRequestUnfulfillableReason.NOT_RUNNING_GAME === tmp4) {
+      } else if (tmp(11333).StreamRequestUnfulfillableReason.NOT_RUNNING_GAME === tmp4) {
         const intl3 = tmp(1236).intl;
-        text = intl3.string(tmp6(2825)["43zohO"]);
+        text = intl3.string(tmp6(2855)["43zohO"]);
         isDisabled = true;
-      } else if (tmp(11296).StreamRequestUnfulfillableReason.NOT_IN_VOICE_CHANNEL === tmp4) {
+      } else if (tmp(11333).StreamRequestUnfulfillableReason.NOT_IN_VOICE_CHANNEL === tmp4) {
         const intl2 = tmp(1236).intl;
-        text = intl2.string(tmp6(2825).qRXats);
+        text = intl2.string(tmp6(2855).qRXats);
         isDisabled = true;
       } else {
         isDisabled = false;
         text = stringResult;
-        if (tmp(11296).StreamRequestUnfulfillableReason.NO_PERMISSION === tmp4) {
+        if (tmp(11333).StreamRequestUnfulfillableReason.NO_PERMISSION === tmp4) {
           const intl7 = tmp(1236).intl;
-          text = intl7.string(tmp6(2825)["fac+eE"]);
+          text = intl7.string(tmp6(2855)["fac+eE"]);
           isDisabled = true;
         }
       }

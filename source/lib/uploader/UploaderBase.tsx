@@ -1,14 +1,14 @@
-// Module ID: 7552
-// Function ID: 7553
+// Module ID: 7584
+// Function ID: 7585
 // Name: _fileSize
-// Dependencies: [5, 676, 4441, 3, 652, 12, 5086, 5091, 5048, 5049, 2]
+// Dependencies: [5, 676, 4471, 3, 652, 12, 5118, 5123, 5080, 5081, 2]
 
-// Module 7552 (_fileSize)
+// Module 7584 (_fileSize)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { AbortCodes } from "ME" /* 676 */;
-import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4441 */;
+import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import { EventEmitter } from "EventEmitter" /* 652 */;
 
 const require = arg1;
@@ -83,7 +83,7 @@ class UploaderBase extends EventEmitter {
     };
     obj = require("apply");
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "call" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "channel" };
     return tmp3;
   }
 }
@@ -112,7 +112,7 @@ prototype["compressAndCheckFileSize"] = function compressAndCheckFileSize() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -350,7 +350,7 @@ prototype["cancelItem"] = function cancelItem(itemId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

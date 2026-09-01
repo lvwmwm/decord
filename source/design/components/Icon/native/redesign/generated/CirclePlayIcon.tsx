@@ -1,15 +1,15 @@
-// Module ID: 10174
-// Function ID: 10175
+// Module ID: 10213
+// Function ID: 10214
 // Name: CirclePlayIcon
-// Dependencies: [19, 17, 21, 712, 4166, 10175, 10176, 2]
+// Dependencies: [19, 17, 21, 712, 4196, 10214, 10215, 2]
 // Exports: CirclePlayIcon
 
-// Module 10174 (CirclePlayIcon)
+// Module 10213 (CirclePlayIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 10175 */;
-import registerAsset2 from "registerAsset" /* 10176 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 10214 */;
+import registerAsset2 from "registerAsset" /* 10215 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

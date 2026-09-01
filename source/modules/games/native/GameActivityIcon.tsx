@@ -1,13 +1,13 @@
-// Module ID: 9833
-// Function ID: 9834
-// Dependencies: [19, 17, 21, 4448, 712, 4174, 8684, 1363, 5461, 1431, 2]
+// Module ID: 9872
+// Function ID: 9873
+// Dependencies: [19, 17, 21, 4478, 712, 4204, 8721, 1363, 5493, 1431, 2]
 
-// Module 9833
+// Module 9872
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -20,7 +20,7 @@ const memoResult = importAllResult.memo(function GameActivityIcon(style) {
   style = style.style;
   let iconURL;
   const tmp = callback();
-  let obj = onShown(4174);
+  let obj = onShown(4204);
   iconURL = game.getIconURL(size);
   obj = { width: size, height: size };
   const items = [iconURL, onShown];
@@ -41,7 +41,7 @@ const memoResult = importAllResult.memo(function GameActivityIcon(style) {
       let tmp2Result = tmp2(1363);
       const colors = iconURL(712).colors;
       obj[2] = tmp2Result.isThemeDark(obj.useThemeContext().theme) ? colors.WHITE : colors.BLACK;
-      jsx(tmp2(8684).UnknownGameIcon, { size: "custom", style: null, color: null });
+      jsx(tmp2(8721).UnknownGameIcon, { size: "custom", style: null, color: null });
       const isThemeDarkResult = tmp2Result.isThemeDark(obj.useThemeContext().theme);
     }
   } else {
@@ -50,7 +50,7 @@ const memoResult = importAllResult.memo(function GameActivityIcon(style) {
     obj1[0] = tmp2Result.makeSource(iconURL);
     const items2 = [tmp.icon, obj];
     obj1[1] = items2;
-    const tmp9 = jsx(iconURL(5461), { source: null, style: null });
+    const tmp9 = jsx(iconURL(5493), { source: null, style: null });
     let tmp6Result = tmp9;
     if (null != style) {
       const obj2 = { style: null, children: null };

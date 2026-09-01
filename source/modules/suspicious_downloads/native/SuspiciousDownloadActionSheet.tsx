@@ -1,15 +1,15 @@
-// Module ID: 12778
-// Function ID: 12779
+// Module ID: 12811
+// Function ID: 12812
 // Name: SuspiciousDownloadActionSheet
-// Dependencies: [19, 21, 4448, 712, 1628, 5590, 4894, 6224, 4444, 1236, 4896, 4415, 4154, 2]
+// Dependencies: [19, 21, 4478, 712, 1628, 5622, 4926, 6256, 4474, 1236, 4928, 4445, 4184, 2]
 // Exports: default
 
-// Module 12778 (SuspiciousDownloadActionSheet)
+// Module 12811 (SuspiciousDownloadActionSheet)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 noopAll;
@@ -29,17 +29,17 @@ export default function SuspiciousDownloadActionSheet(href) {
   obj = { spacing: 16, justify: "center", align: "center", style: items, children: null };
   items = [tmp.container, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   obj = { spacing: 8, justify: "center", align: "center", children: null };
-  const items1 = [callback(href(6224).TrafficConeSpotIllustration, {}), , ];
+  const items1 = [callback(href(6256).TrafficConeSpotIllustration, {}), , ];
   obj1 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = href(1236).intl;
   obj1[4] = intl.string(href(1236).t.XtDo9Z);
-  items1[1] = callback(href(4444).Text, obj1);
+  items1[1] = callback(href(4474).Text, obj1);
   const obj2 = { style: tmp.body, variant: "text-md/medium", children: null };
   const intl2 = href(1236).intl;
   obj2[2] = intl2.string(href(1236).t.L9yFko);
-  items1[2] = callback(href(4444).Text, obj2);
+  items1[2] = callback(href(4474).Text, obj2);
   obj[3] = items1;
-  const items2 = [callback2(href(4894).Stack, obj), ];
+  const items2 = [callback2(href(4926).Stack, obj), ];
   const obj3 = { spacing: 8, children: null };
   const obj4 = { text: null, onPress: null };
   const intl3 = href(1236).intl;
@@ -47,7 +47,7 @@ export default function SuspiciousDownloadActionSheet(href) {
   obj4[1] = function onPress() {
     return callback(table[11]).hideActionSheet();
   };
-  const items3 = [callback(href(4896).Button, obj4), ];
+  const items3 = [callback(href(4928).Button, obj4), ];
   const obj5 = { text: null, onPress: null, variant: "secondary" };
   const intl4 = href(1236).intl;
   obj5[0] = intl4.string(href(1236).t["/bHu89"]);
@@ -55,10 +55,10 @@ export default function SuspiciousDownloadActionSheet(href) {
     closure_1_1(closure_1_2[11]).hideActionSheet();
     closure_1_1(closure_1_2[12])(href, true);
   };
-  items3[1] = callback(href(4896).Button, obj5);
+  items3[1] = callback(href(4928).Button, obj5);
   obj3[1] = items3;
-  items2[1] = callback2(href(4894).Stack, obj3);
+  items2[1] = callback2(href(4926).Stack, obj3);
   obj[4] = items2;
-  obj[1] = callback2(href(4894).Stack, obj);
-  return callback(href(5590).BottomSheet, obj);
+  obj[1] = callback2(href(4926).Stack, obj);
+  return callback(href(5622).BottomSheet, obj);
 };

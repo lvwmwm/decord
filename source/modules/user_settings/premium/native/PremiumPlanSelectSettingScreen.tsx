@@ -1,13 +1,13 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14596
+// Function ID: 14597
 // Name: PremiumPlanSelectSettingScreen
-// Dependencies: [19, 21, 7127, 13166, 2]
+// Dependencies: [19, 21, 7159, 13199, 2]
 // Exports: default
 
-// Module 14563 (PremiumPlanSelectSettingScreen)
+// Module 14596 (PremiumPlanSelectSettingScreen)
 import noopAll from "noop" /* 19 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7127 */;
-import BoostPurchaseNitroBannerDefault from "BoostPurchaseNitroBanner" /* 13166 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7159 */;
+import BoostPurchaseNitroBannerDefault from "BoostPurchaseNitroBanner" /* 13199 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

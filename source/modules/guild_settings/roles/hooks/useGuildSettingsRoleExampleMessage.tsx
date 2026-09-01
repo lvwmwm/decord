@@ -1,12 +1,12 @@
-// Module ID: 17177
-// Function ID: 17178
+// Module ID: 17213
+// Function ID: 17214
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1930, 676, 4705, 7465, 1236, 8084, 12921, 2]
+// Dependencies: [19, 1935, 676, 4737, 7497, 1236, 8116, 12954, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 17177 (useGuildSettingsRoleExampleMessage)
+// Module 17213 (useGuildSettingsRoleExampleMessage)
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createdAt" /* 1930 */;
+import closure_5 from "createdAt" /* 1935 */;
 import { MessageStates } from "ME" /* 676 */;
 
 const require = arg1;

@@ -1,19 +1,19 @@
-// Module ID: 11440
-// Function ID: 11441
+// Module ID: 11473
+// Function ID: 11474
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 4448, 712, 8657, 4296, 4444, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 8689, 4326, 4474, 1236, 2]
 // Exports: default
 
-// Module 11440 (AppealIngestionPolicySummary)
+// Module 11473 (AppealIngestionPolicySummary)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hexToRgba from "hexToRgba" /* 4296 */;
-import Text from "Text" /* 4444 */;
-import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8657 */;
+import hexToRgba from "hexToRgba" /* 4326 */;
+import Text from "Text" /* 4474 */;
+import parseMessageEmbedForProps from "parseMessageEmbedForProps" /* 8689 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

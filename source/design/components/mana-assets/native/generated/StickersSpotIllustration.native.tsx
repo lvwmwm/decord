@@ -1,14 +1,14 @@
-// Module ID: 7005
-// Function ID: 7006
+// Module ID: 7037
+// Function ID: 7038
 // Name: StickersSpotIllustration
-// Dependencies: [21, 5461, 7006, 2]
+// Dependencies: [21, 5493, 7038, 2]
 // Exports: StickersSpotIllustration
 
-// Module 7005 (StickersSpotIllustration)
+// Module 7037 (StickersSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 7006 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 7038 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/StickersSpotIllustration.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 6202
-// Function ID: 6203
+// Module ID: 6234
+// Function ID: 6235
 // Name: useBottomSheetKeyboardHandling
-// Dependencies: [19, 5592, 2]
+// Dependencies: [19, 5624, 2]
 // Exports: default
 
-// Module 6202 (useBottomSheetKeyboardHandling)
+// Module 6234 (useBottomSheetKeyboardHandling)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

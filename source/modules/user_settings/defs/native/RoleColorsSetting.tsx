@@ -1,16 +1,16 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 14927
+// Function ID: 14928
 // Name: useRoleColorSettingValue
-// Dependencies: [19, 4440, 7852, 589, 14059, 1236, 11031, 2]
+// Dependencies: [19, 4470, 7884, 589, 14092, 1236, 11068, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 14894 (useRoleColorSettingValue)
+// Module 14927 (useRoleColorSettingValue)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import setFontSize from "setFontSize" /* 14059 */;
+import setFontSize from "setFontSize" /* 14092 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
-import createToggle from "createToggle" /* 11031 */;
+import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 function useRoleColorSettingValue() {

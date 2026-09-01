@@ -1,23 +1,23 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14182
+// Function ID: 14183
 // Name: importDefaultResult1
-// Dependencies: [1387, 1982, 1909, 4499, 4091, 4522, 4100, 5331, 1922, 4467, 10024, 676, 14150, 14151, 14152, 14153, 7732, 13408, 14154, 14155, 8713, 1236, 14156, 10035, 7469, 4642, 5353, 698, 4668, 4630, 2]
+// Dependencies: [1387, 1982, 1909, 4529, 4121, 4554, 4130, 5363, 1922, 4497, 10063, 676, 14183, 14184, 14185, 14186, 7764, 13441, 14187, 14188, 8750, 1236, 14189, 10074, 7501, 4674, 5385, 698, 4700, 4662, 2]
 
-// Module 14149 (importDefaultResult1)
-import initializeDefault from "initialize" /* 4630 */;
+// Module 14182 (importDefaultResult1)
+import initializeDefault from "initialize" /* 4662 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
 import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import importDefaultResult from "_detectH265HardwareDecode" /* 4499 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
-import importDefaultResult1 from "createRTCConnection" /* 4522 */;
-import closure_9 from "markAllUserIdListsStale" /* 4100 */;
-import closure_10 from "anyoneHasFlagInContext" /* 5331 */;
+import importDefaultResult from "_detectH265HardwareDecode" /* 4529 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
+import importDefaultResult1 from "createRTCConnection" /* 4554 */;
+import closure_9 from "markAllUserIdListsStale" /* 4130 */;
+import closure_10 from "anyoneHasFlagInContext" /* 5363 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import importDefaultResult2 from "updateVoiceState" /* 4467 */;
-import closure_13 from "getUserAgnosticState" /* 10024 */;
+import importDefaultResult2 from "updateVoiceState" /* 4497 */;
+import closure_13 from "getUserAgnosticState" /* 10063 */;
 import ME from "ME" /* 676 */;
-import registerAsset from "registerAsset" /* 14150 */;
+import registerAsset from "registerAsset" /* 14183 */;
 import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6, intl as intl7, intl as intl8, intl as intl9, intl as intl10, intl as intl11 } from "getSystemLocale" /* 1236 */;
 
 const require = arg1;

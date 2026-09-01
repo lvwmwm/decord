@@ -1,11 +1,11 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12277
+// Function ID: 12278
 // Name: _initialize
-// Dependencies: [1909, 676, 4630, 709, 6154, 2]
+// Dependencies: [1909, 676, 4662, 709, 6186, 2]
 
-// Module 12244 (_initialize)
+// Module 12277 (_initialize)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import initializeDefault from "initialize" /* 4630 */;
+import initializeDefault from "initialize" /* 4662 */;
 import closure_3 from "createGuildRecordFromRust" /* 1909 */;
 import { GuildFeatures } from "ME" /* 676 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 6058
-// Function ID: 6059
+// Module ID: 6090
+// Function ID: 6091
 // Name: _signOrder
-// Dependencies: [5, 676, 3, 4131, 530, 4124, 2]
+// Dependencies: [5, 676, 3, 4161, 530, 4154, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 6058 (_signOrder)
+// Module 6090 (_signOrder)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 4131 */;
+import setDefault from "set" /* 4161 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -30,7 +30,7 @@ function _signOrder() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -55,7 +55,7 @@ function _signOrder() {
               c4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -176,7 +176,7 @@ function _getOrder() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ function _fetchOrderEntitlements() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -381,7 +381,7 @@ function _fetchOrderEntitlementsWithRetry() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -435,7 +435,7 @@ function _fetchOrderEntitlementsWithRetry() {
                         obj[0] = arg1;
                         return obj;
                       } else {
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -490,7 +490,7 @@ function _fetchOrderEntitlementsWithRetry() {
                         } else {
                           closure_1 = arg1;
                           c3 = 3;
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         }
                       } catch (tmp16) {
                         c3 = tmp;

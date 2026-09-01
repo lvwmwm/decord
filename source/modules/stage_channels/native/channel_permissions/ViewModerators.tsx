@@ -1,20 +1,20 @@
-// Module ID: 16369
-// Function ID: 16370
+// Module ID: 16405
+// Function ID: 16406
 // Name: ViewModerators
-// Dependencies: [5, 19, 1992, 1985, 1909, 676, 8640, 21, 698, 4415, 16370, 2009, 1499, 589, 5327, 9668, 1395, 1955, 4826, 1236, 4461, 9669, 4163, 1297, 9673, 4894, 5960, 5567, 9185, 2]
+// Dependencies: [5, 19, 1992, 1985, 1909, 676, 8672, 21, 698, 4445, 16406, 2009, 1499, 589, 5359, 9707, 1395, 1955, 4858, 1236, 4491, 9708, 4193, 1297, 9712, 4926, 5992, 5599, 9224, 2]
 // Exports: default, openAddModeratorsActionSheet
 
-// Module 16369 (ViewModerators)
+// Module 16405 (ViewModerators)
 import noopAll from "noop" /* 19 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { RowType } from "RowType" /* 8640 */;
+import { RowType } from "RowType" /* 8672 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -57,7 +57,7 @@ export default function ViewModerators(channel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ export default function ViewModerators(channel) {
             obj2 = v0(closure_2_3[9]);
             obj2.hideActionSheet();
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c2 = tmp;
@@ -224,5 +224,5 @@ export const openAddModeratorsActionSheet = function openAddModeratorsActionShee
   obj.track(AnalyticEvents.OPEN_POPOUT, { type: "Grant Channel Access" });
   const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = { channel, canSkip: flag };
-  obj2.openLazy(asyncRequireImpl(16370, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
+  obj2.openLazy(asyncRequireImpl(16406, dependencyMap.paths), "channel-add-moderators-" + channel.id, obj);
 };

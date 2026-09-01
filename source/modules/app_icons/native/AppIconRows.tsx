@@ -1,20 +1,20 @@
-// Module ID: 15091
-// Function ID: 15092
+// Module ID: 15124
+// Function ID: 15125
 // Name: BackwardsCompatibleAppIconRows
-// Dependencies: [32, 19, 17, 1922, 21, 4448, 8147, 5960, 1236, 15092, 12991, 589, 1946, 2]
+// Dependencies: [32, 19, 17, 1922, 21, 4478, 8179, 5992, 1236, 15125, 13024, 589, 1946, 2]
 // Exports: default
 
-// Module 15091 (BackwardsCompatibleAppIconRows)
+// Module 15124 (BackwardsCompatibleAppIconRows)
 import initialize from "initialize" /* 589 */;
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
-import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 12991 */;
+import fetchCurrentAppIcon from "fetchCurrentAppIcon" /* 13024 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { createElement } from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function BackwardsCompatibleAppIconRows(arg0) {
@@ -49,7 +49,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
       obj.onLongPress = onLongPress;
       return closure_1_7(_undefined(_undefined2[9]), obj);
     });
-    obj[1] = callback(merged(5960).TableRowGroup, obj);
+    obj[1] = callback(merged(5992).TableRowGroup, obj);
     return callback(View, obj);
   }
 }

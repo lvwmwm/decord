@@ -1,10 +1,10 @@
-// Module ID: 13267
-// Function ID: 13268
+// Module ID: 13300
+// Function ID: 13301
 // Name: isVoiceServerUpdateImmediateEnabled
 // Dependencies: [2]
 // Exports: isVoiceServerUpdateImmediateEnabled
 
-// Module 13267 (isVoiceServerUpdateImmediateEnabled)
+// Module 13300 (isVoiceServerUpdateImmediateEnabled)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/gateway/VoiceServerUpdateImmediateExperiment.tsx");

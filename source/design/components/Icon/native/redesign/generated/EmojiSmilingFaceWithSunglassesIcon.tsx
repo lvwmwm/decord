@@ -1,14 +1,14 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 14989
+// Function ID: 14990
 // Name: EmojiSmilingFaceWithSunglassesIcon
-// Dependencies: [19, 21, 712, 4166, 14957, 2]
+// Dependencies: [19, 21, 712, 4196, 14990, 2]
 // Exports: EmojiSmilingFaceWithSunglassesIcon
 
-// Module 14956 (EmojiSmilingFaceWithSunglassesIcon)
+// Module 14989 (EmojiSmilingFaceWithSunglassesIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14957 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 14990 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 6878
-// Function ID: 6879
+// Module ID: 6910
+// Function ID: 6911
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6878 (metadata)
+// Module 6910 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PottedPlantIllocon-2x.png.js");

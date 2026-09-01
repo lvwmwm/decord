@@ -1,10 +1,10 @@
-// Module ID: 15372
-// Function ID: 15373
+// Module ID: 15406
+// Function ID: 15407
 // Name: useShopOrientationLock
-// Dependencies: [19, 11318, 2]
+// Dependencies: [19, 11356, 2]
 // Exports: useShopOrientationLock
 
-// Module 15372 (useShopOrientationLock)
+// Module 15406 (useShopOrientationLock)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

@@ -1,15 +1,15 @@
-// Module ID: 12546
-// Function ID: 12547
+// Module ID: 12579
+// Function ID: 12580
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1996, 12544, 7274, 676, 687, 709, 4723, 4347, 2]
+// Dependencies: [5, 1996, 12577, 7306, 676, 687, 709, 4755, 4377, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 12546 (_maybeFetchCollectionsWithProducts)
+// Module 12579 (_maybeFetchCollectionsWithProducts)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "getFetchState" /* 12544 */;
-import closure_6 from "fromServer" /* 7274 */;
+import closure_5 from "getFetchState" /* 12577 */;
+import closure_6 from "fromServer" /* 7306 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -32,7 +32,7 @@ function _maybeFetchCollectionsWithProducts() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ function _maybeFetchCollectionsWithProducts() {
               body = undefined;
               body = 1;
               fromServer = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp7) {
@@ -227,7 +227,7 @@ function _maybeFetchCollectionsForApplicationPage() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ function _maybeFetchCollectionsForApplicationPage() {
                       const _Date = Date;
                       if (Date.now() - collectionPageFetchedAt <= tmp33) {
                         fromServer = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     }
                   }
@@ -326,7 +326,7 @@ function _maybeFetchCollectionsForApplicationPage() {
               obj1 = callback2(709);
               const obj5 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_FAILURE", pageKey: null, apiError: null };
               obj5[1] = callback2;
-              const tmp21 = new callback2(4347)(locale);
+              const tmp21 = new callback2(4377)(locale);
               obj5[2] = tmp21;
               obj1.dispatch(obj5);
             } else if (arg0 === 1) {
@@ -403,7 +403,7 @@ function _maybeFetchCollectionsAfter() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -457,7 +457,7 @@ function _maybeFetchCollectionsAfter() {
                         const _Date = Date;
                         if (Date.now() - collectionsAfterFetchedAt <= tmp38) {
                           fromServer = 3;
-                          return { value: "HermesInternal", done: "HermesInternal" };
+                          return { value: "HermesInternal", done: null };
                         }
                       }
                     }
@@ -493,7 +493,7 @@ function _maybeFetchCollectionsAfter() {
               obj3 = lib2(709);
               obj5 = { type: "STOREFRONT_COLLECTIONS_AFTER_FETCH_FAILURE", requestKey: null, apiError: null };
               obj5[1] = lib;
-              const tmp28 = new lib2(4347)(dependencyMap);
+              const tmp28 = new lib2(4377)(dependencyMap);
               obj5[2] = tmp28;
               obj3.dispatch(obj5);
             } else if (arg0 === 1) {
@@ -556,7 +556,7 @@ function _maybeFetchCollectionsForApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -603,7 +603,7 @@ function _maybeFetchCollectionsForApplication() {
               let body;
               store = 1;
               fromServer = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp7) {
@@ -639,7 +639,7 @@ function _maybeFetchCollectionsForApplication() {
                           }
                         }
                         fromServer = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     }
                     locale = 1;

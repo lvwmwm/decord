@@ -1,17 +1,17 @@
-// Module ID: 17009
-// Function ID: 17010
+// Module ID: 17045
+// Function ID: 17046
 // Name: maybePresentModal
-// Dependencies: [4156, 7250, 14440, 7251, 676, 14441, 4415, 17010, 2009, 5454, 17012, 2]
+// Dependencies: [4186, 7282, 14473, 7283, 676, 14474, 4445, 17046, 2009, 5486, 17048, 2]
 
-// Module 17009 (maybePresentModal)
+// Module 17045 (maybePresentModal)
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
-import initializeDefault from "initialize" /* 5454 */;
-import frozen from "frozen" /* 14441 */;
-import closure_4 from "setContent" /* 4156 */;
-import closure_5 from "freshTeenActivityWithMap" /* 7250 */;
-import closure_6 from "initialize" /* 14440 */;
-import items from "items" /* 7251 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
+import initializeDefault from "initialize" /* 5486 */;
+import frozen from "frozen" /* 14474 */;
+import closure_4 from "setContent" /* 4186 */;
+import closure_5 from "freshTeenActivityWithMap" /* 7282 */;
+import closure_6 from "initialize" /* 14473 */;
+import items from "items" /* 7283 */;
 import { AppStates } from "ME" /* 676 */;
 
 require = arg1;
@@ -51,7 +51,7 @@ function maybePresentModal(daysRemaining) {
   if (tmp5) {
     const obj = { daysRemaining: null };
     obj[0] = daysRemaining;
-    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(17010, dependencyMap.paths), "ParentalConsentWarningModal", obj);
+    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(17046, dependencyMap.paths), "ParentalConsentWarningModal", obj);
     const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   }
 }
@@ -72,18 +72,18 @@ let prototype = function ParentalConsentWarningManager() {
         }
         return tmp;
       });
-      callback(17012).maybeFetchWarning();
+      callback(17048).maybeFetchWarning();
       if (!closure_6.shouldFetchToday()) {
         callback2(closure_6.getWarning());
       }
     },
     APP_STATE_UPDATE(state) {
       if (state.state === constants.ACTIVE) {
-        callback(17012).maybeFetchWarning();
+        callback(17048).maybeFetchWarning();
         if (!closure_6.shouldFetchToday()) {
           callback2(obj2.getWarning());
         }
-        const obj = callback(17012);
+        const obj = callback(17048);
         obj2 = closure_6;
       }
     },
@@ -106,16 +106,16 @@ let prototype = function ParentalConsentWarningManager() {
             if (warning != null) {
               const surfaces = warning.surfaces;
               if (surfaces != null) {
-                hasItem = surfaces.includes(callback(14441).ParentalConsentWarningSurface.BANNER);
+                hasItem = surfaces.includes(callback(14474).ParentalConsentWarningSurface.BANNER);
               }
             }
             if (true === hasItem) {
-              callback(17012).forceFetchWarning();
-              const obj2 = callback(17012);
+              callback(17048).forceFetchWarning();
+              const obj2 = callback(17048);
             }
           } else {
-            callback(17012).forceFetchWarning();
-            const obj = callback(17012);
+            callback(17048).forceFetchWarning();
+            const obj = callback(17048);
           }
         }
         tmp = undefined !== closure_3 && closure_3 !== someResult;
@@ -123,7 +123,7 @@ let prototype = function ParentalConsentWarningManager() {
     },
     LOGOUT() {
       c3 = undefined;
-      callback(17012).resetFetchState();
+      callback(17048).resetFetchState();
     }
   };
   return applyArgumentsResult;

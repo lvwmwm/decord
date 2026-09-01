@@ -1,12 +1,12 @@
-// Module ID: 9594
-// Function ID: 9595
+// Module ID: 9633
+// Function ID: 9634
 // Name: getNextShownUpcomingEventNoticeType
-// Dependencies: [1393, 4045, 11, 2]
+// Dependencies: [1393, 4075, 11, 2]
 // Exports: getNextShownUpcomingEventNoticeType
 
-// Module 9594 (getNextShownUpcomingEventNoticeType)
+// Module 9633 (getNextShownUpcomingEventNoticeType)
 import set from "set" /* 2 */;
-import hooksDefault from "hooks" /* 4045 */;
+import hooksDefault from "hooks" /* 4075 */;
 import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
 
 ({ UpcomingGuildEventNoticeTypes: obj1, NEW_EVENT_WINDOW_MILLISECONDS: c3, EVENT_STARTING_SOON_WINDOW_MILLISECONDS: c4, ACKED_RECENTLY_WINDOW_DAYS: c5 } = GUILD_EVENT_MAX_NAME_LENGTH);
@@ -18,7 +18,7 @@ export const getNextShownUpcomingEventNoticeType = function getNextShownUpcoming
   const diff = time - closure_4;
   if (obj.isBetween(diff, time)) {
     if (null != arg1) {
-      const obj4 = tmp(4045)(arg1);
+      const obj4 = tmp(4075)(arg1);
       const isBetweenResult = obj4.isBetween(diff, time);
       let EVENT_STARTING_SOON;
       if (!isBetweenResult) {

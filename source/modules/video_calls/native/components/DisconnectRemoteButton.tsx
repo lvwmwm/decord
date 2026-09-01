@@ -1,13 +1,13 @@
-// Module ID: 10056
-// Function ID: 10057
+// Module ID: 10095
+// Function ID: 10096
 // Name: DisconnectRemoteButton
-// Dependencies: [19, 4465, 21, 589, 9506, 7732, 10019, 1236, 9839, 9735, 2]
+// Dependencies: [19, 4495, 21, 589, 9545, 7764, 10058, 1236, 9878, 9774, 2]
 // Exports: DisconnectRemoteButton
 
-// Module 10056 (DisconnectRemoteButton)
+// Module 10095 (DisconnectRemoteButton)
 import noopAll from "noop" /* 19 */;
-import ActionButtonAll from "ActionButton" /* 9506 */;
-import closure_4 from "set" /* 4465 */;
+import ActionButtonAll from "ActionButton" /* 9545 */;
+import closure_4 from "set" /* 4495 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -21,7 +21,7 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
   const items = [closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ awaitingRemote: null != store.getAwaitingRemoteSessionInfo(), remoteSessionId: store.getRemoteSessionId() }));
   remoteSessionId = stateFromStoresObject.remoteSessionId;
-  obj = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7732 : 10019), accessibilityLabel: null, isSmallSize: null, onPress: null };
+  obj = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7764 : 10058), accessibilityLabel: null, isSmallSize: null, onPress: null };
   const intl = tmp(1236).intl;
   obj[1] = intl.string(channel(1236).t["6vrfgt"]);
   obj[2] = channel.isSmallSize;
@@ -36,5 +36,5 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
       const obj = channel(closure_1_3[8]);
     }
   };
-  return jsx(ActionButtonAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7732 : 10019), accessibilityLabel: null, isSmallSize: null, onPress: null });
+  return jsx(ActionButtonAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7764 : 10058), accessibilityLabel: null, isSmallSize: null, onPress: null });
 };

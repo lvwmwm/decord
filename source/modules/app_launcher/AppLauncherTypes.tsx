@@ -1,9 +1,9 @@
-// Module ID: 8403
-// Function ID: 8404
+// Module ID: 8435
+// Function ID: 8436
 // Name: AppLauncherEntrypoint
 // Dependencies: [2]
 
-// Module 8403 (AppLauncherEntrypoint)
+// Module 8435 (AppLauncherEntrypoint)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_launcher/AppLauncherTypes.tsx");

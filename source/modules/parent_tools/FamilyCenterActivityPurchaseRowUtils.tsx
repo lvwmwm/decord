@@ -1,16 +1,16 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14508
+// Function ID: 14509
 // Name: getCollectibleTypeName
-// Dependencies: [7260, 7261, 1924, 1950, 1236, 2369, 1431, 2]
+// Dependencies: [7292, 7293, 1924, 1950, 1236, 2369, 1431, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 14475 (getCollectibleTypeName)
+// Module 14508 (getCollectibleTypeName)
 import set from "set" /* 2 */;
 import getAvatarURL from "getAvatarURL" /* 1431 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import fromServer from "fromServer" /* 7260 */;
-import fromServer2 from "fromServer" /* 7261 */;
+import fromServer from "fromServer" /* 7292 */;
+import fromServer2 from "fromServer" /* 7293 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 function getCollectibleTypeName(type) {

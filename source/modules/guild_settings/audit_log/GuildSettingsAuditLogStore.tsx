@@ -1,13 +1,13 @@
-// Module ID: 17084
-// Function ID: 17085
+// Module ID: 17120
+// Function ID: 17121
 // Name: AuditLogActions
-// Dependencies: [17085, 1391, 1986, 1992, 1985, 1909, 676, 506, 12, 589, 709, 2]
+// Dependencies: [17121, 1391, 1986, 1992, 1985, 1909, 676, 506, 12, 589, 709, 2]
 
-// Module 17084 (AuditLogActions)
+// Module 17120 (AuditLogActions)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "getTargetType" /* 17085 */;
-import { AuditLogChange } from "getTargetType" /* 17085 */;
+import closure_2 from "getTargetType" /* 17121 */;
+import { AuditLogChange } from "getTargetType" /* 17121 */;
 import { isGuildSelectableChannelType as closure_4 } from "createChannelRecord" /* 1391 */;
 import { hasAnyPermission } from "GuildRoleRecordTypeTag" /* 1986 */;
 import closure_6 from "trackCommunicationDisabled" /* 1992 */;

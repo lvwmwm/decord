@@ -1,9 +1,9 @@
-// Module ID: 6868
-// Function ID: 6869
+// Module ID: 6900
+// Function ID: 6901
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6868 (metadata)
+// Module 6900 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PingPongPaddleIllocon-2x.png.js");

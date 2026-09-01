@@ -1,10 +1,10 @@
-// Module ID: 10325
-// Function ID: 10326
+// Module ID: 10364
+// Function ID: 10365
 // Name: filterFavoriteGIFsByQuery
 // Dependencies: [2]
 // Exports: filterFavoriteGIFsByQuery
 
-// Module 10325 (filterFavoriteGIFsByQuery)
+// Module 10364 (filterFavoriteGIFsByQuery)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/gif_picker/GifPickerUtils.tsx");

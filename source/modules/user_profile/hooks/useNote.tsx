@@ -1,13 +1,13 @@
-// Module ID: 12450
-// Function ID: 12451
+// Module ID: 12483
+// Function ID: 12484
 // Name: _fetchNote
-// Dependencies: [5, 19, 12451, 676, 589, 709, 530, 2]
+// Dependencies: [5, 19, 12484, 676, 589, 709, 530, 2]
 // Exports: default
 
-// Module 12450 (_fetchNote)
+// Module 12483 (_fetchNote)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getNote" /* 12451 */;
+import closure_5 from "getNote" /* 12484 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -30,7 +30,7 @@ function _fetchNote() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,13 +1,13 @@
-// Module ID: 10326
-// Function ID: 10327
-// Dependencies: [19, 17, 10318, 21, 4448, 712, 589, 4444, 1236, 4896, 2]
+// Module ID: 10365
+// Function ID: 10366
+// Dependencies: [19, 17, 10357, 21, 4478, 712, 589, 4474, 1236, 4928, 2]
 
-// Module 10326
+// Module 10365
 import ThemesDefault from "Themes" /* 712 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "getFormatFromUrl" /* 10318 */;
+import closure_4 from "getFormatFromUrl" /* 10357 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
 
 const require = arg1;
@@ -34,7 +34,7 @@ const memoResult = importAllResult.memo(function GIFPickerSearchSuggestions(onCl
     obj[0] = tmp.footerSuggestionsTitle;
     const intl = tmp2(1236).intl;
     obj[3] = intl.string(tmp2(1236).t["3JGJo2"]);
-    const items1 = [callback(tmp2(4444).Text, obj), ];
+    const items1 = [callback(tmp2(4474).Text, obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.suggestionsContainer;
     obj1[1] = stateFromStoresArray.map((text) => {

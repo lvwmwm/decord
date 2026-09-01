@@ -1,12 +1,12 @@
-// Module ID: 13328
-// Function ID: 13329
+// Module ID: 13361
+// Function ID: 13362
 // Name: filterOutBlockedOrIgnoredUsers
-// Dependencies: [4100, 1471, 12, 2]
+// Dependencies: [4130, 1471, 12, 2]
 // Exports: filterBlockedUsersFromVoiceStates, filterOutBlockedOrIgnoredUserIds, filterOutBlockedOrIgnoredUsers, filterOutStreamsByBlockedOwner, hasBlockedOrIgnoredUserIds, voiceStateHasBlockedUsers
 
-// Module 13328 (filterOutBlockedOrIgnoredUsers)
+// Module 13361 (filterOutBlockedOrIgnoredUsers)
 import applyDefault from "apply" /* 12 */;
-import closure_3 from "markAllUserIdListsStale" /* 4100 */;
+import closure_3 from "markAllUserIdListsStale" /* 4130 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/blocking/BlockedUserUtils.tsx");

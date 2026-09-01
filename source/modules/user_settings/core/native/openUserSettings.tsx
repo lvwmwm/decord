@@ -1,15 +1,15 @@
-// Module ID: 6213
-// Function ID: 6214
+// Module ID: 6245
+// Function ID: 6246
 // Name: openUserSettings
-// Dependencies: [6214, 676, 4303, 709, 2]
+// Dependencies: [6246, 676, 4333, 709, 2]
 // Exports: openUserSettings
 
-// Module 6213 (openUserSettings)
+// Module 6245 (openUserSettings)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4303 */;
-import handleFormClose from "handleFormClose" /* 6214 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
+import handleFormClose from "handleFormClose" /* 6246 */;
 
 const UserSettingsSections = ME.UserSettingsSections;
 const result = set.fileFinishedImporting("modules/user_settings/core/native/openUserSettings.tsx");

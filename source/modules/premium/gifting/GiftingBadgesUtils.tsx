@@ -1,14 +1,14 @@
-// Module ID: 13195
-// Function ID: 13196
+// Module ID: 13228
+// Function ID: 13229
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: [8528, 1922, 10478, 13196, 589, 4268, 1373, 2]
+// Dependencies: [8560, 1922, 10516, 13229, 589, 4298, 1373, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 13195 (getGiftingBadgeProgressPercent)
+// Module 13228 (getGiftingBadgeProgressPercent)
 import set from "set" /* 2 */;
-import initialize from "initialize" /* 8528 */;
-import apexExperiment from "apexExperiment" /* 10478 */;
-import apexExperiment2 from "apexExperiment" /* 13196 */;
+import initialize from "initialize" /* 8560 */;
+import apexExperiment from "apexExperiment" /* 10516 */;
+import apexExperiment2 from "apexExperiment" /* 13229 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 let closure_2 = initialize.getSingleRequirementThreshold;
@@ -86,7 +86,7 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
     }
     return flag;
   });
-  tmpResult = tmp(4268);
+  tmpResult = tmp(4298);
   const result = tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1373).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   if (tmp4) {
     tmp4 = stateFromStores;

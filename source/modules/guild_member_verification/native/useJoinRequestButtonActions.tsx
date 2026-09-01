@@ -1,10 +1,10 @@
-// Module ID: 12138
-// Function ID: 12139
+// Module ID: 12171
+// Function ID: 12172
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 1387, 676, 21, 4164, 1236, 6059, 4415, 7629, 4272, 4408, 712, 12139, 2009, 2]
+// Dependencies: [5, 32, 19, 1387, 676, 21, 4194, 1236, 6091, 4445, 7661, 4302, 4438, 712, 12172, 2009, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12138 (useJoinRequestButtonActions)
+// Module 12171 (useJoinRequestButtonActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -50,7 +50,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -190,7 +190,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

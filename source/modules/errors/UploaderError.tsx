@@ -1,10 +1,10 @@
-// Module ID: 11538
-// Function ID: 11539
+// Module ID: 11571
+// Function ID: 11572
 // Name: prototype
-// Dependencies: [4347, 2]
+// Dependencies: [4377, 2]
 
-// Module 11538 (prototype)
-import prototypeDefault from "prototype" /* 4347 */;
+// Module 11571 (prototype)
+import prototypeDefault from "prototype" /* 4377 */;
 
 prototypeDefault;
 const prototype = function UploaderError(body) {

@@ -1,10 +1,10 @@
-// Module ID: 17008
-// Function ID: 17009
+// Module ID: 17044
+// Function ID: 17045
 // Name: apexExperiment
 // Dependencies: [1468, 2]
 // Exports: getFakePlayAgeSignalsConfig, isFakePlayAgeSignalsEnabled
 
-// Module 17008 (apexExperiment)
+// Module 17044 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

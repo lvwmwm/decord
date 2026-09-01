@@ -1,12 +1,12 @@
-// Module ID: 13293
-// Function ID: 13294
+// Module ID: 13326
+// Function ID: 13327
 // Name: getInitialState
-// Dependencies: [5191, 13294, 13295, 2]
+// Dependencies: [5223, 13327, 13328, 2]
 
-// Module 13293 (getInitialState)
-import shouldCommitDefault from "shouldCommit" /* 13294 */;
-import rateLimitDefault from "rateLimit" /* 13295 */;
-import closure_2 from "filterPlayingActivities" /* 5191 */;
+// Module 13326 (getInitialState)
+import shouldCommitDefault from "shouldCommit" /* 13327 */;
+import rateLimitDefault from "rateLimit" /* 13328 */;
+import closure_2 from "filterPlayingActivities" /* 5223 */;
 
 shouldCommitDefault;
 class LocalPresenceStateManager extends tmp2 {

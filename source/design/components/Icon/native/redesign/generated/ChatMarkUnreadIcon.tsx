@@ -1,14 +1,14 @@
-// Module ID: 10282
-// Function ID: 10283
+// Module ID: 10321
+// Function ID: 10322
 // Name: ChatMarkUnreadIcon
-// Dependencies: [19, 21, 712, 4166, 10283, 2]
+// Dependencies: [19, 21, 712, 4196, 10322, 2]
 // Exports: ChatMarkUnreadIcon
 
-// Module 10282 (ChatMarkUnreadIcon)
+// Module 10321 (ChatMarkUnreadIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 10283 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 10322 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

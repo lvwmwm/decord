@@ -1,14 +1,14 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12158
+// Function ID: 12159
 // Name: loadMessageRequestData
-// Dependencies: [5, 4703, 4463, 12126, 676, 589, 12, 530, 709, 2]
+// Dependencies: [5, 4735, 4493, 12159, 676, 589, 12, 530, 709, 2]
 // Exports: useMessageRequestPreview
 
-// Module 12125 (loadMessageRequestData)
+// Module 12158 (loadMessageRequestData)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "reinjectEphemerals" /* 4703 */;
-import closure_5 from "generateOldThreadCutoff" /* 4463 */;
-import closure_6 from "isMessagePreviewEnabledForChannel" /* 12126 */;
+import closure_4 from "reinjectEphemerals" /* 4735 */;
+import closure_5 from "generateOldThreadCutoff" /* 4493 */;
+import closure_6 from "isMessagePreviewEnabledForChannel" /* 12159 */;
 import { Endpoints } from "ME" /* 676 */;
 import set from "set" /* 2 */;
 
@@ -37,7 +37,7 @@ function _loadMessageRequestData() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -58,7 +58,7 @@ function _loadMessageRequestData() {
               c3 = 0;
               c9 = null;
               c4 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             } else {
               callback();
               v0 = 2;
@@ -126,7 +126,7 @@ function _loadMessageRequestDataHelper() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {

@@ -1,15 +1,15 @@
-// Module ID: 16891
-// Function ID: 16892
+// Module ID: 16927
+// Function ID: 16928
 // Name: prototype
-// Dependencies: [4489, 1387, 4522, 4536, 11174, 16892, 4514, 16895, 2009, 6014, 4415, 4081, 16899, 16902, 16904, 2]
+// Dependencies: [4519, 1387, 4554, 4568, 11211, 16928, 4544, 16931, 2009, 6046, 4445, 4111, 16935, 16938, 16940, 2]
 
-// Module 16891 (prototype)
-import optOutEligibilityCheckDefault from "optOutEligibilityCheck" /* 16892 */;
-import closure_3 from "addApplication" /* 4489 */;
+// Module 16927 (prototype)
+import optOutEligibilityCheckDefault from "optOutEligibilityCheck" /* 16928 */;
+import closure_3 from "addApplication" /* 4519 */;
 import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "createRTCConnection" /* 4522 */;
-import closure_6 from "initialize" /* 4536 */;
-import { FeedbackType } from "FeedbackRating" /* 11174 */;
+import closure_5 from "createRTCConnection" /* 4554 */;
+import closure_6 from "initialize" /* 4568 */;
+import { FeedbackType } from "FeedbackRating" /* 11211 */;
 
 let require = arg1;
 optOutEligibilityCheckDefault;

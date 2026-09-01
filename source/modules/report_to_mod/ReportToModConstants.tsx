@@ -1,9 +1,9 @@
-// Module ID: 6102
-// Function ID: 6103
+// Module ID: 6134
+// Function ID: 6135
 // Name: ReportToModPermissions
 // Dependencies: [676, 506, 2]
 
-// Module 6102 (ReportToModPermissions)
+// Module 6134 (ReportToModPermissions)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import importAllResult from "fromString" /* 506 */;

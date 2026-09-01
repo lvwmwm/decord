@@ -1,11 +1,11 @@
-// Module ID: 12933
-// Function ID: 12934
+// Module ID: 12966
+// Function ID: 12967
 // Name: parseACOMErrorCode
-// Dependencies: [5, 1218, 12929, 584, 1473, 4332, 2]
+// Dependencies: [5, 1218, 12962, 584, 1473, 4362, 2]
 // Exports: retryACOMRequest
 
-// Module 12933 (parseACOMErrorCode)
-import getUnderlyingIOSExceptionRecursivelyAll from "getUnderlyingIOSExceptionRecursively" /* 12929 */;
+// Module 12966 (parseACOMErrorCode)
+import getUnderlyingIOSExceptionRecursivelyAll from "getUnderlyingIOSExceptionRecursively" /* 12962 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 
@@ -56,7 +56,7 @@ function _retryACOMRequest() {
           obj[0] = value;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -149,7 +149,7 @@ function _retryACOMRequest() {
               const obj13 = obj8(1473);
               const _Math = Math;
               const _Date2 = Date;
-              items[1] = callback(4332).timeoutPromise(Math.max(0, dependencyMap - Date.now()));
+              items[1] = callback(4362).timeoutPromise(Math.max(0, dependencyMap - Date.now()));
               constants = 4;
               c7 = 1;
               const obj7 = { value: null, done: false };

@@ -1,10 +1,10 @@
-// Module ID: 17421
-// Function ID: 17422
+// Module ID: 17457
+// Function ID: 17458
 // Name: onTaskComplete
-// Dependencies: [5, 32, 19, 21, 17416, 17417, 17411, 4164, 1236, 2633, 17420, 4894, 712, 4444, 7673, 17422, 2]
+// Dependencies: [5, 32, 19, 21, 17452, 17453, 17447, 4194, 1236, 2663, 17456, 4926, 712, 4474, 7705, 17458, 2]
 // Exports: default
 
-// Module 17421 (onTaskComplete)
+// Module 17457 (onTaskComplete)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -39,7 +39,7 @@ export default function _default() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

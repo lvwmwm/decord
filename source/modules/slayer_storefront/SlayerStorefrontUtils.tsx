@@ -1,22 +1,22 @@
-// Module ID: 6041
-// Function ID: 6042
+// Module ID: 6073
+// Function ID: 6074
 // Name: getPrice
-// Dependencies: [4489, 6042, 4474, 1909, 6043, 6044, 676, 678, 505, 4723, 6045, 12, 6046, 1486, 5366, 589, 5927, 2]
+// Dependencies: [4519, 6074, 4504, 1909, 6075, 6076, 676, 678, 505, 4755, 6077, 12, 6078, 1486, 5398, 589, 5959, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getCountryPrices, getForwardedSKUShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, hasPrice, isGameItemSKU, isGiftPriceDifferent, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 6041 (getPrice)
+// Module 6073 (getPrice)
 import applyDefault from "apply" /* 12 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
-import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4723 */;
-import keysSorter from "keysSorter" /* 5366 */;
-import RewardRequirementType from "RewardRequirementType" /* 6045 */;
-import useSKUPrice from "useSKUPrice" /* 6046 */;
-import closure_3 from "addApplication" /* 4489 */;
-import { WishlistRecommendationReason as closure_4 } from "fromServer" /* 6042 */;
-import closure_5 from "createExecutable" /* 4474 */;
+import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4755 */;
+import keysSorter from "keysSorter" /* 5398 */;
+import RewardRequirementType from "RewardRequirementType" /* 6077 */;
+import useSKUPrice from "useSKUPrice" /* 6078 */;
+import closure_3 from "addApplication" /* 4519 */;
+import { WishlistRecommendationReason as closure_4 } from "fromServer" /* 6074 */;
+import closure_5 from "createExecutable" /* 4504 */;
 import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "handleUserSettingsStoreUpdate" /* 6043 */;
-import STOREFRONT_MARKETING_GUILD_ID from "STOREFRONT_MARKETING_GUILD_ID" /* 6044 */;
+import closure_7 from "handleUserSettingsStoreUpdate" /* 6075 */;
+import STOREFRONT_MARKETING_GUILD_ID from "STOREFRONT_MARKETING_GUILD_ID" /* 6076 */;
 import ME from "ME" /* 676 */;
 import { CollectibleShopTab } from "items" /* 678 */;
 import { CurrencyCodes } from "sum" /* 505 */;
@@ -454,7 +454,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       if (0 !== tenantMetadata.tenantMetadata.socialLayer.carouselItems.length) {
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj = { primaryIconAsset: "cix", primaryIconLabel: "id" };
+          obj = { primaryIconAsset: "children", primaryIconLabel: "c" };
         } else {
           const obj3 = _httpGetWithCountryCodeQuery;
           const toURLSafeResult = isDiscordProxiedAssetUrlDefault.toURLSafe(obj3.getAssetURL(arg1, first.labelIconAssetId, num, "webp"));
@@ -467,7 +467,7 @@ export const getPrimaryCarouselItemInfo = function getPrimaryCarouselItemInfo(te
       }
     }
   }
-  return { primaryIconAsset: "cix", primaryIconLabel: "id" };
+  return { primaryIconAsset: "children", primaryIconLabel: "c" };
 };
 export const getGameItemThumbnailUrl = function getGameItemThumbnailUrl(error) {
   let obj = arg1;
@@ -665,7 +665,7 @@ export const useGetSocialLayerStorefrontGuildIdAndApplication = function useGetS
   const items = [closure_7];
   const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_7.getGuildIdFromApplicationId(closure_0));
   const obj = _require(589);
-  const application = _require(5927).useGetOrFetchApplication(applicationId);
+  const application = _require(5959).useGetOrFetchApplication(applicationId);
   let guildId = stateFromStores;
   if (stateFromStores == null) {
     guildId = undefined;

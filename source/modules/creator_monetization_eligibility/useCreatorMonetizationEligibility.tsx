@@ -1,14 +1,14 @@
-// Module ID: 17260
-// Function ID: 17261
+// Module ID: 17296
+// Function ID: 17297
 // Name: useCreatorMonetizationEligibility
-// Dependencies: [5, 32, 19, 17230, 17233, 4347, 2]
+// Dependencies: [5, 32, 19, 17266, 17269, 4377, 2]
 // Exports: default
 
-// Module 17260 (useCreatorMonetizationEligibility)
+// Module 17296 (useCreatorMonetizationEligibility)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import { CreatorMonetizationApplicationState as closure_6 } from "CreatorMonetizationApplicationState" /* 17230 */;
+import { CreatorMonetizationApplicationState as closure_6 } from "CreatorMonetizationApplicationState" /* 17266 */;
 
 const result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/useCreatorMonetizationEligibility.tsx");
 
@@ -37,7 +37,7 @@ export default function useCreatorMonetizationEligibility(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

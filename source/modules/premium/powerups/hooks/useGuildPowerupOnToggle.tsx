@@ -1,10 +1,10 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 12100
+// Function ID: 12101
 // Name: useGuildPowerupOnToggle
-// Dependencies: [32, 19, 12019, 2]
+// Dependencies: [32, 19, 12052, 2]
 // Exports: default
 
-// Module 12067 (useGuildPowerupOnToggle)
+// Module 12100 (useGuildPowerupOnToggle)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 

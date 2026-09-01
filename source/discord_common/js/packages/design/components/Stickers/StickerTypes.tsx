@@ -1,9 +1,9 @@
-// Module ID: 5181
-// Function ID: 5182
+// Module ID: 5213
+// Function ID: 5214
 // Name: MetaStickerType
 // Dependencies: [2]
 
-// Module 5181 (MetaStickerType)
+// Module 5213 (MetaStickerType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/components/Stickers/StickerTypes.tsx");

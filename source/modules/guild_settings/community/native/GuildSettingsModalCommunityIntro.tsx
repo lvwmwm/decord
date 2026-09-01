@@ -1,20 +1,20 @@
-// Module ID: 17204
-// Function ID: 17205
+// Module ID: 17240
+// Function ID: 17241
 // Name: FeatureCard
-// Dependencies: [19, 17, 1909, 4091, 9690, 676, 21, 4448, 712, 10337, 1236, 4444, 15973, 4403, 1499, 589, 709, 9689, 17205, 1995, 4896, 17209, 4163, 5907, 2]
+// Dependencies: [19, 17, 1909, 4121, 9729, 676, 21, 4478, 712, 10376, 1236, 4474, 16008, 4433, 1499, 589, 709, 9728, 17241, 1995, 4928, 17245, 4193, 5939, 2]
 // Exports: default
 
-// Module 17204 (FeatureCard)
+// Module 17240 (FeatureCard)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4444 */;
+import Text from "Text" /* 4474 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_9 from "handleFormInit" /* 9690 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_9 from "handleFormInit" /* 9729 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function FeatureCard(arg0) {

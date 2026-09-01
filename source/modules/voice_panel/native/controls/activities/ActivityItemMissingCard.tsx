@@ -1,16 +1,16 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16727
+// Function ID: 16728
 // Name: ActivityItemEmptyCard
-// Dependencies: [5, 19, 17, 21, 4448, 712, 11806, 5921, 9475, 9582, 5036, 16692, 16693, 5974, 2]
+// Dependencies: [5, 19, 17, 21, 4478, 712, 11839, 5953, 9514, 9621, 5068, 16728, 16729, 6006, 2]
 
-// Module 16691 (ActivityItemEmptyCard)
+// Module 16727 (ActivityItemEmptyCard)
 import ThemesDefault from "Themes" /* 712 */;
-import setDefault from "set" /* 5974 */;
+import setDefault from "set" /* 6006 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function ActivityItemEmptyCard(activity) {
@@ -37,7 +37,7 @@ function ActivityItemEmptyCard(activity) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -74,7 +74,7 @@ function ActivityItemEmptyCard(activity) {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         v0 = tmp;

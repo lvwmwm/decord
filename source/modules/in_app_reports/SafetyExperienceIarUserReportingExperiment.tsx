@@ -1,12 +1,12 @@
-// Module ID: 9020
-// Function ID: 9021
+// Module ID: 9057
+// Function ID: 9058
 // Name: experiment
-// Dependencies: [4359, 2]
+// Dependencies: [4389, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 9020 (experiment)
+// Module 9057 (experiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4359 */;
+import createExperiment from "createExperiment" /* 4389 */;
 
 const items = [{ id: 1, label: "Enabled", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "user", id: "2023-09_iar_user_reporting", label: "Safety Experience IAR User Reporting", defaultConfig: { enabled: false }, treatments: items });

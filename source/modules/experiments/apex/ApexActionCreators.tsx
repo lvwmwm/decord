@@ -1,10 +1,10 @@
-// Module ID: 11045
-// Function ID: 11046
+// Module ID: 11082
+// Function ID: 11083
 // Name: _fetchApexExperimentsMetadata
-// Dependencies: [109, 5, 1212, 676, 530, 709, 7604, 1472, 589, 2]
+// Dependencies: [109, 5, 1212, 676, 530, 709, 7636, 1472, 589, 2]
 // Exports: fetchApexExperimentsMetadata, fetchInstallationExperiments, fetchUserExperimentAssignments
 
-// Module 11045 (_fetchApexExperimentsMetadata)
+// Module 11082 (_fetchApexExperimentsMetadata)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "initialize" /* 1212 */;
@@ -80,7 +80,7 @@ function _fetchUserExperimentAssignments() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -194,7 +194,7 @@ function _fetchInstallationExperiments() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

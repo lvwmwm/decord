@@ -1,28 +1,28 @@
-// Module ID: 15288
-// Function ID: 15289
+// Module ID: 15322
+// Function ID: 15323
 // Name: IntroScreen
-// Dependencies: [32, 19, 17, 1922, 10963, 21, 4448, 712, 589, 4292, 1499, 6224, 4444, 1236, 4896, 10970, 15289, 10976, 5463, 10991, 4691, 10971, 5976, 2]
+// Dependencies: [32, 19, 17, 1922, 11000, 21, 4478, 712, 589, 4322, 1499, 6256, 4474, 1236, 4928, 11007, 15323, 11013, 5495, 11028, 4723, 11008, 6008, 2]
 // Exports: default
 
-// Module 15288 (IntroScreen)
+// Module 15322 (IntroScreen)
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import nameFromUserDefault from "nameFromUser" /* 4292 */;
-import Text from "Text" /* 4444 */;
-import Button from "Button" /* 4896 */;
-import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6224 */;
-import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 10976 */;
-import TakeActionButtonsDefault from "TakeActionButtons" /* 15289 */;
+import nameFromUserDefault from "nameFromUser" /* 4322 */;
+import Text from "Text" /* 4474 */;
+import Button from "Button" /* 4928 */;
+import AccountAgeTier10LargeBadge from "AccountAgeTier10LargeBadge" /* 6256 */;
+import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 11013 */;
+import TakeActionButtonsDefault from "TakeActionButtons" /* 15323 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { useState } from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 10963 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 11000 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function IntroScreen(arg0) {
@@ -104,16 +104,16 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = callback4();
   let obj = { style: tmp.container, children: null };
-  const items = [callback2(trackAnalyticsEvent(6224).SafetyChatSpotIllustration, {}), , ];
+  const items = [callback2(trackAnalyticsEvent(6256).SafetyChatSpotIllustration, {}), , ];
   obj = { style: tmp.warningText, children: null };
   obj = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: null };
   const intl = trackAnalyticsEvent(1236).intl;
   obj[3] = intl.string(trackAnalyticsEvent(1236).t.NUMAsF);
-  const items1 = [callback2(trackAnalyticsEvent(4444).Text, obj), ];
+  const items1 = [callback2(trackAnalyticsEvent(4474).Text, obj), ];
   obj1 = { variant: "text-md/medium", style: tmp.takeoverDescription, children: null };
   const intl2 = trackAnalyticsEvent(1236).intl;
   obj1[2] = intl2.string(trackAnalyticsEvent(1236).t.uicS5l);
-  items1[1] = callback2(trackAnalyticsEvent(4444).Text, obj1);
+  items1[1] = callback2(trackAnalyticsEvent(4474).Text, obj1);
   obj[1] = items1;
   items[1] = callback3(closure_7, obj);
   const obj2 = { style: tmp.ctaContainer, children: null };
@@ -124,7 +124,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
     closure_1_6.openURL(closure_1_9);
     trackAnalyticsEvent(trackAnalyticsEvent(closure_1_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_CTL_SMS);
   };
-  const items2 = [callback2(trackAnalyticsEvent(4896).Button, obj3), ];
+  const items2 = [callback2(trackAnalyticsEvent(4928).Button, obj3), ];
   const obj4 = { variant: "secondary", size: "lg", text: null, grow: true, onPress: null };
   const intl4 = trackAnalyticsEvent(1236).intl;
   obj4[2] = intl4.string(trackAnalyticsEvent(1236).t.ogLlvy);
@@ -132,7 +132,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
     closure_1_6.openURL(closure_1_10);
     trackAnalyticsEvent(trackAnalyticsEvent(closure_1_2[15]).CtaEventTypes.USER_TAKEOVER_MODAL_CTL_WEB);
   };
-  items2[1] = callback2(trackAnalyticsEvent(4896).Button, obj4);
+  items2[1] = callback2(trackAnalyticsEvent(4928).Button, obj4);
   obj2[1] = items2;
   items[2] = callback3(closure_7, obj2);
   obj[1] = items;

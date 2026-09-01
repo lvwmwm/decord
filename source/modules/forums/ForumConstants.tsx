@@ -1,9 +1,9 @@
-// Module ID: 6088
-// Function ID: 6089
+// Module ID: 6120
+// Function ID: 6121
 // Name: FORUM_GUIDELINES_ACTION_SHEET
 // Dependencies: [2]
 
-// Module 6088 (FORUM_GUIDELINES_ACTION_SHEET)
+// Module 6120 (FORUM_GUIDELINES_ACTION_SHEET)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/forums/ForumConstants.tsx");

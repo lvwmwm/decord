@@ -1,16 +1,16 @@
-// Module ID: 12512
-// Function ID: 12513
+// Module ID: 12545
+// Function ID: 12546
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4448, 8854, 8461, 1236, 1297, 2]
+// Dependencies: [19, 17, 21, 4478, 8891, 8493, 1236, 1297, 2]
 // Exports: default
 
-// Module 12512 (AvatarDecorationProductPreview)
+// Module 12545 (AvatarDecorationProductPreview)
 import noopAll from "noop" /* 19 */;
-import firstAvatarDecoration2 from "firstAvatarDecoration" /* 8461 */;
-import useCurrentUser from "useCurrentUser" /* 8854 */;
+import firstAvatarDecoration2 from "firstAvatarDecoration" /* 8493 */;
+import useCurrentUser from "useCurrentUser" /* 8891 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

@@ -1,14 +1,14 @@
-// Module ID: 6299
-// Function ID: 6300
+// Module ID: 6331
+// Function ID: 6332
 // Name: AvatarMallowExample
-// Dependencies: [21, 5461, 6300, 2]
+// Dependencies: [21, 5493, 6332, 2]
 // Exports: AvatarMallowExample
 
-// Module 6299 (AvatarMallowExample)
+// Module 6331 (AvatarMallowExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6300 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6332 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMallowExample.native.tsx");

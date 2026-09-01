@@ -1,9 +1,9 @@
-// Module ID: 5361
-// Function ID: 5362
+// Module ID: 5393
+// Function ID: 5394
 // Name: AdPlacement
 // Dependencies: [2]
 
-// Module 5361 (AdPlacement)
+// Module 5393 (AdPlacement)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AdPlacement.tsx");

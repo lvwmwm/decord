@@ -1,12 +1,12 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15792
+// Function ID: 15793
 // Name: SearchableDestinationListRow
-// Dependencies: [19, 21, 9885, 10680, 10602, 7374, 10609, 10612, 1471, 2]
+// Dependencies: [19, 21, 9924, 10718, 10640, 7406, 10647, 10650, 1471, 2]
 // Exports: default
 
-// Module 15756 (SearchableDestinationListRow)
+// Module 15792 (SearchableDestinationListRow)
 import noopAll from "noop" /* 19 */;
-import sortByMatchScore from "sortByMatchScore" /* 9885 */;
+import sortByMatchScore from "sortByMatchScore" /* 9924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -25,23 +25,23 @@ export default function SearchableDestinationListRow(result) {
     if (null != onPressDestination) {
       const fn = () => onPressDestination(result(closure_1_2[3]).getDestinationIdFromResult(closure_0));
     }
-    if (tmp2(9885).AutocompleterResultTypes.USER === type) {
+    if (tmp2(9924).AutocompleterResultTypes.USER === type) {
       let obj = {};
       const merged1 = Object.assign(merged);
       obj.user = record;
-      let tmp2Result = tmp2(7374);
+      let tmp2Result = tmp2(7406);
       obj.type = tmp2Result.getRelationshipType(record.id);
       obj.onPress = fn;
-      return jsx(onPressDestination(10602), {});
-    } else if (tmp2(9885).AutocompleterResultTypes.GROUP_DM === type) {
+      return jsx(onPressDestination(10640), {});
+    } else if (tmp2(9924).AutocompleterResultTypes.GROUP_DM === type) {
       obj = {};
       const merged2 = Object.assign(merged);
       obj.channel = record;
       obj.onPress = fn;
-      return jsx(onPressDestination(10609), {});
+      return jsx(onPressDestination(10647), {});
     } else {
-      if (tmp2(9885).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (tmp2(9885).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (tmp2(9924).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (tmp2(9924).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           tmp2Result = tmp2(1471);
           return tmp2Result.assertNever(type);
         }
@@ -50,7 +50,7 @@ export default function SearchableDestinationListRow(result) {
       const merged3 = Object.assign(merged);
       obj1.channel = record;
       obj1.onPress = fn;
-      return jsx(onPressDestination(10612), {});
+      return jsx(onPressDestination(10650), {});
     }
   }
 };

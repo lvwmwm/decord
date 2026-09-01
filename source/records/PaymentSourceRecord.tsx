@@ -1,12 +1,12 @@
-// Module ID: 4113
-// Function ID: 4114
+// Module ID: 4143
+// Function ID: 4144
 // Name: createFromServer
-// Dependencies: [1931, 676, 1471, 1399, 2]
+// Dependencies: [1936, 676, 1471, 1399, 2]
 
-// Module 4113 (createFromServer)
+// Module 4143 (createFromServer)
 import hasFlag from "hasFlag" /* 1399 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import toJSDefault from "toJS" /* 1931 */;
+import toJSDefault from "toJS" /* 1936 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

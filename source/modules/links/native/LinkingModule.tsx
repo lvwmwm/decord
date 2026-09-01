@@ -1,11 +1,11 @@
-// Module ID: 4157
-// Function ID: 4158
-// Dependencies: [17, 500, 4158, 2]
+// Module ID: 4187
+// Function ID: 4188
+// Dependencies: [17, 500, 4188, 2]
 
-// Module 4157
+// Module 4187
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 4158 */;
+import enforcingDefault from "enforcing" /* 4188 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 let result = set.fileFinishedImporting("modules/links/native/LinkingModule.tsx");

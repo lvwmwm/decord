@@ -1,22 +1,22 @@
-// Module ID: 5463
-// Function ID: 5464
+// Module ID: 5495
+// Function ID: 5496
 // Name: HeaderBackImage
-// Dependencies: [5, 19, 17, 676, 21, 4448, 712, 4444, 5464, 5467, 1500, 5469, 1236, 5470, 5519, 500, 1628, 5460, 2]
+// Dependencies: [5, 19, 17, 676, 21, 4478, 712, 4474, 5496, 5499, 1500, 5501, 1236, 5502, 5551, 500, 1628, 5492, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 5463 (HeaderBackImage)
+// Module 5495 (HeaderBackImage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import Text from "Text" /* 4444 */;
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5460 */;
-import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5464 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5467 */;
-import Background from "Background" /* 5470 */;
+import Text from "Text" /* 4474 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5492 */;
+import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5496 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 5499 */;
+import Background from "Background" /* 5502 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 class HeaderBackImage {
@@ -61,7 +61,7 @@ function CloseButton(onPress) {
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.create(null));
-  let obj = onPress(5469);
+  let obj = onPress(5501);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -75,7 +75,7 @@ function CustomHeaderBackButton(onPress) {
   obj.backImage = function backImage() {
     return callback(closure_9, {});
   };
-  return callback(onPress(5470).HeaderBackButton, obj);
+  return callback(onPress(5502).HeaderBackButton, obj);
 }
 function HeaderTextButton(text) {
   text = text.text;
@@ -177,7 +177,7 @@ export function getHeaderConditionalBackButton(handleBack) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -214,7 +214,7 @@ export function getHeaderConditionalBackButton(handleBack) {
                 }
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp10) {
             c2 = tmp;

@@ -1,20 +1,20 @@
-// Module ID: 10493
-// Function ID: 10494
+// Module ID: 10531
+// Function ID: 10532
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4448, 712, 5921, 8855, 503, 10484, 4444, 1236, 2465, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 5953, 8892, 503, 10522, 4474, 1236, 2465, 2]
 // Exports: default
 
-// Module 10493 (GiftingBadgeProgressBanner)
+// Module 10531 (GiftingBadgeProgressBanner)
 import noopAll from "noop" /* 19 */;
 import encodeProperties from "encodeProperties" /* 503 */;
 import ThemesDefault from "Themes" /* 712 */;
 import messagesProxyDefault from "messagesProxy" /* 2465 */;
-import Text from "Text" /* 4444 */;
-import contextDefault from "context" /* 5921 */;
-import trackImpressionDefault from "trackImpression" /* 8855 */;
+import Text from "Text" /* 4474 */;
+import contextDefault from "context" /* 5953 */;
+import trackImpressionDefault from "trackImpression" /* 8892 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -49,7 +49,7 @@ export default function GiftingBadgeProgressBanner(arg0) {
   if (tmp10Result) {
     obj1 = { icon: null, size: 24 };
     obj1[0] = nextTierIcon;
-    tmp10Result = tmp10(tmp2(10484), obj1);
+    tmp10Result = tmp10(tmp2(10522), obj1);
   }
   obj[1] = tmp10Result;
   const items2 = [closure_4(View, obj), ];

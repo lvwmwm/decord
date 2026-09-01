@@ -1,9 +1,9 @@
-// Module ID: 6620
-// Function ID: 6621
+// Module ID: 6652
+// Function ID: 6653
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6620 (metadata)
+// Module 6652 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemHero3dIllustration-2x.png.js");

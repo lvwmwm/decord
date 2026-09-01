@@ -1,14 +1,14 @@
-// Module ID: 6275
-// Function ID: 6276
+// Module ID: 6307
+// Function ID: 6308
 // Name: ApiIllocon
-// Dependencies: [21, 5461, 6276, 2]
+// Dependencies: [21, 5493, 6308, 2]
 // Exports: ApiIllocon
 
-// Module 6275 (ApiIllocon)
+// Module 6307 (ApiIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6276 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6308 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ApiIllocon.native.tsx");

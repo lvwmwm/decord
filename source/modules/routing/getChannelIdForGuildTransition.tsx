@@ -1,20 +1,20 @@
-// Module ID: 6032
-// Function ID: 6033
+// Module ID: 6064
+// Function ID: 6065
 // Name: getChannelIdForGuildTransition
-// Dependencies: [1390, 5431, 1387, 1982, 1909, 1981, 6033, 676, 1394, 6037, 6039, 6041, 1912, 2]
+// Dependencies: [1390, 5463, 1387, 1982, 1909, 1981, 6065, 676, 1394, 6069, 6071, 6073, 1912, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 6032 (getChannelIdForGuildTransition)
+// Module 6064 (getChannelIdForGuildTransition)
 import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1912 */;
-import useCanSeeOnboardingHome from "useCanSeeOnboardingHome" /* 6037 */;
-import getPrice from "getPrice" /* 6041 */;
+import useCanSeeOnboardingHome from "useCanSeeOnboardingHome" /* 6069 */;
+import getPrice from "getPrice" /* 6073 */;
 import closure_2 from "initializeFromUserSettings" /* 1390 */;
-import closure_3 from "shouldShowOnboarding" /* 5431 */;
+import closure_3 from "shouldShowOnboarding" /* 5463 */;
 import closure_4 from "ensureGuildLoaded" /* 1387 */;
 import closure_5 from "comparator" /* 1982 */;
 import closure_6 from "createGuildRecordFromRust" /* 1909 */;
 import closure_7 from "handleConnectionOpen" /* 1981 */;
-import closure_8 from "makeSortedChannel" /* 6033 */;
+import closure_8 from "makeSortedChannel" /* 6065 */;
 import { ME } from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1394 */;
 

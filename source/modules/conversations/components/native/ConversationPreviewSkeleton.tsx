@@ -1,16 +1,16 @@
-// Module ID: 7804
-// Function ID: 7805
+// Module ID: 7836
+// Function ID: 7837
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 7311, 21, 4448, 712, 4187, 4449, 2]
+// Dependencies: [19, 17, 7343, 21, 4478, 712, 4217, 4479, 2]
 // Exports: default
 
-// Module 7804 (ConversationPreviewSkeleton)
+// Module 7836 (ConversationPreviewSkeleton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS" /* 7311 */;
+import { MOBILE_PREVIEW_MESSAGE_COUNT as closure_5 } from "CONVERSATION_COLORS" /* 7343 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);
@@ -33,7 +33,7 @@ let result = require("set").fileFinishedImporting("modules/conversations/compone
 
 export default function ConversationPreviewSkeleton() {
   const _require = callback2();
-  let obj = _require(4187);
+  let obj = _require(4217);
   const sharedValue = obj.useSharedValue(0.4);
   let items = [sharedValue];
   const effect = React.useEffect(() => {
@@ -46,7 +46,7 @@ export default function ConversationPreviewSkeleton() {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 11432452203963;
   fn.__initData = closure_9;
-  const animatedStyle = _require(4187).useAnimatedStyle(fn);
+  const animatedStyle = _require(4217).useAnimatedStyle(fn);
   obj = {
     style: animatedStyle,
     "aria-hidden": true,
@@ -65,5 +65,5 @@ export default function ConversationPreviewSkeleton() {
     })
   };
   obj = { length: closure_5 };
-  return callback(sharedValue(4187).View, obj);
+  return callback(sharedValue(4217).View, obj);
 };

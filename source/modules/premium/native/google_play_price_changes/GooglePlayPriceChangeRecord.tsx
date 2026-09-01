@@ -1,10 +1,10 @@
-// Module ID: 4117
-// Function ID: 4118
+// Module ID: 4147
+// Function ID: 4148
 // Name: createFromServer
-// Dependencies: [1931, 2]
+// Dependencies: [1936, 2]
 
-// Module 4117 (createFromServer)
-import toJSDefault from "toJS" /* 1931 */;
+// Module 4147 (createFromServer)
+import toJSDefault from "toJS" /* 1936 */;
 
 toJSDefault;
 const obj = { PRICE_CHANGE_MODE_UNSPECIFIED: "PRICE_CHANGE_MODE_UNSPECIFIED", PRICE_DECREASE: "PRICE_DECREASE", PRICE_INCREASE: "PRICE_INCREASE", OPT_OUT_PRICE_INCREASE: "OPT_OUT_PRICE_INCREASE" };

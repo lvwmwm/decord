@@ -1,9 +1,9 @@
-// Module ID: 13419
-// Function ID: 13420
+// Module ID: 13452
+// Function ID: 13453
 // Name: componentDidMount
 // Dependencies: [19, 21, 12, 1297, 2]
 
-// Module 13419 (componentDidMount)
+// Module 13452 (componentDidMount)
 import applyDefault from "apply" /* 12 */;
 import Button from "Button" /* 1297 */;
 import { jsxs } from "jsxProd" /* 21 */;

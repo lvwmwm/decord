@@ -1,10 +1,10 @@
-// Module ID: 7127
-// Function ID: 7128
+// Module ID: 7159
+// Function ID: 7160
 // Name: useSettingNavigationRoute
 // Dependencies: [1500, 2]
 // Exports: useSettingNavigationRoute
 
-// Module 7127 (useSettingNavigationRoute)
+// Module 7159 (useSettingNavigationRoute)
 import set from "set" /* 2 */;
 import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1500 */;
 

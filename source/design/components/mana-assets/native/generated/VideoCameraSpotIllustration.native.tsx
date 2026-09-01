@@ -1,14 +1,14 @@
-// Module ID: 7077
-// Function ID: 7078
+// Module ID: 7109
+// Function ID: 7110
 // Name: VideoCameraSpotIllustration
-// Dependencies: [21, 5461, 7078, 2]
+// Dependencies: [21, 5493, 7110, 2]
 // Exports: VideoCameraSpotIllustration
 
-// Module 7077 (VideoCameraSpotIllustration)
+// Module 7109 (VideoCameraSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 7078 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 7110 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/VideoCameraSpotIllustration.native.tsx");

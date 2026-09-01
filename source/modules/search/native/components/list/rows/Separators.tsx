@@ -1,15 +1,15 @@
-// Module ID: 16198
-// Function ID: 16199
+// Module ID: 16233
+// Function ID: 16234
 // Name: MessageVerticalSeparator
-// Dependencies: [19, 17, 7590, 21, 4448, 2]
+// Dependencies: [19, 17, 7622, 21, 4478, 2]
 // Exports: CardVerticalSeparator, MediaVerticalSeparator, MessageVerticalSeparator
 
-// Module 16198 (MessageVerticalSeparator)
+// Module 16233 (MessageVerticalSeparator)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7590 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7622 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 noopAll;
 ({ MEDIA_ITEM_GAP_WIDTH, FILES_OR_LINKS_GAP_WIDTH } = MessageEmbedTypes);

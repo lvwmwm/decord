@@ -1,14 +1,14 @@
-// Module ID: 14390
-// Function ID: 14391
+// Module ID: 14423
+// Function ID: 14424
 // Name: SensitiveContentFiltersTeenNotice
-// Dependencies: [19, 8638, 21, 6114, 14305, 1236, 4160, 1995, 8650, 8652, 2]
+// Dependencies: [19, 8670, 21, 6146, 14338, 1236, 4190, 1995, 8682, 8684, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 14390 (SensitiveContentFiltersTeenNotice)
+// Module 14423 (SensitiveContentFiltersTeenNotice)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14305 */;
-import { SafetySettingsNoticeType } from "SafetyToastType" /* 8638 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14338 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 8670 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -16,7 +16,7 @@ noopAll;
 let result = require("set").fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersNotices.tsx");
 
 export const SensitiveContentFiltersTeenNotice = function SensitiveContentFiltersTeenNotice() {
-  let obj = _require(6114);
+  let obj = _require(6146);
   _require = obj.useSensitiveContentFilterHelpArticle();
   obj = {
     label: _require(1236).t.EUo0yj,
@@ -39,8 +39,8 @@ export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveCo
   let obj = {
     label: getSystemLocale.t.OX4ybh,
     labelHook() {
-      let obj = callback2(8650);
-      obj = { entryPoint: callback(8652).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+      let obj = callback2(8682);
+      obj = { entryPoint: callback(8684).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
       const result = obj.showAgeVerificationGetStartedModal(obj);
     },
     noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE
@@ -48,8 +48,8 @@ export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveCo
   return jsx(SafetySettingsNoticeDefault, {
     label: getSystemLocale.t.OX4ybh,
     labelHook() {
-      let obj = callback2(8650);
-      obj = { entryPoint: callback(8652).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
+      let obj = callback2(8682);
+      obj = { entryPoint: callback(8684).AgeVerificationModalEntryPoint.CONTENT_AND_SOCIAL_NOTICE };
       const result = obj.showAgeVerificationGetStartedModal(obj);
     },
     noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_AGE_VERIFICATION_NOTICE

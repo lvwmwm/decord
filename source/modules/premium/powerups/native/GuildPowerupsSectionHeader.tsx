@@ -1,17 +1,17 @@
-// Module ID: 12083
-// Function ID: 12084
+// Module ID: 12116
+// Function ID: 12117
 // Name: GuildPowerupsSectionHeader
-// Dependencies: [17, 21, 4448, 712, 7972, 4444, 2]
+// Dependencies: [17, 21, 4478, 712, 8004, 4474, 2]
 // Exports: default
 
-// Module 12083 (GuildPowerupsSectionHeader)
+// Module 12116 (GuildPowerupsSectionHeader)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4444 */;
-import apexExperiment from "apexExperiment" /* 7972 */;
+import Text from "Text" /* 4474 */;
+import apexExperiment from "apexExperiment" /* 8004 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const View = get_ActivityIndicator.View;
 ({ jsx: c3, jsxs: c4 } = jsxProd);

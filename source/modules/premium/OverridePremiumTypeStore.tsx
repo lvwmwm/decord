@@ -1,27 +1,46 @@
 // Module ID: 1923
 // Function ID: 1924
-// Name: setPremiumTypeActual
-// Dependencies: [1924, 1928, 589, 709, 2]
+// Name: setActualFromUser
+// Dependencies: [1924, 1928, 1933, 589, 709, 2]
 
-// Module 1923 (setPremiumTypeActual)
+// Module 1923 (setActualFromUser)
 import set from "set" /* 2 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import validatePremiumType from "validatePremiumType" /* 1928 */;
+import parseServerPerkConfigKind from "parseServerPerkConfigKind" /* 1928 */;
+import validatePremiumType from "validatePremiumType" /* 1933 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
-function setPremiumTypeActual(user) {
+function setActualFromUser(user) {
   user = user.user;
-  if ("CURRENT_USER_UPDATE" === user.type) {
-    if (undefined === user.premium_type) {
+  if ("CURRENT_USER_UPDATE" !== user.type) {
+    closure_4.premiumTypeActual = validatePremiumType.getPremiumTypeFromRawValue(user.premium_type);
+    const obj = validatePremiumType;
+  }
+  const user2 = user.user;
+  if ("CURRENT_USER_UPDATE" !== user.type) {
+    const perks = user2.perks;
+    let tmp5 = null;
+    if (null != perks) {
+      let parseServerPerksResult = perks;
+      if (!("activePerksBitmask" in perks)) {
+        parseServerPerksResult = parseServerPerkConfigKind.parseServerPerks(perks);
+        const obj2 = parseServerPerkConfigKind;
+      }
+      tmp5 = parseServerPerksResult;
+    }
+    closure_4.perksActual = tmp5;
+    const tmp4 = closure_4;
+  }
+  if (false === flag) {
+    if (false === flag2) {
       return false;
     }
   }
-  closure_4.premiumTypeActual = validatePremiumType.getPremiumTypeFromRawValue(user.premium_type);
 }
 const UNSELECTED_CREATED_AT_DATE = GuildFeatures.UNSELECTED_CREATED_AT_DATE;
 const UNSELECTED_PREMIUM_TYPE_OVERRIDE = GuildFeatures.UNSELECTED_PREMIUM_TYPE_OVERRIDE;
-let closure_4 = { premiumTypeOverride: UNSELECTED_PREMIUM_TYPE_OVERRIDE, premiumTypeActual: UNSELECTED_PREMIUM_TYPE_OVERRIDE, createdAtOverride: UNSELECTED_CREATED_AT_DATE };
+let closure_4 = { premiumTypeOverride: UNSELECTED_PREMIUM_TYPE_OVERRIDE, premiumTypeActual: UNSELECTED_PREMIUM_TYPE_OVERRIDE, createdAtOverride: UNSELECTED_CREATED_AT_DATE, perksActual: null };
 const PersistedStore = initializeDefault.PersistedStore;
 class OverridePremiumTypeStore extends PersistedStore {
 }
@@ -38,6 +57,14 @@ prototype["initialize"] = function initialize(premiumTypeActual) {
       premiumTypeOverride = premiumTypeActual.premiumTypeOverride;
     }
     closure_4.premiumTypeOverride = premiumTypeOverride;
+    let perksActual;
+    if (premiumTypeActual != null) {
+      perksActual = premiumTypeActual.perksActual;
+    }
+    if (perksActual == null) {
+      perksActual = null;
+    }
+    closure_4.perksActual = perksActual;
     if (null != premiumTypeActual.createdAtOverride) {
       const _Date = Date;
       const date = new Date(premiumTypeActual.createdAtOverride);
@@ -55,6 +82,9 @@ prototype["getPremiumTypeOverride"] = function getPremiumTypeOverride() {
 };
 prototype["getPremiumTypeActual"] = function getPremiumTypeActual() {
   return closure_4.premiumTypeActual;
+};
+prototype["getPerksActual"] = function getPerksActual() {
+  return closure_4.perksActual;
 };
 prototype["getCreatedAtOverride"] = function getCreatedAtOverride() {
   return closure_4.createdAtOverride;
@@ -92,8 +122,8 @@ const overridePremiumTypeStore = new OverridePremiumTypeStore(dispatcherDefault,
   SET_CREATED_AT_OVERRIDE: function setCreatedAtOverride(createdAt) {
     closure_4.createdAtOverride = createdAt.createdAt;
   },
-  CURRENT_USER_UPDATE: setPremiumTypeActual,
-  CONNECTION_OPEN: setPremiumTypeActual
+  CURRENT_USER_UPDATE: setActualFromUser,
+  CONNECTION_OPEN: setActualFromUser
 });
 const result = set.fileFinishedImporting("modules/premium/OverridePremiumTypeStore.tsx");
 

@@ -1,15 +1,15 @@
-// Module ID: 13337
-// Function ID: 13338
+// Module ID: 13370
+// Function ID: 13371
 // Name: initialize
-// Dependencies: [32, 1387, 4703, 3, 589, 709, 13338, 5188, 2]
+// Dependencies: [32, 1387, 4735, 3, 589, 709, 13371, 5220, 2]
 
-// Module 13337 (initialize)
+// Module 13370 (initialize)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "reinjectEphemerals" /* 4703 */;
+import closure_5 from "reinjectEphemerals" /* 4735 */;
 
 let object = arg1;
 let c6 = -Infinity;
@@ -114,7 +114,7 @@ prototype["data"] = function data(guildId, items, arg2) {
   const guilds = this.guilds;
   if (!guilds.has(guildId)) {
     const guilds2 = self.guilds;
-    const previewData = new object(13338).PreviewData();
+    const previewData = new object(13371).PreviewData();
     const result = guilds2.set(guildId, previewData);
   }
   const guilds3 = self.guilds;
@@ -228,7 +228,7 @@ prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(chan
     return false;
   } else {
     const self = this;
-    const result = object(5188).requireSortedDescending(channelId.messages);
+    const result = object(5220).requireSortedDescending(channelId.messages);
     if (!channelId.isAfter) {
       if (!channelId.isBefore) {
         if (!channelId.hasMoreAfter) {
@@ -241,7 +241,7 @@ prototype["handleLoadMessagesSuccess"] = function handleLoadMessagesSuccess(chan
         }
       }
     }
-    const obj3 = object(5188);
+    const obj3 = object(5220);
     let first1 = channelId.messages[0];
     if (first1 == null) {
       first1 = null;
@@ -254,8 +254,8 @@ prototype["handleLocalMessagesLoaded"] = function handleLocalMessagesLoaded(chan
   const basicChannel = store.getBasicChannel(channelId.channelId);
   if (null != basicChannel) {
     const self = this;
-    const result = object(5188).requireSortedDescending(channelId.messages);
-    const obj = object(5188);
+    const result = object(5220).requireSortedDescending(channelId.messages);
+    const obj = object(5220);
     let first = channelId.messages[0];
     if (first == null) {
       first = null;

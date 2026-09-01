@@ -1,9 +1,9 @@
-// Module ID: 4107
-// Function ID: 4108
+// Module ID: 4137
+// Function ID: 4138
 // Name: EmojiTypes
 // Dependencies: [2]
 
-// Module 4107 (EmojiTypes)
+// Module 4137 (EmojiTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/emojis/EmojiTypes.tsx");

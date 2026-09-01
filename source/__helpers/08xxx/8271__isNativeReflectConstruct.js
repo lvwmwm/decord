@@ -1,16 +1,20 @@
 // Module ID: 8271
 // Function ID: 8272
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 8225]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8272, 8256, 8265]
 
 // Module 8271 (_isNativeReflectConstruct)
+import noopAll from "noop" /* 19 */;
 import _inheritsDefault from "_inherits" /* 98 */;
-import closure_2 from "_classCallCheck" /* 41 */;
-import closure_3 from "_possibleConstructorReturn" /* 93 */;
-import closure_4 from "_getPrototypeOf" /* 95 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8265 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8272 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
 import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const FePointLight = arg1;
+const ClipPath = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,13 +34,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FePointLight {
+noopAll;
+class ClipPath {
   constructor() {
     self = this;
-    tmp = closure_2(this, FePointLight);
-    tmp2 = closure_4;
-    obj = closure_4(FePointLight);
-    tmp3 = closure_3;
+    tmp = closure_3(this, ClipPath);
+    tmp2 = closure_5;
+    obj = closure_5(ClipPath);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -50,18 +55,21 @@ class FePointLight {
     return tmp3(self, constructResult);
   }
 }
-_inheritsDefault(FePointLight, require("noop").Component);
+_inheritsDefault(ClipPath, _isNativeReflectConstructDefault);
 const items = [
   {
     key: "render",
     value: function render() {
-      const result = FePointLight(8225).warnUnimplementedFilter();
-      return null;
+      const props = this.props;
+      const obj = { ref: this.refMethod };
+      const tmp = __INTERNAL_VIEW_CONFIGDefault;
+      const merged = Object.assign(ClipPath(8256).extract(this, props));
+      obj.children = props.children;
+      return <tmp ref={this.refMethod} />;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(FePointLight, items);
-importDefaultResultResult.displayName = "FePointLight";
-importDefaultResultResult.defaultProps = {};
+const importDefaultResultResult = importDefaultResult(ClipPath, items);
+importDefaultResultResult.displayName = "ClipPath";
 
 export default importDefaultResultResult;

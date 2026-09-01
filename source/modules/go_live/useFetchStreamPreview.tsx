@@ -1,14 +1,14 @@
-// Module ID: 10106
-// Function ID: 10107
+// Module ID: 10145
+// Function ID: 10146
 // Name: useFetchStreamPreview
-// Dependencies: [19, 4633, 1387, 4091, 1981, 505, 589, 4631, 2]
+// Dependencies: [19, 4665, 1387, 4121, 1981, 505, 589, 4663, 2]
 // Exports: default
 
-// Module 10106 (useFetchStreamPreview)
+// Module 10145 (useFetchStreamPreview)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "reset" /* 4633 */;
+import closure_3 from "reset" /* 4665 */;
 import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4121 */;
 import closure_6 from "handleConnectionOpen" /* 1981 */;
 import { BasicPermissions } from "sum" /* 505 */;
 
@@ -81,5 +81,5 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
     }
     return obj;
   }
-  obj = { previewUrl: "Object", isLoading: true };
+  obj = { previewUrl: "PX_16", isLoading: null };
 };

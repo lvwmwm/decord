@@ -1,14 +1,14 @@
-// Module ID: 6971
-// Function ID: 6972
+// Module ID: 7003
+// Function ID: 7004
 // Name: SharingGemSpotIllustration
-// Dependencies: [21, 5461, 6972, 2]
+// Dependencies: [21, 5493, 7004, 2]
 // Exports: SharingGemSpotIllustration
 
-// Module 6971 (SharingGemSpotIllustration)
+// Module 7003 (SharingGemSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6972 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 7004 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SharingGemSpotIllustration.native.tsx");

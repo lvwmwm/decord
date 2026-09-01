@@ -1,9 +1,9 @@
-// Module ID: 5122
-// Function ID: 5123
+// Module ID: 5154
+// Function ID: 5155
 // Name: create
-// Dependencies: [5, 1953, 5123, 2]
+// Dependencies: [5, 1953, 5155, 2]
 
-// Module 5122 (create)
+// Module 5154 (create)
 import decodeImageDefault from "decodeImage" /* 1953 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -65,7 +65,7 @@ prototype["hasSrgbIccProfile"] = function hasSrgbIccProfile() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {

@@ -1,10 +1,10 @@
-// Module ID: 10006
-// Function ID: 10007
-// Dependencies: [4507, 1469, 2]
+// Module ID: 10045
+// Function ID: 10046
+// Dependencies: [4537, 1469, 2]
 
-// Module 10006
+// Module 10045
 import set from "set" /* 2 */;
-import RESOLUTION_720 from "RESOLUTION_720" /* 4507 */;
+import RESOLUTION_720 from "RESOLUTION_720" /* 4537 */;
 import importDefaultResult from "getUnitId" /* 1469 */;
 
 const ApplicationStreamResolutions = RESOLUTION_720.ApplicationStreamResolutions;

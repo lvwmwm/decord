@@ -1,14 +1,14 @@
-// Module ID: 11466
-// Function ID: 11467
+// Module ID: 11499
+// Function ID: 11500
 // Name: ModalFooter
-// Dependencies: [19, 17, 21, 4448, 2]
+// Dependencies: [19, 17, 21, 4478, 2]
 // Exports: ModalFooter
 
-// Module 11466 (ModalFooter)
+// Module 11499 (ModalFooter)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 noopAll;
 let closure_2 = createCacheKey.createStyles({ footer: { flexDirection: "column", paddingVertical: 16, paddingHorizontal: 24 } });

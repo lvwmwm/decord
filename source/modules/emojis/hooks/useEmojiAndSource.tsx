@@ -1,16 +1,16 @@
-// Module ID: 9139
-// Function ID: 9140
+// Module ID: 9178
+// Function ID: 9179
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 1909, 5369, 5973, 676, 4107, 647, 2]
+// Dependencies: [5, 32, 19, 1909, 5401, 6005, 676, 4137, 647, 2]
 // Exports: useEmojiAndSource
 
-// Module 9139 (useEmojiAndSource)
+// Module 9178 (useEmojiAndSource)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import closure_6 from "getEmojiToGroupId" /* 5369 */;
-import getEmojiSourceData from "getEmojiSourceData" /* 5973 */;
+import closure_6 from "getEmojiToGroupId" /* 5401 */;
+import getEmojiSourceData from "getEmojiSourceData" /* 6005 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 const require = arg1;
@@ -97,7 +97,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -152,7 +152,7 @@ export const useEmojiAndSource = function useEmojiAndSource(emojiId) {
               current();
             }
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp27) {
             v0 = tmp;
             throw tmp27;

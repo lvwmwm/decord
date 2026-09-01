@@ -1,19 +1,19 @@
-// Module ID: 7478
-// Function ID: 7479
+// Module ID: 7510
+// Function ID: 7511
 // Name: listKey
-// Dependencies: [32, 1391, 1387, 4463, 4093, 1396, 7479, 12, 1398, 11, 6120, 589, 709, 2]
+// Dependencies: [32, 1391, 1387, 4493, 4123, 1396, 7511, 12, 1398, 11, 6152, 589, 709, 2]
 
-// Module 7478 (listKey)
+// Module 7510 (listKey)
 import applyDefault from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import set from "set" /* 1396 */;
-import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7479 */;
+import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7511 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1391 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "generateOldThreadCutoff" /* 4463 */;
-import closure_7 from "storeThread" /* 4093 */;
+import closure_6 from "generateOldThreadCutoff" /* 4493 */;
+import closure_7 from "storeThread" /* 4123 */;
 
 require = arg1;
 function listKey(channelId, sortOrder, tagFilter, tagSetting) {
@@ -296,7 +296,7 @@ const archivedThreadsStore = new ArchivedThreadsStore(dispatcherDefault, {
     } else {
       return false;
     }
-    obj = channel(6120);
+    obj = channel(6152);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     let flag = false;

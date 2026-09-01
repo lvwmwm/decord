@@ -1,9 +1,9 @@
-// Module ID: 15727
-// Function ID: 15728
+// Module ID: 15763
+// Function ID: 15764
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15727 (metadata)
+// Module 15763 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/powerups/level_background.png.js");

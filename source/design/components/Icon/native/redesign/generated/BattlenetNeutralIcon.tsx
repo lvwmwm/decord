@@ -1,14 +1,14 @@
-// Module ID: 8789
-// Function ID: 8790
+// Module ID: 8826
+// Function ID: 8827
 // Name: BattlenetNeutralIcon
-// Dependencies: [19, 21, 712, 4166, 8790, 2]
+// Dependencies: [19, 21, 712, 4196, 8827, 2]
 // Exports: BattlenetNeutralIcon
 
-// Module 8789 (BattlenetNeutralIcon)
+// Module 8826 (BattlenetNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 8790 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 8827 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

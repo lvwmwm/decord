@@ -1,10 +1,10 @@
-// Module ID: 4918
-// Function ID: 4919
+// Module ID: 4950
+// Function ID: 4951
 // Name: combineMarkupRules
 // Dependencies: [2]
 // Exports: default
 
-// Module 4918 (combineMarkupRules)
+// Module 4950 (combineMarkupRules)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/markup/combineMarkupRules.tsx");

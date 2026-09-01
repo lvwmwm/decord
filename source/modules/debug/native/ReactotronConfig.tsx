@@ -1,10 +1,10 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14056
+// Function ID: 14057
 // Name: reactNativeCorePlugins
-// Dependencies: [14024, 2]
+// Dependencies: [14057, 2]
 
-// Module 14023 (reactNativeCorePlugins)
-import importDefaultResult from "reactNativeCorePlugins" /* 14024 */;
+// Module 14056 (reactNativeCorePlugins)
+import importDefaultResult from "reactNativeCorePlugins" /* 14057 */;
 
 const reactNative = importDefaultResult.configure({}).useReactNative();
 reactNative.connect();

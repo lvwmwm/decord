@@ -1,17 +1,17 @@
-// Module ID: 9275
-// Function ID: 9276
+// Module ID: 9314
+// Function ID: 9315
 // Name: TwoWayLinkDiscordConsent
-// Dependencies: [5, 32, 19, 17, 21, 3, 4448, 9267, 5318, 9246, 38, 6017, 5521, 4896, 1236, 2]
+// Dependencies: [5, 32, 19, 17, 21, 3, 4478, 9306, 5350, 9285, 38, 6049, 5553, 4928, 1236, 2]
 // Exports: TwoWayLinkDiscordConsent
 
-// Module 9275 (TwoWayLinkDiscordConsent)
+// Module 9314 (TwoWayLinkDiscordConsent)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ View: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -54,7 +54,7 @@ export const TwoWayLinkDiscordConsent = function TwoWayLinkDiscordConsent(callba
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

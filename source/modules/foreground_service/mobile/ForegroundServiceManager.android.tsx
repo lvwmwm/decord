@@ -1,13 +1,13 @@
-// Module ID: 7469
-// Function ID: 7470
+// Module ID: 7501
+// Function ID: 7502
 // Name: initialize
-// Dependencies: [17, 675, 659, 4630, 2]
+// Dependencies: [17, 675, 659, 4662, 2]
 
-// Module 7469 (initialize)
+// Module 7501 (initialize)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import setRequestedByAll from "setRequestedBy" /* 675 */;
-import initializeDefault from "initialize" /* 4630 */;
+import initializeDefault from "initialize" /* 4662 */;
 
 let obj = importDefault;
 const NativeModules = get_ActivityIndicator.NativeModules;

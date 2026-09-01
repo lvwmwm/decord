@@ -1,14 +1,14 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12820
+// Function ID: 12821
 // Name: WindowLaunchIcon
-// Dependencies: [19, 21, 712, 4166, 12788, 2]
+// Dependencies: [19, 21, 712, 4196, 12821, 2]
 // Exports: WindowLaunchIcon
 
-// Module 12787 (WindowLaunchIcon)
+// Module 12820 (WindowLaunchIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 12788 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 12821 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 9540
-// Function ID: 9541
+// Module ID: 9579
+// Function ID: 9580
 // Name: NativeEventEmitter
 // Dependencies: [17, 2]
 
-// Module 9540 (NativeEventEmitter)
+// Module 9579 (NativeEventEmitter)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

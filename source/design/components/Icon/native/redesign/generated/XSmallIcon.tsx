@@ -1,14 +1,14 @@
-// Module ID: 5519
-// Function ID: 5520
+// Module ID: 5551
+// Function ID: 5552
 // Name: XSmallIcon
-// Dependencies: [19, 21, 712, 4166, 5520, 2]
+// Dependencies: [19, 21, 712, 4196, 5552, 2]
 // Exports: XSmallIcon
 
-// Module 5519 (XSmallIcon)
+// Module 5551 (XSmallIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 5520 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 5552 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

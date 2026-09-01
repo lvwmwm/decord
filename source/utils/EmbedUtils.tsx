@@ -1,12 +1,12 @@
-// Module ID: 4818
-// Function ID: 4819
+// Module ID: 4850
+// Function ID: 4851
 // Name: getEffectiveVideoProvider
-// Dependencies: [676, 4819, 11, 1399, 12, 4045, 688, 4707, 2]
+// Dependencies: [676, 4851, 11, 1399, 12, 4075, 688, 4739, 2]
 // Exports: canEmbedLinks, getMaxEmbedMediaSize, isCollectiblesShopArticleEmbed, isEmbedInline, isGameProfileArticleEmbed, isServerShopArticleEmbed, isSocialLayerStorefrontArticleEmbed, isUserProfileArticleEmbed, mergeEmbedsOnURL, sanitizeEmbed, shouldStripEmbeds
 
-// Module 4818 (getEffectiveVideoProvider)
+// Module 4850 (getEffectiveVideoProvider)
 import set from "set" /* 2 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 4819 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 4851 */;
 import ME from "ME" /* 676 */;
 
 function getEffectiveVideoProvider(name, url) {
@@ -73,7 +73,7 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
   }
   if (null != footer.timestamp) {
     const _Date = Date;
-    let tmpResult = tmp(4045);
+    let tmpResult = tmp(4075);
     const date = new Date(footer.timestamp);
     obj.timestamp = tmpResult(date);
   }
@@ -240,13 +240,13 @@ export const sanitizeEmbed = function sanitizeEmbed(channel_id, id, footer) {
     obj.fields = [];
   }
   if (null != footer.components) {
-    const transformComponentsResult = obj6(4707).transformComponents(footer.components);
+    const transformComponentsResult = obj6(4739).transformComponents(footer.components);
     let tmp40;
     if (transformComponentsResult.length > 0) {
       tmp40 = transformComponentsResult;
     }
     obj.components = tmp40;
-    const obj17 = obj6(4707);
+    const obj17 = obj6(4739);
   }
   return obj;
 };

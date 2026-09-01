@@ -1,14 +1,14 @@
-// Module ID: 17399
-// Function ID: 17400
+// Module ID: 17435
+// Function ID: 17436
 // Name: AVErrorCameraSendLowFPSDefinition
-// Dependencies: [1218, 4499, 4522, 687, 17385, 9526, 17382, 2]
+// Dependencies: [1218, 4529, 4554, 687, 17421, 9565, 17418, 2]
 
-// Module 17399 (AVErrorCameraSendLowFPSDefinition)
+// Module 17435 (AVErrorCameraSendLowFPSDefinition)
 import setDefault from "set" /* 687 */;
-import getReportInboundErrors from "getReportInboundErrors" /* 17385 */;
+import getReportInboundErrors from "getReportInboundErrors" /* 17421 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_4 from "createRTCConnection" /* 4522 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_4 from "createRTCConnection" /* 4554 */;
 
 require = arg1;
 let closure_5 = 20 * setDefault.Millis.SECOND;
@@ -38,11 +38,11 @@ export const AVErrorCameraSendLowFPSDefinition = {
           if (null != accumulatedStatsWithMinDatapoints) {
             if (accumulatedStatsWithMinDatapoints.short.frameRate < 10) {
               obj = { type: null, userId: null };
-              obj[0] = tmp4(9526).AVError.CAMERA_SEND_LOW_FPS;
+              obj[0] = tmp4(9565).AVError.CAMERA_SEND_LOW_FPS;
               obj[1] = id.getId();
-              const merged = Object.assign(tmp4(17382).getVoiceChannelErrorContext());
+              const merged = Object.assign(tmp4(17418).getVoiceChannelErrorContext());
               const items = [obj];
-              const tmp4Result = tmp4(17382);
+              const tmp4Result = tmp4(17418);
               const tmp8 = items;
             }
             tmp7 = tmp8;

@@ -1,9 +1,9 @@
-// Module ID: 9427
-// Function ID: 9428
+// Module ID: 9466
+// Function ID: 9467
 // Name: ActivityPanelModes
 // Dependencies: [2]
 
-// Module 9427 (ActivityPanelModes)
+// Module 9466 (ActivityPanelModes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/panel/ActivityPanelConstants.tsx");

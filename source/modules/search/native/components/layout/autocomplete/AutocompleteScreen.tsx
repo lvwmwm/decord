@@ -1,16 +1,16 @@
-// Module ID: 16270
-// Function ID: 16271
-// Dependencies: [32, 19, 1387, 4100, 1922, 11876, 11873, 7590, 676, 21, 589, 16195, 11872, 11897, 11894, 4292, 4642, 11874, 16271, 11880, 11875, 16232, 16187, 1236, 16199, 2]
+// Module ID: 16305
+// Function ID: 16306
+// Dependencies: [32, 19, 1387, 4130, 1922, 11909, 11906, 7622, 676, 21, 589, 16230, 11905, 11930, 11927, 4322, 4674, 11907, 16306, 11913, 11908, 16267, 16222, 1236, 16234, 2]
 
-// Module 16270
+// Module 16305
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "markAllUserIdListsStale" /* 4100 */;
+import closure_6 from "markAllUserIdListsStale" /* 4130 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "handleUserSearchResults" /* 11876 */;
-import closure_9 from "prototype" /* 11873 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7590 */;
+import closure_8 from "handleUserSearchResults" /* 11909 */;
+import closure_9 from "prototype" /* 11906 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7622 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 

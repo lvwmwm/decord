@@ -1,14 +1,14 @@
-// Module ID: 17179
-// Function ID: 17180
+// Module ID: 17215
+// Function ID: 17216
 // Name: isRolePowerful
-// Dependencies: [1986, 676, 506, 16374, 2]
+// Dependencies: [1986, 676, 506, 16410, 2]
 // Exports: getPowerfulPermissionTitles, isRolePowerful
 
-// Module 17179 (isRolePowerful)
+// Module 17215 (isRolePowerful)
 import set from "set" /* 2 */;
 import fromStringAll from "fromString" /* 506 */;
 import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1986 */;
-import getPermissionOptionsDefault from "getPermissionOptions" /* 16374 */;
+import getPermissionOptionsDefault from "getPermissionOptions" /* 16410 */;
 import ME from "ME" /* 676 */;
 
 const hasPermission = GuildRoleRecordTypeTag.hasPermission;

@@ -1,24 +1,24 @@
-// Module ID: 11944
-// Function ID: 11945
+// Module ID: 11977
+// Function ID: 11978
 // Name: ChatInputNotificationNudgeImpl
-// Dependencies: [32, 19, 17, 4093, 4669, 11945, 676, 1384, 11946, 21, 4448, 712, 698, 10199, 4444, 5036, 11947, 1236, 11948, 5519, 589, 9237, 11956, 6219, 1373, 2]
+// Dependencies: [32, 19, 17, 4123, 4701, 11978, 676, 1384, 11979, 21, 4478, 712, 698, 10238, 4474, 5068, 11980, 1236, 11981, 5551, 589, 9276, 11989, 6251, 1373, 2]
 // Exports: default
 
-// Module 11944 (ChatInputNotificationNudgeImpl)
+// Module 11977 (ChatInputNotificationNudgeImpl)
 import ThemesDefault from "Themes" /* 712 */;
-import useIsAppDMDefault from "useIsAppDM" /* 9237 */;
-import apexExperimentDefault from "apexExperiment" /* 11956 */;
+import useIsAppDMDefault from "useIsAppDM" /* 9276 */;
+import apexExperimentDefault from "apexExperiment" /* 11989 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "storeThread" /* 4093 */;
-import closure_8 from "updateUserGuildSettingsInternal" /* 4669 */;
-import { PermissionPromptType } from "set" /* 11945 */;
+import closure_7 from "storeThread" /* 4123 */;
+import closure_8 from "updateUserGuildSettingsInternal" /* 4701 */;
+import { PermissionPromptType } from "set" /* 11978 */;
 import ME from "ME" /* 676 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
-import EventActionType from "EventActionType" /* 11946 */;
+import EventActionType from "EventActionType" /* 11979 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function ChatInputNotificationNudgeImpl(children) {
@@ -117,9 +117,9 @@ export default function ChatInputNotificationNudge(channel) {
   if (!stateFromStores) {
     tmp5 = !useIsAppDMDefault(channel);
   }
-  let tmpResult = tmp(11947);
+  let tmpResult = tmp(11980);
   const shouldShowPushNotificationNudgeByPromptType = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.CHANNEL_BANNER);
-  tmpResult = tmp(11947);
+  tmpResult = tmp(11980);
   const shouldShowPushNotificationNudgeByPromptType1 = tmpResult.useShouldShowPushNotificationNudgeByPromptType(PermissionPromptType.POST_REACTION_BANNER);
   const tmp4 = importDefault;
   const tmp4Result = apexExperimentDefault;
@@ -133,10 +133,10 @@ export default function ChatInputNotificationNudge(channel) {
   obj = { cooldownDurationMs: c20 };
   const tmp10 = c20;
   const tmp11 = callback;
-  const tmpResult1 = channel(6219);
-  [tmp13, tmp14] = callback(channel(6219).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
+  const tmpResult1 = channel(6251);
+  [tmp13, tmp14] = callback(channel(6251).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   importDefault = tmp14;
-  const tmp12 = callback(channel(6219).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
+  const tmp12 = callback(channel(6251).useSelectedTimeRecurringDismissibleContent(prop, obj, undefined, true), 2);
   let prop1 = null;
   if (tmp5) {
     prop1 = null;
@@ -151,11 +151,11 @@ export default function ChatInputNotificationNudge(channel) {
     }
   }
   obj = { cooldownDurationMs: tmp10 };
-  const tmp11Result = tmp11(channel(6219).useSelectedTimeRecurringDismissibleContent(prop1, obj, undefined, true), 2);
+  const tmp11Result = tmp11(channel(6251).useSelectedTimeRecurringDismissibleContent(prop1, obj, undefined, true), 2);
   dependencyMap = tmp17;
   const items1 = [tmp14];
   const items2 = [tmp11Result[1]];
-  const tmpResult2 = channel(6219);
+  const tmpResult2 = channel(6251);
   const tmp18 = callback2(() => _undefined(closure_1_12.USER_DISMISS), items1);
   if (tmp13 === channel(1373).DismissibleContent.NOTIFICATION_NUDGE_CHAT_BOTTOM_BANNER) {
     obj1 = { promptType: null, location: null, surface: null, body: null, onDismiss: null };

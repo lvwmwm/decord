@@ -1,14 +1,14 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15174
+// Function ID: 15175
 // Name: StaffBadgeIcon
-// Dependencies: [19, 21, 712, 4166, 15142, 2]
+// Dependencies: [19, 21, 712, 4196, 15175, 2]
 // Exports: StaffBadgeIcon
 
-// Module 15141 (StaffBadgeIcon)
+// Module 15174 (StaffBadgeIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 15142 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 15175 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

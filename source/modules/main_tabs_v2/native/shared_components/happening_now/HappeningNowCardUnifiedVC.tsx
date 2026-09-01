@@ -1,17 +1,17 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 15661
+// Function ID: 15662
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 1386, 4470, 4100, 21, 15626, 15638, 15639, 647, 15616, 2]
+// Dependencies: [19, 1386, 4500, 4130, 21, 15662, 15674, 15675, 647, 15652, 2]
 // Exports: default, useCallActivityData
 
-// Module 15625 (HappeningNowCardUnifiedVC)
+// Module 15661 (HappeningNowCardUnifiedVC)
 import noopAll from "noop" /* 19 */;
-import IconOrPreviewDefault from "IconOrPreview" /* 15626 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15638 */;
-import formatVoiceActivityTitleDefault from "formatVoiceActivityTitle" /* 15639 */;
+import IconOrPreviewDefault from "IconOrPreview" /* 15662 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15674 */;
+import formatVoiceActivityTitleDefault from "formatVoiceActivityTitle" /* 15675 */;
 import closure_3 from "participantFromServer" /* 1386 */;
-import closure_4 from "reset" /* 4470 */;
-import closure_5 from "markAllUserIdListsStale" /* 4100 */;
+import closure_4 from "reset" /* 4500 */;
+import closure_5 from "markAllUserIdListsStale" /* 4130 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

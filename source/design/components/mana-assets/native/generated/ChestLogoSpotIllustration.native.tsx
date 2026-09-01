@@ -1,14 +1,14 @@
-// Module ID: 6369
-// Function ID: 6370
+// Module ID: 6401
+// Function ID: 6402
 // Name: ChestLogoSpotIllustration
-// Dependencies: [21, 5461, 6370, 2]
+// Dependencies: [21, 5493, 6402, 2]
 // Exports: ChestLogoSpotIllustration
 
-// Module 6369 (ChestLogoSpotIllustration)
+// Module 6401 (ChestLogoSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6370 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6402 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ChestLogoSpotIllustration.native.tsx");

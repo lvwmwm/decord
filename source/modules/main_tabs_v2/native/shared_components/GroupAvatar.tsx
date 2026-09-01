@@ -1,19 +1,19 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 12470
+// Function ID: 12471
 // Name: AnimatedContainer
-// Dependencies: [19, 17, 4440, 21, 4448, 712, 1363, 5522, 647, 4187, 4449, 4895, 7972, 4444, 5461, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 712, 1363, 5554, 647, 4217, 4479, 4927, 8004, 4474, 5493, 2]
 // Exports: default
 
-// Module 12437 (AnimatedContainer)
+// Module 12470 (AnimatedContainer)
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4444 */;
-import apexExperiment from "apexExperiment" /* 7972 */;
+import Text from "Text" /* 4474 */;
+import apexExperiment from "apexExperiment" /* 8004 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import jsxProd from "jsxProd" /* 21 */;
 import { createElement } from "noop" /* 19 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function AnimatedContainer(children) {
@@ -133,7 +133,7 @@ function GroupMemberAvatar(guildId) {
     obj = { style: null, source: null };
     obj[0] = tmp.avatar;
     obj[1] = memo;
-    obj[1] = callback(user(5461), obj);
+    obj[1] = callback(user(5493), obj);
     tmp3 = callback(View, obj);
   }
   return tmp3;

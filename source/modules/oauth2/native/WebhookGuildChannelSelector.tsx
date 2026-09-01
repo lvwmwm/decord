@@ -1,20 +1,20 @@
-// Module ID: 9326
-// Function ID: 9327
+// Module ID: 9365
+// Function ID: 9366
 // Name: styles
-// Dependencies: [5, 32, 19, 17, 1391, 4100, 1922, 21, 4448, 712, 4415, 9325, 2009, 1236, 4642, 9255, 4444, 1297, 8331, 2]
+// Dependencies: [5, 32, 19, 17, 1391, 4130, 1922, 21, 4478, 712, 4445, 9364, 2009, 1236, 4674, 9294, 4474, 1297, 8363, 2]
 // Exports: default
 
-// Module 9326 (styles)
+// Module 9365 (styles)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { createChannelRecord } from "createChannelRecord" /* 1391 */;
-import closure_8 from "markAllUserIdListsStale" /* 4100 */;
+import closure_8 from "markAllUserIdListsStale" /* 4130 */;
 import closure_9 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
@@ -56,7 +56,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
       obj[0] = intl.string(selectedGuildId(onChannelChange[13]).t["Re/64R"]);
       const channels = tmp.channels;
       obj[1] = channels.map((id) => {
-        const obj = { label: callback(4642).computeChannelName(callback2(id), closure_9, closure_8), value: id.id };
+        const obj = { label: callback(4674).computeChannelName(callback2(id), closure_9, closure_8), value: id.id };
         return obj;
       });
       obj[2] = function onItemSelect(arg0) {
@@ -89,7 +89,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -133,7 +133,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
                   closure_1_5.current = true;
                 }
                 v0 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp20) {
               v0 = tmp;

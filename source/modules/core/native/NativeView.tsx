@@ -1,9 +1,9 @@
-// Module ID: 5974
-// Function ID: 5975
+// Module ID: 6006
+// Function ID: 6007
 // Name: set
 // Dependencies: [2, 112]
 
-// Module 5974 (set)
+// Module 6006 (set)
 import set from "set" /* 2 */;
 import CommandsDefault from "Commands" /* 112 */;
 

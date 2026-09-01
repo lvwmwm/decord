@@ -1,11 +1,11 @@
-// Module ID: 11224
-// Function ID: 11225
+// Module ID: 11261
+// Function ID: 11262
 // Name: useRedactableMediaAttachmentsForMessage
-// Dependencies: [4703, 647, 10221, 6106, 6111, 2]
+// Dependencies: [4735, 647, 10260, 6138, 6143, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 11224 (useRedactableMediaAttachmentsForMessage)
-import closure_2 from "reinjectEphemerals" /* 4703 */;
+// Module 11261 (useRedactableMediaAttachmentsForMessage)
+import closure_2 from "reinjectEphemerals" /* 4735 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/explicit_media_redaction/hooks/useExplicitMediaAttachmentsForMessage.tsx");
@@ -17,7 +17,7 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
   const items = [closure_2];
   const stateFromStores = _require(647).useStateFromStores(items, () => attachmentId.getMessage(closure_0, closure_1));
   let obj = _require(647);
-  closure_3 = _require(10221).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  closure_3 = _require(10260).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -33,7 +33,7 @@ export const useRedactableMediaAttachmentsForMessage = function useRedactableMed
     }
     return found;
   }
-  const obj2 = _require(10221);
+  const obj2 = _require(10260);
 };
 export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmbedsForMessage(channelId, messageId, embedId) {
   const _require = channelId;
@@ -42,7 +42,7 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
   const items = [closure_2];
   const stateFromStores = _require(647).useStateFromStores(items, () => embedId.getMessage(closure_0, closure_1));
   let obj = _require(647);
-  closure_3 = _require(10221).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
+  closure_3 = _require(10260).useEnabledHarmTypesBitmaskForMessage(stateFromStores);
   if (null == stateFromStores) {
     return [];
   } else {
@@ -58,5 +58,5 @@ export const useRedactableMediaEmbedsForMessage = function useRedactableMediaEmb
     }
     return found;
   }
-  const obj2 = _require(10221);
+  const obj2 = _require(10260);
 };

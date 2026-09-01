@@ -1,26 +1,26 @@
-// Module ID: 16012
-// Function ID: 16013
+// Module ID: 16047
+// Function ID: 16048
 // Name: ContentSettingsControl
-// Dependencies: [32, 19, 17, 4669, 8574, 21, 4448, 712, 8589, 1236, 1297, 16013, 16014, 16015, 9221, 9723, 589, 16016, 4444, 5961, 4642, 2]
+// Dependencies: [32, 19, 17, 4701, 8606, 21, 4478, 712, 8621, 1236, 1297, 16048, 16049, 16050, 9260, 9762, 589, 16051, 4474, 5993, 4674, 2]
 // Exports: ChannelScoreSettings, GuildScoreSettings
 
-// Module 16012 (ContentSettingsControl)
+// Module 16047 (ContentSettingsControl)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import generateHydrationId from "generateHydrationId" /* 8589 */;
-import useSegmentedControlState from "useSegmentedControlState" /* 9221 */;
-import SegmentedControl from "SegmentedControl" /* 9723 */;
-import registerAssetDefault from "registerAsset" /* 16013 */;
-import registerAssetDefault2 from "registerAsset" /* 16014 */;
-import registerAssetDefault3 from "registerAsset" /* 16015 */;
+import generateHydrationId from "generateHydrationId" /* 8621 */;
+import useSegmentedControlState from "useSegmentedControlState" /* 9260 */;
+import SegmentedControl from "SegmentedControl" /* 9762 */;
+import registerAssetDefault from "registerAsset" /* 16048 */;
+import registerAssetDefault2 from "registerAsset" /* 16049 */;
+import registerAssetDefault3 from "registerAsset" /* 16050 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "updateUserGuildSettingsInternal" /* 4669 */;
-import closure_7 from "filterStaffGuild" /* 8574 */;
+import closure_6 from "updateUserGuildSettingsInternal" /* 4701 */;
+import closure_7 from "filterStaffGuild" /* 8606 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function ContentSettingsControl(initialValue) {
@@ -86,7 +86,7 @@ function ContentSettingsControl(initialValue) {
   let num = 0;
   if (generateHydrationId.ICYMICustomScore.LESS !== tmp3) {
     num = 1;
-    if (tmp4(8589).ICYMICustomScore.MORE === tmp3) {
+    if (tmp4(8621).ICYMICustomScore.MORE === tmp3) {
       num = 2;
     }
   }
@@ -128,10 +128,10 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   let obj = id(589);
   const items = [closure_7];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_7.getCustomGuildScore(id));
-  obj1 = id(8589);
+  obj1 = id(8621);
   const numberToCustomScoreResult = obj1.numberToCustomScore(stateFromStores);
   c1 = numberToCustomScoreResult;
-  const tmp5 = numberToCustomScoreResult === id(8589).ICYMICustomScore.MUTED;
+  const tmp5 = numberToCustomScoreResult === id(8621).ICYMICustomScore.MUTED;
   const items1 = [id];
   const items2 = [numberToCustomScoreResult, id];
   const callback = React.useCallback((arg0) => {
@@ -161,12 +161,12 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   obj = { variant: "text-sm/semibold", color: "text-default", children: null };
   const intl = id(1236).intl;
   obj[2] = intl.string(id(1236).t.Clq6km);
-  const items3 = [callback2(id(4444).Text, obj), , , , ];
+  const items3 = [callback2(id(4474).Text, obj), , , , ];
   obj = { variant: "text-xs/normal", color: "text-default", children: null };
   const intl2 = id(1236).intl;
   obj1 = { guildName: guild.name };
   obj[2] = intl2.format(id(1236).t["0DhU2P"], obj1);
-  items3[1] = callback2(id(4444).Text, obj);
+  items3[1] = callback2(id(4474).Text, obj);
   let tmp11Result = null;
   if (!tmp5) {
     const obj2 = { style: null, children: null };
@@ -187,12 +187,12 @@ export const GuildScoreSettings = function GuildScoreSettings(guild) {
   const obj6 = { value: !tmp5, onValueChange: callback, label: null, start: true, end: true };
   const intl3 = tmp(1236).intl;
   obj6[2] = intl3.string(id(1236).t.oujX73);
-  obj5[1] = callback2(id(5961).TableSwitchRow, obj6);
+  obj5[1] = callback2(id(5993).TableSwitchRow, obj6);
   items3[3] = callback2(View, obj5);
   const obj7 = { variant: "text-xs/normal", color: "text-muted", style: tmp8.warningText, children: null };
   const intl4 = tmp(1236).intl;
   obj7[3] = intl4.string(id(1236).t.vRVs07);
-  items3[4] = callback2(id(4444).Text, obj7);
+  items3[4] = callback2(id(4474).Text, obj7);
   obj4[0] = items3;
   return closure_9(View, obj4);
 };

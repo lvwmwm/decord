@@ -1,12 +1,12 @@
-// Module ID: 9842
-// Function ID: 9843
+// Module ID: 9881
+// Function ID: 9882
 // Name: set
-// Dependencies: [2, 9843]
+// Dependencies: [2, 9882]
 
-// Module 9842 (set)
+// Module 9881 (set)
 import set from "set" /* 2 */;
-import _mod9843 from "module_9843" /* 9843 */;
+import _mod9882 from "module_9882" /* 9882 */;
 
 const result = set.fileFinishedImporting("modules/game_console/GameConsoleAlertUtils.tsx");
 
-export default _mod9843.default;
+export default _mod9882.default;

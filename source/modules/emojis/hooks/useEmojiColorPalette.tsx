@@ -1,13 +1,13 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 10897
+// Function ID: 10898
 // Name: useEmojiColorPalette
-// Dependencies: [4440, 1302, 589, 1363, 7834, 2]
+// Dependencies: [4470, 1302, 589, 1363, 7866, 2]
 // Exports: useEmojiColorPalette
 
-// Module 10859 (useEmojiColorPalette)
+// Module 10897 (useEmojiColorPalette)
 import initialize from "initialize" /* 589 */;
-import buildPlatformedThemedEmojiColorPalette from "buildPlatformedThemedEmojiColorPalette" /* 7834 */;
-import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import buildPlatformedThemedEmojiColorPalette from "buildPlatformedThemedEmojiColorPalette" /* 7866 */;
+import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_3 from "handleThemeChange" /* 1302 */;
 
 require = arg1;

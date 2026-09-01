@@ -1,14 +1,14 @@
-// Module ID: 12065
-// Function ID: 12066
+// Module ID: 12098
+// Function ID: 12099
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 4334, 4335, 589, 12030, 1236, 2401, 2]
+// Dependencies: [19, 4364, 4365, 589, 12063, 1236, 2401, 2]
 // Exports: default
 
-// Module 12065 (useCanGuildPowerupBeToggled)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12030 */;
+// Module 12098 (useCanGuildPowerupBeToggled)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12063 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "calculateAppliedBoosts" /* 4334 */;
-import { PowerupActiveStatusType } from "BoostedGuildTiers" /* 4335 */;
+import closure_4 from "calculateAppliedBoosts" /* 4364 */;
+import { PowerupActiveStatusType } from "BoostedGuildTiers" /* 4365 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useCanGuildPowerupBeToggled.tsx");

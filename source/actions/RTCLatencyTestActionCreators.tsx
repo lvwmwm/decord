@@ -1,10 +1,10 @@
-// Module ID: 17025
-// Function ID: 17026
+// Module ID: 17061
+// Function ID: 17062
 // Name: fetchRTCLatencyTestRegions
 // Dependencies: [530, 709, 2]
 // Exports: completeRTCLatencyTest, fetchRTCLatencyTestRegions
 
-// Module 17025 (fetchRTCLatencyTestRegions)
+// Module 17061 (fetchRTCLatencyTestRegions)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;

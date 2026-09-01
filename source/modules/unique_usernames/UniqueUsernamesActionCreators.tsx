@@ -1,8 +1,8 @@
-// Module ID: 14336
-// Function ID: 14337
-// Dependencies: [5, 676, 1236, 709, 530, 698, 4681, 503, 4346, 2]
+// Module ID: 14369
+// Function ID: 14370
+// Dependencies: [5, 676, 1236, 709, 530, 698, 4713, 503, 4376, 2]
 
-// Module 14336
+// Module 14369
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import ME from "ME" /* 676 */;
@@ -93,7 +93,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,14 +1,14 @@
-// Module ID: 13092
-// Function ID: 13093
+// Module ID: 13125
+// Function ID: 13126
 // Name: useEligibleActiveOutboundPromotions
-// Dependencies: [19, 1922, 10436, 1924, 589, 12983, 4109, 709, 12981, 2]
+// Dependencies: [19, 1922, 10475, 1924, 589, 13016, 4139, 709, 13014, 2]
 // Exports: useBogoPromotion, useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
-// Module 13092 (useEligibleActiveOutboundPromotions)
+// Module 13125 (useEligibleActiveOutboundPromotions)
 import initialize from "initialize" /* 589 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "createEmptyPromotionsByType" /* 10436 */;
+import closure_5 from "createEmptyPromotionsByType" /* 10475 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
 require = arg1;

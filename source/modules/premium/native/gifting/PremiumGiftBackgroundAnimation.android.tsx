@@ -1,16 +1,16 @@
-// Module ID: 10564
-// Function ID: 10565
+// Module ID: 10602
+// Function ID: 10603
 // Name: PremiumGiftBackgroundAnimation
-// Dependencies: [32, 19, 17, 4440, 21, 4448, 589, 7959, 10565, 5912, 2]
+// Dependencies: [32, 19, 17, 4470, 21, 4478, 589, 7991, 10603, 5944, 2]
 // Exports: default
 
-// Module 10564 (PremiumGiftBackgroundAnimation)
+// Module 10602 (PremiumGiftBackgroundAnimation)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);

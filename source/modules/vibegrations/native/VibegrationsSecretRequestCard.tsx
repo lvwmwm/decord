@@ -1,15 +1,15 @@
-// Module ID: 16158
-// Function ID: 16159
+// Module ID: 16193
+// Function ID: 16194
 // Name: VibegrationsSecretRequestCard
-// Dependencies: [19, 17, 21, 4448, 712, 4415, 16159, 4444, 1236, 3471, 4896, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 4445, 16194, 4474, 1236, 3501, 4928, 2]
 // Exports: default
 
-// Module 16158 (VibegrationsSecretRequestCard)
+// Module 16193 (VibegrationsSecretRequestCard)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -39,8 +39,8 @@ export default function VibegrationsSecretRequestCard(projectId) {
   }, items);
   obj = { variant: "text-xs/semibold", color: "text-muted", children: null };
   const intl = projectId(1236).intl;
-  obj[2] = intl.string(request(3471)["/e28TK"]);
-  const items1 = [callback(projectId(4444).Text, obj), , , ];
+  obj[2] = intl.string(request(3501)["/e28TK"]);
+  const items1 = [callback(projectId(4474).Text, obj), , , ];
   if (null != request.note) {
     if ("" !== request.note) {
       let note = request.note;
@@ -60,11 +60,11 @@ export default function VibegrationsSecretRequestCard(projectId) {
     const obj2 = { variant: "secondary", size: "sm", onPress: null, text: null };
     obj2[2] = callback;
     const intl3 = tmp6(1236).intl;
-    obj2[3] = intl3.string(tmp8(3471)["gVV+HX"]);
-    items1[3] = tmp5(tmp6(4896).Button, obj2);
+    obj2[3] = intl3.string(tmp8(3501)["gVV+HX"]);
+    items1[3] = tmp5(tmp6(4928).Button, obj2);
     obj[1] = items1;
     return closure_6(tmp4, obj);
   }
   const intl2 = tmp6(1236).intl;
-  note = intl2.string(tmp8(3471).jxvtin);
+  note = intl2.string(tmp8(3501).jxvtin);
 };

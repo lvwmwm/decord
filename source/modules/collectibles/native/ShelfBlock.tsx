@@ -1,18 +1,18 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15434
+// Function ID: 15435
 // Name: ListEdgeSpacer
-// Dependencies: [19, 17, 7255, 678, 676, 21, 4448, 712, 1499, 8853, 15383, 5921, 5941, 589, 14641, 14643, 7254, 8850, 4444, 4896, 1236, 5908, 8073, 2]
+// Dependencies: [19, 17, 7287, 678, 676, 21, 4478, 712, 1499, 8890, 15417, 5953, 5973, 589, 14674, 14676, 7286, 8887, 4474, 4928, 1236, 5940, 8105, 2]
 // Exports: default
 
-// Module 15400 (ListEdgeSpacer)
+// Module 15434 (ListEdgeSpacer)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "updateCategoriesAndProducts" /* 7255 */;
+import closure_6 from "updateCategoriesAndProducts" /* 7287 */;
 import { CollectiblesMobileShopScreen as closure_7 } from "items" /* 678 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function ListEdgeSpacer() {

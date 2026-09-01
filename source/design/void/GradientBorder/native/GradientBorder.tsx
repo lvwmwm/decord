@@ -1,12 +1,12 @@
-// Module ID: 13701
-// Function ID: 13702
+// Module ID: 13734
+// Function ID: 13735
 // Name: GradientBorder
-// Dependencies: [19, 17, 676, 21, 4673, 712, 4908, 2]
+// Dependencies: [19, 17, 676, 21, 4705, 712, 4940, 2]
 
-// Module 13701 (GradientBorder)
+// Module 13734 (GradientBorder)
 import ThemesDefault from "Themes" /* 712 */;
-import t from "t" /* 4673 */;
-import LinearGradientDefault from "LinearGradient" /* 4908 */;
+import t from "t" /* 4705 */;
+import LinearGradientDefault from "LinearGradient" /* 4940 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;

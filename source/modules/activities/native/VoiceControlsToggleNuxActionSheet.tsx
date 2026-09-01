@@ -1,18 +1,18 @@
-// Module ID: 16644
-// Function ID: 16645
+// Module ID: 16680
+// Function ID: 16681
 // Name: VoiceControlsToggleActionSheet
-// Dependencies: [32, 19, 17, 4440, 1384, 21, 4448, 712, 5039, 589, 5590, 8570, 4444, 1236, 4896, 2]
+// Dependencies: [32, 19, 17, 4470, 1384, 21, 4478, 712, 5071, 589, 5622, 8602, 4474, 1236, 4928, 2]
 // Exports: default
 
-// Module 16644 (VoiceControlsToggleActionSheet)
+// Module 16680 (VoiceControlsToggleActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);

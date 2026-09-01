@@ -1,12 +1,12 @@
-// Module ID: 11685
-// Function ID: 11686
+// Module ID: 11718
+// Function ID: 11719
 // Name: useFilterAndSortToOnlyFrecentCommands
-// Dependencies: [19, 8116, 11567, 8123, 2]
+// Dependencies: [19, 8148, 11600, 8155, 2]
 // Exports: default
 
-// Module 11685 (useFilterAndSortToOnlyFrecentCommands)
+// Module 11718 (useFilterAndSortToOnlyFrecentCommands)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleUserSettingsProtoStoreChange" /* 8116 */;
+import closure_3 from "handleUserSettingsProtoStoreChange" /* 8148 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/useFilterAndSortToOnlyFrecentCommands.tsx");

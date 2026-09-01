@@ -1,14 +1,14 @@
-// Module ID: 11320
-// Function ID: 11321
+// Module ID: 11358
+// Function ID: 11359
 // Name: CloudIcon
-// Dependencies: [19, 21, 712, 4166, 11321, 2]
+// Dependencies: [19, 21, 712, 4196, 11359, 2]
 // Exports: CloudIcon
 
-// Module 11320 (CloudIcon)
+// Module 11358 (CloudIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 11321 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 11359 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

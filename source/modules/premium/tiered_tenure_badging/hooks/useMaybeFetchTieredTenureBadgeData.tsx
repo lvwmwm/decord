@@ -1,11 +1,11 @@
-// Module ID: 13084
-// Function ID: 13085
+// Module ID: 13117
+// Function ID: 13118
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1922, 1924, 589, 8901, 4913, 8083, 2]
+// Dependencies: [1922, 1924, 589, 8938, 4945, 8115, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 13084 (useMaybeFetchTieredTenureBadgeData)
-import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4913 */;
+// Module 13117 (useMaybeFetchTieredTenureBadgeData)
+import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4945 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
@@ -16,7 +16,7 @@ export const useMaybeFetchTieredTenureBadgeData = function useMaybeFetchTieredTe
   const items = [closure_3];
   _require = _require(589).useStateFromStores(items, () => currentUser.getCurrentUser());
   const obj = _require(589);
-  importDefault = _require(8901).useIsPremiumSubscriber(PremiumTypes.TIER_2);
+  importDefault = _require(8938).useIsPremiumSubscriber(PremiumTypes.TIER_2);
   useMountLayoutEffectDefault(() => {
     let id;
     if (closure_0 != null) {

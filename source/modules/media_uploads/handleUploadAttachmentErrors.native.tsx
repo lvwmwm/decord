@@ -1,17 +1,17 @@
-// Module ID: 8133
-// Function ID: 8134
+// Module ID: 8165
+// Function ID: 8166
 // Name: handleUploadMessageAttachmentsErrors
-// Dependencies: [676, 5091, 5046, 8134, 4825, 1236, 8362, 2]
+// Dependencies: [676, 5123, 5078, 8166, 4857, 1236, 8394, 2]
 // Exports: handleUploadMessageAttachmentsErrors
 
-// Module 8133 (handleUploadMessageAttachmentsErrors)
+// Module 8165 (handleUploadMessageAttachmentsErrors)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import setDefault from "set" /* 4825 */;
-import getUploadFileSizeSum from "getUploadFileSizeSum" /* 5046 */;
-import KESTREL_GA_UPLOAD_LIMIT_MB from "KESTREL_GA_UPLOAD_LIMIT_MB" /* 5091 */;
-import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 8134 */;
-import getAttachmentUploadAbortAlertContent from "getAttachmentUploadAbortAlertContent" /* 8362 */;
+import setDefault from "set" /* 4857 */;
+import getUploadFileSizeSum from "getUploadFileSizeSum" /* 5078 */;
+import KESTREL_GA_UPLOAD_LIMIT_MB from "KESTREL_GA_UPLOAD_LIMIT_MB" /* 5123 */;
+import showUploadFileSizeErrorDefault from "showUploadFileSizeError" /* 8166 */;
+import getAttachmentUploadAbortAlertContent from "getAttachmentUploadAbortAlertContent" /* 8394 */;
 import ME from "ME" /* 676 */;
 
 ({ AbortCodes: c3, MAX_UPLOAD_COUNT: c4 } = ME);

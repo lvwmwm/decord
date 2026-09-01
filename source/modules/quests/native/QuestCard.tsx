@@ -1,22 +1,22 @@
-// Module ID: 14658
-// Function ID: 14659
+// Module ID: 14691
+// Function ID: 14692
 // Name: ESTIMATED_CARD_HEIGHT
-// Dependencies: [5, 32, 19, 17, 1922, 7416, 5355, 505, 21, 712, 4448, 1350, 4296, 5358, 7422, 11303, 11046, 1493, 10884, 14659, 8073, 7315, 7320, 7441, 589, 10889, 7437, 7411, 10894, 4383, 8460, 4167, 14686, 11049, 8961, 8962, 8966, 7414, 11059, 4415, 14688, 2009, 11304, 7265, 1236, 11297, 11075, 14692, 10875, 10891, 10892, 4903, 9050, 8775, 500, 10716, 4444, 14693, 5569, 14732, 5461, 4908, 691, 14718, 4894, 7642, 14699, 11300, 14733, 4896, 14736, 7974, 9370, 14719, 2]
+// Dependencies: [5, 32, 19, 17, 1922, 7448, 5387, 505, 21, 712, 4478, 1350, 4326, 5390, 7454, 11341, 11083, 1493, 10922, 14692, 8105, 7347, 7352, 7473, 589, 10927, 7469, 7443, 10932, 4413, 8492, 4197, 14719, 11086, 8998, 8999, 9003, 7446, 11096, 4445, 14721, 2009, 11342, 7297, 1236, 11334, 11112, 14725, 10913, 10929, 10930, 4935, 9088, 8812, 500, 10754, 4474, 14726, 5601, 14765, 5493, 4940, 691, 14751, 4926, 7674, 14732, 11337, 14766, 4928, 14769, 8006, 9409, 14752, 2]
 
-// Module 14658 (ESTIMATED_CARD_HEIGHT)
+// Module 14691 (ESTIMATED_CARD_HEIGHT)
 import ThemesDefault from "Themes" /* 712 */;
 import _mod1350 from "module_1350" /* 1350 */;
-import hexToRgba from "hexToRgba" /* 4296 */;
+import hexToRgba from "hexToRgba" /* 4326 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import closure_9 from "initializeState" /* 7416 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5355 */;
+import closure_9 from "initializeState" /* 7448 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5387 */;
 import { NOOP } from "sum" /* 505 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 let c5 = importAllResult;
@@ -489,7 +489,7 @@ const memoResult = importAllResult.memo((questContent) => {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -506,12 +506,12 @@ const memoResult = importAllResult.memo((questContent) => {
               } else {
                 closure_0 = tmp2;
                 closure_1_5.log("Enrolling in quest");
-                closure_1_0(10875);
+                closure_1_0(10913);
                 obj1 = { questContent: null, questContentCTA: null, sourceQuestContent: null };
                 obj1[0] = dependencyMap;
                 if (!closure_1_20) {
                   if (!closure_1_14) {
-                    let START_QUEST = tmp31(7441).QuestContentCTA.ACCEPT_QUEST;
+                    let START_QUEST = tmp31(7473).QuestContentCTA.ACCEPT_QUEST;
                   }
                   obj1[1] = START_QUEST;
                   obj1[2] = closure_1_4;
@@ -519,7 +519,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   v0 = 1;
                   dependencyMap = 1;
                 }
-                START_QUEST = tmp31(7441).QuestContentCTA.START_QUEST;
+                START_QUEST = tmp31(7473).QuestContentCTA.START_QUEST;
               }
             } else if (arg0 === 1) {
               dependencyMap = 3;
@@ -535,7 +535,7 @@ const memoResult = importAllResult.memo((questContent) => {
                   obj = { questId: null, sourceQuestContent: null };
                   obj[0] = v0.id;
                   obj[1] = closure_4;
-                  v0(14692)(obj);
+                  v0(14725)(obj);
                   dependencyMap = 3;
                 }
                 callback2();
@@ -732,7 +732,7 @@ const memoResult = importAllResult.memo((questContent) => {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -765,7 +765,7 @@ const memoResult = importAllResult.memo((questContent) => {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         v0 = tmp;

@@ -1,21 +1,21 @@
-// Module ID: 4948
-// Function ID: 4949
+// Module ID: 4980
+// Function ID: 4981
 // Name: match
-// Dependencies: [17, 4949, 4104, 4162, 5020, 4926, 1431, 4927, 5021, 4481, 1236, 4930, 2]
-// Exports: decorateWithIcon
+// Dependencies: [17, 4981, 5052, 4511, 1236, 4134, 4192, 5067, 4958, 1431, 4959, 4962, 2]
+// Exports: decorateWithIcon, hydrateGameMention
 
-// Module 4948 (match)
+// Module 4980 (match)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4104 */;
-import tDefault from "t" /* 4162 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4481 */;
-import textRegexpDefault from "textRegexp" /* 4926 */;
-import getChannelDefault from "getChannel" /* 4927 */;
-import regExpDefault from "regExp" /* 4930 */;
-import INVISIBLE_CHAR_REGEX2 from "INVISIBLE_CHAR_REGEX" /* 5020 */;
-import getGameMentionData from "getGameMentionData" /* 5021 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
+import tDefault from "t" /* 4192 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 4511 */;
+import textRegexpDefault from "textRegexp" /* 4958 */;
+import getChannelDefault from "getChannel" /* 4959 */;
+import regExpDefault from "regExp" /* 4962 */;
+import getGameMentionData from "getGameMentionData" /* 5052 */;
+import INVISIBLE_CHAR_REGEX2 from "INVISIBLE_CHAR_REGEX" /* 5067 */;
 
 const Image = get_ActivityIndicator.Image;
 obj = { escape: obj, invisibleUnicode: null, text: null, emoji: null, customEmoji: null, channelMention: null, gameMention: null, channelOrMessageUrl: null, mediaPostLink: null, attachmentLink: null, silentPrefix: null };
@@ -177,7 +177,7 @@ obj[5] = {
   }
 };
 obj[6] = {
-  parse(closure_0, arg1, channelId) {
+  parse(gameId, arg1, channelId) {
     let obj = getGameMentionData;
     const gameMentionData = obj.getGameMentionData(tmp);
     let gameIcon;
@@ -419,4 +419,23 @@ export const decorateWithIcon = function decorateWithIcon(str) {
     }
   }
   return mapped;
+};
+export const hydrateGameMention = function hydrateGameMention(gameId, channelId) {
+  let obj = getGameMentionData;
+  const gameMentionData = obj.getGameMentionData(gameId);
+  let gameIcon;
+  if (gameMentionData != null) {
+    gameIcon = gameMentionData.gameIcon;
+  }
+  obj = { type: "gameMention", gameId, channelId: channelId.channelId, icon: getGameMediaRefURLDefault(gameId, gameIcon, { size: 32 }), displayName: null };
+  let gameName;
+  if (gameMentionData != null) {
+    gameName = gameMentionData.gameName;
+  }
+  if (gameName == null) {
+    const intl = tmp(1236).intl;
+    gameName = intl.string(tmp(1236).t["11pdXZ"]);
+  }
+  obj[4] = gameName;
+  return obj;
 };

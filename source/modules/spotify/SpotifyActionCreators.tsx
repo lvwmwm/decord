@@ -1,15 +1,15 @@
-// Module ID: 9353
-// Function ID: 9354
+// Module ID: 9392
+// Function ID: 9393
 // Name: apiRequest
-// Dependencies: [9352, 8579, 676, 4332, 530, 709, 687, 500, 8773, 2]
+// Dependencies: [9391, 8611, 676, 4362, 530, 709, 687, 500, 8810, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getAccessToken, getDevices, getProfile, pause, play, setActiveDevice, subscribePlayerStateNotifications
 
-// Module 9353 (apiRequest)
+// Module 9392 (apiRequest)
 import set from "set" /* 500 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import setDefault from "set" /* 8773 */;
-import closure_3 from "isProtocolRegistered" /* 9352 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8579 */;
+import setDefault from "set" /* 8810 */;
+import closure_3 from "isProtocolRegistered" /* 9391 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8611 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

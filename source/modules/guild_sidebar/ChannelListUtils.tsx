@@ -1,10 +1,10 @@
-// Module ID: 4635
-// Function ID: 4636
+// Module ID: 4667
+// Function ID: 4668
 // Name: hasStream
 // Dependencies: [2]
 // Exports: hasStream
 
-// Module 4635 (hasStream)
+// Module 4667 (hasStream)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_sidebar/ChannelListUtils.tsx");

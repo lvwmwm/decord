@@ -1,13 +1,13 @@
-// Module ID: 16496
-// Function ID: 16497
+// Module ID: 16532
+// Function ID: 16533
 // Name: usePreloadedAsset
-// Dependencies: [32, 19, 4440, 589, 500, 16497, 5461, 2]
+// Dependencies: [32, 19, 4470, 589, 500, 16533, 5493, 2]
 // Exports: default
 
-// Module 16496 (usePreloadedAsset)
+// Module 16532 (usePreloadedAsset)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/image/usePreloadedAsset.native.tsx");
@@ -37,7 +37,7 @@ export default function usePreloadedAsset(arg0) {
   dependencyMap = tmp3;
   let tmp4 = !tmp3;
   if (tmp3) {
-    tmp4 = null != num(16497);
+    tmp4 = null != num(16533);
   }
   callback = tmp4;
   let str = "image";
@@ -78,9 +78,9 @@ export default function usePreloadedAsset(arg0) {
           }
         }, timeout);
         if (dependencyMap) {
-          if (null != num(16497)) {
-            let preloadResult = num(16497).preload(tmp);
-            const obj2 = num(16497);
+          if (null != num(16533)) {
+            let preloadResult = num(16533).preload(tmp);
+            const obj2 = num(16533);
           }
           preloadResult.then(() => {
             if (!c0) {
@@ -102,8 +102,8 @@ export default function usePreloadedAsset(arg0) {
             clearTimeout(closure_1);
           };
         }
-        preloadResult = num(5461).preload(tmp, timeout + 1000);
-        let obj = num(5461);
+        preloadResult = num(5493).preload(tmp, timeout + 1000);
+        let obj = num(5493);
         const tmp4 = timeout;
       }
     }

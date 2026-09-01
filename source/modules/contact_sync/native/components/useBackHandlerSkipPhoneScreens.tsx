@@ -1,14 +1,14 @@
-// Module ID: 12200
-// Function ID: 12201
+// Module ID: 12233
+// Function ID: 12234
 // Name: useBackHandlerSkipPhoneScreens
-// Dependencies: [17, 12183, 5469, 2]
+// Dependencies: [17, 12216, 5501, 2]
 // Exports: default, useBackHandlerMinimizeApp
 
-// Module 12200 (useBackHandlerSkipPhoneScreens)
+// Module 12233 (useBackHandlerSkipPhoneScreens)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5469 */;
-import ContactSyncLandingPage from "ContactSyncLandingPage" /* 12183 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5501 */;
+import ContactSyncLandingPage from "ContactSyncLandingPage" /* 12216 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const ContactSyncScenes = ContactSyncLandingPage.ContactSyncScenes;
@@ -17,7 +17,7 @@ const result = set.fileFinishedImporting("modules/contact_sync/native/components
 export default function useBackHandlerSkipPhoneScreens(arg0, arg1) {
   const _require = arg0;
   dependencyMap = arg1;
-  _require(5469).useNavigatorBackPressHandler(() => {
+  _require(5501).useNavigatorBackPressHandler(() => {
     if (null != closure_1) {
       tmp();
     } else {

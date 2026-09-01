@@ -1,14 +1,14 @@
-// Module ID: 15620
-// Function ID: 15621
+// Module ID: 15656
+// Function ID: 15657
 // Name: cardSize
-// Dependencies: [4100, 4467, 14857, 1471, 12, 2]
+// Dependencies: [4130, 4497, 14890, 1471, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 15620 (cardSize)
+// Module 15656 (cardSize)
 import apply from "apply" /* 12 */;
-import closure_3 from "markAllUserIdListsStale" /* 4100 */;
-import closure_4 from "updateVoiceState" /* 4467 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14857 */;
+import closure_3 from "markAllUserIdListsStale" /* 4130 */;
+import closure_4 from "updateVoiceState" /* 4497 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14890 */;
 
 require = arg1;
 ({ HAPPENING_NOW_CARD_WIDTH_NORMAL_WITH_MARGIN: c5, HAPPENING_NOW_CARD_WIDTH_SMALL_WITH_MARGIN: closure_6, HAPPENING_NOW_CARD_WIDTH_XSMALL_WITH_MARGIN: error } = HAPPENING_NOW_PANELS_CONTAINER_PADDING);

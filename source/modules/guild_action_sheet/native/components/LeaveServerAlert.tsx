@@ -1,10 +1,10 @@
-// Module ID: 13668
-// Function ID: 13669
+// Module ID: 13701
+// Function ID: 13702
 // Name: LeaveServerAlert
-// Dependencies: [676, 21, 4831, 1236, 4831, 9689, 2]
+// Dependencies: [676, 21, 4863, 1236, 4863, 9728, 2]
 // Exports: default
 
-// Module 13668 (LeaveServerAlert)
+// Module 13701 (LeaveServerAlert)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -39,12 +39,12 @@ export default function LeaveServerAlert(guild) {
   };
   const intl3 = tmp2(1236).intl;
   obj1[2] = intl3.string(guild(1236).t.p89ACt);
-  const items = [closure_4(guild(4831).AlertActionButton, obj1, "confirm"), ];
+  const items = [closure_4(guild(4863).AlertActionButton, obj1, "confirm"), ];
   const obj2 = { variant: "secondary", text: null };
   const intl4 = tmp2(1236).intl;
   obj2[1] = intl4.string(guild(1236).t.gm1Vej);
-  items[1] = closure_4(guild(4831).AlertActionButton, obj2, "cancel");
+  items[1] = closure_4(guild(4863).AlertActionButton, obj2, "cancel");
   obj[0] = items;
-  obj[2] = callback(guild(4831).AlertActions, obj);
-  return closure_4(guild(4831).AlertModal, obj);
+  obj[2] = callback(guild(4863).AlertActions, obj);
+  return closure_4(guild(4863).AlertModal, obj);
 };

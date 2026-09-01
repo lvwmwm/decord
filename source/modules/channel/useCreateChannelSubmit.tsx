@@ -1,10 +1,10 @@
-// Module ID: 9665
-// Function ID: 9666
+// Module ID: 9704
+// Function ID: 9705
 // Name: useCreateChannelSubmit
-// Dependencies: [5, 32, 19, 676, 1955, 506, 9666, 1363, 1236, 2]
+// Dependencies: [5, 32, 19, 676, 1955, 506, 9705, 1363, 1236, 2]
 // Exports: default
 
-// Module 9665 (useCreateChannelSubmit)
+// Module 9704 (useCreateChannelSubmit)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
@@ -38,7 +38,7 @@ export default function useCreateChannelSubmit(arg0) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ export default function useCreateChannelSubmit(arg0) {
               let guild_id;
               c7 = 1;
               body = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

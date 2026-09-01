@@ -1,11 +1,11 @@
-// Module ID: 4551
-// Function ID: 4552
+// Module ID: 4583
+// Function ID: 4584
 // Name: Video
-// Dependencies: [4552, 2]
+// Dependencies: [4584, 2]
 
-// Module 4551 (Video)
+// Module 4583 (Video)
 import set from "set" /* 2 */;
-import loggerDefault from "logger" /* 4552 */;
+import loggerDefault from "logger" /* 4584 */;
 
 class Video {
   constructor(arg0) {

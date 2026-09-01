@@ -1,36 +1,36 @@
-// Module ID: 16613
-// Function ID: 16614
+// Module ID: 16649
+// Function ID: 16650
 // Name: getSectionLabel
-// Dependencies: [19, 17, 1922, 16607, 21, 4448, 712, 4941, 1236, 9150, 589, 4109, 9096, 9106, 16614, 4903, 12, 5972, 1297, 16622, 10344, 4411, 8806, 9105, 7763, 4444, 2]
+// Dependencies: [19, 17, 1922, 16643, 21, 4478, 712, 4973, 1236, 9189, 589, 4139, 9134, 9144, 16650, 4935, 12, 6004, 1297, 16658, 10383, 4441, 8843, 9143, 7795, 4474, 2]
 
-// Module 16613 (getSectionLabel)
+// Module 16649 (getSectionLabel)
 import ThemesDefault from "Themes" /* 712 */;
-import SoundButtonOverlay from "SoundButtonOverlay" /* 4941 */;
-import renderDefaultEmptyDefault from "renderDefaultEmpty" /* 7763 */;
+import SoundButtonOverlay from "SoundButtonOverlay" /* 4973 */;
+import renderDefaultEmptyDefault from "renderDefaultEmpty" /* 7795 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT" /* 16607 */;
+import SOUND_BUTTON_HEIGHT from "SOUND_BUTTON_HEIGHT" /* 16643 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function getSectionLabel(category) {
   const type = category.category.categoryInfo.type;
   if (SoundButtonOverlay.SoundboardSoundGridSectionType.GUILD === type) {
     return category.category.categoryInfo.guild.name;
-  } else if (tmp(4941).SoundboardSoundGridSectionType.DEFAULTS === type) {
+  } else if (tmp(4973).SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl4 = tmp(1236).intl;
     return intl4.string(tmp(1236).t.Rtvk9X);
-  } else if (tmp(4941).SoundboardSoundGridSectionType.FAVORITES === type) {
+  } else if (tmp(4973).SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl3 = tmp(1236).intl;
     return intl3.string(tmp(1236).t.y3LQCG);
-  } else if (tmp(4941).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+  } else if (tmp(4973).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
     const intl2 = tmp(1236).intl;
     return intl2.string(tmp(1236).t["+cGVV6"]);
-  } else if (tmp(4941).SoundboardSoundGridSectionType.SEARCH === type) {
+  } else if (tmp(4973).SoundboardSoundGridSectionType.SEARCH === type) {
     return null;
-  } else if (tmp(4941).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
+  } else if (tmp(4973).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
     const intl = tmp(1236).intl;
     const obj = { guildName: null };
     obj[0] = category.category.categoryInfo.guild.name;
@@ -164,7 +164,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     START = END;
   }
   closure_5 = callback2();
-  let obj = channel(4903);
+  let obj = channel(4935);
   const fontScale = obj.useFontScale();
   let tmp3 = (function getFastListSectionsFromCategories(categories, closure_6, fontScale) {
     const items = [];
@@ -173,7 +173,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
     while (iter !== undefined) {
       let tmp2 = callback;
       let tmp3 = dependencyMap;
-      let arr2 = callback(9150)(nextResult.items, closure_6);
+      let arr2 = callback(9189)(nextResult.items, closure_6);
       let tmp4 = closure_9;
       let obj = { category: null, height: null, soundsByRow: null };
       obj[0] = nextResult;
@@ -266,7 +266,7 @@ const memoResult = importAllResult.memo(function SoundboardSoundPickerListCompon
   });
   let obj3 = channel(12);
   const items2 = [closure_5];
-  callback2 = channel(589).useStateFromStores(items2, () => callback(4109).canUseSoundboardEverywhere(currentUser.getCurrentUser()));
+  callback2 = channel(589).useStateFromStores(items2, () => callback(4139).canUseSoundboardEverywhere(currentUser.getCurrentUser()));
   obj = {
     onLayout(nativeEvent) {
       return callback4(0, nativeEvent.nativeEvent.layout.height);

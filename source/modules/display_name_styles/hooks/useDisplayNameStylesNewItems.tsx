@@ -1,13 +1,13 @@
-// Module ID: 14902
-// Function ID: 14903
+// Module ID: 14935
+// Function ID: 14936
 // Name: useDisplayNameStylesNewFonts
-// Dependencies: [19, 14903, 1934, 589, 14904, 2]
+// Dependencies: [19, 14936, 1939, 589, 14937, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14902 (useDisplayNameStylesNewFonts)
+// Module 14935 (useDisplayNameStylesNewFonts)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "set" /* 14903 */;
-import items3 from "items3" /* 1934 */;
+import closure_3 from "set" /* 14936 */;
+import items3 from "items3" /* 1939 */;
 
 const require = arg1;
 ({ FLYWHEEL_EFFECTS: c4, FLYWHEEL_FONTS: c5 } = items3);

@@ -1,20 +1,20 @@
-// Module ID: 10425
-// Function ID: 10426
+// Module ID: 10464
+// Function ID: 10465
 // Name: extraWishlistParams
-// Dependencies: [5, 7334, 1922, 4111, 6042, 10420, 676, 501, 1471, 709, 6046, 530, 10418, 1208, 4346, 698, 8084, 2]
+// Dependencies: [5, 7366, 1922, 4141, 6074, 10459, 676, 501, 1471, 709, 6078, 530, 10457, 1208, 4376, 698, 8116, 2]
 
-// Module 10425 (extraWishlistParams)
+// Module 10464 (extraWishlistParams)
 import PlatformTypes from "PlatformTypes" /* 501 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import useSKUPrice from "useSKUPrice" /* 6046 */;
+import useSKUPrice from "useSKUPrice" /* 6078 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createUserWidgetFromServer" /* 7334 */;
+import closure_4 from "createUserWidgetFromServer" /* 7366 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "handlePaymentSourceCreateEnd" /* 4111 */;
-import closure_7 from "fromServer" /* 6042 */;
-import closure_8 from "fromServer" /* 10420 */;
-import { getWishlistSkuIds } from "fromServer" /* 10420 */;
+import closure_6 from "handlePaymentSourceCreateEnd" /* 4141 */;
+import closure_7 from "fromServer" /* 6074 */;
+import closure_8 from "fromServer" /* 10459 */;
+import { getWishlistSkuIds } from "fromServer" /* 10459 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -132,7 +132,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -281,7 +281,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

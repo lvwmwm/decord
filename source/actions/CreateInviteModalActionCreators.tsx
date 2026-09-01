@@ -1,12 +1,12 @@
-// Module ID: 9876
-// Function ID: 9877
-// Dependencies: [9871, 676, 709, 698, 8617, 1236, 2]
+// Module ID: 9915
+// Function ID: 9916
+// Dependencies: [9910, 676, 709, 698, 8649, 1236, 2]
 
-// Module 9876
+// Module 9915
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import generateAcceptInviteOptionsDefault from "generateAcceptInviteOptions" /* 8617 */;
-import closure_3 from "updateWithLatestInvite" /* 9871 */;
+import generateAcceptInviteOptionsDefault from "generateAcceptInviteOptions" /* 8649 */;
+import closure_3 from "updateWithLatestInvite" /* 9910 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 const require = arg1;

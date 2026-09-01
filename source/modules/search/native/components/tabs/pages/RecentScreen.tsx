@@ -1,21 +1,21 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 16224
+// Function ID: 16225
 // Name: ClearAllHistory
-// Dependencies: [32, 5, 19, 6096, 11899, 16190, 11873, 7590, 11887, 676, 21, 5036, 11897, 1236, 4444, 10596, 16191, 4461, 11894, 11874, 589, 1500, 16194, 11872, 14394, 8650, 8652, 16195, 16196, 16199, 2]
+// Dependencies: [32, 5, 19, 6128, 11932, 16225, 11906, 7622, 11920, 676, 21, 5068, 11930, 1236, 4474, 10634, 16226, 4491, 11927, 11907, 589, 1500, 16229, 11905, 14427, 8682, 8684, 16230, 16231, 16234, 2]
 
-// Module 16189 (ClearAllHistory)
+// Module 16224 (ClearAllHistory)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import PressableBase from "PressableBase" /* 5036 */;
+import Text from "Text" /* 4474 */;
+import PressableBase from "PressableBase" /* 5068 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import importAllResult from "noop" /* 19 */;
-import closure_6 from "handleReaction" /* 6096 */;
-import closure_7 from "search" /* 11899 */;
-import closure_8 from "deserialize" /* 16190 */;
-import closure_9 from "prototype" /* 11873 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7590 */;
-import { EMPTY_MEDIA_RESULTS } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 11887 */;
+import closure_6 from "handleReaction" /* 6128 */;
+import closure_7 from "search" /* 11932 */;
+import closure_8 from "deserialize" /* 16225 */;
+import closure_9 from "prototype" /* 11906 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7622 */;
+import { EMPTY_MEDIA_RESULTS } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 11920 */;
 import { SearchTypes } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -36,8 +36,8 @@ function ClearAllHistory(searchContext) {
   obj = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = searchContext(1236).intl;
   obj[2] = intl2.string(searchContext(1236).t.LFTAUp);
-  obj[4] = jsx(searchContext(4444).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(searchContext(5036).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  obj[4] = jsx(searchContext(4474).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(searchContext(5068).PressableHighlight, { variant: "text-sm/semibold", color: "text-brand", children: null });
 }
 function ViewAll(onJumpToMedia) {
   let obj = { onPress: onJumpToMedia.onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: null, children: null };
@@ -245,7 +245,7 @@ let closure_20 = importAllResult.memo((searchContext) => {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -287,7 +287,7 @@ let closure_20 = importAllResult.memo((searchContext) => {
             const result = obj.trackSuggestedSearchClicked(obj3);
             closure_1_2(closure_0, callback);
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c4 = tmp;

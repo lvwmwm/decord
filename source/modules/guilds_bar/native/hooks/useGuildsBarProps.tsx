@@ -1,25 +1,25 @@
-// Module ID: 15848
-// Function ID: 15849
+// Module ID: 15883
+// Function ID: 15884
 // Name: findGuildSectionIndex
-// Dependencies: [19, 5189, 4092, 6034, 6035, 13366, 4823, 1992, 1909, 13374, 4269, 5349, 15839, 15840, 21, 15849, 15862, 15863, 15866, 15871, 15897, 15900, 15901, 15902, 15904, 15905, 15906, 15908, 15910, 4167, 712, 1628, 14659, 14668, 14888, 589, 13543, 15912, 15913, 1493, 15915, 7763, 2]
+// Dependencies: [19, 5221, 4122, 6066, 6067, 13399, 4855, 1992, 1909, 13407, 4299, 5381, 15875, 15876, 21, 15884, 15897, 15898, 15901, 15906, 15932, 15935, 15936, 15937, 15939, 15940, 15941, 15943, 15945, 4197, 712, 1628, 14692, 14701, 14921, 589, 13576, 15947, 15948, 1493, 15950, 7795, 2]
 // Exports: default
 
-// Module 15848 (findGuildSectionIndex)
+// Module 15883 (findGuildSectionIndex)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_handleConnectionOpen" /* 5189 */;
-import closure_5 from "initialize" /* 4092 */;
-import closure_6 from "processChannel" /* 6034 */;
-import closure_7 from "processChannel" /* 6035 */;
-import closure_8 from "getGeoRestrictedGuilds" /* 13366 */;
-import closure_9 from "handleConnectionOpen" /* 4823 */;
+import closure_4 from "_handleConnectionOpen" /* 5221 */;
+import closure_5 from "initialize" /* 4122 */;
+import closure_6 from "processChannel" /* 6066 */;
+import closure_7 from "processChannel" /* 6067 */;
+import closure_8 from "getGeoRestrictedGuilds" /* 13399 */;
+import closure_9 from "handleConnectionOpen" /* 4855 */;
 import closure_10 from "trackCommunicationDisabled" /* 1992 */;
 import closure_11 from "createGuildRecordFromRust" /* 1909 */;
-import closure_12 from "rebuildUnreads" /* 13374 */;
-import closure_13 from "handleConnectionOpen" /* 4269 */;
-import closure_14 from "insertUnsortedGuilds" /* 5349 */;
-import { GuildsNodeType } from "insertUnsortedGuilds" /* 5349 */;
-import closure_16 from "withEqualityFn" /* 15839 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15840 */;
+import closure_12 from "rebuildUnreads" /* 13407 */;
+import closure_13 from "handleConnectionOpen" /* 4299 */;
+import closure_14 from "insertUnsortedGuilds" /* 5381 */;
+import { GuildsNodeType } from "insertUnsortedGuilds" /* 5381 */;
+import closure_16 from "withEqualityFn" /* 15875 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15876 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -470,11 +470,11 @@ export default function useGuildsBarProps(arg0) {
         const obj = {
           children: items1.map((arg0) => {
             if ("unavailable-guilds" === arg0) {
-              return callback2(callback(15905), {}, arg0);
+              return callback2(callback(15940), {}, arg0);
             } else if ("empty-nux" === arg0) {
-              return callback2(callback(15906), {}, arg0);
+              return callback2(callback(15941), {}, arg0);
             } else if ("create-join-guild" === arg0) {
-              return callback2(callback(15908), {}, arg0);
+              return callback2(callback(15943), {}, arg0);
             }
           })
         };

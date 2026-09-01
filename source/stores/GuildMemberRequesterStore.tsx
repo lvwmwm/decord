@@ -1,12 +1,12 @@
-// Module ID: 5337
-// Function ID: 5338
+// Module ID: 5369
+// Function ID: 5370
 // Name: handleConnectionReset
-// Dependencies: [1387, 1992, 5338, 709, 589, 2]
+// Dependencies: [1387, 1992, 5370, 709, 589, 2]
 
-// Module 5337 (handleConnectionReset)
+// Module 5369 (handleConnectionReset)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import acknowledgeDefault from "acknowledge" /* 5338 */;
+import acknowledgeDefault from "acknowledge" /* 5370 */;
 import closure_2 from "ensureGuildLoaded" /* 1387 */;
 import importDefaultResult from "trackCommunicationDisabled" /* 1992 */;
 

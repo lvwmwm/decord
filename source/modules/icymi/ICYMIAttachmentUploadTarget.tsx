@@ -1,11 +1,11 @@
-// Module ID: 5089
-// Function ID: 5090
+// Module ID: 5121
+// Function ID: 5122
 // Name: getCreateAttachmentURL
-// Dependencies: [676, 5042, 2]
+// Dependencies: [676, 5074, 2]
 
-// Module 5089 (getCreateAttachmentURL)
+// Module 5121 (getCreateAttachmentURL)
 import set from "set" /* 2 */;
-import items from "items" /* 5042 */;
+import items from "items" /* 5074 */;
 import ME from "ME" /* 676 */;
 
 ({ Endpoints: obj1, MAX_ATTACHMENT_SIZE: c3, MAX_UPLOAD_COUNT: c4 } = ME);

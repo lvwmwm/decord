@@ -1,14 +1,14 @@
-// Module ID: 6313
-// Function ID: 6314
+// Module ID: 6345
+// Function ID: 6346
 // Name: BadgeCustomizeAbstractUI
-// Dependencies: [21, 5461, 6314, 2]
+// Dependencies: [21, 5493, 6346, 2]
 // Exports: BadgeCustomizeAbstractUI
 
-// Module 6313 (BadgeCustomizeAbstractUI)
+// Module 6345 (BadgeCustomizeAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6314 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6346 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BadgeCustomizeAbstractUI.native.tsx");

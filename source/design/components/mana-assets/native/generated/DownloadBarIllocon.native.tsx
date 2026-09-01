@@ -1,14 +1,14 @@
-// Module ID: 6461
-// Function ID: 6462
+// Module ID: 6493
+// Function ID: 6494
 // Name: DownloadBarIllocon
-// Dependencies: [21, 5461, 6462, 2]
+// Dependencies: [21, 5493, 6494, 2]
 // Exports: DownloadBarIllocon
 
-// Module 6461 (DownloadBarIllocon)
+// Module 6493 (DownloadBarIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6462 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6494 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DownloadBarIllocon.native.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 4264
-// Function ID: 4265
+// Module ID: 4294
+// Function ID: 4295
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4264 (metadata)
+// Module 4294 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/ThemeAwareNitroWishlistingWumpus.riv.js");

@@ -1,18 +1,18 @@
-// Module ID: 7109
-// Function ID: 7110
+// Module ID: 7141
+// Function ID: 7142
 // Name: calculateFractionalPremiumInfo
-// Dependencies: [32, 19, 1922, 4115, 7110, 676, 1924, 4045, 38, 4124, 4109, 589, 4913, 7111, 12, 2]
+// Dependencies: [32, 19, 1922, 4145, 7142, 676, 1924, 4075, 38, 4154, 4139, 589, 4945, 7143, 12, 2]
 // Exports: default
 
-// Module 7109 (calculateFractionalPremiumInfo)
-import hooksDefault from "hooks" /* 4045 */;
-import getPremiumPlanItem from "getPremiumPlanItem" /* 4109 */;
-import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4124 */;
+// Module 7141 (calculateFractionalPremiumInfo)
+import hooksDefault from "hooks" /* 4075 */;
+import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
+import _createGatewayCheckoutContext from "_createGatewayCheckoutContext" /* 4154 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "reset" /* 4115 */;
-import closure_7 from "addEntitlement" /* 7110 */;
+import closure_6 from "reset" /* 4145 */;
+import closure_7 from "addEntitlement" /* 7142 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
@@ -78,17 +78,17 @@ function calculateFractionalPremiumInfo(isFetching) {
         obj2[0] = null != first;
         obj2[1] = tmp7;
         if (null != first) {
-          let tmp11 = tmp2(4045)(first.startsAt);
+          let tmp11 = tmp2(4075)(first.startsAt);
         } else {
-          tmp11 = tmp2(4045)(0);
+          tmp11 = tmp2(4075)(0);
         }
         obj2[2] = tmp11;
         if (null != first) {
           const obj4 = getPremiumPlanItem;
-          let tmp2ResultResult = tmp2(4045)(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
-          const tmp2Result = tmp2(4045);
+          let tmp2ResultResult = tmp2(4075)(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
+          const tmp2Result = tmp2(4075);
         } else {
-          tmp2ResultResult = tmp2(4045)(0);
+          tmp2ResultResult = tmp2(4075)(0);
         }
         obj2[3] = tmp2ResultResult;
         let str = "";
@@ -97,9 +97,9 @@ function calculateFractionalPremiumInfo(isFetching) {
         }
         obj2[4] = str;
         if (null != first) {
-          let tmp18 = tmp2(4045)(first.endsAt);
+          let tmp18 = tmp2(4075)(first.endsAt);
         } else {
-          tmp18 = tmp2(4045)(0);
+          tmp18 = tmp2(4075)(0);
         }
         obj2[5] = tmp18;
         obj2[6] = unactivatedFractionalPremiumUnits;

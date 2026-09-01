@@ -1,10 +1,10 @@
-// Module ID: 16437
-// Function ID: 16438
+// Module ID: 16473
+// Function ID: 16474
 // Name: MessageRequestsScreen
-// Dependencies: [19, 21, 16435, 2]
+// Dependencies: [19, 21, 16471, 2]
 // Exports: default
 
-// Module 16437 (MessageRequestsScreen)
+// Module 16473 (MessageRequestsScreen)
 import closure_2 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -14,5 +14,5 @@ export default function MessageRequestsScreen(navigation) {
   navigation = navigation.navigation;
   const items = [navigation];
   const goToMessageRequestPreview = React.useCallback((channelId) => navigation.push("preview", { channelId }), items);
-  return jsx(navigation(16435), { goToMessageRequestPreview });
+  return jsx(navigation(16471), { goToMessageRequestPreview });
 };

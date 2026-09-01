@@ -1,19 +1,19 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9085
+// Function ID: 9086
 // Name: openUserContextMenuCommands
-// Dependencies: [8527, 4415, 4302, 1955, 2]
+// Dependencies: [8559, 4445, 4332, 1955, 2]
 // Exports: default
 
-// Module 9047 (openUserContextMenuCommands)
+// Module 9085 (openUserContextMenuCommands)
 import set from "set" /* 2 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 
 let result = set.fileFinishedImporting("modules/user_profile/native/openUserContextMenuCommands.tsx");
 
 export default function openUserContextMenuCommands(analyticsLocations) {
   analyticsLocations = analyticsLocations.analyticsLocations;
   ({ userId, selectedChannel, showUserProfile } = analyticsLocations);
-  let obj = analyticsLocations(8527);
+  let obj = analyticsLocations(8559);
   const result = obj.trackUserProfileAction({ action: "PRESS_VIEW_APP_COMMANDS", analyticsLocations });
   ACTION_SHEET_HEIGHT_HALFDefault.hideAllActionSheets();
   const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
@@ -28,5 +28,5 @@ export default function openUserContextMenuCommands(analyticsLocations) {
       return obj.trackUserProfileAction(obj);
     }
   };
-  const result1 = analyticsLocations(4302).navigateToContextMenuCommands(obj);
+  const result1 = analyticsLocations(4332).navigateToContextMenuCommands(obj);
 };

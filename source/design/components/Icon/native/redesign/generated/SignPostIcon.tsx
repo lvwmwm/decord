@@ -1,14 +1,14 @@
-// Module ID: 13547
-// Function ID: 13548
+// Module ID: 13580
+// Function ID: 13581
 // Name: SignPostIcon
-// Dependencies: [19, 21, 712, 4166, 13548, 2]
+// Dependencies: [19, 21, 712, 4196, 13581, 2]
 // Exports: SignPostIcon
 
-// Module 13547 (SignPostIcon)
+// Module 13580 (SignPostIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 13548 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 13581 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

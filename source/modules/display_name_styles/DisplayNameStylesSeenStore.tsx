@@ -1,9 +1,9 @@
-// Module ID: 14903
-// Function ID: 14904
+// Module ID: 14936
+// Function ID: 14937
 // Name: set
 // Dependencies: [589, 709, 2]
 
-// Module 14903 (set)
+// Module 14936 (set)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import set from "set" /* 2 */;

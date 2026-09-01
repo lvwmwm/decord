@@ -1,9 +1,9 @@
-// Module ID: 16633
-// Function ID: 16634
+// Module ID: 16669
+// Function ID: 16670
 // Name: VoicePanelPIPModes
 // Dependencies: [2]
 
-// Module 16633 (VoicePanelPIPModes)
+// Module 16669 (VoicePanelPIPModes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/voice_panel/native/pip/VoicePanelPIPConstants.tsx");

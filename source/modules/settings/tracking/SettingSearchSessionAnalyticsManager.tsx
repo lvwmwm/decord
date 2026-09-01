@@ -1,12 +1,12 @@
-// Module ID: 6211
-// Function ID: 6212
+// Module ID: 6243
+// Function ID: 6244
 // Name: getSearchSessionId
-// Dependencies: [514, 6212, 2]
+// Dependencies: [514, 6244, 2]
 
-// Module 6211 (getSearchSessionId)
+// Module 6243 (getSearchSessionId)
 import set from "set" /* 2 */;
 import v1 from "v1" /* 514 */;
-import trackSettingSearchInputFocused from "trackSettingSearchInputFocused" /* 6212 */;
+import trackSettingSearchInputFocused from "trackSettingSearchInputFocused" /* 6244 */;
 
 class SettingSearchSessionAnalyticsManager {
 }

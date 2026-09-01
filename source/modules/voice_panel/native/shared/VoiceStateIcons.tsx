@@ -1,20 +1,20 @@
-// Module ID: 9769
-// Function ID: 9770
+// Module ID: 9808
+// Function ID: 9809
 // Name: VideoDisabledSvgIcon
-// Dependencies: [19, 17, 21, 4448, 712, 9770, 9771, 9773, 9775, 9777, 1471, 1297, 8209, 9779, 9780, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 9809, 9810, 9812, 9814, 9816, 1471, 1297, 8241, 9818, 9819, 2]
 
-// Module 9769 (VideoDisabledSvgIcon)
+// Module 9808 (VideoDisabledSvgIcon)
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import inlineStyles from "inlineStyles" /* 8209 */;
-import inlineStylesDefault from "inlineStyles" /* 8209 */;
-import isStableVoiceStateEqual from "isStableVoiceStateEqual" /* 9770 */;
-import registerAssetDefault from "registerAsset" /* 9779 */;
-import registerAssetDefault2 from "registerAsset" /* 9780 */;
+import inlineStyles from "inlineStyles" /* 8241 */;
+import inlineStylesDefault from "inlineStyles" /* 8241 */;
+import isStableVoiceStateEqual from "isStableVoiceStateEqual" /* 9809 */;
+import registerAssetDefault from "registerAsset" /* 9818 */;
+import registerAssetDefault2 from "registerAsset" /* 9819 */;
 import importAllResult from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function VideoDisabledSvgIcon(size) {
@@ -51,7 +51,7 @@ obj = { tintColor: ThemesDefault.colors.ICON_FEEDBACK_CRITICAL };
 obj[0] = obj;
 createCacheKey = { tintColor: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj[1] = createCacheKey;
-obj[2] = { tintColor: "Array" };
+obj[2] = { tintColor: "r" };
 let closure_6 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo((arg0) => {
   ({ style, state, alwaysWhite } = arg0);
@@ -68,13 +68,13 @@ const memoResult = importAllResult.memo((arg0) => {
     let obj = { style: null, size: "xs" };
     items[1] = redTint;
     obj[0] = items;
-    return callback(tmp2(9771).HeadphonesDenyIcon, obj);
-  } else if (tmp2(9770).MuteDeafenIconState.DEAFENED === state) {
+    return callback(tmp2(9810).HeadphonesDenyIcon, obj);
+  } else if (tmp2(9809).MuteDeafenIconState.DEAFENED === state) {
     obj = { style: null, size: "xs" };
     const items1 = [style];
     obj[0] = items1;
-    return callback(tmp2(9773).HeadphonesSlashIcon, obj);
-  } else if (tmp2(9770).MuteDeafenIconState.MUTED_SERVER === state) {
+    return callback(tmp2(9812).HeadphonesSlashIcon, obj);
+  } else if (tmp2(9809).MuteDeafenIconState.MUTED_SERVER === state) {
     const items2 = [style, ];
     let redTint1 = null;
     if (!alwaysWhite) {
@@ -83,17 +83,17 @@ const memoResult = importAllResult.memo((arg0) => {
     obj1 = { style: null, size: "xs" };
     items2[1] = redTint1;
     obj1[0] = items2;
-    return callback(tmp2(9775).MicrophoneDenyIcon, obj1);
-  } else if (tmp2(9770).MuteDeafenIconState.MUTED_LOCAL === state) {
+    return callback(tmp2(9814).MicrophoneDenyIcon, obj1);
+  } else if (tmp2(9809).MuteDeafenIconState.MUTED_LOCAL === state) {
     const obj2 = { style: null, size: "xs" };
     const items3 = [style];
     obj2[0] = items3;
-    return callback(tmp2(9775).MicrophoneDenyIcon, obj2);
-  } else if (tmp2(9770).MuteDeafenIconState.MUTED === state) {
+    return callback(tmp2(9814).MicrophoneDenyIcon, obj2);
+  } else if (tmp2(9809).MuteDeafenIconState.MUTED === state) {
     const obj3 = { style: null, size: "xs" };
     const items4 = [style];
     obj3[0] = items4;
-    return callback(tmp2(9777).MicrophoneSlashIcon, obj3);
+    return callback(tmp2(9816).MicrophoneSlashIcon, obj3);
   } else {
     tmp2(1471).assertNever(state);
   }
@@ -108,11 +108,11 @@ const memoResult1 = importAllResult.memo((state) => {
     const items = [merged.style, tmp2.noTint];
     obj.style = items;
     return callback(tmp3(1297).Icon, obj);
-  } else if (tmp3(9770).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
+  } else if (tmp3(9809).VideoIconState.VIDEO_DISABLED_LOCAL === state) {
     obj = {};
     const merged2 = Object.assign(merged);
     return callback(VideoDisabledSvgIcon, obj);
-  } else if (tmp3(9770).VideoIconState.VIDEO_ACTIVE === state) {
+  } else if (tmp3(9809).VideoIconState.VIDEO_ACTIVE === state) {
     obj1 = {};
     const merged3 = Object.assign(merged);
     obj1.source = registerAssetDefault2;

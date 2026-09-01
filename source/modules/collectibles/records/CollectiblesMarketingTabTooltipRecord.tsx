@@ -1,11 +1,11 @@
-// Module ID: 7282
-// Function ID: 7283
+// Module ID: 7314
+// Function ID: 7315
 // Name: fromServer
-// Dependencies: [7279, 2]
+// Dependencies: [7311, 2]
 
-// Module 7282 (fromServer)
+// Module 7314 (fromServer)
 import set from "set" /* 2 */;
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7279 */;
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7311 */;
 
 let prototype;
 prototype = function CollectiblesMarketingTabTooltipRecord(arg0) {

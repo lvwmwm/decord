@@ -1,10 +1,10 @@
-// Module ID: 12986
-// Function ID: 12987
+// Module ID: 13019
+// Function ID: 13020
 // Name: PremiumTypes
-// Dependencies: [32, 19, 1924, 7120, 7160, 7159, 12985, 7937, 10446, 8206, 8187, 2]
+// Dependencies: [32, 19, 1924, 7152, 7192, 7191, 13018, 7969, 10484, 8238, 8219, 2]
 // Exports: useBuyNitroPlanSelection
 
-// Module 12986 (PremiumTypes)
+// Module 13019 (PremiumTypes)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;

@@ -1,10 +1,10 @@
-// Module ID: 10655
-// Function ID: 10656
+// Module ID: 10693
+// Function ID: 10694
 // Name: playVibingWumpusMusic
 // Dependencies: [676, 709, 530, 530, 2]
 // Exports: deleteAllSafetyWarnings, markAsInappropriateConversation, pauseVibingWumpusMusic, playVibingWumpusMusic, stopVibingWumpusMusic
 
-// Module 10655 (playVibingWumpusMusic)
+// Module 10693 (playVibingWumpusMusic)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import ME from "ME" /* 676 */;

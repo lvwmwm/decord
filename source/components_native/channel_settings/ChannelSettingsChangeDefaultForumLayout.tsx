@@ -1,18 +1,18 @@
-// Module ID: 16400
-// Function ID: 16401
+// Module ID: 16436
+// Function ID: 16437
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 1387, 21, 4448, 712, 8715, 7660, 1236, 1397, 7661, 16363, 7637, 4444, 5960, 5461, 16401, 16402, 589, 2]
+// Dependencies: [32, 19, 17, 1387, 21, 4478, 712, 8752, 7692, 1236, 1397, 7693, 16399, 7669, 4474, 5992, 5493, 16437, 16438, 589, 2]
 // Exports: default
 
-// Module 16400 (ChannelSettingsChangeDefaultForumLayout)
+// Module 16436 (ChannelSettingsChangeDefaultForumLayout)
 import ThemesDefault from "Themes" /* 712 */;
-import preloadDefault from "preload" /* 5461 */;
+import preloadDefault from "preload" /* 5493 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 class ChannelSettingsChangeDefaultForumLayout {

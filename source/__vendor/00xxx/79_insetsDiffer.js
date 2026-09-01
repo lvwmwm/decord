@@ -4,7 +4,7 @@
 // Dependencies: []
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "HermesInternal", right: "r", bottom: "bottom" };
+let closure_0 = { top: "spriteIndex", left: "category", right: "paths", bottom: "replace" };
 arg5.default = function insetsDiffer(arg0, arg1) {
   let rect = arg0;
   if (!arg0) {

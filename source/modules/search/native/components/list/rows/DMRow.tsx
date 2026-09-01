@@ -1,23 +1,23 @@
-// Module ID: 16200
-// Function ID: 16201
+// Module ID: 16235
+// Function ID: 16236
 // Name: FriendPresence
-// Dependencies: [5, 32, 19, 17, 4440, 4537, 4100, 676, 21, 4448, 712, 4444, 4292, 9200, 589, 8896, 1297, 9675, 13126, 16201, 2]
+// Dependencies: [5, 32, 19, 17, 4470, 4569, 4130, 676, 21, 4478, 712, 4474, 4322, 9239, 589, 8933, 1297, 9714, 13159, 16236, 2]
 
-// Module 16200 (FriendPresence)
+// Module 16235 (FriendPresence)
 import ThemesDefault from "Themes" /* 712 */;
-import nameFromUser from "nameFromUser" /* 4292 */;
-import Text from "Text" /* 4444 */;
-import ActivityStatusDefault from "ActivityStatus" /* 9200 */;
+import nameFromUser from "nameFromUser" /* 4322 */;
+import Text from "Text" /* 4474 */;
+import ActivityStatusDefault from "ActivityStatus" /* 9239 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
-import closure_9 from "sortActivity" /* 4537 */;
-import closure_10 from "markAllUserIdListsStale" /* 4100 */;
+import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_9 from "sortActivity" /* 4569 */;
+import closure_10 from "markAllUserIdListsStale" /* 4130 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function FriendPresence(user) {
@@ -101,7 +101,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -143,7 +143,7 @@ const memoResult = importAllResult.memo(function DMRow(user) {
           c3 = 0;
           callback(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp23) {
         closure_2 = tmp23;

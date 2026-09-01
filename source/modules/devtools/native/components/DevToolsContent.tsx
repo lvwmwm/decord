@@ -1,24 +1,24 @@
-// Module ID: 15309
-// Function ID: 15310
+// Module ID: 15343
+// Function ID: 15344
 // Name: DevToolsContentSortButtons
-// Dependencies: [32, 19, 17, 11022, 4361, 1212, 21, 4448, 712, 589, 11322, 15310, 4444, 5036, 4416, 14625, 15311, 1499, 1628, 5960, 5567, 4164, 14202, 2]
+// Dependencies: [32, 19, 17, 11059, 4391, 1212, 21, 4478, 712, 589, 11360, 15344, 4474, 5068, 4446, 14658, 15345, 1499, 1628, 5992, 5599, 4194, 14235, 2]
 
-// Module 15309 (DevToolsContentSortButtons)
+// Module 15343 (DevToolsContentSortButtons)
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import Text from "Text" /* 4444 */;
-import PressableBase from "PressableBase" /* 5036 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 14625 */;
-import getSortedDevToolsScreensDefault from "getSortedDevToolsScreens" /* 15310 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 15311 */;
+import Text from "Text" /* 4474 */;
+import PressableBase from "PressableBase" /* 5068 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 14658 */;
+import getSortedDevToolsScreensDefault from "getSortedDevToolsScreens" /* 15344 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 15345 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "getCurrentBuildOverride" /* 11022 */;
-import closure_8 from "getHash" /* 4361 */;
+import closure_7 from "getCurrentBuildOverride" /* 11059 */;
+import closure_8 from "getHash" /* 4391 */;
 import closure_9 from "initialize" /* 1212 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function DevToolsContentSortButtons(arg0) {
@@ -190,7 +190,7 @@ const memoResult1 = importAllResult.memo(function DevToolsContent(arg0) {
       return closure_1_10(callback(_undefined[20]).TableRow, obj, tmp);
     })
   };
-  const tmp8 = callback2(_require(5960).TableRowGroup, obj);
+  const tmp8 = callback2(_require(5992).TableRowGroup, obj);
   let tmp7Result = tmp8;
   if (!embedded) {
     obj = { style: null, contentContainerStyle: null, children: null };

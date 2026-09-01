@@ -1,10 +1,10 @@
-// Module ID: 5413
-// Function ID: 5414
+// Module ID: 5445
+// Function ID: 5446
 // Name: parseServerGuildSticker
-// Dependencies: [32, 1428, 1910, 1909, 5180, 4104, 1913, 2]
+// Dependencies: [32, 1428, 1910, 1909, 5212, 4134, 1913, 2]
 
-// Module 5413 (parseServerGuildSticker)
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4104 */;
+// Module 5445 (parseServerGuildSticker)
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { TypeTag } from "TypeTag" /* 1428 */;
 import { LibdiscoreStore } from "identity" /* 1910 */;
@@ -30,13 +30,13 @@ function parseServerGuildStickers(stickers) {
 }
 function deriveStickerMetadata(arg0, tags) {
   const items = [];
-  let obj = { type: items(5180).StickerMetadataTypes.STICKER_NAME, value: null };
+  let obj = { type: items(5212).StickerMetadataTypes.STICKER_NAME, value: null };
   const trimmed = tags.name.trim();
   obj[1] = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != tags.tags) {
     obj = { type: null, value: null };
-    obj[0] = tmp(5180).StickerMetadataTypes.TAG;
+    obj[0] = tmp(5212).StickerMetadataTypes.TAG;
     const trimmed1 = str.trim();
     obj[1] = trimmed1.toLocaleLowerCase();
     items.push(obj);
@@ -50,7 +50,7 @@ function deriveStickerMetadata(arg0, tags) {
       }
       if (tmp5) {
         obj = { type: null, value: null };
-        obj[0] = tmp(5180).StickerMetadataTypes.GUILD_NAME;
+        obj[0] = tmp(5212).StickerMetadataTypes.GUILD_NAME;
         obj[1] = toLocaleLowerCaseResult;
         items.push(obj);
       }
@@ -59,7 +59,7 @@ function deriveStickerMetadata(arg0, tags) {
     const byName = parseRawEmojiObjectDefault.getByName(str);
     if (null != byName) {
       obj1 = { type: null, value: null };
-      obj1[0] = tmp(5180).StickerMetadataTypes.CORRELATED_EMOJI;
+      obj1[0] = tmp(5212).StickerMetadataTypes.CORRELATED_EMOJI;
       obj1[1] = byName.surrogates;
       items.push(obj1);
       byName.forEachDiversity((surrogates) => items.push({ type: items(closure_1_2[4]).StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));

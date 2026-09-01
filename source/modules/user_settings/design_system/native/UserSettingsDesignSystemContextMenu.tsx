@@ -1,25 +1,25 @@
-// Module ID: 15343
-// Function ID: 15344
+// Module ID: 15377
+// Function ID: 15378
 // Name: DemoContextMenu
-// Dependencies: [19, 17, 21, 12278, 7638, 7843, 10853, 4412, 15344, 15345, 11126, 4448, 712, 12, 8755, 4896, 5569, 4444, 2]
+// Dependencies: [19, 17, 21, 12311, 7670, 7875, 10891, 4442, 15378, 15379, 11163, 4478, 712, 12, 8792, 4928, 5601, 4474, 2]
 // Exports: default
 
-// Module 15343 (DemoContextMenu)
+// Module 15377 (DemoContextMenu)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 4412 */;
-import Text from "Text" /* 4444 */;
-import PressableCard from "PressableCard" /* 5569 */;
-import registerAssetDefault2 from "registerAsset" /* 7638 */;
-import registerAssetDefault3 from "registerAsset" /* 7843 */;
-import registerAssetDefault4 from "registerAsset" /* 10853 */;
-import registerAssetDefault5 from "registerAsset" /* 11126 */;
-import registerAssetDefault6 from "registerAsset" /* 12278 */;
-import registerAssetDefault7 from "registerAsset" /* 15344 */;
-import registerAssetDefault8 from "registerAsset" /* 15345 */;
+import registerAssetDefault from "registerAsset" /* 4442 */;
+import Text from "Text" /* 4474 */;
+import PressableCard from "PressableCard" /* 5601 */;
+import registerAssetDefault2 from "registerAsset" /* 7670 */;
+import registerAssetDefault3 from "registerAsset" /* 7875 */;
+import registerAssetDefault4 from "registerAsset" /* 10891 */;
+import registerAssetDefault5 from "registerAsset" /* 11163 */;
+import registerAssetDefault6 from "registerAsset" /* 12311 */;
+import registerAssetDefault7 from "registerAsset" /* 15378 */;
+import registerAssetDefault8 from "registerAsset" /* 15379 */;
 import closure_2 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function DemoContextMenu(align) {
@@ -55,7 +55,7 @@ function DemoContextMenu(align) {
         obj = { length: dependencyMap };
         const obj2 = callback(12);
         return Array.from(obj).map((arg0, arg1) => {
-          const obj = { label: length[arg1 % length.length], IconComponent: "a", iconSource: true, variant: true, action: true };
+          const obj = { label: length[arg1 % length.length], IconComponent: "a", iconSource: "a", variant: "isArray", action: "set" };
           obj[2] = length2[arg1 % length2.length];
           let str = "default";
           if (arg1 === closure_0 - 1) {
@@ -78,7 +78,7 @@ function DemoContextMenu(align) {
       obj[0] = closure_1;
       arr = Array.from(obj);
       mapped = arr.map((arg0, arg1) => {
-        const obj = { label: length[arg1 % length.length], IconComponent: "a", iconSource: true, variant: true, action: true };
+        const obj = { label: length[arg1 % length.length], IconComponent: "a", iconSource: "a", variant: "isArray", action: "set" };
         obj[2] = length2[arg1 % length2.length];
         let str = "default";
         if (arg1 === closure_0 - 1) {

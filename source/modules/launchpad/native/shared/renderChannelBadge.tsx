@@ -1,16 +1,16 @@
-// Module ID: 16529
-// Function ID: 16530
+// Module ID: 16565
+// Function ID: 16566
 // Name: renderChannelBadge
-// Dependencies: [19, 21, 1297, 11830, 4444, 1236, 1897, 2]
+// Dependencies: [19, 21, 1297, 11863, 4474, 1236, 1897, 2]
 // Exports: default
 
-// Module 16529 (renderChannelBadge)
+// Module 16565 (renderChannelBadge)
 import noopAll from "noop" /* 19 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
 import shortenAndLocalizeNumber from "shortenAndLocalizeNumber" /* 1897 */;
-import Text from "Text" /* 4444 */;
-import NewBadgeDefault from "NewBadge" /* 11830 */;
+import Text from "Text" /* 4474 */;
+import NewBadgeDefault from "NewBadge" /* 11863 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

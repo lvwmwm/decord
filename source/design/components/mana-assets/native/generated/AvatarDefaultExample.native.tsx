@@ -1,14 +1,14 @@
-// Module ID: 6291
-// Function ID: 6292
+// Module ID: 6323
+// Function ID: 6324
 // Name: AvatarDefaultExample
-// Dependencies: [21, 5461, 6292, 2]
+// Dependencies: [21, 5493, 6324, 2]
 // Exports: AvatarDefaultExample
 
-// Module 6291 (AvatarDefaultExample)
+// Module 6323 (AvatarDefaultExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6292 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6324 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarDefaultExample.native.tsx");

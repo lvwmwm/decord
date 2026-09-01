@@ -1,9 +1,9 @@
-// Module ID: 16753
-// Function ID: 16754
+// Module ID: 16789
+// Function ID: 16790
 // Name: SelfStreamAndVideoAlertType
 // Dependencies: [2]
 
-// Module 16753 (SelfStreamAndVideoAlertType)
+// Module 16789 (SelfStreamAndVideoAlertType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/calls/HideSelfStreamAndVideoConstants.tsx");

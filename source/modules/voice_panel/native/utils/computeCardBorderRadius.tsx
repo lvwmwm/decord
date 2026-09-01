@@ -1,12 +1,12 @@
-// Module ID: 16679
-// Function ID: 16680
+// Module ID: 16715
+// Function ID: 16716
 // Name: VoicePanelModes
-// Dependencies: [11807, 2]
+// Dependencies: [11840, 2]
 // Exports: default
 
-// Module 16679 (VoicePanelModes)
+// Module 16715 (VoicePanelModes)
 import set from "set" /* 2 */;
-import VoicePanelModes from "VoicePanelModes" /* 11807 */;
+import VoicePanelModes from "VoicePanelModes" /* 11840 */;
 
 VoicePanelModes = VoicePanelModes.VoicePanelModes;
 const DEFAULT_BORDER_RADIUS_PIP = VoicePanelModes.DEFAULT_BORDER_RADIUS_PIP;

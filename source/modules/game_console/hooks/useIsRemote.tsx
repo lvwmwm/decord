@@ -1,12 +1,12 @@
-// Module ID: 6086
-// Function ID: 6087
+// Module ID: 6118
+// Function ID: 6119
 // Name: useIsRemote
-// Dependencies: [4465, 589, 2]
+// Dependencies: [4495, 589, 2]
 // Exports: default
 
-// Module 6086 (useIsRemote)
+// Module 6118 (useIsRemote)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "set" /* 4465 */;
+import closure_2 from "set" /* 4495 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_console/hooks/useIsRemote.tsx");

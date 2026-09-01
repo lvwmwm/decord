@@ -1,15 +1,15 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9488
+// Function ID: 9489
 // Name: isVoiceEmbeddedActivity
-// Dependencies: [1218, 1387, 1981, 4467, 692, 2]
+// Dependencies: [1218, 1387, 1981, 4497, 692, 2]
 // Exports: default
 
-// Module 9449 (isVoiceEmbeddedActivity)
+// Module 9488 (isVoiceEmbeddedActivity)
 import set from "set" /* 692 */;
 import closure_2 from "fetchFingerprint" /* 1218 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
-import closure_5 from "updateVoiceState" /* 4467 */;
+import closure_5 from "updateVoiceState" /* 4497 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/isVoiceEmbeddedActivity.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 10664
-// Function ID: 10665
+// Module ID: 10702
+// Function ID: 10703
 // Name: ChannelVoiceChatModal
-// Dependencies: [19, 21, 4642, 4689, 10623, 5014, 4328, 10120, 2]
+// Dependencies: [19, 21, 4674, 4721, 10661, 5046, 4358, 10159, 2]
 // Exports: default
 
-// Module 10664 (ChannelVoiceChatModal)
-import computeChannelNameDefault from "computeChannelName" /* 4642 */;
-import _modDef10623 from "module_10623" /* 10623 */;
+// Module 10702 (ChannelVoiceChatModal)
+import computeChannelNameDefault from "computeChannelName" /* 4674 */;
+import _modDef10661 from "module_10661" /* 10661 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -27,8 +27,8 @@ export default function ChannelVoiceChatModal(channel) {
   if (tmp2 == null) {
     str = "";
   }
-  const tmp5 = _modDef10623;
-  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5014).StageIcon, { size: "sm" })} render={function render() {
+  const tmp5 = _modDef10661;
+  return <tmp5 screenKey="StageVoiceChat" title={str} titleIcon={jsx(channel(5046).StageIcon, { size: "sm" })} render={function render() {
     let guild_id = channel.guild_id;
     if (guild_id == null) {
       guild_id = null;

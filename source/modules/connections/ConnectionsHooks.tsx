@@ -1,17 +1,17 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 7248
+// Function ID: 7249
 // Name: PlatformTypes
-// Dependencies: [32, 19, 5193, 1922, 676, 7217, 687, 589, 7219, 12, 5195, 2]
+// Dependencies: [32, 19, 5225, 1922, 676, 7249, 687, 589, 7251, 12, 5227, 2]
 // Exports: useEmptyStatePlatforms, useLegacyPlatformType, usePlatformAllowed, usePlatforms
 
-// Module 7216 (PlatformTypes)
+// Module 7248 (PlatformTypes)
 import setDefault from "set" /* 687 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "set" /* 5193 */;
+import closure_5 from "set" /* 5225 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { KeyboardKeysUpdated } from "items" /* 7217 */;
+import { KeyboardKeysUpdated } from "items" /* 7249 */;
 
 const require = arg1;
 ({ ACTIVITY_PLATFORM_TYPES: error, PlatformTypes } = ME);

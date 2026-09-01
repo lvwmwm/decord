@@ -1,15 +1,15 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8075
+// Function ID: 8076
 // Name: guildHasTag
-// Dependencies: [1992, 1909, 1922, 7821, 676, 589, 4097, 2]
+// Dependencies: [1992, 1909, 1922, 7853, 676, 589, 4127, 2]
 // Exports: getGuildTagBadgeUrl, getUserPrimaryGuild, guildHasTag, guildSupportsTags, shouldDisplayGuildTag, useShouldDisplayGuildTag, useUserPrimaryGuild
 
-// Module 8043 (guildHasTag)
-import GuildMemberFlags from "GuildMemberFlags" /* 4097 */;
+// Module 8075 (guildHasTag)
+import GuildMemberFlags from "GuildMemberFlags" /* 4127 */;
 import closure_2 from "trackCommunicationDisabled" /* 1992 */;
 import closure_3 from "createGuildRecordFromRust" /* 1909 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import items from "items" /* 7821 */;
+import items from "items" /* 7853 */;
 import { GuildFeatures } from "ME" /* 676 */;
 
 require = arg1;

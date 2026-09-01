@@ -1,11 +1,11 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 7886
+// Function ID: 7887
 // Name: useUserCommunicationDisabled
-// Dependencies: [1992, 1922, 589, 4080, 2]
+// Dependencies: [1992, 1922, 589, 4110, 2]
 // Exports: default, useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 7854 (useUserCommunicationDisabled)
-import isCommunicationDisabled from "isCommunicationDisabled" /* 4080 */;
+// Module 7886 (useUserCommunicationDisabled)
+import isCommunicationDisabled from "isCommunicationDisabled" /* 4110 */;
 import closure_2 from "trackCommunicationDisabled" /* 1992 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
@@ -37,7 +37,7 @@ export default function useUserCommunicationDisabled(arg0, arg1) {
   const items2 = [prop, ];
   const obj = _require(589);
   const tmp = _require;
-  items2[1] = _require(4080).isMemberCommunicationDisabled(stateFromStores);
+  items2[1] = _require(4110).isMemberCommunicationDisabled(stateFromStores);
   return items2;
 };
 export const useCurrentUserCommunicationDisabled = function useCurrentUserCommunicationDisabled(guild_id) {
@@ -69,7 +69,7 @@ export const useCurrentUserCommunicationDisabled = function useCurrentUserCommun
     prop = null;
   }
   const items3 = [prop, ];
-  tmpResult = tmp(4080);
+  tmpResult = tmp(4110);
   items3[1] = tmpResult.isMemberCommunicationDisabled(stateFromStores1);
   return items3;
 };

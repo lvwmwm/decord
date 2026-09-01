@@ -1,10 +1,10 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9489
+// Function ID: 9490
 // Name: _selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 1981, 5323, 2]
+// Dependencies: [5, 1981, 5355, 2]
 // Exports: default
 
-// Module 9450 (_selectAndWaitForVoiceChannelJoin)
+// Module 9489 (_selectAndWaitForVoiceChannelJoin)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "handleConnectionOpen" /* 1981 */;
 
@@ -27,7 +27,7 @@ function _selectAndWaitForVoiceChannelJoin() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -53,7 +53,7 @@ function _selectAndWaitForVoiceChannelJoin() {
               promise = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

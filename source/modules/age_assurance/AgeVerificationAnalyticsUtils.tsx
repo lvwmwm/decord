@@ -1,10 +1,10 @@
-// Module ID: 8652
-// Function ID: 8653
+// Module ID: 8684
+// Function ID: 8685
 // Name: AgeVerificationModalEntryPoint
 // Dependencies: [1387, 676, 698, 2]
 // Exports: trackAgeVerificationDmClicked, trackAgeVerificationModalClicked, trackAgeVerificationModalViewed, trackAgeVerificationToastViewed, trackNsfwSpaceWarningModalClicked, trackNsfwSpaceWarningModalViewed
 
-// Module 8652 (AgeVerificationModalEntryPoint)
+// Module 8684 (AgeVerificationModalEntryPoint)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import closure_2 from "ensureGuildLoaded" /* 1387 */;
 import { AnalyticEvents } from "ME" /* 676 */;

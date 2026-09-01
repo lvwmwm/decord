@@ -1,14 +1,14 @@
 // Module ID: 3684
 // Function ID: 3685
 // Name: code
-// Dependencies: [3685, 3686, 3687, 3986, 3987]
+// Dependencies: [3685, 3686, 3687, 3688, 3689]
 
 // Module 3684 (code)
 import formatDistance from "formatDistance" /* 3685 */;
 import buildFormatLongFn from "buildFormatLongFn" /* 3686 */;
 import formatRelative from "formatRelative" /* 3687 */;
-import buildLocalizeFn from "buildLocalizeFn" /* 3986 */;
-import module_3987 from "module_3987" /* 3987 */;
+import buildLocalizeFn from "buildLocalizeFn" /* 3688 */;
+import module_3689 from "module_3689" /* 3689 */;
 
 if (!formatDistance) {
   let obj = { default: null };
@@ -38,13 +38,13 @@ if (!buildLocalizeFn) {
 } else {
   tmp9 = buildLocalizeFn;
 }
-if (!module_3987) {
+if (!module_3689) {
   const obj2 = { default: null };
-  obj2[0] = module_3987;
+  obj2[0] = module_3689;
   let tmp11 = obj2;
 } else {
-  tmp11 = module_3987;
+  tmp11 = module_3689;
 }
 
-export default { code: "uk", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
+export default { code: "ro", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
 export default exports.default;

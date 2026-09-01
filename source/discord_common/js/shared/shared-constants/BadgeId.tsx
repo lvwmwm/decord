@@ -1,9 +1,9 @@
-// Module ID: 8525
-// Function ID: 8526
+// Module ID: 8557
+// Function ID: 8558
 // Name: BadgeId
 // Dependencies: [2]
 
-// Module 8525 (BadgeId)
+// Module 8557 (BadgeId)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/BadgeId.tsx");

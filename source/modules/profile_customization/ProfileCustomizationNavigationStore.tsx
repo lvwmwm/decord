@@ -1,12 +1,12 @@
-// Module ID: 8995
-// Function ID: 8996
+// Module ID: 9032
+// Function ID: 9033
 // Name: zustandStore
-// Dependencies: [4314, 685, 2]
+// Dependencies: [4344, 685, 2]
 
-// Module 8995 (zustandStore)
+// Module 9032 (zustandStore)
 import set from "set" /* 2 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
-import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4314 */;
+import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4344 */;
 
 let closure_0 = MAX_FAVORITES.ProfileCustomizationSubsection;
 const zustandStore = defaultStatesAreEqual.createZustandStore(() => ({ subsection: constants.USER_PROFILE, scrollPosition: null }));

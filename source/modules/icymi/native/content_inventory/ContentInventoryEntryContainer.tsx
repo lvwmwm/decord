@@ -1,17 +1,17 @@
-// Module ID: 16061
-// Function ID: 16062
+// Module ID: 16096
+// Function ID: 16097
 // Name: iCYMIStyles
-// Dependencies: [19, 17, 1922, 21, 16005, 712, 500, 8590, 8859, 589, 5036, 16044, 1297, 2]
+// Dependencies: [19, 17, 1922, 21, 16040, 712, 500, 8622, 8896, 589, 5068, 16079, 1297, 2]
 // Exports: default
 
-// Module 16061 (iCYMIStyles)
+// Module 16096 (iCYMIStyles)
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16005 */;
+import createICYMIStyles from "createICYMIStyles" /* 16040 */;
 
 require = arg1;
 ({ jsx: closure_6, jsxs: error } = jsxProd);

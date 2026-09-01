@@ -1,14 +1,14 @@
-// Module ID: 6337
-// Function ID: 6338
+// Module ID: 6369
+// Function ID: 6370
 // Name: BountiesPosterSpotIllustration
-// Dependencies: [21, 5461, 6338, 2]
+// Dependencies: [21, 5493, 6370, 2]
 // Exports: BountiesPosterSpotIllustration
 
-// Module 6337 (BountiesPosterSpotIllustration)
+// Module 6369 (BountiesPosterSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6338 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6370 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BountiesPosterSpotIllustration.native.tsx");

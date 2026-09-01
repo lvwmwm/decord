@@ -1,10 +1,10 @@
-// Module ID: 4515
-// Function ID: 4516
+// Module ID: 4545
+// Function ID: 4546
 // Name: StreamIssueReportReasons
-// Dependencies: [4516, 2]
+// Dependencies: [4546, 2]
 
-// Module 4515 (StreamIssueReportReasons)
-import Notifications from "Notifications" /* 4516 */;
+// Module 4545 (StreamIssueReportReasons)
+import Notifications from "Notifications" /* 4546 */;
 import set from "set" /* 2 */;
 
 let set = new Set(["chrome.exe", "opera.exe", "firefox.exe", "brave.exe", "msedge.exe"]);

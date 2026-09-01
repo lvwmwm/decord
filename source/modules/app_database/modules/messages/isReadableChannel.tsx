@@ -1,14 +1,14 @@
-// Module ID: 7197
-// Function ID: 7198
+// Module ID: 7229
+// Function ID: 7230
 // Name: isReadableChannel
-// Dependencies: [1391, 1387, 4091, 676, 2]
+// Dependencies: [1391, 1387, 4121, 676, 2]
 // Exports: isReadableChannel, isReadableChannelId
 
-// Module 7197 (isReadableChannel)
+// Module 7229 (isReadableChannel)
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1391 */;
 import closure_1 from "ensureGuildLoaded" /* 1387 */;
-import closure_2 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_2 from "getUncachedChannelPermissions" /* 4121 */;
 import ME from "ME" /* 676 */;
 
 const isTextChannel = createChannelRecord.isTextChannel;

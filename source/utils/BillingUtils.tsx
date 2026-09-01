@@ -1,13 +1,13 @@
-// Module ID: 4124
-// Function ID: 4125
+// Module ID: 4154
+// Function ID: 4155
 // Name: _createGatewayCheckoutContext
-// Dependencies: [5, 505, 4125, 1208, 530, 4131, 2]
+// Dependencies: [5, 505, 4155, 1208, 530, 4161, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
 
-// Module 4124 (_createGatewayCheckoutContext)
+// Module 4154 (_createGatewayCheckoutContext)
 import sendRequest from "sendRequest" /* 530 */;
 import _modDef1208 from "module_1208" /* 1208 */;
-import setDefault from "set" /* 4131 */;
+import setDefault from "set" /* 4161 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { PaymentGateways } from "sum" /* 505 */;
 
@@ -30,7 +30,7 @@ function _createGatewayCheckoutContext() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,22 +1,22 @@
-// Module ID: 16590
-// Function ID: 16591
+// Module ID: 16626
+// Function ID: 16627
 // Name: FramePanelHeaderContentInner
-// Dependencies: [32, 19, 17, 9425, 9426, 21, 5927, 16569, 16571, 16575, 16576, 16591, 589, 16586, 2]
+// Dependencies: [32, 19, 17, 9464, 9465, 21, 5959, 16605, 16607, 16611, 16612, 16627, 589, 16622, 2]
 
-// Module 16590 (FramePanelHeaderContentInner)
+// Module 16626 (FramePanelHeaderContentInner)
 import initialize from "initialize" /* 589 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5927 */;
-import useBaseActivityPanelHeaderContent from "useBaseActivityPanelHeaderContent" /* 16569 */;
-import _modDef16571 from "module_16571" /* 16571 */;
-import _modDef16575 from "module_16575" /* 16575 */;
-import QuestActivityButtonInnerDefault from "QuestActivityButtonInner" /* 16576 */;
-import contextDefault from "context" /* 16586 */;
-import _modDef16591 from "module_16591" /* 16591 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 5959 */;
+import useBaseActivityPanelHeaderContent from "useBaseActivityPanelHeaderContent" /* 16605 */;
+import _modDef16607 from "module_16607" /* 16607 */;
+import _modDef16611 from "module_16611" /* 16611 */;
+import QuestActivityButtonInnerDefault from "QuestActivityButtonInner" /* 16612 */;
+import contextDefault from "context" /* 16622 */;
+import _modDef16627 from "module_16627" /* 16627 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "map" /* 9425 */;
-import { asLaunched } from "FrameLayoutModes" /* 9426 */;
+import closure_5 from "map" /* 9464 */;
+import { asLaunched } from "FrameLayoutModes" /* 9465 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -34,7 +34,7 @@ function FramePanelHeaderContentInner(arg0) {
   if (first != null) {
     id = first.id;
   }
-  const tmp7Result = closure_7(_modDef16571, { applicationId: id });
+  const tmp7Result = closure_7(_modDef16607, { applicationId: id });
   obj = { hasConnectedActivity: true, gesture, headerWrapperStyles, headerStyles, landscape, children: null };
   const items1 = [minimizeAndQuestButtonContainerStyles.buttonContainer, ];
   let prop;
@@ -46,7 +46,7 @@ function FramePanelHeaderContentInner(arg0) {
   let tmp15;
   const tmp12 = View;
   const tmp4 = require;
-  const tmp8 = _modDef16571;
+  const tmp8 = _modDef16607;
   if (!landscape) {
     let name;
     if (first != null) {
@@ -54,7 +54,7 @@ function FramePanelHeaderContentInner(arg0) {
     }
     tmp15 = name;
   }
-  const items2 = [closure_7(_modDef16575, { activityName: tmp15, setMode }), , ];
+  const items2 = [closure_7(_modDef16611, { activityName: tmp15, setMode }), , ];
   obj1 = { applicationId: frame.applicationId };
   items2[1] = closure_7(QuestActivityButtonInnerDefault, obj1);
   let tmp17 = null;
@@ -69,7 +69,7 @@ function FramePanelHeaderContentInner(arg0) {
     tmp18 = tmp7Result;
   }
   items3[1] = tmp18;
-  items3[2] = closure_7(_modDef16591, { frame, setMode });
+  items3[2] = closure_7(_modDef16627, { frame, setMode });
   obj[5] = items3;
   return closure_8(useBaseActivityPanelHeaderContent.BaseActivityPanelContent, obj);
 }

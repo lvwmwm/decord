@@ -1,13 +1,13 @@
-// Module ID: 11210
-// Function ID: 11211
+// Module ID: 11247
+// Function ID: 11248
 // Name: isMessagePinnable
-// Dependencies: [4091, 676, 6085, 6084, 2]
+// Dependencies: [4121, 676, 6117, 6116, 2]
 // Exports: default
 
-// Module 11210 (isMessagePinnable)
-import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6084 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6085 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4091 */;
+// Module 11247 (isMessagePinnable)
+import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6116 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6117 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4121 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

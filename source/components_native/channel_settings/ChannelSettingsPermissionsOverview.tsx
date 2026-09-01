@@ -1,18 +1,18 @@
-// Module ID: 16371
-// Function ID: 16372
+// Module ID: 16407
+// Function ID: 16408
 // Name: ChannelPermissionSyncModule
-// Dependencies: [32, 5, 19, 17, 1986, 1387, 1985, 1909, 4100, 1922, 676, 21, 4448, 712, 4825, 1236, 4642, 4096, 9670, 8715, 12, 5960, 5567, 14726, 1499, 12258, 10308, 14875, 589, 1955, 10641, 1471, 5564, 7575, 4461, 2]
+// Dependencies: [32, 5, 19, 17, 1986, 1387, 1985, 1909, 4130, 1922, 676, 21, 4478, 712, 4857, 1236, 4674, 4126, 9709, 8752, 12, 5992, 5599, 14759, 1499, 12291, 10347, 14908, 589, 1955, 10679, 1471, 5596, 7607, 4491, 2]
 // Exports: default
 
-// Module 16371 (ChannelPermissionSyncModule)
+// Module 16407 (ChannelPermissionSyncModule)
 import applyDefault from "apply" /* 12 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import applyOverwritesAll from "applyOverwrites" /* 4096 */;
-import TableRowInner from "TableRowInner" /* 5567 */;
-import RoleLabel from "RoleLabel" /* 10308 */;
-import memoResult1Default from "memoResult1" /* 10641 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 14875 */;
+import applyOverwritesAll from "applyOverwrites" /* 4126 */;
+import TableRowInner from "TableRowInner" /* 5599 */;
+import RoleLabel from "RoleLabel" /* 10347 */;
+import memoResult1Default from "memoResult1" /* 10679 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 14908 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "noop" /* 19 */;
@@ -21,11 +21,11 @@ import { isEveryoneRole } from "GuildRoleRecordTypeTag" /* 1986 */;
 import closure_9 from "ensureGuildLoaded" /* 1387 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_11 from "createGuildRecordFromRust" /* 1909 */;
-import closure_12 from "markAllUserIdListsStale" /* 4100 */;
+import closure_12 from "markAllUserIdListsStale" /* 4130 */;
 import closure_13 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function ChannelPermissionSyncModule(channel) {
@@ -58,7 +58,7 @@ function ChannelPermissionSyncModule(channel) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ function ChannelPermissionSyncModule(channel) {
               obj.saveChannel(closure_1_0.id, obj4);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp22) {
           c3 = tmp;
@@ -130,7 +130,7 @@ function ChannelPermissionSyncModule(channel) {
     };
     obj.show(obj);
   }, items);
-  let obj = channel(4642);
+  let obj = channel(4674);
   const channelName = obj.computeChannelName(category, closure_13, closure_12);
   obj = { style: callback3().tableRowGroupContainer, children: null };
   let intl = channel(1236).intl;
@@ -146,12 +146,12 @@ function ChannelPermissionSyncModule(channel) {
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj1);
   }
   let obj2 = { title: formatToPlainStringResult, hasIcons: true, children: null };
-  let obj3 = { icon: closure_16(channel(14726).RefreshIcon, {}), label: null, onPress: null };
+  let obj3 = { icon: closure_16(channel(14759).RefreshIcon, {}), label: null, onPress: null };
   let intl2 = tmp3(1236).intl;
   obj3[1] = intl2.string(channel(1236).t.NVwuHq);
   obj3[2] = callback;
-  obj2[2] = closure_16(channel(5567).TableRow, obj3);
-  obj[1] = closure_16(channel(5960).TableRowGroup, obj2);
+  obj2[2] = closure_16(channel(5599).TableRow, obj3);
+  obj[1] = closure_16(channel(5992).TableRowGroup, obj2);
   return closure_16(View, obj);
 }
 function CategorySync(category) {
@@ -182,23 +182,23 @@ function AddPermission(isEditing) {
     const intl = tmp2(1236).intl;
     obj[0] = intl.string(tmp2(1236).t.vPHdP5);
     obj1 = { icon: null, label: null, onPress: null };
-    obj1[0] = callback(tmp2(12258).PlusMediumIcon, {});
+    obj1[0] = callback(tmp2(12291).PlusMediumIcon, {});
     const intl2 = tmp2(1236).intl;
     obj1[1] = intl2.string(tmp2(1236).t.fVWxvT);
     obj1[2] = function onPress() {
 
     };
-    const items = [callback(tmp2(5567).TableRow, obj1), ];
+    const items = [callback(tmp2(5599).TableRow, obj1), ];
     const obj2 = { icon: null, label: null, onPress: null };
-    obj2[0] = callback(tmp2(12258).PlusMediumIcon, {});
+    obj2[0] = callback(tmp2(12291).PlusMediumIcon, {});
     const intl3 = tmp2(1236).intl;
     obj2[1] = intl3.string(tmp2(1236).t.riesLt);
     obj2[2] = function onPress() {
 
     };
-    items[1] = callback(tmp2(5567).TableRow, obj2);
+    items[1] = callback(tmp2(5599).TableRow, obj2);
     obj[2] = items;
-    obj[1] = callback2(tmp2(5960).TableRowGroup, obj);
+    obj[1] = callback2(tmp2(5992).TableRowGroup, obj);
     return callback(View, obj);
   }
   tmp = callback3();
@@ -216,7 +216,7 @@ function RoleRow(onDelete) {
       obj[0] = ThemesDefault.colors.ICON_FEEDBACK_CRITICAL;
       const intl = tmp3(1236).intl;
       obj[1] = intl.string(tmp3(1236).t.N86XcP);
-      tmp2Result = tmp2(tmp3(14875).CircleMinusIcon, obj);
+      tmp2Result = tmp2(tmp3(14908).CircleMinusIcon, obj);
     }
   }
   obj[2] = tmp2Result;
@@ -267,7 +267,7 @@ function RoleOverwrites(guild) {
       }
     }, id.id);
   });
-  obj[1] = callback(guild(5960).TableRowGroup, obj1);
+  obj[1] = callback(guild(5992).TableRowGroup, obj1);
   return callback(View, obj);
 }
 function MemberRow(arg0) {
@@ -321,7 +321,7 @@ function MemberOverwrites(channel) {
         }
       }, id.id);
     });
-    obj[1] = callback(tmp3(5960).TableRowGroup, obj);
+    obj[1] = callback(tmp3(5992).TableRowGroup, obj);
     tmp4 = callback(View, obj);
   }
   return tmp4;

@@ -1,19 +1,19 @@
-// Module ID: 7647
-// Function ID: 7648
+// Module ID: 7679
+// Function ID: 7680
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5458, 676, 21, 4448, 4164, 1236, 7648, 7618, 5909, 4272, 589, 4976, 5527, 7649, 7682, 4896, 2]
+// Dependencies: [5, 32, 19, 17, 5490, 676, 21, 4478, 4194, 1236, 7680, 7650, 5941, 4302, 589, 5008, 5559, 7681, 7714, 4928, 2]
 // Exports: default
 
-// Module 7647 (MemberVerificationForm)
+// Module 7679 (MemberVerificationForm)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "get" /* 5458 */;
-import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "get" /* 5458 */;
+import closure_7 from "get" /* 5490 */;
+import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "get" /* 5490 */;
 import { VerificationLevels } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: c10, jsxs: unpackModuleId } = jsxProd);
@@ -46,7 +46,7 @@ export default function MemberVerificationForm(guild) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ export default function MemberVerificationForm(guild) {
                     obj.open(obj);
                   })();
                   c6 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   closure_1_9(null);
                   closure_1_8(true);

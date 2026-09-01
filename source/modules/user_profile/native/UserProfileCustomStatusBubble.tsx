@@ -1,22 +1,22 @@
-// Module ID: 9048
-// Function ID: 9049
+// Module ID: 9086
+// Function ID: 9087
 // Name: EmojiImage
-// Dependencies: [32, 19, 17, 5969, 1925, 21, 4448, 712, 4136, 5461, 1431, 500, 4444, 5553, 8526, 9049, 9050, 4415, 9052, 5941, 1236, 5036, 9185, 2]
+// Dependencies: [32, 19, 17, 6001, 1925, 21, 4478, 712, 4166, 5493, 1431, 500, 4474, 5585, 8558, 9087, 9088, 4445, 9090, 5973, 1236, 5068, 9224, 2]
 
-// Module 9048 (EmojiImage)
+// Module 9086 (EmojiImage)
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
-import Text from "Text" /* 4444 */;
-import preloadDefault from "preload" /* 5461 */;
-import EmojiDefault from "Emoji" /* 5553 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+import Text from "Text" /* 4474 */;
+import preloadDefault from "preload" /* 5493 */;
+import EmojiDefault from "Emoji" /* 5585 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function EmojiImage(id) {
@@ -172,7 +172,7 @@ let closure_11 = createCacheKey.createStyles((arg0) => {
   return obj;
 });
 let closure_12 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_13 = { [arg1(5969).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_13 = { [arg1(6001).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 let closure_16 = createCacheKey.createStyles(() => ({ container: { alignItems: "center" } }));
 const forwardRefResult = importAllResult.forwardRef((showFullStatus, ref) => {
   ({ customStatusActivity, themeType, editEnabled } = showFullStatus);

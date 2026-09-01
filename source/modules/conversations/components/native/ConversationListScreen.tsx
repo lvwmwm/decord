@@ -1,22 +1,22 @@
-// Module ID: 7802
-// Function ID: 7803
+// Module ID: 7834
+// Function ID: 7835
 // Name: renderItem
-// Dependencies: [5, 32, 19, 17, 7309, 7311, 21, 4448, 712, 7803, 4444, 1236, 1502, 1628, 7783, 589, 11, 7784, 7786, 8073, 2]
+// Dependencies: [5, 32, 19, 17, 7341, 7343, 21, 4478, 712, 7835, 4474, 1236, 1502, 1628, 7815, 589, 11, 7816, 7818, 8105, 2]
 // Exports: default
 
-// Module 7802 (renderItem)
+// Module 7834 (renderItem)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import ConversationListItemBaseDefault from "ConversationListItemBase" /* 7803 */;
+import Text from "Text" /* 4474 */;
+import ConversationListItemBaseDefault from "ConversationListItemBase" /* 7835 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "removePendingListFetch" /* 7309 */;
-import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7311 */;
+import closure_8 from "removePendingListFetch" /* 7341 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7343 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function renderItem(item) {
@@ -112,7 +112,7 @@ export default function ConversationListScreen() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

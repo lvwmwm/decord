@@ -1,12 +1,12 @@
-// Module ID: 7668
-// Function ID: 7669
+// Module ID: 7700
+// Function ID: 7701
 // Name: _confirmEmailChange
-// Dependencies: [5, 676, 4681, 503, 2]
+// Dependencies: [5, 676, 4713, 503, 2]
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 7668 (_confirmEmailChange)
+// Module 7700 (_confirmEmailChange)
 import encodeProperties from "encodeProperties" /* 503 */;
-import _modDef4681 from "module_4681" /* 4681 */;
+import _modDef4713 from "module_4713" /* 4713 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -18,7 +18,7 @@ function _confirmEmailChange() {
     c2 = 0;
     c1 = 0;
     return (function*(arg0, body) {
-      const obj5 = v0(4681);
+      const obj5 = v0(4713);
       obj1 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
       obj1[0] = closure_1_4.USER_EMAIL_VERIFY_CODE;
       const obj2 = { code: null };
@@ -47,7 +47,7 @@ export const sendConfirmationCode = function sendConfirmationCode() {
   if (arg0 === undefined) {
     flag = false;
   }
-  let obj = _modDef4681;
+  let obj = _modDef4713;
   obj = { url: Endpoints.USER_EMAIL, trackedActionData: null, rejectWithError: false };
   obj = { event: encodeProperties.NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE, properties: { is_resend: flag } };
   obj[1] = obj;

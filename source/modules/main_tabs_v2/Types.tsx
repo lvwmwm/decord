@@ -1,9 +1,9 @@
-// Module ID: 4327
-// Function ID: 4328
+// Module ID: 4357
+// Function ID: 4358
 // Name: CREATE_THREAD_SCREEN_KEY
 // Dependencies: [2]
 
-// Module 4327 (CREATE_THREAD_SCREEN_KEY)
+// Module 4357 (CREATE_THREAD_SCREEN_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/main_tabs_v2/Types.tsx");

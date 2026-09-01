@@ -1,9 +1,9 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17514
+// Function ID: 17515
 // Name: promise
-// Dependencies: [685, 17476, 4045, 5455, 5450, 2]
+// Dependencies: [685, 17512, 4075, 5487, 5482, 2]
 
-// Module 17478 (promise)
+// Module 17514 (promise)
 import set from "set" /* 2 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
 

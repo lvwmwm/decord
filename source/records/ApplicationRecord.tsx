@@ -1,18 +1,18 @@
-// Module ID: 4474
-// Function ID: 4475
+// Module ID: 4504
+// Function ID: 4505
 // Name: createExecutable
-// Dependencies: [1931, 4475, 1930, 4476, 4477, 4478, 1431, 4480, 506, 11, 2]
+// Dependencies: [1936, 4505, 1935, 4506, 4507, 4508, 1431, 4510, 506, 11, 2]
 
-// Module 4474 (createExecutable)
+// Module 4504 (createExecutable)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import fromStringAll from "fromString" /* 506 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import toJSDefault from "toJS" /* 1931 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 4480 */;
-import closure_4 from "createFromServer" /* 4475 */;
-import closure_5 from "createdAt" /* 1930 */;
-import items3 from "items3" /* 4476 */;
-import { ApplicationTypes } from "ApplicationTypes" /* 4477 */;
+import toJSDefault from "toJS" /* 1936 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 4510 */;
+import closure_4 from "createFromServer" /* 4505 */;
+import closure_5 from "createdAt" /* 1935 */;
+import items3 from "items3" /* 4506 */;
+import { ApplicationTypes } from "ApplicationTypes" /* 4507 */;
 
 require = arg1;
 function createExecutable(os) {
@@ -90,7 +90,7 @@ BasicApplicationRecord["createFromServer"] = function createFromServer(bot) {
 };
 Object.defineProperty(prototype, "connectionEntrypointUrl", {
   get: function connectionEntrypointUrl(arg0) {
-    const obj = require(4478) /* items */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
+    const obj = require(4508) /* items */.APPLICATION_IDENTITY_CONNECTIONS_WITH_OVERRIDE_ENTRYPOINT_URLS[this.id];
     let prop;
     if (obj != null) {
       prop = obj.connectionEntrypointUrlOverride;

@@ -1,11 +1,11 @@
-// Module ID: 4512
-// Function ID: 4513
+// Module ID: 4542
+// Function ID: 4543
 // Name: DesktopSources
-// Dependencies: [2, 4513]
+// Dependencies: [2, 4543]
 
-// Module 4512 (DesktopSources)
+// Module 4542 (DesktopSources)
 import set from "set" /* 2 */;
-import SystemServiceNotAvailableError from "SystemServiceNotAvailableError" /* 4513 */;
+import SystemServiceNotAvailableError from "SystemServiceNotAvailableError" /* 4543 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/media-engine/Constants.tsx");
 

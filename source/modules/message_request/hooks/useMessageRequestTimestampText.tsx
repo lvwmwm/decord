@@ -1,20 +1,20 @@
-// Module ID: 16421
-// Function ID: 16422
+// Module ID: 16457
+// Function ID: 16458
 // Name: useMessageRequestTimestampText
-// Dependencies: [4463, 11, 12125, 589, 4045, 7493, 2]
+// Dependencies: [4493, 11, 12158, 589, 4075, 7525, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 16421 (useMessageRequestTimestampText)
+// Module 16457 (useMessageRequestTimestampText)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import hooksDefault from "hooks" /* 4045 */;
-import closure_3 from "generateOldThreadCutoff" /* 4463 */;
+import hooksDefault from "hooks" /* 4075 */;
+import closure_3 from "generateOldThreadCutoff" /* 4493 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useMessageRequestTimestampText.tsx");
 
 export const useMessageRequestTimestampText = function useMessageRequestTimestampText(channel) {
   const _require = channel;
-  let obj = _require(12125);
+  let obj = _require(12158);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: _require(589).useStateFromStores(items, () => closure_1_3.lastMessageId(id.id)) };
   items = [closure_3];
@@ -40,7 +40,7 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
 };
 export const useMessageRequestRelativeTimestampText = function useMessageRequestRelativeTimestampText(channel) {
   const _require = channel;
-  let obj = _require(12125);
+  let obj = _require(12158);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   obj = { lastMessageId: _require(589).useStateFromStores(items, () => closure_1_3.lastMessageId(id.id)) };
   items = [closure_3];
@@ -53,8 +53,8 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
     }
     let str = "";
     if (null != extractTimestampResult) {
-      str = _require(7493).getTimestampString(extractTimestampResult);
-      const tmpResult = _require(7493);
+      str = _require(7525).getTimestampString(extractTimestampResult);
+      const tmpResult = _require(7525);
     }
     return str;
   }

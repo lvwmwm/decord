@@ -1,14 +1,14 @@
-// Module ID: 9400
-// Function ID: 9401
+// Module ID: 9439
+// Function ID: 9440
 // Name: getActivityChannelId
-// Dependencies: [1391, 1387, 4467, 2]
+// Dependencies: [1391, 1387, 4497, 2]
 // Exports: default
 
-// Module 9400 (getActivityChannelId)
+// Module 9439 (getActivityChannelId)
 import set from "set" /* 2 */;
 import createChannelRecord from "createChannelRecord" /* 1391 */;
 import closure_1 from "ensureGuildLoaded" /* 1387 */;
-import closure_2 from "updateVoiceState" /* 4467 */;
+import closure_2 from "updateVoiceState" /* 4497 */;
 
 const isTextChannel = createChannelRecord.isTextChannel;
 const result = set.fileFinishedImporting("modules/activities/utils/getActivityChannelId.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 12134
-// Function ID: 12135
+// Module ID: 12167
+// Function ID: 12168
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 676, 12135, 1236, 1995, 2]
+// Dependencies: [19, 676, 12168, 1236, 1995, 2]
 // Exports: useProvisionalAccountExplanationText
 
-// Module 12134 (useProvisionalAccountExplanationText)
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12135 */;
+// Module 12167 (useProvisionalAccountExplanationText)
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12168 */;
 import closure_3 from "noop" /* 19 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 

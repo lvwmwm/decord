@@ -1,15 +1,15 @@
-// Module ID: 4508
-// Function ID: 4509
+// Module ID: 4538
+// Function ID: 4539
 // Name: pathJoin
 // Dependencies: [500, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
-// Module 4508 (pathJoin)
+// Module 4538 (pathJoin)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/PathUtils.tsx");
 
-export const pathJoin = function pathJoin(closure_1, closure_15) {
+export const pathJoin = function pathJoin(closure_1, closure_17) {
   const items = [...arguments];
   let str = "/";
   if (obj.isWindows()) {

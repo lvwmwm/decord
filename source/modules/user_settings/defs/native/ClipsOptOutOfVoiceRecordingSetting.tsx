@@ -1,12 +1,12 @@
-// Module ID: 14548
-// Function ID: 14549
+// Module ID: 14581
+// Function ID: 14582
 // Name: _updateClipsAllowVoiceRecording
-// Dependencies: [5, 7852, 4136, 709, 11031, 1236, 2]
+// Dependencies: [5, 7884, 4166, 709, 11068, 1236, 2]
 
-// Module 14548 (_updateClipsAllowVoiceRecording)
+// Module 14581 (_updateClipsAllowVoiceRecording)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import createToggle from "createToggle" /* 11031 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 function _updateClipsAllowVoiceRecording() {
@@ -27,7 +27,7 @@ function _updateClipsAllowVoiceRecording() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -43,7 +43,7 @@ function _updateClipsAllowVoiceRecording() {
               return obj;
             } else {
               const callback2 = tmp4;
-              const ClipsAllowVoiceRecording = callback(4136).ClipsAllowVoiceRecording;
+              const ClipsAllowVoiceRecording = callback(4166).ClipsAllowVoiceRecording;
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -62,7 +62,7 @@ function _updateClipsAllowVoiceRecording() {
             obj = callback2(709);
             obj.dispatch({ type: "CLIPS_ALLOW_VOICE_RECORDING_UPDATE" });
             c3 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c3 = tmp;

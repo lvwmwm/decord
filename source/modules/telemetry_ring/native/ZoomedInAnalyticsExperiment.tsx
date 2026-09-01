@@ -1,10 +1,10 @@
-// Module ID: 13805
-// Function ID: 13806
+// Module ID: 13838
+// Function ID: 13839
 // Name: apexExperiment
 // Dependencies: [1468, 2]
 // Exports: isZoomedExperimentEnabled
 
-// Module 13805 (apexExperiment)
+// Module 13838 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

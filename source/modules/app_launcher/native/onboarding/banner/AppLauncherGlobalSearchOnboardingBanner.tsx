@@ -1,17 +1,17 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11688
+// Function ID: 11689
 // Name: GlobalSearchCoachmark
-// Dependencies: [19, 17, 1498, 1384, 21, 4448, 712, 9211, 8945, 1236, 2]
+// Dependencies: [19, 17, 1498, 1384, 21, 4478, 712, 9250, 8982, 1236, 2]
 // Exports: default
 
-// Module 11655 (GlobalSearchCoachmark)
+// Module 11688 (GlobalSearchCoachmark)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { DEFAULT_CONTENT_PADDING } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 createCacheKey = { appsIcon: null, appsIconImage: null };
@@ -60,7 +60,7 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
     obj[2] = diff;
     obj[3] = windowDimensions.height;
     obj[5] = obj;
-    tmp3 = jsx(markAsDismissed(8945).Coachmark, { x: -140, y: -40, width: null, height: null });
+    tmp3 = jsx(markAsDismissed(8982).Coachmark, { x: -140, y: -40, width: null, height: null });
   }
   return tmp3;
 };

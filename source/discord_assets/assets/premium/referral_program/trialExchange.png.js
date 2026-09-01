@@ -1,9 +1,9 @@
-// Module ID: 7931
-// Function ID: 7932
+// Module ID: 7963
+// Function ID: 7964
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7931 (metadata)
+// Module 7963 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/referral_program/trialExchange.png.js");

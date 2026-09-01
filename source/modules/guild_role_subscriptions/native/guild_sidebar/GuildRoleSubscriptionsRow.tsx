@@ -1,18 +1,18 @@
-// Module ID: 15758
-// Function ID: 15759
+// Module ID: 15794
+// Function ID: 15795
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [19, 676, 1394, 10162, 21, 4448, 712, 1222, 4415, 15759, 2009, 11915, 1236, 12284, 2]
+// Dependencies: [19, 676, 1394, 10201, 21, 4478, 712, 1222, 4445, 15795, 2009, 11948, 1236, 12317, 2]
 // Exports: default
 
-// Module 15758 (GuildRoleSubscriptionsRow)
+// Module 15794 (GuildRoleSubscriptionsRow)
 import ThemesDefault from "Themes" /* 712 */;
-import BaseChannelSubtitleDefault from "BaseChannelSubtitle" /* 11915 */;
-import registerAssetDefault from "registerAsset" /* 12284 */;
+import BaseChannelSubtitleDefault from "BaseChannelSubtitle" /* 11948 */;
+import registerAssetDefault from "registerAsset" /* 12317 */;
 import closure_3 from "noop" /* 19 */;
 import { Routes } from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1394 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 createCacheKey = { container: null };
@@ -42,7 +42,7 @@ export default function GuildRoleSubscriptionsRow(selected) {
     };
     obj.openLazy(id(closure_1_2[10])(closure_1_2[9], closure_1_2.paths), rolesubscriptionschannelactionsheet, obj);
   }, items1);
-  const ChannelModes = id(11915).ChannelModes;
+  const ChannelModes = id(11948).ChannelModes;
   if (selected) {
     let DEFAULT = ChannelModes.SELECTED;
     let tmp6 = tmp4;
@@ -60,8 +60,8 @@ export default function GuildRoleSubscriptionsRow(selected) {
   const intl2 = tmp6(1236).intl;
   obj[0] = intl2.string(tmp6(1236).t["KzCF/6"]);
   obj[1] = DEFAULT;
-  obj[7] = jsx(tmp6(11915).BaseChannelName, { name: null, mode: null });
+  obj[7] = jsx(tmp6(11948).BaseChannelName, { name: null, mode: null });
   obj = { disableColor: true, mode: DEFAULT, source: registerAssetDefault };
-  obj[8] = jsx(tmp6(11915).BaseChannelIcon, { disableColor: true, mode: DEFAULT, source: registerAssetDefault });
+  obj[8] = jsx(tmp6(11948).BaseChannelIcon, { disableColor: true, mode: DEFAULT, source: registerAssetDefault });
   return jsx(BaseChannelSubtitleDefault, { disableColor: true, mode: DEFAULT, source: registerAssetDefault });
 };

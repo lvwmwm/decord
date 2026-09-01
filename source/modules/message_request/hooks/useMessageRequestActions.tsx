@@ -1,15 +1,15 @@
-// Module ID: 11973
-// Function ID: 11974
+// Module ID: 12006
+// Function ID: 12007
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 7334, 11974, 676, 11975, 10658, 4346, 9150, 8083, 698, 11977, 4136, 8719, 2]
+// Dependencies: [5, 32, 19, 7366, 12007, 676, 12008, 10696, 4376, 9189, 8115, 698, 12010, 4166, 8756, 2]
 // Exports: useMessageRequestActions
 
-// Module 11973 (useMessageRequestActions)
+// Module 12006 (useMessageRequestActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "createUserWidgetFromServer" /* 7334 */;
-import MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL" /* 11974 */;
+import closure_6 from "createUserWidgetFromServer" /* 7366 */;
+import MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL from "MESSAGE_REQUEST_ACCEPT_CONFIRMATION_MODAL" /* 12007 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 let require = arg1;
@@ -65,7 +65,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -170,7 +170,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -275,7 +275,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -302,7 +302,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
               if (closure_1_9) {
                 let num5 = 3;
                 v0 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 let tmp29 = closure_1_5;
                 let tmp30 = closure_1_5(true);
@@ -435,7 +435,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -466,7 +466,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -522,7 +522,7 @@ export const useMessageRequestActions = function useMessageRequestActions(user) 
                         return obj;
                       } else {
                         c1 = 3;
-                        return { value: "HermesInternal", done: "HermesInternal" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } catch (tmp16) {
                       c1 = tmp;

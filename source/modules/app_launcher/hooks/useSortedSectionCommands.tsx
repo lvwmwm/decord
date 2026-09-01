@@ -1,13 +1,13 @@
-// Module ID: 11672
-// Function ID: 11673
+// Module ID: 11705
+// Function ID: 11706
 // Name: useSortedSectionCommands
-// Dependencies: [32, 19, 11673, 11610, 687, 2]
+// Dependencies: [32, 19, 11706, 11643, 687, 2]
 // Exports: default
 
-// Module 11672 (useSortedSectionCommands)
+// Module 11705 (useSortedSectionCommands)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { CommandListSortOrder } from "CommandListSortOrder" /* 11673 */;
+import { CommandListSortOrder } from "CommandListSortOrder" /* 11706 */;
 
 const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/useSortedSectionCommands.tsx");
 

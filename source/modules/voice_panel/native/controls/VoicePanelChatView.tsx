@@ -1,21 +1,21 @@
-// Module ID: 11804
-// Function ID: 11805
+// Module ID: 11837
+// Function ID: 11838
 // Name: memoResult1
-// Dependencies: [19, 17, 11805, 676, 21, 4448, 4689, 1231, 11802, 1236, 4402, 11806, 4187, 7764, 5038, 7584, 1493, 1628, 11813, 4461, 4298, 11090, 4174, 4880, 11814, 10939, 2]
+// Dependencies: [19, 17, 11838, 676, 21, 4478, 4721, 1231, 11835, 1236, 4432, 11839, 4217, 7796, 5070, 7616, 1493, 1628, 11846, 4491, 4328, 11127, 4204, 4912, 11847, 10977, 2]
 
-// Module 11804 (memoResult1)
+// Module 11837 (memoResult1)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import registerAssetDefault from "registerAsset" /* 4402 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5038 */;
-import setDefault from "set" /* 7764 */;
-import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 11802 */;
-import dismissPanelDefault from "dismissPanel" /* 11806 */;
+import registerAssetDefault from "registerAsset" /* 4432 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5070 */;
+import setDefault from "set" /* 7796 */;
+import ChatFloatingNavButtonDefault from "ChatFloatingNavButton" /* 11835 */;
+import dismissPanelDefault from "dismissPanel" /* 11839 */;
 import importAllResult from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
-import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes" /* 11805 */;
+import { CONTROLS_DRAWER_HEADER_SIZE } from "VoicePanelControlsModes" /* 11838 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 let c3 = importAllResult;
@@ -25,7 +25,7 @@ let closure_8 = createCacheKey.createStyles({ container: { flex: 1, overflow: "h
 let closure_9 = { code: "function VoicePanelChatViewTsx1(){const{windowDimensions}=this.__closure;return{width:windowDimensions.get().width,height:windowDimensions.get().height};}" };
 let closure_10 = importAllResult.memo(() => {
   const windowDimensions = importAllResult.useContext(dismissPanelDefault).windowDimensions;
-  let obj = windowDimensions(4187);
+  let obj = windowDimensions(4217);
   const fn = function n() {
     return { width: windowDimensions.get().width, height: windowDimensions.get().height };
   };

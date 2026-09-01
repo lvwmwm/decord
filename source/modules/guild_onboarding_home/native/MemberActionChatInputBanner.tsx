@@ -1,24 +1,24 @@
-// Module ID: 11821
-// Function ID: 11822
+// Module ID: 11854
+// Function ID: 11855
 // Name: ActionChannelInfo
-// Dependencies: [32, 19, 17, 4440, 5369, 1387, 1992, 676, 1925, 21, 4448, 712, 647, 4642, 4444, 1236, 1297, 11339, 5461, 1431, 4104, 11822, 11819, 4187, 4449, 11823, 5036, 1222, 11820, 6037, 2]
+// Dependencies: [32, 19, 17, 4470, 5401, 1387, 1992, 676, 1925, 21, 4478, 712, 647, 4674, 4474, 1236, 1297, 11377, 5493, 1431, 4134, 11855, 11852, 4217, 4479, 11856, 5068, 1222, 11853, 6069, 2]
 
-// Module 11821 (ActionChannelInfo)
+// Module 11854 (ActionChannelInfo)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 11339 */;
-import newMemberActionFromServer from "newMemberActionFromServer" /* 11819 */;
-import useMemberActionsForChannel from "useMemberActionsForChannel" /* 11822 */;
+import registerAssetDefault from "registerAsset" /* 11377 */;
+import newMemberActionFromServer from "newMemberActionFromServer" /* 11852 */;
+import useMemberActionsForChannel from "useMemberActionsForChannel" /* 11855 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
-import closure_7 from "getEmojiToGroupId" /* 5369 */;
+import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import closure_7 from "getEmojiToGroupId" /* 5401 */;
 import closure_8 from "ensureGuildLoaded" /* 1387 */;
 import closure_9 from "trackCommunicationDisabled" /* 1992 */;
 import { Routes } from "ME" /* 676 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function ActionChannelInfo(action) {
@@ -41,7 +41,7 @@ function ActionChannelInfo(action) {
     obj2[0] = tmp4;
     obj1[2] = intl.format(tmp(1236).t.MkzlDL, obj2);
   }
-  return closure_12(action(4444).Text, obj1);
+  return closure_12(action(4474).Text, obj1);
 }
 function ChannelActionEmoji(emoji) {
   emoji = emoji.emoji;
@@ -71,7 +71,7 @@ function ChannelActionEmoji(emoji) {
     obj = { style: null, source: null, resizeMode: "contain" };
     obj[0] = tmp.emoji;
     obj1 = { uri: null };
-    let tmp5Result = tmp5(5461);
+    let tmp5Result = tmp5(5493);
     tmp5Result = tmp5(1431);
     const obj2 = { id: null, animated: null, size: null };
     ({ id: obj10[0], animated: obj10[1] } = stateFromStores);
@@ -82,15 +82,15 @@ function ChannelActionEmoji(emoji) {
   } else {
     tmp2Result = tmp6;
     if (null != name) {
-      const tmp5Result1 = tmp5(4104);
+      const tmp5Result1 = tmp5(4134);
       tmp2Result = tmp6;
       if (null != tmp5Result1.getByName(tmp5Result2.convertSurrogateToName(name, false))) {
         const obj3 = { style: null, variant: "heading-lg/normal", children: null };
         obj3[0] = tmp.textEmoji;
         obj3[2] = name;
-        tmp2Result = tmp2(tmp3(4444).Text, obj3);
+        tmp2Result = tmp2(tmp3(4474).Text, obj3);
       }
-      tmp5Result2 = tmp5(4104);
+      tmp5Result2 = tmp5(4134);
     }
   }
   return tmp2Result;
@@ -375,7 +375,7 @@ let closure_18 = { code: "function MemberActionChatInputBannerTsx1(){const{useRe
 let closure_19 = { code: "function MemberActionChatInputBannerTsx2(){const{useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};}" };
 const memoResult = importAllResult.memo((channel) => {
   channel = channel.channel;
-  let obj = channel(6037);
+  let obj = channel(6069);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [closure_9];
   const stateFromStores = channel(647).useStateFromStores(items, () => {

@@ -1,14 +1,14 @@
-// Module ID: 13304
-// Function ID: 13305
+// Module ID: 13337
+// Function ID: 13338
 // Name: resetAllState
-// Dependencies: [32, 4269, 4467, 589, 709, 2]
+// Dependencies: [32, 4299, 4497, 589, 709, 2]
 
-// Module 13304 (resetAllState)
+// Module 13337 (resetAllState)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "_slicedToArray" /* 32 */;
-import closure_1 from "handleConnectionOpen" /* 4269 */;
-import closure_2 from "updateVoiceState" /* 4467 */;
+import closure_1 from "handleConnectionOpen" /* 4299 */;
+import closure_2 from "updateVoiceState" /* 4497 */;
 
 function resetAllState() {
   (function clearAllTimers() {

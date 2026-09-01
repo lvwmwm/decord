@@ -1,13 +1,13 @@
-// Module ID: 9770
-// Function ID: 9771
+// Module ID: 9809
+// Function ID: 9810
 // Name: isStableVoiceStateEqual
-// Dependencies: [4499, 4467, 643, 589, 2]
+// Dependencies: [4529, 4497, 643, 589, 2]
 // Exports: useMuteDeafenIconState, useStableVideoState, useStableVoiceParticipant, useVideoIconState
 
-// Module 9770 (isStableVoiceStateEqual)
+// Module 9809 (isStableVoiceStateEqual)
 import shallowEqualDefault from "shallowEqual" /* 643 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_4 from "updateVoiceState" /* 4467 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_4 from "updateVoiceState" /* 4497 */;
 
 const require = arg1;
 function isStableVoiceStateEqual(arg0, arg1) {

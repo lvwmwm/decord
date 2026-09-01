@@ -1,14 +1,14 @@
-// Module ID: 13311
-// Function ID: 13312
+// Module ID: 13344
+// Function ID: 13345
 // Name: apexExperiment
-// Dependencies: [4362, 1468, 4359, 8591, 2]
+// Dependencies: [4392, 1468, 4389, 8623, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping
 
-// Module 13311 (apexExperiment)
+// Module 13344 (apexExperiment)
 import set from "set" /* 2 */;
-import ExperimentBuckets from "ExperimentBuckets" /* 4362 */;
+import ExperimentBuckets from "ExperimentBuckets" /* 4392 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
-import createExperiment from "createExperiment" /* 4359 */;
+import createExperiment from "createExperiment" /* 4389 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ kind: "user", name: "2026-03-content-inventory-memberlist-and-ranker", defaultConfig: { enabled: true, impressionCappingEnabled: true }, variations: { 0: { enabled: false, impressionCappingEnabled: false } } });
 const items = [{ id: 16, label: "ML model V3 - Nvidia small boost", config: {} }, { id: 17, label: "ML model V3 - Nvidia big boost", config: {} }];

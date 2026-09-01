@@ -1,10 +1,10 @@
-// Module ID: 8075
-// Function ID: 8076
+// Module ID: 8107
+// Function ID: 8108
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [32, 19, 676, 1898, 4332, 2]
+// Dependencies: [32, 19, 676, 1898, 4362, 2]
 // Exports: default
 
-// Module 8075 (useAvatarDecorationIfNotExpired)
+// Module 8107 (useAvatarDecorationIfNotExpired)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { MAX_TIMEOUT_MS } from "ME" /* 676 */;

@@ -1,10 +1,10 @@
-// Module ID: 9788
-// Function ID: 9789
+// Module ID: 9827
+// Function ID: 9828
 // Name: _generateKeyFingerprint
 // Dependencies: [5, 2]
 // Exports: generateKeyFingerprint
 
-// Module 9788 (_generateKeyFingerprint)
+// Module 9827 (_generateKeyFingerprint)
 import closure_0 from "asyncGeneratorStep" /* 5 */;
 
 function _generateKeyFingerprint() {
@@ -26,7 +26,7 @@ function _generateKeyFingerprint() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

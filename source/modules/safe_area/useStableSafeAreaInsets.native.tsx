@@ -1,10 +1,10 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 9614
+// Function ID: 9615
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1496, 500, 1640, 1628, 9576, 2]
+// Dependencies: [32, 19, 1496, 500, 1640, 1628, 9615, 2]
 // Exports: default, getStableSafeAreaInsets
 
-// Module 9575 (useStableSafeAreaInsets)
+// Module 9614 (useStableSafeAreaInsets)
 import context from "context" /* 1496 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1628 */;
 import enforcingDefault from "enforcing" /* 1640 */;

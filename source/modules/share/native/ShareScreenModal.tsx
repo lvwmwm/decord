@@ -1,22 +1,22 @@
-// Module ID: 13605
-// Function ID: 13606
+// Module ID: 13638
+// Function ID: 13639
 // Name: onClose
-// Dependencies: [5, 32, 19, 1387, 13557, 21, 3, 4691, 8601, 589, 4461, 692, 13606, 2]
+// Dependencies: [5, 32, 19, 1387, 13590, 21, 3, 4723, 8633, 589, 4491, 692, 13639, 2]
 // Exports: default
 
-// Module 13605 (onClose)
+// Module 13638 (onClose)
 import timestampDefault from "timestamp" /* 3 */;
-import _modDef4691 from "module_4691" /* 4691 */;
+import _modDef4723 from "module_4723" /* 4723 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13557 */;
+import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13590 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 let require = arg1;
 function onClose() {
-  _modDef4691.popWithKey(SHARE_SCREEN_MODAL_KEY);
+  _modDef4723.popWithKey(SHARE_SCREEN_MODAL_KEY);
 }
 let closure_9 = new timestampDefault("ShareScreenModal");
 const tmp2 = new timestampDefault("ShareScreenModal");
@@ -53,7 +53,7 @@ export default function ShareScreenModal(text) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -154,7 +154,7 @@ export default function ShareScreenModal(text) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

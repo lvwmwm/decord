@@ -1,16 +1,16 @@
-// Module ID: 17162
-// Function ID: 17163
+// Module ID: 17198
+// Function ID: 17199
 // Name: ADD_MEMBER_QUERY_LIMIT
-// Dependencies: [19, 1992, 1922, 17153, 676, 589, 4292, 5552, 5424, 698, 5422, 1471, 2]
+// Dependencies: [19, 1992, 1922, 17189, 676, 589, 4322, 5584, 5456, 698, 5454, 1471, 2]
 // Exports: filterFullMembersByQuery, filterRole, getSectionAnalyticsName, useGuildMembers, useGuildRoleMembers, useQueryGuildMembers
 
-// Module 17162 (ADD_MEMBER_QUERY_LIMIT)
+// Module 17198 (ADD_MEMBER_QUERY_LIMIT)
 import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5422 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5454 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "trackCommunicationDisabled" /* 1992 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { GuildSettingsRoleEditSections as closure_6 } from "MAX_SUBCATEGORIES" /* 17153 */;
+import { GuildSettingsRoleEditSections as closure_6 } from "MAX_SUBCATEGORIES" /* 17189 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;

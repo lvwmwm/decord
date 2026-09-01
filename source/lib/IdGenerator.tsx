@@ -1,9 +1,9 @@
-// Module ID: 16822
-// Function ID: 16823
+// Module ID: 16858
+// Function ID: 16859
 // Name: IdGenerator
 // Dependencies: [2, 510]
 
-// Module 16822 (IdGenerator)
+// Module 16858 (IdGenerator)
 import set from "set" /* 2 */;
 import generate from "generate" /* 510 */;
 

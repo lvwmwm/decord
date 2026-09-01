@@ -1,18 +1,18 @@
-// Module ID: 14445
-// Function ID: 14446
+// Module ID: 14478
+// Function ID: 14479
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4448, 712, 8735, 5521, 14446, 14448, 14458, 11458, 14462, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 8772, 5553, 14479, 14481, 14491, 11491, 14495, 2]
 // Exports: default
 
-// Module 14445 (FamilyCenterActivityPage)
+// Module 14478 (FamilyCenterActivityPage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5521 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8735 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14446 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5553 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8772 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 14479 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -35,15 +35,15 @@ export default function FamilyCenterActivityPage() {
   const items = [callback(FamilyCenterParentalConsentNoticeDefault, {}), ];
   if (0 === activeLinkUserIds.length) {
     obj1 = { children: null };
-    const items1 = [tmp3(tmp7(14448), {}), tmp3(tmp7(14458), {}), ];
+    const items1 = [tmp3(tmp7(14481), {}), tmp3(tmp7(14491), {}), ];
     const obj2 = { style: null, children: null };
     obj2[0] = tmp.dataConfirmation;
-    obj2[1] = tmp3(tmp7(11458), {});
+    obj2[1] = tmp3(tmp7(11491), {});
     items1[2] = tmp3(tmp6, obj2);
     obj1[0] = items1;
     let tmp3Result = tmp5(closure_6, obj1);
   } else {
-    tmp3Result = tmp3(tmp7(14462), {});
+    tmp3Result = tmp3(tmp7(14495), {});
   }
   items[1] = tmp3Result;
   obj[1] = items;

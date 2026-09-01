@@ -1,15 +1,15 @@
-// Module ID: 8120
-// Function ID: 8121
+// Module ID: 8152
+// Function ID: 8153
 // Name: resolveNsfwTogglesWithDefaults
-// Dependencies: [1922, 4136, 4701, 8121, 4142, 5335, 2]
+// Dependencies: [1922, 4166, 4733, 8153, 4172, 5367, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 8120 (resolveNsfwTogglesWithDefaults)
-import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
-import isFeatureAgeGated from "isFeatureAgeGated" /* 4142 */;
-import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4701 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5335 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 8121 */;
+// Module 8152 (resolveNsfwTogglesWithDefaults)
+import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
+import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
+import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4733 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5367 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 8153 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 8960
-// Function ID: 8961
+// Module ID: 8997
+// Function ID: 8998
 // Name: normalizeSvgXml
 // Dependencies: [584, 687, 2]
 // Exports: getCachedSvgXml, loadSvgXml
 
-// Module 8960 (normalizeSvgXml)
+// Module 8997 (normalizeSvgXml)
 import set from "set" /* 2 */;
 
 function normalizeSvgXml(str) {

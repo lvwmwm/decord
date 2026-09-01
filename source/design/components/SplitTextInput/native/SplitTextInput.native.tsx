@@ -1,12 +1,12 @@
-// Module ID: 7707
-// Function ID: 7708
+// Module ID: 7739
+// Function ID: 7740
 // Name: SplitTextInput
-// Dependencies: [109, 19, 21, 4176, 7674, 7708, 2]
+// Dependencies: [109, 19, 21, 4206, 7706, 7740, 2]
 
-// Module 7707 (SplitTextInput)
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4176 */;
-import Input from "Input" /* 7674 */;
-import SplitTextField from "SplitTextField" /* 7708 */;
+// Module 7739 (SplitTextInput)
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4206 */;
+import Input from "Input" /* 7706 */;
+import SplitTextField from "SplitTextField" /* 7740 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

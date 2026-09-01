@@ -1,18 +1,18 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14288
+// Function ID: 14289
 // Name: UserProfileNameplateEditButton
-// Dependencies: [19, 17, 1992, 5969, 505, 21, 4448, 712, 589, 8044, 14256, 4415, 14257, 2009, 14239, 1236, 8490, 1297, 8060, 2]
+// Dependencies: [19, 17, 1992, 6001, 505, 21, 4478, 712, 589, 8076, 14289, 4445, 14290, 2009, 14272, 1236, 8522, 1297, 8092, 2]
 // Exports: default
 
-// Module 14255 (UserProfileNameplateEditButton)
+// Module 14288 (UserProfileNameplateEditButton)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 5969 */;
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 6001 */;
 import { NOOP } from "sum" /* 505 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ ActivityIndicator: c4, View: c5 } = get_ActivityIndicator);
@@ -40,7 +40,7 @@ export default function UserProfileNameplateEditButton(user) {
     }
     return member;
   });
-  obj1 = user(8044);
+  obj1 = user(8076);
   obj = { pendingValue: pendingNameplate, userValue: null, guildValue: null, guildId: null };
   const collectibles = user.collectibles;
   nameplate = undefined;
@@ -62,7 +62,7 @@ export default function UserProfileNameplateEditButton(user) {
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
-  const fetchNameplate = user(14256).useFetchNameplate(skuId);
+  const fetchNameplate = user(14289).useFetchNameplate(skuId);
   ({ nameplateProduct, nameplateData, nameplateRecord, isFetching } = fetchNameplate);
   if (null != guildId) {
     let nameplate2;
@@ -91,7 +91,7 @@ export default function UserProfileNameplateEditButton(user) {
     obj[1] = intl5.string(tmp3(1236).t.MKDeyL);
     obj[2] = NOOP;
     obj[3] = <closure_4 animating size="large" />;
-    return jsx(tmp3(14239).UserProfileEditFormButton, { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true });
+    return jsx(tmp3(14272).UserProfileEditFormButton, { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true });
   } else {
     let name;
     if (nameplateProduct != null) {
@@ -126,15 +126,15 @@ export default function UserProfileNameplateEditButton(user) {
           obj4[0] = tmp.previewContainer;
           const obj5 = { nameplate: null, fullOpacity: true, isSquarePreview: true };
           obj5[0] = nameplateData;
-          obj4[1] = tmp15(guildId(8490), obj5);
+          obj4[1] = tmp15(guildId(8522), obj5);
           let tmp15Result = tmp15(closure_5, obj4);
         }
         obj2[4] = tmp15Result;
-        return tmp15(tmp3(14239).UserProfileEditFormButton, obj2);
+        return tmp15(tmp3(14272).UserProfileEditFormButton, obj2);
       }
     }
     const obj6 = { source: null, style: null };
-    obj6[0] = guildId(8060);
+    obj6[0] = guildId(8092);
     obj6[1] = tmp.noneIcon;
     tmp15Result = tmp15(tmp3(1297).Icon, obj6);
   }

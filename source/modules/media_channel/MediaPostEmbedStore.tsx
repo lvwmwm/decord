@@ -1,9 +1,9 @@
-// Module ID: 11023
-// Function ID: 11024
+// Module ID: 11060
+// Function ID: 11061
 // Name: getMediaPostEmbed
 // Dependencies: [589, 709, 2]
 
-// Module 11023 (getMediaPostEmbed)
+// Module 11060 (getMediaPostEmbed)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

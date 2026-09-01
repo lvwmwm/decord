@@ -1,25 +1,25 @@
-// Module ID: 14418
-// Function ID: 14419
+// Module ID: 14451
+// Function ID: 14452
 // Name: onClose
-// Dependencies: [5, 32, 19, 17, 12183, 21, 4691, 4448, 712, 5460, 12185, 12189, 4164, 1236, 7648, 12202, 5463, 5976, 2]
+// Dependencies: [5, 32, 19, 17, 12216, 21, 4723, 4478, 712, 5492, 12218, 12222, 4194, 1236, 7680, 12235, 5495, 6008, 2]
 // Exports: default
 
-// Module 14418 (onClose)
+// Module 14451 (onClose)
 import ThemesDefault from "Themes" /* 712 */;
-import _modDef4691 from "module_4691" /* 4691 */;
-import NavigationStack from "NavigationStack" /* 5976 */;
+import _modDef4723 from "module_4723" /* 4723 */;
+import NavigationStack from "NavigationStack" /* 6008 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ContactSyncScenes } from "ContactSyncLandingPage" /* 12183 */;
+import { ContactSyncScenes } from "ContactSyncLandingPage" /* 12216 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
-import HeaderBackImage from "HeaderBackImage" /* 5463 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
+import HeaderBackImage from "HeaderBackImage" /* 5495 */;
 
 require = arg1;
 function onClose() {
-  let arr = _modDef4691;
+  let arr = _modDef4723;
   arr = arr.pop();
 }
 function ContactSyncNameInputScreen() {
@@ -44,14 +44,14 @@ function ContactSyncNameInputScreen() {
         closure_1 = tmp3;
         callback(true);
         c3 = 1;
-        yield closure_1_1(12189).updateName(callback);
+        yield closure_1_1(12222).updateName(callback);
         if (1 === tmp7) {
           c3 = 0;
-          obj1 = closure_1_1(4164);
+          obj1 = closure_1_1(4194);
           const obj2 = { key: "ERROR_GENERIC_TITLE", content: null, icon: null };
           const intl = callback(1236).intl;
           obj2[1] = intl.string(callback(1236).t.R0RpRX);
-          obj2[2] = closure_1_1(7648);
+          obj2[2] = closure_1_1(7680);
           obj1.open(obj2);
           callback(false);
           c4 = 3;

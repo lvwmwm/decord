@@ -1,11 +1,11 @@
-// Module ID: 4945
-// Function ID: 4946
+// Module ID: 4977
+// Function ID: 4978
 // Name: match
-// Dependencies: [4162, 2]
+// Dependencies: [4192, 2]
 
-// Module 4945 (match)
-import t from "t" /* 4162 */;
-import tDefault from "t" /* 4162 */;
+// Module 4977 (match)
+import t from "t" /* 4192 */;
+import tDefault from "t" /* 4192 */;
 
 require = arg1;
 const re2 = /\n$/;

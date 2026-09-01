@@ -1,9 +1,9 @@
-// Module ID: 6828
-// Function ID: 6829
+// Module ID: 6860
+// Function ID: 6861
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6828 (metadata)
+// Module 6860 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWishlistTileAbstractUI-2x.png.js");

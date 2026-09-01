@@ -1,17 +1,17 @@
-// Module ID: 10939
-// Function ID: 10940
-// Dependencies: [19, 17, 5189, 1391, 1387, 4703, 676, 21, 4448, 712, 4310, 589, 1236, 4699, 6142, 5909, 10940, 10941, 7188, 6127, 10943, 5446, 10948, 10962, 11021, 11498, 11999, 500, 12142, 12143, 11801, 12147, 12150, 11095, 12153, 5038, 9, 9092, 12168, 1297, 12170, 12172, 12173, 12265, 2]
+// Module ID: 10977
+// Function ID: 10978
+// Dependencies: [19, 17, 5221, 1391, 1387, 4735, 676, 21, 4478, 712, 4340, 589, 1236, 4731, 6174, 5941, 10978, 10979, 7220, 6159, 10981, 5478, 10986, 10999, 11058, 11531, 12032, 500, 12175, 12176, 11834, 12180, 12183, 11132, 12186, 5070, 9, 9130, 12201, 1297, 12203, 12205, 12206, 12298, 2]
 
-// Module 10939
+// Module 10977
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "_handleConnectionOpen" /* 5189 */;
+import closure_4 from "_handleConnectionOpen" /* 5221 */;
 import { createChannelRecord } from "createChannelRecord" /* 1391 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "reinjectEphemerals" /* 4703 */;
+import closure_7 from "reinjectEphemerals" /* 4735 */;
 import { ChannelTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c3 = importAllResult;

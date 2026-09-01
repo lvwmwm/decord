@@ -1,12 +1,12 @@
-// Module ID: 4497
-// Function ID: 4498
+// Module ID: 4527
+// Function ID: 4528
 // Name: addSku
-// Dependencies: [4491, 1996, 589, 709, 2]
+// Dependencies: [4521, 1996, 589, 709, 2]
 
-// Module 4497 (addSku)
+// Module 4527 (addSku)
 import initializeAll from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_1 from "createFromServer" /* 4491 */;
+import closure_1 from "createFromServer" /* 4521 */;
 import closure_2 from "_getSystemLocale" /* 1996 */;
 import set from "set" /* 2 */;
 

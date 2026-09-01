@@ -1,10 +1,10 @@
-// Module ID: 11569
-// Function ID: 11570
+// Module ID: 11602
+// Function ID: 11603
 // Name: useChatInputHeightWorklet
-// Dependencies: [19, 500, 4187, 11570, 11571, 11572, 2]
+// Dependencies: [19, 500, 4217, 11603, 11604, 11605, 2]
 // Exports: default, getIsChatInputHeightWorkletEnabled
 
-// Module 11569 (useChatInputHeightWorklet)
+// Module 11602 (useChatInputHeightWorklet)
 import set from "set" /* 500 */;
 import closure_3 from "noop" /* 19 */;
 

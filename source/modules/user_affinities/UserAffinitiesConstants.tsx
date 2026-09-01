@@ -1,9 +1,9 @@
-// Module ID: 7373
-// Function ID: 7374
+// Module ID: 7405
+// Function ID: 7406
 // Name: result
 // Dependencies: [687, 2]
 
-// Module 7373 (result)
+// Module 7405 (result)
 import setDefault from "set" /* 687 */;
 
 const result = 8 * setDefault.Millis.HOUR;

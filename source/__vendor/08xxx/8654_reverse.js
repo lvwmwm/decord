@@ -1,0 +1,16 @@
+// Module ID: 8654
+// Function ID: 8655
+// Name: reverse
+// Dependencies: []
+
+// Module 8654 (reverse)
+
+export default function reverse(arg0) {
+  if (null == arg0) {
+    return arg0;
+  } else {
+    const call = reverse.call;
+    typeof call === "unknown" ? reverse() : call(arg0);
+    const tmp = reverse;
+  }
+};

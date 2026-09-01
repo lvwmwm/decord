@@ -1,21 +1,21 @@
-// Module ID: 8860
-// Function ID: 8861
+// Module ID: 8897
+// Function ID: 8898
 // Name: InformationTable
-// Dependencies: [32, 19, 17, 1387, 1992, 1922, 8524, 676, 21, 4448, 712, 8861, 1236, 5960, 5567, 1297, 1363, 4383, 589, 8082, 5921, 5941, 8526, 8862, 698, 8084, 8859, 5590, 5592, 7807, 7710, 4444, 4641, 4896, 5036, 4136, 2]
+// Dependencies: [32, 19, 17, 1387, 1992, 1922, 8556, 676, 21, 4478, 712, 8898, 1236, 5992, 5599, 1297, 1363, 4413, 589, 8114, 5953, 5973, 8558, 8899, 698, 8116, 8896, 5622, 5624, 7839, 7742, 4474, 4673, 4928, 5068, 4166, 2]
 
-// Module 8860 (InformationTable)
+// Module 8897 (InformationTable)
 import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 8861 */;
+import registerAssetDefault from "registerAsset" /* 8898 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import closure_7 from "trackCommunicationDisabled" /* 1992 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8524 */;
+import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8556 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function InformationTable(speedBumpType) {
@@ -44,7 +44,7 @@ function InformationTable(speedBumpType) {
       return closure_1_12(items(closure_1_2[14]).TableRow, obj, arg1);
     })
   };
-  return callback2(items(5960).TableRowGroup, obj);
+  return callback2(items(5992).TableRowGroup, obj);
 }
 let c4 = importAllResult;
 ({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId } = ME);

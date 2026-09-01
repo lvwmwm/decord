@@ -1,13 +1,13 @@
-// Module ID: 12043
-// Function ID: 12044
+// Module ID: 12076
+// Function ID: 12077
 // Name: useGuildPowerupRollbackModalConfig
-// Dependencies: [19, 1909, 4334, 589, 12044, 4338, 12029, 12031, 1373, 1236, 2401, 2]
+// Dependencies: [19, 1909, 4364, 589, 12077, 4368, 12062, 12064, 1373, 1236, 2401, 2]
 // Exports: default
 
-// Module 12043 (useGuildPowerupRollbackModalConfig)
+// Module 12076 (useGuildPowerupRollbackModalConfig)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "calculateAppliedBoosts" /* 4334 */;
+import closure_5 from "calculateAppliedBoosts" /* 4364 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackModalConfig.tsx");

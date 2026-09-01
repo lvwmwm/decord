@@ -1,16 +1,16 @@
-// Module ID: 7259
-// Function ID: 7260
+// Module ID: 7291
+// Function ID: 7292
 // Name: createCollectiblesItemsFromServerResponse
-// Dependencies: [7260, 1948, 7261, 7262, 7263, 676, 1950, 2]
+// Dependencies: [7292, 1948, 7293, 7294, 7295, 676, 1950, 2]
 // Exports: createCollectiblesItemsFromServerResponse
 
-// Module 7259 (createCollectiblesItemsFromServerResponse)
+// Module 7291 (createCollectiblesItemsFromServerResponse)
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
-import closure_2 from "fromServer" /* 7260 */;
+import closure_2 from "fromServer" /* 7292 */;
 import closure_3 from "fromServer" /* 1948 */;
-import closure_4 from "fromServer" /* 7261 */;
-import closure_5 from "fromServer" /* 7262 */;
-import closure_6 from "fromServer" /* 7263 */;
+import closure_4 from "fromServer" /* 7293 */;
+import closure_5 from "fromServer" /* 7294 */;
+import closure_6 from "fromServer" /* 7295 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;

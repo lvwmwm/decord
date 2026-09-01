@@ -1,33 +1,33 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11723
+// Function ID: 11724
 // Name: AppLauncherCommandViewFooter
-// Dependencies: [5, 32, 19, 17, 4440, 8114, 1985, 1498, 676, 1623, 21, 4448, 712, 11691, 589, 4187, 4449, 4452, 4416, 4908, 4296, 4897, 1236, 4393, 9012, 4668, 5562, 11692, 7236, 8544, 11590, 705, 11567, 11694, 1955, 8113, 11532, 9438, 1493, 10955, 10389, 11695, 10390, 5050, 1891, 5041, 11696, 8403, 5592, 4444, 11697, 11698, 11726, 1297, 38, 11667, 8411, 7234, 8119, 8398, 11727, 11728, 11653, 11654, 2]
+// Dependencies: [5, 32, 19, 17, 4470, 8146, 1985, 1498, 676, 1623, 21, 4478, 712, 11724, 589, 4217, 4479, 4482, 4446, 4940, 4326, 4929, 1236, 4423, 9049, 4700, 5594, 11725, 7268, 8576, 11623, 705, 11600, 11727, 1955, 8145, 11565, 9477, 1493, 10993, 10428, 11728, 10429, 5082, 1891, 5073, 11729, 8435, 5624, 4474, 11730, 11731, 11759, 1297, 38, 11700, 8443, 7266, 8151, 8430, 11760, 11761, 11686, 11687, 2]
 // Exports: default
 
-// Module 11690 (AppLauncherCommandViewFooter)
+// Module 11723 (AppLauncherCommandViewFooter)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4444 */;
-import CollapsingText from "CollapsingText" /* 4897 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8403 */;
-import handleApplicationSelected from "handleApplicationSelected" /* 11590 */;
-import registerAssetDefault from "registerAsset" /* 11653 */;
-import registerAssetDefault2 from "registerAsset" /* 11654 */;
-import registerAssetDefault3 from "registerAsset" /* 11727 */;
-import registerAssetDefault4 from "registerAsset" /* 11728 */;
+import Text from "Text" /* 4474 */;
+import CollapsingText from "CollapsingText" /* 4929 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8435 */;
+import handleApplicationSelected from "handleApplicationSelected" /* 11623 */;
+import registerAssetDefault from "registerAsset" /* 11686 */;
+import registerAssetDefault2 from "registerAsset" /* 11687 */;
+import registerAssetDefault3 from "registerAsset" /* 11760 */;
+import registerAssetDefault4 from "registerAsset" /* 11761 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
-import getIndexKey from "getIndexKey" /* 8114 */;
+import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
+import getIndexKey from "getIndexKey" /* 8146 */;
 import closure_13 from "createGuildRoleRecordFromRust" /* 1985 */;
 import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;
 import ME from "ME" /* 676 */;
 import { MediaKeyboardTarget } from "DRAG_HANDLE" /* 1623 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function AppLauncherCommandViewFooter(arg0) {
@@ -55,8 +55,8 @@ function AppLauncherCommandViewFooter(arg0) {
       obj1 = { translateX: null };
       const obj9 = closure_1_0(stateFromStores[16]);
       const fn = function e() {
-        const obj = callback(4187);
-        return callback(4187).runOnJS(callback(4416).triggerHapticFeedback)(callback(4416).HapticFeedbackTypes.IMPACT_LIGHT);
+        const obj = callback(4217);
+        return callback(4217).runOnJS(callback(4446).triggerHapticFeedback)(callback(4446).HapticFeedbackTypes.IMPACT_LIGHT);
       };
       const obj2 = { runOnJS: null, triggerHapticFeedback: null, HapticFeedbackTypes: null };
       obj2[0] = closure_1_0(stateFromStores[15]).runOnJS;
@@ -568,7 +568,7 @@ function AppLauncherCommandViewInner(command) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -587,7 +587,7 @@ function AppLauncherCommandViewInner(command) {
             if (c2) {
               if (null == closure_1_0) {
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 obj1 = { applicationId: null, channel: null, commandIntegrationTypes: null, appLauncherContext: null };
                 obj1[0] = tmp9.applicationId;
@@ -616,11 +616,11 @@ function AppLauncherCommandViewInner(command) {
           return obj;
         } else if (!arg1.isAuthorized) {
           c2 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
         callback();
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp11) {
         c2 = tmp;
         throw tmp11;

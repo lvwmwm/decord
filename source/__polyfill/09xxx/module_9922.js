@@ -1,7 +1,0 @@
-// Module ID: 9922
-// Function ID: 9923
-// Dependencies: []
-
-// Module 9922
-
-export default { L: 1, M: 0, Q: 3, H: 2 };

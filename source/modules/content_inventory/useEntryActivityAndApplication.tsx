@@ -1,13 +1,13 @@
-// Module ID: 9346
-// Function ID: 9347
+// Module ID: 9385
+// Function ID: 9386
 // Name: useEntryActivityAndApplication
-// Dependencies: [32, 1386, 9347, 589, 5927, 2]
+// Dependencies: [32, 1386, 9386, 589, 5959, 2]
 // Exports: default
 
-// Module 9346 (useEntryActivityAndApplication)
+// Module 9385 (useEntryActivityAndApplication)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "participantFromServer" /* 1386 */;
-import closure_5 from "entryToKey" /* 9347 */;
+import closure_5 from "entryToKey" /* 9386 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/content_inventory/useEntryActivityAndApplication.tsx");
@@ -27,11 +27,11 @@ export default function useEntryActivityAndApplication(extra) {
     application_id1 = extra.extra.application_id;
   }
   items1[1] = application_id1;
-  const tmp7 = callback(first(5927)(items1), 2);
+  const tmp7 = callback(first(5959)(items1), 2);
   first = tmp7[0];
   obj = { activity: stateFromStores, embeddedActivity: null, anyMatchingApplication: null, activityApplication: null, fallbackApplication: null };
   const tmp = _require;
-  const tmp4 = first(5927);
+  const tmp4 = first(5959);
   const items2 = [closure_4];
   obj[1] = _require(589).useStateFromStores(items2, () => {
     let id;

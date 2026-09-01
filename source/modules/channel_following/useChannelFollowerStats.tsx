@@ -1,14 +1,14 @@
-// Module ID: 11217
-// Function ID: 11218
+// Module ID: 11254
+// Function ID: 11255
 // Name: useChannelFollowerStats
-// Dependencies: [32, 19, 11218, 687, 589, 10931, 2]
+// Dependencies: [32, 19, 11255, 687, 589, 10969, 2]
 // Exports: default
 
-// Module 11217 (useChannelFollowerStats)
+// Module 11254 (useChannelFollowerStats)
 import setDefault from "set" /* 687 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getFollowerStatsForChannel" /* 11218 */;
+import closure_5 from "getFollowerStatsForChannel" /* 11255 */;
 
 const require = arg1;
 const HOUR = setDefault.Millis.HOUR;
@@ -27,8 +27,8 @@ export default function useChannelFollowerStats(arg0) {
     if (null == stateFromStores) {
       if (!first) {
         dependencyMap(true);
-        const channelFollowerStats = first(10931).fetchChannelFollowerStats(closure_0);
-        const obj = first(10931);
+        const channelFollowerStats = first(10969).fetchChannelFollowerStats(closure_0);
+        const obj = first(10969);
       }
     } else {
       const _Date = Date;

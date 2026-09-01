@@ -1,16 +1,16 @@
-// Module ID: 7812
-// Function ID: 7813
+// Module ID: 7844
+// Function ID: 7845
 // Name: generateBlockedGroupRowData
-// Dependencies: [7810, 505, 12, 1363, 712, 4296, 7813, 2]
+// Dependencies: [7842, 505, 12, 1363, 712, 4326, 7845, 2]
 // Exports: generateBlockedGroupRowData
 
-// Module 7812 (generateBlockedGroupRowData)
+// Module 7844 (generateBlockedGroupRowData)
 import set from "set" /* 2 */;
 import sum from "sum" /* 505 */;
 import ThemesDefault from "Themes" /* 712 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import Changeset from "Changeset" /* 7810 */;
-import processColorOrThrow from "processColorOrThrow" /* 7813 */;
+import Changeset from "Changeset" /* 7842 */;
+import processColorOrThrow from "processColorOrThrow" /* 7845 */;
 import apply from "apply" /* 12 */;
 
 const SeparatorAction = Changeset.SeparatorAction;
@@ -28,8 +28,8 @@ let closure_5 = apply.memoize((arg0) => {
   }
   tmpResult = tmp(1363);
   if (tmpResult.isThemeDark(arg0)) {
-    let GREY1 = tmp(4296).hexWithOpacity(ThemesDefault.unsafe_rawColors.PRIMARY_300, 0.6);
-    const tmpResult1 = tmp(4296);
+    let GREY1 = tmp(4326).hexWithOpacity(ThemesDefault.unsafe_rawColors.PRIMARY_300, 0.6);
+    const tmpResult1 = tmp(4326);
   } else {
     GREY1 = UNSAFE_Colors.GREY1;
   }

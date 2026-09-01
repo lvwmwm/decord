@@ -1,10 +1,10 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11700
+// Function ID: 11701
 // Name: useNavigationTransitionEnded
 // Dependencies: [32, 19, 1498, 1500, 2]
 // Exports: default
 
-// Module 11667 (useNavigationTransitionEnded)
+// Module 11700 (useNavigationTransitionEnded)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { useAppLauncherNavigation } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;

@@ -1,17 +1,17 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9352
+// Function ID: 9353
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 676, 21, 4448, 5195, 1236, 5318, 4160, 9314, 5521, 4444, 7672, 1297, 4896, 5463, 5976, 2]
+// Dependencies: [5, 32, 19, 676, 21, 4478, 5227, 1236, 5350, 4190, 9353, 5553, 4474, 7704, 1297, 4928, 5495, 6008, 2]
 // Exports: default
 
-// Module 9313 (FederatedSocialModal)
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5195 */;
+// Module 9352 (FederatedSocialModal)
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5227 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { WebBrowserType } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
@@ -34,7 +34,7 @@ export default function FederatedSocialModal(platformType) {
   let obj = { headerTitle: null, headerLeft: null, render: null };
   let intl2 = _require(1236).intl;
   obj[0] = intl2.formatToPlainString(_require(1236).t["ImMhq+"], { serviceName: name });
-  obj[1] = _require(5463).getHeaderBackButton(platformType.onClose);
+  obj[1] = _require(5495).getHeaderBackButton(platformType.onClose);
   obj[2] = function render() {
     ({ location: closure_0, successRedirect: closure_1, platformType } = platformType);
     const onClose = platformType.onClose;
@@ -55,7 +55,7 @@ export default function FederatedSocialModal(platformType) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -194,5 +194,5 @@ export default function FederatedSocialModal(platformType) {
     return closure_1_8(platformType(closure_1_2[11]).SafeAreaPaddingView, obj);
   };
   screens[0] = obj;
-  return callback(_require(5976).Navigator, { initialRouteName: "root", screens });
+  return callback(_require(6008).Navigator, { initialRouteName: "root", screens });
 };

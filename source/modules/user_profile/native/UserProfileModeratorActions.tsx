@@ -1,25 +1,25 @@
-// Module ID: 12446
-// Function ID: 12447
+// Module ID: 12479
+// Function ID: 12480
 // Name: ModeratorActionRow
-// Dependencies: [19, 5333, 1387, 1982, 1992, 1909, 4091, 4467, 676, 4079, 21, 4448, 712, 5567, 8526, 4415, 9203, 589, 6084, 11370, 1395, 8396, 4642, 4636, 4634, 4096, 1236, 9969, 8637, 9971, 8331, 5018, 10929, 2009, 5425, 6208, 4691, 11371, 1399, 11280, 4080, 11388, 11374, 9777, 10049, 9773, 12061, 7593, 4389, 11390, 9334, 11392, 12447, 9033, 7477, 5968, 5960, 2]
+// Dependencies: [19, 5365, 1387, 1982, 1992, 1909, 4121, 4497, 676, 4109, 21, 4478, 712, 5599, 8558, 4445, 9242, 589, 6116, 11408, 1395, 8428, 4674, 4668, 4666, 4126, 1236, 10008, 8669, 10010, 8363, 5050, 10967, 2009, 5457, 6240, 4723, 11409, 1399, 11317, 4110, 11426, 11412, 9816, 10088, 9812, 12094, 7625, 4419, 11428, 9373, 11430, 12480, 9071, 7509, 6000, 5992, 2]
 // Exports: default
 
-// Module 12446 (ModeratorActionRow)
+// Module 12479 (ModeratorActionRow)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import TableRowInner from "TableRowInner" /* 5567 */;
-import closure_4 from "buildStageChannelUserRoles" /* 5333 */;
+import TableRowInner from "TableRowInner" /* 5599 */;
+import closure_4 from "buildStageChannelUserRoles" /* 5365 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
 import closure_6 from "comparator" /* 1982 */;
 import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
 import closure_8 from "trackCommunicationDisabled" /* 1992 */;
 import closure_9 from "createGuildRecordFromRust" /* 1909 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_11 from "updateVoiceState" /* 4467 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_11 from "updateVoiceState" /* 4497 */;
 import ME from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4079 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4109 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function ModeratorActionRow(isDestructive) {
@@ -352,7 +352,7 @@ export default function UserProfileModeratorActions(user) {
               dependencyMap();
             },
             onRemove() {
-              let arr = callback(4691);
+              let arr = callback(4723);
               arr = arr.pop();
             }
           };

@@ -1,9 +1,9 @@
-// Module ID: 11309
-// Function ID: 11310
+// Module ID: 11347
+// Function ID: 11348
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11309 (metadata)
+// Module 11347 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/orbs/quest_reward_mobile_bg_static.png.js");

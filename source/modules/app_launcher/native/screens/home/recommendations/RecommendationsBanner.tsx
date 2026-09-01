@@ -1,20 +1,20 @@
-// Module ID: 11631
-// Function ID: 11632
-// Dependencies: [19, 17, 1930, 676, 21, 4448, 9012, 11623, 9582, 5461, 8082, 8520, 1431, 8009, 2]
+// Module ID: 11664
+// Function ID: 11665
+// Dependencies: [19, 17, 1935, 676, 21, 4478, 9049, 11656, 9621, 5493, 8114, 8552, 1431, 8041, 2]
 
-// Module 11631
+// Module 11664
 import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import preloadDefault from "preload" /* 5461 */;
-import hasFetchedColorsDefault from "hasFetchedColors" /* 8009 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8082 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8520 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9582 */;
+import preloadDefault from "preload" /* 5493 */;
+import hasFetchedColorsDefault from "hasFetchedColors" /* 8041 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8114 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8552 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 9621 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "createdAt" /* 1930 */;
+import closure_5 from "createdAt" /* 1935 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -23,8 +23,8 @@ let closure_9 = createCacheKey.createStyles({ imageContainer: { width: "100%", h
 let closure_10 = importAllResult.memo((applicationId) => {
   let heroMediaDimensions;
   importDefault = undefined;
-  let obj = heroMediaDimensions(9012);
-  obj1 = heroMediaDimensions(11623);
+  let obj = heroMediaDimensions(9049);
+  obj1 = heroMediaDimensions(11656);
   heroMediaDimensions = obj1.useHeroMediaDimensions({ width: obj.useRequiredAppLauncherContext().width });
   obj = { applicationId: applicationId.applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj);

@@ -1,10 +1,10 @@
-// Module ID: 7396
-// Function ID: 7397
+// Module ID: 7428
+// Function ID: 7429
 // Name: regExp
 // Dependencies: [2]
 // Exports: default
 
-// Module 7396 (regExp)
+// Module 7428 (regExp)
 import set from "set" /* 2 */;
 
 const regExp = new RegExp("^" + "@silent" + "(\\s|$)");

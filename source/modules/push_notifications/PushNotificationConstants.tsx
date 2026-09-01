@@ -1,10 +1,10 @@
-// Module ID: 6023
-// Function ID: 6024
+// Module ID: 6055
+// Function ID: 6056
 // Name: str2
 // Dependencies: [1625, 1624, 500, 2]
 // Exports: getDevicePushProvider
 
-// Module 6023 (str2)
+// Module 6055 (str2)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import getConstants from "getConstants" /* 1625 */;

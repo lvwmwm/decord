@@ -1,14 +1,14 @@
-// Module ID: 15175
-// Function ID: 15176
+// Module ID: 15208
+// Function ID: 15209
 // Name: RecordPlayerIcon
-// Dependencies: [19, 21, 712, 4166, 15176, 2]
+// Dependencies: [19, 21, 712, 4196, 15209, 2]
 // Exports: RecordPlayerIcon
 
-// Module 15175 (RecordPlayerIcon)
+// Module 15208 (RecordPlayerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 15176 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 15209 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

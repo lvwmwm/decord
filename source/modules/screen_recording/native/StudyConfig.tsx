@@ -1,10 +1,10 @@
-// Module ID: 15491
-// Function ID: 15492
+// Module ID: 15526
+// Function ID: 15527
 // Name: SURVEY_CONFIGS
 // Dependencies: [2]
 // Exports: getAvailableSurveys, getSurveyConfig, getSurveyConfigSafe
 
-// Module 15491 (SURVEY_CONFIGS)
+// Module 15526 (SURVEY_CONFIGS)
 import set from "set" /* 2 */;
 
 const obj = {};

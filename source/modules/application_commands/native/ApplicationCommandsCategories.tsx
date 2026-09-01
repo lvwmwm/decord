@@ -1,18 +1,18 @@
-// Module ID: 11934
-// Function ID: 11935
+// Module ID: 11967
+// Function ID: 11968
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 1992, 11931, 21, 4448, 712, 589, 11765, 5461, 5036, 1236, 4416, 4417, 2]
+// Dependencies: [19, 17, 1992, 11964, 21, 4478, 712, 589, 11798, 5493, 5068, 1236, 4446, 4447, 2]
 // Exports: default
 
-// Module 11934 (ApplicationCommandsCategories)
+// Module 11967 (ApplicationCommandsCategories)
 import ThemesDefault from "Themes" /* 712 */;
-import preloadDefault from "preload" /* 5461 */;
+import preloadDefault from "preload" /* 5493 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import ICON_SIZE from "ICON_SIZE" /* 11931 */;
+import ICON_SIZE from "ICON_SIZE" /* 11964 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -77,7 +77,7 @@ let closure_10 = importAllResult.memo((section) => {
   obj[2] = formatToPlainStringResult;
   const items2 = [tmp.item, active ? tmp.activeItem : tmp.fadedItem];
   obj[3] = <stateFromStores style={items2}>{tmp6}</stateFromStores>;
-  return jsx(section(5036).PressableOpacity, {
+  return jsx(section(5068).PressableOpacity, {
     onPress() {
       return callback(closure_2);
     },

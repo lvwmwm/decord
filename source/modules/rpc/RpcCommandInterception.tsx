@@ -1,10 +1,10 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 14181
+// Function ID: 14182
 // Name: setRpcCommandInterceptor
 // Dependencies: [2]
 // Exports: interceptRpcCommand, setRpcCommandInterceptor
 
-// Module 14148 (setRpcCommandInterceptor)
+// Module 14181 (setRpcCommandInterceptor)
 import set from "set" /* 2 */;
 
 let c0 = null;

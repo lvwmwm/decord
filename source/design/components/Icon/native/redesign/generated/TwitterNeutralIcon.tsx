@@ -1,14 +1,14 @@
-// Module ID: 11890
-// Function ID: 11891
+// Module ID: 11923
+// Function ID: 11924
 // Name: TwitterNeutralIcon
-// Dependencies: [19, 21, 712, 4166, 11891, 2]
+// Dependencies: [19, 21, 712, 4196, 11924, 2]
 // Exports: TwitterNeutralIcon
 
-// Module 11890 (TwitterNeutralIcon)
+// Module 11923 (TwitterNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 11891 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 11924 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

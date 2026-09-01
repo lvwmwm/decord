@@ -1,23 +1,23 @@
-// Module ID: 10028
-// Function ID: 10029
+// Module ID: 10067
+// Function ID: 10068
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 4499, 5331, 7125, 676, 4698, 21, 4448, 712, 4296, 1493, 589, 5051, 4547, 1351, 1236, 1297, 8331, 8349, 500, 2]
+// Dependencies: [5, 32, 19, 17, 4529, 5363, 7157, 676, 4730, 21, 4478, 712, 4326, 1493, 589, 5083, 4579, 1351, 1236, 1297, 8363, 8381, 500, 2]
 // Exports: default
 
-// Module 10028 (VoiceSensitivity)
+// Module 10067 (VoiceSensitivity)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_8 from "anyoneHasFlagInContext" /* 5331 */;
-import closure_9 from "getState" /* 7125 */;
+import closure_7 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_8 from "anyoneHasFlagInContext" /* 5363 */;
+import closure_9 from "getState" /* 7157 */;
 import { AppStates } from "ME" /* 676 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4698 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
-import hexToRgba from "hexToRgba" /* 4296 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
+import hexToRgba from "hexToRgba" /* 4326 */;
 
 const require = arg1;
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
@@ -112,7 +112,7 @@ export default function VoiceSensitivity(auto) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -153,7 +153,7 @@ export default function VoiceSensitivity(auto) {
                 mediaEngine.on(closure_2_0(closure_2_2[16]).MediaEngineEvent.VoiceActivity, closure_1_12);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             c2 = tmp;

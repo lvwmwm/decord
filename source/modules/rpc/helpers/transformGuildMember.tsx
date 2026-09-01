@@ -1,10 +1,10 @@
-// Module ID: 14141
-// Function ID: 14142
+// Module ID: 14174
+// Function ID: 14175
 // Name: transformGuildMember
 // Dependencies: [1898, 2]
 // Exports: default
 
-// Module 14141 (transformGuildMember)
+// Module 14174 (transformGuildMember)
 import set from "set" /* 2 */;
 import parseAvatarDecorationData from "parseAvatarDecorationData" /* 1898 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 16436
-// Function ID: 16437
+// Module ID: 16472
+// Function ID: 16473
 // Name: useSortedSpamMessageRequests
-// Dependencies: [19, 1387, 1922, 6035, 589, 16426, 2]
+// Dependencies: [19, 1387, 1922, 6067, 589, 16462, 2]
 // Exports: default
 
-// Module 16436 (useSortedSpamMessageRequests)
+// Module 16472 (useSortedSpamMessageRequests)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "processChannel" /* 6035 */;
+import closure_5 from "processChannel" /* 6067 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/message_request/hooks/useSortedSpamMessageRequests.tsx");

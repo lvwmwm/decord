@@ -1,12 +1,12 @@
-// Module ID: 14323
-// Function ID: 14324
+// Module ID: 14356
+// Function ID: 14357
 // Name: useIsSafetyHubLoading
-// Dependencies: [11416, 589, 2]
+// Dependencies: [8701, 589, 2]
 // Exports: default
 
-// Module 14323 (useIsSafetyHubLoading)
+// Module 14356 (useIsSafetyHubLoading)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 11416 */;
+import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8701 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubLoading.tsx");

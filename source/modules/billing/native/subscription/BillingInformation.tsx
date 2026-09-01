@@ -1,10 +1,10 @@
-// Module ID: 12975
-// Function ID: 12976
+// Module ID: 13008
+// Function ID: 13009
 // Name: getBillingInformationStringNative
-// Dependencies: [5, 676, 4109, 501, 1236, 10756, 2]
+// Dependencies: [5, 676, 4139, 501, 1236, 10794, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 12975 (getBillingInformationStringNative)
+// Module 13008 (getBillingInformationStringNative)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { SubscriptionStatusTypes } from "ME" /* 676 */;
 
@@ -20,7 +20,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
     flag = false;
   }
   let _require;
-  let obj = _require(4109);
+  let obj = _require(4139);
   let billingInformationString = obj.getBillingInformationString(subscription, first, tmp, flag, fractionalPremiumInfo);
   let tmp5 = _require(501).isIOS() && subscription.isPurchasedViaApple;
   if (tmp5) {
@@ -42,7 +42,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -74,7 +74,7 @@ export const getBillingInformationStringNative = function getBillingInformationS
             return obj;
           } else {
             v0 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           v0 = tmp;

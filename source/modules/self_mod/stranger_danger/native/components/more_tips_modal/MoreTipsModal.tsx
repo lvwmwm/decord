@@ -1,22 +1,22 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 11012
+// Function ID: 11013
 // Name: MoreTipsModalScreen
-// Dependencies: [19, 17, 10615, 676, 21, 4448, 712, 10976, 4444, 1236, 10977, 6205, 4691, 7732, 1297, 1628, 647, 10970, 7315, 7320, 5976, 2]
+// Dependencies: [19, 17, 10653, 676, 21, 4478, 712, 11013, 4474, 1236, 11014, 6237, 4723, 7764, 1297, 1628, 647, 11007, 7347, 7352, 6008, 2]
 // Exports: default
 
-// Module 10975 (MoreTipsModalScreen)
+// Module 11012 (MoreTipsModalScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import Text from "Text" /* 4444 */;
-import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 10976 */;
-import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 10977 */;
+import Text from "Text" /* 4474 */;
+import SafetyTipsContainerDefault from "SafetyTipsContainer" /* 11013 */;
+import WasThisHelpfulSectionDefault from "WasThisHelpfulSection" /* 11014 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 10615 */;
+import closure_6 from "handleConnectionOpen" /* 10653 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function MoreTipsModalScreen(learnMore) {
@@ -122,5 +122,5 @@ export default function MoreTipsModal(channelId) {
       return closure_1_8(closure_1_11, { channelId: c1, warningId: c2, senderId: c3, description: c4, safetyTips: c5, actionItems: c6, learnMore: c7 });
     }
   };
-  return callback(_require(5976).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
+  return callback(_require(6008).Navigator, { screens: { MORE_TIPS }, initialRouteName: "MORE_TIPS", headerStatusBarHeight: useSafeAreaInsetsDefault().top });
 };

@@ -1,17 +1,17 @@
-// Module ID: 10082
-// Function ID: 10083
+// Module ID: 10121
+// Function ID: 10122
 // Name: updateStats
-// Dependencies: [32, 4499, 1922, 676, 4512, 10083, 4547, 709, 589, 2]
+// Dependencies: [32, 4529, 1922, 676, 4542, 10122, 4579, 709, 589, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 10082 (updateStats)
+// Module 10121 (updateStats)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import openAll from "open" /* 10083 */;
+import openAll from "open" /* 10122 */;
 import closure_4 from "_slicedToArray" /* 32 */;
-import closure_5 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_5 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import DesktopSources from "DesktopSources" /* 4512 */;
+import DesktopSources from "DesktopSources" /* 4542 */;
 
 const require = arg1;
 function updateStats(arr, arg1, timestamp) {
@@ -207,7 +207,7 @@ prototype2["getInboundStats"] = function getInboundStats(arg0, context) {
   if (found != null) {
     name = found.codec.name;
   }
-  obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: "<string:285213222>" };
+  obj = { codec: name, resolution: null, bitrateEstimate: "Array", fps: true };
   let resolution;
   if (found != null) {
     resolution = found.resolution;
@@ -342,7 +342,7 @@ obj = {
       if (0 !== path.length) {
         replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
         if (null != replayConnection) {
-          replayConnection.on(replayConnection(4547).BaseConnectionEvent.Video, (userId) => {
+          replayConnection.on(replayConnection(4579).BaseConnectionEvent.Video, (userId) => {
             let num = arg3;
             obj = closure_1_1(closure_1_3[7]);
             obj = { type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT", mediaEngineConnectionId: replayConnection.mediaEngineConnectionId, userId, videoSsrc: null, streamId: null };

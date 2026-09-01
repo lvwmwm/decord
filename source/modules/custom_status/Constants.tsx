@@ -1,13 +1,13 @@
-// Module ID: 9054
-// Function ID: 9055
+// Module ID: 9092
+// Function ID: 9093
 // Name: StatusTypes
-// Dependencies: [505, 4292, 1236, 2]
+// Dependencies: [505, 4322, 1236, 2]
 
-// Module 9054 (StatusTypes)
+// Module 9092 (StatusTypes)
 import set from "set" /* 2 */;
 import sum from "sum" /* 505 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import nameFromUser from "nameFromUser" /* 4292 */;
+import nameFromUser from "nameFromUser" /* 4322 */;
 
 const StatusTypes = sum.StatusTypes;
 const frozen = Object.freeze({ MINUTES_30: 1800000, HOURS_1: 3600000, HOURS_4: 14400000, TODAY: "TODAY", DONT_CLEAR: "DONT_CLEAR" });

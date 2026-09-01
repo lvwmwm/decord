@@ -1,14 +1,14 @@
-// Module ID: 13075
-// Function ID: 13076
+// Module ID: 13108
+// Function ID: 13109
 // Name: useReferralProgramEligibleUsers
-// Dependencies: [5, 32, 19, 7165, 589, 38, 7166, 8084, 2]
+// Dependencies: [5, 32, 19, 7197, 589, 38, 7198, 8116, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 13075 (useReferralProgramEligibleUsers)
+// Module 13108 (useReferralProgramEligibleUsers)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "emitChanges" /* 7165 */;
+import closure_6 from "emitChanges" /* 7197 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/premium/referral_program/hooks/useReferralProgramEligibleUsers.tsx");
@@ -43,7 +43,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -93,7 +93,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
                 let tmp34 = v0(Array.from(closure_1_0.values()));
                 let num5 = 3;
                 v0 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 let tmp46 = dependencyMap;
                 let tmp47 = closure_3;
@@ -200,7 +200,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           while (true) {

@@ -1,11 +1,11 @@
-// Module ID: 7220
-// Function ID: 7221
+// Module ID: 7252
+// Function ID: 7253
 // Name: isSpamSupported
-// Dependencies: [1922, 676, 7221, 2]
+// Dependencies: [1922, 676, 7253, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 7220 (isSpamSupported)
-import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7221 */;
+// Module 7252 (isSpamSupported)
+import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7253 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 

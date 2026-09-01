@@ -1,31 +1,31 @@
-// Module ID: 13232
-// Function ID: 13233
+// Module ID: 13265
+// Function ID: 13266
 // Name: PremiumGuildTierPill
-// Dependencies: [19, 17, 1302, 676, 21, 4448, 712, 5352, 1363, 13233, 13234, 13235, 13236, 13237, 13238, 13239, 13240, 1297, 4339, 589, 5972, 2]
+// Dependencies: [19, 17, 1302, 676, 21, 4478, 712, 5384, 1363, 13266, 13267, 13268, 13269, 13270, 13271, 13272, 13273, 1297, 4369, 589, 6004, 2]
 // Exports: default
 
-// Module 13232 (PremiumGuildTierPill)
+// Module 13265 (PremiumGuildTierPill)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4339 */;
-import GuildIconSizes from "GuildIconSizes" /* 5972 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 5972 */;
-import registerAssetDefault from "registerAsset" /* 13233 */;
-import registerAssetDefault2 from "registerAsset" /* 13234 */;
-import registerAssetDefault3 from "registerAsset" /* 13235 */;
-import registerAssetDefault4 from "registerAsset" /* 13236 */;
-import registerAssetDefault5 from "registerAsset" /* 13237 */;
-import registerAssetDefault6 from "registerAsset" /* 13238 */;
-import registerAssetDefault7 from "registerAsset" /* 13239 */;
-import registerAssetDefault8 from "registerAsset" /* 13240 */;
+import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4369 */;
+import GuildIconSizes from "GuildIconSizes" /* 6004 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
+import registerAssetDefault from "registerAsset" /* 13266 */;
+import registerAssetDefault2 from "registerAsset" /* 13267 */;
+import registerAssetDefault3 from "registerAsset" /* 13268 */;
+import registerAssetDefault4 from "registerAsset" /* 13269 */;
+import registerAssetDefault5 from "registerAsset" /* 13270 */;
+import registerAssetDefault6 from "registerAsset" /* 13271 */;
+import registerAssetDefault7 from "registerAsset" /* 13272 */;
+import registerAssetDefault8 from "registerAsset" /* 13273 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "handleThemeChange" /* 1302 */;
 import { BoostedGuildTiers } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function PremiumGuildTierPill(arg0) {

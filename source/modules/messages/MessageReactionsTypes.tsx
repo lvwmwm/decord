@@ -1,9 +1,9 @@
-// Module ID: 7475
-// Function ID: 7476
+// Module ID: 7507
+// Function ID: 7508
 // Name: ReactionTypes
 // Dependencies: [2]
 
-// Module 7475 (ReactionTypes)
+// Module 7507 (ReactionTypes)
 import set from "set" /* 2 */;
 
 const obj = { NORMAL: 0, [0]: "NORMAL", BURST: 1, [1]: "BURST", VOTE: 2, [2]: "VOTE" };

@@ -1,27 +1,27 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15603
+// Function ID: 15604
 // Name: getGuildsComponent
-// Dependencies: [19, 17, 1981, 4269, 10793, 21, 7790, 15569, 15954, 16002, 589, 16076, 8591, 5976, 5908, 2]
+// Dependencies: [19, 17, 1981, 4299, 10831, 21, 7822, 15604, 15989, 16037, 589, 16111, 8623, 6008, 5940, 2]
 
-// Module 15568 (getGuildsComponent)
-import goBack from "goBack" /* 15954 */;
+// Module 15603 (getGuildsComponent)
+import goBack from "goBack" /* 15989 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "handleConnectionOpen" /* 1981 */;
-import closure_7 from "handleConnectionOpen" /* 4269 */;
-import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 10793 */;
+import closure_7 from "handleConnectionOpen" /* 4299 */;
+import { YouBarNavigatorScreens } from "MODE_CHANGE_PHYSICS" /* 10831 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7790 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7822 */;
 
 require = arg1;
 function getGuildsComponent() {
-  return require(15569).default;
+  return require(15604).default;
 }
 function getNotificationsComponent() {
   return goBack.ThemedNotifications;
 }
 function getICYMIComponent() {
-  return require(16002) /* ICYMINavigator */.default;
+  return require(16037) /* ICYMINavigator */.default;
 }
 let c3 = importAllResult;
 ({ StyleSheet: c4, View: c5 } = get_ActivityIndicator);

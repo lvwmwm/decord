@@ -1,10 +1,10 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 15134
+// Function ID: 15135
 // Name: _emailSupport
-// Dependencies: [5, 1996, 1625, 4427, 4160, 1995, 2]
+// Dependencies: [5, 1996, 1625, 4457, 4190, 1995, 2]
 // Exports: emailSupport
 
-// Module 15101 (_emailSupport)
+// Module 15134 (_emailSupport)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_getSystemLocale" /* 1996 */;
 
@@ -23,7 +23,7 @@ function _emailSupport() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -38,7 +38,7 @@ function _emailSupport() {
             obj[0] = arg1;
             return obj;
           } else {
-            const tmp10 = closure_1_1(4160);
+            const tmp10 = closure_1_1(4190);
             closure_1 = tmp10;
             const openURL = tmp10.openURL;
             obj1 = closure_1_1(1995);
@@ -70,7 +70,7 @@ function _emailSupport() {
         } else {
           openURL(arg1);
           dependencyMap = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         dependencyMap = tmp;

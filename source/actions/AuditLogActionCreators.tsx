@@ -1,13 +1,13 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17130
+// Function ID: 17131
 // Name: makeRequest
-// Dependencies: [17084, 676, 530, 709, 2]
+// Dependencies: [17120, 676, 530, 709, 2]
 // Exports: fetchLogs, fetchNextLogPage, filterByAction, filterByTargetId, filterByUserId
 
-// Module 17094 (makeRequest)
+// Module 17130 (makeRequest)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "AuditLogActions" /* 17084 */;
+import closure_3 from "AuditLogActions" /* 17120 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -121,7 +121,7 @@ export const filterByUserId = function filterByUserId(id, guildId) {
       if (!tmp5) {
         if (null != guildId) {
           dispatcherDefault.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          obj = { userId: null, action: "Array", targetId: "accessibilityLabel" };
+          obj = { userId: null, action: "Array", targetId: "accessible" };
           obj[0] = id;
           const tmp10Result = dispatcherDefault;
           nextPromise = makeRequest(guildId, obj).then((body) => {
@@ -145,7 +145,7 @@ export const filterByTargetId = function filterByTargetId(arg0, arg1) {
       if (!tmp5) {
         if (null != arg1) {
           dispatcherDefault.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          obj = { userId: null, action: "Array", targetId: -64684031 };
+          obj = { userId: null, action: "Array", targetId: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000055359227687093 };
           obj[2] = arg0;
           const tmp10Result = dispatcherDefault;
           nextPromise = makeRequest(arg1, obj).then((body) => {

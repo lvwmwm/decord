@@ -1,11 +1,11 @@
-// Module ID: 4118
-// Function ID: 4119
+// Module ID: 4148
+// Function ID: 4149
 // Name: createFromServer
-// Dependencies: [1931, 4119, 2]
+// Dependencies: [1936, 4149, 2]
 
-// Module 4118 (createFromServer)
-import toJSDefault from "toJS" /* 1931 */;
-import coalesceInvoiceItems from "coalesceInvoiceItems" /* 4119 */;
+// Module 4148 (createFromServer)
+import toJSDefault from "toJS" /* 1936 */;
+import coalesceInvoiceItems from "coalesceInvoiceItems" /* 4149 */;
 
 require = arg1;
 toJSDefault;

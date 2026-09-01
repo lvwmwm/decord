@@ -1,15 +1,15 @@
-// Module ID: 8869
-// Function ID: 8870
+// Module ID: 8906
+// Function ID: 8907
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1996, 8870, 7276, 676, 687, 709, 4723, 4347, 2]
+// Dependencies: [5, 1996, 8907, 7308, 676, 687, 709, 4755, 4377, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8869 (_maybeFetchProductsWithSkus)
+// Module 8906 (_maybeFetchProductsWithSkus)
 import setDefault from "set" /* 687 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "getFetchState" /* 8870 */;
-import closure_6 from "fromServer" /* 7276 */;
+import closure_5 from "getFetchState" /* 8907 */;
+import closure_6 from "fromServer" /* 7308 */;
 import { Endpoints } from "ME" /* 676 */;
 
 const require = arg1;
@@ -32,7 +32,7 @@ function _maybeFetchProductsWithSkus() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -59,7 +59,7 @@ function _maybeFetchProductsWithSkus() {
               let body;
               c5 = 1;
               fromServer = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp7) {
@@ -204,7 +204,7 @@ function _maybeFetchProductsBySkuIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -231,7 +231,7 @@ function _maybeFetchProductsBySkuIds() {
               let body;
               c5 = 1;
               fromServer = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp7) {

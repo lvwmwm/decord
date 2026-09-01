@@ -1,14 +1,14 @@
-// Module ID: 7921
-// Function ID: 7922
+// Module ID: 7953
+// Function ID: 7954
 // Name: createInGameMessageNuxSystemMessage
-// Dependencies: [4489, 676, 7830, 7837, 7839, 1995, 1236, 7841, 2]
+// Dependencies: [4519, 676, 7862, 7869, 7871, 1995, 1236, 7873, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 7921 (createInGameMessageNuxSystemMessage)
+// Module 7953 (createInGameMessageNuxSystemMessage)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import resultDefault from "result" /* 7830 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7837 */;
-import closure_3 from "addApplication" /* 4489 */;
+import resultDefault from "result" /* 7862 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7869 */;
+import closure_3 from "addApplication" /* 4519 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 
 require = arg1;
@@ -33,7 +33,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = roleStyle;
-    obj[1] = tmp(7839)(obj);
+    obj[1] = tmp(7871)(obj);
     obj[2] = application.name;
     obj1 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
     obj1[1] = tmp(1995).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
@@ -42,7 +42,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     const obj2 = { content: null };
     const intl = getSystemLocale.intl;
     obj2[0] = intl.formatToParts(getSystemLocale.t["92erOB"], obj);
-    const merged = Object.assign(tmp(7841)(message));
+    const merged = Object.assign(tmp(7873)(message));
     return obj2;
   }
   tmp3 = resultDefault(theme);

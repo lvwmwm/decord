@@ -1,10 +1,10 @@
-// Module ID: 9403
-// Function ID: 9404
+// Module ID: 9442
+// Function ID: 9443
 // Name: getIsInParty
 // Dependencies: [2]
 // Exports: getIsInParty
 
-// Module 9403 (getIsInParty)
+// Module 9442 (getIsInParty)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/getIsInParty.tsx");

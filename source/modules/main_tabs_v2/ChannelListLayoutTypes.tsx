@@ -1,9 +1,9 @@
-// Module ID: 4141
-// Function ID: 4142
+// Module ID: 4171
+// Function ID: 4172
 // Name: ChannelListLayoutTypes
 // Dependencies: [2]
 
-// Module 4141 (ChannelListLayoutTypes)
+// Module 4171 (ChannelListLayoutTypes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/main_tabs_v2/ChannelListLayoutTypes.tsx");

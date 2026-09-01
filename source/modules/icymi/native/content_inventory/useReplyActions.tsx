@@ -1,17 +1,17 @@
-// Module ID: 16059
-// Function ID: 16060
+// Module ID: 16094
+// Function ID: 16095
 // Name: useReplyActions
-// Dependencies: [5, 19, 1387, 4822, 1922, 1925, 4441, 21, 589, 8007, 8131, 4461, 16060, 4292, 7395, 7169, 16056, 4415, 4164, 1236, 14460, 8590, 9060, 7475, 16060, 2009, 2]
+// Dependencies: [5, 19, 1387, 4854, 1922, 1925, 4471, 21, 589, 8039, 8163, 4491, 16095, 4322, 7427, 7201, 16091, 4445, 4194, 1236, 14493, 8622, 9098, 7507, 16095, 2009, 2]
 // Exports: useReplyActions
 
-// Module 16059 (useReplyActions)
+// Module 16094 (useReplyActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import { DraftType } from "handleChanged" /* 4822 */;
+import { DraftType } from "handleChanged" /* 4854 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import { EmojiIntention } from "set" /* 1925 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4441 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -78,7 +78,7 @@ export const useReplyActions = function useReplyActions(content) {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {

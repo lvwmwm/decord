@@ -1,9 +1,9 @@
-// Module ID: 13268
-// Function ID: 13269
+// Module ID: 13301
+// Function ID: 13302
 // Name: CLOSED
 // Dependencies: [2]
 
-// Module 13268 (CLOSED)
+// Module 13301 (CLOSED)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/gateway/ConnectionState.tsx");

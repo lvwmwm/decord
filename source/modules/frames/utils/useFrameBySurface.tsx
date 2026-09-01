@@ -1,11 +1,11 @@
-// Module ID: 16164
-// Function ID: 16165
+// Module ID: 16199
+// Function ID: 16200
 // Name: useFrameBySurface
-// Dependencies: [9425, 589, 2]
+// Dependencies: [9464, 589, 2]
 // Exports: default
 
-// Module 16164 (useFrameBySurface)
-import closure_2 from "map" /* 9425 */;
+// Module 16199 (useFrameBySurface)
+import closure_2 from "map" /* 9464 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/frames/utils/useFrameBySurface.tsx");

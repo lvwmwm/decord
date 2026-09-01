@@ -1,14 +1,14 @@
-// Module ID: 10801
-// Function ID: 10802
+// Module ID: 10839
+// Function ID: 10840
 // Name: BalanceWidgetPill
-// Dependencies: [2, 10802, 10811, 10809, 10812]
+// Dependencies: [2, 10840, 10849, 10847, 10850]
 
-// Module 10801 (BalanceWidgetPill)
+// Module 10839 (BalanceWidgetPill)
 import set from "set" /* 2 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 10802 */;
-import BalanceCounter from "BalanceCounter" /* 10809 */;
-import BalanceWidgetPillButton from "BalanceWidgetPillButton" /* 10811 */;
-import refDefault from "ref" /* 10812 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 10840 */;
+import BalanceCounter from "BalanceCounter" /* 10847 */;
+import BalanceWidgetPillButton from "BalanceWidgetPillButton" /* 10849 */;
+import refDefault from "ref" /* 10850 */;
 
 const result = set.fileFinishedImporting("modules/virtual_currency/native/index.tsx");
 

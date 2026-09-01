@@ -1,53 +1,53 @@
-// Module ID: 7169
-// Function ID: 7170
+// Module ID: 7201
+// Function ID: 7202
 // Name: trackInvite
-// Dependencies: [32, 5, 5189, 7170, 7171, 7172, 7391, 7393, 7308, 5412, 4470, 1218, 1387, 7394, 1909, 4432, 4703, 4091, 4537, 4463, 7399, 1922, 676, 7401, 6139, 4441, 17, 3, 4431, 7402, 4436, 7405, 7406, 4668, 7411, 5360, 7431, 698, 4433, 7448, 7451, 4720, 7453, 1236, 1995, 5042, 709, 7465, 4673, 7466, 7313, 530, 4705, 6036, 9, 7201, 5184, 11, 1956, 1976, 7190, 5187, 7467, 7468, 7471, 7472, 4109, 7396, 1399, 6082, 7473, 7542, 7546, 7549, 7555, 7556, 7560, 11233, 7630, 687, 7816, 1955, 7477, 1363, 10479, 4825, 2]
+// Dependencies: [32, 5, 5221, 7202, 7203, 7204, 7423, 7425, 7340, 5444, 4500, 1218, 1387, 7426, 1909, 4462, 4735, 4121, 4569, 4493, 7431, 1922, 676, 7433, 6171, 4471, 17, 3, 4461, 7434, 4466, 7437, 7438, 4700, 7443, 5392, 7463, 698, 4463, 7480, 7483, 4752, 7485, 1236, 1995, 5074, 709, 7497, 4705, 7498, 7345, 530, 4737, 6068, 9, 7233, 5216, 11, 1956, 1976, 7222, 5219, 7499, 7500, 7503, 7504, 4139, 7428, 1399, 6114, 7505, 7574, 7578, 7581, 7587, 7588, 7592, 11270, 7662, 687, 7848, 1955, 7509, 1363, 10517, 4857, 2]
 
-// Module 7169 (trackInvite)
+// Module 7201 (trackInvite)
 import timestampDefault from "timestamp" /* 3 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import hasFlag from "hasFlag" /* 1399 */;
 import combinedDefault from "combined" /* 1995 */;
-import getUncachedChannelPermissionsDefault from "getUncachedChannelPermissions" /* 4091 */;
-import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4109 */;
-import readSnowflake from "readSnowflake" /* 4433 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4668 */;
-import t2 from "t" /* 4673 */;
-import items2 from "items" /* 5042 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7313 */;
-import createMessage from "createMessage" /* 7465 */;
-import createMessageDefault from "createMessage" /* 7465 */;
-import snowflakeSequence from "snowflakeSequence" /* 7466 */;
-import getInviteURLDefault from "getInviteURL" /* 7471 */;
-import fetchAndReconcileGiftIntentDismissals from "fetchAndReconcileGiftIntentDismissals" /* 10479 */;
+import getUncachedChannelPermissionsDefault from "getUncachedChannelPermissions" /* 4121 */;
+import getPremiumPlanItemDefault from "getPremiumPlanItem" /* 4139 */;
+import readSnowflake from "readSnowflake" /* 4463 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
+import t2 from "t" /* 4705 */;
+import items2 from "items" /* 5074 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7345 */;
+import createMessage from "createMessage" /* 7497 */;
+import createMessageDefault from "createMessage" /* 7497 */;
+import snowflakeSequence from "snowflakeSequence" /* 7498 */;
+import getInviteURLDefault from "getInviteURL" /* 7503 */;
+import fetchAndReconcileGiftIntentDismissals from "fetchAndReconcileGiftIntentDismissals" /* 10517 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "_handleConnectionOpen" /* 5189 */;
-import closure_7 from "updateSubmittedGuildJoinRequestTotal" /* 7170 */;
-import closure_8 from "handleGuildTemplateResolveSuccess" /* 7171 */;
-import closure_9 from "trackRoundtrip" /* 7172 */;
-import closure_10 from "initialize" /* 7391 */;
-import closure_11 from "getState" /* 7393 */;
-import closure_12 from "processMessage" /* 7308 */;
-import { ReferencedMessageState } from "processMessage" /* 7308 */;
-import closure_14 from "loadSavedGuildStickers" /* 5412 */;
-import closure_15 from "reset" /* 4470 */;
+import closure_6 from "_handleConnectionOpen" /* 5221 */;
+import closure_7 from "updateSubmittedGuildJoinRequestTotal" /* 7202 */;
+import closure_8 from "handleGuildTemplateResolveSuccess" /* 7203 */;
+import closure_9 from "trackRoundtrip" /* 7204 */;
+import closure_10 from "initialize" /* 7423 */;
+import closure_11 from "getState" /* 7425 */;
+import closure_12 from "processMessage" /* 7340 */;
+import { ReferencedMessageState } from "processMessage" /* 7340 */;
+import closure_14 from "loadSavedGuildStickers" /* 5444 */;
+import closure_15 from "reset" /* 4500 */;
 import closure_16 from "fetchFingerprint" /* 1218 */;
 import closure_17 from "ensureGuildLoaded" /* 1387 */;
-import closure_18 from "initialize" /* 7394 */;
+import closure_18 from "initialize" /* 7426 */;
 import closure_19 from "createGuildRecordFromRust" /* 1909 */;
-import closure_20 from "updateInvite" /* 4432 */;
-import closure_21 from "reinjectEphemerals" /* 4703 */;
-import closure_22 from "sortActivity" /* 4537 */;
-import closure_23 from "generateOldThreadCutoff" /* 4463 */;
-import { SlowmodeType } from "setCooldown" /* 7399 */;
+import closure_20 from "updateInvite" /* 4462 */;
+import closure_21 from "reinjectEphemerals" /* 4735 */;
+import closure_22 from "sortActivity" /* 4569 */;
+import closure_23 from "generateOldThreadCutoff" /* 4493 */;
+import { SlowmodeType } from "setCooldown" /* 7431 */;
 import closure_25 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
-import { LinkType } from "LinkType" /* 7401 */;
-import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6139 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4441 */;
+import { LinkType } from "LinkType" /* 7433 */;
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6171 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4471 */;
 
 require = arg1;
 function trackInvite(channelId) {
@@ -61,7 +61,7 @@ function trackInvite(channelId) {
   const result = obj.parseExtraDataFromInviteKey(inviteKey);
   let result1 = null != invite;
   if (result1) {
-    let tmp3Result = tmp3(7448);
+    let tmp3Result = tmp3(7480);
     result1 = tmp3Result.isEmbeddedApplicationInvite(invite);
   }
   let id1;
@@ -72,7 +72,7 @@ function trackInvite(channelId) {
     }
   }
   if (tmp8) {
-    tmp3Result = tmp3(7406);
+    tmp3Result = tmp3(7438);
     const result2 = tmp3Result.trackAppEmbedLinkSent(id1, LinkType.ACTIVITY_INVITE, id);
   }
   let channel = store.getChannel(channelId.channelId);
@@ -113,14 +113,14 @@ function trackInvite(channelId) {
             STREAM = GDM_INVITE;
             if (lastActiveStream.channelId === channel.id) {
               obj.destination_user_id = lastActiveStream.ownerId;
-              const streamerApplication = tmp3(7451).getStreamerApplication(lastActiveStream, closure_22);
+              const streamerApplication = tmp3(7483).getStreamerApplication(lastActiveStream, closure_22);
               let id3 = null;
               if (null != streamerApplication) {
                 id3 = streamerApplication.id;
               }
               obj.application_id = id3;
               STREAM = constants3.STREAM;
-              const tmp3Result1 = tmp3(7451);
+              const tmp3Result1 = tmp3(7483);
             }
           }
         }
@@ -146,13 +146,13 @@ function trackInvite(channelId) {
     obj.message_id = messageId;
     obj.send_type = constants4.DIRECT_MESSAGE;
     obj.invite_guild_scheduled_event_id = result.guildScheduledEventId;
-    let inviteInstanceId = tmp3(4433).getInviteInstanceId(result.baseCode, messageId);
+    let inviteInstanceId = tmp3(4463).getInviteInstanceId(result.baseCode, messageId);
     if (inviteInstanceId == null) {
       inviteInstanceId = null;
     }
     obj.invite_instance_id = inviteInstanceId;
     const merged1 = Object.assign(overrideProperties);
-    const tmp3Result2 = tmp3(4433);
+    const tmp3Result2 = tmp3(4463);
     collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.INVITE_SENT, obj);
     const obj13 = collectGuildAnalyticsMetadataDefault;
   } else {
@@ -176,13 +176,13 @@ function trackInvite(channelId) {
       obj2.message_id = messageId;
       obj2.send_type = constants4.DIRECT_MESSAGE;
       obj2.invite_guild_scheduled_event_id = result.guildScheduledEventId;
-      let inviteInstanceId1 = tmp3(4433).getInviteInstanceId(result.baseCode, messageId);
+      let inviteInstanceId1 = tmp3(4463).getInviteInstanceId(result.baseCode, messageId);
       if (inviteInstanceId1 == null) {
         inviteInstanceId1 = null;
       }
       obj2.invite_instance_id = inviteInstanceId1;
       const merged3 = Object.assign(overrideProperties);
-      const tmp3Result3 = tmp3(4433);
+      const tmp3Result3 = tmp3(4463);
       collectGuildAnalyticsMetadataDefault.trackWithMetadata(constants.INVITE_SENT, obj2);
       const obj8 = collectGuildAnalyticsMetadataDefault;
     }
@@ -569,7 +569,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -611,14 +611,14 @@ let obj14 = {
           } else {
             closure_0 = arg1;
             if (closure_0.body.length > 0) {
-              obj = closure_1_0(4705);
+              obj = closure_1_0(4737);
               dependencyMap = 3;
               const obj5 = { value: null, done: true };
               obj5[0] = obj.createMessageRecord(closure_0.body[0]);
               return obj5;
             } else {
               dependencyMap = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp11) {
@@ -819,7 +819,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -841,8 +841,8 @@ let obj14 = {
               closure_2 = undefined;
               dependencyMap = undefined;
               basicChannel = closure_1_17.getBasicChannel(closure_1_0);
-              const orCreate = closure_1_1(5184).getOrCreate(closure_1_0);
-              const obj13 = closure_1_1(5184);
+              const orCreate = closure_1_1(5216).getOrCreate(closure_1_0);
+              const obj13 = closure_1_1(5216);
               const databaseResult = closure_1_1(1956).database();
               c1 = databaseResult;
               if (null != databaseResult) {
@@ -895,7 +895,7 @@ let obj14 = {
                 tmp30 = closure_2.connectionId === closure_1_6.lastTimeConnectedChanged();
               }
               dependencyMap = tmp30;
-              obj2 = closure_1_1(7201);
+              obj2 = closure_1_1(7233);
               const result = obj2.recordChannelFetchedLocal(basicChannel, c1, closure_2, dependencyMap, closure_4, closure_2.messages);
               let obj3 = closure_1_1(709);
               obj3 = { type: "LOCAL_MESSAGES_LOADED", guildId: null, channelId: null, users: null, members: null, messages: null, stale: null };
@@ -930,7 +930,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -965,7 +965,7 @@ let obj14 = {
                     orCreate = 1;
                     c3 = 1;
                     obj1 = { value: null, done: false };
-                    obj1[0] = obj2.tryLoadAsync(() => closure_2_1(7190).load(c1, basicChannel, c1));
+                    obj1[0] = obj2.tryLoadAsync(() => closure_2_1(7222).load(c1, basicChannel, c1));
                     return obj1;
                   }
                 }
@@ -1178,7 +1178,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1463,7 +1463,7 @@ let obj14 = {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -1858,7 +1858,7 @@ let obj14 = {
                 if (null == closure_18) {
                   c6 = 0;
                   c8 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   throwTypeErrorResult = inviteAnalyticsMetadata;
                   throwTypeErrorResult = closure_18;
@@ -1869,7 +1869,7 @@ let obj14 = {
                   if (closure_1_11) {
                     c6 = 0;
                     c8 = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                   if (null != attachments) {
                     closure_1_17.message.attachments = attachments.map((closure_0, closure_1) => callback(inviteAnalyticsMetadata[45]).getAttachmentPayload(closure_0, closure_1));
@@ -2587,7 +2587,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2622,7 +2622,7 @@ let obj14 = {
                   obj.track(constants2.MESSAGE_SWIPE_ACTION_SENT, obj);
                 }
               })(closure_1_1, closure_1_0);
-              obj1 = closure_1_1(7477);
+              obj1 = closure_1_1(7509);
               obj2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2671,18 +2671,18 @@ let obj14 = {
             obj2[4] = closure_0;
             obj2[5] = dependencyMap;
             const obj3 = { type: null, message: null };
-            obj3[0] = closure_1_0(7546).MessageDataType.EDIT;
+            obj3[0] = closure_1_0(7578).MessageDataType.EDIT;
             obj3[1] = obj2;
-            closure_1_1(7546).enqueue(obj3, (hasErr) => {
+            closure_1_1(7578).enqueue(obj3, (hasErr) => {
               hasErr = hasErr.hasErr;
               let hasItem = !hasErr;
               if (!hasErr) {
-                const AUTOMOD_ERROR_CODES = closure_2_0(7816).AUTOMOD_ERROR_CODES;
+                const AUTOMOD_ERROR_CODES = closure_2_0(7848).AUTOMOD_ERROR_CODES;
                 hasItem = AUTOMOD_ERROR_CODES.has(hasErr.body.code);
               }
               if (hasItem) {
                 let obj = { type: null, message: null };
-                obj[0] = closure_2_0(7546).MessageDataType.EDIT;
+                obj[0] = closure_2_0(7578).MessageDataType.EDIT;
                 obj[1] = obj2;
                 obj1 = closure_2_1(709);
                 obj = { type: "MESSAGE_EDIT_FAILED_AUTOMOD", messageData: null, errorResponseBody: null };
@@ -2714,7 +2714,7 @@ let obj14 = {
               closure_2_55.focusMessage(obj1);
             });
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp13) {
           dependencyMap = tmp;
@@ -2738,7 +2738,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2756,7 +2756,7 @@ let obj14 = {
               closure_1 = tmp5;
               let flags = tmp2;
               flags = undefined;
-              obj1 = closure_1_1(7477);
+              obj1 = closure_1_1(7509);
               c2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2786,7 +2786,7 @@ let obj14 = {
               const obj9 = closure_1_0(530);
             }
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           dependencyMap = tmp;
@@ -2811,7 +2811,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2829,7 +2829,7 @@ let obj14 = {
               closure_1 = tmp5;
               let flags = tmp2;
               flags = undefined;
-              obj1 = closure_1_1(7477);
+              obj1 = closure_1_1(7509);
               c2 = 1;
               dependencyMap = 1;
               obj1 = { value: null, done: false };
@@ -2859,7 +2859,7 @@ let obj14 = {
               const obj9 = closure_1_0(530);
             }
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           dependencyMap = tmp;
@@ -2884,7 +2884,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2925,7 +2925,7 @@ let obj14 = {
             obj2[3] = closure_1_0(closure_1_3[51]).rejectWithMigratedError();
             HTTP.patch(obj2);
             c2 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c2 = tmp;
@@ -2953,7 +2953,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -2982,7 +2982,7 @@ let obj14 = {
                 })();
                 dependencyMap = 3;
               } else {
-                obj1 = closure_1_1(7477);
+                obj1 = closure_1_1(7509);
                 c2 = 1;
                 dependencyMap = 1;
                 obj1 = { value: null, done: false };
@@ -3052,7 +3052,7 @@ let obj14 = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -3095,7 +3095,7 @@ let obj14 = {
               formatToPlainStringResult = intl.string(closure_1_0(1236).t.z2gyNF);
             }
             c0 = formatToPlainStringResult;
-            obj3 = closure_1_1(4825);
+            obj3 = closure_1_1(4857);
             const obj4 = { title: null, body: null, confirmText: null };
             const intl3 = closure_1_0(1236).intl;
             obj4[0] = intl3.string(closure_1_0(1236).t.Vd1hs6);

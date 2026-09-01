@@ -1,10 +1,10 @@
-// Module ID: 10810
-// Function ID: 10811
+// Module ID: 10848
+// Function ID: 10849
 // Name: EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS
 // Dependencies: [2]
 // Exports: getOrbBalanceCounterAnimationConfigs
 
-// Module 10810 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)
+// Module 10848 (EXPECTED_ORB_LOTTIE_ANIMATION_DURATION_MS)
 import set from "set" /* 2 */;
 
 let obj = { EARN: 0.25, SPEND: 0.3 };

@@ -1,10 +1,10 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 5999
+// Function ID: 6000
 // Name: sortRolesByVerification
 // Dependencies: [1989, 2]
 // Exports: sortRolesByVerification
 
-// Module 5967 (sortRolesByVerification)
+// Module 5999 (sortRolesByVerification)
 import set from "set" /* 2 */;
 import compareGuildRoles from "compareGuildRoles" /* 1989 */;
 

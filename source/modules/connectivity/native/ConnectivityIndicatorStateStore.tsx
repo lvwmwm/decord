@@ -1,18 +1,18 @@
-// Module ID: 13305
-// Function ID: 13306
+// Module ID: 13338
+// Function ID: 13339
 // Name: updateState
-// Dependencies: [7189, 1218, 4703, 1981, 7125, 676, 3, 13306, 589, 1473, 709, 2]
+// Dependencies: [7221, 1218, 4735, 1981, 7157, 676, 3, 13339, 589, 1473, 709, 2]
 
-// Module 13305 (updateState)
+// Module 13338 (updateState)
 import timestampDefault from "timestamp" /* 3 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import awaitOnlineDefault from "awaitOnline" /* 1473 */;
-import closure_2 from "handleClearCaches" /* 7189 */;
+import closure_2 from "handleClearCaches" /* 7221 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "reinjectEphemerals" /* 4703 */;
+import closure_4 from "reinjectEphemerals" /* 4735 */;
 import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "getState" /* 7125 */;
+import closure_6 from "getState" /* 7157 */;
 import { AppStates } from "ME" /* 676 */;
 
 function updateState() {
@@ -42,7 +42,7 @@ function updateState() {
             obj1 = { state: null, delayMs: null };
             obj1[0] = tmp13.WAITING_FOR_NETWORK;
             if (closure_2.hasCache()) {
-              let obj15 = state(13306);
+              let obj15 = state(13339);
               let num2 = obj15.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -73,7 +73,7 @@ function updateState() {
             const obj5 = { state: null, delayMs: null };
             obj5[0] = tmp13.WAITING_FOR_NETWORK;
             if (closure_2.hasCache()) {
-              let obj10 = state(13306);
+              let obj10 = state(13339);
               let num = obj10.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;

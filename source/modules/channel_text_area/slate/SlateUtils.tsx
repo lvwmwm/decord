@@ -1,10 +1,10 @@
-// Module ID: 7398
-// Function ID: 7399
+// Module ID: 7430
+// Function ID: 7431
 // Name: createEmptyState
 // Dependencies: [2]
 // Exports: createEmptyState, createState, toRichValue, voidToOptionValue
 
-// Module 7398 (createEmptyState)
+// Module 7430 (createEmptyState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/channel_text_area/slate/SlateUtils.tsx");

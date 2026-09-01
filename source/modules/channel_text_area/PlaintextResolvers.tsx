@@ -1,24 +1,24 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 8442
+// Function ID: 8443
 // Name: resolvePlaintextInlineVoid
-// Dependencies: [32, 5369, 5416, 1387, 1982, 1992, 1985, 1909, 4091, 4100, 1922, 676, 1925, 7398, 4642, 11, 5353, 4104, 4108, 2]
+// Dependencies: [32, 5401, 5448, 1387, 1982, 1992, 1985, 1909, 4121, 4130, 1922, 676, 1925, 7430, 4674, 11, 5385, 4134, 4138, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 8410 (resolvePlaintextInlineVoid)
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4104 */;
-import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4108 */;
-import createEmptyState from "createEmptyState" /* 7398 */;
+// Module 8442 (resolvePlaintextInlineVoid)
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
+import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
+import createEmptyState from "createEmptyState" /* 7430 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "getEmojiToGroupId" /* 5369 */;
-import closure_5 from "rebuild" /* 5416 */;
+import closure_4 from "getEmojiToGroupId" /* 5401 */;
+import closure_5 from "rebuild" /* 5448 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import closure_7 from "comparator" /* 1982 */;
 import { GUILD_SELECTABLE_CHANNELS_KEY as closure_8 } from "comparator" /* 1982 */;
 import closure_9 from "trackCommunicationDisabled" /* 1992 */;
 import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_11 from "createGuildRecordFromRust" /* 1909 */;
-import closure_12 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_13 from "markAllUserIdListsStale" /* 4100 */;
+import closure_12 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_13 from "markAllUserIdListsStale" /* 4130 */;
 import closure_14 from "mergeGuildAvatar" /* 1922 */;
 import { Permissions } from "ME" /* 676 */;
 import { EmojiIntention } from "set" /* 1925 */;
@@ -169,8 +169,8 @@ function resolvePlaintextInlineVoid(text, throwTypeErrorResult, id, forceInclude
             num[Symbol.iterator]();
             const obj2 = callback2(11);
           }
-          callback(4642).unescapeChannelName(arr.slice(2, arr.length - num));
-          const obj = callback(4642);
+          callback(4674).unescapeChannelName(arr.slice(2, arr.length - num));
+          const obj = callback(4674);
         }
         const substr = arr.slice(1);
       }

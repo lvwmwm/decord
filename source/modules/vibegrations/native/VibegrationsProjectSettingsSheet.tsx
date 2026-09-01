@@ -1,20 +1,20 @@
-// Module ID: 16151
-// Function ID: 16152
+// Module ID: 16186
+// Function ID: 16187
 // Name: RoleColorCircle
-// Dependencies: [5, 32, 19, 17, 1985, 16140, 676, 21, 4448, 712, 589, 6063, 4415, 1236, 3471, 5957, 4444, 5589, 9649, 6189, 5592, 5960, 7651, 6062, 16145, 7673, 5567, 4896, 2]
+// Dependencies: [5, 32, 19, 17, 1985, 16175, 676, 21, 4478, 712, 589, 6095, 4445, 1236, 3501, 5989, 4474, 5621, 9688, 6221, 5624, 5992, 7683, 6094, 16180, 7705, 5599, 4928, 2]
 // Exports: default
 
-// Module 16151 (RoleColorCircle)
+// Module 16186 (RoleColorCircle)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_8 from "isProjectOwner" /* 16140 */;
+import closure_8 from "isProjectOwner" /* 16175 */;
 import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function RoleColorCircle(color) {
@@ -341,7 +341,7 @@ export default function VibegrationsProjectSettingsSheet(projectId) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

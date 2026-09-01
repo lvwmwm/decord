@@ -1,22 +1,22 @@
-// Module ID: 10733
-// Function ID: 10734
+// Module ID: 10771
+// Function ID: 10772
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4448, 712, 1628, 4691, 7254, 5941, 8660, 1236, 5519, 4444, 2465, 10734, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 1628, 4723, 7286, 5973, 8692, 1236, 5551, 4474, 2465, 10772, 2]
 // Exports: default
 
-// Module 10733 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 10771 (CollectiblesShopGiftBadgePostPurchaseModal)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import messagesProxyDefault from "messagesProxy" /* 2465 */;
-import Text from "Text" /* 4444 */;
-import XSmallIcon from "XSmallIcon" /* 5519 */;
-import ModalScreen from "ModalScreen" /* 8660 */;
-import PostPurchaseFooterDefault from "PostPurchaseFooter" /* 10734 */;
+import Text from "Text" /* 4474 */;
+import XSmallIcon from "XSmallIcon" /* 5551 */;
+import ModalScreen from "ModalScreen" /* 8692 */;
+import PostPurchaseFooterDefault from "PostPurchaseFooter" /* 10772 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 ({ Pressable: c4, View: c5 } = get_ActivityIndicator);
@@ -34,15 +34,15 @@ let result = require("set").fileFinishedImporting("modules/collectibles/native/C
 export default function CollectiblesShopGiftBadgePostPurchaseModal(currentProgress) {
   const tmp = callback3(useSafeAreaInsetsDefault().top);
   const callback = React.useCallback(() => {
-    let arr = callback2(4691);
+    let arr = callback2(4723);
     arr = arr.pop();
   }, []);
   const callback1 = React.useCallback(() => {
-    let obj = callback(7254);
+    let obj = callback(7286);
     obj = { analyticsLocations: null, analyticsSource: null };
-    const items = [callback2(5941).GIFTING_BADGE_POST_PURCHASE];
+    const items = [callback2(5973).GIFTING_BADGE_POST_PURCHASE];
     obj[0] = items;
-    obj[1] = callback2(5941).GIFTING_BADGE_POST_PURCHASE;
+    obj[1] = callback2(5973).GIFTING_BADGE_POST_PURCHASE;
     const result = obj.openCollectiblesShopMobile(obj);
   }, []);
   let obj = { children: null };

@@ -1,26 +1,26 @@
-// Module ID: 8589
-// Function ID: 8590
+// Module ID: 8621
+// Function ID: 8622
 // Name: generateHydrationId
-// Dependencies: [5, 7239, 1391, 1387, 1909, 4703, 4463, 8574, 8588, 676, 8587, 8590, 4705, 11, 589, 8591, 8595, 8007, 8596, 7607, 1236, 5446, 2009, 676, 2]
+// Dependencies: [5, 7271, 1391, 1387, 1909, 4735, 4493, 8606, 8620, 676, 8619, 8622, 4737, 11, 589, 8623, 8627, 8039, 8628, 7639, 1236, 5478, 2009, 676, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, getViewableFeedItemsArray, hydrateNextPage, icymiEnabled, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, isItemUnreadInChannel, itemToType, numberToCustomScore, regenerateFeedAndClearReadStates, useGravityMessage, useGravityMessageItem, useICYMIMessage
 
-// Module 8589 (generateHydrationId)
+// Module 8621 (generateHydrationId)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4705 */;
-import isMediaAttachment from "isMediaAttachment" /* 7607 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8007 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8587 */;
-import apexExperiment from "apexExperiment" /* 8591 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8595 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
+import isMediaAttachment from "isMediaAttachment" /* 7639 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8039 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8619 */;
+import apexExperiment from "apexExperiment" /* 8623 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 8627 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "scheduledEventSort" /* 7239 */;
+import closure_4 from "scheduledEventSort" /* 7271 */;
 import { ThreadChannelRecord } from "createChannelRecord" /* 1391 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "reinjectEphemerals" /* 4703 */;
-import closure_9 from "generateOldThreadCutoff" /* 4463 */;
-import closure_10 from "filterStaffGuild" /* 8574 */;
-import closure_11 from "initialize" /* 8588 */;
+import closure_8 from "reinjectEphemerals" /* 4735 */;
+import closure_9 from "generateOldThreadCutoff" /* 4493 */;
+import closure_10 from "filterStaffGuild" /* 8606 */;
+import closure_11 from "initialize" /* 8620 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -57,7 +57,7 @@ function _hydrateItems() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -75,13 +75,13 @@ function _hydrateItems() {
               const arr = closure_1_10.getHydratedItems();
               const substr = arr.slice(callback, dependencyMap);
               if (0 !== substr.length) {
-                obj1 = callback(8590);
+                obj1 = callback(8622);
                 const hydratedAttempt = obj1.loadHydratedAttempt(closure_1_14(tmp24, tmp25));
                 const found = substr.filter((arg0) => null == dependencyMap[arg0.id]);
-                const found1 = found.filter((type) => type.type === dependencyMap(8587).ICYMIItemTypes.MESSAGE);
+                const found1 = found.filter((type) => type.type === dependencyMap(8619).ICYMIItemTypes.MESSAGE);
                 const mapped = found1.map((channel_id) => ({ channel_id: channel_id.data.channel_id, message_id: channel_id.data.message_id }));
                 const mapped1 = found.map((type) => {
-                  if (type.type === dependencyMap(8587).ICYMIItemTypes.MESSAGE) {
+                  if (type.type === dependencyMap(8619).ICYMIItemTypes.MESSAGE) {
                     const message_context = type.data.message_context;
                     let reply_message_id;
                     if (message_context != null) {
@@ -123,7 +123,7 @@ function _hydrateItems() {
                 });
                 const _Boolean = Boolean;
                 const found2 = mapped1.flat().filter(Boolean);
-                const found3 = found.filter((type) => type.type === dependencyMap(8587).ICYMIItemTypes.ACTIVITY);
+                const found3 = found.filter((type) => type.type === dependencyMap(8619).ICYMIItemTypes.ACTIVITY);
                 const mapped2 = found3.map((data) => ({ user_id: data.data.user_id, content_id: data.data.content_id }));
                 const flatResult = mapped1.flat();
                 obj1 = { messageItems: null, activityItems: null };
@@ -134,7 +134,7 @@ function _hydrateItems() {
                 c4 = 1;
                 c3 = 1;
                 const obj2 = { value: null, done: false };
-                obj2[0] = callback(8590).fetchHydrated(tmp24, tmp25, obj1);
+                obj2[0] = callback(8622).fetchHydrated(tmp24, tmp25, obj1);
                 return obj2;
               }
             }
@@ -148,7 +148,7 @@ function _hydrateItems() {
             return obj;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp17) {
           c3 = tmp;
           throw tmp17;
@@ -179,7 +179,7 @@ function _hydrateNextPage() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -215,7 +215,7 @@ function _hydrateNextPage() {
           return obj;
         } else {
           v0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp5) {
         v0 = tmp;
@@ -250,7 +250,7 @@ function _regenerateFeedAndClearReadStates() {
           obj[0] = ack;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -392,7 +392,7 @@ function _regenerateFeedAndClearReadStates() {
             obj = ack(AnalyticsObjectTypes[11]);
             const recommendedGuilds = obj.getRecommendedGuilds();
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp36) {
           c4 = tmp;
@@ -595,7 +595,7 @@ export const getViewableFeedItemsArray = function getViewableFeedItemsArray(view
       if (null != tmp3) {
         let tmp5 = id;
         let tmp6 = dependencyMap;
-        let NON_ELIGIBLE_SCROLL_ITEMS = id(8596).NON_ELIGIBLE_SCROLL_ITEMS;
+        let NON_ELIGIBLE_SCROLL_ITEMS = id(8628).NON_ELIGIBLE_SCROLL_ITEMS;
         if (!NON_ELIGIBLE_SCROLL_ITEMS.has(tmp3.item.data.kind)) {
           break;
         }
@@ -738,13 +738,13 @@ export const determineContentType = function determineContentType(channel, messa
     if (message.attachments.length > 0) {
       let ContentType = dependencyMap;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        ContentType = tmp6(8587).ContentType;
+        ContentType = tmp6(8619).ContentType;
         let IMAGE = ContentType.IMAGE;
       } else {
-        const result = tmp6(7607).isValidVideoAttachment(message.attachments[0]);
-        const ContentType2 = tmp6(8587).ContentType;
+        const result = tmp6(7639).isValidVideoAttachment(message.attachments[0]);
+        const ContentType2 = tmp6(8619).ContentType;
         IMAGE = result ? ContentType2.VIDEO : ContentType2.FILE;
-        const tmp6Result = tmp6(7607);
+        const tmp6Result = tmp6(7639);
       }
       obj = isMediaAttachment;
     } else {
@@ -765,28 +765,28 @@ export const contentTypeToText = function contentTypeToText(arg0) {
   if (MessageEmbedTypes.ContentType.POPULAR_MESSAGE === arg0) {
     const intl10 = tmp(1236).intl;
     return intl10.string(tmp(1236).t["H/2+cl"]);
-  } else if (tmp(8587).ContentType.IMAGE === arg0) {
+  } else if (tmp(8619).ContentType.IMAGE === arg0) {
     const intl9 = tmp(1236).intl;
     return intl9.string(tmp(1236).t.gmOWAo);
-  } else if (tmp(8587).ContentType.VIDEO === arg0) {
+  } else if (tmp(8619).ContentType.VIDEO === arg0) {
     const intl8 = tmp(1236).intl;
     return intl8.string(tmp(1236).t.swhcPM);
-  } else if (tmp(8587).ContentType.LINK === arg0) {
+  } else if (tmp(8619).ContentType.LINK === arg0) {
     const intl7 = tmp(1236).intl;
     return intl7.string(tmp(1236).t.oj5yvD);
-  } else if (tmp(8587).ContentType.THREAD === arg0) {
+  } else if (tmp(8619).ContentType.THREAD === arg0) {
     const intl6 = tmp(1236).intl;
     return intl6.string(tmp(1236).t.DwLrLK);
-  } else if (tmp(8587).ContentType.FORUM_POST === arg0) {
+  } else if (tmp(8619).ContentType.FORUM_POST === arg0) {
     const intl5 = tmp(1236).intl;
     return intl5.string(tmp(1236).t["Q9/6BS"]);
-  } else if (tmp(8587).ContentType.CHANGED_STATUS === arg0) {
+  } else if (tmp(8619).ContentType.CHANGED_STATUS === arg0) {
     const intl4 = tmp(1236).intl;
     return intl4.string(tmp(1236).t.TGrUmi);
-  } else if (tmp(8587).ContentType.INTERESTING === arg0) {
+  } else if (tmp(8619).ContentType.INTERESTING === arg0) {
     const intl3 = tmp(1236).intl;
     return intl3.string(tmp(1236).t["TahE/i"]);
-  } else if (tmp(8587).ContentType.ANNOUNCEMENT === arg0) {
+  } else if (tmp(8619).ContentType.ANNOUNCEMENT === arg0) {
     const intl2 = tmp(1236).intl;
     const string = intl2.string;
     const t = tmp(1236).t;
@@ -796,7 +796,7 @@ export const contentTypeToText = function contentTypeToText(arg0) {
       stringResult = string(t["2ih63V"]);
     }
     return stringResult;
-  } else if (tmp(8587).ContentType.FILE === arg0) {
+  } else if (tmp(8619).ContentType.FILE === arg0) {
     const intl = tmp(1236).intl;
     return intl.string(tmp(1236).t.pYrnTY);
   }

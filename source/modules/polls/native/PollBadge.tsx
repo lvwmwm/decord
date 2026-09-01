@@ -1,19 +1,19 @@
-// Module ID: 16220
-// Function ID: 16221
+// Module ID: 16255
+// Function ID: 16256
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 4448, 712, 1297, 16221, 4444, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 1297, 16256, 4474, 1236, 2]
 // Exports: default
 
-// Module 16220 (PollBadge)
+// Module 16255 (PollBadge)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4444 */;
-import registerAssetDefault from "registerAsset" /* 16221 */;
+import Text from "Text" /* 4474 */;
+import registerAssetDefault from "registerAsset" /* 16256 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

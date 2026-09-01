@@ -1,16 +1,16 @@
-// Module ID: 13725
-// Function ID: 13726
+// Module ID: 13758
+// Function ID: 13759
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 4440, 21, 4448, 712, 589, 4187, 4449, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 712, 589, 4217, 4479, 2]
 // Exports: default
 
-// Module 13725 (SpeakerPulse)
+// Module 13758 (SpeakerPulse)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: closure_6, Fragment: error, jsxs: closure_8 } = jsxProd);

@@ -1,9 +1,9 @@
-// Module ID: 4379
-// Function ID: 4380
+// Module ID: 4409
+// Function ID: 4410
 // Name: GuildThemeSourcePreference
 // Dependencies: [2, 1306]
 
-// Module 4379 (GuildThemeSourcePreference)
+// Module 4409 (GuildThemeSourcePreference)
 import set from "set" /* 2 */;
 import create from "create" /* 1306 */;
 

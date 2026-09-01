@@ -1,14 +1,14 @@
-// Module ID: 9260
-// Function ID: 9261
+// Module ID: 9299
+// Function ID: 9300
 // Name: authorizeConnection
-// Dependencies: [5320, 676, 709, 4415, 9261, 9289, 9300, 4691, 9311, 2009, 5195, 9313, 8609, 4160, 5318, 2]
+// Dependencies: [5352, 676, 709, 4445, 9300, 9328, 9339, 4723, 9350, 2009, 5227, 9352, 8641, 4190, 5350, 2]
 // Exports: default
 
-// Module 9260 (authorizeConnection)
+// Module 9299 (authorizeConnection)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import OperatorTypes from "OperatorTypes" /* 5320 */;
+import OperatorTypes from "OperatorTypes" /* 5352 */;
 
 let closure_3 = OperatorTypes.GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE;
 const PlatformTypes = ME.PlatformTypes;
@@ -26,11 +26,11 @@ export default function authorizeConnection(overrideUrl) {
     _location = "mobile";
   }
   if (platformType === PlatformTypes.XBOX) {
-    overrideUrl(4415).hideActionSheet();
-    const obj15 = overrideUrl(4415);
+    overrideUrl(4445).hideActionSheet();
+    const obj15 = overrideUrl(4445);
     const tmp23 = overrideUrl;
     const items = [_location];
-    overrideUrl(9261).showModal(items);
+    overrideUrl(9300).showModal(items);
     if (null != onClose) {
       function handleModalClose(arg0) {
         if (handleModalClose5 != null) {
@@ -42,16 +42,16 @@ export default function authorizeConnection(overrideUrl) {
       const subscription = tmp23(709).subscribe("MODAL_POP", handleModalClose);
       const tmp23Result = tmp23(709);
     }
-    const obj16 = overrideUrl(9261);
+    const obj16 = overrideUrl(9300);
   } else {
     if (platformType !== tmp.PLAYSTATION) {
       if (platformType !== tmp.PLAYSTATION_STAGING) {
         if (platformType === tmp.CRUNCHYROLL) {
-          overrideUrl(4415).hideActionSheet();
-          const obj11 = overrideUrl(4415);
+          overrideUrl(4445).hideActionSheet();
+          const obj11 = overrideUrl(4445);
           const tmp15 = overrideUrl;
           const items1 = [_location];
-          overrideUrl(9300).showModal(items1);
+          overrideUrl(9339).showModal(items1);
           if (null != onClose) {
             const handleModalClose4 = function handleModalClose(arg0) {
               if (handleModalClose5 != null) {
@@ -63,15 +63,15 @@ export default function authorizeConnection(overrideUrl) {
             const subscription1 = tmp15(709).subscribe("MODAL_POP", handleModalClose4);
             const tmp15Result = tmp15(709);
           }
-          const obj12 = overrideUrl(9300);
+          const obj12 = overrideUrl(9339);
         } else if (platformType === tmp.DOMAIN) {
-          overrideUrl(4415).hideActionSheet();
-          const obj8 = overrideUrl(4415);
+          overrideUrl(4445).hideActionSheet();
+          const obj8 = overrideUrl(4445);
           const tmp10 = overrideUrl;
           let obj = { locationStack: null };
           const items2 = [_location];
           obj[0] = items2;
-          overrideUrl(4691).pushLazy(handleModalClose5(2009)(9311, dependencyMap.paths), obj);
+          overrideUrl(4723).pushLazy(handleModalClose5(2009)(9350, dependencyMap.paths), obj);
           if (null != onClose) {
             const handleModalClose3 = function handleModalClose(arg0) {
               if (handleModalClose5 != null) {
@@ -83,22 +83,22 @@ export default function authorizeConnection(overrideUrl) {
             const subscription2 = tmp10(709).subscribe("MODAL_POP", handleModalClose3);
             const tmp10Result = tmp10(709);
           }
-          const obj9 = overrideUrl(4691);
+          const obj9 = overrideUrl(4723);
         } else {
-          const value = overrideUrl(5195).get(platformType);
+          const value = overrideUrl(5227).get(platformType);
           let isFederated;
           if (value != null) {
             isFederated = value.isFederated;
           }
           if (true === isFederated) {
-            let tmp28Result = tmp28(4415);
+            let tmp28Result = tmp28(4445);
             tmp28Result.hideActionSheet();
-            tmp28Result = tmp28(4691);
+            tmp28Result = tmp28(4723);
             obj = { platformType: null, location: null, successRedirect: null };
             obj[0] = platformType;
             obj[1] = _location;
             obj[2] = successRedirect;
-            tmp28Result.pushLazy(handleModalClose5(2009)(9313, tmp29.paths), obj);
+            tmp28Result.pushLazy(handleModalClose5(2009)(9352, tmp29.paths), obj);
             if (null != onClose) {
               const handleModalClose2 = function handleModalClose(arg0) {
                 if (handleModalClose5 != null) {
@@ -113,7 +113,7 @@ export default function authorizeConnection(overrideUrl) {
           } else {
             if (null != overrideUrl) {
               if (platformType === closure_3) {
-                let obj2 = handleModalClose5(8609);
+                let obj2 = handleModalClose5(8641);
                 obj1 = { shouldConfirm: true, href: null, onConfirm: null };
                 obj1[1] = overrideUrl;
                 obj1[2] = function onConfirm() {
@@ -125,26 +125,26 @@ export default function authorizeConnection(overrideUrl) {
             obj2 = { location: null, successRedirect: null };
             obj2[0] = _location;
             obj2[1] = successRedirect;
-            const tmp28Result2 = tmp28(5318);
-            tmp28(5318).authorize(platformType, obj2).then((body) => {
+            const tmp28Result2 = tmp28(5350);
+            tmp28(5350).authorize(platformType, obj2).then((body) => {
               const url = body.body.url;
               if (null != url) {
                 overrideUrl(table[13]).openURL(url);
                 const obj = overrideUrl(table[13]);
               }
             });
-            const authorizeResult = tmp28(5318).authorize(platformType, obj2);
+            const authorizeResult = tmp28(5350).authorize(platformType, obj2);
           }
-          const obj18 = overrideUrl(5195);
+          const obj18 = overrideUrl(5227);
           tmp29 = dependencyMap;
         }
       }
     }
-    overrideUrl(4415).hideActionSheet();
-    const obj13 = overrideUrl(4415);
+    overrideUrl(4445).hideActionSheet();
+    const obj13 = overrideUrl(4445);
     const tmp19 = overrideUrl;
     const items3 = [_location];
-    overrideUrl(9289).showModal(items3, platformType);
+    overrideUrl(9328).showModal(items3, platformType);
     if (null != onClose) {
       handleModalClose5 = function handleModalClose(arg0) {
         if (handleModalClose5 != null) {
@@ -155,6 +155,6 @@ export default function authorizeConnection(overrideUrl) {
       const subscription4 = tmp19(709).subscribe("MODAL_POP", handleModalClose5);
       const tmp19Result = tmp19(709);
     }
-    const obj14 = overrideUrl(9289);
+    const obj14 = overrideUrl(9328);
   }
 };

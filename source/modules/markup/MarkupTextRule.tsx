@@ -1,12 +1,12 @@
-// Module ID: 4926
-// Function ID: 4927
+// Module ID: 4958
+// Function ID: 4959
 // Name: textRegexp
-// Dependencies: [4162, 2]
+// Dependencies: [4192, 2]
 // Exports: textMarkupPatternWithExclusions
 
-// Module 4926 (textRegexp)
-import tDefault from "t" /* 4162 */;
-import t from "t" /* 4162 */;
+// Module 4958 (textRegexp)
+import tDefault from "t" /* 4192 */;
+import t from "t" /* 4192 */;
 
 const tmp2 = /^[\s\S]+?(?=[^0-9A-Za-z\s\u00c0-\uffff]|\n\n| {2,}\n|\w+:\S|[0-9]+\.|$)/;
 const obj = {};

@@ -1,12 +1,12 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 16893
+// Function ID: 16894
 // Name: onPostConnectionOpen
-// Dependencies: [5454, 7445, 1208, 2]
+// Dependencies: [5486, 7477, 1208, 2]
 
-// Module 16857 (onPostConnectionOpen)
+// Module 16893 (onPostConnectionOpen)
 import _modDef1208 from "module_1208" /* 1208 */;
-import initializeDefault from "initialize" /* 5454 */;
-import _fetchAdUser from "_fetchAdUser" /* 7445 */;
+import initializeDefault from "initialize" /* 5486 */;
+import _fetchAdUser from "_fetchAdUser" /* 7477 */;
 
 require = arg1;
 initializeDefault;

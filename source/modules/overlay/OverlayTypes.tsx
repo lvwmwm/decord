@@ -1,9 +1,9 @@
-// Module ID: 4498
-// Function ID: 4499
+// Module ID: 4528
+// Function ID: 4529
 // Name: DevToolsFocusedPidsTrackMode
 // Dependencies: [2]
 
-// Module 4498 (DevToolsFocusedPidsTrackMode)
+// Module 4528 (DevToolsFocusedPidsTrackMode)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/overlay/OverlayTypes.tsx");

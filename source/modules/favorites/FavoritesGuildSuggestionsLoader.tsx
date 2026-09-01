@@ -1,12 +1,12 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15864
+// Function ID: 15865
 // Name: FavoritesGuildSuggestionsLoaderInner
-// Dependencies: [19, 15755, 21, 15829, 2]
+// Dependencies: [19, 15791, 21, 15865, 2]
 
-// Module 15828 (FavoritesGuildSuggestionsLoaderInner)
-import getAffineChannelIdDefault from "getAffineChannelId" /* 15829 */;
+// Module 15864 (FavoritesGuildSuggestionsLoaderInner)
+import getAffineChannelIdDefault from "getAffineChannelId" /* 15865 */;
 import importAllResult from "noop" /* 19 */;
-import items from "items" /* 15755 */;
+import items from "items" /* 15791 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 function FavoritesGuildSuggestionsLoaderInner() {

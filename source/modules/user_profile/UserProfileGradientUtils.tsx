@@ -1,10 +1,10 @@
-// Module ID: 8088
-// Function ID: 8089
+// Module ID: 8120
+// Function ID: 8121
 // Name: getProfileTheme
-// Dependencies: [32, 676, 688, 4297, 12, 1363, 689, 2]
+// Dependencies: [32, 676, 688, 4327, 12, 1363, 689, 2]
 // Exports: calculateGradientSplitColors, calculateOverlayedColor, getGradientPercentageColorInRgb, getProfileTheme, getUserProfileGradientContainerColors, getValueInColorGradientByPercentage
 
-// Module 8088 (getProfileTheme)
+// Module 8120 (getProfileTheme)
 import apply2 from "apply" /* 12 */;
 import int2hslRaw from "int2hslRaw" /* 688 */;
 import nDefault from "n" /* 689 */;
@@ -75,7 +75,7 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
   if (null == overlay) {
     return 0;
   } else {
-    const parseStringResult = alpha(4297).parseString(overlay);
+    const parseStringResult = alpha(4327).parseString(overlay);
     if (null == parseStringResult) {
       return 0;
     } else {
@@ -89,7 +89,7 @@ export const calculateOverlayedColor = function calculateOverlayedColor(secondar
       const _HermesInternal = HermesInternal;
       return tmp(688).rgb2int("rgba(" + tmp8 + ", " + tmp9 + ", " + tmp10 + ")");
     }
-    const obj2 = alpha(4297);
+    const obj2 = alpha(4327);
   }
   int2rgbArrayResult = items1(688).int2rgbArray(secondaryColor);
 };

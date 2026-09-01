@@ -1,24 +1,24 @@
-// Module ID: 5336
-// Function ID: 5337
+// Module ID: 5368
+// Function ID: 5369
 // Name: sortKey
-// Dependencies: [4470, 1387, 5337, 1992, 4100, 1922, 4467, 4523, 5333, 1392, 5339, 4636, 4087, 4641, 5340, 4514, 2]
+// Dependencies: [4500, 1387, 5369, 1992, 4130, 1922, 4497, 4555, 5365, 1392, 5371, 4668, 4117, 4673, 5372, 4544, 2]
 // Exports: isRequestedToSpeakAll
 
-// Module 5336 (sortKey)
-import version from "version" /* 4087 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4636 */;
-import getNicknameDefault from "getNickname" /* 4641 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5339 */;
-import getHighestHoistedRole from "getHighestHoistedRole" /* 5340 */;
-import closure_3 from "reset" /* 4470 */;
+// Module 5368 (sortKey)
+import version from "version" /* 4117 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4668 */;
+import getNicknameDefault from "getNickname" /* 4673 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 5371 */;
+import getHighestHoistedRole from "getHighestHoistedRole" /* 5372 */;
+import closure_3 from "reset" /* 4500 */;
 import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "handleConnectionReset" /* 5337 */;
+import closure_5 from "handleConnectionReset" /* 5369 */;
 import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import closure_7 from "markAllUserIdListsStale" /* 4100 */;
+import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import closure_9 from "updateVoiceState" /* 4467 */;
-import { getComparator } from "getVoiceStatesForGuild" /* 4523 */;
-import closure_11 from "buildStageChannelUserRoles" /* 5333 */;
+import closure_9 from "updateVoiceState" /* 4497 */;
+import { getComparator } from "getVoiceStatesForGuild" /* 4555 */;
+import closure_11 from "buildStageChannelUserRoles" /* 5365 */;
 import closure_12 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
 
 require = arg1;
@@ -177,7 +177,7 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       const merged = Object.assign(obj);
       obj.type = obj.VOICE;
       obj.id = user.id;
-      let tmp11Result = tmp11(4636);
+      let tmp11Result = tmp11(4668);
       obj.rtsState = tmp11Result.getAudienceRequestToSpeakState(voiceStateForChannel);
       items.push(obj);
       streamForUser = streamForUser.getStreamForUser(userId, self.guildId);
@@ -186,12 +186,12 @@ prototype["_getParticipantsForUser"] = function _getParticipantsForUser(userId) 
       }
       if (null != streamForUser) {
         if (streamForUser.channelId === self.channelId) {
-          tmp11Result = tmp11(4514);
+          tmp11Result = tmp11(4544);
           obj1 = {};
           const merged1 = Object.assign(obj);
           obj1.id = tmp11Result.encodeStreamKey(streamForUser);
           obj1.type = obj.STREAM;
-          obj1.rtsState = tmp11(4636).RequestToSpeakStates.NONE;
+          obj1.rtsState = tmp11(4668).RequestToSpeakStates.NONE;
           items.push(obj1);
           const encodeStreamKeyResult = tmp11Result.encodeStreamKey(streamForUser);
         }

@@ -1,24 +1,24 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10634
+// Function ID: 10635
 // Name: _toPropertyKey
-// Dependencies: [109, 32, 19, 7375, 7371, 7372, 1930, 4100, 1922, 676, 4087, 7370, 9889, 709, 7374, 5424, 12, 1236, 9900, 2]
+// Dependencies: [109, 32, 19, 7407, 7403, 7404, 1935, 4130, 1922, 676, 4117, 7402, 9928, 709, 7406, 5456, 12, 1236, 9939, 2]
 // Exports: default
 
-// Module 10596 (_toPropertyKey)
+// Module 10634 (_toPropertyKey)
 import applyDefault from "apply" /* 12 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5424 */;
-import getAllDefault from "getAll" /* 7370 */;
-import cleanString from "cleanString" /* 7374 */;
-import getTransformedUserDefault from "getTransformedUser" /* 9889 */;
+import getGuildNameSuggestionDefault from "getGuildNameSuggestion" /* 5456 */;
+import getAllDefault from "getAll" /* 7402 */;
+import cleanString from "cleanString" /* 7406 */;
+import getTransformedUserDefault from "getTransformedUser" /* 9928 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 7375 */;
-import closure_7 from "recountRelationshipTypes" /* 7371 */;
-import closure_8 from "recomputeAffinities" /* 7372 */;
-import closure_9 from "createdAt" /* 1930 */;
-import closure_10 from "markAllUserIdListsStale" /* 4100 */;
+import closure_6 from "initialize" /* 7407 */;
+import closure_7 from "recountRelationshipTypes" /* 7403 */;
+import closure_8 from "recomputeAffinities" /* 7404 */;
+import closure_9 from "createdAt" /* 1935 */;
+import closure_10 from "markAllUserIdListsStale" /* 4130 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import { RelationshipTypes } from "ME" /* 676 */;
 import set from "set" /* 2 */;
@@ -550,7 +550,7 @@ prototype["filter"] = function filter(toLocaleLowerCase) {
   let self = this;
   self = this;
   let _require = toLocaleLowerCase;
-  let obj = _require(7374);
+  let obj = _require(7406);
   const cleanStringResult = obj.cleanString(toLocaleLowerCase);
   _require = cleanStringResult;
   if (this.currentQuery === cleanStringResult) {

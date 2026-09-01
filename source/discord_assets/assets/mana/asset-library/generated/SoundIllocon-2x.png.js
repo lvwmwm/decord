@@ -1,9 +1,9 @@
-// Module ID: 6996
-// Function ID: 6997
+// Module ID: 7028
+// Function ID: 7029
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6996 (metadata)
+// Module 7028 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SoundIllocon-2x.png.js");

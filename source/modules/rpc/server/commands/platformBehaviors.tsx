@@ -1,9 +1,9 @@
-// Module ID: 14127
-// Function ID: 14128
+// Module ID: 14160
+// Function ID: 14161
 // Name: sum
 // Dependencies: [505, 2]
 
-// Module 14127 (sum)
+// Module 14160 (sum)
 import set from "set" /* 2 */;
 import sum from "sum" /* 505 */;
 

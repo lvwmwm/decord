@@ -1,10 +1,10 @@
-// Module ID: 7261
-// Function ID: 7262
+// Module ID: 7293
+// Function ID: 7294
 // Name: fromServer
 // Dependencies: [1949, 1950, 2]
 // Exports: isProfileEffectRecord
 
-// Module 7261 (fromServer)
+// Module 7293 (fromServer)
 import fromServerDefault from "fromServer" /* 1949 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 

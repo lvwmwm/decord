@@ -1,16 +1,16 @@
-// Module ID: 5190
-// Function ID: 5191
+// Module ID: 5222
+// Function ID: 5223
 // Name: callConnect
-// Dependencies: [1387, 1981, 4269, 676, 709, 530, 12, 589, 2]
+// Dependencies: [1387, 1981, 4299, 676, 709, 530, 12, 589, 2]
 
-// Module 5190 (callConnect)
+// Module 5222 (callConnect)
 import applyDefault from "apply" /* 12 */;
 import sendRequest from "sendRequest" /* 530 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
 import closure_4 from "handleConnectionOpen" /* 1981 */;
-import closure_5 from "handleConnectionOpen" /* 4269 */;
+import closure_5 from "handleConnectionOpen" /* 4299 */;
 import { Endpoints } from "ME" /* 676 */;
 
 require = arg1;

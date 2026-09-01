@@ -1,13 +1,13 @@
-// Module ID: 11040
-// Function ID: 11041
+// Module ID: 11077
+// Function ID: 11078
 // Name: fetchChannelInfo
-// Dependencies: [5189, 7242, 709, 2]
+// Dependencies: [5221, 7274, 709, 2]
 // Exports: fetchChannelInfo
 
-// Module 11040 (fetchChannelInfo)
+// Module 11077 (fetchChannelInfo)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "_handleConnectionOpen" /* 5189 */;
-import closure_3 from "handleConnectionReset" /* 7242 */;
+import closure_2 from "_handleConnectionOpen" /* 5221 */;
+import closure_3 from "handleConnectionReset" /* 7274 */;
 
 const result = require("set").fileFinishedImporting("modules/channel/ChannelInfoActionCreators.tsx");
 

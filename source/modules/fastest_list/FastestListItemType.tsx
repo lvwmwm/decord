@@ -1,9 +1,9 @@
-// Module ID: 7755
-// Function ID: 7756
+// Module ID: 7787
+// Function ID: 7788
 // Name: ITEM
 // Dependencies: [2]
 
-// Module 7755 (ITEM)
+// Module 7787 (ITEM)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/fastest_list/FastestListItemType.tsx");

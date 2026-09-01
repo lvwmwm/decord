@@ -1,18 +1,18 @@
-// Module ID: 16171
-// Function ID: 16172
+// Module ID: 16206
+// Function ID: 16207
 // Name: ThreadChannelStarterMessage
-// Dependencies: [19, 7308, 4703, 21, 7809, 589, 5036, 1222, 8742, 2]
+// Dependencies: [19, 7340, 4735, 21, 7841, 589, 5068, 1222, 8779, 2]
 // Exports: ThreadChannelStarterMessage, ThreadCreationStarterMessage
 
-// Module 16171 (ThreadChannelStarterMessage)
+// Module 16206 (ThreadChannelStarterMessage)
 import noopAll from "noop" /* 19 */;
 import initialize from "initialize" /* 589 */;
-import PressableBase from "PressableBase" /* 5036 */;
-import setOptionsDefault from "setOptions" /* 7809 */;
-import DCDChatItemDefault from "DCDChatItem" /* 8742 */;
-import closure_3 from "processMessage" /* 7308 */;
-import { ReferencedMessageState } from "processMessage" /* 7308 */;
-import closure_5 from "reinjectEphemerals" /* 4703 */;
+import PressableBase from "PressableBase" /* 5068 */;
+import setOptionsDefault from "setOptions" /* 7841 */;
+import DCDChatItemDefault from "DCDChatItem" /* 8779 */;
+import closure_3 from "processMessage" /* 7340 */;
+import { ReferencedMessageState } from "processMessage" /* 7340 */;
+import closure_5 from "reinjectEphemerals" /* 4735 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

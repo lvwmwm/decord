@@ -1,14 +1,14 @@
-// Module ID: 6863
-// Function ID: 6864
+// Module ID: 6895
+// Function ID: 6896
 // Name: PasskeysSpotIllustration
-// Dependencies: [21, 5461, 6864, 2]
+// Dependencies: [21, 5493, 6896, 2]
 // Exports: PasskeysSpotIllustration
 
-// Module 6863 (PasskeysSpotIllustration)
+// Module 6895 (PasskeysSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6864 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6896 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PasskeysSpotIllustration.native.tsx");

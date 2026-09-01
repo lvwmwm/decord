@@ -1,10 +1,10 @@
-// Module ID: 11472
-// Function ID: 11473
+// Module ID: 11505
+// Function ID: 11506
 // Name: getInlineForwardOptions
-// Dependencies: [676, 4639, 2]
+// Dependencies: [676, 4671, 2]
 // Exports: getInlineForwardOptions
 
-// Module 11472 (getInlineForwardOptions)
+// Module 11505 (getInlineForwardOptions)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 8897
-// Function ID: 8898
+// Module ID: 8934
+// Function ID: 8935
 // Name: CheckmarkSmallBoldIcon
-// Dependencies: [19, 21, 712, 4166, 5963, 2]
+// Dependencies: [19, 21, 712, 4196, 5995, 2]
 // Exports: CheckmarkSmallBoldIcon
 
-// Module 8897 (CheckmarkSmallBoldIcon)
+// Module 8934 (CheckmarkSmallBoldIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 5963 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 5995 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,11 +1,11 @@
-// Module ID: 10674
-// Function ID: 10675
+// Module ID: 10712
+// Function ID: 10713
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 676, 10675, 1912, 1236, 3149, 2]
+// Dependencies: [19, 676, 10713, 1912, 1236, 3179, 2]
 // Exports: default
 
-// Module 10674 (useFavoritesGuildCategoryAddAction)
-import messagesProxyDefault from "messagesProxy" /* 3149 */;
+// Module 10712 (useFavoritesGuildCategoryAddAction)
+import messagesProxyDefault from "messagesProxy" /* 3179 */;
 import closure_3 from "noop" /* 19 */;
 import { ChannelTypes } from "ME" /* 676 */;
 

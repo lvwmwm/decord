@@ -1,10 +1,10 @@
-// Module ID: 7177
-// Function ID: 7178
+// Module ID: 7209
+// Function ID: 7210
 // Name: isActiveUserRoute
 // Dependencies: [2]
 // Exports: isActiveUserRoute, subscribeToLocationChanges
 
-// Module 7177 (isActiveUserRoute)
+// Module 7209 (isActiveUserRoute)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/analytics_sessions/SessionRouteUtils.native.tsx");

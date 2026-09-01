@@ -1,17 +1,17 @@
-// Module ID: 10751
-// Function ID: 10752
+// Module ID: 10789
+// Function ID: 10790
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1924, 21, 4448, 712, 1499, 10438, 10752, 1236, 10563, 10753, 4444, 10590, 10592, 10754, 2]
+// Dependencies: [32, 19, 17, 1924, 21, 4478, 712, 1499, 10477, 10790, 1236, 10601, 10791, 4474, 10628, 10630, 10792, 2]
 // Exports: default
 
-// Module 10751 (PremiumGiftCustomization)
+// Module 10789 (PremiumGiftCustomization)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ View: c5, ScrollView: closure_6 } = get_ActivityIndicator);

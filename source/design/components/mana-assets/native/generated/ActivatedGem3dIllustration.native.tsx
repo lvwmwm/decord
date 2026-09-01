@@ -1,14 +1,14 @@
-// Module ID: 6265
-// Function ID: 6266
+// Module ID: 6297
+// Function ID: 6298
 // Name: ActivatedGem3dIllustration
-// Dependencies: [21, 5461, 6266, 2]
+// Dependencies: [21, 5493, 6298, 2]
 // Exports: ActivatedGem3dIllustration
 
-// Module 6265 (ActivatedGem3dIllustration)
+// Module 6297 (ActivatedGem3dIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6266 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6298 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ActivatedGem3dIllustration.native.tsx");

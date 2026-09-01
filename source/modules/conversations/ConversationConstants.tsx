@@ -1,9 +1,9 @@
-// Module ID: 7311
-// Function ID: 7312
+// Module ID: 7343
+// Function ID: 7344
 // Name: CONVERSATION_COLORS
 // Dependencies: [2]
 
-// Module 7311 (CONVERSATION_COLORS)
+// Module 7343 (CONVERSATION_COLORS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/conversations/ConversationConstants.tsx");

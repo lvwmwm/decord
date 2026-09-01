@@ -1,14 +1,14 @@
-// Module ID: 4169
-// Function ID: 4170
+// Module ID: 4199
+// Function ID: 4200
 // Name: getNodeText
-// Dependencies: [2, 4170, 4171, 4172, 1364]
+// Dependencies: [2, 4200, 4201, 4202, 1364]
 
-// Module 4169 (getNodeText)
+// Module 4199 (getNodeText)
 import set from "set" /* 2 */;
 import isThemeLight from "isThemeLight" /* 1364 */;
-import getNodeText from "getNodeText" /* 4170 */;
-import chainCallbacks from "chainCallbacks" /* 4171 */;
-import useFocus from "useFocus" /* 4172 */;
+import getNodeText from "getNodeText" /* 4200 */;
+import chainCallbacks from "chainCallbacks" /* 4201 */;
+import useFocus from "useFocus" /* 4202 */;
 
 const result = set.fileFinishedImporting("design/utils/native.tsx");
 

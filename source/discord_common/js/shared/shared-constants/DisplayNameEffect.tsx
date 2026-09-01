@@ -1,9 +1,9 @@
-// Module ID: 1935
-// Function ID: 1936
+// Module ID: 1940
+// Function ID: 1941
 // Name: DisplayNameEffect
 // Dependencies: [2]
 
-// Module 1935 (DisplayNameEffect)
+// Module 1940 (DisplayNameEffect)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/DisplayNameEffect.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11463
+// Function ID: 11464
 // Name: TTIFirstContentfulPaint
-// Dependencies: [19, 21, 4303, 9, 7380, 11431, 2]
+// Dependencies: [19, 21, 4333, 9, 7412, 11464, 2]
 // Exports: TTIFirstContentfulPaint
 
-// Module 11430 (TTIFirstContentfulPaint)
+// Module 11463 (TTIFirstContentfulPaint)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -27,5 +27,5 @@ export const TTIFirstContentfulPaint = function TTIFirstContentfulPaint(checkFoc
     firstContentfulPaint.record(nativeEvent.nativeEvent.timestamp);
     checkFocusedScreen(closure_1_2[4]).notifyAboutTTI();
   }, items);
-  return jsx(checkFocusedScreen(11431).TTIMeasurementView, { onMeasurement });
+  return jsx(checkFocusedScreen(11464).TTIMeasurementView, { onMeasurement });
 };

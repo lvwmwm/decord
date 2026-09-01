@@ -1,9 +1,9 @@
-// Module ID: 8608
-// Function ID: 8609
-// Dependencies: [19, 21, 7974, 2]
+// Module ID: 8640
+// Function ID: 8641
+// Dependencies: [19, 21, 8006, 2]
 
-// Module 8608
-import IconButton from "IconButton" /* 7974 */;
+// Module 8640
+import IconButton from "IconButton" /* 8006 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

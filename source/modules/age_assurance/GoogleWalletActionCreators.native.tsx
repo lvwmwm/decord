@@ -1,10 +1,10 @@
-// Module ID: 8680
-// Function ID: 8681
+// Module ID: 8717
+// Function ID: 8718
 // Name: _requestGoogleWalletVerification
-// Dependencies: [5, 676, 530, 8681, 2]
+// Dependencies: [5, 676, 530, 8718, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 8680 (_requestGoogleWalletVerification)
+// Module 8717 (_requestGoogleWalletVerification)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -46,7 +46,7 @@ function _verifyGoogleWalletCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ function _verifyGoogleWalletCredential() {
             return obj;
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c1 = tmp;
@@ -115,7 +115,7 @@ function _checkGoogleWalletAvailable() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -201,7 +201,7 @@ function _getGoogleWalletCredential() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

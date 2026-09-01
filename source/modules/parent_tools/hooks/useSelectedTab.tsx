@@ -1,13 +1,13 @@
-// Module ID: 14444
-// Function ID: 14445
+// Module ID: 14477
+// Function ID: 14478
 // Name: useSelectedMyFamilyTab
-// Dependencies: [7250, 7251, 676, 647, 7252, 698, 2]
+// Dependencies: [7282, 7283, 676, 647, 7284, 698, 2]
 // Exports: default
 
-// Module 14444 (useSelectedMyFamilyTab)
+// Module 14477 (useSelectedMyFamilyTab)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7250 */;
-import items from "items" /* 7251 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7282 */;
+import items from "items" /* 7283 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;
@@ -18,7 +18,7 @@ export default function useSelectedMyFamilyTab() {
   let obj = {
     selectedTab: defaultAreStatesEqual.useStateFromStores(items, () => selectedTab.getSelectedTab()),
     handleTabChange(tab) {
-      let obj = callback(7252);
+      let obj = callback(7284);
       tab = obj.selectTab(tab);
       obj = { action: TabChange.TabChange, tab };
       callback(698).track(constants.FAMILY_CENTER_ACTION, obj);

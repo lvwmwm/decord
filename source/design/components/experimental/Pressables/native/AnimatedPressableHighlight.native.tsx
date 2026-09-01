@@ -1,15 +1,15 @@
-// Module ID: 5571
-// Function ID: 5572
+// Module ID: 5603
+// Function ID: 5604
 // Name: AnimatedPressableHighlight
-// Dependencies: [19, 17, 21, 4187, 5036, 5572, 4167, 712, 500, 2]
+// Dependencies: [19, 17, 21, 4217, 5068, 5604, 4197, 712, 500, 2]
 
-// Module 5571 (AnimatedPressableHighlight)
-import SPRING_CONFIG from "SPRING_CONFIG" /* 5572 */;
+// Module 5603 (AnimatedPressableHighlight)
+import SPRING_CONFIG from "SPRING_CONFIG" /* 5604 */;
 import closure_3 from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 500 */;
-import importDefaultResult from "module_4187" /* 4187 */;
+import importDefaultResult from "module_4217" /* 4217 */;
 
 require = arg1;
 let closure_6 = importDefaultResult.createAnimatedComponent(require("PressableBase").PressableHighlight);
@@ -18,7 +18,7 @@ const result = set.fileFinishedImporting("design/components/experimental/Pressab
 export const AnimatedPressableHighlight = set.isAndroid() ? (function AnimatedPressableHighlightAndroid(children) {
   const merged = Object.assign(children, Object.create(null));
   let token;
-  let obj = merged(4167);
+  let obj = merged(4197);
   token = obj.useToken(token(712).colors.MOBILE_ANDROID_BUTTON_BACKGROUND_RIPPLE);
   const items = [token, ];
   let androidRippleConfig = merged.androidRippleConfig;

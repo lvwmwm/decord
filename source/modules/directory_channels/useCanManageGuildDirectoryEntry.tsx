@@ -1,13 +1,13 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 11874
+// Function ID: 11875
 // Name: useCanManageGuildDirectoryEntry
-// Dependencies: [1387, 1909, 4091, 676, 589, 2]
+// Dependencies: [1387, 1909, 4121, 676, 589, 2]
 // Exports: default, useCanCreateOrAddGuildInDirectory
 
-// Module 11841 (useCanManageGuildDirectoryEntry)
+// Module 11874 (useCanManageGuildDirectoryEntry)
 import closure_2 from "ensureGuildLoaded" /* 1387 */;
 import closure_3 from "createGuildRecordFromRust" /* 1909 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4121 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;

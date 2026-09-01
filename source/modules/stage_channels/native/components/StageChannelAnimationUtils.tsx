@@ -1,15 +1,15 @@
-// Module ID: 10086
-// Function ID: 10087
+// Module ID: 10125
+// Function ID: 10126
 // Name: useStageActionBarAnimation
-// Dependencies: [4187, 9608, 9606, 1628, 4449, 2]
+// Dependencies: [4217, 9647, 9645, 1628, 4479, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 10086 (useStageActionBarAnimation)
+// Module 10125 (useStageActionBarAnimation)
 import set from "set" /* 2 */;
-import _mod4187 from "module_4187" /* 4187 */;
+import _mod4217 from "module_4217" /* 4217 */;
 
 let obj = { duration: 250, easing: null };
-const Easing = _mod4187.Easing;
+const Easing = _mod4217.Easing;
 obj[1] = Easing.bezier(0.66, 0, 0.2, 1);
 let closure_4 = { code: "function StageChannelAnimationUtilsTsx1(){const{isInvited,actionBarHeight,ACTION_BAR_SAFE_AREA_PADDING,safeAreaTop,controlPadding}=this.__closure;return isInvited?actionBarHeight+ACTION_BAR_SAFE_AREA_PADDING+safeAreaTop:controlPadding;}" };
 let closure_5 = { code: "function StageChannelAnimationUtilsTsx2(){const{withTiming,paddingTop,TIMING_CONFIG}=this.__closure;return{paddingTop:withTiming(paddingTop.get(),TIMING_CONFIG)};}" };

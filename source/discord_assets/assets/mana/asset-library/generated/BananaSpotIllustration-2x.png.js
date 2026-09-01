@@ -1,9 +1,9 @@
-// Module ID: 6320
-// Function ID: 6321
+// Module ID: 6352
+// Function ID: 6353
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6320 (metadata)
+// Module 6352 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BananaSpotIllustration-2x.png.js");

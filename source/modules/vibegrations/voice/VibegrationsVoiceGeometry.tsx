@@ -1,10 +1,10 @@
-// Module ID: 14082
-// Function ID: 14083
+// Module ID: 14115
+// Function ID: 14116
 // Name: toListenerRelativePosition
 // Dependencies: [2]
 // Exports: toListenerRelativePosition
 
-// Module 14082 (toListenerRelativePosition)
+// Module 14115 (toListenerRelativePosition)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/vibegrations/voice/VibegrationsVoiceGeometry.tsx");

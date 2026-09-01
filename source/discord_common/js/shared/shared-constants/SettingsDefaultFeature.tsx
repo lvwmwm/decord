@@ -1,9 +1,9 @@
-// Module ID: 4149
-// Function ID: 4150
+// Module ID: 4179
+// Function ID: 4180
 // Name: SettingsDefaultFeature
 // Dependencies: [2]
 
-// Module 4149 (SettingsDefaultFeature)
+// Module 4179 (SettingsDefaultFeature)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/SettingsDefaultFeature.tsx");

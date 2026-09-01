@@ -1,16 +1,16 @@
-// Module ID: 11595
-// Function ID: 11596
+// Module ID: 11628
+// Function ID: 11629
 // Name: EntityBorderAppIcon
-// Dependencies: [17, 21, 712, 4448, 5461, 2]
+// Dependencies: [17, 21, 712, 4478, 5493, 2]
 // Exports: default
 
-// Module 11595 (EntityBorderAppIcon)
+// Module 11628 (EntityBorderAppIcon)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import preloadDefault from "preload" /* 5461 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import preloadDefault from "preload" /* 5493 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const View = get_ActivityIndicator.View;
 const jsx = jsxProd.jsx;

@@ -1,18 +1,18 @@
-// Module ID: 15747
-// Function ID: 15748
+// Module ID: 15783
+// Function ID: 15784
 // Name: AccountLinkLargeBanner
-// Dependencies: [19, 17, 1922, 1384, 21, 712, 5931, 9050, 4901, 4448, 647, 5921, 5941, 5569, 5036, 5519, 1297, 4444, 1236, 4896, 8823, 2]
+// Dependencies: [19, 17, 1922, 1384, 21, 712, 5963, 9088, 4933, 4478, 647, 5953, 5973, 5601, 5068, 5551, 1297, 4474, 1236, 4928, 8860, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 15747 (AccountLinkLargeBanner)
+// Module 15783 (AccountLinkLargeBanner)
 import ThemesDefault from "Themes" /* 712 */;
-import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4901 */;
-import map from "map" /* 9050 */;
+import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4933 */;
+import map from "map" /* 9088 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
 
 require = arg1;
@@ -59,7 +59,7 @@ function AccountLinkLargeBanner(arg0) {
     items3[2] = callback(View, obj6);
     obj3[1] = items3;
     items2[1] = callback2(View, obj3);
-    const obj7 = { user: null, size: null, guildId: "Array" };
+    const obj7 = { user: null, size: null, guildId: "r" };
     obj7[0] = stateFromStores;
     obj7[1] = tmp2(tmp3[16]).AvatarSizes.LARGE_48;
     items2[2] = callback(tmp2(tmp3[16]).Avatar, obj7);

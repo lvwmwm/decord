@@ -1,9 +1,9 @@
-// Module ID: 9352
-// Function ID: 9353
+// Module ID: 9391
+// Function ID: 9392
 // Name: isProtocolRegistered
 // Dependencies: [589, 709, 2]
 
-// Module 9352 (isProtocolRegistered)
+// Module 9391 (isProtocolRegistered)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

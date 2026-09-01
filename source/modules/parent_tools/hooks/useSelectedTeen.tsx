@@ -1,13 +1,13 @@
-// Module ID: 8737
-// Function ID: 8738
+// Module ID: 8774
+// Function ID: 8775
 // Name: useSelectedTeen
-// Dependencies: [1922, 7250, 647, 2]
+// Dependencies: [1922, 7282, 647, 2]
 // Exports: useSelectedTeen, useSelectedTeenId
 
-// Module 8737 (useSelectedTeen)
+// Module 8774 (useSelectedTeen)
 import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import closure_3 from "freshTeenActivityWithMap" /* 7250 */;
+import closure_3 from "freshTeenActivityWithMap" /* 7282 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/parent_tools/hooks/useSelectedTeen.tsx");

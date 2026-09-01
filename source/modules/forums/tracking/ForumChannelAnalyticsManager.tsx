@@ -1,9 +1,9 @@
-// Module ID: 7484
-// Function ID: 7485
+// Module ID: 7516
+// Function ID: 7517
 // Name: setFilterTagIds
 // Dependencies: [1387, 2]
 
-// Module 7484 (setFilterTagIds)
+// Module 7516 (setFilterTagIds)
 import set from "ensureGuildLoaded" /* 1387 */;
 import set from "set" /* 2 */;
 

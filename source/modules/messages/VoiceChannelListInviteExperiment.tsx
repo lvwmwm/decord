@@ -1,12 +1,12 @@
-// Module ID: 10905
-// Function ID: 10906
+// Module ID: 10943
+// Function ID: 10944
 // Name: getVoiceChannelListInviteExperiment
-// Dependencies: [4359, 2]
+// Dependencies: [4389, 2]
 // Exports: getVoiceChannelListInviteExperiment, useVoiceChannelListInviteExperiment
 
-// Module 10905 (getVoiceChannelListInviteExperiment)
+// Module 10943 (getVoiceChannelListInviteExperiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4359 */;
+import createExperiment from "createExperiment" /* 4389 */;
 
 const items = [{ id: 1, label: "Enable channel-list-style voice invite embed", config: { enabled: true } }];
 let closure_0 = createExperiment.createExperiment({ kind: "guild", id: "2026-05_voice_channel_list_invite_embed", label: "Voice Channel List Invite Embed", defaultConfig: { enabled: false }, treatments: items });

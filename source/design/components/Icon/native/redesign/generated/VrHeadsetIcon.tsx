@@ -1,14 +1,14 @@
-// Module ID: 14524
-// Function ID: 14525
+// Module ID: 14557
+// Function ID: 14558
 // Name: VrHeadsetIcon
-// Dependencies: [19, 21, 712, 4166, 14525, 2]
+// Dependencies: [19, 21, 712, 4196, 14558, 2]
 // Exports: VrHeadsetIcon
 
-// Module 14524 (VrHeadsetIcon)
+// Module 14557 (VrHeadsetIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14525 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 14558 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

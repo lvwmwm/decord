@@ -1,15 +1,15 @@
-// Module ID: 14818
-// Function ID: 14819
+// Module ID: 14851
+// Function ID: 14852
 // Name: radio
-// Dependencies: [4499, 7852, 10037, 10038, 1236, 589, 11031, 2]
+// Dependencies: [4529, 7884, 10076, 10077, 1236, 589, 11068, 2]
 
-// Module 14818 (radio)
+// Module 14851 (radio)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import handleAutomaticGainControlChange from "handleAutomaticGainControlChange" /* 10037 */;
-import getNoiseCancellationDeferredToSystem from "getNoiseCancellationDeferredToSystem" /* 10038 */;
-import closure_2 from "_detectH265HardwareDecode" /* 4499 */;
-import createToggle from "createToggle" /* 11031 */;
+import handleAutomaticGainControlChange from "handleAutomaticGainControlChange" /* 10076 */;
+import getNoiseCancellationDeferredToSystem from "getNoiseCancellationDeferredToSystem" /* 10077 */;
+import closure_2 from "_detectH265HardwareDecode" /* 4529 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 createToggle = {

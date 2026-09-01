@@ -1,12 +1,12 @@
-// Module ID: 15099
-// Function ID: 15100
+// Module ID: 15132
+// Function ID: 15133
 // Name: toggleLabFeature
-// Dependencies: [8592, 709, 2]
+// Dependencies: [8624, 709, 2]
 // Exports: toggleLabFeature
 
-// Module 15099 (toggleLabFeature)
+// Module 15132 (toggleLabFeature)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "getUserAgnosticState" /* 8592 */;
+import closure_2 from "getUserAgnosticState" /* 8624 */;
 
 let closure_3 = {};
 const result = require("set").fileFinishedImporting("modules/labs/LabFeatureActions.tsx");

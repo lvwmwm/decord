@@ -1,12 +1,12 @@
-// Module ID: 6044
-// Function ID: 6045
+// Module ID: 6076
+// Function ID: 6077
 // Name: STOREFRONT_MARKETING_GUILD_ID
-// Dependencies: [1929, 2]
+// Dependencies: [1934, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
-// Module 6044 (STOREFRONT_MARKETING_GUILD_ID)
+// Module 6076 (STOREFRONT_MARKETING_GUILD_ID)
 import set from "set" /* 2 */;
-import Environments2 from "Environments" /* 1929 */;
+import Environments2 from "Environments" /* 1934 */;
 
 const Environments = Environments2.Environments;
 let str = "1193841000108531764";

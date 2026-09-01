@@ -1,10 +1,10 @@
-// Module ID: 5977
-// Function ID: 5978
+// Module ID: 6009
+// Function ID: 6010
 // Name: useNavigatorShouldCrossfade
 // Dependencies: [19, 500, 1356, 2]
 // Exports: useNavigatorShouldCrossfade
 
-// Module 5977 (useNavigatorShouldCrossfade)
+// Module 6009 (useNavigatorShouldCrossfade)
 import context2 from "context" /* 1356 */;
 import closure_2 from "noop" /* 19 */;
 

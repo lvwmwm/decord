@@ -1,11 +1,11 @@
-// Module ID: 4110
-// Function ID: 4111
+// Module ID: 4140
+// Function ID: 4141
 // Name: createFromServer
-// Dependencies: [1931, 1924, 2]
+// Dependencies: [1936, 1924, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 4110 (createFromServer)
-import toJSDefault from "toJS" /* 1931 */;
+// Module 4140 (createFromServer)
+import toJSDefault from "toJS" /* 1936 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 
 toJSDefault;

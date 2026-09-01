@@ -1,18 +1,18 @@
-// Module ID: 15089
-// Function ID: 15090
+// Module ID: 15122
+// Function ID: 15123
 // Name: AppIcon
-// Dependencies: [19, 17, 8146, 21, 4448, 712, 4383, 1363, 2]
+// Dependencies: [19, 17, 8178, 21, 4478, 712, 4413, 1363, 2]
 // Exports: default
 
-// Module 15089 (AppIcon)
+// Module 15122 (AppIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import useThemeDefault from "useTheme" /* 4383 */;
+import useThemeDefault from "useTheme" /* 4413 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { getIconById } from "items" /* 8146 */;
+import { getIconById } from "items" /* 8178 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

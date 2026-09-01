@@ -1,24 +1,24 @@
-// Module ID: 17313
-// Function ID: 17314
+// Module ID: 17349
+// Function ID: 17350
 // Name: PriceTier
-// Dependencies: [32, 19, 17, 21, 4448, 712, 4444, 6049, 1236, 14794, 14790, 5461, 17314, 17308, 17287, 14801, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 712, 4474, 6081, 1236, 14827, 14823, 5493, 17350, 17344, 17323, 14834, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 17313 (PriceTier)
+// Module 17349 (PriceTier)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import preloadDefault from "preload" /* 5461 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6049 */;
-import getRoleEmojisAll from "getRoleEmojis" /* 14790 */;
-import getBenefitKey from "getBenefitKey" /* 14794 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 14801 */;
-import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 17314 */;
+import Text from "Text" /* 4474 */;
+import preloadDefault from "preload" /* 5493 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6081 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 14823 */;
+import getBenefitKey from "getBenefitKey" /* 14827 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 14834 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 17350 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function PriceTier(arg0) {

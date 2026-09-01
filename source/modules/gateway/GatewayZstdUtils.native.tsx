@@ -1,13 +1,13 @@
-// Module ID: 13271
-// Function ID: 13272
+// Module ID: 13304
+// Function ID: 13305
 // Name: supportsZstd
-// Dependencies: [17, 500, 13272, 2]
+// Dependencies: [17, 500, 13305, 2]
 // Exports: createZstdContextWeb, supportsZstd
 
-// Module 13271 (supportsZstd)
+// Module 13304 (supportsZstd)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 13272 */;
+import enforcingDefault from "enforcing" /* 13305 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const result = set.fileFinishedImporting("modules/gateway/GatewayZstdUtils.native.tsx");

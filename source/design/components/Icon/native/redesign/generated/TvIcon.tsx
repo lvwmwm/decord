@@ -1,14 +1,14 @@
-// Module ID: 9206
-// Function ID: 9207
+// Module ID: 9245
+// Function ID: 9246
 // Name: TvIcon
-// Dependencies: [19, 21, 712, 4166, 9207, 2]
+// Dependencies: [19, 21, 712, 4196, 9246, 2]
 // Exports: TvIcon
 
-// Module 9206 (TvIcon)
+// Module 9245 (TvIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 9207 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 9246 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

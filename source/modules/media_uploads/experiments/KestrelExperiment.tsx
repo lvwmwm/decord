@@ -1,10 +1,10 @@
-// Module ID: 5091
-// Function ID: 5092
+// Module ID: 5123
+// Function ID: 5124
 // Name: KESTREL_GA_UPLOAD_LIMIT_MB
 // Dependencies: [1468, 2]
 // Exports: getEffectiveKestrelLimit, getKestrelConfig, getKestrelVariantName
 
-// Module 5091 (KESTREL_GA_UPLOAD_LIMIT_MB)
+// Module 5123 (KESTREL_GA_UPLOAD_LIMIT_MB)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

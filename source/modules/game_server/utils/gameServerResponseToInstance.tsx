@@ -1,10 +1,10 @@
-// Module ID: 4357
-// Function ID: 4358
+// Module ID: 4387
+// Function ID: 4388
 // Name: gameServerResponseToInstance
 // Dependencies: [2]
 // Exports: default
 
-// Module 4357 (gameServerResponseToInstance)
+// Module 4387 (gameServerResponseToInstance)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/game_server/utils/gameServerResponseToInstance.tsx");

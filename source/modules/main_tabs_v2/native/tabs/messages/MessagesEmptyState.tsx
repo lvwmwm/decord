@@ -1,20 +1,20 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15642
+// Function ID: 15643
 // Name: MessagesEmptyState
-// Dependencies: [32, 19, 17, 21, 4448, 1493, 1499, 8855, 503, 5039, 14668, 15607, 4444, 1236, 4896, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 1493, 1499, 8892, 503, 5071, 14701, 15643, 4474, 1236, 4928, 2]
 // Exports: default
 
-// Module 15606 (MessagesEmptyState)
+// Module 15642 (MessagesEmptyState)
 import encodeProperties from "encodeProperties" /* 503 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import Text from "Text" /* 4444 */;
-import Button from "Button" /* 4896 */;
+import Text from "Text" /* 4474 */;
+import Button from "Button" /* 4928 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 ({ View: c5, Image: closure_6, ScrollView: error } = get_ActivityIndicator);
@@ -40,14 +40,14 @@ export default function MessagesEmptyState() {
   const tmp4 = callback(React.useState(0), 2);
   obj[0] = encodeProperties.ImpressionTypes.VIEW;
   obj[1] = encodeProperties.ImpressionNames.MESSAGES_EMPTY_NUX;
-  navigation(8855)(obj);
+  navigation(8892)(obj);
   if (tmp5 > 0) {
     width = tmp5;
   }
   const result = 0.9 * width;
-  let tmp7Result = tmp7(5039);
+  let tmp7Result = tmp7(5071);
   const isScreenLandscape = tmp7Result.useIsScreenLandscape();
-  tmp7Result = tmp7(14668);
+  tmp7Result = tmp7(14701);
   const items1 = [tmp.scrollViewContentContainer, ];
   let tmp18;
   if (isScreenLandscape) {
@@ -60,12 +60,12 @@ export default function MessagesEmptyState() {
   const obj2 = { style: tmp.container, onLayout: callback, children: null };
   const obj3 = { style: tmp.innerContainer, children: null };
   const obj4 = { style: tmp.imageContainer, children: null };
-  const obj5 = { resizeMode: "contain", source: tmp2(15607), style: null };
+  const obj5 = { resizeMode: "contain", source: tmp2(15643), style: null };
   let num = 350;
   if (result < 622) {
     num = result / 622 * 350;
   }
-  const tmp10 = navigation(8855);
+  const tmp10 = navigation(8892);
   const tmp17 = closure_7;
   const tmp21 = closure_6;
   obj5[2] = { height: num, width: Math.min(result, 622) };

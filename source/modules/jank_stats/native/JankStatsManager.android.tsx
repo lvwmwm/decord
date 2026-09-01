@@ -1,14 +1,14 @@
-// Module ID: 16952
-// Function ID: 16953
+// Module ID: 16988
+// Function ID: 16989
 // Name: handleAppStateUpdate
-// Dependencies: [676, 5454, 16953, 698, 7188, 2]
+// Dependencies: [676, 5486, 16989, 698, 7220, 2]
 
-// Module 16952 (handleAppStateUpdate)
+// Module 16988 (handleAppStateUpdate)
 import set from "set" /* 2 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5454 */;
-import getDeviceMetadata from "getDeviceMetadata" /* 7188 */;
-import enforcingDefault from "enforcing" /* 16953 */;
+import initializeDefault from "initialize" /* 5486 */;
+import getDeviceMetadata from "getDeviceMetadata" /* 7220 */;
+import enforcingDefault from "enforcing" /* 16989 */;
 import ME from "ME" /* 676 */;
 
 ({ AppStates: c3, AnalyticEvents: c4 } = ME);

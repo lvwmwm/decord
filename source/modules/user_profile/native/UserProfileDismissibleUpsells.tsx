@@ -1,18 +1,18 @@
-// Module ID: 12474
-// Function ID: 12475
+// Module ID: 12507
+// Function ID: 12508
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1922, 8524, 7145, 1384, 21, 4448, 712, 12475, 8526, 589, 4109, 10379, 1373, 1297, 4444, 1236, 5036, 5519, 4896, 8064, 11676, 2]
+// Dependencies: [19, 17, 1922, 8556, 7177, 1384, 21, 4478, 712, 12508, 8558, 589, 4139, 10418, 1373, 1297, 4474, 1236, 5068, 5551, 4928, 8096, 11709, 2]
 // Exports: default
 
-// Module 12474 (UserProfileDismissibleUpsells)
+// Module 12507 (UserProfileDismissibleUpsells)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY" /* 8524 */;
+import { TrackUserProfileActions } from "USER_PROFILE_TOOLTIP_DELAY" /* 8556 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: closure_8, jsxs: c9 } = jsxProd);

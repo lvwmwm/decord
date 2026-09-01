@@ -1,12 +1,12 @@
-// Module ID: 8207
-// Function ID: 8208
+// Module ID: 8239
+// Function ID: 8240
 // Name: useDiscountedPremiumPlan
-// Dependencies: [19, 6052, 589, 2]
+// Dependencies: [19, 6084, 589, 2]
 // Exports: useDiscountedPremiumPlan
 
-// Module 8207 (useDiscountedPremiumPlan)
+// Module 8239 (useDiscountedPremiumPlan)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "updateProduct" /* 6052 */;
+import closure_3 from "updateProduct" /* 6084 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumPlan.tsx");

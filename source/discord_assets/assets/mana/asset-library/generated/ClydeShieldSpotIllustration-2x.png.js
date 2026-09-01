@@ -1,9 +1,9 @@
-// Module ID: 6388
-// Function ID: 6389
+// Module ID: 6420
+// Function ID: 6421
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6388 (metadata)
+// Module 6420 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeShieldSpotIllustration-2x.png.js");

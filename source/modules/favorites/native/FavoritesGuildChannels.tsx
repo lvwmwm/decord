@@ -1,20 +1,20 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15862
+// Function ID: 15863
 // Name: FavoritesGuildChannels
-// Dependencies: [19, 15755, 21, 7743, 4903, 15827, 15818, 15828, 15794, 15688, 15754, 15833, 15656, 2]
+// Dependencies: [19, 15791, 21, 7775, 4935, 15863, 15854, 15864, 15830, 15724, 15790, 15869, 15692, 2]
 // Exports: default
 
-// Module 15826 (FavoritesGuildChannels)
+// Module 15862 (FavoritesGuildChannels)
 import noopAll from "noop" /* 19 */;
-import getFontScale from "getFontScale" /* 4903 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 7743 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 15688 */;
-import PX_8Default from "PX_8" /* 15754 */;
-import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 15794 */;
-import getMissingFavoriteThreadIds from "getMissingFavoriteThreadIds" /* 15827 */;
-import FavoritesGuildSuggestionsLoaderInnerDefault from "FavoritesGuildSuggestionsLoaderInner" /* 15828 */;
-import EmptyBodyDefault from "EmptyBody" /* 15833 */;
-import { useFavoritesGuildSuggestionCount as closure_3 } from "items" /* 15755 */;
+import getFontScale from "getFontScale" /* 4935 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 7775 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 15724 */;
+import PX_8Default from "PX_8" /* 15790 */;
+import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 15830 */;
+import getMissingFavoriteThreadIds from "getMissingFavoriteThreadIds" /* 15863 */;
+import FavoritesGuildSuggestionsLoaderInnerDefault from "FavoritesGuildSuggestionsLoaderInner" /* 15864 */;
+import EmptyBodyDefault from "EmptyBody" /* 15869 */;
+import { useFavoritesGuildSuggestionCount as closure_3 } from "items" /* 15791 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -61,9 +61,9 @@ export default function FavoritesGuildChannels(arg0) {
       const merged = Object.assign(tmp2Result);
       obj2.guildChannels = guildChannels;
       obj2.guildChannelsVersion = 0;
-      obj2.favoritesSuggestionsNoticeHeight = tmp4(15754).getFavoritesSuggestionsNoticeHeight(fontScale, tmp3, tmp);
-      tmp10Result = tmp10(tmp4(15656).ChannelList, obj2);
-      const tmp4Result = tmp4(15754);
+      obj2.favoritesSuggestionsNoticeHeight = tmp4(15790).getFavoritesSuggestionsNoticeHeight(fontScale, tmp3, tmp);
+      tmp10Result = tmp10(tmp4(15692).ChannelList, obj2);
+      const tmp4Result = tmp4(15790);
     }
     const obj3 = { children: null };
     items[1] = tmp10Result;

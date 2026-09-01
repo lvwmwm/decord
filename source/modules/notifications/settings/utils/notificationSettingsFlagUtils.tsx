@@ -1,10 +1,10 @@
-// Module ID: 10194
-// Function ID: 10195
+// Module ID: 10233
+// Function ID: 10234
 // Name: resetGuildUnreadFlags
 // Dependencies: [685, 1399, 2]
 // Exports: resetChannelUnreadFlags, resetGuildUnreadFlags, withChannelUnreadFlags, withGuildUnreadFlags
 
-// Module 10194 (resetGuildUnreadFlags)
+// Module 10233 (resetGuildUnreadFlags)
 import set from "set" /* 2 */;
 import hasFlagAll from "hasFlag" /* 1399 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;

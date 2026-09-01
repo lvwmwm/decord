@@ -1,28 +1,28 @@
-// Module ID: 12900
-// Function ID: 12901
+// Module ID: 12933
+// Function ID: 12934
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 4100, 1922, 21, 4448, 712, 5036, 500, 8886, 4444, 1297, 12901, 10610, 4167, 4949, 12902, 1236, 4642, 2]
+// Dependencies: [32, 19, 17, 4130, 1922, 21, 4478, 712, 5068, 500, 8923, 4474, 1297, 12934, 10648, 4197, 4981, 12935, 1236, 4674, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12900 (TitleWrapper)
+// Module 12933 (TitleWrapper)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import Button from "Button" /* 1297 */;
-import map from "map" /* 4167 */;
-import Text from "Text" /* 4444 */;
-import computeChannelName from "computeChannelName" /* 4642 */;
-import getChannelIcon from "getChannelIcon" /* 4949 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8886 */;
-import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10610 */;
-import registerAssetDefault from "registerAsset" /* 12901 */;
-import _modDef12902 from "module_12902" /* 12902 */;
+import map from "map" /* 4197 */;
+import Text from "Text" /* 4474 */;
+import computeChannelName from "computeChannelName" /* 4674 */;
+import getChannelIcon from "getChannelIcon" /* 4981 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8923 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10648 */;
+import registerAssetDefault from "registerAsset" /* 12934 */;
+import _modDef12935 from "module_12935" /* 12935 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "markAllUserIdListsStale" /* 4100 */;
+import closure_6 from "markAllUserIdListsStale" /* 4130 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function TitleWrapper(headerAccessibilityLabel) {
@@ -53,7 +53,7 @@ function TitleWrapper(headerAccessibilityLabel) {
     obj[5] = tmp5;
     obj[6] = tmp.wrapper;
     obj[7] = children;
-    tmp6Result = callback2(titleContentHeight(5036).PressableOpacity, obj);
+    tmp6Result = callback2(titleContentHeight(5068).PressableOpacity, obj);
     const tmp6 = callback2;
   }
   return tmp6Result;
@@ -169,7 +169,7 @@ function MemberCountText(arg0) {
   }
   obj[1] = memberCount;
   obj[3] = leadingAccessoryWidth;
-  const children = [closure_8(_modDef12902, obj), ];
+  const children = [closure_8(_modDef12935, obj), ];
   let tmp4Result = null;
   if (withSeparator) {
     tmp4Result = tmp4(Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "\u2022" });

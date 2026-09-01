@@ -1,19 +1,19 @@
-// Module ID: 10319
-// Function ID: 10320
+// Module ID: 10358
+// Function ID: 10359
 // Name: doSearchRequest
-// Dependencies: [1996, 10318, 676, 685, 4668, 10320, 10321, 530, 709, 12, 514, 1486, 9994, 1370, 1341, 4825, 1236, 698, 2]
+// Dependencies: [1996, 10357, 676, 685, 4700, 10359, 10360, 530, 709, 12, 514, 1486, 10033, 1370, 1341, 4857, 1236, 698, 2]
 // Exports: addFavoriteGIF, fetchSuggestions, fetchTrending, fetchTrendingGIFs, fetchTrendingSearchTerms, gifUrlKey, initializeSearch, removeFavoriteGIF, resetSearch, search, trackSearchResultViewed, trackSearchStart, trackSelectGIF
 
-// Module 10319 (doSearchRequest)
+// Module 10358 (doSearchRequest)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4668 */;
-import isRefreshableAttachmentUrlAll from "isRefreshableAttachmentUrl" /* 9994 */;
-import GIF_PROVIDER from "GIF_PROVIDER" /* 10320 */;
-import isKlipyProvider from "isKlipyProvider" /* 10321 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
+import isRefreshableAttachmentUrlAll from "isRefreshableAttachmentUrl" /* 10033 */;
+import GIF_PROVIDER from "GIF_PROVIDER" /* 10359 */;
+import isKlipyProvider from "isKlipyProvider" /* 10360 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "getFormatFromUrl" /* 10318 */;
+import closure_5 from "getFormatFromUrl" /* 10357 */;
 import ME from "ME" /* 676 */;
 import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
 import importDefaultResult from "apply" /* 12 */;
@@ -31,7 +31,7 @@ function doSearchRequest(q, arg1, limit) {
     obj = {};
   }
   let obj2 = collectGuildAnalyticsMetadataDefault;
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(10320).GIF_PROVIDER };
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(10359).GIF_PROVIDER };
   obj2.trackWithMetadata(constants.SEARCH_STARTED, obj);
   const HTTP = _require(530).HTTP;
   obj1 = { url: constants2.GIFS_SEARCH, query: null, oldFormErrors: true, rejectWithError: true };
@@ -44,7 +44,7 @@ function doSearchRequest(q, arg1, limit) {
     const startTime = obj.startTime;
     const merged = Object.assign(obj, Object.create(null));
     obj = { offset: 0, limit: null, totalResults: body.length };
-    let obj2 = q(10321);
+    let obj2 = q(10360);
     obj = {};
     const analyticsID = closure_1_5.getAnalyticsID();
     const merged1 = Object.assign(obj);
@@ -61,9 +61,9 @@ function doSearchRequest(q, arg1, limit) {
     obj2 = {};
     const merged3 = Object.assign(result);
     const merged4 = Object.assign(obj1);
-    obj2.gif_provider = q(10320).GIF_PROVIDER;
-    callback(4668).trackWithMetadata(closure_1_6.SEARCH_RESULT_VIEWED, obj2);
-    const obj6 = callback(4668);
+    obj2.gif_provider = q(10359).GIF_PROVIDER;
+    callback(4700).trackWithMetadata(closure_1_6.SEARCH_RESULT_VIEWED, obj2);
+    const obj6 = callback(4700);
     const tmp2 = q;
     callback(709).dispatch({ type: "GIF_PICKER_QUERY_SUCCESS", query: q, items: body });
   }, () => {
@@ -222,7 +222,7 @@ export const fetchTrendingGIFs = function fetchTrendingGIFs(closure_10) {
     obj = {};
   }
   let obj2 = collectGuildAnalyticsMetadataDefault;
-  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(10320).GIF_PROVIDER };
+  obj = { search_type: constants3.GIF, load_id: store.getAnalyticsID(), num_modifiers: Object.keys(obj).length, modifiers: obj, gif_provider: _require(10359).GIF_PROVIDER };
   obj2.trackWithMetadata(constants.SEARCH_STARTED, obj);
   const HTTP = _require(530).HTTP;
   obj1 = { url: constants2.GIFS_TRENDING_GIFS, query: null, oldFormErrors: true, rejectWithError: true };
@@ -267,9 +267,9 @@ export const gifUrlKey = function gifUrlKey(uri) {
   let tmp4 = uri;
   if (null != toURLSafeResult) {
     if (obj2.isAttachmentPathUrl(toURLSafeResult)) {
-      str = tmp5(9994).removeSignedUrlParameters(toURLSafeResult);
+      str = tmp5(10033).removeSignedUrlParameters(toURLSafeResult);
       str = str.toString();
-      const tmp5Result = tmp5(9994);
+      const tmp5Result = tmp5(10033);
     }
     tmp4 = str;
     obj2 = isRefreshableAttachmentUrlAll;

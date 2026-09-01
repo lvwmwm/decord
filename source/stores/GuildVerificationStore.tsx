@@ -1,14 +1,14 @@
-// Module ID: 5325
-// Function ID: 5326
+// Module ID: 5357
+// Function ID: 5358
 // Name: recomputeGuild
-// Dependencies: [1430, 1992, 1985, 1909, 1922, 676, 4079, 1399, 709, 11, 589, 2]
+// Dependencies: [1430, 1992, 1985, 1909, 1922, 676, 4109, 1399, 709, 11, 589, 2]
 
-// Module 5325 (recomputeGuild)
+// Module 5357 (recomputeGuild)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
-import GuildMemberFlags2 from "GuildMemberFlags" /* 4079 */;
+import GuildMemberFlags2 from "GuildMemberFlags" /* 4109 */;
 import closure_4 from "trackCommunicationDisabled" /* 1992 */;
 import closure_5 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_6 from "createGuildRecordFromRust" /* 1909 */;

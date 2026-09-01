@@ -1,13 +1,13 @@
-// Module ID: 8427
-// Function ID: 8428
+// Module ID: 8459
+// Function ID: 8460
 // Name: create
-// Dependencies: [32, 1307, 8423, 1373, 8422, 8421, 2]
+// Dependencies: [32, 1307, 8455, 1373, 8454, 8453, 2]
 
-// Module 8427 (create)
+// Module 8459 (create)
 import _mod1307 from "module_1307" /* 1307 */;
-import create from "create" /* 8421 */;
-import create2 from "create" /* 8422 */;
-import create3 from "create" /* 8423 */;
+import create from "create" /* 8453 */;
+import create2 from "create" /* 8454 */;
+import create3 from "create" /* 8455 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { MessageType } from "module_1307" /* 1307 */;
 
@@ -24,7 +24,7 @@ class MobileBottomSheet$Type extends MessageType {
       name: "button",
       kind: "message",
       T() {
-            return callback(8423).CTAButton;
+            return callback(8455).CTAButton;
           }
     };
     items[5] = {
@@ -41,7 +41,7 @@ class MobileBottomSheet$Type extends MessageType {
       name: "help_article",
       kind: "message",
       T() {
-            return callback(8422).HelpArticle;
+            return callback(8454).HelpArticle;
           }
     };
     obj = { no: 8, name: "header_localized", kind: "message", T: null };
@@ -57,7 +57,7 @@ class MobileBottomSheet$Type extends MessageType {
       name: "body_localized",
       kind: "message",
       T() {
-            return callback(8421).LocalizedString;
+            return callback(8453).LocalizedString;
           }
     };
     tmp = new tmp("discord_protos.premium_marketing.v1.MobileBottomSheet", items, T);
@@ -232,7 +232,7 @@ let items = [
     name: "button",
     kind: "message",
     T() {
-      return callback(8423).CTAButton;
+      return callback(8455).CTAButton;
     }
   },
   {
@@ -249,7 +249,7 @@ let items = [
     name: "help_article",
     kind: "message",
     T() {
-      return callback(8422).HelpArticle;
+      return callback(8454).HelpArticle;
     }
   },
 ,
@@ -268,7 +268,7 @@ items[8] = {
   name: "body_localized",
   kind: "message",
   T() {
-    return callback(8421).LocalizedString;
+    return callback(8453).LocalizedString;
   }
 };
 prototype = new prototype("discord_protos.premium_marketing.v1.MobileBottomSheet", items, tmp, T, MobileBottomSheet$Type, prototype, items);

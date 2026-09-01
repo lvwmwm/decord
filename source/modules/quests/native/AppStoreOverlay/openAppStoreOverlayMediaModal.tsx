@@ -1,13 +1,13 @@
-// Module ID: 11070
-// Function ID: 11071
+// Module ID: 11107
+// Function ID: 11108
 // Name: _openAppStoreOverlayMediaModal
-// Dependencies: [32, 5, 4156, 676, 1493, 8535, 2009, 8538, 8542, 11071, 1236, 38, 4415, 11072, 2]
+// Dependencies: [32, 5, 4186, 676, 1493, 8567, 2009, 8570, 8574, 11108, 1236, 38, 4445, 11109, 2]
 // Exports: openAppStoreOverlayMediaModal
 
-// Module 11070 (_openAppStoreOverlayMediaModal)
+// Module 11107 (_openAppStoreOverlayMediaModal)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "setContent" /* 4156 */;
+import closure_5 from "setContent" /* 4186 */;
 import { MEDIA_MODAL_KEY } from "ME" /* 676 */;
 
 const require = arg1;
@@ -29,7 +29,7 @@ function _openAppStoreOverlayMediaModal() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ function _openAppStoreOverlayMediaModal() {
               let initVideoStateStore;
               v0 = 1;
               c4 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -99,7 +99,7 @@ function _openAppStoreOverlayMediaModal() {
             dependencyMap = v0(closure_8, 3);
             setMediaViewerSources = 32.setMediaViewerSources;
             MediaViewerAnalytics = 5.MediaViewerAnalytics;
-            initVideoStateStore = 4156.initVideoStateStore;
+            initVideoStateStore = 4186.initVideoStateStore;
             const obj4 = { text: null, onPress: null };
             const intl = callback(c2[10]).intl;
             obj4[0] = intl.string(callback(c2[10]).t.lwQdjB);
@@ -148,7 +148,7 @@ function _openAppStoreOverlayMediaModal() {
               initVideoStateStore();
             });
             c4 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c4 = tmp;

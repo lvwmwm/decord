@@ -1,13 +1,13 @@
-// Module ID: 11604
-// Function ID: 11605
+// Module ID: 11637
+// Function ID: 11638
 // Name: BotsBanner
-// Dependencies: [19, 21, 11605, 11589, 11600, 1236, 2]
+// Dependencies: [19, 21, 11638, 11622, 11633, 1236, 2]
 // Exports: default
 
-// Module 11604 (BotsBanner)
+// Module 11637 (BotsBanner)
 import noopAll from "noop" /* 19 */;
-import BannerBaseDefault from "BannerBase" /* 11600 */;
-import useBannerBots from "useBannerBots" /* 11605 */;
+import BannerBaseDefault from "BannerBase" /* 11633 */;
+import useBannerBots from "useBannerBots" /* 11638 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

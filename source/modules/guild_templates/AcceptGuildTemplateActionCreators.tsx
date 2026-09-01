@@ -1,10 +1,10 @@
-// Module ID: 11340
-// Function ID: 11341
-// Dependencies: [5189, 1909, 676, 709, 530, 6154, 2]
+// Module ID: 11378
+// Function ID: 11379
+// Dependencies: [5221, 1909, 676, 709, 530, 6186, 2]
 
-// Module 11340
+// Module 11378
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "_handleConnectionOpen" /* 5189 */;
+import closure_3 from "_handleConnectionOpen" /* 5221 */;
 import closure_4 from "createGuildRecordFromRust" /* 1909 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -41,9 +41,9 @@ export default {
             }
           });
         } else {
-          callback(6154).transitionToGuild(body.id);
+          callback(6186).transitionToGuild(body.id);
           body(body);
-          const obj3 = callback(6154);
+          const obj3 = callback(6186);
         }
       }, (body) => {
         let obj = callback2(709);

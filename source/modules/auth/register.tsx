@@ -1,15 +1,15 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15548
+// Function ID: 15549
 // Name: _scorePassword
-// Dependencies: [5, 15514, 1218, 676, 1221, 4045, 698, 4681, 503, 4347, 10876, 709, 15515, 15516, 2]
+// Dependencies: [5, 15549, 1218, 676, 1221, 4075, 698, 4713, 503, 4377, 10914, 709, 15550, 15551, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 15513 (_scorePassword)
+// Module 15548 (_scorePassword)
 import encodeProperties from "encodeProperties" /* 503 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef4681 from "module_4681" /* 4681 */;
+import _modDef4713 from "module_4713" /* 4713 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import initialize from "initialize" /* 15514 */;
+import initialize from "initialize" /* 15549 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
 import result from "result" /* 1221 */;
@@ -34,7 +34,7 @@ function _scorePassword() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -128,7 +128,7 @@ function _registerPhone() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -149,7 +149,7 @@ function _registerPhone() {
               phone = phone.phone;
               c5 = 1;
               c6 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {
@@ -162,7 +162,7 @@ function _registerPhone() {
               return obj1;
             } else {
               c4 = 1;
-              let obj6 = callback(4681);
+              let obj6 = callback(4713);
               const obj2 = { url: null, body: null, trackedActionData: null, rejectWithError: false };
               obj2[0] = constants.REGISTER_PHONE;
               const obj3 = { phone: null };
@@ -180,10 +180,10 @@ function _registerPhone() {
           } else if (2 === tmp8) {
             c4 = 0;
             callback = dependencyMap;
-            if (callback instanceof phone(10876).CaptchaCancelError) {
+            if (callback instanceof phone(10914).CaptchaCancelError) {
               throw callback;
             } else {
-              const tmp23 = new callback(4347)(callback);
+              const tmp23 = new callback(4377)(callback);
               throw tmp23;
             }
           } else if (arg0 === 1) {
@@ -246,13 +246,13 @@ function registerFull(giftCodeSKUId) {
   let obj = dispatcherDefault;
   obj.dispatch({ type: "REGISTER" });
   if (null != birthday) {
-    tmp4(15515)(birthday, constants2.REGISTER);
+    tmp4(15550)(birthday, constants2.REGISTER);
     let tmp4Result = tmp4(698);
     obj = { source: null, action: null };
     obj[0] = constants5.REGISTER;
     obj[1] = constants4.AGE_GATE_SUBMITTED;
     tmp4Result.track(constants.AGE_GATE_ACTION, obj);
-    const diffResult = tmp4(4045)().diff(birthday, "years");
+    const diffResult = tmp4(4075)().diff(birthday, "years");
     if (diffResult >= 13) {
       if (diffResult < 13) {
         let str3 = "23+";
@@ -271,7 +271,7 @@ function registerFull(giftCodeSKUId) {
       obj[0] = str;
       tmp4Result.track(tmp14.USER_AGE_SUBMITTED, obj);
     }
-    const obj11 = tmp4(4045)();
+    const obj11 = tmp4(4075)();
     tmp14 = constants;
   }
   obj1 = { url: constants3.REGISTER, body: null, trackedActionData: null, rejectWithError: false };
@@ -303,8 +303,8 @@ function registerFull(giftCodeSKUId) {
   obj4[3] = preChecked;
   obj3[1] = obj4;
   obj1[2] = obj3;
-  const tmp4Result1 = _modDef4681;
-  return _modDef4681.post(obj1).then((body) => {
+  const tmp4Result1 = _modDef4713;
+  return _modDef4713.post(obj1).then((body) => {
     let obj = callback2(709);
     obj = { type: "REGISTER_SUCCESS", token: body.body.token };
     obj.dispatch(obj);
@@ -313,13 +313,13 @@ function registerFull(giftCodeSKUId) {
     const obj3 = callback2(709);
     callback2(698).track(constants.AGE_GATE_ACTION, { source: constants3.REGISTER, action: constants2.AGE_GATE_SUCCESS });
   }, (arg0) => {
-    if (arg0 instanceof callback(10876).CaptchaCancelError) {
+    if (arg0 instanceof callback(10914).CaptchaCancelError) {
       throw arg0;
     } else {
-      let obj = new callback2(4347)(arg0);
+      let obj = new callback2(4377)(arg0);
       if (null != obj.getFieldErrors("date_of_birth")) {
-        const result = callback3(15516).preventUnderageRegistration(constants3.REGISTER);
-        const obj2 = callback3(15516);
+        const result = callback3(15551).preventUnderageRegistration(constants3.REGISTER);
+        const obj2 = callback3(15551);
       }
       obj = { is_unique_username_registration: true, email_error_reason: null, phone_error_reason: null, password_error_reason: null, username_error_reason: null, global_name_error_reason: null, date_of_birth_error_reason: null, promotional_email_opt_in_error_reason: null, fingerprint_error_reason: null, invite_error_reason: null, gift_code_sku_id_error_reason: null, guild_template_code_error_reason: null, consent_error_reason: null, generic_error_reason: null };
       obj[1] = obj.getFirstFieldErrorMessage("email");

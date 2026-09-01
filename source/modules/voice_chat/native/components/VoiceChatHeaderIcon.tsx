@@ -1,22 +1,22 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10083
+// Function ID: 10084
 // Name: VoiceChatCallScreenHeaderIconInner
-// Dependencies: [19, 17, 4463, 676, 21, 4448, 712, 5460, 589, 9976, 12, 4174, 5036, 1297, 2]
+// Dependencies: [19, 17, 4493, 676, 21, 4478, 712, 5492, 589, 10015, 12, 4204, 5068, 1297, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 10044 (VoiceChatCallScreenHeaderIconInner)
+// Module 10083 (VoiceChatCallScreenHeaderIconInner)
 import applyDefault from "apply" /* 12 */;
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import ManaContext from "ManaContext" /* 4174 */;
-import PressableBase from "PressableBase" /* 5036 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9976 */;
+import ManaContext from "ManaContext" /* 4204 */;
+import PressableBase from "PressableBase" /* 5068 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10015 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "generateOldThreadCutoff" /* 4463 */;
+import closure_4 from "generateOldThreadCutoff" /* 4493 */;
 import { ThemeTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function VoiceChatCallScreenHeaderIconInner(onPress) {

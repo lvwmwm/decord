@@ -1,10 +1,10 @@
-// Module ID: 6113
-// Function ID: 6114
+// Module ID: 6145
+// Function ID: 6146
 // Name: getShouldObscureForSetting
 // Dependencies: [1306, 12, 2]
 // Exports: areSettingsEqual, getShouldObscureForSetting
 
-// Module 6113 (getShouldObscureForSetting)
+// Module 6145 (getShouldObscureForSetting)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
 import create from "create" /* 1306 */;

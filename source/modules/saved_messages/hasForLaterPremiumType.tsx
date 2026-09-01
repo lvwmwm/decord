@@ -1,10 +1,10 @@
-// Module ID: 7568
-// Function ID: 7569
+// Module ID: 7600
+// Function ID: 7601
 // Name: hasForLaterPremiumType
 // Dependencies: [1922, 1924, 1946, 589, 2]
 // Exports: default, useHasForLaterPremiumType
 
-// Module 7568 (hasForLaterPremiumType)
+// Module 7600 (hasForLaterPremiumType)
 import initialize from "initialize" /* 589 */;
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;

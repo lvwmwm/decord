@@ -1,18 +1,18 @@
-// Module ID: 15561
-// Function ID: 15562
+// Module ID: 15596
+// Function ID: 15597
 // Name: getActiveTabsRoute
-// Dependencies: [32, 19, 1387, 1981, 4269, 676, 1394, 4303, 4302, 4305, 2]
+// Dependencies: [32, 19, 1387, 1981, 4299, 676, 1394, 4333, 4332, 4335, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 15561 (getActiveTabsRoute)
-import coerceMainRoute from "coerceMainRoute" /* 4302 */;
-import getRootNavigationRef from "getRootNavigationRef" /* 4303 */;
-import useChatLayoutDefault from "useChatLayout" /* 4305 */;
+// Module 15596 (getActiveTabsRoute)
+import coerceMainRoute from "coerceMainRoute" /* 4332 */;
+import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
+import useChatLayoutDefault from "useChatLayout" /* 4335 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
 import closure_6 from "handleConnectionOpen" /* 1981 */;
-import closure_7 from "handleConnectionOpen" /* 4269 */;
+import closure_7 from "handleConnectionOpen" /* 4299 */;
 import { ME } from "ME" /* 676 */;
 import { isStaticChannelRoute } from "set" /* 1394 */;
 
@@ -123,7 +123,7 @@ function resolveChannelScreens(index, isChatLockedOpen) {
   for (let num = 0; num <= index.index; num = num + 1) {
     let tmp = arr2;
     let tmp2 = dependencyMap;
-    obj = arr2(4302);
+    obj = arr2(4332);
     let coerceChannelRouteResult = obj.coerceChannelRoute(index.routes[num]);
     let tmp4 = num;
     if (null != coerceChannelRouteResult) {

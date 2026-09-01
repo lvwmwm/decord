@@ -1,12 +1,12 @@
-// Module ID: 10061
-// Function ID: 10062
+// Module ID: 10100
+// Function ID: 10101
 // Name: useMuteAwareLocalVolume
-// Dependencies: [19, 4499, 589, 9742, 2]
+// Dependencies: [19, 4529, 589, 9781, 2]
 // Exports: default
 
-// Module 10061 (useMuteAwareLocalVolume)
+// Module 10100 (useMuteAwareLocalVolume)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "_detectH265HardwareDecode" /* 4499 */;
+import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/media_engine/useMuteAwareLocalVolume.tsx");

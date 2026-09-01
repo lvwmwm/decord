@@ -1,14 +1,14 @@
-// Module ID: 15463
-// Function ID: 15464
+// Module ID: 15497
+// Function ID: 15498
 // Name: pressable
-// Dependencies: [7250, 7852, 14397, 7313, 14401, 14394, 1236, 1306, 11031, 2]
+// Dependencies: [7282, 7884, 14430, 7345, 14434, 14427, 1236, 1306, 11068, 2]
 
-// Module 15463 (pressable)
+// Module 15497 (pressable)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7313 */;
-import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14397 */;
-import closure_2 from "freshTeenActivityWithMap" /* 7250 */;
-import createToggle from "createToggle" /* 11031 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7345 */;
+import useParentalControlledExplicitContentSettings from "useParentalControlledExplicitContentSettings" /* 14430 */;
+import closure_2 from "freshTeenActivityWithMap" /* 7282 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 createToggle = {
@@ -33,7 +33,7 @@ createToggle = {
   onPress: function onGoreContentFriendsDmOnPress() {
     selectedTeenId = selectedTeenId.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(14401);
+      let obj = selectedTeenId(14434);
       obj = { title: null, subtitle: null, handlePress: null, currentValue: null, excluded: null };
       const intl = selectedTeenId(1236).intl;
       obj[0] = intl.string(selectedTeenId(1236).t["16/3Bi"]);
@@ -47,8 +47,8 @@ createToggle = {
       obj[3] = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       const items = [selectedTeenId(1306).ExplicitContentRedaction.SHOW];
       obj[4] = items;
-      const result = selectedTeenId(14394).handleSensitiveMediaFilterPress(obj);
-      const obj2 = selectedTeenId(14394);
+      const result = selectedTeenId(14427).handleSensitiveMediaFilterPress(obj);
+      const obj2 = selectedTeenId(14427);
     }
   },
   unsearchable: true

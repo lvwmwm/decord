@@ -1,20 +1,20 @@
-// Module ID: 12269
-// Function ID: 12270
+// Module ID: 12302
+// Function ID: 12303
 // Name: EmojiIcon
-// Dependencies: [32, 19, 5369, 11540, 676, 21, 4448, 7479, 4913, 5957, 5589, 1236, 9649, 5592, 5960, 7651, 589, 5553, 1431, 2]
+// Dependencies: [32, 19, 5401, 11573, 676, 21, 4478, 7511, 4945, 5989, 5621, 1236, 9688, 5624, 5992, 7683, 589, 5585, 1431, 2]
 // Exports: default
 
-// Module 12269 (EmojiIcon)
+// Module 12302 (EmojiIcon)
 import initialize from "initialize" /* 589 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import EmojiDefault from "Emoji" /* 5553 */;
+import EmojiDefault from "Emoji" /* 5585 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "getEmojiToGroupId" /* 5369 */;
-import set from "set" /* 11540 */;
+import closure_5 from "getEmojiToGroupId" /* 5401 */;
+import set from "set" /* 11573 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function EmojiIcon(arg0) {

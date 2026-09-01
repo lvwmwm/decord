@@ -1,13 +1,13 @@
-// Module ID: 10720
-// Function ID: 10721
+// Module ID: 10758
+// Function ID: 10759
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1922, 589, 10706, 10551, 2]
+// Dependencies: [1922, 589, 10744, 10589, 2]
 // Exports: default
 
-// Module 10720 (useMobileCollectiblesPurchaseSKU)
+// Module 10758 (useMobileCollectiblesPurchaseSKU)
 import initialize from "initialize" /* 589 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10551 */;
-import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 10706 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10589 */;
+import hasAtLeastOneGPlaySynced from "hasAtLeastOneGPlaySynced" /* 10744 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

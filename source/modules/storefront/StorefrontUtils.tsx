@@ -1,17 +1,17 @@
-// Module ID: 6046
-// Function ID: 6047
+// Module ID: 6078
+// Function ID: 6079
 // Name: useSKUPrice
-// Dependencies: [19, 1996, 1922, 6047, 676, 1924, 12, 6048, 501, 1399, 589, 6041, 6049, 4109, 6056, 2]
+// Dependencies: [19, 1996, 1922, 6079, 676, 1924, 12, 6080, 501, 1399, 589, 6073, 6081, 4139, 6088, 2]
 // Exports: isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
-// Module 6046 (useSKUPrice)
+// Module 6078 (useSKUPrice)
 import applyDefault from "apply" /* 12 */;
-import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 6048 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6049 */;
+import StorefrontPromotionRewardType from "StorefrontPromotionRewardType" /* 6080 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6081 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "resetStoreState" /* 6047 */;
+import closure_6 from "resetStoreState" /* 6079 */;
 import ME from "ME" /* 676 */;
 import { PremiumTypes } from "GuildFeatures" /* 1924 */;
 
@@ -85,7 +85,9 @@ function useSKUPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "sa", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores1 };
+    obj = { userPrice: "r", pricesForPurchaseType: "disabled", purchaseType: false, storeHasPrice: false };
+    obj[2] = SELF_PURCHASE;
+    obj[3] = null != stateFromStores1;
     return obj;
   }, items1);
   userPrice = memo.userPrice;
@@ -379,7 +381,9 @@ export const useSKUOrbPrice = function useSKUOrbPrice(sku) {
         return obj;
       }
     }
-    obj = { userPrice: "r", pricesForPurchaseType: "sa", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores1 };
+    obj = { userPrice: "r", pricesForPurchaseType: "disabled", purchaseType: false, storeHasPrice: false };
+    obj[2] = SELF_PURCHASE;
+    obj[3] = null != stateFromStores1;
     return obj;
   }, items1);
   userPrice = memo.userPrice;

@@ -1,18 +1,18 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 11932
+// Function ID: 11933
 // Name: search
-// Dependencies: [1982, 4463, 5420, 5353, 12, 11, 589, 709, 2]
+// Dependencies: [1982, 4493, 5452, 5385, 12, 11, 589, 709, 2]
 
-// Module 11899 (search)
+// Module 11932 (search)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import NOOP from "NOOP" /* 5353 */;
-import NOOPDefault from "NOOP" /* 5353 */;
-import HeaderRecord from "HeaderRecord" /* 5420 */;
+import NOOP from "NOOP" /* 5385 */;
+import NOOPDefault from "NOOP" /* 5385 */;
+import HeaderRecord from "HeaderRecord" /* 5452 */;
 import comparator from "comparator" /* 1982 */;
-import closure_5 from "generateOldThreadCutoff" /* 4463 */;
+import closure_5 from "generateOldThreadCutoff" /* 4493 */;
 
 ({ GUILD_VOCAL_CHANNELS_KEY: c3, GUILD_SELECTABLE_CHANNELS_KEY: c4 } = comparator);
 HeaderRecord.AutocompleterResultTypes;

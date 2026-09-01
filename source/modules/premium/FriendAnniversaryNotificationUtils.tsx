@@ -1,15 +1,15 @@
-// Module ID: 15064
-// Function ID: 15065
+// Module ID: 15097
+// Function ID: 15098
 // Name: onFriendAnniversaryNotificationSettingsChanged
-// Dependencies: [676, 4103, 4136, 698, 2]
+// Dependencies: [676, 4133, 4166, 698, 2]
 // Exports: onFriendAnniversaryNotificationSettingsChanged
 
-// Module 15064 (onFriendAnniversaryNotificationSettingsChanged)
+// Module 15097 (onFriendAnniversaryNotificationSettingsChanged)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import AccountNotificationFlags from "AccountNotificationFlags" /* 4103 */;
-import explicitContentFromProto from "explicitContentFromProto" /* 4136 */;
+import AccountNotificationFlags from "AccountNotificationFlags" /* 4133 */;
+import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_4 = AccountNotificationFlags.NotificationSettingsUpdateType;

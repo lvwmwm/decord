@@ -1,9 +1,9 @@
-// Module ID: 6129
-// Function ID: 6130
+// Module ID: 6161
+// Function ID: 6162
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1218, 676, 4691, 6130, 6132, 698, 513, 6133, 1486, 4160, 2]
+// Dependencies: [5, 1218, 676, 4723, 6162, 6164, 698, 513, 6165, 1486, 4190, 2]
 
-// Module 6129 (createHandoffTokenWithLoadingModal)
+// Module 6161 (createHandoffTokenWithLoadingModal)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
@@ -62,7 +62,7 @@ function _redirectWithHandoffToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -95,7 +95,7 @@ function _redirectWithHandoffToken() {
               uRL = undefined;
               uRL = 1;
               c6 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -199,7 +199,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -225,7 +225,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
               uRL = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -269,7 +269,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
             uRL = new URL("" + location.protocol + c6.DEVELOPER_PORTAL_LOGIN_HANDOFF(obj3.nonce, closure_3, callback));
             obj1(obj3[10]).performURLNavigation(uRL.href);
             c6 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c6 = tmp;

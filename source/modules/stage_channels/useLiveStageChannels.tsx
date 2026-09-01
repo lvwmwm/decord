@@ -1,12 +1,12 @@
-// Module ID: 15739
-// Function ID: 15740
+// Module ID: 15775
+// Function ID: 15776
 // Name: useLiveStageChannels
-// Dependencies: [1387, 4091, 1392, 1395, 589, 1471, 11, 2]
+// Dependencies: [1387, 4121, 1392, 1395, 589, 1471, 11, 2]
 // Exports: default, getAllLiveStageChannels, useAllLiveStageChannels
 
-// Module 15739 (useLiveStageChannels)
+// Module 15775 (useLiveStageChannels)
 import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4121 */;
 import closure_5 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
 
 const require = arg1;

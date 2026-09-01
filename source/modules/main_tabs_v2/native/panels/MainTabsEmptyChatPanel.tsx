@@ -1,18 +1,18 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16315
+// Function ID: 16316
 // Name: MainTabsEmptyChatPanel
-// Dependencies: [19, 17, 21, 4448, 712, 11089, 1628, 10268, 16280, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 11126, 1628, 10307, 16316, 2]
 // Exports: default
 
-// Module 16279 (MainTabsEmptyChatPanel)
+// Module 16315 (MainTabsEmptyChatPanel)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import sum from "sum" /* 11089 */;
-import FavoritesEmptyStateDefault from "FavoritesEmptyState" /* 16280 */;
+import sum from "sum" /* 11126 */;
+import FavoritesEmptyStateDefault from "FavoritesEmptyState" /* 16316 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

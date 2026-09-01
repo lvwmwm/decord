@@ -1,14 +1,14 @@
-// Module ID: 12605
-// Function ID: 12606
+// Module ID: 12638
+// Function ID: 12639
 // Name: PlaystationNeutralIcon
-// Dependencies: [19, 21, 712, 4166, 12606, 2]
+// Dependencies: [19, 21, 712, 4196, 12639, 2]
 // Exports: PlaystationNeutralIcon
 
-// Module 12605 (PlaystationNeutralIcon)
+// Module 12638 (PlaystationNeutralIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 12606 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 12639 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

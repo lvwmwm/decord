@@ -1,14 +1,14 @@
-// Module ID: 6445
-// Function ID: 6446
+// Module ID: 6477
+// Function ID: 6478
 // Name: DisguiseSpotIllustration
-// Dependencies: [21, 5461, 6446, 2]
+// Dependencies: [21, 5493, 6478, 2]
 // Exports: DisguiseSpotIllustration
 
-// Module 6445 (DisguiseSpotIllustration)
+// Module 6477 (DisguiseSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6446 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6478 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DisguiseSpotIllustration.native.tsx");

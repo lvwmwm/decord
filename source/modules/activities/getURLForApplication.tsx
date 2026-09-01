@@ -1,12 +1,12 @@
-// Module ID: 9428
-// Function ID: 9429
+// Module ID: 9467
+// Function ID: 9468
 // Name: getURLForApplication
-// Dependencies: [8467, 8466, 2]
+// Dependencies: [8499, 8498, 2]
 // Exports: default, getNonTestModeUrlForApplication, isUsingDevShelfActivityUrlOverride
 
-// Module 9428 (getURLForApplication)
-import closure_0 from "reset" /* 8467 */;
-import closure_1 from "initialize" /* 8466 */;
+// Module 9467 (getURLForApplication)
+import closure_0 from "reset" /* 8499 */;
+import closure_1 from "initialize" /* 8498 */;
 
 const result = require("set").fileFinishedImporting("modules/activities/getURLForApplication.tsx");
 

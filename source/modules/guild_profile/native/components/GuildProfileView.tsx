@@ -1,27 +1,27 @@
-// Module ID: 8977
-// Function ID: 8978
+// Module ID: 9014
+// Function ID: 9015
 // Name: GuildProfileBackground
-// Dependencies: [19, 17, 1909, 676, 21, 1364, 4174, 4448, 712, 589, 1426, 1493, 1431, 8978, 4383, 4167, 8979, 4908, 8980, 4444, 8982, 8989, 2]
+// Dependencies: [19, 17, 1909, 676, 21, 1364, 4204, 4478, 712, 589, 1426, 1493, 1431, 9015, 4413, 4197, 9016, 4940, 9017, 4474, 9019, 9026, 2]
 // Exports: default, getBackgroundForProfile
 
-// Module 8977 (GuildProfileBackground)
+// Module 9014 (GuildProfileBackground)
 import ThemesDefault from "Themes" /* 712 */;
 import isThemeLight from "isThemeLight" /* 1364 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import map from "map" /* 4167 */;
-import ManaContext from "ManaContext" /* 4174 */;
-import useThemeDefault from "useTheme" /* 4383 */;
-import LinearGradientDefault from "LinearGradient" /* 4908 */;
-import useProfilePrimaryColor from "useProfilePrimaryColor" /* 8979 */;
-import stylesDefault from "styles" /* 8980 */;
-import ClickableGameIconDefault from "ClickableGameIcon" /* 8982 */;
-import TraitEmojiDefault from "TraitEmoji" /* 8989 */;
+import map from "map" /* 4197 */;
+import ManaContext from "ManaContext" /* 4204 */;
+import useThemeDefault from "useTheme" /* 4413 */;
+import LinearGradientDefault from "LinearGradient" /* 4940 */;
+import useProfilePrimaryColor from "useProfilePrimaryColor" /* 9016 */;
+import stylesDefault from "styles" /* 9017 */;
+import ClickableGameIconDefault from "ClickableGameIcon" /* 9019 */;
+import TraitEmojiDefault from "TraitEmoji" /* 9026 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "createGuildRecordFromRust" /* 1909 */;
 import { GuildFeatures } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function GuildProfileBackground(guildProfile) {
@@ -41,7 +41,7 @@ function GuildProfileBackground(guildProfile) {
     if (null != guildProfile.customBanner) {
       obj = { id: null, splash: null, size: null };
       ({ id: obj3[0], customBanner: obj3[1] } = guildProfile);
-      obj[2] = tmp3(8978)() * useWindowDimensionsDefault().width;
+      obj[2] = tmp3(9015)() * useWindowDimensionsDefault().width;
       obj = { style: null, source: null };
       obj[0] = tmp4.imageBanner;
       obj[1] = tmp3(1431).getGuildDiscoverySplashSource(obj);
@@ -120,7 +120,7 @@ export default function GuildProfileView(guildProfile) {
   if (tmp5Result) {
     obj = { variant: "text-md/medium", color: "text-subtle", children: null };
     obj[2] = guildProfile.description;
-    tmp5Result = tmp5(guildProfile(4444).Text, obj);
+    tmp5Result = tmp5(guildProfile(4474).Text, obj);
   }
   const items2 = [tmp5Result, callback(ClickableGameIconDefault, { profile: guildProfile }), callback(TraitEmojiDefault, { profile: guildProfile })];
   obj[1] = items2;

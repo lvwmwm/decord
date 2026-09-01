@@ -1,20 +1,20 @@
-// Module ID: 12635
-// Function ID: 12636
+// Module ID: 12668
+// Function ID: 12669
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 676, 5969, 21, 4448, 712, 12636, 8498, 12723, 12724, 5503, 4908, 2]
+// Dependencies: [32, 19, 17, 676, 6001, 21, 4478, 712, 12669, 8530, 12756, 12757, 5535, 4940, 2]
 // Exports: default
 
-// Module 12635 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 12668 (UserProfileApplicationWidgetTopHeroLayout)
 import ThemesDefault from "Themes" /* 712 */;
-import LinearGradientDefault from "LinearGradient" /* 4908 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5503 */;
+import LinearGradientDefault from "LinearGradient" /* 4940 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5535 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { HorizontalGradient } from "ME" /* 676 */;
-import { CARD_PADDING } from "ARBITRARY_LARGE_OFFSET" /* 5969 */;
+import { CARD_PADDING } from "ARBITRARY_LARGE_OFFSET" /* 6001 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ Image: c5, View: closure_6 } = get_ActivityIndicator);
@@ -40,28 +40,28 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   let _require;
   const tmp = callback4();
   [tmp3, c0] = callback(React.useState(null), 2);
-  let obj = _require(12636);
+  let obj = _require(12669);
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  obj1 = _require(12636);
+  obj1 = _require(12669);
   const textComponentValues1 = obj1.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  let obj2 = _require(12636);
+  let obj2 = _require(12669);
   const textComponentValues2 = obj2.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
-  let obj3 = _require(12636);
+  let obj3 = _require(12669);
   const hero_image = topConfig.components.hero_image;
   let image;
   const textComponentValues3 = obj3.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (hero_image != null) {
     image = hero_image.fields.image;
   }
-  const items = [_require(12636).ResolvedValueType.MEDIA];
+  const items = [_require(12669).ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   const tmp2 = callback(React.useState(null), 2);
   obj = { style: tmp.root, children: null };
   const items1 = [header.header, , ];
   obj = { style: tmp.contentRow, children: null };
   obj1 = { style: tmp.heroText, children: null };
-  const userProfileCardRadius = _require(8498).useUserProfileCardRadius();
-  const items2 = [callback2(_require(12723).FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), callback2(_require(12723).FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), callback2(_require(12723).FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), callback2(_require(12723).FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
+  const userProfileCardRadius = _require(8530).useUserProfileCardRadius();
+  const items2 = [callback2(_require(12756).FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), callback2(_require(12756).FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), callback2(_require(12756).FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), callback2(_require(12756).FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
   obj1[1] = items2;
   const items3 = [callback3(closure_6, obj1), ];
   obj2 = { style: tmp.heroImageColumn, children: null };
@@ -69,7 +69,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   if (tmp15Result) {
     obj3 = { style: null };
     obj3[0] = tmp.heroImageSkeleton;
-    tmp15Result = tmp15(tmp4(12724).ImageSkeleton, obj3);
+    tmp15Result = tmp15(tmp4(12757).ImageSkeleton, obj3);
   }
   obj2[1] = tmp15Result;
   items3[1] = callback2(closure_6, obj2);

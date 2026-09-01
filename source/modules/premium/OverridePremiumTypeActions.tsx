@@ -1,12 +1,12 @@
-// Module ID: 15247
-// Function ID: 15248
+// Module ID: 15281
+// Function ID: 15282
 // Name: updateClientPremiumTypeOverride
-// Dependencies: [1922, 709, 7465, 2]
+// Dependencies: [1922, 709, 7497, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 15247 (updateClientPremiumTypeOverride)
+// Module 15281 (updateClientPremiumTypeOverride)
 import dispatcherDefault from "dispatcher" /* 709 */;
-import createMessage from "createMessage" /* 7465 */;
+import createMessage from "createMessage" /* 7497 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 
 require = arg1;

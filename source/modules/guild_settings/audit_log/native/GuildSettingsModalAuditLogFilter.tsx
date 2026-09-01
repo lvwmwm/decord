@@ -1,19 +1,19 @@
-// Module ID: 17093
-// Function ID: 17094
+// Module ID: 17129
+// Function ID: 17130
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1922, 17084, 676, 21, 4448, 712, 1236, 4292, 17086, 1628, 1499, 5422, 17094, 10641, 7662, 5567, 1297, 10073, 17095, 6189, 8873, 8073, 5907, 2]
+// Dependencies: [32, 19, 17, 1922, 17120, 676, 21, 4478, 712, 1236, 4322, 17122, 1628, 1499, 5454, 17130, 10679, 7694, 5599, 1297, 10112, 17131, 6221, 8910, 8105, 5939, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 17093 (GuildSettingsModalAuditLogFilter)
+// Module 17129 (GuildSettingsModalAuditLogFilter)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "AuditLogActions" /* 17084 */;
+import closure_7 from "AuditLogActions" /* 17120 */;
 import { AuditLogFilterTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = jsxProd);
@@ -235,8 +235,8 @@ export const createAuditLogFilterUserData = function createAuditLogFilterUserDat
 };
 export const createAuditLogFilterActionData = function createAuditLogFilterActionData(closure_4) {
   const _require = closure_4;
-  const obj = _require(17086);
-  const mapped = _require(17086).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
+  const obj = _require(17122);
+  const mapped = _require(17122).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
   return mapped.sort((selected, selected2) => {
     let num = -1;
     if (!selected.selected) {

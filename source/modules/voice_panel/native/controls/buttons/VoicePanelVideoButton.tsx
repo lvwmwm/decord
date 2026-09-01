@@ -1,19 +1,19 @@
-// Module ID: 16740
-// Function ID: 16741
+// Module ID: 16776
+// Function ID: 16777
 // Name: VideoButtonRive
-// Dependencies: [19, 17, 9496, 1387, 1909, 4499, 4091, 4512, 21, 11806, 16728, 589, 7439, 4827, 16741, 9735, 9514, 16729, 1236, 4174, 10154, 12444, 2]
+// Dependencies: [19, 17, 9535, 1387, 1909, 4529, 4121, 4542, 21, 11839, 16764, 589, 7471, 4859, 16777, 9774, 9553, 16765, 1236, 4204, 10193, 12477, 2]
 // Exports: default
 
-// Module 16740 (VideoButtonRive)
-import ManaContext from "ManaContext" /* 4174 */;
+// Module 16776 (VideoButtonRive)
+import ManaContext from "ManaContext" /* 4204 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "initialize" /* 9496 */;
+import closure_5 from "initialize" /* 9535 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "_detectH265HardwareDecode" /* 4499 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4091 */;
-import { Features } from "DesktopSources" /* 4512 */;
+import closure_8 from "_detectH265HardwareDecode" /* 4529 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4121 */;
+import { Features } from "DesktopSources" /* 4542 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -27,9 +27,9 @@ function VideoButtonRive(arg0) {
   }
   obj[1] = str;
   if (isVideoEnabled) {
-    let VideoSlashIcon = tmp3(10154).VideoIcon;
+    let VideoSlashIcon = tmp3(10193).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(12444).VideoSlashIcon;
+    VideoSlashIcon = tmp3(12477).VideoSlashIcon;
   }
   obj[2] = <VideoSlashIcon color={color} />;
   obj[1] = jsx(ManaContext.CameraRive, { dataBinding: { fill: color, on: isVideoEnabled }, defaultViewModelInstance: null, fallback: null });

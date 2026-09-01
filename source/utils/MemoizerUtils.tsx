@@ -1,9 +1,9 @@
-// Module ID: 7540
-// Function ID: 7541
+// Module ID: 7572
+// Function ID: 7573
 // Name: set
 // Dependencies: [2]
 
-// Module 7540 (set)
+// Module 7572 (set)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("utils/MemoizerUtils.tsx");

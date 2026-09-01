@@ -1,14 +1,14 @@
-// Module ID: 4401
-// Function ID: 4402
+// Module ID: 4431
+// Function ID: 4432
 // Name: XLargeIcon
-// Dependencies: [19, 21, 712, 4166, 4402, 2]
+// Dependencies: [19, 21, 712, 4196, 4432, 2]
 // Exports: XLargeIcon
 
-// Module 4401 (XLargeIcon)
+// Module 4431 (XLargeIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 4402 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 4432 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

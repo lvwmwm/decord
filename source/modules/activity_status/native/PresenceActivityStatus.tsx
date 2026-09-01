@@ -1,17 +1,17 @@
-// Module ID: 9210
-// Function ID: 9211
+// Module ID: 9249
+// Function ID: 9250
 // Name: PresenceActivityStatus
-// Dependencies: [19, 676, 21, 7452, 9160, 9211, 9212, 9206, 9214, 9205, 9208, 2]
+// Dependencies: [19, 676, 21, 7484, 9199, 9250, 9251, 9245, 9253, 9244, 9247, 2]
 // Exports: default
 
-// Module 9210 (PresenceActivityStatus)
+// Module 9249 (PresenceActivityStatus)
 import noopAll from "noop" /* 19 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7452 */;
-import GameControllerIcon from "GameControllerIcon" /* 9160 */;
-import TvIcon from "TvIcon" /* 9206 */;
-import AppsIcon2 from "AppsIcon" /* 9211 */;
-import MusicIcon from "MusicIcon" /* 9212 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 9214 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7484 */;
+import GameControllerIcon from "GameControllerIcon" /* 9199 */;
+import TvIcon from "TvIcon" /* 9245 */;
+import AppsIcon2 from "AppsIcon" /* 9250 */;
+import MusicIcon from "MusicIcon" /* 9251 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 9253 */;
 import { ActivityTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -60,7 +60,7 @@ export default function PresenceActivityStatus(hideText) {
     let obj = { icon: null, style: null };
     obj[0] = AppsIcon;
     obj[1] = iconStyle;
-    tmp12 = callback(tmp(9205), obj);
+    tmp12 = callback(tmp(9244), obj);
   }
   const children = [tmp12, ];
   let tmp15 = !flag;
@@ -69,7 +69,7 @@ export default function PresenceActivityStatus(hideText) {
     obj[0] = textStyle;
     obj[1] = maxFontSizeMultiplier;
     obj[2] = getActivityStatusTextDefault(activity, true).text;
-    tmp15 = callback(tmp(9208), obj);
+    tmp15 = callback(tmp(9247), obj);
   }
   children[1] = tmp15;
   return closure_6(closure_5, { children });

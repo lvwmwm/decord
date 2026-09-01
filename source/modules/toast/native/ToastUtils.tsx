@@ -1,29 +1,29 @@
-// Module ID: 4163
-// Function ID: 4164
+// Module ID: 4193
+// Function ID: 4194
 // Name: presentAddedFriendToast
-// Dependencies: [676, 4164, 1236, 4165, 4385, 4387, 4389, 4391, 4393, 4395, 4397, 4399, 1431, 4401, 4403, 4406, 514, 4408, 4411, 2]
+// Dependencies: [676, 4194, 1236, 4195, 4415, 4417, 4419, 4421, 4423, 4425, 4427, 4429, 1431, 4431, 4433, 4436, 514, 4438, 4441, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 4163 (presentAddedFriendToast)
+// Module 4193 (presentAddedFriendToast)
 import set from "set" /* 2 */;
 import v1 from "v1" /* 514 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import dispatcherDefault from "dispatcher" /* 4164 */;
-import FriendsIcon from "FriendsIcon" /* 4165 */;
-import UserPlatformIcon from "UserPlatformIcon" /* 4387 */;
-import UserMinusIcon from "UserMinusIcon" /* 4389 */;
-import LinkIcon from "LinkIcon" /* 4391 */;
-import SendMessageIcon from "SendMessageIcon" /* 4393 */;
-import CopyIcon from "CopyIcon" /* 4395 */;
-import DownloadIcon from "DownloadIcon" /* 4397 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4399 */;
-import XLargeIcon2 from "XLargeIcon" /* 4401 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4403 */;
-import TrashIcon from "TrashIcon" /* 4406 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4408 */;
-import ClockIcon from "ClockIcon" /* 4411 */;
+import dispatcherDefault from "dispatcher" /* 4194 */;
+import FriendsIcon from "FriendsIcon" /* 4195 */;
+import UserPlatformIcon from "UserPlatformIcon" /* 4417 */;
+import UserMinusIcon from "UserMinusIcon" /* 4419 */;
+import LinkIcon from "LinkIcon" /* 4421 */;
+import SendMessageIcon from "SendMessageIcon" /* 4423 */;
+import CopyIcon from "CopyIcon" /* 4425 */;
+import DownloadIcon from "DownloadIcon" /* 4427 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4429 */;
+import XLargeIcon2 from "XLargeIcon" /* 4431 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4433 */;
+import TrashIcon from "TrashIcon" /* 4436 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4438 */;
+import ClockIcon from "ClockIcon" /* 4441 */;
 
 const VerificationCriteria = ME.VerificationCriteria;
 const result = set.fileFinishedImporting("modules/toast/native/ToastUtils.tsx");
@@ -49,7 +49,7 @@ export const presentFriendRequestAcceptedToast = function presentFriendRequestAc
     obj[0] = username.username;
     stringResult = intl.formatToPlainString(getSystemLocale.t.b3eoD4, obj);
   }
-  obj = { key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp2(4385).UserPlusIcon, iconColor: "status-positive" };
+  obj = { key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp2(4415).UserPlusIcon, iconColor: "status-positive" };
   obj.open(obj);
 };
 export const presentGameFriendRequestAcceptedToast = function presentGameFriendRequestAcceptedToast() {
@@ -185,9 +185,9 @@ export const presentNoiseCancellation = function presentNoiseCancellation(arg0) 
   }
   obj = { key: "NOISE_CANCELLATION_TOGGLE", content: stringResult, IconComponent: null, iconColor: null };
   if (arg0) {
-    let XLargeIcon = tmp4(4399).CheckmarkLargeIcon;
+    let XLargeIcon = tmp4(4429).CheckmarkLargeIcon;
   } else {
-    XLargeIcon = tmp4(4401).XLargeIcon;
+    XLargeIcon = tmp4(4431).XLargeIcon;
   }
   obj[2] = XLargeIcon;
   let str = "icon-feedback-critical";

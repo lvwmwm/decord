@@ -1,10 +1,10 @@
-// Module ID: 14580
-// Function ID: 14581
+// Module ID: 14613
+// Function ID: 14614
 // Name: useVisibilityTransition
-// Dependencies: [32, 19, 4187, 4449, 2]
+// Dependencies: [32, 19, 4217, 4479, 2]
 // Exports: useVisibilityTransition
 
-// Module 14580 (useVisibilityTransition)
+// Module 14613 (useVisibilityTransition)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 

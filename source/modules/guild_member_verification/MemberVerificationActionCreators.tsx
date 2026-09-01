@@ -1,16 +1,16 @@
-// Module ID: 5527
-// Function ID: 5528
+// Module ID: 5559
+// Function ID: 5560
 // Name: _fetchVerificationForm
-// Dependencies: [5, 1984, 1992, 4432, 1922, 676, 530, 4433, 709, 5528, 5441, 4272, 5532, 4825, 1236, 4346, 698, 2]
+// Dependencies: [5, 1984, 1992, 4462, 1922, 676, 530, 4463, 709, 5560, 5473, 4302, 5564, 4857, 1236, 4376, 698, 2]
 // Exports: showCoachmark
 
-// Module 5527 (_fetchVerificationForm)
+// Module 5559 (_fetchVerificationForm)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "initialize" /* 1984 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "updateInvite" /* 4432 */;
+import closure_6 from "updateInvite" /* 4462 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
@@ -107,7 +107,7 @@ function _updateVerificationForm() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -160,7 +160,7 @@ function _updateVerificationForm() {
             obj4[2] = obj5;
             obj4.dispatch(obj4);
             c7 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c7 = tmp;
@@ -197,7 +197,7 @@ function _updateVerificationFormDescription() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -248,7 +248,7 @@ function _updateVerificationFormDescription() {
             obj4[2] = obj5;
             obj4.dispatch(obj4);
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c5 = tmp;
@@ -285,7 +285,7 @@ function _enableVerificationForm() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -323,7 +323,7 @@ function _enableVerificationForm() {
             return obj;
           } else {
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp5) {
           dependencyMap = tmp;
@@ -362,7 +362,7 @@ function _submitVerificationForm() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -386,7 +386,7 @@ function _submitVerificationForm() {
               body = undefined;
               anyErrorMessage = 1;
               c9 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -410,7 +410,7 @@ function _submitVerificationForm() {
                 obj2[0] = { isPending: false };
                 const result = obj11.updateImpersonatedData(callback, obj2);
                 c9 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } else {
                 c7 = 1;
                 const HTTP = callback(num9[6]).HTTP;

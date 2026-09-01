@@ -1,24 +1,24 @@
-// Module ID: 4705
-// Function ID: 4706
+// Module ID: 4737
+// Function ID: 4738
 // Name: createMinimalMessageRecord
-// Dependencies: [4706, 4101, 1930, 1218, 4100, 1922, 676, 4707, 4431, 4714, 11, 4719, 4720, 4817, 4045, 4818, 4820, 2]
+// Dependencies: [4738, 4131, 1935, 1218, 4130, 1922, 676, 4739, 4461, 4746, 11, 4751, 4752, 4849, 4075, 4850, 4852, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 4705 (createMinimalMessageRecord)
+// Module 4737 (createMinimalMessageRecord)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import hooksDefault from "hooks" /* 4045 */;
-import getPathsFromURLDefault from "getPathsFromURL" /* 4431 */;
-import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4714 */;
-import isMentionedDefault from "isMentioned" /* 4719 */;
-import _resolveGiftCode from "_resolveGiftCode" /* 4720 */;
-import transformMessagePollDefault from "transformMessagePoll" /* 4817 */;
-import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4820 */;
-import closure_3 from "createFromServer" /* 4706 */;
-import hasFlag from "hasFlag" /* 4101 */;
-import closure_6 from "hasFlag" /* 4101 */;
-import importDefaultResult from "createdAt" /* 1930 */;
+import hooksDefault from "hooks" /* 4075 */;
+import getPathsFromURLDefault from "getPathsFromURL" /* 4461 */;
+import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4746 */;
+import isMentionedDefault from "isMentioned" /* 4751 */;
+import _resolveGiftCode from "_resolveGiftCode" /* 4752 */;
+import transformMessagePollDefault from "transformMessagePoll" /* 4849 */;
+import getStickerExtensionFromFormatType from "getStickerExtensionFromFormatType" /* 4852 */;
+import closure_3 from "createFromServer" /* 4738 */;
+import hasFlag from "hasFlag" /* 4131 */;
+import closure_6 from "hasFlag" /* 4131 */;
+import importDefaultResult from "createdAt" /* 1935 */;
 import closure_8 from "fetchFingerprint" /* 1218 */;
-import closure_9 from "markAllUserIdListsStale" /* 4100 */;
+import closure_9 from "markAllUserIdListsStale" /* 4130 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 
@@ -45,8 +45,8 @@ function createMinimalMessageRecord(timestamp) {
   } else {
     const embeds = timestamp.embeds;
     const mapped = embeds.map((footer) => message2(closure_1_2[15]).sanitizeEmbed(message2.channel_id, message2.id, footer));
-    items = _require(4818).mergeEmbedsOnURL(mapped);
-    const obj2 = _require(4818);
+    items = _require(4850).mergeEmbedsOnURL(mapped);
+    const obj2 = _require(4850);
   }
   obj.embeds = items;
   const date = new Date(timestamp.timestamp);
@@ -54,7 +54,7 @@ function createMinimalMessageRecord(timestamp) {
   if (components == null) {
     components = [];
   }
-  obj.components = _require(4707).transformComponents(components);
+  obj.components = _require(4739).transformComponents(components);
   const NON_PARSED = constants3.NON_PARSED;
   if (NON_PARSED.has(timestamp.type)) {
     let items1 = [];
@@ -163,7 +163,7 @@ function createMessageRecord(message, message) {
   obj.mentionRoles = mention_roles;
   obj.mentionChannels = mention_channels;
   obj.messageReference = message.message_reference;
-  let tmp9Result = tmp9(4719);
+  let tmp9Result = tmp9(4751);
   obj1 = { userId: store.getId(), channelId: message.channel_id, mentionEveryone: null, mentionUsers: null, mentionRoles: null };
   let flag = message.mention_everyone;
   if (flag == null) {
@@ -173,7 +173,7 @@ function createMessageRecord(message, message) {
   obj1[3] = mapped;
   obj1[4] = mention_roles;
   obj.mentioned = tmp9Result.isMentioned(obj1);
-  tmp9Result = tmp9(4720);
+  tmp9Result = tmp9(4752);
   const isGiftCodeEmbedResult = tmp9Result.isGiftCodeEmbed(message);
   const findGiftCodes = _resolveGiftCode.findGiftCodes;
   if (isGiftCodeEmbedResult) {
@@ -390,8 +390,8 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         }
         let result8 = result7;
         if (null != message2.components) {
-          result8 = result7.set("components", _require(4707).transformComponents(message2.components));
-          const obj14 = _require(4707);
+          result8 = result7.set("components", _require(4739).transformComponents(message2.components));
+          const obj14 = _require(4739);
         }
         let result9 = result8;
         if (null != message2.role_subscription_data) {
@@ -489,8 +489,8 @@ export const updateMessageRecord = function updateMessageRecord(message, message
       } else {
         const embeds = message2.embeds;
         const mapped = embeds.map((footer) => message2(closure_1_2[15]).sanitizeEmbed(message2.channel_id, message2.id, footer));
-        items3 = _require(4818).mergeEmbedsOnURL(mapped);
-        const obj9 = _require(4818);
+        items3 = _require(4850).mergeEmbedsOnURL(mapped);
+        const obj9 = _require(4850);
       }
       const result17 = result4.set("embeds", items3);
     }

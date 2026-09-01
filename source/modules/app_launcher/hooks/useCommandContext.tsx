@@ -1,10 +1,10 @@
-// Module ID: 11567
-// Function ID: 11568
+// Module ID: 11600
+// Function ID: 11601
 // Name: getCommandContext
 // Dependencies: [19, 1909, 2]
 // Exports: getCommandContext, useCommandContext
 
-// Module 11567 (getCommandContext)
+// Module 11600 (getCommandContext)
 import closure_0 from "noop" /* 19 */;
 import closure_1 from "createGuildRecordFromRust" /* 1909 */;
 
@@ -12,7 +12,7 @@ const result = require("set").fileFinishedImporting("modules/app_launcher/hooks/
 
 export const getCommandContext = function getCommandContext(type) {
   if ("contextless" === type.type) {
-    let obj = { channel: "cix", guild: "id" };
+    let obj = { channel: "children", guild: "c" };
   } else {
     obj = { channel: null, guild: null };
     obj[0] = type.channel;
@@ -25,7 +25,7 @@ export const useCommandContext = function useCommandContext(context) {
   const items = [context];
   return React.useMemo(() => {
     if ("contextless" === type.type) {
-      let obj = { channel: "cix", guild: "id" };
+      let obj = { channel: "children", guild: "c" };
     } else {
       obj = { channel: null, guild: null };
       obj[0] = tmp.channel;

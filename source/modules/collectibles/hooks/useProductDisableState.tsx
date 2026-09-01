@@ -1,13 +1,13 @@
-// Module ID: 12522
-// Function ID: 12523
+// Module ID: 12555
+// Function ID: 12556
 // Name: useProductDisableState
-// Dependencies: [4115, 589, 679, 1236, 2]
+// Dependencies: [4145, 589, 679, 1236, 2]
 // Exports: useProductDisableState
 
-// Module 12522 (useProductDisableState)
+// Module 12555 (useProductDisableState)
 import initialize from "initialize" /* 589 */;
 import set from "set" /* 679 */;
-import closure_2 from "reset" /* 4115 */;
+import closure_2 from "reset" /* 4145 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useProductDisableState.tsx");

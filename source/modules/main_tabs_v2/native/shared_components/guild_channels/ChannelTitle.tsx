@@ -1,13 +1,13 @@
-// Module ID: 16210
-// Function ID: 16211
-// Dependencies: [19, 4670, 21, 4448, 712, 10163, 4444, 2]
+// Module ID: 16245
+// Function ID: 16246
+// Dependencies: [19, 4702, 21, 4478, 712, 10202, 4474, 2]
 
-// Module 16210
+// Module 16245
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4670 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 let closure_5 = createCacheKey.createStyleProperties({ muted: ThemesDefault.colors.TEXT_MUTED, normal: ThemesDefault.colors.REDESIGN_CHANNEL_NAME_MUTED_TEXT, unreadOrConnected: ThemesDefault.colors.REDESIGN_CHANNEL_NAME_TEXT });

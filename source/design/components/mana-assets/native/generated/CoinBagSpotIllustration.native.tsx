@@ -1,14 +1,14 @@
-// Module ID: 6389
-// Function ID: 6390
+// Module ID: 6421
+// Function ID: 6422
 // Name: CoinBagSpotIllustration
-// Dependencies: [21, 5461, 6390, 2]
+// Dependencies: [21, 5493, 6422, 2]
 // Exports: CoinBagSpotIllustration
 
-// Module 6389 (CoinBagSpotIllustration)
+// Module 6421 (CoinBagSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6390 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6422 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CoinBagSpotIllustration.native.tsx");

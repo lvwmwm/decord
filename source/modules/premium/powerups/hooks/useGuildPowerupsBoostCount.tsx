@@ -1,15 +1,15 @@
-// Module ID: 4354
-// Function ID: 4355
+// Module ID: 4384
+// Function ID: 4385
 // Name: useGuildAppliedBoostCount
-// Dependencies: [19, 4355, 1909, 4334, 4358, 589, 2]
+// Dependencies: [19, 4385, 1909, 4364, 4388, 589, 2]
 // Exports: default, getGuildPowerupsBoostCount
 
-// Module 4354 (useGuildAppliedBoostCount)
-import experiment from "experiment" /* 4358 */;
+// Module 4384 (useGuildAppliedBoostCount)
+import experiment from "experiment" /* 4388 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleGameServerInstanceCreated" /* 4355 */;
+import closure_3 from "handleGameServerInstanceCreated" /* 4385 */;
 import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "calculateAppliedBoosts" /* 4334 */;
+import closure_5 from "calculateAppliedBoosts" /* 4364 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupsBoostCount.tsx");

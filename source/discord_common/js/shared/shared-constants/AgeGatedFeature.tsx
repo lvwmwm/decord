@@ -1,9 +1,9 @@
-// Module ID: 5335
-// Function ID: 5336
+// Module ID: 5367
+// Function ID: 5368
 // Name: AgeGatedFeature
 // Dependencies: [2]
 
-// Module 5335 (AgeGatedFeature)
+// Module 5367 (AgeGatedFeature)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeGatedFeature.tsx");

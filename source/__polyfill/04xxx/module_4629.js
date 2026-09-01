@@ -1,0 +1,19 @@
+// Module ID: 4629
+// Function ID: 4630
+// Dependencies: [805, 634, 4630]
+
+// Module 4629
+import identity from "identity" /* 634 */;
+import getNative from "getNative" /* 805 */;
+import constant from "constant" /* 4630 */;
+
+if (getNative) {
+  let fn = (arg0, arg1) => {
+    const obj = { configurable: true, enumerable: false, value: constant(arg1), writable: true };
+    return getNative(arg0, "toString", obj);
+  };
+} else {
+  fn = identity;
+}
+
+export default fn;

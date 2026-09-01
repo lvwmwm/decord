@@ -1,10 +1,10 @@
-// Module ID: 17235
-// Function ID: 17236
+// Module ID: 17271
+// Function ID: 17272
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 676, 17236, 17237, 1236, 1995, 4154, 17238, 2]
+// Dependencies: [5, 19, 676, 17272, 17273, 1236, 1995, 4184, 17274, 2]
 // Exports: default
 
-// Module 17235 (useCreatorMonetizationEligibilityItems)
+// Module 17271 (useCreatorMonetizationEligibilityItems)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
@@ -41,7 +41,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -110,7 +110,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
           tmp13();
         }
         c2 = 3;
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         c2 = tmp;
         throw tmp16;
@@ -144,7 +144,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
       let fn;
       if (!noRecentViolations) {
         fn = () => {
-          const tmp = callback(4154);
+          const tmp = callback(4184);
           return tmp(callback(1995).getSubmitRequestURL());
         };
       }

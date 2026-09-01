@@ -1,9 +1,9 @@
-// Module ID: 10813
-// Function ID: 10814
+// Module ID: 10851
+// Function ID: 10852
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10813 (metadata)
+// Module 10851 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/virtual_currency/images/native/balancePromotion_bg_animated.mp4.js");

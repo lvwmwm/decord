@@ -1,9 +1,9 @@
-// Module ID: 1940
-// Function ID: 1941
+// Module ID: 1932
+// Function ID: 1933
 // Name: ClassificationType
 // Dependencies: [2]
 
-// Module 1940 (ClassificationType)
+// Module 1932 (ClassificationType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/safety_common/v1/classification_type.tsx");

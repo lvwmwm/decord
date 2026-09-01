@@ -1,14 +1,14 @@
-// Module ID: 4334
-// Function ID: 4335
+// Module ID: 4364
+// Function ID: 4365
 // Name: calculateAppliedBoosts
-// Dependencies: [32, 1909, 4335, 676, 589, 709, 2]
+// Dependencies: [32, 1909, 4365, 676, 589, 709, 2]
 
-// Module 4334 (calculateAppliedBoosts)
+// Module 4364 (calculateAppliedBoosts)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_0 from "_slicedToArray" /* 32 */;
 import closure_1 from "createGuildRecordFromRust" /* 1909 */;
-import BoostedGuildTiers from "BoostedGuildTiers" /* 4335 */;
+import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
 import ME from "ME" /* 676 */;
 
 function calculateAppliedBoosts(guildId) {

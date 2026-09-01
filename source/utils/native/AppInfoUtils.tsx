@@ -1,10 +1,10 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16905
+// Function ID: 16906
 // Name: getAppMajorVersion
 // Dependencies: [1625, 2]
 // Exports: getAppMajorVersion
 
-// Module 16869 (getAppMajorVersion)
+// Module 16905 (getAppMajorVersion)
 import set from "set" /* 2 */;
 import getConstants from "getConstants" /* 1625 */;
 

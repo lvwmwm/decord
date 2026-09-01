@@ -1,16 +1,16 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 13014
+// Function ID: 13015
 // Name: fetchActivePromotions
-// Dependencies: [5, 1996, 8417, 1922, 10436, 1924, 676, 709, 12982, 530, 7111, 1370, 1337, 12983, 2]
+// Dependencies: [5, 1996, 8449, 1922, 10475, 1924, 676, 709, 13015, 530, 7143, 1370, 1337, 13016, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchActiveBogoPromotion, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 12981 (fetchActivePromotions)
+// Module 13014 (fetchActivePromotions)
 import dispatcherDefault from "dispatcher" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "createFromServer" /* 8417 */;
+import closure_5 from "createFromServer" /* 8449 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10436 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10475 */;
 import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_8 } from "GuildFeatures" /* 1924 */;
 import { Endpoints } from "ME" /* 676 */;
 
@@ -145,7 +145,7 @@ function _fetchActiveBogoPromotion() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -256,7 +256,7 @@ function _fetchClaimedOutboundPromotionCodes() {
       throw arg1;
     } else if (arg0 !== 2) {
       const body = arg1.body;
-      callback = body.map(callback(12983).claimedOutboundPromotionCodeFromServer);
+      callback = body.map(callback(13016).claimedOutboundPromotionCodeFromServer);
       const obj = callback2(709);
       const obj4 = { type: "CLAIMED_OUTBOUND_PROMOTION_CODES_FETCH_SUCCESS", claimedOutboundPromotionCodes: null };
       obj4[1] = callback;

@@ -1,10 +1,10 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8113
+// Function ID: 8114
 // Name: useProfileTileGradient
-// Dependencies: [32, 19, 8082, 8083, 8087, 2]
+// Dependencies: [32, 19, 8114, 8115, 8119, 2]
 // Exports: default
 
-// Module 8081 (useProfileTileGradient)
+// Module 8113 (useProfileTileGradient)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/calls/native/usePro
 export default function useProfileTileGradient(userId) {
   userId = userId.userId;
   const guildId = userId.guildId;
-  const tmp2 = guildId(8082)(userId, guildId);
+  const tmp2 = guildId(8114)(userId, guildId);
   let themeColors;
   if (tmp2 != null) {
     themeColors = tmp2.themeColors;
@@ -33,5 +33,5 @@ export default function useProfileTileGradient(userId) {
   }, items);
   const tmp3 = closure_3;
   const tmp3Result = closure_3(themeColors, 2);
-  return userId(8087).useVideoTileGradientColors(tmp5, tmp6);
+  return userId(8119).useVideoTileGradientColors(tmp5, tmp6);
 };

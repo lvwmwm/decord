@@ -1,14 +1,14 @@
-// Module ID: 16181
-// Function ID: 16182
+// Module ID: 16216
+// Function ID: 16217
 // Name: CalendarMinusIcon
-// Dependencies: [19, 21, 712, 4166, 16182, 2]
+// Dependencies: [19, 21, 712, 4196, 16217, 2]
 // Exports: CalendarMinusIcon
 
-// Module 16181 (CalendarMinusIcon)
+// Module 16216 (CalendarMinusIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 16182 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 16217 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

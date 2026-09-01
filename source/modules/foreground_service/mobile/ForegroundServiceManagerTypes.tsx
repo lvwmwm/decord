@@ -1,9 +1,9 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 7502
+// Function ID: 7503
 // Name: ServiceNotificationPriority
 // Dependencies: [2]
 
-// Module 7470 (ServiceNotificationPriority)
+// Module 7502 (ServiceNotificationPriority)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/foreground_service/mobile/ForegroundServiceManagerTypes.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6053
-// Function ID: 6054
+// Module ID: 6085
+// Function ID: 6086
 // Name: GPlayConnectionState
 // Dependencies: [2]
 
-// Module 6053 (GPlayConnectionState)
+// Module 6085 (GPlayConnectionState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/gplay/native/Constants.tsx");

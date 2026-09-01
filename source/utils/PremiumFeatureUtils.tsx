@@ -1,12 +1,12 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 8214
+// Function ID: 8215
 // Name: getUserMaxFileSize
 // Dependencies: [1923, 676, 1924, 1946, 2]
 // Exports: getUserMaxFileSize
 
-// Module 8182 (getUserMaxFileSize)
+// Module 8214 (getUserMaxFileSize)
 import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
-import closure_2 from "setPremiumTypeActual" /* 1923 */;
+import closure_2 from "setActualFromUser" /* 1923 */;
 import ME from "ME" /* 676 */;
 import GuildFeatures from "GuildFeatures" /* 1924 */;
 

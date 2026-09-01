@@ -1,22 +1,22 @@
-// Module ID: 11272
-// Function ID: 11273
+// Module ID: 11309
+// Function ID: 11310
 // Name: EmojiPickerRowButton
-// Dependencies: [19, 17, 1925, 21, 4448, 712, 1363, 5036, 1236, 8196, 5553, 1431, 4107, 2]
+// Dependencies: [19, 17, 1925, 21, 4478, 712, 1363, 5068, 1236, 8228, 5585, 1431, 4137, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 11272 (EmojiPickerRowButton)
+// Module 11309 (EmojiPickerRowButton)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
-import EmojiTypes from "EmojiTypes" /* 4107 */;
-import PressableBase from "PressableBase" /* 5036 */;
-import EmojiDefault from "Emoji" /* 5553 */;
-import ReactionIcon from "ReactionIcon" /* 8196 */;
+import EmojiTypes from "EmojiTypes" /* 4137 */;
+import PressableBase from "PressableBase" /* 5068 */;
+import EmojiDefault from "Emoji" /* 5585 */;
+import ReactionIcon from "ReactionIcon" /* 8228 */;
 import closure_3 from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
 import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 let closure_6 = createCacheKey.createStyles((width) => {

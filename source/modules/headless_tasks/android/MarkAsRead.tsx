@@ -1,9 +1,9 @@
-// Module ID: 17477
-// Function ID: 17478
+// Module ID: 17513
+// Function ID: 17514
 // Name: promise
-// Dependencies: [676, 5446, 2]
+// Dependencies: [676, 5478, 2]
 
-// Module 17477 (promise)
+// Module 17513 (promise)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 7823
-// Function ID: 7824
+// Module ID: 7855
+// Function ID: 7856
 // Name: frozen
 // Dependencies: [17, 2]
 // Exports: getAssetUriForEmbed, shouldPlayVideoInline
 
-// Module 7823 (frozen)
+// Module 7855 (frozen)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import set from "set" /* 2 */;
 

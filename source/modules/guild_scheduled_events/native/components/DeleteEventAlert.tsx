@@ -1,15 +1,15 @@
-// Module ID: 9868
-// Function ID: 9869
+// Module ID: 9907
+// Function ID: 9908
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 7239, 21, 4448, 589, 9634, 4415, 4831, 1236, 4444, 2]
+// Dependencies: [5, 19, 7271, 21, 4478, 589, 9673, 4445, 4863, 1236, 4474, 2]
 // Exports: default
 
-// Module 9868 (DeleteEventAlert)
+// Module 9907 (DeleteEventAlert)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "scheduledEventSort" /* 7239 */;
+import closure_4 from "scheduledEventSort" /* 7271 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 noopAll;
@@ -34,7 +34,7 @@ export default function DeleteEventAlert(eventException) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -50,7 +50,7 @@ export default function DeleteEventAlert(eventException) {
               return obj;
             } else {
               closure_0 = tmp4;
-              const obj8 = v0(9634);
+              const obj8 = v0(9673);
               if (closure_1_4) {
                 v0 = 2;
                 dependencyMap = 1;
@@ -85,10 +85,10 @@ export default function DeleteEventAlert(eventException) {
               obj[0] = arg1;
               return obj;
             }
-            obj1 = v0(4415);
+            obj1 = v0(4445);
             obj1.hideActionSheet();
             dependencyMap = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           dependencyMap = tmp;

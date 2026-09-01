@@ -1,10 +1,10 @@
-// Module ID: 8585
-// Function ID: 8586
+// Module ID: 8617
+// Function ID: 8618
 // Name: fetchGuildAffinities
 // Dependencies: [676, 530, 709, 2]
 // Exports: fetchGuildAffinities
 
-// Module 8585 (fetchGuildAffinities)
+// Module 8617 (fetchGuildAffinities)
 import set from "set" /* 2 */;
 import sendRequest from "sendRequest" /* 530 */;
 import ME from "ME" /* 676 */;

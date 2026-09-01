@@ -1,9 +1,9 @@
-// Module ID: 7096
-// Function ID: 7097
+// Module ID: 7128
+// Function ID: 7129
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7096 (metadata)
+// Module 7128 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WizardHatAndBookSpotIllustration-2x.png.js");

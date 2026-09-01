@@ -1,20 +1,20 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 10393
+// Function ID: 10394
 // Name: STICKER_SIZE
-// Dependencies: [32, 19, 17, 1922, 4139, 10311, 1338, 21, 4448, 500, 4136, 4416, 4417, 4820, 6149, 5180, 10222, 10355, 1208, 5036, 2]
+// Dependencies: [32, 19, 17, 1922, 4169, 10350, 1338, 21, 4478, 500, 4166, 4446, 4447, 4852, 6181, 5212, 10261, 10394, 1208, 5068, 2]
 // Exports: default
 
-// Module 10354 (STICKER_SIZE)
+// Module 10393 (STICKER_SIZE)
 import noopAll from "noop" /* 19 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10355 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 10394 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID" /* 4139 */;
-import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10311 */;
+import { StickerAnimationSettings } from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
+import PADDING_HORIZONTAL from "PADDING_HORIZONTAL" /* 10350 */;
 import { PADDING_VERTICAL } from "ExpressionPickerViewType" /* 1338 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 noopAll;
@@ -67,7 +67,7 @@ export default function StickerPickerListRow(stickers) {
   }
   const tmp6 = callback2();
   closure_6 = tmp6;
-  let AnimateStickers = stickers(4136).AnimateStickers;
+  let AnimateStickers = stickers(4166).AnimateStickers;
   closure_7 = AnimateStickers.useSetting();
   items = [];
   if (nativeRow) {
@@ -84,7 +84,7 @@ export default function StickerPickerListRow(stickers) {
           ({ id: obj4[0], name: obj4[1], format_type: obj4[2] } = tmp12);
           let tmp20 = stickers;
           let tmp21 = dependencyMap;
-          let obj4 = stickers(10222);
+          let obj4 = stickers(10261);
           let tmp22 = closure_7;
           obj[3] = obj4.getStickerAssetUrl(tmp12, closure_7, first);
           obj[4] = first;
@@ -96,7 +96,7 @@ export default function StickerPickerListRow(stickers) {
           obj = { stickerId: null, stickerName: "", stickerType: null, stickerUrl: "", stickerAnimated: false, stickerDisabled: true, stickerOpaque: false };
           let tmp14 = stickers;
           tmp15 = dependencyMap;
-          obj[2] = stickers(5180).StickerFormat.PNG;
+          obj[2] = stickers(5212).StickerFormat.PNG;
           arr = items.push(obj);
         }
         num5 = num5 + 1;

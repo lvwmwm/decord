@@ -1,21 +1,21 @@
-// Module ID: 15763
-// Function ID: 15764
+// Module ID: 15799
+// Function ID: 15800
 // Name: ProgressBar
-// Dependencies: [19, 17, 1992, 4675, 4676, 1394, 4079, 21, 4448, 712, 4908, 647, 1399, 5036, 1222, 4444, 1236, 1297, 9991, 2]
+// Dependencies: [19, 17, 1992, 4707, 4708, 1394, 4109, 21, 4478, 712, 4940, 647, 1399, 5068, 1222, 4474, 1236, 1297, 10030, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 15763 (ProgressBar)
+// Module 15799 (ProgressBar)
 import ThemesDefault from "Themes" /* 712 */;
-import LinearGradientDefault from "LinearGradient" /* 4908 */;
+import LinearGradientDefault from "LinearGradient" /* 4940 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "handleSettingsLoadSuccess" /* 4675 */;
-import closure_7 from "set" /* 4676 */;
+import closure_6 from "handleSettingsLoadSuccess" /* 4707 */;
+import closure_7 from "set" /* 4708 */;
 import { StaticChannelRoute } from "set" /* 1394 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4079 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4109 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function ProgressBar(percent) {

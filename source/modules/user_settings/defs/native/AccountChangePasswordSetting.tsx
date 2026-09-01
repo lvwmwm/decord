@@ -1,14 +1,14 @@
-// Module ID: 14348
-// Function ID: 14349
+// Module ID: 14381
+// Function ID: 14382
 // Name: route
-// Dependencies: [7852, 676, 11031, 1236, 14349, 2]
+// Dependencies: [7884, 676, 11068, 1236, 14382, 2]
 
-// Module 14348 (route)
+// Module 14381 (route)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import MobileUserSettings from "MobileUserSettings" /* 7852 */;
-import createToggle from "createToggle" /* 11031 */;
+import MobileUserSettings from "MobileUserSettings" /* 7884 */;
+import createToggle from "createToggle" /* 11068 */;
 
 obj = {
   useTitle() {
@@ -21,7 +21,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.ACCOUNT_CHANGE_PASSWORD,
   getComponent() {
-    return require(14349).default;
+    return require(14382).default;
   }
 };
 const route = createToggle.createRoute(obj);

@@ -1,28 +1,28 @@
-// Module ID: 15292
-// Function ID: 15293
+// Module ID: 15326
+// Function ID: 15327
 // Name: getSelectedGuildChannel
-// Dependencies: [19, 17, 5412, 1391, 4101, 1387, 1909, 1981, 1922, 676, 21, 4448, 712, 4164, 8699, 10138, 10140, 5180, 11, 1628, 1297, 5960, 5567, 15149, 5574, 2]
+// Dependencies: [19, 17, 5444, 1391, 4131, 1387, 1909, 1981, 1922, 676, 21, 4478, 712, 4194, 8736, 10177, 10179, 5212, 11, 1628, 1297, 5992, 5599, 15182, 5606, 2]
 // Exports: default
 
-// Module 15292 (getSelectedGuildChannel)
+// Module 15326 (getSelectedGuildChannel)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import ThemesDefault from "Themes" /* 712 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import dispatcherDefault from "dispatcher" /* 4164 */;
-import StickerFormat from "StickerFormat" /* 5180 */;
-import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10138 */;
+import dispatcherDefault from "dispatcher" /* 4194 */;
+import StickerFormat from "StickerFormat" /* 5212 */;
+import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10177 */;
 import closure_3 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "loadSavedGuildStickers" /* 5412 */;
+import closure_5 from "loadSavedGuildStickers" /* 5444 */;
 import { createChannelRecord } from "createChannelRecord" /* 1391 */;
-import closure_7 from "hasFlag" /* 4101 */;
+import closure_7 from "hasFlag" /* 4131 */;
 import closure_8 from "ensureGuildLoaded" /* 1387 */;
 import closure_9 from "createGuildRecordFromRust" /* 1909 */;
 import closure_10 from "handleConnectionOpen" /* 1981 */;
 import closure_11 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function getSelectedGuildChannel() {
@@ -692,7 +692,7 @@ export default function DevToolsInAppNotificationTestingScreen() {
       }, label.label);
     })
   };
-  items1[2] = callback(_require(5960).TableRowGroup, obj);
+  items1[2] = callback(_require(5992).TableRowGroup, obj);
   obj[2] = items1;
   return callback2(ScrollView, obj);
 };

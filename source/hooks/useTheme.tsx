@@ -1,10 +1,10 @@
-// Module ID: 4383
-// Function ID: 4384
+// Module ID: 4413
+// Function ID: 4414
 // Name: useTheme
 // Dependencies: [676, 1363, 2]
 // Exports: default, getThemeIndex, useTheme, useThemeIndex
 
-// Module 4383 (useTheme)
+// Module 4413 (useTheme)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;

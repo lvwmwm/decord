@@ -1,20 +1,20 @@
-// Module ID: 15555
-// Function ID: 15556
+// Module ID: 15590
+// Function ID: 15591
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 11945, 11946, 676, 21, 4448, 712, 11947, 698, 11948, 12193, 15556, 1236, 2]
+// Dependencies: [19, 17, 11978, 11979, 676, 21, 4478, 712, 11980, 698, 11981, 12226, 15591, 1236, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 15555 (RedesignNotificationModal)
+// Module 15590 (RedesignNotificationModal)
 import ThemesDefault from "Themes" /* 712 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12193 */;
-import registerAssetDefault from "registerAsset" /* 15556 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 12226 */;
+import registerAssetDefault from "registerAsset" /* 15591 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { PermissionStateType } from "set" /* 11945 */;
-import EventActionType from "EventActionType" /* 11946 */;
+import { PermissionStateType } from "set" /* 11978 */;
+import EventActionType from "EventActionType" /* 11979 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 class RedesignNotificationModal {

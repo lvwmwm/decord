@@ -1,14 +1,14 @@
-// Module ID: 10972
-// Function ID: 10973
+// Module ID: 11009
+// Function ID: 11010
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 4448, 712, 7315, 7320, 10970, 1236, 1297, 10973, 10974, 4444, 4896, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 7347, 7352, 11007, 1236, 1297, 11010, 11011, 4474, 4928, 2]
 
-// Module 10972 (SafetyWarningBanner)
+// Module 11009 (SafetyWarningBanner)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 class SafetyWarningBanner {

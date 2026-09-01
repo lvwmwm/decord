@@ -1,10 +1,10 @@
-// Module ID: 7263
-// Function ID: 7264
+// Module ID: 7295
+// Function ID: 7296
 // Name: fromServer
 // Dependencies: [1949, 1950, 2]
 // Exports: isUnknownCollectiblesItemRecord
 
-// Module 7263 (fromServer)
+// Module 7295 (fromServer)
 import fromServerDefault from "fromServer" /* 1949 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 7195
-// Function ID: 7196
+// Module ID: 7227
+// Function ID: 7228
 // Name: next
 // Dependencies: [2]
 // Exports: chain
 
-// Module 7195 (next)
+// Module 7227 (next)
 import set from "set" /* 2 */;
 
 class Chained {

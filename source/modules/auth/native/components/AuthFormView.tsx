@@ -1,16 +1,16 @@
-// Module ID: 7713
-// Function ID: 7714
+// Module ID: 7745
+// Function ID: 7746
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 4448, 712, 7685, 7714, 7715, 7716, 7719, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 7717, 7746, 7747, 7748, 7751, 2]
 // Exports: default
 
-// Module 7713 (AuthFormView)
+// Module 7745 (AuthFormView)
 import ThemesDefault from "Themes" /* 712 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7685 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7717 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ View: c4, ScrollView: c5 } = get_ActivityIndicator);
@@ -57,7 +57,7 @@ export default function AuthFormView(arg0) {
   ({ backgroundImageSource, backgroundImageCover } = arg0);
   const tmp3 = useWideAuthViewDefault();
   const tmp4 = callback2(tmp3);
-  _require = React.useContext(_require(7714).WideAuthScrollContext);
+  _require = React.useContext(_require(7746).WideAuthScrollContext);
   if (tmp3) {
     let obj = { contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, scrollEventThrottle: 16, onScroll: null, style: null, contentContainerStyle: null, children: null };
     obj[0] = { top: 0 };
@@ -71,7 +71,7 @@ export default function AuthFormView(arg0) {
     if (null != headerText) {
       obj = { children: null };
       obj[0] = headerText;
-      tmp15 = callback(tmp(7715), obj);
+      tmp15 = callback(tmp(7747), obj);
     }
     const items1 = [tmp15, , ];
     let tmp17 = null;
@@ -94,7 +94,7 @@ export default function AuthFormView(arg0) {
     const obj2 = { backgroundImageSource: null, backgroundImageCover: null };
     obj2[0] = backgroundImageSource;
     obj2[1] = backgroundImageCover;
-    const items3 = [callback(tmp(7716), obj2), callback(tmp(7719), {}), ];
+    const items3 = [callback(tmp(7748), obj2), callback(tmp(7751), {}), ];
     const obj3 = { contentInset: null, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: null, contentContainerStyle: null, children: null };
     obj3[0] = { top: 0 };
     obj3[4] = tmp4.flex;
@@ -106,7 +106,7 @@ export default function AuthFormView(arg0) {
     if (null != headerText) {
       const obj4 = { children: null };
       obj4[0] = headerText;
-      tmp7Result = tmp7(tmp(7715), obj4);
+      tmp7Result = tmp7(tmp(7747), obj4);
     }
     const items5 = [tmp7Result, , ];
     tmp7Result = null;

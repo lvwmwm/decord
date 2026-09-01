@@ -1,10 +1,10 @@
-// Module ID: 12554
-// Function ID: 12555
+// Module ID: 12587
+// Function ID: 12588
 // Name: AddToWishlistItemCard
-// Dependencies: [5, 32, 19, 17, 676, 21, 4448, 712, 12552, 10742, 12503, 698, 10425, 4164, 1236, 10743, 8856, 2]
+// Dependencies: [5, 32, 19, 17, 676, 21, 4478, 712, 12585, 10780, 12536, 698, 10464, 4194, 1236, 10781, 8893, 2]
 // Exports: default
 
-// Module 12554 (AddToWishlistItemCard)
+// Module 12587 (AddToWishlistItemCard)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
@@ -12,7 +12,7 @@ import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
@@ -64,7 +64,7 @@ export default function AddToWishlistItemCard(sku) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

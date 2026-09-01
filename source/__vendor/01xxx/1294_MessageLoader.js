@@ -113,7 +113,7 @@ class MessageLoader {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -146,7 +146,7 @@ class MessageLoader {
                 } else {
                   closure_1._parseCache = {};
                   c3 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp8) {
                 c3 = tmp;
@@ -304,7 +304,7 @@ let items = [
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -490,7 +490,7 @@ let items = [
               obj[0] = arg1;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -516,7 +516,7 @@ let items = [
                   ref = undefined;
                   c5 = 1;
                   c6 = 1;
-                  return { value: "Object", done: true };
+                  return { value: "PX_16", done: null };
                 }
               } else {
                 if (1 === tmp5) {
@@ -559,7 +559,7 @@ let items = [
                   return obj;
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp17) {
               c6 = tmp;
@@ -581,62 +581,14 @@ let items = [
         c4 = 0;
         c5 = 0;
         const iter = (function*() {
-          if (c5 === 2) {
-            c5 = 3;
-            HermesBuiltin.throwTypeError();
-          } else if (tmp4 === 3) {
-            if (arg0 === 1) {
-              throw arg1;
-            } else if (arg0 === 2) {
-              let obj = { value: null, done: true };
-              obj[0] = arg1;
-              return obj;
-            } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
-            }
-          } else {
-            try {
-              c5 = 2;
-              if (0 === c4) {
-                if (arg0 === 1) {
-                  c5 = 3;
-                  throw arg1;
-                } else if (arg0 === 2) {
-                  c5 = 3;
-                  obj = { value: null, done: true };
-                  obj[0] = arg1;
-                  return obj;
-                } else {
-                  closure_3 = flag;
-                  closure_2 = tmp2;
-                  flag = undefined;
-                  flag = closure_1;
-                  if (closure_1 === undefined) {
-                    flag = false;
-                  }
-                  c4 = 1;
-                  c5 = 1;
-                  return { value: "Object", done: true };
-                }
-              } else if (arg0 === 1) {
-                c5 = 3;
-                throw arg1;
-              } else if (arg0 === 2) {
-                c5 = 3;
-                obj1 = { value: null, done: true };
-                obj1[0] = arg1;
-                return obj1;
-              } else {
-                c5 = 3;
-                obj = { value: null, done: true };
-                obj[0] = closure_3.waitForLocaleLoaded(closure_3.defaultLocale, flag);
-                return obj;
-              }
-            } catch (tmp10) {
-              c5 = tmp;
-              throw tmp10;
-            }
+          closure_3 = flag;
+          closure_2 = tmp2;
+          flag = closure_1;
+          if (closure_1 === undefined) {
+            flag = false;
           }
+          yield "PX_16";
+          return closure_3.waitForLocaleLoaded(closure_3.defaultLocale, flag);
         })();
         iter.next();
         return iter;
@@ -660,7 +612,7 @@ export const loadAllMessagesInLocale = function loadAllMessagesInLocale(closure_
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -691,7 +643,7 @@ export const loadAllMessagesInLocale = function loadAllMessagesInLocale(closure_
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;
@@ -713,7 +665,7 @@ export const waitForAllDefaultIntlMessagesLoaded = function waitForAllDefaultInt
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -744,7 +696,7 @@ export const waitForAllDefaultIntlMessagesLoaded = function waitForAllDefaultInt
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c0 = tmp;

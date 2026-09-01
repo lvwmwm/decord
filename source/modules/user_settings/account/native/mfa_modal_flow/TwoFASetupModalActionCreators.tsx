@@ -1,22 +1,22 @@
-// Module ID: 14354
-// Function ID: 14355
-// Dependencies: [4691, 14355, 2009, 2]
+// Module ID: 14387
+// Function ID: 14388
+// Dependencies: [4723, 14388, 2009, 2]
 
-// Module 14354
+// Module 14387
 import set from "set" /* 2 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import _modDef4691 from "module_4691" /* 4691 */;
+import _modDef4723 from "module_4723" /* 4723 */;
 
 const TWO_FA_SETUP_MODAL_KEY = "TWO_FA_SETUP_MODAL_KEY";
 const result = set.fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupModalActionCreators.tsx");
 
 export default {
   open(initialRouteName) {
-    let obj = _modDef4691;
+    let obj = _modDef4723;
     obj = { initialRouteName };
-    obj.pushLazy(asyncRequireImpl(14355, dependencyMap.paths), obj, TWO_FA_SETUP_MODAL_KEY);
+    obj.pushLazy(asyncRequireImpl(14388, dependencyMap.paths), obj, TWO_FA_SETUP_MODAL_KEY);
   },
   close() {
-    _modDef4691.popWithKey(TWO_FA_SETUP_MODAL_KEY);
+    _modDef4723.popWithKey(TWO_FA_SETUP_MODAL_KEY);
   }
 };

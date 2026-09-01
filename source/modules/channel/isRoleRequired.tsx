@@ -1,15 +1,15 @@
-// Module ID: 4980
-// Function ID: 4981
+// Module ID: 5012
+// Function ID: 5013
 // Name: isRoleRequired
-// Dependencies: [1391, 505, 4096, 506, 2]
+// Dependencies: [1391, 505, 4126, 506, 2]
 // Exports: default
 
-// Module 4980 (isRoleRequired)
+// Module 5012 (isRoleRequired)
 import set from "set" /* 2 */;
 import sum from "sum" /* 505 */;
 import fromStringAll from "fromString" /* 506 */;
 import createChannelRecord from "createChannelRecord" /* 1391 */;
-import applyOverwritesAll from "applyOverwrites" /* 4096 */;
+import applyOverwritesAll from "applyOverwrites" /* 4126 */;
 
 let closure_2 = createChannelRecord.GUILD_NON_CATEGORY_CHANNEL_TYPES;
 const Permissions = sum.Permissions;

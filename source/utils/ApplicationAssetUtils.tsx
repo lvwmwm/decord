@@ -1,17 +1,17 @@
-// Module ID: 8017
-// Function ID: 8018
+// Module ID: 8049
+// Function ID: 8050
 // Name: updateAssets
-// Dependencies: [32, 5, 8018, 676, 38, 3, 530, 709, 1465, 2]
+// Dependencies: [32, 5, 8050, 676, 38, 3, 530, 709, 1465, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8017 (updateAssets)
+// Module 8049 (updateAssets)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import sendRequest from "sendRequest" /* 530 */;
 import handleImageLoad from "handleImageLoad" /* 1465 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "handleFetchEmbeddedActivityShelfSuccess" /* 8018 */;
+import closure_5 from "handleFetchEmbeddedActivityShelfSuccess" /* 8050 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -121,7 +121,7 @@ function _resolveExternalAssets() {
           obj[0] = body;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -221,7 +221,7 @@ function _resolveExternalAssets() {
           }
           let num4 = 3;
           c9 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       }
     })();
@@ -350,7 +350,7 @@ function _fetchAssetIds() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -376,7 +376,7 @@ function _fetchAssetIds() {
               c5 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else {
             if (1 === tmp5) {

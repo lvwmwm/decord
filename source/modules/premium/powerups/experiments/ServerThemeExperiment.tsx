@@ -1,14 +1,14 @@
-// Module ID: 4377
-// Function ID: 4378
+// Module ID: 4407
+// Function ID: 4408
 // Name: experiment
-// Dependencies: [676, 4359, 4378, 2]
+// Dependencies: [676, 4389, 4408, 2]
 // Exports: getServerThemeEnabled, useServerThemeEnabled
 
-// Module 4377 (experiment)
+// Module 4407 (experiment)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
-import apexExperiment from "apexExperiment" /* 4378 */;
-import createExperiment from "createExperiment" /* 4359 */;
+import apexExperiment from "apexExperiment" /* 4408 */;
+import createExperiment from "createExperiment" /* 4389 */;
 
 const EMPTY_STRING_SNOWFLAKE_ID = ME.EMPTY_STRING_SNOWFLAKE_ID;
 const items = [{ id: 0, label: "Control", config: { enabled: false, inExperiment: true, gatesApex: false } }, { id: 1, label: "Enable Server Theme", config: { enabled: true, inExperiment: true, gatesApex: false } }];

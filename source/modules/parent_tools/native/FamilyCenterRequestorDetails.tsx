@@ -1,19 +1,19 @@
-// Module ID: 14493
-// Function ID: 14494
+// Module ID: 14526
+// Function ID: 14527
 // Name: FamilyCenterRequestorDetails
-// Dependencies: [19, 17, 21, 4448, 1297, 712, 8735, 14465, 4444, 2]
+// Dependencies: [19, 17, 21, 4478, 1297, 712, 8772, 14498, 4474, 2]
 // Exports: default
 
-// Module 14493 (FamilyCenterRequestorDetails)
+// Module 14526 (FamilyCenterRequestorDetails)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import Button from "Button" /* 1297 */;
-import Text from "Text" /* 4444 */;
-import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8735 */;
-import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14465 */;
+import Text from "Text" /* 4474 */;
+import useUserIdsForLinkStatus from "useUserIdsForLinkStatus" /* 8772 */;
+import FamilyCenterUsernameHeaderDefault from "FamilyCenterUsernameHeader" /* 14498 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -32,7 +32,7 @@ export default function FamilyCenterRequestorDetails(otherUser) {
   let obj = useUserIdsForLinkStatus;
   obj = { style: tmp.container, children: null };
   const linkTimestampText = obj.useLinkTimestampText(otherUser.id, otherUser.status);
-  obj = { avatarStyle: tmp.avatar, user: otherUser, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: "Warning" };
+  obj = { avatarStyle: tmp.avatar, user: otherUser, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration: -1 };
   obj[4] = otherUser.avatarDecoration;
   const items = [callback(Button.Avatar, obj), ];
   obj1 = { style: tmp.detailsContainer, children: null };

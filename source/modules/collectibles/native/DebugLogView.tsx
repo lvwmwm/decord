@@ -1,17 +1,17 @@
-// Module ID: 15406
-// Function ID: 15407
+// Module ID: 15440
+// Function ID: 15441
 // Name: DebugLogView
-// Dependencies: [19, 17, 4447, 7270, 21, 4448, 712, 589, 4444, 2]
+// Dependencies: [19, 17, 4477, 7302, 21, 4478, 712, 589, 4474, 2]
 // Exports: default
 
-// Module 15406 (DebugLogView)
+// Module 15440 (DebugLogView)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_2 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getUserAgnosticState" /* 4447 */;
-import useCollectiblesDebugStore from "useCollectiblesDebugStore" /* 7270 */;
+import closure_6 from "getUserAgnosticState" /* 4477 */;
+import useCollectiblesDebugStore from "useCollectiblesDebugStore" /* 7302 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ View: c3, ScrollView: c4, TouchableOpacity: c5 } = get_ActivityIndicator);
@@ -53,7 +53,7 @@ export default function DebugLogView() {
       obj1[1] = obj2;
       const items2 = ["Debug Log (", arr.length, " entries)"];
       obj1[2] = items2;
-      const items3 = [callback2(tmp2(4444).Text, obj1), ];
+      const items3 = [callback2(tmp2(4474).Text, obj1), ];
       const obj3 = { onPress: null, style: null, children: null };
       obj3[0] = function onPress() {
         dependencyMap();
@@ -61,12 +61,12 @@ export default function DebugLogView() {
       obj3[1] = tmp.clearButton;
       const obj4 = { variant: "text-xs/bold", style: null, children: "Clear" };
       obj4[1] = tmp.clearButtonText;
-      obj3[2] = callback3(tmp2(4444).Text, obj4);
+      obj3[2] = callback3(tmp2(4474).Text, obj4);
       items3[1] = callback3(closure_5, obj3);
       obj[1] = items3;
       const items4 = [callback2(stateFromStores, obj), ];
       const obj5 = { children: null };
-      obj5[0] = substr.map((children) => closure_1_10(arr(4444).Text, { variant: "text-xs/normal", style: debugLogText.debugLogText, children }, arg1));
+      obj5[0] = substr.map((children) => closure_1_10(arr(4474).Text, { variant: "text-xs/normal", style: debugLogText.debugLogText, children }, arg1));
       items4[1] = callback3(closure_4, obj5);
       obj[1] = items4;
       return callback2(stateFromStores, obj);

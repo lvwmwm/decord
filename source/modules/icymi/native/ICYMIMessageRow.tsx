@@ -1,10 +1,10 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16083
+// Function ID: 16084
 // Name: MessageRowContent
-// Dependencies: [19, 17, 1387, 1992, 1909, 4100, 4669, 1922, 16043, 676, 21, 712, 16005, 500, 16006, 8536, 8587, 589, 16049, 16050, 4444, 1236, 1297, 4641, 5425, 8589, 8590, 10613, 11203, 16044, 16046, 11, 5036, 9386, 16052, 2]
+// Dependencies: [19, 17, 1387, 1992, 1909, 4130, 4701, 1922, 16078, 676, 21, 712, 16040, 500, 16041, 8568, 8619, 589, 16084, 16085, 4474, 1236, 1297, 4673, 5457, 8621, 8622, 10651, 11240, 16079, 16081, 11, 5068, 9425, 16087, 2]
 // Exports: default
 
-// Module 16048 (MessageRowContent)
+// Module 16083 (MessageRowContent)
 import set from "set" /* 500 */;
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
@@ -12,13 +12,13 @@ import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
 import closure_6 from "trackCommunicationDisabled" /* 1992 */;
 import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "markAllUserIdListsStale" /* 4100 */;
-import closure_9 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_8 from "markAllUserIdListsStale" /* 4130 */;
+import closure_9 from "updateUserGuildSettingsInternal" /* 4701 */;
 import closure_10 from "mergeGuildAvatar" /* 1922 */;
-import { ITEM_PADDING } from "ITEM_PADDING" /* 16043 */;
+import { ITEM_PADDING } from "ITEM_PADDING" /* 16078 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16005 */;
+import createICYMIStyles from "createICYMIStyles" /* 16040 */;
 
 require = arg1;
 class MessageRowContent {
@@ -143,7 +143,7 @@ function ReplyMessageContent(message) {
   ({ channel, guild } = message);
   const tmp = callback3();
   let obj = importAllResult;
-  const context = importAllResult.useContext(message(16006).ICYMIContext);
+  const context = importAllResult.useContext(message(16041).ICYMIContext);
   obj1 = message(589);
   const items = [closure_10];
   const stateFromStores = obj1.useStateFromStores(items, () => closure_1_10.getUser(message.author.id));
@@ -157,7 +157,7 @@ function ReplyMessageContent(message) {
   if (colorString == null) {
     colorString = closure_12;
   }
-  const width = obj.useContext(tmp2(16006).ICYMIContext).width;
+  const width = obj.useContext(tmp2(16041).ICYMIContext).width;
   let tmp8 = null;
   if (null != stateFromStores) {
     obj = { style: null, children: null };
@@ -166,7 +166,7 @@ function ReplyMessageContent(message) {
     obj[2] = { fontStyle: "italic" };
     const intl = tmp2(1236).intl;
     obj[3] = intl.string(tmp2(1236).t.mPPcez);
-    const items2 = [callback(tmp2(4444).Text, obj), ];
+    const items2 = [callback(tmp2(4474).Text, obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.replyInner;
     obj2 = { animate: false, guildId: null, user: null, size: null };
@@ -182,8 +182,8 @@ function ReplyMessageContent(message) {
     const obj6 = { color: null };
     obj6[0] = colorString;
     obj5[1] = obj6;
-    obj5[3] = tmp2(4641).getName(guild.id, channel.id, stateFromStores);
-    const items4 = [callback(tmp2(4444).Text, obj5), ];
+    obj5[3] = tmp2(4673).getName(guild.id, channel.id, stateFromStores);
+    const items4 = [callback(tmp2(4474).Text, obj5), ];
     const obj7 = { value: null, children: null };
     const obj8 = { width: null, margin: null, inset: null };
     obj8[0] = width - 2 * PX_12 - 30 - PX_8 - 2;
@@ -194,14 +194,14 @@ function ReplyMessageContent(message) {
     obj9[1] = channel;
     obj9[2] = guild;
     obj7[1] = callback(MessageRowContent, obj9);
-    items4[1] = callback(tmp2(16006).ICYMIContext.Provider, obj7);
+    items4[1] = callback(tmp2(16041).ICYMIContext.Provider, obj7);
     obj3[1] = items4;
     items3[1] = callback2(View, obj3);
     obj1[1] = items3;
     items2[1] = callback2(View, obj1);
     obj[1] = items2;
     tmp8 = callback2(View, obj);
-    const tmp2Result = tmp2(4641);
+    const tmp2Result = tmp2(4673);
   }
   return tmp8;
 }
@@ -346,7 +346,7 @@ export default function MessageRowWrapper(arg0) {
   let gravityMessage;
   let stateFromStores;
   ({ message, messageContext, visible } = arg0);
-  let obj = gravityMessage(8589);
+  let obj = gravityMessage(8621);
   gravityMessage = obj.useGravityMessage(message);
   const items = [closure_5];
   stateFromStores = gravityMessage(589).useStateFromStores(items, () => closure_1_5.getChannel(gravityMessage.getChannelId()));

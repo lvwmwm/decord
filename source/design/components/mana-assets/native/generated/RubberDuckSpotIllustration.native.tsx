@@ -1,14 +1,14 @@
-// Module ID: 6911
-// Function ID: 6912
+// Module ID: 6943
+// Function ID: 6944
 // Name: RubberDuckSpotIllustration
-// Dependencies: [21, 5461, 6912, 2]
+// Dependencies: [21, 5493, 6944, 2]
 // Exports: RubberDuckSpotIllustration
 
-// Module 6911 (RubberDuckSpotIllustration)
+// Module 6943 (RubberDuckSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6912 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6944 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/RubberDuckSpotIllustration.native.tsx");

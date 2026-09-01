@@ -1,0 +1,27 @@
+// Module ID: 4877
+// Function ID: 4878
+// Name: isSearchBarAvailableForCurrentPlatform
+// Dependencies: [17]
+// Exports: executeNativeBackPress, parseBooleanToOptionalBooleanNativeProp
+
+// Module 4877 (isSearchBarAvailableForCurrentPlatform)
+import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
+
+({ BackHandler: c0, Platform } = get_ActivityIndicator);
+const items = ["ios", "android"];
+
+export const isSearchBarAvailableForCurrentPlatform = items.includes("android");
+export const isHeaderBarButtonsAvailableForCurrentPlatform = false;
+export const executeNativeBackPress = function executeNativeBackPress() {
+  closure_0.exitApp();
+  return true;
+};
+export function parseBooleanToOptionalBooleanNativeProp(fullScreenSwipeEnabled) {
+  if (undefined === fullScreenSwipeEnabled) {
+    return "undefined";
+  } else if (true === fullScreenSwipeEnabled) {
+    return "true";
+  } else if (false === fullScreenSwipeEnabled) {
+    return "false";
+  }
+}

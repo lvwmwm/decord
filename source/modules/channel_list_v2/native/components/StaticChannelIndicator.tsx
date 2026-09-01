@@ -1,17 +1,17 @@
-// Module ID: 10211
-// Function ID: 10212
+// Module ID: 10250
+// Function ID: 10251
 // Name: ChannelIndicator
-// Dependencies: [17, 4670, 21, 4448, 712, 4167, 2]
+// Dependencies: [17, 4702, 21, 4478, 712, 4197, 2]
 // Exports: default
 
-// Module 10211 (ChannelIndicator)
+// Module 10250 (ChannelIndicator)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4167 */;
-import ReadStateTypes from "ReadStateTypes" /* 4670 */;
+import map from "map" /* 4197 */;
+import ReadStateTypes from "ReadStateTypes" /* 4702 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
 const UnreadSetting = ReadStateTypes.UnreadSetting;

@@ -1,14 +1,14 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11493
+// Function ID: 11494
 // Name: PhoneIcon
-// Dependencies: [19, 21, 712, 4166, 11461, 2]
+// Dependencies: [19, 21, 712, 4196, 11494, 2]
 // Exports: PhoneIcon
 
-// Module 11460 (PhoneIcon)
+// Module 11493 (PhoneIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 11461 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 11494 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 5922
-// Function ID: 5923
+// Module ID: 5954
+// Function ID: 5955
 // Name: fetchApplication
-// Dependencies: [5, 5923, 4474, 4489, 676, 709, 530, 589, 2]
+// Dependencies: [5, 5955, 4504, 4519, 676, 709, 530, 589, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 5922 (fetchApplication)
+// Module 5954 (fetchApplication)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5923 */;
-import closure_5 from "createExecutable" /* 4474 */;
-import importDefaultResult from "addApplication" /* 4489 */;
+import closure_4 from "set" /* 5955 */;
+import closure_5 from "createExecutable" /* 4504 */;
+import importDefaultResult from "addApplication" /* 4519 */;
 import ME from "ME" /* 676 */;
 import initialize from "initialize" /* 589 */;
 
@@ -44,7 +44,7 @@ function _fetchApplication() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -69,7 +69,7 @@ function _fetchApplication() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "Object", done: true };
+              return { value: "PX_16", done: null };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -250,7 +250,7 @@ let obj = {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

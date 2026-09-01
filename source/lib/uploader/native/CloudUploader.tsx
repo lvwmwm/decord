@@ -1,15 +1,15 @@
-// Module ID: 7551
-// Function ID: 7552
+// Module ID: 7583
+// Function ID: 7584
 // Name: nativeEventEmitter
-// Dependencies: [5, 17, 676, 4441, 3, 7552, 7468, 1236, 5091, 5050, 5086, 7553, 500, 7554, 5040, 5041, 12, 2]
+// Dependencies: [5, 17, 676, 4471, 3, 7584, 7500, 1236, 5123, 5082, 5118, 7585, 500, 7586, 5072, 5073, 12, 2]
 
-// Module 7551 (nativeEventEmitter)
+// Module 7583 (nativeEventEmitter)
 import timestampDefault from "timestamp" /* 3 */;
-import _fileSizeDefault from "_fileSize" /* 7552 */;
+import _fileSizeDefault from "_fileSize" /* 7584 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import ME from "ME" /* 676 */;
-import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4441 */;
+import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4471 */;
 
 const require = arg1;
 ({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
@@ -49,7 +49,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                   obj[0] = arg1;
                   return obj;
                 } else {
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -116,7 +116,7 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                       obj1[1] = intl2.formatToPlainString(callback(1236).t.D0noUt, obj2);
                       dependencyMap = 1;
                       const obj3 = { value: null, done: false };
-                      obj3[0] = files(7468).startBackgroundTask(obj1);
+                      obj3[0] = files(7500).startBackgroundTask(obj1);
                       return obj3;
                     }
                   } else if (arg0 === 1) {
@@ -130,11 +130,11 @@ prototype["uploadFiles"] = function uploadFiles(c3) {
                   } else {
                     callback = arg1;
                     if (closure_1_0._aborted) {
-                      obj = files(7468);
+                      obj = files(7500);
                       obj.endBackgroundTask(closure_1_0);
                     }
                     dependencyMap = 3;
-                    return { value: "HermesInternal", done: "HermesInternal" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp13) {
                   dependencyMap = tmp;
@@ -342,7 +342,7 @@ prototype["startUpload"] = function startUpload() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -434,7 +434,7 @@ prototype["startUpload"] = function startUpload() {
           } else {
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
           const _HermesInternal2 = HermesInternal;
           closure_1_8.log("All uploads cancelled for " + lib.id);

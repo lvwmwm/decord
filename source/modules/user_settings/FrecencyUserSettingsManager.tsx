@@ -1,23 +1,23 @@
-// Module ID: 16909
-// Function ID: 16910
+// Module ID: 16945
+// Function ID: 16946
 // Name: handleConnectionOpen
-// Dependencies: [5, 8116, 8115, 5369, 4933, 5411, 5419, 1340, 685, 4477, 687, 5454, 1370, 1341, 1342, 12, 2]
+// Dependencies: [5, 8148, 8147, 5401, 4965, 5443, 5451, 1340, 685, 4507, 687, 5486, 1370, 1341, 1342, 12, 2]
 
-// Module 16909 (handleConnectionOpen)
+// Module 16945 (handleConnectionOpen)
 import setDefault from "set" /* 687 */;
 import updateUserGuildSettings from "updateUserGuildSettings" /* 1370 */;
-import initializeDefault from "initialize" /* 5454 */;
+import initializeDefault from "initialize" /* 5486 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleUserSettingsProtoStoreChange" /* 8116 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 8115 */;
-import closure_6 from "getEmojiToGroupId" /* 5369 */;
-import closure_7 from "handleSoundCreateOrUpdate" /* 4933 */;
-import closure_8 from "handleStickersStoreUpdate" /* 5411 */;
-import closure_9 from "handleChannelSelect" /* 5419 */;
-import { MAX_NUM_SELECTED_ITEMS } from "handleChannelSelect" /* 5419 */;
+import closure_4 from "handleUserSettingsProtoStoreChange" /* 8148 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 8147 */;
+import closure_6 from "getEmojiToGroupId" /* 5401 */;
+import closure_7 from "handleSoundCreateOrUpdate" /* 4965 */;
+import closure_8 from "handleStickersStoreUpdate" /* 5443 */;
+import closure_9 from "handleChannelSelect" /* 5451 */;
+import { MAX_NUM_SELECTED_ITEMS } from "handleChannelSelect" /* 5451 */;
 import closure_11 from "handleConnectionClosedOrResumed" /* 1340 */;
 import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
-import { FREQUENCY_ITEM_LIMIT } from "ApplicationTypes" /* 4477 */;
+import { FREQUENCY_ITEM_LIMIT } from "ApplicationTypes" /* 4507 */;
 
 require = arg1;
 function handleConnectionOpen() {
@@ -77,7 +77,7 @@ function _saveProtos() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -142,7 +142,7 @@ function _saveProtos() {
             const result = markDirtyIfHasPendingChange.markDirtyIfHasPendingChange();
           });
           c4 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp25) {
           c4 = tmp;
           throw tmp25;

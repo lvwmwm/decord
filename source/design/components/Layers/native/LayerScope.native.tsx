@@ -1,12 +1,12 @@
-// Module ID: 5908
-// Function ID: 5909
+// Module ID: 5940
+// Function ID: 5941
 // Name: Layer
-// Dependencies: [32, 19, 17, 676, 21, 5909, 5910, 2]
+// Dependencies: [32, 19, 17, 676, 21, 5941, 5942, 2]
 // Exports: LayerScope
 
-// Module 5908 (Layer)
-import useInitialValueDefault from "useInitialValue" /* 5909 */;
-import add from "add" /* 5910 */;
+// Module 5940 (Layer)
+import useInitialValueDefault from "useInitialValue" /* 5941 */;
+import add from "add" /* 5942 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -19,7 +19,7 @@ function Layer(zIndex) {
   let context;
   dependencyMap = undefined;
   let callback;
-  context = React.useContext(zIndex(5910).LayerContext);
+  context = React.useContext(zIndex(5942).LayerContext);
   dependencyMap = callback(React.useState({}), 2)[1];
   callback = React.useRef(null);
   const items = [context];

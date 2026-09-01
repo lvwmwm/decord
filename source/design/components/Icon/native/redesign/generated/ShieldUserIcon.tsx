@@ -1,14 +1,14 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9713
+// Function ID: 9714
 // Name: ShieldUserIcon
-// Dependencies: [19, 21, 712, 4166, 8000, 2]
+// Dependencies: [19, 21, 712, 4196, 8032, 2]
 // Exports: ShieldUserIcon
 
-// Module 9674 (ShieldUserIcon)
+// Module 9713 (ShieldUserIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 8000 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 8032 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

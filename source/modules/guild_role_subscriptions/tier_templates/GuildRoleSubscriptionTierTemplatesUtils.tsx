@@ -1,21 +1,21 @@
-// Module ID: 14796
-// Function ID: 14797
+// Module ID: 14829
+// Function ID: 14830
 // Name: getUsedTemplateChannelsForGuild
-// Dependencies: [5, 19, 1387, 4085, 14791, 14797, 676, 1394, 4724, 647, 1399, 709, 9666, 6075, 13599, 2]
+// Dependencies: [5, 19, 1387, 4115, 14824, 14830, 676, 1394, 4756, 647, 1399, 709, 9705, 6107, 13632, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 14796 (getUsedTemplateChannelsForGuild)
-import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6075 */;
-import GuildFeatures2 from "GuildFeatures" /* 13599 */;
+// Module 14829 (getUsedTemplateChannelsForGuild)
+import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6107 */;
+import GuildFeatures2 from "GuildFeatures" /* 13632 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { useMemo } from "noop" /* 19 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "makeGroupListingIndexSubscriptionListingTag" /* 4085 */;
-import { useEditStateStore } from "AllChannelAccessOptions" /* 14791 */;
-import closure_9 from "initialize" /* 14797 */;
+import closure_7 from "makeGroupListingIndexSubscriptionListingTag" /* 4115 */;
+import { useEditStateStore } from "AllChannelAccessOptions" /* 14824 */;
+import closure_9 from "initialize" /* 14830 */;
 import { GuildFeatures } from "ME" /* 676 */;
 import { ChannelFlags } from "set" /* 1394 */;
-import importDefaultResult from "allSettled" /* 4724 */;
+import importDefaultResult from "allSettled" /* 4756 */;
 
 require = arg1;
 function getUsedTemplateChannelsForGuild(arg0) {
@@ -69,7 +69,7 @@ function _createChannelsFromTemplateTierBenefits() {
           obj[0] = arr;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

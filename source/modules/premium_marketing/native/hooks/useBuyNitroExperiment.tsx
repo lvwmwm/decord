@@ -1,14 +1,14 @@
-// Module ID: 12935
-// Function ID: 12936
+// Module ID: 12968
+// Function ID: 12969
 // Name: useBuyNitroExperiment
-// Dependencies: [32, 19, 7134, 5909, 12936, 2]
+// Dependencies: [32, 19, 7166, 5941, 12969, 2]
 // Exports: useBuyNitroExperiment
 
-// Module 12935 (useBuyNitroExperiment)
-import useInitialValueDefault from "useInitialValue" /* 5909 */;
+// Module 12968 (useBuyNitroExperiment)
+import useInitialValueDefault from "useInitialValue" /* 5941 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore" /* 7134 */;
+import { usePremiumPlanPurchasedStore as closure_5 } from "usePremiumPlanPurchasedStore" /* 7166 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium_marketing/native/hooks/useBuyNitroExperiment.tsx");

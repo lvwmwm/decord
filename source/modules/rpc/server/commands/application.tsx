@@ -1,15 +1,15 @@
-// Module ID: 14088
-// Function ID: 14089
-// Dependencies: [4489, 4350, 676, 9467, 9469, 14089, 8404, 9464, 9417, 698, 530, 8465, 2]
+// Module ID: 14121
+// Function ID: 14122
+// Dependencies: [4519, 4380, 676, 9506, 9508, 14122, 8436, 9503, 9456, 698, 530, 8497, 2]
 
-// Module 14088
+// Module 14121
 import sendRequest from "sendRequest" /* 530 */;
-import isTestModeForApplication from "isTestModeForApplication" /* 8465 */;
-import prototypeDefault from "prototype" /* 9464 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9467 */;
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9469 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14089 */;
-import closure_3 from "addApplication" /* 4489 */;
+import isTestModeForApplication from "isTestModeForApplication" /* 8497 */;
+import prototypeDefault from "prototype" /* 9503 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9506 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9508 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14122 */;
+import closure_3 from "addApplication" /* 4519 */;
 import ME from "ME" /* 676 */;
 
 require = arg1;
@@ -37,9 +37,9 @@ let obj = {
       const guildId = obj3.getGuildId();
     }
     application = application.getApplication(id);
-    let tmpResult = tmp(8404);
+    let tmpResult = tmp(8436);
     if (tmpResult.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-      tmpResult = tmp(9417);
+      tmpResult = tmp(9456);
       const activeAnalyticsSessionIDs = tmpResult.getActiveAnalyticsSessionIDs(id);
       obj = { activity_application_id: null, activity_channel_type: null, activity_guild_id: null, activity_user_session_id: null };
       obj[0] = id;
@@ -61,7 +61,7 @@ let obj = {
     } else {
       obj1 = { errorCode: null };
       obj1[0] = constants2.INVALID_COMMAND;
-      const tmp12 = new tmp5(9464)(obj1, "This application cannot access this API");
+      const tmp12 = new tmp5(9503)(obj1, "This application cannot access this API");
       throw tmp12;
     }
   }
@@ -73,8 +73,8 @@ obj = {
     if (null == id) {
       let obj = { errorCode: null };
       obj[0] = constants2.INVALID_COMMAND;
-      const tmp10 = new prototypeDefault(obj, "No application.");
-      throw tmp10;
+      const tmp7 = new prototypeDefault(obj, "No application.");
+      throw tmp7;
     } else {
       const HTTP = sendRequest.HTTP;
       obj = { url: null, body: null, retries: 3, oldFormErrors: true, rejectWithError: false };
@@ -82,7 +82,7 @@ obj = {
       obj = { test_mode: null };
       obj[0] = isTestModeForApplication.isTestModeForApplication(id);
       obj[1] = obj;
-      const obj3 = isTestModeForApplication;
+      const obj4 = isTestModeForApplication;
       return HTTP.post(obj).then((body) => body.body);
     }
   }

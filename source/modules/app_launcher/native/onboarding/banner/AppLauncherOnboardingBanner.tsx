@@ -1,15 +1,15 @@
-// Module ID: 11587
-// Function ID: 11588
+// Module ID: 11620
+// Function ID: 11621
 // Name: AppLauncherOnboardingBanner
-// Dependencies: [19, 21, 1373, 11588, 11602, 11604, 2]
+// Dependencies: [19, 21, 1373, 11621, 11635, 11637, 2]
 // Exports: default
 
-// Module 11587 (AppLauncherOnboardingBanner)
+// Module 11620 (AppLauncherOnboardingBanner)
 import noopAll from "noop" /* 19 */;
 import DismissibleContent from "DismissibleContent" /* 1373 */;
-import ActivitiesBannerDefault from "ActivitiesBanner" /* 11588 */;
-import AppsBanerDefault from "AppsBaner" /* 11602 */;
-import BotsBannerDefault from "BotsBanner" /* 11604 */;
+import ActivitiesBannerDefault from "ActivitiesBanner" /* 11621 */;
+import AppsBanerDefault from "AppsBaner" /* 11635 */;
+import BotsBannerDefault from "BotsBanner" /* 11637 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 11810
-// Function ID: 11811
+// Module ID: 11843
+// Function ID: 11844
 // Name: CARD_SIZE
 // Dependencies: [712, 2]
 // Exports: getCallTileGutter, getEdgeGutter
 
-// Module 11810 (CARD_SIZE)
+// Module 11843 (CARD_SIZE)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 

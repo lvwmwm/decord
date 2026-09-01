@@ -1,9 +1,9 @@
-// Module ID: 8743
-// Function ID: 8744
+// Module ID: 8780
+// Function ID: 8781
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [65, 2]
 
-// Module 8743 (__INTERNAL_VIEW_CONFIG)
+// Module 8780 (__INTERNAL_VIEW_CONFIG)
 import set from "set" /* 2 */;
 import setRuntimeConfigProvider from "setRuntimeConfigProvider" /* 65 */;
 

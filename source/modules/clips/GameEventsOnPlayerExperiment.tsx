@@ -1,10 +1,10 @@
-// Module ID: 5044
-// Function ID: 5045
+// Module ID: 5076
+// Function ID: 5077
 // Name: apexExperiment
 // Dependencies: [1468, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 5044 (apexExperiment)
+// Module 5076 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

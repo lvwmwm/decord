@@ -1,10 +1,10 @@
-// Module ID: 16282
-// Function ID: 16283
+// Module ID: 16318
+// Function ID: 16319
 // Name: collectGuildThemeAnalyticsMetadata
 // Dependencies: [1909, 2]
 // Exports: collectGuildThemeAnalyticsMetadata
 
-// Module 16282 (collectGuildThemeAnalyticsMetadata)
+// Module 16318 (collectGuildThemeAnalyticsMetadata)
 import closure_0 from "createGuildRecordFromRust" /* 1909 */;
 
 const result = require("set").fileFinishedImporting("modules/guild_themes/GuildThemeAnalyticsUtils.tsx");

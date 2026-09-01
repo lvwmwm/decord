@@ -1,15 +1,15 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12220
+// Function ID: 12221
 // Name: Steps
-// Dependencies: [1922, 12182, 12183, 676, 12185, 698, 12188, 2]
+// Dependencies: [1922, 12215, 12216, 676, 12218, 698, 12221, 2]
 // Exports: trackFlowEnd, trackFlowStart, trackFlowStep
 
-// Module 12187 (Steps)
+// Module 12220 (Steps)
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import trackNUFStep from "trackNUFStep" /* 12188 */;
+import trackNUFStep from "trackNUFStep" /* 12221 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import { getIsOnboarding } from "ContactSyncModes" /* 12182 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 12183 */;
+import { getIsOnboarding } from "ContactSyncModes" /* 12215 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12216 */;
 import { AnalyticEvents } from "ME" /* 676 */;
 
 require = arg1;
@@ -31,7 +31,7 @@ export const trackFlowStart = function trackFlowStart(arg0) {
     phone = currentUser.phone;
   }
   closure_1 = null != phone;
-  obj = _require(12185);
+  obj = _require(12218);
   const result = obj.checkContactPermissions();
   result.then((arg0) => {
     let tmp = null;

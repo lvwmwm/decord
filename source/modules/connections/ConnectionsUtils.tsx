@@ -1,18 +1,18 @@
-// Module ID: 5319
-// Function ID: 5320
+// Module ID: 5351
+// Function ID: 5352
 // Name: officialApplicationIds
-// Dependencies: [1985, 1909, 4091, 5320, 676, 1486, 38, 1236, 12, 5321, 589, 4268, 1373, 2]
+// Dependencies: [1985, 1909, 4121, 5352, 676, 1486, 38, 1236, 12, 5353, 589, 4298, 1373, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible, useShowLinkedRolesAdminNux
 
-// Module 5319 (officialApplicationIds)
+// Module 5351 (officialApplicationIds)
 import applyDefault from "apply" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
-import ChannelTypesDefault from "ChannelTypes" /* 5321 */;
+import ChannelTypesDefault from "ChannelTypes" /* 5353 */;
 import closure_3 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4091 */;
-import OperatorTypes from "OperatorTypes" /* 5320 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4121 */;
+import OperatorTypes from "OperatorTypes" /* 5352 */;
 import ME from "ME" /* 676 */;
 
 const require = arg1;

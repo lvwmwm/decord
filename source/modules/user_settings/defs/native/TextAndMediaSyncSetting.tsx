@@ -1,14 +1,14 @@
-// Module ID: 15036
-// Function ID: 15037
+// Module ID: 15069
+// Function ID: 15070
 // Name: toggle
-// Dependencies: [1303, 7852, 589, 11031, 1236, 8181, 2]
+// Dependencies: [1303, 7884, 589, 11068, 1236, 8213, 2]
 
-// Module 15036 (toggle)
+// Module 15069 (toggle)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 8181 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 8213 */;
 import closure_2 from "initialize" /* 1303 */;
-import createToggle from "createToggle" /* 11031 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 createToggle = {

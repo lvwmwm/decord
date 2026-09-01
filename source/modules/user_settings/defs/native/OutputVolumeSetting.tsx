@@ -1,15 +1,15 @@
-// Module ID: 14814
-// Function ID: 14815
+// Module ID: 14847
+// Function ID: 14848
 // Name: volumeSlider
-// Dependencies: [4499, 7852, 589, 11031, 1236, 9742, 10026, 2]
+// Dependencies: [4529, 7884, 589, 11068, 1236, 9781, 10065, 2]
 
-// Module 14814 (volumeSlider)
+// Module 14847 (volumeSlider)
 import initialize from "initialize" /* 589 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9742 */;
-import apexExperimentDefault from "apexExperiment" /* 10026 */;
-import closure_3 from "_detectH265HardwareDecode" /* 4499 */;
-import createToggle from "createToggle" /* 11031 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9781 */;
+import apexExperimentDefault from "apexExperiment" /* 10065 */;
+import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
+import createToggle from "createToggle" /* 11068 */;
 
 require = arg1;
 createToggle = {

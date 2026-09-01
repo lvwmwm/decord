@@ -1,10 +1,10 @@
-// Module ID: 4176
-// Function ID: 4177
+// Module ID: 4206
+// Function ID: 4207
 // Name: useFieldLabelA11yNative
 // Dependencies: [19, 17, 2]
 // Exports: useFieldLabelA11yNative
 
-// Module 4176 (useFieldLabelA11yNative)
+// Module 4206 (useFieldLabelA11yNative)
 import closure_0 from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
 

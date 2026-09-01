@@ -1,10 +1,10 @@
-// Module ID: 5565
-// Function ID: 5566
+// Module ID: 5597
+// Function ID: 5598
 // Name: useCustomKeyboardHeight
 // Dependencies: [1496, 1497, 2]
 // Exports: default, getCustomKeyboardHeight
 
-// Module 5565 (useCustomKeyboardHeight)
+// Module 5597 (useCustomKeyboardHeight)
 import set from "set" /* 2 */;
 import context from "context" /* 1496 */;
 import computeEntryStateDefault from "computeEntryState" /* 1497 */;

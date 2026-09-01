@@ -1,9 +1,9 @@
-// Module ID: 5432
-// Function ID: 5433
+// Module ID: 5464
+// Function ID: 5465
 // Name: GUILD_ONBOARDING_MODAL_KEY
 // Dependencies: [2]
 
-// Module 5432 (GUILD_ONBOARDING_MODAL_KEY)
+// Module 5464 (GUILD_ONBOARDING_MODAL_KEY)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_onboarding/native/GuildOnboardingConstants.tsx");

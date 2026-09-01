@@ -1,13 +1,13 @@
-// Module ID: 11994
-// Function ID: 11995
+// Module ID: 12027
+// Function ID: 12028
 // Name: clearGuildMemberTimeout
-// Dependencies: [1992, 1922, 4080, 709, 5454, 2]
+// Dependencies: [1992, 1922, 4110, 709, 5486, 2]
 
-// Module 11994 (clearGuildMemberTimeout)
+// Module 12027 (clearGuildMemberTimeout)
 import set from "set" /* 2 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import isCommunicationDisabled from "isCommunicationDisabled" /* 4080 */;
-import initializeDefault from "initialize" /* 5454 */;
+import isCommunicationDisabled from "isCommunicationDisabled" /* 4110 */;
+import initializeDefault from "initialize" /* 5486 */;
 import trackCommunicationDisabled from "trackCommunicationDisabled" /* 1992 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;

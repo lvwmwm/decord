@@ -1,15 +1,15 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10648
+// Function ID: 10649
 // Name: FacepileGroupDMAvatar
-// Dependencies: [19, 17, 1922, 21, 1297, 4448, 8066, 589, 1471, 2]
+// Dependencies: [19, 17, 1922, 21, 1297, 4478, 8098, 589, 1471, 2]
 // Exports: default
 
-// Module 10610 (FacepileGroupDMAvatar)
+// Module 10648 (FacepileGroupDMAvatar)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "mergeGuildAvatar" /* 1922 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 class FacepileGroupDMAvatar {
@@ -57,7 +57,7 @@ class FacepileGroupDMAvatar {
     }, items1);
     tmp9 = jsxs;
     tmp10 = View;
-    obj1 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: 0, animate: "absolute" };
+    obj1 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: false, animate: false };
     obj1[3] = memo1;
     obj1[4] = animate;
     if (null == users) {
@@ -71,7 +71,7 @@ class FacepileGroupDMAvatar {
     merged = Object.assign(obj3);
     items3 = [, ];
     items3[0] = tmp11(require("Button").Avatar, obj1);
-    obj4 = { status, statusSizeOverride: require("Button").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "timer" };
+    obj4 = { status, statusSizeOverride: require("Button").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "Ctg7PUHcQmZu" };
     obj4[6] = animate;
     if (null == users) {
       obj5 = { source: null };
@@ -114,7 +114,7 @@ export default function GroupDMAvatar(pileSizeOverride) {
     if (0 !== channel.recipients.length) {
       if (0 !== stateFromStoresArray.length) {
         if (1 === stateFromStoresArray.length) {
-          obj = { autoStatusCutout: true, status: null, style: null, size: null, user: null, guildId: "a", animate: "md", accessible: "primary", accessibilityLabel: null };
+          obj = { autoStatusCutout: true, status: null, style: null, size: null, user: null, guildId: "a", animate: 1518500249, accessible: 1859775393, accessibilityLabel: 2400959708 };
           obj[1] = status;
           obj[2] = style;
           obj[3] = size;

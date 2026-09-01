@@ -1,13 +1,13 @@
-// Module ID: 5424
-// Function ID: 5425
+// Module ID: 5456
+// Function ID: 5457
 // Name: getGuildNameSuggestion
-// Dependencies: [1909, 1922, 1401, 687, 5425, 4292, 1236, 2]
+// Dependencies: [1909, 1922, 1401, 687, 5457, 4322, 1236, 2]
 // Exports: getGuildNameSuggestion
 
-// Module 5424 (getGuildNameSuggestion)
+// Module 5456 (getGuildNameSuggestion)
 import setDefault from "set" /* 687 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import nameFromUserAll from "nameFromUser" /* 4292 */;
+import nameFromUserAll from "nameFromUser" /* 4322 */;
 import closure_5 from "createGuildRecordFromRust" /* 1909 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import importDefaultResult from "priv" /* 1401 */;

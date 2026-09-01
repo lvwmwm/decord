@@ -1,9 +1,9 @@
-// Module ID: 4258
-// Function ID: 4259
+// Module ID: 4288
+// Function ID: 4289
 // Name: metadata
 // Dependencies: [2]
 
-// Module 4258 (metadata)
+// Module 4288 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/rive/native/NitroQuestOrbsMultiplier.riv.js");

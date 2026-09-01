@@ -1,10 +1,10 @@
-// Module ID: 13693
-// Function ID: 13694
+// Module ID: 13726
+// Function ID: 13727
 // Name: getNewestBadgeableVersion
 // Dependencies: [2]
 // Exports: getNewestBadgeableVersion
 
-// Module 13693 (getNewestBadgeableVersion)
+// Module 13726 (getNewestBadgeableVersion)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_launcher/utils/AppLauncherBadgeUtils.tsx");

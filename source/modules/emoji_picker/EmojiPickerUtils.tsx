@@ -1,23 +1,23 @@
-// Module ID: 9064
-// Function ID: 9065
+// Module ID: 9102
+// Function ID: 9103
 // Name: initializeSearch
-// Dependencies: [19, 5369, 1909, 5349, 1922, 5373, 676, 1925, 1338, 1924, 514, 9065, 4668, 9066, 9068, 9069, 589, 1946, 9070, 1236, 4108, 4104, 698, 12, 687, 1370, 2]
+// Dependencies: [19, 5401, 1909, 5381, 1922, 5405, 676, 1925, 1338, 1924, 514, 9103, 4700, 9104, 9106, 9107, 589, 1946, 9108, 1236, 4138, 4134, 698, 12, 687, 1370, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useFavoriteEmojis, useFrequentlyUsedEmojis, useFrequentlyUsedReactionEmojis, useIsFavoriteEmoji
 
-// Module 9064 (initializeSearch)
+// Module 9102 (initializeSearch)
 import v1 from "v1" /* 514 */;
 import setDefault from "set" /* 687 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4104 */;
-import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4668 */;
-import withEqualityFn from "withEqualityFn" /* 9065 */;
+import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
+import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
+import withEqualityFn from "withEqualityFn" /* 9103 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getEmojiToGroupId" /* 5369 */;
+import closure_4 from "getEmojiToGroupId" /* 5401 */;
 import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import closure_6 from "insertUnsortedGuilds" /* 5349 */;
+import closure_6 from "insertUnsortedGuilds" /* 5381 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5373 */;
+import EmojiCategoryTypes from "EmojiCategoryTypes" /* 5405 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 1925 */;
 import { ExpressionPickerViewType } from "ExpressionPickerViewType" /* 1338 */;

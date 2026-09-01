@@ -1,9 +1,9 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14696
+// Function ID: 14697
 // Name: QUEST_DOCK_COLLAPSED_HEIGHT
 // Dependencies: [712, 2]
 
-// Module 14663 (QUEST_DOCK_COLLAPSED_HEIGHT)
+// Module 14696 (QUEST_DOCK_COLLAPSED_HEIGHT)
 import set from "set" /* 2 */;
 import ThemesDefault from "Themes" /* 712 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 12865
-// Function ID: 12866
+// Module ID: 12898
+// Function ID: 12899
 // Name: getAskToJoinText
-// Dependencies: [1922, 676, 1236, 2825, 4641, 2]
+// Dependencies: [1922, 676, 1236, 2855, 4673, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 12865 (getAskToJoinText)
+// Module 12898 (getAskToJoinText)
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2825 */;
-import getNickname from "getNickname" /* 4641 */;
+import messagesProxyDefault from "messagesProxy" /* 2855 */;
+import getNickname from "getNickname" /* 4673 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
 import { ActivityActionTypes } from "ME" /* 676 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 13645
-// Function ID: 13646
+// Module ID: 13678
+// Function ID: 13679
 // Name: items
-// Dependencies: [19, 21, 514, 13623, 8209, 2]
+// Dependencies: [19, 21, 514, 13656, 8241, 2]
 // Exports: GuildBadgeBunny
 
-// Module 13645 (items)
-import inlineStyles from "inlineStyles" /* 8209 */;
-import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13623 */;
+// Module 13678 (items)
+import inlineStyles from "inlineStyles" /* 8241 */;
+import getTransformedBadgeColors from "getTransformedBadgeColors" /* 13656 */;
 import closure_2 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 

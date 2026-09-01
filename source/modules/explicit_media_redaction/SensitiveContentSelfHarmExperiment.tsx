@@ -1,10 +1,10 @@
-// Module ID: 6108
-// Function ID: 6109
+// Module ID: 6140
+// Function ID: 6141
 // Name: apexExperiment
 // Dependencies: [1468, 2]
 // Exports: isSensitiveContentSelfHarmEnabled, useIsSensitiveContentSelfHarmEnabled
 
-// Module 6108 (apexExperiment)
+// Module 6140 (apexExperiment)
 import set from "set" /* 2 */;
 import ApexExperiment from "ApexExperiment" /* 1468 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 9680
-// Function ID: 9681
+// Module ID: 9719
+// Function ID: 9720
 // Name: TagListInputTagComponent
-// Dependencies: [19, 17, 21, 4448, 712, 1236, 9681, 5036, 4444, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 1236, 9720, 5068, 4474, 2]
 // Exports: TagListInputTagComponent
 
-// Module 9680 (TagListInputTagComponent)
+// Module 9719 (TagListInputTagComponent)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Text from "Text" /* 4444 */;
-import PressableBase from "PressableBase" /* 5036 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 9681 */;
+import Text from "Text" /* 4474 */;
+import PressableBase from "PressableBase" /* 5068 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 9720 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;

@@ -1,24 +1,24 @@
-// Module ID: 14529
-// Function ID: 14530
+// Module ID: 14562
+// Function ID: 14563
 // Name: onPress
-// Dependencies: [19, 21, 4415, 14530, 2009, 1499, 7127, 7575, 1236, 14531, 2]
+// Dependencies: [19, 21, 4445, 14563, 2009, 1499, 7159, 7607, 1236, 14564, 2]
 
-// Module 14529 (onPress)
+// Module 14562 (onPress)
 import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4415 */;
+import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
 function onPress() {
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(14530, dependencyMap.paths), "AddConnection");
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(14563, dependencyMap.paths), "AddConnection");
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
   stackNavigation = stackNavigation(1499).useStackNavigation();
   let obj = stackNavigation(1499);
   const tmp = stackNavigation;
-  const params = stackNavigation(7127).useSettingNavigationRoute().params;
+  const params = stackNavigation(7159).useSettingNavigationRoute().params;
   let selectedPlatformType;
   if (params != null) {
     selectedPlatformType = params.selectedPlatformType;
@@ -32,11 +32,11 @@ const memoResult = importAllResult.memo(function ConnectionsSettingScreen() {
         obj.onPress = closure_5;
         const intl = callback(1236).intl;
         obj.label = intl.string(callback(1236).t.OYkgVk);
-        return callback2(callback(7575).HeaderTextButton, obj);
+        return callback2(callback(7607).HeaderTextButton, obj);
       }
     });
   }, items);
-  return jsx(tmp(14531).UserSettingsConnections, { selectedPlatformType });
+  return jsx(tmp(14564).UserSettingsConnections, { selectedPlatformType });
 });
 const result = require("set").fileFinishedImporting("modules/user_settings/connections/native/ConnectionsSettingScreen.tsx");
 

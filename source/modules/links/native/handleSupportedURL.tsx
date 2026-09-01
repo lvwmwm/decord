@@ -1,26 +1,26 @@
-// Module ID: 13556
-// Function ID: 13557
+// Module ID: 13589
+// Function ID: 13590
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5537, 7239, 7134, 13041, 1218, 676, 1394, 4515, 4698, 9239, 7251, 4430, 13557, 11414, 7852, 12181, 4691, 4303, 13558, 8859, 6213, 8827, 11325, 1891, 8445, 698, 8447, 6060, 11147, 11453, 13565, 12213, 9245, 2009, 9240, 9238, 13567, 13569, 1624, 5051, 13574, 4160, 13576, 1909, 6154, 9634, 9720, 6129, 4690, 9839, 4302, 5366, 1222, 709, 5318, 1486, 9689, 13579, 13594, 500, 13605, 9870, 13612, 4805, 13613, 7254, 5941, 9804, 7431, 5360, 11297, 10415, 13685, 5345, 9423, 8775, 8769, 4413, 2]
+// Dependencies: [109, 5, 5569, 7271, 7166, 13074, 1218, 676, 1394, 4545, 4730, 9278, 7283, 4460, 13590, 11452, 7884, 12214, 4723, 4333, 13591, 8896, 6245, 8864, 11363, 1891, 8477, 698, 8479, 6092, 11184, 11486, 13598, 12246, 9284, 2009, 9279, 9277, 13600, 13602, 1624, 5083, 13607, 4190, 13609, 1909, 6186, 9673, 9759, 6161, 4722, 9878, 4332, 5398, 1222, 709, 5350, 1486, 9728, 13612, 13627, 500, 13638, 9909, 13645, 4837, 13646, 7286, 5973, 9843, 7463, 5392, 11334, 10454, 13718, 5377, 9462, 8812, 8806, 4443, 2]
 // Exports: default
 
-// Module 13556 (handleSupportedURL)
+// Module 13589 (handleSupportedURL)
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "asyncGeneratorStep" /* 5 */;
-import closure_8 from "scheduledEventSort" /* 7239 */;
-import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7134 */;
-import closure_10 from "zustandStore" /* 13041 */;
+import closure_8 from "scheduledEventSort" /* 7271 */;
+import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7166 */;
+import closure_10 from "zustandStore" /* 13074 */;
 import closure_11 from "fetchFingerprint" /* 1218 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1394 */;
-import { StreamTypes } from "StreamIssueReportReasons" /* 4515 */;
-import { NativePermissionTypes } from "NativePermissionStatus" /* 4698 */;
-import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9239 */;
-import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7251 */;
-import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow" /* 4430 */;
-import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13557 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11414 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7852 */;
+import { StreamTypes } from "StreamIssueReportReasons" /* 4545 */;
+import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
+import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9278 */;
+import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7283 */;
+import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow" /* 4460 */;
+import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13590 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11452 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7884 */;
 
 const require = arg1;
 let closure_4 = ["code", "state"];
@@ -206,7 +206,7 @@ export default function handleSupportedURL(payload) {
       result = inviteCode;
       result = payload(inviteCode[29]).startDiceRoll(channelId2, diceCount, diceSides);
       result = rootNavigationRef1;
-      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: "<string:285213222>" };
+      let obj3 = { guildId: null, channelId: null, messageId: "Array", navigationSettings: true };
       obj3[0] = guildId2;
       obj3[1] = channelId2;
       let obj4 = { safe: null, navigationReplace: null, waitForConnection: null, skipMessageFetch: null };
@@ -365,7 +365,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -440,7 +440,7 @@ export default function handleSupportedURL(payload) {
                     const result = obj2.openGuildEventDetails(obj4);
                   }
                   c4 = 3;
-                  return { value: "HermesInternal", done: "HermesInternal" };
+                  return { value: "HermesInternal", done: null };
                 }
               } catch (tmp35) {
                 c4 = tmp;
@@ -472,7 +472,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -534,7 +534,7 @@ export default function handleSupportedURL(payload) {
                   obj3.disconnectRemote();
                 }
                 c2 = 3;
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               } catch (tmp37) {
                 c2 = tmp;
                 throw tmp37;
@@ -594,7 +594,7 @@ export default function handleSupportedURL(payload) {
                 obj[0] = arg1;
                 return obj;
               } else {
-                return { value: "HermesInternal", done: "HermesInternal" };
+                return { value: "HermesInternal", done: null };
               }
             } else {
               try {
@@ -780,7 +780,7 @@ export default function handleSupportedURL(payload) {
                       obj[0] = arg1;
                       return obj;
                     } else {
-                      return { value: "HermesInternal", done: "HermesInternal" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -868,15 +868,15 @@ export default function handleSupportedURL(payload) {
               } else if (result.QUESTS === type) {
                 addPostConnectionCallback(() => {
                   if (null != payload.questId) {
-                    let obj = payload(inviteCode[70]);
-                    obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
+                    let obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
                     obj[0] = arr.questId;
                     obj[1] = closure_1_12.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT;
                     obj[2] = payload(inviteCode[71]).QuestContent.QUEST_EMBED_MOBILE;
                     obj = { referrer_id: null };
                     obj[0] = arr.referrerId;
                     obj[3] = obj;
-                    obj.trackQuestEvent(obj);
+                    payload(inviteCode[70]).trackQuestEvent(obj);
+                    const obj3 = payload(inviteCode[70]);
                   }
                   let sort;
                   if (payload != null) {
@@ -886,25 +886,26 @@ export default function handleSupportedURL(payload) {
                   if (payload != null) {
                     filter = arr.filter;
                   }
+                  obj = payload(inviteCode[72]);
                   obj1 = { scrollToQuestId: payload.questId, sort: null, filter: null, fromContent: null };
-                  let tmp9 = null;
+                  let tmp3 = null;
                   if (null != sort) {
-                    tmp9 = null;
+                    tmp3 = null;
                     if ("" !== sort) {
-                      tmp9 = sort;
+                      tmp3 = sort;
                     }
                   }
-                  obj1[1] = tmp9;
-                  let tmp10 = null;
+                  obj1[1] = tmp3;
+                  let tmp4 = null;
                   if (null != filter) {
-                    tmp10 = null;
+                    tmp4 = null;
                     if ("" !== filter) {
-                      tmp10 = filter;
+                      tmp4 = filter;
                     }
                   }
-                  obj1[2] = tmp10;
+                  obj1[2] = tmp4;
                   obj1[3] = payload(inviteCode[71]).QuestContent.QUEST_SHARE_LINK;
-                  payload(inviteCode[72]).openQuestHome(obj1);
+                  obj.openQuestHome(obj1);
                 });
                 flag = true;
               } else if (result.QUEST_HOME_PREVIEW === type) {

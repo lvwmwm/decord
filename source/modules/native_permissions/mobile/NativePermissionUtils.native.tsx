@@ -1,21 +1,21 @@
-// Module ID: 5058
-// Function ID: 5059
+// Module ID: 5090
+// Function ID: 5091
 // Name: combineStatuses
-// Dependencies: [5, 19, 17, 4698, 21, 500, 1624, 5055, 3, 5059, 5061, 2009, 4827, 1236, 2]
+// Dependencies: [5, 19, 17, 4730, 21, 500, 1624, 5087, 3, 5091, 5093, 2009, 4859, 1236, 2]
 
-// Module 5058 (combineStatuses)
+// Module 5090 (combineStatuses)
 import timestampDefault from "timestamp" /* 3 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useAlertStore from "useAlertStore" /* 4827 */;
-import openPrivacySettingsDefault from "openPrivacySettings" /* 5059 */;
+import useAlertStore from "useAlertStore" /* 4859 */;
+import openPrivacySettingsDefault from "openPrivacySettings" /* 5091 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import NativePermissionStatus from "NativePermissionStatus" /* 4698 */;
+import NativePermissionStatus from "NativePermissionStatus" /* 4730 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 500 */;
 import isMetaQuest from "isMetaQuest" /* 1624 */;
-import { NativePermissionBaseUtils } from "requestAuthorization" /* 5055 */;
+import { NativePermissionBaseUtils } from "requestAuthorization" /* 5087 */;
 
 require = arg1;
 function combineStatuses(items) {
@@ -47,7 +47,7 @@ function _combineStatuses() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {

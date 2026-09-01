@@ -1,11 +1,11 @@
-// Module ID: 10291
-// Function ID: 10292
+// Module ID: 10330
+// Function ID: 10331
 // Name: useGetThreadDraftSettings
-// Dependencies: [4822, 589, 11, 2]
+// Dependencies: [4854, 589, 11, 2]
 // Exports: default, useHasThreadDraft
 
-// Module 10291 (useGetThreadDraftSettings)
-import closure_3 from "handleChanged" /* 4822 */;
+// Module 10330 (useGetThreadDraftSettings)
+import closure_3 from "handleChanged" /* 4854 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/threads/useGetThreadDraftSettings.tsx");

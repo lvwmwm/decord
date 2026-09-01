@@ -1,20 +1,20 @@
-// Module ID: 11947
-// Function ID: 11948
+// Module ID: 11980
+// Function ID: 11981
 // Name: _requestPushNotificationPermission
-// Dependencies: [32, 5, 19, 17, 11945, 11946, 676, 4698, 9621, 698, 11948, 11954, 11955, 589, 2]
+// Dependencies: [32, 5, 19, 17, 11978, 11979, 676, 4730, 9660, 698, 11981, 11987, 11988, 589, 2]
 // Exports: enableProvisionalPushNotification, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 11947 (_requestPushNotificationPermission)
+// Module 11980 (_requestPushNotificationPermission)
 import initialize from "initialize" /* 589 */;
-import set from "set" /* 11955 */;
+import set from "set" /* 11988 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "set" /* 11945 */;
-import { EventActionType } from "EventActionType" /* 11946 */;
+import closure_7 from "set" /* 11978 */;
+import { EventActionType } from "EventActionType" /* 11979 */;
 import { AnalyticEvents } from "ME" /* 676 */;
-import { NotificationAuthorizationStatus as closure_10 } from "NativePermissionStatus" /* 4698 */;
+import { NotificationAuthorizationStatus as closure_10 } from "NativePermissionStatus" /* 4730 */;
 
 require = arg1;
 function _requestPushNotificationPermission() {
@@ -37,7 +37,7 @@ function _requestPushNotificationPermission() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -73,7 +73,7 @@ function _requestPushNotificationPermission() {
           } else {
             closure_3 = arg1;
             if (closure_3 === constants3.DENIED) {
-              callback2(9621)();
+              callback2(9660)();
               obj2 = callback2(698);
               const obj3 = { action_type: null, action_location: null };
               obj3[0] = constants.TO_SETTINGS;
@@ -82,7 +82,7 @@ function _requestPushNotificationPermission() {
               dependencyMap();
               obj = 3;
             } else if (closure_3 !== constants3.AUTHORIZED) {
-              obj = callback2(11954);
+              obj = callback2(11987);
               const permission = obj.requestPermission((permission_granted) => {
                 let obj = callback(698);
                 obj = { action_type: closure_0, action_location: callback, permission_granted };
@@ -90,7 +90,7 @@ function _requestPushNotificationPermission() {
                 dependencyMap();
               });
             }
-            obj1 = callback(11948);
+            obj1 = callback(11981);
             const result = obj1.updateNotificationAuthorizationStatus(closure_3);
             dependencyMap();
           }
@@ -124,7 +124,7 @@ function _enableProvisionalPushNotification() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -177,7 +177,7 @@ function _enableProvisionalPushNotification() {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = tmp;
@@ -223,7 +223,7 @@ export const useShowReactivationPrompt = function useShowReactivationPrompt() {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -259,7 +259,7 @@ export const useShowReactivationPrompt = function useShowReactivationPrompt() {
                 closure_1_0(true);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             c2 = tmp;

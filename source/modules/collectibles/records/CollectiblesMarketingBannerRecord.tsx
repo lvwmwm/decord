@@ -1,11 +1,11 @@
-// Module ID: 7280
-// Function ID: 7281
+// Module ID: 7312
+// Function ID: 7313
 // Name: fromServer
-// Dependencies: [7279, 2]
+// Dependencies: [7311, 2]
 
-// Module 7280 (fromServer)
+// Module 7312 (fromServer)
 import set from "set" /* 2 */;
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7279 */;
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7311 */;
 
 let prototype;
 prototype = function CollectiblesMarketingBannerRecord(arg0) {

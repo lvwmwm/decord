@@ -1,9 +1,9 @@
-// Module ID: 6856
-// Function ID: 6857
+// Module ID: 6888
+// Function ID: 6889
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6856 (metadata)
+// Module 6888 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/OrbNitroCardSpotIllustration-2x.png.js");

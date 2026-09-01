@@ -1,14 +1,14 @@
-// Module ID: 5564
-// Function ID: 5565
+// Module ID: 5596
+// Function ID: 5597
 // Name: LayoutAnimation
-// Dependencies: [17, 4440, 500, 2]
+// Dependencies: [17, 4470, 500, 2]
 // Exports: DeprecatedLayoutAnimation, DeprecatedLayoutAnimationKeyboard
 
-// Module 5564 (LayoutAnimation)
+// Module 5596 (LayoutAnimation)
 import set from "set" /* 2 */;
 import set2 from "set" /* 500 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4440 */;
+import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import obj from "module_150" /* 150 */;
 
 ({ Keyboard: obj1, LayoutAnimation } = get_ActivityIndicator);

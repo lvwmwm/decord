@@ -1,10 +1,10 @@
-// Module ID: 8191
-// Function ID: 8192
+// Module ID: 8223
+// Function ID: 8224
 // Name: setGPlayAnalytics
 // Dependencies: [644, 705, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
-// Module 8191 (setGPlayAnalytics)
+// Module 8223 (setGPlayAnalytics)
 import set from "set" /* 2 */;
 import keys from "keys" /* 644 */;
 

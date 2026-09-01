@@ -1,14 +1,14 @@
-// Module ID: 6869
-// Function ID: 6870
+// Module ID: 6901
+// Function ID: 6902
 // Name: PlaneIllocon
-// Dependencies: [21, 5461, 6870, 2]
+// Dependencies: [21, 5493, 6902, 2]
 // Exports: PlaneIllocon
 
-// Module 6869 (PlaneIllocon)
+// Module 6901 (PlaneIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6870 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6902 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PlaneIllocon.native.tsx");

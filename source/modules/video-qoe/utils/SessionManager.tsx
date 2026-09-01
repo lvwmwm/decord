@@ -1,9 +1,9 @@
-// Module ID: 14706
-// Function ID: 14707
+// Module ID: 14739
+// Function ID: 14740
 // Name: generateSessionId
 // Dependencies: [2]
 
-// Module 14706 (generateSessionId)
+// Module 14739 (generateSessionId)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/video-qoe/utils/SessionManager.tsx");

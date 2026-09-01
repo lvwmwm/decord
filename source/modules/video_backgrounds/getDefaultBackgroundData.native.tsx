@@ -1,17 +1,17 @@
-// Module ID: 9753
-// Function ID: 9754
+// Module ID: 9792
+// Function ID: 9793
 // Name: DefaultVideoBackground
-// Dependencies: [7727, 9754, 1236, 9755, 9756, 9757, 2]
+// Dependencies: [7759, 9793, 1236, 9794, 9795, 9796, 2]
 // Exports: default
 
-// Module 9753 (DefaultVideoBackground)
+// Module 9792 (DefaultVideoBackground)
 import set from "set" /* 2 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import VideoFilterType from "VideoFilterType" /* 7727 */;
-import metadataDefault from "metadata" /* 9754 */;
-import metadataDefault2 from "metadata" /* 9755 */;
-import metadataDefault3 from "metadata" /* 9756 */;
-import metadataDefault4 from "metadata" /* 9757 */;
+import VideoFilterType from "VideoFilterType" /* 7759 */;
+import metadataDefault from "metadata" /* 9793 */;
+import metadataDefault2 from "metadata" /* 9794 */;
+import metadataDefault3 from "metadata" /* 9795 */;
+import metadataDefault4 from "metadata" /* 9796 */;
 
 const DefaultVideoBackground = VideoFilterType.DefaultVideoBackground;
 let closure_4 = { id: DefaultVideoBackground.OPTION_1, source: "", name: "" };

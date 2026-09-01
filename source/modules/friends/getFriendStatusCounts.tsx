@@ -1,12 +1,12 @@
-// Module ID: 16295
-// Function ID: 16296
+// Module ID: 16331
+// Function ID: 16332
 // Name: getFriendStatusCounts
-// Dependencies: [4537, 4100, 676, 2]
+// Dependencies: [4569, 4130, 676, 2]
 // Exports: default
 
-// Module 16295 (getFriendStatusCounts)
-import closure_0 from "sortActivity" /* 4537 */;
-import closure_1 from "markAllUserIdListsStale" /* 4100 */;
+// Module 16331 (getFriendStatusCounts)
+import closure_0 from "sortActivity" /* 4569 */;
+import closure_1 from "markAllUserIdListsStale" /* 4130 */;
 import { StatusTypes } from "ME" /* 676 */;
 
 const result = require("set").fileFinishedImporting("modules/friends/getFriendStatusCounts.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 6115
-// Function ID: 6116
+// Module ID: 6147
+// Function ID: 6148
 // Name: isForwardMessage
 // Dependencies: [676, 2]
 // Exports: default, isForwardServerMessage
 
-// Module 6115 (isForwardMessage)
+// Module 6147 (isForwardMessage)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 

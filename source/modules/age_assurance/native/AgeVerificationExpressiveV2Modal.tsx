@@ -1,19 +1,19 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 8706
+// Function ID: 8707
 // Name: MethodsScreen
-// Dependencies: [5, 32, 19, 17, 8651, 676, 21, 1938, 8670, 8672, 8674, 4448, 712, 8657, 8676, 8677, 8680, 4701, 8652, 8663, 8664, 8682, 8660, 8661, 4894, 6224, 4444, 8650, 1995, 1297, 4896, 1236, 2889, 5960, 5567, 8683, 8684, 5971, 4691, 5463, 8685, 514, 5976, 2]
+// Dependencies: [5, 32, 19, 17, 8683, 676, 21, 1930, 8707, 8709, 8711, 4478, 712, 8689, 8713, 8714, 8717, 4733, 8684, 8695, 8696, 8719, 8692, 8693, 4926, 6256, 4474, 8682, 1995, 1297, 4928, 1236, 2919, 5992, 5599, 8720, 8721, 6003, 4723, 5495, 8722, 514, 6008, 2]
 // Exports: default
 
-// Module 8669 (MethodsScreen)
+// Module 8706 (MethodsScreen)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import { TRUSTED_PROVIDERS_URL } from "set" /* 8651 */;
+import { TRUSTED_PROVIDERS_URL } from "set" /* 8683 */;
 import { HelpdeskArticles } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function MethodsScreen(onClose) {
@@ -84,7 +84,7 @@ function MethodsScreen(onClose) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -427,7 +427,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     closure_1 = closure_0;
     closure_2 = closure_1;
     closeModal = function closeModal() {
-      let arr = callback(4691);
+      let arr = callback(4723);
       arr = arr.pop();
       dependencyMap();
     };
@@ -454,7 +454,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     const obj3 = entryPoint(closure_2[39]);
     obj[2] = entryPoint(closure_2[39]).getHeaderBackButton();
     obj[3] = function render() {
-      return closure_1_9(callback(8685), { onClose: closeModal, modalSessionId: closure_0 });
+      return closure_1_9(callback(8722), { onClose: closeModal, modalSessionId: closure_0 });
     };
     obj[closure_1_12.GOOGLE_WALLET_VERIFICATION] = obj;
     return obj;
@@ -465,5 +465,5 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
   let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: null };
   const intl = entryPoint(1236).intl;
   obj[2] = intl.string(entryPoint(1236).t["13/7kX"]);
-  return callback(entryPoint(5976).Navigator, obj);
+  return callback(entryPoint(6008).Navigator, obj);
 };

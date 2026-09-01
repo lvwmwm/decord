@@ -1,16 +1,16 @@
-// Module ID: 13677
-// Function ID: 13678
+// Module ID: 13710
+// Function ID: 13711
 // Name: initialize
-// Dependencies: [6094, 1387, 4368, 1922, 4467, 589, 709, 2]
+// Dependencies: [6126, 1387, 4398, 1922, 4497, 589, 709, 2]
 
-// Module 13677 (initialize)
+// Module 13710 (initialize)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "getMemberListId" /* 6094 */;
+import closure_0 from "getMemberListId" /* 6126 */;
 import closure_1 from "ensureGuildLoaded" /* 1387 */;
-import closure_2 from "handleInviteData" /* 4368 */;
+import closure_2 from "handleInviteData" /* 4398 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import closure_4 from "updateVoiceState" /* 4467 */;
+import closure_4 from "updateVoiceState" /* 4497 */;
 
 let obj = {};
 const PersistedStore = initializeDefault.PersistedStore;
@@ -58,21 +58,21 @@ obj = {
   GUILD_HEADER_MEMBER_COUNT: function handleMemberCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "bottom", memberCount: "container" };
+      obj[guildId] = { activeChannelsCount: "method", onlineCount: "T", memberCount: "Map" };
     }
     obj[guildId].memberCount = guildId.count;
   },
   GUILD_HEADER_ONLINE_COUNT: function handleOnlineCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "bottom", memberCount: "container" };
+      obj[guildId] = { activeChannelsCount: "method", onlineCount: "T", memberCount: "Map" };
     }
     obj[guildId].onlineCount = guildId.count;
   },
   GUILD_HEADER_ACTIVE_CHANNELS_COUNT: function handleActiveChannelsCount(guildId) {
     guildId = guildId.guildId;
     if (null == obj[guildId]) {
-      obj[guildId] = { activeChannelsCount: "Array", onlineCount: "bottom", memberCount: "container" };
+      obj[guildId] = { activeChannelsCount: "method", onlineCount: "T", memberCount: "Map" };
     }
     obj[guildId].activeChannelsCount = guildId.count;
   }

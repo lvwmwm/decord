@@ -1,9 +1,9 @@
-// Module ID: 6912
-// Function ID: 6913
+// Module ID: 6944
+// Function ID: 6945
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6912 (metadata)
+// Module 6944 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RubberDuckSpotIllustration-2x.png.js");

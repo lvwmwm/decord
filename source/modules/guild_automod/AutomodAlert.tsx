@@ -1,10 +1,10 @@
-// Module ID: 7230
-// Function ID: 7231
+// Module ID: 7262
+// Function ID: 7263
 // Name: AutomodAlertActionType
 // Dependencies: [2]
 // Exports: parseAlertActionsExecution
 
-// Module 7230 (AutomodAlertActionType)
+// Module 7262 (AutomodAlertActionType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_automod/AutomodAlert.tsx");

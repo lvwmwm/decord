@@ -1,14 +1,14 @@
-// Module ID: 10334
-// Function ID: 10335
+// Module ID: 10373
+// Function ID: 10374
 // Name: GifIcon
-// Dependencies: [19, 21, 712, 4166, 7961, 2]
+// Dependencies: [19, 21, 712, 4196, 7993, 2]
 // Exports: GifIcon
 
-// Module 10334 (GifIcon)
+// Module 10373 (GifIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 7961 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 7993 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

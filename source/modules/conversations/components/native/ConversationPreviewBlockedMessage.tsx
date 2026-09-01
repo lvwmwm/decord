@@ -1,14 +1,14 @@
-// Module ID: 7805
-// Function ID: 7806
+// Module ID: 7837
+// Function ID: 7838
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 4894, 712, 7806, 7709, 4444, 1236, 2]
+// Dependencies: [19, 21, 4926, 712, 7838, 7741, 4474, 1236, 2]
 // Exports: default
 
-// Module 7805 (ConversationPreviewBlockedMessage)
+// Module 7837 (ConversationPreviewBlockedMessage)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import Text from "Text" /* 4444 */;
-import Stack from "Stack" /* 4894 */;
+import Text from "Text" /* 4474 */;
+import Stack from "Stack" /* 4926 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -19,9 +19,9 @@ const result = require("set").fileFinishedImporting("modules/conversations/compo
 export default function ConversationPreviewBlockedMessage(reason) {
   let obj = { direction: "horizontal", spacing: ThemesDefault.space.PX_8, align: "center", children: null };
   if ("blocked" === reason.reason) {
-    let EyeSlashIcon = tmp2(7806).DenyIcon;
+    let EyeSlashIcon = tmp2(7838).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(7709).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7741).EyeSlashIcon;
   }
   obj = { size: "sm", color: ThemesDefault.colors.TEXT_MUTED };
   const items = [closure_3(EyeSlashIcon, obj), ];

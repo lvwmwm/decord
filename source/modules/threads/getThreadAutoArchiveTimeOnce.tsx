@@ -1,13 +1,13 @@
-// Module ID: 5418
-// Function ID: 5419
+// Module ID: 5450
+// Function ID: 5451
 // Name: getThreadAutoArchiveTimeOnce
-// Dependencies: [4463, 687, 11, 2]
+// Dependencies: [4493, 687, 11, 2]
 // Exports: default, getThreadLastActivityTime
 
-// Module 5418 (getThreadAutoArchiveTimeOnce)
+// Module 5450 (getThreadAutoArchiveTimeOnce)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import setDefault from "set" /* 687 */;
-import closure_2 from "generateOldThreadCutoff" /* 4463 */;
+import closure_2 from "generateOldThreadCutoff" /* 4493 */;
 
 let result = require("set").fileFinishedImporting("modules/threads/getThreadAutoArchiveTimeOnce.tsx");
 

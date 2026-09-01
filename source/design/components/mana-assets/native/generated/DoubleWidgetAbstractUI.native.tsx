@@ -1,14 +1,14 @@
-// Module ID: 6459
-// Function ID: 6460
+// Module ID: 6491
+// Function ID: 6492
 // Name: DoubleWidgetAbstractUI
-// Dependencies: [21, 5461, 6460, 2]
+// Dependencies: [21, 5493, 6492, 2]
 // Exports: DoubleWidgetAbstractUI
 
-// Module 6459 (DoubleWidgetAbstractUI)
+// Module 6491 (DoubleWidgetAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6460 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6492 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DoubleWidgetAbstractUI.native.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 4619
-// Function ID: 4620
+// Module ID: 4651
+// Function ID: 4652
 // Name: Video
-// Dependencies: [4512, 4550, 4547, 2]
+// Dependencies: [4542, 4582, 4579, 2]
 
-// Module 4619 (Video)
+// Module 4651 (Video)
 import set from "set" /* 2 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4547 */;
-import onDefault from "on" /* 4550 */;
-import DesktopSources from "DesktopSources" /* 4512 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
+import onDefault from "on" /* 4582 */;
+import DesktopSources from "DesktopSources" /* 4542 */;
 
 function Video() {
   return null;

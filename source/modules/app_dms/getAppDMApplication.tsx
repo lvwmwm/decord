@@ -1,12 +1,12 @@
-// Module ID: 11730
-// Function ID: 11731
+// Module ID: 11763
+// Function ID: 11764
 // Name: getAppDMApplication
-// Dependencies: [4489, 7334, 1922, 2]
+// Dependencies: [4519, 7366, 1922, 2]
 // Exports: getAppDMApplication
 
-// Module 11730 (getAppDMApplication)
-import closure_0 from "addApplication" /* 4489 */;
-import closure_1 from "createUserWidgetFromServer" /* 7334 */;
+// Module 11763 (getAppDMApplication)
+import closure_0 from "addApplication" /* 4519 */;
+import closure_1 from "createUserWidgetFromServer" /* 7366 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 
 const result = require("set").fileFinishedImporting("modules/app_dms/getAppDMApplication.tsx");

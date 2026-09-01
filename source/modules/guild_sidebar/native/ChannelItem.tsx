@@ -1,25 +1,25 @@
-// Module ID: 15669
-// Function ID: 15670
+// Module ID: 15705
+// Function ID: 15706
 // Name: getChannelMode
-// Dependencies: [109, 19, 17, 4537, 4100, 1922, 676, 1394, 4670, 21, 4448, 712, 5352, 11915, 1431, 5461, 15670, 4992, 4949, 589, 1297, 4928, 15671, 4642, 1222, 2]
+// Dependencies: [109, 19, 17, 4569, 4130, 1922, 676, 1394, 4702, 21, 4478, 712, 5384, 11948, 1431, 5493, 15706, 5024, 4981, 589, 1297, 4960, 15707, 4674, 1222, 2]
 
-// Module 15669 (getChannelMode)
+// Module 15705 (getChannelMode)
 import ThemesDefault from "Themes" /* 712 */;
 import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import getChannelIcon from "getChannelIcon" /* 4949 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 4992 */;
-import BaseChannelSubtitle from "BaseChannelSubtitle" /* 11915 */;
-import registerAssetDefault from "registerAsset" /* 15670 */;
+import getChannelIcon from "getChannelIcon" /* 4981 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 5024 */;
+import BaseChannelSubtitle from "BaseChannelSubtitle" /* 11948 */;
+import registerAssetDefault from "registerAsset" /* 15706 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "sortActivity" /* 4537 */;
-import closure_7 from "markAllUserIdListsStale" /* 4100 */;
+import closure_6 from "sortActivity" /* 4569 */;
+import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import { StaticChannelRoute } from "set" /* 1394 */;
-import { UnreadSetting } from "ReadStateTypes" /* 4670 */;
+import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
 import set from "set" /* 2 */;
 
@@ -71,7 +71,7 @@ function ChannelIcon(arg0) {
         obj1 = { style: null, source: null };
         obj1[0] = tmp.groupDmAvatar;
         obj1[1] = channelIconSource;
-        return callback2(tmp5(5461), obj1);
+        return callback2(tmp5(5493), obj1);
       }
       tmp5 = importDefault;
     }
@@ -108,7 +108,7 @@ function ChannelIcon(arg0) {
       obj6 = {};
     }
     const merged = Object.assign(obj6);
-    return callback2(tmp9(11915).BaseChannelIcon, obj4);
+    return callback2(tmp9(11948).BaseChannelIcon, obj4);
   }
 }
 function DMChannelIcon(userId) {
@@ -123,7 +123,7 @@ function DMChannelIcon(userId) {
   const items3 = [userId];
   const stateFromStoresObject = userId(589).useStateFromStoresObject(items2, () => ({ status: closure_1_6.getStatus(userId), isMobileOnline: closure_1_6.isMobileOnline(userId), isVROnline: closure_1_6.isVROnline(userId) }), items3);
   ({ status, isMobileOnline, isVROnline } = stateFromStoresObject);
-  obj = { user: stateFromStores, guildId: "o", size: "APP_LAUNCHER_ONBOARDING_SET_LAST_SEEN_TIME_MS", style: 113, status: 124, isMobileOnline: "none", isVROnline: null, statusStyle: null };
+  obj = { user: stateFromStores, guildId: "o", size: "writing_hand_tone3", style: 2046820352, status: -1728053248, isMobileOnline: -1375731712, isVROnline: -1291845632, statusStyle: -1140850688 };
   obj[2] = userId(1297).AvatarSizes.XSMALL_20;
   obj[3] = tmp.dmAvatar;
   obj[4] = status;

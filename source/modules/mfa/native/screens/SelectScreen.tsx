@@ -1,17 +1,17 @@
-// Module ID: 15234
-// Function ID: 15235
+// Module ID: 15267
+// Function ID: 15268
 // Name: SelectScreen
-// Dependencies: [19, 17, 15231, 21, 4448, 5460, 8333, 7685, 1499, 5521, 4444, 1236, 2]
+// Dependencies: [19, 17, 15264, 21, 4478, 5492, 8365, 15268, 7717, 1499, 5553, 4474, 1236, 2]
 // Exports: default
 
-// Module 15234 (SelectScreen)
+// Module 15267 (SelectScreen)
 import noopAll from "noop" /* 19 */;
-import NAV_BAR_HEIGHT2 from "NAV_BAR_HEIGHT" /* 5460 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7685 */;
+import NAV_BAR_HEIGHT2 from "NAV_BAR_HEIGHT" /* 5492 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7717 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SELECT_NAMES } from "get webauthn" /* 15231 */;
+import { SELECT_NAMES } from "get webauthn" /* 15264 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 noopAll;
@@ -29,31 +29,31 @@ let closure_7 = createCacheKey.createStyles((arg0) => {
 });
 const result = require("set").fileFinishedImporting("modules/mfa/native/screens/SelectScreen.tsx");
 
-export default function SelectScreen(mfaChallenge) {
-  const _require = mfaChallenge;
+export default function SelectScreen() {
+  let obj = _require(15268);
   const tmp = useWideAuthViewDefault();
   const tmp2 = callback3(tmp);
-  let obj = _require(1499);
-  importDefault = obj.useNavigation();
+  obj1 = _require(1499);
+  _require = obj1.useNavigation();
   obj = { top: !tmp, style: tmp2.container, children: null };
   obj = { style: tmp2.selectContainer, children: null };
   obj1 = { variant: "heading-xl/extrabold", children: null };
   const intl = _require(1236).intl;
   obj1[1] = intl.string(_require(1236).t.S9b9bX);
-  const items = [callback(_require(4444).Heading, obj1), ];
+  const items = [callback(_require(4474).Heading, obj1), ];
   const obj2 = { variant: "text-sm/medium", children: null };
   const intl2 = _require(1236).intl;
   obj2[1] = intl2.string(_require(1236).t.Jz1lXO);
-  items[1] = callback(_require(4444).Text, obj2);
+  items[1] = callback(_require(4474).Text, obj2);
   obj[1] = items;
   const items1 = [callback2(View, obj), ];
-  const methods = mfaChallenge.mfaChallenge.methods;
+  const methods = obj.useMfaChallenge().mfaChallenge.methods;
   items1[1] = callback(View, {
     style: { marginTop: 16, gap: 8 },
     children: methods.map((type) => {
-      closure_1 = type;
-      closure_2 = closure_1;
-      return closure_1_5(mfaChallenge(closure_1_2[6]).RowButton, {
+      const callback = type;
+      closure_1 = callback;
+      return closure_1_5(callback(closure_1_2[6]).RowButton, {
         label: closure_1_4[type.type],
         onPress() {
 
@@ -62,5 +62,5 @@ export default function SelectScreen(mfaChallenge) {
     })
   });
   obj[2] = items1;
-  return callback2(_require(5521).SafeAreaPaddingView, obj);
+  return callback2(_require(5553).SafeAreaPaddingView, obj);
 };

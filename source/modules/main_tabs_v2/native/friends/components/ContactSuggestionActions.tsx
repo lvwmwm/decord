@@ -1,27 +1,27 @@
-// Module ID: 15996
-// Function ID: 15997
+// Module ID: 16031
+// Function ID: 16032
 // Name: ContactSuggestionActions
-// Dependencies: [19, 17, 21, 4187, 4448, 712, 15599, 4449, 4895, 1297, 15997, 4896, 1236, 2]
+// Dependencies: [19, 17, 21, 4217, 4478, 712, 15635, 4479, 4927, 1297, 16032, 4928, 1236, 2]
 // Exports: ContactSuggestionActions
 
-// Module 15996 (ContactSuggestionActions)
+// Module 16031 (ContactSuggestionActions)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import { Easing, Easing as Easing2, Easing as Easing3, Easing as Easing4 } from "module_4187" /* 4187 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import { Easing, Easing as Easing2, Easing as Easing3, Easing as Easing4 } from "module_4217" /* 4217 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
 let obj = { duration: 200, easing: null };
-obj[1] = Easing.in(require("module_4187").Easing.quad);
+obj[1] = Easing.in(require("module_4217").Easing.quad);
 obj = { duration: 250, easing: null };
-obj[1] = Easing2.in(require("module_4187").Easing.quad);
+obj[1] = Easing2.in(require("module_4217").Easing.quad);
 obj = { duration: 250, easing: null };
-obj[1] = Easing3.in(require("module_4187").Easing.quad);
+obj[1] = Easing3.in(require("module_4217").Easing.quad);
 let obj1 = { duration: 250, easing: null };
-obj1[1] = Easing4.out(require("module_4187").Easing.quad);
+obj1[1] = Easing4.out(require("module_4217").Easing.quad);
 let closure_11 = { mass: 1, stiffness: 172, damping: 17.3 };
 let obj2 = { icon: { position: "absolute", top: 4, zIndex: 2, color: ThemesDefault.colors.INTERACTIVE_TEXT_DEFAULT, opacity: 0 } };
 let closure_12 = createCacheKey.createStyles(obj2);

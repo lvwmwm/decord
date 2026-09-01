@@ -1,9 +1,9 @@
-// Module ID: 14293
-// Function ID: 14294
+// Module ID: 14326
+// Function ID: 14327
 // Name: handleInit
 // Dependencies: [589, 709, 2]
 
-// Module 14293 (handleInit)
+// Module 14326 (handleInit)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 

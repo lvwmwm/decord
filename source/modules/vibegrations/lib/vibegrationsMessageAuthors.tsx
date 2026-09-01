@@ -1,11 +1,11 @@
-// Module ID: 16155
-// Function ID: 16156
+// Module ID: 16190
+// Function ID: 16191
 // Name: set
-// Dependencies: [1922, 8084, 2]
+// Dependencies: [1922, 8116, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor
 
-// Module 16155 (set)
-import _fetchProfileAll from "_fetchProfile" /* 8084 */;
+// Module 16190 (set)
+import _fetchProfileAll from "_fetchProfile" /* 8116 */;
 import closure_2 from "mergeGuildAvatar" /* 1922 */;
 import set from "set" /* 2 */;
 

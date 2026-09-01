@@ -1,22 +1,22 @@
-// Module ID: 11118
-// Function ID: 11119
+// Module ID: 11155
+// Function ID: 11156
 // Name: keyExtractor
-// Dependencies: [32, 19, 17, 7245, 5447, 1982, 1909, 4669, 676, 1384, 21, 4448, 712, 5562, 11119, 589, 11121, 4268, 1373, 11117, 6189, 8073, 5569, 5036, 1236, 6193, 5461, 11123, 4444, 4642, 4175, 5960, 7652, 4167, 4949, 7651, 5573, 1297, 4438, 2]
+// Dependencies: [32, 19, 17, 7277, 5479, 1982, 1909, 4701, 676, 1384, 21, 4478, 712, 5594, 11156, 589, 11158, 4298, 1373, 11154, 6221, 8105, 5601, 5068, 1236, 6225, 5493, 11160, 4474, 4674, 4205, 5992, 7684, 4197, 4981, 7683, 5605, 1297, 4468, 2]
 // Exports: default
 
-// Module 11118 (keyExtractor)
+// Module 11155 (keyExtractor)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "guildHasCommunity" /* 7245 */;
-import closure_7 from "setIndex" /* 5447 */;
+import closure_6 from "guildHasCommunity" /* 7277 */;
+import closure_7 from "setIndex" /* 5479 */;
 import closure_8 from "comparator" /* 1982 */;
 import closure_9 from "createGuildRecordFromRust" /* 1909 */;
-import closure_10 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_10 from "updateUserGuildSettingsInternal" /* 4701 */;
 import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function keyExtractor(section) {
@@ -51,7 +51,7 @@ let closure_17 = importAllResult.memo((channel) => {
   let obj = channel(589);
   const items = [closure_10];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_10.isChannelOptedIn(channel.guild_id, channel.id));
-  obj1 = channel(4175);
+  obj1 = channel(4205);
   const checkboxA11yNative = obj1.useCheckboxA11yNative({ checked: stateFromStores });
   obj = {
     style: tmp.categoryContainer,
@@ -72,8 +72,8 @@ let closure_17 = importAllResult.memo((channel) => {
     accessibilityState = checkboxA11yNative.accessibilityState;
   }
   obj[3] = accessibilityState;
-  obj = { style: tmp.categoryTitle, title: onChannelClick(4642)(channel), lineClamp: 1 };
-  const items1 = [closure_12(channel(5960).TableRowGroupTitle, obj), ];
+  obj = { style: tmp.categoryTitle, title: onChannelClick(4674)(channel), lineClamp: 1 };
+  const items1 = [closure_12(channel(5992).TableRowGroupTitle, obj), ];
   let tmp10Result = null;
   if ("null" !== channel.id) {
     obj1 = { style: null, accessibilityRole: null, accessibilityState: null, children: null };
@@ -83,18 +83,18 @@ let closure_17 = importAllResult.memo((channel) => {
     obj2[0] = tmp.selectAllCheckbox;
     const obj3 = { checked: null };
     obj3[0] = stateFromStores;
-    obj2[1] = tmp8(tmp4(7652).FormCheckbox, obj3);
+    obj2[1] = tmp8(tmp4(7684).FormCheckbox, obj3);
     const items2 = [tmp8(View, obj2), ];
     const obj4 = { variant: "text-xs/semibold", color: "interactive-text-default", children: null };
     const intl = tmp4(1236).intl;
     obj4[2] = intl.string(tmp4(1236).t.mSQwnW);
-    items2[1] = tmp8(tmp4(4444).Text, obj4);
+    items2[1] = tmp8(tmp4(4474).Text, obj4);
     obj1[3] = items2;
     tmp10Result = tmp10(View, obj1);
   }
   items1[1] = tmp10Result;
   obj[4] = closure_13(closure_14, { children: items1 });
-  return closure_12(channel(5036).PressableOpacity, obj);
+  return closure_12(channel(5068).PressableOpacity, obj);
 });
 let closure_18 = importAllResult.memo((channel) => {
   channel = channel.channel;

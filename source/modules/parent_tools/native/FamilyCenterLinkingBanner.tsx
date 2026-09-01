@@ -1,22 +1,22 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14519
+// Function ID: 14520
 // Name: FamilyCenterLinkingBannerParentContent
-// Dependencies: [19, 17, 21, 4448, 712, 8736, 11459, 1236, 2369, 14487, 4444, 14449, 2]
+// Dependencies: [19, 17, 21, 4478, 712, 8773, 11492, 1236, 2369, 14520, 4474, 14482, 2]
 // Exports: default
 
-// Module 14486 (FamilyCenterLinkingBannerParentContent)
+// Module 14519 (FamilyCenterLinkingBannerParentContent)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
 import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import Text from "Text" /* 4444 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8736 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11459 */;
-import FamilyCenterTeenQRCodeButtonInner from "FamilyCenterTeenQRCodeButtonInner" /* 14449 */;
-import registerAssetDefault from "registerAsset" /* 14487 */;
+import Text from "Text" /* 4474 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8773 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11492 */;
+import FamilyCenterTeenQRCodeButtonInner from "FamilyCenterTeenQRCodeButtonInner" /* 14482 */;
+import registerAssetDefault from "registerAsset" /* 14520 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function FamilyCenterLinkingBannerParentContent() {

@@ -1,12 +1,12 @@
-// Module ID: 17189
-// Function ID: 17190
+// Module ID: 17225
+// Function ID: 17226
 // Name: experiment
-// Dependencies: [4359, 2]
+// Dependencies: [4389, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled
 
-// Module 17189 (experiment)
+// Module 17225 (experiment)
 import set from "set" /* 2 */;
-import createExperiment from "createExperiment" /* 4359 */;
+import createExperiment from "createExperiment" /* 4389 */;
 
 const items = [{ id: 1, label: "Enable Application Identity Linked Roles", config: { enabled: true } }];
 const experiment = createExperiment.createExperiment({ kind: "guild", id: "2026-04_application_identity_linked_roles", label: "Application Identity Linked Roles", defaultConfig: { enabled: false }, treatments: items });

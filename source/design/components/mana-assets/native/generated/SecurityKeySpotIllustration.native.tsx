@@ -1,14 +1,14 @@
-// Module ID: 6929
-// Function ID: 6930
+// Module ID: 6961
+// Function ID: 6962
 // Name: SecurityKeySpotIllustration
-// Dependencies: [21, 5461, 6930, 2]
+// Dependencies: [21, 5493, 6962, 2]
 // Exports: SecurityKeySpotIllustration
 
-// Module 6929 (SecurityKeySpotIllustration)
+// Module 6961 (SecurityKeySpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6930 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6962 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SecurityKeySpotIllustration.native.tsx");

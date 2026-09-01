@@ -1,14 +1,14 @@
-// Module ID: 15155
-// Function ID: 15156
+// Module ID: 15188
+// Function ID: 15189
 // Name: AchievementsIcon
-// Dependencies: [19, 21, 712, 4166, 15156, 2]
+// Dependencies: [19, 21, 712, 4196, 15189, 2]
 // Exports: AchievementsIcon
 
-// Module 15155 (AchievementsIcon)
+// Module 15188 (AchievementsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 15156 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 15189 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

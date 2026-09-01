@@ -1,10 +1,10 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15211
+// Function ID: 15212
 // Name: fromServer
-// Dependencies: [1931, 2]
+// Dependencies: [1936, 2]
 
-// Module 15178 (fromServer)
-import toJSDefault from "toJS" /* 1931 */;
+// Module 15211 (fromServer)
+import toJSDefault from "toJS" /* 1936 */;
 
 toJSDefault;
 let GeneratedTestPoolRecord;

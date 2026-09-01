@@ -1,14 +1,14 @@
-// Module ID: 5000
-// Function ID: 5001
+// Module ID: 5032
+// Function ID: 5033
 // Name: ForumSpoilerIcon
-// Dependencies: [19, 21, 712, 4166, 4971, 2]
+// Dependencies: [19, 21, 712, 4196, 5003, 2]
 // Exports: ForumSpoilerIcon
 
-// Module 5000 (ForumSpoilerIcon)
+// Module 5032 (ForumSpoilerIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 4971 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 5003 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

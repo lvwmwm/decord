@@ -1,15 +1,15 @@
-// Module ID: 13104
-// Function ID: 13105
+// Module ID: 13137
+// Function ID: 13138
 // Name: PremiumTier2LogoSmall
-// Dependencies: [19, 21, 4167, 712, 8209, 2]
+// Dependencies: [19, 21, 4197, 712, 8241, 2]
 // Exports: default
 
-// Module 13104 (PremiumTier2LogoSmall)
+// Module 13137 (PremiumTier2LogoSmall)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 4167 */;
-import inlineStyles from "inlineStyles" /* 8209 */;
-import inlineStylesDefault from "inlineStyles" /* 8209 */;
+import map from "map" /* 4197 */;
+import inlineStyles from "inlineStyles" /* 8241 */;
+import inlineStylesDefault from "inlineStyles" /* 8241 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

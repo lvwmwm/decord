@@ -1,14 +1,14 @@
-// Module ID: 14968
-// Function ID: 14969
+// Module ID: 15001
+// Function ID: 15002
 // Name: EmojiSmilingFaceWithHeartsIcon
-// Dependencies: [19, 21, 712, 4166, 14969, 2]
+// Dependencies: [19, 21, 712, 4196, 15002, 2]
 // Exports: EmojiSmilingFaceWithHeartsIcon
 
-// Module 14968 (EmojiSmilingFaceWithHeartsIcon)
+// Module 15001 (EmojiSmilingFaceWithHeartsIcon)
 import noopAll from "noop" /* 19 */;
 import ThemesDefault from "Themes" /* 712 */;
-import BaseIconImage from "BaseIconImage" /* 4166 */;
-import registerAsset from "registerAsset" /* 14969 */;
+import BaseIconImage from "BaseIconImage" /* 4196 */;
+import registerAsset from "registerAsset" /* 15002 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

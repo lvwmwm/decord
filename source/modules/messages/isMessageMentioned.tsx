@@ -1,10 +1,10 @@
-// Module ID: 4719
-// Function ID: 4720
+// Module ID: 4751
+// Function ID: 4752
 // Name: isMentioned
 // Dependencies: [1387, 1992, 1909, 2]
 // Exports: default, isRawMessageMentioned
 
-// Module 4719 (isMentioned)
+// Module 4751 (isMentioned)
 import closure_0 from "ensureGuildLoaded" /* 1387 */;
 import closure_1 from "trackCommunicationDisabled" /* 1992 */;
 import closure_2 from "createGuildRecordFromRust" /* 1909 */;

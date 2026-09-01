@@ -1,10 +1,10 @@
-// Module ID: 7368
-// Function ID: 7369
+// Module ID: 7400
+// Function ID: 7401
 // Name: handlePostConnectionOpen
-// Dependencies: [7192, 1956, 2]
+// Dependencies: [7224, 1956, 2]
 
-// Module 7368 (handlePostConnectionOpen)
-import importDefaultResult from "result" /* 7192 */;
+// Module 7400 (handlePostConnectionOpen)
+import importDefaultResult from "result" /* 7224 */;
 
 let obj = importDefault;
 class LowDiskTrim {

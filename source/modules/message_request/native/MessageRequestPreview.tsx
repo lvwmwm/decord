@@ -1,16 +1,16 @@
-// Module ID: 16422
-// Function ID: 16423
-// Dependencies: [19, 17, 4100, 676, 21, 4448, 5429, 712, 12125, 589, 698, 1236, 7599, 4820, 1297, 2]
+// Module ID: 16458
+// Function ID: 16459
+// Dependencies: [19, 17, 4130, 676, 21, 4478, 5461, 712, 12158, 589, 698, 1236, 7631, 4852, 1297, 2]
 
-// Module 16422
+// Module 16458
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "markAllUserIdListsStale" /* 4100 */;
+import closure_5 from "markAllUserIdListsStale" /* 4130 */;
 import ME from "ME" /* 676 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
-import importDefaultResult from "createTextStyle" /* 5429 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
+import importDefaultResult from "createTextStyle" /* 5461 */;
 
 const require = arg1;
 let c3 = importAllResult;
@@ -30,7 +30,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
   channel = channel.channel;
   let message;
   const tmp = callback();
-  let obj = channel(12125);
+  let obj = channel(12158);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -88,7 +88,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7599)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7631)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -125,7 +125,7 @@ const memoResult = importAllResult.memo(function MessageRequestPreview(channel) 
         }
         stringResult = stringResult1;
         flag = false;
-        tmp2Result = tmp2(4820);
+        tmp2Result = tmp2(4852);
       } else {
         const intl = tmp2(1236).intl;
         stringResult = intl.string(tmp2(1236).t["0KfDxM"]);

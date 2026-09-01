@@ -1,0 +1,11 @@
+// Module ID: 4636
+// Function ID: 4637
+// Name: basePick
+// Dependencies: [4637, 765]
+
+// Module 4636 (basePick)
+
+export default function basePick(arg0, arg1) {
+  const _require = arg0;
+  return _require(4637)(arg0, arg1, (arg0, arg1) => callback(closure_1_1[1])(callback, arg1));
+};

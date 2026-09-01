@@ -1,10 +1,10 @@
-// Module ID: 6081
-// Function ID: 6082
+// Module ID: 6113
+// Function ID: 6114
 // Name: getGuildModeratorReportingEnabled
 // Dependencies: [2]
 // Exports: default
 
-// Module 6081 (getGuildModeratorReportingEnabled)
+// Module 6113 (getGuildModeratorReportingEnabled)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/report_to_mod/getGuildModeratorReportingEnabled.tsx");

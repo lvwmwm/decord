@@ -1,18 +1,18 @@
-// Module ID: 7308
-// Function ID: 7309
+// Module ID: 7340
+// Function ID: 7341
 // Name: processMessage
-// Dependencies: [32, 7309, 1387, 4703, 676, 1401, 4705, 7313, 589, 709, 2]
+// Dependencies: [32, 7341, 1387, 4735, 676, 1401, 4737, 7345, 589, 709, 2]
 
-// Module 7308 (processMessage)
+// Module 7340 (processMessage)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import privDefault from "priv" /* 1401 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4705 */;
-import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7313 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
+import redactionSettingToRenderedString from "redactionSettingToRenderedString" /* 7345 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "removePendingListFetch" /* 7309 */;
+import closure_4 from "removePendingListFetch" /* 7341 */;
 import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "reinjectEphemerals" /* 4703 */;
+import closure_6 from "reinjectEphemerals" /* 4735 */;
 import ME from "ME" /* 676 */;
 import set from "set" /* 2 */;
 

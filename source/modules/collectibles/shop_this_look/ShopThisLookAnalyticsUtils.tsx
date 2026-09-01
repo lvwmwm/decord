@@ -1,10 +1,10 @@
-// Module ID: 12569
-// Function ID: 12570
+// Module ID: 12602
+// Function ID: 12603
 // Name: ShopThisLookMenuAction
 // Dependencies: [676, 1950, 698, 2]
 // Exports: trackShopThisLookMenuAction, trackShopThisLookRowAction
 
-// Module 12569 (ShopThisLookMenuAction)
+// Module 12602 (ShopThisLookMenuAction)
 import set from "set" /* 2 */;
 import ME from "ME" /* 676 */;
 import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;

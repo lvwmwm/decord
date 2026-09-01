@@ -1,13 +1,13 @@
-// Module ID: 12600
-// Function ID: 12601
+// Module ID: 12633
+// Function ID: 12634
 // Name: useSimilarGames
-// Dependencies: [4472, 1922, 8847, 8846, 6122, 589, 8765, 5025, 2]
+// Dependencies: [4502, 1922, 8884, 8883, 6154, 589, 8802, 5056, 2]
 // Exports: default
 
-// Module 12600 (useSimilarGames)
-import closure_2 from "handleLoadMessages" /* 4472 */;
+// Module 12633 (useSimilarGames)
+import closure_2 from "handleLoadMessages" /* 4502 */;
 import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_4 } from "set" /* 8847 */;
+import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_4 } from "set" /* 8884 */;
 
 const require = arg1;
 let closure_5 = [];
@@ -16,7 +16,7 @@ const result = require("set").fileFinishedImporting("modules/game_profile/hooks/
 
 export default function useSimilarGames(arg0) {
   const hasItem = set.has(arg0);
-  let obj = data(8846);
+  let obj = data(8883);
   const similarGameIds = obj.useSimilarGameIds(arg0, !hasItem);
   ({ data, isLoading, error } = similarGameIds);
   if (hasItem) {
@@ -25,7 +25,7 @@ export default function useSimilarGames(arg0) {
     tmp7 = data;
   }
   data = tmp7;
-  let tmp3Result = tmp3(6122);
+  let tmp3Result = tmp3(6154);
   const games = tmp3Result.useGames(tmp7);
   tmp3Result = tmp3(589);
   const items = [closure_2];

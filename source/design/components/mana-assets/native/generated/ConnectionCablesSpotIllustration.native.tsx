@@ -1,14 +1,14 @@
-// Module ID: 6397
-// Function ID: 6398
+// Module ID: 6429
+// Function ID: 6430
 // Name: ConnectionCablesSpotIllustration
-// Dependencies: [21, 5461, 6398, 2]
+// Dependencies: [21, 5493, 6430, 2]
 // Exports: ConnectionCablesSpotIllustration
 
-// Module 6397 (ConnectionCablesSpotIllustration)
+// Module 6429 (ConnectionCablesSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6398 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6430 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ConnectionCablesSpotIllustration.native.tsx");

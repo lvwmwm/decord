@@ -1,23 +1,23 @@
-// Module ID: 7477
-// Function ID: 7478
+// Module ID: 7509
+// Function ID: 7510
 // Name: patchThread
-// Dependencies: [5, 1391, 1218, 1387, 4091, 7478, 4093, 7488, 676, 1394, 530, 709, 4825, 1236, 4668, 7489, 7490, 7493, 7494, 1471, 1398, 2]
+// Dependencies: [5, 1391, 1218, 1387, 4121, 7510, 4123, 7520, 676, 1394, 530, 709, 4857, 1236, 4700, 7521, 7522, 7525, 7526, 1471, 1398, 2]
 
-// Module 7477 (patchThread)
+// Module 7509 (patchThread)
 import sendRequest from "sendRequest" /* 530 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
-import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4668 */;
-import dispatcherDefault2 from "dispatcher" /* 7489 */;
-import setActiveCommand from "setActiveCommand" /* 7490 */;
+import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
+import dispatcherDefault2 from "dispatcher" /* 7521 */;
+import setActiveCommand from "setActiveCommand" /* 7522 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { createChannelRecordFromServer as closure_4 } from "createChannelRecord" /* 1391 */;
 import closure_5 from "fetchFingerprint" /* 1218 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_8 from "listKey" /* 7478 */;
-import { PAGE_SIZE } from "listKey" /* 7478 */;
-import closure_10 from "storeThread" /* 4093 */;
-import closure_11 from "handleSummarizeThreadFinish" /* 7488 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_8 from "listKey" /* 7510 */;
+import { PAGE_SIZE } from "listKey" /* 7510 */;
+import closure_10 from "storeThread" /* 4123 */;
+import closure_11 from "handleSummarizeThreadFinish" /* 7520 */;
 import ME from "ME" /* 676 */;
 import { ChannelFlags } from "set" /* 1394 */;
 
@@ -94,7 +94,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -159,7 +159,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -226,7 +226,7 @@ export default {
             obj[0] = arg1;
             return obj;
           } else {
-            return { value: "HermesInternal", done: "HermesInternal" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -412,7 +412,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -462,7 +462,7 @@ export default {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c0 = tmp;
           throw tmp9;
@@ -493,8 +493,8 @@ export default {
       return body;
     });
   },
-  joinThread(channel, arg1) {
-    closure_0 = channel;
+  joinThread(c5, arg1) {
+    closure_0 = c5;
     closure_1 = arg1;
     return callback(function*() {
       if (c5 === 2) {
@@ -508,7 +508,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -586,7 +586,7 @@ export default {
                 closure_1_18(lib, false);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -632,7 +632,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -823,7 +823,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -997,7 +997,7 @@ export default {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

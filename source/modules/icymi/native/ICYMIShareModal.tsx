@@ -1,25 +1,25 @@
-// Module ID: 16055
-// Function ID: 16056
+// Module ID: 16090
+// Function ID: 16091
 // Name: Screenshot
-// Dependencies: [32, 5, 19, 17, 1387, 4822, 4821, 676, 10594, 4441, 21, 4448, 712, 9705, 1236, 16056, 4164, 1493, 4298, 7584, 16057, 5038, 4266, 4174, 5562, 11238, 11247, 4896, 4691, 10680, 1471, 7395, 8131, 514, 5041, 7169, 8133, 1628, 500, 5470, 7575, 5463, 10683, 2]
+// Dependencies: [32, 5, 19, 17, 1387, 4854, 4853, 676, 10632, 4471, 21, 4478, 712, 9744, 1236, 16091, 4194, 1493, 4328, 7616, 16092, 5070, 4296, 4204, 5594, 11275, 11284, 4928, 4723, 10718, 1471, 7427, 8163, 514, 5073, 7201, 8165, 1628, 500, 5502, 7607, 5495, 10721, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 16055 (Screenshot)
+// Module 16090 (Screenshot)
 import ThemesDefault from "Themes" /* 712 */;
 import getSystemLocale from "getSystemLocale" /* 1236 */;
-import SHARE_EVENT_DETAILS_LINK from "SHARE_EVENT_DETAILS_LINK" /* 9705 */;
+import SHARE_EVENT_DETAILS_LINK from "SHARE_EVENT_DETAILS_LINK" /* 9744 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import { DraftType } from "handleChanged" /* 4822 */;
-import closure_9 from "map" /* 4821 */;
+import { DraftType } from "handleChanged" /* 4854 */;
+import closure_9 from "map" /* 4853 */;
 import { AbortCodes } from "ME" /* 676 */;
-import { UserRowModes } from "UserRowModes" /* 10594 */;
-import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4441 */;
+import { UserRowModes } from "UserRowModes" /* 10632 */;
+import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function Screenshot(setUri) {
@@ -44,26 +44,26 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = setUri(7584);
+  let obj = setUri(7616);
   obj = { style: { position: "absolute", top: -1000, overflow: "hidden" }, children: null };
   obj = { style: items1, children: null };
   items1 = [tmp.preview, { width: ref(1493)().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
   obj1 = { ref, options: { fileName: "icymi_content", format: "png", quality: 1 }, children: null };
   const obj2 = { style: tmp.base, children: null };
-  const tmp4 = ref(4298)();
+  const tmp4 = ref(4328)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: null, light: null };
-  const tmp6 = ref(16057);
-  obj4[0] = setUri(4266).OverlayOpacity.LEVEL_7;
-  obj4[1] = setUri(4266).OverlayOpacity.LEVEL_8;
+  const tmp6 = ref(16092);
+  obj4[0] = setUri(4296).OverlayOpacity.LEVEL_7;
+  obj4[1] = setUri(4296).OverlayOpacity.LEVEL_8;
   obj3[4] = obj4;
-  const items2 = [callback3(ref(5038), obj3), ];
+  const items2 = [callback3(ref(5070), obj3), ];
   const obj5 = { gradient: tmp4, children: null };
-  const tmp7 = ref(5038);
+  const tmp7 = ref(5070);
   const items3 = [tmp.contentContainer, clientThemesOverride];
   obj5[1] = callback3(View, { style: items3, children: setUri.render() });
-  items2[1] = callback3(setUri(4174).ThemeContextProvider, obj5);
+  items2[1] = callback3(setUri(4204).ThemeContextProvider, obj5);
   obj2[1] = items2;
   obj1[2] = callback4(View, obj2);
   obj[1] = callback3(tmp6, obj1);
@@ -158,7 +158,7 @@ class ICYMIShareModal {
               obj[0] = arr;
               return obj;
             } else {
-              return { value: "HermesInternal", done: "HermesInternal" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -201,7 +201,7 @@ class ICYMIShareModal {
                     closure_0 = arg0;
                     c2 = 0;
                     c1 = 0;
-                    return (/* F123017 */ function*() { ... })();
+                    return (/* F123197 */ function*() { ... })();
                   });
                   return function(arg0) {
                     const self = this;
@@ -387,7 +387,7 @@ export const GameShareModal = function GameShareModal(content) {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,15 +1,15 @@
-// Module ID: 10913
-// Function ID: 10914
+// Module ID: 10951
+// Function ID: 10952
 // Name: useReactionPermissions
-// Dependencies: [32, 4092, 1992, 5325, 4091, 676, 589, 4097, 7854, 6084, 10914, 2]
+// Dependencies: [32, 4122, 1992, 5357, 4121, 676, 589, 4127, 7886, 6116, 10952, 2]
 // Exports: default
 
-// Module 10913 (useReactionPermissions)
+// Module 10951 (useReactionPermissions)
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "initialize" /* 4092 */;
+import closure_4 from "initialize" /* 4122 */;
 import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "recomputeGuild" /* 5325 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4091 */;
+import closure_6 from "recomputeGuild" /* 5357 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
 import { Permissions } from "ME" /* 676 */;
 
 const require = arg1;

@@ -1,9 +1,9 @@
-// Module ID: 7721
-// Function ID: 7722
+// Module ID: 7753
+// Function ID: 7754
 // Name: NUXGuildTemplatesAnalytics
 // Dependencies: [2]
 
-// Module 7721 (NUXGuildTemplatesAnalytics)
+// Module 7753 (NUXGuildTemplatesAnalytics)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/create_guild/native/CreateGuildConstants.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 11358
-// Function ID: 11359
+// Module ID: 11396
+// Function ID: 11397
 // Name: MentionableSelectComponentActionSheet
-// Dependencies: [19, 17, 1985, 1909, 4537, 1922, 676, 21, 4448, 712, 5550, 7997, 11359, 4713, 1297, 5946, 5947, 9674, 11357, 9732, 4444, 11360, 1236, 2]
+// Dependencies: [19, 17, 1985, 1909, 4569, 1922, 676, 21, 4478, 712, 5582, 8029, 11397, 4745, 1297, 5978, 5979, 9713, 11395, 9771, 4474, 11398, 1236, 2]
 // Exports: default
 
-// Module 11358 (MentionableSelectComponentActionSheet)
+// Module 11396 (MentionableSelectComponentActionSheet)
 import ThemesDefault from "Themes" /* 712 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "createGuildRoleRecordFromRust" /* 1985 */;
 import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "sortActivity" /* 4537 */;
+import closure_7 from "sortActivity" /* 4569 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import ME from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ Fonts, DEFAULT_ROLE_COLOR_HEX: c9 } = ME);

@@ -1,20 +1,20 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7341
+// Function ID: 7342
 // Name: removePendingListFetch
-// Dependencies: [1218, 1387, 4100, 1981, 1922, 7310, 7311, 1401, 11, 4705, 7312, 1471, 4102, 589, 709, 2]
+// Dependencies: [1218, 1387, 4130, 1981, 1922, 7342, 7343, 1401, 11, 4737, 7344, 1471, 4132, 589, 709, 2]
 
-// Module 7309 (removePendingListFetch)
+// Module 7341 (removePendingListFetch)
 import initializeDefault from "initialize" /* 589 */;
 import dispatcherDefault from "dispatcher" /* 709 */;
 import privDefault from "priv" /* 1401 */;
-import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4705 */;
+import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
 import closure_3 from "fetchFingerprint" /* 1218 */;
 import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "markAllUserIdListsStale" /* 4100 */;
+import closure_5 from "markAllUserIdListsStale" /* 4130 */;
 import closure_6 from "handleConnectionOpen" /* 1981 */;
 import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "initialize" /* 7310 */;
-import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7311 */;
+import closure_8 from "initialize" /* 7342 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7343 */;
 
 require = arg1;
 function removePendingListFetch(channelId, requestKey) {
@@ -198,7 +198,7 @@ function handleReaction(channelId) {
       } else {
         return false;
       }
-      obj2 = messageId(4102);
+      obj2 = messageId(4132);
     }
   }
 }
@@ -549,7 +549,7 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(7312).mapConversation);
+      const mapped = rawConversations.map(set(7344).mapConversation);
       const found = mapped.filter(set(1471).isNotNullish);
       const peekResult = navigation.peek(channelId);
       if (isJump) {
@@ -1110,7 +1110,7 @@ obj = {
           }
           let flag = null != message;
           if (flag) {
-            const updateMessageRecordResult = id(4705).updateMessageRecord(value.message, message);
+            const updateMessageRecordResult = id(4737).updateMessageRecord(value.message, message);
             value.message = updateMessageRecordResult;
             value = null;
             if (null != value.conversationId) {
@@ -1134,7 +1134,7 @@ obj = {
                 flag = true;
               }
             }
-            const obj = id(4705);
+            const obj = id(4737);
           }
           return flag;
         }

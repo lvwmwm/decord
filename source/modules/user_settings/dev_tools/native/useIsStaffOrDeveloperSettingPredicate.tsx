@@ -1,12 +1,12 @@
-// Module ID: 14415
-// Function ID: 14416
+// Module ID: 14448
+// Function ID: 14449
 // Name: useStaffOrDeveloperSettingPredicate
-// Dependencies: [7433, 589, 2]
+// Dependencies: [7465, 589, 2]
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 14415 (useStaffOrDeveloperSettingPredicate)
+// Module 14448 (useStaffOrDeveloperSettingPredicate)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "init" /* 7433 */;
+import closure_2 from "init" /* 7465 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/dev_tools/native/useIsStaffOrDeveloperSettingPredicate.tsx");

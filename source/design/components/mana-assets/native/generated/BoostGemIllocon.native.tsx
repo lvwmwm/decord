@@ -1,14 +1,14 @@
-// Module ID: 6331
-// Function ID: 6332
+// Module ID: 6363
+// Function ID: 6364
 // Name: BoostGemIllocon
-// Dependencies: [21, 5461, 6332, 2]
+// Dependencies: [21, 5493, 6364, 2]
 // Exports: BoostGemIllocon
 
-// Module 6331 (BoostGemIllocon)
+// Module 6363 (BoostGemIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5461 */;
-import metadataDefault from "metadata" /* 6332 */;
+import preloadDefault from "preload" /* 5493 */;
+import metadataDefault from "metadata" /* 6364 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/BoostGemIllocon.native.tsx");

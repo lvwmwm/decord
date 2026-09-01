@@ -1,18 +1,18 @@
-// Module ID: 15335
-// Function ID: 15336
+// Module ID: 15369
+// Function ID: 15370
 // Name: DemoModal
-// Dependencies: [5, 19, 17, 21, 4831, 4827, 4448, 4896, 2]
+// Dependencies: [5, 19, 17, 21, 4863, 4859, 4478, 4928, 2]
 // Exports: default
 
-// Module 15335 (DemoModal)
-import useAlertStore from "useAlertStore" /* 4827 */;
-import getAlertModalItemKey from "getAlertModalItemKey" /* 4831 */;
-import Button from "Button" /* 4896 */;
+// Module 15369 (DemoModal)
+import useAlertStore from "useAlertStore" /* 4859 */;
+import getAlertModalItemKey from "getAlertModalItemKey" /* 4863 */;
+import Button from "Button" /* 4928 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function DemoModal() {
@@ -28,7 +28,7 @@ function DemoModal() {
         obj[0] = arg1;
         return obj;
       } else {
-        return { value: "HermesInternal", done: "HermesInternal" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -60,7 +60,7 @@ function DemoModal() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c0 = tmp;

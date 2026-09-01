@@ -1,12 +1,12 @@
-// Module ID: 11061
-// Function ID: 11062
+// Module ID: 11098
+// Function ID: 11099
 // Name: _getAppStoreOverlayContent
-// Dependencies: [5, 4160, 4154, 1236, 11062, 2]
+// Dependencies: [5, 4190, 4184, 1236, 11099, 2]
 // Exports: getAppStoreOverlayContent, getIosAppStoreReviewsUrl, openAppStoreReviews
 
-// Module 11061 (_getAppStoreOverlayContent)
-import _openURL from "_openURL" /* 4154 */;
-import _modDef4160 from "module_4160" /* 4160 */;
+// Module 11098 (_getAppStoreOverlayContent)
+import _openURL from "_openURL" /* 4184 */;
+import _modDef4190 from "module_4190" /* 4190 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -30,7 +30,7 @@ function _getAppStoreOverlayContent() {
           obj[0] = arg1;
           return obj;
         } else {
-          return { value: "HermesInternal", done: "HermesInternal" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -170,8 +170,8 @@ export const openAppStoreReviews = function openAppStoreReviews(storeUrl, platfo
     if (null != appId) {
       if ("" !== appId) {
         const _HermesInternal = HermesInternal;
-        _modDef4160.performURLNavigation("itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=" + appId + "&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software");
-        const obj = _modDef4160;
+        _modDef4190.performURLNavigation("itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=" + appId + "&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software");
+        const obj = _modDef4190;
       }
     }
   }

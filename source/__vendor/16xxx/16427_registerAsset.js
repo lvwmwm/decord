@@ -1,0 +1,10 @@
+// Module ID: 16427
+// Function ID: 16428
+// Name: registerAsset
+// Dependencies: [1241]
+
+// Module 16427 (registerAsset)
+import registerAsset from "registerAsset" /* 1241 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 292, height: 182, scales: [2, 3], hash: "f94bdada98ce42ab7be865282d2b8eba", name: "webhook_empty_dark", type: "png" });

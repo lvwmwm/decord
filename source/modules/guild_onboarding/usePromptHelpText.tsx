@@ -1,14 +1,14 @@
-// Module ID: 5548
-// Function ID: 5549
+// Module ID: 5580
+// Function ID: 5581
 // Name: usePromptHelpText
-// Dependencies: [1387, 1985, 4091, 4100, 1922, 676, 1236, 589, 4642, 2]
+// Dependencies: [1387, 1985, 4121, 4130, 1922, 676, 1236, 589, 4674, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 5548 (usePromptHelpText)
+// Module 5580 (usePromptHelpText)
 import closure_2 from "ensureGuildLoaded" /* 1387 */;
 import closure_3 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4091 */;
-import closure_5 from "markAllUserIdListsStale" /* 4100 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_5 from "markAllUserIdListsStale" /* 4130 */;
 import closure_6 from "mergeGuildAvatar" /* 1922 */;
 import { Permissions } from "ME" /* 676 */;
 

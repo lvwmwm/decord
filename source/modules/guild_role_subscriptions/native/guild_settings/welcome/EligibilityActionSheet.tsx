@@ -1,16 +1,16 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17270
+// Function ID: 17271
 // Name: EligibilityActionSheet
-// Dependencies: [19, 676, 21, 4448, 4415, 9689, 6213, 17235, 5590, 4444, 1236, 17239, 2]
+// Dependencies: [19, 676, 21, 4478, 4445, 9728, 6245, 17271, 5622, 4474, 1236, 17275, 2]
 // Exports: default
 
-// Module 17234 (EligibilityActionSheet)
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 17235 */;
-import EligibilityChecklistRowDefault from "EligibilityChecklistRow" /* 17239 */;
+// Module 17270 (EligibilityActionSheet)
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 17271 */;
+import EligibilityChecklistRowDefault from "EligibilityChecklistRow" /* 17275 */;
 import closure_3 from "noop" /* 19 */;
 import { UserSettingsSections } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 ({ jsx: c5, jsxs: closure_6 } = jsxProd);
@@ -25,12 +25,12 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   const memo = React.useMemo(() => {
     const actions = {
       onEnableMFAClick() {
-        let obj = callback2(4415);
+        let obj = callback2(4445);
         obj.hideActionSheet(closure_7);
-        callback2(9689).close();
-        const obj2 = callback2(9689);
+        callback2(9728).close();
+        const obj2 = callback2(9728);
         obj = { screen: constants.ACCOUNT };
-        callback(6213).openUserSettings(obj);
+        callback(6245).openUserSettings(obj);
       },
       onRequireModeratorMFAClick() {
         closure_1_1(closure_1_2[4]).hideActionSheet(closure_1_7);
@@ -43,10 +43,10 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   obj = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = onRequireModeratorMFAClick(1236).intl;
   obj[3] = intl.string(onRequireModeratorMFAClick(1236).t["3s47iN"]);
-  const items1 = [callback(onRequireModeratorMFAClick(4444).Heading, obj), ];
+  const items1 = [callback(onRequireModeratorMFAClick(4474).Heading, obj), ];
   obj = { style: tmp.container, items: useCreatorMonetizationEligibilityItemsDefault(onRequireModeratorMFAClick.eligibility, memo) };
   items1[1] = callback(EligibilityChecklistRowDefault, obj);
   obj[1] = items1;
-  return callback2(onRequireModeratorMFAClick(5590).BottomSheet, obj);
+  return callback2(onRequireModeratorMFAClick(5622).BottomSheet, obj);
 };
 export const ELIGIBILITY_ACTION_SHEET_KEY = "EligibilityActionSheet";

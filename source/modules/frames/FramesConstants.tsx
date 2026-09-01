@@ -1,10 +1,10 @@
-// Module ID: 9426
-// Function ID: 9427
+// Module ID: 9465
+// Function ID: 9466
 // Name: FrameLayoutModes
 // Dependencies: [2]
 // Exports: asLaunched, getChannelIdForSurface, getFrameIntentForSurface, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 9426 (FrameLayoutModes)
+// Module 9465 (FrameLayoutModes)
 import set from "set" /* 2 */;
 
 let obj = { MAIN: 0, [0]: "MAIN", APP_CHANNEL: 1, [1]: "APP_CHANNEL" };

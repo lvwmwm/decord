@@ -1,18 +1,18 @@
-// Module ID: 16514
-// Function ID: 16515
+// Module ID: 16550
+// Function ID: 16551
 // Name: HistorySeparator
-// Dependencies: [19, 17, 1387, 4463, 1922, 676, 21, 4448, 712, 6154, 16515, 589, 1297, 10610, 5461, 9391, 4461, 4459, 7580, 15659, 1493, 16520, 1236, 7763, 2]
+// Dependencies: [19, 17, 1387, 4493, 1922, 676, 21, 4478, 712, 6186, 16551, 589, 1297, 10648, 5493, 9430, 4491, 4489, 7612, 15695, 1493, 16556, 1236, 7795, 2]
 
-// Module 16514 (HistorySeparator)
+// Module 16550 (HistorySeparator)
 import ThemesDefault from "Themes" /* 712 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "generateOldThreadCutoff" /* 4463 */;
+import closure_7 from "generateOldThreadCutoff" /* 4493 */;
 import closure_8 from "mergeGuildAvatar" /* 1922 */;
 import { ChannelTypes } from "ME" /* 676 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function HistorySeparator() {
@@ -52,7 +52,7 @@ let closure_13 = importAllResult.memo(function GuildItemInner(guildId) {
     guildId(closure_1_2[9]).transitionToGuild(guildId);
   }, items1);
   obj = { size: 48, borderRadius: 16, guildId, selected: guildId.selected, onPress: callback, onLongPress: callback1, backgroundColor: tmp.maskStrokeStyle.backgroundColor };
-  obj[1] = callback(onGuildSelect(16515), obj);
+  obj[1] = callback(onGuildSelect(16551), obj);
   return callback(closure_5, obj);
 });
 let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId) {
@@ -91,7 +91,7 @@ let closure_14 = importAllResult.memo(function PrivateChannelItemInner(channelId
   }
   if (type === ChannelTypes.DM) {
     if (null != stateFromStores1) {
-      obj = { style: null, user: null, guildId: "Array", size: "<string:285213222>" };
+      obj = { style: null, user: null, guildId: "Array", size: true };
       obj[0] = tmp.privateChannelIcon;
       obj[1] = stateFromStores1;
       obj[3] = tmp2(tmp3[12]).AvatarSizes.LARGE_48;

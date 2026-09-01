@@ -1,17 +1,17 @@
-// Module ID: 8345
-// Function ID: 8346
+// Module ID: 8377
+// Function ID: 8378
 // Name: FormSwitchRow
-// Dependencies: [32, 19, 17, 21, 4448, 500, 5560, 5579, 8343, 5566, 5961, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 500, 5592, 5611, 8375, 5598, 5993, 2]
 // Exports: default
 
-// Module 8345 (FormSwitchRow)
-import context from "context" /* 5566 */;
-import TableSwitchRow from "TableSwitchRow" /* 5961 */;
+// Module 8377 (FormSwitchRow)
+import context from "context" /* 5598 */;
+import TableSwitchRow from "TableSwitchRow" /* 5993 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createCacheKey from "createCacheKey" /* 4448 */;
+import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function FormSwitchRow(onValueChange) {

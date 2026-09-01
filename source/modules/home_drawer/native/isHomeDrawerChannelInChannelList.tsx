@@ -1,12 +1,12 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15909
+// Function ID: 15910
 // Name: useIsHomeDrawerChannelInChannelList
-// Dependencies: [4669, 589, 7248, 2]
+// Dependencies: [4701, 589, 7280, 2]
 // Exports: useIsHomeDrawerChannelInChannelList
 
-// Module 15874 (useIsHomeDrawerChannelInChannelList)
+// Module 15909 (useIsHomeDrawerChannelInChannelList)
 import initialize from "initialize" /* 589 */;
-import closure_2 from "updateUserGuildSettingsInternal" /* 4669 */;
+import closure_2 from "updateUserGuildSettingsInternal" /* 4701 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelInChannelList.tsx");

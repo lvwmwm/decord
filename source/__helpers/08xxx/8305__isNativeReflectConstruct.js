@@ -1,19 +1,16 @@
 // Module ID: 8305
 // Function ID: 8306
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8306, 8222, 8233]
+// Dependencies: [41, 42, 93, 95, 98, 19, 8257]
 
 // Module 8305 (_isNativeReflectConstruct)
-import noopAll from "noop" /* 19 */;
 import _inheritsDefault from "_inherits" /* 98 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8233 */;
 import closure_2 from "_classCallCheck" /* 41 */;
 import closure_3 from "_possibleConstructorReturn" /* 93 */;
 import closure_4 from "_getPrototypeOf" /* 95 */;
 import importDefaultResult from "_createClass" /* 42 */;
-import { jsx } from "jsxProd" /* 21 */;
 
-const Symbol = importDefault;
+const FeSpotLight = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -33,13 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-noopAll;
-class Symbol {
+class FeSpotLight {
   constructor() {
     self = this;
-    tmp = closure_2(this, Symbol);
+    tmp = closure_2(this, FeSpotLight);
     tmp2 = closure_4;
-    obj = closure_4(Symbol);
+    obj = closure_4(FeSpotLight);
     tmp3 = closure_3;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
@@ -54,31 +50,18 @@ class Symbol {
     return tmp3(self, constructResult);
   }
 }
-_inheritsDefault(Symbol, _isNativeReflectConstructDefault);
+_inheritsDefault(FeSpotLight, require("noop").Component);
 const items = [
   {
     key: "render",
     value: function render() {
-      const self = this;
-      const props = this.props;
-      let obj = { name: props.id };
-      obj = {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      };
-      const merged = Object.assign(obj);
-      const merged1 = Object.assign(self(8222)(props));
-      obj.children = props.children;
-      return jsx(self(8306), {
-        ref(arg0) {
-          return self.refMethod(arg0);
-        }
-      });
+      const result = FeSpotLight(8257).warnUnimplementedFilter();
+      return null;
     }
   }
 ];
-const importDefaultResultResult = importDefaultResult(Symbol, items);
-importDefaultResultResult.displayName = "Symbol";
+const importDefaultResultResult = importDefaultResult(FeSpotLight, items);
+importDefaultResultResult.displayName = "FeSpotLight";
+importDefaultResultResult.defaultProps = {};
 
 export default importDefaultResultResult;

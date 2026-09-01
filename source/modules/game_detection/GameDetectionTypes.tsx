@@ -1,11 +1,11 @@
-// Module ID: 4486
-// Function ID: 4487
+// Module ID: 4516
+// Function ID: 4517
 // Name: GameTheme
-// Dependencies: [1931, 4474, 2]
+// Dependencies: [1936, 4504, 2]
 
-// Module 4486 (GameTheme)
-import toJSDefault from "toJS" /* 1931 */;
-import { createExecutable } from "createExecutable" /* 4474 */;
+// Module 4516 (GameTheme)
+import toJSDefault from "toJS" /* 1936 */;
+import { createExecutable } from "createExecutable" /* 4504 */;
 
 toJSDefault;
 const result = require("set").fileFinishedImporting("modules/game_detection/GameDetectionTypes.tsx");

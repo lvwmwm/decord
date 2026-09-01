@@ -1,14 +1,14 @@
-// Module ID: 5086
-// Function ID: 5087
+// Module ID: 5118
+// Function ID: 5119
 // Name: getCreateAttachmentURL
-// Dependencies: [1387, 676, 5046, 5042, 5087, 5089, 2]
+// Dependencies: [1387, 676, 5078, 5074, 5119, 5121, 2]
 // Exports: getUploadTarget
 
-// Module 5086 (getCreateAttachmentURL)
-import items from "items" /* 5042 */;
-import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 5046 */;
-import getCreateAttachmentURLDefault from "getCreateAttachmentURL" /* 5087 */;
-import getCreateAttachmentURLDefault2 from "getCreateAttachmentURL" /* 5089 */;
+// Module 5118 (getCreateAttachmentURL)
+import items from "items" /* 5074 */;
+import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 5078 */;
+import getCreateAttachmentURLDefault from "getCreateAttachmentURL" /* 5119 */;
+import getCreateAttachmentURLDefault2 from "getCreateAttachmentURL" /* 5121 */;
 import closure_4 from "ensureGuildLoaded" /* 1387 */;
 import ME from "ME" /* 676 */;
 
