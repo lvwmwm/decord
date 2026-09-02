@@ -1,13 +1,13 @@
-// Module ID: 14802
-// Function ID: 14803
+// Module ID: 15031
+// Function ID: 15032
 // Name: useUserRoleSubscriptionRelationship
-// Dependencies: [5402, 14801, 589, 2]
+// Dependencies: [5410, 15030, 586, 2]
 // Exports: default, getUserRoleSubscriptionRelationship
 
-// Module 14802 (useUserRoleSubscriptionRelationship)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "computeRolesForGuild" /* 5402 */;
-import { UserGuildRoleSubscriptionRelationship as closure_3 } from "MAX_SUBSCRIPTION_TIERS" /* 14801 */;
+// Module 15031 (useUserRoleSubscriptionRelationship)
+import initialize from "initialize" /* 586 */;
+import closure_2 from "computeRolesForGuild" /* 5410 */;
+import { UserGuildRoleSubscriptionRelationship as closure_3 } from "MAX_SUBSCRIPTION_TIERS" /* 15030 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useUserRoleSubscriptionRelationship.tsx");

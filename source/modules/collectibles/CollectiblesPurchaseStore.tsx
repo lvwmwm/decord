@@ -1,12 +1,12 @@
-// Module ID: 7303
-// Function ID: 7304
+// Module ID: 7312
+// Function ID: 7313
 // Name: map
-// Dependencies: [12, 589, 709, 2]
+// Dependencies: [12, 586, 706, 2]
 
-// Module 7303 (map)
+// Module 7312 (map)
 import apply from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 require = arg1;
 let map = new Map();

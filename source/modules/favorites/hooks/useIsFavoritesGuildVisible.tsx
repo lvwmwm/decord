@@ -1,15 +1,15 @@
-// Module ID: 14921
-// Function ID: 14922
+// Module ID: 15150
+// Function ID: 15151
 // Name: computeIsFavoritesGuildVisible
-// Dependencies: [4299, 1390, 1912, 10317, 10307, 589, 2]
+// Dependencies: [4299, 1389, 1911, 10339, 10329, 586, 2]
 // Exports: default, isFavoritesGuildVisible
 
-// Module 14921 (computeIsFavoritesGuildVisible)
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1912 */;
-import useFavoritesAccess from "useFavoritesAccess" /* 10307 */;
-import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10317 */;
+// Module 15150 (computeIsFavoritesGuildVisible)
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
+import useFavoritesAccess from "useFavoritesAccess" /* 10329 */;
+import hasOfferedFavoritesGuildOnboarding from "hasOfferedFavoritesGuildOnboarding" /* 10339 */;
 import closure_2 from "handleConnectionOpen" /* 4299 */;
-import closure_3 from "initializeFromUserSettings" /* 1390 */;
+import closure_3 from "initializeFromUserSettings" /* 1389 */;
 
 require = arg1;
 function computeIsFavoritesGuildVisible(closure_3, closure_2, isExperimentEnabled) {

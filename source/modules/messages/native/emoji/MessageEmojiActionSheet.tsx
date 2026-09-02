@@ -1,23 +1,23 @@
-// Module ID: 9171
-// Function ID: 9172
+// Module ID: 9185
+// Function ID: 9186
 // Name: MessageStandardEmojiActionSheet
-// Dependencies: [19, 17, 676, 21, 4478, 500, 514, 5622, 698, 9172, 9178, 9179, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 1234, 511, 5630, 695, 9186, 9192, 9193, 2]
 // Exports: default
 
-// Module 9171 (MessageStandardEmojiActionSheet)
+// Module 9185 (MessageStandardEmojiActionSheet)
 import noopAll from "noop" /* 19 */;
-import EmojiDefault from "Emoji" /* 9172 */;
-import CustomEmojiContentDefault from "CustomEmojiContent" /* 9179 */;
+import EmojiDefault from "Emoji" /* 9186 */;
+import CustomEmojiContentDefault from "CustomEmojiContent" /* 9193 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 const require = arg1;
 function MessageStandardEmojiActionSheet(emojiNode) {
   let _require;
-  let obj = _require(514);
+  let obj = _require(511);
   const v4Result = obj.v4();
   _require = v4Result;
   obj = {
@@ -31,18 +31,18 @@ function MessageStandardEmojiActionSheet(emojiNode) {
   };
   obj = { style: callback().contentWrapper, children: jsx(EmojiDefault, { emojiNode: emojiNode.emojiNode, nonce: v4Result }) };
   obj[2] = <View style={callback().contentWrapper}>{jsx(EmojiDefault, { emojiNode: arg0.emojiNode, nonce: v4Result })}</View>;
-  return jsx(_require(5622).BottomSheet, { style: callback().contentWrapper, children: jsx(EmojiDefault, { emojiNode: emojiNode.emojiNode, nonce: v4Result }) });
+  return jsx(_require(5630).BottomSheet, { style: callback().contentWrapper, children: jsx(EmojiDefault, { emojiNode: emojiNode.emojiNode, nonce: v4Result }) });
 }
 function MessageCustomEmojiActionSheet(emojiNode) {
   emojiNode = emojiNode.emojiNode;
   let _require;
-  let obj = _require(9178);
+  let obj = _require(9192);
   obj = { emojiId: emojiNode.id };
   const emojiAndSource = obj.useEmojiAndSource(obj);
   if (emojiAndSource.isFetching) {
     return null;
   } else {
-    const v4Result = tmp2(514).v4();
+    const v4Result = tmp2(511).v4();
     _require = v4Result;
     obj = { startExpanded: true, onDismiss: null, children: null };
     obj[1] = function onDismiss() {
@@ -62,7 +62,7 @@ function MessageCustomEmojiActionSheet(emojiNode) {
     obj2[6] = v4Result;
     obj1[1] = jsx(CustomEmojiContentDefault, { emojiNode: null, sourceType: null, expressionSourceApplication: null, expressionSourceGuild: null, customEmojiFromJoinedGuild: null, hasJoinedEmojiSourceGuild: null, nonce: null });
     obj[2] = <View style={null}>{null}</View>;
-    return jsx(tmp2(5622).BottomSheet, { startExpanded: true, onDismiss: null, children: null });
+    return jsx(tmp2(5630).BottomSheet, { startExpanded: true, onDismiss: null, children: null });
   }
   tmp = callback();
 }

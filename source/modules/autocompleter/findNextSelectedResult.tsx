@@ -1,11 +1,11 @@
-// Module ID: 9934
-// Function ID: 9935
-// Dependencies: [5452, 2]
+// Module ID: 9956
+// Function ID: 9957
+// Dependencies: [5460, 2]
 // Exports: default
 
-// Module 9934
+// Module 9956
 import set from "set" /* 2 */;
-import HeaderRecord from "HeaderRecord" /* 5452 */;
+import HeaderRecord from "HeaderRecord" /* 5460 */;
 
 ({ FindResultDirections: c0, AutocompleterResultTypes: closure_1 } = HeaderRecord);
 const result = set.fileFinishedImporting("modules/autocompleter/findNextSelectedResult.tsx");

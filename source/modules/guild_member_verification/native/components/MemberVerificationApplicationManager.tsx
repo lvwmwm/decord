@@ -1,10 +1,10 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 17192
+// Function ID: 17193
 // Name: prototype
-// Dependencies: [4299, 4300, 5486, 4858, 4302, 7653, 7661, 2]
+// Dependencies: [4299, 4300, 5494, 4858, 4302, 7662, 7670, 2]
 
-// Module 16956 (prototype)
-import initializeDefault from "initialize" /* 5486 */;
+// Module 17192 (prototype)
+import initializeDefault from "initialize" /* 5494 */;
 import closure_3 from "handleConnectionOpen" /* 4299 */;
 import closure_4 from "handleGatewayJoinRequestUpdate" /* 4300 */;
 

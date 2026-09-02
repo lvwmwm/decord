@@ -1,12 +1,12 @@
 // Module ID: 4571
 // Function ID: 4572
 // Name: isOwner
-// Dependencies: [4535, 4551, 4572, 1218, 1387, 4573, 4529, 4574, 4554, 4575, 676, 4542, 687, 4556, 4576, 4362, 4544, 4577, 12, 709, 4578, 4579, 4653, 698, 4472, 4659, 4558, 4660, 4661, 4539, 7415, 2]
+// Dependencies: [4535, 4551, 4572, 1215, 1386, 4573, 4529, 4574, 4554, 4575, 673, 4542, 684, 4556, 4576, 4362, 4544, 4577, 12, 706, 4578, 4579, 4653, 695, 4472, 4659, 4558, 4660, 4661, 4539, 7424, 2]
 
 // Module 4571 (isOwner)
 import applyDefault from "apply" /* 12 */;
-import setDefault from "set" /* 687 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import setDefault from "set" /* 684 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import isStreamKey from "isStreamKey" /* 4544 */;
 import getEventHistoryStringDefault from "getEventHistoryString" /* 4556 */;
 import traceEventDefault from "traceEvent" /* 4576 */;
@@ -17,14 +17,14 @@ import getStreamSourceMetadataDefault from "getStreamSourceMetadata" /* 4660 */;
 import closure_3 from "_migrateDefaultStorage" /* 4535 */;
 import { getSystemAnalyticsInfo } from "getSystemAnalyticsInfo" /* 4551 */;
 import closure_5 from "ApplicationStreamPresets" /* 4572 */;
-import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "fetchFingerprint" /* 1215 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "getHookError" /* 4573 */;
 import closure_9 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_10 from "handleConnectionInfoChange" /* 4574 */;
 import closure_11 from "createRTCConnection" /* 4554 */;
 import closure_12 from "initialize" /* 4575 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
 
 require = arg1;
@@ -601,15 +601,15 @@ prototype["initializeEvents"] = function initializeEvents() {
     }
   });
   this.on(_require(4578).RTCConnectionEvent.VideoSourceQualityChanged, (guildId, channelId, senderUserId, maxResolution, maxFrameRate, context) => {
-    let obj = self(709);
+    let obj = self(706);
     obj = { type: "MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED", guildId, channelId, senderUserId, maxResolution, maxFrameRate, context };
     obj.dispatch(obj);
   });
   this.on(_require(4578).RTCConnectionEvent.SecureFramesUpdate, () => {
-    self(709).dispatch({ type: "RTC_CONNECTION_SECURE_FRAMES_UPDATE" });
+    self(706).dispatch({ type: "RTC_CONNECTION_SECURE_FRAMES_UPDATE" });
   });
   this.on(_require(4578).RTCConnectionEvent.RosterMapUpdate, (userIds) => {
-    let obj = self(709);
+    let obj = self(706);
     obj = { type: "RTC_CONNECTION_ROSTER_MAP_UPDATE", userIds };
     obj.dispatch(obj);
   });
@@ -737,7 +737,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(arg0) {
         num = 0;
       }
       if (num > 0) {
-        obj2 = callback(698);
+        obj2 = callback(695);
         obj = {};
         const merged = Object.assign(codecUsageStats);
         const merged1 = Object.assign(dependencyMap);
@@ -758,7 +758,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(arg0) {
         obj.hardware_enabled = closure_1_9.getHardwareEncoding();
         let tmp = null;
         if (self.isOwner) {
-          tmp = tmp4(7415)();
+          tmp = tmp4(7424)();
         }
         obj.device_performance_class = tmp;
         obj.soundshare_experimental = closure_1_9.getExperimentalSoundshare();
@@ -781,7 +781,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(arg0) {
         num = 0;
       }
       if (num > 0) {
-        obj = callback(698);
+        obj = callback(695);
         obj = {};
         const merged = Object.assign(codecUsageStats);
         const merged1 = Object.assign(dependencyMap);
@@ -802,7 +802,7 @@ prototype["trackVideoEndStats"] = function trackVideoEndStats(arg0) {
         obj.hardware_enabled = closure_1_9.getHardwareEncoding();
         let tmp2 = null;
         if (self.isOwner) {
-          tmp2 = tmp4(7415)();
+          tmp2 = tmp4(7424)();
         }
         obj.device_performance_class = tmp2;
         obj.track(closure_1_13.VIDEO_STREAM_ENDED, obj);

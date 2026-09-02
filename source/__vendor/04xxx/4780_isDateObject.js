@@ -1,11 +1,11 @@
 // Module ID: 4780
 // Function ID: 4781
 // Name: isDateObject
-// Dependencies: [574, 1408]
+// Dependencies: [571, 1407]
 
 // Module 4780 (isDateObject)
-import callBoundIntrinsic from "callBoundIntrinsic" /* 574 */;
-import hasToStringTagShams from "hasToStringTagShams" /* 1408 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 571 */;
+import hasToStringTagShams from "hasToStringTagShams" /* 1407 */;
 
 let closure_0 = callBoundIntrinsic("Date.prototype.getDay");
 let closure_1 = callBoundIntrinsic("Object.prototype.toString");

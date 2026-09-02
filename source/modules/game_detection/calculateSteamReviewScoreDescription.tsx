@@ -1,10 +1,10 @@
-// Module ID: 8849
-// Function ID: 8850
+// Module ID: 8864
+// Function ID: 8865
 // Name: calculateSteamReviewScoreDescription
 // Dependencies: [4516, 2]
 // Exports: calculateSteamReviewScoreDescription
 
-// Module 8849 (calculateSteamReviewScoreDescription)
+// Module 8864 (calculateSteamReviewScoreDescription)
 import set from "set" /* 2 */;
 import GameTheme from "GameTheme" /* 4516 */;
 

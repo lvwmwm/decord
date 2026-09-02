@@ -1,12 +1,12 @@
-// Module ID: 9985
-// Function ID: 9986
+// Module ID: 10007
+// Function ID: 10008
 // Name: setSendState
-// Dependencies: [644, 705, 2]
+// Dependencies: [641, 702, 2]
 // Exports: setSendState
 
-// Module 9985 (setSendState)
+// Module 10007 (setSendState)
 import set from "set" /* 2 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 let obj = keys.create(() => ({}));
 const result = set.fileFinishedImporting("modules/instant_invite/InstantInviteSendStateStore.tsx");
@@ -16,7 +16,7 @@ export const setSendState = function setSendState(arg0, arg1, arg2) {
   dependencyMap = arg1;
   obj = arg2;
   const state = obj.getState();
-  obj = _require(705);
+  obj = _require(702);
   obj.batchUpdates(() => {
     obj = {};
     const merged = Object.assign(table);

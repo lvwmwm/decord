@@ -1,12 +1,12 @@
-// Module ID: 14195
-// Function ID: 14196
+// Module ID: 14418
+// Function ID: 14419
 // Name: getSoundboardSoundURL
-// Dependencies: [676, 2]
+// Dependencies: [673, 2]
 // Exports: default
 
-// Module 14195 (getSoundboardSoundURL)
+// Module 14418 (getSoundboardSoundURL)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("modules/soundboard/getSoundboardSoundURL.tsx");

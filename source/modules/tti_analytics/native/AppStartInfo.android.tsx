@@ -1,10 +1,10 @@
-// Module ID: 7416
-// Function ID: 7417
+// Module ID: 7425
+// Function ID: 7426
 // Name: AppStartInfo
-// Dependencies: [32, 5, 7417, 4339, 2]
+// Dependencies: [32, 5, 7426, 4339, 2]
 
-// Module 7416 (AppStartInfo)
-import enforcingDefault from "enforcing" /* 7417 */;
+// Module 7425 (AppStartInfo)
+import enforcingDefault from "enforcing" /* 7426 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -42,11 +42,11 @@ export const AppStartInfo = {
       items[2] = callback(4339).getAppFirstVisibleTimestamp();
       dependencyMap = yield Promise.all(items);
       closure_4 = 5;
-      closure_5 = 7417;
+      closure_5 = 7426;
       obj5 = { app_start_type: null, app_launch_scenario: null };
       obj5[0] = c3;
       obj5[1] = closure_4;
-      const mainActivityCreationTime = callback(7417).getMainActivityCreationTime();
+      const mainActivityCreationTime = callback(7426).getMainActivityCreationTime();
       if (null != mainActivityCreationTime) {
         obj5.android_time_creation_to_create_main_activity = mainActivityCreationTime - callback;
       }

@@ -1,12 +1,12 @@
-// Module ID: 11754
-// Function ID: 11755
+// Module ID: 11977
+// Function ID: 11978
 // Name: AppLauncherUserOption
-// Dependencies: [32, 19, 4470, 21, 4478, 712, 589, 11746, 1891, 4445, 11755, 2009, 11755, 1297, 11749, 10655, 11752, 4474, 2]
+// Dependencies: [32, 19, 4470, 21, 4478, 709, 586, 11969, 1890, 4445, 11978, 2008, 11978, 1296, 11972, 10876, 11975, 4474, 2]
 // Exports: default
 
-// Module 11754 (AppLauncherUserOption)
-import ThemesDefault from "Themes" /* 712 */;
-import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 11746 */;
+// Module 11977 (AppLauncherUserOption)
+import ThemesDefault from "Themes" /* 709 */;
+import AppLauncherSelectOptionFormRowDefault from "AppLauncherSelectOptionFormRow" /* 11969 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -28,7 +28,7 @@ export default function AppLauncherUserOption(option) {
   let callback2;
   ({ style, autoFocus, hasError } = option);
   const guild_id = channel.guild_id;
-  let obj = option(589);
+  let obj = option(586);
   const items = [onPress];
   const stateFromStores = obj.useStateFromStores(items, () => onPress.useReducedMotion);
   const tmp = callback2();
@@ -89,21 +89,21 @@ export default function AppLauncherUserOption(option) {
     obj[0] = tmp8;
     obj[1] = guild_id;
     obj[2] = !stateFromStores;
-    obj[3] = tmp2(1297).AvatarSizes.REFRESH_MEDIUM_32;
-    let tmp9Result = tmp9(tmp2(1297).Avatar, obj);
+    obj[3] = tmp2(1296).AvatarSizes.REFRESH_MEDIUM_32;
+    let tmp9Result = tmp9(tmp2(1296).Avatar, obj);
   } else {
     obj1 = { icon: null, wrapperStyle: null };
-    obj1[0] = tmp9(tmp2(10655).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
+    obj1[0] = tmp9(tmp2(10876).UserCircleIcon, { size: "sm", color: "interactive-text-default" });
     obj1[1] = tmp.iconWrapper;
-    tmp9Result = tmp9(tmp10(11749), obj1);
-    const tmp10Result = tmp10(11749);
+    tmp9Result = tmp9(tmp10(11972), obj1);
+    const tmp10Result = tmp10(11972);
   }
   obj[5] = tmp9Result;
   if (null != tmp8) {
     let obj2 = { guildId: null, user: null };
     obj2[0] = guild_id;
     obj2[1] = tmp8;
-    tmp9Result = tmp9(tmp10(11752), obj2);
+    tmp9Result = tmp9(tmp10(11975), obj2);
   } else {
     tmp9Result = null;
     if (null != tmp6) {

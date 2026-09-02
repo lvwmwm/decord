@@ -1,14 +1,14 @@
-// Module ID: 7614
-// Function ID: 7615
+// Module ID: 7624
+// Function ID: 7625
 // Name: PressableNavigatorModalIcon
-// Dependencies: [21, 7610, 7607, 7611, 7615, 1236, 2]
+// Dependencies: [21, 7620, 7617, 7621, 7625, 1233, 2]
 // Exports: default
 
-// Module 7614 (PressableNavigatorModalIcon)
+// Module 7624 (PressableNavigatorModalIcon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import GenericHeaderTitle from "GenericHeaderTitle" /* 7607 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7610 */;
+import GenericHeaderTitle from "GenericHeaderTitle" /* 7617 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 7620 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/navigator/PressableNavigatorModalIcon.tsx");
@@ -22,10 +22,10 @@ export default function PressableNavigatorModalIcon(onPress) {
   if (str === undefined) {
     str = "back";
   }
-  let obj = { source: importDefault(tmp6 ? 7611 : 7615), onPress: goBack, accessibilityLabel: null };
-  const intl = tmp5(1236).intl;
+  let obj = { source: importDefault(tmp6 ? 7621 : 7625), onPress: goBack, accessibilityLabel: null };
+  const intl = tmp5(1233).intl;
   const string = intl.string;
-  const t = tmp5(1236).t;
+  const t = tmp5(1233).t;
   if ("back" === str) {
     let stringResult = string(t["13/7kX"]);
   } else {

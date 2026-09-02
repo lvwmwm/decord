@@ -1,13 +1,13 @@
-// Module ID: 10132
-// Function ID: 10133
+// Module ID: 10154
+// Function ID: 10155
 // Name: useIsGuestOrLurker
-// Dependencies: [1992, 1909, 676, 589, 2]
+// Dependencies: [1991, 1908, 673, 586, 2]
 // Exports: default, isGuestOrLurkerInGuild
 
-// Module 10132 (useIsGuestOrLurker)
-import closure_2 from "trackCommunicationDisabled" /* 1992 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
-import { GuildFeatures } from "ME" /* 676 */;
+// Module 10154 (useIsGuestOrLurker)
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_member/useIsGuestOrLurker.tsx");
@@ -17,7 +17,7 @@ export default function useIsGuestOrLurker(arg0, arg1) {
   dependencyMap = arg1;
   const items = [closure_3, closure_2];
   const items1 = [arg0, arg1];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const guild = closure_1_3.getGuild(closure_0);
     let hasItem;
     if (guild != null) {

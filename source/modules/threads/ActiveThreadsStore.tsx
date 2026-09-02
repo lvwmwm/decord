@@ -1,15 +1,15 @@
-// Module ID: 5449
-// Function ID: 5450
+// Module ID: 5457
+// Function ID: 5458
 // Name: handleThreadCreateOrUpdate
-// Dependencies: [1391, 1387, 12, 589, 11, 709, 2]
+// Dependencies: [1390, 1386, 12, 586, 11, 706, 2]
 
-// Module 5449 (handleThreadCreateOrUpdate)
+// Module 5457 (handleThreadCreateOrUpdate)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import set from "set" /* 2 */;
 
 function handleThreadCreateOrUpdate(channel) {

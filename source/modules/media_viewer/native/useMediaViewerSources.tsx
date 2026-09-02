@@ -1,10 +1,10 @@
-// Module ID: 8567
-// Function ID: 8568
+// Module ID: 8582
+// Function ID: 8583
 // Name: zustandStore
-// Dependencies: [4344, 8568, 2]
+// Dependencies: [4344, 8583, 2]
 // Exports: removeSpoiler, setMediaViewerSources, toggleSpoiler
 
-// Module 8567 (zustandStore)
+// Module 8582 (zustandStore)
 import set2 from "set" /* 2 */;
 import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4344 */;
 

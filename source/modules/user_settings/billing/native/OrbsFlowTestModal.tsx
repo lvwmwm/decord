@@ -1,21 +1,21 @@
-// Module ID: 15294
-// Function ID: 15295
+// Module ID: 15522
+// Function ID: 15523
 // Name: BalanceWidgetMenuSection
-// Dependencies: [32, 19, 17, 21, 7822, 6008, 7607, 10662, 4478, 712, 4926, 4474, 15295, 4445, 10850, 2009, 1236, 7705, 4928, 10840, 10849, 5594, 5940, 15297, 2]
+// Dependencies: [32, 19, 17, 21, 7831, 6016, 7617, 10883, 4478, 709, 4926, 4474, 15523, 4445, 11070, 2008, 1233, 7714, 4928, 11060, 11069, 5602, 5948, 15525, 2]
 
-// Module 15294 (BalanceWidgetMenuSection)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 15522 (BalanceWidgetMenuSection)
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
-import Layer from "Layer" /* 5940 */;
-import BalanceWidgetDefault from "BalanceWidget" /* 15295 */;
-import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 15297 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
+import Layer from "Layer" /* 5948 */;
+import BalanceWidgetDefault from "BalanceWidget" /* 15523 */;
+import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 15525 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7822 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7831 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
@@ -104,7 +104,7 @@ createCacheKey = { flexDirection: "row", justifyContent: "center", marginBottom:
 obj[3] = createCacheKey;
 let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function OrbsFlowTestModal() {
-  let obj = _require(6008);
+  let obj = _require(6016);
   _require = obj.useAccessibilityNativeStackOptions();
   obj = {
     screenOptions(navigation) {

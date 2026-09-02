@@ -1,12 +1,12 @@
-// Module ID: 7974
-// Function ID: 7975
+// Module ID: 7983
+// Function ID: 7984
 // Name: useIsInReverseTrial
-// Dependencies: [1922, 589, 2]
+// Dependencies: [1921, 586, 2]
 // Exports: maybeShowReverseTrialFollowupUpsellModal, maybeShowReverseTrialInitialUpsellModal, useIsInReverseTrial, useReverseTrialDaysRemaining
 
-// Module 7974 (useIsInReverseTrial)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 7983 (useIsInReverseTrial)
+import initialize from "initialize" /* 586 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/ReverseTrialUtils.native.tsx");

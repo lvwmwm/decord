@@ -1,17 +1,17 @@
-// Module ID: 16305
-// Function ID: 16306
-// Dependencies: [32, 19, 1387, 4130, 1922, 11909, 11906, 7622, 676, 21, 589, 16230, 11905, 11930, 11927, 4322, 4674, 11907, 16306, 11913, 11908, 16267, 16222, 1236, 16234, 2]
+// Module ID: 16537
+// Function ID: 16538
+// Dependencies: [32, 19, 1386, 4130, 1921, 12132, 12129, 7632, 673, 21, 586, 16462, 12128, 12153, 12150, 4322, 4674, 12130, 16538, 12136, 12131, 16499, 16454, 1233, 16466, 2]
 
-// Module 16305
+// Module 16537
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "handleUserSearchResults" /* 11909 */;
-import closure_9 from "prototype" /* 11906 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7622 */;
-import ME from "ME" /* 676 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import closure_8 from "handleUserSearchResults" /* 12132 */;
+import closure_9 from "prototype" /* 12129 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7632 */;
+import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

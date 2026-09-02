@@ -1,26 +1,26 @@
-// Module ID: 7505
-// Function ID: 7506
+// Module ID: 7515
+// Function ID: 7516
 // Name: getSampleOfVoterUsernamesForAnswer
-// Dependencies: [1387, 7506, 4735, 4121, 4130, 7573, 676, 514, 589, 6068, 687, 1903, 4746, 1236, 7507, 12, 4673, 2]
+// Dependencies: [1386, 7516, 4735, 4120, 4130, 7583, 673, 511, 586, 6076, 684, 1902, 4746, 1233, 7517, 12, 4673, 2]
 // Exports: createPollExpiryTimestamp, createPollServerDataFromCreateRequest, filterOutUUID, formatPollResultNotificationCenterText, generateEmptyPollAnswer, generateLocalCreationAnswerId, getPollAnswerVotesTooltipText, getPollReplyPreview, getPollResultsReplyPreview, getPollResultsReplyPreviewMobile, getTotalVotes, hasNonVoteReactions, isAnswerFilled, isIncompleteAnswer, isPollCreationEmpty, useCanPostPollsInChannel
 
-// Module 7505 (getSampleOfVoterUsernamesForAnswer)
-import v1 from "v1" /* 514 */;
-import setDefault from "set" /* 687 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 7515 (getSampleOfVoterUsernamesForAnswer)
+import v1 from "v1" /* 511 */;
+import setDefault from "set" /* 684 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4746 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "reactionKey" /* 7506 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "reactionKey" /* 7516 */;
 import closure_5 from "reinjectEphemerals" /* 4735 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7573 */;
-import ME from "ME" /* 676 */;
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7583 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   const channelId = message.getChannelId();
-  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7507).ReactionTypes.VOTE);
+  reactions = reactions.getReactions(channelId, message.id, { id, name: "", animated: false }, closure_9, channel(7517).ReactionTypes.VOTE);
   channel = channel.getChannel(channelId);
   let guildId = null;
   if (null != channel) {
@@ -126,7 +126,7 @@ export const hasNonVoteReactions = function hasNonVoteReactions(message) {
 export const useCanPostPollsInChannel = function useCanPostPollsInChannel(channel) {
   const _require = channel;
   const items = [closure_6];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let tmp = null != channel;
     if (tmp) {
       tmp = obj.id !== channel(closure_1_2[9]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
@@ -280,10 +280,10 @@ export const getPollResultsReplyPreview = function getPollResultsReplyPreview(me
   }
   let truncateTextResult = str;
   if (null != closure_8) {
-    truncateTextResult = tmp(1903).truncateText(str, tmp4);
-    const tmpResult = tmp(1903);
+    truncateTextResult = tmp(1902).truncateText(str, tmp4);
+    const tmpResult = tmp(1902);
   }
-  const intl = tmp(1236).intl;
+  const intl = tmp(1233).intl;
   obj = { username: messageAuthor.nick, title: truncateTextResult };
   return intl.format(getSystemLocale.t.Vn97Ka, obj);
 };
@@ -307,10 +307,10 @@ export const getPollResultsReplyPreviewMobile = function getPollResultsReplyPrev
     }
     let truncateTextResult = str;
     if (null != closure_8) {
-      truncateTextResult = tmp2(1903).truncateText(str, tmp5);
-      const tmp2Result = tmp2(1903);
+      truncateTextResult = tmp2(1902).truncateText(str, tmp5);
+      const tmp2Result = tmp2(1902);
     }
-    const intl = tmp2(1236).intl;
+    const intl = tmp2(1233).intl;
     obj = { username: null, title: null };
     obj[0] = messageAuthor.nick;
     obj[1] = truncateTextResult;

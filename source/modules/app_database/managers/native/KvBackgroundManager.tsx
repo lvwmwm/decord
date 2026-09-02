@@ -1,19 +1,19 @@
-// Module ID: 16925
-// Function ID: 16926
+// Module ID: 17161
+// Function ID: 17162
 // Name: handleAppStateUpdate
-// Dependencies: [32, 5, 11982, 7223, 7224, 687, 3, 5486, 16926, 7500, 500, 1956, 1957, 1973, 2]
+// Dependencies: [32, 5, 12206, 7232, 7233, 684, 3, 5494, 17162, 7510, 1234, 1955, 1956, 1972, 2]
 
-// Module 16925 (handleAppStateUpdate)
+// Module 17161 (handleAppStateUpdate)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 687 */;
-import initializeDefault from "initialize" /* 5486 */;
-import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 16926 */;
+import setDefault from "set" /* 684 */;
+import initializeDefault from "initialize" /* 5494 */;
+import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17162 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "initialize" /* 11982 */;
-import handleSelectedChannelStoreChanged from "handleSelectedChannelStoreChanged" /* 7223 */;
-import closure_8 from "handleSelectedChannelStoreChanged" /* 7223 */;
-import closure_9 from "result" /* 7224 */;
+import closure_5 from "initialize" /* 12206 */;
+import handleSelectedChannelStoreChanged from "handleSelectedChannelStoreChanged" /* 7232 */;
+import closure_8 from "handleSelectedChannelStoreChanged" /* 7232 */;
+import closure_9 from "result" /* 7233 */;
 
 let require = arg1;
 ({ MAXIMUM_MESSAGES_PER_CHANNEL_DEFAULT: closure_6, MAXIMUM_MESSAGES_PER_CHANNEL_EVER: error } = handleSelectedChannelStoreChanged);
@@ -473,7 +473,7 @@ prototype["maybeCleanup"] = function maybeCleanup() {
                 c4 = 1;
                 c5 = 1;
                 obj1 = { value: null, done: false };
-                obj1[0] = closure_1_1(7500).startBackgroundTask();
+                obj1[0] = closure_1_1(7510).startBackgroundTask();
                 return obj1;
               }
             }
@@ -491,7 +491,7 @@ prototype["maybeCleanup"] = function maybeCleanup() {
           } else {
             dependencyMap = arg1;
             if (obj10.isIOS()) {
-              if (dependencyMap === closure_1_1(7500).backgroundTaskIdentifierInvalid) {
+              if (dependencyMap === closure_1_1(7510).backgroundTaskIdentifierInvalid) {
                 c5 = 3;
                 return { value: "HermesInternal", done: null };
               }
@@ -513,7 +513,7 @@ prototype["maybeCleanup"] = function maybeCleanup() {
             lastDeepClean3 = closure_1_0.lastDeepClean;
           }
           timestamp.lastDeepClean = lastDeepClean3;
-          obj2 = closure_1_1(7500);
+          obj2 = closure_1_1(7510);
           obj2.endBackgroundTask(dependencyMap);
           throw c2;
         } else if (arg0 === 1) {
@@ -528,7 +528,7 @@ prototype["maybeCleanup"] = function maybeCleanup() {
             lastDeepClean = timestamp.lastDeepClean;
           }
           timestamp.lastDeepClean = lastDeepClean;
-          obj = closure_1_1(7500);
+          obj = closure_1_1(7510);
           obj.endBackgroundTask(c2);
           const tmp12 = timestamp;
         }
@@ -540,7 +540,7 @@ prototype["maybeCleanup"] = function maybeCleanup() {
           lastDeepClean2 = timestamp.lastDeepClean;
         }
         closure_1_0.lastDeepClean = lastDeepClean2;
-        obj1 = closure_1_1(7500);
+        obj1 = closure_1_1(7510);
         obj1.endBackgroundTask(c2);
         c5 = 3;
         const tmp26 = closure_1_0;

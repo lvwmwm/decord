@@ -1,15 +1,15 @@
-// Module ID: 13129
-// Function ID: 13130
+// Module ID: 13351
+// Function ID: 13352
 // Name: Header
-// Dependencies: [19, 17, 21, 4478, 4413, 5493, 1236, 1363, 13058, 13130, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 4413, 5501, 1233, 1362, 13280, 13352, 4474, 2]
 // Exports: default
 
-// Module 13129 (Header)
+// Module 13351 (Header)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5493 */;
+import preloadDefault from "preload" /* 5501 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -32,14 +32,14 @@ export default function Header(style) {
   obj[1] = intl.string(getSystemLocale.t.lpNrPu);
   const tmp8 = preloadDefault;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(13058);
+    let tmp2Result = tmp2(13280);
   } else {
-    tmp2Result = tmp2(13130);
+    tmp2Result = tmp2(13352);
   }
   obj[3] = tmp2Result;
   const items1 = [closure_4(tmp8, obj), ];
   obj = { style: tmp.headerText, variant: "text-md/medium", color: "mobile-text-heading-primary", children: null };
-  const intl2 = tmp9(1236).intl;
+  const intl2 = tmp9(1233).intl;
   obj[3] = intl2.string(getSystemLocale.t.SD5MJW);
   items1[1] = closure_4(Text.Text, obj);
   obj[1] = items1;

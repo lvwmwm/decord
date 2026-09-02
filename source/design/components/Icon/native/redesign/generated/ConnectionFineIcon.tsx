@@ -1,14 +1,14 @@
-// Module ID: 15987
-// Function ID: 15988
+// Module ID: 16218
+// Function ID: 16219
 // Name: ConnectionFineIcon
-// Dependencies: [19, 21, 712, 4196, 15988, 2]
+// Dependencies: [19, 21, 709, 4196, 16219, 2]
 // Exports: ConnectionFineIcon
 
-// Module 15987 (ConnectionFineIcon)
+// Module 16218 (ConnectionFineIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15988 */;
+import registerAsset from "registerAsset" /* 16219 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

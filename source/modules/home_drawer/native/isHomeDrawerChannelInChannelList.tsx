@@ -1,11 +1,11 @@
-// Module ID: 15909
-// Function ID: 15910
+// Module ID: 16140
+// Function ID: 16141
 // Name: useIsHomeDrawerChannelInChannelList
-// Dependencies: [4701, 589, 7280, 2]
+// Dependencies: [4701, 586, 7289, 2]
 // Exports: useIsHomeDrawerChannelInChannelList
 
-// Module 15909 (useIsHomeDrawerChannelInChannelList)
-import initialize from "initialize" /* 589 */;
+// Module 16140 (useIsHomeDrawerChannelInChannelList)
+import initialize from "initialize" /* 586 */;
 import closure_2 from "updateUserGuildSettingsInternal" /* 4701 */;
 
 require = arg1;

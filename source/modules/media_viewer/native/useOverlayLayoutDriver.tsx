@@ -1,10 +1,10 @@
-// Module ID: 12826
-// Function ID: 12827
+// Module ID: 13047
+// Function ID: 13048
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 4217, 8588, 4479, 1297, 2]
+// Dependencies: [19, 4217, 8603, 4479, 1296, 2]
 // Exports: useFooterLayoutAnimation, useHeaderLayoutAnimation, useOverlayLayoutDriver
 
-// Module 12826 (useOverlayLayoutDriver)
+// Module 13047 (useOverlayLayoutDriver)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;
@@ -15,7 +15,7 @@ let result = require("set").fileFinishedImporting("modules/media_viewer/native/u
 export const useOverlayLayoutDriver = function useOverlayLayoutDriver() {
   sharedValue = sharedValue(4217).useSharedValue(0);
   let obj = sharedValue(4217);
-  const mediaViewerDimensions = sharedValue(8588).useMediaViewerDimensions();
+  const mediaViewerDimensions = sharedValue(8603).useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);
   const effect = React.useEffect(() => {

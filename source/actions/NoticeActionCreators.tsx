@@ -1,11 +1,11 @@
-// Module ID: 16388
-// Function ID: 16389
+// Module ID: 16620
+// Function ID: 16621
 // Name: dispatcher
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 
-// Module 16388 (dispatcher)
+// Module 16620 (dispatcher)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("actions/NoticeActionCreators.tsx");
 

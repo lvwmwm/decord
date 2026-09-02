@@ -1,11 +1,11 @@
-// Module ID: 11633
-// Function ID: 11634
+// Module ID: 11856
+// Function ID: 11857
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 4470, 21, 712, 4478, 11622, 4217, 1493, 4326, 589, 4927, 4940, 5944, 11634, 4474, 2]
+// Dependencies: [32, 19, 17, 4470, 21, 709, 4478, 11845, 4217, 1492, 4326, 586, 4927, 4940, 5952, 11857, 4474, 2]
 // Exports: default
 
-// Module 11633 (BannerBase)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11856 (BannerBase)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -41,13 +41,13 @@ export default function BannerBase(arg0) {
   [tmp3, c0] = callback(React.useState(0), 2);
   let obj = _require(4217);
   sharedValue = obj.useSharedValue(false);
-  const diff = sharedValue(1493)().width - 2 * sharedValue(712).space.PX_16;
+  const diff = sharedValue(1492)().width - 2 * sharedValue(709).space.PX_16;
   const backgroundColor = tmp.bannerGradientColor.backgroundColor;
   obj1 = _require(4326);
   let items = [obj1.hexOpacityToRgba(backgroundColor, 0.2), ];
   let obj2 = _require(4326);
   items[1] = obj2.hexOpacityToRgba(backgroundColor, 0);
-  let obj3 = _require(589);
+  let obj3 = _require(586);
   const items1 = [closure_6];
   const stateFromStores = obj3.useStateFromStores(items1, () => useReducedMotion.useReducedMotion);
   let obj4 = _require(4217);
@@ -101,9 +101,9 @@ export default function BannerBase(arg0) {
   obj1 = { style: tmp.imageContainer, children: null };
   obj2 = { style: tmp.trinketsLottie, source: null, autoPlay: null };
   const tmp2 = callback(React.useState(0), 2);
-  obj2[1] = _require(11634);
+  obj2[1] = _require(11857);
   obj2[2] = !stateFromStores;
-  const items5 = [callback2(sharedValue(5944), obj2), image];
+  const items5 = [callback2(sharedValue(5952), obj2), image];
   obj1[1] = items5;
   items4[1] = closure_8(View, obj1);
   obj3 = { style: tmp.bannerTextContainer, children: callback2(tmp4(4474).Text, obj4) };

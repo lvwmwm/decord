@@ -1,11 +1,11 @@
-// Module ID: 9762
-// Function ID: 9763
+// Module ID: 9784
+// Function ID: 9785
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4478, 712, 4197, 4217, 4927, 9763, 5652, 500, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4197, 4217, 4927, 9785, 5660, 1234, 2]
 // Exports: SegmentedControl
 
-// Module 9762 (SegmentedControl)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9784 (SegmentedControl)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

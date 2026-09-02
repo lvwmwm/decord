@@ -1,19 +1,19 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 10427
+// Function ID: 10428
 // Name: EmptyStateSticker
-// Dependencies: [32, 19, 17, 5444, 4169, 676, 1924, 21, 4478, 10379, 10261, 5953, 5973, 589, 698, 4474, 1236, 5068, 4446, 4447, 4928, 5493, 8215, 10399, 2]
+// Dependencies: [32, 19, 17, 5452, 4169, 673, 1923, 21, 4478, 10401, 10283, 5961, 5981, 586, 695, 4474, 1233, 5076, 4446, 4447, 4928, 5501, 8224, 10421, 2]
 // Exports: default
 
-// Module 10405 (EmptyStateSticker)
-import StickerDefault from "Sticker" /* 10261 */;
-import useStickerPackCategories from "useStickerPackCategories" /* 10379 */;
+// Module 10427 (EmptyStateSticker)
+import StickerDefault from "Sticker" /* 10283 */;
+import useStickerPackCategories from "useStickerPackCategories" /* 10401 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "loadSavedGuildStickers" /* 5444 */;
+import closure_6 from "loadSavedGuildStickers" /* 5452 */;
 import { EMPTY_STATE_STICKERS } from "STICKER_PICKER_TAB_PANEL_ID" /* 4169 */;
-import ME from "ME" /* 676 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 673 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -37,16 +37,16 @@ let result = require("set").fileFinishedImporting("modules/stickers/native/Stick
 export default function _default() {
   const tmp = callback4();
   const _require = tmp;
-  let obj = _require(10379);
+  let obj = _require(10401);
   const fetchStickerPacks = obj.useFetchStickerPacks();
-  analyticsLocations = analyticsLocations(5953)(analyticsLocations(5973).EMPTY_STATE).analyticsLocations;
-  obj1 = _require(589);
+  analyticsLocations = analyticsLocations(5961)(analyticsLocations(5981).EMPTY_STATE).analyticsLocations;
+  obj1 = _require(586);
   const items = [closure_6];
   const stateFromStoresArray = obj1.useStateFromStoresArray(items, () => {
     const mapped = closure_7.map((arg0) => stickerById.getStickerById(arg0));
     return mapped.filter((arg0) => null != arg0);
   });
-  const tmp3 = analyticsLocations(5953);
+  const tmp3 = analyticsLocations(5961);
   [dependencyMap, closure_3] = callback(React.useState(null), 2);
   const items1 = [analyticsLocations];
   const effect = React.useEffect(() => {
@@ -57,12 +57,12 @@ export default function _default() {
   }, items1);
   obj = { children: null };
   obj = { style: tmp.header, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
-  const intl = _require(1236).intl;
-  obj[4] = intl.string(_require(1236).t.HEm04J);
+  const intl = _require(1233).intl;
+  obj[4] = intl.string(_require(1233).t.HEm04J);
   const items2 = [callback2(_require(4474).Text, obj), , , ];
   obj1 = { style: tmp.blurb, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = _require(1236).intl;
-  obj1[3] = intl2.string(_require(1236).t.FnNud4);
+  const intl2 = _require(1233).intl;
+  obj1[3] = intl2.string(_require(1233).t.FnNud4);
   items2[1] = callback2(_require(4474).Text, obj1);
   const tmp4 = callback(React.useState(null), 2);
   items2[2] = callback2(View, {
@@ -112,11 +112,11 @@ export default function _default() {
       return closure_1_11(lib(closure_1_2[17]).PressableOpacity, obj, id);
     })
   };
-  obj5[0] = analyticsLocations(8215);
+  obj5[0] = analyticsLocations(8224);
   obj5[1] = tmp.nitroWheel;
-  obj4[0] = callback2(analyticsLocations(5493), obj5);
-  const intl3 = _require(1236).intl;
-  obj4[1] = intl3.string(_require(1236).t.pj0XBN);
+  obj4[0] = callback2(analyticsLocations(5501), obj5);
+  const intl3 = _require(1233).intl;
+  obj4[1] = intl3.string(_require(1233).t.pj0XBN);
   obj4[4] = function onPress() {
     return analyticsLocations(table[23])({ section: constants.EXPRESSION_PICKER });
   };

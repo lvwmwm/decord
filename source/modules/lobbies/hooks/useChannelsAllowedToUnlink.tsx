@@ -1,13 +1,13 @@
-// Module ID: 17108
-// Function ID: 17109
+// Module ID: 17344
+// Function ID: 17345
 // Name: getChannelsAllowedToUnlink
-// Dependencies: [1982, 4121, 10670, 589, 2]
+// Dependencies: [1981, 4120, 10891, 586, 2]
 // Exports: getChannelsAllowedToUnlink, useChannelsAllowedToUnlink
 
-// Module 17108 (getChannelsAllowedToUnlink)
-import closure_2 from "comparator" /* 1982 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator" /* 1982 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4121 */;
+// Module 17344 (getChannelsAllowedToUnlink)
+import closure_2 from "comparator" /* 1981 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_3 } from "comparator" /* 1981 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/lobbies/hooks/useChannelsAllowedToUnlink.tsx");
@@ -34,7 +34,7 @@ export const getChannelsAllowedToUnlink = function getChannelsAllowedToUnlink(ar
 export const useChannelsAllowedToUnlink = function useChannelsAllowedToUnlink(id) {
   const _require = id;
   let items = [closure_4, closure_2];
-  return _require(589).useStateFromStoresArray(items, () => {
+  return _require(586).useStateFromStoresArray(items, () => {
     if (closure_1_2 !== undefined) {
       if (tmp2 !== undefined) {
         closure_0 = tmp2;

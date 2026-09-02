@@ -1,11 +1,11 @@
 // Module ID: 4930
 // Function ID: 4931
 // Name: IconSizes
-// Dependencies: [19, 17, 21, 4478, 712, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 2]
 // Exports: getIconSize, getIconStyle
 
 // Module 4930 (IconSizes)
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

@@ -1,15 +1,15 @@
-// Module ID: 13021
-// Function ID: 13022
+// Module ID: 13243
+// Function ID: 13244
 // Name: useBuyNitroPerks
-// Dependencies: [19, 7177, 1924, 689, 7141, 1236, 8228, 13022, 8226, 13023, 13024, 9250, 8236, 13026, 8234, 13027, 8232, 13028, 8230, 13029, 8096, 10197, 13030, 12092, 13031, 13032, 10193, 13034, 5020, 13035, 13036, 13038, 13039, 13041, 13042, 8843, 13044, 10420, 2]
+// Dependencies: [19, 7186, 1923, 686, 7150, 1233, 8237, 13244, 8235, 13245, 13246, 5059, 8245, 13248, 8243, 13249, 8241, 13250, 8239, 13251, 8104, 10219, 13252, 12316, 13253, 13254, 10215, 13256, 5024, 13257, 13258, 13260, 13261, 13263, 13264, 8858, 13266, 10641, 2]
 // Exports: default
 
-// Module 13021 (useBuyNitroPerks)
-import calculateFractionalPremiumInfoDefault from "calculateFractionalPremiumInfo" /* 7141 */;
+// Module 13243 (useBuyNitroPerks)
+import calculateFractionalPremiumInfoDefault from "calculateFractionalPremiumInfo" /* 7150 */;
 import closure_3 from "noop" /* 19 */;
-import { Gradients } from "items" /* 7177 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
-import importDefaultResult from "n" /* 689 */;
+import { Gradients } from "items" /* 7186 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
+import importDefaultResult from "n" /* 686 */;
 
 const require = arg1;
 ({ FractionalPremiumStates: c4, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: c5, PremiumTypes: closure_6 } = GuildFeatures);

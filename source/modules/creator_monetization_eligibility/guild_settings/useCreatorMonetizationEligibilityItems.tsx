@@ -1,13 +1,13 @@
-// Module ID: 17271
-// Function ID: 17272
+// Module ID: 17507
+// Function ID: 17508
 // Name: useCreatorMonetizationEligibilityItems
-// Dependencies: [5, 19, 676, 17272, 17273, 1236, 1995, 4184, 17274, 2]
+// Dependencies: [5, 19, 673, 17508, 17509, 1233, 1994, 4184, 17510, 2]
 // Exports: default
 
-// Module 17271 (useCreatorMonetizationEligibilityItems)
+// Module 17507 (useCreatorMonetizationEligibilityItems)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/creator_monetization_eligibility/guild_settings/useCreatorMonetizationEligibilityItems.tsx");
@@ -145,7 +145,7 @@ export default function useCreatorMonetizationEligibilityItems(arg0) {
       if (!noRecentViolations) {
         fn = () => {
           const tmp = callback(4184);
-          return tmp(callback(1995).getSubmitRequestURL());
+          return tmp(callback(1994).getSubmitRequestURL());
         };
       }
       obj[6] = fn;

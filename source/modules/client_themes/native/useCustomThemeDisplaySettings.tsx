@@ -1,14 +1,14 @@
 // Module ID: 4412
 // Function ID: 4413
 // Name: useCustomThemeDisplaySettings
-// Dependencies: [32, 1346, 589, 1347, 2]
+// Dependencies: [32, 1345, 586, 1346, 2]
 // Exports: useCustomThemeDisplaySettings
 
 // Module 4412 (useCustomThemeDisplaySettings)
-import initialize from "initialize" /* 589 */;
-import getThemeForColor from "getThemeForColor" /* 1347 */;
+import initialize from "initialize" /* 586 */;
+import getThemeForColor from "getThemeForColor" /* 1346 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "reset" /* 1346 */;
+import closure_3 from "reset" /* 1345 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/client_themes/native/useCustomThemeDisplaySettings.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 6079
-// Function ID: 6080
+// Module ID: 6087
+// Function ID: 6088
 // Name: resetStoreState
-// Dependencies: [1996, 589, 1471, 709, 2]
+// Dependencies: [1995, 586, 1470, 706, 2]
 
-// Module 6079 (resetStoreState)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import closure_2 from "_getSystemLocale" /* 1996 */;
+// Module 6087 (resetStoreState)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import closure_2 from "_getSystemLocale" /* 1995 */;
 
 require = arg1;
 function resetStoreState() {

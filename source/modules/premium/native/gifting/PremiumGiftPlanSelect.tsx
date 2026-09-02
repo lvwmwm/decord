@@ -1,18 +1,18 @@
-// Module ID: 10474
-// Function ID: 10475
+// Module ID: 10695
+// Function ID: 10696
 // Name: items
-// Dependencies: [32, 19, 17, 8560, 10475, 1924, 676, 21, 4478, 712, 689, 1499, 1628, 1493, 10477, 4915, 5501, 589, 10518, 10516, 8557, 10455, 10520, 10523, 7644, 4217, 1297, 4479, 10531, 5973, 10532, 10566, 9530, 1236, 5551, 5493, 10786, 4940, 5492, 4474, 2]
+// Dependencies: [32, 19, 17, 8573, 10696, 1923, 673, 21, 4478, 709, 686, 1498, 1627, 1492, 10698, 4915, 5509, 586, 10739, 10737, 8570, 10676, 10741, 10744, 7653, 4217, 1296, 4479, 10752, 5981, 10753, 10787, 9543, 1233, 5559, 5501, 11006, 4940, 5500, 4474, 2]
 // Exports: default
 
-// Module 10474 (items)
-import nDefault from "n" /* 689 */;
-import ThemesDefault from "Themes" /* 712 */;
+// Module 10695 (items)
+import nDefault from "n" /* 686 */;
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "initialize" /* 8560 */;
-import closure_10 from "createEmptyPromotionsByType" /* 10475 */;
-import { VerticalGradient } from "ME" /* 676 */;
+import closure_9 from "initialize" /* 8573 */;
+import closure_10 from "createEmptyPromotionsByType" /* 10696 */;
+import { VerticalGradient } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -40,12 +40,12 @@ let closure_17 = createCacheKey.createStyles((width) => {
   const space = ThemesDefault.space;
   const alphaResult = obj5.alpha(0.8);
   obj[7] = { textAlign: "center", marginTop: arg2 ? space.PX_16 : space.PX_12, marginHorizontal: ThemesDefault.space.PX_24 };
-  const space2 = tmp(712).space;
+  const space2 = tmp(709).space;
   const obj3 = { textAlign: "center", marginTop: arg2 ? space.PX_16 : space.PX_12, marginHorizontal: ThemesDefault.space.PX_24 };
   obj[8] = { textAlign: "center", marginTop: arg2 ? space2.PX_16 : space2.PX_12, marginHorizontal: ThemesDefault.space.PX_24 };
-  const space3 = tmp(712).space;
+  const space3 = tmp(709).space;
   obj[9] = { marginTop: arg2 ? space3.PX_16 : space3.PX_32 };
-  obj5 = { paddingTop: tmp(712).space.PX_16, paddingBottom: tmp(712).space.PX_48 };
+  obj5 = { paddingTop: tmp(709).space.PX_16, paddingBottom: tmp(709).space.PX_48 };
   obj[10] = obj5;
   obj[11] = { flex: 1, alignItems: "center", justifyContent: "center" };
   obj[12] = { position: "absolute", top: 0, left: 0, zIndex: 1 };
@@ -536,7 +536,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
         const tmp4Result3 = tmp4(tmp2[30]);
       }
     } else {
-      const obj34 = { style: null, guildId: "r", size: "PX_16", user: null };
+      const obj34 = { style: null, guildId: "r", size: "getChannelIcon", user: "landscape" };
       obj34[0] = tmp13.avatar;
       const AvatarSizes = tmp(tmp2[26]).AvatarSizes;
       obj34[2] = tmp65Result ? AvatarSizes.LARGE_48 : AvatarSizes.XLARGE;

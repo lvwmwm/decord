@@ -1,12 +1,12 @@
-// Module ID: 10205
-// Function ID: 10206
+// Module ID: 10227
+// Function ID: 10228
 // Name: CHANNEL_LIST_STYLES_COMPACT
-// Dependencies: [712, 1297, 6004, 5963, 10204, 2]
+// Dependencies: [709, 1296, 6012, 5971, 10226, 2]
 // Exports: getCompactStyles
 
-// Module 10205 (CHANNEL_LIST_STYLES_COMPACT)
-import ThemesDefault from "Themes" /* 712 */;
-import mergeDefault from "merge" /* 10204 */;
+// Module 10227 (CHANNEL_LIST_STYLES_COMPACT)
+import ThemesDefault from "Themes" /* 709 */;
+import mergeDefault from "merge" /* 10226 */;
 
 let obj = { layout: { margin: { marginLeft: 4, marginRight: 4, marginVertical: 0 }, marginPanels: { marginLeft: 8, marginRight: 8, marginVertical: 0 }, marginThread: { marginLeft: 56, marginRight: 4, marginVertical: 0 } }, container: null, voiceUsers: null, voiceOrStageSummaryRow: null, channelName: null, messagePreview: null, timestamp: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, category: null, typing: null, activeThreadCount: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, separator: null, searchButton: null };
 obj = { borderRadius: ThemesDefault.radii.md, padding: { paddingVertical: 4, paddingLeft: 20, paddingRight: 12 }, paddingPanels: { paddingVertical: 4, paddingLeft: 8, paddingRight: 8 }, paddingThread: { paddingVertical: 4, paddingLeft: 8, paddingRight: 12 } };

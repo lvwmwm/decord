@@ -1,9 +1,9 @@
-// Module ID: 11534
-// Function ID: 11535
+// Module ID: 11757
+// Function ID: 11758
 // Name: VoiceMessageAnimationState
 // Dependencies: [2]
 
-// Module 11534 (VoiceMessageAnimationState)
+// Module 11757 (VoiceMessageAnimationState)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/voice_messages/VoiceMessageConstants.tsx");

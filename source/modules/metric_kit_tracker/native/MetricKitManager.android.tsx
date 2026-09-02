@@ -1,10 +1,10 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17239
+// Function ID: 17240
 // Name: _initialize
-// Dependencies: [5486, 2]
+// Dependencies: [5494, 2]
 
-// Module 17003 (_initialize)
-import initializeDefault from "initialize" /* 5486 */;
+// Module 17239 (_initialize)
+import initializeDefault from "initialize" /* 5494 */;
 
 initializeDefault;
 class MetricKitManager extends tmp2 {

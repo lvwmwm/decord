@@ -1,12 +1,12 @@
-// Module ID: 7775
-// Function ID: 7776
+// Module ID: 7784
+// Function ID: 7785
 // Name: useScaledRowHeight
-// Dependencies: [4935, 4197, 712, 2]
+// Dependencies: [4935, 4197, 709, 2]
 // Exports: default, useScaledRowHeightData
 
-// Module 7775 (useScaledRowHeight)
+// Module 7784 (useScaledRowHeight)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
 import getFontScale from "getFontScale" /* 4935 */;
 

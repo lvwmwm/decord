@@ -1,26 +1,26 @@
-// Module ID: 11643
-// Function ID: 11644
+// Module ID: 11866
+// Function ID: 11867
 // Name: _getEmbedApplication
-// Dependencies: [5, 4477, 1996, 706, 5955, 11644, 11645, 11640, 11646, 11647, 676, 709, 584, 530, 11641, 500, 11648, 11649, 11650, 2]
+// Dependencies: [5, 4477, 1995, 703, 5963, 11867, 11868, 11863, 11869, 11870, 673, 706, 581, 527, 11864, 1234, 11871, 11872, 11873, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11643 (_getEmbedApplication)
-import refreshSourceMapCookieDefault from "refreshSourceMapCookie" /* 706 */;
+// Module 11866 (_getEmbedApplication)
+import refreshSourceMapCookieDefault from "refreshSourceMapCookie" /* 703 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "getUserAgnosticState" /* 4477 */;
-import closure_5 from "_getSystemLocale" /* 1996 */;
-import closure_6 from "set" /* 5955 */;
-import { FetchState } from "set" /* 5955 */;
-import closure_8 from "getLastFetchTimeMs" /* 11644 */;
-import closure_9 from "getLastFetchTimeMs" /* 11645 */;
-import { FetchState } from "getLastFetchTimeMs" /* 11645 */;
-import closure_11 from "getSearchResults" /* 11640 */;
-import { FetchState } from "getSearchResults" /* 11640 */;
-import closure_13 from "getSimilarApplications" /* 11646 */;
-import { FetchState } from "getSimilarApplications" /* 11646 */;
-import closure_15 from "addToApplicationIdToGuildIds" /* 11647 */;
-import { FetchState } from "addToApplicationIdToGuildIds" /* 11647 */;
-import { Endpoints } from "ME" /* 676 */;
+import closure_5 from "_getSystemLocale" /* 1995 */;
+import closure_6 from "set" /* 5963 */;
+import { FetchState } from "set" /* 5963 */;
+import closure_8 from "getLastFetchTimeMs" /* 11867 */;
+import closure_9 from "getLastFetchTimeMs" /* 11868 */;
+import { FetchState } from "getLastFetchTimeMs" /* 11868 */;
+import closure_11 from "getSearchResults" /* 11863 */;
+import { FetchState } from "getSearchResults" /* 11863 */;
+import closure_13 from "getSimilarApplications" /* 11869 */;
+import { FetchState } from "getSimilarApplications" /* 11869 */;
+import closure_15 from "addToApplicationIdToGuildIds" /* 11870 */;
+import { FetchState } from "addToApplicationIdToGuildIds" /* 11870 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _getEmbedApplication() {
@@ -207,7 +207,7 @@ function _getApplication() {
               closure_7 = undefined;
               closure_7 = 1;
               c8 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -234,12 +234,12 @@ function _getApplication() {
                     }
                     const tmp22 = applicationLastFetchTime;
                   }
-                  let obj5 = obj1(709);
+                  let obj5 = obj1(706);
                   let obj3 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION", applicationId: null };
                   obj3[1] = callback;
                   obj5.dispatch(obj3);
                   store = 1;
-                  const HTTP = callback(530).HTTP;
+                  const HTTP = callback(527).HTTP;
                   const obj4 = { url: null, query: null, rejectWithError: true };
                   obj4[0] = closure_17.APPLICATION_DIRECTORY_APPLICATION(callback);
                   obj5 = { locale: null, nocache: null };
@@ -256,7 +256,7 @@ function _getApplication() {
             } else {
               if (2 === tmp7) {
                 store = 0;
-                obj3 = obj1(709);
+                obj3 = obj1(706);
                 const obj7 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_FAILURE", applicationId: null, isInvalidApplication: true };
                 obj7[1] = callback;
                 obj3.dispatch(obj7);
@@ -265,7 +265,7 @@ function _getApplication() {
                 throw arg1;
               } else if (arg0 !== 2) {
                 closure_7 = arg1;
-                obj = obj1(709);
+                obj = obj1(706);
                 const obj8 = { type: "APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS", application: null };
                 obj8[1] = closure_7.body;
                 obj.dispatch(obj8);
@@ -342,13 +342,13 @@ function _getCategories() {
                 c3 = 3;
               }
             }
-            const HTTP = closure_1_0(530).HTTP;
+            const HTTP = closure_1_0(527).HTTP;
             obj1 = { url: null, query: null, rejectWithError: null };
             obj1[0] = closure_1_17.APPLICATION_DIRECTORY_CATEGORIES;
             const obj2 = { locale: null };
             obj2[0] = closure_1_5.locale;
             obj1[1] = obj2;
-            let obj5 = closure_1_0(530);
+            let obj5 = closure_1_0(527);
             obj1[2] = obj5.rejectWithMigratedError();
             dependencyMap = 1;
             c3 = 1;
@@ -361,7 +361,7 @@ function _getCategories() {
           throw arg1;
         } else if (arg0 !== 2) {
           body = arg1;
-          obj = callback(709);
+          obj = callback(706);
           const obj4 = { type: "APPLICATION_DIRECTORY_FETCH_CATEGORIES_SUCCESS", categories: null };
           obj4[1] = body.body;
           obj.dispatch(obj4);
@@ -432,7 +432,7 @@ function _getSimilarApplications() {
               closure_7 = undefined;
               closure_7 = 1;
               c8 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -609,7 +609,7 @@ function _search() {
                 closure_18 = undefined;
                 categoryId = 1;
                 integrationType = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp7) {
@@ -873,7 +873,7 @@ function _fetchCollections() {
               let body;
               locale = 1;
               c6 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -900,35 +900,35 @@ function _fetchCollections() {
                 if (fetchState !== constants.FETCHING) {
                   let tmp29 = !dependencyMap;
                   if (!dependencyMap) {
-                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11650).ApplicationCollectionActiveState.ACTIVE;
+                    tmp29 = ACTIVE === APPLICATION_DIRECTORY(11873).ApplicationCollectionActiveState.ACTIVE;
                   }
                   c6 = tmp29;
-                  let obj5 = ACTIVE(709);
+                  let obj5 = ACTIVE(706);
                   obj5 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS", surface: null, activeState: null };
                   obj5[1] = APPLICATION_DIRECTORY;
                   obj5[2] = ACTIVE;
                   obj5.dispatch(obj5);
                   fetchState = 1;
-                  const HTTP = APPLICATION_DIRECTORY(530).HTTP;
+                  const HTTP = APPLICATION_DIRECTORY(527).HTTP;
                   let get = HTTP.get;
                   const obj6 = { url: null, query: null, rejectWithError: true };
                   obj6[0] = constants2.APPLICATION_DIRECTORY_COLLECTIONS;
                   const obj7 = { surface: null, active_state: null, platform: null, locale: null, cache: null };
                   obj7[0] = APPLICATION_DIRECTORY;
                   obj7[1] = ACTIVE;
-                  let obj9 = APPLICATION_DIRECTORY(500);
+                  let obj9 = APPLICATION_DIRECTORY(1234);
                   locale = APPLICATION_DIRECTORY;
                   if (obj9.isAndroid()) {
-                    let WEB = locale(11648).ApplicationCollectionPlatforms.ANDROID;
+                    let WEB = locale(11871).ApplicationCollectionPlatforms.ANDROID;
                   } else {
-                    const localeResult = locale(500);
-                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11648).ApplicationCollectionPlatforms;
+                    const localeResult = locale(1234);
+                    const ApplicationCollectionPlatforms = APPLICATION_DIRECTORY(11871).ApplicationCollectionPlatforms;
                     if (isIOSResult) {
                       WEB = ApplicationCollectionPlatforms.IOS;
                     } else {
                       WEB = ApplicationCollectionPlatforms.WEB;
                     }
-                    isIOSResult = locale(500).isIOS();
+                    isIOSResult = locale(1234).isIOS();
                   }
                   obj7[2] = WEB;
                   locale = locale.locale;
@@ -943,7 +943,7 @@ function _fetchCollections() {
             } else {
               if (2 === tmp7) {
                 fetchState = 0;
-                obj3 = ACTIVE(709);
+                obj3 = ACTIVE(706);
                 const obj8 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_FAILURE", surface: null, activeState: null };
                 obj8[1] = APPLICATION_DIRECTORY;
                 obj8[2] = ACTIVE;
@@ -953,7 +953,7 @@ function _fetchCollections() {
                 throw arg1;
               } else if (arg0 !== 2) {
                 body = arg1;
-                obj = ACTIVE(709);
+                obj = ACTIVE(706);
                 obj9 = { type: "APPLICATION_DIRECTORY_FETCH_COLLECTIONS_SUCCESS", collections: null, surface: null, activeState: null };
                 obj9[1] = body.body;
                 obj9[2] = APPLICATION_DIRECTORY;

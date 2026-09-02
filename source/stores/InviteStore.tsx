@@ -1,13 +1,13 @@
 // Module ID: 4462
 // Function ID: 4463
 // Name: updateInvite
-// Dependencies: [676, 4463, 589, 709, 2]
+// Dependencies: [673, 4463, 586, 706, 2]
 
 // Module 4462 (updateInvite)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import ME from "ME" /* 676 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import readSnowflake from "readSnowflake" /* 4463 */;
 
 function updateInvite(code, arg1) {

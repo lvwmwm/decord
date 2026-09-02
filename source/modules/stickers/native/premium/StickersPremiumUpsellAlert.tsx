@@ -1,23 +1,23 @@
-// Module ID: 10400
-// Function ID: 10401
+// Module ID: 10422
+// Function ID: 10423
 // Name: PerkRow
-// Dependencies: [19, 17, 6084, 676, 1924, 21, 10401, 1236, 712, 10402, 10403, 4478, 1297, 4474, 709, 7164, 8219, 1493, 5953, 4947, 698, 8393, 5068, 7764, 10404, 2]
+// Dependencies: [19, 17, 6092, 673, 1923, 21, 10423, 1233, 709, 10424, 10425, 4478, 1296, 4474, 706, 7173, 8228, 1492, 5961, 4947, 695, 8402, 5076, 7773, 10426, 2]
 // Exports: default
 
-// Module 10400 (PerkRow)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+// Module 10422 (PerkRow)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import registerAssetDefault from "registerAsset" /* 10401 */;
-import registerAssetDefault2 from "registerAsset" /* 10402 */;
-import registerAssetDefault3 from "registerAsset" /* 10403 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import registerAssetDefault from "registerAsset" /* 10423 */;
+import registerAssetDefault2 from "registerAsset" /* 10424 */;
+import registerAssetDefault3 from "registerAsset" /* 10425 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "updateProduct" /* 6084 */;
-import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import closure_7 from "updateProduct" /* 6092 */;
+import ME from "ME" /* 673 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -90,12 +90,12 @@ export default function StickersPremiumUpsellAlert(arg0) {
       const obj = analyticsLocations(table[14]);
     }
   }, []);
-  const tmp5 = analyticsLocations(8219)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(8228)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
-  analyticsLocations = tmp3(5953)().analyticsLocations;
+  analyticsLocations = tmp3(5961)().analyticsLocations;
   let obj = { cancelText: null, confirmColor: null, confirmText: null, onConfirm: null, onClose: null, onCancel: null, style: null, children: null };
   const intl = getSystemLocale.intl;
   obj[0] = intl.string(getSystemLocale.t.f3Pet9);
@@ -117,7 +117,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
   obj[5] = onClose;
   items = [tmp.alert, ];
   let shortHeightAlert = null;
-  if (analyticsLocations(1493)().height <= 580) {
+  if (analyticsLocations(1492)().height <= 580) {
     shortHeightAlert = tmp.shortHeightAlert;
   }
   items[1] = shortHeightAlert;
@@ -125,7 +125,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
   obj = { style: tmp.closeContainer, children: null };
   obj = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: null };
   const tmp3Result = analyticsLocations(4947);
-  obj[3] = callback(Button.Icon, { source: analyticsLocations(7764) });
+  obj[3] = callback(Button.Icon, { source: analyticsLocations(7773) });
   obj[1] = callback(PressableBase.PressableOpacity, obj);
   const items1 = [callback(closure_4, obj), ];
   const obj2 = {
@@ -135,17 +135,17 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: null
   };
-  obj1 = { source: analyticsLocations(7764) };
-  const items2 = [callback(closure_5, { source: analyticsLocations(10404), style: tmp.imageHeader }), , ];
+  obj1 = { source: analyticsLocations(7773) };
+  const items2 = [callback(closure_5, { source: analyticsLocations(10426), style: tmp.imageHeader }), , ];
   const obj4 = { style: tmp.description, variant: "text-md/medium", children: null };
-  const intl3 = tmp9(1236).intl;
+  const intl3 = tmp9(1233).intl;
   if (priceString == null) {
     priceString = closure_13;
   }
   const obj5 = { children: null };
   obj4[2] = intl3.format(getSystemLocale.t.TBsJfQ, { monthlyPrice: priceString });
   items2[1] = callback(Text.Text, obj4);
-  const obj3 = { source: analyticsLocations(10404), style: tmp.imageHeader };
+  const obj3 = { source: analyticsLocations(10426), style: tmp.imageHeader };
   const tmp13 = closure_6;
   items2[2] = callback(closure_4, { style: tmp.perks, children: items.map((perk) => callback(closure_18, { perk, isLastPerk: arg1 === length.length - 1 }, arg1)) });
   obj2[2] = items2;

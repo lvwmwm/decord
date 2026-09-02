@@ -1,9 +1,9 @@
-// Module ID: 12115
-// Function ID: 12116
+// Module ID: 12339
+// Function ID: 12340
 // Name: metadata
 // Dependencies: [2]
 
-// Module 12115 (metadata)
+// Module 12339 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/powerups/badge-packs/group-animated.png.js");

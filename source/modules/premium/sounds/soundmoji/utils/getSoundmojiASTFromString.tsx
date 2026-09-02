@@ -1,17 +1,17 @@
 // Module ID: 4964
 // Function ID: 4965
 // Name: getSoundmojiASTFromString
-// Dependencies: [4965, 4735, 676, 4970, 4971, 4972, 4974, 1431, 2]
+// Dependencies: [4965, 4735, 673, 4970, 4971, 4972, 4974, 1430, 2]
 // Exports: default, getSoundmojiFromMessage
 
 // Module 4964 (getSoundmojiASTFromString)
-import getAvatarURL from "getAvatarURL" /* 1431 */;
+import getAvatarURL from "getAvatarURL" /* 1430 */;
 import getSoundmojiRenderingExperiment from "getSoundmojiRenderingExperiment" /* 4970 */;
 import isSoundValidDefault from "isSoundValid" /* 4971 */;
 import getSoundStringDefault from "getSoundString" /* 4974 */;
 import closure_3 from "handleSoundCreateOrUpdate" /* 4965 */;
 import closure_4 from "reinjectEphemerals" /* 4735 */;
-import { MessageStates } from "ME" /* 676 */;
+import { MessageStates } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundmojiASTFromString.tsx");

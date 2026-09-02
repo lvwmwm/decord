@@ -1,14 +1,14 @@
-// Module ID: 10131
-// Function ID: 10132
+// Module ID: 10153
+// Function ID: 10154
 // Name: getParticipantTitle
-// Dependencies: [4499, 10132, 4673, 1236, 2]
+// Dependencies: [4499, 10154, 4673, 1233, 2]
 // Exports: default
 
-// Module 10131 (getParticipantTitle)
+// Module 10153 (getParticipantTitle)
 import set from "set" /* 2 */;
 import ParticipantTypes2 from "ParticipantTypes" /* 4499 */;
 import getNicknameDefault from "getNickname" /* 4673 */;
-import useIsGuestOrLurker from "useIsGuestOrLurker" /* 10132 */;
+import useIsGuestOrLurker from "useIsGuestOrLurker" /* 10154 */;
 
 const ParticipantTypes = ParticipantTypes2.ParticipantTypes;
 let result = set.fileFinishedImporting("modules/video_calls/getParticipantTitle.tsx");
@@ -34,9 +34,9 @@ export default function getParticipantTitle(guild_id, type, name) {
     let str = "";
     const name1 = getNicknameDefault.getName(guild_id.getGuildId(), guild_id.id, type.user);
     if (result) {
-      const intl = tmp10(1236).intl;
+      const intl = tmp10(1233).intl;
       const _HermesInternal = HermesInternal;
-      str = " " + intl.string(tmp10(1236).t["pFO/Ph"]);
+      str = " " + intl.string(tmp10(1233).t["pFO/Ph"]);
     }
     return name1 + str;
   }

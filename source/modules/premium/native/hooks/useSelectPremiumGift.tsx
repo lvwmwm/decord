@@ -1,10 +1,10 @@
-// Module ID: 10518
-// Function ID: 10519
+// Module ID: 10739
+// Function ID: 10740
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 1499, 10477, 10519, 4139, 6087, 4858, 1236, 10455, 2]
+// Dependencies: [5, 19, 1498, 10698, 10740, 4139, 6095, 4858, 1233, 10676, 2]
 // Exports: useSelectPremiumGift
 
-// Module 10518 (useSelectPremiumGift)
+// Module 10739 (useSelectPremiumGift)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 

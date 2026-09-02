@@ -1,16 +1,16 @@
-// Module ID: 11395
-// Function ID: 11396
+// Module ID: 11618
+// Function ID: 11619
 // Name: SelectionHeader
-// Dependencies: [19, 17, 1387, 1981, 5623, 21, 4478, 712, 5621, 1236, 4928, 9716, 4205, 5599, 7684, 8934, 5594, 1351, 1628, 1493, 5492, 589, 4445, 5622, 5624, 2]
+// Dependencies: [19, 17, 1386, 1980, 5631, 21, 4478, 709, 5629, 1233, 4928, 9738, 4205, 5607, 7693, 8948, 5602, 1350, 1627, 1492, 5500, 586, 4445, 5630, 5632, 2]
 // Exports: default
 
-// Module 11395 (SelectionHeader)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11618 (SelectionHeader)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "handleConnectionOpen" /* 1981 */;
-import { ACTION_SHEET_START_HEIGHT_RATIO as closure_7 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5623 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import { ACTION_SHEET_START_HEIGHT_RATIO as closure_7 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5631 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -50,17 +50,17 @@ function SelectionHeader(renderIcon) {
     label = selectionActionComponent.placeholder;
   }
   if (label == null) {
-    const intl = tmp6(1236).intl;
-    label = intl.string(tmp6(1236).t.Otr6W2);
+    const intl = tmp6(1233).intl;
+    label = intl.string(tmp6(1233).t.Otr6W2);
   }
   let obj = { title: label, subtitle: null, trailing: null };
   let formatToPlainStringResult;
   if (selectionActionComponent.maxValues > 1) {
     if (selectionActionComponent.minValues > 0) {
-      const intl2 = tmp6(1236).intl;
+      const intl2 = tmp6(1233).intl;
       obj = { count: null };
       obj[0] = selectionActionComponent.minValues;
-      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1236).t.Jmwzdx, obj);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1233).t.Jmwzdx, obj);
     }
   }
   obj[1] = formatToPlainStringResult;
@@ -74,12 +74,12 @@ function SelectionHeader(renderIcon) {
     obj[1] = str;
     obj[2] = selectButtonDisabled;
     obj[3] = renderIcon.submitSelection;
-    const intl3 = tmp6(1236).intl;
-    obj[4] = intl3.string(tmp6(1236).t.XqMe3N);
+    const intl3 = tmp6(1233).intl;
+    obj[4] = intl3.string(tmp6(1233).t.XqMe3N);
     tmp5Result = tmp5(tmp6(4928).Button, obj);
   }
   obj[2] = tmp5Result;
-  const children = [closure_8(renderIcon(5621).BottomSheetTitleHeader, obj), ];
+  const children = [closure_8(renderIcon(5629).BottomSheetTitleHeader, obj), ];
   let tmp5Result1 = null;
   if (null != onQueryChange) {
     tmp5Result1 = null;
@@ -114,8 +114,8 @@ function SelectionHeader(renderIcon) {
         }
         onQueryChange(arg0);
       };
-      tmp5Result1 = tmp5(selectedOptions(9716), obj1);
-      const tmp13 = selectedOptions(9716);
+      tmp5Result1 = tmp5(selectedOptions(9738), obj1);
+      const tmp13 = selectedOptions(9738);
     }
   }
   children[1] = tmp5Result1;
@@ -180,17 +180,17 @@ function SelectionOptionItem(item) {
     }
     const obj2 = { checked: null };
     obj2[0] = selected;
-    tmp6Result = tmp6(tmp2(7684).FormCheckbox, obj2);
+    tmp6Result = tmp6(tmp2(7693).FormCheckbox, obj2);
   } else {
     tmp6Result = null;
     if (true === selected) {
-      tmp6Result = tmp6(tmp2(8934).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp6Result = tmp6(tmp2(8948).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp6Result;
   obj1[1] = items1;
   obj[12] = closure_10(View, obj1);
-  return closure_8(item(5599).TableRow, obj);
+  return closure_8(item(5607).TableRow, obj);
 }
 ({ jsx: closure_8, Fragment: c9, jsxs: c10 } = jsxProd);
 createCacheKey = { selectionOptionItemIconWrapper: null, tagListIconWrapper: null, tagListIcon: null, textInputWrapper: null };

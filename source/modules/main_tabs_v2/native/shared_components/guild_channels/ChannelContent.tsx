@@ -1,20 +1,20 @@
-// Module ID: 16244
-// Function ID: 16245
+// Module ID: 16476
+// Function ID: 16477
 // Name: ChannelContentComponent
-// Dependencies: [19, 17, 10201, 4702, 21, 4478, 500, 10202, 5012, 16245, 5044, 8736, 15707, 4474, 2]
+// Dependencies: [19, 17, 10223, 4702, 21, 4478, 1234, 10224, 5015, 16477, 5048, 8751, 15938, 4474, 2]
 // Exports: renderChannelContent
 
-// Module 16244 (ChannelContentComponent)
-import isRoleRequiredDefault from "isRoleRequired" /* 5012 */;
-import getLayoutStyles from "getLayoutStyles" /* 10202 */;
-import SubscriptionGatedChannelIconDefault from "SubscriptionGatedChannelIcon" /* 15707 */;
-import _modDef16245 from "module_16245" /* 16245 */;
+// Module 16476 (ChannelContentComponent)
+import isRoleRequiredDefault from "isRoleRequired" /* 5015 */;
+import getLayoutStyles from "getLayoutStyles" /* 10224 */;
+import SubscriptionGatedChannelIconDefault from "SubscriptionGatedChannelIcon" /* 15938 */;
+import _modDef16477 from "module_16477" /* 16477 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 require = arg1;
 function ChannelContentComponent(arg0) {
@@ -60,7 +60,7 @@ function ChannelContentComponent(arg0) {
   obj3[3] = resolvedUnreadSetting;
   obj3[4] = connected;
   obj3[5] = layout;
-  const items1 = [closure_6(_modDef16245, obj3), ];
+  const items1 = [closure_6(_modDef16477, obj3), ];
   let tmp12Result = tmp10Result;
   if (!tmp10Result) {
     tmp12Result = isNSFWResult;
@@ -82,13 +82,13 @@ function ChannelContentComponent(arg0) {
     if (tmp10Result) {
       const obj6 = { size: "xxs", color: "icon-muted", style: null };
       obj6[2] = tmp.channelTraitIcon;
-      tmp10Result = tmp10(tmp2(5044).LockIcon, obj6);
+      tmp10Result = tmp10(tmp2(5048).LockIcon, obj6);
     }
     const items3 = [tmp10Result, , ];
     if (isNSFWResult) {
       const obj7 = { size: "xxs", color: "icon-muted", style: null };
       obj7[2] = tmp.channelTraitIcon;
-      isNSFWResult = tmp10(tmp2(8736).WarningIcon, obj7);
+      isNSFWResult = tmp10(tmp2(8751).WarningIcon, obj7);
     }
     items3[1] = isNSFWResult;
     if (isSubscriptionGated) {

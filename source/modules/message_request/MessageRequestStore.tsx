@@ -1,11 +1,11 @@
-// Module ID: 6066
-// Function ID: 6067
+// Module ID: 6074
+// Function ID: 6075
 // Name: processChannel
-// Dependencies: [1387, 1220, 2]
+// Dependencies: [1386, 1217, 2]
 
-// Module 6066 (processChannel)
-import clearAllDefault from "clearAll" /* 1220 */;
-import prototype from "ensureGuildLoaded" /* 1387 */;
+// Module 6074 (processChannel)
+import clearAllDefault from "clearAll" /* 1217 */;
+import prototype from "ensureGuildLoaded" /* 1386 */;
 import set from "set" /* 2 */;
 
 function processChannel(isMessageRequest) {

@@ -1,14 +1,14 @@
-// Module ID: 7085
-// Function ID: 7086
+// Module ID: 7094
+// Function ID: 7095
 // Name: SwordAndStoneSpotIllustration
-// Dependencies: [21, 5493, 7086, 2]
+// Dependencies: [21, 5501, 7095, 2]
 // Exports: SwordAndStoneSpotIllustration
 
-// Module 7085 (SwordAndStoneSpotIllustration)
+// Module 7094 (SwordAndStoneSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 7086 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 7095 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SwordAndStoneSpotIllustration.native.tsx");

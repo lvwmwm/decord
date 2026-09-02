@@ -1,10 +1,10 @@
 // Module ID: 4858
 // Function ID: 4859
-// Dependencies: [19, 21, 4445, 709, 4859, 1236, 4863, 4947, 4947, 2009, 2]
+// Dependencies: [19, 21, 4445, 706, 4859, 1233, 4863, 4947, 4947, 2008, 2]
 
 // Module 4858
 import noopAll from "noop" /* 19 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import useAlertStore from "useAlertStore" /* 4859 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -49,8 +49,8 @@ export default {
     }
     ({ isDismissable, confirmText } = hideActionSheet);
     if (confirmText === undefined) {
-      const intl = confirmText(1236).intl;
-      confirmText = intl.string(confirmText(1236).t.BddRzS);
+      const intl = confirmText(1233).intl;
+      confirmText = intl.string(confirmText(1233).t.BddRzS);
     }
     let merged = Object.assign(hideActionSheet, Object.create(null));
     dependencyMap = undefined;
@@ -129,7 +129,7 @@ export default {
         let obj4 = confirmText(4859);
         obj4.dismissAlert(c6);
       }
-      merged(709).dispatch({ type: "ALERT_CLOSE" });
+      merged(706).dispatch({ type: "ALERT_CLOSE" });
       closure_7 = tmp27 + 1;
       const text = `legacy-alert-${tmp27}`;
       dependencyMap = text;
@@ -143,7 +143,7 @@ export default {
       obj[1] = body2;
       obj[2] = children;
       obj = { variant: null, text: null, onPress: null };
-      const obj6 = merged(709);
+      const obj6 = merged(706);
       const tmp29 = confirmText;
       const tmp31 = c5;
       const tmp32 = c4;

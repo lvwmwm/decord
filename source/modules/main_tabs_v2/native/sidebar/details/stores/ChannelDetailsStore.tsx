@@ -1,13 +1,13 @@
-// Module ID: 7620
-// Function ID: 7621
+// Module ID: 7630
+// Function ID: 7631
 // Name: useChannelDetailsStore
-// Dependencies: [644, 705, 2]
+// Dependencies: [641, 702, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
 
-// Module 7620 (useChannelDetailsStore)
+// Module 7630 (useChannelDetailsStore)
 import set from "set" /* 2 */;
-import batchUpdates from "batchUpdates" /* 705 */;
-import keys from "keys" /* 644 */;
+import batchUpdates from "batchUpdates" /* 702 */;
+import keys from "keys" /* 641 */;
 
 let closure_2 = { isSearchActive: false, searchActiveSource: "initial" };
 let obj = keys.create(() => {
@@ -25,7 +25,7 @@ export const deleteChannelStates = function deleteChannelStates() {
 };
 export const useIsChannelDetailsSearchActive = function useIsChannelDetailsSearchActive(arg0) {
   closure_0 = arg0;
-  const f81209 = (isSearchActive) => isSearchActive.isSearchActive;
+  const f82073 = (isSearchActive) => isSearchActive.isSearchActive;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
@@ -34,12 +34,12 @@ export const useIsChannelDetailsSearchActive = function useIsChannelDetailsSearc
       const merged = Object.assign(closure_1_2);
       value = obj;
     }
-    return f81210(value);
+    return f82074(value);
   });
 };
 export const useChannelDetailsSearchActiveSource = function useChannelDetailsSearchActiveSource(arg0) {
   closure_0 = arg0;
-  const f81210 = (searchActiveSource) => searchActiveSource.searchActiveSource;
+  const f82074 = (searchActiveSource) => searchActiveSource.searchActiveSource;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
@@ -48,7 +48,7 @@ export const useChannelDetailsSearchActiveSource = function useChannelDetailsSea
       const merged = Object.assign(closure_1_2);
       value = obj;
     }
-    return f81210(value);
+    return f82074(value);
   });
 };
 export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActiveSource) {
@@ -65,7 +65,7 @@ export const setIsChannelDetailsSearchActive = function setIsChannelDetailsSearc
   const merged2 = Object.assign(obj);
   const map = new Map(states);
   const result = map.set(arg0, obj);
-  map(705).batchUpdates(() => closure_1_3.setState({ states: map }));
+  map(702).batchUpdates(() => closure_1_3.setState({ states: map }));
 };
 export const getIsChannelDetailsSearchActive = function getIsChannelDetailsSearchActive(arg0) {
   const states = obj.getState().states;
@@ -81,6 +81,6 @@ export const deleteChannelDetailsSearchState = function deleteChannelDetailsSear
   const states = obj.getState().states;
   states.delete(arg0);
   const map = new Map(states);
-  obj = map(705);
+  obj = map(702);
   obj.batchUpdates(() => closure_1_3.setState({ states: map }));
 };

@@ -1,12 +1,12 @@
-// Module ID: 13766
-// Function ID: 13767
+// Module ID: 13989
+// Function ID: 13990
 // Name: RoleDot
-// Dependencies: [19, 17, 21, 4478, 712, 500, 4935, 4957, 4940, 1471, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1234, 4935, 4957, 4940, 1470, 2]
 // Exports: RoleDot
 
-// Module 13766 (RoleDot)
+// Module 13989 (RoleDot)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import getFontScale from "getFontScale" /* 4935 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
 import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4957 */;
@@ -86,7 +86,7 @@ export const RoleDot = function RoleDot(background) {
         const obj5 = { colors: null, start: null, end: null, style: null };
         const items5 = [, , ];
         ({ primaryColor: arr7[0], secondaryColor: arr7[1], tertiaryColor: arr7[2] } = colors);
-        obj5[0] = items5.filter(tmp2(1471).isNotNullish);
+        obj5[0] = items5.filter(tmp2(1470).isNotNullish);
         obj5[1] = { x: 0, y: 0 };
         obj5[2] = { x: 1, y: 0 };
         const items6 = [tmp.dot, obj1];

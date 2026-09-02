@@ -1,10 +1,10 @@
-// Module ID: 16607
-// Function ID: 16608
-// Dependencies: [19, 9433, 5223, 21, 4445, 16608, 2009, 589, 9441, 4928, 10114, 1236, 2]
+// Module ID: 16842
+// Function ID: 16843
+// Dependencies: [19, 9446, 5231, 21, 4445, 16843, 2008, 586, 9454, 4928, 10136, 1233, 2]
 
-// Module 16607
-import closure_3 from "updateActivities" /* 9433 */;
-import closure_4 from "filterPlayingActivities" /* 5223 */;
+// Module 16842
+import closure_3 from "updateActivities" /* 9446 */;
+import closure_4 from "filterPlayingActivities" /* 5231 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -12,7 +12,7 @@ const require = arg1;
 const memoResult = importAllResult.memo(function InviteActivityButton(applicationId) {
   applicationId = applicationId.applicationId;
   let stateFromStores;
-  let obj = applicationId(589);
+  let obj = applicationId(586);
   const items = [closure_3, closure_4];
   const items1 = [applicationId];
   stateFromStores = obj.useStateFromStores(items, () => stateFromStores(closure_1_2[8])(closure_1_3, closure_1_4, applicationId), items1);
@@ -24,11 +24,11 @@ const memoResult = importAllResult.memo(function InviteActivityButton(applicatio
       obj = { activity: stateFromStores };
       obj.openLazy(applicationId(closure_1_2[6])(closure_1_2[5], closure_1_2.paths), "ActivityInviteSheet-" + stateFromStores.session_id, obj);
     };
-    obj[1] = stateFromStores(10114);
-    const intl = tmp(1236).intl;
-    obj[2] = intl.string(tmp(1236).t["OzOM/q"]);
-    const intl2 = tmp(1236).intl;
-    obj[3] = intl2.string(tmp(1236).t["OzOM/q"]);
+    obj[1] = stateFromStores(10136);
+    const intl = tmp(1233).intl;
+    obj[2] = intl.string(tmp(1233).t["OzOM/q"]);
+    const intl2 = tmp(1233).intl;
+    obj[3] = intl2.string(tmp(1233).t["OzOM/q"]);
     tmp4 = jsx(tmp(4928).Button, { onPress: null, icon: null, text: null, accessibilityLabel: null, variant: "secondary-overlay", size: "sm", shrink: true, maxFontSizeMultiplier: 1 });
   }
   return tmp4;

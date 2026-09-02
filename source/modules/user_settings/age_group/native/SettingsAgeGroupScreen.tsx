@@ -1,19 +1,19 @@
-// Module ID: 14376
-// Function ID: 14377
+// Module ID: 14599
+// Function ID: 14600
 // Name: SettingsAgeGroupHeader
-// Dependencies: [19, 17, 7884, 676, 21, 4478, 712, 8682, 1995, 4474, 1236, 2919, 11068, 14340, 2]
+// Dependencies: [19, 17, 7893, 673, 21, 4478, 709, 8697, 1994, 4474, 1233, 2918, 11288, 14563, 2]
 // Exports: default
 
-// Module 14376 (SettingsAgeGroupHeader)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2919 */;
+// Module 14599 (SettingsAgeGroupHeader)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2918 */;
 import Text from "Text" /* 4474 */;
-import _modDef14340 from "module_14340" /* 14340 */;
+import _modDef14563 from "module_14563" /* 14563 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7884 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -21,8 +21,8 @@ require = arg1;
 function SettingsAgeGroupHeader() {
   let obj = { style: callback3().headerContainer, children: null };
   const callback = React.useCallback(() => {
-    const obj = callback(8682);
-    obj.openUrl(callback(1995).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+    const obj = callback(8697);
+    obj.openUrl(callback(1994).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
   }, []);
   obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: null };
   const intl = getSystemLocale.intl;
@@ -44,11 +44,11 @@ const result = require("set").fileFinishedImporting("modules/user_settings/age_g
 
 export default function SettingsAgeGroupScreen() {
   const node = React.useMemo(() => {
-    let obj = callback(11068);
+    let obj = callback(11288);
     obj = { sections: null, ListHeaderComponent: null };
     obj = { label: null, settings: null };
-    const intl = callback(1236).intl;
-    obj[0] = intl.string(callback2(2919)["5Mi5TE"]);
+    const intl = callback(1233).intl;
+    obj[0] = intl.string(callback2(2918)["5Mi5TE"]);
     const items = [, ];
     ({ AGE_GROUP_CONFIRM: arr[0], AGE_GROUP_RESET: arr[1] } = closure_5);
     obj[1] = items;
@@ -57,5 +57,5 @@ export default function SettingsAgeGroupScreen() {
     obj[1] = closure_10;
     return obj.createList(obj);
   }, []);
-  return callback(_modDef14340, { node });
+  return callback(_modDef14563, { node });
 };

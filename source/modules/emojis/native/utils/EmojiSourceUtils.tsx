@@ -1,10 +1,10 @@
-// Module ID: 15666
-// Function ID: 15667
+// Module ID: 15897
+// Function ID: 15898
 // Name: _getEmojiSource
-// Dependencies: [5, 17, 4138, 1431, 2]
+// Dependencies: [5, 17, 4138, 1430, 2]
 // Exports: getEmojiSource
 
-// Module 15666 (_getEmojiSource)
+// Module 15897 (_getEmojiSource)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 
@@ -53,7 +53,7 @@ function _getEmojiSource() {
               let ImageManager;
               c6 = 1;
               c7 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

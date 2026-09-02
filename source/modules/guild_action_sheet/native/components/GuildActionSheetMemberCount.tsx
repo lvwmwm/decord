@@ -1,16 +1,16 @@
-// Module ID: 12935
-// Function ID: 12936
-// Dependencies: [19, 17, 21, 4478, 712, 501, 1236, 4474, 2]
+// Module ID: 13157
+// Function ID: 13158
+// Dependencies: [19, 17, 21, 4478, 709, 1235, 1233, 4474, 2]
 
-// Module 12935
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 13157
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
-import PlatformTypes from "PlatformTypes" /* 501 */;
+import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 require = arg1;
 ({ jsx: c3, jsxs: c4 } = jsxProd);
@@ -40,9 +40,9 @@ const memoResult = importAllResult.memo(function MemberCount(arg0) {
   } else {
     const intl = getSystemLocale.intl;
     if ("online" === type) {
-      let etqpUG = tmp(1236).t.PIikks;
+      let etqpUG = tmp(1233).t.PIikks;
     } else {
-      etqpUG = tmp(1236).t.etqpUG;
+      etqpUG = tmp(1233).t.etqpUG;
     }
     let obj = { count: null };
     obj[0] = count;

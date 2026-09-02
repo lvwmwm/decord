@@ -1,22 +1,22 @@
-// Module ID: 16945
-// Function ID: 16946
+// Module ID: 17181
+// Function ID: 17182
 // Name: handleConnectionOpen
-// Dependencies: [5, 8148, 8147, 5401, 4965, 5443, 5451, 1340, 685, 4507, 687, 5486, 1370, 1341, 1342, 12, 2]
+// Dependencies: [5, 8156, 8155, 5409, 4965, 5451, 5459, 1339, 682, 4507, 684, 5494, 1369, 1340, 1341, 12, 2]
 
-// Module 16945 (handleConnectionOpen)
-import setDefault from "set" /* 687 */;
-import updateUserGuildSettings from "updateUserGuildSettings" /* 1370 */;
-import initializeDefault from "initialize" /* 5486 */;
+// Module 17181 (handleConnectionOpen)
+import setDefault from "set" /* 684 */;
+import updateUserGuildSettings from "updateUserGuildSettings" /* 1369 */;
+import initializeDefault from "initialize" /* 5494 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleUserSettingsProtoStoreChange" /* 8148 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 8147 */;
-import closure_6 from "getEmojiToGroupId" /* 5401 */;
+import closure_4 from "handleUserSettingsProtoStoreChange" /* 8156 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 8155 */;
+import closure_6 from "getEmojiToGroupId" /* 5409 */;
 import closure_7 from "handleSoundCreateOrUpdate" /* 4965 */;
-import closure_8 from "handleStickersStoreUpdate" /* 5443 */;
-import closure_9 from "handleChannelSelect" /* 5451 */;
-import { MAX_NUM_SELECTED_ITEMS } from "handleChannelSelect" /* 5451 */;
-import closure_11 from "handleConnectionClosedOrResumed" /* 1340 */;
-import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
+import closure_8 from "handleStickersStoreUpdate" /* 5451 */;
+import closure_9 from "handleChannelSelect" /* 5459 */;
+import { MAX_NUM_SELECTED_ITEMS } from "handleChannelSelect" /* 5459 */;
+import closure_11 from "handleConnectionClosedOrResumed" /* 1339 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
 import { FREQUENCY_ITEM_LIMIT } from "ApplicationTypes" /* 4507 */;
 
 require = arg1;
@@ -213,10 +213,10 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const StickerFrecency = callback(1341).StickerFrecency;
+        const StickerFrecency = callback(1340).StickerFrecency;
         stickerFrecency.stickerFrecency = StickerFrecency.create();
-        stickerFrecency.stickerFrecency.stickers = callback(1342).serializeUsageHistory(closure_8.stickerFrecencyWithoutFetchingLatest.usageHistory, 100);
-        const obj = callback(1342);
+        stickerFrecency.stickerFrecency.stickers = callback(1341).serializeUsageHistory(closure_8.stickerFrecencyWithoutFetchingLatest.usageHistory, 100);
+        const obj = callback(1341);
       }
     }
   };
@@ -236,14 +236,14 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const EmojiFrecency = callback(1341).EmojiFrecency;
+        const EmojiFrecency = callback(1340).EmojiFrecency;
         emojiFrecency.emojiFrecency = EmojiFrecency.create();
-        const EmojiFrecency2 = callback(1341).EmojiFrecency;
+        const EmojiFrecency2 = callback(1340).EmojiFrecency;
         emojiFrecency.emojiReactionFrecency = EmojiFrecency2.create();
-        emojiFrecency.emojiFrecency.emojis = callback(1342).serializeUsageHistory(tmp.emojiFrecencyWithoutFetchingLatest.usageHistory, 100);
-        const obj = callback(1342);
-        emojiFrecency.emojiReactionFrecency.emojis = callback(1342).serializeUsageHistory(tmp.emojiReactionFrecencyWithoutFetchingLatest.usageHistory, 100);
-        const obj2 = callback(1342);
+        emojiFrecency.emojiFrecency.emojis = callback(1341).serializeUsageHistory(tmp.emojiFrecencyWithoutFetchingLatest.usageHistory, 100);
+        const obj = callback(1341);
+        emojiFrecency.emojiReactionFrecency.emojis = callback(1341).serializeUsageHistory(tmp.emojiReactionFrecencyWithoutFetchingLatest.usageHistory, 100);
+        const obj2 = callback(1341);
       }
     }
   };
@@ -263,10 +263,10 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const PlayedSoundFrecency = callback(1341).PlayedSoundFrecency;
+        const PlayedSoundFrecency = callback(1340).PlayedSoundFrecency;
         playedSoundFrecency.playedSoundFrecency = PlayedSoundFrecency.create();
-        playedSoundFrecency.playedSoundFrecency.playedSounds = callback(1342).serializeUsageHistory(closure_7.playedSoundFrecencyWithoutFetchingLatest.usageHistory, closure_13);
-        const obj = callback(1342);
+        playedSoundFrecency.playedSoundFrecency.playedSounds = callback(1341).serializeUsageHistory(closure_7.playedSoundFrecencyWithoutFetchingLatest.usageHistory, closure_13);
+        const obj = callback(1341);
       }
     }
   });
@@ -285,10 +285,10 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const PlayedSoundFrecency = callback(1341).PlayedSoundFrecency;
+        const PlayedSoundFrecency = callback(1340).PlayedSoundFrecency;
         playedSoundFrecency.playedSoundFrecency = PlayedSoundFrecency.create();
-        playedSoundFrecency.playedSoundFrecency.playedSounds = callback(1342).serializeUsageHistory(closure_7.playedSoundFrecencyWithoutFetchingLatest.usageHistory, closure_13);
-        const obj = callback(1342);
+        playedSoundFrecency.playedSoundFrecency.playedSounds = callback(1341).serializeUsageHistory(closure_7.playedSoundFrecencyWithoutFetchingLatest.usageHistory, closure_13);
+        const obj = callback(1341);
       }
     }
   };
@@ -306,10 +306,10 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const ApplicationCommandFrecency = callback(1341).ApplicationCommandFrecency;
+        const ApplicationCommandFrecency = callback(1340).ApplicationCommandFrecency;
         applicationCommandFrecency.applicationCommandFrecency = ApplicationCommandFrecency.create();
-        applicationCommandFrecency.applicationCommandFrecency.applicationCommands = callback(1342).serializeUsageHistory(closure_4.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500);
-        const obj2 = callback(1342);
+        applicationCommandFrecency.applicationCommandFrecency.applicationCommands = callback(1341).serializeUsageHistory(closure_4.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500);
+        const obj2 = callback(1341);
       }
     }
   });
@@ -328,10 +328,10 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const ApplicationCommandFrecency = callback(1341).ApplicationCommandFrecency;
+        const ApplicationCommandFrecency = callback(1340).ApplicationCommandFrecency;
         applicationCommandFrecency.applicationCommandFrecency = ApplicationCommandFrecency.create();
-        applicationCommandFrecency.applicationCommandFrecency.applicationCommands = callback(1342).serializeUsageHistory(closure_4.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500);
-        const obj2 = callback(1342);
+        applicationCommandFrecency.applicationCommandFrecency.applicationCommands = callback(1341).serializeUsageHistory(closure_4.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500);
+        const obj2 = callback(1341);
       }
     }
   };
@@ -349,10 +349,10 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const ApplicationFrecency = callback(1341).ApplicationFrecency;
+        const ApplicationFrecency = callback(1340).ApplicationFrecency;
         applicationFrecency.applicationFrecency = ApplicationFrecency.create();
-        applicationFrecency.applicationFrecency.applications = callback(1342).serializeUsageHistory(closure_5.getApplicationFrecencyWithoutLoadingLatest().usageHistory, closure_13);
-        const obj2 = callback(1342);
+        applicationFrecency.applicationFrecency.applications = callback(1341).serializeUsageHistory(closure_5.getApplicationFrecencyWithoutLoadingLatest().usageHistory, closure_13);
+        const obj2 = callback(1341);
       }
     }
   });
@@ -371,10 +371,10 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const ApplicationFrecency = callback(1341).ApplicationFrecency;
+        const ApplicationFrecency = callback(1340).ApplicationFrecency;
         applicationFrecency.applicationFrecency = ApplicationFrecency.create();
-        applicationFrecency.applicationFrecency.applications = callback(1342).serializeUsageHistory(closure_5.getApplicationFrecencyWithoutLoadingLatest().usageHistory, closure_13);
-        const obj2 = callback(1342);
+        applicationFrecency.applicationFrecency.applications = callback(1341).serializeUsageHistory(closure_5.getApplicationFrecencyWithoutLoadingLatest().usageHistory, closure_13);
+        const obj2 = callback(1341);
       }
     }
   };
@@ -392,10 +392,10 @@ FrecencyUserSettingsManager.prototype["_initialize"] = function _initialize() {
         hasPendingUsageResult = closure_11.hasLoaded(constants.FRECENCY_AND_FAVORITES_SETTINGS);
       }
       if (hasPendingUsageResult) {
-        const GuildAndChannelFrecency = callback(1341).GuildAndChannelFrecency;
+        const GuildAndChannelFrecency = callback(1340).GuildAndChannelFrecency;
         guildAndChannelFrecency.guildAndChannelFrecency = GuildAndChannelFrecency.create();
-        guildAndChannelFrecency.guildAndChannelFrecency.guildAndChannels = callback(1342).serializeUsageHistory(closure_9.frecencyWithoutFetchingLatest.usageHistory, closure_10);
-        const obj = callback(1342);
+        guildAndChannelFrecency.guildAndChannelFrecency.guildAndChannels = callback(1341).serializeUsageHistory(closure_9.frecencyWithoutFetchingLatest.usageHistory, closure_10);
+        const obj = callback(1341);
       }
     }
   });

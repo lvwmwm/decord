@@ -1,12 +1,12 @@
-// Module ID: 13727
-// Function ID: 13728
+// Module ID: 13950
+// Function ID: 13951
 // Name: getWideBannerDismissibleContentVersion
-// Dependencies: [7331, 678, 7318, 2]
+// Dependencies: [7340, 675, 7327, 2]
 // Exports: getWideBannerDismissibleContentVersion
 
-// Module 13727 (getWideBannerDismissibleContentVersion)
-import closure_2 from "map" /* 7331 */;
-import { CollectibleShopTab } from "items" /* 678 */;
+// Module 13950 (getWideBannerDismissibleContentVersion)
+import closure_2 from "map" /* 7340 */;
+import { CollectibleShopTab } from "items" /* 675 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/utils/WideBannerDismissibleContentVersion.tsx");

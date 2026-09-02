@@ -1,12 +1,12 @@
-// Module ID: 16005
-// Function ID: 16006
+// Module ID: 16236
+// Function ID: 16237
 // Name: ForYouMentionPlaceholder
-// Dependencies: [19, 17, 4470, 21, 4478, 712, 589, 4217, 4479, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 709, 586, 4217, 4479, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 16005 (ForYouMentionPlaceholder)
+// Module 16236 (ForYouMentionPlaceholder)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import jsxProd from "jsxProd" /* 21 */;

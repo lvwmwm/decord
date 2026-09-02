@@ -1,12 +1,12 @@
-// Module ID: 7904
-// Function ID: 7905
+// Module ID: 7913
+// Function ID: 7914
 // Name: getApplicationSubscriptionSystemMessageASTContent
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 7904 (getApplicationSubscriptionSystemMessageASTContent)
+// Module 7913 (getApplicationSubscriptionSystemMessageASTContent)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/premium_apps/ApplicationSubscriptionSystemMessageUtils.tsx");
 

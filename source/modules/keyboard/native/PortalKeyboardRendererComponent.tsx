@@ -1,10 +1,10 @@
-// Module ID: 16339
-// Function ID: 16340
-// Dependencies: [19, 1387, 21, 6068, 1626, 11607, 8435, 16340, 16346, 2]
+// Module ID: 16571
+// Function ID: 16572
+// Dependencies: [19, 1386, 21, 6076, 1625, 11830, 8444, 16572, 16578, 2]
 
-// Module 16339
+// Module 16571
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

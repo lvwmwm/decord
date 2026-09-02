@@ -1,14 +1,14 @@
-// Module ID: 12845
-// Function ID: 12846
+// Module ID: 13067
+// Function ID: 13068
 // Name: MediaViewerItem
-// Dependencies: [32, 19, 17, 21, 500, 4340, 12846, 12847, 8568, 8567, 11245, 5652, 12848, 9583, 2]
+// Dependencies: [32, 19, 17, 21, 1234, 4340, 13068, 13069, 8583, 8582, 11468, 5660, 13070, 9596, 2]
 
-// Module 12845 (MediaViewerItem)
+// Module 13067 (MediaViewerItem)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 const require = arg1;
 let c4 = importAllResult;

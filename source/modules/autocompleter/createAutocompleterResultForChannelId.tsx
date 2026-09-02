@@ -1,15 +1,15 @@
-// Module ID: 9935
-// Function ID: 9936
+// Module ID: 9957
+// Function ID: 9958
 // Name: createAutocompleterResultForChannelId
-// Dependencies: [1387, 4130, 1922, 5452, 676, 4674, 2]
+// Dependencies: [1386, 4130, 1921, 5460, 673, 4674, 2]
 // Exports: default
 
-// Module 9935 (createAutocompleterResultForChannelId)
+// Module 9957 (createAutocompleterResultForChannelId)
 import computeChannelName from "computeChannelName" /* 4674 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "markAllUserIdListsStale" /* 4130 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import { ChannelTypes } from "ME" /* 676 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import { ChannelTypes } from "ME" /* 673 */;
 
 require = arg1;
 require("HeaderRecord").AutocompleterResultTypes;

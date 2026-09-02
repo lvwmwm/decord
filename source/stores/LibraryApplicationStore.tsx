@@ -1,17 +1,17 @@
 // Module ID: 4517
 // Function ID: 4518
 // Name: setLibraryApplications
-// Dependencies: [4518, 1218, 676, 595, 4526, 1399, 589, 12, 709, 2]
+// Dependencies: [4518, 1215, 673, 592, 4526, 1398, 586, 12, 706, 2]
 
 // Module 4517 (setLibraryApplications)
-import initializeDefault from "initialize" /* 589 */;
-import Storage6 from "Storage" /* 595 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import hasFlagAll from "hasFlag" /* 1399 */;
+import initializeDefault from "initialize" /* 586 */;
+import Storage6 from "Storage" /* 592 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import hasFlagAll from "hasFlag" /* 1398 */;
 import getComboId from "getComboId" /* 4526 */;
 import closure_4 from "createFromServer" /* 4518 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
-import { LibraryApplicationFlags } from "ME" /* 676 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
+import { LibraryApplicationFlags } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -51,8 +51,8 @@ prototype["initialize"] = function initialize() {
   let value = Storage.get(LibraryApplicationStore);
   if (null != value) {
     if (null == value.activeLaunchOptionIds) {
-      const Storage2 = tmp2(595).Storage;
-      const Storage3 = tmp2(595).Storage;
+      const Storage2 = tmp2(592).Storage;
+      const Storage3 = tmp2(592).Storage;
       value = Storage3.get(tmp4);
       if (value == null) {
         value = {};
@@ -65,8 +65,8 @@ prototype["initialize"] = function initialize() {
       activeLaunchOptionIds = value.activeLaunchOptionIds;
     }
     if (null == value.activeLibraryApplicationBranchIds) {
-      const Storage4 = tmp2(595).Storage;
-      const Storage5 = tmp2(595).Storage;
+      const Storage4 = tmp2(592).Storage;
+      const Storage5 = tmp2(592).Storage;
       let value1 = Storage5.get(tmp4);
       if (value1 == null) {
         value1 = {};

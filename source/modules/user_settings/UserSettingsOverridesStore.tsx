@@ -1,13 +1,13 @@
 // Module ID: 4167
 // Function ID: 4168
 // Name: updateExistingSettings
-// Dependencies: [1340, 589, 595, 709, 2]
+// Dependencies: [1339, 586, 592, 706, 2]
 
 // Module 4167 (updateExistingSettings)
-import initializeDefault from "initialize" /* 589 */;
-import Storage3 from "Storage" /* 595 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "handleConnectionClosedOrResumed" /* 1340 */;
+import initializeDefault from "initialize" /* 586 */;
+import Storage3 from "Storage" /* 592 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_2 from "handleConnectionClosedOrResumed" /* 1339 */;
 
 require = arg1;
 function updateExistingSettings() {

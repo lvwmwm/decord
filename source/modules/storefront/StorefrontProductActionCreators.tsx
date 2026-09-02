@@ -1,16 +1,16 @@
-// Module ID: 8906
-// Function ID: 8907
+// Module ID: 8921
+// Function ID: 8922
 // Name: _maybeFetchProductsWithSkus
-// Dependencies: [5, 1996, 8907, 7308, 676, 687, 709, 4755, 4377, 2]
+// Dependencies: [5, 1995, 8922, 7317, 673, 684, 706, 4755, 4377, 2]
 // Exports: maybeFetchProductsBySkuIds, maybeFetchProductsWithSkus
 
-// Module 8906 (_maybeFetchProductsWithSkus)
-import setDefault from "set" /* 687 */;
+// Module 8921 (_maybeFetchProductsWithSkus)
+import setDefault from "set" /* 684 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "getFetchState" /* 8907 */;
-import closure_6 from "fromServer" /* 7308 */;
-import { Endpoints } from "ME" /* 676 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "getFetchState" /* 8922 */;
+import closure_6 from "fromServer" /* 7317 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _maybeFetchProductsWithSkus() {
@@ -59,7 +59,7 @@ function _maybeFetchProductsWithSkus() {
               let body;
               c5 = 1;
               fromServer = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -231,7 +231,7 @@ function _maybeFetchProductsBySkuIds() {
               let body;
               c5 = 1;
               fromServer = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp7) {

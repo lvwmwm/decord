@@ -1,9 +1,9 @@
-// Module ID: 6748
-// Function ID: 6749
+// Module ID: 6757
+// Function ID: 6758
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6748 (metadata)
+// Module 6757 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HeartHandsSpotIllustration-2x.png.js");

@@ -1,16 +1,16 @@
-// Module ID: 8895
-// Function ID: 8896
+// Module ID: 8910
+// Function ID: 8911
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1922, 8556, 21, 4478, 712, 589, 1950, 4445, 8896, 5973, 10780, 5622, 10781, 4474, 1236, 5376, 4928, 2]
+// Dependencies: [32, 19, 17, 1921, 8569, 21, 4478, 709, 586, 1949, 4445, 8911, 5981, 11000, 5630, 11001, 4474, 1233, 5384, 4928, 2]
 // Exports: default
 
-// Module 8895 (WishlistNUXAddedItemActionSheet)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 8910 (WishlistNUXAddedItemActionSheet)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8556 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

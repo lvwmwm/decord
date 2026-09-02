@@ -1,14 +1,14 @@
-// Module ID: 10312
-// Function ID: 10313
+// Module ID: 10334
+// Function ID: 10335
 // Name: useTrackFavoritesGuildUpsellModalOpened
-// Dependencies: [19, 676, 5953, 5973, 698, 2]
+// Dependencies: [19, 673, 5961, 5981, 695, 2]
 // Exports: default
 
-// Module 10312 (useTrackFavoritesGuildUpsellModalOpened)
-import contextDefault from "context" /* 5953 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5973 */;
+// Module 10334 (useTrackFavoritesGuildUpsellModalOpened)
+import contextDefault from "context" /* 5961 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5981 */;
 import closure_2 from "noop" /* 19 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/favorites/analytics/useTrackFavoritesGuildUpsellModalOpened.tsx");
 

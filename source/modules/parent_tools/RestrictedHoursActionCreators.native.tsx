@@ -1,10 +1,10 @@
-// Module ID: 16871
-// Function ID: 16872
+// Module ID: 17107
+// Function ID: 17108
 // Name: closeRestrictedHoursModal
-// Dependencies: [5, 4723, 16872, 2009, 2]
+// Dependencies: [5, 4723, 17108, 2008, 2]
 // Exports: openRestrictedHoursModal
 
-// Module 16871 (closeRestrictedHoursModal)
+// Module 17107 (closeRestrictedHoursModal)
 import _modDef4723 from "module_4723" /* 4723 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 

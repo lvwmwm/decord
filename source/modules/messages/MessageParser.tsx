@@ -1,30 +1,30 @@
-// Module ID: 7427
-// Function ID: 7428
+// Module ID: 7436
+// Function ID: 7437
 // Name: rebuild
-// Dependencies: [5401, 5448, 1387, 1982, 1992, 1985, 1909, 4121, 4130, 4323, 1922, 676, 4953, 1925, 4674, 4192, 4951, 7428, 4166, 4134, 4958, 4322, 4673, 12, 4964, 1236, 7429, 5385, 1471, 4138, 2]
+// Dependencies: [5409, 5456, 1386, 1981, 1991, 1984, 1908, 4120, 4130, 4323, 1921, 673, 4953, 1924, 4674, 4192, 4951, 7437, 7438, 4166, 4134, 4958, 4322, 4673, 12, 4964, 1233, 7439, 5393, 1470, 4138, 2]
 // Exports: parseAndRebuild
 
-// Module 7427 (rebuild)
+// Module 7436 (rebuild)
 import applyDefault from "apply" /* 12 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
 import parseLinkDefault from "parseLink" /* 4951 */;
 import textRegexpDefault from "textRegexp" /* 4958 */;
-import closure_3 from "getEmojiToGroupId" /* 5401 */;
-import closure_4 from "rebuild" /* 5448 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "comparator" /* 1982 */;
-import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator" /* 1982 */;
-import closure_8 from "trackCommunicationDisabled" /* 1992 */;
-import closure_9 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_10 from "createGuildRecordFromRust" /* 1909 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_3 from "getEmojiToGroupId" /* 5409 */;
+import closure_4 from "rebuild" /* 5456 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "comparator" /* 1981 */;
+import { GUILD_SELECTABLE_CHANNELS_KEY as closure_7 } from "comparator" /* 1981 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_10 from "createGuildRecordFromRust" /* 1908 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_12 from "markAllUserIdListsStale" /* 4130 */;
 import closure_13 from "initialize" /* 4323 */;
-import closure_14 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_14 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import { GAME_MENTION_SENTINEL } from "regExp" /* 4953 */;
-import { EmojiIntention } from "set" /* 1925 */;
+import { EmojiIntention } from "set" /* 1924 */;
 import importDefaultResult from "t" /* 4192 */;
 
 let str7 = arg1;
@@ -35,10 +35,10 @@ function rebuild(arr) {
   c3 = "";
   const items = [];
   const item = arr.forEach((content) => {
-    (function handleEmoji(closure_0, type, f80944) {
-      if (null != f80944) {
+    (function handleEmoji(closure_0, type, f81808) {
+      if (null != f81808) {
         if ("customEmoticon" === type.type) {
-          f80944(type.emoji, false);
+          f81808(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           const result = callback(4134).translateSurrogatesToInlineEmoji(type.content);
@@ -55,7 +55,7 @@ function rebuild(arr) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f80944(byId, tmp11);
+                    let tmp12 = f81808(byId, tmp11);
                   }
                   let tmp13 = regex;
                   match = regex.exec(result);
@@ -73,7 +73,7 @@ function rebuild(arr) {
           const obj = callback(4134);
         }
       }
-    })(callback, content, f80944);
+    })(callback, content, f81808);
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -98,8 +98,8 @@ function rebuild(arr) {
           }
         }
         if (true === tmp.isNotification) {
-          _var = _var + callback(f80944[26]).isolate(content.content);
-          let obj2 = callback(f80944[26]);
+          _var = _var + callback(f81808[27]).isolate(content.content);
+          let obj2 = callback(f81808[27]);
         } else {
           _var = _var + content.content;
         }
@@ -186,8 +186,8 @@ function createParserState(getGuildId, arr) {
   const mapped3 = tmp9Result(textChannelNameDisambiguations.getTextChannelNameDisambiguations(guildId)).map((id) => ({ id: id.id, text: id.name }));
   if (null != guildId) {
     tmp9Result = tmp9(12);
-    const found1 = tmp9Result(guildId(5385).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).filter((arg0) => arg0 !== closure_7);
-    const tmp9Result1Result = tmp9Result(guildId(5385).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
+    const found1 = tmp9Result(guildId(5393).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS).filter((arg0) => arg0 !== closure_7);
+    const tmp9Result1Result = tmp9Result(guildId(5393).COMMAND_SUPPORTED_CHANNEL_TYPE_KEYS);
     const flatMapResult = found1.flatMap((arg0) => closure_1_6.getChannels(guildId)[arg0].map((channel) => {
       channel = channel.channel;
       if (!channel.isCategory()) {
@@ -213,7 +213,7 @@ function createParserState(getGuildId, arr) {
         tmp3 = null;
       }
       return tmp3;
-    })).filter(guildId(1471).isNotNullish).value();
+    })).filter(guildId(1470).isNotNullish).value();
     const iter = found1.flatMap((arg0) => closure_1_6.getChannels(guildId)[arg0].map((channel) => {
       channel = channel.channel;
       if (!channel.isCategory()) {
@@ -226,7 +226,7 @@ function createParserState(getGuildId, arr) {
         tmp3 = null;
       }
       return tmp3;
-    })).filter(guildId(1471).isNotNullish);
+    })).filter(guildId(1470).isNotNullish);
   } else {
     items = [];
   }
@@ -287,10 +287,10 @@ function unparseWithMeta(content, id, isNotification) {
   c3 = "";
   const items = [];
   const item = translateSurrogatesToInlineEmoji(4192).parserFor(omitResult)(content, obj).forEach((content) => {
-    (function handleEmoji(closure_0, type, f80944) {
-      if (null != f80944) {
+    (function handleEmoji(closure_0, type, f81808) {
+      if (null != f81808) {
         if ("customEmoticon" === type.type) {
-          f80944(type.emoji, false);
+          f81808(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           const result = callback(4134).translateSurrogatesToInlineEmoji(type.content);
@@ -307,7 +307,7 @@ function unparseWithMeta(content, id, isNotification) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f80944(byId, tmp11);
+                    let tmp12 = f81808(byId, tmp11);
                   }
                   let tmp13 = regex;
                   match = regex.exec(result);
@@ -325,7 +325,7 @@ function unparseWithMeta(content, id, isNotification) {
           const obj = callback(4134);
         }
       }
-    })(callback, content, f80944);
+    })(callback, content, f81808);
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -350,8 +350,8 @@ function unparseWithMeta(content, id, isNotification) {
           }
         }
         if (true === tmp.isNotification) {
-          _var = _var + callback(f80944[26]).isolate(content.content);
-          let obj2 = callback(f80944[26]);
+          _var = _var + callback(f81808[27]).isolate(content.content);
+          let obj2 = callback(f81808[27]);
         } else {
           _var = _var + content.content;
         }
@@ -460,23 +460,62 @@ obj[8] = obj2;
 obj[9] = {
   match(str, games, str2) {
     const parts = str2.split(" ");
-    if (regex2.test(parts.pop() + str)) {
-      return null;
+    if (null == str2[str2.length - 1]) {
+      if (regex2.test(tmp2)) {
+        return null;
+      }
     } else {
-      games = games.games;
-      str7 = GAME_MENTION_SENTINEL;
+      const AUTOCOMPLETE_BOUNDARY_CHARACTERS_SET = str7(mention[17]).AUTOCOMPLETE_BOUNDARY_CHARACTERS_SET;
+    }
+    games = games.games;
+    str7 = GAME_MENTION_SENTINEL;
+    closure_1 = str;
+    mention = "gameMention";
+    closure_3 = undefined;
+    let firstResult;
+    if (str[0] === GAME_MENTION_SENTINEL) {
+      closure_3 = str.substring(arr.length);
+      const found = games.sortBy((text) => -text.text.length).filter((text) => {
+        const formatted = closure_1.toLowerCase();
+        return 1 === formatted.indexOf(text.text.toLowerCase());
+      });
+      const sortByResult = games.sortBy((text) => -text.text.length);
+      const mapped = found.sortBy((text) => {
+        let num = 1;
+        if (text.text === closure_3) {
+          num = 0;
+        }
+        return num;
+      }).map((text) => {
+        const items = [closure_0 + text.text, text.id, channel];
+        return items;
+      });
+      firstResult = mapped.first();
+      const sortByResult1 = found.sortBy((text) => {
+        let num = 1;
+        if (text.text === closure_3) {
+          num = 0;
+        }
+        return num;
+      });
+    }
+    if (null != firstResult) {
+      return firstResult;
+    } else {
+      let users = games.users;
+      str7 = "@";
       closure_1 = str;
-      let mention = "gameMention";
+      mention = "mention";
       closure_3 = undefined;
-      let firstResult;
-      if (str[0] === GAME_MENTION_SENTINEL) {
-        closure_3 = str.substring(arr2.length);
-        const found = games.sortBy((text) => -text.text.length).filter((text) => {
+      let firstResult1;
+      if (str[0] === "@") {
+        closure_3 = str.substring("@".length);
+        const found1 = users.sortBy((text) => -text.text.length).filter((text) => {
           const formatted = closure_1.toLowerCase();
           return 1 === formatted.indexOf(text.text.toLowerCase());
         });
-        const sortByResult = games.sortBy((text) => -text.text.length);
-        const mapped = found.sortBy((text) => {
+        const sortByResult2 = users.sortBy((text) => -text.text.length);
+        const mapped1 = found1.sortBy((text) => {
           let num = 1;
           if (text.text === closure_3) {
             num = 0;
@@ -486,8 +525,8 @@ obj[9] = {
           const items = [closure_0 + text.text, text.id, channel];
           return items;
         });
-        firstResult = mapped.first();
-        const sortByResult1 = found.sortBy((text) => {
+        firstResult1 = mapped1.first();
+        const sortByResult3 = found1.sortBy((text) => {
           let num = 1;
           if (text.text === closure_3) {
             num = 0;
@@ -495,23 +534,23 @@ obj[9] = {
           return num;
         });
       }
-      if (null != firstResult) {
-        return firstResult;
+      if (null != firstResult1) {
+        return firstResult1;
       } else {
-        let users = games.users;
+        const mentionableRoles = games.mentionableRoles;
         str7 = "@";
         closure_1 = str;
-        mention = "mention";
+        mention = "roleMention";
         closure_3 = undefined;
-        let firstResult1;
+        let firstResult2;
         if (str[0] === "@") {
           closure_3 = str.substring("@".length);
-          const found1 = users.sortBy((text) => -text.text.length).filter((text) => {
+          const found2 = mentionableRoles.sortBy((text) => -text.text.length).filter((text) => {
             const formatted = closure_1.toLowerCase();
             return 1 === formatted.indexOf(text.text.toLowerCase());
           });
-          const sortByResult2 = users.sortBy((text) => -text.text.length);
-          const mapped1 = found1.sortBy((text) => {
+          const sortByResult4 = mentionableRoles.sortBy((text) => -text.text.length);
+          const mapped2 = found2.sortBy((text) => {
             let num = 1;
             if (text.text === closure_3) {
               num = 0;
@@ -521,8 +560,8 @@ obj[9] = {
             const items = [closure_0 + text.text, text.id, channel];
             return items;
           });
-          firstResult1 = mapped1.first();
-          const sortByResult3 = found1.sortBy((text) => {
+          firstResult2 = mapped2.first();
+          const sortByResult5 = found2.sortBy((text) => {
             let num = 1;
             if (text.text === closure_3) {
               num = 0;
@@ -530,23 +569,29 @@ obj[9] = {
             return num;
           });
         }
-        if (null != firstResult1) {
-          return firstResult1;
+        if (null != firstResult2) {
+          return firstResult2;
         } else {
-          const mentionableRoles = games.mentionableRoles;
+          users = games.users;
+          const mapped3 = users.map((text) => {
+            const obj = {};
+            const merged = Object.assign(text);
+            obj.text = text.text.split("#")[0];
+            return obj;
+          });
           str7 = "@";
           closure_1 = str;
-          mention = "roleMention";
+          mention = "mention";
           closure_3 = undefined;
-          let firstResult2;
+          let firstResult3;
           if (str[0] === "@") {
             closure_3 = str.substring("@".length);
-            const found2 = mentionableRoles.sortBy((text) => -text.text.length).filter((text) => {
+            const found3 = mapped3.sortBy((text) => -text.text.length).filter((text) => {
               const formatted = closure_1.toLowerCase();
               return 1 === formatted.indexOf(text.text.toLowerCase());
             });
-            const sortByResult4 = mentionableRoles.sortBy((text) => -text.text.length);
-            const mapped2 = found2.sortBy((text) => {
+            const sortByResult6 = mapped3.sortBy((text) => -text.text.length);
+            const mapped4 = found3.sortBy((text) => {
               let num = 1;
               if (text.text === closure_3) {
                 num = 0;
@@ -556,8 +601,8 @@ obj[9] = {
               const items = [closure_0 + text.text, text.id, channel];
               return items;
             });
-            firstResult2 = mapped2.first();
-            const sortByResult5 = found2.sortBy((text) => {
+            firstResult3 = mapped4.first();
+            const sortByResult7 = found3.sortBy((text) => {
               let num = 1;
               if (text.text === closure_3) {
                 num = 0;
@@ -565,67 +610,25 @@ obj[9] = {
               return num;
             });
           }
-          if (null != firstResult2) {
-            return firstResult2;
+          if (null == firstResult3) {
+            return null;
           } else {
-            users = games.users;
-            const mapped3 = users.map((text) => {
-              const obj = {};
-              const merged = Object.assign(text);
-              obj.text = text.text.split("#")[0];
-              return obj;
-            });
-            str7 = "@";
-            closure_1 = str;
-            mention = "mention";
-            closure_3 = undefined;
-            let firstResult3;
-            if (str[0] === "@") {
-              closure_3 = str.substring("@".length);
-              const found3 = mapped3.sortBy((text) => -text.text.length).filter((text) => {
-                const formatted = closure_1.toLowerCase();
-                return 1 === formatted.indexOf(text.text.toLowerCase());
-              });
-              const sortByResult6 = mapped3.sortBy((text) => -text.text.length);
-              const mapped4 = found3.sortBy((text) => {
-                let num = 1;
-                if (text.text === closure_3) {
-                  num = 0;
-                }
-                return num;
-              }).map((text) => {
-                const items = [closure_0 + text.text, text.id, channel];
-                return items;
-              });
-              firstResult3 = mapped4.first();
-              const sortByResult7 = found3.sortBy((text) => {
-                let num = 1;
-                if (text.text === closure_3) {
-                  num = 0;
-                }
-                return num;
-              });
+            const match = regex.exec(str);
+            if (null != match) {
+              if (firstResult3[0].length <= match[0].length) {
+                return null;
+              }
             }
-            if (null == firstResult3) {
-              return null;
-            } else {
-              const match = regex.exec(str);
-              if (null != match) {
-                if (firstResult3[0].length <= match[0].length) {
+            if ("" === str2) {
+              const SILENT_RE = str7(mention[18]).SILENT_RE;
+              const match1 = SILENT_RE.exec(str);
+              if (null != match1) {
+                if (firstResult3[0].length <= match1[0].length) {
                   return null;
                 }
               }
-              if ("" === str2) {
-                const SILENT_RE = str7(mention[17]).SILENT_RE;
-                const match1 = SILENT_RE.exec(str);
-                if (null != match1) {
-                  if (firstResult3[0].length <= match1[0].length) {
-                    return null;
-                  }
-                }
-              }
-              return firstResult3;
             }
+            return firstResult3;
           }
         }
       }
@@ -1049,8 +1052,8 @@ const importDefaultResult9 = importDefaultResult;
 obj12[0] = importDefaultResult.anyScopeRegex(MARKDOWN_SPOILER_REGEXP);
 obj12[1] = function parse() {
   const obj = { content: null };
-  const intl = str7(1236).intl;
-  obj[0] = "<" + intl.string(str7(1236).t["F+x38C"]).toLowerCase() + ">";
+  const intl = str7(1233).intl;
+  obj[0] = "<" + intl.string(str7(1233).t["F+x38C"]).toLowerCase() + ">";
   return obj;
 };
 obj5[8] = obj12;
@@ -1104,9 +1107,9 @@ const obj16 = {
     let obj = { content, tts: false, invalidEmojis: [], validNonShortcutEmojis: [] };
     importDefault = obj;
     closure_0 = tmp;
-    importDefault = importDefault(f80944[19]).translateInlineEmojiToSurrogates;
-    f80944 = (emoji) => {
-      let obj = lib(f80944[29]);
+    importDefault = importDefault(f81808[20]).translateInlineEmojiToSurrogates;
+    f81808 = (emoji) => {
+      let obj = lib(f81808[30]);
       obj = { emoji, channel: closure_0, intention: closure_1_17.CHAT };
       if (obj.isEmojiPremiumLocked(obj)) {
         const invalidEmojis = lib.invalidEmojis;
@@ -1119,10 +1122,10 @@ const obj16 = {
     c3 = "";
     closure_4 = [];
     const item = callback(obj.content, tmp).forEach((content) => {
-      (function handleEmoji(closure_0, type, f80944) {
-        if (null != f80944) {
+      (function handleEmoji(closure_0, type, f81808) {
+        if (null != f81808) {
           if ("customEmoticon" === type.type) {
-            f80944(type.emoji, false);
+            f81808(type.emoji, false);
           }
           if ("emoticon" === type.type) {
             const result = callback(4134).translateSurrogatesToInlineEmoji(type.content);
@@ -1139,7 +1142,7 @@ const obj16 = {
                     }
                     if (byId) {
                       let tmp11 = type.isShortcut || false;
-                      let tmp12 = f80944(byId, tmp11);
+                      let tmp12 = f81808(byId, tmp11);
                     }
                     let tmp13 = regex;
                     match = regex.exec(result);
@@ -1157,7 +1160,7 @@ const obj16 = {
             const obj = callback(4134);
           }
         }
-      })(callback, content, f80944);
+      })(callback, content, f81808);
       if (typeof content.content === "string") {
         const type = content.type;
         if ("emoji" === type) {
@@ -1182,8 +1185,8 @@ const obj16 = {
             }
           }
           if (true === tmp.isNotification) {
-            _var = _var + callback(f80944[26]).isolate(content.content);
-            let obj2 = callback(f80944[26]);
+            _var = _var + callback(f81808[27]).isolate(content.content);
+            let obj2 = callback(f81808[27]);
           } else {
             _var = _var + content.content;
           }
@@ -1227,10 +1230,10 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
   c3 = "";
   closure_4 = [];
   const item = callback(arg0, arg1).forEach((content) => {
-    (function handleEmoji(closure_0, type, f80944) {
-      if (null != f80944) {
+    (function handleEmoji(closure_0, type, f81808) {
+      if (null != f81808) {
         if ("customEmoticon" === type.type) {
-          f80944(type.emoji, false);
+          f81808(type.emoji, false);
         }
         if ("emoticon" === type.type) {
           const result = callback(4134).translateSurrogatesToInlineEmoji(type.content);
@@ -1247,7 +1250,7 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
                   }
                   if (byId) {
                     let tmp11 = type.isShortcut || false;
-                    let tmp12 = f80944(byId, tmp11);
+                    let tmp12 = f81808(byId, tmp11);
                   }
                   let tmp13 = regex;
                   match = regex.exec(result);
@@ -1265,7 +1268,7 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
           const obj = callback(4134);
         }
       }
-    })(callback, content, f80944);
+    })(callback, content, f81808);
     if (typeof content.content === "string") {
       const type = content.type;
       if ("emoji" === type) {
@@ -1290,8 +1293,8 @@ export const parseAndRebuild = function parseAndRebuild(arg0, arg1, arg2) {
           }
         }
         if (true === tmp.isNotification) {
-          _var = _var + callback(f80944[26]).isolate(content.content);
-          let obj2 = callback(f80944[26]);
+          _var = _var + callback(f81808[27]).isolate(content.content);
+          let obj2 = callback(f81808[27]);
         } else {
           _var = _var + content.content;
         }

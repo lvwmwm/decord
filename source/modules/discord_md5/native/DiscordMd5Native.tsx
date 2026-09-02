@@ -1,13 +1,13 @@
-// Module ID: 5100
-// Function ID: 5101
+// Module ID: 5108
+// Function ID: 5109
 // Name: fromFileUri
-// Dependencies: [17, 5101, 500, 1271, 2]
+// Dependencies: [17, 5109, 1234, 1270, 2]
 
-// Module 5100 (fromFileUri)
+// Module 5108 (fromFileUri)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 1271 */;
-import fromBlobDefault from "fromBlob" /* 5101 */;
+import enforcingDefault from "enforcing" /* 1270 */;
+import fromBlobDefault from "fromBlob" /* 5109 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 fromBlobDefault;
@@ -27,8 +27,8 @@ prototype["fromFileUri"] = function fromFileUri(uri) {
       error = new Error("RTNFileManager doesn't exist?");
       let rejectResult = Promise.reject(error);
     } else {
-      rejectResult = tmp3(1271).getFileHash(uri, "md5", num);
-      const tmp3Result = tmp3(1271);
+      rejectResult = tmp3(1270).getFileHash(uri, "md5", num);
+      const tmp3Result = tmp3(1270);
     }
     tmp3 = importDefault;
   } else {

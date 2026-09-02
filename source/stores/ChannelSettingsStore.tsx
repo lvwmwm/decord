@@ -1,25 +1,25 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8768
+// Function ID: 8769
 // Name: normalizeChannelPropertyForCompare
-// Dependencies: [1391, 8651, 1935, 1387, 676, 1235, 4132, 4134, 1396, 1397, 530, 709, 12, 1426, 4075, 589, 2]
+// Dependencies: [1390, 8666, 1934, 1386, 673, 1232, 4132, 4134, 1395, 1396, 527, 706, 12, 1425, 4074, 586, 2]
 
-// Module 8753 (normalizeChannelPropertyForCompare)
+// Module 8768 (normalizeChannelPropertyForCompare)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 530 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import AbortCodes from "AbortCodes" /* 1235 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
-import set2 from "set" /* 1396 */;
-import set3 from "set" /* 1397 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
-import hooksDefault from "hooks" /* 4075 */;
+import sendRequest from "sendRequest" /* 527 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import AbortCodes from "AbortCodes" /* 1232 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
+import set2 from "set" /* 1395 */;
+import set3 from "set" /* 1396 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
+import hooksDefault from "hooks" /* 4074 */;
 import MAX_REACTIONS from "MAX_REACTIONS" /* 4132 */;
 import parseRawEmojiObjectDefault from "parseRawEmojiObject" /* 4134 */;
-import closure_10 from "createFromServer" /* 8651 */;
-import closure_11 from "createdAt" /* 1935 */;
-import closure_12 from "ensureGuildLoaded" /* 1387 */;
-import ME from "ME" /* 676 */;
+import closure_10 from "createFromServer" /* 8666 */;
+import closure_11 from "createdAt" /* 1934 */;
+import closure_12 from "ensureGuildLoaded" /* 1386 */;
+import ME from "ME" /* 673 */;
 import importDefaultResult from "apply" /* 12 */;
 
 function normalizeChannelPropertyForCompare(arg0, arg1, arg2) {
@@ -173,7 +173,7 @@ let closure_20 = {};
 let c21 = false;
 let c22 = false;
 let c23 = null;
-let closure_24 = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
+let closure_24 = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor", "application_id"];
 let closure_26 = importDefaultResult.debounce(() => {
   if (null != store) {
     if (null != closure_5) {
@@ -340,7 +340,7 @@ const channelSettingsStore = new ChannelSettingsStore(dispatcherDefault, {
     overwriteId = overwriteId.overwriteId;
   },
   CHANNEL_SETTINGS_UPDATE: function handleSettingsUpdate(arg0) {
-    ({ name, channelType, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, autoArchiveDuration, locked, invitable, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor } = arg0);
+    ({ name, channelType, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, autoArchiveDuration, locked, invitable, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor, applicationId } = arg0);
     if (null == store) {
       return false;
     } else {
@@ -421,6 +421,9 @@ const channelSettingsStore = new ChannelSettingsStore(dispatcherDefault, {
       }
       if (null != themeColor) {
         store = store.set("themeColor", themeColor);
+      }
+      if (null != applicationId) {
+        store = store.set("application_id", applicationId);
       }
       callback2();
     }
@@ -607,7 +610,7 @@ let obj = {
     overwriteId = overwriteId.overwriteId;
   },
   CHANNEL_SETTINGS_UPDATE: function handleSettingsUpdate(arg0) {
-    ({ name, channelType, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, autoArchiveDuration, locked, invitable, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor } = arg0);
+    ({ name, channelType, topic, bitrate, userLimit, nsfw, flags, rateLimitPerUser, defaultThreadRateLimitPerUser, autoArchiveDuration, locked, invitable, defaultAutoArchiveDuration, template, defaultReactionEmoji, rtcRegion, videoQualityMode, availableTags, defaultSortOrder, defaultForumLayout, defaultTagSetting, iconEmoji, themeColor, applicationId } = arg0);
     if (null == store) {
       return false;
     } else {
@@ -688,6 +691,9 @@ let obj = {
       }
       if (null != themeColor) {
         store = store.set("themeColor", themeColor);
+      }
+      if (null != applicationId) {
+        store = store.set("application_id", applicationId);
       }
       callback2();
     }

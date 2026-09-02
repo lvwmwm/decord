@@ -1,11 +1,11 @@
 // Module ID: 4398
 // Function ID: 4399
 // Name: handleInviteData
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
 // Module 4398 (handleInviteData)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 function handleInviteData(invite) {
   ({ guild, approximate_presence_count } = invite.invite);

@@ -1,18 +1,18 @@
-// Module ID: 7933
-// Function ID: 7934
+// Module ID: 7942
+// Function ID: 7943
 // Name: createGuildProductPurchaseSystemMessage
-// Dependencies: [4131, 1387, 676, 4746, 7869, 1434, 1431, 7903, 7871, 1236, 7873, 2]
+// Dependencies: [4131, 1386, 673, 4746, 7878, 1433, 1430, 7912, 7880, 1233, 7882, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 7933 (createGuildProductPurchaseSystemMessage)
-import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
+// Module 7942 (createGuildProductPurchaseSystemMessage)
+import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
 import useNullableMessageAuthor from "useNullableMessageAuthor" /* 4746 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7869 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7871 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7873 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7878 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7880 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7882 */;
 import closure_3 from "hasFlag" /* 4131 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import { MessageTypes } from "ME" /* 676 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import { MessageTypes } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildProductPurchaseSystemMessage.tsx");
@@ -46,7 +46,7 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
     ensureAvatarSource;
     if (null != guildMemberAvatar) {
       if (null != guildId) {
-        let tmp5Result = tmp5(1431);
+        let tmp5Result = tmp5(1430);
         obj = { userId: null, avatar: null, guildId: null };
         obj[0] = author.id;
         obj[1] = guildMemberAvatar;
@@ -54,7 +54,7 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
         let guildMemberAvatarSource = tmp5Result.getGuildMemberAvatarSource(obj, author);
       }
       obj = { content: null, totalMonthsSubscribed: 0, username: null, avatarURL: null, welcomeLabel: null };
-      tmp5Result = tmp5(7903);
+      tmp5Result = tmp5(7912);
       obj1 = { username: null, usernameOnClickHandler: null, productName: null };
       obj1[0] = messageAuthorWithProcessedColor.nick;
       obj2 = { message: null, author: null, roleStyle: null };
@@ -66,8 +66,8 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
       obj[0] = tmp5Result.getGuildProductPurchaseSystemMessageContentMobile(obj1);
       obj[2] = messageAuthorWithProcessedColor.nick;
       obj[3] = tmp9(guildMemberAvatarSource).uri;
-      const intl = tmp5(1236).intl;
-      obj[4] = intl.string(tmp5(1236).t.s2N5HS);
+      const intl = tmp5(1233).intl;
+      obj[4] = intl.string(tmp5(1233).t.s2N5HS);
       const merged1 = Object.assign(createCommonMessageDefault(obj));
       return obj;
     }

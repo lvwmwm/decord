@@ -1,14 +1,14 @@
-// Module ID: 10643
-// Function ID: 10644
+// Module ID: 10864
+// Function ID: 10865
 // Name: CrownIcon
-// Dependencies: [19, 21, 712, 4196, 10644, 2]
+// Dependencies: [19, 21, 709, 4196, 10865, 2]
 // Exports: CrownIcon
 
-// Module 10643 (CrownIcon)
+// Module 10864 (CrownIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 10644 */;
+import registerAsset from "registerAsset" /* 10865 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

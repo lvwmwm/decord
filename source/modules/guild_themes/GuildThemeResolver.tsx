@@ -1,20 +1,20 @@
 // Module ID: 4359
 // Function ID: 4360
 // Name: resolveSavedActiveGuildTheme
-// Dependencies: [19, 1340, 1909, 4299, 4360, 4363, 676, 4329, 589, 4406, 4409, 2]
+// Dependencies: [19, 1339, 1908, 4299, 4360, 4363, 673, 4329, 586, 4406, 4409, 2]
 // Exports: getActiveGuildTheme, getActiveGuildThemeForGuildId, isRenderableGuildThemeSettings, resolveRenderableGuildThemeSettings, useActiveGuildTheme, useEnabledGuildThemeForGuildId, useIsGuildThemePreviewActive
 
 // Module 4359 (resolveSavedActiveGuildTheme)
-import initialize from "initialize" /* 589 */;
+import initialize from "initialize" /* 586 */;
 import set from "set" /* 4329 */;
 import apexExperiment from "apexExperiment" /* 4406 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "handleConnectionOpen" /* 4299 */;
 import closure_6 from "handleEnd" /* 4360 */;
 import closure_7 from "snapshotSelectedGuildId" /* 4363 */;
-import { GuildFeatures } from "ME" /* 676 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 require = arg1;
 function resolveSavedActiveGuildTheme(enabled) {

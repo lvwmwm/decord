@@ -1,10 +1,10 @@
-// Module ID: 13456
-// Function ID: 13457
+// Module ID: 13679
+// Function ID: 13680
 // Name: parsed
-// Dependencies: [669, 2]
+// Dependencies: [666, 2]
 
-// Module 13456 (parsed)
-import formatDefault from "format" /* 669 */;
+// Module 13679 (parsed)
+import formatDefault from "format" /* 666 */;
 
 let str = formatDefault.version;
 if (str == null) {

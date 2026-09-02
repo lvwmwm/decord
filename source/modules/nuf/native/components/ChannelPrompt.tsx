@@ -1,16 +1,16 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 12507
+// Function ID: 12508
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 1982, 1909, 21, 4478, 5492, 589, 1499, 5495, 1236, 4491, 4376, 5553, 6004, 1431, 4474, 7704, 4928, 7714, 2]
+// Dependencies: [5, 32, 19, 17, 1981, 1908, 21, 4478, 5500, 586, 1498, 5503, 1233, 4491, 4376, 5561, 6012, 1430, 4474, 7713, 4928, 7723, 2]
 // Exports: default
 
-// Module 12283 (ChannelPrompt)
+// Module 12507 (ChannelPrompt)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "comparator" /* 1982 */;
-import closure_9 from "createGuildRecordFromRust" /* 1909 */;
+import closure_8 from "comparator" /* 1981 */;
+import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

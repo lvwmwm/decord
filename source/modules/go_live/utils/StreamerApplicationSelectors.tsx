@@ -1,14 +1,14 @@
-// Module ID: 7483
-// Function ID: 7484
+// Module ID: 7493
+// Function ID: 7494
 // Name: _findPlayingActivity
-// Dependencies: [4569, 676, 7484, 643, 589, 2]
+// Dependencies: [4569, 673, 7494, 640, 586, 2]
 // Exports: getStreamerActivity, getStreamerActivityByUserId, getStreamerApplication, useGetStreamApplication
 
-// Module 7483 (_findPlayingActivity)
-import shallowEqualDefault from "shallowEqual" /* 643 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7484 */;
+// Module 7493 (_findPlayingActivity)
+import shallowEqualDefault from "shallowEqual" /* 640 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7494 */;
 import closure_3 from "sortActivity" /* 4569 */;
-import { ActivityTypes } from "ME" /* 676 */;
+import { ActivityTypes } from "ME" /* 673 */;
 
 const require = arg1;
 function _findPlayingActivity(type) {
@@ -62,7 +62,7 @@ export const useGetStreamApplication = function useGetStreamApplication(stream) 
   const _require = stream;
   const items = [closure_3];
   const items1 = [stream];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let obj = closure_1_3;
     let tmp2 = null;
     if (null != closure_0) {

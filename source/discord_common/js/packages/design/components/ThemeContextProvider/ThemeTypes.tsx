@@ -1,9 +1,9 @@
-// Module ID: 1361
-// Function ID: 1362
+// Module ID: 1360
+// Function ID: 1361
 // Name: ClientThemeType
 // Dependencies: [2]
 
-// Module 1361 (ClientThemeType)
+// Module 1360 (ClientThemeType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeTypes.tsx");

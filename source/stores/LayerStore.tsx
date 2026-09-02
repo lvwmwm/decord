@@ -1,11 +1,11 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12261
+// Function ID: 12262
 // Name: handlePopAllLayers
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 12037 (handlePopAllLayers)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 12261 (handlePopAllLayers)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 function handlePopAllLayers() {
   closure_0 = [];

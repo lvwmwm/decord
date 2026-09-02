@@ -1,12 +1,12 @@
-// Module ID: 647
-// Function ID: 648
+// Module ID: 644
+// Function ID: 645
 // Name: defaultAreStatesEqual
-// Dependencies: [32, 19, 643, 648, 2]
+// Dependencies: [32, 19, 640, 645, 2]
 // Exports: statesWillNeverBeEqual, useStateFromStoresArray, useStateFromStoresObject
 
-// Module 647 (defaultAreStatesEqual)
-import shallowEqual from "shallowEqual" /* 643 */;
-import shallowEqualDefault from "shallowEqual" /* 643 */;
+// Module 644 (defaultAreStatesEqual)
+import shallowEqual from "shallowEqual" /* 640 */;
+import shallowEqualDefault from "shallowEqual" /* 640 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 
@@ -28,7 +28,7 @@ function useStateFromStores(items, getCurrentRestrictedHoursState, items1, isVer
   let callback3;
   const tmp2 = callback2(null);
   if (null == tmp2.current) {
-    const obj = { stores: null, areStatesEqual: null, getStateFromStores: null, prevDeps: "Boolean", state: "accessible" };
+    const obj = { stores: null, areStatesEqual: null, getStateFromStores: null, prevDeps: "Boolean", state: "call" };
     obj[0] = items;
     obj[1] = tmp;
     obj[2] = getCurrentRestrictedHoursState;
@@ -47,7 +47,7 @@ function useStateFromStores(items, getCurrentRestrictedHoursState, items1, isVer
     tmp7 = null != state && tmp(state, tmp6);
   } else {
     tmp5 = state;
-    const obj2 = _require(643);
+    const obj2 = _require(640);
   }
   callback3(() => {
     current.getStateFromStores = closure_1;

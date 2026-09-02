@@ -1,13 +1,13 @@
-// Module ID: 6158
-// Function ID: 6159
+// Module ID: 6166
+// Function ID: 6167
 // Name: hasFlag
-// Dependencies: [676, 1399, 2]
+// Dependencies: [673, 1398, 2]
 // Exports: default
 
-// Module 6158 (hasFlag)
+// Module 6166 (hasFlag)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import hasFlag from "hasFlag" /* 1399 */;
+import ME from "ME" /* 673 */;
+import hasFlag from "hasFlag" /* 1398 */;
 
 const ActivityFlags = ME.ActivityFlags;
 const result = set.fileFinishedImporting("modules/activities/utils/hasFlag.tsx");

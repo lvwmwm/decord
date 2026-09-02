@@ -1,14 +1,14 @@
-// Module ID: 17326
-// Function ID: 17327
+// Module ID: 17562
+// Function ID: 17563
 // Name: orderify
-// Dependencies: [32, 19, 17313, 14801, 21, 4478, 38, 6237, 7764, 1236, 17327, 17312, 17328, 17348, 17351, 17353, 1628, 4723, 5941, 6008, 17355, 2]
+// Dependencies: [32, 19, 17549, 15030, 21, 4478, 38, 6246, 7773, 1233, 17563, 17548, 17564, 17584, 17587, 17589, 1627, 4723, 5949, 6016, 17591, 2]
 // Exports: default
 
-// Module 17326 (orderify)
+// Module 17562 (orderify)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import usePriceTiers from "usePriceTiers" /* 17313 */;
-import { GuildRoleSubscriptionsTierScenes as closure_7 } from "MAX_SUBSCRIPTION_TIERS" /* 14801 */;
+import usePriceTiers from "usePriceTiers" /* 17549 */;
+import { GuildRoleSubscriptionsTierScenes as closure_7 } from "MAX_SUBSCRIPTION_TIERS" /* 15030 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

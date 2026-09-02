@@ -1,12 +1,12 @@
 // Module ID: 4501
 // Function ID: 4502
 // Name: initialize
-// Dependencies: [4502, 4514, 4517, 4528, 589, 709, 2]
+// Dependencies: [4502, 4514, 4517, 4528, 586, 706, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
 // Module 4501 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import DevToolsFocusedPidsTrackMode from "DevToolsFocusedPidsTrackMode" /* 4528 */;
 import closure_2 from "handleLoadMessages" /* 4502 */;
 import closure_3 from "gameFromServer" /* 4514 */;

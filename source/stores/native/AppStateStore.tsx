@@ -1,16 +1,16 @@
-// Module ID: 7157
-// Function ID: 7158
+// Module ID: 7166
+// Function ID: 7167
 // Name: getState
-// Dependencies: [17, 676, 589, 698, 2009, 709, 2]
+// Dependencies: [17, 673, 586, 695, 2008, 706, 2]
 
-// Module 7157 (getState)
+// Module 7166 (getState)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import initializeDefault from "initialize" /* 589 */;
-import ME from "ME" /* 676 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import promise from "expandEventProperties" /* 698 */;
+import initializeDefault from "initialize" /* 586 */;
+import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import promise from "expandEventProperties" /* 695 */;
 
 const AppStates = ME.AppStates;
 const currentState = get_ActivityIndicator.AppState.currentState;

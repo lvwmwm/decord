@@ -1,18 +1,18 @@
-// Module ID: 16082
-// Function ID: 16083
+// Module ID: 16313
+// Function ID: 16314
 // Name: getIconForChannel
-// Dependencies: [676, 5043, 5050, 5046, 5029, 5037, 5036, 2]
+// Dependencies: [673, 5047, 5054, 5050, 5033, 5041, 5040, 2]
 // Exports: getIconForChannel
 
-// Module 16082 (getIconForChannel)
+// Module 16313 (getIconForChannel)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import TextIcon from "TextIcon" /* 5029 */;
-import ImageIcon from "ImageIcon" /* 5036 */;
-import ForumIcon from "ForumIcon" /* 5037 */;
-import AnnouncementsIcon from "AnnouncementsIcon" /* 5043 */;
-import StageIcon from "StageIcon" /* 5046 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5050 */;
+import ME from "ME" /* 673 */;
+import TextIcon from "TextIcon" /* 5033 */;
+import ImageIcon from "ImageIcon" /* 5040 */;
+import ForumIcon from "ForumIcon" /* 5041 */;
+import AnnouncementsIcon from "AnnouncementsIcon" /* 5047 */;
+import StageIcon from "StageIcon" /* 5050 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5054 */;
 
 const ChannelTypes = ME.ChannelTypes;
 const result = set.fileFinishedImporting("modules/icymi/native/util/getIconForChannel.tsx");

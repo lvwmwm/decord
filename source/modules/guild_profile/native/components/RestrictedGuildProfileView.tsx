@@ -1,20 +1,20 @@
-// Module ID: 9013
-// Function ID: 9014
+// Module ID: 9027
+// Function ID: 9028
 // Name: RestrictedGuildProfileView
-// Dependencies: [19, 17, 21, 9014, 4413, 4197, 712, 4940, 6004, 4474, 1236, 2]
+// Dependencies: [19, 17, 21, 9028, 4413, 4197, 709, 4940, 6012, 4474, 1233, 2]
 // Exports: default
 
-// Module 9013 (RestrictedGuildProfileView)
+// Module 9027 (RestrictedGuildProfileView)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import map from "map" /* 4197 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import Text from "Text" /* 4474 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import GuildIconSizes from "GuildIconSizes" /* 6004 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
-import GuildProfileBackground from "GuildProfileBackground" /* 9014 */;
+import GuildIconSizes from "GuildIconSizes" /* 6012 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
+import GuildProfileBackground from "GuildProfileBackground" /* 9028 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

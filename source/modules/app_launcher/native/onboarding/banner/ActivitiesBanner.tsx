@@ -1,13 +1,13 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11844
+// Function ID: 11845
 // Name: ActivitiesBanner
-// Dependencies: [32, 19, 21, 11610, 11622, 11633, 1236, 2]
+// Dependencies: [32, 19, 21, 11833, 11845, 11856, 1233, 2]
 // Exports: default
 
-// Module 11621 (ActivitiesBanner)
+// Module 11844 (ActivitiesBanner)
 import noopAll from "noop" /* 19 */;
-import useActivityApplications from "useActivityApplications" /* 11610 */;
-import BannerBaseDefault from "BannerBase" /* 11633 */;
+import useActivityApplications from "useActivityApplications" /* 11833 */;
+import BannerBaseDefault from "BannerBase" /* 11856 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -25,10 +25,10 @@ export default function ActivitiesBanner(context) {
     if (null != tmp5) {
       obj = { image: null, text: null };
       obj[0] = tmp8;
-      const intl = tmp(1236).intl;
+      const intl = tmp(1233).intl;
       obj1 = { activityName: null };
       obj1[0] = tmp4.name;
-      obj[1] = intl.formatToPlainString(tmp(1236).t.zHMWuV, obj1);
+      obj[1] = intl.formatToPlainString(tmp(1233).t.zHMWuV, obj1);
       tmp6Result = jsx(BannerBaseDefault, { image: null, text: null });
       const tmp7Result = BannerBaseDefault;
     }

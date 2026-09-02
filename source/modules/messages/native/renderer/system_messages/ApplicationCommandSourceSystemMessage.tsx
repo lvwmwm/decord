@@ -1,16 +1,16 @@
-// Module ID: 7918
-// Function ID: 7919
+// Module ID: 7927
+// Function ID: 7928
 // Name: createApplicationCommandSourceSystemMessage
-// Dependencies: [676, 4953, 7919, 7869, 1236, 7871, 7873, 2]
+// Dependencies: [673, 4953, 7928, 7878, 1233, 7880, 7882, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 7918 (createApplicationCommandSourceSystemMessage)
+// Module 7927 (createApplicationCommandSourceSystemMessage)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import regExp from "regExp" /* 4953 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7871 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7873 */;
-import getApplicationCommand from "getApplicationCommand" /* 7919 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7880 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7882 */;
+import getApplicationCommand from "getApplicationCommand" /* 7928 */;
 
 const MessageTypes = ME.MessageTypes;
 const COMMAND_SENTINEL = regExp.COMMAND_SENTINEL;
@@ -26,8 +26,8 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
   }
   if (null != applicationCommand) {
     if (null != name) {
-      const messageAuthorWithProcessedColor = tmp(7869).getMessageAuthorWithProcessedColor(message);
-      const intl = tmp(1236).intl;
+      const messageAuthorWithProcessedColor = tmp(7878).getMessageAuthorWithProcessedColor(message);
+      const intl = tmp(1233).intl;
       obj = { username: null, usernameOnClick: null, commandName: null, applicationName: null };
       obj[0] = messageAuthorWithProcessedColor.nick;
       obj = { message: null, author: null, roleStyle: null };
@@ -44,7 +44,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
       obj1 = { content: null };
       obj[2] = name2;
       obj[3] = name;
-      obj1[0] = intl.formatToParts(tmp(1236).t["1Zm+zw"], obj);
+      obj1[0] = intl.formatToParts(tmp(1233).t["1Zm+zw"], obj);
       const merged = Object.assign(createCommonMessageDefault(message));
       return obj1;
     }

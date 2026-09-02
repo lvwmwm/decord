@@ -1,24 +1,24 @@
-// Module ID: 7397
-// Function ID: 7398
+// Module ID: 7406
+// Function ID: 7407
 // Name: getAll
-// Dependencies: [1391, 1218, 1387, 1992, 1985, 1909, 4121, 676, 1394, 505, 506, 3, 1956, 4112, 514, 698, 1399, 2]
+// Dependencies: [1390, 1215, 1386, 1991, 1984, 1908, 4120, 673, 1393, 502, 503, 3, 1955, 4111, 511, 695, 1398, 2]
 
-// Module 7397 (getAll)
+// Module 7406 (getAll)
 import set2 from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import sum from "sum" /* 505 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import set3 from "set" /* 1394 */;
-import itemsDefault from "items" /* 1956 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
-import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "trackCommunicationDisabled" /* 1992 */;
-import closure_9 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_10 from "createGuildRecordFromRust" /* 1909 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4121 */;
-import ME from "ME" /* 676 */;
-import importAllResult from "fromString" /* 506 */;
+import sum from "sum" /* 502 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import set3 from "set" /* 1393 */;
+import itemsDefault from "items" /* 1955 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
+import closure_6 from "fetchFingerprint" /* 1215 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_10 from "createGuildRecordFromRust" /* 1908 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
+import ME from "ME" /* 673 */;
+import importAllResult from "fromString" /* 503 */;
 
 let obj = require;
 ({ createChannelRecordFromServer: c4, ChannelRecordBase: c5 } = createChannelRecord);
@@ -103,21 +103,21 @@ prototype["detectRoleVisibilityChanges"] = function detectRoleVisibilityChanges(
     if (isSubscriptionRoleResult) {
       let tmp = obj;
       let tmp2 = dependencyMap;
-      obj = obj(4112);
+      obj = obj(4111);
       isSubscriptionRoleResult = obj.isSubscriptionRole(tmp18);
     }
     if (isSubscriptionRoleResult) {
       let tmp4 = obj;
       let tmp5 = dependencyMap;
-      let obj2 = obj(4112);
+      let obj2 = obj(4111);
       isSubscriptionRoleResult = obj2.isSubscriptionRoleAvailableForPurchase(tmp18);
     }
     let tmp7 = dependencyMap;
     let tmp6 = obj;
-    let obj3 = obj(4112);
+    let obj3 = obj(4111);
     let isSubscriptionRoleResult1 = obj3.isSubscriptionRole(tmp17);
     if (isSubscriptionRoleResult1) {
-      let tmp6Result = tmp6(4112);
+      let tmp6Result = tmp6(4111);
       isSubscriptionRoleResult1 = tmp6Result.isSubscriptionRoleAvailableForPurchase(tmp17);
     }
     if (!isSubscriptionRoleResult) {
@@ -386,7 +386,7 @@ prototype["handleChannelSync"] = function handleChannelSync(integrity_check, dat
   }
 };
 prototype["markGuildForResync"] = function markGuildForResync(id, database, BackgroundSync, ChannelVisibleParentHidden) {
-  obj = obj(514);
+  obj = obj(511);
   const v4Result = obj.v4();
   obj = { guild_id: id, request_id: v4Result, trigger: BackgroundSync, change_type: ChannelVisibleParentHidden };
   expandEventPropertiesDefault.track(constants.GUILD_CHANNEL_RESYNC_REQUESTED, obj);

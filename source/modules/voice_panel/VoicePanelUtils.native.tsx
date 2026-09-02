@@ -1,13 +1,13 @@
-// Module ID: 9651
-// Function ID: 9652
+// Module ID: 9664
+// Function ID: 9665
 // Name: isVoicePanelEnabled
-// Dependencies: [1387, 4554, 4728, 4729, 647, 2]
+// Dependencies: [1386, 4554, 4728, 4729, 644, 2]
 // Exports: isVoicePanelEnabled, useIsAnyVoicePanelOpen, useIsVoicePanelFullscreen, useIsVoicePanelMounted, useIsVoicePanelOpen, useIsVoicePanelShowing
 
-// Module 9651 (isVoicePanelEnabled)
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+// Module 9664 (isVoicePanelEnabled)
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import useIsStageVoicePanelEnabled from "useIsStageVoicePanelEnabled" /* 4729 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "createRTCConnection" /* 4554 */;
 import closure_4 from "withEqualityFn" /* 4728 */;
 

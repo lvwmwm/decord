@@ -1,10 +1,10 @@
-// Module ID: 5376
-// Function ID: 5377
+// Module ID: 5384
+// Function ID: 5385
 // Name: ButtonGroup
 // Dependencies: [19, 21, 4478, 4926, 2]
 // Exports: ButtonGroup
 
-// Module 5376 (ButtonGroup)
+// Module 5384 (ButtonGroup)
 import noopAll from "noop" /* 19 */;
 import Stack from "Stack" /* 4926 */;
 import { jsx } from "jsxProd" /* 21 */;

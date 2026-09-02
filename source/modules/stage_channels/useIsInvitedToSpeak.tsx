@@ -1,15 +1,15 @@
-// Module ID: 9647
-// Function ID: 9648
+// Module ID: 9660
+// Function ID: 9661
 // Name: useIsInvitedToSpeak
-// Dependencies: [1218, 1981, 589, 4668, 2]
+// Dependencies: [1215, 1980, 586, 4668, 2]
 // Exports: default
 
-// Module 9647 (useIsInvitedToSpeak)
-import initialize from "initialize" /* 589 */;
+// Module 9660 (useIsInvitedToSpeak)
+import initialize from "initialize" /* 586 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4668 */;
 import useAudienceRequestToSpeakStateDefault from "useAudienceRequestToSpeakState" /* 4668 */;
-import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "handleConnectionOpen" /* 1981 */;
+import closure_3 from "fetchFingerprint" /* 1215 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useIsInvitedToSpeak.tsx");

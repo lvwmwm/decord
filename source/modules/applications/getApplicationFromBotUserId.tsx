@@ -1,12 +1,12 @@
-// Module ID: 12164
-// Function ID: 12165
+// Module ID: 12388
+// Function ID: 12389
 // Name: useGetApplicationFromBotUserId
-// Dependencies: [7366, 676, 589, 2]
+// Dependencies: [7375, 673, 586, 2]
 // Exports: default
 
-// Module 12164 (useGetApplicationFromBotUserId)
-import closure_2 from "createUserWidgetFromServer" /* 7366 */;
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
+// Module 12388 (useGetApplicationFromBotUserId)
+import closure_2 from "createUserWidgetFromServer" /* 7375 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/applications/getApplicationFromBotUserId.tsx");
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/applications/getApp
 export default function useGetApplicationFromBotUserId(arg0) {
   const _require = arg0;
   const items = [closure_2];
-  const stateFromStores = _require(589).useStateFromStores(items, () => {
+  const stateFromStores = _require(586).useStateFromStores(items, () => {
     let tmp = closure_0;
     let tmp2;
     if (null !== closure_0) {

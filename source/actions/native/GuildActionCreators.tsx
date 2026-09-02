@@ -1,14 +1,14 @@
-// Module ID: 17200
-// Function ID: 17201
+// Module ID: 17436
+// Function ID: 17437
 // Name: batchChannelUpdate
-// Dependencies: [676, 709, 530, 2]
+// Dependencies: [673, 706, 527, 2]
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 17200 (batchChannelUpdate)
+// Module 17436 (batchChannelUpdate)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 530 */;
-import ME from "ME" /* 676 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import sendRequest from "sendRequest" /* 527 */;
+import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 function batchChannelUpdate(closure_1_0) {
   if (arg1.length > 0) {

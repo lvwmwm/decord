@@ -1,16 +1,16 @@
-// Module ID: 14927
-// Function ID: 14928
+// Module ID: 15156
+// Function ID: 15157
 // Name: useRoleColorSettingValue
-// Dependencies: [19, 4470, 7884, 589, 14092, 1236, 11068, 2]
+// Dependencies: [19, 4470, 7893, 586, 14315, 1233, 11288, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 14927 (useRoleColorSettingValue)
-import initialize from "initialize" /* 589 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import setFontSize from "setFontSize" /* 14092 */;
+// Module 15156 (useRoleColorSettingValue)
+import initialize from "initialize" /* 586 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import setFontSize from "setFontSize" /* 14315 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import createToggle from "createToggle" /* 11068 */;
+import createToggle from "createToggle" /* 11288 */;
 
 require = arg1;
 function useRoleColorSettingValue() {
@@ -23,16 +23,16 @@ function onRoleColorSettingValueChange(roleStyle) {
 function useRoleColorSettingOptions() {
   return React.useMemo(() => {
     let obj = { label: null, value: "username" };
-    const intl = callback(1236).intl;
-    obj[0] = intl.string(callback(1236).t.YEOEi6);
+    const intl = callback(1233).intl;
+    obj[0] = intl.string(callback(1233).t.YEOEi6);
     const items = [obj, , ];
     obj = { label: null, value: "dot" };
-    const intl2 = callback(1236).intl;
-    obj[0] = intl2.string(callback(1236).t.mQaro3);
+    const intl2 = callback(1233).intl;
+    obj[0] = intl2.string(callback(1233).t.mQaro3);
     items[1] = obj;
     obj = { label: null, value: "hidden" };
-    const intl3 = callback(1236).intl;
-    obj[0] = intl3.string(callback(1236).t.Ji2EVJ);
+    const intl3 = callback(1233).intl;
+    obj[0] = intl3.string(callback(1233).t.Ji2EVJ);
     items[2] = obj;
     return items;
   }, []);

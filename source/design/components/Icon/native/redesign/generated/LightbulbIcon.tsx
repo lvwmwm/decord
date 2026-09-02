@@ -1,14 +1,14 @@
-// Module ID: 16008
-// Function ID: 16009
+// Module ID: 16239
+// Function ID: 16240
 // Name: LightbulbIcon
-// Dependencies: [19, 21, 712, 4196, 16009, 2]
+// Dependencies: [19, 21, 709, 4196, 16240, 2]
 // Exports: LightbulbIcon
 
-// Module 16008 (LightbulbIcon)
+// Module 16239 (LightbulbIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 16009 */;
+import registerAsset from "registerAsset" /* 16240 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

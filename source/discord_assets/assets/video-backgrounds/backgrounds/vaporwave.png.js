@@ -1,9 +1,9 @@
-// Module ID: 9796
-// Function ID: 9797
+// Module ID: 9818
+// Function ID: 9819
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9796 (metadata)
+// Module 9818 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/video-backgrounds/backgrounds/vaporwave.png.js");

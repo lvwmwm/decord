@@ -1,15 +1,15 @@
-// Module ID: 14693
-// Function ID: 14694
+// Module ID: 14919
+// Function ID: 14920
 // Name: useQuestDockModeAnimatedReaction
-// Dependencies: [32, 19, 14694, 5387, 14696, 14697, 14700, 10990, 14698, 14701, 4217, 9209, 14695, 589, 687, 11086, 14703, 8998, 8999, 9003, 7473, 5390, 7446, 7463, 4445, 14704, 2009, 2]
+// Dependencies: [32, 19, 14920, 5395, 14922, 14923, 14926, 11210, 14924, 14927, 4217, 9223, 14921, 586, 684, 11306, 14929, 9012, 9013, 9017, 7483, 5398, 7456, 7473, 4445, 14930, 2008, 2]
 // Exports: useActionSheetPressHandler, useQuestDockDismissalReset, useQuestDockExternalOffset, useQuestDockModeAnimatedReaction
 
-// Module 14693 (useQuestDockModeAnimatedReaction)
+// Module 14919 (useQuestDockModeAnimatedReaction)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "QuestDockMode" /* 14694 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5387 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14696 */;
+import closure_5 from "QuestDockMode" /* 14920 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5395 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14922 */;
 
 const require = arg1;
 ({ QUEST_DOCK_CLOSED_HEIGHT: error, QUEST_DOCK_COLLAPSED_HEIGHT: closure_8, QUEST_DOCK_EXTERNAL_OFFSET_CLOSED: c9, QUEST_DOCK_EXTERNAL_OFFSET_COLLAPSED_WITH_YOU_BAR: c10, QUEST_DOCK_EXTERNAL_OFFSET_EXPANDED_WITH_YOU_BAR: unpackModuleId, QUEST_DOCK_VERTICAL_EDGE_GUTTER_EXPANDED: closure_12 } = QUEST_DOCK_COLLAPSED_HEIGHT);
@@ -117,7 +117,7 @@ export const useQuestDockModeAnimatedReaction = function useQuestDockModeAnimate
 };
 export const useQuestDockExternalOffset = function useQuestDockExternalOffset() {
   let items = [closure_5];
-  const tmp = callback(first(589).useStateFromStoresArray(items, () => {
+  const tmp = callback(first(586).useStateFromStoresArray(items, () => {
     const items = [, ];
     ({ prevRestingQuestDockMode: arr[0], isEligibleToBeVisible: arr[1] } = closure_5);
     return items;
@@ -145,8 +145,8 @@ export const useQuestDockExternalOffset = function useQuestDockExternalOffset() 
   }, items1);
 };
 export const useQuestDockDismissalReset = function useQuestDockDismissalReset() {
-  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(14700).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  const activeQuestDockMode = React.useContext(setRestingQuestDockMode(14697).QuestDockGestureContext).activeQuestDockMode;
+  setRestingQuestDockMode = React.useContext(setRestingQuestDockMode(14926).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  const activeQuestDockMode = React.useContext(setRestingQuestDockMode(14923).QuestDockGestureContext).activeQuestDockMode;
   const items = [setRestingQuestDockMode, activeQuestDockMode];
   const effect = React.useEffect(() => {
     let isSoftDismissedResult = activeQuestDockMode.get() !== closure_1_6.SOFT_DISMISSED;
@@ -173,29 +173,29 @@ export const useQuestDockDismissalReset = function useQuestDockDismissalReset() 
     };
   }, items);
 };
-export const useActionSheetPressHandler = function useActionSheetPressHandler(memo) {
-  const _require = memo;
-  const questImpressionId = _require(11086).useQuestImpressionId();
-  const items = [memo, questImpressionId];
+export const useActionSheetPressHandler = function useActionSheetPressHandler(questCreative) {
+  const _require = questCreative;
+  const questImpressionId = _require(11306).useQuestImpressionId();
+  const items = [questCreative, questImpressionId];
   return React.useCallback(() => {
-    let obj = memo(closure_1_2[16]);
-    const questDockMenuAdCreative = obj.getQuestDockMenuAdCreative(memo);
-    obj1 = memo(closure_1_2[17]);
-    if (obj1.shouldMigrateToAdAnalyticsInterface(memo(closure_1_2[17]).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_dock_action_sheet")) {
+    let obj = questCreative(closure_1_2[16]);
+    const creativeAnalyticsParams = obj.getCreativeAnalyticsParams(questCreative);
+    obj1 = questCreative(closure_1_2[17]);
+    if (obj1.shouldMigrateToAdAnalyticsInterface(questCreative(closure_1_2[17]).AdAnalyticsInterfaceExperimentStep.STEP_2_CLICKED_INTERNAL, "quest_dock_action_sheet")) {
       let tmpResult = tmp(tmp2[18]);
       obj = { type: null };
       obj[0] = tmp(tmp2[19]).AdUserActionType.CLICK_INTERNAL;
-      const merged = Object.assign(questDockMenuAdCreative);
+      const merged = Object.assign(creativeAnalyticsParams);
       obj.questContentCTA = tmp(tmp2[20]).QuestContentCTA.OPEN_CONTEXT_MENU;
       obj.surfaceId = tmp(tmp2[21]).QuestContent.QUEST_BAR_MOBILE;
       obj.sourceQuestContent = tmp(tmp2[21]).QuestContent.QUEST_BAR_MOBILE;
       obj.impressionId = questImpressionId;
       tmpResult.captureAdUserAction(obj);
       let tmp7 = questImpressionId;
-    } else if (questDockMenuAdCreative.adCreativeType === tmp(tmp2[22]).AdCreativeType.QUEST) {
+    } else if (creativeAnalyticsParams.adCreativeType === tmp(tmp2[22]).AdCreativeType.QUEST) {
       tmpResult = tmp(tmp2[23]);
       obj = { questId: null, questContent: null, questContentCTA: null, sourceQuestContent: null, impressionId: null };
-      obj[0] = questDockMenuAdCreative.adCreativeId;
+      obj[0] = creativeAnalyticsParams.adCreativeId;
       obj[1] = tmp(tmp2[21]).QuestContent.QUEST_BAR_MOBILE;
       obj[2] = tmp(tmp2[20]).QuestContentCTA.OPEN_CONTEXT_MENU;
       obj[3] = tmp(tmp2[21]).QuestContent.QUEST_BAR_MOBILE;
@@ -204,7 +204,7 @@ export const useActionSheetPressHandler = function useActionSheetPressHandler(me
       tmp7 = questImpressionId;
     } else {
       obj1 = { adContentId: null, adCreativeType: null, questContent: null, questContentCTA: null, sourceQuestContent: null, impressionId: null };
-      ({ adCreativeId: obj9[0], adCreativeType: obj9[1] } = questDockMenuAdCreative);
+      ({ adCreativeId: obj9[0], adCreativeType: obj9[1] } = creativeAnalyticsParams);
       obj1[2] = tmp(tmp2[21]).QuestContent.QUEST_BAR_MOBILE;
       obj1[3] = tmp(tmp2[20]).QuestContentCTA.OPEN_CONTEXT_MENU;
       obj1[4] = tmp(tmp2[21]).QuestContent.QUEST_BAR_MOBILE;
@@ -213,6 +213,6 @@ export const useActionSheetPressHandler = function useActionSheetPressHandler(me
       const result1 = tmp(tmp2[23]).trackAdContentClicked(obj1);
       const tmpResult1 = tmp(tmp2[23]);
     }
-    questImpressionId(closure_1_2[24]).openLazy(memo(closure_1_2[26])(closure_1_2[25], closure_1_2.paths), "QuestDockContextMenuActionSheet", { creative: memo, impressionId: tmp7 });
+    questImpressionId(closure_1_2[24]).openLazy(questCreative(closure_1_2[26])(closure_1_2[25], closure_1_2.paths), "QuestDockContextMenuActionSheet", { creative: questCreative, impressionId: tmp7 });
   }, items);
 };

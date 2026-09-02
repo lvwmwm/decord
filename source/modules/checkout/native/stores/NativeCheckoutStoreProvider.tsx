@@ -1,16 +1,16 @@
-// Module ID: 10578
-// Function ID: 10579
+// Module ID: 10799
+// Function ID: 10800
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7169, 676, 4460, 21, 4478, 5941, 10579, 7174, 7175, 6048, 514, 1208, 4945, 10582, 698, 10586, 2]
+// Dependencies: [5, 32, 19, 17, 7178, 673, 4460, 21, 4478, 5949, 10800, 7183, 7184, 6056, 511, 1205, 4945, 10803, 695, 10807, 2]
 // Exports: default
 
-// Module 10578 (NativeCheckoutStoreProvider)
+// Module 10799 (NativeCheckoutStoreProvider)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import context from "context" /* 7169 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import context from "context" /* 7178 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import { ItemPurchaseType } from "CustomCheckoutFlow" /* 4460 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -23,7 +23,7 @@ function NativeCheckoutStoreProvider(children) {
   let redux;
   let first;
   closure_11 = undefined;
-  closure_8 = order(5941)(() => {
+  closure_8 = order(5949)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -37,7 +37,7 @@ function NativeCheckoutStoreProvider(children) {
     obj = { loadId: id, startTime: Date.now() };
     return obj;
   });
-  redux = order(5941)(() => {
+  redux = order(5949)(() => {
     const obj = {};
     const merged = Object.assign(closure_6);
     obj.load_id = loadId.loadId;
@@ -188,7 +188,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
               closure_2 = undefined;
               v0 = 1;
               c4 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

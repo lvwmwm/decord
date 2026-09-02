@@ -1,13 +1,13 @@
 // Module ID: 4155
 // Function ID: 4156
 // Name: getBraintreeSDK
-// Dependencies: [4156, 676, 4157, 4160, 2009, 4160, 2]
+// Dependencies: [4156, 673, 4157, 4160, 2008, 4160, 2]
 // Exports: collectDeviceData, getBraintreeSDK
 
 // Module 4155 (getBraintreeSDK)
 import _mod4157 from "module_4157" /* 4157 */;
 import closure_2 from "getClient" /* 4156 */;
-import { PaymentSettings } from "ME" /* 676 */;
+import { PaymentSettings } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("utils/BraintreeUtils.tsx");

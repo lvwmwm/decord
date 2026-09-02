@@ -1,14 +1,14 @@
-// Module ID: 13742
-// Function ID: 13743
+// Module ID: 13965
+// Function ID: 13966
 // Name: LocalImageThumbnail
-// Dependencies: [19, 17, 21, 500, 13743, 2]
+// Dependencies: [19, 17, 21, 1234, 13966, 2]
 // Exports: default
 
-// Module 13742 (LocalImageThumbnail)
+// Module 13965 (LocalImageThumbnail)
 import noopAll from "noop" /* 19 */;
 import { Image as _default } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 noopAll;
 if (set.isAndroid()) {

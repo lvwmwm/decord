@@ -1,14 +1,14 @@
-// Module ID: 9705
-// Function ID: 9706
-// Dependencies: [4701, 676, 685, 709, 4713, 503, 1400, 530, 5487, 5482, 6168, 2]
+// Module ID: 9719
+// Function ID: 9720
+// Dependencies: [4701, 673, 682, 706, 4713, 500, 1399, 527, 5495, 5490, 6176, 2]
 
-// Module 9705
-import encodeProperties from "encodeProperties" /* 503 */;
-import sendRequest from "sendRequest" /* 530 */;
+// Module 9719
+import encodeProperties from "encodeProperties" /* 500 */;
+import sendRequest from "sendRequest" /* 527 */;
 import _modDef4713 from "module_4713" /* 4713 */;
 import closure_3 from "updateUserGuildSettingsInternal" /* 4701 */;
-import ME from "ME" /* 676 */;
-import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES" /* 685 */;
+import ME from "ME" /* 673 */;
+import { ChannelNotificationSettingsFlags as closure_7 } from "MAX_FAVORITES" /* 682 */;
 
 require = arg1;
 ({ BITRATE_DEFAULT: c4, ChannelTypes: c5, Endpoints: closure_6 } = ME);
@@ -21,8 +21,8 @@ export default {
     if (permissionOverwrites === undefined) {
       permissionOverwrites = [];
     }
-    ({ bitrate, userLimit, parentId, skuId, flags, availableTags, gameId } = guildId);
-    let obj = permissionOverwrites(709);
+    ({ bitrate, userLimit, parentId, skuId, applicationId, flags, availableTags, gameId } = guildId);
+    let obj = permissionOverwrites(706);
     obj.dispatch({ type: "CREATE_CHANNEL_MODAL_SUBMIT", guildId, channelType: type });
     obj = { type, name: guildId.name, permission_overwrites: permissionOverwrites };
     let tmp4 = null != bitrate;
@@ -57,7 +57,7 @@ export default {
     }
     if (type === constants.GUILD_STORE) {
       if (null == skuId) {
-        const _Error = Error;
+        const _Error2 = Error;
         error = new Error("Unexpected missing SKU");
         throw error;
       } else {
@@ -65,11 +65,21 @@ export default {
         obj.branch_id = guildId.branchId;
       }
     }
+    if (type === tmp8.GUILD_APP) {
+      if (null == applicationId) {
+        const _Error = Error;
+        const error1 = new Error("Unexpected missing application");
+        throw error1;
+      } else {
+        obj.application_id = applicationId;
+      }
+    }
     obj = { url: closure_6.GUILD_CHANNELS(guildId), body: obj, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
     const tmp = permissionOverwrites;
+    tmp8 = constants;
     const tmpResult = permissionOverwrites(4713);
     obj[3] = {
-      event: guildId(503).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(500).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         let obj = guildId(closure_1_2[6]);
         obj = { is_private: permissionOverwrites.length > 0, channel_id: null, channel_type: null };
@@ -93,7 +103,7 @@ export default {
       }
     };
     obj1 = {
-      event: guildId(503).NetworkActionNames.CHANNEL_CREATE,
+      event: guildId(500).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {
         let obj = guildId(closure_1_2[6]);
         obj = { is_private: permissionOverwrites.length > 0, channel_id: null, channel_type: null };
@@ -116,8 +126,8 @@ export default {
         return obj.exact(obj);
       }
     };
-    obj[4] = guildId(530).rejectWithMigratedError();
-    const obj6 = guildId(530);
+    obj[4] = guildId(527).rejectWithMigratedError();
+    const obj6 = guildId(527);
     return tmpResult.post(obj).then((body) => {
       if (closure_1_3.isOptInEnabled(guildId)) {
         let obj = permissionOverwrites(closure_1_2[8]);

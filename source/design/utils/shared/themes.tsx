@@ -1,12 +1,12 @@
-// Module ID: 1364
-// Function ID: 1365
+// Module ID: 1363
+// Function ID: 1364
 // Name: isThemeLight
-// Dependencies: [505, 2]
+// Dependencies: [502, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 1364 (isThemeLight)
+// Module 1363 (isThemeLight)
 import set from "set" /* 2 */;
-import sum from "sum" /* 505 */;
+import sum from "sum" /* 502 */;
 
 const ThemeTypes = sum.ThemeTypes;
 const result = set.fileFinishedImporting("design/utils/shared/themes.tsx");

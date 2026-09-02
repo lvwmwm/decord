@@ -1,13 +1,13 @@
-// Module ID: 8885
-// Function ID: 8886
+// Module ID: 8900
+// Function ID: 8901
 // Name: _navigateToGameAnnouncement
-// Dependencies: [5, 1909, 676, 38, 6185, 8649, 1222, 2]
+// Dependencies: [5, 1908, 673, 38, 6194, 8664, 1219, 2]
 // Exports: default
 
-// Module 8885 (_navigateToGameAnnouncement)
+// Module 8900 (_navigateToGameAnnouncement)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import ME from "ME" /* 676 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function _navigateToGameAnnouncement() {
@@ -56,7 +56,7 @@ function _navigateToGameAnnouncement() {
               let guild3;
               c3 = 1;
               guild = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp5) {
@@ -95,7 +95,7 @@ function _navigateToGameAnnouncement() {
                     if (null != set) {
                       if (!set.has(constants.PREVIEW_ENABLED)) {
                         if (null != lib) {
-                          let obj5 = id(8649);
+                          let obj5 = id(8664);
                           const obj2 = { inviteKey: null, context: null, skipOnboarding: true };
                           obj2[0] = lib.code;
                           let obj3 = { location: null };
@@ -109,7 +109,7 @@ function _navigateToGameAnnouncement() {
                         }
                       }
                     }
-                    let obj9 = lib(6185);
+                    let obj9 = lib(6194);
                     obj5 = { shouldNavigate: true, channelId: null, messageId: null, joinSource: null };
                     obj5[1] = dependencyMap;
                     obj5[2] = c3;
@@ -148,7 +148,7 @@ function _navigateToGameAnnouncement() {
               obj[0] = arg1;
               return obj;
             }
-            obj3 = lib(1222);
+            obj3 = lib(1219);
             obj9 = { sourceLocationStack: null };
             obj9[0] = guild;
             obj3.transitionTo(guild3.CHANNEL(id, dependencyMap, c3), obj9);

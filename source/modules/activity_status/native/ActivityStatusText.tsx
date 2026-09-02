@@ -1,10 +1,10 @@
-// Module ID: 9247
-// Function ID: 9248
+// Module ID: 9261
+// Function ID: 9262
 // Name: ActivityStatusText
 // Dependencies: [19, 21, 4478, 4474, 2]
 // Exports: default
 
-// Module 9247 (ActivityStatusText)
+// Module 9261 (ActivityStatusText)
 import noopAll from "noop" /* 19 */;
 import Text from "Text" /* 4474 */;
 import { jsx } from "jsxProd" /* 21 */;

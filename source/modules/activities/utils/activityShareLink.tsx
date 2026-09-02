@@ -1,12 +1,12 @@
-// Module ID: 14141
-// Function ID: 14142
+// Module ID: 14364
+// Function ID: 14365
 // Name: items
-// Dependencies: [4461, 1486, 1236, 2]
+// Dependencies: [4461, 1485, 1233, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 14141 (items)
+// Module 14364 (items)
 import set from "set" /* 2 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import getPathsFromURL from "getPathsFromURL" /* 4461 */;
 
 const items = [getPathsFromURL.parseQuestsEmbedCode];
@@ -29,12 +29,12 @@ export const resolveActivityShareMessageContent = function resolveActivityShareM
   });
   let combined = replaced;
   if (!_require) {
-    const intl = _require(1236).intl;
+    const intl = _require(1233).intl;
     const obj = { applicationName: null, link: null };
     obj[0] = closure_14.name;
     obj[1] = closure_12;
     let _HermesInternal = HermesInternal;
-    combined = "" + replaced + "\n\n" + intl.formatToMarkdownString(_require(1236).t.dZJpdG, obj);
+    combined = "" + replaced + "\n\n" + intl.formatToMarkdownString(_require(1233).t.dZJpdG, obj);
   }
   return combined;
 };

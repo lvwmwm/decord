@@ -1,11 +1,11 @@
-// Module ID: 9840
-// Function ID: 9841
+// Module ID: 9862
+// Function ID: 9863
 // Name: items
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 9840 (items)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 9862 (items)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let items = [];
 let c1 = false;

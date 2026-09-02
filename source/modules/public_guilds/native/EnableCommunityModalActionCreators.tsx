@@ -1,10 +1,10 @@
-// Module ID: 17245
-// Function ID: 17246
-// Dependencies: [4723, 17246, 2009, 2]
+// Module ID: 17481
+// Function ID: 17482
+// Dependencies: [4723, 17482, 2008, 2]
 
-// Module 17245
+// Module 17481
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import _modDef4723 from "module_4723" /* 4723 */;
 
 const ENABLED_COMMUNITY_MODAL_KEY = "ENABLED_COMMUNITY_MODAL_KEY";
@@ -12,7 +12,7 @@ const result = set.fileFinishedImporting("modules/public_guilds/native/EnableCom
 
 export default {
   open() {
-    _modDef4723.pushLazy(asyncRequireImpl(17246, dependencyMap.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
+    _modDef4723.pushLazy(asyncRequireImpl(17482, dependencyMap.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
   },
   close() {
     _modDef4723.popWithKey(ENABLED_COMMUNITY_MODAL_KEY);

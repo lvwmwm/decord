@@ -1,14 +1,14 @@
-// Module ID: 11321
-// Function ID: 11322
+// Module ID: 11544
+// Function ID: 11545
 // Name: BookmarkOutlineIcon
-// Dependencies: [19, 21, 712, 4196, 11322, 2]
+// Dependencies: [19, 21, 709, 4196, 11545, 2]
 // Exports: BookmarkOutlineIcon
 
-// Module 11321 (BookmarkOutlineIcon)
+// Module 11544 (BookmarkOutlineIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11322 */;
+import registerAsset from "registerAsset" /* 11545 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

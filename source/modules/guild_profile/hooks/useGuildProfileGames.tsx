@@ -1,14 +1,14 @@
-// Module ID: 9024
-// Function ID: 9025
+// Module ID: 9038
+// Function ID: 9039
 // Name: useGuildProfileGames
-// Dependencies: [19, 4503, 4502, 1218, 589, 6154, 1471, 2]
+// Dependencies: [19, 4503, 4502, 1215, 586, 6162, 1470, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 9024 (useGuildProfileGames)
+// Module 9038 (useGuildProfileGames)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "getOfficialApplicationId" /* 4503 */;
 import closure_4 from "handleLoadMessages" /* 4502 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileGames.tsx");
@@ -102,8 +102,8 @@ export const useAllGuildProfileGames = function useAllGuildProfileGames(profile)
   let games = profile;
   games = profile.games;
   const items = [closure_5];
-  const stateFromStores = games(589).useStateFromStores(items, () => authenticated.isAuthenticated());
-  games(6154);
+  const stateFromStores = games(586).useStateFromStores(items, () => authenticated.isAuthenticated());
+  games(6162);
   if (null != games) {
     if (!stateFromStores) {
       let items1 = [];
@@ -129,7 +129,7 @@ export const useAllGuildProfileGames = function useAllGuildProfileGames(profile)
       }
     }, items2);
     const items3 = [closure_4];
-    return games(589).useStateFromStoresArray(items3, () => {
+    return games(586).useStateFromStoresArray(items3, () => {
       const gameApplicationIds = games.gameApplicationIds;
       const mapped = gameApplicationIds.map((closure_0) => {
         let game = closure_1_4.getGame(closure_0);

@@ -1,14 +1,14 @@
-// Module ID: 12914
-// Function ID: 12915
+// Module ID: 13136
+// Function ID: 13137
 // Name: generateSeparatorRowData
-// Dependencies: [7842, 4478, 712, 1471, 2]
+// Dependencies: [7851, 4478, 709, 1470, 2]
 // Exports: generateSeparatorRowData
 
-// Module 12914 (generateSeparatorRowData)
+// Module 13136 (generateSeparatorRowData)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import Changeset from "Changeset" /* 7842 */;
+import ThemesDefault from "Themes" /* 709 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import Changeset from "Changeset" /* 7851 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 ({ RowType: obj1, SeparatorType: c3 } = Changeset);

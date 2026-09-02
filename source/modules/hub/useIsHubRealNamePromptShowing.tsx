@@ -1,17 +1,17 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12411
+// Function ID: 12412
 // Name: useIsHubRealNamePromptShowing
-// Dependencies: [19, 12188, 1992, 1909, 1922, 676, 12189, 589, 12190, 2]
+// Dependencies: [19, 12412, 1991, 1908, 1921, 673, 12413, 586, 12414, 2]
 // Exports: default
 
-// Module 12187 (useIsHubRealNamePromptShowing)
+// Module 12411 (useIsHubRealNamePromptShowing)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initialize" /* 12188 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { GuildFeatures } from "ME" /* 676 */;
-import { GuildPrompts } from "GuildPrompts" /* 12189 */;
+import closure_4 from "initialize" /* 12412 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import { GuildFeatures } from "ME" /* 673 */;
+import { GuildPrompts } from "GuildPrompts" /* 12413 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/hub/useIsHubRealNamePromptShowing.tsx");
@@ -19,7 +19,7 @@ const result = require("set").fileFinishedImporting("modules/hub/useIsHubRealNam
 export default function useIsHubRealNamePromptShowing(arg0) {
   const _require = arg0;
   const items = [closure_6, closure_4, closure_7, closure_5];
-  const stateFromStores = _require(589).useStateFromStores(items, () => {
+  const stateFromStores = _require(586).useStateFromStores(items, () => {
     const guild = closure_1_6.getGuild(closure_0);
     let hasItem;
     if (guild != null) {

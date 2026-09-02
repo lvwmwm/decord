@@ -1,16 +1,16 @@
-// Module ID: 14799
-// Function ID: 14800
+// Module ID: 15027
+// Function ID: 15028
 // Name: QUEST_DOCK_EXPANDED_HEIGHT
-// Dependencies: [32, 19, 17, 4470, 5387, 14696, 676, 21, 4478, 14703, 14692, 14697, 14700, 8569, 589, 4197, 712, 689, 4217, 4927, 500, 14783, 11334, 7796, 8602, 5493, 4940, 2]
+// Dependencies: [32, 19, 17, 4470, 5395, 14922, 673, 21, 4478, 14929, 14918, 14923, 14926, 8584, 586, 4197, 709, 686, 4217, 4927, 1234, 15009, 11557, 7805, 8617, 5501, 4940, 2]
 
-// Module 14799 (QUEST_DOCK_EXPANDED_HEIGHT)
+// Module 15027 (QUEST_DOCK_EXPANDED_HEIGHT)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5387 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14696 */;
-import { VerticalGradient } from "ME" /* 676 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5395 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14922 */;
+import { VerticalGradient } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -43,10 +43,10 @@ let closure_14 = { code: "function QuestDockUnenrolledBackgroundTsx1(){const{wit
 let closure_15 = { code: "function QuestDockUnenrolledBackgroundTsx2(){const{withSpring,activeQuestDockMode,QuestDockMode,videoLoaded,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED}=this.__closure;return{opacity:withSpring(activeQuestDockMode.get()!==QuestDockMode.EXPANDED||!videoLoaded?1:0,QUEST_DOCK_MODE_CHANGE_PHYSICS_CLAMPED)};}" };
 const memoResult = importAllResult.memo(function QuestDockUnenrolledBackground() {
   let obj = activeQuestDockMode(setRestingQuestDockMode[9]);
-  const questCreative = obj.useQuestCreative();
+  const questDockQuest = obj.useQuestDockQuest();
   const tmp4 = callback2();
   obj1 = activeQuestDockMode(setRestingQuestDockMode[10]);
-  const questDockHeroAsset = obj1.useQuestDockHeroAsset(questCreative);
+  const questDockHeroAsset = obj1.useQuestDockHeroAsset(questDockQuest);
   ({ staticUrl, videoAsset } = questDockHeroAsset);
   let obj2 = importAllResult;
   const context = importAllResult.useContext(activeQuestDockMode(setRestingQuestDockMode[11]).QuestDockGestureContext);

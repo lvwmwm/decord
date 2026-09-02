@@ -1,11 +1,11 @@
-// Module ID: 12765
-// Function ID: 12766
+// Module ID: 12986
+// Function ID: 12987
 // Name: handleFeaturedOrDeveloperFetchSuccess
-// Dependencies: [12, 589, 709, 2]
+// Dependencies: [12, 586, 706, 2]
 
-// Module 12765 (handleFeaturedOrDeveloperFetchSuccess)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 12986 (handleFeaturedOrDeveloperFetchSuccess)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const require = arg1;
 function handleFeaturedOrDeveloperFetchSuccess(configs) {

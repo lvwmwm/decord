@@ -1,26 +1,26 @@
-// Module ID: 16072
-// Function ID: 16073
+// Module ID: 16303
+// Function ID: 16304
 // Name: SelectedServerIcon
-// Dependencies: [5, 32, 19, 17, 4470, 1909, 16071, 676, 21, 16040, 712, 6004, 9355, 4217, 4479, 7778, 589, 1431, 8098, 5493, 5068, 4474, 4928, 4438, 1236, 1628, 8630, 8622, 4194, 4723, 16055, 8105, 2]
+// Dependencies: [5, 32, 19, 17, 4470, 1908, 16302, 673, 21, 16271, 709, 6012, 9368, 4217, 4479, 7787, 586, 1430, 8106, 5501, 5076, 4474, 4928, 4438, 1233, 1627, 8645, 8637, 4194, 4723, 16286, 8113, 2]
 // Exports: default
 
-// Module 16072 (SelectedServerIcon)
-import ThemesDefault from "Themes" /* 712 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import GuildIconSizes from "GuildIconSizes" /* 6004 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
-import SolidCutoutDefault from "SolidCutout" /* 8098 */;
-import ServerIcon from "ServerIcon" /* 9355 */;
+// Module 16303 (SelectedServerIcon)
+import ThemesDefault from "Themes" /* 709 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import GuildIconSizes from "GuildIconSizes" /* 6012 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
+import SolidCutoutDefault from "SolidCutout" /* 8106 */;
+import ServerIcon from "ServerIcon" /* 9368 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_9 from "createGuildRecordFromRust" /* 1909 */;
-import closure_10 from "initialize" /* 16071 */;
-import { GuildFeatures } from "ME" /* 676 */;
+import closure_9 from "createGuildRecordFromRust" /* 1908 */;
+import closure_10 from "initialize" /* 16302 */;
+import { GuildFeatures } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16040 */;
+import createICYMIStyles from "createICYMIStyles" /* 16271 */;
 
 require = arg1;
 function SelectedServerIcon(guild) {
@@ -100,12 +100,12 @@ function SelectedServersRow(selectedGuilds) {
     tmpResult = tmp(4479);
     let num3 = 0;
     if (selectedGuilds.length > 0) {
-      num3 = first(712).space.PX_24;
+      num3 = first(709).space.PX_24;
     }
     obj[2] = tmpResult.withTiming(num3);
     return obj;
   };
-  obj = { withTiming: selectedGuilds(4479).withTiming, selectedGuilds, SELECTED_SERVER_SIZE_WITH_BORDER: c15, tokens: first(712) };
+  obj = { withTiming: selectedGuilds(4479).withTiming, selectedGuilds, SELECTED_SERVER_SIZE_WITH_BORDER: c15, tokens: first(709) };
   fn.__closure = obj;
   fn.__workletHash = 2911488630455;
   fn.__initData = closure_18;
@@ -121,17 +121,17 @@ function SelectedServersRow(selectedGuilds) {
   }
   const items3 = [num];
   obj1[1] = items3;
-  obj1[2] = first(712).space.PX_24;
-  obj1[3] = first(712).space.PX_12;
+  obj1[2] = first(709).space.PX_24;
+  obj1[3] = first(709).space.PX_12;
   obj1[4] = callback;
-  obj1[6] = tmp8 + first(712).space.PX_12;
-  obj[1] = closure_12(first(7778), obj1);
+  obj1[6] = tmp8 + first(709).space.PX_12;
+  obj[1] = closure_12(first(7787), obj1);
   return closure_12(first(4217).View, obj);
 }
 function CutoutGuildBanner(guild) {
   guild = guild.guild;
   const tmp = callback3();
-  let obj = guild(589);
+  let obj = guild(586);
   const items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   let hasItem = !stateFromStores;
@@ -149,14 +149,14 @@ function CutoutGuildBanner(guild) {
   }
   obj = { style: tmp.bannerImage, children: null };
   obj = { cutouts: null, children: null };
-  obj1 = { shape: guild(8098).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  obj1 = { shape: guild(8106).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   const items1 = [obj1];
   obj[0] = items1;
   if (null != guild.banner) {
     const obj2 = { style: null, source: null, resizeMode: "cover" };
     obj2[0] = tmp.bannerImage;
     obj2[1] = animatableSourceWithFallback;
-    let tmp11Result = tmp11(tmp12(5493), obj2);
+    let tmp11Result = tmp11(tmp12(5501), obj2);
   } else {
     const obj3 = { style: null };
     const items2 = [, ];
@@ -171,7 +171,7 @@ function CutoutGuildBanner(guild) {
   ({ guildIcon: arr5[0], guildIconBorder: arr5[1] } = tmp);
   const tmp13 = SolidCutoutDefault;
   const tmp9 = closure_13;
-  obj4[2] = guild(6004).GuildIconSizes.LARGE;
+  obj4[2] = guild(6012).GuildIconSizes.LARGE;
   obj4[3] = !stateFromStores;
   items3[1] = closure_12(GuildIconSizesDefault, obj4);
   obj[1] = items3;
@@ -181,7 +181,7 @@ function FeaturedServer(guild) {
   guild = guild.guild;
   ({ selected, handlePress } = guild);
   const tmp = callback3();
-  let obj = guild(589);
+  let obj = guild(586);
   const items = [closure_9];
   const stateFromStores = obj.useStateFromStores(items, () => null != closure_1_9.getGuild(guild.id));
   const items1 = [guild, handlePress];
@@ -197,14 +197,14 @@ function FeaturedServer(guild) {
   let tmp7Result;
   if (selected) {
     const obj5 = { size: "sm", color: null };
-    obj5[1] = handlePress(712).colors.CONTROL_CONNECTED_TEXT_DEFAULT;
+    obj5[1] = handlePress(709).colors.CONTROL_CONNECTED_TEXT_DEFAULT;
     tmp7Result = tmp7(tmp2(4438).CircleCheckIcon, obj5);
   }
   obj4[3] = tmp7Result;
   if (stateFromStores) {
     if (!guild.loading) {
-      const intl = tmp2(1236).intl;
-      obj4[4] = intl.string(tmp2(1236).t.cEnaWx);
+      const intl = tmp2(1233).intl;
+      obj4[4] = intl.string(tmp2(1233).t.cEnaWx);
       obj4[6] = callback;
       if (stateFromStores) {
         let str = "secondary";
@@ -217,12 +217,12 @@ function FeaturedServer(guild) {
       obj[1] = items3;
       items2[1] = tmp6(tmp8, obj);
       obj[4] = items2;
-      return tmp6(guild(5068).PressableHighlight, obj);
+      return tmp6(guild(5076).PressableHighlight, obj);
     }
   }
-  const intl2 = tmp2(1236).intl;
+  const intl2 = tmp2(1233).intl;
   const string = intl2.string;
-  TwueC_ = tmp2(1236).t;
+  TwueC_ = tmp2(1233).t;
   if (selected) {
     TwueC_ = TwueC_["TwueC+"];
     string(TwueC_);
@@ -359,7 +359,7 @@ export default function ICYMIJoinGuildsScreen() {
             v0 = 1;
             dependencyMap = 1;
             obj1 = { value: null, done: false };
-            obj1[0] = v0(8622).gravityJoinGuild(Array.from(closure_1_3), "icymi_info_modal");
+            obj1[0] = v0(8637).gravityJoinGuild(Array.from(closure_1_3), "icymi_info_modal");
             return obj1;
           }
         } else if (1 === tmp4) {
@@ -372,7 +372,7 @@ export default function ICYMIJoinGuildsScreen() {
             obj2[0] = arg1;
             return obj2;
           } else if (arg1) {
-            let tmp52Result = tmp52(8622);
+            let tmp52Result = tmp52(8637);
             v0 = 2;
             dependencyMap = 1;
             const obj3 = { value: null, done: false };
@@ -381,16 +381,16 @@ export default function ICYMIJoinGuildsScreen() {
           } else {
             tmp52Result = tmp52(4194);
             const obj4 = { key: "ICYMIInfoModal", content: null };
-            const intl = closure_1_0(1236).intl;
-            obj4[1] = intl.string(closure_1_0(1236).t.CG4Hks);
+            const intl = closure_1_0(1233).intl;
+            obj4[1] = intl.string(closure_1_0(1233).t.CG4Hks);
             tmp52Result.open(obj4);
-            let obj6 = v0(8622);
+            let obj6 = v0(8637);
             const dehydrated = obj6.fetchDehydrated();
-            let obj7 = v0(8622);
+            let obj7 = v0(8637);
             const guildChannelScores = obj7.getGuildChannelScores();
-            const recommendedGuilds = v0(8622).getRecommendedGuilds();
-            const obj9 = v0(8622);
-            v0(4723).popWithKey(closure_1_0(16055).ICYMI_INFO_MODAL_KEY);
+            const recommendedGuilds = v0(8637).getRecommendedGuilds();
+            const obj9 = v0(8637);
+            v0(4723).popWithKey(closure_1_0(16286).ICYMI_INFO_MODAL_KEY);
             dependencyMap = 3;
             const obj5 = { value: null, done: true };
             obj5[0] = undefined;
@@ -406,7 +406,7 @@ export default function ICYMIJoinGuildsScreen() {
             obj6[0] = arg1;
             return obj6;
           } else {
-            obj1 = v0(8622);
+            obj1 = v0(8637);
             v0 = 3;
             dependencyMap = 1;
             obj7 = { value: null, done: false };
@@ -422,11 +422,11 @@ export default function ICYMIJoinGuildsScreen() {
           obj[0] = arg1;
           return obj;
         } else {
-          const guildChannelScores1 = v0(8622).getGuildChannelScores();
-          const obj19 = v0(8622);
-          const recommendedGuilds1 = v0(8622).getRecommendedGuilds();
-          const obj20 = v0(8622);
-          v0(4723).popWithKey(closure_1_0(16055).ICYMI_INFO_MODAL_KEY);
+          const guildChannelScores1 = v0(8637).getGuildChannelScores();
+          const obj19 = v0(8637);
+          const recommendedGuilds1 = v0(8637).getRecommendedGuilds();
+          const obj20 = v0(8637);
+          v0(4723).popWithKey(closure_1_0(16286).ICYMI_INFO_MODAL_KEY);
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
         }

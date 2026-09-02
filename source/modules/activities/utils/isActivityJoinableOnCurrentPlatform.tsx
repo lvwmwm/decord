@@ -1,14 +1,14 @@
-// Module ID: 9446
-// Function ID: 9447
+// Module ID: 9459
+// Function ID: 9460
 // Name: isActivityJoinableOnCurrentPlatform
-// Dependencies: [676, 501, 1624, 6158, 2]
+// Dependencies: [673, 1235, 1623, 6166, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 9446 (isActivityJoinableOnCurrentPlatform)
+// Module 9459 (isActivityJoinableOnCurrentPlatform)
 import set from "set" /* 2 */;
-import PlatformTypes from "PlatformTypes" /* 501 */;
-import hasFlagDefault from "hasFlag" /* 6158 */;
-import ME from "ME" /* 676 */;
+import PlatformTypes from "PlatformTypes" /* 1235 */;
+import hasFlagDefault from "hasFlag" /* 6166 */;
+import ME from "ME" /* 673 */;
 
 ({ ActivityFlags: c3, ActivityGamePlatforms: c4, ActivityTypes: c5 } = ME);
 const result = set.fileFinishedImporting("modules/activities/utils/isActivityJoinableOnCurrentPlatform.tsx");
@@ -26,12 +26,12 @@ export default function isActivityJoinableOnCurrentPlatform(type) {
       let DESKTOP = constants2.IOS;
       let tmp9 = constants2;
     } else {
-      let tmp6Result = tmp6(1624);
+      let tmp6Result = tmp6(1623);
       if (tmp6Result.isMetaQuest()) {
         DESKTOP = constants2.META_QUEST;
         tmp9 = constants2;
       } else {
-        tmp6Result = tmp6(501);
+        tmp6Result = tmp6(1235);
         if (tmp6Result.isAndroid()) {
           DESKTOP = tmp8.ANDROID;
           tmp9 = tmp8;
@@ -70,11 +70,11 @@ export const getCurrentActivityGamePlatform = function getCurrentActivityGamePla
   if (obj.isIOS()) {
     let META_QUEST = constants2.IOS;
   } else {
-    let tmpResult = tmp(1624);
+    let tmpResult = tmp(1623);
     if (tmpResult.isMetaQuest()) {
       META_QUEST = constants2.META_QUEST;
     } else {
-      tmpResult = tmp(501);
+      tmpResult = tmp(1235);
       META_QUEST = tmpResult.isAndroid() ? tmp3.ANDROID : tmp3.DESKTOP;
     }
   }

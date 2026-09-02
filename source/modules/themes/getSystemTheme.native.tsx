@@ -1,13 +1,13 @@
-// Module ID: 1339
-// Function ID: 1340
+// Module ID: 1338
+// Function ID: 1339
 // Name: getSystemTheme
-// Dependencies: [17, 1305, 2]
+// Dependencies: [17, 1304, 2]
 // Exports: default
 
-// Module 1339 (getSystemTheme)
+// Module 1338 (getSystemTheme)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import SystemThemeState from "SystemThemeState" /* 1305 */;
+import SystemThemeState from "SystemThemeState" /* 1304 */;
 
 const Appearance = get_ActivityIndicator.Appearance;
 const SystemTheme = SystemThemeState.SystemTheme;

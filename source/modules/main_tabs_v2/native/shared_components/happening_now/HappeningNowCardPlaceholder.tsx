@@ -1,14 +1,14 @@
-// Module ID: 15658
-// Function ID: 15659
+// Module ID: 15889
+// Function ID: 15890
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [19, 17, 14890, 21, 4478, 712, 4217, 4479, 14891, 2]
+// Dependencies: [19, 17, 15119, 21, 4478, 709, 4217, 4479, 15120, 2]
 // Exports: HappeningNowCardPlaceholder
 
-// Module 15658 (HappeningNowCardPlaceholder)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 15889 (HappeningNowCardPlaceholder)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { HAPPENING_NOW_CONTENT_HEIGHT } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14890 */;
+import { HAPPENING_NOW_CONTENT_HEIGHT } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15119 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

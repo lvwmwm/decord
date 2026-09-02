@@ -1,15 +1,15 @@
-// Module ID: 9424
-// Function ID: 9425
+// Module ID: 9437
+// Function ID: 9438
 // Name: usePersonalizedVoiceChannelUsers
-// Dependencies: [7404, 6054, 1922, 4555, 676, 589, 2]
+// Dependencies: [7413, 6062, 1921, 4555, 673, 586, 2]
 // Exports: default
 
-// Module 9424 (usePersonalizedVoiceChannelUsers)
-import closure_2 from "recomputeAffinities" /* 7404 */;
-import closure_3 from "hasConsented" /* 6054 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+// Module 9437 (usePersonalizedVoiceChannelUsers)
+import closure_2 from "recomputeAffinities" /* 7413 */;
+import closure_3 from "hasConsented" /* 6062 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import closure_5 from "getVoiceStatesForGuild" /* 4555 */;
-import { Consents } from "ME" /* 676 */;
+import { Consents } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/usePersonalizedVoiceChannelUsers.tsx");

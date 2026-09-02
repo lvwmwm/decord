@@ -1,15 +1,15 @@
-// Module ID: 11605
-// Function ID: 11606
+// Module ID: 11828
+// Function ID: 11829
 // Name: mutable
-// Dependencies: [4217, 1493, 11606, 10991, 2]
+// Dependencies: [4217, 1492, 11829, 11211, 2]
 // Exports: default, getWindowDimensionsWorklet
 
-// Module 11605 (mutable)
+// Module 11828 (mutable)
 import set from "set" /* 2 */;
-import uDefault from "u" /* 10991 */;
-import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 11606 */;
+import uDefault from "u" /* 11211 */;
+import subscribeToWindowDimensionsDefault from "subscribeToWindowDimensions" /* 11829 */;
 import module_4217 from "module_4217" /* 4217 */;
-import useWindowDimensions from "useWindowDimensions" /* 1493 */;
+import useWindowDimensions from "useWindowDimensions" /* 1492 */;
 
 let obj = {};
 const merged = Object.assign(useWindowDimensions.getWindowDimensions());

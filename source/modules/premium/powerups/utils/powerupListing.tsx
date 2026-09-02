@@ -1,10 +1,10 @@
-// Module ID: 12080
-// Function ID: 12081
+// Module ID: 12304
+// Function ID: 12305
 // Name: orderPowerupListings
-// Dependencies: [32, 19, 4364, 4365, 4368, 589, 2]
+// Dependencies: [32, 19, 4364, 4365, 4368, 586, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 12080 (orderPowerupListings)
+// Module 12304 (orderPowerupListings)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "calculateAppliedBoosts" /* 4364 */;
@@ -148,7 +148,7 @@ export const useBuildGuildPowerupsSections = function useBuildGuildPowerupsSecti
   const _require = guildId;
   dependencyMap = gameServerEnabled;
   const items = [closure_4];
-  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_4.getStateForGuild(closure_0));
+  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_4.getStateForGuild(closure_0));
   let powerupCatalog;
   if (stateFromStores != null) {
     powerupCatalog = stateFromStores.powerupCatalog;

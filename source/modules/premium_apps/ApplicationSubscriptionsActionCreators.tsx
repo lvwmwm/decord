@@ -1,13 +1,13 @@
-// Module ID: 14149
-// Function ID: 14150
+// Module ID: 14372
+// Function ID: 14373
 // Name: transformSubscriptionListingToSku
-// Dependencies: [5, 676, 709, 9480, 6104, 2]
+// Dependencies: [5, 673, 706, 9493, 6112, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 14149 (transformSubscriptionListingToSku)
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 14372 (transformSubscriptionListingToSku)
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 function transformSubscriptionListingToSku(id) {
   return { id: id.id, type: constants2.SUBSCRIPTION, application_id: id.application_id, product_line: constants.APPLICATION, name: id.name, summary: "", description: id.description, flags: id.sku_flags, manifests: [], available_regions: [], legal_notice: "", deleted: id.soft_deleted, price_tier: 0, show_age_gate: false, restricted: false };
@@ -59,7 +59,7 @@ function _fetchAllSubscriptionListingsDataForApplication() {
       const obj10 = callback(closure_1_2[2]);
       yield lib(closure_1_2[3]).getApplicationSubscriptionGroupListingsForApplication(callback, lib);
       c6 = 0;
-      const obj2 = callback(709);
+      const obj2 = callback(706);
       const obj3 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE", applicationId: null };
       obj3[1] = callback;
       obj2.dispatch(obj3);
@@ -67,7 +67,7 @@ function _fetchAllSubscriptionListingsDataForApplication() {
       const obj5 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS", applicationId: null, groupListing: null };
       obj5[1] = callback;
       obj5[2] = lib;
-      callback(709).dispatch(obj5);
+      callback(706).dispatch(obj5);
       const subscription_listings = lib.subscription_listings;
       dependencyMap = subscription_listings;
       if (subscription_listings == null) {
@@ -104,7 +104,7 @@ function _fetchEntitlementsForGuild() {
       yield closure_1_1(closure_1_2[3]).getEntitlementsForGuild(callback);
       if (1 === tmp7) {
         c4 = 0;
-        let obj3 = callback(709);
+        let obj3 = callback(706);
         obj3 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_FAILURE", guildId: null };
         obj3[1] = callback;
         obj3.dispatch(obj3);
@@ -114,7 +114,7 @@ function _fetchEntitlementsForGuild() {
         throw arg1;
       } else if (arg0 !== 2) {
         closure_1 = arg1;
-        const obj = callback(709);
+        const obj = callback(706);
         const obj4 = { type: "APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS", guildId: null, entitlements: null };
         obj4[1] = callback;
         obj4[2] = closure_1;
@@ -189,7 +189,7 @@ function _fetchSubscriptionListingForPlan() {
               closure_3 = undefined;
               c7 = 1;
               v0 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

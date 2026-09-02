@@ -1,11 +1,11 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11465
+// Function ID: 11466
 // Name: handleSelectedGuildChange
-// Dependencies: [4299, 589, 709, 2]
+// Dependencies: [4299, 586, 706, 2]
 
-// Module 11242 (handleSelectedGuildChange)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 11465 (handleSelectedGuildChange)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "handleConnectionOpen" /* 4299 */;
 
 function handleSelectedGuildChange() {

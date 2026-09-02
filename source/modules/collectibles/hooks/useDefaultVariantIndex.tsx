@@ -1,18 +1,18 @@
-// Module ID: 8888
-// Function ID: 8889
+// Module ID: 8903
+// Function ID: 8904
 // Name: useDefaultVariantIndex
-// Dependencies: [7303, 589, 7298, 2]
+// Dependencies: [7312, 586, 7307, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 8888 (useDefaultVariantIndex)
-import closure_2 from "map" /* 7303 */;
+// Module 8903 (useDefaultVariantIndex)
+import closure_2 from "map" /* 7312 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useDefaultVariantIndex.tsx");
 
 export const useDefaultVariantIndex = function useDefaultVariantIndex(product) {
   const items = [closure_2];
-  _require = _require(589).useStateFromStores(items, () => purchases.purchases);
+  _require = _require(586).useStateFromStores(items, () => purchases.purchases);
   let num = 0;
   if (null != product) {
     num = 0;
@@ -21,7 +21,7 @@ export const useDefaultVariantIndex = function useDefaultVariantIndex(product) {
       const variants = product.variants;
       num = Math.max(0, variants.findIndex((skuId) => !set.has(skuId.skuId)));
     }
-    tmpResult = _require(7298);
+    tmpResult = _require(7307);
   }
   return num;
 };

@@ -1,18 +1,18 @@
-// Module ID: 5489
-// Function ID: 5490
+// Module ID: 5497
+// Function ID: 5498
 // Name: headerTitle
-// Dependencies: [19, 5490, 1387, 1909, 1981, 5467, 5464, 676, 21, 1222, 5491, 5495, 5950, 5474, 5974, 5555, 589, 5472, 5559, 6008, 1236, 2]
+// Dependencies: [19, 5498, 1386, 1908, 1980, 5475, 5472, 673, 21, 1219, 5499, 5503, 5958, 5482, 5982, 5563, 586, 5480, 5567, 6016, 1233, 2]
 // Exports: default
 
-// Module 5489 (headerTitle)
+// Module 5497 (headerTitle)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "get" /* 5490 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "handleConnectionOpen" /* 1981 */;
-import closure_8 from "handleUpdate" /* 5467 */;
-import { GuildOnboardingModalStates as closure_9 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5464 */;
-import ME from "ME" /* 676 */;
+import closure_4 from "get" /* 5498 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "handleConnectionOpen" /* 1980 */;
+import closure_8 from "handleUpdate" /* 5475 */;
+import { GuildOnboardingModalStates as closure_9 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5472 */;
+import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

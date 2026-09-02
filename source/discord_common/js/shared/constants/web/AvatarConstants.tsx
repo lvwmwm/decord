@@ -1,10 +1,10 @@
-// Module ID: 1433
-// Function ID: 1434
+// Module ID: 1432
+// Function ID: 1433
 // Name: frozen
 // Dependencies: [2]
 // Exports: getAvatarSize, getAvatarSpecs, getStatusSize
 
-// Module 1433 (frozen)
+// Module 1432 (frozen)
 import set from "set" /* 2 */;
 
 let obj = { SIZE_16: "SIZE_16", SIZE_20: "SIZE_20", SIZE_24: "SIZE_24", SIZE_32: "SIZE_32", SIZE_40: "SIZE_40", SIZE_44: "SIZE_44", SIZE_48: "SIZE_48", SIZE_56: "SIZE_56", SIZE_72: "SIZE_72", SIZE_80: "SIZE_80", SIZE_96: "SIZE_96", SIZE_120: "SIZE_120", SIZE_152: "SIZE_152", DEPRECATED_SIZE_30: "DEPRECATED_SIZE_30", DEPRECATED_SIZE_60: "DEPRECATED_SIZE_60", DEPRECATED_SIZE_100: "DEPRECATED_SIZE_100" };

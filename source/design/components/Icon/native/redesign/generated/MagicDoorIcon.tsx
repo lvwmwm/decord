@@ -1,14 +1,14 @@
-// Module ID: 15204
-// Function ID: 15205
+// Module ID: 15433
+// Function ID: 15434
 // Name: MagicDoorIcon
-// Dependencies: [19, 21, 712, 4196, 15205, 2]
+// Dependencies: [19, 21, 709, 4196, 15434, 2]
 // Exports: MagicDoorIcon
 
-// Module 15204 (MagicDoorIcon)
+// Module 15433 (MagicDoorIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15205 */;
+import registerAsset from "registerAsset" /* 15434 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

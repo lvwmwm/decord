@@ -1,11 +1,11 @@
 // Module ID: 771
 // Function ID: 772
 // Name: getNative
-// Dependencies: [737, 609]
+// Dependencies: [734, 606]
 
 // Module 771 (getNative)
-import _mod609 from "module_609" /* 609 */;
-import getNative from "getNative" /* 737 */;
+import _mod606 from "module_606" /* 606 */;
+import getNative from "getNative" /* 734 */;
 
 
-export default getNative(_mod609, "DataView");
+export default getNative(_mod606, "WeakMap");

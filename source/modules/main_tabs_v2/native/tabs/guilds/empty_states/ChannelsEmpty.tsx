@@ -1,15 +1,15 @@
-// Module ID: 15845
-// Function ID: 15846
-// Dependencies: [19, 17, 4121, 676, 21, 4478, 4474, 712, 647, 9728, 9706, 14701, 8365, 1297, 15846, 1236, 15847, 4929, 2]
+// Module ID: 16076
+// Function ID: 16077
+// Dependencies: [19, 17, 4120, 673, 21, 4478, 4474, 709, 644, 9750, 9720, 14927, 8374, 1296, 16077, 1233, 16078, 4929, 2]
 
-// Module 15845
-import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 15846 */;
-import registerAssetDefault2 from "registerAsset" /* 15847 */;
+// Module 16076
+import ThemesDefault from "Themes" /* 709 */;
+import registerAssetDefault from "registerAsset" /* 16077 */;
+import registerAssetDefault2 from "registerAsset" /* 16078 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4121 */;
-import { Permissions } from "ME" /* 676 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
+import { Permissions } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -33,7 +33,7 @@ let closure_10 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   guild = guild.guild;
   const tmp = callback2();
-  let obj = guild(647);
+  let obj = guild(644);
   const items = [closure_6];
   const items1 = [guild];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ canCustomizeGuild: closure_1_6.can(closure_1_7.MANAGE_GUILD, guild), canCreateChannel: closure_1_6.can(closure_1_7.MANAGE_CHANNELS, guild) }), items1);
@@ -46,7 +46,7 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const callback1 = importAllResult.useCallback(() => {
     closure_1_1(closure_1_2[10]).open(null, guild.id, null, null);
   }, items3);
-  obj1 = guild(14701);
+  obj1 = guild(14927);
   obj = { style: null, children: null };
   const items4 = [tmp.wrapper, ];
   obj = { paddingBottom: obj1.useYouBarTotalHeight(16) };
@@ -58,11 +58,11 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
     const obj2 = { icon: null, label: null, onPress: null };
     const obj3 = { source: null, disableColor: true };
     obj3[0] = registerAssetDefault;
-    obj2[0] = callback(tmp2(1297).Icon, obj3);
-    const intl = tmp2(1236).intl;
-    obj2[1] = intl.string(tmp2(1236).t["Yhi9/N"]);
+    obj2[0] = callback(tmp2(1296).Icon, obj3);
+    const intl = tmp2(1233).intl;
+    obj2[1] = intl.string(tmp2(1233).t["Yhi9/N"]);
     obj2[2] = callback;
-    obj1[1] = callback(tmp2(8365).RowButton, obj2);
+    obj1[1] = callback(tmp2(8374).RowButton, obj2);
     canCustomizeGuild = callback(tmp8, obj1);
   }
   const items5 = [canCustomizeGuild, ];
@@ -71,20 +71,20 @@ const memoResult = importAllResult.memo(function ChannelsEmpty(guild) {
   const obj6 = { color: "mobile-text-heading-primary", variant: "heading-md/bold", style: items7, children: null };
   items7 = [, ];
   ({ text: arr8[0], headerText: arr8[1] } = tmp);
-  const intl2 = tmp2(1236).intl;
-  obj6[3] = intl2.string(guild(1236).t.o4s29v);
+  const intl2 = tmp2(1233).intl;
+  obj6[3] = intl2.string(guild(1233).t.o4s29v);
   items6[1] = callback(guild(4474).Text, obj6);
   const obj7 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: null };
-  const intl3 = tmp2(1236).intl;
-  obj7[3] = intl3.string(guild(1236).t.iypvFu);
+  const intl3 = tmp2(1233).intl;
+  obj7[3] = intl3.string(guild(1233).t.iypvFu);
   items6[2] = callback(guild(4474).Text, obj7);
   if (canCreateChannel) {
     const obj8 = { style: null, children: null };
     obj8[0] = tmp.buttonWrapper;
     const obj9 = { shrink: true, size: "md", pillStyle: null, text: null, onPress: null };
     obj9[2] = tmp.buttonPill;
-    const intl4 = tmp2(1236).intl;
-    obj9[3] = intl4.string(tmp2(1236).t["63PyJQ"]);
+    const intl4 = tmp2(1233).intl;
+    obj9[3] = intl4.string(tmp2(1233).t["63PyJQ"]);
     obj9[4] = callback1;
     obj8[1] = tmp11(tmp2(4929).BaseTextButton, obj9);
     canCreateChannel = tmp11(tmp8, obj8);

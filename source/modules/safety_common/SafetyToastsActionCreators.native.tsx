@@ -1,12 +1,12 @@
-// Module ID: 8675
-// Function ID: 8676
-// Dependencies: [8670, 4193, 8676, 2]
+// Module ID: 8690
+// Function ID: 8691
+// Dependencies: [8685, 4193, 8691, 2]
 
-// Module 8675
+// Module 8690
 import set from "set" /* 2 */;
 import presentAddedFriendToast from "presentAddedFriendToast" /* 4193 */;
-import SafetyToastType2 from "SafetyToastType" /* 8670 */;
-import getSafetyToastTypeContent from "getSafetyToastTypeContent" /* 8676 */;
+import SafetyToastType2 from "SafetyToastType" /* 8685 */;
+import getSafetyToastTypeContent from "getSafetyToastTypeContent" /* 8691 */;
 
 const SafetyToastType = SafetyToastType2.SafetyToastType;
 const result = set.fileFinishedImporting("modules/safety_common/SafetyToastsActionCreators.native.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 10980
-// Function ID: 10981
+// Module ID: 11200
+// Function ID: 11201
 // Name: isSelectedFromHomeChannel
-// Dependencies: [6127, 1981, 1394, 4333, 4332, 2]
+// Dependencies: [6135, 1980, 1393, 4333, 4332, 2]
 // Exports: default
 
-// Module 10980 (isSelectedFromHomeChannel)
-import handleConnectionOpenDefault from "handleConnectionOpen" /* 1981 */;
+// Module 11200 (isSelectedFromHomeChannel)
+import handleConnectionOpenDefault from "handleConnectionOpen" /* 1980 */;
 import coerceMainRoute from "coerceMainRoute" /* 4332 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
-import handlePermissionsChangeDefault from "handlePermissionsChange" /* 6127 */;
-import { isGuildHomeChannel } from "set" /* 1394 */;
+import handlePermissionsChangeDefault from "handlePermissionsChange" /* 6135 */;
+import { isGuildHomeChannel } from "set" /* 1393 */;
 
 require = arg1;
 handlePermissionsChangeDefault;

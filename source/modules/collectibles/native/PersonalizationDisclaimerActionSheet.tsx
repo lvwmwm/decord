@@ -1,19 +1,19 @@
-// Module ID: 15429
-// Function ID: 15430
+// Module ID: 15659
+// Function ID: 15660
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 676, 21, 4478, 712, 4190, 1995, 5622, 4474, 1236, 5376, 4928, 8728, 4445, 2]
+// Dependencies: [19, 673, 21, 4478, 709, 4190, 1994, 5630, 4474, 1233, 5384, 4928, 8743, 4445, 2]
 // Exports: default
 
-// Module 15429 (PersonalizationDisclaimerActionSheet)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 15659 (PersonalizationDisclaimerActionSheet)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import Button from "Button" /* 4928 */;
-import ButtonGroup from "ButtonGroup" /* 5376 */;
-import Background from "Background" /* 5622 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8728 */;
+import ButtonGroup from "ButtonGroup" /* 5384 */;
+import Background from "Background" /* 5630 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8743 */;
 import closure_3 from "noop" /* 19 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -31,7 +31,7 @@ export default function PersonalizationDisclaimerActionSheet() {
   const tmp = callback3();
   const callback = React.useCallback(() => {
     const obj = callback(4190);
-    obj.openURL(callback(1995).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
+    obj.openURL(callback(1994).getArticleURL(constants.DATA_USED_FOR_RECOMMENDED));
   }, []);
   let obj = { contentStyles: tmp.container, children: null };
   obj = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: null };

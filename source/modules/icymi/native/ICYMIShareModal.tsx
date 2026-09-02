@@ -1,22 +1,22 @@
-// Module ID: 16090
-// Function ID: 16091
+// Module ID: 16321
+// Function ID: 16322
 // Name: Screenshot
-// Dependencies: [32, 5, 19, 17, 1387, 4854, 4853, 676, 10632, 4471, 21, 4478, 712, 9744, 1236, 16091, 4194, 1493, 4328, 7616, 16092, 5070, 4296, 4204, 5594, 11275, 11284, 4928, 4723, 10718, 1471, 7427, 8163, 514, 5073, 7201, 8165, 1628, 500, 5502, 7607, 5495, 10721, 2]
+// Dependencies: [32, 5, 19, 17, 1386, 4854, 4853, 673, 10853, 4471, 21, 4478, 709, 9766, 1233, 16322, 4194, 1492, 4328, 7626, 16323, 5078, 4296, 4204, 5602, 11498, 11507, 4928, 4723, 10939, 1470, 7436, 8171, 511, 5081, 7210, 8173, 1627, 1234, 5510, 7617, 5503, 10942, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 16090 (Screenshot)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import SHARE_EVENT_DETAILS_LINK from "SHARE_EVENT_DETAILS_LINK" /* 9744 */;
+// Module 16321 (Screenshot)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import SHARE_EVENT_DETAILS_LINK from "SHARE_EVENT_DETAILS_LINK" /* 9766 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import { DraftType } from "handleChanged" /* 4854 */;
 import closure_9 from "map" /* 4853 */;
-import { AbortCodes } from "ME" /* 676 */;
-import { UserRowModes } from "UserRowModes" /* 10632 */;
+import { AbortCodes } from "ME" /* 673 */;
+import { UserRowModes } from "UserRowModes" /* 10853 */;
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -44,23 +44,23 @@ function Screenshot(setUri) {
       return nextPromise;
     }, 500);
   }, items);
-  let obj = setUri(7616);
+  let obj = setUri(7626);
   obj = { style: { position: "absolute", top: -1000, overflow: "hidden" }, children: null };
   obj = { style: items1, children: null };
-  items1 = [tmp.preview, { width: ref(1493)().width }];
+  items1 = [tmp.preview, { width: ref(1492)().width }];
   const clientThemesOverride = obj.useClientThemesOverride();
   obj1 = { ref, options: { fileName: "icymi_content", format: "png", quality: 1 }, children: null };
   const obj2 = { style: tmp.base, children: null };
   const tmp4 = ref(4328)();
   const obj3 = { absolute: true, wide: true, tall: true, mix: true, mixAmount: null };
   const obj4 = { dark: null, light: null };
-  const tmp6 = ref(16092);
+  const tmp6 = ref(16323);
   obj4[0] = setUri(4296).OverlayOpacity.LEVEL_7;
   obj4[1] = setUri(4296).OverlayOpacity.LEVEL_8;
   obj3[4] = obj4;
-  const items2 = [callback3(ref(5070), obj3), ];
+  const items2 = [callback3(ref(5078), obj3), ];
   const obj5 = { gradient: tmp4, children: null };
-  const tmp7 = ref(5070);
+  const tmp7 = ref(5078);
   const items3 = [tmp.contentContainer, clientThemesOverride];
   obj5[1] = callback3(View, { style: items3, children: setUri.render() });
   items2[1] = callback3(setUri(4204).ThemeContextProvider, obj5);
@@ -201,7 +201,7 @@ class ICYMIShareModal {
                     closure_0 = arg0;
                     c2 = 0;
                     c1 = 0;
-                    return (/* F123197 */ function*() { ... })();
+                    return (/* F125051 */ function*() { ... })();
                   });
                   return function(arg0) {
                     const self = this;
@@ -367,8 +367,8 @@ export const GuildEventShareModal = function GuildEventShareModal(event) {
 export const GameShareModal = function GameShareModal(content) {
   let _require = content.content;
   let obj = { title: null, linkText: "", forwardToChannel: null };
-  let intl = _require(1236).intl;
-  obj[0] = intl.string(_require(1236).t["59CWHK"]);
+  let intl = _require(1233).intl;
+  obj[0] = intl.string(_require(1233).t["59CWHK"]);
   _require = undefined;
   _require = callback2((arg0) => {
     closure_0 = arg0;

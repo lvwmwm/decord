@@ -1,13 +1,13 @@
 // Module ID: 4457
 // Function ID: 4458
 // Name: DCDDeviceManager
-// Dependencies: [17, 500, 671, 595, 2]
+// Dependencies: [17, 1234, 668, 592, 2]
 // Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
 // Module 4457 (DCDDeviceManager)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 671 */;
-import set from "set" /* 500 */;
+import enforcingDefault from "enforcing" /* 668 */;
+import set from "set" /* 1234 */;
 
 if (set.isAndroid()) {
   const importDefaultResult = enforcingDefault;
@@ -83,14 +83,14 @@ export const getDeviceMediaPerformanceClass = function getDeviceMediaPerformance
   if (obj.isAndroid()) {
     let tmp5 = null == mediaPerformanceClass2;
     if (tmp5) {
-      const Storage = tmp(595).Storage;
+      const Storage = tmp(592).Storage;
       const value = Storage.get(mediaPerformanceClass);
       mediaPerformanceClass2 = value;
       tmp5 = null == value;
     }
     if (tmp5) {
       mediaPerformanceClass2 = enforcingDefault.getMediaPerformanceClass();
-      const Storage2 = tmp(595).Storage;
+      const Storage2 = tmp(592).Storage;
       const result = Storage2.set(mediaPerformanceClass, mediaPerformanceClass2);
       const obj2 = enforcingDefault;
     }

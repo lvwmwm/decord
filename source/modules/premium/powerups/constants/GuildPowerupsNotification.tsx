@@ -1,9 +1,9 @@
-// Module ID: 12059
-// Function ID: 12060
+// Module ID: 12283
+// Function ID: 12284
 // Name: GUILD_POWERUP_NOTIFICATION_COOLDOWN
 // Dependencies: [2]
 
-// Module 12059 (GUILD_POWERUP_NOTIFICATION_COOLDOWN)
+// Module 12283 (GUILD_POWERUP_NOTIFICATION_COOLDOWN)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/premium/powerups/constants/GuildPowerupsNotification.tsx");

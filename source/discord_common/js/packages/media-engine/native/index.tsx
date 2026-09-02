@@ -1,11 +1,11 @@
 // Module ID: 4580
 // Function ID: 4581
 // Name: destroy
-// Dependencies: [32, 5, 4542, 4581, 4582, 4583, 4587, 4, 4531, 4579, 4588, 669, 501, 4590, 4650, 2]
+// Dependencies: [32, 5, 4542, 4581, 4582, 4583, 4587, 4, 4531, 4579, 4588, 666, 1235, 4590, 4650, 2]
 
 // Module 4580 (destroy)
-import PlatformTypes from "PlatformTypes" /* 501 */;
-import formatDefault from "format" /* 669 */;
+import formatDefault from "format" /* 666 */;
+import PlatformTypes from "PlatformTypes" /* 1235 */;
 import inject from "inject" /* 4531 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
 import onDefault from "on" /* 4582 */;

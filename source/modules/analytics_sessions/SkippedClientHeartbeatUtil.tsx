@@ -1,12 +1,12 @@
-// Module ID: 7215
-// Function ID: 7216
+// Module ID: 7224
+// Function ID: 7225
 // Name: shouldLogClientHeartbeatSkipped
-// Dependencies: [1922, 7216, 2]
+// Dependencies: [1921, 7225, 2]
 // Exports: shouldLogClientHeartbeatSkipped
 
-// Module 7215 (shouldLogClientHeartbeatSkipped)
-import sampleWithUserId from "sampleWithUserId" /* 7216 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 7224 (shouldLogClientHeartbeatSkipped)
+import sampleWithUserId from "sampleWithUserId" /* 7225 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/analytics_sessions/SkippedClientHeartbeatUtil.tsx");

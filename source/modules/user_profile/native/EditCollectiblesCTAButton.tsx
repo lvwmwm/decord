@@ -1,12 +1,12 @@
-// Module ID: 8081
-// Function ID: 8082
-// Dependencies: [19, 4470, 678, 1623, 21, 4478, 1628, 589, 8082, 4217, 4927, 4139, 7299, 1236, 4446, 8083, 7286, 4445, 4928, 2]
+// Module ID: 8089
+// Function ID: 8090
+// Dependencies: [19, 4470, 675, 1622, 21, 4478, 1627, 586, 8090, 4217, 4927, 4139, 7308, 1233, 4446, 8091, 7295, 4445, 4928, 2]
 
-// Module 8081
+// Module 8089
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { CollectiblesMobileShopScreen as closure_5 } from "items" /* 678 */;
-import { MEDIA_PICKER_SEND_BUTTON_SPRING as closure_6 } from "DRAG_HANDLE" /* 1623 */;
+import { CollectiblesMobileShopScreen as closure_5 } from "items" /* 675 */;
+import { MEDIA_PICKER_SEND_BUTTON_SPRING as closure_6 } from "DRAG_HANDLE" /* 1622 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

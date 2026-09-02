@@ -1,15 +1,15 @@
-// Module ID: 16167
-// Function ID: 16168
+// Module ID: 16398
+// Function ID: 16399
 // Name: JoinRequestActionSheet
-// Dependencies: [19, 17, 4470, 1935, 1922, 676, 21, 4478, 589, 8114, 8080, 4217, 8528, 4413, 5975, 4197, 712, 688, 8120, 7662, 1979, 8115, 5622, 1297, 8910, 1236, 4204, 5624, 16168, 5937, 2]
+// Dependencies: [19, 17, 4470, 1934, 1921, 673, 21, 4478, 586, 8122, 8088, 4217, 8541, 4413, 5983, 4197, 709, 685, 8128, 7671, 1978, 8123, 5630, 1296, 8925, 1233, 4204, 5632, 16399, 5945, 2]
 
-// Module 16167 (JoinRequestActionSheet)
+// Module 16398 (JoinRequestActionSheet)
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_6 from "createdAt" /* 1935 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
+import closure_6 from "createdAt" /* 1934 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

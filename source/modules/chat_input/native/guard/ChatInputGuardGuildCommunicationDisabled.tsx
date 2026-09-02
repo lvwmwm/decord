@@ -1,13 +1,13 @@
-// Module ID: 12025
-// Function ID: 12026
-// Dependencies: [19, 1994, 21, 12026, 12012, 11426, 1236, 2]
+// Module ID: 12249
+// Function ID: 12250
+// Dependencies: [19, 1993, 21, 12250, 12236, 11649, 1233, 2]
 
-// Module 12025
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import ClockWarningIcon from "ClockWarningIcon" /* 11426 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 12012 */;
-import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 12026 */;
-import { GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK as closure_3 } from "getFriendlyDurationString" /* 1994 */;
+// Module 12249
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import ClockWarningIcon from "ClockWarningIcon" /* 11649 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 12236 */;
+import useCommunicationDisabledCountdownCleanup from "useCommunicationDisabledCountdownCleanup" /* 12250 */;
+import { GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK as closure_3 } from "getFriendlyDurationString" /* 1993 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 
@@ -25,9 +25,9 @@ const memoResult = importAllResult.memo(function CommunicationDisabledNoticeForG
     date = new Date(communicationDisabledUntil);
   }
   obj = { type: "simple-action", icon: jsx(ClockWarningIcon.ClockWarningIcon, {}), message: null, subtext: null, countdown: null };
-  const intl = tmp(1236).intl;
+  const intl = tmp(1233).intl;
   obj[2] = intl.string(getSystemLocale.t.VSpdzK);
-  const intl2 = tmp(1236).intl;
+  const intl2 = tmp(1233).intl;
   obj = { link: closure_3 };
   obj[3] = intl2.format(getSystemLocale.t["4ZwD5G"], obj);
   obj[4] = date;

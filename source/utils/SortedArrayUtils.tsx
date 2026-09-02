@@ -1,10 +1,10 @@
-// Module ID: 5218
-// Function ID: 5219
+// Module ID: 5226
+// Function ID: 5227
 // Name: insertionIndex
 // Dependencies: [2]
 // Exports: insert, insertionIndex
 
-// Module 5218 (insertionIndex)
+// Module 5226 (insertionIndex)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("utils/SortedArrayUtils.tsx");

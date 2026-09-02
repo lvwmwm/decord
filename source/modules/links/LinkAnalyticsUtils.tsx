@@ -1,13 +1,13 @@
-// Module ID: 8646
-// Function ID: 8647
+// Module ID: 8661
+// Function ID: 8662
 // Name: SERVER_INVITE
-// Dependencies: [676, 8647, 1486, 4675, 698, 2]
+// Dependencies: [673, 8662, 1485, 4675, 695, 2]
 
-// Module 8646 (SERVER_INVITE)
+// Module 8661 (SERVER_INVITE)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import ME2 from "ME" /* 4675 */;
 
 const AnalyticEvents = ME.AnalyticEvents;

@@ -1,22 +1,22 @@
-// Module ID: 15327
-// Function ID: 15328
+// Module ID: 15555
+// Function ID: 15556
 // Name: effectName
-// Dependencies: [32, 19, 17, 1922, 1939, 21, 1940, 8932, 1236, 8928, 2759, 4478, 712, 4926, 4474, 4928, 8923, 8924, 589, 15328, 5992, 5599, 9367, 4749, 2]
+// Dependencies: [32, 19, 17, 1921, 1938, 21, 1939, 8946, 1233, 8942, 2758, 4478, 709, 4926, 4474, 4928, 8937, 8938, 586, 15556, 6000, 5607, 9380, 4749, 2]
 // Exports: default
 
-// Module 15327 (effectName)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2759 */;
+// Module 15555 (effectName)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2758 */;
 import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8923 */;
-import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 8924 */;
-import DISPLAY_NAME_STYLES_EFFECT_NAMES from "DISPLAY_NAME_STYLES_EFFECT_NAMES" /* 8928 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8937 */;
+import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 8938 */;
+import DISPLAY_NAME_STYLES_EFFECT_NAMES from "DISPLAY_NAME_STYLES_EFFECT_NAMES" /* 8942 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

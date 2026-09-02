@@ -1,10 +1,10 @@
 // Module ID: 5278
 // Function ID: 5279
 // Name: registerAsset
-// Dependencies: [1241]
+// Dependencies: [1240]
 
 // Module 5278 (registerAsset)
-import registerAsset from "registerAsset" /* 1241 */;
+import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "11d22afa82357c17306bb835b9fe7074", name: "img_account_sync_x_dark", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "d33f2912dc07229c1490c1d77592fddf", name: "img_account_sync_twitter_light_and_dark", type: "png" });

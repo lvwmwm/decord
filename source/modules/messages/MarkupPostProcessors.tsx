@@ -1,14 +1,12 @@
-// Module ID: 7632
-// Function ID: 7633
+// Module ID: 7642
+// Function ID: 7643
 // Name: checkSpoilerEmbeds
-// Dependencies: [676, 4850, 4393, 7633, 4461, 7638, 1208, 2]
-// Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, removeUserProfileEmbedLinks, runMessageMarkupPostProcessors
+// Dependencies: [673, 4850, 4393, 7643, 4461, 1205, 2]
+// Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeGameServerShareLinks, removeQuestsEmbedLinks, runMessageMarkupPostProcessors
 
-// Module 7632 (checkSpoilerEmbeds)
-import getPathsFromURL from "getPathsFromURL" /* 4461 */;
+// Module 7642 (checkSpoilerEmbeds)
 import getEffectiveVideoProvider from "getEffectiveVideoProvider" /* 4850 */;
-import useIsUserProfileEmbedRenderingEnabled from "useIsUserProfileEmbedRenderingEnabled" /* 7638 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 function checkSpoilerEmbeds(ast, inline) {
@@ -39945,17 +39943,6 @@ function containsMatchingNode(content, fn) {
     }
   }
 }
-function isUserProfileEmbedLink(type) {
-  let tmp = "link" === type.type;
-  if (tmp) {
-    tmp = null != type.target;
-  }
-  if (tmp) {
-    tmp = null != getPathsFromURL.parseUserProfileEmbedCode(type.target);
-    const obj = getPathsFromURL;
-  }
-  return tmp;
-}
 function reinsertConsumedListSeparators(content) {
   const items = [];
   const iter = content[Symbol.iterator]();
@@ -40027,8 +40014,8 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !callback(7633).isExperimentEmbedURL(type.target);
-      const obj = callback(7633);
+      tmp = !callback(7643).isExperimentEmbedURL(type.target);
+      const obj = callback(7643);
     }
     return tmp;
   });
@@ -40047,32 +40034,6 @@ export const removeQuestsEmbedLinks = function removeQuestsEmbedLinks(arr) {
     }
     return !tmp4;
   });
-};
-export const removeUserProfileEmbedLinks = function removeUserProfileEmbedLinks(arr) {
-  let tmp = arr;
-  if (arr.some(isUserProfileEmbedLink)) {
-    let tmp2 = arr;
-    if (!arr.some((type) => "link" !== type.type)) {
-      let found = arr;
-      if (obj.getIsUserProfileEmbedRenderingEnabled("MarkupPostProcessors")) {
-        found = arr.filter((type) => {
-          let tmp = "link" === type.type;
-          if (tmp) {
-            tmp = null != type.target;
-          }
-          if (tmp) {
-            tmp = null != callback(table[4]).parseUserProfileEmbedCode(type.target);
-            const obj = callback(table[4]);
-          }
-          return !tmp;
-        });
-      }
-      tmp2 = found;
-      obj = useIsUserProfileEmbedRenderingEnabled;
-    }
-    tmp = tmp2;
-  }
-  return tmp;
 };
 export const removeGameServerShareLinks = function removeGameServerShareLinks(arr) {
   return arr.filter((target) => {
@@ -40130,8 +40091,8 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
                           type = type.type;
                           let _Object = Object;
                           let _HermesInternal = HermesInternal;
-                          callback(table[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                          let obj = callback(table[6]);
+                          callback(table[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                          let obj = callback(table[5]);
                         }
                       }
                     });
@@ -40142,8 +40103,8 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
                     type = type.type;
                     let _Object = Object;
                     let _HermesInternal = HermesInternal;
-                    callback(table[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                    let obj = callback(table[6]);
+                    callback(table[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                    let obj = callback(table[5]);
                   }
                 }
               });
@@ -40154,8 +40115,8 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
               type = type.type;
               let _Object = Object;
               let _HermesInternal = HermesInternal;
-              callback(table[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-              let obj = callback(table[6]);
+              callback(table[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+              let obj = callback(table[5]);
             }
           }
         });
@@ -40166,8 +40127,8 @@ export const convertNewlinesInContent = function convertNewlinesInContent(arr) {
         type = type.type;
         let _Object = Object;
         let _HermesInternal = HermesInternal;
-        callback(table[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-        let obj = callback(table[6]);
+        callback(table[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+        let obj = callback(table[5]);
       }
     }
   });
@@ -40322,8 +40283,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !callback(7633).isExperimentEmbedURL(type.target);
-        const obj = callback(7633);
+        tmp = !callback(7643).isExperimentEmbedURL(type.target);
+        const obj = callback(7643);
       }
       return tmp;
     });
@@ -40400,8 +40361,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                             type = type.type;
                             let _Object = Object;
                             let _HermesInternal = HermesInternal;
-                            callback(table[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                            let obj = callback(table[6]);
+                            callback(table[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                            let obj = callback(table[5]);
                           }
                         }
                       });
@@ -40412,8 +40373,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                       type = type.type;
                       let _Object = Object;
                       let _HermesInternal = HermesInternal;
-                      callback(table[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                      let obj = callback(table[6]);
+                      callback(table[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                      let obj = callback(table[5]);
                     }
                   }
                 });
@@ -40424,8 +40385,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
                 type = type.type;
                 let _Object = Object;
                 let _HermesInternal = HermesInternal;
-                callback(table[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-                let obj = callback(table[6]);
+                callback(table[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+                let obj = callback(table[5]);
               }
             }
           });
@@ -40436,8 +40397,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
           type = type.type;
           let _Object = Object;
           let _HermesInternal = HermesInternal;
-          callback(table[6]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
-          let obj = callback(table[6]);
+          callback(table[5]).captureMessage("AST node type:" + type + " with content typeof " + typeof type.content + ". Keys " + Object.keys(type));
+          let obj = callback(table[5]);
         }
       }
     });

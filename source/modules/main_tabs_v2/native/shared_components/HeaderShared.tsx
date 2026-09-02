@@ -1,21 +1,21 @@
-// Module ID: 7607
-// Function ID: 7608
+// Module ID: 7617
+// Function ID: 7618
 // Name: GenericHeaderTitle
-// Dependencies: [19, 17, 7608, 21, 4478, 712, 4474, 4197, 5496, 5502, 7609, 500, 7614, 1628, 1500, 7616, 5596, 643, 7619, 12927, 5068, 1297, 2]
+// Dependencies: [19, 17, 7618, 21, 4478, 709, 4474, 4197, 5504, 5510, 7619, 1234, 7624, 1627, 1499, 7626, 5604, 640, 7629, 13149, 5076, 1296, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 7607 (GenericHeaderTitle)
-import shallowEqualDefault from "shallowEqual" /* 643 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+// Module 7617 (GenericHeaderTitle)
+import shallowEqualDefault from "shallowEqual" /* 640 */;
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import Background from "Background" /* 5502 */;
-import JoinCallIconDefault from "JoinCallIcon" /* 7619 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import Background from "Background" /* 5510 */;
+import JoinCallIconDefault from "JoinCallIcon" /* 7629 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT" /* 7608 */;
+import { MIN_HEADER_HEIGHT } from "MIN_HEADER_HEIGHT" /* 7618 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -275,11 +275,11 @@ export function getRenderBackImage(navigation) {
 }
 export const getRenderModalBackImage = function getRenderModalBackImage(navigation) {
   const _require = navigation;
-  return _require(500).isAndroid() ? undefined : (() => closure_1_6(closure_1_1(closure_1_2[12]), { navigation: closure_0 }));
+  return _require(1234).isAndroid() ? undefined : (() => closure_1_6(closure_1_1(closure_1_2[12]), { navigation: closure_0 }));
 };
 export const getRenderModalCloseImage = function getRenderModalCloseImage(navigation) {
   const _require = navigation;
-  return _require(500).isAndroid() ? undefined : (() => closure_1_6(closure_1_1(closure_1_2[12]), { navigation: closure_0, type: "close" }));
+  return _require(1234).isAndroid() ? undefined : (() => closure_1_6(closure_1_1(closure_1_2[12]), { navigation: closure_0, type: "close" }));
 };
 export const Header = memoResult;
 export function getDefaultStackHeaderProps(navigation) {

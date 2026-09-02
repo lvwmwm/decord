@@ -1,11 +1,11 @@
-// Module ID: 7322
-// Function ID: 7323
+// Module ID: 7331
+// Function ID: 7332
 // Name: fromServer
-// Dependencies: [7318, 2]
+// Dependencies: [7327, 2]
 
-// Module 7322 (fromServer)
+// Module 7331 (fromServer)
 import set from "set" /* 2 */;
-import ShopBlockType from "ShopBlockType" /* 7318 */;
+import ShopBlockType from "ShopBlockType" /* 7327 */;
 
 let prototype;
 prototype = function FeedBlockRecord(arg0) {

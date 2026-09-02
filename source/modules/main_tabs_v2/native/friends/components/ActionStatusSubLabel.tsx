@@ -1,12 +1,12 @@
-// Module ID: 16030
-// Function ID: 16031
+// Module ID: 16261
+// Function ID: 16262
 // Name: announceActioned
-// Dependencies: [19, 21, 4478, 1351, 4217, 4474, 4935, 4479, 2]
+// Dependencies: [19, 21, 4478, 1350, 4217, 4474, 4935, 4479, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 16030 (announceActioned)
+// Module 16261 (announceActioned)
 import noopAll from "noop" /* 19 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1351 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1350 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importDefaultResult from "module_4217" /* 4217 */;

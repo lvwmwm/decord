@@ -1,9 +1,9 @@
-// Module ID: 11527
-// Function ID: 11528
+// Module ID: 11750
+// Function ID: 11751
 // Name: ChannelRecipientPrivateUserDataFlags
 // Dependencies: [2]
 
-// Module 11527 (ChannelRecipientPrivateUserDataFlags)
+// Module 11750 (ChannelRecipientPrivateUserDataFlags)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ChannelRecipientPrivateUserDataFlags.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 5094
-// Function ID: 5095
-// Dependencies: [1302, 505, 500, 5095, 5096, 712, 5098, 1236, 2]
+// Module ID: 5102
+// Function ID: 5103
+// Dependencies: [1301, 502, 1234, 5103, 5104, 709, 5106, 1233, 2]
 
-// Module 5094
-import set from "set" /* 500 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import launchCamera from "launchCamera" /* 5096 */;
-import openPickerDefault from "openPicker" /* 5098 */;
-import closure_3 from "handleThemeChange" /* 1302 */;
-import { ThemeTypes } from "sum" /* 505 */;
+// Module 5102
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import set from "set" /* 1234 */;
+import launchCamera from "launchCamera" /* 5104 */;
+import openPickerDefault from "openPicker" /* 5106 */;
+import closure_3 from "handleThemeChange" /* 1301 */;
+import { ThemeTypes } from "sum" /* 502 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/image/native/ImagePicker.tsx");
@@ -30,10 +30,10 @@ export default {
     if (obj2.isIOS()) {
       str2 = "pageSheet";
     }
-    let tmp4Result = tmp4(5095);
+    let tmp4Result = tmp4(5103);
     obj2 = set;
     const tmp3 = !mediaType.disableNewIOSPicker;
-    tmp4Result = tmp4(5096);
+    tmp4Result = tmp4(5104);
     obj = {};
     const merged = Object.assign(mediaType);
     obj.mediaType = str;

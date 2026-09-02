@@ -1,10 +1,10 @@
-// Module ID: 10340
-// Function ID: 10341
+// Module ID: 10362
+// Function ID: 10363
 // Name: AUTOCOMPLETE_ROW_HEIGHT
-// Dependencies: [500, 2]
+// Dependencies: [1234, 2]
 
-// Module 10340 (AUTOCOMPLETE_ROW_HEIGHT)
-import set from "set" /* 500 */;
+// Module 10362 (AUTOCOMPLETE_ROW_HEIGHT)
+import set from "set" /* 1234 */;
 
 let num = 56;
 if (set.isAndroid()) {

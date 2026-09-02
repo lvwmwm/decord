@@ -1,11 +1,11 @@
-// Module ID: 9654
-// Function ID: 9655
+// Module ID: 9667
+// Function ID: 9668
 // Name: initialize
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 9654 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 9667 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let c0 = null;
 let c1 = null;

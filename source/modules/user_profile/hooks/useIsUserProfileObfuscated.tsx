@@ -1,11 +1,11 @@
-// Module ID: 9231
-// Function ID: 9232
+// Module ID: 9245
+// Function ID: 9246
 // Name: useIsUserProfileObfuscated
-// Dependencies: [7366, 589, 2]
+// Dependencies: [7375, 586, 2]
 // Exports: default
 
-// Module 9231 (useIsUserProfileObfuscated)
-import closure_2 from "createUserWidgetFromServer" /* 7366 */;
+// Module 9245 (useIsUserProfileObfuscated)
+import closure_2 from "createUserWidgetFromServer" /* 7375 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_profile/hooks/useIsUserProfileObfuscated.tsx");
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/user_profile/hooks/
 export default function useIsUserProfileObfuscated(flags) {
   const _require = flags;
   const items = [closure_2];
-  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_2.getUserProfile(id.id));
+  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_2.getUserProfile(id.id));
   let bio;
   if (stateFromStores != null) {
     bio = stateFromStores.bio;

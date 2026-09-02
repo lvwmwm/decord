@@ -1,19 +1,19 @@
-// Module ID: 11333
-// Function ID: 11334
+// Module ID: 11556
+// Function ID: 11557
 // Name: canFulfillStreamRequest
-// Dependencies: [4501, 4500, 1218, 1387, 1909, 4121, 4569, 4554, 676, 10037, 500, 589, 2]
+// Dependencies: [4501, 4500, 1215, 1386, 1908, 4120, 4569, 4554, 673, 10059, 1234, 586, 2]
 // Exports: default
 
-// Module 11333 (canFulfillStreamRequest)
+// Module 11556 (canFulfillStreamRequest)
 import closure_2 from "initialize" /* 4501 */;
 import closure_3 from "reset" /* 4500 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_8 from "sortActivity" /* 4569 */;
 import closure_9 from "createRTCConnection" /* 4554 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function canFulfillStreamRequest(channel_id, arg1) {

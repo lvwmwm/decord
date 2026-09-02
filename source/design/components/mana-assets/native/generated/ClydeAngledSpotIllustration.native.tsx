@@ -1,14 +1,14 @@
-// Module ID: 6409
-// Function ID: 6410
+// Module ID: 6418
+// Function ID: 6419
 // Name: ClydeAngledSpotIllustration
-// Dependencies: [21, 5493, 6410, 2]
+// Dependencies: [21, 5501, 6419, 2]
 // Exports: ClydeAngledSpotIllustration
 
-// Module 6409 (ClydeAngledSpotIllustration)
+// Module 6418 (ClydeAngledSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6410 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6419 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeAngledSpotIllustration.native.tsx");

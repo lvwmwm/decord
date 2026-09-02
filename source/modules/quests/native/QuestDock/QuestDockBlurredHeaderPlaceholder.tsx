@@ -1,13 +1,13 @@
-// Module ID: 14793
-// Function ID: 14794
+// Module ID: 15020
+// Function ID: 15021
 // Name: QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED
-// Dependencies: [19, 17, 5387, 14696, 21, 4478, 14697, 14794, 4217, 2]
+// Dependencies: [19, 17, 5395, 14922, 21, 4478, 14923, 15021, 4217, 2]
 
-// Module 14793 (QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED)
+// Module 15020 (QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED)
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { QuestDockMode } from "QuestsExperimentLocations" /* 5387 */;
-import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14696 */;
+import { QuestDockMode } from "QuestsExperimentLocations" /* 5395 */;
+import QUEST_DOCK_COLLAPSED_HEIGHT from "QUEST_DOCK_COLLAPSED_HEIGHT" /* 14922 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

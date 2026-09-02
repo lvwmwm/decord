@@ -1,10 +1,10 @@
-// Module ID: 15325
-// Function ID: 15326
-// Dependencies: [19, 17, 21, 4478, 712, 1499, 1628, 5992, 15177, 5599, 14235, 2]
+// Module ID: 15553
+// Function ID: 15554
+// Dependencies: [19, 17, 21, 4478, 709, 1498, 1627, 6000, 15406, 5607, 14458, 2]
 
-// Module 15325
-import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+// Module 15553
+import ThemesDefault from "Themes" /* 709 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -16,13 +16,13 @@ obj = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, padding: Them
 obj[0] = obj;
 let closure_5 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScreen() {
-  let obj = _require(1499);
+  let obj = _require(1498);
   _require = obj.useNavigation();
   obj = { style: callback().container, contentContainerStyle: null, children: null };
   obj = { paddingBottom: useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16 };
   obj[1] = obj;
   obj1 = { hasIcons: true, children: null };
-  const entries = Object.entries(_require(15177).PerformanceTestingScreens);
+  const entries = Object.entries(_require(15406).PerformanceTestingScreens);
   obj1[1] = entries.map((arg0) => {
     [tmp, ] = arg0;
     return closure_1_4(callback(closure_1_2[9]).TableRow, {
@@ -42,7 +42,7 @@ const memoResult = importAllResult.memo(function DevToolsPerformanceTestingScree
       }
     }, tmp);
   });
-  obj[2] = jsx(_require(5992).TableRowGroup, { hasIcons: true, children: null });
+  obj[2] = jsx(_require(6000).TableRowGroup, { hasIcons: true, children: null });
   return <ScrollView paddingBottom={useSafeAreaInsetsDefault().bottom + ThemesDefault.space.PX_16} />;
 });
 const result = require("set").fileFinishedImporting("modules/devtools/native/components/screens/DevToolsPerformanceTestingScreen.tsx");

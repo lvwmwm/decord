@@ -1,15 +1,15 @@
-// Module ID: 8041
-// Function ID: 8042
+// Module ID: 8050
+// Function ID: 8051
 // Name: hasFetchedColors
-// Dependencies: [32, 5, 19, 4470, 644, 705, 1490, 4326, 589, 7297, 2]
+// Dependencies: [32, 5, 19, 4470, 641, 702, 1489, 4326, 586, 7306, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 8041 (hasFetchedColors)
+// Module 8050 (hasFetchedColors)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 const require = arg1;
 function hasFetchedColors(game_name) {
@@ -154,7 +154,7 @@ function _fetchColors() {
           } else {
             if (1 === tmp7) {
               c4 = 0;
-              callback(705).batchUpdates(() => closure_1_7.setState((fetching) => {
+              callback(702).batchUpdates(() => closure_1_7.setState((fetching) => {
                 let obj = { fetching: null };
                 obj = {};
                 const merged = Object.assign(fetching.fetching);
@@ -162,7 +162,7 @@ function _fetchColors() {
                 obj[0] = obj;
                 return obj;
               }));
-              const obj4 = callback(705);
+              const obj4 = callback(702);
             } else if (arg0 === 1) {
               c6 = 3;
               throw arg1;
@@ -170,7 +170,7 @@ function _fetchColors() {
               table = arg1;
               obj = callback(4326);
               dependencyMap = obj.getComplimentaryPaletteForColor(table[0]);
-              obj1 = callback(705);
+              obj1 = callback(702);
               obj1.batchUpdates(() => {
                 closure_1_7.setState((fetching) => {
                   let obj = { fetching: null, palette: null };
@@ -239,7 +239,7 @@ export default function useAvatarColor(arg0, arg1) {
   });
   dependencyMap = tmp;
   const items = [closure_6];
-  stateFromStores = _require(589).useStateFromStores(items, () => {
+  stateFromStores = _require(586).useStateFromStores(items, () => {
     let num = 1;
     if (flag) {
       num = 1;
@@ -319,7 +319,7 @@ export const useAvatarColors = function useAvatarColors(pendingAvatarSrc, PRIMAR
   });
   dependencyMap = tmp;
   const items = [closure_6];
-  stateFromStores = _require(589).useStateFromStores(items, () => {
+  stateFromStores = _require(586).useStateFromStores(items, () => {
     let num = 1;
     if (flag) {
       num = 1;

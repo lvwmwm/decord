@@ -1,23 +1,23 @@
-// Module ID: 16390
-// Function ID: 16391
+// Module ID: 16622
+// Function ID: 16623
 // Name: ConnectedCreateThreadHeaderButton
-// Dependencies: [19, 17, 1387, 10654, 676, 16227, 21, 7822, 647, 6116, 10860, 7607, 1236, 12311, 698, 8752, 16391, 6008, 5501, 4333, 1628, 16439, 500, 16440, 16441, 16442, 16443, 16284, 2]
+// Dependencies: [19, 17, 1386, 10875, 673, 16459, 21, 7831, 644, 6124, 11080, 7617, 1233, 12535, 695, 8767, 16623, 6016, 5509, 4333, 1627, 16674, 1234, 16675, 16676, 16677, 16678, 16516, 2]
 
-// Module 16390 (ConnectedCreateThreadHeaderButton)
-import registerAssetDefault from "registerAsset" /* 12311 */;
+// Module 16622 (ConnectedCreateThreadHeaderButton)
+import registerAssetDefault from "registerAsset" /* 12535 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import { ChannelDetailsNavigatorScreens as closure_6 } from "ChannelDetailsNavigatorScreens" /* 10654 */;
-import { AnalyticEvents } from "ME" /* 676 */;
-import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16227 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import { ChannelDetailsNavigatorScreens as closure_6 } from "ChannelDetailsNavigatorScreens" /* 10875 */;
+import { AnalyticEvents } from "ME" /* 673 */;
+import { SearchNavigatorScreens } from "SearchNavigatorScreens" /* 16459 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7822 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7831 */;
 
 const require = arg1;
 function ConnectedCreateThreadHeaderButton(channelId) {
   channelId = channelId.channelId;
-  let obj = channelId(647);
+  let obj = channelId(644);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_5.getChannel(channelId));
   let tmp2 = null;
@@ -30,17 +30,17 @@ function ConnectedCreateThreadHeaderButton(channelId) {
 }
 function CreateThreadHeaderButton(channel) {
   channel = channel.channel;
-  let obj = channel(6116);
+  let obj = channel(6124);
   [][0] = channel;
   const canStartThread = obj.useCanStartThread(channel);
   let tmp5 = null;
   if (canStartThread) {
     obj = { accessibilityLabel: null, onPress: null, source: null };
-    const intl = tmp(1236).intl;
-    obj[0] = intl.string(tmp(1236).t.rBIGBL);
+    const intl = tmp(1233).intl;
+    obj[0] = intl.string(tmp(1233).t.rBIGBL);
     obj[1] = tmp4;
     obj[2] = registerAssetDefault;
-    tmp5 = callback(tmp(7607).HeaderIconButton, obj);
+    tmp5 = callback(tmp(7617).HeaderIconButton, obj);
   }
   return tmp5;
 }
@@ -139,10 +139,10 @@ const memoResult = importAllResult.memo((navigation) => {
         route = route.route;
         let obj = {
           header(arg0) {
-            let obj = route(7607);
+            let obj = route(7617);
             obj = {};
             const merged = Object.assign(arg0);
-            obj.shouldHandleSafeArea = route(500).isAndroid();
+            obj.shouldHandleSafeArea = route(1234).isAndroid();
             return obj.renderHeader(obj);
           },
           headerTitle() {

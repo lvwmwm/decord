@@ -1,13 +1,13 @@
 // Module ID: 4535
 // Function ID: 4536
 // Name: _migrateDefaultStorage
-// Dependencies: [5, 4501, 1218, 4536, 676, 4537, 4104, 4538, 38, 4539, 4544, 1399, 4547, 4549, 4550, 589, 4529, 709, 2]
+// Dependencies: [5, 4501, 1215, 4536, 673, 4537, 4103, 4538, 38, 4539, 4544, 1398, 4547, 4549, 4550, 586, 4529, 706, 2]
 
 // Module 4535 (_migrateDefaultStorage)
 import _modDef38 from "module_38" /* 38 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import hasFlag from "hasFlag" /* 1399 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import hasFlag from "hasFlag" /* 1398 */;
 import _detectH265HardwareDecode from "_detectH265HardwareDecode" /* 4529 */;
 import isClipsEnabled from "isClipsEnabled" /* 4539 */;
 import isStreamKey from "isStreamKey" /* 4544 */;
@@ -16,9 +16,9 @@ import apexExperimentDefault from "apexExperiment" /* 4549 */;
 import apexExperiment from "apexExperiment" /* 4550 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "initialize" /* 4501 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
 import result from "result" /* 4536 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import RESOLUTION_720 from "RESOLUTION_720" /* 4537 */;
 import set from "set" /* 2 */;
 
@@ -74,7 +74,7 @@ function _migrateDefaultStorage() {
         } else if (1 === tmp7) {
           c3 = 0;
           logger.error("Failed to resolve videos path for default storage migration", dependencyMap);
-          const app = callback2(4104).app;
+          const app = callback2(4103).app;
           c4 = 2;
           c5 = 1;
           const obj2 = { value: null, done: false };

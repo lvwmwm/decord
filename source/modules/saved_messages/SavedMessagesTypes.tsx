@@ -1,10 +1,10 @@
-// Module ID: 7604
-// Function ID: 7605
+// Module ID: 7614
+// Function ID: 7615
 // Name: SavedMessageSortTypes
 // Dependencies: [4737, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 7604 (SavedMessageSortTypes)
+// Module 7614 (SavedMessageSortTypes)
 import set from "set" /* 2 */;
 import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
 

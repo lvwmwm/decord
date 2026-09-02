@@ -1,24 +1,24 @@
-// Module ID: 13397
-// Function ID: 13398
+// Module ID: 13620
+// Function ID: 13621
 // Name: stopActivity
-// Dependencies: [4501, 1340, 1218, 4514, 4517, 4554, 1981, 676, 687, 595, 4526, 11072, 4362, 4653, 589, 709, 2]
+// Dependencies: [4501, 1339, 1215, 4514, 4517, 4554, 1980, 673, 684, 592, 4526, 11292, 4362, 4653, 586, 706, 2]
 
-// Module 13397 (stopActivity)
-import initializeDefault from "initialize" /* 589 */;
-import Storage2 from "Storage" /* 595 */;
-import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 13620 (stopActivity)
+import initializeDefault from "initialize" /* 586 */;
+import Storage2 from "Storage" /* 592 */;
+import setDefault from "set" /* 684 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import removeExecutablePathPrefix from "removeExecutablePathPrefix" /* 4653 */;
-import _modDef11072 from "module_11072" /* 11072 */;
+import _modDef11292 from "module_11292" /* 11292 */;
 import closure_3 from "initialize" /* 4501 */;
-import closure_4 from "handleConnectionClosedOrResumed" /* 1340 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "handleConnectionClosedOrResumed" /* 1339 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "gameFromServer" /* 4514 */;
 import closure_7 from "setLibraryApplications" /* 4517 */;
 import closure_8 from "createRTCConnection" /* 4554 */;
-import closure_9 from "handleConnectionOpen" /* 1981 */;
-import { Distributors } from "ME" /* 676 */;
-import { Storage } from "Storage" /* 595 */;
+import closure_9 from "handleConnectionOpen" /* 1980 */;
+import { Distributors } from "ME" /* 673 */;
+import { Storage } from "Storage" /* 592 */;
 
 require = arg1;
 function stopActivity(applicationId, flag) {
@@ -71,7 +71,7 @@ function updateActivity(applicationId) {
   obj[7] = voiceChannelId;
   obj[8] = sessionId;
   obj[9] = mediaSessionId;
-  _modDef11072.updateActivity(obj);
+  _modDef11292.updateActivity(obj);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
     const interval = new tmp3(4362).Interval();
@@ -82,7 +82,7 @@ function updateActivity(applicationId) {
   }
   if (!flag) {
     obj[applicationId.applicationId] = applicationId;
-    const Storage = tmp3(595).Storage;
+    const Storage = tmp3(592).Storage;
     const result1 = Storage.set(ActivityTrackingStore, obj);
   }
 }

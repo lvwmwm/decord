@@ -1,24 +1,24 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7629
+// Function ID: 7630
 // Name: JoinCallIcon
-// Dependencies: [19, 17, 5449, 1391, 1387, 4497, 7620, 676, 7621, 21, 4478, 7623, 712, 7625, 5050, 7627, 7628, 7644, 589, 6116, 7645, 7813, 6119, 6094, 12919, 9408, 12920, 1236, 3501, 4727, 12921, 6235, 11867, 7640, 500, 4340, 11866, 11927, 11066, 1231, 4333, 11239, 5022, 10700, 12922, 4731, 12923, 12925, 2]
+// Dependencies: [19, 17, 5457, 1390, 1386, 4497, 7630, 673, 7631, 21, 4478, 7633, 709, 7635, 5054, 7637, 7638, 7653, 586, 6124, 7654, 7822, 6127, 6102, 13141, 9421, 13142, 1233, 3500, 4727, 13143, 6244, 12090, 7649, 1234, 4340, 12089, 12150, 11286, 1228, 4333, 11462, 5026, 10921, 13144, 4731, 13145, 13147, 2]
 // Exports: default
 
-// Module 7619 (JoinCallIcon)
+// Module 7629 (JoinCallIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5050 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 7623 */;
-import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7625 */;
-import _modDef12925 from "module_12925" /* 12925 */;
+import ThemesDefault from "Themes" /* 709 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5054 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 7633 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 7635 */;
+import _modDef13147 from "module_13147" /* 13147 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "handleThreadCreateOrUpdate" /* 5449 */;
-import { THREADED_CHANNEL_TYPES } from "createChannelRecord" /* 1391 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "handleThreadCreateOrUpdate" /* 5457 */;
+import { THREADED_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "updateVoiceState" /* 4497 */;
-import { setIsChannelDetailsSearchActive as closure_8 } from "useChannelDetailsStore" /* 7620 */;
-import ME from "ME" /* 676 */;
-import { SearchEntrypointAnalyticsLocations as closure_12 } from "SearchEntrypointAnalyticsLocations" /* 7621 */;
+import { setIsChannelDetailsSearchActive as closure_8 } from "useChannelDetailsStore" /* 7630 */;
+import ME from "ME" /* 673 */;
+import { SearchEntrypointAnalyticsLocations as closure_12 } from "SearchEntrypointAnalyticsLocations" /* 7631 */;
 import { jsx } from "jsxProd" /* 21 */;
 import { createElement } from "noop" /* 19 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -280,7 +280,7 @@ function ChannelActionButtons(channel) {
 function WrappedChannelNavButtons(channelId) {
   channelId = channelId.channelId;
   ({ screenIndex, showCreateThread } = channelId);
-  let obj = channelId(589);
+  let obj = channelId(586);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getChannel(channelId));
   channelId(4731);
@@ -308,7 +308,7 @@ export default function ChannelActions(channelId) {
   channelId = channelId.channelId;
   const screenIndex = channelId.screenIndex;
   ({ containerStyle, showCreateThread } = channelId);
-  let obj = channelId(589);
+  let obj = channelId(586);
   const items = [closure_6];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let obj = closure_1_6;
@@ -333,12 +333,12 @@ export default function ChannelActions(channelId) {
     return obj;
   });
   ({ isMultiUserDM, isDM } = stateFromStoresObject);
-  obj1 = channelId(7628);
+  obj1 = channelId(7638);
   obj = { style: containerStyle, children: null };
   if (obj1.useHasForumSearchQuery(channelId)) {
     obj = { channelId: null };
     obj[0] = channelId;
-    let tmp4Result = tmp4(channelId(12923).ForumChannelCloseSearchButton, obj);
+    let tmp4Result = tmp4(channelId(13145).ForumChannelCloseSearchButton, obj);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {
@@ -352,7 +352,7 @@ export default function ChannelActions(channelId) {
     const obj2 = { channelId: null, screenIndex: null };
     obj2[0] = channelId;
     obj2[1] = screenIndex;
-    tmp4Result = tmp4(_modDef12925, obj2);
+    tmp4Result = tmp4(_modDef13147, obj2);
   }
   obj[1] = tmp4Result;
   return <View style={containerStyle}>{null}</View>;

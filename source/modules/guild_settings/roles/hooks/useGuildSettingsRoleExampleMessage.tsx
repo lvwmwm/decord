@@ -1,13 +1,13 @@
-// Module ID: 17213
-// Function ID: 17214
+// Module ID: 17449
+// Function ID: 17450
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1935, 676, 4737, 7497, 1236, 8116, 12954, 2]
+// Dependencies: [19, 1934, 673, 4737, 7507, 1233, 8124, 13176, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 17213 (useGuildSettingsRoleExampleMessage)
+// Module 17449 (useGuildSettingsRoleExampleMessage)
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createdAt" /* 1935 */;
-import { MessageStates } from "ME" /* 676 */;
+import closure_5 from "createdAt" /* 1934 */;
+import { MessageStates } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_settings/roles/hooks/useGuildSettingsRoleExampleMessage.tsx");

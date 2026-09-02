@@ -1,11 +1,11 @@
 // Module ID: 4385
 // Function ID: 4386
 // Name: handleGameServerInstanceCreated
-// Dependencies: [4386, 4387, 589, 709, 2]
+// Dependencies: [4386, 4387, 586, 706, 2]
 
 // Module 4385 (handleGameServerInstanceCreated)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 4387 */;
 
 function handleGameServerInstanceCreated(arg0) {

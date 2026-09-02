@@ -1,18 +1,18 @@
-// Module ID: 11574
-// Function ID: 11575
+// Module ID: 11797
+// Function ID: 11798
 // Name: ForumPostGridHeader
-// Dependencies: [19, 17, 6120, 1394, 21, 4478, 11575, 11577, 11586, 11587, 11588, 2]
+// Dependencies: [19, 17, 6128, 1393, 21, 4478, 11798, 11800, 11809, 11810, 11811, 2]
 // Exports: default
 
-// Module 11574 (ForumPostGridHeader)
+// Module 11797 (ForumPostGridHeader)
 import noopAll from "noop" /* 19 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11575 */;
-import ForumPostUsername from "ForumPostUsername" /* 11577 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11586 */;
-import ForumPostTitleDefault from "ForumPostTitle" /* 11588 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11798 */;
+import ForumPostUsername from "ForumPostUsername" /* 11800 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 11809 */;
+import ForumPostTitleDefault from "ForumPostTitle" /* 11811 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 6120 */;
-import { ChannelFlags } from "set" /* 1394 */;
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 6128 */;
+import { ChannelFlags } from "set" /* 1393 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -35,7 +35,7 @@ export default function ForumPostGridHeader(arg0) {
   }
   const items = [hasFlagResult, callback(ForumPostUsername.ForumPostAuthor, { thread, hasUnreads }), callback(ForumPostTimestampDefault, { thread, hasUnreads, format: ForumTimestampFormats.POSTED_DURATION_AGO, textStyle: tmp.timestampText }), ];
   if (isNew) {
-    isNew = tmp8(tmp10(11587), {});
+    isNew = tmp8(tmp10(11810), {});
   }
   items[3] = isNew;
   obj[1] = items;

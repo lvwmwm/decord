@@ -1,13 +1,13 @@
-// Module ID: 12194
-// Function ID: 12195
+// Module ID: 12418
+// Function ID: 12419
 // Name: _fetchWelcomeScreen
-// Dependencies: [5, 676, 709, 530, 2]
+// Dependencies: [5, 673, 706, 527, 2]
 // Exports: clearWelcomeScreenSettings, fetchWelcomeScreen, resetWelcomeScreen, saveWelcomeScreen, updateSettings, welcomeScreenViewed
 
-// Module 12194 (_fetchWelcomeScreen)
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 12418 (_fetchWelcomeScreen)
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _fetchWelcomeScreen() {
@@ -26,10 +26,10 @@ function _fetchWelcomeScreen() {
       obj1[0] = c4.GUILD_WELCOME_SCREEN(callback);
       yield HTTP.get(obj1);
       c4 = 0;
-      let obj4 = lib(709);
+      let obj4 = lib(706);
       obj4.dispatch({ type: "WELCOME_SCREEN_FETCH_FAIL" });
       lib = yield "HermesInternal";
-      const obj = lib(709);
+      const obj = lib(706);
       obj4 = { type: "WELCOME_SCREEN_FETCH_SUCCESS", guildId: null, welcomeScreen: null };
       obj4[1] = callback;
       obj4[2] = lib.body;
@@ -67,7 +67,7 @@ function _saveWelcomeScreen() {
       yield HTTP.patch(obj1);
       if (1 === tmp7) {
         c5 = 0;
-        const obj3 = lib(709);
+        const obj3 = lib(706);
         obj3.dispatch({ type: "WELCOME_SCREEN_SUBMIT_FAILURE" });
         c7 = 3;
       } else if (arg0 === 1) {
@@ -75,7 +75,7 @@ function _saveWelcomeScreen() {
         throw arg1;
       } else if (arg0 !== 2) {
         lib = arg1;
-        const obj = lib(709);
+        const obj = lib(706);
         const obj4 = { type: "WELCOME_SCREEN_SUBMIT_SUCCESS", guildId: null, welcomeScreen: null };
         obj4[1] = callback;
         obj4[2] = lib.body;

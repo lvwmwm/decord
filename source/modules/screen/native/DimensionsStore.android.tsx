@@ -1,18 +1,18 @@
-// Module ID: 1494
-// Function ID: 1495
+// Module ID: 1493
+// Function ID: 1494
 // Name: getDimensionsStoreStateForEntry
-// Dependencies: [17, 1495, 1893, 1628, 1894, 1641, 705, 644, 1629, 2]
+// Dependencies: [17, 1494, 1892, 1627, 1893, 1640, 702, 641, 1628, 2]
 
-// Module 1494 (getDimensionsStoreStateForEntry)
+// Module 1493 (getDimensionsStoreStateForEntry)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import batchUpdates from "batchUpdates" /* 705 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1628 */;
-import APP_ENTRY_KEYS from "APP_ENTRY_KEYS" /* 1641 */;
-import readWindowSizeForAppEntry from "readWindowSizeForAppEntry" /* 1893 */;
-import keys from "keys" /* 644 */;
-import importDefaultResult from "subscribeToKeyboardUIStore" /* 1495 */;
-import importDefaultResult1 from "module_1629" /* 1629 */;
+import batchUpdates from "batchUpdates" /* 702 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1627 */;
+import APP_ENTRY_KEYS from "APP_ENTRY_KEYS" /* 1640 */;
+import readWindowSizeForAppEntry from "readWindowSizeForAppEntry" /* 1892 */;
+import keys from "keys" /* 641 */;
+import importDefaultResult from "subscribeToKeyboardUIStore" /* 1494 */;
+import importDefaultResult1 from "module_1628" /* 1628 */;
 
 function getDimensionsStoreStateForEntry(appEntryKey) {
   const size = {};
@@ -37,7 +37,7 @@ function getDimensionsStoreStateForEntry(appEntryKey) {
   }
   let width = size.width;
   ({ width: width2, height } = size2);
-  let tmp2Result = tmp2(1628);
+  let tmp2Result = tmp2(1627);
   const rect = tmp2Result.getSafeAreaInsets(appEntryKey);
   let tmp8 = height;
   let tmp9 = width2;
@@ -47,7 +47,7 @@ function getDimensionsStoreStateForEntry(appEntryKey) {
   }
   const bound = Math.min(width + rect.left + rect.right, tmp9);
   const sum = size.height + rect.top + rect.bottom;
-  tmp2Result = tmp2(1894);
+  tmp2Result = tmp2(1893);
   obj = { appEntryKey };
   const bound1 = Math.min(sum - tmp2Result.getSystemKeyboardHeight(obj), tmp8);
   width = undefined;

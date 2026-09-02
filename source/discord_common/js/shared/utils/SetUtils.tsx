@@ -1,10 +1,10 @@
-// Module ID: 1429
-// Function ID: 1430
+// Module ID: 1428
+// Function ID: 1429
 // Name: areSetsEqual
 // Dependencies: [2]
 // Exports: areSetsEqual, toSetInplace
 
-// Module 1429 (areSetsEqual)
+// Module 1428 (areSetsEqual)
 import set2 from "set" /* 2 */;
 
 const result = set2.fileFinishedImporting("../discord_common/js/shared/utils/SetUtils.tsx");

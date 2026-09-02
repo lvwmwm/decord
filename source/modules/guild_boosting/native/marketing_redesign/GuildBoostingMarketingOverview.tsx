@@ -1,16 +1,16 @@
-// Module ID: 6247
-// Function ID: 6248
+// Module ID: 6256
+// Function ID: 6257
 // Name: GuildBoostingMarketingOverview
-// Dependencies: [32, 19, 17, 1909, 1922, 676, 21, 4478, 6248, 589, 1499, 5953, 5941, 7141, 1930, 698, 709, 6104, 4837, 7144, 13232, 13239, 13244, 13252, 13257, 13261, 2]
+// Dependencies: [32, 19, 17, 1908, 1921, 673, 21, 4478, 6257, 586, 1498, 5961, 5949, 7150, 1929, 695, 706, 6112, 4837, 7153, 13454, 13461, 13466, 13474, 13479, 13483, 2]
 // Exports: default
 
-// Module 6247 (GuildBoostingMarketingOverview)
+// Module 6256 (GuildBoostingMarketingOverview)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -83,8 +83,8 @@ export default function GuildBoostingMarketingOverview(guildId) {
   }, items3);
   const effect1 = obj3.useEffect(() => {
     guildBoostSlots(stateFromStores[16]).wait(() => {
-      const premiumSubscriptionPlans = callback(6104).fetchPremiumSubscriptionPlans();
-      const obj = callback(6104);
+      const premiumSubscriptionPlans = callback(6112).fetchPremiumSubscriptionPlans();
+      const obj = callback(6112);
       const paymentSources = callback(4837).fetchPaymentSources();
     });
   }, []);

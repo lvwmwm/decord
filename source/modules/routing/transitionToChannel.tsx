@@ -1,16 +1,16 @@
 // Module ID: 4489
 // Function ID: 4490
 // Name: transitionToChannel
-// Dependencies: [1387, 676, 4490, 4491, 1222, 4721, 38, 2]
+// Dependencies: [1386, 673, 4490, 4491, 1219, 4721, 38, 2]
 // Exports: transitionToChannel, transitionToMessage, transitionToStaticChannelRoute, transitionToThread, transitionToThreadMessage, tryTransitionToThreadMessage
 
 // Module 4489 (transitionToChannel)
 import _modDef38 from "module_38" /* 38 */;
-import transitionTo from "transitionTo" /* 1222 */;
+import transitionTo from "transitionTo" /* 1219 */;
 import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 4490 */;
 import _modDef4491 from "module_4491" /* 4491 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import { Routes } from "ME" /* 676 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import { Routes } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/routing/transitionToChannel.tsx");

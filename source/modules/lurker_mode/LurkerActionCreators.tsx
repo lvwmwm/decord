@@ -1,14 +1,14 @@
-// Module ID: 6166
-// Function ID: 6167
+// Module ID: 6174
+// Function ID: 6175
 // Name: stopLurkingAll
-// Dependencies: [5, 4554, 4122, 676, 709, 530, 1471, 2]
+// Dependencies: [5, 4554, 4121, 673, 706, 527, 1470, 2]
 // Exports: stopLurking
 
-// Module 6166 (stopLurkingAll)
+// Module 6174 (stopLurkingAll)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createRTCConnection" /* 4554 */;
-import closure_5 from "initialize" /* 4122 */;
-import { Endpoints } from "ME" /* 676 */;
+import closure_5 from "initialize" /* 4121 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function stopLurkingAll(items) {
@@ -75,7 +75,7 @@ function _stopLurkingAll() {
                     c6 = 0;
                     c7 = 0;
                     c5 = 0;
-                    return (/* F122872 */ function*() { ... })();
+                    return (/* F124726 */ function*() { ... })();
                   });
                   return function() {
                     const self = this;
@@ -165,7 +165,7 @@ function _stopLurking() {
               table = undefined;
               c3 = 1;
               guildId = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp4) {

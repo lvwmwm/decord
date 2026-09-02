@@ -1,13 +1,13 @@
-// Module ID: 6071
-// Function ID: 6072
+// Module ID: 6079
+// Function ID: 6080
 // Name: isGuildSpaceAdmin
-// Dependencies: [1909, 4121, 676, 589, 6072, 2]
+// Dependencies: [1908, 4120, 673, 586, 6080, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin, useCanUseGuildSpace, useIsGuildSpaceAdmin
 
-// Module 6071 (isGuildSpaceAdmin)
-import closure_2 from "createGuildRecordFromRust" /* 1909 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4121 */;
-import { Permissions } from "ME" /* 676 */;
+// Module 6079 (isGuildSpaceAdmin)
+import closure_2 from "createGuildRecordFromRust" /* 1908 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
+import { Permissions } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_space/canUseGuildSpace.tsx");
@@ -23,7 +23,7 @@ export const useIsGuildSpaceAdmin = function useIsGuildSpaceAdmin(arg0) {
   const _require = arg0;
   const items = [closure_3];
   const items1 = [arg0];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let canResult = null != stateFromStores;
     if (canResult) {
       canResult = closure_1_3.can(closure_1_4.MANAGE_GUILD, tmp);
@@ -36,12 +36,12 @@ export function canUseGuildSpace(closure_2, getChannelIdForGuildTransition) {
 }
 export const useCanUseGuildSpace = function useCanUseGuildSpace(id, useGuildActionRows) {
   let stateFromStores = id;
-  const guildSpaceExperimentEnabled = stateFromStores(6072).useGuildSpaceExperimentEnabled(id, useGuildActionRows);
-  let tmpResult = tmp(589);
+  const guildSpaceExperimentEnabled = stateFromStores(6080).useGuildSpaceExperimentEnabled(id, useGuildActionRows);
+  let tmpResult = tmp(586);
   const items = [closure_2];
   const items1 = [id];
   stateFromStores = tmpResult.useStateFromStores(items, () => closure_1_2.getGuild(stateFromStores), items1);
-  tmpResult = tmp(589);
+  tmpResult = tmp(586);
   const items2 = [closure_3];
   const items3 = [stateFromStores];
   const stateFromStores1 = tmpResult.useStateFromStores(items2, () => {

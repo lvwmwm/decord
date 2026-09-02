@@ -1,13 +1,13 @@
-// Module ID: 14842
-// Function ID: 14843
+// Module ID: 15071
+// Function ID: 15072
 // Name: route
-// Dependencies: [4529, 676, 589, 1236, 11068, 10088, 14843, 2]
+// Dependencies: [4529, 673, 586, 1233, 11288, 10110, 15072, 2]
 
-// Module 14842 (route)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 15071 (route)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_2 from "_detectH265HardwareDecode" /* 4529 */;
-import ME from "ME" /* 676 */;
-import createToggle from "createToggle" /* 11068 */;
+import ME from "ME" /* 673 */;
+import createToggle from "createToggle" /* 11288 */;
 
 require = arg1;
 ({ InputModes: c3, UserSettingsSections } = ME);
@@ -21,11 +21,11 @@ createToggle = {
   useTrailing: function useVoiceSettingTrailing() {
     const items = [closure_2];
     if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {
-      const intl2 = tmp(1236).intl;
-      let stringResult = intl2.string(tmp(1236).t.Q8gkVL);
+      const intl2 = tmp(1233).intl;
+      let stringResult = intl2.string(tmp(1233).t.Q8gkVL);
     } else {
-      const intl = tmp(1236).intl;
-      stringResult = intl.string(tmp(1236).t.cHCEOJ);
+      const intl = tmp(1233).intl;
+      stringResult = intl.string(tmp(1233).t.cHCEOJ);
     }
     return stringResult;
   },
@@ -39,7 +39,7 @@ createToggle = {
 createToggle = {
   route: UserSettingsSections.VOICE,
   getComponent() {
-    return require(14843) /* KrispLogo */.default;
+    return require(15072) /* KrispLogo */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

@@ -1,11 +1,11 @@
-// Module ID: 9020
-// Function ID: 9021
+// Module ID: 9034
+// Function ID: 9035
 // Name: styles
-// Dependencies: [19, 17, 21, 4478, 712, 1431, 9021, 5068, 9022, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1430, 9035, 5076, 9036, 2]
 // Exports: default
 
-// Module 9020 (styles)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9034 (styles)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -30,7 +30,7 @@ export default function GameIcon(arg0) {
   const iconURL = game.getIconURL(24);
   let source = null;
   if (null != iconURL) {
-    let obj = onPress(1431);
+    let obj = onPress(1430);
     source = obj.makeSource(iconURL);
   }
   const items = [game, onPress];
@@ -63,18 +63,18 @@ export default function GameIcon(arg0) {
         source = closure_4;
         obj1 = { style: null, children: null };
         obj1[0] = fireIcon.gameIconMask;
-        FireIcon = FireIcon(9022).FireIcon;
+        FireIcon = FireIcon(9036).FireIcon;
         const obj2 = { style: null, color: null };
         fireIcon = fireIcon.fireIcon;
         obj2[0] = fireIcon;
-        ORANGE_260 = onPress(712).unsafe_rawColors.ORANGE_260;
+        ORANGE_260 = onPress(709).unsafe_rawColors.ORANGE_260;
         obj2[1] = ORANGE_260;
         obj1[1] = style(FireIcon, obj2);
         style = style(closure_4, obj1);
       }
       callback[1] = style;
       obj[2] = callback;
-      let tmp14Result = closure_7(FireIcon(5068).PressableHighlight, obj);
+      let tmp14Result = closure_7(FireIcon(5076).PressableHighlight, obj);
       const tmp10 = closure_7;
     } else {
       const obj3 = { style: null, children: null };
@@ -90,8 +90,8 @@ export default function GameIcon(arg0) {
         obj5[0] = fireIcon.gameIconMask;
         const obj6 = { style: null, color: null };
         obj6[0] = fireIcon.fireIcon;
-        obj6[1] = onPress(712).unsafe_rawColors.ORANGE_330;
-        obj5[1] = tmp16(FireIcon(9022).FireIcon, obj6);
+        obj6[1] = onPress(709).unsafe_rawColors.ORANGE_330;
+        obj5[1] = tmp16(FireIcon(9036).FireIcon, obj6);
         tmp16Result = tmp16(tmp15, obj5);
       }
       items3[1] = tmp16Result;

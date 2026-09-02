@@ -1,10 +1,10 @@
-// Module ID: 11024
-// Function ID: 11025
+// Module ID: 11244
+// Function ID: 11245
 // Name: useLastChannelMessage
-// Dependencies: [4735, 589, 2]
+// Dependencies: [4735, 586, 2]
 // Exports: useLastChannelMessage
 
-// Module 11024 (useLastChannelMessage)
+// Module 11244 (useLastChannelMessage)
 import closure_2 from "reinjectEphemerals" /* 4735 */;
 
 const require = arg1;
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/self_mod/inappropri
 export const useLastChannelMessage = function useLastChannelMessage(channelId) {
   const _require = channelId;
   const items = [closure_2];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let lastNonCurrentUserMessage = closure_1_2.getLastNonCurrentUserMessage(closure_0);
     if (lastNonCurrentUserMessage == null) {
       lastNonCurrentUserMessage = closure_1_2.getLastMessage(closure_0);

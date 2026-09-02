@@ -1,22 +1,22 @@
 // Module ID: 4554
 // Function ID: 4555
 // Name: createRTCConnection
-// Dependencies: [4495, 1218, 4555, 676, 4542, 3, 4556, 4578, 709, 13480, 4362, 4558, 5355, 13481, 589, 13483, 698, 2009, 2]
+// Dependencies: [4495, 1215, 4555, 673, 4542, 3, 4556, 4578, 706, 13703, 4362, 4558, 5363, 13704, 586, 13706, 695, 2008, 2]
 
 // Module 4554 (createRTCConnection)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import sleep from "sleep" /* 4558 */;
-import updateVoiceStatesDefault from "updateVoiceStates" /* 13480 */;
-import useIsSpatialAudioAvailable from "useIsSpatialAudioAvailable" /* 13481 */;
-import trackVideoToggle from "trackVideoToggle" /* 13483 */;
+import updateVoiceStatesDefault from "updateVoiceStates" /* 13703 */;
+import useIsSpatialAudioAvailable from "useIsSpatialAudioAvailable" /* 13704 */;
+import trackVideoToggle from "trackVideoToggle" /* 13706 */;
 import closure_5 from "set" /* 4495 */;
-import closure_6 from "fetchFingerprint" /* 1218 */;
+import closure_6 from "fetchFingerprint" /* 1215 */;
 import closure_7 from "getVoiceStatesForGuild" /* 4555 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
-import promise from "expandEventProperties" /* 698 */;
+import promise from "expandEventProperties" /* 695 */;
 
 require = arg1;
 function createRTCConnection(arg0, arg1, arg2) {
@@ -38,7 +38,7 @@ function createRTCConnection(arg0, arg1, arg2) {
       closure_0 = arg0;
       const callback = arg1;
       dependencyMap = arg2;
-      callback(709).wait(() => {
+      callback(706).wait(() => {
         let obj = callback(table[8]);
         obj = { type: "RTC_CONNECTION_STATE", state: closure_0 };
         const merged = Object.assign(callback);
@@ -61,7 +61,7 @@ function createRTCConnection(arg0, arg1, arg2) {
     _default.on(_default(4578).RTCConnectionEvent.Ping, (arg0, arg1) => {
       closure_0 = arg0;
       const callback = arg1;
-      callback(709).wait(() => {
+      callback(706).wait(() => {
         let obj = callback(closure_1_2[8]);
         obj = { type: "RTC_CONNECTION_PING", pings: closure_0, quality: callback };
         return obj.dispatch(obj);
@@ -69,7 +69,7 @@ function createRTCConnection(arg0, arg1, arg2) {
     });
     _default.on(_default(4578).RTCConnectionEvent.OutboundLossRate, (arg0) => {
       closure_0 = arg0;
-      callback(709).wait(() => {
+      callback(706).wait(() => {
         let obj = closure_1_1(closure_1_2[8]);
         obj = { type: "RTC_CONNECTION_LOSS_RATE", lossRate: closure_0 };
         return obj.dispatch(obj);
@@ -90,7 +90,7 @@ function createRTCConnection(arg0, arg1, arg2) {
       });
     });
     _default.on(_default(4578).RTCConnectionEvent.UsersMerged, (userIds, context) => {
-      let obj = callback(709);
+      let obj = callback(706);
       obj = { type: "RTC_CONNECTION_USERS_MERGED", userIds, context };
       obj.dispatch(obj);
     });
@@ -114,20 +114,20 @@ function createRTCConnection(arg0, arg1, arg2) {
       closure_0 = arg0;
       const callback = arg1;
       dependencyMap = arg2;
-      callback(709).wait(() => {
+      callback(706).wait(() => {
         let obj = callback(table[8]);
         obj = { type: "RTC_CONNECTION_PLATFORM", platform: callback, userId: closure_0, channelId: table };
         obj.dispatch(obj);
       });
     });
     _default.on(_default(4578).RTCConnectionEvent.SecureFramesUpdate, () => {
-      callback(709).wait(() => {
+      callback(706).wait(() => {
         callback(table[8]).dispatch({ type: "RTC_CONNECTION_SECURE_FRAMES_UPDATE" });
       });
     });
     _default.on(_default(4578).RTCConnectionEvent.RosterMapUpdate, (arg0) => {
       closure_0 = arg0;
-      callback(709).wait(() => {
+      callback(706).wait(() => {
         let obj = closure_1_1(closure_1_2[8]);
         obj = { type: "RTC_CONNECTION_ROSTER_MAP_UPDATE", userIds: closure_0 };
         obj.dispatch(obj);

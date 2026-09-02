@@ -1,11 +1,11 @@
-// Module ID: 7784
-// Function ID: 7785
+// Module ID: 7793
+// Function ID: 7794
 // Name: createNativePlaceholderConfig
-// Dependencies: [19, 17, 7785, 4326, 2]
+// Dependencies: [19, 17, 7794, 4326, 2]
 // Exports: default
 
-// Module 7784 (createNativePlaceholderConfig)
-import FastestListPropsPlaceholderType from "FastestListPropsPlaceholderType" /* 7785 */;
+// Module 7793 (createNativePlaceholderConfig)
+import FastestListPropsPlaceholderType from "FastestListPropsPlaceholderType" /* 7794 */;
 import closure_2 from "noop" /* 19 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
 
@@ -19,13 +19,13 @@ function createNativePlaceholderConfig(type) {
   if (type == null) {
     NONE = FastestListPropsPlaceholderType.FastestListPropsPlaceholderType.NONE;
   }
-  obj = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "category", borderBottomLeftRadius: "bottom", borderBottomRightRadius: "diversity", divider: "y", dividerColor: "e", dividerPaddingLeft: "isArray", dividerPaddingRight: "isArray", placeholderShape: "Boolean", placeholderShapeColor: "e", placeholderShapeCount: "isArray", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "o", placeholderShapePaddingVertical: "e", placeholderFeedBackgroundColor: "isArray", placeholderFeedColor: "isArray", placeholderFeedLabelPadding: "l", placeholderFeedLabelPaddingInnerRatio: "e", placeholderFeedLabelSize: "isArray", placeholderFeedLabelSecondarySize: "isArray", placeholderFeedPadding: "e", placeholderFeedShape: "e", placeholderFeedShapeSize: "isArray", placeholderType: "pinching_hand", width: 2057, height: 2058, verticalAlignment: 2059, horizontalAlignment: 2060 };
+  obj = { borderRadius: "Array", borderTopLeftRadius: "count", borderTopRightRadius: "call", borderBottomLeftRadius: "Set", borderBottomRightRadius: "displayName", divider: "y", dividerColor: "e", dividerPaddingLeft: "isArray", dividerPaddingRight: "isArray", placeholderShape: "Boolean", placeholderShapeColor: "e", placeholderShapeCount: "isArray", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "o", placeholderShapePaddingVertical: "e", placeholderFeedBackgroundColor: "isArray", placeholderFeedColor: "isArray", placeholderFeedLabelPadding: "l", placeholderFeedLabelPaddingInnerRatio: "e", placeholderFeedLabelSize: "isArray", placeholderFeedLabelSecondarySize: "isArray", placeholderFeedPadding: "e", placeholderFeedShape: "e", placeholderFeedShapeSize: "isArray", placeholderType: "pinching_hand", width: 2057, height: 2058, verticalAlignment: 2059, horizontalAlignment: 2060 };
   obj[24] = NONE;
   if (null == type) {
     return obj;
   } else {
     if (FastestListPropsPlaceholderType.FastestListPropsPlaceholderType.NONE !== type) {
-      if (tmp15(7785).FastestListPropsPlaceholderType.SHAPE === type) {
+      if (tmp15(7794).FastestListPropsPlaceholderType.SHAPE === type) {
         let num9 = type.borderRadius;
         if (num9 == null) {
           num9 = 0;
@@ -64,7 +64,7 @@ function createNativePlaceholderConfig(type) {
         }
         obj.horizontalAlignment = str2;
         const tmp15Result = tmp15(4326);
-      } else if (tmp15(7785).FastestListPropsPlaceholderType.FEED_ITEM === type) {
+      } else if (tmp15(7794).FastestListPropsPlaceholderType.FEED_ITEM === type) {
         let num = type.borderRadius;
         if (num == null) {
           num = 0;

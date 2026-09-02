@@ -1,13 +1,13 @@
-// Module ID: 8072
-// Function ID: 8073
+// Module ID: 8080
+// Function ID: 8081
 // Name: useBioMaxLength
-// Dependencies: [676, 1468, 2]
+// Dependencies: [673, 1467, 2]
 // Exports: getBioMaxLength, useBioMaxLength
 
-// Module 8072 (useBioMaxLength)
+// Module 8080 (useBioMaxLength)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ME from "ME" /* 673 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 ({ BIO_MAX_LENGTH, BIO_MAX_LENGTH_INCREASED } = ME);
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-08-user-bio-max-length", kind: "user", defaultConfig: { maxLength: BIO_MAX_LENGTH }, variations: { 0: { maxLength: BIO_MAX_LENGTH }, 1: { maxLength: BIO_MAX_LENGTH_INCREASED } } });

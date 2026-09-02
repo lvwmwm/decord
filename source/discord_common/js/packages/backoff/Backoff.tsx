@@ -1,9 +1,9 @@
-// Module ID: 584
-// Function ID: 585
+// Module ID: 581
+// Function ID: 582
 // Name: fails
 // Dependencies: [2]
 
-// Module 584 (fails)
+// Module 581 (fails)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("../discord_common/js/packages/backoff/Backoff.tsx");

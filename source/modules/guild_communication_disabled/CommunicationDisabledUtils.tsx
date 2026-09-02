@@ -1,10 +1,10 @@
-// Module ID: 4110
-// Function ID: 4111
+// Module ID: 4109
+// Function ID: 4110
 // Name: isCommunicationDisabled
 // Dependencies: [2]
 // Exports: isCommunicationDisabled, isMemberCommunicationDisabled
 
-// Module 4110 (isCommunicationDisabled)
+// Module 4109 (isCommunicationDisabled)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/guild_communication_disabled/CommunicationDisabledUtils.tsx");

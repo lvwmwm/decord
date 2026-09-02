@@ -1,14 +1,14 @@
-// Module ID: 6321
-// Function ID: 6322
+// Module ID: 6330
+// Function ID: 6331
 // Name: AvatarDecorationsAbstractUI
-// Dependencies: [21, 5493, 6322, 2]
+// Dependencies: [21, 5501, 6331, 2]
 // Exports: AvatarDecorationsAbstractUI
 
-// Module 6321 (AvatarDecorationsAbstractUI)
+// Module 6330 (AvatarDecorationsAbstractUI)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6322 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6331 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarDecorationsAbstractUI.native.tsx");

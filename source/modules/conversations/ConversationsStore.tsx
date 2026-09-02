@@ -1,20 +1,20 @@
-// Module ID: 7341
-// Function ID: 7342
+// Module ID: 7350
+// Function ID: 7351
 // Name: removePendingListFetch
-// Dependencies: [1218, 1387, 4130, 1981, 1922, 7342, 7343, 1401, 11, 4737, 7344, 1471, 4132, 589, 709, 2]
+// Dependencies: [1215, 1386, 4130, 1980, 1921, 7351, 7352, 1400, 11, 4737, 7353, 1470, 4132, 586, 706, 2]
 
-// Module 7341 (removePendingListFetch)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import privDefault from "priv" /* 1401 */;
+// Module 7350 (removePendingListFetch)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import privDefault from "priv" /* 1400 */;
 import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
-import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "fetchFingerprint" /* 1215 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;
-import closure_6 from "handleConnectionOpen" /* 1981 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "initialize" /* 7342 */;
-import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7343 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import closure_8 from "initialize" /* 7351 */;
+import CONVERSATION_COLORS from "CONVERSATION_COLORS" /* 7352 */;
 
 require = arg1;
 function removePendingListFetch(channelId, requestKey) {
@@ -549,8 +549,8 @@ obj = {
     ({ channelId, rawConversations, direction, anchor, isJump, fullyHydrated } = requestKey);
     let set;
     if (removePendingListFetch(channelId, requestKey.requestKey)) {
-      const mapped = rawConversations.map(set(7344).mapConversation);
-      const found = mapped.filter(set(1471).isNotNullish);
+      const mapped = rawConversations.map(set(7353).mapConversation);
+      const found = mapped.filter(set(1470).isNotNullish);
       const peekResult = navigation.peek(channelId);
       if (isJump) {
         let prop;

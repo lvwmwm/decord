@@ -1,14 +1,14 @@
-// Module ID: 6795
-// Function ID: 6796
+// Module ID: 6804
+// Function ID: 6805
 // Name: MiniaturesSpotIllustration
-// Dependencies: [21, 5493, 6796, 2]
+// Dependencies: [21, 5501, 6805, 2]
 // Exports: MiniaturesSpotIllustration
 
-// Module 6795 (MiniaturesSpotIllustration)
+// Module 6804 (MiniaturesSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6796 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6805 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/MiniaturesSpotIllustration.native.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 15881
-// Function ID: 15882
+// Module ID: 16112
+// Function ID: 16113
 // Name: DEFAULT_FOLDER_COLOR
-// Dependencies: [688, 711, 2]
+// Dependencies: [685, 708, 2]
 
-// Module 15881 (DEFAULT_FOLDER_COLOR)
+// Module 16112 (DEFAULT_FOLDER_COLOR)
 import set from "set" /* 2 */;
-import int2hslRaw from "int2hslRaw" /* 688 */;
-import unsafe_getRawColor from "unsafe_getRawColor" /* 711 */;
+import int2hslRaw from "int2hslRaw" /* 685 */;
+import unsafe_getRawColor from "unsafe_getRawColor" /* 708 */;
 
 const hex2intResult = int2hslRaw.hex2int(unsafe_getRawColor.unsafe_getResolvedRawColor("BRAND_500", { saturation: 1 }));
 const result = set.fileFinishedImporting("modules/guilds_bar/GuildsBarConstants.tsx");

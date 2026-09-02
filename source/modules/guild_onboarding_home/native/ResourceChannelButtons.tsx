@@ -1,11 +1,11 @@
-// Module ID: 11849
-// Function ID: 11850
+// Module ID: 12072
+// Function ID: 12073
 // Name: ResourceChannelButtons
-// Dependencies: [32, 19, 17, 21, 4478, 712, 1500, 11850, 11851, 4928, 1297, 11178, 11853, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 1499, 12073, 12074, 4928, 1296, 11399, 12076, 2]
 // Exports: default
 
-// Module 11849 (ResourceChannelButtons)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12072 (ResourceChannelButtons)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

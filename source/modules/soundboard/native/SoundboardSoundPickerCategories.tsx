@@ -1,20 +1,20 @@
-// Module ID: 16660
-// Function ID: 16661
+// Module ID: 16895
+// Function ID: 16896
 // Name: SoundCategoryItem
-// Dependencies: [19, 17, 16642, 1922, 676, 21, 4478, 712, 4973, 6004, 1236, 10383, 4441, 16658, 8843, 5068, 1297, 5044, 4446, 4447, 589, 4139, 9134, 1628, 4347, 8920, 2]
+// Dependencies: [19, 17, 16877, 1921, 673, 21, 4478, 709, 4973, 6012, 1233, 10405, 4441, 16893, 8858, 5076, 1296, 5048, 4446, 4447, 586, 4139, 9148, 1627, 4347, 8935, 2]
 
-// Module 16660 (SoundCategoryItem)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16895 (SoundCategoryItem)
+import ThemesDefault from "Themes" /* 709 */;
 import SoundButtonOverlay from "SoundButtonOverlay" /* 4973 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
-import registerAssetDefault from "registerAsset" /* 10383 */;
-import registerAssetDefault2 from "registerAsset" /* 16658 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
+import registerAssetDefault from "registerAsset" /* 10405 */;
+import registerAssetDefault2 from "registerAsset" /* 16893 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { setSearchQuery } from "withEqualityFn" /* 16642 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import { setSearchQuery } from "withEqualityFn" /* 16877 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -36,28 +36,28 @@ function SoundCategoryItem(style) {
     let tmp6 = null;
     let tmp7 = null;
   } else if (tmp2(4973).SoundboardSoundGridSectionType.FAVORITES === type) {
-    const intl4 = tmp2(1236).intl;
-    name = intl4.string(tmp2(1236).t.y3LQCG);
+    const intl4 = tmp2(1233).intl;
+    name = intl4.string(tmp2(1233).t.y3LQCG);
     tmp6 = registerAssetDefault;
     tmp7 = null;
     tmp14Result = null;
   } else if (tmp2(4973).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
-    const intl3 = tmp2(1236).intl;
-    name = intl3.string(tmp2(1236).t["+cGVV6"]);
+    const intl3 = tmp2(1233).intl;
+    name = intl3.string(tmp2(1233).t["+cGVV6"]);
     obj = { style: null };
     obj[0] = tmp.keyboardItem;
     tmp7 = callback(tmp2(4441).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
   } else if (tmp2(4973).SoundboardSoundGridSectionType.DEFAULTS === type) {
-    const intl2 = tmp2(1236).intl;
-    name = intl2.string(tmp2(1236).t.Rtvk9X);
+    const intl2 = tmp2(1233).intl;
+    name = intl2.string(tmp2(1233).t.Rtvk9X);
     tmp6 = registerAssetDefault2;
     tmp7 = null;
     tmp14Result = null;
   } else if (tmp2(4973).SoundboardSoundGridSectionType.SEARCH === type) {
-    const intl = tmp2(1236).intl;
-    name = intl.string(tmp2(1236).t.sKt3xS);
+    const intl = tmp2(1233).intl;
+    name = intl.string(tmp2(1233).t.sKt3xS);
     tmp6 = registerAssetDefault2;
     tmp7 = null;
     tmp14Result = null;
@@ -67,13 +67,13 @@ function SoundCategoryItem(style) {
     tmp14Result = null;
     name = null;
     if (tmp2(4973).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
-      const intl5 = tmp2(1236).intl;
+      const intl5 = tmp2(1233).intl;
       obj = { guildName: null };
       obj[0] = category.categoryInfo.guild.name;
-      name = intl5.formatToPlainString(tmp2(1236).t.GXs41w, obj);
+      name = intl5.formatToPlainString(tmp2(1233).t.GXs41w, obj);
       obj1 = { style: null };
       obj1[0] = tmp.keyboardItem;
-      tmp7 = callback(tmp2(8843).TrophyIcon, obj1);
+      tmp7 = callback(tmp2(8858).TrophyIcon, obj1);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -95,7 +95,7 @@ function SoundCategoryItem(style) {
     const obj4 = { style: null, source: null };
     obj4[0] = tmp.keyboardItem;
     obj4[1] = tmp6;
-    tmp14Result = tmp14(tmp2(1297).Icon, obj4);
+    tmp14Result = tmp14(tmp2(1296).Icon, obj4);
   }
   const items1 = [tmp14Result, ];
   if (locked) {
@@ -103,7 +103,7 @@ function SoundCategoryItem(style) {
     obj5[0] = tmp.lockContainer;
     const obj6 = { style: null };
     obj6[0] = tmp.lock;
-    obj5[1] = tmp14(tmp2(5044).LockIcon, obj6);
+    obj5[1] = tmp14(tmp2(5048).LockIcon, obj6);
     locked = tmp14(tmp16, obj5);
   }
   items1[1] = locked;

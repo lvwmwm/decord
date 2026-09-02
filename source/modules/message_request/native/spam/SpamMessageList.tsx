@@ -1,18 +1,18 @@
-// Module ID: 16471
-// Function ID: 16472
+// Module ID: 16706
+// Function ID: 16707
 // Name: PendingSpamMessageRequestRow
-// Dependencies: [19, 17, 676, 21, 4478, 712, 1236, 12014, 4194, 7680, 4489, 4723, 12006, 698, 5068, 16456, 1297, 9518, 14529, 8363, 1628, 16465, 16472, 16463, 4945, 7347, 7352, 16466, 500, 4474, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 1233, 12238, 4194, 7689, 4489, 4723, 12230, 695, 5076, 16691, 1296, 9531, 14752, 8372, 1627, 16700, 16707, 16698, 4945, 7356, 7361, 16701, 1234, 4474, 2]
 // Exports: default
 
-// Module 16471 (PendingSpamMessageRequestRow)
-import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+// Module 16706 (PendingSpamMessageRequestRow)
+import ThemesDefault from "Themes" /* 709 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4945 */;
-import MessageRequestEmptyDefault from "MessageRequestEmpty" /* 16466 */;
-import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 16472 */;
+import MessageRequestEmptyDefault from "MessageRequestEmpty" /* 16701 */;
+import useSortedSpamMessageRequestsDefault from "useSortedSpamMessageRequests" /* 16707 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -195,22 +195,22 @@ export default function SpamMessageList(goToMessageRequestPreview) {
   const tmp = callback2();
   importDefault = tmp;
   const bottom = useSafeAreaInsetsDefault().bottom;
-  let obj = goToMessageRequestPreview(16465);
+  let obj = goToMessageRequestPreview(16700);
   dependencyMap = obj.useSpamMessageRequestCount();
   arr = useSortedSpamMessageRequestsDefault();
-  obj1 = goToMessageRequestPreview(16463);
+  obj1 = goToMessageRequestPreview(16698);
   closure_4 = obj1.useListHasSingleSpamMessageRequest();
   useMountLayoutEffectDefault(() => {
-    let obj = lib(698);
+    let obj = lib(695);
     obj = { num_spam_message_requests: dependencyMap };
     obj.track(closure_1_7.SPAM_MESSAGE_REQUESTS_VIEWED, obj);
-    obj = { name: goToMessageRequestPreview(7352).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
-    lib(7347).increment(obj);
+    obj = { name: goToMessageRequestPreview(7361).MetricEvents.SPAM_MESSAGE_REQUEST_VIEW };
+    lib(7356).increment(obj);
   });
   if (0 === arr.length) {
     obj = { bodyText: null };
-    let intl = tmp4(1236).intl;
-    obj[0] = intl.string(tmp4(1236).t.hasFPQ);
+    let intl = tmp4(1233).intl;
+    obj[0] = intl.string(tmp4(1233).t.hasFPQ);
     return callback(MessageRequestEmptyDefault, obj);
   } else {
     const items = ["header-section"];
@@ -235,10 +235,10 @@ export default function SpamMessageList(goToMessageRequestPreview) {
         let obj = { style: null, children: null };
         obj[0] = lib.sectionContainer;
         obj = { variant: "eyebrow", color: "text-default", children: null };
-        const intl = goToMessageRequestPreview(1236).intl;
+        const intl = goToMessageRequestPreview(1233).intl;
         obj = { count: null };
         obj[0] = arr.length;
-        obj[2] = intl.format(goToMessageRequestPreview(1236).t.aNh5Kf, obj);
+        obj[2] = intl.format(goToMessageRequestPreview(1233).t.aNh5Kf, obj);
         obj[1] = closure_1_8(goToMessageRequestPreview(4474).Text, obj);
         let tmp11Result = closure_1_8(closure_1_5, obj);
       } else {

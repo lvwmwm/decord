@@ -1,12 +1,12 @@
-// Module ID: 7853
-// Function ID: 7854
+// Module ID: 7862
+// Function ID: 7863
 // Name: items
-// Dependencies: [676, 4368, 2]
+// Dependencies: [673, 4368, 2]
 // Exports: getRandomGuildTagBadgeKind, getRandomGuildTagBadgePreset
 
-// Module 7853 (items)
+// Module 7862 (items)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID" /* 4368 */;
 
 const GuildFeatures = ME.GuildFeatures;

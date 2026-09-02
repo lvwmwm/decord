@@ -1,12 +1,12 @@
-// Module ID: 10363
-// Function ID: 10364
+// Module ID: 10385
+// Function ID: 10386
 // Name: useFrecencySettings
-// Dependencies: [19, 1340, 1370, 589, 2]
+// Dependencies: [19, 1339, 1369, 586, 2]
 // Exports: useFrecencySettings
 
-// Module 10363 (useFrecencySettings)
+// Module 10385 (useFrecencySettings)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/FrecencyUserSettingsHooks.tsx");
@@ -24,5 +24,5 @@ export const useFrecencySettings = function useFrecencySettings(flag2) {
     }
   }, items);
   const items1 = [closure_3];
-  return flag(589).useStateFromStores(items1, () => obj.frecencyWithoutFetchingLatest);
+  return flag(586).useStateFromStores(items1, () => obj.frecencyWithoutFetchingLatest);
 };

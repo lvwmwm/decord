@@ -1,10 +1,10 @@
-// Module ID: 7415
-// Function ID: 7416
+// Module ID: 7424
+// Function ID: 7425
 // Name: getMediaPerformanceClass
 // Dependencies: [4457, 2]
 // Exports: default
 
-// Module 7415 (getMediaPerformanceClass)
+// Module 7424 (getMediaPerformanceClass)
 import set from "set" /* 2 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 

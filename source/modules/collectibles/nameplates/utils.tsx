@@ -1,16 +1,16 @@
-// Module ID: 1947
-// Function ID: 1948
+// Module ID: 1946
+// Function ID: 1947
 // Name: getNameplateData
-// Dependencies: [1948, 505, 1951, 1953, 1236, 2]
+// Dependencies: [1947, 502, 1950, 1952, 1233, 2]
 // Exports: getBackgroundGradientColors, getNameplateData, getNameplateDataFromProductRecord, getNameplatePalette, getNameplateSampleUsers, isValidPalette, parseFirstFrame
 
-// Module 1947 (getNameplateData)
+// Module 1946 (getNameplateData)
 import set from "set" /* 2 */;
-import sum from "sum" /* 505 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import fromServer from "fromServer" /* 1948 */;
-import NAMEPLATE_PALETTES from "NAMEPLATE_PALETTES" /* 1951 */;
-import decodeImageDefault from "decodeImage" /* 1953 */;
+import sum from "sum" /* 502 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import fromServer from "fromServer" /* 1947 */;
+import NAMEPLATE_PALETTES from "NAMEPLATE_PALETTES" /* 1950 */;
+import decodeImageDefault from "decodeImage" /* 1952 */;
 
 const isNameplateRecord = fromServer.isNameplateRecord;
 const ThemeTypes = sum.ThemeTypes;
@@ -23,7 +23,7 @@ export const getNameplateData = function getNameplateData(nameplate) {
     ({ skuId: obj[0], asset: obj[1], label: obj[2] } = nameplate);
     let INVALID_NAMEPLATE_PALETTE = NAMEPLATE_PALETTES.NAMEPLATE_PALETTES[nameplate.palette];
     if (INVALID_NAMEPLATE_PALETTE == null) {
-      INVALID_NAMEPLATE_PALETTE = tmp2(1951).INVALID_NAMEPLATE_PALETTE;
+      INVALID_NAMEPLATE_PALETTE = tmp2(1950).INVALID_NAMEPLATE_PALETTE;
     }
     obj[3] = INVALID_NAMEPLATE_PALETTE;
     tmp = obj;
@@ -44,7 +44,7 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
         ({ skuId: obj[0], asset: obj[1], label: obj[2], palette } = first);
         let INVALID_NAMEPLATE_PALETTE = NAMEPLATE_PALETTES.NAMEPLATE_PALETTES[palette];
         if (INVALID_NAMEPLATE_PALETTE == null) {
-          INVALID_NAMEPLATE_PALETTE = tmp2(1951).INVALID_NAMEPLATE_PALETTE;
+          INVALID_NAMEPLATE_PALETTE = tmp2(1950).INVALID_NAMEPLATE_PALETTE;
         }
         obj[3] = INVALID_NAMEPLATE_PALETTE;
         tmp = obj;

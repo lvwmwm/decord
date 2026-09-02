@@ -1,22 +1,22 @@
-// Module ID: 8921
-// Function ID: 8922
+// Module ID: 8936
+// Function ID: 8937
 // Name: DisplayName
-// Dependencies: [19, 17, 8556, 6001, 676, 7853, 8922, 21, 4478, 712, 8923, 8924, 8933, 5068, 8935, 4474, 8937, 7474, 4333, 8971, 1236, 8995, 8557, 8996, 6245, 1902, 4194, 8546, 8998, 8999, 9003, 5390, 698, 7473, 500, 9004, 9005, 9006, 1493, 8075, 9007, 4322, 2]
+// Dependencies: [19, 17, 8569, 6009, 673, 7862, 8575, 21, 4478, 709, 8937, 8938, 8947, 5076, 8949, 4474, 8951, 7484, 4333, 8985, 1233, 9009, 8570, 9010, 6254, 1901, 4194, 8559, 9012, 9013, 9017, 5398, 695, 7483, 1234, 9018, 9019, 9020, 1492, 8083, 9021, 4322, 2]
 // Exports: default
 
-// Module 8921 (DisplayName)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 8936 (DisplayName)
+import ThemesDefault from "Themes" /* 709 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import guildHasTag from "guildHasTag" /* 8075 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8923 */;
-import memoResult1Default from "memoResult1" /* 9007 */;
+import guildHasTag from "guildHasTag" /* 8083 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8937 */;
+import memoResult1Default from "memoResult1" /* 9021 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { getBadgeName } from "USER_PROFILE_TOOLTIP_DELAY" /* 8556 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6001 */;
-import ME from "ME" /* 676 */;
-import { GuildTagBadgeSize } from "items" /* 7853 */;
-import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 8922 */;
+import { getBadgeName } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import ME from "ME" /* 673 */;
+import { GuildTagBadgeSize } from "items" /* 7862 */;
+import { DEFAULT_PREMIUM_BADGE_ID } from "DEFAULT_PREMIUM_BADGE_ID" /* 8575 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

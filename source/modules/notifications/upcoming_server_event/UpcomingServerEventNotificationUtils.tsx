@@ -1,13 +1,13 @@
-// Module ID: 15110
-// Function ID: 15111
+// Module ID: 15339
+// Function ID: 15340
 // Name: onUpcomingServerEventNotificationSettingsChanged
-// Dependencies: [4133, 676, 4166, 698, 2]
+// Dependencies: [4133, 673, 4166, 695, 2]
 // Exports: onUpcomingServerEventNotificationSettingsChanged
 
-// Module 15110 (onUpcomingServerEventNotificationSettingsChanged)
+// Module 15339 (onUpcomingServerEventNotificationSettingsChanged)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import AccountNotificationFlags from "AccountNotificationFlags" /* 4133 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 14226
-// Function ID: 14227
+// Module ID: 14449
+// Function ID: 14450
 // Name: MaybeClearBuildOverride
-// Dependencies: [5, 32, 19, 17, 11059, 21, 4478, 589, 11360, 4928, 1236, 4204, 1208, 709, 1297, 9940, 4474, 2]
+// Dependencies: [5, 32, 19, 17, 11279, 21, 4478, 586, 11583, 4928, 1233, 4204, 1205, 706, 1296, 9962, 4474, 2]
 
-// Module 14226 (MaybeClearBuildOverride)
-import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef1208 from "module_1208" /* 1208 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+// Module 14449 (MaybeClearBuildOverride)
+import dispatcherDefault from "dispatcher" /* 706 */;
+import _modDef1205 from "module_1205" /* 1205 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
 import Button2 from "Button" /* 4928 */;
-import getAppCrashSource from "getAppCrashSource" /* 9940 */;
+import getAppCrashSource from "getAppCrashSource" /* 9962 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "getCurrentBuildOverride" /* 11059 */;
+import closure_8 from "getCurrentBuildOverride" /* 11279 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -53,7 +53,7 @@ function MaybeClearBuildOverride() {
   }
   let tmp = callback(importAllResult.useState(false), 2);
   const _require = tmp[1];
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_8];
   if (null == obj.useStateFromStores(items, () => {
     const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
@@ -70,8 +70,8 @@ function MaybeClearBuildOverride() {
   } else {
     obj = { variant: "secondary", loading: null, text: null, onPress: null };
     obj[1] = tmp[0];
-    const intl = tmp2(1236).intl;
-    obj[2] = intl.string(tmp2(1236).t["/Nz9rY"]);
+    const intl = tmp2(1233).intl;
+    obj[2] = intl.string(tmp2(1233).t["/Nz9rY"]);
     obj[3] = function clearOverride() {
       const self = this;
       const apply = _clearOverride.apply;
@@ -106,8 +106,8 @@ prototype["triggerSoftCrash"] = function triggerSoftCrash(error, extra) {
   let obj = { error, info: extra };
   this.setState(obj);
   obj = { extra };
-  _modDef1208.captureCrash(error, obj);
-  const obj2 = _modDef1208;
+  _modDef1205.captureCrash(error, obj);
+  const obj2 = _modDef1205;
   dispatcherDefault.dispatch({ type: "CLEAR_CACHES", reason: "App Crashed" });
 };
 prototype["handleReload"] = function handleReload() {
@@ -167,7 +167,7 @@ prototype["render"] = function render() {
     obj[0] = tmp.buttons;
     const items1 = [closure_9(MaybeClearBuildOverride, {}), ];
     obj1 = { text: null, onPress: null };
-    const intl3 = tmp3(1236).intl;
+    const intl3 = tmp3(1233).intl;
     obj1[0] = intl3.string(getSystemLocale.t["4n8OJn"]);
     obj1[1] = self.handleReload;
     items1[1] = closure_9(Button2.Button, obj1);

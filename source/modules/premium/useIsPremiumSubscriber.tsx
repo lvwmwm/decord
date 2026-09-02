@@ -1,12 +1,12 @@
-// Module ID: 8938
-// Function ID: 8939
+// Module ID: 8952
+// Function ID: 8953
 // Name: useIsPremiumSubscriber
-// Dependencies: [1922, 1924, 589, 1946, 2]
+// Dependencies: [1921, 1923, 586, 1945, 2]
 // Exports: useIsPremiumSubscriber
 
-// Module 8938 (useIsPremiumSubscriber)
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+// Module 8952 (useIsPremiumSubscriber)
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/useIsPremiumSubscriber.tsx");
@@ -16,7 +16,7 @@ export const useIsPremiumSubscriber = function useIsPremiumSubscriber(TIER_2) {
     TIER_2 = PremiumTypes.TIER_2;
   }
   const items = [closure_2];
-  return TIER_2(589).useStateFromStores(items, () => {
+  return TIER_2(586).useStateFromStores(items, () => {
     const currentUser = closure_1_2.getCurrentUser();
     return TIER_2(closure_1_1[3]).isPremiumExactly(currentUser, TIER_2);
   });

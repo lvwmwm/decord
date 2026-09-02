@@ -1,21 +1,21 @@
-// Module ID: 8506
-// Function ID: 8507
+// Module ID: 8519
+// Function ID: 8520
 // Name: BundleStaticPreviewContent
-// Dependencies: [19, 17, 8507, 21, 5493, 4478, 712, 38, 1950, 1947, 8508, 8519, 8521, 1297, 2]
+// Dependencies: [19, 17, 8520, 21, 5501, 4478, 709, 38, 1949, 1946, 8521, 8532, 8534, 1296, 2]
 // Exports: default
 
-// Module 8506 (BundleStaticPreviewContent)
+// Module 8519 (BundleStaticPreviewContent)
 import noopAll from "noop" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getNameplateData from "getNameplateData" /* 1947 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
-import preloadDefault from "preload" /* 5493 */;
-import ProfileEffectSampleDefault from "ProfileEffectSample" /* 8508 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8519 */;
-import NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG from "NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG" /* 8521 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getNameplateData from "getNameplateData" /* 1946 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
+import preloadDefault from "preload" /* 5501 */;
+import ProfileEffectSampleDefault from "ProfileEffectSample" /* 8521 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8532 */;
+import NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG from "NAMEPLATE_DUMMY_USER_PREVIEW_CONFIG" /* 8534 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO" /* 8507 */;
+import { BUNDLE_PREVIEW_CONFIG } from "SAMPLE_PROFILE_ASPECT_RATIO" /* 8520 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -143,10 +143,10 @@ function BundleSampleV2Composed(arg0) {
       let obj3 = { width: null, avatarSize: null, nameplate: null };
       obj3[0] = tmp8.nameplatePreviewWidth;
       if ("large" === size) {
-        AvatarSizes = tmp23(1297).AvatarSizes;
+        AvatarSizes = tmp23(1296).AvatarSizes;
         let XSMALL_20 = AvatarSizes.NORMAL;
       } else {
-        XSMALL_20 = tmp23(1297).AvatarSizes.XSMALL_20;
+        XSMALL_20 = tmp23(1296).AvatarSizes.XSMALL_20;
       }
       obj3[1] = XSMALL_20;
       obj3[2] = nameplateData;

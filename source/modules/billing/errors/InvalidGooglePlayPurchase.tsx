@@ -1,9 +1,9 @@
-// Module ID: 10481
-// Function ID: 10482
+// Module ID: 10702
+// Function ID: 10703
 // Name: prototype
 // Dependencies: [4161, 2]
 
-// Module 10481 (prototype)
+// Module 10702 (prototype)
 import setDefault from "set" /* 4161 */;
 
 setDefault;

@@ -1,12 +1,12 @@
-// Module ID: 9261
-// Function ID: 9262
+// Module ID: 9274
+// Function ID: 9275
 // Name: getMutualFriendsLabel
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: default
 
-// Module 9261 (getMutualFriendsLabel)
+// Module 9274 (getMutualFriendsLabel)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/user_profile/utils/getMutualFriendsLabel.tsx");
 

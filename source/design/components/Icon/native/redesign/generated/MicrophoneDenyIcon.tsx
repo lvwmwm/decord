@@ -1,14 +1,14 @@
-// Module ID: 9814
-// Function ID: 9815
+// Module ID: 9836
+// Function ID: 9837
 // Name: MicrophoneDenyIcon
-// Dependencies: [19, 21, 712, 4196, 9815, 2]
+// Dependencies: [19, 21, 709, 4196, 9837, 2]
 // Exports: MicrophoneDenyIcon
 
-// Module 9814 (MicrophoneDenyIcon)
+// Module 9836 (MicrophoneDenyIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9815 */;
+import registerAsset from "registerAsset" /* 9837 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

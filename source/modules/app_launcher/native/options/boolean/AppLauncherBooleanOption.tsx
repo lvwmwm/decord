@@ -1,12 +1,12 @@
-// Module ID: 11747
-// Function ID: 11748
+// Module ID: 11970
+// Function ID: 11971
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 4478, 712, 8363, 2]
+// Dependencies: [32, 19, 21, 4478, 709, 8372, 2]
 // Exports: default
 
-// Module 11747 (AppLauncherBooleanOption)
-import ThemesDefault from "Themes" /* 712 */;
-import Form from "Form" /* 8363 */;
+// Module 11970 (AppLauncherBooleanOption)
+import ThemesDefault from "Themes" /* 709 */;
+import Form from "Form" /* 8372 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

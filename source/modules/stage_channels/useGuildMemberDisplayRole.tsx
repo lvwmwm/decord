@@ -1,13 +1,13 @@
-// Module ID: 5372
-// Function ID: 5373
+// Module ID: 5380
+// Function ID: 5381
 // Name: getHighestHoistedRole
-// Dependencies: [1992, 1909, 4126, 589, 2]
+// Dependencies: [1991, 1908, 4125, 586, 2]
 // Exports: default
 
-// Module 5372 (getHighestHoistedRole)
-import applyOverwritesAll from "applyOverwrites" /* 4126 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+// Module 5380 (getHighestHoistedRole)
+import applyOverwritesAll from "applyOverwrites" /* 4125 */;
+import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 
 const require = arg1;
 function getHighestHoistedRole(arg0, arg1) {
@@ -42,7 +42,7 @@ export default function useGuildMemberDisplayRole(arg0, arg1) {
   closure_1 = arg1;
   let items = [closure_4, closure_3];
   const items1 = [arg0, arg1];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const items = [closure_1_4, closure_1_3];
     return closure_1_5(closure_0, closure_1, items);
   }, items1);

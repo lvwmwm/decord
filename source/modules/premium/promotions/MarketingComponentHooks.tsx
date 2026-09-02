@@ -1,12 +1,12 @@
-// Module ID: 10524
-// Function ID: 10525
+// Module ID: 10745
+// Function ID: 10746
 // Name: useThemeAndReducedMotionAwareAssetUrl
-// Dependencies: [4470, 4413, 589, 1364, 2]
+// Dependencies: [4470, 4413, 586, 1363, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 10524 (useThemeAndReducedMotionAwareAssetUrl)
-import initialize from "initialize" /* 589 */;
-import isThemeLight from "isThemeLight" /* 1364 */;
+// Module 10745 (useThemeAndReducedMotionAwareAssetUrl)
+import initialize from "initialize" /* 586 */;
+import isThemeLight from "isThemeLight" /* 1363 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 

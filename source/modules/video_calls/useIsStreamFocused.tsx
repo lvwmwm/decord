@@ -1,10 +1,10 @@
-// Module ID: 9623
-// Function ID: 9624
+// Module ID: 9636
+// Function ID: 9637
 // Name: useIsStreamFocused
-// Dependencies: [4494, 4499, 589, 2]
+// Dependencies: [4494, 4499, 586, 2]
 // Exports: useIsStreamFocused
 
-// Module 9623 (useIsStreamFocused)
+// Module 9636 (useIsStreamFocused)
 import closure_2 from "getParticipants" /* 4494 */;
 import { isStreamParticipant } from "ParticipantTypes" /* 4499 */;
 
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/video_calls/useIsSt
 export const useIsStreamFocused = function useIsStreamFocused(id) {
   const _require = id;
   const items = [closure_2];
-  const stateFromStores = _require(589).useStateFromStores(items, () => {
+  const stateFromStores = _require(586).useStateFromStores(items, () => {
     let selectedParticipant = null;
     if (null != closure_0) {
       selectedParticipant = closure_1_2.getSelectedParticipant(tmp);

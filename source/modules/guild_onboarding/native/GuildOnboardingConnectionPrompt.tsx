@@ -1,21 +1,21 @@
-// Module ID: 5950
-// Function ID: 5951
+// Module ID: 5958
+// Function ID: 5959
 // Name: GuildOnboardingConnectionPrompt
-// Dependencies: [19, 17, 5490, 5475, 5225, 1909, 5467, 5468, 5464, 676, 21, 4478, 5492, 712, 1499, 1628, 589, 5474, 698, 4700, 5466, 5553, 4474, 1236, 5951, 5973, 4928, 2]
+// Dependencies: [19, 17, 5498, 5483, 5233, 1908, 5475, 5476, 5472, 673, 21, 4478, 5500, 709, 1498, 1627, 586, 5482, 695, 4700, 5474, 5561, 4474, 1233, 5959, 5981, 4928, 2]
 // Exports: default
 
-// Module 5950 (GuildOnboardingConnectionPrompt)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 5958 (GuildOnboardingConnectionPrompt)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "get" /* 5490 */;
-import closure_7 from "recomputeFromAppTokens" /* 5475 */;
-import closure_8 from "set" /* 5225 */;
-import closure_9 from "createGuildRecordFromRust" /* 1909 */;
-import closure_10 from "handleUpdate" /* 5467 */;
-import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5468 */;
-import { GuildOnboardingModalStates as closure_12 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5464 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_6 from "get" /* 5498 */;
+import closure_7 from "recomputeFromAppTokens" /* 5483 */;
+import closure_8 from "set" /* 5233 */;
+import closure_9 from "createGuildRecordFromRust" /* 1908 */;
+import closure_10 from "handleUpdate" /* 5475 */;
+import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5476 */;
+import { GuildOnboardingModalStates as closure_12 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5472 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

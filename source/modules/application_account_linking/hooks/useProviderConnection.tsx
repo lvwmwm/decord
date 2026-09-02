@@ -1,20 +1,20 @@
-// Module ID: 5972
-// Function ID: 5973
+// Module ID: 5980
+// Function ID: 5981
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5225, 589, 5350, 2]
+// Dependencies: [5, 19, 5233, 586, 5358, 2]
 // Exports: useProviderConnection
 
-// Module 5972 (useProviderConnection)
+// Module 5980 (useProviderConnection)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "set" /* 5225 */;
+import closure_5 from "set" /* 5233 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_account_linking/hooks/useProviderConnection.tsx");
 
 export const useProviderConnection = function useProviderConnection(provider_id) {
   let _require = provider_id;
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let account = null;
@@ -25,7 +25,7 @@ export const useProviderConnection = function useProviderConnection(provider_id)
   });
   const items1 = [closure_5];
   let tmp3 = null != stateFromStores;
-  const stateFromStores1 = _require(589).useStateFromStores(items1, () => fetching.isFetching());
+  const stateFromStores1 = _require(586).useStateFromStores(items1, () => fetching.isFetching());
   if (tmp3) {
     tmp3 = !stateFromStores.revoked;
   }

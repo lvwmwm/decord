@@ -1,18 +1,18 @@
-// Module ID: 8477
-// Function ID: 8478
+// Module ID: 8490
+// Function ID: 8491
 // Name: resolveGiftCode
-// Dependencies: [5, 4519, 7287, 7295, 676, 1924, 709, 4752, 5954, 7286, 4376, 4162, 1208, 530, 8478, 8479, 2]
+// Dependencies: [5, 4519, 7296, 7304, 673, 1923, 706, 4752, 5962, 7295, 4376, 4162, 1205, 527, 8491, 8492, 2]
 // Exports: reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 8477 (resolveGiftCode)
+// Module 8490 (resolveGiftCode)
 import prototypeDefault from "prototype" /* 4162 */;
-import _modDef8478 from "module_8478" /* 8478 */;
+import _modDef8491 from "module_8491" /* 8491 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "addApplication" /* 4519 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7287 */;
-import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7295 */;
-import ME from "ME" /* 676 */;
-import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_10 } from "GuildFeatures" /* 1924 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7296 */;
+import { isUnknownCollectiblesItemRecord as closure_6 } from "fromServer" /* 7304 */;
+import ME from "ME" /* 673 */;
+import { PREMIUM_SUBSCRIPTION_APPLICATION as closure_10 } from "GuildFeatures" /* 1923 */;
 
 const require = arg1;
 function resolveGiftCode() {
@@ -75,7 +75,7 @@ function _resolveGiftCode() {
               application = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp9) {
             if (arg0 === 1) {
@@ -219,7 +219,7 @@ function _resolveGiftCode() {
 function reportUnexpectedGiftCodeError(status) {
   if (status instanceof prototypeDefault) {
     if (404 !== status.status) {
-      let tmpResult = tmp(1208);
+      let tmpResult = tmp(1205);
       let str = status.status;
       if (str == null) {
         str = "unknown";
@@ -233,7 +233,7 @@ function reportUnexpectedGiftCodeError(status) {
   } else {
     const _Error = Error;
     if (status instanceof Error) {
-      tmpResult = tmp(1208);
+      tmpResult = tmp(1205);
       tmpResult.captureException(status);
     }
   }
@@ -370,7 +370,7 @@ export default {
     })();
   },
   openNativeGiftCodeModal(arg0) {
-    _modDef8478.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
+    _modDef8491.openNativeAppModal(arg0, constants.GIFT_CODE_BROWSER);
   }
 };
 export { resolveGiftCode };

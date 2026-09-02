@@ -1,12 +1,12 @@
-// Module ID: 8377
-// Function ID: 8378
+// Module ID: 8386
+// Function ID: 8387
 // Name: FormSwitchRow
-// Dependencies: [32, 19, 17, 21, 4478, 500, 5592, 5611, 8375, 5598, 5993, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 1234, 5600, 5619, 8384, 5606, 6001, 2]
 // Exports: default
 
-// Module 8377 (FormSwitchRow)
-import context from "context" /* 5598 */;
-import TableSwitchRow from "TableSwitchRow" /* 5993 */;
+// Module 8386 (FormSwitchRow)
+import context from "context" /* 5606 */;
+import TableSwitchRow from "TableSwitchRow" /* 6001 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

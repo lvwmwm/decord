@@ -1,10 +1,10 @@
-// Module ID: 1899
-// Function ID: 1900
+// Module ID: 1898
+// Function ID: 1899
 // Name: parseSkuIdFromServerData
 // Dependencies: [2]
 // Exports: parseServerUserCollectibles, parseSkuIdFromServerData
 
-// Module 1899 (parseSkuIdFromServerData)
+// Module 1898 (parseSkuIdFromServerData)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/utils/mappers.tsx");

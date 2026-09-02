@@ -1,22 +1,22 @@
-// Module ID: 10716
-// Function ID: 10717
+// Module ID: 10937
+// Function ID: 10938
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 1387, 4121, 1390, 676, 589, 9924, 1912, 1471, 2]
+// Dependencies: [19, 1386, 4120, 1389, 673, 586, 9946, 1911, 1470, 2]
 // Exports: default
 
-// Module 10716 (useFavoritesGuildChannelFilter)
+// Module 10937 (useFavoritesGuildChannelFilter)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4121 */;
-import closure_5 from "initializeFromUserSettings" /* 1390 */;
-import { Permissions } from "ME" /* 676 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
+import closure_5 from "initializeFromUserSettings" /* 1389 */;
+import { Permissions } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildChannelFilter.tsx");
 
 export default function useFavoritesGuildChannelFilter() {
   const items = [closure_5];
-  stateFromStores = stateFromStores(589).useStateFromStores(items, () => favoriteChannels.getFavoriteChannels());
+  stateFromStores = stateFromStores(586).useStateFromStores(items, () => favoriteChannels.getFavoriteChannels());
   const items1 = [stateFromStores];
   return React.useCallback((type) => {
     type = type.type;

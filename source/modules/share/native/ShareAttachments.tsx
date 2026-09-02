@@ -1,11 +1,11 @@
-// Module ID: 13642
-// Function ID: 13643
+// Module ID: 13865
+// Function ID: 13866
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 4217, 4940, 1297, 4478, 712, 4479, 4326, 1236, 10279, 5082, 2]
+// Dependencies: [19, 17, 21, 4217, 4940, 1296, 4478, 709, 4479, 4326, 1233, 10301, 5090, 2]
 // Exports: default
 
-// Module 13642 (ShareAttachments)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 13865 (ShareAttachments)
+import ThemesDefault from "Themes" /* 709 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

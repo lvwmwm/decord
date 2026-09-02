@@ -1,17 +1,17 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14693
+// Function ID: 14694
 // Name: route
-// Dependencies: [19, 676, 21, 14471, 14472, 8736, 712, 1236, 2369, 11068, 5038, 14475, 2]
+// Dependencies: [19, 673, 21, 14694, 14695, 8751, 709, 1233, 2368, 11288, 5042, 14698, 2]
 
-// Module 14470 (route)
+// Module 14693 (route)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 14471 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 14472 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2368 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 14694 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 14695 */;
 import { jsx } from "jsxProd" /* 21 */;
-import createToggle from "createToggle" /* 11068 */;
+import createToggle from "createToggle" /* 11288 */;
 
 require = arg1;
 noopAll;
@@ -41,9 +41,9 @@ createToggle = {
         if (daysRemaining >= 0) {
           obj = { size: "sm", color: null, accessible: true, accessibilityLabel: null };
           obj[1] = ThemesDefault.colors.ICON_FEEDBACK_WARNING;
-          const intl = tmp(1236).intl;
+          const intl = tmp(1233).intl;
           obj[3] = intl.string(messagesProxyDefault.wucWfE);
-          tmp6 = jsx(tmp(8736).WarningIcon, { size: "sm", color: null, accessible: true, accessibilityLabel: null });
+          tmp6 = jsx(tmp(8751).WarningIcon, { size: "sm", color: null, accessible: true, accessibilityLabel: null });
         }
       }
     }
@@ -54,7 +54,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.FAMILY_CENTER,
   getComponent() {
-    return require(14475) /* FamilyCenterLoading */.default;
+    return require(14698) /* FamilyCenterLoading */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

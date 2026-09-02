@@ -1,15 +1,15 @@
-// Module ID: 9735
-// Function ID: 9736
+// Module ID: 9757
+// Function ID: 9758
 // Name: _fetchGuildIntegrationsApplications
-// Dependencies: [5, 4504, 1935, 676, 530, 709, 2]
+// Dependencies: [5, 4504, 1934, 673, 527, 706, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
 
-// Module 9735 (_fetchGuildIntegrationsApplications)
-import sendRequest from "sendRequest" /* 530 */;
+// Module 9757 (_fetchGuildIntegrationsApplications)
+import sendRequest from "sendRequest" /* 527 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { BasicApplicationRecord } from "createExecutable" /* 4504 */;
-import closure_5 from "createdAt" /* 1935 */;
-import { Endpoints } from "ME" /* 676 */;
+import closure_5 from "createdAt" /* 1934 */;
+import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
 function _fetchGuildIntegrationsApplications() {

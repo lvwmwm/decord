@@ -1,15 +1,15 @@
-// Module ID: 17160
-// Function ID: 17161
+// Module ID: 17396
+// Function ID: 17397
 // Name: useLoadGuildStickersWithCreator
-// Dependencies: [5, 32, 19, 1922, 5445, 589, 10380, 2]
+// Dependencies: [5, 32, 19, 1921, 5453, 586, 10402, 2]
 // Exports: default
 
-// Module 17160 (useLoadGuildStickersWithCreator)
+// Module 17396 (useLoadGuildStickersWithCreator)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import closure_6 from "parseServerGuildSticker" /* 5445 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
+import closure_6 from "parseServerGuildSticker" /* 5453 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stickers/useLoadGuildStickerWithCreator.tsx");
@@ -17,7 +17,7 @@ const result = require("set").fileFinishedImporting("modules/stickers/useLoadGui
 export default function useLoadGuildStickersWithCreator(arg0) {
   const _require = arg0;
   [tmp2, dependencyMap] = callback(React.useState("loading"), 2);
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getStickersByGuildId(closure_0));
   const items1 = [arg0];

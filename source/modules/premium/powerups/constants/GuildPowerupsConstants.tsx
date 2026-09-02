@@ -1,13 +1,13 @@
 // Module ID: 4365
 // Function ID: 4366
 // Name: BoostedGuildTiers
-// Dependencies: [1924, 676, 4366, 4368, 1373, 4369, 1236, 4404, 4405, 4406, 4407, 4388, 2]
+// Dependencies: [1923, 673, 4366, 4368, 1372, 4369, 1233, 4404, 4405, 4406, 4407, 4388, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
 // Module 4365 (BoostedGuildTiers)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import DismissibleContent from "DismissibleContent" /* 1373 */;
-import GuildFeatures2 from "GuildFeatures" /* 1924 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import DismissibleContent from "DismissibleContent" /* 1372 */;
+import GuildFeatures2 from "GuildFeatures" /* 1923 */;
 import str11 from "str11" /* 4366 */;
 import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID" /* 4368 */;
 import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4369 */;
@@ -16,7 +16,7 @@ import apexExperiment from "apexExperiment" /* 4404 */;
 import experiment2 from "experiment" /* 4405 */;
 import apexExperiment2 from "apexExperiment" /* 4406 */;
 import experiment3 from "experiment" /* 4407 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 const BoostedGuildFeatures = GuildFeatures2.BoostedGuildFeatures;

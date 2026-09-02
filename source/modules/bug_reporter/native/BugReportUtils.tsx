@@ -1,10 +1,10 @@
-// Module ID: 10269
-// Function ID: 10270
+// Module ID: 10291
+// Function ID: 10292
 // Name: uriScheme
-// Dependencies: [5, 3, 514, 5082, 1208, 2]
+// Dependencies: [5, 3, 511, 5090, 1205, 2]
 // Exports: getAttachments
 
-// Module 10269 (uriScheme)
+// Module 10291 (uriScheme)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
@@ -129,7 +129,7 @@ function _getAttachments() {
             let tmp38 = logger;
             let tmp39 = lib;
             let tmp40 = dependencyMap;
-            let obj3 = lib(1208);
+            let obj3 = lib(1205);
             let tmp41 = error;
             let obj2 = { tags: null };
             obj3 = { feature: "bug_reporter", attachment_uri_scheme: null };
@@ -185,10 +185,10 @@ function _getAttachments() {
             c6 = 2;
             let tmp53 = arr;
             let tmp54 = dependencyMap;
-            let obj6 = arr(514);
+            let obj6 = arr(511);
             dependencyMap = obj6.v4();
             let tmp55 = dependencyMap;
-            let obj8 = arr(5082);
+            let obj8 = arr(5090);
             let tmp56 = lib;
             c7 = 3;
             let num5 = 1;

@@ -1,28 +1,28 @@
-// Module ID: 15057
-// Function ID: 15058
+// Module ID: 15286
+// Function ID: 15287
 // Name: VideoUploadQualityNitroUpsell
-// Dependencies: [19, 17, 1922, 4145, 7884, 676, 21, 4478, 712, 1499, 647, 4139, 4474, 1236, 5601, 1297, 10390, 7762, 11068, 14340, 2]
+// Dependencies: [19, 17, 1921, 4145, 7893, 673, 21, 4478, 709, 1498, 644, 4139, 4474, 1233, 5609, 1296, 10412, 7771, 11288, 14563, 2]
 // Exports: default
 
-// Module 15057 (VideoUploadQualityNitroUpsell)
-import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 10390 */;
-import _modDef14340 from "module_14340" /* 14340 */;
+// Module 15286 (VideoUploadQualityNitroUpsell)
+import ThemesDefault from "Themes" /* 709 */;
+import registerAssetDefault from "registerAsset" /* 10412 */;
+import _modDef14563 from "module_14563" /* 14563 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import closure_6 from "reset" /* 4145 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7884 */;
-import { UserSettingsSections } from "ME" /* 676 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
+import { UserSettingsSections } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
 function VideoUploadQualityNitroUpsell() {
-  let obj = _require(1499);
+  let obj = _require(1498);
   _require = obj.useStackNavigation();
   const tmp3 = callback2();
-  obj1 = _require(647);
+  obj1 = _require(644);
   const items = [closure_5, closure_6];
   const stateFromStores = obj1.useStateFromStores(items, () => {
     premiumTypeSubscription = premiumTypeSubscription.getPremiumTypeSubscription();
@@ -30,8 +30,8 @@ function VideoUploadQualityNitroUpsell() {
     return arr(table[11]).hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription);
   });
   obj = { variant: "text-xs/normal", color: "text-muted", children: null };
-  const intl = _require(1236).intl;
-  obj[2] = intl.format(_require(1236).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" });
+  const intl = _require(1233).intl;
+  obj[2] = intl.format(_require(1233).t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" });
   const children = [callback(_require(4474).Text, obj), ];
   let tmp7Result = !stateFromStores;
   if (!stateFromStores) {
@@ -43,21 +43,21 @@ function VideoUploadQualityNitroUpsell() {
     const obj3 = { style: null, source: null, size: null, color: null };
     obj3[0] = tmp3.cardIcon;
     obj3[1] = registerAssetDefault;
-    obj3[2] = tmp(1297).Icon.Sizes.SMALL;
+    obj3[2] = tmp(1296).Icon.Sizes.SMALL;
     obj3[3] = ThemesDefault.unsafe_rawColors.PRIMARY_400;
-    const items2 = [tmp7(tmp(1297).Icon, obj3), ];
+    const items2 = [tmp7(tmp(1296).Icon, obj3), ];
     const obj4 = { variant: "text-sm/medium", color: "text-muted", children: null };
-    const intl2 = tmp(1236).intl;
+    const intl2 = tmp(1233).intl;
     const obj5 = { onClick: null };
     obj5[0] = function onClick() {
       closure_1_1(closure_1_2[17]).setSection(closure_1_8.PREMIUM);
       const obj = closure_1_1(closure_1_2[17]);
     };
-    obj4[2] = intl2.format(tmp(1236).t.uW1zul, obj5);
+    obj4[2] = intl2.format(tmp(1233).t.uW1zul, obj5);
     items2[1] = tmp7(tmp(4474).Text, obj4);
     obj2[1] = items2;
     obj1[2] = tmp5(tmp6, obj2);
-    obj[1] = tmp7(tmp(5601).Card, obj1);
+    obj[1] = tmp7(tmp(5609).Card, obj1);
     tmp7Result = tmp7(tmp6, obj);
   }
   children[1] = tmp7Result;
@@ -165,5 +165,5 @@ export default function SettingsChatScreen(route) {
     obj[1] = initialSetting;
     return obj.createList(obj);
   }, items);
-  return callback(_modDef14340, { node });
+  return callback(_modDef14563, { node });
 };

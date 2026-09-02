@@ -1,10 +1,10 @@
-// Module ID: 15369
-// Function ID: 15370
+// Module ID: 15597
+// Function ID: 15598
 // Name: DemoModal
 // Dependencies: [5, 19, 17, 21, 4863, 4859, 4478, 4928, 2]
 // Exports: default
 
-// Module 15369 (DemoModal)
+// Module 15597 (DemoModal)
 import useAlertStore from "useAlertStore" /* 4859 */;
 import getAlertModalItemKey from "getAlertModalItemKey" /* 4863 */;
 import Button from "Button" /* 4928 */;

@@ -1,9 +1,9 @@
-// Module ID: 6706
-// Function ID: 6707
+// Module ID: 6715
+// Function ID: 6716
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6706 (metadata)
+// Module 6715 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftTrollIllocon-2x.png.js");

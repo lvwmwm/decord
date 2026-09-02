@@ -1,10 +1,10 @@
-// Module ID: 655
-// Function ID: 656
+// Module ID: 652
+// Function ID: 653
 // Name: mark
 // Dependencies: [2]
 // Exports: clearMarks, clearMeasures, mark, measure
 
-// Module 655 (mark)
+// Module 652 (mark)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/utils/profiling.tsx");

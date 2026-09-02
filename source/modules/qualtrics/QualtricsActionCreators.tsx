@@ -1,7 +1,7 @@
 // Module ID: 4710
 // Function ID: 4711
 // Name: fetchSurveyDetails
-// Dependencies: [32, 5, 4711, 4714, 4715, 4716, 676, 530, 709, 1208, 4717, 2]
+// Dependencies: [32, 5, 4711, 4714, 4715, 4716, 673, 527, 706, 1205, 4717, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
 // Module 4710 (fetchSurveyDetails)
@@ -11,7 +11,7 @@ import closure_5 from "fetchSurveyIfNeeded" /* 4711 */;
 import { useQualtricsResponseStore } from "useQualtricsResponseStore" /* 4714 */;
 import closure_7 from "map" /* 4715 */;
 import QuestionTypeEnum from "QuestionTypeEnum" /* 4716 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function fetchSurveyDetails() {
@@ -74,7 +74,7 @@ function _fetchSurveyDetails() {
           } else if (1 === tmp7) {
             c4 = 0;
             dependencyMap = closure_3;
-            let obj4 = body(1208);
+            let obj4 = body(1205);
             obj4.captureException(dependencyMap);
             c6 = 3;
             return { value: null, done: true };
@@ -89,7 +89,7 @@ function _fetchSurveyDetails() {
             return obj3;
           } else {
             body = body.body;
-            obj = body(709);
+            obj = body(706);
             obj4 = { type: "QUALTRICS_SURVEY_FETCH_SUCCESS", surveyId: null, surveyDetails: null };
             obj4[1] = callback;
             obj4[2] = body;

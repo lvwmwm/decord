@@ -1,17 +1,17 @@
-// Module ID: 14377
-// Function ID: 14378
+// Module ID: 14600
+// Function ID: 14601
 // Name: pressable
-// Dependencies: [7884, 8682, 8684, 4733, 1236, 4172, 11068, 2]
+// Dependencies: [7893, 8697, 8699, 4733, 1233, 4172, 11288, 2]
 
-// Module 14377 (pressable)
+// Module 14600 (pressable)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
 import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4733 */;
-import MobileUserSettings from "MobileUserSettings" /* 7884 */;
-import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8682 */;
-import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8684 */;
-import createToggle from "createToggle" /* 11068 */;
+import MobileUserSettings from "MobileUserSettings" /* 7893 */;
+import openIncodeAgeVerificationModalDefault from "openIncodeAgeVerificationModal" /* 8697 */;
+import AgeVerificationModalEntryPoint from "AgeVerificationModalEntryPoint" /* 8699 */;
+import createToggle from "createToggle" /* 11288 */;
 
 const pressable = createToggle.createPressable({
   useTitle() {
@@ -24,8 +24,8 @@ const pressable = createToggle.createPressable({
     const intl = getSystemLocale.intl;
     let stringResult = intl.string(getSystemLocale.t.lKDPGA);
     if (isAgeVerified) {
-      const intl2 = tmp(1236).intl;
-      stringResult = intl2.string(tmp(1236).t.sK0dmH);
+      const intl2 = tmp(1233).intl;
+      stringResult = intl2.string(tmp(1233).t.sK0dmH);
     }
     return stringResult;
   },
@@ -62,8 +62,8 @@ let obj = {
     const intl = getSystemLocale.intl;
     let stringResult = intl.string(getSystemLocale.t.lKDPGA);
     if (isAgeVerified) {
-      const intl2 = tmp(1236).intl;
-      stringResult = intl2.string(tmp(1236).t.sK0dmH);
+      const intl2 = tmp(1233).intl;
+      stringResult = intl2.string(tmp(1233).t.sK0dmH);
     }
     return stringResult;
   },

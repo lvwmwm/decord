@@ -1,11 +1,11 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9379
+// Function ID: 9380
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 4478, 712, 4126, 506, 9297, 9367, 4926, 5551, 4474, 1236, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 4125, 503, 9310, 9380, 4926, 5559, 4474, 1233, 2]
 // Exports: default
 
-// Module 9366 (BotPermissions)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9379 (BotPermissions)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

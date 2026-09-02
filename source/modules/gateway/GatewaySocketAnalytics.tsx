@@ -1,15 +1,15 @@
-// Module ID: 13299
-// Function ID: 13300
+// Module ID: 13522
+// Function ID: 13523
 // Name: prettyPrintTrace_
-// Dependencies: [109, 1922, 676, 10, 9, 698, 2]
+// Dependencies: [109, 1921, 673, 10, 9, 695, 2]
 // Exports: createResumeAnalytics, getConnectionPath, getReadyPayloadByteSizeAnalytics, logGatewayConnected, logReadyPayloadReceived, logResumeAnalytics, reportDevtoolsEvent
 
-// Module 13299 (prettyPrintTrace_)
+// Module 13522 (prettyPrintTrace_)
 import isTracingDefault from "isTracing" /* 10 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 
 function prettyPrintTrace_(calls, arg1) {
   let length;
@@ -158,7 +158,7 @@ export const logReadyPayloadReceived = function logReadyPayloadReceived(socket, 
   obj.used_cache_at_startup = flag2;
   let tmp6Result = tmp6(9);
   const result = tmp6Result.attachReadyPayloadProperties(obj);
-  tmp6Result = tmp6(698);
+  tmp6Result = tmp6(695);
   tmp6Result.track(constants.READY_PAYLOAD_RECEIVED, obj, { logEventProperties: true });
 };
 export const getConnectionPath = function getConnectionPath(_trace) {

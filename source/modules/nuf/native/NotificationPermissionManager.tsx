@@ -1,22 +1,22 @@
-// Module ID: 17034
-// Function ID: 17035
+// Module ID: 17270
+// Function ID: 17271
 // Name: haveNotSeenPromptSince
-// Dependencies: [5, 17, 4123, 1218, 1387, 4701, 11978, 11979, 676, 4730, 4445, 17035, 2009, 503, 4075, 11981, 10168, 698, 500, 5486, 15079, 691, 2]
+// Dependencies: [5, 17, 4122, 1215, 1386, 4701, 12202, 12203, 673, 4730, 4445, 17271, 2008, 500, 4074, 12205, 10190, 695, 1234, 5494, 15308, 688, 2]
 
-// Module 17034 (haveNotSeenPromptSince)
-import hooksDefault from "hooks" /* 4075 */;
-import initializeDefault from "initialize" /* 5486 */;
-import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken" /* 11981 */;
+// Module 17270 (haveNotSeenPromptSince)
+import hooksDefault from "hooks" /* 4074 */;
+import initializeDefault from "initialize" /* 5494 */;
+import getOrRefreshPushSyncToken from "getOrRefreshPushSyncToken" /* 12205 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "storeThread" /* 4123 */;
-import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "storeThread" /* 4122 */;
+import closure_6 from "fetchFingerprint" /* 1215 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "updateUserGuildSettingsInternal" /* 4701 */;
-import closure_9 from "set" /* 11978 */;
-import { PermissionPromptType } from "set" /* 11978 */;
-import EventActionType from "EventActionType" /* 11979 */;
-import ME from "ME" /* 676 */;
+import closure_9 from "set" /* 12202 */;
+import { PermissionPromptType } from "set" /* 12202 */;
+import EventActionType from "EventActionType" /* 12203 */;
+import ME from "ME" /* 673 */;
 import { NotificationAuthorizationStatus as closure_16 } from "NativePermissionStatus" /* 4730 */;
 
 require = arg1;
@@ -188,13 +188,13 @@ function _logNotificationPermissionStatus2() {
           return obj;
         } else {
           callback = arg1;
-          callback2 = callback(10168).allowInAppNotifications();
-          const obj5 = callback(10168);
+          callback2 = callback(10190).allowInAppNotifications();
+          const obj5 = callback(10190);
           const obj2 = { os_enabled: null, foreground_app_enabled: null, background_app_enabled: null, notification_authorization_status: null };
           obj2[0] = callback === constants2.AUTHORIZED;
           obj2[1] = callback2;
           obj2[2] = callback2;
-          const obj6 = callback2(698);
+          const obj6 = callback2(695);
           let tmp7 = null;
           if (obj8.isIOS()) {
             tmp7 = callback;
@@ -360,7 +360,7 @@ class NotificationPermissionManager extends tmp4 {
                 ({ message: c0, optimistic: c1, isPushNotification: c2, sendMessageOptions: c3 } = author);
                 c3 = 1;
                 c4 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp5) {
@@ -470,7 +470,7 @@ class NotificationPermissionManager extends tmp4 {
                 invite = invite.invite;
                 c4 = 1;
                 c5 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp5) {
@@ -594,7 +594,7 @@ class NotificationPermissionManager extends tmp4 {
                 relationship = relationship.relationship;
                 c3 = 1;
                 c4 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp5) {
@@ -713,7 +713,7 @@ class NotificationPermissionManager extends tmp4 {
                 closure_2 = undefined;
                 c3 = 1;
                 c4 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp5) {

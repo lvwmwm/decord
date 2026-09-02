@@ -1,30 +1,30 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9569
+// Function ID: 9570
 // Name: areParticipantsEqual
-// Dependencies: [32, 19, 17, 1386, 4494, 1218, 4529, 1981, 5363, 9535, 9520, 4499, 21, 4478, 1297, 712, 9557, 12, 9529, 9558, 589, 4721, 9559, 9562, 9573, 9591, 9592, 9600, 9519, 9622, 4197, 8041, 9594, 9542, 9538, 9541, 1493, 500, 8603, 2]
+// Dependencies: [32, 19, 17, 1385, 4494, 1215, 4529, 1980, 5371, 9548, 9533, 4499, 21, 4478, 1296, 709, 9570, 12, 9542, 9571, 586, 4721, 9572, 9575, 9586, 9604, 9605, 9613, 9532, 9635, 4197, 8050, 9607, 9555, 9551, 9554, 1492, 1234, 8618, 2]
 
-// Module 9556 (areParticipantsEqual)
-import set from "set" /* 500 */;
-import ThemesDefault from "Themes" /* 712 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9538 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 9541 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 9542 */;
+// Module 9569 (areParticipantsEqual)
+import ThemesDefault from "Themes" /* 709 */;
+import set from "set" /* 1234 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 9551 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 9554 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 9555 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "participantFromServer" /* 1386 */;
+import closure_6 from "participantFromServer" /* 1385 */;
 import closure_7 from "getParticipants" /* 4494 */;
-import closure_8 from "fetchFingerprint" /* 1218 */;
+import closure_8 from "fetchFingerprint" /* 1215 */;
 import closure_9 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_10 from "handleConnectionOpen" /* 1981 */;
-import closure_11 from "anyoneHasFlagInContext" /* 5363 */;
-import closure_12 from "initialize" /* 9535 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9520 */;
+import closure_10 from "handleConnectionOpen" /* 1980 */;
+import closure_11 from "anyoneHasFlagInContext" /* 5371 */;
+import closure_12 from "initialize" /* 9548 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9533 */;
 import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import Button from "Button" /* 1297 */;
+import Button from "Button" /* 1296 */;
 
 require = arg1;
 function areParticipantsEqual(arg0, arg1) {

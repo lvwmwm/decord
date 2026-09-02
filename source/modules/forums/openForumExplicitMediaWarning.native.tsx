@@ -1,10 +1,10 @@
-// Module ID: 8395
-// Function ID: 8396
+// Module ID: 8404
+// Function ID: 8405
 // Name: openForumExplicitMediaWarning
-// Dependencies: [21, 4858, 8396, 2009, 2]
+// Dependencies: [21, 4858, 8405, 2008, 2]
 // Exports: default
 
-// Module 8395 (openForumExplicitMediaWarning)
+// Module 8404 (openForumExplicitMediaWarning)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import _modDef4858 from "module_4858" /* 4858 */;

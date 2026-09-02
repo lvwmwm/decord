@@ -1,11 +1,11 @@
-// Module ID: 17514
-// Function ID: 17515
+// Module ID: 17750
+// Function ID: 17751
 // Name: promise
-// Dependencies: [685, 17512, 4075, 5487, 5482, 2]
+// Dependencies: [682, 17748, 4074, 5495, 5490, 2]
 
-// Module 17514 (promise)
+// Module 17750 (promise)
 import set from "set" /* 2 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 
 const MuteUntilSeconds = MAX_FAVORITES.MuteUntilSeconds;
 let result = set.fileFinishedImporting("modules/headless_tasks/android/MuteAction.tsx");

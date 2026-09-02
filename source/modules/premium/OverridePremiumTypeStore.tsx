@@ -1,15 +1,15 @@
-// Module ID: 1923
-// Function ID: 1924
+// Module ID: 1922
+// Function ID: 1923
 // Name: setActualFromUser
-// Dependencies: [1924, 1928, 1933, 589, 709, 2]
+// Dependencies: [1923, 1927, 1932, 586, 706, 2]
 
-// Module 1923 (setActualFromUser)
+// Module 1922 (setActualFromUser)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import parseServerPerkConfigKind from "parseServerPerkConfigKind" /* 1928 */;
-import validatePremiumType from "validatePremiumType" /* 1933 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import parseServerPerkConfigKind from "parseServerPerkConfigKind" /* 1927 */;
+import validatePremiumType from "validatePremiumType" /* 1932 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 function setActualFromUser(user) {
   user = user.user;

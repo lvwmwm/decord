@@ -1,13 +1,13 @@
-// Module ID: 9517
-// Function ID: 9518
+// Module ID: 9530
+// Function ID: 9531
 // Name: useThermalState
-// Dependencies: [500, 9459, 2]
+// Dependencies: [1234, 9472, 2]
 // Exports: default, getThermalState
 
-// Module 9517 (useThermalState)
+// Module 9530 (useThermalState)
 import set from "set" /* 2 */;
-import set2 from "set" /* 500 */;
-import NativeModulesDefault from "NativeModules" /* 9459 */;
+import set2 from "set" /* 1234 */;
+import NativeModulesDefault from "NativeModules" /* 9472 */;
 
 let obj = { UNHANDLED: -1, [-1]: "UNHANDLED", NOMINAL: 0, [0]: "NOMINAL", FAIR: 1, [1]: "FAIR", SERIOUS: 2, [2]: "SERIOUS", CRITICAL: 3, [3]: "CRITICAL" };
 obj = { NONE: 0, [0]: "NONE", LIGHT: 1, [1]: "LIGHT", MODERATE: 2, [2]: "MODERATE", SEVERE: 3, [3]: "SEVERE", CRITICAL: 4, [4]: "CRITICAL", EMERGENCY: 5, [5]: "EMERGENCY", SHUTDOWN: 6, [6]: "SHUTDOWN" };
@@ -46,7 +46,7 @@ export default function useThermalState() {
       } else {
         UNHANDLED = obj.UNHANDLED;
       }
-      tmp11Result = tmp11(500);
+      tmp11Result = tmp11(1234);
     }
     obj3 = set2;
     tmp11 = require;
@@ -88,7 +88,7 @@ export const getThermalState = function getThermalState() {
       } else {
         UNHANDLED = obj.UNHANDLED;
       }
-      tmp11Result = tmp11(500);
+      tmp11Result = tmp11(1234);
     }
     obj3 = set2;
     tmp11 = require;

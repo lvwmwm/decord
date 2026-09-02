@@ -4,4 +4,4 @@
 
 // Module 557
 
-export default Function.prototype.apply;
+export default RangeError;

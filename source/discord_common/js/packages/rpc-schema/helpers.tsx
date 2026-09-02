@@ -1,12 +1,12 @@
-// Module ID: 14132
-// Function ID: 14133
+// Module ID: 14355
+// Function ID: 14356
 // Name: RPCCommands
-// Dependencies: [505, 2]
+// Dependencies: [502, 2]
 // Exports: joiEnum, joiReqObj
 
-// Module 14132 (RPCCommands)
+// Module 14355 (RPCCommands)
 import set from "set" /* 2 */;
-import sum from "sum" /* 505 */;
+import sum from "sum" /* 502 */;
 
 ({ RPCCommands, RPCEvents } = sum);
 const result = set.fileFinishedImporting("../discord_common/js/packages/rpc-schema/helpers.tsx");

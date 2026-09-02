@@ -1,14 +1,14 @@
-// Module ID: 5028
-// Function ID: 5029
+// Module ID: 5032
+// Function ID: 5033
 // Name: TextControllerIcon
-// Dependencies: [19, 21, 712, 4196, 5013, 2]
+// Dependencies: [19, 21, 709, 4196, 5016, 2]
 // Exports: TextControllerIcon
 
-// Module 5028 (TextControllerIcon)
+// Module 5032 (TextControllerIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5013 */;
+import registerAsset from "registerAsset" /* 5016 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

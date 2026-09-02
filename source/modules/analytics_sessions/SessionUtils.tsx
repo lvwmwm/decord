@@ -1,11 +1,11 @@
-// Module ID: 7217
-// Function ID: 7218
+// Module ID: 7226
+// Function ID: 7227
 // Name: result
-// Dependencies: [687, 2]
+// Dependencies: [684, 2]
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 7217 (result)
-import setDefault from "set" /* 687 */;
+// Module 7226 (result)
+import setDefault from "set" /* 684 */;
 
 const result = 30 * setDefault.Millis.MINUTE;
 let c0 = result;

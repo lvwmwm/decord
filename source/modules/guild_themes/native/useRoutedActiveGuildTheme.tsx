@@ -1,7 +1,7 @@
 // Module ID: 4331
 // Function ID: 4332
 // Name: getGuildIdFromNavigationState
-// Dependencies: [32, 19, 676, 4332, 4333, 4358, 4359, 2]
+// Dependencies: [32, 19, 673, 4332, 4333, 4358, 4359, 2]
 // Exports: default
 
 // Module 4331 (getGuildIdFromNavigationState)
@@ -11,7 +11,7 @@ import contextDefault from "context" /* 4358 */;
 import resolveSavedActiveGuildTheme from "resolveSavedActiveGuildTheme" /* 4359 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { ME } from "ME" /* 676 */;
+import { ME } from "ME" /* 673 */;
 
 require = arg1;
 function getGuildIdFromNavigationState(routes) {

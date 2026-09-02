@@ -1,9 +1,9 @@
-// Module ID: 1941
-// Function ID: 1942
+// Module ID: 1940
+// Function ID: 1941
 // Name: DisplayNameFont
 // Dependencies: [2]
 
-// Module 1941 (DisplayNameFont)
+// Module 1940 (DisplayNameFont)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/DisplayNameFont.tsx");

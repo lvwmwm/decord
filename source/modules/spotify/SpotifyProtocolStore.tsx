@@ -1,11 +1,11 @@
-// Module ID: 9391
-// Function ID: 9392
+// Module ID: 9404
+// Function ID: 9405
 // Name: isProtocolRegistered
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 9391 (isProtocolRegistered)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 9404 (isProtocolRegistered)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let c0 = false;
 const Store = initializeDefault.Store;

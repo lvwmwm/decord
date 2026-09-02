@@ -1,10 +1,10 @@
-// Module ID: 15475
-// Function ID: 15476
+// Module ID: 15705
+// Function ID: 15706
 // Name: useAllowFriendsFromMutualGuildsOnly
-// Dependencies: [19, 4166, 6242, 2]
+// Dependencies: [19, 4166, 6251, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnly
 
-// Module 15475 (useAllowFriendsFromMutualGuildsOnly)
+// Module 15705 (useAllowFriendsFromMutualGuildsOnly)
 import closure_2 from "noop" /* 19 */;
 
 const require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 16754
-// Function ID: 16755
+// Module ID: 16989
+// Function ID: 16990
 // Name: useConsoleConnectingInfo
-// Dependencies: [4495, 4496, 9650, 647, 16755, 9892, 16756, 16757, 2]
+// Dependencies: [4495, 4496, 9663, 644, 16990, 9914, 16991, 16992, 2]
 // Exports: default
 
-// Module 16754 (useConsoleConnectingInfo)
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9650 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 9892 */;
-import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 16755 */;
-import getConsoleColorDefault from "getConsoleColor" /* 16757 */;
+// Module 16989 (useConsoleConnectingInfo)
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9663 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9914 */;
+import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 16990 */;
+import getConsoleColorDefault from "getConsoleColor" /* 16992 */;
 import closure_3 from "set" /* 4495 */;
 import closure_4 from "handleUpdate" /* 4496 */;
 
@@ -22,11 +22,11 @@ export default function useConsoleConnectingInfo(arg0) {
   if (tmp3 != null) {
     channelId = tmp3.channelId;
   }
-  let obj = _require(647);
+  let obj = _require(644);
   const items = [closure_3];
   const stateFromStores = obj.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
   const items1 = [closure_4];
-  const stateFromStores1 = _require(647).useStateFromStores(items1, () => {
+  const stateFromStores1 = _require(644).useStateFromStores(items1, () => {
     let str;
     if (sessionId != null) {
       str = sessionId.sessionId;
@@ -51,7 +51,7 @@ export default function useConsoleConnectingInfo(arg0) {
     str = "";
   }
   let channelId1;
-  const obj2 = _require(647);
+  const obj2 = _require(644);
   const tmp5 = _require;
   if (stateFromStores != null) {
     channelId1 = stateFromStores.channelId;
@@ -64,7 +64,7 @@ export default function useConsoleConnectingInfo(arg0) {
   obj[1] = channelId2 === arg0 || channelId === arg0;
   obj[2] = getConsoleIconDefault(str);
   const tmp9 = useShouldDisplayCancelConsoleTransferDefault(stateFromStores);
-  obj[3] = tmp5(16756).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
+  obj[3] = tmp5(16991).getConsoleConnectingText(stateFromStores1, stateFromStores, channelId === arg0);
   obj[4] = getConsoleColorDefault(str);
   obj[5] = tmp9;
   return obj;

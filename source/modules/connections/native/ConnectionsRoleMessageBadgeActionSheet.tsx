@@ -1,28 +1,28 @@
-// Module ID: 11392
-// Function ID: 11393
+// Module ID: 11615
+// Function ID: 11616
 // Name: PopoutCheck
-// Dependencies: [32, 19, 17, 1935, 1218, 1992, 1985, 1909, 11393, 5352, 676, 21, 4478, 712, 1236, 5351, 4429, 4474, 4413, 12, 4197, 5227, 11165, 8933, 1297, 1431, 1363, 38, 5953, 5973, 589, 698, 4700, 5457, 5622, 5997, 4928, 4445, 11168, 8896, 2]
+// Dependencies: [32, 19, 17, 1934, 1215, 1991, 1984, 1908, 11616, 5360, 673, 21, 4478, 709, 1233, 5359, 4429, 4474, 4413, 12, 4197, 5235, 11386, 8947, 1296, 1430, 1362, 38, 5961, 5981, 586, 695, 4700, 5465, 5630, 6005, 4928, 4445, 11389, 8911, 2]
 // Exports: default
 
-// Module 11392 (PopoutCheck)
+// Module 11615 (PopoutCheck)
 import applyDefault from "apply" /* 12 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4429 */;
 import Text from "Text" /* 4474 */;
-import officialApplicationIds2 from "officialApplicationIds" /* 5351 */;
+import officialApplicationIds2 from "officialApplicationIds" /* 5359 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "createdAt" /* 1935 */;
-import closure_8 from "fetchFingerprint" /* 1218 */;
-import closure_9 from "trackCommunicationDisabled" /* 1992 */;
-import closure_10 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_11 from "createGuildRecordFromRust" /* 1909 */;
-import closure_12 from "map" /* 11393 */;
-import { OperatorTypes } from "OperatorTypes" /* 5352 */;
-import ME from "ME" /* 676 */;
+import closure_7 from "createdAt" /* 1934 */;
+import closure_8 from "fetchFingerprint" /* 1215 */;
+import closure_9 from "trackCommunicationDisabled" /* 1991 */;
+import closure_10 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_11 from "createGuildRecordFromRust" /* 1908 */;
+import closure_12 from "map" /* 11616 */;
+import { OperatorTypes } from "OperatorTypes" /* 5360 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -149,7 +149,7 @@ class PopoutChecks {
               const items1 = [null, , , ];
               let tmp26 = null;
               if (null != tmp7) {
-                const obj3 = { style: null, user: null, size: null, guildId: "a" };
+                const obj3 = { style: null, user: null, size: null, guildId: "Array" };
                 obj3[0] = tmp21.popoutCheckGroupPlatformIcon;
                 obj3[1] = tmp7;
                 obj3[2] = tmp11(tmp3[24]).AvatarSizes.XSMALL;

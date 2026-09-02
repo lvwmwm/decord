@@ -1,14 +1,14 @@
-// Module ID: 6505
-// Function ID: 6506
+// Module ID: 6514
+// Function ID: 6515
 // Name: EmojiEzExample
-// Dependencies: [21, 5493, 6506, 2]
+// Dependencies: [21, 5501, 6515, 2]
 // Exports: EmojiEzExample
 
-// Module 6505 (EmojiEzExample)
+// Module 6514 (EmojiEzExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6506 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6515 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiEzExample.native.tsx");

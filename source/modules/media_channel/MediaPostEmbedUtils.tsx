@@ -1,18 +1,18 @@
 // Module ID: 4669
 // Function ID: 4670
 // Name: getMediaPostEmbedCommonData
-// Dependencies: [1909, 4130, 1922, 676, 4670, 1236, 4673, 1431, 1399, 4674, 4461, 4675, 2]
+// Dependencies: [1908, 4130, 1921, 673, 4670, 1233, 4673, 1430, 1398, 4674, 4461, 4675, 2]
 // Exports: canUseMediaPostEmbed, getMediaPostEmbedChannelId, getMediaPostEmbedChannelPath, getMediaPostEmbedCommonData
 
 // Module 4669 (getMediaPostEmbedCommonData)
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
 import getPathsFromURL from "getPathsFromURL" /* 4461 */;
 import MAX_THUMBNAIL_COUNT from "MAX_THUMBNAIL_COUNT" /* 4670 */;
 import getNicknameDefault from "getNickname" /* 4673 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 ({ GuildFeatures: closure_6, MessageAttachmentFlags: error } = ME);
@@ -32,9 +32,9 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     if (!canAccess) {
       has_media_attachment = mediaPostEmbedData.has_media_attachment;
     }
-    const intl = tmp17(1236).intl;
+    const intl = tmp17(1233).intl;
     const string = intl.string;
-    const t = tmp17(1236).t;
+    const t = tmp17(1233).t;
     if (canAccess) {
       let stringResult = string(t.UsZEBI);
     } else {
@@ -69,7 +69,7 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     if (flag) {
       flag = !has_media_attachment;
     }
-    let tmp17Result = tmp17(1399);
+    let tmp17Result = tmp17(1398);
     const thumbnail2 = mediaPostEmbedData.thumbnail;
     let num2;
     if (thumbnail2 != null) {
@@ -91,8 +91,8 @@ export const getMediaPostEmbedCommonData = function getMediaPostEmbedCommonData(
     obj[3] = thumbnailImage;
     let stringResult1;
     if (has_media_attachment) {
-      const intl2 = tmp17(1236).intl;
-      stringResult1 = intl2.string(tmp17(1236).t.Yonlia);
+      const intl2 = tmp17(1233).intl;
+      stringResult1 = intl2.string(tmp17(1233).t.Yonlia);
     }
     obj[4] = stringResult1;
     ({ parent_channel_id: obj5[5], channel_id: obj5[6] } = mediaPostEmbedData);

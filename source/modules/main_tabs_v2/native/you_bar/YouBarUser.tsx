@@ -1,13 +1,13 @@
-// Module ID: 15973
-// Function ID: 15974
-// Dependencies: [19, 17, 1922, 14699, 21, 4478, 712, 589, 4217, 4927, 4322, 15974, 15975, 15976, 2]
+// Module ID: 16204
+// Function ID: 16205
+// Dependencies: [19, 17, 1921, 14925, 21, 4478, 709, 586, 4217, 4927, 4322, 16205, 16206, 16207, 2]
 
-// Module 15973
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16204
+import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14699 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14925 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -28,7 +28,7 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
   let _require;
   let sharedValue;
   const tmp = callback2();
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   _require = tmp5;
@@ -57,14 +57,14 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
       obj = { isLargeAvatar: null, onPress: null };
       obj[0] = tmp5;
       obj[1] = isQuestRendered.onAvatarPress;
-      const items2 = [callback(tmp9(15975), obj), ];
+      const items2 = [callback(tmp9(16206), obj), ];
       obj1 = { style: null, children: null };
       const items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       obj1[0] = items3;
       const obj2 = { userId: null, username: null };
       obj2[0] = stateFromStores.id;
       obj2[1] = name;
-      obj1[1] = callback(tmp9(15976), obj2);
+      obj1[1] = callback(tmp9(16207), obj2);
       items2[1] = callback(tmp9(4217).View, obj1);
       obj[1] = items2;
     }
@@ -72,7 +72,7 @@ const memoResult = importAllResult.memo(function YouBarUser(isQuestRendered) {
   }
   obj3 = { style: items4, children: null };
   items4 = [tmp.youButton];
-  const items5 = [callback(sharedValue(15974), { isLarge: !isQuestRendered }), ];
+  const items5 = [callback(sharedValue(16205), { isLarge: !isQuestRendered }), ];
   const tmp2 = _require;
   const tmp2Result = _require(4217);
   const items6 = [tmp.userText, animatedStyle, { flexShrink: 1 }];

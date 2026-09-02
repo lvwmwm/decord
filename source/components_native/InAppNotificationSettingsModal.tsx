@@ -1,26 +1,26 @@
-// Module ID: 10223
-// Function ID: 10224
+// Module ID: 10245
+// Function ID: 10246
 // Name: ConnectedInAppNotificationSettingsScreen
-// Dependencies: [19, 1391, 1387, 4130, 4701, 1922, 676, 21, 5487, 5482, 4674, 8363, 1236, 10224, 6245, 589, 5495, 6008, 2]
+// Dependencies: [19, 1390, 1386, 4130, 4701, 1921, 673, 21, 5495, 5490, 4674, 8372, 1233, 10246, 6254, 586, 5503, 6016, 2]
 
-// Module 10223 (ConnectedInAppNotificationSettingsScreen)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 10245 (ConnectedInAppNotificationSettingsScreen)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
-import Form from "Form" /* 8363 */;
-import ChannelSettingsNotificationsGuardDefault from "ChannelSettingsNotificationsGuard" /* 10224 */;
+import Form from "Form" /* 8372 */;
+import ChannelSettingsNotificationsGuardDefault from "ChannelSettingsNotificationsGuard" /* 10246 */;
 import importAllResult from "noop" /* 19 */;
-import { isMultiUserDM } from "createChannelRecord" /* 1391 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import { isMultiUserDM } from "createChannelRecord" /* 1390 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
 import closure_7 from "updateUserGuildSettingsInternal" /* 4701 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
 function ConnectedInAppNotificationSettingsScreen(channel) {
   channel = channel.channel;
-  let obj = channel(589);
+  let obj = channel(586);
   const items = [closure_7];
   obj = {
     channel,
@@ -105,7 +105,9 @@ prototype["renderChannelNotificationSettings"] = function renderChannelNotificat
     } else {
       if (tmp.GUILD_TEXT !== type) {
         if (tmp.GUILD_ANNOUNCEMENT !== type) {
-          return null;
+          if (tmp.GUILD_APP !== type) {
+            return null;
+          }
         }
       }
       return self.renderTextChannelNotificationSettings();
@@ -160,7 +162,7 @@ const memoResult = importAllResult.memo((channelId) => {
     obj[0] = obj;
     return obj;
   }, items);
-  return callback(channelId(6008).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return callback(channelId(6016).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });
 let result = require("set").fileFinishedImporting("components_native/InAppNotificationSettingsModal.tsx");
 

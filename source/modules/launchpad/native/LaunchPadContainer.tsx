@@ -1,13 +1,13 @@
-// Module ID: 16540
-// Function ID: 16541
+// Module ID: 16775
+// Function ID: 16776
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 11064, 21, 4478, 11065, 16541, 16543, 11605, 4217, 4927, 4338, 15599, 5652, 16544, 2]
+// Dependencies: [19, 17, 11284, 21, 4478, 11285, 16776, 16778, 11828, 4217, 4927, 4338, 15830, 5660, 16779, 2]
 // Exports: default
 
-// Module 16540 (LaunchPadContainer)
+// Module 16775 (LaunchPadContainer)
 import noopAll from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11064 */;
+import LAUNCH_PAD_SPRING_CONFIG from "LAUNCH_PAD_SPRING_CONFIG" /* 11284 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -36,12 +36,12 @@ export default function LaunchPadContainer(children) {
   updaters = undefined;
   dependencyMap = undefined;
   const tmp = callback2();
-  const tmp4 = updaters(11065)();
-  const tmp5 = updaters(16541)();
+  const tmp4 = updaters(11285)();
+  const tmp5 = updaters(16776)();
   launchPadSharedState = tmp5.launchPadSharedState;
   ({ launchPadPullTabState, launchPadShown, gestureState, updaters } = tmp5);
-  ({ gesture, gestureRef } = updaters(16543)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
-  const tmp7 = updaters(11605)();
+  ({ gesture, gestureRef } = updaters(16778)({ launchPadType: tmp4, launchPadSharedState, launchPadPullTabState, launchPadShown, gestureState, updaters }));
+  const tmp7 = updaters(11828)();
   dependencyMap = tmp7;
   let obj = launchPadSharedState(4217);
   const fn = function o() {
@@ -99,11 +99,11 @@ export default function LaunchPadContainer(children) {
     obj3[3] = launchPadSharedState;
     obj3[4] = launchPadPullTabState;
     obj3[5] = updaters;
-    const tmp10Result = tmp10(updaters(16544), obj3);
+    const tmp10Result = tmp10(updaters(16779), obj3);
   }
   items1[1] = tmp10Result;
   obj2[1] = items1;
   obj1[1] = closure_7(closure_3, obj2);
-  obj[1] = callback(launchPadSharedState(5652).GestureDetector, obj1);
-  return callback(updaters(15599).Provider, obj);
+  obj[1] = callback(launchPadSharedState(5660).GestureDetector, obj1);
+  return callback(updaters(15830).Provider, obj);
 };

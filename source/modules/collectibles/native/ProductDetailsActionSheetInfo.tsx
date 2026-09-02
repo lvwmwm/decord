@@ -1,19 +1,19 @@
-// Module ID: 12551
-// Function ID: 12552
+// Module ID: 12775
+// Function ID: 12776
 // Name: ProductNameAndDescription
-// Dependencies: [17, 21, 4478, 712, 12552, 4474, 7299, 12539, 1236, 12553, 1950, 2]
+// Dependencies: [17, 21, 4478, 709, 12776, 4474, 7308, 12763, 1233, 12777, 1949, 2]
 // Exports: default
 
-// Module 12551 (ProductNameAndDescription)
+// Module 12775 (ProductNameAndDescription)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ThemesDefault from "Themes" /* 712 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+import ThemesDefault from "Themes" /* 709 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 import Text from "Text" /* 4474 */;
-import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7299 */;
-import getProductPurchaseState from "getProductPurchaseState" /* 12539 */;
-import getBundleDescription from "getBundleDescription" /* 12552 */;
-import PriceTagDefault from "PriceTag" /* 12553 */;
+import getItemRecordsFromPurchases from "getItemRecordsFromPurchases" /* 7308 */;
+import getProductPurchaseState from "getProductPurchaseState" /* 12763 */;
+import getBundleDescription from "getBundleDescription" /* 12776 */;
+import PriceTagDefault from "PriceTag" /* 12777 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -36,13 +36,13 @@ function ProductPurchaseStatus(product) {
   const productPurchaseState = obj1.useProductPurchaseState(product);
   if (productPurchaseState.isPurchased) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
-    const intl2 = tmp(1236).intl;
-    obj[2] = intl2.string(tmp(1236).t["6cfuDj"]);
+    const intl2 = tmp(1233).intl;
+    obj[2] = intl2.string(tmp(1233).t["6cfuDj"]);
     let children = tmp6(tmp(4474).Text, obj);
   } else if (tmp5) {
     obj = { variant: "text-md/semibold", color: "interactive-text-active", children: null };
-    const intl = tmp(1236).intl;
-    obj[2] = intl.string(tmp(1236).t.BEjTij);
+    const intl = tmp(1233).intl;
+    obj[2] = intl.string(tmp(1233).t.BEjTij);
     children = tmp6(tmp(4474).Text, obj);
   } else {
     children = !result;

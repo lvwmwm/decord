@@ -1,14 +1,14 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 16216
+// Function ID: 16217
 // Name: ConnectionUnknownIcon
-// Dependencies: [19, 21, 712, 4196, 15986, 2]
+// Dependencies: [19, 21, 709, 4196, 16217, 2]
 // Exports: ConnectionUnknownIcon
 
-// Module 15985 (ConnectionUnknownIcon)
+// Module 16216 (ConnectionUnknownIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15986 */;
+import registerAsset from "registerAsset" /* 16217 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

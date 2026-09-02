@@ -1,21 +1,21 @@
-// Module ID: 12560
-// Function ID: 12561
+// Module ID: 12784
+// Function ID: 12785
 // Name: GiftButton
-// Dependencies: [32, 19, 17, 7303, 678, 676, 10831, 1924, 21, 4478, 712, 8006, 10774, 4445, 12527, 10741, 1236, 12556, 12555, 12539, 1499, 5953, 4723, 12561, 2009, 7286, 12565, 679, 12566, 10824, 10754, 4474, 4929, 1950, 4413, 1363, 4197, 8891, 589, 8938, 4139, 7299, 7298, 11352, 10830, 12568, 12569, 10484, 12571, 1628, 4940, 8241, 4928, 501, 5973, 1995, 12572, 2]
+// Dependencies: [32, 19, 17, 7312, 675, 673, 11051, 1923, 21, 4478, 709, 8015, 10994, 4445, 12751, 10962, 1233, 12780, 12779, 12763, 1498, 5961, 4723, 12785, 2008, 7295, 12789, 676, 12790, 11044, 10974, 4474, 4929, 1949, 4413, 1362, 4197, 8906, 586, 8952, 4139, 7308, 7307, 11575, 11050, 12792, 12793, 10705, 12795, 1627, 4940, 8250, 4928, 1235, 5981, 1994, 12796, 2]
 // Exports: default
 
-// Module 12560 (GiftButton)
-import ThemesDefault from "Themes" /* 712 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+// Module 12784 (GiftButton)
+import ThemesDefault from "Themes" /* 709 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "map" /* 7303 */;
-import items from "items" /* 678 */;
-import ME from "ME" /* 676 */;
-import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 10831 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import closure_6 from "map" /* 7312 */;
+import items from "items" /* 675 */;
+import ME from "ME" /* 673 */;
+import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 11051 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -202,11 +202,11 @@ function PurchaseDisclaimer(arg0) {
   let obj = { style: callback3().disclaimer, variant: "text-xxs/normal", color: "interactive-text-active", children: null };
   let formatResult = product.type !== CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU;
   if (formatResult) {
-    const intl = tmp3(1236).intl;
+    const intl = tmp3(1233).intl;
     obj = { buyButtonLabel: null, paidServiceTermURL: null };
     obj[0] = buyButtonLabel;
     obj[1] = constants2.PAID_TERMS;
-    formatResult = intl.format(tmp3(1236).t.iIglwJ, obj);
+    formatResult = intl.format(tmp3(1233).t.iIglwJ, obj);
   }
   obj[3] = formatResult;
   return closure_15(Text.Text, obj);

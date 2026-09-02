@@ -1,10 +1,10 @@
-// Module ID: 8985
-// Function ID: 8986
+// Module ID: 8999
+// Function ID: 9000
 // Name: PX_4
-// Dependencies: [712, 2]
+// Dependencies: [709, 2]
 
-// Module 8985 (PX_4)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 8999 (PX_4)
+import ThemesDefault from "Themes" /* 709 */;
 
 const PX_4 = ThemesDefault.space.PX_4;
 const PX_8 = ThemesDefault.space.PX_8;

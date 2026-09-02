@@ -1,15 +1,15 @@
-// Module ID: 9481
-// Function ID: 9482
+// Module ID: 9494
+// Function ID: 9495
 // Name: confirmActivityChangeModal
-// Dependencies: [4130, 1922, 4674, 4857, 1236, 1902, 2]
+// Dependencies: [4130, 1921, 4674, 4857, 1233, 1901, 2]
 // Exports: default
 
-// Module 9481 (confirmActivityChangeModal)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 9494 (confirmActivityChangeModal)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
 import setDefault from "set" /* 4857 */;
 import closure_3 from "markAllUserIdListsStale" /* 4130 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/confirmActivityChangeAlert.tsx");
@@ -35,14 +35,14 @@ export default function confirmActivityChangeModal(name, channel) {
     name = name.name;
   }
   if (name == null) {
-    const intl5 = tmp6(1236).intl;
-    name = intl5.string(tmp6(1236).t.G99XFs);
+    const intl5 = tmp6(1233).intl;
+    name = intl5.string(tmp6(1233).t.G99XFs);
   }
   obj = { currentApplicationName: name, currentApplicationChannelName: null };
   const obj2 = setDefault;
   if (tmp6Result.isNullOrEmpty(str)) {
-    const intl6 = tmp6(1236).intl;
-    str = intl6.string(tmp6(1236).t.OGUjmt);
+    const intl6 = tmp6(1233).intl;
+    str = intl6.string(tmp6(1233).t.OGUjmt);
   }
   obj[1] = str;
   obj[5] = intl4.format(getSystemLocale.t["5/Xort"], obj);

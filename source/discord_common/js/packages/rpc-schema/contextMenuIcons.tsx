@@ -1,9 +1,9 @@
-// Module ID: 14133
-// Function ID: 14134
+// Module ID: 14356
+// Function ID: 14357
 // Name: CONTEXT_MENU_ICON_NAMES
 // Dependencies: [2]
 
-// Module 14133 (CONTEXT_MENU_ICON_NAMES)
+// Module 14356 (CONTEXT_MENU_ICON_NAMES)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/rpc-schema/contextMenuIcons.tsx");

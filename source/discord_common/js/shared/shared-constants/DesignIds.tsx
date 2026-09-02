@@ -1,9 +1,9 @@
-// Module ID: 673
-// Function ID: 674
+// Module ID: 670
+// Function ID: 671
 // Name: DesignIds
 // Dependencies: [2]
 
-// Module 673 (DesignIds)
+// Module 670 (DesignIds)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/DesignIds.tsx");

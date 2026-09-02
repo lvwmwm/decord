@@ -1,12 +1,12 @@
-// Module ID: 16582
-// Function ID: 16583
+// Module ID: 16817
+// Function ID: 16818
 // Name: useExternalPIPEnabler
-// Dependencies: [4494, 1218, 4554, 589, 16583, 2]
+// Dependencies: [4494, 1215, 4554, 586, 16818, 2]
 // Exports: default
 
-// Module 16582 (useExternalPIPEnabler)
+// Module 16817 (useExternalPIPEnabler)
 import closure_2 from "getParticipants" /* 4494 */;
-import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "fetchFingerprint" /* 1215 */;
 import closure_4 from "createRTCConnection" /* 4554 */;
 
 const require = arg1;
@@ -16,7 +16,7 @@ export default function useExternalPIPEnabler(disabled) {
   disabled = disabled.disabled;
   const items = [closure_2, closure_4, closure_3];
   const items1 = [disabled];
-  return disabled(589).useStateFromStoresObject(items, () => {
+  return disabled(586).useStateFromStoresObject(items, () => {
     const channelId = closure_1_4.getChannelId();
     if (null != channelId) {
       if (!disabled) {

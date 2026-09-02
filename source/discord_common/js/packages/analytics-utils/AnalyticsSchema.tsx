@@ -1,11 +1,11 @@
-// Module ID: 663
-// Function ID: 664
+// Module ID: 660
+// Function ID: 661
 // Name: ImpressionNames
-// Dependencies: [505, 2]
+// Dependencies: [502, 2]
 
-// Module 663 (ImpressionNames)
+// Module 660 (ImpressionNames)
 import set from "set" /* 2 */;
-import sum from "sum" /* 505 */;
+import sum from "sum" /* 502 */;
 
 const WebAnalyticsEvents = sum.WebAnalyticsEvents;
 const result = set.fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsSchema.tsx");

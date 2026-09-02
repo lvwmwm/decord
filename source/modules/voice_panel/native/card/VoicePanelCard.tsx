@@ -1,10 +1,10 @@
-// Module ID: 16713
-// Function ID: 16714
+// Module ID: 16948
+// Function ID: 16949
 // Name: SelfStreamCard
-// Dependencies: [32, 19, 17, 4500, 4554, 5363, 11840, 11838, 16669, 11843, 676, 4499, 11841, 21, 4217, 4474, 4940, 1297, 4478, 712, 4663, 4544, 6006, 1236, 4928, 11839, 589, 9563, 4579, 12469, 9566, 9562, 16714, 9576, 8504, 8113, 4479, 4927, 7796, 5493, 4197, 16715, 10730, 9209, 4204, 5953, 16673, 16685, 16668, 16716, 16717, 8896, 5652, 16718, 11842, 16719, 16720, 16721, 16722, 16723, 16733, 2]
+// Dependencies: [32, 19, 17, 4500, 4554, 5371, 12063, 12061, 16904, 12066, 673, 4499, 12064, 21, 4217, 4474, 4940, 1296, 4478, 709, 4663, 4544, 6014, 1233, 4928, 12062, 586, 9576, 4579, 12693, 9579, 9575, 16949, 9589, 8517, 8121, 4479, 4927, 7805, 5501, 4197, 16950, 10951, 9223, 4204, 5961, 16908, 16920, 16903, 16951, 16952, 8911, 5660, 16953, 12065, 16954, 16955, 16956, 16957, 16958, 16968, 2]
 
-// Module 16713 (SelfStreamCard)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16948 (SelfStreamCard)
+import ThemesDefault from "Themes" /* 709 */;
 import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4927 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
 import closure_3 from "_slicedToArray" /* 32 */;
@@ -12,14 +12,14 @@ import importAllResult from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "reset" /* 4500 */;
 import closure_7 from "createRTCConnection" /* 4554 */;
-import closure_8 from "anyoneHasFlagInContext" /* 5363 */;
-import VoicePanelModes from "VoicePanelModes" /* 11840 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11838 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16669 */;
-import { EDGE_GUTTER } from "CARD_SIZE" /* 11843 */;
-import { ApplicationStreamStates } from "ME" /* 676 */;
+import closure_8 from "anyoneHasFlagInContext" /* 5371 */;
+import VoicePanelModes from "VoicePanelModes" /* 12063 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12061 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16904 */;
+import { EDGE_GUTTER } from "CARD_SIZE" /* 12066 */;
+import { ApplicationStreamStates } from "ME" /* 673 */;
 import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
-import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 11841 */;
+import { SCALE_PHYSICS } from "MIN_PAN_GESTURE_MOVE" /* 12064 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importDefaultResult from "module_4217" /* 4217 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -1450,7 +1450,7 @@ const memoResult = importAllResult.memo(function VoicePanelCard(cleanUp) {
       tmp25 = callback;
     }
   }
-  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "isArray", layout: "r", layoutPhysics: "isArray" };
+  const obj8 = { isRinging: tmp8, avatarURI: "r", avatarDecoration: "channelId", layout: true, layoutPhysics: true };
   obj8[3] = layoutTransition;
   obj8[4] = physics;
   tmp26Result = callback(closure_37, obj8);

@@ -1,12 +1,12 @@
-// Module ID: 1383
-// Function ID: 1384
+// Module ID: 1382
+// Function ID: 1383
 // Name: isActionRequired
-// Dependencies: [1380, 1381, 2]
+// Dependencies: [1379, 1380, 2]
 // Exports: default
 
-// Module 1383 (isActionRequired)
-import closure_0 from "handleUpdateUser" /* 1380 */;
-import closure_1 from "handleRequiredAction" /* 1381 */;
+// Module 1382 (isActionRequired)
+import closure_0 from "handleUpdateUser" /* 1379 */;
+import closure_1 from "handleRequiredAction" /* 1380 */;
 
 const result = require("set").fileFinishedImporting("modules/core/isActionRequired.tsx");
 

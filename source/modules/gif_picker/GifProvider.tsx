@@ -1,12 +1,12 @@
-// Module ID: 10359
-// Function ID: 10360
+// Module ID: 10381
+// Function ID: 10382
 // Name: GIF_PROVIDER
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: getSearchPlaceholder
 
-// Module 10359 (GIF_PROVIDER)
+// Module 10381 (GIF_PROVIDER)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/gif_picker/GifProvider.tsx");
 

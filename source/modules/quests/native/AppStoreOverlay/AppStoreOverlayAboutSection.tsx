@@ -1,11 +1,11 @@
-// Module ID: 11110
-// Function ID: 11111
+// Module ID: 11331
+// Function ID: 11332
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 712, 4478, 1236, 4474, 2]
+// Dependencies: [32, 19, 17, 21, 709, 4478, 1233, 4474, 2]
 // Exports: default
 
-// Module 11110 (AppStoreOverlayAboutSection)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11331 (AppStoreOverlayAboutSection)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

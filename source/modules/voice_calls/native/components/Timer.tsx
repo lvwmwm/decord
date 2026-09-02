@@ -1,11 +1,11 @@
-// Module ID: 13452
-// Function ID: 13453
+// Module ID: 13675
+// Function ID: 13676
 // Name: componentDidMount
-// Dependencies: [19, 21, 12, 1297, 2]
+// Dependencies: [19, 21, 12, 1296, 2]
 
-// Module 13452 (componentDidMount)
+// Module 13675 (componentDidMount)
 import applyDefault from "apply" /* 12 */;
-import Button from "Button" /* 1297 */;
+import Button from "Button" /* 1296 */;
 import { jsxs } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;
 

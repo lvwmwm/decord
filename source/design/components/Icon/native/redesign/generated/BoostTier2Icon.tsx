@@ -1,14 +1,14 @@
-// Module ID: 15807
-// Function ID: 15808
+// Module ID: 16038
+// Function ID: 16039
 // Name: BoostTier2Icon
-// Dependencies: [19, 21, 712, 4196, 15808, 2]
+// Dependencies: [19, 21, 709, 4196, 16039, 2]
 // Exports: BoostTier2Icon
 
-// Module 15807 (BoostTier2Icon)
+// Module 16038 (BoostTier2Icon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15808 */;
+import registerAsset from "registerAsset" /* 16039 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

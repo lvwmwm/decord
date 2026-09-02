@@ -1,14 +1,14 @@
-// Module ID: 14162
-// Function ID: 14163
+// Module ID: 14385
+// Function ID: 14386
 // Name: RPC_EMBEDDED_APP_SCOPE
-// Dependencies: [4380, 676, 14130, 14113, 2]
+// Dependencies: [4380, 673, 14353, 14336, 2]
 
-// Module 14162 (RPC_EMBEDDED_APP_SCOPE)
+// Module 14385 (RPC_EMBEDDED_APP_SCOPE)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import getCapabilitiesForSocketDefault from "getCapabilitiesForSocket" /* 14113 */;
+import ME from "ME" /* 673 */;
+import getCapabilitiesForSocketDefault from "getCapabilitiesForSocket" /* 14336 */;
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14130 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 14353 */;
 
 ({ RPC_AUTHENTICATED_SCOPE, RPC_EMBEDDED_APP_SCOPE, RPC_SCOPE_CONFIG } = RPC_SCOPE_CONFIG);
 const RPCCommands = ME.RPCCommands;

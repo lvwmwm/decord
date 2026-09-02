@@ -1,12 +1,12 @@
-// Module ID: 9730
-// Function ID: 9731
+// Module ID: 9752
+// Function ID: 9753
 // Name: DEFAULT_DISCOVERY_CATEGORY_ID
-// Dependencies: [687, 1236, 2]
+// Dependencies: [684, 1233, 2]
 // Exports: getLanguageOptions
 
-// Module 9730 (DEFAULT_DISCOVERY_CATEGORY_ID)
-import setDefault from "set" /* 687 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 9752 (DEFAULT_DISCOVERY_CATEGORY_ID)
+import setDefault from "set" /* 684 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -45,8 +45,8 @@ export const getLanguageOptions = function getLanguageOptions() {
     if ("en-US" === code.code) {
       const obj = {};
       const merged = Object.assign(code);
-      const intl = callback(1236).intl;
-      obj.name = intl.string(callback(1236).t.LQLMGP);
+      const intl = callback(1233).intl;
+      obj.name = intl.string(callback(1233).t.LQLMGP);
       tmp = obj;
     }
     return tmp;

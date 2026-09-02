@@ -1,13 +1,13 @@
-// Module ID: 16235
-// Function ID: 16236
+// Module ID: 16467
+// Function ID: 16468
 // Name: FriendPresence
-// Dependencies: [5, 32, 19, 17, 4470, 4569, 4130, 676, 21, 4478, 712, 4474, 4322, 9239, 589, 8933, 1297, 9714, 13159, 16236, 2]
+// Dependencies: [5, 32, 19, 17, 4470, 4569, 4130, 673, 21, 4478, 709, 4474, 4322, 9253, 586, 8947, 1296, 9736, 13381, 16468, 2]
 
-// Module 16235 (FriendPresence)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16467 (FriendPresence)
+import ThemesDefault from "Themes" /* 709 */;
 import nameFromUser from "nameFromUser" /* 4322 */;
 import Text from "Text" /* 4474 */;
-import ActivityStatusDefault from "ActivityStatus" /* 9239 */;
+import ActivityStatusDefault from "ActivityStatus" /* 9253 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
@@ -15,7 +15,7 @@ import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_8 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_9 from "sortActivity" /* 4569 */;
 import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

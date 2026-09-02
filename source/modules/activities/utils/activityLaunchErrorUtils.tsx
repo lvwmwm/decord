@@ -1,14 +1,14 @@
-// Module ID: 9495
-// Function ID: 9496
+// Module ID: 9508
+// Function ID: 9509
 // Name: _getActivityLaunchErrorInfo
-// Dependencies: [5, 8498, 676, 1236, 9475, 4166, 9469, 4742, 8025, 2]
+// Dependencies: [5, 8511, 673, 1233, 9488, 4166, 9482, 4742, 8034, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 9495 (_getActivityLaunchErrorInfo)
+// Module 9508 (_getActivityLaunchErrorInfo)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 8498 */;
-import { DevShelfFetchState } from "initialize" /* 8498 */;
-import { AbortCodes } from "ME" /* 676 */;
+import closure_4 from "initialize" /* 8511 */;
+import { DevShelfFetchState } from "initialize" /* 8511 */;
+import { AbortCodes } from "ME" /* 673 */;
 
 const require = arg1;
 function _getActivityLaunchErrorInfo() {

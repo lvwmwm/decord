@@ -1,13 +1,13 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10189
+// Function ID: 10190
 // Name: canViewPotentiallyNSFWChannel
-// Dependencies: [1387, 1922, 4731, 2]
+// Dependencies: [1386, 1921, 4731, 2]
 // Exports: canViewPotentiallyNSFWChannel, getGuildIdFromMessage
 
-// Module 10167 (canViewPotentiallyNSFWChannel)
+// Module 10189 (canViewPotentiallyNSFWChannel)
 import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4731 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/MessageUtils.tsx");

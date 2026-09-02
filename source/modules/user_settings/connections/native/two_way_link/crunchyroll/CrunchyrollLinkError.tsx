@@ -1,16 +1,16 @@
-// Module ID: 9349
-// Function ID: 9350
+// Module ID: 9362
+// Function ID: 9363
 // Name: CrunchyrollLinkDiscordError
-// Dependencies: [19, 9341, 21, 1499, 9324, 9325, 1236, 2]
+// Dependencies: [19, 9354, 21, 1498, 9337, 9338, 1233, 2]
 // Exports: default
 
-// Module 9349 (CrunchyrollLinkDiscordError)
+// Module 9362 (CrunchyrollLinkDiscordError)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useNavigation from "useNavigation" /* 1499 */;
-import useConnectRetry from "useConnectRetry" /* 9324 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 9325 */;
-import { CrunchyrollLinkModalScenes as closure_2 } from "CrunchyrollLinkModalScenes" /* 9341 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import useNavigation from "useNavigation" /* 1498 */;
+import useConnectRetry from "useConnectRetry" /* 9337 */;
+import TwoWayLinkError from "TwoWayLinkError" /* 9338 */;
+import { CrunchyrollLinkModalScenes as closure_2 } from "CrunchyrollLinkModalScenes" /* 9354 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

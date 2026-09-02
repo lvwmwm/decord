@@ -1,15 +1,15 @@
-// Module ID: 14053
-// Function ID: 14054
+// Module ID: 14276
+// Function ID: 14277
 // Name: initialize
-// Dependencies: [1218, 7465, 513, 514, 589, 709, 2]
+// Dependencies: [1215, 7475, 510, 511, 586, 706, 2]
 
-// Module 14053 (initialize)
-import extractId from "extractId" /* 513 */;
-import v1 from "v1" /* 514 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "init" /* 7465 */;
+// Module 14276 (initialize)
+import extractId from "extractId" /* 510 */;
+import v1 from "v1" /* 511 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_2 from "fetchFingerprint" /* 1215 */;
+import closure_3 from "init" /* 7475 */;
 
 require = arg1;
 let c4 = 0;

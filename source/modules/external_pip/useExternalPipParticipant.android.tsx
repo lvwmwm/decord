@@ -1,14 +1,14 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16821
+// Function ID: 16822
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4494, 1218, 4529, 4554, 4499, 589, 2]
+// Dependencies: [32, 19, 4494, 1215, 4529, 4554, 4499, 586, 2]
 // Exports: default
 
-// Module 16586 (useExternalPipParticipant)
+// Module 16821 (useExternalPipParticipant)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "getParticipants" /* 4494 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_7 from "createRTCConnection" /* 4554 */;
 import ParticipantTypes from "ParticipantTypes" /* 4499 */;
@@ -265,7 +265,7 @@ export default function useExternalPipParticipant() {
         return obj;
       }
     }
-    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "accessible" };
+    return { selectedParticipantSpeaking: false, selectedParticipantUserId: "Boolean", selectedStreamId: "call" };
   }, items4);
   const items5 = [selectedParticipantSpeaking.selectedParticipantSpeaking];
   const effect = React.useEffect(() => {

@@ -1,19 +1,19 @@
-// Module ID: 11667
-// Function ID: 11668
+// Module ID: 11890
+// Function ID: 11891
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 676, 21, 4478, 712, 4190, 1995, 1236, 11668, 8435, 4474, 5068, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 4190, 1994, 1233, 11891, 8444, 4474, 5076, 2]
 // Exports: default
 
-// Module 11667 (LearnMoreAboutAppsSection)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 11890 (LearnMoreAboutAppsSection)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8435 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11668 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8444 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 11891 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -35,7 +35,7 @@ export default function LearnMoreAboutAppsSection(visible) {
   const tmp = callback3();
   const callback = React.useCallback(() => {
     const obj = callback(4190);
-    obj.openURL(callback(1995).getAppsSupportURL(constants.APPS_LEARN_MORE));
+    obj.openURL(callback(1994).getAppsSupportURL(constants.APPS_LEARN_MORE));
   }, []);
   const intl = getSystemLocale.intl;
   const stringResult = intl.string(getSystemLocale.t["kw8/Ec"]);

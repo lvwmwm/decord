@@ -1,7 +1,7 @@
 // Module ID: 4668
 // Function ID: 4669
 // Name: useAudienceRequestToSpeakState
-// Dependencies: [4497, 589, 2]
+// Dependencies: [4497, 586, 2]
 // Exports: default, getAudienceRequestToSpeakState
 
 // Module 4668 (useAudienceRequestToSpeakState)
@@ -16,7 +16,7 @@ export default function useAudienceRequestToSpeakState(arg0, arg1) {
   dependencyMap = arg1;
   const items = [closure_2];
   const items1 = [arg0, arg1];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     if (null != closure_0) {
       if (null != closure_1) {
         const voiceStateForChannel = closure_1_2.getVoiceStateForChannel(tmp8, tmp);

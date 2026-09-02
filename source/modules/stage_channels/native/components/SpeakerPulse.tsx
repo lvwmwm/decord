@@ -1,11 +1,11 @@
-// Module ID: 13758
-// Function ID: 13759
+// Module ID: 13981
+// Function ID: 13982
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 4470, 21, 4478, 712, 589, 4217, 4479, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 709, 586, 4217, 4479, 2]
 // Exports: default
 
-// Module 13758 (SpeakerPulse)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 13981 (SpeakerPulse)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

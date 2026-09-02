@@ -1,12 +1,12 @@
-// Module ID: 10077
-// Function ID: 10078
+// Module ID: 10099
+// Function ID: 10100
 // Name: getNoiseCancellationDeferredToSystem
-// Dependencies: [4529, 10078, 589, 2]
+// Dependencies: [4529, 10100, 586, 2]
 // Exports: getNoiseCancellationDeferredToSystem, useNoiseCancellationDeferredToSystem
 
-// Module 10077 (getNoiseCancellationDeferredToSystem)
-import initialize from "initialize" /* 589 */;
-import setDefault from "set" /* 10078 */;
+// Module 10099 (getNoiseCancellationDeferredToSystem)
+import initialize from "initialize" /* 586 */;
+import setDefault from "set" /* 10100 */;
 import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
 
 require = arg1;

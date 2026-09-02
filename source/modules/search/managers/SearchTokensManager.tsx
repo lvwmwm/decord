@@ -1,13 +1,13 @@
-// Module ID: 17065
-// Function ID: 17066
+// Module ID: 17301
+// Function ID: 17302
 // Name: _initialize
-// Dependencies: [1997, 5486, 11907, 2]
+// Dependencies: [1996, 5494, 12130, 2]
 
-// Module 17065 (_initialize)
+// Module 17301 (_initialize)
 import set from "set" /* 2 */;
-import _setAppLocale from "_setAppLocale" /* 1997 */;
-import initializeDefault from "initialize" /* 5486 */;
-import SearchTokenTypes from "SearchTokenTypes" /* 11907 */;
+import _setAppLocale from "_setAppLocale" /* 1996 */;
+import initializeDefault from "initialize" /* 5494 */;
+import SearchTokenTypes from "SearchTokenTypes" /* 12130 */;
 
 let closure_2 = _setAppLocale.subscribeToIntlLoadingSuccess;
 initializeDefault;

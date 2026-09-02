@@ -1,22 +1,22 @@
-// Module ID: 17438
-// Function ID: 17439
+// Module ID: 17674
+// Function ID: 17675
 // Name: updateRegion
-// Dependencies: [4500, 1218, 1387, 4398, 4575, 1981, 4568, 1922, 4545, 676, 12, 4663, 687, 4544, 4362, 709, 5486, 9565, 17418, 2]
+// Dependencies: [4500, 1215, 1386, 4398, 4575, 1980, 4568, 1921, 4545, 673, 12, 4663, 684, 4544, 4362, 706, 5494, 9578, 17654, 2]
 
-// Module 17438 (updateRegion)
-import setDefault from "set" /* 687 */;
-import mergeGuildAvatarDefault from "mergeGuildAvatar" /* 1922 */;
+// Module 17674 (updateRegion)
+import setDefault from "set" /* 684 */;
+import mergeGuildAvatarDefault from "mergeGuildAvatar" /* 1921 */;
 import watchStream from "watchStream" /* 4663 */;
-import initializeDefault from "initialize" /* 5486 */;
+import initializeDefault from "initialize" /* 5494 */;
 import closure_3 from "reset" /* 4500 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "handleInviteData" /* 4398 */;
 import closure_7 from "initialize" /* 4575 */;
-import closure_8 from "handleConnectionOpen" /* 1981 */;
+import closure_8 from "handleConnectionOpen" /* 1980 */;
 import closure_9 from "initialize" /* 4568 */;
 import StreamIssueReportReasons from "StreamIssueReportReasons" /* 4545 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import apply from "apply" /* 12 */;
 import set from "set" /* 2 */;
 

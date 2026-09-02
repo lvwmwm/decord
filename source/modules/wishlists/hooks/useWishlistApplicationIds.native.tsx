@@ -1,12 +1,12 @@
-// Module ID: 10569
-// Function ID: 10570
+// Module ID: 10790
+// Function ID: 10791
 // Name: useWishlistApplicationIds
-// Dependencies: [19, 676, 2]
+// Dependencies: [19, 673, 2]
 // Exports: useWishlistApplicationIds
 
-// Module 10569 (useWishlistApplicationIds)
+// Module 10790 (useWishlistApplicationIds)
 import closure_0 from "noop" /* 19 */;
-import { COLLECTIBLES_APPLICATION_ID as closure_1 } from "ME" /* 676 */;
+import { COLLECTIBLES_APPLICATION_ID as closure_1 } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/wishlists/hooks/useWishlistApplicationIds.native.tsx");
 

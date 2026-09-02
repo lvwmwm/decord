@@ -1,10 +1,10 @@
 // Module ID: 1442
 // Function ID: 1443
 // Name: registerAsset
-// Dependencies: [1241]
+// Dependencies: [1240]
 
 // Module 1442 (registerAsset)
-import registerAsset from "registerAsset" /* 1241 */;
+import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 96, height: 96, scales: [1], hash: "1cb51f430bef7cc2c9972354106936ca", name: "default_avatar_1_small", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 96, height: 96, scales: [1], hash: "e2638b3766522b844050b85fb10215de", name: "default_avatar_2_small", type: "png" });

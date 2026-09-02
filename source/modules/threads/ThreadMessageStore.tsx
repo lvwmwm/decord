@@ -1,20 +1,20 @@
-// Module ID: 6151
-// Function ID: 6152
+// Module ID: 6159
+// Function ID: 6160
 // Name: updateState
-// Dependencies: [1391, 4131, 1935, 1387, 4735, 1235, 676, 12, 11, 4737, 589, 709, 2]
+// Dependencies: [1390, 4131, 1934, 1386, 4735, 1232, 673, 12, 11, 4737, 586, 706, 2]
 
-// Module 6151 (updateState)
+// Module 6159 (updateState)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import ME from "ME" /* 676 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import AbortCodes from "AbortCodes" /* 1235 */;
+import initializeDefault from "initialize" /* 586 */;
+import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import AbortCodes from "AbortCodes" /* 1232 */;
 import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
 import closure_5 from "hasFlag" /* 4131 */;
-import closure_6 from "createdAt" /* 1935 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "createdAt" /* 1934 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "reinjectEphemerals" /* 4735 */;
 import set from "set" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 10270
-// Function ID: 10271
+// Module ID: 10292
+// Function ID: 10293
 // Name: _fetchBugReportConfig
-// Dependencies: [5, 1302, 676, 530, 1236, 10271, 500, 4713, 503, 2]
+// Dependencies: [5, 1301, 673, 527, 1233, 10293, 1234, 4713, 500, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 10270 (_fetchBugReportConfig)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 10292 (_fetchBugReportConfig)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "handleThemeChange" /* 1302 */;
-import ME from "ME" /* 676 */;
+import closure_4 from "handleThemeChange" /* 1301 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function _fetchBugReportConfig() {
@@ -156,9 +156,9 @@ function _submitReport() {
                 items.push(obj17);
               }
               let obj19 = dependencyMap;
-              let obj18 = lib(10271);
+              let obj18 = lib(10293);
               let uploadDebugLogFiles = obj18.uploadDebugLogFiles;
-              obj19 = lib(500);
+              obj19 = lib(1234);
               let BUG_REPORTS = closure_1_5;
               if (obj19.isIOS()) {
                 let ANDROID_APP = BUG_REPORTS.IOS_APP;
@@ -174,7 +174,7 @@ function _submitReport() {
               obj18[1] = dependencyMap;
               obj18[2] = items;
               items = { event: null, properties: null };
-              items[0] = lib(503).NetworkActionNames.BUG_REPORT_SUBMIT;
+              items[0] = lib(500).NetworkActionNames.BUG_REPORT_SUBMIT;
               obj19 = { priority: null, asana_inbox_id: null };
               priority = priority.priority;
               obj19[0] = priority;

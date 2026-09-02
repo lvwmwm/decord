@@ -1,11 +1,11 @@
-// Module ID: 10779
-// Function ID: 10780
+// Module ID: 10999
+// Function ID: 11000
 // Name: initialize
-// Dependencies: [32, 589, 709, 2]
+// Dependencies: [32, 586, 706, 2]
 
-// Module 10779 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 10999 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "_slicedToArray" /* 32 */;
 
 let closure_1 = { sentGifts: {} };

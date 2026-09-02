@@ -1,17 +1,17 @@
-// Module ID: 13462
-// Function ID: 13463
+// Module ID: 13685
+// Function ID: 13686
 // Name: noop
-// Dependencies: [706, 4529, 4542, 687, 4582, 584, 3, 4558, 13463, 500, 38, 2]
+// Dependencies: [703, 4529, 4542, 684, 4582, 581, 3, 4558, 13686, 1234, 38, 2]
 
-// Module 13462 (noop)
+// Module 13685 (noop)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import set from "set" /* 500 */;
-import failsDefault from "fails" /* 584 */;
-import setDefault from "set" /* 687 */;
+import failsDefault from "fails" /* 581 */;
+import setDefault from "set" /* 684 */;
+import set from "set" /* 1234 */;
 import sleep from "sleep" /* 4558 */;
 import onDefault from "on" /* 4582 */;
-import closure_3 from "refreshSourceMapCookie" /* 706 */;
+import closure_3 from "refreshSourceMapCookie" /* 703 */;
 import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
 import DesktopSources from "DesktopSources" /* 4542 */;
 
@@ -82,7 +82,7 @@ prototype["createWebSocket"] = function createWebSocket() {
     self.handleClose(false, 0, "The connection timed out after " + self(closure_1_2[7]).now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
   obj = { location: "RTCControlSocket", supportsSfuUpdate: closure_4.supports(constants.UDP_ENDPOINT_UPDATE) };
-  const webSocket = new WebSocket("" + self.url + "?v=" + self(13463).getVoiceGatewayProtocolVersion(obj));
+  const webSocket = new WebSocket("" + self.url + "?v=" + self(13686).getVoiceGatewayProtocolVersion(obj));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
   webSocket.onopen = () => {

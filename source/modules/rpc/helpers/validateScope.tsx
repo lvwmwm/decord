@@ -1,10 +1,10 @@
-// Module ID: 14156
-// Function ID: 14157
+// Module ID: 14379
+// Function ID: 14380
 // Name: validateScope
 // Dependencies: [4380, 2]
 // Exports: default
 
-// Module 14156 (validateScope)
+// Module 14379 (validateScope)
 import set from "set" /* 2 */;
 import RPC_SCOPE_CONFIG2 from "RPC_SCOPE_CONFIG" /* 4380 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 17512
-// Function ID: 17513
-// Dependencies: [676, 595, 2]
+// Module ID: 17748
+// Function ID: 17749
+// Dependencies: [673, 592, 2]
 
-// Module 17512
+// Module 17748
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const TOKEN_KEY = ME.TOKEN_KEY;
 const result = set.fileFinishedImporting("modules/headless_tasks/HeadlessTaskUtils.tsx");
@@ -12,7 +12,7 @@ const result = set.fileFinishedImporting("modules/headless_tasks/HeadlessTaskUti
 export default {
   awaitStorage(arg0) {
     const _require = arg0;
-    const Storage = _require(595).Storage;
+    const Storage = _require(592).Storage;
     Storage.asyncGet(TOKEN_KEY, () => {
       callback();
     });

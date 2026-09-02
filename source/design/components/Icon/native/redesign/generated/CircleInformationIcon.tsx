@@ -1,12 +1,12 @@
 // Module ID: 4433
 // Function ID: 4434
 // Name: CircleInformationIcon
-// Dependencies: [19, 17, 21, 712, 4196, 4434, 4435, 2]
+// Dependencies: [19, 17, 21, 709, 4196, 4434, 4435, 2]
 // Exports: CircleInformationIcon
 
 // Module 4433 (CircleInformationIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
 import registerAsset from "registerAsset" /* 4434 */;
 import registerAsset2 from "registerAsset" /* 4435 */;

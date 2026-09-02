@@ -1,11 +1,11 @@
 // Module ID: 4495
 // Function ID: 4496
 // Name: set
-// Dependencies: [4496, 4497, 589, 709, 2]
+// Dependencies: [4496, 4497, 586, 706, 2]
 
 // Module 4495 (set)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "handleUpdate" /* 4496 */;
 import closure_1 from "updateVoiceState" /* 4497 */;
 import set from "set" /* 2 */;

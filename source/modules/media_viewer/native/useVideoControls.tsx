@@ -1,20 +1,20 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 8589
+// Function ID: 8590
 // Name: useVideoControls
-// Dependencies: [32, 19, 4470, 21, 644, 705, 8575, 4478, 589, 8567, 8576, 8568, 8577, 2]
+// Dependencies: [32, 19, 4470, 21, 641, 702, 8590, 4478, 586, 8582, 8591, 8583, 8592, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8574 (useVideoControls)
-import batchUpdates from "batchUpdates" /* 705 */;
+// Module 8589 (useVideoControls)
+import batchUpdates from "batchUpdates" /* 702 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import { jsx } from "jsxProd" /* 21 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
-keys = keys.create(() => ({ controls: "PX_16", paused: null }));
+keys = keys.create(() => ({ controls: "PX_16", paused: true }));
 let closure_8 = createCacheKey.createStyles({ slider: { marginBottom: 8 } });
 let result = require("set").fileFinishedImporting("modules/media_viewer/native/useVideoControls.tsx");
 
@@ -80,12 +80,12 @@ export default function useVideoControls(arg0, portal) {
 export const useVideoStateStore = keys;
 export const initVideoStateStore = function initVideoStateStore() {
   batchUpdates.batchUpdates(() => {
-    state.setState({ controls: "PX_16", paused: null });
+    state.setState({ controls: "PX_16", paused: true });
   });
 };
 export const setMuted = function setMuted(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     const useMediaPlayerMutedStore = callback(closure_1_2[6]).useMediaPlayerMutedStore;
     useMediaPlayerMutedStore.setState({ isMuted: callback });
   });
@@ -98,11 +98,11 @@ export const toggleMuted = function toggleMuted() {
 };
 export const setVideoStateControls = function setVideoStateControls(videoControls) {
   const _require = videoControls;
-  _require(705).batchUpdates(() => closure_1_7.setState({ controls: closure_0 }));
+  _require(702).batchUpdates(() => closure_1_7.setState({ controls: closure_0 }));
 };
 export const setPausedState = function setPausedState(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => closure_1_7.setState({ paused: closure_0 }));
+  _require(702).batchUpdates(() => closure_1_7.setState({ paused: closure_0 }));
 };
 export const tryPauseCurrentVideo = function tryPauseCurrentVideo() {
   const controls = keys.getState().controls;

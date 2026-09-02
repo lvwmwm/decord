@@ -1,21 +1,21 @@
-// Module ID: 13600
-// Function ID: 13601
+// Module ID: 13823
+// Function ID: 13824
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 1218, 1922, 676, 1348, 21, 4478, 712, 1628, 1493, 501, 698, 4723, 4332, 1222, 4859, 4863, 7708, 1236, 4863, 6052, 5070, 4296, 13601, 4474, 7715, 2]
+// Dependencies: [5, 19, 17, 1215, 1921, 673, 1347, 21, 4478, 709, 1627, 1492, 1235, 695, 4723, 4332, 1219, 4859, 4863, 7717, 1233, 4863, 6060, 5078, 4296, 13824, 4474, 7724, 2]
 // Exports: default
 
-// Module 13600 (OneTimeLoginModal)
-import ThemesDefault from "Themes" /* 712 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5070 */;
+// Module 13823 (OneTimeLoginModal)
+import ThemesDefault from "Themes" /* 709 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5078 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "fetchFingerprint" /* 1218 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
-import { BACKGROUND_GRADIENT_PRESETS_MOBILE as closure_12 } from "ThemeTypes" /* 1348 */;
+import closure_8 from "fetchFingerprint" /* 1215 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
+import { BACKGROUND_GRADIENT_PRESETS_MOBILE as closure_12 } from "ThemeTypes" /* 1347 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -185,12 +185,12 @@ export default function OneTimeLoginModal(token) {
   obj1 = { style: tmp.container, children: null };
   let obj2 = { style: tmp.centerContent, children: null };
   const tmp11 = getMixedGradientColorDefault;
-  const items7 = [callback(callback3, { source: token(13601), style: tmp.logo }), ];
+  const items7 = [callback(callback3, { source: token(13824), style: tmp.logo }), ];
   let obj4 = { style: tmp.loadingContainer, children: null };
   const items8 = [callback(callback2, {}), ];
   let obj5 = { variant: "text-lg/semibold", children: null };
-  let intl = token(1236).intl;
-  obj5[1] = intl.string(token(1236).t.W9uNdG);
+  let intl = token(1233).intl;
+  obj5[1] = intl.string(token(1233).t.W9uNdG);
   items8[1] = callback(token(4474).Text, obj5);
   obj4[1] = items8;
   items7[1] = callback2(callback1, obj4);
@@ -198,15 +198,15 @@ export default function OneTimeLoginModal(token) {
   const items9 = [callback2(callback1, obj2), ];
   const obj6 = { style: tmp.bottomContent, children: null };
   const obj7 = { variant: "text-sm/normal", children: null };
-  let intl2 = token(1236).intl;
-  obj7[1] = intl2.string(token(1236).t["ZXe5/Y"]);
+  let intl2 = token(1233).intl;
+  obj7[1] = intl2.string(token(1233).t["ZXe5/Y"]);
   const items10 = [callback(token(4474).Text, obj7), ];
   const obj8 = { textColor: "text-default", text: null, variant: "text-sm/medium", onPress: null, textStyle: null };
-  let intl3 = token(1236).intl;
-  obj8[1] = intl3.string(token(1236).t.FIEwfG);
+  let intl3 = token(1233).intl;
+  obj8[1] = intl3.string(token(1233).t.FIEwfG);
   obj8[3] = callback;
   obj8[4] = tmp.link;
-  items10[1] = callback(token(7715).LinkButton, obj8);
+  items10[1] = callback(token(7724).LinkButton, obj8);
   obj6[1] = items10;
   items9[1] = callback2(callback1, obj6);
   obj1[1] = items9;

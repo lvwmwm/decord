@@ -1,12 +1,12 @@
-// Module ID: 14859
-// Function ID: 14860
+// Module ID: 15088
+// Function ID: 15089
 // Name: DEFAULT_FONT_SCALE_STORE_STATE
-// Dependencies: [500, 9089, 700, 2]
+// Dependencies: [1234, 9103, 697, 2]
 
-// Module 14859 (DEFAULT_FONT_SCALE_STORE_STATE)
-import enforcingDefault from "enforcing" /* 9089 */;
-import set from "set" /* 500 */;
-import identity from "identity" /* 700 */;
+// Module 15088 (DEFAULT_FONT_SCALE_STORE_STATE)
+import enforcingDefault from "enforcing" /* 9103 */;
+import set from "set" /* 1234 */;
+import identity from "identity" /* 697 */;
 
 if (set.isAndroid()) {
   let customFontScale = enforcingDefault.getCustomFontScale();

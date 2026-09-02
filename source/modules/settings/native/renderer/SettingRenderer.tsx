@@ -1,27 +1,27 @@
-// Module ID: 14343
-// Function ID: 14344
+// Module ID: 14566
+// Function ID: 14567
 // Name: GuildSelectDefaultIcon
-// Dependencies: [32, 109, 19, 17, 1996, 14342, 1909, 11069, 21, 4478, 712, 1297, 5599, 1499, 14344, 589, 1236, 9039, 6004, 14346, 14347, 5993, 1356, 7692, 7693, 5981, 4193, 10069, 4446, 4447, 5601, 4926, 4474, 1897, 500, 13821, 5068, 4928, 4197, 6244, 1891, 2]
+// Dependencies: [32, 109, 19, 17, 1995, 14565, 1908, 11289, 21, 4478, 709, 1296, 5607, 1498, 14567, 586, 1233, 9053, 6012, 14569, 14570, 6001, 1355, 7701, 7702, 5989, 4193, 10091, 4446, 4447, 5609, 4926, 4474, 1896, 1234, 14044, 5076, 4928, 4197, 6253, 1890, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 14343 (GuildSelectDefaultIcon)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 14566 (GuildSelectDefaultIcon)
+import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
 import Text from "Text" /* 4474 */;
-import TableRowInner from "TableRowInner" /* 5599 */;
-import context2 from "context" /* 7692 */;
-import ClydeIcon from "ClydeIcon" /* 9039 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10069 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 14346 */;
-import _modDef14347 from "module_14347" /* 14347 */;
+import TableRowInner from "TableRowInner" /* 5607 */;
+import context2 from "context" /* 7701 */;
+import ClydeIcon from "ClydeIcon" /* 9053 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10091 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 14569 */;
+import _modDef14570 from "module_14570" /* 14570 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_9 from "_getSystemLocale" /* 1996 */;
-import closure_10 from "zustandStore" /* 14342 */;
-import closure_11 from "createGuildRecordFromRust" /* 1909 */;
-import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11069 */;
+import closure_9 from "_getSystemLocale" /* 1995 */;
+import closure_10 from "zustandStore" /* 14565 */;
+import closure_11 from "createGuildRecordFromRust" /* 1908 */;
+import GUILD_SELECT_ALL_SERVERS_OPTION_ID from "GUILD_SELECT_ALL_SERVERS_OPTION_ID" /* 11289 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -50,7 +50,7 @@ class GuildSelectDefaultIcon {
 }
 function ForceSwitchIcons(children) {
   let context;
-  context = importAllResult.useContext(context(1356).AccessibilityPreferencesContext);
+  context = importAllResult.useContext(context(1355).AccessibilityPreferencesContext);
   const items = [context];
   const value = importAllResult.useMemo(() => {
     const obj = {};
@@ -58,7 +58,7 @@ function ForceSwitchIcons(children) {
     obj.switchIconsEnabled = true;
     return obj;
   }, items);
-  return callback3(context(1356).AccessibilityPreferencesContext.Provider, { value, children: children.children });
+  return callback3(context(1355).AccessibilityPreferencesContext.Provider, { value, children: children.children });
 }
 function SettingSearchResultBreadcrumbs(breadcrumbs) {
   breadcrumbs = breadcrumbs.breadcrumbs;
@@ -272,27 +272,27 @@ let closure_20 = importAllResult.memo((useSelectedGuildId) => {
   closure_1 = undefined;
   dependencyMap = undefined;
   selectedGuildId = useSelectedGuildId.useSelectedGuildId();
-  let obj = selectedGuildId(589);
+  let obj = selectedGuildId(586);
   const items = [closure_11];
   closure_1 = obj.useStateFromStores(items, () => closure_1_11.getGuild(selectedGuildId));
   const items1 = [closure_11];
-  const stateFromStores = selectedGuildId(589).useStateFromStores(items1, () => closure_1_11.getGuild(selectedGuildId));
+  const stateFromStores = selectedGuildId(586).useStateFromStores(items1, () => closure_1_11.getGuild(selectedGuildId));
   if (selectedGuildId === closure_12) {
-    const intl2 = tmp3(1236).intl;
-    let stringResult = intl2.string(tmp3(1236).t.OMVg25);
+    const intl2 = tmp3(1233).intl;
+    let stringResult = intl2.string(tmp3(1233).t.OMVg25);
   } else {
     stringResult = undefined;
     if (stateFromStores != null) {
       stringResult = stateFromStores.name;
     }
     if (stringResult == null) {
-      const intl = tmp3(1236).intl;
-      stringResult = intl.string(tmp3(1236).t["XBwns+"]);
+      const intl = tmp3(1233).intl;
+      stringResult = intl.string(tmp3(1233).t["XBwns+"]);
     }
   }
   dependencyMap = stringResult;
   const items2 = [stringResult];
-  const obj2 = selectedGuildId(589);
+  const obj2 = selectedGuildId(586);
   obj = {};
   const callback = importAllResult.useCallback(() => c2, items2);
   const merged1 = Object.assign(merged);
@@ -337,7 +337,7 @@ let closure_21 = importAllResult.memo((arg0) => {
     obj = { IconComponent: null, variant: null };
     obj[0] = IconComponent;
     obj[1] = variant;
-    tmp10Result = tmp10(tmp(5599).TableRow.Icon, obj);
+    tmp10Result = tmp10(tmp(5607).TableRow.Icon, obj);
   }
   obj[4] = tmp10Result;
   obj[5] = onPress;
@@ -348,7 +348,7 @@ let closure_21 = importAllResult.memo((arg0) => {
     if (typeof trailing === "string") {
       obj1 = { text: null };
       obj1[0] = trailing;
-      tmp10Result = tmp10(tmp(5599).TableRow.TrailingText, obj1);
+      tmp10Result = tmp10(tmp(5607).TableRow.TrailingText, obj1);
     }
     tmp12 = tmp10Result;
   }
@@ -360,7 +360,7 @@ let closure_21 = importAllResult.memo((arg0) => {
     const obj2 = { start: null, end: null };
     obj2[0] = start;
     obj2[1] = end;
-    highlightSettingItem = tmp10(_modDef14347, obj2);
+    highlightSettingItem = tmp10(_modDef14570, obj2);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
@@ -386,7 +386,7 @@ let closure_22 = importAllResult.memo((arg0) => {
     obj = { IconComponent: null, variant: null };
     obj[0] = IconComponent;
     obj[1] = variant;
-    tmp8Result = tmp8(tmp(5599).TableRow.Icon, obj);
+    tmp8Result = tmp8(tmp(5607).TableRow.Icon, obj);
   }
   obj[2] = tmp8Result;
   obj[3] = value;
@@ -395,7 +395,7 @@ let closure_22 = importAllResult.memo((arg0) => {
   obj[6] = onValueChange;
   obj[7] = start;
   obj[8] = end;
-  tmp8Result = tmp8(tmp(5993).TableSwitchRow, obj);
+  tmp8Result = tmp8(tmp(6001).TableSwitchRow, obj);
   let tmp8Result1 = tmp8Result;
   if (true === hasIcon) {
     obj1 = { children: null };
@@ -407,7 +407,7 @@ let closure_22 = importAllResult.memo((arg0) => {
     const obj2 = { start: null, end: null };
     obj2[0] = start;
     obj2[1] = end;
-    highlightSettingItem = tmp8(_modDef14347, obj2);
+    highlightSettingItem = tmp8(_modDef14570, obj2);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
@@ -443,7 +443,7 @@ let closure_24 = importAllResult.memo((arg0) => {
   if (highlightSettingItem) {
     obj = { start: true, end: true, style: null };
     obj[2] = tmp.radioSettingHighlight;
-    highlightSettingItem = callback3(_modDef14347, obj);
+    highlightSettingItem = callback3(_modDef14570, obj);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
@@ -452,7 +452,7 @@ let closure_25 = importAllResult.memo((arg0) => {
   ({ variant, useTrailing, useIsDisabled, useDescription, start, end, IconComponent } = arg0);
   let trailing;
   ({ setting, useTitle } = arg0);
-  let obj = trailing(14346);
+  let obj = trailing(14569);
   let highlightSettingItem = obj.useHighlightSettingItem(setting);
   trailing = undefined;
   const title = useTitle();
@@ -489,24 +489,24 @@ let closure_25 = importAllResult.memo((arg0) => {
     obj = { IconComponent: null, variant: null };
     obj[0] = IconComponent;
     obj[1] = variant;
-    tmp11Result = tmp11(tmp(5599).TableRow.Icon, obj);
+    tmp11Result = tmp11(tmp(5607).TableRow.Icon, obj);
   }
   obj[5] = tmp11Result;
   tmp11Result = null;
   if (null != trailing) {
     obj1 = { text: null };
     obj1[0] = trailing;
-    tmp11Result = tmp11(tmp(5599).TableRow.TrailingText, obj1);
+    tmp11Result = tmp11(tmp(5607).TableRow.TrailingText, obj1);
   }
   obj[6] = tmp11Result;
   obj[7] = start;
   obj[8] = end;
-  const children = [closure_14(trailing(5599).TableRow, obj), ];
+  const children = [closure_14(trailing(5607).TableRow, obj), ];
   if (highlightSettingItem) {
     let obj2 = { start: null, end: null };
     obj2[0] = start;
     obj2[1] = end;
-    highlightSettingItem = tmp11(_modDef14347, obj2);
+    highlightSettingItem = tmp11(_modDef14570, obj2);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });
@@ -529,7 +529,7 @@ let closure_26 = importAllResult.memo((arg0) => {
     obj1 = { start: null, end: null };
     obj1[0] = start;
     obj1[1] = end;
-    highlightSettingItem = callback3(_modDef14347, obj1);
+    highlightSettingItem = callback3(_modDef14570, obj1);
   }
   children[1] = highlightSettingItem;
   return closure_16(closure_15, { children });

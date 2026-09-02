@@ -1,9 +1,9 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8044
+// Function ID: 8045
 // Name: MediaGalleryItemType
 // Dependencies: [2]
 
-// Module 8035 (MediaGalleryItemType)
+// Module 8044 (MediaGalleryItemType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/RowGeneratorTypes.tsx");

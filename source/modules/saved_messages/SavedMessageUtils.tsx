@@ -1,17 +1,17 @@
-// Module ID: 11294
-// Function ID: 11295
+// Module ID: 11517
+// Function ID: 11518
 // Name: _savedMessageJumpToMessage
-// Dependencies: [5, 19, 1391, 1387, 676, 1236, 4075, 589, 4491, 6091, 2]
+// Dependencies: [5, 19, 1390, 1386, 673, 1233, 4074, 586, 4491, 6099, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11294 (_savedMessageJumpToMessage)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 4075 */;
+// Module 11517 (_savedMessageJumpToMessage)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import hooksDefault from "hooks" /* 4074 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import { UnknownChannelRecord } from "createChannelRecord" /* 1391 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import ME from "ME" /* 676 */;
+import { UnknownChannelRecord } from "createChannelRecord" /* 1390 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function _savedMessageJumpToMessage() {
@@ -157,15 +157,15 @@ export const useDueInString = function useDueInString(arg0) {
       H4gnX9 = getSystemLocale.t.H4gnX9;
     }
     if (type === tmp8.LONG) {
-      Uq7Y_7 = tmp(1236).t.haia16;
+      Uq7Y_7 = tmp(1233).t.haia16;
     } else {
-      Uq7Y_7 = tmp(1236).t["Uq7Y+7"];
+      Uq7Y_7 = tmp(1233).t["Uq7Y+7"];
     }
     if (now > dueAt) {
       H4gnX9 = Uq7Y_7;
     }
     obj = { dueInText: null, isOverdue: null };
-    const intl = tmp(1236).intl;
+    const intl = tmp(1233).intl;
     obj = { duration: null };
     const time = dueAt.getTime();
     const obj3 = hooksDefault;
@@ -179,7 +179,7 @@ export const useDueInString = function useDueInString(arg0) {
 export const useSavedMessageChannel = function useSavedMessageChannel(savedMessage) {
   const _require = savedMessage;
   const items = [closure_6];
-  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_6.getChannel(savedMessage.saveData.channelId));
+  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_6.getChannel(savedMessage.saveData.channelId));
   const items1 = [stateFromStores, savedMessage];
   return React.useMemo(() => {
     let tmp = stateFromStores;

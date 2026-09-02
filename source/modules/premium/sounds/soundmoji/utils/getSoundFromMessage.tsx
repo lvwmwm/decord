@@ -1,7 +1,7 @@
 // Module ID: 4972
 // Function ID: 4973
 // Name: getSoundFromSounds
-// Dependencies: [4735, 4967, 4973, 694, 2]
+// Dependencies: [4735, 4967, 4973, 691, 2]
 // Exports: default
 
 // Module 4972 (getSoundFromSounds)
@@ -41,7 +41,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
           type = messageReference.type;
         }
       }
-      if (type === _require(694).MessageReferenceTypes.FORWARD) {
+      if (type === _require(691).MessageReferenceTypes.FORWARD) {
         let messageSnapshots;
         if (message != null) {
           messageSnapshots = message.messageSnapshots;

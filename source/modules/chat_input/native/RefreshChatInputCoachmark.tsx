@@ -1,14 +1,14 @@
-// Module ID: 11557
-// Function ID: 11558
+// Module ID: 11780
+// Function ID: 11781
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 1384, 6251, 1373, 1236, 4204, 8973, 2]
+// Dependencies: [32, 19, 1383, 6260, 1372, 1233, 4204, 8987, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 11557 (RefreshChatInputCoachmark)
-import useCoachmark from "useCoachmark" /* 8973 */;
+// Module 11780 (RefreshChatInputCoachmark)
+import useCoachmark from "useCoachmark" /* 8987 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
@@ -24,21 +24,21 @@ export const useRefreshChatInputCoachmark = function useRefreshChatInputCoachmar
   if (disabled.disabled) {
     let items = [];
   } else {
-    items = [tmp(1373).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
+    items = [tmp(1372).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK];
   }
-  const tmp3 = callback(_require(6251).useSelectedDismissibleContent(items), 2);
+  const tmp3 = callback(_require(6260).useSelectedDismissibleContent(items), 2);
   _require = tmp4;
-  const tmp5 = tmp3[0] === _require(1373).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
+  const tmp5 = tmp3[0] === _require(1372).DismissibleContent.MOBILE_REFRESH_CHAT_INPUT_PLUS_BUTTON_COACHMARK;
   dependencyMap = tmp5;
   const items1 = [tmp5, tmp3[1]];
   let memo = null;
   if (tmp5) {
     memo = React.useMemo(() => {
       let obj = { title: null, description: null, position: "top", offsetY: 4, visible: null, onDismiss: null, graphic: null };
-      const intl = callback(1236).intl;
-      obj[0] = intl.string(callback(1236).t.eqI1WA);
-      const intl2 = callback(1236).intl;
-      obj[1] = intl2.string(callback(1236).t.nxO3NK);
+      const intl = callback(1233).intl;
+      obj[0] = intl.string(callback(1233).t.eqI1WA);
+      const intl2 = callback(1233).intl;
+      obj[1] = intl2.string(callback(1233).t.nxO3NK);
       obj[4] = dependencyMap;
       obj[5] = function onDismiss() {
         callback(closure_1_4.USER_DISMISS);

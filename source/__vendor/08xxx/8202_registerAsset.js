@@ -1,10 +1,10 @@
 // Module ID: 8202
 // Function ID: 8203
 // Name: registerAsset
-// Dependencies: [1241]
+// Dependencies: [1240]
 
 // Module 8202 (registerAsset)
-import registerAsset from "registerAsset" /* 1241 */;
+import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MangaIcon", width: 60, height: 60, scales: [2, 3], hash: "c95dda79dd2256b3ff93ba5baa549fb1", name: "MangaIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/GalaxyIcon", width: 60, height: 60, scales: [2, 3], hash: "2bb189919203a7299ceda12e2b9f8582", name: "GalaxyIcon", type: "png" });

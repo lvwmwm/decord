@@ -1,15 +1,15 @@
-// Module ID: 16002
-// Function ID: 16003
+// Module ID: 16233
+// Function ID: 16234
 // Name: _fetchNotificationCenterItems
-// Dependencies: [5, 7384, 676, 709, 4713, 503, 1400, 7386, 530, 4166, 2]
+// Dependencies: [5, 7393, 673, 706, 4713, 500, 1399, 7395, 527, 4166, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 16002 (_fetchNotificationCenterItems)
-import dispatcherDefault from "dispatcher" /* 709 */;
-import getRelativeTimestamp from "getRelativeTimestamp" /* 7386 */;
+// Module 16233 (_fetchNotificationCenterItems)
+import dispatcherDefault from "dispatcher" /* 706 */;
+import getRelativeTimestamp from "getRelativeTimestamp" /* 7395 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_validate" /* 7384 */;
-import { Endpoints } from "ME" /* 676 */;
+import closure_4 from "_validate" /* 7393 */;
+import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
 function _fetchNotificationCenterItems() {
@@ -78,7 +78,7 @@ function _fetchNotificationCenterItems() {
               const obj3 = { url: null, trackedActionData: null, query: null, rejectWithError: true };
               obj3[0] = c5.NOTIF_CENTER_ITEMS();
               const obj4 = { event: null, properties: null };
-              obj4[0] = lib(503).NetworkActionNames.NOTIFICATION_CENTER_PAGE_FETCH;
+              obj4[0] = lib(500).NetworkActionNames.NOTIFICATION_CENTER_PAGE_FETCH;
               obj4[1] = function properties(body) {
                 body = body.body;
                 let items;
@@ -108,7 +108,7 @@ function _fetchNotificationCenterItems() {
             if (callback != null) {
               callback();
             }
-            obj6 = callback(709);
+            obj6 = callback(706);
             c6 = 5;
             c7 = 1;
             const obj7 = { value: null, done: false };
@@ -129,7 +129,7 @@ function _fetchNotificationCenterItems() {
               if (callback != null) {
                 callback();
               }
-              obj2 = callback(709);
+              obj2 = callback(706);
               const obj9 = { type: "LOAD_NOTIFICATION_CENTER_ITEMS_SUCCESS", items: null, cursor: null, hasMore: null };
               obj9[1] = closure_3.body.items;
               obj9[2] = closure_3.body.cursor;

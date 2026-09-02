@@ -1,19 +1,19 @@
-// Module ID: 11418
-// Function ID: 11419
+// Module ID: 11641
+// Function ID: 11642
 // Name: closeModal
-// Dependencies: [5, 19, 11419, 21, 11417, 503, 1236, 5495, 11420, 7703, 9728, 4193, 6008, 2]
+// Dependencies: [5, 19, 11642, 21, 11640, 500, 1233, 5503, 11643, 7712, 9750, 4193, 6016, 2]
 // Exports: default
 
-// Module 11418 (closeModal)
-import _modDef11417 from "module_11417" /* 11417 */;
+// Module 11641 (closeModal)
+import _modDef11640 from "module_11640" /* 11640 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import TransferOwnershipModalScenes from "TransferOwnershipModalScenes" /* 11419 */;
+import TransferOwnershipModalScenes from "TransferOwnershipModalScenes" /* 11642 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function closeModal() {
-  _modDef11417.close();
+  _modDef11640.close();
 }
 ({ TransferOwnershipModalScenes: c5, TransferOwnershipVerificationTypes: closure_6 } = TransferOwnershipModalScenes);
 let result = require("set").fileFinishedImporting("modules/guild_settings/safety/native/TransferOwnershipModal.tsx");
@@ -66,10 +66,10 @@ export default function TransferOwnershipModal(guild) {
         return applyArgumentsResult;
       };
       obj[1] = function onSuccess() {
-        callback2(11417).close();
-        const obj = callback2(11417);
-        callback2(9728).close();
-        const obj2 = callback2(9728);
+        callback2(11640).close();
+        const obj = callback2(11640);
+        callback2(9750).close();
+        const obj2 = callback2(9750);
         const result = callback(4193).showTransferOwnershipSuccess();
       };
       obj[2] = closure_1_3(function*() {
@@ -134,7 +134,7 @@ export default function TransferOwnershipModal(guild) {
     return obj;
   }, items);
   let obj = { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP, headerBackTitle: null };
-  let intl = guild(1236).intl;
-  obj[2] = intl.string(guild(1236).t["13/7kX"]);
-  return jsx(guild(6008).Navigator, { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP, headerBackTitle: null });
+  let intl = guild(1233).intl;
+  obj[2] = intl.string(guild(1233).t["13/7kX"]);
+  return jsx(guild(6016).Navigator, { screens: memo, initialRouteName: constants.TRANFSER_OWNERSHIP, headerBackTitle: null });
 };

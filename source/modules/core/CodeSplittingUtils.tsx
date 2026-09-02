@@ -1,10 +1,10 @@
 // Module ID: 4157
 // Function ID: 4158
-// Dependencies: [4158, 1473, 2]
+// Dependencies: [4158, 1472, 2]
 
 // Module 4157
 import set from "set" /* 2 */;
-import awaitOnlineDefault from "awaitOnline" /* 1473 */;
+import awaitOnlineDefault from "awaitOnline" /* 1472 */;
 import loaderMaker from "loaderMaker" /* 4158 */;
 
 loaderMaker.setAwaitOnline(awaitOnlineDefault.awaitOnline);

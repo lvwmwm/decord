@@ -1,28 +1,28 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 14335
+// Function ID: 14336
 // Name: loadServer
-// Dependencies: [32, 9464, 7448, 1387, 1992, 1909, 4529, 4569, 4554, 4130, 1981, 1922, 4497, 4380, 676, 4506, 9465, 4542, 500, 709, 698, 14113, 589, 1471, 9508, 9517, 14118, 9509, 7469, 2]
+// Dependencies: [32, 9477, 7458, 1386, 1991, 1908, 4529, 4569, 4554, 4130, 1980, 1921, 4497, 4380, 673, 4506, 9478, 4542, 1234, 706, 695, 14336, 586, 1470, 9521, 9530, 14341, 9522, 7479, 2]
 
-// Module 14112 (loadServer)
-import set2 from "set" /* 500 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 14335 (loadServer)
+import dispatcherDefault from "dispatcher" /* 706 */;
+import set2 from "set" /* 1234 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "map" /* 9464 */;
-import closure_5 from "initializeState" /* 7448 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "trackCommunicationDisabled" /* 1992 */;
-import closure_8 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "map" /* 9477 */;
+import closure_5 from "initializeState" /* 7458 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_7 from "trackCommunicationDisabled" /* 1991 */;
+import closure_8 from "createGuildRecordFromRust" /* 1908 */;
 import closure_9 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_10 from "sortActivity" /* 4569 */;
 import closure_11 from "createRTCConnection" /* 4554 */;
 import closure_12 from "markAllUserIdListsStale" /* 4130 */;
-import closure_13 from "handleConnectionOpen" /* 1981 */;
-import closure_14 from "mergeGuildAvatar" /* 1922 */;
+import closure_13 from "handleConnectionOpen" /* 1980 */;
+import closure_14 from "mergeGuildAvatar" /* 1921 */;
 import closure_15 from "updateVoiceState" /* 4497 */;
 import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4380 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import { ActivityLayoutMode } from "items3" /* 4506 */;
-import { FrameLayoutModes } from "FrameLayoutModes" /* 9465 */;
+import { FrameLayoutModes } from "FrameLayoutModes" /* 9478 */;
 import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
 
 require = arg1;
@@ -551,20 +551,20 @@ prototype["init"] = function init() {
   const self = this;
   this.rpcServer.getCurrentUser = () => currentUser.getCurrentUser();
   this.rpcServer.onConnect = (app_id) => {
-    let obj = callback(709);
+    let obj = callback(706);
     obj = { type: "RPC_APP_CONNECTED", socketId: app_id.id, application: app_id.application, source: app_id.source };
     obj.dispatch(obj);
     obj = { app_id: app_id.application.id, transport: app_id.transport };
-    callback(698).track(constants.AUTHORIZED_APP_CONNECTED, obj);
+    callback(695).track(constants.AUTHORIZED_APP_CONNECTED, obj);
   };
   this.rpcServer.onDisconnect = (id, reason) => {
-    let obj = callback(14113);
+    let obj = callback(14336);
     obj.releaseSocket(id.id);
     obj = { type: "RPC_APP_DISCONNECTED", socketId: id.id, application: id.application, source: id.source, reason };
-    callback(709).dispatch(obj);
+    callback(706).dispatch(obj);
   };
   const items = [closure_6, closure_7, closure_10, closure_15, closure_9, closure_11];
-  const batchedStoreListener = new self(589).BatchedStoreListener(items.concat(this.stores), () => {
+  const batchedStoreListener = new self(586).BatchedStoreListener(items.concat(this.stores), () => {
     const result = closure_1_1(closure_1_2[21]).reconcileParticipants();
     const rpcServer = self.rpcServer;
     rpcServer.updateSubscriptions();

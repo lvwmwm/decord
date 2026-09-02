@@ -1,28 +1,28 @@
-// Module ID: 16681
-// Function ID: 16682
+// Module ID: 16916
+// Function ID: 16917
 // Name: MusicMuteButton
-// Dependencies: [32, 19, 17, 4494, 4391, 9990, 1218, 1387, 4529, 4130, 5363, 1922, 11840, 11843, 11838, 4499, 505, 21, 4478, 712, 4217, 4927, 7796, 4917, 6006, 11839, 10116, 589, 9992, 16616, 1236, 10001, 9252, 10002, 4915, 16618, 16682, 4674, 4197, 11844, 4479, 16683, 16638, 16684, 5501, 16685, 9781, 9859, 9820, 4204, 16116, 16686, 8936, 16688, 9873, 692, 16699, 10114, 16709, 16710, 2]
+// Dependencies: [32, 19, 17, 4494, 4391, 10012, 1215, 1386, 4529, 4130, 5371, 1921, 12063, 12066, 12061, 4499, 502, 21, 4478, 709, 4217, 4927, 7805, 4917, 6014, 12062, 10138, 586, 10014, 16851, 1233, 10023, 9265, 10024, 4915, 16853, 16917, 4674, 4197, 12067, 4479, 16918, 16873, 16919, 5509, 16920, 9803, 9881, 9842, 4204, 16347, 16921, 8950, 16923, 9895, 689, 16934, 10136, 16944, 16945, 2]
 
-// Module 16681 (MusicMuteButton)
-import ThemesDefault from "Themes" /* 712 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10116 */;
+// Module 16916 (MusicMuteButton)
+import ThemesDefault from "Themes" /* 709 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10138 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "getParticipants" /* 4494 */;
 import closure_7 from "getHash" /* 4391 */;
-import closure_8 from "initialize" /* 9990 */;
-import closure_9 from "fetchFingerprint" /* 1218 */;
-import closure_10 from "ensureGuildLoaded" /* 1387 */;
+import closure_8 from "initialize" /* 10012 */;
+import closure_9 from "fetchFingerprint" /* 1215 */;
+import closure_10 from "ensureGuildLoaded" /* 1386 */;
 import closure_11 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_12 from "markAllUserIdListsStale" /* 4130 */;
-import closure_13 from "anyoneHasFlagInContext" /* 5363 */;
-import closure_14 from "mergeGuildAvatar" /* 1922 */;
-import VoicePanelModes from "VoicePanelModes" /* 11840 */;
-import { EDGE_GUTTER } from "CARD_SIZE" /* 11843 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11838 */;
+import closure_13 from "anyoneHasFlagInContext" /* 5371 */;
+import closure_14 from "mergeGuildAvatar" /* 1921 */;
+import VoicePanelModes from "VoicePanelModes" /* 12063 */;
+import { EDGE_GUTTER } from "CARD_SIZE" /* 12066 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12061 */;
 import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
-import { ThemeTypes } from "sum" /* 505 */;
+import { ThemeTypes } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -34,16 +34,16 @@ function MusicMuteButton(channelId) {
   if (tmp3 != null) {
     const speaker = tmp3.speaker;
   }
-  let obj = stateFromStores(589);
+  let obj = stateFromStores(586);
   const items = [closure_8];
   stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
   let tmp6 = null;
   if (obj2.useShowStageMusicMuteButton(channelId)) {
     tmp6 = null;
     if (speaker) {
-      const intl = tmp4(1236).intl;
+      const intl = tmp4(1233).intl;
       const string = intl.string;
-      const t = tmp4(1236).t;
+      const t = tmp4(1233).t;
       if (stateFromStores) {
         let stringResult = string(t.ScHlfl);
       } else {
@@ -51,13 +51,13 @@ function MusicMuteButton(channelId) {
       }
       obj = { accessibilityLabel: null, icon: null, onPress: null };
       obj[0] = stringResult;
-      obj[1] = tmp(stateFromStores ? 10001 : 9252);
+      obj[1] = tmp(stateFromStores ? 10023 : 9265);
       obj[2] = function onPress() {
         return stateFromStores(closure_1_2[33]).updateStageMusicMuted(!stateFromStores);
       };
-      closure_23(tmp(16616), obj);
+      closure_23(tmp(16851), obj);
       const tmp7 = closure_23;
-      const tmpResult = tmp(16616);
+      const tmpResult = tmp(16851);
     }
   }
   return tmp6;

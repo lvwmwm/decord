@@ -1,11 +1,11 @@
-// Module ID: 10294
-// Function ID: 10295
+// Module ID: 10316
+// Function ID: 10317
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4478, 712, 4474, 10270, 5599, 4445, 7694, 5594, 12, 5454, 7775, 10295, 5622, 5621, 1236, 6221, 7778, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 4474, 10292, 5607, 4445, 7703, 5602, 12, 5462, 7784, 10317, 5630, 5629, 1233, 6230, 7787, 2]
 // Exports: default
 
-// Module 10294 (BugReporterFeatureActionSheet)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 10316 (BugReporterFeatureActionSheet)
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
@@ -35,9 +35,9 @@ let closure_10 = importAllResult.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  let obj = item(10270);
+  let obj = item(10292);
   const featureId = obj.getFeatureId(item);
-  const featureId1 = item(10270).getFeatureId(feature);
+  const featureId1 = item(10292).getFeatureId(feature);
   obj = {
     start,
     end,
@@ -46,10 +46,10 @@ let closure_10 = importAllResult.memo((item) => {
       setFeature(item);
       setFeature(closure_1_2[9]).hideActionSheet();
     },
-    trailing: callback(item(7694).FormRadio, obj)
+    trailing: callback(item(7703).FormRadio, obj)
   };
   obj = { selected: featureId === featureId1 };
-  return callback(item(5599).TableRow, obj);
+  return callback(item(5607).TableRow, obj);
 });
 const obj2 = { backgroundColor: ThemesDefault.colors.BACKGROUND_BASE_LOW, justifyContent: "center" };
 const result = require("set").fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

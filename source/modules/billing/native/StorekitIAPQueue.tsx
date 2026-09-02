@@ -1,10 +1,10 @@
-// Module ID: 10814
-// Function ID: 10815
+// Module ID: 11034
+// Function ID: 11035
 // Name: productSK2ToIAPProduct
-// Dependencies: [5, 17, 4174, 6082, 10795, 2]
+// Dependencies: [5, 17, 4174, 6090, 11015, 2]
 
-// Module 10814 (productSK2ToIAPProduct)
-import CurrencyCodes from "CurrencyCodes" /* 6082 */;
+// Module 11034 (productSK2ToIAPProduct)
+import CurrencyCodes from "CurrencyCodes" /* 6090 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME" /* 4174 */;
 import set from "set" /* 2 */;
@@ -120,7 +120,7 @@ prototype["fetchProducts"] = function fetchProducts(arg0) {
     _queue.push(closure_1_2(function*() {
       dependencyMap = tmp3;
       c3 = 1;
-      obj1 = callback(10795);
+      obj1 = callback(11015);
       obj1 = { skus: null };
       obj1[0] = closure_1_0;
       const products = obj1.getProducts(obj1);

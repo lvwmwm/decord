@@ -1,12 +1,12 @@
-// Module ID: 14672
-// Function ID: 14673
+// Module ID: 14898
+// Function ID: 14899
 // Name: _search
-// Dependencies: [5, 676, 530, 585, 6183, 2]
+// Dependencies: [5, 673, 527, 582, 6192, 2]
 // Exports: search
 
-// Module 14672 (_search)
+// Module 14898 (_search)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _search() {
@@ -55,7 +55,7 @@ function _search() {
               aPIError = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

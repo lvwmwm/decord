@@ -1,18 +1,18 @@
-// Module ID: 13555
-// Function ID: 13556
+// Module ID: 13778
+// Function ID: 13779
 // Name: normalizeKey
-// Dependencies: [32, 5, 706, 7249, 3, 500, 13554, 595, 2]
+// Dependencies: [32, 5, 703, 7258, 3, 1234, 13777, 592, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 13555 (normalizeKey)
+// Module 13778 (normalizeKey)
 import timestampDefault from "timestamp" /* 3 */;
-import Storage2 from "Storage" /* 595 */;
-import keyCodeDefault from "keyCode" /* 13554 */;
+import Storage2 from "Storage" /* 592 */;
+import keyCodeDefault from "keyCode" /* 13777 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "refreshSourceMapCookie" /* 706 */;
-import items from "items" /* 7249 */;
-import set from "set" /* 500 */;
+import closure_4 from "refreshSourceMapCookie" /* 703 */;
+import items from "items" /* 7258 */;
+import set from "set" /* 1234 */;
 
 require = arg1;
 function normalizeKey(toLocaleLowerCase) {

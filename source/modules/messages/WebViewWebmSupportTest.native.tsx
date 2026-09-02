@@ -1,12 +1,12 @@
 // Module ID: 4672
 // Function ID: 4673
 // Name: isIOSWithWebM
-// Dependencies: [500, 4457, 2]
+// Dependencies: [1234, 4457, 2]
 // Exports: isIOSWithWebM
 
 // Module 4672 (isIOSWithWebM)
 import set from "set" /* 2 */;
-import set2 from "set" /* 500 */;
+import set2 from "set" /* 1234 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 
 const ARM64_ = "ARM64_";

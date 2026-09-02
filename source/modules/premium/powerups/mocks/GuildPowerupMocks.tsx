@@ -1,9 +1,9 @@
-// Module ID: 12053
-// Function ID: 12054
+// Module ID: 12277
+// Function ID: 12278
 // Name: items
 // Dependencies: [4365, 2]
 
-// Module 12053 (items)
+// Module 12277 (items)
 import set from "set" /* 2 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
 

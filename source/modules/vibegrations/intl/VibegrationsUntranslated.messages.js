@@ -1,21 +1,21 @@
-// Module ID: 3501
-// Function ID: 3502
+// Module ID: 3500
+// Function ID: 3501
 // Name: messagesProxy
-// Dependencies: [1239, 3502, 1274, 2]
+// Dependencies: [1238, 3501, 1273, 2]
 
-// Module 3501 (messagesProxy)
+// Module 3500 (messagesProxy)
 import set from "set" /* 2 */;
-import loadJsonAsset from "loadJsonAsset" /* 1239 */;
-import registerAsset from "registerAsset" /* 3502 */;
-import module_1274 from "module_1274" /* 1274 */;
+import loadJsonAsset from "loadJsonAsset" /* 1238 */;
+import registerAsset from "registerAsset" /* 3501 */;
+import module_1273 from "module_1273" /* 1273 */;
 
-const loader = module_1274.createLoader({
+const loader = module_1273.createLoader({
   () => {
     const jsonAsset = loadJsonAsset.loadJsonAsset(registerAsset);
     return jsonAsset.then((arg0) => ({ default: arg0 }));
   }
 }, "en-US");
-const messagesProxy = module_1274.makeMessagesProxy(loader);
+const messagesProxy = module_1273.makeMessagesProxy(loader);
 const result = set.fileFinishedImporting("modules/vibegrations/intl/VibegrationsUntranslated.messages.js");
 
 export default messagesProxy;

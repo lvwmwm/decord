@@ -1,26 +1,26 @@
-// Module ID: 8158
-// Function ID: 8159
+// Module ID: 8166
+// Function ID: 8167
 // Name: get untranslatedDescription
-// Dependencies: [4130, 1922, 4952, 1955, 7268, 1236, 4674, 4857, 4491, 7201, 2]
+// Dependencies: [4130, 1921, 4952, 1954, 7277, 1233, 4674, 4857, 4491, 7210, 2]
 
-// Module 8158 (get untranslatedDescription)
+// Module 8166 (get untranslatedDescription)
 import setDefault from "set" /* 4857 */;
 import closure_3 from "markAllUserIdListsStale" /* 4130 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
 const require = arg1;
 let obj = { id: "-15", untranslatedName: "leave", displayName: "leave", type: require("PermissionOverwriteType").ApplicationCommandType.CHAT, inputType: require("ApplicationCommandSectionType").ApplicationCommandInputType.BUILT_IN, applicationId: require("TRUE_OPTION_NAME").BuiltInSectionId.BUILT_IN };
 Object.defineProperty(obj, "untranslatedDescription", {
   get: () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["26C4oi"]);
+    const intl = require(1233) /* getSystemLocale */.intl;
+    return intl.string(require(1233) /* getSystemLocale */.t["26C4oi"]);
   },
   set: undefined
 });
 Object.defineProperty(obj, "displayDescription", {
   get: () => {
-    const intl = require(1236) /* getSystemLocale */.intl;
-    return intl.string(require(1236) /* getSystemLocale */.t["26C4oi"]);
+    const intl = require(1233) /* getSystemLocale */.intl;
+    return intl.string(require(1233) /* getSystemLocale */.t["26C4oi"]);
   },
   set: undefined
 });
@@ -32,33 +32,33 @@ obj.execute = function execute(arg0, channel) {
   channel = channel.channel;
   if (null != channel) {
     const channelName = channel(4674).computeChannelName(channel, closure_4, closure_3);
-    const intl5 = channel(1236).intl;
+    const intl5 = channel(1233).intl;
     let obj = { name: null };
     obj[0] = channelName;
     const obj5 = channel(4674);
-    const intl6 = channel(1236).intl;
+    const intl6 = channel(1233).intl;
     obj = { name: null };
     obj[0] = channelName;
-    let formatResult = intl6.format(channel(1236).t.SSIVOu, obj);
-    let formatToPlainStringResult1 = intl5.formatToPlainString(channel(1236).t.hJ5Ap4, obj);
+    let formatResult = intl6.format(channel(1233).t.SSIVOu, obj);
+    let formatToPlainStringResult1 = intl5.formatToPlainString(channel(1233).t.hJ5Ap4, obj);
     if (channel.isManaged()) {
-      let intl = tmp5(1236).intl;
+      let intl = tmp5(1233).intl;
       obj = { name: null };
       obj[0] = channelName;
-      formatToPlainStringResult1 = intl.formatToPlainString(tmp5(1236).t.hVGjEW, obj);
-      const intl2 = tmp5(1236).intl;
+      formatToPlainStringResult1 = intl.formatToPlainString(tmp5(1233).t.hVGjEW, obj);
+      const intl2 = tmp5(1233).intl;
       obj1 = { name: null };
       obj1[0] = channelName;
-      formatResult = intl2.format(tmp5(1236).t.IK1Qvs, obj1);
+      formatResult = intl2.format(tmp5(1233).t.IK1Qvs, obj1);
     }
     let obj2 = setDefault;
     obj2 = { title: null, body: null, confirmText: null, cancelText: null, onConfirm: null };
     obj2[0] = formatToPlainStringResult1;
     obj2[1] = formatResult;
-    const intl3 = tmp5(1236).intl;
-    obj2[2] = intl3.string(channel(1236).t["26C4oi"]);
-    const intl4 = tmp5(1236).intl;
-    obj2[3] = intl4.string(channel(1236).t["ETE/oC"]);
+    const intl3 = tmp5(1233).intl;
+    obj2[2] = intl3.string(channel(1233).t["26C4oi"]);
+    const intl4 = tmp5(1233).intl;
+    obj2[3] = intl4.string(channel(1233).t["ETE/oC"]);
     obj2[4] = function onConfirm() {
       try {
         closure_1_1(closure_1_2[8]).closePrivateChannel(channel.id);
@@ -69,7 +69,7 @@ obj.execute = function execute(arg0, channel) {
       }
     };
     obj2.show(obj2);
-    const formatToPlainStringResult = intl5.formatToPlainString(channel(1236).t.hJ5Ap4, obj);
+    const formatToPlainStringResult = intl5.formatToPlainString(channel(1233).t.hJ5Ap4, obj);
   }
 };
 const items = [obj];

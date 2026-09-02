@@ -1,12 +1,12 @@
-// Module ID: 8690
-// Function ID: 8691
+// Module ID: 8705
+// Function ID: 8706
 // Name: SafetyHubView
-// Dependencies: [676, 503, 2]
+// Dependencies: [673, 500, 2]
 
-// Module 8690 (SafetyHubView)
+// Module 8705 (SafetyHubView)
 import set from "set" /* 2 */;
-import encodeProperties from "encodeProperties" /* 503 */;
-import ME from "ME" /* 676 */;
+import encodeProperties from "encodeProperties" /* 500 */;
+import ME from "ME" /* 673 */;
 
 const AnalyticsSections = ME.AnalyticsSections;
 let obj = { SETTINGS: "SETTINGS", ACCOUNT_STANDING: "ACCOUNT_STANDING", GUILD_SETTINGS: "GUILD_SETTINGS", ENCRYPTION: "ENCRYPTION", CONTENT_AND_SOCIAL: "CONTENT_AND_SOCIAL", DATA_PRIVACY: "DATA_PRIVACY" };

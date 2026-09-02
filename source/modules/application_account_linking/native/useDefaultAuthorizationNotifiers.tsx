@@ -1,13 +1,13 @@
-// Module ID: 15851
-// Function ID: 15852
+// Module ID: 16082
+// Function ID: 16083
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 7157, 676, 589, 4443, 8576, 4194, 1236, 3049, 2]
+// Dependencies: [19, 7166, 673, 586, 4443, 8591, 4194, 1233, 3048, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 15851 (useDefaultAuthorizationNotifiers)
+// Module 16082 (useDefaultAuthorizationNotifiers)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "getState" /* 7157 */;
-import { AppStates } from "ME" /* 676 */;
+import closure_4 from "getState" /* 7166 */;
+import { AppStates } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/application_account_linking/native/useDefaultAuthorizationNotifiers.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 11258
-// Function ID: 11259
+// Module ID: 11481
+// Function ID: 11482
 // Name: handleChannelDelete
-// Dependencies: [1996, 1387, 1992, 1909, 4735, 4130, 1922, 4737, 12, 7345, 589, 709, 2]
+// Dependencies: [1995, 1386, 1991, 1908, 4735, 4130, 1921, 4737, 12, 7354, 586, 706, 2]
 
-// Module 11258 (handleChannelDelete)
+// Module 11481 (handleChannelDelete)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "_getSystemLocale" /* 1996 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_3 from "_getSystemLocale" /* 1995 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "reinjectEphemerals" /* 4735 */;
 import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
 
 const require = arg1;
 function handleChannelDelete(arg0) {
@@ -190,7 +190,7 @@ obj = {
       } else {
         const items = tmp.items;
         tmp.items = items.slice();
-        tmp.items[findIndexResult].message = messageId(7345).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
+        tmp.items[findIndexResult].message = messageId(7354).handleExplicitMediaScanTimeoutForMessage(tmp.items[findIndexResult].message);
       }
       const obj2 = applyDefault;
     }

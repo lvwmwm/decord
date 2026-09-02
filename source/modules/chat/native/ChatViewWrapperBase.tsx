@@ -1,14 +1,14 @@
-// Module ID: 10998
-// Function ID: 10999
+// Module ID: 11218
+// Function ID: 11219
 // Name: ChatViewWrapperBase
-// Dependencies: [19, 21, 10996, 5940, 10997, 2]
+// Dependencies: [19, 21, 11216, 5948, 11217, 2]
 // Exports: default
 
-// Module 10998 (ChatViewWrapperBase)
+// Module 11218 (ChatViewWrapperBase)
 import noopAll from "noop" /* 19 */;
-import Layer from "Layer" /* 5940 */;
-import useChatViewPointerEventsAndroidDefault from "useChatViewPointerEventsAndroid" /* 10996 */;
-import StickyWrapper from "StickyWrapper" /* 10997 */;
+import Layer from "Layer" /* 5948 */;
+import useChatViewPointerEventsAndroidDefault from "useChatViewPointerEventsAndroid" /* 11216 */;
+import StickyWrapper from "StickyWrapper" /* 11217 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

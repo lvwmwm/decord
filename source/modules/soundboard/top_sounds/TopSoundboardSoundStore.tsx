@@ -1,11 +1,11 @@
 // Module ID: 4966
 // Function ID: 4967
 // Name: initialize
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
 // Module 4966 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let obj = { topSoundboardSoundsByGuildId: {} };
 let closure_2 = {};

@@ -1,12 +1,12 @@
-// Module ID: 5461
-// Function ID: 5462
+// Module ID: 5469
+// Function ID: 5470
 // Name: createTextStyle
-// Dependencies: [676, 2]
+// Dependencies: [673, 2]
 // Exports: default
 
-// Module 5461 (createTextStyle)
+// Module 5469 (createTextStyle)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const Fonts = ME.Fonts;
 let closure_1 = { 10: 10, 11: 11, 12: 12, 13: 13, 14: 14, 16: 16, 18: 17, 20: 20, 24: 25, 32: 34 };

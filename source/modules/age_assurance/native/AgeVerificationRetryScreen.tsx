@@ -1,16 +1,16 @@
-// Module ID: 8730
-// Function ID: 8731
+// Module ID: 8745
+// Function ID: 8746
 // Name: GetStartedScreen
-// Dependencies: [5, 19, 17, 676, 8690, 21, 4478, 712, 4733, 8684, 8726, 1236, 8682, 500, 6256, 4474, 5992, 5599, 1995, 2]
+// Dependencies: [5, 19, 17, 673, 8705, 21, 4478, 709, 4733, 8699, 8741, 1233, 8697, 1234, 6265, 4474, 6000, 5607, 1994, 2]
 // Exports: default
 
-// Module 8730 (GetStartedScreen)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 8745 (GetStartedScreen)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
-import { SafetyHubLinks } from "SafetyHubView" /* 8690 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
+import { SafetyHubLinks } from "SafetyHubView" /* 8705 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

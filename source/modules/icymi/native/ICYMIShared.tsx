@@ -1,28 +1,28 @@
-// Module ID: 16079
-// Function ID: 16080
+// Module ID: 16310
+// Function ID: 16311
 // Name: Separator
-// Dependencies: [19, 17, 6151, 1387, 1992, 4121, 1922, 676, 21, 8619, 9022, 5036, 10213, 16008, 5478, 6091, 6046, 7201, 4409, 16040, 500, 712, 1297, 8098, 6004, 4935, 5068, 4474, 7386, 16080, 8798, 589, 4673, 8622, 8896, 5043, 8621, 15677, 9755, 1236, 16041, 4413, 4197, 4326, 4217, 4479, 4491, 5020, 6003, 4468, 2]
+// Dependencies: [19, 17, 6159, 1386, 1991, 4120, 1921, 673, 21, 8634, 9036, 5040, 10235, 16239, 5486, 6099, 6054, 7210, 4409, 16271, 1234, 709, 1296, 8106, 6012, 4935, 5076, 4474, 7395, 16311, 8813, 586, 4673, 8637, 8911, 5047, 8636, 15908, 9777, 1233, 16272, 4413, 4197, 4326, 4217, 4479, 4491, 5024, 6011, 4468, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 16079 (Separator)
-import set from "set" /* 500 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
-import GuildIconSizes from "GuildIconSizes" /* 6004 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
-import _safeTransitionToDefault from "_safeTransitionTo" /* 6091 */;
-import SolidCutout from "SolidCutout" /* 8098 */;
-import SolidCutoutDefault from "SolidCutout" /* 8098 */;
+// Module 16310 (Separator)
+import ThemesDefault from "Themes" /* 709 */;
+import set from "set" /* 1234 */;
+import Button from "Button" /* 1296 */;
+import GuildIconSizes from "GuildIconSizes" /* 6012 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
+import _safeTransitionToDefault from "_safeTransitionTo" /* 6099 */;
+import SolidCutout from "SolidCutout" /* 8106 */;
+import SolidCutoutDefault from "SolidCutout" /* 8106 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateState" /* 6151 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "trackCommunicationDisabled" /* 1992 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4121 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_5 from "updateState" /* 6159 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_7 from "trackCommunicationDisabled" /* 1991 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16040 */;
+import createICYMIStyles from "createICYMIStyles" /* 16271 */;
 
 require = arg1;
 class Separator {
@@ -199,14 +199,14 @@ export const navigateToPost = function navigateToPost(id, id2, id3) {
   }, 1500);
   _safeTransitionToDefault(closure_17.CHANNEL(id2, id, id3), { openChannel: true, navigationReplace: false });
   if (null != id3) {
-    _require(6046).runAfterInteractions(() => {
+    _require(6054).runAfterInteractions(() => {
       let obj = id3(closure_1_2[17]);
       obj = { channelId: id, limit: closure_1_14, jump: null };
       obj = { messageId: id3, flash: true, jumpType: id(closure_1_2[18]).JumpType.ANIMATED };
       obj[2] = obj;
       const messages = obj.fetchMessages(obj);
     }, 150);
-    let obj = _require(6046);
+    let obj = _require(6054);
   }
 };
 export { Separator };
@@ -486,9 +486,9 @@ export const SimplePost = function SimplePost(arg0) {
   let sharedValue;
   const tmp = callback3();
   let obj = highlight(4197);
-  token = obj.useToken(token(712).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4413)());
+  token = obj.useToken(token(709).colors.MESSAGE_HIGHLIGHT_BACKGROUND_DEFAULT, token(4413)());
   obj1 = highlight(4326);
-  const hexWithOpacityResult = obj1.hexWithOpacity(token(712).unsafe_rawColors.BRAND_360, 0.25);
+  const hexWithOpacityResult = obj1.hexWithOpacity(token(709).unsafe_rawColors.BRAND_360, 0.25);
   dependencyMap = hexWithOpacityResult;
   let obj2 = highlight(4217);
   sharedValue = obj2.useSharedValue(0);

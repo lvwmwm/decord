@@ -1,10 +1,10 @@
-// Module ID: 11875
-// Function ID: 11876
-// Dependencies: [4723, 11876, 2009, 2]
+// Module ID: 12098
+// Function ID: 12099
+// Dependencies: [4723, 12099, 2008, 2]
 
-// Module 11875
+// Module 12098
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import _modDef4723 from "module_4723" /* 4723 */;
 
 const GUILD_DIRECTORY_ADD_MODAL_KEY = "GUILD_DIRECTORY_ADD_MODAL_KEY";
@@ -12,7 +12,7 @@ const result = set.fileFinishedImporting("modules/directory_channels/native/comp
 
 export default {
   open(closure_0) {
-    _modDef4723.pushLazy(asyncRequireImpl(11876, dependencyMap.paths), closure_0, GUILD_DIRECTORY_ADD_MODAL_KEY);
+    _modDef4723.pushLazy(asyncRequireImpl(12099, dependencyMap.paths), closure_0, GUILD_DIRECTORY_ADD_MODAL_KEY);
   },
   close() {
     _modDef4723.popWithKey(GUILD_DIRECTORY_ADD_MODAL_KEY);

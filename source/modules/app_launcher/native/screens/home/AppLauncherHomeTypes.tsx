@@ -1,9 +1,9 @@
-// Module ID: 11660
-// Function ID: 11661
+// Module ID: 11883
+// Function ID: 11884
 // Name: AppLauncherHomeListItemType
 // Dependencies: [2]
 
-// Module 11660 (AppLauncherHomeListItemType)
+// Module 11883 (AppLauncherHomeListItemType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/app_launcher/native/screens/home/AppLauncherHomeTypes.tsx");

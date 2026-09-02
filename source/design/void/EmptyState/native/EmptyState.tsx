@@ -1,13 +1,13 @@
-// Module ID: 13769
-// Function ID: 13770
+// Module ID: 13992
+// Function ID: 13993
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4478, 712, 1363, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1362, 4474, 2]
 // Exports: default
 
-// Module 13769 (EmptyState)
+// Module 13992 (EmptyState)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import ThemesDefault from "Themes" /* 709 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -37,11 +37,11 @@ export default function EmptyState(Illustration) {
     tmp8Result = null;
     if (tmp6) {
       obj = { resizeMode: "contain", source: null, style: null };
-      obj[1] = tmp2(1363).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
+      obj[1] = tmp2(1362).isThemeLight(tmp5) ? Illustration.lightSource : Illustration.darkSource;
       const items1 = [tmp.emptyImage, Illustration.imageStyle];
       obj[2] = items1;
       tmp8Result = callback(closure_3, obj);
-      const tmp2Result = tmp2(1363);
+      const tmp2Result = tmp2(1362);
       const tmp8 = callback;
       const tmp9 = closure_3;
     }

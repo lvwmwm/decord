@@ -1,14 +1,14 @@
-// Module ID: 14338
-// Function ID: 14339
+// Module ID: 14561
+// Function ID: 14562
 // Name: SafetySettingsNotice
-// Dependencies: [19, 17, 8670, 21, 4478, 712, 14339, 4433, 4474, 1236, 2]
+// Dependencies: [19, 17, 8685, 21, 4478, 709, 14562, 4433, 4474, 1233, 2]
 // Exports: default
 
-// Module 14338 (SafetySettingsNotice)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 14561 (SafetySettingsNotice)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { SafetySettingsNoticeAction as closure_4 } from "SafetyToastType" /* 8670 */;
+import { SafetySettingsNoticeAction as closure_4 } from "SafetyToastType" /* 8685 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,28 +1,28 @@
 // Module ID: 4369
 // Function ID: 4370
 // Name: getGuildTierFromGuild
-// Dependencies: [1909, 1922, 4370, 4145, 676, 1925, 1924, 4153, 4371, 1236, 1471, 4372, 1995, 12, 4075, 4373, 3017, 4139, 1208, 4384, 4403, 2]
+// Dependencies: [1908, 1921, 4370, 4145, 673, 1924, 1923, 4153, 4371, 1233, 1470, 4372, 1994, 12, 4074, 4373, 3016, 4139, 1205, 4384, 4403, 2]
 // Exports: appliedGuildBoostsRequiredForPerks, boostedGuildTierToAnalyticsObjectType, generateBlockGuildSubscriptionPurchasesNode, getAppliedGuildBoostMonths, getAvailableGuildBoostSlots, getAvailableSoundboardSoundCount, getAvailableStickerSlotCount, getGracePeriodEndingDate, getGuildBoostingProgressBarFillFactor, getIncrementalSoundboardSoundCountForTier, getIncrementalStickerCountForTier, getMaxEmojiSlots, getMaxSoundboardSlots, getNextGuildTierFromGuild, getNextPremiumTierForSubscriberCount, getNextTier, getNumberOfAppliedBoostsNeededForTier, getShortenedTierName, getTheoreticalPremiumTierForSubscriberCount, getTierName, getTiers, getTotalSoundboardSoundCountForTier, getTotalStickerCountForTier, getUserLevel, isAppliedGuildBoostActive, isGuildBoostSlotCanceled, isGuildBoostedAtLeast, isInGracePeriod, isTierUnlocked
 
 // Module 4369 (getGuildTierFromGuild)
-import _modDef1208 from "module_1208" /* 1208 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import combinedDefault from "combined" /* 1995 */;
-import messagesProxyDefault from "messagesProxy" /* 3017 */;
-import hooksDefault from "hooks" /* 4075 */;
+import _modDef1205 from "module_1205" /* 1205 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import combinedDefault from "combined" /* 1994 */;
+import messagesProxyDefault from "messagesProxy" /* 3016 */;
+import hooksDefault from "hooks" /* 4074 */;
 import getPremiumPlanItemAll from "getPremiumPlanItem" /* 4139 */;
 import PremiumGuildOverrides from "PremiumGuildOverrides" /* 4371 */;
 import formatSize from "formatSize" /* 4372 */;
 import _fetchAppliedGuildBoostsForGuild from "_fetchAppliedGuildBoostsForGuild" /* 4373 */;
 import useGuildAppliedBoostCount from "useGuildAppliedBoostCount" /* 4384 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import closure_6 from "handleGuildBoostsUpdate" /* 4370 */;
 import closure_7 from "reset" /* 4145 */;
-import ME from "ME" /* 676 */;
-import set from "set" /* 1925 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 673 */;
+import set from "set" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 import { getPremiumGroupProductName as closure_25 } from "SubscriptionStatusTypes" /* 4153 */;
 import importDefaultResult from "apply" /* 12 */;
 
@@ -658,8 +658,8 @@ export const getGracePeriodEndingDate = function getGracePeriodEndingDate(arr) {
       obj[1] = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier1];
       obj[2] = found.length;
       obj[2] = obj;
-      _modDef1208.addBreadcrumb(obj);
-      const obj3 = _modDef1208;
+      _modDef1205.addBreadcrumb(obj);
+      const obj3 = _modDef1205;
       const tmp17 = AppliedGuildBoostsRequiredForBoostedGuildTier;
     }
     const _Math = Math;

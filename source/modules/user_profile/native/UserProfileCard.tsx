@@ -1,17 +1,17 @@
-// Module ID: 6000
-// Function ID: 6001
+// Module ID: 6008
+// Function ID: 6009
 // Name: UserProfileCard
-// Dependencies: [19, 17, 6001, 21, 4478, 712, 5068, 4474, 6003, 2]
+// Dependencies: [19, 17, 6009, 21, 4478, 709, 5076, 4474, 6011, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 6000 (UserProfileCard)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 6008 (UserProfileCard)
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6003 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 6011 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6001 */;
+import ARBITRARY_LARGE_OFFSET from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

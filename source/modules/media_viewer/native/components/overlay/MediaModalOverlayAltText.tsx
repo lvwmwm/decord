@@ -1,9 +1,9 @@
-// Module ID: 12833
-// Function ID: 12834
-// Dependencies: [19, 21, 4478, 712, 1628, 4166, 5068, 11134, 4474, 1236, 2]
+// Module ID: 13054
+// Function ID: 13055
+// Dependencies: [19, 21, 4478, 709, 1627, 4166, 5076, 11355, 4474, 1233, 2]
 
-// Module 12833
-import ThemesDefault from "Themes" /* 712 */;
+// Module 13054
+import ThemesDefault from "Themes" /* 709 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
@@ -36,10 +36,10 @@ const memoResult = importAllResult.memo(function MediaModalOverlayAltTextButton(
       };
       obj[2] = { top: 6, bottom: 6, left: 6, right: 6 };
       obj = { variant: "text-xs/semibold", color: "text-overlay-light", children: null };
-      const intl = tmp3(1236).intl;
-      obj[2] = intl.string(tmp3(1236).t.Q5VqrN);
+      const intl = tmp3(1233).intl;
+      obj[2] = intl.string(tmp3(1233).t.Q5VqrN);
       obj[3] = jsx(tmp3(4474).Text, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
-      tmp4 = jsx(tmp3(5068).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
+      tmp4 = jsx(tmp3(5076).PressableOpacity, { variant: "text-xs/semibold", color: "text-overlay-light", children: null });
     }
   }
   return tmp4;

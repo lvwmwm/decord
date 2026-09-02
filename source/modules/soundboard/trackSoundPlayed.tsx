@@ -1,18 +1,18 @@
-// Module ID: 6216
-// Function ID: 6217
+// Module ID: 6225
+// Function ID: 6226
 // Name: trackSoundPlayed
-// Dependencies: [4501, 1387, 4554, 1981, 4967, 676, 1924, 698, 2]
+// Dependencies: [4501, 1386, 4554, 1980, 4967, 673, 1923, 695, 2]
 // Exports: default
 
-// Module 6216 (trackSoundPlayed)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+// Module 6225 (trackSoundPlayed)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_2 from "initialize" /* 4501 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "createRTCConnection" /* 4554 */;
-import closure_5 from "handleConnectionOpen" /* 1981 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
 import { DEFAULT_SOUND_GUILD_ID } from "MAX_LENGTH_SOUND_NAME" /* 4967 */;
-import { AnalyticEvents } from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import { AnalyticEvents } from "ME" /* 673 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 ({ AnalyticsPremiumFeatureNames: closure_8, AnalyticsPremiumFeatureTiers: c9 } = GuildFeatures);
 const result = require("set").fileFinishedImporting("modules/soundboard/trackSoundPlayed.tsx");

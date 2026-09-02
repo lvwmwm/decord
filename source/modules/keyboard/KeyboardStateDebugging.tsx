@@ -1,10 +1,10 @@
-// Module ID: 1890
-// Function ID: 1891
-// Dependencies: [3, 501, 2]
+// Module ID: 1889
+// Function ID: 1890
+// Dependencies: [3, 1235, 2]
 
-// Module 1890
+// Module 1889
 import timestampDefault from "timestamp" /* 3 */;
-import PlatformTypes from "PlatformTypes" /* 501 */;
+import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 require = arg1;
 let closure_2 = new timestampDefault("KeyboardStateDebugging");

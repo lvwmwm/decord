@@ -1,13 +1,13 @@
-// Module ID: 12470
-// Function ID: 12471
+// Module ID: 12694
+// Function ID: 12695
 // Name: AnimatedContainer
-// Dependencies: [19, 17, 4470, 21, 4478, 712, 1363, 5554, 647, 4217, 4479, 4927, 8004, 4474, 5493, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 709, 1362, 5562, 644, 4217, 4479, 4927, 8013, 4474, 5501, 2]
 // Exports: default
 
-// Module 12470 (AnimatedContainer)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12694 (AnimatedContainer)
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import apexExperiment from "apexExperiment" /* 8004 */;
+import apexExperiment from "apexExperiment" /* 8013 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -133,7 +133,7 @@ function GroupMemberAvatar(guildId) {
     obj = { style: null, source: null };
     obj[0] = tmp.avatar;
     obj[1] = memo;
-    obj[1] = callback(user(5493), obj);
+    obj[1] = callback(user(5501), obj);
     tmp3 = callback(View, obj);
   }
   return tmp3;

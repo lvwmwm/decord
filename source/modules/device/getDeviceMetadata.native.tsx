@@ -1,12 +1,12 @@
-// Module ID: 7422
-// Function ID: 7423
+// Module ID: 7431
+// Function ID: 7432
 // Name: getDeviceMetadata
-// Dependencies: [7220, 2]
+// Dependencies: [7229, 2]
 // Exports: default
 
-// Module 7422 (getDeviceMetadata)
+// Module 7431 (getDeviceMetadata)
 import set from "set" /* 2 */;
-import getDeviceMetadata from "getDeviceMetadata" /* 7220 */;
+import getDeviceMetadata from "getDeviceMetadata" /* 7229 */;
 
 const result = set.fileFinishedImporting("modules/device/getDeviceMetadata.native.tsx");
 

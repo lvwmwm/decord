@@ -1,12 +1,12 @@
-// Module ID: 8225
-// Function ID: 8226
+// Module ID: 8234
+// Function ID: 8235
 // Name: usePremiumFeatures
-// Dependencies: [19, 1924, 4153, 1930, 4195, 1236, 3017, 8226, 4139, 8228, 8230, 8096, 8232, 8234, 8236, 712, 2]
+// Dependencies: [19, 1923, 4153, 1929, 4195, 1233, 3016, 8235, 4139, 8237, 8239, 8104, 8241, 8243, 8245, 709, 2]
 // Exports: default
 
-// Module 8225 (usePremiumFeatures)
+// Module 8234 (usePremiumFeatures)
 import closure_3 from "noop" /* 19 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 import { TOTAL_PREMIUM_GROUP_USERS } from "SubscriptionStatusTypes" /* 4153 */;
 
 const require = arg1;

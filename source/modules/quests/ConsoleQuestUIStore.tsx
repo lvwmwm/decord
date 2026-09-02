@@ -1,11 +1,11 @@
-// Module ID: 7449
-// Function ID: 7450
+// Module ID: 7459
+// Function ID: 7460
 // Name: useConsoleQuestUIStore
-// Dependencies: [644, 2]
+// Dependencies: [641, 2]
 
-// Module 7449 (useConsoleQuestUIStore)
+// Module 7459 (useConsoleQuestUIStore)
 import set from "set" /* 2 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 let closure_0 = [];
 let obj = keys.create((arg0, arg1) => {

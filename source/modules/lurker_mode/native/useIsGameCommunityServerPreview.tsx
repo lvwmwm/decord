@@ -1,12 +1,12 @@
-// Module ID: 15693
-// Function ID: 15694
+// Module ID: 15924
+// Function ID: 15925
 // Name: useIsGameCommunityServerPreview
-// Dependencies: [4122, 676, 589, 2]
+// Dependencies: [4121, 673, 586, 2]
 // Exports: default, isGameCommunityServerPreview
 
-// Module 15693 (useIsGameCommunityServerPreview)
-import closure_2 from "initialize" /* 4122 */;
-import { JoinGuildSources } from "ME" /* 676 */;
+// Module 15924 (useIsGameCommunityServerPreview)
+import closure_2 from "initialize" /* 4121 */;
+import { JoinGuildSources } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/lurker_mode/native/useIsGameCommunityServerPreview.tsx");
@@ -15,7 +15,7 @@ export default function useIsGameCommunityServerPreview(arg0) {
   const _require = arg0;
   const items = [closure_2];
   const items1 = [arg0];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const lurkingSourceForGuild = closure_1_2.getLurkingSourceForGuild(closure_0);
     let type;
     if (lurkingSourceForGuild != null) {

@@ -1,26 +1,26 @@
-// Module ID: 13589
-// Function ID: 13590
+// Module ID: 13812
+// Function ID: 13813
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 5569, 7271, 7166, 13074, 1218, 676, 1394, 4545, 4730, 9278, 7283, 4460, 13590, 11452, 7884, 12214, 4723, 4333, 13591, 8896, 6245, 8864, 11363, 1891, 8477, 698, 8479, 6092, 11184, 11486, 13598, 12246, 9284, 2009, 9279, 9277, 13600, 13602, 1624, 5083, 13607, 4190, 13609, 1909, 6186, 9673, 9759, 6161, 4722, 9878, 4332, 5398, 1222, 709, 5350, 1486, 9728, 13612, 13627, 500, 13638, 9909, 13645, 4837, 13646, 7286, 5973, 9843, 7463, 5392, 11334, 10454, 13718, 5377, 9462, 8812, 8806, 4443, 2]
+// Dependencies: [109, 5, 5577, 7280, 7175, 13296, 1215, 673, 1393, 4545, 4730, 9291, 7292, 4460, 13813, 11675, 7893, 12438, 4723, 4333, 13814, 8911, 6254, 8879, 11586, 1890, 8490, 695, 8492, 6100, 11405, 11709, 13821, 12470, 9297, 2008, 9292, 9290, 13823, 13825, 1623, 5091, 13830, 4190, 13832, 1908, 6195, 9686, 9781, 6169, 4722, 9900, 4332, 5406, 1219, 706, 5358, 1485, 9750, 13835, 13850, 1234, 13861, 9931, 13868, 4837, 13869, 7295, 5981, 9865, 7473, 5400, 11557, 10675, 13941, 5385, 9475, 8827, 8821, 4443, 2]
 // Exports: default
 
-// Module 13589 (handleSupportedURL)
+// Module 13812 (handleSupportedURL)
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "asyncGeneratorStep" /* 5 */;
-import closure_8 from "scheduledEventSort" /* 7271 */;
-import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7166 */;
-import closure_10 from "zustandStore" /* 13074 */;
-import closure_11 from "fetchFingerprint" /* 1218 */;
-import ME from "ME" /* 676 */;
-import { StaticChannelRoute } from "set" /* 1394 */;
+import closure_8 from "scheduledEventSort" /* 7280 */;
+import { handleMobileWebCheckoutStatus as closure_9 } from "usePremiumPlanPurchasedStore" /* 7175 */;
+import closure_10 from "zustandStore" /* 13296 */;
+import closure_11 from "fetchFingerprint" /* 1215 */;
+import ME from "ME" /* 673 */;
+import { StaticChannelRoute } from "set" /* 1393 */;
 import { StreamTypes } from "StreamIssueReportReasons" /* 4545 */;
 import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
-import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9278 */;
-import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7283 */;
+import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_20 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9291 */;
+import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_21 } from "items" /* 7292 */;
 import { MobileWebRedirectCheckoutDeepLinkActions as closure_22 } from "CustomCheckoutFlow" /* 4460 */;
-import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13590 */;
-import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11452 */;
-import { MobileUserSettings } from "MobileUserSettings" /* 7884 */;
+import { SHARE_SCREEN_MODAL_KEY } from "SHARE_SCREEN_MODAL_KEY" /* 13813 */;
+import { AccountSettingsTabs } from "AccountSettingsTabs" /* 11675 */;
+import { MobileUserSettings } from "MobileUserSettings" /* 7893 */;
 
 const require = arg1;
 let closure_4 = ["code", "state"];
@@ -868,15 +868,15 @@ export default function handleSupportedURL(payload) {
               } else if (result.QUESTS === type) {
                 addPostConnectionCallback(() => {
                   if (null != payload.questId) {
-                    let obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
+                    let obj = payload(inviteCode[70]);
+                    obj = { questId: null, event: null, sourceQuestContent: null, properties: null };
                     obj[0] = arr.questId;
                     obj[1] = closure_1_12.QUEST_SHARE_LINK_DEEP_LINKED_INTO_MOBILE_CLIENT;
                     obj[2] = payload(inviteCode[71]).QuestContent.QUEST_EMBED_MOBILE;
                     obj = { referrer_id: null };
                     obj[0] = arr.referrerId;
                     obj[3] = obj;
-                    payload(inviteCode[70]).trackQuestEvent(obj);
-                    const obj3 = payload(inviteCode[70]);
+                    obj.trackQuestEvent(obj);
                   }
                   let sort;
                   if (payload != null) {
@@ -886,26 +886,25 @@ export default function handleSupportedURL(payload) {
                   if (payload != null) {
                     filter = arr.filter;
                   }
-                  obj = payload(inviteCode[72]);
                   obj1 = { scrollToQuestId: payload.questId, sort: null, filter: null, fromContent: null };
-                  let tmp3 = null;
+                  let tmp9 = null;
                   if (null != sort) {
-                    tmp3 = null;
+                    tmp9 = null;
                     if ("" !== sort) {
-                      tmp3 = sort;
+                      tmp9 = sort;
                     }
                   }
-                  obj1[1] = tmp3;
-                  let tmp4 = null;
+                  obj1[1] = tmp9;
+                  let tmp10 = null;
                   if (null != filter) {
-                    tmp4 = null;
+                    tmp10 = null;
                     if ("" !== filter) {
-                      tmp4 = filter;
+                      tmp10 = filter;
                     }
                   }
-                  obj1[2] = tmp4;
+                  obj1[2] = tmp10;
                   obj1[3] = payload(inviteCode[71]).QuestContent.QUEST_SHARE_LINK;
-                  obj.openQuestHome(obj1);
+                  payload(inviteCode[72]).openQuestHome(obj1);
                 });
                 flag = true;
               } else if (result.QUEST_HOME_PREVIEW === type) {

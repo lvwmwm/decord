@@ -1,17 +1,17 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8721
+// Function ID: 8722
 // Name: MethodsScreen
-// Dependencies: [5, 32, 19, 17, 8683, 676, 21, 1930, 8707, 8709, 8711, 4478, 712, 8689, 8713, 8714, 8717, 4733, 8684, 8695, 8696, 8719, 8692, 8693, 4926, 6256, 4474, 8682, 1995, 1297, 4928, 1236, 2919, 5992, 5599, 8720, 8721, 6003, 4723, 5495, 8722, 514, 6008, 2]
+// Dependencies: [5, 32, 19, 17, 8698, 673, 21, 1929, 8722, 8724, 8726, 4478, 709, 8704, 8728, 8729, 8732, 4733, 8699, 8710, 8711, 8734, 8707, 8708, 4926, 6265, 4474, 8697, 1994, 1296, 4928, 1233, 2918, 6000, 5607, 8735, 8736, 6011, 4723, 5503, 8737, 511, 6016, 2]
 // Exports: default
 
-// Module 8706 (MethodsScreen)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 8721 (MethodsScreen)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { ActivityIndicator } from "get ActivityIndicator" /* 17 */;
-import { TRUSTED_PROVIDERS_URL } from "set" /* 8683 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
+import { TRUSTED_PROVIDERS_URL } from "set" /* 8698 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -454,7 +454,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     const obj3 = entryPoint(closure_2[39]);
     obj[2] = entryPoint(closure_2[39]).getHeaderBackButton();
     obj[3] = function render() {
-      return closure_1_9(callback(8722), { onClose: closeModal, modalSessionId: closure_0 });
+      return closure_1_9(callback(8737), { onClose: closeModal, modalSessionId: closure_0 });
     };
     obj[closure_1_12.GOOGLE_WALLET_VERIFICATION] = obj;
     return obj;
@@ -463,7 +463,7 @@ export default function AgeVerificationExpressiveV2Modal(entryPoint) {
     const result = entryPoint(closure_2[18]).trackAgeVerificationModalViewed(memo, entryPoint(closure_2[18]).AgeVerificationModalVersion.EXPRESSIVE_V2, entryPoint);
   }, items1);
   let obj = { screens: memo1, initialRouteName: constants.METHODS, headerBackTitle: null };
-  const intl = entryPoint(1236).intl;
-  obj[2] = intl.string(entryPoint(1236).t["13/7kX"]);
-  return callback(entryPoint(6008).Navigator, obj);
+  const intl = entryPoint(1233).intl;
+  obj[2] = intl.string(entryPoint(1233).t["13/7kX"]);
+  return callback(entryPoint(6016).Navigator, obj);
 };

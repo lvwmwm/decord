@@ -1,15 +1,15 @@
-// Module ID: 12109
-// Function ID: 12110
+// Module ID: 12333
+// Function ID: 12334
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [17, 21, 4478, 712, 8736, 4474, 2]
+// Dependencies: [17, 21, 4478, 709, 8751, 4474, 2]
 // Exports: default
 
-// Module 12109 (GuildPowerupsDisabledWarning)
+// Module 12333 (GuildPowerupsDisabledWarning)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import WarningIcon from "WarningIcon" /* 8736 */;
+import WarningIcon from "WarningIcon" /* 8751 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

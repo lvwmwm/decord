@@ -1,10 +1,10 @@
-// Module ID: 12004
-// Function ID: 12005
+// Module ID: 12228
+// Function ID: 12229
 // Name: useIsMessageRequestRestrictedViewer
-// Dependencies: [4733, 4172, 4179, 12005, 2]
+// Dependencies: [4733, 4172, 4179, 12229, 2]
 // Exports: useIsMessageRequestRestrictedViewer
 
-// Module 12004 (useIsMessageRequestRestrictedViewer)
+// Module 12228 (useIsMessageRequestRestrictedViewer)
 import set from "set" /* 2 */;
 import isFeatureAgeGated from "isFeatureAgeGated" /* 4172 */;
 import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4179 */;

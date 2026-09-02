@@ -1,12 +1,12 @@
-// Module ID: 711
-// Function ID: 712
+// Module ID: 708
+// Function ID: 709
 // Name: unsafe_getRawColor
-// Dependencies: [712, 2]
+// Dependencies: [709, 2]
 // Exports: getRadii, getThemes, unsafe_getRawColor, unsafe_getResolvedRawColor
 
-// Module 711 (unsafe_getRawColor)
+// Module 708 (unsafe_getRawColor)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/tokens/shims.native.tsx");
 

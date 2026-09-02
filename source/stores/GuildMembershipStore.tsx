@@ -1,11 +1,11 @@
-// Module ID: 1389
-// Function ID: 1390
+// Module ID: 1388
+// Function ID: 1389
 // Name: allGuildIds
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 1389 (allGuildIds)
-import initializeDefault from "initialize" /* 589 */;
-import importDefaultResult from "dispatcher" /* 709 */;
+// Module 1388 (allGuildIds)
+import initializeDefault from "initialize" /* 586 */;
+import importDefaultResult from "dispatcher" /* 706 */;
 import set from "set" /* 2 */;
 
 let closure_0 = arg1;

@@ -1,10 +1,10 @@
 // Module ID: 12862
 // Function ID: 12863
 // Name: registerAsset
-// Dependencies: [1241]
+// Dependencies: [1240]
 
 // Module 12862 (registerAsset)
-import registerAsset from "registerAsset" /* 1241 */;
+import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "8ea6c899915dc4dfb91fde69307aaf42", name: "chest_idle", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3460a8c2a85f7dbc9f38e8345c6f5a9e", name: "NintendoSwitchNeutralIcon", type: "png" });

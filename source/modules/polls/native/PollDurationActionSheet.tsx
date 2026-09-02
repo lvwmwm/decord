@@ -1,12 +1,12 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11991
+// Function ID: 11992
 // Name: PollDurationRadioGroup
-// Dependencies: [19, 21, 11767, 1351, 4445, 7692, 1236, 7693, 5989, 2]
+// Dependencies: [19, 21, 11990, 1350, 4445, 7701, 1233, 7702, 5997, 2]
 // Exports: default
 
-// Module 11768 (PollDurationRadioGroup)
-import ActionSheet from "ActionSheet" /* 5989 */;
-import usePollDurationOptionsDefault from "usePollDurationOptions" /* 11767 */;
+// Module 11991 (PollDurationRadioGroup)
+import ActionSheet from "ActionSheet" /* 5997 */;
+import usePollDurationOptionsDefault from "usePollDurationOptions" /* 11990 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -24,8 +24,8 @@ function PollDurationRadioGroup(onChange) {
     dependencyMap(closure_1_2[4]).hideActionSheet();
   }, items);
   const obj = { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null };
-  const intl = onChange(1236).intl;
-  obj[0] = intl.string(onChange(1236).t["0ZStp9"]);
+  const intl = onChange(1233).intl;
+  obj[0] = intl.string(onChange(1233).t["0ZStp9"]);
   obj[2] = callback;
   obj[3] = onChange.selectedDuration;
   const entries = Object.entries(tmp);
@@ -33,7 +33,7 @@ function PollDurationRadioGroup(onChange) {
     [tmp, tmp2] = arg0;
     return callback(onChange(table[7]).TableRadioRow, { value: parseInt(tmp), label: tmp2 }, tmp);
   });
-  return jsx(onChange(7692).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
+  return jsx(onChange(7701).TableRadioGroup, { title: null, hasIcons: false, onChange: null, defaultValue: null, children: null });
 }
 const result = require("set").fileFinishedImporting("modules/polls/native/PollDurationActionSheet.tsx");
 

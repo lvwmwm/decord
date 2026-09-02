@@ -1,12 +1,12 @@
-// Module ID: 6942
-// Function ID: 6943
+// Module ID: 6951
+// Function ID: 6952
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6942 (metadata)
+// Module 6951 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RocketshipSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/1c2e565caa9f5c91d5ad64703a212b1c8d1aac9fa747f4bcc49b0317d5e5cb08.png";
-export const metadata = { fileBytes: 21978 };
+export default "https://cdn.discordapp.com/assets/content/6436b50626d0d85abc4aa36db04171f5a553d256896a29f0d98f346fa3df4eca.png";
+export const metadata = { fileBytes: 22611 };

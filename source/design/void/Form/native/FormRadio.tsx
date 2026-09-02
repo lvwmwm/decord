@@ -1,10 +1,10 @@
-// Module ID: 5615
-// Function ID: 5616
+// Module ID: 5623
+// Function ID: 5624
 // Name: FormRadio
-// Dependencies: [19, 17, 21, 4478, 5616, 5617, 2]
+// Dependencies: [19, 17, 21, 4478, 5624, 5625, 2]
 // Exports: default
 
-// Module 5615 (FormRadio)
+// Module 5623 (FormRadio)
 import noopAll from "noop" /* 19 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -15,5 +15,5 @@ let closure_4 = createCacheKey.createStyles({ radio: { width: 22, height: 22 } }
 const result = require("set").fileFinishedImporting("design/void/Form/native/FormRadio.tsx");
 
 export default function FormRadio(selected) {
-  return <Image style={callback().radio} source={importDefault(arg0.selected ? 5616 : 5617)} />;
+  return <Image style={callback().radio} source={importDefault(arg0.selected ? 5624 : 5625)} />;
 };

@@ -1,12 +1,12 @@
-// Module ID: 15827
-// Function ID: 15828
-// Dependencies: [19, 4493, 4701, 10201, 4702, 21, 4478, 712, 10651, 4489, 589, 15623, 15705, 9425, 2]
+// Module ID: 16059
+// Function ID: 16060
+// Dependencies: [19, 4493, 4701, 10223, 4702, 21, 4478, 709, 10872, 4489, 586, 15854, 15936, 9438, 2]
 
-// Module 15827
-import ThemesDefault from "Themes" /* 712 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9425 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 15623 */;
-import getChannelModeDefault from "getChannelMode" /* 15705 */;
+// Module 16059
+import ThemesDefault from "Themes" /* 709 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9438 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 15854 */;
+import getChannelModeDefault from "getChannelMode" /* 15936 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "generateOldThreadCutoff" /* 4493 */;
 import closure_5 from "updateUserGuildSettingsInternal" /* 4701 */;
@@ -31,7 +31,7 @@ const memoResult = importAllResult.memo((channel) => {
   const callback1 = importAllResult.useCallback(() => {
     channel(closure_1_2[9]).transitionToChannel(channel.id);
   }, items1);
-  let obj = channel(589);
+  let obj = channel(586);
   const items2 = [closure_4];
   const items3 = [channel.id];
   const stateFromStoresObject = obj.useStateFromStoresObject(items2, () => ({ hasUnread: closure_1_4.hasUnread(channel.id), mentionCount: closure_1_4.getMentionCount(channel.id) }), items3);
@@ -39,8 +39,8 @@ const memoResult = importAllResult.memo((channel) => {
   const tmp = callback();
   const items4 = [closure_5];
   const items5 = [channel];
-  const stateFromStores = channel(589).useStateFromStores(items4, () => closure_1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
-  const obj2 = channel(589);
+  const stateFromStores = channel(586).useStateFromStores(items4, () => closure_1_5.isChannelMuted(channel.getGuildId(), channel.id), items5);
+  const obj2 = channel(586);
   ({ isIncomingCall, isOngoingCall } = useCallA11yStateDefault(channel.id));
   obj = { onPress: callback1, onLongPress: callback, style: tmp.container, accessible: true, accessibilityRole: "button", accessibilityLabel: null, accessibilityState: null, channel: null, selected: null, unread: null, resolvedUnreadSetting: null, mentionCount: null, muted: null };
   const tmp6 = useCallA11yStateDefault(channel.id);

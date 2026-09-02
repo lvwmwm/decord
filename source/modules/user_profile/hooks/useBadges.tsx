@@ -1,13 +1,13 @@
-// Module ID: 8546
-// Function ID: 8547
+// Module ID: 8559
+// Function ID: 8560
 // Name: useBadges
-// Dependencies: [4323, 1922, 4166, 647, 1236, 2]
+// Dependencies: [4323, 1921, 4166, 644, 1233, 2]
 // Exports: default
 
-// Module 8546 (useBadges)
+// Module 8559 (useBadges)
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import closure_2 from "initialize" /* 4323 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const legacy_username = "legacy_username";
@@ -19,10 +19,10 @@ export default function useBadges(getBadges) {
   if (undefined !== arg1) {
     setting = arg1;
   }
-  let tmpResult = tmp(647);
+  let tmpResult = tmp(644);
   const items = [closure_3];
   const stateFromStores = tmpResult.useStateFromStores(items, () => currentUser.getCurrentUser());
-  tmpResult = tmp(647);
+  tmpResult = tmp(644);
   [][0] = closure_2;
   if (null == getBadges) {
     return [];
@@ -44,8 +44,8 @@ export default function useBadges(getBadges) {
         const obj = {};
         const merged = Object.assign(id);
         if (id.id === closure_4) {
-          const intl = callback(1236).intl;
-          let description = intl.string(callback(1236).t.Br1ls3);
+          const intl = callback(1233).intl;
+          let description = intl.string(callback(1233).t.Br1ls3);
         } else {
           description = id.description;
         }

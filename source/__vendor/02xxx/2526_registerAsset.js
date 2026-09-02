@@ -1,10 +1,10 @@
 // Module ID: 2526
 // Function ID: 2527
 // Name: registerAsset
-// Dependencies: [1241]
+// Dependencies: [1240]
 
 // Module 2526 (registerAsset)
-import registerAsset from "registerAsset" /* 1241 */;
+import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==", scales: [1], hash: "af691e84f85d9b025499d883b2147524", name: "ru.messages.af691e84f85d9b025499d883b2147524.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==", scales: [1], hash: "401ba87d9383ca91cd410123fdae65ba", name: "sv-SE.messages.401ba87d9383ca91cd410123fdae65ba.compiled.messages", type: "jsona" });

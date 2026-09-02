@@ -1,12 +1,12 @@
-// Module ID: 8915
-// Function ID: 8916
-// Dependencies: [32, 19, 17, 21, 4204, 8532, 8916, 4940, 2]
+// Module ID: 8930
+// Function ID: 8931
+// Dependencies: [32, 19, 17, 21, 4204, 8545, 8931, 4940, 2]
 
-// Module 8915
+// Module 8930
 import ManaContext from "ManaContext" /* 4204 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import useUserProfileColors from "useUserProfileColors" /* 8532 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8916 */;
+import useUserProfileColors from "useUserProfileColors" /* 8545 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8931 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

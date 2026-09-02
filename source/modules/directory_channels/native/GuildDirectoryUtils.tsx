@@ -1,10 +1,10 @@
-// Module ID: 11888
-// Function ID: 11889
+// Module ID: 12111
+// Function ID: 12112
 // Name: _onAddDirectoryGuildEntry
-// Dependencies: [5, 19, 21, 11883, 4858, 11889, 2009, 2]
+// Dependencies: [5, 19, 21, 12106, 4858, 12112, 2008, 2]
 // Exports: onAddDirectoryGuildEntry
 
-// Module 11888 (_onAddDirectoryGuildEntry)
+// Module 12111 (_onAddDirectoryGuildEntry)
 import noopAll from "noop" /* 19 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -54,7 +54,7 @@ function _onAddDirectoryGuildEntry() {
               ({ directoryChannelId: c0, directoryGuildName: c1, guild: c2, description: c3, category: c4, onClose: c5 } = c0);
               dependencyMap = 1;
               c4 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -66,7 +66,7 @@ function _onAddDirectoryGuildEntry() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              let obj3 = lib(11883);
+              let obj3 = lib(12106);
               dependencyMap = 2;
               c4 = 1;
               const obj2 = { value: null, done: false };

@@ -1,10 +1,10 @@
-// Module ID: 11162
-// Function ID: 11163
+// Module ID: 11383
+// Function ID: 11384
 // Name: request
-// Dependencies: [19, 4519, 4362, 12, 5954, 589, 2]
+// Dependencies: [19, 4519, 4362, 12, 5962, 586, 2]
 // Exports: useGetOrFetchApplicationBatched, useRequestApplication
 
-// Module 11162 (request)
+// Module 11383 (request)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "addApplication" /* 4519 */;
 import set from "set" /* 2 */;
@@ -112,7 +112,7 @@ export const useGetOrFetchApplicationBatched = function useGetOrFetchApplication
   }, items);
   const items1 = [closure_4];
   const items2 = [applicationId];
-  return applicationId(589).useStateFromStores(items1, () => {
+  return applicationId(586).useStateFromStores(items1, () => {
     let application = null;
     if (null != closure_0) {
       application = null;

@@ -1,17 +1,17 @@
-// Module ID: 1352
-// Function ID: 1353
+// Module ID: 1351
+// Function ID: 1352
 // Name: updateAccessibilityAnnouncerLiveRegionMessage
-// Dependencies: [19, 17, 21, 1353, 2]
+// Dependencies: [19, 17, 21, 1352, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 1352 (updateAccessibilityAnnouncerLiveRegionMessage)
+// Module 1351 (updateAccessibilityAnnouncerLiveRegionMessage)
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
-import keys from "keys" /* 1353 */;
+import keys from "keys" /* 1352 */;
 import importAllResult from "noop" /* 19 */;
 
 ({ StyleSheet, Text: c0 } = get_ActivityIndicator);
-let closure_2 = keys.create(() => ({ message: "disabled", version: false }));
+let closure_2 = keys.create(() => ({ message: "ip", version: false }));
 const styles = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
 const memoResult = importAllResult.memo(() => {
   const tmp = state();

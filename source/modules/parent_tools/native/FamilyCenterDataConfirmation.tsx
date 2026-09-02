@@ -1,28 +1,28 @@
-// Module ID: 11491
-// Function ID: 11492
+// Module ID: 11714
+// Function ID: 11715
 // Name: RowGroup
-// Dependencies: [19, 21, 4926, 4474, 5992, 5599, 1236, 2369, 11492, 4415, 9355, 5037, 11493, 11495, 10774, 8790, 4441, 11497, 6240, 5551, 2]
+// Dependencies: [19, 21, 4926, 4474, 6000, 5607, 1233, 2368, 11715, 4415, 9368, 5041, 11716, 11718, 10994, 8805, 4441, 11720, 6249, 5559, 2]
 // Exports: default
 
-// Module 11491 (RowGroup)
+// Module 11714 (RowGroup)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2368 */;
 import UserPlusIcon from "UserPlusIcon" /* 4415 */;
 import ClockIcon from "ClockIcon" /* 4441 */;
 import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
-import ForumIcon from "ForumIcon" /* 5037 */;
-import XSmallIcon from "XSmallIcon" /* 5551 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5992 */;
-import SettingsIcon from "SettingsIcon" /* 6240 */;
-import FlagIcon from "FlagIcon" /* 8790 */;
-import ServerIcon from "ServerIcon" /* 9355 */;
-import GiftIcon from "GiftIcon" /* 10774 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11492 */;
-import PhoneIcon from "PhoneIcon" /* 11493 */;
-import CreditCardIcon from "CreditCardIcon" /* 11495 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 11497 */;
+import ForumIcon from "ForumIcon" /* 5041 */;
+import XSmallIcon from "XSmallIcon" /* 5559 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
+import SettingsIcon from "SettingsIcon" /* 6249 */;
+import FlagIcon from "FlagIcon" /* 8805 */;
+import ServerIcon from "ServerIcon" /* 9368 */;
+import GiftIcon from "GiftIcon" /* 10994 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 11715 */;
+import PhoneIcon from "PhoneIcon" /* 11716 */;
+import CreditCardIcon from "CreditCardIcon" /* 11718 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 11720 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -40,8 +40,8 @@ function RowGroup(children) {
       if (true === negative) {
         str = "text-status-dnd";
       }
-      obj[2] = closure_3(callback(5599).TableRow.Icon, { variant: str, IconComponent });
-      return closure_3(callback(5599).TableRow, obj, header);
+      obj[2] = closure_3(callback(5607).TableRow.Icon, { variant: str, IconComponent });
+      return closure_3(callback(5607).TableRow, obj, header);
     })
   };
   items[1] = callback(TableRowGroupTitle.TableRowGroup, obj);

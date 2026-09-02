@@ -1,17 +1,17 @@
-// Module ID: 7679
-// Function ID: 7680
+// Module ID: 7688
+// Function ID: 7689
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5490, 676, 21, 4478, 4194, 1236, 7680, 7650, 5941, 4302, 589, 5008, 5559, 7681, 7714, 4928, 2]
+// Dependencies: [5, 32, 19, 17, 5498, 673, 21, 4478, 4194, 1233, 7689, 7659, 5949, 4302, 586, 5011, 5567, 7690, 7723, 4928, 2]
 // Exports: default
 
-// Module 7679 (MemberVerificationForm)
+// Module 7688 (MemberVerificationForm)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "get" /* 5490 */;
-import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "get" /* 5490 */;
-import { VerificationLevels } from "ME" /* 676 */;
+import closure_7 from "get" /* 5498 */;
+import { NO_MEMBER_VERIFICATION_FORM as closure_8 } from "get" /* 5498 */;
+import { VerificationLevels } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

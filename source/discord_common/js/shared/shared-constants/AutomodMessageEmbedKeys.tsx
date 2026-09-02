@@ -1,9 +1,9 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7263
+// Function ID: 7264
 // Name: AutomodMessageEmbedKeys
 // Dependencies: [2]
 
-// Module 7254 (AutomodMessageEmbedKeys)
+// Module 7263 (AutomodMessageEmbedKeys)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodMessageEmbedKeys.tsx");

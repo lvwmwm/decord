@@ -1,23 +1,23 @@
-// Module ID: 13607
-// Function ID: 13608
+// Module ID: 13830
+// Function ID: 13831
 // Name: DCDQRScanner
-// Dependencies: [32, 19, 17, 676, 7283, 21, 500, 13608, 712, 6046, 1628, 1486, 13587, 4723, 13602, 2009, 6245, 11486, 4190, 4858, 1236, 9067, 7812, 1297, 2]
+// Dependencies: [32, 19, 17, 673, 7292, 21, 1234, 13831, 709, 6054, 1627, 1485, 13810, 4723, 13825, 2008, 6254, 11709, 4190, 4858, 1233, 9081, 7821, 1296, 2]
 // Exports: default
 
-// Module 13607 (DCDQRScanner)
-import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+// Module 13830 (DCDQRScanner)
+import ThemesDefault from "Themes" /* 709 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef4723 from "module_4723" /* 4723 */;
-import registerAssetDefault from "registerAsset" /* 7812 */;
-import renderDefault from "render" /* 9067 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13608 */;
+import registerAssetDefault from "registerAsset" /* 7821 */;
+import renderDefault from "render" /* 9081 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 13831 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { UserSettingsSections } from "ME" /* 676 */;
-import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_7 } from "items" /* 7283 */;
+import { UserSettingsSections } from "ME" /* 673 */;
+import { FAMILY_CENTER_LINK_REQUEST_REGEX as closure_7 } from "items" /* 7292 */;
 import jsxProd from "jsxProd" /* 21 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 const require = arg1;
 function DCDQRScanner(arg0) {
@@ -131,8 +131,8 @@ export default function QRScannerModal(showHelp) {
   obj1 = { accessibilityRole: "button", accessibilityLabel: null, source: null, style: null, onPress: null };
   const tmp7 = useSafeAreaInsetsDefault();
   let tmp8 = closure_9;
-  let intl = onScanSuccess(1236).intl;
-  obj1[1] = intl.string(onScanSuccess(1236).t.cpT0Cq);
+  let intl = onScanSuccess(1233).intl;
+  obj1[1] = intl.string(onScanSuccess(1233).t.cpT0Cq);
   obj1[2] = registerAssetDefault;
   const items2 = [tmp12.closeButton, { marginTop: top }];
   obj1[3] = items2;
@@ -150,9 +150,9 @@ export default function QRScannerModal(showHelp) {
       obj2[0] = items3;
       const obj4 = { style: null, children: null };
       obj4[0] = tmp12.text;
-      let intl2 = tmp17(1236).intl;
-      obj4[1] = intl2.string(tmp17(1236).t.dklV0G);
-      obj2[1] = tmp14(tmp17(1297).LegacyText, obj4);
+      let intl2 = tmp17(1233).intl;
+      obj4[1] = intl2.string(tmp17(1233).t.dklV0G);
+      obj2[1] = tmp14(tmp17(1296).LegacyText, obj4);
       tmp14Result = tmp14(tmp9, obj2);
     }
   }

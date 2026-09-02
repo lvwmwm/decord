@@ -1,13 +1,13 @@
-// Module ID: 1988
-// Function ID: 1989
+// Module ID: 1987
+// Function ID: 1988
 // Name: extractColorStringsFromServerColors
-// Dependencies: [676, 688, 2]
+// Dependencies: [673, 685, 2]
 // Exports: extractColorStringsFromServerColors, getAuthorHasGradientRole, getIsDefaultErc
 
-// Module 1988 (extractColorStringsFromServerColors)
+// Module 1987 (extractColorStringsFromServerColors)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import int2hslRaw from "int2hslRaw" /* 688 */;
+import ME from "ME" /* 673 */;
+import int2hslRaw from "int2hslRaw" /* 685 */;
 
 const DEFAULT_ROLE_COLOR_HEX = ME.DEFAULT_ROLE_COLOR_HEX;
 const result = set.fileFinishedImporting("modules/premium/enhanced_role_colors/EnhancedRoleColorUtils.tsx");

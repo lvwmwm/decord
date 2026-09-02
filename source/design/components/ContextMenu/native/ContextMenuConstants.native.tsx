@@ -1,11 +1,11 @@
-// Module ID: 8794
-// Function ID: 8795
+// Module ID: 8809
+// Function ID: 8810
 // Name: CONTEXT_MENU_LONG_PRESS_DURATION_MS
-// Dependencies: [500, 4446, 2]
+// Dependencies: [1234, 4446, 2]
 
-// Module 8794 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
+// Module 8809 (CONTEXT_MENU_LONG_PRESS_DURATION_MS)
 import HapticFeedbackTypes2 from "HapticFeedbackTypes" /* 4446 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 set = set.isIOS();
 const HapticFeedbackTypes = HapticFeedbackTypes2.HapticFeedbackTypes;

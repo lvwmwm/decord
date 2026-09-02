@@ -1,24 +1,24 @@
-// Module ID: 5555
-// Function ID: 5556
+// Module ID: 5563
+// Function ID: 5564
 // Name: PromptHeader
-// Dependencies: [32, 19, 17, 5401, 5490, 1909, 5467, 5464, 1925, 21, 4478, 5492, 712, 1499, 589, 1628, 4197, 689, 5553, 5556, 4474, 1236, 4928, 5559, 4940, 691, 5474, 5580, 5581, 5585, 1431, 4445, 5590, 2009, 5068, 5943, 2]
+// Dependencies: [32, 19, 17, 5409, 5498, 1908, 5475, 5472, 1924, 21, 4478, 5500, 709, 1498, 586, 1627, 4197, 686, 5561, 5564, 4474, 1233, 4928, 5567, 4940, 688, 5482, 5588, 5589, 5593, 1430, 4445, 5598, 2008, 5076, 5951, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 5555 (PromptHeader)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+// Module 5563 (PromptHeader)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
 import Text2 from "Text" /* 4474 */;
-import EmojiDefault from "Emoji" /* 5585 */;
+import EmojiDefault from "Emoji" /* 5593 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "getEmojiToGroupId" /* 5401 */;
-import closure_10 from "get" /* 5490 */;
-import closure_11 from "createGuildRecordFromRust" /* 1909 */;
-import closure_12 from "handleUpdate" /* 5467 */;
-import { GuildOnboardingModalStates as closure_13 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5464 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
+import closure_9 from "getEmojiToGroupId" /* 5409 */;
+import closure_10 from "get" /* 5498 */;
+import closure_11 from "createGuildRecordFromRust" /* 1908 */;
+import closure_12 from "handleUpdate" /* 5475 */;
+import { GuildOnboardingModalStates as closure_13 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5472 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -44,8 +44,8 @@ function PromptHeader(currentPrompt) {
     obj2[0] = tmp.requiredSeparator;
     const items1 = [tmp5(tmp4, obj2), ];
     const obj3 = { variant: "text-sm/medium", color: "text-brand", children: null };
-    const intl2 = tmp6(1236).intl;
-    obj3[2] = intl2.string(tmp6(1236).t.Ur8Vrt);
+    const intl2 = tmp6(1233).intl;
+    obj3[2] = intl2.string(tmp6(1233).t.Ur8Vrt);
     items1[1] = tmp5(tmp6(4474).Text, obj3);
     obj1[0] = items1;
     tmp2Result = tmp2(tmp3, obj1);
@@ -178,7 +178,7 @@ function formattedNameHighlight(children) {
 function DropdownOption(option) {
   option = option.option;
   const tmp = callback4();
-  let obj = option(589);
+  let obj = option(586);
   const items = [closure_9];
   const stateFromStores = obj.useStateFromStores(items, () => {
     const emoji = option.emoji;

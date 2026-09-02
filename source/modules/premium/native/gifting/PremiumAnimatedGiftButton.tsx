@@ -1,11 +1,11 @@
-// Module ID: 11816
-// Function ID: 11817
+// Module ID: 12039
+// Function ID: 12040
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 4470, 21, 4478, 712, 4197, 589, 500, 4217, 5068, 5944, 2]
+// Dependencies: [19, 4470, 21, 4478, 709, 4197, 586, 1234, 4217, 5076, 5952, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 11816 (PremiumAnimatedGiftButton)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12039 (PremiumAnimatedGiftButton)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { useRef } from "noop" /* 19 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -26,17 +26,17 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   ({ active, disabled, accessibilityState } = arg0);
   ({ style, activeStyle, channelId, animationDataUrl, onAnimationFinished, loop } = arg0);
   let obj = _require(4197);
-  const token = obj.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
+  const token = obj.useToken(stateFromStores(709).modules.mobile.CHAT_INPUT_ACTION_BUTTON_SIZE);
   obj1 = _require(4197);
-  const token1 = obj1.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
+  const token1 = obj1.useToken(stateFromStores(709).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
   let obj2 = _require(4197);
-  const token2 = obj2.useToken(stateFromStores(712).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
+  const token2 = obj2.useToken(stateFromStores(709).modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const tmp7 = callback(token, token1);
   const bound = Math.max(0, (token2 - token) / 2);
   const tmp9 = useRef(null);
   _require = tmp9;
   const items = [closure_5];
-  stateFromStores = _require(589).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  stateFromStores = _require(586).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const items1 = [channelId, stateFromStores];
   const effect = React.useEffect(() => {
     if (!stateFromStores) {
@@ -81,7 +81,7 @@ export const PremiumAnimatedGiftButton = function PremiumAnimatedGiftButton(arg0
   obj[3] = obj1;
   const merged1 = Object.assign(arg0);
   obj2 = { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished };
-  obj.children = jsx(stateFromStores(5944), { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
-  obj[1] = jsx(_require(5068).PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
+  obj.children = jsx(stateFromStores(5952), { ref: tmp9, style: tmp7.animationRefresh, source: { uri: animationDataUrl }, loop, autoPlay: false, onAnimationFinish: onAnimationFinished });
+  obj[1] = jsx(_require(5076).PressableOpacity, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
   return jsx(stateFromStores(4217).View, { style: items2, hitSlop: null, accessibilityRole: "button", accessibilityState: null });
 };

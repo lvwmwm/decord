@@ -1,11 +1,11 @@
-// Module ID: 9664
-// Function ID: 9665
+// Module ID: 9677
+// Function ID: 9678
 // Name: dispatcher
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 
-// Module 9664 (dispatcher)
+// Module 9677 (dispatcher)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("modules/tooltip/TooltipActionCreators.tsx");
 

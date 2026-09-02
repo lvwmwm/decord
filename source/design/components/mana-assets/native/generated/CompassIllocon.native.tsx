@@ -1,14 +1,14 @@
-// Module ID: 6425
-// Function ID: 6426
+// Module ID: 6434
+// Function ID: 6435
 // Name: CompassIllocon
-// Dependencies: [21, 5493, 6426, 2]
+// Dependencies: [21, 5501, 6435, 2]
 // Exports: CompassIllocon
 
-// Module 6425 (CompassIllocon)
+// Module 6434 (CompassIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6426 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6435 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/CompassIllocon.native.tsx");

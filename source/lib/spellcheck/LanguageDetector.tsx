@@ -1,9 +1,9 @@
-// Module ID: 5575
-// Function ID: 5576
+// Module ID: 5583
+// Function ID: 5584
 // Name: language
-// Dependencies: [5576, 2]
+// Dependencies: [5584, 2]
 
-// Module 5575 (language)
+// Module 5583 (language)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("lib/spellcheck/LanguageDetector.tsx");

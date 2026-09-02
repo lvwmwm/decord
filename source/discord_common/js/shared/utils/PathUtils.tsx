@@ -1,10 +1,10 @@
-// Module ID: 507
-// Function ID: 508
+// Module ID: 504
+// Function ID: 505
 // Name: getAuthenticationPath
 // Dependencies: [2]
 // Exports: getLoginPath, wrapPaths
 
-// Module 507 (getAuthenticationPath)
+// Module 504 (getAuthenticationPath)
 import set from "set" /* 2 */;
 
 function getAuthenticationPath(login, arg1, flag, arg3) {

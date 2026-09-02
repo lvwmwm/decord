@@ -1,19 +1,19 @@
-// Module ID: 9878
-// Function ID: 9879
+// Module ID: 9900
+// Function ID: 9901
 // Name: disconnectRemote
-// Dependencies: [5, 4554, 4496, 4495, 676, 698, 709, 4857, 1236, 9783, 9879, 530, 1208, 9880, 9881, 9884, 2]
+// Dependencies: [5, 4554, 4496, 4495, 673, 695, 706, 4857, 1233, 9805, 9901, 527, 1205, 9902, 9903, 9906, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 9878 (disconnectRemote)
-import sendRequest from "sendRequest" /* 530 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import snapVolumeToDefault from "snapVolumeToDefault" /* 9783 */;
+// Module 9900 (disconnectRemote)
+import sendRequest from "sendRequest" /* 527 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import snapVolumeToDefault from "snapVolumeToDefault" /* 9805 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "createRTCConnection" /* 4554 */;
 import closure_5 from "handleUpdate" /* 4496 */;
 import closure_6 from "set" /* 4495 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function disconnectRemote() {
@@ -73,10 +73,10 @@ function _disconnectRemote() {
       c3 = 0;
       obj1 = v0(4857);
       const obj2 = { title: null, body: null };
-      const intl = callback(1236).intl;
-      obj2[0] = intl.string(callback(1236).t.LNhXcL);
-      const intl2 = callback(1236).intl;
-      obj2[1] = intl2.string(callback(1236).t.QnKxtP);
+      const intl = callback(1233).intl;
+      obj2[0] = intl.string(callback(1233).t.LNhXcL);
+      const intl2 = callback(1233).intl;
+      obj2[1] = intl2.string(callback(1233).t.QnKxtP);
       obj1.show(obj2);
       c4 = 3;
     } else if (arg0 === 1) {
@@ -472,9 +472,9 @@ function _cancelCommand() {
               obj1[1] = callback;
               obj1[2] = callback2;
               obj1[3] = dependencyMap;
-              callback2(709).dispatch(obj1);
+              callback2(706).dispatch(obj1);
               c6 = 1;
-              const HTTP = callback(530).HTTP;
+              const HTTP = callback(527).HTTP;
               const obj2 = { url: null, rejectWithError: false };
               obj2[0] = c8.CONSOLES_DEVICES_COMMAND(callback, callback2, dependencyMap);
               c7 = 2;
@@ -486,7 +486,7 @@ function _cancelCommand() {
           } else if (1 === tmp7) {
             c6 = 0;
             closure_3 = closure_5;
-            obj3 = callback2(709);
+            obj3 = callback2(706);
             const obj4 = { type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_FAIL", platform: null, deviceId: null, commandId: null, error: null };
             obj4[1] = callback;
             obj4[2] = callback2;
@@ -505,7 +505,7 @@ function _cancelCommand() {
             return obj5;
           } else {
             c6 = 0;
-            obj = callback2(709);
+            obj = callback2(706);
             const obj6 = { type: "GAME_CONSOLE_DEVICE_CANCEL_COMMAND_SUCCESS", platform: null, deviceId: null, commandId: null };
             obj6[1] = callback;
             obj6[2] = callback2;

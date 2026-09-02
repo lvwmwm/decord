@@ -1,14 +1,14 @@
-// Module ID: 7623
-// Function ID: 7624
+// Module ID: 7633
+// Function ID: 7634
 // Name: PhoneCallIcon
-// Dependencies: [19, 21, 712, 4196, 7624, 2]
+// Dependencies: [19, 21, 709, 4196, 7634, 2]
 // Exports: PhoneCallIcon
 
-// Module 7623 (PhoneCallIcon)
+// Module 7633 (PhoneCallIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7624 */;
+import registerAsset from "registerAsset" /* 7634 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

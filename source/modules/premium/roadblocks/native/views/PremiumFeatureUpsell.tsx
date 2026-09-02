@@ -1,16 +1,16 @@
-// Module ID: 9166
-// Function ID: 9167
+// Module ID: 9180
+// Function ID: 9181
 // Name: PremiumFeatureUpsellPill
-// Dependencies: [19, 17, 1924, 676, 7177, 21, 7597, 4139, 1236, 4478, 712, 8169, 9134, 9151, 7594, 8969, 1297, 9167, 9168, 4474, 8096, 4940, 691, 4927, 4931, 5953, 9169, 8569, 4217, 698, 8979, 2]
+// Dependencies: [19, 17, 1923, 673, 7186, 21, 7607, 4139, 1233, 4478, 709, 8177, 9148, 9165, 7604, 8983, 1296, 9181, 9182, 4474, 8104, 4940, 688, 4927, 4931, 5961, 9183, 8584, 4217, 695, 8993, 2]
 // Exports: default
 
-// Module 9166 (PremiumFeatureUpsellPill)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9180 (PremiumFeatureUpsellPill)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
-import ME from "ME" /* 676 */;
-import { Gradients } from "items" /* 7177 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
+import ME from "ME" /* 673 */;
+import { Gradients } from "items" /* 7186 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -25,51 +25,51 @@ function PremiumFeatureUpsellPill(featureName) {
   dependencyMap = undefined;
   let mobileEmojiPickerUpsellRestyleEnabledForFeature;
   let loading;
-  let obj = featureName(8169);
-  obj1 = featureName(9134);
+  let obj = featureName(8177);
+  obj1 = featureName(9148);
   const premiumUpsellConfig = obj.usePremiumUpsellConfig(obj1.getUpsellType(featureName));
   useTier0UpsellContent = premiumUpsellConfig.useTier0UpsellContent;
   const tmp4 = callback2(useTier0UpsellContent);
   dependencyMap = tmp4;
-  let obj2 = featureName(9151);
+  let obj2 = featureName(9165);
   mobileEmojiPickerUpsellRestyleEnabledForFeature = obj2.getMobileEmojiPickerUpsellRestyleEnabledForFeature(featureName, "native.PremiumFeatureUpsell");
   const tmp7 = useTier0UpsellContent ? closure_7.TIER_0 : closure_7.TIER_2;
   const fn = () => useTier0UpsellContent(closure_2[14])(featureName);
   let tmpResult = tmp(4139);
   const premiumTypeDisplayName = tmpResult.getPremiumTypeDisplayName(tmp7);
-  if (featureName(7597).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
-    const intl4 = tmp(1236).intl;
+  if (featureName(7607).EntitlementFeatureNames.SOUNDBOARD_EVERYWHERE === featureName) {
+    const intl4 = tmp(1233).intl;
     obj = { nitroTierName: null, onClick: null };
     obj[0] = premiumTypeDisplayName;
     obj[1] = fn;
-    let formatResult = intl4.format(tmp(1236).t["tw/SSq"], obj);
-  } else if (tmp(7597).EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
-    const intl3 = tmp(1236).intl;
+    let formatResult = intl4.format(tmp(1233).t["tw/SSq"], obj);
+  } else if (tmp(7607).EntitlementFeatureNames.EMOJIS_EVERYWHERE === featureName) {
+    const intl3 = tmp(1233).intl;
     obj = { nitroTierName: null, onClick: null };
     obj[0] = premiumTypeDisplayName;
     obj[1] = fn;
-    formatResult = intl3.format(tmp(1236).t.gMVjeS, obj);
-  } else if (tmp(7597).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
-    const intl2 = tmp(1236).intl;
+    formatResult = intl3.format(tmp(1233).t.gMVjeS, obj);
+  } else if (tmp(7607).EntitlementFeatureNames.INCREASED_FILE_UPLOAD_SIZE === featureName) {
+    const intl2 = tmp(1233).intl;
     obj1 = { maxFileSize: null, nitroTierName: null, onClick: null };
     tmpResult = tmp(4139);
     obj1[0] = tmpResult.getMaxFileSizeForPremiumType(tmp7);
     obj1[1] = premiumTypeDisplayName;
     obj1[2] = fn;
-    formatResult = intl2.format(tmp(1236).t.zzyLEK, obj1);
-  } else if (tmp(7597).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
-    const intl = tmp(1236).intl;
+    formatResult = intl2.format(tmp(1233).t.zzyLEK, obj1);
+  } else if (tmp(7607).EntitlementFeatureNames.STREAM_HIGH_QUALITY === featureName) {
+    const intl = tmp(1233).intl;
     obj2 = { nitroTierName: null, onClick: null };
     obj2[0] = premiumTypeDisplayName;
     obj2[1] = fn;
-    formatResult = intl.format(tmp(1236).t.lyxfbj, obj2);
-  } else if (tmp(7597).EntitlementFeatureNames.APP_ICONS === featureName) {
-    const intl6 = tmp(1236).intl;
+    formatResult = intl.format(tmp(1233).t.lyxfbj, obj2);
+  } else if (tmp(7607).EntitlementFeatureNames.APP_ICONS === featureName) {
+    const intl6 = tmp(1233).intl;
     const obj3 = { onClick: null };
     obj3[0] = fn;
-    formatResult = intl6.format(tmp(1236).t.x2dQxN, obj3);
+    formatResult = intl6.format(tmp(1233).t.x2dQxN, obj3);
   }
-  const tmp11 = useTier0UpsellContent(8969)(useTier0UpsellContent, premiumUpsellConfig.onViewAllPerks, constants.PREMIUM_UPSELL_FILE_UPLOAD);
+  const tmp11 = useTier0UpsellContent(8983)(useTier0UpsellContent, premiumUpsellConfig.onViewAllPerks, constants.PREMIUM_UPSELL_FILE_UPLOAD);
   loading = tmp11.loading;
   let items = [tmp4.container, , ];
   if (flag) {
@@ -90,18 +90,18 @@ function PremiumFeatureUpsellPill(featureName) {
     const obj7 = { disabled: null, shrink: true, style: null, size: null, onPress: null, text: null, color: null, renderIcon: null, renderLinearGradient: null };
     obj7[0] = loading;
     obj7[2] = tmp4.button;
-    obj7[3] = tmp(1297).ButtonSizes.XSMALL;
+    obj7[3] = tmp(1296).ButtonSizes.XSMALL;
     obj7[4] = tmp11.onPress;
-    const intl5 = tmp(1236).intl;
+    const intl5 = tmp(1233).intl;
     const string = intl5.string;
-    const t = tmp(1236).t;
+    const t = tmp(1233).t;
     if (useTier0UpsellContent) {
       let stringResult = string(t.cM8bbx);
     } else {
       stringResult = string(t["8x0jKT"]);
     }
     obj7[5] = stringResult;
-    obj7[6] = tmp(1297).ButtonColors.GREEN;
+    obj7[6] = tmp(1296).ButtonColors.GREEN;
     obj7[7] = function renderIcon() {
       if (mobileEmojiPickerUpsellRestyleEnabledForFeature) {
         let obj = { size: "xxs", color: null, style: null };
@@ -131,14 +131,14 @@ function PremiumFeatureUpsellPill(featureName) {
       const obj = { style: closure_2.gradient, start: featureName(closure_2[22]).HorizontalGradient.START, end: featureName(closure_2[22]).HorizontalGradient.END, colors: useTier0UpsellContent ? closure_1_11.PREMIUM_TIER_0 : closure_1_11.PREMIUM_TIER_2_TRI_COLOR };
       return closure_1_12(useTier0UpsellContent(closure_2[21]), obj);
     };
-    items2[1] = callback(tmp(1297).ShinyButton, obj7);
+    items2[1] = callback(tmp(1296).ShinyButton, obj7);
     obj4[1] = items2;
     return tmp12(tmp13, obj4);
   } else {
     const obj8 = { source: null, style: null, disableColor: true };
-    obj8[0] = useTier0UpsellContent(useTier0UpsellContent ? 9167 : 9168);
+    obj8[0] = useTier0UpsellContent(useTier0UpsellContent ? 9181 : 9182);
     obj8[1] = tmp4.nitroWheel;
-    callback(tmp(1297).Icon, obj8);
+    callback(tmp(1296).Icon, obj8);
     const tmp15 = callback;
   }
 }

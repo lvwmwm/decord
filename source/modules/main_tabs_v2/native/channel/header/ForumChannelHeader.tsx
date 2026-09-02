@@ -1,11 +1,11 @@
-// Module ID: 12936
-// Function ID: 12937
-// Dependencies: [19, 17, 7608, 21, 4478, 12937, 12923, 12938, 2]
+// Module ID: 13158
+// Function ID: 13159
+// Dependencies: [19, 17, 7618, 21, 4478, 13159, 13145, 13160, 2]
 
-// Module 12936
-import ForumChannelCloseSearchButton from "ForumChannelCloseSearchButton" /* 12923 */;
-import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 12937 */;
-import GuildChannelMemberCountDefault from "GuildChannelMemberCount" /* 12938 */;
+// Module 13158
+import ForumChannelCloseSearchButton from "ForumChannelCloseSearchButton" /* 13145 */;
+import useIsForumChannelSearchActive from "useIsForumChannelSearchActive" /* 13159 */;
+import GuildChannelMemberCountDefault from "GuildChannelMemberCount" /* 13160 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

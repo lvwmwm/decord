@@ -1,10 +1,10 @@
-// Module ID: 8137
-// Function ID: 8138
+// Module ID: 8145
+// Function ID: 8146
 // Name: experiment
 // Dependencies: [4392, 4389, 2]
 // Exports: getVoiceChannelBadgeExperiment, useVoiceChannelBadgeExperiment
 
-// Module 8137 (experiment)
+// Module 8145 (experiment)
 import set from "set" /* 2 */;
 import ExperimentBuckets from "ExperimentBuckets" /* 4392 */;
 import createExperiment from "createExperiment" /* 4389 */;

@@ -1,17 +1,17 @@
-// Module ID: 15678
-// Function ID: 15679
-// Dependencies: [19, 17, 13357, 1387, 11537, 1922, 14890, 676, 21, 4478, 589, 11, 1471, 12, 15677, 698, 1222, 4674, 1236, 4981, 14891, 15671, 2]
+// Module ID: 15909
+// Function ID: 15910
+// Dependencies: [19, 17, 13581, 1386, 11760, 1921, 15119, 673, 21, 4478, 586, 11, 1470, 12, 15908, 695, 1219, 4674, 1233, 4981, 15120, 15902, 2]
 
-// Module 15678
+// Module 15909
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "truncateOldMessageData" /* 13357 */;
-import { MAX_STORED_MESSAGES } from "truncateOldMessageData" /* 13357 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "handleTypingStart" /* 11537 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import { HappeningNowCardTrackingType as closure_10 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14890 */;
-import ME from "ME" /* 676 */;
+import closure_5 from "truncateOldMessageData" /* 13581 */;
+import { MAX_STORED_MESSAGES } from "truncateOldMessageData" /* 13581 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
+import closure_8 from "handleTypingStart" /* 11760 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import { HappeningNowCardTrackingType as closure_10 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15119 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

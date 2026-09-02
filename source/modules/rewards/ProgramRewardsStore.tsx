@@ -1,15 +1,15 @@
-// Module ID: 13378
-// Function ID: 13379
+// Module ID: 13601
+// Function ID: 13602
 // Name: updateTtl
-// Dependencies: [32, 1922, 13379, 3737, 3765, 3720, 589, 687, 13380, 13381, 709, 2]
+// Dependencies: [32, 1921, 13602, 3736, 3764, 3719, 586, 684, 13603, 13604, 706, 2]
 
-// Module 13378 (updateTtl)
-import initializeDefault from "initialize" /* 589 */;
-import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import canFetchNitroProgramReward from "canFetchNitroProgramReward" /* 13380 */;
+// Module 13601 (updateTtl)
+import initializeDefault from "initialize" /* 586 */;
+import setDefault from "set" /* 684 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import canFetchNitroProgramReward from "canFetchNitroProgramReward" /* 13603 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 function updateTtl() {

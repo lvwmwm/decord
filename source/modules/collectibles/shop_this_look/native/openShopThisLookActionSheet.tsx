@@ -1,12 +1,12 @@
-// Module ID: 12598
-// Function ID: 12599
+// Module ID: 12822
+// Function ID: 12823
 // Name: SHOP_THIS_LOOK_ACTION_SHEET_KEY
-// Dependencies: [4445, 12599, 2009, 2]
+// Dependencies: [4445, 12823, 2008, 2]
 // Exports: openShopThisLookActionSheet
 
-// Module 12598 (SHOP_THIS_LOOK_ACTION_SHEET_KEY)
+// Module 12822 (SHOP_THIS_LOOK_ACTION_SHEET_KEY)
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 
 let c3 = "Shop This Look";
@@ -14,5 +14,5 @@ const result = set.fileFinishedImporting("modules/collectibles/shop_this_look/na
 
 export const SHOP_THIS_LOOK_ACTION_SHEET_KEY = "Shop This Look";
 export const openShopThisLookActionSheet = function openShopThisLookActionSheet(arg0) {
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12599, dependencyMap.paths), c3, arg0, "stack");
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(12823, dependencyMap.paths), c3, arg0, "stack");
 };

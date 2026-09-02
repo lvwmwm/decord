@@ -1,23 +1,23 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17601
+// Function ID: 17602
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 1301, 505, 21, 4478, 712, 5461, 14808, 5068, 1297, 1236, 5621, 5989, 7795, 8363, 4474, 2]
+// Dependencies: [32, 19, 17, 1300, 502, 21, 4478, 709, 5469, 15037, 5076, 1296, 1233, 5629, 5997, 7804, 8372, 4474, 2]
 // Exports: default
 
-// Module 17365 (SelectEmojiRolesActionSheet)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import ActionSheet from "ActionSheet" /* 5989 */;
-import useFetchListingsForGuild from "useFetchListingsForGuild" /* 14808 */;
+// Module 17601 (SelectEmojiRolesActionSheet)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import ActionSheet from "ActionSheet" /* 5997 */;
+import useFetchListingsForGuild from "useFetchListingsForGuild" /* 15037 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { Fonts } from "sum" /* 505 */;
+import { Fonts } from "sum" /* 502 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5461 */;
+import importDefaultResult from "createTextStyle" /* 5469 */;
 
 require = arg1;
 ({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);
@@ -84,22 +84,22 @@ export default function SelectEmojiRolesActionSheet(arg0) {
   obj = { style: items, children: null };
   items[1] = saveButtonDisabled;
   if (null == emoji) {
-    const intl2 = tmp5(1236).intl;
-    let stringResult = intl2.string(tmp5(1236).t["3UB9ad"]);
+    const intl2 = tmp5(1233).intl;
+    let stringResult = intl2.string(tmp5(1233).t["3UB9ad"]);
   } else {
-    let intl = tmp5(1236).intl;
-    stringResult = intl.string(tmp5(1236).t["R3BPH+"]);
+    let intl = tmp5(1233).intl;
+    stringResult = intl.string(tmp5(1233).t["R3BPH+"]);
   }
   obj[1] = stringResult;
   obj[3] = closure_6(Button.LegacyText, obj);
   let tmp7Result = tmp7(PressableBase.PressableOpacity, obj);
   obj1 = { title: null, subtitle: null, trailing: null };
-  const intl3 = tmp5(1236).intl;
+  const intl3 = tmp5(1233).intl;
   obj1[0] = intl3.string(getSystemLocale.t.JPU0EF);
-  const intl4 = tmp5(1236).intl;
+  const intl4 = tmp5(1233).intl;
   obj1[1] = intl4.string(getSystemLocale.t.MZusPv);
   obj1[2] = tmp7Result;
-  tmp7Result = tmp7(tmp5(5621).BottomSheetTitleHeader, obj1);
+  tmp7Result = tmp7(tmp5(5629).BottomSheetTitleHeader, obj1);
   const items1 = [subscriptionListingsForGuild.length];
-  return closure_6(ActionSheet.ActionSheet, { scrollable: true, header: tmp7Result, startExpanded: true, onDismiss: onCancel, children: closure_6(emoji(7795), obj3) });
+  return closure_6(ActionSheet.ActionSheet, { scrollable: true, header: tmp7Result, startExpanded: true, onDismiss: onCancel, children: closure_6(emoji(7804), obj3) });
 };

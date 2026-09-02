@@ -1,13 +1,13 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7603
+// Function ID: 7604
 // Name: openScheduledMessagesLimitUpsell
-// Dependencies: [7594, 7597, 2]
+// Dependencies: [7604, 7607, 2]
 // Exports: default
 
-// Module 7593 (openScheduledMessagesLimitUpsell)
+// Module 7603 (openScheduledMessagesLimitUpsell)
 import set from "set" /* 2 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7594 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7597 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 7604 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7607 */;
 
 const result = set.fileFinishedImporting("modules/scheduled_messages/native/openScheduledMessagesLimitUpsell.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 9271
-// Function ID: 9272
+// Module ID: 9284
+// Function ID: 9285
 // Name: Pile
-// Dependencies: [19, 17, 21, 4478, 1471, 12, 8098, 9272, 2]
+// Dependencies: [19, 17, 21, 4478, 1470, 12, 8106, 9285, 2]
 // Exports: Pile
 
-// Module 9271 (Pile)
+// Module 9284 (Pile)
 import apply from "apply" /* 12 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

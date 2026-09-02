@@ -1,11 +1,11 @@
-// Module ID: 16269
-// Function ID: 16270
+// Module ID: 16501
+// Function ID: 16502
 // Name: styles
-// Dependencies: [7622, 4478, 2]
+// Dependencies: [7632, 4478, 2]
 
-// Module 16269 (styles)
+// Module 16501 (styles)
 import set from "set" /* 2 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 7622 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 7632 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 ({ SEARCH_LIST_SECTION_TOP_PADDING, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = MessageEmbedTypes);

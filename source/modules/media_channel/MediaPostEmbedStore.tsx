@@ -1,11 +1,11 @@
-// Module ID: 11060
-// Function ID: 11061
+// Module ID: 11280
+// Function ID: 11281
 // Name: getMediaPostEmbed
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 11060 (getMediaPostEmbed)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 11280 (getMediaPostEmbed)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED", FAILED: 3, [3]: "FAILED" };
 let closure_1 = {};

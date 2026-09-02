@@ -1,25 +1,25 @@
-// Module ID: 16598
-// Function ID: 16599
+// Module ID: 16833
+// Function ID: 16834
 // Name: BaseActivityPanelPIPView
-// Dependencies: [19, 17, 4470, 9627, 1387, 1386, 4506, 9466, 16599, 676, 11841, 21, 1297, 4478, 712, 1628, 589, 1493, 16594, 10991, 4217, 16600, 4204, 4479, 4927, 16601, 16602, 1236, 5652, 4111, 16596, 9604, 2]
+// Dependencies: [19, 17, 4470, 9640, 1386, 1385, 4506, 9479, 16834, 673, 12064, 21, 1296, 4478, 709, 1627, 586, 1492, 16829, 11211, 4217, 16835, 4204, 4479, 4927, 16836, 16837, 1233, 5660, 4110, 16831, 9617, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 16598 (BaseActivityPanelPIPView)
-import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+// Module 16833 (BaseActivityPanelPIPView)
+import ThemesDefault from "Themes" /* 709 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_6 from "module_9627" /* 9627 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "participantFromServer" /* 1386 */;
+import closure_6 from "module_9640" /* 9640 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
+import closure_8 from "participantFromServer" /* 1385 */;
 import { ActivityLayoutMode } from "items3" /* 4506 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9466 */;
-import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_15 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16599 */;
-import { ThemeTypes } from "ME" /* 676 */;
-import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE" /* 11841 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9479 */;
+import { DEFAULT_PORTRAIT_LETTERBOX_CONFIG as closure_15 } from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16834 */;
+import { ThemeTypes } from "ME" /* 673 */;
+import { PIP_WINDOW_OFFSET } from "MIN_PAN_GESTURE_MOVE" /* 12064 */;
 import { jsx } from "jsxProd" /* 21 */;
-import Button from "Button" /* 1297 */;
+import Button from "Button" /* 1296 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
@@ -281,7 +281,7 @@ const memoResult = importAllResult.memo((transitionState) => {
   let stateFromStores1;
   let memo;
   const items = [closure_8];
-  const stateFromStoresObject = _require(589).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = _require(586).useStateFromStoresObject(items, () => {
     const connectedActivityLocation = store.getConnectedActivityLocation();
     const obj = { channelId: lib(_undefined[29]).getEmbeddedActivityLocationChannelId(connectedActivityLocation), activity: store.getSelfEmbeddedActivityForLocation(connectedActivityLocation) };
     return obj;
@@ -291,7 +291,7 @@ const memoResult = importAllResult.memo((transitionState) => {
   if (activity != null) {
     applicationId = activity.applicationId;
   }
-  let tmpResult = tmp(589);
+  let tmpResult = tmp(586);
   const items1 = [closure_8];
   stateFromStores = tmpResult.useStateFromStores(items1, () => {
     let pipOrientationLockStateForApp;
@@ -300,11 +300,11 @@ const memoResult = importAllResult.memo((transitionState) => {
     }
     return pipOrientationLockStateForApp;
   });
-  tmpResult = tmp(589);
+  tmpResult = tmp(586);
   const items2 = [memo];
   stateFromStores1 = tmpResult.useStateFromStores(items2, () => memo.getChannel(c2));
   _require = undefined;
-  const tmp8 = transitionCleanUp(1628)();
+  const tmp8 = transitionCleanUp(1627)();
   _require = tmp8;
   const items3 = [tmp8.right];
   memo = activity.useMemo(() => {

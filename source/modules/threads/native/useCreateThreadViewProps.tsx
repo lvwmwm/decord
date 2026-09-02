@@ -1,12 +1,12 @@
-// Module ID: 10995
-// Function ID: 10996
+// Module ID: 11215
+// Function ID: 11216
 // Name: useCreateThreadViewProps
-// Dependencies: [1387, 10330, 647, 2]
+// Dependencies: [1386, 10352, 644, 2]
 // Exports: default
 
-// Module 10995 (useCreateThreadViewProps)
-import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 10330 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+// Module 11215 (useCreateThreadViewProps)
+import useGetThreadDraftSettingsDefault from "useGetThreadDraftSettings" /* 10352 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/threads/native/useCreateThreadViewProps.tsx");
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/threads/native/useC
 export default function useCreateThreadViewProps(arg0) {
   const tmp = useGetThreadDraftSettingsDefault(arg0);
   const _require = tmp;
-  let obj = _require(647);
+  let obj = _require(644);
   const items = [closure_3];
   const items1 = [tmp];
   const stateFromStores = obj.useStateFromStores(items, () => {

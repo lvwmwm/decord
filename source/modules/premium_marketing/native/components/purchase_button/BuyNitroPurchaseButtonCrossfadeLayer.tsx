@@ -1,10 +1,10 @@
-// Module ID: 13049
-// Function ID: 13050
+// Module ID: 13271
+// Function ID: 13272
 // Name: BuyNitroPurchaseButtonCrossfadeLayer
 // Dependencies: [32, 19, 17, 21, 4217, 4479, 4482, 4928, 2]
 // Exports: default, useBuyNitroButtonCrossfade
 
-// Module 13049 (BuyNitroPurchaseButtonCrossfadeLayer)
+// Module 13271 (BuyNitroPurchaseButtonCrossfadeLayer)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;

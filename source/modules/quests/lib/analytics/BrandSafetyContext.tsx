@@ -1,28 +1,28 @@
-// Module ID: 9000
-// Function ID: 9001
+// Module ID: 9014
+// Function ID: 9015
 // Name: getBrandSafetyContext
-// Dependencies: [9001, 1387, 1909, 4130, 4299, 1922, 9002, 7443, 1431, 4674, 2]
+// Dependencies: [9015, 1386, 1908, 4130, 4299, 1921, 9016, 7453, 1430, 4674, 2]
 // Exports: getBrandSafetyContext
 
-// Module 9000 (getBrandSafetyContext)
+// Module 9014 (getBrandSafetyContext)
 import set from "set" /* 2 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9002 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9001 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9016 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9015 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
 import closure_8 from "handleConnectionOpen" /* 4299 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
 
 ({ getVisibleChannelIdsMethod: c3, getVisibleGuildIdsMethod: c4 } = SidebarVisibilityMethodStore);
 let closure_10 = MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN.MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN;
 let result = set.fileFinishedImporting("modules/quests/lib/analytics/BrandSafetyContext.tsx");
 
 export const getBrandSafetyContext = function getBrandSafetyContext(questContent) {
-  let obj = _require(7443);
+  let obj = _require(7453);
   const result = obj.isBillableQuestContent(questContent);
-  obj1 = _require(7443);
+  obj1 = _require(7453);
   const adContext = obj1.getAdContext(questContent);
   const tmp4 = callback2();
   const tmp5 = callback();

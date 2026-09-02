@@ -1,8 +1,8 @@
-// Module ID: 12175
-// Function ID: 12176
-// Dependencies: [19, 17, 4470, 4342, 1894, 6233, 1626, 4945, 4343, 4340, 4346, 10993, 2]
+// Module ID: 12399
+// Function ID: 12400
+// Dependencies: [19, 17, 4470, 4342, 1893, 6242, 1625, 4945, 4343, 4340, 4346, 11213, 2]
 
-// Module 12175
+// Module 12399
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -22,10 +22,10 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
   id = importAllResult.useId();
   const tmp2 = id(4342)();
   dependencyMap = tmp2;
-  let tmp4 = id(6233)({ includeCustomKeyboard: false });
+  let tmp4 = id(6242)({ includeCustomKeyboard: false });
   importAllResult = tmp4;
-  let tmp3 = id(1894)();
-  keyboardContextForType = messagesRef(4342).useKeyboardContextForType(messagesRef(1626).KeyboardTypes.SYSTEM);
+  let tmp3 = id(1893)();
+  keyboardContextForType = messagesRef(4342).useKeyboardContextForType(messagesRef(1625).KeyboardTypes.SYSTEM);
   id(4945)(() => () => {
     const PortalKeyboardUIStore = closure_1_0(closure_1_2[8]).PortalKeyboardUIStore;
     field = PortalKeyboardUIStore.getField("keyboard");
@@ -64,13 +64,13 @@ const memoResult = importAllResult.memo(function InlinePortalKeyboard(messagesRe
                 tmp.current = true;
                 const obj2 = messagesRef(4343);
                 const DCDChatManager3 = keyboardContextForType.DCDChatManager;
-                const result1 = DCDChatManager3.customKeyboardWillShow(tmp38, messagesRef(10993).getKeyboardActionSheetHeight().minimum, 0.25, 7);
-                const obj3 = messagesRef(10993);
+                const result1 = DCDChatManager3.customKeyboardWillShow(tmp38, messagesRef(11213).getKeyboardActionSheetHeight().minimum, 0.25, 7);
+                const obj3 = messagesRef(11213);
               }
             }
           }
         }
-        if (dependencyMap === messagesRef(1626).KeyboardTypes.SYSTEM) {
+        if (dependencyMap === messagesRef(1625).KeyboardTypes.SYSTEM) {
           if (keyboardContextForType.keyboardWillOpen) {
             if (field1 !== messagesRef(4346).PortalKeyboardState.REQUEST_CLOSE) {
               const _setTimeout = setTimeout;

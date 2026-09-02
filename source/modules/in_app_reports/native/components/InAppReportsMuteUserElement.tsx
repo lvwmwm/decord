@@ -1,15 +1,15 @@
-// Module ID: 12781
-// Function ID: 12782
+// Module ID: 13002
+// Function ID: 13003
 // Name: MuteUserElement
-// Dependencies: [32, 19, 1387, 676, 685, 21, 589, 4673, 10226, 4700, 8675, 12777, 1236, 10238, 2]
+// Dependencies: [32, 19, 1386, 673, 682, 21, 586, 4673, 10248, 4700, 8690, 12998, 1233, 10260, 2]
 // Exports: default
 
-// Module 12781 (MuteUserElement)
+// Module 13002 (MuteUserElement)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import { AnalyticEvents } from "ME" /* 676 */;
-import { MuteUntilSeconds } from "MAX_FAVORITES" /* 685 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import { AnalyticEvents } from "ME" /* 673 */;
+import { MuteUntilSeconds } from "MAX_FAVORITES" /* 682 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

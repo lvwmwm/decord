@@ -1,18 +1,18 @@
-// Module ID: 14304
-// Function ID: 14305
+// Module ID: 14527
+// Function ID: 14528
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 1909, 5381, 21, 4478, 4745, 1236, 4445, 11395, 6004, 4673, 1297, 4474, 5385, 2]
+// Dependencies: [32, 19, 17, 1908, 5389, 21, 4478, 4745, 1233, 4445, 11618, 6012, 4673, 1296, 4474, 5393, 2]
 // Exports: default
 
-// Module 14304 (GuildSelectComponentActionSheet)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 14527 (GuildSelectComponentActionSheet)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import ActionComponentState from "ActionComponentState" /* 4745 */;
-import SelectionHeaderDefault from "SelectionHeader" /* 11395 */;
+import SelectionHeaderDefault from "SelectionHeader" /* 11618 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "insertUnsortedGuilds" /* 5381 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "insertUnsortedGuilds" /* 5389 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -47,7 +47,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
   function submitSelection() {
     return lib(guildIdentity[9]).hideActionSheet();
   }
-  const intl = tmp4(1236).intl;
+  const intl = tmp4(1233).intl;
   obj[2] = intl.string(getSystemLocale.t["ZImm/x"]);
   callback = obj.useCallback((arg0) => {
     if (0 === arg0.length) {

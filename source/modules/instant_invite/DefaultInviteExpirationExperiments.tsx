@@ -1,13 +1,13 @@
-// Module ID: 9913
-// Function ID: 9914
+// Module ID: 9935
+// Function ID: 9936
 // Name: getDefaultInviteExpiration
-// Dependencies: [1909, 676, 9911, 4389, 647, 2]
+// Dependencies: [1908, 673, 9933, 4389, 644, 2]
 // Exports: useDefaultInviteExpiration, useMaxAgeOptions
 
-// Module 9913 (getDefaultInviteExpiration)
-import isGuildMemberDefault from "isGuildMember" /* 9911 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
-import ME from "ME" /* 676 */;
+// Module 9935 (getDefaultInviteExpiration)
+import isGuildMemberDefault from "isGuildMember" /* 9933 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
+import ME from "ME" /* 673 */;
 import createExperiment from "createExperiment" /* 4389 */;
 
 const require = arg1;
@@ -78,7 +78,7 @@ export const useDefaultInviteExpiration = function useDefaultInviteExpiration(gu
   if (defaultMaxAge !== closure_6) {
     experiment1 = experiment;
   }
-  guildId(647);
+  guildId(644);
   [][0] = closure_3;
   let tmp7 = null;
   if (null != guildId) {

@@ -1,16 +1,16 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16941
+// Function ID: 16942
 // Name: getConsoleInfo
-// Dependencies: [19, 676, 21, 4478, 712, 9892, 1236, 9875, 1471, 6006, 1297, 2]
+// Dependencies: [19, 673, 21, 4478, 709, 9914, 1233, 9897, 1470, 6014, 1296, 2]
 // Exports: default
 
-// Module 16706 (getConsoleInfo)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9875 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 9892 */;
+// Module 16941 (getConsoleInfo)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 9897 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 9914 */;
 import closure_3 from "noop" /* 19 */;
-import { PlatformTypes } from "ME" /* 676 */;
+import { PlatformTypes } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -65,6 +65,6 @@ export default function VoicePanelConsoleFacepile() {
     obj[1] = closure_1_5(lib(closure_1_2[10]).Icon, obj);
     return closure_1_5(lib2(closure_1_2[9]), obj);
   }, items1);
-  return jsx(_require(1297).SummarizedIconRow, { items, renderItem, offsetAmount: -3 });
+  return jsx(_require(1296).SummarizedIconRow, { items, renderItem, offsetAmount: -3 });
 };
 export { getConsoleInfo };

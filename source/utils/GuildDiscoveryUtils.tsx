@@ -1,16 +1,16 @@
-// Module ID: 6185
-// Function ID: 6186
+// Module ID: 6194
+// Function ID: 6195
 // Name: _startLurking
-// Dependencies: [5, 4122, 4398, 1909, 676, 1222, 6186, 6091, 5457, 698, 530, 1483, 2]
+// Dependencies: [5, 4121, 4398, 1908, 673, 1219, 6195, 6099, 5465, 695, 527, 1482, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 6185 (_startLurking)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+// Module 6194 (_startLurking)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 4122 */;
+import closure_4 from "initialize" /* 4121 */;
 import closure_5 from "handleInviteData" /* 4398 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function _startLurking() {
@@ -75,7 +75,7 @@ function _startLurking() {
                 closure_13 = undefined;
                 loadId = 1;
                 shouldNavigate = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp5) {

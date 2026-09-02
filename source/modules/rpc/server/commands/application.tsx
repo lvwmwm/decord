@@ -1,16 +1,16 @@
-// Module ID: 14121
-// Function ID: 14122
-// Dependencies: [4519, 4380, 676, 9506, 9508, 14122, 8436, 9503, 9456, 698, 530, 8497, 2]
+// Module ID: 14344
+// Function ID: 14345
+// Dependencies: [4519, 4380, 673, 9519, 9521, 14345, 8445, 9516, 9469, 695, 527, 8510, 2]
 
-// Module 14121
-import sendRequest from "sendRequest" /* 530 */;
-import isTestModeForApplication from "isTestModeForApplication" /* 8497 */;
-import prototypeDefault from "prototype" /* 9503 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9506 */;
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9508 */;
-import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14122 */;
+// Module 14344
+import sendRequest from "sendRequest" /* 527 */;
+import isTestModeForApplication from "isTestModeForApplication" /* 8510 */;
+import prototypeDefault from "prototype" /* 9516 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9519 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9521 */;
+import getCurrentEmbeddedActivityChannelDefault from "getCurrentEmbeddedActivityChannel" /* 14345 */;
 import closure_3 from "addApplication" /* 4519 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 ({ ApplicationFlags: c4, Endpoints: c5, RPCCommands, RPCErrors: closure_6 } = ME);
@@ -37,9 +37,9 @@ let obj = {
       const guildId = obj3.getGuildId();
     }
     application = application.getApplication(id);
-    let tmpResult = tmp(8436);
+    let tmpResult = tmp(8445);
     if (tmpResult.hasApplicationFlag(application, constants.EMBEDDED_FIRST_PARTY)) {
-      tmpResult = tmp(9456);
+      tmpResult = tmp(9469);
       const activeAnalyticsSessionIDs = tmpResult.getActiveAnalyticsSessionIDs(id);
       obj = { activity_application_id: null, activity_channel_type: null, activity_guild_id: null, activity_user_session_id: null };
       obj[0] = id;
@@ -57,11 +57,11 @@ let obj = {
       obj = {};
       const merged = Object.assign(obj);
       const merged1 = Object.assign(event_properties);
-      tmp5(698).track(args.event_name, obj);
+      tmp5(695).track(args.event_name, obj);
     } else {
       obj1 = { errorCode: null };
       obj1[0] = constants2.INVALID_COMMAND;
-      const tmp12 = new tmp5(9503)(obj1, "This application cannot access this API");
+      const tmp12 = new tmp5(9516)(obj1, "This application cannot access this API");
       throw tmp12;
     }
   }
@@ -73,8 +73,8 @@ obj = {
     if (null == id) {
       let obj = { errorCode: null };
       obj[0] = constants2.INVALID_COMMAND;
-      const tmp7 = new prototypeDefault(obj, "No application.");
-      throw tmp7;
+      const tmp10 = new prototypeDefault(obj, "No application.");
+      throw tmp10;
     } else {
       const HTTP = sendRequest.HTTP;
       obj = { url: null, body: null, retries: 3, oldFormErrors: true, rejectWithError: false };
@@ -82,7 +82,7 @@ obj = {
       obj = { test_mode: null };
       obj[0] = isTestModeForApplication.isTestModeForApplication(id);
       obj[1] = obj;
-      const obj4 = isTestModeForApplication;
+      const obj3 = isTestModeForApplication;
       return HTTP.post(obj).then((body) => body.body);
     }
   }

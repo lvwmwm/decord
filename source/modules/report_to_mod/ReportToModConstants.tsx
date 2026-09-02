@@ -1,12 +1,12 @@
-// Module ID: 6134
-// Function ID: 6135
+// Module ID: 6142
+// Function ID: 6143
 // Name: ReportToModPermissions
-// Dependencies: [676, 506, 2]
+// Dependencies: [673, 503, 2]
 
-// Module 6134 (ReportToModPermissions)
+// Module 6142 (ReportToModPermissions)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import importAllResult from "fromString" /* 506 */;
+import ME from "ME" /* 673 */;
+import importAllResult from "fromString" /* 503 */;
 
 const Permissions = ME.Permissions;
 const combineResult = importAllResult.combine(Permissions.ADMINISTRATOR, Permissions.BAN_MEMBERS, Permissions.KICK_MEMBERS, Permissions.MODERATE_MEMBERS);

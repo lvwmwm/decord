@@ -1,15 +1,15 @@
-// Module ID: 11401
-// Function ID: 11402
+// Module ID: 11624
+// Function ID: 11625
 // Name: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
-// Dependencies: [676, 7201, 7901, 4700, 2]
+// Dependencies: [673, 7210, 7910, 4700, 2]
 // Exports: handleRoleSubscriptionPurchaseSystemMessageCtaClicked
 
-// Module 11401 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
+// Module 11624 (handleRoleSubscriptionPurchaseSystemMessageCtaClicked)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
-import trackInviteDefault from "trackInvite" /* 7201 */;
-import identityHook from "identityHook" /* 7901 */;
+import trackInviteDefault from "trackInvite" /* 7210 */;
+import identityHook from "identityHook" /* 7910 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/guild_role_subscriptions/native/system_message/GuildRoleSubscriptionSystemMessageUtils.tsx");

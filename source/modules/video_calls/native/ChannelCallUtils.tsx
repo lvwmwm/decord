@@ -1,19 +1,19 @@
-// Module ID: 16792
-// Function ID: 16793
+// Module ID: 17028
+// Function ID: 17029
 // Name: voiceSettings
-// Dependencies: [19, 4568, 676, 21, 1236, 16793, 6245, 4445, 4721, 4858, 16790, 2009, 16794, 4544, 16795, 9909, 4332, 10084, 8754, 7, 4194, 8632, 2]
+// Dependencies: [19, 4568, 673, 21, 1233, 17029, 6254, 4445, 4721, 4858, 17026, 2008, 17030, 4544, 17031, 9931, 4332, 10106, 8769, 7, 4194, 8647, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 16792 (voiceSettings)
+// Module 17028 (voiceSettings)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import _modDef4858 from "module_4858" /* 4858 */;
-import registerAssetDefault from "registerAsset" /* 8754 */;
-import registerAssetDefault2 from "registerAsset" /* 10084 */;
-import registerAssetDefault3 from "registerAsset" /* 16793 */;
-import registerAssetDefault4 from "registerAsset" /* 16794 */;
+import registerAssetDefault from "registerAsset" /* 8769 */;
+import registerAssetDefault2 from "registerAsset" /* 10106 */;
+import registerAssetDefault3 from "registerAsset" /* 17029 */;
+import registerAssetDefault4 from "registerAsset" /* 17030 */;
 import closure_3 from "initialize" /* 4568 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -27,7 +27,7 @@ export const voiceSettings = function voiceSettings() {
   obj[0] = intl.string(getSystemLocale.t.NiTd0e);
   obj[1] = registerAssetDefault3;
   obj[2] = function onPress() {
-    let obj = callback(6245);
+    let obj = callback(6254);
     obj = { screen: constants.VOICE };
     obj.openUserSettings(obj);
     callback2(4445).hideActionSheet();
@@ -38,8 +38,8 @@ export const videoParticipantsHidden = function videoParticipantsHidden(arg0, ar
   const _require = arg0;
   closure_1 = arg1;
   const obj = { label: null, switchValue: null, onPress: null };
-  const intl = _require(1236).intl;
-  obj[0] = intl.string(_require(1236).t.hoZYAA);
+  const intl = _require(1233).intl;
+  obj[0] = intl.string(_require(1233).t.hoZYAA);
   obj[1] = !arg1;
   obj[2] = function onPress() {
     const result = callback(closure_1_2[8]).toggleVoiceParticipantsHidden(id.id, !callback);
@@ -69,8 +69,8 @@ export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStre
 export const selfVideoHidden = function selfVideoHidden(arg0, arg1) {
   const _require = arg1;
   const obj = { label: null, switchValue: null, onPress: null };
-  const intl = _require(1236).intl;
-  obj[0] = intl.string(_require(1236).t.MH8ESU);
+  const intl = _require(1233).intl;
+  obj[0] = intl.string(_require(1233).t.MH8ESU);
   obj[1] = !arg0;
   obj[2] = function onPress() {
     callback();
@@ -80,8 +80,8 @@ export const selfVideoHidden = function selfVideoHidden(arg0, arg1) {
 export const reportStreamIssue = function reportStreamIssue(stream) {
   const _require = stream;
   let obj = { label: null, icon: null, onPress: null };
-  const intl = _require(1236).intl;
-  obj[0] = intl.string(_require(1236).t.KHGhHf);
+  const intl = _require(1233).intl;
+  obj[0] = intl.string(_require(1233).t.KHGhHf);
   obj[1] = registerAssetDefault4;
   obj[2] = function onPress() {
     let obj = stream(closure_1_2[13]);
@@ -104,19 +104,19 @@ export const invite = function invite(isPrivate) {
   dependencyMap = arg2;
   if (null != arg1) {
     function onPress() {
-      let obj = isPrivate(9909);
+      let obj = isPrivate(9931);
       obj = { source: closure_1_6.STREAM, stream: closure_1 };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     }
   } else {
     onPress = function onPress() {
-      let obj = isPrivate(9909);
+      let obj = isPrivate(9931);
       obj = { source: closure_1_6.VOICE_CHANNEL };
       return obj.showInstantInviteActionSheet(isPrivate, obj);
     };
     if (null != arg2) {
       onPress = function onPress() {
-        let obj = isPrivate(9909);
+        let obj = isPrivate(9931);
         obj = { source: closure_1_6.ACTIVITY_INVITE, targetApplicationId: dependencyMap };
         return obj.showInstantInviteActionSheet(isPrivate, obj);
       };
@@ -128,8 +128,8 @@ export const invite = function invite(isPrivate) {
     };
   }
   let obj = { label: null, icon: null, onPress: null };
-  const intl = _require(1236).intl;
-  obj[0] = intl.string(_require(1236).t.VINpSK);
+  const intl = _require(1233).intl;
+  obj[0] = intl.string(_require(1233).t.VINpSK);
   obj[1] = registerAssetDefault2;
   obj[2] = onPress;
   return obj;
@@ -137,8 +137,8 @@ export const invite = function invite(isPrivate) {
 export const rtcDebugPanel = function rtcDebugPanel(arg0) {
   const _require = arg0;
   const obj = { label: null, icon: null, onPress: null };
-  const intl = _require(1236).intl;
-  obj[0] = intl.string(_require(1236).t.X8bCMe);
+  const intl = _require(1233).intl;
+  obj[0] = intl.string(_require(1233).t.X8bCMe);
   obj[1] = registerAssetDefault;
   obj[2] = function onPress() {
     callback();

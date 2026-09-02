@@ -1,9 +1,9 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 13684
+// Function ID: 13685
 // Name: setUserID
 // Dependencies: [4582, 3, 4362, 2]
 
-// Module 13461 (setUserID)
+// Module 13684 (setUserID)
 import timestampDefault from "timestamp" /* 3 */;
 import onDefault from "on" /* 4582 */;
 

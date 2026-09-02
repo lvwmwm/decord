@@ -1,12 +1,12 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17685
+// Function ID: 17686
 // Name: _getCurrentTask
-// Dependencies: [5, 676, 4713, 503, 4377, 2]
+// Dependencies: [5, 673, 4713, 500, 4377, 2]
 // Exports: completeTask, getCurrentTask, resendVerificationCode
 
-// Module 17449 (_getCurrentTask)
+// Module 17685 (_getCurrentTask)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _getCurrentTask() {
@@ -16,7 +16,7 @@ function _getCurrentTask() {
     obj1 = { url: null, trackedActionData: null, rejectWithError: true };
     obj1[0] = closure_1_4.SAFETY_FLOWS_TASK;
     const obj2 = { event: null };
-    obj2[0] = closure_1_0(503).NetworkActionNames.USER_VERIFY;
+    obj2[0] = closure_1_0(500).NetworkActionNames.USER_VERIFY;
     obj1[1] = obj2;
     closure_0 = yield v0(4713).get(obj1);
     let body = null;
@@ -45,7 +45,7 @@ function _completeTask() {
       obj1[0] = closure_1_4.SAFETY_FLOWS_TASK;
       obj1[1] = callback;
       const obj2 = { event: null };
-      obj2[0] = callback(503).NetworkActionNames.USER_VERIFY;
+      obj2[0] = callback(500).NetworkActionNames.USER_VERIFY;
       obj1[2] = obj2;
       yield v0(4713).post(obj1);
       return body.body;

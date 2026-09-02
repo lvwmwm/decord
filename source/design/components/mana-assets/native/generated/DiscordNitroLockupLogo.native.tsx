@@ -1,16 +1,16 @@
-// Module ID: 6465
-// Function ID: 6466
+// Module ID: 6474
+// Function ID: 6475
 // Name: DiscordNitroLockupLogo
-// Dependencies: [17, 21, 712, 4197, 6466, 2]
+// Dependencies: [17, 21, 709, 4197, 6475, 2]
 // Exports: DiscordNitroLockupLogo
 
-// Module 6465 (DiscordNitroLockupLogo)
+// Module 6474 (DiscordNitroLockupLogo)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import metadataDefault from "metadata" /* 6466 */;
+import metadataDefault from "metadata" /* 6475 */;
 
 const Image = get_ActivityIndicator.Image;
 const jsx = jsxProd.jsx;

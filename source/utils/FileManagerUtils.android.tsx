@@ -1,12 +1,12 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 8550
+// Function ID: 8551
 // Name: _readFile
-// Dependencies: [5, 3, 1271, 2]
+// Dependencies: [5, 3, 1270, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8537 (_readFile)
+// Module 8550 (_readFile)
 import timestampDefault from "timestamp" /* 3 */;
-import enforcingDefault from "enforcing" /* 1271 */;
+import enforcingDefault from "enforcing" /* 1270 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 function _readFile() {
@@ -72,7 +72,7 @@ function _readFile() {
                 c7 = 1;
                 c8 = 1;
                 obj1 = { value: null, done: false };
-                obj1[0] = callback(1271).fileExists(tmp37 + "/" + tmp35);
+                obj1[0] = callback(1270).fileExists(tmp37 + "/" + tmp35);
                 return obj1;
               }
               tmp35 = dependencyMap;
@@ -88,7 +88,7 @@ function _readFile() {
               return obj2;
             } else if (arg1) {
               c6 = 1;
-              obj2 = callback(1271);
+              obj2 = callback(1270);
               c7 = 3;
               c8 = 1;
               const obj3 = { value: null, done: false };

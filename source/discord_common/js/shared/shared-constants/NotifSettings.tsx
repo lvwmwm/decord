@@ -1,9 +1,9 @@
-// Module ID: 14100
-// Function ID: 14101
+// Module ID: 14323
+// Function ID: 14324
 // Name: NotifSettings
 // Dependencies: [2]
 
-// Module 14100 (NotifSettings)
+// Module 14323 (NotifSettings)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/NotifSettings.tsx");

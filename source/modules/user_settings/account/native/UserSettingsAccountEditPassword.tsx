@@ -1,24 +1,24 @@
-// Module ID: 14383
-// Function ID: 14384
+// Module ID: 14606
+// Function ID: 14607
 // Name: componentWillUnmount
-// Dependencies: [19, 17, 1380, 6246, 1922, 676, 21, 4478, 712, 4204, 7756, 7763, 12, 698, 7762, 7766, 14384, 4474, 1236, 4926, 7705, 4928, 7159, 589, 38, 1499, 2]
+// Dependencies: [19, 17, 1379, 6255, 1921, 673, 21, 4478, 709, 4204, 7765, 7772, 12, 695, 7771, 7775, 14607, 4474, 1233, 4926, 7714, 4928, 7168, 586, 38, 1498, 2]
 // Exports: default
 
-// Module 14383 (componentWillUnmount)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 14606 (componentWillUnmount)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
 import Button from "Button" /* 4928 */;
-import TextInput from "TextInput" /* 7705 */;
-import saveProfileAndAccountRequestAll from "saveProfileAndAccountRequest" /* 7756 */;
-import handleOpenEmailVerificationDefault from "handleOpenEmailVerification" /* 7766 */;
-import registerAssetDefault from "registerAsset" /* 14384 */;
+import TextInput from "TextInput" /* 7714 */;
+import saveProfileAndAccountRequestAll from "saveProfileAndAccountRequest" /* 7765 */;
+import handleOpenEmailVerificationDefault from "handleOpenEmailVerification" /* 7775 */;
+import registerAssetDefault from "registerAsset" /* 14607 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "handleUpdateUser" /* 1380 */;
-import closure_8 from "handleFormClose" /* 6246 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_7 from "handleUpdateUser" /* 1379 */;
+import closure_8 from "handleFormClose" /* 6255 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
@@ -27,7 +27,7 @@ require = arg1;
 ({ Image: c4, View: c5, ScrollView: closure_6 } = get_ActivityIndicator);
 ({ AnalyticEvents: c10, LoginRequiredActions: unpackModuleId } = ME);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let closure_14 = { newPassword: "category", password: 17069889 };
+let closure_14 = { newPassword: "call", password: 17078081 };
 createCacheKey = { onePass: { width: 20, height: 20 }, unverifiedWrapper: null, container: null, header: null, requiredActionsSubtitle: null, requiredActionsTitle: null, image: null };
 createCacheKey = { overflow: "hidden", borderRadius: ThemesDefault.radii.xs, marginVertical: 16 };
 createCacheKey[1] = createCacheKey;
@@ -206,7 +206,7 @@ prototype["render"] = function render() {
   obj8[8] = handleSubmit;
   items3[1] = closure_12(TextInput.TextInput, obj8);
   const obj9 = { text: null, onPress: null, loading: null, disabled: null };
-  const intl5 = tmp16(1236).intl;
+  const intl5 = tmp16(1233).intl;
   obj9[0] = intl5.string(getSystemLocale.t["FRep5/"]);
   obj9[1] = self.handleSubmit;
   obj9[2] = submitting;
@@ -230,7 +230,7 @@ EditPassword.contextType = require("ManaContext").ThemeContext;
 let result = require("set").fileFinishedImporting("modules/user_settings/account/native/UserSettingsAccountEditPassword.tsx");
 
 export default function EditPasswordWrapper() {
-  let obj = flag(7159);
+  let obj = flag(7168);
   const params = obj.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {
@@ -239,7 +239,7 @@ export default function EditPasswordWrapper() {
   if (flag == null) {
     flag = false;
   }
-  let tmpResult = tmp(589);
+  let tmpResult = tmp(586);
   let items = [closure_9, closure_8, closure_7];
   const stateFromStoresObject = tmpResult.useStateFromStoresObject(items, () => {
     const currentUser = closure_1_9.getCurrentUser();
@@ -279,7 +279,7 @@ export default function EditPasswordWrapper() {
     obj[8] = null != obj.getBannerText(currentUser);
     return obj;
   });
-  tmpResult = tmp(1499);
+  tmpResult = tmp(1498);
   obj = { navigation: tmpResult.useNavigation() };
   const merged = Object.assign(stateFromStoresObject);
   return callback(EditPassword, obj);

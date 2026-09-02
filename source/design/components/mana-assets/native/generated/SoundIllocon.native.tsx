@@ -1,14 +1,14 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 7036
+// Function ID: 7037
 // Name: SoundIllocon
-// Dependencies: [21, 5493, 7028, 2]
+// Dependencies: [21, 5501, 7037, 2]
 // Exports: SoundIllocon
 
-// Module 7027 (SoundIllocon)
+// Module 7036 (SoundIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 7028 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 7037 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SoundIllocon.native.tsx");

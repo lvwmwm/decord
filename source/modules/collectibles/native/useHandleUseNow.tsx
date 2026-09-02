@@ -1,13 +1,13 @@
-// Module ID: 10830
-// Function ID: 10831
+// Module ID: 11050
+// Function ID: 11051
 // Name: useHandleUseNow
-// Dependencies: [19, 10831, 4445, 4723, 4333, 4194, 1236, 10832, 9031, 2]
+// Dependencies: [19, 11051, 4445, 4723, 4333, 4194, 1233, 11052, 9045, 2]
 // Exports: useHandleUseNow
 
-// Module 10830 (useHandleUseNow)
-import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 9031 */;
+// Module 11050 (useHandleUseNow)
+import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 9045 */;
 import closure_3 from "noop" /* 19 */;
-import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 10831 */;
+import { RootNavigatorScreen } from "MODE_CHANGE_PHYSICS" /* 11051 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/native/useHandleUseNow.tsx");
@@ -36,11 +36,11 @@ export const useHandleUseNow = function useHandleUseNow(onSuccess) {
   const callback1 = React.useCallback(() => {
     let obj = callback(4194);
     obj = { key: "collectible shop apply error", content: null };
-    const intl = onSuccess(1236).intl;
-    obj[1] = intl.string(onSuccess(1236).t.CKsXk3);
+    const intl = onSuccess(1233).intl;
+    obj[1] = intl.string(onSuccess(1233).t.CKsXk3);
     obj.open(obj);
   }, []);
-  let obj = onSuccess(10832);
+  let obj = onSuccess(11052);
   handleUseNow = obj.useHandleUseNow({ product, onSuccess: callback, onError: callback1 });
   ({ handleUseNow, isApplying, canUseNow } = handleUseNow);
   const tmp4 = useOpenProfileSettingsDefault({ analyticsLocations });

@@ -1,14 +1,14 @@
-// Module ID: 16035
-// Function ID: 16036
+// Module ID: 16266
+// Function ID: 16267
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 7384, 21, 4478, 647, 4928, 1236, 2]
+// Dependencies: [19, 17, 7393, 21, 4478, 644, 4928, 1233, 2]
 // Exports: ForYouLoadMore
 
-// Module 16035 (ForYouLoadMore)
+// Module 16266 (ForYouLoadMore)
 import noopAll from "noop" /* 19 */;
-import defaultAreStatesEqual from "defaultAreStatesEqual" /* 647 */;
+import defaultAreStatesEqual from "defaultAreStatesEqual" /* 644 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_4 from "_validate" /* 7384 */;
+import closure_4 from "_validate" /* 7393 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -26,8 +26,8 @@ export const ForYouLoadMore = function ForYouLoadMore(onPressLoad) {
     let tmp4Result = tmp4(closure_2, {});
   } else {
     obj = { variant: "secondary", grow: true, size: "md", text: null, onPress: null };
-    const intl = tmp2(1236).intl;
-    obj[3] = intl.string(tmp2(1236).t["Q/LSXp"]);
+    const intl = tmp2(1233).intl;
+    obj[3] = intl.string(tmp2(1233).t["Q/LSXp"]);
     obj[4] = onPressLoad.onPressLoad;
     tmp4Result = tmp4(tmp2(4928).Button, obj);
   }

@@ -1,13 +1,13 @@
-// Module ID: 16595
-// Function ID: 16596
+// Module ID: 16830
+// Function ID: 16831
 // Name: useHandleOAuthNavigation
-// Dependencies: [19, 676, 9278, 4723, 9284, 2009, 1231, 2]
+// Dependencies: [19, 673, 9291, 4723, 9297, 2008, 1228, 2]
 // Exports: default
 
-// Module 16595 (useHandleOAuthNavigation)
+// Module 16830 (useHandleOAuthNavigation)
 import closure_3 from "noop" /* 19 */;
-import { ComponentActions } from "ME" /* 676 */;
-import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9278 */;
+import { ComponentActions } from "ME" /* 673 */;
+import { OAUTH2_AUTHORIZE_MODAL_KEY as closure_5 } from "OAUTH2_AUTHORIZE_MODAL_KEY" /* 9291 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/native/useHandleOAuthNavigation.tsx");

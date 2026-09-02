@@ -1,16 +1,16 @@
-// Module ID: 10990
-// Function ID: 10991
+// Module ID: 11210
+// Function ID: 11211
 // Name: _loop
-// Dependencies: [4217, 1628, 9615, 10991, 1641, 1496, 2]
+// Dependencies: [4217, 1627, 9628, 11211, 1640, 1495, 2]
 // Exports: default
 
-// Module 10990 (_loop)
+// Module 11210 (_loop)
 import set from "set" /* 2 */;
-import context from "context" /* 1496 */;
-import APP_ENTRY_KEYS from "APP_ENTRY_KEYS" /* 1641 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9615 */;
+import context from "context" /* 1495 */;
+import APP_ENTRY_KEYS from "APP_ENTRY_KEYS" /* 1640 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 9628 */;
 import module_4217 from "module_4217" /* 4217 */;
-import useSafeAreaInsets from "useSafeAreaInsets" /* 1628 */;
+import useSafeAreaInsets from "useSafeAreaInsets" /* 1627 */;
 
 let obj = { main: null, share: null };
 obj = {};

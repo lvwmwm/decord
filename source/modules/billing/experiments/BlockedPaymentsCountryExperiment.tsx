@@ -1,14 +1,14 @@
-// Module ID: 7162
-// Function ID: 7163
+// Module ID: 7171
+// Function ID: 7172
 // Name: useBlockedPaymentsConfig
-// Dependencies: [4389, 1468, 7163, 2]
+// Dependencies: [4389, 1467, 7172, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
-// Module 7162 (useBlockedPaymentsConfig)
+// Module 7171 (useBlockedPaymentsConfig)
 import set from "set" /* 2 */;
-import useGeoForUserDefault from "useGeoForUser" /* 7163 */;
+import useGeoForUserDefault from "useGeoForUser" /* 7172 */;
 import createExperiment from "createExperiment" /* 4389 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const items = [{ id: 1, label: "Payments Blocked", config: { paymentsBlocked: true } }];
 let closure_2 = createExperiment.createExperiment({ kind: "user", id: "2022-03_block_russian_purchases", label: "Block purchases based on country", defaultConfig: { paymentsBlocked: false }, treatments: items });

@@ -1,12 +1,12 @@
-// Module ID: 8575
-// Function ID: 8576
+// Module ID: 8590
+// Function ID: 8591
 // Name: nativeEventEmitter
-// Dependencies: [17, 644, 705, 2]
+// Dependencies: [17, 641, 702, 2]
 
-// Module 8575 (nativeEventEmitter)
+// Module 8590 (nativeEventEmitter)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 ({ NativeEventEmitter, NativeModules } = get_ActivityIndicator);
 const obj = keys.create(() => ({ isMuted: false }));

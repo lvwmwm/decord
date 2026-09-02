@@ -1,12 +1,12 @@
-// Module ID: 1362
-// Function ID: 1363
+// Module ID: 1361
+// Function ID: 1362
 // Name: ThemeContextFlags
-// Dependencies: [1359, 2]
+// Dependencies: [1358, 2]
 // Exports: hasThemeFlag, setThemeFlag, useThemeFlag
 
-// Module 1362 (ThemeContextFlags)
+// Module 1361 (ThemeContextFlags)
 import set from "set" /* 2 */;
-import json from "json" /* 1359 */;
+import json from "json" /* 1358 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/components/ThemeContextProvider/ThemeContextFlags.tsx");
 

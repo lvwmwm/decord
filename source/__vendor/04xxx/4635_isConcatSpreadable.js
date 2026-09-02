@@ -1,20 +1,20 @@
 // Module ID: 4635
 // Function ID: 4636
 // Name: isConcatSpreadable
-// Dependencies: [608, 599, 618]
+// Dependencies: [605, 596, 615]
 
 // Module 4635 (isConcatSpreadable)
-import _mod599 from "module_599" /* 599 */;
-import _mod608 from "module_608" /* 608 */;
-import baseIsArguments from "baseIsArguments" /* 618 */;
+import _mod596 from "module_596" /* 596 */;
+import _mod605 from "module_605" /* 605 */;
+import baseIsArguments from "baseIsArguments" /* 615 */;
 
 let isConcatSpreadable;
-if (_mod608) {
-  isConcatSpreadable = _mod608.isConcatSpreadable;
+if (_mod605) {
+  isConcatSpreadable = _mod605.isConcatSpreadable;
 }
 
 export default function isFlattenable(arg0) {
-  let tmp3 = _mod599(arg0) || baseIsArguments(arg0);
+  let tmp3 = _mod596(arg0) || baseIsArguments(arg0);
   if (!tmp3) {
     let tmp5 = isConcatSpreadable;
     if (isConcatSpreadable) {

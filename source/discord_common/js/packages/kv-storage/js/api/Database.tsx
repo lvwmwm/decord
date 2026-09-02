@@ -1,12 +1,12 @@
-// Module ID: 1964
-// Function ID: 1965
+// Module ID: 1963
+// Function ID: 1964
 // Name: open
-// Dependencies: [5, 1965, 1963, 1966, 10, 2]
+// Dependencies: [5, 1964, 1962, 1965, 10, 2]
 
-// Module 1964 (open)
-import TableId from "TableId" /* 1963 */;
-import open from "open" /* 1965 */;
-import logger from "logger" /* 1966 */;
+// Module 1963 (open)
+import TableId from "TableId" /* 1962 */;
+import open from "open" /* 1964 */;
+import logger from "logger" /* 1965 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -40,7 +40,7 @@ Database["open"] = function open(arg0, arg1) {
   })();
 };
 Database["openSyncUnsafe"] = function openSyncUnsafe(arg0, arg1) {
-  const Host = obj(1965).Host;
+  const Host = obj(1964).Host;
   const openSyncUnsafeResult = Host.openSyncUnsafe(arg0, arg1);
   if (typeof Database !== "function") {
     HermesBuiltin.throwTypeError();
@@ -48,9 +48,9 @@ Database["openSyncUnsafe"] = function openSyncUnsafe(arg0, arg1) {
   obj = Object.create(Database.prototype);
   obj.raw = openSyncUnsafeResult;
   obj.name = openSyncUnsafeResult.name;
-  obj.lastState = obj(1963).DatabaseState.Open;
+  obj.lastState = obj(1962).DatabaseState.Open;
   obj.handle = openSyncUnsafeResult.handle;
-  const Runtime = tmp2(1966).Runtime;
+  const Runtime = tmp2(1965).Runtime;
   obj.databaseStateCallback = Runtime.addDatabaseStateCallback((arg0, lastState) => {
     if (obj.handle === arg0) {
       tmp.lastState = lastState;

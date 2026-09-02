@@ -1,9 +1,9 @@
-// Module ID: 8490
-// Function ID: 8491
+// Module ID: 8503
+// Function ID: 8504
 // Name: prototype
 // Dependencies: [2]
 
-// Module 8490 (prototype)
+// Module 8503 (prototype)
 import set from "set" /* 2 */;
 
 const prototype = function RevenueError(errorHandlingBehavior) {

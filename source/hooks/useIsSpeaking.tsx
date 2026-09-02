@@ -1,13 +1,13 @@
-// Module ID: 9492
-// Function ID: 9493
+// Module ID: 9505
+// Function ID: 9506
 // Name: useIsSpeaking
-// Dependencies: [4965, 1981, 5363, 4497, 589, 2]
+// Dependencies: [4965, 1980, 5371, 4497, 586, 2]
 // Exports: default, getIsSpeaking
 
-// Module 9492 (useIsSpeaking)
+// Module 9505 (useIsSpeaking)
 import closure_2 from "handleSoundCreateOrUpdate" /* 4965 */;
-import closure_3 from "handleConnectionOpen" /* 1981 */;
-import closure_4 from "anyoneHasFlagInContext" /* 5363 */;
+import closure_3 from "handleConnectionOpen" /* 1980 */;
+import closure_4 from "anyoneHasFlagInContext" /* 5371 */;
 import closure_5 from "updateVoiceState" /* 4497 */;
 
 const require = arg1;

@@ -1,13 +1,13 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 17000
+// Function ID: 17001
 // Name: useVoicePanelButtonStyles
-// Dependencies: [4478, 712, 8569, 2]
+// Dependencies: [4478, 709, 8584, 2]
 // Exports: useVoicePanelButtonStyles
 
-// Module 16764 (useVoicePanelButtonStyles)
+// Module 17000 (useVoicePanelButtonStyles)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
-import map from "map" /* 8569 */;
+import ThemesDefault from "Themes" /* 709 */;
+import map from "map" /* 8584 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 let closure_3 = createCacheKey.createStyles((arg0) => {
@@ -23,7 +23,7 @@ let closure_3 = createCacheKey.createStyles((arg0) => {
   obj[5] = { color: ThemesDefault.unsafe_rawColors.RED_400 };
   const obj2 = { color: ThemesDefault.unsafe_rawColors.RED_400 };
   obj[6] = { color: ThemesDefault.colors.BLACK };
-  const colors2 = tmp(712).colors;
+  const colors2 = tmp(709).colors;
   obj[7] = { backgroundColor: arg0 ? colors2.CONTROL_BRAND_FOREGROUND : colors2.WHITE };
   return obj;
 });

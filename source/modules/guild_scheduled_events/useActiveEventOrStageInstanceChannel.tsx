@@ -1,13 +1,13 @@
-// Module ID: 15776
-// Function ID: 15777
+// Module ID: 16007
+// Function ID: 16008
 // Name: useActiveEventOrStageInstanceChannel
-// Dependencies: [1387, 9631, 15775, 2]
+// Dependencies: [1386, 9644, 16006, 2]
 // Exports: useActiveEventOrStageInstanceChannel
 
-// Module 15776 (useActiveEventOrStageInstanceChannel)
-import useGuildEvents from "useGuildEvents" /* 9631 */;
-import useLiveStageChannelsDefault from "useLiveStageChannels" /* 15775 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+// Module 16007 (useActiveEventOrStageInstanceChannel)
+import useGuildEvents from "useGuildEvents" /* 9644 */;
+import useLiveStageChannelsDefault from "useLiveStageChannels" /* 16006 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useActiveEventOrStageInstanceChannel.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 12285
-// Function ID: 12286
+// Module ID: 12509
+// Function ID: 12510
 // Name: DiscoverabilityLandingScene
-// Dependencies: [19, 17, 12215, 1922, 676, 21, 4478, 712, 5492, 1499, 589, 12222, 691, 12242, 12286, 12235, 503, 6008, 1236, 2]
+// Dependencies: [19, 17, 12439, 1921, 673, 21, 4478, 709, 5500, 1498, 586, 12446, 688, 12466, 12510, 12459, 500, 6016, 1233, 2]
 
-// Module 12285 (DiscoverabilityLandingScene)
-import keys from "keys" /* 691 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import NavigationStack from "NavigationStack" /* 6008 */;
-import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12235 */;
+// Module 12509 (DiscoverabilityLandingScene)
+import keys from "keys" /* 688 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import NavigationStack from "NavigationStack" /* 6016 */;
+import ContactSyncNameInputDefault from "ContactSyncNameInput" /* 12459 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { useContactSyncModalStore } from "ContactSyncModes" /* 12215 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import { useContactSyncModalStore } from "ContactSyncModes" /* 12439 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -66,9 +66,9 @@ function DiscoverabilityNameScene() {
   }, items);
   let obj = { style: tmp.container, children: null };
   callback = React.useCallback((arg0) => {
-    const result = allowPhone(12242).startContactSyncForDiscoverability(arg0);
-    const obj = allowPhone(12242);
-    const result1 = allowPhone(12242).closeDiscoverabilityModal(false);
+    const result = allowPhone(12466).startContactSyncForDiscoverability(arg0);
+    const obj = allowPhone(12466);
+    const result1 = allowPhone(12466).closeDiscoverabilityModal(false);
   }, []);
   obj = { onNext: callback, loading: false, initialName: null };
   const tmp2 = useContactSyncModalStore();
@@ -87,7 +87,7 @@ class DiscoverabilityModal {
             let obj = {};
             obj = {
               ignoreKeyboard: true,
-              impressionName: callback(503).ImpressionNames.DISCOVERABILITY,
+              impressionName: callback(500).ImpressionNames.DISCOVERABILITY,
               fullscreen: true,
               headerLeft() {
                 return null;
@@ -99,10 +99,10 @@ class DiscoverabilityModal {
                 return callback(closure_9, {});
               }
             };
-            obj[callback(691).DiscoverabilityScenes.LANDING] = obj;
+            obj[callback(688).DiscoverabilityScenes.LANDING] = obj;
             obj = {
               ignoreKeyboard: true,
-              impressionName: callback(503).ImpressionNames.DISCOVERABILITY,
+              impressionName: callback(500).ImpressionNames.DISCOVERABILITY,
               fullscreen: true,
               headerTitle() {
                 return null;
@@ -111,7 +111,7 @@ class DiscoverabilityModal {
                 return callback(closure_10, {});
               }
             };
-            obj[callback(691).DiscoverabilityScenes.NAME] = obj;
+            obj[callback(688).DiscoverabilityScenes.NAME] = obj;
             return obj;
           }, []),
       initialRouteName: require("keys").DiscoverabilityScenes.LANDING,

@@ -1,11 +1,11 @@
-// Module ID: 16119
-// Function ID: 16120
+// Module ID: 16350
+// Function ID: 16351
 // Name: useMainTabsChannelScreenStyles
-// Dependencies: [19, 17, 4478, 712, 4217, 2]
+// Dependencies: [19, 17, 4478, 709, 4217, 2]
 // Exports: useMainTabsChannelScreenStyles
 
-// Module 16119 (useMainTabsChannelScreenStyles)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16350 (useMainTabsChannelScreenStyles)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

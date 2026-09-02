@@ -1,12 +1,12 @@
-// Module ID: 11544
-// Function ID: 11545
+// Module ID: 11767
+// Function ID: 11768
 // Name: metadata
 // Dependencies: [2]
 
-// Module 11544 (metadata)
+// Module 11767 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiAngryExample-1x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/da89b5322624b97743339baa1597e554b28028a8b8df0f5a0eea44bd1fa09683.png";
-export const metadata = { fileBytes: 8309 };
+export default "https://cdn.discordapp.com/assets/content/48d7bc65c4b7246db64264467a22e13969a44163554ac18a8d807a025c1befcd.png";
+export const metadata = { fileBytes: 7191 };

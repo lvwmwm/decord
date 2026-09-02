@@ -1,14 +1,14 @@
-// Module ID: 15899
-// Function ID: 15900
+// Module ID: 16130
+// Function ID: 16131
 // Name: transitionGuildsBarToGuildOrOpenSelectedChannel
-// Dependencies: [1981, 4299, 676, 4333, 4332, 4489, 6186, 2]
+// Dependencies: [1980, 4299, 673, 4333, 4332, 4489, 6195, 2]
 // Exports: default
 
-// Module 15899 (transitionGuildsBarToGuildOrOpenSelectedChannel)
+// Module 16130 (transitionGuildsBarToGuildOrOpenSelectedChannel)
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
-import closure_2 from "handleConnectionOpen" /* 1981 */;
+import closure_2 from "handleConnectionOpen" /* 1980 */;
 import closure_3 from "handleConnectionOpen" /* 4299 */;
-import { ME } from "ME" /* 676 */;
+import { ME } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guilds_bar/native/utils/transitionGuildsBarToGuildOrOpenSelectedChannel.tsx");
@@ -51,7 +51,7 @@ export default function transitionGuildsBarToGuildOrOpenSelectedChannel(arg0) {
     tmpResult = tmp(4489);
     tmpResult.transitionToChannel(tmp4);
   } else {
-    tmp(6186).transitionToGuild(arg0);
-    const tmpResult1 = tmp(6186);
+    tmp(6195).transitionToGuild(arg0);
+    const tmpResult1 = tmp(6195);
   }
 };

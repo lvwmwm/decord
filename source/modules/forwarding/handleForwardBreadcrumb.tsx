@@ -1,14 +1,14 @@
-// Module ID: 11504
-// Function ID: 11505
+// Module ID: 11727
+// Function ID: 11728
 // Name: _handleForwardBreadcrumb
-// Dependencies: [5, 1387, 1909, 676, 6185, 5457, 698, 6091, 2]
+// Dependencies: [5, 1386, 1908, 673, 6194, 5465, 695, 6099, 2]
 // Exports: default
 
-// Module 11504 (_handleForwardBreadcrumb)
+// Module 11727 (_handleForwardBreadcrumb)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import ME from "ME" /* 676 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function _handleForwardBreadcrumb() {

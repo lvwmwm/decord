@@ -1,12 +1,12 @@
-// Module ID: 13718
-// Function ID: 13719
+// Module ID: 13941
+// Function ID: 13942
 // Name: _openActivityDMLauncher
-// Dependencies: [5, 1498, 5954, 4491, 12804, 9515, 5973, 7268, 4340, 1626, 2]
+// Dependencies: [5, 1497, 5962, 4491, 13025, 9528, 5981, 7277, 4340, 1625, 2]
 // Exports: default
 
-// Module 13718 (_openActivityDMLauncher)
+// Module 13941 (_openActivityDMLauncher)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 
 const require = arg1;
 function _openActivityDMLauncher() {
@@ -20,107 +20,167 @@ function _openActivityDMLauncher() {
     c7 = 0;
     c8 = 0;
     const iter = (function*(arg0, customId) {
-      let id = tmp2;
-      if (flag === undefined) {
-        flag = false;
-      }
-      yield "PX_16";
-      yield callback2(5954).fetchApplication(callback);
-      if (2 === tmp5) {
+      if (customId === 2) {
+        customId = 3;
+        HermesBuiltin.throwTypeError();
+      } else if (tmp4 === 3) {
         if (arg0 === 1) {
-          customId = 3;
           throw customId;
         } else if (arg0 === 2) {
-          customId = 3;
-          let obj3 = { value: null, done: true };
-          obj3[0] = customId;
-          return obj3;
+          let obj = { value: null, done: true };
+          obj[0] = customId;
+          return obj;
         } else {
-          let bot = customId;
-          bot = bot.bot;
-          id = undefined;
-          if (bot != null) {
-            id = bot.id;
-          }
-          if (null != bot) {
-            if (null != id) {
-              let obj9 = callback2(4491);
-              const obj4 = { recipientIds: null };
-              obj4[0] = id;
-              c7 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          customId = 2;
+          if (0 === c7) {
+            if (arg0 === 1) {
+              customId = 3;
+              throw customId;
+            } else if (arg0 === 2) {
+              customId = 3;
+              obj = { value: null, done: true };
+              obj[0] = customId;
+              return obj;
+            } else {
+              let id = tmp2;
+              let bot = tmp5;
+              let flag;
+              if (flag === undefined) {
+                flag = false;
+              }
+              bot = undefined;
+              id = undefined;
+              c7 = undefined;
+              customId = undefined;
+              c7 = 1;
               customId = 1;
-              const obj5 = { value: null, done: false };
-              obj5[0] = obj9.openPrivateChannel(obj4);
-              return obj5;
+              return { value: "PX_16", done: true };
             }
-          }
-          customId = 3;
-        }
-      } else if (3 === tmp5) {
-        if (arg0 === 1) {
-          customId = 3;
-          throw customId;
-        } else if (arg0 === 2) {
-          customId = 3;
-          let obj6 = { value: null, done: true };
-          obj6[0] = customId;
-          return obj6;
-        } else {
-          c7 = customId;
-          obj6 = callback(12804);
-          c7 = 4;
-          customId = 1;
-          const obj7 = { value: null, done: false };
-          obj7[0] = obj6.getCustomActivityLinkParams(callback, closure_3, dependencyMap);
-          return obj7;
-        }
-      } else if (4 === tmp5) {
-        if (arg0 === 1) {
-          customId = 3;
-          throw customId;
-        } else if (arg0 !== 2) {
-          customId = customId.customId;
-          if (flag) {
-            obj3 = callback(4340);
-            const bestActiveInput = obj3.getBestActiveInput();
-            if (bestActiveInput != null) {
-              const obj8 = { type: null, context: null };
-              obj8[0] = callback(1626).KeyboardTypes.APP_LAUNCHER;
-              obj9 = { application: null, initialRouteName: null, customId: null, referrerId: null };
-              obj9[0] = bot;
-              obj9[1] = flag.APPLICATION_VIEW;
-              obj9[2] = customId;
-              obj9[3] = callback2;
-              obj8[1] = obj9;
-              bestActiveInput.openCustomKeyboard(obj8);
+          } else if (1 === tmp5) {
+            if (arg0 === 1) {
+              customId = 3;
+              throw customId;
+            } else if (arg0 === 2) {
+              customId = 3;
+              obj1 = { value: null, done: true };
+              obj1[0] = customId;
+              return obj1;
+            } else {
+              c7 = 2;
+              customId = 1;
+              const obj2 = { value: null, done: false };
+              obj2[0] = callback2(5962).fetchApplication(callback);
+              return obj2;
             }
           } else {
-            const obj10 = { targetApplicationId: null, locationObject: null, channelId: null, analyticsLocations: null, commandOrigin: null, referrerId: null, customId: null };
-            obj10[0] = callback;
-            obj10[1] = {};
-            obj10[2] = c7;
-            const items = [callback2(5973).ACTIVITY_BOOKMARK];
-            obj10[3] = items;
-            obj10[4] = callback(7268).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
-            obj10[5] = callback2;
-            obj10[6] = customId;
-            c7 = 5;
-            customId = 1;
-            const obj11 = { value: null, done: false };
-            obj11[0] = callback2(9515)(obj10);
-            return obj11;
+            if (2 === tmp5) {
+              if (arg0 === 1) {
+                customId = 3;
+                throw customId;
+              } else if (arg0 === 2) {
+                customId = 3;
+                let obj3 = { value: null, done: true };
+                obj3[0] = customId;
+                return obj3;
+              } else {
+                bot = customId;
+                bot = bot.bot;
+                id = undefined;
+                if (bot != null) {
+                  id = bot.id;
+                }
+                if (null != bot) {
+                  if (null != id) {
+                    let obj9 = callback2(4491);
+                    const obj4 = { recipientIds: null };
+                    obj4[0] = id;
+                    c7 = 3;
+                    customId = 1;
+                    const obj5 = { value: null, done: false };
+                    obj5[0] = obj9.openPrivateChannel(obj4);
+                    return obj5;
+                  }
+                }
+                customId = 3;
+              }
+            } else if (3 === tmp5) {
+              if (arg0 === 1) {
+                customId = 3;
+                throw customId;
+              } else if (arg0 === 2) {
+                customId = 3;
+                let obj6 = { value: null, done: true };
+                obj6[0] = customId;
+                return obj6;
+              } else {
+                c7 = customId;
+                obj6 = callback(13025);
+                c7 = 4;
+                customId = 1;
+                const obj7 = { value: null, done: false };
+                obj7[0] = obj6.getCustomActivityLinkParams(callback, closure_3, dependencyMap);
+                return obj7;
+              }
+            } else if (4 === tmp5) {
+              if (arg0 === 1) {
+                customId = 3;
+                throw customId;
+              } else if (arg0 !== 2) {
+                customId = customId.customId;
+                if (flag) {
+                  obj3 = callback(4340);
+                  const bestActiveInput = obj3.getBestActiveInput();
+                  if (bestActiveInput != null) {
+                    const obj8 = { type: null, context: null };
+                    obj8[0] = callback(1625).KeyboardTypes.APP_LAUNCHER;
+                    obj9 = { application: null, initialRouteName: null, customId: null, referrerId: null };
+                    obj9[0] = bot;
+                    obj9[1] = flag.APPLICATION_VIEW;
+                    obj9[2] = customId;
+                    obj9[3] = callback2;
+                    obj8[1] = obj9;
+                    bestActiveInput.openCustomKeyboard(obj8);
+                  }
+                } else {
+                  const obj10 = { targetApplicationId: null, locationObject: null, channelId: null, analyticsLocations: null, commandOrigin: null, referrerId: null, customId: null };
+                  obj10[0] = callback;
+                  obj10[1] = {};
+                  obj10[2] = c7;
+                  const items = [callback2(5981).ACTIVITY_BOOKMARK];
+                  obj10[3] = items;
+                  obj10[4] = callback(7277).CommandOrigin.ACTIVITY_BOOKMARK_EMBED;
+                  obj10[5] = callback2;
+                  obj10[6] = customId;
+                  c7 = 5;
+                  customId = 1;
+                  const obj11 = { value: null, done: false };
+                  obj11[0] = callback2(9528)(obj10);
+                  return obj11;
+                }
+              }
+            } else if (arg0 === 1) {
+              customId = 3;
+              throw customId;
+            } else if (arg0 === 2) {
+              customId = 3;
+              obj = { value: null, done: true };
+              obj[0] = customId;
+              return obj;
+            }
+            customId = 3;
+            const obj12 = { value: null, done: true };
+            obj12[0] = customId;
+            return obj12;
           }
+        } catch (tmp49) {
+          customId = tmp;
+          throw tmp49;
         }
-      } else if (arg0 === 1) {
-        customId = 3;
-        throw customId;
-      } else if (arg0 === 2) {
-        customId = 3;
-        const obj = { value: null, done: true };
-        obj[0] = customId;
-        return obj;
       }
-      return customId;
     })();
     iter.next();
     return iter;

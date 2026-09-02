@@ -1,7 +1,7 @@
 // Module ID: 4654
 // Function ID: 4655
 // Name: _openRobloxURLWithRootPlaceId
-// Dependencies: [5, 4501, 676, 4655, 12, 4656, 4184, 2]
+// Dependencies: [5, 4501, 673, 4655, 12, 4656, 4184, 2]
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, hasSubgameInfoChanged, isRobloxSubgame, isRobloxSubgameApplication, isRobloxSubgameGame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId, updateRunningGameWithRobloxSubgameInfo
 
 // Module 4654 (_openRobloxURLWithRootPlaceId)
@@ -9,7 +9,7 @@ import applyDefault from "apply" /* 12 */;
 import ROBLOX_PROTOCOL_URL from "ROBLOX_PROTOCOL_URL" /* 4655 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { isDetectionEnabled } from "initialize" /* 4501 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function _openRobloxURLWithRootPlaceId() {

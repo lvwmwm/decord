@@ -1,13 +1,13 @@
-// Module ID: 16765
-// Function ID: 16766
+// Module ID: 17001
+// Function ID: 17002
 // Name: AnimatedButtonWrapper
-// Dependencies: [19, 17, 11840, 21, 4478, 712, 4217, 16676, 500, 4927, 4479, 2]
+// Dependencies: [19, 17, 12063, 21, 4478, 709, 4217, 16911, 1234, 4927, 4479, 2]
 // Exports: default
 
-// Module 16765 (AnimatedButtonWrapper)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 17001 (AnimatedButtonWrapper)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import { MODE_CHANGE_PHYSICS } from "VoicePanelModes" /* 11840 */;
+import { MODE_CHANGE_PHYSICS } from "VoicePanelModes" /* 12063 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importDefaultResult from "module_4217" /* 4217 */;

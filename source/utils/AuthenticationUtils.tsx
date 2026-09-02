@@ -1,13 +1,13 @@
-// Module ID: 1367
-// Function ID: 1368
+// Module ID: 1366
+// Function ID: 1367
 // Name: getToken
-// Dependencies: [707, 1368, 2]
+// Dependencies: [704, 1367, 2]
 // Exports: getArtForPath, getToken, isAuthenticated
 
-// Module 1367 (getToken)
+// Module 1366 (getToken)
 import set from "set" /* 2 */;
-import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
-import registerAsset from "registerAsset" /* 1368 */;
+import setSecondaryTokenAll from "setSecondaryToken" /* 704 */;
+import registerAsset from "registerAsset" /* 1367 */;
 
 const result = set.fileFinishedImporting("utils/AuthenticationUtils.tsx");
 

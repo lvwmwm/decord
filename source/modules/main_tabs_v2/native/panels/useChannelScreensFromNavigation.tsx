@@ -1,20 +1,20 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15827
+// Function ID: 15828
 // Name: getActiveTabsRoute
-// Dependencies: [32, 19, 1387, 1981, 4299, 676, 1394, 4333, 4332, 4335, 2]
+// Dependencies: [32, 19, 1386, 1980, 4299, 673, 1393, 4333, 4332, 4335, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 15596 (getActiveTabsRoute)
+// Module 15827 (getActiveTabsRoute)
 import coerceMainRoute from "coerceMainRoute" /* 4332 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import useChatLayoutDefault from "useChatLayout" /* 4335 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "handleConnectionOpen" /* 1981 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
 import closure_7 from "handleConnectionOpen" /* 4299 */;
-import { ME } from "ME" /* 676 */;
-import { isStaticChannelRoute } from "set" /* 1394 */;
+import { ME } from "ME" /* 673 */;
+import { isStaticChannelRoute } from "set" /* 1393 */;
 
 require = arg1;
 function getActiveTabsRoute(coerceTabsRouteResult) {

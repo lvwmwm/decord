@@ -1,11 +1,11 @@
-// Module ID: 7452
-// Function ID: 7453
+// Module ID: 7462
+// Function ID: 7463
 // Name: frozen
-// Dependencies: [595, 2]
+// Dependencies: [592, 2]
 
-// Module 7452 (frozen)
+// Module 7462 (frozen)
 import set from "set" /* 2 */;
-import Storage2 from "Storage" /* 595 */;
+import Storage2 from "Storage" /* 592 */;
 
 const frozen = Object.freeze({
   getItem(arg0) {

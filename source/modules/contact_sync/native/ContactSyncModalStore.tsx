@@ -1,15 +1,15 @@
-// Module ID: 12215
-// Function ID: 12216
+// Module ID: 12439
+// Function ID: 12440
 // Name: ContactSyncModes
-// Dependencies: [5225, 1922, 12216, 676, 644, 705, 2]
+// Dependencies: [5233, 1921, 12440, 673, 641, 702, 2]
 // Exports: getIsOnboarding, initialize, setAllowEmail, setAllowPhone, setAllowSync, setError, setName, setPermissionState, setPhone, setPhoneToken, setSuggestions, useIsOnboarding
 
-// Module 12215 (ContactSyncModes)
-import closure_2 from "set" /* 5225 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import { ContactPermissions } from "ContactSyncLandingPage" /* 12216 */;
-import { PlatformTypes } from "ME" /* 676 */;
-import keys from "keys" /* 644 */;
+// Module 12439 (ContactSyncModes)
+import closure_2 from "set" /* 5233 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import { ContactPermissions } from "ContactSyncLandingPage" /* 12440 */;
+import { PlatformTypes } from "ME" /* 673 */;
+import keys from "keys" /* 641 */;
 
 const require = arg1;
 let obj = { NORMAL: 0, [0]: "NORMAL", ONBOARDING: 1, [1]: "ONBOARDING", ONBOARDING_INVITE: 2, [2]: "ONBOARDING_INVITE" };
@@ -45,7 +45,7 @@ export const initialize = function initialize(arg0) {
 };
 export const setAllowSync = function setAllowSync(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -57,7 +57,7 @@ export const setAllowSync = function setAllowSync(arg0) {
 };
 export const setAllowPhone = function setAllowPhone(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -68,7 +68,7 @@ export const setAllowPhone = function setAllowPhone(arg0) {
 };
 export const setAllowEmail = function setAllowEmail(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -80,7 +80,7 @@ export const setAllowEmail = function setAllowEmail(arg0) {
 export const setSuggestions = function setSuggestions(arg0, arg1) {
   const _require = arg0;
   dependencyMap = arg1;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -92,7 +92,7 @@ export const setSuggestions = function setSuggestions(arg0, arg1) {
 };
 export const setPhone = function setPhone(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -103,7 +103,7 @@ export const setPhone = function setPhone(arg0) {
 };
 export const setPhoneToken = function setPhoneToken(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -130,7 +130,7 @@ export const setName = function setName(arg0) {
 };
 export const setPermissionState = function setPermissionState(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);
@@ -141,7 +141,7 @@ export const setPermissionState = function setPermissionState(arg0) {
 };
 export const setError = function setError(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_7.setState((arg0) => {
       obj = {};
       const merged = Object.assign(arg0);

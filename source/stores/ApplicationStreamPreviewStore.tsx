@@ -1,12 +1,12 @@
 // Module ID: 4665
 // Function ID: 4666
 // Name: reset
-// Dependencies: [4545, 12, 4544, 589, 709, 2]
+// Dependencies: [4545, 12, 4544, 586, 706, 2]
 
 // Module 4665 (reset)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import isStreamKey from "isStreamKey" /* 4544 */;
 import StreamIssueReportReasons from "StreamIssueReportReasons" /* 4545 */;
 import set from "set" /* 2 */;

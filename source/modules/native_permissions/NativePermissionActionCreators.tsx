@@ -1,11 +1,11 @@
-// Module ID: 5089
-// Function ID: 5090
+// Module ID: 5097
+// Function ID: 5098
 // Name: setPermission
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 
-// Module 5089 (setPermission)
+// Module 5097 (setPermission)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const prototype = function NativePermissionActionCreators() {
   return Object.create(new.target.prototype);

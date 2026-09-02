@@ -1,14 +1,14 @@
 // Module ID: 4384
 // Function ID: 4385
 // Name: useGuildAppliedBoostCount
-// Dependencies: [19, 4385, 1909, 4364, 4388, 589, 2]
+// Dependencies: [19, 4385, 1908, 4364, 4388, 586, 2]
 // Exports: default, getGuildPowerupsBoostCount
 
 // Module 4384 (useGuildAppliedBoostCount)
 import experiment from "experiment" /* 4388 */;
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "handleGameServerInstanceCreated" /* 4385 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "calculateAppliedBoosts" /* 4364 */;
 
 require = arg1;

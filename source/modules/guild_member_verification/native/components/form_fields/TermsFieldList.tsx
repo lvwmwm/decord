@@ -1,11 +1,11 @@
-// Module ID: 5556
-// Function ID: 5557
+// Module ID: 5564
+// Function ID: 5565
 // Name: TermsFieldListItem
-// Dependencies: [19, 17, 21, 4478, 712, 4474, 4468, 1236, 5557, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4474, 4468, 1233, 5565, 2]
 // Exports: default
 
-// Module 5556 (TermsFieldListItem)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 5564 (TermsFieldListItem)
+import ThemesDefault from "Themes" /* 709 */;
 import get_defaultRulesDefault from "get defaultRules" /* 4468 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "noop" /* 19 */;
@@ -48,8 +48,8 @@ export default function TermsFieldList(rules) {
   dependencyMap = tmp;
   let obj = { children: null };
   obj = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
-  const intl = rules(1236).intl;
-  obj[4] = intl.string(rules(1236).t.prJqwT);
+  const intl = rules(1233).intl;
+  obj[4] = intl.string(rules(1233).t.prJqwT);
   let items = [
     callback(rules(4474).Text, obj),
     rules.map((rule) => {

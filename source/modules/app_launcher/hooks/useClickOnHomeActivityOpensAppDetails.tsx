@@ -1,10 +1,10 @@
-// Module ID: 11661
-// Function ID: 11662
+// Module ID: 11884
+// Function ID: 11885
 // Name: useClickOnHomeActivityOpensAppDetails
 // Dependencies: [4166, 2]
 // Exports: useClickOnHomeActivityOpensAppDetails
 
-// Module 11661 (useClickOnHomeActivityOpensAppDetails)
+// Module 11884 (useClickOnHomeActivityOpensAppDetails)
 import set from "set" /* 2 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 16095
-// Function ID: 16096
+// Module ID: 16326
+// Function ID: 16327
 // Name: AddEmojiButton
-// Dependencies: [5, 32, 19, 17, 5623, 1925, 21, 1236, 4478, 712, 9098, 7507, 5068, 8228, 8039, 8622, 9102, 4328, 7616, 1493, 5989, 4474, 16092, 5070, 4296, 4204, 16088, 5493, 1431, 7705, 4322, 8006, 4423, 14811, 16041, 2]
+// Dependencies: [5, 32, 19, 17, 5631, 1924, 21, 1233, 4478, 709, 9112, 7517, 5076, 8237, 8048, 8637, 9116, 4328, 7626, 1492, 5997, 4474, 16323, 5078, 4296, 4204, 16319, 5501, 1430, 7714, 4322, 8015, 4423, 15040, 16272, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 16095 (AddEmojiButton)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import context from "context" /* 16041 */;
+// Module 16326 (AddEmojiButton)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import context from "context" /* 16272 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5623 */;
-import { EmojiIntention } from "set" /* 1925 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5631 */;
+import { EmojiIntention } from "set" /* 1924 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -124,13 +124,13 @@ function ReactActionSheetBase(content) {
             } else {
               closure_0 = tmp4;
               closure_1_5(true);
-              v0(8622).itemInteracted(closure_1_0.id, closure_1_6, "press_reply_send");
-              const obj5 = v0(8622);
+              v0(8637).itemInteracted(closure_1_0.id, closure_1_6, "press_reply_send");
+              const obj5 = v0(8637);
               obj1 = { itemId: null, itemType: null, actionParameters: null };
               obj1[0] = closure_1_0.id;
               obj1[1] = closure_1_6;
               obj1[2] = { actionGestureType: "press", actionTargetElement: "reply_button", actionIntentType: "reply", actionDestinationType: null };
-              v0(8622).feedItemActioned(obj1);
+              v0(8637).feedItemActioned(obj1);
               v0 = 1;
               dependencyMap = 1;
               const obj2 = { value: null, done: false };
@@ -452,11 +452,11 @@ export const getStatusReplyContent = function getStatusReplyContent(reply) {
   }
   if (null != attachments) {
     if (attachments.length > 0) {
-      const intl2 = tmp5(1236).intl;
+      const intl2 = tmp5(1233).intl;
       obj = { attachmentsCount: null };
       obj[0] = attachments.length;
       const _HermesInternal2 = HermesInternal;
-      items.push("> -# *" + intl2.formatToPlainString(tmp5(1236).t["JiNPo+"], obj) + "*");
+      items.push("> -# *" + intl2.formatToPlainString(tmp5(1233).t["JiNPo+"], obj) + "*");
     }
   }
   items.push(reply.reply);

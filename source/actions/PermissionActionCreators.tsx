@@ -1,11 +1,11 @@
-// Module ID: 16498
-// Function ID: 16499
+// Module ID: 16733
+// Function ID: 16734
 // Name: dispatcher
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 
-// Module 16498 (dispatcher)
+// Module 16733 (dispatcher)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("actions/PermissionActionCreators.tsx");
 

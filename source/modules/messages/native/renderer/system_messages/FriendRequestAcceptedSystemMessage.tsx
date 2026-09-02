@@ -1,15 +1,15 @@
-// Module ID: 7983
-// Function ID: 7984
+// Module ID: 7992
+// Function ID: 7993
 // Name: createFriendRequestAcceptedSystemMessage
-// Dependencies: [1387, 1922, 7869, 7871, 4478, 712, 1236, 7855, 7984, 7873, 2]
+// Dependencies: [1386, 1921, 7878, 7880, 4478, 709, 1233, 7864, 7993, 7882, 2]
 // Exports: createFriendRequestAcceptedSystemMessage
 
-// Module 7983 (createFriendRequestAcceptedSystemMessage)
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7869 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7871 */;
-import registerAssetDefault from "registerAsset" /* 7984 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+// Module 7992 (createFriendRequestAcceptedSystemMessage)
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7878 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7880 */;
+import registerAssetDefault from "registerAsset" /* 7993 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/FriendRequestAcceptedSystemMessage.tsx");
@@ -38,10 +38,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
             if ("" !== content) {
               let tmp15Result = tmp15(4478);
               obj1 = { baseTextColor: null };
-              obj1[0] = tmp17(712).colors.TEXT_SUBTLE;
-              const intl2 = tmp15(1236).intl;
+              obj1[0] = tmp17(709).colors.TEXT_SUBTLE;
+              const intl2 = tmp15(1233).intl;
               const formatToParts2 = intl2.formatToParts;
-              let t = tmp15(1236).t;
+              let t = tmp15(1233).t;
               if (tmp18) {
                 t = {};
                 obj = Object.assign(obj);
@@ -63,9 +63,9 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
               const baseTextColor = tmp15Result.createNativeStyleProperties(obj1)(message.theme).baseTextColor;
             }
           }
-          const intl = tmp15(1236).intl;
+          const intl = tmp15(1233).intl;
           const formatToParts = intl.formatToParts;
-          t = tmp15(1236).t;
+          t = tmp15(1233).t;
           if (message.author.id === currentUser.id) {
             let formatToPartsResult = formatToParts(t.REfFZs, obj);
           } else {
@@ -73,10 +73,10 @@ export const createFriendRequestAcceptedSystemMessage = function createFriendReq
           }
           const obj4 = { content: null, iconUrl: null, textColor: null };
           obj4[0] = formatToPartsResult;
-          tmp15Result = tmp15(7855);
+          tmp15Result = tmp15(7864);
           obj4[1] = tmp15Result.getAssetUriForEmbed(registerAssetDefault);
           obj4[2] = undefined;
-          const merged1 = Object.assign(tmp17(7873)(message));
+          const merged1 = Object.assign(tmp17(7882)(message));
           return obj4;
         }
       }

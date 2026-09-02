@@ -1,14 +1,14 @@
-// Module ID: 16357
-// Function ID: 16358
+// Module ID: 16589
+// Function ID: 16590
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 676, 21, 4478, 712, 5953, 5973, 698, 15637, 8896, 16354, 5070, 10638, 10731, 1236, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 5961, 5981, 695, 15868, 8911, 16586, 5078, 10859, 10952, 1233, 2]
 // Exports: default
 
-// Module 16357 (SuggestedFriendsScreen)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16589 (SuggestedFriendsScreen)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

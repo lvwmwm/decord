@@ -1,12 +1,12 @@
-// Module ID: 6161
-// Function ID: 6162
+// Module ID: 6169
+// Function ID: 6170
 // Name: createHandoffTokenWithLoadingModal
-// Dependencies: [5, 1218, 676, 4723, 6162, 6164, 698, 513, 6165, 1486, 4190, 2]
+// Dependencies: [5, 1215, 673, 4723, 6170, 6172, 695, 510, 6173, 1485, 4190, 2]
 
-// Module 6161 (createHandoffTokenWithLoadingModal)
+// Module 6169 (createHandoffTokenWithLoadingModal)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import ME from "ME" /* 676 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function createHandoffTokenWithLoadingModal(arg0) {
@@ -95,7 +95,7 @@ function _redirectWithHandoffToken() {
               uRL = undefined;
               uRL = 1;
               c6 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -225,7 +225,7 @@ function _redirectDeveloperPortalWithHandoffToken() {
               uRL = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

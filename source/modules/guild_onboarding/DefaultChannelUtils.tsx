@@ -1,15 +1,15 @@
-// Module ID: 5469
-// Function ID: 5470
+// Module ID: 5477
+// Function ID: 5478
 // Name: useCanChannelBeDefault
-// Dependencies: [1983, 1387, 676, 506, 589, 4126, 2]
+// Dependencies: [1982, 1386, 673, 503, 586, 4125, 2]
 // Exports: canChannelBeDefault, useCanChannelBeDefault
 
-// Module 5469 (useCanChannelBeDefault)
-import fromStringAll from "fromString" /* 506 */;
-import applyOverwritesAll from "applyOverwrites" /* 4126 */;
-import closure_3 from "isSubscriptionGated" /* 1983 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import ME from "ME" /* 676 */;
+// Module 5477 (useCanChannelBeDefault)
+import fromStringAll from "fromString" /* 503 */;
+import applyOverwritesAll from "applyOverwrites" /* 4125 */;
+import closure_3 from "isSubscriptionGated" /* 1982 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 ({ ChannelTypesSets: c5, Permissions: closure_6 } = ME);
@@ -19,7 +19,7 @@ export const useCanChannelBeDefault = function useCanChannelBeDefault(arg0, arg1
   const _require = arg0;
   closure_1 = arg1;
   const items = [closure_3, closure_4];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const channel = closure_1_4.getChannel(callback);
     if (null != channel) {
       const GUILD_VOCAL = closure_1_5.GUILD_VOCAL;

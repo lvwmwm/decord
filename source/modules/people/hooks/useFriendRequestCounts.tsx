@@ -1,13 +1,13 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16560
+// Function ID: 16561
 // Name: getIncomingFriendRequestCount
-// Dependencies: [32, 7403, 4130, 589, 2]
+// Dependencies: [32, 7412, 4130, 586, 2]
 // Exports: getIncomingFriendRequestCount, getOutgoingFriendRequestCount, useIncomingFriendRequestCount
 
-// Module 16328 (getIncomingFriendRequestCount)
-import initialize from "initialize" /* 589 */;
+// Module 16560 (getIncomingFriendRequestCount)
+import initialize from "initialize" /* 586 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "recountRelationshipTypes" /* 7403 */;
+import closure_3 from "recountRelationshipTypes" /* 7412 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 
 require = arg1;

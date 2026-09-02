@@ -1,15 +1,15 @@
-// Module ID: 13828
-// Function ID: 13829
+// Module ID: 14051
+// Function ID: 14052
 // Name: _defaultMessages
-// Dependencies: [1274, 1238, 13829, 2]
+// Dependencies: [1273, 1237, 14052, 2]
 
-// Module 13828 (_defaultMessages)
+// Module 14051 (_defaultMessages)
 import set from "set" /* 2 */;
-import messagesProxyDefault from "messagesProxy" /* 13829 */;
-import module_1274 from "module_1274" /* 1274 */;
-import importDefaultResult from "messagesProxy" /* 1238 */;
+import messagesProxyDefault from "messagesProxy" /* 14052 */;
+import module_1273 from "module_1273" /* 1273 */;
+import importDefaultResult from "messagesProxy" /* 1237 */;
 
-const chainMessagesObjectsResult = module_1274.chainMessagesObjects(importDefaultResult, messagesProxyDefault);
+const chainMessagesObjectsResult = module_1273.chainMessagesObjects(importDefaultResult, messagesProxyDefault);
 const result = set.fileFinishedImporting("intl/defaultMessageProxy.tsx");
 
 export const _defaultMessages = chainMessagesObjectsResult;

@@ -1,11 +1,11 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11365
+// Function ID: 11366
 // Name: getAlert
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 11144 (getAlert)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 11365 (getAlert)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let c0 = null;
 let c1 = -1;

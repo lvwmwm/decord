@@ -1,12 +1,12 @@
-// Module ID: 7587
-// Function ID: 7588
+// Module ID: 7597
+// Function ID: 7598
 // Name: logMessageSendFailure
-// Dependencies: [676, 4700, 2]
+// Dependencies: [673, 4700, 2]
 // Exports: getAttachmentMimeTypes, logMessageSendFailure
 
-// Module 7587 (logMessageSendFailure)
+// Module 7597 (logMessageSendFailure)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
 
 const AnalyticEvents = ME.AnalyticEvents;

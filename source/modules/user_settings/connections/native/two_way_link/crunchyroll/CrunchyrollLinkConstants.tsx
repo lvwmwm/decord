@@ -1,9 +1,9 @@
-// Module ID: 9341
-// Function ID: 9342
+// Module ID: 9354
+// Function ID: 9355
 // Name: CrunchyrollLinkModalScenes
 // Dependencies: [2]
 
-// Module 9341 (CrunchyrollLinkModalScenes)
+// Module 9354 (CrunchyrollLinkModalScenes)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkConstants.tsx");

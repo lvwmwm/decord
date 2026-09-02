@@ -1,13 +1,13 @@
-// Module ID: 14248
-// Function ID: 14249
+// Module ID: 14471
+// Function ID: 14472
 // Name: UserProfileUpsellButton
-// Dependencies: [19, 676, 1924, 21, 4478, 5953, 7191, 698, 4928, 8169, 1236, 8096, 2]
+// Dependencies: [19, 673, 1923, 21, 4478, 5961, 7200, 695, 4928, 8177, 1233, 8104, 2]
 // Exports: default
 
-// Module 14248 (UserProfileUpsellButton)
+// Module 14471 (UserProfileUpsellButton)
 import closure_3 from "noop" /* 19 */;
-import ME from "ME" /* 676 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 673 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -19,8 +19,8 @@ let result = require("set").fileFinishedImporting("modules/user_profile/native/U
 export default function UserProfileUpsellButton(analyticsObject) {
   analyticsObject = analyticsObject.analyticsObject;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(5953)().analyticsLocations;
-  let obj = analyticsObject(7191);
+  analyticsLocations = analyticsLocations(5961)().analyticsLocations;
+  let obj = analyticsObject(7200);
   let label = obj.useNitroTrialCtaOverride("user_profile_upsell_button");
   const items = [analyticsLocations, analyticsObject];
   const effect = React.useEffect(() => {
@@ -44,11 +44,11 @@ export default function UserProfileUpsellButton(analyticsObject) {
     label = analyticsObject.label;
   }
   if (label == null) {
-    const intl = tmp3(1236).intl;
-    label = intl.string(tmp3(1236).t.pj0XBN);
+    const intl = tmp3(1233).intl;
+    label = intl.string(tmp3(1233).t.pj0XBN);
   }
   obj[2] = label;
   obj = { color: "white", size: "sm", style: callback().nitroWheel };
-  obj[3] = jsx(analyticsObject(8096).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
+  obj[3] = jsx(analyticsObject(8104).NitroWheelIcon, { color: "white", size: "sm", style: callback().nitroWheel });
   return jsx(analyticsObject(4928).Button, { color: "white", size: "sm", style: callback().nitroWheel });
 };

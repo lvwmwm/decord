@@ -1,11 +1,11 @@
-// Module ID: 9220
-// Function ID: 9221
+// Module ID: 9234
+// Function ID: 9235
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 4478, 4166, 1431, 8228, 5585, 2]
+// Dependencies: [19, 21, 4478, 4166, 1430, 8237, 5593, 2]
 // Exports: default
 
-// Module 9220 (ActivityEmoji)
-import EmojiDefault from "Emoji" /* 5585 */;
+// Module 9234 (ActivityEmoji)
+import EmojiDefault from "Emoji" /* 5593 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -66,7 +66,7 @@ export default function ActivityEmoji(emoji) {
     }
   }
   if (null == emoji) {
-    ReactionIcon = ReactionIcon(8228).ReactionIcon;
+    ReactionIcon = ReactionIcon(8237).ReactionIcon;
     obj = { style: null, size: "sm" };
     obj[0] = style;
     <ReactionIcon style={null} size="sm" />;

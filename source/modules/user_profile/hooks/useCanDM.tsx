@@ -1,14 +1,14 @@
-// Module ID: 12596
-// Function ID: 12597
+// Module ID: 12820
+// Function ID: 12821
 // Name: useCanDM
-// Dependencies: [7403, 4122, 1218, 1992, 4130, 4166, 589, 2]
+// Dependencies: [7412, 4121, 1215, 1991, 4130, 4166, 586, 2]
 // Exports: canDm, default
 
-// Module 12596 (useCanDM)
-import closure_2 from "recountRelationshipTypes" /* 7403 */;
-import closure_3 from "initialize" /* 4122 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
+// Module 12820 (useCanDM)
+import closure_2 from "recountRelationshipTypes" /* 7412 */;
+import closure_3 from "initialize" /* 4121 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
 
 const require = arg1;
@@ -18,10 +18,10 @@ export default function useCanDM(arg0, arg1) {
   const _require = arg0;
   dependencyMap = arg1;
   const items = [closure_4];
-  closure_2 = _require(589).useStateFromStores(items, () => id.getId() === closure_0);
-  const obj = _require(589);
+  closure_2 = _require(586).useStateFromStores(items, () => id.getId() === closure_0);
+  const obj = _require(586);
   const items1 = [closure_3];
-  closure_3 = _require(589).useStateFromStores(items1, () => {
+  closure_3 = _require(586).useStateFromStores(items1, () => {
     let isLurkingResult = null != closure_1;
     if (isLurkingResult) {
       isLurkingResult = lurking.isLurking(tmp);
@@ -30,9 +30,9 @@ export default function useCanDM(arg0, arg1) {
   });
   const RestrictedGuildIds = _require(4166).RestrictedGuildIds;
   closure_4 = RestrictedGuildIds.useSetting();
-  const obj2 = _require(589);
+  const obj2 = _require(586);
   const items2 = [closure_6, closure_5, closure_2];
-  return _require(589).useStateFromStores(items2, () => {
+  return _require(586).useStateFromStores(items2, () => {
     let tmp = !gameFriendsForUser;
     if (!gameFriendsForUser) {
       tmp = !closure_3;

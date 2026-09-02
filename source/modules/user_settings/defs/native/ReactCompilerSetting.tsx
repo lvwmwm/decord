@@ -1,11 +1,11 @@
-// Module ID: 15480
-// Function ID: 15481
-// Dependencies: [11068, 15161, 2]
+// Module ID: 15710
+// Function ID: 15711
+// Dependencies: [11288, 15390, 2]
 
-// Module 15480
+// Module 15710
 import set from "set" /* 2 */;
-import WrenchIcon from "WrenchIcon" /* 15161 */;
-import createToggle from "createToggle" /* 11068 */;
+import WrenchIcon from "WrenchIcon" /* 15390 */;
+import createToggle from "createToggle" /* 11288 */;
 
 const obj = {
   useTitle() {

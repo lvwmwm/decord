@@ -1,10 +1,10 @@
 // Module ID: 4516
 // Function ID: 4517
 // Name: GameTheme
-// Dependencies: [1936, 4504, 2]
+// Dependencies: [1935, 4504, 2]
 
 // Module 4516 (GameTheme)
-import toJSDefault from "toJS" /* 1936 */;
+import toJSDefault from "toJS" /* 1935 */;
 import { createExecutable } from "createExecutable" /* 4504 */;
 
 toJSDefault;

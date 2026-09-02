@@ -1,12 +1,12 @@
-// Module ID: 16808
-// Function ID: 16809
+// Module ID: 17044
+// Function ID: 17045
 // Name: getMessage
-// Dependencies: [16809, 2, 16852]
+// Dependencies: [17045, 2, 17088]
 
-// Module 16808 (getMessage)
+// Module 17044 (getMessage)
 import set from "set" /* 2 */;
-import getMessages from "getMessages" /* 16809 */;
-import format from "format" /* 16852 */;
+import getMessages from "getMessages" /* 17045 */;
+import format from "format" /* 17088 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/i18n/index.tsx");
 

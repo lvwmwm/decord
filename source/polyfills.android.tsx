@@ -1,12 +1,12 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 14074
+// Function ID: 14075
 // Name: toLocaleLowerCase
-// Dependencies: [13852, 13948, 2]
+// Dependencies: [14075, 14171, 2]
 
-// Module 13851 (toLocaleLowerCase)
+// Module 14074 (toLocaleLowerCase)
 import set from "set" /* 2 */;
-import addLikelySubtags from "addLikelySubtags" /* 13852 */;
-import module_13948 from "module_13948" /* 13948 */;
+import addLikelySubtags from "addLikelySubtags" /* 14075 */;
+import module_14171 from "module_14171" /* 14171 */;
 
 String.prototype.toLocaleLowerCase = function toLocaleLowerCase() {
   const self = this;

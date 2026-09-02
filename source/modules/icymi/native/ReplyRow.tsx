@@ -1,18 +1,18 @@
-// Module ID: 16097
-// Function ID: 16098
+// Module ID: 16328
+// Function ID: 16329
 // Name: ContentInventoryReplyRow
-// Dependencies: [19, 17, 21, 16040, 712, 5068, 4474, 8228, 2]
+// Dependencies: [19, 17, 21, 16271, 709, 5076, 4474, 8237, 2]
 // Exports: ContentInventoryReplyRow
 
-// Module 16097 (ContentInventoryReplyRow)
+// Module 16328 (ContentInventoryReplyRow)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import ReactionIcon from "ReactionIcon" /* 8228 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import ReactionIcon from "ReactionIcon" /* 8237 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16040 */;
+import createICYMIStyles from "createICYMIStyles" /* 16271 */;
 
 require = arg1;
 noopAll;

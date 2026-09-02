@@ -1,15 +1,15 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 9443
+// Function ID: 9444
 // Name: getChannelIconURL
-// Dependencies: [32, 1922, 676, 1471, 1431, 2]
+// Dependencies: [32, 1921, 673, 1470, 1430, 2]
 // Exports: getChannelIconSource, getChannelIconURL
 
-// Module 9430 (getChannelIconURL)
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+// Module 9443 (getChannelIconURL)
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import { ChannelTypes } from "ME" /* 676 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import { ChannelTypes } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/channel/getChannelIcon.tsx");

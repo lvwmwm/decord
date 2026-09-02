@@ -1,17 +1,17 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 13483
+// Function ID: 13484
 // Name: items1
-// Dependencies: [32, 19, 17, 676, 21, 4478, 7144, 712, 1236, 1995, 4474, 5068, 1297, 13262, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 7153, 709, 1233, 1994, 4474, 5076, 1296, 13484, 2]
 // Exports: default
 
-// Module 13261 (items1)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1995 */;
+// Module 13483 (items1)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import combinedDefault from "combined" /* 1994 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -148,8 +148,8 @@ export default function GuildBoostingMarketingFaq() {
   let obj = { style: tmp.wrapper, children: null };
   obj = { style: tmp.content, children: null };
   obj = { style: tmp.heading, variant: "heading-xxl/bold", children: null };
-  const intl = _require(1236).intl;
-  obj[2] = intl.string(_require(1236).t.HPJ6Nj);
+  const intl = _require(1233).intl;
+  obj[2] = intl.string(_require(1233).t.HPJ6Nj);
   let items = [callback2(_require(4474).Heading, obj), ];
   const tmp2 = callback(React.useState(null), 2);
   items[1] = callback2(View, {

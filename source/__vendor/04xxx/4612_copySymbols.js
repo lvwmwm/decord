@@ -1,10 +1,10 @@
 // Module ID: 4612
 // Function ID: 4613
 // Name: copySymbols
-// Dependencies: [4605, 795]
+// Dependencies: [4605, 792]
 
 // Module 4612 (copySymbols)
-import getOwnPropertySymbols from "getOwnPropertySymbols" /* 795 */;
+import getOwnPropertySymbols from "getOwnPropertySymbols" /* 792 */;
 import copyObject from "copyObject" /* 4605 */;
 
 

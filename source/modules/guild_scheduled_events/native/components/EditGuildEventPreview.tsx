@@ -1,17 +1,17 @@
-// Module ID: 9738
-// Function ID: 9739
+// Module ID: 9760
+// Function ID: 9761
 // Name: PreviewBody
-// Dependencies: [19, 17, 1387, 676, 21, 4478, 712, 500, 589, 4674, 9675, 9739, 4474, 1236, 9425, 1297, 9740, 9674, 5553, 9741, 4928, 9634, 4858, 9757, 2009, 2]
+// Dependencies: [19, 17, 1386, 673, 21, 4478, 709, 1234, 586, 4674, 9688, 9761, 4474, 1233, 9438, 1296, 9762, 9687, 5561, 9763, 4928, 9647, 4858, 9779, 2008, 2]
 // Exports: default
 
-// Module 9738 (PreviewBody)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9760 (PreviewBody)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 const require = arg1;
 function PreviewBody(event) {
@@ -25,38 +25,38 @@ function PreviewBody(event) {
   const tmp = callback3();
   _require = tmp;
   channel_id = event.channel_id;
-  let obj = _require(589);
+  let obj = _require(586);
   let items = [eventLocationIconSource];
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => channel.getChannel(channel_id), items1);
   const tmp6 = channel_id(4674)(stateFromStores);
   dependencyMap = tmp6;
-  obj1 = _require(9675);
+  obj1 = _require(9688);
   locationFromEvent = obj1.getLocationFromEvent(event);
   let tmp8 = tmp6;
   if (tmp6 == null) {
     tmp8 = locationFromEvent;
   }
   locationFromEvent = tmp8;
-  eventLocationIconSource = _require(9739).getEventLocationIconSource(event, stateFromStores, true);
+  eventLocationIconSource = _require(9761).getEventLocationIconSource(event, stateFromStores, true);
   obj = { style: tmp.header, children: null };
   obj = { style: tmp.headerTitle, variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
-  const intl = tmp2(1236).intl;
-  obj[3] = intl.string(_require(1236).t.yBsFE3);
+  const intl = tmp2(1233).intl;
+  obj[3] = intl.string(_require(1233).t.yBsFE3);
   const items2 = [callback(_require(4474).Text, obj), ];
   obj1 = { style: tmp.headerSubtitle, accessibilityLabel: null, variant: "text-sm/medium", color: "text-default", children: null };
   let formatToPlainStringResult;
   if (null != stateFromStores) {
-    const intl2 = tmp2(1236).intl;
+    const intl2 = tmp2(1233).intl;
     const obj2 = { channelName: null };
     const obj3 = { channel: null };
     obj3[0] = stateFromStores;
-    obj2[0] = channel_id(9425)(obj3);
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.sxcQPE, obj2);
+    obj2[0] = channel_id(9438)(obj3);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1233).t.sxcQPE, obj2);
   }
   obj1[1] = formatToPlainStringResult;
   if (null != stateFromStores) {
-    const intl4 = tmp2(1236).intl;
+    const intl4 = tmp2(1233).intl;
     const obj4 = { channelName: null, channelHook: null };
     obj4[0] = tmp8;
     obj4[1] = function channelHook() {
@@ -65,9 +65,9 @@ function PreviewBody(event) {
       if (tmp2Result) {
         obj = { source: null, size: null, style: null };
         obj[0] = tmp5;
-        obj[1] = lib(1297).Icon.Sizes.EXTRA_SMALL;
+        obj[1] = lib(1296).Icon.Sizes.EXTRA_SMALL;
         obj[2] = tmp4.channelIcon;
-        tmp2Result = tmp2(lib(1297).Icon, obj);
+        tmp2Result = tmp2(lib(1296).Icon, obj);
       }
       obj[1] = tmp2Result;
       const items = [closure_1_6(locationFromEvent, obj), ];
@@ -75,8 +75,8 @@ function PreviewBody(event) {
       if (dependencyMap == null) {
         let result = null;
         if (null != locationFromEvent) {
-          result = lib(9740).guildEventLocationParser(tmp12, true);
-          const tmp9Result = lib(9740);
+          result = lib(9762).guildEventLocationParser(tmp12, true);
+          const tmp9Result = lib(9762);
         }
         tmp11 = result;
       }
@@ -89,10 +89,10 @@ function PreviewBody(event) {
       }
       return closure_1_7(locationFromEvent.Fragment, obj, str);
     };
-    let formatResult = intl4.format(tmp2(1236).t.f55NX0, obj4);
+    let formatResult = intl4.format(tmp2(1233).t.f55NX0, obj4);
   } else {
-    const intl3 = tmp2(1236).intl;
-    formatResult = intl3.string(tmp2(1236).t.KDPFi9);
+    const intl3 = tmp2(1233).intl;
+    formatResult = intl3.string(tmp2(1233).t.KDPFi9);
   }
   obj1[4] = formatResult;
   items2[1] = callback(_require(4474).Text, obj1);

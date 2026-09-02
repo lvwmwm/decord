@@ -1,15 +1,15 @@
-// Module ID: 9850
-// Function ID: 9851
+// Module ID: 9872
+// Function ID: 9873
 // Name: trackRTCPanelViewed
-// Dependencies: [1387, 676, 4700, 8559, 698, 2]
+// Dependencies: [1386, 673, 4700, 8572, 695, 2]
 // Exports: trackE2EECallVerificationCopied, trackE2EECallVerificationShareClicked, trackE2EEPublicKeyMismatch, trackE2EESettingsDeviceDelete, trackE2EESettingsUserDelete, trackE2EEStreamVerificationCopied, trackE2EEStreamVerificationShareClicked, trackE2EEUserVerificationCopied, trackE2EEUserVerificationFailed, trackE2EEUserVerificationShareClicked, trackE2EEUserVerificationViewed, trackE2EEUserVerified, trackRTCPanelViewed
 
-// Module 9850 (trackRTCPanelViewed)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+// Module 9872 (trackRTCPanelViewed)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
-import getProfileProperties from "getProfileProperties" /* 8559 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import getProfileProperties from "getProfileProperties" /* 8572 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/rtc/SecureFramesTracking.tsx");

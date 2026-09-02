@@ -1,14 +1,14 @@
-// Module ID: 6240
-// Function ID: 6241
+// Module ID: 6249
+// Function ID: 6250
 // Name: SettingsIcon
-// Dependencies: [19, 21, 712, 4196, 6241, 2]
+// Dependencies: [19, 21, 709, 4196, 6250, 2]
 // Exports: SettingsIcon
 
-// Module 6240 (SettingsIcon)
+// Module 6249 (SettingsIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 6241 */;
+import registerAsset from "registerAsset" /* 6250 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

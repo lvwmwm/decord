@@ -1,12 +1,12 @@
-// Module ID: 12101
-// Function ID: 12102
+// Module ID: 12325
+// Function ID: 12326
 // Name: useAvailableBoostCountForPowerup
-// Dependencies: [19, 1909, 4364, 4365, 589, 4384, 1471, 2]
+// Dependencies: [19, 1908, 4364, 4365, 586, 4384, 1470, 2]
 // Exports: default
 
-// Module 12101 (useAvailableBoostCountForPowerup)
+// Module 12325 (useAvailableBoostCountForPowerup)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import closure_5 from "calculateAppliedBoosts" /* 4364 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 9502
-// Function ID: 9503
+// Module ID: 9515
+// Function ID: 9516
 // Name: HANDSHAKE
 // Dependencies: [2]
 
-// Module 9502 (HANDSHAKE)
+// Module 9515 (HANDSHAKE)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/rpc/RPCOpcodes.tsx");

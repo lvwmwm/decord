@@ -1,10 +1,10 @@
-// Module ID: 14194
-// Function ID: 14195
+// Module ID: 14417
+// Function ID: 14418
 // Name: getVolumeForSound
 // Dependencies: [4529, 4968, 4166, 2]
 // Exports: default, getPerceptualSoundboardVolume
 
-// Module 14194 (getVolumeForSound)
+// Module 14417 (getVolumeForSound)
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import perceptualToAmplitude from "perceptualToAmplitude" /* 4968 */;
 import closure_2 from "_detectH265HardwareDecode" /* 4529 */;

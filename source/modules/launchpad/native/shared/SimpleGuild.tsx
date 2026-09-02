@@ -1,16 +1,16 @@
-// Module ID: 16551
-// Function ID: 16552
+// Module ID: 16786
+// Function ID: 16787
 // Name: SimpleGuild
-// Dependencies: [19, 17, 1430, 7381, 1909, 676, 21, 4478, 6004, 16552, 589, 16553, 16555, 1236, 15924, 5020, 712, 16554, 2]
+// Dependencies: [19, 17, 1429, 7390, 1908, 673, 21, 4478, 6012, 16787, 586, 16788, 16790, 1233, 16155, 5024, 709, 16789, 2]
 // Exports: default
 
-// Module 16551 (SimpleGuild)
+// Module 16786 (SimpleGuild)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { getGuildIconSource } from "GuildNSFWContentLevel" /* 1430 */;
-import closure_6 from "updateGuildUnreadSentinel" /* 7381 */;
-import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import { ME } from "ME" /* 676 */;
+import { getGuildIconSource } from "GuildNSFWContentLevel" /* 1429 */;
+import closure_6 from "updateGuildUnreadSentinel" /* 7390 */;
+import closure_7 from "createGuildRecordFromRust" /* 1908 */;
+import { ME } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

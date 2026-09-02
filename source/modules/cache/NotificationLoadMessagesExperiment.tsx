@@ -1,11 +1,11 @@
-// Module ID: 17404
-// Function ID: 17405
+// Module ID: 17640
+// Function ID: 17641
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 
-// Module 17404 (apexExperiment)
+// Module 17640 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const obj = { 1: null, 2: { enabled: true, limit: 1, cooldownMs: 60000, debounceMs: 3000 }, 3: { enabled: true, limit: 25, cooldownMs: 60000, debounceMs: 3000 }, 4: { enabled: true, limit: 10, cooldownMs: 60000, debounceMs: 3000 }, 5: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 3000 }, 6: { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 3000 }, 7: { enabled: true, limit: 25, cooldownMs: 0, debounceMs: 0 } };
 obj[7] = { enabled: true, limit: 10, cooldownMs: 0, debounceMs: 0 };

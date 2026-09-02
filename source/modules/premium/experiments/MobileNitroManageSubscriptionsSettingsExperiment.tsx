@@ -1,12 +1,12 @@
-// Module ID: 13075
-// Function ID: 13076
+// Module ID: 13297
+// Function ID: 13298
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 // Exports: getMobileNitroManageSubscriptionsSettingsExperiment, useMobileNitroManageSubscriptionsSettingsExperiment
 
-// Module 13075 (apexExperiment)
+// Module 13297 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

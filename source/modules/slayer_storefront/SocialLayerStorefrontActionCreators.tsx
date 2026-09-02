@@ -1,17 +1,17 @@
-// Module ID: 8495
-// Function ID: 8496
+// Module ID: 8508
+// Function ID: 8509
 // Name: _fetchSocialLayerStorefront
-// Dependencies: [5, 8496, 6075, 676, 687, 709, 6073, 8497, 530, 1902, 584, 2]
+// Dependencies: [5, 8509, 6083, 673, 684, 706, 6081, 8510, 527, 1901, 581, 2]
 // Exports: fetchSocialLayerSKUPurchaseEligibility, fetchSocialLayerStorefront, fetchSocialLayerStorefrontAnnouncement, fetchSocialLayerStorefrontById, fetchSocialLayerStorefrontConfig, fetchSocialLayerStorefrontEntries, fetchSocialLayerStorefrontForApplication, fetchSocialLayerStorefrontLaunchAnnouncement, fetchSocialLayerStorefrontSku, fetchSocialLayerStorefrontSkuForApplication, setSocialLayerStorefrontState
 
-// Module 8495 (_fetchSocialLayerStorefront)
-import failsDefault from "fails" /* 584 */;
-import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 8508 (_fetchSocialLayerStorefront)
+import failsDefault from "fails" /* 581 */;
+import setDefault from "set" /* 684 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "getPromotionIdOverride" /* 8496 */;
-import closure_5 from "handleUserSettingsStoreUpdate" /* 6075 */;
-import { Endpoints } from "ME" /* 676 */;
+import closure_4 from "getPromotionIdOverride" /* 8509 */;
+import closure_5 from "handleUserSettingsStoreUpdate" /* 6083 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _fetchSocialLayerStorefront(arg0, Endpoints, arg2) {
@@ -91,7 +91,7 @@ function _fetchSocialLayerStorefront2() {
                 closure_17 = undefined;
                 c8 = 1;
                 c9 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp7) {
@@ -398,7 +398,7 @@ function _fetchSocialLayerStorefrontSkuWithUrl2() {
               let storefront_metadata;
               c7 = 1;
               promotionIdOverride2 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {
@@ -1063,7 +1063,7 @@ function _fetchSocialLayerStorefrontLaunchAnnouncement() {
     yield HTTP.get(obj1);
     if (1 === tmp7) {
       c11 = 0;
-      obj3 = obj3(709);
+      obj3 = obj3(706);
       obj3.dispatch({ type: "SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_FAILURE" });
       c13 = 3;
     } else if (arg0 === 1) {
@@ -1126,7 +1126,7 @@ function _fetchSocialLayerStorefrontLaunchAnnouncement() {
         }
         obj3[7] = c7;
       }
-      const obj = obj3(709);
+      const obj = obj3(706);
       const obj4 = { type: "SOCIAL_LAYER_STOREFRONT_LAUNCH_ANNOUNCEMENT_FETCH_SUCCESS", config: null };
       obj4[1] = obj3;
       obj.dispatch(obj4);
@@ -1257,7 +1257,7 @@ export const fetchSocialLayerSKUPurchaseEligibility = function fetchSocialLayerS
         obj.dispatch(obj);
       }
     }, closure_11);
-    const HTTP = _require(530).HTTP;
+    const HTTP = _require(527).HTTP;
     obj = { url: null, rejectWithError: true };
     obj[0] = Endpoints.SOCIAL_LAYER_APPLICATION_STOREFRONT_SKU_ELIGIBILITY(arg0, closure_0);
     const postResult = HTTP.post(obj);

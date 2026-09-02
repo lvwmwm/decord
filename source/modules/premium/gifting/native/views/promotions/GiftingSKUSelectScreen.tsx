@@ -1,11 +1,11 @@
-// Module ID: 10787
-// Function ID: 10788
+// Module ID: 11007
+// Function ID: 11008
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 4478, 712, 1628, 4474, 1236, 10788, 4928, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 1627, 4474, 1233, 11008, 4928, 2]
 // Exports: default
 
-// Module 10787 (GiftingSKUSelectScreen)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11007 (GiftingSKUSelectScreen)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

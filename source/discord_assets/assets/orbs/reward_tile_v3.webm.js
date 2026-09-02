@@ -1,9 +1,9 @@
-// Module ID: 10935
-// Function ID: 10936
+// Module ID: 11155
+// Function ID: 11156
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10935 (metadata)
+// Module 11155 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/orbs/reward_tile_v3.webm.js");

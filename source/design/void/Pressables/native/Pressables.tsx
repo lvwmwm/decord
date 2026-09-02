@@ -1,14 +1,14 @@
-// Module ID: 5068
-// Function ID: 5069
+// Module ID: 5076
+// Function ID: 5077
 // Name: PressableBase
-// Dependencies: [19, 17, 4937, 1301, 21, 4478, 712, 500, 5069, 2]
+// Dependencies: [19, 17, 4937, 1300, 21, 4478, 709, 1234, 5077, 2]
 
-// Module 5068 (PressableBase)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 5076 (PressableBase)
+import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import { IOS_POINTER_STYLE } from "IOS_POINTER_STYLE" /* 4937 */;
-import { getThemedRippleConfig } from "semanticColor" /* 1301 */;
+import { getThemedRippleConfig } from "semanticColor" /* 1300 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

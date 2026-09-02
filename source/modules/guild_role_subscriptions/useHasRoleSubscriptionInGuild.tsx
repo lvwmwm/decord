@@ -1,15 +1,15 @@
-// Module ID: 6099
-// Function ID: 6100
+// Module ID: 6107
+// Function ID: 6108
 // Name: computeHasRoleSubscriptionsInGuild
-// Dependencies: [1218, 1992, 1985, 1909, 676, 589, 2]
+// Dependencies: [1215, 1991, 1984, 1908, 673, 586, 2]
 // Exports: default
 
-// Module 6099 (computeHasRoleSubscriptionsInGuild)
-import closure_2 from "fetchFingerprint" /* 1218 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
-import closure_4 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import { GuildFeatures } from "ME" /* 676 */;
+// Module 6107 (computeHasRoleSubscriptionsInGuild)
+import closure_2 from "fetchFingerprint" /* 1215 */;
+import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 const require = arg1;
 function computeHasRoleSubscriptionsInGuild(c0, closure_3) {

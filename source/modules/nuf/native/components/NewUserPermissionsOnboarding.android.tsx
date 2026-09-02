@@ -1,13 +1,13 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12450
+// Function ID: 12451
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 4478, 5492, 712, 4474, 4928, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 5500, 709, 4474, 4928, 1233, 2]
 // Exports: default
 
-// Module 12226 (NewUserPermissionsOnboarding)
+// Module 12450 (NewUserPermissionsOnboarding)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import Button from "Button" /* 4928 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -59,7 +59,7 @@ export default function NewUserPermissionsOnboarding(showSkip) {
   const obj5 = { style: items2, children: null };
   items2[1] = primaryButtonContainer;
   const obj6 = { variant: "primary", size: "md", text: null, onPress: null, loading: null, grow: true };
-  const intl = tmp6(1236).intl;
+  const intl = tmp6(1233).intl;
   obj6[2] = intl.string(getSystemLocale.t["2nYlT2"]);
   obj6[3] = onAllow;
   obj6[4] = loading;
@@ -69,8 +69,8 @@ export default function NewUserPermissionsOnboarding(showSkip) {
     const obj7 = { style: null, children: null };
     obj7[0] = tmp.buttonWrapper;
     const obj8 = { variant: "secondary", text: null, onPress: null, grow: true };
-    const intl2 = tmp6(1236).intl;
-    obj8[1] = intl2.string(tmp6(1236).t["5Wxrcd"]);
+    const intl2 = tmp6(1233).intl;
+    obj8[1] = intl2.string(tmp6(1233).t["5Wxrcd"]);
     obj8[2] = onDontAllow;
     obj7[1] = tmp4(tmp6(4928).Button, obj8);
     flag = tmp4(tmp5, obj7);

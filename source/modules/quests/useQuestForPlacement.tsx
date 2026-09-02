@@ -1,17 +1,17 @@
-// Module ID: 14717
-// Function ID: 14718
+// Module ID: 14943
+// Function ID: 14944
 // Name: maybeRefreshAd
-// Dependencies: [19, 7444, 7448, 687, 11084, 10937, 10913, 589, 14718, 7445, 7443, 2]
+// Dependencies: [19, 7454, 7458, 684, 11304, 11157, 11133, 586, 14944, 7455, 7453, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop
 
-// Module 14717 (maybeRefreshAd)
+// Module 14943 (maybeRefreshAd)
 import set from "set" /* 2 */;
-import setDefault from "set" /* 687 */;
-import _modDef10937 from "module_10937" /* 10937 */;
-import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11084 */;
+import setDefault from "set" /* 684 */;
+import _modDef11157 from "module_11157" /* 11157 */;
+import getIsEligibleForQuests from "getIsEligibleForQuests" /* 11304 */;
 import noop from "noop" /* 19 */;
-import closure_5 from "map" /* 7444 */;
-import closure_6 from "initializeState" /* 7448 */;
+import closure_5 from "map" /* 7454 */;
+import closure_6 from "initializeState" /* 7458 */;
 
 function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
   let isEligibleForQuests = getIsEligibleForQuests.getIsEligibleForQuests();
@@ -28,18 +28,18 @@ function maybeRefreshAd(fetchedAt, QUEST_HOME_BANNER_DESKTOP) {
     if ("active" === obj2.getState()) {
       if (!fetchingAdToDeliverByPlacement.isFetchingAdToDeliverByPlacement(QUEST_HOME_BANNER_DESKTOP)) {
         if (obj4.canRefreshAd(QUEST_HOME_BANNER_DESKTOP)) {
-          let tmpResult = tmp(10913);
+          let tmpResult = tmp(11133);
           const currentQuests = tmpResult.fetchCurrentQuests();
-          tmpResult = tmp(10913);
+          tmpResult = tmp(11133);
           const questToDeliver = tmpResult.fetchQuestToDeliver(QUEST_HOME_BANNER_DESKTOP, arg2);
         }
       }
       obj4 = fetchingAdToDeliverByPlacement;
     } else if (null != fetchedAt) {
-      tmp(10913).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
-      const tmpResult1 = tmp(10913);
+      tmp(11133).clearQuestAdDecision(QUEST_HOME_BANNER_DESKTOP, fetchedAt.ttlMillis);
+      const tmpResult1 = tmp(11133);
     }
-    obj2 = _modDef10937;
+    obj2 = _modDef11157;
   }
 }
 ({ useEffect: c3, useRef: c4 } = noop);
@@ -132,7 +132,7 @@ export const useAdDecisionForPlacement = function useAdDecisionForPlacement(MOBI
   const _require = MOBILE_HOME_DOCK_AREA;
   const items = [closure_5];
   const items1 = [MOBILE_HOME_DOCK_AREA];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const deliveryAdDecisionByPlacement = closure_1_5.deliveryAdDecisionByPlacement;
     let value = deliveryAdDecisionByPlacement.get(closure_0);
     if (value == null) {

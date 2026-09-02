@@ -1,11 +1,11 @@
-// Module ID: 8991
-// Function ID: 8992
+// Module ID: 9005
+// Function ID: 9006
 // Name: styles
-// Dependencies: [19, 21, 4478, 712, 4933, 4217, 4927, 8007, 2]
+// Dependencies: [19, 21, 4478, 709, 4933, 4217, 4927, 8016, 2]
 // Exports: FloatingActionButton
 
-// Module 8991 (styles)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9005 (styles)
+import ThemesDefault from "Themes" /* 709 */;
 import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4933 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -66,11 +66,11 @@ export const FloatingActionButton = function FloatingActionButton(positionRight)
   let cloneElementResult = icon;
   if (validElement.isValidElement(icon)) {
     const obj2 = { color: null };
-    obj2[0] = positionRight(712).colors.WHITE;
+    obj2[0] = positionRight(709).colors.WHITE;
     cloneElementResult = validElement.cloneElement(icon, obj2);
   }
   obj1.icon = cloneElementResult;
   ({ button: obj4.style, iconButtonPill: obj4.pillStyle } = styles());
-  obj[1] = jsx(positionBottom(8007).BaseIconButton, {});
+  obj[1] = jsx(positionBottom(8016).BaseIconButton, {});
   return jsx(positionRight(4217).View, { style: animatedStyle, children: null });
 };

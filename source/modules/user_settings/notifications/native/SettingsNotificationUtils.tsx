@@ -1,12 +1,12 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15309
+// Function ID: 15310
 // Name: hasAndroidNotificationChannels
-// Dependencies: [500, 4457, 2]
+// Dependencies: [1234, 4457, 2]
 // Exports: hasAndroidNotificationChannels
 
-// Module 15080 (hasAndroidNotificationChannels)
+// Module 15309 (hasAndroidNotificationChannels)
 import set from "set" /* 2 */;
-import set2 from "set" /* 500 */;
+import set2 from "set" /* 1234 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/notifications/native/SettingsNotificationUtils.tsx");

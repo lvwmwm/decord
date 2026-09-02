@@ -1,13 +1,13 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8511
+// Function ID: 8512
 // Name: initialize
-// Dependencies: [676, 8436, 589, 4166, 709, 2]
+// Dependencies: [673, 8445, 586, 4166, 706, 2]
 
-// Module 8498 (initialize)
+// Module 8511 (initialize)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import ME from "ME" /* 676 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 
 const ApplicationFlags = ME.ApplicationFlags;

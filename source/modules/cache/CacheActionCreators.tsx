@@ -1,14 +1,14 @@
-// Module ID: 15169
-// Function ID: 15170
+// Module ID: 15398
+// Function ID: 15399
 // Name: _writeCaches
-// Dependencies: [5, 1387, 7221, 709, 2]
+// Dependencies: [5, 1386, 7230, 706, 2]
 // Exports: clearCaches, writeCaches
 
-// Module 15169 (_writeCaches)
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 15398 (_writeCaches)
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { ChannelLoader } from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "handleClearCaches" /* 7221 */;
+import { ChannelLoader } from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "handleClearCaches" /* 7230 */;
 
 function _writeCaches() {
   const self = this;
@@ -52,7 +52,7 @@ function _writeCaches() {
               table = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp5) {

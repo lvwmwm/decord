@@ -1,10 +1,10 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17596
+// Function ID: 17597
 // Name: ActionableNotice
 // Dependencies: [19, 17, 21, 4478, 4474, 4928, 2]
 // Exports: default
 
-// Module 17360 (ActionableNotice)
+// Module 17596 (ActionableNotice)
 import noopAll from "noop" /* 19 */;
 import Text from "Text" /* 4474 */;
 import Button from "Button" /* 4928 */;

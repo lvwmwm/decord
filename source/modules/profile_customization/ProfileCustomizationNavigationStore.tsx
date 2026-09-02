@@ -1,11 +1,11 @@
-// Module ID: 9032
-// Function ID: 9033
+// Module ID: 9046
+// Function ID: 9047
 // Name: zustandStore
-// Dependencies: [4344, 685, 2]
+// Dependencies: [4344, 682, 2]
 
-// Module 9032 (zustandStore)
+// Module 9046 (zustandStore)
 import set from "set" /* 2 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 import defaultStatesAreEqual from "defaultStatesAreEqual" /* 4344 */;
 
 let closure_0 = MAX_FAVORITES.ProfileCustomizationSubsection;

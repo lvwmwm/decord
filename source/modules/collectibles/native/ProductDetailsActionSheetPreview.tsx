@@ -1,12 +1,12 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12765
+// Function ID: 12766
 // Name: ProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 21, 4478, 712, 1950, 12542, 12544, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 1949, 12766, 12768, 2]
 // Exports: default
 
-// Module 12541 (ProductDetailsActionSheetPreview)
-import ThemesDefault from "Themes" /* 712 */;
-import memoDefault from "memo" /* 12542 */;
+// Module 12765 (ProductDetailsActionSheetPreview)
+import ThemesDefault from "Themes" /* 709 */;
+import memoDefault from "memo" /* 12766 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -34,7 +34,7 @@ export default function ProductDetailsActionSheetPreview(onBundleActiveItemChang
     }, []),
     children: null
   };
-  if (product.type === _require(1950).CollectiblesItemType.BUNDLE) {
+  if (product.type === _require(1949).CollectiblesItemType.BUNDLE) {
     obj = { product: null, width: null, handlePreviewPress: null, onTrackPress: null, onActiveItemChange: null };
     obj[0] = product;
     obj[1] = tmp3;
@@ -50,7 +50,7 @@ export default function ProductDetailsActionSheetPreview(onBundleActiveItemChang
     obj1[1] = tmp3;
     obj1[2] = handlePreviewPress;
     obj1[3] = onTrackPress;
-    obj[1] = tmp7(_require(12544).IndividualProductPreview, obj1);
+    obj[1] = tmp7(_require(12768).IndividualProductPreview, obj1);
     tmp7Result = tmp7(tmp8, obj);
   }
   obj[2] = tmp7Result;

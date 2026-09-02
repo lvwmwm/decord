@@ -1,13 +1,13 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17586
+// Function ID: 17587
 // Name: GuildPremiumRoleSubscribeButton
-// Dependencies: [19, 21, 4478, 9137, 1236, 2]
+// Dependencies: [19, 21, 4478, 9151, 1233, 2]
 // Exports: GuildPremiumRoleSubscribeButton
 
-// Module 17350 (GuildPremiumRoleSubscribeButton)
+// Module 17586 (GuildPremiumRoleSubscribeButton)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CreatorRevenueButton from "CreatorRevenueButton" /* 9137 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import CreatorRevenueButton from "CreatorRevenueButton" /* 9151 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

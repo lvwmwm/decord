@@ -1,13 +1,13 @@
-// Module ID: 9362
-// Function ID: 9363
+// Module ID: 9375
+// Function ID: 9376
 // Name: Scope
-// Dependencies: [19, 17, 21, 4478, 1236, 6225, 712, 4438, 4474, 5941, 9288, 8433, 8610, 2]
+// Dependencies: [19, 17, 21, 4478, 1233, 6234, 709, 4438, 4474, 5949, 9301, 8442, 8625, 2]
 // Exports: default
 
-// Module 9362 (Scope)
+// Module 9375 (Scope)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -38,7 +38,7 @@ function Scope(arg0) {
     obj = { style: null, color: null, size: "refresh_sm" };
     obj[0] = tmp.fakeScopeIcon;
     obj[1] = ThemesDefault.colors.TEXT_MUTED;
-    let tmp10Result = tmp10(tmp6(6225).CircleXIcon, obj);
+    let tmp10Result = tmp10(tmp6(6234).CircleXIcon, obj);
   } else {
     obj1 = { color: null, size: "refresh_sm" };
     obj1[0] = ThemesDefault.colors.TEXT_MUTED;
@@ -80,20 +80,20 @@ export default function AuthorizeScopes(accountScopes) {
   if (0 === accountScopes.length) {
     return null;
   } else {
-    const t = accountScopes(1236).t;
+    const t = accountScopes(1233).t;
     if (isTrustedName) {
       let tmp4 = tmp14;
     } else {
       tmp4 = tmp14;
     }
-    let hasItem = integrationType === tmp4(8433).ApplicationIntegrationType.USER_INSTALL;
+    let hasItem = integrationType === tmp4(8442).ApplicationIntegrationType.USER_INSTALL;
     if (hasItem) {
-      hasItem = requestedScopes.includes(tmp4(8610).OAuth2Scopes.APPLICATIONS_COMMANDS);
+      hasItem = requestedScopes.includes(tmp4(8625).OAuth2Scopes.APPLICATIONS_COMMANDS);
     }
     let obj = { style: null, children: null };
     obj[0] = tmp.scopesContainer;
     obj = { variant: "heading-sm/normal", color: "text-default", children: null };
-    const intl = tmp4(1236).intl;
+    const intl = tmp4(1233).intl;
     obj = { application: null };
     obj[0] = application.name;
     obj[2] = intl.format(_1Hz_Sl, obj);
@@ -122,8 +122,8 @@ export default function AuthorizeScopes(accountScopes) {
     const items1 = [mapped.flat(), , ];
     if (hasItem) {
       const obj2 = { text: null };
-      const intl2 = tmp4(1236).intl;
-      obj2[0] = intl2.string(tmp4(1236).t.Ls2XRq);
+      const intl2 = tmp4(1233).intl;
+      obj2[0] = intl2.string(tmp4(1233).t.Ls2XRq);
       hasItem = tmp9(Scope, obj2);
     }
     items1[1] = hasItem;

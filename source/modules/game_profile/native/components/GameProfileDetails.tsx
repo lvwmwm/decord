@@ -1,14 +1,14 @@
-// Module ID: 12634
-// Function ID: 12635
+// Module ID: 12855
+// Function ID: 12856
 // Name: GameProfileWebsiteButton
-// Dependencies: [19, 17, 8629, 21, 4478, 712, 4190, 8841, 1236, 1955, 4163, 12635, 12644, 4474, 2]
+// Dependencies: [19, 17, 8644, 21, 4478, 709, 4190, 8856, 1233, 1954, 4163, 12856, 12865, 4474, 2]
 // Exports: default
 
-// Module 12634 (GameProfileWebsiteButton)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12855 (GameProfileWebsiteButton)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { IGDB_ATTRIBUTION_LINK } from "ContentInventoryFeedKey" /* 8629 */;
+import { IGDB_ATTRIBUTION_LINK } from "ContentInventoryFeedKey" /* 8644 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -26,7 +26,7 @@ function GameProfileWebsiteButton(action) {
       trackAction(closure_1_3[6]).openURL(url);
       trackAction(action);
     }, items),
-    hitSlop: trackAction(712).space.PX_4,
+    hitSlop: trackAction(709).space.PX_4,
     children: icon
   });
 }
@@ -133,7 +133,7 @@ export default function GameProfileDetails(game) {
               if (obj != null) {
                 const websites = obj.websites;
                 if (websites != null) {
-                  const mapped3 = websites.map((arg0) => callback2(12644)(arg0, callback2(712).colors.ICON_SUBTLE));
+                  const mapped3 = websites.map((arg0) => callback2(12865)(arg0, callback2(709).colors.ICON_SUBTLE));
                   found = mapped3.filter((arg0) => null != arg0);
                 }
               }
@@ -180,7 +180,7 @@ export default function GameProfileDetails(game) {
               obj4[0] = stringResult;
               const obj5 = { style: null, children: null };
               obj5[0] = lib.platformsContainer;
-              obj5[1] = platforms.map((platform) => callback3(callback(12635).GameUpdatePlatformIcon, { platform, size: "md", color: callback2(712).colors.ICON_SUBTLE }, platform));
+              obj5[1] = platforms.map((platform) => callback3(callback(12856).GameUpdatePlatformIcon, { platform, size: "md", color: callback2(709).colors.ICON_SUBTLE }, platform));
               obj4[1] = closure_1_8(closure_1_5, obj5);
               items.push(obj4);
             }

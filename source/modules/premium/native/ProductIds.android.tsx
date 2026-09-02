@@ -1,13 +1,13 @@
-// Module ID: 6087
-// Function ID: 6088
+// Module ID: 6095
+// Function ID: 6096
 // Name: SubscriptionPlans
-// Dependencies: [1924, 1624, 2]
+// Dependencies: [1923, 1623, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 6087 (SubscriptionPlans)
+// Module 6095 (SubscriptionPlans)
 import set from "set" /* 2 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
-import isMetaQuest from "isMetaQuest" /* 1624 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
+import isMetaQuest from "isMetaQuest" /* 1623 */;
 
 ({ PremiumTypes, SubscriptionIntervalTypes, SubscriptionPlans } = GuildFeatures);
 ({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID, PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID, PREMIUM_TIER_2_REFERRAL_TRIAL_ID, PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, PREMIUM_TIER_2_LIKELIHOOD_1_MONTH_40_PERCENT_DISCOUNT_ID, PREMIUM_TIER_2_REENGAGEMENT_1_MONTH_40_PERCENT_DISCOUNT_ID } = GuildFeatures);

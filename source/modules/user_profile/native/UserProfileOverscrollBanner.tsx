@@ -1,14 +1,14 @@
-// Module ID: 8919
-// Function ID: 8920
+// Module ID: 8934
+// Function ID: 8935
 // Name: UserProfileOverscrollBanner
-// Dependencies: [19, 17, 21, 4217, 8920, 8552, 500, 2]
+// Dependencies: [19, 17, 21, 4217, 8935, 8565, 1234, 2]
 // Exports: default
 
-// Module 8919 (UserProfileOverscrollBanner)
+// Module 8934 (UserProfileOverscrollBanner)
 import noopAll from "noop" /* 19 */;
-import set from "set" /* 500 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8552 */;
-import _modDef8920 from "module_8920" /* 8920 */;
+import set from "set" /* 1234 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8565 */;
+import _modDef8935 from "module_8935" /* 8935 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importDefaultResult from "module_4217" /* 4217 */;
@@ -16,7 +16,7 @@ import importDefaultResult from "module_4217" /* 4217 */;
 require = arg1;
 noopAll;
 ({ jsx: c4, jsxs: c5 } = jsxProd);
-let closure_6 = importDefaultResult.createAnimatedComponent(_modDef8920);
+let closure_6 = importDefaultResult.createAnimatedComponent(_modDef8935);
 const result = require("set").fileFinishedImporting("modules/user_profile/native/UserProfileOverscrollBanner.tsx");
 
 export default function UserProfileOverscrollBanner(arg0) {

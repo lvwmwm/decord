@@ -1,13 +1,13 @@
-// Module ID: 5056
-// Function ID: 5057
+// Module ID: 5064
+// Function ID: 5065
 // Name: useGameProfileObscured
-// Dependencies: [1922, 5057, 589, 2]
+// Dependencies: [1921, 5065, 586, 2]
 // Exports: default, isGameProfileObscured
 
-// Module 5056 (useGameProfileObscured)
-import initialize from "initialize" /* 589 */;
-import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5057 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 5064 (useGameProfileObscured)
+import initialize from "initialize" /* 586 */;
+import isAgeRestrictedContentClassification from "isAgeRestrictedContentClassification" /* 5065 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/game_profile/hooks/useGameProfileObscured.tsx");

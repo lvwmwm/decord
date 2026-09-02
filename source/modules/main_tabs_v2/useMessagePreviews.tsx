@@ -1,13 +1,13 @@
-// Module ID: 14913
-// Function ID: 14914
+// Module ID: 15142
+// Function ID: 15143
 // Name: useMessagePreview
-// Dependencies: [1340, 4493, 4166, 589, 7627, 4171, 14914, 2]
+// Dependencies: [1339, 4493, 4166, 586, 7637, 4171, 15143, 2]
 // Exports: default, useMessagePreviewSetting
 
-// Module 14913 (useMessagePreview)
-import useIsNsfwGatedDefault from "useIsNsfwGated" /* 7627 */;
-import useLatestChannelMessageDefault from "useLatestChannelMessage" /* 14914 */;
-import closure_3 from "handleConnectionClosedOrResumed" /* 1340 */;
+// Module 15142 (useMessagePreview)
+import useIsNsfwGatedDefault from "useIsNsfwGated" /* 7637 */;
+import useLatestChannelMessageDefault from "useLatestChannelMessage" /* 15143 */;
+import closure_3 from "handleConnectionClosedOrResumed" /* 1339 */;
 import closure_4 from "generateOldThreadCutoff" /* 4493 */;
 
 const require = arg1;
@@ -17,7 +17,7 @@ export default function useMessagePreview(guild_id) {
   ({ unread, disabled } = arg1);
   guild_id = guild_id.guild_id;
   const items = [closure_3];
-  const stateFromStores = guild_id(589).useStateFromStores(items, () => {
+  const stateFromStores = guild_id(586).useStateFromStores(items, () => {
     const guilds = closure_1_3.settings.guilds;
     let tmp2 = null;
     if (null != guild_id) {
@@ -42,9 +42,9 @@ export default function useMessagePreview(guild_id) {
     const MessagePreviewSetting = guild_id(closure_1_2[2]).MessagePreviewSetting;
     setting = MessagePreviewSetting.getSetting();
   });
-  const obj = guild_id(589);
+  const obj = guild_id(586);
   const items1 = [closure_4];
-  const stateFromStores1 = guild_id(589).useStateFromStores(items1, () => {
+  const stateFromStores1 = guild_id(586).useStateFromStores(items1, () => {
     let hasUnreadResult = null != guild_id;
     if (hasUnreadResult) {
       hasUnreadResult = closure_1_4.hasUnread(tmp.id);
@@ -72,7 +72,7 @@ export default function useMessagePreview(guild_id) {
 export const useMessagePreviewSetting = function useMessagePreviewSetting(arg0) {
   const _require = arg0;
   const items = [closure_3];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const guilds = closure_1_3.settings.guilds;
     let tmp2 = null;
     if (null != guild_id) {

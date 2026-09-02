@@ -1,10 +1,10 @@
-// Module ID: 10125
-// Function ID: 10126
+// Module ID: 10147
+// Function ID: 10148
 // Name: useStageActionBarAnimation
-// Dependencies: [4217, 9647, 9645, 1628, 4479, 2]
+// Dependencies: [4217, 9660, 9658, 1627, 4479, 2]
 // Exports: useStageActionBarAnimation
 
-// Module 10125 (useStageActionBarAnimation)
+// Module 10147 (useStageActionBarAnimation)
 import set from "set" /* 2 */;
 import _mod4217 from "module_4217" /* 4217 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 9436
-// Function ID: 9437
+// Module ID: 9449
+// Function ID: 9450
 // Name: makeTwitchRequest
-// Dependencies: [5, 5225, 4323, 676, 687, 530, 5350, 709, 8049, 5227, 659, 589, 2]
+// Dependencies: [5, 5233, 4323, 673, 684, 527, 5358, 706, 8057, 5235, 656, 586, 2]
 
-// Module 9436 (makeTwitchRequest)
-import sendRequest from "sendRequest" /* 530 */;
-import initializeDefault from "initialize" /* 589 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
-import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import callbackDefault from "callback" /* 5350 */;
+// Module 9449 (makeTwitchRequest)
+import sendRequest from "sendRequest" /* 527 */;
+import initializeDefault from "initialize" /* 586 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
+import setDefault from "set" /* 684 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import callbackDefault from "callback" /* 5358 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5225 */;
+import closure_4 from "set" /* 5233 */;
 import closure_5 from "initialize" /* 4323 */;
-import { PlatformTypes } from "ME" /* 676 */;
+import { PlatformTypes } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 require = arg1;

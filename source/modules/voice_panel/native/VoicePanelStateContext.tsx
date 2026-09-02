@@ -1,18 +1,18 @@
-// Module ID: 11839
-// Function ID: 11840
+// Module ID: 12062
+// Function ID: 12063
 // Name: dismissPanel
-// Dependencies: [19, 11840, 11838, 11841, 7797, 11842, 1630, 2]
+// Dependencies: [19, 12063, 12061, 12064, 7806, 12065, 1629, 2]
 
-// Module 11839 (dismissPanel)
-import getTargetCardSizeDefault from "getTargetCardSize" /* 11842 */;
-import { VoicePanelModes } from "VoicePanelModes" /* 11840 */;
-import VoicePanelControlsModes from "VoicePanelControlsModes" /* 11838 */;
-import createFakeSharedValue from "createFakeSharedValue" /* 7797 */;
+// Module 12062 (dismissPanel)
+import getTargetCardSizeDefault from "getTargetCardSize" /* 12065 */;
+import { VoicePanelModes } from "VoicePanelModes" /* 12063 */;
+import VoicePanelControlsModes from "VoicePanelControlsModes" /* 12061 */;
+import createFakeSharedValue from "createFakeSharedValue" /* 7806 */;
 import importAllResult from "noop" /* 19 */;
 import set from "set" /* 2 */;
 
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsModes);
-let obj = { channelId: "context-not-initialized", channelType: "e", connected: "Array", contentDimensions: false, controlsSpecs: null, dismissPanel: null, dismissToPIPGestureRef: null, dragScrolling: null, focused: null, generateStateLocker: null, guildId: null, hideControls: null, isCall: null, isFocusedVideoZoomed: null, layoutManager: null, mode: null, morphablePanelMode: null, mountedCards: null, pipAvoidanceSpecs: null, preJoinContentSize: null, safeArea: null, scrollPosition: null, setControlsMode: null, setFocused: null, setIsFocusedVideoZoomed: null, setMode: null, setShowFloatingCTA: "M9 1H7v1h2V1ZM9 7H7v2h2V7Z", showControls: null, showFloatingCTA: "", streamOutputSinkStack: "", windowDimensions: null, wrapperDimensions: "default", useReducedMotion: false, wrapperOffset: false, panelCardStillInPIP: false };
+let obj = { channelId: "context-not-initialized", channelType: "e", connected: "Array", contentDimensions: false, controlsSpecs: null, dismissPanel: null, dismissToPIPGestureRef: null, dragScrolling: null, focused: null, generateStateLocker: null, guildId: null, hideControls: null, isCall: null, isFocusedVideoZoomed: null, layoutManager: null, mode: null, morphablePanelMode: null, mountedCards: null, pipAvoidanceSpecs: null, preJoinContentSize: null, safeArea: null, scrollPosition: null, setControlsMode: null, setFocused: null, setIsFocusedVideoZoomed: null, setMode: null, setShowFloatingCTA: "M2 2H1v2h1V2ZM5 1H2v1h3V1ZM7 2H6v1h1V2ZM9 1H7v1h2V1ZM12 1h-1v2h1V2h2V1h-2Z", showControls: null, showFloatingCTA: "", streamOutputSinkStack: "", windowDimensions: null, wrapperDimensions: "default", useReducedMotion: false, wrapperOffset: false, panelCardStillInPIP: false };
 obj[2] = createFakeSharedValue.createFakeSharedValue(false);
 obj[3] = createFakeSharedValue.createFakeSharedValue({ width: 0, height: 0 });
 obj = { mode: VoicePanelControlsModes.FLOATING_DEFAULT, locked: false, height: CONTROLS_HEIGHT, pushToTalk: false };

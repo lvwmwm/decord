@@ -1,11 +1,11 @@
-// Module ID: 8489
-// Function ID: 8490
+// Module ID: 8502
+// Function ID: 8503
 // Name: prototype
-// Dependencies: [8490, 2]
+// Dependencies: [8503, 2]
 
-// Module 8489 (prototype)
+// Module 8502 (prototype)
 import set from "set" /* 2 */;
-import prototype2 from "prototype" /* 8490 */;
+import prototype2 from "prototype" /* 8503 */;
 
 const RevenueError = prototype2.RevenueError;
 const prototype = function CheckoutError(arg0) {

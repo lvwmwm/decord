@@ -1,9 +1,9 @@
-// Module ID: 6740
-// Function ID: 6741
+// Module ID: 6749
+// Function ID: 6750
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6740 (metadata)
+// Module 6749 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/HdStreamAbstractUI-2x.png.js");

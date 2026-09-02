@@ -1,24 +1,24 @@
-// Module ID: 11414
-// Function ID: 11415
+// Module ID: 11637
+// Function ID: 11638
 // Name: items
-// Dependencies: [5, 32, 19, 17, 1994, 676, 21, 1236, 4478, 712, 5594, 9213, 4945, 698, 11415, 4194, 4673, 9518, 4474, 7692, 7693, 7808, 4928, 2]
+// Dependencies: [5, 32, 19, 17, 1993, 673, 21, 1233, 4478, 709, 5602, 9227, 4945, 695, 11638, 4194, 4673, 9531, 4474, 7701, 7702, 7817, 4928, 2]
 
-// Module 11414 (items)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 11637 (items)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import Button from "Button" /* 4928 */;
 import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4945 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5594 */;
-import context from "context" /* 7692 */;
-import TextArea from "TextArea" /* 7808 */;
-import _calculateScrollOffsetDefault from "_calculateScrollOffset" /* 9213 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5602 */;
+import context from "context" /* 7701 */;
+import TextArea from "TextArea" /* 7817 */;
+import _calculateScrollOffsetDefault from "_calculateScrollOffset" /* 9227 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import getFriendlyDurationString from "getFriendlyDurationString" /* 1994 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import getFriendlyDurationString from "getFriendlyDurationString" /* 1993 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -114,7 +114,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
               return obj;
             } else {
               closure_1 = tmp4;
-              let obj3 = closure_1_1(11415);
+              let obj3 = closure_1_1(11638);
               dependencyMap = 1;
               c3 = 1;
               obj1 = { value: null, done: false };
@@ -130,7 +130,7 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
             obj2[0] = arg1;
             return obj2;
           } else {
-            const intl = closure_1_0(1236).intl;
+            const intl = closure_1_0(1233).intl;
             const obj8 = closure_1_1(4194);
             const name = closure_1_1(4673).getName(closure_1, null, c0);
             c0 = name;
@@ -140,8 +140,8 @@ const memoResult = importAllResult.memo(function GuildDisableCommunication(arg0)
             obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: null, icon: null };
             obj3 = { user: null };
             obj3[0] = c0;
-            obj[1] = intl.formatToPlainString(closure_1_0(1236).t.O9C3Nt, obj3);
-            obj[2] = closure_1_1(9518);
+            obj[1] = intl.formatToPlainString(closure_1_0(1233).t.O9C3Nt, obj3);
+            obj[2] = closure_1_1(9531);
             obj8.open(obj);
             dependencyMap();
             c3 = 3;

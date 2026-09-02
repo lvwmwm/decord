@@ -1,24 +1,24 @@
-// Module ID: 14182
-// Function ID: 14183
+// Module ID: 14405
+// Function ID: 14406
 // Name: importDefaultResult1
-// Dependencies: [1387, 1982, 1909, 4529, 4121, 4554, 4130, 5363, 1922, 4497, 10063, 676, 14183, 14184, 14185, 14186, 7764, 13441, 14187, 14188, 8750, 1236, 14189, 10074, 7501, 4674, 5385, 698, 4700, 4662, 2]
+// Dependencies: [1386, 1981, 1908, 4529, 4120, 4554, 4130, 5371, 1921, 4497, 10085, 673, 14406, 14407, 14408, 14409, 7773, 13664, 14410, 14411, 8765, 1233, 14412, 10096, 7511, 4674, 5393, 695, 4700, 4662, 2]
 
-// Module 14182 (importDefaultResult1)
+// Module 14405 (importDefaultResult1)
 import initializeDefault from "initialize" /* 4662 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1982 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import { GUILD_VOCAL_CHANNELS_KEY } from "comparator" /* 1981 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import importDefaultResult from "_detectH265HardwareDecode" /* 4529 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
 import importDefaultResult1 from "createRTCConnection" /* 4554 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
-import closure_10 from "anyoneHasFlagInContext" /* 5363 */;
-import closure_11 from "mergeGuildAvatar" /* 1922 */;
+import closure_10 from "anyoneHasFlagInContext" /* 5371 */;
+import closure_11 from "mergeGuildAvatar" /* 1921 */;
 import importDefaultResult2 from "updateVoiceState" /* 4497 */;
-import closure_13 from "getUserAgnosticState" /* 10063 */;
-import ME from "ME" /* 676 */;
-import registerAsset from "registerAsset" /* 14183 */;
-import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6, intl as intl7, intl as intl8, intl as intl9, intl as intl10, intl as intl11 } from "getSystemLocale" /* 1236 */;
+import closure_13 from "getUserAgnosticState" /* 10085 */;
+import ME from "ME" /* 673 */;
+import registerAsset from "registerAsset" /* 14406 */;
+import { intl, intl as intl2, intl as intl3, intl as intl4, intl as intl5, intl as intl6, intl as intl7, intl as intl8, intl as intl9, intl as intl10, intl as intl11 } from "getSystemLocale" /* 1233 */;
 
 const require = arg1;
 ({ AnalyticEvents: closure_14, Permissions: closure_15 } = ME);

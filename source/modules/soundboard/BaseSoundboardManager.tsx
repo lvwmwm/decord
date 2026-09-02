@@ -1,12 +1,12 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14416
+// Function ID: 14417
 // Name: _initialize
-// Dependencies: [1218, 4529, 4662, 709, 2]
+// Dependencies: [1215, 4529, 4662, 706, 2]
 
-// Module 14193 (_initialize)
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 14416 (_initialize)
+import dispatcherDefault from "dispatcher" /* 706 */;
 import initializeDefault from "initialize" /* 4662 */;
-import closure_2 from "fetchFingerprint" /* 1218 */;
+import closure_2 from "fetchFingerprint" /* 1215 */;
 import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
 
 initializeDefault;

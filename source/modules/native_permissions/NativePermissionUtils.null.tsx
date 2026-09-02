@@ -1,11 +1,11 @@
-// Module ID: 5086
-// Function ID: 5087
+// Module ID: 5094
+// Function ID: 5095
 // Name: requestPermissionCore
-// Dependencies: [5087, 2]
+// Dependencies: [5095, 2]
 
-// Module 5086 (requestPermissionCore)
+// Module 5094 (requestPermissionCore)
 import set from "set" /* 2 */;
-import requestAuthorization from "requestAuthorization" /* 5087 */;
+import requestAuthorization from "requestAuthorization" /* 5095 */;
 
 const NativePermissionBaseUtils = requestAuthorization.NativePermissionBaseUtils;
 class NativePermissionDesktopNullUtils extends NativePermissionBaseUtils {

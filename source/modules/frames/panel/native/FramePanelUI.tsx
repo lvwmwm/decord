@@ -1,19 +1,19 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 16858
+// Function ID: 16859
 // Name: renderActivityOrPIP
-// Dependencies: [19, 21, 16624, 16625, 16628, 16597, 16622, 2]
+// Dependencies: [19, 21, 16859, 16860, 16863, 16832, 16857, 2]
 // Exports: default
 
-// Module 16623 (renderActivityOrPIP)
+// Module 16858 (renderActivityOrPIP)
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   if ("pip" === arg1) {
-    let tmp4 = 16624;
+    let tmp4 = 16859;
   } else {
-    tmp4 = 16625;
+    tmp4 = 16860;
   }
   return jsx(importDefault(tmp4), { transitionState, transitionCleanUp }, arg0);
 }

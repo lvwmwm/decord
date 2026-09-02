@@ -1,15 +1,15 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 16054
+// Function ID: 16055
 // Name: FavoritesGuildCoachmarkMenuItemContent
-// Dependencies: [19, 1390, 676, 1384, 21, 10319, 5940, 589, 1236, 3179, 8973, 2]
+// Dependencies: [19, 1389, 673, 1383, 21, 10341, 5948, 586, 1233, 3178, 8987, 2]
 // Exports: default
 
-// Module 15822 (FavoritesGuildCoachmarkMenuItemContent)
-import Layer from "Layer" /* 5940 */;
-import items12 from "items1" /* 10319 */;
+// Module 16054 (FavoritesGuildCoachmarkMenuItemContent)
+import Layer from "Layer" /* 5948 */;
+import items12 from "items1" /* 10341 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "initializeFromUserSettings" /* 1390 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
+import closure_4 from "initializeFromUserSettings" /* 1389 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { jsx } from "jsxProd" /* 21 */;
 import set from "set" /* 2 */;
 
@@ -37,7 +37,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, callback, callback1];
   const memo = callback.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "unknown_error", onButtonPress: 0 };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M7 7H6v2h1V7Z", onButtonPress: "#000" };
     const intl = stateFromStores(markPopoverAsDismissed[8]).intl;
     const tmp4 = shouldShowPopover(markPopoverAsDismissed[9]);
     if (stateFromStores) {

@@ -1,14 +1,14 @@
-// Module ID: 6519
-// Function ID: 6520
+// Module ID: 6528
+// Function ID: 6529
 // Name: EmojiWumpSweatExample
-// Dependencies: [21, 5493, 6520, 2]
+// Dependencies: [21, 5501, 6529, 2]
 // Exports: EmojiWumpSweatExample
 
-// Module 6519 (EmojiWumpSweatExample)
+// Module 6528 (EmojiWumpSweatExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6520 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6529 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiWumpSweatExample.native.tsx");

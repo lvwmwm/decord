@@ -1,9 +1,9 @@
-// Module ID: 648
-// Function ID: 649
+// Module ID: 645
+// Function ID: 646
 // Name: attach
-// Dependencies: [593, 2]
+// Dependencies: [590, 2]
 
-// Module 648 (attach)
+// Module 645 (attach)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("../discord_common/js/packages/flux/BatchedStoreListener.tsx");

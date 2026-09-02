@@ -1,12 +1,12 @@
-// Module ID: 16334
-// Function ID: 16335
+// Module ID: 16566
+// Function ID: 16567
 // Name: useOnMessageSend
-// Dependencies: [19, 676, 709, 2]
+// Dependencies: [19, 673, 706, 2]
 // Exports: default
 
-// Module 16334 (useOnMessageSend)
+// Module 16566 (useOnMessageSend)
 import closure_2 from "noop" /* 19 */;
-import { MessageStates } from "ME" /* 676 */;
+import { MessageStates } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/messages/useOnMessageSend.tsx");
 
@@ -36,11 +36,11 @@ export default function useOnMessageSend(arg0) {
         tmp3 = undefined !== handleMessageCreate && optimistic.channelId !== tmp2;
       }
     }
-    const subscription = callback(709).subscribe("MESSAGE_CREATE", handleMessageCreate);
-    let obj = callback(709);
-    const subscription1 = callback(709).subscribe("UPLOAD_START", handleMessage);
-    let obj2 = callback(709);
-    const subscription2 = callback(709).subscribe("CALL_CREATE", handleMessage);
+    const subscription = callback(706).subscribe("MESSAGE_CREATE", handleMessageCreate);
+    let obj = callback(706);
+    const subscription1 = callback(706).subscribe("UPLOAD_START", handleMessage);
+    let obj2 = callback(706);
+    const subscription2 = callback(706).subscribe("CALL_CREATE", handleMessage);
     return () => {
       handleMessage(handleMessageCreate[2]).unsubscribe("MESSAGE_CREATE", handleMessageCreate);
       const obj = handleMessage(handleMessageCreate[2]);

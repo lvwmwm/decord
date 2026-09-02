@@ -1,16 +1,16 @@
-// Module ID: 16447
-// Function ID: 16448
+// Module ID: 16682
+// Function ID: 16683
 // Name: ContextMenuCommandNavigator
-// Dependencies: [19, 17, 21, 7822, 4478, 712, 7220, 6008, 1628, 7607, 1236, 16448, 16450, 2]
+// Dependencies: [19, 17, 21, 7831, 4478, 709, 7229, 6016, 1627, 7617, 1233, 16683, 16685, 2]
 // Exports: default
 
-// Module 16447 (ContextMenuCommandNavigator)
-import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+// Module 16682 (ContextMenuCommandNavigator)
+import ThemesDefault from "Themes" /* 709 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7822 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7831 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;
@@ -25,8 +25,8 @@ const result = require("set").fileFinishedImporting("modules/application_command
 export default function ContextMenuCommandNavigator() {
   const tmp = callback3();
   const _require = tmp;
-  const layoutEffect = React.useLayoutEffect(() => lib(7220).trackAppUIViewed(), []);
-  let obj = _require(6008);
+  const layoutEffect = React.useLayoutEffect(() => lib(7229).trackAppUIViewed(), []);
+  let obj = _require(6016);
   importDefault = obj.useAccessibilityNativeStackOptions();
   const rect = useSafeAreaInsetsDefault();
   obj = { style: items, children: null };
@@ -61,11 +61,11 @@ export default function ContextMenuCommandNavigator() {
   obj1 = { name: "root", options: null, getComponent: null };
   let obj2 = { title: null };
   ({ Navigator, Screen } = Screen);
-  const intl = _require(1236).intl;
-  obj2[0] = intl.string(_require(1236).t.PHjkRE);
+  const intl = _require(1233).intl;
+  obj2[0] = intl.string(_require(1233).t.PHjkRE);
   obj1[1] = obj2;
   obj1[2] = function getComponent() {
-    return lib(16448).default;
+    return lib(16683).default;
   };
   const items1 = [
     callback(Screen, obj1),
@@ -80,7 +80,7 @@ export default function ContextMenuCommandNavigator() {
         return { title };
       },
       getComponent() {
-        return lib(16450).default;
+        return lib(16685).default;
       }
     })
   ];

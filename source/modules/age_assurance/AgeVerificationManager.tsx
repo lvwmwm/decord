@@ -1,19 +1,19 @@
-// Module ID: 16890
-// Function ID: 16891
+// Module ID: 17126
+// Function ID: 17127
 // Name: handleMessageCreate
-// Dependencies: [1387, 4735, 1981, 1922, 676, 8670, 3, 693, 7201, 6149, 5486, 1955, 4172, 5367, 11502, 5216, 2]
+// Dependencies: [1386, 4735, 1980, 1921, 673, 8685, 3, 690, 7210, 6157, 5494, 1954, 4172, 5375, 11725, 5224, 2]
 
-// Module 16890 (handleMessageCreate)
+// Module 17126 (handleMessageCreate)
 import timestampDefault from "timestamp" /* 3 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 693 */;
-import initializeDefault from "initialize" /* 5486 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 690 */;
+import initializeDefault from "initialize" /* 5494 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "reinjectEphemerals" /* 4735 */;
-import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { transformUser } from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
-import { SafetyToastType } from "SafetyToastType" /* 8670 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import { transformUser } from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
+import { SafetyToastType } from "SafetyToastType" /* 8685 */;
 
 require = arg1;
 function handleMessageCreate(channelId) {
@@ -82,7 +82,7 @@ let prototype = function AgeVerificationManager() {
         }
         if (tmp20) {
           (function handleLoadChannelMessages(channelId) {
-            let obj = callback(7201);
+            let obj = callback(7210);
             obj = { channelId, limit: closure_9 };
             const messages = obj.fetchMessages(obj);
           })(tmp16);
@@ -101,8 +101,8 @@ let prototype = function AgeVerificationManager() {
               tmp4 = type1 !== tmp3.GUILD_MEDIA;
             }
             if (!tmp4) {
-              channelId(6149).preloadForumThreads(channel);
-              const obj = channelId(6149);
+              channelId(6157).preloadForumThreads(channel);
+              const obj = channelId(6157);
             }
           })(tmp16);
         }

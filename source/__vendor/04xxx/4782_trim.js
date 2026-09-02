@@ -1,14 +1,14 @@
 // Module ID: 4782
 // Function ID: 4783
 // Name: trim
-// Dependencies: [1418, 4783, 4771, 4786, 4784, 4790]
+// Dependencies: [1417, 4783, 4771, 4786, 4784, 4790]
 
 // Module 4782 (trim)
 import RequireObjectCoercible from "RequireObjectCoercible" /* 4771 */;
 import getPolyfill from "getPolyfill" /* 4783 */;
 import trim2 from "trim" /* 4784 */;
 import shimStringTrim from "shimStringTrim" /* 4790 */;
-import callBind from "callBind" /* 1418 */;
+import callBind from "callBind" /* 1417 */;
 import defineProperty from "defineProperty" /* 4786 */;
 
 let closure_2 = callBind(getPolyfill());

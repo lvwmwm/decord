@@ -1,19 +1,19 @@
-// Module ID: 8900
-// Function ID: 8901
+// Module ID: 8915
+// Function ID: 8916
 // Name: UseAnimatedPosition
-// Dependencies: [32, 19, 17, 1387, 1992, 1922, 8070, 6001, 676, 5623, 21, 4478, 5624, 4217, 1628, 589, 8114, 5953, 5973, 8080, 4166, 8558, 5071, 8533, 8901, 8902, 8903, 8548, 8539, 8518, 8528, 8908, 1493, 5492, 8547, 4413, 4197, 712, 8899, 8909, 8116, 1979, 8115, 698, 4333, 4445, 1499, 8896, 5622, 1297, 8910, 1236, 4204, 8915, 500, 6245, 8917, 9053, 12491, 8510, 5937, 12619, 1306, 2]
+// Dependencies: [32, 19, 17, 1386, 1991, 1921, 8078, 6009, 673, 5631, 21, 4478, 5632, 4217, 1627, 586, 8122, 5961, 5981, 8088, 4166, 8571, 5079, 8546, 8916, 8917, 8918, 8561, 8552, 8531, 8541, 8923, 1492, 5500, 8560, 4413, 4197, 709, 8914, 8924, 8124, 1978, 8123, 695, 4333, 4445, 1498, 8911, 5630, 1296, 8925, 1233, 4204, 8930, 1234, 6254, 8932, 9067, 12715, 8523, 5945, 12843, 1305, 2]
 
-// Module 8900 (UseAnimatedPosition)
+// Module 8915 (UseAnimatedPosition)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "trackCommunicationDisabled" /* 1992 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import closure_10 from "handleFormOpen" /* 8070 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6001 */;
-import ME from "ME" /* 676 */;
-import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5623 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import closure_10 from "handleFormOpen" /* 8078 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import ME from "ME" /* 673 */;
+import { ACTION_SHEET_MAX_WIDTH } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5631 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -21,8 +21,8 @@ const require = arg1;
 function UseAnimatedPosition(animatedPosition) {
   animatedPosition = animatedPosition.animatedPosition;
   let animatedPosition2;
-  animatedPosition2 = animatedPosition(5624).useBottomSheet().animatedPosition;
-  const obj = animatedPosition(5624);
+  animatedPosition2 = animatedPosition(5632).useBottomSheet().animatedPosition;
+  const obj = animatedPosition(5632);
   const fn = function n() {
     return animatedPosition2.get();
   };

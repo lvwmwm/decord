@@ -1,13 +1,13 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8136
+// Function ID: 8137
 // Name: useMessagePollInteractions
-// Dependencies: [700, 705, 643, 11, 2]
+// Dependencies: [697, 702, 640, 11, 2]
 // Exports: clearChannelPollState, clearPollState, getPollState, updatePollState, useChannelPollInteractions, useMessagePollInteractions
 
-// Module 8128 (useMessagePollInteractions)
+// Module 8136 (useMessagePollInteractions)
 import set from "set" /* 2 */;
-import shallowEqualDefault from "shallowEqual" /* 643 */;
-import identity from "identity" /* 700 */;
+import shallowEqualDefault from "shallowEqual" /* 640 */;
+import identity from "identity" /* 697 */;
 
 let closure_3 = {};
 let closure_4 = identity.createWithEqualityFn((arg0) => {
@@ -71,7 +71,7 @@ export const useChannelPollInteractions = function useChannelPollInteractions(ar
 };
 export const clearChannelPollState = function clearChannelPollState(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_4.setState((arg0) => {
       ({ pollsByChannelId, pollsByMessageId } = arg0);
       pollsByMessageId = undefined;
@@ -95,7 +95,7 @@ export const clearChannelPollState = function clearChannelPollState(arg0) {
 export const clearPollState = function clearPollState(arg0, arg1) {
   const _require = arg0;
   closure_1 = arg1;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_4.setState((arg0) => {
       ({ pollsByChannelId, pollsByMessageId } = arg0);
       let obj = pollsByChannelId[closure_0];

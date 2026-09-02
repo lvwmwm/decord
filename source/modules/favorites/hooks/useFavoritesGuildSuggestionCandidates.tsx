@@ -1,16 +1,16 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 16096
+// Function ID: 16097
 // Name: getAffineChannelId
-// Dependencies: [19, 15866, 7404, 1387, 15791, 10719, 15868, 589, 9939, 10716, 10722, 9935, 9924, 2]
+// Dependencies: [19, 16097, 7413, 1386, 16022, 10940, 16099, 586, 9961, 10937, 10943, 9957, 9946, 2]
 // Exports: default
 
-// Module 15865 (getAffineChannelId)
+// Module 16096 (getAffineChannelId)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "map" /* 15866 */;
-import closure_5 from "recomputeAffinities" /* 7404 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import { NO_SUGGESTIONS } from "items" /* 15791 */;
-import { isAllowedType } from "ALLOWED_TYPES" /* 10719 */;
+import closure_4 from "map" /* 16097 */;
+import closure_5 from "recomputeAffinities" /* 7413 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import { NO_SUGGESTIONS } from "items" /* 16022 */;
+import { isAllowedType } from "ALLOWED_TYPES" /* 10940 */;
 
 const require = arg1;
 function getAffineChannelId(channelId) {

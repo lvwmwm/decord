@@ -1,15 +1,15 @@
-// Module ID: 14902
-// Function ID: 14903
+// Module ID: 15131
+// Function ID: 15132
 // Name: route
-// Dependencies: [1302, 1305, 7884, 676, 589, 11068, 1236, 14900, 14903, 2]
+// Dependencies: [1301, 1304, 7893, 673, 586, 11288, 1233, 15129, 15132, 2]
 
-// Module 14902 (route)
-import initialize from "initialize" /* 589 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 14900 */;
-import closure_2 from "handleThemeChange" /* 1302 */;
-import { SystemTheme } from "SystemThemeState" /* 1305 */;
-import createToggle from "createToggle" /* 11068 */;
+// Module 15131 (route)
+import initialize from "initialize" /* 586 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15129 */;
+import closure_2 from "handleThemeChange" /* 1301 */;
+import { SystemTheme } from "SystemThemeState" /* 1304 */;
+import createToggle from "createToggle" /* 11288 */;
 
 require = arg1;
 createToggle = {
@@ -30,7 +30,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.APPEARANCE_DARK_MODE_THEME_PICKER,
   getComponent() {
-    return require(14903) /* SettingsAppearanceDarkModeThemePickerScreen */.default;
+    return require(15132) /* SettingsAppearanceDarkModeThemePickerScreen */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

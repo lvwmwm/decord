@@ -1,16 +1,16 @@
-// Module ID: 7386
-// Function ID: 7387
+// Module ID: 7395
+// Function ID: 7396
 // Name: getRelativeTimestamp
-// Dependencies: [7387, 4166, 11, 7385, 2]
+// Dependencies: [7396, 4166, 11, 7394, 2]
 // Exports: getRelativeTimestamp, incomingFriendRequestLocalItem, incomingGameFriendRequestLocalItem, isMentionItem, isRemoteAcked, mobileNativeUpdateAvailableLocalItem
 
-// Module 7386 (getRelativeTimestamp)
+// Module 7395 (getRelativeTimestamp)
 import set from "set" /* 2 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import NotificationCenterScenes from "NotificationCenterScenes" /* 7385 */;
-import getDurationString from "getDurationString" /* 7387 */;
-import getDurationStringDefault from "getDurationString" /* 7387 */;
+import NotificationCenterScenes from "NotificationCenterScenes" /* 7394 */;
+import getDurationString from "getDurationString" /* 7396 */;
+import getDurationStringDefault from "getDurationString" /* 7396 */;
 
 const result = set.fileFinishedImporting("modules/notification_center/NotificationCenterUtils.tsx");
 

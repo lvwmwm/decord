@@ -1,9 +1,9 @@
-// Module ID: 1298
-// Function ID: 1299
+// Module ID: 1297
+// Function ID: 1298
 // Name: STATUS_PADDING
 // Dependencies: [2]
 
-// Module 1298 (STATUS_PADDING)
+// Module 1297 (STATUS_PADDING)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("design/void/Status/native/StatusConstants.tsx");

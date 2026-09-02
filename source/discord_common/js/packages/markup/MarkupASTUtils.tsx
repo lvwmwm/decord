@@ -1,10 +1,10 @@
-// Module ID: 7898
-// Function ID: 7899
+// Module ID: 7907
+// Function ID: 7908
 // Name: collectAst
 // Dependencies: [2]
 // Exports: astToString, getIndexedAST
 
-// Module 7898 (collectAst)
+// Module 7907 (collectAst)
 import set2 from "set" /* 2 */;
 
 function collectAst(arr) {

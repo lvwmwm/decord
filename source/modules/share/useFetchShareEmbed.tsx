@@ -1,10 +1,10 @@
-// Module ID: 13640
-// Function ID: 13641
+// Module ID: 13863
+// Function ID: 13864
 // Name: useFetchShareEmbed
-// Dependencies: [5, 32, 19, 1486, 11448, 705, 2]
+// Dependencies: [5, 32, 19, 1485, 11671, 702, 2]
 // Exports: default
 
-// Module 13640 (useFetchShareEmbed)
+// Module 13863 (useFetchShareEmbed)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -68,7 +68,7 @@ export default function useFetchShareEmbed(arg0) {
                   c4 = 3;
                   c5 = 1;
                   obj1 = { value: null, done: false };
-                  obj1[0] = closure_2_0(11448).unfurlEmbedUrl(items);
+                  obj1[0] = closure_2_0(11671).unfurlEmbedUrl(items);
                   return obj1;
                 } else {
                   c5 = 3;
@@ -85,7 +85,7 @@ export default function useFetchShareEmbed(arg0) {
                 throw arg1;
               } else if (arg0 === 2) {
                 c3 = 0;
-                closure_2_0(705).batchUpdates(() => {
+                closure_2_0(702).batchUpdates(() => {
                   v0(true);
                   if (closure_1_6.current === c0) {
                     tmp62(false);
@@ -99,7 +99,7 @@ export default function useFetchShareEmbed(arg0) {
                 closure_1 = arg1;
                 if (closure_1_6.current !== c0) {
                   c3 = 0;
-                  let obj3 = closure_2_0(705);
+                  let obj3 = closure_2_0(702);
                   obj3.batchUpdates(() => {
                     v0(true);
                     if (closure_1_6.current === c0) {
@@ -111,7 +111,7 @@ export default function useFetchShareEmbed(arg0) {
                 } else if (0 === closure_1.embeds.length) {
                   closure_1_1(undefined);
                   c3 = 0;
-                  obj1 = closure_2_0(705);
+                  obj1 = closure_2_0(702);
                   obj1.batchUpdates(() => {
                     v0(true);
                     if (closure_1_6.current === c0) {
@@ -131,16 +131,16 @@ export default function useFetchShareEmbed(arg0) {
                 }
               }
               c3 = 0;
-              closure_2_0(705).batchUpdates(() => {
+              closure_2_0(702).batchUpdates(() => {
                 v0(true);
                 if (closure_1_6.current === c0) {
                   tmp62(false);
                 }
               });
-              const obj7 = closure_2_0(705);
+              const obj7 = closure_2_0(702);
             }
             c3 = 0;
-            closure_2_0(705).batchUpdates(() => {
+            closure_2_0(702).batchUpdates(() => {
               v0(true);
               if (closure_1_6.current === c0) {
                 tmp62(false);

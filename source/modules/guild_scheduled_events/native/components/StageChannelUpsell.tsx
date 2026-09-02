@@ -1,25 +1,25 @@
-// Module ID: 9699
-// Function ID: 9700
+// Module ID: 9712
+// Function ID: 9713
 // Name: StageChannelUpsell
-// Dependencies: [32, 19, 17, 1391, 9700, 9669, 676, 21, 4478, 712, 5068, 1297, 7764, 9701, 4474, 1236, 4928, 4723, 9702, 2009, 4445, 2]
+// Dependencies: [32, 19, 17, 1390, 9713, 9682, 673, 21, 4478, 709, 5076, 1296, 7773, 9714, 4474, 1233, 4928, 4723, 9715, 2008, 4445, 2]
 // Exports: default
 
-// Module 9699 (StageChannelUpsell)
+// Module 9712 (StageChannelUpsell)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
 import Button2 from "Button" /* 4928 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import registerAssetDefault from "registerAsset" /* 7764 */;
-import registerAssetDefault2 from "registerAsset" /* 9701 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import registerAssetDefault from "registerAsset" /* 7773 */;
+import registerAssetDefault2 from "registerAsset" /* 9714 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { createChannelRecord } from "createChannelRecord" /* 1391 */;
-import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore" /* 9700 */;
-import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9669 */;
-import { ChannelTypes } from "ME" /* 676 */;
+import { createChannelRecord } from "createChannelRecord" /* 1390 */;
+import { useStageChannelUpsellCardStore as closure_7 } from "useStageChannelUpsellCardStore" /* 9713 */;
+import { CREATE_GUILD_EVENT_MODAL_KEY as closure_8 } from "CREATE_GUILD_EVENT_MODAL_KEY" /* 9682 */;
+import { ChannelTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

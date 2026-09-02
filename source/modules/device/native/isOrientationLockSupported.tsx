@@ -1,10 +1,10 @@
-// Module ID: 9525
-// Function ID: 9526
+// Module ID: 9538
+// Function ID: 9539
 // Name: isOrientationLockSupported
-// Dependencies: [4457, 1624, 2]
+// Dependencies: [4457, 1623, 2]
 // Exports: default
 
-// Module 9525 (isOrientationLockSupported)
+// Module 9538 (isOrientationLockSupported)
 import set from "set" /* 2 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 
@@ -14,7 +14,7 @@ export default function isOrientationLockSupported() {
   const isIpadOSResult = DCDDeviceManager.isIpadOS();
   let result = !isIpadOSResult;
   if (!isIpadOSResult) {
-    let tmpResult = tmp(1624);
+    let tmpResult = tmp(1623);
     result = !tmpResult.isMetaQuest();
   }
   if (result) {

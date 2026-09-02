@@ -1,11 +1,11 @@
 // Module ID: 4129
 // Function ID: 4130
 // Name: has
-// Dependencies: [506, 2]
+// Dependencies: [503, 2]
 
 // Module 4129 (has)
 import set from "set" /* 2 */;
-import fromStringAll from "fromString" /* 506 */;
+import fromStringAll from "fromString" /* 503 */;
 
 const result = set.fileFinishedImporting("utils/BasicPermissionUtils.tsx");
 const prototype = function BasicPermissionUtils() {

@@ -1,13 +1,13 @@
-// Module ID: 10398
-// Function ID: 10399
+// Module ID: 10420
+// Function ID: 10421
 // Name: getStickerDiscoverableGuild
-// Dependencies: [676, 530, 6185, 2]
+// Dependencies: [673, 527, 6194, 2]
 // Exports: default
 
-// Module 10398 (getStickerDiscoverableGuild)
+// Module 10420 (getStickerDiscoverableGuild)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 530 */;
-import ME from "ME" /* 676 */;
+import sendRequest from "sendRequest" /* 527 */;
+import ME from "ME" /* 673 */;
 
 const Endpoints = ME.Endpoints;
 const result = set.fileFinishedImporting("modules/messages/getStickerDiscoverableGuild.tsx");

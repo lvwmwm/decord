@@ -1,17 +1,17 @@
-// Module ID: 14688
-// Function ID: 14689
+// Module ID: 14914
+// Function ID: 14915
 // Name: QuestHomeOrbShopRewardCard
-// Dependencies: [19, 17, 1922, 21, 4478, 712, 8887, 589, 4139, 7298, 10756, 12622, 12623, 2]
+// Dependencies: [19, 17, 1921, 21, 4478, 709, 8902, 586, 4139, 7307, 10976, 12846, 12847, 2]
 // Exports: default
 
-// Module 14688 (QuestHomeOrbShopRewardCard)
-import initialize from "initialize" /* 589 */;
-import ThemesDefault from "Themes" /* 712 */;
-import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 8887 */;
-import getCardProductName from "getCardProductName" /* 10756 */;
+// Module 14914 (QuestHomeOrbShopRewardCard)
+import initialize from "initialize" /* 586 */;
+import ThemesDefault from "Themes" /* 709 */;
+import CollectiblesShopCardInternalV2 from "CollectiblesShopCardInternalV2" /* 8902 */;
+import getCardProductName from "getCardProductName" /* 10976 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -62,12 +62,12 @@ export default function QuestHomeOrbShopRewardCard(product) {
     obj1 = { product: null, isPurchased: false, solidBackground: true, cardWidth: null };
     obj1[0] = product;
     obj1[3] = COLLECTIBLES_SHOP_CARD_WIDTH;
-    const items3 = [callback(stateFromStores(12622), obj1), ];
+    const items3 = [callback(stateFromStores(12846), obj1), ];
     let tmp14Result = !flag;
     if (!flag) {
       const obj2 = { product: null, collectibleProductState: null, hidePrice: true };
       obj2[0] = product;
-      tmp14Result = tmp14(tmp15(12623), obj2);
+      tmp14Result = tmp14(tmp15(12847), obj2);
     }
     items3[1] = tmp14Result;
     obj[4] = items3;

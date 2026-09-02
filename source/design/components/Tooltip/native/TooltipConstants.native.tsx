@@ -1,10 +1,10 @@
-// Module ID: 8978
-// Function ID: 8979
+// Module ID: 8992
+// Function ID: 8993
 // Name: tooltipEnterExitAnimation
 // Dependencies: [4927, 2]
 // Exports: tooltipEnterExitAnimation
 
-// Module 8978 (tooltipEnterExitAnimation)
+// Module 8992 (tooltipEnterExitAnimation)
 import set from "set" /* 2 */;
 
 let closure_2 = { overshootClamping: true, damping: 35, stiffness: 450, mass: 0.5, restDisplacementThreshold: 0.001 };

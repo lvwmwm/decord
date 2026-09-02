@@ -1,14 +1,14 @@
-// Module ID: 16642
-// Function ID: 16643
+// Module ID: 16877
+// Function ID: 16878
 // Name: withEqualityFn
-// Dependencies: [1338, 4724, 700, 4345, 705, 2]
+// Dependencies: [1337, 4724, 697, 4345, 702, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 16642 (withEqualityFn)
+// Module 16877 (withEqualityFn)
 import set from "set" /* 2 */;
-import ExpressionPickerViewType2 from "ExpressionPickerViewType" /* 1338 */;
+import ExpressionPickerViewType2 from "ExpressionPickerViewType" /* 1337 */;
 import uniqueIdDefault from "uniqueId" /* 4724 */;
-import identity from "identity" /* 700 */;
+import identity from "identity" /* 697 */;
 import createJSONStorage from "createJSONStorage" /* 4345 */;
 
 let ExpressionPickerViewType = ExpressionPickerViewType2.ExpressionPickerViewType;
@@ -29,7 +29,7 @@ export const openExpressionPicker = function openExpressionPicker(arg0, arg1, ar
   const _require = arg0;
   dependencyMap = arg1;
   closure_2 = arg2;
-  _require(705).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: closure_1_4.getState().activeView }));
+  _require(702).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: closure_1_4.getState().activeView }));
 };
 export const closeExpressionPicker = function closeExpressionPicker(arg0, arg1) {
   const state = withEqualityFnResult.getState();
@@ -40,8 +40,8 @@ export const closeExpressionPicker = function closeExpressionPicker(arg0, arg1) 
   }
   if (!tmp2) {
     if (null !== state.activeView) {
-      state(705).batchUpdates(() => closure_1_4.setState({ activeView: null, activeViewType: null, activeChannelId: null, lastActiveView: activeView.activeView }));
-      const obj = state(705);
+      state(702).batchUpdates(() => closure_1_4.setState({ activeView: null, activeViewType: null, activeChannelId: null, lastActiveView: activeView.activeView }));
+      const obj = state(702);
     }
   }
 };
@@ -55,24 +55,24 @@ export const toggleMultiExpressionPicker = function toggleMultiExpressionPicker(
     let activeView = EMOJI;
     dependencyMap = arg0;
     ExpressionPickerViewType = arg1;
-    activeView(705).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: closure_1_4.getState().activeView }));
-    const obj3 = activeView(705);
+    activeView(702).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: closure_1_4.getState().activeView }));
+    const obj3 = activeView(702);
   } else {
     if (state.activeViewType === arg0) {
       if (state.activeChannelId === arg1) {
         const state1 = withEqualityFnResult.getState();
         activeView = state1;
         if (null !== state1.activeView) {
-          activeView(705).batchUpdates(() => closure_1_4.setState({ activeView: null, activeViewType: null, activeChannelId: null, lastActiveView: activeView.activeView }));
-          const obj4 = activeView(705);
+          activeView(702).batchUpdates(() => closure_1_4.setState({ activeView: null, activeViewType: null, activeChannelId: null, lastActiveView: activeView.activeView }));
+          const obj4 = activeView(702);
         }
       }
     }
     activeView = state.activeView;
     dependencyMap = arg0;
     ExpressionPickerViewType = arg1;
-    activeView(705).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: closure_1_4.getState().activeView }));
-    const obj2 = activeView(705);
+    activeView(702).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: closure_1_4.getState().activeView }));
+    const obj2 = activeView(702);
   }
 };
 export const toggleExpressionPicker = function toggleExpressionPicker(arg0, arg1, arg2) {
@@ -83,8 +83,8 @@ export const toggleExpressionPicker = function toggleExpressionPicker(arg0, arg1
         const state1 = withEqualityFnResult.getState();
         let _require = state1;
         if (null !== state1.activeView) {
-          _require(705).batchUpdates(() => closure_1_4.setState({ activeView: null, activeViewType: null, activeChannelId: null, lastActiveView: activeView.activeView }));
-          const obj3 = _require(705);
+          _require(702).batchUpdates(() => closure_1_4.setState({ activeView: null, activeViewType: null, activeChannelId: null, lastActiveView: activeView.activeView }));
+          const obj3 = _require(702);
         }
       }
     }
@@ -92,11 +92,11 @@ export const toggleExpressionPicker = function toggleExpressionPicker(arg0, arg1
   _require = arg0;
   dependencyMap = arg1;
   closure_2 = arg2;
-  _require(705).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: closure_1_4.getState().activeView }));
+  _require(702).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, activeViewType: closure_1, activeChannelId: closure_2, lastActiveView: closure_1_4.getState().activeView }));
 };
 export const setExpressionPickerView = function setExpressionPickerView(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, lastActiveView: closure_1_4.getState().activeView }));
+  _require(702).batchUpdates(() => closure_1_4.setState({ activeView: closure_0, lastActiveView: closure_1_4.getState().activeView }));
 };
 export const setSearchQuery = function setSearchQuery(arg0) {
   const _require = arg0;

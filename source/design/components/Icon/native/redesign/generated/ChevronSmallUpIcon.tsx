@@ -1,14 +1,14 @@
-// Module ID: 13230
-// Function ID: 13231
+// Module ID: 13452
+// Function ID: 13453
 // Name: ChevronSmallUpIcon
-// Dependencies: [19, 21, 712, 4196, 12184, 2]
+// Dependencies: [19, 21, 709, 4196, 12408, 2]
 // Exports: ChevronSmallUpIcon
 
-// Module 13230 (ChevronSmallUpIcon)
+// Module 13452 (ChevronSmallUpIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 12184 */;
+import registerAsset from "registerAsset" /* 12408 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

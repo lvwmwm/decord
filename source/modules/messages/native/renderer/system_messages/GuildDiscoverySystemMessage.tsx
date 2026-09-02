@@ -1,13 +1,13 @@
-// Module ID: 7917
-// Function ID: 7918
+// Module ID: 7926
+// Function ID: 7927
 // Name: createGuildDiscoveryDisqualifiedSystemMessage
-// Dependencies: [1236, 7873, 2]
+// Dependencies: [1233, 7882, 2]
 // Exports: createGuildDiscoveryDisqualifiedSystemMessage, createGuildDiscoveryGracePeriodFinalWarningSystemMessage, createGuildDiscoveryGracePeriodInitialWarningSystemMessage, createGuildDiscoveryRequalifiedSystemMessage
 
-// Module 7917 (createGuildDiscoveryDisqualifiedSystemMessage)
+// Module 7926 (createGuildDiscoveryDisqualifiedSystemMessage)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7873 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import createCommonMessageDefault from "createCommonMessage" /* 7882 */;
 
 const result = set.fileFinishedImporting("modules/messages/native/renderer/system_messages/GuildDiscoverySystemMessage.tsx");
 

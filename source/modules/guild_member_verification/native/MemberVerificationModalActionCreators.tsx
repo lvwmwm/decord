@@ -1,15 +1,15 @@
-// Module ID: 7647
-// Function ID: 7648
-// Dependencies: [5009, 676, 698, 5559, 4723, 7648, 2009, 2]
+// Module ID: 7656
+// Function ID: 7657
+// Dependencies: [5012, 673, 695, 5567, 4723, 7657, 2008, 2]
 
-// Module 7647
+// Module 7656
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import _modDef4723 from "module_4723" /* 4723 */;
-import _fetchVerificationFormDefault from "_fetchVerificationForm" /* 5559 */;
-import items from "items" /* 5009 */;
+import _fetchVerificationFormDefault from "_fetchVerificationForm" /* 5567 */;
+import items from "items" /* 5012 */;
 
 ({ MEMBER_VERIFICATION_TYPE: c3, IN_APP_MEMBER_VERIFICATION_MODAL_KEY: c4 } = items);
 const AnalyticEvents = ME.AnalyticEvents;
@@ -23,7 +23,7 @@ export default {
     expandEventPropertiesDefault.track(AnalyticEvents.OPEN_MODAL, obj);
     const obj2 = expandEventPropertiesDefault;
     obj = { guildId, onClose: connect };
-    _modDef4723.pushLazy(asyncRequireImpl(7648, dependencyMap.paths), obj, closure_4);
+    _modDef4723.pushLazy(asyncRequireImpl(7657, dependencyMap.paths), obj, closure_4);
   },
   closeMemberVerificationModal() {
     let flag = arg0;

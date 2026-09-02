@@ -1,14 +1,14 @@
-// Module ID: 16302
-// Function ID: 16303
+// Module ID: 16534
+// Function ID: 16535
 // Name: useAutoSearchMembersTab
-// Dependencies: [19, 11906, 11920, 676, 12, 11907, 11930, 11905, 2]
+// Dependencies: [19, 12129, 12143, 673, 12, 12130, 12153, 12128, 2]
 // Exports: useAutoSearchMembersTab
 
-// Module 16302 (useAutoSearchMembersTab)
+// Module 16534 (useAutoSearchMembersTab)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "prototype" /* 11906 */;
-import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 11920 */;
-import { SearchTypes } from "ME" /* 676 */;
+import closure_4 from "prototype" /* 12129 */;
+import { SEARCH_TEXT_INPUT_DEBOUNCE_TIME as closure_5 } from "SEARCH_TEXT_INPUT_DEBOUNCE_TIME" /* 12143 */;
+import { SearchTypes } from "ME" /* 673 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/search/native/hooks/useAutoSearchMembersTab.tsx");

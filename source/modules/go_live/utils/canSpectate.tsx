@@ -1,10 +1,10 @@
-// Module ID: 13455
-// Function ID: 13456
+// Module ID: 13678
+// Function ID: 13679
 // Name: canSpectate
 // Dependencies: [4542, 2]
 // Exports: default
 
-// Module 13455 (canSpectate)
+// Module 13678 (canSpectate)
 import set from "set" /* 2 */;
 import DesktopSources from "DesktopSources" /* 4542 */;
 

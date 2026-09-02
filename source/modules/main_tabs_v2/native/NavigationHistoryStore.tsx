@@ -1,13 +1,13 @@
-// Module ID: 6173
-// Function ID: 6174
+// Module ID: 6181
+// Function ID: 6182
 // Name: getIdFromHistoryItem
-// Dependencies: [1387, 589, 709, 4333, 4332, 4335, 2]
+// Dependencies: [1386, 586, 706, 4333, 4332, 4335, 2]
 // Exports: getNavigationHistory, handleHistoryStoreNavigationChange
 
-// Module 6173 (getIdFromHistoryItem)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
+// Module 6181 (getIdFromHistoryItem)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
 
 const require = arg1;
 function getIdFromHistoryItem(str) {

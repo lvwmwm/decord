@@ -1,13 +1,13 @@
-// Module ID: 11432
-// Function ID: 11433
+// Module ID: 11655
+// Function ID: 11656
 // Name: MemberRolesList
-// Dependencies: [19, 17, 1985, 21, 4478, 589, 10684, 2]
+// Dependencies: [19, 17, 1984, 21, 4478, 586, 10905, 2]
 // Exports: default
 
-// Module 11432 (MemberRolesList)
+// Module 11655 (MemberRolesList)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "createGuildRoleRecordFromRust" /* 1985 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -19,7 +19,7 @@ const result = require("set").fileFinishedImporting("components_native/MemberRol
 export default function MemberRolesList(userRoles) {
   userRoles = userRoles.userRoles;
   const guild = userRoles.guild;
-  let obj = userRoles(589);
+  let obj = userRoles(586);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getSortedRoles(guild.id));
   const tmp4 = <View />;

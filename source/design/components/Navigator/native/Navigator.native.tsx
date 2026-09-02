@@ -1,13 +1,13 @@
-// Module ID: 6008
-// Function ID: 6009
+// Module ID: 6016
+// Function ID: 6017
 // Name: NavigationStack
-// Dependencies: [32, 19, 17, 21, 4478, 712, 6009, 5495, 4197, 6010, 1628, 1236, 12, 6043, 1500, 4413, 6050, 1209, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 6017, 5503, 4197, 6018, 1627, 1233, 12, 6051, 1499, 4413, 6058, 1206, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 6008 (NavigationStack)
-import ThemesDefault from "Themes" /* 712 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1500 */;
-import useNavigationTheme from "useNavigationTheme" /* 6050 */;
+// Module 6016 (NavigationStack)
+import ThemesDefault from "Themes" /* 709 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
+import useNavigationTheme from "useNavigationTheme" /* 6058 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -264,7 +264,7 @@ export const useNavigatorScreens = function useNavigatorScreens(getNextRenewalDa
   return React.useMemo(getNextRenewalDateLabel, items);
 };
 export const useAccessibilityNativeStackOptions = function useAccessibilityNativeStackOptions() {
-  navigatorShouldCrossfade = navigatorShouldCrossfade(6009).useNavigatorShouldCrossfade();
+  navigatorShouldCrossfade = navigatorShouldCrossfade(6017).useNavigatorShouldCrossfade();
   const items = [navigatorShouldCrossfade];
   return React.useMemo(() => {
     let obj;

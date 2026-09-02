@@ -1,10 +1,10 @@
-// Module ID: 12586
-// Function ID: 12587
+// Module ID: 12810
+// Function ID: 12811
 // Name: AddToWishlistGrid
-// Dependencies: [19, 17, 6001, 21, 4478, 12585, 12587, 2]
+// Dependencies: [19, 17, 6009, 21, 4478, 12809, 12811, 2]
 // Exports: default
 
-// Module 12586 (AddToWishlistGrid)
+// Module 12810 (AddToWishlistGrid)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

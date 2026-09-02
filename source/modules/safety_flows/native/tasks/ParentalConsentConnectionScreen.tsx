@@ -1,18 +1,18 @@
-// Module ID: 17462
-// Function ID: 17463
+// Module ID: 17698
+// Function ID: 17699
 // Name: ParentalConsentConnectionScreen
-// Dependencies: [5, 32, 19, 17, 7282, 1922, 7283, 21, 4478, 712, 17453, 17452, 11489, 4945, 17048, 14486, 8772, 589, 14484, 17463, 17447, 4194, 1236, 2663, 4445, 14485, 2009, 17456, 11499, 4926, 17464, 10733, 17465, 4474, 2369, 14487, 2]
+// Dependencies: [5, 32, 19, 17, 7291, 1921, 7292, 21, 4478, 709, 17689, 17688, 11712, 4945, 17284, 14709, 8787, 586, 14707, 17699, 17683, 4194, 1233, 2662, 4445, 14708, 2008, 17692, 11722, 4926, 17700, 10954, 17701, 4474, 2368, 14710, 2]
 // Exports: default
 
-// Module 17462 (ParentalConsentConnectionScreen)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 17698 (ParentalConsentConnectionScreen)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "freshTeenActivityWithMap" /* 7282 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { CONNECT_GUARDIAN_BOTTOM_SHEET_KEY as closure_9 } from "items" /* 7283 */;
+import closure_7 from "freshTeenActivityWithMap" /* 7291 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import { CONNECT_GUARDIAN_BOTTOM_SHEET_KEY as closure_9 } from "items" /* 7292 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

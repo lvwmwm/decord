@@ -1,18 +1,18 @@
-// Module ID: 11589
-// Function ID: 11590
+// Module ID: 11812
+// Function ID: 11813
 // Name: ForumPostGridFooter
-// Dependencies: [19, 17, 676, 21, 4478, 712, 11538, 11590, 11591, 11048, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 11761, 11813, 11814, 11268, 2]
 // Exports: default
 
-// Module 11589 (ForumPostGridFooter)
+// Module 11812 (ForumPostGridFooter)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import MaxForumPostReactions from "MaxForumPostReactions" /* 11048 */;
-import useTypingUserIds from "useTypingUserIds" /* 11538 */;
-import num2Default from "num2" /* 11590 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11591 */;
+import ThemesDefault from "Themes" /* 709 */;
+import MaxForumPostReactions from "MaxForumPostReactions" /* 11268 */;
+import useTypingUserIds from "useTypingUserIds" /* 11761 */;
+import num2Default from "num2" /* 11813 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 11814 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { AnalyticsObjects } from "ME" /* 676 */;
+import { AnalyticsObjects } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

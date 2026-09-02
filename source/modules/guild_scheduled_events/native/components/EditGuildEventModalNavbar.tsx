@@ -1,17 +1,17 @@
-// Module ID: 9677
-// Function ID: 9678
+// Module ID: 9690
+// Function ID: 9691
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 4478, 9674, 1471, 5553, 4474, 1236, 6237, 7764, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 9687, 1470, 5561, 4474, 1233, 6246, 7773, 2]
 // Exports: default
 
-// Module 9677 (EditGuildEventModalNavbar)
+// Module 9690 (EditGuildEventModalNavbar)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5553 */;
-import HeaderActionButton from "HeaderActionButton" /* 6237 */;
-import registerAssetDefault from "registerAsset" /* 7764 */;
-import EditGuildEventScreens from "EditGuildEventScreens" /* 9674 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
+import HeaderActionButton from "HeaderActionButton" /* 6246 */;
+import registerAssetDefault from "registerAsset" /* 7773 */;
+import EditGuildEventScreens from "EditGuildEventScreens" /* 9687 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -28,25 +28,25 @@ export default function EditGuildEventModalNavbar(screen) {
   const tmp = callback4();
   if (EditGuildEventScreens.EditGuildEventScreens.CHANNEL_SELECTOR === screen) {
     let items = [1, 3];
-  } else if (tmp2(9674).EditGuildEventScreens.DETAILS === screen) {
+  } else if (tmp2(9687).EditGuildEventScreens.DETAILS === screen) {
     items = [2, 3];
-  } else if (tmp2(9674).EditGuildEventScreens.PREVIEW === screen) {
+  } else if (tmp2(9687).EditGuildEventScreens.PREVIEW === screen) {
     items = [3, 3];
   } else {
-    tmp2(1471).assertNever(screen);
-    const tmp2Result = tmp2(1471);
+    tmp2(1470).assertNever(screen);
+    const tmp2Result = tmp2(1470);
   }
   [tmp6, tmp7] = callback(items, 2);
   let obj = { top: true, style: tmp.header, children: null };
   obj = { style: tmp.buttonContainer };
   const items1 = [callback2(View, obj), , ];
   obj1 = { style: tmp.headerTitle, variant: "text-xs/bold", color: "text-default", children: null };
-  const intl = tmp2(1236).intl;
+  const intl = tmp2(1233).intl;
   obj1[3] = intl.format(getSystemLocale.t["42HaFY"], { step: tmp6, total: tmp7 });
   items1[1] = callback2(Text.Text, obj1);
   const obj2 = { style: tmp.buttonContainer, children: null };
   const obj3 = { accessibilityLabel: null, onPress: null, source: null, style: null };
-  const intl2 = tmp2(1236).intl;
+  const intl2 = tmp2(1233).intl;
   obj3[0] = intl2.string(getSystemLocale.t.cpT0Cq);
   obj3[1] = screen.onClose;
   obj3[2] = registerAssetDefault;

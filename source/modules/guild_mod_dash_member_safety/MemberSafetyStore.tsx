@@ -1,21 +1,21 @@
-// Module ID: 7239
-// Function ID: 7240
+// Module ID: 7248
+// Function ID: 7249
 // Name: getMemberSafetyPageStore
-// Dependencies: [32, 1218, 1992, 1909, 1922, 7240, 676, 1471, 11, 7246, 7247, 7242, 589, 709, 2]
+// Dependencies: [32, 1215, 1991, 1908, 1921, 7249, 673, 1470, 11, 7255, 7256, 7251, 586, 706, 2]
 
-// Module 7239 (getMemberSafetyPageStore)
+// Module 7248 (getMemberSafetyPageStore)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import hasMemberSupplemental from "hasMemberSupplemental" /* 7246 */;
-import createFetchKeys from "createFetchKeys" /* 7247 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import hasMemberSupplemental from "hasMemberSupplemental" /* 7255 */;
+import createFetchKeys from "createFetchKeys" /* 7256 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { GuildMemberSafetyPageStore as closure_8 } from "getSearchIndex" /* 7240 */;
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import { GuildMemberSafetyPageStore as closure_8 } from "getSearchIndex" /* 7249 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
 
 require = arg1;
 function getMemberSafetyPageStore(guildId) {
@@ -499,7 +499,7 @@ const memberSafetyStore = new MemberSafetyStore(dispatcherDefault, {
       tmp14 = members[members.length - 1];
     }
     obj = { totalResultsCount: totalResultsCount.total_result_count, elasticSearchCursor: null };
-    let tmp9Result = tmp9(7242);
+    let tmp9Result = tmp9(7251);
     let joined_at;
     if (first != null) {
       const member = first.member;
@@ -520,7 +520,7 @@ const memberSafetyStore = new MemberSafetyStore(dispatcherDefault, {
     }
     obj1 = { before: tmp9Result.createMemberSearchCursor(obj), after: null };
     obj[1] = id;
-    tmp9Result = tmp9(7242);
+    tmp9Result = tmp9(7251);
     let joined_at1;
     if (tmp14 != null) {
       const member3 = tmp14.member;

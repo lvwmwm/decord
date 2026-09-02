@@ -1,17 +1,17 @@
-// Module ID: 14780
-// Function ID: 14781
+// Module ID: 15006
+// Function ID: 15007
 // Name: enableSameAsDeviceTheme
-// Dependencies: [4297, 1302, 1305, 8213, 1347, 1363, 4325, 2]
+// Dependencies: [4297, 1301, 1304, 8222, 1346, 1362, 4325, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 14780 (enableSameAsDeviceTheme)
-import getThemeForColor from "getThemeForColor" /* 1347 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+// Module 15006 (enableSameAsDeviceTheme)
+import getThemeForColor from "getThemeForColor" /* 1346 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import setSystemTheme from "setSystemTheme" /* 4325 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 8213 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 8222 */;
 import closure_3 from "reset" /* 4297 */;
-import closure_4 from "handleThemeChange" /* 1302 */;
-import SystemThemeState from "SystemThemeState" /* 1305 */;
+import closure_4 from "handleThemeChange" /* 1301 */;
+import SystemThemeState from "SystemThemeState" /* 1304 */;
 
 require = arg1;
 ({ SystemTheme: c5, SystemThemeState: closure_6 } = SystemThemeState);

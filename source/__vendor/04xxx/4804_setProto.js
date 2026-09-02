@@ -1,10 +1,10 @@
 // Module ID: 4804
 // Function ID: 4805
 // Name: setProto
-// Dependencies: [4805, 541, 4806, 4807]
+// Dependencies: [4805, 538, 4806, 4807]
 
 // Module 4804 (setProto)
-import _mod541 from "module_541" /* 541 */;
+import _mod538 from "module_538" /* 538 */;
 import setPrototypeOf from "setPrototypeOf" /* 4805 */;
 import _mod4806 from "module_4806" /* 4806 */;
 import _mod4807 from "module_4807" /* 4807 */;
@@ -14,7 +14,7 @@ if (setPrototypeOf) {
     if (setPrototypeOf(arg0, arg1)) {
       return arg0;
     } else {
-      const tmp5 = new _mod541("Reflect.setPrototypeOf: failed to set [[Prototype]]");
+      const tmp5 = new _mod538("Reflect.setPrototypeOf: failed to set [[Prototype]]");
       throw tmp5;
     }
     const tmp = require;

@@ -1,11 +1,11 @@
-// Module ID: 16574
-// Function ID: 16575
-// Dependencies: [19, 17, 21, 4478, 712, 16558, 4474, 1297, 16242, 2]
+// Module ID: 16809
+// Function ID: 16810
+// Dependencies: [19, 17, 21, 4478, 709, 16793, 4474, 1296, 16474, 2]
 
-// Module 16574
-import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 16242 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16558 */;
+// Module 16809
+import ThemesDefault from "Themes" /* 709 */;
+import registerAssetDefault from "registerAsset" /* 16474 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16793 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -101,10 +101,10 @@ const memoResult = importAllResult.memo(function VoiceOrStageSummaryRow(arg0) {
     ({ badge: arr4[0], audienceBadge: arr4[1] } = tmp4);
     obj1[0] = items3;
     let obj2 = { size: null, style: null, source: null };
-    obj2[0] = max(1297).Icon.Sizes.CUSTOM;
+    obj2[0] = max(1296).Icon.Sizes.CUSTOM;
     obj2[1] = { height: 14, width: 14 };
     obj2[2] = registerAssetDefault;
-    const items4 = [closure_4(max(1297).Icon, obj2), ];
+    const items4 = [closure_4(max(1296).Icon, obj2), ];
     let obj3 = { variant: "text-sm/bold", style: null, children: null };
     obj3[1] = { marginLeft: 4 };
     obj3[2] = audienceCount;

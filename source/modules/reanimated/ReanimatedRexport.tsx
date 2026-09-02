@@ -1,12 +1,12 @@
 // Module ID: 4217
 // Function ID: 4218
-// Dependencies: [501, 1653, 4218, 2]
+// Dependencies: [1235, 1652, 4218, 2]
 
 // Module 4217
 import set from "set" /* 2 */;
-import cancelAnimationDefault from "cancelAnimation" /* 1653 */;
+import cancelAnimationDefault from "cancelAnimation" /* 1652 */;
 import REAWorkaroundViewDefault from "REAWorkaroundView" /* 4218 */;
-import PlatformTypes from "PlatformTypes" /* 501 */;
+import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 if (PlatformTypes.isAndroid()) {
   const _Object = Object;

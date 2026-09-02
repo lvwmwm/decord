@@ -1,11 +1,11 @@
-// Module ID: 9927
-// Function ID: 9928
+// Module ID: 9949
+// Function ID: 9950
 // Name: fromPath
-// Dependencies: [1936, 676, 2]
+// Dependencies: [1935, 673, 2]
 
-// Module 9927 (fromPath)
-import toJSDefault from "toJS" /* 1936 */;
-import { Routes } from "ME" /* 676 */;
+// Module 9949 (fromPath)
+import toJSDefault from "toJS" /* 1935 */;
+import { Routes } from "ME" /* 673 */;
 
 toJSDefault;
 let prototype;

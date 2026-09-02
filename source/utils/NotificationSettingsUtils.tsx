@@ -1,21 +1,21 @@
-// Module ID: 5482
-// Function ID: 5483
+// Module ID: 5490
+// Function ID: 5491
 // Name: UserNotificationSettings
-// Dependencies: [5483, 1387, 4735, 4701, 676, 4133, 4702, 685, 1399, 4700, 698, 2]
+// Dependencies: [5491, 1386, 4735, 4701, 673, 4133, 4702, 682, 1398, 4700, 695, 2]
 // Exports: getCurrentChannelSettings, getCurrentGuildSettings, getManyCurrentChannelSettings, getManyCurrentGuildSettings, muteConfigToTimestamp, trackAccountNotificationSettingUpdated, trackChannelNotificationSettingsUpdate, trackGuildNotificationSettingsUpdate
 
-// Module 5482 (UserNotificationSettings)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import hasFlag from "hasFlag" /* 1399 */;
+// Module 5490 (UserNotificationSettings)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import hasFlag from "hasFlag" /* 1398 */;
 import collectGuildAnalyticsMetadataDefault from "collectGuildAnalyticsMetadata" /* 4700 */;
-import closure_3 from "initialize" /* 5483 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "initialize" /* 5491 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "reinjectEphemerals" /* 4735 */;
 import closure_6 from "updateUserGuildSettingsInternal" /* 4701 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import { NotificationSettingsUpdateType as closure_9 } from "AccountNotificationFlags" /* 4133 */;
 import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 
 require = arg1;
 ({ AnalyticEvents: error, UserNotificationSettings } = ME);
@@ -320,7 +320,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   }
   const isChannelMutedResult = store2.isChannelMuted(guildId, channelId);
   const tmp12 = num2 ^ num;
-  const obj4 = guildId(1399);
+  const obj4 = guildId(1398);
   lastMessage = lastMessage.getLastMessage(channelId);
   let type;
   if (lastMessage != null) {
@@ -329,7 +329,7 @@ export const trackChannelNotificationSettingsUpdate = function trackChannelNotif
   if (type == null) {
     type = null;
   }
-  const removeFlagsResult = guildId(1399).removeFlags(tmp12, constants3.FAVORITED, constants3.OPT_IN_ENABLED);
+  const removeFlagsResult = guildId(1398).removeFlags(tmp12, constants3.FAVORITED, constants3.OPT_IN_ENABLED);
   obj = {};
   const merged = Object.assign(computeResult1);
   const merged1 = Object.assign(store.getStats(guildId));

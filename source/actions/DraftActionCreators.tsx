@@ -1,11 +1,11 @@
-// Module ID: 7521
-// Function ID: 7522
+// Module ID: 7531
+// Function ID: 7532
 // Name: dispatcher
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 
-// Module 7521 (dispatcher)
+// Module 7531 (dispatcher)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("actions/DraftActionCreators.tsx");
 
@@ -20,9 +20,9 @@ export default {
     obj = { type: "DRAFT_COMMAND_CLEAR", channelId, draftType };
     obj.dispatch(obj);
   },
-  saveDraft(id, result, ChannelMessage, toDraftCommandResult) {
+  saveDraft(id, result1, ChannelMessage, toDraftCommandResult) {
     let obj = dispatcherDefault;
-    obj = { type: "DRAFT_SAVE", channelId: id, draft: result, draftType: ChannelMessage, command: toDraftCommandResult };
+    obj = { type: "DRAFT_SAVE", channelId: id, draft: result1, draftType: ChannelMessage, command: toDraftCommandResult };
     obj.dispatch(obj);
   },
   changeDraft(id, draft, ChannelMessage) {

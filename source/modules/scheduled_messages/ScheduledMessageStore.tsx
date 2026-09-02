@@ -1,11 +1,11 @@
-// Module ID: 11780
-// Function ID: 11781
+// Module ID: 12003
+// Function ID: 12004
 // Name: handleScheduledMessageRemovalStart
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 11780 (handleScheduledMessageRemovalStart)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 12003 (handleScheduledMessageRemovalStart)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import set from "set" /* 2 */;
 
 function handleScheduledMessageRemovalStart(scheduledMessageId) {

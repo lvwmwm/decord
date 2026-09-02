@@ -1,7 +1,7 @@
 // Module ID: 4605
 // Function ID: 4606
 // Name: copyObject
-// Dependencies: [804, 4606]
+// Dependencies: [801, 4606]
 
 // Module 4605 (copyObject)
 
@@ -28,7 +28,7 @@ export default function copyObject(arg0, arg1, arg2, arg3) {
     if (arg2) {
       let tmp10 = tmp7(4606)(obj, tmp, tmp3);
     } else {
-      let tmp9 = tmp7(804)(obj, tmp, tmp3);
+      let tmp9 = tmp7(801)(obj, tmp, tmp3);
     }
   }
   return obj;

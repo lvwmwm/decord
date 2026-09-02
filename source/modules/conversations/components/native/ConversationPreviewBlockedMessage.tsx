@@ -1,12 +1,12 @@
-// Module ID: 7837
-// Function ID: 7838
+// Module ID: 7846
+// Function ID: 7847
 // Name: ConversationPreviewBlockedMessage
-// Dependencies: [19, 21, 4926, 712, 7838, 7741, 4474, 1236, 2]
+// Dependencies: [19, 21, 4926, 709, 7847, 7750, 4474, 1233, 2]
 // Exports: default
 
-// Module 7837 (ConversationPreviewBlockedMessage)
+// Module 7846 (ConversationPreviewBlockedMessage)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -19,14 +19,14 @@ const result = require("set").fileFinishedImporting("modules/conversations/compo
 export default function ConversationPreviewBlockedMessage(reason) {
   let obj = { direction: "horizontal", spacing: ThemesDefault.space.PX_8, align: "center", children: null };
   if ("blocked" === reason.reason) {
-    let EyeSlashIcon = tmp2(7838).DenyIcon;
+    let EyeSlashIcon = tmp2(7847).DenyIcon;
   } else {
-    EyeSlashIcon = tmp2(7741).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7750).EyeSlashIcon;
   }
   obj = { size: "sm", color: ThemesDefault.colors.TEXT_MUTED };
   const items = [closure_3(EyeSlashIcon, obj), ];
-  const intl = tmp2(1236).intl;
-  const t = tmp2(1236).t;
+  const intl = tmp2(1233).intl;
+  const t = tmp2(1233).t;
   obj = { variant: "text-md/normal", color: "text-muted", children: intl.string(tmp6 ? t["WPe+xL"] : t.uxrh1O) };
   items[1] = closure_3(Text.Text, obj);
   obj[3] = items;

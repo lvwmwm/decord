@@ -1,14 +1,14 @@
-// Module ID: 14830
-// Function ID: 14831
+// Module ID: 15059
+// Function ID: 15060
 // Name: initialize
-// Dependencies: [1391, 1387, 589, 709, 2]
+// Dependencies: [1390, 1386, 586, 706, 2]
 
-// Module 14830 (initialize)
+// Module 15059 (initialize)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import createChannelRecord2 from "createChannelRecord" /* 1391 */;
-import closure_1 from "ensureGuildLoaded" /* 1387 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import createChannelRecord2 from "createChannelRecord" /* 1390 */;
+import closure_1 from "ensureGuildLoaded" /* 1386 */;
 
 const createChannelRecord = createChannelRecord2.createChannelRecord;
 let closure_2 = {};

@@ -1,19 +1,19 @@
-// Module ID: 15919
-// Function ID: 15920
+// Module ID: 16150
+// Function ID: 16151
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 10163, 4300, 1992, 1909, 4121, 1922, 676, 21, 4478, 589, 4301, 15920, 4197, 712, 1297, 15924, 15888, 15887, 2]
+// Dependencies: [109, 19, 10185, 4300, 1991, 1908, 4120, 1921, 673, 21, 4478, 586, 4301, 16151, 4197, 709, 1296, 16155, 16119, 16118, 2]
 // Exports: default
 
-// Module 15919 (useGuildsBarBadges)
+// Module 16150 (useGuildsBarBadges)
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "computeAlertSettings" /* 10163 */;
+import closure_6 from "computeAlertSettings" /* 10185 */;
 import closure_7 from "handleGatewayJoinRequestUpdate" /* 4300 */;
-import closure_8 from "trackCommunicationDisabled" /* 1992 */;
-import closure_9 from "createGuildRecordFromRust" /* 1909 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4121 */;
-import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createGuildRecordFromRust" /* 1908 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
+import closure_11 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 14241
-// Function ID: 14242
+// Module ID: 14464
+// Function ID: 14465
 // Name: UserSettingsEditUserProfile
-// Dependencies: [19, 1922, 21, 5953, 5973, 589, 8115, 14242, 2]
+// Dependencies: [19, 1921, 21, 5961, 5981, 586, 8123, 14465, 2]
 // Exports: default
 
-// Module 14241 (UserSettingsEditUserProfile)
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5973 */;
-import EditUserProfileBannerDefault from "EditUserProfileBanner" /* 14242 */;
+// Module 14464 (UserSettingsEditUserProfile)
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5981 */;
+import EditUserProfileBannerDefault from "EditUserProfileBanner" /* 14465 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditUserProfile.tsx");
 
 export default function UserSettingsEditUserProfile(arg0) {
-  let obj = stateFromStores(589);
+  let obj = stateFromStores(586);
   const items = [closure_4];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [stateFromStores];
@@ -33,7 +33,7 @@ export default function UserSettingsEditUserProfile(arg0) {
     obj[0] = stateFromStores;
     const merged = Object.assign(arg0);
     obj[1] = jsx(EditUserProfileBannerDefault, { currentUser: null });
-    tmp7 = jsx(stateFromStores(5953).AnalyticsLocationProvider, { currentUser: null });
+    tmp7 = jsx(stateFromStores(5961).AnalyticsLocationProvider, { currentUser: null });
     const tmpResult = EditUserProfileBannerDefault;
   }
   return tmp7;

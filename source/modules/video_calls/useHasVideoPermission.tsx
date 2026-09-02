@@ -1,13 +1,13 @@
-// Module ID: 10037
-// Function ID: 10038
+// Module ID: 10059
+// Function ID: 10060
 // Name: useHasVideoPermission
-// Dependencies: [1909, 4121, 589, 7471, 2]
+// Dependencies: [1908, 4120, 586, 7481, 2]
 // Exports: default, getVideoPermission
 
-// Module 10037 (useHasVideoPermission)
-import canStreamInChannel from "canStreamInChannel" /* 7471 */;
-import closure_2 from "createGuildRecordFromRust" /* 1909 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4121 */;
+// Module 10059 (useHasVideoPermission)
+import canStreamInChannel from "canStreamInChannel" /* 7481 */;
+import closure_2 from "createGuildRecordFromRust" /* 1908 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/video_calls/useHasVideoPermission.tsx");
@@ -16,7 +16,7 @@ export default function useHasVideoPermission(arg0) {
   const _require = arg0;
   const items = [closure_2, closure_3];
   const items1 = [arg0];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let tmp = null != callback;
     if (tmp) {
       let isPrivateResult = obj.isPrivate();

@@ -1,14 +1,14 @@
-// Module ID: 9403
-// Function ID: 9404
+// Module ID: 9416
+// Function ID: 9417
 // Name: NewUserIcon
-// Dependencies: [19, 21, 712, 4196, 9404, 2]
+// Dependencies: [19, 21, 709, 4196, 9417, 2]
 // Exports: NewUserIcon
 
-// Module 9403 (NewUserIcon)
+// Module 9416 (NewUserIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9404 */;
+import registerAsset from "registerAsset" /* 9417 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

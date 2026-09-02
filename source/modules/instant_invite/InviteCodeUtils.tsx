@@ -1,12 +1,12 @@
 // Module ID: 4463
 // Function ID: 4464
 // Name: readSnowflake
-// Dependencies: [32, 11, 1483, 4464, 2]
+// Dependencies: [32, 11, 1482, 4464, 2]
 // Exports: generateInviteKeyFromUrlParams, getInviteInstanceId, getInviteKeySearchSuffix, parseExtraDataFromInviteKey, parseInviteCodeFromInviteKey
 
 // Module 4463 (readSnowflake)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import parseDefault from "parse" /* 1483 */;
+import parseDefault from "parse" /* 1482 */;
 import getFirstQueryStringValue from "getFirstQueryStringValue" /* 4464 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 

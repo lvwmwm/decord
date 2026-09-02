@@ -1,26 +1,26 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15987
+// Function ID: 15988
 // Name: useIsCurrentUserEligibleForPowerupUpsells
-// Dependencies: [1992, 5381, 1922, 4370, 1924, 1946, 589, 2]
+// Dependencies: [1991, 5389, 1921, 4370, 1923, 1945, 586, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 15756 (useIsCurrentUserEligibleForPowerupUpsells)
-import closure_2 from "trackCommunicationDisabled" /* 1992 */;
-import closure_3 from "insertUnsortedGuilds" /* 5381 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+// Module 15987 (useIsCurrentUserEligibleForPowerupUpsells)
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import closure_3 from "insertUnsortedGuilds" /* 5389 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import closure_5 from "handleGuildBoostsUpdate" /* 4370 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useIsCurrentUserEligibleForPowerupUpsells.tsx");
 
 export default function useIsCurrentUserEligibleForPowerupUpsells() {
   let items = [closure_4];
-  stateFromStores = stateFromStores(589).useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj = stateFromStores(589);
+  stateFromStores = stateFromStores(586).useStateFromStores(items, () => currentUser.getCurrentUser());
+  const obj = stateFromStores(586);
   const tmp = stateFromStores;
   const items1 = [closure_5];
-  const stateFromStoresArray = stateFromStores(589).useStateFromStoresArray(items1, () => {
+  const stateFromStoresArray = stateFromStores(586).useStateFromStoresArray(items1, () => {
     if (hasFetched.hasFetched) {
       const _Object = Object;
       let items = Object.values(tmp.boostSlots);
@@ -29,15 +29,15 @@ export default function useIsCurrentUserEligibleForPowerupUpsells() {
     }
     return items;
   });
-  const obj3 = stateFromStores(589);
+  const obj3 = stateFromStores(586);
   const items2 = [closure_3];
-  const stateFromStores1 = stateFromStores(589).useStateFromStores(items2, () => flattenedGuildIds.getFlattenedGuildIds());
+  const stateFromStores1 = stateFromStores(586).useStateFromStores(items2, () => flattenedGuildIds.getFlattenedGuildIds());
   let tmp3 = null != stateFromStores;
   if (tmp3) {
     const isPremiumGroupMemberResult = stateFromStores.isPremiumGroupMember();
     let tmp5 = !isPremiumGroupMemberResult;
     if (!isPremiumGroupMemberResult) {
-      let isPremiumResult = tmp(1946).isPremium(stateFromStores, PremiumTypes.TIER_2);
+      let isPremiumResult = tmp(1945).isPremium(stateFromStores, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
         isPremiumResult = stateFromStoresArray.some((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription) || stateFromStores1.some((arg0) => {
           const member = closure_1_2.getMember(arg0, currentUser.id);
@@ -57,7 +57,7 @@ export default function useIsCurrentUserEligibleForPowerupUpsells() {
         });
       }
       tmp5 = isPremiumResult;
-      const tmpResult = tmp(1946);
+      const tmpResult = tmp(1945);
     }
     tmp3 = tmp5;
   }
@@ -77,7 +77,7 @@ export const getIsCurrentUserEligibleForPowerupUpsells = function getIsCurrentUs
     const isPremiumGroupMemberResult = currentUser.isPremiumGroupMember();
     let tmp5 = !isPremiumGroupMemberResult;
     if (!isPremiumGroupMemberResult) {
-      let isPremiumResult = currentUser(1946).isPremium(currentUser, PremiumTypes.TIER_2);
+      let isPremiumResult = currentUser(1945).isPremium(currentUser, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
         isPremiumResult = items.some((premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription) || flattenedGuildIds.some((arg0) => {
           const member = closure_1_2.getMember(arg0, currentUser.id);
@@ -97,7 +97,7 @@ export const getIsCurrentUserEligibleForPowerupUpsells = function getIsCurrentUs
         });
       }
       tmp5 = isPremiumResult;
-      const obj3 = currentUser(1946);
+      const obj3 = currentUser(1945);
     }
     tmp3 = tmp5;
   }

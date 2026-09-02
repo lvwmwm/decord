@@ -1,12 +1,12 @@
-// Module ID: 13708
-// Function ID: 13709
+// Module ID: 13931
+// Function ID: 13932
 // Name: _fetchGuildForPopout
-// Dependencies: [5, 676, 709, 530, 2]
+// Dependencies: [5, 673, 706, 527, 2]
 // Exports: fetchGuildForPopout
 
-// Module 13708 (_fetchGuildForPopout)
+// Module 13931 (_fetchGuildForPopout)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _fetchGuildForPopout() {
@@ -28,7 +28,7 @@ function _fetchGuildForPopout() {
       yield HTTP.get(obj2);
       if (1 === tmp7) {
         c4 = 0;
-        const obj3 = lib(709);
+        const obj3 = lib(706);
         const obj4 = { type: "GUILD_POPOUT_FETCH_FAILURE", guildId: null };
         obj4[1] = callback;
         obj3.dispatch(obj4);
@@ -38,7 +38,7 @@ function _fetchGuildForPopout() {
         throw arg1;
       } else if (arg0 !== 2) {
         lib = arg1;
-        const obj = lib(709);
+        const obj = lib(706);
         const obj5 = { type: "GUILD_POPOUT_FETCH_SUCCESS", guildId: null, guild: null };
         obj5[1] = callback;
         obj5[2] = lib.body;

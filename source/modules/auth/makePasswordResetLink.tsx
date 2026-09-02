@@ -1,12 +1,12 @@
-// Module ID: 7729
-// Function ID: 7730
+// Module ID: 7738
+// Function ID: 7739
 // Name: makePasswordResetLink
-// Dependencies: [676, 2]
+// Dependencies: [673, 2]
 // Exports: default
 
-// Module 7729 (makePasswordResetLink)
+// Module 7738 (makePasswordResetLink)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const Routes = ME.Routes;
 const result = set.fileFinishedImporting("modules/auth/makePasswordResetLink.tsx");

@@ -1,9 +1,9 @@
-// Module ID: 6478
-// Function ID: 6479
+// Module ID: 6487
+// Function ID: 6488
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6478 (metadata)
+// Module 6487 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DisguiseSpotIllustration-2x.png.js");

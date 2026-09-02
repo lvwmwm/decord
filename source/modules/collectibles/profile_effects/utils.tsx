@@ -1,10 +1,10 @@
-// Module ID: 8511
-// Function ID: 8512
+// Module ID: 8524
+// Function ID: 8525
 // Name: sortEffectLayers
 // Dependencies: [32, 19, 12, 2]
 // Exports: sortEffectLayers, usePotentiallyRandomizedProfileEffect
 
-// Module 8511 (sortEffectLayers)
+// Module 8524 (sortEffectLayers)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 

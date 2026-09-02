@@ -1,11 +1,11 @@
-// Module ID: 5476
-// Function ID: 5477
+// Module ID: 5484
+// Function ID: 5485
 // Name: isConnected
-// Dependencies: [589, 12, 709, 2]
+// Dependencies: [586, 12, 706, 2]
 
-// Module 5476 (isConnected)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 5484 (isConnected)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let closure_2 = {};
 const Store = initializeDefault.Store;

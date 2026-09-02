@@ -1,14 +1,14 @@
-// Module ID: 14775
-// Function ID: 14776
+// Module ID: 15001
+// Function ID: 15002
 // Name: QuestEmbedPreview
-// Dependencies: [19, 4131, 1922, 676, 21, 7841, 589, 4466, 10932, 14774, 1236, 8779, 2]
+// Dependencies: [19, 4131, 1921, 673, 21, 7850, 586, 4466, 11152, 15000, 1233, 8794, 2]
 // Exports: QuestEmbedPreview
 
-// Module 14775 (QuestEmbedPreview)
+// Module 15001 (QuestEmbedPreview)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "hasFlag" /* 4131 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import { MessageTypes } from "ME" /* 676 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
+import { MessageTypes } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -22,7 +22,7 @@ export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
     obj.setOptions({ renderCodedLinks: true, renderEmbeds: true, renderComponents: true, shouldDisableInteractiveComponents: true });
     return obj;
   }, []);
-  let obj = questId(589);
+  let obj = questId(586);
   let items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   const items1 = [questId, stateFromStores];
@@ -57,14 +57,14 @@ export const QuestEmbedPreview = function QuestEmbedPreview(questId) {
   let tmp6 = null;
   if (null != memo1) {
     obj = { title: null, children: null };
-    const intl = tmp2(1236).intl;
-    obj[0] = intl.string(tmp2(1236).t["habP/M"]);
+    const intl = tmp2(1233).intl;
+    obj[0] = intl.string(tmp2(1233).t["habP/M"]);
     obj = { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" };
     obj[0] = memo;
     obj[1] = memo1;
-    obj[1] = jsx(stateFromStores(8779), { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" });
-    tmp6 = jsx(stateFromStores(14774), { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" });
-    const tmp9 = stateFromStores(14774);
+    obj[1] = jsx(stateFromStores(8794), { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" });
+    tmp6 = jsx(stateFromStores(15000), { rowGenerator: null, message: null, horizontalOffset: 0, pointerEvents: "none" });
+    const tmp9 = stateFromStores(15000);
   }
   return tmp6;
 };

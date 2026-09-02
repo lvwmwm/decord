@@ -1,14 +1,14 @@
-// Module ID: 11696
-// Function ID: 11697
+// Module ID: 11919
+// Function ID: 11920
 // Name: getCollectionItemAssetUrl
-// Dependencies: [676, 1465, 1431, 2]
+// Dependencies: [673, 1464, 1430, 2]
 // Exports: getCollectionItemAssetUrl
 
-// Module 11696 (getCollectionItemAssetUrl)
+// Module 11919 (getCollectionItemAssetUrl)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import handleImageLoad from "handleImageLoad" /* 1465 */;
+import ME from "ME" /* 673 */;
+import getAvatarURL from "getAvatarURL" /* 1430 */;
+import handleImageLoad from "handleImageLoad" /* 1464 */;
 
 const Endpoints = ME.Endpoints;
 ({ API_ENDPOINT: c3, CDN_HOST: c4 } = window.GLOBAL_ENV);

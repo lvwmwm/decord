@@ -1,12 +1,12 @@
-// Module ID: 17060
-// Function ID: 17061
+// Module ID: 17296
+// Function ID: 17297
 // Name: _terminate
-// Dependencies: [4529, 4575, 4542, 687, 3, 5486, 17061, 500, 2]
+// Dependencies: [4529, 4575, 4542, 684, 3, 5494, 17297, 1234, 2]
 
-// Module 17060 (_terminate)
+// Module 17296 (_terminate)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 687 */;
-import initializeDefault from "initialize" /* 5486 */;
+import setDefault from "set" /* 684 */;
+import initializeDefault from "initialize" /* 5494 */;
 import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_4 from "initialize" /* 4575 */;
 import { Features } from "DesktopSources" /* 4542 */;

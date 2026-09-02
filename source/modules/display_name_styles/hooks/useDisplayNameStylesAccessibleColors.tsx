@@ -1,10 +1,10 @@
-// Module ID: 8927
-// Function ID: 8928
+// Module ID: 8941
+// Function ID: 8942
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 4470, 589, 1940, 8928, 4326, 689, 2]
+// Dependencies: [19, 4470, 586, 1939, 8942, 4326, 686, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 8927 (useDisplayNameStylesAccessibleColors)
+// Module 8941 (useDisplayNameStylesAccessibleColors)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 

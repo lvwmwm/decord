@@ -1,12 +1,12 @@
-// Module ID: 12319
-// Function ID: 12320
+// Module ID: 12543
+// Function ID: 12544
 // Name: getNearestValue
-// Dependencies: [1297, 4927, 4479, 4217, 5652, 2]
+// Dependencies: [1296, 4927, 4479, 4217, 5660, 2]
 // Exports: default
 
-// Module 12319 (getNearestValue)
+// Module 12543 (getNearestValue)
 import set from "set" /* 2 */;
-import Button from "Button" /* 1297 */;
+import Button from "Button" /* 1296 */;
 import CONFIG_NEVER_ANIMATE_TIMING from "CONFIG_NEVER_ANIMATE_TIMING" /* 4479 */;
 import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4927 */;
 

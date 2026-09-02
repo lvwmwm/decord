@@ -1,10 +1,10 @@
 // Module ID: 4629
 // Function ID: 4630
-// Dependencies: [805, 634, 4630]
+// Dependencies: [802, 631, 4630]
 
 // Module 4629
-import identity from "identity" /* 634 */;
-import getNative from "getNative" /* 805 */;
+import identity from "identity" /* 631 */;
+import getNative from "getNative" /* 802 */;
 import constant from "constant" /* 4630 */;
 
 if (getNative) {

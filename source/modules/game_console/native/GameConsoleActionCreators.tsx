@@ -1,10 +1,10 @@
-// Module ID: 9885
-// Function ID: 9886
+// Module ID: 9907
+// Function ID: 9908
 // Name: _transferToPlaystationWithAlert
-// Dependencies: [5, 9878, 4857, 1236, 2]
+// Dependencies: [5, 9900, 4857, 1233, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 9885 (_transferToPlaystationWithAlert)
+// Module 9907 (_transferToPlaystationWithAlert)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -22,17 +22,17 @@ function _transferToPlaystationWithAlert() {
       closure_3 = tmp5;
       const lib = lib2;
       c6 = 1;
-      yield lib(9878).transferToPlayStation(lib, lib2.id, dependencyMap);
+      yield lib(9900).transferToPlayStation(lib, lib2.id, dependencyMap);
       if (1 === tmp8) {
         c6 = 0;
         obj1 = lib2(4857);
         const obj2 = { title: null, body: null };
-        const intl = lib(1236).intl;
-        obj2[0] = intl.string(lib(1236).t.QL1y93);
-        const intl2 = lib(1236).intl;
+        const intl = lib(1233).intl;
+        obj2[0] = intl.string(lib(1233).t.QL1y93);
+        const intl2 = lib(1233).intl;
         const obj3 = { deviceName: null };
         obj3[0] = lib.name;
-        obj2[1] = intl2.formatToPlainString(lib(1236).t["6ZyNH/"], obj3);
+        obj2[1] = intl2.formatToPlainString(lib(1233).t["6ZyNH/"], obj3);
         obj1.show(obj2);
         c8 = 3;
       } else if (arg0 === 1) {

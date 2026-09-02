@@ -1,21 +1,21 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 16019
+// Function ID: 16020
 // Name: handlePress
-// Dependencies: [5, 19, 17, 676, 21, 4478, 712, 9088, 1995, 2009, 4190, 5068, 15789, 4474, 1236, 1297, 2]
+// Dependencies: [5, 19, 17, 673, 21, 4478, 709, 9102, 1994, 2008, 4190, 5076, 16020, 4474, 1233, 1296, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 15788 (handlePress)
+// Module 16019 (handlePress)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import map from "map" /* 9088 */;
-import registerAssetDefault from "registerAsset" /* 15789 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import map from "map" /* 9102 */;
+import registerAssetDefault from "registerAsset" /* 16020 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Image } from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

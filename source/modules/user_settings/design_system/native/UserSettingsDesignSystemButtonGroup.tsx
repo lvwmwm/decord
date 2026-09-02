@@ -1,17 +1,17 @@
-// Module ID: 15361
-// Function ID: 15362
+// Module ID: 15589
+// Function ID: 15590
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [19, 17, 21, 4478, 4926, 4474, 5376, 4928, 8006, 6241, 2]
+// Dependencies: [19, 17, 21, 4478, 4926, 4474, 5384, 4928, 8015, 6250, 2]
 // Exports: default
 
-// Module 15361 (UserSettingsDesignSystemButtonGroup)
+// Module 15589 (UserSettingsDesignSystemButtonGroup)
 import noopAll from "noop" /* 19 */;
 import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
 import Button from "Button" /* 4928 */;
-import ButtonGroup from "ButtonGroup" /* 5376 */;
-import registerAssetDefault from "registerAsset" /* 6241 */;
-import IconButton from "IconButton" /* 8006 */;
+import ButtonGroup from "ButtonGroup" /* 5384 */;
+import registerAssetDefault from "registerAsset" /* 6250 */;
+import IconButton from "IconButton" /* 8015 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

@@ -1,15 +1,15 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 10852
+// Function ID: 10853
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 10632, 21, 4478, 712, 1499, 10633, 10599, 2]
+// Dependencies: [19, 17, 10853, 21, 4478, 709, 1498, 10854, 10820, 2]
 // Exports: default
 
-// Module 10631 (UnifiedGiftModalRecipientSelectScreen)
+// Module 10852 (UnifiedGiftModalRecipientSelectScreen)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import SearchableUserListDefault from "SearchableUserList" /* 10633 */;
+import ThemesDefault from "Themes" /* 709 */;
+import SearchableUserListDefault from "SearchableUserList" /* 10854 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { UserRowModes } from "UserRowModes" /* 10632 */;
+import { UserRowModes } from "UserRowModes" /* 10853 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -24,7 +24,7 @@ const result = require("set").fileFinishedImporting("modules/checkout/native/gif
 export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
   setRecipientUser = setRecipientUser.setRecipientUser;
   importDefault = undefined;
-  let obj = setRecipientUser(1499);
+  let obj = setRecipientUser(1498);
   importDefault = obj.useNavigation();
   obj = { style: callback().container, children: jsx(SearchableUserListDefault, obj) };
   obj = {

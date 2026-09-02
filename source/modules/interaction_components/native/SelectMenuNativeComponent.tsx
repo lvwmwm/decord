@@ -1,12 +1,12 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15540
+// Function ID: 15541
 // Name: SelectMenuNativeComponent
-// Dependencies: [19, 21, 15313, 2]
+// Dependencies: [19, 21, 15541, 2]
 // Exports: default
 
-// Module 15312 (SelectMenuNativeComponent)
+// Module 15540 (SelectMenuNativeComponent)
 import noopAll from "noop" /* 19 */;
-import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 15313 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 15541 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 noopAll;

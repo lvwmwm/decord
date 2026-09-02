@@ -1,24 +1,24 @@
-// Module ID: 15680
-// Function ID: 15681
+// Module ID: 15911
+// Function ID: 15912
 // Name: HappeningNowCardCreateChannel
-// Dependencies: [19, 17, 1982, 1909, 1981, 14890, 676, 21, 4478, 712, 698, 9706, 15681, 1236, 9728, 15682, 9909, 15683, 11875, 12311, 14891, 4474, 2]
+// Dependencies: [19, 17, 1981, 1908, 1980, 15119, 673, 21, 4478, 709, 695, 9720, 15912, 1233, 9750, 15913, 9931, 15914, 12098, 12535, 15120, 4474, 2]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 15680 (HappeningNowCardCreateChannel)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 15911 (HappeningNowCardCreateChannel)
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import registerAssetDefault from "registerAsset" /* 12311 */;
-import HAPPENING_NOW_CARD_MARGIN_RIGHTDefault from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 14891 */;
-import registerAssetDefault2 from "registerAsset" /* 15681 */;
-import registerAssetDefault3 from "registerAsset" /* 15682 */;
-import registerAssetDefault4 from "registerAsset" /* 15683 */;
+import registerAssetDefault from "registerAsset" /* 12535 */;
+import HAPPENING_NOW_CARD_MARGIN_RIGHTDefault from "HAPPENING_NOW_CARD_MARGIN_RIGHT" /* 15120 */;
+import registerAssetDefault2 from "registerAsset" /* 15912 */;
+import registerAssetDefault3 from "registerAsset" /* 15913 */;
+import registerAssetDefault4 from "registerAsset" /* 15914 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "comparator" /* 1982 */;
-import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "handleConnectionOpen" /* 1981 */;
-import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14890 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "comparator" /* 1981 */;
+import closure_7 from "createGuildRecordFromRust" /* 1908 */;
+import closure_8 from "handleConnectionOpen" /* 1980 */;
+import HAPPENING_NOW_PANELS_CONTAINER_PADDING from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15119 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -65,8 +65,8 @@ export const HappeningNowCardCreateChannel = function HappeningNowCardCreateChan
   }, items);
   obj[0] = registerAssetDefault2;
   obj[1] = callback;
-  const intl = guildId(1236).intl;
-  obj[2] = intl.string(guildId(1236).t["fUYU+j"]);
+  const intl = guildId(1233).intl;
+  obj[2] = intl.string(guildId(1233).t["fUYU+j"]);
   obj[3] = flag;
   return callback(closure_15, obj);
 };
@@ -113,8 +113,8 @@ export const HappeningNowCardInvite = function HappeningNowCardInvite(guildId) {
   }, items);
   obj[0] = registerAssetDefault4;
   obj[1] = callback;
-  const intl = guildId(1236).intl;
-  obj[2] = intl.string(guildId(1236).t.VINpSK);
+  const intl = guildId(1233).intl;
+  obj[2] = intl.string(guildId(1233).t.VINpSK);
   obj[3] = flag;
   return callback(closure_15, obj);
 };
@@ -144,8 +144,8 @@ export const HappeningNowStudentHubAddServer = function HappeningNowStudentHubAd
   }, items);
   obj[0] = registerAssetDefault;
   obj[1] = callback;
-  const intl = guildId(1236).intl;
-  obj[2] = intl.string(guildId(1236).t.emRpdS);
+  const intl = guildId(1233).intl;
+  obj[2] = intl.string(guildId(1233).t.emRpdS);
   obj[3] = flag;
   return callback(closure_15, obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 7968
-// Function ID: 7969
+// Module ID: 7977
+// Function ID: 7978
 // Name: useHasActiveTrial
-// Dependencies: [1922, 4145, 7195, 1924, 589, 2]
+// Dependencies: [1921, 4145, 7204, 1923, 586, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 7968 (useHasActiveTrial)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 7977 (useHasActiveTrial)
+import initialize from "initialize" /* 586 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
 import closure_3 from "reset" /* 4145 */;
-import closure_4 from "emitChanges" /* 7195 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import closure_4 from "emitChanges" /* 7204 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 require = arg1;
 ({ PREMIUM_TIER_2_LIKELIHOOD_TRIAL_ID: c5, PREMIUM_TIER_2_REACTIVATION_TRIAL_ID: closure_6, PREMIUM_TIER_2_3P_ONE_MONTH_TRIAL_ID: error, PREMIUM_TIER_2_REFERRAL_TRIAL_ID: closure_8, PREMIUM_TRIAL_IDS_ALL: c9 } = GuildFeatures);

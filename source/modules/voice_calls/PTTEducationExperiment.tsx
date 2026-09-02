@@ -1,11 +1,11 @@
-// Module ID: 13490
-// Function ID: 13491
+// Module ID: 13713
+// Function ID: 13714
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 
-// Module 13490 (apexExperiment)
+// Module 13713 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 let obj = { showPTTJoinTooltip: false, showPTTIconIndicator: false, showPTTNoKeybindWarning: false, showPTTSpeakingIndicator: false };
 obj = { name: "2025-12-09-ptt-education", kind: "user", defaultConfig: obj, variations: null };

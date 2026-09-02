@@ -1,12 +1,12 @@
-// Module ID: 9534
-// Function ID: 9535
+// Module ID: 9547
+// Function ID: 9548
 // Name: updateChatInputContainerHeight
-// Dependencies: [595, 644, 4340, 2]
+// Dependencies: [592, 641, 4340, 2]
 // Exports: updateChatInputContainerHeight, updateIsAtBottom, updateShouldShowJumpToPresentButton, updateShowingAutoComplete, useBestActiveChatInputContainerHeight, useChatInputContainerHeight, useChatIsAtBottom, useChatShowingAutoComplete
 
-// Module 9534 (updateChatInputContainerHeight)
+// Module 9547 (updateChatInputContainerHeight)
 import set from "set" /* 2 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 let chatInputContainerHeight = "chatInputContainerHeight";
 let obj = keys.create(() => {
@@ -26,7 +26,7 @@ export const updateChatInputContainerHeight = function updateChatInputContainerH
   const _require = num;
   dependencyMap = arg1;
   if (typeof num === "number") {
-    const Storage = _require(595).Storage;
+    const Storage = _require(592).Storage;
     let result = Storage.set(chatInputContainerHeight, arg1);
   }
   obj.setState((chatInputContainerHeight) => {

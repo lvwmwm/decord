@@ -1,20 +1,20 @@
-// Module ID: 12543
-// Function ID: 12544
+// Module ID: 12767
+// Function ID: 12768
 // Name: PX_8
-// Dependencies: [19, 17, 7292, 1948, 7293, 7294, 8549, 8507, 21, 712, 4478, 8519, 10749, 5493, 10750, 8510, 1947, 8522, 2]
+// Dependencies: [19, 17, 7301, 1947, 7302, 7303, 8562, 8520, 21, 709, 4478, 8532, 10969, 5501, 10970, 8523, 1946, 8535, 2]
 
-// Module 12543 (PX_8)
-import ThemesDefault from "Themes" /* 712 */;
-import getNameplateData from "getNameplateData" /* 1947 */;
-import preloadDefault from "preload" /* 5493 */;
-import StaticEffectDefault from "StaticEffect" /* 8510 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8519 */;
-import NameplateInnerDefault from "NameplateInner" /* 8522 */;
-import filterLayerDefault from "filterLayer" /* 10749 */;
-import metadataDefault from "metadata" /* 10750 */;
+// Module 12767 (PX_8)
+import ThemesDefault from "Themes" /* 709 */;
+import getNameplateData from "getNameplateData" /* 1946 */;
+import preloadDefault from "preload" /* 5501 */;
+import StaticEffectDefault from "StaticEffect" /* 8523 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8532 */;
+import NameplateInnerDefault from "NameplateInner" /* 8535 */;
+import filterLayerDefault from "filterLayer" /* 10969 */;
+import metadataDefault from "metadata" /* 10970 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7292 */;
-import { PROFILE_FRAME_ASPECT_RATIO as closure_8 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8549 */;
+import { isAvatarDecorationRecord, isNameplateRecord, isProfileEffectRecord, isProfileFrameRecord } from "fromServer" /* 7301 */;
+import { PROFILE_FRAME_ASPECT_RATIO as closure_8 } from "PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO" /* 8562 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;

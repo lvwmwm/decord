@@ -1,13 +1,13 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16556
+// Function ID: 16557
 // Name: makeAuthenticated
-// Dependencies: [19, 1218, 676, 21, 1367, 16325, 2]
+// Dependencies: [19, 1215, 673, 21, 1366, 16557, 2]
 // Exports: makeAuthenticated
 
-// Module 16324 (makeAuthenticated)
+// Module 16556 (makeAuthenticated)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "fetchFingerprint" /* 1218 */;
-import { LoginStates } from "ME" /* 676 */;
+import closure_3 from "fetchFingerprint" /* 1215 */;
+import { LoginStates } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

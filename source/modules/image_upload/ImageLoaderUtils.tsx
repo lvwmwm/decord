@@ -1,17 +1,17 @@
-// Module ID: 1465
-// Function ID: 1466
+// Module ID: 1464
+// Function ID: 1465
 // Name: handleImageLoad
-// Dependencies: [32, 5, 676, 1466, 1401, 584, 1473, 1483, 1486, 1490, 1467, 1895, 12, 2]
+// Dependencies: [32, 5, 673, 1465, 1400, 581, 1472, 1482, 1485, 1489, 1466, 1894, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1465 (handleImageLoad)
-import privDefault from "priv" /* 1401 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
-import fit from "fit" /* 1490 */;
-import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1895 */;
+// Module 1464 (handleImageLoad)
+import privDefault from "priv" /* 1400 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
+import fit from "fit" /* 1489 */;
+import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 1894 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function handleImageLoad(arg0, callbacks) {
@@ -46,7 +46,7 @@ function getSrcWithWidthAndHeight(quality) {
     if (!obj.isDiscordCdnUrl(src)) {
       const items = [, ];
       [arr[0], tmp6] = callback(src.split("?"), 2);
-      let tmp2Result = tmp2(1483);
+      let tmp2Result = tmp2(1482);
       items[1] = tmp2Result.parse(tmp6);
       let tmp5 = callback(src.split("?"), 2);
       [tmp8, tmp9] = callback(items, 2);
@@ -99,14 +99,14 @@ function getSrcWithWidthAndHeight(quality) {
         size[0] = width;
         size[1] = height;
         if (null != tmp18) {
-          let tmp15Result = tmp15(1467);
+          let tmp15Result = tmp15(1466);
           obj = { targetWidth: null, targetHeight: null, sourceWidth: null, sourceHeight: null, maxUpscale: null };
           obj[0] = width;
           obj[1] = height;
           obj[2] = sourceWidth;
           obj[3] = sourceHeight;
-          tmp15Result = tmp15(1467);
-          obj[4] = tmp15Result.getSnapDownMaxUpscale(tmp18, tmp2(1895)());
+          tmp15Result = tmp15(1466);
+          obj[4] = tmp15Result.getSnapDownMaxUpscale(tmp18, tmp2(1894)());
           size = tmp15Result.snapAttachmentDimensions(obj);
         }
         if (!tmp19) {
@@ -118,7 +118,7 @@ function getSrcWithWidthAndHeight(quality) {
       tmp2Result = tmp2(12);
       let text = tmp8;
       if (!tmp2Result.isEmpty(tmp9)) {
-        tmp2(1483);
+        tmp2(1482);
         text = `${tmp8}?${obj9.stringify(tmp9)}`;
       }
       return text;
@@ -289,7 +289,7 @@ export const loadImage = function loadImage(arg0, bind) {
                               tmp.backoff = tmp7;
                             }
                             backoff = tmp.backoff;
-                            image.onerror = closure_1_4(/* F105840 */ function() { ... });
+                            image.onerror = closure_1_4(/* F107638 */ function() { ... });
                             image.onload = function onload() { ... };
                             image.src = tmp2.url;
                           });

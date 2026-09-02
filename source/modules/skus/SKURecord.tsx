@@ -1,16 +1,16 @@
 // Module ID: 4521
 // Function ID: 4522
 // Name: createFromServer
-// Dependencies: [1936, 4504, 4522, 676, 4075, 4523, 4524, 1399, 2]
+// Dependencies: [1935, 4504, 4522, 673, 4074, 4523, 4524, 1398, 2]
 
 // Module 4521 (createFromServer)
-import toJSDefault from "toJS" /* 1936 */;
-import hooksDefault from "hooks" /* 4075 */;
+import toJSDefault from "toJS" /* 1935 */;
+import hooksDefault from "hooks" /* 4074 */;
 import getPricesFromServerDefault from "getPricesFromServer" /* 4523 */;
 import transformProfileEffectKeyFrameFromServerDefault from "transformProfileEffectKeyFrameFromServer" /* 4524 */;
 import closure_3 from "createExecutable" /* 4504 */;
 import { THE_GAME_AWARD_WINNER_SKUS as closure_4 } from "set" /* 4522 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 toJSDefault;
@@ -250,7 +250,7 @@ Object.defineProperty(prototype, "isTheGameAwardsWinner", {
 });
 Object.defineProperty(prototype, "available", {
   get: function available() {
-    let hasFlagResult = require(1399) /* hasFlag */.hasFlag(this.flags, constants2.AVAILABLE);
+    let hasFlagResult = require(1398) /* hasFlag */.hasFlag(this.flags, constants2.AVAILABLE);
     if (!hasFlagResult) {
       hasFlagResult = null != this.externalPurchaseUrl;
     }
@@ -271,27 +271,27 @@ prototype["isAvailableForDistribution"] = function isAvailableForDistribution() 
     const premium = self.premium;
     let hasFlagResult = !premium;
     if (premium) {
-      hasFlagResult = require(1399) /* hasFlag */.hasFlag(self.flags, constants2.PREMIUM_AND_DISTRIBUTION);
-      const obj = require(1399) /* hasFlag */;
+      hasFlagResult = require(1398) /* hasFlag */.hasFlag(self.flags, constants2.PREMIUM_AND_DISTRIBUTION);
+      const obj = require(1398) /* hasFlag */;
     }
     available = hasFlagResult;
   }
   return available;
 };
 prototype["isAvailable"] = function isAvailable() {
-  return require(1399) /* hasFlag */.hasFlag(this.flags, constants2.AVAILABLE);
+  return require(1398) /* hasFlag */.hasFlag(this.flags, constants2.AVAILABLE);
 };
 prototype["isPremiumPerk"] = function isPremiumPerk() {
   const self = this;
   let premium = this.premium;
   if (premium) {
-    let hasFlagResult = require(1399) /* hasFlag */.hasFlag(self.flags, constants2.PREMIUM_PURCHASE);
+    let hasFlagResult = require(1398) /* hasFlag */.hasFlag(self.flags, constants2.PREMIUM_PURCHASE);
     if (!hasFlagResult) {
-      hasFlagResult = tmp(1399).hasFlag(self.flags, tmp3.PREMIUM_AND_DISTRIBUTION);
-      const tmpResult = tmp(1399);
+      hasFlagResult = tmp(1398).hasFlag(self.flags, tmp3.PREMIUM_AND_DISTRIBUTION);
+      const tmpResult = tmp(1398);
     }
     premium = hasFlagResult;
-    const obj = require(1399) /* hasFlag */;
+    const obj = require(1398) /* hasFlag */;
     tmp = require;
     tmp3 = constants2;
   }

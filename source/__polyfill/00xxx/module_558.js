@@ -4,4 +4,4 @@
 
 // Module 558
 
-export default Error;
+export default ReferenceError;

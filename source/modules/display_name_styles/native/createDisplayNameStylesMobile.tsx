@@ -1,14 +1,14 @@
-// Module ID: 7872
-// Function ID: 7873
+// Module ID: 7881
+// Function ID: 7882
 // Name: createDisplayNameStylesMobile
-// Dependencies: [4470, 1992, 1922, 1941, 2]
+// Dependencies: [4470, 1991, 1921, 1940, 2]
 // Exports: createDisplayNameStylesMobile, getDisplayNameFontIdForMobileUser
 
-// Module 7872 (createDisplayNameStylesMobile)
-import DisplayNameFont from "DisplayNameFont" /* 1941 */;
+// Module 7881 (createDisplayNameStylesMobile)
+import DisplayNameFont from "DisplayNameFont" /* 1940 */;
 import closure_2 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_3 from "trackCommunicationDisabled" /* 1992 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "trackCommunicationDisabled" /* 1991 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/display_name_styles/native/createDisplayNameStylesMobile.tsx");

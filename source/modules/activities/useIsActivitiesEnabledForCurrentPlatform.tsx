@@ -1,10 +1,10 @@
-// Module ID: 9445
-// Function ID: 9446
+// Module ID: 9458
+// Function ID: 9459
 // Name: useIsActivitiesEnabledForCurrentPlatform
 // Dependencies: [4754, 2]
 // Exports: getIsActivitiesEnabledForCurrentPlatform, useIsActivitiesEnabledForCurrentPlatform
 
-// Module 9445 (useIsActivitiesEnabledForCurrentPlatform)
+// Module 9458 (useIsActivitiesEnabledForCurrentPlatform)
 import set from "set" /* 2 */;
 import isTablet from "isTablet" /* 4754 */;
 

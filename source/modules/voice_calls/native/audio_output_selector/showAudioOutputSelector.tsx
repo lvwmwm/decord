@@ -1,16 +1,16 @@
-// Module ID: 9803
-// Function ID: 9804
+// Module ID: 9825
+// Function ID: 9826
 // Name: showAudioOutputSelector
-// Dependencies: [17, 9804, 500, 4445, 9805, 2009, 2]
+// Dependencies: [17, 9826, 1234, 4445, 9827, 2008, 2]
 // Exports: showAudioOutputSelector
 
-// Module 9803 (showAudioOutputSelector)
+// Module 9825 (showAudioOutputSelector)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set2 from "set" /* 500 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import set2 from "set" /* 1234 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import VOICE_PANEL_SETTINGS_KEY from "VOICE_PANEL_SETTINGS_KEY" /* 9804 */;
+import VOICE_PANEL_SETTINGS_KEY from "VOICE_PANEL_SETTINGS_KEY" /* 9826 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 let closure_4 = VOICE_PANEL_SETTINGS_KEY.VOICE_PANEL_AUDIO_OUTPUT_ACTION_SHEET_KEY;
@@ -22,7 +22,7 @@ export const showAudioOutputSelector = function showAudioOutputSelector(channelI
     obj = { channelId: null, isConnectedToVoiceChannel: null };
     obj[0] = channelId;
     obj[1] = closure_1;
-    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9805, dependencyMap.paths), closure_4, obj);
+    ACTION_SHEET_HEIGHT_HALFDefault.openLazy(asyncRequireImpl(9827, dependencyMap.paths), closure_4, obj);
     const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   } else {
     const AudioRoutePicker = NativeModules.AudioRoutePicker;

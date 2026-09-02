@@ -1,15 +1,15 @@
-// Module ID: 12772
-// Function ID: 12773
+// Module ID: 12993
+// Function ID: 12994
 // Name: GuildScheduledEventPreview
-// Dependencies: [19, 17, 1909, 21, 4478, 712, 589, 4326, 4474, 1236, 6004, 2]
+// Dependencies: [19, 17, 1908, 21, 4478, 709, 586, 4326, 4474, 1233, 6012, 2]
 // Exports: default
 
-// Module 12772 (GuildScheduledEventPreview)
+// Module 12993 (GuildScheduledEventPreview)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
+import ThemesDefault from "Themes" /* 709 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -31,7 +31,7 @@ const result = require("set").fileFinishedImporting("modules/in_app_reports/nati
 export default function GuildScheduledEventPreview(event) {
   event = event.event;
   const tmp = callback3();
-  let obj = event(589);
+  let obj = event(586);
   const items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_4.getGuild(event.guild_id));
   if (null == stateFromStores) {
@@ -42,8 +42,8 @@ export default function GuildScheduledEventPreview(event) {
     const tmp2Result = tmp2(4326);
     obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
     obj[0] = tmp.title;
-    const intl = tmp2(1236).intl;
-    obj[3] = intl.string(tmp2(1236).t.SDTOL7);
+    const intl = tmp2(1233).intl;
+    obj[3] = intl.string(tmp2(1233).t.SDTOL7);
     const items1 = [callback(tmp2(4474).Text, obj), ];
     obj1 = { style: null, children: null };
     const items2 = [tmp.itemContainer, ];
@@ -56,7 +56,7 @@ export default function GuildScheduledEventPreview(event) {
     const obj4 = { guild: null, size: null, selected: false };
     obj4[0] = stateFromStores;
     const hexWithOpacityResult = tmp2(4326).hexWithOpacity(tmp.borderColor.color, 0.08);
-    obj4[1] = tmp2(6004).GuildIconSizes.XXSMALL;
+    obj4[1] = tmp2(6012).GuildIconSizes.XXSMALL;
     const items3 = [callback(GuildIconSizesDefault, obj4), ];
     const obj5 = { style: null, variant: "text-sm/medium", color: "text-default", children: null };
     obj5[0] = tmp.guildName;

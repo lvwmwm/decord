@@ -1,11 +1,11 @@
-// Module ID: 15284
-// Function ID: 15285
+// Module ID: 15512
+// Function ID: 15513
 // Name: found
-// Dependencies: [15285, 2]
+// Dependencies: [15513, 2]
 
-// Module 15284 (found)
+// Module 15512 (found)
 import set from "set" /* 2 */;
-import _testCaptcha from "_testCaptcha" /* 15285 */;
+import _testCaptcha from "_testCaptcha" /* 15513 */;
 
 const entries = Object.entries(_testCaptcha.HCaptchaDifficulty);
 const mapped = entries.map((arg0) => {

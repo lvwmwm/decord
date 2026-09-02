@@ -1,15 +1,15 @@
-// Module ID: 7771
-// Function ID: 7772
+// Module ID: 7780
+// Function ID: 7781
 // Name: ChangePhoneReason
-// Dependencies: [5, 1218, 7769, 676, 709, 530, 4713, 503, 2]
+// Dependencies: [5, 1215, 7778, 673, 706, 527, 4713, 500, 2]
 
-// Module 7771 (ChangePhoneReason)
-import sendRequest from "sendRequest" /* 530 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7780 (ChangePhoneReason)
+import sendRequest from "sendRequest" /* 527 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7769 */;
-import { Endpoints } from "ME" /* 676 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_5 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7778 */;
+import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/phone/PhoneActionCreators.tsx");
@@ -120,12 +120,12 @@ export default {
       obj3[1] = closure_1_1;
       obj2[2] = obj3;
       const obj4 = { event: null };
-      obj4[0] = closure_1_0(503).NetworkActionNames.USER_VERIFY_PHONE;
+      obj4[0] = closure_1_0(500).NetworkActionNames.USER_VERIFY_PHONE;
       obj2[4] = obj4;
-      obj2[5] = closure_1_0(530).rejectWithMigratedError();
+      obj2[5] = closure_1_0(527).rejectWithMigratedError();
       body = yield obj5.post(obj2);
       if (dependencyMap) {
-        const obj = closure_1_1(709);
+        const obj = closure_1_1(706);
         const obj7 = { type: "MODAL_POP", key: null };
         obj7[1] = closure_1_5;
         obj.dispatch(obj7);

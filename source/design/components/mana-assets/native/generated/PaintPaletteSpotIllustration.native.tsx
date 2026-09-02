@@ -1,14 +1,14 @@
-// Module ID: 6893
-// Function ID: 6894
+// Module ID: 6902
+// Function ID: 6903
 // Name: PaintPaletteSpotIllustration
-// Dependencies: [21, 5493, 6894, 2]
+// Dependencies: [21, 5501, 6903, 2]
 // Exports: PaintPaletteSpotIllustration
 
-// Module 6893 (PaintPaletteSpotIllustration)
+// Module 6902 (PaintPaletteSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6894 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6903 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/PaintPaletteSpotIllustration.native.tsx");

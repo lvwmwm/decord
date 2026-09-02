@@ -1,14 +1,14 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12716
+// Function ID: 12717
 // Name: UserCheckIcon
-// Dependencies: [19, 21, 712, 4196, 7984, 2]
+// Dependencies: [19, 21, 709, 4196, 7993, 2]
 // Exports: UserCheckIcon
 
-// Module 12492 (UserCheckIcon)
+// Module 12716 (UserCheckIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7984 */;
+import registerAsset from "registerAsset" /* 7993 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,13 +1,13 @@
-// Module ID: 8018
-// Function ID: 8019
+// Module ID: 8027
+// Function ID: 8028
 // Name: isContentInventoryFallbackEmbed
-// Dependencies: [676, 1399, 2]
+// Dependencies: [673, 1398, 2]
 // Exports: isContentInventoryFallbackEmbed
 
-// Module 8018 (isContentInventoryFallbackEmbed)
+// Module 8027 (isContentInventoryFallbackEmbed)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import hasFlag from "hasFlag" /* 1399 */;
+import ME from "ME" /* 673 */;
+import hasFlag from "hasFlag" /* 1398 */;
 
 const MessageEmbedFlags = ME.MessageEmbedFlags;
 const result = set.fileFinishedImporting("modules/interaction_components/content_inventory_entry/utils.tsx");

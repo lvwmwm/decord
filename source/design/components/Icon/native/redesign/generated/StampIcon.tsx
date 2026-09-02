@@ -1,14 +1,14 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11540
+// Function ID: 11541
 // Name: StampIcon
-// Dependencies: [19, 21, 712, 4196, 11318, 2]
+// Dependencies: [19, 21, 709, 4196, 11541, 2]
 // Exports: StampIcon
 
-// Module 11317 (StampIcon)
+// Module 11540 (StampIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 11318 */;
+import registerAsset from "registerAsset" /* 11541 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

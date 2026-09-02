@@ -1,11 +1,11 @@
-// Module ID: 17479
-// Function ID: 17480
-// Dependencies: [17, 4857, 1236, 2]
+// Module ID: 17715
+// Function ID: 17716
+// Dependencies: [17, 4857, 1233, 2]
 
-// Module 17479
+// Module 17715
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import setDefault from "set" /* 4857 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;

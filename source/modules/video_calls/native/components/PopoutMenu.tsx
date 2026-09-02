@@ -1,10 +1,10 @@
-// Module ID: 9555
-// Function ID: 9556
+// Module ID: 9568
+// Function ID: 9569
 // Name: PopoutMenuRow
-// Dependencies: [32, 19, 17, 21, 4478, 712, 5592, 1297, 8363, 1493, 1628, 12, 4217, 4479, 4448, 5652, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 5600, 1296, 8372, 1492, 1627, 12, 4217, 4479, 4448, 5660, 2]
 
-// Module 9555 (PopoutMenuRow)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9568 (PopoutMenuRow)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -29,11 +29,11 @@ function PopoutMenuRow(onClose) {
   if (null != icon) {
     let obj = { source: null };
     obj[0] = icon;
-    tmp3Result = tmp3(onClick(1297).Icon, obj);
+    tmp3Result = tmp3(onClick(1296).Icon, obj);
   }
-  obj = { leading: tmp3Result, label: tmp3(onClick(8363).FormLabel, obj), style: tmp.popoutMenuRow, onPress: callback };
+  obj = { leading: tmp3Result, label: tmp3(onClick(8372).FormLabel, obj), style: tmp.popoutMenuRow, onPress: callback };
   obj = { style: tmp.popoutMenuRowLabel, text: onClose.text };
-  return closure_6(onClose(5592), obj);
+  return closure_6(onClose(5600), obj);
 }
 let c4 = importAllResult;
 ({ jsx: closure_6, jsxs: error, Fragment: closure_8 } = jsxProd);

@@ -1,11 +1,11 @@
-// Module ID: 10206
-// Function ID: 10207
+// Module ID: 10228
+// Function ID: 10229
 // Name: CHANNEL_LIST_STYLES_COZY
-// Dependencies: [10204, 10205, 712, 1297, 6004, 5963, 2]
+// Dependencies: [10226, 10227, 709, 1296, 6012, 5971, 2]
 
-// Module 10206 (CHANNEL_LIST_STYLES_COZY)
-import ThemesDefault from "Themes" /* 712 */;
-import importDefaultResult from "merge" /* 10204 */;
+// Module 10228 (CHANNEL_LIST_STYLES_COZY)
+import ThemesDefault from "Themes" /* 709 */;
+import importDefaultResult from "merge" /* 10226 */;
 
 let obj = { layout: { margin: { marginVertical: 2 }, marginPanels: { marginVertical: 2 }, marginThread: { marginVertical: 2, marginLeft: 76 } }, container: null, category: null, voiceUsers: null, voiceOrStageSummaryRow: null, messagePreview: null, inviteRow: null, icon: null, unreadBadge: null, mentionBadge: null, joinVoiceButton: null, threadSpine: null, happeningNow: null, typing: null, separator: null };
 obj = { borderRadius: ThemesDefault.radii.lg, padding: { paddingVertical: 8 }, paddingPanels: { paddingVertical: 8 }, paddingThread: { paddingVertical: 6, paddingLeft: 8 } };

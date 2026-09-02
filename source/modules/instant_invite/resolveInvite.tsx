@@ -1,16 +1,16 @@
-// Module ID: 8863
-// Function ID: 8864
+// Module ID: 8878
+// Function ID: 8879
 // Name: map
-// Dependencies: [1218, 1909, 7481, 676, 7480, 4463, 698, 4713, 503, 1400, 2]
+// Dependencies: [1215, 1908, 7491, 673, 7490, 4463, 695, 4713, 500, 1399, 2]
 // Exports: default
 
-// Module 8863 (map)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+// Module 8878 (map)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import _modDef4713 from "module_4713" /* 4713 */;
-import closure_3 from "fetchFingerprint" /* 1218 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import InviteSendStates from "InviteSendStates" /* 7481 */;
-import ME from "ME" /* 676 */;
+import closure_3 from "fetchFingerprint" /* 1215 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+import InviteSendStates from "InviteSendStates" /* 7491 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 ({ InviteTargetTypes: c5, InviteTypes: closure_6 } = InviteSendStates);
@@ -55,7 +55,7 @@ export default function resolveInvite(inviteKey, arg1, inviteInstanceId) {
     obj1[0] = closure_7.INVITE(baseCode);
     obj1[1] = obj;
     let obj2 = { event: null, properties: null };
-    obj2[0] = tmp(503).NetworkActionNames.INVITE_RESOLVE;
+    obj2[0] = tmp(500).NetworkActionNames.INVITE_RESOLVE;
     obj2[1] = function properties(ok) {
       let body = null;
       if (ok.ok) {

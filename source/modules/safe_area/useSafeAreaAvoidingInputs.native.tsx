@@ -1,10 +1,10 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9227
+// Function ID: 9228
 // Name: _calculateScrollOffset
-// Dependencies: [5, 19, 1493, 712, 9214, 5595, 2]
+// Dependencies: [5, 19, 1492, 709, 9228, 5603, 2]
 // Exports: default
 
-// Module 9213 (_calculateScrollOffset)
+// Module 9227 (_calculateScrollOffset)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 

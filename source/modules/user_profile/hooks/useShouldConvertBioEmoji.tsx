@@ -1,10 +1,10 @@
-// Module ID: 8078
-// Function ID: 8079
+// Module ID: 8086
+// Function ID: 8087
 // Name: useShouldConvertBioEmoji
 // Dependencies: [4166, 2]
 // Exports: default, getShouldConvertBioEmoji
 
-// Module 8078 (useShouldConvertBioEmoji)
+// Module 8086 (useShouldConvertBioEmoji)
 import set from "set" /* 2 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 

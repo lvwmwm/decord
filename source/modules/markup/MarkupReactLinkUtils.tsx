@@ -1,12 +1,12 @@
-// Module ID: 11200
-// Function ID: 11201
+// Module ID: 11423
+// Function ID: 11424
 // Name: isLinkTrusted
-// Dependencies: [8641, 7896, 2]
+// Dependencies: [8656, 7905, 2]
 // Exports: isLinkTrusted
 
-// Module 11200 (isLinkTrusted)
+// Module 11423 (isLinkTrusted)
 import set from "set" /* 2 */;
-import isLinkTrusted from "isLinkTrusted" /* 8641 */;
+import isLinkTrusted from "isLinkTrusted" /* 8656 */;
 
 const result = set.fileFinishedImporting("modules/markup/MarkupReactLinkUtils.tsx");
 
@@ -16,9 +16,9 @@ export const isLinkTrusted = function isLinkTrusted(target) {
   } else {
     isLinkTrusted;
     if (null == target.title) {
-      let title = tmp2(7896).astToString(target.content);
+      let title = tmp2(7905).astToString(target.content);
       tmp5(tmp6, title);
-      const tmp2Result = tmp2(7896);
+      const tmp2Result = tmp2(7905);
     }
     title = target.title;
     tmp2 = require;

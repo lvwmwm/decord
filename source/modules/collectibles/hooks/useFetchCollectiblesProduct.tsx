@@ -1,15 +1,15 @@
-// Module ID: 8492
-// Function ID: 8493
+// Module ID: 8505
+// Function ID: 8506
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 4527, 7287, 676, 647, 1950, 7286, 2]
+// Dependencies: [32, 19, 4527, 7296, 673, 644, 1949, 7295, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 8492 (useFetchCollectiblesProduct)
+// Module 8505 (useFetchCollectiblesProduct)
 import closure_2 from "_slicedToArray" /* 32 */;
 import { useEffect } from "noop" /* 19 */;
 import closure_4 from "addSku" /* 4527 */;
-import closure_5 from "updateCategoriesAndProducts" /* 7287 */;
-import { SKUProductLines } from "ME" /* 676 */;
+import closure_5 from "updateCategoriesAndProducts" /* 7296 */;
+import { SKUProductLines } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProduct.tsx");
@@ -17,7 +17,7 @@ const result = require("set").fileFinishedImporting("modules/collectibles/hooks/
 export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(skuId, arg1) {
   const _require = skuId;
   dependencyMap = arg1;
-  let obj = _require(647);
+  let obj = _require(644);
   let items = [closure_4];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let value = null;
@@ -31,7 +31,7 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
     tmp4 = stateFromStores.productLine !== SKUProductLines.COLLECTIBLES;
   }
   const callback = tmp4;
-  let tmpResult = tmp(647);
+  let tmpResult = tmp(644);
   const items1 = [stateFromStores1];
   const tmp6 = callback(tmpResult.useStateFromStoresArray(items1, () => {
     const items = [stateFromStores1.getProduct(closure_0), stateFromStores1.getProductFetch(closure_0)];
@@ -39,7 +39,7 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
   }), 2);
   const first = tmp6[0];
   closure_4 = tmp8;
-  tmpResult = tmp(647);
+  tmpResult = tmp(644);
   const items2 = [stateFromStores1];
   stateFromStores1 = tmpResult.useStateFromStores(items2, () => stateFromStores1.isProductFetchBackedOff(closure_0));
   let tmp10 = true === arg1;
@@ -48,7 +48,7 @@ export const useFetchCollectiblesProduct = function useFetchCollectiblesProduct(
     if (first != null) {
       type = first.type;
     }
-    tmp10 = type === tmp(1950).CollectiblesItemType.BUNDLE;
+    tmp10 = type === tmp(1949).CollectiblesItemType.BUNDLE;
   }
   if (tmp10) {
     tmp10 = 0 === first.items.length;

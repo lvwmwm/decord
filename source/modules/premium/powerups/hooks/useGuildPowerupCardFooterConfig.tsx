@@ -1,15 +1,15 @@
-// Module ID: 12097
-// Function ID: 12098
+// Module ID: 12321
+// Function ID: 12322
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1909, 4365, 676, 12063, 589, 4368, 12060, 2]
+// Dependencies: [1908, 4365, 673, 12287, 586, 4368, 12284, 2]
 // Exports: default
 
-// Module 12097 (useGuildPowerupCardFooterConfig)
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12060 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12063 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+// Module 12321 (useGuildPowerupCardFooterConfig)
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12284 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12287 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
-import { GuildFeatures } from "ME" /* 676 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 const require = arg1;
 ({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: c4, PowerupActiveStatusType: c5 } = BoostedGuildTiers);
@@ -18,7 +18,7 @@ const result = require("set").fileFinishedImporting("modules/premium/powerups/ho
 export default function useGuildPowerupCardFooterConfig(arg0, skuId) {
   const _require = arg0;
   const tmp3 = usePowerupActiveStatusDefault(arg0, skuId);
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_3];
   const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => {

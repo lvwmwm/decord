@@ -1,12 +1,12 @@
-// Module ID: 10169
-// Function ID: 10170
+// Module ID: 10191
+// Function ID: 10192
 // Name: initialize
-// Dependencies: [1218, 589, 709, 2]
+// Dependencies: [1215, 586, 706, 2]
 
-// Module 10169 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "fetchFingerprint" /* 1218 */;
+// Module 10191 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_0 from "fetchFingerprint" /* 1215 */;
 
 let closure_1 = {};
 const Store = initializeDefault.Store;

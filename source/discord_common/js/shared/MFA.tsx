@@ -1,10 +1,10 @@
-// Module ID: 15275
-// Function ID: 15276
+// Module ID: 15503
+// Function ID: 15504
 // Name: finishMFACheck
-// Dependencies: [5, 530, 2]
+// Dependencies: [5, 527, 2]
 // Exports: trySubmit
 
-// Module 15275 (finishMFACheck)
+// Module 15503 (finishMFACheck)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 const require = arg1;
@@ -66,7 +66,7 @@ function _finishMFACheck() {
               }
               c6 = 1;
               c7 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp8) {
             if (arg0 === 1) {

@@ -1,12 +1,12 @@
-// Module ID: 11828
-// Function ID: 11829
+// Module ID: 12051
+// Function ID: 12052
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 4296, 4197, 712, 688, 4940, 2]
+// Dependencies: [19, 17, 21, 4296, 4197, 709, 685, 4940, 2]
 // Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
 
-// Module 11828 (ChatInputScrimGradient)
+// Module 12051 (ChatInputScrimGradient)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
 import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4296 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
@@ -38,12 +38,12 @@ export const ChatInputScrimGradient = function ChatInputScrimGradient(scrimBase)
   if (scrimBase == null) {
     scrimBase = token;
   }
-  let tmpResult = tmp(688);
+  let tmpResult = tmp(685);
   let hex2rgbResult = tmpResult.hex2rgb(scrimBase, 1);
   if (hex2rgbResult == null) {
     hex2rgbResult = scrimBase;
   }
-  tmpResult = tmp(688);
+  tmpResult = tmp(685);
   let str = tmpResult.hex2rgb(scrimBase, 0);
   if (str == null) {
     str = "transparent";

@@ -1,10 +1,10 @@
-// Module ID: 6044
-// Function ID: 6045
+// Module ID: 6052
+// Function ID: 6053
 // Name: designConfig
 // Dependencies: [2]
 // Exports: setDesignConfig
 
-// Module 6044 (designConfig)
+// Module 6052 (designConfig)
 import set from "set" /* 2 */;
 
 const obj = {

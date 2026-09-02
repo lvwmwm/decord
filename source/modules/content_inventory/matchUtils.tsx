@@ -1,16 +1,16 @@
-// Module ID: 8608
-// Function ID: 8609
+// Module ID: 8623
+// Function ID: 8624
 // Name: isMatchingListeningActivity
-// Dependencies: [676, 8609, 8611, 8612, 8614, 8615, 8044, 2]
+// Dependencies: [673, 8624, 8626, 8627, 8629, 8630, 8053, 2]
 // Exports: findMatchingEntry, isCrunchyrollEntry, isMatchingApplicationActivity, isMatchingWatchActivity, isSpotifyEntry
 
-// Module 8608 (isMatchingListeningActivity)
+// Module 8623 (isMatchingListeningActivity)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import CRUNCHYROLL_LINK_DEST_ORIGIN from "CRUNCHYROLL_LINK_DEST_ORIGIN" /* 8609 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8611 */;
-import isPlayedGameEntry from "isPlayedGameEntry" /* 8612 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8615 */;
+import ME from "ME" /* 673 */;
+import CRUNCHYROLL_LINK_DEST_ORIGIN from "CRUNCHYROLL_LINK_DEST_ORIGIN" /* 8624 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8626 */;
+import isPlayedGameEntry from "isPlayedGameEntry" /* 8627 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8630 */;
 
 function isMatchingListeningActivity(closure_0, party) {
   if (obj.isListenedSessionEntry(closure_0)) {
@@ -22,13 +22,13 @@ function isMatchingListeningActivity(closure_0, party) {
         provider = media.provider;
       }
     }
-    let isTopArtistEntryResult = provider === tmp(8614).ContentInventoryListenedMediaProvider.SPOTIFY;
+    let isTopArtistEntryResult = provider === tmp(8629).ContentInventoryListenedMediaProvider.SPOTIFY;
   } else {
-    isTopArtistEntryResult = tmp(8612).isTopArtistEntry(closure_0);
+    isTopArtistEntryResult = tmp(8627).isTopArtistEntry(closure_0);
     if (isTopArtistEntryResult) {
-      isTopArtistEntryResult = closure_0.extra.media.provider === tmp(8614).ContentInventoryListenedMediaProvider.SPOTIFY;
+      isTopArtistEntryResult = closure_0.extra.media.provider === tmp(8629).ContentInventoryListenedMediaProvider.SPOTIFY;
     }
-    const tmpResult = tmp(8612);
+    const tmpResult = tmp(8627);
   }
   let tmp9Result = isTopArtistEntryResult;
   if (tmp9Result) {
@@ -57,13 +57,13 @@ export const isSpotifyEntry = function isSpotifyEntry(extra) {
         provider = media.provider;
       }
     }
-    let isTopArtistEntryResult = provider === tmp(8614).ContentInventoryListenedMediaProvider.SPOTIFY;
+    let isTopArtistEntryResult = provider === tmp(8629).ContentInventoryListenedMediaProvider.SPOTIFY;
   } else {
-    isTopArtistEntryResult = tmp(8612).isTopArtistEntry(extra);
+    isTopArtistEntryResult = tmp(8627).isTopArtistEntry(extra);
     if (isTopArtistEntryResult) {
-      isTopArtistEntryResult = extra.extra.media.provider === tmp(8614).ContentInventoryListenedMediaProvider.SPOTIFY;
+      isTopArtistEntryResult = extra.extra.media.provider === tmp(8629).ContentInventoryListenedMediaProvider.SPOTIFY;
     }
-    const tmpResult = tmp(8612);
+    const tmpResult = tmp(8627);
   }
   return isTopArtistEntryResult;
 };
@@ -111,9 +111,9 @@ export const isMatchingWatchActivity = function isMatchingWatchActivity(closure_
 };
 export const findMatchingEntry = function findMatchingEntry(entries, activity) {
   const _require = activity;
-  const found = entries.filter(_require(8044).isEntryActive);
+  const found = entries.filter(_require(8053).isEntryActive);
   if (activity.type === ActivityTypes.PLAYING) {
-    const found1 = found.filter(tmp(8612).isGamingLikeEntry);
+    const found1 = found.filter(tmp(8627).isGamingLikeEntry);
     let found2 = found1.find((extra) => {
       let name = closure_0;
       let game_name = extra.extra;
@@ -132,10 +132,10 @@ export const findMatchingEntry = function findMatchingEntry(entries, activity) {
       return tmp;
     });
   } else if (activity.type === tmp3.LISTENING) {
-    const found3 = found.filter(tmp(8612).isListenedSessionEntry);
+    const found3 = found.filter(tmp(8627).isListenedSessionEntry);
     found2 = found3.find((arg0) => closure_1_6(arg0, closure_0));
   } else if (activity.type === tmp3.WATCHING) {
-    const found4 = entries.filter(tmp(8612).isWatchedMediaEntry);
+    const found4 = entries.filter(tmp(8627).isWatchedMediaEntry);
     found2 = found4.find((extra) => {
       const tmp3 = closure_1_1(closure_1_2[5])(activity);
       let tmp4 = !tmp3;

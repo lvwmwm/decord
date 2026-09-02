@@ -1,14 +1,14 @@
-// Module ID: 6751
-// Function ID: 6752
+// Module ID: 6760
+// Function ID: 6761
 // Name: HeartJarSpotIllustration
-// Dependencies: [21, 5493, 6752, 2]
+// Dependencies: [21, 5501, 6761, 2]
 // Exports: HeartJarSpotIllustration
 
-// Module 6751 (HeartJarSpotIllustration)
+// Module 6760 (HeartJarSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6752 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6761 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/HeartJarSpotIllustration.native.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 15783
-// Function ID: 15784
+// Module ID: 16014
+// Function ID: 16015
 // Name: AccountLinkLargeBanner
-// Dependencies: [19, 17, 1922, 1384, 21, 712, 5963, 9088, 4933, 4478, 647, 5953, 5973, 5601, 5068, 5551, 1297, 4474, 1236, 4928, 8860, 2]
+// Dependencies: [19, 17, 1921, 1383, 21, 709, 5971, 9102, 4933, 4478, 644, 5961, 5981, 5609, 5076, 5559, 1296, 4474, 1233, 4928, 8875, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 15783 (AccountLinkLargeBanner)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16014 (AccountLinkLargeBanner)
+import ThemesDefault from "Themes" /* 709 */;
 import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4933 */;
-import map from "map" /* 9088 */;
+import map from "map" /* 9102 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;

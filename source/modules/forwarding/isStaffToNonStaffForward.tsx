@@ -1,14 +1,14 @@
-// Module ID: 11268
-// Function ID: 11269
+// Module ID: 11491
+// Function ID: 11492
 // Name: isStaffToNonStaffForward
-// Dependencies: [1387, 1909, 1922, 676, 2]
+// Dependencies: [1386, 1908, 1921, 673, 2]
 // Exports: default
 
-// Module 11268 (isStaffToNonStaffForward)
-import closure_0 from "ensureGuildLoaded" /* 1387 */;
-import closure_1 from "createGuildRecordFromRust" /* 1909 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import { GuildFeatures } from "ME" /* 676 */;
+// Module 11491 (isStaffToNonStaffForward)
+import closure_0 from "ensureGuildLoaded" /* 1386 */;
+import closure_1 from "createGuildRecordFromRust" /* 1908 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/forwarding/isStaffToNonStaffForward.tsx");
 

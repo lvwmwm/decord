@@ -1,7 +1,7 @@
 // Module ID: 4939
 // Function ID: 4940
 // Name: useShineEffectStyles
-// Dependencies: [32, 19, 21, 4934, 689, 1363, 4217, 4479, 4478, 2]
+// Dependencies: [32, 19, 21, 4934, 686, 1362, 4217, 4479, 4478, 2]
 // Exports: ButtonShine
 
 // Module 4939 (useShineEffectStyles)
@@ -15,10 +15,10 @@ function useShineEffectStyles(width, variant) {
   const _require = width;
   let obj = _require(4934);
   const buttonTextColorStyles = obj.useButtonTextColorStyles(variant);
-  const obj2 = enabled(689)(buttonTextColorStyles.color);
-  const hexResult = enabled(689)(buttonTextColorStyles.color).alpha(0.1).hex();
-  enabled = React.useContext(_require(1363).AccessibilityPreferencesContext).reducedMotion.enabled;
-  const alphaResult = enabled(689)(buttonTextColorStyles.color).alpha(0.1);
+  const obj2 = enabled(686)(buttonTextColorStyles.color);
+  const hexResult = enabled(686)(buttonTextColorStyles.color).alpha(0.1).hex();
+  enabled = React.useContext(_require(1362).AccessibilityPreferencesContext).reducedMotion.enabled;
+  const alphaResult = enabled(686)(buttonTextColorStyles.color).alpha(0.1);
   const fn = function o() {
     if (null == width) {
       let obj = { transform: null };

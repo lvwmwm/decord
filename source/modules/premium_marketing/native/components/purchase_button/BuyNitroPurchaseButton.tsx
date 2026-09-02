@@ -1,15 +1,15 @@
-// Module ID: 13048
-// Function ID: 13049
+// Module ID: 13270
+// Function ID: 13271
 // Name: BuyNitroPurchaseButton
-// Dependencies: [32, 19, 17, 6084, 1924, 21, 4478, 5973, 7149, 1236, 500, 13049, 5941, 10456, 13017, 589, 5953, 13018, 4858, 4928, 13050, 13051, 2]
+// Dependencies: [32, 19, 17, 6092, 1923, 21, 4478, 5981, 7158, 1233, 1234, 13271, 5949, 10677, 13239, 586, 5961, 13240, 4858, 4928, 13272, 13273, 2]
 // Exports: default
 
-// Module 13048 (BuyNitroPurchaseButton)
+// Module 13270 (BuyNitroPurchaseButton)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "updateProduct" /* 6084 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import closure_6 from "updateProduct" /* 6092 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 6152
-// Function ID: 6153
+// Module ID: 6160
+// Function ID: 6161
 // Name: getCreationDefaultFormatter
-// Dependencies: [1387, 1909, 4493, 6120, 1394, 1236, 1396, 2]
+// Dependencies: [1386, 1908, 4493, 6128, 1393, 1233, 1395, 2]
 // Exports: canDisplayPostUnreadMessageCount, getForumPostReadStates, getForumPostReadStatesById, getForumTimestampFormatter, isForumPostPinned
 
-// Module 6152 (getCreationDefaultFormatter)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import set from "set" /* 1396 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+// Module 6160 (getCreationDefaultFormatter)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import set from "set" /* 1395 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "generateOldThreadCutoff" /* 4493 */;
-import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 6120 */;
-import { ChannelFlags } from "set" /* 1394 */;
+import { ForumTimestampFormats } from "FORUM_GUIDELINES_ACTION_SHEET" /* 6128 */;
+import { ChannelFlags } from "set" /* 1393 */;
 
 require = arg1;
 function getCreationDefaultFormatter() {

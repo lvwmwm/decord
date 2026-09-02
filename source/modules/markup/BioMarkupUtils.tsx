@@ -1,17 +1,17 @@
-// Module ID: 9038
-// Function ID: 9039
+// Module ID: 9052
+// Function ID: 9053
 // Name: parseBioReact
-// Dependencies: [4950, 4951, 4469, 1401, 7896, 4468, 4192, 12, 2]
+// Dependencies: [4950, 4951, 4469, 1400, 7905, 4468, 4192, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 9038 (parseBioReact)
-import privDefault from "priv" /* 1401 */;
+// Module 9052 (parseBioReact)
+import privDefault from "priv" /* 1400 */;
 import tDefault from "t" /* 4192 */;
 import MarkupTextDefault from "MarkupText" /* 4469 */;
 import parseLinkDefault from "parseLink" /* 4951 */;
 import MarkupText from "MarkupText" /* 4469 */;
 import importDefaultResult from "combineMarkupRules" /* 4950 */;
-import importAllResult from "reactParserFor" /* 7896 */;
+import importAllResult from "reactParserFor" /* 7905 */;
 import importDefaultResult1 from "get defaultRules" /* 4468 */;
 import importDefaultResult3 from "apply" /* 12 */;
 

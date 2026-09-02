@@ -1,13 +1,13 @@
-// Module ID: 16766
-// Function ID: 16767
+// Module ID: 17002
+// Function ID: 17003
 // Name: ConnectButton
-// Dependencies: [19, 1387, 21, 4478, 712, 11839, 16707, 589, 4731, 6174, 5355, 4859, 16767, 16770, 16771, 12797, 16765, 1236, 4474, 2]
+// Dependencies: [19, 1386, 21, 4478, 709, 12062, 16942, 586, 4731, 6182, 5363, 4859, 17003, 17006, 17007, 13018, 17001, 1233, 4474, 2]
 // Exports: default
 
-// Module 16766 (ConnectButton)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 17002 (ConnectButton)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

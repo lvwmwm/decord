@@ -1,11 +1,11 @@
-// Module ID: 11797
-// Function ID: 11798
+// Module ID: 12020
+// Function ID: 12021
 // Name: PollCreationInputError
-// Dependencies: [19, 17, 21, 4478, 712, 1351, 1297, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1350, 1296, 4474, 2]
 // Exports: default
 
-// Module 11797 (PollCreationInputError)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12020 (PollCreationInputError)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -35,7 +35,7 @@ export default function PollCreationInputError(message) {
   }, items);
   let obj = { style: tmp.container, children: null };
   obj = { width: 16, height: 16, style: tmp.icon };
-  const items1 = [callback(message(1297).WarningCircle, obj), callback(message(4474).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
+  const items1 = [callback(message(1296).WarningCircle, obj), callback(message(4474).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
   obj[1] = items1;
   return callback2(View, obj);
 };

@@ -1,17 +1,17 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15413
+// Function ID: 15414
 // Name: DevToolsLoggingFlagsScreen
-// Dependencies: [17, 706, 21, 4478, 712, 589, 5992, 5993, 708, 2]
+// Dependencies: [17, 703, 21, 4478, 709, 586, 6000, 6001, 705, 2]
 // Exports: default
 
-// Module 15184 (DevToolsLoggingFlagsScreen)
+// Module 15413 (DevToolsLoggingFlagsScreen)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import initialize from "initialize" /* 589 */;
-import ThemesDefault from "Themes" /* 712 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5992 */;
-import TableSwitchRow from "TableSwitchRow" /* 5993 */;
-import closure_3 from "refreshSourceMapCookie" /* 706 */;
+import initialize from "initialize" /* 586 */;
+import ThemesDefault from "Themes" /* 709 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
+import TableSwitchRow from "TableSwitchRow" /* 6001 */;
+import closure_3 from "refreshSourceMapCookie" /* 703 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -39,7 +39,7 @@ export default function DevToolsLoggingFlagsScreen() {
       subLabel: "Logs all gateway events to console, including content. Enable verbose logs to see them.",
       value: isLoggingGatewayEvents,
       onValueChange(logGatewayEvents) {
-        let obj = callback(708);
+        let obj = callback(705);
         obj = { logGatewayEvents };
         return obj.setDeveloperOptionSettings(obj);
       }
@@ -49,7 +49,7 @@ export default function DevToolsLoggingFlagsScreen() {
       subLabel: "Logs all analytics events to the developer console.",
       value: isLoggingAnalyticsEvents,
       onValueChange(logAnalyticsEvents) {
-        let obj = callback(708);
+        let obj = callback(705);
         obj = { logAnalyticsEvents };
         return obj.setDeveloperOptionSettings(obj);
       }
@@ -59,7 +59,7 @@ export default function DevToolsLoggingFlagsScreen() {
       subLabel: "Force trace all client requests with APM.",
       value: isTracingRequests,
       onValueChange(trace) {
-        let obj = callback(708);
+        let obj = callback(705);
         obj = { trace };
         return obj.setDeveloperOptionSettings(obj);
       }

@@ -1,10 +1,10 @@
-// Module ID: 12140
-// Function ID: 12141
+// Module ID: 12364
+// Function ID: 12365
 // Name: useGameServerPerk
-// Dependencies: [19, 4385, 4366, 4365, 4388, 589, 12141, 1236, 2823, 12142, 2]
+// Dependencies: [19, 4385, 4366, 4365, 4388, 586, 12365, 1233, 2822, 12366, 2]
 // Exports: default
 
-// Module 12140 (useGameServerPerk)
+// Module 12364 (useGameServerPerk)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "handleGameServerInstanceCreated" /* 4385 */;
 import { GAME_SERVER_POWERUP_SKU_ID as closure_5 } from "str11" /* 4366 */;

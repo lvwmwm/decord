@@ -1,13 +1,13 @@
-// Module ID: 5970
-// Function ID: 5971
+// Module ID: 5978
+// Function ID: 5979
 // Name: getDefaultProviderDescription
-// Dependencies: [676, 1236, 2]
+// Dependencies: [673, 1233, 2]
 // Exports: default
 
-// Module 5970 (getDefaultProviderDescription)
+// Module 5978 (getDefaultProviderDescription)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const PlatformTypes = ME.PlatformTypes;
 const result = set.fileFinishedImporting("modules/guild_onboarding/getDefaultProviderDescription.tsx");

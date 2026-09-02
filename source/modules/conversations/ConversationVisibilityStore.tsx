@@ -1,11 +1,11 @@
-// Module ID: 7342
-// Function ID: 7343
+// Module ID: 7351
+// Function ID: 7352
 // Name: initialize
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 7342 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7351 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let c0 = true;
 const DeviceSettingsStore = initializeDefault.DeviceSettingsStore;

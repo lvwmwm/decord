@@ -1,11 +1,11 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12459
+// Function ID: 12460
 // Name: ContactSyncNameInput
-// Dependencies: [32, 19, 17, 21, 4478, 712, 5594, 1236, 4474, 1297, 4928, 12232, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 5602, 1233, 4474, 1296, 4928, 12456, 2]
 // Exports: default
 
-// Module 12235 (ContactSyncNameInput)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12459 (ContactSyncNameInput)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

@@ -1,21 +1,21 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 12221
+// Function ID: 12222
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4122, 1391, 1992, 1909, 5357, 4130, 1922, 11535, 676, 7769, 21, 589, 5008, 4110, 4127, 11998, 11999, 11003, 11002, 12000, 12001, 4700, 9059, 4723, 7768, 2009, 7771, 7687, 11168, 10860, 12003, 12013, 12012, 4433, 1236, 12015, 12018, 12019, 12020, 12024, 12025, 12028, 12029, 9755, 12031, 2]
+// Dependencies: [19, 4121, 1390, 1991, 1908, 5365, 4130, 1921, 11758, 673, 7778, 21, 586, 5011, 4109, 4126, 12222, 12223, 11223, 11222, 12224, 12225, 4700, 9073, 4723, 7777, 2008, 7780, 7696, 11389, 11080, 12227, 12237, 12236, 4433, 1233, 12239, 12242, 12243, 12244, 12248, 12249, 12252, 12253, 9777, 12255, 2]
 // Exports: default
 
-// Module 11997 (ChatInputGuardWrapper)
+// Module 12221 (ChatInputGuardWrapper)
 import noopAll from "noop" /* 19 */;
-import closure_3 from "initialize" /* 4122 */;
-import { isThread } from "createChannelRecord" /* 1391 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "recomputeGuild" /* 5357 */;
+import closure_3 from "initialize" /* 4121 */;
+import { isThread } from "createChannelRecord" /* 1390 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "recomputeGuild" /* 5365 */;
 import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import { TextAreaCta } from "TextAreaCta" /* 11535 */;
-import ME from "ME" /* 676 */;
-import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7769 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import { TextAreaCta } from "TextAreaCta" /* 11758 */;
+import ME from "ME" /* 673 */;
+import { PHONE_VERIFICATION_MODAL_KEY as closure_14 } from "PHONE_VERIFICATION_MODAL_KEY" /* 7778 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

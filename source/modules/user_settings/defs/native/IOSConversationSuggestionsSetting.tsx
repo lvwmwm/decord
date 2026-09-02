@@ -1,15 +1,15 @@
-// Module ID: 14455
-// Function ID: 14456
+// Module ID: 14678
+// Function ID: 14679
 // Name: toggle
-// Dependencies: [19, 17, 7884, 700, 705, 4106, 500, 3, 11068, 1236, 2]
+// Dependencies: [19, 17, 7893, 697, 702, 4105, 1234, 3, 11288, 1233, 2]
 
-// Module 14455 (toggle)
-import set from "set" /* 500 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import isIterable from "isIterable" /* 4106 */;
+// Module 14678 (toggle)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import set from "set" /* 1234 */;
+import isIterable from "isIterable" /* 4105 */;
 import closure_3 from "noop" /* 19 */;
-import identity from "identity" /* 700 */;
-import createToggle from "createToggle" /* 11068 */;
+import identity from "identity" /* 697 */;
+import createToggle from "createToggle" /* 11288 */;
 
 require = arg1;
 let closure_4 = identity.createWithEqualityFn(() => ({ isEnabled: true }));
@@ -34,7 +34,7 @@ identity = {
     const result = IntentsHandler.setConversationSuggestionsEnabled(arg0);
     result.then((arg0) => {
       const callback = arg0;
-      callback(705).batchUpdates(() => closure_1_4.setState({ isEnabled: closure_0 }));
+      callback(702).batchUpdates(() => closure_1_4.setState({ isEnabled: closure_0 }));
     }).catch((arg0) => {
       new callback2(3)("ConversationSuggestions").error("Error suggesting conversations", arg0);
     });

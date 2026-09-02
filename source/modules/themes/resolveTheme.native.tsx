@@ -1,16 +1,16 @@
-// Module ID: 1345
-// Function ID: 1346
+// Module ID: 1344
+// Function ID: 1345
 // Name: resolveTheme
-// Dependencies: [1346, 1303, 1304, 1340, 1305, 1367, 1347, 1306, 2]
+// Dependencies: [1345, 1302, 1303, 1339, 1304, 1366, 1346, 1305, 2]
 // Exports: default
 
-// Module 1345 (resolveTheme)
-import getToken from "getToken" /* 1367 */;
-import closure_2 from "reset" /* 1346 */;
-import closure_3 from "initialize" /* 1303 */;
-import closure_4 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import closure_5 from "handleConnectionClosedOrResumed" /* 1340 */;
-import SystemThemeState from "SystemThemeState" /* 1305 */;
+// Module 1344 (resolveTheme)
+import getToken from "getToken" /* 1366 */;
+import closure_2 from "reset" /* 1345 */;
+import closure_3 from "initialize" /* 1302 */;
+import closure_4 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
+import closure_5 from "handleConnectionClosedOrResumed" /* 1339 */;
+import SystemThemeState from "SystemThemeState" /* 1304 */;
 
 require = arg1;
 ({ PROTO_THEME_MAP_MOBILE_REFRESH: closure_6, SystemTheme: error, SystemThemeState: closure_8 } = SystemThemeState);
@@ -23,7 +23,7 @@ export default function resolveTheme(arg0, arg1) {
   } else {
     if (!obj6.isAuthenticated()) {
       if (arg0 !== constants.NO_PREFERENCE) {
-        let tmp17Result = tmp17(1347);
+        let tmp17Result = tmp17(1346);
         return tmp17Result.resolveThemeWithCustomSettings(arg1[arg0], previewTheme.getCustomTheme());
       }
     }
@@ -47,7 +47,7 @@ export default function resolveTheme(arg0, arg1) {
       }
     }
     if (null != theme) {
-      tmp17Result = tmp17(1347);
+      tmp17Result = tmp17(1346);
       return tmp17Result.resolveThemeWithCustomSettings(theme, customUserThemeSettings);
     } else {
       let theme1;
@@ -55,17 +55,17 @@ export default function resolveTheme(arg0, arg1) {
         theme1 = appearance.theme;
       }
       if (theme1 == null) {
-        theme1 = tmp17(1306).Theme.UNSET;
+        theme1 = tmp17(1305).Theme.UNSET;
       }
-      if (theme1 === tmp17(1306).Theme.UNSET) {
+      if (theme1 === tmp17(1305).Theme.UNSET) {
         if (arg0 !== constants.NO_PREFERENCE) {
-          let themeWithCustomSettings = tmp17(1347).resolveThemeWithCustomSettings(arg1[arg0], customUserThemeSettings);
-          const tmp17Result1 = tmp17(1347);
+          let themeWithCustomSettings = tmp17(1346).resolveThemeWithCustomSettings(arg1[arg0], customUserThemeSettings);
+          const tmp17Result1 = tmp17(1346);
         }
         return themeWithCustomSettings;
       }
-      themeWithCustomSettings = tmp17(1347).resolveThemeWithCustomSettings(table[theme1], customUserThemeSettings);
-      const tmp17Result2 = tmp17(1347);
+      themeWithCustomSettings = tmp17(1346).resolveThemeWithCustomSettings(table[theme1], customUserThemeSettings);
+      const tmp17Result2 = tmp17(1346);
     }
     obj6 = getToken;
   }

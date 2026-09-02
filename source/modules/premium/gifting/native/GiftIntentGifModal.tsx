@@ -1,17 +1,17 @@
-// Module ID: 11389
-// Function ID: 11390
+// Module ID: 11612
+// Function ID: 11613
 // Name: _sendGiftIntentGif
-// Dependencies: [32, 5, 19, 17, 1387, 676, 4471, 21, 4478, 712, 7201, 7427, 698, 5973, 5594, 589, 7808, 1236, 11390, 10356, 4928, 4723, 5941, 5495, 6008, 2]
+// Dependencies: [32, 5, 19, 17, 1386, 673, 4471, 21, 4478, 709, 7210, 7436, 695, 5981, 5602, 586, 7817, 1233, 11613, 10378, 4928, 4723, 5949, 5503, 6016, 2]
 // Exports: default
 
-// Module 11389 (_sendGiftIntentGif)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11612 (_sendGiftIntentGif)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -60,7 +60,7 @@ function _sendGiftIntentGif() {
               c4 = undefined;
               url = 1;
               c4 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp5) {

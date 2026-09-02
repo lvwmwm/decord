@@ -1,9 +1,9 @@
-// Module ID: 6562
-// Function ID: 6563
+// Module ID: 6571
+// Function ID: 6572
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6562 (metadata)
+// Module 6571 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameCartridgeSpotIllustration-2x.png.js");

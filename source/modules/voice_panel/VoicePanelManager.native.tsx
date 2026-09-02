@@ -1,10 +1,10 @@
-// Module ID: 17384
-// Function ID: 17385
+// Module ID: 17620
+// Function ID: 17621
 // Name: prototype
-// Dependencies: [4554, 4728, 5486, 2]
+// Dependencies: [4554, 4728, 5494, 2]
 
-// Module 17384 (prototype)
-import initializeDefault from "initialize" /* 5486 */;
+// Module 17620 (prototype)
+import initializeDefault from "initialize" /* 5494 */;
 import closure_0 from "createRTCConnection" /* 4554 */;
 import closure_1 from "withEqualityFn" /* 4728 */;
 

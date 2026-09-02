@@ -1,12 +1,12 @@
-// Module ID: 16866
-// Function ID: 16867
+// Module ID: 17102
+// Function ID: 17103
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 676, 4945, 10914, 698, 2]
+// Dependencies: [19, 673, 4945, 11134, 695, 2]
 // Exports: default
 
-// Module 16866 (useCaptchaModalEffects)
+// Module 17102 (useCaptchaModalEffects)
 import closure_3 from "noop" /* 19 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/captcha/useCaptchaModalEffects.tsx");

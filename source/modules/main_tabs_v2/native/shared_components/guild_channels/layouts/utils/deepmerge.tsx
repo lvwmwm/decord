@@ -1,9 +1,9 @@
-// Module ID: 10204
-// Function ID: 10205
+// Module ID: 10226
+// Function ID: 10227
 // Name: merge
 // Dependencies: [2]
 
-// Module 10204 (merge)
+// Module 10226 (merge)
 import set2 from "set" /* 2 */;
 
 function merge() {

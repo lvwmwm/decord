@@ -1,17 +1,17 @@
-// Module ID: 17029
-// Function ID: 17030
+// Module ID: 17265
+// Function ID: 17266
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8070, 676, 21, 4478, 712, 1628, 589, 14247, 17014, 8079, 8110, 5082, 8074, 8076, 4474, 1236, 17023, 4928, 17011, 2]
+// Dependencies: [5, 32, 19, 17, 8078, 673, 21, 4478, 709, 1627, 586, 14470, 17250, 8087, 8118, 5090, 8082, 8084, 4474, 1233, 17259, 4928, 17247, 2]
 // Exports: default
 
-// Module 17029 (RedesignAddAvatarModal)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 17265 (RedesignAddAvatarModal)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleFormOpen" /* 8070 */;
-import { UPLOAD_MEDIUM_SIZE } from "ME" /* 676 */;
+import closure_8 from "handleFormOpen" /* 8078 */;
+import { UPLOAD_MEDIUM_SIZE } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -79,7 +79,7 @@ export default function RedesignAddAvatarModal(route) {
               dependencyMap = 1;
               v0 = 1;
               let obj2 = { value: null, done: false };
-              obj2[0] = closure_1_0(5082).openImagePicker(obj1);
+              obj2[0] = closure_1_0(5090).openImagePicker(obj1);
               return obj2;
             }
           } else if (arg0 === 1) {
@@ -95,18 +95,18 @@ export default function RedesignAddAvatarModal(route) {
             if (null == base64) {
               pendingImage = undefined;
               if (null != closure_1_0) {
-                obj = closure_1_0(14247);
+                obj = closure_1_0(14470);
                 const obj4 = { imageUri: null, description: null };
                 obj4[0] = base64;
-                obj2 = closure_1_0(8079);
+                obj2 = closure_1_0(8087);
                 obj4[1] = obj2.generateAvatarDescription();
                 pendingImage = obj.createPendingImage(obj4);
               }
-              obj3 = closure_1_0(8074);
+              obj3 = closure_1_0(8082);
               let obj5 = { avatar: null };
               obj5[0] = pendingImage;
               obj3.setPendingChanges(obj5);
-              obj5 = closure_1_0(8076);
+              obj5 = closure_1_0(8084);
               let str = "set";
               if (null == pendingImage) {
                 str = "remove";

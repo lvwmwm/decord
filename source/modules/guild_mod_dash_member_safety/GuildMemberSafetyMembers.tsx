@@ -1,18 +1,18 @@
-// Module ID: 7241
-// Function ID: 7242
+// Module ID: 7250
+// Function ID: 7251
 // Name: getGuildMemberSecondaryIndexes
-// Dependencies: [1922, 4117, 7242, 7243, 7245, 7246, 7252, 4643, 2]
+// Dependencies: [1921, 4116, 7251, 7252, 7254, 7255, 7261, 4643, 2]
 // Exports: hasUnusualDmActivity
 
-// Module 7241 (getGuildMemberSecondaryIndexes)
-import version from "version" /* 4117 */;
+// Module 7250 (getGuildMemberSecondaryIndexes)
+import version from "version" /* 4116 */;
 import isEqualDefault from "isEqual" /* 4643 */;
-import result2 from "result" /* 7242 */;
-import getJoinedAtDateFormatter from "getJoinedAtDateFormatter" /* 7243 */;
-import getSortValueForMember from "getSortValueForMember" /* 7245 */;
-import hasMemberSupplemental from "hasMemberSupplemental" /* 7246 */;
-import isSpamSupported from "isSpamSupported" /* 7252 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import result2 from "result" /* 7251 */;
+import getJoinedAtDateFormatter from "getJoinedAtDateFormatter" /* 7252 */;
+import getSortValueForMember from "getSortValueForMember" /* 7254 */;
+import hasMemberSupplemental from "hasMemberSupplemental" /* 7255 */;
+import isSpamSupported from "isSpamSupported" /* 7261 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 function getGuildMemberSecondaryIndexes(isCurrentGuildMemberByTimestamp) {
@@ -122,7 +122,7 @@ prototype["_computeMemberSupplementals"] = function _computeMemberSupplementals(
     const _Date = Date;
     const date = new Date(unusualDMActivityUntil);
     const time = date.getTime();
-    tmp9 = time >= closure_4 - tmp(7242).UNUSUAL_DM_COMPARISON_DELTA;
+    tmp9 = time >= closure_4 - tmp(7251).UNUSUAL_DM_COMPARISON_DELTA;
   }
   obj[6] = tmp9;
   obj[7] = isSpamSupported.isSpammer(userId);

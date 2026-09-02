@@ -1,13 +1,13 @@
-// Module ID: 8933
-// Function ID: 8934
+// Module ID: 8947
+// Function ID: 8948
 // Name: getBotLabel
-// Dependencies: [19, 17, 4507, 21, 4478, 712, 1236, 8934, 4474, 2]
+// Dependencies: [19, 17, 4507, 21, 4478, 709, 1233, 8948, 4474, 2]
 
-// Module 8933 (getBotLabel)
+// Module 8947 (getBotLabel)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 8934 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import CheckmarkSmallBoldIcon from "CheckmarkSmallBoldIcon" /* 8948 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { BotTagTypes } from "ApplicationTypes" /* 4507 */;
 import jsxProd from "jsxProd" /* 21 */;

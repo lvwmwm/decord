@@ -1,7 +1,7 @@
 // Module ID: 4602
 // Function ID: 4603
 // Name: object
-// Dependencies: [606]
+// Dependencies: [603]
 
 // Module 4602 (object)
 let object = require;
@@ -10,7 +10,7 @@ object = function object() {
 };
 
 export default (arg0) => {
-  if (object(606)(arg0)) {
+  if (object(603)(arg0)) {
     if (create) {
       return create(arg0);
     } else {

@@ -1,9 +1,9 @@
-// Module ID: 9584
-// Function ID: 9585
+// Module ID: 9597
+// Function ID: 9598
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [106, 65, 114, 2]
 
-// Module 9584 (__INTERNAL_VIEW_CONFIG)
+// Module 9597 (__INTERNAL_VIEW_CONFIG)
 import set from "set" /* 2 */;
 import renderElement from "renderElement" /* 114 */;
 import weakSet from "weakSet" /* 106 */;

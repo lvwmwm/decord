@@ -1,14 +1,14 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17339
+// Function ID: 17340
 // Name: ModerationIcon
-// Dependencies: [19, 21, 712, 4196, 17104, 2]
+// Dependencies: [19, 21, 709, 4196, 17340, 2]
 // Exports: ModerationIcon
 
-// Module 17103 (ModerationIcon)
+// Module 17339 (ModerationIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 17104 */;
+import registerAsset from "registerAsset" /* 17340 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

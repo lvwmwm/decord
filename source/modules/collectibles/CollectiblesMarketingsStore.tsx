@@ -1,11 +1,11 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7339
+// Function ID: 7340
 // Name: getMarketingBySurface
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 7330 (getMarketingBySurface)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7339 (getMarketingBySurface)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 let closure_1 = {};

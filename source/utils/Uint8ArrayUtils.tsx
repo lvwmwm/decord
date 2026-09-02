@@ -1,10 +1,10 @@
-// Module ID: 1372
-// Function ID: 1373
+// Module ID: 1371
+// Function ID: 1372
 // Name: hasBit
 // Dependencies: [2]
 // Exports: addBit, hasBit, isSerializedUint8Array, isUint8Array, removeBit
 
-// Module 1372 (hasBit)
+// Module 1371 (hasBit)
 import set from "set" /* 2 */;
 
 let result = set.fileFinishedImporting("utils/Uint8ArrayUtils.tsx");

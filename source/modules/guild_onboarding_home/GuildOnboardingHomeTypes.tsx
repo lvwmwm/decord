@@ -1,13 +1,13 @@
-// Module ID: 11852
-// Function ID: 11853
+// Module ID: 12075
+// Function ID: 12076
 // Name: newMemberActionFromServer
-// Dependencies: [1387, 676, 1471, 4126, 2]
+// Dependencies: [1386, 673, 1470, 4125, 2]
 // Exports: actionsFromServer, isChannelValidForNewMemberAction, isChannelValidForResourceChannel, isSettingsValid, isWelcomeMessageEmpty, settingsFromServer, settingsToServer
 
-// Module 11852 (newMemberActionFromServer)
-import applyOverwritesAll from "applyOverwrites" /* 4126 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import ME from "ME" /* 676 */;
+// Module 12075 (newMemberActionFromServer)
+import applyOverwritesAll from "applyOverwrites" /* 4125 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function newMemberActionFromServer(channelId) {
@@ -118,9 +118,9 @@ export const settingsFromServer = function settingsFromServer(body) {
     obj = { authorIds: null, message: null };
     ({ author_ids: obj2[0], message: obj2[1] } = welcome_message);
     obj[0] = obj;
-    const found = new_member_actions.filter((channel_id) => callback(1471).isNotNullish(store.getChannel(channel_id.channel_id)));
+    const found = new_member_actions.filter((channel_id) => callback(1470).isNotNullish(store.getChannel(channel_id.channel_id)));
     obj[1] = found.map(newMemberActionFromServer);
-    const found1 = resource_channels.filter((channel_id) => callback(1471).isNotNullish(store.getChannel(channel_id.channel_id)));
+    const found1 = resource_channels.filter((channel_id) => callback(1470).isNotNullish(store.getChannel(channel_id.channel_id)));
     obj[2] = found1.map(resourceChannelFromServer);
     obj[3] = body.enabled;
     return obj;
@@ -154,7 +154,7 @@ export const settingsToServer = function settingsToServer(arg0, enabled) {
     if (newMemberActions == null) {
       newMemberActions = [];
     }
-    const found = newMemberActions.filter((channelId) => callback(1471).isNotNullish(store.getChannel(channelId.channelId)));
+    const found = newMemberActions.filter((channelId) => callback(1470).isNotNullish(store.getChannel(channelId.channelId)));
     obj[2] = found.map((channelId) => {
       let obj = { channel_id: channelId.channelId, action_type: channelId.actionType, title: channelId.title, description: channelId.description, emoji: null, icon: null };
       const emoji = channelId.emoji;
@@ -183,7 +183,7 @@ export const settingsToServer = function settingsToServer(arg0, enabled) {
     if (resourceChannels == null) {
       resourceChannels = [];
     }
-    const found1 = resourceChannels.filter((channelId) => callback(1471).isNotNullish(store.getChannel(channelId.channelId)));
+    const found1 = resourceChannels.filter((channelId) => callback(1470).isNotNullish(store.getChannel(channelId.channelId)));
     obj[3] = found1.map((channelId) => {
       let obj = { channel_id: channelId.channelId, title: channelId.title, description: channelId.description, emoji: null, icon: null };
       const emoji = channelId.emoji;

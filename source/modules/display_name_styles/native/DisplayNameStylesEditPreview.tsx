@@ -1,17 +1,17 @@
-// Module ID: 14949
-// Function ID: 14950
+// Module ID: 15178
+// Function ID: 15179
 // Name: ChatPreview
-// Dependencies: [19, 17, 21, 4478, 712, 8076, 1947, 8527, 1236, 2759, 10858, 4163, 1297, 8923, 8924, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 8084, 1946, 8540, 1233, 2758, 11078, 4163, 1296, 8937, 8938, 4474, 2]
 // Exports: default
 
-// Module 14949 (ChatPreview)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
-import messagesProxyDefault from "messagesProxy" /* 2759 */;
+// Module 15178 (ChatPreview)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
+import messagesProxyDefault from "messagesProxy" /* 2758 */;
 import Text from "Text" /* 4474 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8923 */;
-import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 8924 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8937 */;
+import DisplayNameStyleColorPreset from "DisplayNameStyleColorPreset" /* 8938 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

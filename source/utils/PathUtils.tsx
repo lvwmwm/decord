@@ -1,7 +1,7 @@
 // Module ID: 4538
 // Function ID: 4539
 // Name: pathJoin
-// Dependencies: [500, 2]
+// Dependencies: [1234, 2]
 // Exports: pathBasename, pathFilenameWithoutExt, pathJoin
 
 // Module 4538 (pathJoin)

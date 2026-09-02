@@ -1,15 +1,15 @@
-// Module ID: 7584
-// Function ID: 7585
+// Module ID: 7594
+// Function ID: 7595
 // Name: _fileSize
-// Dependencies: [5, 676, 4471, 3, 652, 12, 5118, 5123, 5080, 5081, 2]
+// Dependencies: [5, 673, 4471, 3, 649, 12, 5126, 5131, 5088, 5089, 2]
 
-// Module 7584 (_fileSize)
+// Module 7594 (_fileSize)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { AbortCodes } from "ME" /* 676 */;
+import { AbortCodes } from "ME" /* 673 */;
 import { FileUploadErrorTypes } from "MESSAGE_GROUP_SPACING" /* 4471 */;
-import { EventEmitter } from "EventEmitter" /* 652 */;
+import { EventEmitter } from "EventEmitter" /* 649 */;
 
 const require = arg1;
 let closure_6 = new timestampDefault("UploaderBase.tsx");

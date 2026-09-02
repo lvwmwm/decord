@@ -1,11 +1,11 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 11867
+// Function ID: 11868
 // Name: getLastFetchTimeMs
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 11644 (getLastFetchTimeMs)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 11867 (getLastFetchTimeMs)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let closure_0 = [];
 let c1 = null;

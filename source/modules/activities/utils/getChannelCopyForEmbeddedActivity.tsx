@@ -1,12 +1,12 @@
-// Module ID: 9255
-// Function ID: 9256
+// Module ID: 9268
+// Function ID: 9269
 // Name: getChannelCopyForEmbeddedActivity
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: default
 
-// Module 9255 (getChannelCopyForEmbeddedActivity)
+// Module 9268 (getChannelCopyForEmbeddedActivity)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/activities/utils/getChannelCopyForEmbeddedActivity.tsx");
 

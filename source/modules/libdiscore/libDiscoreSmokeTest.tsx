@@ -1,14 +1,14 @@
-// Module ID: 17504
-// Function ID: 17505
+// Module ID: 17740
+// Function ID: 17741
 // Name: libDiscoreSmokeTest
-// Dependencies: [5, 676, 3, 1920, 1916, 1913, 698, 2]
+// Dependencies: [5, 673, 3, 1919, 1915, 1912, 695, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 17504 (libDiscoreSmokeTest)
+// Module 17740 (libDiscoreSmokeTest)
 import timestampDefault from "timestamp" /* 3 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;
 function libDiscoreSmokeTest() {
@@ -111,7 +111,7 @@ function _libDiscoreSmokeTest() {
 }
 function trackLibdiscoreSuccess() {
   const items = [];
-  const prop = items(1913).ALL_LIBDISCORE_EXPERIMENTS;
+  const prop = items(1912).ALL_LIBDISCORE_EXPERIMENTS;
   const item = prop.forEach((getEnabledFeatureName) => {
     const enabledFeatureName = getEnabledFeatureName.getEnabledFeatureName();
     if (null != enabledFeatureName) {

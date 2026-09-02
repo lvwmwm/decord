@@ -1,14 +1,14 @@
-// Module ID: 11794
-// Function ID: 11795
+// Module ID: 12017
+// Function ID: 12018
 // Name: ImageInputAnswerActionSheet
-// Dependencies: [19, 17, 7573, 21, 4478, 712, 11793, 4340, 4445, 5989, 4474, 1297, 5991, 1236, 11795, 2]
+// Dependencies: [19, 17, 7583, 21, 4478, 709, 12016, 4340, 4445, 5997, 4474, 1296, 5999, 1233, 12018, 2]
 // Exports: default
 
-// Module 11794 (ImageInputAnswerActionSheet)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12017 (ImageInputAnswerActionSheet)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY as closure_5 } from "POLL_ATTACHMENT_FOLDER" /* 7573 */;
+import { POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY as closure_5 } from "POLL_ATTACHMENT_FOLDER" /* 7583 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

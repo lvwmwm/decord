@@ -1,11 +1,11 @@
 // Module ID: 4786
 // Function ID: 4787
 // Name: defineProperty
-// Dependencies: [1420, 1421, 4787]
+// Dependencies: [1419, 1420, 4787]
 
 // Module 4786 (defineProperty)
-import hasPropertyDescriptors from "hasPropertyDescriptors" /* 1420 */;
-import defineDataProperty from "defineDataProperty" /* 1421 */;
+import hasPropertyDescriptors from "hasPropertyDescriptors" /* 1419 */;
+import defineDataProperty from "defineDataProperty" /* 1420 */;
 import keys from "keys" /* 4787 */;
 
 let tmp = typeof Symbol === "function";

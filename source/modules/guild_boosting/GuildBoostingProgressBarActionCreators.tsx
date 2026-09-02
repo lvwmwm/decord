@@ -1,12 +1,12 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 16043
+// Function ID: 16044
 // Name: updateGuildPremiumSubscriptionCount
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 // Exports: resetGuildPremiumSubscriptionCount, updateGuildPremiumSubscriptionCount
 
-// Module 15812 (updateGuildPremiumSubscriptionCount)
+// Module 16043 (updateGuildPremiumSubscriptionCount)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("modules/guild_boosting/GuildBoostingProgressBarActionCreators.tsx");
 

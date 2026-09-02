@@ -1,20 +1,20 @@
-// Module ID: 11130
-// Function ID: 11131
+// Module ID: 11351
+// Function ID: 11352
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [32, 19, 4519, 4527, 676, 7481, 7854, 1236, 11131, 6078, 6073, 3371, 8221, 4466, 8495, 501, 589, 1471, 5959, 2]
+// Dependencies: [32, 19, 4519, 4527, 673, 7491, 7863, 1233, 11352, 6086, 6081, 3370, 8230, 4466, 8508, 1235, 586, 1470, 5967, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedData
 
-// Module 11130 (createSocialLayerStorefrontProductDetailsEmbed)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getPrice from "getPrice" /* 6073 */;
-import useSKUPrice from "useSKUPrice" /* 6078 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7854 */;
+// Module 11351 (createSocialLayerStorefrontProductDetailsEmbed)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getPrice from "getPrice" /* 6081 */;
+import useSKUPrice from "useSKUPrice" /* 6086 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 7863 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "addApplication" /* 4519 */;
 import closure_6 from "addSku" /* 4527 */;
-import { PaymentGateways } from "ME" /* 676 */;
-import { InviteTypes } from "InviteSendStates" /* 7481 */;
+import { PaymentGateways } from "ME" /* 673 */;
+import { InviteTypes } from "InviteSendStates" /* 7491 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
@@ -50,7 +50,7 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
       return null;
     } else {
       if (null != application) {
-        if (tmp(11131)(application)) {
+        if (tmp(11352)(application)) {
           if ("guild" !== guildOrApplication.type) {
             const result1 = useSKUPrice.isSlayerSkuAvailableOnThisPlatform(value);
             const obj4 = useSKUPrice;
@@ -68,17 +68,17 @@ export const createSocialLayerStorefrontProductDetailsEmbed = function createSoc
             obj.headerColor = colors.headerColor;
             obj.titleText = value.name;
             obj.titleColor = colors.titleColor;
-            const intl2 = tmp12(1236).intl;
+            const intl2 = tmp12(1233).intl;
             obj.subtitle = intl2.string(getSystemLocale.t.V91tvy);
             obj.subtitleColor = colors.subtitleColor;
             obj.thumbnailUrl = str;
             obj.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;
-            const intl3 = tmp12(1236).intl;
+            const intl3 = tmp12(1233).intl;
             const string = intl3.string;
             if (result1) {
-              let stringResult = string(tmp12(1236).t.boqtTA);
+              let stringResult = string(tmp12(1233).t.boqtTA);
             } else {
-              stringResult = string(tmp(3371).BKf0MM);
+              stringResult = string(tmp(3370).BKf0MM);
             }
             obj.acceptLabelText = stringResult;
             let prop;

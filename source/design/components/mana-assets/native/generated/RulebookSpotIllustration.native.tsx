@@ -1,14 +1,14 @@
-// Module ID: 6945
-// Function ID: 6946
+// Module ID: 6954
+// Function ID: 6955
 // Name: RulebookSpotIllustration
-// Dependencies: [21, 5493, 6946, 2]
+// Dependencies: [21, 5501, 6955, 2]
 // Exports: RulebookSpotIllustration
 
-// Module 6945 (RulebookSpotIllustration)
+// Module 6954 (RulebookSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6946 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6955 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/RulebookSpotIllustration.native.tsx");

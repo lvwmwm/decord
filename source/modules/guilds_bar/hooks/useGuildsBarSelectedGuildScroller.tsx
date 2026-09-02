@@ -1,10 +1,10 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 16181
+// Function ID: 16182
 // Name: useGuildsBarSelectedGuildScroller
 // Dependencies: [19, 4299, 2]
 // Exports: default
 
-// Module 15950 (useGuildsBarSelectedGuildScroller)
+// Module 16181 (useGuildsBarSelectedGuildScroller)
 import closure_0 from "noop" /* 19 */;
 import closure_1 from "handleConnectionOpen" /* 4299 */;
 

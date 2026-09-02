@@ -1,15 +1,15 @@
-// Module ID: 5484
-// Function ID: 5485
+// Module ID: 5492
+// Function ID: 5493
 // Name: handleConnectionOpen
-// Dependencies: [5, 5485, 1387, 676, 687, 530, 5486, 2]
+// Dependencies: [5, 5493, 1386, 673, 684, 527, 5494, 2]
 
-// Module 5484 (handleConnectionOpen)
-import setDefault from "set" /* 687 */;
-import initializeDefault from "initialize" /* 5486 */;
+// Module 5492 (handleConnectionOpen)
+import setDefault from "set" /* 684 */;
+import initializeDefault from "initialize" /* 5494 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "incrementVersion" /* 5485 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import ME from "ME" /* 676 */;
+import closure_3 from "incrementVersion" /* 5493 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function handleConnectionOpen() {

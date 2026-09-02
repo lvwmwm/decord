@@ -1,18 +1,18 @@
-// Module ID: 16101
-// Function ID: 16102
+// Module ID: 16332
+// Function ID: 16333
 // Name: ICYMILoadingItem
-// Dependencies: [19, 17, 21, 16040, 712, 12177, 4217, 16079, 2]
+// Dependencies: [19, 17, 21, 16271, 709, 12401, 4217, 16310, 2]
 // Exports: ICYMILoading
 
-// Module 16101 (ICYMILoadingItem)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16332 (ICYMILoadingItem)
+import ThemesDefault from "Themes" /* 709 */;
 import _modDef4217 from "module_4217" /* 4217 */;
-import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12177 */;
-import Separator from "Separator" /* 16079 */;
+import useChatPlaceholderAnimatedStylesDefault from "useChatPlaceholderAnimatedStyles" /* 12401 */;
+import Separator from "Separator" /* 16310 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16040 */;
+import createICYMIStyles from "createICYMIStyles" /* 16271 */;
 
 require = arg1;
 function ICYMILoadingItem() {

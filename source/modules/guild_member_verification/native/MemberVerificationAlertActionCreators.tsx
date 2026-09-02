@@ -1,12 +1,12 @@
-// Module ID: 7653
-// Function ID: 7654
+// Module ID: 7662
+// Function ID: 7663
 // Name: openMemberVerificationSuccessAlert
-// Dependencies: [19, 21, 1891, 4858, 7654, 2009, 7656, 7660, 4928, 1236, 7663, 7666, 7668, 2]
+// Dependencies: [19, 21, 1890, 4858, 7663, 2008, 7665, 7669, 4928, 1233, 7672, 7675, 7677, 2]
 // Exports: closeMemberVerificationAlert, openMemberVerificationCancelPendingAlert, openMemberVerificationIncompleteAlert, openMemberVerificationPendingAlert, openMemberVerificationRejectedAlert, openMemberVerificationSuccessAlert, openMemberVerificationUpdateAlert
 
-// Module 7653 (openMemberVerificationSuccessAlert)
+// Module 7662 (openMemberVerificationSuccessAlert)
 import noopAll from "noop" /* 19 */;
-import dismissGlobalKeyboardAll from "dismissGlobalKeyboard" /* 1891 */;
+import dismissGlobalKeyboardAll from "dismissGlobalKeyboard" /* 1890 */;
 import _modDef4858 from "module_4858" /* 4858 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -101,8 +101,8 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
   };
   if (canWithdraw.canWithdraw) {
     let obj = { text: null, variant: "destructive", onPress: null };
-    const intl2 = tmp2(1236).intl;
-    obj[0] = intl2.string(tmp2(1236).t.g9tK0o);
+    const intl2 = tmp2(1233).intl;
+    obj[0] = intl2.string(tmp2(1233).t.g9tK0o);
     obj[2] = function onPress() {
       if (typeof fn !== "function") {
         HermesBuiltin.throwTypeError();
@@ -137,13 +137,13 @@ export const openMemberVerificationRejectedAlert = function openMemberVerificati
     };
   } else {
     obj = { text: null, onPress: null };
-    const intl = tmp2(1236).intl;
-    obj[0] = intl.string(tmp2(1236).t.BddRzS);
+    const intl = tmp2(1233).intl;
+    obj[0] = intl.string(tmp2(1233).t.BddRzS);
     obj[1] = fn;
   }
   dependencyMap = jsx(onClose(4928).Button, obj);
-  let result = fn(1891).dismissGlobalKeyboard();
-  let obj3 = fn(1891);
+  let result = fn(1890).dismissGlobalKeyboard();
+  let obj3 = fn(1890);
   const tmp = jsx;
   obj = {
     importer() {

@@ -1,12 +1,12 @@
-// Module ID: 7171
-// Function ID: 7172
+// Module ID: 7180
+// Function ID: 7181
 // Name: createFromServer
-// Dependencies: [32, 1936, 6083, 6081, 2]
+// Dependencies: [32, 1935, 6091, 6089, 2]
 
-// Module 7171 (createFromServer)
-import toJSDefault from "toJS" /* 1936 */;
-import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6081 */;
-import addDefault from "add" /* 6083 */;
+// Module 7180 (createFromServer)
+import toJSDefault from "toJS" /* 1935 */;
+import formatSingleCurrencyPrice from "formatSingleCurrencyPrice" /* 6089 */;
+import addDefault from "add" /* 6091 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 
 require = arg1;
@@ -21,29 +21,42 @@ class AvailablePlanRecord extends tmp2 {
       addOnPlans = [];
     }
     tmp.addOnPlans = addOnPlans;
+    discount = global.discount;
+    if (discount == null) {
+      discount = null;
+    }
+    tmp.discount = discount;
     return tmp;
   }
 }
 const prototype = AvailablePlanRecord.prototype;
-AvailablePlanRecord["createFromServer"] = function createFromServer(arg0) {
-  ({ id, quantity, price, total, add_on_plans } = arg0);
+AvailablePlanRecord["createFromServer"] = function createFromServer(discount) {
+  ({ id, quantity, price, total, add_on_plans } = discount);
   if (add_on_plans == null) {
     add_on_plans = [];
+  }
+  discount = discount.discount;
+  if (discount == null) {
+    discount = null;
   }
   if (typeof AvailablePlanRecord !== "function") {
     HermesBuiltin.throwTypeError();
   }
-  const tmp2 = new AvailablePlanRecord("Trying to call a non-function", AvailablePlanRecord, new.target, id, quantity, price, total);
+  const tmp3 = new AvailablePlanRecord("Trying to call a non-function", AvailablePlanRecord, new.target, id, quantity, price, total, add_on_plans);
   // ThrowIfThisInitialized (0x7c)
-  tmp2.id = id;
-  tmp2.quantity = quantity;
-  tmp2.price = price;
-  tmp2.total = total;
+  tmp3.id = id;
+  tmp3.quantity = quantity;
+  tmp3.price = price;
+  tmp3.total = total;
   if (add_on_plans == null) {
     add_on_plans = [];
   }
-  tmp2.addOnPlans = add_on_plans;
-  return tmp2;
+  tmp3.addOnPlans = add_on_plans;
+  if (discount == null) {
+    discount = null;
+  }
+  tmp3.discount = discount;
+  return tmp3;
 };
 prototype["getPlanQuantities"] = function getPlanQuantities() {
   const items = [, ];

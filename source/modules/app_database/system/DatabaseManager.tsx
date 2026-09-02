@@ -1,15 +1,15 @@
-// Module ID: 1973
-// Function ID: 1974
+// Module ID: 1972
+// Function ID: 1973
 // Name: databaseName
-// Dependencies: [5, 1218, 3, 589, 709, 1974, 1957, 2]
+// Dependencies: [5, 1215, 3, 586, 706, 1973, 1956, 2]
 
-// Module 1973 (databaseName)
+// Module 1972 (databaseName)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 589 */;
-import getUserIdAll from "getUserId" /* 1974 */;
+import initializeDefault from "initialize" /* 586 */;
+import getUserIdAll from "getUserId" /* 1973 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
-import importDefaultResult from "dispatcher" /* 709 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
+import importDefaultResult from "dispatcher" /* 706 */;
 
 let closure_0 = arg1;
 function databaseName(arg0) {
@@ -257,7 +257,7 @@ prototype["handleConnectionOpen"] = function handleConnectionOpen() {
   }
   let tmp3 = null == value;
   if (tmp3) {
-    tmp3 = stateResult !== callback(1957).DatabaseState.Open;
+    tmp3 = stateResult !== callback(1956).DatabaseState.Open;
   }
   if (tmp3) {
     self.remove(id);

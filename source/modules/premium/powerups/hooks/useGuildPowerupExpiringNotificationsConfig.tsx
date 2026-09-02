@@ -1,14 +1,14 @@
-// Module ID: 12121
-// Function ID: 12122
+// Module ID: 12345
+// Function ID: 12346
 // Name: useGuildPowerupExpiringNotificationsConfig
-// Dependencies: [12122, 12123, 1236, 2823, 4368, 2401, 2]
+// Dependencies: [12346, 12347, 1233, 2822, 4368, 2400, 2]
 // Exports: default
 
-// Module 12121 (useGuildPowerupExpiringNotificationsConfig)
+// Module 12345 (useGuildPowerupExpiringNotificationsConfig)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12122 */;
-import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12123 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import useGetExpiringGuildPowerupsDefault from "useGetExpiringGuildPowerups" /* 12346 */;
+import useGameServerGetExpiringEntitlementsDefault from "useGameServerGetExpiringEntitlements" /* 12347 */;
 
 const result = set.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupExpiringNotificationsConfig.tsx");
 
@@ -19,7 +19,7 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     let stringResult;
     if (arr2.length > 0) {
       const intl = getSystemLocale.intl;
-      stringResult = intl.string(tmp(2823)["B3OfL/"]);
+      stringResult = intl.string(tmp(2822)["B3OfL/"]);
     }
     const items = [];
     let arraySpreadResult = HermesBuiltin.arraySpread(arr.map((title) => title.title), 0);
@@ -33,11 +33,11 @@ export default function useGuildPowerupExpiringNotificationsConfig(arg0) {
     const items3 = [];
     if (arr.some((skuId) => skuId.skuId === callback(table[4]).VANITY_URL_POWERUP_SKU_ID)) {
       const intl2 = getSystemLocale.intl;
-      arr = items3.push(intl2.string(tmp(2401).Sfr0Jw));
+      arr = items3.push(intl2.string(tmp(2400).Sfr0Jw));
     }
     if (arr2.length > 0) {
       const intl3 = getSystemLocale.intl;
-      arr = items3.push(intl3.string(tmp(2823).wiungr));
+      arr = items3.push(intl3.string(tmp(2822).wiungr));
     }
     let obj = { shouldShow: null, expiringPowerups: null, expiringPowerupNames: null, warnings: null };
     obj[0] = tmp3;

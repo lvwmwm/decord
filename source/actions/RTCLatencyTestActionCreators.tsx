@@ -1,13 +1,13 @@
-// Module ID: 17061
-// Function ID: 17062
+// Module ID: 17297
+// Function ID: 17298
 // Name: fetchRTCLatencyTestRegions
-// Dependencies: [530, 709, 2]
+// Dependencies: [527, 706, 2]
 // Exports: completeRTCLatencyTest, fetchRTCLatencyTestRegions
 
-// Module 17061 (fetchRTCLatencyTestRegions)
+// Module 17297 (fetchRTCLatencyTestRegions)
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 530 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import sendRequest from "sendRequest" /* 527 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("actions/RTCLatencyTestActionCreators.tsx");
 

@@ -1,25 +1,25 @@
-// Module ID: 16333
-// Function ID: 16334
+// Module ID: 16565
+// Function ID: 16566
 // Name: isPrivateChannelMatch
-// Dependencies: [5, 32, 19, 17, 1391, 1387, 4130, 6065, 10632, 676, 21, 4217, 4474, 4478, 712, 500, 4491, 6068, 709, 589, 698, 16334, 16335, 4479, 7607, 1236, 10977, 16338, 5953, 5973, 5594, 4945, 7619, 1222, 4193, 10114, 10115, 4416, 4415, 10731, 4928, 11935, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1386, 4130, 6073, 10853, 673, 21, 4217, 4474, 4478, 709, 1234, 4491, 6076, 706, 586, 695, 16566, 16567, 4479, 7617, 1233, 11197, 16570, 5961, 5981, 5602, 4945, 7629, 1219, 4193, 10136, 10137, 4416, 4415, 10952, 4928, 12158, 2]
 // Exports: default
 
-// Module 16333 (isPrivateChannelMatch)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16565 (isPrivateChannelMatch)
+import ThemesDefault from "Themes" /* 709 */;
 import _modDef4217 from "module_4217" /* 4217 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { PrivateChannelRecord } from "createChannelRecord" /* 1391 */;
-import closure_8 from "ensureGuildLoaded" /* 1387 */;
+import { PrivateChannelRecord } from "createChannelRecord" /* 1390 */;
+import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
-import closure_10 from "makeSortedChannel" /* 6065 */;
-import { UserRowModes } from "UserRowModes" /* 10632 */;
-import ME from "ME" /* 676 */;
+import closure_10 from "makeSortedChannel" /* 6073 */;
+import { UserRowModes } from "UserRowModes" /* 10853 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 const require = arg1;
 function isPrivateChannelMatch(arr, recipients) {
@@ -192,21 +192,21 @@ function Header(title) {
   fn.__initData = closure_24;
   obj = { style: callback5().header, children: null };
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const items1 = [callback3(numInGroup(7607).GenericHeaderTitle, { title: title.title }), ];
+  const items1 = [callback3(numInGroup(7617).GenericHeaderTitle, { title: title.title }), ];
   obj1 = { style: animatedStyle, variant: "text-xs/medium", color: null, children: null };
   let str = "text-muted";
   if (0 === memo) {
     str = "text-feedback-critical";
   }
   obj1[2] = str;
-  const intl = tmp3(1236).intl;
+  const intl = tmp3(1233).intl;
   if (0 === memo) {
-    let stringResult = intl.string(tmp3(1236).t.yiQW1O);
+    let stringResult = intl.string(tmp3(1233).t.yiQW1O);
   } else {
     const obj2 = { number: null };
     const _HermesInternal = HermesInternal;
     obj2[0] = "" + memo;
-    stringResult = intl.formatToPlainString(tmp3(1236).t.HrSDPF, obj2);
+    stringResult = intl.formatToPlainString(tmp3(1233).t.HrSDPF, obj2);
   }
   obj1[3] = stringResult;
   items1[1] = callback3(closure_19, obj1);
@@ -231,15 +231,15 @@ function ChatPreview(channelId) {
     obj.track(closure_1_12.MESSAGE_COMPOSER_TRANSITIONED, obj);
     navigateToChannel(channelId);
   }, items1);
-  navigateToChannel(16334)(callback);
+  navigateToChannel(16566)(callback);
   let obj = { style: tmp.background, children: null };
   obj = { style: tmp.container, children: null };
   obj = { guildId: closure_15, channelId, chatInputRef: React.useRef(null), HACK_fixModalInteraction: true, alwaysRespectKeyboard: true, screenIndex: "new-message", secondaryTextFieldRef: channelId.tagListInputRef };
-  const items2 = [callback3(navigateToChannel(10977), obj), ];
+  const items2 = [callback3(navigateToChannel(11197), obj), ];
   obj1 = { portal: null };
   const ref = React.useRef(null);
-  obj1[0] = channelId(500).isAndroid();
-  items2[1] = callback3(channelId(16338).PortalKeyboardRenderer, obj1);
+  obj1[0] = channelId(1234).isAndroid();
+  items2[1] = callback3(channelId(16570).PortalKeyboardRenderer, obj1);
   obj[1] = items2;
   obj[1] = callback4(View, obj);
   return callback3(View, obj);
@@ -279,7 +279,7 @@ export default function NewMessageScreen(navigation) {
   let stateFromStores1;
   let tmp = callback5();
   dependencyMap = tmp;
-  const insets = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5594)({ includeKeyboardHeight: true }).insets;
+  const insets = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5602)({ includeKeyboardHeight: true }).insets;
   stateFromStores = insets;
   FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(4945)(() => {
     let obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[20]);
@@ -297,7 +297,7 @@ export default function NewMessageScreen(navigation) {
   first = tmp6[0];
   React = tmp6[1];
   let tmp2 = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
-  let tmp4 = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5953);
+  let tmp4 = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5961);
   [tmp8, c6] = first(obj.useState(false), 2);
   let tmp7 = first(obj.useState(false), 2);
   [tmp10, c7] = first(obj.useState(false), 2);
@@ -339,12 +339,12 @@ export default function NewMessageScreen(navigation) {
     let obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[18]);
     const subscription1 = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[18]).subscribe("CHANNEL_DELETE", handleChannelDelete);
     return () => {
-      FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(709).unsubscribe("CHANNEL_CREATE", handleChannelCreate);
-      const obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(709);
-      FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(709).unsubscribe("CHANNEL_DELETE", handleChannelDelete);
+      FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(706).unsubscribe("CHANNEL_CREATE", handleChannelCreate);
+      const obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(706);
+      FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(706).unsubscribe("CHANNEL_DELETE", handleChannelDelete);
     };
   }, items2);
-  obj1 = _require(589);
+  obj1 = _require(586);
   const items3 = [FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID];
   stateFromStores = obj1.useStateFromStores(items3, () => FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID.getChannel(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID));
   const items4 = [first, stateFromStores];
@@ -474,9 +474,9 @@ export default function NewMessageScreen(navigation) {
         obj[1] = tmp7;
         obj.dispatch(obj);
         return () => {
-          let obj = callback2(709);
+          let obj = callback2(706);
           obj = { type: "CHANNEL_DELETE", channel: null };
-          obj = { id: callback(6068).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "accessible" };
+          obj = { id: callback(6076).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "alignItems" };
           obj[1] = obj;
           obj.dispatch(obj);
         };
@@ -560,7 +560,7 @@ export default function NewMessageScreen(navigation) {
               closure_1 = tmp3;
               callback = undefined;
               if (callback instanceof c7) {
-                FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(698).track(closure_2_12.MESSAGE_COMPOSER_SEARCH_RESULT_CLICKED);
+                FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(695).track(closure_2_12.MESSAGE_COMPOSER_SEARCH_RESULT_CLICKED);
                 closure_1_9(tmp49.id);
                 c4 = 3;
                 obj1 = { value: null, done: true };
@@ -572,10 +572,10 @@ export default function NewMessageScreen(navigation) {
                 const items = [];
                 HermesBuiltin.arraySpread(c4, 0);
                 if (-1 === index) {
-                  if (arr.length >= FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(16335)() - 1) {
+                  if (arr.length >= FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(16567)() - 1) {
                     let obj5 = callback(4193);
                     obj5.showMaxGroupMembers();
-                    FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(698).track(closure_2_12.MESSAGE_COMPOSER_MAX_USERS_ADDED);
+                    FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(695).track(closure_2_12.MESSAGE_COMPOSER_MAX_USERS_ADDED);
                     c4 = 3;
                     const obj2 = { value: null, done: true };
                     obj2[0] = undefined;
@@ -609,7 +609,7 @@ export default function NewMessageScreen(navigation) {
             return obj4;
           } else {
             callback = arg1;
-            obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(698);
+            obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(695);
             obj.track(closure_2_12.MESSAGE_COMPOSER_SEARCH_RESULT_CLICKED);
             closure_1_9(callback);
             c4 = 3;
@@ -648,7 +648,7 @@ export default function NewMessageScreen(navigation) {
     if (!tmp10) {
       if (first.length > 0) {
         if (null == FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
-          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp13(6068).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
+          FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID = tmp13(6076).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
         }
         obj = { channelId: null, navigateToChannel: null, tagListInputRef: null };
         obj[0] = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID;
@@ -663,7 +663,7 @@ export default function NewMessageScreen(navigation) {
   closure_10 = tmp28;
   let tmp9 = first(obj.useState(false), 2);
   const items10 = [callback];
-  stateFromStores1 = _require(589).useStateFromStores(items10, () => callback.getRelationshipCount() > 0);
+  stateFromStores1 = _require(586).useStateFromStores(items10, () => callback.getRelationshipCount() > 0);
   const items11 = [navigation, stateFromStores1, 0 === first.length];
   const items12 = [navigation];
   const memo = obj.useMemo(() => {
@@ -726,7 +726,7 @@ export default function NewMessageScreen(navigation) {
     obj[1] = closure_1_17(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(lib[39]), obj);
     return closure_1_17(c6, obj);
   }, items13);
-  obj = { value: tmp4(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5973).NEW_MESSAGE_COMPOSER).analyticsLocations, children: callback3(tmp2(11935), obj1) };
+  obj = { value: tmp4(FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(5981).NEW_MESSAGE_COMPOSER).analyticsLocations, children: callback3(tmp2(12158), obj1) };
   obj1 = { actions: memo, noResultActions: memo1, rowMode: stateFromStores1.NONE, tagListInputRef: ref, onSelectUser: callback1, onQueryChanged: callback3, selectedUserIds: first, withAffinitySuggestions: true, overrideResults: tmp26Result, withGuildMembers: tmp28, withGDMNames: true, forceSearchResults: tmp10, onForceSearchResults: callback2, defaultNoResultsFound: memo2, autoFocusSearch: true };
-  return callback3(_require(5953).AnalyticsLocationProvider, obj);
+  return callback3(_require(5961).AnalyticsLocationProvider, obj);
 };

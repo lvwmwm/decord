@@ -1,31 +1,31 @@
-// Module ID: 11723
-// Function ID: 11724
+// Module ID: 11946
+// Function ID: 11947
 // Name: AppLauncherCommandViewFooter
-// Dependencies: [5, 32, 19, 17, 4470, 8146, 1985, 1498, 676, 1623, 21, 4478, 712, 11724, 589, 4217, 4479, 4482, 4446, 4940, 4326, 4929, 1236, 4423, 9049, 4700, 5594, 11725, 7268, 8576, 11623, 705, 11600, 11727, 1955, 8145, 11565, 9477, 1493, 10993, 10428, 11728, 10429, 5082, 1891, 5073, 11729, 8435, 5624, 4474, 11730, 11731, 11759, 1297, 38, 11700, 8443, 7266, 8151, 8430, 11760, 11761, 11686, 11687, 2]
+// Dependencies: [5, 32, 19, 17, 4470, 8154, 1984, 1497, 673, 1622, 21, 4478, 709, 11947, 586, 4217, 4479, 4482, 4446, 4940, 4326, 4929, 1233, 4423, 9063, 4700, 5602, 11948, 7277, 8591, 11846, 702, 11823, 11950, 1954, 8153, 11788, 9490, 1492, 11213, 10649, 11951, 10650, 5090, 1890, 5081, 11952, 8444, 5632, 4474, 11953, 11954, 11982, 1296, 38, 11923, 8452, 7275, 8159, 8439, 11983, 11984, 11909, 11910, 2]
 // Exports: default
 
-// Module 11723 (AppLauncherCommandViewFooter)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+// Module 11946 (AppLauncherCommandViewFooter)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
 import CollapsingText from "CollapsingText" /* 4929 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8435 */;
-import handleApplicationSelected from "handleApplicationSelected" /* 11623 */;
-import registerAssetDefault from "registerAsset" /* 11686 */;
-import registerAssetDefault2 from "registerAsset" /* 11687 */;
-import registerAssetDefault3 from "registerAsset" /* 11760 */;
-import registerAssetDefault4 from "registerAsset" /* 11761 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8444 */;
+import handleApplicationSelected from "handleApplicationSelected" /* 11846 */;
+import registerAssetDefault from "registerAsset" /* 11909 */;
+import registerAssetDefault2 from "registerAsset" /* 11910 */;
+import registerAssetDefault3 from "registerAsset" /* 11983 */;
+import registerAssetDefault4 from "registerAsset" /* 11984 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import closure_6 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_10 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import getIndexKey from "getIndexKey" /* 8146 */;
-import closure_13 from "createGuildRoleRecordFromRust" /* 1985 */;
-import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;
-import ME from "ME" /* 676 */;
-import { MediaKeyboardTarget } from "DRAG_HANDLE" /* 1623 */;
+import getIndexKey from "getIndexKey" /* 8154 */;
+import closure_13 from "createGuildRoleRecordFromRust" /* 1984 */;
+import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
+import ME from "ME" /* 673 */;
+import { MediaKeyboardTarget } from "DRAG_HANDLE" /* 1622 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

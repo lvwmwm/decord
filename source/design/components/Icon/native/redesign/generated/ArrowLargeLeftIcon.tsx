@@ -1,14 +1,14 @@
-// Module ID: 5499
-// Function ID: 5500
+// Module ID: 5507
+// Function ID: 5508
 // Name: ArrowLargeLeftIcon
-// Dependencies: [19, 21, 712, 4196, 5500, 2]
+// Dependencies: [19, 21, 709, 4196, 5508, 2]
 // Exports: ArrowLargeLeftIcon
 
-// Module 5499 (ArrowLargeLeftIcon)
+// Module 5507 (ArrowLargeLeftIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5500 */;
+import registerAsset from "registerAsset" /* 5508 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

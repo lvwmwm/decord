@@ -1,10 +1,10 @@
-// Module ID: 10296
-// Function ID: 10297
+// Module ID: 10318
+// Function ID: 10319
 // Name: PX_24
-// Dependencies: [712, 2]
+// Dependencies: [709, 2]
 
-// Module 10296 (PX_24)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 10318 (PX_24)
+import ThemesDefault from "Themes" /* 709 */;
 
 const PX_24 = ThemesDefault.space.PX_24;
 const PX_8 = ThemesDefault.space.PX_8;

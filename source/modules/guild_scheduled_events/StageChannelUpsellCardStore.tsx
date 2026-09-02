@@ -1,20 +1,20 @@
-// Module ID: 9700
-// Function ID: 9701
+// Module ID: 9713
+// Function ID: 9714
 // Name: useStageChannelUpsellCardStore
-// Dependencies: [1393, 700, 595, 705, 4106, 2]
+// Dependencies: [1392, 697, 592, 702, 4105, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 9700 (useStageChannelUpsellCardStore)
+// Module 9713 (useStageChannelUpsellCardStore)
 import set from "set" /* 2 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
-import isIterable from "isIterable" /* 4106 */;
-import identity from "identity" /* 700 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
+import isIterable from "isIterable" /* 4105 */;
+import identity from "identity" /* 697 */;
 
 let closure_2 = GUILD_EVENT_MAX_NAME_LENGTH.GUILD_EVENT_STAGE_UPSELL_CARD_KEY;
 let closure_3 = identity.createWithEqualityFn((arg0) => {
   const _require = arg0;
   const obj = { hasSeenUpsellCard: null, markAsSeen: null };
-  let Storage = _require(595).Storage;
+  let Storage = _require(592).Storage;
   obj[0] = true === Storage.get(closure_2);
   obj[1] = function markAsSeen() {
     const Storage = callback(closure_1_1[2]).Storage;

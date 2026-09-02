@@ -1,13 +1,13 @@
-// Module ID: 16677
-// Function ID: 16678
-// Dependencies: [32, 19, 4494, 11840, 11838, 4499, 21, 11839, 705, 500, 636, 4217, 9209, 9530, 9532, 2]
+// Module ID: 16912
+// Function ID: 16913
+// Dependencies: [32, 19, 4494, 12063, 12061, 4499, 21, 12062, 702, 1234, 633, 4217, 9223, 9543, 9545, 2]
 
-// Module 16677
+// Module 16912
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import closure_5 from "getParticipants" /* 4494 */;
-import { VoicePanelModes } from "VoicePanelModes" /* 11840 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11838 */;
+import { VoicePanelModes } from "VoicePanelModes" /* 12063 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12061 */;
 import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
 import jsxProd from "jsxProd" /* 21 */;
 

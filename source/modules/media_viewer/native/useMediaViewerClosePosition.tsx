@@ -1,13 +1,13 @@
-// Module ID: 12849
-// Function ID: 12850
+// Module ID: 13071
+// Function ID: 13072
 // Name: useMediaViewerClosePosition
-// Dependencies: [32, 19, 676, 12846, 7737, 4217, 2]
+// Dependencies: [32, 19, 673, 13068, 7746, 4217, 2]
 // Exports: default
 
-// Module 12849 (useMediaViewerClosePosition)
+// Module 13071 (useMediaViewerClosePosition)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { NOOP } from "ME" /* 676 */;
+import { NOOP } from "ME" /* 673 */;
 
 const require = arg1;
 let closure_6 = { code: "function useMediaViewerClosePositionTsx1(){const{index}=this.__closure;return index.get();}" };

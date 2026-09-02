@@ -1,13 +1,13 @@
-// Module ID: 12961
-// Function ID: 12962
+// Module ID: 13183
+// Function ID: 13184
 // Name: PaymentFlowWarningMessage
-// Dependencies: [19, 17, 21, 4478, 712, 5384, 1297, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5392, 1296, 4474, 2]
 // Exports: default
 
-// Module 12961 (PaymentFlowWarningMessage)
+// Module 13183 (PaymentFlowWarningMessage)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

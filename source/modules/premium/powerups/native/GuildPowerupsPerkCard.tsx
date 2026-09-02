@@ -1,18 +1,18 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12359
+// Function ID: 12360
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4478, 712, 4413, 1363, 8004, 12132, 12087, 4940, 4474, 12088, 1297, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4413, 1362, 8013, 12356, 12311, 4940, 4474, 12312, 1296, 1233, 2]
 // Exports: default
 
-// Module 12135 (GuildPowerupsPerkCard)
+// Module 12359 (GuildPowerupsPerkCard)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+import ThemesDefault from "Themes" /* 709 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import Text from "Text" /* 4474 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import apexExperiment from "apexExperiment" /* 8004 */;
-import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive" /* 12088 */;
+import apexExperiment from "apexExperiment" /* 8013 */;
+import GuildPowerupCardFooterActive from "GuildPowerupCardFooterActive" /* 12312 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -53,9 +53,9 @@ export default function GuildPowerupsPerkCard(arg0) {
   obj = { containerStyle: items, style: tmp2.card, status, onPress, children: null };
   items = [tmp2.container, style];
   obj = { style: tmp2.imageContainer, children: null };
-  let tmp3Result = tmp3(12132);
+  let tmp3Result = tmp3(12356);
   if (riveComponent == null) {
-    tmp3Result = tmp3(12087);
+    tmp3Result = tmp3(12311);
     if (imageUrl == null) {
       imageUrl = "";
     }
@@ -100,20 +100,20 @@ export default function GuildPowerupsPerkCard(arg0) {
   let tmp15Result = "new" === badge;
   if (tmp15Result) {
     const obj7 = { text: null, style: null };
-    const intl = tmp6(1236).intl;
-    obj7[0] = intl.string(tmp6(1236).t.y2b7CA);
+    const intl = tmp6(1233).intl;
+    obj7[0] = intl.string(tmp6(1233).t.y2b7CA);
     obj7[1] = tmp2.badge;
-    tmp15Result = tmp15(tmp6(1297).TextBadge, obj7);
+    tmp15Result = tmp15(tmp6(1296).TextBadge, obj7);
   }
   items2[2] = tmp15Result;
   tmp15Result = "beta" === badge;
   if (tmp15Result) {
     const obj8 = { text: null, color: null, style: null };
-    const intl2 = tmp6(1236).intl;
-    obj8[0] = intl2.string(tmp6(1236).t.oW0eUd);
-    obj8[1] = tmp6(1297).BadgeColors.BRAND;
+    const intl2 = tmp6(1233).intl;
+    obj8[0] = intl2.string(tmp6(1233).t.oW0eUd);
+    obj8[1] = tmp6(1296).BadgeColors.BRAND;
     obj8[2] = tmp2.badge;
-    tmp15Result = tmp15(tmp6(1297).TextBadge, obj8);
+    tmp15Result = tmp15(tmp6(1296).TextBadge, obj8);
   }
   items2[3] = tmp15Result;
   obj[4] = items2;

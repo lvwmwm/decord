@@ -1,16 +1,16 @@
-// Module ID: 15409
-// Function ID: 15410
+// Module ID: 15637
+// Function ID: 15638
 // Name: useMaybeFetchCollectiblesShopHome
-// Dependencies: [32, 19, 4391, 7287, 7331, 678, 589, 7334, 7286, 15410, 2]
+// Dependencies: [32, 19, 4391, 7296, 7340, 675, 586, 7343, 7295, 15638, 2]
 // Exports: useMaybeFetchCollectiblesShopHome
 
-// Module 15409 (useMaybeFetchCollectiblesShopHome)
+// Module 15637 (useMaybeFetchCollectiblesShopHome)
 import closure_2 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import closure_6 from "getHash" /* 4391 */;
-import closure_7 from "updateCategoriesAndProducts" /* 7287 */;
-import closure_8 from "map" /* 7331 */;
-import items from "items" /* 678 */;
+import closure_7 from "updateCategoriesAndProducts" /* 7296 */;
+import closure_8 from "map" /* 7340 */;
+import items from "items" /* 675 */;
 
 const require = arg1;
 ({ useEffect: c3, useCallback: c4, useMemo: c5 } = noop);
@@ -38,14 +38,14 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   closure_13 = undefined;
   let hasExpiredShopBlocks;
   closure_15 = undefined;
-  let obj = _require(589);
+  let obj = _require(586);
   let items = [closure_6];
   stateFromStores = obj.useStateFromStores(items, () => hasLoadedExperiments.hasLoadedExperiments);
   const items1 = [closure_7];
-  stateFromStores1 = _require(589).useStateFromStores(items1, () => skipNumCategories.skipNumCategories);
-  const obj2 = _require(589);
+  stateFromStores1 = _require(586).useStateFromStores(items1, () => skipNumCategories.skipNumCategories);
+  const obj2 = _require(586);
   const items2 = [closure_8];
-  const tmp3 = callback(_require(589).useStateFromStoresArray(items2, () => {
+  const tmp3 = callback(_require(586).useStateFromStoresArray(items2, () => {
     const items = [store.getShopBlocks(closure_0), , , , , , , ];
     let num = store.getLastSuccessfulFetch(closure_0);
     if (num == null) {
@@ -76,7 +76,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   const tmp13 = callback2(() => {
     const obj = {};
     const merged = Object.assign(dependencyMap);
-    obj.variantsReturnStyle = HOME(7334).ShopVariantsReturnStyle.VARIANTS_GROUP;
+    obj.variantsReturnStyle = HOME(7343).ShopVariantsReturnStyle.VARIANTS_GROUP;
     obj.includeBundles = true;
     obj.includeDynamicBlocks = true;
     obj.shopHomeConfig = closure_11;
@@ -85,15 +85,15 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
   }, items3);
   closure_12 = tmp13;
   const items4 = [tmp3[3], tmp13];
-  const tmp14 = callback2(() => !HOME(7286).areRequestOptionsEqual(closure_7, closure_12), items4);
+  const tmp14 = callback2(() => !HOME(7295).areRequestOptionsEqual(closure_7, closure_12), items4);
   closure_13 = tmp14;
-  const obj3 = _require(589);
+  const obj3 = _require(586);
   const tmp12 = callback2;
   let flag2 = tmp9;
   if (tmp3[5] == null) {
     flag2 = false;
   }
-  hasExpiredShopBlocks = _require(15410).useHasExpiredShopBlocks(tmp4, flag2, flag);
+  hasExpiredShopBlocks = _require(15638).useHasExpiredShopBlocks(tmp4, flag2, flag);
   const items5 = [tmp5, hasExpiredShopBlocks];
   const tmp12Result = tmp12(() => {
     let tmp = !hasExpiredShopBlocks;
@@ -118,8 +118,8 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
             tmp8 = closure_10;
           }
           if (tmp8) {
-            const collectiblesShopHome = HOME(7286).fetchCollectiblesShopHome(HOME, closure_12, closure_2);
-            const obj = HOME(7286);
+            const collectiblesShopHome = HOME(7295).fetchCollectiblesShopHome(HOME, closure_12, closure_2);
+            const obj = HOME(7295);
           }
         }
         tmp7 = null != closure_8 && Date.now() - closure_6 < closure_10;
@@ -132,7 +132,7 @@ export const useMaybeFetchCollectiblesShopHome = function useMaybeFetchCollectib
     fetchShopHomeError: tmp8,
     shopBlocks: tmp4,
     refreshShopHome: stateFromStores1(() => {
-      const collectiblesShopHome = HOME(7286).fetchCollectiblesShopHome(HOME, closure_12, closure_2);
+      const collectiblesShopHome = HOME(7295).fetchCollectiblesShopHome(HOME, closure_12, closure_2);
     }, items7)
   };
   return obj;

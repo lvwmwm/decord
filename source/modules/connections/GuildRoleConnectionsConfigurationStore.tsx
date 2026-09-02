@@ -1,12 +1,12 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 17431
+// Function ID: 17432
 // Name: map
-// Dependencies: [1909, 589, 709, 2]
+// Dependencies: [1908, 586, 706, 2]
 
-// Module 17195 (map)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "createGuildRecordFromRust" /* 1909 */;
+// Module 17431 (map)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_0 from "createGuildRecordFromRust" /* 1908 */;
 
 const map = new Map();
 const Store = initializeDefault.Store;

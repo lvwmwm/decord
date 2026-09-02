@@ -1,13 +1,13 @@
-// Module ID: 12621
-// Function ID: 12622
+// Module ID: 12845
+// Function ID: 12846
 // Name: useSelectedVariantIndex
-// Dependencies: [700, 4106, 8888, 7298, 2]
+// Dependencies: [697, 4105, 8903, 7307, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
-// Module 12621 (useSelectedVariantIndex)
+// Module 12845 (useSelectedVariantIndex)
 import set from "set" /* 2 */;
-import isIterable from "isIterable" /* 4106 */;
-import identity from "identity" /* 700 */;
+import isIterable from "isIterable" /* 4105 */;
+import identity from "identity" /* 697 */;
 
 let closure_2 = identity.createWithEqualityFn(() => {
   const obj = { selectionStates: new Map() };
@@ -17,7 +17,7 @@ const result = set.fileFinishedImporting("modules/collectibles/CollectiblesShopV
 
 export const useSelectedVariantIndex = function useSelectedVariantIndex(product) {
   const _require = product;
-  let defaultVariantIndex = _require(8888).useDefaultVariantIndex(product);
+  let defaultVariantIndex = _require(8903).useDefaultVariantIndex(product);
   let tmp2 = state((selectionStates) => {
     let tmp2 = null;
     if (null != product) {

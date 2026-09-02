@@ -1,10 +1,10 @@
-// Module ID: 5958
-// Function ID: 5959
+// Module ID: 5966
+// Function ID: 5967
 // Name: getAuthorizationApp
-// Dependencies: [19, 4519, 4504, 4507, 1955, 5959, 2]
+// Dependencies: [19, 4519, 4504, 4507, 1954, 5967, 2]
 // Exports: getAuthorizationApp, useAuthorizationApp
 
-// Module 5958 (getAuthorizationApp)
+// Module 5966 (getAuthorizationApp)
 import closure_2 from "noop" /* 19 */;
 import closure_3 from "addApplication" /* 4519 */;
 import closure_4 from "createExecutable" /* 4504 */;

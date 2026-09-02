@@ -1,13 +1,13 @@
-// Module ID: 14202
-// Function ID: 14203
+// Module ID: 14425
+// Function ID: 14426
 // Name: updateEnabledState
-// Dependencies: [1922, 13838, 14203, 4662, 2]
+// Dependencies: [1921, 14061, 14426, 4662, 2]
 
-// Module 14202 (updateEnabledState)
+// Module 14425 (updateEnabledState)
 import initializeDefault from "initialize" /* 4662 */;
-import apexExperiment from "apexExperiment" /* 13838 */;
-import enforcingDefault from "enforcing" /* 14203 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import apexExperiment from "apexExperiment" /* 14061 */;
+import enforcingDefault from "enforcing" /* 14426 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 function updateEnabledState() {

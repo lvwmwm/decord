@@ -1,15 +1,15 @@
-// Module ID: 15854
-// Function ID: 15855
+// Module ID: 16085
+// Function ID: 16086
 // Name: useShouldRenderChannelList
-// Dependencies: [32, 19, 7221, 5221, 676, 4332, 4333, 1231, 2]
+// Dependencies: [32, 19, 7230, 5229, 673, 4332, 4333, 1228, 2]
 // Exports: useShouldRenderChannelList
 
-// Module 15854 (useShouldRenderChannelList)
+// Module 16085 (useShouldRenderChannelList)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleClearCaches" /* 7221 */;
-import closure_5 from "_handleConnectionOpen" /* 5221 */;
-import { ComponentActions } from "ME" /* 676 */;
+import closure_4 from "handleClearCaches" /* 7230 */;
+import closure_5 from "_handleConnectionOpen" /* 5229 */;
+import { ComponentActions } from "ME" /* 673 */;
 
 const require = arg1;
 let c7 = false;
@@ -52,7 +52,7 @@ export const useShouldRenderChannelList = function useShouldRenderChannelList() 
     if (!allowRender) {
       let result = closure_1_5.addReactChangeListener(handleGatewayChange);
       let result1 = closure_1_4.addReactChangeListener(handleCacheChange);
-      let ComponentDispatch = first(1231).ComponentDispatch;
+      let ComponentDispatch = first(1228).ComponentDispatch;
       const subscription = ComponentDispatch.subscribe(closure_1_6.BOTTOM_CHANNEL_SCREEN_DRAG_START, allowRender);
       let rootNavigationRef = first(4333).getRootNavigationRef();
       if (rootNavigationRef != null) {

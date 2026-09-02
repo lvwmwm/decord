@@ -1,16 +1,16 @@
-// Module ID: 6146
-// Function ID: 6147
+// Module ID: 6154
+// Function ID: 6155
 // Name: resolveGoreSettingWithDefaults
-// Dependencies: [19, 1922, 676, 1306, 4172, 4179, 4166, 2]
+// Dependencies: [19, 1921, 673, 1305, 4172, 4179, 4166, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 6146 (resolveGoreSettingWithDefaults)
-import create from "create" /* 1306 */;
+// Module 6154 (resolveGoreSettingWithDefaults)
+import create from "create" /* 1305 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import SettingsDefaultFeature from "SettingsDefaultFeature" /* 4179 */;
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
 
 require = arg1;
 function resolveGoreSettingWithDefaults(isFriend) {
@@ -38,10 +38,10 @@ function resolveGoreSettingWithDefaults(isFriend) {
     }
     if (isDm) {
       if (!flag) {
-        let BLUR2 = tmp4(1306).ExplicitContentRedaction.BLOCK;
+        let BLUR2 = tmp4(1305).ExplicitContentRedaction.BLOCK;
       }
     }
-    ExplicitContentRedaction = tmp4(1306).ExplicitContentRedaction;
+    ExplicitContentRedaction = tmp4(1305).ExplicitContentRedaction;
     BLUR2 = ExplicitContentRedaction.BLUR;
   } else {
     let nsfwAllowed;
@@ -58,10 +58,10 @@ function resolveGoreSettingWithDefaults(isFriend) {
         flag6 = false;
       }
       if (!flag5) {
-        const ExplicitContentRedaction3 = tmp4(1306).ExplicitContentRedaction;
+        const ExplicitContentRedaction3 = tmp4(1305).ExplicitContentRedaction;
         let BLUR = flag5 ? ExplicitContentRedaction3.BLOCK : ExplicitContentRedaction3.BLUR;
       }
-      BLUR = tmp4(1306).ExplicitContentRedaction.BLUR;
+      BLUR = tmp4(1305).ExplicitContentRedaction.BLUR;
     } else {
       let flag3 = isDm;
       if (isDm === undefined) {
@@ -73,11 +73,11 @@ function resolveGoreSettingWithDefaults(isFriend) {
       }
       if (flag3) {
         if (flag4) {
-          let SHOW = tmp4(1306).ExplicitContentRedaction.SHOW;
+          let SHOW = tmp4(1305).ExplicitContentRedaction.SHOW;
         }
         return SHOW;
       }
-      const ExplicitContentRedaction2 = tmp4(1306).ExplicitContentRedaction;
+      const ExplicitContentRedaction2 = tmp4(1305).ExplicitContentRedaction;
       SHOW = flag3 ? ExplicitContentRedaction2.BLOCK : ExplicitContentRedaction2.SHOW;
     }
   }

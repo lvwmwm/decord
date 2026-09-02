@@ -1,19 +1,19 @@
-// Module ID: 17401
-// Function ID: 17402
+// Module ID: 17637
+// Function ID: 17638
 // Name: syncYYTextReplacementExperiment
-// Dependencies: [17, 1996, 1218, 500, 17402, 5219, 17403, 698, 17404, 530, 5486, 2]
+// Dependencies: [17, 1995, 1215, 1234, 17638, 5227, 17639, 695, 17640, 527, 5494, 2]
 
-// Module 17401 (syncYYTextReplacementExperiment)
+// Module 17637 (syncYYTextReplacementExperiment)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set2 from "set" /* 500 */;
-import sendRequest from "sendRequest" /* 530 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5486 */;
-import shouldEnableYYTextReplacement from "shouldEnableYYTextReplacement" /* 17402 */;
-import apexExperimentDefault from "apexExperiment" /* 17404 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
+import sendRequest from "sendRequest" /* 527 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import set2 from "set" /* 1234 */;
+import initializeDefault from "initialize" /* 5494 */;
+import shouldEnableYYTextReplacement from "shouldEnableYYTextReplacement" /* 17638 */;
+import apexExperimentDefault from "apexExperiment" /* 17640 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
 
 function syncYYTextReplacementExperiment() {
   if (obj.isIOS()) {
@@ -33,7 +33,7 @@ function updateIOSExperiments() {
     if (NSUserDefaultsBridge != null) {
       const setShouldEnableYYTextReplacement = NSUserDefaultsBridge.setShouldEnableYYTextReplacement;
       if (setShouldEnableYYTextReplacement != null) {
-        let tmpResult = tmp(17402);
+        let tmpResult = tmp(17638);
         const result = setShouldEnableYYTextReplacement(tmpResult.shouldEnableYYTextReplacement({ location: "NativeExperimentBridgeManager" }));
       }
     }
@@ -42,7 +42,7 @@ function updateIOSExperiments() {
   if (NSUserDefaultsBridge2 != null) {
     const setShouldFixPushNotificationRawPayload = NSUserDefaultsBridge2.setShouldFixPushNotificationRawPayload;
     if (setShouldFixPushNotificationRawPayload != null) {
-      tmpResult = tmp(5219);
+      tmpResult = tmp(5227);
       const result1 = setShouldFixPushNotificationRawPayload(tmpResult.isIOSPushNotificationRawPayloadFixExperimentEnabled());
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 5442
-// Function ID: 5443
+// Module ID: 5450
+// Function ID: 5451
 // Name: getSystemVersion
 // Dependencies: [4457, 2]
 // Exports: getSystemVersion
 
-// Module 5442 (getSystemVersion)
+// Module 5450 (getSystemVersion)
 import set from "set" /* 2 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
 

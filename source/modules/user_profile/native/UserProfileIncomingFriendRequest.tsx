@@ -1,11 +1,11 @@
-// Module ID: 12606
-// Function ID: 12607
+// Module ID: 12830
+// Function ID: 12831
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 4478, 712, 8530, 8558, 5953, 12607, 4673, 5959, 4474, 1236, 1297, 1431, 12608, 4928, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 8543, 8571, 5961, 12831, 4673, 5967, 4474, 1233, 1296, 1430, 12832, 4928, 2]
 // Exports: default
 
-// Module 12606 (UserProfileIncomingFriendRequest)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12830 (UserProfileIncomingFriendRequest)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

@@ -1,14 +1,14 @@
-// Module ID: 6635
-// Function ID: 6636
+// Module ID: 6644
+// Function ID: 6645
 // Name: GameDiversityTier8LargeBadge
-// Dependencies: [21, 5493, 6636, 2]
+// Dependencies: [21, 5501, 6645, 2]
 // Exports: GameDiversityTier8LargeBadge
 
-// Module 6635 (GameDiversityTier8LargeBadge)
+// Module 6644 (GameDiversityTier8LargeBadge)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import vanityUrlDefault from "vanityUrl" /* 6636 */;
+import preloadDefault from "preload" /* 5501 */;
+import vanityUrlDefault from "vanityUrl" /* 6645 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GameDiversityTier8LargeBadge.native.tsx");

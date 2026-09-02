@@ -1,13 +1,13 @@
-// Module ID: 16124
-// Function ID: 16125
+// Module ID: 16355
+// Function ID: 16356
 // Name: useTrackRoleSubscriptionUpsellAnalytics
-// Dependencies: [19, 4115, 676, 14809, 16125, 589, 5953, 1222, 698, 4700, 2]
+// Dependencies: [19, 4114, 673, 15038, 16356, 586, 5961, 1219, 695, 4700, 2]
 // Exports: default
 
-// Module 16124 (useTrackRoleSubscriptionUpsellAnalytics)
+// Module 16355 (useTrackRoleSubscriptionUpsellAnalytics)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "makeGroupListingIndexSubscriptionListingTag" /* 4115 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_4 from "makeGroupListingIndexSubscriptionListingTag" /* 4114 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useTrackRoleSubscriptionUpsellAnalytics.tsx");

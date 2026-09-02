@@ -1,14 +1,14 @@
-// Module ID: 9599
-// Function ID: 9600
+// Module ID: 9612
+// Function ID: 9613
 // Name: Emoji
-// Dependencies: [19, 17, 4470, 21, 687, 4478, 712, 5493, 1297, 589, 4217, 4479, 6193, 2]
+// Dependencies: [19, 17, 4470, 21, 684, 4478, 709, 5501, 1296, 586, 4217, 4479, 6202, 2]
 // Exports: default
 
-// Module 9599 (Emoji)
-import setDefault from "set" /* 687 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
-import preloadDefault from "preload" /* 5493 */;
+// Module 9612 (Emoji)
+import setDefault from "set" /* 684 */;
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
+import preloadDefault from "preload" /* 5501 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

@@ -1,11 +1,11 @@
-// Module ID: 14333
-// Function ID: 14334
+// Module ID: 14556
+// Function ID: 14557
 // Name: WebAuthnSuccessStep
-// Dependencies: [19, 21, 1499, 5495, 14317, 14334, 1236, 2]
+// Dependencies: [19, 21, 1498, 5503, 14540, 14557, 1233, 2]
 // Exports: default
 
-// Module 14333 (WebAuthnSuccessStep)
-import CodeRowDefault from "CodeRow" /* 14334 */;
+// Module 14556 (WebAuthnSuccessStep)
+import CodeRowDefault from "CodeRow" /* 14557 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -13,7 +13,7 @@ const require = arg1;
 let result = require("set").fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnSuccessStep.tsx");
 
 export default function WebAuthnSuccessStep() {
-  let obj = navigation(1499);
+  let obj = navigation(1498);
   navigation = obj.useNavigation();
   const items = [navigation];
   const layoutEffect = React.useLayoutEffect(() => {
@@ -26,7 +26,7 @@ export default function WebAuthnSuccessStep() {
     navigation.setOptions(obj);
   }, items);
   obj = { onGenerate: null, headerLabel: null };
-  const intl = navigation(1236).intl;
-  obj[1] = intl.format(navigation(1236).t.iVTs6i, {});
+  const intl = navigation(1233).intl;
+  obj[1] = intl.format(navigation(1233).t.iVTs6i, {});
   return jsx(CodeRowDefault, { onGenerate: null, headerLabel: null });
 };

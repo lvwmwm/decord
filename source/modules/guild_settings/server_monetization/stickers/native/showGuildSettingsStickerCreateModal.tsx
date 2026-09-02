@@ -1,12 +1,12 @@
-// Module ID: 17161
-// Function ID: 17162
+// Module ID: 17397
+// Function ID: 17398
 // Name: showGuildSettingsStickerCreateModal
-// Dependencies: [4445, 4723, 17162, 2009, 2]
+// Dependencies: [4445, 4723, 17398, 2008, 2]
 // Exports: default
 
-// Module 17161 (showGuildSettingsStickerCreateModal)
+// Module 17397 (showGuildSettingsStickerCreateModal)
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 import _modDef4723 from "module_4723" /* 4723 */;
 
@@ -15,5 +15,5 @@ const result = set.fileFinishedImporting("modules/guild_settings/server_monetiza
 export default function showGuildSettingsStickerCreateModal(closure_0) {
   ACTION_SHEET_HEIGHT_HALFDefault.hideActionSheet();
   const obj = ACTION_SHEET_HEIGHT_HALFDefault;
-  _modDef4723.pushLazy(asyncRequireImpl(17162, dependencyMap.paths), closure_0, "guild-settings-sticker-create", { presentation: "modal" });
+  _modDef4723.pushLazy(asyncRequireImpl(17398, dependencyMap.paths), closure_0, "guild-settings-sticker-create", { presentation: "modal" });
 };

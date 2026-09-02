@@ -1,11 +1,11 @@
-// Module ID: 10065
-// Function ID: 10066
+// Module ID: 10087
+// Function ID: 10088
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 
-// Module 10065 (apexExperiment)
+// Module 10087 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const obj = { 1: null };
 obj[1] = { audioOutputPresent: false, nonContextualStreamOutputPresent: false, showTileVolumeIndicator: true };

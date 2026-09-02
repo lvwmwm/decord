@@ -1,13 +1,13 @@
 // Module ID: 4816
 // Function ID: 4817
 // Name: result
-// Dependencies: [1420, 4801, 574, 564]
+// Dependencies: [1419, 4801, 571, 561]
 
 // Module 4816 (result)
-import flag from "flag" /* 564 */;
-import callBoundIntrinsic from "callBoundIntrinsic" /* 574 */;
+import flag from "flag" /* 561 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 571 */;
 import getEvalledConstructor from "getEvalledConstructor" /* 4801 */;
-import hasPropertyDescriptors from "hasPropertyDescriptors" /* 1420 */;
+import hasPropertyDescriptors from "hasPropertyDescriptors" /* 1419 */;
 
 hasPropertyDescriptors = hasPropertyDescriptors.hasArrayLengthDefineBug();
 if (hasPropertyDescriptors) {

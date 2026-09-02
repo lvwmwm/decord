@@ -1,14 +1,14 @@
-// Module ID: 7023
-// Function ID: 7024
+// Module ID: 7032
+// Function ID: 7033
 // Name: SocialMediaSpotIllustration
-// Dependencies: [21, 5493, 7024, 2]
+// Dependencies: [21, 5501, 7033, 2]
 // Exports: SocialMediaSpotIllustration
 
-// Module 7023 (SocialMediaSpotIllustration)
+// Module 7032 (SocialMediaSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 7024 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 7033 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/SocialMediaSpotIllustration.native.tsx");

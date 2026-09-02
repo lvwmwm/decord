@@ -1,16 +1,16 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17625
+// Function ID: 17626
 // Name: getDeliveredNotifications
-// Dependencies: [5, 17, 7381, 4493, 676, 3, 17390, 9657, 11, 5486, 500, 8537, 698, 2]
+// Dependencies: [5, 17, 7390, 4493, 673, 3, 17626, 9670, 11, 5494, 1234, 8550, 695, 2]
 
-// Module 17389 (getDeliveredNotifications)
+// Module 17625 (getDeliveredNotifications)
 import timestampDefault from "timestamp" /* 3 */;
-import initializeDefault from "initialize" /* 5486 */;
+import initializeDefault from "initialize" /* 5494 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "updateGuildUnreadSentinel" /* 7381 */;
+import closure_5 from "updateGuildUnreadSentinel" /* 7390 */;
 import closure_6 from "generateOldThreadCutoff" /* 4493 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 let require = arg1;
 function getDeliveredNotifications() {
@@ -218,8 +218,8 @@ let prototype = function NativeNotificationsManager() {
   applyArgumentsResult.handleAck = function handleAck(channelId) {
     channelId = channelId.channelId;
     if (obj.isIOS()) {
-      const result = callback(9657).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
-      const obj2 = callback(9657);
+      const result = callback(9670).setApplicationIconBadgeNumber(totalMentionCount.getTotalMentionCount());
+      const obj2 = callback(9670);
     }
     if (null != channelId) {
       const DCDNotificationManager = closure_4.DCDNotificationManager;

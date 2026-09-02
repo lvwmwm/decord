@@ -1,10 +1,10 @@
-// Module ID: 10440
-// Function ID: 10441
+// Module ID: 10661
+// Function ID: 10662
 // Name: useMediaKeyboardItemsPerRow
 // Dependencies: [19, 4336, 2]
 // Exports: useMediaKeyboardItemsPerRow
 
-// Module 10440 (useMediaKeyboardItemsPerRow)
+// Module 10661 (useMediaKeyboardItemsPerRow)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

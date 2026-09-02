@@ -1,13 +1,13 @@
-// Module ID: 9151
-// Function ID: 9152
+// Module ID: 9165
+// Function ID: 9166
 // Name: apexExperiment
-// Dependencies: [1468, 7597, 2]
+// Dependencies: [1467, 7607, 2]
 // Exports: getMobileEmojiPickerUpsellRestyleEnabledForFeature, useMobileEmojiPickerUpsellRestyleEnabled
 
-// Module 9151 (apexExperiment)
+// Module 9165 (apexExperiment)
 import set from "set" /* 2 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7597 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 7607 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-08-mobile-emoji-picker-upsell-restyle", kind: "user", defaultConfig: false, variations: { 0: false, 1: true } });
 const items = [EntitlementFeatureNames.EntitlementFeatureNames.EMOJIS_EVERYWHERE, EntitlementFeatureNames.EntitlementFeatureNames.ANIMATED_EMOJIS];

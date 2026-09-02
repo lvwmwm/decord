@@ -1,10 +1,10 @@
 // Module ID: 2054
 // Function ID: 2055
 // Name: registerAsset
-// Dependencies: [1241]
+// Dependencies: [1240]
 
 // Module 2054 (registerAsset)
-import registerAsset from "registerAsset" /* 1241 */;
+import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", scales: [1], hash: "f1164a467c2303c85bf8b785dcb744f7", name: "hi.messages.f1164a467c2303c85bf8b785dcb744f7.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", scales: [1], hash: "b9c10170eceebc628d301e1a0a720d38", name: "hr.messages.b9c10170eceebc628d301e1a0a720d38.compiled.messages", type: "jsona" });

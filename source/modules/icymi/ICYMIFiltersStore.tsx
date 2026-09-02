@@ -1,12 +1,12 @@
-// Module ID: 8618
-// Function ID: 8619
+// Module ID: 8633
+// Function ID: 8634
 // Name: initialize
-// Dependencies: [589, 8619, 709, 2]
+// Dependencies: [586, 8634, 706, 2]
 
-// Module 8618 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 8619 */;
+// Module 8633 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 8634 */;
 
 require = arg1;
 let closure_2 = {};

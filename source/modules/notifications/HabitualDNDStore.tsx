@@ -1,15 +1,15 @@
-// Module ID: 13374
-// Function ID: 13375
+// Module ID: 13598
+// Function ID: 13599
 // Name: initialize
-// Dependencies: [5223, 676, 687, 4166, 709, 589, 2]
+// Dependencies: [5231, 673, 684, 4166, 706, 586, 2]
 
-// Module 13374 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 13598 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import setDefault from "set" /* 684 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import closure_3 from "filterPlayingActivities" /* 5223 */;
-import { StatusTypes } from "ME" /* 676 */;
+import closure_3 from "filterPlayingActivities" /* 5231 */;
+import { StatusTypes } from "ME" /* 673 */;
 
 require = arg1;
 let closure_5 = [];
@@ -52,7 +52,7 @@ const habitualDNDStore = new HabitualDNDStore(dispatcherDefault, {
         arr = arr.push(Date.now());
         const found = arr.filter((arg0) => {
           const timestamp = Date.now();
-          return arg0 > timestamp - 5 * callback(687).Millis.DAY;
+          return arg0 > timestamp - 5 * callback(684).Millis.DAY;
         });
         arr = found;
         let someResult = found.length >= 4;
@@ -65,7 +65,7 @@ const habitualDNDStore = new HabitualDNDStore(dispatcherDefault, {
         if (someResult) {
           const _setTimeout = setTimeout;
           const timerId = setTimeout(() => {
-            callback(709).dispatch({ type: "HABITUAL_DND_CLEAR" });
+            callback(706).dispatch({ type: "HABITUAL_DND_CLEAR" });
           }, 15 * setDefault.Millis.SECOND);
         }
       }

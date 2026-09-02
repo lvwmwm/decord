@@ -1,22 +1,22 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17482
+// Function ID: 17483
 // Name: onModalClose
-// Dependencies: [19, 21, 17245, 5501, 5495, 1236, 6237, 7764, 17247, 17248, 17260, 17261, 6008, 2]
+// Dependencies: [19, 21, 17481, 5509, 5503, 1233, 6246, 7773, 17483, 17484, 17496, 17497, 6016, 2]
 // Exports: default
 
-// Module 17246 (onModalClose)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import HeaderBackImage from "HeaderBackImage" /* 5495 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5501 */;
-import NavigationStack from "NavigationStack" /* 6008 */;
-import _modDef17245 from "module_17245" /* 17245 */;
-import EnableCommunityModalSteps from "EnableCommunityModalSteps" /* 17247 */;
+// Module 17482 (onModalClose)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import HeaderBackImage from "HeaderBackImage" /* 5503 */;
+import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 5509 */;
+import NavigationStack from "NavigationStack" /* 6016 */;
+import _modDef17481 from "module_17481" /* 17481 */;
+import EnableCommunityModalSteps from "EnableCommunityModalSteps" /* 17483 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
 function onModalClose() {
-  _modDef17245.close();
+  _modDef17481.close();
 }
 function HeaderBackButton(arg0) {
   useNavigatorBackPressHandler.useNavigatorBackPressHandler(() => {
@@ -32,10 +32,10 @@ const result = require("set").fileFinishedImporting("modules/public_guilds/nativ
 export default function EnableCommunityModal() {
   const memo = React.useMemo(() => {
     function headerRight() {
-      const obj = { source: callback2(7764), onPress: closure_5, accessibilityLabel: null };
-      const intl = callback(1236).intl;
-      obj[2] = intl.string(callback(1236).t.cpT0Cq);
-      return callback3(callback(6237).HeaderActionButton, obj);
+      const obj = { source: callback2(7773), onPress: closure_5, accessibilityLabel: null };
+      const intl = callback(1233).intl;
+      obj[2] = intl.string(callback(1233).t.cpT0Cq);
+      return callback3(callback(6246).HeaderActionButton, obj);
     }
     let obj = {
       headerRight,
@@ -44,7 +44,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(17248), {});
+        return callback3(callback2(17484), {});
       }
     };
     obj = {
@@ -53,7 +53,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(17260), {});
+        return callback3(callback2(17496), {});
       }
     };
     obj = {
@@ -62,7 +62,7 @@ export default function EnableCommunityModal() {
         return null;
       },
       render() {
-        return callback3(callback2(17261), {});
+        return callback3(callback2(17497), {});
       }
     };
     return { [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_1]: obj, [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_2]: obj, [closure_0(closure_2[8]).EnableCommunityModalSteps.STEP_3]: obj };

@@ -1,9 +1,9 @@
-// Module ID: 11829
-// Function ID: 11830
+// Module ID: 12052
+// Function ID: 12053
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 4915, 500, 1236, 2]
+// Dependencies: [19, 17, 21, 4915, 1234, 1233, 2]
 
-// Module 11829 (ChatInputAccessibilityDivider)
+// Module 12052 (ChatInputAccessibilityDivider)
 import SCREEN_READER_ENABLED_GETTER from "SCREEN_READER_ENABLED_GETTER" /* 4915 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -18,13 +18,13 @@ const memoResult = importAllResult.memo(() => {
     tmp3 = null;
     if (!tmpResult.isAndroid()) {
       obj = { nativeID: "chat-input-accessibility-divider", accessible: true, accessibilityLabel: null, accessibilityRole: "header", style: null };
-      const intl = tmp(1236).intl;
-      obj[2] = intl.string(tmp(1236).t["uKZtC/"]);
+      const intl = tmp(1233).intl;
+      obj[2] = intl.string(tmp(1233).t["uKZtC/"]);
       const items = [absoluteFill.absoluteFill, { height: 1 }];
       obj[4] = items;
       tmp3 = <closure_3 nativeID="chat-input-accessibility-divider" accessible accessibilityLabel={null} accessibilityRole="header" style={null} />;
     }
-    tmpResult = tmp(500);
+    tmpResult = tmp(1234);
   }
   return tmp3;
 });

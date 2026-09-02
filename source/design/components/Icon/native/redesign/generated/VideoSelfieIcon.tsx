@@ -1,14 +1,14 @@
-// Module ID: 8707
-// Function ID: 8708
+// Module ID: 8722
+// Function ID: 8723
 // Name: VideoSelfieIcon
-// Dependencies: [19, 21, 712, 4196, 8708, 2]
+// Dependencies: [19, 21, 709, 4196, 8723, 2]
 // Exports: VideoSelfieIcon
 
-// Module 8707 (VideoSelfieIcon)
+// Module 8722 (VideoSelfieIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8708 */;
+import registerAsset from "registerAsset" /* 8723 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

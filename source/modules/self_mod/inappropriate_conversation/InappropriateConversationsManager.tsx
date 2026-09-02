@@ -1,12 +1,12 @@
-// Module ID: 17393
-// Function ID: 17394
+// Module ID: 17629
+// Function ID: 17630
 // Name: fadeIn
-// Dependencies: [9993, 4648, 5486, 2]
+// Dependencies: [10015, 4648, 5494, 2]
 
-// Module 17393 (fadeIn)
+// Module 17629 (fadeIn)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 5486 */;
-import createSoundForPack from "createSoundForPack" /* 9993 */;
+import initializeDefault from "initialize" /* 5494 */;
+import createSoundForPack from "createSoundForPack" /* 10015 */;
 
 function fadeIn() {
   if (null != interval) {

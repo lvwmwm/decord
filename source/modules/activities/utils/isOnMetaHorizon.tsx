@@ -1,12 +1,12 @@
-// Module ID: 9416
-// Function ID: 9417
+// Module ID: 9429
+// Function ID: 9430
 // Name: isOnMetaHorizon
-// Dependencies: [4506, 676, 2]
+// Dependencies: [4506, 673, 2]
 // Exports: default
 
-// Module 9416 (isOnMetaHorizon)
+// Module 9429 (isOnMetaHorizon)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import items3 from "items3" /* 4506 */;
 
 let closure_0 = items3.META_PRESENCE_APPLICATION_ID;

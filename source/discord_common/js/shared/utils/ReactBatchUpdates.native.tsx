@@ -1,10 +1,10 @@
-// Module ID: 705
-// Function ID: 706
+// Module ID: 702
+// Function ID: 703
 // Name: batchUpdates
 // Dependencies: [17, 2]
 // Exports: batchUpdates
 
-// Module 705 (batchUpdates)
+// Module 702 (batchUpdates)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

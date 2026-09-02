@@ -1,16 +1,15 @@
 // Module ID: 4153
 // Function ID: 4154
 // Name: SubscriptionStatusTypes
-// Dependencies: [676, 687, 1995, 1236, 3017, 2]
+// Dependencies: [673, 1994, 1233, 3016, 2]
 // Exports: getPremiumGroupCountryName, getPremiumGroupProductName
 
 // Module 4153 (SubscriptionStatusTypes)
 import set from "set" /* 2 */;
-import setDefault from "set" /* 687 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 3017 */;
-import ME from "ME" /* 676 */;
-import importDefaultResult from "combined" /* 1995 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 3016 */;
+import ME from "ME" /* 673 */;
+import importDefaultResult from "combined" /* 1994 */;
 
 ({ SubscriptionStatusTypes, HelpdeskArticles } = ME);
 const items = [, , , , ];
@@ -20,8 +19,6 @@ const result = set.fileFinishedImporting("modules/premium/premium_group/PremiumG
 
 export const TOTAL_PREMIUM_GROUP_MEMBER_SEATS = 5;
 export const TOTAL_PREMIUM_GROUP_USERS = 6;
-export const MIN_AVAILABLE_SEATS_FOR_REMINDER = 3;
-export const MIN_SUBSCRIPTION_AGE_FOR_PRIMARY_REMINDER_IN_MS = setDefault.Millis.DAY;
 export const PREMIUM_GROUP_COOLDOWN_MONTHS = 12;
 export const PREMIUM_GROUP_ANNOUNCEMENT_MODAL_PROMOTION_KEY = "2026-07-premium-group-announcement-modal";
 export const HELP_CENTER_LINK = articleURL;

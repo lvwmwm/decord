@@ -1,23 +1,23 @@
-// Module ID: 11990
-// Function ID: 11991
+// Module ID: 12214
+// Function ID: 12215
 // Name: ChatInputReplyBarNoAuthor
-// Dependencies: [19, 17, 4470, 4854, 1922, 676, 21, 1297, 4478, 712, 4197, 4474, 1236, 5068, 7713, 589, 4205, 4747, 8926, 7870, 11991, 4296, 4217, 4479, 11252, 698, 11250, 1222, 4746, 11992, 7521, 11778, 7591, 2]
+// Dependencies: [19, 17, 4470, 4854, 1921, 673, 21, 1296, 4478, 709, 4197, 4474, 1233, 5076, 7722, 586, 4205, 4747, 8940, 7879, 12215, 4296, 4217, 4479, 11475, 695, 11473, 1219, 4746, 12216, 7531, 12001, 7601, 2]
 
-// Module 11990 (ChatInputReplyBarNoAuthor)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+// Module 12214 (ChatInputReplyBarNoAuthor)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
 import Text from "Text" /* 4474 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import registerAssetDefault from "registerAsset" /* 7713 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import registerAssetDefault from "registerAsset" /* 7722 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_7 from "handleChanged" /* 4854 */;
 import { DraftType } from "handleChanged" /* 4854 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -347,7 +347,7 @@ function ChatInputEditBar(onCancelEditing) {
   }
   obj[3] = tmp9;
   obj[4] = onCancelEditing.onCancelEditing;
-  obj1 = { source: registerAssetDefault, size: tmp2(1297).Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
+  obj1 = { source: registerAssetDefault, size: tmp2(1296).Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
   obj[5] = callback(Button.Icon, obj1);
   const obj2 = { style: tmp.contextBarRow, children: null };
   const obj3 = { children: null };

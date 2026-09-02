@@ -1,14 +1,14 @@
 // Module ID: 4490
 // Function ID: 4491
 // Name: useGuildIdForChannelRoute
-// Dependencies: [1390, 4299, 676, 589, 1912, 2]
+// Dependencies: [1389, 4299, 673, 586, 1911, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
 // Module 4490 (useGuildIdForChannelRoute)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "initializeFromUserSettings" /* 1390 */;
+import initialize from "initialize" /* 586 */;
+import closure_2 from "initializeFromUserSettings" /* 1389 */;
 import closure_3 from "handleConnectionOpen" /* 4299 */;
-import { FAVORITES } from "ME" /* 676 */;
+import { FAVORITES } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/routing/useGuildIdForChannelRoute.tsx");

@@ -1,27 +1,27 @@
-// Module ID: 698
-// Function ID: 699
+// Module ID: 695
+// Function ID: 696
 // Name: expandEventProperties
-// Dependencies: [109, 19, 699, 706, 676, 13849, 4507, 1916, 697, 503, 13847, 1208, 709, 7419, 1236, 7, 514, 2, 13850]
+// Dependencies: [109, 19, 696, 703, 673, 14072, 4507, 1915, 694, 500, 14070, 1205, 706, 7428, 1233, 7, 511, 2, 14073]
 // Exports: addExtraAnalyticsDecorator, clearAnalyticsEventsRecording, debugLogEvent, expandLocation, getAnalyticsEventsRecording, getNewAnalyticsLoadId, isGameApplicationType, setUTMContext, startRecordingAnalyticsEvents, stopRecordingAnalyticsEvents, trackNetworkAction
 
-// Module 698 (expandEventProperties)
+// Module 695 (expandEventProperties)
 import reportAll from "report" /* 7 */;
-import v1 from "v1" /* 514 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef1208 from "module_1208" /* 1208 */;
-import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7419 */;
-import IGNORE_ANALYTICS_BREADCRUMB_EVENTS2 from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 13847 */;
-import MEAll from "ME" /* 13850 */;
+import v1 from "v1" /* 511 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import _modDef1205 from "module_1205" /* 1205 */;
+import getHermesInstrumentedStatsSummaryDefault from "getHermesInstrumentedStatsSummary" /* 7428 */;
+import IGNORE_ANALYTICS_BREADCRUMB_EVENTS2 from "IGNORE_ANALYTICS_BREADCRUMB_EVENTS" /* 14070 */;
+import MEAll from "ME" /* 14073 */;
 import closure_6 from "_objectWithoutProperties" /* 109 */;
-import withEqualityFn from "withEqualityFn" /* 699 */;
-import closure_9 from "refreshSourceMapCookie" /* 706 */;
-import ME from "ME" /* 676 */;
-import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags" /* 13849 */;
+import withEqualityFn from "withEqualityFn" /* 696 */;
+import closure_9 from "refreshSourceMapCookie" /* 703 */;
+import ME from "ME" /* 673 */;
+import { AccessibilityFeatureFlags } from "AccessibilityFeatureFlags" /* 14072 */;
 import { ApplicationTypes } from "ApplicationTypes" /* 4507 */;
-import isBlockedDomain from "isBlockedDomain" /* 1916 */;
+import isBlockedDomain from "isBlockedDomain" /* 1915 */;
 import importAllResult from "noop" /* 19 */;
-import encodeProperties from "encodeProperties" /* 503 */;
-import importAllResult1 from "encodeProperties" /* 503 */;
+import encodeProperties from "encodeProperties" /* 500 */;
+import importAllResult1 from "encodeProperties" /* 500 */;
 
 require = arg1;
 function expandEventProperties(arg0) {
@@ -38,7 +38,7 @@ function expandEventProperties(arg0) {
       const obj7 = getHermesInstrumentedStatsSummaryDefault;
       tmp.cpu_core_count = getHermesInstrumentedStatsSummaryDefault.getCPUCoreCount();
       tmp.accessibility_features = getAccessibilityFeatures();
-      tmp.rendered_locale = obj2(1236).intl.currentLocale;
+      tmp.rendered_locale = obj2(1233).intl.currentLocale;
       const _Math = Math;
       const _performance = performance;
       tmp.uptime_app = Math.floor((performance.now() - closure_18) / c15);
@@ -121,7 +121,7 @@ if (isBlockedDomain.isLibdiscoreInitialized()) {
 function addBreadcrumb(arg0) {
   const IGNORE_ANALYTICS_BREADCRUMB_EVENTS = IGNORE_ANALYTICS_BREADCRUMB_EVENTS2.IGNORE_ANALYTICS_BREADCRUMB_EVENTS;
   if (!IGNORE_ANALYTICS_BREADCRUMB_EVENTS.includes(arg0)) {
-    let obj = _modDef1208;
+    let obj = _modDef1205;
     obj = { category: "analytics", message: null };
     obj[1] = arg0;
     obj.addBreadcrumb(obj);
@@ -193,8 +193,8 @@ obj = {
   [AnalyticEvents.RPC_SUBSCRIPTION_REQUESTED]: obj24,
   [AnalyticEvents.ACTIVITY_HANDSHAKE]: obj25,
   [AnalyticEvents.CHANNEL_BANNER_VIEWED]: obj26,
-  [arg1(503).ImpressionNames.GUILD_HANGOUT_WINDOW]: obj27,
-  [arg1(503).ImpressionNames.GUILD_HANGOUT_WINDOW_ENTRY_POINT]: obj28,
+  [arg1(500).ImpressionNames.GUILD_HANGOUT_WINDOW]: obj27,
+  [arg1(500).ImpressionNames.GUILD_HANGOUT_WINDOW_ENTRY_POINT]: obj28,
   [AnalyticEvents.PREMIUM_UPSELL_VIEWED]: obj29,
   [AnalyticEvents.FORUM_CHANNEL_SEARCHED]: obj30,
   [AnalyticEvents.FORUM_CHANNEL_SCROLLED]: obj31,

@@ -1,15 +1,15 @@
-// Module ID: 10152
-// Function ID: 10153
+// Module ID: 10174
+// Function ID: 10175
 // Name: RaisedHandIcon
-// Dependencies: [19, 17, 1992, 21, 4478, 712, 4668, 1297, 8743, 1493, 589, 5368, 4673, 5652, 1236, 8664, 10133, 1363, 10153, 2]
+// Dependencies: [19, 17, 1991, 21, 4478, 709, 4668, 1296, 8758, 1492, 586, 5376, 4673, 5660, 1233, 8679, 10155, 1362, 10175, 2]
 // Exports: getTileWidthStyle
 
-// Module 10152 (RaisedHandIcon)
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+// Module 10174 (RaisedHandIcon)
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
 import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4668 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "trackCommunicationDisabled" /* 1992 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
@@ -32,7 +32,7 @@ function RaisedHandIcon(rtsState) {
   }
   let obj = { style: items, children: null };
   items[1] = activeBackground;
-  obj = { style: tmp.raisedHand, source: tmp5(8743), color: PRIMARY_800 };
+  obj = { style: tmp.raisedHand, source: tmp5(8758), color: PRIMARY_800 };
   obj[1] = closure_5(Button.Icon, obj);
   return closure_5(View, obj);
 }

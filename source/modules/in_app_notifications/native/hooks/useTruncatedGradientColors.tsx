@@ -1,13 +1,13 @@
-// Module ID: 10191
-// Function ID: 10192
+// Module ID: 10213
+// Function ID: 10214
 // Name: useTruncatedGradientColors
-// Dependencies: [19, 4478, 4197, 712, 689, 2]
+// Dependencies: [19, 4478, 4197, 709, 686, 2]
 // Exports: default
 
-// Module 10191 (useTruncatedGradientColors)
+// Module 10213 (useTruncatedGradientColors)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 const useMemo = noop.useMemo;

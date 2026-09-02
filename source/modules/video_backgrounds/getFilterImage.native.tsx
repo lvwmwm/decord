@@ -1,12 +1,12 @@
-// Module ID: 9797
-// Function ID: 9798
+// Module ID: 9819
+// Function ID: 9820
 // Name: getFilterImage
-// Dependencies: [7759, 2]
+// Dependencies: [7768, 2]
 // Exports: default
 
-// Module 9797 (getFilterImage)
+// Module 9819 (getFilterImage)
 import set from "set" /* 2 */;
-import VideoFilterType from "VideoFilterType" /* 7759 */;
+import VideoFilterType from "VideoFilterType" /* 7768 */;
 
 let closure_0 = VideoFilterType.BACKGROUND_REPLACEMENT_SIZE;
 const result = set.fileFinishedImporting("modules/video_backgrounds/getFilterImage.native.tsx");

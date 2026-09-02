@@ -1,15 +1,15 @@
 // Module ID: 4364
 // Function ID: 4365
 // Name: calculateAppliedBoosts
-// Dependencies: [32, 1909, 4365, 676, 589, 709, 2]
+// Dependencies: [32, 1908, 4365, 673, 586, 706, 2]
 
 // Module 4364 (calculateAppliedBoosts)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_0 from "_slicedToArray" /* 32 */;
-import closure_1 from "createGuildRecordFromRust" /* 1909 */;
+import closure_1 from "createGuildRecordFromRust" /* 1908 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 function calculateAppliedBoosts(guildId) {
   guild = guild.getGuild(guildId);

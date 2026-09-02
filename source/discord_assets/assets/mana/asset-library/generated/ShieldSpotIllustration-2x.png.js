@@ -1,12 +1,12 @@
-// Module ID: 7006
-// Function ID: 7007
+// Module ID: 7015
+// Function ID: 7016
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7006 (metadata)
+// Module 7015 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShieldSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/0e27ab3b47e19bf08de06978e6c664451b756e88e044dae1e24f438b0c8f4bc7.png";
-export const metadata = { fileBytes: 39412 };
+export default "https://cdn.discordapp.com/assets/content/826d70aefbabd9d4d36e03815ef8370a0b3d4e3419db48cc8e647230b51a7396.png";
+export const metadata = { fileBytes: 42812 };

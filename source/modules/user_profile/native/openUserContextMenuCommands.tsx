@@ -1,10 +1,10 @@
-// Module ID: 9085
-// Function ID: 9086
+// Module ID: 9099
+// Function ID: 9100
 // Name: openUserContextMenuCommands
-// Dependencies: [8559, 4445, 4332, 1955, 2]
+// Dependencies: [8572, 4445, 4332, 1954, 2]
 // Exports: default
 
-// Module 9085 (openUserContextMenuCommands)
+// Module 9099 (openUserContextMenuCommands)
 import set from "set" /* 2 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 
@@ -13,13 +13,13 @@ let result = set.fileFinishedImporting("modules/user_profile/native/openUserCont
 export default function openUserContextMenuCommands(analyticsLocations) {
   analyticsLocations = analyticsLocations.analyticsLocations;
   ({ userId, selectedChannel, showUserProfile } = analyticsLocations);
-  let obj = analyticsLocations(8559);
+  let obj = analyticsLocations(8572);
   const result = obj.trackUserProfileAction({ action: "PRESS_VIEW_APP_COMMANDS", analyticsLocations });
   ACTION_SHEET_HEIGHT_HALFDefault.hideAllActionSheets();
   const obj2 = ACTION_SHEET_HEIGHT_HALFDefault;
   obj = {
     channel: selectedChannel,
-    commandType: analyticsLocations(1955).ApplicationCommandType.USER,
+    commandType: analyticsLocations(1954).ApplicationCommandType.USER,
     commandTargetId: userId,
     onClose: showUserProfile,
     onPressAppCommand() {

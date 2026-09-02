@@ -1,11 +1,11 @@
-// Module ID: 12557
-// Function ID: 12558
+// Module ID: 12781
+// Function ID: 12782
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 4478, 712, 4217, 4479, 2]
+// Dependencies: [19, 21, 4478, 709, 4217, 4479, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 12557 (CollectiblesShopPricePlaceholder)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12781 (CollectiblesShopPricePlaceholder)
+import ThemesDefault from "Themes" /* 709 */;
 import _modDef4217 from "module_4217" /* 4217 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

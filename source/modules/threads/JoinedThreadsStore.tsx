@@ -1,15 +1,15 @@
-// Module ID: 4123
-// Function ID: 4124
+// Module ID: 4122
+// Function ID: 4123
 // Name: storeThread
-// Dependencies: [1391, 1218, 4124, 12, 589, 709, 2]
+// Dependencies: [1390, 1215, 4123, 12, 586, 706, 2]
 
-// Module 4123 (storeThread)
+// Module 4122 (storeThread)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
-import resetDefault from "reset" /* 4124 */;
-import closure_3 from "fetchFingerprint" /* 1218 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
+import resetDefault from "reset" /* 4123 */;
+import closure_3 from "fetchFingerprint" /* 1215 */;
 import set from "set" /* 2 */;
 
 function storeThread(channel) {

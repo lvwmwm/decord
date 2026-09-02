@@ -1,12 +1,12 @@
-// Module ID: 9106
-// Function ID: 9107
+// Module ID: 9120
+// Function ID: 9121
 // Name: useTopAndNewlyAddedEmojis
-// Dependencies: [5401, 1925, 647, 2]
+// Dependencies: [5409, 1924, 644, 2]
 // Exports: default, getTopAndNewlyAddedEmojis
 
-// Module 9106 (useTopAndNewlyAddedEmojis)
-import closure_2 from "getEmojiToGroupId" /* 5401 */;
-import { EmojiIntention } from "set" /* 1925 */;
+// Module 9120 (useTopAndNewlyAddedEmojis)
+import closure_2 from "getEmojiToGroupId" /* 5409 */;
+import { EmojiIntention } from "set" /* 1924 */;
 
 const require = arg1;
 let closure_4 = [];
@@ -17,7 +17,7 @@ export default function useTopAndNewlyAddedEmojis(arg0, arg1) {
   dependencyMap = arg1;
   const items = [closure_2];
   const items1 = [arg0, arg1];
-  return _require(647).useStateFromStoresObject(items, () => {
+  return _require(644).useStateFromStoresObject(items, () => {
     let obj = closure_1_2;
     if (closure_1_2 !== undefined) {
       if (tmp2 !== closure_1_3.REACTION) {

@@ -1,15 +1,15 @@
-// Module ID: 15831
-// Function ID: 15832
+// Module ID: 16062
+// Function ID: 16063
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 4478, 10730, 7618, 5070, 15614, 4217, 2]
+// Dependencies: [17, 21, 4478, 10951, 7628, 5078, 15845, 4217, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 15831 (ScreenAlignedThemedGradient)
+// Module 16062 (ScreenAlignedThemedGradient)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import getMixedGradientColorDefault from "getMixedGradientColor" /* 5070 */;
-import useActiveThemeType from "useActiveThemeType" /* 7618 */;
-import tDefault from "t" /* 10730 */;
+import getMixedGradientColorDefault from "getMixedGradientColor" /* 5078 */;
+import useActiveThemeType from "useActiveThemeType" /* 7628 */;
+import tDefault from "t" /* 10951 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

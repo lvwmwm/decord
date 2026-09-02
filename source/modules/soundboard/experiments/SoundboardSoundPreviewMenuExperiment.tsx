@@ -1,12 +1,12 @@
-// Module ID: 16655
-// Function ID: 16656
+// Module ID: 16890
+// Function ID: 16891
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 // Exports: useSoundboardSoundPreviewMenuEnabled
 
-// Module 16655 (apexExperiment)
+// Module 16890 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true, returnOnUpsellDismiss: true };

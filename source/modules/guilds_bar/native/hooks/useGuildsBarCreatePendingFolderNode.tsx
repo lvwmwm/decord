@@ -1,25 +1,25 @@
-// Module ID: 15948
-// Function ID: 15949
+// Module ID: 16179
+// Function ID: 16180
 // Name: useGuildsBarCreatePendingFolderNode
-// Dependencies: [19, 4300, 5382, 589, 9030, 15949, 7661, 5383, 1236, 2]
+// Dependencies: [19, 4300, 5390, 586, 9044, 16180, 7670, 5391, 1233, 2]
 // Exports: default
 
-// Module 15948 (useGuildsBarCreatePendingFolderNode)
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 9030 */;
+// Module 16179 (useGuildsBarCreatePendingFolderNode)
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 9044 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "handleGatewayJoinRequestUpdate" /* 4300 */;
-import closure_5 from "set" /* 5382 */;
+import closure_5 from "set" /* 5390 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guilds_bar/native/hooks/useGuildsBarCreatePendingFolderNode.tsx");
 
 export default function useGuildsBarCreatePendingFolderNode() {
-  let obj = stateFromStores(589);
+  let obj = stateFromStores(586);
   const items = [closure_4];
   stateFromStores = obj.useStateFromStores(items, () => obj.hasFetchedRequestToJoinGuilds);
   const arr2 = usePendingFolderGuildIdsDefault();
   const items1 = [closure_5];
-  const stateFromStores1 = stateFromStores(589).useStateFromStores(items1, () => folderExpanded.isFolderExpanded(stateFromStores(table[5]).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER));
+  const stateFromStores1 = stateFromStores(586).useStateFromStores(items1, () => folderExpanded.isFolderExpanded(stateFromStores(table[5]).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER));
   const items2 = [stateFromStores];
   const effect = React.useEffect(() => {
     if (!stateFromStores) {
@@ -29,19 +29,19 @@ export default function useGuildsBarCreatePendingFolderNode() {
   }, items2);
   if (arr2.length > 0) {
     obj = { folderId: null, folderName: null, expanded: null, guildIds: null };
-    obj[0] = tmp2(15949).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER;
-    const intl = tmp2(1236).intl;
-    obj[1] = intl.string(tmp2(1236).t["scsU+l"]);
+    obj[0] = tmp2(16180).SpecialGuildsNodeIds.PENDING_JOIN_REQUESTS_FOLDER;
+    const intl = tmp2(1233).intl;
+    obj[1] = intl.string(tmp2(1233).t["scsU+l"]);
     obj[2] = stateFromStores1;
     obj[3] = arr2;
-    const folderNode = tmp2(5383).createFolderNode(obj);
+    const folderNode = tmp2(5391).createFolderNode(obj);
     for (const item10054 of arr2) {
       let children = folderNode.children;
       let tmp13 = stateFromStores;
       let tmp14 = stateFromStores;
       let tmp15 = dependencyMap;
       let tmp16 = dependencyMap;
-      let obj5 = stateFromStores(5383);
+      let obj5 = stateFromStores(5391);
       let arr = children.push(obj5.createGuildNode(item10054, folderNode.id));
       continue;
     }
@@ -52,7 +52,7 @@ export default function useGuildsBarCreatePendingFolderNode() {
   } else {
     return { expanded: false, pendingFolderNode: null };
   }
-  const obj2 = stateFromStores(589);
+  const obj2 = stateFromStores(586);
   const tmp = stateFromStores;
   const tmp3 = dependencyMap;
 };

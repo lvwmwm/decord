@@ -1,14 +1,14 @@
-// Module ID: 6155
-// Function ID: 6156
+// Module ID: 6163
+// Function ID: 6164
 // Name: requestGames
-// Dependencies: [5, 4502, 676, 530, 709, 4362, 12, 2]
+// Dependencies: [5, 4502, 673, 527, 706, 4362, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 6155 (requestGames)
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 6163 (requestGames)
+import dispatcherDefault from "dispatcher" /* 706 */;
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleLoadMessages" /* 4502 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 let closure_0 = arg1;
 function requestGames() {
@@ -40,7 +40,7 @@ function _requestGames() {
       yield HTTP.get(obj1);
       if (1 === tmp7) {
         c3 = 0;
-        const obj3 = body(709);
+        const obj3 = body(706);
         const obj4 = { type: "GAME_FETCH_FAILURE", gameIds: null };
         obj4[1] = callback;
         obj3.dispatch(obj4);
@@ -50,7 +50,7 @@ function _requestGames() {
         throw body;
       } else if (arg0 !== 2) {
         body = body.body;
-        const obj = body(709);
+        const obj = body(706);
         const obj5 = { type: "GAME_FETCH_SUCCESS", gameIds: null, games: null };
         obj5[1] = callback;
         obj5[2] = body;

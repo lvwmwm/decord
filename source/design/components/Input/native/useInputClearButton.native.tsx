@@ -1,13 +1,13 @@
-// Module ID: 6224
-// Function ID: 6225
+// Module ID: 6233
+// Function ID: 6234
 // Name: useInputClearButton
-// Dependencies: [19, 17, 21, 6225, 1236, 2]
+// Dependencies: [19, 17, 21, 6234, 1233, 2]
 // Exports: useInputClearButton, useInputClearButtonConfig
 
-// Module 6224 (useInputClearButton)
+// Module 6233 (useInputClearButton)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import CircleXIcon from "CircleXIcon" /* 6225 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import CircleXIcon from "CircleXIcon" /* 6234 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 

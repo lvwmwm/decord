@@ -1,13 +1,13 @@
-// Module ID: 12472
-// Function ID: 12473
+// Module ID: 12696
+// Function ID: 12697
 // Name: getUserProfileLiveActivities
-// Dependencies: [676, 12, 2]
+// Dependencies: [673, 12, 2]
 // Exports: getUserProfileLiveActivities, getUserProfileStackedActivityCards
 
-// Module 12472 (getUserProfileLiveActivities)
+// Module 12696 (getUserProfileLiveActivities)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const ActivityTypes = ME.ActivityTypes;
 const result = set.fileFinishedImporting("modules/user_profile/utils/UserProfileStackedActivityCardUtils.tsx");

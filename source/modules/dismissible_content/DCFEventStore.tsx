@@ -1,11 +1,11 @@
-// Module ID: 1376
-// Function ID: 1377
+// Module ID: 1375
+// Function ID: 1376
 // Name: getDCFEvents
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 1376 (getDCFEvents)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 1375 (getDCFEvents)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let obj = { DC_SHOWN: 0, [0]: "DC_SHOWN", DC_SHOW_REQUEST: 1, [1]: "DC_SHOW_REQUEST", DC_DISMISSED: 2, [2]: "DC_DISMISSED" };
 let closure_1 = [];

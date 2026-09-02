@@ -1,20 +1,20 @@
-// Module ID: 17120
-// Function ID: 17121
+// Module ID: 17356
+// Function ID: 17357
 // Name: AuditLogActions
-// Dependencies: [17121, 1391, 1986, 1992, 1985, 1909, 676, 506, 12, 589, 709, 2]
+// Dependencies: [17357, 1390, 1985, 1991, 1984, 1908, 673, 503, 12, 586, 706, 2]
 
-// Module 17120 (AuditLogActions)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "getTargetType" /* 17121 */;
-import { AuditLogChange } from "getTargetType" /* 17121 */;
-import { isGuildSelectableChannelType as closure_4 } from "createChannelRecord" /* 1391 */;
-import { hasAnyPermission } from "GuildRoleRecordTypeTag" /* 1986 */;
-import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_8 from "createGuildRecordFromRust" /* 1909 */;
-import ME from "ME" /* 676 */;
-import importAllResult from "fromString" /* 506 */;
+// Module 17356 (AuditLogActions)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_2 from "getTargetType" /* 17357 */;
+import { AuditLogChange } from "getTargetType" /* 17357 */;
+import { isGuildSelectableChannelType as closure_4 } from "createChannelRecord" /* 1390 */;
+import { hasAnyPermission } from "GuildRoleRecordTypeTag" /* 1985 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_8 from "createGuildRecordFromRust" /* 1908 */;
+import ME from "ME" /* 673 */;
+import importAllResult from "fromString" /* 503 */;
 
 const AuditLogActions = ME.AuditLogActions;
 ({ AuditLogActionTypes: c10, AuditLogTargetTypes: unpackModuleId, AuditLogChangeKeys: closure_12, AUDIT_LOG_PAGE_LIMIT: map1, GuildSettingsSections: closure_14, Permissions } = ME);

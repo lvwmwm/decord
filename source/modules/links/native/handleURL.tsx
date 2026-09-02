@@ -1,7 +1,7 @@
 // Module ID: 4185
 // Function ID: 4186
 // Name: sanitizeURLPart
-// Dependencies: [5, 17, 4186, 676, 3, 4187, 4189, 4190, 4191, 4192, 4193, 1236, 4443, 500, 4445, 1488, 4458, 13589, 2]
+// Dependencies: [5, 17, 4186, 673, 3, 4187, 4189, 4190, 4191, 4192, 4193, 1233, 4443, 1234, 4445, 1487, 4458, 13812, 2]
 // Exports: default
 
 // Module 4185 (sanitizeURLPart)
@@ -9,7 +9,7 @@ import timestampDefault from "timestamp" /* 3 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { Linking } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "setContent" /* 4186 */;
-import { WebBrowserType } from "ME" /* 676 */;
+import { WebBrowserType } from "ME" /* 673 */;
 
 const require = arg1;
 function sanitizeURLPart(str) {
@@ -137,7 +137,7 @@ function _handleURL() {
               };
               c7 = 1;
               v0 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp8) {

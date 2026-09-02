@@ -1,16 +1,16 @@
-// Module ID: 7202
-// Function ID: 7203
+// Module ID: 7211
+// Function ID: 7212
 // Name: updateSubmittedGuildJoinRequestTotal
-// Dependencies: [1922, 4300, 4075, 4302, 4117, 4301, 687, 589, 709, 2]
+// Dependencies: [1921, 4300, 4074, 4302, 4116, 4301, 684, 586, 706, 2]
 
-// Module 7202 (updateSubmittedGuildJoinRequestTotal)
-import initializeDefault from "initialize" /* 589 */;
-import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import hooksDefault from "hooks" /* 4075 */;
+// Module 7211 (updateSubmittedGuildJoinRequestTotal)
+import initializeDefault from "initialize" /* 586 */;
+import setDefault from "set" /* 684 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import hooksDefault from "hooks" /* 4074 */;
 import isActionedApplicationStatus from "isActionedApplicationStatus" /* 4301 */;
 import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4302 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import { joinRequestFromServer } from "handleGatewayJoinRequestUpdate" /* 4300 */;
 
 require = arg1;

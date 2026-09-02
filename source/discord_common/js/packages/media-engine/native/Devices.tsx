@@ -1,12 +1,12 @@
 // Module ID: 4650
 // Function ID: 4651
 // Name: sanitizeDevices
-// Dependencies: [4581, 669, 4531, 2]
+// Dependencies: [4581, 666, 4531, 2]
 // Exports: getAudioInputDevices, getAudioOutputDevices, getVideoInputDevices, sanitizeDevices
 
 // Module 4650 (sanitizeDevices)
 import set from "set" /* 2 */;
-import formatDefault from "format" /* 669 */;
+import formatDefault from "format" /* 666 */;
 import AudioSubsystems from "AudioSubsystems" /* 4581 */;
 
 ({ DEFAULT_DEVICE_ID: c3, DeviceTypes: c4 } = AudioSubsystems);

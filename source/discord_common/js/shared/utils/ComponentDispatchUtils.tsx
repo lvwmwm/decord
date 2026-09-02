@@ -1,11 +1,11 @@
-// Module ID: 1233
-// Function ID: 1234
+// Module ID: 1230
+// Function ID: 1231
 // Name: safeDispatch
-// Dependencies: [652, 2]
+// Dependencies: [649, 2]
 
-// Module 1233 (safeDispatch)
+// Module 1230 (safeDispatch)
 import set from "set" /* 2 */;
-import EventEmitter from "EventEmitter" /* 652 */;
+import EventEmitter from "EventEmitter" /* 649 */;
 
 let result = set.fileFinishedImporting("../discord_common/js/shared/utils/ComponentDispatchUtils.tsx");
 class ComponentDispatcher {

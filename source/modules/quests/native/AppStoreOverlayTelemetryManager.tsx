@@ -1,14 +1,14 @@
-// Module ID: 11097
-// Function ID: 11098
+// Module ID: 11317
+// Function ID: 11318
 // Name: handleAppStateUpdate
-// Dependencies: [676, 5486, 500, 691, 2]
+// Dependencies: [673, 5494, 1234, 688, 2]
 // Exports: clearAppStoreOverlayOpen, setAppStoreOverlayOpen
 
-// Module 11097 (handleAppStateUpdate)
+// Module 11317 (handleAppStateUpdate)
 import set from "set" /* 2 */;
-import set2 from "set" /* 500 */;
-import ME from "ME" /* 676 */;
-import initializeDefault from "initialize" /* 5486 */;
+import ME from "ME" /* 673 */;
+import set2 from "set" /* 1234 */;
+import initializeDefault from "initialize" /* 5494 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let c3 = null;
@@ -34,9 +34,9 @@ AppStoreOverlayTelemetryManager.prototype["handleAppStateUpdate"] = function han
   } else {
     let flag = null != _null;
     if (flag) {
-      if (state !== tmp(691).AppStates.ACTIVE) {
+      if (state !== tmp(688).AppStates.ACTIVE) {
         flag = false;
-        if (state === tmp(691).AppStates.BACKGROUND) {
+        if (state === tmp(688).AppStates.BACKGROUND) {
           _null.trackOverlayEvent(AnalyticEvents.QUEST_APP_STORE_OVERLAY_BACKGROUNDED);
           const _Date = Date;
           c4 = Date.now();

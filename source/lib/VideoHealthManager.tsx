@@ -1,15 +1,15 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13700
+// Function ID: 13701
 // Name: calculateFps
-// Dependencies: [676, 3, 4754, 13478, 4558, 687, 2]
+// Dependencies: [673, 3, 4754, 13701, 4558, 684, 2]
 
-// Module 13477 (calculateFps)
+// Module 13700 (calculateFps)
 import set2 from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import sleep from "sleep" /* 4558 */;
 import isTablet from "isTablet" /* 4754 */;
-import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13478 */;
+import dispatchAutoDisableVideoDefault from "dispatchAutoDisableVideo" /* 13701 */;
 
 const VideoToggleState = ME.VideoToggleState;
 class VideoHealthManager {
@@ -129,7 +129,7 @@ prototype["startReenableBackoffTimer"] = function startReenableBackoffTimer(arg0
     obj[1] = num2;
     self.retryBackoffCache[arg0] = obj;
     const result = num2 * self.backoffTimeSec;
-    const result1 = result * self(687).Millis.SECOND;
+    const result1 = result * self(684).Millis.SECOND;
     const logger2 = self.logger;
     const _HermesInternal2 = HermesInternal;
     logger2.info("starting backoff timer with time = " + result1 + " milliseconds");

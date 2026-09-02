@@ -1,12 +1,12 @@
-// Module ID: 9273
-// Function ID: 9274
+// Module ID: 9286
+// Function ID: 9287
 // Name: getListSummaryLabel
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: getListSummaryLabel
 
-// Module 9273 (getListSummaryLabel)
+// Module 9286 (getListSummaryLabel)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("utils/ListUtils.tsx");
 

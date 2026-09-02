@@ -1,9 +1,9 @@
-// Module ID: 5069
-// Function ID: 5070
+// Module ID: 5077
+// Function ID: 5078
 // Name: getStyleProp
 // Dependencies: [2]
 
-// Module 5069 (getStyleProp)
+// Module 5077 (getStyleProp)
 import set from "set" /* 2 */;
 
 function getStyleProp(style, borderRadius) {

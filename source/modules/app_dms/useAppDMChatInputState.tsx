@@ -1,17 +1,17 @@
-// Module ID: 12926
-// Function ID: 12927
+// Module ID: 13148
+// Function ID: 13149
 // Name: items
-// Dependencies: [19, 8146, 4519, 7366, 4504, 1922, 676, 1955, 589, 8115, 709, 5959, 2]
+// Dependencies: [19, 8154, 4519, 7375, 4504, 1921, 673, 1954, 586, 8123, 706, 5967, 2]
 // Exports: default
 
-// Module 12926 (items)
+// Module 13148 (items)
 import closure_3 from "noop" /* 19 */;
-import { useQueryState } from "getIndexKey" /* 8146 */;
+import { useQueryState } from "getIndexKey" /* 8154 */;
 import closure_5 from "addApplication" /* 4519 */;
-import closure_6 from "createUserWidgetFromServer" /* 7366 */;
+import closure_6 from "createUserWidgetFromServer" /* 7375 */;
 import closure_7 from "createExecutable" /* 4504 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 676 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import { EMPTY_STRING_SNOWFLAKE_ID } from "ME" /* 673 */;
 
 const require = arg1;
 let items = [require("PermissionOverwriteType").ApplicationCommandType.PRIMARY_ENTRY_POINT, require("PermissionOverwriteType").ApplicationCommandType.CHAT, require("PermissionOverwriteType").ApplicationCommandType.MESSAGE, require("PermissionOverwriteType").ApplicationCommandType.USER];

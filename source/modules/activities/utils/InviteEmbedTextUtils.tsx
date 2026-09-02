@@ -1,15 +1,15 @@
-// Module ID: 12898
-// Function ID: 12899
+// Module ID: 13120
+// Function ID: 13121
 // Name: getAskToJoinText
-// Dependencies: [1922, 676, 1236, 2855, 4673, 2]
+// Dependencies: [1921, 673, 1233, 2854, 4673, 2]
 // Exports: getDeadGameInviteText, getHeaderText, getPartyText, getRequestToStreamText
 
-// Module 12898 (getAskToJoinText)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2855 */;
+// Module 13120 (getAskToJoinText)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2854 */;
 import getNickname from "getNickname" /* 4673 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import { ActivityActionTypes } from "ME" /* 676 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import { ActivityActionTypes } from "ME" /* 673 */;
 
 require = arg1;
 function getAskToJoinText(author, name_override, isPrivate, id1, arg4) {

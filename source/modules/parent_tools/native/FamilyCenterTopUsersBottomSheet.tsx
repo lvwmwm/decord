@@ -1,21 +1,21 @@
-// Module ID: 14503
-// Function ID: 14504
+// Module ID: 14726
+// Function ID: 14727
 // Name: UserRow
-// Dependencies: [19, 1922, 21, 4478, 7338, 5599, 4322, 1297, 5989, 4474, 1236, 2369, 5992, 2]
+// Dependencies: [19, 1921, 21, 4478, 7347, 5607, 4322, 1296, 5997, 4474, 1233, 2368, 6000, 2]
 // Exports: default
 
-// Module 14503 (UserRow)
+// Module 14726 (UserRow)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
+import messagesProxyDefault from "messagesProxy" /* 2368 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
 import Text from "Text" /* 4474 */;
-import TableRowInner from "TableRowInner" /* 5599 */;
-import ActionSheet from "ActionSheet" /* 5989 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5992 */;
-import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7338 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import TableRowInner from "TableRowInner" /* 5607 */;
+import ActionSheet from "ActionSheet" /* 5997 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
+import getEmptyActivityFormatter from "getEmptyActivityFormatter" /* 7347 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

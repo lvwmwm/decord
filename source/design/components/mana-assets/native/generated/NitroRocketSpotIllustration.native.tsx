@@ -1,14 +1,14 @@
-// Module ID: 6841
-// Function ID: 6842
+// Module ID: 6850
+// Function ID: 6851
 // Name: NitroRocketSpotIllustration
-// Dependencies: [21, 5493, 6842, 2]
+// Dependencies: [21, 5501, 6851, 2]
 // Exports: NitroRocketSpotIllustration
 
-// Module 6841 (NitroRocketSpotIllustration)
+// Module 6850 (NitroRocketSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6842 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6851 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/NitroRocketSpotIllustration.native.tsx");

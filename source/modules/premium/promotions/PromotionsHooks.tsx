@@ -1,15 +1,15 @@
-// Module ID: 13125
-// Function ID: 13126
+// Module ID: 13347
+// Function ID: 13348
 // Name: useEligibleActiveOutboundPromotions
-// Dependencies: [19, 1922, 10475, 1924, 589, 13016, 4139, 709, 13014, 2]
+// Dependencies: [19, 1921, 10696, 1923, 586, 13238, 4139, 706, 13236, 2]
 // Exports: useBogoPromotion, useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
-// Module 13125 (useEligibleActiveOutboundPromotions)
-import initialize from "initialize" /* 589 */;
+// Module 13347 (useEligibleActiveOutboundPromotions)
+import initialize from "initialize" /* 586 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "createEmptyPromotionsByType" /* 10475 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import closure_5 from "createEmptyPromotionsByType" /* 10696 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 
 require = arg1;
 function useEligibleActiveOutboundPromotions(arg0) {
@@ -153,7 +153,7 @@ export const useOutboundPromotions = function useOutboundPromotions() {
 };
 export const useUnseenOutboundPromotions = function useUnseenOutboundPromotions() {
   const items = [closure_5];
-  stateFromStores = stateFromStores(589).useStateFromStores(items, () => obj.lastSeenOutboundPromotionStartDate);
+  stateFromStores = stateFromStores(586).useStateFromStores(items, () => obj.lastSeenOutboundPromotionStartDate);
   const tmp2 = useEligibleActiveOutboundPromotions();
   closure_1 = tmp2;
   const items1 = [tmp2, stateFromStores];
@@ -178,7 +178,7 @@ export const useBogoPromotion = function useBogoPromotion() {
 export const useIsInPromotion = function useIsInPromotion(arg0) {
   const _require = arg0;
   const items = [closure_5];
-  return _require(589).useStateFromStores(items, () => closure_1_5.hasPromotion(closure_0));
+  return _require(586).useStateFromStores(items, () => closure_1_5.hasPromotion(closure_0));
 };
 export const useHasActiveBogoPromotion = function useHasActiveBogoPromotion() {
   const effect = React.useEffect(() => {

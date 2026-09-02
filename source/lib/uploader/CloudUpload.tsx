@@ -1,23 +1,23 @@
-// Module ID: 5072
-// Function ID: 5073
+// Module ID: 5080
+// Function ID: 5081
 // Name: set
-// Dependencies: [109, 5, 32, 4477, 1304, 4574, 676, 3, 530, 5073, 5080, 687, 584, 5113, 12, 1473, 5082, 5115, 5116, 5101, 5117, 5118, 5122, 5123, 1208, 5081, 5074, 5124, 5125, 2009, 5210, 698, 2]
+// Dependencies: [109, 5, 32, 4477, 1303, 4574, 673, 3, 527, 5081, 5088, 684, 581, 5121, 12, 1472, 5090, 5123, 5124, 5109, 5125, 5126, 5130, 5131, 1205, 5089, 5082, 5132, 5133, 2008, 5218, 695, 2]
 
-// Module 5072 (set)
+// Module 5080 (set)
 import timestampDefault from "timestamp" /* 3 */;
-import failsDefault from "fails" /* 584 */;
-import setDefault from "set" /* 687 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import cancel from "cancel" /* 5073 */;
-import cancelDefault from "cancel" /* 5073 */;
-import fromBlobDefault from "fromBlob" /* 5113 */;
+import failsDefault from "fails" /* 581 */;
+import setDefault from "set" /* 684 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import cancel from "cancel" /* 5081 */;
+import cancelDefault from "cancel" /* 5081 */;
+import fromBlobDefault from "fromBlob" /* 5121 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
 import closure_6 from "_slicedToArray" /* 32 */;
 import closure_7 from "getUserAgnosticState" /* 4477 */;
-import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
+import closure_8 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
 import closure_9 from "handleConnectionInfoChange" /* 4574 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -2253,11 +2253,11 @@ prototype["delete"] = function delete() {
             obj[0] = arg1;
             return obj;
           } else if (null != v0.uploadedFilename) {
-            obj1 = v0(5118);
+            obj1 = v0(5126);
             const uploadTarget = obj1.getUploadTarget(tmp18.item.target);
             dependencyMap = 1;
             const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp18.uploadedFilename);
-            const HTTP = v0(530).HTTP;
+            const HTTP = v0(527).HTTP;
             c1 = 2;
             v0 = 1;
             obj1 = { value: null, done: false };

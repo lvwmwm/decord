@@ -1,12 +1,12 @@
-// Module ID: 13587
-// Function ID: 13588
+// Module ID: 13810
+// Function ID: 13811
 // Name: findRemoteAuthFingerprint
-// Dependencies: [1486, 2]
+// Dependencies: [1485, 2]
 // Exports: findRemoteAuthFingerprint
 
-// Module 13587 (findRemoteAuthFingerprint)
+// Module 13810 (findRemoteAuthFingerprint)
 import set from "set" /* 2 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 
 const re2 = /^\/ra\/([\w-]+)$/;
 const result = set.fileFinishedImporting("modules/remote_auth/QRLoginUtils.tsx");

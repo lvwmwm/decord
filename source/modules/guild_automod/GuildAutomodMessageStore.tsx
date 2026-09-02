@@ -1,18 +1,18 @@
-// Module ID: 7847
-// Function ID: 7848
+// Module ID: 7856
+// Function ID: 7857
 // Name: handleMessageSendFailedAutomod
-// Dependencies: [1387, 4735, 676, 7578, 7848, 4737, 7253, 11, 589, 709, 2]
+// Dependencies: [1386, 4735, 673, 7588, 7857, 4737, 7262, 11, 586, 706, 2]
 
-// Module 7847 (handleMessageSendFailedAutomod)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7856 (handleMessageSendFailedAutomod)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
-import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7253 */;
-import items from "items" /* 7578 */;
-import getAutomodErrorMessageFromErrorResponse from "getAutomodErrorMessageFromErrorResponse" /* 7848 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import getDecisionOutcomeFromMessage from "getDecisionOutcomeFromMessage" /* 7262 */;
+import items from "items" /* 7588 */;
+import getAutomodErrorMessageFromErrorResponse from "getAutomodErrorMessageFromErrorResponse" /* 7857 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "reinjectEphemerals" /* 4735 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function handleMessageSendFailedAutomod(messageData) {
@@ -137,13 +137,13 @@ const guildAutomodMessageStore = new GuildAutomodMessageStore(dispatcherDefault,
       const tmp = require;
       let result = getDecisionOutcomeFromMessage.isAutomodMessageRecord(messageRecord);
       if (result) {
-        let flag = tmp(7253).isAutomodNotification(messageRecord);
+        let flag = tmp(7262).isAutomodNotification(messageRecord);
         if (flag) {
           closure_11[guildId] = messageRecord.id;
           flag = true;
         }
         result = flag;
-        const tmpResult = tmp(7253);
+        const tmpResult = tmp(7262);
       }
       return result;
     }

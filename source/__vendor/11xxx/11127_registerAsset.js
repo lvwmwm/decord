@@ -1,0 +1,10 @@
+// Module ID: 11127
+// Function ID: 11128
+// Name: registerAsset
+// Dependencies: [1240]
+
+// Module 11127 (registerAsset)
+import registerAsset from "registerAsset" /* 1240 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 18, height: 18, scales: [2, 3], hash: "b979d6fc20f59ff3d9b456c0fcc05d95", name: "ic_add_super_reaction", type: "png" });

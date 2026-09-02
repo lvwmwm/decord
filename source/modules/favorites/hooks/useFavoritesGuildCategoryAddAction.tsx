@@ -1,13 +1,13 @@
-// Module ID: 10712
-// Function ID: 10713
+// Module ID: 10933
+// Function ID: 10934
 // Name: useFavoritesGuildCategoryAddAction
-// Dependencies: [19, 676, 10713, 1912, 1236, 3179, 2]
+// Dependencies: [19, 673, 10934, 1911, 1233, 3178, 2]
 // Exports: default
 
-// Module 10712 (useFavoritesGuildCategoryAddAction)
-import messagesProxyDefault from "messagesProxy" /* 3179 */;
+// Module 10933 (useFavoritesGuildCategoryAddAction)
+import messagesProxyDefault from "messagesProxy" /* 3178 */;
 import closure_3 from "noop" /* 19 */;
-import { ChannelTypes } from "ME" /* 676 */;
+import { ChannelTypes } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildCategoryAddAction.tsx");
@@ -18,13 +18,13 @@ export default function useFavoritesGuildCategoryAddAction(id) {
   const callback = React.useCallback(() => {
     closure_1_1(closure_1_2[2])({ parentId: id.id, source: "favorites_add_to_category" });
   }, items);
-  let obj = _require(1912);
+  let obj = _require(1911);
   let tmp4 = null;
   if (obj.isFavoritesGuildId(id.getGuildId())) {
     tmp4 = null;
     if (id.type === ChannelTypes.GUILD_CATEGORY) {
       obj = { label: null, perform: null };
-      const intl = _require(1236).intl;
+      const intl = _require(1233).intl;
       obj[0] = intl.string(messagesProxyDefault["1QJmIL"]);
       obj[1] = callback;
       tmp4 = obj;

@@ -1,12 +1,12 @@
-// Module ID: 7944
-// Function ID: 7945
+// Module ID: 7953
+// Function ID: 7954
 // Name: PUBLIC_SUCCESS_MODAL_SEEN_KEY
-// Dependencies: [676, 506, 2]
+// Dependencies: [673, 503, 2]
 
-// Module 7944 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
+// Module 7953 (PUBLIC_SUCCESS_MODAL_SEEN_KEY)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import importAllResult from "fromString" /* 506 */;
+import ME from "ME" /* 673 */;
+import importAllResult from "fromString" /* 503 */;
 
 const items = [, , , , , , , , , , , , , ];
 ({ ADMINISTRATOR: arr[0], KICK_MEMBERS: arr[1], BAN_MEMBERS: arr[2], MANAGE_GUILD: arr[3], MANAGE_CHANNELS: arr[4], MANAGE_ROLES: arr[5], MANAGE_MESSAGES: arr[6], MANAGE_GUILD_EXPRESSIONS: arr[7], CREATE_GUILD_EXPRESSIONS: arr[8], MANAGE_EVENTS: arr[9], CREATE_EVENTS: arr[10], MODERATE_MEMBERS: arr[11], MENTION_EVERYONE: arr[12], MANAGE_OFFICIAL_MESSAGES: arr[13] } = ME.Permissions);

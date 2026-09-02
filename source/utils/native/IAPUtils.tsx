@@ -1,25 +1,25 @@
-// Module ID: 10794
-// Function ID: 10795
+// Module ID: 11014
+// Function ID: 11015
 // Name: serializePurchaseResponse
-// Dependencies: [5, 17, 4477, 4174, 1922, 6084, 676, 1924, 10795, 3, 38, 500, 10814, 6087, 12, 514, 4154, 589, 10815, 1625, 4457, 10816, 2]
+// Dependencies: [5, 17, 4477, 4174, 1921, 6092, 673, 1923, 11015, 3, 38, 1234, 11034, 6095, 12, 511, 4154, 586, 11035, 1624, 4457, 11036, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 10794 (serializePurchaseResponse)
+// Module 11014 (serializePurchaseResponse)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import set2 from "set" /* 500 */;
-import v1 from "v1" /* 514 */;
-import getConstantsAll from "getConstants" /* 1625 */;
+import v1 from "v1" /* 511 */;
+import set2 from "set" /* 1234 */;
+import getConstantsAll from "getConstants" /* 1624 */;
 import DCDDeviceManager from "DCDDeviceManager" /* 4457 */;
-import productSK2ToIAPProductDefault from "productSK2ToIAPProduct" /* 10814 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 10815 */;
+import productSK2ToIAPProductDefault from "productSK2ToIAPProduct" /* 11034 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 11035 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import { convertToAlpha2 } from "DEFAULT_COUNTRY_CODE_NAME" /* 4174 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "updateProduct" /* 6084 */;
-import ME from "ME" /* 676 */;
-import { NAMESPACE_SNOWFLAKE_UUID } from "GuildFeatures" /* 1924 */;
-import set from "set" /* 500 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import closure_7 from "updateProduct" /* 6092 */;
+import ME from "ME" /* 673 */;
+import { NAMESPACE_SNOWFLAKE_UUID } from "GuildFeatures" /* 1923 */;
+import set from "set" /* 1234 */;
 
 require = arg1;
 function serializePurchaseResponse(originalTransactionDate) {
@@ -36,8 +36,8 @@ function serializePurchaseResponse(originalTransactionDate) {
   ({ productId: obj[4], transactionReceipt: obj[5], verificationResultIOS: obj[6] } = originalTransactionDate);
   return obj;
 }
-function convertToUUID(arg0) {
-  return v1.v5(arg0, NAMESPACE_SNOWFLAKE_UUID);
+function convertToUUID(id) {
+  return v1.v5(id, NAMESPACE_SNOWFLAKE_UUID);
 }
 function _restorePurchases() {
   const self = this;
@@ -81,7 +81,7 @@ function _restorePurchases() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -303,7 +303,7 @@ function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               obj1 = { value: null, done: false };
-              obj1[0] = closure_1_0(10795).getStorefront();
+              obj1[0] = closure_1_0(11015).getStorefront();
               return obj1;
             } else {
               c5 = 3;
@@ -356,17 +356,17 @@ function _fetchStoreFront() {
 }
 ({ CurrencyCodes: closure_8, IOS_BUNDLE_ID } = ME);
 ({ InAppUtils: unpackModuleId, RNIapIosSk2: closure_12 } = require("get ActivityIndicator").NativeModules);
-let items = [require("module_10795").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
+let items = [require("module_11015").ErrorCode.E_USER_CANCELLED, ME.StoreKitErrors.PAYMENT_CANCELED];
 let set = new Set(items);
 new timestampDefault("IAPUtils.tsx");
 let _default = {
   loadProducts() {
     if (obj.isIOS()) {
       const _Object = Object;
-      let items = [productSK2ToIAPProductDefault.fetchSubscriptions(Object.values(tmp(6087).ProductIds)), ];
+      let items = [productSK2ToIAPProductDefault.fetchSubscriptions(Object.values(tmp(6095).ProductIds)), ];
       const obj2 = productSK2ToIAPProductDefault;
       const _Object2 = Object;
-      items[1] = productSK2ToIAPProductDefault.fetchProducts(Object.values(tmp(6087).ProductIds));
+      items[1] = productSK2ToIAPProductDefault.fetchProducts(Object.values(tmp(6095).ProductIds));
       const obj3 = productSK2ToIAPProductDefault;
       let nextPromise = _Promise.all(items).then((arg0) => {
         [r10007, tmp] = arg0;
@@ -722,7 +722,7 @@ export const makeIAPRequest = function makeIAPRequest(c1, arg1, closure_3) {
 export const useCanPurchaseIAP = function useCanPurchaseIAP(productId) {
   const _require = productId;
   const items = [closure_6];
-  closure_1 = _require(589).useStateFromStores(items, () => {
+  closure_1 = _require(586).useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let flag;
     if (currentUser != null) {
@@ -733,9 +733,9 @@ export const useCanPurchaseIAP = function useCanPurchaseIAP(productId) {
     }
     return flag;
   }, []);
-  const obj = _require(589);
+  const obj = _require(586);
   const items1 = [closure_7];
-  return !_require(589).useStateFromStores(items1, () => {
+  return !_require(586).useStateFromStores(items1, () => {
     const isReadyResult = closure_1_7.isReady();
     let tmp2 = !isReadyResult;
     if (isReadyResult) {

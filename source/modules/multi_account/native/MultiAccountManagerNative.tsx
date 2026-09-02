@@ -1,18 +1,18 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 17240
+// Function ID: 17241
 // Name: push
-// Dependencies: [11983, 676, 3, 687, 4723, 17005, 2009, 4333, 1231, 17006, 15, 11986, 1222, 4338, 4332, 4194, 1236, 17007, 2]
+// Dependencies: [12207, 673, 3, 684, 4723, 17241, 2008, 4333, 1228, 17242, 15, 12210, 1219, 4338, 4332, 4194, 1233, 17243, 2]
 
-// Module 17004 (push)
+// Module 17240 (push)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 687 */;
+import setDefault from "set" /* 684 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
 import _modDef4723 from "module_4723" /* 4723 */;
-import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 11983 */;
-import _initializeDefault from "_initialize" /* 17006 */;
-import registerAssetDefault from "registerAsset" /* 17007 */;
-import ME from "ME" /* 676 */;
+import MAX_ACCOUNTS from "MAX_ACCOUNTS" /* 12207 */;
+import _initializeDefault from "_initialize" /* 17242 */;
+import registerAssetDefault from "registerAsset" /* 17243 */;
+import ME from "ME" /* 673 */;
 
 let obj = require;
 const SWITCH_ACCOUNTS_MODAL_KEY = MAX_ACCOUNTS.SWITCH_ACCOUNTS_MODAL_KEY;
@@ -111,7 +111,7 @@ prototype["onSwitchStart"] = function onSwitchStart() {
 prototype["onSwitchSuccess"] = function onSwitchSuccess(currentUser, navigateHome) {
   obj = currentUser;
   if (navigateHome) {
-    obj = obj(1222);
+    obj = obj(1219);
     obj.transitionTo(constants.ME, { navigationReplace: true });
     const MobileHomeDrawerExperiment = obj(4338).MobileHomeDrawerExperiment;
     if (MobileHomeDrawerExperiment.getConfig({ location: "multi-account" }).enableHome) {
@@ -133,8 +133,8 @@ prototype["onSwitchSuccess"] = function onSwitchSuccess(currentUser, navigateHom
 prototype["onSwitchError"] = function onSwitchError(currentUser) {
   obj = dispatcherDefault;
   obj = { key: "SWITCH_ACCOUNTS_TOAST_LOGIN_ERROR", content: null, icon: null };
-  const intl = obj(1236).intl;
-  obj[1] = intl.string(obj(1236).t.pqvKWA);
+  const intl = obj(1233).intl;
+  obj[1] = intl.string(obj(1233).t.pqvKWA);
   obj[2] = registerAssetDefault;
   obj.open(obj);
 };

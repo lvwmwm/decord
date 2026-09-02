@@ -1,11 +1,11 @@
 // Module ID: 4954
 // Function ID: 4955
 // Name: validateContentTypes
-// Dependencies: [32, 1401, 4955, 4949, 1471, 4461, 1486, 4956, 4192, 12, 2]
+// Dependencies: [32, 1400, 4955, 4949, 1470, 4461, 1485, 4956, 4192, 12, 2]
 
 // Module 4954 (validateContentTypes)
-import privDefault from "priv" /* 1401 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import privDefault from "priv" /* 1400 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import tDefault from "t" /* 4192 */;
 import getPathsFromURL from "getPathsFromURL" /* 4461 */;
 import AST_KEY from "AST_KEY" /* 4949 */;
@@ -108,7 +108,7 @@ function getRawText(content) {
                         if (tmp3(4949).AST_KEY.LIST !== type) {
                           if (tmp3(4949).AST_KEY.HEADING !== type) {
                             if (tmp3(4949).AST_KEY.SUBTEXT !== type) {
-                              let tmp3Result = tmp3(1471);
+                              let tmp3Result = tmp3(1470);
                               let tmp5 = nextResult;
                               let assertNeverResult = tmp3Result.assertNever(tmp2.type);
                             }
@@ -171,8 +171,8 @@ function isSuspiciousUrl(url) {
         if (!tmp7) {
           let tmp8 = "" !== parts[1];
           if (!tmp8) {
-            tmp8 = tmp9(1486).safeDecodeURIComponent(parts[2]) !== parts[2];
-            const tmp9Result = tmp9(1486);
+            tmp8 = tmp9(1485).safeDecodeURIComponent(parts[2]) !== parts[2];
+            const tmp9Result = tmp9(1485);
           }
           tmp7 = tmp8;
         }

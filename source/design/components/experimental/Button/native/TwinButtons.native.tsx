@@ -1,11 +1,11 @@
-// Module ID: 8986
-// Function ID: 8987
+// Module ID: 9000
+// Function ID: 9001
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 4478, 712, 4935, 4928, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4935, 4928, 2]
 // Exports: TwinButtons
 
-// Module 8986 (TwinButtons)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9000 (TwinButtons)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

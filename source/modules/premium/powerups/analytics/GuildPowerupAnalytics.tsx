@@ -1,12 +1,12 @@
-// Module ID: 12107
-// Function ID: 12108
+// Module ID: 12331
+// Function ID: 12332
 // Name: ModalType
-// Dependencies: [19, 676, 698, 2]
+// Dependencies: [19, 673, 695, 2]
 // Exports: useLogPowerupModalOpened
 
-// Module 12107 (ModalType)
+// Module 12331 (ModalType)
 import closure_2 from "noop" /* 19 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/premium/powerups/analytics/GuildPowerupAnalytics.tsx");
 

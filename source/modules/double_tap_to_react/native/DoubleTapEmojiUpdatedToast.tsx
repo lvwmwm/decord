@@ -1,20 +1,20 @@
-// Module ID: 9111
-// Function ID: 9112
+// Module ID: 9125
+// Function ID: 9126
 // Name: ToastEmoji
-// Dependencies: [19, 4470, 1925, 21, 4478, 712, 500, 589, 1431, 5585, 4474, 1236, 4915, 1351, 4194, 2]
+// Dependencies: [19, 4470, 1924, 21, 4478, 709, 1234, 586, 1430, 5593, 4474, 1233, 4915, 1350, 4194, 2]
 // Exports: showDoubleTapEmojiUpdatedToast
 
-// Module 9111 (ToastEmoji)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 9125 (ToastEmoji)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 require = arg1;
 class ToastEmoji {
@@ -91,11 +91,11 @@ export const showDoubleTapEmojiUpdatedToast = function showDoubleTapEmojiUpdated
   emoji = emoji.emoji;
   let obj = emoji(4915);
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(1351).AccessibilityAnnouncer;
-    const intl = tmp(1236).intl;
+    const AccessibilityAnnouncer = tmp(1350).AccessibilityAnnouncer;
+    const intl = tmp(1233).intl;
     obj = { emojiName: null };
     obj[0] = emoji.name;
-    AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp(1236).t.nKY0Fl, obj));
+    AccessibilityAnnouncer.announce(intl.formatToPlainString(tmp(1233).t.nKY0Fl, obj));
   } else {
     obj = { key: "DEFAULT_REACTION_EMOJI_UPDATED", icon: null, content: null, toastDurationMs: 3000 };
     obj[1] = function icon() {

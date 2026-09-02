@@ -1,13 +1,13 @@
-// Module ID: 15524
-// Function ID: 15525
+// Module ID: 15755
+// Function ID: 15756
 // Name: _getLatestVideo
-// Dependencies: [5, 17, 15523, 4857, 15525, 15526, 4445, 15527, 2009, 10270, 5073, 8537, 10269, 1493, 2]
+// Dependencies: [5, 17, 15754, 4857, 15756, 15757, 4445, 15758, 2008, 10292, 5081, 8550, 10291, 1492, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 15524 (_getLatestVideo)
+// Module 15755 (_getLatestVideo)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15523 */;
+import { useScreenRecordingStore } from "useScreenRecordingStore" /* 15754 */;
 
 const require = arg1;
 function _getLatestVideo() {

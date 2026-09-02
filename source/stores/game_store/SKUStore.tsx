@@ -1,13 +1,13 @@
 // Module ID: 4527
 // Function ID: 4528
 // Name: addSku
-// Dependencies: [4521, 1996, 589, 709, 2]
+// Dependencies: [4521, 1995, 586, 706, 2]
 
 // Module 4527 (addSku)
-import initializeAll from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeAll from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_1 from "createFromServer" /* 4521 */;
-import closure_2 from "_getSystemLocale" /* 1996 */;
+import closure_2 from "_getSystemLocale" /* 1995 */;
 import set from "set" /* 2 */;
 
 function addSku(sku) {

@@ -1,12 +1,12 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 9155
+// Function ID: 9156
 // Name: getEmojiPickerDataRowItemNativeSection
-// Dependencies: [9140, 2]
+// Dependencies: [9154, 2]
 // Exports: default
 
-// Module 9141 (getEmojiPickerDataRowItemNativeSection)
+// Module 9155 (getEmojiPickerDataRowItemNativeSection)
 import set from "set" /* 2 */;
-import useEmojiPickerData from "useEmojiPickerData" /* 9140 */;
+import useEmojiPickerData from "useEmojiPickerData" /* 9154 */;
 
 const result = set.fileFinishedImporting("modules/emoji_picker/native/components/data/getEmojiPickerDataRowItemNativeSection.tsx");
 

@@ -1,10 +1,10 @@
 // Module ID: 4634
 // Function ID: 4635
 // Name: baseFlatten
-// Dependencies: [4635, 794]
+// Dependencies: [4635, 791]
 
 // Module 4634 (baseFlatten)
-import arrayPush from "arrayPush" /* 794 */;
+import arrayPush from "arrayPush" /* 791 */;
 import isConcatSpreadable from "isConcatSpreadable" /* 4635 */;
 
 function baseFlatten(arg0, arg1, arg2, arg3, arg4) {

@@ -1,10 +1,10 @@
 // Module ID: 4818
 // Function ID: 4819
 // Name: SameValue
-// Dependencies: [572]
+// Dependencies: [569]
 
 // Module 4818 (SameValue)
-import isNaN from "isNaN" /* 572 */;
+import isNaN from "isNaN" /* 569 */;
 
 
 export default function SameValue(arg0, arg1) {

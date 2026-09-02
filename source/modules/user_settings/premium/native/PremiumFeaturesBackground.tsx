@@ -1,15 +1,15 @@
-// Module ID: 8095
-// Function ID: 8096
+// Module ID: 8103
+// Function ID: 8104
 // Name: PremiumFeaturesBackground
-// Dependencies: [19, 7177, 1924, 21, 4478, 712, 689, 4940, 691, 2]
+// Dependencies: [19, 7186, 1923, 21, 4478, 709, 686, 4940, 688, 2]
 // Exports: default
 
-// Module 8095 (PremiumFeaturesBackground)
+// Module 8103 (PremiumFeaturesBackground)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import { Gradients } from "items" /* 7177 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { Gradients } from "items" /* 7186 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -43,8 +43,8 @@ export default function PremiumFeaturesBackground(opacity) {
   let obj = { style: items, colors: mapped, start: null, end: null };
   items = [callback().cardContainer, style];
   const tmp2 = callback();
-  obj[2] = num(691).HorizontalGradient.START;
-  obj[3] = num(691).HorizontalGradient.END;
+  obj[2] = num(688).HorizontalGradient.START;
+  obj[3] = num(688).HorizontalGradient.END;
   const merged1 = Object.assign(merged);
   obj.children = children;
   return jsx(LinearGradientDefault, { style: items, colors: mapped, start: null, end: null });

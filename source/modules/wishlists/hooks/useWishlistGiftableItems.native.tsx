@@ -1,10 +1,10 @@
-// Module ID: 10473
-// Function ID: 10474
+// Module ID: 10694
+// Function ID: 10695
 // Name: set
-// Dependencies: [19, 676, 2]
+// Dependencies: [19, 673, 2]
 // Exports: useWishlistGiftableItems
 
-// Module 10473 (set)
+// Module 10694 (set)
 import closure_0 from "noop" /* 19 */;
 import set from "set" /* 2 */;
 

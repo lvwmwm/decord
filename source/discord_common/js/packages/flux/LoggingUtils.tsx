@@ -1,12 +1,12 @@
-// Module ID: 651
-// Function ID: 652
+// Module ID: 648
+// Function ID: 649
 // Name: logger
-// Dependencies: [4, 652, 653, 2]
+// Dependencies: [4, 649, 650, 2]
 
-// Module 651 (logger)
+// Module 648 (logger)
 import set from "set" /* 2 */;
 import log from "log" /* 4 */;
-import EventEmitter2 from "EventEmitter" /* 652 */;
+import EventEmitter2 from "EventEmitter" /* 649 */;
 
 const logger = new log.Logger("Flux");
 const EventEmitter = EventEmitter2.EventEmitter;

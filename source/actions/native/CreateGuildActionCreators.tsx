@@ -1,12 +1,12 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12506
+// Function ID: 12507
 // Name: showInstantInviteModal
-// Dependencies: [1982, 676, 9909, 2]
+// Dependencies: [1981, 673, 9931, 2]
 // Exports: showInstantInviteModal
 
-// Module 12282 (showInstantInviteModal)
-import closure_2 from "comparator" /* 1982 */;
-import { InstantInviteSources } from "ME" /* 676 */;
+// Module 12506 (showInstantInviteModal)
+import closure_2 from "comparator" /* 1981 */;
+import { InstantInviteSources } from "ME" /* 673 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("actions/native/CreateGuildActionCreators.tsx");

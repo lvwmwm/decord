@@ -1,14 +1,14 @@
-// Module ID: 8499
-// Function ID: 8500
+// Module ID: 8512
+// Function ID: 8513
 // Name: reset
-// Dependencies: [1303, 1340, 4517, 589, 4166, 709, 2]
+// Dependencies: [1302, 1339, 4517, 586, 4166, 706, 2]
 
-// Module 8499 (reset)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 8512 (reset)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import closure_5 from "initialize" /* 1303 */;
-import closure_6 from "handleConnectionClosedOrResumed" /* 1340 */;
+import closure_5 from "initialize" /* 1302 */;
+import closure_6 from "handleConnectionClosedOrResumed" /* 1339 */;
 import closure_7 from "setLibraryApplications" /* 4517 */;
 import set from "set" /* 2 */;
 

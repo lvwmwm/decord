@@ -1,11 +1,11 @@
-// Module ID: 8392
-// Function ID: 8393
+// Module ID: 8401
+// Function ID: 8402
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [4477, 4478, 712, 589, 2]
+// Dependencies: [4477, 4478, 709, 586, 2]
 // Exports: useLegacyTextMigrationHighlight
 
-// Module 8392 (useLegacyTextMigrationHighlight)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 8401 (useLegacyTextMigrationHighlight)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "getUserAgnosticState" /* 4477 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

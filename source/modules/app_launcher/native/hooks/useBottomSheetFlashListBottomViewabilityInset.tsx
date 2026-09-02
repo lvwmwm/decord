@@ -1,10 +1,10 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 11893
+// Function ID: 11894
 // Name: useBottomSheetFlashListBottomViewabilityInset
-// Dependencies: [19, 1493, 9049, 10993, 12, 4217, 2]
+// Dependencies: [19, 1492, 9063, 11213, 12, 4217, 2]
 // Exports: useBottomSheetFlashListBottomViewabilityInset
 
-// Module 11670 (useBottomSheetFlashListBottomViewabilityInset)
+// Module 11893 (useBottomSheetFlashListBottomViewabilityInset)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;
@@ -14,13 +14,13 @@ const result = require("set").fileFinishedImporting("modules/app_launcher/native
 
 export const useBottomSheetFlashListBottomViewabilityInset = function useBottomSheetFlashListBottomViewabilityInset() {
   let obj = bottomVisibilityInsetRef;
-  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(9049).AppLauncherContext);
+  const context = bottomVisibilityInsetRef.useContext(bottomSheetPosition(9063).AppLauncherContext);
   bottomSheetPosition = undefined;
   if (context != null) {
     bottomSheetPosition = context.bottomSheetPosition;
   }
   const flashListRef = obj.useRef(null);
-  const diff = flashListRef(1493)().height - flashListRef(10993)().maximum;
+  const diff = flashListRef(1492)().height - flashListRef(11213)().maximum;
   dependencyMap = diff;
   bottomVisibilityInsetRef = obj.useRef(9999);
   const memo = obj.useMemo(() => flashListRef(diff[4]).debounce((current) => {
@@ -31,7 +31,7 @@ export const useBottomSheetFlashListBottomViewabilityInset = function useBottomS
     }
   }, 200), []);
   const tmp = flashListRef;
-  const tmp3 = flashListRef(1493)();
+  const tmp3 = flashListRef(1492)();
   const fn = function u() {
     let num;
     if (bottomSheetPosition != null) {

@@ -1,29 +1,29 @@
-// Module ID: 10279
-// Function ID: 10280
+// Module ID: 10301
+// Function ID: 10302
 // Name: AttachmentIcon
-// Dependencies: [19, 17, 21, 4478, 712, 10280, 10281, 10282, 10283, 10284, 10285, 10286, 10287, 10288, 10289, 10290, 10291, 10292, 10293, 5078, 4474, 500, 5493, 1297, 10213, 8602, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 10302, 10303, 10304, 10305, 10306, 10307, 10308, 10309, 10310, 10311, 10312, 10313, 10314, 10315, 5086, 4474, 1234, 5501, 1296, 10235, 8617, 2]
 // Exports: default
 
-// Module 10279 (AttachmentIcon)
-import set from "set" /* 500 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+// Module 10301 (AttachmentIcon)
+import ThemesDefault from "Themes" /* 709 */;
+import set from "set" /* 1234 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5493 */;
-import registerAssetDefault from "registerAsset" /* 10280 */;
-import registerAssetDefault2 from "registerAsset" /* 10281 */;
-import registerAssetDefault3 from "registerAsset" /* 10282 */;
-import registerAssetDefault4 from "registerAsset" /* 10283 */;
-import registerAssetDefault5 from "registerAsset" /* 10284 */;
-import registerAssetDefault6 from "registerAsset" /* 10285 */;
-import registerAssetDefault7 from "registerAsset" /* 10286 */;
-import registerAssetDefault8 from "registerAsset" /* 10287 */;
-import registerAssetDefault9 from "registerAsset" /* 10288 */;
-import registerAssetDefault10 from "registerAsset" /* 10289 */;
-import registerAssetDefault11 from "registerAsset" /* 10290 */;
-import registerAssetDefault12 from "registerAsset" /* 10291 */;
-import registerAssetDefault13 from "registerAsset" /* 10292 */;
-import registerAssetDefault14 from "registerAsset" /* 10293 */;
+import preloadDefault from "preload" /* 5501 */;
+import registerAssetDefault from "registerAsset" /* 10302 */;
+import registerAssetDefault2 from "registerAsset" /* 10303 */;
+import registerAssetDefault3 from "registerAsset" /* 10304 */;
+import registerAssetDefault4 from "registerAsset" /* 10305 */;
+import registerAssetDefault5 from "registerAsset" /* 10306 */;
+import registerAssetDefault6 from "registerAsset" /* 10307 */;
+import registerAssetDefault7 from "registerAsset" /* 10308 */;
+import registerAssetDefault8 from "registerAsset" /* 10309 */;
+import registerAssetDefault9 from "registerAsset" /* 10310 */;
+import registerAssetDefault10 from "registerAsset" /* 10311 */;
+import registerAssetDefault11 from "registerAsset" /* 10312 */;
+import registerAssetDefault12 from "registerAsset" /* 10313 */;
+import registerAssetDefault13 from "registerAsset" /* 10314 */;
+import registerAssetDefault14 from "registerAsset" /* 10315 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -128,12 +128,12 @@ let closure_13 = importAllResult.memo((borderRadius) => {
       isIOSResult = uri.startsWith("ph://");
     }
     if (!isIOSResult) {
-      let isAndroidResult = tmp2(500).isAndroid();
+      let isAndroidResult = tmp2(1234).isAndroid();
       if (isAndroidResult) {
         isAndroidResult = uri.startsWith("content://");
       }
       isIOSResult = isAndroidResult;
-      const tmp2Result = tmp2(500);
+      const tmp2Result = tmp2(1234);
     }
     isMatch = isIOSResult;
     const obj4 = set;
@@ -218,10 +218,10 @@ export default function AttachmentPreview(height) {
           const obj3 = { uri: null };
           obj3[0] = uri;
           obj1[1] = obj3;
-          obj[1] = callback(tmp7(8602).VideoComponent, obj1);
+          obj[1] = callback(tmp7(8617).VideoComponent, obj1);
           tmp9 = callback(closure_5, obj);
         }
-        tmp7Result = tmp7(500);
+        tmp7Result = tmp7(1234);
       }
       tmp8 = dependencyMap;
     } else {
@@ -243,7 +243,7 @@ export default function AttachmentPreview(height) {
       const obj6 = { style: null, children: null };
       videoIcon = videoIcon.videoIcon;
       obj6[0] = videoIcon;
-      CirclePlayIcon = CirclePlayIcon(10213).CirclePlayIcon;
+      CirclePlayIcon = CirclePlayIcon(10235).CirclePlayIcon;
       tmp6 = callback(CirclePlayIcon, { size: "md", color: "white", secondaryColor: "black" });
       obj6[1] = tmp6;
       items[1] = callback(closure_5, obj6);

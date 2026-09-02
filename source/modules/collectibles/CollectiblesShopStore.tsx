@@ -1,11 +1,11 @@
-// Module ID: 7304
-// Function ID: 7305
+// Module ID: 7313
+// Function ID: 7314
 // Name: items
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 7304 (items)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7313 (items)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import set from "set" /* 2 */;
 
 const items = [];

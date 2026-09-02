@@ -1,11 +1,11 @@
-// Module ID: 7278
-// Function ID: 7279
+// Module ID: 7287
+// Function ID: 7288
 // Name: handleChange
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 7278 (handleChange)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7287 (handleChange)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 function handleChange(expand) {
   if (expand.expand) {

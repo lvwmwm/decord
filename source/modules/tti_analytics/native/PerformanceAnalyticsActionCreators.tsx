@@ -1,12 +1,12 @@
-// Module ID: 7418
-// Function ID: 7419
+// Module ID: 7427
+// Function ID: 7428
 // Name: ttiRecorded
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 // Exports: ttiRecorded
 
-// Module 7418 (ttiRecorded)
+// Module 7427 (ttiRecorded)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("modules/tti_analytics/native/PerformanceAnalyticsActionCreators.tsx");
 

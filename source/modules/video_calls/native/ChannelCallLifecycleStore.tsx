@@ -1,14 +1,14 @@
-// Module ID: 9535
-// Function ID: 9536
+// Module ID: 9548
+// Function ID: 9549
 // Name: initialize
-// Dependencies: [1981, 9521, 8603, 659, 589, 709, 2]
+// Dependencies: [1980, 9534, 8618, 656, 586, 706, 2]
 
-// Module 9535 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "handleConnectionOpen" /* 1981 */;
-import { VoiceCallOverlayType } from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9521 */;
+// Module 9548 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_3 from "handleConnectionOpen" /* 1980 */;
+import { VoiceCallOverlayType } from "BOX_MODE_ACTIONSHEET_WIDTH" /* 9534 */;
 
 let c4 = false;
 let c5 = false;

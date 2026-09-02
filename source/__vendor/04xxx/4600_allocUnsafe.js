@@ -1,10 +1,10 @@
 // Module ID: 4600
 // Function ID: 4601
 // Name: allocUnsafe
-// Dependencies: [609]
+// Dependencies: [606]
 
 // Module 4600 (allocUnsafe)
-import _mod609 from "module_609" /* 609 */;
+import _mod606 from "module_606" /* 606 */;
 
 let tmp = typeof exports === "object";
 if (typeof exports === "object") {
@@ -32,7 +32,7 @@ if (tmp2) {
 let _Buffer;
 if (tmp2) {
   if (tmp2.exports === tmp) {
-    _Buffer = _mod609.Buffer;
+    _Buffer = _mod606.Buffer;
   }
 }
 let allocUnsafe;

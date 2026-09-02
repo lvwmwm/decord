@@ -1,14 +1,14 @@
-// Module ID: 6489
-// Function ID: 6490
+// Module ID: 6498
+// Function ID: 6499
 // Name: DollarSignIllocon
-// Dependencies: [21, 5493, 6490, 2]
+// Dependencies: [21, 5501, 6499, 2]
 // Exports: DollarSignIllocon
 
-// Module 6489 (DollarSignIllocon)
+// Module 6498 (DollarSignIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6490 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6499 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/DollarSignIllocon.native.tsx");

@@ -1,18 +1,18 @@
-// Module ID: 16917
-// Function ID: 16918
+// Module ID: 17153
+// Function ID: 17154
 // Name: finishRoll
-// Dependencies: [1387, 1981, 11532, 8157, 4471, 5486, 1236, 7201, 7427, 2]
+// Dependencies: [1386, 1980, 11755, 8165, 4471, 5494, 1233, 7210, 7436, 2]
 
-// Module 16917 (finishRoll)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import initializeDefault from "initialize" /* 5486 */;
-import trackInviteDefault from "trackInvite" /* 7201 */;
-import rebuildDefault from "rebuild" /* 7427 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "handleConnectionOpen" /* 1981 */;
-import closure_5 from "INITIAL_STATE" /* 11532 */;
-import { INITIAL_STATE } from "INITIAL_STATE" /* 11532 */;
-import ROLL_DURATION_MS from "ROLL_DURATION_MS" /* 8157 */;
+// Module 17153 (finishRoll)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import initializeDefault from "initialize" /* 5494 */;
+import trackInviteDefault from "trackInvite" /* 7210 */;
+import rebuildDefault from "rebuild" /* 7436 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
+import closure_5 from "INITIAL_STATE" /* 11755 */;
+import { INITIAL_STATE } from "INITIAL_STATE" /* 11755 */;
+import ROLL_DURATION_MS from "ROLL_DURATION_MS" /* 8165 */;
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 
 require = arg1;

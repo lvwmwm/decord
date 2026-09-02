@@ -1,12 +1,12 @@
-// Module ID: 505
-// Function ID: 506
+// Module ID: 502
+// Function ID: 503
 // Name: sum
-// Dependencies: [506, 507, 2, 508, 509]
+// Dependencies: [503, 504, 2, 505, 506]
 // Exports: NOOP, NOOP_NULL, NOOP_PROMISE, NOOP_TRUE
 
-// Module 505 (sum)
-import importAllResult from "fromString" /* 506 */;
-import getAuthenticationPath from "getAuthenticationPath" /* 507 */;
+// Module 502 (sum)
+import importAllResult from "fromString" /* 503 */;
+import getAuthenticationPath from "getAuthenticationPath" /* 504 */;
 import set from "set" /* 2 */;
 
 const sum = location.protocol + window.GLOBAL_ENV.WEBAPP_ENDPOINT;
@@ -263,7 +263,7 @@ export const BLOG_DOMAIN = "blog.discord.com";
 export const FEEDBACK_DOMAIN = "feedback.discord.com";
 export const DOCS_DOMAIN = "docs.discord.com";
 export const UNSAFE_Colors = frozen;
-export const Fonts = { PRIMARY_NORMAL: "ggsans-Normal, NotoSans-Normal", PRIMARY_MEDIUM: "ggsans-Medium, NotoSans-Medium", PRIMARY_SEMIBOLD: "ggsans-Semibold, NotoSans-Semibold", PRIMARY_BOLD: "ggsans-Bold, NotoSans-Bold", PRIMARY_EXTRABOLD: "ggsans-ExtraBold, NotoSans-ExtraBold", DISPLAY_NORMAL: "ggsans-Normal, NotoSans-Normal", DISPLAY_MEDIUM: "ggsans-Medium, NotoSans-Medium", DISPLAY_SEMIBOLD: "ggsans-Semibold, NotoSans-Semibold", DISPLAY_BOLD: "ggsans-Bold, NotoSans-Bold", DISPLAY_EXTRABOLD: "ggsans-ExtraBold, NotoSans-ExtraBold", CODE_NORMAL: "ggmono-Normal, SourceCodePro-Normal", CODE_BOLD: "ggmono-Bold, SourceCodePro-Bold", GINTO_NORD_EXTRA_BOLD: "ABCGintoNord-ExtraBold" };
+export const Fonts = { PRIMARY_NORMAL: "ggsans-Normal, NotoSans-Normal", PRIMARY_MEDIUM: "ggsans-Medium, NotoSans-Medium", PRIMARY_SEMIBOLD: "ggsans-Semibold, NotoSans-Semibold", PRIMARY_BOLD: "ggsans-Bold, NotoSans-Bold", PRIMARY_EXTRABOLD: "ggsans-ExtraBold, NotoSans-ExtraBold", DISPLAY_NORMAL: "ggsans-Normal, NotoSans-Normal", DISPLAY_MEDIUM: "ggsans-Medium, NotoSans-Medium", DISPLAY_SEMIBOLD: "ggsans-Semibold, NotoSans-Semibold", DISPLAY_BOLD: "ggsans-Bold, NotoSans-Bold", DISPLAY_EXTRABOLD: "ggsans-ExtraBold, NotoSans-ExtraBold", CODE_NORMAL: "ggmono-Normal, SourceCodePro-Normal", CODE_BOLD: "ggmono-Bold, SourceCodePro-Bold", GINTO_NORD_EXTRA_BOLD: "ABCGintoNord-ExtraBold", GINTO_NORD_EXTRA_BOLD_ITALIC: "ABCGintoNord-ExtraBoldItalic", GINTO_DISCORD_NORD_BOLD: "ABCGintoDiscordNord-Bold", GINTO_DISCORD_NORD_BOLD_ITALIC: "ABCGintoDiscordNord-BoldItalic", GINTO_DISCORD_NORD_BLACK_ITALIC: "ABCGintoDiscordNord-BlackItalic" };
 export const StatusTypes = { ONLINE: "online", OFFLINE: "offline", IDLE: "idle", DND: "dnd", INVISIBLE: "invisible", STREAMING: "streaming", UNKNOWN: "unknown" };
 export const ClientTypes = { DESKTOP: "desktop", WEB: "web", MOBILE: "mobile", VR: "vr", UNKNOWN: "unknown" };
 export const RECAPTCHA_SITE_KEY = "6Lef5iQTAAAAAKeIvIY-DeexoO3gj7ryl9rLMEnn";

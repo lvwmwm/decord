@@ -1,13 +1,13 @@
-// Module ID: 14371
-// Function ID: 14372
+// Module ID: 14594
+// Function ID: 14595
 // Name: route
-// Dependencies: [1922, 7884, 676, 589, 11068, 1236, 14240, 2]
+// Dependencies: [1921, 7893, 673, 586, 11288, 1233, 14463, 2]
 
-// Module 14371 (route)
-import initialize from "initialize" /* 589 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import createToggle from "createToggle" /* 11068 */;
+// Module 14594 (route)
+import initialize from "initialize" /* 586 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
+import createToggle from "createToggle" /* 11288 */;
 
 require = arg1;
 createToggle = {
@@ -32,7 +32,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.PROFILE_CUSTOMIZATION,
   getComponent() {
-    return require(14240) /* ProfileCustomizationSubsection */.default;
+    return require(14463) /* ProfileCustomizationSubsection */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

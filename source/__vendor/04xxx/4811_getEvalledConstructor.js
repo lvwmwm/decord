@@ -1,10 +1,10 @@
 // Module ID: 4811
 // Function ID: 4812
 // Name: getEvalledConstructor
-// Dependencies: [540]
+// Dependencies: [537]
 
 // Module 4811 (getEvalledConstructor)
-import getEvalledConstructor from "getEvalledConstructor" /* 540 */;
+import getEvalledConstructor from "getEvalledConstructor" /* 537 */;
 
 
 export default getEvalledConstructor;

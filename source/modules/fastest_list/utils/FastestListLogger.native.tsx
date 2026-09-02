@@ -1,12 +1,12 @@
-// Module ID: 7782
-// Function ID: 7783
+// Module ID: 7791
+// Function ID: 7792
 // Name: logFastestListError
-// Dependencies: [3, 1208, 2]
+// Dependencies: [3, 1205, 2]
 // Exports: logFastestListError
 
-// Module 7782 (logFastestListError)
+// Module 7791 (logFastestListError)
 import timestampDefault from "timestamp" /* 3 */;
-import _modDef1208 from "module_1208" /* 1208 */;
+import _modDef1205 from "module_1205" /* 1205 */;
 
 let closure_2 = new timestampDefault("FastestList");
 const tmp2 = new timestampDefault("FastestList");
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/fastest_list/utils/
 
 export const logFastestListError = function logFastestListError(arg0, extra) {
   logger.error(arg0, extra);
-  let obj = _modDef1208;
+  let obj = _modDef1205;
   obj = { extra };
   obj.captureMessage(arg0, obj);
 };

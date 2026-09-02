@@ -1,12 +1,12 @@
-// Module ID: 15365
-// Function ID: 15366
+// Module ID: 15593
+// Function ID: 15594
 // Name: UserSettingsDesignSystemExperimentalButtons
-// Dependencies: [19, 17, 21, 4197, 712, 8984, 4926, 5992, 5607, 6236, 4426, 4928, 4474, 4204, 4940, 8365, 6241, 2]
+// Dependencies: [19, 17, 21, 4197, 709, 8998, 4926, 6000, 5615, 6245, 4426, 4928, 4474, 4204, 4940, 8374, 6250, 2]
 // Exports: default
 
-// Module 15365 (UserSettingsDesignSystemExperimentalButtons)
+// Module 15593 (UserSettingsDesignSystemExperimentalButtons)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
 import ManaContext from "ManaContext" /* 4204 */;
 import registerAssetDefault from "registerAsset" /* 4426 */;
@@ -14,12 +14,12 @@ import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
 import Button from "Button" /* 4928 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import registerAssetDefault2 from "registerAsset" /* 5607 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5992 */;
-import registerAssetDefault3 from "registerAsset" /* 6236 */;
-import registerAssetDefault4 from "registerAsset" /* 6241 */;
-import RowButtonWrapper from "RowButtonWrapper" /* 8365 */;
-import TwinButtons from "TwinButtons" /* 8984 */;
+import registerAssetDefault2 from "registerAsset" /* 5615 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
+import registerAssetDefault3 from "registerAsset" /* 6245 */;
+import registerAssetDefault4 from "registerAsset" /* 6250 */;
+import RowButtonWrapper from "RowButtonWrapper" /* 8374 */;
+import TwinButtons from "TwinButtons" /* 8998 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 

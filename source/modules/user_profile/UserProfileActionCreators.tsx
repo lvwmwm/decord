@@ -1,19 +1,19 @@
-// Module ID: 8077
-// Function ID: 8078
+// Module ID: 8085
+// Function ID: 8086
 // Name: _saveProfileChanges
-// Dependencies: [5, 1922, 676, 1924, 1231, 1363, 1236, 698, 8078, 7427, 709, 7757, 530, 5113, 4376, 2]
+// Dependencies: [5, 1921, 673, 1923, 1228, 1362, 1233, 695, 8086, 7436, 706, 7766, 527, 5121, 4376, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
-// Module 8077 (_saveProfileChanges)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1363 */;
+// Module 8085 (_saveProfileChanges)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 1362 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 require = arg1;
 function _saveProfileChanges() {

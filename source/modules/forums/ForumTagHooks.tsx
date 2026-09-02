@@ -1,14 +1,14 @@
-// Module ID: 6122
-// Function ID: 6123
+// Module ID: 6130
+// Function ID: 6131
 // Name: useAvailableTags
-// Dependencies: [19, 1387, 4121, 505, 589, 1471, 6123, 2]
+// Dependencies: [19, 1386, 4120, 502, 586, 1470, 6131, 2]
 // Exports: useAppliedTags, useAvailableTags, useSomeAppliedTags, useVisibleAppliedForumTags, useVisibleForumTags
 
-// Module 6122 (useAvailableTags)
+// Module 6130 (useAvailableTags)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4121 */;
-import { Permissions } from "sum" /* 505 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
+import { Permissions } from "sum" /* 502 */;
 
 const require = arg1;
 let closure_6 = [];
@@ -21,7 +21,7 @@ export const useAvailableTags = function useAvailableTags(parent_id) {
   }
   const items = [closure_3];
   const items1 = [parent_id];
-  return parent_id(589).useStateFromStoresObject(items, () => {
+  return parent_id(586).useStateFromStoresObject(items, () => {
     const channel = closure_1_3.getChannel(parent_id);
     let availableTags;
     if (channel != null) {

@@ -1,13 +1,13 @@
-// Module ID: 10399
-// Function ID: 10400
+// Module ID: 10421
+// Function ID: 10422
 // Name: _openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 676, 21, 698, 6104, 4837, 4858, 10400, 2009, 2]
+// Dependencies: [5, 19, 673, 21, 695, 6112, 4837, 4858, 10422, 2008, 2]
 // Exports: default
 
-// Module 10399 (_openStickersPremiumUpsellAlert)
+// Module 10421 (_openStickersPremiumUpsellAlert)
 import noopAll from "noop" /* 19 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

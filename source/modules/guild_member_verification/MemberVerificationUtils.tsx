@@ -1,14 +1,14 @@
-// Module ID: 5008
-// Function ID: 5009
+// Module ID: 5011
+// Function ID: 5012
 // Name: isValidFormResponse
-// Dependencies: [5009, 676, 4302, 1471, 2]
+// Dependencies: [5012, 673, 4302, 1470, 2]
 // Exports: guildHasVerificationGate, isAutomaticApprovalFormField, isManualApprovalFormField, isValidFormResponse, removeInternalFields
 
-// Module 5008 (isValidFormResponse)
+// Module 5011 (isValidFormResponse)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4302 */;
-import items from "items" /* 5009 */;
+import items from "items" /* 5012 */;
 
 ({ AUTOMATIC_APPROVAL_FORM_FIELDS: obj1, MANUAL_APPROVAL_FORM_FIELDS: c3 } = items);
 const GuildFeatures = ME.GuildFeatures;
@@ -27,7 +27,7 @@ export const isValidFormResponse = function isValidFormResponse(required) {
               if (tmp4(4302).VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
                 return typeof response === "number";
               } else {
-                return tmp4(1471).assertNever(field_type);
+                return tmp4(1470).assertNever(field_type);
               }
             }
           }

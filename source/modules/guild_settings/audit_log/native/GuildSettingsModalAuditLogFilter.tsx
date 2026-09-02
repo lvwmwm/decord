@@ -1,17 +1,17 @@
-// Module ID: 17129
-// Function ID: 17130
+// Module ID: 17365
+// Function ID: 17366
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1922, 17120, 676, 21, 4478, 712, 1236, 4322, 17122, 1628, 1499, 5454, 17130, 10679, 7694, 5599, 1297, 10112, 17131, 6221, 8910, 8105, 5939, 2]
+// Dependencies: [32, 19, 17, 1921, 17356, 673, 21, 4478, 709, 1233, 4322, 17358, 1627, 1498, 5462, 17366, 10900, 7703, 5607, 1296, 10134, 17367, 6230, 8925, 8113, 5947, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 17129 (GuildSettingsModalAuditLogFilter)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 17365 (GuildSettingsModalAuditLogFilter)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import closure_7 from "AuditLogActions" /* 17120 */;
-import { AuditLogFilterTypes } from "ME" /* 676 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import closure_7 from "AuditLogActions" /* 17356 */;
+import { AuditLogFilterTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -235,8 +235,8 @@ export const createAuditLogFilterUserData = function createAuditLogFilterUserDat
 };
 export const createAuditLogFilterActionData = function createAuditLogFilterActionData(closure_4) {
   const _require = closure_4;
-  const obj = _require(17122);
-  const mapped = _require(17122).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
+  const obj = _require(17358);
+  const mapped = _require(17358).ACTION_FILTER_ITEMS().map((label, index) => ({ label: label.label, value: label.value, selected: closure_0 === label.value, index }));
   return mapped.sort((selected, selected2) => {
     let num = -1;
     if (!selected.selected) {

@@ -1,11 +1,11 @@
-// Module ID: 8619
-// Function ID: 8620
+// Module ID: 8634
+// Function ID: 8635
 // Name: MessageEmbedTypes
-// Dependencies: [676, 2]
+// Dependencies: [673, 2]
 // Exports: typeToString
 
-// Module 8619 (MessageEmbedTypes)
-import ME from "ME" /* 676 */;
+// Module 8634 (MessageEmbedTypes)
+import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 ({ ChannelTypes: c0, MessageEmbedTypes } = ME);

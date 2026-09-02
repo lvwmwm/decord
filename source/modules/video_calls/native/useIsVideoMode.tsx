@@ -1,15 +1,15 @@
-// Module ID: 9894
-// Function ID: 9895
+// Module ID: 9916
+// Function ID: 9917
 // Name: useIsVideoMode
-// Dependencies: [4500, 1387, 4529, 1981, 4497, 589, 2]
+// Dependencies: [4500, 1386, 4529, 1980, 4497, 586, 2]
 // Exports: default, isVideoMode
 
-// Module 9894 (useIsVideoMode)
-import initialize from "initialize" /* 589 */;
+// Module 9916 (useIsVideoMode)
+import initialize from "initialize" /* 586 */;
 import closure_2 from "reset" /* 4500 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_5 from "handleConnectionOpen" /* 1981 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
 import closure_6 from "updateVoiceState" /* 4497 */;
 
 require = arg1;

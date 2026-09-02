@@ -1,25 +1,25 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13862
+// Function ID: 13863
 // Name: getAttachmentsRestriction
-// Dependencies: [5, 32, 19, 17, 1391, 1387, 4121, 676, 11266, 10632, 21, 4478, 712, 500, 1236, 13640, 10718, 1471, 13641, 4756, 698, 10032, 4489, 8633, 11286, 2009, 4859, 13642, 13643, 5502, 7607, 1624, 5495, 10721, 13644, 2]
+// Dependencies: [5, 32, 19, 17, 1390, 1386, 4120, 673, 11489, 10853, 21, 4478, 709, 1234, 1233, 13863, 10939, 1470, 13864, 4756, 695, 10054, 4489, 8648, 11509, 2008, 4859, 13865, 13866, 5510, 7617, 1623, 5503, 10942, 13867, 2]
 // Exports: default
 
-// Module 13639 (getAttachmentsRestriction)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 13862 (getAttachmentsRestriction)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
-import closure_9 from "ensureGuildLoaded" /* 1387 */;
-import closure_10 from "getUncachedChannelPermissions" /* 4121 */;
-import ME from "ME" /* 676 */;
-import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11266 */;
-import { UserRowModes } from "UserRowModes" /* 10632 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
+import closure_9 from "ensureGuildLoaded" /* 1386 */;
+import closure_10 from "getUncachedChannelPermissions" /* 4120 */;
+import ME from "ME" /* 673 */;
+import { MAX_DESTINATION_COUNT } from "MAX_DESTINATION_COUNT" /* 11489 */;
+import { UserRowModes } from "UserRowModes" /* 10853 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 require = arg1;
 function getAttachmentsRestriction(type) {
@@ -262,7 +262,7 @@ export default function ShareScreen(sharedContent) {
                               c4 = 3;
                               return { value: false, done: true };
                             } else {
-                              obj1 = callback(13641);
+                              obj1 = callback(13864);
                               obj1 = { attachments: null, channel: null, comment: null };
                               obj1[0] = closure_1_1;
                               obj1[1] = channel;
@@ -289,7 +289,7 @@ export default function ShareScreen(sharedContent) {
                           obj3[2] = channel.type;
                           obj3[3] = closure_1_1.length;
                           obj3[4] = closure_1_2;
-                          callback2(698).track(closure_3_11.SHARE_MESSAGE_SENT, obj3);
+                          callback2(695).track(closure_3_11.SHARE_MESSAGE_SENT, obj3);
                           c4 = 3;
                           return { value: "HermesInternal", done: null };
                         }

@@ -1,14 +1,14 @@
-// Module ID: 15446
-// Function ID: 15447
+// Module ID: 15676
+// Function ID: 15677
 // Name: route
-// Dependencies: [9840, 7884, 676, 589, 15447, 1236, 11068, 15448, 2]
+// Dependencies: [9862, 7893, 673, 586, 15677, 1233, 11288, 15678, 2]
 
-// Module 15446 (route)
-import initialize from "initialize" /* 589 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useSecureFramesVerifiedUserIds from "useSecureFramesVerifiedUserIds" /* 15447 */;
-import closure_2 from "items" /* 9840 */;
-import createToggle from "createToggle" /* 11068 */;
+// Module 15676 (route)
+import initialize from "initialize" /* 586 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import useSecureFramesVerifiedUserIds from "useSecureFramesVerifiedUserIds" /* 15677 */;
+import closure_2 from "items" /* 9862 */;
+import createToggle from "createToggle" /* 11288 */;
 
 require = arg1;
 createToggle = {
@@ -33,7 +33,7 @@ createToggle = {
 createToggle = {
   route: require("ME").UserSettingsSections.SECURE_FRAMES,
   getComponent() {
-    return require(15448) /* UserListItem */.default;
+    return require(15678) /* UserListItem */.default;
   }
 };
 createToggle = createToggle.createRoute(createToggle);

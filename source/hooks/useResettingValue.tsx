@@ -1,11 +1,11 @@
-// Module ID: 13216
-// Function ID: 13217
+// Module ID: 13438
+// Function ID: 13439
 // Name: useResettingValue
-// Dependencies: [32, 19, 5941, 4362, 2]
+// Dependencies: [32, 19, 5949, 4362, 2]
 // Exports: default
 
-// Module 13216 (useResettingValue)
-import useInitialValueDefault from "useInitialValue" /* 5941 */;
+// Module 13438 (useResettingValue)
+import useInitialValueDefault from "useInitialValue" /* 5949 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 

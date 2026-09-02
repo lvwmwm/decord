@@ -1,14 +1,14 @@
-// Module ID: 14983
-// Function ID: 14984
+// Module ID: 15212
+// Function ID: 15213
 // Name: EmojiSalutingFaceIcon
-// Dependencies: [19, 21, 712, 4196, 14984, 2]
+// Dependencies: [19, 21, 709, 4196, 15213, 2]
 // Exports: EmojiSalutingFaceIcon
 
-// Module 14983 (EmojiSalutingFaceIcon)
+// Module 15212 (EmojiSalutingFaceIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 14984 */;
+import registerAsset from "registerAsset" /* 15213 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

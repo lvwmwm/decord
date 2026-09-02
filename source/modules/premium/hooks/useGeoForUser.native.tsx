@@ -1,20 +1,20 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7172
+// Function ID: 7173
 // Name: useGeoForUser
-// Dependencies: [19, 1218, 4141, 6084, 589, 7160, 4837, 2]
+// Dependencies: [19, 1215, 4141, 6092, 586, 7169, 4837, 2]
 // Exports: default
 
-// Module 7163 (useGeoForUser)
+// Module 7172 (useGeoForUser)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
 import closure_5 from "handlePaymentSourceCreateEnd" /* 4141 */;
-import closure_6 from "updateProduct" /* 6084 */;
+import closure_6 from "updateProduct" /* 6092 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/hooks/useGeoForUser.native.tsx");
 
 export default function useGeoForUser() {
-  let obj = stateFromStores2(589);
+  let obj = stateFromStores2(586);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
     product = product.getProduct(stateFromStores2(table[5]).ProductIds.PREMIUM_TIER_2_MONTHLY);
@@ -25,10 +25,10 @@ export default function useGeoForUser() {
     return countryCode;
   });
   const items1 = [closure_5];
-  const stateFromStores1 = stateFromStores2(589).useStateFromStores(items1, () => ipLocation.ipLocation);
-  const obj2 = stateFromStores2(589);
+  const stateFromStores1 = stateFromStores2(586).useStateFromStores(items1, () => ipLocation.ipLocation);
+  const obj2 = stateFromStores2(586);
   const items2 = [closure_4];
-  stateFromStores2 = stateFromStores2(589).useStateFromStores(items2, () => authenticated.isAuthenticated());
+  stateFromStores2 = stateFromStores2(586).useStateFromStores(items2, () => authenticated.isAuthenticated());
   const items3 = [stateFromStores1, stateFromStores2];
   const effect = React.useEffect(() => {
     let tmp = stateFromStores2;

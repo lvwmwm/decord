@@ -1,14 +1,14 @@
-// Module ID: 5041
-// Function ID: 5042
+// Module ID: 5045
+// Function ID: 5046
 // Name: AnnouncementsSpoilerIcon
-// Dependencies: [19, 21, 712, 4196, 4999, 2]
+// Dependencies: [19, 21, 709, 4196, 5000, 2]
 // Exports: AnnouncementsSpoilerIcon
 
-// Module 5041 (AnnouncementsSpoilerIcon)
+// Module 5045 (AnnouncementsSpoilerIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 4999 */;
+import registerAsset from "registerAsset" /* 5000 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

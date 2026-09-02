@@ -1,13 +1,13 @@
-// Module ID: 14935
-// Function ID: 14936
+// Module ID: 15164
+// Function ID: 15165
 // Name: useDisplayNameStylesNewFonts
-// Dependencies: [19, 14936, 1939, 589, 14937, 2]
+// Dependencies: [19, 15165, 1938, 586, 15166, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 14935 (useDisplayNameStylesNewFonts)
+// Module 15164 (useDisplayNameStylesNewFonts)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "set" /* 14936 */;
-import items3 from "items3" /* 1939 */;
+import closure_3 from "set" /* 15165 */;
+import items3 from "items3" /* 1938 */;
 
 const require = arg1;
 ({ FLYWHEEL_EFFECTS: c4, FLYWHEEL_FONTS: c5 } = items3);
@@ -55,7 +55,7 @@ export const useDisplayNameStylesNewEffects = function useDisplayNameStylesNewEf
 };
 export const useDisplayNameStylesNewFontsBadge = function useDisplayNameStylesNewFontsBadge(visibleFontOrder) {
   const _require = visibleFontOrder;
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_3];
   const items1 = [visibleFontOrder];
   const stateFromStores = obj.useStateFromStores(items, () => newFontsBadgeDismissed.getNewFontsBadgeDismissed());
@@ -69,7 +69,7 @@ export const useDisplayNameStylesNewFontsBadge = function useDisplayNameStylesNe
 };
 export const useDisplayNameStylesNewEffectsBadge = function useDisplayNameStylesNewEffectsBadge(visibleEffectOrder) {
   const _require = visibleEffectOrder;
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_3];
   const items1 = [visibleEffectOrder];
   const stateFromStores = obj.useStateFromStores(items, () => newEffectsBadgeDismissed.getNewEffectsBadgeDismissed());

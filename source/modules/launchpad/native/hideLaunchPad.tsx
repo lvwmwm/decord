@@ -1,13 +1,13 @@
-// Module ID: 10703
-// Function ID: 10704
+// Module ID: 10924
+// Function ID: 10925
 // Name: hideLaunchPad
-// Dependencies: [676, 1231, 2]
+// Dependencies: [673, 1228, 2]
 // Exports: default
 
-// Module 10703 (hideLaunchPad)
+// Module 10924 (hideLaunchPad)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
+import ME from "ME" /* 673 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
 
 const ComponentActions = ME.ComponentActions;
 const result = set.fileFinishedImporting("modules/launchpad/native/hideLaunchPad.tsx");

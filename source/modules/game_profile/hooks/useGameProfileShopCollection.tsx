@@ -1,13 +1,13 @@
-// Module ID: 12630
-// Function ID: 12631
+// Module ID: 12851
+// Function ID: 12852
 // Name: useGameProfileShopCollection
-// Dependencies: [19, 8808, 589, 8883, 2]
+// Dependencies: [19, 8823, 586, 8898, 2]
 // Exports: useGameProfileShopCollection
 
-// Module 12630 (useGameProfileShopCollection)
+// Module 12851 (useGameProfileShopCollection)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_3 from "getSimilarGames" /* 8808 */;
+import closure_3 from "getSimilarGames" /* 8823 */;
 
 const useEffect = noop.useEffect;
 let result = set.fileFinishedImporting("modules/game_profile/hooks/useGameProfileShopCollection.tsx");

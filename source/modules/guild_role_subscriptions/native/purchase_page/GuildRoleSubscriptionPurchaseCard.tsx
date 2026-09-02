@@ -1,21 +1,21 @@
-// Module ID: 16134
-// Function ID: 16135
+// Module ID: 16365
+// Function ID: 16366
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4478, 712, 1628, 14823, 16129, 5622, 4474, 1297, 16135, 5624, 1236, 14833, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 1627, 15052, 16360, 5630, 4474, 1296, 16366, 5632, 1233, 15062, 2]
 // Exports: default
 
-// Module 16134 (GuildRoleSubscriptionPurchaseCard)
+// Module 16365 (GuildRoleSubscriptionPurchaseCard)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import Background from "Background" /* 5622 */;
-import BottomSheetModal from "BottomSheetModal" /* 5624 */;
-import getRoleEmojisAll from "getRoleEmojis" /* 14823 */;
-import SectionTitle from "SectionTitle" /* 14833 */;
-import TruncatedText from "TruncatedText" /* 16129 */;
-import emphasisHookDefault from "emphasisHook" /* 16135 */;
+import Background from "Background" /* 5630 */;
+import BottomSheetModal from "BottomSheetModal" /* 5632 */;
+import getRoleEmojisAll from "getRoleEmojis" /* 15052 */;
+import SectionTitle from "SectionTitle" /* 15062 */;
+import TruncatedText from "TruncatedText" /* 16360 */;
+import emphasisHookDefault from "emphasisHook" /* 16366 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

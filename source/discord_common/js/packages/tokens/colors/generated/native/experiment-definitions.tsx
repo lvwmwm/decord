@@ -1,11 +1,11 @@
-// Module ID: 715
-// Function ID: 716
+// Module ID: 712
+// Function ID: 713
 // Name: _private
-// Dependencies: [713, 2]
+// Dependencies: [710, 2]
 
-// Module 715 (_private)
+// Module 712 (_private)
 import set from "set" /* 2 */;
-import items from "items" /* 713 */;
+import items from "items" /* 710 */;
 
 const Themes = items._private.Themes;
 const result = set.fileFinishedImporting("../discord_common/js/packages/tokens/colors/generated/native/experiment-definitions.tsx");

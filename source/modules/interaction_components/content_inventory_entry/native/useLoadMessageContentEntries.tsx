@@ -1,11 +1,11 @@
-// Module ID: 11128
-// Function ID: 11129
+// Module ID: 11349
+// Function ID: 11350
 // Name: fetchColors
-// Dependencies: [32, 5, 19, 4519, 4506, 11129, 8116, 5954, 8041, 38, 8049, 1955, 8038, 6147, 2]
+// Dependencies: [32, 5, 19, 4519, 4506, 11350, 8124, 5962, 8050, 38, 8057, 1954, 8047, 6155, 2]
 // Exports: default
 
-// Module 11128 (fetchColors)
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
+// Module 11349 (fetchColors)
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "noop" /* 19 */;
@@ -417,7 +417,7 @@ function _fetchTopArtistContentParts() {
             } else if ("media" in lib.extra) {
               const image_url = lib.extra.media.image_url;
               v0(38)(null != image_url, "missing image url for top artist");
-              obj1 = lib(8041);
+              obj1 = lib(8050);
               dependencyMap = 1;
               v0 = 1;
               obj1 = { value: null, done: false };
@@ -517,7 +517,7 @@ function _loadContentEntryParts() {
                       if (closure_1_2.type === arr(closure_1_2[11]).ComponentType.CONTENT_INVENTORY_ENTRY) {
                         function _fetchEntryParts() {
                           const self = this;
-                          const tmp = closure_1_4(/* F123178 */ function() { ... });
+                          const tmp = closure_1_4(/* F125032 */ function() { ... });
                           closure_1 = tmp;
                           const apply = tmp.apply;
                           if (typeof apply === "unknown") {
@@ -737,7 +737,7 @@ function isMessageRenderable(arg0) {
     let tmp3 = require;
     let tmp4 = dependencyMap;
     if (nextResult.type === PermissionOverwriteType.ComponentType.CONTENT_INVENTORY_ENTRY) {
-      let tmp3Result = tmp3(8038);
+      let tmp3Result = tmp3(8047);
       let obj = { component: null, message: null };
       obj = { contentInventoryEntry: null };
       let tmp5 = nextResult;
@@ -773,7 +773,7 @@ export default function useLoadMessageContentEntries(arg0) {
   const tmp7 = first(first1.useState(new Set()), 2);
   first1 = tmp7[0];
   closure_6 = tmp7[1];
-  let obj = _require(8041);
+  let obj = _require(8050);
   _require = undefined;
   const colorStore = obj.useColorStore((palette) => palette.palette);
   _require = callback((arg0, arg1) => {

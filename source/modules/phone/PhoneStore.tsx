@@ -1,12 +1,12 @@
-// Module ID: 7716
-// Function ID: 7717
+// Module ID: 7725
+// Function ID: 7726
 // Name: handleSetLocationMetadata
-// Dependencies: [4174, 589, 709, 2]
+// Dependencies: [4174, 586, 706, 2]
 
-// Module 7716 (handleSetLocationMetadata)
+// Module 7725 (handleSetLocationMetadata)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import DEFAULT_COUNTRY_CODE_NAME from "DEFAULT_COUNTRY_CODE_NAME" /* 4174 */;
 
 function handleSetLocationMetadata(countryCode) {

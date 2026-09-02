@@ -1,11 +1,11 @@
-// Module ID: 16482
-// Function ID: 16483
+// Module ID: 16717
+// Function ID: 16718
 // Name: Settings
-// Dependencies: [19, 17, 21, 4478, 712, 16367, 1628, 7718, 4457, 4217, 16483, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 16599, 1627, 7727, 4457, 4217, 16718, 2]
 // Exports: default
 
-// Module 16482 (Settings)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16717 (Settings)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

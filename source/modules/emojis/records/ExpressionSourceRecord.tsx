@@ -1,15 +1,15 @@
-// Module ID: 6005
-// Function ID: 6006
+// Module ID: 6013
+// Function ID: 6014
 // Name: getEmojiSourceData
-// Dependencies: [5, 1936, 676, 530, 1431, 1429, 1426, 2]
+// Dependencies: [5, 1935, 673, 527, 1430, 1428, 1425, 2]
 
-// Module 6005 (getEmojiSourceData)
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
-import areSetsEqual from "areSetsEqual" /* 1429 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import toJSDefault from "toJS" /* 1936 */;
+// Module 6013 (getEmojiSourceData)
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
+import areSetsEqual from "areSetsEqual" /* 1428 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import toJSDefault from "toJS" /* 1935 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function getEmojiSourceData() {
@@ -108,7 +108,7 @@ prototype["getIconSource"] = function getIconSource(arg0, flag) {
   if (flag === undefined) {
     flag = false;
   }
-  return self(1431).getAnimatableSourceWithFallback(flag, (canAnimate) => {
+  return self(1430).getAnimatableSourceWithFallback(flag, (canAnimate) => {
     obj = self(closure_1_2[4]);
     obj = { id: self.id, size: closure_0, icon: self.icon, canAnimate };
     return obj.getGuildIconSource(obj);

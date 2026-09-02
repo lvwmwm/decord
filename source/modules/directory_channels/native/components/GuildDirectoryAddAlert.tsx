@@ -1,17 +1,17 @@
-// Module ID: 11889
-// Function ID: 11890
+// Module ID: 12112
+// Function ID: 12113
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 4478, 712, 4947, 1236, 6004, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4947, 1233, 6012, 4474, 2]
 // Exports: default
 
-// Module 11889 (GuildDirectoryAddAlert)
+// Module 12112 (GuildDirectoryAddAlert)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import componentDidMountDefault from "componentDidMount" /* 4947 */;
-import GuildIconSizes from "GuildIconSizes" /* 6004 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
+import GuildIconSizes from "GuildIconSizes" /* 6012 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

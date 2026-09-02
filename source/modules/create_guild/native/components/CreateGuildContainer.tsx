@@ -1,16 +1,16 @@
-// Module ID: 11900
-// Function ID: 11901
+// Module ID: 12123
+// Function ID: 12124
 // Name: CreateGuildContainer
-// Dependencies: [5, 32, 19, 1982, 1922, 676, 21, 4478, 5492, 5456, 5082, 11887, 5457, 1426, 9938, 5553, 11901, 2]
+// Dependencies: [5, 32, 19, 1981, 1921, 673, 21, 4478, 5500, 5464, 5090, 12110, 5465, 1425, 9960, 5561, 12124, 2]
 // Exports: default
 
-// Module 11900 (CreateGuildContainer)
+// Module 12123 (CreateGuildContainer)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "comparator" /* 1982 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { UPLOAD_MEDIUM_SIZE } from "ME" /* 676 */;
+import closure_6 from "comparator" /* 1981 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import { UPLOAD_MEDIUM_SIZE } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

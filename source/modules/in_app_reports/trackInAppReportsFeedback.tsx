@@ -1,13 +1,13 @@
-// Module ID: 16943
-// Function ID: 16944
+// Module ID: 17179
+// Function ID: 17180
 // Name: trackInAppReportsFeedback
-// Dependencies: [676, 698, 2]
+// Dependencies: [673, 695, 2]
 // Exports: default
 
-// Module 16943 (trackInAppReportsFeedback)
+// Module 17179 (trackInAppReportsFeedback)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/in_app_reports/trackInAppReportsFeedback.tsx");

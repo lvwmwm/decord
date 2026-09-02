@@ -1,11 +1,11 @@
-// Module ID: 1395
-// Function ID: 1396
+// Module ID: 1394
+// Function ID: 1395
 // Name: Permissions
-// Dependencies: [676, 506, 2]
+// Dependencies: [673, 503, 2]
 
-// Module 1395 (Permissions)
-import ME from "ME" /* 676 */;
-import importAllResult from "fromString" /* 506 */;
+// Module 1394 (Permissions)
+import ME from "ME" /* 673 */;
+import importAllResult from "fromString" /* 503 */;
 import set from "set" /* 2 */;
 
 const Permissions = ME.Permissions;

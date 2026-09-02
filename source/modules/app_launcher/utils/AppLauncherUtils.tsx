@@ -1,25 +1,25 @@
-// Module ID: 8145
-// Function ID: 8146
+// Module ID: 8153
+// Function ID: 8154
 // Name: getShelfBadgeTypeIfActive
-// Dependencies: [109, 5, 8146, 4504, 8434, 676, 4952, 4471, 1236, 8436, 8437, 500, 1955, 7268, 8438, 7427, 7201, 4857, 1431, 8435, 8444, 7266, 8445, 2]
+// Dependencies: [109, 5, 8154, 4504, 8443, 673, 4952, 4471, 1233, 8445, 8446, 1234, 1954, 7277, 8447, 7436, 7210, 4857, 1430, 8444, 8453, 7275, 8454, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 8145 (getShelfBadgeTypeIfActive)
-import set from "set" /* 500 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import buildCommand from "buildCommand" /* 7266 */;
-import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8435 */;
-import getApplicationFlags from "getApplicationFlags" /* 8436 */;
-import getPlatformDefault from "getPlatform" /* 8437 */;
-import canInstallApplication from "canInstallApplication" /* 8445 */;
+// Module 8153 (getShelfBadgeTypeIfActive)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import set from "set" /* 1234 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import buildCommand from "buildCommand" /* 7275 */;
+import AppLauncherEntrypoint from "AppLauncherEntrypoint" /* 8444 */;
+import getApplicationFlags from "getApplicationFlags" /* 8445 */;
+import getPlatformDefault from "getPlatform" /* 8446 */;
+import canInstallApplication from "canInstallApplication" /* 8454 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import closure_5 from "asyncGeneratorStep" /* 5 */;
-import closure_6 from "getIndexKey" /* 8146 */;
+import closure_6 from "getIndexKey" /* 8154 */;
 import closure_7 from "createExecutable" /* 4504 */;
-import closure_8 from "handleDismissWithDismissed" /* 8434 */;
-import { ApplicationFlags } from "ME" /* 676 */;
+import closure_8 from "handleDismissWithDismissed" /* 8443 */;
+import { ApplicationFlags } from "ME" /* 673 */;
 import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4952 */;
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 

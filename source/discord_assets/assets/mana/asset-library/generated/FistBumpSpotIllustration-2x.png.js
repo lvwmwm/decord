@@ -1,12 +1,12 @@
-// Module ID: 6554
-// Function ID: 6555
+// Module ID: 6563
+// Function ID: 6564
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6554 (metadata)
+// Module 6563 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FistBumpSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/437f0d77f67ffc960af8520cf9274d1c5f0956959be90c5848adfe32eac86ad9.png";
-export const metadata = { fileBytes: 80007 };
+export default "https://cdn.discordapp.com/assets/content/1d985b02d06afea18f12bdeced96f00a758127d801f605c07cfe7929c0522627.png";
+export const metadata = { fileBytes: 80351 };

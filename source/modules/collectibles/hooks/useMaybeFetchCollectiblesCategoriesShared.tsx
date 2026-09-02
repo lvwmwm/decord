@@ -1,15 +1,15 @@
-// Module ID: 8087
-// Function ID: 8088
+// Module ID: 8095
+// Function ID: 8096
 // Name: useMaybeFetchCollectiblesCategoriesShared
-// Dependencies: [32, 19, 4391, 7287, 678, 589, 7334, 7286, 2]
+// Dependencies: [32, 19, 4391, 7296, 675, 586, 7343, 7295, 2]
 // Exports: useMaybeFetchCollectiblesCategoriesShared
 
-// Module 8087 (useMaybeFetchCollectiblesCategoriesShared)
+// Module 8095 (useMaybeFetchCollectiblesCategoriesShared)
 import closure_2 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
 import closure_5 from "getHash" /* 4391 */;
-import closure_6 from "updateCategoriesAndProducts" /* 7287 */;
-import items from "items" /* 678 */;
+import closure_6 from "updateCategoriesAndProducts" /* 7296 */;
+import items from "items" /* 675 */;
 
 const require = arg1;
 ({ useEffect: c3, useCallback: c4 } = noop);
@@ -30,11 +30,11 @@ export const useMaybeFetchCollectiblesCategoriesShared = function useMaybeFetchC
   closure_7 = undefined;
   closure_8 = undefined;
   closure_9 = undefined;
-  let obj = _require(589);
+  let obj = _require(586);
   let items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => hasLoadedExperiments.hasLoadedExperiments);
   const items1 = [closure_6];
-  const tmp2 = callback(_require(589).useStateFromStoresArray(items1, () => {
+  const tmp2 = callback(_require(586).useStateFromStoresArray(items1, () => {
     const items = [, , , , , , ];
     ({ isFetchingCategories: arr[0], lastFetchOptions: arr[1], error: arr[2], lastErrorTimestamp } = closure_6);
     if (lastErrorTimestamp == null) {

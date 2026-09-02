@@ -1,14 +1,14 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 15214
+// Function ID: 15215
 // Name: EmojiSkullIcon
-// Dependencies: [19, 21, 712, 4196, 14986, 2]
+// Dependencies: [19, 21, 709, 4196, 15215, 2]
 // Exports: EmojiSkullIcon
 
-// Module 14985 (EmojiSkullIcon)
+// Module 15214 (EmojiSkullIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 14986 */;
+import registerAsset from "registerAsset" /* 15215 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

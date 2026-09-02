@@ -1,14 +1,14 @@
-// Module ID: 8155
-// Function ID: 8156
+// Module ID: 8163
+// Function ID: 8164
 // Name: useTopCommands
-// Dependencies: [19, 8148, 685, 1370, 589, 2]
+// Dependencies: [19, 8156, 682, 1369, 586, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 8155 (useTopCommands)
+// Module 8163 (useTopCommands)
 import closure_2 from "noop" /* 19 */;
-import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 8148 */;
-import closure_5 from "handleUserSettingsProtoStoreChange" /* 8148 */;
-import { UserSettingsTypes } from "MAX_FAVORITES" /* 685 */;
+import handleUserSettingsProtoStoreChange from "handleUserSettingsProtoStoreChange" /* 8156 */;
+import closure_5 from "handleUserSettingsProtoStoreChange" /* 8156 */;
+import { UserSettingsTypes } from "MAX_FAVORITES" /* 682 */;
 
 const require = arg1;
 ({ getFilteredTopCommands: c3, getTopRealCommands: c4 } = handleUserSettingsProtoStoreChange);

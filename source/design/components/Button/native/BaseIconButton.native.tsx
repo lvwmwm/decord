@@ -1,9 +1,9 @@
-// Module ID: 8007
-// Function ID: 8008
+// Module ID: 8016
+// Function ID: 8017
 // Name: BaseIconButton
 // Dependencies: [19, 21, 4478, 4933, 4217, 4930, 4934, 4936, 4938, 2]
 
-// Module 8007 (BaseIconButton)
+// Module 8016 (BaseIconButton)
 import _mod4217 from "module_4217" /* 4217 */;
 import IconSizesDefault from "IconSizes" /* 4930 */;
 import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4933 */;

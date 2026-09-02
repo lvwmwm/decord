@@ -1,7 +1,7 @@
 // Module ID: 4936
 // Function ID: 4937
 // Name: BaseButton
-// Dependencies: [109, 19, 17, 4937, 21, 4204, 4478, 4934, 4217, 1471, 500, 2]
+// Dependencies: [109, 19, 17, 4937, 21, 4204, 4478, 4934, 4217, 1470, 1234, 2]
 
 // Module 4936 (BaseButton)
 import closure_3 from "_objectWithoutProperties" /* 109 */;

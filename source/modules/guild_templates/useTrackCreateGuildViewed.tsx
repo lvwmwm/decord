@@ -1,13 +1,13 @@
-// Module ID: 11365
-// Function ID: 11366
+// Module ID: 11588
+// Function ID: 11589
 // Name: useTrackCreateGuildViewed
-// Dependencies: [19, 6171, 676, 698, 2]
+// Dependencies: [19, 6179, 673, 695, 2]
 // Exports: default
 
-// Module 11365 (useTrackCreateGuildViewed)
+// Module 11588 (useTrackCreateGuildViewed)
 import closure_2 from "noop" /* 19 */;
-import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6171 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6179 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/guild_templates/useTrackCreateGuildViewed.tsx");
 

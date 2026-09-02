@@ -1,13 +1,13 @@
-// Module ID: 17037
-// Function ID: 17038
+// Module ID: 17273
+// Function ID: 17274
 // Name: onPostConnectionOpen
-// Dependencies: [5, 1922, 676, 1624, 4457, 500, 5486, 4172, 17038, 17040, 698, 1208, 17041, 2]
+// Dependencies: [5, 1921, 673, 1623, 4457, 1234, 5494, 4172, 17274, 17276, 695, 1205, 17277, 2]
 
-// Module 17037 (onPostConnectionOpen)
-import initializeDefault from "initialize" /* 5486 */;
+// Module 17273 (onPostConnectionOpen)
+import initializeDefault from "initialize" /* 5494 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 let require = arg1;
 let c6 = 26;
@@ -234,11 +234,11 @@ prototype["collectAgeSignal"] = function collectAgeSignal() {
         } else if (1 === tmp7) {
           c3 = 0;
           callback = dependencyMap;
-          let obj2 = callback2(1208);
+          let obj2 = callback2(1205);
           obj2 = { tags: null };
           obj2[0] = { source: "parental_consent_manager", step: "collect_age_signal" };
           obj2.captureException(callback, obj2);
-          let obj4 = callback(500);
+          let obj4 = callback(1234);
           let str = "android";
           if (obj4.isIOS()) {
             str = "ios";

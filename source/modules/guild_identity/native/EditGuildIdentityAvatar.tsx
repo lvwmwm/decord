@@ -1,15 +1,15 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14530
+// Function ID: 14531
 // Name: EditGuildIdentityAvatar
-// Dependencies: [19, 1992, 1922, 676, 1924, 21, 4478, 589, 5953, 5973, 8069, 14263, 8079, 4139, 8076, 8169, 4445, 14264, 2009, 14265, 14265, 8067, 5068, 1236, 8106, 14266, 2]
+// Dependencies: [19, 1991, 1921, 673, 1923, 21, 4478, 586, 5961, 5981, 8077, 14486, 8087, 4139, 8084, 8177, 4445, 14487, 2008, 14488, 14488, 8075, 5076, 1233, 8114, 14489, 2]
 // Exports: default
 
-// Module 14307 (EditGuildIdentityAvatar)
+// Module 14530 (EditGuildIdentityAvatar)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "trackCommunicationDisabled" /* 1992 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
-import { PremiumUpsellTypes } from "GuildFeatures" /* 1924 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
+import { PremiumUpsellTypes } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

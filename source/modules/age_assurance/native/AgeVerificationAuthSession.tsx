@@ -1,14 +1,14 @@
-// Module ID: 8696
-// Function ID: 8697
+// Module ID: 8711
+// Function ID: 8712
 // Name: discard
-// Dependencies: [5, 17, 3, 644, 500, 2]
+// Dependencies: [5, 17, 3, 641, 1234, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 8696 (discard)
+// Module 8711 (discard)
 import timestampDefault from "timestamp" /* 3 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 const require = arg1;
 function discard() {

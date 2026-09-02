@@ -1,12 +1,12 @@
-// Module ID: 7581
-// Function ID: 7582
+// Module ID: 7591
+// Function ID: 7592
 // Name: _uploadMessageAttachments
-// Dependencies: [5, 7582, 7583, 4737, 709, 2]
+// Dependencies: [5, 7592, 7593, 4737, 706, 2]
 // Exports: uploadMessageAttachments
 
-// Module 7581 (_uploadMessageAttachments)
+// Module 7591 (_uploadMessageAttachments)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "initialize" /* 7582 */;
+import closure_4 from "initialize" /* 7592 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -56,7 +56,7 @@ function _uploadMessageAttachments() {
               closure_7 = undefined;
               c4 = 1;
               set = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -71,7 +71,7 @@ function _uploadMessageAttachments() {
               set = 3;
               return { value: "HermesInternal", done: null };
             } else {
-              const tmp16 = new callback2(7583)();
+              const tmp16 = new callback2(7593)();
               set = tmp16;
               const _HermesInternal = HermesInternal;
               closure_6 = "pending-upload-" + set._file.id;

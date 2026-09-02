@@ -1,10 +1,10 @@
-// Module ID: 7631
-// Function ID: 7632
+// Module ID: 7641
+// Function ID: 7642
 // Name: getInitialParserState
-// Dependencies: [7632, 4468, 2]
+// Dependencies: [7642, 4468, 2]
 // Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
 
-// Module 7631 (getInitialParserState)
+// Module 7641 (getInitialParserState)
 import set from "set" /* 2 */;
 import get_defaultRulesDefault from "get defaultRules" /* 4468 */;
 

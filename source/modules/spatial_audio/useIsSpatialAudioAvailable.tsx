@@ -1,11 +1,11 @@
-// Module ID: 13481
-// Function ID: 13482
+// Module ID: 13704
+// Function ID: 13705
 // Name: useIsSpatialAudioAvailable
-// Dependencies: [4529, 4542, 13482, 589, 2]
+// Dependencies: [4529, 4542, 13705, 586, 2]
 // Exports: default, isSpatialAudioAvailable
 
-// Module 13481 (useIsSpatialAudioAvailable)
-import apexExperimentDefault from "apexExperiment" /* 13482 */;
+// Module 13704 (useIsSpatialAudioAvailable)
+import apexExperimentDefault from "apexExperiment" /* 13705 */;
 import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
 import { Features } from "DesktopSources" /* 4542 */;
 

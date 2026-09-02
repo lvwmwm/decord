@@ -1,20 +1,20 @@
-// Module ID: 14337
-// Function ID: 14338
+// Module ID: 14560
+// Function ID: 14561
 // Name: RestrictedAccountRedirect
-// Dependencies: [19, 17, 4130, 1922, 676, 8670, 21, 4478, 712, 14338, 1236, 6245, 589, 7766, 7687, 5599, 4928, 2]
+// Dependencies: [19, 17, 4130, 1921, 673, 8685, 21, 4478, 709, 14561, 1233, 6254, 586, 7775, 7696, 5607, 4928, 2]
 
-// Module 14337 (RestrictedAccountRedirect)
-import initialize from "initialize" /* 589 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import handleOpenEmailVerification from "handleOpenEmailVerification" /* 7766 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14338 */;
+// Module 14560 (RestrictedAccountRedirect)
+import initialize from "initialize" /* 586 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import handleOpenEmailVerification from "handleOpenEmailVerification" /* 7775 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14561 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
-import { AnalyticsSections } from "ME" /* 676 */;
-import { SafetySettingsNoticeType } from "SafetyToastType" /* 8670 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
+import { AnalyticsSections } from "ME" /* 673 */;
+import { SafetySettingsNoticeType } from "SafetyToastType" /* 8685 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -66,7 +66,7 @@ const memoResult = importAllResult.memo(() => {
       ({ button: obj6[0], button: obj6[1] } = bannerText);
       obj1[2] = callback;
       obj[4] = callback(tmp2(4928).Button, obj1);
-      tmp14 = callback(tmp2(5599).TableRow, obj);
+      tmp14 = callback(tmp2(5607).TableRow, obj);
     }
     items2[1] = tmp14;
     obj[1] = items2;

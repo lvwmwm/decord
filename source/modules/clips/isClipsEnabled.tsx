@@ -1,7 +1,7 @@
 // Module ID: 4539
 // Function ID: 4540
 // Name: isClipsEnabled
-// Dependencies: [4535, 4540, 589, 2]
+// Dependencies: [4535, 4540, 586, 2]
 // Exports: isClipsEnabled, useIsClipsEnabled
 
 // Module 4539 (isClipsEnabled)

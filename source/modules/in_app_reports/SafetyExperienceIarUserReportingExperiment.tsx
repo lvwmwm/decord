@@ -1,10 +1,10 @@
-// Module ID: 9057
-// Function ID: 9058
+// Module ID: 9071
+// Function ID: 9072
 // Name: experiment
 // Dependencies: [4389, 2]
 // Exports: isIarUserReportingEnabled, useIsIarUserReportingEnabled
 
-// Module 9057 (experiment)
+// Module 9071 (experiment)
 import set from "set" /* 2 */;
 import createExperiment from "createExperiment" /* 4389 */;
 

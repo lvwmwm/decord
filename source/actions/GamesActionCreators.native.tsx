@@ -1,14 +1,14 @@
-// Module ID: 11332
-// Function ID: 11333
+// Module ID: 11555
+// Function ID: 11556
 // Name: fetchJoinSecret
-// Dependencies: [5, 676, 4506, 9465, 691, 6158, 4190, 709, 530, 9470, 9461, 9450, 2]
+// Dependencies: [5, 673, 4506, 9478, 688, 6166, 4190, 706, 527, 9483, 9474, 9463, 2]
 
-// Module 11332 (fetchJoinSecret)
+// Module 11555 (fetchJoinSecret)
 import _modDef4190 from "module_4190" /* 4190 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import { ActivityIntent } from "items3" /* 4506 */;
-import { MAIN_SURFACE } from "FrameLayoutModes" /* 9465 */;
+import { MAIN_SURFACE } from "FrameLayoutModes" /* 9478 */;
 
 const require = arg1;
 function fetchJoinSecret(application) {
@@ -27,11 +27,11 @@ function fetchJoinSecret(application) {
     obj[1] = messageId;
     tmp2 = obj;
   }
-  id(709).dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: id, remotePartyId });
-  const HTTP = _require(530).HTTP;
+  id(706).dispatch({ type: "ACTIVITY_JOIN_LOADING", applicationId: id, remotePartyId });
+  const HTTP = _require(527).HTTP;
   obj = { url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), retries: 3, query: tmp2, oldFormErrors: true, rejectWithError: true };
   const value = HTTP.get(obj);
-  return value.then((arg0) => f122398(arg0), () => {
+  return value.then((arg0) => f124251(arg0), () => {
     let obj = id(application[7]);
     obj = { type: "ACTIVITY_JOIN_FAILED", applicationId: id };
     obj.dispatch(obj);
@@ -142,9 +142,9 @@ export default {
                 let tmp9 = closure_1_10(tmp25, () => true);
               } else {
                 tmp9 = (function joinViaDeeplink(application) {
-                  let f122398 = application;
+                  let f124251 = application;
                   application = application.application;
-                  if (application.id === f122398(application[4]).DISCORD_CONNECT_EXAMPLE_APP_APPLICATION_ID) {
+                  if (application.id === f124251(application[4]).DISCORD_CONNECT_EXAMPLE_APP_APPLICATION_ID) {
                     let deeplink_uri = tmp(tmp2[4]).DISCORD_CONNECT_EXAMPLE_APP_DEEPLINK_URI;
                   } else {
                     deeplink_uri = application.deeplink_uri;
@@ -156,7 +156,7 @@ export default {
                     }
                     return resolved;
                   }
-                  f122398 = (body) => {
+                  f124251 = (body) => {
                     const join_url = body.body.join_url;
                     const secret = body.body.secret;
                     if (null != join_url) {
@@ -166,7 +166,7 @@ export default {
                       ({ id: obj5[1], parent_id: obj5[2] } = application);
                       obj[3] = secret;
                       obj[4] = closure_1_8.PLAY;
-                      let flag3 = f122398.embedded;
+                      let flag3 = f124251.embedded;
                       if (flag3 == null) {
                         flag3 = false;
                       }
@@ -190,7 +190,7 @@ export default {
                         ({ id: obj8[1], parent_id: obj8[2] } = application);
                         obj1[3] = secret;
                         obj1[4] = closure_1_8.PLAY;
-                        let flag = f122398.embedded;
+                        let flag = f124251.embedded;
                         if (flag == null) {
                           flag = false;
                         }
@@ -221,7 +221,7 @@ export default {
                   const HTTP = tmp(tmp2[8]).HTTP;
                   obj = { url: closure_4.USER_ACTIVITY_JOIN(userId, sessionId, id), retries: 3, query: tmp8, oldFormErrors: true, rejectWithError: true };
                   const value = HTTP.get(obj);
-                  resolved = value.then((arg0) => f122398(arg0), () => {
+                  resolved = value.then((arg0) => f124251(arg0), () => {
                     let obj = id(application[7]);
                     obj = { type: "ACTIVITY_JOIN_FAILED", applicationId: id };
                     obj.dispatch(obj);

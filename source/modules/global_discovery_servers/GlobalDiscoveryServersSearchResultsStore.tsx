@@ -1,14 +1,14 @@
-// Module ID: 13356
-// Function ID: 13357
+// Module ID: 13580
+// Function ID: 13581
 // Name: map
-// Dependencies: [9730, 4376, 589, 709, 2]
+// Dependencies: [9752, 4376, 586, 706, 2]
 
-// Module 13356 (map)
+// Module 13580 (map)
 import set2 from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4376 */;
-import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9730 */;
+import DEFAULT_DISCOVERY_CATEGORY_ID from "DEFAULT_DISCOVERY_CATEGORY_ID" /* 9752 */;
 
 ({ SEARCH_RESULTS_QUERY_PREFIX: obj1, SEARCH_RESULTS_CATEGORY_PREFIX: c3, SEARCH_RESULTS_LANGUAGE_CODE_PREFIX: c4 } = DEFAULT_DISCOVERY_CATEGORY_ID);
 const map = new Map();

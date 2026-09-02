@@ -1,18 +1,18 @@
-// Module ID: 8883
-// Function ID: 8884
+// Module ID: 8898
+// Function ID: 8899
 // Name: _getShopCollection
-// Dependencies: [5, 1996, 8808, 676, 8884, 709, 4755, 530, 589, 584, 687, 8878, 2]
+// Dependencies: [5, 1995, 8823, 673, 8899, 706, 4755, 527, 586, 581, 684, 8893, 2]
 // Exports: getGameAnnouncements, getShopCollection
 
-// Module 8883 (_getShopCollection)
-import failsDefault from "fails" /* 584 */;
-import setDefault from "set" /* 687 */;
+// Module 8898 (_getShopCollection)
+import failsDefault from "fails" /* 581 */;
+import setDefault from "set" /* 684 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import importDefaultResult from "getSimilarGames" /* 8808 */;
-import { Endpoints } from "ME" /* 676 */;
-import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_7 } from "set" /* 8884 */;
-import initialize from "initialize" /* 589 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import importDefaultResult from "getSimilarGames" /* 8823 */;
+import { Endpoints } from "ME" /* 673 */;
+import { SIMILAR_GAMES_BLOCKED_GAME_IDS as closure_7 } from "set" /* 8899 */;
+import initialize from "initialize" /* 586 */;
 
 const require = arg1;
 function _getShopCollection() {
@@ -37,7 +37,7 @@ function _getShopCollection() {
       yield callback(closure_1_2[6]).httpGetWithCountryCodeQuery(obj2);
       if (1 === tmp7) {
         locale = 0;
-        obj3 = callback2(709);
+        obj3 = callback2(706);
         const obj5 = { type: "GAME_PROFILE_GET_SHOP_COLLECTION_ERROR", collectionId: null };
         obj5[1] = callback;
         obj3.dispatch(obj5);
@@ -48,7 +48,7 @@ function _getShopCollection() {
       } else if (arg0 !== 2) {
         const products = body.body.products;
         callback2 = products.flatMap((sku_ids) => sku_ids.sku_ids);
-        const obj = callback2(709);
+        const obj = callback2(706);
         const obj6 = { type: "GAME_PROFILE_GET_SHOP_COLLECTION_SUCCESS", collectionId: null, skuIds: null };
         obj6[1] = callback;
         obj6[2] = callback2;
@@ -187,7 +187,7 @@ function _getGameAnnouncements() {
       yield HTTP.get(obj3);
       if (1 === tmp8) {
         c7 = 0;
-        obj1 = body(709);
+        obj1 = body(706);
         const obj5 = { type: "GAME_PROFILE_GET_ANNOUNCEMENTS_ERROR", gameId: null };
         obj5[1] = callback;
         obj1.dispatch(obj5);
@@ -199,8 +199,8 @@ function _getGameAnnouncements() {
         body = body.body;
         const obj6 = { type: "GAME_PROFILE_GET_ANNOUNCEMENTS_SUCCESS", gameId: null, messages: null, channelId: null, guildId: null };
         obj6[1] = callback;
-        const obj9 = body(709);
-        obj6[2] = callback(8878).toAnnouncementMessages(body.messages);
+        const obj9 = body(706);
+        obj6[2] = callback(8893).toAnnouncementMessages(body.messages);
         const channel_id = body.channel_id;
         dependencyMap = channel_id;
         if (channel_id == null) {
@@ -215,7 +215,7 @@ function _getGameAnnouncements() {
         obj6[4] = c3;
         obj9.dispatch(obj6);
         c7 = 0;
-        const obj11 = callback(8878);
+        const obj11 = callback(8893);
       }
       c7 = 0;
       return body;

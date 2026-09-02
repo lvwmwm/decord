@@ -1,15 +1,15 @@
-// Module ID: 15276
-// Function ID: 15277
+// Module ID: 15504
+// Function ID: 15505
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 7157, 676, 21, 4478, 589, 7737, 6046, 5981, 7705, 2]
+// Dependencies: [5, 19, 17, 7166, 673, 21, 4478, 586, 7746, 6054, 5989, 7714, 2]
 // Exports: default
 
-// Module 15276 (ClipboardCopyInput)
+// Module 15504 (ClipboardCopyInput)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getState" /* 7157 */;
-import { AppStates } from "ME" /* 676 */;
+import closure_6 from "getState" /* 7166 */;
+import { AppStates } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 9434
-// Function ID: 9435
+// Module ID: 9447
+// Function ID: 9448
 // Name: updateActivities
-// Dependencies: [9435, 659, 589, 709, 2]
+// Dependencies: [9448, 656, 586, 706, 2]
 
-// Module 9434 (updateActivities)
-import initializeDefault from "initialize" /* 589 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import handleUpdateActivityDefault from "handleUpdateActivity" /* 9435 */;
+// Module 9447 (updateActivities)
+import initializeDefault from "initialize" /* 586 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import handleUpdateActivityDefault from "handleUpdateActivity" /* 9448 */;
 
 function updateActivities() {
   items = [];

@@ -1,12 +1,12 @@
-// Module ID: 9001
-// Function ID: 9002
+// Module ID: 9015
+// Function ID: 9016
 // Name: SidebarVisibilityMethodStore
-// Dependencies: [644, 2]
+// Dependencies: [641, 2]
 // Exports: getVisibleChannelIdsMethod, getVisibleGuildIdsMethod, setGetVisibleChannelIds, setGetVisibleGuildIds
 
-// Module 9001 (SidebarVisibilityMethodStore)
+// Module 9015 (SidebarVisibilityMethodStore)
 import set from "set" /* 2 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 let obj = keys.create(() => ({}));
 const result = set.fileFinishedImporting("modules/guild_sidebar/SidebarVisibilityMethodStore.tsx");

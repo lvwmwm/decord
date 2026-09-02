@@ -1,24 +1,24 @@
-// Module ID: 16081
-// Function ID: 16082
+// Module ID: 16312
+// Function ID: 16313
 // Name: CutoutGuildIconWithUserCustom
-// Dependencies: [19, 17, 1387, 1992, 1909, 676, 21, 16040, 712, 8098, 6004, 1297, 4935, 589, 4747, 8926, 4673, 4474, 4674, 16082, 1236, 5029, 16080, 5068, 7386, 8798, 2]
+// Dependencies: [19, 17, 1386, 1991, 1908, 673, 21, 16271, 709, 8106, 6012, 1296, 4935, 586, 4747, 8940, 4673, 4474, 4674, 16313, 1233, 5033, 16311, 5076, 7395, 8813, 2]
 // Exports: default
 
-// Module 16081 (CutoutGuildIconWithUserCustom)
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
-import GuildIconSizes from "GuildIconSizes" /* 6004 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
-import SolidCutout from "SolidCutout" /* 8098 */;
-import SolidCutoutDefault from "SolidCutout" /* 8098 */;
+// Module 16312 (CutoutGuildIconWithUserCustom)
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
+import GuildIconSizes from "GuildIconSizes" /* 6012 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
+import SolidCutout from "SolidCutout" /* 8106 */;
+import SolidCutoutDefault from "SolidCutout" /* 8106 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 676 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import closure_7 from "createGuildRecordFromRust" /* 1908 */;
+import { DEFAULT_ROLE_COLOR_HEX } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 16040 */;
+import createICYMIStyles from "createICYMIStyles" /* 16271 */;
 
 require = arg1;
 function CutoutGuildIconWithUserCustom(guild) {

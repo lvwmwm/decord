@@ -1,17 +1,17 @@
-// Module ID: 11076
-// Function ID: 11077
+// Module ID: 11296
+// Function ID: 11297
 // Name: useMessageAuthorActivities
-// Dependencies: [32, 19, 17, 10945, 9534, 4855, 1909, 4569, 589, 12, 643, 5954, 1471, 7480, 11077, 10890, 11078, 2]
+// Dependencies: [32, 19, 17, 11165, 9547, 4855, 1908, 4569, 586, 12, 640, 5962, 1470, 7490, 11297, 11110, 11298, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 11076 (useMessageAuthorActivities)
+// Module 11296 (useMessageAuthorActivities)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { findNodeHandle } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_toTimestampMs" /* 10945 */;
-import { updateShouldShowJumpToPresentButton as closure_7 } from "updateChatInputContainerHeight" /* 9534 */;
+import closure_6 from "_toTimestampMs" /* 11165 */;
+import { updateShouldShowJumpToPresentButton as closure_7 } from "updateChatInputContainerHeight" /* 9547 */;
 import closure_8 from "handleConnectionOpen" /* 4855 */;
-import closure_9 from "createGuildRecordFromRust" /* 1909 */;
+import closure_9 from "createGuildRecordFromRust" /* 1908 */;
 import closure_10 from "sortActivity" /* 4569 */;
 
 const require = arg1;
@@ -31,7 +31,7 @@ export const useMessageAuthorActivities = function useMessageAuthorActivities(ar
   }, items);
   const items1 = [closure_10];
   const items2 = [memo];
-  return _require(589).useStateFromStoresObject(items1, () => memo(closure_1_2[9]).mapValues(memo, (arg0, arg1) => primaryActivity.getPrimaryActivity(arg1)), items2);
+  return _require(586).useStateFromStoresObject(items1, () => memo(closure_1_2[9]).mapValues(memo, (arg0, arg1) => primaryActivity.getPrimaryActivity(arg1)), items2);
 };
 export const useFetchMessageApplications = function useFetchMessageApplications(arg0) {
   closure_0 = arg0;
@@ -62,7 +62,7 @@ export const useFetchVoiceChannelInviteStartTimes = function useFetchVoiceChanne
   const _require = stateFromStores4;
   const items = [closure_9, closure_8];
   const items1 = [stateFromStores4];
-  const stateFromStoresObject = _require(589).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = _require(586).useStateFromStoresObject(items, () => {
     const obj = {};
     const values = stateFromStores4.values();
     const iter = values[Symbol.iterator]();

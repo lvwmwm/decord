@@ -1,13 +1,13 @@
-// Module ID: 12166
-// Function ID: 12167
+// Module ID: 12390
+// Function ID: 12391
 // Name: ApplicationIconAndName
-// Dependencies: [21, 4478, 712, 1297, 4474, 2]
+// Dependencies: [21, 4478, 709, 1296, 4474, 2]
 // Exports: default
 
-// Module 12166 (ApplicationIconAndName)
+// Module 12390 (ApplicationIconAndName)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

@@ -1,10 +1,10 @@
-// Module ID: 11841
-// Function ID: 11842
+// Module ID: 12064
+// Function ID: 12065
 // Name: MIN_PAN_GESTURE_MOVE
-// Dependencies: [500, 2]
+// Dependencies: [1234, 2]
 
-// Module 11841 (MIN_PAN_GESTURE_MOVE)
-import set from "set" /* 500 */;
+// Module 12064 (MIN_PAN_GESTURE_MOVE)
+import set from "set" /* 1234 */;
 
 set = set.isIOS();
 const result = set.fileFinishedImporting("modules/panels/morphable/native/MorphablePanelConstants.tsx");

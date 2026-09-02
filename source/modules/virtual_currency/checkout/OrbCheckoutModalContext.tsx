@@ -1,16 +1,16 @@
-// Module ID: 12562
-// Function ID: 12563
+// Module ID: 12786
+// Function ID: 12787
 // Name: useOrbCheckoutModalContextProvider
-// Dependencies: [19, 1922, 4527, 21, 514, 589, 4139, 10917, 6078, 8492, 7298, 4154, 11353, 2]
+// Dependencies: [19, 1921, 4527, 21, 511, 586, 4139, 11137, 6086, 8505, 7307, 4154, 11576, 2]
 // Exports: OrbCheckoutModalContextProvider, useOrbCheckoutModalContext
 
-// Module 12562 (useOrbCheckoutModalContextProvider)
+// Module 12786 (useOrbCheckoutModalContextProvider)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
 import noop from "noop" /* 19 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import closure_7 from "addSku" /* 4527 */;
-import v1 from "v1" /* 514 */;
+import v1 from "v1" /* 511 */;
 
 function useOrbCheckoutModalContextProvider(value) {
   const skuId = value.skuId;

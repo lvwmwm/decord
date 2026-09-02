@@ -1,14 +1,14 @@
-// Module ID: 12480
-// Function ID: 12481
+// Module ID: 12704
+// Function ID: 12705
 // Name: ThreadMinusIcon
-// Dependencies: [19, 21, 712, 4196, 12481, 2]
+// Dependencies: [19, 21, 709, 4196, 12705, 2]
 // Exports: ThreadMinusIcon
 
-// Module 12480 (ThreadMinusIcon)
+// Module 12704 (ThreadMinusIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 12481 */;
+import registerAsset from "registerAsset" /* 12705 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

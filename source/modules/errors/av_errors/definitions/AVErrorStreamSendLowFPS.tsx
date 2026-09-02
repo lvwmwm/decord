@@ -1,15 +1,15 @@
-// Module ID: 17424
-// Function ID: 17425
+// Module ID: 17660
+// Function ID: 17661
 // Name: AVErrorStreamSendLowFPSDefinition
-// Dependencies: [4494, 4500, 4568, 676, 687, 4544, 17421, 9588, 9565, 17418, 2]
+// Dependencies: [4494, 4500, 4568, 673, 684, 4544, 17657, 9601, 9578, 17654, 2]
 
-// Module 17424 (AVErrorStreamSendLowFPSDefinition)
-import setDefault from "set" /* 687 */;
+// Module 17660 (AVErrorStreamSendLowFPSDefinition)
+import setDefault from "set" /* 684 */;
 import isStreamKey from "isStreamKey" /* 4544 */;
 import closure_2 from "getParticipants" /* 4494 */;
 import closure_3 from "reset" /* 4500 */;
 import closure_4 from "initialize" /* 4568 */;
-import { ApplicationStreamStates } from "ME" /* 676 */;
+import { ApplicationStreamStates } from "ME" /* 673 */;
 
 require = arg1;
 let closure_6 = 20 * setDefault.Millis.SECOND;
@@ -46,28 +46,28 @@ export const AVErrorStreamSendLowFPSDefinition = {
                 if (null == participant) {
                   return null;
                 } else {
-                  tmp11Result = tmp11(17421);
+                  tmp11Result = tmp11(17657);
                   const accumulatedStatsWithMinDatapoints = tmp11Result.getAccumulatedStatsWithMinDatapoints(mediaEngineConnectionId, currentUserActiveStream.ownerId);
                   if (null == accumulatedStatsWithMinDatapoints) {
                     return null;
                   } else {
-                    const maxQuality = tmp11(9588).getMaxQuality(participant);
+                    const maxQuality = tmp11(9601).getMaxQuality(participant);
                     let tmp9 = null;
                     if (null != maxQuality) {
                       if (accumulatedStatsWithMinDatapoints.short.frameRate < tmp11Result2.getWarningFrameRate(maxQuality.maxFrameRate)) {
                         obj = { type: null };
-                        obj[0] = tmp11(9565).AVError.STREAM_SEND_LOW_FPS;
-                        const tmp11Result3 = tmp11(17418);
+                        obj[0] = tmp11(9578).AVError.STREAM_SEND_LOW_FPS;
+                        const tmp11Result3 = tmp11(17654);
                         const merged = Object.assign(tmp11Result3.getStreamErrorContext(tmp11(4544).encodeStreamKey(currentUserActiveStream)));
                         const items = [obj];
                         let tmp6 = items;
                         const tmp11Result4 = tmp11(4544);
                       } else {
                         tmp6 = null;
-                        const tmp11Result5 = tmp11(17421);
+                        const tmp11Result5 = tmp11(17657);
                       }
                       tmp9 = tmp6;
-                      tmp11Result2 = tmp11(17421);
+                      tmp11Result2 = tmp11(17657);
                     }
                     return tmp9;
                   }

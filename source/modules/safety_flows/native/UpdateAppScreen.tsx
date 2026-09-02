@@ -1,14 +1,14 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17695
+// Function ID: 17696
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4478, 712, 4474, 1236, 2663, 4928, 2]
+// Dependencies: [17, 21, 4478, 709, 4474, 1233, 2662, 4928, 2]
 // Exports: default
 
-// Module 17459 (UpdateAppScreen)
+// Module 17695 (UpdateAppScreen)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2663 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2662 */;
 import Text from "Text" /* 4474 */;
 import Button from "Button" /* 4928 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

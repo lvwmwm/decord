@@ -1,10 +1,10 @@
-// Module ID: 10460
-// Function ID: 10461
+// Module ID: 10681
+// Function ID: 10682
 // Name: fromServer
-// Dependencies: [1936, 4521, 2]
+// Dependencies: [1935, 4521, 2]
 
-// Module 10460 (fromServer)
-import toJSDefault from "toJS" /* 1936 */;
+// Module 10681 (fromServer)
+import toJSDefault from "toJS" /* 1935 */;
 import closure_0 from "createFromServer" /* 4521 */;
 
 toJSDefault;

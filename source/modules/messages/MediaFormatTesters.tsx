@@ -1,13 +1,13 @@
 // Module ID: 4671
 // Function ID: 4672
 // Name: urlMatchesFileExtension
-// Dependencies: [32, 500, 4672, 2]
+// Dependencies: [32, 1234, 4672, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
 // Module 4671 (urlMatchesFileExtension)
 import isIOSWithWebM from "isIOSWithWebM" /* 4672 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 require = arg1;
 const re3 = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i;

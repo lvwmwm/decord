@@ -1,14 +1,14 @@
-// Module ID: 15744
-// Function ID: 15745
-// Dependencies: [5, 32, 19, 1387, 4122, 676, 21, 9919, 1306, 5457, 4928, 1236, 2]
+// Module ID: 15975
+// Function ID: 15976
+// Dependencies: [5, 32, 19, 1386, 4121, 673, 21, 9941, 1305, 5465, 4928, 1233, 2]
 
-// Module 15744
+// Module 15975
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "initialize" /* 4122 */;
-import { JoinGuildSources } from "ME" /* 676 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_7 from "initialize" /* 4121 */;
+import { JoinGuildSources } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

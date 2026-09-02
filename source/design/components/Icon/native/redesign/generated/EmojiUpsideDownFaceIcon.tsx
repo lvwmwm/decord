@@ -1,14 +1,14 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 15222
+// Function ID: 15223
 // Name: EmojiUpsideDownFaceIcon
-// Dependencies: [19, 21, 712, 4196, 14994, 2]
+// Dependencies: [19, 21, 709, 4196, 15223, 2]
 // Exports: EmojiUpsideDownFaceIcon
 
-// Module 14993 (EmojiUpsideDownFaceIcon)
+// Module 15222 (EmojiUpsideDownFaceIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 14994 */;
+import registerAsset from "registerAsset" /* 15223 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

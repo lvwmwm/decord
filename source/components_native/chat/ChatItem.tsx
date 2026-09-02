@@ -1,20 +1,20 @@
-// Module ID: 8779
-// Function ID: 8780
+// Module ID: 8794
+// Function ID: 8795
 // Name: DCDChatItem
-// Dependencies: [32, 19, 17, 4470, 676, 7842, 21, 712, 8780, 686, 8781, 6117, 8782, 4478, 500, 8035, 4197, 689, 4940, 2]
+// Dependencies: [32, 19, 17, 4470, 673, 7851, 21, 709, 8795, 683, 8796, 6125, 8797, 4478, 1234, 8044, 4197, 686, 4940, 2]
 // Exports: default
 
-// Module 8779 (DCDChatItem)
-import set from "set" /* 686 */;
-import ThemesDefault from "Themes" /* 712 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6117 */;
-import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 8780 */;
+// Module 8794 (DCDChatItem)
+import set from "set" /* 683 */;
+import ThemesDefault from "Themes" /* 709 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6125 */;
+import __INTERNAL_VIEW_CONFIG from "__INTERNAL_VIEW_CONFIG" /* 8795 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import { MessageTypes } from "ME" /* 676 */;
-import Changeset from "Changeset" /* 7842 */;
+import { MessageTypes } from "ME" /* 673 */;
+import Changeset from "Changeset" /* 7851 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -31,15 +31,15 @@ function DCDChatItem(message) {
     if (AUTOMOD_INCIDENT_ACTIONS.has(message.type)) {
       obj = {};
       const merged2 = Object.assign(merged);
-      tmp3Result = callback(tmp21(8781).default, obj);
+      tmp3Result = callback(tmp21(8796).default, obj);
     } else if (isSystemMessageDefault(message)) {
       obj1 = {};
       const merged3 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8782).default, obj1);
+      tmp3Result = tmp3(tmp21(8797).default, obj1);
     } else {
       obj = {};
       const merged4 = Object.assign(merged);
-      tmp3Result = tmp3(tmp21(8781).default, obj);
+      tmp3Result = tmp3(tmp21(8796).default, obj);
     }
   }
   return tmp3Result;

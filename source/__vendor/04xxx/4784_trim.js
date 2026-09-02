@@ -1,10 +1,10 @@
 // Module ID: 4784
 // Function ID: 4785
 // Name: trim
-// Dependencies: [574, 4785, 4771]
+// Dependencies: [571, 4785, 4771]
 
 // Module 4784 (trim)
-import callBoundIntrinsic from "callBoundIntrinsic" /* 574 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 571 */;
 import RequireObjectCoercible from "RequireObjectCoercible" /* 4771 */;
 import ToString from "ToString" /* 4785 */;
 

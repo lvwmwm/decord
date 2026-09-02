@@ -1,12 +1,12 @@
-// Module ID: 10095
-// Function ID: 10096
+// Module ID: 10117
+// Function ID: 10118
 // Name: DisconnectRemoteButton
-// Dependencies: [19, 4495, 21, 589, 9545, 7764, 10058, 1236, 9878, 9774, 2]
+// Dependencies: [19, 4495, 21, 586, 9558, 7773, 10080, 1233, 9900, 9796, 2]
 // Exports: DisconnectRemoteButton
 
-// Module 10095 (DisconnectRemoteButton)
+// Module 10117 (DisconnectRemoteButton)
 import noopAll from "noop" /* 19 */;
-import ActionButtonAll from "ActionButton" /* 9545 */;
+import ActionButtonAll from "ActionButton" /* 9558 */;
 import closure_4 from "set" /* 4495 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -17,13 +17,13 @@ const result = require("set").fileFinishedImporting("modules/video_calls/native/
 export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
   channel = channel.channel;
   let remoteSessionId;
-  let obj = channel(589);
+  let obj = channel(586);
   const items = [closure_4];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ awaitingRemote: null != store.getAwaitingRemoteSessionInfo(), remoteSessionId: store.getRemoteSessionId() }));
   remoteSessionId = stateFromStoresObject.remoteSessionId;
-  obj = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7764 : 10058), accessibilityLabel: null, isSmallSize: null, onPress: null };
-  const intl = tmp(1236).intl;
-  obj[1] = intl.string(channel(1236).t["6vrfgt"]);
+  obj = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7773 : 10080), accessibilityLabel: null, isSmallSize: null, onPress: null };
+  const intl = tmp(1233).intl;
+  obj[1] = intl.string(channel(1233).t["6vrfgt"]);
   obj[2] = channel.isSmallSize;
   obj[3] = function onPress() {
     if (null != remoteSessionId) {
@@ -36,5 +36,5 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
       const obj = channel(closure_1_3[8]);
     }
   };
-  return jsx(ActionButtonAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7764 : 10058), accessibilityLabel: null, isSmallSize: null, onPress: null });
+  return jsx(ActionButtonAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7773 : 10080), accessibilityLabel: null, isSmallSize: null, onPress: null });
 };

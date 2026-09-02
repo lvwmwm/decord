@@ -1,11 +1,11 @@
-// Module ID: 16535
-// Function ID: 16536
+// Module ID: 16770
+// Function ID: 16771
 // Name: ToastStore
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 16535 (ToastStore)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 16770 (ToastStore)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let c0 = null;
 const Store = initializeDefault.Store;

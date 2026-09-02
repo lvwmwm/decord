@@ -1,10 +1,10 @@
-// Module ID: 10528
-// Function ID: 10529
+// Module ID: 10749
+// Function ID: 10750
 // Name: PremiumFeaturesPromotionalLogo
-// Dependencies: [32, 19, 4470, 21, 589, 8517, 500, 10529, 5493, 2]
+// Dependencies: [32, 19, 4470, 21, 586, 8530, 1234, 10750, 5501, 2]
 // Exports: default
 
-// Module 10528 (PremiumFeaturesPromotionalLogo)
+// Module 10749 (PremiumFeaturesPromotionalLogo)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

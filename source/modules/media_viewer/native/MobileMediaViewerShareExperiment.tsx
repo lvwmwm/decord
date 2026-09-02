@@ -1,12 +1,12 @@
-// Module ID: 8636
-// Function ID: 8637
+// Module ID: 8651
+// Function ID: 8652
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled
 
-// Module 8636 (apexExperiment)
+// Module 8651 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

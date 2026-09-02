@@ -1,9 +1,9 @@
-// Module ID: 7470
-// Function ID: 7471
+// Module ID: 7480
+// Function ID: 7481
 // Name: QuestSharePolicy
 // Dependencies: [2]
 
-// Module 7470 (QuestSharePolicy)
+// Module 7480 (QuestSharePolicy)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestSharePolicy.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 9798
-// Function ID: 9799
+// Module ID: 9820
+// Function ID: 9821
 // Name: isVideoBackgroundSupported
-// Dependencies: [4529, 4542, 500, 9799, 2]
+// Dependencies: [4529, 4542, 1234, 9821, 2]
 // Exports: default
 
-// Module 9798 (isVideoBackgroundSupported)
-import apexExperimentDefault from "apexExperiment" /* 9799 */;
+// Module 9820 (isVideoBackgroundSupported)
+import apexExperimentDefault from "apexExperiment" /* 9821 */;
 import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
 import { Features } from "DesktopSources" /* 4542 */;
 

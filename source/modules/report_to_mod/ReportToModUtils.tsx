@@ -1,23 +1,23 @@
-// Module ID: 6123
-// Function ID: 6124
+// Module ID: 6131
+// Function ID: 6132
 // Name: canReportMessageToMods
-// Dependencies: [6124, 1387, 1909, 4735, 1922, 6134, 6135, 6113, 6136, 6112, 506, 4126, 6137, 6138, 6141, 6148, 2]
+// Dependencies: [6132, 1386, 1908, 4735, 1921, 6142, 6143, 6121, 6144, 6120, 503, 4125, 6145, 6146, 6149, 6156, 2]
 // Exports: canAccessReportsChannel, canReportMessageToMods, getReportToModChannelId, isModeratorReportChannel, isModeratorReportChannelId, isModeratorReportMessage, isModeratorReportOrPostChannel, isModeratorReportOrPostChannelId, isModeratorReportPostChannel, isModeratorReportPostChannelId, isModeratorReportThreadStarterMessage, isSafeToTransitionToReportForCurrentUser, isUserAuthorOfReportedMessage, sortedModeratorReportTags
 
-// Module 6123 (canReportMessageToMods)
-import fromStringAll from "fromString" /* 506 */;
-import applyOverwritesAll from "applyOverwrites" /* 4126 */;
-import getContextForPermission from "getContextForPermission" /* 6112 */;
-import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 6113 */;
-import canReportUser from "canReportUser" /* 6135 */;
-import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 6136 */;
-import isCurrentUserTeen from "isCurrentUserTeen" /* 6137 */;
-import closure_4 from "handleLoadThreadsSuccess" /* 6124 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
+// Module 6131 (canReportMessageToMods)
+import fromStringAll from "fromString" /* 503 */;
+import applyOverwritesAll from "applyOverwrites" /* 4125 */;
+import getContextForPermission from "getContextForPermission" /* 6120 */;
+import getGuildModeratorReportingEnabledDefault from "getGuildModeratorReportingEnabled" /* 6121 */;
+import canReportUser from "canReportUser" /* 6143 */;
+import getGuildModeratorReportChannelIdDefault from "getGuildModeratorReportChannelId" /* 6144 */;
+import isCurrentUserTeen from "isCurrentUserTeen" /* 6145 */;
+import closure_4 from "handleLoadThreadsSuccess" /* 6132 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
 import closure_7 from "reinjectEphemerals" /* 4735 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { ReportToModPermissions } from "ReportToModPermissions" /* 6134 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import { ReportToModPermissions } from "ReportToModPermissions" /* 6142 */;
 
 require = arg1;
 let result = require("set").fileFinishedImporting("modules/report_to_mod/ReportToModUtils.tsx");
@@ -185,8 +185,8 @@ export const isSafeToTransitionToReportForCurrentUser = function isSafeToTransit
           tmp9 = null == firstMessage;
         }
         if (!tmp9) {
-          tmp9 = !tmp10(6138).messageHasObscurableMediaForBitmask(firstMessage, tmp10(6141).ContentHarmTypeBitMask.EXPLICIT);
-          const tmp10Result = tmp10(6138);
+          tmp9 = !tmp10(6146).messageHasObscurableMediaForBitmask(firstMessage, tmp10(6149).ContentHarmTypeBitMask.EXPLICIT);
+          const tmp10Result = tmp10(6146);
         }
         return tmp9;
       } else {

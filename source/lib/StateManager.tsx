@@ -1,11 +1,11 @@
-// Module ID: 13327
-// Function ID: 13328
+// Module ID: 13550
+// Function ID: 13551
 // Name: shouldCommit
-// Dependencies: [659, 2]
+// Dependencies: [656, 2]
 
-// Module 13327 (shouldCommit)
+// Module 13550 (shouldCommit)
 import set from "set" /* 2 */;
-import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 659 */;
+import isUndefinedOrNullDefault from "isUndefinedOrNull" /* 656 */;
 
 const result = set.fileFinishedImporting("lib/StateManager.tsx");
 class StateManager {

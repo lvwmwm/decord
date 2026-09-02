@@ -1,14 +1,14 @@
-// Module ID: 8789
-// Function ID: 8790
+// Module ID: 8804
+// Function ID: 8805
 // Name: UserProfileWidgetReportButton
-// Dependencies: [19, 17, 21, 1236, 8790, 8756, 8792, 8798, 712, 2]
+// Dependencies: [19, 17, 21, 1233, 8805, 8771, 8807, 8813, 709, 2]
 // Exports: default
 
-// Module 8789 (UserProfileWidgetReportButton)
+// Module 8804 (UserProfileWidgetReportButton)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import FlagIcon from "FlagIcon" /* 8790 */;
-import ContextMenu from "ContextMenu" /* 8792 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import FlagIcon from "FlagIcon" /* 8805 */;
+import ContextMenu from "ContextMenu" /* 8807 */;
 import { Pressable } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -34,10 +34,10 @@ export default function UserProfileWidgetReportButton(arg0) {
       const merged = Object.assign(Object.assign(ref, Object.create(null)));
       obj.hitSlop = closure_5;
       obj.accessibilityRole = "button";
-      const intl = callback(1236).intl;
-      obj.accessibilityLabel = intl.string(callback(1236).t.xpSHSk);
-      obj = { size: "sm", color: callback2(712).colors.TEXT_MUTED };
-      obj.children = callback3(callback(8798).MoreHorizontalIcon, obj);
+      const intl = callback(1233).intl;
+      obj.accessibilityLabel = intl.string(callback(1233).t.xpSHSk);
+      obj = { size: "sm", color: callback2(709).colors.TEXT_MUTED };
+      obj.children = callback3(callback(8813).MoreHorizontalIcon, obj);
       return callback3(closure_3, obj);
     }
   };
@@ -48,10 +48,10 @@ export default function UserProfileWidgetReportButton(arg0) {
       const merged = Object.assign(Object.assign(ref, Object.create(null)));
       obj.hitSlop = closure_5;
       obj.accessibilityRole = "button";
-      const intl = callback(1236).intl;
-      obj.accessibilityLabel = intl.string(callback(1236).t.xpSHSk);
-      obj = { size: "sm", color: callback2(712).colors.TEXT_MUTED };
-      obj.children = callback3(callback(8798).MoreHorizontalIcon, obj);
+      const intl = callback(1233).intl;
+      obj.accessibilityLabel = intl.string(callback(1233).t.xpSHSk);
+      obj = { size: "sm", color: callback2(709).colors.TEXT_MUTED };
+      obj.children = callback3(callback(8813).MoreHorizontalIcon, obj);
       return callback3(closure_3, obj);
     }
   });

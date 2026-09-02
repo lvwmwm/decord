@@ -1,25 +1,25 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 10162
+// Function ID: 10163
 // Name: StreamPreviewTile
-// Dependencies: [19, 17, 4500, 1922, 9520, 4499, 21, 4478, 4326, 712, 5953, 1628, 589, 4721, 8896, 9562, 10107, 9592, 9600, 10141, 10146, 10147, 9318, 9893, 10148, 1297, 9528, 4217, 4479, 10149, 2]
+// Dependencies: [19, 17, 4500, 1921, 9533, 4499, 21, 4478, 4326, 709, 5961, 1627, 586, 4721, 8911, 9575, 10129, 9605, 9613, 10163, 10168, 10169, 9331, 9915, 10170, 1296, 9541, 4217, 4479, 10171, 2]
 
-// Module 10140 (StreamPreviewTile)
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+// Module 10162 (StreamPreviewTile)
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef4217 from "module_4217" /* 4217 */;
-import registerAssetDefault from "registerAsset" /* 9318 */;
-import registerAssetDefault2 from "registerAsset" /* 9893 */;
-import StreamPreviewContainerDefault from "StreamPreviewContainer" /* 10141 */;
-import registerAssetDefault3 from "registerAsset" /* 10146 */;
-import registerAssetDefault4 from "registerAsset" /* 10147 */;
-import registerAssetDefault5 from "registerAsset" /* 10148 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 10149 */;
+import registerAssetDefault from "registerAsset" /* 9331 */;
+import registerAssetDefault2 from "registerAsset" /* 9915 */;
+import StreamPreviewContainerDefault from "StreamPreviewContainer" /* 10163 */;
+import registerAssetDefault3 from "registerAsset" /* 10168 */;
+import registerAssetDefault4 from "registerAsset" /* 10169 */;
+import registerAssetDefault5 from "registerAsset" /* 10170 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 10171 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "reset" /* 4500 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9520 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import VoiceChatDrawerState from "VoiceChatDrawerState" /* 9533 */;
 import ParticipantTypes from "ParticipantTypes" /* 4499 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -37,7 +37,7 @@ class StreamPreviewTile {
     obj = {
       guildId: participant.stream.guildId,
       userId: participant.user.id,
-      style: { aspectRatio: "disabled", borderRadius: false },
+      style: { aspectRatio: "ip", borderRadius: false },
       disableTransition: true,
       onPress() {
             return callback();

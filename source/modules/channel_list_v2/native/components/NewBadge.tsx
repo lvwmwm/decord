@@ -1,17 +1,17 @@
-// Module ID: 11863
-// Function ID: 11864
+// Module ID: 12086
+// Function ID: 12087
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 4478, 500, 712, 1363, 7617, 4413, 4474, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 1234, 709, 1362, 7627, 4413, 4474, 1233, 2]
 // Exports: default
 
-// Module 11863 (NewBadge)
+// Module 12086 (NewBadge)
 import noopAll from "noop" /* 19 */;
-import set from "set" /* 500 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import set from "set" /* 1234 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import Text from "Text" /* 4474 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7617 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 7627 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -28,13 +28,13 @@ let closure_5 = createCacheKey.createStyles((arg0, arg1) => {
   obj = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: ThemesDefault.radii.round, paddingHorizontal: 6, paddingVertical: 3, backgroundColor: null };
   if (tmpResult.isThemeLight(arg1)) {
     if (!arg0) {
-      let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(712).colors.BACKGROUND_BRAND;
+      let MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(709).colors.BACKGROUND_BRAND;
     }
     obj[6] = MOBILE_TOAST_BACKGROUND_DEFAULT;
     obj[1] = obj;
     return obj;
   }
-  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(712).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
+  MOBILE_TOAST_BACKGROUND_DEFAULT = tmp3(709).colors.MOBILE_TOAST_BACKGROUND_DEFAULT;
 });
 const result = require("set").fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
@@ -50,7 +50,7 @@ export default function NewBadge() {
     str = "text-brand";
   }
   obj[2] = str;
-  const intl = tmp7(1236).intl;
+  const intl = tmp7(1233).intl;
   obj[3] = intl.string(getSystemLocale.t.y2b7CA);
   obj[1] = jsx(Text.Text, { variant: "text-xxs/bold", style: tmp4.text, color: null, children: null });
   return <View variant="text-xxs/bold" style={tmp4.text} color={null}>{null}</View>;

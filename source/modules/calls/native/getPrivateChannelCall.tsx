@@ -1,12 +1,12 @@
-// Module ID: 10641
-// Function ID: 10642
+// Module ID: 10862
+// Function ID: 10863
 // Name: getPrivateChannelCall
-// Dependencies: [4497, 676, 4727, 7890, 1236, 9774, 2]
+// Dependencies: [4497, 673, 4727, 7899, 1233, 9796, 2]
 // Exports: default
 
-// Module 10641 (getPrivateChannelCall)
+// Module 10862 (getPrivateChannelCall)
 import closure_2 from "updateVoiceState" /* 4497 */;
-import { NOOP_NULL } from "ME" /* 676 */;
+import { NOOP_NULL } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/calls/native/getPrivateChannelCall.tsx");

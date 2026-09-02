@@ -1,13 +1,13 @@
-// Module ID: 13055
-// Function ID: 13056
+// Module ID: 13277
+// Function ID: 13278
 // Name: BuyNitroGradient
-// Dependencies: [19, 1924, 21, 4217, 4940, 4479, 4482, 2]
+// Dependencies: [19, 1923, 21, 4217, 4940, 4479, 4482, 2]
 // Exports: default
 
-// Module 13055 (BuyNitroGradient)
+// Module 13277 (BuyNitroGradient)
 import noopAll from "noop" /* 19 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importDefaultResult from "module_4217" /* 4217 */;
 

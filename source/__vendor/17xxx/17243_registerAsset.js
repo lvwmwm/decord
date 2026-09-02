@@ -1,10 +1,10 @@
 // Module ID: 17243
 // Function ID: 17244
 // Name: registerAsset
-// Dependencies: [1241]
+// Dependencies: [1240]
 
 // Module 17243 (registerAsset)
-import registerAsset from "registerAsset" /* 1241 */;
+import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 375, height: 180, scales: [2, 3], hash: "ed3a2617f9b5f5cc8eac96d446f7dd22", name: "intro_header_darker", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "633af95b6b643ea3b8457ce65540e36c", name: "ic_switch_accounts", type: "png" });

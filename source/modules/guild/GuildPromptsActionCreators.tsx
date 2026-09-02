@@ -1,12 +1,12 @@
-// Module ID: 12190
-// Function ID: 12191
+// Module ID: 12414
+// Function ID: 12415
 // Name: viewPrompt
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 // Exports: viewPrompt
 
-// Module 12190 (viewPrompt)
+// Module 12414 (viewPrompt)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 function viewPrompt(REAL_NAME_PROMPT, closure_0) {
   importDefault = REAL_NAME_PROMPT;

@@ -1,17 +1,17 @@
-// Module ID: 11932
-// Function ID: 11933
+// Module ID: 12155
+// Function ID: 12156
 // Name: search
-// Dependencies: [1982, 4493, 5452, 5385, 12, 11, 589, 709, 2]
+// Dependencies: [1981, 4493, 5460, 5393, 12, 11, 586, 706, 2]
 
-// Module 11932 (search)
+// Module 12155 (search)
 import set from "set" /* 2 */;
 import apply from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import NOOP from "NOOP" /* 5385 */;
-import NOOPDefault from "NOOP" /* 5385 */;
-import HeaderRecord from "HeaderRecord" /* 5452 */;
-import comparator from "comparator" /* 1982 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import NOOP from "NOOP" /* 5393 */;
+import NOOPDefault from "NOOP" /* 5393 */;
+import HeaderRecord from "HeaderRecord" /* 5460 */;
+import comparator from "comparator" /* 1981 */;
 import closure_5 from "generateOldThreadCutoff" /* 4493 */;
 
 ({ GUILD_VOCAL_CHANNELS_KEY: c3, GUILD_SELECTABLE_CHANNELS_KEY: c4 } = comparator);

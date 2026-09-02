@@ -1,11 +1,11 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14359
+// Function ID: 14360
 // Name: set
-// Dependencies: [32, 1486, 4184, 8648, 2]
+// Dependencies: [32, 1485, 4184, 8663, 2]
 // Exports: openInternalDeepLink, resolveInternalDeepLink
 
-// Module 14136 (set)
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+// Module 14359 (set)
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import _openURL from "_openURL" /* 4184 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import set from "set" /* 2 */;
@@ -21,11 +21,11 @@ export const resolveInternalDeepLink = function resolveInternalDeepLink(closure_
     return null;
   } else {
     ({ hostname: hostname2, protocol, host } = toURLSafeResult);
-    let tmpResult = tmp(1486);
+    let tmpResult = tmp(1485);
     if (tmpResult.isDiscordProtocol(protocol)) {
       ({ hostname, pathname } = toURLSafeResult);
       if (!set1.has(hostname)) {
-        tmpResult = tmp(1486);
+        tmpResult = tmp(1485);
         if (!tmpResult.isDiscordHostname(hostname)) {
           const _HermesInternal = HermesInternal;
           let combined = "/" + hostname + pathname;
@@ -42,7 +42,7 @@ export const resolveInternalDeepLink = function resolveInternalDeepLink(closure_
         if (!tmpResult2.isDiscordLocalhost(host, hostname2)) {
           return null;
         }
-        tmpResult2 = tmp(1486);
+        tmpResult2 = tmp(1485);
       }
       const tmp11 = callback(toURLSafeResult.pathname.split("/"), 2)[1];
       let combined2 = null;

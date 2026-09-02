@@ -1,17 +1,17 @@
 // Module ID: 4623
 // Function ID: 4624
 // Name: baseIsMap
-// Dependencies: [620, 770]
+// Dependencies: [617, 767]
 
 // Module 4623 (baseIsMap)
-import isObjectLike from "isObjectLike" /* 620 */;
-import _mod770 from "module_770" /* 770 */;
+import isObjectLike from "isObjectLike" /* 617 */;
+import _mod767 from "module_767" /* 767 */;
 
 
 export default function baseIsMap(arg0) {
   let tmp3 = isObjectLike(arg0);
   if (tmp3) {
-    tmp3 = "[object Map]" == _mod770(arg0);
+    tmp3 = "[object Map]" == _mod767(arg0);
   }
   return tmp3;
 };

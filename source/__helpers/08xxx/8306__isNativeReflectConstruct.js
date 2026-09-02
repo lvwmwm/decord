@@ -1,17 +1,20 @@
 // Module ID: 8306
 // Function ID: 8307
 // Name: _isNativeReflectConstruct
-// Dependencies: [41, 42, 93, 95, 98, 8257, 8280]
+// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8307, 8288, 8289]
 
 // Module 8306 (_isNativeReflectConstruct)
+import noopDefault from "noop" /* 19 */;
 import _inheritsDefault from "_inherits" /* 98 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8280 */;
-import closure_2 from "_classCallCheck" /* 41 */;
-import closure_3 from "_possibleConstructorReturn" /* 93 */;
-import closure_4 from "_getPrototypeOf" /* 95 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 8289 */;
+import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 8307 */;
+import closure_3 from "_classCallCheck" /* 41 */;
+import closure_4 from "_possibleConstructorReturn" /* 93 */;
+import closure_5 from "_getPrototypeOf" /* 95 */;
 import importDefaultResult from "_createClass" /* 42 */;
+import { jsx } from "jsxProd" /* 21 */;
 
-const FeTile = arg1;
+const FeMerge = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -31,13 +34,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeTile {
+noopDefault;
+class FeMerge {
   constructor() {
     self = this;
-    tmp = closure_2(this, FeTile);
-    tmp2 = closure_4;
-    obj = closure_4(FeTile);
-    tmp3 = closure_3;
+    tmp = closure_3(this, FeMerge);
+    tmp2 = closure_5;
+    obj = closure_5(FeMerge);
+    tmp3 = closure_4;
     if (_isNativeReflectConstruct()) {
       tmp7 = globalThis;
       _Reflect = Reflect;
@@ -51,19 +55,30 @@ class FeTile {
     return tmp3(self, constructResult);
   }
 }
-_inheritsDefault(FeTile, _isNativeReflectConstructDefault);
+_inheritsDefault(FeMerge, _isNativeReflectConstructDefault);
 let obj = {
   key: "render",
   value: function render() {
-    const result = FeTile(8257).warnUnimplementedFilter();
-    return null;
+    const self = this;
+    const obj = {
+      ref(arg0) {
+        return self.refMethod(arg0);
+      }
+    };
+    const tmp = __INTERNAL_VIEW_CONFIGDefault;
+    const merged = Object.assign(self(8288).extractFilter(this.props));
+    const obj2 = self(8288);
+    const merged1 = Object.assign(self(8288).extractFeMerge(this.props, this));
+    return <tmp ref={function ref(arg0) {
+      return self.refMethod(arg0);
+    }} />;
   }
 };
 const items = [obj];
-const importDefaultResultResult = importDefaultResult(FeTile, items);
-importDefaultResultResult.displayName = "FeTile";
+const importDefaultResultResult = importDefaultResult(FeMerge, items);
+importDefaultResultResult.displayName = "FeMerge";
 obj = {};
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+let merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = obj;
 
 export default importDefaultResultResult;

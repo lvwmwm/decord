@@ -1,9 +1,9 @@
-// Module ID: 716
-// Function ID: 717
+// Module ID: 713
+// Function ID: 714
 // Name: _private
 // Dependencies: [2]
 
-// Module 716 (_private)
+// Module 713 (_private)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/tokens/colors/generated/raw-color-definitions.tsx");

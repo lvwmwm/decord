@@ -1,11 +1,11 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9651
+// Function ID: 9652
 // Name: useEventException
-// Dependencies: [7271, 589, 2]
+// Dependencies: [7280, 586, 2]
 // Exports: default, getEventException
 
-// Module 9638 (useEventException)
-import closure_2 from "scheduledEventSort" /* 7271 */;
+// Module 9651 (useEventException)
+import closure_2 from "scheduledEventSort" /* 7280 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_scheduled_events/useEventException.tsx");
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/guild_scheduled_eve
 export default function useEventException(arg0, arg1) {
   let _require = arg1;
   const items = [closure_2];
-  const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = _require(586).useStateFromStoresArray(items, () => {
     const guildScheduledEvent = closure_1_2.getGuildScheduledEvent(closure_0);
     let prop;
     if (guildScheduledEvent != null) {

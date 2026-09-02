@@ -1,15 +1,15 @@
-// Module ID: 1303
-// Function ID: 1304
+// Module ID: 1302
+// Function ID: 1303
 // Name: initialize
-// Dependencies: [676, 589, 595, 12, 709, 2]
+// Dependencies: [673, 586, 592, 12, 706, 2]
 
-// Module 1303 (initialize)
+// Module 1302 (initialize)
 import set from "set" /* 2 */;
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import Storage4 from "Storage" /* 595 */;
-import ME from "ME" /* 676 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import Storage4 from "Storage" /* 592 */;
+import ME from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const UserSettingsSections = ME.UserSettingsSections;
 let closure_4 = {};
@@ -58,12 +58,12 @@ const items = [
     if (obj == null) {
       obj = {};
     }
-    const Storage2 = tmp(595).Storage;
+    const Storage2 = tmp(592).Storage;
     let value = Storage2.get("UserSettingsStore");
     if (value == null) {
       value = {};
     }
-    const Storage3 = tmp(595).Storage;
+    const Storage3 = tmp(592).Storage;
     Storage3.remove("UserSettingsSync");
     obj = {};
     if (false === obj[UserSettingsSections.TEXT]) {

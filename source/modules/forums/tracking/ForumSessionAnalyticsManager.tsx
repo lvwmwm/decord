@@ -1,11 +1,11 @@
-// Module ID: 7515
-// Function ID: 7516
+// Module ID: 7525
+// Function ID: 7526
 // Name: getForumChannelSessionId
-// Dependencies: [514, 2]
+// Dependencies: [511, 2]
 
-// Module 7515 (getForumChannelSessionId)
+// Module 7525 (getForumChannelSessionId)
 import set from "set" /* 2 */;
-import v1 from "v1" /* 514 */;
+import v1 from "v1" /* 511 */;
 
 class ForumSessionAnalyticsManager {
 }

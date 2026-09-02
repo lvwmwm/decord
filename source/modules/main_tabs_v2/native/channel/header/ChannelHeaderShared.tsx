@@ -1,26 +1,26 @@
-// Module ID: 12933
-// Function ID: 12934
+// Module ID: 13155
+// Function ID: 13156
 // Name: TitleWrapper
-// Dependencies: [32, 19, 17, 4130, 1922, 21, 4478, 712, 5068, 500, 8923, 4474, 1297, 12934, 10648, 4197, 4981, 12935, 1236, 4674, 2]
+// Dependencies: [32, 19, 17, 4130, 1921, 21, 4478, 709, 5076, 1234, 8937, 4474, 1296, 13156, 10869, 4197, 4981, 13157, 1233, 4674, 2]
 // Exports: renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12933 (TitleWrapper)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+// Module 13155 (TitleWrapper)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
 import Text from "Text" /* 4474 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
 import getChannelIcon from "getChannelIcon" /* 4981 */;
-import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8923 */;
-import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10648 */;
-import registerAssetDefault from "registerAsset" /* 12934 */;
-import _modDef12935 from "module_12935" /* 12935 */;
+import AVERAGE_FONT_WIDTH_RATIODefault from "AVERAGE_FONT_WIDTH_RATIO" /* 8937 */;
+import FacepileGroupDMAvatarDefault from "FacepileGroupDMAvatar" /* 10869 */;
+import registerAssetDefault from "registerAsset" /* 13156 */;
+import _modDef13157 from "module_13157" /* 13157 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -40,7 +40,7 @@ function TitleWrapper(headerAccessibilityLabel) {
     obj[2] = children;
     let tmp6Result = callback2(View, obj);
   } else {
-    obj = titleContentHeight(500);
+    obj = titleContentHeight(1234);
     let tmp9;
     if (obj.isAndroid()) {
       tmp9 = callback;
@@ -53,7 +53,7 @@ function TitleWrapper(headerAccessibilityLabel) {
     obj[5] = tmp5;
     obj[6] = tmp.wrapper;
     obj[7] = children;
-    tmp6Result = callback2(titleContentHeight(5068).PressableOpacity, obj);
+    tmp6Result = callback2(titleContentHeight(5076).PressableOpacity, obj);
     const tmp6 = callback2;
   }
   return tmp6Result;
@@ -146,10 +146,10 @@ function ChannelIconRaw(IconComponent) {
     let tmp6 = callback2(IconComponent, obj);
   } else {
     obj = { size: null, source: null, color: null };
-    obj[0] = tmp(1297).Icon.Sizes.SMALL_20;
+    obj[0] = tmp(1296).Icon.Sizes.SMALL_20;
     obj[1] = IconComponent.icon;
     obj[2] = tmp4.guildChannelIcon.tintColor;
-    tmp6 = callback2(tmp(1297).Icon, obj);
+    tmp6 = callback2(tmp(1296).Icon, obj);
   }
   return tmp6;
 }
@@ -169,7 +169,7 @@ function MemberCountText(arg0) {
   }
   obj[1] = memberCount;
   obj[3] = leadingAccessoryWidth;
-  const children = [closure_8(_modDef12935, obj), ];
+  const children = [closure_8(_modDef13157, obj), ];
   let tmp4Result = null;
   if (withSeparator) {
     tmp4Result = tmp4(Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "\u2022" });

@@ -1,10 +1,10 @@
-// Module ID: 10847
-// Function ID: 10848
+// Module ID: 11067
+// Function ID: 11068
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 4217, 1356, 4927, 10848, 4474, 2]
+// Dependencies: [32, 19, 21, 4217, 1355, 4927, 11068, 4474, 2]
 
-// Module 10847 (BalanceCounter)
-import context from "context" /* 1356 */;
+// Module 11067 (BalanceCounter)
+import context from "context" /* 1355 */;
 import _mod4217 from "module_4217" /* 4217 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "_slicedToArray" /* 32 */;

@@ -1,16 +1,16 @@
-// Module ID: 9653
-// Function ID: 9654
+// Module ID: 9666
+// Function ID: 9667
 // Name: nativeEventEmitter
-// Dependencies: [19, 17, 4186, 4494, 9654, 1387, 4554, 21, 9650, 589, 9557, 4727, 1236, 9655, 4217, 9648, 2]
+// Dependencies: [19, 17, 4186, 4494, 9667, 1386, 4554, 21, 9663, 586, 9570, 4727, 1233, 9668, 4217, 9661, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 9653 (nativeEventEmitter)
+// Module 9666 (nativeEventEmitter)
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "setContent" /* 4186 */;
 import closure_8 from "getParticipants" /* 4494 */;
-import closure_9 from "initialize" /* 9654 */;
-import closure_10 from "ensureGuildLoaded" /* 1387 */;
+import closure_9 from "initialize" /* 9667 */;
+import closure_10 from "ensureGuildLoaded" /* 1386 */;
 import closure_11 from "createRTCConnection" /* 4554 */;
 import jsxProd from "jsxProd" /* 21 */;
 

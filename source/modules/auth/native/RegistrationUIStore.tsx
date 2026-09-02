@@ -1,21 +1,21 @@
-// Module ID: 15537
-// Function ID: 15538
+// Module ID: 15768
+// Function ID: 15769
 // Name: useRegistrationUIStore
-// Dependencies: [644, 705, 2]
+// Dependencies: [641, 702, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 15537 (useRegistrationUIStore)
+// Module 15768 (useRegistrationUIStore)
 import set from "set" /* 2 */;
-import batchUpdates from "batchUpdates" /* 705 */;
-import keys from "keys" /* 644 */;
+import batchUpdates from "batchUpdates" /* 702 */;
+import keys from "keys" /* 641 */;
 
-let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "HermesInternal" }));
+let obj = keys.create(() => ({ errors: {}, registrationOptions: {}, submitting: false, registrationVariant: "padding" }));
 const result = set.fileFinishedImporting("modules/auth/native/RegistrationUIStore.tsx");
 
 export const useRegistrationUIStore = obj;
 export const setRegistrationErrors = function setRegistrationErrors(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_2.setState({ errors: closure_0 });
   });
 };
@@ -23,7 +23,7 @@ export const clearRegistrationErrorMessage = function clearRegistrationErrorMess
   obj = {};
   const merged = Object.assign(obj.getState().errors);
   delete tmp2[tmp];
-  obj(705).batchUpdates(() => {
+  obj(702).batchUpdates(() => {
     obj = { errors: obj };
     closure_1_2.setState(obj);
   });
@@ -48,7 +48,7 @@ export const resetRegistration = function resetRegistration() {
 };
 export const setSubmitting = function setSubmitting(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => {
+  _require(702).batchUpdates(() => {
     closure_1_2.setState({ errors: {}, submitting: closure_0 });
   });
 };

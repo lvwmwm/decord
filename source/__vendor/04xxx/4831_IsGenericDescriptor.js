@@ -1,7 +1,7 @@
 // Module ID: 4831
 // Function ID: 4832
 // Name: IsGenericDescriptor
-// Dependencies: [4813, 541, 4826, 4817]
+// Dependencies: [4813, 538, 4826, 4817]
 
 // Module 4831 (IsGenericDescriptor)
 import isPropertyDescriptor from "isPropertyDescriptor" /* 4813 */;
@@ -18,7 +18,7 @@ export default function IsGenericDescriptor(arg0) {
     }
     return tmp8;
   } else {
-    const tmp5 = new tmp(541)("Assertion failed: `Desc` must be a Property Descriptor");
+    const tmp5 = new tmp(538)("Assertion failed: `Desc` must be a Property Descriptor");
     throw tmp5;
   }
 };

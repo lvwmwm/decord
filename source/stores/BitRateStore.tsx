@@ -1,12 +1,12 @@
 // Module ID: 4552
 // Function ID: 4553
 // Name: bitrate
-// Dependencies: [4542, 589, 709, 2]
+// Dependencies: [4542, 586, 706, 2]
 
 // Module 4552 (bitrate)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import DesktopSources from "DesktopSources" /* 4542 */;
 
 const DEFAULT_VOICE_BITRATE = DesktopSources.DEFAULT_VOICE_BITRATE;

@@ -1,12 +1,12 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 13180
+// Function ID: 13181
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 // Exports: isPremiumOfferReminderExperimentEnabled
 
-// Module 12958 (apexExperiment)
+// Module 13180 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const obj = { 1: null };
 obj[1] = { enabled: true };

@@ -1,12 +1,12 @@
-// Module ID: 10249
-// Function ID: 10250
+// Module ID: 10271
+// Function ID: 10272
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 4702, 21, 4478, 712, 1236, 10250, 5029, 4474, 1297, 2]
+// Dependencies: [19, 17, 4702, 21, 4478, 709, 1233, 10272, 5033, 4474, 1296, 2]
 // Exports: default
 
-// Module 10249 (NotificationSettingsMockChannels)
+// Module 10271 (NotificationSettingsMockChannels)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -27,16 +27,16 @@ export default function NotificationSettingsMockChannels(unreadSetting) {
   const tmp = callback2();
   const _require = tmp;
   let obj = { badged: true, unread: true, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, name: null };
-  const intl = _require(1236).intl;
-  obj[3] = intl.string(_require(1236).t.EjLobP);
+  const intl = _require(1233).intl;
+  obj[3] = intl.string(_require(1233).t.EjLobP);
   let items = [obj, , ];
   obj = { badged: false, unread: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS, name: null };
-  const intl2 = _require(1236).intl;
-  obj[3] = intl2.string(_require(1236).t.Wgpwpp);
+  const intl2 = _require(1233).intl;
+  obj[3] = intl2.string(_require(1233).t.Wgpwpp);
   items[1] = obj;
   obj = { badged: false, unread: false, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS, name: null };
-  const intl3 = _require(1236).intl;
-  obj[3] = intl3.string(_require(1236).t.g9VImh);
+  const intl3 = _require(1233).intl;
+  obj[3] = intl3.string(_require(1233).t.g9VImh);
   items[2] = obj;
   if (unreadSetting.unreadSetting === UnreadSetting.ALL_MESSAGES) {
     items[1].resolvedUnreadSetting = UnreadSetting.ALL_MESSAGES;

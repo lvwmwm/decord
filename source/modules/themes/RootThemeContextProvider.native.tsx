@@ -1,15 +1,15 @@
-// Module ID: 14223
-// Function ID: 14224
+// Module ID: 14446
+// Function ID: 14447
 // Name: RootThemeContextProvider
-// Dependencies: [19, 4470, 1302, 505, 21, 589, 4328, 8004, 14224, 4204, 10158, 4483, 2]
+// Dependencies: [19, 4470, 1301, 502, 21, 586, 4328, 8013, 14447, 4204, 10180, 4483, 2]
 // Exports: RootThemeContextProvider
 
-// Module 14223 (RootThemeContextProvider)
+// Module 14446 (RootThemeContextProvider)
 import getGuildThemeNameDefault from "getGuildThemeName" /* 4328 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_5 from "handleThemeChange" /* 1302 */;
-import { ThemeTypes } from "sum" /* 505 */;
+import closure_5 from "handleThemeChange" /* 1301 */;
+import { ThemeTypes } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -17,15 +17,15 @@ const result = require("set").fileFinishedImporting("modules/themes/RootThemeCon
 
 export const RootThemeContextProvider = function RootThemeContextProvider(children) {
   let manaTypeConsolidationExperiment;
-  let obj = manaTypeConsolidationExperiment(589);
+  let obj = manaTypeConsolidationExperiment(586);
   let items = [closure_4, closure_5];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ saturation: closure_4.saturation, contrast: closure_4.contrast, theme: theme.theme }));
   ({ saturation, contrast } = stateFromStoresObject);
   const tmp4 = getGuildThemeNameDefault();
-  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(8004).useManaTypeConsolidationExperiment("RootThemeContextProvider");
-  const obj2 = manaTypeConsolidationExperiment(8004);
+  manaTypeConsolidationExperiment = manaTypeConsolidationExperiment(8013).useManaTypeConsolidationExperiment("RootThemeContextProvider");
+  const obj2 = manaTypeConsolidationExperiment(8013);
   [][0] = manaTypeConsolidationExperiment;
-  const plainTextExperiment = manaTypeConsolidationExperiment(14224).usePlainTextExperiment("RootThemeContextProvider");
+  const plainTextExperiment = manaTypeConsolidationExperiment(14447).usePlainTextExperiment("RootThemeContextProvider");
   if (null == tmp4) {
     let num2 = 0;
     if (1 !== saturation) {
@@ -43,7 +43,7 @@ export const RootThemeContextProvider = function RootThemeContextProvider(childr
       obj[0] = plainTextExperiment;
       obj[1] = children.children;
       obj[5] = jsx(tmp(4483).PlainTextExperimentProvider, { enabled: null, children: null });
-      return jsx(tmp(10158).RootThemeContextProvider, { enabled: null, children: null });
+      return jsx(tmp(10180).RootThemeContextProvider, { enabled: null, children: null });
     } else {
       tmpResult = tmp(4204);
       if (contrast > 1) {

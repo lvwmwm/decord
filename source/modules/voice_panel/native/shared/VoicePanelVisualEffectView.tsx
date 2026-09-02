@@ -1,12 +1,12 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16997
+// Function ID: 16998
 // Name: VoicePanelVisualEffectView
-// Dependencies: [19, 17, 21, 4478, 712, 4197, 8984, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4197, 8998, 2]
 
-// Module 16761 (VoicePanelVisualEffectView)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16997 (VoicePanelVisualEffectView)
+import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import TwinButtons from "TwinButtons" /* 8984 */;
+import TwinButtons from "TwinButtons" /* 8998 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

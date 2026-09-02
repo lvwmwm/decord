@@ -1,14 +1,14 @@
-// Module ID: 15914
-// Function ID: 15915
+// Module ID: 16145
+// Function ID: 16146
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 15915, 4981, 5029, 4474, 1236, 2]
+// Dependencies: [19, 17, 21, 16146, 4981, 5033, 4474, 1233, 2]
 // Exports: default
 
-// Module 15914 (MentionSubtitle)
+// Module 16145 (MentionSubtitle)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import styles from "styles" /* 15915 */;
+import styles from "styles" /* 16146 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -28,13 +28,13 @@ export default function MentionSubtitle(channel) {
     const tmpResult = tmp(4981);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5029).TextIcon;
+    channelIconComponentWithGuild = tmp(5033).TextIcon;
   }
   obj = { style: subtitleStyles.subtitleRow, children: null };
   obj = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   const items = [callback(channelIconComponentWithGuild, obj), ];
   obj1 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: null };
-  const intl = tmp(1236).intl;
+  const intl = tmp(1233).intl;
   obj1[4] = intl.format(getSystemLocale.t.L9YdGH, {
     channelName,
     count: count - 1,

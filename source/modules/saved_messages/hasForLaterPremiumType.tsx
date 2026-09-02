@@ -1,14 +1,14 @@
-// Module ID: 7600
-// Function ID: 7601
+// Module ID: 7610
+// Function ID: 7611
 // Name: hasForLaterPremiumType
-// Dependencies: [1922, 1924, 1946, 589, 2]
+// Dependencies: [1921, 1923, 1945, 586, 2]
 // Exports: default, useHasForLaterPremiumType
 
-// Module 7600 (hasForLaterPremiumType)
-import initialize from "initialize" /* 589 */;
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+// Module 7610 (hasForLaterPremiumType)
+import initialize from "initialize" /* 586 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/saved_messages/hasForLaterPremiumType.tsx");

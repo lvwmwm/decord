@@ -1,12 +1,12 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13566
+// Function ID: 13567
 // Name: apexExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 // Exports: useDebugExperiment
 
-// Module 13342 (apexExperiment)
+// Module 13566 (apexExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const obj = { 1: null, 2: {} };
 obj[2] = {};

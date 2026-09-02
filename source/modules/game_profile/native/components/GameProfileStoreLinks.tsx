@@ -1,12 +1,12 @@
-// Module ID: 8847
-// Function ID: 8848
+// Module ID: 8862
+// Function ID: 8863
 // Name: WebsiteGameStoreLinkButton
-// Dependencies: [19, 17, 21, 4478, 712, 8809, 4190, 4928, 1236, 4445, 8836, 8812, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 8824, 4190, 4928, 1233, 4445, 8851, 8827, 2]
 // Exports: default
 
-// Module 8847 (WebsiteGameStoreLinkButton)
+// Module 8862 (WebsiteGameStoreLinkButton)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -16,7 +16,7 @@ function WebsiteGameStoreLinkButton(data) {
   data = data.data;
   const trackAction = data.trackAction;
   dependencyMap = undefined;
-  dependencyMap = trackAction(8809)(trackAction(4190).openURL);
+  dependencyMap = trackAction(8824)(trackAction(4190).openURL);
   return callback(data(4928).Button, {
     variant: "secondary",
     size: "md",

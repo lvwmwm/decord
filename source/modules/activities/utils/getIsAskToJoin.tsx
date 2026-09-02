@@ -1,12 +1,12 @@
-// Module ID: 11327
-// Function ID: 11328
+// Module ID: 11550
+// Function ID: 11551
 // Name: getIsAskToJoin
-// Dependencies: [676, 2]
+// Dependencies: [673, 2]
 // Exports: getIsAskToJoin
 
-// Module 11327 (getIsAskToJoin)
+// Module 11550 (getIsAskToJoin)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const ActivityActionTypes = ME.ActivityActionTypes;
 const result = set.fileFinishedImporting("modules/activities/utils/getIsAskToJoin.tsx");

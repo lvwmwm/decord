@@ -1,15 +1,15 @@
-// Module ID: 11525
-// Function ID: 11526
+// Module ID: 11748
+// Function ID: 11749
 // Name: isNewMessageGroup
-// Dependencies: [676, 687, 6117, 11, 4163, 2]
+// Dependencies: [673, 684, 6125, 11, 4163, 2]
 // Exports: isNewGroupItem
 
-// Module 11525 (isNewMessageGroup)
+// Module 11748 (isNewMessageGroup)
 import set from "set" /* 2 */;
-import setDefault from "set" /* 687 */;
+import setDefault from "set" /* 684 */;
 import resetCache from "resetCache" /* 4163 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6117 */;
-import ME from "ME" /* 676 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6125 */;
+import ME from "ME" /* 673 */;
 
 function isNewMessageGroup(isForumPost, content, hasFlag) {
   let type = hasFlag;

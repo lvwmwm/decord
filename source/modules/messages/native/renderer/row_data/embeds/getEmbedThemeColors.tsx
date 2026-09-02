@@ -1,12 +1,12 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 7863
+// Function ID: 7864
 // Name: getEmbedThemeColors
-// Dependencies: [19, 4478, 1363, 712, 4326, 2]
+// Dependencies: [19, 4478, 1362, 709, 4326, 2]
 // Exports: default, useEmbedThemeColors
 
-// Module 7854 (getEmbedThemeColors)
-import ThemesDefault from "Themes" /* 712 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+// Module 7863 (getEmbedThemeColors)
+import ThemesDefault from "Themes" /* 709 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
 import closure_3 from "noop" /* 19 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

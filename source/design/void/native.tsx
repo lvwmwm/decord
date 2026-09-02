@@ -1,73 +1,73 @@
-// Module ID: 1297
-// Function ID: 1298
+// Module ID: 1296
+// Function ID: 1297
 // Name: Button
-// Dependencies: [1298, 1299, 2, 1300, 13728, 12957, 13729, 13732, 13733, 13734, 13735, 13736, 13737, 4864, 13738, 13740, 9718, 13741, 13742, 13744, 13745, 13746, 13747, 13748, 4930, 9428, 13757, 13759, 13739, 13761, 13763, 13764, 13765, 13766, 13767, 13768, 13769, 8391, 13770, 13822, 13823, 13824, 13825, 13826, 8390, 8363, 5068, 13123, 9067, 10347]
+// Dependencies: [1297, 1298, 2, 1299, 13951, 13179, 13952, 13955, 13956, 13957, 13958, 13959, 13960, 4864, 13961, 13963, 9740, 13964, 13965, 13967, 13968, 13969, 13970, 13971, 4930, 9441, 13980, 13982, 13962, 13984, 13986, 13987, 13988, 13989, 13990, 13991, 13992, 8400, 13993, 14045, 14046, 14047, 14048, 14049, 8399, 8372, 5076, 13345, 9081, 10369]
 
-// Module 1297 (Button)
+// Module 1296 (Button)
 import set from "set" /* 2 */;
-import STATUS_PADDING from "STATUS_PADDING" /* 1298 */;
-import PX_16 from "PX_16" /* 1299 */;
-import getTextStyles from "getTextStyles" /* 1300 */;
-import getTextStylesDefault from "getTextStyles" /* 1300 */;
+import STATUS_PADDING from "STATUS_PADDING" /* 1297 */;
+import PX_16 from "PX_16" /* 1298 */;
+import getTextStyles from "getTextStyles" /* 1299 */;
+import getTextStylesDefault from "getTextStyles" /* 1299 */;
 import View from "View" /* 4864 */;
 import ViewDefault from "View" /* 4864 */;
 import IconSizes from "IconSizes" /* 4930 */;
 import IconSizesDefault from "IconSizes" /* 4930 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import Form from "Form" /* 8363 */;
-import CardSectionDefault from "CardSection" /* 8390 */;
-import _modDef8391 from "module_8391" /* 8391 */;
-import renderDefault from "render" /* 9067 */;
-import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 9428 */;
-import StaticNativeCutoutAvatarImageDefault from "StaticNativeCutoutAvatarImage" /* 9428 */;
-import VoidTextInputDefault from "VoidTextInput" /* 9718 */;
-import RoleLabel from "RoleLabel" /* 10347 */;
-import BetaTag from "BetaTag" /* 12957 */;
-import BetaTagDefault from "BetaTag" /* 12957 */;
-import SquareIconButton from "SquareIconButton" /* 13123 */;
-import ShinyButtonDefault from "ShinyButton" /* 13728 */;
-import CheckboxDefault from "Checkbox" /* 13729 */;
-import CloseDefault from "Close" /* 13732 */;
-import AnimatedEllipsisDotDefault from "AnimatedEllipsisDot" /* 13733 */;
-import GradientBorderDefault from "GradientBorder" /* 13734 */;
-import HelpMessage from "HelpMessage" /* 13735 */;
-import HelpMessageDefault from "HelpMessage" /* 13735 */;
-import IconPillDefault from "IconPill" /* 13736 */;
-import NewTagDefault from "NewTag" /* 13737 */;
-import RadioEmpty from "RadioEmpty" /* 13738 */;
-import RadioEmptyDefault from "RadioEmpty" /* 13738 */;
-import CollapsibleDefault from "Collapsible" /* 13739 */;
-import OverflowSquircle from "OverflowSquircle" /* 13740 */;
-import OverflowSquircleDefault from "OverflowSquircle" /* 13740 */;
-import ThemedIconDefault from "ThemedIcon" /* 13741 */;
-import LocalImageThumbnailDefault from "LocalImageThumbnail" /* 13742 */;
-import Tooltip from "Tooltip" /* 13744 */;
-import TooltipDefault from "Tooltip" /* 13744 */;
-import WarningCircleDefault from "WarningCircle" /* 13745 */;
-import getAnimatedTypingTranslateX from "getAnimatedTypingTranslateX" /* 13746 */;
-import STATUS_PADDINGDefault from "STATUS_PADDING" /* 13747 */;
-import Status from "Status" /* 13748 */;
-import StatusDefault from "Status" /* 13748 */;
-import getStatusSize from "getStatusSize" /* 13757 */;
-import getStatusSizeDefault from "getStatusSize" /* 13757 */;
-import AccessibilityFocusViewDefault from "AccessibilityFocusView" /* 13759 */;
-import PassthroughTouchViewDefault from "PassthroughTouchView" /* 13761 */;
-import STANDARD_EASING from "STANDARD_EASING" /* 13763 */;
-import SpacerDefault from "Spacer" /* 13764 */;
-import LiveTagDefault from "LiveTag" /* 13765 */;
-import RoleDot from "RoleDot" /* 13766 */;
-import generateBoxShadowStyle from "generateBoxShadowStyle" /* 13767 */;
-import NitroWheelDefault from "NitroWheel" /* 13768 */;
-import EmptyStateDefault from "EmptyState" /* 13769 */;
-import RNTextInput from "RNTextInput" /* 13770 */;
-import Badge from "Badge" /* 13822 */;
-import BadgeDefault from "Badge" /* 13822 */;
-import CarouselPaginationDefault from "CarouselPagination" /* 13823 */;
-import Fonts from "Fonts" /* 13824 */;
-import FontsDefault from "Fonts" /* 13824 */;
-import BadgeColors from "BadgeColors" /* 13825 */;
-import EmptyState from "EmptyState" /* 13826 */;
-import EmptyStateDefault2 from "EmptyState" /* 13826 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import Form from "Form" /* 8372 */;
+import CardSectionDefault from "CardSection" /* 8399 */;
+import _modDef8400 from "module_8400" /* 8400 */;
+import renderDefault from "render" /* 9081 */;
+import StaticNativeCutoutAvatarImage from "StaticNativeCutoutAvatarImage" /* 9441 */;
+import StaticNativeCutoutAvatarImageDefault from "StaticNativeCutoutAvatarImage" /* 9441 */;
+import VoidTextInputDefault from "VoidTextInput" /* 9740 */;
+import RoleLabel from "RoleLabel" /* 10369 */;
+import BetaTag from "BetaTag" /* 13179 */;
+import BetaTagDefault from "BetaTag" /* 13179 */;
+import SquareIconButton from "SquareIconButton" /* 13345 */;
+import ShinyButtonDefault from "ShinyButton" /* 13951 */;
+import CheckboxDefault from "Checkbox" /* 13952 */;
+import CloseDefault from "Close" /* 13955 */;
+import AnimatedEllipsisDotDefault from "AnimatedEllipsisDot" /* 13956 */;
+import GradientBorderDefault from "GradientBorder" /* 13957 */;
+import HelpMessage from "HelpMessage" /* 13958 */;
+import HelpMessageDefault from "HelpMessage" /* 13958 */;
+import IconPillDefault from "IconPill" /* 13959 */;
+import NewTagDefault from "NewTag" /* 13960 */;
+import RadioEmpty from "RadioEmpty" /* 13961 */;
+import RadioEmptyDefault from "RadioEmpty" /* 13961 */;
+import CollapsibleDefault from "Collapsible" /* 13962 */;
+import OverflowSquircle from "OverflowSquircle" /* 13963 */;
+import OverflowSquircleDefault from "OverflowSquircle" /* 13963 */;
+import ThemedIconDefault from "ThemedIcon" /* 13964 */;
+import LocalImageThumbnailDefault from "LocalImageThumbnail" /* 13965 */;
+import Tooltip from "Tooltip" /* 13967 */;
+import TooltipDefault from "Tooltip" /* 13967 */;
+import WarningCircleDefault from "WarningCircle" /* 13968 */;
+import getAnimatedTypingTranslateX from "getAnimatedTypingTranslateX" /* 13969 */;
+import STATUS_PADDINGDefault from "STATUS_PADDING" /* 13970 */;
+import Status from "Status" /* 13971 */;
+import StatusDefault from "Status" /* 13971 */;
+import getStatusSize from "getStatusSize" /* 13980 */;
+import getStatusSizeDefault from "getStatusSize" /* 13980 */;
+import AccessibilityFocusViewDefault from "AccessibilityFocusView" /* 13982 */;
+import PassthroughTouchViewDefault from "PassthroughTouchView" /* 13984 */;
+import STANDARD_EASING from "STANDARD_EASING" /* 13986 */;
+import SpacerDefault from "Spacer" /* 13987 */;
+import LiveTagDefault from "LiveTag" /* 13988 */;
+import RoleDot from "RoleDot" /* 13989 */;
+import generateBoxShadowStyle from "generateBoxShadowStyle" /* 13990 */;
+import NitroWheelDefault from "NitroWheel" /* 13991 */;
+import EmptyStateDefault from "EmptyState" /* 13992 */;
+import RNTextInput from "RNTextInput" /* 13993 */;
+import Badge from "Badge" /* 14045 */;
+import BadgeDefault from "Badge" /* 14045 */;
+import CarouselPaginationDefault from "CarouselPagination" /* 14046 */;
+import Fonts from "Fonts" /* 14047 */;
+import FontsDefault from "Fonts" /* 14047 */;
+import BadgeColors from "BadgeColors" /* 14048 */;
+import EmptyState from "EmptyState" /* 14049 */;
+import EmptyStateDefault2 from "EmptyState" /* 14049 */;
 
 const result = set.fileFinishedImporting("design/void/native.tsx");
 
@@ -149,7 +149,7 @@ export const EXPERIMENTAL_HIGH_ELEVATION_SHADOW_PARAMS = generateBoxShadowStyle.
 export const NO_ELEVATION_SHADOW_PARAMS = generateBoxShadowStyle.NO_ELEVATION_SHADOW_PARAMS;
 export const NitroWheel = NitroWheelDefault;
 export const EmptyState = EmptyStateDefault;
-export const LegacyText = _modDef8391;
+export const LegacyText = _modDef8400;
 export const RNTextInput = RNTextInput.RNTextInput;
 export const Badge = BadgeDefault;
 export const MaskedBadge = Badge.MaskedBadge;

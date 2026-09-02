@@ -1,12 +1,12 @@
-// Module ID: 8445
-// Function ID: 8446
+// Module ID: 8454
+// Function ID: 8455
 // Name: canInstallApplication
-// Dependencies: [8146, 4952, 8433, 2]
+// Dependencies: [8154, 4952, 8442, 2]
 // Exports: canInstallApplication, isAppUserInstallable, shouldInstallApplicationOnDemand
 
-// Module 8445 (canInstallApplication)
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8433 */;
-import closure_2 from "getIndexKey" /* 8146 */;
+// Module 8454 (canInstallApplication)
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 8442 */;
+import closure_2 from "getIndexKey" /* 8154 */;
 import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4952 */;
 
 require = arg1;

@@ -1,19 +1,19 @@
-// Module ID: 590
-// Function ID: 591
+// Module ID: 587
+// Function ID: 588
 // Name: getClass
-// Dependencies: [109, 591, 595, 10, 635, 2]
+// Dependencies: [109, 588, 592, 10, 632, 2]
 
-// Module 590 (getClass)
+// Module 587 (getClass)
 import isTracingDefault from "isTracing" /* 10 */;
-import Storage3 from "Storage" /* 595 */;
-import throttleDefault from "throttle" /* 635 */;
+import Storage3 from "Storage" /* 592 */;
+import throttleDefault from "throttle" /* 632 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
-import { Store } from "initialize" /* 591 */;
+import { Store } from "initialize" /* 588 */;
 import set from "set" /* 2 */;
 
 require = arg1;
 let closure_3 = ["_state", "_version"];
-let closure_6 = { _state: "children", _version: "c" };
+let closure_6 = { _state: "disabled", _version: "Date" };
 let c7 = null;
 let PersistedStore;
 class PersistedStore extends r10016 {
@@ -230,7 +230,7 @@ PersistedStore["migrateAndReadStoreState"] = function migrateAndReadStoreState(E
     if (PersistedStore.shouldClear(c7, EmojiStore)) {
       const Storage2 = Storage3.Storage;
       Storage2.remove(EmojiStore);
-      return { state: "PX_16", requiresPersist: null };
+      return { state: "PX_16", requiresPersist: true };
     }
   }
   let value = null;

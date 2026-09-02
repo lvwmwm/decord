@@ -1,11 +1,11 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12496
+// Function ID: 12497
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 676, 21, 4478, 712, 1499, 6237, 1236, 12273, 1297, 4474, 4928, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 1498, 6246, 1233, 12497, 1296, 4474, 4928, 2]
 // Exports: default
 
-// Module 12272 (HubEmailConnectionWaitlist)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12496 (HubEmailConnectionWaitlist)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -26,7 +26,7 @@ export default function HubEmailConnectionWaitlist(school) {
   const onClose = school.onClose;
   let navigation;
   const tmp = callback3();
-  let obj = onClose(1499);
+  let obj = onClose(1498);
   navigation = obj.useNavigation();
   const items = [navigation, onClose];
   const layoutEffect = React.useLayoutEffect(() => {
@@ -41,20 +41,20 @@ export default function HubEmailConnectionWaitlist(school) {
     });
   }, items);
   obj = { style: tmp.container, children: null };
-  obj = { source: navigation(12273), style: tmp.header };
+  obj = { source: navigation(12497), style: tmp.header };
   const items1 = [callback(closure_5, obj), , , ];
   obj1 = { style: tmp.title, accessibilityRole: "header", children: null };
-  let intl = onClose(1236).intl;
-  obj1[2] = intl.string(onClose(1236).t.OaloU5);
-  items1[1] = callback(onClose(1297).LegacyText, obj1);
+  let intl = onClose(1233).intl;
+  obj1[2] = intl.string(onClose(1233).t.OaloU5);
+  items1[1] = callback(onClose(1296).LegacyText, obj1);
   const obj2 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl2 = onClose(1236).intl;
-  obj2[3] = intl2.format(onClose(1236).t.Rs7MXJ, { school: school.school });
+  const intl2 = onClose(1233).intl;
+  obj2[3] = intl2.format(onClose(1233).t.Rs7MXJ, { school: school.school });
   items1[2] = callback(onClose(4474).Text, obj2);
   const obj3 = { style: tmp.redesignButton, children: null };
   const obj4 = { size: "lg", text: null, onPress: null };
-  const intl3 = onClose(1236).intl;
-  obj4[1] = intl3.string(onClose(1236).t.i4jeWR);
+  const intl3 = onClose(1233).intl;
+  obj4[1] = intl3.string(onClose(1233).t.i4jeWR);
   obj4[2] = onClose;
   obj3[1] = callback(onClose(4928).Button, obj4);
   items1[3] = callback(closure_4, obj3);

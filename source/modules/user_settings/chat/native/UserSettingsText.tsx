@@ -1,22 +1,22 @@
-// Module ID: 15061
-// Function ID: 15062
+// Module ID: 15290
+// Function ID: 15291
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1922, 4145, 1303, 1304, 676, 21, 4478, 712, 698, 4166, 8213, 4197, 589, 4139, 1499, 7762, 1297, 10390, 4474, 1236, 8363, 4926, 5992, 5993, 7692, 7693, 2]
+// Dependencies: [19, 17, 1921, 4145, 1302, 1303, 673, 21, 4478, 709, 695, 4166, 8222, 4197, 586, 4139, 1498, 7771, 1296, 10412, 4474, 1233, 8372, 4926, 6000, 6001, 7701, 7702, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 15061 (UserSettingsText)
+// Module 15290 (UserSettingsText)
 import noopAll from "noop" /* 19 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import ThemesDefault from "Themes" /* 712 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import ThemesDefault from "Themes" /* 709 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import saveGuildFoldersDefault from "saveGuildFolders" /* 8213 */;
+import saveGuildFoldersDefault from "saveGuildFolders" /* 8222 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 import closure_5 from "reset" /* 4145 */;
-import closure_6 from "initialize" /* 1303 */;
-import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "initialize" /* 1302 */;
+import closure_7 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
+import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 1492
-// Function ID: 1493
+// Module ID: 1491
+// Function ID: 1492
 // Name: getSrcWithWidthAndHeight
-// Dependencies: [32, 17, 676, 1466, 1493, 1483, 1467, 1895, 12, 1434, 1431, 2]
+// Dependencies: [32, 17, 673, 1465, 1492, 1482, 1466, 1894, 12, 1433, 1430, 2]
 // Exports: getMobileOptimizedSrc, getPaletteForAvatarMobile
 
-// Module 1492 (getSrcWithWidthAndHeight)
-import getAvatarURL from "getAvatarURL" /* 1431 */;
-import ensureAvatarSource from "ensureAvatarSource" /* 1434 */;
-import items2 from "items" /* 1467 */;
-import parseDefault from "parse" /* 1483 */;
-import useWindowDimensions from "useWindowDimensions" /* 1493 */;
+// Module 1491 (getSrcWithWidthAndHeight)
+import getAvatarURL from "getAvatarURL" /* 1430 */;
+import ensureAvatarSource from "ensureAvatarSource" /* 1433 */;
+import items2 from "items" /* 1466 */;
+import parseDefault from "parse" /* 1482 */;
+import useWindowDimensions from "useWindowDimensions" /* 1492 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_6 } from "ME" /* 676 */;
+import { MEDIA_PROXY_MAX_TARGET_RESOLUTION as closure_6 } from "ME" /* 673 */;
 
 require = arg1;
 function getSrcWithWidthAndHeight(animated) {
@@ -65,7 +65,7 @@ function getSrcWithWidthAndHeight(animated) {
       obj[2] = sourceWidth;
       obj[3] = sourceHeight;
       const obj2 = items2;
-      obj[4] = items2.getSnapDownMaxUpscale(tmp9, tmp2(1895)());
+      obj[4] = items2.getSnapDownMaxUpscale(tmp9, tmp2(1894)());
       size = obj2.snapAttachmentDimensions(obj);
       const obj4 = items2;
     }
@@ -81,7 +81,7 @@ function getSrcWithWidthAndHeight(animated) {
   let tmp2Result = tmp2(12);
   let text = tmp5;
   if (!tmp2Result.isEmpty(tmp6)) {
-    tmp2Result = tmp2(1483);
+    tmp2Result = tmp2(1482);
     text = `${tmp5}?${obj6.stringify(tmp6)}`;
   }
   return text;

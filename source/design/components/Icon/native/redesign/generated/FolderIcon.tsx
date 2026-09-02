@@ -1,12 +1,12 @@
-// Module ID: 5023
-// Function ID: 5024
+// Module ID: 5027
+// Function ID: 5028
 // Name: FolderIcon
-// Dependencies: [19, 21, 712, 4196, 4984, 2]
+// Dependencies: [19, 21, 709, 4196, 4984, 2]
 // Exports: FolderIcon
 
-// Module 5023 (FolderIcon)
+// Module 5027 (FolderIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
 import registerAsset from "registerAsset" /* 4984 */;
 import { jsx } from "jsxProd" /* 21 */;

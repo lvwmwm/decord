@@ -1,16 +1,16 @@
 // Module ID: 4504
 // Function ID: 4505
 // Name: createExecutable
-// Dependencies: [1936, 4505, 1935, 4506, 4507, 4508, 1431, 4510, 506, 11, 2]
+// Dependencies: [1935, 4505, 1934, 4506, 4507, 4508, 1430, 4510, 503, 11, 2]
 
 // Module 4504 (createExecutable)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import fromStringAll from "fromString" /* 506 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import toJSDefault from "toJS" /* 1936 */;
+import fromStringAll from "fromString" /* 503 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import toJSDefault from "toJS" /* 1935 */;
 import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 4510 */;
 import closure_4 from "createFromServer" /* 4505 */;
-import closure_5 from "createdAt" /* 1935 */;
+import closure_5 from "createdAt" /* 1934 */;
 import items3 from "items3" /* 4506 */;
 import { ApplicationTypes } from "ApplicationTypes" /* 4507 */;
 

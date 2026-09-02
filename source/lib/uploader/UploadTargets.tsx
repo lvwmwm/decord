@@ -1,16 +1,16 @@
-// Module ID: 5118
-// Function ID: 5119
+// Module ID: 5126
+// Function ID: 5127
 // Name: getCreateAttachmentURL
-// Dependencies: [1387, 676, 5078, 5074, 5119, 5121, 2]
+// Dependencies: [1386, 673, 5086, 5082, 5127, 5129, 2]
 // Exports: getUploadTarget
 
-// Module 5118 (getCreateAttachmentURL)
-import items from "items" /* 5074 */;
-import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 5078 */;
-import getCreateAttachmentURLDefault from "getCreateAttachmentURL" /* 5119 */;
-import getCreateAttachmentURLDefault2 from "getCreateAttachmentURL" /* 5121 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import ME from "ME" /* 676 */;
+// Module 5126 (getCreateAttachmentURL)
+import items from "items" /* 5082 */;
+import getUploadFileSizeSumAll from "getUploadFileSizeSum" /* 5086 */;
+import getCreateAttachmentURLDefault from "getCreateAttachmentURL" /* 5127 */;
+import getCreateAttachmentURLDefault2 from "getCreateAttachmentURL" /* 5129 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 ({ Endpoints: c5, MAX_UPLOAD_COUNT: closure_6 } = ME);

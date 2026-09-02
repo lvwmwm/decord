@@ -1,11 +1,11 @@
-// Module ID: 12517
-// Function ID: 12518
+// Module ID: 12741
+// Function ID: 12742
 // Name: map
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 12517 (map)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 12741 (map)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let obj = { NOT_FETCHED: "NOT_FETCHED", FETCHING: "FETCHING", FETCHED: "FETCHED" };
 let map = new Map();

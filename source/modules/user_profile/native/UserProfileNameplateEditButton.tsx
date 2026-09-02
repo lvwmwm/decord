@@ -1,16 +1,16 @@
-// Module ID: 14288
-// Function ID: 14289
+// Module ID: 14511
+// Function ID: 14512
 // Name: UserProfileNameplateEditButton
-// Dependencies: [19, 17, 1992, 6001, 505, 21, 4478, 712, 589, 8076, 14289, 4445, 14290, 2009, 14272, 1236, 8522, 1297, 8092, 2]
+// Dependencies: [19, 17, 1991, 6009, 502, 21, 4478, 709, 586, 8084, 14512, 4445, 14513, 2008, 14495, 1233, 8535, 1296, 8100, 2]
 // Exports: default
 
-// Module 14288 (UserProfileNameplateEditButton)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 14511 (UserProfileNameplateEditButton)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 6001 */;
-import { NOOP } from "sum" /* 505 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import { COLLECTIBLES_PREVIEW_SIZE } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
+import { NOOP } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -31,7 +31,7 @@ export default function UserProfileNameplateEditButton(user) {
   let nameplate;
   const tmp = callback();
   dependencyMap = tmp2;
-  let obj = user(589);
+  let obj = user(586);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => {
     let member = null;
@@ -40,7 +40,7 @@ export default function UserProfileNameplateEditButton(user) {
     }
     return member;
   });
-  obj1 = user(8076);
+  obj1 = user(8084);
   obj = { pendingValue: pendingNameplate, userValue: null, guildValue: null, guildId: null };
   const collectibles = user.collectibles;
   nameplate = undefined;
@@ -62,7 +62,7 @@ export default function UserProfileNameplateEditButton(user) {
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
-  const fetchNameplate = user(14289).useFetchNameplate(skuId);
+  const fetchNameplate = user(14512).useFetchNameplate(skuId);
   ({ nameplateProduct, nameplateData, nameplateRecord, isFetching } = fetchNameplate);
   if (null != guildId) {
     let nameplate2;
@@ -85,35 +85,35 @@ export default function UserProfileNameplateEditButton(user) {
   const items1 = [user, nameplate, guildId];
   if (isFetching) {
     obj = { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true };
-    const intl4 = tmp3(1236).intl;
-    obj[0] = intl4.string(tmp3(1236).t.x5CoXR);
-    const intl5 = tmp3(1236).intl;
-    obj[1] = intl5.string(tmp3(1236).t.MKDeyL);
+    const intl4 = tmp3(1233).intl;
+    obj[0] = intl4.string(tmp3(1233).t.x5CoXR);
+    const intl5 = tmp3(1233).intl;
+    obj[1] = intl5.string(tmp3(1233).t.MKDeyL);
     obj[2] = NOOP;
     obj[3] = <closure_4 animating size="large" />;
-    return jsx(tmp3(14272).UserProfileEditFormButton, { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true });
+    return jsx(tmp3(14495).UserProfileEditFormButton, { label: null, buttonText: null, onPress: null, leading: null, loading: true, disabled: true, hideArrow: true });
   } else {
     let name;
     if (nameplateProduct != null) {
       name = nameplateProduct.name;
     }
     if (name == null) {
-      const intl = tmp3(1236).intl;
-      name = intl.string(tmp3(1236).t.PoWNfe);
+      const intl = tmp3(1233).intl;
+      name = intl.string(tmp3(1233).t.PoWNfe);
     }
     let formatToPlainStringResult = name;
     if (tmp2) {
       formatToPlainStringResult = name;
       if (null == nameplate) {
-        const intl2 = tmp3(1236).intl;
+        const intl2 = tmp3(1233).intl;
         obj1 = { label: null };
         obj1[0] = name;
-        formatToPlainStringResult = intl2.formatToPlainString(tmp3(1236).t.ep5D4i, obj1);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp3(1233).t.ep5D4i, obj1);
       }
     }
     const obj2 = { label: null, buttonText: null, accessibilityValue: null, onPress: null, leading: null };
-    const intl3 = tmp3(1236).intl;
-    obj2[0] = intl3.string(tmp3(1236).t.x5CoXR);
+    const intl3 = tmp3(1233).intl;
+    obj2[0] = intl3.string(tmp3(1233).t.x5CoXR);
     obj2[1] = formatToPlainStringResult;
     const obj3 = { text: null };
     obj3[0] = formatToPlainStringResult;
@@ -126,16 +126,16 @@ export default function UserProfileNameplateEditButton(user) {
           obj4[0] = tmp.previewContainer;
           const obj5 = { nameplate: null, fullOpacity: true, isSquarePreview: true };
           obj5[0] = nameplateData;
-          obj4[1] = tmp15(guildId(8522), obj5);
+          obj4[1] = tmp15(guildId(8535), obj5);
           let tmp15Result = tmp15(closure_5, obj4);
         }
         obj2[4] = tmp15Result;
-        return tmp15(tmp3(14272).UserProfileEditFormButton, obj2);
+        return tmp15(tmp3(14495).UserProfileEditFormButton, obj2);
       }
     }
     const obj6 = { source: null, style: null };
-    obj6[0] = guildId(8092);
+    obj6[0] = guildId(8100);
     obj6[1] = tmp.noneIcon;
-    tmp15Result = tmp15(tmp3(1297).Icon, obj6);
+    tmp15Result = tmp15(tmp3(1296).Icon, obj6);
   }
 };

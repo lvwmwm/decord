@@ -1,15 +1,15 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 10917
+// Function ID: 10918
 // Name: _acceptMessageRequest
-// Dependencies: [5, 676, 530, 10697, 709, 6052, 2]
+// Dependencies: [5, 673, 527, 10918, 706, 6060, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10696 (_acceptMessageRequest)
-import sendRequest from "sendRequest" /* 530 */;
-import handleLogoutDefault from "handleLogout" /* 6052 */;
-import MessageRequestConsentStatusTypes from "MessageRequestConsentStatusTypes" /* 10697 */;
+// Module 10917 (_acceptMessageRequest)
+import sendRequest from "sendRequest" /* 527 */;
+import handleLogoutDefault from "handleLogout" /* 6060 */;
+import MessageRequestConsentStatusTypes from "MessageRequestConsentStatusTypes" /* 10918 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
 function _acceptMessageRequest() {

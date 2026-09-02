@@ -1,0 +1,10 @@
+// Module ID: 2919
+// Function ID: 2920
+// Name: registerAsset
+// Dependencies: [1240]
+
+// Module 2919 (registerAsset)
+import registerAsset from "registerAsset" /* 1240 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "051e6e0d352ab5117bd9a3fb107d5437", name: "bg.messages.051e6e0d352ab5117bd9a3fb107d5437.compiled.messages", type: "jsona" });

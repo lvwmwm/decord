@@ -1,17 +1,17 @@
-// Module ID: 17405
-// Function ID: 17406
+// Module ID: 17641
+// Function ID: 17642
 // Name: updateSocialRpcNetworkConfig
-// Dependencies: [17, 1996, 1218, 698, 530, 5486, 500, 2]
+// Dependencies: [17, 1995, 1215, 695, 527, 5494, 1234, 2]
 
-// Module 17405 (updateSocialRpcNetworkConfig)
+// Module 17641 (updateSocialRpcNetworkConfig)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set2 from "set" /* 500 */;
-import sendRequest from "sendRequest" /* 530 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5486 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
+import sendRequest from "sendRequest" /* 527 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import set2 from "set" /* 1234 */;
+import initializeDefault from "initialize" /* 5494 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
 
 function updateSocialRpcNetworkConfig() {
   let obj = { "X-Super-Properties": expandEventPropertiesDefault.getSuperPropertiesBase64(), "X-Fingerprint": store.getFingerprint(), "X-Installation-ID": store.getInstallationForTracking(), "X-Discord-Locale": locale.locale };

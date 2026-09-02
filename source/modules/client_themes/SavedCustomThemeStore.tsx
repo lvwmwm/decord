@@ -1,14 +1,14 @@
 // Module ID: 4411
 // Function ID: 4412
 // Name: validateSavedTheme
-// Dependencies: [1305, 1208, 589, 709, 2]
+// Dependencies: [1304, 1205, 586, 706, 2]
 
 // Module 4411 (validateSavedTheme)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef1208 from "module_1208" /* 1208 */;
-import SystemThemeState from "SystemThemeState" /* 1305 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import _modDef1205 from "module_1205" /* 1205 */;
+import SystemThemeState from "SystemThemeState" /* 1304 */;
 
 function validateSavedTheme(colors) {
   try {
@@ -24,7 +24,7 @@ function validateSavedTheme(colors) {
     }
     return tmp5;
   } catch (tmp8) {
-    obj = _modDef1208;
+    obj = _modDef1205;
     obj = { tags: null };
     obj[0] = { app_context: "SavedCustomThemeStore" };
     obj.captureMessage("Invalid saved custom theme: " + tmp8, obj);
@@ -99,7 +99,7 @@ obj = {
   },
   SAVED_CUSTOM_THEMES_FETCH_FAILURE: function handleCustomThemesFetchFailure(error) {
     const ERROR = obj.ERROR;
-    obj = _modDef1208;
+    obj = _modDef1205;
     obj.captureException(error.error, { tags: { app_context: "SavedCustomThemeStore" } });
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 11770
-// Function ID: 11771
+// Module ID: 11993
+// Function ID: 11994
 // Name: useRequest
-// Dependencies: [5, 32, 19, 1236, 4377, 2]
+// Dependencies: [5, 32, 19, 1233, 4377, 2]
 // Exports: default
 
-// Module 11770 (useRequest)
+// Module 11993 (useRequest)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
@@ -56,7 +56,7 @@ export default function useRequest(arg0) {
                 let lib = tmp6;
                 c5 = 1;
                 c6 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else if (1 === tmp9) {
               if (arg0 === 1) {

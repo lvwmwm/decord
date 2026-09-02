@@ -1,17 +1,17 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 16172
+// Function ID: 16173
 // Name: handlePress
-// Dependencies: [19, 17, 4299, 15876, 676, 10831, 21, 4478, 712, 6186, 4197, 589, 4217, 4927, 15614, 15886, 1236, 15942, 15885, 6006, 7796, 15896, 4474, 2]
+// Dependencies: [19, 17, 4299, 16107, 673, 11051, 21, 4478, 709, 6195, 4197, 586, 4217, 4927, 15845, 16117, 1233, 16173, 16116, 6014, 7805, 16127, 4474, 2]
 
-// Module 15941 (handlePress)
-import ThemesDefault from "Themes" /* 712 */;
-import transitionToGuild from "transitionToGuild" /* 6186 */;
+// Module 16172 (handlePress)
+import ThemesDefault from "Themes" /* 709 */;
+import transitionToGuild from "transitionToGuild" /* 6195 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "handleConnectionOpen" /* 4299 */;
-import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 15876 */;
-import { EMPTY_NUX_SERVER } from "ME" /* 676 */;
-import { MODE_CHANGE_PHYSICS } from "MODE_CHANGE_PHYSICS" /* 10831 */;
+import GUILD_ITEM_SIZE from "GUILD_ITEM_SIZE" /* 16107 */;
+import { EMPTY_NUX_SERVER } from "ME" /* 673 */;
+import { MODE_CHANGE_PHYSICS } from "MODE_CHANGE_PHYSICS" /* 11051 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

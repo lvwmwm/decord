@@ -1,12 +1,12 @@
-// Module ID: 808
-// Function ID: 809
+// Module ID: 805
+// Function ID: 806
 // Name: interpolate
-// Dependencies: [689, 2]
+// Dependencies: [686, 2]
 // Exports: transformColorContrast, transformColorForIncreasedContrast, transformColorForReducedContrast, transformColorForReducedSaturation
 
-// Module 808 (interpolate)
+// Module 805 (interpolate)
 import set2 from "set" /* 2 */;
-import nDefault from "n" /* 689 */;
+import nDefault from "n" /* 686 */;
 
 function interpolate(arg0, arg1, arg2) {
   [tmp, tmp2] = arg0;

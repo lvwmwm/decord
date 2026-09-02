@@ -1,11 +1,11 @@
-// Module ID: 12580
-// Function ID: 12581
+// Module ID: 12804
+// Function ID: 12805
 // Name: ProductDetailsActionSheetSkeleton
-// Dependencies: [19, 17, 21, 4478, 712, 4933, 4217, 4479, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4933, 4217, 4479, 2]
 // Exports: default
 
-// Module 12580 (ProductDetailsActionSheetSkeleton)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12804 (ProductDetailsActionSheetSkeleton)
+import ThemesDefault from "Themes" /* 709 */;
 import _modDef4217 from "module_4217" /* 4217 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

@@ -1,9 +1,9 @@
-// Module ID: 9918
-// Function ID: 9919
-// Dependencies: [19, 17, 4470, 21, 4478, 712, 4217, 589, 4479, 4482, 2]
+// Module ID: 9940
+// Function ID: 9941
+// Dependencies: [19, 17, 4470, 21, 4478, 709, 4217, 586, 4479, 4482, 2]
 
-// Module 9918
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9940
+import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
@@ -33,14 +33,14 @@ const memoResult = importAllResult.memo(function UserPlaceholderRow(animate) {
   }
   ({ height, row } = animate);
   if (height === undefined) {
-    height = flag(712).space.PX_48;
+    height = flag(709).space.PX_48;
   }
   let sharedValue;
   flag = undefined;
   const tmp3 = callback3(height);
   let obj = sharedValue(4217);
   sharedValue = obj.useSharedValue(1);
-  obj1 = sharedValue(589);
+  obj1 = sharedValue(586);
   const items = [closure_5];
   if (flag) {
     flag = !obj1.useStateFromStores(items, () => useReducedMotion.useReducedMotion);

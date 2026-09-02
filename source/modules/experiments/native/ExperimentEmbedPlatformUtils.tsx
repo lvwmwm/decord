@@ -1,10 +1,10 @@
-// Module ID: 11379
-// Function ID: 11380
+// Module ID: 11602
+// Function ID: 11603
 // Name: regExp
-// Dependencies: [4445, 11380, 2009, 11080, 11081, 7633, 4399, 2]
+// Dependencies: [4445, 11603, 2008, 11300, 11301, 7643, 4399, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 11379 (regExp)
+// Module 11602 (regExp)
 import set from "set" /* 2 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 
@@ -17,10 +17,10 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
   if (null != experimentTreatmentFromEmbedURL) {
     const _Number = Number;
     if (!Number.isNaN(experimentTreatmentFromEmbedURL)) {
-      let obj = _require(11080);
+      let obj = _require(11300);
       const legacyExperiments = obj.getLegacyExperiments();
       ({ experiments, overridesInfo } = legacyExperiments);
-      const apexExperiments = _require(11081).getApexExperiments();
+      const apexExperiments = _require(11301).getApexExperiments();
       let tmp5 = experiments[experimentFromEmbedURL];
       if (tmp5 == null) {
         tmp5 = apexExperiments.experiments[experimentFromEmbedURL];
@@ -33,7 +33,7 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
         if (tmp6 == null) {
           tmp6 = null;
         }
-        let tmpResult = tmp(7633);
+        let tmpResult = tmp(7643);
         const experimentBuckets = tmpResult.getExperimentBuckets(tmp5);
         const iter = experimentBuckets.find((value) => value.value === closure_0);
         if (null != iter) {
@@ -47,9 +47,9 @@ export const handleCodedLinkExperimentEmbedTap = function handleCodedLinkExperim
           const tmpResult1 = tmp(4399);
         }
       }
-      const obj2 = _require(11081);
+      const obj2 = _require(11301);
     }
   }
   obj = { id: experimentFromEmbedURL };
-  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(_require(2009)(11380, dependencyMap.paths), "ExperimentOverrideSheet", obj);
+  ACTION_SHEET_HEIGHT_HALFDefault.openLazy(_require(2008)(11603, dependencyMap.paths), "ExperimentOverrideSheet", obj);
 };

@@ -1,14 +1,14 @@
-// Module ID: 14807
-// Function ID: 14808
+// Module ID: 15036
+// Function ID: 15037
 // Name: useActiveGuildSubscriptions
-// Dependencies: [19, 4145, 14801, 14802, 589, 4837, 2]
+// Dependencies: [19, 4145, 15030, 15031, 586, 4837, 2]
 // Exports: default
 
-// Module 14807 (useActiveGuildSubscriptions)
-import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 14802 */;
+// Module 15036 (useActiveGuildSubscriptions)
+import useUserRoleSubscriptionRelationshipDefault from "useUserRoleSubscriptionRelationship" /* 15031 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "reset" /* 4145 */;
-import { UserGuildRoleSubscriptionRelationship as closure_6 } from "MAX_SUBSCRIPTION_TIERS" /* 14801 */;
+import { UserGuildRoleSubscriptionRelationship as closure_6 } from "MAX_SUBSCRIPTION_TIERS" /* 15030 */;
 
 const require = arg1;
 let closure_7 = [];
@@ -28,7 +28,7 @@ export default function useActiveGuildSubscriptions() {
   const tmp = useUserRoleSubscriptionRelationshipDefault() === constants.SUBSCRIBED;
   importDefault = tmp;
   const items = [closure_5];
-  let stateFromStores = flag(589).useStateFromStores(items, () => activeGuildSubscriptions.getActiveGuildSubscriptions());
+  let stateFromStores = flag(586).useStateFromStores(items, () => activeGuildSubscriptions.getActiveGuildSubscriptions());
   closure_2 = React.useRef(false);
   const items1 = [flag, tmp];
   const effect = React.useEffect(() => {

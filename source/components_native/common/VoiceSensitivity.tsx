@@ -1,19 +1,19 @@
-// Module ID: 10067
-// Function ID: 10068
+// Module ID: 10089
+// Function ID: 10090
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 4529, 5363, 7157, 676, 4730, 21, 4478, 712, 4326, 1493, 589, 5083, 4579, 1351, 1236, 1297, 8363, 8381, 500, 2]
+// Dependencies: [5, 32, 19, 17, 4529, 5371, 7166, 673, 4730, 21, 4478, 709, 4326, 1492, 586, 5091, 4579, 1350, 1233, 1296, 8372, 8390, 1234, 2]
 // Exports: default
 
-// Module 10067 (VoiceSensitivity)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 10089 (VoiceSensitivity)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_7 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_8 from "anyoneHasFlagInContext" /* 5363 */;
-import closure_9 from "getState" /* 7157 */;
-import { AppStates } from "ME" /* 676 */;
+import closure_8 from "anyoneHasFlagInContext" /* 5371 */;
+import closure_9 from "getState" /* 7166 */;
+import { AppStates } from "ME" /* 673 */;
 import { NativePermissionTypes } from "NativePermissionStatus" /* 4730 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

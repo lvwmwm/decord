@@ -1,14 +1,14 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 12035
+// Function ID: 12036
 // Name: renderChatInputActionButtonGiftAndThread
-// Dependencies: [19, 17, 11535, 21, 4478, 11813, 11806, 1236, 11804, 11815, 4197, 712, 4204, 2]
+// Dependencies: [19, 17, 11758, 21, 4478, 12036, 12029, 1233, 12027, 12038, 4197, 709, 4204, 2]
 
-// Module 11812 (renderChatInputActionButtonGiftAndThread)
-import ThemesDefault from "Themes" /* 712 */;
-import FadeTransitionItemDefault from "FadeTransitionItem" /* 11813 */;
+// Module 12035 (renderChatInputActionButtonGiftAndThread)
+import ThemesDefault from "Themes" /* 709 */;
+import FadeTransitionItemDefault from "FadeTransitionItem" /* 12036 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ChatInputActionType } from "TextAreaCta" /* 11535 */;
+import { ChatInputActionType } from "TextAreaCta" /* 11758 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -21,16 +21,16 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
   if (shouldShowThread) {
     obj = { accessible: null, accessibilityLabel: null, disabled: null, IconComponent: null, onPress: null, style: null };
     obj[0] = accessible;
-    const intl = onPress(1236).intl;
-    obj[1] = intl.string(onPress(1236).t["4WNcpu"]);
+    const intl = onPress(1233).intl;
+    obj[1] = intl.string(onPress(1233).t["4WNcpu"]);
     obj[2] = !canStartThreads;
-    obj[3] = onPress(11804).ThreadPlusIcon;
+    obj[3] = onPress(12027).ThreadPlusIcon;
     obj[4] = function onPress(arg0) {
       return onPress(arg0, closure_1_5.THREAD);
     };
     obj[5] = styleButton;
-    let tmpResult = tmp(tmp2(11806), obj);
-    const tmp2Result = tmp2(11806);
+    let tmpResult = tmp(tmp2(12029), obj);
+    const tmp2Result = tmp2(12029);
   } else {
     obj = { accessible: null, channel: null, onPress: null, style: null, styleButton: null };
     obj[0] = accessible;
@@ -38,7 +38,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     obj[2] = onPress;
     obj[3] = styleButtonWrapper;
     obj[4] = styleButton;
-    tmpResult = tmp(tmp2(11815), obj);
+    tmpResult = tmp(tmp2(12038), obj);
   }
   obj[2] = tmpResult;
   return jsx(FadeTransitionItemDefault, { cleanup, state, children: null }, arg0);

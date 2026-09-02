@@ -1,12 +1,12 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9178
+// Function ID: 9179
 // Name: useEmojiPickerViewableItemsChanged
-// Dependencies: [19, 1922, 589, 4139, 12, 2]
+// Dependencies: [19, 1921, 586, 4139, 12, 2]
 // Exports: default
 
-// Module 9164 (useEmojiPickerViewableItemsChanged)
+// Module 9178 (useEmojiPickerViewableItemsChanged)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/premium/roadblocks/native/hooks/useEmojiPickerViewableItemsCallback.tsx");

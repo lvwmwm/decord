@@ -1,15 +1,15 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15629
+// Function ID: 15630
 // Name: HapticButton
-// Dependencies: [19, 17, 21, 4478, 4928, 4446, 4447, 4926, 5601, 4474, 4448, 2]
+// Dependencies: [19, 17, 21, 4478, 4928, 4446, 4447, 4926, 5609, 4474, 4448, 2]
 // Exports: default
 
-// Module 15401 (HapticButton)
+// Module 15629 (HapticButton)
 import noopAll from "noop" /* 19 */;
 import IMPACT_LIGHTDefault from "IMPACT_LIGHT" /* 4447 */;
 import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
-import PressableCard from "PressableCard" /* 5601 */;
+import PressableCard from "PressableCard" /* 5609 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

@@ -1,21 +1,21 @@
-// Module ID: 11581
-// Function ID: 11582
+// Module ID: 11804
+// Function ID: 11805
 // Name: ForumPostMediaAndroid
-// Dependencies: [32, 19, 17, 1302, 1301, 21, 4478, 712, 5493, 4918, 11582, 7345, 11583, 500, 6142, 5068, 8682, 8684, 11584, 1363, 4166, 10302, 1492, 2]
+// Dependencies: [32, 19, 17, 1301, 1300, 21, 4478, 709, 5501, 4918, 11805, 7354, 11806, 1234, 6150, 5076, 8697, 8699, 11807, 1362, 4166, 10324, 1491, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
-// Module 11581 (ForumPostMediaAndroid)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11804 (ForumPostMediaAndroid)
+import ThemesDefault from "Themes" /* 709 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import isBlurDisabledDefault from "isBlurDisabled" /* 4918 */;
-import preloadDefault from "preload" /* 5493 */;
-import SpoilerDefault from "Spoiler" /* 11582 */;
-import getForumPostShouldObscure from "getForumPostShouldObscure" /* 11584 */;
+import preloadDefault from "preload" /* 5501 */;
+import SpoilerDefault from "Spoiler" /* 11805 */;
+import getForumPostShouldObscure from "getForumPostShouldObscure" /* 11807 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleThemeChange" /* 1302 */;
-import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1301 */;
+import closure_8 from "handleThemeChange" /* 1301 */;
+import { ANDROID_FOREGROUND_RIPPLE } from "semanticColor" /* 1300 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -73,14 +73,14 @@ function ForumPostMedia(obscureReason) {
   const _require = obscureReason;
   const tmp = callback4();
   const ref = React.useRef(null);
-  let obj = _require(7345);
+  let obj = _require(7354);
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     obj = {};
     const merged = Object.assign(obscureReason);
-    let tmp6Result = callback2(ref(11583), obj);
+    let tmp6Result = callback2(ref(11806), obj);
     let tmp12 = callback2;
-    const tmp19 = ref(11583);
+    const tmp19 = ref(11806);
   } else {
     if (tmp3Result.isAndroid()) {
       obj = {};
@@ -93,10 +93,10 @@ function ForumPostMedia(obscureReason) {
       tmp6Result = tmp6(ForumPostMediaIOS, obj1);
       tmp12 = tmp6;
     }
-    tmp3Result = tmp3(500);
+    tmp3Result = tmp3(1234);
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(6142).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(6150).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj2 = { style: null, ref: null, children: null };
@@ -106,12 +106,12 @@ function ForumPostMedia(obscureReason) {
         const obj3 = { androidRippleConfig: null, activeOpacity: 0, onPress: null, children: null };
         obj3[0] = ANDROID_FOREGROUND_RIPPLE;
         obj3[2] = function onPress() {
-          let obj = ref(8682);
-          obj = { entryPoint: obscureReason(8684).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
+          let obj = ref(8697);
+          obj = { entryPoint: obscureReason(8699).AgeVerificationModalEntryPoint.FORUM_POST_MEDIA_PREVIEW };
           const result = obj.showAgeVerificationGetStartedModal(obj);
         };
         obj3[3] = tmp6Result;
-        obj2[2] = tmp12(tmp3(5068).PressableOpacity, obj3);
+        obj2[2] = tmp12(tmp3(5076).PressableOpacity, obj3);
         let tmp12Result = tmp12(closure_5, obj2);
       }
       return tmp12Result;
@@ -133,7 +133,7 @@ function ForumPostMedia(obscureReason) {
       return onPressResult;
     };
     obj5[3] = tmp6Result;
-    obj4[2] = tmp12(tmp3(5068).PressableOpacity, obj5);
+    obj4[2] = tmp12(tmp3(5076).PressableOpacity, obj5);
     tmp12Result = tmp12(closure_5, obj4);
   } else {
     const obj6 = { style: null, ref: null, children: null };

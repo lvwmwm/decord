@@ -1,9 +1,9 @@
-// Module ID: 6856
-// Function ID: 6857
+// Module ID: 6865
+// Function ID: 6866
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6856 (metadata)
+// Module 6865 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroSupergraphicLogo-2x.png.js");

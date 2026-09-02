@@ -1,12 +1,12 @@
-// Module ID: 16911
-// Function ID: 16912
+// Module ID: 17147
+// Function ID: 17148
 // Name: handleVoiceChannelSelect
-// Dependencies: [5486, 16912, 16484, 2]
+// Dependencies: [5494, 17148, 16719, 2]
 
-// Module 16911 (handleVoiceChannelSelect)
-import initializeDefault from "initialize" /* 5486 */;
-import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 16484 */;
-import commonTriggerPointConfiguration2 from "commonTriggerPointConfiguration" /* 16912 */;
+// Module 17147 (handleVoiceChannelSelect)
+import initializeDefault from "initialize" /* 5494 */;
+import commonTriggerPointConfiguration from "commonTriggerPointConfiguration" /* 16719 */;
+import commonTriggerPointConfiguration2 from "commonTriggerPointConfiguration" /* 17148 */;
 
 require = arg1;
 initializeDefault;

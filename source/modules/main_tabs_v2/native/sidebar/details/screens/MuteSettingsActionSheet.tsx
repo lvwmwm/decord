@@ -1,18 +1,18 @@
-// Module ID: 10225
-// Function ID: 10226
+// Module ID: 10247
+// Function ID: 10248
 // Name: MuteSettings
-// Dependencies: [19, 1387, 1909, 4130, 1922, 676, 21, 4474, 1236, 10226, 4445, 5992, 5599, 1297, 10228, 4674, 10229, 5989, 5621, 2]
+// Dependencies: [19, 1386, 1908, 4130, 1921, 673, 21, 4474, 1233, 10248, 4445, 6000, 5607, 1296, 10250, 4674, 10251, 5997, 5629, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 10225 (MuteSettings)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 10247 (MuteSettings)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { UserNotificationSettings } from "ME" /* 676 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import { UserNotificationSettings } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -146,11 +146,11 @@ export const MuteSettingsHint = function MuteSettingsHint(guildMessageNotificati
     }
     obj = dependencyMap;
     if (guildMessageNotifications === tmp2.ALL_MESSAGES) {
-      const intl2 = tmp5(1236).intl;
-      let stringResult = intl2.string(tmp5(1236).t.mUbulW);
+      const intl2 = tmp5(1233).intl;
+      let stringResult = intl2.string(tmp5(1233).t.mUbulW);
     } else {
-      const intl = tmp5(1236).intl;
-      stringResult = intl.string(tmp5(1236).t.GGAdHV);
+      const intl = tmp5(1233).intl;
+      stringResult = intl.string(tmp5(1233).t.GGAdHV);
     }
     obj = { variant: "text-sm/medium", color: "text-default", children: null };
     obj[2] = stringResult;

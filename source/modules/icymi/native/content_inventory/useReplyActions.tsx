@@ -1,16 +1,16 @@
-// Module ID: 16094
-// Function ID: 16095
+// Module ID: 16325
+// Function ID: 16326
 // Name: useReplyActions
-// Dependencies: [5, 19, 1387, 4854, 1922, 1925, 4471, 21, 589, 8039, 8163, 4491, 16095, 4322, 7427, 7201, 16091, 4445, 4194, 1236, 14493, 8622, 9098, 7507, 16095, 2009, 2]
+// Dependencies: [5, 19, 1386, 4854, 1921, 1924, 4471, 21, 586, 8048, 8171, 4491, 16326, 4322, 7436, 7210, 16322, 4445, 4194, 1233, 14716, 8637, 9112, 7517, 16326, 2008, 2]
 // Exports: useReplyActions
 
-// Module 16094 (useReplyActions)
+// Module 16325 (useReplyActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import { DraftType } from "handleChanged" /* 4854 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import { EmojiIntention } from "set" /* 1925 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import { EmojiIntention } from "set" /* 1924 */;
 import { MessageSendLocation } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 import { jsx } from "jsxProd" /* 21 */;
 

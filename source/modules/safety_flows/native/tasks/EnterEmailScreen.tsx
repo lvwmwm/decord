@@ -1,12 +1,12 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17691
+// Function ID: 17692
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 1499, 17456, 1236, 2663, 17447, 4926, 7705, 2]
+// Dependencies: [32, 19, 21, 1498, 17692, 1233, 2662, 17683, 4926, 7714, 2]
 // Exports: default
 
-// Module 17455 (EnterEmailScreen)
-import messagesProxyDefault from "messagesProxy" /* 2663 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 17456 */;
+// Module 17691 (EnterEmailScreen)
+import messagesProxyDefault from "messagesProxy" /* 2662 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 17692 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -15,19 +15,19 @@ const require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_flows/native/tasks/EnterEmailScreen.tsx");
 
 export default function EnterEmailScreen() {
-  let obj = _require(1499);
+  let obj = _require(1498);
   _require = obj.useNavigation();
   [tmp2, tmp3] = callback(React.useState(""), 2);
   obj = { title: null, action: null, onAction: null, children: null };
   const tmp = callback(React.useState(""), 2);
-  const intl = _require(1236).intl;
+  const intl = _require(1233).intl;
   obj[0] = intl.string(messagesProxyDefault.bFbsV6);
-  const intl2 = _require(1236).intl;
+  const intl2 = _require(1233).intl;
   obj[1] = intl2.string(messagesProxyDefault.RRBNpv);
   obj[2] = function onAction() {
     arr = arr.push(arr(closure_1_2[7]).SafetyFlowScreens.VERIFY_EMAIL);
   };
-  obj = { children: jsx(_require(7705).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
-  obj[3] = jsx(_require(4926).Stack, { children: jsx(_require(7705).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
-  return jsx(SafetyFlowTaskScreenDefault, { children: jsx(_require(7705).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  obj = { children: jsx(_require(7714).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) };
+  obj[3] = jsx(_require(4926).Stack, { children: jsx(_require(7714).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
+  return jsx(SafetyFlowTaskScreenDefault, { children: jsx(_require(7714).TextInput, { label: "Email", value: tmp2, onChange: tmp3 }) });
 };

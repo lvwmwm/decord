@@ -1,32 +1,32 @@
-// Module ID: 15539
-// Function ID: 15540
+// Module ID: 15770
+// Function ID: 15771
 // Name: InviteCard
-// Dependencies: [19, 17, 15540, 4391, 7203, 11982, 1935, 4462, 8865, 676, 6171, 7481, 21, 4478, 712, 12197, 1236, 38, 1297, 4322, 4474, 12885, 7718, 13601, 1499, 1628, 589, 4945, 7220, 698, 595, 6052, 5941, 15541, 15536, 1500, 5376, 4928, 4204, 5492, 11463, 2]
+// Dependencies: [19, 17, 15771, 4391, 7212, 12206, 1934, 4462, 8880, 673, 6179, 7491, 21, 4478, 709, 12421, 1233, 38, 1296, 4322, 4474, 13107, 7727, 13824, 1498, 1627, 586, 4945, 7229, 695, 592, 6060, 5949, 15772, 15767, 1499, 5384, 4928, 4204, 5500, 11686, 2]
 // Exports: default
 
-// Module 15539 (InviteCard)
+// Module 15770 (InviteCard)
 import _modDef38 from "module_38" /* 38 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
 import Text from "Text" /* 4474 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7718 */;
-import renderDefault from "render" /* 12197 */;
-import registerAssetDefault from "registerAsset" /* 12885 */;
-import registerAsset from "registerAsset" /* 13601 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7727 */;
+import renderDefault from "render" /* 12421 */;
+import registerAssetDefault from "registerAsset" /* 13107 */;
+import registerAsset from "registerAsset" /* 13824 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "isUnderageAnonymous" /* 15540 */;
+import closure_7 from "isUnderageAnonymous" /* 15771 */;
 import closure_8 from "getHash" /* 4391 */;
-import closure_9 from "handleGuildTemplateResolveSuccess" /* 7203 */;
-import closure_10 from "initialize" /* 11982 */;
-import closure_11 from "createdAt" /* 1935 */;
+import closure_9 from "handleGuildTemplateResolveSuccess" /* 7212 */;
+import closure_10 from "initialize" /* 12206 */;
+import closure_11 from "createdAt" /* 1934 */;
 import closure_12 from "updateInvite" /* 4462 */;
-import closure_13 from "getDisplayedInviteCode" /* 8865 */;
-import ME from "ME" /* 676 */;
-import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6171 */;
-import { InviteTypes } from "InviteSendStates" /* 7481 */;
+import closure_13 from "getDisplayedInviteCode" /* 8880 */;
+import ME from "ME" /* 673 */;
+import { GuildTemplateStates } from "GUILD_TEMPLATES_MEMBER_COUNT_PROMOTION_THRESHOLD" /* 6179 */;
+import { InviteTypes } from "InviteSendStates" /* 7491 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -49,7 +49,7 @@ function InviteCard(invite) {
       let tmp18 = callback;
     } else if (null != tmp2) {
       _modDef38(null != inviter, "Null inviter");
-      obj = { user: null, guildId: "Array" };
+      obj = { user: null, guildId: "r" };
       const tmp12 = new closure_11(inviter);
       obj[0] = tmp12;
       tmp14 = callback(Button.Avatar, obj);
@@ -62,7 +62,7 @@ function InviteCard(invite) {
     } else if (null == inviter) {
       return null;
     } else {
-      obj = { user: null, guildId: "Array" };
+      obj = { user: null, guildId: "r" };
       const tmp33 = new closure_11(inviter);
       obj[0] = tmp33;
       const intl3 = getSystemLocale.intl;
@@ -128,7 +128,7 @@ function Centerpiece(inlineButtons) {
     num = 1;
   }
   obj1[1] = num;
-  const intl = tmp4(1236).intl;
+  const intl = tmp4(1233).intl;
   obj1[5] = intl.string(getSystemLocale.t["3S2xmm"]);
   const items2 = [callback(Text.Heading, obj1), , , ];
   const items3 = [tmp3.subHeader, ];
@@ -139,7 +139,7 @@ function Centerpiece(inlineButtons) {
   }
   const obj2 = { variant: "text-md/medium", color: "text-overlay-light", style: items3, maxFontSizeMultiplier: 3, children: null };
   items3[1] = subHeaderWithInvite;
-  const intl2 = tmp4(1236).intl;
+  const intl2 = tmp4(1233).intl;
   obj2[4] = intl2.string(getSystemLocale.t.Gtcthl);
   items2[1] = callback(Text.Text, obj2);
   let tmp9Result = null;

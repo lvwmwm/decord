@@ -1,12 +1,12 @@
-// Module ID: 14232
-// Function ID: 14233
+// Module ID: 14455
+// Function ID: 14456
 // Name: SafeAreaReporter
-// Dependencies: [19, 17, 21, 1624, 1630, 500, 1629, 1640, 705, 1631, 1496, 2]
+// Dependencies: [19, 17, 21, 1623, 1629, 1234, 1628, 1639, 702, 1630, 1495, 2]
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 14232 (SafeAreaReporter)
-import EMPTY_SAFE_AREA_INSETS from "EMPTY_SAFE_AREA_INSETS" /* 1630 */;
-import _mod1631 from "module_1631" /* 1631 */;
+// Module 14455 (SafeAreaReporter)
+import EMPTY_SAFE_AREA_INSETS from "EMPTY_SAFE_AREA_INSETS" /* 1629 */;
+import _mod1630 from "module_1630" /* 1630 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -16,9 +16,9 @@ let closure_6 = { position: "absolute", width: 0, height: 0 };
 const result = require("set").fileFinishedImporting("modules/safe_area/SafeAreaProvider.native.tsx");
 
 export const SafeAreaReporter = function SafeAreaReporter() {
-  let obj = safeAreaInsets(1631);
+  let obj = safeAreaInsets(1630);
   safeAreaInsets = obj.useSafeAreaInsets();
-  const appEntryKey = safeAreaInsets(1496).useAppEntryKey();
+  const appEntryKey = safeAreaInsets(1495).useAppEntryKey();
   const items = [safeAreaInsets, appEntryKey];
   const layoutEffect = React.useLayoutEffect(() => {
     safeAreaInsets(ref[8]).batchUpdates(() => {
@@ -168,5 +168,5 @@ export const SafeAreaReporter = function SafeAreaReporter() {
 };
 export const SafeAreaProvider = function SafeAreaProvider(arg0) {
   ({ children, style } = arg0);
-  return jsx(_mod1631.SafeAreaProvider, { initialMetrics: EMPTY_SAFE_AREA_INSETS.INITIAL_SAFE_AREA_METRICS, children, style });
+  return jsx(_mod1630.SafeAreaProvider, { initialMetrics: EMPTY_SAFE_AREA_INSETS.INITIAL_SAFE_AREA_METRICS, children, style });
 };

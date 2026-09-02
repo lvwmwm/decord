@@ -1,12 +1,12 @@
-// Module ID: 11843
-// Function ID: 11844
+// Module ID: 12066
+// Function ID: 12067
 // Name: CARD_SIZE
-// Dependencies: [712, 2]
+// Dependencies: [709, 2]
 // Exports: getCallTileGutter, getEdgeGutter
 
-// Module 11843 (CARD_SIZE)
+// Module 12066 (CARD_SIZE)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 
 const result = set.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCardConstants.tsx");
 

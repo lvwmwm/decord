@@ -1,16 +1,16 @@
-// Module ID: 16780
-// Function ID: 16781
+// Module ID: 17016
+// Function ID: 17017
 // Name: MobilePhoneShareIcon
-// Dependencies: [19, 1387, 676, 21, 1624, 12096, 16781, 4478, 712, 11839, 16764, 589, 38, 10042, 698, 16765, 1236, 6006, 2]
+// Dependencies: [19, 1386, 673, 21, 1623, 12320, 17017, 4478, 709, 12062, 17000, 586, 38, 10064, 695, 17001, 1233, 6014, 2]
 // Exports: default
 
-// Module 16780 (MobilePhoneShareIcon)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 17016 (MobilePhoneShareIcon)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import isMetaQuest from "isMetaQuest" /* 1624 */;
+import isMetaQuest from "isMetaQuest" /* 1623 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 const require = arg1;

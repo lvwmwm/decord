@@ -1,10 +1,10 @@
-// Module ID: 15940
-// Function ID: 15941
-// Dependencies: [19, 17, 4855, 21, 4478, 712, 4857, 1236, 589, 15931, 2]
+// Module ID: 16171
+// Function ID: 16172
+// Dependencies: [19, 17, 4855, 21, 4478, 709, 4857, 1233, 586, 16162, 2]
 
-// Module 15940
-import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 15931 */;
+// Module 16171
+import ThemesDefault from "Themes" /* 709 */;
+import registerAssetDefault from "registerAsset" /* 16162 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_5 from "handleConnectionOpen" /* 4855 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -21,16 +21,16 @@ obj[1] = createCacheKey;
 let closure_7 = createCacheKey.createStyles(obj);
 const memoResult = importAllResult.memo(function GuildsBarItemUnavailableGuilds() {
   const tmp = callback();
-  let obj = stateFromStores(589);
+  let obj = stateFromStores(586);
   const items = [closure_5];
   stateFromStores = obj.useStateFromStores(items, () => obj.totalUnavailableGuilds);
   let tmp5 = null;
   if (stateFromStores > 0) {
     obj = { accessibilityRole: "button", accessibilityLabel: null, onPress: null, style: null, children: null };
-    let intl = tmp2(1236).intl;
+    let intl = tmp2(1233).intl;
     obj = { count: null };
     obj[0] = stateFromStores;
-    obj[1] = intl.formatToPlainString(tmp2(1236).t["MEpX+2"], obj);
+    obj[1] = intl.formatToPlainString(tmp2(1233).t["MEpX+2"], obj);
     obj[2] = function onPress() {
       let obj = closure_1_1(closure_1_2[6]);
       obj = { title: null, body: null };

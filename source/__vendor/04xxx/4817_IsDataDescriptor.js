@@ -1,7 +1,7 @@
 // Module ID: 4817
 // Function ID: 4818
 // Name: IsDataDescriptor
-// Dependencies: [4813, 541, 573]
+// Dependencies: [4813, 538, 570]
 
 // Module 4817 (IsDataDescriptor)
 import isPropertyDescriptor from "isPropertyDescriptor" /* 4813 */;
@@ -11,14 +11,14 @@ export default function IsDataDescriptor(arg0) {
   if (undefined === arg0) {
     return false;
   } else if (isPropertyDescriptor(arg0)) {
-    const tmp7 = tmp(573)(arg0, "[[Value]]");
+    const tmp7 = tmp(570)(arg0, "[[Value]]");
     let tmp8 = !tmp7;
     if (!tmp7) {
-      tmp8 = !tmp(573)(arg0, "[[Writable]]");
+      tmp8 = !tmp(570)(arg0, "[[Writable]]");
     }
     return !tmp8;
   } else {
-    const tmp5 = new tmp(541)("Assertion failed: `Desc` must be a Property Descriptor");
+    const tmp5 = new tmp(538)("Assertion failed: `Desc` must be a Property Descriptor");
     throw tmp5;
   }
 };

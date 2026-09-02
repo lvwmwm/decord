@@ -1,13 +1,13 @@
-// Module ID: 9227
-// Function ID: 9228
+// Module ID: 9241
+// Function ID: 9242
 // Name: UserProfileMutualGuilds
-// Dependencies: [19, 17, 8556, 21, 4478, 8558, 9228, 9230, 4445, 9232, 2009, 6186, 5068, 9270, 6004, 4474, 9233, 2]
+// Dependencies: [19, 17, 8569, 21, 4478, 8571, 9242, 9244, 4445, 9246, 2008, 6195, 5076, 9283, 6012, 4474, 9247, 2]
 // Exports: default
 
-// Module 9227 (UserProfileMutualGuilds)
+// Module 9241 (UserProfileMutualGuilds)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8556 */;
+import { UserProfileSections } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -21,10 +21,10 @@ export default function UserProfileMutualGuilds(user) {
   user = user.user;
   let trackUserProfileAction;
   const tmp = callback3();
-  let obj = user(8558);
+  let obj = user(8571);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
-  const mutualGuilds = trackUserProfileAction(9228)(user).mutualGuilds;
-  if (trackUserProfileAction(9230)(user)) {
+  const mutualGuilds = trackUserProfileAction(9242)(user).mutualGuilds;
+  if (trackUserProfileAction(9244)(user)) {
     if (null != mutualGuilds) {
       if (0 !== mutualGuilds.length) {
         const substr = mutualGuilds.slice(0, 3);
@@ -48,19 +48,19 @@ export default function UserProfileMutualGuilds(user) {
           trackUserProfileAction(closure_1_2[8]).openLazy(user(closure_1_2[10])(closure_1_2[9], closure_1_2.paths), "UserProfileMutualGuildsActionSheet", obj, "stack");
         };
         obj1 = { size: null, totalCount: null, names: null, children: null };
-        obj1[0] = tmp2(6004).GuildIconSizes.XXSMALL;
+        obj1[0] = tmp2(6012).GuildIconSizes.XXSMALL;
         obj1[1] = mapped.length;
         obj1[2] = mapped.map((name) => name.name);
         obj1[3] = mapped.map((guild) => {
-          const obj = { guild, size: user(6004).GuildIconSizes.XXSMALL };
-          return callback(trackUserProfileAction(6004), obj, guild.id);
+          const obj = { guild, size: user(6012).GuildIconSizes.XXSMALL };
+          return callback(trackUserProfileAction(6012), obj, guild.id);
         });
-        const items = [callback(tmp2(9270).GuildIconPile, obj1), ];
+        const items = [callback(tmp2(9283).GuildIconPile, obj1), ];
         const obj2 = { variant: "text-sm/medium", color: "text-default", children: null };
-        obj2[2] = trackUserProfileAction(9233)(mutualGuilds.length);
+        obj2[2] = trackUserProfileAction(9247)(mutualGuilds.length);
         items[1] = callback(tmp2(4474).Text, obj2);
         obj[3] = items;
-        obj[1] = callback2(tmp2(5068).PressableOpacity, obj);
+        obj[1] = callback2(tmp2(5076).PressableOpacity, obj);
         return callback(View, obj);
       }
     }

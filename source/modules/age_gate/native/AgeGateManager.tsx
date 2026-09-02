@@ -1,18 +1,18 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 17118
+// Function ID: 17119
 // Name: handlePostConnectionOpen
-// Dependencies: [5, 1387, 1981, 4299, 1221, 676, 5486, 4731, 4723, 16883, 2009, 691, 2]
+// Dependencies: [5, 1386, 1980, 4299, 1218, 673, 5494, 4731, 4723, 17119, 2008, 688, 2]
 
-// Module 16882 (handlePostConnectionOpen)
+// Module 17118 (handlePostConnectionOpen)
 import _modDef4723 from "module_4723" /* 4723 */;
 import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4731 */;
-import initializeDefault from "initialize" /* 5486 */;
+import initializeDefault from "initialize" /* 5494 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "handleConnectionOpen" /* 1981 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
 import closure_6 from "handleConnectionOpen" /* 4299 */;
-import result from "result" /* 1221 */;
-import ME from "ME" /* 676 */;
+import result from "result" /* 1218 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 ({ EXISTING_USER_AGE_GATE_MODAL_KEY: error, AgeGateSource: closure_8 } = result);

@@ -1,13 +1,13 @@
-// Module ID: 9480
-// Function ID: 9481
+// Module ID: 9493
+// Function ID: 9494
 // Name: _getApplicationSubscriptionGroupListingsForApplication
-// Dependencies: [5, 676, 530, 709, 4377, 2]
+// Dependencies: [5, 673, 527, 706, 4377, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 9480 (_getApplicationSubscriptionGroupListingsForApplication)
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 9493 (_getApplicationSubscriptionGroupListingsForApplication)
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _getApplicationSubscriptionGroupListingsForApplication() {
@@ -18,10 +18,10 @@ function _getApplicationSubscriptionGroupListingsForApplication() {
     c3 = 0;
     c2 = 0;
     return (function*(arg0, body) {
-      const HTTP = callback(530).HTTP;
+      const HTTP = callback(527).HTTP;
       obj1 = { url: null, rejectWithError: null };
       obj1[0] = closure_1_4.APPLICATION_SUBSCRIPTION_GROUP_LISTING(callback, closure_1);
-      obj1[1] = callback(530).rejectWithMigratedError();
+      obj1[1] = callback(527).rejectWithMigratedError();
       yield HTTP.get(obj1);
       return body.body;
     })();
@@ -42,11 +42,11 @@ function _getEntitlementsForGuild() {
     c2 = 0;
     c1 = 0;
     return (function*(arg0, body) {
-      const HTTP = callback(530).HTTP;
+      const HTTP = callback(527).HTTP;
       obj1 = { url: null, query: null, rejectWithError: null };
       obj1[0] = closure_1_4.GUILD_ENTITLEMENTS(callback);
       obj1[1] = { with_sku: true, with_application: true };
-      obj1[2] = callback(530).rejectWithMigratedError();
+      obj1[2] = callback(527).rejectWithMigratedError();
       yield HTTP.get(obj1);
       return body.body;
     })();
@@ -67,10 +67,10 @@ function _getSubscriptionGroupForSubscriptionPlan() {
     c2 = 0;
     c1 = 0;
     return (function*(arg0, body) {
-      const HTTP = callback(530).HTTP;
+      const HTTP = callback(527).HTTP;
       obj1 = { url: null, rejectWithError: null };
       obj1[0] = closure_1_4.SUBSCRIPTION_PLAN_GROUP_LISTING(callback);
-      const obj3 = callback(530);
+      const obj3 = callback(527);
       obj1[1] = obj3.rejectWithMigratedError();
       yield HTTP.get(obj1);
       return body.body;
@@ -93,14 +93,14 @@ function _fetchEligibleApplicationSubscriptionGuilds() {
     c3 = 0;
     c2 = 0;
     return (function*(arg0, body) {
-      const HTTP = callback(530).HTTP;
+      const HTTP = callback(527).HTTP;
       obj1 = { url: null, query: null, rejectWithError: null };
       obj1[0] = closure_1_4.ELIGIBLE_APPLICATION_SUBSCRIPTION_GUILDS;
       const obj2 = { application_id: null, sku_id: null };
       obj2[0] = callback;
       obj2[1] = closure_1;
       obj1[1] = obj2;
-      obj1[2] = callback(530).rejectWithMigratedError();
+      obj1[2] = callback(527).rejectWithMigratedError();
       yield HTTP.get(obj1);
       return body.body;
     })();
@@ -151,10 +151,10 @@ export const fetchApplication = function fetchApplication(applicationId, signal)
   let obj = dispatcherDefault;
   obj = { type: "APPLICATION_FETCH", applicationId };
   obj.dispatch(obj);
-  const HTTP = _require(530).HTTP;
-  obj = { url: Endpoints.APPLICATION_PUBLIC(applicationId), signal, rejectWithError: _require(530).rejectWithMigratedError() };
+  const HTTP = _require(527).HTTP;
+  obj = { url: Endpoints.APPLICATION_PUBLIC(applicationId), signal, rejectWithError: _require(527).rejectWithMigratedError() };
   const value = HTTP.get(obj);
-  const obj4 = _require(530);
+  const obj4 = _require(527);
   return value.then((application) => {
     let obj = callback(table[3]);
     obj = { type: "APPLICATION_FETCH_SUCCESS", application: application.body, isHydrated: true };

@@ -1,12 +1,12 @@
-// Module ID: 7852
-// Function ID: 7853
+// Module ID: 7861
+// Function ID: 7862
 // Name: useIsFirstMessageInMediaPost
-// Dependencies: [1387, 647, 11, 2]
+// Dependencies: [1386, 644, 11, 2]
 // Exports: isFirstMessageIdInMediaPost, isFirstMessageInMediaPost, useIsFirstMessageInMediaPost
 
-// Module 7852 (useIsFirstMessageInMediaPost)
+// Module 7861 (useIsFirstMessageInMediaPost)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/media_channel/useIsFirstMessageInMediaPost.tsx");
@@ -14,7 +14,7 @@ const result = require("set").fileFinishedImporting("modules/media_channel/useIs
 export const useIsFirstMessageInMediaPost = function useIsFirstMessageInMediaPost(arg0) {
   const _require = arg0;
   const items = [arg0];
-  return _require(647).useStateFromStores([], () => {
+  return _require(644).useStateFromStores([], () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
       const channel_id = tmp.channel_id;

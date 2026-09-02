@@ -1,18 +1,18 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 16202
+// Function ID: 16203
 // Name: YouBarMaskedBackground
-// Dependencies: [19, 17, 14699, 21, 4478, 712, 5535, 4940, 689, 4197, 14785, 4217, 4927, 2]
+// Dependencies: [19, 17, 14925, 21, 4478, 709, 5543, 4940, 686, 4197, 15011, 4217, 4927, 2]
 
-// Module 15971 (YouBarMaskedBackground)
-import nDefault from "n" /* 689 */;
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16202 (YouBarMaskedBackground)
+import nDefault from "n" /* 686 */;
+import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
 import _modDef4217 from "module_4217" /* 4217 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5535 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 14785 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 5543 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 15011 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14699 */;
+import CONNECTION_BANNER_HEIGHT from "CONNECTION_BANNER_HEIGHT" /* 14925 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;

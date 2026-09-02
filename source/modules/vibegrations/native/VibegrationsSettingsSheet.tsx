@@ -1,19 +1,19 @@
-// Module ID: 16196
-// Function ID: 16197
+// Module ID: 16428
+// Function ID: 16429
 // Name: VibegrationsSettingsSheet
-// Dependencies: [5, 32, 19, 17, 16174, 16177, 16175, 21, 4478, 712, 5594, 589, 1236, 3501, 9260, 12920, 4445, 7692, 7693, 7683, 7705, 4474, 4928, 5989, 5621, 9762, 2]
+// Dependencies: [5, 32, 19, 17, 16405, 16408, 16406, 21, 4478, 709, 5602, 586, 1233, 3500, 9273, 13142, 4445, 7701, 7702, 7692, 7714, 4474, 4928, 5997, 5629, 9784, 2]
 // Exports: default
 
-// Module 16196 (VibegrationsSettingsSheet)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16428 (VibegrationsSettingsSheet)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_7 from "newMessage" /* 16174 */;
-import rejectPendingPublish from "rejectPendingPublish" /* 16177 */;
-import closure_11 from "rejectPendingPublish" /* 16177 */;
-import closure_12 from "isProjectOwner" /* 16175 */;
+import closure_7 from "newMessage" /* 16405 */;
+import rejectPendingPublish from "rejectPendingPublish" /* 16408 */;
+import closure_11 from "rejectPendingPublish" /* 16408 */;
+import closure_12 from "isProjectOwner" /* 16406 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -262,9 +262,9 @@ export default function VibegrationsSettingsSheet(projectId) {
     obj[9] = first2;
     tmp12Result = memo(projectId(closure_2[20]).TextInput, obj, value.name);
   }
-  let tmp3 = map(notifyAgent(5594)({ includeKeyboardHeight: true }).insets.bottom);
+  let tmp3 = map(notifyAgent(5602)({ includeKeyboardHeight: true }).insets.bottom);
   dependencyMap = tmp3;
-  let obj = projectId(589);
+  let obj = projectId(586);
   let items = [closure_11];
   stateFromStores = obj.useStateFromStores(items, () => settings.getSettings(projectId));
   obj1 = React;
@@ -375,7 +375,7 @@ export default function VibegrationsSettingsSheet(projectId) {
     return items;
   }, items4);
   let someResult = found1.some((arg0) => map.has(arg0));
-  const segmentedControlState = projectId(9260).useSegmentedControlState({ items: memo3, pageWidth: tmp24, defaultIndex: num, onSetActiveIndex: tmp22 });
+  const segmentedControlState = projectId(9273).useSegmentedControlState({ items: memo3, pageWidth: tmp24, defaultIndex: num, onSetActiveIndex: tmp22 });
   if (tmp19) {
     let tmp28 = 1 === tmp21;
   } else {
@@ -564,9 +564,9 @@ export default function VibegrationsSettingsSheet(projectId) {
   }), items6);
   obj = { startExpanded: true, header: null, children: null };
   obj = { title: null };
-  let intl = tmp4(1236).intl;
-  obj[0] = intl.string(notifyAgent(3501).gTMvzD);
-  obj[1] = memo(projectId(5621).BottomSheetTitleHeader, obj);
+  let intl = tmp4(1233).intl;
+  obj[0] = intl.string(notifyAgent(3500).gTMvzD);
+  obj[1] = memo(projectId(5629).BottomSheetTitleHeader, obj);
   obj1 = { style: tmp3.container, children: null };
   let tmp32Result = null;
   if (null != note) {
@@ -583,8 +583,8 @@ export default function VibegrationsSettingsSheet(projectId) {
     tmp32Result = null;
     if (0 === memo2.length) {
       let obj3 = { variant: "text-sm/normal", color: "text-muted", children: null };
-      let intl2 = tmp4(1236).intl;
-      obj3[2] = intl2.string(tmp(3501).URnN4B);
+      let intl2 = tmp4(1233).intl;
+      obj3[2] = intl2.string(tmp(3500).URnN4B);
       tmp32Result = tmp32(tmp4(4474).Text, obj3);
     }
   }
@@ -595,8 +595,8 @@ export default function VibegrationsSettingsSheet(projectId) {
     let tmp32Result1 = null;
     if (someResult) {
       const obj5 = { variant: "text-xs/normal", color: "text-muted", children: null };
-      const intl4 = tmp4(1236).intl;
-      obj5[2] = intl4.string(tmp(3501)["Hl+eu7"]);
+      const intl4 = tmp4(1233).intl;
+      obj5[2] = intl4.string(tmp(3500)["Hl+eu7"]);
       tmp32Result1 = tmp32(tmp4(4474).Text, obj5);
     }
     const items8 = [
@@ -625,7 +625,7 @@ export default function VibegrationsSettingsSheet(projectId) {
       obj6[0] = callback;
       const obj7 = { state: null };
       obj7[0] = segmentedControlState;
-      obj6[1] = tmp32(tmp4(9762).SegmentedControl, obj7);
+      obj6[1] = tmp32(tmp4(9784).SegmentedControl, obj7);
       tmp32Result2 = tmp32(tmp34, obj6);
     }
     const items9 = [tmp32Result2, ];
@@ -633,8 +633,8 @@ export default function VibegrationsSettingsSheet(projectId) {
     obj8[0] = tmp3.section;
     if (tmp28) {
       const obj9 = { variant: "text-xs/normal", color: "text-muted", children: null };
-      let intl3 = tmp4(1236).intl;
-      obj9[2] = intl3.string(tmp(3501)["Hl+eu7"]);
+      let intl3 = tmp4(1233).intl;
+      obj9[2] = intl3.string(tmp(3500)["Hl+eu7"]);
       const items10 = [tmp32(tmp4(4474).Text, obj9), memo2.map(renderSecret)];
       obj8[1] = items10;
       tmp33Result = tmp33(tmp34, obj8);
@@ -652,20 +652,20 @@ export default function VibegrationsSettingsSheet(projectId) {
   let tmp32Result3 = null;
   if (tmp14[0]) {
     const obj11 = { variant: "text-xs/normal", color: "text-feedback-critical", children: null };
-    const intl5 = tmp4(1236).intl;
-    obj11[2] = intl5.string(tmp(3501).n02OEo);
+    const intl5 = tmp4(1233).intl;
+    obj11[2] = intl5.string(tmp(3500).n02OEo);
     tmp32Result3 = tmp32(tmp4(4474).Text, obj11);
   }
   items7[3] = tmp32Result3;
   const obj12 = { text: null, variant: "primary", loading: null, disabled: null, onPress: null };
-  const intl6 = tmp4(1236).intl;
-  obj12[0] = intl6.string(notifyAgent(3501).Tuz9vw);
+  const intl6 = tmp4(1233).intl;
+  obj12[0] = intl6.string(notifyAgent(3500).Tuz9vw);
   obj12[2] = first2;
   obj12[3] = !(null != memo4.values || null != memo4.secrets);
   obj12[4] = callback1;
   items7[4] = memo(projectId(4928).Button, obj12);
   obj1[1] = items7;
   obj[2] = memo1(first1, obj1);
-  return memo(projectId(5989).ActionSheet, obj);
+  return memo(projectId(5997).ActionSheet, obj);
 };
 export const VIBEGRATIONS_SETTINGS_SHEET_KEY = "VibegrationsSettingsSheet";

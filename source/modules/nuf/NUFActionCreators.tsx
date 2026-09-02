@@ -1,12 +1,12 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12508
+// Function ID: 12509
 // Name: setNewUser
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 // Exports: setNewUser, setNewUserFlowCompleted
 
-// Module 12284 (setNewUser)
+// Module 12508 (setNewUser)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("modules/nuf/NUFActionCreators.tsx");
 

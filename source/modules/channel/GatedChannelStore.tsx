@@ -1,22 +1,22 @@
-// Module ID: 1983
-// Function ID: 1984
+// Module ID: 1982
+// Function ID: 1983
 // Name: isSubscriptionGated
-// Dependencies: [1984, 1391, 1986, 1387, 1992, 1985, 1909, 1922, 676, 4112, 4113, 4114, 589, 709, 2]
+// Dependencies: [1983, 1390, 1985, 1386, 1991, 1984, 1908, 1921, 673, 4111, 4112, 4113, 586, 706, 2]
 
-// Module 1983 (isSubscriptionGated)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import isSubscriptionRole from "isSubscriptionRole" /* 4112 */;
-import hasViewChannelPermission from "hasViewChannelPermission" /* 4113 */;
-import closure_2 from "initialize" /* 1984 */;
-import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1391 */;
-import { hasPermission } from "GuildRoleRecordTypeTag" /* 1986 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import closure_7 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_8 from "createGuildRecordFromRust" /* 1909 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+// Module 1982 (isSubscriptionGated)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import isSubscriptionRole from "isSubscriptionRole" /* 4111 */;
+import hasViewChannelPermission from "hasViewChannelPermission" /* 4112 */;
+import closure_2 from "initialize" /* 1983 */;
+import { THREAD_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
+import { hasPermission } from "GuildRoleRecordTypeTag" /* 1985 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import closure_7 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_8 from "createGuildRecordFromRust" /* 1908 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 require = arg1;

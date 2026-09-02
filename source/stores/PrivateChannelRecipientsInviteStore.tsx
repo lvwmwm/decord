@@ -1,25 +1,25 @@
-// Module ID: 13408
-// Function ID: 13409
+// Module ID: 13631
+// Function ID: 13632
 // Name: performQuery
-// Dependencies: [4391, 7404, 1391, 1387, 6054, 5451, 1992, 1909, 4130, 1922, 676, 1902, 4322, 9928, 589, 709, 2]
+// Dependencies: [4391, 7413, 1390, 1386, 6062, 5459, 1991, 1908, 4130, 1921, 673, 1901, 4322, 9950, 586, 706, 2]
 
-// Module 13408 (performQuery)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import isNullOrEmpty from "isNullOrEmpty" /* 1902 */;
+// Module 13631 (performQuery)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import isNullOrEmpty from "isNullOrEmpty" /* 1901 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
-import getTransformedUserDefault from "getTransformedUser" /* 9928 */;
+import getTransformedUserDefault from "getTransformedUser" /* 9950 */;
 import closure_4 from "getHash" /* 4391 */;
-import closure_5 from "recomputeAffinities" /* 7404 */;
-import { PrivateChannelRecord } from "createChannelRecord" /* 1391 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "hasConsented" /* 6054 */;
-import closure_9 from "handleChannelSelect" /* 5451 */;
-import closure_10 from "trackCommunicationDisabled" /* 1992 */;
-import closure_11 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "recomputeAffinities" /* 7413 */;
+import { PrivateChannelRecord } from "createChannelRecord" /* 1390 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
+import closure_8 from "hasConsented" /* 6062 */;
+import closure_9 from "handleChannelSelect" /* 5459 */;
+import closure_10 from "trackCommunicationDisabled" /* 1991 */;
+import closure_11 from "createGuildRecordFromRust" /* 1908 */;
 import closure_12 from "markAllUserIdListsStale" /* 4130 */;
-import closure_13 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_13 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 require = arg1;

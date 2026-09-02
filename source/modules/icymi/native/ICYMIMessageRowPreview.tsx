@@ -1,13 +1,13 @@
-// Module ID: 16084
-// Function ID: 16085
+// Module ID: 16315
+// Function ID: 16316
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 676, 21, 7639, 4171, 7843, 6147, 4413, 4478, 712, 4166, 7841, 8779, 8035, 1236, 2]
+// Dependencies: [19, 673, 21, 7648, 4171, 7852, 6155, 4413, 4478, 709, 4166, 7850, 8794, 8044, 1233, 2]
 
-// Module 16084 (ICYMIMessageRowPreview)
+// Module 16315 (ICYMIMessageRowPreview)
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import importAllResult from "noop" /* 19 */;
-import { MessageEmbedTypes } from "ME" /* 676 */;
+import { MessageEmbedTypes } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -23,7 +23,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
   let setting1;
   let setting2;
   let obj = createCacheKey;
-  obj = { seeMoreLabelColor: messageOptions(712).colors.TEXT_DEFAULT };
+  obj = { seeMoreLabelColor: messageOptions(709).colors.TEXT_DEFAULT };
   dependencyMap = obj.createNativeStyleProperties(obj)(messageOptions(4413)());
   const RenderEmbeds = explicitContentFromProto.RenderEmbeds;
   setting = RenderEmbeds.getSetting();
@@ -58,7 +58,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(8779), obj);
+  return setting2(messageOptions(8794), obj);
 }
 let c3 = importAllResult;
 const memoResult = importAllResult.memo((message) => {
@@ -165,11 +165,11 @@ const memoResult2 = importAllResult.memo((message) => {
     obj[4] = merged.pointerEvents;
     return obj;
   }, items);
-  const tmp3 = merged(6147)(message);
+  const tmp3 = merged(6155)(message);
   let obj = {};
   const merged1 = Object.assign(memo);
   obj = {};
-  const merged2 = Object.assign(message(7843).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(7852).DEFAULT_OPTIONS);
   obj.ignoreMentioned = true;
   obj.renderReplies = false;
   obj.renderThreadEmbeds = false;

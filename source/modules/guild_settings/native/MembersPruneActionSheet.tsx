@@ -1,16 +1,16 @@
-// Module ID: 16162
-// Function ID: 16163
+// Module ID: 16393
+// Function ID: 16394
 // Name: MembersPruneActionSheetContent
-// Dependencies: [32, 19, 16163, 1909, 4121, 1922, 21, 709, 16164, 5989, 5621, 1236, 7692, 7693, 4474, 4928, 4445, 589, 6112, 2]
+// Dependencies: [32, 19, 16394, 1908, 4120, 1921, 21, 706, 16395, 5997, 5629, 1233, 7701, 7702, 4474, 4928, 4445, 586, 6120, 2]
 // Exports: default
 
-// Module 16162 (MembersPruneActionSheetContent)
+// Module 16393 (MembersPruneActionSheetContent)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import CACHE_TTL_MS from "CACHE_TTL_MS" /* 16163 */;
-import closure_8 from "createGuildRecordFromRust" /* 1909 */;
-import closure_9 from "getUncachedChannelPermissions" /* 4121 */;
-import closure_10 from "mergeGuildAvatar" /* 1922 */;
+import CACHE_TTL_MS from "CACHE_TTL_MS" /* 16394 */;
+import closure_8 from "createGuildRecordFromRust" /* 1908 */;
+import closure_9 from "getUncachedChannelPermissions" /* 4120 */;
+import closure_10 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -112,7 +112,7 @@ const result = require("set").fileFinishedImporting("modules/guild_settings/nati
 export default function MembersPruneActionSheet(guild) {
   guild = guild.guild;
   let stateFromStores;
-  let obj = guild(589);
+  let obj = guild(586);
   const items = [closure_8, closure_9, closure_10];
   const items1 = [guild];
   stateFromStores = obj.useStateFromStores(items, () => {

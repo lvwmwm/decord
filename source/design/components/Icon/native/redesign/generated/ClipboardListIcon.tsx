@@ -1,14 +1,14 @@
-// Module ID: 7658
-// Function ID: 7659
+// Module ID: 7667
+// Function ID: 7668
 // Name: ClipboardListIcon
-// Dependencies: [19, 21, 712, 4196, 7659, 2]
+// Dependencies: [19, 21, 709, 4196, 7668, 2]
 // Exports: ClipboardListIcon
 
-// Module 7658 (ClipboardListIcon)
+// Module 7667 (ClipboardListIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 7659 */;
+import registerAsset from "registerAsset" /* 7668 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

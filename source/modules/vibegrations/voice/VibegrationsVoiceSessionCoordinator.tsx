@@ -1,21 +1,21 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14336
+// Function ID: 14337
 // Name: getCapabilitiesForSocket
-// Dependencies: [14114, 9464, 1218, 4529, 4554, 1922, 4497, 676, 4542, 9503, 13482, 514, 9781, 14115, 14116, 2]
+// Dependencies: [14337, 9477, 1215, 4529, 4554, 1921, 4497, 673, 4542, 9516, 13705, 511, 9803, 14338, 14339, 2]
 
-// Module 14113 (getCapabilitiesForSocket)
-import prototypeDefault from "prototype" /* 9503 */;
-import trackDeviceChangedDefault from "trackDeviceChanged" /* 9781 */;
-import apexExperimentDefault from "apexExperiment" /* 13482 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14116 */;
-import closure_3 from "isFramePooled" /* 14114 */;
-import closure_4 from "map" /* 9464 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
+// Module 14336 (getCapabilitiesForSocket)
+import prototypeDefault from "prototype" /* 9516 */;
+import trackDeviceChangedDefault from "trackDeviceChanged" /* 9803 */;
+import apexExperimentDefault from "apexExperiment" /* 13705 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14339 */;
+import closure_3 from "isFramePooled" /* 14337 */;
+import closure_4 from "map" /* 9477 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
 import closure_6 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_7 from "createRTCConnection" /* 4554 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import closure_9 from "updateVoiceState" /* 4497 */;
-import { RPCErrors } from "ME" /* 676 */;
+import { RPCErrors } from "ME" /* 673 */;
 import DesktopSources from "DesktopSources" /* 4542 */;
 import set from "set" /* 2 */;
 
@@ -135,7 +135,7 @@ prototype["start"] = function start(id) {
         throw tmp23;
       }
       obj = { id: null, socketId: null, frameId: null, applicationId: null, channelId: null, rtcConnectionId: null, mediaEngineConnectionId: null, spatialEnabled: false, backgrounded: null, sources: null, appliedUserIds: null };
-      let obj2 = set(514);
+      let obj2 = set(511);
       obj[0] = obj2.v4();
       obj[1] = id.id;
       obj[2] = frameId;
@@ -226,13 +226,13 @@ prototype["update"] = function update(id, id, arg2, arr) {
               obj.add(user_id);
               obj = { userId: null, position: null };
               obj[0] = user_id;
-              obj[1] = callback(14115).toListenerRelativePosition(callback, user_id.position);
+              obj[1] = callback(14338).toListenerRelativePosition(callback, user_id.position);
               return obj;
             }
           }
         }
         obj = { errorCode: closure_1_10.INVALID_PAYLOAD };
-        let tmp6 = set(9503);
+        let tmp6 = set(9516);
         tmp6 = new tmp6(obj, "Invalid spatial voice source " + user_id.user_id);
         throw tmp6;
       });

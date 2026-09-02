@@ -1,12 +1,12 @@
-// Module ID: 10437
-// Function ID: 10438
-// Dependencies: [676, 644, 698, 705, 10438, 500, 2]
+// Module ID: 10658
+// Function ID: 10659
+// Dependencies: [673, 641, 695, 702, 10659, 1234, 2]
 
-// Module 10437
+// Module 10658
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10438 */;
-import keys from "keys" /* 644 */;
+import ME from "ME" /* 673 */;
+import getDeviceMediaPhotosDefault from "getDeviceMediaPhotos" /* 10659 */;
+import keys from "keys" /* 641 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 let closure_4 = keys.create(() => ({ assets: null, page: 0, hasReachedEnd: false, lastAssetIndex: 0 }));
@@ -29,7 +29,7 @@ export default {
             const image = node.image;
           }
         }
-        let obj = assets(500);
+        let obj = assets(1234);
         if (!obj.isIOS()) {
           dependencyMap = tmp2 + 1;
           obj = { batchSize: null, endCursor: null, lastAssetIndex: null, lastNodeImageUri: null, extensions: null, onFetched: null };
@@ -95,7 +95,7 @@ export default {
             obj = { page: table, has_reached_end: tmp12 };
             lastAssetIndex(table[2]).track(closure_1_3.MEDIA_PICKER_INFINITE_SCROLL_PAGED, obj);
           };
-          lastAssetIndex(10438)(obj);
+          lastAssetIndex(10659)(obj);
         }
       }
     }

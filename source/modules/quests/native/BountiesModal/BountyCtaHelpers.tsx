@@ -1,12 +1,12 @@
-// Module ID: 14643
-// Function ID: 14644
+// Module ID: 14868
+// Function ID: 14869
 // Name: getBountyCtaInfo
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: getBountyCtaInfo
 
-// Module 14643 (getBountyCtaInfo)
+// Module 14868 (getBountyCtaInfo)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/quests/native/BountiesModal/BountyCtaHelpers.tsx");
 

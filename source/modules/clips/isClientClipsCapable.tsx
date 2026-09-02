@@ -1,12 +1,12 @@
 // Module ID: 4541
 // Function ID: 4542
 // Name: isClientClipsCapable
-// Dependencies: [4542, 4540, 500, 2]
+// Dependencies: [4542, 4540, 1234, 2]
 // Exports: default
 
 // Module 4541 (isClientClipsCapable)
 import set from "set" /* 2 */;
-import setAll from "set" /* 500 */;
+import setAll from "set" /* 1234 */;
 import apexExperiment from "apexExperiment" /* 4540 */;
 import DesktopSources from "DesktopSources" /* 4542 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 5215
-// Function ID: 5216
+// Module ID: 5223
+// Function ID: 5224
 // Name: percentageScrolled
-// Dependencies: [643, 589, 709, 2]
+// Dependencies: [640, 586, 706, 2]
 
-// Module 5215 (percentageScrolled)
-import initializeDefault from "initialize" /* 589 */;
-import shallowEqualDefault from "shallowEqual" /* 643 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 5223 (percentageScrolled)
+import initializeDefault from "initialize" /* 586 */;
+import shallowEqualDefault from "shallowEqual" /* 640 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let closure_2 = {};
 let closure_3 = {};

@@ -1,13 +1,13 @@
 // Module ID: 4721
 // Function ID: 4722
-// Dependencies: [676, 709, 698, 4700, 1231, 2]
+// Dependencies: [673, 706, 695, 4700, 1228, 2]
 
 // Module 4721
 import set from "set" /* 2 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 ({ AppContext: c3, AnalyticEvents: c4, ComponentActions: c5 } = ME);
 const result = set.fileFinishedImporting("actions/ChannelRTCActionCreators.tsx");
@@ -76,7 +76,7 @@ export default {
         ComponentDispatch.dispatch(closure_1_5.FOCUS_CHANNEL_TEXT_AREA, { channelId: id });
       }, 0);
     } else {
-      let ComponentDispatch = _require(1231).ComponentDispatch;
+      let ComponentDispatch = _require(1228).ComponentDispatch;
       ComponentDispatch.dispatch(constants3.FOCUS_CHAT_BUTTON);
     }
   },

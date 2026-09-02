@@ -1,13 +1,13 @@
-// Module ID: 14093
-// Function ID: 14094
+// Module ID: 14316
+// Function ID: 14317
 // Name: updateSaturation
-// Dependencies: [17, 500, 14094, 2]
+// Dependencies: [17, 1234, 14317, 2]
 // Exports: updateSaturation
 
-// Module 14093 (updateSaturation)
+// Module 14316 (updateSaturation)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 14094 */;
+import enforcingDefault from "enforcing" /* 14317 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 const result = set.fileFinishedImporting("modules/themes/native/updateSaturation.tsx");

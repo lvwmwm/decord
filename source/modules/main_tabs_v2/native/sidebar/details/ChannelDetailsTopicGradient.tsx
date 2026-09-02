@@ -1,11 +1,11 @@
-// Module ID: 16314
-// Function ID: 16315
+// Module ID: 16546
+// Function ID: 16547
 // Name: useChannelTopicGradientBackground
-// Dependencies: [19, 4197, 712, 689, 2]
+// Dependencies: [19, 4197, 709, 686, 2]
 // Exports: useChannelTopicGradientBackground
 
-// Module 16314 (useChannelTopicGradientBackground)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16546 (useChannelTopicGradientBackground)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

@@ -1,25 +1,25 @@
-// Module ID: 9497
-// Function ID: 9498
+// Module ID: 9510
+// Function ID: 9511
 // Name: postMessageToWebView
-// Dependencies: [5, 17, 9464, 9465, 676, 4506, 4380, 8593, 501, 9454, 9455, 1208, 9498, 9499, 4858, 1236, 1471, 709, 1231, 514, 2]
+// Dependencies: [5, 17, 9477, 9478, 673, 4506, 4380, 8608, 1235, 9467, 9468, 1205, 9511, 9512, 4858, 1233, 1470, 706, 1228, 511, 2]
 
-// Module 9497 (postMessageToWebView)
-import v1 from "v1" /* 514 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+// Module 9510 (postMessageToWebView)
+import v1 from "v1" /* 511 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
 import _modDef4858 from "module_4858" /* 4858 */;
-import enforcingDefault from "enforcing" /* 9454 */;
-import leaveFrameDefault from "leaveFrame" /* 9498 */;
+import enforcingDefault from "enforcing" /* 9467 */;
+import leaveFrameDefault from "leaveFrame" /* 9511 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "map" /* 9464 */;
-import { isLaunched } from "FrameLayoutModes" /* 9465 */;
-import { ComponentActions } from "ME" /* 676 */;
+import closure_4 from "map" /* 9477 */;
+import { isLaunched } from "FrameLayoutModes" /* 9478 */;
+import { ComponentActions } from "ME" /* 673 */;
 import { DISALLOWED_NAVIGATION_ERROR_CLOSE_ACTIVITY as closure_7 } from "items3" /* 4506 */;
 import { TransportTypes } from "RPC_SCOPE_CONFIG" /* 4380 */;
-import WebView from "WebView" /* 8593 */;
-import PlatformTypes from "PlatformTypes" /* 501 */;
+import WebView from "WebView" /* 8608 */;
+import PlatformTypes from "PlatformTypes" /* 1235 */;
 
 require = arg1;
 function postMessageToWebView() {

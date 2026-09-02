@@ -1,18 +1,18 @@
-// Module ID: 8049
-// Function ID: 8050
+// Module ID: 8057
+// Function ID: 8058
 // Name: updateAssets
-// Dependencies: [32, 5, 8050, 676, 38, 3, 530, 709, 1465, 2]
+// Dependencies: [32, 5, 8058, 673, 38, 3, 527, 706, 1464, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8049 (updateAssets)
+// Module 8057 (updateAssets)
 import timestampDefault from "timestamp" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import sendRequest from "sendRequest" /* 530 */;
-import handleImageLoad from "handleImageLoad" /* 1465 */;
+import sendRequest from "sendRequest" /* 527 */;
+import handleImageLoad from "handleImageLoad" /* 1464 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import closure_5 from "handleFetchEmbeddedActivityShelfSuccess" /* 8050 */;
-import ME from "ME" /* 676 */;
+import closure_5 from "handleFetchEmbeddedActivityShelfSuccess" /* 8058 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function updateAssets(closure_0) {
@@ -376,7 +376,7 @@ function _fetchAssetIds() {
               c5 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp5) {

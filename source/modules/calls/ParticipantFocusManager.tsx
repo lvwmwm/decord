@@ -1,10 +1,10 @@
-// Module ID: 17050
-// Function ID: 17051
+// Module ID: 17286
+// Function ID: 17287
 // Name: handleFocusParticipant
-// Dependencies: [4554, 4494, 5486, 2]
+// Dependencies: [4554, 4494, 5494, 2]
 
-// Module 17050 (handleFocusParticipant)
-import initializeDefault from "initialize" /* 5486 */;
+// Module 17286 (handleFocusParticipant)
+import initializeDefault from "initialize" /* 5494 */;
 import closure_0 from "createRTCConnection" /* 4554 */;
 import closure_1 from "getParticipants" /* 4494 */;
 

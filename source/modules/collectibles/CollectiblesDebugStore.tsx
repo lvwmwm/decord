@@ -1,12 +1,12 @@
-// Module ID: 7302
-// Function ID: 7303
+// Module ID: 7311
+// Function ID: 7312
 // Name: useCollectiblesDebugStore
-// Dependencies: [644, 2]
+// Dependencies: [641, 2]
 // Exports: addDebugLog
 
-// Module 7302 (useCollectiblesDebugStore)
+// Module 7311 (useCollectiblesDebugStore)
 import set from "set" /* 2 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 let obj = keys.create((arg0) => {
   closure_0 = arg0;

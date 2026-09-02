@@ -1,16 +1,16 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 17311
+// Function ID: 17312
 // Name: prototype
-// Dependencies: [5, 1922, 4141, 4145, 7142, 1924, 5486, 1946, 4837, 7143, 2]
+// Dependencies: [5, 1921, 4141, 4145, 7151, 1923, 5494, 1945, 4837, 7152, 2]
 
-// Module 17075 (prototype)
-import initializeDefault from "initialize" /* 5486 */;
+// Module 17311 (prototype)
+import initializeDefault from "initialize" /* 5494 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 import closure_4 from "handlePaymentSourceCreateEnd" /* 4141 */;
 import closure_5 from "reset" /* 4145 */;
-import closure_6 from "addEntitlement" /* 7142 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import closure_6 from "addEntitlement" /* 7151 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 let require = arg1;
 ({ PREMIUM_SUBSCRIPTION_APPLICATION: error, PremiumTypes: closure_8 } = GuildFeatures);

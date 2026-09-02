@@ -1,12 +1,12 @@
-// Module ID: 5962
-// Function ID: 5963
+// Module ID: 5970
+// Function ID: 5971
 // Name: accountLinkAuthorizationStarted
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 // Exports: accountLinkAuthorizationCompleted, accountLinkAuthorizationStarted, devtoolsSetGloballyDisabledAuthorizationFlows
 
-// Module 5962 (accountLinkAuthorizationStarted)
+// Module 5970 (accountLinkAuthorizationStarted)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("modules/application_account_linking/AccountLinkingActionCreators.tsx");
 

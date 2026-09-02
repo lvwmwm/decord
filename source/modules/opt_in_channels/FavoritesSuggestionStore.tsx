@@ -1,13 +1,13 @@
-// Module ID: 7275
-// Function ID: 7276
+// Module ID: 7284
+// Function ID: 7285
 // Name: handleChange
-// Dependencies: [1387, 1981, 4701, 589, 709, 2]
+// Dependencies: [1386, 1980, 4701, 586, 706, 2]
 
-// Module 7275 (handleChange)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "ensureGuildLoaded" /* 1387 */;
-import closure_1 from "handleConnectionOpen" /* 1981 */;
+// Module 7284 (handleChange)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_0 from "ensureGuildLoaded" /* 1386 */;
+import closure_1 from "handleConnectionOpen" /* 1980 */;
 import closure_2 from "updateUserGuildSettingsInternal" /* 4701 */;
 
 function handleChange() {

@@ -1,9 +1,9 @@
-// Module ID: 1373
-// Function ID: 1374
+// Module ID: 1372
+// Function ID: 1373
 // Name: DismissibleContent
 // Dependencies: [2]
 
-// Module 1373 (DismissibleContent)
+// Module 1372 (DismissibleContent)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/discord_users/v1/dismissible_content.tsx");

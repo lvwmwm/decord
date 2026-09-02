@@ -1,9 +1,9 @@
-// Module ID: 8058
-// Function ID: 8059
+// Module ID: 8066
+// Function ID: 8067
 // Name: metadata
 // Dependencies: [2]
 
-// Module 8058 (metadata)
+// Module 8066 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/checkpoint/card-origami.png.js");

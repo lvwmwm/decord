@@ -1,20 +1,20 @@
-// Module ID: 7639
-// Function ID: 7640
+// Module ID: 7648
+// Function ID: 7649
 // Name: isMediaAttachment
-// Dependencies: [19, 6151, 1387, 4735, 1922, 676, 4671, 4166, 1399, 1486, 1471, 4739, 1955, 4744, 11, 2]
+// Dependencies: [19, 6159, 1386, 4735, 1921, 673, 4671, 4166, 1398, 1485, 1470, 4739, 1954, 4744, 11, 2]
 // Exports: getEmbedColor, isValidImageAttachment, isValidVideoAttachment, messageContainsGifOrVideo, shouldShowAddMediaToOriginalPostModal, useFindFirstMediaProperties, useFirstMediaIsEmbed, useForumPostComponentsMedia, useForumPostMediaThumbnail
 
-// Module 7639 (isMediaAttachment)
+// Module 7648 (isMediaAttachment)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
 import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4671 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "updateState" /* 6151 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "updateState" /* 6159 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "reinjectEphemerals" /* 4735 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function isMediaAttachment(filename) {
@@ -211,7 +211,7 @@ function useForumPostEmbeds(embeds, flag) {
               }
             }
           });
-          let found = mapped.filter(_require(1471).isNotNullish);
+          let found = mapped.filter(_require(1470).isNotNullish);
         }
         return found;
       }
@@ -311,7 +311,7 @@ function useForumPostMediaProperties(firstResult, flag) {
           } else {
             return null;
           }
-        }).filter(tmp(1471).isNotNullish);
+        }).filter(tmp(1470).isNotNullish);
         const flatMapResult = Array.from(tmp(4739).flattenComponents(components).values()).flatMap((type) => {
           type = type.type;
           if (callback(table[12]).ComponentType.THUMBNAIL === type) {
@@ -540,7 +540,7 @@ export const useForumPostComponentsMedia = function useForumPostComponentsMedia(
           } else {
             return null;
           }
-        }).filter(tmp(1471).isNotNullish);
+        }).filter(tmp(1470).isNotNullish);
         const flatMapResult = Array.from(tmp(4739).flattenComponents(components).values()).flatMap((type) => {
           type = type.type;
           if (callback(table[12]).ComponentType.THUMBNAIL === type) {
@@ -748,7 +748,7 @@ export const useFindFirstMediaProperties = function useFindFirstMediaProperties(
           } else {
             return null;
           }
-        }).filter(tmp(1471).isNotNullish);
+        }).filter(tmp(1470).isNotNullish);
         const flatMapResult = Array.from(tmp(4739).flattenComponents(components).values()).flatMap((type) => {
           type = type.type;
           if (callback(table[12]).ComponentType.THUMBNAIL === type) {
@@ -936,7 +936,7 @@ export const useFirstMediaIsEmbed = function useFirstMediaIsEmbed(firstMessage, 
           } else {
             return null;
           }
-        }).filter(tmp(1471).isNotNullish);
+        }).filter(tmp(1470).isNotNullish);
         const flatMapResult = Array.from(tmp(4739).flattenComponents(components).values()).flatMap((type) => {
           type = type.type;
           if (callback(table[12]).ComponentType.THUMBNAIL === type) {

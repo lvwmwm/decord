@@ -1,14 +1,14 @@
-// Module ID: 11724
-// Function ID: 11725
+// Module ID: 11947
+// Function ID: 11948
 // Name: DEFAULT_CONTENT_PADDING
-// Dependencies: [19, 17, 1498, 21, 11703, 4478, 712, 11623, 4217, 4197, 8041, 5493, 4474, 1297, 2]
+// Dependencies: [19, 17, 1497, 21, 11926, 4478, 709, 11846, 4217, 4197, 8050, 5501, 4474, 1296, 2]
 // Exports: AppLauncherCommandViewHeader
 
-// Module 11724 (DEFAULT_CONTENT_PADDING)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11947 (DEFAULT_CONTENT_PADDING)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;
+import APP_LAUNCHER_BUILT_IN_SECTION_ICON from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -123,7 +123,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   N.__initData = closure_12;
   const animatedStyle2 = obj4.useAnimatedStyle(N);
   obj1 = { interpolate: scrollOffsetY(4217).interpolate, scrollOffsetY, TOTAL_SCROLL_RANGE: closure_8 };
-  let str = scrollOffsetY(4197).useToken(section(712).colors.BACKGROUND_BASE_LOW);
+  let str = scrollOffsetY(4197).useToken(section(709).colors.BACKGROUND_BASE_LOW);
   let tmp10 = memo;
   const obj7 = scrollOffsetY(4197);
   if (typeof memo !== "number") {
@@ -136,12 +136,12 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   if (str == null) {
     str = "";
   }
-  const tmp9 = section(8041);
+  const tmp9 = section(8050);
   if (null != memo) {
     obj2 = { style: null, source: null };
     obj2[0] = tmp.appIcon;
     obj2[1] = memo;
-    let tmp15 = callback(tmp8(5493), obj2);
+    let tmp15 = callback(tmp8(5501), obj2);
     let tmp16 = callback;
   } else {
     const obj3 = { style: null };
@@ -161,7 +161,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   obj4 = { style: items2, children: null };
   items2[1] = prop;
   let items3 = [tmp.headerBannerOverlay, animatedStyle2];
-  const items4 = [tmp16(section(4217).View, { style: items3 }), tmp16(section(11703), { onPress: onPress.onPressBack }), , , ];
+  const items4 = [tmp16(section(4217).View, { style: items3 }), tmp16(section(11926), { onPress: onPress.onPressBack }), , , ];
   const obj5 = { lineClamp: 1, animated: true, style: items5, variant: "heading-lg/bold", color: "text-overlay-light", children: null };
   items5 = [tmp.appSmallName, animatedStyle];
   let displayName;
@@ -170,7 +170,7 @@ export const AppLauncherCommandViewHeader = function AppLauncherCommandViewHeade
   }
   obj5[5] = displayName;
   items4[2] = tmp16(scrollOffsetY(4474).Text, obj5);
-  items4[3] = tmp16(scrollOffsetY(1297).Spacer, { size: 32 });
+  items4[3] = tmp16(scrollOffsetY(1296).Spacer, { size: 32 });
   const items6 = [tmp.appIconMask, animatedStyle1];
   items4[4] = tmp16(section(4217).View, { style: items6, children: tmp15 });
   obj4[1] = items4;

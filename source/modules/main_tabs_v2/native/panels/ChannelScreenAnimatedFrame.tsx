@@ -1,12 +1,12 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15831
+// Function ID: 15832
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 17, 7608, 21, 4478, 712, 4217, 4479, 1297, 15598, 7616, 5553, 2]
+// Dependencies: [19, 17, 7618, 21, 4478, 709, 4217, 4479, 1296, 15829, 7626, 5561, 2]
 // Exports: default
 
-// Module 15600 (ChannelScreenAnimatedFrame)
+// Module 15831 (ChannelScreenAnimatedFrame)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

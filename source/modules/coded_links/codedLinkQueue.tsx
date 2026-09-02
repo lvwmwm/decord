@@ -1,12 +1,12 @@
-// Module ID: 16994
-// Function ID: 16995
+// Module ID: 17230
+// Function ID: 17231
 // Name: queueMessageLinkFetch
-// Dependencies: [3, 16995, 2]
+// Dependencies: [3, 17231, 2]
 // Exports: queueMessageLinkFetch
 
-// Module 16994 (queueMessageLinkFetch)
+// Module 17230 (queueMessageLinkFetch)
 import timestampDefault from "timestamp" /* 3 */;
-import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 16995 */;
+import _isNativeReflectConstructDefault from "_isNativeReflectConstruct" /* 17231 */;
 
 let closure_0 = new timestampDefault("codedLinkQueue");
 const obj = new _isNativeReflectConstructDefault({ concurrency: 5, intervalCap: 10, interval: 2000 });

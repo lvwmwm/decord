@@ -1,18 +1,18 @@
-// Module ID: 16867
-// Function ID: 16868
+// Module ID: 17103
+// Function ID: 17104
 // Name: CaptchaManager
-// Dependencies: [19, 17, 1996, 1302, 676, 21, 698, 7347, 7352, 589, 514, 585, 16868, 10914, 4723, 16869, 2009, 2]
+// Dependencies: [19, 17, 1995, 1301, 673, 21, 695, 7356, 7361, 586, 511, 582, 17104, 11134, 4723, 17105, 2008, 2]
 // Exports: InlineHcaptcha
 
-// Module 16867 (CaptchaManager)
-import convertStringArrayToSkemaErrorItems from "convertStringArrayToSkemaErrorItems" /* 585 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import siteKeyDefault from "siteKey" /* 16868 */;
+// Module 17103 (CaptchaManager)
+import convertStringArrayToSkemaErrorItems from "convertStringArrayToSkemaErrorItems" /* 582 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import siteKeyDefault from "siteKey" /* 17104 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_getSystemLocale" /* 1996 */;
-import closure_6 from "handleThemeChange" /* 1302 */;
-import ME from "ME" /* 676 */;
+import closure_5 from "_getSystemLocale" /* 1995 */;
+import closure_6 from "handleThemeChange" /* 1301 */;
+import ME from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -174,10 +174,10 @@ export const InlineHcaptcha = function InlineHcaptcha(siteKey) {
   ({ onVerify: importDefault, onError: dependencyMap } = siteKey);
   const merged = Object.assign(siteKey, Object.create(null));
   let React;
-  let obj = siteKey(589);
+  let obj = siteKey(586);
   let items = [closure_5];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  const v4Result = siteKey(514).v4();
+  const v4Result = siteKey(511).v4();
   React = v4Result;
   let items1 = [v4Result, siteKey];
   const effect = React.useEffect(() => {
@@ -246,7 +246,7 @@ export const InlineHcaptcha = function InlineHcaptcha(siteKey) {
     },
     languageCode: stateFromStores
   };
-  let obj2 = siteKey(514);
+  let obj2 = siteKey(511);
   const merged1 = Object.assign(merged);
   return jsx(siteKeyDefault, {
     siteKey,

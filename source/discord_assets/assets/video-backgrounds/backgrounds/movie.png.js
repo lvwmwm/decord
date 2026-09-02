@@ -1,9 +1,9 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9816
+// Function ID: 9817
 // Name: metadata
 // Dependencies: [2]
 
-// Module 9794 (metadata)
+// Module 9816 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/video-backgrounds/backgrounds/movie.png.js");

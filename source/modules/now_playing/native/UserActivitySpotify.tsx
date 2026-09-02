@@ -1,18 +1,18 @@
-// Module ID: 9389
-// Function ID: 9390
+// Module ID: 9402
+// Function ID: 9403
 // Name: render
-// Dependencies: [19, 17, 8611, 21, 1625, 530, 4190, 9390, 4928, 8052, 1236, 1297, 2]
+// Dependencies: [19, 17, 8626, 21, 1624, 527, 4190, 9403, 4928, 8060, 1233, 1296, 2]
 // Exports: SpotifyPlayButton, attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
-// Module 9389 (render)
-import sendRequest from "sendRequest" /* 530 */;
-import Button from "Button" /* 1297 */;
-import getConstantsAll from "getConstants" /* 1625 */;
+// Module 9402 (render)
+import sendRequest from "sendRequest" /* 527 */;
+import Button from "Button" /* 1296 */;
+import getConstantsAll from "getConstants" /* 1624 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import registerAssetDefault from "registerAsset" /* 8052 */;
+import registerAssetDefault from "registerAsset" /* 8060 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8611 */;
+import SPOTIFY_APP_PROTOCOL from "SPOTIFY_APP_PROTOCOL" /* 8626 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -50,7 +50,7 @@ SpotifyTrack.prototype["render"] = function render() {
   const self = this;
   const props = this.props;
   const onPress = props.onPress;
-  return callback(onPress(1297).LegacyText, {
+  return callback(onPress(1296).LegacyText, {
     onPress() {
       if (onPress != null) {
         tmp();
@@ -98,7 +98,7 @@ prototype["renderLink"] = function renderLink(children, arg1, arg2) {
   closure_1 = arg1;
   const onPress = this.props.onPress;
   children = [
-    callback(onPress(1297).LegacyText, {
+    callback(onPress(1296).LegacyText, {
       onPress() {
         if (onPress != null) {
           tmp();
@@ -115,13 +115,13 @@ prototype["renderLink"] = function renderLink(children, arg1, arg2) {
     str = "";
   }
   children[1] = str;
-  return closure_10(onPress(1297).LegacyText, { children }, arg1);
+  return closure_10(onPress(1296).LegacyText, { children }, arg1);
 };
 prototype["render"] = function render() {
   const self = this;
   const parts = this.props.artists.split("; ");
   const _require = parts.length - 1;
-  return callback(_require(1297).LegacyText, { children: parts.map((children) => self.renderLink(children, arg1, arg1 === closure_0)) });
+  return callback(_require(1296).LegacyText, { children: parts.map((children) => self.renderLink(children, arg1, arg1 === closure_0)) });
 };
 const PureComponent3 = importAllResult.PureComponent;
 class SpotifyAlbum extends PureComponent3 {
@@ -253,8 +253,8 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
   obj = { icon: null, text: null, size: "sm", onPress: null, grow: true };
   obj = { source: registerAssetDefault };
   obj[0] = callback(activity(4928).Button.Icon, obj);
-  const intl = activity(1236).intl;
-  obj[1] = intl.formatToPlainString(activity(1236).t.LEgD7t, { platform: activity.name });
+  const intl = activity(1233).intl;
+  obj[1] = intl.formatToPlainString(activity(1233).t.LEgD7t, { platform: activity.name });
   obj[3] = function onPress() {
     sync_id = sync_id.sync_id;
     const canOpenURLResult = closure_1_4.canOpenURL("" + closure_1_6 + ":");

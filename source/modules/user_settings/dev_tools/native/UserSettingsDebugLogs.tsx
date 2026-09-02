@@ -1,11 +1,11 @@
-// Module ID: 15163
-// Function ID: 15164
+// Module ID: 15392
+// Function ID: 15393
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 676, 21, 4478, 712, 6230, 1628, 4194, 595, 7, 4474, 6221, 14605, 1236, 15164, 4445, 15165, 8105, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 6239, 1627, 4194, 592, 7, 4474, 6230, 14828, 1233, 15393, 4445, 15394, 8113, 2]
 // Exports: default
 
-// Module 15163 (UserSettingsDebugLogs)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 15392 (UserSettingsDebugLogs)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

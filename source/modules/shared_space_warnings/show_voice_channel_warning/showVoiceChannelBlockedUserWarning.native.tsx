@@ -1,15 +1,15 @@
-// Module ID: 13393
-// Function ID: 13394
+// Module ID: 13616
+// Function ID: 13617
 // Name: showVoiceChannelBlockedUserWarning
-// Dependencies: [7157, 13388, 13391, 691, 4445, 13394, 2009, 503, 2]
+// Dependencies: [7166, 13611, 13614, 688, 4445, 13617, 2008, 500, 2]
 // Exports: showVoiceChannelBlockedUserWarning
 
-// Module 13393 (showVoiceChannelBlockedUserWarning)
-import keys from "keys" /* 691 */;
+// Module 13616 (showVoiceChannelBlockedUserWarning)
+import keys from "keys" /* 688 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
-import closure_3 from "getState" /* 7157 */;
-import useSharedSpacesWarningStore from "useSharedSpacesWarningStore" /* 13388 */;
-import { VoiceChannelWarningSurfaces as closure_6 } from "GdmWarningMedium" /* 13391 */;
+import closure_3 from "getState" /* 7166 */;
+import useSharedSpacesWarningStore from "useSharedSpacesWarningStore" /* 13611 */;
+import { VoiceChannelWarningSurfaces as closure_6 } from "GdmWarningMedium" /* 13614 */;
 
 require = arg1;
 ({ queueBlockWarning: c4, dequeueBlockWarning: c5 } = useSharedSpacesWarningStore);
@@ -23,15 +23,15 @@ export const showVoiceChannelBlockedUserWarning = function showVoiceChannelBlock
     obj = { channelId: null, blockedUserId: null, impressionName: null, impressionProperties: null };
     obj[0] = channelId;
     obj[1] = id;
-    obj[2] = tmp2(503).ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
+    obj[2] = tmp2(500).ImpressionNames.VOICE_CHANNEL_BLOCKED_USER_WARNING;
     obj = { channel_id: null, blocked_user_ids: null, warning_surface: null };
     obj[0] = channelId;
     const items = [id];
     obj[1] = items;
     obj[2] = constants.POST_JOIN_SHEET;
     obj[3] = obj;
-    obj.openLazy(tmp2(2009)(13394, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
-    const tmp11 = tmp2(2009)(13394, dependencyMap.paths);
+    obj.openLazy(tmp2(2008)(13617, dependencyMap.paths), "gdm_blocked_user_action_sheet", obj);
+    const tmp11 = tmp2(2008)(13617, dependencyMap.paths);
   } else {
     callback();
   }

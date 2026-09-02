@@ -1,12 +1,12 @@
-// Module ID: 11966
-// Function ID: 11967
+// Module ID: 12190
+// Function ID: 12191
 // Name: useCommandDiscoveryManager
-// Dependencies: [644, 705, 2]
+// Dependencies: [641, 702, 2]
 // Exports: updateInitialSectionId
 
-// Module 11966 (useCommandDiscoveryManager)
+// Module 12190 (useCommandDiscoveryManager)
 import set from "set" /* 2 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 const obj = keys.create(() => ({ initialSectionId: "r" }));
 const result = set.fileFinishedImporting("modules/application_commands/ApplicationCommandDiscoveryManager.tsx");
@@ -14,5 +14,5 @@ const result = set.fileFinishedImporting("modules/application_commands/Applicati
 export const useCommandDiscoveryManager = obj;
 export const updateInitialSectionId = function updateInitialSectionId(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => closure_1_2.setState(() => ({ initialSectionId: closure_0 })));
+  _require(702).batchUpdates(() => closure_1_2.setState(() => ({ initialSectionId: closure_0 })));
 };

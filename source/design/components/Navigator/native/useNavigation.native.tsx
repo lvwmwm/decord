@@ -1,12 +1,12 @@
-// Module ID: 1499
-// Function ID: 1500
+// Module ID: 1498
+// Function ID: 1499
 // Name: useNavigation
-// Dependencies: [1500, 2]
+// Dependencies: [1499, 2]
 // Exports: useNativeStackNavigation, useNavigation, useStackNavigation, useTabNavigation
 
-// Module 1499 (useNavigation)
+// Module 1498 (useNavigation)
 import set from "set" /* 2 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1500 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
 
 function useNavigation() {
   return createStandardNavigationFactories.useNavigation();

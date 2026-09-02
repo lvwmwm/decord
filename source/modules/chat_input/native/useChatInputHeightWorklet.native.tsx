@@ -1,11 +1,11 @@
-// Module ID: 11602
-// Function ID: 11603
+// Module ID: 11825
+// Function ID: 11826
 // Name: useChatInputHeightWorklet
-// Dependencies: [19, 500, 4217, 11603, 11604, 11605, 2]
+// Dependencies: [19, 1234, 4217, 11826, 11827, 11828, 2]
 // Exports: default, getIsChatInputHeightWorkletEnabled
 
-// Module 11602 (useChatInputHeightWorklet)
-import set from "set" /* 500 */;
+// Module 11825 (useChatInputHeightWorklet)
+import set from "set" /* 1234 */;
 import closure_3 from "noop" /* 19 */;
 
 require = arg1;

@@ -4,4 +4,4 @@
 
 // Module 563
 
-export default URIError;
+export default Math.floor;

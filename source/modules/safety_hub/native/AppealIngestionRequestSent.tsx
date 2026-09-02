@@ -1,15 +1,15 @@
-// Module ID: 11479
-// Function ID: 11480
+// Module ID: 11702
+// Function ID: 11703
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 8690, 21, 4478, 11471, 1236, 11469, 11480, 4474, 11474, 2]
+// Dependencies: [19, 17, 8705, 21, 4478, 11694, 1233, 11692, 11703, 4474, 11697, 2]
 // Exports: default
 
-// Module 11479 (AppealIngestionRequestSent)
+// Module 11702 (AppealIngestionRequestSent)
 import noopAll from "noop" /* 19 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11474 */;
-import registerAssetDefault from "registerAsset" /* 11480 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 11697 */;
+import registerAssetDefault from "registerAsset" /* 11703 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import SafetyHubView from "SafetyHubView" /* 8690 */;
+import SafetyHubView from "SafetyHubView" /* 8705 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -22,24 +22,24 @@ let closure_9 = createCacheKey.createStyles({ container: { flex: 1, padding: 8 }
 const result = require("set").fileFinishedImporting("modules/safety_hub/native/AppealIngestionRequestSent.tsx");
 
 export default function AppealIngestionRequestSent() {
-  let obj = _require(11471);
+  let obj = _require(11694);
   _require = obj.useEmitAppealIngestionEvent();
   const tmp = callback3();
-  const intl = _require(1236).intl;
-  const intl2 = _require(1236).intl;
-  const stringResult = intl.string(_require(1236).t.QMbTSu);
+  const intl = _require(1233).intl;
+  const intl2 = _require(1233).intl;
+  const stringResult = intl.string(_require(1233).t.QMbTSu);
   obj = { children: null };
   obj = { style: tmp.container, children: null };
-  const stringResult1 = intl2.string(_require(1236).t.Qdx8AP);
-  const items = [callback(closure_4, { source: registerAssetDefault, style: tmp.checkboxPng }), callback(_require(11469).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , ];
+  const stringResult1 = intl2.string(_require(1233).t.Qdx8AP);
+  const items = [callback(closure_4, { source: registerAssetDefault, style: tmp.checkboxPng }), callback(_require(11692).AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , ];
   const obj2 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: null };
-  const intl3 = _require(1236).intl;
-  obj2[3] = intl3.string(_require(1236).t["9BRc1N"]);
+  const intl3 = _require(1233).intl;
+  obj2[3] = intl3.string(_require(1233).t["9BRc1N"]);
   items[2] = callback(_require(4474).Text, obj2);
   const obj3 = { text: null, url: null, onPress: null };
   obj1 = { source: registerAssetDefault, style: tmp.checkboxPng };
-  const intl4 = _require(1236).intl;
-  obj3[0] = intl4.string(_require(1236).t.PxL38B);
+  const intl4 = _require(1233).intl;
+  obj3[0] = intl4.string(_require(1233).t.PxL38B);
   obj3[1] = constants.COMMUNITY_GUIDELINES;
   obj3[2] = function onPress() {
     return callback(closure_1_5.ClickCommunityGuidelinesLink);
@@ -47,8 +47,8 @@ export default function AppealIngestionRequestSent() {
   items[3] = callback(AppealIngestionExternalLinkDefault, obj3);
   const obj4 = { text: null, url: null, onPress: null };
   const tmp4 = AppealIngestionExternalLinkDefault;
-  const intl5 = _require(1236).intl;
-  obj4[0] = intl5.string(_require(1236).t.qC3XKa);
+  const intl5 = _require(1233).intl;
+  obj4[0] = intl5.string(_require(1233).t.qC3XKa);
   obj4[1] = constants.WARNING_SYSTEM_HELPCENTER_LINK;
   obj4[2] = function onPress() {
     return callback(closure_1_5.ClickWarningSystemHelpcenterLink);
@@ -56,5 +56,5 @@ export default function AppealIngestionRequestSent() {
   items[4] = callback(AppealIngestionExternalLinkDefault, obj4);
   obj[1] = items;
   obj[0] = callback2(closure_3, obj);
-  return callback(_require(11469).AppealIngestionModalScreen, obj);
+  return callback(_require(11692).AppealIngestionModalScreen, obj);
 };

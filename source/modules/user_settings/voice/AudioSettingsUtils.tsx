@@ -1,12 +1,12 @@
-// Module ID: 9783
-// Function ID: 9784
+// Module ID: 9805
+// Function ID: 9806
 // Name: snapVolumeToDefault
-// Dependencies: [685, 4579, 9784, 4968, 2]
+// Dependencies: [682, 4579, 9806, 4968, 2]
 // Exports: coerceAudioContextForProto, snapVolumeToDefault
 
-// Module 9783 (snapVolumeToDefault)
+// Module 9805 (snapVolumeToDefault)
 import set from "set" /* 2 */;
-import MAX_FAVORITES from "MAX_FAVORITES" /* 685 */;
+import MAX_FAVORITES from "MAX_FAVORITES" /* 682 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
 
 let closure_2 = MAX_FAVORITES.ProtoAudioSettingsContextTypes;
@@ -14,9 +14,9 @@ let result = set.fileFinishedImporting("modules/user_settings/voice/AudioSetting
 
 export const snapVolumeToDefault = function snapVolumeToDefault(USER, DEFAULT) {
   if (DEFAULT === BaseConnectionEvent.MediaEngineContextTypes.STREAM) {
-    USER = tmp(9784).AudioSettingsDefaultVolumes.STREAM;
+    USER = tmp(9806).AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = tmp(9784).AudioSettingsDefaultVolumes.USER;
+    USER = tmp(9806).AudioSettingsDefaultVolumes.USER;
   }
   let tmp3 = USER;
   let tmpResult = tmp(4968);

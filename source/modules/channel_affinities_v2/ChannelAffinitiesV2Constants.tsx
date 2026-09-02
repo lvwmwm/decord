@@ -1,10 +1,10 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 16098
+// Function ID: 16099
 // Name: result
-// Dependencies: [687, 2]
+// Dependencies: [684, 2]
 
-// Module 15867 (result)
-import setDefault from "set" /* 687 */;
+// Module 16098 (result)
+import setDefault from "set" /* 684 */;
 
 const result = 12 * setDefault.Millis.HOUR;
 const result1 = require("set").fileFinishedImporting("modules/channel_affinities_v2/ChannelAffinitiesV2Constants.tsx");

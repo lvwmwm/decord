@@ -1,12 +1,12 @@
-// Module ID: 12876
-// Function ID: 12877
+// Module ID: 13098
+// Function ID: 13099
 // Name: getHeaderTextForInvite
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: getHeaderTextForInvite
 
-// Module 12876 (getHeaderTextForInvite)
+// Module 13098 (getHeaderTextForInvite)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/messages/getHeaderTextForInvite.tsx");
 

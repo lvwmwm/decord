@@ -1,14 +1,14 @@
-// Module ID: 7654
-// Function ID: 7655
+// Module ID: 7663
+// Function ID: 7664
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 4470, 1909, 21, 4478, 589, 4947, 1236, 5944, 7655, 4474, 2]
+// Dependencies: [19, 17, 4470, 1908, 21, 4478, 586, 4947, 1233, 5952, 7664, 4474, 2]
 // Exports: default
 
-// Module 7654 (MemberVerificationAlertSuccess)
+// Module 7663 (MemberVerificationAlertSuccess)
 import noopAll from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

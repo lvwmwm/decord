@@ -1,16 +1,16 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 16012
+// Function ID: 16013
 // Name: fetchUnclaimedGames
-// Dependencies: [5, 15782, 676, 530, 709, 589, 687, 584, 2]
+// Dependencies: [5, 16013, 673, 527, 706, 586, 684, 581, 2]
 // Exports: useHasUnclaimedGames, useUnclaimedGameIdsForGuild
 
-// Module 15781 (fetchUnclaimedGames)
-import failsDefault from "fails" /* 584 */;
-import setDefault from "set" /* 687 */;
+// Module 16012 (fetchUnclaimedGames)
+import failsDefault from "fails" /* 581 */;
+import setDefault from "set" /* 684 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import importDefaultResult from "getMap" /* 15782 */;
-import { Endpoints } from "ME" /* 676 */;
-import initialize from "initialize" /* 589 */;
+import importDefaultResult from "getMap" /* 16013 */;
+import { Endpoints } from "ME" /* 673 */;
+import initialize from "initialize" /* 586 */;
 
 const require = arg1;
 function fetchUnclaimedGames() {
@@ -55,7 +55,7 @@ function _fetchUnclaimedGames() {
             const callback = tmp2;
             let body = tmp5;
             body = undefined;
-            const HTTP = closure_1_0(530).HTTP;
+            const HTTP = closure_1_0(527).HTTP;
             obj1 = { url: null, oldFormErrors: true, rejectWithError: false };
             obj1[0] = closure_1_5.UNCLAIMED_GAMES;
             dependencyMap = 1;
@@ -74,7 +74,7 @@ function _fetchUnclaimedGames() {
           return obj3;
         } else {
           body = arg1.body;
-          obj = callback(709);
+          obj = callback(706);
           const obj4 = { type: "UNCLAIMED_GAMES_FETCH_SUCCESS", guildIdToGameIds: null };
           obj4[1] = body;
           obj.dispatch(obj4);

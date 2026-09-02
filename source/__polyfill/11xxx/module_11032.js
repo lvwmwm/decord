@@ -1,0 +1,25 @@
+// Module ID: 11032
+// Function ID: 11033
+// Dependencies: [11024, 11025, 11026, 11033]
+
+// Module 11032
+for (const key10013 in require("RNIapAmazonModule")) {
+  let tmp2 = key10013;
+  arg5[key10013] = require("RNIapAmazonModule")[key10013];
+  continue;
+}
+for (const key10017 in require("NativeModules")) {
+  let tmp3 = key10017;
+  arg5[key10017] = require("NativeModules")[key10017];
+  continue;
+}
+for (const key10021 in require("fetchJsonOrThrow")) {
+  let tmp4 = key10021;
+  arg5[key10021] = require("fetchJsonOrThrow")[key10021];
+  continue;
+}
+for (const key10025 in require("module_11033")) {
+  let tmp5 = key10025;
+  arg5[key10025] = require("module_11033")[key10025];
+  continue;
+}

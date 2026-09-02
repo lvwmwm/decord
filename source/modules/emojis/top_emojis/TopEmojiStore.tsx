@@ -1,11 +1,11 @@
-// Module ID: 5404
-// Function ID: 5405
+// Module ID: 5412
+// Function ID: 5413
 // Name: initialize
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 5404 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 5412 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let obj = { topEmojisByGuildId: {} };
 let closure_2 = {};

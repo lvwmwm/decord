@@ -1,14 +1,14 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 12997
+// Function ID: 12998
 // Name: IgnoreUserElement
-// Dependencies: [19, 1387, 4130, 676, 21, 589, 4673, 4700, 9059, 12777, 1236, 7741, 2]
+// Dependencies: [19, 1386, 4130, 673, 21, 586, 4673, 4700, 9073, 12998, 1233, 7750, 2]
 // Exports: default
 
-// Module 12776 (IgnoreUserElement)
+// Module 12997 (IgnoreUserElement)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

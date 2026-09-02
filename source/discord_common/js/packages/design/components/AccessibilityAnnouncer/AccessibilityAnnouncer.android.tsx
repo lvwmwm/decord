@@ -1,12 +1,12 @@
-// Module ID: 1351
-// Function ID: 1352
+// Module ID: 1350
+// Function ID: 1351
 // Name: AccessibilityAnnouncer
-// Dependencies: [17, 1352, 2]
+// Dependencies: [17, 1351, 2]
 
-// Module 1351 (AccessibilityAnnouncer)
+// Module 1350 (AccessibilityAnnouncer)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import updateAccessibilityAnnouncerLiveRegionMessage from "updateAccessibilityAnnouncerLiveRegionMessage" /* 1352 */;
+import updateAccessibilityAnnouncerLiveRegionMessage from "updateAccessibilityAnnouncerLiveRegionMessage" /* 1351 */;
 
 const AccessibilityInfo = get_ActivityIndicator.AccessibilityInfo;
 let result = set.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncer.android.tsx");

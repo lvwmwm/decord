@@ -1,12 +1,12 @@
-// Module ID: 7108
-// Function ID: 7109
+// Module ID: 7117
+// Function ID: 7118
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7108 (metadata)
+// Module 7117 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VibingWumpusSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/ad9857905b3eba73eccbbd1eac5d891fcd7fd0aa6aff90ccc135f0ea4ba9cd32.png";
-export const metadata = { fileBytes: 36512 };
+export default "https://cdn.discordapp.com/assets/content/b8ee16ef29fa7c03aae68c469914ba49e187ee4e6595b0bfb0581d985f15706a.png";
+export const metadata = { fileBytes: 33032 };

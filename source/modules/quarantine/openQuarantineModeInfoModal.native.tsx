@@ -1,10 +1,10 @@
-// Module ID: 5459
-// Function ID: 5460
+// Module ID: 5467
+// Function ID: 5468
 // Name: openQuarantineModeInfoModal
-// Dependencies: [19, 17, 21, 4340, 4858, 5460, 2009, 2]
+// Dependencies: [19, 17, 21, 4340, 4858, 5468, 2008, 2]
 // Exports: default
 
-// Module 5459 (openQuarantineModeInfoModal)
+// Module 5467 (openQuarantineModeInfoModal)
 import noopAll from "noop" /* 19 */;
 import getBestActiveInput from "getBestActiveInput" /* 4340 */;
 import _modDef4858 from "module_4858" /* 4858 */;

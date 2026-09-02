@@ -1,18 +1,18 @@
-// Module ID: 10918
-// Function ID: 10919
+// Module ID: 11138
+// Function ID: 11139
 // Name: trackRoundtrip
-// Dependencies: [7444, 4574, 676, 7446, 7445, 7205, 698, 7422, 7208, 2]
+// Dependencies: [7454, 4574, 673, 7456, 7455, 7214, 695, 7431, 7217, 2]
 
-// Module 10918 (trackRoundtrip)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 7205 */;
-import isForegrounded from "isForegrounded" /* 7208 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7422 */;
-import result2 from "result" /* 7445 */;
-import AdCreativeType from "AdCreativeType" /* 7446 */;
-import closure_3 from "map" /* 7444 */;
+// Module 11138 (trackRoundtrip)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import receiveNetworkInfoformation from "receiveNetworkInfoformation" /* 7214 */;
+import isForegrounded from "isForegrounded" /* 7217 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7431 */;
+import result2 from "result" /* 7455 */;
+import AdCreativeType from "AdCreativeType" /* 7456 */;
+import closure_3 from "map" /* 7454 */;
 import closure_4 from "handleConnectionInfoChange" /* 4574 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 require = arg1;
@@ -145,8 +145,8 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
         let str4 = "quest";
         if (AdCreativeType.AdCreativeType.QUEST !== type) {
           str4 = "bounty";
-          if (tmp8(7446).AdCreativeType.BOUNTY !== type) {
-            if (tmp8(7446).AdCreativeType.QUEST_HOME_HERO === type) {
+          if (tmp8(7456).AdCreativeType.BOUNTY !== type) {
+            if (tmp8(7456).AdCreativeType.QUEST_HOME_HERO === type) {
               str4 = "quest_home_hero";
             }
           }
@@ -163,8 +163,8 @@ prototype["recordQuestRequestApiResponse"] = function recordQuestRequestApiRespo
         let str7 = "quest";
         if (AdCreativeType.AdCreativeType.QUEST !== type2) {
           str7 = "bounty";
-          if (tmp10(7446).AdCreativeType.BOUNTY !== type2) {
-            if (tmp10(7446).AdCreativeType.QUEST_HOME_HERO === type2) {
+          if (tmp10(7456).AdCreativeType.BOUNTY !== type2) {
+            if (tmp10(7456).AdCreativeType.QUEST_HOME_HERO === type2) {
               str7 = "quest_home_hero";
             }
           }

@@ -1,14 +1,14 @@
-// Module ID: 11512
-// Function ID: 11513
+// Module ID: 11735
+// Function ID: 11736
 // Name: onTapCheckpointCard
-// Dependencies: [1387, 676, 698, 4700, 2]
+// Dependencies: [1386, 673, 695, 4700, 2]
 // Exports: onTapCheckpointCard
 
-// Module 11512 (onTapCheckpointCard)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+// Module 11735 (onTapCheckpointCard)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/checkpoint/native/onTapCheckpointCard.tsx");

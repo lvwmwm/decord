@@ -1,12 +1,12 @@
-// Module ID: 11251
-// Function ID: 11252
+// Module ID: 11474
+// Function ID: 11475
 // Name: getOptions
-// Dependencies: [4471, 589, 709, 2]
+// Dependencies: [4471, 586, 706, 2]
 
-// Module 11251 (getOptions)
+// Module 11474 (getOptions)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import MESSAGE_GROUP_SPACING from "MESSAGE_GROUP_SPACING" /* 4471 */;
 
 const MessageSendLocation = MESSAGE_GROUP_SPACING.MessageSendLocation;

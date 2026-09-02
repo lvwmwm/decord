@@ -1,14 +1,14 @@
-// Module ID: 15615
-// Function ID: 15616
+// Module ID: 15846
+// Function ID: 15847
 // Name: withEqualityFn
-// Dependencies: [676, 700, 4217, 4106, 2]
+// Dependencies: [673, 697, 4217, 4105, 2]
 // Exports: computeMaxX
 
-// Module 15615 (withEqualityFn)
+// Module 15846 (withEqualityFn)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import isIterable from "isIterable" /* 4106 */;
-import identity from "identity" /* 700 */;
+import ME from "ME" /* 673 */;
+import isIterable from "isIterable" /* 4105 */;
+import identity from "identity" /* 697 */;
 
 const DM_WIDTH = ME.DM_WIDTH;
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {

@@ -1,16 +1,16 @@
-// Module ID: 10458
-// Function ID: 10459
+// Module ID: 10679
+// Function ID: 10680
 // Name: get
-// Dependencies: [10459, 1208, 7366, 589, 709, 2]
+// Dependencies: [10680, 1205, 7375, 586, 706, 2]
 
-// Module 10458 (get)
+// Module 10679 (get)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import _modDef1208 from "module_1208" /* 1208 */;
-import createUserWidgetFromServer from "createUserWidgetFromServer" /* 7366 */;
-import fromServer from "fromServer" /* 10459 */;
-import closure_5 from "fromServer" /* 10459 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import _modDef1205 from "module_1205" /* 1205 */;
+import createUserWidgetFromServer from "createUserWidgetFromServer" /* 7375 */;
+import fromServer from "fromServer" /* 10680 */;
+import closure_5 from "fromServer" /* 10680 */;
 
 ({ getWishlistSkuIds: c3, wishlistHasSkuId: c4 } = fromServer);
 let closure_6 = {};
@@ -115,7 +115,7 @@ const wishlistStore = new WishlistStore(dispatcherDefault, {
     tmp2.lastFetchedAt = Date.now();
   },
   WISHLIST_ADD_SKU_FAILURE: function handleAddSkuFailure(error) {
-    _modDef1208.captureException(error.error);
+    _modDef1205.captureException(error.error);
   },
   WISHLIST_REMOVE_SKU_START: function handleRemoveSkuStart(arg0) {
     ({ wishlistId, skuId: require } = arg0);
@@ -158,7 +158,7 @@ const wishlistStore = new WishlistStore(dispatcherDefault, {
       tmp2 = obj;
     }
     tmp2.updatedAt = undefined;
-    _modDef1208.captureException(wishlistId.error);
+    _modDef1205.captureException(wishlistId.error);
   },
   WISHLIST_UPDATE_VISIBILITY_SUCCESS: function handleUpdateVisibilitySuccess(wishlistId) {
     wishlistId = wishlistId.wishlistId;
@@ -173,7 +173,7 @@ const wishlistStore = new WishlistStore(dispatcherDefault, {
     tmp2.lastFetchedAt = Date.now();
   },
   WISHLIST_UPDATE_VISIBILITY_FAILURE: function handleUpdateVisibilityFailure(error) {
-    _modDef1208.captureException(error.error);
+    _modDef1205.captureException(error.error);
   },
   WISHLIST_REORDER_START: function handleReorderStart(wishlistId) {
     wishlistId = wishlistId.wishlistId;
@@ -207,7 +207,7 @@ const wishlistStore = new WishlistStore(dispatcherDefault, {
       tmp2 = obj;
     }
     tmp2.updatedAt = undefined;
-    _modDef1208.captureException(wishlistId.error);
+    _modDef1205.captureException(wishlistId.error);
   },
   WISHLIST_ITEM_PURCHASED: function handleWishlistItemPurchased(arg0) {
     ({ recipientId, skuId } = arg0);

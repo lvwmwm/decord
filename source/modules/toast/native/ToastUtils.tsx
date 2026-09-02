@@ -1,15 +1,15 @@
 // Module ID: 4193
 // Function ID: 4194
 // Name: presentAddedFriendToast
-// Dependencies: [676, 4194, 1236, 4195, 4415, 4417, 4419, 4421, 4423, 4425, 4427, 4429, 1431, 4431, 4433, 4436, 514, 4438, 4441, 2]
+// Dependencies: [673, 4194, 1233, 4195, 4415, 4417, 4419, 4421, 4423, 4425, 4427, 4429, 1430, 4431, 4433, 4436, 511, 4438, 4441, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
 // Module 4193 (presentAddedFriendToast)
 import set from "set" /* 2 */;
-import v1 from "v1" /* 514 */;
-import ME from "ME" /* 676 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
+import v1 from "v1" /* 511 */;
+import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
 import dispatcherDefault from "dispatcher" /* 4194 */;
 import FriendsIcon from "FriendsIcon" /* 4195 */;
 import UserPlatformIcon from "UserPlatformIcon" /* 4417 */;
@@ -369,9 +369,9 @@ export const presentGuildMemberBio = function presentGuildMemberBio(guildName) {
   const _require = arg1;
   let obj = dispatcherDefault;
   obj = { key: "GUILD_IDENTITY_BIO_TOAST", content: null, icon: null };
-  const intl = _require(1236).intl;
+  const intl = _require(1233).intl;
   obj = { guildName };
-  obj[1] = intl.formatToPlainString(_require(1236).t.pOy2tm, obj);
+  obj[1] = intl.formatToPlainString(_require(1233).t.pOy2tm, obj);
   obj[2] = function icon() {
     return closure_0;
   };
@@ -381,9 +381,9 @@ export const presentGuildMemberPronouns = function presentGuildMemberPronouns(gu
   const _require = arg1;
   let obj = dispatcherDefault;
   obj = { key: "GUILD_IDENTITY_PRONOUNS_TOAST", content: null, icon: null };
-  const intl = _require(1236).intl;
+  const intl = _require(1233).intl;
   obj = { guildName };
-  obj[1] = intl.formatToPlainString(_require(1236).t.gPVLS0, obj);
+  obj[1] = intl.formatToPlainString(_require(1233).t.gPVLS0, obj);
   obj[2] = function icon() {
     return closure_0;
   };

@@ -1,10 +1,10 @@
-// Module ID: 16039
-// Function ID: 16040
+// Module ID: 16270
+// Function ID: 16271
 // Name: NUM_GUILDS_EXTENDED_ONBOARDING
-// Dependencies: [687, 2]
+// Dependencies: [684, 2]
 
-// Module 16039 (NUM_GUILDS_EXTENDED_ONBOARDING)
-import setDefault from "set" /* 687 */;
+// Module 16270 (NUM_GUILDS_EXTENDED_ONBOARDING)
+import setDefault from "set" /* 684 */;
 
 const result = 15 * setDefault.Millis.MINUTE;
 const result1 = require("set").fileFinishedImporting("modules/icymi/ICYMIConstants.tsx");

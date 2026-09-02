@@ -1,10 +1,10 @@
-// Module ID: 9074
-// Function ID: 9075
+// Module ID: 9088
+// Function ID: 9089
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 8559, 9075, 4863, 1236, 4863, 2]
+// Dependencies: [19, 21, 8572, 9089, 4863, 1233, 4863, 2]
 // Exports: default
 
-// Module 9074 (UserProfileConfirmRemoveGameFriend)
+// Module 9088 (UserProfileConfirmRemoveGameFriend)
 import closure_3 from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 
@@ -23,19 +23,19 @@ export default function UserProfileConfirmRemoveGameFriend(gameName) {
     applicationId(closure_1_2[3]).removeFriend(obj);
   }, items);
   let obj = { title: null, content: null, actions: null };
-  const intl = userId(1236).intl;
-  obj[0] = intl.formatToPlainString(userId(1236).t.fBKKfq, { name: userDisplayName });
-  const intl2 = userId(1236).intl;
-  obj[1] = intl2.formatToPlainString(userId(1236).t.dsU5bl, { name: userDisplayName, gameName: gameName.gameName });
+  const intl = userId(1233).intl;
+  obj[0] = intl.formatToPlainString(userId(1233).t.fBKKfq, { name: userDisplayName });
+  const intl2 = userId(1233).intl;
+  obj[1] = intl2.formatToPlainString(userId(1233).t.dsU5bl, { name: userDisplayName, gameName: gameName.gameName });
   obj = { children: null };
   obj = { variant: "destructive", text: null, onPress: null };
-  const intl3 = userId(1236).intl;
-  obj[1] = intl3.string(userId(1236).t.RLcE6x);
+  const intl3 = userId(1233).intl;
+  obj[1] = intl3.string(userId(1233).t.RLcE6x);
   obj[2] = callback;
   const items1 = [callback(userId(4863).AlertActionButton, obj, "confirm-remove"), ];
   obj1 = { variant: "secondary", text: null };
-  const intl4 = userId(1236).intl;
-  obj1[1] = intl4.string(userId(1236).t["eN6+rI"]);
+  const intl4 = userId(1233).intl;
+  obj1[1] = intl4.string(userId(1233).t["eN6+rI"]);
   items1[1] = callback(userId(4863).AlertActionButton, obj1, "nevermind");
   obj[0] = items1;
   obj[2] = callback2(userId(4863).AlertActions, obj);

@@ -1,24 +1,24 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17581
+// Function ID: 17582
 // Name: Row
-// Dependencies: [19, 17, 14824, 676, 21, 4478, 712, 5461, 4205, 9067, 1297, 17346, 1236, 17347, 2]
+// Dependencies: [19, 17, 15053, 673, 21, 4478, 709, 5469, 4205, 9081, 1296, 17582, 1233, 17583, 2]
 // Exports: default
 
-// Module 17345 (Row)
+// Module 17581 (Row)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import useCheckboxA11yNative from "useCheckboxA11yNative" /* 4205 */;
-import renderDefault from "render" /* 9067 */;
-import registerAssetDefault from "registerAsset" /* 17346 */;
-import registerAssetDefault2 from "registerAsset" /* 17347 */;
+import renderDefault from "render" /* 9081 */;
+import registerAssetDefault from "registerAsset" /* 17582 */;
+import registerAssetDefault2 from "registerAsset" /* 17583 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { AllChannelAccessOptions } from "AllChannelAccessOptions" /* 14824 */;
-import { Fonts } from "ME" /* 676 */;
+import { AllChannelAccessOptions } from "AllChannelAccessOptions" /* 15053 */;
+import { Fonts } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5461 */;
+import importDefaultResult from "createTextStyle" /* 5469 */;
 
 require = arg1;
 function Row(arg0) {
@@ -38,7 +38,7 @@ function Row(arg0) {
   }
   obj[3] = tmp7;
   obj[4] = onPress;
-  obj = { size: tmp2(1297).Icon.Sizes.MEDIUM, source: icon };
+  obj = { size: tmp2(1296).Icon.Sizes.MEDIUM, source: icon };
   const items = [callback(Button.Icon, obj), , ];
   const items1 = [tmp.rowLabel, ];
   let rowLabelSelected = selected;

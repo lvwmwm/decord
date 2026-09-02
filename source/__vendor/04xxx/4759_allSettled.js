@@ -1,12 +1,12 @@
 // Module ID: 4759
 // Function ID: 4760
 // Name: allSettled
-// Dependencies: [4757, 1418, 540, 4760, 4763, 4766, 4833]
+// Dependencies: [4757, 1417, 537, 4760, 4763, 4766, 4833]
 
 // Module 4759 (allSettled)
-import getEvalledConstructor from "getEvalledConstructor" /* 540 */;
+import getEvalledConstructor from "getEvalledConstructor" /* 537 */;
 import requirePromise from "requirePromise" /* 4757 */;
-import callBind from "callBind" /* 1418 */;
+import callBind from "callBind" /* 1417 */;
 
 requirePromise();
 let closure_2 = callBind(getEvalledConstructor("%Promise.all%"));

@@ -1,10 +1,10 @@
-// Module ID: 13574
-// Function ID: 13575
+// Module ID: 13797
+// Function ID: 13798
 // Name: isOverlayCurrentlyVisibleAndUnlocked
 // Dependencies: [2]
 // Exports: isOverlayChannelVisible, isOverlayCurrentlyVisibleAndUnlocked
 
-// Module 13574 (isOverlayCurrentlyVisibleAndUnlocked)
+// Module 13797 (isOverlayCurrentlyVisibleAndUnlocked)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/overlay/OverlayVisibility.native.tsx");

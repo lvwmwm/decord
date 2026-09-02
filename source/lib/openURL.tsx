@@ -1,7 +1,7 @@
 // Module ID: 4184
 // Function ID: 4185
 // Name: _openURL
-// Dependencies: [5, 4185, 8648, 2009, 2]
+// Dependencies: [5, 4185, 8663, 2008, 2]
 // Exports: default
 
 // Module 4184 (_openURL)

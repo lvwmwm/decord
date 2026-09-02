@@ -1,22 +1,22 @@
-// Module ID: 14107
-// Function ID: 14108
+// Module ID: 14330
+// Function ID: 14331
 // Name: processColor
-// Dependencies: [32, 17, 1386, 4519, 4500, 1387, 4529, 4554, 4130, 1922, 676, 712, 7502, 7501, 10123, 9255, 4674, 1236, 4662, 2]
+// Dependencies: [32, 17, 1385, 4519, 4500, 1386, 4529, 4554, 4130, 1921, 673, 709, 7512, 7511, 10145, 9268, 4674, 1233, 4662, 2]
 
-// Module 14107 (processColor)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 14330 (processColor)
+import ThemesDefault from "Themes" /* 709 */;
 import initializeDefault from "initialize" /* 4662 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
-import closure_4 from "participantFromServer" /* 1386 */;
+import closure_4 from "participantFromServer" /* 1385 */;
 import closure_5 from "addApplication" /* 4519 */;
 import closure_6 from "reset" /* 4500 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_9 from "createRTCConnection" /* 4554 */;
 import closure_10 from "markAllUserIdListsStale" /* 4130 */;
-import closure_11 from "mergeGuildAvatar" /* 1922 */;
-import { InputModes } from "ME" /* 676 */;
+import closure_11 from "mergeGuildAvatar" /* 1921 */;
+import { InputModes } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 let set = arg1;
@@ -27,7 +27,7 @@ class VoiceNotificationManager {
     obj = Object.create(new.target.prototype);
     closure_0 = obj;
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "flexDirection", connectionState: "context", selfMute: false, deafened: "SensitivityType", isPushToTalk: null, embeddedActivity: "\u{1F1E6}\u{1F1E9}", isStreaming: 6 };
+    obj.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: null, isPushToTalk: "SEPA_INVALID_MANDATE_TYPE", embeddedActivity: "SEPA mandate type is invalid", isStreaming: "aC" };
     obj.handleVoiceStateChange = function handleVoiceStateChange() {
       const channelId = closure_1_9.getChannelId();
       const state = closure_1_9.getState();
@@ -222,7 +222,7 @@ prototype["terminate"] = function terminate() {
 };
 set = Object.create(VoiceNotificationManager.prototype);
 set.voiceServiceHandlerId = 9000;
-set.state = { channelId: "flexDirection", connectionState: "context", selfMute: false, deafened: "SensitivityType", isPushToTalk: null, embeddedActivity: "\u{1F1E6}\u{1F1E9}", isStreaming: 6 };
+set.state = { channelId: "flexDirection", connectionState: "content", selfMute: false, deafened: null, isPushToTalk: "SEPA_INVALID_MANDATE_TYPE", embeddedActivity: "SEPA mandate type is invalid", isStreaming: "aC" };
 set.handleVoiceStateChange = function handleVoiceStateChange() {
   const channelId = closure_1_9.getChannelId();
   const state = closure_1_9.getState();

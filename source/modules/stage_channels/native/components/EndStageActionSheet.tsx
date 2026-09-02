@@ -1,15 +1,15 @@
-// Module ID: 12790
-// Function ID: 12791
+// Module ID: 13011
+// Function ID: 13012
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 5358, 676, 21, 4478, 712, 4445, 9774, 8739, 1297, 1236, 4474, 4928, 8669, 2]
+// Dependencies: [19, 17, 5366, 673, 21, 4478, 709, 4445, 9796, 8754, 1296, 1233, 4474, 4928, 8684, 2]
 // Exports: default
 
-// Module 12790 (EndStageActionSheet)
+// Module 13011 (EndStageActionSheet)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8739 */;
+import ThemesDefault from "Themes" /* 709 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 8754 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH" /* 5358 */;
+import { EXPLICIT_END_STAGE_SHEET_KEY as closure_4 } from "MAX_STAGE_TOPIC_LENGTH" /* 5366 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -31,17 +31,17 @@ export default function EndStageActionSheet(channel) {
   let obj = { children: null };
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.title, accessibilityRole: "header", children: null };
-  const intl = channel(1236).intl;
-  obj[2] = intl.string(channel(1236).t.pADdJu);
-  const items = [callback(channel(1297).LegacyText, obj), , , ];
+  const intl = channel(1233).intl;
+  obj[2] = intl.string(channel(1233).t.pADdJu);
+  const items = [callback(channel(1296).LegacyText, obj), , , ];
   obj1 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
-  const intl2 = channel(1236).intl;
-  obj1[3] = intl2.string(channel(1236).t.mT7jwN);
+  const intl2 = channel(1233).intl;
+  obj1[3] = intl2.string(channel(1233).t.mT7jwN);
   items[1] = callback(channel(4474).Text, obj1);
   let obj2 = { style: tmp.cancelButton, children: null };
   const obj3 = { variant: "secondary", text: null, onPress: null };
-  const intl3 = channel(1236).intl;
-  obj3[1] = intl3.string(channel(1236).t.xTwqz2);
+  const intl3 = channel(1233).intl;
+  obj3[1] = intl3.string(channel(1233).t.xTwqz2);
   obj3[2] = function handleClose() {
     closure_1_1(closure_1_2[7]).hideActionSheet(closure_1_4);
     const obj = closure_1_1(closure_1_2[7]);
@@ -51,8 +51,8 @@ export default function EndStageActionSheet(channel) {
   items[2] = callback(View, obj2);
   const obj4 = { style: tmp.confirmButton, children: null };
   const obj5 = { variant: "destructive", text: null, onPress: null };
-  const intl4 = channel(1236).intl;
-  obj5[1] = intl4.string(channel(1236).t.wnWqGg);
+  const intl4 = channel(1233).intl;
+  obj5[1] = intl4.string(channel(1233).t.wnWqGg);
   obj5[2] = function onPress() {
     channel(closure_1_2[14]).endStage(channel);
     const obj = channel(closure_1_2[14]);

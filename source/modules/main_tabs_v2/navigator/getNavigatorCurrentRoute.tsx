@@ -1,10 +1,10 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9066
+// Function ID: 9067
 // Name: getNavigatorCurrentRoute
 // Dependencies: [4333, 2]
 // Exports: default
 
-// Module 9052 (getNavigatorCurrentRoute)
+// Module 9066 (getNavigatorCurrentRoute)
 import set from "set" /* 2 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 

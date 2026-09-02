@@ -1,16 +1,16 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 13435
+// Function ID: 13436
 // Name: TermsAndConditionsActionSheet
-// Dependencies: [32, 19, 17, 676, 21, 4478, 712, 5384, 5622, 5621, 1236, 4474, 4468, 4413, 13016, 13214, 4858, 13215, 2009, 13014, 4928, 4445, 2]
+// Dependencies: [32, 19, 17, 673, 21, 4478, 709, 5392, 5630, 5629, 1233, 4474, 4468, 4413, 13238, 13436, 4858, 13437, 2008, 13236, 4928, 4445, 2]
 // Exports: default
 
-// Module 13213 (TermsAndConditionsActionSheet)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 13435 (TermsAndConditionsActionSheet)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import get_defaultRulesDefault from "get defaultRules" /* 4468 */;
 import Text from "Text" /* 4474 */;
-import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5621 */;
-import Background from "Background" /* 5622 */;
+import RedesignBottomSheetTitleHeaderBase from "RedesignBottomSheetTitleHeaderBase" /* 5629 */;
+import Background from "Background" /* 5630 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

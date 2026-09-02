@@ -1,12 +1,12 @@
-// Module ID: 15607
-// Function ID: 15608
+// Module ID: 15838
+// Function ID: 15839
 // Name: useGuildsRouteGuildId
-// Dependencies: [1500, 2]
+// Dependencies: [1499, 2]
 // Exports: default, useGuildsRouteGuildAndChannelId
 
-// Module 15607 (useGuildsRouteGuildId)
+// Module 15838 (useGuildsRouteGuildId)
 import set from "set" /* 2 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1500 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
 
 const result = set.fileFinishedImporting("modules/main_tabs_v2/navigator/useGuildsRouteGuildId.tsx");
 

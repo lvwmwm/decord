@@ -1,22 +1,22 @@
-// Module ID: 6150
-// Function ID: 6151
+// Module ID: 6158
+// Function ID: 6159
 // Name: maybeRebuildState
-// Dependencies: [5449, 6151, 1218, 1387, 4493, 1981, 1396, 1398, 12, 6152, 11, 589, 1429, 709, 2]
+// Dependencies: [5457, 6159, 1215, 1386, 4493, 1980, 1395, 1397, 12, 6160, 11, 586, 1428, 706, 2]
 // Exports: computeThreadIdsSnapshot
 
-// Module 6150 (maybeRebuildState)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import set3 from "set" /* 1396 */;
-import set4 from "set" /* 1398 */;
-import areSetsEqual from "areSetsEqual" /* 1429 */;
-import getCreationDefaultFormatter from "getCreationDefaultFormatter" /* 6152 */;
-import closure_4 from "handleThreadCreateOrUpdate" /* 5449 */;
-import closure_5 from "updateState" /* 6151 */;
-import closure_6 from "fetchFingerprint" /* 1218 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
+// Module 6158 (maybeRebuildState)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import set3 from "set" /* 1395 */;
+import set4 from "set" /* 1397 */;
+import areSetsEqual from "areSetsEqual" /* 1428 */;
+import getCreationDefaultFormatter from "getCreationDefaultFormatter" /* 6160 */;
+import closure_4 from "handleThreadCreateOrUpdate" /* 5457 */;
+import closure_5 from "updateState" /* 6159 */;
+import closure_6 from "fetchFingerprint" /* 1215 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
 import closure_8 from "generateOldThreadCutoff" /* 4493 */;
-import closure_9 from "handleConnectionOpen" /* 1981 */;
+import closure_9 from "handleConnectionOpen" /* 1980 */;
 import importDefaultResult from "apply" /* 12 */;
 import set from "set" /* 2 */;
 
@@ -88,7 +88,7 @@ function rebuildState(refreshThreadIds) {
     }
     if (refreshThreadIds1) {
       const obj3 = importDefaultResult;
-      _require = _require(1396).ThreadSortOrder.LATEST_ACTIVITY;
+      _require = _require(1395).ThreadSortOrder.LATEST_ACTIVITY;
       closure_21 = importDefaultResult.chain(closure_19).sort((id, id) => {
         let compare = closure_1_2;
         let num = -1;
@@ -119,7 +119,7 @@ function rebuildState(refreshThreadIds) {
       });
       const chainResult = importDefaultResult.chain(closure_19);
       const obj5 = importDefaultResult;
-      _require = _require(1396).ThreadSortOrder.CREATION_DATE;
+      _require = _require(1395).ThreadSortOrder.CREATION_DATE;
       closure_20 = importDefaultResult.chain(closure_19).sort((id, id) => {
         let compare = closure_1_2;
         let num = -1;
@@ -150,7 +150,7 @@ function rebuildState(refreshThreadIds) {
       });
       const chainResult1 = importDefaultResult.chain(closure_19);
     }
-    const valueResult = LATEST_ACTIVITY === _require(1396).ThreadSortOrder.LATEST_ACTIVITY ? closure_21 : closure_20.value();
+    const valueResult = LATEST_ACTIVITY === _require(1395).ThreadSortOrder.LATEST_ACTIVITY ? closure_21 : closure_20.value();
     let found = valueResult;
     if (0 !== set.size) {
       _require = set;
@@ -197,7 +197,7 @@ function rebuildState(refreshThreadIds) {
       tmp33 = found1;
     }
     found1 = tmp33;
-    const iter = LATEST_ACTIVITY === _require(1396).ThreadSortOrder.LATEST_ACTIVITY ? closure_21 : closure_20;
+    const iter = LATEST_ACTIVITY === _require(1395).ThreadSortOrder.LATEST_ACTIVITY ? closure_21 : closure_20;
     obj = set1;
   }
 }

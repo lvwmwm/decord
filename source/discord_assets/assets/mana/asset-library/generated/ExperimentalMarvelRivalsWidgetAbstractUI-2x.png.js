@@ -1,9 +1,9 @@
-// Module ID: 6538
-// Function ID: 6539
+// Module ID: 6547
+// Function ID: 6548
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6538 (metadata)
+// Module 6547 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ExperimentalMarvelRivalsWidgetAbstractUI-2x.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 8022
-// Function ID: 8023
+// Module ID: 8031
+// Function ID: 8032
 // Name: getInteractionComponentStates
-// Dependencies: [8023, 589, 709, 2]
+// Dependencies: [8032, 586, 706, 2]
 
-// Module 8022 (getInteractionComponentStates)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import LimitedMapDefault from "LimitedMap" /* 8023 */;
+// Module 8031 (getInteractionComponentStates)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import LimitedMapDefault from "LimitedMap" /* 8032 */;
 
 let closure_0 = new LimitedMapDefault(196606);
 let c1 = 0;

@@ -1,16 +1,16 @@
-// Module ID: 16001
-// Function ID: 16002
+// Module ID: 16232
+// Function ID: 16233
 // Name: PAGE_SIZE_WITH_MENTIONS
-// Dependencies: [5, 32, 19, 7382, 7384, 16000, 4702, 589, 16002, 5478, 8111, 2]
+// Dependencies: [5, 32, 19, 7391, 7393, 16231, 4702, 586, 16233, 5486, 8119, 2]
 // Exports: useNotificationCenterItemsLoader
 
-// Module 16001 (PAGE_SIZE_WITH_MENTIONS)
+// Module 16232 (PAGE_SIZE_WITH_MENTIONS)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "findOrCreateMessageRecord" /* 7382 */;
-import closure_7 from "_validate" /* 7384 */;
-import closure_8 from "handleLoadFinished" /* 16000 */;
+import closure_6 from "findOrCreateMessageRecord" /* 7391 */;
+import closure_7 from "_validate" /* 7393 */;
+import closure_8 from "handleLoadFinished" /* 16231 */;
 import { ReadStateTypes } from "ReadStateTypes" /* 4702 */;
 
 const require = arg1;

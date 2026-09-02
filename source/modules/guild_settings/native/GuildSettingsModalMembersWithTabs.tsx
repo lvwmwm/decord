@@ -1,15 +1,15 @@
-// Module ID: 16157
-// Function ID: 16158
-// Dependencies: [32, 19, 17, 1909, 4121, 1922, 21, 4478, 712, 15804, 589, 6112, 1236, 16158, 16159, 16165, 4302, 1499, 8792, 16160, 6237, 9768, 9260, 9266, 9266, 9268, 2]
+// Module ID: 16388
+// Function ID: 16389
+// Dependencies: [32, 19, 17, 1908, 4120, 1921, 21, 4478, 709, 16035, 586, 6120, 1233, 16389, 16390, 16396, 4302, 1498, 8807, 16391, 6246, 9790, 9273, 9279, 9279, 9281, 2]
 
-// Module 16157
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16388
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -113,12 +113,12 @@ const memoResult = importAllResult.memo((guildId) => {
       items: membersManagementActions,
       children(ref) {
         const merged = Object.assign(ref, Object.create(null));
-        const obj = { source: callback2(9768), accessibilityLabel: null, ref: null };
-        const intl = callback(1236).intl;
-        obj[1] = intl.string(callback(1236).t.ogxXGq);
+        const obj = { source: callback2(9790), accessibilityLabel: null, ref: null };
+        const intl = callback(1233).intl;
+        obj[1] = intl.string(callback(1233).t.ogxXGq);
         obj[2] = ref.ref;
         const merged1 = Object.assign(merged);
-        return callback3(callback(6237).HeaderActionButton, obj);
+        return callback3(callback(6246).HeaderActionButton, obj);
       }
     };
     return closure_1_9(guildId(num[18]).ContextMenu, obj);

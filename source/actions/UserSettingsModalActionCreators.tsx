@@ -1,11 +1,11 @@
-// Module ID: 7762
-// Function ID: 7763
+// Module ID: 7771
+// Function ID: 7772
 // Name: dispatcher
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 
-// Module 7762 (dispatcher)
+// Module 7771 (dispatcher)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("actions/UserSettingsModalActionCreators.tsx");
 

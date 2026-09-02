@@ -1,12 +1,12 @@
-// Module ID: 6101
-// Function ID: 6102
+// Module ID: 6109
+// Function ID: 6110
 // Name: useUnmountAbortSignal
-// Dependencies: [5941, 4945, 2]
+// Dependencies: [5949, 4945, 2]
 // Exports: default, useUnmountAbortSignalWithDelay
 
-// Module 6101 (useUnmountAbortSignal)
+// Module 6109 (useUnmountAbortSignal)
 import set from "set" /* 2 */;
-import useInitialValueDefault from "useInitialValue" /* 5941 */;
+import useInitialValueDefault from "useInitialValue" /* 5949 */;
 
 const result = set.fileFinishedImporting("hooks/useUnmountAbortSignal.tsx");
 

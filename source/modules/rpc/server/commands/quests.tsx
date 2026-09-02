@@ -1,16 +1,16 @@
-// Module ID: 14164
-// Function ID: 14165
-// Dependencies: [7448, 676, 8610, 9508, 7469, 9503, 698, 709, 11114, 2]
+// Module ID: 14387
+// Function ID: 14388
+// Dependencies: [7458, 673, 8625, 9521, 7479, 9516, 695, 706, 11335, 2]
 
-// Module 14164
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7469 */;
-import prototypeDefault from "prototype" /* 9503 */;
-import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9508 */;
-import questMatchesActivity from "questMatchesActivity" /* 11114 */;
-import closure_3 from "initializeState" /* 7448 */;
-import ME from "ME" /* 676 */;
+// Module 14387
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import getApplicationIdsByTaskTypes from "getApplicationIdsByTaskTypes" /* 7479 */;
+import prototypeDefault from "prototype" /* 9516 */;
+import recurseReplaceContentTree from "recurseReplaceContentTree" /* 9521 */;
+import questMatchesActivity from "questMatchesActivity" /* 11335 */;
+import closure_3 from "initializeState" /* 7458 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 ({ RPCCommands, RPCErrors: c4, AnalyticEvents: c5 } = ME);

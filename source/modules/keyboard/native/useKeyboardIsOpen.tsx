@@ -1,14 +1,14 @@
-// Module ID: 6233
-// Function ID: 6234
+// Module ID: 6242
+// Function ID: 6243
 // Name: useKeyboardIsOpen
-// Dependencies: [1495, 1496, 1497, 1626, 2]
+// Dependencies: [1494, 1495, 1496, 1625, 2]
 // Exports: default, getKeyboardIsOpen, subscribeToKeyboardIsOpen
 
-// Module 6233 (useKeyboardIsOpen)
-import context from "context" /* 1496 */;
-import computeEntryStateDefault from "computeEntryState" /* 1497 */;
-import KeyboardTypes from "KeyboardTypes" /* 1626 */;
-import closure_3 from "subscribeToKeyboardUIStore" /* 1495 */;
+// Module 6242 (useKeyboardIsOpen)
+import context from "context" /* 1495 */;
+import computeEntryStateDefault from "computeEntryState" /* 1496 */;
+import KeyboardTypes from "KeyboardTypes" /* 1625 */;
+import closure_3 from "subscribeToKeyboardUIStore" /* 1494 */;
 
 require = arg1;
 let closure_4 = {};
@@ -24,7 +24,7 @@ export default function useKeyboardIsOpen() {
     flag = false;
   }
   importDefault = undefined;
-  importDefault = flag(1496).useAppEntryKey();
+  importDefault = flag(1495).useAppEntryKey();
   return computeEntryStateDefault((arg0) => {
     const systemKeyboardOpen = tmp.systemKeyboardOpen;
     if (flag) {

@@ -1,16 +1,16 @@
-// Module ID: 11014
-// Function ID: 11015
+// Module ID: 11234
+// Function ID: 11235
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10653, 11000, 21, 4478, 712, 647, 11008, 4194, 1236, 8426, 8427, 11007, 4474, 1297, 11015, 11016, 2]
+// Dependencies: [19, 17, 10874, 11220, 21, 4478, 709, 644, 11228, 4194, 1233, 8435, 8436, 11227, 4474, 1296, 11235, 11236, 2]
 // Exports: default
 
-// Module 11014 (WasThisHelpfulSection)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11234 (WasThisHelpfulSection)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "handleConnectionOpen" /* 10653 */;
-import { SafetyWarningFeedbackTypes as closure_7 } from "handleConnectionOpen" /* 10653 */;
-import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 11000 */;
+import closure_6 from "handleConnectionOpen" /* 10874 */;
+import { SafetyWarningFeedbackTypes as closure_7 } from "handleConnectionOpen" /* 10874 */;
+import LOCATION_CONTEXT_MOBILE from "LOCATION_CONTEXT_MOBILE" /* 11220 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

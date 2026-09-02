@@ -1,20 +1,20 @@
-// Module ID: 8443
-// Function ID: 8444
+// Module ID: 8452
+// Function ID: 8453
 // Name: findCommandInSection
-// Dependencies: [32, 19, 1909, 8146, 4952, 676, 7266, 8154, 589, 8156, 1471, 1955, 8151, 8430, 7268, 2]
+// Dependencies: [32, 19, 1908, 8154, 4952, 673, 7275, 8162, 586, 8164, 1470, 1954, 8159, 8439, 7277, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 8443 (findCommandInSection)
-import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7268 */;
-import ScoreMethod from "ScoreMethod" /* 8154 */;
-import getOptionValue from "getOptionValue" /* 8156 */;
+// Module 8452 (findCommandInSection)
+import ApplicationCommandSectionType from "ApplicationCommandSectionType" /* 7277 */;
+import ScoreMethod from "ScoreMethod" /* 8162 */;
+import getOptionValue from "getOptionValue" /* 8164 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import getIndexKey from "getIndexKey" /* 8146 */;
-import closure_10 from "getIndexKey" /* 8146 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
+import getIndexKey from "getIndexKey" /* 8154 */;
+import closure_10 from "getIndexKey" /* 8154 */;
 import { BuiltInSectionId } from "TRUE_OPTION_NAME" /* 4952 */;
-import { NOOP } from "ME" /* 676 */;
+import { NOOP } from "ME" /* 673 */;
 
 require = arg1;
 function findCommandInSection(found, commandId) {
@@ -39,7 +39,7 @@ function findCommandInSection(found, commandId) {
       }
       let command;
       if (null != rootCommand) {
-        obj = _require(7266);
+        obj = _require(7275);
         obj = { rootCommand: null, command: null, applicationId: null };
         obj[0] = rootCommand;
         obj[1] = rootCommand;
@@ -66,7 +66,7 @@ let result = require("set").fileFinishedImporting("modules/application_commands/
 export const getCachedCommand = function getCachedCommand(type, commandId, applicationId) {
   closure_0 = applicationId;
   if (null == commandId) {
-    return { application: "method", command: "T", section: "Map" };
+    return { application: "items", command: "call", section: "Promise" };
   } else {
     const userState = authStore.getUserState();
     const result2 = userState.result;
@@ -123,7 +123,7 @@ export const getCachedCommand = function getCachedCommand(type, commandId, appli
         }
       }
     }
-    return { application: "method", command: "T", section: "Map" };
+    return { application: "items", command: "call", section: "Promise" };
   }
 };
 export const getCachedApplicationSection = function getCachedApplicationSection(type, CHAT, applicationId) {
@@ -199,7 +199,7 @@ export const useCachedResults = function useCachedResults(arg0, CHAT, text) {
     }, items),
     text
   };
-  obj = { scoreMethod: _require(8154).ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
+  obj = { scoreMethod: _require(8162).ScoreMethod.COMMAND_OR_APPLICATION, allowFetch: false };
   const tmp = callback2(arg0, obj, obj);
   obj = { commands: tmp.commands, sections: tmp.descriptors };
   return obj;
@@ -457,7 +457,7 @@ export const useCommand = function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "children", application: "c" };
+    return { command: "disabled", application: "Date" };
   }, items);
 };
 export const useCommandsForApplication = function useCommandsForApplication(arg0, arg1, arg2) {

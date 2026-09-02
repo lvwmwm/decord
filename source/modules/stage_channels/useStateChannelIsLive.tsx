@@ -1,11 +1,11 @@
-// Module ID: 8667
-// Function ID: 8668
+// Module ID: 8682
+// Function ID: 8683
 // Name: useStageChannelIsLive
-// Dependencies: [1392, 589, 2]
+// Dependencies: [1391, 586, 2]
 // Exports: default
 
-// Module 8667 (useStageChannelIsLive)
-import closure_2 from "handleStageInstanceCreateOrUpdate" /* 1392 */;
+// Module 8682 (useStageChannelIsLive)
+import closure_2 from "handleStageInstanceCreateOrUpdate" /* 1391 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useStateChannelIsLive.tsx");
@@ -14,5 +14,5 @@ export default function useStageChannelIsLive(arg0) {
   const _require = arg0;
   const items = [closure_2];
   const items1 = [arg0];
-  return _require(589).useStateFromStores(items, () => closure_1_2.isLive(closure_0), items1);
+  return _require(586).useStateFromStores(items, () => closure_1_2.isLive(closure_0), items1);
 };

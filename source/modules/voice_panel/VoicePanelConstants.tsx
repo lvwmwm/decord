@@ -1,11 +1,11 @@
-// Module ID: 11840
-// Function ID: 11841
+// Module ID: 12063
+// Function ID: 12064
 // Name: VoicePanelModes
-// Dependencies: [500, 2]
+// Dependencies: [1234, 2]
 // Exports: getAnalyticsNameForVoicePanelMode
 
-// Module 11840 (VoicePanelModes)
-import set from "set" /* 500 */;
+// Module 12063 (VoicePanelModes)
+import set from "set" /* 1234 */;
 
 let obj = { DISMISSED: "dismissed", PIP: "pip", PANEL: "panel" };
 obj = { mass: 0.5, damping: 80, stiffness: 200 };

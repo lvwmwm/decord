@@ -1,15 +1,15 @@
-// Module ID: 8447
-// Function ID: 8448
+// Module ID: 8456
+// Function ID: 8457
 // Name: updateGiftCode
-// Dependencies: [8448, 676, 4362, 4075, 4752, 709, 8477, 589, 2]
+// Dependencies: [8457, 673, 4362, 4074, 4752, 706, 8490, 586, 2]
 
-// Module 8447 (updateGiftCode)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import hooksDefault from "hooks" /* 4075 */;
+// Module 8456 (updateGiftCode)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import hooksDefault from "hooks" /* 4074 */;
 import _resolveGiftCode from "_resolveGiftCode" /* 4752 */;
-import closure_3 from "frozen" /* 8448 */;
-import ME from "ME" /* 676 */;
+import closure_3 from "frozen" /* 8457 */;
+import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 require = arg1;

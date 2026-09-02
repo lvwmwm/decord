@@ -1,12 +1,12 @@
-// Module ID: 8970
-// Function ID: 8971
-// Dependencies: [19, 4470, 21, 589, 4928, 8096, 712, 2]
+// Module ID: 8984
+// Function ID: 8985
+// Dependencies: [19, 4470, 21, 586, 4928, 8104, 709, 2]
 
-// Module 8970
-import initialize from "initialize" /* 589 */;
-import ThemesDefault from "Themes" /* 712 */;
+// Module 8984
+import initialize from "initialize" /* 586 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 4928 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8096 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8104 */;
 import closure_3 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import { jsx } from "jsxProd" /* 21 */;
 import importAllResult from "noop" /* 19 */;

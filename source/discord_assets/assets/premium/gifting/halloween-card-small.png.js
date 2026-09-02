@@ -1,9 +1,9 @@
-// Module ID: 10766
-// Function ID: 10767
+// Module ID: 10986
+// Function ID: 10987
 // Name: metadata
 // Dependencies: [2]
 
-// Module 10766 (metadata)
+// Module 10986 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/premium/gifting/halloween-card-small.png.js");

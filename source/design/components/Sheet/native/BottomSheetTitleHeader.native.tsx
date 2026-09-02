@@ -1,14 +1,14 @@
-// Module ID: 5621
-// Function ID: 5622
+// Module ID: 5629
+// Function ID: 5630
 // Name: RedesignBottomSheetTitleHeaderBase
-// Dependencies: [32, 19, 17, 21, 4478, 712, 1493, 4197, 4474, 5496, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 1492, 4197, 4474, 5504, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 5621 (RedesignBottomSheetTitleHeaderBase)
-import ThemesDefault from "Themes" /* 712 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
+// Module 5629 (RedesignBottomSheetTitleHeaderBase)
+import ThemesDefault from "Themes" /* 709 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
 import Text from "Text" /* 4474 */;
-import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5496 */;
+import useHeaderDebugOverlayDefault from "useHeaderDebugOverlay" /* 5504 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;

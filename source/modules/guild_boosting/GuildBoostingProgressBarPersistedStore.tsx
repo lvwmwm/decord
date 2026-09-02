@@ -1,11 +1,11 @@
-// Module ID: 15810
-// Function ID: 15811
+// Module ID: 16041
+// Function ID: 16042
 // Name: initialize
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 15810 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 16041 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let closure_0 = {};
 const PersistedStore = initializeDefault.PersistedStore;

@@ -1,13 +1,13 @@
 // Module ID: 4204
 // Function ID: 4205
 // Name: ManaContext
-// Dependencies: [2, 1351, 4205, 4206, 1356, 1357, 1352, 1358, 4207, 4208, 1359, 1360, 1361, 1362, 4209, 1365, 4262, 4295]
+// Dependencies: [2, 1350, 4205, 4206, 1355, 1356, 1351, 1357, 4207, 4208, 1358, 1359, 1360, 1361, 4209, 1364, 4262, 4295]
 
 // Module 4204 (ManaContext)
 import set from "set" /* 2 */;
 import context from "context" /* 4262 */;
 import isImage from "isImage" /* 4295 */;
-import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD" /* 1357 */;
+import LOW_SATURATION_THRESHOLD from "LOW_SATURATION_THRESHOLD" /* 1356 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/native.tsx");
 for (const key10018 in require("AccessibilityAnnouncer")) {

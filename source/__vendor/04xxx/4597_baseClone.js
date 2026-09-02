@@ -1,7 +1,7 @@
 // Module ID: 4597
 // Function ID: 4598
 // Name: baseClone
-// Dependencies: [606, 599, 4598, 4599, 770, 621, 4600, 4601, 4604, 4608, 4612, 4613, 4614, 775, 4620, 4622, 4624, 792, 4609, 616, 600, 4606]
+// Dependencies: [603, 596, 4598, 4599, 767, 618, 4600, 4601, 4604, 4608, 4612, 4613, 4614, 772, 4620, 4622, 4624, 789, 4609, 613, 597, 4606]
 
 // Module 4597 (baseClone)
 let obj = {};
@@ -37,8 +37,8 @@ function baseClone(arr) {
   closure_3 = arg5;
   if (!arg2) {
     {
-      if (_require(606)(arr)) {
-        const tmp10 = tmp32(599)(arr);
+      if (_require(603)(arr)) {
+        const tmp10 = tmp32(596)(arr);
         if (tmp10) {
           const tmp18 = tmp32(4598)(arr);
           closure_4 = tmp18;
@@ -47,12 +47,12 @@ function baseClone(arr) {
             return tmp32(4599)(arr, tmp18);
           }
         } else {
-          const tmp11 = tmp32(770)(arr);
+          const tmp11 = tmp32(767)(arr);
           let tmp12 = tmp11 == "[object Function]";
           if (!tmp12) {
             tmp12 = "[object GeneratorFunction]" == tmp11;
           }
-          if (tmp32(621)(arr)) {
+          if (tmp32(618)(arr)) {
             return tmp32(4600)(arr, tmp);
           } else {
             if (tmp11 != "[object Object]") {
@@ -91,7 +91,7 @@ function baseClone(arr) {
         }
         let obj3 = arg5;
         if (!arg5) {
-          const tmp21 = new tmp32(775)();
+          const tmp21 = new tmp32(772)();
           closure_3 = tmp21;
           obj3 = tmp21;
         }
@@ -112,13 +112,13 @@ function baseClone(arr) {
           if (!tmp3) {
             let tmp29;
             if (!tmp10) {
-              tmp29 = tmp32(tmp2 ? 4609 : 616)(arr);
+              tmp29 = tmp32(tmp2 ? 4609 : 613)(arr);
             }
             closure_5 = tmp29;
             if (!tmp29) {
               tmp29 = arr;
             }
-            tmp32(600)(tmp29, (arg0, arg1) => {
+            tmp32(597)(tmp29, (arg0, arg1) => {
               let tmp = arg1;
               let tmp2 = arg0;
               if (closure_5) {

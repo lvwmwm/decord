@@ -1,12 +1,12 @@
-// Module ID: 6400
-// Function ID: 6401
+// Module ID: 6409
+// Function ID: 6410
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6400 (metadata)
+// Module 6409 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChestAndGemSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/53ba573085f1ebc6fb4f3b79ae9ee511a52a02706514b546e7bd62dfedb21dd1.png";
-export const metadata = { fileBytes: 24368 };
+export default "https://cdn.discordapp.com/assets/content/b4011882f0bc3746047b47b8dbaa84748b3fd14abf3dde2aef428229fb67869b.png";
+export const metadata = { fileBytes: 24215 };

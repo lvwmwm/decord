@@ -1,13 +1,13 @@
-// Module ID: 7274
-// Function ID: 7275
+// Module ID: 7283
+// Function ID: 7284
 // Name: handleConnectionReset
-// Dependencies: [5221, 589, 692, 709, 2]
+// Dependencies: [5229, 586, 689, 706, 2]
 
-// Module 7274 (handleConnectionReset)
-import initializeDefault from "initialize" /* 589 */;
-import set2 from "set" /* 692 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_2 from "_handleConnectionOpen" /* 5221 */;
+// Module 7283 (handleConnectionReset)
+import initializeDefault from "initialize" /* 586 */;
+import set2 from "set" /* 689 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_2 from "_handleConnectionOpen" /* 5229 */;
 import set from "set" /* 2 */;
 
 require = arg1;

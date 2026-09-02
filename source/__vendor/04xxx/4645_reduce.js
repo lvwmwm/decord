@@ -1,16 +1,16 @@
 // Module ID: 4645
 // Function ID: 4646
 // Name: reduce
-// Dependencies: [599, 4646, 4647, 720, 601]
+// Dependencies: [596, 4646, 4647, 717, 598]
 
 // Module 4645 (reduce)
-import _mod599 from "module_599" /* 599 */;
-import baseForOwn from "baseForOwn" /* 601 */;
-import baseIteratee from "baseIteratee" /* 720 */;
+import _mod596 from "module_596" /* 596 */;
+import baseForOwn from "baseForOwn" /* 598 */;
+import baseIteratee from "baseIteratee" /* 717 */;
 
 
 export default function reduce(arg0, arg1, arg2) {
-  if (_mod599(arg0)) {
+  if (_mod596(arg0)) {
     let tmpResult = tmp(4646);
   } else {
     tmpResult = tmp(4647);

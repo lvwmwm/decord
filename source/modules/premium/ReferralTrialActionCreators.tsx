@@ -1,17 +1,17 @@
-// Module ID: 7198
-// Function ID: 7199
+// Module ID: 7207
+// Function ID: 7208
 // Name: _fetchReferralEligibleUsers
-// Dependencies: [5, 7199, 1935, 1981, 676, 530, 709, 1208, 7201, 2]
+// Dependencies: [5, 7208, 1934, 1980, 673, 527, 706, 1205, 7210, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, resolveReferralTrialOffer
 
-// Module 7198 (_fetchReferralEligibleUsers)
-import sendRequest from "sendRequest" /* 530 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7207 (_fetchReferralEligibleUsers)
+import sendRequest from "sendRequest" /* 527 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createFromServer" /* 7199 */;
-import closure_5 from "createdAt" /* 1935 */;
-import closure_6 from "handleConnectionOpen" /* 1981 */;
-import ME from "ME" /* 676 */;
+import closure_4 from "createFromServer" /* 7208 */;
+import closure_5 from "createdAt" /* 1934 */;
+import closure_6 from "handleConnectionOpen" /* 1980 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function _fetchReferralEligibleUsers() {
@@ -198,7 +198,7 @@ function _createReferralTrials() {
               c6 = 1;
               let tmp28 = store;
               let tmp29 = dependencyMap;
-              obj1 = store(1208);
+              obj1 = store(1205);
               let tmp30 = closure_5;
               let captureExceptionResult = obj1.captureException(closure_5);
               let tmp32 = store;
@@ -255,7 +255,7 @@ function _createReferralTrials() {
             let tmp49 = fromServer;
             let tmp50 = store;
             let tmp51 = dependencyMap;
-            let obj4 = store(709);
+            let obj4 = store(706);
             obj1 = { type: "CREATE_REFERRALS_SUCCESS", userTrialOffers: null };
             let tmp52 = arr;
             obj1[1] = arr;
@@ -272,7 +272,7 @@ function _createReferralTrials() {
             c6 = 2;
             let tmp44 = arr;
             let tmp45 = dependencyMap;
-            let HTTP = arr(530).HTTP;
+            let HTTP = arr(527).HTTP;
             let obj3 = { url: null, oldFormErrors: true, rejectWithError: true };
             let tmp46 = c8;
             let tmp47 = dependencyMap;
@@ -312,12 +312,12 @@ function _createReferralTrial() {
       obj1[0] = closure_1_8.CREATE_REFERRAL(lib);
       yield HTTP.post(obj1);
       c4 = 0;
-      let obj5 = fromServer(709);
+      let obj5 = fromServer(706);
       obj5.dispatch({ type: "BILLING_CREATE_REFERRAL_FAIL" });
       if (closure_3.body.code === constants.INVALID_MESSAGE_SEND_USER) {
         dependencyMap = currentlySelectedChannelId.getCurrentlySelectedChannelId();
         if (null != dependencyMap) {
-          const obj6 = fromServer(7201);
+          const obj6 = fromServer(7210);
           obj6.sendClydeError(dependencyMap, closure_3.body.code);
         }
       }
@@ -327,7 +327,7 @@ function _createReferralTrial() {
         fromServer = c4.createFromServer(lib.body);
       }
       if (null != fromServer) {
-        obj = fromServer(709);
+        obj = fromServer(706);
         const obj4 = { type: "BILLING_CREATE_REFERRAL_SUCCESS", userTrialOffer: null };
         obj4[1] = fromServer;
         obj.dispatch(obj4);
@@ -432,7 +432,7 @@ obj.expiration = Date.now() + 600000;
 let map = new Map();
 let result = require("set").fileFinishedImporting("modules/premium/ReferralTrialActionCreators.tsx");
 
-export const ReferralOfferStatus = { REDEEMED: 1, [1]: "REDEEMED", PENDING: 2, [2]: "PENDING", CONVERTED: 3, [3]: "CONVERTED" };
+export const ReferralOfferStatus = { REDEEMED: 1, [1]: "REDEEMED", PENDING: 2, [2]: "PENDING", CONVERTED: 3, [3]: "CONVERTED", REFERRER_REWARD_GRANTED: 4, [4]: "REFERRER_REWARD_GRANTED" };
 export const CreateReferralStatus = obj;
 export const fetchReferralEligibleUsers = function fetchReferralEligibleUsers(closure_0, closure_02, closure_1) {
   const self = this;
@@ -510,8 +510,8 @@ export const fetchReferralsRemaining = function fetchReferralsRemaining() {
       status = status.status;
     }
     if (404 !== status) {
-      callback(709).dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL" });
-      obj = callback(709);
+      callback(706).dispatch({ type: "BILLING_REFERRALS_REMAINING_FETCH_FAIL" });
+      obj = callback(706);
     }
   });
 };

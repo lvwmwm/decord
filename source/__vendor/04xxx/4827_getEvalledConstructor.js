@@ -1,10 +1,10 @@
 // Module ID: 4827
 // Function ID: 4828
 // Name: getEvalledConstructor
-// Dependencies: [540, 4775]
+// Dependencies: [537, 4775]
 
 // Module 4827 (getEvalledConstructor)
-import getEvalledConstructor from "getEvalledConstructor" /* 540 */;
+import getEvalledConstructor from "getEvalledConstructor" /* 537 */;
 import isPrimitive from "isPrimitive" /* 4775 */;
 
 let closure_2 = getEvalledConstructor("%Object.isExtensible%", true);

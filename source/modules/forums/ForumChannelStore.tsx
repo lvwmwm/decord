@@ -1,12 +1,12 @@
-// Module ID: 11573
-// Function ID: 11574
+// Module ID: 11796
+// Function ID: 11797
 // Name: set
-// Dependencies: [1387, 1397, 1396, 1398, 705, 38, 7516, 644, 589, 2]
+// Dependencies: [1386, 1396, 1395, 1397, 702, 38, 7526, 641, 586, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 11573 (set)
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import keys from "keys" /* 644 */;
+// Module 11796 (set)
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import keys from "keys" /* 641 */;
 import set from "set" /* 2 */;
 
 const require = arg1;

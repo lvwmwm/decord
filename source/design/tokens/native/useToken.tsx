@@ -1,12 +1,12 @@
 // Module ID: 4197
 // Function ID: 4198
 // Name: map
-// Dependencies: [712, 4198, 12, 4204, 2]
+// Dependencies: [709, 4198, 12, 4204, 2]
 // Exports: useToken
 
 // Module 4197 (map)
 import applyDefault from "apply" /* 12 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import getSemanticColorContextFromThemeContext from "getSemanticColorContextFromThemeContext" /* 4198 */;
 import ManaContext from "ManaContext" /* 4204 */;
 
@@ -54,7 +54,7 @@ export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
     const internal2 = ThemesDefault.internal;
     let semanticColorName = BACKGROUND_BASE_LOW;
     if (internal2.isSemanticColor(BACKGROUND_BASE_LOW)) {
-      const internal3 = tmp6(712).internal;
+      const internal3 = tmp6(709).internal;
       semanticColorName = internal3.getSemanticColorName(BACKGROUND_BASE_LOW);
     }
     const _HermesInternal = HermesInternal;
@@ -72,17 +72,17 @@ export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
       if ("#" !== BACKGROUND_BASE_LOW[0]) {
         semanticColor = value;
         if (BACKGROUND_BASE_LOW in closure_4) {
-          const internal5 = tmp6(712).internal;
+          const internal5 = tmp6(709).internal;
           obj = getSemanticColorContextFromThemeContext;
           result = obj.getSemanticColorContextFromThemeContext(themeContext);
-          semanticColor = internal5.resolveSemanticColor(theme, tmp6(712).colors[tmp15[BACKGROUND_BASE_LOW]], result);
+          semanticColor = internal5.resolveSemanticColor(theme, tmp6(709).colors[tmp15[BACKGROUND_BASE_LOW]], result);
         }
       }
     } else {
-      const internal6 = tmp6(712).internal;
+      const internal6 = tmp6(709).internal;
       semanticColor = value;
       if (internal6.isSemanticColor(BACKGROUND_BASE_LOW)) {
-        const internal4 = tmp6(712).internal;
+        const internal4 = tmp6(709).internal;
         semanticColor = internal4.resolveSemanticColor(theme, BACKGROUND_BASE_LOW, getSemanticColorContextFromThemeContext.getSemanticColorContextFromThemeContext(themeContext));
         const objResult = getSemanticColorContextFromThemeContext;
       }

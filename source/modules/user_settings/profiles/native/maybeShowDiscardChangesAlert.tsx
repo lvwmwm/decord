@@ -1,12 +1,12 @@
-// Module ID: 9215
-// Function ID: 9216
+// Module ID: 9229
+// Function ID: 9230
 // Name: maybeShowDiscardChangesAlert
-// Dependencies: [4858, 1236, 2]
+// Dependencies: [4858, 1233, 2]
 // Exports: default, showDiscardChangesAlert
 
-// Module 9215 (maybeShowDiscardChangesAlert)
+// Module 9229 (maybeShowDiscardChangesAlert)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import _modDef4858 from "module_4858" /* 4858 */;
 
 const result = set.fileFinishedImporting("modules/user_settings/profiles/native/maybeShowDiscardChangesAlert.tsx");

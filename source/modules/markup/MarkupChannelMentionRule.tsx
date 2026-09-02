@@ -1,23 +1,23 @@
 // Module ID: 4959
 // Function ID: 4960
 // Name: getChannel
-// Dependencies: [1983, 1387, 1909, 4121, 4130, 1922, 676, 1902, 1431, 1236, 4960, 4666, 4674, 4961, 4675, 4958, 4192, 2]
+// Dependencies: [1982, 1386, 1908, 4120, 4130, 1921, 673, 1901, 1430, 1233, 4960, 4666, 4674, 4961, 4675, 4958, 4192, 2]
 // Exports: getGuildIdFromChannelId
 
 // Module 4959 (getChannel)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import isNullOrEmpty from "isNullOrEmpty" /* 1902 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import isNullOrEmpty from "isNullOrEmpty" /* 1901 */;
 import tDefault from "t" /* 4192 */;
 import ME2 from "ME" /* 4675 */;
 import textRegexpDefault from "textRegexp" /* 4958 */;
-import closure_3 from "isSubscriptionGated" /* 1983 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_3 from "isSubscriptionGated" /* 1982 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function getChannel(id, arr) {
@@ -130,7 +130,7 @@ function parseChannel(canViewChannel) {
           obj.content = items3;
           let obj6 = obj;
         } else if (null != arg3) {
-          const obj4 = { type: "link", content: null, target: null, title: "category" };
+          const obj4 = { type: "link", content: null, target: null, title: "call" };
           const obj5 = { type: "text", content: null };
           obj5[1] = arg3;
           const items4 = [obj5];
@@ -183,7 +183,7 @@ function parseChannel(canViewChannel) {
                 }
                 const obj13 = { inContent: null, content: null };
                 const obj14 = { type: "text", content: null };
-                obj14[1] = tmp35(1902).truncateText(channelName, 32);
+                obj14[1] = tmp35(1901).truncateText(channelName, 32);
                 const obj15 = { type: "channel", content: null, channelType: null, iconType: null };
                 const items7 = [obj14];
                 obj15[1] = items7;
@@ -194,7 +194,7 @@ function parseChannel(canViewChannel) {
                 const items9 = [obj11];
                 obj13[1] = items9;
                 let obj17 = obj13;
-                const tmp35Result1 = tmp35(1902);
+                const tmp35Result1 = tmp35(1901);
               }
             }
             const obj16 = { inContent: null, content: null };
@@ -335,7 +335,7 @@ obj = {
   parse(arg0, arg1, channelId) {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     if (null == tmp3) {
-      let obj = { type: "link", content: null, target: null, title: "category" };
+      let obj = { type: "link", content: null, target: null, title: "call" };
       obj = { type: "text", content: null };
       obj[1] = tmp;
       const items = [obj];
@@ -410,7 +410,7 @@ obj[2] = {
       }
     }
     const content = [{ type: "text", content: target }];
-    return { type: "link", content, target, title: "category" };
+    return { type: "link", content, target, title: "call" };
   }
 };
 let obj1 = {
@@ -457,7 +457,7 @@ let obj1 = {
       }
     }
     const content = [{ type: "text", content: target }];
-    return { type: "link", content, target, title: "category" };
+    return { type: "link", content, target, title: "call" };
   }
 };
 const result = require("set").fileFinishedImporting("modules/markup/MarkupChannelMentionRule.tsx");

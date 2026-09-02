@@ -1,13 +1,13 @@
-// Module ID: 5105
-// Function ID: 5106
+// Module ID: 5113
+// Function ID: 5114
 // Name: toString
-// Dependencies: [1304, 3, 2]
+// Dependencies: [1303, 3, 2]
 // Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata, shouldUseHEVC
 
-// Module 5105 (toString)
+// Module 5113 (toString)
 import set from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
-import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
+import CHANNEL_SIDEBAR_WIDTH from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
 
 const VideoCompressionQuality = CHANNEL_SIDEBAR_WIDTH.VideoCompressionQuality;
 let closure_1 = new timestampDefault("VideoUploadUtils.tsx");

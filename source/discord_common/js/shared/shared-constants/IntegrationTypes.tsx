@@ -1,9 +1,9 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17420
+// Function ID: 17421
 // Name: set
 // Dependencies: [2]
 
-// Module 17184 (set)
+// Module 17420 (set)
 import set from "set" /* 2 */;
 
 const obj = { SYNCABLE: null };

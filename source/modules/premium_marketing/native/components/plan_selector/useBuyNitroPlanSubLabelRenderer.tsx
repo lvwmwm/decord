@@ -1,12 +1,12 @@
-// Module ID: 13066
-// Function ID: 13067
+// Module ID: 13288
+// Function ID: 13289
 // Name: useBuyNitroPlanSubLabelRenderer
-// Dependencies: [19, 1924, 21, 13047, 2]
+// Dependencies: [19, 1923, 21, 13269, 2]
 // Exports: useBuyNitroPlanSubLabelRenderer
 
-// Module 13066 (useBuyNitroPlanSubLabelRenderer)
+// Module 13288 (useBuyNitroPlanSubLabelRenderer)
 import closure_2 from "noop" /* 19 */;
-import { PRICE_PLACEHOLDER } from "GuildFeatures" /* 1924 */;
+import { PRICE_PLACEHOLDER } from "GuildFeatures" /* 1923 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const result = require("set").fileFinishedImporting("modules/premium_marketing/native/components/plan_selector/useBuyNitroPlanSubLabelRenderer.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 14534
-// Function ID: 14535
+// Module ID: 14757
+// Function ID: 14758
 // Name: route
-// Dependencies: [7884, 676, 11068, 1236, 2369, 14535, 2]
+// Dependencies: [7893, 673, 11288, 1233, 2368, 14758, 2]
 
-// Module 14534 (route)
+// Module 14757 (route)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2369 */;
-import MobileUserSettings from "MobileUserSettings" /* 7884 */;
-import createToggle from "createToggle" /* 11068 */;
+import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2368 */;
+import MobileUserSettings from "MobileUserSettings" /* 7893 */;
+import createToggle from "createToggle" /* 11288 */;
 
 obj = {
   useTitle() {
@@ -23,7 +23,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.FAMILY_CENTER_PARENTAL_CONTROLS,
   getComponent() {
-    return require(14535) /* FamilyCenterParentalControlsSettings */.default;
+    return require(14758) /* FamilyCenterParentalControlsSettings */.default;
   }
 };
 const route = createToggle.createRoute(obj);

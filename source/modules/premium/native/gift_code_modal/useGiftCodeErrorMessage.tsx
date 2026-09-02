@@ -1,13 +1,13 @@
-// Module ID: 8487
-// Function ID: 8488
+// Module ID: 8500
+// Function ID: 8501
 // Name: useGiftCodeErrorMessage
-// Dependencies: [32, 7303, 8447, 589, 1236, 4752, 2]
+// Dependencies: [32, 7312, 8456, 586, 1233, 4752, 2]
 // Exports: default
 
-// Module 8487 (useGiftCodeErrorMessage)
+// Module 8500 (useGiftCodeErrorMessage)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "map" /* 7303 */;
-import closure_4 from "updateGiftCode" /* 8447 */;
+import closure_3 from "map" /* 7312 */;
+import closure_4 from "updateGiftCode" /* 8456 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/native/gift_code_modal/useGiftCodeErrorMessage.tsx");

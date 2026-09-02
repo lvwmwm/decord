@@ -1,9 +1,9 @@
-// Module ID: 13474
-// Function ID: 13475
+// Module ID: 13697
+// Function ID: 13698
 // Name: start
-// Dependencies: [7487, 4579, 12, 2]
+// Dependencies: [7497, 4579, 12, 2]
 
-// Module 13474 (start)
+// Module 13697 (start)
 import set from "set" /* 2 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
 

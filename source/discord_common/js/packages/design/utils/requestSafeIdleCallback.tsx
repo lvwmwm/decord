@@ -1,12 +1,12 @@
-// Module ID: 696
-// Function ID: 697
+// Module ID: 693
+// Function ID: 694
 // Name: setOriginWindow
-// Dependencies: [697, 2]
+// Dependencies: [694, 2]
 // Exports: requestSafeIdleCallback, setOriginWindow
 
-// Module 696 (setOriginWindow)
+// Module 693 (setOriginWindow)
 import set from "set" /* 2 */;
-import getGlobalObject from "getGlobalObject" /* 697 */;
+import getGlobalObject from "getGlobalObject" /* 694 */;
 
 const globalObject = getGlobalObject.getGlobalObject();
 const result = set.fileFinishedImporting("../discord_common/js/packages/design/utils/requestSafeIdleCallback.tsx");

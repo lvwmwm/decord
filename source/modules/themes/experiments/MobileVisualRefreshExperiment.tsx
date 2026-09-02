@@ -1,11 +1,11 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15844
+// Function ID: 15845
 // Name: useIsMobileVisualRefreshExperimentEnabled
-// Dependencies: [1469, 2]
+// Dependencies: [1468, 2]
 // Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig
 
-// Module 15613 (useIsMobileVisualRefreshExperimentEnabled)
-import getUnitIdDefault from "getUnitId" /* 1469 */;
+// Module 15844 (useIsMobileVisualRefreshExperimentEnabled)
+import getUnitIdDefault from "getUnitId" /* 1468 */;
 
 const tmp2 = getUnitIdDefault({ kind: "user", name: "2026-02-mobile-visual-refresh", defaultConfig: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, variations: { 0: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, 1: { enabled: true, chatInputFloating: false, chatInputLegacySendButton: false }, 2: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, 3: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, 4: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: true } } });
 let closure_0 = tmp2;

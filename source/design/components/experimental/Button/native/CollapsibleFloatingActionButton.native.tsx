@@ -1,12 +1,12 @@
-// Module ID: 8990
-// Function ID: 8991
+// Module ID: 9004
+// Function ID: 9005
 // Name: CollapsableButton
-// Dependencies: [19, 21, 4933, 4478, 4217, 4927, 4931, 4929, 8991, 712, 2]
+// Dependencies: [19, 21, 4933, 4478, 4217, 4927, 4931, 4929, 9005, 709, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 8990 (CollapsableButton)
-import ThemesDefault from "Themes" /* 712 */;
-import styles2 from "styles" /* 8991 */;
+// Module 9004 (CollapsableButton)
+import ThemesDefault from "Themes" /* 709 */;
+import styles2 from "styles" /* 9005 */;
 import closure_3 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4933 */;
@@ -66,11 +66,11 @@ export const CollapsibleFloatingActionButton = function CollapsibleFloatingActio
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(8991).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(9005).DEFAULT_POSITION_OFFSET;
   }
   obj = { position: "absolute", right: positionRight, bottom: null };
   if (positionBottom == null) {
-    positionBottom = tmp3(8991).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(9005).DEFAULT_POSITION_OFFSET;
   }
   obj[2] = positionBottom;
   items[1] = obj;

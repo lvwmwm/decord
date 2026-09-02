@@ -1,13 +1,13 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 16139
+// Function ID: 16140
 // Name: useIsHomeDrawerChannelMuted
-// Dependencies: [4123, 1391, 4701, 589, 2]
+// Dependencies: [4122, 1390, 4701, 586, 2]
 // Exports: useIsHomeDrawerChannelMuted
 
-// Module 15908 (useIsHomeDrawerChannelMuted)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "storeThread" /* 4123 */;
-import { isThread } from "createChannelRecord" /* 1391 */;
+// Module 16139 (useIsHomeDrawerChannelMuted)
+import initialize from "initialize" /* 586 */;
+import closure_2 from "storeThread" /* 4122 */;
+import { isThread } from "createChannelRecord" /* 1390 */;
 import closure_4 from "updateUserGuildSettingsInternal" /* 4701 */;
 
 require = arg1;

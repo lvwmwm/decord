@@ -1,18 +1,18 @@
-// Module ID: 12530
-// Function ID: 12531
+// Module ID: 12754
+// Function ID: 12755
 // Name: useCanPurchaseFrames
-// Dependencies: [1922, 1924, 8544, 12531, 1946, 1930, 589, 2]
+// Dependencies: [1921, 1923, 8557, 12755, 1945, 1929, 586, 2]
 // Exports: default, isUserPaidTier2, useCanViewProfileFramesInCollectiblesShop, useIsProfileFramesEarlyAccessPhase
 
-// Module 12530 (useCanPurchaseFrames)
-import initialize from "initialize" /* 589 */;
-import create from "create" /* 1930 */;
-import isPremiumAtLeast from "isPremiumAtLeast" /* 1946 */;
-import apexExperiment from "apexExperiment" /* 8544 */;
-import apexExperiment2 from "apexExperiment" /* 12531 */;
-import apexExperimentDefault from "apexExperiment" /* 12531 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+// Module 12754 (useCanPurchaseFrames)
+import initialize from "initialize" /* 586 */;
+import create from "create" /* 1929 */;
+import isPremiumAtLeast from "isPremiumAtLeast" /* 1945 */;
+import apexExperiment from "apexExperiment" /* 8557 */;
+import apexExperiment2 from "apexExperiment" /* 12755 */;
+import apexExperimentDefault from "apexExperiment" /* 12755 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useCanPurchaseFrames.tsx");

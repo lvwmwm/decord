@@ -1,10 +1,10 @@
-// Module ID: 16914
-// Function ID: 16915
+// Module ID: 17150
+// Function ID: 17151
 // Name: experiment
 // Dependencies: [4392, 4389, 2]
 // Exports: isPastVcActivityMessagesEnabled, useIsPastVcActivityMessagesEnabled
 
-// Module 16914 (experiment)
+// Module 17150 (experiment)
 import set from "set" /* 2 */;
 import ExperimentBuckets from "ExperimentBuckets" /* 4392 */;
 import createExperiment from "createExperiment" /* 4389 */;

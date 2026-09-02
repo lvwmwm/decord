@@ -1,14 +1,14 @@
-// Module ID: 6313
-// Function ID: 6314
+// Module ID: 6322
+// Function ID: 6323
 // Name: AvatarCamExample
-// Dependencies: [21, 5493, 6314, 2]
+// Dependencies: [21, 5501, 6323, 2]
 // Exports: AvatarCamExample
 
-// Module 6313 (AvatarCamExample)
+// Module 6322 (AvatarCamExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6314 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6323 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarCamExample.native.tsx");

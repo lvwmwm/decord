@@ -1,13 +1,13 @@
-// Module ID: 1392
-// Function ID: 1393
+// Module ID: 1391
+// Function ID: 1392
 // Name: handleStageInstanceCreateOrUpdate
-// Dependencies: [1393, 589, 709, 2]
+// Dependencies: [1392, 586, 706, 2]
 
-// Module 1392 (handleStageInstanceCreateOrUpdate)
+// Module 1391 (handleStageInstanceCreateOrUpdate)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1393 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import GUILD_EVENT_MAX_NAME_LENGTH from "GUILD_EVENT_MAX_NAME_LENGTH" /* 1392 */;
 
 function handleStageInstanceCreateOrUpdate(instance) {
   instance = instance.instance;

@@ -1,10 +1,10 @@
-// Module ID: 12504
-// Function ID: 12505
+// Module ID: 12728
+// Function ID: 12729
 // Name: usePageHeights
-// Dependencies: [32, 19, 4217, 1493, 1628, 2]
+// Dependencies: [32, 19, 4217, 1492, 1627, 2]
 // Exports: usePageHeights, usePagerFillHeight, usePagesHeightStyle
 
-// Module 12504 (usePageHeights)
+// Module 12728 (usePageHeights)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 
@@ -35,8 +35,8 @@ export const usePageHeights = function usePageHeights() {
   return obj;
 };
 export const usePagerFillHeight = function usePagerFillHeight() {
-  const height = bottom(1493)().height;
-  bottom = bottom(1628)().bottom;
+  const height = bottom(1492)().height;
+  bottom = bottom(1627)().bottom;
   const tmp = ref(React.useState(0), 2);
   dependencyMap = tmp[1];
   ref = React.useRef(null);

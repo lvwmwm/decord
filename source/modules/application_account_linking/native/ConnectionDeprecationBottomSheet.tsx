@@ -1,23 +1,23 @@
-// Module ID: 16520
-// Function ID: 16521
+// Module ID: 16755
+// Function ID: 16756
 // Name: ConnectionIcon
-// Dependencies: [19, 17, 4519, 5225, 1384, 21, 4478, 712, 4204, 1628, 589, 5227, 5956, 5953, 5973, 16521, 4445, 16523, 2009, 5621, 5622, 4926, 16509, 4474, 1236, 2983, 10754, 4928, 12820, 1364, 1431, 4930, 5963, 5959, 2]
+// Dependencies: [19, 17, 4519, 5233, 1383, 21, 4478, 709, 4204, 1627, 586, 5235, 5964, 5961, 5981, 16756, 4445, 16758, 2008, 5629, 5630, 4926, 16744, 4474, 1233, 2982, 10974, 4928, 13041, 1363, 1430, 4930, 5971, 5967, 2]
 // Exports: default, useShouldShowConnectionDeprecationBottomSheet
 
-// Module 16520 (ConnectionIcon)
-import ThemesDefault from "Themes" /* 712 */;
-import isThemeLight from "isThemeLight" /* 1364 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
+// Module 16755 (ConnectionIcon)
+import ThemesDefault from "Themes" /* 709 */;
+import isThemeLight from "isThemeLight" /* 1363 */;
+import getAvatarURL from "getAvatarURL" /* 1430 */;
 import IconSizes from "IconSizes" /* 4930 */;
 import IconSizesDefault from "IconSizes" /* 4930 */;
-import useStartAuthorizeDefault from "useStartAuthorize" /* 5956 */;
-import GameIcon from "GameIcon" /* 5963 */;
-import GameIconDefault from "GameIcon" /* 5963 */;
+import useStartAuthorizeDefault from "useStartAuthorize" /* 5964 */;
+import GameIcon from "GameIcon" /* 5971 */;
+import GameIconDefault from "GameIcon" /* 5971 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "addApplication" /* 4519 */;
-import closure_6 from "set" /* 5225 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
+import closure_6 from "set" /* 5233 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -185,7 +185,7 @@ export default function ConnectionDeprecationBottomSheet(arg0) {
 export const useShouldShowConnectionDeprecationBottomSheet = function useShouldShowConnectionDeprecationBottomSheet(deprecatedPlatformTypes) {
   deprecatedPlatformTypes = deprecatedPlatformTypes.deprecatedPlatformTypes;
   const items = [closure_6];
-  const stateFromStoresObject = deprecatedPlatformTypes(589).useStateFromStoresObject(items, () => {
+  const stateFromStoresObject = deprecatedPlatformTypes(586).useStateFromStoresObject(items, () => {
     const obj = { fetchingConnections: closure_1_6.isFetching(), matchingPlatform: null };
     const accounts = closure_1_6.getAccounts();
     const mapped = accounts.map((type) => callback(table[11]).get(type.type));
@@ -203,7 +203,7 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
     return obj;
   });
   ({ fetchingConnections, matchingPlatform } = stateFromStoresObject);
-  let obj = deprecatedPlatformTypes(589);
+  let obj = deprecatedPlatformTypes(586);
   let replacedBy;
   if (matchingPlatform != null) {
     let migrationData = matchingPlatform.migrationData;
@@ -211,7 +211,7 @@ export const useShouldShowConnectionDeprecationBottomSheet = function useShouldS
       replacedBy = migrationData.replacedBy;
     }
   }
-  const getOrFetchApplication = deprecatedPlatformTypes(5959).useGetOrFetchApplication(replacedBy);
+  const getOrFetchApplication = deprecatedPlatformTypes(5967).useGetOrFetchApplication(replacedBy);
   const tmp5 = useStartAuthorizeDefault(getOrFetchApplication);
   ({ hasAlreadyLinked, canStartAuthorization } = tmp5);
   if (!fetchingConnections) {

@@ -1,10 +1,10 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 17755
+// Function ID: 17756
 // Name: promise
-// Dependencies: [1387, 4554, 17512, 5355, 4727, 4489, 2]
+// Dependencies: [1386, 4554, 17748, 5363, 4727, 4489, 2]
 
-// Module 17519 (promise)
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+// Module 17755 (promise)
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "createRTCConnection" /* 4554 */;
 
 const require = arg1;

@@ -1,10 +1,10 @@
-// Module ID: 11355
-// Function ID: 11356
+// Module ID: 11578
+// Function ID: 11579
 // Name: useOrderSigning
-// Dependencies: [5, 32, 19, 4460, 4161, 4154, 6090, 2]
+// Dependencies: [5, 32, 19, 4460, 4161, 4154, 6098, 2]
 // Exports: useOrderSigning
 
-// Module 11355 (useOrderSigning)
+// Module 11578 (useOrderSigning)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
@@ -104,7 +104,7 @@ export const useOrderSigning = function useOrderSigning(order) {
                 status = undefined;
                 v02 = 1;
                 v03 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 11681
-// Function ID: 11682
+// Module ID: 11904
+// Function ID: 11905
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4478, 11623, 8435, 1236, 1351, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 11846, 8444, 1233, 1350, 4474, 2]
 // Exports: default
 
-// Module 11681 (EmptyState)
+// Module 11904 (EmptyState)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -20,8 +20,8 @@ export default function EmptyState(showsGenericMessage) {
     flag = false;
   }
   const tmp = callback();
-  let obj = flag(11623);
-  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(8435).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
+  let obj = flag(11846);
+  const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(flag(8444).AppLauncherEmptyStateType.SEARCH_EMPTY, showsGenericMessage.query);
   const items = [flag];
   const effect = React.useEffect(() => {
     const intl = flag(closure_1_1[6]).intl;
@@ -38,9 +38,9 @@ export default function EmptyState(showsGenericMessage) {
   obj = { style: tmp.container, children: null };
   obj = { style: tmp.textContainer, children: null };
   obj1 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: null };
-  let intl = flag(1236).intl;
+  let intl = flag(1233).intl;
   let string = intl.string;
-  let t = flag(1236).t;
+  let t = flag(1233).t;
   if (flag) {
     let stringResult = string(t.aOkFv8);
   } else {

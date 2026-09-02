@@ -1,12 +1,12 @@
-// Module ID: 1493
-// Function ID: 1494
+// Module ID: 1492
+// Function ID: 1493
 // Name: useWindowDimensions
-// Dependencies: [19, 1494, 1496, 2]
+// Dependencies: [19, 1493, 1495, 2]
 // Exports: default, getWindowDimensions
 
-// Module 1493 (useWindowDimensions)
+// Module 1492 (useWindowDimensions)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "getDimensionsStoreStateForEntry" /* 1494 */;
+import closure_3 from "getDimensionsStoreStateForEntry" /* 1493 */;
 
 const require = arg1;
 let closure_4 = { ignoreKeyboard: false };

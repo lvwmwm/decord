@@ -1,18 +1,18 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11500
+// Function ID: 11501
 // Name: MessagePreview
-// Dependencies: [19, 17, 21, 4478, 712, 4413, 8035, 7841, 8779, 11278, 1955, 11279, 12, 11280, 1236, 11282, 10213, 5036, 10195, 5493, 1492, 8098, 4474, 2887, 8053, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4413, 8044, 7850, 8794, 11501, 1954, 11502, 12, 11503, 1233, 11505, 10235, 5040, 10217, 5501, 1491, 8106, 4474, 2886, 8061, 2]
 // Exports: ForwardPreview
 
-// Module 11277 (MessagePreview)
-import ThemesDefault from "Themes" /* 712 */;
-import getSrcWithWidthAndHeightDefault from "getSrcWithWidthAndHeight" /* 1492 */;
-import messagesProxyDefault from "messagesProxy" /* 2887 */;
+// Module 11500 (MessagePreview)
+import ThemesDefault from "Themes" /* 709 */;
+import getSrcWithWidthAndHeightDefault from "getSrcWithWidthAndHeight" /* 1491 */;
+import messagesProxyDefault from "messagesProxy" /* 2886 */;
 import useThemeDefault from "useTheme" /* 4413 */;
-import preloadDefault from "preload" /* 5493 */;
-import SolidCutoutDefault from "SolidCutout" /* 8098 */;
-import DCDChatItemDefault from "DCDChatItem" /* 8779 */;
-import useForwardPreviewContent from "useForwardPreviewContent" /* 11278 */;
+import preloadDefault from "preload" /* 5501 */;
+import SolidCutoutDefault from "SolidCutout" /* 8106 */;
+import DCDChatItemDefault from "DCDChatItem" /* 8794 */;
+import useForwardPreviewContent from "useForwardPreviewContent" /* 11501 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -23,9 +23,9 @@ function MessagePreview(content) {
   ({ message, attachmentCount } = content);
   importDefault = undefined;
   if (attachmentCount > 0) {
-    let TEXT_SUBTLE = tmp(712).colors.TEXT_DEFAULT;
+    let TEXT_SUBTLE = tmp(709).colors.TEXT_DEFAULT;
   } else {
-    TEXT_SUBTLE = tmp(712).colors.TEXT_SUBTLE;
+    TEXT_SUBTLE = tmp(709).colors.TEXT_SUBTLE;
   }
   let obj = attachmentCount(4478);
   const tmp4 = obj.createNativeStyleProperties({ seeMoreLabelColor: TEXT_SUBTLE })(useThemeDefault());
@@ -84,7 +84,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   let checkpointData = null;
   if (contentMessage.components.length > 0) {
     checkpointData = null;
-    if (contentMessage.components[0].type === tmp2(1955).ComponentType.CHECKPOINT_CARD) {
+    if (contentMessage.components[0].type === tmp2(1954).ComponentType.CHECKPOINT_CARD) {
       checkpointData = contentMessage.components[0].checkpointData;
     }
   }
@@ -94,7 +94,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     if (num == null) {
       num = 0;
     }
-    tmp6 = tmp2(11279).CHECKPOINT_PERSONA_COLORS[num];
+    tmp6 = tmp2(11502).CHECKPOINT_PERSONA_COLORS[num];
   }
   if (tmp6 != null) {
     const primaryColor = tmp6.primaryColor;
@@ -112,12 +112,12 @@ export const ForwardPreview = function ForwardPreview(message) {
     }
     if (num2 > 0) {
       if (num3 > 0) {
-        const intl4 = tmp2(1236).intl;
+        const intl4 = tmp2(1233).intl;
         obj = { image_count: null, video_count: null };
         obj[0] = num2;
         obj[1] = num3;
-        let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1236).t.Lr0Top, obj);
-        let AttachmentIcon = tmp2(11282).ImagesIcon;
+        let formatToPlainStringResult = intl4.formatToPlainString(tmp2(1233).t.Lr0Top, obj);
+        let AttachmentIcon = tmp2(11505).ImagesIcon;
       }
       if (num3 > 0) {
         if (length === num3) {
@@ -136,7 +136,7 @@ export const ForwardPreview = function ForwardPreview(message) {
           const items1 = [callback(preloadDefault, obj1), ];
           const obj3 = { style: null, size: "md", color: "white" };
           obj3[0] = tmp.playIcon;
-          items1[1] = callback(tmp2(10213).CirclePlayIcon, obj3);
+          items1[1] = callback(tmp2(10235).CirclePlayIcon, obj3);
           obj[1] = items1;
           let tmp7 = callback2(View, obj);
           let tmp8 = AttachmentIcon;
@@ -190,29 +190,29 @@ export const ForwardPreview = function ForwardPreview(message) {
       }
     }
     if (num3 > 0) {
-      const intl3 = tmp2(1236).intl;
+      const intl3 = tmp2(1233).intl;
       const obj10 = { count: null };
       obj10[0] = num3;
-      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1236).t.SJ6pPX, obj10);
-      AttachmentIcon = tmp2(10213).CirclePlayIcon;
+      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1233).t.SJ6pPX, obj10);
+      AttachmentIcon = tmp2(10235).CirclePlayIcon;
     } else if (num2 > 0) {
-      const intl2 = tmp2(1236).intl;
+      const intl2 = tmp2(1233).intl;
       const obj11 = { count: null };
       obj11[0] = num2;
       if (1 === num2) {
-        let ImagesIcon = tmp2(5036).ImageIcon;
+        let ImagesIcon = tmp2(5040).ImageIcon;
       } else {
-        ImagesIcon = tmp2(11282).ImagesIcon;
+        ImagesIcon = tmp2(11505).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
-      formatToPlainStringResult = intl2.formatToPlainString(tmp2(1236).t.h4pFfU, obj11);
-      const formatToPlainStringResult1 = intl2.formatToPlainString(tmp2(1236).t.h4pFfU, obj11);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp2(1233).t.h4pFfU, obj11);
+      const formatToPlainStringResult1 = intl2.formatToPlainString(tmp2(1233).t.h4pFfU, obj11);
     } else {
-      const intl = tmp2(1236).intl;
+      const intl = tmp2(1233).intl;
       const obj12 = { count: null };
       obj12[0] = length;
-      formatToPlainStringResult = intl.formatToPlainString(tmp2(1236).t["89ihS8"], obj12);
-      AttachmentIcon = tmp2(10195).AttachmentIcon;
+      formatToPlainStringResult = intl.formatToPlainString(tmp2(1233).t["89ihS8"], obj12);
+      AttachmentIcon = tmp2(10217).AttachmentIcon;
     }
   } else {
     tmp7 = null;
@@ -224,7 +224,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     tmp33 = tmp7;
     if (null != tmp7) {
       obj13 = { shape: null, x: 28, y: 28, width: 32, height: 32, cornerRadius: 12 };
-      obj13[0] = tmp2(8098).CutoutShape.RoundedRect;
+      obj13[0] = tmp2(8106).CutoutShape.RoundedRect;
       const obj14 = { style: null, children: null };
       obj14[0] = tmp.attachmentPreviewOverflow;
       const obj15 = { cutouts: null, children: null };
@@ -247,7 +247,7 @@ export const ForwardPreview = function ForwardPreview(message) {
   let tmp36Result = null != checkpointData;
   if (tmp36Result) {
     const obj20 = { variant: "text-md/medium", children: null };
-    const intl5 = tmp2(1236).intl;
+    const intl5 = tmp2(1233).intl;
     obj20[1] = intl5.string(messagesProxyDefault.goiR2u);
     tmp36Result = tmp36(tmp2(4474).Text, obj20);
   }
@@ -310,7 +310,7 @@ export const ForwardPreview = function ForwardPreview(message) {
     obj26[0] = obj27;
     obj26[1] = c7;
     obj26[2] = c7;
-    tmp2Result = tmp2(8053);
+    tmp2Result = tmp2(8061);
     let num5 = checkpointData.cardId;
     if (num5 == null) {
       num5 = 0;

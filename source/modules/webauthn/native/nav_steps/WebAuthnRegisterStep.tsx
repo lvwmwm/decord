@@ -1,16 +1,16 @@
-// Module ID: 14328
-// Function ID: 14329
+// Module ID: 14551
+// Function ID: 14552
 // Name: AndroidPasskeyRadioGroup
-// Dependencies: [32, 19, 17, 14311, 21, 4478, 712, 7722, 1236, 1297, 1499, 500, 14329, 5553, 14330, 4474, 5376, 4928, 2]
+// Dependencies: [32, 19, 17, 14534, 21, 4478, 709, 7731, 1233, 1296, 1498, 1234, 14552, 5561, 14553, 4474, 5384, 4928, 2]
 // Exports: default
 
-// Module 14328 (AndroidPasskeyRadioGroup)
-import ThemesDefault from "Themes" /* 712 */;
-import _promptForRegisterCredentialDefault from "_promptForRegisterCredential" /* 7722 */;
+// Module 14551 (AndroidPasskeyRadioGroup)
+import ThemesDefault from "Themes" /* 709 */;
+import _promptForRegisterCredentialDefault from "_promptForRegisterCredential" /* 7731 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { WebAuthnScreens } from "WebAuthnScreens" /* 14311 */;
+import { WebAuthnScreens } from "WebAuthnScreens" /* 14534 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -19,16 +19,16 @@ function AndroidPasskeyRadioGroup(onChange) {
   onChange = onChange.onChange;
   ({ authenticatorSelection, registering } = onChange);
   let obj = { value: obj1.PASSKEY_CREDENTIAL_MANAGER, name: null };
-  const intl = onChange(1236).intl;
-  obj[1] = intl.string(onChange(1236).t.JQbo8L);
+  const intl = onChange(1233).intl;
+  obj[1] = intl.string(onChange(1233).t.JQbo8L);
   const items = [obj, , ];
   obj = { value: obj1.PASSKEY_DEVICE, name: null };
-  const intl2 = onChange(1236).intl;
-  obj[1] = intl2.string(onChange(1236).t.GjBNMg);
+  const intl2 = onChange(1233).intl;
+  obj[1] = intl2.string(onChange(1233).t.GjBNMg);
   items[1] = obj;
   obj = { value: obj1.OTHER_AND_ANDROID_NONDISCOVERABLE, name: null };
-  const intl3 = onChange(1236).intl;
-  obj[1] = intl3.string(onChange(1236).t["OhC77+"]);
+  const intl3 = onChange(1233).intl;
+  obj[1] = intl3.string(onChange(1233).t["OhC77+"]);
   items[2] = obj;
   obj1 = {
     style: callback2().radioItem,
@@ -38,10 +38,10 @@ function AndroidPasskeyRadioGroup(onChange) {
     },
     value: authenticatorSelection,
     disabled: registering,
-    size: onChange(1297).RadioGroup.Sizes.LARGE,
+    size: onChange(1296).RadioGroup.Sizes.LARGE,
     withSpacing: true
   };
-  return callback(onChange(1297).RadioGroup, obj1);
+  return callback(onChange(1296).RadioGroup, obj1);
 }
 ({ jsx: error, jsxs: closure_8 } = jsxProd);
 createCacheKey = { flexContainer: { flex: 1, flexDirection: "column", alignItems: "stretch", justifyContent: "space-between", marginLeft: 16, marginRight: 16, marginTop: 16 }, centerFlex: { display: "flex", alignItems: "center" }, margin: { marginTop: 16, textAlign: "center" }, radioItem: null };
@@ -54,7 +54,7 @@ let obj2 = { [PASSKEY_CREDENTIAL_MANAGER]: _promptForRegisterCredentialDefault.r
 const result = require("set").fileFinishedImporting("modules/webauthn/native/nav_steps/WebAuthnRegisterStep.tsx");
 
 export default function WebAuthnRegisterStep() {
-  let obj = navigation(1499);
+  let obj = navigation(1498);
   navigation = obj.useNavigation();
   const tmp4 = callback2();
   obj1 = callback;
@@ -64,7 +64,7 @@ export default function WebAuthnRegisterStep() {
   const tmp6 = first(callback.useState(false), 2);
   [tmp10, tmp11] = first(callback.useState(""), 2);
   dependencyMap = tmp11;
-  obj2 = navigation(500);
+  obj2 = navigation(1234);
   const tmp5Result = tmp5(obj1.useState(obj2.isAndroid() ? obj1.PASSKEY_CREDENTIAL_MANAGER : obj1.OTHER_AND_ANDROID_NONDISCOVERABLE), 2);
   first = tmp5Result[0];
   const items = [navigation];
@@ -76,14 +76,14 @@ export default function WebAuthnRegisterStep() {
   const items2 = [callback, tmp11, tmp8];
   closure_6 = obj1.useMemo(() => ({ onRegisterSuccess: callback, setError: closure_2, setRegistering: closure_1 }), items2);
   const tmp9 = first(callback.useState(""), 2);
-  const announceError = navigation(14329).useAnnounceError(tmp10);
+  const announceError = navigation(14552).useAnnounceError(tmp10);
   obj = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: null };
   obj = { style: tmp4.centerFlex, children: null };
-  const items3 = [callback(navigation(14330).KeyImage, {}), , ];
+  const items3 = [callback(navigation(14553).KeyImage, {}), , ];
   obj1 = { style: tmp4.margin, variant: "text-md/normal", children: null };
-  const intl = tmp(1236).intl;
+  const intl = tmp(1233).intl;
   const string = intl.string;
-  const t = tmp(1236).t;
+  const t = tmp(1233).t;
   if (tmp7) {
     let stringResult = string(t.aVMiX3);
   } else {
@@ -109,17 +109,17 @@ export default function WebAuthnRegisterStep() {
     shouldDisplayAndroidFidoSelector = tmp19(AndroidPasskeyRadioGroup, obj3);
   }
   items4[1] = shouldDisplayAndroidFidoSelector;
-  const intl2 = tmp(1236).intl;
+  const intl2 = tmp(1233).intl;
   const string2 = intl2.string;
-  const t2 = tmp(1236).t;
+  const t2 = tmp(1233).t;
   if (tmp7) {
     let string2Result = string2(t2.wePEBF);
   } else {
     string2Result = string2(t2.oibaQa);
   }
   const tmp18 = closure_5;
-  const tmpResult = navigation(14329);
-  items4[2] = callback(navigation(5376).ButtonGroup, { children: callback(navigation(4928).Button, obj5) });
+  const tmpResult = navigation(14552);
+  items4[2] = callback(navigation(5384).ButtonGroup, { children: callback(navigation(4928).Button, obj5) });
   obj[4] = items4;
-  return closure_8(navigation(5553).SafeAreaPaddingView, obj);
+  return closure_8(navigation(5561).SafeAreaPaddingView, obj);
 };

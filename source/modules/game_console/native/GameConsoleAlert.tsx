@@ -1,10 +1,10 @@
-// Module ID: 9883
-// Function ID: 9884
+// Module ID: 9905
+// Function ID: 9906
 // Name: SelfDismissibleAlertBody
-// Dependencies: [19, 17, 4495, 21, 4478, 589, 4474, 2]
+// Dependencies: [19, 17, 4495, 21, 4478, 586, 4474, 2]
 // Exports: SelfDismissibleAlertBody
 
-// Module 9883 (SelfDismissibleAlertBody)
+// Module 9905 (SelfDismissibleAlertBody)
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "set" /* 4495 */;

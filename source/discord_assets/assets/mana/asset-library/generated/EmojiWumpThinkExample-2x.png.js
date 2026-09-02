@@ -1,12 +1,12 @@
-// Module ID: 6522
-// Function ID: 6523
+// Module ID: 6531
+// Function ID: 6532
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6522 (metadata)
+// Module 6531 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiWumpThinkExample-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/4fd29da05512662e3d12622fdc4fb8cbc8b17feb0aa8b1badf83a3c210133906.png";
-export const metadata = { fileBytes: 12207 };
+export default "https://cdn.discordapp.com/assets/content/e973d09e5831dde5e114f34d2cbcf79f6f20b7e36bba5a125dbf31678e431e63.png";
+export const metadata = { fileBytes: 13132 };

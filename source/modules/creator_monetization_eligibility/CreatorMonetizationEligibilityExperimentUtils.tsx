@@ -1,14 +1,14 @@
-// Module ID: 6108
-// Function ID: 6109
+// Module ID: 6116
+// Function ID: 6117
 // Name: set
-// Dependencies: [1922, 4141, 676, 589, 2]
+// Dependencies: [1921, 4141, 673, 586, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
-// Module 6108 (set)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 6116 (set)
+import initialize from "initialize" /* 586 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
 import closure_3 from "handlePaymentSourceCreateEnd" /* 4141 */;
-import { GuildFeatures } from "ME" /* 676 */;
+import { GuildFeatures } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 require = arg1;

@@ -1,23 +1,23 @@
-// Module ID: 10477
-// Function ID: 10478
+// Module ID: 10698
+// Function ID: 10699
 // Name: NativeGiftContextProvider
-// Dependencies: [5, 32, 19, 8560, 10475, 8448, 1922, 676, 6085, 1924, 505, 21, 3, 7173, 7174, 4154, 10478, 1236, 10479, 4139, 6087, 10480, 589, 10510, 10516, 8563, 8557, 4858, 698, 5973, 10517, 709, 500, 10456, 2]
+// Dependencies: [5, 32, 19, 8573, 10696, 8457, 1921, 673, 6093, 1923, 502, 21, 3, 7182, 7183, 4154, 10699, 1233, 10700, 4139, 6095, 10701, 586, 10731, 10737, 8578, 8570, 4858, 695, 5981, 10738, 706, 1234, 10677, 2]
 // Exports: NativeGiftContextProvider
 
-// Module 10477 (NativeGiftContextProvider)
+// Module 10698 (NativeGiftContextProvider)
 import timestampDefault from "timestamp" /* 3 */;
-import createDefinedContextDefault from "createDefinedContext" /* 7173 */;
+import createDefinedContextDefault from "createDefinedContext" /* 7182 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importDefaultResult from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "initialize" /* 8560 */;
-import closure_7 from "createEmptyPromotionsByType" /* 10475 */;
-import closure_8 from "frozen" /* 8448 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
-import { AnalyticEvents } from "ME" /* 676 */;
-import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 6085 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
-import { PaymentGateways } from "sum" /* 505 */;
+import closure_6 from "initialize" /* 8573 */;
+import closure_7 from "createEmptyPromotionsByType" /* 10696 */;
+import closure_8 from "frozen" /* 8457 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
+import { AnalyticEvents } from "ME" /* 673 */;
+import { GPlayBillingResult as unpackModuleId } from "GPlayConnectionState" /* 6093 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
+import { PaymentGateways } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -273,7 +273,7 @@ export const NativeGiftContextProvider = function NativeGiftContextProvider(base
     constants = undefined;
     table = undefined;
     closure_15 = undefined;
-    obj = { orderId: "a", planId: "channel", planSelection: "a", giftInfo: "isArray" };
+    obj = { orderId: "a", planId: "<string:2466251611>", planSelection: "<string:1207960145>", giftInfo: "dechov\u00FD" };
     obj = { premiumType: null, planInterval: null };
     obj[0] = first;
     obj[1] = first1;

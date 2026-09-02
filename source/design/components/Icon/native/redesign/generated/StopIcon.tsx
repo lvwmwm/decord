@@ -1,14 +1,14 @@
-// Module ID: 15528
-// Function ID: 15529
+// Module ID: 15759
+// Function ID: 15760
 // Name: StopIcon
-// Dependencies: [19, 21, 712, 4196, 15529, 2]
+// Dependencies: [19, 21, 709, 4196, 15760, 2]
 // Exports: StopIcon
 
-// Module 15528 (StopIcon)
+// Module 15759 (StopIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 15529 */;
+import registerAsset from "registerAsset" /* 15760 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

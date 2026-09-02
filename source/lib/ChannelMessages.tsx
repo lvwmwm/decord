@@ -1,18 +1,18 @@
-// Module ID: 5216
-// Function ID: 5217
+// Module ID: 5224
+// Function ID: 5225
 // Name: mergeMessage
-// Dependencies: [676, 3, 4737, 12, 4409, 11, 5217, 5218, 5219, 5220, 2]
+// Dependencies: [673, 3, 4737, 12, 4409, 11, 5225, 5226, 5227, 5228, 2]
 // Exports: flatMapChannelMessages
 
-// Module 5216 (mergeMessage)
+// Module 5224 (mergeMessage)
 import set2 from "set" /* 2 */;
 import timestampDefault from "timestamp" /* 3 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
 import applyDefault from "apply" /* 12 */;
 import GuildThemeSourcePreference from "GuildThemeSourcePreference" /* 4409 */;
 import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
-import isIOSPushNotificationRawPayloadFixExperimentEnabled from "isIOSPushNotificationRawPayloadFixExperimentEnabled" /* 5219 */;
-import ME from "ME" /* 676 */;
+import isIOSPushNotificationRawPayloadFixExperimentEnabled from "isIOSPushNotificationRawPayloadFixExperimentEnabled" /* 5227 */;
+import ME from "ME" /* 673 */;
 
 function mergeMessage(self, id) {
   let messageRecord = self.get(id.id);
@@ -1449,7 +1449,7 @@ prototype2["loadComplete"] = function loadComplete(newMessages) {
 prototype2["addCachedMessages"] = function addCachedMessages(messages, stale) {
   let self = this;
   self = this;
-  let obj = reversed(5220);
+  let obj = reversed(5228);
   const result = obj.requireSortedDescending(messages);
   const mapped = messages.map((arg0) => closure_1_10(self, arg0));
   reversed = mapped.reverse();

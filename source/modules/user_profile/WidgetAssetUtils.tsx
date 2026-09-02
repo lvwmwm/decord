@@ -1,13 +1,13 @@
-// Module ID: 8788
-// Function ID: 8789
+// Module ID: 8803
+// Function ID: 8804
 // Name: getWidgetAssetURL
-// Dependencies: [676, 1431, 2]
+// Dependencies: [673, 1430, 2]
 // Exports: getWidgetAssetURL
 
-// Module 8788 (getWidgetAssetURL)
+// Module 8803 (getWidgetAssetURL)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
+import ME from "ME" /* 673 */;
+import getAvatarURL from "getAvatarURL" /* 1430 */;
 
 const DEFAULT_CDN_HOST = ME.DEFAULT_CDN_HOST;
 const result = set.fileFinishedImporting("modules/user_profile/WidgetAssetUtils.tsx");

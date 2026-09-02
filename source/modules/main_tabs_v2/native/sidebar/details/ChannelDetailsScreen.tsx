@@ -1,10 +1,10 @@
-// Module ID: 16439
-// Function ID: 16440
-// Dependencies: [19, 21, 1500, 4337, 16208, 2]
+// Module ID: 16674
+// Function ID: 16675
+// Dependencies: [19, 21, 1499, 4337, 16440, 2]
 
-// Module 16439
+// Module 16674
 import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4337 */;
-import PX_8Default from "PX_8" /* 16208 */;
+import PX_8Default from "PX_8" /* 16440 */;
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -12,7 +12,7 @@ const require = arg1;
 let c3 = importAllResult;
 const memoResult = importAllResult.memo((navigation) => {
   navigation = navigation.navigation;
-  let obj = navigation(1500);
+  let obj = navigation(1499);
   const route = obj.useRoute();
   const items = [navigation];
   const callback = importAllResult.useCallback(() => {

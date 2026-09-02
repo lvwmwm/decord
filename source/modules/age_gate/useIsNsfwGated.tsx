@@ -1,12 +1,12 @@
-// Module ID: 7627
-// Function ID: 7628
+// Module ID: 7637
+// Function ID: 7638
 // Name: useIsNsfwGated
-// Dependencies: [4732, 1922, 589, 2]
+// Dependencies: [4732, 1921, 586, 2]
 // Exports: default
 
-// Module 7627 (useIsNsfwGated)
+// Module 7637 (useIsNsfwGated)
 import closure_2 from "initialize" /* 4732 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/age_gate/useIsNsfwGated.tsx");
@@ -15,7 +15,7 @@ export default function useIsNsfwGated(nsfw) {
   const _require = nsfw;
   nsfw = nsfw.nsfw;
   const items = [closure_3];
-  const stateFromStores = _require(589).useStateFromStores(items, () => {
+  const stateFromStores = _require(586).useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let nsfwAllowed;
     if (currentUser != null) {
@@ -23,9 +23,9 @@ export default function useIsNsfwGated(nsfw) {
     }
     return nsfwAllowed;
   });
-  const obj = _require(589);
+  const obj = _require(586);
   const items1 = [closure_2];
-  const stateFromStores1 = _require(589).useStateFromStores(items1, () => closure_1_2.didAgree(nsfw.guild_id));
+  const stateFromStores1 = _require(586).useStateFromStores(items1, () => closure_1_2.didAgree(nsfw.guild_id));
   let tmp3 = !stateFromStores1;
   if (nsfw) {
     if (stateFromStores1) {

@@ -1,14 +1,14 @@
-// Module ID: 14192
-// Function ID: 14193
+// Module ID: 14415
+// Function ID: 14416
 // Name: map
-// Dependencies: [5, 4529, 1981, 4965, 3, 14193, 14194, 14195, 9993, 6182, 2]
+// Dependencies: [5, 4529, 1980, 4965, 3, 14416, 14417, 14418, 10015, 6191, 2]
 
-// Module 14192 (map)
+// Module 14415 (map)
 import timestampDefault from "timestamp" /* 3 */;
-import _initializeDefault from "_initialize" /* 14193 */;
+import _initializeDefault from "_initialize" /* 14416 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_5 from "handleConnectionOpen" /* 1981 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
 import closure_6 from "handleSoundCreateOrUpdate" /* 4965 */;
 
 const require = arg1;
@@ -100,7 +100,7 @@ let prototype = function SoundboardManager() {
               c4 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

@@ -1,13 +1,13 @@
-// Module ID: 8642
-// Function ID: 8643
+// Module ID: 8657
+// Function ID: 8658
 // Name: isBlockedDomain
-// Dependencies: [676, 1916, 698, 2]
+// Dependencies: [673, 1915, 695, 2]
 
-// Module 8642 (isBlockedDomain)
+// Module 8657 (isBlockedDomain)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import isBlockedDomain from "isBlockedDomain" /* 1916 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import isBlockedDomain from "isBlockedDomain" /* 1915 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const prototype = function BlockedDomainStore() {

@@ -1,15 +1,15 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 11038
+// Function ID: 11039
 // Name: PremiumGiftSuccess
-// Dependencies: [19, 17, 10475, 1384, 21, 4478, 712, 1628, 10477, 38, 10819, 10526, 8084, 589, 10513, 10511, 1375, 1373, 10820, 10821, 10822, 10823, 2]
+// Dependencies: [19, 17, 10696, 1383, 21, 4478, 709, 1627, 10698, 38, 11039, 10747, 8092, 586, 10734, 10732, 1374, 1372, 11040, 11041, 11042, 11043, 2]
 // Exports: default
 
-// Module 10818 (PremiumGiftSuccess)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11038 (PremiumGiftSuccess)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "createEmptyPromotionsByType" /* 10475 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
+import closure_5 from "createEmptyPromotionsByType" /* 10696 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

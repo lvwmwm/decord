@@ -1,12 +1,12 @@
-// Module ID: 11478
-// Function ID: 11479
+// Module ID: 11701
+// Function ID: 11702
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [19, 17, 21, 4478, 712, 4474, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 2]
 // Exports: default
 
-// Module 11478 (AppealIngestionBreadcrumbs)
+// Module 11701 (AppealIngestionBreadcrumbs)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -34,8 +34,8 @@ export default function AppealIngestionBreadcrumbs(reasons) {
     obj[0] = tmp.container;
     obj = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
     obj[0] = tmp.title;
-    const intl = _require(1236).intl;
-    obj[3] = intl.string(_require(1236).t.eQg0Ck);
+    const intl = _require(1233).intl;
+    obj[3] = intl.string(_require(1233).t.eQg0Ck);
     let items = [
       callback(_require(4474).Text, obj),
       reasons.map((children) => {

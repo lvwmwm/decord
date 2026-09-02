@@ -1,11 +1,11 @@
-// Module ID: 8907
-// Function ID: 8908
+// Module ID: 8922
+// Function ID: 8923
 // Name: getFetchState
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 8907 (getFetchState)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 8922 (getFetchState)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let closure_0 = {};
 let closure_1 = {};

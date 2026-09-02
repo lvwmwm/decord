@@ -1,27 +1,27 @@
-// Module ID: 17399
-// Function ID: 17400
+// Module ID: 17635
+// Function ID: 17636
 // Name: log
-// Dependencies: [32, 4186, 4494, 7620, 4728, 1391, 1387, 1981, 11144, 7157, 7448, 9002, 676, 7454, 5486, 1401, 4466, 5390, 7446, 11087, 10172, 4332, 691, 692, 4859, 7473, 4333, 2]
+// Dependencies: [32, 4186, 4494, 7630, 4728, 1390, 1386, 1980, 11365, 7166, 7458, 9016, 673, 7464, 5494, 1400, 4466, 5398, 7456, 11307, 10194, 4332, 688, 689, 4859, 7483, 4333, 2]
 
-// Module 17399 (log)
-import privDefault from "priv" /* 1401 */;
+// Module 17635 (log)
+import privDefault from "priv" /* 1400 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import useAlertStore2 from "useAlertStore" /* 4859 */;
-import initializeDefault from "initialize" /* 5486 */;
-import getQuestLogger from "getQuestLogger" /* 7454 */;
+import initializeDefault from "initialize" /* 5494 */;
+import getQuestLogger from "getQuestLogger" /* 7464 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "setContent" /* 4186 */;
 import closure_6 from "getParticipants" /* 4494 */;
-import useChannelDetailsStore from "useChannelDetailsStore" /* 7620 */;
+import useChannelDetailsStore from "useChannelDetailsStore" /* 7630 */;
 import closure_9 from "withEqualityFn" /* 4728 */;
-import { isTextChannel } from "createChannelRecord" /* 1391 */;
-import closure_11 from "ensureGuildLoaded" /* 1387 */;
-import closure_12 from "handleConnectionOpen" /* 1981 */;
-import closure_13 from "getAlert" /* 11144 */;
-import closure_14 from "getState" /* 7157 */;
-import closure_15 from "initializeState" /* 7448 */;
-import { MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE as closure_16 } from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9002 */;
-import { MessageStates } from "ME" /* 676 */;
+import { isTextChannel } from "createChannelRecord" /* 1390 */;
+import closure_11 from "ensureGuildLoaded" /* 1386 */;
+import closure_12 from "handleConnectionOpen" /* 1980 */;
+import closure_13 from "getAlert" /* 11365 */;
+import closure_14 from "getState" /* 7166 */;
+import closure_15 from "initializeState" /* 7458 */;
+import { MIN_QUEST_CONTENT_VISIBILITY_PERCENTAGE as closure_16 } from "MAX_BRAND_SAFETY_CONTEXT_ARRAY_LEN" /* 9016 */;
+import { MessageStates } from "ME" /* 673 */;
 
 require = arg1;
 ({ useChannelDetailsStore: error, getIsChannelDetailsSearchActive: closure_8 } = useChannelDetailsStore);
@@ -234,7 +234,7 @@ class QuestMobileEmbedVisibilityManager extends tmp3 {
       return { channelId: tmp[0], messageId: tmp[1], questId: tmp[2] };
     };
     applyArgumentsResult.isOnChannelNavigationRoute = function isOnChannelNavigationRoute() {
-      let isChannelFocusedResult = applyArgumentsResult(10172).isChannelFocused();
+      let isChannelFocusedResult = applyArgumentsResult(10194).isChannelFocused();
       applyArgumentsResult(4332);
       if (isChannelFocusedResult) {
         isChannelFocusedResult = "channel" === tmp3;

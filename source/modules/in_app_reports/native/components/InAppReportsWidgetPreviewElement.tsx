@@ -1,15 +1,15 @@
-// Module ID: 8784
-// Function ID: 8785
+// Module ID: 8799
+// Function ID: 8800
 // Name: WidgetPreview
-// Dependencies: [19, 17, 21, 4478, 712, 8530, 7375, 8785, 7368, 8800, 4474, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 8543, 7384, 8800, 7377, 8815, 4474, 1233, 2]
 // Exports: default
 
-// Module 8784 (WidgetPreview)
+// Module 8799 (WidgetPreview)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7375 */;
-import useSharedStylesDefault from "useSharedStyles" /* 8530 */;
-import PersonalWidgetTextDefault from "PersonalWidgetText" /* 8785 */;
+import ThemesDefault from "Themes" /* 709 */;
+import createDefaultFieldsSection from "createDefaultFieldsSection" /* 7384 */;
+import useSharedStylesDefault from "useSharedStyles" /* 8543 */;
+import PersonalWidgetTextDefault from "PersonalWidgetText" /* 8800 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -44,10 +44,10 @@ export default function WidgetPreview(arg0) {
         obj[1] = widget;
         const items1 = [tmp4.card, tmp.card];
         obj[3] = items1;
-        tmp6 = callback(tmp5(8800).WidgetSection, obj);
+        tmp6 = callback(tmp5(8815).WidgetSection, obj);
       }
     }
-    tmp5Result = tmp5(7368);
+    tmp5Result = tmp5(7377);
   }
   let tmp9 = null;
   if (null !== tmp6) {
@@ -55,12 +55,12 @@ export default function WidgetPreview(arg0) {
     obj1[0] = tmp.container;
     const obj2 = { style: null, accessibilityRole: "header", variant: "text-xs/bold", children: null };
     obj2[0] = tmp.title;
-    const intl = tmp5(1236).intl;
-    obj2[3] = intl.string(tmp5(1236).t.SpsnDY).toUpperCase();
+    const intl = tmp5(1233).intl;
+    obj2[3] = intl.string(tmp5(1233).t.SpsnDY).toUpperCase();
     const items2 = [callback(tmp5(4474).Text, obj2), tmp6];
     obj1[1] = items2;
     tmp9 = callback2(View, obj1);
-    const str = intl.string(tmp5(1236).t.SpsnDY);
+    const str = intl.string(tmp5(1233).t.SpsnDY);
   }
   return tmp9;
 };

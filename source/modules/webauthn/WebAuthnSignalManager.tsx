@@ -1,12 +1,12 @@
-// Module ID: 17410
-// Function ID: 17411
+// Module ID: 17646
+// Function ID: 17647
 // Name: handleAuthenticatorDelete
-// Dependencies: [5, 1218, 5486, 6057, 2]
+// Dependencies: [5, 1215, 5494, 6065, 2]
 
-// Module 17410 (handleAuthenticatorDelete)
-import initializeDefault from "initialize" /* 5486 */;
+// Module 17646 (handleAuthenticatorDelete)
+import initializeDefault from "initialize" /* 5494 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "fetchFingerprint" /* 1218 */;
+import closure_3 from "fetchFingerprint" /* 1215 */;
 
 initializeDefault;
 class WebAuthnSignalManager extends tmp2 {

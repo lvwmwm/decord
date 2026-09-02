@@ -1,11 +1,11 @@
-// Module ID: 10816
-// Function ID: 10817
+// Module ID: 11036
+// Function ID: 11037
 // Name: items
-// Dependencies: [10817, 2]
+// Dependencies: [11037, 2]
 
-// Module 10816 (items)
+// Module 11036 (items)
 import set from "set" /* 2 */;
-import items from "items" /* 10817 */;
+import items from "items" /* 11037 */;
 
 const result = set.fileFinishedImporting("utils/native/IAPUtils.mock.tsx");
 

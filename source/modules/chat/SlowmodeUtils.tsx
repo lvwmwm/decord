@@ -1,14 +1,14 @@
-// Module ID: 7432
-// Function ID: 7433
+// Module ID: 7442
+// Function ID: 7443
 // Name: canBypassSlowmodeHelper
-// Dependencies: [4121, 676, 589, 1236, 687, 4075, 2]
+// Dependencies: [4120, 673, 586, 1233, 684, 4074, 2]
 // Exports: canBypassSlowmode, canBypassSlowmodeHelper, getSlowmodeDescription, getSlowmodeIndicatorText, useCanBypassSlowmode
 
-// Module 7432 (canBypassSlowmodeHelper)
-import setDefault from "set" /* 687 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4121 */;
-import { Permissions } from "ME" /* 676 */;
+// Module 7442 (canBypassSlowmodeHelper)
+import setDefault from "set" /* 684 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
+import { Permissions } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/chat/SlowmodeUtils.tsx");
@@ -22,14 +22,14 @@ export const canBypassSlowmode = function canBypassSlowmode(channel) {
 export const useCanBypassSlowmode = function useCanBypassSlowmode(channel) {
   const _require = channel;
   const items = [closure_3];
-  return _require(589).useStateFromStores(items, () => closure_1_3.can(closure_1_4.BYPASS_SLOWMODE, closure_0));
+  return _require(586).useStateFromStores(items, () => closure_1_3.can(closure_1_4.BYPASS_SLOWMODE, closure_0));
 };
 export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateFromStores, canBypassSlowmode) {
   if (canBypassSlowmode) {
     const intl2 = getSystemLocale.intl;
     return intl2.string(getSystemLocale.t["8+NidX"]);
   } else if (stateFromStores >= setDefault.Millis.HOUR) {
-    let tmp2Result = tmp2(4075);
+    let tmp2Result = tmp2(4074);
     const durationResult = tmp2Result.duration(stateFromStores);
     const _HermesInternal3 = HermesInternal;
     const combined = "" + durationResult.minutes();
@@ -39,7 +39,7 @@ export const getSlowmodeIndicatorText = function getSlowmodeIndicatorText(stateF
     const _HermesInternal5 = HermesInternal;
     return "" + durationResult.hours() + ":" + padStartResult + ":" + combined1.padStart(2, "0");
   } else if (stateFromStores > 0) {
-    tmp2Result = tmp2(4075);
+    tmp2Result = tmp2(4074);
     const durationResult1 = tmp2Result.duration(stateFromStores);
     const _HermesInternal = HermesInternal;
     const combined2 = "" + durationResult1.seconds();
@@ -57,12 +57,12 @@ export const getSlowmodeDescription = function getSlowmodeDescription(rateLimitP
   }
   if (rateLimitPerUser >= setDefault.Seconds.HOUR) {
     const _Math2 = Math;
-    const rounded = Math.floor(rateLimitPerUser / tmp(687).Seconds.HOUR);
+    const rounded = Math.floor(rateLimitPerUser / tmp(684).Seconds.HOUR);
     const _Math3 = Math;
-    const diff = rateLimitPerUser - rounded * tmp(687).Seconds.HOUR;
-    const rounded1 = Math.floor(diff / tmp(687).Seconds.MINUTE);
-    const diff1 = rateLimitPerUser - rounded * tmp(687).Seconds.HOUR;
-    const diff2 = diff1 - rounded1 * tmp(687).Seconds.MINUTE;
+    const diff = rateLimitPerUser - rounded * tmp(684).Seconds.HOUR;
+    const rounded1 = Math.floor(diff / tmp(684).Seconds.MINUTE);
+    const diff1 = rateLimitPerUser - rounded * tmp(684).Seconds.HOUR;
+    const diff2 = diff1 - rounded1 * tmp(684).Seconds.MINUTE;
     const intl3 = getSystemLocale.intl;
     const t3 = getSystemLocale.t;
     let obj = { hours: null, minutes: null, seconds: null };

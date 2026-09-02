@@ -1,11 +1,11 @@
 // Module ID: 4715
 // Function ID: 4716
 // Name: map
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
 // Module 4715 (map)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let obj = { surveys: new Map() };
 const Store = initializeDefault.Store;

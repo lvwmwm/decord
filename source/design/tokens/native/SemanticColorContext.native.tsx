@@ -1,12 +1,12 @@
 // Module ID: 4198
 // Function ID: 4199
 // Name: getSemanticColorContextFromThemeContext
-// Dependencies: [688, 689, 4199, 4203, 4296, 2]
+// Dependencies: [685, 686, 4199, 4203, 4296, 2]
 // Exports: getSemanticColorContextFromThemeContext
 
 // Module 4198 (getSemanticColorContextFromThemeContext)
 import set from "set" /* 2 */;
-import nDefault from "n" /* 689 */;
+import nDefault from "n" /* 686 */;
 import getGradientThemeFromFlags from "getGradientThemeFromFlags" /* 4203 */;
 import getGradientColorByPercentage from "getGradientColorByPercentage" /* 4296 */;
 
@@ -23,9 +23,9 @@ export const getSemanticColorContextFromThemeContext = function getSemanticColor
     ({ primaryColor: primaryColor2, secondaryColor } = themeContext);
     let tmp9 = null;
     if (null != primaryColor2) {
-      let tmpResult = tmp(688);
+      let tmpResult = tmp(685);
       const int2hexResult = tmpResult.int2hex(primaryColor2);
-      tmpResult = tmp(688);
+      tmpResult = tmp(685);
       if (secondaryColor == null) {
         secondaryColor = primaryColor2;
       }

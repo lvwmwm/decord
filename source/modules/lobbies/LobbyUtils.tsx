@@ -1,12 +1,12 @@
-// Module ID: 10670
-// Function ID: 10671
+// Module ID: 10891
+// Function ID: 10892
 // Name: canUnlinkLobbyChannel
-// Dependencies: [4121, 676, 589, 2]
+// Dependencies: [4120, 673, 586, 2]
 // Exports: canUnlinkLobbyChannel, useCanUnlinkLobbyChannel
 
-// Module 10670 (canUnlinkLobbyChannel)
-import closure_2 from "getUncachedChannelPermissions" /* 4121 */;
-import { Permissions } from "ME" /* 676 */;
+// Module 10891 (canUnlinkLobbyChannel)
+import closure_2 from "getUncachedChannelPermissions" /* 4120 */;
+import { Permissions } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/lobbies/LobbyUtils.tsx");
@@ -35,7 +35,7 @@ export const canUnlinkLobbyChannel = function canUnlinkLobbyChannel(channel, clo
 export const useCanUnlinkLobbyChannel = function useCanUnlinkLobbyChannel(channel) {
   const _require = channel;
   const items = [closure_2];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     if (closure_1_2 !== undefined) {
       let tmp3 = null != tmp;
       if (tmp3) {

@@ -1,11 +1,11 @@
-// Module ID: 10530
-// Function ID: 10531
+// Module ID: 10751
+// Function ID: 10752
 // Name: AnimatedImage
-// Dependencies: [32, 19, 17, 4470, 21, 4478, 712, 589, 8517, 501, 10529, 5493, 4474, 2]
+// Dependencies: [32, 19, 17, 4470, 21, 4478, 709, 586, 8530, 1235, 10750, 5501, 4474, 2]
 // Exports: default
 
-// Module 10530 (AnimatedImage)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 10751 (AnimatedImage)
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;

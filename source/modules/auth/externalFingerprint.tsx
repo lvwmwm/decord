@@ -1,13 +1,13 @@
-// Module ID: 17477
-// Function ID: 17478
+// Module ID: 17713
+// Function ID: 17714
 // Name: externalFingerprint
-// Dependencies: [1218, 5398, 709, 2]
+// Dependencies: [1215, 5406, 706, 2]
 // Exports: default
 
-// Module 17477 (externalFingerprint)
-import dispatcherDefault from "dispatcher" /* 709 */;
-import keysSorter from "keysSorter" /* 5398 */;
-import closure_3 from "fetchFingerprint" /* 1218 */;
+// Module 17713 (externalFingerprint)
+import dispatcherDefault from "dispatcher" /* 706 */;
+import keysSorter from "keysSorter" /* 5406 */;
+import closure_3 from "fetchFingerprint" /* 1215 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/auth/externalFingerprint.tsx");

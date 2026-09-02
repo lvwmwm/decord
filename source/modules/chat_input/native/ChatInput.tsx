@@ -1,31 +1,31 @@
-// Module ID: 11531
-// Function ID: 11532
+// Module ID: 11754
+// Function ID: 11755
 // Name: ChatInput
-// Dependencies: [5, 32, 19, 17, 7524, 11532, 9654, 7425, 11533, 4854, 7426, 4121, 4853, 9534, 11535, 676, 1498, 1384, 1925, 1623, 21, 4478, 712, 500, 4296, 4197, 11536, 589, 6116, 5953, 7505, 4217, 4342, 8144, 11556, 11557, 7589, 11558, 11559, 6068, 1231, 1627, 11602, 11603, 5082, 8163, 5073, 514, 4446, 698, 1626, 4700, 9469, 11607, 11763, 10428, 4340, 1890, 11764, 9099, 8793, 11798, 10443, 8160, 11801, 11802, 4152, 11818, 11819, 11820, 11821, 11827, 11828, 688, 11829, 11830, 11834, 11849, 11854, 11857, 11952, 11956, 11974, 11976, 11977, 11990, 11994, 11995, 11996, 11997, 2]
+// Dependencies: [5, 32, 19, 17, 7534, 11755, 9667, 7434, 11756, 4854, 7435, 4120, 4853, 9547, 11758, 673, 1497, 1383, 1924, 1622, 21, 4478, 709, 1234, 4296, 4197, 11759, 586, 6124, 5961, 7515, 4217, 4342, 8152, 11779, 11780, 7599, 11781, 11782, 6076, 1228, 1626, 11825, 11826, 5090, 8171, 5081, 511, 4446, 695, 1625, 4700, 9482, 11830, 11986, 10649, 4340, 1889, 11987, 9113, 8808, 12021, 10664, 8168, 12024, 12025, 4152, 12041, 12042, 12043, 12044, 12050, 12051, 685, 12052, 12053, 12057, 12072, 12077, 12080, 12175, 12179, 12198, 12200, 12201, 12214, 12218, 12219, 12220, 12221, 2]
 
-// Module 11531 (ChatInput)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11754 (ChatInput)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_9 from "handleInit" /* 7524 */;
-import closure_10 from "INITIAL_STATE" /* 11532 */;
-import closure_11 from "initialize" /* 9654 */;
-import closure_12 from "getState" /* 7425 */;
-import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11533 */;
+import closure_9 from "handleInit" /* 7534 */;
+import closure_10 from "INITIAL_STATE" /* 11755 */;
+import closure_11 from "initialize" /* 9667 */;
+import closure_12 from "getState" /* 7434 */;
+import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11756 */;
 import closure_14 from "handleChanged" /* 4854 */;
 import { DraftType } from "handleChanged" /* 4854 */;
-import closure_16 from "initialize" /* 7426 */;
-import closure_17 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_16 from "initialize" /* 7435 */;
+import closure_17 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_18 from "map" /* 4853 */;
-import updateChatInputContainerHeight from "updateChatInputContainerHeight" /* 9534 */;
-import TextAreaCta from "TextAreaCta" /* 11535 */;
-import ME from "ME" /* 676 */;
-import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1498 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
-import { EmojiInteractionPoint } from "set" /* 1925 */;
-import DRAG_HANDLE from "DRAG_HANDLE" /* 1623 */;
+import updateChatInputContainerHeight from "updateChatInputContainerHeight" /* 9547 */;
+import TextAreaCta from "TextAreaCta" /* 11758 */;
+import ME from "ME" /* 673 */;
+import { AppLauncherRouteName } from "APP_LAUNCHER_BUILT_IN_SECTION_ICON" /* 1497 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import { EmojiInteractionPoint } from "set" /* 1924 */;
+import DRAG_HANDLE from "DRAG_HANDLE" /* 1622 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -40,10 +40,10 @@ let closure_39 = createCacheKey.createStyles((arg0, arg1) => {
   let BACKGROUND_BASE_LOW = arg0;
   let obj = { position: "relative", paddingVertical: ThemesDefault.space.PX_8, paddingHorizontal: closure_22 - closure_23, backgroundColor: null, borderTopWidth: 1, borderColor: null };
   if (arg0 == null) {
-    BACKGROUND_BASE_LOW = tmp(712).colors.BACKGROUND_BASE_LOW;
+    BACKGROUND_BASE_LOW = tmp(709).colors.BACKGROUND_BASE_LOW;
   }
-  obj = { container: obj, inputDefault: { alignSelf: "stretch", marginLeft: 0, marginTop: 0 }, accessories: { position: "absolute", bottom: "100%", left: 0, right: 0 }, floatingContainer: BACKGROUND_BASE_LOW, floatingInputBox: null, floatingInputBoxPressed: tmp(712).colors.BORDER_SUBTLE, floatingInputBoxTyping: null, floatingMainContents: null, inputFlat: null, floatingScrimOverlap: null, overflowVisible: null };
-  obj = { borderTopWidth: 0, borderColor: "transparent", borderRadius: tmp(712).radii.none, backgroundColor: "transparent", paddingHorizontal: tmp(712).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 0, overflow: "visible" };
+  obj = { container: obj, inputDefault: { alignSelf: "stretch", marginLeft: 0, marginTop: 0 }, accessories: { position: "absolute", bottom: "100%", left: 0, right: 0 }, floatingContainer: BACKGROUND_BASE_LOW, floatingInputBox: null, floatingInputBoxPressed: tmp(709).colors.BORDER_SUBTLE, floatingInputBoxTyping: null, floatingMainContents: null, inputFlat: null, floatingScrimOverlap: null, overflowVisible: null };
+  obj = { borderTopWidth: 0, borderColor: "transparent", borderRadius: tmp(709).radii.none, backgroundColor: "transparent", paddingHorizontal: tmp(709).modules.mobile.CHAT_INPUT_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 0, overflow: "visible" };
   obj[3] = obj;
   obj[4] = { backgroundColor: ThemesDefault.colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: ThemesDefault.modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: ThemesDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: ThemesDefault.modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, flexDirection: "column", overflow: "hidden" };
   obj1 = { backgroundColor: ThemesDefault.colors.MOBILE_CHATINPUT_BACKGROUND_DEFAULT, borderWidth: ThemesDefault.modules.mobile.CHAT_INPUT_FLOATING_ACCESSORY_BORDER_WIDTH, borderColor: ThemesDefault.colors.MOBILE_CHATINPUT_BORDER_DEFAULT, borderRadius: ThemesDefault.modules.mobile.CHAT_INPUT_FLOATING_BORDER_RADIUS, flexDirection: "column", overflow: "hidden" };
@@ -497,53 +497,98 @@ const forwardRefResult = importAllResult.forwardRef((channel, ref) => {
       c3 = 0;
       c4 = 0;
       const iter = (function*(arg0) {
-        c1 = tmp2;
-        ({ url: c0, width: c1, height: c2, type: c3 } = lib.nativeEvent);
-        yield "PX_16";
-        if (1 === tmp5) {
+        if (styles === 2) {
+          styles = 3;
+          HermesBuiltin.throwTypeError();
+        } else if (tmp4 === 3) {
           if (arg0 === 1) {
-            let styles = 3;
             throw arg1;
           } else if (arg0 === 2) {
-            styles = 3;
-            obj1 = { value: null, done: true };
-            obj1[0] = arg1;
-            return obj1;
+            let obj = { value: null, done: true };
+            obj[0] = arg1;
+            return obj;
           } else {
-            if (closure_1_11.state.current.focused) {
-              if (closure_1_11.props.current.canUpload) {
-                obj1 = lib(closure_2_3[44]);
-                c3 = 2;
-                styles = 1;
-                const obj2 = { value: null, done: false };
-                obj2[0] = obj1.getImageDimensionsIfMissing(lib, closure_1_1, closure_1_2);
-                return obj2;
-              }
-            }
-            styles = 3;
+            return { value: "HermesInternal", done: null };
           }
-        } else if (arg0 === 1) {
-          styles = 3;
-          throw arg1;
-        } else if (arg0 !== 2) {
-          styles = arg1;
-          const obj3 = { channelId: null, file: null, draftType: null };
-          obj3[0] = closure_1_11.props.current.channel.id;
-          const obj4 = { uri: null, originalUri: null, width: null, height: null, mimeType: null, platform: null, id: null };
-          obj4[0] = lib;
-          obj4[1] = lib;
-          obj4[2] = styles.width;
-          obj4[3] = styles.height;
-          obj4[4] = c3;
-          obj4[5] = lib(closure_2_3[46]).UploadPlatform.REACT_NATIVE;
-          const obj7 = closure_2_1(closure_2_3[45]);
-          obj4[6] = lib(closure_2_3[47]).v4();
-          obj3[1] = obj4;
-          obj3[2] = closure_2_15.ChannelMessage;
-          obj7.addFile(obj3);
-          const obj10 = lib(closure_2_3[47]);
+        } else {
+          try {
+            styles = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                styles = 3;
+                throw arg1;
+              } else if (arg0 === 2) {
+                styles = 3;
+                obj = { value: null, done: true };
+                obj[0] = arg1;
+                return obj;
+              } else {
+                c2 = tmp5;
+                c1 = tmp2;
+                let lib;
+                c1 = undefined;
+                c2 = undefined;
+                c3 = undefined;
+                ({ url: c0, width: c1, height: c2, type: c3 } = lib.nativeEvent);
+                styles = undefined;
+                c3 = 1;
+                styles = 1;
+                return { value: "PX_16", done: true };
+              }
+            } else {
+              if (1 === tmp5) {
+                if (arg0 === 1) {
+                  styles = 3;
+                  throw arg1;
+                } else if (arg0 === 2) {
+                  styles = 3;
+                  obj1 = { value: null, done: true };
+                  obj1[0] = arg1;
+                  return obj1;
+                } else {
+                  if (closure_1_11.state.current.focused) {
+                    if (closure_1_11.props.current.canUpload) {
+                      obj1 = lib(closure_2_3[44]);
+                      c3 = 2;
+                      styles = 1;
+                      const obj2 = { value: null, done: false };
+                      obj2[0] = obj1.getImageDimensionsIfMissing(lib, closure_1_1, closure_1_2);
+                      return obj2;
+                    }
+                  }
+                  styles = 3;
+                }
+              } else if (arg0 === 1) {
+                styles = 3;
+                throw arg1;
+              } else if (arg0 !== 2) {
+                styles = arg1;
+                const obj3 = { channelId: null, file: null, draftType: null };
+                obj3[0] = closure_1_11.props.current.channel.id;
+                const obj4 = { uri: null, originalUri: null, width: null, height: null, mimeType: null, platform: null, id: null };
+                obj4[0] = lib;
+                obj4[1] = lib;
+                obj4[2] = styles.width;
+                obj4[3] = styles.height;
+                obj4[4] = c3;
+                obj4[5] = lib(closure_2_3[46]).UploadPlatform.REACT_NATIVE;
+                const obj7 = closure_2_1(closure_2_3[45]);
+                obj4[6] = lib(closure_2_3[47]).v4();
+                obj3[1] = obj4;
+                obj3[2] = closure_2_15.ChannelMessage;
+                obj7.addFile(obj3);
+                const obj10 = lib(closure_2_3[47]);
+              }
+              styles = 3;
+              obj = { value: null, done: true };
+              obj[0] = arg1;
+              return obj;
+            }
+          } catch (tmp16) {
+            styles = tmp;
+            throw tmp16;
+          }
         }
-        return arg1;
       })();
       iter.next();
       return iter;

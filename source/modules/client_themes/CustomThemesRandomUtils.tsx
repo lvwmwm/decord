@@ -1,7 +1,7 @@
 // Module ID: 4330
 // Function ID: 4331
 // Name: items
-// Dependencies: [689, 2]
+// Dependencies: [686, 2]
 // Exports: generateRandomColorOptions
 
 // Module 4330 (items)
@@ -67,42 +67,42 @@ export const generateRandomColorOptions = function generateRandomColorOptions() 
         const value1 = obj.get("hsl.l");
         if (constants.ANALOGOUS === arg1) {
           return (function generateAnalogousColors(gradientSecondaryBackground, value, value1, value2) {
-            obj = callback(689);
-            items = [callback(689).hsl(value2 - 30, value, value1).hex(), gradientSecondaryBackground, ];
-            const hslResult = callback(689).hsl(value2 - 30, value, value1);
-            const obj3 = callback(689);
-            items[2] = callback(689).hsl(value2 + 30, value, value1).hex();
+            obj = callback(686);
+            items = [callback(686).hsl(value2 - 30, value, value1).hex(), gradientSecondaryBackground, ];
+            const hslResult = callback(686).hsl(value2 - 30, value, value1);
+            const obj3 = callback(686);
+            items[2] = callback(686).hsl(value2 + 30, value, value1).hex();
             return items;
           })(gradientSecondaryBackground, value, value1, value);
         } else if (tmp8.COMPLEMENTARY === arg1) {
           return (function generateComplementaryColors(gradientSecondaryBackground, value, value1, value2) {
-            obj = callback(689);
-            const hexResult = callback(689).hsl((value2 + 180) % 360, value, value1).hex();
+            obj = callback(686);
+            const hexResult = callback(686).hsl((value2 + 180) % 360, value, value1).hex();
             items = [gradientSecondaryBackground, , ];
-            const hslResult = callback(689).hsl((value2 + 180) % 360, value, value1);
-            const obj3 = callback(689);
-            items[1] = callback(689).mix(gradientSecondaryBackground, hexResult, 0.5).hex();
+            const hslResult = callback(686).hsl((value2 + 180) % 360, value, value1);
+            const obj3 = callback(686);
+            items[1] = callback(686).mix(gradientSecondaryBackground, hexResult, 0.5).hex();
             items[2] = hexResult;
             return items;
           })(gradientSecondaryBackground, value, value1, value);
         } else if (tmp8.SPLIT_COMPLEMENTARY === arg1) {
           return (function generateSplitComplementaryColors(gradientSecondaryBackground, value, value1, value2) {
             items = [gradientSecondaryBackground, , ];
-            obj = callback(689);
-            items[1] = callback(689).hsl((value2 + 150) % 360, value, value1).hex();
-            const hslResult = callback(689).hsl((value2 + 150) % 360, value, value1);
-            const obj3 = callback(689);
-            items[2] = callback(689).hsl((value2 + 210) % 360, value, value1).hex();
+            obj = callback(686);
+            items[1] = callback(686).hsl((value2 + 150) % 360, value, value1).hex();
+            const hslResult = callback(686).hsl((value2 + 150) % 360, value, value1);
+            const obj3 = callback(686);
+            items[2] = callback(686).hsl((value2 + 210) % 360, value, value1).hex();
             return items;
           })(gradientSecondaryBackground, value, value1, value);
         } else if (tmp8.TRIADIC === arg1) {
           return (function generateTriadicColors(gradientSecondaryBackground, value, value1, value2) {
             items = [gradientSecondaryBackground, , ];
-            obj = callback(689);
-            items[1] = callback(689).hsl((value2 + 120) % 360, value, value1).hex();
-            const hslResult = callback(689).hsl((value2 + 120) % 360, value, value1);
-            const obj3 = callback(689);
-            items[2] = callback(689).hsl((value2 + 240) % 360, value, value1).hex();
+            obj = callback(686);
+            items[1] = callback(686).hsl((value2 + 120) % 360, value, value1).hex();
+            const hslResult = callback(686).hsl((value2 + 120) % 360, value, value1);
+            const obj3 = callback(686);
+            items[2] = callback(686).hsl((value2 + 240) % 360, value, value1).hex();
             return items;
           })(gradientSecondaryBackground, value, value1, value);
         } else {

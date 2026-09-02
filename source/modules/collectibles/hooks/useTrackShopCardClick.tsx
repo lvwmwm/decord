@@ -1,13 +1,13 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12844
+// Function ID: 12845
 // Name: useTrackShopCardClick
-// Dependencies: [19, 12621, 676, 8890, 8891, 7299, 7298, 698, 2]
+// Dependencies: [19, 12845, 673, 8905, 8906, 7308, 7307, 695, 2]
 // Exports: useTrackShopCardClick
 
-// Module 12620 (useTrackShopCardClick)
+// Module 12844 (useTrackShopCardClick)
 import closure_3 from "noop" /* 19 */;
-import { useSelectedVariantIndex } from "useSelectedVariantIndex" /* 12621 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { useSelectedVariantIndex } from "useSelectedVariantIndex" /* 12845 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 let require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useTrackShopCardClick.tsx");

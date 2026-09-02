@@ -1,9 +1,9 @@
-// Module ID: 9003
-// Function ID: 9004
+// Module ID: 9017
+// Function ID: 9018
 // Name: AdUserActionType
 // Dependencies: [2]
 
-// Module 9003 (AdUserActionType)
+// Module 9017 (AdUserActionType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/ads/analytics/captureAdUserActionTypes.tsx");

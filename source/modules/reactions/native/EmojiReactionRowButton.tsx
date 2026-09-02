@@ -1,20 +1,20 @@
-// Module ID: 11309
-// Function ID: 11310
+// Module ID: 11532
+// Function ID: 11533
 // Name: EmojiPickerRowButton
-// Dependencies: [19, 17, 1925, 21, 4478, 712, 1363, 5068, 1236, 8228, 5585, 1431, 4137, 2]
+// Dependencies: [19, 17, 1924, 21, 4478, 709, 1362, 5076, 1233, 8237, 5593, 1430, 4137, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 11309 (EmojiPickerRowButton)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1363 */;
+// Module 11532 (EmojiPickerRowButton)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import AccessibilityAnnouncer from "AccessibilityAnnouncer" /* 1362 */;
 import EmojiTypes from "EmojiTypes" /* 4137 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import EmojiDefault from "Emoji" /* 5585 */;
-import ReactionIcon from "ReactionIcon" /* 8228 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import EmojiDefault from "Emoji" /* 5593 */;
+import ReactionIcon from "ReactionIcon" /* 8237 */;
 import closure_3 from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
-import { EMOJI_URL_BASE_SIZE } from "set" /* 1925 */;
+import { EMOJI_URL_BASE_SIZE } from "set" /* 1924 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -43,7 +43,7 @@ export const EmojiPickerRowButton = function EmojiPickerRowButton(iconSize) {
   const unsafe_rawColors = ThemesDefault.unsafe_rawColors;
   const isThemeLightResult = AccessibilityAnnouncer.isThemeLight(obj.useThemeContext().theme);
   obj = { activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: null, hitSlop: 4, onPress: null, style: null, children: null };
-  const intl = tmp2(1236).intl;
+  const intl = tmp2(1233).intl;
   obj[2] = intl.string(getSystemLocale.t.lfIHs4);
   obj[4] = onPress;
   const items = [tmp.emojiContainer, styles];
@@ -86,7 +86,7 @@ export const EmojiReactionRowButton = function EmojiReactionRowButton(emoji) {
     }
     obj[2] = str;
     if (null != animated.id) {
-      const emojiURL = getEmojiURL(1431);
+      const emojiURL = getEmojiURL(1430);
       getEmojiURL = emojiURL.getEmojiURL;
       obj = { id: null, animated: null, size: null };
       ({ id: obj[0], animated } = animated);

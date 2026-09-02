@@ -1,17 +1,17 @@
-// Module ID: 10942
-// Function ID: 10943
+// Module ID: 11162
+// Function ID: 11163
 // Name: getAnalyticsConfig
-// Dependencies: [676, 503, 5973, 1471, 5486, 1401, 698, 2]
+// Dependencies: [673, 500, 5981, 1470, 5494, 1400, 695, 2]
 
-// Module 10942 (getAnalyticsConfig)
+// Module 11162 (getAnalyticsConfig)
 import set2 from "set" /* 2 */;
-import encodeProperties from "encodeProperties" /* 503 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import privDefault from "priv" /* 1401 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import initializeDefault from "initialize" /* 5486 */;
-import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5973 */;
+import encodeProperties from "encodeProperties" /* 500 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import privDefault from "priv" /* 1400 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import initializeDefault from "initialize" /* 5494 */;
+import QUICK_SWITCHERDefault from "QUICK_SWITCHER" /* 5981 */;
 
 function getAnalyticsConfig(type) {
   type = type.type;

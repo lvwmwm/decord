@@ -1,15 +1,15 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15799
+// Function ID: 15800
 // Name: AccountDisabledOrDeletionScheduled
-// Dependencies: [19, 17, 1218, 676, 21, 4478, 712, 1499, 589, 6052, 7717, 1236, 7745, 15569, 4474, 5376, 4928, 2]
+// Dependencies: [19, 17, 1215, 673, 21, 4478, 709, 1498, 586, 6060, 7726, 1233, 7754, 15800, 4474, 5384, 4928, 2]
 // Exports: default
 
-// Module 15568 (AccountDisabledOrDeletionScheduled)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 15799 (AccountDisabledOrDeletionScheduled)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "fetchFingerprint" /* 1218 */;
-import { LoginStates } from "ME" /* 676 */;
+import closure_5 from "fetchFingerprint" /* 1215 */;
+import { LoginStates } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -27,12 +27,12 @@ let closure_9 = createCacheKey.createStyles((arg0) => {
   const container = { display: "flex", height: "100%", flex: 1, paddingBottom: PX_16, paddingHorizontal: null, backgroundColor: null, justifyContent: null };
   let num = 0;
   if (!arg0) {
-    num = tmp4(712).space.PX_16;
+    num = tmp4(709).space.PX_16;
   }
   container[4] = num;
   let str = "transparent";
   if (!arg0) {
-    str = tmp4(712).colors.BACKGROUND_BASE_LOW;
+    str = tmp4(709).colors.BACKGROUND_BASE_LOW;
   }
   container[5] = str;
   let str2 = "center";

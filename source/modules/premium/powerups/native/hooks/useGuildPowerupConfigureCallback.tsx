@@ -1,12 +1,12 @@
-// Module ID: 12108
-// Function ID: 12109
+// Module ID: 12332
+// Function ID: 12333
 // Name: useGuildPowerupConfigureCallback
-// Dependencies: [19, 676, 4445, 12081, 4368, 9728, 9731, 38, 2]
+// Dependencies: [19, 673, 4445, 12305, 4368, 9750, 9753, 38, 2]
 // Exports: default
 
-// Module 12108 (useGuildPowerupConfigureCallback)
+// Module 12332 (useGuildPowerupConfigureCallback)
 import closure_3 from "noop" /* 19 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 ({ GuildSettingsSections: c4, AnalyticsSections: c5 } = ME);

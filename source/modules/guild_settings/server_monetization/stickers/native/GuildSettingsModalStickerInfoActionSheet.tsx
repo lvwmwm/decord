@@ -1,13 +1,13 @@
-// Module ID: 17168
-// Function ID: 17169
-// Dependencies: [5, 32, 19, 17, 5444, 21, 589, 10380, 4194, 7708, 1236, 5622, 5621, 712, 5992, 5599, 10327, 17161, 4436, 2]
+// Module ID: 17404
+// Function ID: 17405
+// Dependencies: [5, 32, 19, 17, 5452, 21, 586, 10402, 4194, 7717, 1233, 5630, 5629, 709, 6000, 5607, 10349, 17397, 4436, 2]
 
-// Module 17168
+// Module 17404
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "loadSavedGuildStickers" /* 5444 */;
+import closure_8 from "loadSavedGuildStickers" /* 5452 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

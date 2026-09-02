@@ -1,19 +1,19 @@
-// Module ID: 15633
-// Function ID: 15634
+// Module ID: 15864
+// Function ID: 15865
 // Name: getMessagesItemSuggestedFriendHeight
-// Dependencies: [32, 19, 17, 4130, 676, 21, 4478, 712, 9088, 8896, 2009, 647, 1236, 4322, 15634, 15635, 698, 5068, 1297, 4474, 4928, 4423, 8105, 15632, 2]
+// Dependencies: [32, 19, 17, 4130, 673, 21, 4478, 709, 9102, 8911, 2008, 644, 1233, 4322, 15865, 15866, 695, 5076, 1296, 4474, 4928, 4423, 8113, 15863, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 15633 (getMessagesItemSuggestedFriendHeight)
-import ThemesDefault from "Themes" /* 712 */;
-import noop from "noop" /* 8105 */;
-import map from "map" /* 9088 */;
-import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15632 */;
+// Module 15864 (getMessagesItemSuggestedFriendHeight)
+import ThemesDefault from "Themes" /* 709 */;
+import noop from "noop" /* 8113 */;
+import map from "map" /* 9102 */;
+import toNativeHorizontalOffset from "toNativeHorizontalOffset" /* 15863 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

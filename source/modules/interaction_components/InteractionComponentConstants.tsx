@@ -1,9 +1,9 @@
-// Module ID: 8020
-// Function ID: 8021
+// Module ID: 8029
+// Function ID: 8030
 // Name: TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS
 // Dependencies: [2]
 
-// Module 8020 (TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS)
+// Module 8029 (TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/interaction_components/InteractionComponentConstants.tsx");

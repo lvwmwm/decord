@@ -1,15 +1,15 @@
-// Module ID: 12067
-// Function ID: 12068
+// Module ID: 12291
+// Function ID: 12292
 // Name: useGuildPowerupNewPerkMarketingVersion
-// Dependencies: [19, 1909, 4121, 4365, 676, 4388, 589, 4407, 4406, 4368, 9731, 2]
+// Dependencies: [19, 1908, 4120, 4365, 673, 4388, 586, 4407, 4406, 4368, 9753, 2]
 // Exports: default
 
-// Module 12067 (useGuildPowerupNewPerkMarketingVersion)
+// Module 12291 (useGuildPowerupNewPerkMarketingVersion)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 ({ GuildPowerupNewPerkMarketingVersion: c5, NEW_PERK_MARKETING_VERSION_TO_POWERUP_SKU_ID_SET: closure_6 } = BoostedGuildTiers);
@@ -23,7 +23,7 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId) {
   let obj = _require(4388);
   let tmp = _require;
   const items = [stateFromStores];
-  stateFromStores = _require(589).useStateFromStores(items, () => {
+  stateFromStores = _require(586).useStateFromStores(items, () => {
     const guild = stateFromStores.getGuild(closure_0);
     let hasItem;
     if (guild != null) {
@@ -32,7 +32,7 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId) {
     }
     return hasItem;
   });
-  const obj2 = _require(589);
+  const obj2 = _require(586);
   const tmp4 = stateFromStores;
   let serverThemeEnabled = _require(4407).useServerThemeEnabled(guildId, "useGuildPowerupNewPerkMarketingVersion");
   const obj3 = _require(4407);
@@ -41,7 +41,7 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId) {
   }
   obj4 = _require(4406);
   const items1 = [serverThemeEnabled, tmp4];
-  const stateFromStores1 = tmp(589).useStateFromStores(items1, () => serverThemeEnabled.can(closure_1_8.MANAGE_GUILD, stateFromStores.getGuild(closure_0)));
+  const stateFromStores1 = tmp(586).useStateFromStores(items1, () => serverThemeEnabled.can(closure_1_8.MANAGE_GUILD, stateFromStores.getGuild(closure_0)));
   const items2 = [arg1, gameServerEnabled, stateFromStores, serverThemeEnabled, guildId, stateFromStores1];
   return gameServerEnabled.useMemo(() => {
     let tmp2;
@@ -63,7 +63,7 @@ export default function useGuildPowerupNewPerkMarketingVersion(guildId) {
           if (obj.canUseMobileServerTagSettings(guildId)) {
             return stateFromStores1.GUILD_TAG;
           }
-          obj = guildId(9731);
+          obj = guildId(9753);
         }
       }
     }

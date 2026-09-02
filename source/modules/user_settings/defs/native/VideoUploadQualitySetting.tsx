@@ -1,16 +1,16 @@
-// Module ID: 15062
-// Function ID: 15063
+// Module ID: 15291
+// Function ID: 15292
 // Name: radio
-// Dependencies: [1304, 7884, 589, 15061, 4166, 1236, 11068, 2]
+// Dependencies: [1303, 7893, 586, 15290, 4166, 1233, 11288, 2]
 
-// Module 15062 (radio)
-import initialize from "initialize" /* 589 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 15291 (radio)
+import initialize from "initialize" /* 586 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import UserSettingsText from "UserSettingsText" /* 15061 */;
-import closure_2 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
-import createToggle from "createToggle" /* 11068 */;
+import UserSettingsText from "UserSettingsText" /* 15290 */;
+import closure_2 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
+import { VideoQualitySettings } from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
+import createToggle from "createToggle" /* 11288 */;
 
 require = arg1;
 createToggle = {

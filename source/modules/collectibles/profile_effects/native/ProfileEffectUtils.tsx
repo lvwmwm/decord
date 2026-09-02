@@ -1,12 +1,12 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8526
+// Function ID: 8527
 // Name: shouldAnimate
-// Dependencies: [8514, 2]
+// Dependencies: [8527, 2]
 // Exports: calculateProfileEffectHeight, shouldAnimate
 
-// Module 8513 (shouldAnimate)
+// Module 8526 (shouldAnimate)
 import set from "set" /* 2 */;
-import DEFAULT_PROFILE_EFFECT_WH_RATIO from "DEFAULT_PROFILE_EFFECT_WH_RATIO" /* 8514 */;
+import DEFAULT_PROFILE_EFFECT_WH_RATIO from "DEFAULT_PROFILE_EFFECT_WH_RATIO" /* 8527 */;
 
 const result = set.fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectUtils.tsx");
 

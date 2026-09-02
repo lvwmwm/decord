@@ -1,11 +1,11 @@
-// Module ID: 10382
-// Function ID: 10383
+// Module ID: 10404
+// Function ID: 10405
 // Name: useStickerPickerStore
-// Dependencies: [644, 705, 2]
+// Dependencies: [641, 702, 2]
 
-// Module 10382 (useStickerPickerStore)
+// Module 10404 (useStickerPickerStore)
 import set from "set" /* 2 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 let obj = keys.create((arg0) => {
   closure_0 = arg0;

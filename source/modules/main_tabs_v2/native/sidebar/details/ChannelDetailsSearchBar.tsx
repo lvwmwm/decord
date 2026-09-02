@@ -1,11 +1,11 @@
-// Module ID: 16210
-// Function ID: 16211
-// Dependencies: [19, 11906, 7620, 10654, 21, 4478, 11939, 11866, 11927, 11930, 16211, 5068, 1236, 10367, 2]
+// Module ID: 16442
+// Function ID: 16443
+// Dependencies: [19, 12129, 7630, 10875, 21, 4478, 12162, 12089, 12150, 12153, 16443, 5076, 1233, 10389, 2]
 
-// Module 16210
+// Module 16442
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "prototype" /* 11906 */;
-import { setIsChannelDetailsSearchActive as closure_5 } from "useChannelDetailsStore" /* 7620 */;
+import closure_4 from "prototype" /* 12129 */;
+import { setIsChannelDetailsSearchActive as closure_5 } from "useChannelDetailsStore" /* 7630 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

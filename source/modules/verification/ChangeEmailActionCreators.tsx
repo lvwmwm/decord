@@ -1,14 +1,14 @@
-// Module ID: 7700
-// Function ID: 7701
+// Module ID: 7709
+// Function ID: 7710
 // Name: _confirmEmailChange
-// Dependencies: [5, 676, 4713, 503, 2]
+// Dependencies: [5, 673, 4713, 500, 2]
 // Exports: confirmEmailChange, sendConfirmationCode
 
-// Module 7700 (_confirmEmailChange)
-import encodeProperties from "encodeProperties" /* 503 */;
+// Module 7709 (_confirmEmailChange)
+import encodeProperties from "encodeProperties" /* 500 */;
 import _modDef4713 from "module_4713" /* 4713 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 require = arg1;
 function _confirmEmailChange() {
@@ -25,7 +25,7 @@ function _confirmEmailChange() {
       obj2[0] = callback;
       obj1[1] = obj2;
       const obj3 = { event: null };
-      obj3[0] = callback(503).NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE;
+      obj3[0] = callback(500).NetworkActionNames.USER_ACCOUNT_EMAIL_CHANGE_VERIFY_CODE;
       obj1[2] = obj3;
       yield obj5.post(obj1);
       return body.body;

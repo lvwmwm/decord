@@ -1,12 +1,12 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 15829
+// Function ID: 15830
 // Name: isTimingConfig
-// Dependencies: [1297, 2]
+// Dependencies: [1296, 2]
 // Exports: isTimingConfig
 
-// Module 15598 (isTimingConfig)
+// Module 15829 (isTimingConfig)
 import set from "set" /* 2 */;
-import Button from "Button" /* 1297 */;
+import Button from "Button" /* 1296 */;
 
 function isTimingConfig(duration) {
   return null != duration && null != duration.duration;

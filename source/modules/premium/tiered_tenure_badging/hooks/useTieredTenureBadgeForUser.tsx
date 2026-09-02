@@ -1,11 +1,11 @@
-// Module ID: 8967
-// Function ID: 8968
+// Module ID: 8981
+// Function ID: 8982
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7366, 589, 7379, 2]
+// Dependencies: [7375, 586, 7388, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 8967 (useTieredTenureBadgeForUser)
-import closure_2 from "createUserWidgetFromServer" /* 7366 */;
+// Module 8981 (useTieredTenureBadgeForUser)
+import closure_2 from "createUserWidgetFromServer" /* 7375 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useTieredTenureBadgeForUser.tsx");
@@ -13,7 +13,7 @@ const result = require("set").fileFinishedImporting("modules/premium/tiered_tenu
 export const useTieredTenureBadgeForUser = function useTieredTenureBadgeForUser(id) {
   const _require = id;
   const items = [closure_2];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let userProfile = null;
     if (null != closure_0) {
       userProfile = closure_1_2.getUserProfile(tmp);

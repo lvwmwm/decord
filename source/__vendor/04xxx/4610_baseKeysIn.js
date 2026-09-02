@@ -1,15 +1,15 @@
 // Module ID: 4610
 // Function ID: 4611
 // Name: baseKeysIn
-// Dependencies: [606, 4611, 630]
+// Dependencies: [603, 4611, 627]
 
 // Module 4610 (baseKeysIn)
-import isObject from "isObject" /* 606 */;
+import isObject from "isObject" /* 603 */;
 
 
 export default function baseKeysIn(obj) {
   if (isObject(obj)) {
-    const tmp3 = tmp(630)(obj);
+    const tmp3 = tmp(627)(obj);
     const items = [];
     for (const key10017 in arg0) {
       let tmp10 = key10017;

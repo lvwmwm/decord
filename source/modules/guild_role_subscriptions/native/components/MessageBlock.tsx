@@ -1,13 +1,13 @@
-// Module ID: 11791
-// Function ID: 11792
+// Module ID: 12014
+// Function ID: 12015
 // Name: MessageBlock
-// Dependencies: [19, 17, 21, 712, 4478, 1297, 2]
+// Dependencies: [19, 17, 21, 709, 4478, 1296, 2]
 // Exports: default
 
-// Module 11791 (MessageBlock)
+// Module 12014 (MessageBlock)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -37,9 +37,9 @@ let closure_6 = createCacheKey.createStyles((arg0) => {
   obj1.width = "100%";
   obj[0] = obj1;
   if (obj.RED === arg0) {
-    let TEXT_FEEDBACK_WARNING = tmp6(712).colors.TEXT_FEEDBACK_CRITICAL;
+    let TEXT_FEEDBACK_WARNING = tmp6(709).colors.TEXT_FEEDBACK_CRITICAL;
   } else if (tmp.YELLOW === arg0) {
-    TEXT_FEEDBACK_WARNING = tmp6(712).colors.TEXT_FEEDBACK_WARNING;
+    TEXT_FEEDBACK_WARNING = tmp6(709).colors.TEXT_FEEDBACK_WARNING;
   }
   obj[1] = { textAlign: "center", color: TEXT_FEEDBACK_WARNING };
   return obj;

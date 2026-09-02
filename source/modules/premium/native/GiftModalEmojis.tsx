@@ -1,10 +1,10 @@
-// Module ID: 8501
-// Function ID: 8502
+// Module ID: 8514
+// Function ID: 8515
 // Name: items
-// Dependencies: [32, 19, 17, 21, 4478, 4138, 5585, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 4138, 5593, 2]
 // Exports: default
 
-// Module 8501 (items)
+// Module 8514 (items)
 import noopAll from "noop" /* 19 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;

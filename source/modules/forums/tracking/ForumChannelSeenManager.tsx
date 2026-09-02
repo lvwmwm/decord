@@ -1,19 +1,19 @@
-// Module ID: 7642
-// Function ID: 7643
+// Module ID: 7651
+// Function ID: 7652
 // Name: prototype
-// Dependencies: [7643, 7641, 7511, 7513, 2]
+// Dependencies: [7652, 7650, 7521, 7523, 2]
 // Exports: getForumPostSeenManagerId, markForumPostItemAsSeen, markForumPostItemAsUnseen
 
-// Module 7642 (prototype)
+// Module 7651 (prototype)
 import set from "set" /* 2 */;
-import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen" /* 7641 */;
-import maybeMarkSeen from "maybeMarkSeen" /* 7643 */;
+import markAnalyticsFeedItemSeen from "markAnalyticsFeedItemSeen" /* 7650 */;
+import maybeMarkSeen from "maybeMarkSeen" /* 7652 */;
 
 const AnalyticsFeedItemSeenManager = maybeMarkSeen.AnalyticsFeedItemSeenManager;
 const prototype = function ForumChannelSeenManager(channelId) {
   channelId = channelId.channelId;
   let obj = { windowId: channelId.windowId, isPaused: channelId.isPaused, id: null };
-  const FORUM_CHANNEL = _require(7643).AnalyticsFeedTypes.FORUM_CHANNEL;
+  const FORUM_CHANNEL = _require(7652).AnalyticsFeedTypes.FORUM_CHANNEL;
   obj[2] = concat(FORUM_CHANNEL, "_", channelId);
   tmp = new tmp(obj, tmp3, tmp2, FORUM_CHANNEL, concat, "_", new.target);
   // ThrowIfThisInitialized (0x7c)
@@ -56,7 +56,7 @@ const prototype = function ForumChannelSeenManager(channelId) {
   };
   tmp.guildId = channelId.guildId;
   tmp.channelId = channelId;
-  tmp.sessionId = _require(7513).getForumChannelSessionId(channelId);
+  tmp.sessionId = _require(7523).getForumChannelSessionId(channelId);
   return tmp;
 }.prototype;
 class prototype extends AnalyticsFeedItemSeenManager {

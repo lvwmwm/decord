@@ -1,9 +1,9 @@
-// Module ID: 7336
-// Function ID: 7337
+// Module ID: 7345
+// Function ID: 7346
 // Name: CollectiblesMarketingReleaseType
 // Dependencies: [2]
 
-// Module 7336 (CollectiblesMarketingReleaseType)
+// Module 7345 (CollectiblesMarketingReleaseType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectiblesMarketingReleaseType.tsx");

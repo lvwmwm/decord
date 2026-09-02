@@ -1,13 +1,13 @@
-// Module ID: 13431
-// Function ID: 13432
+// Module ID: 13654
+// Function ID: 13655
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 13432, 1236, 13433, 13421, 1891, 5355, 2]
+// Dependencies: [19, 21, 13655, 1233, 13656, 13644, 1890, 5363, 2]
 // Exports: default
 
-// Module 13431 (NUFVoiceChannelsTemplate)
+// Module 13654 (NUFVoiceChannelsTemplate)
 import noopAll from "noop" /* 19 */;
-import NUFActionSheetTemplateDefault from "NUFActionSheetTemplate" /* 13432 */;
-import registerAssetDefault from "registerAsset" /* 13433 */;
+import NUFActionSheetTemplateDefault from "NUFActionSheetTemplate" /* 13655 */;
+import registerAssetDefault from "registerAsset" /* 13656 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -17,13 +17,13 @@ let result = require("set").fileFinishedImporting("modules/nuf_channels/native/c
 export default function NUFVoiceChannelsTemplate(channel) {
   channel = channel.channel;
   let obj = { title: null, description: null, imageSrc: null, CTALabel: null, onCTAPress: null };
-  const intl = channel(1236).intl;
-  obj[0] = intl.string(channel(1236).t.w5HAll);
-  const intl2 = channel(1236).intl;
-  obj[1] = intl2.string(channel(1236).t.Ww4hhq);
+  const intl = channel(1233).intl;
+  obj[0] = intl.string(channel(1233).t.w5HAll);
+  const intl2 = channel(1233).intl;
+  obj[1] = intl2.string(channel(1233).t.Ww4hhq);
   obj[2] = registerAssetDefault;
-  const intl3 = channel(1236).intl;
-  obj[3] = intl3.string(channel(1236).t.eIi3Om);
+  const intl3 = channel(1233).intl;
+  obj[3] = intl3.string(channel(1233).t.eIi3Om);
   obj[4] = function onCTAPress() {
     const result = closure_1_1(closure_1_3[5]).handleVoiceChannelsOnboard();
     const obj = closure_1_1(closure_1_3[5]);

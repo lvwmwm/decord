@@ -1,11 +1,11 @@
-// Module ID: 7434
-// Function ID: 7435
+// Module ID: 7444
+// Function ID: 7445
 // Name: set
-// Dependencies: [4466, 1471, 7435, 7436, 2]
+// Dependencies: [4466, 1470, 7445, 7446, 2]
 // Exports: getApplicationCodedLinkData, isApplicationCodedLink, isApplicationCodedLinkMobileSupported
 
-// Module 7434 (set)
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
+// Module 7444 (set)
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
 import CodedLinkType from "CodedLinkType" /* 4466 */;
 import set from "set" /* 2 */;
 
@@ -28,7 +28,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
     if (tmp(4466).CodedLinkType.APP_OAUTH2_LINK !== type) {
       if (tmp(4466).CodedLinkType.APP_DIRECTORY_STOREFRONT !== type) {
         if (tmp(4466).CodedLinkType.APP_DIRECTORY_STOREFRONT_SKU === type) {
-          let tmpResult = tmp(7435);
+          let tmpResult = tmp(7445);
           const result = tmpResult.parseStorefrontSkuCodedLink(code);
           let tmp5 = null;
           if (null != result) {
@@ -42,7 +42,7 @@ export const getApplicationCodedLinkData = function getApplicationCodedLinkData(
           obj = { type: null, applicationId: null, params: null };
           obj[0] = type;
           obj[1] = code;
-          tmpResult = tmp(7436);
+          tmpResult = tmp(7446);
           obj[2] = tmpResult.extractActivityBookmarkParams(url);
           return obj;
         }

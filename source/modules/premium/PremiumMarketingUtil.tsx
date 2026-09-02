@@ -1,15 +1,15 @@
-// Module ID: 12526
-// Function ID: 12527
+// Module ID: 12750
+// Function ID: 12751
 // Name: navigateToPremiumHomePage
-// Dependencies: [676, 6245, 7332, 1222, 2]
+// Dependencies: [673, 6254, 7341, 1219, 2]
 // Exports: navigateToNitroHomePage, navigateToPremiumHomePage
 
-// Module 12526 (navigateToPremiumHomePage)
+// Module 12750 (navigateToPremiumHomePage)
 import set from "set" /* 2 */;
-import transitionTo from "transitionTo" /* 1222 */;
-import openUserSettings from "openUserSettings" /* 6245 */;
-import pushLayer from "pushLayer" /* 7332 */;
-import ME from "ME" /* 676 */;
+import transitionTo from "transitionTo" /* 1219 */;
+import openUserSettings from "openUserSettings" /* 6254 */;
+import pushLayer from "pushLayer" /* 7341 */;
+import ME from "ME" /* 673 */;
 
 ({ Routes: obj1, UserSettingsSections: c3 } = ME);
 const result = set.fileFinishedImporting("modules/premium/PremiumMarketingUtil.tsx");

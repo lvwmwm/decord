@@ -1,13 +1,13 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12451
+// Function ID: 12452
 // Name: ContactSyncLandingImage
-// Dependencies: [19, 17, 21, 4478, 12228, 12229, 2]
+// Dependencies: [19, 17, 21, 4478, 12452, 12453, 2]
 // Exports: default
 
-// Module 12227 (ContactSyncLandingImage)
+// Module 12451 (ContactSyncLandingImage)
 import noopAll from "noop" /* 19 */;
-import registerAssetDefault from "registerAsset" /* 12228 */;
-import registerAssetDefault2 from "registerAsset" /* 12229 */;
+import registerAssetDefault from "registerAsset" /* 12452 */;
+import registerAssetDefault2 from "registerAsset" /* 12453 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

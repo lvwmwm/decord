@@ -1,12 +1,12 @@
-// Module ID: 16411
-// Function ID: 16412
+// Module ID: 16646
+// Function ID: 16647
 // Name: isGuildEligibleForStageChannels
-// Dependencies: [1909, 676, 589, 2]
+// Dependencies: [1908, 673, 586, 2]
 // Exports: isGuildEligibleForStageChannels, useGuildEligibleForStageChannels
 
-// Module 16411 (isGuildEligibleForStageChannels)
-import closure_2 from "createGuildRecordFromRust" /* 1909 */;
-import { GuildFeatures } from "ME" /* 676 */;
+// Module 16646 (isGuildEligibleForStageChannels)
+import closure_2 from "createGuildRecordFromRust" /* 1908 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/stage_channels/useGuildEligibleForStageChannels.tsx");
@@ -30,7 +30,7 @@ export const useGuildEligibleForStageChannels = function useGuildEligibleForStag
   const _require = arg0;
   let items = [closure_2];
   const items1 = [arg0];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const items = [closure_1_2];
     [obj] = items;
     const guild = obj.getGuild(closure_0);

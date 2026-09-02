@@ -1,15 +1,15 @@
-// Module ID: 7500
-// Function ID: 7501
+// Module ID: 7510
+// Function ID: 7511
 // Name: startBackgroundTask
-// Dependencies: [5, 17, 500, 7501, 7502, 2]
+// Dependencies: [5, 17, 1234, 7511, 7512, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 7500 (startBackgroundTask)
-import set2 from "set" /* 500 */;
-import initializeDefault from "initialize" /* 7501 */;
+// Module 7510 (startBackgroundTask)
+import set2 from "set" /* 1234 */;
+import initializeDefault from "initialize" /* 7511 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 require = arg1;
 function startBackgroundTask(arg0) {
@@ -23,8 +23,8 @@ function startBackgroundTask(arg0) {
       obj = { title: null, content: null, priority: null, type: null, usesGateway: false };
       obj[0] = title;
       obj[1] = content;
-      obj[2] = tmp(7502).ServiceNotificationPriority.MEDIUM;
-      obj[3] = tmp(7502).ServiceNotificationType.FILE_UPLOAD;
+      obj[2] = tmp(7512).ServiceNotificationPriority.MEDIUM;
+      obj[3] = tmp(7512).ServiceNotificationType.FILE_UPLOAD;
       return initializeDefault.addServiceHandler(obj);
     }
   } else {

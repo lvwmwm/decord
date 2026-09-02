@@ -1,17 +1,17 @@
-// Module ID: 14355
-// Function ID: 14356
+// Module ID: 14578
+// Function ID: 14579
 // Name: AutomatedUnderageAppealStatus
-// Dependencies: [19, 17, 8701, 8690, 676, 21, 1236, 4474, 6052, 1297, 589, 4478, 712, 14356, 11483, 11456, 14357, 4945, 11455, 698, 7347, 7352, 4445, 14358, 2009, 14359, 14361, 2]
+// Dependencies: [19, 17, 8716, 8705, 673, 21, 1233, 4474, 6060, 1296, 586, 4478, 709, 14579, 11706, 11679, 14580, 4945, 11678, 695, 7356, 7361, 4445, 14581, 2008, 14582, 14584, 2]
 // Exports: default
 
-// Module 14355 (AutomatedUnderageAppealStatus)
-import initialize from "initialize" /* 589 */;
-import ThemesDefault from "Themes" /* 712 */;
+// Module 14578 (AutomatedUnderageAppealStatus)
+import initialize from "initialize" /* 586 */;
+import ThemesDefault from "Themes" /* 709 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8701 */;
-import { AgeCheckStatus } from "SafetyHubView" /* 8690 */;
-import ME from "ME" /* 676 */;
+import closure_8 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8716 */;
+import { AgeCheckStatus } from "SafetyHubView" /* 8705 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -22,7 +22,7 @@ function AutomatedUnderageAppealStatus() {
   const stateFromStores = obj.useStateFromStores(items, () => ageCheckStatus.getAgeCheckStatus());
   if (AgeCheckStatus.SUCCESS === stateFromStores) {
     obj = { message: null, type: null };
-    const intl4 = tmp(1236).intl;
+    const intl4 = tmp(1233).intl;
     obj = { loginHook: null };
     obj[0] = function loginHook(children) {
       return callback2(callback(table[7]).Text, {
@@ -34,26 +34,26 @@ function AutomatedUnderageAppealStatus() {
         children
       });
     };
-    obj[0] = intl4.format(tmp(1236).t.hyh4ls, obj);
-    obj[1] = tmp(1297).HelpMessageTypes.SUCCESS;
+    obj[0] = intl4.format(tmp(1233).t.hyh4ls, obj);
+    obj[1] = tmp(1296).HelpMessageTypes.SUCCESS;
     let obj4 = obj;
   } else if (tmp4.ERROR === stateFromStores) {
     obj1 = { message: null, type: null };
-    const intl3 = tmp(1236).intl;
-    obj1[0] = intl3.string(tmp(1236).t["4sILBU"]);
-    obj1[1] = tmp(1297).HelpMessageTypes.ERROR;
+    const intl3 = tmp(1233).intl;
+    obj1[0] = intl3.string(tmp(1233).t["4sILBU"]);
+    obj1[1] = tmp(1296).HelpMessageTypes.ERROR;
     obj4 = obj1;
   } else if (tmp4.FAILURE === stateFromStores) {
     const obj2 = { message: null, type: null };
-    const intl2 = tmp(1236).intl;
-    obj2[0] = intl2.string(tmp(1236).t["40R63o"]);
-    obj2[1] = tmp(1297).HelpMessageTypes.ERROR;
+    const intl2 = tmp(1233).intl;
+    obj2[0] = intl2.string(tmp(1233).t["40R63o"]);
+    obj2[1] = tmp(1296).HelpMessageTypes.ERROR;
     obj4 = obj2;
   } else if (tmp4.LOADING === stateFromStores) {
     const obj3 = { message: null, type: null };
-    const intl = tmp(1236).intl;
-    obj3[0] = intl.string(tmp(1236).t["nhhy/R"]);
-    obj3[1] = tmp(1297).HelpMessageTypes.INFO;
+    const intl = tmp(1233).intl;
+    obj3[0] = intl.string(tmp(1233).t["nhhy/R"]);
+    obj3[1] = tmp(1296).HelpMessageTypes.INFO;
     obj4 = obj3;
   } else {
     obj4 = { message: null, type: null };
@@ -64,7 +64,7 @@ function AutomatedUnderageAppealStatus() {
     const obj5 = { messageType: null, children: null };
     obj5[0] = type;
     obj5[1] = tmp5;
-    tmp6 = callback(tmp(1297).HelpMessage, obj5);
+    tmp6 = callback(tmp(1296).HelpMessage, obj5);
   }
   return tmp6;
 }

@@ -1,13 +1,13 @@
-// Module ID: 665
-// Function ID: 666
+// Module ID: 662
+// Function ID: 663
 // Name: getSystemLocale
-// Dependencies: [17, 666, 2]
+// Dependencies: [17, 663, 2]
 // Exports: getSystemLocale
 
-// Module 665 (getSystemLocale)
+// Module 662 (getSystemLocale)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcing from "enforcing" /* 666 */;
+import enforcing from "enforcing" /* 663 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/i18n/getSystemLocale.tsx");
 

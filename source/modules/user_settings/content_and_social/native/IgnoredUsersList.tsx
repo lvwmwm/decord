@@ -1,21 +1,21 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14637
+// Function ID: 14638
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4130, 21, 4478, 712, 5953, 5973, 1297, 14408, 1236, 5553, 4474, 5992, 14415, 589, 2]
+// Dependencies: [19, 17, 4130, 21, 4478, 709, 5961, 5981, 1296, 14631, 1233, 5561, 4474, 6000, 14638, 586, 2]
 // Exports: default
 
-// Module 14414 (IgnoredUsersList)
+// Module 14637 (IgnoredUsersList)
 import noopAll from "noop" /* 19 */;
-import initialize from "initialize" /* 589 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
+import initialize from "initialize" /* 586 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5553 */;
-import context from "context" /* 5953 */;
-import contextDefault from "context" /* 5953 */;
-import TableRowGroupTitle from "TableRowGroupTitle" /* 5992 */;
-import getBlockedSource from "getBlockedSource" /* 14408 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
+import context from "context" /* 5961 */;
+import contextDefault from "context" /* 5961 */;
+import TableRowGroupTitle from "TableRowGroupTitle" /* 6000 */;
+import getBlockedSource from "getBlockedSource" /* 14631 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
 import jsxProd from "jsxProd" /* 21 */;

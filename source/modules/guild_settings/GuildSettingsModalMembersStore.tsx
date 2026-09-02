@@ -1,13 +1,13 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11633
+// Function ID: 11634
 // Name: handleStopEditingRoles
-// Dependencies: [1992, 676, 589, 709, 2]
+// Dependencies: [1991, 673, 586, 706, 2]
 
-// Module 11410 (handleStopEditingRoles)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "trackCommunicationDisabled" /* 1992 */;
-import { FormStates } from "ME" /* 676 */;
+// Module 11633 (handleStopEditingRoles)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_0 from "trackCommunicationDisabled" /* 1991 */;
+import { FormStates } from "ME" /* 673 */;
 
 function handleStopEditingRoles() {
   c2 = null;

@@ -1,15 +1,15 @@
-// Module ID: 709
-// Function ID: 710
+// Module ID: 706
+// Function ID: 707
 // Name: dispatcher
-// Dependencies: [710, 651, 595, 589, 809, 2]
+// Dependencies: [707, 648, 592, 586, 806, 2]
 
-// Module 709 (dispatcher)
+// Module 706 (dispatcher)
 import set from "set" /* 2 */;
-import initialize from "initialize" /* 589 */;
-import Storage2 from "Storage" /* 595 */;
-import logger from "logger" /* 651 */;
-import STORAGE_KEY_LOG_DISPATCHES from "STORAGE_KEY_LOG_DISPATCHES" /* 710 */;
-import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 809 */;
+import initialize from "initialize" /* 586 */;
+import Storage2 from "Storage" /* 592 */;
+import logger from "logger" /* 648 */;
+import STORAGE_KEY_LOG_DISPATCHES from "STORAGE_KEY_LOG_DISPATCHES" /* 707 */;
+import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 806 */;
 
 let obj = { Early: 0, [0]: "Early", Database: 1, [1]: "Database", Default: 2, [2]: "Default" };
 const Storage = Storage2.Storage;

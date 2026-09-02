@@ -1,7 +1,7 @@
 // Module ID: 4211
 // Function ID: 4212
 // Name: BaseRive
-// Dependencies: [19, 17, 21, 4212, 1356, 4262, 4263, 4264, 2]
+// Dependencies: [19, 17, 21, 4212, 1355, 4262, 4263, 4264, 2]
 // Exports: useArtboardBinding, useBooleanBinding, useColorBinding, useEnumBinding, useImageBinding, useNumberBinding, useStringBinding, useTriggerBinding
 
 // Module 4211 (BaseRive)

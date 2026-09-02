@@ -1,12 +1,12 @@
-// Module ID: 809
-// Function ID: 810
+// Module ID: 806
+// Function ID: 807
 // Name: addSentryBreadcrumb
-// Dependencies: [810, 2]
+// Dependencies: [807, 2]
 // Exports: default
 
-// Module 809 (addSentryBreadcrumb)
+// Module 806 (addSentryBreadcrumb)
 import set from "set" /* 2 */;
-import addBreadcrumbAll from "addBreadcrumb" /* 810 */;
+import addBreadcrumbAll from "addBreadcrumb" /* 807 */;
 
 const result = set.fileFinishedImporting("modules/sentry/addSentryBreadcrumb.native.tsx");
 

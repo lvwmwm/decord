@@ -1,11 +1,11 @@
-// Module ID: 9457
-// Function ID: 9458
+// Module ID: 9470
+// Function ID: 9471
 // Name: initialize
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 9457 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 9470 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let closure_0 = { usageByApplicationId: {}, shelfOrder: [] };
 const PersistedStore = initializeDefault.PersistedStore;

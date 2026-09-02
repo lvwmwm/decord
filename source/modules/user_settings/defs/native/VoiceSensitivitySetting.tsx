@@ -1,17 +1,17 @@
-// Module ID: 14846
-// Function ID: 14847
-// Dependencies: [17, 4529, 7884, 21, 4478, 589, 10067, 9781, 11068, 1236, 2]
+// Module ID: 15075
+// Function ID: 15076
+// Dependencies: [17, 4529, 7893, 21, 4478, 586, 10089, 9803, 11288, 1233, 2]
 
-// Module 14846
+// Module 15075
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import MobileUserSettings from "MobileUserSettings" /* 7884 */;
-import VoiceSensitivityDefault from "VoiceSensitivity" /* 10067 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import MobileUserSettings from "MobileUserSettings" /* 7893 */;
+import VoiceSensitivityDefault from "VoiceSensitivity" /* 10089 */;
 import closure_4 from "_detectH265HardwareDecode" /* 4529 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import createToggle from "createToggle" /* 11068 */;
+import createToggle from "createToggle" /* 11288 */;
 
 const View = get_ActivityIndicator.View;
 const jsx = jsxProd.jsx;
@@ -23,7 +23,7 @@ let obj = {
   },
   parent: MobileUserSettings.MobileUserSettings.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
-    let obj = inputMode(589);
+    let obj = inputMode(586);
     const items = [closure_4];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;
@@ -57,7 +57,7 @@ const createStaticResult = createToggle.createStatic({
   },
   parent: MobileUserSettings.MobileUserSettings.VOICE,
   useDescription: function useVoiceSensitivitySettingDescription() {
-    let obj = inputMode(589);
+    let obj = inputMode(586);
     const items = [closure_4];
     const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ inputMode: store.getMode(), vadThreshold: store.getModeOptions().threshold, vadAutoThreshold: store.getModeOptions().autoThreshold }));
     inputMode = stateFromStoresObject.inputMode;

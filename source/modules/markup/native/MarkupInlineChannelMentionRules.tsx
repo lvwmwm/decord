@@ -1,10 +1,10 @@
-// Module ID: 10209
-// Function ID: 10210
+// Module ID: 10231
+// Function ID: 10232
 // Name: inlineChannelMentionReact
-// Dependencies: [19, 21, 8005, 1297, 1471, 2]
+// Dependencies: [19, 21, 8014, 1296, 1470, 2]
 // Exports: createInlineChannelReact, inlineChannelMentionReact, inlineChannelReact
 
-// Module 10209 (inlineChannelMentionReact)
+// Module 10231 (inlineChannelMentionReact)
 import noopAll from "noop" /* 19 */;
 import { jsxs } from "jsxProd" /* 21 */;
 
@@ -15,14 +15,14 @@ const result = require("set").fileFinishedImporting("modules/markup/native/Marku
 
 export const inlineChannelMentionReact = function inlineChannelMentionReact(inContent, output, key) {
   if (null == inContent.inContent) {
-    let smartOutputResult = u1F4AC(8005).smartOutput(inContent, output, key);
-    const obj3 = u1F4AC(8005);
+    let smartOutputResult = u1F4AC(8014).smartOutput(inContent, output, key);
+    const obj3 = u1F4AC(8014);
   } else {
     const obj = { children: null };
-    const items = [output(inContent.inContent, key), " \u203A ", u1F4AC(8005).smartOutput(inContent, output, key)];
+    const items = [output(inContent.inContent, key), " \u203A ", u1F4AC(8014).smartOutput(inContent, output, key)];
     obj[0] = items;
-    smartOutputResult = jsxs(u1F4AC(1297).LegacyText, { children: null }, key.key);
-    const obj2 = u1F4AC(8005);
+    smartOutputResult = jsxs(u1F4AC(1296).LegacyText, { children: null }, key.key);
+    const obj2 = u1F4AC(8014);
   }
   return smartOutputResult;
 };

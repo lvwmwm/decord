@@ -1,15 +1,15 @@
-// Module ID: 15868
-// Function ID: 15869
+// Module ID: 16099
+// Function ID: 16100
 // Name: fetchChannelAffinitiesV2
-// Dependencies: [6054, 15866, 676, 709, 530, 2]
+// Dependencies: [6062, 16097, 673, 706, 527, 2]
 // Exports: fetchChannelAffinitiesV2
 
-// Module 15868 (fetchChannelAffinitiesV2)
-import sendRequest from "sendRequest" /* 530 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "hasConsented" /* 6054 */;
-import closure_4 from "map" /* 15866 */;
-import ME from "ME" /* 676 */;
+// Module 16099 (fetchChannelAffinitiesV2)
+import sendRequest from "sendRequest" /* 527 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_3 from "hasConsented" /* 6062 */;
+import closure_4 from "map" /* 16097 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 ({ Endpoints: c5, Consents: closure_6 } = ME);
@@ -34,7 +34,7 @@ export const fetchChannelAffinitiesV2 = function fetchChannelAffinitiesV2() {
       obj[1] = num;
       const value = HTTP.get(obj);
       let nextPromise = value.then((body) => {
-        let obj = callback(709);
+        let obj = callback(706);
         obj = {
           type: "LOAD_CHANNEL_AFFINITIES_V2_SUCCESS",
           affineChannels: channel_affinities.map((channelId) => {
@@ -50,7 +50,7 @@ export const fetchChannelAffinitiesV2 = function fetchChannelAffinitiesV2() {
         channel_affinities = body.body.channel_affinities;
         obj.dispatch(obj);
       }, () => {
-        callback(709).dispatch({ type: "LOAD_CHANNEL_AFFINITIES_V2_FAILURE" });
+        callback(706).dispatch({ type: "LOAD_CHANNEL_AFFINITIES_V2_FAILURE" });
       });
     }
     return nextPromise;

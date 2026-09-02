@@ -1,10 +1,10 @@
-// Module ID: 7664
-// Function ID: 7665
+// Module ID: 7673
+// Function ID: 7674
 // Name: useCurrentUserGuildJoinRequest
-// Dependencies: [4300, 589, 2]
+// Dependencies: [4300, 586, 2]
 // Exports: useCurrentUserGuildJoinRequest
 
-// Module 7664 (useCurrentUserGuildJoinRequest)
+// Module 7673 (useCurrentUserGuildJoinRequest)
 import closure_2 from "handleGatewayJoinRequestUpdate" /* 4300 */;
 
 const require = arg1;
@@ -14,7 +14,7 @@ export const useCurrentUserGuildJoinRequest = function useCurrentUserGuildJoinRe
   const _require = guildId;
   const items = [closure_2];
   const items1 = [guildId];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let request = null;
     if (null != closure_0) {
       request = closure_1_2.getRequest(tmp);

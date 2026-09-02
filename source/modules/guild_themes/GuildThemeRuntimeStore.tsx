@@ -1,18 +1,18 @@
 // Module ID: 4363
 // Function ID: 4364
 // Name: snapshotSelectedGuildId
-// Dependencies: [4364, 1909, 4299, 676, 4368, 1908, 12, 589, 709, 2]
+// Dependencies: [4364, 1908, 4299, 673, 4368, 1907, 12, 586, 706, 2]
 
 // Module 4363 (snapshotSelectedGuildId)
 import apply from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import cloneGuildThemeSettings from "cloneGuildThemeSettings" /* 1908 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import cloneGuildThemeSettings from "cloneGuildThemeSettings" /* 1907 */;
 import VANITY_URL_POWERUP_SKU_ID from "VANITY_URL_POWERUP_SKU_ID" /* 4368 */;
 import closure_2 from "calculateAppliedBoosts" /* 4364 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 import closure_4 from "handleConnectionOpen" /* 4299 */;
-import { GuildFeatures } from "ME" /* 676 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 require = arg1;
 function snapshotSelectedGuildId(guildId) {

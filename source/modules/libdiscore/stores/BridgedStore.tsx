@@ -1,12 +1,12 @@
-// Module ID: 1914
-// Function ID: 1915
+// Module ID: 1913
+// Function ID: 1914
 // Name: ensureValidMode
-// Dependencies: [1915, 2]
+// Dependencies: [1914, 2]
 // Exports: ensureValidMode
 
-// Module 1914 (ensureValidMode)
+// Module 1913 (ensureValidMode)
 import set from "set" /* 2 */;
-import fluxApi from "fluxApi" /* 1915 */;
+import fluxApi from "fluxApi" /* 1914 */;
 
 const result = set.fileFinishedImporting("modules/libdiscore/stores/BridgedStore.tsx");
 

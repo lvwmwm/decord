@@ -1,17 +1,17 @@
-// Module ID: 4122
-// Function ID: 4123
+// Module ID: 4121
+// Function ID: 4122
 // Name: initialize
-// Dependencies: [1430, 1992, 1909, 1922, 676, 589, 709, 2]
+// Dependencies: [1429, 1991, 1908, 1921, 673, 586, 706, 2]
 
-// Module 4122 (initialize)
+// Module 4121 (initialize)
 import set2 from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
-import closure_1 from "trackCommunicationDisabled" /* 1992 */;
-import closure_2 from "createGuildRecordFromRust" /* 1909 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import closure_1 from "trackCommunicationDisabled" /* 1991 */;
+import closure_2 from "createGuildRecordFromRust" /* 1908 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 
 const isGuildLurker = GuildNSFWContentLevel.isGuildLurker;
 ({ JoinGuildSources: c4, ME: c5 } = ME);

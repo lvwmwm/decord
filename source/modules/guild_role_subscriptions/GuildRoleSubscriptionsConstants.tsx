@@ -1,12 +1,12 @@
-// Module ID: 14801
-// Function ID: 14802
+// Module ID: 15030
+// Function ID: 15031
 // Name: MAX_SUBSCRIPTION_TIERS
-// Dependencies: [1924, 505, 2]
+// Dependencies: [1923, 502, 2]
 
-// Module 14801 (MAX_SUBSCRIPTION_TIERS)
+// Module 15030 (MAX_SUBSCRIPTION_TIERS)
 import set from "set" /* 2 */;
-import sum from "sum" /* 505 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import sum from "sum" /* 502 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 const SubscriptionIntervalTypes = GuildFeatures.SubscriptionIntervalTypes;
 const items = [{ interval: SubscriptionIntervalTypes.DAY, interval_count: 1 }, { interval: SubscriptionIntervalTypes.DAY, interval_count: 7 }];

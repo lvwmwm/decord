@@ -1,19 +1,19 @@
-// Module ID: 13221
-// Function ID: 13222
+// Module ID: 13443
+// Function ID: 13444
 // Name: textLogoTier2
-// Dependencies: [19, 17, 7177, 1924, 21, 4478, 712, 4940, 691, 4139, 13222, 13223, 7977, 8356, 10492, 10493, 5601, 2]
+// Dependencies: [19, 17, 7186, 1923, 21, 4478, 709, 4940, 688, 4139, 13444, 13445, 7986, 8365, 10713, 10714, 5609, 2]
 // Exports: default
 
-// Module 13221 (textLogoTier2)
+// Module 13443 (textLogoTier2)
 import noopAll from "noop" /* 19 */;
-import keys from "keys" /* 691 */;
-import ThemesDefault from "Themes" /* 712 */;
+import keys from "keys" /* 688 */;
+import ThemesDefault from "Themes" /* 709 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import PressableCard from "PressableCard" /* 5601 */;
+import PressableCard from "PressableCard" /* 5609 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { getPremiumGradientColor } from "items" /* 7177 */;
-import { PremiumTypes } from "GuildFeatures" /* 1924 */;
+import { getPremiumGradientColor } from "items" /* 7186 */;
+import { PremiumTypes } from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -44,11 +44,11 @@ export default function _default(premiumType) {
   }
   obj[3] = textLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    let tmp5Result = tmp5(13222);
+    let tmp5Result = tmp5(13444);
   } else if (tmp10.TIER_1 === premiumType) {
-    tmp5Result = tmp5(13223);
+    tmp5Result = tmp5(13445);
   } else if (tmp10.TIER_2 === premiumType) {
-    tmp5Result = tmp5(7977);
+    tmp5Result = tmp5(7986);
   }
   obj[4] = tmp5Result;
   obj[4] = closure_7(closure_4, obj);
@@ -64,11 +64,11 @@ export default function _default(premiumType) {
   obj = { accessible: false, importantForAccessibility: "no", style: items1, source: null };
   items1[1] = wumpusLogoTier2;
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result = tmp5(8356);
+    tmp5Result = tmp5(8365);
   } else if (tmp10.TIER_1 === premiumType) {
-    tmp5Result = tmp5(10492);
+    tmp5Result = tmp5(10713);
   } else if (tmp10.TIER_2 === premiumType) {
-    tmp5Result = tmp5(10493);
+    tmp5Result = tmp5(10714);
   }
   obj1 = { children: null };
   obj[3] = tmp5Result;

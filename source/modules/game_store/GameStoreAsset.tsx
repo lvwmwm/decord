@@ -1,10 +1,10 @@
-// Module ID: 14154
-// Function ID: 14155
+// Module ID: 14377
+// Function ID: 14378
 // Name: transformStoreAssetFromServer
 // Dependencies: [2]
 // Exports: transformStoreAssetFromServer
 
-// Module 14154 (transformStoreAssetFromServer)
+// Module 14377 (transformStoreAssetFromServer)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/game_store/GameStoreAsset.tsx");

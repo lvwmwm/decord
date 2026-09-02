@@ -1,15 +1,15 @@
-// Module ID: 9587
-// Function ID: 9588
+// Module ID: 9600
+// Function ID: 9601
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 676, 1924, 4542, 21, 4478, 712, 9528, 9169, 5953, 4217, 4479, 1297, 9588, 9589, 698, 8393, 8217, 4139, 5068, 5493, 8215, 2]
+// Dependencies: [19, 17, 673, 1923, 4542, 21, 4478, 709, 9541, 9183, 5961, 4217, 4479, 1296, 9601, 9602, 695, 8402, 8226, 4139, 5076, 5501, 8224, 2]
 // Exports: default
 
-// Module 9587 (StreamQualityLiveIndicator)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9600 (StreamQualityLiveIndicator)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { AnalyticEvents } from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import { AnalyticEvents } from "ME" /* 673 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 import { ResolutionTypes } from "DesktopSources" /* 4542 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

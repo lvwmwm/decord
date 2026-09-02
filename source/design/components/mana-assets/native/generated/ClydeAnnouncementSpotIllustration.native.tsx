@@ -1,14 +1,14 @@
-// Module ID: 6411
-// Function ID: 6412
+// Module ID: 6420
+// Function ID: 6421
 // Name: ClydeAnnouncementSpotIllustration
-// Dependencies: [21, 5493, 6412, 2]
+// Dependencies: [21, 5501, 6421, 2]
 // Exports: ClydeAnnouncementSpotIllustration
 
-// Module 6411 (ClydeAnnouncementSpotIllustration)
+// Module 6420 (ClydeAnnouncementSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6412 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6421 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/ClydeAnnouncementSpotIllustration.native.tsx");

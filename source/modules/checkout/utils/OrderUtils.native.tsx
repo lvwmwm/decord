@@ -1,10 +1,10 @@
-// Module ID: 10586
-// Function ID: 10587
+// Module ID: 10807
+// Function ID: 10808
 // Name: _discardDraftOrder
-// Dependencies: [5, 4460, 7174, 2]
+// Dependencies: [5, 4460, 7183, 2]
 // Exports: discardDraftOrder
 
-// Module 10586 (_discardDraftOrder)
+// Module 10807 (_discardDraftOrder)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 import { OrderStatus } from "CustomCheckoutFlow" /* 4460 */;
 
@@ -50,7 +50,7 @@ function _discardDraftOrder() {
               ({ checkoutSucceeded: c0, order: c1 } = callback);
               c5 = 1;
               c6 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp8) {

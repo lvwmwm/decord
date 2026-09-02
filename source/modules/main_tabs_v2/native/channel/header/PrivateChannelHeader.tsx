@@ -1,16 +1,16 @@
-// Module ID: 12930
-// Function ID: 12931
+// Module ID: 13152
+// Function ID: 13153
 // Name: GroupDmMemberCount
-// Dependencies: [19, 1387, 4569, 4130, 1922, 676, 21, 1297, 4478, 712, 589, 12927, 4674, 1236, 9239, 12931, 4322, 12933, 2]
+// Dependencies: [19, 1386, 4569, 4130, 1921, 673, 21, 1296, 4478, 709, 586, 13149, 4674, 1233, 9253, 13153, 4322, 13155, 2]
 
-// Module 12930 (GroupDmMemberCount)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 13152 (GroupDmMemberCount)
+import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
 import closure_5 from "sortActivity" /* 4569 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -18,7 +18,7 @@ const require = arg1;
 function GroupDmMemberCount(channel) {
   channel = channel.channel;
   let items = [closure_7, closure_5];
-  const stateFromStores = channel(589).useStateFromStores(items, () => {
+  const stateFromStores = channel(586).useStateFromStores(items, () => {
     const items = [...channel.recipients];
     const currentUser = closure_1_7.getCurrentUser();
     let str;
@@ -44,8 +44,8 @@ function GroupDmMemberCount(channel) {
       return arg0 + num;
     }, 0);
   });
-  const obj = channel(589);
-  return channel(12933).renderMemberCountText(stateFromStores, channel.recipients.length);
+  const obj = channel(586);
+  return channel(13155).renderMemberCountText(stateFromStores, channel.recipients.length);
 }
 let c3 = importAllResult;
 ({ ChannelTypes: closure_8, StatusTypes: c9 } = ME);

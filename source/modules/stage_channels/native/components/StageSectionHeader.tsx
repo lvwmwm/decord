@@ -1,14 +1,14 @@
-// Module ID: 10136
-// Function ID: 10137
+// Module ID: 10158
+// Function ID: 10159
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 4478, 712, 4217, 4479, 4474, 1297, 5943, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4217, 4479, 4474, 1296, 5951, 2]
 // Exports: default
 
-// Module 10136 (StageSectionHeader)
+// Module 10158 (StageSectionHeader)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import _modDef4217 from "module_4217" /* 4217 */;
-import registerAssetDefault from "registerAsset" /* 5943 */;
+import registerAssetDefault from "registerAsset" /* 5951 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -62,7 +62,7 @@ export default function StageSectionHeader(collapsed) {
   }
   items1[1] = tmp5Result;
   const obj3 = { style: tmp.collapseButton, children: null };
-  const obj4 = { style: animatedStyle, children: closure_6(collapsed(1297).Icon, { source: registerAssetDefault, style: tmp.collapseIcon }) };
+  const obj4 = { style: animatedStyle, children: closure_6(collapsed(1296).Icon, { source: registerAssetDefault, style: tmp.collapseIcon }) };
   obj3[1] = closure_6(_modDef4217.View, obj4);
   items1[2] = closure_6(closure_4, obj3);
   obj1[2] = items1;

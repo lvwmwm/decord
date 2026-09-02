@@ -1,16 +1,16 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13394
+// Function ID: 13395
 // Name: handlePress
-// Dependencies: [17, 4153, 21, 4478, 712, 4445, 13173, 2009, 1236, 3017, 4474, 2]
+// Dependencies: [17, 4153, 21, 4478, 709, 4445, 13395, 2008, 1233, 3016, 4474, 2]
 // Exports: default
 
-// Module 13172 (handlePress)
+// Module 13394 (handlePress)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
-import messagesProxyDefault from "messagesProxy" /* 3017 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
+import messagesProxyDefault from "messagesProxy" /* 3016 */;
 import SubscriptionStatusTypes from "SubscriptionStatusTypes" /* 4153 */;
 import ACTION_SHEET_HEIGHT_HALFDefault from "ACTION_SHEET_HEIGHT_HALF" /* 4445 */;
 import Text from "Text" /* 4474 */;
@@ -23,7 +23,7 @@ function handlePress() {
   const intl = getSystemLocale.intl;
   obj = { premiumGroupProductName: callback() };
   obj[0] = intl.formatToPlainString(messagesProxyDefault["5xN/C1"], obj);
-  obj.openLazy(asyncRequireImpl(13173, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
+  obj.openLazy(asyncRequireImpl(13395, dependencyMap.paths), "PremiumGroupEducationActionSheet", obj);
 }
 ({ TouchableOpacity: c3, View: c4 } = get_ActivityIndicator);
 let closure_5 = SubscriptionStatusTypes.getPremiumGroupProductName;

@@ -1,15 +1,15 @@
-// Module ID: 1348
-// Function ID: 1349
+// Module ID: 1347
+// Function ID: 1348
 // Name: ThemeTypes
-// Dependencies: [505, 1306, 1349, 1236, 12, 2]
+// Dependencies: [502, 1305, 1348, 1233, 12, 2]
 // Exports: isSelectableGradientPreset
 
-// Module 1348 (ThemeTypes)
+// Module 1347 (ThemeTypes)
 import set from "set" /* 2 */;
-import sum from "sum" /* 505 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import create from "create" /* 1306 */;
-import ClientThemeType from "ClientThemeType" /* 1349 */;
+import sum from "sum" /* 502 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import create from "create" /* 1305 */;
+import ClientThemeType from "ClientThemeType" /* 1348 */;
 import apply from "apply" /* 12 */;
 
 const ThemeTypes = sum.ThemeTypes;

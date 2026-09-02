@@ -1,8 +1,8 @@
-// Module ID: 11169
-// Function ID: 11170
-// Dependencies: [19, 21, 1236, 6237, 7764, 11170, 6008, 2]
+// Module ID: 11390
+// Function ID: 11391
+// Dependencies: [19, 21, 1233, 6246, 7773, 11391, 6016, 2]
 
-// Module 11169
+// Module 11390
 import importAllResult from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;
 
@@ -33,7 +33,7 @@ const memoResult = importAllResult.memo((guildId) => {
     obj[closure_1_5] = obj;
     return obj;
   }, items);
-  return jsx(guildId(6008).Navigator, { screens: memo, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
+  return jsx(guildId(6016).Navigator, { screens: memo, initialRouteName: GUILD_ROLE_CONNECTIONS_SCREEN });
 });
 const result = require("set").fileFinishedImporting("modules/connections/native/GuildRoleConnectionsModal.tsx");
 

@@ -1,20 +1,20 @@
-// Module ID: 8488
-// Function ID: 8489
+// Module ID: 8501
+// Function ID: 8502
 // Name: getSubscriptionPlans
-// Dependencies: [32, 19, 4144, 676, 1924, 38, 8489, 4139, 6104, 589, 8491, 4075, 2]
+// Dependencies: [32, 19, 4144, 673, 1923, 38, 8502, 4139, 6112, 586, 8504, 4074, 2]
 // Exports: didBeginPurchaseFlowOnFractionalPremium, getOrFetchSubscriptionPlan, getSubscriptionPauseDurations, getSubscriptionPlans, getSubscriptionSKUs, subscriptionCanDowngrade, subscriptionCanSwitchImmediately, useGetOrFetchSubscriptionPlan
 
-// Module 8488 (getSubscriptionPlans)
+// Module 8501 (getSubscriptionPlans)
 import _modDef38 from "module_38" /* 38 */;
-import hooksDefault from "hooks" /* 4075 */;
+import hooksDefault from "hooks" /* 4074 */;
 import getPremiumPlanItem from "getPremiumPlanItem" /* 4139 */;
-import prototype from "prototype" /* 8489 */;
-import PauseDuration from "PauseDuration" /* 8491 */;
+import prototype from "prototype" /* 8502 */;
+import PauseDuration from "PauseDuration" /* 8504 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import closure_5 from "addSubscriptionPlan" /* 4144 */;
-import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 673 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 require = arg1;
 ({ SubscriptionStatusTypes: closure_6, SubscriptionTypes: error } = ME);
@@ -102,8 +102,8 @@ export const getOrFetchSubscriptionPlan = function getOrFetchSubscriptionPlan(su
     const tmp9 = null != table[subscriptionPlanId];
     const result = getPremiumPlanItem.castPremiumSubscriptionAsSkuId(tmp5.skuId);
     if (!closure_5.isFetchingForSKU(result)) {
-      const subscriptionPlansForSKU = tmp12(6104).fetchSubscriptionPlansForSKU(result, closure_1);
-      const tmp12Result = tmp12(6104);
+      const subscriptionPlansForSKU = tmp12(6112).fetchSubscriptionPlansForSKU(result, closure_1);
+      const tmp12Result = tmp12(6112);
     }
     const obj3 = getPremiumPlanItem;
   }

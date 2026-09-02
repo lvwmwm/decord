@@ -1,14 +1,14 @@
-// Module ID: 6187
-// Function ID: 6188
+// Module ID: 6196
+// Function ID: 6197
 // Name: trackSearchStart
-// Dependencies: [5401, 676, 636, 698, 4134, 5454, 6188, 2]
+// Dependencies: [5409, 673, 633, 695, 4134, 5462, 6197, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 6187 (trackSearchStart)
-import debounceDefault from "debounce" /* 636 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_3 from "getEmojiToGroupId" /* 5401 */;
-import ME from "ME" /* 676 */;
+// Module 6196 (trackSearchStart)
+import debounceDefault from "debounce" /* 633 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import closure_3 from "getEmojiToGroupId" /* 5409 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function trackSearchStart(location_stack, channel_id) {
@@ -104,8 +104,8 @@ export const searchSounds = function searchSounds(arg0, availableSounds, stateFr
     }
     let result1 = sum6 > 0;
     if (0 < sum6) {
-      result1 = lib(6188).canUseSoundboardSound(stateFromStores, name, tmp3);
-      const obj4 = lib(6188);
+      result1 = lib(6197).canUseSoundboardSound(stateFromStores, name, tmp3);
+      const obj4 = lib(6197);
     }
     let sum7 = sum6;
     if (result1) {

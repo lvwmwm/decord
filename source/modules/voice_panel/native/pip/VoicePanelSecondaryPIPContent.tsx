@@ -1,17 +1,17 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 16982
+// Function ID: 16983
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 1386, 9464, 1387, 4506, 9466, 9465, 21, 4478, 11839, 16673, 589, 4111, 10730, 9488, 4217, 16601, 6006, 7796, 16200, 9604, 2]
+// Dependencies: [19, 1385, 9477, 1386, 4506, 9479, 9478, 21, 4478, 12062, 16908, 586, 4110, 10951, 9501, 4217, 16836, 6014, 7805, 16432, 9617, 2]
 // Exports: default
 
-// Module 16747 (VoicePanelSecondaryPIPContent)
+// Module 16982 (VoicePanelSecondaryPIPContent)
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "participantFromServer" /* 1386 */;
-import closure_5 from "map" /* 9464 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "participantFromServer" /* 1385 */;
+import closure_5 from "map" /* 9477 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import { ActivityLayoutMode } from "items3" /* 4506 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9466 */;
-import FrameLayoutModes from "FrameLayoutModes" /* 9465 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9479 */;
+import FrameLayoutModes from "FrameLayoutModes" /* 9478 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

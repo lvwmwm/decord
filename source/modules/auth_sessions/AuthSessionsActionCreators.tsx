@@ -1,13 +1,13 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14778
+// Function ID: 14779
 // Name: _fetchAuthSessions
-// Dependencies: [5, 676, 530, 709, 2]
+// Dependencies: [5, 673, 527, 706, 2]
 // Exports: clearAuthSessions, fetchAuthSessions, logOutSessions
 
-// Module 14555 (_fetchAuthSessions)
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 14778 (_fetchAuthSessions)
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _fetchAuthSessions() {
@@ -15,7 +15,7 @@ function _fetchAuthSessions() {
   const tmp = callback(function*() {
     const callback = tmp2;
     closure_0 = tmp5;
-    const HTTP = closure_1_0(530).HTTP;
+    const HTTP = closure_1_0(527).HTTP;
     obj1 = { url: null, rejectWithError: false };
     obj1[0] = closure_1_4.AUTH_SESSIONS;
     closure_0 = yield HTTP.get(obj1);
@@ -24,7 +24,7 @@ function _fetchAuthSessions() {
       const user_sessions = body.user_sessions;
     }
     if (null != user_sessions) {
-      const obj = callback(709);
+      const obj = callback(706);
       const obj4 = { type: "FETCH_AUTH_SESSIONS_SUCCESS", sessions: null };
       obj4[1] = closure_0.body.user_sessions;
       obj.dispatch(obj4);

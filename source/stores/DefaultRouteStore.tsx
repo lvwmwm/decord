@@ -1,14 +1,14 @@
 // Module ID: 4303
 // Function ID: 4304
 // Name: initialize
-// Dependencies: [676, 589, 595, 709, 2]
+// Dependencies: [673, 586, 592, 706, 2]
 
 // Module 4303 (initialize)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import Storage3 from "Storage" /* 595 */;
-import ME2 from "ME" /* 676 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import Storage3 from "Storage" /* 592 */;
+import ME2 from "ME" /* 673 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const Routes = ME2.Routes;
 let obj = { lastViewedPath: null, lastViewedNonVoicePath: null };

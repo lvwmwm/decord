@@ -1,19 +1,19 @@
-// Module ID: 11593
-// Function ID: 11594
+// Module ID: 11816
+// Function ID: 11817
 // Name: ForumPostList
-// Dependencies: [32, 19, 17, 1394, 21, 4478, 6122, 11575, 11585, 11594, 11597, 2]
+// Dependencies: [32, 19, 17, 1393, 21, 4478, 6130, 11798, 11808, 11817, 11820, 2]
 // Exports: default
 
-// Module 11593 (ForumPostList)
+// Module 11816 (ForumPostList)
 import noopAll from "noop" /* 19 */;
-import useAvailableTags from "useAvailableTags" /* 6122 */;
-import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11575 */;
-import ForumPostAppliedTagPills from "ForumPostAppliedTagPills" /* 11585 */;
-import ForumPostListBodyDefault from "ForumPostListBody" /* 11594 */;
-import ForumPostListFooterDefault from "ForumPostListFooter" /* 11597 */;
+import useAvailableTags from "useAvailableTags" /* 6130 */;
+import ForumPostPinIconDefault from "ForumPostPinIcon" /* 11798 */;
+import ForumPostAppliedTagPills from "ForumPostAppliedTagPills" /* 11808 */;
+import ForumPostListBodyDefault from "ForumPostListBody" /* 11817 */;
+import ForumPostListFooterDefault from "ForumPostListFooter" /* 11820 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ChannelFlags } from "set" /* 1394 */;
+import { ChannelFlags } from "set" /* 1393 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

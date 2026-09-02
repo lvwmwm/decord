@@ -1,24 +1,24 @@
-// Module ID: 9147
-// Function ID: 9148
+// Module ID: 9161
+// Function ID: 9162
 // Name: EmojiItemLockedOverlay
-// Dependencies: [19, 17, 1302, 9101, 1338, 21, 4478, 712, 500, 689, 1431, 5044, 5068, 5493, 1363, 5586, 5587, 1297, 9148, 2]
+// Dependencies: [19, 17, 1301, 9115, 1337, 21, 4478, 709, 1234, 686, 1430, 5048, 5076, 5501, 1362, 5594, 5595, 1296, 9162, 2]
 
-// Module 9147 (EmojiItemLockedOverlay)
-import set2 from "set" /* 500 */;
-import nDefault from "n" /* 689 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import LockIcon from "LockIcon" /* 5044 */;
-import preloadDefault from "preload" /* 5493 */;
-import ViewDefault from "View" /* 9148 */;
+// Module 9161 (EmojiItemLockedOverlay)
+import nDefault from "n" /* 686 */;
+import ThemesDefault from "Themes" /* 709 */;
+import set2 from "set" /* 1234 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import LockIcon from "LockIcon" /* 5048 */;
+import preloadDefault from "preload" /* 5501 */;
+import ViewDefault from "View" /* 9162 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_4 from "handleThemeChange" /* 1302 */;
-import IMAGE_SIZE from "IMAGE_SIZE" /* 9101 */;
-import { PADDING_VERTICAL } from "ExpressionPickerViewType" /* 1338 */;
+import closure_4 from "handleThemeChange" /* 1301 */;
+import IMAGE_SIZE from "IMAGE_SIZE" /* 9115 */;
+import { PADDING_VERTICAL } from "ExpressionPickerViewType" /* 1337 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 require = arg1;
 function EmojiItemLockedOverlay() {
@@ -71,29 +71,29 @@ function EmojiItem(emoji) {
     obj1[1] = tmp.image;
     const tmp15 = preloadDefault;
     if (tmp7Result.isThemeDark(theme.theme)) {
-      tmp8 = 5586;
+      tmp8 = 5594;
       let tmp14Result = tmp14(tmp8);
     } else {
-      tmp14Result = tmp14(5587);
+      tmp14Result = tmp14(5595);
     }
     obj1[2] = tmp14Result;
     const obj2 = { uri: null };
     obj2[0] = emojiURL;
     obj1[3] = obj2;
     callback(tmp15, obj1);
-    tmp7Result = tmp7(1363);
+    tmp7Result = tmp7(1362);
   } else {
     const obj3 = { allowFontScaling: false, style: null, children: null };
     obj3[1] = tmp.surrogates;
     obj3[2] = emoji.surrogates;
-    const tmp10 = callback(tmp7(1297).LegacyText, obj3);
+    const tmp10 = callback(tmp7(1296).LegacyText, obj3);
     const items1 = [tmp10, ];
     if (disabled) {
       disabled = callback(EmojiItemLockedOverlay, {});
     }
     items1[1] = disabled;
     obj[5] = items1;
-    return closure_8(emoji(5068).PressableOpacity, obj);
+    return closure_8(emoji(5076).PressableOpacity, obj);
   }
 }
 ({ View: c3, StyleSheet } = get_ActivityIndicator);

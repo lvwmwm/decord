@@ -1,12 +1,12 @@
-// Module ID: 11159
-// Function ID: 11160
+// Module ID: 11380
+// Function ID: 11381
 // Name: _bulkClearRecents
-// Dependencies: [5, 676, 1370, 1336, 709, 698, 2]
+// Dependencies: [5, 673, 1369, 1335, 706, 695, 2]
 // Exports: bulkClearRecents
 
-// Module 11159 (_bulkClearRecents)
+// Module 11380 (_bulkClearRecents)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;
 function _bulkClearRecents() {
@@ -67,9 +67,9 @@ function _bulkClearRecents() {
             const obj2 = { type: "BULK_CLEAR_RECENTS", guildId: null, channelIds: null };
             obj2[1] = callback;
             obj2[2] = callback2;
-            callback2(709).dispatch(obj2);
-            const obj5 = callback2(709);
-            callback2(698).track(constants.CHANNEL_LIST_UPDATED, { action_type: "recents_dismissed" });
+            callback2(706).dispatch(obj2);
+            const obj5 = callback2(706);
+            callback2(695).track(constants.CHANNEL_LIST_UPDATED, { action_type: "recents_dismissed" });
             c5 = 3;
             return { value: "HermesInternal", done: null };
           }

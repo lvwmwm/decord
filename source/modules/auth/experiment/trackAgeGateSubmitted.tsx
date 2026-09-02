@@ -1,13 +1,13 @@
-// Module ID: 15550
-// Function ID: 15551
+// Module ID: 15781
+// Function ID: 15782
 // Name: trackAgeGateSubmitted
-// Dependencies: [676, 698, 4075, 2]
+// Dependencies: [673, 695, 4074, 2]
 // Exports: default
 
-// Module 15550 (trackAgeGateSubmitted)
+// Module 15781 (trackAgeGateSubmitted)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/auth/experiment/trackAgeGateSubmitted.tsx");

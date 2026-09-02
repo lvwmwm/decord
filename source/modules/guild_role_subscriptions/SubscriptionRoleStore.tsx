@@ -1,19 +1,19 @@
-// Module ID: 5402
-// Function ID: 5403
+// Module ID: 5410
+// Function ID: 5411
 // Name: computeRolesForGuild
-// Dependencies: [1430, 1986, 1992, 1985, 1909, 1922, 676, 4112, 589, 709, 2]
+// Dependencies: [1429, 1985, 1991, 1984, 1908, 1921, 673, 4111, 586, 706, 2]
 
-// Module 5402 (computeRolesForGuild)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1430 */;
-import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1986 */;
-import isSubscriptionRole from "isSubscriptionRole" /* 4112 */;
-import closure_4 from "trackCommunicationDisabled" /* 1992 */;
-import closure_5 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import ME from "ME" /* 676 */;
+// Module 5410 (computeRolesForGuild)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import GuildNSFWContentLevel from "GuildNSFWContentLevel" /* 1429 */;
+import GuildRoleRecordTypeTag from "GuildRoleRecordTypeTag" /* 1985 */;
+import isSubscriptionRole from "isSubscriptionRole" /* 4111 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import ME from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 function computeRolesForGuild(guildId) {
@@ -50,7 +50,7 @@ function computeRolesForGuild(guildId) {
           if (obj2.isSubscriptionRole(nextResult)) {
             let tmp18 = nextResult;
             let addResult = set.add(tmp15.id);
-            let tmp16Result = tmp16(4112);
+            let tmp16Result = tmp16(4111);
             if (tmp16Result.isSubscriptionRoleAvailableForPurchase(tmp15)) {
               let tmp20 = nextResult;
               let addResult1 = set1.add(tmp15.id);

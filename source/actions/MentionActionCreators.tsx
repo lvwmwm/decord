@@ -1,12 +1,12 @@
-// Module ID: 15996
-// Function ID: 15997
-// Dependencies: [676, 709, 530, 2]
+// Module ID: 16227
+// Function ID: 16228
+// Dependencies: [673, 706, 527, 2]
 
-// Module 15996
+// Module 16227
 import set from "set" /* 2 */;
-import sendRequest from "sendRequest" /* 530 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import ME from "ME" /* 676 */;
+import sendRequest from "sendRequest" /* 527 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import ME from "ME" /* 673 */;
 
 ({ Endpoints: c3, MAX_MENTIONS_PER_FETCH: c4 } = ME);
 const result = set.fileFinishedImporting("actions/MentionActionCreators.tsx");
@@ -44,7 +44,7 @@ export default {
     }
     let obj = dispatcherDefault;
     obj.dispatch({ type: "LOAD_RECENT_MENTIONS", guildId });
-    const HTTP = before(530).HTTP;
+    const HTTP = before(527).HTTP;
     obj = { url: closure_3.MENTIONS, query: { before, limit, guild_id: guildId, roles: flag, everyone: flag2, feature: feature.feature }, retries: 2, oldFormErrors: true, rejectWithError: true };
     const value = HTTP.get(obj);
     return value.then((body) => {

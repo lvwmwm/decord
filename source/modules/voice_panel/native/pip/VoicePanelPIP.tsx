@@ -1,22 +1,22 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 16980
+// Function ID: 16981
 // Name: VoicePanelPIP
-// Dependencies: [32, 19, 17, 1386, 9464, 4728, 11840, 11838, 16669, 9466, 9465, 21, 4478, 11839, 16673, 4217, 16668, 4927, 5652, 10991, 16675, 9579, 589, 4111, 9461, 9469, 8569, 1236, 7796, 16746, 6006, 16747, 16748, 4204, 2]
+// Dependencies: [32, 19, 17, 1385, 9477, 4728, 12063, 12061, 16904, 9479, 9478, 21, 4478, 12062, 16908, 4217, 16903, 4927, 5660, 11211, 16910, 9592, 586, 4110, 9474, 9482, 8584, 1233, 7805, 16981, 6014, 16982, 16983, 4204, 2]
 
-// Module 16745 (VoicePanelPIP)
+// Module 16980 (VoicePanelPIP)
 import ManaContext from "ManaContext" /* 4204 */;
-import context2 from "context" /* 16673 */;
+import context2 from "context" /* 16908 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_7 from "participantFromServer" /* 1386 */;
-import closure_8 from "map" /* 9464 */;
+import closure_7 from "participantFromServer" /* 1385 */;
+import closure_8 from "map" /* 9477 */;
 import closure_9 from "withEqualityFn" /* 4728 */;
-import VoicePanelModes from "VoicePanelModes" /* 11840 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11838 */;
-import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16669 */;
-import { ActivityPanelModes } from "ActivityPanelModes" /* 9466 */;
-import { isLaunched } from "FrameLayoutModes" /* 9465 */;
+import VoicePanelModes from "VoicePanelModes" /* 12063 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12061 */;
+import { VoicePanelPIPModes } from "VoicePanelPIPModes" /* 16904 */;
+import { ActivityPanelModes } from "ActivityPanelModes" /* 9479 */;
+import { isLaunched } from "FrameLayoutModes" /* 9478 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -595,7 +595,7 @@ let closure_35 = importAllResult.memo((transitionState) => {
       };
     }
   }, items1);
-  panelCardStillInPIP = obj.useContext(transitionCleanUp(11839)).panelCardStillInPIP;
+  panelCardStillInPIP = obj.useContext(transitionCleanUp(12062)).panelCardStillInPIP;
   const tmp4 = callback(panelCardStillInPIP.useState(tmp), 2);
   class I {
     constructor() {

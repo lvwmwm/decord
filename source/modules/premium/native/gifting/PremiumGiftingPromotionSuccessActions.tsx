@@ -1,15 +1,15 @@
-// Module ID: 10823
-// Function ID: 10824
+// Module ID: 11043
+// Function ID: 11044
 // Name: PremiumGiftingPromotionSuccessActions
-// Dependencies: [19, 17, 7292, 1948, 1922, 21, 4478, 712, 589, 10477, 1499, 10516, 8492, 10455, 10824, 8522, 1947, 1297, 10793, 4928, 1236, 2]
+// Dependencies: [19, 17, 7301, 1947, 1921, 21, 4478, 709, 586, 10698, 1498, 10737, 8505, 10676, 11044, 8535, 1946, 1296, 11013, 4928, 1233, 2]
 // Exports: default
 
-// Module 10823 (PremiumGiftingPromotionSuccessActions)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11043 (PremiumGiftingPromotionSuccessActions)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { isAvatarDecorationRecord, isNameplateRecord } from "fromServer" /* 7292 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
+import { isAvatarDecorationRecord, isNameplateRecord } from "fromServer" /* 7301 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

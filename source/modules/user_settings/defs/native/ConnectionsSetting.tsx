@@ -1,14 +1,14 @@
-// Module ID: 14559
-// Function ID: 14560
+// Module ID: 14782
+// Function ID: 14783
 // Name: route
-// Dependencies: [676, 11068, 1236, 14560, 14562, 2]
+// Dependencies: [673, 11288, 1233, 14783, 14785, 2]
 
-// Module 14559 (route)
+// Module 14782 (route)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14560 */;
-import createToggle from "createToggle" /* 11068 */;
+import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import PuzzlePieceIcon from "PuzzlePieceIcon" /* 14783 */;
+import createToggle from "createToggle" /* 11288 */;
 
 obj = {
   useTitle() {
@@ -22,7 +22,7 @@ obj = {
 obj = {
   route: ME.UserSettingsSections.CONNECTIONS,
   getComponent() {
-    return require(14562) /* onPress */.default;
+    return require(14785) /* onPress */.default;
   }
 };
 const route = createToggle.createRoute(obj);

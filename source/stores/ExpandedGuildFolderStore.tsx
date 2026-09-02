@@ -1,12 +1,12 @@
-// Module ID: 5382
-// Function ID: 5383
+// Module ID: 5390
+// Function ID: 5391
 // Name: set
-// Dependencies: [1340, 589, 709, 2]
+// Dependencies: [1339, 586, 706, 2]
 
-// Module 5382 (set)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_0 from "handleConnectionClosedOrResumed" /* 1340 */;
+// Module 5390 (set)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_0 from "handleConnectionClosedOrResumed" /* 1339 */;
 import set from "set" /* 2 */;
 
 let set = new Set();

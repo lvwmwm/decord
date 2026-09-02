@@ -1,12 +1,12 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 17528
+// Function ID: 17529
 // Name: useHighlightedCreatorGuildDetails
-// Dependencies: [19, 676, 17293, 1431, 2]
+// Dependencies: [19, 673, 17529, 1430, 2]
 // Exports: default
 
-// Module 17292 (useHighlightedCreatorGuildDetails)
+// Module 17528 (useHighlightedCreatorGuildDetails)
 import closure_2 from "noop" /* 19 */;
-import { MarketingURLs } from "ME" /* 676 */;
+import { MarketingURLs } from "ME" /* 673 */;
 
 let result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/useHighlightedCreatorGuildDetails.tsx");
 

@@ -1,11 +1,11 @@
-// Module ID: 13398
-// Function ID: 13399
+// Module ID: 13621
+// Function ID: 13622
 // Name: getSkuIdForChannel
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 13398 (getSkuIdForChannel)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 13621 (getSkuIdForChannel)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let closure_0 = {};
 const Store = initializeDefault.Store;

@@ -1,9 +1,9 @@
-// Module ID: 17039
-// Function ID: 17040
+// Module ID: 17275
+// Function ID: 17276
 // Name: NativePlayIntegrityModule
 // Dependencies: [17, 2]
 
-// Module 17039 (NativePlayIntegrityModule)
+// Module 17275 (NativePlayIntegrityModule)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 

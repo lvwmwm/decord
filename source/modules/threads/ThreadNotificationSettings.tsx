@@ -1,16 +1,16 @@
-// Module ID: 10171
-// Function ID: 10172
+// Module ID: 10193
+// Function ID: 10194
 // Name: computeThreadNotificationSetting
-// Dependencies: [1387, 4701, 4123, 1235, 676, 1399, 589, 2]
+// Dependencies: [1386, 4701, 4122, 1232, 673, 1398, 586, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10171 (computeThreadNotificationSetting)
-import hasFlag from "hasFlag" /* 1399 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
+// Module 10193 (computeThreadNotificationSetting)
+import hasFlag from "hasFlag" /* 1398 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "updateUserGuildSettingsInternal" /* 4701 */;
-import closure_4 from "storeThread" /* 4123 */;
-import { ThreadMemberFlags } from "AbortCodes" /* 1235 */;
-import { UserNotificationSettings } from "ME" /* 676 */;
+import closure_4 from "storeThread" /* 4122 */;
+import { ThreadMemberFlags } from "AbortCodes" /* 1232 */;
+import { UserNotificationSettings } from "ME" /* 673 */;
 
 require = arg1;
 function computeThreadNotificationSetting(channel) {
@@ -33,11 +33,11 @@ function computeThreadNotificationSetting(channel) {
     if (obj6.hasFlag(flagsResult, ThreadMemberFlags.ALL_MESSAGES)) {
       return tmp8.ALL_MESSAGES;
     } else {
-      let tmp6Result = tmp6(1399);
+      let tmp6Result = tmp6(1398);
       if (tmp6Result.hasFlag(flagsResult, tmp8.ONLY_MENTIONS)) {
         return tmp8.ONLY_MENTIONS;
       } else {
-        tmp6Result = tmp6(1399);
+        tmp6Result = tmp6(1398);
         if (tmp6Result.hasFlag(flagsResult, tmp8.NO_MESSAGES)) {
           return tmp8.NO_MESSAGES;
         } else {
@@ -68,5 +68,5 @@ export const useThreadNotificationSetting = function useThreadNotificationSettin
   const _require = channel;
   const items = [closure_4, closure_3, closure_2];
   const items1 = [channel];
-  return _require(589).useStateFromStores(items, () => closure_1_7(closure_0), items1);
+  return _require(586).useStateFromStores(items, () => closure_1_7(closure_0), items1);
 };

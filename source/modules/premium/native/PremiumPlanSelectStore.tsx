@@ -1,12 +1,12 @@
-// Module ID: 13200
-// Function ID: 13201
+// Module ID: 13422
+// Function ID: 13423
 // Name: usePremiumPlanSelectStore
-// Dependencies: [644, 705, 2]
+// Dependencies: [641, 702, 2]
 // Exports: setIsPurchasing
 
-// Module 13200 (usePremiumPlanSelectStore)
+// Module 13422 (usePremiumPlanSelectStore)
 import set from "set" /* 2 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 const obj = keys.create(() => ({ isPurchasing: false, purchasingProductId: null }));
 const result = set.fileFinishedImporting("modules/premium/native/PremiumPlanSelectStore.tsx");
@@ -19,5 +19,5 @@ export const setIsPurchasing = function setIsPurchasing(arg0) {
     tmp = null;
   }
   dependencyMap = tmp;
-  _require(705).batchUpdates(() => closure_1_2.setState({ isPurchasing: closure_0, purchasingProductId: c1 }));
+  _require(702).batchUpdates(() => closure_1_2.setState({ isPurchasing: closure_0, purchasingProductId: c1 }));
 };

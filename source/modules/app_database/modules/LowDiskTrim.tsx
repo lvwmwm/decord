@@ -1,10 +1,10 @@
-// Module ID: 7400
-// Function ID: 7401
+// Module ID: 7409
+// Function ID: 7410
 // Name: handlePostConnectionOpen
-// Dependencies: [7224, 1956, 2]
+// Dependencies: [7233, 1955, 2]
 
-// Module 7400 (handlePostConnectionOpen)
-import importDefaultResult from "result" /* 7224 */;
+// Module 7409 (handlePostConnectionOpen)
+import importDefaultResult from "result" /* 7233 */;
 
 let obj = importDefault;
 class LowDiskTrim {
@@ -34,7 +34,7 @@ prototype["handleFileSystemStoreChanged"] = function handleFileSystemStoreChange
     tmp = self.isLowDisk !== isLowDisk;
   }
   if (tmp) {
-    obj = obj(1956);
+    obj = obj(1955);
     const databaseResult = obj.database();
     if (databaseResult != null) {
       databaseResult.incrementalVacuum();

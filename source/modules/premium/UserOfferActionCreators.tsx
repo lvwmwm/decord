@@ -1,19 +1,19 @@
-// Module ID: 7971
-// Function ID: 7972
+// Module ID: 7980
+// Function ID: 7981
 // Name: getPaymentGateway
-// Dependencies: [5, 7972, 7199, 7195, 1924, 676, 500, 709, 698, 530, 7973, 1208, 4298, 1373, 1370, 2]
+// Dependencies: [5, 7981, 7208, 7204, 1923, 673, 1234, 706, 695, 527, 7982, 1205, 4298, 1372, 1369, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 7971 (getPaymentGateway)
-import set from "set" /* 500 */;
-import sendRequest from "sendRequest" /* 530 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7980 (getPaymentGateway)
+import sendRequest from "sendRequest" /* 527 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import set from "set" /* 1234 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "createFromServer" /* 7972 */;
-import closure_5 from "createFromServer" /* 7199 */;
-import closure_6 from "emitChanges" /* 7195 */;
-import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_7 } from "GuildFeatures" /* 1924 */;
-import ME from "ME" /* 676 */;
+import closure_4 from "createFromServer" /* 7981 */;
+import closure_5 from "createFromServer" /* 7208 */;
+import closure_6 from "emitChanges" /* 7204 */;
+import { PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID as closure_7 } from "GuildFeatures" /* 1923 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function getPaymentGateway() {
@@ -83,7 +83,7 @@ function _fetchUserOffer() {
                   flag = true;
                 }
                 if (obj1 === undefined) {
-                  obj1 = { offerId: "children", paymentGatewayOverride: "c" };
+                  obj1 = { offerId: "disabled", paymentGatewayOverride: "Date" };
                 }
                 throwTypeErrorResult = retries;
                 throwTypeErrorResult = closure_4;
@@ -98,7 +98,7 @@ function _fetchUserOffer() {
                 c13 = undefined;
                 c12 = 1;
                 c13 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else if (1 === tmp7) {
               if (arg0 === 1) {
@@ -309,7 +309,7 @@ function _fetchExistingChurnDiscountOffer() {
     obj1[0] = closure_1_9.CHURN_USER_OFFER;
     yield HTTP.get(obj1);
     c4 = 0;
-    let obj5 = fromServer(709);
+    let obj5 = fromServer(706);
     obj5.dispatch({ type: "BILLING_USER_OFFER_FETCH_FAIL" });
     yield "HermesInternal";
     const offer = arg1.body.offer;
@@ -321,7 +321,7 @@ function _fetchExistingChurnDiscountOffer() {
     if (null != closure_0) {
       fromServer = c4.createFromServer(closure_0);
     }
-    const obj = fromServer(709);
+    const obj = fromServer(706);
     const obj4 = { type: "BILLING_USER_OFFER_FETCH_SUCCESS", userDiscountOffer: null };
     obj4[1] = fromServer;
     obj.dispatch(obj4);
@@ -445,7 +445,7 @@ export const acknowledgeUserOffer = function acknowledgeUserOffer(hasAcknowledge
     if (user_trial_offer == null) {
       user_trial_offer = null;
     }
-    let obj = callback(709);
+    let obj = callback(706);
     let fromServer = null;
     if (null != user_trial_offer) {
       fromServer = closure_5.createFromServer(user_trial_offer);
@@ -464,8 +464,8 @@ export const acknowledgeUserOffer = function acknowledgeUserOffer(hasAcknowledge
     obj.dispatch(obj);
   }).catch((status) => {
     if (404 === status.status) {
-      callback(709).dispatch({ type: "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS", userTrialOffer: null, userDiscount: null, userDiscountOffer: null });
-      const obj = callback(709);
+      callback(706).dispatch({ type: "BILLING_USER_OFFER_ACKNOWLEDGED_SUCCESS", userTrialOffer: null, userDiscount: null, userDiscountOffer: null });
+      const obj = callback(706);
     }
   });
 };
@@ -491,7 +491,7 @@ export const triggerUserOffer = function triggerUserOffer(arg0, arg1, arg2) {
       if (postResultResult.isIOS()) {
         GOOGLE = constants2.APPLE;
       }
-      postResultResult = postResult(500);
+      postResultResult = postResult(1234);
     }
     obj = { payment_gateway: null, trigger_type: null, trigger_location_stack: null, trigger_metadata: null, trigger_uptime_app: null };
     obj[0] = GOOGLE;
@@ -500,7 +500,7 @@ export const triggerUserOffer = function triggerUserOffer(arg0, arg1, arg2) {
     _JSON = JSON;
     obj[3] = JSON.stringify(tmp5);
     obj[4] = obj.getUptimeForTrigger();
-    const HTTP = postResult(530).HTTP;
+    const HTTP = postResult(527).HTTP;
     obj1 = { url: null, body: null, rejectWithError: true };
     obj1[0] = constants.USER_OFFER_TRIGGER;
     obj1[1] = obj;
@@ -532,6 +532,6 @@ export const triggerUserOffer = function triggerUserOffer(arg0, arg1, arg2) {
       obj[5] = fromServer1;
       obj.dispatch(obj);
     });
-    obj4 = _require(500);
+    obj4 = _require(1234);
   }
 };

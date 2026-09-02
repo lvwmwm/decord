@@ -1,10 +1,10 @@
-// Module ID: 658
-// Function ID: 659
+// Module ID: 655
+// Function ID: 656
 // Name: queueTrackingEventMaker
 // Dependencies: [2]
 // Exports: queueTrackingEventMaker
 
-// Module 658 (queueTrackingEventMaker)
+// Module 655 (queueTrackingEventMaker)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/analytics-utils/AnalyticsTrackingActionCreators.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 10598
-// Function ID: 10599
+// Module ID: 10819
+// Function ID: 10820
 // Name: UnifiedGiftModal
-// Dependencies: [32, 19, 21, 4723, 6008, 10599, 1236, 5495, 10600, 10631, 5953, 2]
+// Dependencies: [32, 19, 21, 4723, 6016, 10820, 1233, 5503, 10821, 10852, 5961, 2]
 // Exports: default
 
-// Module 10598 (UnifiedGiftModal)
+// Module 10819 (UnifiedGiftModal)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { jsx } from "jsxProd" /* 21 */;

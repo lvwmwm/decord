@@ -1,16 +1,16 @@
-// Module ID: 10200
-// Function ID: 10201
+// Module ID: 10222
+// Function ID: 10223
 // Name: defaultReactFn
-// Dependencies: [19, 10201, 21, 4473, 8005, 10202, 6002, 4949, 4951, 10207, 5493, 501, 10208, 10209, 1297, 10210, 2]
+// Dependencies: [19, 10223, 21, 4473, 8014, 10224, 6010, 4949, 4951, 10229, 5501, 1235, 10230, 10231, 1296, 10232, 2]
 // Exports: default
 
-// Module 10200 (defaultReactFn)
+// Module 10222 (defaultReactFn)
 import noopAll from "noop" /* 19 */;
 import parseLinkDefault from "parseLink" /* 4951 */;
-import ICON_SIZE from "ICON_SIZE" /* 6002 */;
-import smartOutput from "smartOutput" /* 8005 */;
-import getLayoutStyles from "getLayoutStyles" /* 10202 */;
-import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10201 */;
+import ICON_SIZE from "ICON_SIZE" /* 6010 */;
+import smartOutput from "smartOutput" /* 8014 */;
+import getLayoutStyles from "getLayoutStyles" /* 10224 */;
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10223 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -67,8 +67,8 @@ function createMessagePreviewReactRules(customEmojiSize) {
   obj[num(4949).AST_KEY.HIGHLIGHT] = {
     react(node, output, key) {
       const obj = { children: null };
-      const tmp = callback(10207);
-      obj[0] = num(8005).smartOutput(node, output, key);
+      const tmp = callback(10229);
+      obj[0] = num(8014).smartOutput(node, output, key);
       return callback2(tmp, obj, key.key);
     }
   };
@@ -122,8 +122,8 @@ function createMessagePreviewReactRules(customEmojiSize) {
   obj[num(4949).AST_KEY.SPOILER] = {
     react(node, output, muted) {
       const obj = { disableReveal: true, muted: muted.muted, children: null };
-      const tmp = callback(10208);
-      obj[2] = num(8005).smartOutput(node, output, muted);
+      const tmp = callback(10230);
+      obj[2] = num(8014).smartOutput(node, output, muted);
       return callback2(tmp, obj, muted.key);
     }
   };
@@ -131,8 +131,8 @@ function createMessagePreviewReactRules(customEmojiSize) {
     react(channelId, output, state) {
       let smartOutputResult = null;
       if (obj.isStaticRouteIconType(channelId.channelId)) {
-        smartOutputResult = num(8005).smartOutput(channelId, output, state);
-        const tmpResult = num(8005);
+        smartOutputResult = num(8014).smartOutput(channelId, output, state);
+        const tmpResult = num(8014);
       }
       return smartOutputResult;
     }
@@ -159,15 +159,15 @@ function createMessagePreviewReactRules(customEmojiSize) {
   obj[num(4949).AST_KEY.MENTION] = obj12;
   const obj13 = {};
   const merged13 = Object.assign(parseLinkDefault.RULES[num(undefined, 4949).AST_KEY.CHANNEL_MENTION]);
-  obj13.react = num(10209).inlineChannelMentionReact;
+  obj13.react = num(10231).inlineChannelMentionReact;
   obj[num(4949).AST_KEY.CHANNEL_MENTION] = obj13;
   const obj14 = {};
   const merged14 = Object.assign(parseLinkDefault.RULES[num(undefined, 4949).AST_KEY.ATTACHMENT_LINK]);
   obj14.react = function react(node, output, key) {
     const obj = { children: null };
-    const items = ["\u{1F4CE} ", num(8005).smartOutput(node, output, key)];
+    const items = ["\u{1F4CE} ", num(8014).smartOutput(node, output, key)];
     obj[0] = items;
-    return callback3(num(1297).LegacyText, obj, key.key);
+    return callback3(num(1296).LegacyText, obj, key.key);
   };
   obj[num(4949).AST_KEY.ATTACHMENT_LINK] = obj14;
   const obj15 = {};
@@ -176,22 +176,22 @@ function createMessagePreviewReactRules(customEmojiSize) {
   obj[num(4949).AST_KEY.SOUNDBOARD] = obj15;
   obj[num(4949).AST_KEY.GUILD] = { react: defaultReactFn };
   const obj16 = { react: null };
-  let obj19 = num(10209);
+  let obj19 = num(10231);
   obj16[0] = obj19.createInlineChannelReact("\u{1F4AC}");
   obj[num(4949).AST_KEY.CHANNEL] = obj16;
   const obj17 = {};
   const merged16 = Object.assign(parseLinkDefault.RULES[num(undefined, 4949).AST_KEY.COMMAND_MENTION]);
   obj17.react = function react(node, output, key) {
     const obj = { children: null };
-    const items = ["/", num(8005).smartOutput(node, output, key)];
+    const items = ["/", num(8014).smartOutput(node, output, key)];
     obj[0] = items;
-    return callback3(num(1297).LegacyText, obj, key.key);
+    return callback3(num(1296).LegacyText, obj, key.key);
   };
   obj[num(4949).AST_KEY.COMMAND_MENTION] = obj17;
   const obj18 = {};
   const merged17 = Object.assign(parseLinkDefault.RULES[num(undefined, 4949).AST_KEY.TIMESTAMP]);
   obj18.react = function react(node, arg1, key) {
-    return callback2(callback(10210), { node, style: null }, key.key);
+    return callback2(callback(10232), { node, style: null }, key.key);
   };
   obj[num(4949).AST_KEY.TIMESTAMP] = obj18;
   obj19 = {};
@@ -204,8 +204,8 @@ function createMessagePreviewReactRules(customEmojiSize) {
     }
     let smartOutputResult = null;
     if (null != first1) {
-      smartOutputResult = num(8005).smartOutput(first1, output, state);
-      const obj = num(8005);
+      smartOutputResult = num(8014).smartOutput(first1, output, state);
+      const obj = num(8014);
     }
     return smartOutputResult;
   };

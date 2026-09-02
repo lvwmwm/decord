@@ -1,10 +1,10 @@
 // Module ID: 4601
 // Function ID: 4602
 // Name: initCloneObject
-// Dependencies: [630, 4602, 4603]
+// Dependencies: [627, 4602, 4603]
 
 // Module 4601 (initCloneObject)
-import isPrototype from "isPrototype" /* 630 */;
+import isPrototype from "isPrototype" /* 627 */;
 
 
 export default function initCloneObject(arg0) {

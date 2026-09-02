@@ -1,12 +1,12 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 8037
+// Function ID: 8038
 // Name: getInitialStringSelectOptions
-// Dependencies: [8022, 1955, 2]
+// Dependencies: [8031, 1954, 2]
 // Exports: getInitialStringSelectOptions
 
-// Module 8028 (getInitialStringSelectOptions)
-import PermissionOverwriteType from "PermissionOverwriteType" /* 1955 */;
-import closure_2 from "getInteractionComponentStates" /* 8022 */;
+// Module 8037 (getInitialStringSelectOptions)
+import PermissionOverwriteType from "PermissionOverwriteType" /* 1954 */;
+import closure_2 from "getInteractionComponentStates" /* 8031 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/interaction_components/StringSelectActionComponentUtils.tsx");

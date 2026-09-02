@@ -1,22 +1,22 @@
-// Module ID: 11147
-// Function ID: 11148
+// Module ID: 11368
+// Function ID: 11369
 // Name: maybeStartLurking
-// Dependencies: [5, 1391, 1430, 1387, 1992, 1985, 1909, 4121, 676, 1394, 5468, 5464, 6185, 8646, 8005, 4723, 11148, 2009, 6091, 4445, 11161, 11169, 1471, 4675, 4727, 5355, 2]
+// Dependencies: [5, 1390, 1429, 1386, 1991, 1984, 1908, 4120, 673, 1393, 5476, 5472, 6194, 8661, 8014, 4723, 11369, 2008, 6099, 4445, 11382, 11390, 1470, 4675, 4727, 5363, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11147 (maybeStartLurking)
+// Module 11368 (maybeStartLurking)
 import closure_4 from "asyncGeneratorStep" /* 5 */;
-import { isGuildVocalChannelType } from "createChannelRecord" /* 1391 */;
-import { isGuildLurker } from "GuildNSFWContentLevel" /* 1430 */;
-import closure_7 from "ensureGuildLoaded" /* 1387 */;
-import closure_8 from "trackCommunicationDisabled" /* 1992 */;
-import closure_9 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_10 from "createGuildRecordFromRust" /* 1909 */;
-import closure_11 from "getUncachedChannelPermissions" /* 4121 */;
-import ME from "ME" /* 676 */;
-import { StaticChannelRoute } from "set" /* 1394 */;
-import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 5468 */;
-import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5464 */;
+import { isGuildVocalChannelType } from "createChannelRecord" /* 1390 */;
+import { isGuildLurker } from "GuildNSFWContentLevel" /* 1429 */;
+import closure_7 from "ensureGuildLoaded" /* 1386 */;
+import closure_8 from "trackCommunicationDisabled" /* 1991 */;
+import closure_9 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_10 from "createGuildRecordFromRust" /* 1908 */;
+import closure_11 from "getUncachedChannelPermissions" /* 4120 */;
+import ME from "ME" /* 673 */;
+import { StaticChannelRoute } from "set" /* 1393 */;
+import { GuildOnboardingTab } from "serverPromptToClientPrompt" /* 5476 */;
+import { CHANNELS_AND_ROLES_MODAL_KEY as closure_18 } from "GUILD_ONBOARDING_MODAL_KEY" /* 5472 */;
 
 const require = arg1;
 function maybeStartLurking() {
@@ -173,7 +173,7 @@ function _handleMessagesTapChannel() {
                 let role2;
                 v0 = 1;
                 channelId = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp5) {

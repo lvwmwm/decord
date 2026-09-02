@@ -1,9 +1,9 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 17089
+// Function ID: 17090
 // Name: FORMAT_RE
 // Dependencies: [2]
 
-// Module 16853 (FORMAT_RE)
+// Module 17089 (FORMAT_RE)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/i18n/Constants.tsx");

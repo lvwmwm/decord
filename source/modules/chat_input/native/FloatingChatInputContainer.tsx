@@ -1,11 +1,11 @@
-// Module ID: 11976
-// Function ID: 11977
+// Module ID: 12200
+// Function ID: 12201
 // Name: useKeyboardOpenPaddingStyle
-// Dependencies: [32, 19, 21, 4217, 4197, 712, 1642, 4342, 1626, 4479, 4482, 2]
+// Dependencies: [32, 19, 21, 4217, 4197, 709, 1641, 4342, 1625, 4479, 4482, 2]
 // Exports: default
 
-// Module 11976 (useKeyboardOpenPaddingStyle)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12200 (useKeyboardOpenPaddingStyle)
+import ThemesDefault from "Themes" /* 709 */;
 import _modDef4217 from "module_4217" /* 4217 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
@@ -18,7 +18,7 @@ function useKeyboardOpenPaddingStyle() {
   let obj = token(4197);
   const obj2 = React;
   [tmp5, importDefault] = sharedValue(React.useState(() => {
-    const KeyboardController = token(1642).KeyboardController;
+    const KeyboardController = token(1641).KeyboardController;
     const stateResult = KeyboardController.state();
     let num;
     if (stateResult != null) {
@@ -30,9 +30,9 @@ function useKeyboardOpenPaddingStyle() {
     return num > 0;
   }), 2);
   const effect = React.useEffect(() => {
-    const KeyboardEvents = token(1642).KeyboardEvents;
+    const KeyboardEvents = token(1641).KeyboardEvents;
     closure_0 = KeyboardEvents.addListener("keyboardWillShow", () => lib(true));
-    const KeyboardEvents2 = token(1642).KeyboardEvents;
+    const KeyboardEvents2 = token(1641).KeyboardEvents;
     closure_1 = KeyboardEvents2.addListener("keyboardWillHide", () => lib(false));
     return () => {
       closure_0.remove();
@@ -40,7 +40,7 @@ function useKeyboardOpenPaddingStyle() {
     };
   }, []);
   const tmp4 = sharedValue(React.useState(() => {
-    const KeyboardController = token(1642).KeyboardController;
+    const KeyboardController = token(1641).KeyboardController;
     const stateResult = KeyboardController.state();
     let num;
     if (stateResult != null) {
@@ -53,10 +53,10 @@ function useKeyboardOpenPaddingStyle() {
   }), 2);
   const obj3 = token(4342);
   if (!tmp5) {
-    tmp5 = true === obj3.useKeyboardContextForType(token(1626).KeyboardTypes.SYSTEM).keyboardWillOpen;
+    tmp5 = true === obj3.useKeyboardContextForType(token(1625).KeyboardTypes.SYSTEM).keyboardWillOpen;
   }
   if (!tmp5) {
-    tmp5 = tmp7 !== token(1626).KeyboardTypes.SYSTEM;
+    tmp5 = tmp7 !== token(1625).KeyboardTypes.SYSTEM;
   }
   dependencyMap = tmp5;
   let tmpResult = tmp(4217);

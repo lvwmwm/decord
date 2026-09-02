@@ -1,22 +1,22 @@
-// Module ID: 11174
-// Function ID: 11175
+// Module ID: 11395
+// Function ID: 11396
 // Name: PaypalVanityTag
-// Dependencies: [19, 17, 5352, 21, 4478, 712, 1236, 11175, 11176, 12, 1897, 4474, 1297, 5351, 2]
+// Dependencies: [19, 17, 5360, 21, 4478, 709, 1233, 11396, 11397, 12, 1896, 4474, 1296, 5359, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11174 (PaypalVanityTag)
+// Module 11395 (PaypalVanityTag)
 import applyDefault from "apply" /* 12 */;
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
-import shortenAndLocalizeNumber from "shortenAndLocalizeNumber" /* 1897 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
+import shortenAndLocalizeNumber from "shortenAndLocalizeNumber" /* 1896 */;
 import Text from "Text" /* 4474 */;
-import officialApplicationIds from "officialApplicationIds" /* 5351 */;
-import registerAssetDefault from "registerAsset" /* 11175 */;
-import registerAssetDefault2 from "registerAsset" /* 11176 */;
+import officialApplicationIds from "officialApplicationIds" /* 5359 */;
+import registerAssetDefault from "registerAsset" /* 11396 */;
+import registerAssetDefault2 from "registerAsset" /* 11397 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import OperatorTypes from "OperatorTypes" /* 5352 */;
+import OperatorTypes from "OperatorTypes" /* 5360 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -41,13 +41,13 @@ function VanityMetric(label) {
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1236).intl;
+    const intl = tmp2(1233).intl;
     obj = { name: null, value: null };
     obj[0] = label;
     obj[1] = sum;
-    let children = intl.format(tmp2(1236).t.HLoinF, obj);
+    let children = intl.format(tmp2(1233).t.HLoinF, obj);
   } else {
-    const intl2 = tmp2(1236).intl;
+    const intl2 = tmp2(1233).intl;
     obj = { value: null };
     obj[0] = sum;
     children = intl2.format(label, obj);

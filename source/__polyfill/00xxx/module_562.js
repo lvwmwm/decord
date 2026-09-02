@@ -4,4 +4,4 @@
 
 // Module 562
 
-export default SyntaxError;
+export default Math.abs;

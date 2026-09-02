@@ -1,24 +1,24 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12499
+// Function ID: 12500
 // Name: HubEmailConnectionGuildSelectRow
-// Dependencies: [5, 32, 19, 17, 12257, 21, 4478, 712, 8363, 6004, 1426, 4474, 1236, 1628, 4928, 1297, 1499, 6237, 6235, 12270, 4376, 12265, 2]
+// Dependencies: [5, 32, 19, 17, 12481, 21, 4478, 709, 8372, 6012, 1425, 4474, 1233, 1627, 4928, 1296, 1498, 6246, 6244, 12494, 4376, 12489, 2]
 // Exports: default
 
-// Module 12275 (HubEmailConnectionGuildSelectRow)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import Button from "Button" /* 1297 */;
-import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1426 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+// Module 12499 (HubEmailConnectionGuildSelectRow)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import Button from "Button" /* 1296 */;
+import fromGuildPropertiesWithAdditionalFields from "fromGuildPropertiesWithAdditionalFields" /* 1425 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Text from "Text" /* 4474 */;
 import Button2 from "Button" /* 4928 */;
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
-import Form from "Form" /* 8363 */;
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
+import Form from "Form" /* 8372 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12257 */;
+import { HubEmailConnectionSteps } from "HubEmailConnectionSteps" /* 12481 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

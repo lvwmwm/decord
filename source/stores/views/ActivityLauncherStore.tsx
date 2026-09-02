@@ -1,14 +1,14 @@
-// Module ID: 11062
-// Function ID: 11063
+// Module ID: 11282
+// Function ID: 11283
 // Name: handleActivityStateChanged
-// Dependencies: [9433, 5223, 676, 4362, 709, 589, 2]
+// Dependencies: [9446, 5231, 673, 4362, 706, 586, 2]
 
-// Module 11062 (handleActivityStateChanged)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_3 from "updateActivities" /* 9433 */;
-import closure_4 from "filterPlayingActivities" /* 5223 */;
-import ME from "ME" /* 676 */;
+// Module 11282 (handleActivityStateChanged)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_3 from "updateActivities" /* 9446 */;
+import closure_4 from "filterPlayingActivities" /* 5231 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {

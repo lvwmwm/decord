@@ -1,25 +1,25 @@
-// Module ID: 16489
-// Function ID: 16490
+// Module ID: 16724
+// Function ID: 16725
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 1386, 4494, 9534, 1218, 4529, 676, 4499, 21, 4478, 1297, 712, 9539, 589, 9490, 9529, 4727, 9538, 5071, 9541, 8603, 9558, 9562, 9573, 9592, 9600, 9519, 9559, 9537, 10172, 4217, 4479, 5492, 16490, 1628, 2]
+// Dependencies: [32, 19, 17, 1385, 4494, 9547, 1215, 4529, 673, 4499, 21, 4478, 1296, 709, 9552, 586, 9503, 9542, 4727, 9551, 5079, 9554, 8618, 9571, 9575, 9586, 9605, 9613, 9532, 9572, 9550, 10194, 4217, 4479, 5500, 16725, 1627, 2]
 // Exports: default
 
-// Module 16489 (PictureInPictureGlobal)
-import ThemesDefault from "Themes" /* 712 */;
-import PictureInPicturePositionsDefault from "PictureInPicturePositions" /* 9537 */;
+// Module 16724 (PictureInPictureGlobal)
+import ThemesDefault from "Themes" /* 709 */;
+import PictureInPicturePositionsDefault from "PictureInPicturePositions" /* 9550 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "participantFromServer" /* 1386 */;
+import closure_8 from "participantFromServer" /* 1385 */;
 import closure_9 from "getParticipants" /* 4494 */;
-import { useBestActiveChatInputContainerHeight as closure_10 } from "updateChatInputContainerHeight" /* 9534 */;
-import closure_11 from "fetchFingerprint" /* 1218 */;
+import { useBestActiveChatInputContainerHeight as closure_10 } from "updateChatInputContainerHeight" /* 9547 */;
+import closure_11 from "fetchFingerprint" /* 1215 */;
 import closure_12 from "_detectH265HardwareDecode" /* 4529 */;
-import { PictureInPicturePositions } from "ME" /* 676 */;
+import { PictureInPicturePositions } from "ME" /* 673 */;
 import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import Button from "Button" /* 1297 */;
+import Button from "Button" /* 1296 */;
 
 const require = arg1;
 let c4 = importAllResult;

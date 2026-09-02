@@ -1,15 +1,15 @@
-// Module ID: 16959
-// Function ID: 16960
+// Module ID: 17195
+// Function ID: 17196
 // Name: HolidayEmojiAnimationType
-// Dependencies: [9995, 1236, 16960, 16961, 1373, 2]
+// Dependencies: [10017, 1233, 17196, 17197, 1372, 2]
 
-// Module 16959 (HolidayEmojiAnimationType)
+// Module 17195 (HolidayEmojiAnimationType)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import DismissibleContent from "DismissibleContent" /* 1373 */;
-import Soundpacks from "Soundpacks" /* 9995 */;
-import registerAssetDefault from "registerAsset" /* 16960 */;
-import registerAssetDefault2 from "registerAsset" /* 16961 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import DismissibleContent from "DismissibleContent" /* 1372 */;
+import Soundpacks from "Soundpacks" /* 10017 */;
+import registerAssetDefault from "registerAsset" /* 17196 */;
+import registerAssetDefault2 from "registerAsset" /* 17197 */;
 
 let obj = {
   experiment: null,

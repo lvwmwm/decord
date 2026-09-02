@@ -1,14 +1,14 @@
 // Module ID: 4619
 // Function ID: 4620
 // Name: valueOf
-// Dependencies: [608]
+// Dependencies: [605]
 
 // Module 4619 (valueOf)
-import _mod608 from "module_608" /* 608 */;
+import _mod605 from "module_605" /* 605 */;
 
 let prototype;
-if (_mod608) {
-  prototype = _mod608.prototype;
+if (_mod605) {
+  prototype = _mod605.prototype;
 }
 let valueOf;
 if (prototype) {

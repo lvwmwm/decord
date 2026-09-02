@@ -1,16 +1,16 @@
-// Module ID: 12193
-// Function ID: 12194
+// Module ID: 12417
+// Function ID: 12418
 // Name: useWelcomeScreenEnabled
-// Dependencies: [1391, 1387, 1909, 1981, 676, 589, 2]
+// Dependencies: [1390, 1386, 1908, 1980, 673, 586, 2]
 // Exports: default
 
-// Module 12193 (useWelcomeScreenEnabled)
+// Module 12417 (useWelcomeScreenEnabled)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "handleConnectionOpen" /* 1981 */;
+import ME from "ME" /* 673 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
 
 const isGuildTextChannelType = createChannelRecord.isGuildTextChannelType;
 const GuildFeatures = ME.GuildFeatures;
@@ -20,7 +20,7 @@ export default function useWelcomeScreenEnabled(arg0, arg1) {
   const _require = arg0;
   dependencyMap = arg1;
   const items = [closure_3, closure_4, closure_5];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const guild = closure_1_4.getGuild(closure_1);
     let hasItem;
     if (guild != null) {

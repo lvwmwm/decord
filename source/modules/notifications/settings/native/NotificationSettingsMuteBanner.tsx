@@ -1,13 +1,13 @@
-// Module ID: 10234
-// Function ID: 10235
+// Module ID: 10256
+// Function ID: 10257
 // Name: NotificationSettingsMuteBanner
-// Dependencies: [19, 17, 21, 4478, 712, 4474, 4928, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4474, 4928, 1233, 2]
 // Exports: NotificationSettingsMuteBanner, getMuteBannerSubtitleFromConfig
 
-// Module 10234 (NotificationSettingsMuteBanner)
+// Module 10256 (NotificationSettingsMuteBanner)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import Button from "Button" /* 4928 */;
 import { View } from "get ActivityIndicator" /* 17 */;

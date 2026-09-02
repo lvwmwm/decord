@@ -1,19 +1,19 @@
-// Module ID: 9821
-// Function ID: 9822
+// Module ID: 9843
+// Function ID: 9844
 // Name: computeCallVerification
-// Dependencies: [1218, 4554, 4568, 9822, 9823, 676, 9839, 4544, 4579, 589, 709, 2]
+// Dependencies: [1215, 4554, 4568, 9844, 9845, 673, 9861, 4544, 4579, 586, 706, 2]
 
-// Module 9821 (computeCallVerification)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 9843 (computeCallVerification)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 4579 */;
-import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9839 */;
-import closure_2 from "fetchFingerprint" /* 1218 */;
+import getCurrentUserSigningKey from "getCurrentUserSigningKey" /* 9861 */;
+import closure_2 from "fetchFingerprint" /* 1215 */;
 import closure_3 from "createRTCConnection" /* 4554 */;
 import closure_4 from "initialize" /* 4568 */;
-import closure_5 from "map" /* 9822 */;
-import closure_6 from "initialize" /* 9823 */;
-import { RTCConnectionStates } from "ME" /* 676 */;
+import closure_5 from "map" /* 9844 */;
+import closure_6 from "initialize" /* 9845 */;
+import { RTCConnectionStates } from "ME" /* 673 */;
 
 require = arg1;
 function computeCallVerification() {

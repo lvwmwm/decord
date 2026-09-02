@@ -1,13 +1,13 @@
-// Module ID: 11070
-// Function ID: 11071
+// Module ID: 11290
+// Function ID: 11291
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 11071, 4569, 589, 11075, 2]
+// Dependencies: [32, 19, 11291, 4569, 586, 11295, 2]
 // Exports: default
 
-// Module 11070 (useSubscribeMissingActivities)
+// Module 11290 (useSubscribeMissingActivities)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "handleConnectionOpenOrResumed" /* 11071 */;
+import closure_4 from "handleConnectionOpenOrResumed" /* 11291 */;
 import closure_5 from "sortActivity" /* 4569 */;
 
 const require = arg1;
@@ -49,7 +49,7 @@ export default function useSubscribeMissingActivities(arg0, arg1) {
   first = tmp[0];
   let items1 = [closure_5];
   const items2 = [first];
-  stateFromStoresArray = _require(589).useStateFromStoresArray(items1, () => {
+  stateFromStoresArray = _require(586).useStateFromStoresArray(items1, () => {
     let items = [];
     const item = first.forEach((author) => {
       items = author;

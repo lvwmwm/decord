@@ -1,14 +1,14 @@
-// Module ID: 12642
-// Function ID: 12643
+// Module ID: 12863
+// Function ID: 12864
 // Name: AppleNeutralIcon
-// Dependencies: [19, 21, 712, 4196, 12643, 2]
+// Dependencies: [19, 21, 709, 4196, 12864, 2]
 // Exports: AppleNeutralIcon
 
-// Module 12642 (AppleNeutralIcon)
+// Module 12863 (AppleNeutralIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 12643 */;
+import registerAsset from "registerAsset" /* 12864 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

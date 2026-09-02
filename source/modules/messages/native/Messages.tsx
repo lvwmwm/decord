@@ -1,65 +1,65 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 11278
+// Function ID: 11279
 // Name: MessagesConnected
-// Dependencies: [32, 19, 4470, 1386, 8050, 4519, 11059, 7221, 4494, 10945, 5401, 4391, 6139, 5955, 7864, 7847, 7271, 7203, 8022, 7850, 11060, 7851, 5475, 4734, 8128, 7197, 11061, 7425, 7340, 10982, 4123, 6151, 1996, 1302, 1218, 1387, 7426, 8447, 1992, 1909, 5357, 4462, 4735, 4121, 4569, 4554, 4493, 4496, 7582, 1922, 4497, 4527, 11062, 4555, 676, 1924, 21, 589, 12, 643, 5954, 1471, 4166, 11063, 11070, 11076, 11079, 11083, 7194, 4139, 7890, 5375, 11002, 11003, 7886, 7162, 11123, 4342, 10984, 10724, 10941, 11124, 4733, 10942, 8021, 11125, 11128, 8041, 10890, 7480, 11130, 11132, 5070, 11133, 2]
+// Dependencies: [32, 19, 4470, 1385, 8058, 4519, 11279, 7230, 4494, 11165, 5409, 4391, 6147, 5963, 7873, 7856, 7280, 7212, 8031, 7859, 11280, 7860, 5483, 4734, 8136, 7206, 11281, 7434, 7349, 11202, 4122, 6159, 1995, 1301, 1215, 1386, 7435, 8456, 1991, 1908, 5365, 4462, 4735, 4120, 4569, 4554, 4493, 4496, 7592, 1921, 4497, 4527, 11282, 4555, 673, 1923, 21, 586, 12, 640, 5962, 1470, 4166, 11283, 11290, 11296, 11299, 11303, 7203, 4139, 7899, 5383, 11222, 11223, 7895, 7171, 11344, 4342, 11204, 10945, 11161, 11345, 4733, 11162, 8030, 11346, 11349, 8050, 11110, 7490, 11351, 11353, 5078, 11354, 2]
 
-// Module 11058 (MessagesConnected)
+// Module 11278 (MessagesConnected)
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_6 from "participantFromServer" /* 1386 */;
-import closure_7 from "handleFetchEmbeddedActivityShelfSuccess" /* 8050 */;
+import closure_6 from "participantFromServer" /* 1385 */;
+import closure_7 from "handleFetchEmbeddedActivityShelfSuccess" /* 8058 */;
 import closure_8 from "addApplication" /* 4519 */;
-import closure_9 from "getCurrentBuildOverride" /* 11059 */;
-import closure_10 from "handleClearCaches" /* 7221 */;
+import closure_9 from "getCurrentBuildOverride" /* 11279 */;
+import closure_10 from "handleClearCaches" /* 7230 */;
 import closure_11 from "getParticipants" /* 4494 */;
-import closure_12 from "_toTimestampMs" /* 10945 */;
-import closure_13 from "getEmojiToGroupId" /* 5401 */;
+import closure_12 from "_toTimestampMs" /* 11165 */;
+import closure_13 from "getEmojiToGroupId" /* 5409 */;
 import closure_14 from "getHash" /* 4391 */;
-import closure_15 from "getFpMessageInfo" /* 6139 */;
-import closure_16 from "set" /* 5955 */;
-import closure_17 from "getGuild" /* 7864 */;
-import closure_18 from "handleMessageSendFailedAutomod" /* 7847 */;
-import closure_19 from "scheduledEventSort" /* 7271 */;
-import closure_20 from "handleGuildTemplateResolveSuccess" /* 7203 */;
-import closure_21 from "getInteractionComponentStates" /* 8022 */;
-import closure_22 from "deleteNonce" /* 7850 */;
-import closure_23 from "getMediaPostEmbed" /* 11060 */;
-import closure_24 from "set" /* 7851 */;
-import closure_25 from "recomputeFromAppTokens" /* 5475 */;
+import closure_15 from "getFpMessageInfo" /* 6147 */;
+import closure_16 from "set" /* 5963 */;
+import closure_17 from "getGuild" /* 7873 */;
+import closure_18 from "handleMessageSendFailedAutomod" /* 7856 */;
+import closure_19 from "scheduledEventSort" /* 7280 */;
+import closure_20 from "handleGuildTemplateResolveSuccess" /* 7212 */;
+import closure_21 from "getInteractionComponentStates" /* 8031 */;
+import closure_22 from "deleteNonce" /* 7859 */;
+import closure_23 from "getMediaPostEmbed" /* 11280 */;
+import closure_24 from "set" /* 7860 */;
+import closure_25 from "recomputeFromAppTokens" /* 5483 */;
 import closure_26 from "initialize" /* 4734 */;
-import useMessagePollInteractions from "useMessagePollInteractions" /* 8128 */;
-import closure_29 from "emitChanges" /* 7197 */;
-import closure_30 from "initialize" /* 11061 */;
-import closure_31 from "getState" /* 7425 */;
-import closure_32 from "processMessage" /* 7340 */;
-import closure_33 from "handleQuickSwitcherUpdate" /* 10982 */;
-import closure_34 from "storeThread" /* 4123 */;
-import closure_35 from "updateState" /* 6151 */;
-import closure_36 from "_getSystemLocale" /* 1996 */;
-import closure_37 from "handleThemeChange" /* 1302 */;
-import closure_38 from "fetchFingerprint" /* 1218 */;
-import closure_39 from "ensureGuildLoaded" /* 1387 */;
-import closure_40 from "initialize" /* 7426 */;
-import closure_41 from "updateGiftCode" /* 8447 */;
-import closure_42 from "trackCommunicationDisabled" /* 1992 */;
-import closure_43 from "createGuildRecordFromRust" /* 1909 */;
-import closure_44 from "recomputeGuild" /* 5357 */;
+import useMessagePollInteractions from "useMessagePollInteractions" /* 8136 */;
+import closure_29 from "emitChanges" /* 7206 */;
+import closure_30 from "initialize" /* 11281 */;
+import closure_31 from "getState" /* 7434 */;
+import closure_32 from "processMessage" /* 7349 */;
+import closure_33 from "handleQuickSwitcherUpdate" /* 11202 */;
+import closure_34 from "storeThread" /* 4122 */;
+import closure_35 from "updateState" /* 6159 */;
+import closure_36 from "_getSystemLocale" /* 1995 */;
+import closure_37 from "handleThemeChange" /* 1301 */;
+import closure_38 from "fetchFingerprint" /* 1215 */;
+import closure_39 from "ensureGuildLoaded" /* 1386 */;
+import closure_40 from "initialize" /* 7435 */;
+import closure_41 from "updateGiftCode" /* 8456 */;
+import closure_42 from "trackCommunicationDisabled" /* 1991 */;
+import closure_43 from "createGuildRecordFromRust" /* 1908 */;
+import closure_44 from "recomputeGuild" /* 5365 */;
 import closure_45 from "updateInvite" /* 4462 */;
 import closure_46 from "reinjectEphemerals" /* 4735 */;
-import closure_47 from "getUncachedChannelPermissions" /* 4121 */;
+import closure_47 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_48 from "sortActivity" /* 4569 */;
 import closure_49 from "createRTCConnection" /* 4554 */;
 import closure_50 from "generateOldThreadCutoff" /* 4493 */;
 import closure_51 from "handleUpdate" /* 4496 */;
-import closure_52 from "initialize" /* 7582 */;
-import closure_53 from "mergeGuildAvatar" /* 1922 */;
+import closure_52 from "initialize" /* 7592 */;
+import closure_53 from "mergeGuildAvatar" /* 1921 */;
 import closure_54 from "updateVoiceState" /* 4497 */;
 import closure_55 from "addSku" /* 4527 */;
-import closure_56 from "handleActivityStateChanged" /* 11062 */;
+import closure_56 from "handleActivityStateChanged" /* 11282 */;
 import closure_57 from "getVoiceStatesForGuild" /* 4555 */;
-import ME from "ME" /* 676 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import ME from "ME" /* 673 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;

@@ -1,0 +1,24 @@
+// Module ID: 902
+// Function ID: 903
+// Name: getTraceMetaTags
+// Dependencies: [901]
+
+// Module 902 (getTraceMetaTags)
+import getTraceData from "getTraceData" /* 901 */;
+
+require = arg1;
+const dependencyMap = arg6;
+Object.defineProperty(arg5, Symbol.toStringTag, { value: "Module" });
+arg5.getTraceMetaTags = function getTraceMetaTags(arg0) {
+  let traceData = arg0;
+  if (!arg0) {
+    traceData = getTraceData.getTraceData();
+    const obj = getTraceData;
+  }
+  const entries = Object.entries(traceData);
+  const mapped = entries.map((arg0) => {
+    [tmp, tmp2] = arg0;
+    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
+  });
+  return mapped.join("\n");
+};

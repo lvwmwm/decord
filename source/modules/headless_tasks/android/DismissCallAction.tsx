@@ -1,11 +1,11 @@
-// Module ID: 17517
-// Function ID: 17518
+// Module ID: 17753
+// Function ID: 17754
 // Name: promise
-// Dependencies: [676, 17512, 698, 4700, 5973, 9871, 2]
+// Dependencies: [673, 17748, 695, 4700, 5981, 9893, 2]
 
-// Module 17517 (promise)
+// Module 17753 (promise)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/headless_tasks/android/DismissCallAction.tsx");

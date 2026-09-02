@@ -1,9 +1,9 @@
-// Module ID: 8989
-// Function ID: 8990
+// Module ID: 9003
+// Function ID: 9004
 // Name: PressableScale
 // Dependencies: [109, 19, 17, 21, 4217, 4934, 2]
 
-// Module 8989 (PressableScale)
+// Module 9003 (PressableScale)
 import _mod4217 from "module_4217" /* 4217 */;
 import styleProperties from "styleProperties" /* 4934 */;
 import closure_3 from "_objectWithoutProperties" /* 109 */;

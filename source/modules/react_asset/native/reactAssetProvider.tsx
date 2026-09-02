@@ -1,13 +1,13 @@
-// Module ID: 17485
-// Function ID: 17486
+// Module ID: 17721
+// Function ID: 17722
 // Name: NativeReactAssetModule
-// Dependencies: [17, 500, 17486, 17487, 2]
+// Dependencies: [17, 1234, 17722, 17723, 2]
 // Exports: default
 
-// Module 17485 (NativeReactAssetModule)
-import enforcingDefault from "enforcing" /* 17486 */;
+// Module 17721 (NativeReactAssetModule)
+import enforcingDefault from "enforcing" /* 17722 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import set from "set" /* 500 */;
+import set from "set" /* 1234 */;
 
 ({ Image: obj1, NativeModules } = get_ActivityIndicator);
 if (set.isAndroid()) {

@@ -1,24 +1,24 @@
-// Module ID: 9592
-// Function ID: 9593
+// Module ID: 9605
+// Function ID: 9606
 // Name: UserTile
-// Dependencies: [32, 19, 17, 9593, 1218, 1387, 4529, 676, 4499, 4542, 21, 4478, 712, 4326, 589, 8110, 1297, 9594, 4474, 1236, 9573, 9576, 8741, 9595, 9596, 9597, 9492, 9591, 9598, 9557, 9560, 5652, 9599, 2]
+// Dependencies: [32, 19, 17, 9606, 1215, 1386, 4529, 673, 4499, 4542, 21, 4478, 709, 4326, 586, 8118, 1296, 9607, 4474, 1233, 9586, 9589, 8756, 9608, 9609, 9610, 9505, 9604, 9611, 9570, 9573, 5660, 9612, 2]
 // Exports: default
 
-// Module 9592 (UserTile)
-import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 8741 */;
-import registerAssetDefault2 from "registerAsset" /* 9595 */;
-import registerAssetDefault3 from "registerAsset" /* 9596 */;
-import registerAssetDefault4 from "registerAsset" /* 9597 */;
+// Module 9605 (UserTile)
+import ThemesDefault from "Themes" /* 709 */;
+import registerAssetDefault from "registerAsset" /* 8756 */;
+import registerAssetDefault2 from "registerAsset" /* 9608 */;
+import registerAssetDefault3 from "registerAsset" /* 9609 */;
+import registerAssetDefault4 from "registerAsset" /* 9610 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "recentlyUsedEmojis" /* 9593 */;
-import { clearVoiceChannelEffectForUser as closure_7 } from "recentlyUsedEmojis" /* 9593 */;
-import closure_8 from "fetchFingerprint" /* 1218 */;
-import closure_9 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "recentlyUsedEmojis" /* 9606 */;
+import { clearVoiceChannelEffectForUser as closure_7 } from "recentlyUsedEmojis" /* 9606 */;
+import closure_8 from "fetchFingerprint" /* 1215 */;
+import closure_9 from "ensureGuildLoaded" /* 1386 */;
 import closure_10 from "_detectH265HardwareDecode" /* 4529 */;
-import { VideoToggleState } from "ME" /* 676 */;
+import { VideoToggleState } from "ME" /* 673 */;
 import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
 import { MediaEngineContextTypes } from "DesktopSources" /* 4542 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -139,7 +139,7 @@ let closure_19 = importAllResult.memo((userId) => {
   const style = userId.style;
   ({ muted, deafened } = userId);
   const tmp = callback3();
-  let obj = userId(589);
+  let obj = userId(586);
   let items = [closure_10];
   const items1 = [userId];
   const tmp4 = callback(obj.useStateFromStoresArray(items, () => {
@@ -165,8 +165,8 @@ let closure_19 = importAllResult.memo((userId) => {
       obj[0] = items2;
       obj = { source: null, size: null, disableColor: true };
       obj[0] = registerAssetDefault4;
-      obj[1] = tmp2(1297).Icon.Sizes.SMALL;
-      obj[1] = callback2(tmp2(1297).Icon, obj);
+      obj[1] = tmp2(1296).Icon.Sizes.SMALL;
+      obj[1] = callback2(tmp2(1296).Icon, obj);
       tmp14 = callback2(View, obj);
     }
     const items3 = [tmp14, ];
@@ -182,10 +182,10 @@ let closure_19 = importAllResult.memo((userId) => {
       obj2[0] = items4;
       const obj3 = { source: null, size: null, color: null, disableColor: null };
       obj3[0] = tmp6;
-      obj3[1] = tmp2(1297).Icon.Sizes.SMALL;
+      obj3[1] = tmp2(1296).Icon.Sizes.SMALL;
       obj3[2] = ThemesDefault.unsafe_rawColors.WHITE;
       obj3[3] = tmp6 === registerAssetDefault;
-      obj2[1] = callback2(tmp2(1297).Icon, obj3);
+      obj2[1] = callback2(tmp2(1296).Icon, obj3);
       tmp19Result = tmp19(View, obj2);
       const tmp20 = View;
     }

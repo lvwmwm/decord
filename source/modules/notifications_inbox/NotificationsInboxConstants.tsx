@@ -1,14 +1,14 @@
-// Module ID: 8071
-// Function ID: 8072
+// Module ID: 8079
+// Function ID: 8080
 // Name: ANALYTICS_NAME
-// Dependencies: [676, 687, 1236, 1426, 2]
+// Dependencies: [673, 684, 1233, 1425, 2]
 // Exports: getFilterMap, getNotificationsInboxGuild
 
-// Module 8071 (ANALYTICS_NAME)
+// Module 8079 (ANALYTICS_NAME)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import setDefault from "set" /* 687 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ME from "ME" /* 673 */;
+import setDefault from "set" /* 684 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const NOTIFICATIONS_INBOX = ME.NOTIFICATIONS_INBOX;
 let obj = { UNREAD: "UNREAD", TODAY: "TODAY", YESTERDAY: "YESTERDAY", OLDER: "OLDER" };
@@ -41,9 +41,9 @@ export const getNotificationsInboxGuild = function getNotificationsInboxGuild(ar
     const intl = getSystemLocale.intl;
     stringResult = intl.string(getSystemLocale.t.HcoRu0);
   }
-  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "platinum" };
+  obj = { id: NOTIFICATIONS_INBOX, name: stringResult, description: "", icon: "Array", features: "polite" };
   obj[4] = [];
-  return tmp2(1426).fromGuildBasic(obj);
+  return tmp2(1425).fromGuildBasic(obj);
 };
 export const MessageCategory = obj;
 export const InboxFilters = obj;

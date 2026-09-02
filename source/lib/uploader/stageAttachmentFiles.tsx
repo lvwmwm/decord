@@ -1,12 +1,12 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 7596
+// Function ID: 7597
 // Name: _stageAttachmentFiles
-// Dependencies: [5, 676, 5072, 2]
+// Dependencies: [5, 673, 5080, 2]
 // Exports: default
 
-// Module 7586 (_stageAttachmentFiles)
+// Module 7596 (_stageAttachmentFiles)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import { AbortCodes } from "ME" /* 676 */;
+import { AbortCodes } from "ME" /* 673 */;
 
 const require = arg1;
 function _stageAttachmentFiles() {
@@ -53,7 +53,7 @@ function _stageAttachmentFiles() {
               closure_3 = undefined;
               c4 = 1;
               c5 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

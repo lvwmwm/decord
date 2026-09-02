@@ -1,15 +1,15 @@
-// Module ID: 12792
-// Function ID: 12793
+// Module ID: 13013
+// Function ID: 13014
 // Name: _initialize
-// Dependencies: [1218, 1981, 5365, 5358, 4662, 709, 595, 12793, 2]
+// Dependencies: [1215, 1980, 5373, 5366, 4662, 706, 592, 13014, 2]
 
-// Module 12792 (_initialize)
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 13013 (_initialize)
+import dispatcherDefault from "dispatcher" /* 706 */;
 import initializeDefault from "initialize" /* 4662 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "handleConnectionOpen" /* 1981 */;
-import closure_6 from "buildStageChannelUserRoles" /* 5365 */;
-import { STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY as closure_7 } from "MAX_STAGE_TOPIC_LENGTH" /* 5358 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import closure_5 from "handleConnectionOpen" /* 1980 */;
+import closure_6 from "buildStageChannelUserRoles" /* 5373 */;
+import { STAGE_AUDIENCE_NOTICE_SHOWN_STORAGE_KEY as closure_7 } from "MAX_STAGE_TOPIC_LENGTH" /* 5366 */;
 
 let require = arg1;
 initializeDefault;

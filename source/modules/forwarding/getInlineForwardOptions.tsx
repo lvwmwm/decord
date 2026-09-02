@@ -1,12 +1,12 @@
-// Module ID: 11505
-// Function ID: 11506
+// Module ID: 11728
+// Function ID: 11729
 // Name: getInlineForwardOptions
-// Dependencies: [676, 4671, 2]
+// Dependencies: [673, 4671, 2]
 // Exports: getInlineForwardOptions
 
-// Module 11505 (getInlineForwardOptions)
+// Module 11728 (getInlineForwardOptions)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const MessageReferenceTypes = ME.MessageReferenceTypes;
 const result = set.fileFinishedImporting("modules/forwarding/getInlineForwardOptions.tsx");

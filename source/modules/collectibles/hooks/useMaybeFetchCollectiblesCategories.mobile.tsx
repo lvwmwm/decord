@@ -1,12 +1,12 @@
-// Module ID: 8086
-// Function ID: 8087
+// Module ID: 8094
+// Function ID: 8095
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [4477, 589, 8087, 2]
+// Dependencies: [4477, 586, 8095, 2]
 // Exports: default
 
-// Module 8086 (useMaybeFetchCollectiblesCategories)
-import initialize from "initialize" /* 589 */;
-import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 8087 */;
+// Module 8094 (useMaybeFetchCollectiblesCategories)
+import initialize from "initialize" /* 586 */;
+import useMaybeFetchCollectiblesCategoriesShared from "useMaybeFetchCollectiblesCategoriesShared" /* 8095 */;
 import closure_2 from "getUserAgnosticState" /* 4477 */;
 
 require = arg1;

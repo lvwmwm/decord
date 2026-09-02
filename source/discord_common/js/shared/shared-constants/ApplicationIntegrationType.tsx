@@ -1,9 +1,9 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 8442
+// Function ID: 8443
 // Name: ApplicationIntegrationType
 // Dependencies: [2]
 
-// Module 8433 (ApplicationIntegrationType)
+// Module 8442 (ApplicationIntegrationType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationIntegrationType.tsx");

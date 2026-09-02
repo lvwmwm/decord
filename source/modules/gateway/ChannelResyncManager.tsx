@@ -1,21 +1,21 @@
-// Module ID: 16908
-// Function ID: 16909
+// Module ID: 17144
+// Function ID: 17145
 // Name: handleGuildCreate
-// Dependencies: [5, 1218, 1387, 4855, 1909, 5221, 676, 1394, 3, 687, 5486, 698, 709, 7397, 13324, 1399, 514, 2]
+// Dependencies: [5, 1215, 1386, 4855, 1908, 5229, 673, 1393, 3, 684, 5494, 695, 706, 7406, 13547, 1398, 511, 2]
 
-// Module 16908 (handleGuildCreate)
+// Module 17144 (handleGuildCreate)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 687 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import initializeDefault from "initialize" /* 5486 */;
+import setDefault from "set" /* 684 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import initializeDefault from "initialize" /* 5494 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "handleConnectionOpen" /* 4855 */;
-import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "_handleConnectionOpen" /* 5221 */;
-import { AnalyticEvents } from "ME" /* 676 */;
-import { ChannelFlags } from "set" /* 1394 */;
+import closure_7 from "createGuildRecordFromRust" /* 1908 */;
+import closure_8 from "_handleConnectionOpen" /* 5229 */;
+import { AnalyticEvents } from "ME" /* 673 */;
+import { ChannelFlags } from "set" /* 1393 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -482,7 +482,7 @@ function _getResyncGuilds() {
 }
 function scheduleIntegrityCheck(guild_id) {
   const _require = guild_id;
-  let obj = _require(13324);
+  let obj = _require(13547);
   if (obj.isChannelMetadataIntegrityCheckEnabled("scheduleIntegrityCheck")) {
     if (null != dependencyMap3[guild_id]) {
       let _clearTimeout = clearTimeout;
@@ -497,14 +497,14 @@ function scheduleIntegrityCheck(guild_id) {
     if (null != dependencyMap[guild_id]) {
       let requestId = tmp15.requestId;
     } else {
-      const v4Result = _require(514).v4();
+      const v4Result = _require(511).v4();
       obj = { guildId: null, requestId: null, source: "integrity_check", requestedUserId: null };
       obj[0] = guild_id;
       obj[1] = v4Result;
       obj[3] = id.getId();
       tmp14[guild_id] = obj;
       requestId = v4Result;
-      const tmp4Result = _require(514);
+      const tmp4Result = _require(511);
     }
     if (!tmp8) {
       obj = { guild_id: null, request_id: null };

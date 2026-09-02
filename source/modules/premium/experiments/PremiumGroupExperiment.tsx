@@ -1,12 +1,12 @@
-// Module ID: 12628
-// Function ID: 12629
+// Module ID: 12850
+// Function ID: 12851
 // Name: usePremiumGroupExperiment
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 // Exports: default
 
-// Module 12628 (usePremiumGroupExperiment)
+// Module 12850 (usePremiumGroupExperiment)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2025-12-katsudon", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = set.fileFinishedImporting("modules/premium/experiments/PremiumGroupExperiment.tsx");

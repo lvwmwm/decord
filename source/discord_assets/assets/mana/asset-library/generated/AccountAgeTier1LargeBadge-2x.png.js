@@ -1,13 +1,13 @@
-// Module ID: 6262
-// Function ID: 6263
+// Module ID: 6271
+// Function ID: 6272
 // Name: vanityUrl
 // Dependencies: [2]
 
-// Module 6262 (vanityUrl)
+// Module 6271 (vanityUrl)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AccountAgeTier1LargeBadge-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/04b4ee2721e5bf7a0d272b38b4c37d0afd3110d22cb9a6f2a8c5bb7a2cfbe82a.png";
+export default "https://cdn.discordapp.com/assets/content/8f53cd26fbb63fc2e616313fbf448bfe47c230d069dedf14d7c6800ee1914d25.png";
 export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/AccountAgeTier1LargeBadge-2x.png";
-export const metadata = { fileBytes: 4449 };
+export const metadata = { fileBytes: 4447 };

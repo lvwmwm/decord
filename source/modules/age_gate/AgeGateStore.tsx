@@ -1,13 +1,13 @@
-// Module ID: 15540
-// Function ID: 15541
+// Module ID: 15771
+// Function ID: 15772
 // Name: isUnderageAnonymous
-// Dependencies: [1221, 589, 709, 2]
+// Dependencies: [1218, 586, 706, 2]
 
-// Module 15540 (isUnderageAnonymous)
+// Module 15771 (isUnderageAnonymous)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import result2 from "result" /* 1221 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import result2 from "result" /* 1218 */;
 
 const AGE_GATE_REGISTER_TIMEOUT_MS = result2.AGE_GATE_REGISTER_TIMEOUT_MS;
 let c0 = false;

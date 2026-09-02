@@ -1,13 +1,13 @@
-// Module ID: 12897
-// Function ID: 12898
+// Module ID: 13119
+// Function ID: 13120
 // Name: getApplicationFromMessage
-// Dependencies: [4504, 12894, 8611, 2]
+// Dependencies: [4504, 13116, 8626, 2]
 // Exports: getApplicationFromMessage
 
-// Module 12897 (getApplicationFromMessage)
+// Module 13119 (getApplicationFromMessage)
 import closure_0 from "createExecutable" /* 4504 */;
-import { SpotifyApplication } from "getIconURL" /* 12894 */;
-import { isSpotifyParty } from "SPOTIFY_APP_PROTOCOL" /* 8611 */;
+import { SpotifyApplication } from "getIconURL" /* 13116 */;
+import { isSpotifyParty } from "SPOTIFY_APP_PROTOCOL" /* 8626 */;
 
 const result = require("set").fileFinishedImporting("modules/activities/utils/getApplicationFromMessage.tsx");
 

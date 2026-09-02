@@ -1,12 +1,12 @@
-// Module ID: 5029
-// Function ID: 5030
+// Module ID: 5033
+// Function ID: 5034
 // Name: TextIcon
-// Dependencies: [19, 21, 712, 4196, 4985, 2]
+// Dependencies: [19, 21, 709, 4196, 4985, 2]
 // Exports: TextIcon
 
-// Module 5029 (TextIcon)
+// Module 5033 (TextIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
 import registerAsset from "registerAsset" /* 4985 */;
 import { jsx } from "jsxProd" /* 21 */;

@@ -1,19 +1,19 @@
-// Module ID: 10740
-// Function ID: 10741
+// Module ID: 10961
+// Function ID: 10962
 // Name: PurchaseSuccessModalBase
-// Dependencies: [32, 853, 19, 17, 4470, 4527, 6076, 676, 21, 4478, 712, 4217, 4927, 4479, 4446, 1493, 589, 5071, 6073, 4474, 4928, 1236, 4940, 5553, 5502, 5551, 8503, 5959, 5956, 8494, 5973, 698, 4945, 10572, 3371, 8860, 4322, 2]
+// Dependencies: [32, 850, 19, 17, 4470, 4527, 6084, 673, 21, 4478, 709, 4217, 4927, 4479, 4446, 1492, 586, 5079, 6081, 4474, 4928, 1233, 4940, 5561, 5510, 5559, 8516, 5967, 5964, 8507, 5981, 695, 4945, 10793, 3370, 8875, 4322, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 10740 (PurchaseSuccessModalBase)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 10961 (PurchaseSuccessModalBase)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "_toArray" /* 853 */;
+import closure_4 from "_toArray" /* 850 */;
 import closure_5 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_9 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_10 from "addSku" /* 4527 */;
-import { SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM as closure_11 } from "STOREFRONT_MARKETING_GUILD_ID" /* 6076 */;
-import ME from "ME" /* 676 */;
+import { SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM as closure_11 } from "STOREFRONT_MARKETING_GUILD_ID" /* 6084 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 15417
-// Function ID: 15418
+// Module ID: 15645
+// Function ID: 15646
 // Name: useCollectiblesCoachmarkScrollDismissContext
-// Dependencies: [19, 505, 21, 2]
+// Dependencies: [19, 502, 21, 2]
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
-// Module 15417 (useCollectiblesCoachmarkScrollDismissContext)
+// Module 15645 (useCollectiblesCoachmarkScrollDismissContext)
 import importAllResult from "noop" /* 19 */;
-import { NOOP } from "sum" /* 505 */;
+import { NOOP } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 let c0 = importAllResult;
@@ -14,7 +14,7 @@ const context = importAllResult.createContext({
   registerDismiss(arg0) {
     return NOOP;
   },
-  handleDismissCoachmarkOnScroll: "Array"
+  handleDismissCoachmarkOnScroll: "r"
 });
 const result = require("set").fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 9207
-// Function ID: 9208
+// Module ID: 9221
+// Function ID: 9222
 // Name: ExpressionPickerCategories
-// Dependencies: [19, 17, 21, 4478, 712, 4347, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4347, 2]
 // Exports: default
 
-// Module 9207 (ExpressionPickerCategories)
+// Module 9221 (ExpressionPickerCategories)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Portal from "Portal" /* 4347 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

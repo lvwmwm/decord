@@ -1,11 +1,11 @@
-// Module ID: 1219
-// Function ID: 1220
+// Module ID: 1216
+// Function ID: 1217
 // Name: initialize
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 1219 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 1216 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const Store = initializeDefault.Store;
 class BrowserHandoffStore extends Store {

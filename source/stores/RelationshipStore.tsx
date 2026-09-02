@@ -1,15 +1,15 @@
 // Module ID: 4130
 // Function ID: 4131
 // Name: markAllUserIdListsStale
-// Dependencies: [32, 4131, 1922, 676, 709, 589, 2]
+// Dependencies: [32, 4131, 1921, 673, 706, 586, 2]
 
 // Module 4130 (markAllUserIdListsStale)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "hasFlag" /* 4131 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import { RelationshipTypes } from "ME" /* 676 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import { RelationshipTypes } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 function markAllUserIdListsStale() {
@@ -106,7 +106,7 @@ let closure_15 = {};
 let c16 = 0;
 let c17 = 0;
 let c18 = 0;
-let closure_19 = { friends: "spriteIndex", blocked: "category", ignored: "paths", blockedOrIgnored: "replace" };
+let closure_19 = { friends: "accessible", blocked: "includes", ignored: "pos", blockedOrIgnored: "r" };
 const set3 = new Set();
 const map1 = new Map();
 const Store = initializeDefault.Store;

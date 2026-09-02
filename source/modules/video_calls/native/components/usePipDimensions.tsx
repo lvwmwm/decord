@@ -1,10 +1,10 @@
-// Module ID: 9541
-// Function ID: 9542
+// Module ID: 9554
+// Function ID: 9555
 // Name: usePipDimensions
-// Dependencies: [19, 9542, 1493, 8603, 2]
+// Dependencies: [19, 9555, 1492, 8618, 2]
 // Exports: default
 
-// Module 9541 (usePipDimensions)
+// Module 9554 (usePipDimensions)
 import closure_3 from "noop" /* 19 */;
 
 const require = arg1;

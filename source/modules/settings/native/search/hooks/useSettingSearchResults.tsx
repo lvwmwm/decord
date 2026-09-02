@@ -1,14 +1,14 @@
-// Module ID: 14349
-// Function ID: 14350
+// Module ID: 14572
+// Function ID: 14573
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 14342, 14237, 14345, 14238, 14350, 14344, 636, 2]
+// Dependencies: [32, 19, 14565, 14460, 14568, 14461, 14573, 14567, 633, 2]
 // Exports: useSettingSearchResults
 
-// Module 14349 (useSettingSearchResults)
+// Module 14572 (useSettingSearchResults)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import closure_5 from "zustandStore" /* 14342 */;
-import closure_6 from "zustandStore" /* 14237 */;
+import closure_5 from "zustandStore" /* 14565 */;
+import closure_6 from "zustandStore" /* 14460 */;
 
 const require = arg1;
 let closure_7 = [];
@@ -16,8 +16,8 @@ const result = require("set").fileFinishedImporting("modules/settings/native/sea
 
 export const useSettingSearchResults = function useSettingSearchResults() {
   const memo = memo1.useMemo(() => {
-    let tmp = callback(14350);
-    tmp = new tmp(memo(14344).getSettingSearchableTitles());
+    let tmp = callback(14573);
+    tmp = new tmp(memo(14567).getSettingSearchableTitles());
     return tmp;
   }, []);
   const settings = callback(memo1.useState(closure_7), 2);
@@ -27,7 +27,7 @@ export const useSettingSearchResults = function useSettingSearchResults() {
   const placeholderCount = callback(memo1.useState(10), 2);
   callback = placeholderCount[1];
   const items = [memo];
-  memo1 = memo1.useMemo(() => callback(636)((arg0) => {
+  memo1 = memo1.useMemo(() => callback(633)((arg0) => {
     let scoredSearchResults = closure_1_6.getField("blocklist");
     scoredSearchResults = scoredSearchResults.getScoredSearchResults(arg0);
     const found = scoredSearchResults.filter((setting) => {

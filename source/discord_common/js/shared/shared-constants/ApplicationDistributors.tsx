@@ -1,9 +1,9 @@
-// Module ID: 690
-// Function ID: 691
+// Module ID: 687
+// Function ID: 688
 // Name: ApplicationDistributors
 // Dependencies: [2]
 
-// Module 690 (ApplicationDistributors)
+// Module 687 (ApplicationDistributors)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationDistributors.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12773
+// Function ID: 12774
 // Name: NitroIcon
-// Dependencies: [19, 21, 8241, 2]
+// Dependencies: [19, 21, 8250, 2]
 // Exports: default
 
-// Module 12549 (NitroIcon)
+// Module 12773 (NitroIcon)
 import noopAll from "noop" /* 19 */;
-import inlineStyles from "inlineStyles" /* 8241 */;
-import inlineStylesDefault from "inlineStyles" /* 8241 */;
+import inlineStyles from "inlineStyles" /* 8250 */;
+import inlineStylesDefault from "inlineStyles" /* 8250 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

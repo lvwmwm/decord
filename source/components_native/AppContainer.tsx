@@ -1,28 +1,28 @@
-// Module ID: 14208
-// Function ID: 14209
+// Module ID: 14431
+// Function ID: 14432
 // Name: GestureWrapper
-// Dependencies: [32, 19, 17, 6173, 1387, 1981, 676, 1394, 21, 4478, 712, 4217, 5071, 14209, 4726, 1231, 1209, 4333, 4865, 6044, 14211, 14212, 4332, 1222, 4413, 698, 4334, 14213, 6050, 1500, 1471, 14214, 500, 11132, 14215, 14223, 4262, 14225, 1496, 9612, 12321, 12327, 14226, 4347, 14227, 14229, 14231, 14232, 14233, 15522, 15530, 1208, 2]
+// Dependencies: [32, 19, 17, 6181, 1386, 1980, 673, 1393, 21, 4478, 709, 4217, 5079, 14432, 4726, 1228, 1206, 4333, 4865, 6052, 14434, 14435, 4332, 1219, 4413, 695, 4334, 14436, 6058, 1499, 1470, 14437, 1234, 11353, 14438, 14446, 4262, 14448, 1495, 9625, 12545, 12551, 14449, 4347, 14450, 14452, 14454, 14455, 14456, 15753, 15761, 1205, 2]
 
-// Module 14208 (GestureWrapper)
-import ThemesDefault from "Themes" /* 712 */;
-import _modDef1208 from "module_1208" /* 1208 */;
-import _maybeBackfillMissingBreadcrumbsFromTelemetryRing from "_maybeBackfillMissingBreadcrumbsFromTelemetryRing" /* 1209 */;
-import ComponentDispatcher from "ComponentDispatcher" /* 1231 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1500 */;
+// Module 14431 (GestureWrapper)
+import ThemesDefault from "Themes" /* 709 */;
+import _modDef1205 from "module_1205" /* 1205 */;
+import _maybeBackfillMissingBreadcrumbsFromTelemetryRing from "_maybeBackfillMissingBreadcrumbsFromTelemetryRing" /* 1206 */;
+import ComponentDispatcher from "ComponentDispatcher" /* 1228 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import createStandardNavigationFactories from "createStandardNavigationFactories" /* 1499 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 import useThemeDefault from "useTheme" /* 4413 */;
 import enqueueDefault from "enqueue" /* 4726 */;
-import useNavigationTheme from "useNavigationTheme" /* 6050 */;
-import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 14209 */;
+import useNavigationTheme from "useNavigationTheme" /* 6058 */;
+import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 14432 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
-import { handleHistoryStoreNavigationChange as closure_7 } from "getIdFromHistoryItem" /* 6173 */;
-import closure_8 from "ensureGuildLoaded" /* 1387 */;
-import closure_9 from "handleConnectionOpen" /* 1981 */;
-import ME from "ME" /* 676 */;
-import { isStaticChannelRoute } from "set" /* 1394 */;
+import { handleHistoryStoreNavigationChange as closure_7 } from "getIdFromHistoryItem" /* 6181 */;
+import closure_8 from "ensureGuildLoaded" /* 1386 */;
+import closure_9 from "handleConnectionOpen" /* 1980 */;
+import ME from "ME" /* 673 */;
+import { isStaticChannelRoute } from "set" /* 1393 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 import module_4217 from "module_4217" /* 4217 */;
@@ -33,7 +33,7 @@ function GestureWrapper(children) {
   let isScreenLandscape;
   const tmp = callback3();
   closure_0 = tmp;
-  isScreenLandscape = isScreenLandscape(5071).useIsScreenLandscape();
+  isScreenLandscape = isScreenLandscape(5079).useIsScreenLandscape();
   let items = [isScreenLandscape, tmp];
   const style = React.useMemo(() => {
     const items = [styles.flex, ];
@@ -102,7 +102,7 @@ function AppNavigationContainer(children) {
         name = first.name;
       }
     }
-    callback(14213).log("Initial Screen: " + name);
+    callback(14436).log("Initial Screen: " + name);
     return tmp;
   }, []);
   _require = React.useRef(true);
@@ -126,7 +126,7 @@ function AppNavigationContainer(children) {
       };
     }
   }, []);
-  let obj = _require(6050);
+  let obj = _require(6058);
   const navigationTheme = obj.useNavigationTheme(useThemeDefault());
   obj = { theme: navigationTheme, ref: null, onReady: null, onStateChange: null, initialState: null, navigationInChildEnabled: true, children: null };
   let tmp = useThemeDefault();
@@ -135,7 +135,7 @@ function AppNavigationContainer(children) {
   obj[3] = callback;
   obj[4] = memo;
   obj[6] = children.children;
-  return callback2(_require(1500).NavigationContainer, obj);
+  return callback2(_require(1499).NavigationContainer, obj);
 }
 function ShareNavigationContainer(children) {
   const tmp = useThemeDefault();
@@ -173,13 +173,13 @@ try {
   let c22 = false;
   let closure_23 = { code: "function AppContainerTsx1(){const{RNScreensTurboModule}=this.__closure;global.RNScreensTurboModule=RNScreensTurboModule;}" };
   let obj7 = require("designConfig");
-  const result1 = _modDef1208.profiledRootComponent(function AppContainer(children) {
+  const result1 = _modDef1205.profiledRootComponent(function AppContainer(children) {
     children = children.children;
     let riveAppStatePlaybackExperiment = children;
     const appEntryKey = children.appEntryKey;
     let memo = appEntryKey;
     let memo1;
-    const requestGatewaySocket = memo(14214).useRequestGatewaySocket("AppContainer:" + appEntryKey);
+    const requestGatewaySocket = memo(14437).useRequestGatewaySocket("AppContainer:" + appEntryKey);
     const effect = React.useEffect(() => {
       if (!c22) {
         RNScreensTurboModule = RNScreensTurboModule.RNScreensTurboModule;
@@ -197,7 +197,7 @@ try {
       }
     }, []);
     const effect1 = React.useEffect(() => {
-      let SplashScreenManager = memo(500).isIOS();
+      let SplashScreenManager = memo(1234).isIOS();
       if (SplashScreenManager) {
         SplashScreenManager = closure_6.SplashScreenManager;
       }
@@ -208,8 +208,8 @@ try {
     }, []);
     riveAppStatePlaybackExperiment = undefined;
     memo = undefined;
-    let obj = memo(14214);
-    riveAppStatePlaybackExperiment = memo(15530).useRiveAppStatePlaybackExperiment("AppContainer");
+    let obj = memo(14437);
+    riveAppStatePlaybackExperiment = memo(15761).useRiveAppStatePlaybackExperiment("AppContainer");
     let items = [riveAppStatePlaybackExperiment];
     memo = React.useMemo(() => {
       const items = [];
@@ -274,7 +274,7 @@ try {
       return closure_1_14(tmp, obj);
     }, items2);
   });
-  const importDefaultResult = _modDef1208;
+  const importDefaultResult = _modDef1205;
   const result2 = require("set").fileFinishedImporting("components_native/AppContainer.tsx");
   exports.default = result1;
 } catch (err) {

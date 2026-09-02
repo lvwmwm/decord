@@ -1,13 +1,13 @@
-// Module ID: 13358
-// Function ID: 13359
+// Module ID: 13582
+// Function ID: 13583
 // Name: secondaryIndexMap
-// Dependencies: [687, 11, 4117, 589, 709, 2]
+// Dependencies: [684, 11, 4116, 586, 706, 2]
 
-// Module 13358 (secondaryIndexMap)
+// Module 13582 (secondaryIndexMap)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 589 */;
-import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import setDefault from "set" /* 684 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let obj = { NOT_FETCHED: 0, [0]: "NOT_FETCHED", FETCHING: 1, [1]: "FETCHING", FETCHED: 2, [2]: "FETCHED" };
 let closure_3 = {};

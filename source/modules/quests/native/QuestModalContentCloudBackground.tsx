@@ -1,15 +1,15 @@
-// Module ID: 14728
-// Function ID: 14729
+// Module ID: 14954
+// Function ID: 14955
 // Name: items
-// Dependencies: [19, 17, 21, 4478, 1364, 4413, 4940, 5493, 14729, 14730, 2]
+// Dependencies: [19, 17, 21, 4478, 1363, 4413, 4940, 5501, 14955, 14956, 2]
 // Exports: default
 
-// Module 14728 (items)
+// Module 14954 (items)
 import noopAll from "noop" /* 19 */;
-import isThemeLight from "isThemeLight" /* 1364 */;
+import isThemeLight from "isThemeLight" /* 1363 */;
 import useTheme from "useTheme" /* 4413 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import preloadDefault from "preload" /* 5493 */;
+import preloadDefault from "preload" /* 5501 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -87,7 +87,7 @@ export default function QuestModalContentCloudBackground(align) {
     const obj2 = { style: null, source: null, resizeMode: null };
     const items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
     obj2[0] = items2;
-    obj2[1] = importDefault(isThemeDarkResult ? 14729 : 14730);
+    obj2[1] = importDefault(isThemeDarkResult ? 14955 : 14956);
     obj2[2] = str2;
     items1[1] = tmp6(preloadDefault, obj2);
     obj[1] = items1;

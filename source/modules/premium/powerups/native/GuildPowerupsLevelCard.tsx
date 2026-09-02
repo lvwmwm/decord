@@ -1,21 +1,21 @@
-// Module ID: 12129
-// Function ID: 12130
+// Module ID: 12353
+// Function ID: 12354
 // Name: GuildLevelPowerupHeader
-// Dependencies: [19, 17, 4365, 676, 12130, 21, 4478, 712, 4940, 8234, 8004, 12112, 12091, 4474, 1236, 2401, 12063, 12083, 12131, 12132, 12088, 2]
+// Dependencies: [19, 17, 4365, 673, 12354, 21, 4478, 709, 4940, 8243, 8013, 12336, 12315, 4474, 1233, 2400, 12287, 12307, 12355, 12356, 12312, 2]
 // Exports: default
 
-// Module 12129 (GuildLevelPowerupHeader)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12353 (GuildLevelPowerupHeader)
+import ThemesDefault from "Themes" /* 709 */;
 import LinearGradientDefault from "LinearGradient" /* 4940 */;
-import BoostGemIcon from "BoostGemIcon" /* 8234 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12063 */;
-import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12131 */;
-import importDefaultResult1Default from "importDefaultResult1" /* 12132 */;
+import BoostGemIcon from "BoostGemIcon" /* 8243 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12287 */;
+import useGuildPowerupOnShowMoreDefault from "useGuildPowerupOnShowMore" /* 12355 */;
+import importDefaultResult1Default from "importDefaultResult1" /* 12356 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
-import ME from "ME" /* 676 */;
-import { TIER_CARDS } from "BoostedGuildTiers" /* 12130 */;
+import ME from "ME" /* 673 */;
+import { TIER_CARDS } from "BoostedGuildTiers" /* 12354 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -184,10 +184,10 @@ export default function GuildPowerupsLevelCard(arg0) {
   ({ guildId, powerup, nextPowerup, index, isScrollingRef } = arg0);
   importDefault = undefined;
   const tmp = callback();
-  let obj = isScrollingRef(8004);
+  let obj = isScrollingRef(8013);
   const manaTypeConsolidationExperiment = obj.useManaTypeConsolidationExperiment("GuildPowerupsLevelCard");
   const tmp6 = usePowerupActiveStatusDefault(guildId, powerup);
-  obj1 = isScrollingRef(12083);
+  obj1 = isScrollingRef(12307);
   const calculatePowerupCardStatus = obj1.useCalculatePowerupCardStatus(powerup, tmp6, false);
   const tmp9 = useGuildPowerupOnShowMoreDefault(guildId, powerup);
   importDefault = tmp9;
@@ -229,7 +229,7 @@ export default function GuildPowerupsLevelCard(arg0) {
   const items2 = [closure_10(isScrollingRef(4474).Text, obj2), closure_10(GuildPowerupLevelBody, { isActive: tmp6.type !== constants2.INACTIVE, index }), ];
   const tmp19 = GuildLevelPowerupHeader;
   const tmp5Result = importDefaultResult1Default;
-  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(12088).GuildPowerupsCardFooter, obj4) });
+  items2[2] = closure_10(View, { style: tmp.footerContainer, children: closure_10(isScrollingRef(12312).GuildPowerupsCardFooter, obj4) });
   obj1[1] = items2;
   items1[1] = closure_11(View, obj1);
   obj[4] = items1;

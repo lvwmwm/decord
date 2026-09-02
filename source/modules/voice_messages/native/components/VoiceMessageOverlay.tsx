@@ -1,21 +1,21 @@
-// Module ID: 12183
-// Function ID: 12184
+// Module ID: 12407
+// Function ID: 12408
 // Name: LockPill
-// Dependencies: [32, 19, 17, 4470, 1387, 11533, 11534, 676, 11535, 21, 4217, 1297, 4474, 12, 8241, 4478, 712, 5384, 589, 4197, 5554, 1236, 4479, 5018, 10326, 12184, 5594, 11976, 4915, 4924, 1231, 11446, 9608, 11828, 12185, 8006, 4437, 11823, 11806, 4423, 10088, 2]
+// Dependencies: [32, 19, 17, 4470, 1386, 11756, 11757, 673, 11758, 21, 4217, 1296, 4474, 12, 8250, 4478, 709, 5392, 586, 4197, 5562, 1233, 4479, 5021, 10348, 12408, 5602, 12200, 4915, 4924, 1228, 11669, 9621, 12051, 12409, 8015, 4437, 12046, 12029, 4423, 10110, 2]
 
-// Module 12183 (LockPill)
-import ThemesDefault from "Themes" /* 712 */;
-import result2 from "result" /* 5384 */;
-import inlineStyles from "inlineStyles" /* 8241 */;
+// Module 12407 (LockPill)
+import ThemesDefault from "Themes" /* 709 */;
+import result2 from "result" /* 5392 */;
+import inlineStyles from "inlineStyles" /* 8250 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_8 from "ensureGuildLoaded" /* 1387 */;
-import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11533 */;
-import { VoiceMessageAnimationState } from "VoiceMessageAnimationState" /* 11534 */;
-import { ComponentActionsKeyed } from "ME" /* 676 */;
-import { CHAT_INPUT_HEIGHT } from "TextAreaCta" /* 11535 */;
+import closure_8 from "ensureGuildLoaded" /* 1386 */;
+import { useVoiceMessagesUIStore } from "VoiceMessageRecordingStatus" /* 11756 */;
+import { VoiceMessageAnimationState } from "VoiceMessageAnimationState" /* 11757 */;
+import { ComponentActionsKeyed } from "ME" /* 673 */;
+import { CHAT_INPUT_HEIGHT } from "TextAreaCta" /* 11758 */;
 import jsxProd from "jsxProd" /* 21 */;
 import importDefaultResult from "module_4217" /* 4217 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -683,7 +683,7 @@ const memoResult1 = importAllResult.memo((channelId) => {
   dependencyMap = undefined;
   const tmp = useVoiceMessagesUIStore((showRecordingOverlay) => showRecordingOverlay.showRecordingOverlay);
   closure_1 = tmp;
-  let obj = channelId(589);
+  let obj = channelId(586);
   items = [closure_8];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getChannel(channelId));
   const tmp2 = useVoiceMessagesUIStore((voiceMessageAnimationState) => voiceMessageAnimationState.voiceMessageAnimationState);

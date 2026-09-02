@@ -1,14 +1,14 @@
-// Module ID: 11517
-// Function ID: 11518
+// Module ID: 11740
+// Function ID: 11741
 // Name: items
-// Dependencies: [4326, 712, 8041, 8042, 1431, 2]
+// Dependencies: [4326, 709, 8050, 8051, 1430, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 11517 (items)
+// Module 11740 (items)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import hasFetchedColors from "hasFetchedColors" /* 8041 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import hasFetchedColors from "hasFetchedColors" /* 8050 */;
 import hexToRgba from "hexToRgba" /* 4326 */;
 
 let c3 = "#000000";
@@ -21,7 +21,7 @@ export const getAppGradientColors = function getAppGradientColors(id2) {
     return tmp;
   } else {
     if (obj5.hasFetchedColors(id2)) {
-      let tmp6Result = tmp6(8042);
+      let tmp6Result = tmp6(8051);
       const heroColors = tmp6Result.getHeroColors(id2);
       ({ primaryColor, secondaryColor } = heroColors);
       let tmp5 = tmp;
@@ -33,7 +33,7 @@ export const getAppGradientColors = function getAppGradientColors(id2) {
       }
       return tmp5;
     } else {
-      tmp6(8041).maybeFetchColors(id2);
+      tmp6(8050).maybeFetchColors(id2);
       return tmp;
     }
     obj5 = hasFetchedColors;

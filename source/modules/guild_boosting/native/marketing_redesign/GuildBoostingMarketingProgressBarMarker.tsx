@@ -1,17 +1,17 @@
-// Module ID: 13240
-// Function ID: 13241
+// Module ID: 13462
+// Function ID: 13463
 // Name: ProgressBarMarkerInnerContent
-// Dependencies: [19, 17, 676, 21, 13241, 13242, 13243, 4478, 712, 4413, 4217, 4326, 1363, 4927, 12148, 11163, 4474, 4369, 2]
+// Dependencies: [19, 17, 673, 21, 13463, 13464, 13465, 4478, 709, 4413, 4217, 4326, 1362, 4927, 12372, 11384, 4474, 4369, 2]
 // Exports: default
 
-// Module 13240 (ProgressBarMarkerInnerContent)
-import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 13241 */;
-import registerAssetDefault2 from "registerAsset" /* 13242 */;
-import registerAssetDefault3 from "registerAsset" /* 13243 */;
+// Module 13462 (ProgressBarMarkerInnerContent)
+import ThemesDefault from "Themes" /* 709 */;
+import registerAssetDefault from "registerAsset" /* 13463 */;
+import registerAssetDefault2 from "registerAsset" /* 13464 */;
+import registerAssetDefault3 from "registerAsset" /* 13465 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { BoostedGuildTiers } from "ME" /* 676 */;
+import { BoostedGuildTiers } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -137,7 +137,7 @@ export default function ProgressBarMarker(arg0) {
   React = tmp20Result;
   if (tier === guild.premiumTier) {
     if (tmp20Result) {
-      PREMIUM_PERK_PINK = tmp2(712).unsafe_rawColors.PREMIUM_PERK_PINK;
+      PREMIUM_PERK_PINK = tmp2(709).unsafe_rawColors.PREMIUM_PERK_PINK;
     }
     let items = [tmp20Result, sharedValue, tmp7];
     const effect = React.useEffect(() => {
@@ -213,7 +213,7 @@ export default function ProgressBarMarker(arg0) {
     }
     if (tmp20Result) {
       const obj5 = { source: null, style: null };
-      obj5[0] = tmp2(11163);
+      obj5[0] = tmp2(11384);
       obj5[1] = tmp.progressBarMarkerUnlockedIcon;
       tmp20Result = tmp20(closure_5, obj5);
     }
@@ -228,10 +228,10 @@ export default function ProgressBarMarker(arg0) {
     return closure_8(PREMIUM_PERK_PINK, obj);
   }
   const tmp4 = sharedValue(4413)();
-  const tmp5Result1 = useReducedMotion(1363);
-  const isThemeDarkResult = useReducedMotion(1363).isThemeDark(tmp4);
+  const tmp5Result1 = useReducedMotion(1362);
+  const isThemeDarkResult = useReducedMotion(1362).isThemeDark(tmp4);
   const hexWithOpacity = useReducedMotion(4326).hexWithOpacity;
-  const unsafe_rawColors = tmp2(712).unsafe_rawColors;
+  const unsafe_rawColors = tmp2(709).unsafe_rawColors;
   if (isThemeDarkResult) {
     PREMIUM_PERK_PINK = hexWithOpacity(unsafe_rawColors.WHITE, 0.4);
   } else {

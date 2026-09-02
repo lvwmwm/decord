@@ -1,12 +1,12 @@
-// Module ID: 11456
-// Function ID: 11457
+// Module ID: 11679
+// Function ID: 11680
 // Name: useSafetyHubAccountStanding
-// Dependencies: [8701, 589, 2]
+// Dependencies: [8716, 586, 2]
 // Exports: useSafetyHubAccountStanding
 
-// Module 11456 (useSafetyHubAccountStanding)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8701 */;
+// Module 11679 (useSafetyHubAccountStanding)
+import initialize from "initialize" /* 586 */;
+import closure_2 from "handleSafetyHubRequestAgeVerificationResetModalAction" /* 8716 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/safety_hub/hooks/useSafetyHubAccountStanding.tsx");

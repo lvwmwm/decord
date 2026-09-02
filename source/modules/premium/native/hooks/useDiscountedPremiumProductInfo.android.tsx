@@ -1,12 +1,12 @@
-// Module ID: 8238
-// Function ID: 8239
+// Module ID: 8247
+// Function ID: 8248
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 505, 8239, 6087, 6081, 2]
+// Dependencies: [19, 502, 8248, 6095, 6089, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 8238 (useDiscountedPremiumProductInfo)
+// Module 8247 (useDiscountedPremiumProductInfo)
 import closure_2 from "noop" /* 19 */;
-import { CurrencyCodes } from "sum" /* 505 */;
+import { CurrencyCodes } from "sum" /* 502 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/premium/native/hooks/useDiscountedPremiumProductInfo.android.tsx");

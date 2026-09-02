@@ -1,10 +1,10 @@
 // Module ID: 4564
 // Function ID: 4565
 // Name: toFinite
-// Dependencies: [637]
+// Dependencies: [634]
 
 // Module 4564 (toFinite)
-import toNumber from "toNumber" /* 637 */;
+import toNumber from "toNumber" /* 634 */;
 
 
 export default function toFinite(arg0) {

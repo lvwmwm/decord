@@ -1,17 +1,17 @@
-// Module ID: 13373
-// Function ID: 13374
+// Module ID: 13597
+// Function ID: 13598
 // Name: initialize
-// Dependencies: [11982, 676, 3, 15, 707, 698, 589, 709, 2]
+// Dependencies: [12206, 673, 3, 15, 704, 695, 586, 706, 2]
 
-// Module 13373 (initialize)
+// Module 13597 (initialize)
 import timestampDefault from "timestamp" /* 3 */;
 import createFastConnectSocket from "createFastConnectSocket" /* 15 */;
-import initializeDefault from "initialize" /* 589 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import setSecondaryTokenAll from "setSecondaryToken" /* 707 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import closure_4 from "initialize" /* 11982 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import initializeDefault from "initialize" /* 586 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import setSecondaryTokenAll from "setSecondaryToken" /* 704 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import closure_4 from "initialize" /* 12206 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 require = arg1;
 let closure_6 = new timestampDefault("MultiAccountSwitchStore");
@@ -104,8 +104,8 @@ const multiAccountSwitchStore = new MultiAccountSwitchStore(dispatcherDefault, {
           obj.is_token_mismatch = tmp10;
           obj.is_user_mismatch = tmp8;
           logger.log("Token mismatch on account switch connection open", obj);
-          map(698).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj);
-          const obj6 = map(698);
+          map(695).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj);
+          const obj6 = map(695);
         }
       }
       let tmp26 = c8 !== user.id;
@@ -118,7 +118,7 @@ const multiAccountSwitchStore = new MultiAccountSwitchStore(dispatcherDefault, {
       obj1[4] = users1.map((id) => id.id);
       obj1[5] = c12;
       obj1[6] = c10;
-      let tmp35 = map(698);
+      let tmp35 = map(695);
       const track = tmp35.track;
       let obj2 = AnalyticEvents;
       if (tmp26) {
@@ -174,7 +174,7 @@ const multiAccountSwitchStore = new MultiAccountSwitchStore(dispatcherDefault, {
             return tmp;
           });
           if (0 !== found.length) {
-            let tmp41Result = tmp41(707);
+            let tmp41Result = tmp41(704);
             let tmp46 = tmp41Result.getToken(id2) === token2;
             let obj3 = {};
             obj4 = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
@@ -195,12 +195,12 @@ const multiAccountSwitchStore = new MultiAccountSwitchStore(dispatcherDefault, {
             logger.log("setToken about to introduce per-user token collision", obj3);
             const obj17 = id(15);
             tmp60 = found.length >= 2;
-            map(698).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj3);
-            const obj12 = map(698);
+            map(695).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj3);
+            const obj12 = map(695);
           }
           obj11 = authStore;
         }
-        tmp41Result = tmp41(707);
+        tmp41Result = tmp41(704);
         tmp41Result.setToken(token2, user.id);
       }
       id = user.id;
@@ -326,8 +326,8 @@ let obj = {
           obj.is_token_mismatch = tmp10;
           obj.is_user_mismatch = tmp8;
           logger.log("Token mismatch on account switch connection open", obj);
-          map(698).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj);
-          const obj6 = map(698);
+          map(695).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj);
+          const obj6 = map(695);
         }
       }
       let tmp26 = c8 !== user.id;
@@ -340,7 +340,7 @@ let obj = {
       obj1[4] = users1.map((id) => id.id);
       obj1[5] = c12;
       obj1[6] = c10;
-      let tmp35 = map(698);
+      let tmp35 = map(695);
       const track = tmp35.track;
       let obj2 = AnalyticEvents;
       if (tmp26) {
@@ -396,7 +396,7 @@ let obj = {
             return tmp;
           });
           if (0 !== found.length) {
-            let tmp41Result = tmp41(707);
+            let tmp41Result = tmp41(704);
             let tmp46 = tmp41Result.getToken(id2) === token2;
             let obj3 = {};
             obj4 = { from_user_id: null, to_user_id: null, actual_user_id: null, fast_connect_user_id: null, linked_user_ids: null, has_ever_connected: null, switch_origin: null };
@@ -417,12 +417,12 @@ let obj = {
             logger.log("setToken about to introduce per-user token collision", obj3);
             const obj17 = id(15);
             tmp60 = found.length >= 2;
-            map(698).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj3);
-            const obj12 = map(698);
+            map(695).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj3);
+            const obj12 = map(695);
           }
           obj11 = authStore;
         }
-        tmp41Result = tmp41(707);
+        tmp41Result = tmp41(704);
         tmp41Result.setToken(token2, user.id);
       }
       id = user.id;

@@ -1,13 +1,13 @@
-// Module ID: 11538
-// Function ID: 11539
+// Module ID: 11761
+// Function ID: 11762
 // Name: useTypingUserIds
-// Dependencies: [4130, 11537, 1922, 589, 2]
+// Dependencies: [4130, 11760, 1921, 586, 2]
 // Exports: useTypingUserIds
 
-// Module 11538 (useTypingUserIds)
+// Module 11761 (useTypingUserIds)
 import closure_2 from "markAllUserIdListsStale" /* 4130 */;
-import closure_3 from "handleTypingStart" /* 11537 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
+import closure_3 from "handleTypingStart" /* 11760 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/chat/useTypingUsersIds.tsx");

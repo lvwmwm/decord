@@ -1,9 +1,9 @@
-// Module ID: 14311
-// Function ID: 14312
+// Module ID: 14534
+// Function ID: 14535
 // Name: WebAuthnScreens
 // Dependencies: [2]
 
-// Module 14311 (WebAuthnScreens)
+// Module 14534 (WebAuthnScreens)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/webauthn/WebAuthnConstants.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 7618
-// Function ID: 7619
+// Module ID: 7628
+// Function ID: 7629
 // Name: useActiveThemeType
-// Dependencies: [1304, 4297, 1346, 1305, 589, 4331, 2]
+// Dependencies: [1303, 4297, 1345, 1304, 586, 4331, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 7618 (useActiveThemeType)
-import initialize from "initialize" /* 589 */;
+// Module 7628 (useActiveThemeType)
+import initialize from "initialize" /* 586 */;
 import getGuildIdFromNavigationStateDefault from "getGuildIdFromNavigationState" /* 4331 */;
-import closure_3 from "CHANNEL_SIDEBAR_WIDTH" /* 1304 */;
+import closure_3 from "CHANNEL_SIDEBAR_WIDTH" /* 1303 */;
 import closure_4 from "reset" /* 4297 */;
-import closure_5 from "reset" /* 1346 */;
-import SystemThemeState from "SystemThemeState" /* 1305 */;
+import closure_5 from "reset" /* 1345 */;
+import SystemThemeState from "SystemThemeState" /* 1304 */;
 
 require = arg1;
 function useActiveThemeType() {

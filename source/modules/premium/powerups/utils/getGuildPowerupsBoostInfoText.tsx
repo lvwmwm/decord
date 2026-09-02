@@ -1,13 +1,13 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12342
+// Function ID: 12343
 // Name: getGuildPowerupsBoostInfoText
-// Dependencies: [4365, 1236, 2401, 2]
+// Dependencies: [4365, 1233, 2400, 2]
 // Exports: getGuildPowerupsBoostInfoText
 
-// Module 12118 (getGuildPowerupsBoostInfoText)
+// Module 12342 (getGuildPowerupsBoostInfoText)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2401 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2400 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
 
 const BoostInfoType = BoostedGuildTiers.BoostInfoType;

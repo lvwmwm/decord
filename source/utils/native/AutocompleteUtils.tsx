@@ -1,15 +1,15 @@
-// Module ID: 5453
-// Function ID: 5454
+// Module ID: 5461
+// Function ID: 5462
 // Name: map
-// Dependencies: [676, 1236, 2]
+// Dependencies: [673, 1233, 2]
 
-// Module 5453 (map)
+// Module 5461 (map)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ME from "ME" /* 673 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 ME.AutoCompleteResultTypes;
-const items = [["game", "gameMentionInput"]];
+const items = [["game", "gameMentionInput"], ["time", "timestampMentionInput"]];
 const map = new Map(items);
 const result = set.fileFinishedImporting("utils/native/AutocompleteUtils.tsx");
 
@@ -30,6 +30,12 @@ export default {
     const obj = { test: "game", text: "@game", inlineAutocompleteType: "gameMentionInput", description: null };
     const intl = getSystemLocale.intl;
     obj[3] = intl.string(getSystemLocale.t["1kR88y"]);
+    return obj;
+  },
+  MENTION_TIMESTAMP() {
+    const obj = { test: "time", text: "@time", inlineAutocompleteType: "timestampMentionInput", description: null };
+    const intl = getSystemLocale.intl;
+    obj[3] = intl.string(getSystemLocale.t.V6L3TV);
     return obj;
   },
   LAUNCHABLE_APPLICATIONS() {

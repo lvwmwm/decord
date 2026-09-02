@@ -1,20 +1,20 @@
-// Module ID: 14674
-// Function ID: 14675
+// Module ID: 14900
+// Function ID: 14901
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 7287, 589, 14675, 2]
+// Dependencies: [19, 7296, 586, 14901, 2]
 // Exports: default
 
-// Module 14674 (useGetProductsFromSkus)
+// Module 14900 (useGetProductsFromSkus)
 import set from "set" /* 2 */;
 import noop from "noop" /* 19 */;
-import closure_4 from "updateCategoriesAndProducts" /* 7287 */;
+import closure_4 from "updateCategoriesAndProducts" /* 7296 */;
 
 noop.useCallback;
 const result = set.fileFinishedImporting("modules/collectibles/hooks/useGetProductsFromSkus.tsx");
 
 export default function useGetProductsFromSkus() {
   const items = [closure_4];
-  stateFromStores = stateFromStores(589).useStateFromStores(items, () => products.products);
+  stateFromStores = stateFromStores(586).useStateFromStores(items, () => products.products);
   const items1 = [stateFromStores];
   return useCallback((arr) => {
     const mapped = arr.map((arg0) => {

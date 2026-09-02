@@ -1,12 +1,12 @@
-// Module ID: 9602
-// Function ID: 9603
+// Module ID: 9615
+// Function ID: 9616
 // Name: useCurrentEmbeddedActivity
-// Dependencies: [1386, 589, 2]
+// Dependencies: [1385, 586, 2]
 // Exports: default
 
-// Module 9602 (useCurrentEmbeddedActivity)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "participantFromServer" /* 1386 */;
+// Module 9615 (useCurrentEmbeddedActivity)
+import initialize from "initialize" /* 586 */;
+import closure_2 from "participantFromServer" /* 1385 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/utils/useCurrentEmbeddedActivity.tsx");

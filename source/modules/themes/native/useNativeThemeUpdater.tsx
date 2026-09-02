@@ -1,12 +1,12 @@
-// Module ID: 16537
-// Function ID: 16538
+// Module ID: 16772
+// Function ID: 16773
 // Name: useNativeThemeUpdater
-// Dependencies: [19, 1302, 16538, 16539, 2]
+// Dependencies: [19, 1301, 16773, 16774, 2]
 // Exports: default
 
-// Module 16537 (useNativeThemeUpdater)
+// Module 16772 (useNativeThemeUpdater)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "handleThemeChange" /* 1302 */;
+import closure_3 from "handleThemeChange" /* 1301 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/themes/native/useNativeThemeUpdater.tsx");

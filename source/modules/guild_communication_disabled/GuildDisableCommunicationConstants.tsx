@@ -1,12 +1,12 @@
-// Module ID: 1994
-// Function ID: 1995
+// Module ID: 1993
+// Function ID: 1994
 // Name: getFriendlyDurationString
-// Dependencies: [676, 1236, 1995, 2]
+// Dependencies: [673, 1233, 1994, 2]
 // Exports: getDisableCommunicationDurationOptions
 
-// Module 1994 (getFriendlyDurationString)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import importDefaultResult from "combined" /* 1995 */;
+// Module 1993 (getFriendlyDurationString)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import importDefaultResult from "combined" /* 1994 */;
 
 require = arg1;
 function getFriendlyDurationString(arg0) {

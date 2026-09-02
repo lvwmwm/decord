@@ -1,19 +1,19 @@
-// Module ID: 12784
-// Function ID: 12785
+// Module ID: 13005
+// Function ID: 13006
 // Name: SettingsUpsellsTableRow
-// Dependencies: [32, 19, 17, 1387, 676, 21, 4478, 712, 4945, 8760, 12777, 6240, 589, 8767, 5992, 1236, 4474, 6245, 4700, 2]
+// Dependencies: [32, 19, 17, 1386, 673, 21, 4478, 709, 4945, 8775, 12998, 6249, 586, 8782, 6000, 1233, 4474, 6254, 4700, 2]
 // Exports: default
 
-// Module 12784 (SettingsUpsellsTableRow)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 13005 (SettingsUpsellsTableRow)
+import ThemesDefault from "Themes" /* 709 */;
 import useMountLayoutEffectDefault from "useMountLayoutEffect" /* 4945 */;
-import SettingsIcon from "SettingsIcon" /* 6240 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12777 */;
+import SettingsIcon from "SettingsIcon" /* 6249 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 12998 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -25,7 +25,7 @@ function SettingsUpsellsTableRow(arg0) {
   const tmp = callback(React.useState(false), 2);
   dependencyMap = tmp[1];
   useMountLayoutEffectDefault(() => {
-    callback2(closure_1_0(8760).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
+    callback2(closure_1_0(8775).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_VIEWED);
   });
   const obj = {
     title,
@@ -35,7 +35,7 @@ function SettingsUpsellsTableRow(arg0) {
     onPress() {
       callback();
       dependencyMap(true);
-      callback2(closure_1_0(8760).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
+      callback2(closure_1_0(8775).TrackIarSettingsUpsellsActionType.SETTINGS_UPSELLS_APPLY_CLICKED);
     },
     icon: callback2(SettingsIcon.SettingsIcon, {})
   };

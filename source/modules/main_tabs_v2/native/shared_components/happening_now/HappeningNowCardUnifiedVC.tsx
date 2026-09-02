@@ -1,15 +1,15 @@
-// Module ID: 15661
-// Function ID: 15662
+// Module ID: 15892
+// Function ID: 15893
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 1386, 4500, 4130, 21, 15662, 15674, 15675, 647, 15652, 2]
+// Dependencies: [19, 1385, 4500, 4130, 21, 15893, 15905, 15906, 644, 15883, 2]
 // Exports: default, useCallActivityData
 
-// Module 15661 (HappeningNowCardUnifiedVC)
+// Module 15892 (HappeningNowCardUnifiedVC)
 import noopAll from "noop" /* 19 */;
-import IconOrPreviewDefault from "IconOrPreview" /* 15662 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15674 */;
-import formatVoiceActivityTitleDefault from "formatVoiceActivityTitle" /* 15675 */;
-import closure_3 from "participantFromServer" /* 1386 */;
+import IconOrPreviewDefault from "IconOrPreview" /* 15893 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 15905 */;
+import formatVoiceActivityTitleDefault from "formatVoiceActivityTitle" /* 15906 */;
+import closure_3 from "participantFromServer" /* 1385 */;
 import closure_4 from "reset" /* 4500 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -25,7 +25,7 @@ export default function HappeningNowCardUnifiedVC(arg0) {
     panelVariant = false;
   }
   const channelId = voiceState.channelId;
-  let obj = channelId(647);
+  let obj = channelId(644);
   const items = [closure_3, closure_4, closure_5];
   const items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
@@ -92,7 +92,7 @@ export const useCallActivityData = function useCallActivityData(channel_id) {
   const _require = channel_id;
   const items = [closure_3, closure_4, closure_5];
   const items1 = [channel_id];
-  return _require(647).useStateFromStoresObject(items, () => {
+  return _require(644).useStateFromStoresObject(items, () => {
     if (null == channelId) {
       return {};
     } else {

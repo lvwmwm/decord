@@ -1,19 +1,19 @@
-// Module ID: 10749
-// Function ID: 10750
+// Module ID: 10969
+// Function ID: 10970
 // Name: filterLayer
-// Dependencies: [19, 17, 8507, 6001, 21, 4478, 712, 8547, 4197, 8548, 8539, 5535, 5493, 10750, 2]
+// Dependencies: [19, 17, 8520, 6009, 21, 4478, 709, 8560, 4197, 8561, 8552, 5543, 5501, 10970, 2]
 // Exports: default
 
-// Module 10749 (filterLayer)
+// Module 10969 (filterLayer)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import map from "map" /* 4197 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8539 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8547 */;
-import ProfileFrameLayerDefault from "ProfileFrameLayer" /* 8548 */;
-import metadataDefault from "metadata" /* 10750 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8552 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8560 */;
+import ProfileFrameLayerDefault from "ProfileFrameLayer" /* 8561 */;
+import metadataDefault from "metadata" /* 10970 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6001 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -74,14 +74,14 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   items3[1] = tmp16;
   const obj10 = { source: null, style: null, resizeMode: "cover" };
   const obj11 = { uri: null };
-  let tmp3Result = tmp3(5493);
+  let tmp3Result = tmp3(5501);
   obj11[0] = metadataDefault;
   obj10[0] = obj11;
   obj10[1] = tmp.sampleProfile;
   obj9[1] = callback(tmp3Result, obj10);
   items2[1] = callback(closure_4, obj9);
   const obj12 = { frame: profileFrame, filterLayer: tmp10, profileThemeType: tmp11.PREVIEW, frameOrder: null, containerWidth: null, containerHeight: null };
-  tmp3Result = tmp3(8548);
+  tmp3Result = tmp3(8561);
   obj12[3] = ProfileFrameLayerOrder.ProfileFrameLayerOrder.FRONT;
   obj12[4] = result;
   obj12[5] = previewHeight - overflowTop - overflowBottom;

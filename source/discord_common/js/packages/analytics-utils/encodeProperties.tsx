@@ -1,10 +1,10 @@
-// Module ID: 662
-// Function ID: 663
+// Module ID: 659
+// Function ID: 660
 // Name: encodeProperties
 // Dependencies: [2]
 // Exports: encodeProperties
 
-// Module 662 (encodeProperties)
+// Module 659 (encodeProperties)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/packages/analytics-utils/encodeProperties.tsx");

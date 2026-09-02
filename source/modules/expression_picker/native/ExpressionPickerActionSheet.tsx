@@ -1,21 +1,21 @@
-// Module ID: 10349
-// Function ID: 10350
+// Module ID: 10371
+// Function ID: 10372
 // Name: ExpressionPickerActionSheet
-// Dependencies: [19, 1387, 5623, 10350, 21, 4217, 4342, 1626, 589, 10351, 4445, 1493, 1628, 5492, 500, 9124, 5622, 10352, 2]
+// Dependencies: [19, 1386, 5631, 10372, 21, 4217, 4342, 1625, 586, 10373, 4445, 1492, 1627, 5500, 1234, 9138, 5630, 10374, 2]
 // Exports: default
 
-// Module 10349 (ExpressionPickerActionSheet)
-import initialize from "initialize" /* 589 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import KeyboardTypes from "KeyboardTypes" /* 1626 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+// Module 10371 (ExpressionPickerActionSheet)
+import initialize from "initialize" /* 586 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1492 */;
+import KeyboardTypes from "KeyboardTypes" /* 1625 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod4217 from "module_4217" /* 4217 */;
 import useKeyboardType from "useKeyboardType" /* 4342 */;
-import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5492 */;
+import NAV_BAR_HEIGHT from "NAV_BAR_HEIGHT" /* 5500 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5623 */;
-import { STICKER_FORMATS } from "PADDING_HORIZONTAL" /* 10350 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import { ACTION_SHEET_START_HEIGHT_RATIO as closure_5 } from "ACTION_SHEET_START_HEIGHT_RATIO" /* 5631 */;
+import { STICKER_FORMATS } from "PADDING_HORIZONTAL" /* 10372 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -36,11 +36,11 @@ export default function ExpressionPickerActionSheet(arg0) {
   const diff = height - NAV_BAR_HEIGHT.NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
   let tmp15Result = null;
   if (undefined !== stateFromStores) {
-    let isIOSResult = tmp2(500).isIOS();
+    let isIOSResult = tmp2(1234).isIOS();
     if (isIOSResult) {
       obj = { animatedSheetIndex: null, followSystemKeyboard: true };
       obj[0] = sharedValue;
-      isIOSResult = callback(tmp7(9124), obj);
+      isIOSResult = callback(tmp7(9138), obj);
     }
     obj = { children: null };
     const items1 = [isIOSResult, ];
@@ -77,13 +77,13 @@ export default function ExpressionPickerActionSheet(arg0) {
     obj2[9] = initialGifQuery;
     obj2[10] = STICKER_FORMATS;
     obj2[11] = diff;
-    obj1[5] = callback(tmp7(10352), obj2);
-    items1[1] = callback(tmp2(5622).BottomSheet, obj1);
+    obj1[5] = callback(tmp7(10374), obj2);
+    items1[1] = callback(tmp2(5630).BottomSheet, obj1);
     obj[0] = items1;
     tmp15Result = closure_9(closure_8, obj);
     const tmp15 = closure_9;
     const tmp16 = closure_8;
-    const tmp2Result = tmp2(500);
+    const tmp2Result = tmp2(1234);
   }
   return tmp15Result;
 };

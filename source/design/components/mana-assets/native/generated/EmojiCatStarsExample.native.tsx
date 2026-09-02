@@ -1,14 +1,14 @@
-// Module ID: 6499
-// Function ID: 6500
+// Module ID: 6508
+// Function ID: 6509
 // Name: EmojiCatStarsExample
-// Dependencies: [21, 5493, 6500, 2]
+// Dependencies: [21, 5501, 6509, 2]
 // Exports: EmojiCatStarsExample
 
-// Module 6499 (EmojiCatStarsExample)
+// Module 6508 (EmojiCatStarsExample)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6500 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6509 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/EmojiCatStarsExample.native.tsx");

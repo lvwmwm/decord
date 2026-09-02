@@ -1,20 +1,20 @@
-// Module ID: 14665
-// Function ID: 14666
+// Module ID: 14891
+// Function ID: 14892
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 676, 21, 4478, 712, 1236, 4197, 4335, 5553, 500, 4474, 14666, 4940, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 1233, 4197, 4335, 5561, 1234, 4474, 14892, 4940, 2]
 // Exports: default
 
-// Module 14665 (QuestHomeEmptyState)
+// Module 14891 (QuestHomeEmptyState)
 import noopAll from "noop" /* 19 */;
-import set from "set" /* 500 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import set from "set" /* 1234 */;
 import map from "map" /* 4197 */;
 import useChatLayoutDefault from "useChatLayout" /* 4335 */;
 import Text from "Text" /* 4474 */;
-import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5553 */;
+import SafeAreaPaddingView from "SafeAreaPaddingView" /* 5561 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { VerticalGradient } from "ME" /* 676 */;
+import { VerticalGradient } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -70,7 +70,7 @@ export default function QuestHomeEmptyState(subtitle) {
     const obj6 = { children: null };
     const obj7 = { style: null, source: null, resizeMode: "cover" };
     obj7[0] = tmp5.emptyImage;
-    obj7[1] = tmp7(14666);
+    obj7[1] = tmp7(14892);
     const items2 = [tmp9(closure_4, obj7), ];
     const obj8 = { style: null, end: null, start: null, colors: null };
     obj8[0] = tmp5.gradient;

@@ -1,12 +1,12 @@
-// Module ID: 4127
-// Function ID: 4128
+// Module ID: 4126
+// Function ID: 4127
 // Name: GuildMemberFlags
-// Dependencies: [1992, 4109, 1399, 589, 2]
+// Dependencies: [1991, 4108, 1398, 586, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile, useCurrentUserAutomodQuaratinedProfile
 
-// Module 4127 (GuildMemberFlags)
-import closure_2 from "trackCommunicationDisabled" /* 1992 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4109 */;
+// Module 4126 (GuildMemberFlags)
+import closure_2 from "trackCommunicationDisabled" /* 1991 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
 
 const require = arg1;
 let items = [, , ];
@@ -94,7 +94,7 @@ export const useCurrentUserAutomodQuaratinedProfile = function useCurrentUserAut
   const _require = guild_id;
   items = [closure_2];
   const items1 = [guild_id];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let tmp2 = null != selfMember;
     if (tmp2) {
       selfMember = closure_1_2.getSelfMember(tmp);

@@ -1,19 +1,19 @@
-// Module ID: 7510
-// Function ID: 7511
+// Module ID: 7520
+// Function ID: 7521
 // Name: listKey
-// Dependencies: [32, 1391, 1387, 4493, 4123, 1396, 7511, 12, 1398, 11, 6152, 589, 709, 2]
+// Dependencies: [32, 1390, 1386, 4493, 4122, 1395, 7521, 12, 1397, 11, 6160, 586, 706, 2]
 
-// Module 7510 (listKey)
+// Module 7520 (listKey)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import set from "set" /* 1396 */;
-import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7511 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import set from "set" /* 1395 */;
+import trackForumChannelSeenBatch from "trackForumChannelSeenBatch" /* 7521 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1391 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import { ALL_CHANNEL_TYPES } from "createChannelRecord" /* 1390 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "generateOldThreadCutoff" /* 4493 */;
-import closure_7 from "storeThread" /* 4123 */;
+import closure_7 from "storeThread" /* 4122 */;
 
 require = arg1;
 function listKey(channelId, sortOrder, tagFilter, tagSetting) {
@@ -112,7 +112,7 @@ function resortListState(value) {
     const mapped = sorted.map((id) => id.id);
     const tmp7Result = applyDefault(store.getAllThreadsForParent(value.channelId));
     value.threads = mapped.reverse().value();
-  } else if (sortOrder === sortOrder(1396).ThreadSortOrder.LATEST_ACTIVITY) {
+  } else if (sortOrder === sortOrder(1395).ThreadSortOrder.LATEST_ACTIVITY) {
     id = id.id;
     let id2 = closure_6.lastMessageId(id);
   } else {
@@ -296,7 +296,7 @@ const archivedThreadsStore = new ArchivedThreadsStore(dispatcherDefault, {
     } else {
       return false;
     }
-    obj = channel(6152);
+    obj = channel(6160);
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {
     let flag = false;

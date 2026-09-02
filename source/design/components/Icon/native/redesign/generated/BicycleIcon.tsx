@@ -1,14 +1,14 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9214
+// Function ID: 9215
 // Name: BicycleIcon
-// Dependencies: [19, 21, 712, 4196, 9201, 2]
+// Dependencies: [19, 21, 709, 4196, 9215, 2]
 // Exports: BicycleIcon
 
-// Module 9200 (BicycleIcon)
+// Module 9214 (BicycleIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9201 */;
+import registerAsset from "registerAsset" /* 9215 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

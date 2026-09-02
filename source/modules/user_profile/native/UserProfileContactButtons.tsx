@@ -1,16 +1,16 @@
-// Module ID: 12612
-// Function ID: 12613
+// Module ID: 12836
+// Function ID: 12837
 // Name: FlatFriendButton
-// Dependencies: [19, 17, 4130, 676, 21, 4478, 712, 4928, 5953, 8558, 12494, 589, 4322, 12613, 4415, 1236, 9071, 9059, 9051, 4445, 4723, 4491, 12615, 8006, 5020, 7623, 12616, 2]
+// Dependencies: [19, 17, 4130, 673, 21, 4478, 709, 4928, 5961, 8571, 12718, 586, 4322, 12837, 4415, 1233, 9085, 9073, 9065, 4445, 4723, 4491, 12839, 8015, 5024, 7633, 12840, 2]
 // Exports: default
 
-// Module 12612 (FlatFriendButton)
+// Module 12836 (FlatFriendButton)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Button from "Button" /* 4928 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "markAllUserIdListsStale" /* 4130 */;
-import { RelationshipTypes } from "ME" /* 676 */;
+import { RelationshipTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -40,15 +40,15 @@ function FriendRequestButton(user) {
   let stateFromStores;
   closure_4 = undefined;
   ({ hasCustomProfileTheme, ButtonComponent } = user);
-  let obj = user(8558);
+  let obj = user(8571);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (newestAnalyticsLocation == null) {
-    newestAnalyticsLocation = trackUserProfileAction(5953)().newestAnalyticsLocation;
+    newestAnalyticsLocation = trackUserProfileAction(5961)().newestAnalyticsLocation;
   }
   dependencyMap = { location: newestAnalyticsLocation };
-  let tmp3Result = tmp3(12494);
+  let tmp3Result = tmp3(12718);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
-  tmp3Result = tmp3(589);
+  tmp3Result = tmp3(586);
   const items = [closure_4];
   stateFromStores = tmp3Result.useStateFromStores(items, () => relationshipType.getRelationshipType(user.id));
   closure_4 = trackUserProfileAction(4322).useName(user);
@@ -60,21 +60,21 @@ function FriendRequestButton(user) {
         return null;
       } else {
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
-          let UserPlusIcon = tmp3(12613).UserClockIcon;
+          let UserPlusIcon = tmp3(12837).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(4415).UserPlusIcon;
         }
-        const intl = tmp3(1236).intl;
+        const intl = tmp3(1233).intl;
         const string = intl.string;
-        const t = tmp3(1236).t;
+        const t = tmp3(1233).t;
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
           let stringResult = string(t["fMm5q/"]);
         } else {
           stringResult = string(t["7815ae"]);
         }
-        const intl2 = tmp3(1236).intl;
+        const intl2 = tmp3(1233).intl;
         const string2 = intl2.string;
-        const t2 = tmp3(1236).t;
+        const t2 = tmp3(1233).t;
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
           let string2Result = string2(t2.H0Ql7N);
         } else {
@@ -92,11 +92,11 @@ function FriendRequestButton(user) {
               callback({ action: "CANCEL_FRIEND_REQUEST" });
               closure_1_1(closure_1_2[17]).cancelFriendRequest(id.id, closure_2);
             };
-            const result = user(9071).confirmCancelFriendRequest(obj);
-            const obj3 = user(9071);
+            const result = user(9085).confirmCancelFriendRequest(obj);
+            const obj3 = user(9085);
           } else {
             trackUserProfileAction({ action: "SEND_FRIEND_REQUEST" });
-            obj = trackUserProfileAction(9059);
+            obj = trackUserProfileAction(9073);
             obj = { userId: null, context: null };
             obj[0] = user.id;
             obj[1] = dependencyMap;

@@ -1,10 +1,10 @@
-// Module ID: 5364
-// Function ID: 5365
+// Module ID: 5372
+// Function ID: 5373
 // Name: getUnitId
-// Dependencies: [1469, 2]
+// Dependencies: [1468, 2]
 
-// Module 5364 (getUnitId)
-import getUnitIdDefault from "getUnitId" /* 1469 */;
+// Module 5372 (getUnitId)
+import getUnitIdDefault from "getUnitId" /* 1468 */;
 
 const obj = { 1: null, 2: { enabled: true }, 3: { enabled: true, disableUI: true }, 4: { enabled: true, disableUI: true, swallowVolumeOnlySpeakingEvents: true } };
 obj[4] = { enabled: true, disableUI: true, dontEmitVolumeOnlySpeakingEvents: true };

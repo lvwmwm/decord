@@ -1,25 +1,25 @@
-// Module ID: 17219
-// Function ID: 17220
+// Module ID: 17455
+// Function ID: 17456
 // Name: HeaderSection
-// Dependencies: [19, 17, 5583, 17194, 676, 5352, 21, 4478, 712, 5351, 12, 7708, 4474, 1236, 4926, 5068, 1995, 7692, 7693, 17220, 4928, 9224, 4445, 17222, 2009, 17223, 17225, 589, 8363, 17208, 2]
+// Dependencies: [19, 17, 5591, 17430, 673, 5360, 21, 4478, 709, 5359, 12, 7717, 4474, 1233, 4926, 5076, 1994, 7701, 7702, 17456, 4928, 9238, 4445, 17458, 2008, 17459, 17461, 586, 8372, 17444, 2]
 // Exports: default
 
-// Module 17219 (HeaderSection)
+// Module 17455 (HeaderSection)
 import applyDefault from "apply" /* 12 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import combinedDefault from "combined" /* 1995 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import combinedDefault from "combined" /* 1994 */;
 import Text from "Text" /* 4474 */;
 import Stack from "Stack" /* 4926 */;
 import Button from "Button" /* 4928 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7708 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 9224 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7717 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 9238 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "getRoleMemberCount" /* 5583 */;
-import closure_6 from "handleSetSection" /* 17194 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
-import OperatorTypes from "OperatorTypes" /* 5352 */;
+import closure_5 from "getRoleMemberCount" /* 5591 */;
+import closure_6 from "handleSetSection" /* 17430 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
+import OperatorTypes from "OperatorTypes" /* 5360 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -54,10 +54,10 @@ function HeaderSection(arg0) {
     obj3[1] = clearConnections;
     obj3[2] = locked;
     const obj4 = { variant: "text-sm/medium", color: "text-feedback-critical", children: null };
-    const intl3 = tmp10(1236).intl;
-    obj4[2] = intl3.string(tmp10(1236).t.ntW1cc);
+    const intl3 = tmp10(1233).intl;
+    obj4[2] = intl3.string(tmp10(1233).t.ntW1cc);
     obj3[3] = tmp13(tmp10(4474).Text, obj4);
-    tmp13Result = tmp13(tmp10(5068).PressableOpacity, obj3);
+    tmp13Result = tmp13(tmp10(5076).PressableOpacity, obj3);
   }
   const obj5 = { children: null };
   const obj6 = { children: null };
@@ -65,7 +65,7 @@ function HeaderSection(arg0) {
   obj1[1] = items2;
   const items3 = [closure_11(View, obj1), ];
   const obj7 = { variant: "text-sm/medium", children: null };
-  const intl4 = tmp10(1236).intl;
+  const intl4 = tmp10(1233).intl;
   const obj8 = { helpdeskArticleUrl: combinedDefault.getArticleURL(HelpdeskArticles.CONNECTION_DETAILS_ADMIN) };
   obj7[1] = intl4.format(getSystemLocale.t.q5f7tK, obj8);
   items3[1] = callback(Text.Text, obj7);
@@ -77,7 +77,7 @@ function HeaderSection(arg0) {
 function AndOrRadios(setPendingRoleConfigurations) {
   ({ locked, roleConnectionConfigurations } = setPendingRoleConfigurations);
   importDefault = setPendingRoleConfigurations.setPendingRoleConfigurations;
-  if (roleConnectionConfigurations(5351).ConnectionConfigurationRuleOperator.OR === roleConnectionConfigurations(5351).ConnectionConfigurationRuleOperator.AND) {
+  if (roleConnectionConfigurations(5359).ConnectionConfigurationRuleOperator.OR === roleConnectionConfigurations(5359).ConnectionConfigurationRuleOperator.AND) {
     if (0 === roleConnectionConfigurations.length) {
       let items = [];
     } else {
@@ -90,30 +90,30 @@ function AndOrRadios(setPendingRoleConfigurations) {
     let obj = applyDefault;
     const values = Object.values(obj.groupBy(roleConnectionConfigurations, (connectionType) => "" + connectionType.connectionType + ":" + connectionType.applicationId));
     obj = { title: null, value: null, onChange: null, hasIcons: false, children: null };
-    const intl = tmp(1236).intl;
-    obj[0] = intl.string(tmp(1236).t.Xs7PHX);
+    const intl = tmp(1233).intl;
+    obj[0] = intl.string(tmp(1233).t.Xs7PHX);
     obj[1] = setPendingRoleConfigurations.currentOperator;
     obj[2] = function onChange(arg0) {
       callback(roleConnectionConfigurations, arg0);
     };
     obj = { value: null, label: null, disabled: null };
-    obj[0] = tmp(5351).ConnectionConfigurationRuleOperator.OR;
-    const intl2 = tmp(1236).intl;
-    obj[1] = intl2.string(tmp(1236).t.W3iY58);
+    obj[0] = tmp(5359).ConnectionConfigurationRuleOperator.OR;
+    const intl2 = tmp(1233).intl;
+    obj[1] = intl2.string(tmp(1233).t.W3iY58);
     let tmp11 = locked;
     if (!locked) {
       tmp11 = values.length < 2;
     }
     obj[2] = tmp11;
-    const items2 = [closure_10(tmp(7693).TableRadioRow, obj), ];
+    const items2 = [closure_10(tmp(7702).TableRadioRow, obj), ];
     obj1 = { value: null, label: null, disabled: null };
-    obj1[0] = tmp(5351).ConnectionConfigurationRuleOperator.AND;
-    const intl3 = tmp(1236).intl;
-    obj1[1] = intl3.string(tmp(1236).t.gHXS9A);
+    obj1[0] = tmp(5359).ConnectionConfigurationRuleOperator.AND;
+    const intl3 = tmp(1233).intl;
+    obj1[1] = intl3.string(tmp(1233).t.gHXS9A);
     obj1[2] = locked;
-    items2[1] = closure_10(tmp(7693).TableRadioRow, obj1);
+    items2[1] = closure_10(tmp(7702).TableRadioRow, obj1);
     obj[4] = items2;
-    return closure_11(tmp(7692).TableRadioGroup, obj);
+    return closure_11(tmp(7701).TableRadioGroup, obj);
   }
 }
 function renderRoleConnectionConfigurations(memo, arg1, locked, arg3, integrations) {
@@ -376,7 +376,7 @@ export default function GuildSettingsRolesEditConnectionsControls(guild) {
   obj3 = {
     handleConnectionTapped(connectionType) {
       const items = [...memo];
-      const obj = { connectionType, connectionMetadataField: "Array", applicationId: "accessible", operator: "Object", value: false };
+      const obj = { connectionType, connectionMetadataField: "Array", applicationId: "accessible", operator: "y", value: null };
       obj[2] = arg1;
       items.push(obj);
       if (AND === guild(stateFromStoresArray[9]).ConnectionConfigurationRuleOperator.AND) {

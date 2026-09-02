@@ -1,37 +1,37 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8028
+// Function ID: 8029
 // Name: transformToRowGeneratedComponent
-// Dependencies: [109, 17, 4740, 8020, 7631, 1471, 1955, 4739, 1236, 8021, 8028, 8029, 8031, 8034, 8035, 4733, 5079, 8036, 8038, 7860, 4671, 1399, 4744, 8017, 8016, 1486, 1401, 687, 4468, 8053, 501, 4134, 2]
+// Dependencies: [109, 17, 4740, 8029, 7641, 1470, 1954, 4739, 1233, 8030, 8037, 8038, 8040, 8043, 8044, 4733, 5087, 8045, 8047, 7869, 4671, 1398, 4744, 8026, 8025, 1485, 1400, 684, 4468, 8061, 1235, 4134, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 8019 (transformToRowGeneratedComponent)
-import setDefault from "set" /* 687 */;
-import hasFlag from "hasFlag" /* 1399 */;
+// Module 8028 (transformToRowGeneratedComponent)
+import setDefault from "set" /* 684 */;
+import hasFlag from "hasFlag" /* 1398 */;
 import urlMatchesFileExtension from "urlMatchesFileExtension" /* 4671 */;
 import messageAttachmentToUnfurledMediaItem from "messageAttachmentToUnfurledMediaItem" /* 4744 */;
-import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8016 */;
-import nativeStylePropertiesDefault from "nativeStyleProperties" /* 8017 */;
-import MediaGalleryItemType from "MediaGalleryItemType" /* 8035 */;
+import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8025 */;
+import nativeStylePropertiesDefault from "nativeStyleProperties" /* 8026 */;
+import MediaGalleryItemType from "MediaGalleryItemType" /* 8044 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import { processColor } from "get ActivityIndicator" /* 17 */;
 import { CheckpointVersions } from "CheckpointPersonas" /* 4740 */;
-import { TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS as closure_7 } from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS" /* 8020 */;
-import importDefaultResult from "priv" /* 1401 */;
+import { TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS as closure_7 } from "TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS" /* 8029 */;
+import importDefaultResult from "priv" /* 1400 */;
 
 require = arg1;
 function transformToRowGeneratedComponent(message, accessory) {
   let _require = message;
   let initialSnowflakeSelectOptions = accessory;
   message = message.message;
-  let f81814 = message;
+  let f82676 = message;
   ({ interaction, guildId, shouldDisableInteractiveComponents, shouldObscureSpoiler } = message);
   const enabledContentHarmTypeFlags = message.enabledContentHarmTypeFlags;
   ({ shouldShowMosaicMediaDescriptions: processColor, shouldAgeVerify } = message);
   const type = accessory.type;
   let tmp = _require;
-  let tmp2 = f81814;
+  let tmp2 = f82676;
   ({ colors, markdownConfigs } = message);
-  if (_require(f81814[6]).ComponentType.ACTION_ROW === type) {
+  if (_require(f82676[6]).ComponentType.ACTION_ROW === type) {
     const components = accessory.components;
     let mapped = components.map((arg0) => {
       const tmp = closure_1_8(closure_0, arg0);
@@ -78,22 +78,22 @@ function transformToRowGeneratedComponent(message, accessory) {
     obj1.placeholder = tmp(tmp2[7]).getSelectPlaceholder(accessory);
     _require = accessory;
     initialSnowflakeSelectOptions = found1;
-    f81814 = (arg0) => initialSnowflakeSelectOptions.options[arg0].label;
+    f82676 = (arg0) => initialSnowflakeSelectOptions.options[arg0].label;
     const tmpResult3 = tmp(tmp2[7]);
     const obj2 = { expensive: null, cheap: null };
     obj2[0] = function expensive() {
       if (null != initialSnowflakeSelectOptions) {
         if (0 !== arr.length) {
-          const mapped = arr.map(f81814);
-          const intl = accessory(f81814[8]).intl;
+          const mapped = arr.map(f82676);
+          const intl = accessory(f82676[8]).intl;
           const obj = { selections: null };
           obj[0] = mapped.join(",");
-          return intl.formatToPlainString(accessory(f81814[8]).t["I/ROH+"], obj);
+          return intl.formatToPlainString(accessory(f82676[8]).t["I/ROH+"], obj);
         }
       }
-      const placeholder = accessory(f81814[7]).getSelectPlaceholder(accessory);
-      const intl2 = accessory(f81814[8]).intl;
-      return intl2.formatToPlainString(accessory(f81814[8]).t["3aednA"], { placeholder });
+      const placeholder = accessory(f82676[7]).getSelectPlaceholder(accessory);
+      const intl2 = accessory(f82676[8]).intl;
+      return intl2.formatToPlainString(accessory(f82676[8]).t["3aednA"], { placeholder });
     };
     const tmpResult4 = tmp(tmp2[19]);
     obj2[1] = tmp(tmp2[7]).getSelectPlaceholder(accessory);
@@ -219,7 +219,7 @@ function transformToRowGeneratedComponent(message, accessory) {
                   if (width > 0) {
                     if (null != height) {
                       if (height > 0) {
-                        let obj = accessory(f81814[20]);
+                        let obj = accessory(f82676[20]);
                         if (obj.isImageContentType(contentType)) {
                           let VISUAL_PLACEHOLDER = tmp(tmp2[14]).MediaGalleryItemType.IMAGE;
                           let tmp3 = tmp2;
@@ -249,7 +249,7 @@ function transformToRowGeneratedComponent(message, accessory) {
                         spoiler = false;
                       }
                       obj[2] = spoiler;
-                      obj[3] = f81814.author.bot;
+                      obj[3] = f82676.author.bot;
                       obj[4] = shouldObscureSpoiler;
                       obj[5] = enabledContentHarmTypeFlags;
                       obj[6] = shouldAgeVerify;
@@ -299,7 +299,7 @@ function transformToRowGeneratedComponent(message, accessory) {
                         let combined = null;
                         if (VISUAL_PLACEHOLDER === tmp4(tmp3[14]).MediaGalleryItemType.VIDEO) {
                           const _HermesInternal = HermesInternal;
-                          combined = "" + f81814.id + "_MediaGallery(" + initialSnowflakeSelectOptions.id + ")_" + arg1;
+                          combined = "" + f82676.id + "_MediaGallery(" + initialSnowflakeSelectOptions.id + ")_" + arg1;
                         }
                         obj.portalId = combined;
                         let tmp16 = obj;
@@ -319,8 +319,8 @@ function transformToRowGeneratedComponent(message, accessory) {
                     }
                   }
                 }
-                tmp3 = f81814;
-                VISUAL_PLACEHOLDER = accessory(f81814[14]).MediaGalleryItemType.VISUAL_PLACEHOLDER;
+                tmp3 = f82676;
+                VISUAL_PLACEHOLDER = accessory(f82676[14]).MediaGalleryItemType.VISUAL_PLACEHOLDER;
                 tmp4 = accessory;
               });
               const found2 = mapped3.filter(tmp(tmp2[5]).isNotNullish);
@@ -513,22 +513,22 @@ function transformToRowGeneratedComponent(message, accessory) {
     const tmpResult21 = tmp(tmp2[12]);
     obj17.placeholder = tmp(tmp2[7]).getSelectPlaceholder(accessory);
     _require = accessory;
-    f81814 = (label) => label.label;
+    f82676 = (label) => label.label;
     const tmpResult22 = tmp(tmp2[7]);
     obj18 = { expensive: null, cheap: null };
     obj18[0] = function expensive() {
       if (null != initialSnowflakeSelectOptions) {
         if (0 !== arr.length) {
-          const mapped = arr.map(f81814);
-          const intl = accessory(f81814[8]).intl;
+          const mapped = arr.map(f82676);
+          const intl = accessory(f82676[8]).intl;
           const obj = { selections: null };
           obj[0] = mapped.join(",");
-          return intl.formatToPlainString(accessory(f81814[8]).t["I/ROH+"], obj);
+          return intl.formatToPlainString(accessory(f82676[8]).t["I/ROH+"], obj);
         }
       }
-      const placeholder = accessory(f81814[7]).getSelectPlaceholder(accessory);
-      const intl2 = accessory(f81814[8]).intl;
-      return intl2.formatToPlainString(accessory(f81814[8]).t["3aednA"], { placeholder });
+      const placeholder = accessory(f82676[7]).getSelectPlaceholder(accessory);
+      const intl2 = accessory(f82676[8]).intl;
+      return intl2.formatToPlainString(accessory(f82676[8]).t["3aednA"], { placeholder });
     };
     const tmpResult23 = tmp(tmp2[19]);
     obj18[1] = tmp(tmp2[7]).getSelectPlaceholder(accessory);
@@ -543,11 +543,11 @@ function transformUnfurledMediaItem(file, shouldShowMedia) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            let VISUAL_PLACEHOLDER = tmp(8035).MediaGalleryItemType.IMAGE;
+            let VISUAL_PLACEHOLDER = tmp(8044).MediaGalleryItemType.IMAGE;
             let tmp4 = tmp;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(8035).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(8044).MediaGalleryItemType.VIDEO;
               tmp4 = tmp;
             }
             tmpResult = tmp(4671);
@@ -592,12 +592,12 @@ let c10 = importDefaultResult;
 let result = require("set").fileFinishedImporting("modules/messages/native/renderer/transformMessageComponents.tsx");
 
 export default function transformMessageComponents(message, arr) {
-  obj = { type: "textDisplayComponent", parserState: obj(7631).getInitialParserStateFromMessage(message.message, closure_7) };
+  obj = { type: "textDisplayComponent", parserState: obj(7641).getInitialParserStateFromMessage(message.message, closure_7) };
   obj = {};
   const merged = Object.assign(message);
   obj.markdownConfigs = { textDisplayComponent: obj };
   const mapped = arr.map((arg0) => closure_1_8(obj, arg0));
-  return mapped.filter(obj(1471).isNotNullish);
+  return mapped.filter(obj(1470).isNotNullish);
 };
 export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) {
   ({ width, height, contentType } = arg0);
@@ -606,10 +606,10 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) 
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp(8035).MediaGalleryItemType.IMAGE;
+            return tmp(8044).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              return tmp(8035).MediaGalleryItemType.VIDEO;
+              return tmp(8044).MediaGalleryItemType.VIDEO;
             }
             tmpResult = tmp(4671);
           }

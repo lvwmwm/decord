@@ -1,19 +1,19 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 7588
+// Function ID: 7589
 // Name: items
-// Dependencies: [109, 4477, 1218, 4574, 676, 4471, 687, 7579, 3, 4700, 7580, 7205, 530, 1955, 38, 5072, 5074, 5078, 2]
+// Dependencies: [109, 4477, 1215, 4574, 673, 4471, 684, 7589, 3, 4700, 7590, 7214, 527, 1954, 38, 5080, 5082, 5086, 2]
 // Exports: getFailedMessageId, isMessageDataCommand, isMessageDataEdit, isMessageDataSend
 
-// Module 7578 (items)
+// Module 7588 (items)
 import timestampDefault from "timestamp" /* 3 */;
-import setDefault from "set" /* 687 */;
-import enqueueDefault from "enqueue" /* 7579 */;
-import getOverlayMessageAnalyticsLocationDefault from "getOverlayMessageAnalyticsLocation" /* 7580 */;
+import setDefault from "set" /* 684 */;
+import enqueueDefault from "enqueue" /* 7589 */;
+import getOverlayMessageAnalyticsLocationDefault from "getOverlayMessageAnalyticsLocation" /* 7590 */;
 import closure_5 from "_objectWithoutProperties" /* 109 */;
 import closure_6 from "getUserAgnosticState" /* 4477 */;
-import closure_7 from "fetchFingerprint" /* 1218 */;
+import closure_7 from "fetchFingerprint" /* 1215 */;
 import closure_8 from "handleConnectionInfoChange" /* 4574 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import { MESSAGE_HTTP_TIMEOUT_RETRY_OPTIONS as closure_12 } from "MESSAGE_GROUP_SPACING" /* 4471 */;
 
 let handleCommand = arg1;
@@ -208,7 +208,7 @@ prototype["handleSend"] = function handleSend(nonce) {
     obj[0] = tmp3;
     const tmp4 = obj;
   }
-  obj1 = handleCommand(7205);
+  obj1 = handleCommand(7214);
   const signalStrength = obj1.getSignalStrength();
   obj = { mobile_network_type: store2.getType() };
   const merged = Object.assign(callback(nonce, closure_3));
@@ -234,7 +234,7 @@ prototype["handleSend"] = function handleSend(nonce) {
       const result = requests.set(nonce.nonce, abortController);
     }
     const result1 = self.startQueueMetricTimers(nonce.nonce);
-    const HTTP = tmp5(530).HTTP;
+    const HTTP = tmp5(527).HTTP;
     const obj2 = { url: null, body: null, context: null, oldFormErrors: true };
     obj2[0] = closure_10.MESSAGES(channelId);
     obj2[1] = obj;
@@ -258,7 +258,7 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, a
     obj[0] = tmp3;
     const tmp4 = obj;
   }
-  obj1 = handleCommand(7205);
+  obj1 = handleCommand(7214);
   const signalStrength = obj1.getSignalStrength();
   obj = { mobile_network_type: store2.getType() };
   const merged = Object.assign(callback(message, closure_4));
@@ -284,7 +284,7 @@ prototype["handleSendAnnouncement"] = function handleSendAnnouncement(message, a
       const result = requests.set(message.nonce, abortController);
     }
     const result1 = self.startQueueMetricTimers(message.nonce);
-    const HTTP = tmp5(530).HTTP;
+    const HTTP = tmp5(527).HTTP;
     const obj2 = { url: null, body: null, context: null, oldFormErrors: true };
     obj2[0] = closure_10.MESSAGES_ANNOUNCEMENT(channelId);
     obj2[1] = obj;

@@ -1,18 +1,18 @@
-// Module ID: 12847
-// Function ID: 12848
+// Module ID: 13069
+// Function ID: 13070
 // Name: setUseEntranceAnimationState
-// Dependencies: [32, 19, 1297, 644, 705, 4479, 4217, 2]
+// Dependencies: [32, 19, 1296, 641, 702, 4479, 4217, 2]
 // Exports: useEntranceAnimation
 
-// Module 12847 (setUseEntranceAnimationState)
+// Module 13069 (setUseEntranceAnimationState)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 const require = arg1;
 function setUseEntranceAnimationState(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => closure_1_5.setState(closure_0));
+  _require(702).batchUpdates(() => closure_1_5.setState(closure_0));
 }
 let obj = { duration: 300, easing: require("Button").STANDARD_EASING };
 obj = keys.create(() => ({ isComplete: false }));

@@ -1,10 +1,10 @@
 // Module ID: 4777
 // Function ID: 4778
 // Name: ToPrimitive
-// Dependencies: [1417, 4778, 4779, 4780]
+// Dependencies: [1416, 4778, 4779, 4780]
 
 // Module 4777 (ToPrimitive)
-import apply from "apply" /* 1417 */;
+import apply from "apply" /* 1416 */;
 import isPrimitive from "isPrimitive" /* 4778 */;
 
 let tmp = typeof Symbol === "function";
@@ -89,7 +89,7 @@ export default function ToPrimitive(arg0) {
         let tmp8;
         if (null != arg0[toPrimitive]) {
           tmp8 = tmp6;
-          if (!tmp(1417)(tmp6)) {
+          if (!tmp(1416)(tmp6)) {
             const _TypeError = TypeError;
             const _String2 = String;
             const text = `${tmp6} returned for property `;

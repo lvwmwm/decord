@@ -1,14 +1,14 @@
-// Module ID: 15944
-// Function ID: 15945
+// Module ID: 16175
+// Function ID: 16176
 // Name: HomeDrawerAddServerRowExpandedChildren
-// Dependencies: [19, 21, 15896, 4474, 1236, 2]
+// Dependencies: [19, 21, 16127, 4474, 1233, 2]
 // Exports: HomeDrawerAddServerRowExpandedChildren
 
-// Module 15944 (HomeDrawerAddServerRowExpandedChildren)
+// Module 16175 (HomeDrawerAddServerRowExpandedChildren)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
-import HomeDrawerSharedItem from "HomeDrawerSharedItem" /* 15896 */;
+import HomeDrawerSharedItem from "HomeDrawerSharedItem" /* 16127 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

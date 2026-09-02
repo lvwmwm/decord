@@ -1,13 +1,13 @@
-// Module ID: 11668
-// Function ID: 11669
+// Module ID: 11891
+// Function ID: 11892
 // Name: TrackSectionHeader
-// Dependencies: [8434, 8892, 503, 2]
+// Dependencies: [8443, 8907, 500, 2]
 // Exports: default
 
-// Module 11668 (TrackSectionHeader)
-import encodeProperties from "encodeProperties" /* 503 */;
-import trackImpressionDefault from "trackImpression" /* 8892 */;
-import closure_3 from "handleDismissWithDismissed" /* 8434 */;
+// Module 11891 (TrackSectionHeader)
+import encodeProperties from "encodeProperties" /* 500 */;
+import trackImpressionDefault from "trackImpression" /* 8907 */;
+import closure_3 from "handleDismissWithDismissed" /* 8443 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/app_launcher/native/screens/home/TrackSectionHeader.tsx");

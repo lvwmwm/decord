@@ -1,9 +1,9 @@
-// Module ID: 10910
-// Function ID: 10911
+// Module ID: 11130
+// Function ID: 11131
 // Name: __INTERNAL_VIEW_CONFIG
 // Dependencies: [26, 106, 65, 114, 2]
 
-// Module 10910 (__INTERNAL_VIEW_CONFIG)
+// Module 11130 (__INTERNAL_VIEW_CONFIG)
 import set from "set" /* 2 */;
 import result2 from "result" /* 26 */;
 import renderElement from "renderElement" /* 114 */;

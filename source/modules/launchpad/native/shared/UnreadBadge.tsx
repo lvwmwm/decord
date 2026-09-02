@@ -1,14 +1,14 @@
-// Module ID: 16562
-// Function ID: 16563
-// Dependencies: [19, 17, 10201, 4702, 21, 4478, 16558, 4935, 7613, 2]
+// Module ID: 16797
+// Function ID: 16798
+// Dependencies: [19, 17, 10223, 4702, 21, 4478, 16793, 4935, 7623, 2]
 
-// Module 16562
+// Module 16797
 import getFontScale from "getFontScale" /* 4935 */;
-import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7613 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7613 */;
-import getLayoutStyleDefault from "getLayoutStyle" /* 16558 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7623 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7623 */;
+import getLayoutStyleDefault from "getLayoutStyle" /* 16793 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10201 */;
+import { MUTED_OPACITY_CONTENT } from "hairlineWidth" /* 10223 */;
 import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

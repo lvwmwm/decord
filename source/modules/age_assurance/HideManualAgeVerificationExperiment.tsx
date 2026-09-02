@@ -1,12 +1,12 @@
-// Module ID: 8726
-// Function ID: 8727
+// Module ID: 8741
+// Function ID: 8742
 // Name: useIsManualAgeVerificationHidden
-// Dependencies: [1468, 2]
+// Dependencies: [1467, 2]
 // Exports: isManualAgeVerificationHidden, useIsManualAgeVerificationHidden
 
-// Module 8726 (useIsManualAgeVerificationHidden)
+// Module 8741 (useIsManualAgeVerificationHidden)
 import set from "set" /* 2 */;
-import ApexExperiment from "ApexExperiment" /* 1468 */;
+import ApexExperiment from "ApexExperiment" /* 1467 */;
 
 const obj = { 1: null };
 obj[1] = { isHidden: true };

@@ -1,14 +1,14 @@
-// Module ID: 13437
-// Function ID: 13438
+// Module ID: 13660
+// Function ID: 13661
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4121, 676, 21, 4478, 10028, 589, 1236, 1891, 5355, 4928, 2]
+// Dependencies: [19, 17, 4120, 673, 21, 4478, 10050, 586, 1233, 1890, 5363, 4928, 2]
 // Exports: default
 
-// Module 13437 (JoinVoiceChannelButton)
+// Module 13660 (JoinVoiceChannelButton)
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "getUncachedChannelPermissions" /* 4121 */;
-import { Permissions } from "ME" /* 676 */;
+import closure_6 from "getUncachedChannelPermissions" /* 4120 */;
+import { Permissions } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -19,20 +19,20 @@ let result = require("set").fileFinishedImporting("modules/voice_calls/native/ac
 export default function JoinVoiceChannelButton(channel) {
   channel = channel.channel;
   const tmp = callback();
-  let obj = channel(589);
+  let obj = channel(586);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => !closure_1_6.can(closure_1_7.CONNECT, channel));
-  const intl = channel(1236).intl;
-  let stringResult = intl.string(channel(1236).t.eIi3Om);
+  const intl = channel(1233).intl;
+  let stringResult = intl.string(channel(1233).t.eIi3Om);
   if (tmp3) {
-    const intl3 = tmp4(1236).intl;
-    stringResult = intl3.string(tmp4(1236).t.rZfiNq);
+    const intl3 = tmp4(1233).intl;
+    stringResult = intl3.string(tmp4(1233).t.rZfiNq);
     let flag = true;
   } else {
     flag = false;
     if (stateFromStores) {
-      const intl2 = tmp4(1236).intl;
-      stringResult = intl2.string(tmp4(1236).t.TVBCKZ);
+      const intl2 = tmp4(1233).intl;
+      stringResult = intl2.string(tmp4(1233).t.TVBCKZ);
       flag = true;
     }
   }

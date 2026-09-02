@@ -1,18 +1,18 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12723
+// Function ID: 12724
 // Name: createNitroSuggestedSku
-// Dependencies: [32, 4521, 10461, 10462, 10463, 676, 1924, 1236, 6078, 2]
+// Dependencies: [32, 4521, 10682, 10683, 10684, 673, 1923, 1233, 6086, 2]
 // Exports: buildReorderedOwnedItemsLastWishlistItems, buildReorderedWishlistData, createNitroSuggestedSku, isEligibleWishlistItemOnMobile
 
-// Module 12499 (createNitroSuggestedSku)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import useSKUPrice from "useSKUPrice" /* 6078 */;
+// Module 12723 (createNitroSuggestedSku)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import useSKUPrice from "useSKUPrice" /* 6086 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "createFromServer" /* 4521 */;
-import { isCollectiblesWishlistItemRecord as closure_4 } from "createCollectiblesItemFromServerResponse" /* 10461 */;
-import { isPremiumWishlistItemRecord as closure_5, isSKUWishlistItemRecord } from "fromServer" /* 10462 */;
-import { SKUProductLines } from "ME" /* 676 */;
-import { PremiumSubscriptionSKUs } from "GuildFeatures" /* 1924 */;
+import { isCollectiblesWishlistItemRecord as closure_4 } from "createCollectiblesItemFromServerResponse" /* 10682 */;
+import { isPremiumWishlistItemRecord as closure_5, isSKUWishlistItemRecord } from "fromServer" /* 10683 */;
+import { SKUProductLines } from "ME" /* 673 */;
+import { PremiumSubscriptionSKUs } from "GuildFeatures" /* 1923 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/wishlists/WishlistUtils.tsx");

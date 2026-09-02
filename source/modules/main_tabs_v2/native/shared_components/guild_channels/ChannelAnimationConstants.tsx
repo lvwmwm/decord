@@ -1,10 +1,10 @@
-// Module ID: 9429
-// Function ID: 9430
+// Module ID: 9442
+// Function ID: 9443
 // Name: n
 // Dependencies: [4927, 2]
 // Exports: TYPING_ENTERING, TYPING_EXITING
 
-// Module 9429 (n)
+// Module 9442 (n)
 import set from "set" /* 2 */;
 import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4927 */;
 

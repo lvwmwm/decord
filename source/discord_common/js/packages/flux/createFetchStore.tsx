@@ -1,16 +1,16 @@
-// Module ID: 642
-// Function ID: 643
+// Module ID: 639
+// Function ID: 640
 // Name: areStatesEqual
-// Dependencies: [5, 32, 19, 643, 584, 644, 647, 2]
+// Dependencies: [5, 32, 19, 640, 581, 641, 644, 2]
 // Exports: createFetchStore
 
-// Module 642 (areStatesEqual)
-import failsDefault from "fails" /* 584 */;
-import shallowEqual from "shallowEqual" /* 643 */;
+// Module 639 (areStatesEqual)
+import failsDefault from "fails" /* 581 */;
+import shallowEqual from "shallowEqual" /* 640 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
-import keys from "keys" /* 644 */;
+import keys from "keys" /* 641 */;
 
 require = arg1;
 function areStatesEqual(items, current) {
@@ -163,7 +163,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
                 let callback;
                 c6 = 1;
                 c7 = 1;
-                return { value: "PX_16", done: null };
+                return { value: "PX_16", done: true };
               }
             } else {
               if (1 === tmp7) {
@@ -515,7 +515,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
               store = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -599,7 +599,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
               closure_1 = tmp2;
               c2 = 1;
               c3 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -689,7 +689,7 @@ export const createFetchStore = function createFetchStore(importDefaultResult, i
               closure_1 = tmp2;
               c2 = 1;
               c3 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

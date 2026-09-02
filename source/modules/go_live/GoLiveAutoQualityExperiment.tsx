@@ -1,15 +1,15 @@
-// Module ID: 10047
-// Function ID: 10048
+// Module ID: 10069
+// Function ID: 10070
 // Name: getGoLiveAutoQualityExperimentConfig
-// Dependencies: [1212, 4572, 4537, 1469, 589, 595, 4663, 2]
+// Dependencies: [1209, 4572, 4537, 1468, 586, 592, 4663, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 10047 (getGoLiveAutoQualityExperimentConfig)
-import Storage3 from "Storage" /* 595 */;
-import closure_2 from "initialize" /* 1212 */;
+// Module 10069 (getGoLiveAutoQualityExperimentConfig)
+import Storage3 from "Storage" /* 592 */;
+import closure_2 from "initialize" /* 1209 */;
 import closure_3 from "ApplicationStreamPresets" /* 4572 */;
 import { ApplicationStreamPresets } from "RESOLUTION_720" /* 4537 */;
-import importDefaultResult from "getUnitId" /* 1469 */;
+import importDefaultResult from "getUnitId" /* 1468 */;
 
 require = arg1;
 let obj = { allowAutoQuality: false, defaultAutoQuality: false, migrateAutoQuality: false };
@@ -36,7 +36,7 @@ export const getGoLiveAutoQualityExperimentConfig = function getGoLiveAutoQualit
 export const useGoLiveAutoQualityExperimentConfig = function useGoLiveAutoQualityExperimentConfig(location) {
   location = location.location;
   const items = [closure_2];
-  return location(589).useStateFromStores(items, () => closure_1_6.getConfig({ location }));
+  return location(586).useStateFromStores(items, () => closure_1_6.getConfig({ location }));
 };
 export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
   const Storage = Storage3.Storage;
@@ -52,7 +52,7 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
         obj[0] = tmp9.PRESET_AUTO;
         ({ resolution: obj2[1], fps: obj2[2], soundshareEnabled: obj2[3] } = state);
         tmp(4663).updateStreamSettings(obj);
-        const Storage2 = tmp(595).Storage;
+        const Storage2 = tmp(592).Storage;
         const result = Storage2.set(GoLiveAutoQualityMigrationVersion, 1);
         const tmpResult = tmp(4663);
       }

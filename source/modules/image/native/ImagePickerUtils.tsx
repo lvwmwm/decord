@@ -1,12 +1,12 @@
-// Module ID: 5095
-// Function ID: 5096
+// Module ID: 5103
+// Function ID: 5104
 // Name: isActionPickSupported
-// Dependencies: [1624, 2]
+// Dependencies: [1623, 2]
 // Exports: isActionPickSupported, isImageCaptureIntentSupported
 
-// Module 5095 (isActionPickSupported)
+// Module 5103 (isActionPickSupported)
 import set from "set" /* 2 */;
-import isMetaQuest from "isMetaQuest" /* 1624 */;
+import isMetaQuest from "isMetaQuest" /* 1623 */;
 
 const result = set.fileFinishedImporting("modules/image/native/ImagePickerUtils.tsx");
 

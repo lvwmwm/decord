@@ -1,10 +1,10 @@
-// Module ID: 16913
-// Function ID: 16914
+// Module ID: 17149
+// Function ID: 17150
 // Name: experiment
 // Dependencies: [4392, 4389, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 16913 (experiment)
+// Module 17149 (experiment)
 import set from "set" /* 2 */;
 import ExperimentBuckets from "ExperimentBuckets" /* 4392 */;
 import createExperiment from "createExperiment" /* 4389 */;

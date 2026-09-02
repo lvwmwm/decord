@@ -1,14 +1,14 @@
-// Module ID: 17178
-// Function ID: 17179
+// Module ID: 17414
+// Function ID: 17415
 // Name: getGuildTagPalettePresetColorLabel
-// Dependencies: [7853, 1236, 1471, 2]
+// Dependencies: [7862, 1233, 1470, 2]
 // Exports: default
 
-// Module 17178 (getGuildTagPalettePresetColorLabel)
+// Module 17414 (getGuildTagPalettePresetColorLabel)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import items from "items" /* 7853 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import items from "items" /* 7862 */;
 
 function getGuildTagPalettePresetColorLabel(primary) {
   if (constants.HOT_PINK === primary) {

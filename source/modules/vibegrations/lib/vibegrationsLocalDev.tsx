@@ -1,10 +1,10 @@
-// Module ID: 16182
-// Function ID: 16183
+// Module ID: 16413
+// Function ID: 16414
 // Name: isVibegrationsLocalDev
 // Dependencies: [2]
 // Exports: getVibegrationsTunnelWorkerOrigin, isVibegrationsLocalDev
 
-// Module 16182 (isVibegrationsLocalDev)
+// Module 16413 (isVibegrationsLocalDev)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("modules/vibegrations/lib/vibegrationsLocalDev.tsx");

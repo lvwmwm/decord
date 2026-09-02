@@ -1,12 +1,12 @@
 // Module ID: 4446
 // Function ID: 4447
 // Name: HapticFeedbackTypes
-// Dependencies: [4447, 4448, 500, 4457, 2]
+// Dependencies: [4447, 4448, 1234, 4457, 2]
 // Exports: triggerHapticFeedback
 
 // Module 4446 (HapticFeedbackTypes)
 import set from "set" /* 2 */;
-import set2 from "set" /* 500 */;
+import set2 from "set" /* 1234 */;
 import IMPACT_LIGHTDefault from "IMPACT_LIGHT" /* 4447 */;
 import useHaptics from "useHaptics" /* 4448 */;
 

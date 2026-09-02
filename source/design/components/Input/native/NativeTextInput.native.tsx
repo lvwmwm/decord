@@ -1,14 +1,14 @@
-// Module ID: 6232
-// Function ID: 6233
+// Module ID: 6241
+// Function ID: 6242
 // Name: useKeyboardBlurring
-// Dependencies: [19, 17, 1495, 676, 21, 6233, 4945, 4915, 6234, 4204, 4199, 2]
+// Dependencies: [19, 17, 1494, 673, 21, 6242, 4945, 4915, 6243, 4204, 4199, 2]
 // Exports: useKeyboardBlurring
 
-// Module 6232 (useKeyboardBlurring)
+// Module 6241 (useKeyboardBlurring)
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "subscribeToKeyboardUIStore" /* 1495 */;
-import { KeyboardThemes } from "ME" /* 676 */;
+import closure_8 from "subscribeToKeyboardUIStore" /* 1494 */;
+import { KeyboardThemes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -83,7 +83,7 @@ const forwardRefResult = importAllResult.forwardRef((value, ref2) => {
   ref(defaultValue[9]);
   if (null != value.keyboardAppearance) {
     obj = {};
-    obj = { value: "children", defaultValue: "c" };
+    obj = { value: "disabled", defaultValue: "Date" };
     let tmp6Result = tmp6(tmp3[10]);
     let merged = Object.assign(tmp6Result.mergeProps(value, tmp4, obj));
     tmp6Result = tmp6(tmp3[10]);

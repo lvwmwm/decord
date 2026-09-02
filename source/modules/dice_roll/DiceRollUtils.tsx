@@ -1,12 +1,12 @@
-// Module ID: 11953
-// Function ID: 11954
+// Module ID: 12176
+// Function ID: 12177
 // Name: getBarText
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: getBarText
 
-// Module 11953 (getBarText)
+// Module 12176 (getBarText)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/dice_roll/DiceRollUtils.tsx");
 

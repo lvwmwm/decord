@@ -1,17 +1,17 @@
-// Module ID: 13624
-// Function ID: 13625
+// Module ID: 13847
+// Function ID: 13848
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4478, 1236, 9288, 5493, 1431, 13623, 4474, 4928, 2]
+// Dependencies: [19, 17, 21, 4478, 1233, 9301, 5501, 1430, 13846, 4474, 4928, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 13624 (ActivateDeviceSuccess)
+// Module 13847 (ActivateDeviceSuccess)
 import noopAll from "noop" /* 19 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAvatarURL from "getAvatarURL" /* 1431 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getAvatarURL from "getAvatarURL" /* 1430 */;
 import Text from "Text" /* 4474 */;
 import Button from "Button" /* 4928 */;
-import preloadDefault from "preload" /* 5493 */;
-import innerContentDefault from "innerContent" /* 13623 */;
+import preloadDefault from "preload" /* 5501 */;
+import innerContentDefault from "innerContent" /* 13846 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -62,7 +62,7 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   obj[1] = items1;
   items[1] = closure_5(View, obj);
   const obj3 = { size: "lg", text: null, onPress: null, grow: true };
-  const intl4 = tmp19(1236).intl;
+  const intl4 = tmp19(1233).intl;
   obj3[1] = intl4.string(getSystemLocale.t.cpT0Cq);
   obj3[2] = onComplete.onComplete;
   items[2] = callback(Button.Button, obj3);

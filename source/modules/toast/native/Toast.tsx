@@ -1,12 +1,12 @@
-// Module ID: 16536
-// Function ID: 16537
+// Module ID: 16771
+// Function ID: 16772
 // Name: ToastIcon
-// Dependencies: [32, 19, 17, 21, 4478, 712, 4197, 1297, 4474, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 4197, 1296, 4474, 2]
 // Exports: default
 
-// Module 16536 (ToastIcon)
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+// Module 16771 (ToastIcon)
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
 import map from "map" /* 4197 */;
 import Text from "Text" /* 4474 */;
 import closure_2 from "_slicedToArray" /* 32 */;

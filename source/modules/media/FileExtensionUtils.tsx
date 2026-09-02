@@ -1,12 +1,12 @@
-// Module ID: 5579
-// Function ID: 5580
+// Module ID: 5587
+// Function ID: 5588
 // Name: getExtensionFromContentType
-// Dependencies: [1486, 2]
+// Dependencies: [1485, 2]
 // Exports: decideFileExtension, getExtensionFromContentType
 
-// Module 5579 (getExtensionFromContentType)
+// Module 5587 (getExtensionFromContentType)
 import set from "set" /* 2 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 
 let closure_2 = { "image/avif": "avif", "image/gif": "gif", "image/heic": "heic", "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "video/mp4": "mp4", "video/quicktime": "mov", "video/webm": "webm" };
 const result = set.fileFinishedImporting("modules/media/FileExtensionUtils.tsx");

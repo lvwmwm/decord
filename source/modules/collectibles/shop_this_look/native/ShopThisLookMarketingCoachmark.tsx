@@ -1,15 +1,15 @@
-// Module ID: 12604
-// Function ID: 12605
+// Module ID: 12828
+// Function ID: 12829
 // Name: ShopThisLookMarketingCoachmarkImage
-// Dependencies: [19, 17, 1384, 6001, 21, 4478, 6379, 12602, 1236, 8973, 2]
+// Dependencies: [19, 17, 1383, 6009, 21, 4478, 6388, 12826, 1233, 8987, 2]
 // Exports: default
 
-// Module 12604 (ShopThisLookMarketingCoachmarkImage)
-import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 6379 */;
+// Module 12828 (ShopThisLookMarketingCoachmarkImage)
+import BumpingFistsSpotIllustration from "BumpingFistsSpotIllustration" /* 6388 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
-import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6001 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import { UserProfileThemeTypes } from "ARBITRARY_LARGE_OFFSET" /* 6009 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 12098
-// Function ID: 12099
+// Module ID: 12322
+// Function ID: 12323
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 4364, 4365, 589, 12063, 1236, 2401, 2]
+// Dependencies: [19, 4364, 4365, 586, 12287, 1233, 2400, 2]
 // Exports: default
 
-// Module 12098 (useCanGuildPowerupBeToggled)
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12063 */;
+// Module 12322 (useCanGuildPowerupBeToggled)
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12287 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "calculateAppliedBoosts" /* 4364 */;
 import { PowerupActiveStatusType } from "BoostedGuildTiers" /* 4365 */;
@@ -18,7 +18,7 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
   importDefault = arg1;
   dependencyMap = arg2;
   const items = [closure_4];
-  const stateFromStores = _require(589).useStateFromStores(items, () => stateForGuild.getStateForGuild(closure_0));
+  const stateFromStores = _require(586).useStateFromStores(items, () => stateForGuild.getStateForGuild(closure_0));
   const tmp2 = usePowerupActiveStatusDefault(arg0, arg1);
   closure_4 = tmp2;
   const items1 = [stateFromStores, , , , ];
@@ -57,8 +57,8 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
           let formatToPlainStringResult;
           if (null != found1) {
             if (null != allPowerups[found1]) {
-              const intl = callback(1236).intl;
-              const tmp11 = lib(2401);
+              const intl = callback(1233).intl;
+              const tmp11 = lib(2400);
               let title;
               if (allPowerups[found1] != null) {
                 title = tmp13.title;

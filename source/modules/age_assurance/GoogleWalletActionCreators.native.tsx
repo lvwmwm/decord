@@ -1,12 +1,12 @@
-// Module ID: 8717
-// Function ID: 8718
+// Module ID: 8732
+// Function ID: 8733
 // Name: _requestGoogleWalletVerification
-// Dependencies: [5, 676, 530, 8718, 2]
+// Dependencies: [5, 673, 527, 8733, 2]
 // Exports: checkGoogleWalletAvailable, getGoogleWalletCredential, requestGoogleWalletVerification, verifyGoogleWalletCredential
 
-// Module 8717 (_requestGoogleWalletVerification)
+// Module 8732 (_requestGoogleWalletVerification)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _requestGoogleWalletVerification() {

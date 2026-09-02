@@ -1,10 +1,10 @@
-// Module ID: 11881
-// Function ID: 11882
-// Dependencies: [4723, 11882, 2009, 2]
+// Module ID: 12104
+// Function ID: 12105
+// Dependencies: [4723, 12105, 2008, 2]
 
-// Module 11881
+// Module 12104
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import _modDef4723 from "module_4723" /* 4723 */;
 
 let c3 = "GUILD_DIRECTORY_EDIT_DESCRIPTION_MODAL_KEY";
@@ -12,7 +12,7 @@ const result = set.fileFinishedImporting("modules/directory_channels/native/comp
 
 export default {
   open(closure_0) {
-    _modDef4723.pushLazy(asyncRequireImpl(11882, dependencyMap.paths), closure_0, c3);
+    _modDef4723.pushLazy(asyncRequireImpl(12105, dependencyMap.paths), closure_0, c3);
   },
   close() {
     _modDef4723.popWithKey(c3);

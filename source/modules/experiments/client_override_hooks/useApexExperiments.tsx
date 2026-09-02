@@ -1,14 +1,14 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11301
+// Function ID: 11302
 // Name: makeClientVariant
-// Dependencies: [32, 19, 1212, 7636, 4399, 1472, 11082, 589, 2]
+// Dependencies: [32, 19, 1209, 7646, 4399, 1471, 11302, 586, 2]
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 11081 (makeClientVariant)
-import create from "create" /* 7636 */;
+// Module 11301 (makeClientVariant)
+import create from "create" /* 7646 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import noop from "noop" /* 19 */;
-import closure_5 from "initialize" /* 1212 */;
+import closure_5 from "initialize" /* 1209 */;
 
 require = arg1;
 function makeClientVariant(id) {

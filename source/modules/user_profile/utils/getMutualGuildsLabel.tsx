@@ -1,12 +1,12 @@
-// Module ID: 9233
-// Function ID: 9234
+// Module ID: 9247
+// Function ID: 9248
 // Name: getMutualGuildsLabel
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: default
 
-// Module 9233 (getMutualGuildsLabel)
+// Module 9247 (getMutualGuildsLabel)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/user_profile/utils/getMutualGuildsLabel.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 17419
-// Function ID: 17420
+// Module ID: 17655
+// Function ID: 17656
 // Name: AVErrorNoInputDevicesDefinition
-// Dependencies: [1387, 4529, 4554, 9565, 17418, 2]
+// Dependencies: [1386, 4529, 4554, 9578, 17654, 2]
 
-// Module 17419 (AVErrorNoInputDevicesDefinition)
-import mapped from "mapped" /* 9565 */;
-import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17418 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
+// Module 17655 (AVErrorNoInputDevicesDefinition)
+import mapped from "mapped" /* 9578 */;
+import getVoiceChannelErrorContext from "getVoiceChannelErrorContext" /* 17654 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "_detectH265HardwareDecode" /* 4529 */;
 import closure_4 from "createRTCConnection" /* 4554 */;
 

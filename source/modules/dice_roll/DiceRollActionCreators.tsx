@@ -1,12 +1,12 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6100
+// Function ID: 6101
 // Name: startDiceRoll
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 // Exports: startDiceRoll
 
-// Module 6092 (startDiceRoll)
+// Module 6100 (startDiceRoll)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("modules/dice_roll/DiceRollActionCreators.tsx");
 

@@ -1,16 +1,16 @@
 // Module ID: 4771
 // Function ID: 4772
 // Name: RequireObjectCoercible
-// Dependencies: [541]
+// Dependencies: [538]
 
 // Module 4771 (RequireObjectCoercible)
-import _mod541 from "module_541" /* 541 */;
+import _mod538 from "module_538" /* 538 */;
 
 
 export default function RequireObjectCoercible(arg0) {
   if (null == arg0) {
     let text = arguments.length > 0;
-    let tmp3 = _mod541;
+    let tmp3 = _mod538;
     if (text) {
       text = arguments[1];
     }

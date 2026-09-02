@@ -1,11 +1,11 @@
-// Module ID: 7487
-// Function ID: 7488
+// Module ID: 7497
+// Function ID: 7498
 // Name: getSamples
-// Dependencies: [7488, 2]
+// Dependencies: [7498, 2]
 
-// Module 7487 (getSamples)
+// Module 7497 (getSamples)
 import set from "set" /* 2 */;
-import TDigest from "TDigest" /* 7488 */;
+import TDigest from "TDigest" /* 7498 */;
 
 const result = set.fileFinishedImporting("lib/Histogram.tsx");
 class Histogram {
@@ -47,7 +47,7 @@ prototype["addSamples"] = function addSamples(prop3) {
   this.total = this.total + prop3.reduce((arg0, arg1) => arg0 + arg1 * num, 0);
   this.totalWeight = this.totalWeight + num * prop3.length;
   this.samples = this.samples + prop3.length;
-  const push = num(7488).TDigest.prototype.push;
+  const push = num(7498).TDigest.prototype.push;
   const call = push.call;
   const digest = this.digest;
   if (typeof call === "unknown") {

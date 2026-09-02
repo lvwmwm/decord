@@ -1,11 +1,11 @@
-// Module ID: 11106
-// Function ID: 11107
+// Module ID: 11327
+// Function ID: 11328
 // Name: map
-// Dependencies: [32, 19, 17, 4512, 1431, 2]
+// Dependencies: [32, 19, 17, 4512, 1430, 2]
 // Exports: getAppStoreOverlayCarouselImageUrl, getMediaSizeFromLoadEvent, getMediaTileSize, useAppStoreOverlayMediaSizes
 
-// Module 11106 (map)
-import getAvatarURL from "getAvatarURL" /* 1431 */;
+// Module 11327 (map)
+import getAvatarURL from "getAvatarURL" /* 1430 */;
 import getSizedImageProxyURL from "getSizedImageProxyURL" /* 4512 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;

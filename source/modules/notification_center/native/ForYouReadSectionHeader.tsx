@@ -1,13 +1,13 @@
-// Module ID: 16023
-// Function ID: 16024
+// Module ID: 16254
+// Function ID: 16255
 // Name: ForYouReadSectionHeader
-// Dependencies: [19, 17, 21, 4478, 712, 4474, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4474, 1233, 2]
 // Exports: ForYouReadSectionHeader
 
-// Module 16023 (ForYouReadSectionHeader)
+// Module 16254 (ForYouReadSectionHeader)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

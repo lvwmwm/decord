@@ -1,12 +1,12 @@
-// Module ID: 15653
-// Function ID: 15654
+// Module ID: 15884
+// Function ID: 15885
 // Name: isActivityPermanentCustomStatus
-// Dependencies: [676, 2]
+// Dependencies: [673, 2]
 // Exports: isActivityPermanentCustomStatus
 
-// Module 15653 (isActivityPermanentCustomStatus)
+// Module 15884 (isActivityPermanentCustomStatus)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const ActivityTypes = ME.ActivityTypes;
 const result = set.fileFinishedImporting("modules/custom_status/utils/isActivityPermanentCustomStatus.tsx");

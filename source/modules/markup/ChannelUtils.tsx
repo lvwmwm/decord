@@ -1,12 +1,12 @@
 // Module ID: 4961
 // Function ID: 4962
 // Name: isChannelTypeMentionable
-// Dependencies: [1391, 2]
+// Dependencies: [1390, 2]
 // Exports: isChannelTypeMentionable
 
 // Module 4961 (isChannelTypeMentionable)
 import set from "set" /* 2 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
 
 ({ isGuildSelectableChannelType: c0, isGuildVocalChannelType: closure_1 } = createChannelRecord);
 const result = set.fileFinishedImporting("modules/markup/ChannelUtils.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 6255
-// Function ID: 6256
+// Module ID: 6264
+// Function ID: 6265
 // Name: GiftCardMobileConsumptionActionSheet
-// Dependencies: [19, 17, 1384, 21, 4478, 712, 1628, 4445, 5622, 4926, 6256, 4474, 1236, 2141, 4928, 2]
+// Dependencies: [19, 17, 1383, 21, 4478, 709, 1627, 4445, 5630, 4926, 6265, 4474, 1233, 2140, 4928, 2]
 // Exports: default
 
-// Module 6255 (GiftCardMobileConsumptionActionSheet)
-import ThemesDefault from "Themes" /* 712 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import messagesProxyDefault from "messagesProxy" /* 2141 */;
+// Module 6264 (GiftCardMobileConsumptionActionSheet)
+import ThemesDefault from "Themes" /* 709 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
+import messagesProxyDefault from "messagesProxy" /* 2140 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -64,13 +64,13 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   obj = { style: items2, children: null };
   items2 = [tmp.container, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   obj = { spacing: ThemesDefault.space.PX_16, children: null };
-  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6256).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
+  const items3 = [callback(View, { style: tmp.illustration, children: callback(markAsDismissed(6265).LaptopSpotIllustration, { scale: 1, width: 150, height: 123 }) }), , ];
   const obj2 = { variant: "text-md/medium", color: "text-default", style: tmp.body, children: null };
-  const intl = markAsDismissed(1236).intl;
+  const intl = markAsDismissed(1233).intl;
   obj2[3] = intl.string(messagesProxyDefault.V3DI1E);
   items3[1] = callback(markAsDismissed(4474).Text, obj2);
   const obj3 = { size: "lg", variant: "secondary", grow: true, text: null, onPress: null };
-  const intl2 = markAsDismissed(1236).intl;
+  const intl2 = markAsDismissed(1233).intl;
   obj3[3] = intl2.string(messagesProxyDefault.YZePWx);
   obj3[4] = function onPress() {
     return callback(closure_1_5.USER_DISMISS);
@@ -79,5 +79,5 @@ export default function GiftCardMobileConsumptionActionSheet(markAsDismissed) {
   obj[1] = items3;
   obj[1] = callback2(markAsDismissed(4926).Stack, obj);
   obj[3] = callback(View, obj);
-  return callback(markAsDismissed(5622).BottomSheet, obj);
+  return callback(markAsDismissed(5630).BottomSheet, obj);
 };

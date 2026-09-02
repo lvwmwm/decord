@@ -1,15 +1,15 @@
 // Module ID: 4311
 // Function ID: 4312
 // Name: _extends
-// Dependencies: [19, 4307, 1229, 1230, 4312, 4314, 4316, 1223]
+// Dependencies: [19, 4307, 1226, 1227, 4312, 4314, 4316, 1220]
 // Exports: Prompt, Redirect, generatePath, matchPath, useHistory, useLocation, useParams, useRouteMatch, withRouter
 
 // Module 4311 (_extends)
 import num2 from "num2" /* 4314 */;
 import noop from "noop" /* 19 */;
 import emptyFunction from "emptyFunction" /* 4307 */;
-import warning from "warning" /* 1229 */;
-import invariant from "invariant" /* 1230 */;
+import warning from "warning" /* 1226 */;
+import invariant from "invariant" /* 1227 */;
 import parse from "parse" /* 4312 */;
 import getStatics from "getStatics" /* 4316 */;
 
@@ -1154,7 +1154,7 @@ export const Redirect = function Redirect(arg0) {
           callback(closure_1);
         };
         obj2[1] = function onUpdate(arg0, to) {
-          let obj = callback(1223);
+          let obj = callback(1220);
           const _location = obj.createLocation(to.to);
           obj = { key: _location.key };
           if (!obj2.locationsAreEqual(_location, closure_1_7({}, dependencyMap, obj))) {

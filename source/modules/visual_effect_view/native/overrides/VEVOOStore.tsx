@@ -1,13 +1,13 @@
 // Module ID: 4919
 // Function ID: 4920
 // Name: useVisualEffectViewOverrides
-// Dependencies: [644, 705, 2]
+// Dependencies: [641, 702, 2]
 // Exports: clearVisualEffectViewOverrides, getVisualEffectViewOverrides, setVisualEffectViewOverides, useVisualEffectViewOverrides
 
 // Module 4919 (useVisualEffectViewOverrides)
 import set from "set" /* 2 */;
-import batchUpdates from "batchUpdates" /* 705 */;
-import keys from "keys" /* 644 */;
+import batchUpdates from "batchUpdates" /* 702 */;
+import keys from "keys" /* 641 */;
 
 let closure_2 = {};
 let closure_3 = keys.create(() => closure_2);
@@ -21,7 +21,7 @@ export const getVisualEffectViewOverrides = function getVisualEffectViewOverride
 };
 export const setVisualEffectViewOverides = function setVisualEffectViewOverides(arg0) {
   const _require = arg0;
-  _require(705).batchUpdates(() => closure_1_3.setState(closure_0));
+  _require(702).batchUpdates(() => closure_1_3.setState(closure_0));
 };
 export const clearVisualEffectViewOverrides = function clearVisualEffectViewOverrides() {
   batchUpdates.batchUpdates(() => state.setState(closure_2));

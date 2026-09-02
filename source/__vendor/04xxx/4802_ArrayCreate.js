@@ -1,11 +1,11 @@
 // Module ID: 4802
 // Function ID: 4803
 // Name: ArrayCreate
-// Dependencies: [540, 4799, 541, 4803, 560, 4804, 562]
+// Dependencies: [537, 4799, 538, 4803, 557, 4804, 559]
 
 // Module 4802 (ArrayCreate)
-import getEvalledConstructor from "getEvalledConstructor" /* 540 */;
-import _mod541 from "module_541" /* 541 */;
+import getEvalledConstructor from "getEvalledConstructor" /* 537 */;
+import _mod538 from "module_538" /* 538 */;
 import isInteger from "isInteger" /* 4799 */;
 
 let closure_2 = getEvalledConstructor("%Array.prototype%");
@@ -14,7 +14,7 @@ export default function ArrayCreate(arg0) {
   if (isInteger(arg0)) {
     if (arg0 >= 0) {
       if (arg0 > tmp(4803)) {
-        const tmp12 = new tmp(560)("length is greater than (2**32 - 1)");
+        const tmp12 = new tmp(557)("length is greater than (2**32 - 1)");
         throw tmp12;
       } else {
         const tmp3 = arguments.length > 1 ? arguments[1] : closure_2;
@@ -23,7 +23,7 @@ export default function ArrayCreate(arg0) {
           if (tmp(4804)) {
             tmp(4804)(items, tmp3);
           } else {
-            const tmp7 = new tmp(562)("ArrayCreate: a `proto` argument that is not `Array.prototype` is not supported in an environment that does not support setting the [[Prototype]]");
+            const tmp7 = new tmp(559)("ArrayCreate: a `proto` argument that is not `Array.prototype` is not supported in an environment that does not support setting the [[Prototype]]");
             throw tmp7;
           }
         }
@@ -34,5 +34,5 @@ export default function ArrayCreate(arg0) {
       }
     }
   }
-  throw new _mod541("Assertion failed: `length` must be an integer Number >= 0");
+  throw new _mod538("Assertion failed: `length` must be an integer Number >= 0");
 };

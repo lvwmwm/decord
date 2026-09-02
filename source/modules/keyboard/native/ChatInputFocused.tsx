@@ -1,10 +1,10 @@
-// Module ID: 1627
-// Function ID: 1628
+// Module ID: 1626
+// Function ID: 1627
 // Name: setIsAnyChatInputFocused
 // Dependencies: [2]
 // Exports: getIsAnyChatInputFocused, setIsAnyChatInputFocused
 
-// Module 1627 (setIsAnyChatInputFocused)
+// Module 1626 (setIsAnyChatInputFocused)
 import set from "set" /* 2 */;
 
 let c0 = false;

@@ -1,16 +1,16 @@
-// Module ID: 12579
-// Function ID: 12580
+// Module ID: 12803
+// Function ID: 12804
 // Name: _maybeFetchCollectionsWithProducts
-// Dependencies: [5, 1996, 12577, 7306, 676, 687, 709, 4755, 4377, 2]
+// Dependencies: [5, 1995, 12801, 7315, 673, 684, 706, 4755, 4377, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 12579 (_maybeFetchCollectionsWithProducts)
-import setDefault from "set" /* 687 */;
+// Module 12803 (_maybeFetchCollectionsWithProducts)
+import setDefault from "set" /* 684 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "_getSystemLocale" /* 1996 */;
-import closure_5 from "getFetchState" /* 12577 */;
-import closure_6 from "fromServer" /* 7306 */;
-import { Endpoints } from "ME" /* 676 */;
+import closure_4 from "_getSystemLocale" /* 1995 */;
+import closure_5 from "getFetchState" /* 12801 */;
+import closure_6 from "fromServer" /* 7315 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _maybeFetchCollectionsWithProducts() {
@@ -69,7 +69,7 @@ function _maybeFetchCollectionsWithProducts() {
               body = undefined;
               body = 1;
               fromServer = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp7) {
@@ -323,7 +323,7 @@ function _maybeFetchCollectionsForApplicationPage() {
             if (1 === tmp8) {
               locale = 0;
               locale = closure_3;
-              obj1 = callback2(709);
+              obj1 = callback2(706);
               const obj5 = { type: "STOREFRONT_COLLECTIONS_FOR_APPLICATION_PAGE_FETCH_FAILURE", pageKey: null, apiError: null };
               obj5[1] = callback2;
               const tmp21 = new callback2(4377)(locale);
@@ -341,9 +341,9 @@ function _maybeFetchCollectionsForApplicationPage() {
               const collections = closure_3.body.collections;
               obj6[4] = collections.map(fromServer.fromServer);
               obj6[5] = closure_3.body.total;
-              callback2(709).dispatch(obj6);
+              callback2(706).dispatch(obj6);
               locale = 0;
-              const obj13 = callback2(709);
+              const obj13 = callback2(706);
             }
             locale = 0;
             fromServer = 3;
@@ -490,7 +490,7 @@ function _maybeFetchCollectionsAfter() {
             if (1 === tmp7) {
               locale = 0;
               dependencyMap = closure_3;
-              obj3 = lib2(709);
+              obj3 = lib2(706);
               obj5 = { type: "STOREFRONT_COLLECTIONS_AFTER_FETCH_FAILURE", requestKey: null, apiError: null };
               obj5[1] = lib;
               const tmp28 = new lib2(4377)(dependencyMap);
@@ -501,7 +501,7 @@ function _maybeFetchCollectionsAfter() {
               throw arg1;
             } else if (arg0 !== 2) {
               lib2 = arg1;
-              obj = lib2(709);
+              obj = lib2(706);
               obj6 = { type: "STOREFRONT_COLLECTIONS_AFTER_FETCH_SUCCESS", requestKey: null, collections: null };
               obj6[1] = lib;
               const collections = lib2.body.collections;
@@ -603,7 +603,7 @@ function _maybeFetchCollectionsForApplication() {
               let body;
               store = 1;
               fromServer = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else {
             if (1 === tmp7) {

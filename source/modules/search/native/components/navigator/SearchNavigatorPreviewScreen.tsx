@@ -1,13 +1,13 @@
-// Module ID: 16441
-// Function ID: 16442
+// Module ID: 16676
+// Function ID: 16677
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 676, 21, 4478, 1499, 1502, 11927, 16400, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 1498, 1501, 12150, 16633, 2]
 // Exports: default
 
-// Module 16441 (SearchNavigatorPreviewScreen)
+// Module 16676 (SearchNavigatorPreviewScreen)
 import closure_3 from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
-import { SearchTypes } from "ME" /* 676 */;
+import { SearchTypes } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

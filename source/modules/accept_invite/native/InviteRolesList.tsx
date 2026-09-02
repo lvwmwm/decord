@@ -1,10 +1,10 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12482
+// Function ID: 12483
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4478, 1989, 4926, 4474, 1236, 10684, 2]
+// Dependencies: [19, 17, 21, 4478, 1988, 4926, 4474, 1233, 10905, 2]
 // Exports: default
 
-// Module 12258 (InviteRolesList)
+// Module 12482 (InviteRolesList)
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
@@ -42,8 +42,8 @@ export default function InviteRolesList(invite) {
       let obj = { spacing: 4, style: null, children: null };
       obj[1] = invite.style;
       obj = { variant: "text-sm/semibold", color: "text-default", children: null };
-      const intl = guild(1236).intl;
-      obj[2] = intl.string(guild(1236).t.stcSfI);
+      const intl = guild(1233).intl;
+      obj[2] = intl.string(guild(1233).t.stcSfI);
       const items1 = [callback(guild(4474).Text, obj), ];
       obj = { style: null, children: null };
       obj[0] = tmp.rolesRow;

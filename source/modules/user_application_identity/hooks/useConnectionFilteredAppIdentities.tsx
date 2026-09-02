@@ -1,10 +1,10 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12739
+// Function ID: 12740
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [19, 4508, 12516, 2]
+// Dependencies: [19, 4508, 12740, 2]
 // Exports: default
 
-// Module 12515 (useConnectionFilteredAppIdentities)
+// Module 12739 (useConnectionFilteredAppIdentities)
 import closure_2 from "noop" /* 19 */;
 import { APPLICATION_IDENTITY_CONNECTIONS_ALLOWED_APPLICATIONS as closure_3 } from "items" /* 4508 */;
 

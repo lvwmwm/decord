@@ -1,15 +1,15 @@
 // Module ID: 4146
 // Function ID: 4147
 // Name: createSubscriptionItemFromServer
-// Dependencies: [1936, 4147, 4148, 676, 4150, 1924, 4151, 38, 500, 4152, 1946, 2]
+// Dependencies: [1935, 4147, 4148, 673, 4150, 1923, 4151, 38, 1234, 4152, 1945, 2]
 
 // Module 4146 (createSubscriptionItemFromServer)
-import toJSDefault from "toJS" /* 1936 */;
+import toJSDefault from "toJS" /* 1935 */;
 import closure_3 from "createFromServer" /* 4147 */;
 import closure_4 from "createFromServer" /* 4148 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import set from "set" /* 4150 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 const require = arg1;
 function createSubscriptionItemFromServer(id) {
@@ -226,8 +226,8 @@ Object.defineProperty(prototype, "isOnPlatformMatchingExternalPaymentGateway", {
   get: function isOnPlatformMatchingExternalPaymentGateway() {
     let isPurchasedViaApple = this.isPurchasedViaApple;
     if (isPurchasedViaApple) {
-      isPurchasedViaApple = require(500) /* set */.isIOS();
-      const obj = require(500) /* set */;
+      isPurchasedViaApple = require(1234) /* set */.isIOS();
+      const obj = require(1234) /* set */;
     }
     if (!isPurchasedViaApple) {
       let isPurchasedViaGoogle = this.isPurchasedViaGoogle;

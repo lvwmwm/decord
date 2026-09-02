@@ -1,10 +1,10 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 15826
+// Function ID: 15827
 // Name: convertPortraitToLandscapeScreens
-// Dependencies: [4333, 4332, 1504, 514, 2]
+// Dependencies: [4333, 4332, 1503, 511, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 15595 (convertPortraitToLandscapeScreens)
+// Module 15826 (convertPortraitToLandscapeScreens)
 import set from "set" /* 2 */;
 import getRootNavigationRef from "getRootNavigationRef" /* 4333 */;
 
@@ -51,7 +51,7 @@ export const convertPortraitToLandscapeScreens = function convertPortraitToLands
                   obj.state = obj;
                   const items1 = [obj];
                   HermesBuiltin.arraySpread(substr, 1);
-                  const CommonActions = tmp(1504).CommonActions;
+                  const CommonActions = tmp(1503).CommonActions;
                   obj1 = {};
                   const merged2 = Object.assign(state);
                   obj1.routes = items1;
@@ -109,8 +109,8 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               }
               if (channelId == null) {
                 const _HermesInternal = HermesInternal;
-                channelId = "channel-" + tmp(514).v4();
-                const tmpResult3 = tmp(514);
+                channelId = "channel-" + tmp(511).v4();
+                const tmpResult3 = tmp(511);
               }
               obj = { name: "channel", key: null, params: null };
               obj[1] = channelId;
@@ -139,7 +139,7 @@ export const convertLandscapeToPortraitScreens = function convertLandscapeToPort
               obj2.state = obj;
               const items1 = [obj2];
               HermesBuiltin.arraySpread(substr, 1);
-              const CommonActions = tmp(1504).CommonActions;
+              const CommonActions = tmp(1503).CommonActions;
               const obj3 = {};
               const merged2 = Object.assign(state);
               obj3.routes = items1;

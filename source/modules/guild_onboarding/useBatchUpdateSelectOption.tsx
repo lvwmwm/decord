@@ -1,14 +1,14 @@
-// Module ID: 11153
-// Function ID: 11154
+// Module ID: 11374
+// Function ID: 11375
 // Name: useBatchUpdateSelectOption
-// Dependencies: [19, 4701, 5467, 685, 709, 12, 1471, 11154, 589, 5472, 1399, 2]
+// Dependencies: [19, 4701, 5475, 682, 706, 12, 1470, 11375, 586, 5480, 1398, 2]
 // Exports: default
 
-// Module 11153 (useBatchUpdateSelectOption)
+// Module 11374 (useBatchUpdateSelectOption)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "updateUserGuildSettingsInternal" /* 4701 */;
-import closure_5 from "handleUpdate" /* 5467 */;
-import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 685 */;
+import closure_5 from "handleUpdate" /* 5475 */;
+import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 682 */;
 
 const require = arg1;
 let closure_7 = {};
@@ -16,7 +16,7 @@ let result = require("set").fileFinishedImporting("modules/guild_onboarding/useB
 
 export default function useBatchUpdateSelectOption(arg0) {
   const _require = arg0;
-  let obj = _require(589);
+  let obj = _require(586);
   let items = [closure_5];
   let items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => {

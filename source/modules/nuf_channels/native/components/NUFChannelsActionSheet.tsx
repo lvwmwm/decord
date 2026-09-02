@@ -1,14 +1,14 @@
-// Module ID: 13422
-// Function ID: 13423
+// Module ID: 13645
+// Function ID: 13646
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 1384, 21, 4445, 5622, 13423, 13424, 1236, 2]
+// Dependencies: [19, 1383, 21, 4445, 5630, 13646, 13647, 1233, 2]
 // Exports: default
 
-// Module 13422 (NUFChannelsActionSheet)
-import NUFActionSheetTemplateDefault from "NUFActionSheetTemplate" /* 13423 */;
-import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13424 */;
+// Module 13645 (NUFChannelsActionSheet)
+import NUFActionSheetTemplateDefault from "NUFActionSheetTemplate" /* 13646 */;
+import NUFChannelIllustrationDefault from "NUFChannelIllustration" /* 13647 */;
 import closure_3 from "noop" /* 19 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -35,13 +35,13 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
     children: null
   };
   obj = { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null };
-  const intl = markAsDismissed(1236).intl;
-  obj[1] = intl.string(markAsDismissed(1236).t.Ay9424);
-  const intl2 = markAsDismissed(1236).intl;
-  obj[2] = intl2.string(markAsDismissed(1236).t.mufH2P);
-  const intl3 = markAsDismissed(1236).intl;
-  obj[3] = intl3.string(markAsDismissed(1236).t.BddRzS);
+  const intl = markAsDismissed(1233).intl;
+  obj[1] = intl.string(markAsDismissed(1233).t.Ay9424);
+  const intl2 = markAsDismissed(1233).intl;
+  obj[2] = intl2.string(markAsDismissed(1233).t.mufH2P);
+  const intl3 = markAsDismissed(1233).intl;
+  obj[3] = intl3.string(markAsDismissed(1233).t.BddRzS);
   obj[4] = callback;
   obj[2] = jsx(NUFActionSheetTemplateDefault, { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null });
-  return jsx(markAsDismissed(5622).BottomSheet, { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null });
+  return jsx(markAsDismissed(5630).BottomSheet, { illustration: jsx(NUFChannelIllustrationDefault, {}), title: null, description: null, CTALabel: null, onCTAPress: null });
 };

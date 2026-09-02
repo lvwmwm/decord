@@ -1,10 +1,10 @@
-// Module ID: 11009
-// Function ID: 11010
+// Module ID: 11229
+// Function ID: 11230
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 4478, 712, 7347, 7352, 11007, 1236, 1297, 11010, 11011, 4474, 4928, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 7356, 7361, 11227, 1233, 1296, 11230, 11231, 4474, 4928, 2]
 
-// Module 11009 (SafetyWarningBanner)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11229 (SafetyWarningBanner)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

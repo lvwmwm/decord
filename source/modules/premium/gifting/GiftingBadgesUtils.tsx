@@ -1,15 +1,15 @@
-// Module ID: 13228
-// Function ID: 13229
+// Module ID: 13450
+// Function ID: 13451
 // Name: getGiftingBadgeProgressPercent
-// Dependencies: [8560, 1922, 10516, 13229, 589, 4298, 1373, 2]
+// Dependencies: [8573, 1921, 10737, 13451, 586, 4298, 1372, 2]
 // Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
 
-// Module 13228 (getGiftingBadgeProgressPercent)
+// Module 13450 (getGiftingBadgeProgressPercent)
 import set from "set" /* 2 */;
-import initialize from "initialize" /* 8560 */;
-import apexExperiment from "apexExperiment" /* 10516 */;
-import apexExperiment2 from "apexExperiment" /* 13229 */;
-import closure_3 from "mergeGuildAvatar" /* 1922 */;
+import initialize from "initialize" /* 8573 */;
+import apexExperiment from "apexExperiment" /* 10737 */;
+import apexExperiment2 from "apexExperiment" /* 13451 */;
+import closure_3 from "mergeGuildAvatar" /* 1921 */;
 
 let closure_2 = initialize.getSingleRequirementThreshold;
 let result = set.fileFinishedImporting("modules/premium/gifting/GiftingBadgesUtils.tsx");
@@ -73,7 +73,7 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
     }
     tmp4 = enabled2;
   }
-  let tmpResult = tmp(589);
+  let tmpResult = tmp(586);
   const items = [closure_3];
   const stateFromStores = tmpResult.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
@@ -87,7 +87,7 @@ export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleTo
     return flag;
   });
   tmpResult = tmp(4298);
-  const result = tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1373).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
+  const result = tmpResult.useIsDismissibleContentDismissed_UNSAFE(tmp(1372).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   if (tmp4) {
     tmp4 = stateFromStores;
   }

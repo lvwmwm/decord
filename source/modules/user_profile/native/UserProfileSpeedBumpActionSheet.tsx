@@ -1,19 +1,19 @@
-// Module ID: 8897
-// Function ID: 8898
+// Module ID: 8912
+// Function ID: 8913
 // Name: InformationTable
-// Dependencies: [32, 19, 17, 1387, 1992, 1922, 8556, 676, 21, 4478, 712, 8898, 1236, 5992, 5599, 1297, 1363, 4413, 589, 8114, 5953, 5973, 8558, 8899, 698, 8116, 8896, 5622, 5624, 7839, 7742, 4474, 4673, 4928, 5068, 4166, 2]
+// Dependencies: [32, 19, 17, 1386, 1991, 1921, 8569, 673, 21, 4478, 709, 8913, 1233, 6000, 5607, 1296, 1362, 4413, 586, 8122, 5961, 5981, 8571, 8914, 695, 8124, 8911, 5630, 5632, 7848, 7751, 4474, 4673, 4928, 5076, 4166, 2]
 
-// Module 8897 (InformationTable)
-import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 8898 */;
+// Module 8912 (InformationTable)
+import ThemesDefault from "Themes" /* 709 */;
+import registerAssetDefault from "registerAsset" /* 8913 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "trackCommunicationDisabled" /* 1992 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8556 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_7 from "trackCommunicationDisabled" /* 1991 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import { UserProfileAnalyticsTypes } from "USER_PROFILE_TOOLTIP_DELAY" /* 8569 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -21,16 +21,16 @@ const require = arg1;
 function InformationTable(speedBumpType) {
   let items;
   let obj = { icon: registerAssetDefault, text: null };
-  const intl = items(1236).intl;
-  obj[1] = intl.string(items(1236).t.kcuWva);
+  const intl = items(1233).intl;
+  obj[1] = intl.string(items(1233).t.kcuWva);
   items = [obj, ];
   obj = { icon: registerAssetDefault, text: null };
   if ("block" === speedBumpType.speedBumpType) {
-    const intl3 = tmp2(1236).intl;
-    let stringResult = intl3.string(tmp2(1236).t.QxrDY1);
+    const intl3 = tmp2(1233).intl;
+    let stringResult = intl3.string(tmp2(1233).t.QxrDY1);
   } else {
-    const intl2 = tmp2(1236).intl;
-    stringResult = intl2.string(tmp2(1236).t.W6fjkS);
+    const intl2 = tmp2(1233).intl;
+    stringResult = intl2.string(tmp2(1233).t.W6fjkS);
   }
   obj[1] = stringResult;
   items[1] = obj;
@@ -44,7 +44,7 @@ function InformationTable(speedBumpType) {
       return closure_1_12(items(closure_1_2[14]).TableRow, obj, arg1);
     })
   };
-  return callback2(items(5992).TableRowGroup, obj);
+  return callback2(items(6000).TableRowGroup, obj);
 }
 let c4 = importAllResult;
 ({ AnalyticEvents: c10, EMPTY_STRING_SNOWFLAKE_ID: unpackModuleId } = ME);

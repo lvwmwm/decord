@@ -1,15 +1,15 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 14371
+// Function ID: 14372
 // Name: getSubscriptionSkusViaListings
-// Dependencies: [5, 4380, 676, 14149, 14150, 9503, 8497, 10590, 14151, 7143, 2]
+// Dependencies: [5, 4380, 673, 14372, 14373, 9516, 8510, 10811, 14374, 7152, 2]
 
-// Module 14148 (getSubscriptionSkusViaListings)
-import _fetchUserEntitlementsAll from "_fetchUserEntitlements" /* 7143 */;
-import prototypeDefault from "prototype" /* 9503 */;
-import validateTransportType from "validateTransportType" /* 14150 */;
+// Module 14371 (getSubscriptionSkusViaListings)
+import _fetchUserEntitlementsAll from "_fetchUserEntitlements" /* 7152 */;
+import prototypeDefault from "prototype" /* 9516 */;
+import validateTransportType from "validateTransportType" /* 14373 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import RPC_SCOPE_CONFIG from "RPC_SCOPE_CONFIG" /* 4380 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function getSubscriptionSkusViaListings() {
@@ -37,7 +37,7 @@ function _getSubscriptionSkusViaListings() {
           closure_0 = arg0;
           c2 = 0;
           c1 = 0;
-          return (/* F123041 */ function*() { ... })();
+          return (/* F124895 */ function*() { ... })();
         });
         return function() {
           const self = this;
@@ -140,7 +140,7 @@ function _getSkusHandler() {
               closure_4 = undefined;
               constants = 1;
               c7 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {
@@ -152,32 +152,32 @@ function _getSkusHandler() {
               obj1[0] = arg1;
               return obj1;
             } else {
-              const result = socket(14150).validateTransportType(socket.transport);
+              const result = socket(14373).validateTransportType(socket.transport);
               callback = socket.application.id;
               if (null == callback) {
                 const obj2 = { errorCode: null };
                 obj2[0] = constants.INVALID_COMMAND;
-                const tmp32 = new callback(9503)(obj2, "No application.");
+                const tmp32 = new callback(9516)(obj2, "No application.");
                 throw tmp32;
               } else {
                 if (obj18.isTestModeForApplication(callback)) {
-                  let tmp65Result = tmp65(10590);
+                  let tmp65Result = tmp65(10811);
                   constants = 2;
                   c7 = 1;
                   const obj3 = { value: null, done: false };
                   obj3[0] = tmp65Result.fetchTestSKUsForApplication(callback, false);
                   return obj3;
                 } else {
-                  tmp65Result = tmp65(14151);
+                  tmp65Result = tmp65(14374);
                   constants = 3;
                   c7 = 1;
                   const obj4 = { value: null, done: false };
                   obj4[0] = tmp65Result.fetchAllStoreListingsForApplication(callback);
                   return obj4;
                 }
-                obj18 = socket(8497);
+                obj18 = socket(8510);
               }
-              const obj17 = socket(14150);
+              const obj17 = socket(14373);
             }
           } else if (2 === tmp5) {
             if (arg0 === 1) {

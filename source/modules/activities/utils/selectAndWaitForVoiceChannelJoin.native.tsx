@@ -1,12 +1,12 @@
-// Module ID: 9489
-// Function ID: 9490
+// Module ID: 9502
+// Function ID: 9503
 // Name: _selectAndWaitForVoiceChannelJoin
-// Dependencies: [5, 1981, 5355, 2]
+// Dependencies: [5, 1980, 5363, 2]
 // Exports: default
 
-// Module 9489 (_selectAndWaitForVoiceChannelJoin)
+// Module 9502 (_selectAndWaitForVoiceChannelJoin)
 import closure_2 from "asyncGeneratorStep" /* 5 */;
-import closure_3 from "handleConnectionOpen" /* 1981 */;
+import closure_3 from "handleConnectionOpen" /* 1980 */;
 
 function _selectAndWaitForVoiceChannelJoin() {
   const self = this;
@@ -53,7 +53,7 @@ function _selectAndWaitForVoiceChannelJoin() {
               promise = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

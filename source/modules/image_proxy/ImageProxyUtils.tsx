@@ -1,12 +1,12 @@
 // Module ID: 4512
 // Function ID: 4513
 // Name: getSizedImageProxyURL
-// Dependencies: [4513, 1465, 1486, 2]
+// Dependencies: [4513, 1464, 1485, 2]
 // Exports: getSizedImageAssetURL, isImageProxyURL
 
 // Module 4512 (getSizedImageProxyURL)
-import handleImageLoad from "handleImageLoad" /* 1465 */;
-import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1486 */;
+import handleImageLoad from "handleImageLoad" /* 1464 */;
+import isDiscordProxiedAssetUrlDefault from "isDiscordProxiedAssetUrl" /* 1485 */;
 import getHostWithoutPort from "getHostWithoutPort" /* 4513 */;
 import set from "set" /* 2 */;
 

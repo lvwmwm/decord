@@ -1,19 +1,19 @@
-// Module ID: 10257
-// Function ID: 10258
+// Module ID: 10279
+// Function ID: 10280
 // Name: LocationText
-// Dependencies: [19, 17, 4470, 4130, 1922, 21, 4478, 712, 4474, 4674, 692, 5020, 5022, 4981, 589, 2]
+// Dependencies: [19, 17, 4470, 4130, 1921, 21, 4478, 709, 4474, 4674, 689, 5024, 5026, 4981, 586, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10257 (LocationText)
-import initialize from "initialize" /* 589 */;
-import set from "set" /* 692 */;
-import ThemesDefault from "Themes" /* 712 */;
+// Module 10279 (LocationText)
+import initialize from "initialize" /* 586 */;
+import set from "set" /* 689 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import closure_2 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
 import closure_5 from "markAllUserIdListsStale" /* 4130 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -105,30 +105,58 @@ export default function MessageNotificationHeader(locationTextColor) {
   const type = channel.type;
   let tmp10 = channelName;
   if (set.ChannelTypes.GROUP_DM !== type) {
-    if (tmp2(692).ChannelTypes.GUILD_FORUM !== type) {
-      if (tmp2(692).ChannelTypes.GUILD_TEXT !== type) {
-        if (tmp2(692).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
-          if (tmp2(692).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
-            if (tmp2(692).ChannelTypes.PUBLIC_THREAD !== type) {
-              tmp10 = null;
+    if (tmp2(689).ChannelTypes.GUILD_FORUM !== type) {
+      if (tmp2(689).ChannelTypes.GUILD_MEDIA !== type) {
+        if (tmp2(689).ChannelTypes.GUILD_TEXT !== type) {
+          if (tmp2(689).ChannelTypes.GUILD_ANNOUNCEMENT !== type) {
+            if (tmp2(689).ChannelTypes.GUILD_APP !== type) {
+              if (tmp2(689).ChannelTypes.GUILD_VOICE !== type) {
+                if (tmp2(689).ChannelTypes.GUILD_STAGE_VOICE !== type) {
+                  if (tmp2(689).ChannelTypes.ANNOUNCEMENT_THREAD !== type) {
+                    if (tmp2(689).ChannelTypes.PUBLIC_THREAD !== type) {
+                      if (tmp2(689).ChannelTypes.PRIVATE_THREAD !== type) {
+                        if (tmp2(689).ChannelTypes.MEDIA_THREAD !== type) {
+                          tmp10 = null;
+                          if (tmp2(689).ChannelTypes.DM !== type) {
+                            tmp10 = null;
+                            if (tmp2(689).ChannelTypes.GUILD_CATEGORY !== type) {
+                              tmp10 = null;
+                              if (tmp2(689).ChannelTypes.GUILD_STORE !== type) {
+                                tmp10 = null;
+                                if (tmp2(689).ChannelTypes.GUILD_DIRECTORY !== type) {
+                                  tmp10 = null;
+                                  if (tmp2(689).ChannelTypes.GUILD_SPACE !== type) {
+                                    const UNKNOWN = tmp2(689).ChannelTypes.UNKNOWN;
+                                    tmp10 = null;
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  let channelName1 = null;
+                  if (null != parentChannel) {
+                    tmp2Result = tmp2(4674);
+                    channelName1 = tmp2Result.computeChannelName(parentChannel, closure_6, closure_5);
+                  }
+                  if (null != channelName1) {
+                    const _HermesInternal2 = HermesInternal;
+                    let combined = "" + channelName + ", " + channelName1;
+                  } else {
+                    combined = channelName;
+                    if (null != guild) {
+                      const _HermesInternal = HermesInternal;
+                      combined = "" + channelName + ", " + guild.name;
+                    }
+                  }
+                  tmp10 = combined;
+                }
+              }
             }
           }
-          let channelName1 = null;
-          if (null != parentChannel) {
-            tmp2Result = tmp2(4674);
-            channelName1 = tmp2Result.computeChannelName(parentChannel, closure_6, closure_5);
-          }
-          if (null != channelName1) {
-            const _HermesInternal2 = HermesInternal;
-            let combined = "" + channelName + ", " + channelName1;
-          } else {
-            combined = channelName;
-            if (null != guild) {
-              const _HermesInternal = HermesInternal;
-              combined = "" + channelName + ", " + guild.name;
-            }
-          }
-          tmp10 = combined;
         }
       }
     }

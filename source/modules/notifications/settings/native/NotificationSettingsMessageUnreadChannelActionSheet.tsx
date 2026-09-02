@@ -1,16 +1,16 @@
-// Module ID: 10253
-// Function ID: 10254
+// Module ID: 10275
+// Function ID: 10276
 // Name: NotificationSettingsMessageUnreadChannelActionSheet
-// Dependencies: [19, 4701, 676, 4702, 685, 21, 10232, 10252, 1236, 5487, 10233, 5482, 2]
+// Dependencies: [19, 4701, 673, 4702, 682, 21, 10254, 10274, 1233, 5495, 10255, 5490, 2]
 // Exports: default
 
-// Module 10253 (NotificationSettingsMessageUnreadChannelActionSheet)
+// Module 10275 (NotificationSettingsMessageUnreadChannelActionSheet)
 import noopAll from "noop" /* 19 */;
-import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 10252 */;
+import NotificationSettingsMessageUnreadActionSheetDefault from "NotificationSettingsMessageUnreadActionSheet" /* 10274 */;
 import closure_3 from "updateUserGuildSettingsInternal" /* 4701 */;
-import { UserNotificationSettings } from "ME" /* 676 */;
+import { UserNotificationSettings } from "ME" /* 673 */;
 import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
-import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 685 */;
+import { ChannelNotificationSettingsFlags as closure_6 } from "MAX_FAVORITES" /* 682 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -19,14 +19,14 @@ let result = require("set").fileFinishedImporting("modules/notifications/setting
 
 export default function NotificationSettingsMessageUnreadChannelActionSheet(channel) {
   const _require = channel;
-  let obj = _require(10232);
+  let obj = _require(10254);
   const channelPresetSettings = obj.useChannelPresetSettings(channel.channel);
   ({ unread, notification } = channelPresetSettings);
   obj = { value: unread, disabledMentionOnlyWithReason: null, onChange: null };
   let stringResult;
   if (notification === UserNotificationSettings.ALL_MESSAGES) {
-    const intl = tmp(1236).intl;
-    stringResult = intl.string(tmp(1236).t.eP8yWU);
+    const intl = tmp(1233).intl;
+    stringResult = intl.string(tmp(1233).t.eP8yWU);
   }
   obj[1] = stringResult;
   obj[2] = function onChange(ONLY_MENTIONS) {

@@ -1,13 +1,13 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11990
+// Function ID: 11991
 // Name: usePollDurationOptions
-// Dependencies: [7573, 1236, 2]
+// Dependencies: [7583, 1233, 2]
 // Exports: default
 
-// Module 11767 (usePollDurationOptions)
+// Module 11990 (usePollDurationOptions)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7573 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import POLL_ATTACHMENT_FOLDER from "POLL_ATTACHMENT_FOLDER" /* 7583 */;
 
 const PollDurations = POLL_ATTACHMENT_FOLDER.PollDurations;
 const result = set.fileFinishedImporting("modules/polls/usePollDurationOptions.tsx");

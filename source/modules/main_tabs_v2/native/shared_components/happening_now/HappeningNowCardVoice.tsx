@@ -1,19 +1,19 @@
-// Module ID: 15675
-// Function ID: 15676
+// Module ID: 15906
+// Function ID: 15907
 // Name: formatVoiceActivityTitle
-// Dependencies: [19, 17, 7404, 1922, 4497, 14890, 676, 21, 4478, 698, 12465, 2009, 15658, 14891, 5050, 12470, 15668, 7982, 589, 12, 1471, 4673, 1236, 2]
+// Dependencies: [19, 17, 7413, 1921, 4497, 15119, 673, 21, 4478, 695, 12689, 2008, 15889, 15120, 5054, 12694, 15899, 7991, 586, 12, 1470, 4673, 1233, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 15675 (formatVoiceActivityTitle)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 15906 (formatVoiceActivityTitle)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import getNicknameDefault from "getNickname" /* 4673 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "recomputeAffinities" /* 7404 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_5 from "recomputeAffinities" /* 7413 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import closure_7 from "updateVoiceState" /* 4497 */;
-import { HappeningNowCardTrackingType as closure_8 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 14890 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { HappeningNowCardTrackingType as closure_8 } from "HAPPENING_NOW_PANELS_CONTAINER_PADDING" /* 15119 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -136,11 +136,11 @@ const result = require("set").fileFinishedImporting("modules/main_tabs_v2/native
 export default memoResult;
 export const useVoiceChannelUsers = function useVoiceChannelUsers(channelId) {
   const _require = channelId;
-  const voiceUserAffinitySortType = _require(7982).useVoiceUserAffinitySortType("useVoiceChannelUsers");
-  const obj = _require(7982);
+  const voiceUserAffinitySortType = _require(7991).useVoiceUserAffinitySortType("useVoiceChannelUsers");
+  const obj = _require(7991);
   const items = [closure_7, closure_6, closure_5];
   const items1 = [voiceUserAffinitySortType, channelId.channelId];
-  return _require(589).useStateFromStoresArray(items, () => {
+  return _require(586).useStateFromStoresArray(items, () => {
     const voiceStatesForChannel = closure_1_7.getVoiceStatesForChannel(voiceState.channelId);
     const mapped = voiceUserAffinitySortType(voiceState[19])(voiceStatesForChannel).map((userId) => user.getUser(userId.userId));
     const found = mapped.filter(voiceState(voiceState[20]).isNotNullish);

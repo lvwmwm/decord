@@ -1,15 +1,15 @@
-// Module ID: 12171
-// Function ID: 12172
+// Module ID: 12395
+// Function ID: 12396
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 1387, 676, 21, 4194, 1236, 6091, 4445, 7661, 4302, 4438, 712, 12172, 2009, 2]
+// Dependencies: [5, 32, 19, 1386, 673, 21, 4194, 1233, 6099, 4445, 7670, 4302, 4438, 709, 12396, 2008, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 12171 (useJoinRequestButtonActions)
+// Module 12395 (useJoinRequestButtonActions)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import { Routes } from "ME" /* 676 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import { Routes } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;

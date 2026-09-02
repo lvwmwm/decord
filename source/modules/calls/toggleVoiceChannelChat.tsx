@@ -1,12 +1,12 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14389
+// Function ID: 14390
 // Name: toggleVoiceChannelChat
-// Dependencies: [1387, 4554, 4494, 4721, 2]
+// Dependencies: [1386, 4554, 4494, 4721, 2]
 // Exports: toggleVoiceChannelChat
 
-// Module 14166 (toggleVoiceChannelChat)
+// Module 14389 (toggleVoiceChannelChat)
 import _modDef4721 from "module_4721" /* 4721 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
 import closure_3 from "createRTCConnection" /* 4554 */;
 import closure_4 from "getParticipants" /* 4494 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 8012
-// Function ID: 8013
+// Module ID: 8021
+// Function ID: 8022
 // Name: InstagramNeutralIcon
-// Dependencies: [19, 21, 712, 4196, 8013, 2]
+// Dependencies: [19, 21, 709, 4196, 8022, 2]
 // Exports: InstagramNeutralIcon
 
-// Module 8012 (InstagramNeutralIcon)
+// Module 8021 (InstagramNeutralIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 8013 */;
+import registerAsset from "registerAsset" /* 8022 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

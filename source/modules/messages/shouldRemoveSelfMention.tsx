@@ -1,12 +1,12 @@
-// Module ID: 7383
-// Function ID: 7384
+// Module ID: 7392
+// Function ID: 7393
 // Name: shouldRemoveSelfMention
-// Dependencies: [676, 2]
+// Dependencies: [673, 2]
 // Exports: default
 
-// Module 7383 (shouldRemoveSelfMention)
+// Module 7392 (shouldRemoveSelfMention)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const MessageTypesSets = ME.MessageTypesSets;
 const result = set.fileFinishedImporting("modules/messages/shouldRemoveSelfMention.tsx");

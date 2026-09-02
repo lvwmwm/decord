@@ -1,12 +1,12 @@
-// Module ID: 7100
-// Function ID: 7101
+// Module ID: 7109
+// Function ID: 7110
 // Name: metadata
 // Dependencies: [2]
 
-// Module 7100 (metadata)
+// Module 7109 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/TreasureChestBannerSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/e25a3191a2690c10b2ed170d7ac6f73d39b592cb0b486a03461ea65f16ed5b00.png";
-export const metadata = { fileBytes: 49163 };
+export default "https://cdn.discordapp.com/assets/content/364945bb8426628bbbdc005e00afd328ac25c0bdb90b92733d5e90eec58f8d40.png";
+export const metadata = { fileBytes: 50096 };

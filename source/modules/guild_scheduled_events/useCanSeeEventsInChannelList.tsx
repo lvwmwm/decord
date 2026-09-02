@@ -1,13 +1,13 @@
-// Module ID: 11941
-// Function ID: 11942
+// Module ID: 12164
+// Function ID: 12165
 // Name: useCanSeeEventsInChannelList
-// Dependencies: [9642, 9631, 11942, 2]
+// Dependencies: [9655, 9644, 12165, 2]
 // Exports: default
 
-// Module 11941 (useCanSeeEventsInChannelList)
+// Module 12164 (useCanSeeEventsInChannelList)
 import set from "set" /* 2 */;
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9642 */;
-import useIsHubForGuildDefault from "useIsHubForGuild" /* 11942 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9655 */;
+import useIsHubForGuildDefault from "useIsHubForGuild" /* 12165 */;
 
 const result = set.fileFinishedImporting("modules/guild_scheduled_events/useCanSeeEventsInChannelList.tsx");
 

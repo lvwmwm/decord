@@ -1,22 +1,22 @@
-// Module ID: 6064
-// Function ID: 6065
+// Module ID: 6072
+// Function ID: 6073
 // Name: getChannelIdForGuildTransition
-// Dependencies: [1390, 5463, 1387, 1982, 1909, 1981, 6065, 676, 1394, 6069, 6071, 6073, 1912, 2]
+// Dependencies: [1389, 5471, 1386, 1981, 1908, 1980, 6073, 673, 1393, 6077, 6079, 6081, 1911, 2]
 // Exports: getChannelIdForGuildTransition
 
-// Module 6064 (getChannelIdForGuildTransition)
-import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1912 */;
-import useCanSeeOnboardingHome from "useCanSeeOnboardingHome" /* 6069 */;
-import getPrice from "getPrice" /* 6073 */;
-import closure_2 from "initializeFromUserSettings" /* 1390 */;
-import closure_3 from "shouldShowOnboarding" /* 5463 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "comparator" /* 1982 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import closure_7 from "handleConnectionOpen" /* 1981 */;
-import closure_8 from "makeSortedChannel" /* 6065 */;
-import { ME } from "ME" /* 676 */;
-import { StaticChannelRoute } from "set" /* 1394 */;
+// Module 6072 (getChannelIdForGuildTransition)
+import getFavoritesAwareGuildName from "getFavoritesAwareGuildName" /* 1911 */;
+import useCanSeeOnboardingHome from "useCanSeeOnboardingHome" /* 6077 */;
+import getPrice from "getPrice" /* 6081 */;
+import closure_2 from "initializeFromUserSettings" /* 1389 */;
+import closure_3 from "shouldShowOnboarding" /* 5471 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_5 from "comparator" /* 1981 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import closure_7 from "handleConnectionOpen" /* 1980 */;
+import closure_8 from "makeSortedChannel" /* 6073 */;
+import { ME } from "ME" /* 673 */;
+import { StaticChannelRoute } from "set" /* 1393 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/routing/getChannelIdForGuildTransition.tsx");

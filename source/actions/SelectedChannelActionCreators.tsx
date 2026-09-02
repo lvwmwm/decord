@@ -1,16 +1,16 @@
-// Module ID: 5355
-// Function ID: 5356
-// Dependencies: [4495, 1387, 4529, 676, 709, 1222, 5356, 9878, 2]
+// Module ID: 5363
+// Function ID: 5364
+// Dependencies: [4495, 1386, 4529, 673, 706, 1219, 5364, 9900, 2]
 
-// Module 5355
-import dispatcherDefault from "dispatcher" /* 709 */;
-import transitionTo from "transitionTo" /* 1222 */;
-import selectVoiceChannelAdditional from "selectVoiceChannelAdditional" /* 5356 */;
-import disconnectRemoteAll from "disconnectRemote" /* 9878 */;
+// Module 5363
+import dispatcherDefault from "dispatcher" /* 706 */;
+import transitionTo from "transitionTo" /* 1219 */;
+import selectVoiceChannelAdditional from "selectVoiceChannelAdditional" /* 5364 */;
+import disconnectRemoteAll from "disconnectRemote" /* 9900 */;
 import closure_4 from "set" /* 4495 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
 import closure_6 from "_detectH265HardwareDecode" /* 4529 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 ({ ME: error, PopoutWindowKeys, Routes: closure_8 } = ME);

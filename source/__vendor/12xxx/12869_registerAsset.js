@@ -1,10 +1,10 @@
 // Module ID: 12869
 // Function ID: 12870
 // Name: registerAsset
-// Dependencies: [1241]
+// Dependencies: [1240]
 
 // Module 12869 (registerAsset)
-import registerAsset from "registerAsset" /* 1241 */;
+import registerAsset from "registerAsset" /* 1240 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 270, height: 134, scales: [2, 3], hash: "415663ee17f9e1c2411c453e5e8ca806", name: "img_premium_embed_background_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dcae1df15663c479951183ad5f2fe3dd", name: "RedditNeutralIcon", type: "png" });

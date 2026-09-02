@@ -1,11 +1,11 @@
-// Module ID: 6118
-// Function ID: 6119
+// Module ID: 6126
+// Function ID: 6127
 // Name: useIsRemote
-// Dependencies: [4495, 589, 2]
+// Dependencies: [4495, 586, 2]
 // Exports: default
 
-// Module 6118 (useIsRemote)
-import initialize from "initialize" /* 589 */;
+// Module 6126 (useIsRemote)
+import initialize from "initialize" /* 586 */;
 import closure_2 from "set" /* 4495 */;
 
 require = arg1;

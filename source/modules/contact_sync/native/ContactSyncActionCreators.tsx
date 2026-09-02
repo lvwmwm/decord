@@ -1,12 +1,12 @@
-// Module ID: 12222
-// Function ID: 12223
+// Module ID: 12446
+// Function ID: 12447
 // Name: _updateDiscoverability
-// Dependencies: [5, 5225, 676, 4166, 1399, 698, 12218, 5350, 2]
+// Dependencies: [5, 5233, 673, 4166, 1398, 695, 12442, 5358, 2]
 
-// Module 12222 (_updateDiscoverability)
+// Module 12446 (_updateDiscoverability)
 import importDefaultResult from "asyncGeneratorStep" /* 5 */;
-import closure_4 from "set" /* 5225 */;
-import ME from "ME" /* 676 */;
+import closure_4 from "set" /* 5233 */;
+import ME from "ME" /* 673 */;
 
 let closure_0 = arg1;
 function _updateDiscoverability() {
@@ -89,19 +89,19 @@ function _updateDiscoverability() {
             obj3[0] = typeof name === "string";
             callback2 = phone;
             if (phone == null) {
-              obj = phone(1399);
+              obj = phone(1398);
               callback2 = obj.hasFlag(dependencyMap, constants2.FIND_BY_PHONE);
             }
             obj3[1] = callback2;
             dependencyMap = callback2;
             if (callback2 == null) {
-              obj1 = phone(1399);
+              obj1 = phone(1398);
               dependencyMap = obj1.hasFlag(dependencyMap, constants2.FIND_BY_EMAIL);
             }
             obj3[2] = dependencyMap;
-            obj2 = phone(12218);
+            obj2 = phone(12442);
             obj3[3] = obj2.isContactSyncEnabled(localAccount.getLocalAccount(constants3.CONTACTS));
-            callback2(698).track(constants.USER_DISCOVERY_UPDATED, obj3);
+            callback2(695).track(constants.USER_DISCOVERY_UPDATED, obj3);
             constants2 = 3;
             return { value: "HermesInternal", done: null };
           }

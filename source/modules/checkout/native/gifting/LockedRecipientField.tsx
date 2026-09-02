@@ -1,13 +1,13 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10849
+// Function ID: 10850
 // Name: LockedRecipientField
-// Dependencies: [19, 17, 21, 4478, 712, 1297, 4474, 4322, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 1296, 4474, 4322, 2]
 // Exports: default
 
-// Module 10628 (LockedRecipientField)
+// Module 10849 (LockedRecipientField)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
 import Text from "Text" /* 4474 */;
 import { View } from "get ActivityIndicator" /* 17 */;

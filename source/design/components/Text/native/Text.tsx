@@ -1,11 +1,11 @@
 // Module ID: 4474
 // Function ID: 4475
 // Name: Text
-// Dependencies: [109, 19, 17, 505, 21, 4217, 712, 12, 4475, 4476, 4478, 4483, 4484, 4487, 501, 4488, 299, 2]
+// Dependencies: [109, 19, 17, 502, 21, 4217, 709, 12, 4475, 4476, 4478, 4483, 4484, 4487, 1235, 4488, 299, 2]
 
 // Module 4474 (Text)
 import applyDefault from "apply" /* 12 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import useManaTextMigrationHighlight2 from "useManaTextMigrationHighlight" /* 4476 */;
 import PlainTextExperimentProvider from "PlainTextExperimentProvider" /* 4483 */;
 import useTypographyVariantRemap from "useTypographyVariantRemap" /* 4484 */;
@@ -14,7 +14,7 @@ import __INTERNAL_VIEW_CONFIGDefault from "__INTERNAL_VIEW_CONFIG" /* 4488 */;
 import closure_4 from "_objectWithoutProperties" /* 109 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import { Fonts } from "sum" /* 505 */;
+import { Fonts } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
 import { TextVariantsFlat } from "TEXT_VARIANT" /* 4475 */;
 import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 4476 */;
@@ -117,7 +117,7 @@ const forwardRefResult = importAllResult.forwardRef((animated) => {
   items[arraySpreadResult + 1] = manaTextMigrationHighlight;
   let tmp4Result = tmp4(4487);
   obj = { animated: flag, children, enabled: plainTextExperimentEnabled, experimentalUseNativeText: flag2, hasRef: null != arg1, hasTextAncestor: context, isIOS: null, props: null, style: null };
-  tmp4Result = tmp4(501);
+  tmp4Result = tmp4(1235);
   obj[6] = tmp4Result.isIOS();
   obj[7] = merged;
   obj[8] = items;

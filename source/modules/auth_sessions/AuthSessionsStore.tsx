@@ -1,11 +1,11 @@
-// Module ID: 14326
-// Function ID: 14327
+// Module ID: 14549
+// Function ID: 14550
 // Name: handleInit
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 14326 (handleInit)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 14549 (handleInit)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 function handleInit() {
   closure_0 = [];

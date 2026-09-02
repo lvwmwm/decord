@@ -1,14 +1,14 @@
-// Module ID: 6653
-// Function ID: 6654
+// Module ID: 6662
+// Function ID: 6663
 // Name: GemIllocon
-// Dependencies: [21, 5493, 6654, 2]
+// Dependencies: [21, 5501, 6663, 2]
 // Exports: GemIllocon
 
-// Module 6653 (GemIllocon)
+// Module 6662 (GemIllocon)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6654 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6663 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/GemIllocon.native.tsx");

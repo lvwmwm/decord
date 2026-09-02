@@ -1,28 +1,28 @@
-// Module ID: 16483
-// Function ID: 16484
+// Module ID: 16718
+// Function ID: 16719
 // Name: SettingHeaderBadge
-// Dependencies: [32, 19, 17, 1996, 14342, 676, 21, 7822, 4478, 712, 15004, 1297, 4474, 1500, 13071, 16484, 6242, 647, 5953, 5973, 14344, 7220, 14345, 6008, 13815, 4197, 5068, 1236, 15991, 16485, 14236, 16486, 38, 2]
+// Dependencies: [32, 19, 17, 1995, 14565, 673, 21, 7831, 4478, 709, 15233, 1296, 4474, 1499, 13293, 16719, 6251, 644, 5961, 5981, 14567, 7229, 14568, 6016, 14038, 4197, 5076, 1233, 16222, 16720, 14459, 16721, 38, 2]
 
-// Module 16483 (SettingHeaderBadge)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16718 (SettingHeaderBadge)
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
-import SettingsBadgeType from "SettingsBadgeType" /* 15004 */;
+import SettingsBadgeType from "SettingsBadgeType" /* 15233 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "_getSystemLocale" /* 1996 */;
-import closure_7 from "zustandStore" /* 14342 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "_getSystemLocale" /* 1995 */;
+import closure_7 from "zustandStore" /* 14565 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createNativeStackNavigator from "createNativeStackNavigator" /* 7822 */;
+import createNativeStackNavigator from "createNativeStackNavigator" /* 7831 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 require = arg1;
 function SettingHeaderBadge(badge) {
   if (badge.badge.badgeType === SettingsBadgeType.SettingsBadgeType.BETA) {
     const obj = { size: null };
-    obj[0] = tmp(1297).BetaSizes.SMALL;
-    return callback(tmp(1297).BetaTag, obj);
+    obj[0] = tmp(1296).BetaSizes.SMALL;
+    return callback(tmp(1296).BetaTag, obj);
   }
 }
 function LeftAlignedHeaderTitle(children) {

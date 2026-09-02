@@ -1,13 +1,13 @@
 // Module ID: 4846
 // Function ID: 4847
 // Name: getPurchaseToken
-// Dependencies: [5, 687, 595, 514, 2]
+// Dependencies: [5, 684, 592, 511, 2]
 // Exports: getPurchaseTokenHash
 
 // Module 4846 (getPurchaseToken)
-import v1 from "v1" /* 514 */;
-import Storage3 from "Storage" /* 595 */;
-import setDefault from "set" /* 687 */;
+import v1 from "v1" /* 511 */;
+import Storage3 from "Storage" /* 592 */;
+import setDefault from "set" /* 684 */;
 import closure_2 from "asyncGeneratorStep" /* 5 */;
 
 require = arg1;
@@ -21,7 +21,7 @@ function getPurchaseToken() {
     }
   }
   const v4Result = v1.v4();
-  const Storage2 = tmp(595).Storage;
+  const Storage2 = tmp(592).Storage;
   const tmp3 = purchase_token;
   const tmpResult = v1;
   const result = Storage2.set(tmp3, { purchaseToken: v4Result, expires: Date.now() + closure_4 });

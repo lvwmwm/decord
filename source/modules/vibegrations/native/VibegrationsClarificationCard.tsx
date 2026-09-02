@@ -1,11 +1,11 @@
-// Module ID: 16191
-// Function ID: 16192
+// Module ID: 16423
+// Function ID: 16424
 // Name: VibegrationsClarificationCard
-// Dependencies: [32, 19, 17, 21, 4478, 712, 16192, 4474, 1236, 3501, 5601, 4928, 13813, 2]
+// Dependencies: [32, 19, 17, 21, 4478, 709, 16424, 4474, 1233, 3500, 5609, 4928, 14036, 2]
 // Exports: default
 
-// Module 16191 (VibegrationsClarificationCard)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16423 (VibegrationsClarificationCard)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
@@ -114,11 +114,11 @@ export default function VibegrationsClarificationCard(clarification) {
   }, items3);
   if (clarification.questions.length > 1) {
     obj = { variant: "text-xs/semibold", color: "text-muted", children: null };
-    let intl = clarification(1236).intl;
+    let intl = clarification(1233).intl;
     obj1 = { index: null, total: null };
     obj1[0] = bound + 1;
     obj1[1] = length;
-    obj[2] = intl.formatToPlainString(onSubmit(3501)["7bypa+"], obj1);
+    obj[2] = intl.formatToPlainString(onSubmit(3500)["7bypa+"], obj1);
     tmp14 = callback(clarification(4474).Text, obj);
   }
   const items4 = [tmp14, callback(clarification(4474).Text, { variant: "text-md/semibold", color: "text-default", children: clarification.questions[bound].question }), , ];
@@ -171,8 +171,8 @@ export default function VibegrationsClarificationCard(clarification) {
     tmp19Result = null;
     if (!tmp6) {
       const obj4 = { variant: "secondary", size: "sm", text: null, onPress: null };
-      let intl2 = tmp20(1236).intl;
-      obj4[2] = intl2.string(onSubmit(3501).yKdgqw);
+      let intl2 = tmp20(1233).intl;
+      obj4[2] = intl2.string(onSubmit(3500).yKdgqw);
       obj4[3] = callback1;
       tmp19Result = tmp19(tmp20(4928).Button, obj4);
     }
@@ -180,8 +180,8 @@ export default function VibegrationsClarificationCard(clarification) {
   const items5 = [tmp19Result, ];
   const obj5 = { style: tmp.customField, children: null };
   const obj6 = { size: "md", isCentered: false, placeholder: null, value: null, onChange: null, onSubmitEditing: null, returnKeyType: "send" };
-  const intl3 = tmp20(1236).intl;
-  obj6[2] = intl3.string(onSubmit(3501).qifsdL);
+  const intl3 = tmp20(1233).intl;
+  obj6[2] = intl3.string(onSubmit(3500).qifsdL);
   obj6[3] = str;
   obj6[4] = function onChange(arg0) {
     closure_0 = arg0;
@@ -193,7 +193,7 @@ export default function VibegrationsClarificationCard(clarification) {
     });
   };
   obj6[5] = callback2;
-  obj5[1] = callback(clarification(13813).GhostInput, obj6);
+  obj5[1] = callback(clarification(14036).GhostInput, obj6);
   items5[1] = callback(closure_5, obj5);
   obj3[1] = items5;
   items4[3] = closure_7(closure_5, obj3);

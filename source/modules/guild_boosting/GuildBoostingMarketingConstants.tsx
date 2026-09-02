@@ -1,14 +1,14 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12354
+// Function ID: 12355
 // Name: BoostedGuildTiers
-// Dependencies: [676, 1924, 4369, 1236, 2]
+// Dependencies: [673, 1923, 4369, 1233, 2]
 
-// Module 12130 (BoostedGuildTiers)
+// Module 12354 (BoostedGuildTiers)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 import getGuildTierFromGuild from "getGuildTierFromGuild" /* 4369 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 const BoostedGuildTiers = ME.BoostedGuildTiers;
 let closure_3 = ME.MAX_STAGE_VIDEO_USER_LIMIT_TIER3;

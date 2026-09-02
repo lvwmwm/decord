@@ -1,10 +1,10 @@
-// Module ID: 12090
-// Function ID: 12091
+// Module ID: 12314
+// Function ID: 12315
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [19, 4365, 4369, 1236, 2401, 1471, 2]
+// Dependencies: [19, 4365, 4369, 1233, 2400, 1470, 2]
 // Exports: default
 
-// Module 12090 (useGuildPowerupLevelPerks)
+// Module 12314 (useGuildPowerupLevelPerks)
 import closure_3 from "noop" /* 19 */;
 import { GUILD_FEATURE_TO_PERK } from "BoostedGuildTiers" /* 4365 */;
 

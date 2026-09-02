@@ -1,16 +1,16 @@
-// Module ID: 11244
-// Function ID: 11245
+// Module ID: 11467
+// Function ID: 11468
 // Name: canForwardMessage
-// Dependencies: [1983, 1387, 1909, 4121, 676, 1399, 589, 2]
+// Dependencies: [1982, 1386, 1908, 4120, 673, 1398, 586, 2]
 // Exports: useCanForwardMessage
 
-// Module 11244 (canForwardMessage)
-import hasFlag from "hasFlag" /* 1399 */;
-import closure_2 from "isSubscriptionGated" /* 1983 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "getUncachedChannelPermissions" /* 4121 */;
-import ME from "ME" /* 676 */;
+// Module 11467 (canForwardMessage)
+import hasFlag from "hasFlag" /* 1398 */;
+import closure_2 from "isSubscriptionGated" /* 1982 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+import closure_5 from "getUncachedChannelPermissions" /* 4120 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 function canForwardMessage(state) {
@@ -108,5 +108,5 @@ export { canForwardMessage };
 export const useCanForwardMessage = function useCanForwardMessage(message) {
   const _require = message;
   const items = [closure_5, closure_2, closure_3, closure_4];
-  return _require(589).useStateFromStores(items, () => closure_1_11(closure_0, closure_1_5, closure_1_2, closure_1_3, closure_1_4));
+  return _require(586).useStateFromStores(items, () => closure_1_11(closure_0, closure_1_5, closure_1_2, closure_1_3, closure_1_4));
 };

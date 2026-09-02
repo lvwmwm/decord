@@ -1,28 +1,28 @@
-// Module ID: 11907
-// Function ID: 11908
+// Module ID: 12130
+// Function ID: 12131
 // Name: SearchTokenTypes
-// Dependencies: [32, 1387, 1982, 4732, 4130, 1981, 1922, 7622, 676, 4075, 1236, 11908, 11, 11913, 12, 11914, 4674, 4322, 2]
+// Dependencies: [32, 1386, 1981, 4732, 4130, 1980, 1921, 7632, 673, 4074, 1233, 12131, 11, 12136, 12, 12137, 4674, 4322, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 11907 (SearchTokenTypes)
+// Module 12130 (SearchTokenTypes)
 import applyDefault from "apply" /* 12 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import handleConnectionOpenDefault from "handleConnectionOpen" /* 1981 */;
-import hooksDefault from "hooks" /* 4075 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import handleConnectionOpenDefault from "handleConnectionOpen" /* 1980 */;
+import hooksDefault from "hooks" /* 4074 */;
 import nameFromUserDefault from "nameFromUser" /* 4322 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
-import getShortcuts from "getShortcuts" /* 11908 */;
-import getShortcutsDefault from "getShortcuts" /* 11908 */;
-import getMatchDefault from "getMatch" /* 11913 */;
-import _modDef11914 from "module_11914" /* 11914 */;
+import getShortcuts from "getShortcuts" /* 12131 */;
+import getShortcutsDefault from "getShortcuts" /* 12131 */;
+import getMatchDefault from "getMatch" /* 12136 */;
+import _modDef12137 from "module_12137" /* 12137 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "ensureGuildLoaded" /* 1387 */;
-import closure_5 from "comparator" /* 1982 */;
+import closure_4 from "ensureGuildLoaded" /* 1386 */;
+import closure_5 from "comparator" /* 1981 */;
 import closure_6 from "initialize" /* 4732 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { SearchTabs } from "MessageEmbedTypes" /* 7622 */;
-import ME from "ME" /* 676 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import { SearchTabs } from "MessageEmbedTypes" /* 7632 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 handleConnectionOpenDefault;
@@ -506,7 +506,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(11913).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(12136).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj4 = { type: null, filter: null, token: null };
@@ -629,7 +629,7 @@ export const refreshSearchTokens = function refreshSearchTokens() {
     return closure_20.addRule({ type });
   });
   const obj4 = applyDefault(crossDMSearchTokensConfig);
-  const result1 = _modDef11914.markSearchTokensRefreshed();
+  const result1 = _modDef12137.markSearchTokensRefreshed();
 };
 export const getChannelDisplayName = function getChannelDisplayName(isDM) {
   const channelName = computeChannelName.computeChannelName(isDM, closure_8, closure_7);

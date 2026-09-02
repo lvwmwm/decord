@@ -1,19 +1,19 @@
-// Module ID: 11262
-// Function ID: 11263
+// Module ID: 11485
+// Function ID: 11486
 // Name: longPressMessageHandleReply
-// Dependencies: [7426, 1922, 7425, 676, 698, 11250, 7201, 11252, 4700, 2]
+// Dependencies: [7435, 1921, 7434, 673, 695, 11473, 7210, 11475, 4700, 2]
 // Exports: default
 
-// Module 11262 (longPressMessageHandleReply)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+// Module 11485 (longPressMessageHandleReply)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
-import trackInviteDefault from "trackInvite" /* 7201 */;
-import handleEdit from "handleEdit" /* 11250 */;
-import createPendingReply from "createPendingReply" /* 11252 */;
-import closure_3 from "initialize" /* 7426 */;
-import closure_4 from "mergeGuildAvatar" /* 1922 */;
-import closure_5 from "getState" /* 7425 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import trackInviteDefault from "trackInvite" /* 7210 */;
+import handleEdit from "handleEdit" /* 11473 */;
+import createPendingReply from "createPendingReply" /* 11475 */;
+import closure_3 from "initialize" /* 7435 */;
+import closure_4 from "mergeGuildAvatar" /* 1921 */;
+import closure_5 from "getState" /* 7434 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/replies/native/replyToMessage.tsx");
@@ -43,7 +43,7 @@ export default function longPressMessageHandleReply(arg0) {
       if (null != pendingReply) {
         if (pendingReply.message.id === message.id) {
           const currentUser1 = authStore.getCurrentUser();
-          let tmp3Result = tmp3(698);
+          let tmp3Result = tmp3(695);
           obj = { message_id: null, channel_id: null, guild_id: null, context_action: "reply", reason: "swipe_reply_undo", is_own_message: null };
           obj[0] = message.id;
           ({ id: obj8[1], guild_id: obj8[2] } = channel);
@@ -74,7 +74,7 @@ export default function longPressMessageHandleReply(arg0) {
       }
     }
   }
-  tmp3Result = tmp3(698);
+  tmp3Result = tmp3(695);
   const merged = Object.assign(collectGuildAnalyticsMetadata.collectGuildAnalyticsMetadata(channel.guild_id));
   obj1 = { source: actionSource };
   const obj4 = collectGuildAnalyticsMetadata;

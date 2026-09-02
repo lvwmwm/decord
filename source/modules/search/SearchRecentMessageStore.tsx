@@ -1,11 +1,11 @@
-// Module ID: 11910
-// Function ID: 11911
+// Module ID: 12133
+// Function ID: 12134
 // Name: handleReset
-// Dependencies: [4737, 589, 709, 2]
+// Dependencies: [4737, 586, 706, 2]
 
-// Module 11910 (handleReset)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 12133 (handleReset)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const require = arg1;
 function handleReset() {

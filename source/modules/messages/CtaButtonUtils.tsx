@@ -1,13 +1,13 @@
-// Module ID: 11484
-// Function ID: 11485
+// Module ID: 11707
+// Function ID: 11708
 // Name: CtaButtonType
-// Dependencies: [4734, 11485, 4733, 589, 2]
+// Dependencies: [4734, 11708, 4733, 586, 2]
 // Exports: getCtaButtonType, useCtaButtonType
 
-// Module 11484 (CtaButtonType)
-import initialize from "initialize" /* 589 */;
+// Module 11707 (CtaButtonType)
+import initialize from "initialize" /* 586 */;
 import useAgeVerificationRunner from "useAgeVerificationRunner" /* 4733 */;
-import shouldRenderReportFalsePositiveButton2 from "shouldRenderReportFalsePositiveButton" /* 11485 */;
+import shouldRenderReportFalsePositiveButton2 from "shouldRenderReportFalsePositiveButton" /* 11708 */;
 import closure_2 from "initialize" /* 4734 */;
 
 require = arg1;

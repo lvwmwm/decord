@@ -1,12 +1,12 @@
-// Module ID: 15844
-// Function ID: 15845
+// Module ID: 16075
+// Function ID: 16076
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [1909, 676, 589, 13632, 6107, 2]
+// Dependencies: [1908, 673, 586, 13855, 6115, 2]
 // Exports: default
 
-// Module 15844 (useIsEligibleForTierTemplateUpsell)
-import closure_2 from "createGuildRecordFromRust" /* 1909 */;
-import { GuildFeatures } from "ME" /* 676 */;
+// Module 16075 (useIsEligibleForTierTemplateUpsell)
+import closure_2 from "createGuildRecordFromRust" /* 1908 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/guild_role_subscriptions/tier_templates/useIsEligibleForTierTemplateUpsell.tsx");
@@ -14,11 +14,11 @@ let result = require("set").fileFinishedImporting("modules/guild_role_subscripti
 export default function useIsEligibleForTierTemplateUpsell(guildId) {
   const _require = guildId;
   const items = [closure_2];
-  const stateFromStores = _require(589).useStateFromStores(items, () => closure_1_2.getGuild(closure_0));
-  const obj = _require(589);
+  const stateFromStores = _require(586).useStateFromStores(items, () => closure_1_2.getGuild(closure_0));
+  const obj = _require(586);
   const tmp = _require;
   let hasItem;
-  const guildEligibleForTierTemplates = _require(13632).useGuildEligibleForTierTemplates(guildId);
+  const guildEligibleForTierTemplates = _require(13855).useGuildEligibleForTierTemplates(guildId);
   if (stateFromStores != null) {
     const features = stateFromStores.features;
     hasItem = features.has(GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
@@ -32,7 +32,7 @@ export default function useIsEligibleForTierTemplateUpsell(guildId) {
     }
     result = false === hasItem1;
   }
-  const obj2 = _require(13632);
+  const obj2 = _require(13855);
   if (result) {
     result = tmpResult.canManageGuildRoleSubscriptions(stateFromStores);
   }

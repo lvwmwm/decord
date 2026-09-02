@@ -1,12 +1,12 @@
-// Module ID: 688
-// Function ID: 689
+// Module ID: 685
+// Function ID: 686
 // Name: int2hslRaw
-// Dependencies: [689, 2]
+// Dependencies: [686, 2]
 // Exports: getContrast, getDarkness, getLuminance, hex2int, hex2rgb, hsv2int, int2hex, int2hsl, int2hslValues, int2hsv, int2rgbArray, int2rgba, isValidHex, rgb2int
 
-// Module 688 (int2hslRaw)
+// Module 685 (int2hslRaw)
 import set from "set" /* 2 */;
-import nDefault from "n" /* 689 */;
+import nDefault from "n" /* 686 */;
 
 function int2hslRaw(initialColor) {
   const result = (initialColor >> 16 & 255) / 255;

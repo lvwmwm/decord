@@ -1,13 +1,13 @@
-// Module ID: 9875
-// Function ID: 9876
+// Module ID: 9897
+// Function ID: 9898
 // Name: useGameConsoleAccounts
-// Dependencies: [5225, 676, 589, 1471, 2]
+// Dependencies: [5233, 673, 586, 1470, 2]
 // Exports: default
 
-// Module 9875 (useGameConsoleAccounts)
-import initialize from "initialize" /* 589 */;
-import closure_2 from "set" /* 5225 */;
-import { PlatformTypes } from "ME" /* 676 */;
+// Module 9897 (useGameConsoleAccounts)
+import initialize from "initialize" /* 586 */;
+import closure_2 from "set" /* 5233 */;
+import { PlatformTypes } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_console/useGameConsoleAccounts.tsx");

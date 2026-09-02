@@ -1,16 +1,16 @@
-// Module ID: 15547
-// Function ID: 15548
+// Module ID: 15778
+// Function ID: 15779
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 15537, 15538, 676, 1499, 15534, 1236, 15548, 10914, 7721, 15545, 691, 15536, 1500, 7736, 7730, 8647, 2]
+// Dependencies: [5, 32, 19, 15768, 15769, 673, 1498, 15765, 1233, 15779, 11134, 7730, 15776, 688, 15767, 1499, 7745, 7739, 8662, 2]
 // Exports: useIdentityRegistrationStep
 
-// Module 15547 (useIdentityRegistrationStep)
+// Module 15778 (useIdentityRegistrationStep)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "noop" /* 19 */;
-import useRegistrationUIStore from "useRegistrationUIStore" /* 15537 */;
-import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15538 */;
-import { AbortCodes } from "ME" /* 676 */;
+import useRegistrationUIStore from "useRegistrationUIStore" /* 15768 */;
+import RegistrationTransitionActionTypes from "RegistrationTransitionActionTypes" /* 15769 */;
+import { AbortCodes } from "ME" /* 673 */;
 
 const require = arg1;
 ({ setRegistrationErrors: closure_6, updateRegistrationOptions: error, useRegistrationUIStore: closure_8 } = useRegistrationUIStore);

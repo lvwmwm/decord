@@ -1,20 +1,20 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 12158
+// Function ID: 12159
 // Name: matchGroupDMRecipients
-// Dependencies: [32, 19, 17, 1387, 4130, 1922, 10632, 21, 4478, 712, 5454, 4322, 4674, 12, 10634, 1236, 4474, 10636, 10638, 10731, 11936, 2]
+// Dependencies: [32, 19, 17, 1386, 4130, 1921, 10853, 21, 4478, 709, 5462, 4322, 4674, 12, 10855, 1233, 4474, 10857, 10859, 10952, 12159, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 11935 (matchGroupDMRecipients)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12158 (matchGroupDMRecipients)
+import ThemesDefault from "Themes" /* 709 */;
 import computeChannelName from "computeChannelName" /* 4674 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5454 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5462 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
 import closure_7 from "markAllUserIdListsStale" /* 4130 */;
-import closure_8 from "mergeGuildAvatar" /* 1922 */;
-import { UserRowModes } from "UserRowModes" /* 10632 */;
+import closure_8 from "mergeGuildAvatar" /* 1921 */;
+import { UserRowModes } from "UserRowModes" /* 10853 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -46,7 +46,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult1) {
           let tmp8 = toLocaleLowerCaseResult1;
-          if (tmp19(5454)(trimmed1, tmp7)) {
+          if (tmp19(5462)(trimmed1, tmp7)) {
             let tmp15 = obj;
             obj.return();
             let num2 = 1;
@@ -62,7 +62,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
         }
         if (null != toLocaleLowerCaseResult2) {
           let tmp13 = toLocaleLowerCaseResult2;
-          if (tmp19(5454)(trimmed1, tmp12)) {
+          if (tmp19(5462)(trimmed1, tmp12)) {
             let tmp14 = obj;
             obj.return();
             let num = 1;
@@ -257,8 +257,8 @@ export default function NewMessageUserList(selectedUserIds) {
       obj[0] = intl.string(flag9(trimmed[15]).t.qGlQrW);
       obj[1] = arr2.map((data) => ({ type: "GroupDMChannelRecord", data }));
       const findIndexResult = obj.findIndex((title) => {
-        const intl = callback(1236).intl;
-        return title.title === intl.string(callback(1236).t.y29JXs);
+        const intl = callback(1233).intl;
+        return title.title === intl.string(callback(1233).t.y29JXs);
       });
       if (-1 === findIndexResult) {
         let items = [];

@@ -1,16 +1,16 @@
-// Module ID: 8136
-// Function ID: 8137
+// Module ID: 8144
+// Function ID: 8145
 // Name: createVoiceChannelBadge
-// Dependencies: [17, 1387, 4121, 4497, 676, 8137, 4981, 4731, 2]
+// Dependencies: [17, 1386, 4120, 4497, 673, 8145, 4981, 4731, 2]
 // Exports: createVoiceChannelBadge
 
-// Module 8136 (createVoiceChannelBadge)
+// Module 8144 (createVoiceChannelBadge)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import ME from "ME" /* 676 */;
-import experiment from "experiment" /* 8137 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "getUncachedChannelPermissions" /* 4121 */;
+import ME from "ME" /* 673 */;
+import experiment from "experiment" /* 8145 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_5 from "updateVoiceState" /* 4497 */;
 
 const Image = get_ActivityIndicator.Image;

@@ -1,12 +1,12 @@
-// Module ID: 675
-// Function ID: 676
+// Module ID: 672
+// Function ID: 673
 // Name: setRequestedBy
-// Dependencies: [5, 676, 696, 698, 2]
+// Dependencies: [5, 673, 693, 695, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 675 (setRequestedBy)
+// Module 672 (setRequestedBy)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const require = arg1;
 function setRequestedBy(closure_0) {
@@ -159,7 +159,7 @@ export const startBridgeTo = function startBridgeTo(arg0) {
     num = 0;
   }
   let result = map.set(combined, num + 1);
-  combined(696).requestSafeIdleCallback(() => {
+  combined(693).requestSafeIdleCallback(() => {
     let obj = closure_1_7;
     if (closure_1_7.has(combined)) {
       obj = { bridge_token: null, cleared_after: null };

@@ -1,11 +1,11 @@
-// Module ID: 16552
-// Function ID: 16553
+// Module ID: 16787
+// Function ID: 16788
 // Name: styles
-// Dependencies: [4478, 712, 2]
+// Dependencies: [4478, 709, 2]
 
-// Module 16552 (styles)
+// Module 16787 (styles)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
 let obj = { iconBackground: null, iconBackgroundBrand: null, iconStroke: null };

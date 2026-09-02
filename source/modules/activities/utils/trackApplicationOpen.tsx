@@ -1,13 +1,13 @@
-// Module ID: 9474
-// Function ID: 9475
+// Module ID: 9487
+// Function ID: 9488
 // Name: trackApplicationOpen
-// Dependencies: [676, 698, 2]
+// Dependencies: [673, 695, 2]
 // Exports: default
 
-// Module 9474 (trackApplicationOpen)
+// Module 9487 (trackApplicationOpen)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 
 const AnalyticEvents = ME.AnalyticEvents;
 const result = set.fileFinishedImporting("modules/activities/utils/trackApplicationOpen.tsx");

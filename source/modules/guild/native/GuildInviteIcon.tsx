@@ -1,14 +1,14 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12421
+// Function ID: 12422
 // Name: render
-// Dependencies: [19, 17, 21, 4478, 712, 4204, 12198, 1236, 1431, 5493, 1902, 1297, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4204, 12422, 1233, 1430, 5501, 1901, 1296, 2]
 
-// Module 12197 (render)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import getAvatarURLDefault from "getAvatarURL" /* 1431 */;
-import preloadDefault from "preload" /* 5493 */;
-import getClass from "getClass" /* 12198 */;
+// Module 12421 (render)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import getAvatarURLDefault from "getAvatarURL" /* 1430 */;
+import preloadDefault from "preload" /* 5501 */;
+import getClass from "getClass" /* 12422 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -48,7 +48,7 @@ GuildInviteIcon.prototype["render"] = function render() {
     obj1[3] = guildIconSource;
     return jsx(preloadDefault, { accessibilityRole: "image", accessibilityLabel: null, style: null, source: null });
   } else {
-    const acronym = tmp2(1902).getAcronym(guild.name);
+    const acronym = tmp2(1901).getAcronym(guild.name);
     let num = table[acronym.length - 1];
     if (num == null) {
       num = 10;
@@ -68,7 +68,7 @@ GuildInviteIcon.prototype["render"] = function render() {
     items2[1] = obj4;
     obj3[1] = items2;
     obj3[2] = acronym;
-    obj2[4] = jsx(tmp2(1297).LegacyText, { numberOfLines: 1, style: null, children: null });
+    obj2[4] = jsx(tmp2(1296).LegacyText, { numberOfLines: 1, style: null, children: null });
     return <View accessible accessibilityRole="image" accessibilityLabel={null} style={null}>{null}</View>;
   }
 };

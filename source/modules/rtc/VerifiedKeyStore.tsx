@@ -1,13 +1,13 @@
-// Module ID: 9823
-// Function ID: 9824
+// Module ID: 9845
+// Function ID: 9846
 // Name: initialize
-// Dependencies: [9824, 589, 11, 709, 2]
+// Dependencies: [9846, 586, 11, 706, 2]
 
-// Module 9823 (initialize)
+// Module 9845 (initialize)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import set from "set" /* 9824 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import set from "set" /* 9846 */;
 
 require = arg1;
 let closure_3 = {};

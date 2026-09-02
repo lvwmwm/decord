@@ -1,10 +1,10 @@
-// Module ID: 9617
-// Function ID: 9618
+// Module ID: 9630
+// Function ID: 9631
 // Name: _createWebviewHtmlFile
-// Dependencies: [5, 17, 500, 1271, 1208, 2]
+// Dependencies: [5, 17, 1234, 1270, 1205, 2]
 // Exports: createInjectedJavascriptForIOS, default
 
-// Module 9617 (_createWebviewHtmlFile)
+// Module 9630 (_createWebviewHtmlFile)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import { NativeModules } from "get ActivityIndicator" /* 17 */;
 
@@ -55,7 +55,7 @@ function _createWebviewHtmlFile() {
               c6 = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp7) {
             if (arg0 === 1) {

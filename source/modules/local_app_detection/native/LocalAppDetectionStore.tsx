@@ -1,14 +1,14 @@
-// Module ID: 13363
-// Function ID: 13364
+// Module ID: 13587
+// Function ID: 13588
 // Name: initialize
-// Dependencies: [32, 6054, 676, 589, 709, 13364, 13365, 2]
+// Dependencies: [32, 6062, 673, 586, 706, 13588, 13589, 2]
 
-// Module 13363 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 13587 (initialize)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "hasConsented" /* 6054 */;
-import { Consents } from "ME" /* 676 */;
+import closure_4 from "hasConsented" /* 6062 */;
+import { Consents } from "ME" /* 673 */;
 
 let object = arg1;
 let closure_6 = { detected: false, lastScannedAt: "r" };
@@ -61,7 +61,7 @@ prototype["isAppInstalled"] = function isAppInstalled(nextResult) {
 prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
   const self = this;
   const items = [];
-  const iter = object(13364).ALL_DETECTABLE_APP_NAMES[Symbol.iterator]();
+  const iter = object(13588).ALL_DETECTABLE_APP_NAMES[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
@@ -79,8 +79,8 @@ prototype["handlePostConnectionOpen"] = function handlePostConnectionOpen() {
     continue;
   }
   if (items.length > 0) {
-    object(13365).detectLocalApps(items);
-    const obj = object(13365);
+    object(13589).detectLocalApps(items);
+    const obj = object(13589);
   }
 };
 prototype["handleLocalAppDetectionComplete"] = function handleLocalAppDetectionComplete(result) {

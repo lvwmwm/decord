@@ -1,12 +1,12 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14362
+// Function ID: 14363
 // Name: ACTIVITY_SHARE_LINK_MODAL
-// Dependencies: [4340, 4723, 14140, 2009, 2]
+// Dependencies: [4340, 4723, 14363, 2008, 2]
 // Exports: closeActivityShareLinkModal, openActivityShareLinkModal
 
-// Module 14139 (ACTIVITY_SHARE_LINK_MODAL)
+// Module 14362 (ACTIVITY_SHARE_LINK_MODAL)
 import set from "set" /* 2 */;
-import asyncRequireImpl from "asyncRequireImpl" /* 2009 */;
+import asyncRequireImpl from "asyncRequireImpl" /* 2008 */;
 import getBestActiveInput from "getBestActiveInput" /* 4340 */;
 import _modDef4723 from "module_4723" /* 4723 */;
 
@@ -19,7 +19,7 @@ export const openActivityShareLinkModal = function openActivityShareLinkModal(ar
   let obj = getBestActiveInput;
   obj.dismissKeyboard();
   obj = { applicationId, customId, linkId, message, onShare };
-  _modDef4723.pushLazy(asyncRequireImpl(14140, dependencyMap.paths), obj, ACTIVITY_SHARE_LINK_MODAL, { presentation: "modal" });
+  _modDef4723.pushLazy(asyncRequireImpl(14363, dependencyMap.paths), obj, ACTIVITY_SHARE_LINK_MODAL, { presentation: "modal" });
 };
 export const closeActivityShareLinkModal = function closeActivityShareLinkModal() {
   _modDef4723.popWithKey(ACTIVITY_SHARE_LINK_MODAL);

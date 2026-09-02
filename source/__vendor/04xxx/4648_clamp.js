@@ -1,10 +1,10 @@
 // Module ID: 4648
 // Function ID: 4649
 // Name: clamp
-// Dependencies: [637, 4649]
+// Dependencies: [634, 4649]
 
 // Module 4648 (clamp)
-import toNumber from "toNumber" /* 637 */;
+import toNumber from "toNumber" /* 634 */;
 import baseClamp from "baseClamp" /* 4649 */;
 
 

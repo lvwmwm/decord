@@ -1,18 +1,18 @@
-// Module ID: 15761
-// Function ID: 15762
+// Module ID: 15992
+// Function ID: 15993
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 4470, 1909, 4365, 676, 1384, 505, 21, 4478, 712, 589, 4413, 4384, 12077, 12059, 15762, 12043, 12085, 1236, 2401, 12087, 15763, 12084, 4368, 15759, 15764, 15765, 12115, 15766, 8973, 2]
+// Dependencies: [19, 4470, 1908, 4365, 673, 1383, 502, 21, 4478, 709, 586, 4413, 4384, 12301, 12283, 15993, 12267, 12309, 1233, 2400, 12311, 15994, 12308, 4368, 15990, 15995, 15996, 12339, 15997, 8987, 2]
 // Exports: default
 
-// Module 15761 (useGuildPowerupsCoachmark)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 15992 (useGuildPowerupsCoachmark)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;
-import ME from "ME" /* 676 */;
-import { ContentDismissActionType } from "ContentDismissActionType" /* 1384 */;
-import { ThemeTypes } from "sum" /* 505 */;
+import ME from "ME" /* 673 */;
+import { ContentDismissActionType } from "ContentDismissActionType" /* 1383 */;
+import { ThemeTypes } from "sum" /* 502 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 11887
-// Function ID: 11888
+// Module ID: 12110
+// Function ID: 12111
 // Name: _createGuildFromTemplate
-// Dependencies: [5, 676, 4713, 503, 4376, 2]
+// Dependencies: [5, 673, 4713, 500, 4376, 2]
 
-// Module 11887 (_createGuildFromTemplate)
+// Module 12110 (_createGuildFromTemplate)
 import closure_3 from "asyncGeneratorStep" /* 5 */;
-import { Endpoints } from "ME" /* 676 */;
+import { Endpoints } from "ME" /* 673 */;
 
 const require = arg1;
 function _createGuildFromTemplate() {
@@ -58,7 +58,7 @@ function _createGuildFromTemplate() {
               obj2[6] = constants;
               obj1[1] = obj2;
               const obj3 = { event: null, properties: null };
-              obj3[0] = callback(503).NetworkActionNames.GUILD_CREATE;
+              obj3[0] = callback(500).NetworkActionNames.GUILD_CREATE;
               const obj4 = { template_name: null, is_community_intent: null };
               obj4[0] = dependencyMap.id;
               obj4[1] = closure_3;

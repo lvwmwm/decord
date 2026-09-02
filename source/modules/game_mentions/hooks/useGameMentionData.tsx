@@ -1,15 +1,15 @@
-// Module ID: 5052
-// Function ID: 5053
+// Module ID: 5060
+// Function ID: 5061
 // Name: getGameMentionData
-// Dependencies: [4502, 5053, 1922, 5056, 589, 643, 2]
+// Dependencies: [4502, 5061, 1921, 5064, 586, 640, 2]
 // Exports: getGameMentionData, useGameMentionData
 
-// Module 5052 (getGameMentionData)
-import shallowEqualDefault from "shallowEqual" /* 643 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 5056 */;
+// Module 5060 (getGameMentionData)
+import shallowEqualDefault from "shallowEqual" /* 640 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 5064 */;
 import closure_3 from "handleLoadMessages" /* 4502 */;
-import closure_4 from "set" /* 5053 */;
-import closure_5 from "mergeGuildAvatar" /* 1922 */;
+import closure_4 from "set" /* 5061 */;
+import closure_5 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/game_mentions/hooks/useGameMentionData.tsx");
@@ -47,7 +47,7 @@ export const useGameMentionData = function useGameMentionData(gameId) {
   const _require = gameId;
   const items = [closure_3, closure_4, closure_5];
   const items1 = [gameId];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     const currentUser = closure_1_5.getCurrentUser();
     const game = closure_1_3.getGame(gameId);
     const gameById = closure_1_4.getGameById(gameId);

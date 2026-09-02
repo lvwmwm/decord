@@ -1,14 +1,14 @@
-// Module ID: 11247
-// Function ID: 11248
+// Module ID: 11470
+// Function ID: 11471
 // Name: isMessagePinnable
-// Dependencies: [4121, 676, 6117, 6116, 2]
+// Dependencies: [4120, 673, 6125, 6124, 2]
 // Exports: default
 
-// Module 11247 (isMessagePinnable)
-import useCanUnarchiveThread from "useCanUnarchiveThread" /* 6116 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6117 */;
-import closure_3 from "getUncachedChannelPermissions" /* 4121 */;
-import ME from "ME" /* 676 */;
+// Module 11470 (isMessagePinnable)
+import useCanStartPrivateThread from "useCanStartPrivateThread" /* 6124 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6125 */;
+import closure_3 from "getUncachedChannelPermissions" /* 4120 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 ({ ChannelTypes: c4, Permissions: c5 } = ME);
@@ -28,8 +28,8 @@ export default function isMessagePinnable(arg0, isSystemDM) {
     isActiveChannelOrUnarchivableThread = isPrivateResult;
   }
   if (isActiveChannelOrUnarchivableThread) {
-    isActiveChannelOrUnarchivableThread = useCanUnarchiveThread.getIsActiveChannelOrUnarchivableThread(isSystemDM);
-    const obj2 = useCanUnarchiveThread;
+    isActiveChannelOrUnarchivableThread = useCanStartPrivateThread.getIsActiveChannelOrUnarchivableThread(isSystemDM);
+    const obj2 = useCanStartPrivateThread;
   }
   if (isActiveChannelOrUnarchivableThread) {
     isActiveChannelOrUnarchivableThread = isSystemDM.type !== constants.GUILD_VOICE;

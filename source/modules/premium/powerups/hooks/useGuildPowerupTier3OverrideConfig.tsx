@@ -1,20 +1,20 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12344
+// Function ID: 12345
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [1909, 676, 589, 1236, 2401, 2]
+// Dependencies: [1908, 673, 586, 1233, 2400, 2]
 // Exports: default
 
-// Module 12120 (useGuildPowerupTier3OverrideConfig)
-import messagesProxyDefault from "messagesProxy" /* 2401 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
-import { GuildFeatures } from "ME" /* 676 */;
+// Module 12344 (useGuildPowerupTier3OverrideConfig)
+import messagesProxyDefault from "messagesProxy" /* 2400 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
+import { GuildFeatures } from "ME" /* 673 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupTier3OverrideConfig.tsx");
 
 export default function useGuildPowerupTier3OverrideConfig(arg0) {
   const _require = arg0;
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_3];
   if (obj.useStateFromStores(items, () => {
     const guild = closure_1_3.getGuild(closure_0);
@@ -26,7 +26,7 @@ export default function useGuildPowerupTier3OverrideConfig(arg0) {
     return true === hasItem;
   })) {
     obj = { shouldShow: true, text: null };
-    const intl = _require(1236).intl;
+    const intl = _require(1233).intl;
     obj[1] = intl.string(messagesProxyDefault.l9n4QZ);
   } else {
     obj = { shouldShow: false, text: "" };

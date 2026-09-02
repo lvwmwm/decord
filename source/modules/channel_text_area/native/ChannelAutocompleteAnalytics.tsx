@@ -1,13 +1,13 @@
-// Module ID: 11961
-// Function ID: 11962
+// Module ID: 12185
+// Function ID: 12186
 // Name: iOSTrackAutocompleteOpen
-// Dependencies: [676, 698, 4700, 2]
+// Dependencies: [673, 695, 4700, 2]
 // Exports: iOSTrackAutocompleteOpen, iOSTrackAutocompleteSelect
 
-// Module 11961 (iOSTrackAutocompleteOpen)
+// Module 12185 (iOSTrackAutocompleteOpen)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
+import ME from "ME" /* 673 */;
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
 import collectGuildAnalyticsMetadata from "collectGuildAnalyticsMetadata" /* 4700 */;
 
 const AnalyticEvents = ME.AnalyticEvents;

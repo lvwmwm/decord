@@ -1,26 +1,26 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 8090
+// Function ID: 8091
 // Name: useCollectiblesData
-// Dependencies: [32, 7287, 7303, 647, 2]
+// Dependencies: [32, 7296, 7312, 644, 2]
 // Exports: default
 
-// Module 8082 (useCollectiblesData)
+// Module 8090 (useCollectiblesData)
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "updateCategoriesAndProducts" /* 7287 */;
-import closure_4 from "map" /* 7303 */;
+import closure_3 from "updateCategoriesAndProducts" /* 7296 */;
+import closure_4 from "map" /* 7312 */;
 
 const require = arg1;
 const result = require("set").fileFinishedImporting("modules/collectibles/hooks/useCollectiblesData.tsx");
 
 export default function useCollectiblesData(arg0) {
   const _require = arg0;
-  let obj = _require(647);
+  let obj = _require(644);
   let items = [closure_3];
   const tmp = callback(obj.useStateFromStoresArray(items, () => {
     const items = [closure_1_3.getCategoryForProduct(closure_0), closure_1_3.getProduct(closure_0)];
     return items;
   }), 2);
-  obj = { category: tmp[0], product: tmp[1], purchase: _require(647).useStateFromStores(items1, () => closure_1_4.getPurchase(closure_0)) };
+  obj = { category: tmp[0], product: tmp[1], purchase: _require(644).useStateFromStores(items1, () => closure_1_4.getPurchase(closure_0)) };
   items1 = [closure_4];
   return obj;
 };

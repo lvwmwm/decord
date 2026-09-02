@@ -1,18 +1,18 @@
-// Module ID: 10142
-// Function ID: 10143
+// Module ID: 10164
+// Function ID: 10165
 // Name: render
-// Dependencies: [19, 17, 1302, 21, 4478, 712, 4204, 1363, 10143, 10144, 1236, 5068, 10145, 589, 2]
+// Dependencies: [19, 17, 1301, 21, 4478, 709, 4204, 1362, 10165, 10166, 1233, 5076, 10167, 586, 2]
 // Exports: default
 
-// Module 10142 (render)
-import initialize from "initialize" /* 589 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10145 */;
+// Module 10164 (render)
+import initialize from "initialize" /* 586 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10167 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_5 from "handleThemeChange" /* 1302 */;
+import closure_5 from "handleThemeChange" /* 1301 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -38,9 +38,9 @@ DefaultFallback.prototype["render"] = function render() {
   let obj = { style: tmp.wrapper, children: null };
   obj = { resizeMode: "contain", style: tmp.fallbackImage, source: null };
   if (obj3.isThemeDark(this.props.theme)) {
-    let tmp6Result = tmp6(10143);
+    let tmp6Result = tmp6(10165);
   } else {
-    tmp6Result = tmp6(10144);
+    tmp6Result = tmp6(10166);
   }
   obj[2] = tmp6Result;
   obj[1] = closure_6(closure_3, obj);

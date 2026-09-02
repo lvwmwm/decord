@@ -1,14 +1,14 @@
-// Module ID: 8566
-// Function ID: 8567
+// Module ID: 8581
+// Function ID: 8582
 // Name: _openMediaModal
-// Dependencies: [32, 5, 4186, 676, 1493, 8567, 2009, 8570, 8574, 38, 4445, 8583, 4723, 8584, 2]
+// Dependencies: [32, 5, 4186, 673, 1492, 8582, 2008, 8585, 8589, 38, 4445, 8598, 4723, 8599, 2]
 // Exports: openMediaModal
 
-// Module 8566 (_openMediaModal)
+// Module 8581 (_openMediaModal)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "asyncGeneratorStep" /* 5 */;
 import closure_5 from "setContent" /* 4186 */;
-import { MEDIA_MODAL_KEY } from "ME" /* 676 */;
+import { MEDIA_MODAL_KEY } from "ME" /* 673 */;
 
 const require = arg1;
 function _openMediaModal() {
@@ -70,7 +70,7 @@ function _openMediaModal() {
               let initVideoStateStore;
               v0 = 1;
               c4 = 1;
-              return { value: "PX_16", done: null };
+              return { value: "PX_16", done: true };
             }
           } else if (1 === tmp5) {
             if (arg0 === 1) {

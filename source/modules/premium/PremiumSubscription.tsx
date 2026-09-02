@@ -1,12 +1,12 @@
 // Module ID: 4151
 // Function ID: 4152
 // Name: getNonePlanIdForIntervalType
-// Dependencies: [1924, 2]
+// Dependencies: [1923, 2]
 // Exports: getBasePlanIdForSubscriptionItems, getBaseSubscriptionItemForSubscriptionItems, getNonePlanIdForIntervalType, getNonePlanIdForSubscription
 
 // Module 4151 (getNonePlanIdForIntervalType)
 import set from "set" /* 2 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 
 ({ SubscriptionPlans: c0, SubscriptionPlanInfo: closure_1, PremiumSubscriptionSKUs: obj1 } = GuildFeatures);
 const result = set.fileFinishedImporting("modules/premium/PremiumSubscription.tsx");

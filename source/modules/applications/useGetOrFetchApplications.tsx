@@ -1,10 +1,10 @@
-// Module ID: 5959
-// Function ID: 5960
+// Module ID: 5967
+// Function ID: 5968
 // Name: useGetOrFetchApplications
-// Dependencies: [19, 4519, 643, 5954, 12, 1471, 589, 2]
+// Dependencies: [19, 4519, 640, 5962, 12, 1470, 586, 2]
 // Exports: default, useGetOrFetchApplication
 
-// Module 5959 (useGetOrFetchApplications)
+// Module 5967 (useGetOrFetchApplications)
 import closure_3 from "noop" /* 19 */;
 import closure_4 from "addApplication" /* 4519 */;
 
@@ -36,7 +36,7 @@ export default function useGetOrFetchApplications(arg0) {
     }
   }, items);
   const items1 = [closure_4];
-  return _require(589).useStateFromStoresArray(items1, () => items1.map((arg0) => {
+  return _require(586).useStateFromStoresArray(items1, () => items1.map((arg0) => {
     let application;
     if (null != arg0) {
       application = application.getApplication(arg0);
@@ -77,7 +77,7 @@ export const useGetOrFetchApplication = function useGetOrFetchApplication(applic
     }
   }, items2);
   const items3 = [closure_4];
-  return items1(589).useStateFromStoresArray(items3, () => items1.map((arg0) => {
+  return items1(586).useStateFromStoresArray(items3, () => items1.map((arg0) => {
     let application;
     if (null != arg0) {
       application = application.getApplication(arg0);

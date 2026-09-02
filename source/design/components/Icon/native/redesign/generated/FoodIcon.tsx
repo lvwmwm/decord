@@ -1,14 +1,14 @@
-// Module ID: 9197
-// Function ID: 9198
+// Module ID: 9211
+// Function ID: 9212
 // Name: FoodIcon
-// Dependencies: [19, 21, 712, 4196, 9198, 2]
+// Dependencies: [19, 21, 709, 4196, 9212, 2]
 // Exports: FoodIcon
 
-// Module 9197 (FoodIcon)
+// Module 9211 (FoodIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9198 */;
+import registerAsset from "registerAsset" /* 9212 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

@@ -1,14 +1,14 @@
-// Module ID: 14694
-// Function ID: 14695
+// Module ID: 14920
+// Function ID: 14921
 // Name: QuestDockMode
-// Dependencies: [5387, 589, 14695, 709, 2]
+// Dependencies: [5395, 586, 14921, 706, 2]
 
-// Module 14694 (QuestDockMode)
+// Module 14920 (QuestDockMode)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5387 */;
-import QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED from "QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED" /* 14695 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import QuestsExperimentLocations from "QuestsExperimentLocations" /* 5395 */;
+import QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED from "QUEST_DOCK_HORIZONTAL_EDGE_GUTTER_COLLAPSED" /* 14921 */;
 
 const QuestDockMode = QuestsExperimentLocations.QuestDockMode;
 let c5 = false;

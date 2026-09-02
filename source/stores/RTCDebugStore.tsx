@@ -1,16 +1,16 @@
-// Module ID: 10121
-// Function ID: 10122
+// Module ID: 10143
+// Function ID: 10144
 // Name: updateStats
-// Dependencies: [32, 4529, 1922, 676, 4542, 10122, 4579, 709, 589, 2]
+// Dependencies: [32, 4529, 1921, 673, 4542, 10144, 4579, 706, 586, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 10121 (updateStats)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import openAll from "open" /* 10122 */;
+// Module 10143 (updateStats)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import openAll from "open" /* 10144 */;
 import closure_4 from "_slicedToArray" /* 32 */;
 import closure_5 from "_detectH265HardwareDecode" /* 4529 */;
-import closure_6 from "mergeGuildAvatar" /* 1922 */;
+import closure_6 from "mergeGuildAvatar" /* 1921 */;
 import DesktopSources from "DesktopSources" /* 4542 */;
 
 const require = arg1;

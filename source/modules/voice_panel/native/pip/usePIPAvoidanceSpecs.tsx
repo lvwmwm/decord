@@ -1,14 +1,14 @@
-// Module ID: 16671
-// Function ID: 16672
+// Module ID: 16906
+// Function ID: 16907
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [11840, 11838, 11841, 4217, 16546, 16592, 4197, 712, 9209, 16490, 16593, 11844, 10991, 2]
+// Dependencies: [12063, 12061, 12064, 4217, 16781, 16827, 4197, 709, 9223, 16725, 16828, 12067, 11211, 2]
 // Exports: default
 
-// Module 16671 (usePIPAvoidanceSpecs)
+// Module 16906 (usePIPAvoidanceSpecs)
 import set from "set" /* 2 */;
-import VoicePanelControlsModes2 from "VoicePanelControlsModes" /* 11838 */;
-import VoicePanelModes2 from "VoicePanelModes" /* 11840 */;
-import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE" /* 11841 */;
+import VoicePanelControlsModes2 from "VoicePanelControlsModes" /* 12061 */;
+import VoicePanelModes2 from "VoicePanelModes" /* 12063 */;
+import MIN_PAN_GESTURE_MOVE from "MIN_PAN_GESTURE_MOVE" /* 12064 */;
 
 const VoicePanelModes = VoicePanelModes2.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsModes2.VoicePanelControlsModes;

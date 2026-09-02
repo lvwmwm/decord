@@ -1,17 +1,17 @@
-// Module ID: 8841
-// Function ID: 8842
+// Module ID: 8856
+// Function ID: 8857
 // Name: GameGenres
-// Dependencies: [32, 676, 4304, 1236, 4755, 500, 4075, 2]
+// Dependencies: [32, 673, 4304, 1233, 4755, 1234, 4074, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 8841 (GameGenres)
-import set from "set" /* 500 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import hooksDefault from "hooks" /* 4075 */;
+// Module 8856 (GameGenres)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import set from "set" /* 1234 */;
+import hooksDefault from "hooks" /* 4074 */;
 import matchPath from "matchPath" /* 4304 */;
 import _httpGetWithCountryCodeQuery from "_httpGetWithCountryCodeQuery" /* 4755 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 
 require = arg1;
 const GameGenres = ME.GameGenres;

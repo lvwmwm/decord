@@ -1,25 +1,25 @@
-// Module ID: 16674
-// Function ID: 16675
+// Module ID: 16909
+// Function ID: 16910
 // Name: NOOP
-// Dependencies: [32, 19, 17, 4494, 8585, 4728, 11840, 11838, 4499, 11841, 21, 3, 4927, 4478, 712, 4217, 1624, 11839, 1628, 5652, 9209, 10991, 16675, 4446, 16668, 4197, 11844, 9648, 16673, 16661, 10730, 9579, 7348, 7796, 5953, 5973, 705, 16676, 5940, 16677, 16678, 9462, 16679, 16681, 16712, 16741, 16745, 16750, 2]
+// Dependencies: [32, 19, 17, 4494, 8600, 4728, 12063, 12061, 4499, 12064, 21, 3, 4927, 4478, 709, 4217, 1623, 12062, 1627, 5660, 9223, 11211, 16910, 4446, 16903, 4197, 12067, 9661, 16908, 16896, 10951, 9592, 7357, 7805, 5961, 5981, 702, 16911, 5948, 16912, 16913, 9475, 16914, 16916, 16947, 16976, 16980, 16985, 2]
 
-// Module 16674 (NOOP)
+// Module 16909 (NOOP)
 import timestampDefault from "timestamp" /* 3 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import CONFIG_NEVER_ANIMATE from "CONFIG_NEVER_ANIMATE" /* 4927 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_7 from "getParticipants" /* 4494 */;
-import closure_8 from "module_8585" /* 8585 */;
+import closure_8 from "module_8600" /* 8600 */;
 import closure_9 from "withEqualityFn" /* 4728 */;
-import VoicePanelModes from "VoicePanelModes" /* 11840 */;
-import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 11838 */;
+import VoicePanelModes from "VoicePanelModes" /* 12063 */;
+import { VoicePanelControlsModes } from "VoicePanelControlsModes" /* 12061 */;
 import { isActivityParticipant } from "ParticipantTypes" /* 4499 */;
-import { POP_RESISTANCE } from "MIN_PAN_GESTURE_MOVE" /* 11841 */;
+import { POP_RESISTANCE } from "MIN_PAN_GESTURE_MOVE" /* 12064 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import isMetaQuest from "isMetaQuest" /* 1624 */;
+import isMetaQuest from "isMetaQuest" /* 1623 */;
 import importDefaultResult from "module_4217" /* 4217 */;
 
 require = arg1;
@@ -47,12 +47,12 @@ function AnimatedWrapper(children) {
   let pIPState;
   let animatedStyle;
   let animatedStyle1;
-  obj = wrapperOffset(9648);
+  obj = wrapperOffset(9661);
   height = obj.useGlobalStatusIndicatorState().height;
   const tmp3 = callback3();
   dependencyMap = tmp3;
   obj1 = connected;
-  const context = connected.useContext(height(11839));
+  const context = connected.useContext(height(12062));
   wrapperDimensions = context.wrapperDimensions;
   connected = context.connected;
   controlsSpecs = context.controlsSpecs;
@@ -70,7 +70,7 @@ function AnimatedWrapper(children) {
   fn.__workletHash = 6243014585347;
   fn.__initData = closure_55;
   derivedValue = obj2.useDerivedValue(fn);
-  let obj3 = wrapperOffset(16673);
+  let obj3 = wrapperOffset(16908);
   pIPState = obj3.usePIPState();
   let obj4 = wrapperOffset(4217);
   const fn2 = function l() {
@@ -138,7 +138,7 @@ function AnimatedWrapper(children) {
       }
     }
   };
-  obj = { cheapWorkletShallowEqual: wrapperOffset(9209).cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(10991), wrapperOffset, getMaxPanelWidth: wrapperOffset(16661).getMaxPanelWidth, getPanelX: wrapperOffset(16661).getPanelX, roundToNearestPixel: height(10730), windowDimensions };
+  obj = { cheapWorkletShallowEqual: wrapperOffset(9223).cheapWorkletShallowEqual, VoicePanelModes: animatedStyle1, wrapperDimensions, updateSharedValueIfChanged: height(11211), wrapperOffset, getMaxPanelWidth: wrapperOffset(16896).getMaxPanelWidth, getPanelX: wrapperOffset(16896).getPanelX, roundToNearestPixel: height(10951), windowDimensions };
   fn3.__closure = obj;
   fn3.__workletHash = 3683279660781;
   fn3.__initData = closure_57;
@@ -219,7 +219,7 @@ function AnimatedWrapper(children) {
       return obj2;
     }
   }
-  obj = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: animatedStyle1, runOnJS: wrapperOffset(4217).runOnJS, updateSourceTrackingView: height(9579).updateSourceTrackingView, withSpring: wrapperOffset(4927).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_17, DRAWER_SIZE_PHYSICS: obj2 };
+  obj = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: animatedStyle1, runOnJS: wrapperOffset(4217).runOnJS, updateSourceTrackingView: height(9592).updateSourceTrackingView, withSpring: wrapperOffset(4927).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_17, DRAWER_SIZE_PHYSICS: obj2 };
   C.__closure = obj;
   C.__workletHash = 16361132737159;
   C.__initData = closure_58;
@@ -266,7 +266,7 @@ function AnimatedWrapper(children) {
   M.__workletHash = 1768699814221;
   M.__initData = closure_60;
   animatedStyle1 = obj8.useAnimatedStyle(M);
-  if (!wrapperOffset(7348).isStable) {
+  if (!wrapperOffset(7357).isStable) {
     let tmpResult = tmp(4217);
     class Y {
       constructor() {
@@ -320,11 +320,11 @@ function AnimatedWrapper(children) {
   const memo = obj1.useMemo(() => ({ wrapperRootStyles: closure_2.wrapper, wrapperTransformStyles: animatedStyle, wrapperSurfaceStyles: animatedStyle1 }), items);
   ({ wrapperRootStyles, wrapperTransformStyles, wrapperSurfaceStyles } = memo);
   obj6 = { style: wrapperRootStyles, pointerEvents: "box-none", children: null };
-  let tmp4Result = tmp4(7796);
+  let tmp4Result = tmp4(7805);
   const obj7 = { style: wrapperTransformStyles, pointerEvents: "box-none", children: null };
-  tmp4Result = tmp4(7796);
+  tmp4Result = tmp4(7805);
   obj8 = { style: wrapperSurfaceStyles, layout: layoutTransition, children: children.children };
-  obj7[2] = callback2(height(7796), obj8);
+  obj7[2] = callback2(height(7805), obj8);
   obj6[2] = callback2(tmp4Result, obj7);
   return callback2(tmp4Result, obj6);
 }

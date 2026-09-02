@@ -1,18 +1,18 @@
-// Module ID: 15516
-// Function ID: 15517
+// Module ID: 15747
+// Function ID: 15748
 // Name: DraggableContainer
-// Dependencies: [19, 7464, 710, 21, 4478, 712, 4217, 10990, 11605, 5652, 4927, 4931, 5068, 14235, 15174, 15517, 15173, 2]
+// Dependencies: [19, 7474, 707, 21, 4478, 709, 4217, 11210, 11828, 5660, 4927, 4931, 5076, 14458, 15403, 15748, 15402, 2]
 // Exports: default
 
-// Module 15516 (DraggableContainer)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 15747 (DraggableContainer)
+import ThemesDefault from "Themes" /* 709 */;
 import _mod4217 from "module_4217" /* 4217 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 15174 */;
-import VisualEffectViewOverrideOverlay_Default from "VisualEffectViewOverrideOverlay_" /* 15517 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 15403 */;
+import VisualEffectViewOverrideOverlay_Default from "VisualEffectViewOverrideOverlay_" /* 15748 */;
 import importAllResult from "noop" /* 19 */;
-import closure_4 from "initialize" /* 7464 */;
-import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES" /* 710 */;
+import closure_4 from "initialize" /* 7474 */;
+import { DEV_WIDGET_SIZE } from "STORAGE_KEY_LOG_DISPATCHES" /* 707 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

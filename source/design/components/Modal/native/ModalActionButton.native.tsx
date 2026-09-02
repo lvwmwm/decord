@@ -1,10 +1,10 @@
-// Module ID: 10733
-// Function ID: 10734
+// Module ID: 10954
+// Function ID: 10955
 // Name: ModalActionButton
 // Dependencies: [19, 17, 21, 4478, 4928, 2]
 // Exports: ModalActionButton
 
-// Module 10733 (ModalActionButton)
+// Module 10954 (ModalActionButton)
 import noopAll from "noop" /* 19 */;
 import Button from "Button" /* 4928 */;
 import { View } from "get ActivityIndicator" /* 17 */;

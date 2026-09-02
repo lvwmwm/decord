@@ -1,12 +1,12 @@
-// Module ID: 6110
-// Function ID: 6111
+// Module ID: 6118
+// Function ID: 6119
 // Name: useGuildShopPreviewVisible
-// Dependencies: [4121, 676, 4298, 1373, 647, 6105, 2]
+// Dependencies: [4120, 673, 4298, 1372, 644, 6113, 2]
 // Exports: useGuildShopPreviewVisible
 
-// Module 6110 (useGuildShopPreviewVisible)
-import closure_2 from "getUncachedChannelPermissions" /* 4121 */;
-import ME from "ME" /* 676 */;
+// Module 6118 (useGuildShopPreviewVisible)
+import closure_2 from "getUncachedChannelPermissions" /* 4120 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 ({ Permissions: c3, GuildFeatures: c4 } = ME);
@@ -14,12 +14,12 @@ let result = require("set").fileFinishedImporting("modules/creator_monetization/
 
 export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(features) {
   const _require = features;
-  const result = _require(4298).useIsDismissibleContentDismissed_UNSAFE(_require(1373).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
+  const result = _require(4298).useIsDismissibleContentDismissed_UNSAFE(_require(1372).DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW);
   const obj = _require(4298);
   const tmp = _require;
   const items = [closure_2];
   let flag;
-  const stateFromStores = _require(647).useStateFromStores(items, () => {
+  const stateFromStores = _require(644).useStateFromStores(items, () => {
     let canResult = null != closure_0;
     if (canResult) {
       canResult = closure_1_2.can(closure_1_3.ADMINISTRATOR, tmp);
@@ -33,16 +33,16 @@ export const useGuildShopPreviewVisible = function useGuildShopPreviewVisible(fe
   if (flag == null) {
     flag = false;
   }
-  const obj2 = _require(647);
+  const obj2 = _require(644);
   let id;
   if (features != null) {
     id = features.id;
   }
   const items1 = [, , ];
   ({ CREATOR_MONETIZABLE: arr2[0], CREATOR_MONETIZABLE_PROVISIONAL: arr2[1], ROLE_SUBSCRIPTIONS_ENABLED: arr2[2] } = constants);
-  const guildEligibleForGuildProducts = tmp(6105).useGuildEligibleForGuildProducts(id);
+  const guildEligibleForGuildProducts = tmp(6113).useGuildEligibleForGuildProducts(id);
   let tmp9 = null != features;
-  const tmpResult = tmp(6105);
+  const tmpResult = tmp(6113);
   if (tmp9) {
     tmp9 = stateFromStores;
   }

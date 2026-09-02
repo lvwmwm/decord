@@ -1,11 +1,11 @@
-// Module ID: 15801
-// Function ID: 15802
+// Module ID: 16032
+// Function ID: 16033
 // Name: useHubUnreadCount
-// Dependencies: [11879, 4493, 589, 11, 11871, 2]
+// Dependencies: [12102, 4493, 586, 11, 12094, 2]
 // Exports: useHubUnreadCount
 
-// Module 15801 (useHubUnreadCount)
-import closure_3 from "isFetching" /* 11879 */;
+// Module 16032 (useHubUnreadCount)
+import closure_3 from "isFetching" /* 12102 */;
 import closure_4 from "generateOldThreadCutoff" /* 4493 */;
 
 const require = arg1;
@@ -15,7 +15,7 @@ export const useHubUnreadCount = function useHubUnreadCount(arg0) {
   const _require = arg0;
   const items = [closure_3, closure_4];
   const items1 = [arg0];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     if (null == callback) {
       return 0;
     } else {

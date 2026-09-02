@@ -1,14 +1,14 @@
-// Module ID: 5030
-// Function ID: 5031
+// Module ID: 5034
+// Function ID: 5035
 // Name: ImageWarningIcon
-// Dependencies: [19, 21, 712, 4196, 5005, 2]
+// Dependencies: [19, 21, 709, 4196, 5006, 2]
 // Exports: ImageWarningIcon
 
-// Module 5030 (ImageWarningIcon)
+// Module 5034 (ImageWarningIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 5005 */;
+import registerAsset from "registerAsset" /* 5006 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

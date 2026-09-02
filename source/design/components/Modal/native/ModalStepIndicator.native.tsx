@@ -1,12 +1,12 @@
-// Module ID: 13818
-// Function ID: 13819
+// Module ID: 14041
+// Function ID: 14042
 // Name: StepPill
-// Dependencies: [19, 17, 21, 4478, 712, 4217, 4197, 4927, 1236, 2011, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4217, 4197, 4927, 1233, 2010, 2]
 // Exports: ModalStepIndicator
 
-// Module 13818 (StepPill)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import messagesProxyDefault from "messagesProxy" /* 2011 */;
+// Module 14041 (StepPill)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import messagesProxyDefault from "messagesProxy" /* 2010 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

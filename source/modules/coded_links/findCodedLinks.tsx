@@ -1,15 +1,15 @@
 // Module ID: 4461
 // Function ID: 4462
 // Name: getPathsFromURL
-// Dependencies: [4462, 676, 678, 4465, 1488, 4466, 4467, 4393, 7633, 4463, 7480, 9287, 8610, 7435, 5398, 2]
+// Dependencies: [4462, 673, 675, 4465, 1487, 4466, 4467, 4393, 7643, 4463, 7490, 9300, 8625, 7445, 5406, 2]
 // Exports: default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, remainingPathFromDiscordHostMatch
 
 // Module 4461 (getPathsFromURL)
-import Url from "Url" /* 1488 */;
+import Url from "Url" /* 1487 */;
 import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 4467 */;
 import closure_3 from "updateInvite" /* 4462 */;
-import { PRIMARY_DOMAIN } from "ME" /* 676 */;
-import { CollectibleShopTab } from "items" /* 678 */;
+import { PRIMARY_DOMAIN } from "ME" /* 673 */;
+import { CollectibleShopTab } from "items" /* 675 */;
 import importDefaultResult from "set" /* 4465 */;
 
 require = arg1;

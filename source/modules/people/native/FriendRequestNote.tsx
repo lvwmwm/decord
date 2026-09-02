@@ -1,16 +1,16 @@
-// Module ID: 12608
-// Function ID: 12609
+// Module ID: 12832
+// Function ID: 12833
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4130, 676, 21, 4478, 712, 12609, 589, 12610, 4474, 4928, 7743, 1236, 2]
+// Dependencies: [32, 19, 17, 4130, 673, 21, 4478, 709, 12833, 586, 12834, 4474, 4928, 7752, 1233, 2]
 // Exports: default
 
-// Module 12608 (FriendRequestNote)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12832 (FriendRequestNote)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import closure_6 from "markAllUserIdListsStale" /* 4130 */;
-import { RelationshipTypes } from "ME" /* 676 */;
+import { RelationshipTypes } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

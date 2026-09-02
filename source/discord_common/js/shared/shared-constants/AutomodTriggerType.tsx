@@ -1,9 +1,9 @@
-// Module ID: 11436
-// Function ID: 11437
+// Module ID: 11659
+// Function ID: 11660
 // Name: AutomodTriggerType
 // Dependencies: [2]
 
-// Module 11436 (AutomodTriggerType)
+// Module 11659 (AutomodTriggerType)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodTriggerType.tsx");

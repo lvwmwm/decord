@@ -1,18 +1,18 @@
-// Module ID: 13390
-// Function ID: 13391
+// Module ID: 13613
+// Function ID: 13614
 // Name: getUserCalloutRowText
-// Dependencies: [19, 17, 1387, 1922, 13391, 676, 21, 4478, 712, 4474, 4673, 1236, 589, 1471, 1297, 11398, 10648, 4438, 4433, 698, 5989, 11011, 5992, 5599, 4928, 4445, 13392, 4491, 2]
+// Dependencies: [19, 17, 1386, 1921, 13614, 673, 21, 4478, 709, 4474, 4673, 1233, 586, 1470, 1296, 11621, 10869, 4438, 4433, 695, 5997, 11231, 6000, 5607, 4928, 4445, 13615, 4491, 2]
 // Exports: default
 
-// Module 13390 (getUserCalloutRowText)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 13613 (getUserCalloutRowText)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import GdmWarningMedium from "GdmWarningMedium" /* 13391 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import GdmWarningMedium from "GdmWarningMedium" /* 13614 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -73,28 +73,28 @@ function getUserCalloutRowText(arg0) {
 function UserCalloutAvatars(userIds) {
   userIds = userIds.userIds;
   let REFRESH_MEDIUM_32 = dependencyMap;
-  let obj = userIds(589);
+  let obj = userIds(586);
   const items = [closure_7];
   const items1 = [userIds];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => userIds.map((arg0) => user.getUser(arg0)), items1);
-  let found = stateFromStoresArray.filter(userIds(1471).isNotNullish);
+  let found = stateFromStoresArray.filter(userIds(1470).isNotNullish);
   if (1 === userIds.length) {
     if (null != closure_7.getUser(userIds[0])) {
       obj = { user: null, guildId: null, size: null, "aria-hidden": true };
       found = found[0];
       obj[0] = found;
       obj[1] = userIds.guildId;
-      REFRESH_MEDIUM_32 = tmp(1297).AvatarSizes.REFRESH_MEDIUM_32;
+      REFRESH_MEDIUM_32 = tmp(1296).AvatarSizes.REFRESH_MEDIUM_32;
       obj[2] = REFRESH_MEDIUM_32;
-      let tmp6 = callback(tmp(1297).Avatar, obj);
+      let tmp6 = callback(tmp(1296).Avatar, obj);
     } else {
-      tmp6 = callback(tmp(11398).UserIcon, {});
+      tmp6 = callback(tmp(11621).UserIcon, {});
     }
   } else {
     obj = { users: null, size: null };
     obj[0] = found;
-    obj[1] = tmp(1297).AvatarSizes.REFRESH_MEDIUM_32;
-    return callback(tmp(10648).FacepileGroupDMAvatar, obj);
+    obj[1] = tmp(1296).AvatarSizes.REFRESH_MEDIUM_32;
+    return callback(tmp(10869).FacepileGroupDMAvatar, obj);
   }
 }
 function BlockedUserInGDMDescription(arg0) {

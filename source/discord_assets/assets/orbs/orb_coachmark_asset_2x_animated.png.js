@@ -1,9 +1,9 @@
-// Module ID: 15431
-// Function ID: 15432
+// Module ID: 15661
+// Function ID: 15662
 // Name: metadata
 // Dependencies: [2]
 
-// Module 15431 (metadata)
+// Module 15661 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/orbs/orb_coachmark_asset_2x_animated.png.js");

@@ -1,14 +1,14 @@
-// Module ID: 7524
-// Function ID: 7525
+// Module ID: 7534
+// Function ID: 7535
 // Name: handleInit
-// Dependencies: [32, 6127, 1981, 7266, 589, 709, 2]
+// Dependencies: [32, 6135, 1980, 7275, 586, 706, 2]
 
-// Module 7524 (handleInit)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 7534 (handleInit)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_2 from "_slicedToArray" /* 32 */;
-import closure_3 from "handlePermissionsChange" /* 6127 */;
-import closure_4 from "handleConnectionOpen" /* 1981 */;
+import closure_3 from "handlePermissionsChange" /* 6135 */;
+import closure_4 from "handleConnectionOpen" /* 1980 */;
 
 const require = arg1;
 function handleInit() {
@@ -81,8 +81,8 @@ function handleSetActiveCommand(arg0) {
       obj[5] = query;
       obj[6] = searchResultsPosition;
       obj[7] = source;
-      obj(7266).trackCommandSelected(obj);
-      const obj3 = obj(7266);
+      obj(7275).trackCommandSelected(obj);
+      const obj3 = obj(7275);
     }
     return true;
   }

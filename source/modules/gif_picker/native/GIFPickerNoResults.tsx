@@ -1,10 +1,10 @@
-// Module ID: 10369
-// Function ID: 10370
-// Dependencies: [19, 17, 676, 21, 4478, 712, 10354, 9155, 1236, 9159, 5624, 1297, 2]
+// Module ID: 10391
+// Function ID: 10392
+// Dependencies: [19, 17, 673, 21, 4478, 709, 10376, 9169, 1233, 9173, 5632, 1296, 2]
 
-// Module 10369
-import ThemesDefault from "Themes" /* 712 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10354 */;
+// Module 10391
+import ThemesDefault from "Themes" /* 709 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10376 */;
 import importAllResult from "noop" /* 19 */;
 import { ScrollView } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -26,18 +26,18 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
   safeAreaBottomKeyboardAware = useExpressionPickerInsetsDefault({ hasCategories: false }).safeAreaBottomKeyboardAware;
   const items = [safeAreaBottomKeyboardAware];
   const memo = importAllResult.useMemo(() => ({ paddingBottom: safeAreaBottomKeyboardAware, flex: 1 }), items);
-  let obj = safeAreaBottomKeyboardAware(9155);
+  let obj = safeAreaBottomKeyboardAware(9169);
   const searchEmptySource = obj.useSearchEmptySource();
   if (inActionSheet.categoryType === GIFPickerResultTypes.FAVORITES) {
-    const intl2 = tmp4(1236).intl;
-    let stringResult = intl2.string(tmp4(1236).t.ZH4o6l);
+    const intl2 = tmp4(1233).intl;
+    let stringResult = intl2.string(tmp4(1233).t.ZH4o6l);
   } else {
-    const intl = tmp4(1236).intl;
-    stringResult = intl.string(tmp4(1236).t["5dX4UM"]);
+    const intl = tmp4(1233).intl;
+    stringResult = intl.string(tmp4(1233).t["5dX4UM"]);
   }
-  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(9159).useModalDismissGuardRefreshControl();
+  const modalDismissGuardRefreshControl = safeAreaBottomKeyboardAware(9173).useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(5624).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(5632).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -48,7 +48,7 @@ const memoResult = importAllResult.memo(function GIFPickerNoResults(inActionShee
   }
   obj[2] = tmp9;
   obj = { source: searchEmptySource, body: stringResult, bodyStyle: tmp.emptyStateBody, containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateImage };
-  obj[3] = jsx(safeAreaBottomKeyboardAware(1297).RefreshEmptyState, { source: searchEmptySource, body: stringResult, bodyStyle: tmp.emptyStateBody, containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateImage });
+  obj[3] = jsx(safeAreaBottomKeyboardAware(1296).RefreshEmptyState, { source: searchEmptySource, body: stringResult, bodyStyle: tmp.emptyStateBody, containerStyle: tmp.emptyStateContainer, imageStyle: tmp.emptyStateImage });
   return <BottomSheetScrollView source={searchEmptySource} body={stringResult} bodyStyle={tmp.emptyStateBody} containerStyle={tmp.emptyStateContainer} imageStyle={tmp.emptyStateImage} />;
 });
 const result = require("set").fileFinishedImporting("modules/gif_picker/native/GIFPickerNoResults.tsx");

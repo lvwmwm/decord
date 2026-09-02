@@ -1,14 +1,14 @@
-// Module ID: 7390
-// Function ID: 7391
+// Module ID: 7399
+// Function ID: 7400
 // Name: set
-// Dependencies: [32, 1218, 3, 1973, 1957, 709, 7391, 2]
+// Dependencies: [32, 1215, 3, 1972, 1956, 706, 7400, 2]
 
-// Module 7390 (set)
+// Module 7399 (set)
 import timestampDefault from "timestamp" /* 3 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import databaseNameDefault from "databaseName" /* 1973 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import databaseNameDefault from "databaseName" /* 1972 */;
 import closure_3 from "_slicedToArray" /* 32 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
 import set from "set" /* 2 */;
 
 const require = arg1;
@@ -72,7 +72,7 @@ prototype["executeModules"] = function executeModules(type, databaseResult) {
   if (null != value) {
     if (0 !== value.length) {
       if (null != databaseResult) {
-        if (stateResult === _require(1957).DatabaseState.Open) {
+        if (stateResult === _require(1956).DatabaseState.Open) {
           let combined = null;
           if (!set.has(type.type)) {
             const _HermesInternal2 = HermesInternal;
@@ -139,7 +139,7 @@ AppDatabaseManager["register"] = function register(arg0, arr) {
     return items;
   })), () => {
 
-  }, _require(709).DispatchBand.Database);
+  }, _require(706).DispatchBand.Database);
   const fromEntriesResult = Object.fromEntries(arr.map((arg0) => {
     const items = [arg0, closure_0];
     return items;

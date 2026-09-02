@@ -1,15 +1,15 @@
-// Module ID: 7953
-// Function ID: 7954
+// Module ID: 7962
+// Function ID: 7963
 // Name: createInGameMessageNuxSystemMessage
-// Dependencies: [4519, 676, 7862, 7869, 7871, 1995, 1236, 7873, 2]
+// Dependencies: [4519, 673, 7871, 7878, 7880, 1994, 1233, 7882, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 7953 (createInGameMessageNuxSystemMessage)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import resultDefault from "result" /* 7862 */;
-import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7869 */;
+// Module 7962 (createInGameMessageNuxSystemMessage)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import resultDefault from "result" /* 7871 */;
+import getMessageAuthorWithProcessedColor from "getMessageAuthorWithProcessedColor" /* 7878 */;
 import closure_3 from "addApplication" /* 4519 */;
-import { HelpdeskArticles } from "ME" /* 676 */;
+import { HelpdeskArticles } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/messages/native/renderer/system_messages/InGameMessageNuxSystemMessage.tsx");
@@ -33,16 +33,16 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     obj[0] = message;
     obj[1] = messageAuthorWithProcessedColor;
     obj[2] = roleStyle;
-    obj[1] = tmp(7871)(obj);
+    obj[1] = tmp(7880)(obj);
     obj[2] = application.name;
     obj1 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
-    obj1[1] = tmp(1995).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
+    obj1[1] = tmp(1994).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
     obj1[2] = tmp3.linkColor;
     obj[3] = obj1;
     const obj2 = { content: null };
     const intl = getSystemLocale.intl;
     obj2[0] = intl.formatToParts(getSystemLocale.t["92erOB"], obj);
-    const merged = Object.assign(tmp(7873)(message));
+    const merged = Object.assign(tmp(7882)(message));
     return obj2;
   }
   tmp3 = resultDefault(theme);

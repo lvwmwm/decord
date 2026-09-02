@@ -1,8 +1,8 @@
-// Module ID: 16265
-// Function ID: 16266
-// Dependencies: [19, 17, 7622, 21, 4478, 4474, 2]
+// Module ID: 16497
+// Function ID: 16498
+// Dependencies: [19, 17, 7632, 21, 4478, 4474, 2]
 
-// Module 16265
+// Module 16497
 import Text from "Text" /* 4474 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

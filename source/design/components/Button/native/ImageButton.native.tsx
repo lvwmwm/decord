@@ -1,10 +1,10 @@
-// Module ID: 9981
-// Function ID: 9982
+// Module ID: 10003
+// Function ID: 10004
 // Name: ImageButton
-// Dependencies: [19, 17, 21, 4478, 4933, 712, 4934, 4217, 4927, 4931, 4936, 8007, 4474, 2]
+// Dependencies: [19, 17, 21, 4478, 4933, 709, 4934, 4217, 4927, 4931, 4936, 8016, 4474, 2]
 
-// Module 9981 (ImageButton)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 10003 (ImageButton)
+import ThemesDefault from "Themes" /* 709 */;
 import MINIMUM_HIT_AREA from "MINIMUM_HIT_AREA" /* 4933 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;

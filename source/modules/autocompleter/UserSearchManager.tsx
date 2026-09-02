@@ -1,22 +1,22 @@
-// Module ID: 9928
-// Function ID: 9929
+// Module ID: 9950
+// Function ID: 9951
 // Name: getTransformedUser
-// Dependencies: [1391, 1935, 1387, 1992, 4130, 1922, 676, 4322, 1399, 514, 5486, 9929, 1471, 1208, 12, 11, 2]
+// Dependencies: [1390, 1934, 1386, 1991, 4130, 1921, 673, 4322, 1398, 511, 5494, 9951, 1470, 1205, 12, 11, 2]
 
-// Module 9928 (getTransformedUser)
+// Module 9950 (getTransformedUser)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
-import _modDef1208 from "module_1208" /* 1208 */;
-import createChannelRecord from "createChannelRecord" /* 1391 */;
-import hasFlagAll from "hasFlag" /* 1399 */;
-import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1471 */;
-import initializeDefault from "initialize" /* 5486 */;
-import UserSearchWorkerManager from "UserSearchWorkerManager" /* 9929 */;
-import closure_5 from "createdAt" /* 1935 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "trackCommunicationDisabled" /* 1992 */;
+import ME from "ME" /* 673 */;
+import _modDef1205 from "module_1205" /* 1205 */;
+import createChannelRecord from "createChannelRecord" /* 1390 */;
+import hasFlagAll from "hasFlag" /* 1398 */;
+import isDiscordFrontendDevelopment from "isDiscordFrontendDevelopment" /* 1470 */;
+import initializeDefault from "initialize" /* 5494 */;
+import UserSearchWorkerManager from "UserSearchWorkerManager" /* 9951 */;
+import closure_5 from "createdAt" /* 1934 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_7 from "trackCommunicationDisabled" /* 1991 */;
 import closure_8 from "markAllUserIdListsStale" /* 4130 */;
-import closure_9 from "mergeGuildAvatar" /* 1922 */;
+import closure_9 from "mergeGuildAvatar" /* 1921 */;
 
 function getTransformedUser(author) {
   if (null != author) {
@@ -925,7 +925,7 @@ prototype2["updateUsers"] = function updateUsers(arr) {
       if (null == id) {
         let tmp20 = importDefault;
         let tmp21 = dependencyMap;
-        let obj3 = _modDef1208;
+        let obj3 = _modDef1205;
         let obj = { action: null, userFields: null };
         obj[0] = arg1;
         obj = { userIsNull: null, idIsNull: true, usernameIsNull: null, isBot: null, isFriend: null, isProvisional: null, globalNameIsNull: null, usersArrayLength: null };
@@ -1013,7 +1013,7 @@ prototype2["getUserSearchContext"] = function getUserSearchContext(handleUserSea
       }
     };
     obj._worker = _worker;
-    obj._uuid = obj(514).v4();
+    obj._uuid = obj(511).v4();
     obj._callback = handleUserSearchResults;
     obj._limit = num;
     obj._currentQuery = null;

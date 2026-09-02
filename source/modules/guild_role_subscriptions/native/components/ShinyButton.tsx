@@ -1,14 +1,14 @@
-// Module ID: 9138
-// Function ID: 9139
+// Module ID: 9152
+// Function ID: 9153
 // Name: ShinyButton
-// Dependencies: [19, 21, 4478, 712, 4929, 1297, 9139, 2]
+// Dependencies: [19, 21, 4478, 709, 4929, 1296, 9153, 2]
 // Exports: default
 
-// Module 9138 (ShinyButton)
+// Module 9152 (ShinyButton)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import CollapsingText from "CollapsingText" /* 4929 */;
-import registerAssetDefault from "registerAsset" /* 9139 */;
+import registerAssetDefault from "registerAsset" /* 9153 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -37,7 +37,7 @@ export default function ShinyButton(style) {
   let tmp3Result;
   if (!loading) {
     obj = { size: null, source: null, style: null };
-    obj[0] = tmp4(1297).Icon.Sizes.REFRESH_SMALL_16;
+    obj[0] = tmp4(1296).Icon.Sizes.REFRESH_SMALL_16;
     obj[1] = registerAssetDefault;
     const items1 = [tmp2.sparkleIcon, ];
     if (disabled) {
@@ -45,7 +45,7 @@ export default function ShinyButton(style) {
     }
     items1[1] = disabled;
     obj[2] = items1;
-    tmp3Result = tmp3(tmp4(1297).Icon, obj);
+    tmp3Result = tmp3(tmp4(1296).Icon, obj);
   }
   obj[4] = tmp3Result;
   const merged1 = Object.assign(merged);

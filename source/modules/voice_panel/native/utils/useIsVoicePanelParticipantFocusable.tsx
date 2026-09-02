@@ -1,11 +1,11 @@
-// Module ID: 16662
-// Function ID: 16663
+// Module ID: 16897
+// Function ID: 16898
 // Name: isVoicePanelParticipantFocusable
-// Dependencies: [1386, 4494, 4500, 4529, 4499, 9591, 1471, 589, 2]
+// Dependencies: [1385, 4494, 4500, 4529, 4499, 9604, 1470, 586, 2]
 // Exports: default
 
-// Module 16662 (isVoicePanelParticipantFocusable)
-import closure_2 from "participantFromServer" /* 1386 */;
+// Module 16897 (isVoicePanelParticipantFocusable)
+import closure_2 from "participantFromServer" /* 1385 */;
 import closure_3 from "getParticipants" /* 4494 */;
 import closure_4 from "reset" /* 4500 */;
 import closure_5 from "_detectH265HardwareDecode" /* 4529 */;
@@ -46,10 +46,10 @@ function isVoicePanelParticipantFocusable(sharedValue1, closure_1, id2, arg3, cl
       if (callback2(participant)) {
         let result = null != obj3.getActiveStreamForUser(participant.user.id, sharedValue1);
       } else if (callback3(participant)) {
-        let tmp4Result = tmp4(9591);
+        let tmp4Result = tmp4(9604);
         result = tmp4Result.canRenderParticipantVideo(participant, tmp);
       } else {
-        tmp4Result = tmp4(1471);
+        tmp4Result = tmp4(1470);
         tmp4Result.assertNever(participant);
       }
       return result;
@@ -64,6 +64,6 @@ export default function useIsVoicePanelParticipantFocusable(arg0, arg1, arg2) {
   dependencyMap = arg1;
   closure_2 = arg2;
   const items = [closure_3, closure_5, closure_2, closure_4];
-  return _require(589).useStateFromStores(items, () => closure_1_9(closure_0, closure_1, closure_2, closure_1_3, closure_1_5, closure_2, closure_1_4));
+  return _require(586).useStateFromStores(items, () => closure_1_9(closure_0, closure_1, closure_2, closure_1_3, closure_1_5, closure_2, closure_1_4));
 };
 export { isVoicePanelParticipantFocusable };

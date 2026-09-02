@@ -1,20 +1,20 @@
-// Module ID: 12299
-// Function ID: 12300
+// Module ID: 12523
+// Function ID: 12524
 // Name: useTrackThreadBrowserTab
-// Dependencies: [32, 19, 12300, 1387, 4121, 4493, 5449, 7510, 4123, 505, 7525, 589, 12, 1471, 11, 7509, 7640, 2]
+// Dependencies: [32, 19, 12524, 1386, 4120, 4493, 5457, 7520, 4122, 502, 7535, 586, 12, 1470, 11, 7519, 7649, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 12299 (useTrackThreadBrowserTab)
+// Module 12523 (useTrackThreadBrowserTab)
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
-import { useShouldShowResolvedFlagsForChannel as closure_5 } from "useReportToModChannelFiltersStore" /* 12300 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "getUncachedChannelPermissions" /* 4121 */;
+import { useShouldShowResolvedFlagsForChannel as closure_5 } from "useReportToModChannelFiltersStore" /* 12524 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_7 from "getUncachedChannelPermissions" /* 4120 */;
 import closure_8 from "generateOldThreadCutoff" /* 4493 */;
-import closure_9 from "handleThreadCreateOrUpdate" /* 5449 */;
-import closure_10 from "listKey" /* 7510 */;
-import closure_11 from "storeThread" /* 4123 */;
-import { Permissions } from "sum" /* 505 */;
+import closure_9 from "handleThreadCreateOrUpdate" /* 5457 */;
+import closure_10 from "listKey" /* 7520 */;
+import closure_11 from "storeThread" /* 4122 */;
+import { Permissions } from "sum" /* 502 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/threads/ThreadBrowserHooks.tsx");
@@ -29,7 +29,7 @@ export const useActiveThreadIds = function useActiveThreadIds(arg0) {
   const items = [closure_7, closure_9, closure_6];
   const items1 = [, ];
   ({ guild_id: arr2[0], id: arr2[1] } = arg0);
-  const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = _require(586).useStateFromStoresArray(items, () => {
     const tmp = stateFromStoresArray(closure_1_2[12]);
     const values = stateFromStoresArray(closure_1_2[12])(closure_1_9.getThreadsForParent(memo.guild_id, memo.id)).values();
     const mapped = values.map((id) => channel.getChannel(id.id));
@@ -50,7 +50,7 @@ export const useActiveThreadIds = function useActiveThreadIds(arg0) {
 };
 export const useActiveThreads = function useActiveThreads(channel) {
   let memo = channel;
-  let obj = memo(589);
+  let obj = memo(586);
   const items = [closure_7, closure_9, closure_6];
   const items1 = [, ];
   ({ guild_id: arr2[0], id: arr2[1] } = channel);
@@ -74,7 +74,7 @@ export const useActiveThreads = function useActiveThreads(channel) {
   }, items2);
   const items3 = [closure_11];
   const items4 = [memo];
-  const tmp3 = callback(memo(589).useStateFromStores(items3, () => stateFromStoresArray(closure_1_2[12]).partition(memo, (id) => closure_11.hasJoined(id)), items4, memo(589).statesWillNeverBeEqual), 2);
+  const tmp3 = callback(memo(586).useStateFromStores(items3, () => stateFromStoresArray(closure_1_2[12]).partition(memo, (id) => closure_11.hasJoined(id)), items4, memo(586).statesWillNeverBeEqual), 2);
   obj = { joinedThreadIds: tmp3[0], unjoinedThreadIds: tmp3[1] };
   return obj;
 };
@@ -82,7 +82,7 @@ export const useActiveGuildThreads = function useActiveGuildThreads(arg0) {
   const _require = arg0;
   const items = [closure_7, closure_9, closure_6];
   const items1 = [arg0];
-  const stateFromStoresArray = _require(589).useStateFromStoresArray(items, () => {
+  const stateFromStoresArray = _require(586).useStateFromStoresArray(items, () => {
     const tmp = stateFromStoresArray(closure_1_2[12]);
     const values = stateFromStoresArray(closure_1_2[12])(closure_1_9.getThreadsForGuild(callback)).values();
     const mapped = values.map((arg0) => callback(table[12]).values(arg0));
@@ -111,7 +111,7 @@ export const useArchivedThreads = function useArchivedThreads(channel, LATEST_AC
   const result = channel.isModeratorReportChannel();
   const React = result;
   showResolvedFlags = showResolvedFlags(channel.id).showResolvedFlags;
-  let obj = _require(589);
+  let obj = _require(586);
   const items = [closure_10];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => ({ loading: closure_1_10.isLoading(user.id, closure_1, closure_2, closure_3), isInitialLoad: closure_1_10.getIsInitialLoad(user.id, closure_1, closure_2, closure_3), canLoadMore: closure_1_10.getCanLoadMore(user.id, closure_1, closure_2, closure_3), nextOffset: closure_1_10.getNextOffset(user.id, closure_1, closure_2, closure_3) }));
   ({ loading, nextOffset } = stateFromStoresObject);
@@ -153,7 +153,7 @@ export const useArchivedThreads = function useArchivedThreads(channel, LATEST_AC
     LATEST_ACTIVITY(loadMore[16]).resort(user.id);
   }, items3);
   obj = {
-    threadIds: _require(589).useStateFromStoresArray(items4, () => {
+    threadIds: _require(586).useStateFromStoresArray(items4, () => {
       const tmp = LATEST_ACTIVITY(loadMore[12]);
       const tmpResult = LATEST_ACTIVITY(loadMore[12])(closure_1_10.getThreads(user.id, LATEST_ACTIVITY, loadMore, closure_3));
       return LATEST_ACTIVITY(loadMore[12])(closure_1_10.getThreads(user.id, LATEST_ACTIVITY, loadMore, closure_3)).filter((arg0) => {

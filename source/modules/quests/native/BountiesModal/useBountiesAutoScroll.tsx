@@ -1,14 +1,14 @@
-// Module ID: 14617
-// Function ID: 14618
+// Module ID: 14841
+// Function ID: 14842
 // Name: set
-// Dependencies: [32, 19, 17, 5387, 11119, 14616, 4217, 4479, 4482, 4443, 2]
+// Dependencies: [32, 19, 17, 5395, 11340, 14840, 4217, 4479, 4482, 4443, 2]
 // Exports: clearDismissedScrollAffordanceBountyIds, useBountiesAutoScroll
 
-// Module 14617 (set)
+// Module 14841 (set)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
 import { AppState } from "get ActivityIndicator" /* 17 */;
-import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5387 */;
+import { QuestsExperimentLocations } from "QuestsExperimentLocations" /* 5395 */;
 import set from "set" /* 2 */;
 
 const require = arg1;

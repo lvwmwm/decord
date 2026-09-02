@@ -1,12 +1,12 @@
-// Module ID: 7292
-// Function ID: 7293
+// Module ID: 7301
+// Function ID: 7302
 // Name: fromServer
-// Dependencies: [1949, 1950, 2]
+// Dependencies: [1948, 1949, 2]
 // Exports: isAvatarDecorationRecord
 
-// Module 7292 (fromServer)
-import fromServerDefault from "fromServer" /* 1949 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 1950 */;
+// Module 7301 (fromServer)
+import fromServerDefault from "fromServer" /* 1948 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 1949 */;
 
 require = arg1;
 fromServerDefault;

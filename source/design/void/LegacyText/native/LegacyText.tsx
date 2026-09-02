@@ -1,9 +1,9 @@
-// Module ID: 8391
-// Function ID: 8392
-// Dependencies: [19, 17, 676, 21, 4478, 8392, 2]
+// Module ID: 8400
+// Function ID: 8401
+// Dependencies: [19, 17, 673, 21, 4478, 8401, 2]
 
-// Module 8391
-import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8392 */;
+// Module 8400
+import useLegacyTextMigrationHighlight from "useLegacyTextMigrationHighlight" /* 8401 */;
 import { Text } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;

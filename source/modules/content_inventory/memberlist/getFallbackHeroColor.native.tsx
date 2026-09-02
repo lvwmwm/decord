@@ -1,12 +1,12 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8052
+// Function ID: 8053
 // Name: getFallbackHeroColor
-// Dependencies: [712, 2]
+// Dependencies: [709, 2]
 // Exports: getFallbackHeroColor
 
-// Module 8043 (getFallbackHeroColor)
+// Module 8052 (getFallbackHeroColor)
 import set from "set" /* 2 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 
 const result = set.fileFinishedImporting("modules/content_inventory/memberlist/getFallbackHeroColor.native.tsx");
 

@@ -1,14 +1,14 @@
-// Module ID: 6931
-// Function ID: 6932
+// Module ID: 6940
+// Function ID: 6941
 // Name: QrSuccessSpotIllustration
-// Dependencies: [21, 5493, 6932, 2]
+// Dependencies: [21, 5501, 6941, 2]
 // Exports: QrSuccessSpotIllustration
 
-// Module 6931 (QrSuccessSpotIllustration)
+// Module 6940 (QrSuccessSpotIllustration)
 import set from "set" /* 2 */;
 import jsxProd from "jsxProd" /* 21 */;
-import preloadDefault from "preload" /* 5493 */;
-import metadataDefault from "metadata" /* 6932 */;
+import preloadDefault from "preload" /* 5501 */;
+import metadataDefault from "metadata" /* 6941 */;
 
 const jsx = jsxProd.jsx;
 const result = set.fileFinishedImporting("design/components/mana-assets/native/generated/QrSuccessSpotIllustration.native.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 7401
-// Function ID: 7402
+// Module ID: 7410
+// Function ID: 7411
 // Name: getCommittedVersions
-// Dependencies: [5, 4299, 3, 7394, 12, 1956, 687, 2]
+// Dependencies: [5, 4299, 3, 7403, 12, 1955, 684, 2]
 
-// Module 7401 (getCommittedVersions)
+// Module 7410 (getCommittedVersions)
 import timestampDefault from "timestamp" /* 3 */;
 import applyDefault from "apply" /* 12 */;
-import setDefault from "set" /* 687 */;
-import itemsDefault from "items" /* 1956 */;
+import setDefault from "set" /* 684 */;
+import itemsDefault from "items" /* 1955 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import importDefaultResult from "handleConnectionOpen" /* 4299 */;
-import isCacheEnabled from "isCacheEnabled" /* 7394 */;
+import isCacheEnabled from "isCacheEnabled" /* 7403 */;
 
 let obj = arg1;
 let c4 = importDefaultResult;
@@ -43,14 +43,14 @@ class NonGuildVersions {
               const _isNaN = isNaN;
               const _Number = Number;
               if (!isNaN(Number(guildId))) {
-                obj = callback(1956);
+                obj = callback(1955);
                 const result = obj.nonGuildVersionsTransaction(database);
                 obj = { id: "initial_guild_id", versionString: null };
                 obj[1] = guildId;
                 result.put(obj);
               }
             }
-            const result1 = callback(1956).nonGuildVersionsTransaction(database);
+            const result1 = callback(1955).nonGuildVersionsTransaction(database);
             result1.delete("initial_guild_id");
           });
         }
@@ -182,14 +182,14 @@ if (isCacheEnabled.isCacheEnabled()) {
           const _isNaN = isNaN;
           const _Number = Number;
           if (!isNaN(Number(guildId))) {
-            obj = callback(1956);
+            obj = callback(1955);
             const result = obj.nonGuildVersionsTransaction(database);
             obj = { id: "initial_guild_id", versionString: null };
             obj[1] = guildId;
             result.put(obj);
           }
         }
-        const result1 = callback(1956).nonGuildVersionsTransaction(database);
+        const result1 = callback(1955).nonGuildVersionsTransaction(database);
         result1.delete("initial_guild_id");
       });
     }

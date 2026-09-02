@@ -1,12 +1,12 @@
-// Module ID: 8630
-// Function ID: 8631
+// Module ID: 8645
+// Function ID: 8646
 // Name: DEFAULT_UX_VARIATION
-// Dependencies: [8606, 676, 8039, 8619, 698, 2]
+// Dependencies: [8621, 673, 8048, 8634, 695, 2]
 
-// Module 8630 (DEFAULT_UX_VARIATION)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_3 from "filterStaffGuild" /* 8606 */;
-import ME from "ME" /* 676 */;
+// Module 8645 (DEFAULT_UX_VARIATION)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import closure_3 from "filterStaffGuild" /* 8621 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 ({ ChannelTypes: c4, AnalyticEvents: c5 } = ME);

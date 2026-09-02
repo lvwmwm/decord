@@ -1,9 +1,9 @@
-// Module ID: 5572
-// Function ID: 5573
+// Module ID: 5580
+// Function ID: 5581
 // Name: set
 // Dependencies: [2]
 
-// Module 5572 (set)
+// Module 5580 (set)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("lib/spellcheck/fallbackLocales.tsx");

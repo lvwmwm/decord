@@ -1,19 +1,19 @@
-// Module ID: 5354
-// Function ID: 5355
+// Module ID: 5362
+// Function ID: 5363
 // Name: checkIdleAFK
-// Dependencies: [1218, 676, 4542, 500, 4166, 687, 709, 4104, 5355, 636, 589, 2]
+// Dependencies: [1215, 673, 4542, 1234, 4166, 684, 706, 4103, 5363, 633, 586, 2]
 
-// Module 5354 (checkIdleAFK)
-import set from "set" /* 500 */;
-import initializeDefault from "initialize" /* 589 */;
-import debounceDefault from "debounce" /* 636 */;
-import setDefault from "set" /* 687 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import setDefault2 from "set" /* 4104 */;
+// Module 5362 (checkIdleAFK)
+import initializeDefault from "initialize" /* 586 */;
+import debounceDefault from "debounce" /* 633 */;
+import setDefault from "set" /* 684 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import set from "set" /* 1234 */;
+import setDefault2 from "set" /* 4103 */;
 import explicitContentFromProto from "explicitContentFromProto" /* 4166 */;
-import _modDef5355 from "module_5355" /* 5355 */;
-import closure_4 from "fetchFingerprint" /* 1218 */;
-import ME from "ME" /* 676 */;
+import _modDef5363 from "module_5363" /* 5363 */;
+import closure_4 from "fetchFingerprint" /* 1215 */;
+import ME from "ME" /* 673 */;
 import { SpeakingFlags } from "DesktopSources" /* 4542 */;
 
 require = arg1;
@@ -47,14 +47,14 @@ function checkIdleAFK() {
             tmp17 = c12;
           }
           if (!tmp17) {
-            const tmp14Result = tmp14(500);
-            tmp17 = tmp14(500).isAndroid() && c13;
-            const tmp18 = tmp14(500).isAndroid() && c13;
+            const tmp14Result = tmp14(1234);
+            tmp17 = tmp14(1234).isAndroid() && c13;
+            const tmp18 = tmp14(1234).isAndroid() && c13;
           }
           if (!tmp17) {
             if (c10) {
-              tmp28(709).dispatch({ type: "AFK", afk: false });
-              const tmp28Result = tmp28(709);
+              tmp28(706).dispatch({ type: "AFK", afk: false });
+              const tmp28Result = tmp28(706);
             }
           }
         }
@@ -98,7 +98,7 @@ if (require("set").isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(4104).powerMonitor;
+        const powerMonitor2 = tmp(4103).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(arg0) {
@@ -129,7 +129,7 @@ if (require("set").isPlatformEmbedded) {
           }
           checkIdleAFK();
           const _setTimeout = setTimeout;
-          let timerId = setTimeout(checkNativeIdle, 10 * tmp(687).Millis.SECOND);
+          let timerId = setTimeout(checkNativeIdle, 10 * tmp(684).Millis.SECOND);
         }
       }
     }
@@ -144,7 +144,7 @@ if (require("set").isPlatformEmbedded) {
       c11 = true;
       closure_3 = Date.now();
       checkIdleAFK();
-      _modDef5355.disconnect();
+      _modDef5363.disconnect();
     });
     const powerMonitor3 = setDefault2.powerMonitor;
     class IdleStore extends r10079 {

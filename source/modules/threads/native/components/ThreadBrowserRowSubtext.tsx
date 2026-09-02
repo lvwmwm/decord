@@ -1,21 +1,21 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16519
+// Function ID: 16520
 // Name: MessageContent
-// Dependencies: [19, 17, 4470, 1992, 1922, 6151, 676, 505, 21, 4478, 712, 589, 7525, 4957, 5457, 4474, 1236, 4322, 6156, 4746, 11, 1297, 7631, 7870, 2]
+// Dependencies: [19, 17, 4470, 1991, 1921, 6159, 673, 502, 21, 4478, 709, 586, 7535, 4957, 5465, 4474, 1233, 4322, 6164, 4746, 11, 1296, 7641, 7879, 2]
 // Exports: ThreadSubtext
 
-// Module 16287 (MessageContent)
+// Module 16519 (MessageContent)
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import useNullableMessageAuthorDefault from "useNullableMessageAuthor" /* 4746 */;
 import useHasEnhancedRoleColorsDefault from "useHasEnhancedRoleColors" /* 4957 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_6 from "trackCommunicationDisabled" /* 1992 */;
-import closure_7 from "mergeGuildAvatar" /* 1922 */;
-import closure_8 from "updateState" /* 6151 */;
+import closure_6 from "trackCommunicationDisabled" /* 1991 */;
+import closure_7 from "mergeGuildAvatar" /* 1921 */;
+import closure_8 from "updateState" /* 6159 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -27,10 +27,10 @@ function MessageContent(arg0) {
   c3 = undefined;
   c4 = undefined;
   closure_5 = undefined;
-  let obj = message(6156);
+  let obj = message(6164);
   items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
-  obj1 = message(589);
+  obj1 = message(586);
   const items1 = [closure_7];
   const stateFromStores = obj1.useStateFromStores(items1, () => {
     let author = closure_1_7.getUser(message.author.id);
@@ -41,19 +41,19 @@ function MessageContent(arg0) {
   });
   const tmp = callback3();
   const items2 = [closure_5];
-  importDefault = message(589).useStateFromStores(items2, () => roleStyle.roleStyle);
-  const obj3 = message(589);
+  importDefault = message(586).useStateFromStores(items2, () => roleStyle.roleStyle);
+  const obj3 = message(586);
   ({ nick: c2, colorString: c3, colorStrings: c4 } = useNullableMessageAuthorDefault(message));
   let tmp4 = useNullableMessageAuthorDefault(message);
   const extractTimestampResult = DISCORD_EPOCHDefault.extractTimestamp(message.id);
   const obj4 = DISCORD_EPOCHDefault;
-  const timestampString = message(7525).getTimestampString(extractTimestampResult);
-  const obj5 = message(7525);
-  const timestampAccessibilityLabel = message(7525).getTimestampAccessibilityLabel(extractTimestampResult);
+  const timestampString = message(7535).getTimestampString(extractTimestampResult);
+  const obj5 = message(7535);
+  const timestampAccessibilityLabel = message(7535).getTimestampAccessibilityLabel(extractTimestampResult);
   closure_5 = useHasEnhancedRoleColorsDefault(thread.guild_id, stateFromStores.id);
   obj = { user: stateFromStores, timestamp: timestampString, accessibilityLabel: timestampAccessibilityLabel, children: null };
   obj = { lineClamp: 1, ellipsizeMode: "tail", lineBreakMode: "tail", style: tmp.subtextContent, variant: "text-sm/medium", color: "text-default", children: null };
-  const intl = message(1236).intl;
+  const intl = message(1233).intl;
   obj1 = {
     usernameHook(arg0, arg1) {
       let str = c2;
@@ -79,7 +79,7 @@ function MessageContent(arg0) {
       return closure_1_9(message(_undefined[21]).LegacyText, { children: callback(_undefined[22])(message, { formatInline: true, allowGameMentions: true }).content }, arg1);
     }
   };
-  obj[6] = intl.format(message(1236).t.M79KAH, obj1);
+  obj[6] = intl.format(message(1233).t.M79KAH, obj1);
   obj[3] = callback(message(4474).Text, obj);
   return callback(SubstringRow, obj);
 }
@@ -134,7 +134,7 @@ function Username(usernameColor) {
     }
     return username;
   }, items);
-  let obj = usernameColor(7870);
+  let obj = usernameColor(7879);
   const processColorStringsArray = obj.useProcessColorStringsArray(roleColors);
   let tmp5 = !shouldShowRoleDot;
   if (!shouldShowRoleDot) {
@@ -144,7 +144,7 @@ function Username(usernameColor) {
     obj = { color: null, colors: null, size: "small" };
     obj[0] = roleColor;
     obj[1] = roleColors;
-    shouldShowRoleDot = callback(tmp3(1297).RoleDot, obj);
+    shouldShowRoleDot = callback(tmp3(1296).RoleDot, obj);
   }
   const items1 = [shouldShowRoleDot, ];
   let tmp10;
@@ -260,11 +260,11 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
   thread = thread.thread;
   let id;
   id = thread.id;
-  let obj = id(589);
+  let obj = id(586);
   items = [closure_8];
   const items1 = [id];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_8.getMostRecentMessage(id), items1);
-  const lastMessageTimestamp = id(7525).useLastMessageTimestamp(thread);
+  const lastMessageTimestamp = id(7535).useLastMessageTimestamp(thread);
   if (null != stateFromStores) {
     if (!items.includes(stateFromStores.type)) {
       if (!thread.isArchivedThread()) {
@@ -275,9 +275,9 @@ export const ThreadSubtext = function ThreadSubtext(thread) {
       }
     }
   }
-  let tmpResult = tmp(7525);
+  let tmpResult = tmp(7535);
   const timestampString = tmpResult.getTimestampString(lastMessageTimestamp);
-  tmpResult = tmp(7525);
+  tmpResult = tmp(7535);
   obj = { thread, timestamp: timestampString, accessibilityLabel: tmpResult.getTimestampAccessibilityLabel(lastMessageTimestamp) };
   return callback(closure_14, obj);
 };

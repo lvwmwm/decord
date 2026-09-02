@@ -1,11 +1,11 @@
-// Module ID: 7890
-// Function ID: 7891
+// Module ID: 7899
+// Function ID: 7900
 // Name: useIsCallActive
-// Dependencies: [5222, 4494, 4499, 589, 2]
+// Dependencies: [5230, 4494, 4499, 586, 2]
 // Exports: checkIsCallActive, default, useIsCallActiveNullable
 
-// Module 7890 (useIsCallActive)
-import closure_2 from "callConnect" /* 5222 */;
+// Module 7899 (useIsCallActive)
+import closure_2 from "callConnect" /* 5230 */;
 import closure_3 from "getParticipants" /* 4494 */;
 import { ParticipantTypes } from "ParticipantTypes" /* 4499 */;
 
@@ -17,7 +17,7 @@ export default function useIsCallActive(arg0, arg1) {
   dependencyMap = arg1;
   const items = [closure_2, closure_3];
   const items1 = [arg0, arg1];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let isCallActiveResult = closure_1_2.isCallActive(closure_0, closure_1);
     if (isCallActiveResult) {
       const participants = closure_1_3.getParticipants(closure_0);
@@ -39,7 +39,7 @@ export const useIsCallActiveNullable = function useIsCallActiveNullable(id) {
   dependencyMap = arg1;
   const items = [closure_2, closure_3];
   const items1 = [id, arg1];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
       let isCallActiveResult = closure_1_2.isCallActive(tmp, closure_1);

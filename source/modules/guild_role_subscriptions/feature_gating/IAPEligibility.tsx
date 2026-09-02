@@ -1,12 +1,12 @@
-// Module ID: 5441
-// Function ID: 5442
+// Module ID: 5449
+// Function ID: 5450
 // Name: items
-// Dependencies: [19, 1909, 676, 500, 5442, 647, 2]
+// Dependencies: [19, 1908, 673, 1234, 5450, 644, 2]
 // Exports: canUseRoleSubscriptionIAP, useCanUseRoleSubscriptionIAP
 
-// Module 5441 (items)
+// Module 5449 (items)
 import closure_2 from "noop" /* 19 */;
-import closure_3 from "createGuildRecordFromRust" /* 1909 */;
+import closure_3 from "createGuildRecordFromRust" /* 1908 */;
 
 const require = arg1;
 let c4 = "13.2";
@@ -15,7 +15,7 @@ const result = require("set").fileFinishedImporting("modules/guild_role_subscrip
 
 export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guildId) {
   if (obj.isIOS()) {
-    const str = tmp(5442).getSystemVersion();
+    const str = tmp(5450).getSystemVersion();
     if (null != str) {
       const parts = str.split(".");
       const _Number = Number;
@@ -72,13 +72,13 @@ export const canUseRoleSubscriptionIAP = function canUseRoleSubscriptionIAP(guil
   } else {
     return false;
   }
-  obj = guild(500);
+  obj = guild(1234);
   tmp = guild;
 };
 export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIAP(guildId) {
   const _require = guildId;
   const memo = React.useMemo(() => {
-    const str = guildId(5442).getSystemVersion();
+    const str = guildId(5450).getSystemVersion();
     let tmp = null != str;
     if (tmp) {
       const parts = str.split(".");
@@ -124,7 +124,7 @@ export const useCanUseRoleSubscriptionIAP = function useCanUseRoleSubscriptionIA
     }
     return tmp;
   }, []);
-  let memo1 = React.useMemo(() => guildId(500).isIOS(), []);
+  let memo1 = React.useMemo(() => guildId(1234).isIOS(), []);
   items = [closure_3];
   if (memo1) {
     memo1 = obj.useStateFromStores(items, () => {

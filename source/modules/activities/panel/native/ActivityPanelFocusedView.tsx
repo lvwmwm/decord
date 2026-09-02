@@ -1,20 +1,20 @@
-// Module ID: 16604
-// Function ID: 16605
+// Module ID: 16839
+// Function ID: 16840
 // Name: BaseActivityPanelFocusedView
-// Dependencies: [19, 17, 4470, 1387, 1386, 4506, 9466, 16599, 676, 11840, 21, 4478, 712, 1628, 589, 1493, 16594, 16546, 4217, 4204, 4479, 4927, 4912, 4111, 16596, 16605, 9469, 9604, 2]
+// Dependencies: [19, 17, 4470, 1386, 1385, 4506, 9479, 16834, 673, 12063, 21, 4478, 709, 1627, 586, 1492, 16829, 16781, 4217, 4204, 4479, 4927, 4912, 4110, 16831, 16840, 9482, 9617, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 16604 (BaseActivityPanelFocusedView)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16839 (BaseActivityPanelFocusedView)
+import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import closure_4 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "participantFromServer" /* 1386 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "participantFromServer" /* 1385 */;
 import { ActivityLayoutMode } from "items3" /* 4506 */;
-import ActivityPanelModes from "ActivityPanelModes" /* 9466 */;
-import DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16599 */;
-import { ThemeTypes } from "ME" /* 676 */;
-import { IS_IOS } from "VoicePanelModes" /* 11840 */;
+import ActivityPanelModes from "ActivityPanelModes" /* 9479 */;
+import DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG from "DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG" /* 16834 */;
+import { ThemeTypes } from "ME" /* 673 */;
+import { IS_IOS } from "VoicePanelModes" /* 12063 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -308,7 +308,7 @@ export default memoResult;
 export const useBaseActivityPanelFocusedView = function useBaseActivityPanelFocusedView(context) {
   closure_0 = undefined;
   let isWindowLandscape;
-  const tmp = isWindowLandscape(1628)();
+  const tmp = isWindowLandscape(1627)();
   closure_0 = tmp;
   let obj = importAllResult;
   const wrapperDimensions = importAllResult.useContext(context.context).wrapperDimensions;

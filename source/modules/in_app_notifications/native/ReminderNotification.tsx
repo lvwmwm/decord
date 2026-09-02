@@ -1,23 +1,23 @@
-// Module ID: 10955
-// Function ID: 10956
+// Module ID: 11175
+// Function ID: 11176
 // Name: NotificationAvatar
-// Dependencies: [19, 17, 1387, 1909, 10178, 676, 21, 4478, 1297, 4441, 712, 10177, 10259, 589, 692, 10257, 10190, 10192, 4171, 38, 1236, 4723, 7603, 7604, 698, 10255, 2]
+// Dependencies: [19, 17, 1386, 1908, 10200, 673, 21, 4478, 1296, 4441, 709, 10199, 10281, 586, 689, 10279, 10212, 10214, 4171, 38, 1233, 4723, 7613, 7614, 695, 10277, 2]
 
-// Module 10955 (NotificationAvatar)
+// Module 11175 (NotificationAvatar)
 import _modDef38 from "module_38" /* 38 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+import ThemesDefault from "Themes" /* 709 */;
+import Button from "Button" /* 1296 */;
 import ClockIcon from "ClockIcon" /* 4441 */;
-import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10177 */;
-import NativeMessagePreviewContentDefault from "NativeMessagePreviewContent" /* 10190 */;
-import LocationTextDefault from "LocationText" /* 10257 */;
-import VideoBadge from "VideoBadge" /* 10259 */;
+import isReactionMilestoneNotification from "isReactionMilestoneNotification" /* 10199 */;
+import NativeMessagePreviewContentDefault from "NativeMessagePreviewContent" /* 10212 */;
+import LocationTextDefault from "LocationText" /* 10279 */;
+import VideoBadge from "VideoBadge" /* 10281 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "createGuildRecordFromRust" /* 1909 */;
-import set from "set" /* 10178 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "createGuildRecordFromRust" /* 1908 */;
+import set from "set" /* 10200 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -36,21 +36,21 @@ function NotificationAvatar(arg0) {
 function NotificationBody(channel) {
   channel = channel.channel;
   const message = channel.message;
-  obj = channel(589);
+  obj = channel(586);
   const items = [closure_6];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_6.getGuild(channel.guild_id));
-  obj1 = channel(589);
+  obj1 = channel(586);
   const items1 = [closure_5];
   const stateFromStores1 = obj1.useStateFromStores(items1, () => closure_1_5.getChannel(channel.parent_id));
-  let obj2 = channel(10177);
+  let obj2 = channel(10199);
   const hasPreviewableMedia = obj2.useHasPreviewableMedia(message);
-  const tmp6 = channel.type === channel(692).ChannelTypes.DM;
+  const tmp6 = channel.type === channel(689).ChannelTypes.DM;
   let num = 1;
   if (tmp6) {
     num = closure_8;
   }
   let tmp10 = null;
-  const messagePreviewTextVariant = channel(10177).getMessagePreviewTextVariant();
+  const messagePreviewTextVariant = channel(10199).getMessagePreviewTextVariant();
   if (!tmp6) {
     obj = { channel: null, parentChannel: null, guild: null, author: null };
     obj[0] = channel;
@@ -67,7 +67,7 @@ function NotificationBody(channel) {
       obj[3] = tmp(4171).ChannelListLayoutTypes.COZY;
       obj[4] = messagePreviewTextVariant;
       obj[6] = num;
-      let tmp14 = callback(tmp(10192).ChannelRowPreview, obj);
+      let tmp14 = callback(tmp(10214).ChannelRowPreview, obj);
     }
     obj1 = { children: null };
     items2[1] = tmp14;
@@ -107,8 +107,8 @@ export default importAllResult.memo(function ReminderNotification(notification) 
   const items = [notification];
   const memo = importAllResult.useMemo(() => {
     obj = { type: "simple", text: null };
-    const intl = notification(1236).intl;
-    obj[1] = intl.string(notification(1236).t.Whs8tE);
+    const intl = notification(1233).intl;
+    obj[1] = intl.string(notification(1233).t.Whs8tE);
     return obj;
   }, []);
   const callback = importAllResult.useCallback(() => {
@@ -121,5 +121,5 @@ export default importAllResult.memo(function ReminderNotification(notification) 
     closure_1_1(closure_1_2[24]).track(closure_1_9.FOR_LATER_REMINDER_NOTIFICATION_CLICKED, obj);
   }, items);
   obj = { icon: callback(NotificationAvatar, obj), header: memo, onPress: callback, notification, rightAccessory: callback(closure_16, { message }), children: callback(NotificationBody, { channel, message }) };
-  return callback(notification(10255).NotificationPressable, obj);
+  return callback(notification(10277).NotificationPressable, obj);
 });

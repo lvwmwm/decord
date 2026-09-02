@@ -1,15 +1,15 @@
-// Module ID: 13065
-// Function ID: 13066
+// Module ID: 13287
+// Function ID: 13288
 // Name: useBuyNitroPlanLabelRenderer
-// Dependencies: [19, 17, 1996, 1924, 21, 4478, 712, 4197, 1236, 1897, 4474, 4139, 2]
+// Dependencies: [19, 17, 1995, 1923, 21, 4478, 709, 4197, 1233, 1896, 4474, 4139, 2]
 // Exports: useBuyNitroPlanLabelRenderer
 
-// Module 13065 (useBuyNitroPlanLabelRenderer)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 13287 (useBuyNitroPlanLabelRenderer)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "_getSystemLocale" /* 1996 */;
-import GuildFeatures from "GuildFeatures" /* 1924 */;
+import closure_5 from "_getSystemLocale" /* 1995 */;
+import GuildFeatures from "GuildFeatures" /* 1923 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 

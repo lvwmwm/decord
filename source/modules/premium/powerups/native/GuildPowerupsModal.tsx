@@ -1,11 +1,11 @@
-// Module ID: 12044
-// Function ID: 12045
+// Module ID: 12268
+// Function ID: 12269
 // Name: GuildPowerupsModal
-// Dependencies: [19, 17, 4365, 21, 4478, 712, 4388, 12045, 12055, 12075, 1628, 5953, 12080, 12081, 12110, 4723, 4384, 5502, 1236, 2401, 7607, 5495, 12117, 12119, 12127, 12133, 12143, 12151, 2]
+// Dependencies: [19, 17, 4365, 21, 4478, 709, 4388, 12269, 12279, 12299, 1627, 5961, 12304, 12305, 12334, 4723, 4384, 5510, 1233, 2400, 7617, 5503, 12341, 12343, 12351, 12357, 12367, 12375, 2]
 // Exports: default
 
-// Module 12044 (GuildPowerupsModal)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12268 (GuildPowerupsModal)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
 import BoostedGuildTiers from "BoostedGuildTiers" /* 4365 */;

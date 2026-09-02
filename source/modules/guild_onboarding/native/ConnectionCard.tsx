@@ -1,14 +1,14 @@
-// Module ID: 5951
-// Function ID: 5952
+// Module ID: 5959
+// Function ID: 5960
 // Name: ConnectionCard
-// Dependencies: [19, 5468, 21, 5952, 5969, 2]
+// Dependencies: [19, 5476, 21, 5960, 5977, 2]
 // Exports: default
 
-// Module 5951 (ConnectionCard)
+// Module 5959 (ConnectionCard)
 import noopAll from "noop" /* 19 */;
-import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 5952 */;
-import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 5969 */;
-import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5468 */;
+import ApplicationConnectionCardDefault from "ApplicationConnectionCard" /* 5960 */;
+import ProviderConnectionCardDefault from "ProviderConnectionCard" /* 5977 */;
+import { OnboardingConnectionType } from "serverPromptToClientPrompt" /* 5476 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 noopAll;

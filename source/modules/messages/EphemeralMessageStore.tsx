@@ -1,15 +1,15 @@
 // Module ID: 4736
 // Function ID: 4737
 // Name: dropChannelIfEmpty
-// Dependencies: [1387, 676, 1399, 4737, 589, 709, 2]
+// Dependencies: [1386, 673, 1398, 4737, 586, 706, 2]
 
 // Module 4736 (dropChannelIfEmpty)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import hasFlag from "hasFlag" /* 1399 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import hasFlag from "hasFlag" /* 1398 */;
 import createMinimalMessageRecord from "createMinimalMessageRecord" /* 4737 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
-import { MessageFlags } from "ME" /* 676 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
+import { MessageFlags } from "ME" /* 673 */;
 
 require = arg1;
 function dropChannelIfEmpty(channelId, value) {

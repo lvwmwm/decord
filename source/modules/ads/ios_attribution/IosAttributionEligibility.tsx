@@ -1,14 +1,14 @@
-// Module ID: 11088
-// Function ID: 11089
+// Module ID: 11308
+// Function ID: 11309
 // Name: isIosAttributionEligible
-// Dependencies: [11089, 500, 7443, 11091, 2]
+// Dependencies: [11309, 1234, 7453, 11311, 2]
 // Exports: getIosAttributionClickFramework, isCampaignIosAttributionEnabled, isIosAttributionEligible
 
-// Module 11088 (isIosAttributionEligible)
+// Module 11308 (isIosAttributionEligible)
 import set from "set" /* 2 */;
-import set2 from "set" /* 500 */;
-import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7443 */;
-import apexExperiment from "apexExperiment" /* 11089 */;
+import set2 from "set" /* 1234 */;
+import getQuestDeliveryDataForPlacement from "getQuestDeliveryDataForPlacement" /* 7453 */;
+import apexExperiment from "apexExperiment" /* 11309 */;
 
 const result = set.fileFinishedImporting("modules/ads/ios_attribution/IosAttributionEligibility.tsx");
 
@@ -33,14 +33,14 @@ export const getIosAttributionClickFramework = function getIosAttributionClickFr
   const IosAttributionFeatureGate = apexExperiment.IosAttributionFeatureGate;
   let enabled = IosAttributionFeatureGate.getConfig({ location: "quest_ios_attribution" }).enabled;
   if (enabled) {
-    let tmpResult = tmp(500);
+    let tmpResult = tmp(1234);
     enabled = tmpResult.isIOS();
   }
   let activeIosAttributionFramework = null;
   if (enabled) {
     activeIosAttributionFramework = null;
     if (arg0) {
-      tmpResult = tmp(7443);
+      tmpResult = tmp(7453);
       const adContext = tmpResult.getAdContext(sourceQuestContent, adContentId);
       let prop;
       if (adContext != null) {
@@ -48,8 +48,8 @@ export const getIosAttributionClickFramework = function getIosAttributionClickFr
       }
       activeIosAttributionFramework = null;
       if (true === prop) {
-        activeIosAttributionFramework = tmp(11091).getActiveIosAttributionFramework();
-        const tmpResult1 = tmp(11091);
+        activeIosAttributionFramework = tmp(11311).getActiveIosAttributionFramework();
+        const tmpResult1 = tmp(11311);
       }
     }
   }

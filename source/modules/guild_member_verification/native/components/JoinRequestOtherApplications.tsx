@@ -1,10 +1,10 @@
-// Module ID: 16169
-// Function ID: 16170
+// Module ID: 16400
+// Function ID: 16401
 // Name: ApplicationStatusIcon
-// Dependencies: [19, 17, 21, 4478, 712, 4302, 4438, 6225, 16170, 4474, 1236, 16166, 4163, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 4302, 4438, 6234, 16401, 4474, 1233, 16397, 4163, 2]
 
-// Module 16169 (ApplicationStatusIcon)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 16400 (ApplicationStatusIcon)
+import ThemesDefault from "Themes" /* 709 */;
 import MAX_RESULTS_PER_PAGE from "MAX_RESULTS_PER_PAGE" /* 4302 */;
 import importAllResult from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
@@ -23,7 +23,7 @@ function ApplicationStatusIcon(status) {
     obj = { size: "sm", color: null, secondaryColor: null };
     obj[1] = ThemesDefault.colors.ICON_FEEDBACK_CRITICAL;
     obj[2] = ThemesDefault.colors.WHITE;
-    return callback(tmp(6225).CircleXIcon, obj);
+    return callback(tmp(6234).CircleXIcon, obj);
   } else {
     return null;
   }
@@ -43,15 +43,15 @@ const memoResult = importAllResult.memo((arg0) => {
   ({ guildId, userId, selectedJoinRequestId } = arg0);
   const tmp = callback3();
   _require = tmp;
-  let obj = _require(16170);
+  let obj = _require(16401);
   const otherGuildJoinRequestsForUser = obj.useOtherGuildJoinRequestsForUser({ guildId, userId, selectedJoinRequestId });
   let tmp4 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {
     obj = { children: null };
     obj = { variant: "text-sm/semibold", color: "text-subtle", style: null, children: null };
     obj[2] = tmp.label;
-    const intl = tmp2(1236).intl;
-    obj[3] = intl.string(tmp2(1236).t["hxa+G3"]);
+    const intl = tmp2(1233).intl;
+    obj[3] = intl.string(tmp2(1233).t["hxa+G3"]);
     let items = [callback(tmp2(4474).Text, obj), ];
     obj1 = { style: null, children: null };
     obj1[0] = tmp.container;

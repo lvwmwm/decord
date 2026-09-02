@@ -1,12 +1,12 @@
-// Module ID: 8497
-// Function ID: 8498
+// Module ID: 8510
+// Function ID: 8511
 // Name: isTestModeForApplication
-// Dependencies: [8498, 8499, 589, 2]
+// Dependencies: [8511, 8512, 586, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 8497 (isTestModeForApplication)
-import closure_2 from "initialize" /* 8498 */;
-import closure_3 from "reset" /* 8499 */;
+// Module 8510 (isTestModeForApplication)
+import closure_2 from "initialize" /* 8511 */;
+import closure_3 from "reset" /* 8512 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/game_store/TestModeUtils.tsx");
@@ -29,7 +29,7 @@ export const useIsTestModeForApplication = function useIsTestModeForApplication(
   const _require = id;
   const items = [closure_3, closure_2];
   const items1 = [id];
-  return _require(589).useStateFromStores(items, () => {
+  return _require(586).useStateFromStores(items, () => {
     let tmp2 = null != closure_0;
     if (tmp2) {
       let result = closure_1_3.inTestModeForApplication(tmp);

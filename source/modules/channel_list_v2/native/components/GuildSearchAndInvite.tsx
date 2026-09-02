@@ -1,21 +1,21 @@
-// Module ID: 11864
-// Function ID: 11865
+// Module ID: 12087
+// Function ID: 12088
 // Name: handleInviteDisabledPress
-// Dependencies: [19, 17, 1387, 1982, 1909, 1981, 10201, 676, 21, 4478, 712, 11865, 2009, 4859, 1499, 11866, 7737, 11867, 11905, 5604, 8006, 10114, 1236, 9756, 4928, 6236, 4217, 11939, 589, 9912, 9909, 11940, 11941, 11943, 2]
+// Dependencies: [19, 17, 1386, 1981, 1908, 1980, 10223, 673, 21, 4478, 709, 12088, 2008, 4859, 1498, 12089, 7746, 12090, 12128, 5612, 8015, 10136, 1233, 9778, 4928, 6245, 4217, 12162, 586, 9934, 9931, 12163, 12164, 12166, 2]
 
-// Module 11864 (handleInviteDisabledPress)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 12087 (handleInviteDisabledPress)
+import ThemesDefault from "Themes" /* 709 */;
 import useAlertStore from "useAlertStore" /* 4859 */;
-import setDefault from "set" /* 7737 */;
-import useEventsButtonPropsDefault from "useEventsButtonProps" /* 11943 */;
+import setDefault from "set" /* 7746 */;
+import useEventsButtonPropsDefault from "useEventsButtonProps" /* 12166 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_5 from "ensureGuildLoaded" /* 1387 */;
-import closure_6 from "comparator" /* 1982 */;
-import closure_7 from "createGuildRecordFromRust" /* 1909 */;
-import closure_8 from "handleConnectionOpen" /* 1981 */;
-import { SEARCH_BAR_MARGIN_BOTTOM } from "hairlineWidth" /* 10201 */;
-import ME from "ME" /* 676 */;
+import closure_5 from "ensureGuildLoaded" /* 1386 */;
+import closure_6 from "comparator" /* 1981 */;
+import closure_7 from "createGuildRecordFromRust" /* 1908 */;
+import closure_8 from "handleConnectionOpen" /* 1980 */;
+import { SEARCH_BAR_MARGIN_BOTTOM } from "hairlineWidth" /* 10223 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -131,11 +131,11 @@ let closure_14 = createCacheKey.createStyles((arg0) => {
   let obj = { paddingHorizontal: ThemesDefault.space.PX_16, marginBottom: SEARCH_BAR_MARGIN_BOTTOM, flexDirection: "row", gap: null };
   let num = 10;
   if (arg0) {
-    num = tmp(712).space.PX_12;
+    num = tmp(709).space.PX_12;
   }
   obj = { container: obj, search: { flex: 1 }, badge: null };
   obj[3] = num;
-  obj = { position: "absolute", right: 0, top: 0, width: 8, height: 8, borderRadius: tmp(712).radii.round, backgroundColor: tmp(712).colors.BACKGROUND_BRAND };
+  obj = { position: "absolute", right: 0, top: 0, width: 8, height: 8, borderRadius: tmp(709).radii.round, backgroundColor: tmp(709).colors.BACKGROUND_BRAND };
   obj[2] = obj;
   return obj;
 });
@@ -149,7 +149,7 @@ const memoResult = importAllResult.memo(function ConnectedGuildSearchAndInviteIn
   if (flag2 === undefined) {
     flag2 = false;
   }
-  let obj = guild(589);
+  let obj = guild(586);
   const items = [closure_6];
   const items1 = [guild];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -161,8 +161,8 @@ const memoResult = importAllResult.memo(function ConnectedGuildSearchAndInviteIn
     const channels = closure_1_6.getChannels(guild.id);
     const result = guild(closure_1_2[30]).handleOpenInviteActionsheet(guild, channelId, channels, closure_1_11.GUILD_HEADER);
   });
-  const shouldShowInvitesDisabledNotif = guild(11940).useShouldShowInvitesDisabledNotif(guild);
-  const obj2 = guild(11940);
+  const shouldShowInvitesDisabledNotif = guild(12163).useShouldShowInvitesDisabledNotif(guild);
+  const obj2 = guild(12163);
   const tmp5 = useEventsButtonPropsDefault(guild);
   obj = { guildId: guild.id, canInvite: stateFromStores, invitesDisabled: shouldShowInvitesDisabledNotif, onInvitePress: tmp2, onEventsPress: tmp5.handlePress, onEventsLongPress: tmp5.handleLongPress, hasUnreadEvents: tmp5.hasUnread, useEventsButton: null, useButtonComponent: null };
   if (flag2) {

@@ -1,11 +1,11 @@
 // Module ID: 4790
 // Function ID: 4791
 // Name: shimStringTrim
-// Dependencies: [1420, 4783, 1421]
+// Dependencies: [1419, 4783, 1420]
 
 // Module 4790 (shimStringTrim)
-import hasPropertyDescriptors from "hasPropertyDescriptors" /* 1420 */;
-import defineDataProperty from "defineDataProperty" /* 1421 */;
+import hasPropertyDescriptors from "hasPropertyDescriptors" /* 1419 */;
+import defineDataProperty from "defineDataProperty" /* 1420 */;
 import getPolyfill from "getPolyfill" /* 4783 */;
 
 let closure_2 = hasPropertyDescriptors();

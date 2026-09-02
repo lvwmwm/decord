@@ -1,23 +1,23 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17575
+// Function ID: 17576
 // Name: ChannelRow
-// Dependencies: [32, 19, 17, 1387, 5479, 4121, 676, 4702, 21, 4478, 712, 5461, 4674, 4445, 15705, 5493, 17276, 589, 5989, 4474, 1236, 6221, 5068, 4723, 9702, 2009, 9704, 9706, 1297, 13262, 5624, 2]
+// Dependencies: [32, 19, 17, 1386, 5487, 4120, 673, 4702, 21, 4478, 709, 5469, 4674, 4445, 15936, 5501, 17512, 586, 5997, 4474, 1233, 6230, 5076, 4723, 9715, 2008, 9718, 9720, 1296, 13484, 5632, 2]
 // Exports: default
 
-// Module 17339 (ChannelRow)
-import ThemesDefault from "Themes" /* 712 */;
-import registerAssetDefault from "registerAsset" /* 13262 */;
+// Module 17575 (ChannelRow)
+import ThemesDefault from "Themes" /* 709 */;
+import registerAssetDefault from "registerAsset" /* 13484 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import closure_6 from "ensureGuildLoaded" /* 1387 */;
-import closure_7 from "setIndex" /* 5479 */;
-import closure_8 from "getUncachedChannelPermissions" /* 4121 */;
-import ME from "ME" /* 676 */;
+import closure_6 from "ensureGuildLoaded" /* 1386 */;
+import closure_7 from "setIndex" /* 5487 */;
+import closure_8 from "getUncachedChannelPermissions" /* 4120 */;
+import ME from "ME" /* 673 */;
 import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5461 */;
+import importDefaultResult from "createTextStyle" /* 5469 */;
 
 const require = arg1;
 function ChannelRow(channel) {
@@ -32,13 +32,13 @@ function ChannelRow(channel) {
     onChannelSelected(channel);
   }, items);
   let obj = { style: tmp.channelRow, onPress: callback, accessible: true, accessibilityLabel: tmp4, channel, selected, disableHighlightOnPress: true, resolvedUnreadSetting: UnreadSetting.ONLY_MENTIONS };
-  const children = [closure_11(onChannelSelected(15705), obj), ];
+  const children = [closure_11(onChannelSelected(15936), obj), ];
   if (selected) {
     obj = { style: null, source: null };
     obj[0] = tmp.selectedIcon;
-    obj[1] = tmp2(17276);
-    selected = tmp8(tmp2(5493), obj);
-    const tmp2Result = tmp2(5493);
+    obj[1] = tmp2(17512);
+    selected = tmp8(tmp2(5501), obj);
+    const tmp2Result = tmp2(5501);
   }
   children[1] = selected;
   return closure_13(closure_12, { children });
@@ -75,7 +75,7 @@ export default function ChannelSelectorActionSheet(guildId) {
   let tmp2 = first(ref.useState(""), 2);
   first = tmp2[0];
   ref = ref.useRef(null);
-  let obj = guildId(589);
+  let obj = guildId(586);
   let items = [closure_7, closure_8];
   const items1 = [guildId, first];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
@@ -113,15 +113,15 @@ export default function ChannelSelectorActionSheet(guildId) {
   obj = { scrollable: true, ref, header: null, children: null };
   obj = { style: tmp.titleContainer, children: null };
   if (title == null) {
-    const intl = tmp5(1236).intl;
-    title = intl.string(tmp5(1236).t.PDn2fR);
+    const intl = tmp5(1233).intl;
+    title = intl.string(tmp5(1233).t.PDn2fR);
   }
   obj[1] = closure_11(guildId(4474).Text, { accessibilityRole: "header", variant: "text-md/bold", color: "mobile-text-heading-primary", children: title });
   const items2 = [closure_11(View, obj), , ];
   obj1 = { style: tmp.searchContainer, children: null };
   let obj2 = { size: "md", placeholder: null, onChange: null, onFocus: null };
-  const intl2 = tmp5(1236).intl;
-  obj2[1] = intl2.string(guildId(1236).t.UTYBjS);
+  const intl2 = tmp5(1233).intl;
+  obj2[1] = intl2.string(guildId(1233).t.UTYBjS);
   obj2[2] = tmp2[1];
   obj2[3] = function onFocus() {
     const current = ref.current;
@@ -131,7 +131,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     }
     return expandActionSheetResult;
   };
-  obj1[1] = closure_11(guildId(6221).SearchField, obj2);
+  obj1[1] = closure_11(guildId(6230).SearchField, obj2);
   items2[1] = closure_11(View, obj1);
   let tmp9Result = !hideCreateChannel;
   if (!hideCreateChannel) {
@@ -160,18 +160,18 @@ export default function ChannelSelectorActionSheet(guildId) {
     const obj4 = { color: null, source: null };
     obj4[0] = str;
     obj4[1] = registerAssetDefault;
-    const items3 = [tmp8(tmp5(1297).Icon, obj4), ];
+    const items3 = [tmp8(tmp5(1296).Icon, obj4), ];
     const obj5 = { style: null, variant: "text-md/medium", color: "text-link", children: null };
     obj5[0] = tmp.createChannelLabel;
-    const intl3 = tmp5(1236).intl;
-    obj5[3] = intl3.string(tmp5(1236).t.d7AN7W);
+    const intl3 = tmp5(1233).intl;
+    obj5[3] = intl3.string(tmp5(1233).t.d7AN7W);
     items3[1] = tmp8(tmp5(4474).Text, obj5);
     obj3[3] = items3;
-    tmp9Result = tmp9(tmp5(5068).PressableOpacity, obj3);
+    tmp9Result = tmp9(tmp5(5076).PressableOpacity, obj3);
   }
   items2[2] = tmp9Result;
   obj[2] = closure_13(closure_12, { children: items2 });
-  obj[3] = closure_11(guildId(5624).BottomSheetFlatList, {
+  obj[3] = closure_11(guildId(5632).BottomSheetFlatList, {
     style: tmp.bodyContainer,
     data: stateFromStoresArray,
     keyExtractor(id) {
@@ -182,5 +182,5 @@ export default function ChannelSelectorActionSheet(guildId) {
       return closure_1_11(closure_1_15, { channel: item, onChannelSelected: closure_1, selected: item.id === closure_2 });
     }
   });
-  return closure_11(guildId(5989).ActionSheet, obj);
+  return closure_11(guildId(5997).ActionSheet, obj);
 };

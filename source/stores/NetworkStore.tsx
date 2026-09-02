@@ -1,14 +1,14 @@
 // Module ID: 4574
 // Function ID: 4575
 // Name: handleConnectionInfoChange
-// Dependencies: [676, 589, 1473, 709, 2]
+// Dependencies: [673, 586, 1472, 706, 2]
 
 // Module 4574 (handleConnectionInfoChange)
 import set from "set" /* 2 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import awaitOnlineDefault from "awaitOnline" /* 1473 */;
-import ME from "ME" /* 676 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import awaitOnlineDefault from "awaitOnline" /* 1472 */;
+import ME from "ME" /* 673 */;
 
 function handleConnectionInfoChange(type) {
   if (null != type.type) {

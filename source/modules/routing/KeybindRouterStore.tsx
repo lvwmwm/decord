@@ -1,13 +1,13 @@
-// Module ID: 12328
-// Function ID: 12329
+// Module ID: 12552
+// Function ID: 12553
 // Name: getMatchData
-// Dependencies: [676, 4304, 4317, 700, 705, 2]
+// Dependencies: [673, 4304, 4317, 697, 702, 2]
 
-// Module 12328 (getMatchData)
+// Module 12552 (getMatchData)
 import set from "set" /* 2 */;
 import matchPath from "matchPath" /* 4304 */;
-import ME from "ME" /* 676 */;
-import identity from "identity" /* 700 */;
+import ME from "ME" /* 673 */;
+import identity from "identity" /* 697 */;
 
 function getMatchData(pathname) {
   let str = pathname;

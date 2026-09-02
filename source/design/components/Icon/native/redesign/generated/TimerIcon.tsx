@@ -1,14 +1,14 @@
-// Module ID: 9401
-// Function ID: 9402
+// Module ID: 9414
+// Function ID: 9415
 // Name: TimerIcon
-// Dependencies: [19, 21, 712, 4196, 9402, 2]
+// Dependencies: [19, 21, 709, 4196, 9415, 2]
 // Exports: TimerIcon
 
-// Module 9401 (TimerIcon)
+// Module 9414 (TimerIcon)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import BaseIconImage from "BaseIconImage" /* 4196 */;
-import registerAsset from "registerAsset" /* 9402 */;
+import registerAsset from "registerAsset" /* 9415 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;

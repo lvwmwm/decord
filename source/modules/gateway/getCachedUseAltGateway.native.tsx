@@ -1,30 +1,19 @@
-// Module ID: 13293
-// Function ID: 13294
+// Module ID: 13515
+// Function ID: 13516
 // Name: getCachedUseAltGateway
-// Dependencies: [17, 500, 502, 2]
+// Dependencies: [13516, 2]
 // Exports: default
 
-// Module 13293 (getCachedUseAltGateway)
+// Module 13515 (getCachedUseAltGateway)
 import set from "set" /* 2 */;
-import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import enforcingDefault from "enforcing" /* 502 */;
+import enforcingDefault from "enforcing" /* 13516 */;
 
-const NativeModules = get_ActivityIndicator.NativeModules;
 const result = set.fileFinishedImporting("modules/gateway/getCachedUseAltGateway.native.tsx");
 
 export default function getCachedUseAltGateway() {
-  if (obj.isAndroid()) {
-    let flag2 = enforcingDefault.getConstants().useAltGateway;
-    if (flag2 == null) {
-      flag2 = false;
-    }
-    let flag = flag2;
-    const obj2 = enforcingDefault;
-  } else {
-    flag = NativeModules.DCDFastConnectManager.useAltGateway;
-    if (flag == null) {
-      flag = false;
-    }
+  let flag = enforcingDefault.getConstants().useAltGateway;
+  if (flag == null) {
+    flag = false;
   }
   return flag;
 };

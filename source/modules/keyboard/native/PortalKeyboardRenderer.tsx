@@ -1,14 +1,14 @@
-// Module ID: 16338
-// Function ID: 16339
+// Module ID: 16570
+// Function ID: 16571
 // Name: transitionGroupGetItemKey
-// Dependencies: [19, 1495, 21, 4204, 4342, 1626, 500, 16339, 4343, 4333, 6068, 10172, 1497, 4346, 9160, 2]
+// Dependencies: [19, 1494, 21, 4204, 4342, 1625, 1234, 16571, 4343, 4333, 6076, 10194, 1496, 4346, 9174, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 16338 (transitionGroupGetItemKey)
+// Module 16570 (transitionGroupGetItemKey)
 import ManaContext from "ManaContext" /* 4204 */;
-import _modDef16339 from "module_16339" /* 16339 */;
+import _modDef16571 from "module_16571" /* 16571 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "subscribeToKeyboardUIStore" /* 1495 */;
+import closure_4 from "subscribeToKeyboardUIStore" /* 1494 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 require = arg1;
@@ -21,10 +21,10 @@ function transitionGroupRenderItem(arg0, arg1, arg2, arg3) {
   if (isAndroidResult) {
     let tmpResult = tmp(4342);
     const keyboardType = tmpResult.getKeyboardType();
-    isAndroidResult = keyboardType === tmp(1626).KeyboardTypes.SYSTEM;
+    isAndroidResult = keyboardType === tmp(1625).KeyboardTypes.SYSTEM;
   }
   if (isAndroidResult) {
-    tmpResult = tmp(500);
+    tmpResult = tmp(1234);
     isAndroidResult = tmpResult.isAndroid();
   }
   let tmp5 = null;
@@ -33,7 +33,7 @@ function transitionGroupRenderItem(arg0, arg1, arg2, arg3) {
     obj[0] = arg1;
     obj[1] = arg2;
     obj[2] = arg3;
-    tmp5 = jsx(_modDef16339, { item: null, state: null, cleanUp: null }, arg0);
+    tmp5 = jsx(_modDef16571, { item: null, state: null, cleanUp: null }, arg0);
   }
   return tmp5;
 }
@@ -131,7 +131,7 @@ export const PortalKeyboardRenderer = function PortalKeyboardRenderer(portal) {
   } else {
     obj1 = { value: true, children: null };
     obj1[1] = tmp11;
-    tmp10Result = tmp10(tmp5(9160).PortalKeyboardInModalContext.Provider, obj1);
+    tmp10Result = tmp10(tmp5(9174).PortalKeyboardInModalContext.Provider, obj1);
   }
   return tmp10Result;
 };

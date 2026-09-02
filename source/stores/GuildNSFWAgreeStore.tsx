@@ -1,12 +1,12 @@
 // Module ID: 4732
 // Function ID: 4733
 // Name: initialize
-// Dependencies: [595, 589, 4731, 709, 2]
+// Dependencies: [592, 586, 4731, 706, 2]
 
 // Module 4732 (initialize)
-import initializeDefault from "initialize" /* 589 */;
-import Storage2 from "Storage" /* 595 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import Storage2 from "Storage" /* 592 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import shouldShowAgeGateForVoiceChannel from "shouldShowAgeGateForVoiceChannel" /* 4731 */;
 
 require = arg1;

@@ -1,11 +1,11 @@
-// Module ID: 8651
-// Function ID: 8652
+// Module ID: 8666
+// Function ID: 8667
 // Name: createFromServer
-// Dependencies: [1936, 4075, 2]
+// Dependencies: [1935, 4074, 2]
 
-// Module 8651 (createFromServer)
-import toJSDefault from "toJS" /* 1936 */;
-import hooksDefault from "hooks" /* 4075 */;
+// Module 8666 (createFromServer)
+import toJSDefault from "toJS" /* 1935 */;
+import hooksDefault from "hooks" /* 4074 */;
 
 toJSDefault;
 let InviteRecord;

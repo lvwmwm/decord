@@ -1,19 +1,19 @@
-// Module ID: 11170
-// Function ID: 11171
+// Module ID: 11391
+// Function ID: 11392
 // Name: GuildRoleConnectionsScreen
-// Dependencies: [32, 19, 17, 1935, 1218, 1992, 1985, 676, 21, 4478, 712, 1297, 4413, 589, 698, 4700, 5457, 4445, 11171, 2009, 11161, 11168, 5227, 1431, 1363, 4474, 1236, 1995, 11167, 5997, 10137, 2]
+// Dependencies: [32, 19, 17, 1934, 1215, 1991, 1984, 673, 21, 4478, 709, 1296, 4413, 586, 695, 4700, 5465, 4445, 11392, 2008, 11382, 11389, 5235, 1430, 1362, 4474, 1233, 1994, 11388, 6005, 10159, 2]
 // Exports: default
 
-// Module 11170 (GuildRoleConnectionsScreen)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 11391 (GuildRoleConnectionsScreen)
+import ThemesDefault from "Themes" /* 709 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_8 from "createdAt" /* 1935 */;
-import closure_9 from "fetchFingerprint" /* 1218 */;
-import closure_10 from "trackCommunicationDisabled" /* 1992 */;
-import closure_11 from "createGuildRoleRecordFromRust" /* 1985 */;
-import ME from "ME" /* 676 */;
+import closure_8 from "createdAt" /* 1934 */;
+import closure_9 from "fetchFingerprint" /* 1215 */;
+import closure_10 from "trackCommunicationDisabled" /* 1991 */;
+import closure_11 from "createGuildRoleRecordFromRust" /* 1984 */;
+import ME from "ME" /* 673 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -55,13 +55,13 @@ export default function GuildRoleConnectionsScreen(guildId) {
   let tmp = callback4();
   dependencyMap = tmp;
   callback = onCloseModal(4413)();
-  let obj = guildId(589);
+  let obj = guildId(586);
   let items = [closure_11];
   const stateFromStores = obj.useStateFromStores(items, () => closure_1_11.getSortedRoles(guildId));
-  obj1 = guildId(589);
+  obj1 = guildId(586);
   let items1 = [closure_9];
   React = obj1.useStateFromStores(items1, () => id.getId());
-  let obj2 = guildId(589);
+  let obj2 = guildId(586);
   const items2 = [closure_10];
   stateFromStores1 = obj2.useStateFromStores(items2, () => closure_1_10.getMember(guildId, closure_4));
   const tmp6 = callback(React.useState([]), 2);
@@ -70,7 +70,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
   const items3 = [guildId, first];
   const effect = React.useEffect(() => {
     if (0 !== first.length) {
-      let obj = onCloseModal(698);
+      let obj = onCloseModal(695);
       obj = { role_ids: null };
       obj[0] = first.map((role_id) => role_id.role_id);
       const merged = Object.assign(guildId(4700).collectGuildAnalyticsMetadata(guildId));
@@ -80,7 +80,7 @@ export default function GuildRoleConnectionsScreen(guildId) {
   }, items3);
   const items4 = [guildId];
   const effect1 = React.useEffect(() => {
-    const guildRoleConnectionsConfigurations = onCloseModal(5457).getGuildRoleConnectionsConfigurations(guildId);
+    const guildRoleConnectionsConfigurations = onCloseModal(5465).getGuildRoleConnectionsConfigurations(guildId);
     guildRoleConnectionsConfigurations.then((arg0) => callback(arg0));
   }, items4);
   if (null == stateFromStores1) {
@@ -93,10 +93,10 @@ export default function GuildRoleConnectionsScreen(guildId) {
     obj[0] = tmp.content;
     obj1 = { style: null, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
     obj1[0] = tmp.infoText;
-    const intl = tmp4(1236).intl;
+    const intl = tmp4(1233).intl;
     obj2 = { helpdeskArticleUrl: null };
-    obj2[0] = tmp2(1995).getArticleURL(constants.CONNECTION_DETAILS);
-    obj1[3] = intl.format(tmp4(1236).t["Y+TsEV"], obj2);
+    obj2[0] = tmp2(1994).getArticleURL(constants.CONNECTION_DETAILS);
+    obj1[3] = intl.format(tmp4(1233).t["Y+TsEV"], obj2);
     const items5 = [callback2(tmp4(4474).Text, obj1), ];
     let obj3 = { style: null, children: null };
     obj3[0] = tmp.verifiedRoles;
@@ -219,15 +219,15 @@ export default function GuildRoleConnectionsScreen(guildId) {
         obj = { style: null, children: null };
         obj[0] = found.roleCheckmark;
         obj = { size: null, source: null, color: null };
-        obj[0] = guildId(1297).Icon.Sizes.SMALL_20;
-        obj[1] = onCloseModal(11167);
-        obj[2] = onCloseModal(712).unsafe_rawColors.WHITE;
-        obj[1] = closure_1_14(guildId(1297).Icon, obj);
+        obj[0] = guildId(1296).Icon.Sizes.SMALL_20;
+        obj[1] = onCloseModal(11388);
+        obj[2] = onCloseModal(709).unsafe_rawColors.WHITE;
+        obj[1] = closure_1_14(guildId(1296).Icon, obj);
         tmp12 = closure_1_14(stateFromStores1, obj);
       }
-      const items1 = [tmp12, closure_1_14(onCloseModal(5997), { style: found.verifiedRoleIcon, guildId: id, role: children, size: 24 }), closure_1_14(guildId(4474).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, style: found.verifiedRoleName, children: children.name }), ];
-      const obj3 = { style: found.platformIconContainer, users: [], renderedUsers: items, max: 3, withNames: false, avatarSize: guildId(1297).AvatarSizes.XSMALL, withPlusCount: true };
-      items1[3] = closure_1_14(onCloseModal(10137), obj3);
+      const items1 = [tmp12, closure_1_14(onCloseModal(6005), { style: found.verifiedRoleIcon, guildId: id, role: children, size: 24 }), closure_1_14(guildId(4474).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, style: found.verifiedRoleName, children: children.name }), ];
+      const obj3 = { style: found.platformIconContainer, users: [], renderedUsers: items, max: 3, withNames: false, avatarSize: guildId(1296).AvatarSizes.XSMALL, withPlusCount: true };
+      items1[3] = closure_1_14(onCloseModal(10159), obj3);
       obj[3] = items1;
       return closure_1_15(first, obj, children.id);
     });

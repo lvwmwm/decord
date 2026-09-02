@@ -1,17 +1,17 @@
-// Module ID: 11948
-// Function ID: 11949
+// Module ID: 12171
+// Function ID: 12172
 // Name: BaseChannelSubtitle
-// Dependencies: [19, 17, 10201, 4702, 21, 4478, 712, 4474, 501, 1297, 10250, 8984, 11949, 2]
+// Dependencies: [19, 17, 10223, 4702, 21, 4478, 709, 4474, 1235, 1296, 10272, 8998, 12172, 2]
 // Exports: BaseChannelIcon, BaseChannelName, default, getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 11948 (BaseChannelSubtitle)
-import PlatformTypes from "PlatformTypes" /* 501 */;
-import ThemesDefault from "Themes" /* 712 */;
-import Button from "Button" /* 1297 */;
+// Module 12171 (BaseChannelSubtitle)
+import ThemesDefault from "Themes" /* 709 */;
+import PlatformTypes from "PlatformTypes" /* 1235 */;
+import Button from "Button" /* 1296 */;
 import Text from "Text" /* 4474 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
-import hairlineWidth from "hairlineWidth" /* 10201 */;
+import hairlineWidth from "hairlineWidth" /* 10223 */;
 import { UnreadSetting } from "ReadStateTypes" /* 4702 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -134,9 +134,9 @@ export default function BaseChannelItem(mode) {
     items1[3] = channelInfo;
     obj[1] = items1;
     if (flag) {
-      let AnimatedPressableHighlight = hideIcon(11949);
+      let AnimatedPressableHighlight = hideIcon(12172);
     } else {
-      AnimatedPressableHighlight = mode(8984).AnimatedPressableHighlight;
+      AnimatedPressableHighlight = mode(8998).AnimatedPressableHighlight;
     }
     obj = {};
     const merged1 = Object.assign(merged);
@@ -153,9 +153,9 @@ export default function BaseChannelItem(mode) {
       ALL_MESSAGES = UnreadSetting.ALL_MESSAGES;
     }
     obj[2] = ALL_MESSAGES;
-    closure_8(hideIcon(10250), obj);
+    closure_8(hideIcon(10272), obj);
     const tmp6 = closure_8;
-    const tmp9 = hideIcon(10250);
+    const tmp9 = hideIcon(10272);
   }
 };
 export const ChannelModes = createCacheKey;

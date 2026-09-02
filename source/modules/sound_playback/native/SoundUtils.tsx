@@ -1,13 +1,13 @@
-// Module ID: 9997
-// Function ID: 9998
+// Module ID: 10019
+// Function ID: 10020
 // Name: _createSound
-// Dependencies: [17, 1624, 500, 2]
+// Dependencies: [17, 1623, 1234, 2]
 // Exports: MobileAudioSound
 
-// Module 9997 (_createSound)
+// Module 10019 (_createSound)
 import set from "set" /* 2 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import isMetaQuest from "isMetaQuest" /* 1624 */;
+import isMetaQuest from "isMetaQuest" /* 1623 */;
 
 const NativeModules = get_ActivityIndicator.NativeModules;
 let c3 = 0;

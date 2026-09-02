@@ -1,18 +1,18 @@
-// Module ID: 17188
-// Function ID: 17189
+// Module ID: 17424
+// Function ID: 17425
 // Name: handleGuildRoleCreateOrUpdate
-// Dependencies: [1985, 1909, 676, 11985, 1363, 1236, 506, 589, 709, 2]
+// Dependencies: [1984, 1908, 673, 12209, 1362, 1233, 503, 586, 706, 2]
 
-// Module 17188 (handleGuildRoleCreateOrUpdate)
-import fromStringAll from "fromString" /* 506 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
-import AccessibilityAnnouncer3 from "AccessibilityAnnouncer" /* 1363 */;
-import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 11985 */;
-import closure_4 from "createGuildRoleRecordFromRust" /* 1985 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
-import { FormStates } from "ME" /* 676 */;
+// Module 17424 (handleGuildRoleCreateOrUpdate)
+import fromStringAll from "fromString" /* 503 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
+import AccessibilityAnnouncer3 from "AccessibilityAnnouncer" /* 1362 */;
+import calculatePositionDeltasDefault from "calculatePositionDeltas" /* 12209 */;
+import closure_4 from "createGuildRoleRecordFromRust" /* 1984 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
+import { FormStates } from "ME" /* 673 */;
 
 require = arg1;
 function handleGuildRoleCreateOrUpdate(arg0) {

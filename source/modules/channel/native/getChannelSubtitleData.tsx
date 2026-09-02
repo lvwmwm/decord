@@ -1,12 +1,12 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 16046
+// Function ID: 16047
 // Name: getChannelSubtitleData
-// Dependencies: [1236, 2]
+// Dependencies: [1233, 2]
 // Exports: getChannelSubtitleData
 
-// Module 15814 (getChannelSubtitleData)
+// Module 16046 (getChannelSubtitleData)
 import set from "set" /* 2 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 
 const result = set.fileFinishedImporting("modules/channel/native/getChannelSubtitleData.tsx");
 

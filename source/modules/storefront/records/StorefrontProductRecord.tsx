@@ -1,10 +1,10 @@
-// Module ID: 7308
-// Function ID: 7309
+// Module ID: 7317
+// Function ID: 7318
 // Name: fromServer
-// Dependencies: [7307, 4521, 2]
+// Dependencies: [7316, 4521, 2]
 
-// Module 7308 (fromServer)
-import closure_0 from "fromServer" /* 7307 */;
+// Module 7317 (fromServer)
+import closure_0 from "fromServer" /* 7316 */;
 import closure_1 from "createFromServer" /* 4521 */;
 
 let prototype;

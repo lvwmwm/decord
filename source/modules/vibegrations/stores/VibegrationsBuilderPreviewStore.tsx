@@ -1,11 +1,11 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14340
+// Function ID: 14341
 // Name: getBuilderPreviewApplicationId
-// Dependencies: [589, 709, 2]
+// Dependencies: [586, 706, 2]
 
-// Module 14117 (getBuilderPreviewApplicationId)
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 14340 (getBuilderPreviewApplicationId)
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 let c0 = null;
 let c1 = false;

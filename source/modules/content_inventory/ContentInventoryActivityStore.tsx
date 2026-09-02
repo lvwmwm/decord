@@ -1,15 +1,15 @@
-// Module ID: 9386
-// Function ID: 9387
+// Module ID: 9399
+// Function ID: 9400
 // Name: entryToKey
-// Dependencies: [4569, 8607, 676, 8039, 8044, 8627, 8612, 8608, 12, 589, 709, 2]
+// Dependencies: [4569, 8622, 673, 8048, 8053, 8642, 8627, 8623, 12, 586, 706, 2]
 
-// Module 9386 (entryToKey)
+// Module 9399 (entryToKey)
 import applyDefault from "apply" /* 12 */;
-import initializeDefault from "initialize" /* 589 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import initializeDefault from "initialize" /* 586 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "sortActivity" /* 4569 */;
-import closure_4 from "map" /* 8607 */;
-import { ActivityTypes } from "ME" /* 676 */;
+import closure_4 from "map" /* 8622 */;
+import { ActivityTypes } from "ME" /* 673 */;
 import set from "set" /* 2 */;
 
 let require = arg1;
@@ -22,7 +22,7 @@ function getMatchingActivity(author_type) {
   if (!obj.isEntryExpired(author_type)) {
     let found;
     if (tmpResult.isEntryActive(author_type)) {
-      if (author_type.author_type === tmp(8627).ContentInventoryAuthorType.USER) {
+      if (author_type.author_type === tmp(8642).ContentInventoryAuthorType.USER) {
         activities = activities.getActivities(author_type.author_id);
         found = activities.find((type) => {
           if (type.type === closure_1_5.PLAYING) {
@@ -46,7 +46,7 @@ function getMatchingActivity(author_type) {
       }
     }
     tmp3 = found;
-    tmpResult = tmp(8044);
+    tmpResult = tmp(8053);
   }
   return tmp3;
 }

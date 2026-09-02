@@ -1,9 +1,9 @@
-// Module ID: 7258
-// Function ID: 7259
+// Module ID: 7267
+// Function ID: 7268
 // Name: AutomodInteractionCallbackTypeEmbedKeys
 // Dependencies: [2]
 
-// Module 7258 (AutomodInteractionCallbackTypeEmbedKeys)
+// Module 7267 (AutomodInteractionCallbackTypeEmbedKeys)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/shared-constants/AutomodInteractionCallbackTypeEmbedKeys.tsx");

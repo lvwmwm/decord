@@ -1,10 +1,10 @@
-// Module ID: 7498
-// Function ID: 7499
+// Module ID: 7508
+// Function ID: 7509
 // Name: snowflakeSequence
 // Dependencies: [11, 2]
 // Exports: createNonce
 
-// Module 7498 (snowflakeSequence)
+// Module 7508 (snowflakeSequence)
 import set from "set" /* 2 */;
 import DISCORD_EPOCH from "DISCORD_EPOCH" /* 11 */;
 import DISCORD_EPOCHDefault from "DISCORD_EPOCH" /* 11 */;

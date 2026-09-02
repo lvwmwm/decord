@@ -1,13 +1,13 @@
-// Module ID: 16771
-// Function ID: 16772
+// Module ID: 17007
+// Function ID: 17008
 // Name: VoicePanelNsfwAlert
-// Dependencies: [19, 1430, 1909, 21, 4863, 4863, 1236, 5457, 5355, 2]
+// Dependencies: [19, 1429, 1908, 21, 4863, 4863, 1233, 5465, 5363, 2]
 // Exports: default
 
-// Module 16771 (VoicePanelNsfwAlert)
+// Module 17007 (VoicePanelNsfwAlert)
 import noopAll from "noop" /* 19 */;
-import { isGuildNSFW } from "GuildNSFWContentLevel" /* 1430 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
+import { isGuildNSFW } from "GuildNSFWContentLevel" /* 1429 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
 import jsxProd from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -22,18 +22,18 @@ export default function VoicePanelNsfwAlert(guildId) {
   let obj = guildId(4863);
   dependencyMap = obj.useDismissModalCallback();
   const tmp3 = isGuildNSFW(guild.getGuild(guildId));
-  const intl = guildId(1236).intl;
+  const intl = guildId(1233).intl;
   const string = intl.string;
-  const t = guildId(1236).t;
+  const t = guildId(1233).t;
   if (tmp3) {
     let stringResult = string(t.xi46lg);
   } else {
     stringResult = string(t.ZmwvDc);
   }
   obj = { title: stringResult, content: null, actions: null };
-  const intl2 = tmp(1236).intl;
+  const intl2 = tmp(1233).intl;
   const string2 = intl2.string;
-  const t2 = tmp(1236).t;
+  const t2 = tmp(1233).t;
   if (tmp3) {
     let string2Result = string2(t2.ZtuRts);
   } else {
@@ -44,26 +44,26 @@ export default function VoicePanelNsfwAlert(guildId) {
   obj1 = {
     variant: "primary",
     onPress() {
-      channelId(5457).nsfwAgree(guildId);
-      const obj = channelId(5457);
-      const voiceChannel = channelId(5355).selectVoiceChannel(channelId);
+      channelId(5465).nsfwAgree(guildId);
+      const obj = channelId(5465);
+      const voiceChannel = channelId(5363).selectVoiceChannel(channelId);
       dependencyMap();
     },
     text: null
   };
-  const intl3 = tmp(1236).intl;
-  obj1[2] = intl3.string(guildId(1236).t.wVq7uo);
+  const intl3 = tmp(1233).intl;
+  obj1[2] = intl3.string(guildId(1233).t.wVq7uo);
   const items = [closure_5(guildId(4863).AlertActionButton, obj1, "confirm"), ];
   const obj2 = {
     variant: "secondary",
     onPress() {
-      channelId(5457).nsfwReturnToSafety(guildId);
+      channelId(5465).nsfwReturnToSafety(guildId);
       dependencyMap();
     },
     text: null
   };
-  const intl4 = tmp(1236).intl;
-  obj2[2] = intl4.string(guildId(1236).t["/g10LC"]);
+  const intl4 = tmp(1233).intl;
+  obj2[2] = intl4.string(guildId(1233).t["/g10LC"]);
   items[1] = closure_5(guildId(4863).AlertActionButton, obj2, "add-profile-picture");
   obj[0] = items;
   obj[2] = callback(guildId(4863).AlertActions, obj);

@@ -1,14 +1,14 @@
-// Module ID: 6106
-// Function ID: 6107
+// Module ID: 6114
+// Function ID: 6115
 // Name: canUserSeeMonetizationOnboarding
-// Dependencies: [1922, 6107, 6108, 4114, 2]
+// Dependencies: [1921, 6115, 6116, 4113, 2]
 // Exports: canUserSeeMonetizationOnboarding
 
-// Module 6106 (canUserSeeMonetizationOnboarding)
-import isRestrictedFromShowingGuildPurchaseEntryPoints from "isRestrictedFromShowingGuildPurchaseEntryPoints" /* 4114 */;
-import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6107 */;
-import set from "set" /* 6108 */;
-import closure_2 from "mergeGuildAvatar" /* 1922 */;
+// Module 6114 (canUserSeeMonetizationOnboarding)
+import isRestrictedFromShowingGuildPurchaseEntryPoints from "isRestrictedFromShowingGuildPurchaseEntryPoints" /* 4113 */;
+import computeGuildRoleSubscriptionSettingsVisibility from "computeGuildRoleSubscriptionSettingsVisibility" /* 6115 */;
+import set from "set" /* 6116 */;
+import closure_2 from "mergeGuildAvatar" /* 1921 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/guild_settings/creator_monetization/canUserSeeMonetizationOnboarding.tsx");

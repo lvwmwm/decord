@@ -1,16 +1,16 @@
-// Module ID: 12919
-// Function ID: 12920
+// Module ID: 13141
+// Function ID: 13142
 // Name: ButtonBadge
-// Dependencies: [19, 21, 4478, 712, 500, 1297, 4935, 5068, 4474, 7613, 2]
+// Dependencies: [19, 21, 4478, 709, 1234, 1296, 4935, 5076, 4474, 7623, 2]
 // Exports: default
 
-// Module 12919 (ButtonBadge)
-import set from "set" /* 500 */;
-import ThemesDefault from "Themes" /* 712 */;
+// Module 13141 (ButtonBadge)
+import ThemesDefault from "Themes" /* 709 */;
+import set from "set" /* 1234 */;
 import getFontScale from "getFontScale" /* 4935 */;
-import PressableBase from "PressableBase" /* 5068 */;
-import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7613 */;
-import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7613 */;
+import PressableBase from "PressableBase" /* 5076 */;
+import DEFAULT_BADGE_SIZE from "DEFAULT_BADGE_SIZE" /* 7623 */;
+import DEFAULT_BADGE_SIZEDefault from "DEFAULT_BADGE_SIZE" /* 7623 */;
 import importAllResult from "noop" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
@@ -64,7 +64,7 @@ let closure_7 = importAllResult.memo((color) => {
   const items = [tmp, color, source];
   if (null != IconComponent) {
     let obj = { size: "sm", color: null };
-    obj[1] = color(712).colors.ICON_SUBTLE;
+    obj[1] = color(709).colors.ICON_SUBTLE;
     let tmp2Result = callback(IconComponent, obj);
   } else {
     tmp2Result = tmp2();
@@ -122,7 +122,7 @@ export default function IconActionButton(variant) {
     obj = { style: null, value: null };
     obj[0] = tmp.countStyle;
     obj[1] = num;
-    tmp10Result = tmp10(tmp2(1297).Badge, obj);
+    tmp10Result = tmp10(tmp2(1296).Badge, obj);
   }
   items1[2] = tmp10Result;
   if (badge) {

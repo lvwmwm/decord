@@ -1,11 +1,11 @@
 // Module ID: 4582
 // Function ID: 4583
 // Name: on
-// Dependencies: [652, 2]
+// Dependencies: [649, 2]
 
 // Module 4582 (on)
 import set from "set" /* 2 */;
-import EventEmitter from "EventEmitter" /* 652 */;
+import EventEmitter from "EventEmitter" /* 649 */;
 
 const result = set.fileFinishedImporting("../discord_common/js/shared/utils/TypedEventEmitter.tsx");
 class TypedEventEmitter {

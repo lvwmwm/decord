@@ -1,13 +1,13 @@
-// Module ID: 8107
-// Function ID: 8108
+// Module ID: 8115
+// Function ID: 8116
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [32, 19, 676, 1898, 4362, 2]
+// Dependencies: [32, 19, 673, 1897, 4362, 2]
 // Exports: default
 
-// Module 8107 (useAvatarDecorationIfNotExpired)
+// Module 8115 (useAvatarDecorationIfNotExpired)
 import closure_2 from "_slicedToArray" /* 32 */;
 import closure_3 from "noop" /* 19 */;
-import { MAX_TIMEOUT_MS } from "ME" /* 676 */;
+import { MAX_TIMEOUT_MS } from "ME" /* 673 */;
 
 const require = arg1;
 let result = require("set").fileFinishedImporting("modules/collectibles/avatar_decorations/useAvatarDecorationIfNotExpired.tsx");

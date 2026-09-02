@@ -1,13 +1,13 @@
-// Module ID: 11445
-// Function ID: 11446
+// Module ID: 11668
+// Function ID: 11669
 // Name: ForumOriginalPoster
-// Dependencies: [19, 17, 21, 4478, 712, 5384, 4474, 1236, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5392, 4474, 1233, 2]
 // Exports: getForumOriginalPoster
 
-// Module 11445 (ForumOriginalPoster)
+// Module 11668 (ForumOriginalPoster)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import Text from "Text" /* 4474 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;

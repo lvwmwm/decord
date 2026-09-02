@@ -1,0 +1,25 @@
+// Module ID: 11420
+// Function ID: 11421
+// Name: useAppChannelApplication
+// Dependencies: [673, 5962, 2]
+// Exports: useAppChannelApplication
+
+// Module 11420 (useAppChannelApplication)
+import set from "set" /* 2 */;
+import ME from "ME" /* 673 */;
+import fetchApplication from "fetchApplication" /* 5962 */;
+
+const ChannelTypes = ME.ChannelTypes;
+const result = set.fileFinishedImporting("modules/app_channels/useAppChannelApplication.tsx");
+
+export const useAppChannelApplication = function useAppChannelApplication(stateFromStores) {
+  let type;
+  if (stateFromStores != null) {
+    type = stateFromStores.type;
+  }
+  let application_id;
+  if (type === ChannelTypes.GUILD_APP) {
+    application_id = stateFromStores.application_id;
+  }
+  return fetchApplication.useApplication(application_id).data;
+};

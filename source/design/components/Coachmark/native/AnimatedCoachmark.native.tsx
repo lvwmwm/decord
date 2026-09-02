@@ -1,13 +1,13 @@
-// Module ID: 8981
-// Function ID: 8982
+// Module ID: 8995
+// Function ID: 8996
 // Name: renderTooltipItem
-// Dependencies: [32, 19, 17, 21, 4217, 8982, 1356, 8978, 8979, 2]
+// Dependencies: [32, 19, 17, 21, 4217, 8996, 1355, 8992, 8993, 2]
 // Exports: AnimatedCoachmark
 
-// Module 8981 (renderTooltipItem)
+// Module 8995 (renderTooltipItem)
 import _modDef4217 from "module_4217" /* 4217 */;
-import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 8979 */;
-import Coachmark from "Coachmark" /* 8982 */;
+import AnimatedRenderItemDefault from "AnimatedRenderItem" /* 8993 */;
+import Coachmark from "Coachmark" /* 8996 */;
 import closure_3 from "_slicedToArray" /* 32 */;
 import closure_4 from "noop" /* 19 */;
 import { StyleSheet } from "get ActivityIndicator" /* 17 */;
@@ -34,13 +34,13 @@ export const AnimatedCoachmark = function AnimatedCoachmark(visible) {
   const merged = Object.assign(visible, Object.create(null));
   importDefault = undefined;
   [tmp3, c1] = callback(React.useState(visible), 2);
-  let obj = visible(8978);
+  let obj = visible(8992);
   const result = obj.tooltipEnterExitAnimation(merged.position);
   const items = [visible];
   const effect = React.useEffect(() => {
     _undefined(visible);
   }, items);
-  obj = { useReducedMotion: React.useContext(visible(1356).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
+  obj = { useReducedMotion: React.useContext(visible(1355).AccessibilityPreferencesContext).reducedMotion.enabled, item: null, entering: null, exiting: null, renderItem: null };
   let tmp8;
   const tmp2 = callback(React.useState(visible), 2);
   const tmp6 = jsx;

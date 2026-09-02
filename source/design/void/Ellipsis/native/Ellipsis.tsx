@@ -1,11 +1,11 @@
-// Module ID: 13733
-// Function ID: 13734
+// Module ID: 13956
+// Function ID: 13957
 // Name: AnimatedEllipsisDot
-// Dependencies: [19, 17, 4470, 21, 4478, 712, 4217, 4479, 589, 2]
+// Dependencies: [19, 17, 4470, 21, 4478, 709, 4217, 4479, 586, 2]
 
-// Module 13733 (AnimatedEllipsisDot)
-import initialize from "initialize" /* 589 */;
-import ThemesDefault from "Themes" /* 712 */;
+// Module 13956 (AnimatedEllipsisDot)
+import initialize from "initialize" /* 586 */;
+import ThemesDefault from "Themes" /* 709 */;
 import importAllResult from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "maybeApplyNoTextColorForLightCustomTheme" /* 4470 */;

@@ -1,12 +1,12 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13626
+// Function ID: 13627
 // Name: getIconURL
-// Dependencies: [4504, 1236, 5227, 2]
+// Dependencies: [4504, 1233, 5235, 2]
 
-// Module 13403 (getIconURL)
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 13626 (getIconURL)
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import createExecutableDefault from "createExecutable" /* 4504 */;
-import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5227 */;
+import getPlatformUserUrlDefault from "getPlatformUserUrl" /* 5235 */;
 
 require = arg1;
 createExecutableDefault;

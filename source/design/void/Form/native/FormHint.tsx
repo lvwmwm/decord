@@ -1,12 +1,12 @@
-// Module ID: 8370
-// Function ID: 8371
+// Module ID: 8379
+// Function ID: 8380
 // Name: FormHint
-// Dependencies: [19, 17, 21, 4478, 712, 5598, 4474, 1297, 2]
+// Dependencies: [19, 17, 21, 4478, 709, 5606, 4474, 1296, 2]
 // Exports: default
 
-// Module 8370 (FormHint)
-import ThemesDefault from "Themes" /* 712 */;
-import context from "context" /* 5598 */;
+// Module 8379 (FormHint)
+import ThemesDefault from "Themes" /* 709 */;
+import context from "context" /* 5606 */;
 import closure_2 from "noop" /* 19 */;
 import { Platform } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;
@@ -49,7 +49,7 @@ export default function FormHint(inset) {
     items1[2] = style;
     obj[0] = items1;
     obj[1] = children;
-    tmp4Result = tmp4(tmp2(1297).LegacyText, obj);
+    tmp4Result = tmp4(tmp2(1296).LegacyText, obj);
   }
   return tmp4Result;
 };

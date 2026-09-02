@@ -1,15 +1,15 @@
-// Module ID: 9172
-// Function ID: 9173
+// Module ID: 9186
+// Function ID: 9187
 // Name: Emoji
-// Dependencies: [19, 17, 4299, 21, 4478, 712, 9173, 4138, 5493, 4474, 9174, 4134, 9102, 9175, 1236, 8363, 4928, 9177, 2]
+// Dependencies: [19, 17, 4299, 21, 4478, 709, 9187, 4138, 5501, 4474, 9188, 4134, 9116, 9189, 1233, 8372, 4928, 9191, 2]
 // Exports: default
 
-// Module 9172 (Emoji)
-import ThemesDefault from "Themes" /* 712 */;
+// Module 9186 (Emoji)
+import ThemesDefault from "Themes" /* 709 */;
 import getEmojiUnavailableReasonDefault from "getEmojiUnavailableReason" /* 4138 */;
 import Text from "Text" /* 4474 */;
-import preloadDefault from "preload" /* 5493 */;
-import styles from "styles" /* 9173 */;
+import preloadDefault from "preload" /* 5501 */;
+import styles from "styles" /* 9187 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import closure_5 from "handleConnectionOpen" /* 4299 */;

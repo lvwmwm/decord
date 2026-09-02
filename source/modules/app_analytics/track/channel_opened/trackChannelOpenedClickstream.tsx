@@ -1,14 +1,14 @@
-// Module ID: 7519
-// Function ID: 7520
+// Module ID: 7529
+// Function ID: 7530
 // Name: trackChannelOpenedClickstream
-// Dependencies: [1387, 676, 1394, 7211, 2]
+// Dependencies: [1386, 673, 1393, 7220, 2]
 // Exports: default
 
-// Module 7519 (trackChannelOpenedClickstream)
-import isClickstreamEnabled from "isClickstreamEnabled" /* 7211 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
-import ME from "ME" /* 676 */;
-import { StaticChannelRoute } from "set" /* 1394 */;
+// Module 7529 (trackChannelOpenedClickstream)
+import isClickstreamEnabled from "isClickstreamEnabled" /* 7220 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
+import ME from "ME" /* 673 */;
+import { StaticChannelRoute } from "set" /* 1393 */;
 
 require = arg1;
 ({ ChannelTypes: c3, AnalyticEvents: c4 } = ME);

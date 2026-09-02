@@ -1,11 +1,11 @@
-// Module ID: 8112
-// Function ID: 8113
+// Module ID: 8120
+// Function ID: 8121
 // Name: prototype
-// Dependencies: [1981, 5486, 2]
+// Dependencies: [1980, 5494, 2]
 
-// Module 8112 (prototype)
-import initializeDefault from "initialize" /* 5486 */;
-import closure_0 from "handleConnectionOpen" /* 1981 */;
+// Module 8120 (prototype)
+import initializeDefault from "initialize" /* 5494 */;
+import closure_0 from "handleConnectionOpen" /* 1980 */;
 
 initializeDefault;
 let prototype = function VideoBackgroundManager() {

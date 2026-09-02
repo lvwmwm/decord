@@ -1,18 +1,18 @@
-// Module ID: 9012
-// Function ID: 9013
+// Module ID: 9026
+// Function ID: 9027
 // Name: _fetchGuildTopGames
-// Dependencies: [5, 4300, 1992, 9009, 676, 709, 530, 5560, 4376, 698, 2]
+// Dependencies: [5, 4300, 1991, 9023, 673, 706, 527, 5568, 4376, 695, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 9012 (_fetchGuildTopGames)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+// Module 9026 (_fetchGuildTopGames)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 import closure_3 from "asyncGeneratorStep" /* 5 */;
 import closure_4 from "handleGatewayJoinRequestUpdate" /* 4300 */;
-import closure_5 from "trackCommunicationDisabled" /* 1992 */;
-import closure_6 from "handleUpdateStart" /* 9009 */;
-import { GuildProfileFetchStatus } from "handleUpdateStart" /* 9009 */;
-import ME from "ME" /* 676 */;
+import closure_5 from "trackCommunicationDisabled" /* 1991 */;
+import closure_6 from "handleUpdateStart" /* 9023 */;
+import { GuildProfileFetchStatus } from "handleUpdateStart" /* 9023 */;
+import ME from "ME" /* 673 */;
 
 const require = arg1;
 function _fetchGuildTopGames() {
@@ -92,14 +92,14 @@ export const getGuildProfile = function getGuildProfile(closure_1_0) {
     obj = { type: "GUILD_PROFILE_FETCH", guildId: null };
     obj[1] = closure_1_0;
     dispatcherDefault.dispatch(obj);
-    const HTTP = _require(530).HTTP;
+    const HTTP = _require(527).HTTP;
     obj = { url: null, rejectWithError: null };
     obj[0] = closure_9.GUILD_PROFILE(closure_1_0);
     const obj2 = dispatcherDefault;
     const obj6 = store;
-    obj[1] = _require(530).rejectWithMigratedError();
+    obj[1] = _require(527).rejectWithMigratedError();
     const value = HTTP.get(obj);
-    const obj5 = _require(530);
+    const obj5 = _require(527);
     resolved1 = value.then((body) => {
       let obj = callback(closure_1_2[7]);
       const guildProfileFromServer = obj.buildGuildProfileFromServer(body.body);
@@ -132,13 +132,13 @@ export const saveGuildProfile = function saveGuildProfile(closure_1_0, name) {
     obj[1] = closure_1_0;
     obj[2] = name;
     obj.dispatch(obj);
-    const HTTP = _require(530).HTTP;
+    const HTTP = _require(527).HTTP;
     obj = { url: null, body: null, rejectWithError: null };
     obj[0] = closure_9.GUILD_PROFILE(closure_1_0);
-    obj[1] = _require(5560).buildGuildProfileUpdateForServer(name);
-    const obj4 = _require(5560);
-    obj[2] = _require(530).rejectWithMigratedError();
-    const obj5 = _require(530);
+    obj[1] = _require(5568).buildGuildProfileUpdateForServer(name);
+    const obj4 = _require(5568);
+    obj[2] = _require(527).rejectWithMigratedError();
+    const obj5 = _require(527);
     const patchResult = HTTP.patch(obj);
     resolved = HTTP.patch(obj).then((body) => {
       let obj = callback(closure_1_2[7]);
@@ -173,14 +173,14 @@ export const setGuildProfileVisibility = function setGuildProfileVisibility(clos
     obj[1] = closure_1_0;
     obj[2] = arg1;
     obj.dispatch(obj);
-    const HTTP = _require(530).HTTP;
+    const HTTP = _require(527).HTTP;
     obj = { url: null, body: null, rejectWithError: null };
     obj[0] = closure_9.GUILD_PROFILE_VISIBILITY(closure_1_0);
     obj1 = { visibility: null };
     obj1[0] = arg1;
     obj[1] = obj1;
-    obj[2] = _require(530).rejectWithMigratedError();
-    const obj5 = _require(530);
+    obj[2] = _require(527).rejectWithMigratedError();
+    const obj5 = _require(527);
     const putResult = HTTP.put(obj);
     resolved = HTTP.put(obj).then((body) => {
       const visibility = body.body.visibility;

@@ -1,11 +1,11 @@
-// Module ID: 8983
-// Function ID: 8984
+// Module ID: 8997
+// Function ID: 8998
 // Name: ImageGraphic
-// Dependencies: [19, 17, 21, 4478, 5493, 4204, 4295, 2]
+// Dependencies: [19, 17, 21, 4478, 5501, 4204, 4295, 2]
 // Exports: Graphic
 
-// Module 8983 (ImageGraphic)
-import preloadDefault from "preload" /* 5493 */;
+// Module 8997 (ImageGraphic)
+import preloadDefault from "preload" /* 5501 */;
 import closure_3 from "noop" /* 19 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import { jsx } from "jsxProd" /* 21 */;

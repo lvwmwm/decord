@@ -1,28 +1,28 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14786
+// Function ID: 14787
 // Name: AddApplicationIdentityTableRow
-// Dependencies: [676, 4508, 21, 4478, 1297, 4413, 1628, 7248, 5959, 5622, 5621, 1236, 5624, 5599, 4445, 9299, 1431, 1363, 5956, 5953, 5973, 2]
+// Dependencies: [673, 4508, 21, 4478, 1296, 4413, 1627, 7257, 5967, 5630, 5629, 1233, 5632, 5607, 4445, 9312, 1430, 1362, 5964, 5961, 5981, 2]
 // Exports: default
 
-// Module 14563 (AddApplicationIdentityTableRow)
+// Module 14786 (AddApplicationIdentityTableRow)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import items2 from "items" /* 4508 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import Button from "Button" /* 1297 */;
+import Button from "Button" /* 1296 */;
 
 function AddApplicationIdentityTableRow(application) {
   application = application.application;
   let _require;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5956)(application));
-  const tmp2 = analyticsLocations(5956)(application);
-  analyticsLocations = analyticsLocations(5953)(analyticsLocations(5973).ACTION_SHEET).analyticsLocations;
-  const tmp3 = analyticsLocations(5953);
-  let obj = _require(1297);
-  const iconSource = application.getIconSource(obj.getIconSize(_require(1297).IconSizes.LARGE));
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(5964)(application));
+  const tmp2 = analyticsLocations(5964)(application);
+  analyticsLocations = analyticsLocations(5961)(analyticsLocations(5981).ACTION_SHEET).analyticsLocations;
+  const tmp3 = analyticsLocations(5961);
+  let obj = _require(1296);
+  const iconSource = application.getIconSource(obj.getIconSize(_require(1296).IconSizes.LARGE));
   obj = {
     start,
     end,
@@ -42,12 +42,12 @@ function AddApplicationIdentityTableRow(application) {
     obj = { source: null, style: null, disableColor: true };
     obj[0] = iconSource;
     obj[1] = tmp4.icon;
-    tmp7Result = tmp7(tmp5(1297).Icon, obj);
+    tmp7Result = tmp7(tmp5(1296).Icon, obj);
   }
   obj[4] = tmp7Result;
-  obj[5] = closure_5(_require(5599).TableRow.Arrow, {});
+  obj[5] = closure_5(_require(5607).TableRow.Arrow, {});
   obj[6] = !canStartAuthorization;
-  return closure_5(_require(5599).TableRow, obj, application.id);
+  return closure_5(_require(5607).TableRow, obj, application.id);
 }
 const AnalyticsLocations = ME.AnalyticsLocations;
 let closure_4 = items2.getMigratedApplicationIdentityConnectionsScreenApplications;

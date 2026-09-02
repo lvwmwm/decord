@@ -1,11 +1,11 @@
-// Module ID: 653
-// Function ID: 654
+// Module ID: 650
+// Function ID: 651
 // Name: u
-// Dependencies: [654, 2]
+// Dependencies: [651, 2]
 
-// Module 653 (u)
+// Module 650 (u)
 import set from "set" /* 2 */;
-import u from "u" /* 654 */;
+import u from "u" /* 651 */;
 
 try {
   let _Date = Date;

@@ -1,16 +1,16 @@
-// Module ID: 16634
-// Function ID: 16635
+// Module ID: 16869
+// Function ID: 16870
 // Name: trackActivityThermalStateNoticeShown
-// Dependencies: [1387, 4554, 1386, 676, 4111, 698, 2]
+// Dependencies: [1386, 4554, 1385, 673, 4110, 695, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 16634 (trackActivityThermalStateNoticeShown)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId" /* 4111 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
+// Module 16869 (trackActivityThermalStateNoticeShown)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import getEmbeddedActivityLocationChannelId from "getEmbeddedActivityLocationChannelId" /* 4110 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
 import closure_4 from "createRTCConnection" /* 4554 */;
-import closure_5 from "participantFromServer" /* 1386 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+import closure_5 from "participantFromServer" /* 1385 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 require = arg1;
 const result = require("set").fileFinishedImporting("modules/activities/trackActivityThermalStateNoticeShown.tsx");

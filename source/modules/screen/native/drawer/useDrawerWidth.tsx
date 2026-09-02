@@ -1,12 +1,12 @@
-// Module ID: 11126
-// Function ID: 11127
+// Module ID: 11347
+// Function ID: 11348
 // Name: sum
-// Dependencies: [676, 4337, 4335, 2]
+// Dependencies: [673, 4337, 4335, 2]
 // Exports: getDrawerWidth, useDrawerWidth
 
-// Module 11126 (sum)
+// Module 11347 (sum)
 import set from "set" /* 2 */;
-import ME from "ME" /* 676 */;
+import ME from "ME" /* 673 */;
 import useChatLayout from "useChatLayout" /* 4335 */;
 import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 4337 */;
 import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 4337 */;

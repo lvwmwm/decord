@@ -1,12 +1,12 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16820
+// Function ID: 16821
 // Name: updateVideoSize
-// Dependencies: [709, 2]
+// Dependencies: [706, 2]
 // Exports: updateVideoSize
 
-// Module 16585 (updateVideoSize)
+// Module 16820 (updateVideoSize)
 import set from "set" /* 2 */;
-import dispatcherDefault from "dispatcher" /* 709 */;
+import dispatcherDefault from "dispatcher" /* 706 */;
 
 const result = set.fileFinishedImporting("modules/media/VideoActionCreators.tsx");
 

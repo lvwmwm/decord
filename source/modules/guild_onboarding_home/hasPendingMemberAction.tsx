@@ -1,19 +1,19 @@
 // Module ID: 4706
 // Function ID: 4707
 // Name: hasPendingMemberAction
-// Dependencies: [1387, 1992, 1909, 4707, 4708, 676, 4109, 4709, 1399, 2]
+// Dependencies: [1386, 1991, 1908, 4707, 4708, 673, 4108, 4709, 1398, 2]
 // Exports: hasPendingMemberAction
 
 // Module 4706 (hasPendingMemberAction)
-import hasFlagAll from "hasFlag" /* 1399 */;
+import hasFlagAll from "hasFlag" /* 1398 */;
 import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 4709 */;
-import closure_3 from "ensureGuildLoaded" /* 1387 */;
-import closure_4 from "trackCommunicationDisabled" /* 1992 */;
-import closure_5 from "createGuildRecordFromRust" /* 1909 */;
+import closure_3 from "ensureGuildLoaded" /* 1386 */;
+import closure_4 from "trackCommunicationDisabled" /* 1991 */;
+import closure_5 from "createGuildRecordFromRust" /* 1908 */;
 import closure_6 from "handleSettingsLoadSuccess" /* 4707 */;
 import closure_7 from "set" /* 4708 */;
-import { GuildFeatures } from "ME" /* 676 */;
-import { GuildMemberFlags } from "GuildMemberFlags" /* 4109 */;
+import { GuildFeatures } from "ME" /* 673 */;
+import { GuildMemberFlags } from "GuildMemberFlags" /* 4108 */;
 
 const result = require("set").fileFinishedImporting("modules/guild_onboarding_home/hasPendingMemberAction.tsx");
 

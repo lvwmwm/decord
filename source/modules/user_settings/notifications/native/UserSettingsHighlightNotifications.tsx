@@ -1,16 +1,16 @@
-// Module ID: 15119
-// Function ID: 15120
+// Module ID: 15348
+// Function ID: 15349
 // Name: Row
-// Dependencies: [19, 1909, 5381, 4701, 676, 21, 5487, 5482, 589, 6004, 5993, 8363, 2]
+// Dependencies: [19, 1908, 5389, 4701, 673, 21, 5495, 5490, 586, 6012, 6001, 8372, 2]
 // Exports: default
 
-// Module 15119 (Row)
-import GuildIconSizesDefault from "GuildIconSizes" /* 6004 */;
+// Module 15348 (Row)
+import GuildIconSizesDefault from "GuildIconSizes" /* 6012 */;
 import closure_3 from "noop" /* 19 */;
-import closure_4 from "createGuildRecordFromRust" /* 1909 */;
-import closure_5 from "insertUnsortedGuilds" /* 5381 */;
+import closure_4 from "createGuildRecordFromRust" /* 1908 */;
+import closure_5 from "insertUnsortedGuilds" /* 5389 */;
 import closure_6 from "updateUserGuildSettingsInternal" /* 4701 */;
-import { HighlightSettings } from "ME" /* 676 */;
+import { HighlightSettings } from "ME" /* 673 */;
 import { jsx } from "jsxProd" /* 21 */;
 
 const require = arg1;
@@ -24,7 +24,7 @@ function Row(guildId) {
     const NotificationLabel = guildId(closure_1_2[7]).NotificationLabel;
     const result = obj.updateGuildNotificationSettings(guildId, obj, NotificationLabel.highlights(!arg0));
   }, items);
-  let obj = guildId(589);
+  let obj = guildId(586);
   const items1 = [closure_6, closure_4];
   const items2 = [guildId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items1, () => ({ guild: closure_1_4.getGuild(guildId), muted: closure_1_6.isMuted(guildId), notifyHighlights: closure_1_6.getNotifyHighlights(guildId) }), items2);
@@ -48,14 +48,14 @@ function Row(guildId) {
     obj[3] = callback;
     obj[4] = isStart;
     obj[5] = isEnd;
-    return jsx(tmp2(5993).TableSwitchRow, { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
+    return jsx(tmp2(6001).TableSwitchRow, { label: null, icon: null, value: null, onValueChange: null, start: null, end: null });
   }
   tmp2 = guildId;
 }
 let result = require("set").fileFinishedImporting("modules/user_settings/notifications/native/UserSettingsHighlightNotifications.tsx");
 
 export default function UserSettingsHighlightNotifications() {
-  let obj = stateFromStoresArray(589);
+  let obj = stateFromStoresArray(586);
   const items = [closure_5];
   stateFromStoresArray = obj.useStateFromStoresArray(items, () => flattenedGuildIds.getFlattenedGuildIds());
   [][0] = stateFromStoresArray;
@@ -63,7 +63,7 @@ export default function UserSettingsHighlightNotifications() {
   if (0 !== stateFromStoresArray.length) {
     obj = { children: null };
     obj[0] = tmp3;
-    tmp4 = jsx(stateFromStoresArray(8363).Form, { children: null });
+    tmp4 = jsx(stateFromStoresArray(8372).Form, { children: null });
   }
   return tmp4;
 };

@@ -1,12 +1,12 @@
-// Module ID: 7818
-// Function ID: 7819
+// Module ID: 7827
+// Function ID: 7828
 // Name: ConversationsAnalytics
-// Dependencies: [1387, 676, 698, 2]
+// Dependencies: [1386, 673, 695, 2]
 
-// Module 7818 (ConversationsAnalytics)
-import expandEventPropertiesDefault from "expandEventProperties" /* 698 */;
-import closure_2 from "ensureGuildLoaded" /* 1387 */;
-import { AnalyticEvents } from "ME" /* 676 */;
+// Module 7827 (ConversationsAnalytics)
+import expandEventPropertiesDefault from "expandEventProperties" /* 695 */;
+import closure_2 from "ensureGuildLoaded" /* 1386 */;
+import { AnalyticEvents } from "ME" /* 673 */;
 
 const result = require("set").fileFinishedImporting("modules/conversations/ConversationsAnalytics.tsx");
 

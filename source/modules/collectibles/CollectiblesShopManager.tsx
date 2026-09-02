@@ -1,14 +1,14 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 12802
+// Function ID: 12803
 // Name: chunk
-// Dependencies: [12577, 8907, 8906, 12579, 709, 2]
+// Dependencies: [12801, 8922, 8921, 12803, 706, 2]
 
-// Module 12578 (chunk)
-import dispatcherDefault from "dispatcher" /* 709 */;
-import _maybeFetchProductsWithSkus from "_maybeFetchProductsWithSkus" /* 8906 */;
-import _maybeFetchCollectionsWithProducts from "_maybeFetchCollectionsWithProducts" /* 12579 */;
-import closure_2 from "getFetchState" /* 12577 */;
-import closure_3 from "getFetchState" /* 8907 */;
+// Module 12802 (chunk)
+import dispatcherDefault from "dispatcher" /* 706 */;
+import _maybeFetchProductsWithSkus from "_maybeFetchProductsWithSkus" /* 8921 */;
+import _maybeFetchCollectionsWithProducts from "_maybeFetchCollectionsWithProducts" /* 12803 */;
+import closure_2 from "getFetchState" /* 12801 */;
+import closure_3 from "getFetchState" /* 8922 */;
 import set from "set" /* 2 */;
 
 require = arg1;

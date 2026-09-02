@@ -1,27 +1,27 @@
-// Module ID: 14547
-// Function ID: 14548
+// Module ID: 14770
+// Function ID: 14771
 // Name: WarningLabel
-// Dependencies: [19, 17, 1386, 5475, 1387, 4130, 4701, 1996, 676, 10654, 9056, 21, 4478, 712, 4433, 4474, 1499, 1500, 1236, 5961, 9453, 9293, 589, 12162, 1431, 4859, 12161, 4445, 9069, 2009, 503, 9059, 8675, 7762, 6242, 8641, 4333, 5487, 5482, 11, 11628, 9038, 5992, 5993, 5599, 2]
+// Dependencies: [19, 17, 1385, 5483, 1386, 4130, 4701, 1995, 673, 10875, 9070, 21, 4478, 709, 4433, 4474, 1498, 1499, 1233, 5969, 9466, 9306, 586, 12386, 1430, 4859, 12385, 4445, 9083, 2008, 500, 9073, 8690, 7771, 6251, 8656, 4333, 5495, 5490, 11, 11851, 9052, 6000, 6001, 5607, 2]
 // Exports: default, handleDeleteApp
 
-// Module 14547 (WarningLabel)
-import ThemesDefault from "Themes" /* 712 */;
-import getSystemLocale from "getSystemLocale" /* 1236 */;
+// Module 14770 (WarningLabel)
+import ThemesDefault from "Themes" /* 709 */;
+import getSystemLocale from "getSystemLocale" /* 1233 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 4433 */;
 import Text from "Text" /* 4474 */;
-import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5961 */;
-import postMessageToWebViewDefault from "postMessageToWebView" /* 9453 */;
+import tokensToAppTokensMapDefault from "tokensToAppTokensMap" /* 5969 */;
+import postMessageToWebViewDefault from "postMessageToWebView" /* 9466 */;
 import closure_3 from "noop" /* 19 */;
 import get_ActivityIndicator from "get ActivityIndicator" /* 17 */;
-import closure_6 from "participantFromServer" /* 1386 */;
-import closure_7 from "recomputeFromAppTokens" /* 5475 */;
-import closure_8 from "ensureGuildLoaded" /* 1387 */;
+import closure_6 from "participantFromServer" /* 1385 */;
+import closure_7 from "recomputeFromAppTokens" /* 5483 */;
+import closure_8 from "ensureGuildLoaded" /* 1386 */;
 import closure_9 from "markAllUserIdListsStale" /* 4130 */;
 import closure_10 from "updateUserGuildSettingsInternal" /* 4701 */;
-import closure_11 from "_getSystemLocale" /* 1996 */;
-import ME from "ME" /* 676 */;
-import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 10654 */;
-import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 9056 */;
+import closure_11 from "_getSystemLocale" /* 1995 */;
+import ME from "ME" /* 673 */;
+import { ChannelDetailsNavigatorScreens as closure_15 } from "ChannelDetailsNavigatorScreens" /* 10875 */;
+import { BLOCK_CONFIRMATION_ACTION_SHEET_KEY as closure_16 } from "IGNORE_CONFIRMATION_ACTION_SHEET_KEY" /* 9070 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
 
@@ -36,7 +36,7 @@ function WarningLabel(children) {
 }
 function AuthorizedAppTwoWay(application) {
   let navigation;
-  let obj = navigation(1499);
+  let obj = navigation(1498);
   navigation = obj.useNavigation();
   const items = [navigation];
   obj = { text: null };
@@ -44,9 +44,9 @@ function AuthorizedAppTwoWay(application) {
     const CommonActions = navigation(closure_1_2[17]).CommonActions;
     navigation.dispatch(CommonActions.navigate(closure_1_12.CONNECTIONS));
   }, items);
-  const intl = navigation(1236).intl;
+  const intl = navigation(1233).intl;
   obj = { applicationName: application.application.name, onConnectionPress: callback };
-  obj[0] = intl.format(navigation(1236).t.jUhnwb, obj);
+  obj[0] = intl.format(navigation(1233).t.jUhnwb, obj);
   return callback(WarningLabel, obj);
 }
 function ParentApp(application) {

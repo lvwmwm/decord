@@ -1,12 +1,12 @@
-// Module ID: 6794
-// Function ID: 6795
+// Module ID: 6803
+// Function ID: 6804
 // Name: metadata
 // Dependencies: [2]
 
-// Module 6794 (metadata)
+// Module 6803 (metadata)
 import set from "set" /* 2 */;
 
 const result = set.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MicrophoneSpotIllustration-2x.png.js");
 
-export default "https://cdn.discordapp.com/assets/content/39a4b317f8cc4f13a6709db28b7c985dc4e518ef926024ce0dec5372b02d80e6.png";
-export const metadata = { fileBytes: 31084 };
+export default "https://cdn.discordapp.com/assets/content/42a88f7abc10de4464ee8f243326986aec3f8a934e03c5a1c61402ea9407bbfe.png";
+export const metadata = { fileBytes: 31934 };

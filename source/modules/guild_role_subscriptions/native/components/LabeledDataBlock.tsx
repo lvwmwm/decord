@@ -1,17 +1,17 @@
-// Module ID: 14816
-// Function ID: 14817
+// Module ID: 15045
+// Function ID: 15046
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 676, 21, 4478, 712, 5461, 4474, 5068, 1297, 2]
+// Dependencies: [19, 17, 673, 21, 4478, 709, 5469, 4474, 5076, 1296, 2]
 // Exports: default
 
-// Module 14816 (LabeledDataBlock)
+// Module 15045 (LabeledDataBlock)
 import noopAll from "noop" /* 19 */;
-import ThemesDefault from "Themes" /* 712 */;
+import ThemesDefault from "Themes" /* 709 */;
 import Text from "Text" /* 4474 */;
 import { View } from "get ActivityIndicator" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import createCacheKey from "createCacheKey" /* 4478 */;
-import importDefaultResult from "createTextStyle" /* 5461 */;
+import importDefaultResult from "createTextStyle" /* 5469 */;
 
 require = arg1;
 noopAll;
@@ -41,10 +41,10 @@ export default function LabeledDataBlock(arg0) {
     obj1 = { accessibilityRole: "button", onPress: null, children: null };
     obj1[1] = onPressIcon;
     const obj2 = { size: null, source: null };
-    obj2[0] = tmp5(1297).Icon.Sizes.SMALL;
+    obj2[0] = tmp5(1296).Icon.Sizes.SMALL;
     obj2[1] = icon;
-    obj1[2] = tmp4(tmp5(1297).Icon, obj2);
-    tmp4Result = tmp4(tmp5(5068).PressableOpacity, obj1);
+    obj1[2] = tmp4(tmp5(1296).Icon, obj2);
+    tmp4Result = tmp4(tmp5(5076).PressableOpacity, obj1);
   }
   items1[1] = tmp4Result;
   obj[1] = items1;
@@ -54,7 +54,7 @@ export default function LabeledDataBlock(arg0) {
     const obj3 = { style: null, children: null };
     obj3[0] = tmp.data;
     obj3[1] = children;
-    tmp4Result = tmp4(tmp5(1297).LegacyText, obj3);
+    tmp4Result = tmp4(tmp5(1296).LegacyText, obj3);
   }
   items2[1] = tmp4Result;
   obj[1] = items2;
